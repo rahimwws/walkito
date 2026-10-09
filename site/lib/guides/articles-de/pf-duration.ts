@@ -37,12 +37,24 @@ export const PF_DURATION_DE: Guide = {
       h2: 'Wie lange dauert eine Plantarfasziitis meistens?',
       keyFact: 'In einer Kohorte von 174\u00A0Menschen lag das Risiko, noch Beschwerden einer Plantarfasziitis zu haben, nach einem Jahr bei 80,5\u00A0% und sank bis zum zehnten Jahr auf 45,6\u00A0% (Hansen und Kollegen, 2018).',
       paragraphs: [
-        'Eine einzelne Zahl gibt es nicht. Die Erholung hängt davon ab, wie lange du die Beschwerden schon hast, was du dagegen tust, und von einigen Faktoren, die du nicht beeinflussen kannst.',
+        '**Eine einzelne Zahl gibt es nicht.** Die Erholung hängt davon ab:',
+        {
+          list: [
+            'Wie lange du die Beschwerden schon hast.',
+            'Was du dagegen tust.',
+            'Von einigen Faktoren, die du nicht beeinflussen kannst.',
+          ],
+        },
         'Eine Übersichtsarbeit von 2020 hält fest, dass nicht-operative Ansätze bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wirken, meist innerhalb von drei bis sechs Monaten (Latt und Kollegen, 2020).',
         'Eine Kohortenstudie von 2018 zeigt den längeren Blick. Hansen und Kollegen begleiteten 174\u00A0Patientinnen und Patienten mit per Ultraschall diagnostizierter Plantarfasziitis durchschnittlich 9,7\u00A0Jahre ab Beginn der Beschwerden. Bei der Nachuntersuchung waren 54\u00A0% beschwerdefrei, und 46\u00A0% hatten noch etwas Schmerz.',
         'Die Kaplan-Meier-Analyse zeigte, dass das Risiko, noch eine Plantarfasziitis zu haben, nach einem Jahr bei 80,5\u00A0%, nach fünf Jahren bei 50,0\u00A0% und nach zehn Jahren bei 45,6\u00A0% lag. Bei denen, die beschwerdefrei wurden, dauerten die Beschwerden im Durchschnitt 725\u00A0Tage, also etwa zwei Jahre (Hansen und Kollegen, 2018).',
-        'Diese Zahlen klingen schlechter als das übliche „das geht in ein paar Monaten weg“. Zwei Dinge erklären den Unterschied. Erstens war die Kohorte von Hansen eine überwiesene Gruppe: 93\u00A0% hatten eine Kortisonspritze bekommen, was darauf hindeutet, dass es schwerer zu behandelnde Fälle waren und nicht Menschen, deren Schmerz mit Dehnen und besseren Schuhen abklang.',
-        'Zweitens berichteten die Patientinnen und Patienten, die bei der Nachuntersuchung noch Beschwerden hatten, im Durchschnitt nur von leichten Schmerzen, etwa 2 bis 3 von 10 beim Gehen. „Nach zehn Jahren noch Beschwerden“ heißt also nicht unbedingt „kann nicht gehen“. Für viele hieß es gelegentliches Unbehagen statt des stechenden Schmerzes bei den ersten Schritten, mit dem sie angefangen hatten.',
+        'Diese Zahlen klingen schlechter als das übliche „das geht in ein paar Monaten weg“. Zwei Dinge erklären den Unterschied:',
+        {
+          list: [
+            '**Erstens** war die Kohorte von Hansen eine überwiesene Gruppe: 93\u00A0% hatten eine Kortisonspritze bekommen, was darauf hindeutet, dass es schwerer zu behandelnde Fälle waren und nicht Menschen, deren Schmerz mit Dehnen und besseren Schuhen abklang.',
+            '**Zweitens** berichteten die Patientinnen und Patienten, die bei der Nachuntersuchung noch Beschwerden hatten, im Durchschnitt nur von leichten Schmerzen, etwa 2 bis 3 von 10 beim Gehen. „Nach zehn Jahren noch Beschwerden“ heißt also nicht unbedingt „kann nicht gehen“. Für viele hieß es gelegentliches Unbehagen statt des stechenden Schmerzes bei den ersten Schritten, mit dem sie angefangen hatten.',
+          ],
+        },
       ],
       sourceNote:
         'Hansen 2018: Kaplan-Meier-Risiko für PF: 80,5\u00A0% (95-%-KI 73,5-85,6) nach 1\u00A0Jahr, 50,0\u00A0% (42,4-57,1) nach 5\u00A0Jahren, 45,6\u00A0% (37,9-53,0) nach 10\u00A0Jahren, 44,0\u00A0% (35,9-51,8) nach 15\u00A0Jahren. Mittlere Beschwerdedauer in der beschwerdefreien Gruppe: 725\u00A0Tage (Spanne 41-4018). NRS in der Gruppe mit Beschwerden bei der Nachuntersuchung: 0,7 in Ruhe, 1,8 beim Gehen, 2,8 beim Laufen, 2,1 bei Druck.',
@@ -52,8 +64,14 @@ export const PF_DURATION_DE: Guide = {
       h2: 'Geht Plantarfasziitis von allein weg?',
       paragraphs: [
         'Manchmal. Manche wachen eines Morgens auf, und der Schmerz ist weg, ohne dass sie etwas Bestimmtes getan haben. Aber „das geht von allein weg“ ist für den einzelnen Menschen keine nützliche Vorhersage, weil man vorher nicht wissen kann, ob man zu dieser Gruppe gehört.',
-        'Was die Belege sagen: Etwas dagegen zu tun, also Dehnen, die Wade kräftigen und stützende Schuhe tragen, zieht die Besserung meist vor. In der Studie von Rathleff wurden 48\u00A0Menschen mit Plantarfasziitis in zwei Gruppen aufgeteilt: Eine machte belastetes Fersenheben mit einem Handtuch unter den Zehen, die andere dehnte die Plantarfaszie.',
-        'Die Fersenheben-Gruppe besserte sich nach drei Monaten schneller. Nach einem Jahr lagen beide Gruppen etwa gleichauf (Rathleff und Kollegen, 2015). Die Übungen haben die Besserung also beschleunigt, aber nicht verstärkt. Ob es ohne beide Maßnahmen genauso schnell gegangen wäre, ist nicht bekannt.',
+        'Was die Belege sagen: Etwas dagegen zu tun, also Dehnen, die Wade kräftigen und stützende Schuhe tragen, zieht die Besserung meist vor. In der Studie von Rathleff wurden 48\u00A0Menschen mit Plantarfasziitis in zwei Gruppen aufgeteilt:',
+        {
+          list: [
+            'Eine machte belastetes Fersenheben mit einem Handtuch unter den Zehen.',
+            'Die andere dehnte die Plantarfaszie.',
+          ],
+        },
+        'Die Fersenheben-Gruppe besserte sich nach drei Monaten schneller. Nach einem Jahr lagen beide Gruppen etwa gleichauf (Rathleff und Kollegen, 2015). **Die Übungen haben die Besserung also beschleunigt, aber nicht verstärkt.** Ob es ohne beide Maßnahmen genauso schnell gegangen wäre, ist nicht bekannt.',
         'Die Leitlinie von 2023 empfiehlt Dehnen (Bewertung A) und Krafttraining (Bewertung B) als das, was du zuerst ausprobieren solltest, zusammen mit Beratung zu Schuhen. Die Leitlinie sagt nicht „abwarten“. Sie sagt „damit anfangen und beobachten“ (Koc und Kollegen, 2023). Wenn der Schmerz hinten an der Ferse sitzt und nicht darunter, lies stattdessen [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
@@ -62,10 +80,13 @@ export const PF_DURATION_DE: Guide = {
       h2: 'Was spricht für eine langsamere Erholung?',
       keyFact: 'In einer Kohorte von 174\u00A0Menschen wurden Frauen etwa halb so schnell beschwerdefrei wie Männer, und Menschen mit Schmerzen in beiden Fersen erholten sich etwa ein Drittel so schnell wie Menschen mit einseitigen Schmerzen (Hansen und Kollegen, 2018).',
       paragraphs: [
-        'Die Kohorte von Hansen 2018 hat mehrere Ausgangsfaktoren daraufhin geprüft, wie lange die Beschwerden anhielten. Zwei davon waren signifikant.',
-        '**Weibliches Geschlecht.** Auf 100\u00A0Männer, die pro Jahr beschwerdefrei wurden, kamen nur 49\u00A0Frauen (Hazard Rate Ratio 0,49, P kleiner als 0,01). Der Grund ist nicht geklärt. Die Autoren nannten hormonelle Unterschiede, Schuhgewohnheiten und körperliche Faktoren als Möglichkeiten, ohne Belege, um sich für eine davon zu entscheiden (Hansen und Kollegen, 2018).',
-        '**Fersenschmerzen auf beiden Seiten.** Menschen, die zu Beginn in beiden Fersen Schmerzen hatten, wurden pro Jahr nur etwa ein Drittel so häufig beschwerdefrei wie Menschen mit einseitigen Schmerzen (Hazard Rate Ratio 0,33, P kleiner als 0,01).',
-        'Die Autoren merkten an, dass Schmerzen auf beiden Seiten auf eine unerkannte entzündliche Erkrankung hindeuten könnten, weil Schmerzen an Sehnenansätzen auf beiden Seiten ein Merkmal mancher Formen von Arthritis sind. Niemand in ihrer Kohorte hatte eine bekannte entzündliche Diagnose, aber es wurde auch kein Bluttest gemacht (Hansen und Kollegen, 2018).',
+        'Die Kohorte von Hansen 2018 hat mehrere Ausgangsfaktoren daraufhin geprüft, wie lange die Beschwerden anhielten. Zwei davon waren signifikant:',
+        {
+          list: [
+            '**Weibliches Geschlecht.** Auf 100\u00A0Männer, die pro Jahr beschwerdefrei wurden, kamen nur 49\u00A0Frauen (Hazard Rate Ratio 0,49, P kleiner als 0,01). Der Grund ist nicht geklärt. Die Autoren nannten hormonelle Unterschiede, Schuhgewohnheiten und körperliche Faktoren als Möglichkeiten, ohne Belege, um sich für eine davon zu entscheiden (Hansen und Kollegen, 2018).',
+            '**Fersenschmerzen auf beiden Seiten.** Menschen, die zu Beginn in beiden Fersen Schmerzen hatten, wurden pro Jahr nur etwa ein Drittel so häufig beschwerdefrei wie Menschen mit einseitigen Schmerzen (Hazard Rate Ratio 0,33, P kleiner als 0,01). Die Autoren merkten an, dass Schmerzen auf beiden Seiten auf eine unerkannte entzündliche Erkrankung hindeuten könnten, weil Schmerzen an Sehnenansätzen auf beiden Seiten ein Merkmal mancher Formen von Arthritis sind. Niemand in ihrer Kohorte hatte eine bekannte entzündliche Diagnose, aber es wurde auch kein Bluttest gemacht (Hansen und Kollegen, 2018).',
+          ],
+        },
         'BMI, Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein Fersensporn hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.',
         'Wenn beide Fersen wehtun und die Morgensteifigkeit lange anhält oder andere Gelenke betroffen sind, solltest du das einer medizinischen Fachperson sagen, auch wenn die Übungen helfen. Mehr dazu, wann Schmerzen auf beiden Seiten ein Warnzeichen sind, steht unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
       ],
@@ -77,7 +98,8 @@ export const PF_DURATION_DE: Guide = {
       h2: 'Was heißt „chronische“ Plantarfasziitis?',
       paragraphs: [
         'Eine einheitliche Definition gibt es nicht. Manche Quellen nennen eine Plantarfasziitis chronisch, wenn sie länger als drei Monate besteht, andere setzen sechs Monate an. Die Leitlinie von 2023 zieht keine Grenze. Eine Übersichtsarbeit von 2020 beschreibt die chronische Plantarfasziitis als „die häufigste Ursache chronischer Fersenschmerzen bei Erwachsenen“, ohne eine Grenze in Monaten zu nennen (Latt und Kollegen, 2020).',
-        'Wichtiger als der Begriff ist das Muster. Chronische Plantarfasziitis heißt meist, dass aus dem stechenden Schmerz bei den ersten Schritten am Morgen ein dumpferer, gleichmäßigerer Schmerz geworden ist. Auch das Gewebe verändert sich mit der Zeit: Das Wort „Fasziitis“ deutet auf eine Entzündung hin, aber chronische Fälle werden meist eher als degenerativer und nicht als entzündlicher Prozess beschrieben. Deshalb helfen Kortisonspritzen, die auf die Entzündung zielen, oft kurzfristig, aber nicht langfristig.',
+        '**Wichtiger als der Begriff ist das Muster.** Chronische Plantarfasziitis heißt meist, dass aus dem stechenden Schmerz bei den ersten Schritten am Morgen ein dumpferer, gleichmäßigerer Schmerz geworden ist.',
+        'Auch das Gewebe verändert sich mit der Zeit: Das Wort „Fasziitis“ deutet auf eine Entzündung hin, aber chronische Fälle werden meist eher als degenerativer und nicht als entzündlicher Prozess beschrieben. Deshalb helfen Kortisonspritzen, die auf die Entzündung zielen, oft kurzfristig, aber nicht langfristig.',
         'Wenn du schon seit mehreren Monaten eine Plantarfasziitis hast und sie nicht deutlich besser wird, erklärt der nächste Abschnitt, was die Leitlinie empfiehlt.',
       ],
       cites: [CITE.latt, CITE.guideline],
@@ -86,12 +108,16 @@ export const PF_DURATION_DE: Guide = {
       h2: 'Welche Meilensteine sind realistisch?',
       keyFact: 'In der Studie von Rathleff schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser (niedriger) ab als die Dehngruppe, ein Unterschied, der als groß und messbar beschrieben wurde (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Keine Studie liefert einen Zeitplan Woche für Woche, der für alle gilt, und jeder Artikel, der das tut, spekuliert. Was die Belege bieten, sind ein paar Wegmarken, die die meisten wiedererkennen werden.',
-        '**Die ersten Wochen.** Der Morgenschmerz verändert sich vielleicht kaum. Die Studie von Rathleff zeigte einen deutlichen Unterschied zwischen den Gruppen nach drei Monaten, nicht nach drei Wochen. Am Anfang ist die wichtigste Veränderung, dass die Übungen leichter fallen und sich die Wade weniger verspannt anfühlt. Das ist es wert, bemerkt zu werden, auch wenn die Ferse noch wehtut.',
-        '**Ein bis drei Monate.** In der Studie von Rathleff schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte. Das ist ein großer, messbarer Unterschied. Viele merken jetzt, dass der Morgenschmerz meistens etwas niedriger ist, oder dass die ersten Schritte steif statt stechend sind (Rathleff und Kollegen, 2015).',
-        '**Drei bis sechs Monate.** Die Spanne „oft innerhalb von drei bis sechs Monaten“ aus der Übersichtsarbeit von 2020 legt die Mitte der Besserung für die meisten, die die empfohlenen Übungen machen und stützende Schuhe tragen, in diesen Zeitraum (Latt und Kollegen, 2020).',
-        '**Sechs Monate und mehr.** Die Leitlinie von 2023 schlägt vor, andere Optionen in Betracht zu ziehen, wenn mehrere Monate Dehnen, Kräftigen und andere Schuhe nicht genug geholfen haben. Die Kohorte von Hansen zeigt, dass Besserung auch nach einem Jahr und später noch möglich ist: Die Überlebenskurve fiel bis ins fünfte Jahr langsam weiter, aber das Tempo der Besserung nimmt ab. Wenn der Schmerz gleich bleibt oder steigt, nicht nur langsam sinkt, lies den nächsten Abschnitt.',
-        'Die nützliche Zahl ist nicht „wie viele Wochen noch, bis ich durch bin“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“ Dieser Trend ist der Meilenstein.',
+        'Keine Studie liefert einen Zeitplan Woche für Woche, der für alle gilt, und jeder Artikel, der das tut, spekuliert. Was die Belege bieten, sind ein paar Wegmarken, die die meisten wiedererkennen werden:',
+        {
+          list: [
+            '**Die ersten Wochen.** Der Morgenschmerz verändert sich vielleicht kaum. Die Studie von Rathleff zeigte einen deutlichen Unterschied zwischen den Gruppen nach drei Monaten, nicht nach drei Wochen. Am Anfang ist die wichtigste Veränderung, dass die Übungen leichter fallen und sich die Wade weniger verspannt anfühlt. Das ist es wert, bemerkt zu werden, auch wenn die Ferse noch wehtut.',
+            '**Ein bis drei Monate.** In der Studie von Rathleff schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte. Das ist ein großer, messbarer Unterschied. Viele merken jetzt, dass der Morgenschmerz meistens etwas niedriger ist, oder dass die ersten Schritte steif statt stechend sind (Rathleff und Kollegen, 2015).',
+            '**Drei bis sechs Monate.** Die Spanne „oft innerhalb von drei bis sechs Monaten“ aus der Übersichtsarbeit von 2020 legt die Mitte der Besserung für die meisten, die die empfohlenen Übungen machen und stützende Schuhe tragen, in diesen Zeitraum (Latt und Kollegen, 2020).',
+            '**Sechs Monate und mehr.** Die Leitlinie von 2023 schlägt vor, andere Optionen in Betracht zu ziehen, wenn mehrere Monate Dehnen, Kräftigen und andere Schuhe nicht genug geholfen haben. Die Kohorte von Hansen zeigt, dass Besserung auch nach einem Jahr und später noch möglich ist: Die Überlebenskurve fiel bis ins fünfte Jahr langsam weiter, aber das Tempo der Besserung nimmt ab. Wenn der Schmerz gleich bleibt oder steigt, nicht nur langsam sinkt, lies den nächsten Abschnitt.',
+          ],
+        },
+        '**Die nützliche Zahl ist nicht „wie viele Wochen noch, bis ich durch bin“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“** Dieser Trend ist der Meilenstein.',
       ],
       cites: [CITE.rathleff, CITE.latt, CITE.hansen],
     },
@@ -122,7 +148,7 @@ export const PF_DURATION_DE: Guide = {
     {
       h2: 'Wann solltest du zu einer medizinischen Fachperson, wenn die Plantarfasziitis nicht besser wird?',
       paragraphs: [
-        'Das Muster in der Tabelle oben ist klar: Dehnen und Krafttraining haben die breiteste Unterstützung. Die Behandlungen in der Praxis (Laser, Dry Needling, Stoßwelle) haben einige Belege, stehen in der Rangfolge der Leitlinie aber hinter den Übungen. Eine Operation bleibt dem kleinen Teil der Fälle vorbehalten, die auf nichts anderes ansprechen, und die Leitlinie gibt ihr keine prominente Rolle.',
+        'Das Muster in der Tabelle oben ist klar: **Dehnen und Krafttraining haben die breiteste Unterstützung.** Die Behandlungen in der Praxis (Laser, Dry Needling, Stoßwelle) haben einige Belege, stehen in der Rangfolge der Leitlinie aber hinter den Übungen. Eine Operation bleibt dem kleinen Teil der Fälle vorbehalten, die auf nichts anderes ansprechen, und die Leitlinie gibt ihr keine prominente Rolle.',
         'Wenn du die Übungen mehrere Monate regelmäßig gemacht hast und der Morgenschmerz nicht besser wird, ist das ein vernünftiger Zeitpunkt, mit einer medizinischen Fachperson über die Optionen oben zu sprechen. Es ist auch ein vernünftiger Zeitpunkt, zu prüfen, ob die Diagnose stimmt: Unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) findest du andere Ursachen mit demselben Muster.',
         'Beim Laufen ist die Belastung oft ein Teil des Bildes: [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandeln diesen Blickwinkel.',
       ],
@@ -131,7 +157,7 @@ export const PF_DURATION_DE: Guide = {
     {
       h2: 'Wie zeigt dir der Morgenschmerz deinen Fortschritt?',
       paragraphs: [
-        'Der Morgenschmerz ist das verlässlichste tägliche Signal, wie es dem Fuß geht. Er misst dasselbe (die Steifigkeit bei den ersten Schritten), unter denselben Bedingungen (gerade aufgewacht, unbelasteter Fuß), jeden Tag ungefähr zur selben Zeit. Das macht ihn zu einer viel besseren Trendlinie als „wie sich mein Fuß tagsüber angefühlt hat“, was sich mit Aktivität, Schuhen und Untergrund verschiebt.',
+        '**Der Morgenschmerz ist das verlässlichste tägliche Signal, wie es dem Fuß geht.** Er misst dasselbe (die Steifigkeit bei den ersten Schritten), unter denselben Bedingungen (gerade aufgewacht, unbelasteter Fuß), jeden Tag ungefähr zur selben Zeit. Das macht ihn zu einer viel besseren Trendlinie als „wie sich mein Fuß tagsüber angefühlt hat“, was sich mit Aktivität, Schuhen und Untergrund verschiebt.',
         'Ein täglicher Wert von 0 bis 10 für deine ersten Schritte, über Wochen festgehalten, zeigt Muster, die dir sonst nicht auffallen würden. Ein Wert, der über einen Monat von 5 auf 3 sinkt, ist echter Fortschritt, auch wenn einzelne Morgen noch wehtun. Ein Wert, der am Morgen nach einem langen Lauf oder einem Tag auf den Beinen in die Höhe schießt, zeigt dir genau, welche Belastung zu viel war.',
         'Walkito fragt vor jeder Einheit nach deinem Morgenschmerz und passt damit die Übungen des Tages an. Das erste Ziel bei Fersenschmerzen ist ein Morgenschmerz bei oder unter 1/10 an 14\u00A0Tagen am Stück. Sobald dieses Ziel erreicht ist, geht es in die Erhaltung über, und das nächste Ziel (meist Wadenkraft oder Gleichgewicht) rückt nach. Dieser Wechsel von „die Morgen leichter machen“ zu „Belastbarkeit aufbauen“ ist der eigentliche Meilenstein.',
       ],

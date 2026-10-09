@@ -30,7 +30,18 @@ export const FLAT_FEET_AGE_PT: Guide = {
       keyFact: 'Em uma comparação entre 50\u00A0adultos jovens (idade média de 20,9\u00A0anos) e 50\u00A0adultos mais velhos (idade média de 80,2\u00A0anos) sem problemas nos pés, os pés mais velhos eram mais planos e mais pronados (Scott e colegas, 2007).',
       figure: { id: 'arches', caption: 'Os mesmos ossos do pé com pé chato, arco típico e arco alto, vistos pelo lado de dentro.', alt: 'Três pés vistos pelo lado de dentro sobre um chão plano: um pé chato com o arco apoiado no chão, um arco típico com um pequeno espaço embaixo e um arco alto com um grande espaço sob o meio do pé.' },
       paragraphs: [
-        'O pé chato tende a ficar um pouco mais plano com a idade, do mesmo jeito que a maioria dos pés. Em um estudo de 2007 da La Trobe University, pesquisadores compararam 50\u00A0adultos jovens (idade média de 20,9\u00A0anos) com 50\u00A0adultos mais velhos (idade média de 80,2\u00A0anos). Ninguém nos dois grupos tinha problemas nos pés. O grupo mais velho tinha pés mais planos e mais pronados (pronado quer dizer que o pé vira para dentro), tornozelos e articulações do dedão mais rígidos, músculos dos dedos mais fracos, mais joanetes e menos sensibilidade na sola. Ao caminhar, o meio do pé ficava no chão durante uma parte 14% maior de cada passo.',
+        '**O pé chato tende a ficar um pouco mais plano com a idade, do mesmo jeito que a maioria dos pés.** Em um estudo de 2007 da La Trobe University, pesquisadores compararam 50\u00A0adultos jovens (idade média de 20,9\u00A0anos) com 50\u00A0adultos mais velhos (idade média de 80,2\u00A0anos). Ninguém nos dois grupos tinha problemas nos pés.',
+        'O grupo mais velho tinha:',
+        {
+          list: [
+            'Pés mais planos e mais pronados (pronado quer dizer que o pé vira para dentro).',
+            'Tornozelos e articulações do dedão mais rígidos.',
+            'Músculos dos dedos mais fracos.',
+            'Mais joanetes.',
+            'Menos sensibilidade na sola.',
+          ],
+        },
+        'Ao caminhar, o meio do pé ficava no chão durante uma parte 14% maior de cada passo.',
         'Esse estudo tem um limite importante. Ele comparou dois grupos diferentes de pessoas num único momento. Não acompanhou os mesmos pés por 60\u00A0anos. Então ele mostra que pés mais velhos são, em média, mais planos, mas não com que velocidade um pé específico muda, nem se um pé que já era chato muda mais ou menos que um pé típico. Não encontramos nenhum estudo que tenha acompanhado pés chatos de toda a vida ao longo de décadas.',
         'Para a maioria das pessoas, a mudança lenta acontece nos dois pés, sem uma data clara de começo e muitas vezes sem dor. Uma mudança rápida, de um lado só, é outra história, explicada mais abaixo.',
       ],
@@ -39,8 +50,18 @@ export const FLAT_FEET_AGE_PT: Guide = {
     {
       h2: 'Por que o arco cai com a idade?',
       paragraphs: [
-        'O arco é sustentado pelos ossos, pelos ligamentos (as faixas resistentes que ligam um osso ao outro), pela fáscia plantar embaixo do pé e pelos músculos. O músculo principal é o tibial posterior, um músculo profundo da panturrilha cujo tendão passa por trás do osso de dentro do tornozelo e puxa o arco para cima a cada passo. Os músculos pequenos de dentro do pé também ajudam.',
-        'Várias dessas estruturas mudam com a idade. Na comparação de 2007, o grupo mais velho também tinha músculos dos dedos mais fracos e tornozelos mais rígidos, embora o estudo não tenha testado se isso causou os pés mais planos. O peso também conta. Uma revisão de 2023 de 12\u00A0estudos populacionais, com cerca de 16.000\u00A0pessoas, viu que o pé chato era mais comum em pessoas com obesidade, com chances cerca de 2,6\u00A0vezes maiores. Essa revisão mediu o quanto o pé chato era comum num único momento. Ela não testou se ganhar peso faz o arco cair.',
+        'O arco é sustentado:',
+        {
+          list: [
+            'Pelos ossos.',
+            'Pelos ligamentos (as faixas resistentes que ligam um osso ao outro).',
+            'Pela fáscia plantar embaixo do pé.',
+            'Pelos músculos.',
+          ],
+        },
+        'O músculo principal é o tibial posterior, um músculo profundo da panturrilha cujo tendão passa por trás do osso de dentro do tornozelo e puxa o arco para cima a cada passo. Os músculos pequenos de dentro do pé também ajudam.',
+        'Várias dessas estruturas mudam com a idade. Na comparação de 2007, o grupo mais velho também tinha músculos dos dedos mais fracos e tornozelos mais rígidos, embora o estudo não tenha testado se isso causou os pés mais planos.',
+        'O peso também conta. Uma revisão de 2023 de 12\u00A0estudos populacionais, com cerca de 16.000\u00A0pessoas, viu que o pé chato era mais comum em pessoas com obesidade, com chances cerca de 2,6\u00A0vezes maiores. Essa revisão mediu o quanto o pé chato era comum num único momento. Ela não testou se ganhar peso faz o arco cair.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -48,7 +69,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
       h2: 'Dá para ficar com pé chato na vida adulta?',
       keyFact: 'Em uma pesquisa com 582\u00A0mulheres acima de 40\u00A0anos, 3,3% tinham disfunção do tendão tibial posterior em estágio I ou II, e nenhuma tinha diagnóstico, apesar de sintomas antigos (Kohls-Gatzoulis e colegas, 2009).',
       paragraphs: [
-        'Dá, sim, e a causa mais comum é a disfunção do tendão tibial posterior (DTTP), em que o tendão que sustenta o arco enfraquece, se estica ou se rompe. O resultado era chamado de pé plano adquirido do adulto. Em 2020, um grupo de cirurgiões de pé e tornozelo combinou um nome novo, deformidade progressiva de colapso do pé, porque a deformidade pode continuar progredindo e nem sempre é causada só pelo tendão.',
+        '**Dá, sim**, e a causa mais comum é a disfunção do tendão tibial posterior (DTTP), em que o tendão que sustenta o arco enfraquece, se estica ou se rompe. O resultado era chamado de pé plano adquirido do adulto. Em 2020, um grupo de cirurgiões de pé e tornozelo combinou um nome novo, deformidade progressiva de colapso do pé, porque a deformidade pode continuar progredindo e nem sempre é causada só pelo tendão.',
         'Isso não é raro. Em uma pesquisa de 2009 com mulheres acima de 40\u00A0anos de um consultório de clínica geral na Inglaterra, 582 devolveram um questionário válido. Depois de ligações e exames, 3,3% tinham DTTP em estágio inicial (estágio I ou II). Nenhuma delas tinha diagnóstico, embora os sintomas fossem típicos e já durassem muito tempo.',
         'Diferente do pé chato de toda a vida, ela normalmente começa de um lado só, com dor e às vezes inchaço atrás ou abaixo do osso de dentro do tornozelo. Subir na ponta dos pés apoiado só nesse pé fica difícil ou doloroso. Os estágios e os ensaios com exercício estão no [guia de disfunção do tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/).',
       ],
@@ -57,7 +78,17 @@ export const FLAT_FEET_AGE_PT: Guide = {
     {
       h2: 'O que faz o pé chato piorar?',
       paragraphs: [
-        'Os fatores ligados à queda do arco em adultos são, na maioria, os mesmos ligados ao desgaste do tendão. Em uma revisão de 1992 com 67\u00A0pessoas que tiveram ruptura do tendão tibial posterior (idade média de 57\u00A0anos), 60% tinham pelo menos um destes: pressão alta, obesidade, diabetes, cirurgia ou lesão anterior na parte de dentro do pé, ou uso de corticoide. A obesidade mostrou a relação mais clara. Foi uma análise de casos antigos, não um estudo controlado, então ela aponta fatores prováveis em vez de provar a causa.',
+        'Os fatores ligados à queda do arco em adultos são, na maioria, os mesmos ligados ao desgaste do tendão. Em uma revisão de 1992 com 67\u00A0pessoas que tiveram ruptura do tendão tibial posterior (idade média de 57\u00A0anos), 60% tinham pelo menos um destes:',
+        {
+          list: [
+            'Pressão alta.',
+            'Obesidade.',
+            'Diabetes.',
+            'Cirurgia ou lesão anterior na parte de dentro do pé.',
+            'Uso de corticoide.',
+          ],
+        },
+        'A obesidade mostrou a relação mais clara. Foi uma análise de casos antigos, não um estudo controlado, então ela aponta fatores prováveis em vez de provar a causa.',
       ],
       bullets: [
         '**Peso corporal.** A obesidade tem relação tanto com o pé chato em geral quanto com a ruptura do tendão.',
@@ -67,7 +98,8 @@ export const FLAT_FEET_AGE_PT: Guide = {
         '**Gravidez**, explicada a seguir.',
       ],
       after: [
-        'O **pé de Charcot** merece um alerta à parte. Em pessoas com diabetes e lesão nos nervos (neuropatia, em que os pés perdem a sensibilidade), os ossos e as articulações do meio do pé podem enfraquecer e ceder, às vezes rápido. Um grupo de especialistas descreveu em 2011 o quadro inicial típico como um pé bem inchado, quente, muitas vezes vermelho, com dor apenas leve a moderada. Ele é confundido com frequência com infecção, trombose ou gota. Se você tem diabetes e um pé fica quente e inchado, procure atendimento no mesmo dia.',
+        'O **pé de Charcot** merece um alerta à parte. Em pessoas com diabetes e lesão nos nervos (neuropatia, em que os pés perdem a sensibilidade), os ossos e as articulações do meio do pé podem enfraquecer e ceder, às vezes rápido.',
+        'Um grupo de especialistas descreveu em 2011 o quadro inicial típico como um pé bem inchado, quente, muitas vezes vermelho, com dor apenas leve a moderada. Ele é confundido com frequência com infecção, trombose ou gota. Se você tem diabetes e um pé fica quente e inchado, procure atendimento no mesmo dia.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -75,7 +107,8 @@ export const FLAT_FEET_AGE_PT: Guide = {
       h2: 'A gravidez pode deixar o pé mais plano para sempre?',
       keyFact: 'Em 49\u00A0mulheres medidas no começo da gravidez e de novo cerca de quatro meses e meio depois do parto, a altura do arco caiu e o comprimento do pé aumentou, principalmente na primeira gravidez (Segal e colegas, 2013).',
       paragraphs: [
-        'A gravidez pode baixar um pouco o arco, e a mudança pode continuar depois do parto. Em um estudo de 2013, 49\u00A0mulheres tiveram os pés medidos no primeiro trimestre e de novo cerca de quatro meses e meio depois de dar à luz. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram. A primeira gravidez respondeu pela maior parte da mudança. Nas mães de primeira viagem, o comprimento do pé aumentou cerca de 1,4\u00A0milímetro e a queda do arco cerca de 1,0\u00A0milímetro, em média.',
+        '**A gravidez pode baixar um pouco o arco, e a mudança pode continuar depois do parto.** Em um estudo de 2013, 49\u00A0mulheres tiveram os pés medidos no primeiro trimestre e de novo cerca de quatro meses e meio depois de dar à luz. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram.',
+        'A primeira gravidez respondeu pela maior parte da mudança. Nas mães de primeira viagem, o comprimento do pé aumentou cerca de 1,4\u00A0milímetro e a queda do arco cerca de 1,0\u00A0milímetro, em média.',
         'Duas coisas colocam isso em proporção. Os autores disseram que as mudanças médias foram pequenas, e o estudo não encontrou mudança em uma medida de como o pé virava durante a caminhada. “Duradoura”, nesse estudo, quer dizer que ainda estava lá na consulta de acompanhamento alguns meses depois do parto. Ninguém foi acompanhado por anos.',
         'Se o seu número de calçado aumentou depois de uma gravidez e os seus pés estão bem, essa mudança é comum. Se um arco continua caindo, ou a parte de dentro do tornozelo começa a doer, faça uma avaliação.',
       ],
@@ -84,7 +117,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
     {
       h2: 'Quando um pé que está ficando plano é um problema?',
       paragraphs: [
-        'Um pé que está ficando plano é um problema quando muda rápido, de um lado só, ou com dor ou inchaço. Uma mudança lenta nos dois pés, sem dor, é comum com a idade. A tabela organiza os padrões mais comuns.',
+        '**Um pé que está ficando plano é um problema quando muda rápido, de um lado só, ou com dor ou inchaço.** Uma mudança lenta nos dois pés, sem dor, é comum com a idade. A tabela organiza os padrões mais comuns.',
       ],
       table: {
         caption: 'Padrões de mudança do arco em adultos e o que eles costumam significar',
@@ -108,9 +141,10 @@ export const FLAT_FEET_AGE_PT: Guide = {
       keyFact: 'Uma revisão de 2018 encontrou só três ensaios, com 93\u00A0pessoas no total, testando exercício para disfunção do tendão tibial posterior, com efeitos moderados para o fortalecimento com descida lenta (excêntrico) somado a órteses e alongamento (Ross e colegas, 2018).',
       paragraphs: [
         'Nenhum ensaio testou se exercícios ou palmilhas impedem o pé chato de mudar com a idade. O que existe é evidência sobre duas perguntas próximas, e ela é pequena.',
-        'Para o problema de tendão por trás da queda do arco no adulto, uma revisão de 2018 encontrou três ensaios com 93\u00A0pessoas no total. O fortalecimento com descida lenta (excêntrico) somado a órteses (palmilhas que sustentam o arco) e alongamento aliviou a dor e a incapacidade moderadamente mais que órteses e alongamento sozinhos. Em um ensaio, 36\u00A0adultos em estágios iniciais fizeram três meses de programa. Todos os grupos melhoraram, e o grupo do fortalecimento excêntrico foi o que mais melhorou. Em outro ensaio, com 39\u00A0pessoas, somar o fortalecimento fez só uma pequena diferença. Os autores da revisão disseram que a pesquisa é escassa.',
+        'Para o problema de tendão por trás da queda do arco no adulto, uma revisão de 2018 encontrou três ensaios com 93\u00A0pessoas no total. O fortalecimento com descida lenta (excêntrico) somado a órteses (palmilhas que sustentam o arco) e alongamento aliviou a dor e a incapacidade moderadamente mais que órteses e alongamento sozinhos.',
+        'Em um ensaio, 36\u00A0adultos em estágios iniciais fizeram três meses de programa. Todos os grupos melhoraram, e o grupo do fortalecimento excêntrico foi o que mais melhorou. Em outro ensaio, com 39\u00A0pessoas, somar o fortalecimento fez só uma pequena diferença. Os autores da revisão disseram que a pesquisa é escassa.',
         'Para o pé chato flexível de toda a vida, um ensaio com 52\u00A0pessoas viu que um programa curto de exercícios para pé, tornozelo e quadril mudou o formato do arco mais do que em um grupo controle. Ele mediu o formato, não a dor, e por pouco tempo. Não se sabe se esse tipo de treino desacelera a mudança da idade ao longo de décadas.',
-        'Então manter fortes os músculos que sustentam o arco é razoável e de baixo risco, mas ninguém pode prometer que isso mantém o seu arco onde ele está. O Walkito começa cada exercício abaixo com uma dose baixa e mede a resistência da panturrilha, a sustentação do arco e o equilíbrio com um teste curto a cada duas semanas no começo (a cada quatro quando você alcança uma meta), para você ver se esses músculos estão ficando mais fortes.',
+        'Então manter fortes os músculos que sustentam o arco é razoável e de baixo risco, mas **ninguém pode prometer que isso mantém o seu arco onde ele está.** O Walkito começa cada exercício abaixo com uma dose baixa e mede a resistência da panturrilha, a sustentação do arco e o equilíbrio com um teste curto a cada duas semanas no começo (a cada quatro quando você alcança uma meta), para você ver se esses músculos estão ficando mais fortes.',
       ],
       exercises: [
         {

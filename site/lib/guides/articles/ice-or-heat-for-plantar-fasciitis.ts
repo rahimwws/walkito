@@ -47,7 +47,7 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'Is ice or heat better for plantar fasciitis?',
       keyFact: 'The 2023 heel pain guideline found 1 small heat trial and said a recommendation on superficial thermal modalities cannot be made (Koc and colleagues, 2023).',
       paragraphs: [
-        'Neither ice nor heat is clearly better for plantar fasciitis, because neither has been tested well enough to pick a winner. The 2023 heel pain guideline from the American Physical Therapy Association reviewed the research on "thermal modalities", meaning hot and cold packs and similar. It found one small, lower-quality trial on heat and concluded that a recommendation "cannot be made".',
+        '**Neither ice nor heat is clearly better for plantar fasciitis**, because neither has been tested well enough to pick a winner. The 2023 heel pain guideline from the American Physical Therapy Association reviewed the research on "thermal modalities", meaning hot and cold packs and similar. It found one small, lower-quality trial on heat and concluded that a recommendation "cannot be made".',
         'That does not mean they are useless. It means they are comfort tools, and you can choose by what your foot feels like right now. The table below is a practical guide, not a rule from a trial.',
       ],
       table: {
@@ -72,7 +72,7 @@ export const ICE_HEAT_EN: Guide = {
         alt: 'A foot seen from the inner side, with the plantar fascia highlighted as a band from the heel to the toes.',
       },
       paragraphs: [
-        'Long-standing plantar fasciitis is usually not an inflamed tissue in the way a fresh sprain is. The "-itis" in the name means inflammation, which is why so many pages tell you to ice it. But when Lemont and colleagues looked at tissue from 50 cases of surgery for chronic plantar fasciitis in 2003, they found worn, frayed and degenerated fascia, and no signs of inflammation. They suggested calling it fasciosis, meaning a degenerated band, not an inflamed one.',
+        '**Long-standing plantar fasciitis is usually not an inflamed tissue in the way a fresh sprain is.** The "-itis" in the name means inflammation, which is why so many pages tell you to ice it. But when Lemont and colleagues looked at tissue from 50 cases of surgery for chronic plantar fasciitis in 2003, they found worn, frayed and degenerated fascia, and no signs of inflammation. They suggested calling it fasciosis, meaning a degenerated band, not an inflamed one.',
         'Two caveats travel with that finding. These were the hardest cases, bad enough to need surgery, so early heel pain may look different. And the study only described tissue. It did not test ice.',
         'It does change the reason for icing. If the fascia is mainly worn and overloaded, cold is not "putting out a fire". It dulls pain for a while, which is still useful. What helps a worn tissue adapt is gradual load: stretching and strength work.',
       ],
@@ -82,9 +82,14 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'Does ice help plantar fasciitis? What the trials found',
       keyFact: 'In a 30-person trial, pain fell from 7.7 to 3.5 out of 10 with a frozen tennis ball plus stretching, against 7.6 to 6.7 with stretching alone (Shinde and Patil, 2026).',
       paragraphs: [
-        'Ice probably eases plantar fasciitis pain for a short time, but very few trials have tested it, and none tested ice against doing nothing. Here is what exists.',
-        'In a 2014 trial of 102 people with plantar fasciitis lasting more than six months, both groups had 10 daily 20-minute sessions from a clinic machine: cold alone, or cold plus ultrasound. Both improved, and the combined group did better up to 18 months (Costantino and colleagues). Cold was the comparison, so the trial cannot say how much the cold itself did. A 2023 trial of 36 people had the same gap: a "cryostretch" group, rolling on a frozen tennis ball, improved over 7 days, but so did the two groups without cold (Jadhav and Gurudut).',
-        'The most direct test is small. In a 2026 study of 30 people, the group that added a frozen tennis ball to stretching for two months went from 7.7 to 3.5 on a 0 to 10 pain scale, while stretching alone went from 7.6 to 6.7 (Shinde and Patil). That looks like a big difference, but the paper does not clearly say how people were put into groups, and the frozen-ball group also got rolling pressure, so the cold and the massage cannot be separated.',
+        '**Ice probably eases plantar fasciitis pain for a short time**, but very few trials have tested it, and none tested ice against doing nothing. Here is what exists:',
+        {
+          list: [
+            'In a 2014 trial of 102 people with plantar fasciitis lasting more than six months, both groups had 10 daily 20-minute sessions from a clinic machine: cold alone, or cold plus ultrasound. Both improved, and the combined group did better up to 18 months (Costantino and colleagues). Cold was the comparison, so the trial cannot say how much the cold itself did.',
+            'A 2023 trial of 36 people had the same gap: a "cryostretch" group, rolling on a frozen tennis ball, improved over 7 days, but so did the two groups without cold (Jadhav and Gurudut).',
+            'The most direct test is small. In a 2026 study of 30 people, the group that added a frozen tennis ball to stretching for two months went from 7.7 to 3.5 on a 0 to 10 pain scale, while stretching alone went from 7.6 to 6.7 (Shinde and Patil). That looks like a big difference, but the paper does not clearly say how people were put into groups, and the frozen-ball group also got rolling pressure, so the cold and the massage cannot be separated.',
+          ],
+        },
         'Outside the foot, the picture is similar. A 2004 review of 22 trials of ice for fresh injuries such as ankle sprains rated their average quality 3.4 out of 10 and found no best method or length of time to ice. The only signal, a marginal one, favoured ice plus exercise after ankle sprains and surgery (Bleakley and colleagues).',
       ],
       sourceNote: 'Costantino 2014: single-blind RCT, cryoultrasound vs cryotherapy, pain on a visual analogue scale. Jadhav 2023: RCT, 12 per group, Numerical Pain Rating Scale and Foot Function Index at day 7. Shinde 2026: 15 per group, NPRS and Foot Function Index, allocation described as "random sampling technique". Bleakley 2004: mean PEDro score 3.4/10.',
@@ -94,7 +99,8 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'Is heat good for plantar fasciitis?',
       keyFact: 'A Cochrane review of 9 trials and 1,117 people found moderate evidence, from a few of those trials, of a small short-term pain benefit from heat wraps for low back pain, and too little evidence to judge cold (French and colleagues, 2006).',
       paragraphs: [
-        'Heat is fine for plantar fasciitis if it feels good, and the idea that it "makes the inflammation worse" has no trial behind it. The only heat trial the 2023 guideline found was small: 20 people with plantar foot pain were randomly given a heat patch or a fake patch over trigger points (tender spots in the muscle). Pain dropped in the heat group but not in the fake-patch group (Petrofsky and colleagues, 2020). The patch stayed on for about four hours, and pain was measured right after, so it tells you about short-term relief only.',
+        '**Heat is fine for plantar fasciitis if it feels good**, and the idea that it "makes the inflammation worse" has no trial behind it.',
+        'The only heat trial the 2023 guideline found was small: 20 people with plantar foot pain were randomly given a heat patch or a fake patch over trigger points (tender spots in the muscle). Pain dropped in the heat group but not in the fake-patch group (Petrofsky and colleagues, 2020). The patch stayed on for about four hours, and pain was measured right after, so it tells you about short-term relief only.',
         'The best general evidence on heat comes from back pain, not feet. A Cochrane review (a careful summary of trials) of 9 trials and 1,117 people found moderate evidence, from a few of those trials, that heat wraps give a small, short-term drop in recent low back pain, and that adding exercise helped more. For cold it found only three poor-quality studies and drew no conclusions (French and colleagues, 2006).',
         'Heat brings more blood to the area and makes tissue a little more pliable. Cold slows blood flow and dulls pain. A 2015 review noted that most advice on both rests on experience, with limited trial evidence (Malanga and colleagues).',
       ],
@@ -104,8 +110,9 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'Should you use heat before stretching?',
       keyFact: 'Across 36 studies in 1,301 people without injuries, heat plus stretching improved range of motion more than stretching alone (Bleakley and Costello, 2013).',
       paragraphs: [
-        'Warming the foot before you stretch is a reasonable choice, and it has more support than icing before stretching. A 2013 review of 36 studies in 1,301 people without injuries found that heat increased range of motion, and that heat plus stretching worked better than stretching alone. The data on cold were conflicting. Every study had a high risk of bias, and none involved people with heel pain, so take this as a sensible idea, not a tested plan for plantar fasciitis.',
-        'Warming up can be simple. A warm shower, or a few minutes with your feet in warm water, before the plantar fascia stretch and calf stretch. In the morning, though, do not wait for a warm-up before you stretch. The first-step stretch is meant to happen before your foot takes weight, on the edge of the bed. [Heel pain in the morning](/heel-pain-in-the-morning/) walks through that routine.',
+        '**Warming the foot before you stretch is a reasonable choice**, and it has more support than icing before stretching. A 2013 review of 36 studies in 1,301 people without injuries found that heat increased range of motion, and that heat plus stretching worked better than stretching alone. The data on cold were conflicting. Every study had a high risk of bias, and none involved people with heel pain, so take this as a sensible idea, not a tested plan for plantar fasciitis.',
+        'Warming up can be simple. A warm shower, or a few minutes with your feet in warm water, before the plantar fascia stretch and calf stretch.',
+        'In the morning, though, do not wait for a warm-up before you stretch. The first-step stretch is meant to happen before your foot takes weight, on the edge of the bed. [Heel pain in the morning](/heel-pain-in-the-morning/) walks through that routine.',
       ],
       cites: [CITE.bleakleyThermal],
     },
@@ -113,7 +120,15 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'Do contrast baths help plantar fasciitis?',
       paragraphs: [
         'Contrast baths, switching your foot between warm and cold water, have no trial behind them for plantar fasciitis that we could find. A 2009 systematic review of contrast baths included 10 studies in volunteers without injuries and in people with rheumatoid arthritis, diabetes or foot and ankle injuries. It found that switching temperatures may raise skin blood flow, but no link to better function was shown (Breger Stanton and colleagues).',
-        'You will see many different recipes online: two minutes cold and 30 seconds warm, one minute cold and three minutes warm, always end on cold. None of these timings comes from a study. If you like contrast baths, they are low risk for most people with normal feeling in their feet. Just do not expect more from them than from plain warm or cold.',
+        'You will see many different recipes online:',
+        {
+          list: [
+            'Two minutes cold and 30 seconds warm.',
+            'One minute cold and three minutes warm.',
+            'Always end on cold.',
+          ],
+        },
+        '**None of these timings comes from a study.** If you like contrast baths, they are low risk for most people with normal feeling in their feet. Just do not expect more from them than from plain warm or cold.',
       ],
       cites: [CITE.bregerContrast],
     },
@@ -141,7 +156,8 @@ export const ICE_HEAT_EN: Guide = {
       h2: 'What actually helps plantar fasciitis long term?',
       keyFact: 'In a trial of 48 people, slow heel raises with a towel under the toes eased pain faster than stretching alone at three months, and both groups were even by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
-        'The part of plantar fasciitis care with the strongest evidence is exercise, not temperature. The 2023 guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training for the foot and ankle a **B**. In a 2003 trial of 101 people, a plantar fascia stretch helped more than a calf stretch alone after about two months (DiGiovanni and colleagues). In a 2015 trial of 48 people, slow heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were about even (Rathleff and colleagues).',
+        'The part of plantar fasciitis care with the strongest evidence is exercise, not temperature. The 2023 guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training for the foot and ankle a **B**.',
+        'In a 2003 trial of 101 people, a plantar fascia stretch helped more than a calf stretch alone after about two months (DiGiovanni and colleagues). In a 2015 trial of 48 people, slow heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were about even (Rathleff and colleagues).',
         'Use ice or heat around these exercises: warmth before stretching, ice after a long day, if either helps. Walkito works the same way: the stretches and calf work are the plan, and the foot roll is a 60-second recovery step, not the main event. The full list is in [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
       ],
       exercises: [

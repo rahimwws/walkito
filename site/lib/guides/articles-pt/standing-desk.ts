@@ -37,7 +37,14 @@ export const STANDING_DESK_PT: Guide = {
       h2: 'Por que os pés doem com a mesa em pé?',
       keyFact: 'Uma revisão sistemática de 2017 de 25\u00A0estudos encontrou que os sintomas lombares ficavam clinicamente relevantes depois de cerca de 71\u00A0minutos em pé na população em geral, mas só 42\u00A0minutos em pessoas com tendência a dor em pé (Coenen e colegas, 2017).',
       paragraphs: [
-        'A dor nos pés com mesa em pé acontece pelo mesmo motivo que qualquer tempo longo em pé dói: os pés, as panturrilhas e a parte de baixo das pernas carregam uma carga parada sem o alívio que caminhar ou sentar dá. Quando você fica parado em pé, a gravidade acumula sangue na parte de baixo das pernas, os músculos da panturrilha ficam na mesma posição sem contrair e relaxar, e a fáscia plantar embaixo do arco absorve uma carga constante.',
+        'A dor nos pés com mesa em pé acontece pelo mesmo motivo que qualquer tempo longo em pé dói: os pés, as panturrilhas e a parte de baixo das pernas carregam uma carga parada sem o alívio que caminhar ou sentar dá. Quando você fica parado em pé:',
+        {
+          list: [
+            'A gravidade acumula sangue na parte de baixo das pernas.',
+            'Os músculos da panturrilha ficam na mesma posição sem contrair e relaxar.',
+            'A fáscia plantar embaixo do arco absorve uma carga constante.',
+          ],
+        },
         'Uma revisão sistemática de 2017 de 25\u00A0estudos de laboratório juntou os dados de 591\u00A0participantes e encontrou que níveis clinicamente relevantes de sintomas lombares apareciam depois de cerca de 71\u00A0minutos em pé sem interrupção na população em geral, mas só 42\u00A0minutos em pessoas que costumam sentir dor em pé. Para os sintomas nas pernas, o quadro foi parecido. Os autores recomendaram um limite de 40\u00A0minutos como teto prático antes de interromper o tempo em pé.',
         'Uma revisão de 2015 da literatura de saúde ocupacional confirmou a associação entre ficar muito tempo em pé e desconforto musculoesquelético, cansaço e dor nas pernas em muitos tipos de trabalho em pé. A revisão também encontrou que o esforço cardiovascular e o inchaço nas pernas aumentam com o tempo em pé.',
       ],
@@ -48,7 +55,7 @@ export const STANDING_DESK_PT: Guide = {
       keyFact: 'Uma declaração de especialistas de 2015 recomenda chegar aos poucos a 2\u00A0horas por dia em pé e em atividade leve, e com o tempo progredir para 4\u00A0horas, divididas em períodos mais curtos (Buckley e colegas, 2015).',
       paragraphs: [
         'Não existe uma resposta única que sirva para todo mundo, mas a pesquisa estreita as opções. Uma declaração de especialistas de 2015 encomendada pela Public Health England e pela Active Working Community Interest Company recomendou que quem trabalha sentado comece acumulando 2\u00A0horas por dia em pé e em atividade leve no horário de trabalho, e com o tempo progrida para 4\u00A0horas por dia. A declaração especificou que o tempo em pé deve ser dividido em períodos mais curtos, não feito num bloco só.',
-        'A revisão de 2017 de estudos de laboratório sugere que 40\u00A0minutos em pé sem parar é o ponto em que os sintomas começam a ficar clinicamente relevantes. Juntando as duas coisas, um ponto de partida prático é ficar 20 a 30\u00A0minutos em pé, 20 a 30\u00A0minutos sentado, e repetir ao longo do dia, ajustando conforme o corpo se adapta.',
+        'A revisão de 2017 de estudos de laboratório sugere que 40\u00A0minutos em pé sem parar é o ponto em que os sintomas começam a ficar clinicamente relevantes. Juntando as duas coisas, **um ponto de partida prático é ficar 20 a 30\u00A0minutos em pé, 20 a 30\u00A0minutos sentado, e repetir ao longo do dia**, ajustando conforme o corpo se adapta.',
         'Uma revisão sistemática de 2014 de 14\u00A0estudos sobre estações de trabalho que alternam sentado e em pé encontrou evidência suficiente de que elas reduzem o desconforto lombar, sem queda de produtividade. A revisão não encontrou uma proporção ideal entre sentado e em pé, e os autores observaram que a melhor proporção provavelmente varia de pessoa para pessoa e de trabalho para trabalho. O que a evidência apoia é alternar, não uma regra fixa.',
       ],
       sourceNote:
@@ -60,7 +67,7 @@ export const STANDING_DESK_PT: Guide = {
       paragraphs: [
         'Os tapetes antifadiga têm alguma evidência por trás. A revisão de saúde ocupacional de 2015 coloca os tapetes entre as intervenções com evidência para reduzir o desconforto quando se fica muito tempo em pé. Um estudo cruzado com 38\u00A0membros de equipes cirúrgicas encontrou que ficar em pé sobre um tapete antifadiga de borracha de 15\u00A0mm durante os procedimentos resultou em notas de dor e de cansaço significativamente menores do que ficar em pé no piso comum.',
         'O mecanismo é simples: uma superfície mais macia deixa os pés fazerem pequenos ajustes e tira um pouco da carga que um chão duro concentra no calcanhar e na parte da frente do pé. Uma revisão sistemática de 2018 sobre materiais de amortecimento para quem fica muito tempo em pé observou resultados consistentes de menos desconforto, embora os estudos fossem pequenos e o benefício fosse de conforto, não de prevenção de um problema específico.',
-        'Um tapete sozinho não vai resolver a dor nos pés, mas é uma das coisas mais simples de experimentar. Se você já tem uma mesa em pé e os seus pés doem, um tapete junto com períodos mais curtos em pé e os exercícios desta página cobre o principal.',
+        '**Um tapete sozinho não vai resolver a dor nos pés, mas é uma das coisas mais simples de experimentar.** Se você já tem uma mesa em pé e os seus pés doem, um tapete junto com períodos mais curtos em pé e os exercícios desta página cobre o principal.',
       ],
       cites: [CITE.waters],
     },
@@ -68,7 +75,8 @@ export const STANDING_DESK_PT: Guide = {
       h2: 'Que calçado usar na mesa em pé?',
       paragraphs: [
         'Se você trabalha em casa, talvez fique em pé na mesa de meia ou de chinelo. São muitas horas sem nenhum amortecimento ou apoio para o arco. A diretriz de 2023 para dor no calcanhar dá às órteses sozinhas um B contra para fascite plantar, o que significa que a evidência pende para não usá-las como opção isolada, mas isso fala de palmilhas isoladas, não de se qualquer calçado é melhor do que nenhum.',
-        'Um caminho razoável: use um calçado com algum amortecimento e uma palmilha com suporte enquanto estiver em pé, mesmo em casa. Você não precisa de um calçado especial para mesa em pé. Se você alterna entre ficar em pé e sentado, pode tirar o calçado nos períodos sentado. Os exercícios desta página miram os tecidos diretamente. Calçados e tapetes ajudam no conforto em pé, mas não substituem o alongamento e o treino de força.',
+        'Um caminho razoável: **use um calçado com algum amortecimento e uma palmilha com suporte enquanto estiver em pé, mesmo em casa.** Você não precisa de um calçado especial para mesa em pé. Se você alterna entre ficar em pé e sentado, pode tirar o calçado nos períodos sentado.',
+        'Os exercícios desta página miram os tecidos diretamente. Calçados e tapetes ajudam no conforto em pé, mas não substituem o alongamento e o treino de força.',
       ],
       cites: [CITE.guideline],
     },
@@ -179,9 +187,17 @@ export const STANDING_DESK_PT: Guide = {
     {
       h2: 'Como começar a usar a mesa em pé sem dor nos pés?',
       paragraphs: [
-        'Comece com menos tempo em pé do que você acha que precisa. A declaração de especialistas de 2015 recomenda chegar aos poucos a 2\u00A0horas em pé e em atividade leve por dia, não começar por aí. Se ficar em pé é novidade para você, comece com 15 a 20\u00A0minutos em pé por hora e aumente aos poucos ao longo de algumas semanas.',
-        'Uma primeira semana prática: 15\u00A0minutos em pé, 45\u00A0minutos sentado, repetindo ao longo do dia. Na segunda semana, passe para 20\u00A0minutos em pé e 40 sentado. Na terceira ou quarta semana, experimente 30 e 30. Preste atenção nos pés e na lombar. Se o desconforto estiver aumentando, sente antes, em vez de insistir.',
-        'Use um tapete desde o começo, se tiver. Use calçados com algum amortecimento, mesmo em casa. Faça os alongamentos da panturrilha da tabela acima pelo menos uma vez por dia. Se você já tem dor nos pés de ficar em pé e quer o guia mais amplo, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor da mesa em pé e problemas como a fascite plantar se sobrepõem. Para a versão da enfermagem, veja [dor nos pés na enfermagem](/pt/dor-nos-pes-enfermagem/).',
+        '**Comece com menos tempo em pé do que você acha que precisa.** A declaração de especialistas de 2015 recomenda chegar aos poucos a 2\u00A0horas em pé e em atividade leve por dia, não começar por aí. Se ficar em pé é novidade para você, comece com 15 a 20\u00A0minutos em pé por hora e aumente aos poucos ao longo de algumas semanas:',
+        {
+          list: [
+            '**Uma primeira semana prática:** 15\u00A0minutos em pé, 45\u00A0minutos sentado, repetindo ao longo do dia.',
+            '**Na segunda semana:** passe para 20\u00A0minutos em pé e 40 sentado.',
+            '**Na terceira ou quarta semana:** experimente 30 e 30.',
+          ],
+        },
+        'Preste atenção nos pés e na lombar. Se o desconforto estiver aumentando, sente antes, em vez de insistir.',
+        'Use um tapete desde o começo, se tiver. Use calçados com algum amortecimento, mesmo em casa. Faça os alongamentos da panturrilha da tabela acima pelo menos uma vez por dia.',
+        'Se você já tem dor nos pés de ficar em pé e quer o guia mais amplo, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor da mesa em pé e problemas como a fascite plantar se sobrepõem. Para a versão da enfermagem, veja [dor nos pés na enfermagem](/pt/dor-nos-pes-enfermagem/).',
       ],
       cites: [CITE.buckley],
     },

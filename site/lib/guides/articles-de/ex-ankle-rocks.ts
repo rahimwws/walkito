@@ -30,7 +30,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
       paragraphs: [
         'Stell dich in Schrittstellung, ein Fuß vorn, einer hinten, die Hände zum Abstützen an einer Wand oder einem Türrahmen. Die vordere Ferse bleibt flach auf dem Boden, und du wippst das vordere Knie langsam über die Zehen nach vorn. Lass das Knie so weit wandern, wie es geht, solange die Ferse unten bleibt. Dann wipp zurück zum Start. Das ist eine Wiederholung.',
         'Die Bewegung ist langsam und kontrolliert. Du federst nicht. Jedes Wippen dauert etwa zwei Sekunden nach vorn und zwei Sekunden zurück. Das hintere Bein ist nur fürs Gleichgewicht da. Die ganze Arbeit im Sprunggelenk passiert im vorderen Bein.',
-        'Lass den vorderen Fuß gerade nach vorn zeigen. Wenn sich der Fuß nach außen dreht, nimmt das Sprunggelenk eine Abkürzung, und du verpasst den Bewegungsumfang, den du aufbauen willst.',
+        '**Lass den vorderen Fuß gerade nach vorn zeigen.** Wenn sich der Fuß nach außen dreht, nimmt das Sprunggelenk eine Abkürzung, und du verpasst den Bewegungsumfang, den du aufbauen willst.',
       ],
       exercises: [
         {
@@ -55,8 +55,15 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
       h2: 'Warum zählt die Beweglichkeit im Sprunggelenk bei Fersenschmerzen?',
       keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk ein stärkerer Risikofaktor als BMI oder Zeit im Stehen und erhöhte die Odds um das 23,3-Fache (Riddle und Kollegen, 2003).',
       paragraphs: [
-        'Dorsalflexion ist, wie weit sich der Fuß nach oben Richtung Schienbein beugen kann, während die Ferse am Boden bleibt. Jeder Schritt braucht etwas Dorsalflexion. Wenn sich das Sprunggelenk nicht weit genug beugen kann, gleicht der Körper aus. Der Fuß kippt vielleicht nach innen, die Wade bekommt mehr Spannung ab, und die Plantarfaszie fängt Kräfte ab, für die sie nicht gemacht ist.',
-        'In der Fall-Kontroll-Studie von Riddle 2003 war eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt, mit 23,3-fachen Odds, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
+        'Dorsalflexion ist, wie weit sich der Fuß nach oben Richtung Schienbein beugen kann, während die Ferse am Boden bleibt. Jeder Schritt braucht etwas Dorsalflexion. Wenn sich das Sprunggelenk nicht weit genug beugen kann, gleicht der Körper aus:',
+        {
+          list: [
+            'Der Fuß kippt vielleicht nach innen.',
+            'Die Wade bekommt mehr Spannung ab.',
+            'Die Plantarfaszie fängt Kräfte ab, für die sie nicht gemacht ist.',
+          ],
+        },
+        'In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit 23,3-fachen Odds, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
         'Die Wade passiv zu dehnen (wie bei der [Wadendehnung](/de/uebungen/wade-dehnen/) und der [Soleusdehnung](/de/uebungen/soleus-dehnen/)) geht eine Seite des Problems an: die Länge des Muskels. Sprunggelenk-Wippen geht die andere Seite an: aktive Kontrolle am Ende des Bewegungsumfangs. Wenn du das Knie unter Körpergewicht über die Zehen wippst, lernt das Sprunggelenk, den Umfang zu nutzen, den es hat, statt ihn nur passiv zu erreichen.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -66,14 +73,15 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
       paragraphs: [
         'Die [Wadendehnung](/de/uebungen/wade-dehnen/) ist ein passives Halten. Du lehnst dich an die Wand und wartest, bis der Muskel länger wird. Das hintere Bein ist gestreckt, das zielt auf den Gastrocnemius. Die [Soleusdehnung](/de/uebungen/soleus-dehnen/) macht dasselbe mit gebeugtem Knie.',
         'Sprunggelenk-Wippen ist eine aktive, wiederholte Bewegung. Du schiebst das Knie nach vorn, kommst zurück, schiebst wieder. Du belastest das Sprunggelenk durch seinen Bewegungsumfang, statt am Ende still zu halten. Das Wippen baut die Fähigkeit auf, Dorsalflexion unter Last zu nutzen, und genau das brauchen Gehen und Laufen.',
-        'Beides ist nützlich. Dehnen öffnet den Bewegungsumfang. Sprunggelenk-Wippen trainiert dich, ihn zu nutzen. Die Leitlinie bewertet Wadendehnen mit A. Sprunggelenk-Wippen gehört zur Mobilitätsarbeit für das Sprunggelenk, die Walkito zusammen mit diesen Dehnungen einplant.',
+        'Beides ist nützlich. **Dehnen öffnet den Bewegungsumfang. Sprunggelenk-Wippen trainiert dich, ihn zu nutzen.** Die Leitlinie bewertet Wadendehnen mit A. Sprunggelenk-Wippen gehört zur Mobilitätsarbeit für das Sprunggelenk, die Walkito zusammen mit diesen Dehnungen einplant.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Der Knie-Wand-Test und wie er dazu passt',
       paragraphs: [
-        'Der Knie-Wand-Test, auch Weight-Bearing-Lunge-Test genannt, ist eine einfache Art, die Dorsalflexion im Sprunggelenk zu messen. Du stehst mit dem Gesicht zur Wand, ein Fuß ein paar Zentimeter davor, und schiebst das Knie nach vorn, bis es die Wand berührt. Hebt sich die Ferse, bevor das Knie die Wand erreicht, setz den Fuß näher heran. Der Abstand vom großen Zeh zur Wand an dem Punkt, an dem das Knie die Wand gerade berührt und die Ferse noch flach ist, ist dein Ergebnis.',
+        'Der Knie-Wand-Test, auch Weight-Bearing-Lunge-Test genannt, ist eine einfache Art, die Dorsalflexion im Sprunggelenk zu messen.',
+        'Du stehst mit dem Gesicht zur Wand, ein Fuß ein paar Zentimeter davor, und schiebst das Knie nach vorn, bis es die Wand berührt. Hebt sich die Ferse, bevor das Knie die Wand erreicht, setz den Fuß näher heran. Der Abstand vom großen Zeh zur Wand an dem Punkt, an dem das Knie die Wand gerade berührt und die Ferse noch flach ist, ist dein Ergebnis.',
         'Walkito enthält in der App eine Knie-Wand-Übung (2-mal 30\u00A0Sekunden halten, jedes Bein). Wenn du diesen Abstand über Wochen verfolgst, siehst du, ob sich die Beweglichkeit deines Sprunggelenks wirklich verbessert. Ein bis zwei Zentimeter mehr in ein paar Wochen sind bedeutsam.',
         'Sprunggelenk-Wippen und die Knie-Wand-Übung arbeiten am selben Bewegungsumfang aus verschiedenen Richtungen. Das Wippen sind Wiederholungen durch den Umfang. Das Halten an der Wand ist eine anhaltende Last am Ende des Umfangs. Beides hilft. Walkito plant beides an Mobilitätstagen ein.',
       ],
@@ -81,10 +89,14 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Sprunggelenk-Wippen?',
       paragraphs: [
-        'Die Ferse abheben. Die Ferse muss bei jeder Wiederholung flach bleiben. Hebt sie sich, bist du über das Ende deines Bewegungsumfangs hinaus, und die Übung verliert ihren Sinn. Wipp nur so weit, wie es die Ferse zulässt.',
-        'Den Fuß nach außen drehen. Der Fuß sollte gerade nach vorn zeigen. Dreht er nach außen, weicht das Sprunggelenk seiner steifen Stelle aus. Lass den zweiten Zeh auf die Wand zeigen.',
-        'Zu schnell sein. Federn oder hastige Wiederholungen bauen keinen kontrollierten Bewegungsumfang auf. Zwei Sekunden nach vorn, zwei Sekunden zurück. Lass das Sprunggelenk bei jeder Wiederholung das Ende seines Umfangs spüren.',
-        'Das hintere Bein weglassen. Manche versuchen, beide Beine gleichzeitig zu machen, indem sie einfach in die Hocke gehen. Das teilt die Last und verkleinert den Umfang, durch den das vordere Sprunggelenk arbeiten muss. Nimm eine Schrittstellung, damit ein Sprunggelenk die Arbeit macht.',
+        {
+          list: [
+            '**Die Ferse abheben.** Die Ferse muss bei jeder Wiederholung flach bleiben. Hebt sie sich, bist du über das Ende deines Bewegungsumfangs hinaus, und die Übung verliert ihren Sinn. Wipp nur so weit, wie es die Ferse zulässt.',
+            '**Den Fuß nach außen drehen.** Der Fuß sollte gerade nach vorn zeigen. Dreht er nach außen, weicht das Sprunggelenk seiner steifen Stelle aus. Lass den zweiten Zeh auf die Wand zeigen.',
+            '**Zu schnell sein.** Federn oder hastige Wiederholungen bauen keinen kontrollierten Bewegungsumfang auf. Zwei Sekunden nach vorn, zwei Sekunden zurück. Lass das Sprunggelenk bei jeder Wiederholung das Ende seines Umfangs spüren.',
+            '**Das hintere Bein weglassen.** Manche versuchen, beide Beine gleichzeitig zu machen, indem sie einfach in die Hocke gehen. Das teilt die Last und verkleinert den Umfang, durch den das vordere Sprunggelenk arbeiten muss. Nimm eine Schrittstellung, damit ein Sprunggelenk die Arbeit macht.',
+          ],
+        },
       ],
     },
     {

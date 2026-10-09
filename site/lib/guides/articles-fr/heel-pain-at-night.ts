@@ -37,7 +37,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
     {
       h2: 'Pourquoi le talon fait-il mal la nuit ou au repos\u00A0?',
       paragraphs: [
-        'La fasciite plantaire fait mal parce que le fascia se raidit pendant le sommeil, puis s’étire brusquement quand vous vous levez. Cette douleur culmine au premier pas et s’améliore avec le mouvement. Si votre talon fait mal alors que vous êtes allongé, sans aucune charge dessus, c’est en général un autre mécanisme qui est en cause.',
+        'La fasciite plantaire fait mal parce que le fascia se raidit pendant le sommeil, puis s’étire brusquement quand vous vous levez. Cette douleur culmine au premier pas et s’améliore avec le mouvement. **Si votre talon fait mal alors que vous êtes allongé, sans aucune charge dessus, c’est en général un autre mécanisme qui est en cause.**',
         'Une revue de 2018 parue dans American Family Physician cite plusieurs causes de douleur au talon qui se comportent autrement que la fasciite plantaire. La distinction clé\u00A0: la douleur de la fasciite plantaire s’améliore avec l’activité, alors que celle des fractures de fatigue, des compressions nerveuses, des tumeurs et des maladies inflammatoires ne suit pas ce schéma.',
         'Le pied pointe aussi vers le bas (flexion plantaire) pendant le sommeil. Cette position peut raccourcir le tendon d’Achille et le mollet, ce qui contribue parfois à une gêne au talon. Les attelles de nuit agissent là-dessus en maintenant la cheville à angle neutre. Mais une attelle de nuit est un outil pour la fasciite plantaire, pas un substitut à des examens pour une douleur qui s’aggrave vraiment au repos.',
       ],
@@ -47,7 +47,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       h2: 'Est-ce une fracture de fatigue du calcanéum\u00A0?',
       paragraphs: [
         'Une fracture de fatigue du calcanéum, une fine fissure de l’os du talon due à une charge répétée, peut donner une douleur sourde et profonde qui lance la nuit. Contrairement à la fasciite plantaire, la douleur s’aggrave en général avec l’activité et ne se calme pas à l’échauffement. Elle suit souvent une hausse brusque de la course, de la marche ou de la station debout sur sol dur.',
-        'Le «\u00A0test de compression\u00A0», qui consiste à presser les deux côtés de l’os du talon l’un vers l’autre, est le signe clinique classique. Une douleur à la compression est inhabituelle dans la fasciite plantaire et fréquente dans les fractures de fatigue. Les radios simples passent souvent à côté d’une fracture de fatigue débutante. Une IRM ou une scintigraphie osseuse est en général nécessaire pour la confirmer.',
+        'Le «\u00A0test de compression\u00A0», qui consiste à presser les deux côtés de l’os du talon l’un vers l’autre, est le signe clinique classique. **Une douleur à la compression est inhabituelle dans la fasciite plantaire et fréquente dans les fractures de fatigue.** Les radios simples passent souvent à côté d’une fracture de fatigue débutante. Une IRM ou une scintigraphie osseuse est en général nécessaire pour la confirmer.',
         'Une revue de 2011 parue dans American Family Physician a noté que les fractures de fatigue du calcanéum donnent une douleur qui s’aggrave progressivement après une hausse de l’activité ou un passage à des surfaces de marche plus dures. La douleur nocturne et la douleur au repos figuraient parmi les signes qui distinguent les fractures de fatigue de la fasciite.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -58,7 +58,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       paragraphs: [
         'Le nerf tibial passe dans un espace derrière la malléole interne appelé canal tarsien. Une compression à cet endroit, le syndrome du canal tarsien, donne des brûlures, des fourmillements ou un engourdissement le long de la plante et du talon. Tu (2018) décrit la douleur du canal tarsien comme en général pire debout, à la marche ou en courant, et soulagée par le repos et la surélévation. Ce schéma diffère de la fasciite plantaire, mais ce n’est pas une vraie douleur au repos, donc le canal tarsien ne correspond pas toujours au schéma dont parle cette page.',
         'Le nerf de Baxter est la première branche du nerf plantaire latéral, un petit nerf près de l’intérieur du talon. Quand il est comprimé, il donne une douleur vive ou des brûlures à l’intérieur du talon. La douleur s’aggrave souvent avec l’activité au fil de la journée, mais peut aussi apparaître au repos. Une revue de 2025 indique que la compression du nerf de Baxter pourrait expliquer jusqu’à 20\u00A0% des cas de douleur chronique du talon (Tedeschi, 2025).',
-        'La compression nerveuse est souvent prise à tort pour une fasciite plantaire, car les deux font mal à l’intérieur du talon. La différence tient à la nature de la douleur\u00A0: brûlures, fourmillements ou engourdissement sont des signes nerveux. L’imagerie et l’étude de la conduction nerveuse peuvent aider un professionnel de santé à confirmer le diagnostic.',
+        'La compression nerveuse est souvent prise à tort pour une fasciite plantaire, car les deux font mal à l’intérieur du talon. La différence tient à la nature de la douleur\u00A0: **brûlures, fourmillements ou engourdissement sont des signes nerveux.** L’imagerie et l’étude de la conduction nerveuse peuvent aider un professionnel de santé à confirmer le diagnostic.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -68,7 +68,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       paragraphs: [
         'Les spondyloarthrites, un groupe de maladies inflammatoires qui comprend la spondylarthrite ankylosante et le rhumatisme psoriasique, peuvent provoquer une enthésite, une inflammation là où un tendon ou un ligament s’attache à l’os. Le talon est un endroit fréquent. La douleur touche souvent les deux côtés, peut se situer à l’insertion du tendon d’Achille ou sous le talon, et s’accompagne d’une raideur du matin prolongée (plus de 30\u00A0minutes) qui s’améliore avec le mouvement.',
         'Dans un suivi de 5 à 15\u00A0ans de 174\u00A0personnes atteintes de fasciite plantaire, une douleur aux deux talons prédisait nettement des symptômes plus longs. Les auteurs ont noté qu’une maladie inflammatoire générale non reconnue pourrait en partie l’expliquer.',
-        'La polyarthrite rhumatoïde et la goutte peuvent aussi donner une douleur au talon. Si vos deux talons font mal, si la raideur dure plus de 30\u00A0minutes chaque matin, ou si d’autres articulations sont touchées, un professionnel de santé doit rechercher une cause inflammatoire.',
+        'La polyarthrite rhumatoïde et la goutte peuvent aussi donner une douleur au talon. **Si vos deux talons font mal, si la raideur dure plus de 30\u00A0minutes chaque matin, ou si d’autres articulations sont touchées, un professionnel de santé doit rechercher une cause inflammatoire.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -130,8 +130,16 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       h2: 'En quoi la douleur au talon la nuit diffère-t-elle de celle du matin\u00A0?',
       paragraphs: [
         'La douleur au talon le matin et la douleur la nuit se ressemblent, mais orientent dans des directions différentes. La douleur du matin, cette traction vive aux premiers pas qui s’estompe après quelques minutes de marche, est la présentation typique de la fasciite plantaire. Le tissu s’est raidi pendant la nuit et s’étire brusquement sous la charge.',
-        'La douleur nocturne, c’est-à-dire une douleur qui arrive ou s’aggrave quand vous êtes au lit sans charge sur le pied, évoque autre chose qu’une simple raideur du fascia. Les problèmes les plus associés à une vraie douleur au repos sont les fractures de fatigue, les compressions nerveuses, les rhumatismes inflammatoires et, rarement, les tumeurs osseuses ou les infections.',
-        'Si vous ne savez pas quel schéma est le vôtre, un test simple\u00A0: la douleur s’améliore-t-elle après 5 à 10\u00A0minutes de marche\u00A0? Si oui, le schéma de la fasciite plantaire est plus probable, et la page [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) est un meilleur point de départ. Si non, continuez ici et envisagez de consulter un professionnel de santé.',
+        'La douleur nocturne, c’est-à-dire une douleur qui arrive ou s’aggrave quand vous êtes au lit sans charge sur le pied, évoque autre chose qu’une simple raideur du fascia. Les problèmes les plus associés à une vraie douleur au repos sont\u00A0:',
+        {
+          list: [
+            'Les fractures de fatigue.',
+            'Les compressions nerveuses.',
+            'Les rhumatismes inflammatoires.',
+            'Rarement, les tumeurs osseuses ou les infections.',
+          ],
+        },
+        'Si vous ne savez pas quel schéma est le vôtre, un test simple\u00A0: **la douleur s’améliore-t-elle après 5 à 10\u00A0minutes de marche\u00A0?** Si oui, le schéma de la fasciite plantaire est plus probable, et la page [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) est un meilleur point de départ. Si non, continuez ici et envisagez de consulter un professionnel de santé.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },

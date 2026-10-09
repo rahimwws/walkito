@@ -14,7 +14,8 @@ export const TIGHT_CALVES_PT: Guide = {
   lede:
     'Panturrilha tensa normalmente quer dizer que os músculos da panturrilha parecem duros ou que o tornozelo não dobra o suficiente. Causas comuns: um aumento brusco de corrida ou caminhada, dias longos em pé, sapatos de salto. Alongar os dois músculos da panturrilha ajuda um pouco: numa revisão de cinco ensaios, a amplitude do tornozelo aumentou cerca de 2 a 3\u00A0graus. A elevação de calcanhar também ajuda.',
   intro: [
-    'Você sente nos primeiros passos ao sair da cama, numa subida ou quando agacha e os calcanhares querem sair do chão. A parte de trás da perna parece curta e dura. Isso é muito comum e, na maioria das vezes, não é sinal de lesão. Esta página explica por que a panturrilha fica tensa, qual parte dela está tensa e o que a pesquisa diz que o alongamento e o fortalecimento conseguem e não conseguem mudar. Para os alongamentos passo a passo, veja [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e [alongamento do sóleo](/pt/exercicios/alongamento-soleo/).',
+    'Você sente nos primeiros passos ao sair da cama, numa subida ou quando agacha e os calcanhares querem sair do chão. A parte de trás da perna parece curta e dura. Isso é muito comum e, na maioria das vezes, não é sinal de lesão.',
+    'Esta página explica por que a panturrilha fica tensa, qual parte dela está tensa e o que a pesquisa diz que o alongamento e o fortalecimento conseguem e não conseguem mudar. Para os alongamentos passo a passo, veja [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e [alongamento do sóleo](/pt/exercicios/alongamento-soleo/).',
   ],
   takeaways: [
     'Numa revisão de 2006 com cinco ensaios randomizados, o alongamento estático da panturrilha aumentou a dobra do tornozelo em apenas cerca de 2 a 3\u00A0graus, e os autores não tinham certeza se essa mudança faz diferença para as pessoas (Radford e colegas).',
@@ -57,7 +58,8 @@ export const TIGHT_CALVES_PT: Guide = {
         'A panturrilha tensa está ligada à fascite plantar, a causa mais comum de dor embaixo do calcanhar. Quando o tornozelo não dobra o suficiente, o pé precisa compensar a cada passo, e mais tração passa pelo tendão de Aquiles, pelo calcanhar e pela fáscia plantar (a faixa grossa embaixo do arco).',
         'Num estudo de caso-controle de 2003, Riddle e colegas compararam 50\u00A0pessoas com fascite plantar com 100\u00A0pessoas parecidas sem a condição. Quem tinha um tornozelo que não dobrava além de 0\u00A0grau tinha uma chance 23,3\u00A0vezes maior de fascite plantar do que quem conseguia dobrar além de 10\u00A0graus. A dobra reduzida do tornozelo foi o fator de risco mais forte que eles mediram, à frente do peso corporal e de trabalhar em pé.',
         'Num estudo posterior com 254\u00A0pessoas com fascite plantar, 83% tinham a dobra do tornozelo limitada, e 57% de todos os pacientes tinham só o gastrocnêmio tenso (Patel e DiGiovanni, 2011).',
-        'Os dois estudos mostram uma ligação, não que a panturrilha tensa cause fascite plantar. A margem larga em torno do número 23,3 também significa que o valor real pode ser bem menor. Mesmo assim, esse é um dos motivos pelos quais a diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha o grau A, a nota mais alta, para dor plantar no calcanhar. Se a dor no calcanhar é o seu problema principal, comece por [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/). A panturrilha tensa também aparece em problemas do Aquiles e da canela: veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) e [exercícios para canelite](/pt/canelite-exercicios/).',
+        '**Os dois estudos mostram uma ligação, não que a panturrilha tensa cause fascite plantar.** A margem larga em torno do número 23,3 também significa que o valor real pode ser bem menor. Mesmo assim, esse é um dos motivos pelos quais a diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha o grau A, a nota mais alta, para dor plantar no calcanhar.',
+        'Se a dor no calcanhar é o seu problema principal, comece por [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/). A panturrilha tensa também aparece em problemas do Aquiles e da canela: veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) e [exercícios para canelite](/pt/canelite-exercicios/).',
       ],
       sourceNote:
         'Riddle 2003: razão de chances de 23,3 (IC 95% 4,3 a 124,4) para dorsiflexão de 0\u00A0grau ou menos contra mais de 10\u00A0graus, ajustada. Patel 2011: 211 de 254 tinham dorsiflexão limitada, 145 de 254 contratura isolada do gastrocnêmio, 66 de 254 contratura do gastrocnêmio e do sóleo.',
@@ -67,7 +69,15 @@ export const TIGHT_CALVES_PT: Guide = {
       h2: 'O alongamento solta mesmo a panturrilha tensa?',
       keyFact: 'Uma revisão de 2006 com cinco ensaios randomizados concluiu que o alongamento da panturrilha aumentou a dobra do tornozelo em cerca de 2 a 3\u00A0graus, e os autores não tinham certeza se essa mudança é clinicamente importante (Radford e colegas).',
       paragraphs: [
-        'O alongamento solta, sim, a panturrilha tensa, mas menos do que a maioria das pessoas espera. Em 2006, Radford e colegas juntaram cinco ensaios randomizados que compararam o alongamento estático da panturrilha (segurar o alongamento parado) com não alongar. A dobra do tornozelo aumentou cerca de 2\u00A0graus depois de um total de 15\u00A0minutos de alongamento ou menos, cerca de 3\u00A0graus depois de 15 a 30\u00A0minutos e cerca de 2,5\u00A0graus depois de mais de 30\u00A0minutos. Esses minutos são o tempo total de alongamento somado ao longo do ensaio, não uma única sustentação longa.',
+        'O alongamento solta, sim, a panturrilha tensa, mas **menos do que a maioria das pessoas espera.** Em 2006, Radford e colegas juntaram cinco ensaios randomizados que compararam o alongamento estático da panturrilha (segurar o alongamento parado) com não alongar. A dobra do tornozelo aumentou:',
+        {
+          list: [
+            'Cerca de 2\u00A0graus depois de um total de 15\u00A0minutos de alongamento ou menos.',
+            'Cerca de 3\u00A0graus depois de 15 a 30\u00A0minutos.',
+            'Cerca de 2,5\u00A0graus depois de mais de 30\u00A0minutos.',
+          ],
+        },
+        'Esses minutos são o tempo total de alongamento somado ao longo do ensaio, não uma única sustentação longa.',
         'Os autores chamaram o ganho de pequeno e disseram que não estava claro se ele faz diferença para as pessoas. Daí saem duas coisas. Primeiro, um período curto de alongamento não vai transformar o seu tornozelo. Segundo, a sensação de soltura depois de alongar é real, mas parte dela pode ser a sua tolerância ao alongamento aumentando, e não o músculo ficando mais comprido.',
         'O alongamento também faz menos do que muita gente espera em outros aspectos. Num ensaio com 1.538\u00A0recrutas do exército, ao longo de três meses de treinamento, um alongamento de 20\u00A0segundos de seis grupos musculares das pernas em todo aquecimento não reduziu as lesões de forma relevante (Pope e colegas, 2000). Uma revisão Cochrane de 12\u00A0estudos concluiu que alongar antes ou depois do exercício reduziu a dor muscular do dia seguinte em apenas cerca de meio ponto a 1\u00A0ponto numa escala de 100\u00A0pontos (Herbert e colegas, 2011).',
         'Então alongue porque é gostoso, porque ajuda um pouco um tornozelo rígido e porque a diretriz para dor no calcanhar apoia o alongamento na dor plantar no calcanhar. Não espere que ele previna toda lesão ou acabe com a dor muscular.',
@@ -80,9 +90,18 @@ export const TIGHT_CALVES_PT: Guide = {
       h2: 'É melhor fortalecer a panturrilha tensa em vez de alongar?',
       keyFact: 'Uma revisão de 2021 com 11\u00A0ensaios randomizados e 452\u00A0pessoas não encontrou diferença significativa nos ganhos de amplitude de movimento entre treino de força e alongamento (Afonso e colegas).',
       paragraphs: [
-        'Fortalecer a panturrilha tensa é uma boa ideia, e você não precisa escolher um ou outro. Em 2021, Afonso e colegas juntaram 11\u00A0ensaios randomizados com 452\u00A0pessoas que compararam treino de força com alongamento. A amplitude de movimento melhorou mais ou menos igual com os dois. Os ensaios eram muito diferentes entre si e abrangiam muitas articulações, não só o tornozelo, então leia isso como uma pista forte, não como uma resposta definitiva.',
-        'A força importa por outro motivo. Uma panturrilha que cansa cedo fica tensa mais rápido. A elevação de calcanhar com amplitude completa, em que você desce os calcanhares até o fim e sobe até o alto, põe carga no músculo em todo o comprimento. Se a sua panturrilha fica tensa toda vez que você anda ou corre mais que o normal, aumentar a capacidade dela costuma ser o passo mais útil no longo prazo. Você pode avaliar a resistência da panturrilha com o [teste de elevação de calcanhar](/pt/teste-elevacao-calcanhar/).',
-        'Uma combinação sensata para a maioria das pessoas: alongar os dois músculos da panturrilha, soltar o tornozelo com o balanço do joelho por cima dos dedos e acrescentar elevação de calcanhar algumas vezes por semana. O Walkito começa com 2\u00A0vezes de 30\u00A0segundos para cada alongamento e 3\u00A0séries de 10 para a elevação de calcanhar com os dois pés.',
+        'Fortalecer a panturrilha tensa é uma boa ideia, e **você não precisa escolher um ou outro.** Em 2021, Afonso e colegas juntaram 11\u00A0ensaios randomizados com 452\u00A0pessoas que compararam treino de força com alongamento. A amplitude de movimento melhorou mais ou menos igual com os dois. Os ensaios eram muito diferentes entre si e abrangiam muitas articulações, não só o tornozelo, então leia isso como uma pista forte, não como uma resposta definitiva.',
+        'A força importa por outro motivo. Uma panturrilha que cansa cedo fica tensa mais rápido. A elevação de calcanhar com amplitude completa, em que você desce os calcanhares até o fim e sobe até o alto, põe carga no músculo em todo o comprimento.',
+        'Se a sua panturrilha fica tensa toda vez que você anda ou corre mais que o normal, aumentar a capacidade dela costuma ser o passo mais útil no longo prazo. Você pode avaliar a resistência da panturrilha com o [teste de elevação de calcanhar](/pt/teste-elevacao-calcanhar/).',
+        'Uma combinação sensata para a maioria das pessoas:',
+        {
+          list: [
+            'Alongar os dois músculos da panturrilha.',
+            'Soltar o tornozelo com o balanço do joelho por cima dos dedos.',
+            'Acrescentar elevação de calcanhar algumas vezes por semana.',
+          ],
+        },
+        'O Walkito começa com 2\u00A0vezes de 30\u00A0segundos para cada alongamento e 3\u00A0séries de 10 para a elevação de calcanhar com os dois pés.',
       ],
       sourceNote:
         'Afonso 2021: tamanho de efeito combinado de -0,22 (IC 95% -0,55 a 0,12), sem diferença significativa entre treino de força e alongamento na amplitude de movimento.',
@@ -148,8 +167,16 @@ export const TIGHT_CALVES_PT: Guide = {
     {
       h2: 'Panturrilha tensa é causada por desidratação ou câimbras?',
       paragraphs: [
-        'A desidratação costuma levar a culpa pela panturrilha tensa e pelas câimbras, mas a evidência que encontramos não sustenta bem essa ideia. Em 2011, Schwellnus e colegas acompanharam 210\u00A0triatletas de Ironman. Os 43 que tiveram câimbra não tiveram mudanças diferentes no peso corporal nem nos níveis de sal no sangue em relação aos que não tiveram. As duas coisas que previram as câimbras foram correr mais rápido e já ter tido câimbras antes. Isso aponta para músculos cansados e trabalhando muito, não para falta de água ou de sal. Foi um único grupo de atletas de resistência, então não resolve a questão para todo mundo, mas é mais sólido do que as afirmações que aparecem em páginas de produtos.',
-        'As câimbras noturnas são outra situação, e a pesquisa se contradiz. Num ensaio de 2012 com 80\u00A0adultos acima de 55\u00A0anos, alongar a panturrilha e os isquiotibiais (os músculos de trás da coxa) toda noite antes de dormir, por cerca de um mês e meio, reduziu as câimbras em 1,2 por noite a mais do que não fazer nada e as deixou menos dolorosas (Hallegraeff e colegas). Um ensaio anterior, de 2005, com 191\u00A0pessoas que já tomavam quinino, concluiu que a orientação de alongamento não fez diferença nas câimbras aos três meses (Coppin e colegas). Um alongamento leve da panturrilha antes de dormir é barato e de baixo risco, então vale tentar, mas pode não funcionar para você.',
+        'A desidratação costuma levar a culpa pela panturrilha tensa e pelas câimbras, mas **a evidência que encontramos não sustenta bem essa ideia.** Em 2011, Schwellnus e colegas acompanharam 210\u00A0triatletas de Ironman. Os 43 que tiveram câimbra não tiveram mudanças diferentes no peso corporal nem nos níveis de sal no sangue em relação aos que não tiveram. As duas coisas que previram as câimbras foram correr mais rápido e já ter tido câimbras antes.',
+        'Isso aponta para músculos cansados e trabalhando muito, não para falta de água ou de sal. Foi um único grupo de atletas de resistência, então não resolve a questão para todo mundo, mas é mais sólido do que as afirmações que aparecem em páginas de produtos.',
+        'As câimbras noturnas são outra situação, e a pesquisa se contradiz:',
+        {
+          list: [
+            'Num ensaio de 2012 com 80\u00A0adultos acima de 55\u00A0anos, alongar a panturrilha e os isquiotibiais (os músculos de trás da coxa) toda noite antes de dormir, por cerca de um mês e meio, reduziu as câimbras em 1,2 por noite a mais do que não fazer nada e as deixou menos dolorosas (Hallegraeff e colegas).',
+            'Um ensaio anterior, de 2005, com 191\u00A0pessoas que já tomavam quinino, concluiu que a orientação de alongamento não fez diferença nas câimbras aos três meses (Coppin e colegas).',
+          ],
+        },
+        'Um alongamento leve da panturrilha antes de dormir é barato e de baixo risco, então vale tentar, mas pode não funcionar para você.',
         'Se as câimbras são frequentes, novas ou vêm com outros sintomas, converse com um médico. Alguns remédios e algumas condições de saúde podem causá-las.',
       ],
       sourceNote:
@@ -159,8 +186,24 @@ export const TIGHT_CALVES_PT: Guide = {
     {
       h2: 'Como evitar que a panturrilha fique tensa por correr ou ficar em pé?',
       paragraphs: [
-        'A panturrilha que fica tensa por correr ou ficar em pé normalmente precisa de uma mudança na carga, não só de mais alongamento. Se você corre, aumente a distância semanal aos poucos, acrescente subidas devagar e dê tempo a um tênis novo com drop mais baixo antes de usá-lo em corridas longas. A página sobre [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês) fala da carga com mais detalhes.',
-        'Se você fica em pé o dia todo, mude o peso de um pé para o outro com frequência, faça pausas curtas para andar e faça algumas elevações de calcanhar e um alongamento no intervalo. Veja [dor nos pés por ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+        'A panturrilha que fica tensa por correr ou ficar em pé **normalmente precisa de uma mudança na carga, não só de mais alongamento.** Se você corre:',
+        {
+          list: [
+            'Aumente a distância semanal aos poucos.',
+            'Acrescente subidas devagar.',
+            'Dê tempo a um tênis novo com drop mais baixo antes de usá-lo em corridas longas.',
+          ],
+        },
+        'A página sobre [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês) fala da carga com mais detalhes.',
+        'Se você fica em pé o dia todo:',
+        {
+          list: [
+            'Mude o peso de um pé para o outro com frequência.',
+            'Faça pausas curtas para andar.',
+            'Faça algumas elevações de calcanhar e um alongamento no intervalo.',
+          ],
+        },
+        'Veja [dor nos pés por ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
         'Se você usa salto na maioria dos dias, não precisa abrir mão dele. Intercale com dias de sapato baixo e alongue os dois músculos da panturrilha à noite. Ganhar força na panturrilha com o tempo deixa mais fácil para ela dar conta do que você pedir.',
       ],
     },

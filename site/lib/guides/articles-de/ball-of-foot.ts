@@ -56,8 +56,16 @@ export const BALL_OF_FOOT_DE: Guide = {
     {
       h2: 'Wie unterscheidest du diese Erkrankungen?',
       paragraphs: [
-        'Der Ort ist der erste Hinweis. Ein breiter Schmerz unter dem zweiten und dritten Mittelfußköpfchen deutet auf eine Metatarsalgie hin. Schmerz zwischen dem dritten und vierten Zeh mit Kribbeln spricht für ein Morton-Neurom. Schmerz direkt unter dem Großzehengrundgelenk passt eher zu einer Sesamoiditis. Eine begrenzte Stelle oben auf dem Fuß mit Schwellung wirft die Frage nach einem Ermüdungsbruch auf.',
-        'Ermüdungsbrüche sind auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und brauchen manchmal ein MRT. Ein Besuch bei einer medizinischen Fachperson lohnt sich, wenn der Schmerz trotz Ruhe und anderer Schuhe länger als zwei Wochen anhält oder wenn Kribbeln, Schmerzen in der Nacht oder eine sichtbare Schwellung dazukommen.',
+        'Der Ort ist der erste Hinweis:',
+        {
+          list: [
+            'Ein breiter Schmerz unter dem zweiten und dritten Mittelfußköpfchen deutet auf eine Metatarsalgie hin.',
+            'Schmerz zwischen dem dritten und vierten Zeh mit Kribbeln spricht für ein Morton-Neurom.',
+            'Schmerz direkt unter dem Großzehengrundgelenk passt eher zu einer Sesamoiditis.',
+            'Eine begrenzte Stelle oben auf dem Fuß mit Schwellung wirft die Frage nach einem Ermüdungsbruch auf.',
+          ],
+        },
+        'Ermüdungsbrüche sind auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und brauchen manchmal ein MRT. **Ein Besuch bei einer medizinischen Fachperson lohnt sich,** wenn der Schmerz trotz Ruhe und anderer Schuhe länger als zwei Wochen anhält oder wenn Kribbeln, Schmerzen in der Nacht oder eine sichtbare Schwellung dazukommen.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -65,7 +73,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       h2: 'Helfen Übungen bei Schmerzen im Fußballen?',
       keyFact: 'In einer Vorher-nachher-Studie von 2020 mit 41\u00A0Personen mit primärer Metatarsalgie senkte ein 8-wöchiges Programm mit Zehenübungen den Schmerz im Schnitt um 2,7\u00A0Punkte auf einer 10-Punkte-Skala, ohne Kontrollgruppe (Amaha und Kollegen, 2020).',
       paragraphs: [
-        'Die ehrliche Antwort: Die Belege für Übungen bei Metatarsalgie sind früh und begrenzt. Sie sind viel dünner als die Belege bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung, wo es randomisierte Studien gibt.',
+        'Die ehrliche Antwort: **Die Belege für Übungen bei Metatarsalgie sind früh und begrenzt.** Sie sind viel dünner als die Belege bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung, wo es randomisierte Studien gibt.',
         'Die bisher beste Studie ist eine Vorher-nachher-Studie von 2020 mit 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie. Ein 8-wöchiges Programm mit Zehenübungen, vor allem Handtuchgreifen und Murmeln aufheben, senkte die Schmerzwerte im Schnitt um 2,7\u00A0Punkte auf einer 10-Punkte-Skala und verbesserte die Greifkraft der Zehen. Aber es gab keine Kontrollgruppe, die Besserung könnte also zum Teil eine natürliche Erholung sein. Die Autoren forderten randomisierte Studien.',
         'Die Logik ist einfach: Beim Abdruck helfen die Zehen, die Last mit den Mittelfußköpfchen zu teilen. Wenn die Zehenbeuger schwach sind, landet mehr Kraft auf den Mittelfußknochen. Die Studie von 2020 stützt diese Idee, aber eine unkontrollierte Studie ist kein Beweis. Wer die Beschwerden schon länger als ein Jahr hatte, besserte sich weniger, ebenso Menschen mit höherem BMI.',
       ],
@@ -87,14 +95,15 @@ export const BALL_OF_FOOT_DE: Guide = {
       h2: 'Was ist mit Pelotten, Einlagen und Schuhen?',
       paragraphs: [
         'Mittelfußpolster, auch Pelotten genannt, sind der am weitesten verbreitete konservative Ansatz. Ein Polster direkt hinter den Mittelfußköpfchen hebt den Knochenschaft leicht an und verteilt den Druck auf eine größere Fläche. Die Position zählt. Zu weit vorn, direkt unter dem Köpfchen, kann es den Schmerz verstärken.',
-        'Schuhe mit Abrollsohle verringern den Druck auf den Vorfuß, weil der Fuß beim Abdruck abrollen kann, ohne sich in den Mittelfußgelenken zu beugen. Eine breite Zehenbox verhindert, dass die Köpfchen zusammengedrückt werden. Auf enge Schuhe oder Absätze zu verzichten, ist oft der einfachste erste Schritt.',
+        'Schuhe mit Abrollsohle verringern den Druck auf den Vorfuß, weil der Fuß beim Abdruck abrollen kann, ohne sich in den Mittelfußgelenken zu beugen. Eine breite Zehenbox verhindert, dass die Köpfchen zusammengedrückt werden. **Auf enge Schuhe oder Absätze zu verzichten, ist oft der einfachste erste Schritt.**',
         'Polster und Schuhe verändern, wie sich die Last verteilt. Übungen bauen die Kraft und Beweglichkeit auf, um diese Last zu tragen. Wenn [langes Stehen](/de/fussschmerzen-vom-stehen/) mit dazugehört, zählt beides.',
       ],
     },
     {
       h2: 'Welche Übungen helfen bei Schmerzen im Fußballen?',
       paragraphs: [
-        'Diese Übungen zielen auf zwei Seiten des Problems: die Kraft der Zehen und kurzen Fußmuskeln (um die Last beim Abdruck zu teilen) und die Beweglichkeit der Wade (damit der Vorfuß nicht überlastet wird). Keine wurde speziell bei Metatarsalgie in einer randomisierten Studie getestet. Wenn du beim Check-in in Walkito auf der Schmerzkarte den Bereich Fußballen antippst, gibt dir die Entlastungseinheit Zehenspreizen und eine Plantarfaszien-Dehnung. Der Bereich Zehen gibt Zehenspreizen und den kurzen Fuß im Sitzen.',
+        'Diese Übungen zielen auf zwei Seiten des Problems: die Kraft der Zehen und kurzen Fußmuskeln (um die Last beim Abdruck zu teilen) und die Beweglichkeit der Wade (damit der Vorfuß nicht überlastet wird). Keine wurde speziell bei Metatarsalgie in einer randomisierten Studie getestet.',
+        'Wenn du beim Check-in in Walkito auf der Schmerzkarte den Bereich Fußballen antippst, gibt dir die Entlastungseinheit Zehenspreizen und eine Plantarfaszien-Dehnung. Der Bereich Zehen gibt Zehenspreizen und den kurzen Fuß im Sitzen.',
       ],
       exercises: [
         {
@@ -181,7 +190,8 @@ export const BALL_OF_FOOT_DE: Guide = {
       h2: 'Was die Studienlage sagt und was nicht',
       paragraphs: [
         'Die Belege für Übungen bei Schmerzen im Fußballen sind dünner als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung, wo es randomisierte Studien gibt. Für die Metatarsalgie gibt es eine Vorher-nachher-Studie mit 41\u00A0Personen und ohne Kontrollgruppe. Die biomechanische Begründung ist schlüssig, und das Risiko sanfter Zehenübungen und Wadendehnungen ist gering, aber der direkte Beweis aus einer kontrollierten Studie fehlt.',
-        'Übungen allein reichen vielleicht nicht. Pelotten, Schuhe mit breiter Zehenbox und weniger Zeit in Absätzen haben einen breiteren klinischen Konsens. Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt die Belastungssteuerung für Läuferinnen und Läufer.',
+        '**Übungen allein reichen vielleicht nicht.** Pelotten, Schuhe mit breiter Zehenbox und weniger Zeit in Absätzen haben einen breiteren klinischen Konsens.',
+        'Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt die Belastungssteuerung für Läuferinnen und Läufer.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },

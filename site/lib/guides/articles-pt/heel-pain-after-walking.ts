@@ -39,18 +39,22 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       paragraphs: [
         'Andar põe carga na fáscia plantar, a faixa grossa de tecido embaixo do pé, a cada passo. Toda vez que o calcanhar bate no chão e o pé rola para a frente, a fáscia estica e absorve força. Num pé saudável, tudo bem. Mas quando a fáscia está irritada ou a panturrilha está tensa demais para absorver a parte dela, a carga se concentra onde a fáscia se prende no calcanhar.',
         'O resultado é uma dor que aumenta durante ou depois de uma caminhada, principalmente uma mais longa que o normal. A diretriz de 2023 para dor no calcanhar cita dois padrões típicos da fascite plantar: dor nos primeiros passos depois do repouso, e dor que aumenta com atividade prolongada com apoio do peso. Andar é a atividade prolongada com apoio do peso mais comum que existe.',
-        'Uma panturrilha tensa é parte importante do quadro. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo teve a maior razão de chances de todos os fatores de risco medidos. Quando o tornozelo não dobra o suficiente, cada passo pede que a fáscia compense a diferença.',
+        'Uma panturrilha tensa é parte importante do quadro. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo teve a maior razão de chances de todos os fatores de risco medidos. **Quando o tornozelo não dobra o suficiente, cada passo pede que a fáscia compense a diferença.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: 'Dor no calcanhar depois de andar é sempre fascite plantar?',
       paragraphs: [
-        'A fascite plantar é a causa mais comum, mas não é a única. O local e o momento da dor ajudam a diferenciar.',
+        'A fascite plantar é a causa mais comum, mas não é a única. O local e o momento da dor ajudam a diferenciar:',
+        {
+          list: [
         '**Afinamento do coxim gorduroso do calcanhar.** O coxim gorduroso embaixo do osso do calcanhar amortece cada passo. Quando ele afina ou se desloca, o osso recebe mais impacto diretamente. Uma revisão de escopo de 2022 observou que a dor do coxim gorduroso costuma ser uma dor funda no centro do calcanhar, pior em superfícies duras e ao andar descalço (Chang e colegas, 2022). A dor da fascite plantar costuma ficar na parte de dentro e da frente do calcanhar. A dor do coxim gorduroso fica bem embaixo, no centro. Se andar descalço em piso frio ou concreto é claramente pior do que andar com um tênis amortecido, vale considerar o afinamento do coxim gorduroso. Veja [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/) para saber mais.',
         '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. O tendão de Aquiles pode ficar dolorido depois de uma caminhada longa, principalmente em subida. Se a sua dor é na parte de trás do calcanhar e não embaixo dele, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
         '**Fratura por estresse do calcâneo.** Dor que aparece aos poucos depois de um aumento repentino na distância ou na intensidade das caminhadas. Ao contrário da fascite plantar, a dor da fratura por estresse costuma aumentar com a atividade e não aliviar muito com repouso. Apertar as laterais do calcanhar pode reproduzir a dor. Se esse é o seu padrão, procure um profissional de saúde antes de exercitar o pé.',
         '**Dor irradiada da lombar ou nervo comprimido.** Dor no calcanhar que vem com dormência, formigamento ou queimação pode indicar um problema de nervo, e não de carga no tecido. Isso é motivo para procurar primeiro um profissional de saúde.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -58,7 +62,15 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       h2: 'Qual a diferença entre dor depois de andar e dor ao acordar?',
       paragraphs: [
         'Na maioria dos casos, a dor no calcanhar pela manhã e a dor depois de andar são dois lados da mesma condição. A dor da manhã acontece porque a fáscia enrijece e encurta durante a noite e depois é esticada de repente quando você fica em pé. A dor depois de andar acontece porque a fáscia recebeu carga repetida durante a caminhada e o tecido está avisando que já chega.',
-        'A diferença importa na hora de encaixar os exercícios. A dor da manhã responde melhor a um alongamento da fáscia plantar feito antes do primeiro passo. A dor depois de andar responde ao controle da carga: andar uma distância que o pé aguenta, aumentar essa distância aos poucos e usar alongamento e trabalho de panturrilha para subir o limite. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) traz em detalhes os alongamentos da manhã e as talas noturnas.',
+        'A diferença importa na hora de encaixar os exercícios. A dor da manhã responde melhor a um alongamento da fáscia plantar feito antes do primeiro passo. A dor depois de andar responde ao controle da carga:',
+        {
+          list: [
+            'Andar uma distância que o pé aguenta.',
+            'Aumentar essa distância aos poucos.',
+            'Usar alongamento e trabalho de panturrilha para subir o limite.',
+          ],
+        },
+        '[Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) traz em detalhes os alongamentos da manhã e as talas noturnas.',
         'Se você tem dor de manhã e também depois de andar, esse é o padrão típico da fascite plantar. Os exercícios se sobrepõem. O alongamento da manhã e os alongamentos de panturrilha ajudam nos dois. O fortalecimento da panturrilha aumenta a capacidade de toda a cadeia, para que a carga das suas caminhadas do dia a dia fique dentro do que os tecidos aguentam.',
       ],
       cites: [CITE.guideline],
@@ -145,8 +157,15 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       h2: 'Quanto andar quando o calcanhar dói?',
       paragraphs: [
         'A meta não é parar de andar. É descobrir a distância que o seu calcanhar aguenta sem piorar na manhã seguinte e, a partir daí, ir aumentando.',
-        'Um jeito prático: ande uma distância que mantenha a dor da manhã seguinte igual ou abaixo do seu nível atual. Se a sua nota de costume pela manhã é 4 de 10 e uma caminhada de 30\u00A0minutos leva a nota para 6 na manhã seguinte, essa caminhada foi demais. Encurte até a nota da manhã ficar estável. Depois acrescente cinco minutos a cada uma ou duas semanas, desde que a dor da manhã não dispare.',
-        'Isso é controle da carga, não repouso. Repouso total raramente ajuda na fascite plantar. A diretriz recomenda modificar a atividade, não ficar parado. Andar com um calçado com bom suporte numa superfície mais macia é mais leve para a fáscia do que andar descalço no concreto.',
+        'Um jeito prático:',
+        {
+          list: [
+            'Ande uma distância que mantenha a dor da manhã seguinte igual ou abaixo do seu nível atual. Se a sua nota de costume pela manhã é 4 de 10 e uma caminhada de 30\u00A0minutos leva a nota para 6 na manhã seguinte, essa caminhada foi demais.',
+            'Encurte até a nota da manhã ficar estável.',
+            'Depois acrescente cinco minutos a cada uma ou duas semanas, desde que a dor da manhã não dispare.',
+          ],
+        },
+        '**Isso é controle da carga, não repouso.** Repouso total raramente ajuda na fascite plantar. A diretriz recomenda modificar a atividade, não ficar parado. Andar com um calçado com bom suporte numa superfície mais macia é mais leve para a fáscia do que andar descalço no concreto.',
         'Se você também corre, o mesmo princípio vale em outra escala. [Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) fala em mais detalhes de picos de carga e mudanças na quilometragem.',
       ],
       cites: [CITE.guideline],
@@ -156,7 +175,8 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       keyFact: 'Em dados normativos de 566\u00A0adultos saudáveis, a média de elevações de calcanhar em uma perna foi de cerca de 23 a 24\u00A0repetições, uma referência para acompanhar a resistência da panturrilha ao longo do tempo (Hebert-Losier e colegas, 2017).',
       paragraphs: [
         'Não existe um prazo fixo. Uma revisão da evidência clínica relata que cerca de 90% das pessoas com fascite plantar melhoram com cuidados sem cirurgia, muitas vezes em alguns meses (Latt e colegas, 2020). Em um acompanhamento mais longo de 174\u00A0pessoas, cerca de metade ainda tinha algum sintoma aos 5\u00A0anos, embora a maioria fosse leve nessa altura (Hansen e colegas, 2018).',
-        'O que você consegue medir antes é se os exercícios estão funcionando. A dor da manhã numa escala de 0 a 10 é o sinal mais claro do dia a dia. A resistência da panturrilha, medida contando elevações de calcanhar em uma perna, acompanha a força ao longo das semanas. Uma referência muito citada para adultos é de cerca de 23 a 24\u00A0repetições em média, a partir de dados normativos de 566\u00A0adultos saudáveis (Hebert-Losier e colegas, 2017). O que importa é se o seu número está subindo, não se ele bate com a referência.',
+        'O que você consegue medir antes é se os exercícios estão funcionando. A dor da manhã numa escala de 0 a 10 é o sinal mais claro do dia a dia.',
+        'A resistência da panturrilha, medida contando elevações de calcanhar em uma perna, acompanha a força ao longo das semanas. Uma referência muito citada para adultos é de cerca de 23 a 24\u00A0repetições em média, a partir de dados normativos de 566\u00A0adultos saudáveis (Hebert-Losier e colegas, 2017). **O que importa é se o seu número está subindo, não se ele bate com a referência.**',
         'Para saber mais sobre o prazo geral, veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

@@ -49,7 +49,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
         alt: 'Side view of a foot with the plantar fascia highlighted from the heel bone to the toes',
       },
       paragraphs: [
-        'A night splint for plantar fasciitis is a brace you wear in bed that stops your foot from pointing down while you sleep. When you lie still, the foot usually drifts into plantarflexion (toes pointing away from you). In that position the plantar fascia, the thick band of tissue under your foot, and the calf rest in a shortened state for hours.',
+        'A night splint for plantar fasciitis is a brace you wear in bed that **stops your foot from pointing down while you sleep.** When you lie still, the foot usually drifts into plantarflexion (toes pointing away from you). In that position the plantar fascia, the thick band of tissue under your foot, and the calf rest in a shortened state for hours.',
         'The splint holds the ankle in neutral or slight dorsiflexion (toes pulled a little toward the shin). The idea is that the tissue stays at a gentle length overnight, so your first steps are not a sudden stretch on a stiff, shortened fascia. That sudden stretch is the usual explanation for the sharp first-step pain that makes plantar fasciitis so recognizable.',
         'The 2023 heel pain guideline defines night splints as "prefabricated plastic orthoses that are used to prevent ankle plantar flexion while sleeping." Softer versions, like straps and socks, aim at the same position with less hardware.',
       ],
@@ -61,7 +61,13 @@ export const NIGHT_SPLINTS_EN: Guide = {
       paragraphs: [
         'Night splints work for some people with plantar fasciitis, mainly for first-step morning pain, but the research behind them is thinner than their grade suggests. The 2023 heel pain guideline from the American Physical Therapy Association says clinicians "should prescribe a 1- to 3-month program of night splints" for people who consistently have pain with the first step in the morning. That is grade **A**, the guideline\'s top grade.',
         'Read the small print, though. The guideline\'s evidence update says no new studies on night splints were found since 2014, so the recommendation was carried over unchanged. The grade rests on a handful of trials from the 1990s and 2000s.',
-        'Two reviews give a more cautious picture. A 2023 systematic review found only three randomized trials that met its criteria, and judged all three at high risk of bias, meaning their design could tilt the results. It concluded that splints seem to improve pain and function but that more studies are needed. A 2020 review of mechanical options found that splints combined with insoles did better than either one alone.',
+        'Two reviews give a more cautious picture:',
+        {
+          list: [
+            '**A 2023 systematic review** found only three randomized trials that met its criteria, and judged all three at high risk of bias, meaning their design could tilt the results. It concluded that splints seem to improve pain and function but that more studies are needed.',
+            '**A 2020 review of mechanical options** found that splints combined with insoles did better than either one alone.',
+          ],
+        },
         'So a fair summary is this: night splints are a reasonable option if your mornings stay bad despite stretching, but they are not a sure thing, and the trials that exist are small.',
       ],
       cites: [CITE.guideline, CITE.bendoSplintReview, CITE.schuitemaMechanical],
@@ -103,7 +109,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
       ],
       after: [
         'The only head-to-head comparison we found is a small preliminary study from 2012. Two-thirds of the people in it said morning pain and stiffness were less after wearing a splint. The boot type was more uncomfortable and disrupted sleep, and the front-of-shin type reduced heel pain more on average. The authors called night splints "poorly tolerated" overall.',
-        'If you are choosing for yourself, the one you will actually keep on through the night is probably the right one. A clinician or physical therapist can help with fit.',
+        'If you are choosing for yourself, **the one you will actually keep on through the night is probably the right one.** A clinician or physical therapist can help with fit.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
     },
@@ -111,7 +117,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
       h2: 'How long should you wear a night splint for plantar fasciitis?',
       keyFact: 'The 2023 heel pain guideline recommends a night splint program of one to three months (Koc and colleagues, 2023).',
       paragraphs: [
-        'The 2023 guideline recommends wearing a night splint for one to three months. In the trials, people wore them at night for one month (Powell) or three months (Probe, Martin).',
+        '**The 2023 guideline recommends wearing a night splint for one to three months.** In the trials, people wore them at night for one month (Powell) or three months (Probe, Martin).',
         'How many hours a night is less clear. No trial we found compared hours of wear. Brace makers and clinics often suggest starting with a few hours and building up to the whole night, which is sensible but untested. If you wake up and the splint is unbearable, taking it off and putting it back on the next night is better than giving up on night one.',
       ],
       bullets: [
@@ -128,7 +134,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
       keyFact: 'At one year, 1 of 28 people given a night splint was still using it, against 19 of 23 still using insoles (Roos and colleagues, 2006).',
       paragraphs: [
         'Most people stop wearing night splints because they are uncomfortable to sleep in. In Roos and colleagues\' 2006 trial, only 1 of 28 people given a splint was still using it at one year, while 19 of 23 were still using their insoles. That trial also found fewer side effects and better adherence with insoles. In Martin\'s 2001 trial of 255 people, some dropped out early because they could not tolerate their device or kept having severe pain.',
-        'Low adherence is normal, not a personal failing. The splint is meant for one to three months, not forever. A few practical things make it easier:',
+        '**Low adherence is normal, not a personal failing.** The splint is meant for one to three months, not forever. A few practical things make it easier:',
       ],
       bullets: [
         'If you sleep on your side or stomach, a sock style or small dorsal splint usually fits that better than a boot.',
@@ -143,8 +149,16 @@ export const NIGHT_SPLINTS_EN: Guide = {
       h2: 'Night splint, insoles or stretching: which should you try first?',
       keyFact: 'In a 43-person trial, pain was down 62% at one year in the insole groups and 48% with a night splint alone (Roos and colleagues, 2006).',
       paragraphs: [
-        'Morning stretching usually comes first, because it has the same grade **A** as night splints, costs nothing and does not disturb sleep. The 2023 guideline grades plantar fascia and calf stretching **A**, and strength work for the foot and ankle muscles **B**. A 2020 meta-analysis of eight trials found that stretching eased pain, with moderate-quality evidence that the plantar fascia stretch eased it more than a calf stretch.',
-        'Night splints and insoles seem to work better together than apart. In Roos\' trial, both groups with insoles had more pain relief at one year than the splint-only group. Lee\'s small 2012 study found insoles plus a splint did better than insoles alone. The 2020 review of mechanical options reached the same conclusion. The guideline also advises against insoles as the only thing you do for short-term pain relief. For more on that question, see [insoles vs exercises](/insoles-vs-exercises/).',
+        '**Morning stretching usually comes first**, because it has the same grade **A** as night splints, costs nothing and does not disturb sleep. The 2023 guideline grades plantar fascia and calf stretching **A**, and strength work for the foot and ankle muscles **B**. A 2020 meta-analysis of eight trials found that stretching eased pain, with moderate-quality evidence that the plantar fascia stretch eased it more than a calf stretch.',
+        'Night splints and insoles seem to work better together than apart:',
+        {
+          list: [
+            'In Roos\' trial, both groups with insoles had more pain relief at one year than the splint-only group.',
+            'Lee\'s small 2012 study found insoles plus a splint did better than insoles alone.',
+            'The 2020 review of mechanical options reached the same conclusion.',
+          ],
+        },
+        'The guideline also advises against insoles as the only thing you do for short-term pain relief. For more on that question, see [insoles vs exercises](/insoles-vs-exercises/).',
         'A common order is stretching and calf work first. If your first steps are still bad after a month or so of that, add a splint for one to three months. Many people use insoles alongside. That order is a reasonable reading of the guideline, not something a trial has tested.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
@@ -186,7 +200,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
     {
       h2: 'Who might a night splint suit, and who should skip it?',
       paragraphs: [
-        'A night splint fits best if your plantar fasciitis follows the classic pattern: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a heel spur showed on X-ray.',
+        '**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a heel spur showed on X-ray.',
         'A splint makes less sense if your heel hurts mostly while you are lying in bed, or wakes you up. That is a different pattern, and [heel pain at night](/heel-pain-at-night/) explains the causes worth ruling out. A splint is also a poor fit if you have poor feeling or circulation in your feet, since straps and shells can rub skin you cannot feel.',
         'Plantar fasciitis often settles over months whatever you use, which is one reason splint trials are hard to read. For realistic timelines, see [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/).',
       ],

@@ -31,7 +31,7 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
       h2: 'O que é o exercício de elevação do dedão?',
       paragraphs: [
         'A elevação do dedão é um exercício de isolamento. Você levanta só o dedão enquanto os outros quatro dedos ficam pressionados no chão. Depois inverte: pressione o dedão para baixo e levante os outros quatro. Esse vaivém é o que dá ao exercício o nome popular de toe yoga.',
-        'O objetivo não é força no sentido comum. É controle motor. O dedão tem os próprios músculos (o extensor curto e o extensor longo do hálux para levantar, o flexor curto e o flexor longo do hálux para pressionar para baixo), mas a maioria das pessoas perdeu a capacidade de mexê-lo separado dos outros dedos. O exercício devolve esse controle independente.',
+        'O objetivo não é força no sentido comum. **É controle motor.** O dedão tem os próprios músculos (o extensor curto e o extensor longo do hálux para levantar, o flexor curto e o flexor longo do hálux para pressionar para baixo), mas a maioria das pessoas perdeu a capacidade de mexê-lo separado dos outros dedos. O exercício devolve esse controle independente.',
       ],
     },
     {
@@ -61,8 +61,16 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
       keyFact: 'Um estudo de ressonância magnética de 2016 mediu a elevação do dedão em um pequeno grupo de atletas e mostrou que ela ativou os três músculos intrínsecos plantares testados, com o flexor curto dos dedos mostrando a maior ativação, de 18,1\u00A0por cento (Gooding e colegas, 2016).',
       paragraphs: [
         'Os músculos que levantam o dedão são o extensor longo do hálux (que vem da canela) e o extensor curto do hálux (que fica em cima do pé). Mas o exercício também trabalha os músculos que seguram os outros dedos no chão, e é aí que o treino de verdade acontece.',
-        'Um estudo de ressonância magnética de 2016 de Gooding e colegas mostrou que o exercício de extensão do dedão ativou o flexor curto dos dedos (18,1%), o abdutor do hálux (16,9%) e o flexor do dedo mínimo (16,3%). Os músculos intrínsecos plantares estavam trabalhando para manter os dedos menores apoiados enquanto o dedão subia.',
-        'Isso faz da elevação do dedão um exercício dois em um. O lado que levanta treina os extensores. O lado que pressiona treina os músculos intrínsecos plantares, os mesmos que o [exercício do pé curto](/pt/exercicios/pe-curto/) trabalha.',
+        'Um estudo de ressonância magnética de 2016 de Gooding e colegas mostrou que o exercício de extensão do dedão ativou:',
+        {
+          list: [
+            'O flexor curto dos dedos (18,1%).',
+            'O abdutor do hálux (16,9%).',
+            'O flexor do dedo mínimo (16,3%).',
+          ],
+        },
+        'Os músculos intrínsecos plantares estavam trabalhando para manter os dedos menores apoiados enquanto o dedão subia.',
+        '**Isso faz da elevação do dedão um exercício dois em um.** O lado que levanta treina os extensores. O lado que pressiona treina os músculos intrínsecos plantares, os mesmos que o [exercício do pé curto](/pt/exercicios/pe-curto/) trabalha.',
       ],
       cites: [CITE.gooding],
     },
@@ -71,15 +79,19 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
       paragraphs: [
         'O dedão é o botão que liga o mecanismo de molinete. Quando o dedão dobra para cima na fase de impulso da caminhada, ele estica a fáscia plantar e levanta o arco. Esse enrijecimento transforma o pé de uma plataforma flexível que absorve impacto em uma alavanca rígida que leva você para a frente.',
         'Se o dedão não consegue dobrar para cima de forma independente, o molinete não engata por completo. O arco fica mais baixo durante o impulso, e o pé tem que compensar colocando mais carga em outras estruturas. Com o tempo, isso pode contribuir para cansaço no arco, [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) e esforço na fáscia plantar.',
-        'A elevação do dedão não coloca carga no molinete como a elevação de calcanhar com toalha. O que ela faz é ensinar o cérebro a ativar o dedão sozinho, para o molinete fazer o trabalho dele na caminhada normal. É um exercício de coordenação, não de força.',
+        'A elevação do dedão não coloca carga no molinete como a elevação de calcanhar com toalha. O que ela faz é ensinar o cérebro a ativar o dedão sozinho, para o molinete fazer o trabalho dele na caminhada normal. **É um exercício de coordenação, não de força.**',
       ],
     },
     {
       h2: 'Quais são os erros comuns na elevação do dedão?',
       paragraphs: [
-        'O erro mais comum é levantar os cinco dedos juntos. Se todos os dedos sobem de uma vez, o exercício vira uma extensão geral dos dedos e o controle independente se perde. Segure os dedos menores no chão com os dedos da mão, se precisar, até a separação se desenvolver.',
-        'Outro erro é usar o músculo da canela (tibial anterior) para levantar o dedão, puxando o pé inteiro para cima. Mantenha o pé apoiado. Só o dedão se mexe.',
-        'Correr com as repetições é um terceiro problema. Este é um exercício de controle motor. Velocidade tira o sentido dele. Segure cada elevação pelos cinco segundos inteiros e foque em qualidade, não em quantidade. Se só der para fazer três repetições bem feitas, três repetições bem feitas são melhores que oito malfeitas.',
+        {
+          list: [
+            '**O erro mais comum é levantar os cinco dedos juntos.** Se todos os dedos sobem de uma vez, o exercício vira uma extensão geral dos dedos e o controle independente se perde. Segure os dedos menores no chão com os dedos da mão, se precisar, até a separação se desenvolver.',
+            '**Outro erro é usar o músculo da canela (tibial anterior) para levantar o dedão, puxando o pé inteiro para cima.** Mantenha o pé apoiado. Só o dedão se mexe.',
+            '**Correr com as repetições é um terceiro problema.** Este é um exercício de controle motor. Velocidade tira o sentido dele. Segure cada elevação pelos cinco segundos inteiros e foque em qualidade, não em quantidade. Se só der para fazer três repetições bem feitas, três repetições bem feitas são melhores que oito malfeitas.',
+          ],
+        },
         'Cãibra no arco ou embaixo do pé é comum nas primeiras sessões. Em geral, quer dizer que os músculos intrínsecos estão fracos e cansam rápido. Pare, massageie a região e tente de novo na próxima sessão.',
       ],
     },
@@ -88,7 +100,7 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
       paragraphs: [
         'A elevação do dedão (extensão do dedão) foi um dos quatro exercícios testados no estudo de ressonância magnética de 2016 de Gooding e colegas. Os quatro exercícios ativaram todos os músculos intrínsecos plantares. A elevação do dedão não foi a que mais ativou nenhum músculo isolado, mas produziu uma ativação relevante em todos eles, principalmente no flexor curto dos dedos.',
         'Um estudo de 2020 de Amaha e colegas acompanhou 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária, dor embaixo da parte da frente do pé, durante oito semanas de exercícios para os dedos que incluíam trabalho do dedão, puxar a toalha e pegar bolinhas de gude. A força de preensão dos dedos subiu e a dor na parte da frente do pé caiu do início ao fim do programa. O estudo não teve grupo controle, então parte da mudança pode não vir só dos exercícios.',
-        'Nenhum estudo isolou a elevação do dedão em um ensaio controlado com desfechos. A evidência apoia o exercício como parte de uma abordagem mais ampla de fortalecimento do pé. Páginas de exercícios relacionados: [exercício do pé curto](/pt/exercicios/pe-curto/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/), [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/).',
+        '**Nenhum estudo isolou a elevação do dedão em um ensaio controlado com desfechos.** A evidência apoia o exercício como parte de uma abordagem mais ampla de fortalecimento do pé. Páginas de exercícios relacionados: [exercício do pé curto](/pt/exercicios/pe-curto/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/), [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

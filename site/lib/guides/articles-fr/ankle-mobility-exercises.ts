@@ -31,7 +31,13 @@ export const ANKLE_MOBILITY_FR: Guide = {
       keyFact: 'Chez 1\u00A0093\u00A0recrues de l’armée suivies pendant trois mois d’entraînement, l’amplitude de flexion dorsale de la cheville prédisait fortement les blessures (Pope et coll., 1998).',
       paragraphs: [
         'La mobilité de la cheville désigne en général la flexion dorsale de la cheville\u00A0: jusqu’où le tibia peut avancer au-dessus du pied pendant que le talon reste au sol. Vous l’utilisez à chaque pas, à chaque marche d’escalier et en bas de chaque squat. Quand elle manque, le corps emprunte de l’amplitude ailleurs. Le talon décolle trop tôt, le pied s’affaisse vers l’intérieur ou le genou part vers l’intérieur.',
-        'Une faible flexion de la cheville est associée à plusieurs problèmes, même si associé ne veut pas dire causé. Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0\u00A0degré ou moins avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles au-dessus de 10\u00A0degrés (Riddle et coll., 2003). Chez 1\u00A0093\u00A0recrues masculines de l’armée suivies pendant trois mois d’entraînement intensif, l’amplitude de la cheville mesurée au départ prédisait fortement qui se blesserait, sur 48\u00A0blessures au total (Pope et coll., 1998).',
+        'Une faible flexion de la cheville est associée à plusieurs problèmes, même si associé ne veut pas dire causé\u00A0:',
+        {
+          list: [
+            '**Fasciite plantaire\u00A0:** Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0\u00A0degré ou moins avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles au-dessus de 10\u00A0degrés (Riddle et coll., 2003).',
+            '**Blessures chez les recrues\u00A0:** Chez 1\u00A0093\u00A0recrues masculines de l’armée suivies pendant trois mois d’entraînement intensif, l’amplitude de la cheville mesurée au départ prédisait fortement qui se blesserait, sur 48\u00A0blessures au total (Pope et coll., 1998).',
+          ],
+        },
         'Le squat montre bien l’effet. Dans une étude en laboratoire, 30\u00A0personnes en bonne santé ont fait des squats avec une cale de 12\u00A0degrés sous l’avant du pied pour imiter une cheville raide. Leurs genoux se pliaient moins et partaient davantage vers l’intérieur que lors d’un squat à plat (Macrum et coll., 2012). C’était une restriction simulée sur une seule séance\u00A0: elle montre la mécanique, pas ce qui arrive sur des années aux personnes dont la cheville est raide.',
       ],
       cites: [CITE.riddle, CITE.popeDorsiflexion, CITE.macrumSquat],
@@ -51,8 +57,9 @@ export const ANKLE_MOBILITY_FR: Guide = {
         'Notez où vous avez senti le blocage\u00A0: un étirement à l’arrière du mollet, ou un pincement à l’avant de la cheville.',
       ],
       after: [
-        'Le test est fiable quand il est fait de la même façon à chaque fois. Dans une petite étude de 1998, 13\u00A0personnes en bonne santé ont été mesurées par quatre examinateurs, et les scores concordaient presque parfaitement entre examinateurs et quand deux d’entre eux ont refait la mesure une semaine plus tard (Bennell et coll.). Une revue de 2015 portant sur 12\u00A0études de fiabilité a confirmé que le test est bon, et a ajouté l’élément utile\u00A0: un changement doit atteindre environ 1,6 à 1,9\u00A0cm, soit à peu près 5\u00A0degrés, pour que vous puissiez être assez sûr qu’il est réel et non un bruit de mesure (Powden et coll.).',
-        'Refaites donc le test toutes les deux semaines environ, pas tous les jours, et ne courez pas après quelques millimètres.',
+        'Le test est fiable quand il est fait de la même façon à chaque fois. Dans une petite étude de 1998, 13\u00A0personnes en bonne santé ont été mesurées par quatre examinateurs, et les scores concordaient presque parfaitement entre examinateurs et quand deux d’entre eux ont refait la mesure une semaine plus tard (Bennell et coll.).',
+        'Une revue de 2015 portant sur 12\u00A0études de fiabilité a confirmé que le test est bon, et a ajouté l’élément utile\u00A0: un changement doit atteindre environ 1,6 à 1,9\u00A0cm, soit à peu près 5\u00A0degrés, pour que vous puissiez être assez sûr qu’il est réel et non un bruit de mesure (Powden et coll.).',
+        'Refaites donc le test **toutes les deux semaines environ, pas tous les jours,** et ne courez pas après quelques millimètres.',
       ],
       sourceNote:
         'Bennell 1998\u00A0: ICC intra-examinateur 0,97-0,98, ICC inter-examinateurs 0,97 (angle) et 0,99 (distance). Powden 2015\u00A0: ICC inter-cliniciens 0,80-0,99, intra-clinicien 0,65-0,99\u00A0; changement minimal détectable de 4,6\u00A0degrés ou 1,6\u00A0cm entre cliniciens, 4,7\u00A0degrés ou 1,9\u00A0cm pour un même clinicien.',
@@ -64,16 +71,20 @@ export const ANKLE_MOBILITY_FR: Guide = {
       paragraphs: [
         'Il n’existe pas de score normal unique et reconnu pour le test genou au mur. Les sites citent 10\u00A0cm, 14\u00A0cm ou 4\u00A0pouces comme objectif, en général sans source. Ne prenez un chiffre isolé que comme repère approximatif.',
         'Une étude donne une idée des valeurs habituelles. Hoch et coll. ont mesuré 30\u00A0adultes en bonne santé et 30\u00A0personnes comparables atteintes d’instabilité chronique de la cheville (des chevilles qui continuent de lâcher après des entorses). Le groupe en bonne santé obtenait en moyenne 12,47\u00A0cm et le groupe instable 10,73\u00A0cm. Ce sont des moyennes issues de deux petits groupes, donc beaucoup de personnes en bonne santé obtiennent plus ou moins.',
-        'La comparaison la plus utile se fait avec vous-même. Un écart net entre vos deux chevilles, surtout du côté d’une ancienne entorse, vous en dit plus qu’un chiffre tiré d’un tableau. Votre propre score au fil du temps aussi, avec la règle de 1,6 à 1,9\u00A0cm de la partie précédente.',
+        '**La comparaison la plus utile se fait avec vous-même.** Un écart net entre vos deux chevilles, surtout du côté d’une ancienne entorse, vous en dit plus qu’un chiffre tiré d’un tableau. Votre propre score au fil du temps aussi, avec la règle de 1,6 à 1,9\u00A0cm de la partie précédente.',
       ],
       cites: [CITE.hochInstability, CITE.powdenLunge],
     },
     {
       h2: 'Mollet raide ou articulation de la cheville raide\u00A0?',
       paragraphs: [
-        'La flexion de la cheville peut être limitée par les muscles du mollet à l’arrière, ou par l’articulation elle-même à l’avant. L’endroit où vous sentez le blocage pendant le test genou au mur est l’indice habituel, même si aucun essai n’a vérifié la fiabilité de cet indice.',
-        'Un étirement ou une tension à l’arrière du mollet, près du tendon d’Achille ou plus bas près du talon, oriente vers le mollet. Le gastrocnémien (le gros muscle du haut du mollet) vous limite surtout genou tendu. Le soléaire (le muscle profond du mollet) vous limite genou plié, ce qui est la position du test genou au mur. Les étirements et les descentes lentes du talon agissent ici.',
-        'Une sensation de blocage ou de pincement à l’avant de la cheville, avec peu d’étirement dans le mollet, oriente plutôt vers l’articulation\u00A0: le talus (l’os de la cheville sur lequel repose le tibia) ne glisse pas vers l’arrière quand le tibia avance. Cela peut arriver après des entorses. Forcer davantage sur un pincement à l’avant aide rarement. Un kinésithérapeute peut l’évaluer et utiliser la mobilisation articulaire, un glissement doux de l’articulation fait à la main, qui a quelques preuves à court terme après des entorses (voir plus bas).',
+        'La flexion de la cheville peut être limitée par les muscles du mollet à l’arrière, ou par l’articulation elle-même à l’avant. L’endroit où vous sentez le blocage pendant le test genou au mur est l’indice habituel, même si aucun essai n’a vérifié la fiabilité de cet indice\u00A0:',
+        {
+          list: [
+            '**Arrière du mollet\u00A0:** Un étirement ou une tension à l’arrière du mollet, près du tendon d’Achille ou plus bas près du talon, oriente vers le mollet. Le gastrocnémien (le gros muscle du haut du mollet) vous limite surtout genou tendu. Le soléaire (le muscle profond du mollet) vous limite genou plié, ce qui est la position du test genou au mur. Les étirements et les descentes lentes du talon agissent ici.',
+            '**Avant de la cheville\u00A0:** Une sensation de blocage ou de pincement à l’avant de la cheville, avec peu d’étirement dans le mollet, oriente plutôt vers l’articulation\u00A0: le talus (l’os de la cheville sur lequel repose le tibia) ne glisse pas vers l’arrière quand le tibia avance. Cela peut arriver après des entorses. Forcer davantage sur un pincement à l’avant aide rarement. Un kinésithérapeute peut l’évaluer et utiliser la mobilisation articulaire, un glissement doux de l’articulation fait à la main, qui a quelques preuves à court terme après des entorses (voir plus bas).',
+          ],
+        },
         'Une revue de 2013 sur les études consacrées aux entorses faisait le même constat\u00A0: la bonne approche dépend de ce qui limite la cheville (Terada et coll.).',
       ],
       cites: [CITE.teradaSprain],
@@ -82,7 +93,15 @@ export const ANKLE_MOBILITY_FR: Guide = {
       h2: 'Quels exercices de mobilité de la cheville fonctionnent\u00A0?',
       keyFact: 'Une revue de 2013 portant sur 23\u00A0études et 734\u00A0personnes en bonne santé a trouvé le plus de soutien pour l’étirement statique afin d’augmenter la flexion dorsale de la cheville (Young et coll.).',
       paragraphs: [
-        'Les exercices de mobilité de la cheville étudiés par la recherche forment deux groupes\u00A0: les étirements du mollet, et le renforcement du mollet en pleine amplitude, comme les montées sur pointes et les descentes lentes du talon. Une revue de 2013 portant sur 23\u00A0études et 734\u00A0personnes en bonne santé a trouvé le plus de soutien pour l’étirement statique, un certain soutien, issu d’un seul essai, pour les montées sur pointes associées à l’étirement, et peu de preuves solides pour la plupart des autres méthodes (Young et coll.). Le meilleur résultat pour le renforcement seul vient d’un essai distinct sur les descentes du talon (ci-dessous). Les bascules de cheville n’ont pas d’essai propre, mais elles sollicitent la même amplitude.',
+        'Les exercices de mobilité de la cheville étudiés par la recherche forment deux groupes\u00A0: les étirements du mollet, et le renforcement du mollet en pleine amplitude, comme les montées sur pointes et les descentes lentes du talon. Une revue de 2013 portant sur 23\u00A0études et 734\u00A0personnes en bonne santé a trouvé\u00A0:',
+        {
+          list: [
+            'Le plus de soutien pour l’étirement statique.',
+            'Un certain soutien, issu d’un seul essai, pour les montées sur pointes associées à l’étirement.',
+            'Peu de preuves solides pour la plupart des autres méthodes (Young et coll.).',
+          ],
+        },
+        'Le meilleur résultat pour le renforcement seul vient d’un essai distinct sur les descentes du talon (ci-dessous). Les bascules de cheville n’ont pas d’essai propre, mais elles sollicitent la même amplitude.',
         'Ci-dessous, «\u00A0Walkito commence à\u00A0» indique la dose de départ de l’application. Les doses issues de la recherche sont signalées comme telles. Si un exercice fait monter la douleur à **6/10 ou plus**, arrêtez pour la journée.',
       ],
       exercises: [
@@ -141,7 +160,7 @@ export const ANKLE_MOBILITY_FR: Guide = {
       h2: 'De combien l’étirement améliore-t-il la mobilité de la cheville\u00A0?',
       keyFact: 'Une revue de 2006 portant sur cinq essais randomisés chez 161\u00A0personnes en bonne santé a constaté que l’étirement statique du mollet ajoutait environ 2 à 3\u00A0degrés de flexion de la cheville par rapport à l’absence d’étirement (Radford et coll.).',
       paragraphs: [
-        'L’étirement améliore la mobilité de la cheville, mais seulement un peu. Une revue de 2006 a regroupé cinq essais randomisés chez 161\u00A0personnes en bonne santé et constaté que l’étirement statique du mollet ajoutait environ 2 à 3\u00A0degrés de flexion dorsale par rapport à l’absence d’étirement. Le gain était semblable que les personnes se soient étirées 15\u00A0minutes ou moins au total, ou plus de 30\u00A0minutes, sur l’ensemble de l’essai. Les auteurs ont dit qu’on ne savait pas si un changement de cette taille comptait pour les personnes.',
+        '**L’étirement améliore la mobilité de la cheville, mais seulement un peu.** Une revue de 2006 a regroupé cinq essais randomisés chez 161\u00A0personnes en bonne santé et constaté que l’étirement statique du mollet ajoutait environ 2 à 3\u00A0degrés de flexion dorsale par rapport à l’absence d’étirement. Le gain était semblable que les personnes se soient étirées 15\u00A0minutes ou moins au total, ou plus de 30\u00A0minutes, sur l’ensemble de l’essai. Les auteurs ont dit qu’on ne savait pas si un changement de cette taille comptait pour les personnes.',
         'Aucun de ces essais n’incluait de personnes blessées au membre inférieur, et la plupart mesuraient l’amplitude juste après le dernier étirement\u00A0: ces chiffres ne s’appliquent donc pas forcément à une cheville raide après une entorse.',
         'Étirez-vous pendant quelques semaines, refaites le test genou au mur et jugez d’après votre propre résultat. Si le blocage est un pincement à l’avant de la cheville et que rien ne change, ce n’est peut-être pas le mollet qui vous limite.',
       ],
@@ -152,7 +171,7 @@ export const ANKLE_MOBILITY_FR: Guide = {
     {
       h2: 'Le renforcement améliore-t-il la mobilité de la cheville\u00A0?',
       paragraphs: [
-        'Le renforcement en pleine amplitude peut améliorer la mobilité de la cheville, pas seulement l’étirement. Dans un essai randomisé sur 74\u00A0personnes en bonne santé, un groupe a suivi un programme de descentes excentriques du talon (descendre lentement le talon sous charge) pendant environ un mois et demi, et l’autre groupe non. L’amplitude de flexion dorsale n’a augmenté que dans le groupe des descentes du talon, et le mollet résistait moins à l’étirement qu’avant (Mahieu et coll., 2008).',
+        '**Le renforcement en pleine amplitude peut améliorer la mobilité de la cheville, pas seulement l’étirement.** Dans un essai randomisé sur 74\u00A0personnes en bonne santé, un groupe a suivi un programme de descentes excentriques du talon (descendre lentement le talon sous charge) pendant environ un mois et demi, et l’autre groupe non. L’amplitude de flexion dorsale n’a augmenté que dans le groupe des descentes du talon, et le mollet résistait moins à l’étirement qu’avant (Mahieu et coll., 2008).',
         'La revue de 2013 portant sur 23\u00A0études incluait aussi un essai où des montées sur pointes associées à un étirement statique augmentaient la flexion de la cheville par rapport à l’absence d’exercice (Young et coll.). La revue comme l’essai sur les descentes du talon portaient sur des personnes en bonne santé, pas sur des personnes aux chevilles raides ou douloureuses.',
         'Le renforcement a un second avantage\u00A0: il muscle le mollet en même temps. Si vous avez aussi une douleur au talon ou au tendon d’Achille, le travail du mollet présenté dans [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) et les [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) fait les deux à la fois.',
       ],
@@ -164,7 +183,7 @@ export const ANKLE_MOBILITY_FR: Guide = {
       paragraphs: [
         'Après une entorse de la cheville, la cheville perd souvent de la flexion, et la retrouver fait normalement partie de la rééducation. Une revue de 2013 portant sur neuf études a constaté que l’étirement statique, dans le cadre d’un programme d’exercices à domicile, avait le plus grand effet sur la flexion dorsale deux semaines après une entorse aiguë. La mobilisation avec mouvement, une technique manuelle où un professionnel fait glisser la cheville pendant que vous la pliez, n’avait que de faibles effets chez les personnes ayant des entorses à répétition (Terada et coll.).',
         'Une revue plus large de 2018 portant sur 23\u00A0études a constaté que la mobilisation articulaire améliorait à court terme la flexion de la cheville en charge chez les personnes ayant des séquelles d’entorse de longue date, mais pas juste après une seule séance. Les effets à long terme ont été peu étudiés (Weerasekara et coll.).',
-        'L’amplitude n’est qu’une partie de la récupération après une entorse. Dans l’étude de Hoch de 2012, les personnes dont la cheville continuait de lâcher avaient en moyenne environ 1,7\u00A0cm d’amplitude en moins au test genou au mur que les personnes en bonne santé, et leur portée vers l’avant en équilibre était aussi plus courte. Le travail d’équilibre et de renforcement compte ici autant que la mobilité. Voir les [exercices de renforcement de la cheville](/fr/exercices-renforcement-cheville/).',
+        'L’amplitude n’est qu’une partie de la récupération après une entorse. Dans l’étude de Hoch de 2012, les personnes dont la cheville continuait de lâcher avaient en moyenne environ 1,7\u00A0cm d’amplitude en moins au test genou au mur que les personnes en bonne santé, et leur portée vers l’avant en équilibre était aussi plus courte. **Le travail d’équilibre et de renforcement compte ici autant que la mobilité.** Voir les [exercices de renforcement de la cheville](/fr/exercices-renforcement-cheville/).',
       ],
       sourceNote:
         'Terada 2013\u00A0: étirement statique avec exercices à domicile deux semaines après une entorse aiguë, d de Cohen 1,06 (IC à 95\u00A0% 0,12 à 2,42)\u00A0; mobilisation avec mouvement dans les entorses récidivantes, d de 0,14 à 0,39. Weerasekara 2018\u00A0: flexion dorsale en charge à court terme p=0,003, immédiate p=0,16. Hoch 2012\u00A0: 10,73\u00A0cm contre 12,47\u00A0cm.',
@@ -173,8 +192,9 @@ export const ANKLE_MOBILITY_FR: Guide = {
     {
       h2: 'À quelle fréquence faire les exercices de mobilité de la cheville\u00A0?',
       paragraphs: [
-        'La plupart des gens font les exercices de mobilité de la cheville de quelques fois par semaine à presque tous les jours, en séances courtes, et jugent leurs progrès en refaisant le test toutes les deux semaines environ. Les essais utilisaient des calendriers très différents, et la revue de 2006 sur l’étirement a trouvé peu de différence entre un temps d’étirement total court et long\u00A0: des séances plus longues ne semblent donc pas apporter grand-chose.',
-        'Dans Walkito, les étirements du mollet, un maintien genou au mur et les bascules de cheville tournent dans vos séances\u00A0: en général un seul les jours de renforcement, davantage les jours de mobilité, et les bascules de cheville reviennent aussi les jours d’équilibre. Les tests propres à l’application, tous les 14\u00A0jours au début (tous les 28 une fois un objectif atteint), vérifient l’endurance du mollet, le maintien de la voûte et l’équilibre. Ils ne mesurent pas votre distance genou au mur\u00A0: si vous voulez ce chiffre, notez-le vous-même.',
+        'La plupart des gens font les exercices de mobilité de la cheville de quelques fois par semaine à presque tous les jours, en séances courtes, et jugent leurs progrès en refaisant le test toutes les deux semaines environ. Les essais utilisaient des calendriers très différents, et la revue de 2006 sur l’étirement a trouvé peu de différence entre un temps d’étirement total court et long\u00A0: **des séances plus longues ne semblent donc pas apporter grand-chose.**',
+        'Dans Walkito, les étirements du mollet, un maintien genou au mur et les bascules de cheville tournent dans vos séances\u00A0: en général un seul les jours de renforcement, davantage les jours de mobilité, et les bascules de cheville reviennent aussi les jours d’équilibre.',
+        'Les tests propres à l’application, tous les 14\u00A0jours au début (tous les 28 une fois un objectif atteint), vérifient l’endurance du mollet, le maintien de la voûte et l’équilibre. Ils ne mesurent pas votre distance genou au mur\u00A0: si vous voulez ce chiffre, notez-le vous-même.',
         'Un échauffement avant une séance de squats ou une course a aussi du sens, mais les preuves sont minces. Dans la revue de 2013, le résultat sur l’échauffement venait d’une seule petite étude où l’échauffement était associé à l’étirement.',
       ],
       cites: [CITE.radfordStretch, CITE.youngDorsiflexion],

@@ -53,7 +53,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       h2: 'Why do exercises help a heel spur?',
       keyFact: 'In a study of 530 people with foot pain, a heel spur appeared alone in only 6 percent of feet, usually alongside a thickened plantar fascia (Menz and colleagues, 2019).',
       paragraphs: [
-        'The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.',
+        'The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). **The pain comes from the soft tissue, and that is what exercise can reach.**',
         'Stretching the plantar fascia and the calf reduces the tension on the heel attachment. Strengthening the calf builds the capacity of the chain that absorbs load every time the heel strikes the ground. Together, they lower the daily stress on the tissue around the spur.',
         'No exercise program will make a spur disappear on X-ray. But most people with a heel spur do not need the spur to disappear. They need the pain to settle, and that comes from the fascia and the calf getting stronger and more flexible.',
       ],
@@ -109,7 +109,8 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       h2: 'Which strengthening exercises help heel spur pain?',
       keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index than the stretching-only group at three months (Rathleff and colleagues, 2015).',
       paragraphs: [
-        'Stretching alone is often enough in the first few weeks. Once the morning pain starts settling, adding calf strengthening builds the capacity the heel chain needs. The guideline grades strength training **B**, its second-highest grade. In the only trial built to test heel raises for plantar fasciitis, 48 people were split into a loaded heel-raise group and a stretching-only group. The heel-raise group scored 29 points better on the Foot Function Index at three months (Rathleff and colleagues, 2015).',
+        'Stretching alone is often enough in the first few weeks. Once the morning pain starts settling, adding calf strengthening builds the capacity the heel chain needs. The guideline grades strength training **B**, its second-highest grade.',
+        'In the only trial built to test heel raises for plantar fasciitis, 48 people were split into a loaded heel-raise group and a stretching-only group. The heel-raise group scored 29 points better on the Foot Function Index at three months (Rathleff and colleagues, 2015).',
         'Start at the easiest level and move up only when it feels easy for two sessions in a row. The progression below runs from seated work to the loaded towel raise from the trial.',
       ],
       exercises: [
@@ -236,7 +237,8 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       paragraphs: [
         'Stretching should feel like a pull, not a stab. A calf stretch that produces a comfortable tension in the upper or lower calf is on target. A plantar fascia stretch that pulls gently along the arch is on target. If stretching reproduces the sharp pain you feel on first steps, ease off.',
         'Heel raises should feel like calf work. The towel version will also produce a pull under the arch, which is the fascia loading. That pull is expected and is the point of the towel.',
-        'Stop for the day if pain reaches **6/10 or more** during any exercise, or if your first steps the next morning are clearly worse than usual. That stop-and-step-down rule is what the app uses. Mild soreness that settles within a day is normal, especially in the first two weeks. Pain that stays elevated for days or gets worse week over week is a reason to step back one level or see a clinician.',
+        'Stop for the day if pain reaches **6/10 or more** during any exercise, or if your first steps the next morning are clearly worse than usual. That stop-and-step-down rule is what the app uses.',
+        'Mild soreness that settles within a day is normal, especially in the first two weeks. Pain that stays elevated for days or gets worse week over week is a reason to step back one level or see a clinician.',
       ],
       cites: [CITE.guideline],
     },
@@ -245,14 +247,21 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       paragraphs: [
         'There is no trial measuring exercise outcomes specifically for people with heel spurs. The timelines below come from plantar fasciitis studies, which is the condition producing the pain around the spur in most cases.',
         'A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care such as stretching and shoe inserts, often within several months (Latt and colleagues, 2020). In the Rathleff 2015 trial, the loaded heel-raise group was significantly ahead of the stretching-only group by three months.',
-        'No exercise program can promise a timeline for any one person. What you can measure is whether things are changing. Morning pain on a 0 to 10 scale, taken before your first step, is the clearest day-to-day signal. Calf endurance, measured by how many single-leg heel raises you can do, tracks strength over weeks. Both are more useful than guessing.',
+        'No exercise program can promise a timeline for any one person. **What you can measure is whether things are changing**:',
+        {
+          list: [
+            'Morning pain on a 0 to 10 scale, taken before your first step, is the clearest day-to-day signal.',
+            'Calf endurance, measured by how many single-leg heel raises you can do, tracks strength over weeks.',
+          ],
+        },
+        'Both are more useful than guessing.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: 'Can you get rid of a heel spur naturally?',
       paragraphs: [
-        'Exercise, stretching and dietary changes do not dissolve a heel spur. The spur is calcified bone. It stays on the X-ray whether you stretch or not.',
+        '**Exercise, stretching and dietary changes do not dissolve a heel spur.** The spur is calcified bone. It stays on the X-ray whether you stretch or not.',
         'But "getting rid of the spur" is rarely the right goal. In the 2019 study, the spur almost always came with a thickened plantar fascia, and the soft tissue is the part exercise can change. The pain comes from the soft tissue. The exercises on this page target the soft tissue. If the pain settles, the spur is not a problem that needs solving.',
         'If someone has promised you a supplement, cream or device that dissolves heel spurs, be skeptical. No published evidence supports that claim. The guideline-recommended approach is stretching, calf strengthening and load management.',
       ],

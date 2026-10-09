@@ -38,7 +38,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
       h2: '¿Cómo se hace el ejercicio de pie corto?',
       paragraphs: [
         'Siéntate en una silla con los pies apoyados en el piso, descalzo. Coloca el pie de forma que el talón, la parte delantera y los cinco dedos toquen el piso. Sin encoger ni apretar los dedos, intenta llevar la parte delantera del pie hacia atrás, hacia el talón. El arco va a subir. Mantén esa contracción y luego suelta.',
-        'Piensa en hacer el pie más corto y más alto, no más ancho y más plano. Los dedos no deben apretar el piso, levantarse ni doblarse hacia abajo. Si ves que los dedos se aferran, estás usando los músculos equivocados. Para empezar, pon un dedo de la mano bajo el arco para sentir cómo sube.',
+        'Piensa en hacer el pie más corto y más alto, no más ancho y más plano. Los dedos no deben apretar el piso, levantarse ni doblarse hacia abajo. **Si ves que los dedos se aferran, estás usando los músculos equivocados.** Para empezar, pon un dedo de la mano bajo el arco para sentir cómo sube.',
       ],
       exercises: [
         {
@@ -60,8 +60,16 @@ export const EX_SHORT_FOOT_ES: Guide = {
       h2: '¿Qué músculos trabaja el ejercicio de pie corto?',
       paragraphs: [
         'El pie corto trabaja los músculos intrínsecos de la planta: el abductor del dedo gordo, el flexor corto de los dedos, el cuadrado plantar y el abductor del quinto dedo. Estos músculos están completamente dentro del pie y sostienen el arco longitudinal medial desde abajo.',
-        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, midió la activación muscular después de 40\u00A0repeticiones de cuatro ejercicios distintos en 8\u00A0deportistas universitarios. El pie corto produjo la activación media más alta en el abductor del quinto dedo (34,9\u00A0%), el abductor del dedo gordo (29,7\u00A0%) y el flexor corto de los dedos (24,8\u00A0%). Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos.',
-        'Por eso el pie corto se considera mejor que recoger la toalla para trabajar específicamente los músculos intrínsecos. Recoger la toalla usa los flexores largos de los dedos, los músculos extrínsecos que van de la pierna a los dedos. El pie corto mantiene más tranquilos esos músculos extrínsecos.',
+        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, midió la activación muscular después de 40\u00A0repeticiones de cuatro ejercicios distintos en 8\u00A0deportistas universitarios. El pie corto produjo la activación media más alta en:',
+        {
+          list: [
+            'El abductor del quinto dedo (34,9\u00A0%).',
+            'El abductor del dedo gordo (29,7\u00A0%).',
+            'El flexor corto de los dedos (24,8\u00A0%).',
+          ],
+        },
+        'Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos.',
+        'Por eso **el pie corto se considera mejor que recoger la toalla para trabajar específicamente los músculos intrínsecos.** Recoger la toalla usa los flexores largos de los dedos, los músculos extrínsecos que van de la pierna a los dedos. El pie corto mantiene más tranquilos esos músculos extrínsecos.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -69,7 +77,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
       h2: '¿Cómo pasar de sentado a de pie y a una pierna?',
       paragraphs: [
         'Cuando el pie corto sentado se sienta fácil dos sesiones seguidas, el siguiente paso es hacerlo de pie sobre los dos pies. La misma contracción ahora tiene que cargar tu peso. Después, el pie corto a una pierna suma equilibrio y deja ver cualquier diferencia entre tu lado izquierdo y el derecho.',
-        'Cada versión es el mismo movimiento. Lo único que cambia es la carga. De pie, el trabajo de los músculos del arco se duplica. A una pierna se vuelve a duplicar, más o menos, y además tienes que estabilizar el tobillo.',
+        'Cada versión es el mismo movimiento. **Lo único que cambia es la carga.** De pie, el trabajo de los músculos del arco se duplica. A una pierna se vuelve a duplicar, más o menos, y además tienes que estabilizar el tobillo.',
       ],
       exercises: [
         {
@@ -102,8 +110,13 @@ export const EX_SHORT_FOOT_ES: Guide = {
     {
       h2: '¿Qué errores le quitan efecto al ejercicio de pie corto?',
       paragraphs: [
-        'El error más común es encoger los dedos. Si los dedos se doblan y se aferran al piso, el ejercicio se vuelve un encogimiento de dedos y los flexores extrínsecos toman el control. Mantén los dedos largos y relajados. A algunas personas les ayuda levantar los dedos un momento, contraer el arco y luego volver a bajar los dedos.',
-        'El segundo error es empujar el pie hacia afuera en lugar de acortarlo. El movimiento va derecho hacia atrás, de la parte delantera hacia el talón, no de lado a lado. El tercero es aguantar la respiración. Respira normal en cada repetición.',
+        {
+          list: [
+            'El error más común es encoger los dedos. Si los dedos se doblan y se aferran al piso, el ejercicio se vuelve un encogimiento de dedos y los flexores extrínsecos toman el control. **Mantén los dedos largos y relajados.** A algunas personas les ayuda levantar los dedos un momento, contraer el arco y luego volver a bajar los dedos.',
+            'El segundo error es empujar el pie hacia afuera en lugar de acortarlo. El movimiento va derecho hacia atrás, de la parte delantera hacia el talón, no de lado a lado.',
+            'El tercero es aguantar la respiración. Respira normal en cada repetición.',
+          ],
+        },
         'Si no sientes que el arco sube, pon un dedo o una pluma bajo el arco. La meta es sentir que el arco presiona ese objeto. Pueden pasar varias sesiones antes de que el cerebro aprenda a activar estos músculos cuando quieres. Esa curva de aprendizaje es normal.',
       ],
     },
@@ -111,10 +124,19 @@ export const EX_SHORT_FOOT_ES: Guide = {
       h2: '¿Qué dice la investigación sobre el ejercicio de pie corto?',
       keyFact: 'En un ensayo de 2023 con 52 personas con pie plano flexible, un programa de seis semanas que combinaba pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambió la forma del arco más que el grupo de control (Brijwasi y colegas, 2023).',
       paragraphs: [
-        'La evidencia más fuerte viene de programas que combinan el pie corto con otros ejercicios, no del pie corto solo. En un ensayo de 2023 con 52\u00A0personas con pie plano flexible, Brijwasi y colegas probaron un programa de seis semanas con pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos. El programa cambió dos medidas de la forma del arco más que en el grupo de control.',
+        'La evidencia más fuerte viene de programas que combinan el pie corto con otros ejercicios, no del pie corto solo. En un ensayo de 2023 con 52\u00A0personas con pie plano flexible, Brijwasi y colegas probaron un programa de seis semanas con:',
+        {
+          list: [
+            'Pie corto.',
+            'Trabajo de tobillo.',
+            'Fortalecimiento de cadera.',
+            'Estiramientos.',
+          ],
+        },
+        'El programa cambió dos medidas de la forma del arco más que en el grupo de control.',
         'Un metaanálisis de 2024 de Cheng y colegas revisó el entrenamiento de pie corto por sí solo en varios ensayos. Juntando los resultados, no hubo una mejora significativa en la caída del navicular ni en el Foot Posture Index en general. Pero cuando los autores analizaron solo los programas de más de seis semanas, la caída del navicular sí mejoró de forma significativa. Cuánto tiempo entrenas importa.',
         'Para el equilibrio, un ensayo aleatorizado de 2012 de Lynn y colegas comparó cuatro semanas de pie corto con cuatro semanas de recoger la toalla en adultos sanos. El grupo de pie corto mejoró el equilibrio dinámico más que el grupo de la toalla.',
-        'Ninguno de estos estudios es grande. La evidencia respalda el pie corto como parte de un programa más amplio para fortalecer el pie, sobre todo para el pie plano y el dolor en el arco. No es una solución por sí solo, y no se ha probado como tratamiento principal para la fascitis plantar. Para la lista completa de ejercicios, mira [ejercicios para pie plano](/es/ejercicios-pie-plano/) o [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'Ninguno de estos estudios es grande. **La evidencia respalda el pie corto como parte de un programa más amplio para fortalecer el pie, sobre todo para el pie plano y el dolor en el arco.** No es una solución por sí solo, y no se ha probado como tratamiento principal para la fascitis plantar. Para la lista completa de ejercicios, mira [ejercicios para pie plano](/es/ejercicios-pie-plano/) o [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

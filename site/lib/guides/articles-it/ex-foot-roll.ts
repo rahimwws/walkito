@@ -33,7 +33,8 @@ export const EX_FOOT_ROLL_IT: Guide = {
     {
       h2: 'Come si fa il massaggio con la pallina?',
       paragraphs: [
-        'Siediti su una sedia con un piede sopra una pallina. Va bene una pallina da tennis, una da lacrosse o una pallina da massaggio. Metti la pallina sotto l’arco e falla rotolare piano dall’avampiede verso il tallone e poi di nuovo in avanti. Usa una pressione decisa, non leggera. La pallina deve premere nel tessuto abbastanza da farti sentire una pressione profonda e continua.',
+        'Siediti su una sedia con un piede sopra una pallina. Va bene una pallina da tennis, una da lacrosse o una pallina da massaggio. Metti la pallina sotto l’arco e falla rotolare piano dall’avampiede verso il tallone e poi di nuovo in avanti.',
+        'Usa una pressione decisa, non leggera. La pallina deve premere nel tessuto abbastanza da farti sentire una pressione profonda e continua.',
         'Fai rotolare per circa 2\u00A0minuti per piede. Tieni la pressione costante ed evita i punti che danno una fitta. Se un punto ti fa fare una smorfia, alleggerisci o saltalo. L’obiettivo è un massaggio deciso, non il dolore.',
       ],
       exercises: [
@@ -58,7 +59,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
       h2: 'La pallina sotto il piede aiuta la fascite plantare?',
       paragraphs: [
         'Fisioterapisti e podologi consigliano spesso il massaggio con la pallina come parte della cura della fascite plantare. L’idea è che funzioni come un automassaggio: mette pressione lungo la fascia, può aumentare il flusso di sangue nella zona e può ridurre la sensazione di rigidità. Spesso le persone riferiscono un sollievo di breve durata dopo il massaggio.',
-        'Detto questo, nessuno studio randomizzato ha testato il massaggio con la pallina come intervento a sé per la fascite plantare. Compare nei protocolli insieme ad allungamenti e rinforzo, ma non è mai la variabile misurata. La linea guida del 2023 non gli dà un grado a parte. Le prove stanno sugli allungamenti e sull’allenamento di forza.',
+        'Detto questo, **nessuno studio randomizzato ha testato il massaggio con la pallina come intervento a sé per la fascite plantare.** Compare nei protocolli insieme ad allungamenti e rinforzo, ma non è mai la variabile misurata. La linea guida del 2023 non gli dà un grado a parte. Le prove stanno sugli allungamenti e sull’allenamento di forza.',
         'Il massaggio con la pallina rientra nel recupero. È utile dopo una lunga giornata in piedi, dopo una sessione di sollevamenti sulle punte o ogni volta che la pianta del piede è rigida e dolorante. Non sostituisce l’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/), l’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) o i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/), che hanno i gradi della linea guida.',
       ],
       cites: [CITE.guideline],
@@ -67,14 +68,21 @@ export const EX_FOOT_ROLL_IT: Guide = {
       h2: 'Conviene usare una bottiglia d’acqua ghiacciata?',
       paragraphs: [
         'La bottiglia d’acqua ghiacciata è uno dei rimedi casalinghi più diffusi per la fascite plantare. La forma ti permette di far rotolare tutta la pianta del piede, e intanto il freddo intorpidisce la zona. I professionisti la consigliano spesso, e in effetti dà sollievo.',
-        'Ecco cosa dicono davvero le prove. Il freddo (ghiaccio, bottiglie ghiacciate) è uno strumento generico contro il dolore. Riduce il fastidio intorpidendo le terminazioni nervose e può ridurre per un po’ il gonfiore. Ma nessuno studio randomizzato ha confrontato una bottiglia ghiacciata con una a temperatura ambiente per la fascite plantare. Il beneficio che senti è probabilmente un mix del massaggio (pressione sulla fascia) e dell’intorpidimento (freddo sulle terminazioni nervose). Se il freddo acceleri il recupero più del solo massaggio è una domanda ancora aperta.',
-        'Se la bottiglia ghiacciata ti dà sollievo, usala. Solo non contare sul freddo come sostituto degli allungamenti e del lavoro di forza. Ed evita di tenere il ghiaccio per più di 15-20\u00A0minuti di fila. Il freddo prolungato può irritare la pelle.',
+        'Ecco cosa dicono davvero le prove. Il freddo (ghiaccio, bottiglie ghiacciate) è uno strumento generico contro il dolore. Riduce il fastidio intorpidendo le terminazioni nervose e può ridurre per un po’ il gonfiore.',
+        'Ma nessuno studio randomizzato ha confrontato una bottiglia ghiacciata con una a temperatura ambiente per la fascite plantare. Il beneficio che senti è probabilmente un mix del massaggio (pressione sulla fascia) e dell’intorpidimento (freddo sulle terminazioni nervose). Se il freddo acceleri il recupero più del solo massaggio è una domanda ancora aperta.',
+        'Se la bottiglia ghiacciata ti dà sollievo, usala. **Solo non contare sul freddo come sostituto degli allungamenti e del lavoro di forza.** Ed evita di tenere il ghiaccio per più di 15-20\u00A0minuti di fila. Il freddo prolungato può irritare la pelle.',
       ],
     },
     {
       h2: 'Che tipo di pallina usare?',
       paragraphs: [
-        'La pallina da tennis è il punto di partenza più comune. È abbastanza morbida da premere nell’arco senza dare fitte. La pallina da lacrosse è più dura e dà più pressione. La pallina da golf è piccola e molto dura, e può essere troppo per un tallone dolorante.',
+        {
+          list: [
+            'La pallina da tennis è il punto di partenza più comune. È abbastanza morbida da premere nell’arco senza dare fitte.',
+            'La pallina da lacrosse è più dura e dà più pressione.',
+            'La pallina da golf è piccola e molto dura, e può essere troppo per un tallone dolorante.',
+          ],
+        },
         'Parti da quello che hai. Se dopo qualche sessione la pallina da tennis ti sembra troppo morbida, prova quella da lacrosse. Se fai una smorfia con qualsiasi pallina, è troppo dura o stai premendo troppo. L’esercizio deve sembrare un massaggio profondo, mai come se stessi schiacciando una lesione.',
         'Una bottiglia d’acqua ghiacciata funziona al posto della pallina e aggiunge il freddo. Un rullo di gommapiuma sotto il piede è ancora più delicato. Un rullo per piedi specifico da negozio sportivo fa lo stesso lavoro. Per nessuno di questi è dimostrato che funzioni meglio degli altri.',
       ],
@@ -82,9 +90,13 @@ export const EX_FOOT_ROLL_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nel massaggio con la pallina?',
       paragraphs: [
-        'Premere troppo. Più forte non vuol dire meglio. Se spingi finché il dolore arriva a 6/10 o fai smorfie, rischi di irritare la fascia invece di calmarla. Torna a una pressione decisa e costante.',
-        'Andare troppo veloce. Un avanti e indietro rapido salta il tessuto. Fai rotolare piano, circa un passaggio completo al secondo, così ogni punto riceve una pressione continua.',
-        'Usarlo come unico esercizio. Il massaggio con la pallina dà l’idea di fare qualcosa, ed è facile da fare alla scrivania. Ma non rinforza il polpaccio e non allunga la fascia come fanno gli esercizi con un grado della linea guida. Abbinalo all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e ai [sollevamenti sulle punte](/it/sollevamenti-tallone-fascite-plantare/) per avere il quadro completo.',
+        {
+          list: [
+            '**Premere troppo.** Più forte non vuol dire meglio. Se spingi finché il dolore arriva a 6/10 o fai smorfie, rischi di irritare la fascia invece di calmarla. Torna a una pressione decisa e costante.',
+            '**Andare troppo veloce.** Un avanti e indietro rapido salta il tessuto. Fai rotolare piano, circa un passaggio completo al secondo, così ogni punto riceve una pressione continua.',
+            '**Usarlo come unico esercizio.** Il massaggio con la pallina dà l’idea di fare qualcosa, ed è facile da fare alla scrivania. Ma non rinforza il polpaccio e non allunga la fascia come fanno gli esercizi con un grado della linea guida. Abbinalo all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e ai [sollevamenti sulle punte](/it/sollevamenti-tallone-fascite-plantare/) per avere il quadro completo.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -92,7 +104,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
       h2: 'Quando fare il massaggio con la pallina e quando saltarlo?',
       paragraphs: [
         'Fallo dopo una lunga giornata in piedi, dopo una sessione di sollevamenti sulle punte o ogni volta che la pianta del piede è rigida. In Walkito, il massaggio con la pallina compare nei giorni di recupero e a fine sessione come defaticamento.',
-        'Saltalo se il tallone è gonfio, arrossato o caldo in modo acuto. Questi segni possono indicare qualcosa di diverso dalla fascite plantare, e premere su una zona infiammata può peggiorarla. Prima rivolgiti a un professionista sanitario. Per tutti gli esercizi consigliati dalla linea guida, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) o [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
+        '**Saltalo se il tallone è gonfio, arrossato o caldo in modo acuto.** Questi segni possono indicare qualcosa di diverso dalla fascite plantare, e premere su una zona infiammata può peggiorarla. Prima rivolgiti a un professionista sanitario. Per tutti gli esercizi consigliati dalla linea guida, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) o [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
       ],
     },
   ],

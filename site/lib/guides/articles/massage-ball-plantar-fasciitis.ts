@@ -46,8 +46,9 @@ export const MASSAGE_BALL_EN: Guide = {
       h2: 'Does a massage ball help plantar fasciitis?',
       keyFact: 'In a small trial of 14 people asked to roll a massage ball at least three times a day, foot scores did not improve significantly over three months (Ryu and colleagues, 2024).',
       paragraphs: [
-        'A massage ball helps some people with plantar fasciitis feel looser and less sore for a short time, but there is little proof that rolling on its own changes the pain over months. Plantar fasciitis is irritation of the plantar fascia, the thick band under the sole that runs from the heel to the toes. Rolling presses on that band and on the small muscles around it.',
-        'The direct evidence is thin. In a 2024 trial from Korea, 14 people whose heel pain had lasted at least six months were asked to roll a massage ball under the sole at least three times a day, more than five minutes each time. Over three months, the group as a whole did not improve significantly on a foot pain questionnaire. The trial was tiny and had no group without a ball, so it cannot prove the ball does nothing, only that nobody has shown it does much.',
+        'A massage ball helps some people with plantar fasciitis feel looser and less sore for a short time, but **there is little proof that rolling on its own changes the pain over months.** Plantar fasciitis is irritation of the plantar fascia, the thick band under the sole that runs from the heel to the toes. Rolling presses on that band and on the small muscles around it.',
+        'The direct evidence is thin. In a 2024 trial from Korea, 14 people whose heel pain had lasted at least six months were asked to roll a massage ball under the sole at least three times a day, more than five minutes each time. Over three months, the group as a whole did not improve significantly on a foot pain questionnaire.',
+        'The trial was tiny and had no group without a ball, so it cannot prove the ball does nothing, only that nobody has shown it does much.',
         'That is why rolling sits in the recovery slot on this site, next to the exercises with stronger backing: plantar fascia and calf stretching (guideline grade A) and calf strength work (grade B).',
       ],
       figure: {
@@ -62,9 +63,16 @@ export const MASSAGE_BALL_EN: Guide = {
       keyFact: 'In a 66-person trial, therapist myofascial release cut Foot Function Index scores by 72.4% after a month, against 7.4% with a sham, and by 60.6% at three months (Ajimsha and colleagues, 2014).',
       paragraphs: [
         'Massage by a trained clinician has decent evidence for plantar fasciitis. Massage you do yourself with a ball has very little.',
-        '**Hands-on care by a clinician.** The 2023 heel pain guideline gives manual therapy grade **A**, its top grade. It defines this as skilled work on the joints and soft tissue of the leg and foot, such as myofascial release (slow, sustained pressure and stretch on the tissue). In a 2014 trial of 66 people, a therapist gave 12 sessions of myofascial release to the calf and sole over a month. Scores on the Foot Function Index, a questionnaire about pain and daily function, fell by 72.4%, against 7.4% in a group given sham (fake) ultrasound. At three months the drop was still 60.6%. A 2014 pilot trial of calf massage found a smaller, short-term gain (more on that in the calf section below).',
+        '**Hands-on care by a clinician.** The 2023 heel pain guideline gives manual therapy grade **A**, its top grade. It defines this as skilled work on the joints and soft tissue of the leg and foot, such as myofascial release (slow, sustained pressure and stretch on the tissue).',
+        'In a 2014 trial of 66 people, a therapist gave 12 sessions of myofascial release to the calf and sole over a month. Scores on the Foot Function Index, a questionnaire about pain and daily function, fell by 72.4%, against 7.4% in a group given sham (fake) ultrasound. At three months the drop was still 60.6%. A 2014 pilot trial of calf massage found a smaller, short-term gain (more on that in the calf section below).',
         'A 2018 review of 7 trials found that adding manual therapy improved function in 6 of them, but it clearly beat the comparison for pain in only 2 of 6. The authors suggest using it alongside stretching and strengthening.',
-        '**Massage you do yourself.** Only a few trials test self-massage, and each bundles it with exercise or measures it for minutes. In a 2021 trial of 50 people, one session of foam rolling the calf and sole lowered pain by about 3 points on a 10 cm scale, against about 2.6 for one session of stretching, and the gap between the groups was not statistically significant. That was measured right after the session, with no follow-up. In a 2025 trial of 64 people, a supervised program of strengthening, stretching and 10 minutes of self-massage with a stick, three days a week for a month, lowered pain by 2.5 points more than a self-care leaflet, and the gain held a month later. Because the massage came packaged with exercise, its own share is unknown.',
+        '**Massage you do yourself.** Only a few trials test self-massage, and each bundles it with exercise or measures it for minutes:',
+        {
+          list: [
+            '**2021 trial of 50 people:** one session of foam rolling the calf and sole lowered pain by about 3 points on a 10 cm scale, against about 2.6 for one session of stretching, and the gap between the groups was not statistically significant. That was measured right after the session, with no follow-up.',
+            '**2025 trial of 64 people:** a supervised program of strengthening, stretching and 10 minutes of self-massage with a stick, three days a week for a month, lowered pain by 2.5 points more than a self-care leaflet, and the gain held a month later. Because the massage came packaged with exercise, its own share is unknown.',
+          ],
+        },
       ],
       table: {
         caption: 'Massage for plantar fasciitis: who did it and what was found',
@@ -84,7 +92,7 @@ export const MASSAGE_BALL_EN: Guide = {
       h2: 'Tennis ball, lacrosse ball, spiky ball, roller or bottle: which is best?',
       paragraphs: [
         'No study has compared massage tools for plantar fasciitis, so the best one is the one that gives you firm pressure without a sharp spike of pain. The table below is practical guidance, not trial data.',
-        'Start soft. A tennis ball spreads the pressure and suits a sore foot. Move to a lacrosse ball only if the tennis ball feels like nothing after a few sessions. A golf ball often digs straight into the sore spot at the heel. A spiky ball adds a skin sensation, but there is no evidence the spikes work any deeper.',
+        '**Start soft.** A tennis ball spreads the pressure and suits a sore foot. Move to a lacrosse ball only if the tennis ball feels like nothing after a few sessions. A golf ball often digs straight into the sore spot at the heel. A spiky ball adds a skin sensation, but there is no evidence the spikes work any deeper.',
       ],
       table: {
         caption: 'Massage tools for plantar fasciitis compared (practical guidance, not trial data)',
@@ -105,17 +113,34 @@ export const MASSAGE_BALL_EN: Guide = {
       h2: 'Does a frozen water bottle help plantar fasciitis?',
       keyFact: 'In one small study of 30 people, adding a frozen tennis ball to stretching for two months lowered pain more than stretching alone, but how people were assigned to groups was unclear (Shinde and Patil, 2026).',
       paragraphs: [
-        'A frozen water bottle can feel soothing on a sore sole, but no trial has shown that the cold adds anything over a room-temperature bottle or ball. It presses along the arch like a roller and numbs the skin for a while.',
-        'The only study found that adds frozen rolling to an exercise program is small and weak. In a 2026 study of 30 people, one group did static stretching and the other did stretching plus a frozen tennis ball, for two months. Pain fell from about 7.7 to 3.5 out of 10 in the frozen-ball group and from 7.6 to 6.7 with stretching alone. The report does not make clear how people were placed in the groups, and the stretching group improved far less than in larger trials, so read the gap with caution. The 2023 heel pain guideline makes no recommendation on ice.',
-        'If you like the cold, use it with care. Keep it to about 10 minutes, wrap a thin sock around the bottle if your skin burns, and skip cold if you have poor feeling in your feet or Raynaud\'s. Claims that a frozen bottle "reduces inflammation" are not backed by plantar fasciitis trials. For the wider question of cold versus warmth, see [ice or heat for plantar fasciitis](/ice-or-heat-for-plantar-fasciitis/).',
+        'A frozen water bottle can feel soothing on a sore sole, but **no trial has shown that the cold adds anything over a room-temperature bottle or ball.** It presses along the arch like a roller and numbs the skin for a while.',
+        'The only study found that adds frozen rolling to an exercise program is small and weak. In a 2026 study of 30 people, one group did static stretching and the other did stretching plus a frozen tennis ball, for two months. Pain fell from about 7.7 to 3.5 out of 10 in the frozen-ball group and from 7.6 to 6.7 with stretching alone.',
+        'The report does not make clear how people were placed in the groups, and the stretching group improved far less than in larger trials, so read the gap with caution. The 2023 heel pain guideline makes no recommendation on ice.',
+        'If you like the cold, use it with care:',
+        {
+          list: [
+            'Keep it to about 10 minutes.',
+            'Wrap a thin sock around the bottle if your skin burns.',
+            'Skip cold if you have poor feeling in your feet or Raynaud\'s.',
+          ],
+        },
+        'Claims that a frozen bottle "reduces inflammation" are not backed by plantar fasciitis trials. For the wider question of cold versus warmth, see [ice or heat for plantar fasciitis](/ice-or-heat-for-plantar-fasciitis/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: 'How hard and how long should you roll your foot?',
       paragraphs: [
-        'Roll with firm, steady pressure that stays at or below about 3 to 5 out of 10 on a pain scale, for about a minute per foot. There is no tested best dose, so start short and add time only if your foot feels better afterwards.',
-        'The studies used very different amounts. In the 2021 foam roller trial, people rolled for 45 seconds, rested 15 seconds and repeated that five times. In the 2024 massage ball trial, people were asked to roll at least three times a day for more than five minutes each time, and the group did not improve significantly. In the 2025 trial, self-massage took 10 minutes within a longer exercise session. Across these studies, more rolling did not look clearly better.',
+        '**Roll with firm, steady pressure that stays at or below about 3 to 5 out of 10 on a pain scale, for about a minute per foot.** There is no tested best dose, so start short and add time only if your foot feels better afterwards.',
+        'The studies used very different amounts:',
+        {
+          list: [
+            '**2021 foam roller trial:** people rolled for 45 seconds, rested 15 seconds and repeated that five times.',
+            '**2024 massage ball trial:** people were asked to roll at least three times a day for more than five minutes each time, and the group did not improve significantly.',
+            '**2025 trial:** self-massage took 10 minutes within a longer exercise session.',
+          ],
+        },
+        'Across these studies, more rolling did not look clearly better.',
         'Walkito starts the foot roll at 1 x 60 seconds, as a short recovery exercise on lighter days. Sit down and let the weight of the leg do most of the work.',
       ],
       exercises: [
@@ -138,8 +163,9 @@ export const MASSAGE_BALL_EN: Guide = {
       h2: 'Should you roll or massage your calf for plantar fasciitis?',
       keyFact: 'In a 69-person pilot trial, deep calf massage with nerve-gliding exercises and self-stretching improved function more than heel ultrasound with the same stretches (Saban and colleagues, 2014).',
       paragraphs: [
-        'Working on the calf is a reasonable addition for plantar fasciitis, because a tight calf pulls on the heel and the trials that helped most targeted the calf as well as the sole. The calf muscles join the Achilles tendon, which attaches to the heel bone close to where the plantar fascia starts.',
-        'In the 2014 pilot trial of 69 people, deep massage to the calf, plus nerve-gliding exercises and self-stretching, improved function more than ultrasound to the heel with the same stretches. In the 2021 foam roller trial, people also rolled the calf from the back of the knee to the Achilles, and their calves became less tender to pressure than in the stretching group. Calf stretching has stronger backing than calf rolling: the 2023 guideline grades it **A**, and a 2020 review found moderate-quality evidence that plantar fascia stretching eased pain more than calf stretching, and very low-quality evidence that calf stretching beat sham stretching.',
+        '**Working on the calf is a reasonable addition for plantar fasciitis**, because a tight calf pulls on the heel and the trials that helped most targeted the calf as well as the sole. The calf muscles join the Achilles tendon, which attaches to the heel bone close to where the plantar fascia starts.',
+        'In the 2014 pilot trial of 69 people, deep massage to the calf, plus nerve-gliding exercises and self-stretching, improved function more than ultrasound to the heel with the same stretches. In the 2021 foam roller trial, people also rolled the calf from the back of the knee to the Achilles, and their calves became less tender to pressure than in the stretching group.',
+        'Calf stretching has stronger backing than calf rolling: the 2023 guideline grades it **A**, and a 2020 review found moderate-quality evidence that plantar fascia stretching eased pain more than calf stretching, and very low-quality evidence that calf stretching beat sham stretching.',
         'Roll the calf on a foam roller for a minute if you like it, then do the two stretches below. More in [tight calves](/tight-calves/).',
       ],
       exercises: [
@@ -174,7 +200,15 @@ export const MASSAGE_BALL_EN: Guide = {
       h2: 'Why does massaging plantar fasciitis hurt, and can it make it worse?',
       paragraphs: [
         'Massaging plantar fasciitis often hurts because the tissue near the heel is already sensitive, and pressure on a sensitive spot feels sharp. Mild tenderness while you roll that fades within minutes is common. Pain that is sharp, lasts into the next morning or leaves a bruise means you pressed too hard or too long.',
-        'Use your first steps the next morning as the test. If those steps are worse after a rolling session, cut the time in half, switch to a softer ball and stay away from the heel itself. If they are still worse, stop rolling for a while: the stretches and strength work matter more. More on that pattern in [heel pain in the morning](/heel-pain-in-the-morning/).',
+        '**Use your first steps the next morning as the test.** If those steps are worse after a rolling session:',
+        {
+          list: [
+            'Cut the time in half.',
+            'Switch to a softer ball.',
+            'Stay away from the heel itself.',
+          ],
+        },
+        'If they are still worse, stop rolling for a while: the stretches and strength work matter more. More on that pattern in [heel pain in the morning](/heel-pain-in-the-morning/).',
         'Hard tools carry the most risk. Golf balls and ridged rollers focus force on a small area, and standing on a ball puts your whole body weight on it. Sit down instead. If the pain sits in the middle of the heel pad and feels bruised, that can be [heel fat pad syndrome](/heel-fat-pad-syndrome/), and pressing on it usually does not help.',
       ],
       cites: [],
@@ -196,8 +230,17 @@ export const MASSAGE_BALL_EN: Guide = {
     {
       h2: 'Where does rolling fit in a plantar fasciitis routine?',
       paragraphs: [
-        'Rolling fits best as a short extra around the exercises that carry the evidence: a minute of rolling, the plantar fascia stretch before your first steps, calf stretches during the day, and calf strength work a few times a week. In a 48-person trial, slow heel raises with a towel under the toes gave better foot function scores than plantar fascia stretching at three months, though the groups were level at six and twelve months.',
-        'If you can see a physical therapist, hands-on soft tissue work is the version of massage the guideline backs most firmly. At home, keep the ball, but do not let it replace the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) or [calf raises](/calf-raises-plantar-fasciitis/).',
+        'Rolling fits best as a short extra around the exercises that carry the evidence:',
+        {
+          list: [
+            'A minute of rolling.',
+            'The plantar fascia stretch before your first steps.',
+            'Calf stretches during the day.',
+            'Calf strength work a few times a week.',
+          ],
+        },
+        'In a 48-person trial, slow heel raises with a towel under the toes gave better foot function scores than plantar fascia stretching at three months, though the groups were level at six and twelve months.',
+        'If you can see a physical therapist, **hands-on soft tissue work is the version of massage the guideline backs most firmly.** At home, keep the ball, but do not let it replace the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) or [calf raises](/calf-raises-plantar-fasciitis/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

@@ -24,7 +24,8 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
     {
       h2: 'Qual a diferença entre palmilha, palmilha ortopédica e exercício?',
       paragraphs: [
-        '**Palmilha** é qualquer coisa que você coloca dentro do calçado. A **palmilha ortopédica** (órtese plantar) é uma palmilha moldada para sustentar o arco e tirar carga do calcanhar. As **pré-fabricadas** são compradas prontas. As **sob medida** são feitas a partir de um escaneamento ou de um molde do seu pé, normalmente por um podólogo ou ortopedista, e custam bem mais. As duas mudam a carga sobre o pé enquanto você as usa. O exercício muda o próprio tecido, para que o pé e a panturrilha aguentem mais carga, com ou sem palmilha.',
+        '**Palmilha** é qualquer coisa que você coloca dentro do calçado. A **palmilha ortopédica** (órtese plantar) é uma palmilha moldada para sustentar o arco e tirar carga do calcanhar. As **pré-fabricadas** são compradas prontas. As **sob medida** são feitas a partir de um escaneamento ou de um molde do seu pé, normalmente por um podólogo ou ortopedista, e custam bem mais.',
+        'As duas mudam a carga sobre o pé enquanto você as usa. O exercício muda o próprio tecido, para que o pé e a panturrilha aguentem mais carga, com ou sem palmilha.',
       ],
     },
     {
@@ -48,7 +49,15 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
       keyFact: 'Em um ensaio com 185\u00A0pessoas com dor no calcanhar, as palmilhas sob medida não foram melhores que palmilhas falsas aos três meses, e quem foi acompanhado pelo médico de família relatou dor nos primeiros passos 1,48\u00A0ponto menor que quem usou palmilha sob medida (Rasenberg e colegas, 2021).',
       paragraphs: [
         'Para a dor no calcanhar comum, a pesquisa diz que normalmente não. A revisão de Whittaker **não encontrou diferença entre palmilhas sob medida e pré-fabricadas em nenhum momento**, e a diretriz de 2023 observa “uma semelhança nos resultados entre órteses sob medida e pré-fabricadas”.',
-        'O ensaio holandês STAP sorteou 185\u00A0adultos com dor no calcanhar entre acompanhamento com o médico de família (clínico geral), uma palmilha sob medida feita por podólogo ou uma palmilha falsa (Rasenberg e colegas, 2021). **Todos os grupos também receberam um livreto com exercícios.** Aos três meses, as palmilhas sob medida não foram melhores que a falsa. O grupo do médico de família foi melhor que o da palmilha sob medida: cerca de 1\u00A0ponto a menos de dor durante a atividade e 1,5\u00A0ponto a menos de dor nos primeiros passos, numa escala de 0 a 10. Uma análise de custos do mesmo ensaio, ao longo de cerca de seis meses, concluiu que as palmilhas sob medida “não são custo-efetivas” em comparação com o acompanhamento do médico de família.',
+        'O ensaio holandês STAP sorteou 185\u00A0adultos com dor no calcanhar (Rasenberg e colegas, 2021) entre:',
+        {
+          list: [
+            'Acompanhamento com o médico de família (clínico geral).',
+            'Uma palmilha sob medida feita por podólogo.',
+            'Uma palmilha falsa.',
+          ],
+        },
+        '**Todos os grupos também receberam um livreto com exercícios.** Aos três meses, as palmilhas sob medida não foram melhores que a falsa. O grupo do médico de família foi melhor que o da palmilha sob medida: cerca de 1\u00A0ponto a menos de dor durante a atividade e 1,5\u00A0ponto a menos de dor nos primeiros passos, numa escala de 0 a 10. Uma análise de custos do mesmo ensaio, ao longo de cerca de seis meses, concluiu que as palmilhas sob medida “não são custo-efetivas” em comparação com o acompanhamento do médico de família.',
         'Palmilhas ortopédicas sob medida ainda podem ajudar algumas pessoas (veja abaixo). Mas se você quer uma palmilha para dor no calcanhar, um suporte de arco pronto, que sirva bem no calçado, é a primeira tentativa razoável.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
@@ -58,7 +67,8 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
       keyFact: 'Em um ensaio com 48\u00A0pessoas que usavam palmilha, o grupo que acrescentou elevações de calcanhar pesadas teve 29\u00A0pontos a mais de melhora no Foot Function Index aos três meses que o grupo que acrescentou alongamento (Rathleff e colegas, 2015).',
       paragraphs: [
         'O exercício muda o tecido, então a mudança continua depois da sessão. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau **A** e ao treino de força o grau **B**.',
-        'Em um ensaio, todas as 48\u00A0pessoas com fascite plantar receberam uma palmilha (Rathleff e colegas, 2015). Metade acrescentou alongamento diário; a outra metade acrescentou uma elevação de calcanhar pesada com uma toalha embaixo dos dedos, dia sim, dia não. Aos três meses, o grupo da elevação de calcanhar teve 29\u00A0pontos a mais de melhora no Foot Function Index (uma pontuação de 0 a 100 de dor e incapacidade no pé). Aos seis e aos doze meses, os grupos estavam iguais. A palmilha era a mesma nos dois grupos; foi o exercício que fez a diferença no início. A rotina completa está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'Em um ensaio, todas as 48\u00A0pessoas com fascite plantar receberam uma palmilha (Rathleff e colegas, 2015). Metade acrescentou alongamento diário; a outra metade acrescentou uma elevação de calcanhar pesada com uma toalha embaixo dos dedos, dia sim, dia não.',
+        'Aos três meses, o grupo da elevação de calcanhar teve 29\u00A0pontos a mais de melhora no Foot Function Index (uma pontuação de 0 a 100 de dor e incapacidade no pé). Aos seis e aos doze meses, os grupos estavam iguais. A palmilha era a mesma nos dois grupos; foi o exercício que fez a diferença no início. A rotina completa está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       exercises: [
         {
@@ -91,8 +101,9 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
     {
       h2: 'Palmilha ajuda no pé chato?',
       paragraphs: [
-        'A evidência é fraca para os dois lados. O pé chato (arco baixo) muitas vezes não causa dor nenhuma, e aí não há nada para corrigir. Veja [pé chato](/pt/pe-chato/).',
-        'Para adultos com pé chato flexível, uma revisão encontrou 13\u00A0estudos, só dois randomizados (Banwell e colegas, 2014). Ela não encontrou “nenhuma evidência de alto nível” para palmilhas ortopédicas e só evidência de baixo nível de que elas aliviam a dor. Do lado do exercício, em um ensaio com 45\u00A0adultos, cerca de um mês e meio de exercícios para os pés melhorou a postura do pé mais que palmilhas de arco sob medida, e exercício mais palmilha também foi melhor que só palmilha (Kirmizi e colegas, 2024). Em outro ensaio com 52\u00A0pessoas, um programa de exercícios mudou o formato do arco mais que um grupo de controle (Brijwasi e Borkar, 2023). Nenhum dos dois teve a dor como resultado principal.',
+        '**A evidência é fraca para os dois lados.** O pé chato (arco baixo) muitas vezes não causa dor nenhuma, e aí não há nada para corrigir. Veja [pé chato](/pt/pe-chato/).',
+        'Para adultos com pé chato flexível, uma revisão encontrou 13\u00A0estudos, só dois randomizados (Banwell e colegas, 2014). Ela não encontrou “nenhuma evidência de alto nível” para palmilhas ortopédicas e só evidência de baixo nível de que elas aliviam a dor.',
+        'Do lado do exercício, em um ensaio com 45\u00A0adultos, cerca de um mês e meio de exercícios para os pés melhorou a postura do pé mais que palmilhas de arco sob medida, e exercício mais palmilha também foi melhor que só palmilha (Kirmizi e colegas, 2024). Em outro ensaio com 52\u00A0pessoas, um programa de exercícios mudou o formato do arco mais que um grupo de controle (Brijwasi e Borkar, 2023). Nenhum dos dois teve a dor como resultado principal.',
         'Para crianças, uma revisão Cochrane de 16\u00A0ensaios (1.058\u00A0crianças) encontrou evidência de certeza baixa a muito baixa e concluiu que palmilhas ortopédicas sob medida caras para crianças com pé chato flexível sem dor não têm evidência que as apoie (Evans e colegas, 2022). Veja [pé chato infantil](/pt/pe-chato-infantil/). Os exercícios desta página e o app Walkito são para adultos.',
       ],
       exercises: [
@@ -114,7 +125,7 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
     {
       h2: 'Palmilha ortopédica enfraquece o pé?',
       paragraphs: [
-        'Talvez um pouco. Em um estudo com 18\u00A0jovens adultos com pé chato, três pequenos músculos de dentro do pé diminuíram de 9,6 a 17,4% depois de três meses usando palmilhas ortopédicas sob medida (Protopapas e Perry, 2020). Os grupos não foram randomizados e o estudo era pequeno, então veja isso como um sinal, não como um fato estabelecido.',
+        '**Talvez um pouco.** Em um estudo com 18\u00A0jovens adultos com pé chato, três pequenos músculos de dentro do pé diminuíram de 9,6 a 17,4% depois de três meses usando palmilhas ortopédicas sob medida (Protopapas e Perry, 2020). Os grupos não foram randomizados e o estudo era pequeno, então veja isso como um sinal, não como um fato estabelecido.',
         'O exercício parece compensar. Em um ensaio randomizado com 28\u00A0pessoas com pé chato, todos usaram palmilhas ortopédicas por dois meses e metade também fez o exercício de pé curto (Jung e colegas, 2011). O músculo ao longo do arco interno cresceu nos dois grupos, mas mais com o exercício, e a força do dedão também aumentou mais. Se você usa palmilha o dia todo, mantenha o pé trabalhando com alguns minutos de [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
@@ -150,7 +161,8 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
     {
       h2: 'Como combinar palmilhas e exercícios?',
       paragraphs: [
-        'Use a palmilha para o conforto e os exercícios para a mudança. Tanto no ensaio de Rathleff quanto no STAP, todo mundo recebeu orientação de exercícios junto com o que quer que estivesse no calçado. Use um suporte de arco pronto nos dias em que doer e comece os alongamentos e as elevações de calcanhar ao mesmo tempo. Conforme a dor da manhã acalma, experimente ficar períodos curtos sem a palmilha, depois períodos mais longos. O Walkito pode organizar o lado dos exercícios como um plano semanal: uma vez por semana, ele sobe o seu exercício principal um degrau quando você avaliou as duas últimas sessões com ele como fáceis e a dor da manhã não aumentou.',
+        '**Use a palmilha para o conforto e os exercícios para a mudança.** Tanto no ensaio de Rathleff quanto no STAP, todo mundo recebeu orientação de exercícios junto com o que quer que estivesse no calçado. Use um suporte de arco pronto nos dias em que doer e comece os alongamentos e as elevações de calcanhar ao mesmo tempo. Conforme a dor da manhã acalma, experimente ficar períodos curtos sem a palmilha, depois períodos mais longos.',
+        'O Walkito pode organizar o lado dos exercícios como um plano semanal: uma vez por semana, ele sobe o seu exercício principal um degrau quando você avaliou as duas últimas sessões com ele como fáceis e a dor da manhã não aumentou.',
         'Se alguns meses de alongamento e fortalecimento diários não ajudaram, procure um profissional de saúde. É aí que vale discutir uma palmilha ortopédica sob medida, entre outras opções, com alguém que examinou o seu pé.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],

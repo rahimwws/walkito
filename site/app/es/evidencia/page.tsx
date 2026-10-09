@@ -111,7 +111,10 @@ export default function ScienceEs() {
           Para el dolor de talón por fascitis plantar, la guía de 2023 le da al estiramiento su
           grado más alto, A, y al entrenamiento de fuerza una B. En un ensayo con 48&nbsp;personas,
           las elevaciones de talón con carga alta aliviaron el dolor más rápido que el estiramiento,
-          y a los doce meses los dos grupos estaban igualados. Para el pie plano{' '}
+          y a los doce meses los dos grupos estaban igualados.
+        </p>
+        <p>
+          Para el pie plano{' '}
           <b>flexible</b>, un ensayo con 52&nbsp;personas encontró que seis semanas de ejercicio
           cambiaron la forma del arco. Una revisión de 2024 sobre el entrenamiento de pie corto no
           encontró una diferencia significativa en general, y solo una medida del arco mejoró en
@@ -179,7 +182,10 @@ export default function ScienceEs() {
         <p>
           La elevación de talón de Walkito sigue este ensayo. Te paras en un pie en un escalón, con
           una toalla bajo los dedos. Tardas tres segundos en subir, mantienes dos y tardas tres en
-          bajar, en días de fuerza, tres a la semana, nunca dos seguidos. Está cerca de lo más alto
+          bajar, en días de fuerza, tres a la semana, nunca dos seguidos.
+        </p>
+        <p>
+          Está cerca de lo más alto
           de los ejercicios de pantorrilla de Walkito, que se ponen más difíciles un nivel a la vez.
           Nunca llega en la primera semana, que mantiene la carga lejos de la fascia plantar al
           inicio. El ejercicio y su dosis de inicio están en{' '}
@@ -270,7 +276,10 @@ export default function ScienceEs() {
           tiene una duración fija ni una última semana en la que los ejercicios se detengan. El plan
           se arma una semana a la vez en torno a una meta. Cuando alcanzas una meta, pasa a
           mantenimiento: conserva un lugar en el plan con una dosis más baja, y la siguiente meta
-          ocupa su lugar. Las pruebas siguen cada{' '}
+          ocupa su lugar.
+        </p>
+        <p>
+          Las pruebas siguen cada{' '}
           {PROGRAM.testEveryDaysAfterGoal}&nbsp;días después de tu primera meta, así que una bajada
           en los números se ve en vez de adivinarse. Nada de esto promete que el dolor no va a
           volver.

@@ -30,8 +30,15 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
       keyFact: 'Em 1.903\u00A0adultos mais velhos, os pés mais chatos tinham chances 1,3\u00A0vez maiores de dor frequente no joelho em comparação com todos os outros pés (Gross e colegas, 2011).',
       figure: { id: 'arches', caption: 'Os mesmos ossos do pé com pé chato, arco típico e arco alto, vistos pelo lado de dentro.', alt: 'Três pés vistos pelo lado de dentro sobre um chão plano: um pé chato com o arco apoiado no chão, um arco típico com um pequeno espaço embaixo e um arco alto com um grande espaço sob o meio do pé.' },
       paragraphs: [
-        'Vários estudos grandes mostram relação entre pé chato e dor no joelho, mas nenhum deles prova que o arco causa a dor. O tamanho da relação é pequeno, e ela aparece principalmente nos pés mais chatos.',
-        'O estudo mais conhecido vem dos Framingham Studies, nos Estados Unidos. Gross e colegas mediram a pegada de 1.903\u00A0adultos mais velhos (idade média de 65\u00A0anos) e perguntaram sobre dor no joelho. Os resultados de 2011: os pés mais chatos tinham chances 1,3\u00A0vez maiores de dor no joelho na maioria dos dias, em comparação com todos os outros pés. Eles também tinham chances 1,4\u00A0vez maiores de dano na cartilagem do lado de dentro da articulação do joelho na ressonância magnética. A cartilagem é a camada lisa que cobre as pontas dos ossos. Não houve relação com dano em nenhuma outra parte do joelho.',
+        'Vários estudos grandes mostram relação entre pé chato e dor no joelho, mas **nenhum deles prova que o arco causa a dor.** O tamanho da relação é pequeno, e ela aparece principalmente nos pés mais chatos.',
+        'O estudo mais conhecido vem dos Framingham Studies, nos Estados Unidos. Gross e colegas mediram a pegada de 1.903\u00A0adultos mais velhos (idade média de 65\u00A0anos) e perguntaram sobre dor no joelho. Os resultados de 2011, para os pés mais chatos em comparação com todos os outros pés:',
+        {
+          list: [
+            '**Dor no joelho:** chances 1,3\u00A0vez maiores de dor no joelho na maioria dos dias.',
+            '**Cartilagem:** chances 1,4\u00A0vez maiores de dano na cartilagem do lado de dentro da articulação do joelho na ressonância magnética. A cartilagem é a camada lisa que cobre as pontas dos ossos.',
+            '**Resto do joelho:** nenhuma relação com dano em nenhuma outra parte do joelho.',
+          ],
+        },
         'Um segundo estudo olhou para o começo da vida adulta. Kosashvili e colegas analisaram 97.279\u00A0jovens recrutas militares em 2008. A dor na frente do joelho apareceu em 7% dos recrutas com pé chato moderado ou grave e em 4% dos que tinham pé chato leve ou arco normal. O pé chato leve, que era 74% do grupo com pé chato, não trouxe risco a mais.',
         'Os dois estudos mediram as pessoas uma única vez, então não conseguem dizer se o pé veio primeiro. Os autores de Framingham também observaram que a pegada pode não distinguir um pé chato de um pé largo e carnudo, e que o peso corporal, sozinho, já afeta o joelho.',
       ],
@@ -42,9 +49,13 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
     {
       h2: 'Em que parte do joelho aparece a dor ligada ao pé chato?',
       paragraphs: [
-        'A dor no joelho ligada ao pé chato costuma ser descrita em um de dois lugares: ao redor ou atrás da patela, ou no lado de dentro do joelho. São problemas diferentes, e os cuidados com cada um também são diferentes.',
-        'A dor ao redor ou atrás da patela se chama dor patelofemoral. Ela costuma começar devagar e piora ao agachar, subir e descer escadas, correr, saltar ou ficar muito tempo sentado com o joelho dobrado. É comum em adolescentes e adultos ativos. É o problema de joelho com mais pesquisa sobre a postura do pé, e a maior parte desta página fala dele.',
-        'A dor no lado de dentro do joelho em um adulto mais velho tem relação mais frequente com artrose, as alterações de desgaste de uma articulação. O estudo de Framingham viu que o dano na cartilagem do lado de dentro do joelho era mais comum nos pés mais chatos, o que combina com esse quadro. Mas uma relação num único momento é tudo o que o estudo mostra.',
+        'A dor no joelho ligada ao pé chato costuma ser descrita em um de dois lugares. São problemas diferentes, e os cuidados com cada um também são diferentes.',
+        {
+          list: [
+            '**Ao redor ou atrás da patela.** Ela se chama dor patelofemoral. Ela costuma começar devagar e piora ao agachar, subir e descer escadas, correr, saltar ou ficar muito tempo sentado com o joelho dobrado. É comum em adolescentes e adultos ativos. É o problema de joelho com mais pesquisa sobre a postura do pé, e a maior parte desta página fala dele.',
+            '**No lado de dentro do joelho, em um adulto mais velho.** Ela tem relação mais frequente com artrose, as alterações de desgaste de uma articulação. O estudo de Framingham viu que o dano na cartilagem do lado de dentro do joelho era mais comum nos pés mais chatos, o que combina com esse quadro. Mas uma relação num único momento é tudo o que o estudo mostra.',
+          ],
+        },
         'Um joelho que incha depois de uma torção, trava ou falseia é outra história. Isso aponta para o menisco (o amortecedor de cartilagem dentro do joelho) ou para um ligamento, e precisa de um profissional de saúde.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -53,8 +64,13 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
       h2: 'Como um pé chato poderia afetar o joelho?',
       paragraphs: [
         'A explicação mais comum é uma cadeia: quando o pé vira para dentro, o osso da canela gira para dentro junto, e o joelho vai para dentro. Esse virar para dentro se chama pronação, e um pouco dela faz parte normal de cada passo. A ideia é que pronação demais muda como a patela desliza no seu sulco.',
-        'O pé e a canela de fato giram juntos. Se isso explica a dor no joelho já é menos claro. Uma revisão de 2009 de Barton e colegas reuniu 24\u00A0estudos sobre como pessoas com dor na patela caminham e correm. Ela encontrou algumas diferenças no osso do calcanhar e mais movimento do quadril para dentro em corredores. Mas a revisão não encontrou nenhum estudo prospectivo com dados utilizáveis. Os estudos que ela pôde analisar compararam pessoas que já tinham dor com pessoas que não tinham, o que não separa causa de efeito.',
-        'A evidência prospectiva é pouca. Uma revisão de 2014 de Neal e colegas juntou 21\u00A0estudos prospectivos com 6.228\u00A0pessoas, estudos que acompanham as pessoas ao longo do tempo para ver quem se machuca. Um pé que vira para dentro foi um fator de risco claro para canelite. Para a dor na patela, a evidência foi muito limitada e os efeitos foram pequenos. Os revisores concluíram que a postura do pé é uma peça de uma avaliação mais ampla, não a resposta sozinha.',
+        'O pé e a canela de fato giram juntos. Se isso explica a dor no joelho já é menos claro, e a evidência prospectiva é pouca. Duas revisões estudaram isso:',
+        {
+          list: [
+            '**Barton e colegas, 2009:** reuniu 24\u00A0estudos sobre como pessoas com dor na patela caminham e correm. Ela encontrou algumas diferenças no osso do calcanhar e mais movimento do quadril para dentro em corredores. Mas ela não encontrou nenhum estudo prospectivo com dados utilizáveis. Os estudos que ela pôde analisar compararam pessoas que já tinham dor com pessoas que não tinham, o que não separa causa de efeito.',
+            '**Neal e colegas, 2014:** juntou 21\u00A0estudos prospectivos com 6.228\u00A0pessoas, estudos que acompanham as pessoas ao longo do tempo para ver quem se machuca. Um pé que vira para dentro foi um fator de risco claro para canelite. Para a dor na patela, a evidência foi muito limitada e os efeitos foram pequenos. Os revisores concluíram que a postura do pé é uma peça de uma avaliação mais ampla, não a resposta sozinha.',
+          ],
+        },
         'O quadril fica no alto da mesma cadeia. Músculos fracos na parte de fora do quadril deixam a coxa girar para dentro, e isso pode puxar o joelho para dentro de cima para baixo. Esse é um dos motivos pelos quais os exercícios para dor na patela começam pelo quadril, não pelo pé.',
       ],
       sourceNote:
@@ -82,9 +98,18 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
       keyFact: 'Em um ensaio com 179\u00A0adultos com dor na patela, palmilhas com formato se saíram melhor que palmilhas planas no curto prazo, mas não foram melhores que a fisioterapia (Collins e colegas, 2008).',
       paragraphs: [
         'Palmilhas com formato podem aliviar a dor na frente do joelho no curto prazo, mas acrescentam pouco quando você já está fazendo um bom exercício.',
-        'O teste mais claro é um ensaio de 2008 publicado no BMJ. Collins e colegas dividiram 179\u00A0adultos de 18 a 40\u00A0anos com dor ao redor da patela em quatro grupos: palmilhas prontas com formato, palmilhas planas, fisioterapia (exercícios para os músculos da coxa, bandagem, terapia manual e orientações) ou palmilhas mais fisioterapia. As palmilhas com formato se saíram melhor que as planas depois de cerca de um mês e meio. Não foram melhores que a fisioterapia, e acrescentá-las à fisioterapia não melhorou os resultados. Em um ano, os quatro grupos tinham melhorado de forma relevante.',
+        'O teste mais claro é um ensaio de 2008 publicado no BMJ. Collins e colegas dividiram 179\u00A0adultos de 18 a 40\u00A0anos com dor ao redor da patela em quatro grupos:',
+        {
+          list: [
+            'Palmilhas prontas com formato.',
+            'Palmilhas planas.',
+            'Fisioterapia: exercícios para os músculos da coxa, bandagem, terapia manual e orientações.',
+            'Palmilhas mais fisioterapia.',
+          ],
+        },
+        'As palmilhas com formato se saíram melhor que as planas depois de cerca de um mês e meio. Não foram melhores que a fisioterapia, e acrescentá-las à fisioterapia não melhorou os resultados. Em um ano, os quatro grupos tinham melhorado de forma relevante.',
         'Um ensaio menor, de 2018, de Mølgaard e colegas, escolheu 40\u00A0pessoas com dor na patela cujo calcanhar inclinava para dentro mais que o normal. Somar exercícios para o pé e palmilhas sob medida aos exercícios para o joelho trouxe 8,9\u00A0pontos a mais de alívio da dor numa escala de joelho de 100\u00A0pontos aos quatro meses. Aos doze meses, a diferença entre os grupos já não era estatisticamente clara. O ensaio não consegue dizer se a diferença veio das palmilhas, dos exercícios para o pé ou das sessões a mais.',
-        'A diretriz de 2019 resume assim: palmilhas prontas podem ser usadas por pessoas cujo pé vira para dentro mais que o normal, só para alívio da dor no curto prazo e sempre junto com exercício. Ela encontrou evidência insuficiente para preferir palmilhas sob medida às prontas. Para o debate mais amplo sobre palmilhas, veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
+        'A diretriz de 2019 resume assim: **palmilhas prontas podem ser usadas por pessoas cujo pé vira para dentro mais que o normal, só para alívio da dor no curto prazo e sempre junto com exercício.** Ela encontrou evidência insuficiente para preferir palmilhas sob medida às prontas. Para o debate mais amplo sobre palmilhas, veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
       ],
       sourceNote:
         'Collins 2008: ensaio randomizado simples-cego, desfechos em cerca de um mês e meio, três meses e um ano; palmilhas com formato vs. palmilhas planas na melhora global, número necessário para beneficiar de 4. Um dos autores tinha recebido financiamento de um fabricante de palmilhas. Mølgaard 2018: subescala de dor do KOOS, 8,9\u00A0pontos (IC 95% 0,4 a 17,4). Willy 2019: grau A.',

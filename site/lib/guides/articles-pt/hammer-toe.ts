@@ -26,14 +26,29 @@ export const HAMMER_TOE_PT: Guide = {
       paragraphs: [
         'O dedo em martelo é uma deformidade em flexão na articulação interfalângica proximal (a articulação do meio) de um dos dedos menores, na maioria das vezes o segundo. O dedo dobra para baixo nessa articulação, enquanto a ponta pode apontar para baixo ou um pouco para cima. É uma das deformidades mais comuns da parte da frente do pé.',
         'A deformidade se desenvolve a partir de um desequilíbrio entre os músculos que dobram e os que esticam o dedo. Os músculos extrínsecos, os flexores e extensores longos que vêm da perna e passam pelo pé, vencem os músculos intrínsecos menores, que ficam dentro do pé. Quando os intrínsecos enfraquecem, os flexores puxam a articulação do meio para baixo, e os extensores puxam a base do dedo para cima na articulação metatarsofalângica.',
-        'Fatores que contribuem com frequência incluem sapatos que apertam os dedos (bico estreito, salto alto), um segundo dedo mais comprido que o dedão e problemas como o hálux valgo (joanete), em que o dedão empurra o segundo dedo para fora da posição. Doenças neuromusculares também podem causar o problema.',
+        'Fatores que contribuem com frequência incluem:',
+        {
+          list: [
+            'Sapatos que apertam os dedos (bico estreito, salto alto).',
+            'Um segundo dedo mais comprido que o dedão.',
+            'Problemas como o hálux valgo (joanete), em que o dedão empurra o segundo dedo para fora da posição.',
+          ],
+        },
+        'Doenças neuromusculares também podem causar o problema.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: 'Qual a diferença entre dedo em martelo, dedo em garra e dedo em malho?',
       paragraphs: [
-        'Os três nomes descrevem quais articulações estão dobradas. O dedo em martelo dobra na articulação do meio (articulação interfalângica proximal). O dedo em malho dobra na articulação da ponta (articulação interfalângica distal), perto da ponta do dedo. O dedo em garra dobra tanto na articulação do meio quanto na da ponta, enquanto a base do dedo (articulação metatarsofalângica) estica para cima.',
+        'Os três nomes descrevem quais articulações estão dobradas:',
+        {
+          list: [
+            'O dedo em martelo dobra na articulação do meio (articulação interfalângica proximal).',
+            'O dedo em malho dobra na articulação da ponta (articulação interfalângica distal), perto da ponta do dedo.',
+            'O dedo em garra dobra tanto na articulação do meio quanto na da ponta, enquanto a base do dedo (articulação metatarsofalângica) estica para cima.',
+          ],
+        },
         'O dedo em garra tende a ser mais grave, muitas vezes afeta vários dedos nos dois pés e está mais ligado a doenças neuromusculares. O dedo em martelo costuma afetar um dedo só, na maioria das vezes o segundo, e está mais ligado ao calçado e à estrutura do pé.',
         'Na prática, os tratamentos se sobrepõem. Sapatos mais largos, protetores e exercícios para os músculos pequenos do pé servem para os três. A distinção importa mais quando se pensa em cirurgia, porque a técnica cirúrgica depende de quais articulações estão envolvidas.',
       ],
@@ -43,7 +58,7 @@ export const HAMMER_TOE_PT: Guide = {
       h2: 'Qual a diferença entre dedo em martelo flexível e rígido?',
       keyFact: 'Um estudo de 2022 com 20\u00A0idosos com dedo em martelo ou em garra mostrou que protetores de silicone moldados sob medida reduziram de forma significativa o pico de pressão na ponta do segundo dedo, tanto nos casos flexíveis quanto nos rígidos (Formosa e colegas, 2022).',
       paragraphs: [
-        'Um dedo em martelo flexível ainda tem movimento na articulação do meio. Você consegue esticá-lo com a mão. Os músculos e os tendões estão tensos, mas a articulação ainda não desenvolveu uma contratura fixa. É a fase em que as medidas conservadoras têm mais a oferecer.',
+        'Um dedo em martelo flexível ainda tem movimento na articulação do meio. Você consegue esticá-lo com a mão. Os músculos e os tendões estão tensos, mas a articulação ainda não desenvolveu uma contratura fixa. **É a fase em que as medidas conservadoras têm mais a oferecer.**',
         'Um dedo em martelo rígido tem uma contratura fixa na articulação do meio. A articulação não estica mais. Nesse ponto, o exercício não consegue mudar a posição. Os objetivos passam a ser reduzir o atrito (sapatos mais largos, protetores de dedo) e evitar calos, calosidades e feridas na pele.',
         'Um estudo quase experimental de 2022 com 20\u00A0idosos com deformidade de dedo em martelo ou em garra mostrou que protetores de silicone moldados sob medida reduziram de forma significativa o pico de pressão na ponta do segundo dedo, tanto nos casos flexíveis quanto nos rígidos. Na articulação metatarsofalângica, a redução da pressão só foi significativa no grupo rígido.',
       ],
@@ -52,7 +67,7 @@ export const HAMMER_TOE_PT: Guide = {
     {
       h2: 'Exercício ajuda no dedo em martelo?',
       paragraphs: [
-        'A resposta honesta é que não existem ensaios controlados randomizados testando exercícios especificamente para dedo em martelo. Os exercícios mais recomendados, como puxar a toalha com os dedos, abrir os dedos e o alongamento com a mão, se baseiam na ideia de que fortalecer os músculos pequenos do pé e manter a flexibilidade da articulação pode ajudar a evitar que uma deformidade flexível fique rígida.',
+        'A resposta honesta é que **não existem ensaios controlados randomizados testando exercícios especificamente para dedo em martelo.** Os exercícios mais recomendados, como puxar a toalha com os dedos, abrir os dedos e o alongamento com a mão, se baseiam na ideia de que fortalecer os músculos pequenos do pé e manter a flexibilidade da articulação pode ajudar a evitar que uma deformidade flexível fique rígida.',
         'Essa lógica é razoável. A deformidade vem de um desequilíbrio muscular: intrínsecos fracos e extrínsecos relativamente mais fortes. Exercícios que trabalham os intrínsecos podem recuperar parte desse equilíbrio. Mas sem ensaios diretos, não sabemos quanta diferença eles fazem nem se conseguem de fato evitar a progressão.',
         'O que sabemos, a partir de estudos sobre outros problemas da parte da frente do pé, é que exercícios para os músculos pequenos do pé, como o pé curto, abrir os dedos e puxar a toalha, ativam os músculos certos. Um estudo de ressonância de Gooding e colegas (2016) confirmou que o exercício do pé curto e o exercício de abrir os dedos ativam de forma seletiva os músculos intrínsecos do pé. Se essa ativação se traduz em resultados melhores especificamente no dedo em martelo ainda não foi testado.',
       ],
@@ -112,7 +127,14 @@ export const HAMMER_TOE_PT: Guide = {
     {
       h2: 'O calçado faz diferença?',
       paragraphs: [
-        'O calçado é a abordagem conservadora mais recomendada para dedo em martelo. Uma revisão sobre o tratamento das deformidades dos dedos menores na EFORT Open Reviews (Malhotra e colegas, 2016) colocou a adaptação do calçado em primeiro lugar na lista de tratamento conservador: bico largo para dar espaço aos dedos, bico alto para evitar atrito sobre a articulação dobrada e evitar salto alto.',
+        '**O calçado é a abordagem conservadora mais recomendada para dedo em martelo.** Uma revisão sobre o tratamento das deformidades dos dedos menores na EFORT Open Reviews (Malhotra e colegas, 2016) colocou a adaptação do calçado em primeiro lugar na lista de tratamento conservador:',
+        {
+          list: [
+            'Bico largo para dar espaço aos dedos.',
+            'Bico alto para evitar atrito sobre a articulação dobrada.',
+            'Evitar salto alto.',
+          ],
+        },
         'Sapatos estreitos apertam os dedos uns contra os outros e empurram a articulação dobrada contra a parte de cima do sapato, causando calos e calosidades. O salto alto faz o pé escorregar para a frente e espreme os dedos na frente do sapato. Trocar de sapato não estica um dedo em martelo rígido, mas reduz o atrito e a pressão do dia a dia, que causam a maior parte da dor.',
         'Protetores de dedo, capas de gel e protetores de silicone podem amortecer a articulação dobrada e redistribuir a pressão na ponta do dedo. O estudo de Formosa 2022 mostrou que protetores de silicone moldados reduziram o pico de pressão na ponta do segundo dedo tanto nas deformidades flexíveis quanto nas rígidas.',
       ],
@@ -121,7 +143,7 @@ export const HAMMER_TOE_PT: Guide = {
     {
       h2: 'Dá para reverter o dedo em martelo sem cirurgia?',
       paragraphs: [
-        'Se o dedo em martelo ainda é flexível, as medidas conservadoras, incluindo exercícios, alongamento, sapatos mais largos e esparadrapo nos dedos, podem evitar a progressão e melhorar o conforto. Prender o dedo afetado ao dedo vizinho com esparadrapo pode mantê-lo de leve em uma posição mais neutra ao longo do dia. Mas nenhuma dessas medidas mostrou corrigir a deformidade de forma permanente.',
+        'Se o dedo em martelo ainda é flexível, as medidas conservadoras, incluindo exercícios, alongamento, sapatos mais largos e esparadrapo nos dedos, podem evitar a progressão e melhorar o conforto. Prender o dedo afetado ao dedo vizinho com esparadrapo pode mantê-lo de leve em uma posição mais neutra ao longo do dia. **Mas nenhuma dessas medidas mostrou corrigir a deformidade de forma permanente.**',
         'Quando o dedo em martelo fica rígido, a articulação está contraída e não consegue ser esticada. Nesse ponto, exercício e alongamento não mudam o formato. O foco passa a ser proteger a pele do atrito e controlar a pressão com protetores e calçado.',
         'A velocidade com que um dedo em martelo flexível fica rígido varia. Em algumas pessoas ele continua flexível por anos. Usar sapatos com bico largo e manter a mobilidade dos dedos com alongamento e exercícios diários são as estratégias mais recomendadas para frear a progressão.',
       ],
@@ -131,7 +153,14 @@ export const HAMMER_TOE_PT: Guide = {
       keyFact: 'Uma revisão de 2016 citou dados de um registro sueco mostrando que as cirurgias dos dedos menores, incluindo a de dedo em martelo e em garra, representavam quase um quarto de todas as operações da parte da frente do pé (Malhotra e colegas, 2016).',
       paragraphs: [
         'A cirurgia é considerada quando um dedo em martelo rígido causa dor persistente, feridas na pele ou dificuldade para usar sapatos apesar do tratamento conservador. A decisão se baseia nos sintomas e na limitação funcional, não na aparência do dedo.',
-        'Os procedimentos mais comuns incluem a artroplastia da articulação interfalângica proximal (retirar um pedacinho de osso para esticar a articulação) e a artrodese (fundir a articulação em uma posição reta). Existem técnicas minimamente invasivas mais novas, mas os dados de resultado a longo prazo ainda estão sendo coletados.',
+        'Os procedimentos mais comuns incluem:',
+        {
+          list: [
+            'A artroplastia da articulação interfalângica proximal (retirar um pedacinho de osso para esticar a articulação).',
+            'A artrodese (fundir a articulação em uma posição reta).',
+          ],
+        },
+        'Existem técnicas minimamente invasivas mais novas, mas os dados de resultado a longo prazo ainda estão sendo coletados.',
         'A recuperação da cirurgia de dedo em martelo costuma levar de três a seis semanas com um sapato pós-operatório. Alguma rigidez no dedo é esperada. Uma revisão de 2016 citou dados de um registro sueco mostrando que as cirurgias dos dedos menores, que incluem dedo em martelo, dedo em garra e deformidades parecidas, representavam quase um quarto de todas as cirurgias da parte da frente do pé.',
       ],
       cites: [CITE.malhotra],

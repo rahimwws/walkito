@@ -31,14 +31,15 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
       h2: 'O que é a descida excêntrica do calcanhar?',
       paragraphs: [
         'Uma contração muscular excêntrica é aquela em que o músculo se alonga sob carga. Na descida do calcanhar, a panturrilha se alonga enquanto você desce o calcanhar abaixo do degrau. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas. A subida é feita com os dois pés, para tirar o esforço concêntrico do lado machucado.',
-        'A confusão mais comum é entre a descida do calcanhar e o alongamento de panturrilha. O alongamento fica parado na posição de baixo. A descida do calcanhar passa por ela devagar, com o músculo trabalhando o caminho todo. Ficar parado embaixo como em um alongamento tira o estímulo de carga que faz o exercício funcionar. O benefício está na descida lenta e controlada.',
+        'A confusão mais comum é entre a descida do calcanhar e o alongamento de panturrilha. O alongamento fica parado na posição de baixo. A descida do calcanhar passa por ela devagar, com o músculo trabalhando o caminho todo. Ficar parado embaixo como em um alongamento tira o estímulo de carga que faz o exercício funcionar. **O benefício está na descida lenta e controlada.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: 'Como fazer a descida excêntrica do calcanhar?',
       paragraphs: [
-        'Fique na beira de um degrau com a parte da frente dos pés no degrau e os calcanhares para fora da beira. Suba com os dois pés. Passe o peso para a perna que vai trabalhar. Desça esse calcanhar devagar, em uns três segundos, deixando-o afundar abaixo do degrau. Mantenha o joelho esticado. Use os dois pés para voltar lá para cima.',
+        'Fique na beira de um degrau com a parte da frente dos pés no degrau e os calcanhares para fora da beira. Suba com os dois pés. Passe o peso para a perna que vai trabalhar.',
+        'Desça esse calcanhar devagar, em uns três segundos, deixando-o afundar abaixo do degrau. Mantenha o joelho esticado. Use os dois pés para voltar lá para cima.',
         'A descida com o joelho esticado trabalha o gastrocnêmio, o músculo maior e mais superficial da panturrilha. Alfredson também prescreveu uma versão com o joelho dobrado para trabalhar o sóleo, o músculo mais profundo da panturrilha. A versão com o joelho dobrado é o mesmo movimento com o joelho dobrado a uns 30 a 45\u00A0graus durante a descida.',
       ],
       exercises: [
@@ -90,17 +91,29 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
       paragraphs: [
         'A tendinopatia de Aquiles no meio do tendão fica no corpo do tendão, em geral de 2 a 6\u00A0centímetros acima do osso do calcanhar. As descidas excêntricas padrão passando da beira de um degrau são adequadas aqui.',
         'A tendinopatia de Aquiles insercional é dor bem no ponto onde o tendão se prende no osso. Em um estudo piloto de 2008 com 27\u00A0pessoas com dor insercional crônica, um protocolo adaptado com carga excêntrica só no nível do chão, sem descer abaixo da posição neutra, relatou bons resultados em 67\u00A0por cento dos casos. A dorsiflexão profunda comprime o tendão contra o osso do calcanhar, o que torna as descidas profundas padrão contraproducentes na dor insercional.',
-        'Se a sua dor é bem na parte de trás do osso do calcanhar, faça todas as descidas do calcanhar no chão. Não desça abaixo da beira do degrau. Não faça alongamentos fortes. Essa é a adaptação que mais passa despercebida nos programas para o Aquiles. Para a página completa sobre o problema, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
+        'Se a sua dor é bem na parte de trás do osso do calcanhar:',
+        {
+          list: [
+            'Faça todas as descidas do calcanhar no chão.',
+            'Não desça abaixo da beira do degrau.',
+            'Não faça alongamentos fortes.',
+          ],
+        },
+        'Essa é a adaptação que mais passa despercebida nos programas para o Aquiles. Para a página completa sobre o problema, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'Quais são os erros comuns na descida excêntrica do calcanhar?',
       paragraphs: [
-        'Ficar parado embaixo como em um alongamento. O benefício está na descida lenta, não em ficar pendurado embaixo. Desça em três segundos e use logo os dois pés para voltar a subir.',
-        'Descer demais. O calcanhar deve afundar até a amplitude natural dele abaixo do degrau. Forçar mais para baixo, inclinando o pé para dentro ou para fora para ganhar amplitude, sobrecarrega os tendões da parte de dentro ou de fora do tornozelo. Três a cinco centímetros abaixo do degrau bastam.',
-        'Ir rápido demais. A velocidade tira a carga excêntrica, que é a base do exercício. Se você não consegue controlar a descida em uns três segundos, volte primeiro para uma versão com os dois pés.',
-        'Pular a versão com o joelho dobrado. A descida com o joelho esticado trabalha o gastrocnêmio. A versão com o joelho dobrado trabalha o sóleo. Os dois músculos se ligam ao tendão de Aquiles. O protocolo original inclui as duas.',
+        {
+          list: [
+            '**Ficar parado embaixo como em um alongamento.** O benefício está na descida lenta, não em ficar pendurado embaixo. Desça em três segundos e use logo os dois pés para voltar a subir.',
+            '**Descer demais.** O calcanhar deve afundar até a amplitude natural dele abaixo do degrau. Forçar mais para baixo, inclinando o pé para dentro ou para fora para ganhar amplitude, sobrecarrega os tendões da parte de dentro ou de fora do tornozelo. Três a cinco centímetros abaixo do degrau bastam.',
+            '**Ir rápido demais.** A velocidade tira a carga excêntrica, que é a base do exercício. Se você não consegue controlar a descida em uns três segundos, volte primeiro para uma versão com os dois pés.',
+            '**Pular a versão com o joelho dobrado.** A descida com o joelho esticado trabalha o gastrocnêmio. A versão com o joelho dobrado trabalha o sóleo. Os dois músculos se ligam ao tendão de Aquiles. O protocolo original inclui as duas.',
+          ],
+        },
       ],
     },
     {

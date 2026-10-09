@@ -48,7 +48,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       h2: 'Che sensazione dà la fascite plantare?',
       paragraphs: [
-        'Il sintomo tipico è il dolore sotto il tallone ai primi passi del mattino. La linea guida lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Di solito si calma dopo qualche minuto di cammino, poi torna quando sei stato seduto un po’ e ti rialzi.',
+        '**Il sintomo tipico è il dolore sotto il tallone ai primi passi del mattino.** La linea guida lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Di solito si calma dopo qualche minuto di cammino, poi torna quando sei stato seduto un po’ e ti rialzi.',
         'Il dolore di solito è nella parte interna e anteriore del tallone, dove la fascia si attacca all’osso. Può estendersi lungo l’arco. Tende a essere peggiore dopo il riposo, non durante l’attività, cioè il contrario di quello che la maggior parte delle persone si aspetta.',
         'Il dolore si vede meglio la mattina dopo. Se la mattina dopo va peggio, il giorno prima hai chiesto troppo al piede. Per questo seguire il dolore del mattino è il modo più utile per capire se stai migliorando. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio lo schema del mattino.',
       ],
@@ -60,16 +60,46 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       paragraphs: [
         'La fascite plantare compare quando la fascia riceve più carico di quello che riesce a reggere e da cui riesce a riprendersi. Il carico può essere troppo tutto in una volta (un salto improvviso nei chilometri di corsa) o costante nel tempo (stare in piedi su un pavimento duro tutto il giorno).',
         'Uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli ha trovato che una dorsiflessione ridotta della caviglia era il fattore di rischio indipendente più forte, con un odds ratio di 23,3. In un’analisi retrospettiva separata su 254\u00A0persone con fascite plantare, dal 52 al 60% aveva una retrazione limitata al gastrocnemio, il muscolo del polpaccio più grande e più superficiale. Stare in piedi a lungo al lavoro aveva un odds ratio di 3,6. Anche un indice di massa corporea più alto era un fattore di rischio.',
-        'La linea guida nomina altri fattori di rischio: un’età tra i 40 e i 60\u00A0anni, la corsa o le attività con salti, e i lavori che richiedono di stare in piedi a lungo. Il piede piatto o il piede cavo possono cambiare il modo in cui il carico passa attraverso la fascia, ma nessuno dei due porta per forza a questo problema.',
-        'Di solito la fascite plantare nasce da una combinazione: un polpaccio rigido, un carico a cui il piede non era pronto e troppo poco tempo per riprendersi.',
+        'La linea guida nomina altri fattori di rischio:',
+        {
+          list: [
+            'Un’età tra i 40 e i 60\u00A0anni.',
+            'La corsa o le attività con salti.',
+            'I lavori che richiedono di stare in piedi a lungo.',
+          ],
+        },
+        'Il piede piatto o il piede cavo possono cambiare il modo in cui il carico passa attraverso la fascia, ma nessuno dei due porta per forza a questo problema.',
+        '**Di solito la fascite plantare nasce da una combinazione**:',
+        {
+          list: [
+            'Un polpaccio rigido.',
+            'Un carico a cui il piede non era pronto.',
+            'Troppo poco tempo per riprendersi.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: 'Come si fa la diagnosi di fascite plantare?',
       paragraphs: [
-        'Di solito la diagnosi di fascite plantare la fa un professionista sanitario in base alla tua storia e a un esame fisico. I segni chiave sono la dolorabilità nella parte interna e anteriore del tallone, il dolore ai primi passi del mattino e un dolore che si calma con l’attività e torna dopo il riposo.',
-        'In un caso tipico non servono esami di imaging. La linea guida consiglia di valutarli se lo schema non torna, se i sintomi non migliorano dopo diverse settimane di cure conservative, o se bisogna escludere un’altra diagnosi (per esempio una frattura da stress o un nervo compresso). Ecografia e risonanza magnetica possono mostrare una fascia ispessita, ma una fascia ispessita in un esame, senza lo schema di sintomi che corrisponde, non è fascite plantare.',
+        'Di solito la diagnosi di fascite plantare la fa un professionista sanitario in base alla tua storia e a un esame fisico. I segni chiave sono:',
+        {
+          list: [
+            'La dolorabilità nella parte interna e anteriore del tallone.',
+            'Il dolore ai primi passi del mattino.',
+            'Un dolore che si calma con l’attività e torna dopo il riposo.',
+          ],
+        },
+        '**In un caso tipico non servono esami di imaging.** La linea guida consiglia di valutarli:',
+        {
+          list: [
+            'Se lo schema non torna.',
+            'Se i sintomi non migliorano dopo diverse settimane di cure conservative.',
+            'Se bisogna escludere un’altra diagnosi (per esempio una frattura da stress o un nervo compresso).',
+          ],
+        },
+        'Ecografia e risonanza magnetica possono mostrare una fascia ispessita, ma una fascia ispessita in un esame, senza lo schema di sintomi che corrisponde, non è fascite plantare.',
         'Walkito non fa diagnosi. Se non sei sicuro che il tuo dolore al tallone sia fascite plantare, il punto di partenza giusto è un professionista sanitario.',
       ],
       cites: [CITE.guideline],
@@ -79,7 +109,8 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       keyFact: 'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
       paragraphs: [
         'La linea guida clinica del 2023 dà un grado a ogni approccio in base alla forza delle prove che lo sostengono. Le raccomandazioni più forti sono lo stretching, il taping, la terapia manuale da un professionista e i tutori notturni per il dolore del mattino che non passa. Poi viene il lavoro di forza. La tabella qui sotto elenca le opzioni principali con i loro gradi nella linea guida.',
-        'Nessuna opzione funziona per tutti. La maggior parte delle persone inizia con lo stretching e scarpe con un buon sostegno, aggiunge il lavoro di forza quando il dolore iniziale si calma, e chiede a un professionista delle altre opzioni se i progressi si fermano. In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari. La linea guida sconsiglia i plantari da soli come approccio a breve termine e sconsiglia di aggiungere gli ultrasuoni terapeutici allo stretching.',
+        '**Nessuna opzione funziona per tutti.** La maggior parte delle persone inizia con lo stretching e scarpe con un buon sostegno, aggiunge il lavoro di forza quando il dolore iniziale si calma, e chiede a un professionista delle altre opzioni se i progressi si fermano.',
+        'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari. La linea guida sconsiglia i plantari da soli come approccio a breve termine e sconsiglia di aggiungere gli ultrasuoni terapeutici allo stretching.',
       ],
       table: {
         caption: 'Gradi della linea guida del 2023 per il dolore sotto il tallone',
@@ -107,7 +138,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       paragraphs: [
         'Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche, spesso nel giro di alcuni mesi. Un follow-up più lungo su 174\u00A0pazienti dà un quadro più dettagliato: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
         'I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di una spina calcaneare non lo erano.',
-        'La domanda utile non è «quante settimane mancano alla fine?» ma «il mio dolore del mattino è più basso questo mese rispetto al mese scorso?». Quella tendenza è il vero traguardo. [Quanto dura la fascite plantare?](/it/quanto-dura-fascite-plantare/) raccoglie tutte le prove sui tempi.',
+        'La domanda utile non è «quante settimane mancano alla fine?» ma «il mio dolore del mattino è più basso questo mese rispetto al mese scorso?». **Quella tendenza è il vero traguardo.** [Quanto dura la fascite plantare?](/it/quanto-dura-fascite-plantare/) raccoglie tutte le prove sui tempi.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -151,12 +182,16 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       h2: 'Il dolore potrebbe essere qualcosa di diverso dalla fascite plantare?',
       paragraphs: [
-        'Diversi problemi hanno la stessa posizione o lo stesso schema del mattino. Dove si trova il dolore e come si comporta aiutano a distinguerli.',
-        '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+        'Diversi problemi hanno la stessa posizione o lo stesso schema del mattino. Dove si trova il dolore e come si comporta aiutano a distinguerli:',
+        {
+          list: [
+            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         '**Sindrome del cuscinetto adiposo del tallone.** Un dolore profondo al centro del tallone, peggiore su superfici dure e a piedi nudi. Una scoping review del 2022 ha notato che può essere difficile distinguerla dalla fascite plantare senza esami di imaging. Il dolore del cuscinetto adiposo è proprio sotto il centro, quello della fascite nella parte interna e anteriore.',
         '**Spina calcaneare.** Una crescita ossea sulla parte inferiore dell’osso del tallone. Molte persone ne hanno una senza alcun dolore. Nella coorte di Hansen del 2018 su 174\u00A0pazienti, avere una spina calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi. La spina spesso c’è, ma di solito non è lei a causare il dolore.',
         '**Frattura da stress del calcagno.** Un dolore che aumenta con l’attività invece di calmarsi quando ti scaldi. Può fare male a riposo o di notte. Stringere i lati del tallone spesso lo riproduce. Rivolgiti a un professionista sanitario prima di allenare il piede.',
         '**Artrite infiammatoria.** Quando fanno male entrambi i talloni, la rigidità del mattino dura più di 30\u00A0minuti e altre articolazioni sono rigide o gonfie, lo schema fa pensare a qualcosa di sistemico. Deve controllarlo un professionista sanitario.',
+          ],
+        },
         'Se non sei sicuro, un professionista sanitario può distinguerli in base alla posizione, al comportamento del dolore e, se serve, agli esami di imaging.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

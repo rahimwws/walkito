@@ -27,7 +27,15 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Welche Übungen stärken das Sprunggelenk?',
       paragraphs: [
-        'Übungen zum Stärken des Sprunggelenks trainieren vier Muskelgruppen und das Gleichgewichtssystem, das sie steuert. Die Peroneusmuskeln (an der Außenseite des Unterschenkels) drehen den Fuß nach außen und sind der wichtigste Schutz gegen Umknicken. Der Tibialis posterior (tief an der Innenseite) dreht den Fuß nach innen und hält das Gewölbe. Die Wade drückt dich auf die Zehenspitzen, und der Tibialis anterior (der Schienbeinmuskel) hebt den Vorfuß an.',
+        'Übungen zum Stärken des Sprunggelenks trainieren vier Muskelgruppen und das Gleichgewichtssystem, das sie steuert:',
+        {
+          list: [
+            '**Peroneusmuskeln:** Die Peroneusmuskeln (an der Außenseite des Unterschenkels) drehen den Fuß nach außen und sind der wichtigste Schutz gegen Umknicken.',
+            '**Tibialis posterior:** Der Tibialis posterior (tief an der Innenseite) dreht den Fuß nach innen und hält das Gewölbe.',
+            '**Wade:** Die Wade drückt dich auf die Zehenspitzen.',
+            '**Tibialis anterior:** Der Tibialis anterior (der Schienbeinmuskel) hebt den Vorfuß an.',
+          ],
+        },
         'Kraft ist nur die halbe Sache. Sprunggelenke knicken auch um, weil die Muskeln einen Sekundenbruchteil zu spät reagieren. Gleichgewichtstraining trainiert die Geschwindigkeit dieser Reaktionen, und deshalb taucht es in der Forschung zu erneutem Umknicken immer wieder auf.',
         'Die Tabelle zeigt die Reihenfolge auf dieser Seite. Geh zur nächsten Stufe, wenn sich die aktuelle leicht anfühlt und das Sprunggelenk am nächsten Morgen nicht mehr schmerzt als sonst.',
       ],
@@ -46,10 +54,17 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
       h2: 'Beugen Übungen zum Stärken des Sprunggelenks erneutem Umknicken vor?',
       keyFact: 'In einer Studie mit 522\u00A0Sportlerinnen und Sportlern nach dem Umknicken knickten 22\u00A0% derjenigen mit einem Gleichgewichtsprogramm für zu Hause innerhalb eines Jahres erneut um, verglichen mit 33\u00A0% derjenigen, die nur die übliche Versorgung bekamen (Hupperets und Kollegen, 2009).',
       paragraphs: [
-        'Ja, und Gleichgewichtstraining hat die besten Belege. In einer randomisierten Studie von 2009 in den Niederlanden bekamen 522\u00A0Sportlerinnen und Sportler im Alter von 12 bis 70\u00A0Jahren, die in den zwei Monaten davor umgeknickt waren, entweder die übliche Versorgung oder die übliche Versorgung plus ein Programm mit Balanceboard für zu Hause. Innerhalb eines Jahres knickten 22\u00A0% der Gleichgewichtsgruppe erneut um, gegenüber 33\u00A0% der Gruppe mit üblicher Versorgung. Das ist ein um etwa 35\u00A0% geringeres Risiko. Neun Personen mussten das Programm machen, um ein erneutes Umknicken zu verhindern.',
+        'Ja, und **Gleichgewichtstraining hat die besten Belege.** In einer randomisierten Studie von 2009 in den Niederlanden bekamen 522\u00A0Sportlerinnen und Sportler im Alter von 12 bis 70\u00A0Jahren, die in den zwei Monaten davor umgeknickt waren, entweder die übliche Versorgung oder die übliche Versorgung plus ein Programm mit Balanceboard für zu Hause.',
+        'Innerhalb eines Jahres knickten 22\u00A0% der Gleichgewichtsgruppe erneut um, gegenüber 33\u00A0% der Gruppe mit üblicher Versorgung. Das ist ein um etwa 35\u00A0% geringeres Risiko. Neun Personen mussten das Programm machen, um ein erneutes Umknicken zu verhindern.',
         'Das Programm sah drei Einheiten pro Woche von bis zu 30\u00A0Minuten vor, über zwei Monate, mit steigender Schwierigkeit. Die Teilnehmenden machten es zu Hause ohne Betreuung.',
-        'Zusammengefasste Studien zeigen in dieselbe Richtung. Eine Metaanalyse von 2015 über 7\u00A0Studien mit 3.726\u00A0Personen fand, dass Gleichgewichtstraining das Risiko für Umknicken um etwa ein Drittel senkte (relatives Risiko 0,65). Bei Menschen, die schon einmal umgeknickt waren, hielt das Ergebnis (relatives Risiko 0,64). Für Menschen, die noch nie umgeknickt waren, waren die Belege schwächer, und die Autorinnen und Autoren nannten sie nicht eindeutig. Eine Übersichtsarbeit von 2018 zu Studien mit Wettkampfsportlerinnen und -sportlern (sechs ihrer acht Studien testeten Gleichgewichtstraining) fand, dass Gleichgewichtstraining das Risiko für Umknicken um 46\u00A0% senkte.',
-        'Eine Übersicht von 2017 über 46\u00A0Übersichtsarbeiten bewertete die Belege für neuromuskuläres Training (Gleichgewichts- und Koordinationsübungen) zur Vorbeugung von erneutem Umknicken als mittelstark und für Orthesen als stark.',
+        'Zusammengefasste Studien zeigen in dieselbe Richtung:',
+        {
+          list: [
+            'Eine Metaanalyse von 2015 über 7\u00A0Studien mit 3.726\u00A0Personen fand, dass Gleichgewichtstraining das Risiko für Umknicken um etwa ein Drittel senkte (relatives Risiko 0,65). Bei Menschen, die schon einmal umgeknickt waren, hielt das Ergebnis (relatives Risiko 0,64). Für Menschen, die noch nie umgeknickt waren, waren die Belege schwächer, und die Autorinnen und Autoren nannten sie nicht eindeutig.',
+            'Eine Übersichtsarbeit von 2018 zu Studien mit Wettkampfsportlerinnen und -sportlern (sechs ihrer acht Studien testeten Gleichgewichtstraining) fand, dass Gleichgewichtstraining das Risiko für Umknicken um 46\u00A0% senkte.',
+            'Eine Übersicht von 2017 über 46\u00A0Übersichtsarbeiten bewertete die Belege für neuromuskuläres Training (Gleichgewichts- und Koordinationsübungen) zur Vorbeugung von erneutem Umknicken als mittelstark und für Orthesen als stark.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009: relatives Risiko 0,63 (95-%-KI 0,45 bis 0,88) für selbst berichtetes erneutes Umknicken; der Nutzen war am deutlichsten bei Sportlerinnen und Sportlern, deren erstes Umknicken nicht ärztlich versorgt worden war. Schiftan 2015: RR 0,65 (0,55 bis 0,77) insgesamt, 0,64 (0,51 bis 0,81) mit früherem Umknicken, 0,57 (0,34 bis 0,97) ohne, aus zwei nicht signifikanten Studien.',
@@ -151,7 +166,14 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
       paragraphs: [
         'Mit sanften Übungen für das Sprunggelenk kannst du meist bald nach dem Umknicken anfangen, solange du den Fuß belasten kannst. Eine Übersicht von 2017 über 46\u00A0Übersichtsarbeiten fand starke Belege für frühe Mobilisation (das Sprunggelenk früh wieder bewegen) und mittelstarke Belege für Übungen nach einem akuten Umknicken. Eine niederländische Leitlinie von 2018 sagt, dass Menschen mit einem gerissenen Außenband am Sprunggelenk am besten mit Tape oder einer Orthese in Kombination mit einem Übungsprogramm zurechtkommen, und zieht betreute Übungen passiven Maßnahmen vor.',
         'Fang mit schmerzfreier Bewegung und Bandübungen im Sitzen an, nimm Fersenheben im Stehen dazu, wenn sich Gehen normal anfühlt, und Gleichgewichtsübungen, sobald du ohne stechenden Schmerz auf dem verletzten Bein stehen kannst. Wenn das Sprunggelenk auch steif ist, findest du unter [Sprunggelenk mobilisieren: Übungen](/de/sprunggelenk-mobilisieren-uebungen/) die Seite zum Bewegungsumfang.',
-        'Vor all dem: Schließ einen Bruch aus. Die Ottawa Ankle Rules sind eine kurze Checkliste, die Ärztinnen und Ärzte nutzen: Ein Röntgenbild wird empfohlen, wenn du direkt nach der Verletzung und in der Praxis keine vier Schritte gehen konntest oder wenn ein Knochen auf Druck schmerzt, an der hinteren Kante oder Spitze eines der beiden Knöchel, an der Basis des fünften Mittelfußknochens oder am Kahnbein (einem Knochen an der Innenseite des Mittelfußes). Eine Übersichtsarbeit von 2003 über 27\u00A0Studien mit 15.581\u00A0Patientinnen und Patienten fand, dass die Regeln fast keinen Bruch übersehen.',
+        'Vor all dem: **Schließ einen Bruch aus.** Die Ottawa Ankle Rules sind eine kurze Checkliste, die Ärztinnen und Ärzte nutzen. Ein Röntgenbild wird empfohlen, wenn:',
+        {
+          list: [
+            'Du direkt nach der Verletzung und in der Praxis keine vier Schritte gehen konntest.',
+            'Ein Knochen auf Druck schmerzt, an der hinteren Kante oder Spitze eines der beiden Knöchel, an der Basis des fünften Mittelfußknochens oder am Kahnbein (einem Knochen an der Innenseite des Mittelfußes).',
+          ],
+        },
+        'Eine Übersichtsarbeit von 2003 über 27\u00A0Studien mit 15.581\u00A0Patientinnen und Patienten fand, dass die Regeln fast keinen Bruch übersehen.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -160,7 +182,7 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
       keyFact: 'In einer Studie mit 39\u00A0Personen mit instabilen Sprunggelenken verbesserte Bandtraining die Kraft im Sprunggelenk und die empfundene Instabilität, aber nicht Gleichgewichts- oder Sprungtests (Hall und Kollegen, 2015).',
       paragraphs: [
         'Bandübungen allein bauen Kraft auf, verändern aber vielleicht nicht, wie gut das Sprunggelenk mit einem Wackeln zurechtkommt. In einer Studie von 2015 wurden 39\u00A0junge Erwachsene mit chronischer Instabilität im Sprunggelenk (ein Sprunggelenk, das immer wieder wegknickt) auf eine Bandgruppe, eine Kraftgruppe mit manuellem Widerstand und eine Kontrollgruppe aufgeteilt. Die beiden Kraftgruppen trainierten etwa anderthalb Monate lang dreimal pro Woche. Beide wurden kräftiger und sagten, ihr Sprunggelenk fühle sich stabiler an. Keine der beiden verbesserte sich bei einem Gleichgewichtstest mit Reichweite oder einem Sprungtest mit Überkreuzen.',
-        'Die Autorinnen und Autoren schlugen vor, Übungen dazuzunehmen, die mehrere Richtungen und Gelenke einbeziehen. Die Studien zur Vorbeugung nutzten Gleichgewichtstraining, keine Bänder. Mach beides.',
+        'Die Autorinnen und Autoren schlugen vor, Übungen dazuzunehmen, die mehrere Richtungen und Gelenke einbeziehen. Die Studien zur Vorbeugung nutzten Gleichgewichtstraining, keine Bänder. **Mach beides.**',
         'Auch die Hüfte zählt. In einer kleinen Studie von 2018 mit 26\u00A0Personen mit instabilen Sprunggelenken machte die Trainingsgruppe nach einem Monat betreuter Bandübungen für die Hüfte, dreimal pro Woche, bei einem Gleichgewichtstest im Stehen im Durchschnitt 9,9\u00A0Fehler, gegenüber 21,2 in der Gruppe ohne Training. Das war eine einzelne kleine Studie, sieh die Hüfte also als nützliche Ergänzung, nicht als Kern des Plans.',
       ],
       sourceNote:
@@ -172,13 +194,22 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
       paragraphs: [
         'Für die meisten Stufen brauchst du nur eine Wand. Nur das Einwärts- und Auswärtsdrehen braucht ein Band.',
         'Ohne Band kannst du dieselben zwei Richtungen isometrisch üben (Halten gegen etwas, das sich nicht bewegt). Setz dich mit der Außenkante des Fußes an ein Tischbein oder einen Türrahmen und drück 5 bis 10\u00A0Sekunden nach außen, ohne dass sich der Fuß bewegt. Dann dasselbe mit der Innenkante nach innen. Das ist ein häufiger früher Schritt nach dem Umknicken, auch wenn es nicht als eigenes Programm getestet wurde.',
-        'Wenn du nur für eine Sache Zeit hast, bleib bei den Gleichgewichtsübungen. Sie haben die stärksten Belege und brauchen eine Minute am Tag.',
+        'Wenn du nur für eine Sache Zeit hast, **bleib bei den Gleichgewichtsübungen.** Sie haben die stärksten Belege und brauchen eine Minute am Tag.',
       ],
     },
     {
       h2: 'Helfen Übungen für das Sprunggelenk älteren Menschen beim Gleichgewicht?',
       paragraphs: [
-        'Übungen für das Sprunggelenk sind oft Teil der Sturzprävention bei älteren Menschen, aber die Belege für Sprunggelenkübungen allein sind begrenzt. Die beste Studie testete ein Paket. 2011 bekamen 305\u00A0Menschen mit einem Durchschnittsalter von 74\u00A0Jahren, mit stark einschränkenden Fußschmerzen und erhöhtem Sturzrisiko, entweder die übliche podologische Versorgung oder ein Paket aus Einlagen, Schuhberatung mit einem Gutschein, Fuß- und Sprunggelenkübungen für zu Hause und einer Broschüre zu Stürzen. Über 12\u00A0Monate hatte die Paket-Gruppe 36\u00A0% weniger Stürze. Die Zahl der Menschen, die mindestens einmal stürzten, unterschied sich nicht klar.',
+        'Übungen für das Sprunggelenk sind oft Teil der Sturzprävention bei älteren Menschen, aber die Belege für Sprunggelenkübungen allein sind begrenzt. Die beste Studie testete ein Paket. 2011 bekamen 305\u00A0Menschen mit einem Durchschnittsalter von 74\u00A0Jahren, mit stark einschränkenden Fußschmerzen und erhöhtem Sturzrisiko, entweder die übliche podologische Versorgung oder ein Paket aus:',
+        {
+          list: [
+            'Einlagen.',
+            'Schuhberatung mit einem Gutschein.',
+            'Fuß- und Sprunggelenkübungen für zu Hause.',
+            'Einer Broschüre zu Stürzen.',
+          ],
+        },
+        'Über 12\u00A0Monate hatte die Paket-Gruppe 36\u00A0% weniger Stürze. Die Zahl der Menschen, die mindestens einmal stürzten, unterschied sich nicht klar.',
         'Die Paket-Gruppe gewann außerdem an Kraft, Bewegungsumfang und Gleichgewicht im Sprunggelenk. Weil es ein Paket war, kann die Studie nicht sagen, wie viel davon von den Übungen kam.',
         'Wenn das Gleichgewicht deine Hauptsorge ist, mach den Einbeinstand an einer Arbeitsplatte, eine Hand knapp darüber. Wenn du schon gestürzt bist, Schwindel oder taube Füße hast, lass zuerst dein Gleichgewicht ärztlich einschätzen.',
       ],
@@ -195,7 +226,7 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Wie oft solltest du Übungen zum Stärken des Sprunggelenks machen?',
       paragraphs: [
-        'Zwei oder drei Krafteinheiten pro Woche, dazu an den meisten Tagen eine kurze Gleichgewichtsübung, ist ein sinnvolles Muster. Es passt zur Studie zur Vorbeugung oben, die drei Einheiten pro Woche über zwei Monate vorsah. Gleichgewichtsübungen belasten wenig und gehen fast täglich.',
+        '**Zwei oder drei Krafteinheiten pro Woche, dazu an den meisten Tagen eine kurze Gleichgewichtsübung,** ist ein sinnvolles Muster. Es passt zur Studie zur Vorbeugung oben, die drei Einheiten pro Woche über zwei Monate vorsah. Gleichgewichtsübungen belasten wenig und gehen fast täglich.',
         'Geh eine Stufe höher, wenn sich eine Übung in zwei Einheiten hintereinander leicht anfühlt und das Sprunggelenk am nächsten Morgen nicht schlechter ist. Steigere mit einer schwereren Variante (ein Bein statt zwei, Augen zu statt offen, ein festeres Band), statt immer mehr Sätze anzuhäufen. Geh nach einem Schub eine Stufe zurück.',
         'Walkito ist rund um Schmerzen an Ferse, Gewölbe und Unterschenkel aufgebaut und hat kein Reha-Programm nach dem Umknicken. Seine Pläne können das Einwärtsdrehen mit Band (nach einigen Gewölbeübungen zuerst), Zehenheben an der Wand, Fersenheben, Hüftübungen in Seitenlage und den Einbeinstand von dieser Seite enthalten, mit einem kurzen Test von Wadenausdauer, Gewölbehalten und Gleichgewicht anfangs alle zwei Wochen. Wenn du auch die kleinen Muskeln unter dem Gewölbe aufbauen willst, lies [Fuß kräftigen: Übungen](/de/fuss-kraeftigen-uebungen/).',
       ],

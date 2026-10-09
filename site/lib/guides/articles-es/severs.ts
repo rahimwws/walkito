@@ -21,7 +21,8 @@ export const SEVERS_ES: Guide = {
   lede:
     'La enfermedad de Sever, también llamada apofisitis calcánea, es la causa más común de dolor de talón en niños. Sucede cuando la placa de crecimiento en la parte de atrás del hueso del talón se irrita por el tirón repetido del tendón de Aquiles, normalmente durante un estirón de crecimiento y un deporte que implica correr o saltar. No es una enfermedad en el sentido habitual. Se resuelve sola cuando la placa de crecimiento se cierra.',
   intro: [
-    'Esta página está escrita para padres y madres. Explica qué pasa en el talón, qué dice la investigación sobre las taloneras, los estiramientos, el manejo de la carga y cuándo el dolor necesita un profesional de la salud en vez de solo descanso. Walkito es una app de ejercicios diseñada para adultos con dolor de talón y de arco. No está diseñada para niños, y nada en esta página es una recomendación de usarla con un niño. Si el dolor de talón de tu hijo no mejora con los pasos de abajo, un especialista en medicina deportiva pediátrica o un podólogo es el siguiente paso.',
+    'Esta página está escrita para padres y madres. Explica qué pasa en el talón, qué dice la investigación sobre las taloneras, los estiramientos, el manejo de la carga y cuándo el dolor necesita un profesional de la salud en vez de solo descanso.',
+    'Walkito es una app de ejercicios diseñada para adultos con dolor de talón y de arco. No está diseñada para niños, y nada en esta página es una recomendación de usarla con un niño. Si el dolor de talón de tu hijo no mejora con los pasos de abajo, un especialista en medicina deportiva pediátrica o un podólogo es el siguiente paso.',
   ],
   takeaways: [
     'La enfermedad de Sever afecta a niños de 8 a 15\u00A0años, casi siempre durante un estirón, y se resuelve cuando la placa de crecimiento del calcáneo se cierra, normalmente entre los 12 y los 17\u00A0años (revisión de StatPearls, 2024).',
@@ -46,14 +47,24 @@ export const SEVERS_ES: Guide = {
       paragraphs: [
         'La enfermedad de Sever afecta a niños de entre unos 8 y 15\u00A0años. La apófisis calcánea aparece por primera vez alrededor de los 7 a 9\u00A0años y normalmente se fusiona entre los 15 y los 17. Los niños se ven afectados de dos a tres veces más que las niñas, con un inicio típico alrededor de los 12\u00A0años en niños y los 11 en niñas. Cerca del 60\u00A0por ciento de los casos involucran los dos talones.',
         'Representa entre el 2 y el 16\u00A0por ciento de las consultas de niños en clínicas deportivas. Los deportes más asociados son el fútbol, el basquetbol, el atletismo, el campo traviesa, la gimnasia y el tenis. El patrón es predecible: tiende a aparecer al inicio de una temporada deportiva o durante un estirón, cuando la carga sobre el talón sube de golpe.',
-        'Los factores de riesgo incluyen niveles altos de actividad con carrera y salto, pantorrillas tensas, poca flexibilidad de tobillo, un IMC alto, superficies de juego duras y zapatos o tacos con poca amortiguación.',
+        'Los factores de riesgo incluyen:',
+        {
+          list: [
+            'Niveles altos de actividad con carrera y salto.',
+            'Pantorrillas tensas.',
+            'Poca flexibilidad de tobillo.',
+            'Un IMC alto.',
+            'Superficies de juego duras.',
+            'Zapatos o tacos con poca amortiguación.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: '¿Cómo se siente la enfermedad de Sever?',
       paragraphs: [
-        'El síntoma principal es dolor en la parte de atrás o en los lados del talón, normalmente durante o después de la actividad y sobre todo después de correr o saltar. El dolor suele describirse como un moretón. Rara vez hay hinchazón o moretón visibles. Apretar o comprimir los lados del talón normalmente reproduce el dolor. Esta prueba de compresión es el chequeo clínico habitual.',
+        'El síntoma principal es dolor en la parte de atrás o en los lados del talón, normalmente durante o después de la actividad y sobre todo después de correr o saltar. El dolor suele describirse como un moretón. Rara vez hay hinchazón o moretón visibles. **Apretar o comprimir los lados del talón normalmente reproduce el dolor.** Esta prueba de compresión es el chequeo clínico habitual.',
         'A diferencia de la fascitis plantar en adultos, que duele más en los primeros pasos después de descansar, el dolor de la enfermedad de Sever tiende a empeorar con la actividad y no mejora al caminar. Algunos niños empiezan a cojear o caminan de puntas para no cargar el talón.',
         'El dolor puede ir de leve, solo notorio durante el deporte, hasta lo bastante fuerte como para que el niño deje de jugar por completo.',
       ],
@@ -62,8 +73,16 @@ export const SEVERS_ES: Guide = {
       h2: '¿Qué ayuda en la enfermedad de Sever? La evidencia',
       keyFact: 'En un ensayo con 101\u00A0niños, los tres enfoques mejoraron el dolor, y el grupo de la plantilla reportó más satisfacción a las seis semanas, aunque la diferencia desapareció a los tres meses (Wiegerinck y colegas, 2016).',
       paragraphs: [
-        'La base de evidencia para la enfermedad de Sever es pequeña pero va creciendo. Las tres opciones principales estudiadas son el manejo de la carga (reducir la actividad que causa dolor), las taloneras o plantillas, y los estiramientos o ejercicios de fortalecimiento. Las tres han mostrado beneficio, y ninguna ha demostrado ser claramente mejor que las otras al final del seguimiento.',
-        'En un ensayo de 2016 con 101\u00A0niños de 8 a 15\u00A0años, Wiegerinck y colegas compararon tres enfoques: esperar y observar con el consejo de dejar la actividad dolorosa, una plantilla con elevación de talón y ejercicios excéntricos supervisados. Los tres grupos mejoraron de forma significativa. A las seis semanas, el grupo de la plantilla estaba más satisfecho que los otros dos. A los tres meses, no quedaba una diferencia clínicamente relevante entre los tres.',
+        'La base de evidencia para la enfermedad de Sever es pequeña pero va creciendo. Las tres opciones principales estudiadas son el manejo de la carga (reducir la actividad que causa dolor), las taloneras o plantillas, y los estiramientos o ejercicios de fortalecimiento. Las tres han mostrado beneficio, y **ninguna ha demostrado ser claramente mejor que las otras al final del seguimiento.**',
+        'En un ensayo de 2016 con 101\u00A0niños de 8 a 15\u00A0años, Wiegerinck y colegas compararon tres enfoques:',
+        {
+          list: [
+            'Esperar y observar con el consejo de dejar la actividad dolorosa.',
+            'Una plantilla con elevación de talón.',
+            'Ejercicios excéntricos supervisados.',
+          ],
+        },
+        'Los tres grupos mejoraron de forma significativa. A las seis semanas, el grupo de la plantilla estaba más satisfecho que los otros dos. A los tres meses, no quedaba una diferencia clínicamente relevante entre los tres.',
         'En un ensayo factorial separado de 2016 con 124\u00A0niños, James y colegas compararon elevaciones de talón frente a plantillas prefabricadas, y reemplazo de calzado frente a no reemplazo. Las elevaciones de talón tuvieron una pequeña ventaja sobre las plantillas prefabricadas a los 2\u00A0meses en el dominio físico del Oxford Ankle Foot Questionnaire. A los 6 y 12\u00A0meses, no quedó diferencia entre ninguna combinación.',
         'En un ensayo cruzado con 51\u00A0niños varones, Perhamre y colegas compararon una talonera de 3\u00A0mm con una cuña de talón de 5\u00A0mm. La talonera redujo el dolor en un 80\u00A0por ciento en la escala Borg CR-10, lo que sugiere que la amortiguación y la absorción del impacto pueden importar más que simplemente levantar el talón.',
       ],
@@ -74,8 +93,17 @@ export const SEVERS_ES: Guide = {
     {
       h2: 'Manejo de la carga y modificación de la actividad',
       paragraphs: [
-        'El manejo de la carga es la base del cuidado de la enfermedad de Sever. No significa dejar todo deporte. Significa reducir las actividades que causan dolor, sobre todo correr y saltar en superficies duras, hasta que el dolor se calme. La mayoría de los niños pueden volver al deporte en dos a ocho semanas si la carga se maneja a tiempo.',
-        'Los pasos prácticos incluyen reducir los entrenamientos en lugar de parar por completo, evitar los tacos en pisos duros cuando sea posible, cambiar a zapatos con buena amortiguación, y saltarse las partes de la práctica con más carrera y salto. Algunos entrenadores dejan que los niños participen en ejercicios de técnica mientras se saltan los sprints y el acondicionamiento.',
+        'El manejo de la carga es la base del cuidado de la enfermedad de Sever. **No significa dejar todo deporte.** Significa reducir las actividades que causan dolor, sobre todo correr y saltar en superficies duras, hasta que el dolor se calme. La mayoría de los niños pueden volver al deporte en dos a ocho semanas si la carga se maneja a tiempo.',
+        'Los pasos prácticos incluyen:',
+        {
+          list: [
+            'Reducir los entrenamientos en lugar de parar por completo.',
+            'Evitar los tacos en pisos duros cuando sea posible.',
+            'Cambiar a zapatos con buena amortiguación.',
+            'Saltarse las partes de la práctica con más carrera y salto.',
+          ],
+        },
+        'Algunos entrenadores dejan que los niños participen en ejercicios de técnica mientras se saltan los sprints y el acondicionamiento.',
         'Lo más difícil del manejo de la carga es que la enfermedad de Sever tiende a volver. Un niño puede sentirse mejor después de dos semanas de descanso, regresar a la actividad completa y que el dolor regrese. Eso no significa que la primera ronda de descanso falló. Significa que la placa de crecimiento sigue abierta y sigue siendo vulnerable. La recurrencia es normal hasta la madurez esquelética.',
       ],
       cites: [CITE.wiegerinck],
@@ -86,7 +114,7 @@ export const SEVERS_ES: Guide = {
       paragraphs: [
         'Las taloneras son una de las intervenciones más prácticas para la enfermedad de Sever. Amortiguan el talón, absorben el impacto y reducen las fuerzas de pico que llegan a la placa de crecimiento. El ensayo cruzado de Perhamre encontró que una talonera redujo el dolor en un 80\u00A0por ciento en comparación con una cuña de talón en 51\u00A0niños, lo que sugiere que la absorción del impacto en el talón importa más que simplemente cambiar el ángulo del talón.',
         'En el ensayo factorial de James, las elevaciones de talón (un tipo de plantilla que levanta el talón) mostraron una pequeña ventaja a corto plazo frente a las plantillas prefabricadas a los 2\u00A0meses, pero no a los 12\u00A0meses. Las plantillas a medida no se probaron en ninguno de estos ensayos.',
-        'Un punto de partida razonable es una talonera económica de venta libre, usada en los dos zapatos y durante el deporte. Si no ayuda, un profesional de la salud puede evaluar si una plantilla a medida vale el costo.',
+        '**Un punto de partida razonable es una talonera económica de venta libre, usada en los dos zapatos y durante el deporte.** Si no ayuda, un profesional de la salud puede evaluar si una plantilla a medida vale el costo.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -94,7 +122,7 @@ export const SEVERS_ES: Guide = {
       h2: '¿El estiramiento de pantorrilla ayuda con la enfermedad de Sever?',
       paragraphs: [
         'Las pantorrillas tensas aumentan el tirón sobre la placa de crecimiento, y la rigidez de la pantorrilla es uno de los factores de riesgo reconocidos de la apofisitis calcánea. Estirar el gastrocnemio (el músculo más grande y superficial de la pantorrilla, que se estira con la rodilla estirada) y el sóleo (el músculo más profundo, que se estira con la rodilla doblada) es una recomendación habitual.',
-        'En el ensayo de Wiegerinck, el grupo de ejercicio hizo un programa de fortalecimiento excéntrico de la pantorrilla bajo supervisión de un fisioterapeuta. Este grupo mejoró tanto como los de la plantilla y los de esperar y observar. El estiramiento y el fortalecimiento suave son seguros y pueden ayudar al reducir la tracción sobre la placa de crecimiento, pero la evidencia no muestra que sean mejores que las taloneras o el manejo de la carga por sí solos.',
+        'En el ensayo de Wiegerinck, el grupo de ejercicio hizo un programa de fortalecimiento excéntrico de la pantorrilla bajo supervisión de un fisioterapeuta. Este grupo mejoró tanto como los de la plantilla y los de esperar y observar. El estiramiento y el fortalecimiento suave son seguros y pueden ayudar al reducir la tracción sobre la placa de crecimiento, pero **la evidencia no muestra que sean mejores que las taloneras o el manejo de la carga por sí solos.**',
         'Los ejercicios para niños con apofisitis calcánea deben ser supervisados o enseñados por un profesional de la salud o un fisioterapeuta. La dosis y la progresión dependen de la edad del niño, su nivel de dolor y las exigencias de su deporte. Un niño con dolor agudo que está cojeando necesita descansar primero, no hacer ejercicios.',
       ],
       cites: [CITE.wiegerinck],
@@ -110,7 +138,7 @@ export const SEVERS_ES: Guide = {
       h2: '¿Cuánto dura y vuelve a aparecer?',
       paragraphs: [
         'La enfermedad de Sever normalmente se resuelve en semanas a meses con manejo de la carga y cuidados de soporte. La mayoría de los niños pueden volver al deporte en dos a ocho semanas. El dolor suele desaparecer definitivamente cuando la placa de crecimiento se fusiona en hueso sólido, normalmente entre los 12 y los 17\u00A0años dependiendo del sexo y el ritmo de maduración del niño (revisión de StatPearls, 2024).',
-        'La recurrencia es común y esperada. Cada estirón de crecimiento y cada nueva temporada deportiva pueden traer el dolor de vuelta. La recurrencia no es señal de que el cuidado anterior falló. Es señal de que la placa de crecimiento sigue abierta. Seguir con taloneras, buen calzado y estiramiento de la pantorrilla durante las temporadas deportivas puede reducir la intensidad y la frecuencia de los brotes.',
+        'La recurrencia es común y esperada. Cada estirón de crecimiento y cada nueva temporada deportiva pueden traer el dolor de vuelta. **La recurrencia no es señal de que el cuidado anterior falló.** Es señal de que la placa de crecimiento sigue abierta. Seguir con taloneras, buen calzado y estiramiento de la pantorrilla durante las temporadas deportivas puede reducir la intensidad y la frecuencia de los brotes.',
         'No se han asociado problemas a largo plazo con la enfermedad de Sever. No daña la placa de crecimiento ni afecta la forma final del hueso.',
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

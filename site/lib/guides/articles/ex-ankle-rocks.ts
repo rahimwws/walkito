@@ -30,7 +30,7 @@ export const EX_ANKLE_ROCKS: Guide = {
       paragraphs: [
         'Stand in a split stance, one foot forward and one back, with your hands on a wall or door frame for balance. Keeping the front heel flat on the floor, slowly rock the front knee forward over your toes. Let the knee travel as far as it can while the heel stays down. Then rock back to the start. That is one rep.',
         'The movement is slow and controlled. You are not bouncing. Each rock should take about two seconds forward and two seconds back. The back leg is just for balance. All the ankle work is happening in the front leg.',
-        'Keep the front foot pointing straight ahead. If the foot rotates outward, the ankle finds a shortcut and you miss the range you are trying to build.',
+        '**Keep the front foot pointing straight ahead.** If the foot rotates outward, the ankle finds a shortcut and you miss the range you are trying to build.',
       ],
       exercises: [
         {
@@ -55,8 +55,15 @@ export const EX_ANKLE_ROCKS: Guide = {
       h2: 'Why does ankle mobility matter for heel pain?',
       keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 controls, limited ankle dorsiflexion was a stronger risk factor than BMI or standing time, raising the odds 23.3-fold (Riddle and colleagues, 2003).',
       paragraphs: [
-        'Ankle dorsiflexion is how far the foot can bend upward toward the shin while the heel stays on the ground. Every step you take requires some dorsiflexion. When the ankle cannot bend far enough, the body compensates. The foot may roll inward, the calf takes more strain, and the plantar fascia absorbs forces it was not designed for.',
-        'In the Riddle 2003 case-control study, reduced ankle dorsiflexion was the variable with the largest independent effect, at 23.3 times the odds of developing plantar fasciitis. That was stronger than BMI, standing time or running distance. A tight calf, specifically the gastrocnemius, was present in 52 to 60 percent of 254 people with plantar fasciitis in a separate review.',
+        'Ankle dorsiflexion is how far the foot can bend upward toward the shin while the heel stays on the ground. Every step you take requires some dorsiflexion. When the ankle cannot bend far enough, the body compensates:',
+        {
+          list: [
+            'The foot may roll inward.',
+            'The calf takes more strain.',
+            'The plantar fascia absorbs forces it was not designed for.',
+          ],
+        },
+        'In the Riddle 2003 case-control study, **reduced ankle dorsiflexion was the variable with the largest independent effect**, at 23.3 times the odds of developing plantar fasciitis. That was stronger than BMI, standing time or running distance. A tight calf, specifically the gastrocnemius, was present in 52 to 60 percent of 254 people with plantar fasciitis in a separate review.',
         'Stretching the calf passively (as in the [calf stretch](/exercises/calf-stretch/) and [soleus stretch](/exercises/soleus-stretch/)) addresses one side of the problem: muscle length. Ankle rocks address the other side: active control at end-range. Rocking the knee over the toes under bodyweight teaches the ankle to use the range it has, not just reach it passively.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -66,14 +73,15 @@ export const EX_ANKLE_ROCKS: Guide = {
       paragraphs: [
         'The [calf stretch](/exercises/calf-stretch/) is a passive hold. You lean into the wall and wait for the muscle to lengthen. The back leg is straight, which targets the gastrocnemius. The [soleus stretch](/exercises/soleus-stretch/) does the same with a bent knee.',
         'Ankle rocks are an active, repetitive movement. You push the knee forward, come back, push again. You are loading the ankle through its range rather than holding still at end-range. Ankle rocks build the ability to use dorsiflexion under load, which is what walking and running actually require.',
-        'Both are useful. Stretching opens the range. Ankle rocks train you to use it. The guideline grades calf stretching A. Ankle rocks are part of the ankle mobility work Walkito programs alongside those stretches.',
+        'Both are useful. **Stretching opens the range. Ankle rocks train you to use it.** The guideline grades calf stretching A. Ankle rocks are part of the ankle mobility work Walkito programs alongside those stretches.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'The knee-to-wall test and how it connects',
       paragraphs: [
-        'The knee-to-wall test, also called the weight-bearing lunge test, is a simple way to measure ankle dorsiflexion. You stand facing a wall, one foot a few centimeters back, and lunge the knee forward until it touches the wall. If the heel lifts before the knee reaches the wall, move the foot closer. The distance from the big toe to the wall at the point where the knee just touches, with the heel still flat, is your score.',
+        'The knee-to-wall test, also called the weight-bearing lunge test, is a simple way to measure ankle dorsiflexion.',
+        'You stand facing a wall, one foot a few centimeters back, and lunge the knee forward until it touches the wall. If the heel lifts before the knee reaches the wall, move the foot closer. The distance from the big toe to the wall at the point where the knee just touches, with the heel still flat, is your score.',
         'Walkito includes a knee-to-wall exercise in the app (2 holds of 30 seconds, each leg). Tracking this distance over weeks tells you whether your ankle range is actually improving. An increase of a centimeter or two over a few weeks is meaningful.',
         'Ankle rocks and the knee-to-wall exercise work the same range from different angles. Rocks are repetitions through the range. The knee-to-wall hold is a sustained load at end-range. Both help. Walkito programs them on mobility days.',
       ],
@@ -81,10 +89,14 @@ export const EX_ANKLE_ROCKS: Guide = {
     {
       h2: 'What are the common mistakes with ankle rocks?',
       paragraphs: [
-        'Letting the heel lift. The heel must stay flat throughout every rep. If it lifts, you have passed the end of your range and the exercise loses its point. Rock only as far as the heel allows.',
-        'Turning the foot outward. The foot should point straight ahead. External rotation lets the ankle sidestep its tight spot. Keep the second toe aimed at the wall.',
-        'Going too fast. Bouncing or rushing through reps does not build controlled range. Two seconds forward, two seconds back. Let the ankle feel the end of its range on each rep.',
-        'Skipping the back leg. Some people try to do ankle rocks on both legs at once by just squatting. That divides the load and reduces the range the front ankle has to work through. Use a split stance so one ankle does the work.',
+        {
+          list: [
+            '**Letting the heel lift.** The heel must stay flat throughout every rep. If it lifts, you have passed the end of your range and the exercise loses its point. Rock only as far as the heel allows.',
+            '**Turning the foot outward.** The foot should point straight ahead. External rotation lets the ankle sidestep its tight spot. Keep the second toe aimed at the wall.',
+            '**Going too fast.** Bouncing or rushing through reps does not build controlled range. Two seconds forward, two seconds back. Let the ankle feel the end of its range on each rep.',
+            '**Skipping the back leg.** Some people try to do ankle rocks on both legs at once by just squatting. That divides the load and reduces the range the front ankle has to work through. Use a split stance so one ankle does the work.',
+          ],
+        },
       ],
     },
     {

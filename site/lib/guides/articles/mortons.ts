@@ -28,7 +28,7 @@ export const MORTONS_EN: Guide = {
       h2: "What is Morton's neuroma?",
       figure: { id: 'mortons', caption: 'Morton\'s neuroma is a thickened nerve between the metatarsal heads, most often between the third and fourth toes.', alt: 'Top view of the foot bones with yellow nerves running to the toes and a swollen oval on the nerve between the third and fourth toes.' },
       paragraphs: [
-        "Morton's neuroma is a benign thickening of the common plantar digital nerve, usually in the third intermetatarsal space (between the third and fourth toes). Less often, it occurs in the second space. It is not cancer and it is not a growth on the bone.",
+        "Morton's neuroma is a benign thickening of the common plantar digital nerve, usually in the third intermetatarsal space (between the third and fourth toes). Less often, it occurs in the second space. **It is not cancer and it is not a growth on the bone.**",
         'The nerve runs under the transverse metatarsal ligament, a band of tissue that holds the metatarsal heads together. When the heads compress, the nerve gets pinched. Over time, the nerve sheath thickens, and the nerve itself can become enlarged. The result is pain, burning, tingling, or numbness in the webspace that radiates into the affected toes.',
         'It is more common in women, partly because of shoe choice. Narrow-toed shoes and high heels push the metatarsal heads together and increase pressure on the nerve. Running, court sports, and occupations that involve prolonged standing in tight footwear are also risk factors.',
       ],
@@ -37,8 +37,15 @@ export const MORTONS_EN: Guide = {
       h2: "How is Morton's neuroma different from metatarsalgia?",
       paragraphs: [
         "Metatarsalgia is a broader term that means pain around the metatarsal heads, the bony knuckles at the [ball of the foot](/ball-of-foot-pain/). Morton's neuroma is one specific cause of forefoot pain, and it sits under the metatarsalgia umbrella.",
-        "The key difference is what hurts and how. Metatarsalgia is typically a dull-to-sharp ache under the ball of the foot, often under the second and third metatarsal heads. Morton's neuroma produces burning, tingling, or numbness between the toes, most often the third and fourth. Squeezing the forefoot together, called Mulder's click test, can reproduce the neuroma symptoms and sometimes produces an audible click as the nerve snaps between the metatarsals.",
-        "The distinction matters because the approaches differ. Metatarsalgia responds to offloading the metatarsal heads and strengthening the toes. Morton's neuroma responds to decompressing the nerve, which means wider shoes, pads, and sometimes injections or surgery. Exercises help forefoot comfort in both, but neither condition has strong exercise-specific trial evidence. See [ball of foot pain](/ball-of-foot-pain/) for more on the broader metatarsalgia picture.",
+        'The key difference is what hurts and how:',
+        {
+          list: [
+            '**Metatarsalgia** is typically a dull-to-sharp ache under the ball of the foot, often under the second and third metatarsal heads.',
+            "**Morton's neuroma** produces burning, tingling, or numbness between the toes, most often the third and fourth. Squeezing the forefoot together, called Mulder's click test, can reproduce the neuroma symptoms and sometimes produces an audible click as the nerve snaps between the metatarsals.",
+          ],
+        },
+        "The distinction matters because the approaches differ. Metatarsalgia responds to offloading the metatarsal heads and strengthening the toes. Morton's neuroma responds to decompressing the nerve, which means wider shoes, pads, and sometimes injections or surgery.",
+        "Exercises help forefoot comfort in both, but neither condition has strong exercise-specific trial evidence. See [ball of foot pain](/ball-of-foot-pain/) for more on the broader metatarsalgia picture.",
       ],
     },
     {
@@ -47,7 +54,7 @@ export const MORTONS_EN: Guide = {
       paragraphs: [
         "Wider shoes with a low heel and a metatarsal pad are the most commonly recommended first step for Morton's neuroma. The pad is placed just behind the metatarsal heads, not directly under them, to lift the shaft of the metatarsals and spread them apart, reducing compression on the nerve.",
         'Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. Combining those two studies, footwear and padding were successful in about 32 percent of people at a follow-up averaging four and a half months. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.',
-        'The practical takeaway: shoe changes and pads are low-risk and worth trying first. They work for some people and not others. If they have not helped after four to six weeks, the next step is usually a clinician visit to discuss injections or further imaging.',
+        'The practical takeaway: **shoe changes and pads are low-risk and worth trying first.** They work for some people and not others. If they have not helped after four to six weeks, the next step is usually a clinician visit to discuss injections or further imaging.',
         "Placement matters. A pad too far forward, directly under the metatarsal head, can increase pressure rather than relieve it. Stick-on metatarsal pads from a pharmacy are cheap enough to try, but positioning takes some experimenting. A podiatrist can fit a custom orthosis if off-the-shelf pads are not working.",
       ],
       cites: [CITE.matthewsSR],
@@ -56,9 +63,18 @@ export const MORTONS_EN: Guide = {
       h2: 'What does the injection evidence say?',
       keyFact: 'In the 2024 Cochrane review, ultrasound-guided corticosteroid injection probably improved pain more than unguided injection, with moderate-certainty evidence at 2, 6 and 12 months (Matthews and colleagues, 2024).',
       paragraphs: [
-        "Corticosteroid injection is the most studied non-surgical invasive approach for Morton's neuroma. The 2024 Cochrane review included six RCTs with 373 participants. It found low-certainty evidence that adding a corticosteroid to a local anaesthetic may result in little to no difference in pain or function at three to six months compared with local anaesthetic injection alone. The Cochrane authors noted that adding a corticosteroid may increase adverse events, including fat pad atrophy and skin changes.",
+        "Corticosteroid injection is the most studied non-surgical invasive approach for Morton's neuroma.",
+        "The 2024 Cochrane review included six RCTs with 373 participants. It found low-certainty evidence that adding a corticosteroid to a local anaesthetic may result in little to no difference in pain or function at three to six months compared with local anaesthetic injection alone. The Cochrane authors noted that adding a corticosteroid may increase adverse events, including fat pad atrophy and skin changes.",
         'Ultrasound-guided injection probably improves pain compared with unguided injection, with clinically meaningful differences at 2, 6, and 12 months in the included studies. The evidence was graded moderate-certainty.',
-        "Other injection types have been studied, including alcohol sclerosing injections, radiofrequency ablation, and cryotherapy. The 2019 systematic review found corticosteroid injection and manipulation had the strongest evidence for short-term pain reduction, but called for more high-quality RCTs. The 2024 Cochrane review concluded the same: after 20 additional years of research since the first Cochrane review in 2004, there is still insufficient high-quality evidence to reach firm conclusions about any single intervention.",
+        'Other injection types have been studied, including:',
+        {
+          list: [
+            'Alcohol sclerosing injections.',
+            'Radiofrequency ablation.',
+            'Cryotherapy.',
+          ],
+        },
+        "The 2019 systematic review found corticosteroid injection and manipulation had the strongest evidence for short-term pain reduction, but called for more high-quality RCTs. The 2024 Cochrane review concluded the same: after 20 additional years of research since the first Cochrane review in 2004, **there is still insufficient high-quality evidence to reach firm conclusions about any single intervention.**",
         "This does not mean injections are useless. It means the evidence is not strong enough to declare one approach clearly better than another. A clinician can discuss the options, risks, and what to expect. Corticosteroid injection provides good short-term relief for many people, but repeated injections carry risks to the surrounding tissue.",
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -68,15 +84,16 @@ export const MORTONS_EN: Guide = {
       paragraphs: [
         "Surgery is usually considered when conservative management, meaning shoe changes, padding, and one or two rounds of injection, has not provided lasting relief. The most common procedure is neurectomy, surgical removal of the thickened nerve segment. It is effective for many people but leaves permanent numbness between the affected toes, because the nerve that carried sensation there is gone.",
         "Other surgical options include nerve decompression (releasing the transverse metatarsal ligament without removing the nerve) and metatarsal osteotomy (reshaping the bone to give the nerve more space). The 2024 Cochrane review found low-certainty evidence for surgical comparisons, with no clear winner between plantar and dorsal incision neurectomy for patient satisfaction or adverse events.",
-        "Surgery is not a first-line approach. Most clinicians recommend a structured trial of conservative management for several months before considering it. If you are at that point, a foot and ankle specialist can walk you through the surgical options and what to expect for recovery.",
+        "**Surgery is not a first-line approach.** Most clinicians recommend a structured trial of conservative management for several months before considering it. If you are at that point, a foot and ankle specialist can walk you through the surgical options and what to expect for recovery.",
       ],
       cites: [CITE.matthewsCochrane],
     },
     {
       h2: "Do exercises help Morton's neuroma?",
       paragraphs: [
-        "The honest answer is that no trial has tested exercise for Morton's neuroma. Exercise does not act on the nerve directly. It cannot shrink a neuroma or decompress the intermetatarsal space the way a wider shoe or a metatarsal pad can.",
-        "What exercise can do is improve general forefoot comfort and load distribution. Strengthening the intrinsic foot muscles, the small muscles between and under the metatarsals, may help the metatarsal heads sit in a more spread position during walking. Calf stretching reduces forefoot overload by improving ankle dorsiflexion. These are comfort and load-management exercises, not neuroma-specific interventions. We say so plainly because overstating the role of exercise here would not be honest.",
+        "The honest answer is that **no trial has tested exercise for Morton's neuroma.** Exercise does not act on the nerve directly. It cannot shrink a neuroma or decompress the intermetatarsal space the way a wider shoe or a metatarsal pad can.",
+        "What exercise can do is improve general forefoot comfort and load distribution. Strengthening the intrinsic foot muscles, the small muscles between and under the metatarsals, may help the metatarsal heads sit in a more spread position during walking. Calf stretching reduces forefoot overload by improving ankle dorsiflexion.",
+        "These are comfort and load-management exercises, not neuroma-specific interventions. We say so plainly because overstating the role of exercise here would not be honest.",
         "If your forefoot pain is broader than the neuroma, meaning you also have general metatarsalgia or calf tightness, the exercises on the [ball of foot pain](/ball-of-foot-pain/) page are relevant. The exercises below are drawn from the same pool but listed here for convenience.",
       ],
       exercises: [
@@ -131,7 +148,15 @@ export const MORTONS_EN: Guide = {
       h2: 'What the evidence does and does not tell us',
       paragraphs: [
         "The 2024 Cochrane review is the most rigorous summary available. It included six RCTs with 373 participants. Its conclusions: there is low-to-moderate-certainty evidence for most Morton's neuroma interventions, and no single treatment has strong, high-certainty support. After 20 years of additional research since the original 2004 Cochrane review, the authors reached the same basic conclusion.",
-        'That does not mean nothing works. Shoe changes and metatarsal pads help about 3 in 10 people. Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection. Neurectomy relieves pain for many people but carries the trade-off of permanent numbness. What is missing is a clear first-line treatment backed by strong evidence.',
+        'That does not mean nothing works:',
+        {
+          list: [
+            'Shoe changes and metatarsal pads help about 3 in 10 people.',
+            'Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection.',
+            'Neurectomy relieves pain for many people but carries the trade-off of permanent numbness.',
+          ],
+        },
+        '**What is missing is a clear first-line treatment backed by strong evidence.**',
         "For exercise, the gap is even wider. No trial has tested exercise for Morton's neuroma. The exercises on this page are comfort and load-management measures, not neuroma-specific interventions. If exercise is part of your plan, it should sit alongside shoe changes and clinical advice, not replace them.",
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],

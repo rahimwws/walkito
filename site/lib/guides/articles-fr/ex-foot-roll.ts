@@ -29,7 +29,8 @@ export const EX_FOOT_ROLL_FR: Guide = {
     {
       h2: 'Comment faire un massage du pied avec une balle\u00A0?',
       paragraphs: [
-        'Asseyez-vous sur une chaise, un pied posé sur une balle. Une balle de tennis, une balle de lacrosse ou une balle de massage conviennent. Placez la balle sous la voûte et faites-la rouler lentement de l’avant du pied vers le talon, puis de nouveau vers l’avant. Appuyez fermement, pas légèrement. La balle doit s’enfoncer assez dans le tissu pour que vous sentiez une pression profonde et soutenue.',
+        'Asseyez-vous sur une chaise, un pied posé sur une balle. Une balle de tennis, une balle de lacrosse ou une balle de massage conviennent. Placez la balle sous la voûte et faites-la rouler lentement de l’avant du pied vers le talon, puis de nouveau vers l’avant.',
+        'Appuyez fermement, pas légèrement. La balle doit s’enfoncer assez dans le tissu pour que vous sentiez une pression profonde et soutenue.',
         'Faites rouler environ 2\u00A0minutes par pied. Gardez une pression régulière et évitez les points qui font mal de façon vive. Si un point vous fait grimacer, appuyez moins ou passez-le. Le but est un massage ferme, pas la douleur.',
       ],
       exercises: [
@@ -54,7 +55,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
       h2: 'Faire rouler une balle sous le pied aide-t-il en cas de fasciite plantaire\u00A0?',
       paragraphs: [
         'Les kinésithérapeutes et les podologues conseillent largement ce massage dans la prise en charge de la fasciite plantaire. L’idée est qu’il agit comme un automassage\u00A0: il applique une pression le long du fascia, peut augmenter localement la circulation sanguine et peut réduire la sensation de raideur. Les patients rapportent souvent un soulagement à court terme après le massage.',
-        'Cela dit, aucun essai randomisé n’a testé ce massage comme intervention seule dans la fasciite plantaire. Il figure dans des protocoles avec les étirements et le renforcement, mais ce n’est jamais lui qui est mesuré. La recommandation de 2023 ne lui donne pas de note à part. Ce sont les étirements et le renforcement qui portent les preuves.',
+        'Cela dit, **aucun essai randomisé n’a testé ce massage comme intervention seule dans la fasciite plantaire.** Il figure dans des protocoles avec les étirements et le renforcement, mais ce n’est jamais lui qui est mesuré. La recommandation de 2023 ne lui donne pas de note à part. Ce sont les étirements et le renforcement qui portent les preuves.',
         'Le massage entre dans la catégorie de la récupération. Il est utile après une longue journée debout, après une séance de montées sur pointes, ou dès que la plante semble raide et douloureuse. Il ne remplace pas l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/), l’[étirement du mollet](/fr/exercices/etirement-mollet/) ni les [montées sur pointes](/fr/exercices/montees-sur-pointes/), qui ont les notes de la recommandation.',
       ],
       cites: [CITE.guideline],
@@ -63,14 +64,21 @@ export const EX_FOOT_ROLL_FR: Guide = {
       h2: 'Faut-il utiliser une bouteille d’eau congelée\u00A0?',
       paragraphs: [
         'La bouteille d’eau congelée est l’un des remèdes maison les plus populaires contre la fasciite plantaire. Sa forme permet de faire rouler toute la longueur de la plante, et le froid engourdit la zone en même temps. Les professionnels de santé la conseillent souvent, et c’est agréable.',
-        'Voici ce que disent vraiment les données. Le froid (glace, bouteille congelée) est un outil général de gestion de la douleur. Il réduit l’inconfort en engourdissant les terminaisons nerveuses et peut réduire temporairement un gonflement. Mais aucun essai randomisé n’a comparé une bouteille congelée à une bouteille à température ambiante dans la fasciite plantaire. Le soulagement ressenti vient sans doute à la fois du roulement (pression sur le fascia) et de l’engourdissement (froid sur les terminaisons nerveuses). Savoir si le froid accélère la récupération au-delà du roulement seul reste une question ouverte.',
-        'Si une bouteille congelée vous soulage, utilisez-la. Ne comptez simplement pas sur le froid pour remplacer les étirements et le renforcement. Et évitez d’appliquer du froid plus de 15 à 20\u00A0minutes d’affilée. Un froid prolongé peut irriter la peau.',
+        'Voici ce que disent vraiment les données. Le froid (glace, bouteille congelée) est un outil général de gestion de la douleur. Il réduit l’inconfort en engourdissant les terminaisons nerveuses et peut réduire temporairement un gonflement.',
+        'Mais aucun essai randomisé n’a comparé une bouteille congelée à une bouteille à température ambiante dans la fasciite plantaire. Le soulagement ressenti vient sans doute à la fois du roulement (pression sur le fascia) et de l’engourdissement (froid sur les terminaisons nerveuses). Savoir si le froid accélère la récupération au-delà du roulement seul reste une question ouverte.',
+        'Si une bouteille congelée vous soulage, utilisez-la. **Ne comptez simplement pas sur le froid pour remplacer les étirements et le renforcement.** Et évitez d’appliquer du froid plus de 15 à 20\u00A0minutes d’affilée. Un froid prolongé peut irriter la peau.',
       ],
     },
     {
       h2: 'Quelle balle utiliser\u00A0?',
       paragraphs: [
-        'La balle de tennis est le point de départ le plus courant. Elle est assez souple pour s’enfoncer dans la voûte sans faire mal de façon vive. Une balle de lacrosse est plus ferme et appuie davantage. Une balle de golf est petite et très dure, et peut être trop forte pour un talon douloureux.',
+        {
+          list: [
+            'La balle de tennis est le point de départ le plus courant. Elle est assez souple pour s’enfoncer dans la voûte sans faire mal de façon vive.',
+            'Une balle de lacrosse est plus ferme et appuie davantage.',
+            'Une balle de golf est petite et très dure, et peut être trop forte pour un talon douloureux.',
+          ],
+        },
         'Commencez avec ce que vous avez. Si une balle de tennis vous paraît trop souple après quelques séances, essayez une balle de lacrosse. Si vous grimacez avec n’importe quelle balle, elle est trop dure ou vous appuyez trop fort. L’exercice doit ressembler à un massage profond, jamais à une friction sur une blessure.',
         'Une bouteille d’eau congelée remplace la balle et ajoute du froid. Un rouleau en mousse sous le pied est encore plus doux. Un rouleau de massage pour le pied acheté en magasin de sport fait le même travail. Aucun n’a fait la preuve qu’il soit plus efficace que les autres.',
       ],
@@ -78,9 +86,13 @@ export const EX_FOOT_ROLL_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec le massage avec une balle\u00A0?',
       paragraphs: [
-        'Appuyer trop fort. Plus fort n’est pas mieux. Si vous poussez jusqu’à une douleur de 6/10 ou jusqu’à grimacer, vous irritez peut-être le fascia au lieu de l’apaiser. Revenez à une pression ferme et régulière.',
-        'Rouler trop vite. Des allers-retours rapides survolent le tissu. Roulez lentement, environ un passage complet par seconde, pour que chaque point reçoive une pression soutenue.',
-        'En faire votre seul exercice. Le massage donne l’impression d’être utile, et il se fait facilement au bureau. Mais il ne renforce pas le mollet et n’étire pas le fascia comme le font les exercices notés par la recommandation. Associez-le à l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et aux [montées sur pointes](/fr/montees-sur-pointes-fasciite-plantaire/) pour une approche complète.',
+        {
+          list: [
+            '**Appuyer trop fort.** Plus fort n’est pas mieux. Si vous poussez jusqu’à une douleur de 6/10 ou jusqu’à grimacer, vous irritez peut-être le fascia au lieu de l’apaiser. Revenez à une pression ferme et régulière.',
+            '**Rouler trop vite.** Des allers-retours rapides survolent le tissu. Roulez lentement, environ un passage complet par seconde, pour que chaque point reçoive une pression soutenue.',
+            '**En faire votre seul exercice.** Le massage donne l’impression d’être utile, et il se fait facilement au bureau. Mais il ne renforce pas le mollet et n’étire pas le fascia comme le font les exercices notés par la recommandation. Associez-le à l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et aux [montées sur pointes](/fr/montees-sur-pointes-fasciite-plantaire/) pour une approche complète.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -88,7 +100,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
       h2: 'Quand masser le pied avec une balle, et quand s’en passer\u00A0?',
       paragraphs: [
         'Faites-le après une longue journée debout, après une séance de montées sur pointes, ou dès que la plante semble raide. Dans Walkito, le massage avec une balle apparaît les jours de récupération et en fin de séance comme retour au calme.',
-        'Passez-vous-en si le talon est gonflé, rouge ou chaud de façon aiguë. Ces signes peuvent évoquer autre chose qu’une fasciite plantaire, et appuyer sur une zone enflammée peut l’aggraver. Consultez d’abord un professionnel de santé. Pour l’ensemble des exercices conseillés par la recommandation, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
+        '**Passez-vous-en si le talon est gonflé, rouge ou chaud de façon aiguë.** Ces signes peuvent évoquer autre chose qu’une fasciite plantaire, et appuyer sur une zone enflammée peut l’aggraver. Consultez d’abord un professionnel de santé. Pour l’ensemble des exercices conseillés par la recommandation, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
       ],
     },
   ],

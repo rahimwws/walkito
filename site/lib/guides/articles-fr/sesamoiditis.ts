@@ -44,7 +44,7 @@ export const SESAMOIDITIS_FR: Guide = {
       keyFact: 'Environ 1\u00A0personne sur 10 a un sésamoïde bipartite, une variante normale qui peut ressembler à une fracture à la radio mais dont les bords sont lisses et arrondis plutôt qu’irréguliers (Yammine, 2015).',
       paragraphs: [
         'La sésamoïdite est un problème de surcharge. La douleur apparaît peu à peu et se fait sentir pendant l’activité. Une fracture du sésamoïde est une fissure de l’os, en général due à un événement aigu unique ou à une contrainte chronique. La douleur d’une fracture tend à être plus vive et peut être présente même au repos.',
-        'Une difficulté vient du fait qu’environ 1\u00A0personne sur 10 a un sésamoïde bipartite, c’est-à-dire un sésamoïde médial naturellement en deux morceaux. À la radio, un sésamoïde bipartite ressemble à une fracture. La différence est dans les bords\u00A0: ceux d’un sésamoïde bipartite sont lisses et arrondis, ceux d’une fracture sont irréguliers. Votre professionnel de santé peut aussi faire une radio de l’autre pied pour comparer.',
+        'Une difficulté vient du fait qu’environ 1\u00A0personne sur 10 a un sésamoïde bipartite, c’est-à-dire un sésamoïde médial naturellement en deux morceaux. À la radio, un sésamoïde bipartite ressemble à une fracture. La différence est dans les bords\u00A0: **ceux d’un sésamoïde bipartite sont lisses et arrondis, ceux d’une fracture sont irréguliers.** Votre professionnel de santé peut aussi faire une radio de l’autre pied pour comparer.',
         'Si la radio n’est pas claire, une scintigraphie osseuse ou une IRM peut confirmer le diagnostic. L’IRM montre un œdème de la moelle osseuse, un gonflement à l’intérieur de l’os, présent dans la plupart des cas de sésamoïdite. L’IRM est en général réservée aux cas où les symptômes persistent malgré la prise en charge initiale.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -53,7 +53,15 @@ export const SESAMOIDITIS_FR: Guide = {
       h2: 'À quoi ressemble la prise en charge conservatrice\u00A0?',
       keyFact: 'Une revue de 2025 regroupant 11\u00A0études et 59\u00A0patients a montré que les scores de douleur s’amélioraient dans environ 66\u00A0% des cas pris en charge de façon conservatrice, mais les récidives étaient fréquentes (Biz et coll., 2025).',
       paragraphs: [
-        'La revue systématique de 2025 de Biz et coll. a regroupé les données individuelles de 11\u00A0études portant sur 59\u00A0patients. Les traitements les plus fréquents étaient les orthèses, l’adaptation de l’activité et les infiltrations de corticoïde. Les scores de douleur se sont améliorés dans environ 66\u00A0% des cas, mais les récidives étaient fréquentes et certains patients gardaient des symptômes.',
+        'La revue systématique de 2025 de Biz et coll. a regroupé les données individuelles de 11\u00A0études portant sur 59\u00A0patients. Les traitements les plus fréquents étaient\u00A0:',
+        {
+          list: [
+            'Les orthèses.',
+            'L’adaptation de l’activité.',
+            'Les infiltrations de corticoïde.',
+          ],
+        },
+        '**Les scores de douleur se sont améliorés dans environ 66\u00A0% des cas, mais les récidives étaient fréquentes** et certains patients gardaient des symptômes.',
         'La revue a montré que les orthèses et la décharge étaient utilisées dans presque tous les cas. Les infiltrations de corticoïde soulageaient à court terme mais comportaient un risque de récidive. Aucun traitement n’a été comparé à un autre dans un essai randomisé. Les auteurs ont conclu qu’il faut des protocoles standardisés et des études de meilleure qualité.',
         'La chirurgie, en général une sésamoïdectomie partielle ou totale (ablation de l’os), n’est envisagée que lorsque plusieurs mois de soins conservateurs n’ont pas aidé. La plupart des professionnels de santé essaient d’abord au moins trois à six mois de prise en charge non chirurgicale.',
       ],
@@ -65,7 +73,7 @@ export const SESAMOIDITIS_FR: Guide = {
       h2: 'Qu’est-ce qu’un coussinet de danseur et comment agit-il\u00A0?',
       paragraphs: [
         'Un coussinet de danseur est un coussinet plat en feutre ou en mousse avec une découpe en U sous la tête du premier métatarsien. La découpe se place juste sous la zone des sésamoïdes, de sorte que le coussinet soulève l’avant-pied autour tout en soulageant la pression directe sur le point douloureux. Le nom vient de la danse classique, où l’avant-pied est chargé à l’extrême.',
-        'Vous pouvez acheter des coussinets de danseur prédécoupés ou en faire découper un à la forme de votre pied par un professionnel de santé. L’emplacement compte\u00A0: la découpe doit se trouver juste sous les sésamoïdes, ni trop en avant ni trop en arrière. Certaines personnes glissent le coussinet dans la chaussure\u00A0; d’autres le font intégrer à une semelle sur mesure.',
+        'Vous pouvez acheter des coussinets de danseur prédécoupés ou en faire découper un à la forme de votre pied par un professionnel de santé. L’emplacement compte\u00A0: **la découpe doit se trouver juste sous les sésamoïdes**, ni trop en avant ni trop en arrière. Certaines personnes glissent le coussinet dans la chaussure\u00A0; d’autres le font intégrer à une semelle sur mesure.',
         'Une chaussure à semelle rigide ou à semelle en bascule réduit la flexion de l’articulation du gros orteil pendant la poussée, ce qui limite la charge sur les sésamoïdes. Éviter les chaussures souples à semelle fine et les talons hauts pendant la période douloureuse aide pour la même raison.',
       ],
     },
@@ -73,7 +81,15 @@ export const SESAMOIDITIS_FR: Guide = {
       h2: 'Les chaussures comptent-elles\u00A0?',
       paragraphs: [
         'Les chaussures jouent un rôle d’appoint. Une chaussure à semelle rigide limite le mouvement de la première articulation métatarso-phalangienne (l’articulation du gros orteil), ce qui réduit directement la contrainte sur les sésamoïdes. Les semelles en bascule font la même chose en faisant rouler le pied pendant la poussée sans obliger l’orteil à se plier.',
-        'Évitez les chaussures souples à l’avant, très plates ou à semelle fine. Les talons hauts reportent le poids vers l’avant, sur l’avant-pied, et augmentent la charge sur les sésamoïdes. Si la course a déclenché le problème, passer temporairement à une chaussure avec plus d’amorti à l’avant et une semelle plus épaisse peut aider le temps que les symptômes se calment.',
+        'Évitez les chaussures\u00A0:',
+        {
+          list: [
+            'Souples à l’avant.',
+            'Très plates.',
+            'À semelle fine.',
+          ],
+        },
+        'Les talons hauts reportent le poids vers l’avant, sur l’avant-pied, et augmentent la charge sur les sésamoïdes. Si la course a déclenché le problème, passer temporairement à une chaussure avec plus d’amorti à l’avant et une semelle plus épaisse peut aider le temps que les symptômes se calment.',
         'Ces changements seuls ne régleront pas le problème si l’irritation de fond est importante, mais ils réduisent la charge qui a causé le problème au départ.',
       ],
     },
@@ -82,14 +98,14 @@ export const SESAMOIDITIS_FR: Guide = {
       paragraphs: [
         'La réponse honnête est que l’exercice a un rôle limité dans la prise en charge de la sésamoïdite elle-même. Contrairement à la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou à la [tendinite d’Achille](/fr/tendinite-achille-exercices/), où les programmes de mise en charge ont un bon appui dans les essais, il n’existe aucun essai sur l’exercice dans la sésamoïdite. La revue systématique de 2025 n’a identifié aucune étude testant un protocole d’exercices précis.',
         'Ce que l’exercice peut aider, c’est le contexte. Un mollet raide reporte le poids sur l’avant-pied pendant la marche. Étirer le gastrocnémien et le soléaire peut réduire cette charge vers l’avant. Des muscles propres au pied faibles peuvent aussi contribuer à une répartition inégale de la pression sous l’avant-pied. Écarter les orteils et travailler le pied court peut aider à mieux répartir la charge sur les têtes des métatarsiens, même si cela n’a pas été testé spécifiquement dans la sésamoïdite.',
-        'Si vous sortez d’une sésamoïdite et avez perdu de la force dans les orteils ou de la souplesse dans le mollet pendant la période de repos, des exercices doux pour l’[avant-pied](/fr/metatarsalgie-douleur-avant-pied/) peuvent faire partie d’un plan de reprise. Mais la décharge et l’adaptation de l’activité sont les outils principaux, pas l’exercice.',
+        'Si vous sortez d’une sésamoïdite et avez perdu de la force dans les orteils ou de la souplesse dans le mollet pendant la période de repos, des exercices doux pour l’[avant-pied](/fr/metatarsalgie-douleur-avant-pied/) peuvent faire partie d’un plan de reprise. Mais **la décharge et l’adaptation de l’activité sont les outils principaux, pas l’exercice.**',
       ],
     },
     {
       h2: 'Quel lien avec les autres problèmes de l’avant-pied\u00A0?',
       paragraphs: [
         'La douleur de la sésamoïdite se situe sous le gros orteil, ce qui la distingue de la [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) plus générale (métatarsalgie), où la douleur se trouve en général sous les têtes du deuxième et du troisième métatarsien. Le [névrome de Morton](/fr/nevrome-de-morton/) donne des fourmillements ou une brûlure entre le troisième et le quatrième orteil, pas sous le gros orteil.',
-        'La goutte peut aussi toucher l’articulation du gros orteil et ressembler au début à une sésamoïdite, mais elle arrive brutalement, souvent en une nuit, avec rougeur, gonflement et chaleur. La sésamoïdite s’installe peu à peu. Si le début a été brutal et que l’articulation est rouge et chaude, consultez un professionnel de santé pour écarter une goutte ou une infection.',
+        'La goutte peut aussi toucher l’articulation du gros orteil et ressembler au début à une sésamoïdite, mais elle arrive brutalement, souvent en une nuit, avec rougeur, gonflement et chaleur. La sésamoïdite s’installe peu à peu. **Si le début a été brutal et que l’articulation est rouge et chaude, consultez un professionnel de santé pour écarter une goutte ou une infection.**',
         'L’hallux rigidus, une raideur avec arthrose de l’articulation du gros orteil, peut aussi faire mal à un endroit proche, mais il touche l’articulation elle-même plutôt que les sésamoïdes situés dessous.',
       ],
     },

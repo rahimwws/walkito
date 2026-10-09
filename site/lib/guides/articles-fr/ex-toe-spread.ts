@@ -37,7 +37,8 @@ export const EX_TOE_SPREAD_FR: Guide = {
       h2: 'Comment faire l’exercice pour écarter les orteils\u00A0?',
       paragraphs: [
         'Asseyez-vous pieds nus, les pieds à plat au sol. Écartez les cinq orteils aussi loin que possible, comme si vous vouliez mettre de l’espace entre chaque orteil. Tenez la position la plus large, puis relâchez. C’est une répétition.',
-        'Il ne s’agit pas de lever les orteils. Gardez-les au sol et concentrez-vous sur l’écartement vers l’extérieur. N’appuyez pas les orteils dans le sol et ne les recroquevillez pas. Si seuls quelques orteils bougent, c’est normal au début. Le gros orteil et le petit orteil bougent en général en premier. Les trois orteils du milieu suivent souvent une fois que les muscles sont plus forts.',
+        'Il ne s’agit pas de lever les orteils. Gardez-les au sol et concentrez-vous sur l’écartement vers l’extérieur. N’appuyez pas les orteils dans le sol et ne les recroquevillez pas.',
+        'Si seuls quelques orteils bougent, c’est normal au début. Le gros orteil et le petit orteil bougent en général en premier. Les trois orteils du milieu suivent souvent une fois que les muscles sont plus forts.',
       ],
       exercises: [
         {
@@ -60,7 +61,15 @@ export const EX_TOE_SPREAD_FR: Guide = {
       keyFact: 'Une étude IRM de 2016 a montré qu’écarter les orteils n’activait l’abducteur de l’hallux qu’à 18,9\u00A0%, contre 29,7\u00A0% pendant l’exercice du pied court, dans le même petit groupe de sportifs (Gooding et coll., 2016).',
       paragraphs: [
         'Écarter les orteils cible deux muscles en particulier. L’abducteur de l’hallux longe le bord interne du pied et tire le gros orteil vers l’intérieur (vers l’axe du corps). C’est aussi l’un des principaux soutiens de la voûte longitudinale interne. L’abducteur du petit orteil longe le bord externe et tire le petit orteil vers l’extérieur.',
-        'Une étude IRM de 2016 de Gooding et coll. a testé quatre exercices des muscles intrinsèques du pied et mesuré l’activation de chaque muscle. L’exercice pour écarter les orteils a produit sa plus forte activation dans l’abducteur du petit orteil (35,2\u00A0%), suivi du chef oblique de l’adducteur de l’hallux (31,5\u00A0%) et du court fléchisseur du petit orteil (30,2\u00A0%). L’activation de l’abducteur de l’hallux en écartant les orteils (18,9\u00A0%) était plus faible que pendant l’exercice du pied court (29,7\u00A0%).',
+        'Une étude IRM de 2016 de Gooding et coll. a testé quatre exercices des muscles intrinsèques du pied et mesuré l’activation de chaque muscle. L’exercice pour écarter les orteils a produit sa plus forte activation dans ces muscles\u00A0:',
+        {
+          list: [
+            'L’abducteur du petit orteil (35,2\u00A0%).',
+            'Le chef oblique de l’adducteur de l’hallux (31,5\u00A0%).',
+            'Le court fléchisseur du petit orteil (30,2\u00A0%).',
+          ],
+        },
+        'L’activation de l’abducteur de l’hallux en écartant les orteils (18,9\u00A0%) était plus faible que pendant l’exercice du pied court (29,7\u00A0%).',
         'Écarter les orteils et l’[exercice du pied court](/fr/exercices/pied-court/) se complètent donc. Le pied court cible les muscles qui longent la voûte. Écarter les orteils cible les muscles des bords. Ensemble, ils couvrent une plus grande partie du groupe des muscles intrinsèques du pied.',
       ],
       cites: [CITE.gooding],
@@ -68,8 +77,13 @@ export const EX_TOE_SPREAD_FR: Guide = {
     {
       h2: 'À qui l’exercice pour écarter les orteils profite-t-il\u00A0?',
       paragraphs: [
-        'Les personnes aux pieds plats en profitent, car écarter les orteils active plusieurs des petits muscles qui partagent avec l’abducteur de l’hallux le travail de soutien de la voûte. Les personnes avec un hallux valgus (oignon) peuvent en profiter, car l’exercice entraîne des muscles qui éloignent le gros orteil des autres orteils, à l’opposé de la déviation vers l’intérieur d’un hallux valgus. Une autre étude EMG chez des personnes avec un hallux valgus léger a trouvé une activité de l’abducteur de l’hallux plus élevée en écartant les orteils que pendant l’exercice du pied court, mais cette étude ne figure pas encore dans la liste des sources de ce site.',
-        'Les coureurs et les personnes qui passent de longues heures debout peuvent intégrer l’exercice pour écarter les orteils à une routine de renforcement du pied. Des orteils capables de s’écarter répartissent la charge plus uniformément sur l’avant du pied pendant la poussée. Si vos orteils sont serrés par des chaussures étroites, l’exercice aide à retrouver de l’amplitude.',
+        {
+          list: [
+            '**Pieds plats.** Les personnes aux pieds plats en profitent, car écarter les orteils active plusieurs des petits muscles qui partagent avec l’abducteur de l’hallux le travail de soutien de la voûte.',
+            '**Hallux valgus.** Les personnes avec un hallux valgus (oignon) peuvent en profiter, car l’exercice entraîne des muscles qui éloignent le gros orteil des autres orteils, à l’opposé de la déviation vers l’intérieur d’un hallux valgus. Une autre étude EMG chez des personnes avec un hallux valgus léger a trouvé une activité de l’abducteur de l’hallux plus élevée en écartant les orteils que pendant l’exercice du pied court, mais cette étude ne figure pas encore dans la liste des sources de ce site.',
+            '**Coureurs et longues heures debout.** Les coureurs et les personnes qui passent de longues heures debout peuvent intégrer l’exercice pour écarter les orteils à une routine de renforcement du pied. Des orteils capables de s’écarter répartissent la charge plus uniformément sur l’avant du pied pendant la poussée. Si vos orteils sont serrés par des chaussures étroites, l’exercice aide à retrouver de l’amplitude.',
+          ],
+        },
         'Pour un programme plus large, voir [exercices pour pieds plats](/fr/exercices-pieds-plats/) ou [douleur de l’avant du pied](/fr/metatarsalgie-douleur-avant-pied/).',
       ],
       cites: [CITE.gooding],
@@ -77,10 +91,14 @@ export const EX_TOE_SPREAD_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’exercice pour écarter les orteils\u00A0?',
       paragraphs: [
-        'L’erreur la plus fréquente est de lever les orteils du sol au lieu de les écarter sur le côté. Le but est un écartement horizontal, pas une levée verticale. Gardez les orteils en léger contact avec le sol.',
-        'Une autre erreur est de recroqueviller les orteils en essayant de les écarter. Cela arrive quand le cerveau ne sait pas encore séparer le mouvement d’écartement du mouvement de flexion. Cela s’améliore avec l’entraînement. Essayez d’écarter les orteils en les regardant, pour voir ce qui se passe vraiment.',
-        'Certaines personnes constatent qu’au début seuls le gros orteil et le petit orteil bougent, pendant que les trois orteils du milieu restent collés. C’est normal. Les orteils du milieu ont moins de contrôle musculaire indépendant. Au fil de plusieurs semaines d’entraînement, l’écartement s’élargit.',
-        'Ne forcez pas l’écartement jusqu’à la crampe. Si une crampe apparaît, arrêtez, massez brièvement la zone, et réessayez avec moins de répétitions.',
+        {
+          list: [
+            '**Lever les orteils.** L’erreur la plus fréquente est de lever les orteils du sol au lieu de les écarter sur le côté. Le but est un écartement horizontal, pas une levée verticale. Gardez les orteils en léger contact avec le sol.',
+            '**Recroqueviller les orteils.** Une autre erreur est de recroqueviller les orteils en essayant de les écarter. Cela arrive quand le cerveau ne sait pas encore séparer le mouvement d’écartement du mouvement de flexion. Cela s’améliore avec l’entraînement. Essayez d’écarter les orteils en les regardant, pour voir ce qui se passe vraiment.',
+            '**Orteils du milieu collés.** Certaines personnes constatent qu’au début seuls le gros orteil et le petit orteil bougent, pendant que les trois orteils du milieu restent collés. C’est normal. Les orteils du milieu ont moins de contrôle musculaire indépendant. Au fil de plusieurs semaines d’entraînement, l’écartement s’élargit.',
+            '**Forcer.** Ne forcez pas l’écartement jusqu’à la crampe. Si une crampe apparaît, arrêtez, massez brièvement la zone, et réessayez avec moins de répétitions.',
+          ],
+        },
       ],
     },
     {
@@ -88,7 +106,7 @@ export const EX_TOE_SPREAD_FR: Guide = {
       paragraphs: [
         'L’exercice pour écarter les orteils a surtout été étudié par IRM et EMG, qui mesurent l’activation musculaire pendant l’exercice. Une étude IRM de 2016 de Gooding et coll. a confirmé qu’il active les quatre muscles plantaires intrinsèques testés. Le niveau d’activation était comparable à celui de l’exercice du pied court pour la plupart des muscles, et plus élevé pour l’abducteur du petit orteil.',
         'Ce que la recherche n’a pas encore fait, c’est tester l’exercice pour écarter les orteils comme traitement à part entière dans un essai randomisé mesurant des résultats pour les patients, comme la douleur ou la hauteur de la voûte, sur des semaines ou des mois. Il figure dans des programmes combinés dans les essais sur les pieds plats, mais sa contribution propre ne peut pas être séparée de celle des autres exercices de ces études.',
-        'Les données soutiennent son utilité pour activer les muscles intrinsèques du pied. On ne sait pas encore s’il modifie à lui seul la structure du pied. Pages d’exercices liées\u00A0: [exercice du pied court](/fr/exercices/pied-court/), [lever le gros orteil](/fr/exercices/lever-gros-orteil/), [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/).',
+        '**Les données soutiennent son utilité pour activer les muscles intrinsèques du pied.** On ne sait pas encore s’il modifie à lui seul la structure du pied. Pages d’exercices liées\u00A0: [exercice du pied court](/fr/exercices/pied-court/), [lever le gros orteil](/fr/exercices/lever-gros-orteil/), [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

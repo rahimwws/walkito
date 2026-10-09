@@ -28,9 +28,23 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     {
       h2: 'Was sind die Fußmuskeln, und warum solltest du sie kräftigen?',
       paragraphs: [
-        'Der Fuß hat zwei Muskelgruppen. Die **inneren (intrinsischen)** Fußmuskeln (die kleinen Muskeln, die im Fuß beginnen und enden) liegen unter dem Gewölbe und zwischen den Knochen. Sie halten das Gewölbe, spreizen die Zehen und machen die winzigen Korrekturen, die dich im Gleichgewicht halten. Zu den **äußeren (extrinsischen)** Fußmuskeln (die größeren Muskeln, die im Unterschenkel beginnen und den Fuß über lange Sehnen erreichen) gehören die Wade, die die Ferse hebt, und die Muskeln, die den Fuß drehen und anheben.',
-        'Eine Arbeit von McKeon und Kollegen von 2015 nannte die inneren Fußmuskeln den „Foot Core“. Die Idee ist dieselbe wie bei der tiefen Rumpfmuskulatur: kleine Stabilisatoren, die dafür sorgen, dass die größeren Muskeln gut arbeiten. Aus ihrer Sicht stützt die Versorgung des Fußes ihn häufiger von außen, als dass sie diese Muskeln trainiert, und so trainieren viele Menschen sie nie. Das ist ein Modell, keine gesicherte Ursache für Schmerzen, aber es erklärt, warum Fußprogramme zuerst die kleinen Muskeln trainieren und dann Wade und Gleichgewicht dazunehmen.',
-        'Gutes Krafttraining für den Fuß deckt beide Gruppen ab. Kurzer-Fuß-Übung, Zehenspreizen und Großzehenheben trainieren die inneren Fußmuskeln, Fersenheben trainiert die Wade, und der Stand auf einem Bein lässt beide zusammenarbeiten.',
+        'Der Fuß hat zwei Muskelgruppen:',
+        {
+          list: [
+            'Die **inneren (intrinsischen)** Fußmuskeln (die kleinen Muskeln, die im Fuß beginnen und enden) liegen unter dem Gewölbe und zwischen den Knochen. Sie halten das Gewölbe, spreizen die Zehen und machen die winzigen Korrekturen, die dich im Gleichgewicht halten.',
+            'Zu den **äußeren (extrinsischen)** Fußmuskeln (die größeren Muskeln, die im Unterschenkel beginnen und den Fuß über lange Sehnen erreichen) gehören die Wade, die die Ferse hebt, und die Muskeln, die den Fuß drehen und anheben.',
+          ],
+        },
+        'Eine Arbeit von McKeon und Kollegen von 2015 nannte die inneren Fußmuskeln den „Foot Core“. Die Idee ist dieselbe wie bei der tiefen Rumpfmuskulatur: kleine Stabilisatoren, die dafür sorgen, dass die größeren Muskeln gut arbeiten.',
+        'Aus ihrer Sicht stützt die Versorgung des Fußes ihn häufiger von außen, als dass sie diese Muskeln trainiert, und so trainieren viele Menschen sie nie. Das ist ein Modell, keine gesicherte Ursache für Schmerzen, aber es erklärt, warum Fußprogramme zuerst die kleinen Muskeln trainieren und dann Wade und Gleichgewicht dazunehmen.',
+        'Gutes Krafttraining für den Fuß deckt beide Gruppen ab:',
+        {
+          list: [
+            'Kurzer-Fuß-Übung, Zehenspreizen und Großzehenheben trainieren die inneren Fußmuskeln.',
+            'Fersenheben trainiert die Wade.',
+            'Der Stand auf einem Bein lässt beide zusammenarbeiten.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -161,7 +175,8 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       h2: 'Beugen Übungen zum Fußkräftigen Laufverletzungen vor?',
       keyFact: 'In einer Studie von 2020 mit 118\u00A0Läuferinnen und Läufern hatten diejenigen ohne Fuß-Core-Training innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Verletzungswahrscheinlichkeit (Taddei und Kollegen).',
       paragraphs: [
-        'Übungen zum Fußkräftigen senkten Laufverletzungen in einer guten Studie, aber eben nur in einer. 2020 teilten Taddei und Kollegen 118\u00A0Freizeitläuferinnen und -läufer auf Langstrecken zufällig in eine Fuß-Core-Gruppe (57) und eine Kontrollgruppe (61) auf. Die Fuß-Core-Gruppe machte einen betreuten Kurs von etwa zwei Monaten für die Fuß- und Sprunggelenkmuskeln und trainierte danach mit Betreuung aus der Ferne weiter. Innerhalb von 12\u00A0Monaten hatte die Kontrollgruppe eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung. Die Autorinnen und Autoren sahen den Effekt nach etwa vier bis acht Monaten Training auftreten.',
+        'Übungen zum Fußkräftigen **senkten Laufverletzungen in einer guten Studie, aber eben nur in einer.** 2020 teilten Taddei und Kollegen 118\u00A0Freizeitläuferinnen und -läufer auf Langstrecken zufällig in eine Fuß-Core-Gruppe (57) und eine Kontrollgruppe (61) auf. Die Fuß-Core-Gruppe machte einen betreuten Kurs von etwa zwei Monaten für die Fuß- und Sprunggelenkmuskeln und trainierte danach mit Betreuung aus der Ferne weiter.',
+        'Innerhalb von 12\u00A0Monaten hatte die Kontrollgruppe eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung. Die Autorinnen und Autoren sahen den Effekt nach etwa vier bis acht Monaten Training auftreten.',
         'Eine frühere, kleinere Studie desselben Teams mit 28\u00A0Läuferinnen und Läufern fand, dass etwa zwei Monate Fußtraining jeden gemessenen Fußmuskel im Vergleich zur Kontrollgruppe vergrößerten. Die Läuferinnen und Läufer drückten sich außerdem mit mehr Kraft vom Boden ab.',
         'Beide Studien stammen von einer Forschungsgruppe in Brasilien, mit Freizeitläuferinnen und -läufern, die zu Beginn nicht verletzt waren. Wir wissen noch nicht, ob das Programm Anfängerinnen und Anfängern hilft oder Menschen, die schon Schmerzen haben. Wenn du läufst und jetzt Fersenschmerzen hast, fang mit [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) an.',
       ],
@@ -172,8 +187,17 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       h2: 'Wie lange dauert es, die Füße zu kräftigen?',
       keyFact: 'In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern wuchsen die Fußmuskeln über etwa zwei Monate und wurden kräftiger, manche Muskeln waren schon nach einem Monat größer (Ridge und Kollegen).',
       paragraphs: [
-        'In den Studien wurden die Fußmuskeln mit regelmäßigem Training in etwa zwei Monaten messbar kräftiger. 2019 teilten Ridge und Kollegen 57\u00A0Läuferinnen und Läufer zufällig auf Fußkräftigungsübungen, Gehen in Minimalschuhen oder keine Veränderung auf. Die Übungsgruppe machte an mindestens fünf Tagen pro Woche Übungen mit steigendem Widerstand. Nach etwa zwei Monaten war jeder gemessene Fußmuskel in beiden aktiven Gruppen größer und kräftiger, in der Kontrollgruppe gab es keine Veränderung. Manche Muskeln waren schon bei der Messung nach einem Monat größer.',
-        'Die Form des Gewölbes verändert sich langsamer und weniger. Eine Übersichtsarbeit von 2023 über vier Studien fand, dass die Kräftigung der inneren Fußmuskeln nach einem Monat nicht veränderte, wie stark sich das Gewölbe bewegt, nach zwei Monaten aber schon, bei Belegen niedriger Qualität. In einer kleinen Studie von Mulligan und Cook mit 21\u00A0Personen und ohne Kontrollgruppe sank der Navicular Drop (wie weit das innere Gewölbe im Stehen absinkt) nach einem Monat Kurzer-Fuß-Training im Durchschnitt um 1,8\u00A0mm. Das ist eine echte, aber kleine Veränderung.',
+        'In den Studien wurden die Fußmuskeln **mit regelmäßigem Training in etwa zwei Monaten** messbar kräftiger. 2019 teilten Ridge und Kollegen 57\u00A0Läuferinnen und Läufer zufällig auf:',
+        {
+          list: [
+            'Fußkräftigungsübungen.',
+            'Gehen in Minimalschuhen.',
+            'Keine Veränderung.',
+          ],
+        },
+        'Die Übungsgruppe machte an mindestens fünf Tagen pro Woche Übungen mit steigendem Widerstand. Nach etwa zwei Monaten war jeder gemessene Fußmuskel in beiden aktiven Gruppen größer und kräftiger, in der Kontrollgruppe gab es keine Veränderung. Manche Muskeln waren schon bei der Messung nach einem Monat größer.',
+        'Die Form des Gewölbes verändert sich langsamer und weniger. Eine Übersichtsarbeit von 2023 über vier Studien fand, dass die Kräftigung der inneren Fußmuskeln nach einem Monat nicht veränderte, wie stark sich das Gewölbe bewegt, nach zwei Monaten aber schon, bei Belegen niedriger Qualität.',
+        'In einer kleinen Studie von Mulligan und Cook mit 21\u00A0Personen und ohne Kontrollgruppe sank der Navicular Drop (wie weit das innere Gewölbe im Stehen absinkt) nach einem Monat Kurzer-Fuß-Training im Durchschnitt um 1,8\u00A0mm. Das ist eine echte, aber kleine Veränderung.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -189,16 +213,25 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       h2: 'Können ältere Menschen ihre Füße kräftigen?',
       keyFact: 'In einer Studie von 2016 mit Erwachsenen im Alter von 60 bis 90\u00A0Jahren steigerte betreutes, gesteigertes Fußtraining die Zehenkraft um bis zu 36\u00A0%, während ein Programm für zu Hause sie nicht veränderte (Mickle und Kollegen).',
       paragraphs: [
-        'Ältere Menschen können ihre Füße kräftigen, und in einer Studie war es die betreute Variante mit allmählich schwererer Last, die funktionierte. In einer Studie von 2016 teilten Mickle und Kollegen 85\u00A0Menschen im Alter von 60 bis 90\u00A0Jahren entweder einem betreuten Kurs mit allmählich schwereren Fußübungen oder einem Übungsprogramm für zu Hause zu, dazu kam eine separate Kontrollgruppe mit 32\u00A0Personen. Nach drei Monaten steigerte die betreute Gruppe ihre Zehenkraft um bis zu 36\u00A0% und konnte länger auf einem Bein stehen. Die Heimgruppe und die Kontrollgruppe zeigten keine Veränderung der Zehenkraft.',
+        'Ältere Menschen können ihre Füße kräftigen, und in einer Studie war es die betreute Variante mit allmählich schwererer Last, die funktionierte. In einer Studie von 2016 teilten Mickle und Kollegen 85\u00A0Menschen im Alter von 60 bis 90\u00A0Jahren entweder einem betreuten Kurs mit allmählich schwereren Fußübungen oder einem Übungsprogramm für zu Hause zu, dazu kam eine separate Kontrollgruppe mit 32\u00A0Personen.',
+        'Nach drei Monaten steigerte die betreute Gruppe ihre Zehenkraft um bis zu 36\u00A0% und konnte länger auf einem Bein stehen. Die Heimgruppe und die Kontrollgruppe zeigten keine Veränderung der Zehenkraft.',
         'Eine Übersichtsarbeit von 2022 über neun Studien bei Erwachsenen ab 65 fand, dass die Kräftigung der inneren Fußmuskeln Kraft, Gleichgewicht und Beweglichkeit verbesserte und möglicherweise das Sturzrisiko senkte, mit wenig Effekt auf das Gangbild. Die Autorinnen und Autoren bewerteten die Qualität der Belege als mittelmäßig.',
-        'Geh also zu schwereren Varianten über, wenn sie leicht werden, und halte für Gleichgewichtsübungen eine Wand oder Arbeitsplatte in der Nähe. Wenn Stürze ein Thema sind, kann eine Physiotherapeutin oder ein Physiotherapeut ein sicheres Programm zusammenstellen.',
+        'Geh also zu schwereren Varianten über, wenn sie leicht werden, und **halte für Gleichgewichtsübungen eine Wand oder Arbeitsplatte in der Nähe.** Wenn Stürze ein Thema sind, kann eine Physiotherapeutin oder ein Physiotherapeut ein sicheres Programm zusammenstellen.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: 'Hilft Fußkräftigung bei Plantarfasziitis oder Plattfuß?',
       paragraphs: [
-        'Bei Plantarfasziitis war Fußkräftigung zusätzlich zum Dehnen in einer Studie, die beides verglich, nicht besser als Dehnen allein. 2016 teilten Kamonseki und Kollegen 83\u00A0Menschen mit Plantarfasziitis für zwei Monate auf drei Gruppen auf: Fußkräftigung plus Dehnen, Fuß- und Hüftkräftigung plus Dehnen oder nur Dehnen. Alle drei Gruppen verbesserten sich bei Schmerz und Funktion, und keine Gruppe schnitt besser ab als die anderen. Bei Fersenschmerzen lies [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Bei Plantarfasziitis war Fußkräftigung zusätzlich zum Dehnen in einer Studie, die beides verglich, nicht besser als Dehnen allein. 2016 teilten Kamonseki und Kollegen 83\u00A0Menschen mit Plantarfasziitis für zwei Monate auf drei Gruppen auf:',
+        {
+          list: [
+            'Fußkräftigung plus Dehnen.',
+            'Fuß- und Hüftkräftigung plus Dehnen.',
+            'Nur Dehnen.',
+          ],
+        },
+        'Alle drei Gruppen verbesserten sich bei Schmerz und Funktion, und keine Gruppe schnitt besser ab als die anderen. Bei Fersenschmerzen lies [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
         'Bei flexiblem Plattfuß fand eine Studie von 2023 mit 52\u00A0Personen, dass ein gemischtes Programm mit der Kurzer-Fuß-Übung die Form des Gewölbes stärker veränderte als in der Kontrollgruppe. Die Details und die Grenzen des Kurzer-Fuß-Trainings allein findest du auf der Seite [Übungen bei Plattfuß](/de/plattfuss-uebungen/). Wenn deine Schmerzen vor allem in den Zehen sitzen, geht der Ratgeber [Zehen kräftigen: Übungen](/de/zehen-kraeftigen-uebungen/) tiefer, und für das Sprunggelenk gibt es [Sprunggelenk stärken: Übungen](/de/sprunggelenk-staerken-uebungen/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -207,7 +240,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       h2: 'Wie stark sind die Belege für Fußkräftigung?',
       paragraphs: [
         'Die Belege dafür, dass Fußübungen die Fußmuskeln kräftigen, zeigen in dieselbe Richtung, aber die Studien sind klein. Eine Übersichtsarbeit von 2025 von Peters-Dickie und Kollegen schloss 28 randomisierte Studien mit 1.399\u00A0Personen ein. Sie stützte Fußübungen für mehr Fußkraft, bewertete die Sicherheit aber als niedrig bis sehr niedrig, vor allem weil es pro Fragestellung wenige Studien gab und viele ein hohes Verzerrungsrisiko hatten. Die Ergebnisse zur Muskelgröße waren gemischt.',
-        'Die Belege dafür, dass kräftigere Füße weniger Verletzungen bedeuten, sind noch dünner und stützen sich vor allem auf die eine Läuferstudie oben. Fußkräftigung ist risikoarm und günstig, und sie baut Kraft auf. Ob sie deiner nächsten Verletzung vorbeugt, ist noch offen. Mehr dazu, wie diese Ratgeber Forschung bewerten, steht auf der Seite [Wissenschaft](/science/) (auf Englisch).',
+        'Die Belege dafür, dass kräftigere Füße weniger Verletzungen bedeuten, sind noch dünner und stützen sich vor allem auf die eine Läuferstudie oben. **Fußkräftigung ist risikoarm und günstig, und sie baut Kraft auf.** Ob sie deiner nächsten Verletzung vorbeugt, ist noch offen. Mehr dazu, wie diese Ratgeber Forschung bewerten, steht auf der Seite [Wissenschaft](/science/) (auf Englisch).',
       ],
       sourceNote: 'Peters-Dickie 2025: Metaanalysen zeigten, dass Minimalschuhe die Kraft der Zehen 2 bis 5 steigerten und Fußübungen die Bewegung des Gewölbes beim Laufen verringerten; Sicherheit niedrig bis sehr niedrig.',
       cites: [CITE.petersDickie],

@@ -57,7 +57,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'Quand étirer le fascia plantaire\u00A0?',
       paragraphs: [
-        'Avant votre premier pas le matin. C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la douleur au talon le matin est le signe typique de la fasciite plantaire.',
+        '**Avant votre premier pas le matin.** C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la douleur au talon le matin est le signe typique de la fasciite plantaire.',
         'Le deuxième moment le plus important est avant de vous lever après être resté longtemps assis. Le même raccourcissement se produit au repos. Étirer le fascia avant de le charger réduit ce choc.',
         'Dans l’essai, on demandait aux participants de faire 10\u00A0maintiens de 10\u00A0secondes, trois fois par jour, pendant au moins huit semaines. Les séances les plus importantes étaient celle du matin et celle après une longue période assise. Plus de séances dans la journée étaient encouragées si possible.',
       ],
@@ -87,10 +87,14 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’étirement du fascia plantaire\u00A0?',
       paragraphs: [
-        'Tirer trop fort sur les orteils. L’étirement doit être ferme sous la voûte, pas douloureux. Si vous grimacez, vous avez dépassé la zone utile. Relâchez jusqu’à sentir une traction sans pointe vive.',
-        'Le sentir dans le mollet plutôt que dans la voûte. Si l’étirement est surtout dans le mollet, le genou est trop tendu ou la traction trop brusque. Croisez le pied plus haut sur le genou opposé pour que la cheville se relâche, et concentrez-vous sur les orteils qui se replient vers l’arrière plutôt que sur tout le pied.',
-        'Sauter l’étirement du matin. C’est la séance qui agit le plus sur le pire moment de la journée. Laissez un mot sur la table de nuit ou mettez un rappel. L’étirement prend environ deux minutes, et il vaut la peine d’être fait avant que le pied touche le sol.',
-        'Faire des rebonds. Restez immobile pendant les 10\u00A0secondes entières. Les rebonds ne laissent pas au fascia le temps de s’allonger et peuvent irriter davantage le tissu.',
+        {
+          list: [
+            '**Tirer trop fort sur les orteils.** L’étirement doit être ferme sous la voûte, pas douloureux. Si vous grimacez, vous avez dépassé la zone utile. Relâchez jusqu’à sentir une traction sans pointe vive.',
+            '**Le sentir dans le mollet plutôt que dans la voûte.** Si l’étirement est surtout dans le mollet, le genou est trop tendu ou la traction trop brusque. Croisez le pied plus haut sur le genou opposé pour que la cheville se relâche, et concentrez-vous sur les orteils qui se replient vers l’arrière plutôt que sur tout le pied.',
+            '**Sauter l’étirement du matin.** C’est la séance qui agit le plus sur le pire moment de la journée. Laissez un mot sur la table de nuit ou mettez un rappel. L’étirement prend environ deux minutes, et il vaut la peine d’être fait avant que le pied touche le sol.',
+            '**Faire des rebonds.** Restez immobile pendant les 10\u00A0secondes entières. Les rebonds ne laissent pas au fascia le temps de s’allonger et peuvent irriter davantage le tissu.',
+          ],
+        },
       ],
     },
     {
@@ -98,7 +102,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       paragraphs: [
         'Si croiser la jambe est inconfortable, gardez les deux pieds au sol et passez une serviette ou une ceinture autour de l’avant du pied. Tirez la serviette vers vous pour que les orteils se replient vers l’arrière. L’étirement est le même, sous un autre angle.',
         'Une version plus difficile est l’étirement du fascia plantaire debout\u00A0: placez l’avant du pied contre un mur, le talon au sol, et penchez-vous doucement vers l’avant. Cela ajoute le poids du corps à l’étirement, et il est plus difficile à doser précisément. Il convient une fois que la version assise est devenue facile et ne réveille pas la douleur.',
-        'C’est la version assise de l’essai que les données soutiennent. Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/fr/exercices/massage-pied-balle/).',
+        '**C’est la version assise de l’essai que les données soutiennent.** Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/fr/exercices/massage-pied-balle/).',
       ],
     },
   ],

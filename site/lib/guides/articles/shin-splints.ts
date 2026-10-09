@@ -69,7 +69,8 @@ export const SHIN_SPLINTS_EN: Guide = {
     'Shin splints is pain along the inner edge of the shinbone, spread over several inches rather than one sore spot. The clinical name is medial tibial stress syndrome, or MTSS. Most pages list exercises as if they are proven to speed recovery. A 2013 systematic review of every treatment trial found that stretching and strengthening exercises have not been shown to shorten it.',
   intro: [
     'That does not mean exercise is useless. The exercises below target calf endurance, shin strength and hip control, the areas where researchers have found differences between people with and without shin splints. A case-control study found runners with shin splints could do fewer calf raises to failure than matched controls without it.',
-    'Whether building that endurance back up shortens recovery is still an open question. The surest lever, in every trial so far, is cutting back the running load that caused it. The heel raise itself, including how many reps and when to add load, is covered in more depth in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). If you are on your feet all day instead of running, [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the same calf and arch exercises for that cause.',
+    'Whether building that endurance back up shortens recovery is still an open question. The surest lever, in every trial so far, is cutting back the running load that caused it.',
+    'The heel raise itself, including how many reps and when to add load, is covered in more depth in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). If you are on your feet all day instead of running, [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the same calf and arch exercises for that cause.',
   ],
   toc: true,
   takeaways: [
@@ -84,7 +85,16 @@ export const SHIN_SPLINTS_EN: Guide = {
       keyFact: 'A 2013 systematic review covering 11 treatment trials for shin splints concluded no stretching or strengthening approach had clear evidence of speeding recovery (Winters and colleagues, 2013).',
       paragraphs: [
         'Shin splints, or medial tibial stress syndrome, is an overuse injury of the shinbone and the tissue around it. The pain is typically diffuse, spread along the inner edge of the tibia over several inches, and it usually starts during or after running. A 2020 review of novice and recreational runners found the clearest links were in how runners move, including more hip rotation and a foot that rolls inward more than usual.',
-        'The honest answer about exercises for shin splints is that no specific exercise program has been shown to speed up recovery in a controlled trial. A 2013 systematic review looked at 11 treatment studies and concluded that stretching and strengthening "have not been proven to be effective in treating MTSS." In the only randomized trial with an exercise arm, 74 athletes were split into three groups: a graded running program alone, the same program plus calf stretching and strengthening, and the same program plus compression stockings. All three groups improved at a similar rate.',
+        'The honest answer about exercises for shin splints is that **no specific exercise program has been shown to speed up recovery in a controlled trial.** A 2013 systematic review looked at 11 treatment studies and concluded that stretching and strengthening "have not been proven to be effective in treating MTSS."',
+        'In the only randomized trial with an exercise arm, 74 athletes were split into three groups:',
+        {
+          list: [
+            'A graded running program alone.',
+            'The same program plus calf stretching and strengthening.',
+            'The same program plus compression stockings.',
+          ],
+        },
+        'All three groups improved at a similar rate.',
         'So the exercises below are not a dedicated shin splints protocol. They are general lower-leg and hip exercises already in the catalogue that target the muscles and joints researchers have studied in shin splints populations. The strongest move is still to reduce the running load and rebuild it slowly.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
@@ -236,8 +246,9 @@ export const SHIN_SPLINTS_EN: Guide = {
       h2: 'How is shin splint pain different from a stress fracture?',
       paragraphs: [
         'Telling shin splints from a stress fracture matters because the two need different responses. Medial tibial stress syndrome and tibial stress fractures sit on the same continuum of bone stress injury. Shin splints can progress toward a stress fracture under continued load, which is the main reason to change the training load early instead of continuing to run through diffuse shin pain.',
-        'Shin splints typically cause diffuse tenderness spread along several inches of the inner shin. A stress fracture causes focal tenderness at one small spot, often with swelling. Pain that eases as you warm up points more toward shin splints. Pain that keeps building during a run, or shows up at rest or at night, points more toward a stress fracture. Pain at the back of the heel instead of the shin is a different problem, usually the Achilles tendon; see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) if that is where yours sits.',
-        'A commonly cited home check is a single-leg hop that reproduces sharp, localized pain, suggesting fracture. But a 2011 review in American Family Physician found no recent evidence validating its accuracy, and a positive hop test was also seen in nearly half of confirmed shin splints patients. So a positive hop is a reason to see a clinician, not a reliable way to rule a fracture in or out on your own.',
+        'Shin splints typically cause diffuse tenderness spread along several inches of the inner shin. A stress fracture causes focal tenderness at one small spot, often with swelling. Pain that eases as you warm up points more toward shin splints. Pain that keeps building during a run, or shows up at rest or at night, points more toward a stress fracture.',
+        'Pain at the back of the heel instead of the shin is a different problem, usually the Achilles tendon; see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) if that is where yours sits.',
+        'A commonly cited home check is a single-leg hop that reproduces sharp, localized pain, suggesting fracture. But a 2011 review in American Family Physician found no recent evidence validating its accuracy, and a positive hop test was also seen in nearly half of confirmed shin splints patients. **So a positive hop is a reason to see a clinician, not a reliable way to rule a fracture in or out on your own.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -246,16 +257,42 @@ export const SHIN_SPLINTS_EN: Guide = {
       keyFact: 'A 2008 trial of 532 new runners found no difference in injury rates between a 10% weekly mileage increase and a faster progression, leaving that rule unproven (Buist and colleagues, 2008).',
       paragraphs: [
         'There is no trial that tells you exactly how much to cut back. What has some support is the shape of a graded running program: in the only randomized trial, all three study groups followed a progressive return to running, and all three improved at about the same rate. The running program, not the added exercises or compression, was the constant.',
-        'Sharp pain during a run, pain that gets worse as you go, or pain at rest are reasons to stop and have it checked instead of running through it. If the pain eases with warm-up and stays manageable, a shorter or easier run at a lower frequency is a reasonable middle ground while the shin adapts. Rest days between runs give the bone time to respond to the load.',
-        'The 10% rule, adding no more than 10% to your weekly mileage, is a commonly cited heuristic but not a proven one. A 2008 trial of 532 new runners found no injury-rate difference between a program built on the 10% rule and a faster one. What a 2014 study of 874 runners did show is that big, sudden jumps in distance come with more injuries. Gradual is better than sudden, but a specific percentage does not have trial backing. [Heel pain from running](/heel-pain-runners/) covers the same load-management thinking in more detail.',
+        'Reasons to stop and have it checked instead of running through it:',
+        {
+          list: [
+            'Sharp pain during a run.',
+            'Pain that gets worse as you go.',
+            'Pain at rest.',
+          ],
+        },
+        'If the pain eases with warm-up and stays manageable, a shorter or easier run at a lower frequency is a reasonable middle ground while the shin adapts. Rest days between runs give the bone time to respond to the load.',
+        'The 10% rule, adding no more than 10% to your weekly mileage, is a commonly cited heuristic but not a proven one. A 2008 trial of 532 new runners found no injury-rate difference between a program built on the 10% rule and a faster one.',
+        'What a 2014 study of 874 runners did show is that big, sudden jumps in distance come with more injuries. **Gradual is better than sudden, but a specific percentage does not have trial backing.** [Heel pain from running](/heel-pain-runners/) covers the same load-management thinking in more detail.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
     {
       h2: 'What changes to training actually prevent shin splints from coming back?',
       paragraphs: [
-        'No single exercise has been shown to prevent shin splints in a trial. The risk factors identified in two independent meta-analyses point toward general training-load management and gradual progression instead of any one stretch or strengthening move. The consistent risk factors across both reviews were higher BMI, greater navicular drop (how much the arch flattens under load), female sex, fewer years of running experience, and a previous history of shin splints.',
-        'A general pattern for returning to running: pain-free walking first, then easy jogging on soft surfaces with rest days between, then gradually longer runs while mornings stay pain-free. Any day that reproduces sharp or focal pain, or pain that builds during the run instead of easing with warm-up, is a stop signal, not a push-through signal.',
+        'No single exercise has been shown to prevent shin splints in a trial. The risk factors identified in two independent meta-analyses point toward general training-load management and gradual progression instead of any one stretch or strengthening move. The consistent risk factors across both reviews were:',
+        {
+          list: [
+            'Higher BMI.',
+            'Greater navicular drop (how much the arch flattens under load).',
+            'Female sex.',
+            'Fewer years of running experience.',
+            'A previous history of shin splints.',
+          ],
+        },
+        'A general pattern for returning to running:',
+        {
+          list: [
+            'Pain-free walking first.',
+            'Then easy jogging on soft surfaces with rest days between.',
+            'Then gradually longer runs while mornings stay pain-free.',
+          ],
+        },
+        'Any day that reproduces sharp or focal pain, or pain that builds during the run instead of easing with warm-up, **is a stop signal, not a push-through signal.**',
       ],
       cites: [CITE.newman, CITE.hamstraWright],
     },
@@ -265,7 +302,7 @@ export const SHIN_SPLINTS_EN: Guide = {
       paragraphs: [
         'Sources vary and none point to a single trial-backed number. General overuse-injury guidance is that mild cases ease within a few weeks of reduced activity, while cases tied to recurring training errors can take longer if the same load returns before the tissue has adapted.',
         'In the randomized trial of 74 athletes with shin splints, the mean time to complete the running program was about 102 to 118 days across the three groups (overall mean 105 days), though the range was wide.',
-        'Because shin splints and tibial stress fractures sit on the same continuum, pain that does not improve after a few weeks of lighter running and rest days is a reason to have it looked at instead of waiting longer. The clearest sign of recovery is pain-free walking and then pain-free easy jogging, in that order, before mileage goes back up.',
+        'Because shin splints and tibial stress fractures sit on the same continuum, pain that does not improve after a few weeks of lighter running and rest days is a reason to have it looked at instead of waiting longer. **The clearest sign of recovery is pain-free walking and then pain-free easy jogging, in that order, before mileage goes back up.**',
       ],
       cites: [CITE.moen],
     },

@@ -44,18 +44,22 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       paragraphs: [
         'Camminare carica la fascia plantare, la banda spessa di tessuto sotto il piede, a ogni passo. Ogni volta che il tallone tocca terra e il piede rolla in avanti, la fascia si allunga e assorbe la forza. In un piede sano va bene così. Ma quando la fascia è irritata o il polpaccio è troppo rigido per assorbire la sua parte, il carico si concentra nel punto in cui la fascia si attacca al tallone.',
         'Il risultato è un dolore che cresce durante o dopo una camminata, soprattutto se più lunga del solito. La linea guida del 2023 sul dolore al tallone elenca due schemi tipici della fascite plantare: il dolore ai primi passi dopo il riposo e il dolore che aumenta con un’attività prolungata in carico. Camminare è l’attività prolungata in carico più comune che ci sia.',
-        'Un polpaccio rigido è una parte importante del quadro. In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia aveva l’odds ratio più alto tra tutti i fattori di rischio misurati. Quando la caviglia non si piega abbastanza, ogni passo chiede alla fascia di compensare la differenza.',
+        'Un polpaccio rigido è una parte importante del quadro. In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia aveva l’odds ratio più alto tra tutti i fattori di rischio misurati. **Quando la caviglia non si piega abbastanza, ogni passo chiede alla fascia di compensare la differenza.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: 'Il dolore al tallone dopo aver camminato è sempre fascite plantare?',
       paragraphs: [
-        'La fascite plantare è la causa più comune, ma non è l’unica. La posizione del dolore e il momento in cui arriva aiutano a distinguerle.',
-        '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone ammortizza ogni passo. Quando si assottiglia o si sposta, l’osso riceve colpi più diretti. Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiore su superfici dure e camminando scalzi (Chang e colleghi, 2022). Il dolore della fascite plantare di solito si trova nella parte interna e anteriore del tallone. Quello del cuscinetto adiposo è proprio sotto il centro. Se camminare scalzo su piastrelle o cemento è chiaramente peggio che camminare con scarpe ammortizzate, vale la pena pensare a un assottigliamento del cuscinetto adiposo. Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per saperne di più.',
-        '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille può far male dopo una camminata lunga, soprattutto in salita. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
-        '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo schema, rivolgiti a un professionista sanitario prima di allenare il piede.',
-        '**Dolore riferito dalla zona lombare o nervo compresso.** Un dolore al tallone che si accompagna a intorpidimento, formicolio o bruciore può indicare un problema ai nervi, non un problema di carico sui tessuti. È un motivo per rivolgerti prima a un professionista sanitario.',
+        'La fascite plantare è la causa più comune, ma non è l’unica. La posizione del dolore e il momento in cui arriva aiutano a distinguerle:',
+        {
+          list: [
+            '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone ammortizza ogni passo. Quando si assottiglia o si sposta, l’osso riceve colpi più diretti. Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiore su superfici dure e camminando scalzi (Chang e colleghi, 2022). Il dolore della fascite plantare di solito si trova nella parte interna e anteriore del tallone. Quello del cuscinetto adiposo è proprio sotto il centro. Se camminare scalzo su piastrelle o cemento è chiaramente peggio che camminare con scarpe ammortizzate, vale la pena pensare a un assottigliamento del cuscinetto adiposo. Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per saperne di più.',
+            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille può far male dopo una camminata lunga, soprattutto in salita. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+            '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo schema, rivolgiti a un professionista sanitario prima di allenare il piede.',
+            '**Dolore riferito dalla zona lombare o nervo compresso.** Un dolore al tallone che si accompagna a intorpidimento, formicolio o bruciore può indicare un problema ai nervi, non un problema di carico sui tessuti. È un motivo per rivolgerti prima a un professionista sanitario.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -63,7 +67,15 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'In cosa è diverso dal dolore al tallone al mattino?',
       paragraphs: [
         'Nella maggior parte dei casi, il dolore al tallone al mattino e quello dopo aver camminato sono due facce dello stesso problema. Il dolore del mattino arriva perché la fascia si irrigidisce e si accorcia durante la notte, poi viene allungata di colpo quando ti alzi. Il dolore dopo la camminata arriva perché la fascia è stata caricata più e più volte durante la camminata e il tessuto ti sta dicendo che ne ha avuto abbastanza.',
-        'La differenza conta per scegliere quando fare gli esercizi. Il dolore del mattino risponde meglio a un allungamento della fascia plantare fatto prima del primo passo. Il dolore dopo la camminata risponde alla gestione del carico: camminare per una distanza che il piede riesce a reggere, aumentarla poco alla volta e usare stretching e lavoro sul polpaccio per alzare la soglia. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio gli allungamenti del mattino e i tutori notturni.',
+        'La differenza conta per scegliere quando fare gli esercizi. Il dolore del mattino risponde meglio a un allungamento della fascia plantare fatto prima del primo passo. Il dolore dopo la camminata risponde alla gestione del carico:',
+        {
+          list: [
+            'Camminare per una distanza che il piede riesce a reggere.',
+            'Aumentarla poco alla volta.',
+            'Usare stretching e lavoro sul polpaccio per alzare la soglia.',
+          ],
+        },
+        '[Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio gli allungamenti del mattino e i tutori notturni.',
         'Se hai sia dolore al mattino sia dolore dopo aver camminato, è lo schema tipico della fascite plantare. Gli esercizi si sovrappongono. L’allungamento del mattino e gli allungamenti del polpaccio aiutano in entrambi i casi. Il rinforzo del polpaccio aumenta la capacità di tutta la catena, così il carico delle tue camminate quotidiane rientra in quello che i tessuti riescono a reggere.',
       ],
       cites: [CITE.guideline],
@@ -150,8 +162,15 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'Quanto camminare quando il tallone fa male?',
       paragraphs: [
         'L’obiettivo non è smettere di camminare. È trovare la distanza che il tallone riesce a reggere senza riacutizzarsi la mattina dopo, e poi costruire da lì.',
-        'Un approccio pratico: cammina per una distanza che mantenga il dolore del mattino dopo uguale o sotto il tuo livello di base attuale. Se il tuo punteggio abituale del mattino è 4 su 10 e una camminata di 30\u00A0minuti lo porta a 6 la mattina dopo, quella camminata era troppo. Accorciala finché il punteggio del mattino resta stabile. Poi aggiungi cinque minuti ogni una o due settimane, purché il dolore del mattino non salga di colpo.',
-        'Questa è gestione del carico, non riposo. Il riposo assoluto raramente aiuta nella fascite plantare. La linea guida raccomanda di modificare l’attività, non di restare inattivi. Camminare con scarpe che sostengono il piede su una superficie più morbida è più facile per la fascia che camminare scalzo sul cemento.',
+        'Un approccio pratico:',
+        {
+          list: [
+            'Cammina per una distanza che mantenga il dolore del mattino dopo uguale o sotto il tuo livello di base attuale. Se il tuo punteggio abituale del mattino è 4 su 10 e una camminata di 30\u00A0minuti lo porta a 6 la mattina dopo, quella camminata era troppo.',
+            'Accorciala finché il punteggio del mattino resta stabile.',
+            'Poi aggiungi cinque minuti ogni una o due settimane, purché il dolore del mattino non salga di colpo.',
+          ],
+        },
+        '**Questa è gestione del carico, non riposo.** Il riposo assoluto raramente aiuta nella fascite plantare. La linea guida raccomanda di modificare l’attività, non di restare inattivi. Camminare con scarpe che sostengono il piede su una superficie più morbida è più facile per la fascia che camminare scalzo sul cemento.',
         'Se corri anche, vale lo stesso principio su un’altra scala. [Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio i picchi di carico e i cambi di chilometraggio.',
       ],
       cites: [CITE.guideline],
@@ -161,7 +180,8 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       keyFact: 'Nei dati di riferimento su 566\u00A0adulti sani, il numero medio di sollevamenti sulle punte su una gamba era di circa 23-24\u00A0ripetizioni, un riferimento per seguire nel tempo la resistenza del polpaccio (Hebert-Losier e colleghi, 2017).',
       paragraphs: [
         'Non ci sono tempi fissi. Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche, spesso nel giro di alcuni mesi (Latt e colleghi, 2020). In un follow-up più lungo su 174\u00A0persone, circa la metà aveva ancora qualche sintomo a 5\u00A0anni, anche se a quel punto per lo più lieve (Hansen e colleghi, 2018).',
-        'Quello che puoi misurare prima è se gli esercizi stanno funzionando. Il dolore del mattino su una scala da 0 a 10 è il segnale quotidiano più chiaro. La resistenza del polpaccio, misurata contando i sollevamenti sulle punte su una gamba, segue la forza nel giro di settimane. Un riferimento comune per gli adulti è di circa 23-24\u00A0ripetizioni in media, dai dati di riferimento su 566\u00A0adulti sani (Hebert-Losier e colleghi, 2017). Quello che conta è se il tuo numero sale, non se coincide con il riferimento.',
+        'Quello che puoi misurare prima è se gli esercizi stanno funzionando. Il dolore del mattino su una scala da 0 a 10 è il segnale quotidiano più chiaro.',
+        'La resistenza del polpaccio, misurata contando i sollevamenti sulle punte su una gamba, segue la forza nel giro di settimane. Un riferimento comune per gli adulti è di circa 23-24\u00A0ripetizioni in media, dai dati di riferimento su 566\u00A0adulti sani (Hebert-Losier e colleghi, 2017). **Quello che conta è se il tuo numero sale, non se coincide con il riferimento.**',
         'Per i tempi in generale, vedi [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

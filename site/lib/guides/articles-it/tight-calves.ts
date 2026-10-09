@@ -14,7 +14,8 @@ export const TIGHT_CALVES_IT: Guide = {
   lede:
     'Avere i polpacci rigidi di solito vuol dire che i muscoli del polpaccio sono duri o che la caviglia non si piega abbastanza. Le cause comuni: un aumento improvviso di corsa o camminata, lunghe giornate in piedi, scarpe con il tacco. Allungare entrambi i muscoli del polpaccio aiuta un po’: in una revisione di cinque studi, il movimento della caviglia è aumentato di circa 2-3\u00A0gradi. Anche i sollevamenti sulle punte aiutano.',
   intro: [
-    'Lo senti ai primi passi appena alzato dal letto, in salita, o quando ti accovacci e i talloni vogliono staccarsi da terra. La parte posteriore della gamba sembra corta e dura. È molto comune, e nella maggior parte dei casi non è il segno di un danno. Questa pagina spiega perché i polpacci diventano rigidi, quale parte del polpaccio è rigida e cosa dicono gli studi su quello che stretching e lavoro di forza possono e non possono cambiare. Per gli allungamenti passo per passo, vedi [allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
+    'Lo senti ai primi passi appena alzato dal letto, in salita, o quando ti accovacci e i talloni vogliono staccarsi da terra. La parte posteriore della gamba sembra corta e dura. È molto comune, e nella maggior parte dei casi non è il segno di un danno.',
+    'Questa pagina spiega perché i polpacci diventano rigidi, quale parte del polpaccio è rigida e cosa dicono gli studi su quello che stretching e lavoro di forza possono e non possono cambiare. Per gli allungamenti passo per passo, vedi [allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
   ],
   takeaways: [
     'In una revisione del 2006 di cinque studi randomizzati, lo stretching statico del polpaccio ha aumentato la flessione della caviglia solo di circa 2-3\u00A0gradi, e gli autori non erano sicuri che il cambiamento conti per le persone (Radford e colleghi).',
@@ -57,7 +58,8 @@ export const TIGHT_CALVES_IT: Guide = {
         'I polpacci rigidi sono legati alla fascite plantare, la causa più comune di dolore sotto il tallone. Quando la caviglia non si piega abbastanza, il piede deve compensare a ogni passo, e la trazione aumenta su tendine d’Achille, tallone e fascia plantare (la banda spessa sotto l’arco).',
         'In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50\u00A0persone con fascite plantare e 100\u00A0persone simili senza. Chi aveva una caviglia che non si piegava oltre 0\u00A0gradi aveva una probabilità di fascite plantare 23,3\u00A0volte più alta rispetto a chi si piegava oltre 10\u00A0gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.',
         'In uno studio successivo su 254\u00A0persone con fascite plantare, l’83% aveva una flessione della caviglia limitata, e il 57% di tutti i pazienti aveva solo il gastrocnemio rigido (Patel e DiGiovanni, 2011).',
-        'Entrambi gli studi mostrano un legame, non che i polpacci rigidi causino la fascite plantare. L’ampio intervallo intorno al valore di 23,3 vuol dire anche che il numero reale potrebbe essere molto più piccolo. Resta comunque uno dei motivi per cui la linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio una A, il suo grado più alto, per il dolore sotto il tallone. Se il problema principale è il dolore al tallone, parti dagli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) o da [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). I polpacci rigidi compaiono anche nei problemi dell’Achille e degli stinchi: vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) ed [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
+        '**Entrambi gli studi mostrano un legame, non che i polpacci rigidi causino la fascite plantare.** L’ampio intervallo intorno al valore di 23,3 vuol dire anche che il numero reale potrebbe essere molto più piccolo. Resta comunque uno dei motivi per cui la linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio una A, il suo grado più alto, per il dolore sotto il tallone.',
+        'Se il problema principale è il dolore al tallone, parti dagli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) o da [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). I polpacci rigidi compaiono anche nei problemi dell’Achille e degli stinchi: vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) ed [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
       ],
       sourceNote:
         'Riddle 2003: odds ratio 23,3 (IC 95% da 4,3 a 124,4) per una dorsiflessione di 0\u00A0gradi o meno contro più di 10\u00A0gradi, aggiustato. Patel 2011: 211 su 254 con dorsiflessione limitata, 145 su 254 con contrattura isolata del gastrocnemio, 66 su 254 con contrattura di gastrocnemio e soleo.',
@@ -67,7 +69,15 @@ export const TIGHT_CALVES_IT: Guide = {
       h2: 'Lo stretching scioglie davvero i polpacci rigidi?',
       keyFact: 'Una revisione del 2006 di cinque studi randomizzati ha trovato che lo stretching del polpaccio aumentava la flessione della caviglia di circa 2-3\u00A0gradi, e gli autori non erano sicuri che quel cambiamento sia clinicamente importante (Radford e colleghi).',
       paragraphs: [
-        'Lo stretching scioglie i polpacci rigidi, ma meno di quanto si aspetta la maggior parte delle persone. Nel 2006, Radford e colleghi hanno messo insieme cinque studi randomizzati che confrontavano lo stretching statico del polpaccio (tenere un allungamento da fermo) con nessuno stretching. La flessione della caviglia è aumentata di circa 2\u00A0gradi dopo un totale di 15\u00A0minuti di stretching o meno, di circa 3\u00A0gradi dopo 15-30\u00A0minuti e di circa 2,5\u00A0gradi dopo più di 30\u00A0minuti. Quei minuti sono il tempo totale di allungamento sommato durante lo studio, non una singola tenuta lunga.',
+        'Lo stretching scioglie i polpacci rigidi, ma **meno di quanto si aspetta la maggior parte delle persone.** Nel 2006, Radford e colleghi hanno messo insieme cinque studi randomizzati che confrontavano lo stretching statico del polpaccio (tenere un allungamento da fermo) con nessuno stretching. La flessione della caviglia è aumentata di:',
+        {
+          list: [
+            'Circa 2\u00A0gradi dopo un totale di 15\u00A0minuti di stretching o meno.',
+            'Circa 3\u00A0gradi dopo 15-30\u00A0minuti.',
+            'Circa 2,5\u00A0gradi dopo più di 30\u00A0minuti.',
+          ],
+        },
+        'Quei minuti sono il tempo totale di allungamento sommato durante lo studio, non una singola tenuta lunga.',
         'Gli autori hanno definito il guadagno piccolo e hanno detto che non era chiaro se conti per le persone. Ne seguono due cose. Primo, un breve periodo di stretching non trasformerà la tua caviglia. Secondo, la sensazione di scioltezza dopo un allungamento è reale, ma in parte potrebbe dipendere dal fatto che tolleri meglio l’allungamento, non dal muscolo che si allunga.',
         'Lo stretching fa meno di quanto molti sperano anche per altri aspetti. In uno studio su 1.538\u00A0reclute dell’esercito, durante tre mesi di addestramento, un allungamento di 20\u00A0secondi di sei gruppi muscolari delle gambe a ogni riscaldamento non ha ridotto in modo significativo gli infortuni (Pope e colleghi, 2000). Una revisione Cochrane di 12\u00A0studi ha trovato che lo stretching prima o dopo l’esercizio riduceva l’indolenzimento del giorno dopo solo di circa mezzo punto, al massimo 1\u00A0punto, su una scala da 100\u00A0punti (Herbert e colleghi, 2011).',
         'Quindi fai stretching perché ti fa stare bene, perché aiuta un po’ una caviglia rigida e perché la linea guida sul dolore al tallone lo sostiene per il dolore sotto il tallone. Non aspettarti che prevenga ogni infortunio o che cancelli l’indolenzimento.',
@@ -80,9 +90,18 @@ export const TIGHT_CALVES_IT: Guide = {
       h2: 'Meglio rinforzare i polpacci rigidi invece di allungarli?',
       keyFact: 'Una revisione del 2021 di 11\u00A0studi randomizzati con 452\u00A0persone non ha trovato differenze significative nei guadagni di ampiezza di movimento tra lavoro di forza e stretching (Afonso e colleghi).',
       paragraphs: [
-        'Rinforzare i polpacci rigidi è una buona idea, e non devi scegliere tra le due cose. Nel 2021, Afonso e colleghi hanno messo insieme 11\u00A0studi randomizzati con 452\u00A0persone che confrontavano il lavoro di forza con lo stretching. L’ampiezza di movimento è migliorata più o meno allo stesso modo con entrambi. Gli studi erano molto diversi tra loro e riguardavano molte articolazioni, non solo la caviglia, quindi leggilo come un indizio forte, non come una risposta definitiva.',
-        'La forza conta anche per un altro motivo. Un polpaccio che si stanca presto si sente rigido prima. I sollevamenti sulle punte a escursione completa, in cui abbassi i talloni fino in fondo e sali fino in cima, caricano il muscolo per tutta la sua lunghezza. Se i polpacci si irrigidiscono ogni volta che cammini o corri più del solito, aumentarne la capacità è spesso il passo più utile nel lungo periodo. Puoi controllare la resistenza del polpaccio con il [test del sollevamento sulle punte](/it/test-sollevamento-punte/).',
-        'Un mix sensato per la maggior parte delle persone: allunga entrambi i muscoli del polpaccio, apri la caviglia con le oscillazioni ginocchio oltre le dita e aggiungi i sollevamenti sulle punte qualche volta a settimana. Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte su due piedi.',
+        'Rinforzare i polpacci rigidi è una buona idea, e **non devi scegliere tra le due cose.** Nel 2021, Afonso e colleghi hanno messo insieme 11\u00A0studi randomizzati con 452\u00A0persone che confrontavano il lavoro di forza con lo stretching. L’ampiezza di movimento è migliorata più o meno allo stesso modo con entrambi. Gli studi erano molto diversi tra loro e riguardavano molte articolazioni, non solo la caviglia, quindi leggilo come un indizio forte, non come una risposta definitiva.',
+        'La forza conta anche per un altro motivo. Un polpaccio che si stanca presto si sente rigido prima. I sollevamenti sulle punte a escursione completa, in cui abbassi i talloni fino in fondo e sali fino in cima, caricano il muscolo per tutta la sua lunghezza.',
+        'Se i polpacci si irrigidiscono ogni volta che cammini o corri più del solito, aumentarne la capacità è spesso il passo più utile nel lungo periodo. Puoi controllare la resistenza del polpaccio con il [test del sollevamento sulle punte](/it/test-sollevamento-punte/).',
+        'Un mix sensato per la maggior parte delle persone:',
+        {
+          list: [
+            'Allunga entrambi i muscoli del polpaccio.',
+            'Apri la caviglia con le oscillazioni ginocchio oltre le dita.',
+            'Aggiungi i sollevamenti sulle punte qualche volta a settimana.',
+          ],
+        },
+        'Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte su due piedi.',
       ],
       sourceNote:
         'Afonso 2021: effect size aggregato -0,22 (IC 95% da -0,55 a 0,12), nessuna differenza significativa tra lavoro di forza e stretching sull’ampiezza di movimento.',
@@ -148,8 +167,16 @@ export const TIGHT_CALVES_IT: Guide = {
     {
       h2: 'I polpacci rigidi dipendono da disidratazione o crampi?',
       paragraphs: [
-        'La disidratazione viene spesso accusata di polpacci rigidi e crampi, ma le prove che abbiamo trovato non la sostengono bene. Nel 2011, Schwellnus e colleghi hanno seguito 210\u00A0triatleti Ironman. I 43 che hanno avuto crampi non avevano cambiamenti diversi di peso corporeo o di livelli di sali nel sangue rispetto a chi non li ha avuti. Le due cose che prevedevano i crampi erano correre più veloce e aver già avuto crampi in passato. Questo fa pensare a muscoli stanchi e molto sollecitati, non a poca acqua o pochi sali. Era un solo gruppo di atleti di resistenza, quindi non chiude la questione per tutti, ma è più solido delle affermazioni che vedi sulle pagine dei prodotti.',
-        'I crampi notturni sono una situazione diversa, e gli studi non sono d’accordo tra loro. In uno studio del 2012 su 80\u00A0adulti sopra i 55\u00A0anni, allungare polpacci e muscoli posteriori della coscia ogni sera prima di dormire per circa un mese e mezzo ha ridotto i crampi di 1,2 a notte in più rispetto a non fare nulla, e li ha resi meno dolorosi (Hallegraeff e colleghi). Uno studio precedente del 2005 su 191\u00A0persone che già prendevano chinino ha trovato che il consiglio di fare stretching non cambiava i crampi a tre mesi (Coppin e colleghi). Un allungamento delicato del polpaccio prima di dormire costa poco e ha pochi rischi, quindi è ragionevole provarlo, ma potrebbe non funzionare per te.',
+        'La disidratazione viene spesso accusata di polpacci rigidi e crampi, ma **le prove che abbiamo trovato non la sostengono bene.** Nel 2011, Schwellnus e colleghi hanno seguito 210\u00A0triatleti Ironman. I 43 che hanno avuto crampi non avevano cambiamenti diversi di peso corporeo o di livelli di sali nel sangue rispetto a chi non li ha avuti. Le due cose che prevedevano i crampi erano correre più veloce e aver già avuto crampi in passato.',
+        'Questo fa pensare a muscoli stanchi e molto sollecitati, non a poca acqua o pochi sali. Era un solo gruppo di atleti di resistenza, quindi non chiude la questione per tutti, ma è più solido delle affermazioni che vedi sulle pagine dei prodotti.',
+        'I crampi notturni sono una situazione diversa, e gli studi non sono d’accordo tra loro:',
+        {
+          list: [
+            'In uno studio del 2012 su 80\u00A0adulti sopra i 55\u00A0anni, allungare polpacci e muscoli posteriori della coscia ogni sera prima di dormire per circa un mese e mezzo ha ridotto i crampi di 1,2 a notte in più rispetto a non fare nulla, e li ha resi meno dolorosi (Hallegraeff e colleghi).',
+            'Uno studio precedente del 2005 su 191\u00A0persone che già prendevano chinino ha trovato che il consiglio di fare stretching non cambiava i crampi a tre mesi (Coppin e colleghi).',
+          ],
+        },
+        'Un allungamento delicato del polpaccio prima di dormire costa poco e ha pochi rischi, quindi è ragionevole provarlo, ma potrebbe non funzionare per te.',
         'Se i crampi sono frequenti, nuovi o arrivano con altri sintomi, parlane con un medico. Alcuni farmaci e alcune condizioni mediche possono causarli.',
       ],
       sourceNote:
@@ -159,8 +186,24 @@ export const TIGHT_CALVES_IT: Guide = {
     {
       h2: 'Come evitare che i polpacci si irrigidiscano per la corsa o lo stare in piedi?',
       paragraphs: [
-        'I polpacci che si irrigidiscono per la corsa o lo stare in piedi di solito hanno bisogno di un carico diverso, non solo di più stretching. Se corri, aumenta i chilometri settimanali in modo graduale, aggiungi le salite piano piano e dai a un nuovo paio di scarpe con un drop più basso un po’ di tempo prima delle corse lunghe. La pagina sul [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio come gestire il carico.',
-        'Se stai in piedi tutto il giorno, sposta spesso il peso, fai brevi pause camminando e, durante la pausa, qualche sollevamento sulle punte e un allungamento. Vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
+        'I polpacci che si irrigidiscono per la corsa o lo stare in piedi **di solito hanno bisogno di un carico diverso, non solo di più stretching.** Se corri:',
+        {
+          list: [
+            'Aumenta i chilometri settimanali in modo graduale.',
+            'Aggiungi le salite piano piano.',
+            'Dai a un nuovo paio di scarpe con un drop più basso un po’ di tempo prima delle corse lunghe.',
+          ],
+        },
+        'La pagina sul [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio come gestire il carico.',
+        'Se stai in piedi tutto il giorno:',
+        {
+          list: [
+            'Sposta spesso il peso.',
+            'Fai brevi pause camminando.',
+            'Durante la pausa, fai qualche sollevamento sulle punte e un allungamento.',
+          ],
+        },
+        'Vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
         'Se porti i tacchi quasi tutti i giorni, non devi rinunciarci. Alterna giornate con scarpe basse e la sera allunga entrambi i muscoli del polpaccio. Costruire forza nel polpaccio nel tempo rende più facile per i polpacci reggere qualsiasi cosa gli chiedi.',
       ],
     },

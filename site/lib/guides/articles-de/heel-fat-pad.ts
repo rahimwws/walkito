@@ -74,8 +74,17 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       h2: 'Warum wird das Fersenfettpolster dünner?',
       paragraphs: [
-        'Das Alter ist der wichtigste Faktor. Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.',
-        'Weitere Risikofaktoren sind ein höheres Körpergewicht (mehr Kraft pro Schritt), wiederholte Kortisonspritzen in die Ferse (Kortison kann Fettgewebe abbauen), Diabetes, ein Hohlfuß (der die Last auf Ferse und Vorfuß konzentriert) und Bindegewebsprobleme in der Familie.',
+        '**Das Alter ist der wichtigste Faktor.** Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.',
+        'Weitere Risikofaktoren sind:',
+        {
+          list: [
+            'Ein höheres Körpergewicht (mehr Kraft pro Schritt).',
+            'Wiederholte Kortisonspritzen in die Ferse (Kortison kann Fettgewebe abbauen).',
+            'Diabetes.',
+            'Ein Hohlfuß (der die Last auf Ferse und Vorfuß konzentriert).',
+            'Bindegewebsprobleme in der Familie.',
+          ],
+        },
         'Anders als ein Muskel oder eine Sehne baut sich das Fettpolster durch Training oder Ruhe nicht wieder auf. Wenn es einmal dünner geworden ist, besteht das praktische Ziel darin, das Verbliebene zu schützen und die Stöße zu verringern, die beim Fersenbein ankommen.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
@@ -84,18 +93,28 @@ export const HEEL_FAT_PAD_DE: Guide = {
       h2: 'Was hilft bei Schmerzen durch das Fersenfettpolster?',
       keyFact: 'Ein einzelner Fallbericht beschrieb Schmerzlinderung durch Fersenschalen aus Silikongel nach einem und nach drei Monaten, aber keine randomisierte Studie hat Fersenschalen oder Taping bei dieser Erkrankung getestet (Chang und Kollegen, 2022).',
       paragraphs: [
-        'Die am häufigsten empfohlenen ersten Schritte beim Fersenfettpolster-Syndrom sind äußere Hilfsmittel: viskoelastische Fersenschalen, gedämpfte Einlagen und Schuhe mit dicken, stoßdämpfenden Sohlen. Sie sollen die Dämpfung ersetzen, die das Fettpolster nicht mehr liefert.',
-        'Das Scoping Review von 2022 wies auf eine unbequeme Lücke hin: Keine randomisierte kontrollierte Studie hat Fersenschalen oder Taping speziell beim Fersenfettpolster-Syndrom getestet. Ein einzelner Fallbericht beschrieb Schmerzlinderung mit Fersenschalen aus Silikongel nach einem und nach drei Monaten. Einige kleine Studien zu Low-Dye-Taping bei Fersenschmerzen allgemein berichten einen mäßigen Rückgang der Schmerzwerte gegenüber Schein- oder keiner Behandlung, aber keine davon trennt das Fersenfettpolster-Syndrom von anderen Ursachen für Fersenschmerzen. Wie groß ein Nutzen hier wäre, ist also nicht bekannt.',
-        'Trotz der schwachen Beleglage ist die Logik einfach: Wenn das Polster fehlt, ist es ein vernünftiger Schritt, von außen eines hinzuzufügen. Geh nicht barfuß auf hartem Boden. Wähl Schuhe mit gut gedämpfter Ferse und meide flache Schuhe mit dünner Sohle. Das sind Empfehlungen nach Expertenkonsens, nicht aus Studien, und diese Seite sagt das offen.',
+        'Die am häufigsten empfohlenen ersten Schritte beim Fersenfettpolster-Syndrom sind äußere Hilfsmittel:',
+        {
+          list: [
+            'Viskoelastische Fersenschalen.',
+            'Gedämpfte Einlagen.',
+            'Schuhe mit dicken, stoßdämpfenden Sohlen.',
+          ],
+        },
+        'Sie sollen die Dämpfung ersetzen, die das Fettpolster nicht mehr liefert.',
+        'Das Scoping Review von 2022 wies auf eine unbequeme Lücke hin: Keine randomisierte kontrollierte Studie hat Fersenschalen oder Taping speziell beim Fersenfettpolster-Syndrom getestet. Ein einzelner Fallbericht beschrieb Schmerzlinderung mit Fersenschalen aus Silikongel nach einem und nach drei Monaten.',
+        'Einige kleine Studien zu Low-Dye-Taping bei Fersenschmerzen allgemein berichten einen mäßigen Rückgang der Schmerzwerte gegenüber Schein- oder keiner Behandlung, aber keine davon trennt das Fersenfettpolster-Syndrom von anderen Ursachen für Fersenschmerzen. Wie groß ein Nutzen hier wäre, ist also nicht bekannt.',
+        'Trotz der schwachen Beleglage ist die Logik einfach: **Wenn das Polster fehlt, ist es ein vernünftiger Schritt, von außen eines hinzuzufügen.** Geh nicht barfuß auf hartem Boden. Wähl Schuhe mit gut gedämpfter Ferse und meide flache Schuhe mit dünner Sohle. Das sind Empfehlungen nach Expertenkonsens, nicht aus Studien, und diese Seite sagt das offen.',
       ],
       cites: [CITE.fatPadReview],
     },
     {
       h2: 'Helfen Übungen beim Fersenfettpolster-Syndrom?',
       paragraphs: [
-        'Übungen können ein dünner gewordenes Fettpolster nicht wieder aufbauen. Das ist eine strukturelle Veränderung, keine Muskelschwäche. Trotzdem kann Training eine Rolle dabei spielen, wie der Fuß rund um das Problem zurechtkommt.',
+        '**Übungen können ein dünner gewordenes Fettpolster nicht wieder aufbauen.** Das ist eine strukturelle Veränderung, keine Muskelschwäche. Trotzdem kann Training eine Rolle dabei spielen, wie der Fuß rund um das Problem zurechtkommt.',
         'Wadenkraft ist wichtig, weil eine kräftigere Wade mehr von der Landekraft abfängt, bevor sie die Ferse erreicht. Das ist dieselbe Belastungslogik wie bei den Programmen zum Fersenheben bei Plantarfasziitis, aber beim Fersenfettpolster-Syndrom geht es um die Verteilung der Last, nicht um die Heilung von Gewebe. Training der kleinen Fußmuskeln (kurzer Fuß, Zehenspreizen) kann dem Fuß helfen, mit dem Bodenkontakt umzugehen.',
-        'Belege für diese Übungen speziell beim Fersenfettpolster-Syndrom gibt es nicht. Keine Studie hat sie bei dieser Erkrankung getestet. Sie sind aus der allgemeinen Forschung zu Fersenschmerzen und Fußkraft übernommen. Die Übungen von Walkito sind rund um Plantarfasziitis und Fußkraft aufgebaut. Sie sind eine vernünftige Ergänzung, wenn deine medizinische Fachperson eine Atrophie des Fettpolsters bestätigt hat, aber sie wurden nicht speziell dafür getestet, und das solltest du wissen.',
+        'Belege für diese Übungen speziell beim Fersenfettpolster-Syndrom gibt es nicht. Keine Studie hat sie bei dieser Erkrankung getestet. Sie sind aus der allgemeinen Forschung zu Fersenschmerzen und Fußkraft übernommen.',
+        'Die Übungen von Walkito sind rund um Plantarfasziitis und Fußkraft aufgebaut. Sie sind eine vernünftige Ergänzung, wenn deine medizinische Fachperson eine Atrophie des Fettpolsters bestätigt hat, aber sie wurden nicht speziell dafür getestet, und das solltest du wissen.',
       ],
       exercises: [
         {

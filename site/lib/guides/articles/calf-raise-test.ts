@@ -46,7 +46,15 @@ export const CALF_RAISE_TEST_EN: Guide = {
       paragraphs: [
         'The test measures the endurance of the plantar flexors, the muscles that push the foot down and lift the heel off the ground. The main muscles are the gastrocnemius (the bigger, more superficial calf muscle) and the soleus (the deeper one underneath it). Together they connect to the heel bone through the Achilles tendon.',
         'Endurance here means how many repetitions you can complete before the calf fatigues and the heel can no longer rise high enough or keep pace. The count captures the ability to sustain work over dozens of cycles, which is closer to what the calf does during walking and running than a single heavy push.',
-        'Clinicians use the test to track recovery from Achilles tendon ruptures, to screen for calf weakness in people with heel pain or shin splints, and to compare one leg to the other. Athletes with medial tibial stress syndrome (shin splints) had lower calf endurance than healthy controls in a case-control study of 20 athletes.',
+        'Clinicians use the test:',
+        {
+          list: [
+            'To track recovery from Achilles tendon ruptures.',
+            'To screen for calf weakness in people with heel pain or shin splints.',
+            'To compare one leg to the other.',
+          ],
+        },
+        'Athletes with medial tibial stress syndrome (shin splints) had lower calf endurance than healthy controls in a case-control study of 20 athletes.',
       ],
       cites: [CITE.hebertLosier, CITE.madeley],
     },
@@ -55,7 +63,16 @@ export const CALF_RAISE_TEST_EN: Guide = {
       paragraphs: [
         'The protocol from Hebert-Losier 2017 is the most widely cited version and the source of the normative values on this page. In that study, 566 healthy adults aged 20 to 81 performed single-leg heel rises to fatigue on each leg.',
         'The subject stands barefoot or in flat shoes on a 10-degree incline board, one foot at a time. Fingertip support at shoulder height on a wall is allowed for balance only. A metronome is set to 60 beats per minute: one beat up, one beat down, so each full rep takes two seconds. The instruction is to raise the heel as high as possible, keeping the knee straight and the trunk upright.',
-        'The test stops when the heel can no longer lift off the board, the metronome pace can no longer be followed, the knee bends or trunk leans, or the person presses into the wall rather than using fingertip touch. One verbal reminder is given before termination. The warm-up is 10 minutes of brisk walking followed by 10 bilateral heel rises. Two minutes of rest separate legs.',
+        'The test stops when:',
+        {
+          list: [
+            'The heel can no longer lift off the board.',
+            'The metronome pace can no longer be followed.',
+            'The knee bends or trunk leans.',
+            'The person presses into the wall rather than using fingertip touch.',
+          ],
+        },
+        'One verbal reminder is given before termination. The warm-up is 10 minutes of brisk walking followed by 10 bilateral heel rises. Two minutes of rest separate legs.',
       ],
       sourceNote:
         'Hebert-Losier 2017: ICC 0.96 (right) and 0.96 (left); mean between-day difference 0.2 reps (95% LOA -6.2 to 6.5) on the right and 0.1 reps (95% LOA -6.1 to 6.2) on the left.',
@@ -65,8 +82,9 @@ export const CALF_RAISE_TEST_EN: Guide = {
       h2: 'How do you do the calf raise test at home?',
       paragraphs: [
         'You do not need an incline board. Standing on flat ground gives a slightly easier test, so your count may be a few reps higher than the published norms. That is fine for tracking change over time and comparing left to right.',
-        'Stand near a wall with your fingertips touching it at shoulder height. Lift one foot. Set a metronome app to 60 beats per minute. On the first beat, rise onto your toes as high as you can. On the second beat, lower your heel back to the floor. Keep going until you cannot maintain the pace, your heel barely lifts, or your knee bends.',
-        'Count the total reps. Rest two minutes, then repeat on the other leg. Write down both numbers and the date. The typical measurement error is about two reps, so a small shift between test days is noise. The trend over weeks is what matters.',
+        'Stand near a wall with your fingertips touching it at shoulder height. Lift one foot. Set a metronome app to 60 beats per minute.',
+        'On the first beat, rise onto your toes as high as you can. On the second beat, lower your heel back to the floor. Keep going until you cannot maintain the pace, your heel barely lifts, or your knee bends.',
+        'Count the total reps. Rest two minutes, then repeat on the other leg. Write down both numbers and the date. The typical measurement error is about two reps, so a small shift between test days is noise. **The trend over weeks is what matters.**',
       ],
       exercises: [
         {
@@ -89,7 +107,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       keyFact: 'In 1995, a study of 203 adults aged 20 to 59 proposed 25 repetitions as the benchmark for normal single-leg heel-rise performance (Lunsford and Perry, 1995).',
       paragraphs: [
         'The table below shows the median number of single-leg heel-rise repetitions by age and sex, from Hebert-Losier 2017. These are model estimates for a person with a moderate physical activity level (level 4 on a 6-point scale) and a body mass index of 24.2, averaged across both legs.',
-        'Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 59 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.',
+        'Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 59 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. **Your own baseline and the direction of change matter more than any single number.**',
       ],
       table: {
         caption: 'Median single-leg heel-rise repetitions by age and sex (Hebert-Losier 2017)',
@@ -113,23 +131,34 @@ export const CALF_RAISE_TEST_EN: Guide = {
       keyFact: 'In a study of 78 people after Achilles tendon rupture, average limb symmetry at six months was 84% by rep count but only 61% by total work, showing rep counts alone can underestimate a deficit (Silbernagel and colleagues, 2010).',
       paragraphs: [
         'Close to the same, yes. In the Hebert-Losier study, the median difference between right and left was one repetition, and the typical measurement error was about two reps. A gap that small is noise.',
-        'In lower-limb rehabilitation, a limb symmetry index (LSI) of 90 percent or higher is the standard benchmark for normal function. LSI is the weaker side divided by the stronger side, times 100. Below 90 percent means one side is more than 10 percent weaker. Silbernagel and colleagues used this threshold in 78 patients after Achilles tendon rupture: at 6 months, patients averaged an LSI of 84 percent on repetitions and only 61 percent on total work, showing that counting reps alone can underestimate a deficit.',
-        'Without an injury, a gap over 10 percent is worth noting and tracking. It does not mean something is wrong. But if the gap persists across several test sessions and you also have pain on the weaker side, it gives a clinician useful context.',
+        'In lower-limb rehabilitation, a limb symmetry index (LSI) of 90 percent or higher is the standard benchmark for normal function. LSI is the weaker side divided by the stronger side, times 100. Below 90 percent means one side is more than 10 percent weaker.',
+        'Silbernagel and colleagues used this threshold in 78 patients after Achilles tendon rupture: at 6 months, patients averaged an LSI of 84 percent on repetitions and only 61 percent on total work, showing that counting reps alone can underestimate a deficit.',
+        'Without an injury, **a gap over 10 percent is worth noting and tracking.** It does not mean something is wrong. But if the gap persists across several test sessions and you also have pain on the weaker side, it gives a clinician useful context.',
       ],
       cites: [CITE.hebertLosier, CITE.silbernagelHeelRise],
     },
     {
       h2: 'What does a low score mean, and what does it not mean?',
       paragraphs: [
-        'A low calf raise count tells you the calf on that side fatigues earlier than the population median for your age, sex and activity level. It does not tell you why. Deconditioning, a recent injury, an Achilles tendon problem, pain avoidance, or unfamiliarity with the test can all produce a low count.',
-        'The test is not a diagnosis. A score of 15 in a 30-year-old male does not mean he has plantar fasciitis or Achilles tendonitis. It means his calf endurance is below the median of 33 for that group. A clinician combines the count with other findings to decide whether the number explains a symptom. The test is more informative as a trend than a single data point: going from 14 to 22 over two months is a clearer signal than any one number compared to a table.',
+        'A low calf raise count tells you the calf on that side fatigues earlier than the population median for your age, sex and activity level. It does not tell you why. These can all produce a low count:',
+        {
+          list: [
+            'Deconditioning.',
+            'A recent injury.',
+            'An Achilles tendon problem.',
+            'Pain avoidance.',
+            'Unfamiliarity with the test.',
+          ],
+        },
+        '**The test is not a diagnosis.** A score of 15 in a 30-year-old male does not mean he has plantar fasciitis or Achilles tendonitis. It means his calf endurance is below the median of 33 for that group.',
+        'A clinician combines the count with other findings to decide whether the number explains a symptom. The test is more informative as a trend than a single data point: going from 14 to 22 over two months is a clearer signal than any one number compared to a table.',
       ],
       cites: [CITE.hebertLosier],
     },
     {
       h2: 'How does calf endurance relate to heel pain, Achilles problems and running?',
       paragraphs: [
-        'The calf and the plantar fascia are connected through the heel bone. The Achilles tendon pulls on the back; the fascia pulls on the bottom. Weak or fatigable calves put more strain on both with every step.',
+        'The calf and the plantar fascia are connected through the heel bone. The Achilles tendon pulls on the back; the fascia pulls on the bottom. **Weak or fatigable calves put more strain on both with every step.**',
         'The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a grade of B. The Rathleff trial that tested loaded heel raises for plantar fasciitis used a calf raise as its main exercise, and participants improved pain scores faster than with stretching alone over three months. See [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) for the full protocol.',
         'For Achilles tendonitis, the heel-rise test is one of the standard outcome measures. Patients with mid-portion Achilles tendinopathy (pain in the middle of the tendon, not at the heel bone) typically show reduced calf endurance on the affected side. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) for eccentric work.',
         'For running, the calf absorbs two to three times body weight on every stride. A calf that fatigues early shifts load to the knee, shin and foot. Building the score up can be part of a return-to-running plan. See [heel pain and running](/heel-pain-runners/) for the bigger picture.',
@@ -139,8 +168,9 @@ export const CALF_RAISE_TEST_EN: Guide = {
     {
       h2: 'How can you improve a low calf raise score?',
       paragraphs: [
-        'The exercises that build calf endurance for rehab are the same ones that raise your test score. Start at the level that matches where you are now, and move up once two sessions in a row feel easy.',
-        'If you can do fewer than 10 single-leg raises, start with seated or double-leg standing raises. Move to a heel raise hold to build isometric endurance, then to single-leg raises on the floor. Adding a step increases range. Adding a backpack increases load. See [calf raises](/exercises/calf-raises/) for the basic movement, [towel heel raise](/exercises/towel-heel-raise/) for the version that also loads the plantar fascia, and [eccentric heel drops](/exercises/eccentric-heel-drops/) for the Achilles-focused variant.',
+        'The exercises that build calf endurance for rehab are the same ones that raise your test score. Start at the level that matches where you are now, and **move up once two sessions in a row feel easy.**',
+        'If you can do fewer than 10 single-leg raises, start with seated or double-leg standing raises. Move to a heel raise hold to build isometric endurance, then to single-leg raises on the floor. Adding a step increases range. Adding a backpack increases load.',
+        'See [calf raises](/exercises/calf-raises/) for the basic movement, [towel heel raise](/exercises/towel-heel-raise/) for the version that also loads the plantar fascia, and [eccentric heel drops](/exercises/eccentric-heel-drops/) for the Achilles-focused variant.',
       ],
       exercises: [
         {

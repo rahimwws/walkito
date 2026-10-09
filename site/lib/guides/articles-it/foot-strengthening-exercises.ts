@@ -28,9 +28,23 @@ export const FOOT_STRENGTHENING_IT: Guide = {
     {
       h2: 'Quali sono i muscoli del piede e perché rinforzarli?',
       paragraphs: [
-        'Il piede ha due gruppi di muscoli. I muscoli **intrinseci** (i piccoli muscoli che iniziano e finiscono dentro il piede) stanno sotto l’arco e tra le ossa. Sostengono l’arco, allargano le dita e fanno le minime correzioni che ti tengono in equilibrio. I muscoli **estrinseci** (i muscoli più grandi che partono dalla gamba e arrivano al piede con lunghi tendini) comprendono il polpaccio, che solleva il tallone, e i muscoli che ruotano e sollevano il piede.',
-        'Un articolo del 2015 di McKeon e colleghi ha chiamato i muscoli intrinseci il «core del piede». L’idea è la stessa dei muscoli profondi del tronco: piccoli stabilizzatori che fanno lavorare bene i muscoli più grandi. Secondo loro, nella gestione dei problemi al piede si sostiene il piede dall’esterno più spesso di quanto si alleni questi muscoli, quindi molte persone non li allenano mai. È un modello, non una causa di dolore dimostrata, ma spiega perché i programmi per il piede allenano prima i piccoli muscoli e poi aggiungono polpaccio ed equilibrio.',
-        'Un buon lavoro di forza per il piede copre entrambi i gruppi. L’esercizio del piede corto, l’apertura delle dita e il sollevamento dell’alluce allenano i muscoli intrinseci, i sollevamenti sulle punte allenano il polpaccio, e stare su una gamba li fa lavorare insieme.',
+        'Il piede ha due gruppi di muscoli:',
+        {
+          list: [
+            'I muscoli **intrinseci** (i piccoli muscoli che iniziano e finiscono dentro il piede) stanno sotto l’arco e tra le ossa. Sostengono l’arco, allargano le dita e fanno le minime correzioni che ti tengono in equilibrio.',
+            'I muscoli **estrinseci** (i muscoli più grandi che partono dalla gamba e arrivano al piede con lunghi tendini) comprendono il polpaccio, che solleva il tallone, e i muscoli che ruotano e sollevano il piede.',
+          ],
+        },
+        'Un articolo del 2015 di McKeon e colleghi ha chiamato i muscoli intrinseci il «core del piede». L’idea è la stessa dei muscoli profondi del tronco: piccoli stabilizzatori che fanno lavorare bene i muscoli più grandi.',
+        'Secondo loro, nella gestione dei problemi al piede si sostiene il piede dall’esterno più spesso di quanto si alleni questi muscoli, quindi molte persone non li allenano mai. È un modello, non una causa di dolore dimostrata, ma spiega perché i programmi per il piede allenano prima i piccoli muscoli e poi aggiungono polpaccio ed equilibrio.',
+        'Un buon lavoro di forza per il piede copre entrambi i gruppi:',
+        {
+          list: [
+            'L’esercizio del piede corto, l’apertura delle dita e il sollevamento dell’alluce allenano i muscoli intrinseci.',
+            'I sollevamenti sulle punte allenano il polpaccio.',
+            'Stare su una gamba li fa lavorare insieme.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -161,7 +175,8 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       h2: 'Gli esercizi per rinforzare i piedi prevengono gli infortuni da corsa?',
       keyFact: 'In uno studio del 2020 su 118\u00A0runner, chi non faceva l’allenamento del core del piede aveva una probabilità 2,42\u00A0volte più alta di infortunarsi nei 12\u00A0mesi (Taddei e colleghi).',
       paragraphs: [
-        'Gli esercizi per rinforzare i piedi hanno ridotto gli infortuni da corsa in un buono studio, ma uno solo. Nel 2020, Taddei e colleghi hanno diviso a caso 118\u00A0runner amatoriali di lunga distanza tra un gruppo core del piede (57\u00A0runner) e un gruppo di controllo (61\u00A0runner). Il gruppo core del piede ha seguito un corso supervisionato di circa due mesi sui muscoli di piede e caviglia, poi ha continuato ad allenarsi con una supervisione a distanza. Nei 12\u00A0mesi, il gruppo di controllo aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa. Gli autori hanno visto comparire l’effetto dopo circa quattro-otto mesi di allenamento.',
+        'Gli esercizi per rinforzare i piedi **hanno ridotto gli infortuni da corsa in un buono studio, ma uno solo.** Nel 2020, Taddei e colleghi hanno diviso a caso 118\u00A0runner amatoriali di lunga distanza tra un gruppo core del piede (57\u00A0runner) e un gruppo di controllo (61\u00A0runner). Il gruppo core del piede ha seguito un corso supervisionato di circa due mesi sui muscoli di piede e caviglia, poi ha continuato ad allenarsi con una supervisione a distanza.',
+        'Nei 12\u00A0mesi, il gruppo di controllo aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa. Gli autori hanno visto comparire l’effetto dopo circa quattro-otto mesi di allenamento.',
         'Uno studio precedente e più piccolo dello stesso gruppo, con 28\u00A0runner, ha trovato che circa due mesi di allenamento del piede aumentavano le dimensioni di ogni muscolo del piede misurato, rispetto al gruppo di controllo. I runner spingevano anche da terra con più forza.',
         'Entrambi gli studi vengono da un solo gruppo di ricerca in Brasile, su runner amatoriali che all’inizio non erano infortunati. Non sappiamo ancora se il programma aiuti chi comincia o chi ha già dolore. Se corri e hai già dolore al tallone, parti da [dolore al tallone nei runner](/heel-pain-runners/) (in inglese).',
       ],
@@ -172,8 +187,17 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       h2: 'Quanto tempo ci vuole per rinforzare i piedi?',
       keyFact: 'In uno studio del 2019 su 57\u00A0runner, i muscoli del piede sono cresciuti e diventati più forti in circa due mesi, con alcuni muscoli più grandi già dopo un mese (Ridge e colleghi).',
       paragraphs: [
-        'Negli studi, i muscoli del piede sono diventati misurabilmente più forti in circa due mesi di allenamento regolare. Nel 2019, Ridge e colleghi hanno assegnato a caso 57\u00A0runner a esercizi di rinforzo del piede, a camminare con scarpe minimaliste o a nessun cambiamento. Il gruppo esercizi faceva esercizi progressivi contro resistenza almeno cinque volte a settimana. Dopo circa due mesi, ogni muscolo del piede misurato era più grande e più forte in entrambi i gruppi attivi, senza cambiamenti nel gruppo di controllo. Alcuni muscoli erano già più grandi al controllo dopo un mese.',
-        'La forma dell’arco cambia più lentamente, e di meno. Una revisione del 2023 di quattro studi ha trovato che il rinforzo dei muscoli intrinseci del piede non cambiava quanto si muove l’arco dopo un mese, ma lo cambiava dopo due mesi, con prove di bassa qualità. In un piccolo studio di Mulligan e Cook con 21\u00A0persone e senza gruppo di controllo, il navicular drop (quanto scende l’arco interno quando stai in piedi) è diminuito in media di 1,8\u00A0mm dopo un mese di allenamento del piede corto. È un cambiamento reale ma piccolo.',
+        'Negli studi, i muscoli del piede sono diventati misurabilmente più forti in **circa due mesi di allenamento regolare**. Nel 2019, Ridge e colleghi hanno assegnato a caso 57\u00A0runner a:',
+        {
+          list: [
+            'Esercizi di rinforzo del piede.',
+            'Camminare con scarpe minimaliste.',
+            'Nessun cambiamento.',
+          ],
+        },
+        'Il gruppo esercizi faceva esercizi progressivi contro resistenza almeno cinque volte a settimana. Dopo circa due mesi, ogni muscolo del piede misurato era più grande e più forte in entrambi i gruppi attivi, senza cambiamenti nel gruppo di controllo. Alcuni muscoli erano già più grandi al controllo dopo un mese.',
+        'La forma dell’arco cambia più lentamente, e di meno. Una revisione del 2023 di quattro studi ha trovato che il rinforzo dei muscoli intrinseci del piede non cambiava quanto si muove l’arco dopo un mese, ma lo cambiava dopo due mesi, con prove di bassa qualità.',
+        'In un piccolo studio di Mulligan e Cook con 21\u00A0persone e senza gruppo di controllo, il navicular drop (quanto scende l’arco interno quando stai in piedi) è diminuito in media di 1,8\u00A0mm dopo un mese di allenamento del piede corto. È un cambiamento reale ma piccolo.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -189,16 +213,25 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       h2: 'Gli anziani possono rinforzare i piedi?',
       keyFact: 'In uno studio del 2016 su adulti tra 60 e 90\u00A0anni, un allenamento del piede supervisionato e progressivo ha aumentato la forza delle dita fino al 36%, mentre un programma a casa non l’ha cambiata (Mickle e colleghi).',
       paragraphs: [
-        'Gli anziani possono rinforzare i piedi, e in uno studio a funzionare è stata la versione supervisionata con carichi via via più pesanti. In uno studio del 2016, Mickle e colleghi hanno assegnato 85\u00A0persone tra 60 e 90\u00A0anni a un corso supervisionato con esercizi per il piede via via più pesanti oppure a un programma di esercizi a casa, più un gruppo separato di 32\u00A0controlli. Dopo tre mesi, il gruppo supervisionato ha aumentato la forza delle dita fino al 36% e restava più a lungo su una gamba. Il gruppo a casa e il gruppo di controllo non hanno mostrato cambiamenti nella forza delle dita.',
+        'Gli anziani possono rinforzare i piedi, e in uno studio a funzionare è stata la versione supervisionata con carichi via via più pesanti. In uno studio del 2016, Mickle e colleghi hanno assegnato 85\u00A0persone tra 60 e 90\u00A0anni a un corso supervisionato con esercizi per il piede via via più pesanti oppure a un programma di esercizi a casa, più un gruppo separato di 32\u00A0controlli.',
+        'Dopo tre mesi, il gruppo supervisionato ha aumentato la forza delle dita fino al 36% e restava più a lungo su una gamba. Il gruppo a casa e il gruppo di controllo non hanno mostrato cambiamenti nella forza delle dita.',
         'Una revisione del 2022 di nove studi su adulti dai 65\u00A0anni in su ha trovato che il rinforzo dei muscoli intrinseci del piede aiutava forza, equilibrio e mobilità, e forse riduceva il rischio di caduta, con poco effetto sul modo di camminare. Gli autori hanno valutato discreta la qualità delle prove.',
-        'Quindi passa a versioni più difficili quando diventano facili, e tieni vicino un muro o un piano di lavoro per il lavoro di equilibrio. Se le cadute ti preoccupano, un fisioterapista può impostare un programma sicuro.',
+        'Quindi passa a versioni più difficili quando diventano facili, e **tieni vicino un muro o un piano di lavoro per il lavoro di equilibrio.** Se le cadute ti preoccupano, un fisioterapista può impostare un programma sicuro.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: 'Il rinforzo del piede aiuta la fascite plantare o il piede piatto?',
       paragraphs: [
-        'Per la fascite plantare, il rinforzo del piede aggiunto allo stretching non ha fatto meglio del solo stretching in uno studio che li confrontava. Nel 2016, Kamonseki e colleghi hanno diviso 83\u00A0persone con fascite plantare in tre gruppi per due mesi: rinforzo del piede più stretching, rinforzo di piede e anca più stretching, oppure solo stretching. Tutti e tre i gruppi sono migliorati per dolore e funzionalità, e nessun gruppo ha fatto meglio degli altri. Per il dolore al tallone, vedi gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'Per la fascite plantare, il rinforzo del piede aggiunto allo stretching non ha fatto meglio del solo stretching in uno studio che li confrontava. Nel 2016, Kamonseki e colleghi hanno diviso 83\u00A0persone con fascite plantare in tre gruppi per due mesi:',
+        {
+          list: [
+            'Rinforzo del piede più stretching.',
+            'Rinforzo di piede e anca più stretching.',
+            'Solo stretching.',
+          ],
+        },
+        'Tutti e tre i gruppi sono migliorati per dolore e funzionalità, e nessun gruppo ha fatto meglio degli altri. Per il dolore al tallone, vedi gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
         'Per il piede piatto flessibile, uno studio del 2023 su 52\u00A0persone ha trovato che un programma misto con l’esercizio del piede corto cambiava la forma dell’arco più che nel gruppo di controllo. I dettagli, e i limiti del solo esercizio del piede corto, sono nella pagina sugli [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se il dolore è soprattutto alle dita, la guida sugli [esercizi per rinforzare le dita dei piedi](/it/esercizi-rinforzo-dita-piedi/) va più a fondo, e per la caviglia ci sono gli [esercizi di rinforzo della caviglia](/it/esercizi-rinforzo-caviglia/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -207,7 +240,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       h2: 'Quanto sono solide le prove sul rinforzo del piede?',
       paragraphs: [
         'Le prove che gli esercizi per il piede rendono più forti i muscoli del piede vanno nella stessa direzione, ma gli studi sono piccoli. Una revisione del 2025 di Peters-Dickie e colleghi ha incluso 28\u00A0studi randomizzati con 1.399\u00A0persone. Ha sostenuto gli esercizi per il piede per aumentarne la forza, ma ha valutato la certezza da bassa a molto bassa, soprattutto perché c’erano pochi studi per ogni domanda e molti avevano un alto rischio di bias. I risultati sulle dimensioni dei muscoli erano contrastanti.',
-        'Le prove che piedi più forti vogliano dire meno infortuni sono ancora più scarse e si basano soprattutto sull’unico studio sui runner visto sopra. Il rinforzo del piede ha pochi rischi, costa poco e costruisce davvero forza. Se prevenga il tuo prossimo infortunio è ancora una domanda aperta. Come queste guide valutano gli studi è spiegato nella pagina sulla [scienza](/science/) (in inglese).',
+        'Le prove che piedi più forti vogliano dire meno infortuni sono ancora più scarse e si basano soprattutto sull’unico studio sui runner visto sopra. **Il rinforzo del piede ha pochi rischi, costa poco e costruisce davvero forza.** Se prevenga il tuo prossimo infortunio è ancora una domanda aperta. Come queste guide valutano gli studi è spiegato nella pagina sulla [scienza](/science/) (in inglese).',
       ],
       sourceNote: 'Peters-Dickie 2025: le meta-analisi hanno mostrato che le scarpe minimaliste aumentavano la forza delle dita dalla 2 alla 5, e che gli esercizi per il piede riducevano il movimento dell’arco durante la corsa; certezza da bassa a molto bassa.',
       cites: [CITE.petersDickie],

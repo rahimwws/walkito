@@ -47,7 +47,7 @@ export const HAGLUNDS_PT: Guide = {
     {
       h2: 'Qual a relação entre Haglund e a tendinopatia insercional do Aquiles?',
       paragraphs: [
-        'A deformidade de Haglund e a tendinopatia insercional do Aquiles muitas vezes aparecem juntas, mas não são a mesma condição. A tendinopatia insercional é a dor no ponto em que o tendão de Aquiles se prende ao osso do calcanhar, normalmente por sobrecarga. A deformidade de Haglund é um formato do osso. O calombo pode irritar o tendão por trás, e a inserção do tendão pode ser afetada pela mesma compressão que inflama a bursa.',
+        'A deformidade de Haglund e a tendinopatia insercional do Aquiles muitas vezes aparecem juntas, mas **não são a mesma condição.** A tendinopatia insercional é a dor no ponto em que o tendão de Aquiles se prende ao osso do calcanhar, normalmente por sobrecarga. A deformidade de Haglund é um formato do osso. O calombo pode irritar o tendão por trás, e a inserção do tendão pode ser afetada pela mesma compressão que inflama a bursa.',
         'Na prática: se você tem um calombo de Haglund e dor atrás do calcanhar, a dor pode vir da bursa, da inserção do tendão ou das duas. Um profissional de saúde consegue diferenciar examinando onde a sensibilidade é maior e se alongar ou pôr carga reproduz a dor.',
         'A diretriz de 2024 para tendinopatia do Aquiles separa claramente a doença da porção média da doença insercional. Nos problemas insercionais, que incluem os casos associados a Haglund, o protocolo padrão de descida excêntrica do calcanhar precisa de ajuste. A dorsiflexão profunda, deixar o calcanhar descer abaixo da borda do degrau, comprime o tendão contra o osso e pode piorar os sintomas.',
       ],
@@ -65,9 +65,18 @@ export const HAGLUNDS_PT: Guide = {
     {
       h2: 'Quais são as opções conservadoras para a deformidade de Haglund?',
       paragraphs: [
-        'Uma revisão narrativa de 2020 lista as primeiras medidas conservadoras: mudar o calçado (evitar calçados com contraforte rígido, usar calçados abertos atrás ou acolchoar a região do calcanhar), elevadores de calcanhar para reduzir a tensão no Aquiles, alongar o gastrocnêmio e o sóleo, fortalecer a panturrilha e modificar a atividade.',
+        'Uma revisão narrativa de 2020 lista as primeiras medidas conservadoras:',
+        {
+          list: [
+            '**Mudar o calçado:** evitar calçados com contraforte rígido, usar calçados abertos atrás ou acolchoar a região do calcanhar.',
+            '**Elevadores de calcanhar:** para reduzir a tensão no Aquiles.',
+            '**Alongar:** o gastrocnêmio e o sóleo.',
+            '**Fortalecer:** a panturrilha.',
+            '**Modificar a atividade.**',
+          ],
+        },
         'Nenhum ensaio clínico randomizado testou qualquer uma dessas intervenções especificamente para a deformidade de Haglund. A evidência é opinião de especialistas e séries de casos. A revisão cirúrgica de 2022 observou que a maioria dos autores recomenda pelo menos seis meses de tratamento conservador antes de considerar a cirurgia.',
-        'A mudança mais imediata muitas vezes é o calçado. Se um contraforte rígido está apertando o calombo, tirar essa pressão pode reduzir os sintomas rápido. Calçados abertos atrás, calçados com contraforte macio ou flexível, ou um acolchoamento colocado dentro do calçado em volta (não em cima) do calombo são opções práticas.',
+        '**A mudança mais imediata muitas vezes é o calçado.** Se um contraforte rígido está apertando o calombo, tirar essa pressão pode reduzir os sintomas rápido. Calçados abertos atrás, calçados com contraforte macio ou flexível, ou um acolchoamento colocado dentro do calçado em volta (não em cima) do calombo são opções práticas.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -145,7 +154,15 @@ export const HAGLUNDS_PT: Guide = {
       keyFact: 'Uma revisão sistemática de 2022 com 20\u00A0estudos concluiu que tanto a cirurgia aberta quanto a endoscópica melhoraram as notas de função da AOFAS, com recuperação mais curta nas técnicas endoscópicas (Yuen e colegas, 2022).',
       paragraphs: [
         'A cirurgia entra na conversa depois de pelo menos seis meses de tratamento conservador sem alívio suficiente. A revisão sistemática de 2022 de Yuen e colegas incluiu 20\u00A0estudos e concluiu que tanto a técnica aberta quanto a endoscópica melhoraram as notas da AOFAS (American Orthopaedic Foot and Ankle Society). As abordagens endoscópicas tiveram tempo de recuperação mais curto.',
-        'A cirurgia normalmente envolve retirar a proeminência óssea (calcaneoplastia), remover a bursa inflamada e, em alguns casos, desbridar ou reinserir o tendão de Aquiles. As complicações podem incluir problemas de cicatrização, lesão de nervo e enfraquecimento do tendão. A decisão é sua e do seu cirurgião.',
+        'A cirurgia normalmente envolve:',
+        {
+          list: [
+            'Retirar a proeminência óssea (calcaneoplastia).',
+            'Remover a bursa inflamada.',
+            'Em alguns casos, desbridar ou reinserir o tendão de Aquiles.',
+          ],
+        },
+        'As complicações podem incluir problemas de cicatrização, lesão de nervo e enfraquecimento do tendão. A decisão é sua e do seu cirurgião.',
         'Esta página não recomenda nem desaconselha a cirurgia. As medidas conservadoras acima são onde a maioria das pessoas começa, e muitas respondem bem o suficiente para evitar uma operação. Se seis meses de mudança de calçado, exercício e ajustes na atividade não ajudaram, um especialista em pé e tornozelo pode conversar com você sobre as opções cirúrgicas.',
       ],
       cites: [CITE.yuenHaglund],
@@ -155,7 +172,7 @@ export const HAGLUNDS_PT: Guide = {
       paragraphs: [
         'O calçado não cria a proeminência óssea. O formato do calcâneo é em parte genético. Mas calçados com um contraforte rígido, que não cede, podem irritar um calombo que de outra forma não doeria. Essa é a origem do nome em inglês “pump bump”, por causa da traseira rígida dos scarpins.',
         'Calçados a evitar: qualquer um com um contraforte duro e estreito que aperta a parte de trás do calcanhar. Calçados a procurar: gola do calcanhar macia ou acolchoada, parte de trás um pouco aberta ou flexível, e espaço suficiente para o contraforte não pressionar. Elevadores de calcanhar dentro do calçado também podem afastar um pouco o tendão de Aquiles do calombo.',
-        'Mudar o calçado é a medida que dá para pôr em prática mais rápido e a mais recomendada de forma consistente na literatura de opinião de especialistas. Se você consegue tirar a pressão, muitas vezes consegue reduzir a dor.',
+        'Mudar o calçado é a medida que dá para pôr em prática mais rápido e a mais recomendada de forma consistente na literatura de opinião de especialistas. **Se você consegue tirar a pressão, muitas vezes consegue reduzir a dor.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

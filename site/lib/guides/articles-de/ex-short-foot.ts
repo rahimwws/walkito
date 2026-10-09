@@ -37,7 +37,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Wie geht die Kurzer-Fuß-Übung?',
       paragraphs: [
         'Setz dich barfuß auf einen Stuhl, die Füße stehen flach auf dem Boden. Stell den Fuß so hin, dass Ferse, Fußballen und alle fünf Zehen auf dem Boden liegen. Ohne die Zehen einzukrallen oder festzukrallen, versuchst du, den Fußballen nach hinten Richtung Ferse zu ziehen. Dein Gewölbe hebt sich. Halte diese Spannung, dann lass los.',
-        'Stell dir vor, du machst den Fuß kürzer und höher statt breiter und flacher. Die Zehen sollten nicht in den Boden drücken, sich nicht abheben und sich nicht einrollen. Wenn du siehst, dass die Zehen greifen, benutzt du die falschen Muskeln. Leg am Anfang einen Finger unter das Gewölbe, damit du spürst, wie es sich hebt.',
+        'Stell dir vor, du machst den Fuß kürzer und höher statt breiter und flacher. Die Zehen sollten nicht in den Boden drücken, sich nicht abheben und sich nicht einrollen. **Wenn du siehst, dass die Zehen greifen, benutzt du die falschen Muskeln.** Leg am Anfang einen Finger unter das Gewölbe, damit du spürst, wie es sich hebt.',
       ],
       exercises: [
         {
@@ -59,8 +59,16 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Welche Muskeln trainiert die Kurzer-Fuß-Übung?',
       paragraphs: [
         'Die Kurzer-Fuß-Übung zielt auf die inneren Fußsohlenmuskeln: Abductor hallucis, Flexor digitorum brevis, Quadratus plantae und Abductor digiti minimi. Diese Muskeln liegen ganz im Fuß und stützen das innere Längsgewölbe von unten.',
-        'Eine MRT-Studie von Gooding und Kollegen von 2016 maß die Muskelaktivierung nach 40\u00A0Wiederholungen von vier verschiedenen Fußübungen bei 8\u00A0College-Sportlern. Die Kurzer-Fuß-Übung erzeugte die höchste mittlere Aktivierung im Abductor digiti minimi (34,9\u00A0%), im Abductor hallucis (29,7\u00A0%) und im Flexor digitorum brevis (24,8\u00A0%). Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen.',
-        'Deshalb gilt der kurze Fuß als bessere Übung als Handtuchgreifen, wenn es gezielt um die inneren Fußmuskeln geht. Handtuchgreifen setzt die langen Zehenbeuger ein, die äußeren Muskeln, die vom Schienbein zu den Zehen laufen. Bei der Kurzer-Fuß-Übung bleiben diese äußeren Muskeln ruhiger.',
+        'Eine MRT-Studie von Gooding und Kollegen von 2016 maß die Muskelaktivierung nach 40\u00A0Wiederholungen von vier verschiedenen Fußübungen bei 8\u00A0College-Sportlern. Die Kurzer-Fuß-Übung erzeugte die höchste mittlere Aktivierung:',
+        {
+          list: [
+            'Im Abductor digiti minimi (34,9\u00A0%).',
+            'Im Abductor hallucis (29,7\u00A0%).',
+            'Im Flexor digitorum brevis (24,8\u00A0%).',
+          ],
+        },
+        'Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen.',
+        'Deshalb gilt **der kurze Fuß als bessere Übung als Handtuchgreifen, wenn es gezielt um die inneren Fußmuskeln geht.** Handtuchgreifen setzt die langen Zehenbeuger ein, die äußeren Muskeln, die vom Schienbein zu den Zehen laufen. Bei der Kurzer-Fuß-Übung bleiben diese äußeren Muskeln ruhiger.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -68,7 +76,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Wie steigerst du vom Sitzen zum Stehen und auf ein Bein?',
       paragraphs: [
         'Sobald sich der kurze Fuß im Sitzen zwei Einheiten hintereinander leicht angefühlt hat, kommt als Nächstes der Stand auf beiden Füßen. Dieselbe Anspannung muss jetzt dein Körpergewicht halten. Danach bringt der kurze Fuß auf einem Bein Anforderungen ans Gleichgewicht dazu und zeigt jeden Unterschied zwischen deiner linken und rechten Seite.',
-        'Jede Variante ist dieselbe Bewegung. Es ändert sich nur die Last. Im Stehen verdoppelt sich die Anforderung an die Gewölbemuskeln. Auf einem Bein verdoppelt sie sich ungefähr noch einmal, und das Sprunggelenk muss zusätzlich stabilisiert werden.',
+        'Jede Variante ist dieselbe Bewegung. **Es ändert sich nur die Last.** Im Stehen verdoppelt sich die Anforderung an die Gewölbemuskeln. Auf einem Bein verdoppelt sie sich ungefähr noch einmal, und das Sprunggelenk muss zusätzlich stabilisiert werden.',
       ],
       exercises: [
         {
@@ -101,8 +109,13 @@ export const EX_SHORT_FOOT_DE: Guide = {
     {
       h2: 'Welche Fehler machen die Kurzer-Fuß-Übung weniger wirksam?',
       paragraphs: [
-        'Der häufigste Fehler ist, die Zehen einzukrallen. Wenn sich die Zehen beugen und in den Boden greifen, wird aus der Übung ein Zehenkrallen, und die äußeren Beuger übernehmen. Lass die Zehen lang und locker. Manchen hilft es, die Zehen kurz anzuheben, das Gewölbe anzuspannen und die Zehen dann wieder abzulegen.',
-        'Der zweite Fehler ist, den Fuß nach außen zu drücken, statt ihn zu verkürzen. Die Bewegung geht gerade nach hinten, Fußballen zur Ferse, nicht zur Seite. Der dritte ist, die Luft anzuhalten. Atme bei jedem Halten normal weiter.',
+        {
+          list: [
+            'Der häufigste Fehler ist, die Zehen einzukrallen. Wenn sich die Zehen beugen und in den Boden greifen, wird aus der Übung ein Zehenkrallen, und die äußeren Beuger übernehmen. **Lass die Zehen lang und locker.** Manchen hilft es, die Zehen kurz anzuheben, das Gewölbe anzuspannen und die Zehen dann wieder abzulegen.',
+            'Der zweite Fehler ist, den Fuß nach außen zu drücken, statt ihn zu verkürzen. Die Bewegung geht gerade nach hinten, Fußballen zur Ferse, nicht zur Seite.',
+            'Der dritte ist, die Luft anzuhalten. Atme bei jedem Halten normal weiter.',
+          ],
+        },
         'Wenn du gar nicht spürst, dass sich das Gewölbe hebt, leg einen Finger oder einen Stift unter das Gewölbe. Das Ziel ist zu spüren, wie das Gewölbe gegen diesen Gegenstand drückt. Es kann mehrere Einheiten dauern, bis das Gehirn lernt, diese Muskeln auf Kommando anzusteuern. Diese Lernphase ist normal.',
       ],
     },
@@ -110,10 +123,19 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Was sagt die Forschung zur Kurzer-Fuß-Übung?',
       keyFact: 'In einer Studie von 2023 mit 52\u00A0Personen mit flexiblen Plattfüßen veränderte ein sechswöchiges Programm aus Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen die Form des Gewölbes stärker als in einer Kontrollgruppe (Brijwasi und Kollegen, 2023).',
       paragraphs: [
-        'Die stärksten Belege kommen aus Programmen, die die Kurzer-Fuß-Übung mit anderen Übungen kombinieren, nicht aus dem kurzen Fuß allein. In einer Studie von 2023 mit 52\u00A0Personen mit flexiblen Plattfüßen testeten Brijwasi und Kollegen ein sechswöchiges Programm aus Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen. Das Programm veränderte zwei Maße der Gewölbeform stärker als in der Kontrollgruppe.',
+        'Die stärksten Belege kommen aus Programmen, die die Kurzer-Fuß-Übung mit anderen Übungen kombinieren, nicht aus dem kurzen Fuß allein. In einer Studie von 2023 mit 52\u00A0Personen mit flexiblen Plattfüßen testeten Brijwasi und Kollegen ein sechswöchiges Programm aus:',
+        {
+          list: [
+            'Kurzer-Fuß-Übungen.',
+            'Sprunggelenkstraining.',
+            'Hüftkräftigung.',
+            'Dehnen.',
+          ],
+        },
+        'Das Programm veränderte zwei Maße der Gewölbeform stärker als in der Kontrollgruppe.',
         'Eine Metaanalyse von Cheng und Kollegen von 2024 betrachtete das Kurzer-Fuß-Training allein über mehrere Studien. Zusammengefasst zeigte sich insgesamt keine signifikante Verbesserung beim Navicular Drop oder beim Foot Posture Index. Als die Autoren die Analyse aber auf Programme über sechs Wochen beschränkten, verbesserte sich der Navicular Drop signifikant. Die Dauer des Trainings zählt.',
         'Zum Gleichgewicht verglich eine randomisierte Studie von Lynn und Kollegen von 2012 bei gesunden Erwachsenen vier Wochen Kurzer-Fuß-Training mit vier Wochen Handtuchgreifen. Die Kurzer-Fuß-Gruppe verbesserte ihr dynamisches Gleichgewicht stärker als die Gruppe mit Handtuchgreifen.',
-        'Keine dieser Studien ist groß. Die Belege stützen die Kurzer-Fuß-Übung als Teil eines breiteren Programms zur Kräftigung des Fußes, vor allem bei Plattfüßen und Schmerzen im Gewölbe. Sie ist keine Lösung für sich allein, und sie wurde nicht als Hauptbehandlung bei Plantarfasziitis allein getestet. Die ganze Übungsliste findest du unter [Übungen bei Plattfuß](/de/plattfuss-uebungen/) oder [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Keine dieser Studien ist groß. **Die Belege stützen die Kurzer-Fuß-Übung als Teil eines breiteren Programms zur Kräftigung des Fußes, vor allem bei Plattfüßen und Schmerzen im Gewölbe.** Sie ist keine Lösung für sich allein, und sie wurde nicht als Hauptbehandlung bei Plantarfasziitis allein getestet. Die ganze Übungsliste findest du unter [Übungen bei Plattfuß](/de/plattfuss-uebungen/) oder [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

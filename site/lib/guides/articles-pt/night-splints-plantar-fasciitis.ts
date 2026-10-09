@@ -33,7 +33,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
         alt: 'Vista lateral de um pé com a fáscia plantar em destaque, do osso do calcanhar até os dedos',
       },
       paragraphs: [
-        'A tala noturna para fascite plantar é uma órtese que você usa na cama e que impede o pé de apontar para baixo enquanto você dorme. Quando você fica parado deitado, o pé normalmente cai em flexão plantar (dedos apontando para longe de você). Nessa posição, a fáscia plantar, a faixa grossa de tecido embaixo do pé, e a panturrilha descansam encurtadas por horas.',
+        'A tala noturna para fascite plantar é uma órtese que você usa na cama e que **impede o pé de apontar para baixo enquanto você dorme.** Quando você fica parado deitado, o pé normalmente cai em flexão plantar (dedos apontando para longe de você). Nessa posição, a fáscia plantar, a faixa grossa de tecido embaixo do pé, e a panturrilha descansam encurtadas por horas.',
         'A tala mantém o tornozelo em posição neutra ou em leve dorsiflexão (dedos puxados um pouco em direção à canela). A ideia é que o tecido fique num comprimento suave durante a noite, para que os primeiros passos não sejam um alongamento repentino de uma fáscia rígida e encurtada. Esse alongamento repentino é a explicação mais comum para a dor aguda dos primeiros passos, que torna a fascite plantar tão fácil de reconhecer.',
         'A diretriz de 2023 para dor no calcanhar define as talas noturnas como “órteses pré-fabricadas de plástico usadas para impedir a flexão plantar do tornozelo durante o sono”. Versões mais macias, como faixas e meias, buscam a mesma posição com menos estrutura.',
       ],
@@ -45,7 +45,13 @@ export const NIGHT_SPLINTS_PT: Guide = {
       paragraphs: [
         'A tala noturna funciona para algumas pessoas com fascite plantar, principalmente para a dor dos primeiros passos da manhã, mas a pesquisa por trás dela é mais fraca do que o grau sugere. A diretriz de 2023 para dor no calcanhar da American Physical Therapy Association diz que os profissionais “devem prescrever um programa de talas noturnas de 1 a 3\u00A0meses” para pessoas que têm dor constante no primeiro passo da manhã. Isso é grau **A**, o mais alto da diretriz.',
         'Mas vale ler as letras miúdas. A atualização da evidência da diretriz diz que não foram encontrados estudos novos sobre talas noturnas desde 2014, então a recomendação foi mantida sem mudança. O grau se apoia em poucos ensaios dos anos 1990 e 2000.',
-        'Duas revisões dão um quadro mais cauteloso. Uma revisão sistemática de 2023 encontrou só três ensaios randomizados que atendiam aos seus critérios e considerou os três com alto risco de viés, ou seja, o desenho deles podia distorcer os resultados. Ela concluiu que as talas parecem melhorar a dor e a função, mas que são necessários mais estudos. Uma revisão de 2020 sobre opções mecânicas viu que talas combinadas com palmilhas se saíram melhor que cada uma sozinha.',
+        'Duas revisões dão um quadro mais cauteloso:',
+        {
+          list: [
+            '**Uma revisão sistemática de 2023** encontrou só três ensaios randomizados que atendiam aos seus critérios e considerou os três com alto risco de viés, ou seja, o desenho deles podia distorcer os resultados. Ela concluiu que as talas parecem melhorar a dor e a função, mas que são necessários mais estudos.',
+            '**Uma revisão de 2020 sobre opções mecânicas** viu que talas combinadas com palmilhas se saíram melhor que cada uma sozinha.',
+          ],
+        },
         'Então um resumo justo é este: a tala noturna é uma opção razoável se as suas manhãs continuam ruins apesar do alongamento, mas não é certeza de resultado, e os ensaios que existem são pequenos.',
       ],
       cites: [CITE.guideline, CITE.bendoSplintReview, CITE.schuitemaMechanical],
@@ -87,7 +93,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
       ],
       after: [
         'A única comparação direta que encontramos é um pequeno estudo preliminar de 2012. Dois terços das pessoas nele disseram que a dor e a rigidez da manhã diminuíram depois de usar uma tala. O tipo bota era mais desconfortável e atrapalhava o sono, e o tipo da frente da canela reduziu mais a dor no calcanhar, em média. Os autores disseram que as talas noturnas são, no geral, “mal toleradas”.',
-        'Se você vai escolher por conta própria, a certa provavelmente é aquela que você vai conseguir manter a noite inteira. Um profissional de saúde ou um fisioterapeuta pode ajudar com o ajuste.',
+        'Se você vai escolher por conta própria, **a certa provavelmente é aquela que você vai conseguir manter a noite inteira.** Um profissional de saúde ou um fisioterapeuta pode ajudar com o ajuste.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
     },
@@ -95,7 +101,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
       h2: 'Por quanto tempo usar a tala noturna para fascite plantar?',
       keyFact: 'A diretriz de 2023 para dor no calcanhar recomenda um programa de tala noturna de um a três meses (Koc e colegas, 2023).',
       paragraphs: [
-        'A diretriz de 2023 recomenda usar a tala noturna por um a três meses. Nos ensaios, as pessoas usaram a tala à noite por um mês (Powell) ou três meses (Probe, Martin).',
+        '**A diretriz de 2023 recomenda usar a tala noturna por um a três meses.** Nos ensaios, as pessoas usaram a tala à noite por um mês (Powell) ou três meses (Probe, Martin).',
         'Quantas horas por noite é menos claro. Nenhum ensaio que encontramos comparou horas de uso. Fabricantes de órteses e clínicas costumam sugerir começar com algumas horas e ir aumentando até a noite inteira, o que é sensato, mas não foi testado. Se você acordar e a tala estiver insuportável, tirar e colocar de novo na noite seguinte é melhor do que desistir na primeira noite.',
       ],
       bullets: [
@@ -112,7 +118,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
       keyFact: 'Depois de um ano, 1 de 28\u00A0pessoas que receberam uma tala noturna ainda a usava, contra 19 de 23 que ainda usavam palmilhas (Roos e colegas, 2006).',
       paragraphs: [
         'A maioria das pessoas para de usar a tala noturna porque é desconfortável dormir com ela. No ensaio de Roos e colegas, de 2006, só 1 de 28\u00A0pessoas que receberam uma tala ainda a usava depois de um ano, enquanto 19 de 23 ainda usavam as palmilhas. Esse ensaio também viu menos efeitos colaterais e melhor adesão com as palmilhas. No ensaio de Martin, de 2001, com 255\u00A0pessoas, algumas desistiram cedo porque não toleraram o dispositivo ou continuaram com dor forte.',
-        'Baixa adesão é normal, não um fracasso pessoal. A tala é para um a três meses, não para sempre. Algumas coisas práticas facilitam:',
+        '**Baixa adesão é normal, não um fracasso pessoal.** A tala é para um a três meses, não para sempre. Algumas coisas práticas facilitam:',
       ],
       bullets: [
         'Se você dorme de lado ou de bruços, uma meia ou uma tala dorsal pequena normalmente se adapta melhor a isso do que uma bota.',
@@ -127,8 +133,16 @@ export const NIGHT_SPLINTS_PT: Guide = {
       h2: 'Tala noturna, palmilhas ou alongamento: o que tentar primeiro?',
       keyFact: 'Em um ensaio com 43\u00A0pessoas, a dor caiu 62% em um ano nos grupos com palmilha e 48% só com a tala noturna (Roos e colegas, 2006).',
       paragraphs: [
-        'O alongamento da manhã normalmente vem primeiro, porque tem o mesmo grau **A** das talas noturnas, não custa nada e não atrapalha o sono. A diretriz de 2023 dá grau **A** ao alongamento da fáscia plantar e da panturrilha, e grau **B** ao fortalecimento dos músculos do pé e do tornozelo. Uma metanálise de 2020 com oito ensaios viu que o alongamento aliviou a dor, com evidência de qualidade moderada de que o alongamento da fáscia plantar aliviou mais que o alongamento da panturrilha.',
-        'Talas noturnas e palmilhas parecem funcionar melhor juntas do que separadas. No ensaio de Roos, os dois grupos com palmilhas tiveram mais alívio da dor em um ano do que o grupo só com tala. O pequeno estudo de Lee, de 2012, viu palmilhas mais tala se saírem melhor que só palmilhas. A revisão de 2020 sobre opções mecânicas chegou à mesma conclusão. A diretriz também recomenda não usar palmilhas como a única coisa que você faz para alívio da dor no curto prazo. Para saber mais sobre essa questão, veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
+        '**O alongamento da manhã normalmente vem primeiro**, porque tem o mesmo grau **A** das talas noturnas, não custa nada e não atrapalha o sono. A diretriz de 2023 dá grau **A** ao alongamento da fáscia plantar e da panturrilha, e grau **B** ao fortalecimento dos músculos do pé e do tornozelo. Uma metanálise de 2020 com oito ensaios viu que o alongamento aliviou a dor, com evidência de qualidade moderada de que o alongamento da fáscia plantar aliviou mais que o alongamento da panturrilha.',
+        'Talas noturnas e palmilhas parecem funcionar melhor juntas do que separadas:',
+        {
+          list: [
+            'No ensaio de Roos, os dois grupos com palmilhas tiveram mais alívio da dor em um ano do que o grupo só com tala.',
+            'O pequeno estudo de Lee, de 2012, viu palmilhas mais tala se saírem melhor que só palmilhas.',
+            'A revisão de 2020 sobre opções mecânicas chegou à mesma conclusão.',
+          ],
+        },
+        'A diretriz também recomenda não usar palmilhas como a única coisa que você faz para alívio da dor no curto prazo. Para saber mais sobre essa questão, veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
         'Uma ordem comum é alongamento e trabalho de panturrilha primeiro. Se os seus primeiros passos continuam ruins depois de mais ou menos um mês disso, acrescente uma tala por um a três meses. Muita gente usa palmilhas junto. Essa ordem é uma leitura razoável da diretriz, não algo que um ensaio tenha testado.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
@@ -170,7 +184,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
     {
       h2: 'Para quem a tala noturna pode servir, e quem deve pular?',
       paragraphs: [
-        'A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um esporão no raio-X.',
+        '**A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico**: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um esporão no raio-X.',
         'A tala faz menos sentido se o seu calcanhar dói principalmente enquanto você está deitado na cama, ou se a dor acorda você. Esse é outro padrão, e [dor no calcanhar à noite](/pt/dor-no-calcanhar-a-noite/) explica as causas que vale descartar. A tala também não é uma boa escolha se você tem pouca sensibilidade ou má circulação nos pés, porque as tiras e as estruturas podem machucar uma pele que você não sente.',
         'A fascite plantar muitas vezes melhora ao longo de meses, seja lá o que você use, e esse é um dos motivos pelos quais os ensaios com tala são difíceis de interpretar. Para prazos realistas, veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
       ],

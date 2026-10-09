@@ -31,7 +31,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
       h2: 'Comment faire un étirement du mollet genou tendu\u00A0?',
       paragraphs: [
         'Tenez-vous face à un mur, les mains à plat contre lui à peu près à hauteur d’épaules. Reculez un pied d’environ 60\u00A0centimètres. Gardez la jambe arrière tendue, le talon appuyé au sol et les orteils pointés vers l’avant. Avancez les hanches vers le mur jusqu’à sentir un étirement dans le haut du mollet arrière. Tenez 30\u00A0secondes, puis changez de jambe.',
-        'L’essentiel est de garder le genou arrière bien tendu. Cela isole le gastrocnémien, qui passe à la fois par le genou et par la cheville. Si vous pliez le genou, l’étirement passe au soléaire, le muscle profond du mollet, et c’est un autre exercice. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/) pour cette version.',
+        '**L’essentiel est de garder le genou arrière bien tendu.** Cela isole le gastrocnémien, qui passe à la fois par le genou et par la cheville. Si vous pliez le genou, l’étirement passe au soléaire, le muscle profond du mollet, et c’est un autre exercice. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/) pour cette version.',
       ],
       exercises: [
         {
@@ -58,7 +58,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
       paragraphs: [
         'Le gastrocnémien part de l’arrière du genou et descend jusqu’au talon par le tendon d’Achille. Le fascia plantaire prend le relais là où s’arrête le tendon d’Achille\u00A0: il passe sous l’os du talon et file vers les orteils. Quand le gastrocnémien est raide, il limite la capacité de la cheville à se plier vers le haut. Le fascia plantaire doit alors absorber plus de tension à chaque pas.',
         'Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite avait un odds ratio de 23,3 pour la fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou toute autre variable de l’étude.',
-        'Par ailleurs, une revue de 254\u00A0personnes atteintes de fasciite plantaire a trouvé que 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Autrement dit, un mollet raide n’est pas un détail. Il est présent chez la plupart des personnes atteintes.',
+        'Par ailleurs, une revue de 254\u00A0personnes atteintes de fasciite plantaire a trouvé que 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Autrement dit, **un mollet raide n’est pas un détail.** Il est présent chez la plupart des personnes atteintes.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -74,10 +74,14 @@ export const EX_CALF_STRETCH_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’étirement du mollet\u00A0?',
       paragraphs: [
-        'Plier le genou arrière. Dès que le genou se plie, le gastrocnémien se détend et l’étirement passe au soléaire. Gardez le genou arrière bien tendu pendant tout le maintien.',
-        'Laisser le talon arrière se soulever. Si le talon décolle du sol, le mollet n’est pas étiré. Appuyez d’abord le talon au sol, puis penchez-vous vers l’avant jusqu’à sentir l’étirement.',
-        'Tourner le pied arrière vers l’extérieur. Quand le pied tourne vers l’extérieur, l’étirement touche l’extérieur du mollet au lieu du muscle entier. Gardez les orteils pointés droit vers le mur.',
-        'Tenir trop peu de temps. Un maintien de 10\u00A0secondes ne suffit pas pour qu’un étirement soutenu agisse sur la longueur du tissu. Tenez au moins 30\u00A0secondes par répétition.',
+        {
+          list: [
+            '**Plier le genou arrière.** Dès que le genou se plie, le gastrocnémien se détend et l’étirement passe au soléaire. Gardez le genou arrière bien tendu pendant tout le maintien.',
+            '**Laisser le talon arrière se soulever.** Si le talon décolle du sol, le mollet n’est pas étiré. Appuyez d’abord le talon au sol, puis penchez-vous vers l’avant jusqu’à sentir l’étirement.',
+            '**Tourner le pied arrière vers l’extérieur.** Quand le pied tourne vers l’extérieur, l’étirement touche l’extérieur du mollet au lieu du muscle entier. Gardez les orteils pointés droit vers le mur.',
+            '**Tenir trop peu de temps.** Un maintien de 10\u00A0secondes ne suffit pas pour qu’un étirement soutenu agisse sur la longueur du tissu. Tenez au moins 30\u00A0secondes par répétition.',
+          ],
+        },
       ],
     },
     {
@@ -92,7 +96,8 @@ export const EX_CALF_STRETCH_FR: Guide = {
       h2: 'Comment l’étirement du mollet s’associe à l’étirement du soléaire',
       paragraphs: [
         'Le gastrocnémien et le soléaire forment ensemble le mollet. La version genou tendu étire le gastrocnémien. La version genou plié étire le soléaire. Ce sont deux exercices, pas deux versions du même.',
-        'La plupart des programmes pour la fasciite plantaire comprennent les deux, car un mollet peut être raide dans l’un des muscles ou dans les deux. La recommandation ne les sépare pas. Walkito programme les deux dans la même séance quand les étirements sont au programme. La page [étirement du soléaire](/fr/exercices/etirement-soleaire/) couvre la version genou plié. Pour le programme complet d’étirements et de renforcement, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
+        'La plupart des programmes pour la fasciite plantaire comprennent les deux, car un mollet peut être raide dans l’un des muscles ou dans les deux. La recommandation ne les sépare pas. Walkito programme les deux dans la même séance quand les étirements sont au programme.',
+        'La page [étirement du soléaire](/fr/exercices/etirement-soleaire/) couvre la version genou plié. Pour le programme complet d’étirements et de renforcement, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
       cites: [CITE.guideline],
     },

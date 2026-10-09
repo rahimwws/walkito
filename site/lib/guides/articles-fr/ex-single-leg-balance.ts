@@ -29,7 +29,7 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
     {
       h2: 'Comment tenir en équilibre sur une jambe\u00A0?',
       paragraphs: [
-        'Placez-vous près d’un mur ou d’un plan de travail. Décollez un pied du sol en pliant légèrement le genou. Fixez un point droit devant vous. Laissez le pied d’appui osciller. Ces oscillations sont le but\u00A0: les petits muscles du pied et de la cheville travaillent pour vous garder droit.',
+        'Placez-vous près d’un mur ou d’un plan de travail. Décollez un pied du sol en pliant légèrement le genou. Fixez un point droit devant vous. Laissez le pied d’appui osciller. **Ces oscillations sont le but\u00A0:** les petits muscles du pied et de la cheville travaillent pour vous garder droit.',
         'Tenez aussi longtemps que possible, jusqu’à 30\u00A0secondes, puis changez de côté. Trois maintiens par côté est une dose courante. Si vous ne tenez pas plus de quelques secondes, gardez le bout des doigts contre le mur et progressez peu à peu.',
       ],
       exercises: [
@@ -70,14 +70,14 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
       },
       after: [
         'Les chiffres chutent nettement dès que les yeux se ferment, surtout après 50\u00A0ans. La version yeux fermés est donc un test bien plus sensible du contrôle du pied et de la cheville. C’est aussi pourquoi l’application Walkito propose une progression les yeux fermés après le maintien les yeux ouverts.',
-        'Ce qui compte, plus que de correspondre au tableau, c’est que votre temps progresse au fil des semaines et que les deux côtés soient à peu près égaux. Un grand écart entre les jambes peut évoquer un déficit de force ou de stabilité d’un côté.',
+        '**Ce qui compte, plus que de correspondre au tableau, c’est que votre temps progresse au fil des semaines et que les deux côtés soient à peu près égaux.** Un grand écart entre les jambes peut évoquer un déficit de force ou de stabilité d’un côté.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'La progression les yeux fermés',
       paragraphs: [
-        'Fermer les yeux retire l’information visuelle que votre cerveau utilise normalement pour l’équilibre. Les propriocepteurs du pied et de la cheville, les capteurs qui détectent la position et le mouvement, doivent alors faire une plus grande part du travail. C’est une version plus difficile du même exercice, pas un autre exercice.',
+        'Fermer les yeux retire l’information visuelle que votre cerveau utilise normalement pour l’équilibre. Les propriocepteurs du pied et de la cheville, les capteurs qui détectent la position et le mouvement, doivent alors faire une plus grande part du travail. **C’est une version plus difficile du même exercice, pas un autre exercice.**',
         'Placez-vous près d’un mur par sécurité. Fermez les yeux et tenez aussi longtemps que possible. La plupart des gens voient leur temps tomber à une fraction de leur temps les yeux ouverts. Cet écart se réduit avec l’entraînement.',
         'L’application Walkito propose l’équilibre les yeux fermés comme exercice à part\u00A0: 3\u00A0maintiens de 20\u00A0secondes, deux pieds (en alternance). Il s’ouvre comme progression une fois que l’objectif équilibre les yeux ouverts est bien acquis.',
       ],
@@ -86,7 +86,16 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
       h2: 'Pourquoi l’équilibre compte-t-il pour les douleurs du pied\u00A0?',
       keyFact: 'Pour les entorses de la cheville, une analyse groupée de 8\u00A0études et 3\u00A0577\u00A0sportifs a montré que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0% par rapport à l’absence d’intervention (Bellows et Wong, 2018).',
       paragraphs: [
-        'L’équilibre n’est pas séparé de la force du pied. Quand vous tenez sur une jambe, les muscles intrinsèques du pied (les petits muscles à l’intérieur du pied qui soutiennent la voûte), les muscles du mollet, le tibial antérieur et les stabilisateurs de la hanche travaillent tous ensemble. Un déficit à n’importe quel endroit de cette chaîne oblige le pied à compenser.',
+        '**L’équilibre n’est pas séparé de la force du pied.** Quand vous tenez sur une jambe, tous ces éléments travaillent ensemble\u00A0:',
+        {
+          list: [
+            'Les muscles intrinsèques du pied (les petits muscles à l’intérieur du pied qui soutiennent la voûte).',
+            'Les muscles du mollet.',
+            'Le tibial antérieur.',
+            'Les stabilisateurs de la hanche.',
+          ],
+        },
+        'Un déficit à n’importe quel endroit de cette chaîne oblige le pied à compenser.',
         'Pour la fasciite plantaire et les pieds plats, l’entraînement de l’équilibre figure dans les programmes d’exercices avec les étirements et le renforcement, car il entraîne toute la chaîne à la fois. Un essai de 2023 sur 52\u00A0personnes aux pieds plats souples a montré qu’un programme associant pied court, travail de la cheville, renforcement de la hanche, étirements et travail d’équilibre modifiait la forme de la voûte davantage que dans un groupe témoin. L’équilibre n’était pas isolé dans cet essai, mais il faisait partie du programme qui s’est montré efficace.',
         'Pour les entorses de la cheville en particulier, une méta-analyse de 2018 portant sur 8\u00A0études et 3\u00A0577\u00A0sportifs a montré que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0% par rapport à l’absence d’intervention. C’est le résultat le plus solide qui justifie d’inclure l’équilibre dans un programme pour le pied.',
       ],
@@ -95,18 +104,26 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’équilibre sur une jambe\u00A0?',
       paragraphs: [
-        'Regarder le sol. Vos yeux doivent fixer un point à hauteur des yeux. Regarder vers le bas déplace votre poids vers l’avant et rend l’exercice plus facile, ce qui lui fait perdre son intérêt.',
-        'Verrouiller le genou d’appui. Une légère flexion garde les muscles actifs. Un genou verrouillé transfère la charge à l’articulation plutôt qu’aux muscles qui l’entourent.',
-        'Essayer de ne pas osciller. Les oscillations sont l’exercice. Les petites corrections que fait votre pied pour rester droit sont ce qui développe la proprioception et le contrôle de la cheville. Agripper le sol en recroquevillant les orteils ou vous crisper pour supprimer tout mouvement réduit l’effet de l’entraînement.',
-        'Se tenir trop loin du mur. Vous devez être assez près pour vous rattraper si vous perdez l’équilibre, surtout pendant la version yeux fermés. La sécurité d’abord.',
+        {
+          list: [
+            '**Regarder le sol.** Vos yeux doivent fixer un point à hauteur des yeux. Regarder vers le bas déplace votre poids vers l’avant et rend l’exercice plus facile, ce qui lui fait perdre son intérêt.',
+            '**Verrouiller le genou d’appui.** Une légère flexion garde les muscles actifs. Un genou verrouillé transfère la charge à l’articulation plutôt qu’aux muscles qui l’entourent.',
+            '**Essayer de ne pas osciller.** Les oscillations sont l’exercice. Les petites corrections que fait votre pied pour rester droit sont ce qui développe la proprioception et le contrôle de la cheville. Agripper le sol en recroquevillant les orteils ou vous crisper pour supprimer tout mouvement réduit l’effet de l’entraînement.',
+            '**Se tenir trop loin du mur.** Vous devez être assez près pour vous rattraper si vous perdez l’équilibre, surtout pendant la version yeux fermés. La sécurité d’abord.',
+          ],
+        },
       ],
     },
     {
       h2: 'Versions plus faciles et plus difficiles',
       paragraphs: [
-        'Si vous ne tenez pas plus de quelques secondes sur une jambe, gardez le bout des doigts contre un mur et progressez. Même un contact léger donne au cerveau une information d’équilibre en plus. Retirez un doigt à la fois à mesure que vous progressez.',
-        'Si 30\u00A0secondes sur un sol dur vous semblent faciles, essayez de tenir sur une serviette pliée ou un coussin. La surface molle fait travailler davantage la cheville à chaque oscillation. L’application propose un exercice d’équilibre sur un coussin comme progression suivante.',
-        'La progression la plus difficile est l’équilibre sur une jambe les yeux fermés sur une surface molle. Elle retire à la fois l’information visuelle et la stabilité du sol, et laisse le pied et la cheville faire presque tout le travail.',
+        {
+          list: [
+            '**Plus facile\u00A0:** Si vous ne tenez pas plus de quelques secondes sur une jambe, gardez le bout des doigts contre un mur et progressez. Même un contact léger donne au cerveau une information d’équilibre en plus. Retirez un doigt à la fois à mesure que vous progressez.',
+            '**Plus difficile\u00A0:** Si 30\u00A0secondes sur un sol dur vous semblent faciles, essayez de tenir sur une serviette pliée ou un coussin. La surface molle fait travailler davantage la cheville à chaque oscillation. L’application propose un exercice d’équilibre sur un coussin comme progression suivante.',
+            '**Le plus difficile\u00A0:** La progression la plus difficile est l’équilibre sur une jambe les yeux fermés sur une surface molle. Elle retire à la fois l’information visuelle et la stabilité du sol, et laisse le pied et la cheville faire presque tout le travail.',
+          ],
+        },
         'Pour des exercices liés qui renforcent la chaîne, voir les [montées sur pointes](/fr/exercices/montees-sur-pointes/), les [relevés des orteils](/fr/exercices/releves-orteils-mur/) et l’[exercice du pied court](/fr/exercices/pied-court/).',
       ],
     },

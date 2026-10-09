@@ -30,12 +30,24 @@ export const PF_DURATION_ES: Guide = {
       tool: 'pf-timeline',
       keyFact: 'En una cohorte de 174\u00A0personas, las mujeres quedaron sin síntomas a cerca de la mitad del ritmo de los hombres, y quienes tenían dolor en ambos talones, a cerca de un tercio del ritmo de quienes lo tenían en uno solo (Hansen y colegas, 2018).',
       paragraphs: [
-        'No hay un solo número. La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar.',
+        '**No hay un solo número.** La recuperación depende de:',
+        {
+          list: [
+            'Cuánto tiempo llevas con ella.',
+            'Lo que haces al respecto.',
+            'Algunos factores que no puedes controlar.',
+          ],
+        },
         'Una revisión de 2020 dice que los enfoques sin cirugía funcionan en cerca del 90\u00A0% de las personas con fascitis plantar, casi siempre en un plazo de tres a seis meses (Latt y colegas, 2020).',
         'Un estudio de cohorte de 2018 da la visión a más largo plazo. Hansen y colegas siguieron a 174\u00A0pacientes con fascitis plantar diagnosticada por ultrasonido durante 9,7\u00A0años en promedio desde que empezaron los síntomas. Al final del seguimiento, el 54\u00A0% ya no tenía síntomas y el 46\u00A0% todavía tenía algo de dolor.',
         'El análisis de Kaplan-Meier mostró que el riesgo de seguir con fascitis plantar era del 80,5\u00A0% al año, del 50,0\u00A0% a los cinco años y del 45,6\u00A0% a los diez años. Entre quienes se quedaron sin síntomas, los síntomas duraron en promedio 725\u00A0días, unos dos años (Hansen y colegas, 2018).',
-        'Esos números suenan peor que el típico «se quita en unos meses». Dos cosas explican la diferencia. Primero, la cohorte de Hansen era una población referida a especialistas: el 93\u00A0% había recibido una inyección de cortisona, lo que sugiere que eran casos más difíciles de manejar, no personas cuyo dolor se calmó con estiramientos y mejores zapatos.',
-        'Segundo, quienes seguían con síntomas al final del seguimiento tenían en promedio solo un dolor leve, de unos 2 a 3 de 10 al caminar. Así que «seguir con síntomas a los diez años» no significa necesariamente «no poder caminar». Para muchos significaba una molestia de vez en cuando, en lugar del dolor agudo de los primeros pasos con el que empezaron.',
+        'Esos números suenan peor que el típico «se quita en unos meses». Dos cosas explican la diferencia:',
+        {
+          list: [
+            '**Primero,** la cohorte de Hansen era una población referida a especialistas: el 93\u00A0% había recibido una inyección de cortisona, lo que sugiere que eran casos más difíciles de manejar, no personas cuyo dolor se calmó con estiramientos y mejores zapatos.',
+            '**Segundo,** quienes seguían con síntomas al final del seguimiento tenían en promedio solo un dolor leve, de unos 2 a 3 de 10 al caminar. Así que «seguir con síntomas a los diez años» no significa necesariamente «no poder caminar». Para muchos significaba una molestia de vez en cuando, en lugar del dolor agudo de los primeros pasos con el que empezaron.',
+          ],
+        },
       ],
       sourceNote:
         'Hansen 2018: riesgo de fascitis plantar según Kaplan-Meier: 80,5\u00A0% (IC 95\u00A0%: 73,5-85,6) al año, 50,0\u00A0% (42,4-57,1) a los 5\u00A0años, 45,6\u00A0% (37,9-53,0) a los 10\u00A0años, 44,0\u00A0% (35,9-51,8) a los 15\u00A0años. Duración media de los síntomas en el grupo sin síntomas: 725\u00A0días (rango 41-4018). Dolor (NRS) en el grupo con síntomas al final del seguimiento: 0,7 en reposo, 1,8 al caminar, 2,8 al correr, 2,1 a la presión.',
@@ -45,8 +57,14 @@ export const PF_DURATION_ES: Guide = {
       h2: '¿La fascitis plantar se quita sola?',
       paragraphs: [
         'A veces. Hay personas que un día se despiertan y el dolor ya no está, sin haber hecho nada en particular. Pero «se quita sola» no sirve como predicción para nadie en concreto, porque no hay forma de saber de antemano si estás en ese grupo.',
-        'Lo que sí dice la evidencia es que hacer algo al respecto, estirar, fortalecer la pantorrilla, usar zapatos con buen soporte, puede adelantar la mejora. En el ensayo de Rathleff, 48\u00A0personas con fascitis plantar se dividieron en dos grupos: uno hizo elevaciones de talón con carga y una toalla bajo los dedos, y el otro estiró la fascia plantar.',
-        'El grupo de las elevaciones de talón mejoró más rápido a los tres meses. Al año, los dos grupos estaban más o menos igualados (Rathleff y colegas, 2015). Así que los ejercicios no lograron una mejora final más grande, pero sí la adelantaron. No se sabe si habría pasado igual de rápido sin ninguna de las dos opciones.',
+        'Lo que sí dice la evidencia es que hacer algo al respecto, estirar, fortalecer la pantorrilla, usar zapatos con buen soporte, puede adelantar la mejora. En el ensayo de Rathleff, 48\u00A0personas con fascitis plantar se dividieron en dos grupos:',
+        {
+          list: [
+            'Uno hizo elevaciones de talón con carga y una toalla bajo los dedos.',
+            'El otro estiró la fascia plantar.',
+          ],
+        },
+        'El grupo de las elevaciones de talón mejoró más rápido a los tres meses. Al año, los dos grupos estaban más o menos igualados (Rathleff y colegas, 2015). Así que **los ejercicios no lograron una mejora final más grande, pero sí la adelantaron.** No se sabe si habría pasado igual de rápido sin ninguna de las dos opciones.',
         'La guía de 2023 recomienda el estiramiento (grado A) y el trabajo de fuerza (grado B) como lo primero que hay que probar, junto con consejos sobre calzado. La guía no dice «espera a ver qué pasa». Dice «empieza con esto y ve observando» (Koc y colegas, 2023). Si el dolor está detrás del talón y no debajo, mira mejor [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
@@ -55,10 +73,13 @@ export const PF_DURATION_ES: Guide = {
       h2: '¿Qué hace que la fascitis plantar tarde más en mejorar?',
       keyFact: 'En una cohorte de 174\u00A0personas, las mujeres quedaron sin síntomas a cerca de la mitad del ritmo de los hombres, y quienes tenían dolor en los dos talones, a cerca de un tercio del ritmo de quienes tenían dolor de un solo lado (Hansen y colegas, 2018).',
       paragraphs: [
-        'La cohorte de Hansen de 2018 comparó varios factores del inicio con cuánto duraron los síntomas. Dos resultaron significativos.',
+        'La cohorte de Hansen de 2018 comparó varios factores del inicio con cuánto duraron los síntomas. Dos resultaron significativos:',
+        {
+          list: [
         '**Ser mujer.** Las mujeres se recuperaban a cerca de la mitad del ritmo de los hombres (razón de tasas de riesgo 0,49, p menor que 0,01). La razón no está clara. Los autores mencionaron diferencias hormonales, el tipo de calzado y factores físicos como posibilidades, sin evidencia para elegir entre ellas (Hansen y colegas, 2018).',
-        '**Dolor en los dos talones.** Las personas con dolor en los dos talones al inicio tenían más o menos un tercio de la tasa anual de quedarse sin síntomas que las que tenían dolor de un solo lado (razón de tasas de riesgo 0,33, p menor que 0,01).',
-        'Los autores señalaron que el dolor en los dos lados podría reflejar una afección inflamatoria no detectada, ya que el dolor en las uniones de tendón y hueso de los dos lados es típico de algunas formas de artritis. Nadie en su cohorte tenía un diagnóstico inflamatorio conocido, pero no se hicieron análisis de sangre para buscarlo (Hansen y colegas, 2018).',
+        '**Dolor en los dos talones.** Las personas con dolor en los dos talones al inicio tenían más o menos un tercio de la tasa anual de quedarse sin síntomas que las que tenían dolor de un solo lado (razón de tasas de riesgo 0,33, p menor que 0,01). Los autores señalaron que el dolor en los dos lados podría reflejar una afección inflamatoria no detectada, ya que el dolor en las uniones de tendón y hueso de los dos lados es típico de algunas formas de artritis. Nadie en su cohorte tenía un diagnóstico inflamatorio conocido, pero no se hicieron análisis de sangre para buscarlo (Hansen y colegas, 2018).',
+          ],
+        },
         'El IMC, la edad, fumar, tener un trabajo físicamente exigente, el grosor de la fascia en el ultrasonido y tener un espolón calcáneo no tuvieron un efecto significativo en el pronóstico en ese estudio. Lo último sorprende a mucha gente: tener un espolón no hizo que los síntomas duraran más ni menos (p = 0,88). Estudios anteriores tampoco encontraron relación entre los espolones calcáneos y los síntomas.',
         'Si te duelen los dos talones y la rigidez de la mañana dura mucho, o hay otras articulaciones afectadas, vale la pena comentarlo con un profesional de la salud aunque los ejercicios te estén ayudando. En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) está cuándo el dolor en los dos talones es una señal de alerta.',
       ],
@@ -70,7 +91,8 @@ export const PF_DURATION_ES: Guide = {
       h2: '¿Qué significa fascitis plantar «crónica»?',
       paragraphs: [
         'No hay una sola definición aceptada. Algunas fuentes llaman crónica a la fascitis plantar si dura más de tres meses, y otras usan seis meses. La guía de 2023 no pone un límite. Una revisión de 2020 describe la fascitis plantar crónica como «la causa más común de dolor de talón crónico en adultos», sin dar un corte en meses (Latt y colegas, 2020).',
-        'Más que la etiqueta, importa el patrón. La fascitis plantar crónica suele significar que el dolor agudo de los primeros pasos de la mañana se volvió un dolor más sordo y más constante. El tejido también cambia con el tiempo: la palabra «fascitis» hace pensar en inflamación, pero los casos crónicos se suelen describir como un proceso degenerativo, no inflamatorio. Por eso las inyecciones de cortisona, que actúan sobre la inflamación, a menudo ayudan a corto plazo pero no a largo plazo.',
+        '**Más que la etiqueta, importa el patrón.** La fascitis plantar crónica suele significar que el dolor agudo de los primeros pasos de la mañana se volvió un dolor más sordo y más constante.',
+        'El tejido también cambia con el tiempo: la palabra «fascitis» hace pensar en inflamación, pero los casos crónicos se suelen describir como un proceso degenerativo, no inflamatorio. Por eso las inyecciones de cortisona, que actúan sobre la inflamación, a menudo ayudan a corto plazo pero no a largo plazo.',
         'Si llevas más de varios meses con fascitis plantar y no ves una mejora clara, más abajo está lo que recomienda la guía.',
       ],
       cites: [CITE.latt, CITE.guideline],
@@ -79,12 +101,16 @@ export const PF_DURATION_ES: Guide = {
       h2: '¿Qué avances son realistas y cuándo?',
       keyFact: 'En el ensayo de Rathleff, el grupo de las elevaciones de talón obtuvo una puntuación 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba a los tres meses, una diferencia descrita como grande y medible (Rathleff y colegas, 2015).',
       paragraphs: [
-        'Ningún estudio da un calendario semana por semana que sirva para todos, y cualquier artículo que lo dé está adivinando. Lo que sí ofrece la evidencia son algunas señales que la mayoría va a reconocer.',
+        'Ningún estudio da un calendario semana por semana que sirva para todos, y cualquier artículo que lo dé está adivinando. Lo que sí ofrece la evidencia son algunas señales que la mayoría va a reconocer:',
+        {
+          list: [
         '**Primeras semanas.** Puede que el dolor de la mañana no cambie mucho. El ensayo de Rathleff mostró una diferencia importante entre los grupos a los tres meses, no a las tres semanas. Al principio, el cambio principal es que los ejercicios se vuelven más fáciles y la pantorrilla se siente menos tensa. Vale la pena notarlo aunque el talón todavía duela.',
         '**De uno a tres meses.** En el ensayo de Rathleff, el grupo de las elevaciones de talón obtuvo una puntuación 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba, a los tres meses. Es una diferencia grande y medible. Mucha gente empieza a notar que el dolor de la mañana está un poco más bajo la mayoría de los días, o que los primeros pasos se sienten rígidos en lugar de agudos (Rathleff y colegas, 2015).',
         '**De tres a seis meses.** El rango de «a menudo en tres a seis meses» de la revisión de 2020 pone aquí el punto medio de la mejora para la mayoría de quienes hacen los ejercicios recomendados y usan zapatos con buen soporte (Latt y colegas, 2020).',
         '**Seis meses o más.** La guía de 2023 sugiere pensar en otras opciones si varios meses de estiramiento, fortalecimiento y cambios de calzado no han ayudado lo suficiente. La cohorte de Hansen muestra que la mejora todavía puede llegar después de un año o más: la curva siguió bajando despacio hasta el quinto año, pero el ritmo de mejora se hace más lento. Si el dolor está estancado o subiendo, no solo lento, mira la siguiente sección.',
-        'El número útil no es «cuántas semanas faltan para terminar», sino «¿mi dolor de la mañana está más bajo este mes que el mes pasado?». Esa tendencia es la señal de avance.',
+          ],
+        },
+        '**El número útil no es «cuántas semanas faltan para terminar», sino «¿mi dolor de la mañana está más bajo este mes que el mes pasado?».** Esa tendencia es la señal de avance.',
       ],
       cites: [CITE.rathleff, CITE.latt, CITE.hansen],
     },
@@ -115,7 +141,7 @@ export const PF_DURATION_ES: Guide = {
     {
       h2: '¿Cuándo ir con un profesional si la fascitis plantar no mejora?',
       paragraphs: [
-        'El patrón de la tabla es claro: el estiramiento y el trabajo de fuerza son los que tienen más respaldo. Las opciones de consultorio (láser, punción seca, ondas de choque) tienen algo de evidencia, pero quedan detrás del ejercicio en la guía. La cirugía se reserva para el pequeño porcentaje de casos que no responden a nada más, y la guía no le da un papel importante.',
+        'El patrón de la tabla es claro: **el estiramiento y el trabajo de fuerza son los que tienen más respaldo.** Las opciones de consultorio (láser, punción seca, ondas de choque) tienen algo de evidencia, pero quedan detrás del ejercicio en la guía. La cirugía se reserva para el pequeño porcentaje de casos que no responden a nada más, y la guía no le da un papel importante.',
         'Si llevas varios meses haciendo los ejercicios con constancia y el dolor de la mañana no mejora, es un buen momento para ver a un profesional de la salud y hablar de las opciones de arriba. También es un buen momento para revisar que el diagnóstico sea el correcto: en [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están otras afecciones con el mismo patrón.',
         'Si corres, los cambios de carga suelen ser parte del tema: [dolor de talón al correr](/es/dolor-de-talon-en-corredores/) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explican ese tema.',
       ],
@@ -124,7 +150,7 @@ export const PF_DURATION_ES: Guide = {
     {
       h2: '¿Cómo te muestra el dolor de la mañana si vas avanzando?',
       paragraphs: [
-        'El dolor de la mañana es la señal diaria más confiable de cómo está el pie. Mide lo mismo (la rigidez de los primeros pasos), en las mismas condiciones (recién despierto, con el pie sin carga), más o menos a la misma hora cada día. Por eso marca la tendencia mucho mejor que «cómo sentí el pie durante el día», que cambia con la actividad, los zapatos y el tipo de piso.',
+        '**El dolor de la mañana es la señal diaria más confiable de cómo está el pie.** Mide lo mismo (la rigidez de los primeros pasos), en las mismas condiciones (recién despierto, con el pie sin carga), más o menos a la misma hora cada día. Por eso marca la tendencia mucho mejor que «cómo sentí el pie durante el día», que cambia con la actividad, los zapatos y el tipo de piso.',
         'Una calificación diaria de 0 a 10 en tus primeros pasos, anotada durante semanas, muestra patrones que de otra forma no notarías. Un número que baja de 5 a 3 en un mes es un avance real, aunque alguna mañana todavía duela. Un número que se dispara la mañana después de una carrera larga o de un día de pie te dice exactamente qué carga fue demasiado.',
         'Walkito te pide tu dolor de la mañana antes de cada sesión y lo usa para ajustar los ejercicios del día. La primera meta para el dolor de talón es un dolor de la mañana de 1/10 o menos durante 14\u00A0días seguidos. Cuando alcanzas esa meta, pasa a mantenimiento y la siguiente meta (casi siempre fuerza de pantorrilla o equilibrio) ocupa su lugar. Ese cambio, de «hacer las mañanas más fáciles» a «ganar capacidad», es la verdadera señal de avance.',
       ],

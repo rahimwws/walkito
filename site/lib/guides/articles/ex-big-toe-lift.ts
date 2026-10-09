@@ -32,7 +32,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
       h2: 'What is the big toe lift exercise?',
       paragraphs: [
         'The big toe lift is an isolation exercise. You lift only the big toe while the other four toes stay pressed into the floor. Then you reverse it: press the big toe down and lift the other four. This back-and-forth pattern is what gives the exercise its popular name, toe yoga.',
-        'The purpose is not strength in the usual sense. It is motor control. The big toe has its own set of muscles (the extensor hallucis brevis and longus for lifting, the flexor hallucis brevis and longus for pressing down), but most people have lost the ability to move it separately from the other toes. The exercise restores that independent control.',
+        'The purpose is not strength in the usual sense. **It is motor control.** The big toe has its own set of muscles (the extensor hallucis brevis and longus for lifting, the flexor hallucis brevis and longus for pressing down), but most people have lost the ability to move it separately from the other toes. The exercise restores that independent control.',
       ],
     },
     {
@@ -62,8 +62,16 @@ export const EX_BIG_TOE_LIFT: Guide = {
       keyFact: 'A 2016 MRI study measured big toe lifts in a small group of athletes and found they activated all three intrinsic plantar muscles tested, with the flexor digitorum brevis showing the highest activation at 18.1 percent (Gooding and colleagues, 2016).',
       paragraphs: [
         'The muscles that lift the big toe are the extensor hallucis longus (which runs from the shin) and the extensor hallucis brevis (which sits on top of the foot). But the exercise also works the muscles that hold the other toes down, and that is where the real training happens.',
-        'A 2016 MRI study by Gooding and colleagues found that the first-toe extension exercise activated the flexor digitorum brevis (18.1%), the abductor hallucis (16.9%) and the flexor digiti minimi (16.3%). The intrinsic plantar muscles were working to keep the smaller toes flat while the big toe lifted.',
-        'This makes the big toe lift a two-for-one exercise. The lifting side trains the extensors. The pressing-down side trains the intrinsic plantar muscles, the same ones the [short foot exercise](/exercises/short-foot-exercise/) targets.',
+        'A 2016 MRI study by Gooding and colleagues found that the first-toe extension exercise activated:',
+        {
+          list: [
+            'The flexor digitorum brevis (18.1%).',
+            'The abductor hallucis (16.9%).',
+            'The flexor digiti minimi (16.3%).',
+          ],
+        },
+        'The intrinsic plantar muscles were working to keep the smaller toes flat while the big toe lifted.',
+        '**This makes the big toe lift a two-for-one exercise.** The lifting side trains the extensors. The pressing-down side trains the intrinsic plantar muscles, the same ones the [short foot exercise](/exercises/short-foot-exercise/) targets.',
       ],
       cites: [CITE.gooding],
     },
@@ -72,15 +80,19 @@ export const EX_BIG_TOE_LIFT: Guide = {
       paragraphs: [
         'The big toe is the on-switch for the windlass mechanism. When the big toe extends (bends upward) during the push-off phase of walking, it pulls the plantar fascia tight and raises the arch. This stiffening converts the foot from a flexible platform that absorbs shock into a rigid lever that propels you forward.',
         'If the big toe cannot extend independently, the windlass does not engage fully. The arch stays flatter through push-off, and the foot has to compensate by loading other structures more. Over time, that can contribute to arch fatigue, [ball-of-foot pain](/ball-of-foot-pain/) and strain on the plantar fascia.',
-        'The big toe lift exercise does not load the windlass the way a towel calf raise does. What it does is teach the brain to activate the big toe on its own, so the windlass can do its job during normal walking. It is a coordination exercise, not a strength exercise.',
+        'The big toe lift exercise does not load the windlass the way a towel calf raise does. What it does is teach the brain to activate the big toe on its own, so the windlass can do its job during normal walking. **It is a coordination exercise, not a strength exercise.**',
       ],
     },
     {
       h2: 'What are the common mistakes with the big toe lift?',
       paragraphs: [
-        'The most common mistake is lifting all five toes together. If all the toes go up at once, the exercise becomes a general toe extension and the independent control is lost. Press the smaller toes down with your fingers if needed until the separation develops.',
-        'Another mistake is using the shin muscle (tibialis anterior) to lift the big toe by pulling the whole foot upward. Keep the foot flat. Only the big toe moves.',
-        'Rushing through reps is a third issue. This is a motor control exercise. Speed defeats the purpose. Hold each lift for the full five seconds and focus on quality over quantity. If only three clean reps are possible, three clean reps are better than eight sloppy ones.',
+        {
+          list: [
+            '**The most common mistake is lifting all five toes together.** If all the toes go up at once, the exercise becomes a general toe extension and the independent control is lost. Press the smaller toes down with your fingers if needed until the separation develops.',
+            '**Another mistake is using the shin muscle (tibialis anterior) to lift the big toe by pulling the whole foot upward.** Keep the foot flat. Only the big toe moves.',
+            '**Rushing through reps is a third issue.** This is a motor control exercise. Speed defeats the purpose. Hold each lift for the full five seconds and focus on quality over quantity. If only three clean reps are possible, three clean reps are better than eight sloppy ones.',
+          ],
+        },
         'Cramping in the arch or under the foot is common in the first few sessions. It usually means the intrinsic muscles are weak and fatigue quickly. Stop, massage the area, and try again the next session.',
       ],
     },
@@ -89,7 +101,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
       paragraphs: [
         'The big toe lift (first-toe extension) was one of the four exercises tested in the 2016 MRI study by Gooding and colleagues. All four exercises activated all of the intrinsic plantar muscles. The big toe lift was not the top activator for any single muscle, but it produced meaningful activation across all of them, particularly the flexor digitorum brevis.',
         'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through eight weeks of toe exercises that included big toe work, towel scrunches and marble pickups. Toe grip strength rose and forefoot pain fell from before to after the program. The study had no control group, so some of the change may not be from the exercises alone.',
-        'No study has isolated the big toe lift on its own in a controlled outcome trial. The evidence supports it as part of a broader foot-strengthening approach. Related exercise pages: [short foot exercise](/exercises/short-foot-exercise/), [toe spread](/exercises/toe-spread/), [towel scrunch](/exercises/towel-scrunch/).',
+        '**No study has isolated the big toe lift on its own in a controlled outcome trial.** The evidence supports it as part of a broader foot-strengthening approach. Related exercise pages: [short foot exercise](/exercises/short-foot-exercise/), [toe spread](/exercises/toe-spread/), [towel scrunch](/exercises/towel-scrunch/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

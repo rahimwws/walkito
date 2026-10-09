@@ -32,7 +32,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
       paragraphs: [
         'Párate con un pie adelante y otro atrás, con las manos en una pared o en el marco de una puerta para tener equilibrio. Con el talón de adelante plano en el piso, lleva despacio la rodilla de adelante por encima de los dedos. Deja que la rodilla avance todo lo que pueda mientras el talón sigue abajo. Después vuelve al inicio. Esa es una repetición.',
         'El movimiento es lento y controlado. No rebotas. Cada balanceo debe tomar unos dos segundos hacia adelante y dos hacia atrás. La pierna de atrás solo está para el equilibrio. Todo el trabajo del tobillo pasa en la pierna de adelante.',
-        'Mantén el pie de adelante apuntando recto. Si el pie gira hacia afuera, el tobillo encuentra un atajo y te pierdes el rango que quieres ganar.',
+        '**Mantén el pie de adelante apuntando recto.** Si el pie gira hacia afuera, el tobillo encuentra un atajo y te pierdes el rango que quieres ganar.',
       ],
       exercises: [
         {
@@ -57,8 +57,15 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
       h2: '¿Por qué importa la movilidad de tobillo para el dolor de talón?',
       keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo pesó más que el índice de masa corporal o el tiempo de pie, con una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
       paragraphs: [
-        'La dorsiflexión del tobillo es cuánto se puede doblar el pie hacia arriba, hacia la tibia, mientras el talón sigue en el piso. Cada paso que das necesita algo de dorsiflexión. Cuando el tobillo no se dobla lo suficiente, el cuerpo compensa. El pie puede irse hacia adentro, la pantorrilla recibe más tensión y la fascia plantar absorbe fuerzas para las que no está hecha.',
-        'En el estudio de casos y controles de Riddle de 2003, la menor dorsiflexión del tobillo fue la variable con el mayor efecto independiente, con una razón de probabilidades de 23,3 para la fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o la distancia que se corría. En otra revisión, una pantorrilla tensa, en concreto el gastrocnemio, estaba presente en entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar.',
+        'La dorsiflexión del tobillo es cuánto se puede doblar el pie hacia arriba, hacia la tibia, mientras el talón sigue en el piso. Cada paso que das necesita algo de dorsiflexión. Cuando el tobillo no se dobla lo suficiente, el cuerpo compensa:',
+        {
+          list: [
+            'El pie puede irse hacia adentro.',
+            'La pantorrilla recibe más tensión.',
+            'La fascia plantar absorbe fuerzas para las que no está hecha.',
+          ],
+        },
+        'En el estudio de casos y controles de Riddle de 2003, **la menor dorsiflexión del tobillo fue la variable con el mayor efecto independiente**, con una razón de probabilidades de 23,3 para la fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o la distancia que se corría. En otra revisión, una pantorrilla tensa, en concreto el gastrocnemio, estaba presente en entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar.',
         'Estirar la pantorrilla de forma pasiva (como en el [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) y el [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/)) atiende una parte del problema: la longitud del músculo. La movilidad de tobillo atiende la otra: el control activo al final del rango. Llevar la rodilla por encima de los dedos con el peso del cuerpo le enseña al tobillo a usar el rango que tiene, no solo a alcanzarlo de forma pasiva.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -68,14 +75,15 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
       paragraphs: [
         'El [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) es una posición pasiva que mantienes. Te inclinas hacia la pared y esperas a que el músculo se alargue. La pierna de atrás está estirada, y eso trabaja el gastrocnemio. El [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/) hace lo mismo con la rodilla doblada.',
         'La movilidad de tobillo es un movimiento activo y repetido. Llevas la rodilla hacia adelante, vuelves y vuelves a empujar. Cargas el tobillo a lo largo de su rango en lugar de quedarte quieto al final. Así ganas la capacidad de usar la dorsiflexión con carga, que es lo que de verdad piden caminar y correr.',
-        'Los dos sirven. Estirar abre el rango. La movilidad de tobillo te entrena a usarlo. La guía le da una A al estiramiento de pantorrilla. La movilidad de tobillo es parte del trabajo de movilidad que Walkito pone junto con esos estiramientos.',
+        'Los dos sirven. **Estirar abre el rango. La movilidad de tobillo te entrena a usarlo.** La guía le da una A al estiramiento de pantorrilla. La movilidad de tobillo es parte del trabajo de movilidad que Walkito pone junto con esos estiramientos.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'La prueba de rodilla a la pared y cómo se relaciona',
       paragraphs: [
-        'La prueba de rodilla a la pared, también llamada prueba de estocada con carga, es una forma sencilla de medir la dorsiflexión del tobillo. Te paras frente a una pared, con un pie unos centímetros atrás, y llevas la rodilla hacia adelante hasta que toque la pared. Si el talón se levanta antes de que la rodilla llegue, acerca el pie. Tu resultado es la distancia entre el dedo gordo y la pared en el punto en el que la rodilla apenas toca, con el talón todavía plano.',
+        'La prueba de rodilla a la pared, también llamada prueba de estocada con carga, es una forma sencilla de medir la dorsiflexión del tobillo.',
+        'Te paras frente a una pared, con un pie unos centímetros atrás, y llevas la rodilla hacia adelante hasta que toque la pared. Si el talón se levanta antes de que la rodilla llegue, acerca el pie. Tu resultado es la distancia entre el dedo gordo y la pared en el punto en el que la rodilla apenas toca, con el talón todavía plano.',
         'Walkito incluye en la app un ejercicio de rodilla a la pared (2\u00A0repeticiones de 30\u00A0segundos, cada pierna). Seguir esta distancia durante semanas te dice si el rango de tu tobillo de verdad está mejorando. Ganar uno o dos centímetros en unas semanas es importante.',
         'La movilidad de tobillo y el ejercicio de rodilla a la pared trabajan el mismo rango desde ángulos distintos. El balanceo son repeticiones a lo largo del rango. Rodilla a la pared es una carga sostenida al final del rango. Los dos ayudan. Walkito los pone en los días de movilidad.',
       ],
@@ -83,10 +91,14 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en la movilidad de tobillo?',
       paragraphs: [
-        'Dejar que el talón se levante. El talón tiene que quedarse plano en cada repetición. Si se levanta, ya pasaste el final de tu rango y el ejercicio pierde su sentido. Avanza solo hasta donde el talón te deje.',
-        'Girar el pie hacia afuera. El pie debe apuntar recto. Si gira hacia afuera, el tobillo esquiva su punto tenso. Mantén el segundo dedo apuntando a la pared.',
-        'Ir demasiado rápido. Rebotar o hacer las repeticiones con prisa no da un rango controlado. Dos segundos hacia adelante, dos hacia atrás. Deja que el tobillo sienta el final de su rango en cada repetición.',
-        'Olvidarte de la postura con un pie atrás. Algunas personas intentan hacer el ejercicio con las dos piernas a la vez, solo agachándose. Eso reparte la carga y reduce el rango que tiene que trabajar el tobillo de adelante. Ponte con un pie adelante y otro atrás para que un solo tobillo haga el trabajo.',
+        {
+          list: [
+            '**Dejar que el talón se levante.** El talón tiene que quedarse plano en cada repetición. Si se levanta, ya pasaste el final de tu rango y el ejercicio pierde su sentido. Avanza solo hasta donde el talón te deje.',
+            '**Girar el pie hacia afuera.** El pie debe apuntar recto. Si gira hacia afuera, el tobillo esquiva su punto tenso. Mantén el segundo dedo apuntando a la pared.',
+            '**Ir demasiado rápido.** Rebotar o hacer las repeticiones con prisa no da un rango controlado. Dos segundos hacia adelante, dos hacia atrás. Deja que el tobillo sienta el final de su rango en cada repetición.',
+            '**Olvidarte de la postura con un pie atrás.** Algunas personas intentan hacer el ejercicio con las dos piernas a la vez, solo agachándose. Eso reparte la carga y reduce el rango que tiene que trabajar el tobillo de adelante. Ponte con un pie adelante y otro atrás para que un solo tobillo haga el trabajo.',
+          ],
+        },
       ],
     },
     {

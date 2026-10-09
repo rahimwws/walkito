@@ -257,7 +257,10 @@ export default function HeelPainRunnersEs() {
             <p>
               El dolor de Aquiles se siente más arriba que la fascitis plantar: donde el tendón se
               une a la parte de atrás del hueso del talón, o unos centímetros más arriba, en el
-              tendón. La guía clínica de 2024 sobre el dolor del tendón de Aquiles menciona el dolor
+              tendón.
+            </p>
+            <p>
+              La guía clínica de 2024 sobre el dolor del tendón de Aquiles menciona el dolor
               que aparece al cargar el tendón, como al correr, saltar o subir escaleras, como la
               señal principal. Si presionar la parte de atrás del talón o el tendón arriba duele más
               que presionar el arco, eso hace menos probable la fascitis plantar.
@@ -265,28 +268,41 @@ export default function HeelPainRunnersEs() {
             <p>
               Dónde duele cambia el siguiente paso. El dolor en la mitad del tendón, unos
               centímetros por encima del talón, suele empezar con trabajo de carga para la
-              pantorrilla. El dolor justo donde el tendón se inserta se maneja con más cuidado: un
+              pantorrilla.
+            </p>
+            <p>
+              El dolor justo donde el tendón se inserta se maneja con más cuidado: un
               estiramiento profundo en la parte baja de un descenso de talón puede irritar ese
               punto, así que el trabajo suele empezar desde piso plano en vez de bajar de un
-              escalón. Los estiramientos de pantorrilla y las elevaciones de talón de Walkito están
-              hechos para la fascia plantar y la pantorrilla, no para el dolor en la inserción. Si
-              el tuyo está justo en la parte de atrás del hueso del talón, que lo revise un
-              profesional de la salud antes de cargarlo fuerte.
+              escalón.
+            </p>
+            <p>
+              Los estiramientos de pantorrilla y las elevaciones de talón de Walkito están
+              hechos para la fascia plantar y la pantorrilla, no para el dolor en la inserción.{' '}
+              <strong>Si el tuyo está justo en la parte de atrás del hueso del talón, que lo revise
+              un profesional de la salud antes de cargarlo fuerte.</strong>
             </p>
             <Evidence level="strong" lang="es">
               Varios ensayos controlados coinciden en que cargar la pantorrilla ayuda con el dolor
               de Aquiles en la porción media.
             </Evidence>
-            <p>
-              En un ensayo pequeño de 1998, 15&nbsp;atletas recreativos con dolor de Aquiles de
-              mucho tiempo hicieron elevaciones excéntricas de pantorrilla (bajar despacio con carga)
-              dos veces al día durante tres meses. Los 15 volvieron a correr a su nivel anterior.
-              Un ensayo de 2007 con 38&nbsp;personas encontró que seguir activo durante la
-              rehabilitación, mientras el dolor se mantuviera dentro de un límite acordado, dio
-              resultados tan buenos como dejar de correr y saltar primero. Un ensayo de 2015 con
-              58&nbsp;personas comparó el trabajo de fuerza pesado y lento tres veces por semana con
-              la rutina excéntrica.
-            </p>
+            <ul>
+              <li>
+                <strong>1998:</strong> en un ensayo pequeño, 15&nbsp;atletas recreativos con dolor
+                de Aquiles de mucho tiempo hicieron elevaciones excéntricas de pantorrilla (bajar
+                despacio con carga) dos veces al día durante tres meses. Los 15 volvieron a correr a
+                su nivel anterior.
+              </li>
+              <li>
+                <strong>2007:</strong> un ensayo con 38&nbsp;personas encontró que seguir activo
+                durante la rehabilitación, mientras el dolor se mantuviera dentro de un límite
+                acordado, dio resultados tan buenos como dejar de correr y saltar primero.
+              </li>
+              <li>
+                <strong>2015:</strong> un ensayo con 58&nbsp;personas comparó el trabajo de fuerza
+                pesado y lento tres veces por semana con la rutina excéntrica.
+              </li>
+            </ul>
             <blockquote>
               <p>
                 "Both traditional ECC and HSR yield positive, equally good,
@@ -311,7 +327,10 @@ export default function HeelPainRunnersEs() {
               La periostitis tibial, o síndrome de estrés tibial medial, es dolor a lo largo de
               la parte interna de la tibia, normalmente repartido en varios centímetros en vez de un
               solo punto. No es la fascia plantar: el hueso y el tejido a su alrededor reaccionan a
-              la carga repetida de correr. Una revisión de 2020 de corredores novatos y recreativos
+              la carga repetida de correr.
+            </p>
+            <p>
+              Una revisión de 2020 de corredores novatos y recreativos
               encontró que las relaciones más claras eran con la forma de moverse, como más rotación
               de la cadera y un pie que se va hacia adentro más de lo habitual.
             </p>
@@ -379,6 +398,8 @@ export default function HeelPainRunnersEs() {
               tendón, estiramientos de pantorrilla y tobillo, y trabajo de equilibrio, a menudo con
               una plantilla de soporte de arco. La inversión con banda de Walkito entrena ese mismo
               músculo, y su trabajo de tobillo y equilibrio coincide con lo que cubrió la revisión.
+            </p>
+            <p>
               Si la parte interna de tu tobillo está hinchada, o un arco se ve más plano de lo que
               era hace un año, consulta primero a un profesional de la salud. Si se pasa por alto al
               principio, esto puede llevar a un pie plano que se queda plano.
@@ -467,7 +488,10 @@ export default function HeelPainRunnersEs() {
               Un corredor debe consultar a un profesional de la salud antes de seguir corriendo si
               el dolor aumenta durante las carreras después de subir el kilometraje, o si le duele
               al apretar los lados del talón. Las dos cosas pueden ser señales de una fractura por
-              estrés. Un dolor agudo al correr, o un dolor que empeora semana tras semana, también
+              estrés.
+            </p>
+            <p>
+              Un dolor agudo al correr, o un dolor que empeora semana tras semana, también
               necesita un profesional. Y un dolor de talón o tibia que te despierta por la noche:
               el dolor en reposo apunta más a una fractura por estrés que a fascitis plantar, dolor
               de Aquiles o periostitis tibial.
@@ -486,11 +510,17 @@ export default function HeelPainRunnersEs() {
               No tienes que decidir el orden, las dosis ni cuándo pasar al siguiente. Walkito arma
               un plan una semana a la vez en torno a una meta que puedes medir. Para el dolor de
               talón, la primera meta es dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
-              {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son mantener el arco{' '}
-              {archHoldSeconds}&nbsp;segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
-              {balanceSeconds}&nbsp;segundos de equilibrio a una pierna, e izquierda y derecha
-              dentro del {gapPercent}&nbsp;% la una de la otra. Una meta que alcanzas pasa a
-              mantenimiento con una dosis más baja, y la siguiente ocupa su lugar.
+              {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son:
+            </p>
+            <ul>
+              <li>Mantener el arco {archHoldSeconds}&nbsp;segundos.</li>
+              <li>{calfRaises} elevaciones de talón a una pierna.</li>
+              <li>{balanceSeconds}&nbsp;segundos de equilibrio a una pierna.</li>
+              <li>Izquierda y derecha dentro del {gapPercent}&nbsp;% la una de la otra.</li>
+            </ul>
+            <p>
+              Una meta que alcanzas pasa a mantenimiento con una dosis más baja, y la siguiente
+              ocupa su lugar.
             </p>
             <p>
               Eliges {DAYS_A}, {DAYS_B} o {DAYS_C}&nbsp;días a la semana y sesiones de {MIN_A},{' '}

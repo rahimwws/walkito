@@ -25,7 +25,7 @@ export const BUNIONS_ES: Guide = {
       h2: '¿Se pueden corregir los juanetes con ejercicios?',
       figure: { id: 'bunion', caption: 'Un juanete es un bulto óseo en la articulación del dedo gordo, con el dedo gordo inclinado hacia los demás.', alt: 'Vista superior de los huesos del pie con el dedo gordo inclinado hacia el segundo dedo y un bulto rojo en el lado interior de la articulación del dedo gordo.' },
       paragraphs: [
-        'No. Un juanete, clínicamente llamado hallux valgus, es una desviación ósea en la articulación metatarsofalángica del dedo gordo. El primer metatarsiano se desvía hacia adentro y el dedo gordo se inclina hacia afuera. Una vez que el hueso se ha movido y la cápsula articular se ha adaptado, el ejercicio no puede empujarlo de vuelta.',
+        'No. Un juanete, clínicamente llamado hallux valgus, es una desviación ósea en la articulación metatarsofalángica del dedo gordo. El primer metatarsiano se desvía hacia adentro y el dedo gordo se inclina hacia afuera. Una vez que el hueso se ha movido y la cápsula articular se ha adaptado, **el ejercicio no puede empujarlo de vuelta.**',
         'Lo que el ejercicio sí puede hacer es fortalecer los músculos alrededor de la articulación. El músculo abductor del dedo gordo corre a lo largo del arco interno y jala el dedo gordo hacia la alineación. En las personas con hallux valgus, este músculo es más débil y más pequeño que en las personas sin él. Fortalecerlo no va a deshacer el cambio estructural, pero puede mejorar el control, reducir los síntomas y posiblemente frenar el avance en casos leves.',
         'Un comentario clínico de 2016 en el Journal of Orthopaedic and Sports Physical Therapy propuso un enfoque de fortalecimiento muscular basado en la biomecánica para el hallux valgus temprano, centrado en los músculos intrínsecos del pie. El autor argumentó que la deformidad avanza en parte por un desequilibrio muscular, así que restaurar la actividad muscular podría tener un efecto protector. El argumento es plausible, pero la evidencia directa a largo plazo todavía es limitada.',
       ],
@@ -37,7 +37,15 @@ export const BUNIONS_ES: Guide = {
         'La mejor evidencia viene de un puñado de ensayos pequeños. Ninguno es grande, y ninguno siguió a los participantes más de un año.',
         'Kim y colegas (2015) asignaron al azar a 24\u00A0personas con hallux valgus leve a moderado a una órtesis sola o a una órtesis más ejercicios de separación de dedos durante 8\u00A0semanas. El grupo de ejercicio redujo su ángulo de hallux valgus un promedio de 3,4\u00A0grados y aumentó el área transversal del músculo abductor del dedo gordo. El grupo con solo órtesis no mostró cambios significativos en ninguna de las dos medidas. El estudio fue pequeño e incluyó sobre todo adultos jóvenes con juanetes leves.',
         'Abdalbary (2018) asignó al azar a 56\u00A0mujeres con hallux valgus moderado a 3\u00A0meses de movilización del pie, ejercicios de fortalecimiento y un separador de dedos, o a ninguna intervención (lista de espera). A los 3\u00A0meses y de nuevo al año, el grupo de ejercicio tuvo significativamente mejor dolor, función y mediciones radiográficas del ángulo que el grupo que no recibió nada. Este ensayo destaca por su seguimiento más largo, pero como el separador de dedos se combinó con la movilización y el ejercicio, el estudio no puede decirnos cuánto contribuyó el separador por sí solo.',
-        'Külünkoğlu y colegas (2021) asignaron al azar a 60\u00A0mujeres (120\u00A0pies) con hallux valgus a un mes de férula nocturna, ejercicio o estimulación eléctrica. Los tres grupos mejoraron en dolor y función, pero la férula fue más eficaz que el ejercicio y la electroterapia, y el ejercicio superó a la electroterapia. El estudio no incluyó un grupo sin intervención, por lo que es difícil saber cuánto añadió cada uno de los tres enfoques más allá de la variación natural.',
+        'Külünkoğlu y colegas (2021) asignaron al azar a 60\u00A0mujeres (120\u00A0pies) con hallux valgus a un mes de:',
+        {
+          list: [
+            'Férula nocturna.',
+            'Ejercicio.',
+            'Estimulación eléctrica.',
+          ],
+        },
+        'Los tres grupos mejoraron en dolor y función, pero la férula fue más eficaz que el ejercicio y la electroterapia, y el ejercicio superó a la electroterapia. El estudio no incluyó un grupo sin intervención, por lo que es difícil saber cuánto añadió cada uno de los tres enfoques más allá de la variación natural.',
       ],
       sourceNote:
         'Kim 2015: 24\u00A0sujetos, ensayo aleatorizado de 8\u00A0semanas. Cambio del ángulo HV: grupo de ejercicio -3,41\u00A0±\u00A03,17\u00A0grados, grupo de órtesis -0,5\u00A0±\u00A02,07\u00A0grados (p\u00A0<\u00A00,05). Cambio del AST del AbdH: grupo de ejercicio +0,48\u00A0cm², grupo de órtesis -0,11\u00A0cm². Abdalbary 2018: 56\u00A0mujeres, aleatorizadas a 3\u00A0meses de movilización + ejercicio + separador de dedos (36\u00A0sesiones) vs. ninguna intervención, seguimiento a 1\u00A0año. Külünkoğlu 2021: 60\u00A0mujeres (120\u00A0pies), ensayo aleatorizado de 3\u00A0brazos (férula, ejercicio, electroterapia), 1\u00A0mes de tratamiento, sin grupo sin intervención; la férula fue la más eficaz de las tres.',
@@ -48,8 +56,9 @@ export const BUNIONS_ES: Guide = {
       keyFact: 'En un estudio con 30 mujeres con hallux valgus doloroso, una plantilla con separador de dedos redujo el dolor de forma significativa en tres meses, mientras que un grupo separado con férula nocturna no mejoró (Tehraninasr y colegas, 2008).',
       paragraphs: [
         'Los separadores de dedos se colocan entre el dedo gordo y el segundo dedo. Reducen la fricción, alivian la presión sobre el juanete y empujan suavemente el dedo gordo lejos del segundo dedo mientras se usan.',
-        'Tehraninasr y colegas (2008) estudiaron a 30\u00A0mujeres con hallux valgus doloroso durante 3\u00A0meses. Un grupo usó una plantilla con un separador de dedos integrado, y otro grupo usó una férula nocturna. El dolor bajó significativamente en el grupo del separador pero no en el grupo de la férula nocturna. Ninguno de los dos grupos tuvo un cambio estadísticamente significativo en el ángulo de hallux valgus. El ensayo de Abdalbary combinó un separador de dedos con terapia manual y ejercicio, así que no aísla lo que hizo el separador por sí solo.',
-        'El patrón que se ve entre los estudios es consistente: los separadores de dedos pueden ayudar con la comodidad y los síntomas a corto plazo, pero la evidencia de que cambien el ángulo del hueso con el tiempo es débil. No son dañinos y son baratos, así que muchos profesionales de la salud los recomiendan junto con ejercicios y cambios de calzado.',
+        'Tehraninasr y colegas (2008) estudiaron a 30\u00A0mujeres con hallux valgus doloroso durante 3\u00A0meses. Un grupo usó una plantilla con un separador de dedos integrado, y otro grupo usó una férula nocturna. El dolor bajó significativamente en el grupo del separador pero no en el grupo de la férula nocturna. Ninguno de los dos grupos tuvo un cambio estadísticamente significativo en el ángulo de hallux valgus.',
+        'El ensayo de Abdalbary combinó un separador de dedos con terapia manual y ejercicio, así que no aísla lo que hizo el separador por sí solo.',
+        'El patrón que se ve entre los estudios es consistente: **los separadores de dedos pueden ayudar con la comodidad y los síntomas a corto plazo, pero la evidencia de que cambien el ángulo del hueso con el tiempo es débil.** No son dañinos y son baratos, así que muchos profesionales de la salud los recomiendan junto con ejercicios y cambios de calzado.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -121,7 +130,7 @@ export const BUNIONS_ES: Guide = {
     {
       h2: '¿Importa el calzado para los juanetes?',
       paragraphs: [
-        'El calzado es uno de los cambios con más impacto que puedes hacer. Una puntera ancha le da al dedo gordo espacio para estar en una posición más neutra y evita que el zapato presione el juanete. Los zapatos angostos y puntiagudos empujan el dedo gordo más hacia el valgus y comprimen la articulación.',
+        'El calzado es uno de los cambios con más impacto que puedes hacer. **Una puntera ancha le da al dedo gordo espacio para estar en una posición más neutra** y evita que el zapato presione el juanete. Los zapatos angostos y puntiagudos empujan el dedo gordo más hacia el valgus y comprimen la articulación.',
         'Los tacones pasan el peso a la parte delantera del pie y aumentan la presión sobre la articulación metatarsofalángica del dedo gordo. Si el dolor del juanete es un problema, reducir la altura del tacón es un primer paso directo.',
         'Los zapatos por sí solos no revertirán la deformidad, pero pueden reducir los síntomas y frenar el avance al quitar la fuerza externa que empuja el dedo más fuera de alineación.',
       ],
@@ -129,7 +138,7 @@ export const BUNIONS_ES: Guide = {
     {
       h2: '¿Cuándo se considera la cirugía?',
       paragraphs: [
-        'La cirugía se considera cuando el dolor y la limitación funcional persisten a pesar de medidas conservadoras como cambios de calzado, ejercicios, separadores y órtesis. La decisión depende de cuánto afecta el juanete la vida diaria, no solo del ángulo.',
+        'La cirugía se considera cuando el dolor y la limitación funcional persisten a pesar de medidas conservadoras como cambios de calzado, ejercicios, separadores y órtesis. **La decisión depende de cuánto afecta el juanete la vida diaria, no solo del ángulo.**',
         'Existen más de 150\u00A0procedimientos quirúrgicos para el hallux valgus, desde el realineamiento de tejidos blandos hasta la osteotomía (cortar y reposicionar el hueso). La elección depende de la gravedad y de la anatomía específica. La recuperación varía de semanas a meses.',
         'El ejercicio y el manejo conservador suelen intentarse durante varios meses primero. Si manejas bien los síntomas con los enfoques de esta página, la cirugía no es urgente. Si el dolor limita la caminata, la elección de zapatos o la actividad a pesar de esas medidas, un especialista en pie y tobillo puede explicarte las opciones.',
       ],

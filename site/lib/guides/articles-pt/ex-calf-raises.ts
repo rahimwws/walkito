@@ -115,7 +115,7 @@ export const EX_CALF_RAISES_PT: Guide = {
       h2: 'Quantas elevações de calcanhar fazer?',
       keyFact: 'Um estudo normativo com 566\u00A0adultos saudáveis de 20 a 81\u00A0anos mostrou que a contagem de elevações de calcanhar em uma perna variava com idade, sexo e nível de atividade, e as mulheres chegavam a uma mediana de 21\u00A0repetições (Hebert-Losier e colegas, 2017).',
       paragraphs: [
-        'Depende de onde você está na sequência e do que está trabalhando. Para força geral da panturrilha, 3\u00A0séries de 10 a 15\u00A0repetições em ritmo lento é uma dose inicial comum. No protocolo testado para fascite plantar, a elevação de calcanhar com toalha começa com 12\u00A0repetições máximas (12RM) em 3\u00A0séries e avança para 8RM em 5\u00A0séries ao longo de umas cinco semanas.',
+        'Depende de onde você está na sequência e do que está trabalhando. Para força geral da panturrilha, **3\u00A0séries de 10 a 15\u00A0repetições em ritmo lento é uma dose inicial comum.** No protocolo testado para fascite plantar, a elevação de calcanhar com toalha começa com 12\u00A0repetições máximas (12RM) em 3\u00A0séries e avança para 8RM em 5\u00A0séries ao longo de umas cinco semanas.',
         'Uma referência útil é o teste de resistência de elevação de calcanhar em uma perna. Um estudo normativo com 566\u00A0adultos saudáveis encontrou uma mediana de 24\u00A0repetições para homens e 21 para mulheres, variando com idade, sexo e atividade. A meta de panturrilha no app Walkito é 25\u00A0elevações de calcanhar em uma perna. Chegar lá não encerra o trabalho. Ele passa para a manutenção.',
         'Para saber mais do protocolo específico para fascite plantar, veja a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/). Para a versão do tendão de Aquiles, veja a [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/).',
       ],
@@ -124,9 +124,13 @@ export const EX_CALF_RAISES_PT: Guide = {
     {
       h2: 'Quais são os erros comuns na elevação de calcanhar?',
       paragraphs: [
-        'Ir rápido demais. É a descida lenta (uns três segundos) que desenvolve força. Quicar embaixo desperdiça a fase excêntrica, que é a parte que faz a maior parte do trabalho de adaptação do tendão.',
-        'Rolar para a borda de fora do pé. O empurrão deve passar pelo dedão e pela parte da frente do pé. Se o tornozelo vira para fora, a panturrilha não consegue contrair por completo, e os músculos pequenos da parte de fora do tornozelo levam um esforço para o qual não foram feitos.',
-        'Pular a versão sentada. Se a elevação em pé dói, pular direto para o trabalho em uma perna no degrau piora as coisas. A sequência existe por um motivo: sentado, depois em pé com os dois pés, depois sustentada, depois em uma perna. Cada degrau deve parecer tranquilo por duas sessões antes de avançar.',
+        {
+          list: [
+            '**Ir rápido demais.** É a descida lenta (uns três segundos) que desenvolve força. Quicar embaixo desperdiça a fase excêntrica, que é a parte que faz a maior parte do trabalho de adaptação do tendão.',
+            '**Rolar para a borda de fora do pé.** O empurrão deve passar pelo dedão e pela parte da frente do pé. Se o tornozelo vira para fora, a panturrilha não consegue contrair por completo, e os músculos pequenos da parte de fora do tornozelo levam um esforço para o qual não foram feitos.',
+            '**Pular a versão sentada.** Se a elevação em pé dói, pular direto para o trabalho em uma perna no degrau piora as coisas. A sequência existe por um motivo: sentado, depois em pé com os dois pés, depois sustentada, depois em uma perna. Cada degrau deve parecer tranquilo por duas sessões antes de avançar.',
+          ],
+        },
       ],
     },
     {

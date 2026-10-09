@@ -27,7 +27,15 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     {
       h2: '¿Qué ejercicios fortalecen los tobillos?',
       paragraphs: [
-        'Los ejercicios para fortalecer el tobillo trabajan cuatro grupos de músculos, más el sistema de equilibrio que los controla. Los peroneos (en el lado externo de la pierna) giran el pie hacia afuera y son la principal defensa contra doblarse el tobillo. El tibial posterior (profundo, en el lado interno) gira el pie hacia adentro y sostiene el arco. La pantorrilla te sube a las puntas de los pies, y el tibial anterior (el músculo de la espinilla) levanta la parte delantera del pie.',
+        'Los ejercicios para fortalecer el tobillo trabajan cuatro grupos de músculos, más el sistema de equilibrio que los controla:',
+        {
+          list: [
+            '**Peroneos:** Los peroneos (en el lado externo de la pierna) giran el pie hacia afuera y son la principal defensa contra doblarse el tobillo.',
+            '**Tibial posterior:** El tibial posterior (profundo, en el lado interno) gira el pie hacia adentro y sostiene el arco.',
+            '**Pantorrilla:** La pantorrilla te sube a las puntas de los pies.',
+            '**Tibial anterior:** El tibial anterior (el músculo de la espinilla) levanta la parte delantera del pie.',
+          ],
+        },
         'La fuerza es solo la mitad. Los tobillos también se doblan porque los músculos reaccionan una fracción de segundo tarde. El trabajo de equilibrio entrena la velocidad de esas reacciones, y por eso aparece una y otra vez en la investigación sobre esguinces repetidos.',
         'La tabla muestra el orden que usa esta página. Pasa a la siguiente etapa cuando la actual se sienta fácil y el tobillo no duela más a la mañana siguiente.',
       ],
@@ -46,10 +54,17 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
       h2: '¿Los ejercicios para fortalecer el tobillo evitan otro esguince?',
       keyFact: 'En un ensayo con 522\u00A0deportistas después de un esguince de tobillo, el 22\u00A0por ciento de quienes recibieron un programa de equilibrio en casa volvió a torcerse el tobillo en un año, frente al 33\u00A0por ciento de quienes solo recibieron la atención habitual (Hupperets y colegas, 2009).',
       paragraphs: [
-        'Sí, y el entrenamiento de equilibrio tiene la mejor evidencia. En un ensayo aleatorizado de 2009 en los Países Bajos, 522\u00A0deportistas de 12 a 70\u00A0años que se habían torcido el tobillo en los dos meses anteriores recibieron la atención habitual o la atención habitual más un programa en casa con tabla de equilibrio. En un año, el 22\u00A0por ciento del grupo de equilibrio volvió a torcerse el tobillo, frente al 33\u00A0por ciento del grupo de atención habitual. Eso es un riesgo cerca de un 35\u00A0por ciento menor. Nueve personas tuvieron que hacer el programa para evitar un esguince repetido.',
+        'Sí, y **el entrenamiento de equilibrio tiene la mejor evidencia.** En un ensayo aleatorizado de 2009 en los Países Bajos, 522\u00A0deportistas de 12 a 70\u00A0años que se habían torcido el tobillo en los dos meses anteriores recibieron la atención habitual o la atención habitual más un programa en casa con tabla de equilibrio.',
+        'En un año, el 22\u00A0por ciento del grupo de equilibrio volvió a torcerse el tobillo, frente al 33\u00A0por ciento del grupo de atención habitual. Eso es un riesgo cerca de un 35\u00A0por ciento menor. Nueve personas tuvieron que hacer el programa para evitar un esguince repetido.',
         'El programa pedía tres sesiones por semana de hasta 30\u00A0minutos, durante dos meses, cada vez más difíciles. Las personas lo hicieron en casa sin supervisión.',
-        'Los estudios combinados apuntan en la misma dirección. Un metaanálisis de 2015 de 7\u00A0ensayos con 3726\u00A0personas encontró que el entrenamiento de equilibrio redujo el riesgo de esguince en cerca de un tercio (riesgo relativo 0,65). En personas con un esguince previo el resultado se mantuvo (riesgo relativo 0,64). Para las personas que nunca se habían torcido el tobillo, la evidencia fue más débil y los autores la calificaron de no concluyente. Una revisión de 2018 de ensayos en deportistas de competencia (seis de sus ocho ensayos probaron entrenamiento de equilibrio) encontró que el entrenamiento de equilibrio redujo el riesgo de esguince un 46\u00A0por ciento.',
-        'Un resumen de 2017 de 46\u00A0revisiones calificó como moderada la evidencia del entrenamiento neuromuscular (trabajo de equilibrio y coordinación) para prevenir esguinces repetidos, y como fuerte la del uso de tobillera.',
+        'Los estudios combinados apuntan en la misma dirección:',
+        {
+          list: [
+            'Un metaanálisis de 2015 de 7\u00A0ensayos con 3726\u00A0personas encontró que el entrenamiento de equilibrio redujo el riesgo de esguince en cerca de un tercio (riesgo relativo 0,65). En personas con un esguince previo el resultado se mantuvo (riesgo relativo 0,64). Para las personas que nunca se habían torcido el tobillo, la evidencia fue más débil y los autores la calificaron de no concluyente.',
+            'Una revisión de 2018 de ensayos en deportistas de competencia (seis de sus ocho ensayos probaron entrenamiento de equilibrio) encontró que el entrenamiento de equilibrio redujo el riesgo de esguince un 46\u00A0por ciento.',
+            'Un resumen de 2017 de 46\u00A0revisiones calificó como moderada la evidencia del entrenamiento neuromuscular (trabajo de equilibrio y coordinación) para prevenir esguinces repetidos, y como fuerte la del uso de tobillera.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009: riesgo relativo 0,63 (IC 95\u00A0% 0,45 a 0,88) para recaída reportada por los propios participantes; el beneficio fue más claro en deportistas cuyo primer esguince no había recibido atención médica. Schiftan 2015: RR 0,65 (0,55 a 0,77) en general, 0,64 (0,51 a 0,81) con esguince previo, 0,57 (0,34 a 0,97) sin esguince previo, a partir de dos ensayos no significativos.',
@@ -151,7 +166,14 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
       paragraphs: [
         'Por lo general puedes empezar ejercicios suaves de tobillo poco después de un esguince, siempre que puedas apoyar el pie. Un resumen de 2017 de 46\u00A0revisiones encontró evidencia fuerte para la movilización temprana (empezar a mover el tobillo pronto) y evidencia moderada para el ejercicio después de un esguince agudo. Una guía holandesa de 2018 dice que a las personas con un ligamento externo del tobillo roto les va mejor con vendaje o tobillera combinados con un programa de ejercicios, y prefiere el ejercicio supervisado a las opciones pasivas.',
         'Empieza con movimiento sin dolor y trabajo con banda sentado, agrega las elevaciones de pie cuando caminar se sienta normal, y agrega equilibrio cuando puedas pararte sobre la pierna lesionada sin dolor agudo. Si el tobillo además está rígido, mira [ejercicios de movilidad de tobillo](/es/ejercicios-de-movilidad-de-tobillo/) para la parte del rango de movimiento.',
-        'Antes de todo esto, descarta una fractura. Las reglas de tobillo de Ottawa son una lista corta que usan los médicos: se recomienda una radiografía si no pudiste dar cuatro pasos justo después de la lesión ni en el consultorio, o si duele el hueso al presionar el borde de atrás o la punta de cualquiera de los dos huesos del tobillo, la base del hueso del quinto dedo o el navicular (un hueso en la parte interna del medio del pie). Una revisión de 2003 de 27\u00A0estudios con 15\u00A0581\u00A0pacientes encontró que las reglas casi no pasan por alto fracturas.',
+        'Antes de todo esto, **descarta una fractura.** Las reglas de tobillo de Ottawa son una lista corta que usan los médicos. Se recomienda una radiografía si:',
+        {
+          list: [
+            'No pudiste dar cuatro pasos justo después de la lesión ni en el consultorio.',
+            'Duele el hueso al presionar el borde de atrás o la punta de cualquiera de los dos huesos del tobillo, la base del hueso del quinto dedo o el navicular (un hueso en la parte interna del medio del pie).',
+          ],
+        },
+        'Una revisión de 2003 de 27\u00A0estudios con 15\u00A0581\u00A0pacientes encontró que las reglas casi no pasan por alto fracturas.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -160,7 +182,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
       keyFact: 'En un ensayo con 39\u00A0personas con tobillos inestables, el entrenamiento con banda mejoró la fuerza del tobillo y la sensación de inestabilidad, pero no mejoró las pruebas de equilibrio ni de saltos (Hall y colegas, 2015).',
       paragraphs: [
         'El trabajo con banda por sí solo da fuerza, pero puede no cambiar qué tan bien responde el tobillo a un tambaleo. En un ensayo de 2015, 39\u00A0adultos jóvenes con inestabilidad crónica de tobillo (un tobillo que sigue fallando) se dividieron en un grupo con banda, un grupo de fuerza con resistencia manual y un grupo control. Los dos grupos de fuerza entrenaron tres veces por semana durante cerca de mes y medio. Los dos ganaron fuerza y dijeron que su tobillo se sentía más estable. Ninguno mejoró en una prueba de alcance de equilibrio ni en una prueba de saltos cruzados.',
-        'Los autores sugirieron agregar ejercicios que usen varias direcciones y articulaciones. Los ensayos de prevención usaron equilibrio, no bandas. Haz las dos cosas.',
+        'Los autores sugirieron agregar ejercicios que usen varias direcciones y articulaciones. Los ensayos de prevención usaron equilibrio, no bandas. **Haz las dos cosas.**',
         'La cadera también importa. En un ensayo pequeño de 2018 con 26\u00A0personas con tobillos inestables, después de un mes de ejercicios supervisados con banda para la cadera, tres veces por semana, el grupo que entrenó cometió en promedio 9,9\u00A0errores en una prueba de equilibrio de pie, frente a 21,2 del grupo que no hizo nada. Fue un solo ensayo pequeño, así que piensa en la cadera como un complemento útil, no como el centro del plan.',
       ],
       sourceNote:
@@ -172,13 +194,22 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
       paragraphs: [
         'Casi toda la progresión solo necesita una pared. Únicamente los movimientos de inversión y eversión necesitan una banda.',
         'Sin banda, puedes hacer esas dos direcciones como isométricos (empujar contra algo que no se mueve). Siéntate con el borde externo del pie contra la pata de una mesa o el marco de una puerta y empuja hacia afuera de 5 a 10\u00A0segundos sin que el pie se mueva. Luego haz lo mismo con el borde interno empujando hacia adentro. Es un paso inicial común después de un esguince, aunque no se ha probado como programa por sí solo.',
-        'Si solo tienes tiempo para una cosa, quédate con el equilibrio. Tiene la evidencia más fuerte y toma un minuto al día.',
+        'Si solo tienes tiempo para una cosa, **quédate con el equilibrio.** Tiene la evidencia más fuerte y toma un minuto al día.',
       ],
     },
     {
       h2: '¿Los ejercicios de tobillo ayudan con el equilibrio en adultos mayores?',
       paragraphs: [
-        'Los ejercicios de tobillo suelen ser parte de la prevención de caídas en adultos mayores, pero la evidencia del trabajo de tobillo por sí solo es limitada. El mejor ensayo probó un paquete. En 2011, 305\u00A0personas con una edad media de 74\u00A0años, con dolor de pie incapacitante y un riesgo de caídas elevado, recibieron la atención podológica de rutina o un paquete con plantillas ortopédicas, consejos de calzado y un vale, ejercicios de pie y tobillo en casa y un folleto sobre caídas. En 12\u00A0meses, el grupo del paquete tuvo un 36\u00A0por ciento menos caídas. El número de personas que se cayeron al menos una vez no fue claramente distinto.',
+        'Los ejercicios de tobillo suelen ser parte de la prevención de caídas en adultos mayores, pero la evidencia del trabajo de tobillo por sí solo es limitada. El mejor ensayo probó un paquete. En 2011, 305\u00A0personas con una edad media de 74\u00A0años, con dolor de pie incapacitante y un riesgo de caídas elevado, recibieron la atención podológica de rutina o un paquete con:',
+        {
+          list: [
+            'Plantillas ortopédicas.',
+            'Consejos de calzado y un vale.',
+            'Ejercicios de pie y tobillo en casa.',
+            'Un folleto sobre caídas.',
+          ],
+        },
+        'En 12\u00A0meses, el grupo del paquete tuvo un 36\u00A0por ciento menos caídas. El número de personas que se cayeron al menos una vez no fue claramente distinto.',
         'El grupo del paquete también ganó fuerza, rango de movimiento y equilibrio en el tobillo. Como era un paquete, el ensayo no puede decir cuánto vino de los ejercicios.',
         'Si el equilibrio es tu principal preocupación, haz el equilibrio a una pierna junto a una barra de cocina con una mano lista sobre ella. Si has tenido caídas, mareos o los pies entumidos, primero pide una evaluación del equilibrio.',
       ],
@@ -195,7 +226,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     {
       h2: '¿Con qué frecuencia hacer ejercicios para fortalecer el tobillo?',
       paragraphs: [
-        'Dos o tres sesiones de fuerza por semana, con una práctica corta de equilibrio casi todos los días, es un patrón sensato. Coincide con el ensayo de prevención de arriba, que pedía tres sesiones por semana durante dos meses. El trabajo de equilibrio es de poca carga y se puede hacer casi a diario.',
+        '**Dos o tres sesiones de fuerza por semana, con una práctica corta de equilibrio casi todos los días,** es un patrón sensato. Coincide con el ensayo de prevención de arriba, que pedía tres sesiones por semana durante dos meses. El trabajo de equilibrio es de poca carga y se puede hacer casi a diario.',
         'Sube de nivel cuando un ejercicio se sienta fácil durante dos sesiones seguidas y el tobillo no esté peor a la mañana siguiente. Progresa con una versión más difícil (una pierna en vez de dos, ojos cerrados en vez de abiertos, una banda más firme) en lugar de amontonar más series. Regresa una etapa después de una recaída.',
         'Walkito está pensado para el dolor de talón, arco y pierna, y no tiene un programa de rehabilitación para esguinces de tobillo. Sus planes pueden incluir de esta página la inversión con banda (después de algo de trabajo de arco), las elevaciones de tibial anterior, las elevaciones de talón, el trabajo de cadera acostado de lado y el equilibrio a una pierna, con una prueba corta de resistencia de la pantorrilla, de cuánto mantienes el arco y de equilibrio, al principio cada dos semanas. Si también quieres fortalecer los músculos pequeños bajo el arco, mira [ejercicios para fortalecer los pies](/es/ejercicios-para-fortalecer-los-pies/).',
       ],

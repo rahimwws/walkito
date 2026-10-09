@@ -25,7 +25,16 @@ export const BAREFOOT_ES: Guide = {
     {
       h2: '¿Qué son los zapatos barefoot?',
       paragraphs: [
-        'Los zapatos barefoot son zapatos hechos para estorbarle al pie lo menos posible. La mayoría comparte cuatro características: una suela delgada con la que sientes el piso, una suela que se dobla y se tuerce con facilidad, drop cero (el talón queda a la misma altura que los dedos) y una puntera ancha para que los dedos se puedan abrir. No tienen soporte de arco y casi no tienen amortiguación.',
+        'Los zapatos barefoot son zapatos hechos para estorbarle al pie lo menos posible. La mayoría comparte cuatro características:',
+        {
+          list: [
+            'Una suela delgada con la que sientes el piso.',
+            'Una suela que se dobla y se tuerce con facilidad.',
+            'Drop cero (el talón queda a la misma altura que los dedos).',
+            'Una puntera ancha para que los dedos se puedan abrir.',
+          ],
+        },
+        'No tienen soporte de arco y casi no tienen amortiguación.',
         'Los investigadores los llaman calzado minimalista. La idea es sencilla: un zapato que sostiene y amortigua el pie hace parte del trabajo que, si no, harían los músculos pequeños del pie. Si quitas ese soporte, los músculos trabajan más. Para cualquiera con dolor de pie, la pregunta es si ese trabajo extra ayuda o perjudica.',
       ],
     },
@@ -33,10 +42,18 @@ export const BAREFOOT_ES: Guide = {
       h2: '¿Los zapatos barefoot hacen más fuertes los pies?',
       keyFact: 'Los adultos que usaron calzado minimalista en su día a día durante seis meses ganaron en promedio un 57,4\u00A0% de fuerza en los dedos (Curtis y colegas, 2021).',
       paragraphs: [
-        'Sí, en adultos sin dolor de pie, la evidencia apunta en esa dirección. En un ensayo aleatorizado de 2019, Ridge y colegas dividieron a 57\u00A0corredores en tres grupos: caminar con zapatos minimalistas, hacer ejercicios para fortalecer el pie o no cambiar nada. El grupo que caminaba fue aumentando poco a poco cuántos pasos al día daba con los zapatos nuevos. Después de unos dos meses, todos los músculos del pie que midieron los investigadores eran más grandes y más fuertes en los dos grupos activos, y no cambiaron en el grupo de control. Caminar con los zapatos funcionó más o menos igual que los ejercicios.',
+        'Sí, en adultos sin dolor de pie, la evidencia apunta en esa dirección. En un ensayo aleatorizado de 2019, Ridge y colegas dividieron a 57\u00A0corredores en tres grupos:',
+        {
+          list: [
+            'Caminar con zapatos minimalistas.',
+            'Hacer ejercicios para fortalecer el pie.',
+            'No cambiar nada.',
+          ],
+        },
+        'El grupo que caminaba fue aumentando poco a poco cuántos pasos al día daba con los zapatos nuevos. Después de unos dos meses, todos los músculos del pie que midieron los investigadores eran más grandes y más fuertes en los dos grupos activos, y no cambiaron en el grupo de control. Caminar con los zapatos funcionó más o menos igual que los ejercicios.',
         'Curtis y colegas hicieron un estudio más largo en 2021. Veintidós adultos usaron calzado minimalista en su día a día (no para correr) durante seis meses, y 24 siguieron con sus zapatos de siempre. La fuerza de los dedos aumentó en promedio un 57,4\u00A0% en quienes hicieron el cambio. El estudio no fue aleatorizado y solo incluyó a personas sin problemas recientes de pierna o pie.',
         'Una revisión de 2025 de 28\u00A0ensayos, de Peters-Dickie y colegas, encontró que el calzado minimalista aumentó la fuerza de los dedos más pequeños. Calificó la certeza de la evidencia como baja a muy baja.',
-        'Tener músculos del pie más fuertes no es lo mismo que tener menos dolor de pie. Ninguno de estos estudios midió el dolor ni incluyó a personas con una afección del pie. Para un conjunto completo de ejercicios que trabajan los mismos músculos, mira [ejercicios para fortalecer los pies](/es/ejercicios-para-fortalecer-los-pies/).',
+        '**Tener músculos del pie más fuertes no es lo mismo que tener menos dolor de pie.** Ninguno de estos estudios midió el dolor ni incluyó a personas con una afección del pie. Para un conjunto completo de ejercicios que trabajan los mismos músculos, mira [ejercicios para fortalecer los pies](/es/ejercicios-para-fortalecer-los-pies/).',
       ],
       sourceNote:
         'Curtis 2021: fuerza del pie medida como fuerza isométrica máxima de flexión plantar en las articulaciones de los dedos, p < 0,001. Peters-Dickie 2025: 28\u00A0ensayos, 1\u00A0399\u00A0participantes.',
@@ -46,9 +63,16 @@ export const BAREFOOT_ES: Guide = {
       h2: '¿Los zapatos barefoot son malos? El riesgo está en el cambio',
       keyFact: 'Después de unos dos meses y medio de pasar a zapatos minimalistas para correr, 10 de 19\u00A0corredores mostraron estrés óseo nuevo o peor en una resonancia magnética (Ridge y colegas, 2013).',
       paragraphs: [
-        'Los zapatos no son el riesgo principal. La velocidad del cambio sí lo es. Los huesos y músculos de tu pie, la pantorrilla y el tendón de Aquiles se han adaptado a tus zapatos actuales y necesitan tiempo para soportar más carga.',
-        'Ridge y colegas lo mostraron en 2013. Hicieron resonancias de los pies de 36\u00A0corredores con experiencia. Diecinueve pasaron poco a poco a zapatos minimalistas para correr a lo largo de unos dos meses y medio, y 17 siguieron con sus zapatos normales. Después, 10 de los 19 que cambiaron tenían edema de médula ósea nuevo o peor (líquido dentro del hueso, una señal temprana de estrés óseo) en al menos un hueso del pie, significativamente más que los corredores que no cambiaron. Los autores aconsejaron que los corredores hagan la transición «muy despacio y de forma gradual».',
-        'Dos ensayos aleatorizados apuntan en la misma dirección. En el ensayo de Ryan y colegas con 103\u00A0corredores que entrenaban para una carrera de 10\u00A0km durante tres meses, el grupo con zapatos parcialmente minimalistas tuvo 12\u00A0lesiones frente a 4 en el grupo con zapatos normales, y el grupo totalmente minimalista reportó más dolor en la espinilla y la pantorrilla. En el ensayo de seis meses de Fuller y colegas con 61\u00A0corredores, el dolor al correr fue mayor con zapatos minimalistas, claramente por encima de unos 35\u00A0km a la semana, y el riesgo de lesión subió con el peso corporal. La diferencia general en lesiones (16 de 31 frente a 11 de 30) pudo deberse al azar.',
+        'Los zapatos no son el riesgo principal. **La velocidad del cambio sí lo es.** Los huesos y músculos de tu pie, la pantorrilla y el tendón de Aquiles se han adaptado a tus zapatos actuales y necesitan tiempo para soportar más carga.',
+        'Ridge y colegas lo mostraron en 2013. Hicieron resonancias de los pies de 36\u00A0corredores con experiencia. Diecinueve pasaron poco a poco a zapatos minimalistas para correr a lo largo de unos dos meses y medio, y 17 siguieron con sus zapatos normales.',
+        'Después, 10 de los 19 que cambiaron tenían edema de médula ósea nuevo o peor (líquido dentro del hueso, una señal temprana de estrés óseo) en al menos un hueso del pie, significativamente más que los corredores que no cambiaron. Los autores aconsejaron que los corredores hagan la transición «muy despacio y de forma gradual».',
+        'Dos ensayos aleatorizados apuntan en la misma dirección:',
+        {
+          list: [
+            'En el ensayo de Ryan y colegas con 103\u00A0corredores que entrenaban para una carrera de 10\u00A0km durante tres meses, el grupo con zapatos parcialmente minimalistas tuvo 12\u00A0lesiones frente a 4 en el grupo con zapatos normales, y el grupo totalmente minimalista reportó más dolor en la espinilla y la pantorrilla.',
+            'En el ensayo de seis meses de Fuller y colegas con 61\u00A0corredores, el dolor al correr fue mayor con zapatos minimalistas, claramente por encima de unos 35\u00A0km a la semana, y el riesgo de lesión subió con el peso corporal. La diferencia general en lesiones (16 de 31 frente a 11 de 30) pudo deberse al azar.',
+          ],
+        },
         'Eran corredores. Caminar carga el pie mucho menos, y esa es una razón por la que los estudios de fuerza usaron la caminata. Si corres y tienes [dolor de talón](/es/dolor-de-talon-en-corredores/), un cambio repentino de zapatos es un cambio de carga más que tu pie no necesita.',
       ],
       sourceNote:
@@ -64,9 +88,15 @@ export const BAREFOOT_ES: Guide = {
         alt: 'Un pie visto desde el lado interno, con la fascia plantar resaltada como una banda del talón a la parte delantera de la planta.',
       },
       paragraphs: [
-        'No hay buena evidencia de que los zapatos barefoot alivien la fascitis plantar (dolor donde la banda gruesa bajo el pie se une al talón). Tampoco hay ningún ensayo que muestre que la causen. Las afirmaciones tajantes en un sentido o en otro que circulan en internet vienen sobre todo de vendedores de zapatos y plantillas.',
-        'Esto es lo que se ha probado. En un ensayo aleatorizado de 2026, Xu y colegas dieron a adultos con fascitis plantar unos dos meses de ejercicios de pie, y 34 lo completaron. Cerca de la mitad usó además zapatos minimalistas. La fuerza de los dedos aumentó en los dos grupos, y añadir los zapatos no sumó con claridad. El equilibrio no cambió en ninguno de los dos grupos. Este reporte no incluyó el dolor, y el fabricante de los zapatos los proporcionó.',
-        'En un ensayo pequeño de 2022 con 36\u00A0mujeres con fascitis plantar, Ribeiro y colegas compararon durante seis meses zapatos minimalistas flexibles solos, los mismos zapatos más una plantilla a medida y los consejos habituales sobre calzado. Solo el grupo de la plantilla tuvo claramente menos dolor de talón que el grupo de los consejos habituales. Una serie de casos de 2022 con 20\u00A0corredores reportó menos dolor después de cerca de mes y medio de correr descalzos sobre pasto, pero no tenía grupo de comparación y uno de los autores recibe financiamiento de una marca de zapatos barefoot.',
+        '**No hay buena evidencia de que los zapatos barefoot alivien la fascitis plantar** (dolor donde la banda gruesa bajo el pie se une al talón). Tampoco hay ningún ensayo que muestre que la causen. Las afirmaciones tajantes en un sentido o en otro que circulan en internet vienen sobre todo de vendedores de zapatos y plantillas.',
+        'Esto es lo que se ha probado:',
+        {
+          list: [
+            'En un ensayo aleatorizado de 2026, Xu y colegas dieron a adultos con fascitis plantar unos dos meses de ejercicios de pie, y 34 lo completaron. Cerca de la mitad usó además zapatos minimalistas. La fuerza de los dedos aumentó en los dos grupos, y añadir los zapatos no sumó con claridad. El equilibrio no cambió en ninguno de los dos grupos. Este reporte no incluyó el dolor, y el fabricante de los zapatos los proporcionó.',
+            'En un ensayo pequeño de 2022 con 36\u00A0mujeres con fascitis plantar, Ribeiro y colegas compararon durante seis meses zapatos minimalistas flexibles solos, los mismos zapatos más una plantilla a medida y los consejos habituales sobre calzado. Solo el grupo de la plantilla tuvo claramente menos dolor de talón que el grupo de los consejos habituales.',
+            'Una serie de casos de 2022 con 20\u00A0corredores reportó menos dolor después de cerca de mes y medio de correr descalzos sobre pasto, pero no tenía grupo de comparación y uno de los autores recibe financiamiento de una marca de zapatos barefoot.',
+          ],
+        },
         'La guía estadounidense de 2023 para el dolor de talón recomienda el estiramiento de la pantorrilla y de la fascia plantar (grado A) y el entrenamiento de fuerza (grado B). No recomienda el calzado minimalista, y menciona el calzado que reduce la carga como parte de los consejos para los pacientes. Si te duele el talón ahora, empieza con los [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/) para saber qué puede y qué no puede hacer el soporte bajo el pie.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -74,7 +104,8 @@ export const BAREFOOT_ES: Guide = {
     {
       h2: '¿Está bien andar descalzo en casa si te duele el talón?',
       paragraphs: [
-        'Ten cuidado con los pisos duros, sobre todo a primera hora de la mañana. Ningún ensayo ha probado caminar descalzo en casa para el dolor de talón, así que este es un consejo prudente, no una regla probada. La loseta o la madera no le dan amortiguación al talón, y los primeros pasos después de reposar son cuando la fascitis plantar suele doler más. Nuestra página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) sugiere un estiramiento antes de pararte y algo en los pies para esos primeros pasos.',
+        '**Ten cuidado con los pisos duros, sobre todo a primera hora de la mañana.** Ningún ensayo ha probado caminar descalzo en casa para el dolor de talón, así que este es un consejo prudente, no una regla probada.',
+        'La loseta o la madera no le dan amortiguación al talón, y los primeros pasos después de reposar son cuando la fascitis plantar suele doler más. Nuestra página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) sugiere un estiramiento antes de pararte y algo en los pies para esos primeros pasos.',
         'La amortiguación bajo el talón puede importar. En un estudio de 2023, Landorf y colegas compararon a 50\u00A0personas con dolor en la planta del talón con 25\u00A0personas emparejadas sin ese dolor. Las que tenían dolor de talón pasaban 3,4\u00A0horas más al día de pie y usaban zapatos con talones más duros. Eso muestra una relación, no una causa.',
         'Un dolor profundo en el centro del talón que empeora descalzo sobre piso duro también puede venir de la almohadilla grasa del talón (el cojín de grasa bajo el hueso del talón). Mira [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/) para ese patrón.',
         'Los ratos cortos descalzo sobre pasto o arena son más suaves. Si aumentan tu dolor de talón a la mañana siguiente, fue demasiado.',
@@ -90,10 +121,17 @@ export const BAREFOOT_ES: Guide = {
         alt: 'Tres pies vistos desde el lado interno: un pie plano con el arco en el piso, un arco típico con un pequeño espacio y un arco alto con un espacio grande.',
       },
       paragraphs: [
-        'Hay indicios, pero ningún ensayo. Holowka y colegas compararon a 75\u00A0hombres rarámuris (tarahumaras) de México, que usan sandalias delgadas casi toda su vida, con 26\u00A0hombres de Estados Unidos que usan zapatos normales. Los que usaban sandalias tenían arcos más altos y más rígidos y músculos más grandes a lo largo de los bordes interno y externo del pie. Solo uno de los 75 tenía el arco bajo, frente a 8 de los 26\u00A0hombres estadounidenses (31\u00A0%).',
+        '**Hay indicios, pero ningún ensayo.** Holowka y colegas compararon a 75\u00A0hombres rarámuris (tarahumaras) de México, que usan sandalias delgadas casi toda su vida, con 26\u00A0hombres de Estados Unidos que usan zapatos normales. Los que usaban sandalias tenían arcos más altos y más rígidos y músculos más grandes a lo largo de los bordes interno y externo del pie. Solo uno de los 75 tenía el arco bajo, frente a 8 de los 26\u00A0hombres estadounidenses (31\u00A0%).',
         'Una encuesta más antigua de 2\u00A0300\u00A0niños en la India, de Rao y Joseph en 1992, encontró pie plano en el 8,6\u00A0% de los niños que usaban zapatos y en el 2,8\u00A0% de los que no. El pie plano era más común en los niños que usaban zapatos cerrados.',
         'Los dos estudios comparan grupos que son distintos en muchas cosas, así que no pueden mostrar que los zapatos causen el pie plano, ni que unos zapatos nuevos vayan a subir el arco de un adulto. Ningún ensayo lo ha probado.',
-        'Lo que importa más es el tipo de pie plano. Un pie plano flexible (el arco vuelve a aparecer cuando te sientas o te paras de puntas) por lo general se puede cargar y fortalecer sin problema, y un cambio gradual a zapatos más planos es razonable si tus pies se sienten bien. Un pie plano rígido, o uno que duele, que se está aplanando más o que está peor de un lado, necesita primero a un profesional de la salud. Nuestra página de [pie plano](/es/pie-plano/) explica la diferencia.',
+        'Lo que importa más es el tipo de pie plano:',
+        {
+          list: [
+            'Un pie plano flexible (el arco vuelve a aparecer cuando te sientas o te paras de puntas) por lo general se puede cargar y fortalecer sin problema, y un cambio gradual a zapatos más planos es razonable si tus pies se sienten bien.',
+            'Un pie plano rígido, o uno que duele, que se está aplanando más o que está peor de un lado, necesita primero a un profesional de la salud.',
+          ],
+        },
+        'Nuestra página de [pie plano](/es/pie-plano/) explica la diferencia.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -117,7 +155,7 @@ export const BAREFOOT_ES: Guide = {
     {
       h2: '¿Cómo pasarte a los zapatos barefoot con seguridad?',
       paragraphs: [
-        'Despacio, y según cómo respondan tus pies, no según el calendario. Ningún estudio ha encontrado un plan de tiempos que le sirva a todos. Los estudios de fuerza aumentaron los pasos poco a poco y no dejaron que la gente corriera con los zapatos nuevos. Los ensayos de corredores vieron más dolor y estrés óseo incluso con planes graduales.',
+        '**Despacio, y según cómo respondan tus pies, no según el calendario.** Ningún estudio ha encontrado un plan de tiempos que le sirva a todos. Los estudios de fuerza aumentaron los pasos poco a poco y no dejaron que la gente corriera con los zapatos nuevos. Los ensayos de corredores vieron más dolor y estrés óseo incluso con planes graduales.',
       ],
       bullets: [
         'Camina antes de correr. Empieza con ratos cortos de caminata diaria, con tus zapatos de siempre el resto del día.',

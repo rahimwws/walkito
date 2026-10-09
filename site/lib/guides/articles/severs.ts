@@ -24,7 +24,8 @@ export const SEVERS_EN: Guide = {
   lede:
     "Sever's disease, also called calcaneal apophysitis, is the most common cause of heel pain in children. It happens when the growth plate at the back of the heel bone gets irritated by repeated pulling from the Achilles tendon, usually during a growth spurt and a sport that involves running or jumping. It is not a disease in the usual sense. It resolves on its own once the growth plate closes.",
   intro: [
-    "This page is written for parents. It covers what is happening in the heel, what the research says about heel cups, stretching, load management, and when the pain needs a clinician instead of rest. Walkito is an exercise app designed for adults with heel and arch pain. It is not designed for children, and nothing on this page is a recommendation to use it with a child. If your child's heel pain is not improving with the steps below, a paediatric sports medicine clinician or podiatrist is the right next step.",
+    "This page is written for parents. It covers what is happening in the heel, what the research says about heel cups, stretching, load management, and when the pain needs a clinician instead of rest.",
+    "Walkito is an exercise app designed for adults with heel and arch pain. It is not designed for children, and nothing on this page is a recommendation to use it with a child. If your child's heel pain is not improving with the steps below, a paediatric sports medicine clinician or podiatrist is the right next step.",
   ],
   takeaways: [
     "Sever's disease affects children aged 8 to 15, most often during a growth spurt, and resolves once the calcaneal growth plate closes, usually between ages 12 and 17 (StatPearls review, 2024).",
@@ -49,14 +50,24 @@ export const SEVERS_EN: Guide = {
       paragraphs: [
         "Sever's disease affects children between about 8 and 15 years old. The calcaneal apophysis first appears at around age 7 to 9 and usually fuses between 15 and 17. Boys are affected two to three times more often than girls, with a typical onset around age 12 for boys and 11 for girls. About 60 percent of cases involve both heels.",
         "It accounts for 2 to 16 percent of visits to sports clinics by children. The sports most associated with it are soccer, basketball, track, cross-country, gymnastics and tennis. The pattern is predictable: it tends to appear at the start of a sport season or during a growth spurt, when the load on the heel suddenly increases.",
-        'Risk factors include high levels of running and jumping activity, tight calf muscles, limited ankle flexibility, a high BMI, hard playing surfaces, and poorly cushioned shoes or cleats.',
+        'Risk factors include:',
+        {
+          list: [
+            'High levels of running and jumping activity.',
+            'Tight calf muscles.',
+            'Limited ankle flexibility.',
+            'A high BMI.',
+            'Hard playing surfaces.',
+            'Poorly cushioned shoes or cleats.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: "What does Sever's disease feel like?",
       paragraphs: [
-        'The main symptom is pain at the back or sides of the heel, usually during or after activity and especially after running or jumping. The pain is often described as a bruise. There is rarely visible swelling or bruising. Pressing or squeezing the sides of the heel usually reproduces the pain. This squeeze test is the standard clinical check.',
+        'The main symptom is pain at the back or sides of the heel, usually during or after activity and especially after running or jumping. The pain is often described as a bruise. There is rarely visible swelling or bruising. **Pressing or squeezing the sides of the heel usually reproduces the pain.** This squeeze test is the standard clinical check.',
         "Unlike plantar fasciitis in adults, which is worst on the first steps after rest, Sever's disease pain tends to get worse with activity and does not improve with walking. Some children start limping or walking on their toes to avoid putting weight on the heel.",
         'The pain can range from mild, only noticeable during sport, to severe enough to stop the child from playing altogether.',
       ],
@@ -65,8 +76,16 @@ export const SEVERS_EN: Guide = {
       h2: "What helps Sever's disease? The evidence",
       keyFact: 'In a trial of 101 children, all three approaches improved pain, and the heel raise group reported more satisfaction at six weeks, though the difference disappeared by three months (Wiegerinck and colleagues, 2016).',
       paragraphs: [
-        "The evidence base for Sever's disease is small but growing. The three main options studied are load management (reducing painful activity), heel cups or insoles, and stretching or strengthening exercises. All three have shown benefit, and no single one has been shown to be clearly better than the others at final follow-up.",
-        "In a 2016 trial of 101 children aged 8 to 15, Wiegerinck and colleagues compared three approaches: wait-and-see with advice to stop painful activity, a heel raise inlay, and supervised eccentric exercises. All three groups improved significantly. At six weeks, the heel raise group was more satisfied than the other two groups. At three months, no clinically relevant difference remained between the three.",
+        "The evidence base for Sever's disease is small but growing. The three main options studied are load management (reducing painful activity), heel cups or insoles, and stretching or strengthening exercises. All three have shown benefit, and **no single one has been shown to be clearly better than the others at final follow-up.**",
+        "In a 2016 trial of 101 children aged 8 to 15, Wiegerinck and colleagues compared three approaches:",
+        {
+          list: [
+            'Wait-and-see with advice to stop painful activity.',
+            'A heel raise inlay.',
+            'Supervised eccentric exercises.',
+          ],
+        },
+        "All three groups improved significantly. At six weeks, the heel raise group was more satisfied than the other two groups. At three months, no clinically relevant difference remained between the three.",
         'In a separate 2016 factorial trial of 124 children, James and colleagues compared heel raises against prefabricated orthoses, and footwear replacement against no replacement. Heel raises had a small advantage over prefabricated orthoses at 2 months in the physical domain of the Oxford Ankle Foot Questionnaire. At 6 and 12 months, no difference remained between any combination.',
         'In a crossover trial of 51 boys, Perhamre and colleagues compared a 3 mm heel cup against a 5 mm heel wedge. The heel cup reduced pain by about 80 percent on the Borg CR-10 scale, suggesting that cushioning and impact absorption may matter more than simply lifting the heel.',
       ],
@@ -77,8 +96,17 @@ export const SEVERS_EN: Guide = {
     {
       h2: 'Load management and activity modification',
       paragraphs: [
-        "Load management is the foundation of Sever's disease care. It does not mean stopping all sport. It means reducing the activities that cause the pain, especially running and jumping on hard surfaces, until the pain settles. Most children can return to sport within two to eight weeks if the load is managed early.",
-        'Practical steps include cutting back on training sessions instead of stopping completely, avoiding cleats on hard ground where possible, switching to well-cushioned shoes, and skipping the parts of practice that involve the most running and jumping. Some coaches allow children to participate in skill drills while sitting out sprints and conditioning.',
+        "Load management is the foundation of Sever's disease care. **It does not mean stopping all sport.** It means reducing the activities that cause the pain, especially running and jumping on hard surfaces, until the pain settles. Most children can return to sport within two to eight weeks if the load is managed early.",
+        'Practical steps include:',
+        {
+          list: [
+            'Cutting back on training sessions instead of stopping completely.',
+            'Avoiding cleats on hard ground where possible.',
+            'Switching to well-cushioned shoes.',
+            'Skipping the parts of practice that involve the most running and jumping.',
+          ],
+        },
+        'Some coaches allow children to participate in skill drills while sitting out sprints and conditioning.',
         "The hardest part of load management is that Sever's disease tends to recur. A child may feel better after two weeks of rest, return to full activity, and have the pain come back. That does not mean the first round of rest failed. It means the growth plate is still open and still vulnerable. Recurrence is common until skeletal maturity.",
       ],
       cites: [CITE.wiegerinck],
@@ -89,7 +117,7 @@ export const SEVERS_EN: Guide = {
       paragraphs: [
         "Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.",
         "In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials.",
-        'A reasonable starting point is an inexpensive over-the-counter heel cup, worn in both shoes and during sport. If that does not help, a clinician can assess whether a custom orthotic is worth the cost.',
+        '**A reasonable starting point is an inexpensive over-the-counter heel cup, worn in both shoes and during sport.** If that does not help, a clinician can assess whether a custom orthotic is worth the cost.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -97,7 +125,7 @@ export const SEVERS_EN: Guide = {
       h2: 'Does calf stretching help Sever\'s disease?',
       paragraphs: [
         'Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the more superficial calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.',
-        "In the Wiegerinck trial, the exercise group performed an eccentric calf strengthening program under physiotherapist supervision. This group improved as much as the heel raise and wait-and-see groups. Stretching and gentle strengthening are safe and may help by reducing the traction on the growth plate, but the evidence does not show them to be superior to heel cups or load management alone.",
+        "In the Wiegerinck trial, the exercise group performed an eccentric calf strengthening program under physiotherapist supervision. This group improved as much as the heel raise and wait-and-see groups. Stretching and gentle strengthening are safe and may help by reducing the traction on the growth plate, but **the evidence does not show them to be superior to heel cups or load management alone.**",
         'Exercises for children with calcaneal apophysitis should be supervised or taught by a clinician or physiotherapist. The dose and progression depend on the child\'s age, pain level, and sport demands. A child with acute pain who is limping needs rest first, not exercises.',
       ],
       cites: [CITE.wiegerinck],
@@ -113,7 +141,7 @@ export const SEVERS_EN: Guide = {
       h2: 'How long does it last, and does it come back?',
       paragraphs: [
         "Sever's disease usually resolves within weeks to months of load management and supportive care. Most children can return to sport within two to eight weeks. The pain typically settles for good once the growth plate fuses into solid bone, usually between ages 12 and 17 depending on the child's sex and rate of maturity (StatPearls review, 2024).",
-        'Recurrence is common and expected. Each growth spurt and each new sport season can bring the pain back. Recurrence is not a sign of failed care. It is a sign that the growth plate is still open. Continuing with heel cups, good footwear and calf stretching during sport seasons can reduce the severity and frequency of flare-ups.',
+        'Recurrence is common and expected. Each growth spurt and each new sport season can bring the pain back. **Recurrence is not a sign of failed care.** It is a sign that the growth plate is still open. Continuing with heel cups, good footwear and calf stretching during sport seasons can reduce the severity and frequency of flare-ups.',
         "No long-term problems have been associated with Sever's disease. It does not damage the growth plate or affect final bone shape.",
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

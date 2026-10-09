@@ -38,7 +38,15 @@ export const CALF_RAISE_TEST_PT: Guide = {
       paragraphs: [
         'O teste mede a resistência dos flexores plantares, os músculos que empurram o pé para baixo e tiram o calcanhar do chão. Os principais são o gastrocnêmio (o músculo maior e mais superficial da panturrilha) e o sóleo (o mais profundo, embaixo dele). Juntos, eles se ligam ao osso do calcanhar pelo tendão de Aquiles.',
         'Resistência, aqui, quer dizer quantas repetições você consegue completar antes de a panturrilha cansar e o calcanhar não conseguir mais subir o suficiente ou acompanhar o ritmo. A contagem mostra a capacidade de manter o trabalho por dezenas de ciclos, o que é mais parecido com o que a panturrilha faz ao caminhar e correr do que um único impulso pesado.',
-        'Os profissionais de saúde usam o teste para acompanhar a recuperação de rupturas do tendão de Aquiles, para rastrear fraqueza na panturrilha em pessoas com dor no calcanhar ou canelite e para comparar uma perna com a outra. Atletas com síndrome do estresse tibial medial (canelite) tinham menos resistência na panturrilha do que controles saudáveis em um estudo caso-controle com 20\u00A0atletas.',
+        'Os profissionais de saúde usam o teste:',
+        {
+          list: [
+            'Para acompanhar a recuperação de rupturas do tendão de Aquiles.',
+            'Para rastrear fraqueza na panturrilha em pessoas com dor no calcanhar ou canelite.',
+            'Para comparar uma perna com a outra.',
+          ],
+        },
+        'Atletas com síndrome do estresse tibial medial (canelite) tinham menos resistência na panturrilha do que controles saudáveis em um estudo caso-controle com 20\u00A0atletas.',
       ],
       cites: [CITE.hebertLosier, CITE.madeley],
     },
@@ -47,7 +55,16 @@ export const CALF_RAISE_TEST_PT: Guide = {
       paragraphs: [
         'O protocolo de Hebert-Losier 2017 é a versão mais citada e a fonte dos valores de referência desta página. Nesse estudo, 566\u00A0adultos saudáveis de 20 a 81\u00A0anos fizeram elevações de calcanhar em uma perna até a fadiga, em cada perna.',
         'A pessoa fica descalça ou com calçado sem salto sobre uma prancha inclinada a 10\u00A0graus, um pé de cada vez. Pode apoiar a ponta dos dedos na parede, na altura do ombro, só para se equilibrar. Um metrônomo é ajustado em 60\u00A0batidas por minuto: uma batida para subir, uma para descer, então cada repetição completa leva dois segundos. A instrução é subir o calcanhar o mais alto possível, com o joelho esticado e o tronco reto.',
-        'O teste termina quando o calcanhar não sai mais da prancha, quando não dá mais para acompanhar o ritmo do metrônomo, quando o joelho dobra ou o tronco inclina, ou quando a pessoa passa a empurrar a parede em vez de só tocar com a ponta dos dedos. Um lembrete verbal é dado antes de encerrar. O aquecimento é de 10\u00A0minutos de caminhada rápida seguidos de 10 elevações de calcanhar com os dois pés. Há dois minutos de descanso entre uma perna e outra.',
+        'O teste termina quando:',
+        {
+          list: [
+            'O calcanhar não sai mais da prancha.',
+            'Não dá mais para acompanhar o ritmo do metrônomo.',
+            'O joelho dobra ou o tronco inclina.',
+            'A pessoa passa a empurrar a parede em vez de só tocar com a ponta dos dedos.',
+          ],
+        },
+        'Um lembrete verbal é dado antes de encerrar. O aquecimento é de 10\u00A0minutos de caminhada rápida seguidos de 10 elevações de calcanhar com os dois pés. Há dois minutos de descanso entre uma perna e outra.',
       ],
       sourceNote:
         'Hebert-Losier 2017: ICC 0,96 (direita) e 0,96 (esquerda); diferença média entre dias de 0,2\u00A0repetição (limites de concordância de 95%: -6,2 a 6,5) na direita e 0,1\u00A0repetição (limites de concordância de 95%: -6,1 a 6,2) na esquerda.',
@@ -57,8 +74,9 @@ export const CALF_RAISE_TEST_PT: Guide = {
       h2: 'Como fazer o teste de elevação de calcanhar em casa?',
       paragraphs: [
         'Você não precisa de uma prancha inclinada. Ficar em pé no chão plano deixa o teste um pouco mais fácil, então a sua contagem pode ficar algumas repetições acima dos valores publicados. Isso não é problema para acompanhar a mudança ao longo do tempo e comparar a esquerda com a direita.',
-        'Fique perto de uma parede, com a ponta dos dedos encostada nela na altura do ombro. Levante um pé. Ajuste um app de metrônomo em 60\u00A0batidas por minuto. Na primeira batida, suba na ponta do pé o mais alto que conseguir. Na segunda batida, desça o calcanhar até o chão. Continue até não conseguir manter o ritmo, até o calcanhar quase não subir ou até o joelho dobrar.',
-        'Conte o total de repetições. Descanse dois minutos e repita na outra perna. Anote os dois números e a data. O erro de medida típico é de cerca de duas repetições, então uma pequena mudança entre um dia de teste e outro é ruído. O que importa é a tendência ao longo das semanas.',
+        'Fique perto de uma parede, com a ponta dos dedos encostada nela na altura do ombro. Levante um pé. Ajuste um app de metrônomo em 60\u00A0batidas por minuto.',
+        'Na primeira batida, suba na ponta do pé o mais alto que conseguir. Na segunda batida, desça o calcanhar até o chão. Continue até não conseguir manter o ritmo, até o calcanhar quase não subir ou até o joelho dobrar.',
+        'Conte o total de repetições. Descanse dois minutos e repita na outra perna. Anote os dois números e a data. O erro de medida típico é de cerca de duas repetições, então uma pequena mudança entre um dia de teste e outro é ruído. **O que importa é a tendência ao longo das semanas.**',
       ],
       exercises: [
         {
@@ -81,7 +99,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
       keyFact: 'Em 1995, um estudo com 203\u00A0adultos de 20 a 59\u00A0anos propôs 25\u00A0repetições como referência de desempenho normal na elevação de calcanhar em uma perna (Lunsford e Perry, 1995).',
       paragraphs: [
         'A tabela abaixo mostra a mediana de repetições de elevação de calcanhar em uma perna por idade e sexo, de Hebert-Losier 2017. São estimativas de um modelo para uma pessoa com nível de atividade física moderado (nível 4 numa escala de 6\u00A0pontos) e índice de massa corporal de 24,2, com a média das duas pernas.',
-        'Níveis de atividade mais altos somam cerca de cinco a nove repetições à mediana. Em 1995, Lunsford e Perry testaram 203\u00A0adultos de 20 a 59\u00A0anos e recomendaram 25\u00A0repetições como critério de desempenho normal. Os dados de Hebert-Losier apoiam esse número como uma referência razoável para adultos, embora seja uma mediana da população e não uma linha de aprovado ou reprovado. A sua própria linha de base e a direção da mudança importam mais do que qualquer número isolado.',
+        'Níveis de atividade mais altos somam cerca de cinco a nove repetições à mediana. Em 1995, Lunsford e Perry testaram 203\u00A0adultos de 20 a 59\u00A0anos e recomendaram 25\u00A0repetições como critério de desempenho normal. Os dados de Hebert-Losier apoiam esse número como uma referência razoável para adultos, embora seja uma mediana da população e não uma linha de aprovado ou reprovado. **A sua própria linha de base e a direção da mudança importam mais do que qualquer número isolado.**',
       ],
       table: {
         caption: 'Mediana de repetições de elevação de calcanhar em uma perna por idade e sexo (Hebert-Losier 2017)',
@@ -105,23 +123,34 @@ export const CALF_RAISE_TEST_PT: Guide = {
       keyFact: 'Em um estudo com 78\u00A0pessoas depois de ruptura do tendão de Aquiles, a simetria média entre as pernas aos seis meses era de 84% pela contagem de repetições, mas só 61% pelo trabalho total, o que mostra que contar repetições sozinho pode subestimar um déficit (Silbernagel e colegas, 2010).',
       paragraphs: [
         'Quase o mesmo, sim. No estudo de Hebert-Losier, a diferença mediana entre direita e esquerda foi de uma repetição, e o erro de medida típico foi de cerca de duas repetições. Uma diferença tão pequena é ruído.',
-        'Na reabilitação dos membros inferiores, um índice de simetria entre os membros (LSI) de 90\u00A0por cento ou mais é a referência padrão de função normal. O LSI é o lado mais fraco dividido pelo lado mais forte, vezes 100. Abaixo de 90\u00A0por cento quer dizer que um lado está mais de 10\u00A0por cento mais fraco. Silbernagel e colegas usaram esse limite em 78\u00A0pacientes depois de ruptura do tendão de Aquiles: aos 6\u00A0meses, os pacientes tinham em média um LSI de 84\u00A0por cento nas repetições e só 61\u00A0por cento no trabalho total, o que mostra que contar só as repetições pode subestimar um déficit.',
-        'Sem uma lesão, uma diferença acima de 10\u00A0por cento vale ser anotada e acompanhada. Ela não quer dizer que algo está errado. Mas se a diferença continua em vários testes e você também tem dor no lado mais fraco, ela dá um contexto útil para um profissional de saúde.',
+        'Na reabilitação dos membros inferiores, um índice de simetria entre os membros (LSI) de 90\u00A0por cento ou mais é a referência padrão de função normal. O LSI é o lado mais fraco dividido pelo lado mais forte, vezes 100. Abaixo de 90\u00A0por cento quer dizer que um lado está mais de 10\u00A0por cento mais fraco.',
+        'Silbernagel e colegas usaram esse limite em 78\u00A0pacientes depois de ruptura do tendão de Aquiles: aos 6\u00A0meses, os pacientes tinham em média um LSI de 84\u00A0por cento nas repetições e só 61\u00A0por cento no trabalho total, o que mostra que contar só as repetições pode subestimar um déficit.',
+        'Sem uma lesão, **uma diferença acima de 10\u00A0por cento vale ser anotada e acompanhada.** Ela não quer dizer que algo está errado. Mas se a diferença continua em vários testes e você também tem dor no lado mais fraco, ela dá um contexto útil para um profissional de saúde.',
       ],
       cites: [CITE.hebertLosier, CITE.silbernagelHeelRise],
     },
     {
       h2: 'O que um resultado baixo quer dizer, e o que ele não quer dizer?',
       paragraphs: [
-        'Uma contagem baixa no teste de elevação de calcanhar mostra que a panturrilha daquele lado cansa antes da mediana da população para a sua idade, sexo e nível de atividade. Ela não mostra por quê. Falta de condicionamento, uma lesão recente, um problema no tendão de Aquiles, evitar a dor ou falta de costume com o teste podem dar uma contagem baixa.',
-        'O teste não é um diagnóstico. Um resultado de 15 num homem de 30\u00A0anos não quer dizer que ele tem fascite plantar ou tendinite de Aquiles. Quer dizer que a resistência da panturrilha dele está abaixo da mediana de 33 para esse grupo. Um profissional de saúde junta a contagem com outros achados para decidir se o número explica um sintoma. O teste diz mais como tendência do que como um ponto isolado: passar de 14 para 22 em dois meses é um sinal mais claro do que qualquer número comparado com uma tabela.',
+        'Uma contagem baixa no teste de elevação de calcanhar mostra que a panturrilha daquele lado cansa antes da mediana da população para a sua idade, sexo e nível de atividade. Ela não mostra por quê. Tudo isso pode dar uma contagem baixa:',
+        {
+          list: [
+            'Falta de condicionamento.',
+            'Uma lesão recente.',
+            'Um problema no tendão de Aquiles.',
+            'Evitar a dor.',
+            'Falta de costume com o teste.',
+          ],
+        },
+        '**O teste não é um diagnóstico.** Um resultado de 15 num homem de 30\u00A0anos não quer dizer que ele tem fascite plantar ou tendinite de Aquiles. Quer dizer que a resistência da panturrilha dele está abaixo da mediana de 33 para esse grupo.',
+        'Um profissional de saúde junta a contagem com outros achados para decidir se o número explica um sintoma. O teste diz mais como tendência do que como um ponto isolado: passar de 14 para 22 em dois meses é um sinal mais claro do que qualquer número comparado com uma tabela.',
       ],
       cites: [CITE.hebertLosier],
     },
     {
       h2: 'Como a resistência da panturrilha se liga à dor no calcanhar, aos problemas de Aquiles e à corrida?',
       paragraphs: [
-        'A panturrilha e a fáscia plantar se ligam pelo osso do calcanhar. O tendão de Aquiles puxa por trás; a fáscia puxa por baixo. Panturrilhas fracas ou que cansam fácil põem mais tensão nos dois a cada passo.',
+        'A panturrilha e a fáscia plantar se ligam pelo osso do calcanhar. O tendão de Aquiles puxa por trás; a fáscia puxa por baixo. **Panturrilhas fracas ou que cansam fácil põem mais tensão nos dois a cada passo.**',
         'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau máximo, A, e ao treino de força o grau B. O ensaio de Rathleff, que testou elevações de calcanhar com carga para fascite plantar, usou uma elevação de calcanhar como exercício principal, e os participantes melhoraram a dor mais rápido do que com alongamento sozinho ao longo de três meses. Veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) para o protocolo completo.',
         'Na tendinite de Aquiles, o teste de elevação de calcanhar é uma das medidas de resultado padrão. Pacientes com tendinopatia de Aquiles na porção média (dor no meio do tendão, não no osso do calcanhar) costumam mostrar menos resistência na panturrilha do lado afetado. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para o trabalho excêntrico.',
         'Na corrida, a panturrilha absorve duas a três vezes o peso do corpo a cada passada. Uma panturrilha que cansa cedo passa carga para o joelho, a canela e o pé. Aumentar o resultado pode fazer parte de um plano de volta à corrida. Veja [dor no calcanhar e corrida](/heel-pain-runners/) (em inglês) para o quadro mais amplo.',
@@ -131,8 +160,9 @@ export const CALF_RAISE_TEST_PT: Guide = {
     {
       h2: 'Como melhorar um resultado baixo no teste de elevação de calcanhar?',
       paragraphs: [
-        'Os exercícios que constroem a resistência da panturrilha na reabilitação são os mesmos que aumentam o resultado do teste. Comece no nível que combina com onde você está agora e suba quando duas sessões seguidas parecerem fáceis.',
-        'Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentado ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga. Veja [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/) para o movimento básico, [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) para a versão que também põe carga na fáscia plantar e [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) para a variação focada no Aquiles.',
+        'Os exercícios que constroem a resistência da panturrilha na reabilitação são os mesmos que aumentam o resultado do teste. Comece no nível que combina com onde você está agora e **suba quando duas sessões seguidas parecerem fáceis.**',
+        'Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentado ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga.',
+        'Veja [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/) para o movimento básico, [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) para a versão que também põe carga na fáscia plantar e [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) para a variação focada no Aquiles.',
       ],
       exercises: [
         {

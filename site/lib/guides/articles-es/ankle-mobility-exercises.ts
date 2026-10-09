@@ -31,7 +31,13 @@ export const ANKLE_MOBILITY_ES: Guide = {
       keyFact: 'En 1093\u00A0reclutas del ejército seguidos durante tres meses de entrenamiento, el rango de dorsiflexión del tobillo fue un fuerte predictor de lesiones (Pope y colegas, 1998).',
       paragraphs: [
         'La movilidad de tobillo suele referirse a la dorsiflexión del tobillo: cuánto puede avanzar la espinilla sobre el pie mientras el talón se queda en el piso. La usas en cada paso, en cada escalón y en el fondo de cada sentadilla. Cuando no alcanza, el cuerpo toma prestado rango de otro lado. El talón se levanta antes de tiempo, el pie se va hacia adentro o la rodilla se desvía hacia adentro.',
-        'Una flexión del tobillo baja se asocia con varios problemas, aunque asociarse no es lo mismo que causar. En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 sin ella, quienes tenían 0\u00A0grados de dorsiflexión o menos tenían 23,3\u00A0veces más probabilidades de fascitis plantar que quienes pasaban de 10\u00A0grados (Riddle y colegas, 2003). En 1093\u00A0reclutas varones del ejército seguidos durante tres meses de entrenamiento intenso, el rango del tobillo medido al inicio fue un fuerte predictor de quién se lesionó, de un total de 48\u00A0lesiones (Pope y colegas, 1998).',
+        'Una flexión del tobillo baja se asocia con varios problemas, aunque asociarse no es lo mismo que causar:',
+        {
+          list: [
+            '**Fascitis plantar:** En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 sin ella, quienes tenían 0\u00A0grados de dorsiflexión o menos tenían 23,3\u00A0veces más probabilidades de fascitis plantar que quienes pasaban de 10\u00A0grados (Riddle y colegas, 2003).',
+            '**Lesiones en reclutas:** En 1093\u00A0reclutas varones del ejército seguidos durante tres meses de entrenamiento intenso, el rango del tobillo medido al inicio fue un fuerte predictor de quién se lesionó, de un total de 48\u00A0lesiones (Pope y colegas, 1998).',
+          ],
+        },
         'Las sentadillas muestran el efecto con claridad. En un estudio de laboratorio, 30\u00A0personas sanas hicieron sentadillas con una cuña de 12\u00A0grados bajo la parte delantera del pie para imitar un tobillo rígido. Sus rodillas se doblaron menos y se fueron más hacia adentro que cuando hicieron la sentadilla en plano (Macrum y colegas, 2012). Fue una restricción simulada en una sola sesión, así que muestra la mecánica, no lo que les pasa con los años a las personas con tobillos rígidos.',
       ],
       cites: [CITE.riddle, CITE.popeDorsiflexion, CITE.macrumSquat],
@@ -51,8 +57,9 @@ export const ANKLE_MOBILITY_ES: Guide = {
         'Anota dónde sentiste que te frenaba: un estiramiento en la parte de atrás de la pantorrilla o un pellizco al frente del tobillo.',
       ],
       after: [
-        'La prueba es confiable cuando se hace igual cada vez. En un estudio pequeño de 1998, cuatro evaluadores midieron a 13\u00A0personas sanas, y los resultados coincidieron casi perfectamente entre evaluadores y cuando dos de ellos repitieron la medición una semana después (Bennell y colegas). Una revisión de 2015 de 12\u00A0estudios de confiabilidad coincidió en que la prueba es buena y agregó la parte útil: un cambio tiene que ser de unos 1,6 a 1,9\u00A0cm, o más o menos 5\u00A0grados, para que puedas estar razonablemente seguro de que es real y no ruido de la medición (Powden y colegas).',
-        'Así que vuelve a medir cada par de semanas, no a diario, y no persigas unos cuantos milímetros.',
+        'La prueba es confiable cuando se hace igual cada vez. En un estudio pequeño de 1998, cuatro evaluadores midieron a 13\u00A0personas sanas, y los resultados coincidieron casi perfectamente entre evaluadores y cuando dos de ellos repitieron la medición una semana después (Bennell y colegas).',
+        'Una revisión de 2015 de 12\u00A0estudios de confiabilidad coincidió en que la prueba es buena y agregó la parte útil: un cambio tiene que ser de unos 1,6 a 1,9\u00A0cm, o más o menos 5\u00A0grados, para que puedas estar razonablemente seguro de que es real y no ruido de la medición (Powden y colegas).',
+        'Así que **vuelve a medir cada par de semanas, no a diario,** y no persigas unos cuantos milímetros.',
       ],
       sourceNote:
         'Bennell 1998: ICC intraevaluador 0,97-0,98, ICC interevaluador 0,97 (ángulo) y 0,99 (distancia). Powden 2015: ICC entre profesionales 0,80-0,99, del mismo profesional 0,65-0,99; cambio mínimo detectable de 4,6\u00A0grados o 1,6\u00A0cm entre profesionales, 4,7\u00A0grados o 1,9\u00A0cm para el mismo profesional.',
@@ -64,16 +71,20 @@ export const ANKLE_MOBILITY_ES: Guide = {
       paragraphs: [
         'No hay un resultado normal acordado para la prueba de rodilla a la pared. Hay sitios web que citan 10\u00A0cm, 14\u00A0cm o 4\u00A0pulgadas como meta, por lo general sin fuente. Usa cualquier número solo como guía aproximada.',
         'Un estudio da una idea de los valores típicos. Hoch y colegas midieron a 30\u00A0adultos sanos y a 30\u00A0personas comparables con inestabilidad crónica de tobillo (tobillos que siguen fallando después de esguinces). El grupo sano promedió 12,47\u00A0cm y el grupo inestable 10,73\u00A0cm. Son promedios de dos grupos pequeños, así que muchas personas sanas quedan por arriba o por abajo.',
-        'La comparación más útil es contigo mismo. Una diferencia clara entre tus dos tobillos, sobre todo del lado de un esguince viejo, dice más que un número de una tabla. También tu propio resultado a lo largo del tiempo, usando la regla de 1,6 a 1,9\u00A0cm de la sección anterior.',
+        '**La comparación más útil es contigo mismo.** Una diferencia clara entre tus dos tobillos, sobre todo del lado de un esguince viejo, dice más que un número de una tabla. También tu propio resultado a lo largo del tiempo, usando la regla de 1,6 a 1,9\u00A0cm de la sección anterior.',
       ],
       cites: [CITE.hochInstability, CITE.powdenLunge],
     },
     {
       h2: '¿Es la pantorrilla tensa o la articulación del tobillo rígida?',
       paragraphs: [
-        'La flexión del tobillo puede estar limitada por los músculos de la pantorrilla, atrás, o por la articulación misma, al frente. Dónde sientes el freno durante la prueba de rodilla a la pared suele ser la pista, aunque ningún ensayo ha probado qué tan precisa es esa pista.',
-        'Un estiramiento o jalón en la parte de atrás de la pantorrilla, cerca del Aquiles o más abajo cerca del talón, apunta a la pantorrilla. El gastrocnemio (el músculo grande de la parte alta de la pantorrilla) te limita más con la rodilla estirada. El sóleo (el músculo más profundo de la pantorrilla) te limita con la rodilla doblada, que es la posición de la prueba de rodilla a la pared. Aquí funcionan el estiramiento y los descensos lentos de talón.',
-        'Una sensación de bloqueo o pellizco al frente del tobillo, con poco estiramiento en la pantorrilla, apunta más a la articulación: el astrágalo (el hueso del tobillo sobre el que se apoya la espinilla) no se desliza hacia atrás cuando la espinilla avanza. Puede pasar después de esguinces. Empujar más fuerte contra un pellizco al frente rara vez ayuda. Un fisioterapeuta puede revisarlo y usar movilización articular, un deslizamiento suave de la articulación con las manos, que tiene algo de evidencia a corto plazo después de esguinces (ver abajo).',
+        'La flexión del tobillo puede estar limitada por los músculos de la pantorrilla, atrás, o por la articulación misma, al frente. Dónde sientes el freno durante la prueba de rodilla a la pared suele ser la pista, aunque ningún ensayo ha probado qué tan precisa es esa pista:',
+        {
+          list: [
+            '**Parte de atrás de la pantorrilla:** Un estiramiento o jalón en la parte de atrás de la pantorrilla, cerca del Aquiles o más abajo cerca del talón, apunta a la pantorrilla. El gastrocnemio (el músculo grande de la parte alta de la pantorrilla) te limita más con la rodilla estirada. El sóleo (el músculo más profundo de la pantorrilla) te limita con la rodilla doblada, que es la posición de la prueba de rodilla a la pared. Aquí funcionan el estiramiento y los descensos lentos de talón.',
+            '**Frente del tobillo:** Una sensación de bloqueo o pellizco al frente del tobillo, con poco estiramiento en la pantorrilla, apunta más a la articulación: el astrágalo (el hueso del tobillo sobre el que se apoya la espinilla) no se desliza hacia atrás cuando la espinilla avanza. Puede pasar después de esguinces. Empujar más fuerte contra un pellizco al frente rara vez ayuda. Un fisioterapeuta puede revisarlo y usar movilización articular, un deslizamiento suave de la articulación con las manos, que tiene algo de evidencia a corto plazo después de esguinces (ver abajo).',
+          ],
+        },
         'Una revisión de 2013 de estudios sobre esguinces dijo lo mismo: el enfoque correcto depende de qué está limitando el tobillo (Terada y colegas).',
       ],
       cites: [CITE.teradaSprain],
@@ -82,7 +93,15 @@ export const ANKLE_MOBILITY_ES: Guide = {
       h2: '¿Qué ejercicios de movilidad de tobillo funcionan?',
       keyFact: 'Una revisión de 2013 de 23\u00A0estudios en 734\u00A0personas sanas encontró el mayor respaldo para el estiramiento estático para aumentar la dorsiflexión del tobillo (Young y colegas).',
       paragraphs: [
-        'Los ejercicios de movilidad de tobillo con investigación detrás caen en dos grupos: estiramientos de pantorrilla, y trabajo de fuerza de pantorrilla con recorrido completo, como las elevaciones de talón y los descensos lentos de talón. Una revisión de 2013 de 23\u00A0estudios en 734\u00A0personas sanas encontró el mayor respaldo para el estiramiento estático, algo de respaldo de un solo ensayo para las elevaciones de talón combinadas con estiramiento, y poca evidencia buena para la mayoría de los demás métodos (Young y colegas). El resultado más fuerte solo con fuerza viene de otro ensayo de descensos de talón (abajo). El balanceo de rodilla no tiene un ensayo propio, pero carga el mismo rango.',
+        'Los ejercicios de movilidad de tobillo con investigación detrás caen en dos grupos: estiramientos de pantorrilla, y trabajo de fuerza de pantorrilla con recorrido completo, como las elevaciones de talón y los descensos lentos de talón. Una revisión de 2013 de 23\u00A0estudios en 734\u00A0personas sanas encontró:',
+        {
+          list: [
+            'El mayor respaldo para el estiramiento estático.',
+            'Algo de respaldo de un solo ensayo para las elevaciones de talón combinadas con estiramiento.',
+            'Poca evidencia buena para la mayoría de los demás métodos (Young y colegas).',
+          ],
+        },
+        'El resultado más fuerte solo con fuerza viene de otro ensayo de descensos de talón (abajo). El balanceo de rodilla no tiene un ensayo propio, pero carga el mismo rango.',
         'Abajo, «Walkito empieza con» indica la dosis de inicio de la app. Las dosis de investigación están marcadas como tales. Si algún ejercicio lleva tu dolor a **6/10 o más**, para por el día.',
       ],
       exercises: [
@@ -141,7 +160,7 @@ export const ANKLE_MOBILITY_ES: Guide = {
       h2: '¿Cuánto mejora la movilidad de tobillo con el estiramiento?',
       keyFact: 'Una revisión de 2006 de cinco ensayos aleatorizados en 161\u00A0personas sanas encontró que el estiramiento estático de pantorrilla sumó unos 2 a 3\u00A0grados de flexión del tobillo frente a no estirar (Radford y colegas).',
       paragraphs: [
-        'El estiramiento mejora la movilidad de tobillo, pero solo un poco. Una revisión de 2006 combinó cinco ensayos aleatorizados en 161\u00A0personas sanas y encontró que el estiramiento estático de pantorrilla sumó unos 2 a 3\u00A0grados de dorsiflexión frente a no estirar. La mejora fue parecida tanto si las personas estiraron un total de 15\u00A0minutos o menos como si estiraron más de 30\u00A0minutos a lo largo del ensayo. Los autores dijeron que no estaba claro si un cambio de ese tamaño importa a las personas.',
+        '**El estiramiento mejora la movilidad de tobillo, pero solo un poco.** Una revisión de 2006 combinó cinco ensayos aleatorizados en 161\u00A0personas sanas y encontró que el estiramiento estático de pantorrilla sumó unos 2 a 3\u00A0grados de dorsiflexión frente a no estirar. La mejora fue parecida tanto si las personas estiraron un total de 15\u00A0minutos o menos como si estiraron más de 30\u00A0minutos a lo largo del ensayo. Los autores dijeron que no estaba claro si un cambio de ese tamaño importa a las personas.',
         'Ninguno de esos ensayos incluyó a personas con una lesión en la pierna o el pie, y la mayoría midió el rango justo después del último estiramiento, así que los números podrían no aplicar a un tobillo rígido después de un esguince.',
         'Estira durante unas semanas, vuelve a hacer la prueba de rodilla a la pared y juzga por tu propio resultado. Si el freno es un pellizco al frente del tobillo y nada cambia, puede que no sea la pantorrilla lo que te limita.',
       ],
@@ -152,7 +171,7 @@ export const ANKLE_MOBILITY_ES: Guide = {
     {
       h2: '¿El entrenamiento de fuerza mejora la movilidad de tobillo?',
       paragraphs: [
-        'El entrenamiento de fuerza con recorrido completo puede mejorar la movilidad de tobillo, no solo el estiramiento. En un ensayo aleatorizado con 74\u00A0personas sanas, un grupo hizo un programa de descensos excéntricos de talón (bajar el talón despacio con carga) durante cerca de mes y medio y el otro grupo no. El rango de dorsiflexión aumentó solo en el grupo de descensos de talón, y la pantorrilla opuso menos resistencia al estiramiento que antes (Mahieu y colegas, 2008).',
+        '**El entrenamiento de fuerza con recorrido completo puede mejorar la movilidad de tobillo, no solo el estiramiento.** En un ensayo aleatorizado con 74\u00A0personas sanas, un grupo hizo un programa de descensos excéntricos de talón (bajar el talón despacio con carga) durante cerca de mes y medio y el otro grupo no. El rango de dorsiflexión aumentó solo en el grupo de descensos de talón, y la pantorrilla opuso menos resistencia al estiramiento que antes (Mahieu y colegas, 2008).',
         'La revisión de 2013 de 23\u00A0estudios también incluyó un ensayo en el que las elevaciones de talón combinadas con estiramiento estático aumentaron la flexión del tobillo frente a no hacer ejercicio (Young y colegas). Tanto la revisión como el ensayo de descensos de talón estudiaron a personas sanas, no a personas con tobillos rígidos o con dolor.',
         'El trabajo de fuerza tiene un segundo beneficio: fortalece la pantorrilla al mismo tiempo. Si además tienes dolor de talón o de Aquiles, el trabajo de pantorrilla de [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) y [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) cumple las dos funciones.',
       ],
@@ -164,7 +183,7 @@ export const ANKLE_MOBILITY_ES: Guide = {
       paragraphs: [
         'Después de un esguince de tobillo, el tobillo muchas veces pierde flexión, y recuperarla es parte normal de la rehabilitación. Una revisión de 2013 de nueve estudios encontró que el estiramiento estático como parte de un programa de ejercicios en casa tuvo el mayor efecto en la dorsiflexión dos semanas después de un esguince agudo. La movilización con movimiento, una técnica manual en la que un profesional desliza el tobillo mientras tú lo doblas, tuvo solo efectos pequeños en personas con esguinces repetidos (Terada y colegas).',
         'Una revisión más grande de 2018 de 23\u00A0estudios encontró que la movilización articular mejoró la flexión del tobillo con carga a corto plazo en personas con problemas de esguince de larga duración, pero no justo después de una sola sesión. Los efectos a largo plazo no se han estudiado bien (Weerasekara y colegas).',
-        'El rango es solo una parte de la recuperación de un esguince. En el estudio de Hoch de 2012, las personas con tobillos que seguían fallando tenían en promedio cerca de 1,7\u00A0cm menos en la prueba de rodilla a la pared que las personas sanas, y su alcance de equilibrio hacia adelante también era menor. Aquí el trabajo de equilibrio y fuerza importa tanto como la movilidad. Mira [ejercicios para fortalecer el tobillo](/es/ejercicios-para-fortalecer-el-tobillo/).',
+        'El rango es solo una parte de la recuperación de un esguince. En el estudio de Hoch de 2012, las personas con tobillos que seguían fallando tenían en promedio cerca de 1,7\u00A0cm menos en la prueba de rodilla a la pared que las personas sanas, y su alcance de equilibrio hacia adelante también era menor. **Aquí el trabajo de equilibrio y fuerza importa tanto como la movilidad.** Mira [ejercicios para fortalecer el tobillo](/es/ejercicios-para-fortalecer-el-tobillo/).',
       ],
       sourceNote:
         'Terada 2013: estiramiento estático con ejercicio en casa dos semanas después de un esguince agudo, d de Cohen 1,06 (IC 95\u00A0% 0,12 a 2,42); movilización con movimiento en esguinces recurrentes, d 0,14 a 0,39. Weerasekara 2018: dorsiflexión con carga a corto plazo p=0,003, inmediata p=0,16. Hoch 2012: 10,73\u00A0cm frente a 12,47\u00A0cm.',
@@ -173,8 +192,9 @@ export const ANKLE_MOBILITY_ES: Guide = {
     {
       h2: '¿Con qué frecuencia hacer ejercicios de movilidad de tobillo?',
       paragraphs: [
-        'La mayoría de las personas hace ejercicios de movilidad de tobillo desde unas cuantas veces por semana hasta casi todos los días, en sesiones cortas, y juzga su avance con una nueva prueba cada par de semanas. Los ensayos usaron horarios muy distintos, y la revisión de 2006 sobre estiramiento encontró poca diferencia entre un tiempo total de estiramiento corto y uno largo, así que las sesiones más largas no parecen sumar mucho.',
-        'En Walkito, los estiramientos de pantorrilla, una posición sostenida de rodilla a la pared y el balanceo de rodilla rotan por tus sesiones: normalmente uno en un día de fuerza, más en los días de movilidad, y el balanceo de rodilla también aparece en los días de equilibrio. Las pruebas propias de la app, al principio cada 14\u00A0días (cada 28 una vez que alcanzas una meta), revisan la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. La app no mide tu distancia de rodilla a la pared, así que si quieres ese número, anótalo tú.',
+        'La mayoría de las personas hace ejercicios de movilidad de tobillo desde unas cuantas veces por semana hasta casi todos los días, en sesiones cortas, y juzga su avance con una nueva prueba cada par de semanas. Los ensayos usaron horarios muy distintos, y la revisión de 2006 sobre estiramiento encontró poca diferencia entre un tiempo total de estiramiento corto y uno largo, así que **las sesiones más largas no parecen sumar mucho.**',
+        'En Walkito, los estiramientos de pantorrilla, una posición sostenida de rodilla a la pared y el balanceo de rodilla rotan por tus sesiones: normalmente uno en un día de fuerza, más en los días de movilidad, y el balanceo de rodilla también aparece en los días de equilibrio.',
+        'Las pruebas propias de la app, al principio cada 14\u00A0días (cada 28 una vez que alcanzas una meta), revisan la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. La app no mide tu distancia de rodilla a la pared, así que si quieres ese número, anótalo tú.',
         'Un calentamiento antes de una sesión de sentadillas o de una carrera también tiene sentido, pero la evidencia es escasa. En la revisión de 2013, el resultado del calentamiento vino de un solo estudio pequeño en el que el calentamiento se combinó con estiramiento.',
       ],
       cites: [CITE.radfordStretch, CITE.youngDorsiflexion],

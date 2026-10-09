@@ -28,7 +28,7 @@ export const BEST_APP_ES: Guide = {
       h2: '¿Qué debería hacer una app para la fascitis plantar?',
       keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla una A, el grado más alto, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
-        'Una app útil para la fascitis plantar debería incluir los ejercicios que respalda la investigación. La guía clínica de 2023 para el dolor de talón califica la evidencia detrás de cada opción. El estiramiento de la fascia plantar y de la pantorrilla recibe una A, el grado más alto. El entrenamiento de fuerza recibe una B. Eso quiere decir que los dos deberían estar en la app, no solo uno.',
+        'Una app útil para la fascitis plantar debería incluir los ejercicios que respalda la investigación. La guía clínica de 2023 para el dolor de talón califica la evidencia detrás de cada opción. El estiramiento de la fascia plantar y de la pantorrilla recibe una A, el grado más alto. El entrenamiento de fuerza recibe una B. Eso quiere decir que **los dos deberían estar en la app, no solo uno.**',
         'Además de la lista de ejercicios, esto es lo que vale la pena revisar antes de suscribirte:',
       ],
       bullets: [
@@ -111,8 +111,24 @@ export const BEST_APP_ES: Guide = {
         'Exakt Health está hecha para corredores, y se nota. La app tiene más de 15 planes de rehabilitación de lesiones, desde la fascitis plantar hasta la tendinopatía de Aquiles y las roturas de menisco, además de planes de entrenamiento para correr, desde cero hasta el maratón. Cada plan de rehabilitación termina con una fase estructurada para volver a correr, algo que la mayoría de las apps para el dolor de pies no ofrece.',
         'Está certificada como dispositivo médico en la UE, lo que significa que pasó una revisión regulatoria de seguridad y uso previsto. La hicieron fisioterapeutas deportivos con licencia y entrenadores de running. La app tiene más de 600 videos de ejercicios y adapta el plan a medida que subes de nivel.',
         'A $19.99 al mes o $59.99 por seis meses, Exakt no es barata, pero la variedad de lesiones y la calidad de sus planes de rehabilitación son difíciles de igualar entre las apps que usas por tu cuenta. La prueba gratis de 7\u00A0días te deja ver la app completa antes de pagar. Está en inglés, francés, alemán y español, en iOS y Android.',
-        'Dónde Exakt es mejor que Walkito: cubre más tipos de lesión (más de 15, frente a dolor de talón, pie plano y tibia), tiene un programa completo para volver a correr, está en Android, tiene certificación de dispositivo médico en la UE y una base de usuarios establecida, con una calificación de 4.8 en 125 reseñas de iOS.',
-        'Dónde Walkito es distinta: Walkito ajusta la sesión de cada día con un chequeo de dolor en la mañana, no con tu opinión al final de la sesión. Además mide la diferencia entre el lado izquierdo y el derecho cada 14\u00A0días, y se enfoca solo en el dolor de talón y de pies, no en todas las lesiones de corredores.',
+        'Dónde Exakt es mejor que Walkito:',
+        {
+          list: [
+            'Cubre más tipos de lesión (más de 15, frente a dolor de talón, pie plano y tibia).',
+            'Tiene un programa completo para volver a correr.',
+            'Está en Android.',
+            'Tiene certificación de dispositivo médico en la UE.',
+            'Una base de usuarios establecida, con una calificación de 4.8 en 125 reseñas de iOS.',
+          ],
+        },
+        'Dónde Walkito es distinta:',
+        {
+          list: [
+            'Walkito ajusta la sesión de cada día con un chequeo de dolor en la mañana, no con tu opinión al final de la sesión.',
+            'Mide la diferencia entre el lado izquierdo y el derecho cada 14\u00A0días.',
+            'Se enfoca solo en el dolor de talón y de pies, no en todas las lesiones de corredores.',
+          ],
+        },
       ],
     },
     {
@@ -120,14 +136,23 @@ export const BEST_APP_ES: Guide = {
       paragraphs: [
         'Hinge Health es la plataforma digital de salud musculoesquelética más grande de Estados Unidos, con más de 2\u00A0millones de miembros. Si tu empresa o tu plan de salud la cubre, para ti es gratis e incluye algo que ninguna app que usas por tu cuenta puede igualar: un equipo de atención dedicado con fisioterapeutas, ortopedistas y otros especialistas.',
         'La app cubre muchos problemas de articulaciones y músculos, no solo de los pies. También incluye el dispositivo Enso para aliviar el dolor agudo. Su calificación de 4.9 en 168\u00A0mil reseñas de iOS refleja esa combinación de ejercicios guiados, acompañamiento humano y costo cero.',
-        'El problema es el acceso. No puedes comprar Hinge Health en el App Store. Necesitas cobertura a través de alguna de las más de 2,800 empresas o planes de salud que la ofrecen. Si tienes acceso, probablemente es la opción más completa de esta lista. Si no, simplemente no es una opción.',
+        '**El problema es el acceso.** No puedes comprar Hinge Health en el App Store. Necesitas cobertura a través de alguna de las más de 2,800 empresas o planes de salud que la ofrecen.',
+        'Si tienes acceso, probablemente es la opción más completa de esta lista. Si no, simplemente no es una opción.',
         'Hinge Health no es específica para los pies. Sus usos principales son el dolor de espalda, rodilla, cadera y cuello. Para la fascitis plantar en particular, una app más enfocada puede ser un mejor punto de partida.',
       ],
     },
     {
       h2: 'Prehab: la biblioteca de ejercicios más grande',
       paragraphs: [
-        'La app de The Prehab Guys la hicieron doctores en fisioterapia y tiene la biblioteca de ejercicios más grande de esta comparación: más de 55 programas, más de 170 rutinas y más de 4,000 videos de ejercicios. Tiene un programa específico de rehabilitación para la fascitis plantar. La función Body Scan te pregunta por tu dolor, tus metas y tus necesidades de movimiento, y después te recomienda un programa.',
+        'La app de The Prehab Guys la hicieron doctores en fisioterapia y tiene la biblioteca de ejercicios más grande de esta comparación:',
+        {
+          list: [
+            'Más de 55 programas.',
+            'Más de 170 rutinas.',
+            'Más de 4,000 videos de ejercicios.',
+          ],
+        },
+        'Tiene un programa específico de rehabilitación para la fascitis plantar. La función Body Scan te pregunta por tu dolor, tus metas y tus necesidades de movimiento, y después te recomienda un programa.',
         'A $49 al mes o unos $200 al año, es la opción más cara de esta lista entre las que pagas tú. La prueba gratis de 7\u00A0días solo aplica al plan anual. Las sesiones duran unos 20\u00A0minutos, más que los 3 a 10\u00A0minutos de las apps enfocadas en los pies. Las reseñas elogian una y otra vez la calidad de los videos.',
         'Prehab te conviene si tienes dolor en varias zonas y quieres una sola app que cubra todo, de los hombros a los pies. Está menos enfocada que las apps hechas específicamente para la fascitis plantar, y no adapta las sesiones de cada día según tu dolor de la mañana.',
         'Es solo para iOS y solo en inglés.',
@@ -137,7 +162,15 @@ export const BEST_APP_ES: Guide = {
       h2: 'PlantarCare: el registro gratis',
       paragraphs: [
         'PlantarCare es gratis, no tiene compras dentro de la app y no pide crear una cuenta. Se enfoca solo en el dolor de talón y la fascitis plantar. Anotas el dolor de los primeros pasos en la mañana y el peor dolor del día, y la app te va pasando por etapas de recuperación con estiramientos guiados, trabajo de pantorrilla, elevaciones de talón y recordatorios para poner hielo según tu etapa.',
-        'Para ser gratis, hace sorprendentemente bien muchas cosas: muestra la tendencia de tu dolor con el tiempo, te deja anotar tu calzado y tu carga, y tiene recordatorios de señales de alerta que te dicen cuándo consultar a un profesional de la salud. Lo malo es que es nueva, todavía no tiene calificaciones y no explica la investigación detrás de los ejercicios que eligió.',
+        'Para ser gratis, hace sorprendentemente bien muchas cosas:',
+        {
+          list: [
+            'Muestra la tendencia de tu dolor con el tiempo.',
+            'Te deja anotar tu calzado y tu carga.',
+            'Tiene recordatorios de señales de alerta que te dicen cuándo consultar a un profesional de la salud.',
+          ],
+        },
+        'Lo malo es que es nueva, todavía no tiene calificaciones y no explica la investigación detrás de los ejercicios que eligió.',
         'PlantarCare es un punto de partida razonable si quieres llevar un registro de tu dolor gratis y seguir estiramientos básicos sin pagar una suscripción. Es solo para iOS.',
       ],
     },
@@ -161,8 +194,27 @@ export const BEST_APP_ES: Guide = {
       h2: 'Walkito: lo que hace y lo que no hace',
       paragraphs: [
         'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026. Es nueva, todavía no tiene calificaciones y es solo para iOS.',
-        'Lo que hace: arma un plan semanal a partir de tus respuestas sobre dolor, metas y horario. Cada mañana, un chequeo ajusta la sesión del día a cómo se siente tu pie. Cada 14\u00A0días, unas pruebas miden elevaciones de talón, cuánto mantienes el arco y el equilibrio a una pierna, y comparan el lado izquierdo con el derecho. Las sesiones son de 3, 5 o 10\u00A0minutos. Los ejercicios siguen la guía clínica de 2023 para el dolor de talón y el ensayo de Rathleff de 2015. Se conecta con Apple Health para leer pasos, sueño y datos de caminata, que se quedan en tu teléfono.',
-        'Lo que no hace: no diagnostica tu dolor, no es un dispositivo médico, no hay un profesional de la salud del otro lado y no está en Android. Cubre el dolor de talón, el pie plano y el dolor de tibia, no las más de 15 lesiones que cubre Exakt ni todo el cuerpo como Hinge Health o Prehab.',
+        'Lo que hace:',
+        {
+          list: [
+            'Arma un plan semanal a partir de tus respuestas sobre dolor, metas y horario.',
+            'Cada mañana, un chequeo ajusta la sesión del día a cómo se siente tu pie.',
+            'Cada 14\u00A0días, unas pruebas miden elevaciones de talón, cuánto mantienes el arco y el equilibrio a una pierna, y comparan el lado izquierdo con el derecho.',
+            'Las sesiones son de 3, 5 o 10\u00A0minutos.',
+            'Los ejercicios siguen la guía clínica de 2023 para el dolor de talón y el ensayo de Rathleff de 2015.',
+            'Se conecta con Apple Health para leer pasos, sueño y datos de caminata, que se quedan en tu teléfono.',
+          ],
+        },
+        'Lo que no hace:',
+        {
+          list: [
+            'No diagnostica tu dolor.',
+            'No es un dispositivo médico.',
+            'No hay un profesional de la salud del otro lado.',
+            'No está en Android.',
+          ],
+        },
+        'Cubre el dolor de talón, el pie plano y el dolor de tibia, no las más de 15 lesiones que cubre Exakt ni todo el cuerpo como Hinge Health o Prehab.',
         'A $44.99 al año o $7.99 a la semana, el precio anual es más bajo que el de la mayoría de las otras apps. El precio semanal sale más caro comparado con el anual, algo normal en las suscripciones.',
       ],
       cites: [CITE.guideline, CITE.rathleff],

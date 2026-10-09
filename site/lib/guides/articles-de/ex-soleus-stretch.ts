@@ -55,7 +55,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
       keyFact: 'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatte ungefähr ein Viertel beide Wadenmuskeln verkürzt, Gastrocnemius und Soleus (Patel und DiGiovanni, 2011).',
       paragraphs: [
         'Der Gastrocnemius, der oberflächlichere Wadenmuskel, zieht über Knie und Sprunggelenk. Wenn du das Knie streckst und dich nach vorn lehnst, nimmt er die Dehnung auf. Der Soleus liegt tiefer und zieht nur über das Sprunggelenk. Mit gestrecktem Knie macht der Gastrocnemius die ganze Arbeit, und der Soleus bewegt sich kaum.',
-        'Wenn du das Knie beugst, wird der Gastrocnemius locker und hört auf, Widerstand zu leisten. Jetzt zieht die Dorsalflexion im Sprunggelenk stattdessen am Soleus. Genau darum geht es bei der Variante mit gebeugtem Knie. Sie ist keine Abwandlung. Sie ist eine eigene Übung für einen eigenen Muskel.',
+        'Wenn du das Knie beugst, wird der Gastrocnemius locker und hört auf, Widerstand zu leisten. Jetzt zieht die Dorsalflexion im Sprunggelenk stattdessen am Soleus. Genau darum geht es bei der Variante mit gebeugtem Knie. Sie ist keine Abwandlung. **Sie ist eine eigene Übung für einen eigenen Muskel.**',
         'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatte etwa ein Viertel beide Muskeln verkürzt. Die Dehnung mit gestrecktem Knie allein hätte den Soleus-Anteil dieser Verkürzung nicht erreicht.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -65,16 +65,20 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
       paragraphs: [
         'Wenn du die Dehnung weit oben in der Wade spürst, hinter dem Knie, ist das Knie zu gestreckt, und der Gastrocnemius übernimmt. Beug das Knie weiter. Die Dehnung sollte ins untere Drittel der Wade oder direkt oberhalb der Ferse wandern.',
         'Wenn du nichts spürst, setz den hinteren Fuß näher an die Wand und beug das Knie tiefer. Manche brauchen eine kürzere Schrittstellung, um den Soleus zu belasten.',
-        'Wenn die Dehnung in der Achillessehne selbst sitzt und sich scharf anfühlt statt wie ein Zug, nimm Spannung raus. Eine Dehnung sollte sich fest und gleichmäßig anfühlen, nicht schmerzhaft. Schmerz in der Sehne beim Dehnen ist etwas anderes als eine verkürzte Wade und kann auf eine [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) hinweisen.',
+        'Wenn die Dehnung in der Achillessehne selbst sitzt und sich scharf anfühlt statt wie ein Zug, nimm Spannung raus. **Eine Dehnung sollte sich fest und gleichmäßig anfühlen, nicht schmerzhaft.** Schmerz in der Sehne beim Dehnen ist etwas anderes als eine verkürzte Wade und kann auf eine [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) hinweisen.',
       ],
     },
     {
       h2: 'Was sind die häufigsten Fehler bei der Soleusdehnung?',
       paragraphs: [
-        'Das Knie nicht genug beugen. Eine leichte Beugung reicht nicht, um den Gastrocnemius zu entspannen. Du brauchst eine echte Beugung, so viel, dass du siehst, wie das hintere Knie über die Zehen nach vorn wandert.',
-        'Die Ferse abheben. Sobald die Ferse vom Boden kommt, ist die Dehnung weg. Drück die Ferse nach unten und lass das Knie über den Fuß nach vorn wandern.',
-        'Durchhetzen. 5\u00A0Sekunden halten ist zu kurz, damit eine anhaltende Dehnung die Länge des Gewebes beeinflusst. Halte 30\u00A0Sekunden und versuch, in die Dehnung hinein zu entspannen, statt stärker zu drücken.',
-        'Sie auslassen, weil sich die Dehnung mit gestrecktem Knie schon genug angefühlt hat. Es sind verschiedene Muskeln. Wenn beide verkürzt sind, brauchst du beide Dehnungen.',
+        {
+          list: [
+            '**Das Knie nicht genug beugen.** Eine leichte Beugung reicht nicht, um den Gastrocnemius zu entspannen. Du brauchst eine echte Beugung, so viel, dass du siehst, wie das hintere Knie über die Zehen nach vorn wandert.',
+            '**Die Ferse abheben.** Sobald die Ferse vom Boden kommt, ist die Dehnung weg. Drück die Ferse nach unten und lass das Knie über den Fuß nach vorn wandern.',
+            '**Durchhetzen.** 5\u00A0Sekunden halten ist zu kurz, damit eine anhaltende Dehnung die Länge des Gewebes beeinflusst. Halte 30\u00A0Sekunden und versuch, in die Dehnung hinein zu entspannen, statt stärker zu drücken.',
+            '**Sie auslassen, weil sich die Dehnung mit gestrecktem Knie schon genug angefühlt hat.** Es sind verschiedene Muskeln. Wenn beide verkürzt sind, brauchst du beide Dehnungen.',
+          ],
+        },
       ],
     },
     {

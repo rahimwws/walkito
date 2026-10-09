@@ -30,7 +30,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     {
       h2: 'Come si fa l’equilibrio su una gamba?',
       paragraphs: [
-        'Mettiti vicino a un muro o a un piano di lavoro. Solleva un piede da terra piegando un po’ il ginocchio. Guarda un punto fisso davanti a te. Lascia che il piede d’appoggio oscilli. Quell’oscillazione è proprio lo scopo: i piccoli muscoli del piede e della caviglia stanno lavorando per tenerti in piedi.',
+        'Mettiti vicino a un muro o a un piano di lavoro. Solleva un piede da terra piegando un po’ il ginocchio. Guarda un punto fisso davanti a te. Lascia che il piede d’appoggio oscilli. **Quell’oscillazione è proprio lo scopo:** i piccoli muscoli del piede e della caviglia stanno lavorando per tenerti in piedi.',
         'Tieni più a lungo che puoi, fino a 30\u00A0secondi, poi cambia lato. Tre tenute per lato è una dose comune. Se non riesci a stare più di qualche secondo, tieni la punta delle dita sul muro e aumenta un po’ alla volta.',
       ],
       exercises: [
@@ -71,14 +71,14 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
       },
       after: [
         'I numeri calano di colpo quando si chiudono gli occhi, soprattutto dopo i 50\u00A0anni. Per questo la versione a occhi chiusi è un test molto più sensibile del controllo di caviglia e piede. Ed è anche il motivo per cui l’app Walkito include una progressione a occhi chiusi dopo la tenuta a occhi aperti.',
-        'Più che corrispondere a una tabella, conta se il tuo tempo migliora nel corso delle settimane e se i due lati sono più o meno pari. Una grande differenza tra le gambe può indicare un deficit di forza o di stabilità da un lato.',
+        '**Più che corrispondere a una tabella, conta se il tuo tempo migliora nel corso delle settimane e se i due lati sono più o meno pari.** Una grande differenza tra le gambe può indicare un deficit di forza o di stabilità da un lato.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'La progressione a occhi chiusi',
       paragraphs: [
-        'Chiudere gli occhi toglie le informazioni visive che il cervello usa di solito per l’equilibrio. Così i propriocettori del piede e della caviglia, i sensori che rilevano posizione e movimento, devono fare più lavoro. È una versione più difficile dello stesso esercizio, non un esercizio diverso.',
+        'Chiudere gli occhi toglie le informazioni visive che il cervello usa di solito per l’equilibrio. Così i propriocettori del piede e della caviglia, i sensori che rilevano posizione e movimento, devono fare più lavoro. **È una versione più difficile dello stesso esercizio, non un esercizio diverso.**',
         'Mettiti vicino a un muro per sicurezza. Chiudi gli occhi e tieni più a lungo che puoi. La maggior parte delle persone vede il proprio tempo scendere a una frazione di quello a occhi aperti. Con la pratica la differenza si riduce.',
         'L’app Walkito include l’equilibrio a occhi chiusi come esercizio a sé: 3\u00A0tenute da 20\u00A0secondi, entrambi i piedi (alternati). Si sblocca come progressione quando l’obiettivo di equilibrio a occhi aperti è solido.',
       ],
@@ -87,7 +87,16 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
       h2: 'Perché l’equilibrio conta per il dolore al piede?',
       keyFact: 'Per le distorsioni alla caviglia, un’analisi combinata di 8\u00A0studi e 3.577\u00A0atleti ha trovato che l’allenamento dell’equilibrio abbassava del 46% il rischio di distorsione rispetto a nessun intervento (Bellows e Wong, 2018).',
       paragraphs: [
-        'L’equilibrio non è separato dalla forza del piede. Quando stai su una gamba, i muscoli intrinseci del piede (i piccoli muscoli dentro il piede che sostengono l’arco), i muscoli del polpaccio, il tibiale anteriore e gli stabilizzatori dell’anca lavorano tutti insieme. Un deficit in un punto qualsiasi di questa catena costringe il piede a compensare.',
+        '**L’equilibrio non è separato dalla forza del piede.** Quando stai su una gamba, lavorano tutti insieme:',
+        {
+          list: [
+            'I muscoli intrinseci del piede (i piccoli muscoli dentro il piede che sostengono l’arco).',
+            'I muscoli del polpaccio.',
+            'Il tibiale anteriore.',
+            'Gli stabilizzatori dell’anca.',
+          ],
+        },
+        'Un deficit in un punto qualsiasi di questa catena costringe il piede a compensare.',
         'Per la fascite plantare e il piede piatto, l’allenamento dell’equilibrio compare nei programmi di esercizi insieme ad allungamenti e rinforzo, perché allena tutta la catena in una volta. Uno studio del 2023 su 52\u00A0persone con piede piatto flessibile ha trovato che un programma che univa esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca, allungamenti ed equilibrio cambiava la forma dell’arco più di un gruppo di controllo. L’equilibrio non era isolato in quello studio, ma faceva parte del programma che ha funzionato.',
         'Per le distorsioni alla caviglia in particolare, una meta-analisi del 2018 su 8\u00A0studi e 3.577\u00A0atleti ha trovato che l’allenamento dell’equilibrio riduceva del 46% il rischio di distorsione alla caviglia rispetto a nessun intervento. È il risultato singolo più forte a favore dell’equilibrio in un programma per il piede.',
       ],
@@ -96,18 +105,26 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’equilibrio su una gamba?',
       paragraphs: [
-        'Guardare il pavimento. Lo sguardo deve restare su un punto fisso all’altezza degli occhi. Guardare in basso sposta il peso in avanti e rende l’esercizio più facile, e così perde il suo scopo.',
-        'Bloccare il ginocchio d’appoggio. Una leggera flessione tiene attivi i muscoli. Un ginocchio bloccato sposta il carico sull’articolazione invece che sui muscoli intorno.',
-        'Cercare di non oscillare. L’oscillazione è l’esercizio. Le piccole correzioni che fa il piede per restare in piedi sono quelle che costruiscono propriocezione e controllo della caviglia. Aggrapparsi al pavimento con le dita arricciate o irrigidirsi per eliminare ogni movimento riduce l’effetto dell’allenamento.',
-        'Stare troppo lontano dal muro. Devi essere abbastanza vicino da poterti tenere se perdi l’equilibrio, soprattutto nella versione a occhi chiusi. Prima di tutto la sicurezza.',
+        {
+          list: [
+            '**Guardare il pavimento.** Lo sguardo deve restare su un punto fisso all’altezza degli occhi. Guardare in basso sposta il peso in avanti e rende l’esercizio più facile, e così perde il suo scopo.',
+            '**Bloccare il ginocchio d’appoggio.** Una leggera flessione tiene attivi i muscoli. Un ginocchio bloccato sposta il carico sull’articolazione invece che sui muscoli intorno.',
+            '**Cercare di non oscillare.** L’oscillazione è l’esercizio. Le piccole correzioni che fa il piede per restare in piedi sono quelle che costruiscono propriocezione e controllo della caviglia. Aggrapparsi al pavimento con le dita arricciate o irrigidirsi per eliminare ogni movimento riduce l’effetto dell’allenamento.',
+            '**Stare troppo lontano dal muro.** Devi essere abbastanza vicino da poterti tenere se perdi l’equilibrio, soprattutto nella versione a occhi chiusi. Prima di tutto la sicurezza.',
+          ],
+        },
       ],
     },
     {
       h2: 'Versioni più facili e più difficili',
       paragraphs: [
-        'Se non riesci a stare su una gamba per più di qualche secondo, tieni la punta delle dita su un muro e migliora poco a poco. Anche un tocco leggero dà al cervello un’informazione in più per l’equilibrio. Togli un dito alla volta man mano che migliori.',
-        'Se 30\u00A0secondi su un pavimento duro ti sembrano facili, prova a stare su un asciugamano piegato o su un cuscino. La superficie morbida fa lavorare di più la caviglia a ogni oscillazione. L’app include un esercizio di equilibrio sul cuscino come progressione successiva.',
-        'La progressione più difficile è l’equilibrio su una gamba a occhi chiusi su una superficie morbida. Toglie sia le informazioni visive sia un pavimento stabile, e lascia quasi tutto il lavoro a piede e caviglia.',
+        {
+          list: [
+            '**Più facile:** Se non riesci a stare su una gamba per più di qualche secondo, tieni la punta delle dita su un muro e migliora poco a poco. Anche un tocco leggero dà al cervello un’informazione in più per l’equilibrio. Togli un dito alla volta man mano che migliori.',
+            '**Più difficile:** Se 30\u00A0secondi su un pavimento duro ti sembrano facili, prova a stare su un asciugamano piegato o su un cuscino. La superficie morbida fa lavorare di più la caviglia a ogni oscillazione. L’app include un esercizio di equilibrio sul cuscino come progressione successiva.',
+            '**La più difficile:** La progressione più difficile è l’equilibrio su una gamba a occhi chiusi su una superficie morbida. Toglie sia le informazioni visive sia un pavimento stabile, e lascia quasi tutto il lavoro a piede e caviglia.',
+          ],
+        },
         'Per esercizi collegati che costruiscono la catena, vedi i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/), i [sollevamenti dell’avampiede](/it/esercizi/sollevamenti-avampiede-muro/) e l’[esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
     },

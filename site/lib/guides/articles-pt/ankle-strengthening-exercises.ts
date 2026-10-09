@@ -27,7 +27,15 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Quais exercícios fortalecem o tornozelo?',
       paragraphs: [
-        'Os exercícios para fortalecer o tornozelo trabalham quatro grupos de músculos, além do sistema de equilíbrio que os controla. Os fibulares (na parte de fora da perna) viram o pé para fora e são a principal defesa contra virar o tornozelo. O tibial posterior (profundo, na parte de dentro) vira o pé para dentro e sustenta o arco. A panturrilha leva você para a ponta dos pés, e o tibial anterior (o músculo da canela) levanta a parte da frente do pé.',
+        'Os exercícios para fortalecer o tornozelo trabalham quatro grupos de músculos, além do sistema de equilíbrio que os controla:',
+        {
+          list: [
+            '**Fibulares:** Os fibulares (na parte de fora da perna) viram o pé para fora e são a principal defesa contra virar o tornozelo.',
+            '**Tibial posterior:** O tibial posterior (profundo, na parte de dentro) vira o pé para dentro e sustenta o arco.',
+            '**Panturrilha:** A panturrilha leva você para a ponta dos pés.',
+            '**Tibial anterior:** O tibial anterior (o músculo da canela) levanta a parte da frente do pé.',
+          ],
+        },
         'A força é só metade da história. O tornozelo também vira porque os músculos reagem uma fração de segundo atrasados. O trabalho de equilíbrio treina a velocidade dessas reações, e é por isso que ele aparece o tempo todo na pesquisa sobre novas entorses.',
         'A tabela mostra a ordem usada nesta página. Passe para a próxima etapa quando a atual parecer fácil e o tornozelo não doer mais na manhã seguinte.',
       ],
@@ -46,10 +54,17 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       h2: 'Exercícios para fortalecer o tornozelo evitam uma nova entorse?',
       keyFact: 'Num ensaio com 522\u00A0atletas depois de uma entorse de tornozelo, 22% dos que receberam um programa de equilíbrio em casa torceram de novo em um ano, contra 33% dos que tiveram só os cuidados habituais (Hupperets e colegas, 2009).',
       paragraphs: [
-        'Sim, e o treino de equilíbrio tem a melhor evidência. Num ensaio randomizado de 2009 na Holanda, 522\u00A0atletas de 12 a 70\u00A0anos que tinham torcido o tornozelo nos dois meses anteriores receberam ou os cuidados habituais, ou os cuidados habituais mais um programa em casa com prancha de equilíbrio. Ao longo de um ano, 22% do grupo do equilíbrio torceu de novo, contra 33% do grupo dos cuidados habituais. Isso equivale a um risco cerca de 35% menor. Nove pessoas precisaram fazer o programa para evitar uma nova entorse.',
+        'Sim, e **o treino de equilíbrio tem a melhor evidência.** Num ensaio randomizado de 2009 na Holanda, 522\u00A0atletas de 12 a 70\u00A0anos que tinham torcido o tornozelo nos dois meses anteriores receberam ou os cuidados habituais, ou os cuidados habituais mais um programa em casa com prancha de equilíbrio.',
+        'Ao longo de um ano, 22% do grupo do equilíbrio torceu de novo, contra 33% do grupo dos cuidados habituais. Isso equivale a um risco cerca de 35% menor. Nove pessoas precisaram fazer o programa para evitar uma nova entorse.',
         'O programa pedia três sessões por semana de até 30\u00A0minutos, durante dois meses, ficando mais difícil com o tempo. As pessoas faziam em casa, sem supervisão.',
-        'Os estudos combinados apontam na mesma direção. Uma metanálise de 2015 com 7\u00A0ensaios e 3.726\u00A0pessoas concluiu que o treino de equilíbrio reduziu o risco de entorse em cerca de um terço (risco relativo de 0,65). Em pessoas com entorse anterior, o resultado se manteve (risco relativo de 0,64). Para quem nunca tinha torcido o tornozelo, a evidência foi mais fraca e os autores a chamaram de inconclusiva. Uma revisão de 2018 sobre ensaios com atletas competitivos (seis dos seus oito ensaios testaram treino de equilíbrio) concluiu que o treino de equilíbrio reduziu o risco de entorse em 46%.',
-        'Uma revisão geral de 2017, com 46\u00A0revisões, classificou como moderada a evidência do treino neuromuscular (trabalho de equilíbrio e coordenação) para evitar novas entorses, e como forte a evidência do uso de tornozeleira.',
+        'Os estudos combinados apontam na mesma direção:',
+        {
+          list: [
+            'Uma metanálise de 2015 com 7\u00A0ensaios e 3.726\u00A0pessoas concluiu que o treino de equilíbrio reduziu o risco de entorse em cerca de um terço (risco relativo de 0,65). Em pessoas com entorse anterior, o resultado se manteve (risco relativo de 0,64). Para quem nunca tinha torcido o tornozelo, a evidência foi mais fraca e os autores a chamaram de inconclusiva.',
+            'Uma revisão de 2018 sobre ensaios com atletas competitivos (seis dos seus oito ensaios testaram treino de equilíbrio) concluiu que o treino de equilíbrio reduziu o risco de entorse em 46%.',
+            'Uma revisão geral de 2017, com 46\u00A0revisões, classificou como moderada a evidência do treino neuromuscular (trabalho de equilíbrio e coordenação) para evitar novas entorses, e como forte a evidência do uso de tornozeleira.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009: risco relativo de 0,63 (IC 95% 0,45 a 0,88) para recorrência autorrelatada; o benefício foi mais claro em atletas cuja primeira entorse não tinha sido acompanhada por um médico. Schiftan 2015: RR de 0,65 (0,55 a 0,77) no geral, 0,64 (0,51 a 0,81) com entorse anterior, 0,57 (0,34 a 0,97) sem, a partir de dois ensaios não significativos.',
@@ -151,7 +166,14 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       paragraphs: [
         'Normalmente dá para começar exercícios leves para o tornozelo logo depois de uma entorse, desde que você consiga apoiar o peso no pé. Uma revisão geral de 2017, com 46\u00A0revisões, encontrou evidência forte para a mobilização precoce (pôr o tornozelo em movimento cedo) e evidência moderada para o exercício depois de uma entorse aguda. Uma diretriz holandesa de 2018 diz que quem rompeu um ligamento da parte de fora do tornozelo se sai melhor com bandagem ou tornozeleira combinada com um programa de exercícios, e prefere o exercício supervisionado às opções passivas.',
         'Comece com movimentos sem dor e trabalho com faixa sentado, acrescente as elevações em pé quando andar parecer normal e acrescente o equilíbrio quando conseguir ficar em pé na perna lesionada sem dor aguda. Se o tornozelo também está rígido, veja [exercícios de mobilidade do tornozelo](/pt/exercicios-mobilidade-tornozelo/) para a parte da amplitude de movimento.',
-        'Antes de qualquer coisa, descarte uma fratura. As regras de Ottawa para o tornozelo são uma lista curta que os médicos usam: um raio X é indicado se você não conseguiu dar quatro passos logo depois da lesão e no consultório, ou se há dor ao apertar a borda de trás ou a ponta de qualquer um dos ossos do tornozelo, a base do osso do quinto dedo ou o navicular (um osso na parte de dentro do meio do pé). Uma revisão de 2003 com 27\u00A0estudos e 15.581\u00A0pacientes concluiu que as regras deixam passar quase nenhuma fratura.',
+        'Antes de qualquer coisa, **descarte uma fratura.** As regras de Ottawa para o tornozelo são uma lista curta que os médicos usam. Um raio X é indicado se:',
+        {
+          list: [
+            'Você não conseguiu dar quatro passos logo depois da lesão e no consultório.',
+            'Há dor ao apertar a borda de trás ou a ponta de qualquer um dos ossos do tornozelo, a base do osso do quinto dedo ou o navicular (um osso na parte de dentro do meio do pé).',
+          ],
+        },
+        'Uma revisão de 2003 com 27\u00A0estudos e 15.581\u00A0pacientes concluiu que as regras deixam passar quase nenhuma fratura.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -160,7 +182,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       keyFact: 'Num ensaio com 39\u00A0pessoas com tornozelo instável, o treino com faixa melhorou a força do tornozelo e a sensação de instabilidade, mas não melhorou os testes de equilíbrio nem de salto (Hall e colegas, 2015).',
       paragraphs: [
         'O trabalho com faixa sozinho ganha força, mas pode não mudar o quanto o tornozelo dá conta de um desequilíbrio. Num ensaio de 2015, 39\u00A0adultos jovens com instabilidade crônica do tornozelo (um tornozelo que continua falseando) foram divididos num grupo de faixa, num grupo de força com resistência manual e num grupo de controle. Os dois grupos de força treinaram três vezes por semana por cerca de um mês e meio. Os dois ficaram mais fortes e disseram que o tornozelo parecia mais estável. Nenhum dos dois melhorou num teste de alcance de equilíbrio nem num teste de salto cruzado.',
-        'Os autores sugeriram acrescentar exercícios que usem várias direções e articulações. Os ensaios de prevenção usaram equilíbrio, não faixa. Faça os dois.',
+        'Os autores sugeriram acrescentar exercícios que usem várias direções e articulações. Os ensaios de prevenção usaram equilíbrio, não faixa. **Faça os dois.**',
         'O quadril também importa. Num ensaio pequeno de 2018 com 26\u00A0pessoas com tornozelo instável, depois de um mês de exercícios supervisionados com faixa para o quadril, três vezes por semana, o grupo que treinou cometeu em média 9,9\u00A0erros num teste de equilíbrio em pé, contra 21,2 no grupo que não fez nada. Foi um único ensaio pequeno, então pense no quadril como um complemento útil, não como o centro do plano.',
       ],
       sourceNote:
@@ -172,13 +194,22 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       paragraphs: [
         'A maior parte da progressão só precisa de uma parede. Só os movimentos de inversão e eversão precisam de faixa.',
         'Sem faixa, você pode fazer as mesmas duas direções como isometria (empurrar algo que não se mexe, parado). Sente-se com a borda de fora do pé encostada no pé de uma mesa ou no batente de uma porta e empurre para fora por 5 a 10\u00A0segundos sem o pé se mover. Depois faça o mesmo com a borda de dentro, empurrando para dentro. É um primeiro passo comum depois de uma entorse, embora não tenha sido testado como programa próprio.',
-        'Se você só tem tempo para uma coisa, mantenha o trabalho de equilíbrio. Ele tem a evidência mais forte e leva um minuto por dia.',
+        'Se você só tem tempo para uma coisa, **mantenha o trabalho de equilíbrio.** Ele tem a evidência mais forte e leva um minuto por dia.',
       ],
     },
     {
       h2: 'Exercícios para fortalecer o tornozelo ajudam o equilíbrio de idosos?',
       paragraphs: [
-        'Os exercícios para o tornozelo muitas vezes fazem parte da prevenção de quedas em idosos, mas a evidência para o trabalho do tornozelo sozinho é limitada. O melhor ensaio testou um pacote. Em 2011, 305\u00A0pessoas com idade média de 74\u00A0anos, com dor no pé incapacitante e risco de queda aumentado, receberam ou o atendimento de podologia de rotina, ou um pacote com palmilhas ortopédicas, orientação sobre calçado e um vale para comprar sapatos, exercícios de pé e tornozelo em casa e um folheto sobre quedas. Ao longo de 12\u00A0meses, o grupo do pacote teve 36% menos quedas. O número de pessoas que caíram pelo menos uma vez não foi claramente diferente.',
+        'Os exercícios para o tornozelo muitas vezes fazem parte da prevenção de quedas em idosos, mas a evidência para o trabalho do tornozelo sozinho é limitada. O melhor ensaio testou um pacote. Em 2011, 305\u00A0pessoas com idade média de 74\u00A0anos, com dor no pé incapacitante e risco de queda aumentado, receberam ou o atendimento de podologia de rotina, ou um pacote com:',
+        {
+          list: [
+            'Palmilhas ortopédicas.',
+            'Orientação sobre calçado e um vale para comprar sapatos.',
+            'Exercícios de pé e tornozelo em casa.',
+            'Um folheto sobre quedas.',
+          ],
+        },
+        'Ao longo de 12\u00A0meses, o grupo do pacote teve 36% menos quedas. O número de pessoas que caíram pelo menos uma vez não foi claramente diferente.',
         'O grupo do pacote também ganhou força no tornozelo, amplitude de movimento e equilíbrio. Como era um pacote, o ensaio não consegue dizer quanto veio dos exercícios.',
         'Se o equilíbrio é a sua principal preocupação, faça o equilíbrio em uma perna perto de uma bancada, com a mão logo acima dela. Se você já teve quedas, tonturas ou pés dormentes, faça primeiro uma avaliação do equilíbrio.',
       ],
@@ -195,7 +226,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Com que frequência fazer exercícios para fortalecer o tornozelo?',
       paragraphs: [
-        'Duas ou três sessões de força por semana, com um treino curto de equilíbrio na maioria dos dias, é um padrão sensato. Isso combina com o ensaio de prevenção acima, que pedia três sessões por semana durante dois meses. O trabalho de equilíbrio tem carga baixa e pode ser feito quase todo dia.',
+        '**Duas ou três sessões de força por semana, com um treino curto de equilíbrio na maioria dos dias,** é um padrão sensato. Isso combina com o ensaio de prevenção acima, que pedia três sessões por semana durante dois meses. O trabalho de equilíbrio tem carga baixa e pode ser feito quase todo dia.',
         'Suba de nível quando um exercício parecer fácil por duas sessões seguidas e o tornozelo não estiver pior na manhã seguinte. Avance acrescentando uma versão mais difícil (uma perna em vez de duas, olhos fechados em vez de abertos, uma faixa mais firme) em vez de empilhar mais séries. Volte uma etapa depois de uma piora.',
         'O Walkito é feito em torno da dor no calcanhar, no arco e na parte de baixo da perna, e não tem um programa de reabilitação de entorse de tornozelo. Os planos dele podem incluir a inversão com faixa (depois de algum trabalho de arco antes), a elevação dos dedos, a elevação de calcanhar, o trabalho de quadril deitado de lado e o equilíbrio em uma perna desta página, com um teste curto de resistência da panturrilha, sustentação do arco e equilíbrio a cada duas semanas no início. Se você também quer fortalecer os pequenos músculos embaixo do arco, veja [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
       ],

@@ -36,8 +36,9 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
     {
       h2: 'Comment faire l’abduction de hanche debout avec un élastique\u00A0?',
       paragraphs: [
-        'Tenez-vous debout avec un élastique passé autour des deux chevilles ou juste au-dessus des genoux. Tenez-vous à un mur ou à une chaise pour l’équilibre. Transférez votre poids sur la jambe d’appui. Écartez l’autre jambe droit sur le côté, les orteils pointés vers l’avant et le buste droit. Ne vous penchez pas du côté opposé. Redescendez lentement et recommencez.',
-        'Poussez par le talon de la jambe qui travaille, pas par les orteils. Le mouvement se fait à la hanche, pas à la taille. L’écart n’a pas besoin d’être grand. Environ 30 à 45\u00A0degrés par rapport au sol suffisent si la technique reste propre. Un écart plus grand avec le buste qui penche sur le côté fait moins travailler le moyen fessier.',
+        'Tenez-vous debout avec un élastique passé autour des deux chevilles ou juste au-dessus des genoux. Tenez-vous à un mur ou à une chaise pour l’équilibre. Transférez votre poids sur la jambe d’appui.',
+        'Écartez l’autre jambe droit sur le côté, les orteils pointés vers l’avant et le buste droit. Ne vous penchez pas du côté opposé. Redescendez lentement et recommencez.',
+        'Poussez par le talon de la jambe qui travaille, pas par les orteils. **Le mouvement se fait à la hanche, pas à la taille.** L’écart n’a pas besoin d’être grand. Environ 30 à 45\u00A0degrés par rapport au sol suffisent si la technique reste propre. Un écart plus grand avec le buste qui penche sur le côté fait moins travailler le moyen fessier.',
       ],
       exercises: [
         {
@@ -59,8 +60,15 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
       h2: 'Comment la hanche influence-t-elle le pied et la voûte\u00A0?',
       keyFact: 'Une étude de 2013 sur environ 1\u00A0900\u00A0adultes de la Framingham Foot Study n’a trouvé aucun lien entre pieds plats et douleur au bas du dos, mais un faible lien entre un pied qui s’affaisse vers l’intérieur et une douleur au dos chez les femmes (Menz et coll., 2013).',
       paragraphs: [
-        'Le lien passe par une chaîne biomécanique\u00A0: hanche, genou, cheville, pied. Quand le moyen fessier ne peut pas garder le bassin à niveau en appui sur une jambe, la cuisse tourne vers l’intérieur. Le genou suit et s’affaisse vers l’axe du corps. Cette rotation force le pied à partir en pronation\u00A0: la cheville bascule vers l’intérieur et la voûte s’aplatit.',
-        'C’est pourquoi beaucoup de personnes avec des pieds plats ou une douleur de voûte ont aussi des hanches faibles. La voûte ne lâche pas toute seule. Elle est surchargée par le haut. Renforcer la hanche réduit cette charge venue d’en haut.',
+        'Le lien passe par une chaîne biomécanique\u00A0: hanche, genou, cheville, pied. Quand le moyen fessier ne peut pas garder le bassin à niveau en appui sur une jambe\u00A0:',
+        {
+          list: [
+            'La cuisse tourne vers l’intérieur.',
+            'Le genou suit et s’affaisse vers l’axe du corps.',
+            'Cette rotation force le pied à partir en pronation\u00A0: la cheville bascule vers l’intérieur et la voûte s’aplatit.',
+          ],
+        },
+        'C’est pourquoi beaucoup de personnes avec des pieds plats ou une douleur de voûte ont aussi des hanches faibles. La voûte ne lâche pas toute seule. **Elle est surchargée par le haut.** Renforcer la hanche réduit cette charge venue d’en haut.',
         'Une étude transversale de 2013 issue de la Framingham Foot Study a porté sur environ 1\u00A0900\u00A0adultes vivant à domicile. Des pieds plats en eux-mêmes n’étaient pas liés à une douleur au bas du dos, mais un pied qui s’affaissait vers l’intérieur pendant la marche montrait un faible lien avec une douleur au bas du dos chez les femmes, ce qui suggère que la chaîne pied-hanche-dos peut agir dans les deux sens.',
         'L’essai sur les pieds plats de Brijwasi et coll. (2023) comprenait un renforcement de la hanche, avec des exercices du pied court, un travail de la cheville et des étirements. Le programme combiné a amélioré la forme de la voûte en six semaines. L’étude n’a pas séparé la part propre du renforcement de la hanche, mais sa présence reflète le raisonnement biomécanique.',
       ],
@@ -77,10 +85,14 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’abduction de hanche debout\u00A0?',
       paragraphs: [
-        'Pencher le buste du côté opposé est l’erreur la plus fréquente. Quand vous vous penchez, le corps utilise l’élan et l’inclinaison latérale au lieu du moyen fessier. Restez droit. Un petit écart avec le buste droit vaut mieux qu’un grand écart en vous penchant.',
-        'Tourner le pied vers l’extérieur, orteils vers le plafond, est une autre erreur. Le travail passe alors aux fléchisseurs de la hanche et au tenseur du fascia lata au lieu du moyen fessier. Gardez les orteils pointés vers l’avant ou légèrement vers le bas.',
-        'Balancer la jambe est un troisième problème. L’exercice doit être lent et contrôlé, surtout à la descente. La phase de descente (excentrique) est celle où se fait une grande partie du renforcement. Si la jambe retombe vite, le muscle ne fait pas le travail.',
-        'Enfin, laisser s’abaisser la hanche de la jambe d’appui indique que l’élastique est trop fort ou que le moyen fessier du côté d’appui se fatigue. Le bassin doit rester à niveau tout du long. Prenez un élastique plus léger ou faites une pause entre les séries.',
+        {
+          list: [
+            '**Pencher le buste du côté opposé** est l’erreur la plus fréquente. Quand vous vous penchez, le corps utilise l’élan et l’inclinaison latérale au lieu du moyen fessier. Restez droit. Un petit écart avec le buste droit vaut mieux qu’un grand écart en vous penchant.',
+            '**Tourner le pied vers l’extérieur**, orteils vers le plafond, est une autre erreur. Le travail passe alors aux fléchisseurs de la hanche et au tenseur du fascia lata au lieu du moyen fessier. Gardez les orteils pointés vers l’avant ou légèrement vers le bas.',
+            '**Balancer la jambe** est un troisième problème. L’exercice doit être lent et contrôlé, surtout à la descente. La phase de descente (excentrique) est celle où se fait une grande partie du renforcement. Si la jambe retombe vite, le muscle ne fait pas le travail.',
+            '**Enfin, laisser s’abaisser la hanche de la jambe d’appui** indique que l’élastique est trop fort ou que le moyen fessier du côté d’appui se fatigue. Le bassin doit rester à niveau tout du long. Prenez un élastique plus léger ou faites une pause entre les séries.',
+          ],
+        },
       ],
     },
     {
@@ -88,8 +100,16 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
       paragraphs: [
         'Le raisonnement biomécanique qui justifie l’abduction de hanche dans les programmes pour le pied est bien établi\u00A0: des abducteurs de hanche faibles laissent le genou s’affaisser vers l’intérieur, ce qui augmente la pronation du pied et la charge sur la voûte. Plusieurs études d’observation confirment le lien entre faiblesse de la hanche et problèmes d’alignement du membre inférieur.',
         'Pour les résultats cliniques, les données les plus solides viennent de programmes combinés. L’essai de 2023 de Brijwasi et coll. comprenait un renforcement de la hanche dans un programme d’exercices de six semaines pour 52\u00A0personnes aux pieds plats souples. Le programme a amélioré la forme de la voûte. Le renforcement de la hanche n’a pas été isolé dans son propre essai sur les pieds plats ou la fasciite plantaire.',
-        'Un essai randomisé de 2024 sur 45\u00A0femmes aux pieds plats souples a comparé, sur six semaines, des exercices du pied court, un programme d’exercices combiné, et des exercices du pied court avec abduction de hanche isométrique. Les trois groupes ont réduit l’affaissement du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais son affaissement du naviculaire n’était pas significativement meilleur que celui du programme combiné\u00A0; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.',
-        'Les données soutiennent l’abduction de hanche comme élément d’un programme plus large pour le pied. Ce n’est pas un exercice à lui seul contre la douleur de voûte, mais il comble un manque que laissent les exercices centrés sur le pied. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [inversion de cheville avec élastique](/fr/exercices/inversion-cheville-elastique/), [exercice du pied court](/fr/exercices/pied-court/).',
+        'Un essai randomisé de 2024 sur 45\u00A0femmes aux pieds plats souples a comparé, sur six semaines\u00A0:',
+        {
+          list: [
+            'Des exercices du pied court.',
+            'Un programme d’exercices combiné.',
+            'Des exercices du pied court avec abduction de hanche isométrique.',
+          ],
+        },
+        'Les trois groupes ont réduit l’affaissement du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais son affaissement du naviculaire n’était pas significativement meilleur que celui du programme combiné\u00A0; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.',
+        '**Les données soutiennent l’abduction de hanche comme élément d’un programme plus large pour le pied.** Ce n’est pas un exercice à lui seul contre la douleur de voûte, mais il comble un manque que laissent les exercices centrés sur le pied. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [inversion de cheville avec élastique](/fr/exercices/inversion-cheville-elastique/), [exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },

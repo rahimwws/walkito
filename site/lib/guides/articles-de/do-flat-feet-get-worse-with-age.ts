@@ -30,7 +30,18 @@ export const FLAT_FEET_AGE_DE: Guide = {
       keyFact: 'In einem Vergleich von 50 jungen Erwachsenen (Durchschnittsalter 20,9) und 50 älteren Erwachsenen (Durchschnittsalter 80,2) ohne Fußprobleme waren die älteren Füße flacher und stärker proniert (Scott und Kollegen, 2007).',
       figure: { id: 'arches', caption: 'Dieselben Fußknochen bei Plattfuß, normalem und hohem Gewölbe, von der Innenseite gesehen.', alt: 'Drei Füße von der Innenseite auf ebenem Boden: ein Plattfuß, dessen Gewölbe auf dem Boden aufliegt, ein normales Gewölbe mit kleinem Spalt darunter und ein hohes Gewölbe mit großem Spalt unter der Fußmitte.' },
       paragraphs: [
-        'Plattfüße werden mit dem Alter meist etwas flacher, genau wie die meisten Füße. In einer Studie der La Trobe University von 2007 verglichen Forschende 50 junge Erwachsene (Durchschnittsalter 20,9) mit 50 älteren Erwachsenen (Durchschnittsalter 80,2). Niemand in beiden Gruppen hatte Fußprobleme. Die ältere Gruppe hatte flachere, stärker pronierte Füße (proniert heißt, dass der Fuß nach innen kippt), steifere Sprunggelenke und Großzehengelenke, schwächere Zehenmuskeln, mehr Ballenzehen (Hallux valgus) und weniger Gefühl in den Fußsohlen. Beim Gehen blieb ihr Mittelfuß bei jedem Schritt einen um 14\u00A0% größeren Anteil der Zeit auf dem Boden.',
+        '**Plattfüße werden mit dem Alter meist etwas flacher, genau wie die meisten Füße.** In einer Studie der La Trobe University von 2007 verglichen Forschende 50 junge Erwachsene (Durchschnittsalter 20,9) mit 50 älteren Erwachsenen (Durchschnittsalter 80,2). Niemand in beiden Gruppen hatte Fußprobleme.',
+        'Die ältere Gruppe hatte:',
+        {
+          list: [
+            'Flachere, stärker pronierte Füße (proniert heißt, dass der Fuß nach innen kippt).',
+            'Steifere Sprunggelenke und Großzehengelenke.',
+            'Schwächere Zehenmuskeln.',
+            'Mehr Ballenzehen (Hallux valgus).',
+            'Weniger Gefühl in den Fußsohlen.',
+          ],
+        },
+        'Beim Gehen blieb ihr Mittelfuß bei jedem Schritt einen um 14\u00A0% größeren Anteil der Zeit auf dem Boden.',
         'Das hat eine wichtige Grenze. Die Studie verglich zwei verschiedene Gruppen von Menschen zu einem Zeitpunkt. Sie hat nicht dieselben Füße über 60\u00A0Jahre begleitet. Sie zeigt also, dass ältere Füße im Schnitt flacher sind, aber nicht, wie schnell sich ein einzelner Fuß verändert oder ob sich ein Fuß, der schon flach war, mehr oder weniger verändert als ein typischer. Eine Studie, die lebenslange Plattfüße über Jahrzehnte verfolgt hat, haben wir nicht gefunden.',
         'Bei den meisten Menschen passiert die langsame Veränderung an beiden Füßen, ohne klaren Beginn und oft ohne Schmerzen. Eine schnelle, einseitige Veränderung ist etwas anderes, mehr dazu weiter unten.',
       ],
@@ -39,8 +50,18 @@ export const FLAT_FEET_AGE_DE: Guide = {
     {
       h2: 'Warum sinkt das Gewölbe mit dem Alter ab?',
       paragraphs: [
-        'Das Gewölbe wird von Knochen, Bändern (den festen Strängen, die Knochen miteinander verbinden), der Plantarfaszie unter dem Fuß und Muskeln gehalten. Der wichtigste Muskel ist der Tibialis posterior, ein tiefer Wadenmuskel, dessen Sehne hinter dem Innenknöchel verläuft und das Gewölbe bei jedem Schritt nach oben zieht. Kleine Muskeln im Fuß helfen mit.',
-        'Mehrere davon verändern sich mit dem Alter. Im Vergleich von 2007 hatte die ältere Gruppe auch schwächere Zehenmuskeln und steifere Sprunggelenke, auch wenn die Studie nicht geprüft hat, ob das die flacheren Füße verursacht hat. Auch das Gewicht spielt eine Rolle. Eine Übersichtsarbeit von 2023 über 12 Bevölkerungsstudien mit rund 16.000\u00A0Menschen fand Plattfüße häufiger bei Menschen mit Adipositas, mit einer etwa 2,6-fachen Chance. Diese Übersichtsarbeit hat gemessen, wie häufig Plattfüße zu einem Zeitpunkt waren. Ob eine Gewichtszunahme das Gewölbe absinken lässt, hat sie nicht geprüft.',
+        'Das Gewölbe wird gehalten von:',
+        {
+          list: [
+            'Knochen.',
+            'Bändern (den festen Strängen, die Knochen miteinander verbinden).',
+            'Der Plantarfaszie unter dem Fuß.',
+            'Muskeln.',
+          ],
+        },
+        'Der wichtigste Muskel ist der Tibialis posterior, ein tiefer Wadenmuskel, dessen Sehne hinter dem Innenknöchel verläuft und das Gewölbe bei jedem Schritt nach oben zieht. Kleine Muskeln im Fuß helfen mit.',
+        'Mehrere davon verändern sich mit dem Alter. Im Vergleich von 2007 hatte die ältere Gruppe auch schwächere Zehenmuskeln und steifere Sprunggelenke, auch wenn die Studie nicht geprüft hat, ob das die flacheren Füße verursacht hat.',
+        'Auch das Gewicht spielt eine Rolle. Eine Übersichtsarbeit von 2023 über 12 Bevölkerungsstudien mit rund 16.000\u00A0Menschen fand Plattfüße häufiger bei Menschen mit Adipositas, mit einer etwa 2,6-fachen Chance. Diese Übersichtsarbeit hat gemessen, wie häufig Plattfüße zu einem Zeitpunkt waren. Ob eine Gewichtszunahme das Gewölbe absinken lässt, hat sie nicht geprüft.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -48,7 +69,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
       h2: 'Kann man als Erwachsener Plattfüße bekommen?',
       keyFact: 'In einer Befragung von 582\u00A0Frauen über 40 hatten 3,3\u00A0% eine Tibialis-posterior-Insuffizienz im Stadium I oder II, und bei keiner war sie trotz langjähriger Beschwerden diagnostiziert (Kohls-Gatzoulis und Kollegen, 2009).',
       paragraphs: [
-        'Du kannst als Erwachsene oder Erwachsener Plattfüße bekommen, und die häufigste Ursache ist die Tibialis-posterior-Insuffizienz (PTTD), bei der die Sehne, die das Gewölbe hält, schwächer wird, sich dehnt oder reißt. Das Ergebnis hieß früher erworbener Plattfuß des Erwachsenen. 2020 einigte sich eine Gruppe von Fuß- und Sprunggelenkchirurgen auf einen neuen Namen, progressive kollabierende Fußdeformität (Progressive Collapsing Foot Deformity), weil die Fehlstellung weiter fortschreiten kann und nicht immer allein von der Sehne ausgeht.',
+        '**Du kannst als Erwachsene oder Erwachsener Plattfüße bekommen**, und die häufigste Ursache ist die Tibialis-posterior-Insuffizienz (PTTD), bei der die Sehne, die das Gewölbe hält, schwächer wird, sich dehnt oder reißt. Das Ergebnis hieß früher erworbener Plattfuß des Erwachsenen. 2020 einigte sich eine Gruppe von Fuß- und Sprunggelenkchirurgen auf einen neuen Namen, progressive kollabierende Fußdeformität (Progressive Collapsing Foot Deformity), weil die Fehlstellung weiter fortschreiten kann und nicht immer allein von der Sehne ausgeht.',
         'Selten ist das nicht. In einer Befragung von 2009 bei Frauen über 40 in einer Hausarztpraxis in England schickten 582 einen auswertbaren Fragebogen zurück. Nach Telefonaten und Untersuchungen hatten 3,3\u00A0% eine PTTD im frühen Stadium (Stadium I oder II). Bei keiner war sie diagnostiziert, obwohl die Beschwerden typisch waren und schon lange bestanden.',
         'Anders als ein lebenslanger Plattfuß beginnt sie meist auf einer Seite, mit Schmerzen und manchmal einer Schwellung hinter oder unter dem Innenknöchel. Auf diesem Fuß allein auf die Zehen zu gehen, wird schwer oder schmerzhaft. Die Stadien und die Übungsstudien findest du im [Ratgeber zur Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/).',
       ],
@@ -57,7 +78,17 @@ export const FLAT_FEET_AGE_DE: Guide = {
     {
       h2: 'Was macht Plattfüße schlimmer?',
       paragraphs: [
-        'Die Faktoren, die bei Erwachsenen mit einem einsinkenden Gewölbe zusammenhängen, sind meist dieselben, die mit Sehnenverschleiß zusammenhängen. In einer Auswertung von 1992 über 67\u00A0Menschen, deren Tibialis-posterior-Sehne gerissen war (Durchschnittsalter 57), hatten 60\u00A0% mindestens einen dieser Faktoren: Bluthochdruck, Adipositas, Diabetes, eine frühere Operation oder Verletzung an der Innenseite des Fußes oder Kortison. Adipositas zeigte den deutlichsten Zusammenhang. Es war ein Rückblick auf frühere Fälle, keine kontrollierte Studie, und weist deshalb auf wahrscheinliche Faktoren hin, statt eine Ursache zu beweisen.',
+        'Die Faktoren, die bei Erwachsenen mit einem einsinkenden Gewölbe zusammenhängen, sind meist dieselben, die mit Sehnenverschleiß zusammenhängen. In einer Auswertung von 1992 über 67\u00A0Menschen, deren Tibialis-posterior-Sehne gerissen war (Durchschnittsalter 57), hatten 60\u00A0% mindestens einen dieser Faktoren:',
+        {
+          list: [
+            'Bluthochdruck.',
+            'Adipositas.',
+            'Diabetes.',
+            'Eine frühere Operation oder Verletzung an der Innenseite des Fußes.',
+            'Kortison.',
+          ],
+        },
+        'Adipositas zeigte den deutlichsten Zusammenhang. Es war ein Rückblick auf frühere Fälle, keine kontrollierte Studie, und weist deshalb auf wahrscheinliche Faktoren hin, statt eine Ursache zu beweisen.',
       ],
       bullets: [
         '**Körpergewicht.** Adipositas hängt sowohl mit Plattfüßen allgemein als auch mit Sehnenrissen zusammen.',
@@ -67,7 +98,8 @@ export const FLAT_FEET_AGE_DE: Guide = {
         '**Schwangerschaft**, dazu gleich mehr.',
       ],
       after: [
-        '**Der Charcot-Fuß** braucht eine eigene Warnung. Bei Menschen mit Diabetes und Nervenschäden (Neuropathie, bei der die Füße an Gefühl verlieren) können die Knochen und Gelenke des Mittelfußes schwächer werden und zusammenbrechen, manchmal schnell. Eine Expertengruppe beschrieb 2011 das typische frühe Bild als deutlich geschwollenen, warmen, oft geröteten Fuß mit nur leichten bis mäßigen Schmerzen. Er wird oft mit einer Infektion, einem Blutgerinnsel oder Gicht verwechselt. Wenn du Diabetes hast und ein Fuß warm und geschwollen wird, lass ihn noch am selben Tag ansehen.',
+        '**Der Charcot-Fuß** braucht eine eigene Warnung. Bei Menschen mit Diabetes und Nervenschäden (Neuropathie, bei der die Füße an Gefühl verlieren) können die Knochen und Gelenke des Mittelfußes schwächer werden und zusammenbrechen, manchmal schnell.',
+        'Eine Expertengruppe beschrieb 2011 das typische frühe Bild als deutlich geschwollenen, warmen, oft geröteten Fuß mit nur leichten bis mäßigen Schmerzen. Er wird oft mit einer Infektion, einem Blutgerinnsel oder Gicht verwechselt. Wenn du Diabetes hast und ein Fuß warm und geschwollen wird, lass ihn noch am selben Tag ansehen.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -75,7 +107,8 @@ export const FLAT_FEET_AGE_DE: Guide = {
       h2: 'Kann eine Schwangerschaft die Füße dauerhaft flacher machen?',
       keyFact: 'Bei 49\u00A0Frauen, die in der frühen Schwangerschaft und erneut etwa viereinhalb Monate nach der Geburt vermessen wurden, sank die Gewölbehöhe und die Fußlänge nahm zu, vor allem in der ersten Schwangerschaft (Segal und Kollegen, 2013).',
       paragraphs: [
-        'Eine Schwangerschaft kann das Gewölbe etwas absenken, und die Veränderung kann nach der Geburt bleiben. In einer Studie von 2013 wurden die Füße von 49\u00A0Frauen im ersten Schwangerschaftsdrittel und erneut etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Steifigkeit des Gewölbes nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu. Den größten Teil der Veränderung brachte die erste Schwangerschaft. Bei Erstgebärenden wuchs die Fußlänge im Schnitt um etwa 1,4\u00A0Millimeter und das Absinken des Gewölbes um etwa 1,0\u00A0Millimeter.',
+        '**Eine Schwangerschaft kann das Gewölbe etwas absenken, und die Veränderung kann nach der Geburt bleiben.** In einer Studie von 2013 wurden die Füße von 49\u00A0Frauen im ersten Schwangerschaftsdrittel und erneut etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Steifigkeit des Gewölbes nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu.',
+        'Den größten Teil der Veränderung brachte die erste Schwangerschaft. Bei Erstgebärenden wuchs die Fußlänge im Schnitt um etwa 1,4\u00A0Millimeter und das Absinken des Gewölbes um etwa 1,0\u00A0Millimeter.',
         'Zwei Dinge rücken das ins richtige Verhältnis. Die Autorinnen und Autoren nannten die durchschnittlichen Veränderungen klein, und die Studie fand keine Veränderung bei einem Maß dafür, wie der Fuß beim Gehen abrollte. „Bleibend“ heißt in dieser Studie: beim Nachuntersuchungstermin ein paar Monate nach der Geburt noch vorhanden. Niemand wurde über Jahre begleitet.',
         'Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.',
       ],
@@ -84,7 +117,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
     {
       h2: 'Wann ist ein flacher werdender Fuß ein Problem?',
       paragraphs: [
-        'Ein flacher werdender Fuß ist ein Problem, wenn er sich schnell, auf einer Seite oder mit Schmerzen oder Schwellung verändert. Eine langsame Veränderung an beiden Füßen ohne Schmerzen ist im Alter häufig. Die Tabelle ordnet die üblichen Muster.',
+        '**Ein flacher werdender Fuß ist ein Problem, wenn er sich schnell, auf einer Seite oder mit Schmerzen oder Schwellung verändert.** Eine langsame Veränderung an beiden Füßen ohne Schmerzen ist im Alter häufig. Die Tabelle ordnet die üblichen Muster.',
       ],
       table: {
         caption: 'Muster von Gewölbeveränderungen bei Erwachsenen und was sie meist bedeuten',
@@ -108,9 +141,10 @@ export const FLAT_FEET_AGE_DE: Guide = {
       keyFact: 'Eine Übersichtsarbeit von 2018 fand nur drei Studien mit insgesamt 93\u00A0Personen, die Übungen bei Tibialis-posterior-Insuffizienz testeten, mit mäßigen Effekten für langsames Absenken (exzentrisches Krafttraining) zusätzlich zu Einlagen und Dehnen (Ross und Kollegen, 2018).',
       paragraphs: [
         'Keine Studie hat geprüft, ob Übungen oder Einlagen verhindern, dass sich Plattfüße mit dem Alter verändern. Es gibt Belege zu zwei benachbarten Fragen, und sie sind dünn.',
-        'Zum Sehnenproblem hinter dem Einsinken des Gewölbes im Erwachsenenalter fand eine Übersichtsarbeit von 2018 drei Studien mit insgesamt 93\u00A0Personen. Langsames Absenken (exzentrisches Krafttraining) zusätzlich zu orthopädischen Einlagen, die das Gewölbe stützen, und Dehnen linderte Schmerzen und Einschränkungen mäßig stärker als Einlagen und Dehnen allein. In einer Studie machten 36\u00A0Erwachsene in frühen Stadien drei Monate lang ihr Programm. Alle Gruppen verbesserten sich, die Gruppe mit exzentrischem Krafttraining am meisten. In einer anderen Studie mit 39\u00A0Personen machte zusätzliches Krafttraining nur einen kleinen Unterschied. Die Autorinnen und Autoren der Übersicht nannten die Forschungslage dünn.',
+        'Zum Sehnenproblem hinter dem Einsinken des Gewölbes im Erwachsenenalter fand eine Übersichtsarbeit von 2018 drei Studien mit insgesamt 93\u00A0Personen. Langsames Absenken (exzentrisches Krafttraining) zusätzlich zu orthopädischen Einlagen, die das Gewölbe stützen, und Dehnen linderte Schmerzen und Einschränkungen mäßig stärker als Einlagen und Dehnen allein.',
+        'In einer Studie machten 36\u00A0Erwachsene in frühen Stadien drei Monate lang ihr Programm. Alle Gruppen verbesserten sich, die Gruppe mit exzentrischem Krafttraining am meisten. In einer anderen Studie mit 39\u00A0Personen machte zusätzliches Krafttraining nur einen kleinen Unterschied. Die Autorinnen und Autoren der Übersicht nannten die Forschungslage dünn.',
         'Bei lebenslangen flexiblen Plattfüßen fand eine Studie mit 52\u00A0Personen, dass ein kurzes Programm aus Fuß-, Sprunggelenk- und Hüftübungen die Gewölbeform stärker veränderte als in einer Kontrollgruppe. Sie hat die Form gemessen, nicht Schmerzen, und das über kurze Zeit. Ob solches Training die altersbedingte Veränderung über Jahrzehnte bremst, ist unbekannt.',
-        'Die Muskeln, die das Gewölbe halten, kräftig zu halten, ist also vernünftig und risikoarm, aber niemand kann versprechen, dass dein Gewölbe dadurch bleibt, wo es ist. Walkito beginnt jede Übung unten mit einer niedrigen Dosis und prüft am Anfang alle zwei Wochen mit einem kurzen Test Wadenausdauer, Gewölbehalten und Gleichgewicht (alle vier Wochen, sobald du ein Ziel erreicht hast), damit du siehst, ob diese Muskeln kräftiger werden.',
+        'Die Muskeln, die das Gewölbe halten, kräftig zu halten, ist also vernünftig und risikoarm, aber **niemand kann versprechen, dass dein Gewölbe dadurch bleibt, wo es ist.** Walkito beginnt jede Übung unten mit einer niedrigen Dosis und prüft am Anfang alle zwei Wochen mit einem kurzen Test Wadenausdauer, Gewölbehalten und Gleichgewicht (alle vier Wochen, sobald du ein Ziel erreicht hast), damit du siehst, ob diese Muskeln kräftiger werden.',
       ],
       exercises: [
         {

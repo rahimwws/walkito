@@ -31,7 +31,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
       h2: '¿Cómo se hace el estiramiento de pantorrilla con la rodilla estirada?',
       paragraphs: [
         'Párate frente a una pared con las manos apoyadas en ella, más o menos a la altura de los hombros. Lleva un pie hacia atrás, unos 60\u00A0cm. Mantén la pierna de atrás estirada, el talón apoyado en el piso y los dedos apuntando hacia adelante. Lleva la cadera hacia la pared hasta sentir un estiramiento en la parte alta de la pantorrilla de atrás. Mantén 30\u00A0segundos y cambia de pierna.',
-        'La clave es mantener la rodilla de atrás bien estirada. Así trabajas el gastrocnemio, que cruza la rodilla y el tobillo. Si doblas la rodilla, el estiramiento pasa al sóleo, el músculo más profundo de la pantorrilla, y ese es otro ejercicio. Para esa versión, mira [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/).',
+        '**La clave es mantener la rodilla de atrás bien estirada.** Así trabajas el gastrocnemio, que cruza la rodilla y el tobillo. Si doblas la rodilla, el estiramiento pasa al sóleo, el músculo más profundo de la pantorrilla, y ese es otro ejercicio. Para esa versión, mira [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/).',
       ],
       exercises: [
         {
@@ -58,7 +58,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
       paragraphs: [
         'El gastrocnemio va desde detrás de la rodilla hasta el talón, a través del tendón de Aquiles. La fascia plantar sigue donde termina el Aquiles: rodea por debajo el hueso del talón y avanza hasta los dedos. Cuando el gastrocnemio está tenso, limita cuánto se puede doblar el tobillo hacia arriba. Eso obliga a la fascia plantar a absorber más tensión en cada paso.',
         'En un estudio de casos y controles emparejados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo se asoció con una razón de probabilidades de 23,3 para la fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o cualquier otra variable del estudio.',
-        'Aparte, una revisión de 254\u00A0personas con fascitis plantar encontró que entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo. Es decir, la pantorrilla tensa no es un tema secundario. Está presente en la mayoría de las personas con este problema.',
+        'Aparte, una revisión de 254\u00A0personas con fascitis plantar encontró que entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo. Es decir, **la pantorrilla tensa no es un tema secundario.** Está presente en la mayoría de las personas con este problema.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -74,10 +74,14 @@ export const EX_CALF_STRETCH_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en el estiramiento de pantorrilla?',
       paragraphs: [
-        'Doblar la rodilla de atrás. En cuanto la rodilla se dobla, el gastrocnemio se afloja y el estiramiento pasa al sóleo. Mantén la rodilla de atrás bien estirada todo el tiempo.',
-        'Dejar que el talón de atrás se levante. Si el talón se despega del piso, la pantorrilla no se está estirando. Primero apoya bien el talón y después inclínate hacia adelante hasta sentir el estiramiento.',
-        'Girar el pie de atrás hacia afuera. Cuando el pie gira hacia afuera, el estiramiento se va a la parte externa de la pantorrilla en lugar de a todo el músculo. Mantén los dedos apuntando recto hacia la pared.',
-        'Mantener muy poco tiempo. 10\u00A0segundos no alcanzan para que un estiramiento sostenido tenga efecto sobre la longitud del tejido. Mantén al menos 30\u00A0segundos por repetición.',
+        {
+          list: [
+            '**Doblar la rodilla de atrás.** En cuanto la rodilla se dobla, el gastrocnemio se afloja y el estiramiento pasa al sóleo. Mantén la rodilla de atrás bien estirada todo el tiempo.',
+            '**Dejar que el talón de atrás se levante.** Si el talón se despega del piso, la pantorrilla no se está estirando. Primero apoya bien el talón y después inclínate hacia adelante hasta sentir el estiramiento.',
+            '**Girar el pie de atrás hacia afuera.** Cuando el pie gira hacia afuera, el estiramiento se va a la parte externa de la pantorrilla en lugar de a todo el músculo. Mantén los dedos apuntando recto hacia la pared.',
+            '**Mantener muy poco tiempo.** 10\u00A0segundos no alcanzan para que un estiramiento sostenido tenga efecto sobre la longitud del tejido. Mantén al menos 30\u00A0segundos por repetición.',
+          ],
+        },
       ],
     },
     {
@@ -92,7 +96,8 @@ export const EX_CALF_STRETCH_ES: Guide = {
       h2: 'Cómo se combina con el estiramiento de sóleo',
       paragraphs: [
         'El gastrocnemio y el sóleo forman juntos la pantorrilla. La versión con la rodilla estirada estira el gastrocnemio. La versión con la rodilla doblada estira el sóleo. Son dos ejercicios, no dos versiones del mismo.',
-        'La mayoría de los programas para la fascitis plantar incluyen los dos, porque la tensión puede estar en uno de los músculos o en ambos. La guía no los separa. Walkito pone los dos en la misma sesión cuando toca estirar. La página de [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/) explica la versión con la rodilla doblada. Para el programa completo de estiramientos y fuerza, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'La mayoría de los programas para la fascitis plantar incluyen los dos, porque la tensión puede estar en uno de los músculos o en ambos. La guía no los separa. Walkito pone los dos en la misma sesión cuando toca estirar.',
+        'La página de [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/) explica la versión con la rodilla doblada. Para el programa completo de estiramientos y fuerza, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       cites: [CITE.guideline],
     },

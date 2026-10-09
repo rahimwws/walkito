@@ -28,9 +28,23 @@ export const FOOT_STRENGTHENING_ES: Guide = {
     {
       h2: '¿Cuáles son los músculos del pie y por qué fortalecerlos?',
       paragraphs: [
-        'El pie tiene dos grupos de músculos. Los músculos **intrínsecos** (los músculos pequeños que empiezan y terminan dentro del pie) están bajo el arco y entre los huesos. Sostienen el arco, separan los dedos y hacen las pequeñísimas correcciones que te mantienen en equilibrio. Los músculos **extrínsecos** (los músculos más grandes que empiezan en la pierna y llegan al pie por tendones largos) incluyen la pantorrilla, que levanta el talón, y los músculos que giran y levantan el pie.',
-        'Un artículo de 2015 de McKeon y colegas llamó a los músculos intrínsecos el «core del pie». La idea es la misma que con los músculos profundos del tronco: estabilizadores pequeños que hacen que los músculos más grandes trabajen bien. Su punto de vista era que el cuidado del pie suele sostener el pie desde afuera más que entrenar estos músculos, así que mucha gente nunca los entrena. Es un modelo, no una causa comprobada de dolor, pero explica por qué los programas para el pie entrenan primero los músculos pequeños y luego agregan la pantorrilla y el equilibrio.',
-        'Un buen trabajo de fuerza para el pie cubre los dos grupos. El ejercicio de pie corto, la separación de dedos y la elevación del dedo gordo entrenan los músculos intrínsecos, las elevaciones de talón entrenan la pantorrilla, y pararse en una pierna hace que los dos trabajen juntos.',
+        'El pie tiene dos grupos de músculos:',
+        {
+          list: [
+            'Los músculos **intrínsecos** (los músculos pequeños que empiezan y terminan dentro del pie) están bajo el arco y entre los huesos. Sostienen el arco, separan los dedos y hacen las pequeñísimas correcciones que te mantienen en equilibrio.',
+            'Los músculos **extrínsecos** (los músculos más grandes que empiezan en la pierna y llegan al pie por tendones largos) incluyen la pantorrilla, que levanta el talón, y los músculos que giran y levantan el pie.',
+          ],
+        },
+        'Un artículo de 2015 de McKeon y colegas llamó a los músculos intrínsecos el «core del pie». La idea es la misma que con los músculos profundos del tronco: estabilizadores pequeños que hacen que los músculos más grandes trabajen bien.',
+        'Su punto de vista era que el cuidado del pie suele sostener el pie desde afuera más que entrenar estos músculos, así que mucha gente nunca los entrena. Es un modelo, no una causa comprobada de dolor, pero explica por qué los programas para el pie entrenan primero los músculos pequeños y luego agregan la pantorrilla y el equilibrio.',
+        'Un buen trabajo de fuerza para el pie cubre los dos grupos:',
+        {
+          list: [
+            'El ejercicio de pie corto, la separación de dedos y la elevación del dedo gordo entrenan los músculos intrínsecos.',
+            'Las elevaciones de talón entrenan la pantorrilla.',
+            'Pararse en una pierna hace que los dos trabajen juntos.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -161,7 +175,8 @@ export const FOOT_STRENGTHENING_ES: Guide = {
       h2: '¿Los ejercicios para fortalecer los pies previenen lesiones al correr?',
       keyFact: 'En un ensayo de 2020 con 118\u00A0corredores, quienes no hicieron entrenamiento de core del pie tuvieron 2,42\u00A0veces más probabilidades de lesionarse en 12\u00A0meses (Taddei y colegas).',
       paragraphs: [
-        'Los ejercicios para fortalecer los pies redujeron las lesiones al correr en un buen ensayo, pero solo en uno. En 2020, Taddei y colegas dividieron al azar a 118\u00A0corredores recreativos de larga distancia en un grupo de core del pie (57\u00A0corredores) y un grupo control (61\u00A0corredores). El grupo de core del pie hizo un curso supervisado de unos dos meses para los músculos del pie y el tobillo, y luego siguió entrenando con supervisión a distancia. En 12\u00A0meses, el grupo control tuvo 2,42\u00A0veces más probabilidades de sufrir una lesión por correr. Los autores vieron que el efecto aparecía después de unos cuatro a ocho meses de entrenamiento.',
+        'Los ejercicios para fortalecer los pies **redujeron las lesiones al correr en un buen ensayo, pero solo en uno.** En 2020, Taddei y colegas dividieron al azar a 118\u00A0corredores recreativos de larga distancia en un grupo de core del pie (57\u00A0corredores) y un grupo control (61\u00A0corredores). El grupo de core del pie hizo un curso supervisado de unos dos meses para los músculos del pie y el tobillo, y luego siguió entrenando con supervisión a distancia.',
+        'En 12\u00A0meses, el grupo control tuvo 2,42\u00A0veces más probabilidades de sufrir una lesión por correr. Los autores vieron que el efecto aparecía después de unos cuatro a ocho meses de entrenamiento.',
         'Un ensayo anterior y más pequeño del mismo equipo, con 28\u00A0corredores, encontró que unos dos meses de entrenamiento del pie aumentaron el tamaño de cada músculo del pie que midieron, en comparación con el grupo control. Los corredores además se impulsaban del piso con más fuerza.',
         'Los dos ensayos vienen de un solo grupo de investigación en Brasil, con corredores recreativos que no estaban lesionados al inicio. Todavía no sabemos si el programa ayuda a principiantes o a personas que ya tienen dolor. Si eres corredor y ya tienes dolor de talón, empieza con [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
       ],
@@ -172,8 +187,17 @@ export const FOOT_STRENGTHENING_ES: Guide = {
       h2: '¿Cuánto tiempo se tarda en fortalecer los pies?',
       keyFact: 'En un ensayo de 2019 con 57\u00A0corredores, los músculos del pie crecieron y ganaron fuerza en unos dos meses, y algunos músculos ya eran más grandes al mes (Ridge y colegas).',
       paragraphs: [
-        'En los ensayos, los músculos del pie ganaron fuerza de forma medible en unos dos meses de entrenamiento constante. En 2019, Ridge y colegas asignaron al azar a 57\u00A0corredores a ejercicios para fortalecer el pie, a caminar con zapatos minimalistas o a no cambiar nada. El grupo de ejercicio hizo ejercicios de resistencia progresiva al menos cinco veces por semana. Después de unos dos meses, cada músculo del pie que midieron era más grande y más fuerte en los dos grupos activos, sin cambios en el grupo control. Algunos músculos ya eran más grandes en la revisión del primer mes.',
-        'La forma del arco cambia más despacio y menos. Una revisión de 2023 de cuatro ensayos encontró que el fortalecimiento intrínseco del pie no cambió cuánto se mueve el arco después de un mes, pero sí después de dos meses, con evidencia de baja calidad. En un estudio pequeño de Mulligan y Cook con 21\u00A0personas y sin grupo control, la caída del navicular (cuánto se hunde el arco interno al pararte) bajó en promedio 1,8\u00A0mm después de un mes de entrenamiento de pie corto. Es un cambio real, pero pequeño.',
+        'En los ensayos, los músculos del pie ganaron fuerza de forma medible en **unos dos meses de entrenamiento constante**. En 2019, Ridge y colegas asignaron al azar a 57\u00A0corredores a:',
+        {
+          list: [
+            'Ejercicios para fortalecer el pie.',
+            'Caminar con zapatos minimalistas.',
+            'No cambiar nada.',
+          ],
+        },
+        'El grupo de ejercicio hizo ejercicios de resistencia progresiva al menos cinco veces por semana. Después de unos dos meses, cada músculo del pie que midieron era más grande y más fuerte en los dos grupos activos, sin cambios en el grupo control. Algunos músculos ya eran más grandes en la revisión del primer mes.',
+        'La forma del arco cambia más despacio y menos. Una revisión de 2023 de cuatro ensayos encontró que el fortalecimiento intrínseco del pie no cambió cuánto se mueve el arco después de un mes, pero sí después de dos meses, con evidencia de baja calidad.',
+        'En un estudio pequeño de Mulligan y Cook con 21\u00A0personas y sin grupo control, la caída del navicular (cuánto se hunde el arco interno al pararte) bajó en promedio 1,8\u00A0mm después de un mes de entrenamiento de pie corto. Es un cambio real, pero pequeño.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -189,16 +213,25 @@ export const FOOT_STRENGTHENING_ES: Guide = {
       h2: '¿Los adultos mayores pueden fortalecer los pies?',
       keyFact: 'En un ensayo de 2016 con adultos de 60 a 90\u00A0años, el entrenamiento progresivo y supervisado del pie aumentó la fuerza de los dedos hasta un 36\u00A0por ciento, mientras que un programa en casa no la cambió (Mickle y colegas).',
       paragraphs: [
-        'Los adultos mayores sí pueden fortalecer los pies, y en un ensayo la versión supervisada con cargas cada vez más pesadas fue la que funcionó. En un ensayo de 2016, Mickle y colegas asignaron a 85\u00A0personas de 60 a 90\u00A0años a una clase supervisada con ejercicios para el pie cada vez más pesados o a un programa de ejercicio en casa, más un grupo aparte de 32\u00A0controles. Después de tres meses, el grupo supervisado aumentó la fuerza de los dedos hasta un 36\u00A0por ciento y aguantó más tiempo parado en una pierna. El grupo en casa y el grupo control no mostraron cambios en la fuerza de los dedos.',
+        'Los adultos mayores sí pueden fortalecer los pies, y en un ensayo la versión supervisada con cargas cada vez más pesadas fue la que funcionó. En un ensayo de 2016, Mickle y colegas asignaron a 85\u00A0personas de 60 a 90\u00A0años a una clase supervisada con ejercicios para el pie cada vez más pesados o a un programa de ejercicio en casa, más un grupo aparte de 32\u00A0controles.',
+        'Después de tres meses, el grupo supervisado aumentó la fuerza de los dedos hasta un 36\u00A0por ciento y aguantó más tiempo parado en una pierna. El grupo en casa y el grupo control no mostraron cambios en la fuerza de los dedos.',
         'Una revisión de 2022 de nueve estudios en adultos de 65\u00A0años o más encontró que el fortalecimiento intrínseco del pie ayudó a la fuerza, el equilibrio y la movilidad, y posiblemente redujo el riesgo de caídas, con poco efecto en el patrón de marcha. Los autores calificaron la calidad de la evidencia como regular.',
-        'Así que sube a versiones más difíciles cuando se vuelvan fáciles, y ten cerca una pared o una barra de cocina para el trabajo de equilibrio. Si las caídas te preocupan, un fisioterapeuta puede armar un programa seguro.',
+        'Así que sube a versiones más difíciles cuando se vuelvan fáciles, y **ten cerca una pared o una barra de cocina para el trabajo de equilibrio.** Si las caídas te preocupan, un fisioterapeuta puede armar un programa seguro.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: '¿Fortalecer los pies ayuda con la fascitis plantar o el pie plano?',
       paragraphs: [
-        'Para la fascitis plantar, sumar fortalecimiento del pie al estiramiento no funcionó mejor que el estiramiento solo en un ensayo que los comparó. En 2016, Kamonseki y colegas dividieron a 83\u00A0personas con fascitis plantar en tres grupos durante dos meses: fortalecimiento del pie más estiramiento, fortalecimiento del pie y la cadera más estiramiento, o solo estiramiento. Los tres grupos mejoraron en dolor y función, y ningún grupo superó a los demás. Para el dolor de talón, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'Para la fascitis plantar, sumar fortalecimiento del pie al estiramiento no funcionó mejor que el estiramiento solo en un ensayo que los comparó. En 2016, Kamonseki y colegas dividieron a 83\u00A0personas con fascitis plantar en tres grupos durante dos meses:',
+        {
+          list: [
+            'Fortalecimiento del pie más estiramiento.',
+            'Fortalecimiento del pie y la cadera más estiramiento.',
+            'Solo estiramiento.',
+          ],
+        },
+        'Los tres grupos mejoraron en dolor y función, y ningún grupo superó a los demás. Para el dolor de talón, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
         'Para el pie plano flexible, un ensayo de 2023 con 52\u00A0personas encontró que un programa mixto que incluía el ejercicio de pie corto cambió la forma del arco más que en el grupo control. Los detalles, y los límites del entrenamiento de pie corto por sí solo, están en la página de [ejercicios para pie plano](/es/ejercicios-pie-plano/). Si tu dolor está sobre todo en los dedos, la guía de [ejercicios para fortalecer los dedos de los pies](/es/ejercicios-para-fortalecer-los-dedos-del-pie/) profundiza más, y para el tobillo está [ejercicios para fortalecer el tobillo](/es/ejercicios-para-fortalecer-el-tobillo/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -207,7 +240,7 @@ export const FOOT_STRENGTHENING_ES: Guide = {
       h2: '¿Qué tan sólida es la evidencia sobre fortalecer los pies?',
       paragraphs: [
         'La evidencia de que los ejercicios para el pie fortalecen sus músculos apunta en la misma dirección, pero los estudios son pequeños. Una revisión de 2025 de Peters-Dickie y colegas incluyó 28\u00A0ensayos aleatorizados con 1399\u00A0personas. Respaldó los ejercicios para el pie para aumentar la fuerza del pie, pero calificó la certeza de baja a muy baja, sobre todo porque había pocos estudios por pregunta y muchos tenían alto riesgo de sesgo. Los resultados sobre el tamaño muscular fueron mixtos.',
-        'La evidencia de que unos pies más fuertes signifiquen menos lesiones es todavía más escasa y se apoya sobre todo en el ensayo con corredores de arriba. Fortalecer los pies es de bajo riesgo y barato, y sí da fuerza. Si previene tu próxima lesión sigue sin saberse. Más sobre cómo estas guías califican la investigación en la página de [evidencia](/es/evidencia/).',
+        'La evidencia de que unos pies más fuertes signifiquen menos lesiones es todavía más escasa y se apoya sobre todo en el ensayo con corredores de arriba. **Fortalecer los pies es de bajo riesgo y barato, y sí da fuerza.** Si previene tu próxima lesión sigue sin saberse. Más sobre cómo estas guías califican la investigación en la página de [evidencia](/es/evidencia/).',
       ],
       sourceNote: 'Peters-Dickie 2025: los metaanálisis mostraron que los zapatos minimalistas aumentaron la fuerza de los dedos 2 a 5, y que los ejercicios para el pie redujeron el movimiento del arco al correr; certeza de baja a muy baja.',
       cites: [CITE.petersDickie],

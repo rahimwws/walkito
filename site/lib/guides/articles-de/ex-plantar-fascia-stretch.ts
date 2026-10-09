@@ -56,7 +56,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
     {
       h2: 'Wann solltest du die Plantarfaszie dehnen?',
       paragraphs: [
-        'Vor deinem ersten Schritt am Morgen. Das ist die Anweisung, die sowohl die Studie als auch die Leitlinie von 2023 am häufigsten wiederholen. Die Plantarfaszie verkürzt sich über Nacht, während der Fuß entspannt ist. Die ersten Schritte des Tages ziehen plötzlich und kräftig an ihr, und deshalb sind Fersenschmerzen am Morgen das typische Zeichen einer Plantarfasziitis.',
+        '**Vor deinem ersten Schritt am Morgen.** Das ist die Anweisung, die sowohl die Studie als auch die Leitlinie von 2023 am häufigsten wiederholen. Die Plantarfaszie verkürzt sich über Nacht, während der Fuß entspannt ist. Die ersten Schritte des Tages ziehen plötzlich und kräftig an ihr, und deshalb sind Fersenschmerzen am Morgen das typische Zeichen einer Plantarfasziitis.',
         'Der zweitwichtigste Zeitpunkt ist vor dem Aufstehen nach jedem längeren Sitzen. In Ruhe passiert dieselbe Verkürzung. Die Faszie zu dehnen, bevor sie Last aufnimmt, mildert diesen Ruck.',
         'In der Studie sollten die Teilnehmenden die Dehnung 10-mal 10\u00A0Sekunden halten, dreimal am Tag, mindestens acht Wochen lang. Am wichtigsten waren die Runde am Morgen und die nach längerem Sitzen. Mehr Runden über den Tag verteilt waren erwünscht, wenn möglich.',
       ],
@@ -86,10 +86,14 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler bei der Plantarfaszien-Dehnung?',
       paragraphs: [
-        'Zu fest an den Zehen ziehen. Die Dehnung sollte sich unter dem Gewölbe fest anfühlen, nicht schmerzhaft. Wenn du zusammenzuckst, bist du über den sinnvollen Bereich hinaus. Lass nach, bis du einen Zug ohne stechende Spitze spürst.',
-        'Es in der Wade spüren statt im Gewölbe. Wenn die Dehnung vor allem in der Wade sitzt, ist das Knie zu gestreckt oder der Zug zu kräftig. Leg den Fuß weiter oben auf das andere Knie, damit das Sprunggelenk locker wird, und konzentrier dich darauf, die Zehen zurückzubeugen, nicht den ganzen Fuß.',
-        'Die Dehnung am Morgen auslassen. Das ist die eine Runde, die am meisten für den schlimmsten Moment des Tages bringt. Leg dir einen Zettel auf den Nachttisch oder stell dir eine Erinnerung. Die Dehnung dauert etwa zwei Minuten, und es lohnt sich, sie zu machen, bevor der Fuß den Boden berührt.',
-        'Federn. Halte die vollen 10\u00A0Sekunden still. Federn gibt der Faszie keine Zeit, sich zu verlängern, und kann das Gewebe zusätzlich reizen.',
+        {
+          list: [
+            '**Zu fest an den Zehen ziehen.** Die Dehnung sollte sich unter dem Gewölbe fest anfühlen, nicht schmerzhaft. Wenn du zusammenzuckst, bist du über den sinnvollen Bereich hinaus. Lass nach, bis du einen Zug ohne stechende Spitze spürst.',
+            '**Es in der Wade spüren statt im Gewölbe.** Wenn die Dehnung vor allem in der Wade sitzt, ist das Knie zu gestreckt oder der Zug zu kräftig. Leg den Fuß weiter oben auf das andere Knie, damit das Sprunggelenk locker wird, und konzentrier dich darauf, die Zehen zurückzubeugen, nicht den ganzen Fuß.',
+            '**Die Dehnung am Morgen auslassen.** Das ist die eine Runde, die am meisten für den schlimmsten Moment des Tages bringt. Leg dir einen Zettel auf den Nachttisch oder stell dir eine Erinnerung. Die Dehnung dauert etwa zwei Minuten, und es lohnt sich, sie zu machen, bevor der Fuß den Boden berührt.',
+            '**Federn.** Halte die vollen 10\u00A0Sekunden still. Federn gibt der Faszie keine Zeit, sich zu verlängern, und kann das Gewebe zusätzlich reizen.',
+          ],
+        },
       ],
     },
     {
@@ -97,7 +101,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
       paragraphs: [
         'Wenn das Übereinanderschlagen des Beins unbequem ist, lass beide Füße auf dem Boden und leg ein Handtuch oder einen Gürtel um den Fußballen. Zieh das Handtuch zu dir, sodass sich die Zehen zurückbeugen. Die Dehnung ist dieselbe, nur aus einem anderen Winkel.',
         'Eine schwerere Variante ist die Plantarfaszien-Dehnung im Stehen: Stell den Fußballen gegen eine Wand, die Ferse bleibt auf dem Boden, und lehn dich sanft nach vorn. Das bringt Körpergewicht in die Dehnung und lässt sich schwerer genau dosieren. Sie passt, sobald sich die Variante im Sitzen leicht anfühlt und keine Schmerzen auslöst.',
-        'Hinter der Variante im Sitzen aus der Studie stehen die Belege. Fang dort an. Alle Dehnungen und Kraftübungen bei Fersenschmerzen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Zum Rollen der Fußsohle nach dem Dehnen siehe [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/).',
+        '**Hinter der Variante im Sitzen aus der Studie stehen die Belege.** Fang dort an. Alle Dehnungen und Kraftübungen bei Fersenschmerzen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Zum Rollen der Fußsohle nach dem Dehnen siehe [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/).',
       ],
     },
   ],

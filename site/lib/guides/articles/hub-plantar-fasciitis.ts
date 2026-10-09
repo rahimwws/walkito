@@ -47,7 +47,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       h2: 'What does plantar fasciitis feel like?',
       paragraphs: [
-        'The hallmark symptom is pain under the heel on your first steps in the morning. The guideline describes it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." It usually eases once you walk for a few minutes, then returns after you sit for a while and stand up again.',
+        '**The hallmark symptom is pain under the heel on your first steps in the morning.** The guideline describes it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." It usually eases once you walk for a few minutes, then returns after you sit for a while and stand up again.',
         'The pain is usually at the inside front of the heel, where the fascia attaches to the bone. It may spread along the arch. It tends to be worst after rest, not during activity, which is the opposite of what most people expect.',
         'The pain shows up most clearly the next morning. If the next morning is worse, yesterday asked too much of the foot. That is why tracking morning pain is the most useful way to judge progress. [Heel pain in the morning](/heel-pain-in-the-morning/) covers the morning pattern in detail.',
       ],
@@ -59,16 +59,46 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       paragraphs: [
         'Plantar fasciitis happens when the fascia is loaded beyond what it can handle and recover from. The load can be too much at once (a sudden jump in running mileage) or steady over time (standing on a hard floor all day).',
         'A matched case-control study of 50 people with plantar fasciitis and 100 controls found that reduced ankle dorsiflexion was the strongest independent risk factor, with an odds ratio of 23.3. In a separate series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the bigger, more superficial calf muscle. Prolonged standing at work raised the odds 3.6 times. Higher body mass index also raised them.',
-        'The guideline names other risk factors: age between 40 and 60, running or jumping activities, and occupations that involve prolonged standing. Flat feet or high arches can shift how load travels through the fascia, but neither guarantees the condition.',
-        'Plantar fasciitis usually comes from a combination: a tight calf, a load the foot was not ready for, and not enough recovery time.',
+        'The guideline names other risk factors:',
+        {
+          list: [
+            'Age between 40 and 60.',
+            'Running or jumping activities.',
+            'Occupations that involve prolonged standing.',
+          ],
+        },
+        'Flat feet or high arches can shift how load travels through the fascia, but neither guarantees the condition.',
+        '**Plantar fasciitis usually comes from a combination**:',
+        {
+          list: [
+            'A tight calf.',
+            'A load the foot was not ready for.',
+            'Not enough recovery time.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: 'How is plantar fasciitis diagnosed?',
       paragraphs: [
-        'Plantar fasciitis is usually diagnosed by a clinician based on your history and a physical exam. The key findings are tenderness at the inside front of the heel, pain on the first steps in the morning, and pain that eases with activity and returns after rest.',
-        'Imaging is not needed for a typical case. The guideline recommends considering imaging if the pattern does not fit, if symptoms do not improve after several weeks of conservative care, or if another diagnosis needs to be ruled out (a stress fracture or nerve entrapment, for example). Ultrasound and MRI can show fascia thickening, but a thickened fascia on a scan without the matching symptom pattern is not plantar fasciitis.',
+        'Plantar fasciitis is usually diagnosed by a clinician based on your history and a physical exam. The key findings are:',
+        {
+          list: [
+            'Tenderness at the inside front of the heel.',
+            'Pain on the first steps in the morning.',
+            'Pain that eases with activity and returns after rest.',
+          ],
+        },
+        '**Imaging is not needed for a typical case.** The guideline recommends considering imaging:',
+        {
+          list: [
+            'If the pattern does not fit.',
+            'If symptoms do not improve after several weeks of conservative care.',
+            'If another diagnosis needs to be ruled out (a stress fracture or nerve entrapment, for example).',
+          ],
+        },
+        'Ultrasound and MRI can show fascia thickening, but a thickened fascia on a scan without the matching symptom pattern is not plantar fasciitis.',
         'Walkito does not diagnose. If you are unsure whether your heel pain is plantar fasciitis, a clinician is the right starting point.',
       ],
       cites: [CITE.guideline],
@@ -78,7 +108,8 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and night splints for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
-        'No single option works for everyone. Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using orthotics alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
+        '**No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls.',
+        'In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using orthotics alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
       ],
       table: {
         caption: '2023 guideline grades for plantar heel pain',
@@ -106,7 +137,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       paragraphs: [
         'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. A longer follow-up of 174 patients gives a more detailed picture: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
         'Recovery depends on how long you have had it, what you do about it, and some factors you cannot control. The Hansen 2018 cohort found that being female and having bilateral heel pain were significant predictors of slower recovery. BMI, age, fascia thickness, and the presence of a heel spur were not.',
-        'The useful question is not "how many weeks until it is over" but "is my morning pain lower this month than last month?" That trend is the real milestone. [How long does plantar fasciitis last?](/how-long-does-plantar-fasciitis-last/) covers the timeline evidence in full.',
+        'The useful question is not "how many weeks until it is over" but "is my morning pain lower this month than last month?" **That trend is the real milestone.** [How long does plantar fasciitis last?](/how-long-does-plantar-fasciitis-last/) covers the timeline evidence in full.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -150,12 +181,16 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       h2: 'Could the pain be something other than plantar fasciitis?',
       paragraphs: [
-        'Several conditions share the same location or the same morning pattern. Where the pain sits and how it behaves help tell them apart.',
-        '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-        '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front.',
-        '**Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain.',
-        '**Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.',
-        '**Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.',
+        'Several conditions share the same location or the same morning pattern. Where the pain sits and how it behaves help tell them apart:',
+        {
+          list: [
+            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+            '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front.',
+            '**Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain.',
+            '**Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.',
+            '**Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.',
+          ],
+        },
         'If you are unsure, a clinician can tell these apart based on location, behavior, and imaging if needed.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

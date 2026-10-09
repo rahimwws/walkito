@@ -35,7 +35,14 @@ export const TOP_OF_FOOT_IT: Guide = {
       h2: 'Cosa causa il dolore al dorso del piede?',
       keyFact: 'Una frattura da stress di un metatarso può non vedersi in una radiografia semplice per due-tre settimane dall’inizio dei sintomi, quindi una risonanza magnetica può confermarla prima (Patel e colleghi, 2011).',
       paragraphs: [
-        '**La tendinite degli estensori** è la causa più comune. I tendini estensori corrono lungo il dorso del piede, dalla tibia alle dita. Sollevano le dita e il piede quando cammini. Quando si irritano, senti un dolore sordo lungo il dorso del piede che peggiora con l’attività e spesso fa male quando tiri le dita verso l’alto contro resistenza. I fattori scatenanti abituali sono lacci stretti che premono direttamente sui tendini, un aumento improvviso della distanza di camminata o di corsa, o scarpe con una linguetta rigida.',
+        '**La tendinite degli estensori** è la causa più comune. I tendini estensori corrono lungo il dorso del piede, dalla tibia alle dita. Sollevano le dita e il piede quando cammini. Quando si irritano, senti un dolore sordo lungo il dorso del piede che peggiora con l’attività e spesso fa male quando tiri le dita verso l’alto contro resistenza. I fattori scatenanti abituali sono:',
+        {
+          list: [
+            'Lacci stretti che premono direttamente sui tendini.',
+            'Un aumento improvviso della distanza di camminata o di corsa.',
+            'Scarpe con una linguetta rigida.',
+          ],
+        },
         '**La frattura da stress di un metatarso** è una piccola crepa in una delle ossa lunghe del piede, di solito il secondo o il terzo metatarso. Il dolore è più localizzato rispetto alla tendinite, sta sopra un punto preciso e tende a peggiorare nel corso della giornata. Un gonfiore sul dorso del piede è frequente. Le fratture da stress possono metterci due-tre settimane a vedersi in una radiografia semplice, quindi per una diagnosi precoce può servire una risonanza magnetica. Questa richiede riposo, non esercizio.',
         '**L’osteofita dorsale** (detto anche esostosi metatarsale) è una sporgenza ossea che si forma sopra le articolazioni del mesopiede, di solito dove i metatarsi incontrano le ossa cuneiformi. Si sviluppa piano piano, in anni di compressione su quelle articolazioni. L’osteofita in sé può non fare male, ma può premere contro la linguetta della scarpa o irritare un nervo che ci passa sopra.',
         '**La gotta** può dare un dolore improvviso e forte sul dorso del piede, più spesso all’articolazione dell’alluce. L’articolazione diventa rossa, gonfia, calda ed estremamente dolente al tatto. La gotta è causata da depositi di cristalli di acido urico e va gestita dal medico. L’esercizio non aiuta durante un attacco di gotta.',
@@ -47,15 +54,23 @@ export const TOP_OF_FOOT_IT: Guide = {
     {
       h2: 'Come si distinguono queste cause?',
       paragraphs: [
-        'Posizione e andamento sono i primi indizi. La tendinite degli estensori dà un dolore sordo e diffuso lungo i tendini che peggiora quando tiri su le dita. Una frattura da stress fa male in un punto preciso e peggiora nel corso della giornata. La gotta arriva all’improvviso, di solito all’articolazione dell’alluce, con arrossamento e calore. Il dolore da nervo tende a essere un bruciore o un formicolio, non un dolore sordo e profondo.',
+        'Posizione e andamento sono i primi indizi:',
+        {
+          list: [
+            '**La tendinite degli estensori** dà un dolore sordo e diffuso lungo i tendini che peggiora quando tiri su le dita.',
+            '**Una frattura da stress** fa male in un punto preciso e peggiora nel corso della giornata.',
+            '**La gotta** arriva all’improvviso, di solito all’articolazione dell’alluce, con arrossamento e calore.',
+            '**Il dolore da nervo** tende a essere un bruciore o un formicolio, non un dolore sordo e profondo.',
+          ],
+        },
         'Spesso un professionista sanitario riesce a distinguerle con un esame fisico. L’estensione delle dita contro resistenza (tirare su le dita mentre qualcuno spinge in giù) riproduce il dolore della tendinite. Una dolorabilità puntiforme sopra un osso con gonfiore localizzato fa pensare a una frattura da stress. Se si sospetta una frattura da stress, gli esami di imaging sono importanti, perché continuare a caricare un osso fratturato può peggiorarlo.',
-        'Se il dolore c’è solo con le scarpe e sparisce a piedi nudi, la pressione della scarpa è il fattore più probabile. Se continua a riposo o ti sveglia di notte, vale la pena indagare su qualcosa di più di una semplice tendinite.',
+        'Se il dolore c’è solo con le scarpe e sparisce a piedi nudi, **la pressione della scarpa è il fattore più probabile.** Se continua a riposo o ti sveglia di notte, vale la pena indagare su qualcosa di più di una semplice tendinite.',
       ],
     },
     {
       h2: 'Cosa aiuta la tendinite degli estensori?',
       paragraphs: [
-        'Il primo passo più rapido di solito è cambiare l’allacciatura. Salta l’occhiello proprio sopra il punto dolente. Molte scarpe sportive hanno abbastanza occhielli da poter far girare il laccio intorno alla zona sensibile senza perdere sostegno altrove. Così togli la pressione diretta che ha fatto partire il problema.',
+        '**Il primo passo più rapido di solito è cambiare l’allacciatura.** Salta l’occhiello proprio sopra il punto dolente. Molte scarpe sportive hanno abbastanza occhielli da poter far girare il laccio intorno alla zona sensibile senza perdere sostegno altrove. Così togli la pressione diretta che ha fatto partire il problema.',
         'Le scarpe con una linguetta imbottita o flessibile comprimono meno i tendini. Se porti stivali, scarpe con tacchetti o scarpe eleganti con una tomaia rigida, spesso la pressione dalla parte alta della scarpa spiega tutto.',
         'Ridurre per un po’ l’attività che ha scatenato il dolore aiuta. Se il dolore è iniziato quando hai aumentato la distanza di camminata o di corsa, torna al livello precedente per una o due settimane, poi risali piano.',
         'Il ghiaccio sui tendini dolenti per 10-15\u00A0minuti dopo l’attività può aiutare a calmare l’irritazione nei primi giorni. Gli antinfiammatori sono un’opzione di breve durata se il dolore ti disturba nella vita di tutti i giorni, ma non accelerano il recupero di fondo.',
@@ -64,8 +79,9 @@ export const TOP_OF_FOOT_IT: Guide = {
     {
       h2: 'Gli esercizi aiutano il dolore al dorso del piede?',
       paragraphs: [
-        'Nessuno studio randomizzato ha testato l’esercizio specificamente per il dolore al dorso del piede o per la tendinite degli estensori. Su questo siamo onesti: non sappiamo se l’esercizio acceleri il recupero dalla tendinite degli estensori rispetto al solo cambio di allacciatura più riposo.',
-        'Quello su cui l’esercizio può lavorare sono i fattori che contribuiscono. Anche il tibiale anteriore, il muscolo sul davanti della tibia che solleva il piede, è un estensore. Quando è debole rispetto al polpaccio, i tendini estensori più piccoli sul dorso del piede prendono più carico mentre cammini. Rinforzare il tibiale anteriore con i sollevamenti dell’avampiede (sollevare la parte anteriore del piede stando in piedi contro un muro) è un modo per ridurre questo squilibrio. Vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) per saperne di più sul tibiale anteriore.',
+        'Nessuno studio randomizzato ha testato l’esercizio specificamente per il dolore al dorso del piede o per la tendinite degli estensori. Su questo siamo onesti: **non sappiamo se l’esercizio acceleri il recupero dalla tendinite degli estensori** rispetto al solo cambio di allacciatura più riposo.',
+        'Quello su cui l’esercizio può lavorare sono i fattori che contribuiscono. Anche il tibiale anteriore, il muscolo sul davanti della tibia che solleva il piede, è un estensore. Quando è debole rispetto al polpaccio, i tendini estensori più piccoli sul dorso del piede prendono più carico mentre cammini.',
+        'Rinforzare il tibiale anteriore con i sollevamenti dell’avampiede (sollevare la parte anteriore del piede stando in piedi contro un muro) è un modo per ridurre questo squilibrio. Vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) per saperne di più sul tibiale anteriore.',
         'L’allungamento del polpaccio conta se la dorsiflessione della caviglia è limitata. Quando la caviglia non riesce a piegarsi abbastanza, il piede compensa in modi che possono aumentare lo stress sulle strutture del dorso. Un polpaccio rigido è anche un fattore di rischio comune alla [fascite plantare](/it/esercizi-fascite-plantare/) e al sovraccarico dell’avampiede.',
         'Per osteofiti dorsali e artrosi del mesopiede, l’esercizio non cambia l’anatomia dell’osso. Il lavoro sulla mobilità della caviglia può aiutare a mantenere l’ampiezza di movimento, e il rinforzo può ridurre i sintomi, ma l’osteofita o la degenerazione dell’articolazione restano. Per le fratture da stress, l’esercizio è l’approccio sbagliato finché l’osso non si è ripreso.',
       ],
@@ -120,9 +136,17 @@ export const TOP_OF_FOOT_IT: Guide = {
       h2: 'Quando il dolore al dorso del piede è una frattura da stress?',
       paragraphs: [
         'La frattura da stress di un metatarso è la causa che più ti serve escludere, perché continuare a caricare un osso fratturato può trasformare una piccola crepa in una frattura completa.',
-        'Le fratture da stress di solito si sviluppano piano piano per impatti ripetuti. Sono più frequenti nei runner, nelle reclute militari e in chi ha aumentato all’improvviso la propria attività. Il dolore è localizzato in un punto, peggiora con le attività sotto carico e può fare male di notte. Un gonfiore sul dorso del piede sopra l’osso dolente è frequente.',
+        'Le fratture da stress di solito si sviluppano piano piano per impatti ripetuti. Sono più frequenti:',
+        {
+          list: [
+            'Nei runner.',
+            'Nelle reclute militari.',
+            'In chi ha aumentato all’improvviso la propria attività.',
+          ],
+        },
+        'Il dolore è localizzato in un punto, peggiora con le attività sotto carico e può fare male di notte. Un gonfiore sul dorso del piede sopra l’osso dolente è frequente.',
         'Una radiografia semplice può non mostrare una frattura da stress nelle prime due-tre settimane. Se un medico la sospetta, una risonanza magnetica o una scintigrafia ossea possono confermarla prima. L’approccio è riposo e carico protetto, non esercizio. Tornare all’attività troppo presto rischia una frattura completa.',
-        'Se il dolore è comparso dopo un aumento del volume di allenamento, sta in un solo punto e peggiora nel corso della giornata, rivolgiti a un professionista sanitario prima di fare qualsiasi esercizio di questa pagina.',
+        'Se il dolore è comparso dopo un aumento del volume di allenamento, sta in un solo punto e peggiora nel corso della giornata, **rivolgiti a un professionista sanitario prima di fare qualsiasi esercizio di questa pagina.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -131,7 +155,7 @@ export const TOP_OF_FOOT_IT: Guide = {
       paragraphs: [
         'La gotta è una malattia infiammatoria causata da cristalli di acido urico che si depositano in un’articolazione. Classicamente colpisce l’articolazione dell’alluce (la prima articolazione metatarso-falangea), ma può colpire qualsiasi articolazione del piede, compreso il mesopiede.',
         'Un attacco di gotta arriva in fretta, spesso nel giro di una notte. L’articolazione diventa molto dolorosa, rossa, calda e gonfia. Ha un aspetto e dà sensazioni diverse da una tendinite o da una frattura da stress. Se hai un dolore improvviso e forte in una sola articolazione con arrossamento e calore, è un motivo per farti visitare presto. Gli esami del sangue e a volte l’analisi del liquido articolare confermano la diagnosi.',
-        'La gotta va gestita dal medico. Esercizi, cambi di scarpe e stretching non aiutano durante un attacco. Tra un attacco e l’altro è ragionevole mantenere la mobilità di piede e caviglia, ma il problema di fondo dell’acido urico si gestisce con farmaci e cambiamenti nell’alimentazione.',
+        '**La gotta va gestita dal medico.** Esercizi, cambi di scarpe e stretching non aiutano durante un attacco. Tra un attacco e l’altro è ragionevole mantenere la mobilità di piede e caviglia, ma il problema di fondo dell’acido urico si gestisce con farmaci e cambiamenti nell’alimentazione.',
       ],
     },
   ],

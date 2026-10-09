@@ -24,7 +24,8 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
     {
       h2: 'Che differenza c’è tra solette, plantari ed esercizi?',
       paragraphs: [
-        'Una **soletta** è qualsiasi cosa infili in una scarpa. Un **plantare** (ortesi plantare) è una soletta sagomata per sostenere l’arco e togliere carico al tallone. Quelli **prefabbricati** si comprano già pronti. Quelli **su misura** si fanno da una scansione o da un calco del piede, di solito da un podologo (uno specialista del piede), e costano molto di più. Entrambi cambiano il carico sul piede finché li indossi. L’esercizio cambia il tessuto stesso, così piede e polpaccio reggono più carico con o senza plantare.',
+        'Una **soletta** è qualsiasi cosa infili in una scarpa. Un **plantare** (ortesi plantare) è una soletta sagomata per sostenere l’arco e togliere carico al tallone. Quelli **prefabbricati** si comprano già pronti. Quelli **su misura** si fanno da una scansione o da un calco del piede, di solito da un podologo (uno specialista del piede), e costano molto di più.',
+        'Entrambi cambiano il carico sul piede finché li indossi. L’esercizio cambia il tessuto stesso, così piede e polpaccio reggono più carico con o senza plantare.',
       ],
     },
     {
@@ -48,7 +49,15 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
       keyFact: 'In uno studio su 185\u00A0persone con dolore al tallone, i plantari su misura non hanno fatto meglio dei finti plantari a tre mesi, e chi era seguito dal medico di base riferiva un dolore ai primi passi più basso di 1,48\u00A0punti rispetto a chi aveva i plantari su misura (Rasenberg e colleghi, 2021).',
       paragraphs: [
         'Per il comune dolore al tallone, la ricerca dice che di solito no. La revisione di Whittaker non ha trovato **nessuna differenza tra plantari su misura e prefabbricati in nessun momento**, e la linea guida del 2023 segnala «una somiglianza nei risultati tra ortesi su misura e prefabbricate».',
-        'Lo studio olandese STAP ha assegnato a caso 185\u00A0adulti con dolore al tallone alla gestione del medico di base, a un plantare su misura fatto da un podologo o a un finto plantare (Rasenberg e colleghi, 2021). **Tutti i gruppi hanno ricevuto anche un opuscolo con esercizi.** A tre mesi, i plantari su misura non hanno fatto meglio di quelli finti. Il gruppo seguito dal medico di base è andato meglio del gruppo con i plantari su misura: circa 1\u00A0punto in meno di dolore durante l’attività e 1,5\u00A0punti in meno di dolore ai primi passi, su una scala da 0 a 10. Un’analisi dei costi dello stesso studio, su circa sei mesi, ha giudicato i plantari su misura «non convenienti» rispetto alla gestione del medico di base.',
+        'Lo studio olandese STAP ha assegnato a caso 185\u00A0adulti con dolore al tallone (Rasenberg e colleghi, 2021) a:',
+        {
+          list: [
+            'La gestione del medico di base.',
+            'Un plantare su misura fatto da un podologo.',
+            'Un finto plantare.',
+          ],
+        },
+        '**Tutti i gruppi hanno ricevuto anche un opuscolo con esercizi.** A tre mesi, i plantari su misura non hanno fatto meglio di quelli finti. Il gruppo seguito dal medico di base è andato meglio del gruppo con i plantari su misura: circa 1\u00A0punto in meno di dolore durante l’attività e 1,5\u00A0punti in meno di dolore ai primi passi, su una scala da 0 a 10. Un’analisi dei costi dello stesso studio, su circa sei mesi, ha giudicato i plantari su misura «non convenienti» rispetto alla gestione del medico di base.',
         'I plantari su misura possono comunque aiutare alcune persone (vedi sotto). Ma se vuoi un plantare per il dolore al tallone, un supporto per l’arco da banco che calzi bene è il primo tentativo ragionevole.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
@@ -58,7 +67,8 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
       keyFact: 'In uno studio su 48\u00A0persone che portavano tutte un plantare, il gruppo che ha aggiunto sollevamenti sulle punte con carico ha avuto 29\u00A0punti in meno (cioè meglio) sul Foot Function Index a tre mesi rispetto al gruppo che ha aggiunto lo stretching (Rathleff e colleghi, 2015).',
       paragraphs: [
         'L’esercizio cambia il tessuto, quindi il cambiamento dura anche dopo la sessione. La linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio il grado **A** e al rinforzo il grado **B**.',
-        'In uno studio, tutte le 48\u00A0persone con fascite plantare hanno ricevuto un plantare (Rathleff e colleghi, 2015). Metà ha aggiunto lo stretching quotidiano; l’altra metà un sollevamento sulle punte con carico e un asciugamano sotto le dita, a giorni alterni. A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) sul Foot Function Index (un punteggio da 0 a 100 di dolore e disabilità del piede). A sei e a dodici mesi i gruppi erano pari. Il plantare era lo stesso nei due gruppi; la differenza iniziale l’ha fatta l’esercizio. La routine completa è in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'In uno studio, tutte le 48\u00A0persone con fascite plantare hanno ricevuto un plantare (Rathleff e colleghi, 2015). Metà ha aggiunto lo stretching quotidiano; l’altra metà un sollevamento sulle punte con carico e un asciugamano sotto le dita, a giorni alterni.',
+        'A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) sul Foot Function Index (un punteggio da 0 a 100 di dolore e disabilità del piede). A sei e a dodici mesi i gruppi erano pari. Il plantare era lo stesso nei due gruppi; la differenza iniziale l’ha fatta l’esercizio. La routine completa è in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       exercises: [
         {
@@ -91,8 +101,9 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
     {
       h2: 'I plantari aiutano il piede piatto?',
       paragraphs: [
-        'Le prove sono scarse per entrambi. Il piede piatto (un arco basso) spesso non dà alcun dolore, e in quel caso non c’è niente da correggere. Vedi [piede piatto](/it/piede-piatto/).',
-        'Per gli adulti con piede piatto flessibile, una revisione ha trovato 13\u00A0studi, solo due randomizzati (Banwell e colleghi, 2014). Non ha trovato «prove di alto livello» per i plantari e solo prove di basso livello che allevino il dolore. Sul fronte dell’esercizio, in uno studio su 45\u00A0adulti, circa un mese e mezzo di esercizi per il piede ha migliorato la postura del piede più dei plantari su misura per l’arco, e anche esercizi più plantari hanno battuto i soli plantari (Kirmizi e colleghi, 2024). In un altro studio su 52\u00A0persone, un programma di esercizi ha cambiato la forma dell’arco più di un gruppo di controllo (Brijwasi e Borkar, 2023). Nessuno dei due aveva il dolore come risultato principale.',
+        '**Le prove sono scarse per entrambi.** Il piede piatto (un arco basso) spesso non dà alcun dolore, e in quel caso non c’è niente da correggere. Vedi [piede piatto](/it/piede-piatto/).',
+        'Per gli adulti con piede piatto flessibile, una revisione ha trovato 13\u00A0studi, solo due randomizzati (Banwell e colleghi, 2014). Non ha trovato «prove di alto livello» per i plantari e solo prove di basso livello che allevino il dolore.',
+        'Sul fronte dell’esercizio, in uno studio su 45\u00A0adulti, circa un mese e mezzo di esercizi per il piede ha migliorato la postura del piede più dei plantari su misura per l’arco, e anche esercizi più plantari hanno battuto i soli plantari (Kirmizi e colleghi, 2024). In un altro studio su 52\u00A0persone, un programma di esercizi ha cambiato la forma dell’arco più di un gruppo di controllo (Brijwasi e Borkar, 2023). Nessuno dei due aveva il dolore come risultato principale.',
         'Per i bambini, una revisione Cochrane di 16\u00A0studi (1.058\u00A0bambini) ha trovato prove di certezza da bassa a molto bassa, e ha concluso che i costosi plantari su misura per bambini con piede piatto flessibile senza dolore non hanno prove a sostegno (Evans e colleghi, 2022). Vedi [piede piatto nei bambini](/it/piede-piatto-bambini/). Gli esercizi di questa pagina e l’app Walkito sono pensati per gli adulti.',
       ],
       exercises: [
@@ -114,7 +125,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
     {
       h2: 'I plantari indeboliscono i piedi?',
       paragraphs: [
-        'Forse un po’. In uno studio su 18\u00A0giovani adulti con piede piatto, tre piccoli muscoli interni del piede si sono ridotti tra il 9,6 e il 17,4% dopo tre mesi di plantari su misura (Protopapas e Perry, 2020). I gruppi non erano randomizzati e lo studio era piccolo, quindi leggilo come un segnale, non come un fatto assodato.',
+        '**Forse un po’.** In uno studio su 18\u00A0giovani adulti con piede piatto, tre piccoli muscoli interni del piede si sono ridotti tra il 9,6 e il 17,4% dopo tre mesi di plantari su misura (Protopapas e Perry, 2020). I gruppi non erano randomizzati e lo studio era piccolo, quindi leggilo come un segnale, non come un fatto assodato.',
         'L’esercizio sembra compensarlo. In uno studio randomizzato su 28\u00A0persone con piede piatto, tutti hanno portato plantari per due mesi e metà ha fatto anche l’esercizio del piede corto (Jung e colleghi, 2011). Il muscolo lungo l’arco interno è cresciuto in entrambi i gruppi, ma di più con l’esercizio, e anche la forza dell’alluce è aumentata di più. Se porti i plantari tutto il giorno, fai lavorare il piede con qualche minuto di [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
@@ -150,7 +161,8 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
     {
       h2: 'Come combinare plantari ed esercizi?',
       paragraphs: [
-        'Usa il plantare per stare più comodo e gli esercizi per cambiare le cose. Sia nello studio di Rathleff sia nello STAP, tutti avevano indicazioni sugli esercizi oltre a quello che mettevano nella scarpa. Porta un supporto per l’arco da banco nei giorni in cui fa male, e inizia allo stesso tempo gli allungamenti e i sollevamenti sulle punte. Man mano che il dolore del mattino si calma, prova brevi periodi senza plantare, poi più lunghi. Walkito può organizzare la parte degli esercizi come un piano settimanale: una volta a settimana fa salire di un gradino il tuo esercizio principale quando hai giudicato facili le ultime due sessioni con quell’esercizio e il dolore del mattino non è aumentato.',
+        '**Usa il plantare per stare più comodo e gli esercizi per cambiare le cose.** Sia nello studio di Rathleff sia nello STAP, tutti avevano indicazioni sugli esercizi oltre a quello che mettevano nella scarpa. Porta un supporto per l’arco da banco nei giorni in cui fa male, e inizia allo stesso tempo gli allungamenti e i sollevamenti sulle punte. Man mano che il dolore del mattino si calma, prova brevi periodi senza plantare, poi più lunghi.',
+        'Walkito può organizzare la parte degli esercizi come un piano settimanale: una volta a settimana fa salire di un gradino il tuo esercizio principale quando hai giudicato facili le ultime due sessioni con quell’esercizio e il dolore del mattino non è aumentato.',
         'Se qualche mese di stretching e rinforzo quotidiani non ha aiutato, rivolgiti a un professionista sanitario. È allora che vale la pena parlare di un plantare su misura, tra le altre opzioni, con qualcuno che ha visitato il tuo piede.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],

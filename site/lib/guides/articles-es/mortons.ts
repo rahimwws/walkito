@@ -35,7 +35,7 @@ export const MORTONS_ES: Guide = {
       h2: '¿Qué es el neuroma de Morton?',
       figure: { id: 'mortons', caption: 'El neuroma de Morton es un engrosamiento del nervio entre las cabezas de los metatarsianos, con más frecuencia entre el tercer y el cuarto dedo.', alt: 'Vista superior de los huesos del pie con nervios amarillos hacia los dedos y un óvalo hinchado en el nervio entre el tercer y el cuarto dedo.' },
       paragraphs: [
-        'El neuroma de Morton es un engrosamiento benigno del nervio plantar digital común, normalmente en el tercer espacio intermetatarsiano (entre el tercer y el cuarto dedo). Con menos frecuencia ocurre en el segundo espacio. No es cáncer y no es un crecimiento en el hueso.',
+        'El neuroma de Morton es un engrosamiento benigno del nervio plantar digital común, normalmente en el tercer espacio intermetatarsiano (entre el tercer y el cuarto dedo). Con menos frecuencia ocurre en el segundo espacio. **No es cáncer y no es un crecimiento en el hueso.**',
         'El nervio pasa debajo del ligamento metatarsal transverso, una banda de tejido que mantiene juntas las cabezas de los metatarsianos. Cuando las cabezas se comprimen, el nervio queda atrapado. Con el tiempo, la vaina del nervio se engrosa y el nervio mismo puede agrandarse. El resultado es dolor, ardor, hormigueo o entumecimiento en el espacio entre los dedos, que se irradia hacia los dedos afectados.',
         'Es más frecuente en mujeres, en parte por el tipo de calzado. Los zapatos de punta angosta y los tacones empujan las cabezas de los metatarsianos unas contra otras y aumentan la presión sobre el nervio. Correr, los deportes de cancha y los trabajos que implican estar de pie mucho tiempo con calzado apretado también son factores de riesgo.',
       ],
@@ -44,8 +44,15 @@ export const MORTONS_ES: Guide = {
       h2: '¿En qué se diferencia el neuroma de Morton de la metatarsalgia?',
       paragraphs: [
         'La metatarsalgia es un término más amplio que significa dolor alrededor de las cabezas de los metatarsianos, los nudillos de hueso en la [planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/). El neuroma de Morton es una causa específica de dolor en la parte delantera del pie, y entra dentro del concepto de metatarsalgia.',
-        'La diferencia clave es qué duele y cómo. La metatarsalgia suele ser un dolor de sordo a agudo debajo de la parte delantera de la planta, muchas veces bajo la segunda y la tercera cabeza de los metatarsianos. El neuroma de Morton produce ardor, hormigueo o entumecimiento entre los dedos, casi siempre entre el tercero y el cuarto. Apretar la parte delantera del pie, lo que se llama la prueba de Mulder, puede reproducir los síntomas del neuroma y a veces produce un chasquido audible cuando el nervio se desliza entre los metatarsianos.',
-        'La distinción importa porque los enfoques son diferentes. La metatarsalgia responde a descargar las cabezas de los metatarsianos y fortalecer los dedos. El neuroma de Morton responde a descomprimir el nervio, lo que significa zapatos más anchos, almohadillas y a veces inyecciones o cirugía. Los ejercicios ayudan con la comodidad de la parte delantera del pie en los dos casos, pero ninguna afección tiene evidencia fuerte de ensayos específicos sobre ejercicio. Mira [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) para más sobre el panorama más amplio de la metatarsalgia.',
+        'La diferencia clave es qué duele y cómo:',
+        {
+          list: [
+            'La **metatarsalgia** suele ser un dolor de sordo a agudo debajo de la parte delantera de la planta, muchas veces bajo la segunda y la tercera cabeza de los metatarsianos.',
+            'El **neuroma de Morton** produce ardor, hormigueo o entumecimiento entre los dedos, casi siempre entre el tercero y el cuarto. Apretar la parte delantera del pie, lo que se llama la prueba de Mulder, puede reproducir los síntomas del neuroma y a veces produce un chasquido audible cuando el nervio se desliza entre los metatarsianos.',
+          ],
+        },
+        'La distinción importa porque los enfoques son diferentes. La metatarsalgia responde a descargar las cabezas de los metatarsianos y fortalecer los dedos. El neuroma de Morton responde a descomprimir el nervio, lo que significa zapatos más anchos, almohadillas y a veces inyecciones o cirugía.',
+        'Los ejercicios ayudan con la comodidad de la parte delantera del pie en los dos casos, pero ninguna afección tiene evidencia fuerte de ensayos específicos sobre ejercicio. Mira [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) para más sobre el panorama más amplio de la metatarsalgia.',
       ],
     },
     {
@@ -54,7 +61,7 @@ export const MORTONS_ES: Guide = {
       paragraphs: [
         'Los zapatos más anchos con tacón bajo y una almohadilla metatarsal son el primer paso más recomendado para el neuroma de Morton. La almohadilla se coloca justo detrás de las cabezas de los metatarsianos, no directamente debajo, para levantar el cuerpo de los metatarsianos y separarlos, reduciendo la compresión sobre el nervio.',
         'El calzado bien ajustado con puntera ancha, tacón bajo y almohadilla metatarsal se evaluó en dos estudios incluidos en una revisión sistemática de 2019. Combinando esos dos estudios, el calzado y la almohadilla tuvieron éxito en cerca del 32\u00A0por ciento de las personas a un seguimiento promedio de cuatro meses y medio. Sin embargo, un ensayo aleatorizado que comparó el calzado y la almohadilla con la inyección de corticosteroides encontró que el grupo de inyección tenía seis veces más probabilidades de éxito a los seis meses.',
-        'Lo que hay que llevarse: los cambios de calzado y las almohadillas son de bajo riesgo y vale la pena probarlos primero. Funcionan para algunas personas y para otras no. Si no han ayudado después de cuatro a seis semanas, el siguiente paso suele ser consultar a un profesional de la salud para hablar de inyecciones o más estudios de imagen.',
+        'Lo que hay que llevarse: **los cambios de calzado y las almohadillas son de bajo riesgo y vale la pena probarlos primero.** Funcionan para algunas personas y para otras no. Si no han ayudado después de cuatro a seis semanas, el siguiente paso suele ser consultar a un profesional de la salud para hablar de inyecciones o más estudios de imagen.',
         'La posición importa. Una almohadilla demasiado adelante, directamente debajo de la cabeza del metatarsiano, puede aumentar la presión en vez de aliviarla. Las almohadillas metatarsales adhesivas de farmacia son lo bastante baratas para probar, pero colocarlas bien requiere algo de experimentación. Un podólogo puede hacer una ortesis a la medida si las almohadillas de venta libre no funcionan.',
       ],
       cites: [CITE.matthewsSR],
@@ -63,9 +70,18 @@ export const MORTONS_ES: Guide = {
       h2: '¿Qué dice la evidencia sobre las inyecciones?',
       keyFact: 'En la revisión Cochrane de 2024, la inyección de corticosteroides guiada por ecografía probablemente mejoró el dolor más que la inyección sin guía, con evidencia de certeza moderada a los 2, 6 y 12 meses (Matthews y colegas, 2024).',
       paragraphs: [
-        'La inyección de corticosteroides es el enfoque invasivo no quirúrgico más estudiado para el neuroma de Morton. La revisión Cochrane de 2024 incluyó seis ensayos aleatorizados con 373\u00A0participantes. Encontró evidencia de baja certeza de que agregar un corticosteroide a un anestésico local podría no hacer diferencia en el dolor o la función a los tres a seis meses, comparado con la inyección de anestésico local solo. Los autores de la Cochrane señalaron que agregar un corticosteroide podría aumentar los eventos adversos, incluyendo atrofia de la almohadilla grasa y cambios en la piel.',
+        'La inyección de corticosteroides es el enfoque invasivo no quirúrgico más estudiado para el neuroma de Morton.',
+        'La revisión Cochrane de 2024 incluyó seis ensayos aleatorizados con 373\u00A0participantes. Encontró evidencia de baja certeza de que agregar un corticosteroide a un anestésico local podría no hacer diferencia en el dolor o la función a los tres a seis meses, comparado con la inyección de anestésico local solo. Los autores de la Cochrane señalaron que agregar un corticosteroide podría aumentar los eventos adversos, incluyendo atrofia de la almohadilla grasa y cambios en la piel.',
         'La inyección guiada por ecografía probablemente mejora el dolor comparada con la inyección sin guía, con diferencias clínicamente significativas a los 2, 6 y 12\u00A0meses en los estudios incluidos. La evidencia se calificó como de certeza moderada.',
-        'Otros tipos de inyección se han estudiado, incluyendo inyecciones esclerosantes con alcohol, ablación por radiofrecuencia y crioterapia. La revisión sistemática de 2019 encontró que la inyección de corticosteroides y la manipulación tenían la evidencia más fuerte para la reducción del dolor a corto plazo, pero pidió más ensayos aleatorizados de alta calidad. La revisión Cochrane de 2024 llegó a la misma conclusión: después de 20\u00A0años más de investigación desde la primera revisión Cochrane en 2004, todavía no hay evidencia de alta calidad suficiente para sacar conclusiones firmes sobre ninguna intervención individual.',
+        'Otros tipos de inyección se han estudiado, incluyendo:',
+        {
+          list: [
+            'Inyecciones esclerosantes con alcohol.',
+            'Ablación por radiofrecuencia.',
+            'Crioterapia.',
+          ],
+        },
+        'La revisión sistemática de 2019 encontró que la inyección de corticosteroides y la manipulación tenían la evidencia más fuerte para la reducción del dolor a corto plazo, pero pidió más ensayos aleatorizados de alta calidad. La revisión Cochrane de 2024 llegó a la misma conclusión: después de 20\u00A0años más de investigación desde la primera revisión Cochrane en 2004, **todavía no hay evidencia de alta calidad suficiente para sacar conclusiones firmes sobre ninguna intervención individual.**',
         'Esto no significa que las inyecciones no sirvan. Significa que la evidencia no es lo bastante fuerte para declarar un enfoque claramente mejor que otro. Un profesional de la salud puede discutir las opciones, los riesgos y qué esperar. La inyección de corticosteroides da buen alivio a corto plazo para muchas personas, pero las inyecciones repetidas conllevan riesgos para el tejido circundante.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -75,15 +91,16 @@ export const MORTONS_ES: Guide = {
       paragraphs: [
         'La cirugía suele considerarse cuando el manejo conservador, es decir, cambios de calzado, almohadillas y una o dos rondas de inyecciones, no ha dado alivio duradero. El procedimiento más común es la neurectomía, la extirpación quirúrgica del segmento engrosado del nervio. Es eficaz para muchas personas, pero deja un entumecimiento permanente entre los dedos afectados, porque el nervio que llevaba la sensibilidad ya no está.',
         'Otras opciones quirúrgicas incluyen la descompresión del nervio (liberar el ligamento metatarsal transverso sin quitar el nervio) y la osteotomía metatarsal (remodelar el hueso para darle más espacio al nervio). La revisión Cochrane de 2024 encontró evidencia de baja certeza para las comparaciones quirúrgicas, sin un ganador claro entre la neurectomía por incisión plantar y la dorsal en cuanto a satisfacción del paciente o eventos adversos.',
-        'La cirugía no es un enfoque de primera línea. La mayoría de los profesionales de la salud recomiendan un intento estructurado de manejo conservador durante varios meses antes de considerarla. Si estás en ese punto, un especialista en pie y tobillo puede explicarte las opciones quirúrgicas y qué esperar de la recuperación.',
+        '**La cirugía no es un enfoque de primera línea.** La mayoría de los profesionales de la salud recomiendan un intento estructurado de manejo conservador durante varios meses antes de considerarla. Si estás en ese punto, un especialista en pie y tobillo puede explicarte las opciones quirúrgicas y qué esperar de la recuperación.',
       ],
       cites: [CITE.matthewsCochrane],
     },
     {
       h2: '¿El ejercicio ayuda con el neuroma de Morton?',
       paragraphs: [
-        'La respuesta honesta es que ningún ensayo ha probado el ejercicio para el neuroma de Morton. El ejercicio no actúa sobre el nervio directamente. No puede encoger un neuroma ni descomprimir el espacio intermetatarsiano como lo hace un zapato más ancho o una almohadilla metatarsal.',
-        'Lo que el ejercicio puede hacer es mejorar la comodidad general de la parte delantera del pie y el reparto de la carga. Fortalecer los músculos intrínsecos del pie, los músculos pequeños que están entre y debajo de los metatarsianos, puede ayudar a que las cabezas de los metatarsianos se mantengan en una posición más separada al caminar. El estiramiento de pantorrilla reduce la sobrecarga de la parte delantera del pie al mejorar la dorsiflexión del tobillo. Estos son ejercicios de comodidad y de manejo de la carga, no intervenciones específicas para el neuroma. Lo decimos abiertamente porque exagerar el papel del ejercicio aquí no sería honesto.',
+        'La respuesta honesta es que **ningún ensayo ha probado el ejercicio para el neuroma de Morton.** El ejercicio no actúa sobre el nervio directamente. No puede encoger un neuroma ni descomprimir el espacio intermetatarsiano como lo hace un zapato más ancho o una almohadilla metatarsal.',
+        'Lo que el ejercicio puede hacer es mejorar la comodidad general de la parte delantera del pie y el reparto de la carga. Fortalecer los músculos intrínsecos del pie, los músculos pequeños que están entre y debajo de los metatarsianos, puede ayudar a que las cabezas de los metatarsianos se mantengan en una posición más separada al caminar. El estiramiento de pantorrilla reduce la sobrecarga de la parte delantera del pie al mejorar la dorsiflexión del tobillo.',
+        'Estos son ejercicios de comodidad y de manejo de la carga, no intervenciones específicas para el neuroma. Lo decimos abiertamente porque exagerar el papel del ejercicio aquí no sería honesto.',
         'Si tu dolor en la parte delantera del pie va más allá del neuroma, es decir, también tienes metatarsalgia general o rigidez de pantorrilla, los ejercicios de la página de [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) son relevantes. Los ejercicios de abajo vienen del mismo grupo pero se listan aquí por conveniencia.',
       ],
       exercises: [
@@ -138,7 +155,15 @@ export const MORTONS_ES: Guide = {
       h2: 'Lo que la evidencia dice y lo que no',
       paragraphs: [
         'La revisión Cochrane de 2024 es el resumen más riguroso disponible. Incluyó seis ensayos aleatorizados con 373\u00A0participantes. Sus conclusiones: hay evidencia de certeza baja a moderada para la mayoría de las intervenciones del neuroma de Morton, y ninguna intervención individual tiene respaldo fuerte de alta certeza. Después de 20\u00A0años más de investigación desde la revisión Cochrane original de 2004, los autores llegaron a la misma conclusión básica.',
-        'Eso no significa que nada funcione. Los cambios de calzado y las almohadillas metatarsales ayudan a cerca de 3\u00A0de cada 10\u00A0personas. La inyección de corticosteroides guiada por ecografía probablemente mejora el dolor comparada con la inyección sin guía. La neurectomía alivia el dolor para muchas personas, pero tiene la contrapartida del entumecimiento permanente. Lo que falta es un primer paso claro respaldado por evidencia fuerte.',
+        'Eso no significa que nada funcione:',
+        {
+          list: [
+            'Los cambios de calzado y las almohadillas metatarsales ayudan a cerca de 3\u00A0de cada 10\u00A0personas.',
+            'La inyección de corticosteroides guiada por ecografía probablemente mejora el dolor comparada con la inyección sin guía.',
+            'La neurectomía alivia el dolor para muchas personas, pero tiene la contrapartida del entumecimiento permanente.',
+          ],
+        },
+        '**Lo que falta es un primer paso claro respaldado por evidencia fuerte.**',
         'Para el ejercicio, el vacío es todavía más grande. Ningún ensayo ha probado el ejercicio para el neuroma de Morton. Los ejercicios de esta página son medidas de comodidad y de manejo de la carga, no intervenciones específicas para el neuroma. Si el ejercicio forma parte de tu plan, debería ir junto a los cambios de calzado y la opinión de un profesional de la salud, no reemplazarlos.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],

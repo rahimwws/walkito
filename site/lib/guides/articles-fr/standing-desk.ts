@@ -37,7 +37,14 @@ export const STANDING_DESK_FR: Guide = {
       h2: 'Pourquoi a-t-on mal aux pieds avec un bureau debout\u00A0?',
       keyFact: 'Une revue systématique de 2017 sur 25\u00A0études a trouvé que les symptômes au bas du dos devenaient cliniquement significatifs après environ 71\u00A0minutes debout en général, mais seulement 42\u00A0minutes chez les personnes sujettes à la douleur debout (Coenen et coll., 2017).',
       paragraphs: [
-        'La douleur aux pieds au bureau debout vient de la même raison que toute station debout prolongée\u00A0: vos pieds, vos mollets et le bas de vos jambes portent une charge statique sans le répit que donnent la marche ou la position assise. Quand vous restez debout immobile, la gravité fait stagner le sang dans le bas des jambes, les muscles du mollet gardent la même position sans se contracter ni se relâcher, et le fascia plantaire sous la voûte absorbe une charge constante.',
+        'La douleur aux pieds au bureau debout vient de la même raison que toute station debout prolongée\u00A0: vos pieds, vos mollets et le bas de vos jambes portent une charge statique sans le répit que donnent la marche ou la position assise. Quand vous restez debout immobile\u00A0:',
+        {
+          list: [
+            'La gravité fait stagner le sang dans le bas des jambes.',
+            'Les muscles du mollet gardent la même position sans se contracter ni se relâcher.',
+            'Le fascia plantaire sous la voûte absorbe une charge constante.',
+          ],
+        },
         'Une revue systématique de 2017 sur 25\u00A0études en laboratoire a regroupé les données de 591\u00A0participants et a trouvé que des symptômes cliniquement significatifs au bas du dos apparaissaient après environ 71\u00A0minutes debout sans interruption dans la population générale, mais seulement 42\u00A0minutes chez les personnes qui ont tendance à avoir mal debout. Pour les symptômes des membres inférieurs, le tableau était proche. Les auteurs recommandaient un seuil de 40\u00A0minutes comme limite pratique avant de couper le temps debout.',
         'Une revue de 2015 de la littérature en santé au travail a confirmé le lien entre station debout prolongée et gêne musculo-squelettique, fatigue et douleurs dans les jambes, dans de nombreux types de travail debout. La revue a aussi trouvé que la charge cardiovasculaire et le gonflement des jambes augmentent avec la durée de la station debout.',
       ],
@@ -48,7 +55,7 @@ export const STANDING_DESK_FR: Guide = {
       keyFact: 'Une déclaration d’experts de 2015 recommande d’atteindre progressivement 2\u00A0heures par jour de station debout et d’activité légère, puis à terme 4\u00A0heures, réparties en périodes courtes (Buckley et coll., 2015).',
       paragraphs: [
         'Il n’y a pas de réponse unique qui convienne à tout le monde, mais la recherche resserre la fourchette. Une déclaration d’experts de 2015, commandée par Public Health England et l’Active Working Community Interest Company, recommandait aux personnes qui travaillent à un bureau d’atteindre d’abord progressivement 2\u00A0heures par jour de station debout et d’activité légère pendant les heures de travail, puis à terme 4\u00A0heures par jour. La déclaration précisait que la station debout devait être répartie en périodes courtes, pas faite d’une traite.',
-        'La revue de 2017 sur les études en laboratoire suggère que 40\u00A0minutes debout en continu est le moment où les symptômes commencent à devenir cliniquement significatifs. En mettant les deux ensemble, un point de départ pratique est de rester debout 20 à 30\u00A0minutes, assis 20 à 30\u00A0minutes, et de recommencer tout au long de la journée, en ajustant à mesure que votre corps s’adapte.',
+        'La revue de 2017 sur les études en laboratoire suggère que 40\u00A0minutes debout en continu est le moment où les symptômes commencent à devenir cliniquement significatifs. En mettant les deux ensemble, **un point de départ pratique est de rester debout 20 à 30\u00A0minutes, assis 20 à 30\u00A0minutes, et de recommencer tout au long de la journée**, en ajustant à mesure que votre corps s’adapte.',
         'Une revue systématique de 2014 sur 14\u00A0études sur les postes assis-debout a trouvé des données suffisantes pour dire qu’ils réduisent la gêne au bas du dos, sans baisse de productivité. La revue n’a pas trouvé de ratio assis-debout optimal, et les auteurs notaient que le meilleur ratio varie sans doute selon les personnes et les métiers. Ce que soutiennent les données, c’est l’alternance, pas une règle fixe.',
       ],
       sourceNote:
@@ -60,7 +67,7 @@ export const STANDING_DESK_FR: Guide = {
       paragraphs: [
         'Les tapis anti-fatigue ont quelques données derrière eux. La revue de 2015 en santé au travail cite les tapis de sol parmi les interventions qui ont des données pour réduire la gêne pendant la station debout prolongée. Une étude croisée sur 38\u00A0membres d’équipes chirurgicales a trouvé que se tenir sur un tapis anti-fatigue en caoutchouc de 15\u00A0mm pendant les interventions donnait des scores de douleur et de fatigue nettement plus bas que sur un sol standard.',
         'Le mécanisme est simple\u00A0: une surface plus souple laisse les pieds faire de petits ajustements et déplace une partie de la charge qu’un sol dur concentre sur le talon et l’avant-pied. Une revue systématique de 2018 sur les matériaux amortissants pendant la station debout prolongée notait des résultats constants en faveur d’une gêne réduite, même si les études étaient petites et que le bénéfice portait sur le confort, pas sur la prévention d’un problème précis.',
-        'Un tapis ne réglera pas à lui seul la douleur aux pieds, mais c’est l’une des choses les plus simples à essayer. Si vous avez déjà un bureau debout et que vos pieds font mal, un tapis associé à des périodes debout plus courtes et aux exercices de cette page couvre l’essentiel.',
+        '**Un tapis ne réglera pas à lui seul la douleur aux pieds, mais c’est l’une des choses les plus simples à essayer.** Si vous avez déjà un bureau debout et que vos pieds font mal, un tapis associé à des périodes debout plus courtes et aux exercices de cette page couvre l’essentiel.',
       ],
       cites: [CITE.waters],
     },
@@ -68,7 +75,8 @@ export const STANDING_DESK_FR: Guide = {
       h2: 'Quelles chaussures porter avec un bureau debout\u00A0?',
       paragraphs: [
         'Si vous travaillez à la maison, vous êtes peut-être debout à votre bureau en chaussettes ou en chaussons. Cela fait beaucoup d’heures sans amorti ni soutien de la voûte. La recommandation de 2023 sur la douleur au talon donne aux orthèses seules la note B contre pour la fasciite plantaire, ce qui veut dire que les données penchent plutôt contre leur usage comme seule solution, mais cela concerne les semelles isolées, pas la question de savoir si une chaussure vaut mieux que pas de chaussure.',
-        'Une approche raisonnable\u00A0: portez une chaussure avec un peu d’amorti et une semelle intérieure qui maintient le pied quand vous êtes debout, même à la maison. Vous n’avez pas besoin d’une chaussure spéciale pour bureau debout. Si vous alternez entre debout et assis, vous pouvez enlever vos chaussures pendant les périodes assises. Les exercices de cette page ciblent directement les tissus. Les chaussures et les tapis aident au confort quand vous êtes debout, mais ils ne remplacent pas les étirements ni le renforcement.',
+        'Une approche raisonnable\u00A0: **portez une chaussure avec un peu d’amorti et une semelle intérieure qui maintient le pied quand vous êtes debout, même à la maison.** Vous n’avez pas besoin d’une chaussure spéciale pour bureau debout. Si vous alternez entre debout et assis, vous pouvez enlever vos chaussures pendant les périodes assises.',
+        'Les exercices de cette page ciblent directement les tissus. Les chaussures et les tapis aident au confort quand vous êtes debout, mais ils ne remplacent pas les étirements ni le renforcement.',
       ],
       cites: [CITE.guideline],
     },
@@ -179,9 +187,17 @@ export const STANDING_DESK_FR: Guide = {
     {
       h2: 'Comment passer au bureau debout sans avoir mal aux pieds\u00A0?',
       paragraphs: [
-        'Commencez avec moins de station debout que vous ne le pensez nécessaire. La déclaration d’experts de 2015 recommande d’atteindre progressivement 2\u00A0heures de station debout et d’activité légère par jour, pas de commencer là. Si vous débutez, commencez par 15 à 20\u00A0minutes debout par heure et augmentez peu à peu sur quelques semaines.',
-        'Une première semaine pratique\u00A0: 15\u00A0minutes debout, 45\u00A0minutes assis, à répéter tout au long de la journée. La deuxième semaine, passez à 20\u00A0minutes debout et 40 assis. Vers la troisième ou quatrième semaine, essayez 30 et 30. Écoutez vos pieds et le bas de votre dos. Si la gêne s’installe, asseyez-vous plus tôt au lieu de forcer.',
-        'Ajoutez un tapis dès le début si vous en avez un. Portez des chaussures avec un peu d’amorti, même à la maison. Faites les étirements du mollet du tableau ci-dessus au moins une fois par jour. Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-infirmieres/).',
+        '**Commencez avec moins de station debout que vous ne le pensez nécessaire.** La déclaration d’experts de 2015 recommande d’atteindre progressivement 2\u00A0heures de station debout et d’activité légère par jour, pas de commencer là. Si vous débutez, commencez par 15 à 20\u00A0minutes debout par heure et augmentez peu à peu sur quelques semaines\u00A0:',
+        {
+          list: [
+            '**Une première semaine pratique\u00A0:** 15\u00A0minutes debout, 45\u00A0minutes assis, à répéter tout au long de la journée.',
+            '**La deuxième semaine\u00A0:** passez à 20\u00A0minutes debout et 40 assis.',
+            '**Vers la troisième ou quatrième semaine\u00A0:** essayez 30 et 30.',
+          ],
+        },
+        'Écoutez vos pieds et le bas de votre dos. Si la gêne s’installe, asseyez-vous plus tôt au lieu de forcer.',
+        'Ajoutez un tapis dès le début si vous en avez un. Portez des chaussures avec un peu d’amorti, même à la maison. Faites les étirements du mollet du tableau ci-dessus au moins une fois par jour.',
+        'Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-infirmieres/).',
       ],
       cites: [CITE.buckley],
     },

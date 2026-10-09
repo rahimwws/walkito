@@ -57,7 +57,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
       keyFact: 'Em uma revisão de 254\u00A0pessoas com fascite plantar, cerca de um quarto tinha os dois músculos da panturrilha tensos, o gastrocnêmio e o sóleo (Patel e DiGiovanni, 2011).',
       paragraphs: [
         'O gastrocnêmio, o músculo mais superficial da panturrilha, cruza o joelho e o tornozelo. Quando você estica o joelho e inclina para a frente, é ele que recebe o alongamento. O sóleo fica mais fundo e cruza só o tornozelo. Com o joelho esticado, o gastrocnêmio faz todo o trabalho e o sóleo quase não se mexe.',
-        'Dobrar o joelho deixa o gastrocnêmio frouxo, e ele para de resistir. Agora a dorsiflexão do tornozelo puxa o sóleo. Esse é todo o sentido da versão com o joelho dobrado. Não é uma adaptação. É um exercício separado para um músculo separado.',
+        'Dobrar o joelho deixa o gastrocnêmio frouxo, e ele para de resistir. Agora a dorsiflexão do tornozelo puxa o sóleo. Esse é todo o sentido da versão com o joelho dobrado. Não é uma adaptação. **É um exercício separado para um músculo separado.**',
         'Em uma revisão de 254\u00A0pessoas com fascite plantar, cerca de um quarto tinha os dois músculos tensos. Só o alongamento com o joelho esticado não teria alcançado a parte dessa tensão que estava no sóleo.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -67,16 +67,20 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
       paragraphs: [
         'Se você sente o alongamento em cima na panturrilha, atrás do joelho, o joelho está esticado demais e o gastrocnêmio está assumindo. Dobre mais o joelho. O alongamento deve descer para o terço de baixo da panturrilha ou logo acima do calcanhar.',
         'Se você não sente nada, tente aproximar o pé de trás da parede e dobrar mais o joelho. Algumas pessoas precisam de uma distância menor entre os pés para colocar carga no sóleo.',
-        'Se o alongamento fica no próprio tendão de Aquiles e parece uma dor aguda em vez de um puxão, alivie. Um alongamento deve ser firme e constante, não dolorido. Dor no tendão durante o alongamento é diferente de panturrilha tensa e pode indicar [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
+        'Se o alongamento fica no próprio tendão de Aquiles e parece uma dor aguda em vez de um puxão, alivie. **Um alongamento deve ser firme e constante, não dolorido.** Dor no tendão durante o alongamento é diferente de panturrilha tensa e pode indicar [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
     },
     {
       h2: 'Quais são os erros comuns no alongamento do sóleo?',
       paragraphs: [
-        'Não dobrar o joelho o bastante. Uma dobra leve não basta para soltar o gastrocnêmio. Você precisa de uma dobra de verdade, o suficiente para ver o joelho de trás indo para a frente por cima dos dedos.',
-        'Deixar o calcanhar levantar. No momento em que o calcanhar sai do chão, o alongamento some. Pressione o calcanhar para baixo e deixe o joelho ir para a frente por cima do pé.',
-        'Fazer com pressa. Segurar 5\u00A0segundos é pouco para um alongamento sustentado ter efeito no comprimento do tecido. Segure por 30\u00A0segundos e tente relaxar no alongamento em vez de empurrar mais.',
-        'Pular porque o alongamento com o joelho esticado pareceu suficiente. São músculos diferentes. Se os dois estão tensos, você precisa dos dois alongamentos.',
+        {
+          list: [
+            '**Não dobrar o joelho o bastante.** Uma dobra leve não basta para soltar o gastrocnêmio. Você precisa de uma dobra de verdade, o suficiente para ver o joelho de trás indo para a frente por cima dos dedos.',
+            '**Deixar o calcanhar levantar.** No momento em que o calcanhar sai do chão, o alongamento some. Pressione o calcanhar para baixo e deixe o joelho ir para a frente por cima do pé.',
+            '**Fazer com pressa.** Segurar 5\u00A0segundos é pouco para um alongamento sustentado ter efeito no comprimento do tecido. Segure por 30\u00A0segundos e tente relaxar no alongamento em vez de empurrar mais.',
+            '**Pular porque o alongamento com o joelho esticado pareceu suficiente.** São músculos diferentes. Se os dois estão tensos, você precisa dos dois alongamentos.',
+          ],
+        },
       ],
     },
     {

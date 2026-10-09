@@ -29,8 +29,9 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Hilft ein Massageball bei Plantarfasziitis?',
       keyFact: 'In einer kleinen Studie mit 14\u00A0Personen, die mindestens dreimal am Tag einen Massageball rollen sollten, verbesserten sich die Fußwerte über drei Monate nicht signifikant (Ryu und Kollegen, 2024).',
       paragraphs: [
-        'Ein Massageball hilft manchen Menschen mit Plantarfasziitis, sich für kurze Zeit lockerer und weniger wund zu fühlen, aber es gibt kaum Belege, dass Rollen allein den Schmerz über Monate verändert. Plantarfasziitis ist eine Reizung der Plantarfaszie, des kräftigen Bands unter der Sohle, das von der Ferse bis zu den Zehen verläuft. Beim Rollen drückst du auf dieses Band und auf die kleinen Muskeln drumherum.',
-        'Die direkten Belege sind dünn. In einer Studie von 2024 aus Korea sollten 14\u00A0Personen, deren Fersenschmerzen seit mindestens sechs Monaten bestanden, mindestens dreimal am Tag einen Massageball unter der Sohle rollen, jedes Mal länger als fünf Minuten. Über drei Monate verbesserte sich die Gruppe insgesamt in einem Fragebogen zu Fußschmerzen nicht signifikant. Die Studie war winzig und hatte keine Gruppe ohne Ball. Sie kann also nicht beweisen, dass der Ball nichts bringt, nur dass niemand gezeigt hat, dass er viel bringt.',
+        'Ein Massageball hilft manchen Menschen mit Plantarfasziitis, sich für kurze Zeit lockerer und weniger wund zu fühlen, aber **es gibt kaum Belege, dass Rollen allein den Schmerz über Monate verändert.** Plantarfasziitis ist eine Reizung der Plantarfaszie, des kräftigen Bands unter der Sohle, das von der Ferse bis zu den Zehen verläuft. Beim Rollen drückst du auf dieses Band und auf die kleinen Muskeln drumherum.',
+        'Die direkten Belege sind dünn. In einer Studie von 2024 aus Korea sollten 14\u00A0Personen, deren Fersenschmerzen seit mindestens sechs Monaten bestanden, mindestens dreimal am Tag einen Massageball unter der Sohle rollen, jedes Mal länger als fünf Minuten. Über drei Monate verbesserte sich die Gruppe insgesamt in einem Fragebogen zu Fußschmerzen nicht signifikant.',
+        'Die Studie war winzig und hatte keine Gruppe ohne Ball. Sie kann also nicht beweisen, dass der Ball nichts bringt, nur dass niemand gezeigt hat, dass er viel bringt.',
         'Deshalb steht das Rollen auf dieser Seite im Erholungsfach, neben den Übungen mit stärkerem Rückhalt: Dehnen von Plantarfaszie und Wade (Bewertung A in der Leitlinie) und Wadenkrafttraining (Bewertung B).',
       ],
       figure: {
@@ -45,9 +46,16 @@ export const MASSAGE_BALL_DE: Guide = {
       keyFact: 'In einer Studie mit 66\u00A0Personen senkte myofasziale Release-Technik durch Therapeuten die Werte im Foot Function Index nach einem Monat um 72,4\u00A0%, gegenüber 7,4\u00A0% mit einem Scheinverfahren, und nach drei Monaten um 60,6\u00A0% (Ajimsha und Kollegen, 2014).',
       paragraphs: [
         'Massage durch eine geschulte Fachperson hat bei Plantarfasziitis ordentliche Belege. Massage, die du selbst mit einem Ball machst, hat sehr wenige.',
-        '**Arbeit mit den Händen durch eine Fachperson.** Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie die Bewertung **A**, ihre beste. Sie versteht darunter geschulte Arbeit an Gelenken und Weichteilen von Bein und Fuß, etwa myofasziale Release-Technik (langsamer, anhaltender Druck und Zug auf das Gewebe). In einer Studie von 2014 mit 66\u00A0Personen gab ein Therapeut über einen Monat 12\u00A0Sitzungen myofasziale Release-Technik an Wade und Sohle. Die Werte im Foot Function Index, einem Fragebogen zu Schmerz und Alltagsfunktion, sanken um 72,4\u00A0%, gegenüber 7,4\u00A0% in einer Gruppe mit Schein-Ultraschall. Nach drei Monaten lag der Rückgang noch bei 60,6\u00A0%. Eine Pilotstudie von 2014 zur Wadenmassage fand einen kleineren, kurzfristigen Gewinn (mehr dazu unten im Abschnitt zur Wade).',
+        '**Arbeit mit den Händen durch eine Fachperson.** Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie die Bewertung **A**, ihre beste. Sie versteht darunter geschulte Arbeit an Gelenken und Weichteilen von Bein und Fuß, etwa myofasziale Release-Technik (langsamer, anhaltender Druck und Zug auf das Gewebe).',
+        'In einer Studie von 2014 mit 66\u00A0Personen gab ein Therapeut über einen Monat 12\u00A0Sitzungen myofasziale Release-Technik an Wade und Sohle. Die Werte im Foot Function Index, einem Fragebogen zu Schmerz und Alltagsfunktion, sanken um 72,4\u00A0%, gegenüber 7,4\u00A0% in einer Gruppe mit Schein-Ultraschall. Nach drei Monaten lag der Rückgang noch bei 60,6\u00A0%. Eine Pilotstudie von 2014 zur Wadenmassage fand einen kleineren, kurzfristigen Gewinn (mehr dazu unten im Abschnitt zur Wade).',
         'Eine Übersichtsarbeit von 2018 über 7\u00A0Studien fand, dass zusätzliche manuelle Therapie in 6 davon die Funktion verbesserte, beim Schmerz aber nur in 2 von 6 klar besser abschnitt als der Vergleich. Die Autoren raten, sie zusammen mit Dehnen und Kräftigen einzusetzen.',
-        '**Massage, die du selbst machst.** Nur wenige Studien testen Selbstmassage, und jede verbindet sie mit Übungen oder misst sie über wenige Minuten. In einer Studie von 2021 mit 50\u00A0Personen senkte eine Einheit mit der Faszienrolle an Wade und Sohle den Schmerz um etwa 3\u00A0Punkte auf einer 10-cm-Skala, gegenüber etwa 2,6 nach einer Einheit Dehnen, und der Unterschied zwischen den Gruppen war statistisch nicht signifikant. Gemessen wurde direkt nach der Einheit, ohne Nachbeobachtung. In einer Studie von 2025 mit 64\u00A0Personen senkte ein angeleitetes Programm aus Kräftigen, Dehnen und 10\u00A0Minuten Selbstmassage mit einem Massagestab, dreimal pro Woche über einen Monat, den Schmerz um 2,5\u00A0Punkte stärker als ein Merkblatt zur Selbsthilfe, und der Gewinn hielt einen Monat später noch an. Weil die Massage zusammen mit Übungen kam, ist ihr eigener Anteil unbekannt.',
+        '**Massage, die du selbst machst.** Nur wenige Studien testen Selbstmassage, und jede verbindet sie mit Übungen oder misst sie über wenige Minuten:',
+        {
+          list: [
+            '**Studie von 2021 mit 50\u00A0Personen:** Eine Einheit mit der Faszienrolle an Wade und Sohle den Schmerz um etwa 3\u00A0Punkte auf einer 10-cm-Skala, gegenüber etwa 2,6 nach einer Einheit Dehnen, und der Unterschied zwischen den Gruppen war statistisch nicht signifikant. Gemessen wurde direkt nach der Einheit, ohne Nachbeobachtung.',
+            '**Studie von 2025 mit 64\u00A0Personen:** Ein angeleitetes Programm aus Kräftigen, Dehnen und 10\u00A0Minuten Selbstmassage mit einem Massagestab, dreimal pro Woche über einen Monat, senkte den Schmerz um 2,5\u00A0Punkte stärker als ein Merkblatt zur Selbsthilfe, und der Gewinn hielt einen Monat später noch an. Weil die Massage zusammen mit Übungen kam, ist ihr eigener Anteil unbekannt.',
+          ],
+        },
       ],
       table: {
         caption: 'Massage bei Plantarfasziitis: wer massiert hat und was herauskam',
@@ -67,7 +75,7 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Tennisball, Lacrosseball, Igelball, Rolle oder Flasche: Was ist am besten?',
       paragraphs: [
         'Keine Studie hat Massage-Hilfsmittel bei Plantarfasziitis verglichen. Am besten ist also das, was dir festen Druck ohne stechenden Schmerz gibt. Die Tabelle unten ist eine praktische Orientierung, keine Studiendaten.',
-        'Fang weich an. Ein Tennisball verteilt den Druck und passt zu einem wunden Fuß. Wechsel nur dann zu einem Lacrosseball (ein harter Faszienball), wenn sich der Tennisball nach ein paar Einheiten nach gar nichts anfühlt. Ein Golfball bohrt sich oft direkt in die schmerzende Stelle an der Ferse. Ein Igelball bringt ein zusätzliches Gefühl auf der Haut, aber es gibt keine Belege, dass die Noppen tiefer wirken.',
+        '**Fang weich an.** Ein Tennisball verteilt den Druck und passt zu einem wunden Fuß. Wechsel nur dann zu einem Lacrosseball (ein harter Faszienball), wenn sich der Tennisball nach ein paar Einheiten nach gar nichts anfühlt. Ein Golfball bohrt sich oft direkt in die schmerzende Stelle an der Ferse. Ein Igelball bringt ein zusätzliches Gefühl auf der Haut, aber es gibt keine Belege, dass die Noppen tiefer wirken.',
       ],
       table: {
         caption: 'Massage-Hilfsmittel bei Plantarfasziitis im Vergleich (praktische Orientierung, keine Studiendaten)',
@@ -88,17 +96,34 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Hilft eine gefrorene Wasserflasche bei Plantarfasziitis?',
       keyFact: 'In einer kleinen Studie mit 30\u00A0Personen senkte ein gefrorener Tennisball zusätzlich zum Dehnen über zwei Monate den Schmerz stärker als Dehnen allein, aber wie die Teilnehmenden auf die Gruppen verteilt wurden, war unklar (Shinde und Patil, 2026).',
       paragraphs: [
-        'Eine gefrorene Wasserflasche kann sich auf einer wunden Sohle wohltuend anfühlen, aber keine Studie hat gezeigt, dass die Kälte gegenüber einer Flasche oder einem Ball bei Raumtemperatur etwas bringt. Sie drückt wie eine Rolle entlang des Gewölbes und macht die Haut eine Weile taub.',
-        'Die einzige gefundene Studie, die gefrorenes Rollen zu einem Übungsprogramm hinzufügt, ist klein und schwach. In einer Studie von 2026 mit 30\u00A0Personen machte eine Gruppe statisches Dehnen und die andere Dehnen plus gefrorenen Tennisball, zwei Monate lang. Der Schmerz sank in der Gruppe mit dem gefrorenen Ball von etwa 7,7 auf 3,5 von 10 und mit Dehnen allein von 7,6 auf 6,7. Der Bericht macht nicht klar, wie die Teilnehmenden auf die Gruppen verteilt wurden, und die Dehngruppe verbesserte sich deutlich weniger als in größeren Studien. Lies den Unterschied also mit Vorsicht. Die Leitlinie von 2023 zu Fersenschmerzen spricht zu Kälte keine Empfehlung aus.',
-        'Wenn du die Kälte magst, nutz sie mit Bedacht. Bleib bei etwa 10\u00A0Minuten, wickel eine dünne Socke um die Flasche, wenn deine Haut brennt, und lass Kälte weg, wenn du wenig Gefühl in den Füßen hast oder Raynaud. Behauptungen, eine gefrorene Flasche „lindere die Entzündung“, sind durch Studien zur Plantarfasziitis nicht gedeckt. Zur allgemeineren Frage Kälte oder Wärme siehe [Kühlen oder wärmen bei Plantarfasziitis](/de/kaelte-oder-waerme-plantarfasziitis/).',
+        'Eine gefrorene Wasserflasche kann sich auf einer wunden Sohle wohltuend anfühlen, aber **keine Studie hat gezeigt, dass die Kälte gegenüber einer Flasche oder einem Ball bei Raumtemperatur etwas bringt.** Sie drückt wie eine Rolle entlang des Gewölbes und macht die Haut eine Weile taub.',
+        'Die einzige gefundene Studie, die gefrorenes Rollen zu einem Übungsprogramm hinzufügt, ist klein und schwach. In einer Studie von 2026 mit 30\u00A0Personen machte eine Gruppe statisches Dehnen und die andere Dehnen plus gefrorenen Tennisball, zwei Monate lang. Der Schmerz sank in der Gruppe mit dem gefrorenen Ball von etwa 7,7 auf 3,5 von 10 und mit Dehnen allein von 7,6 auf 6,7.',
+        'Der Bericht macht nicht klar, wie die Teilnehmenden auf die Gruppen verteilt wurden, und die Dehngruppe verbesserte sich deutlich weniger als in größeren Studien. Lies den Unterschied also mit Vorsicht. Die Leitlinie von 2023 zu Fersenschmerzen spricht zu Kälte keine Empfehlung aus.',
+        'Wenn du die Kälte magst, nutz sie mit Bedacht:',
+        {
+          list: [
+            'Bleib bei etwa 10\u00A0Minuten.',
+            'Wickel eine dünne Socke um die Flasche, wenn deine Haut brennt.',
+            'Lass Kälte weg, wenn du wenig Gefühl in den Füßen hast oder Raynaud.',
+          ],
+        },
+        'Behauptungen, eine gefrorene Flasche „lindere die Entzündung“, sind durch Studien zur Plantarfasziitis nicht gedeckt. Zur allgemeineren Frage Kälte oder Wärme siehe [Kühlen oder wärmen bei Plantarfasziitis](/de/kaelte-oder-waerme-plantarfasziitis/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: 'Wie fest und wie lange solltest du den Fuß rollen?',
       paragraphs: [
-        'Roll mit festem, gleichmäßigem Druck, der auf einer Schmerzskala bei etwa 3 bis 5 von 10 oder darunter bleibt, etwa eine Minute pro Fuß. Eine getestete beste Dosis gibt es nicht. Fang also kurz an und nimm nur dann Zeit dazu, wenn sich dein Fuß danach besser anfühlt.',
-        'Die Studien haben sehr unterschiedliche Mengen genutzt. In der Studie mit der Faszienrolle von 2021 rollten die Teilnehmenden 45\u00A0Sekunden, pausierten 15\u00A0Sekunden und wiederholten das fünfmal. In der Massageball-Studie von 2024 sollten sie mindestens dreimal am Tag jeweils länger als fünf Minuten rollen, und die Gruppe verbesserte sich nicht signifikant. In der Studie von 2025 dauerte die Selbstmassage 10\u00A0Minuten innerhalb einer längeren Übungseinheit. Über diese Studien hinweg sah mehr Rollen nicht klar besser aus.',
+        '**Roll mit festem, gleichmäßigem Druck, der auf einer Schmerzskala bei etwa 3 bis 5 von 10 oder darunter bleibt, etwa eine Minute pro Fuß.** Eine getestete beste Dosis gibt es nicht. Fang also kurz an und nimm nur dann Zeit dazu, wenn sich dein Fuß danach besser anfühlt.',
+        'Die Studien haben sehr unterschiedliche Mengen genutzt:',
+        {
+          list: [
+            '**Studie mit der Faszienrolle von 2021:** Die Teilnehmenden rollten 45\u00A0Sekunden, pausierten 15\u00A0Sekunden und wiederholten das fünfmal.',
+            '**Massageball-Studie von 2024:** Die Teilnehmenden sollten mindestens dreimal am Tag jeweils länger als fünf Minuten rollen, und die Gruppe verbesserte sich nicht signifikant.',
+            '**Studie von 2025:** Die Selbstmassage dauerte 10\u00A0Minuten innerhalb einer längeren Übungseinheit.',
+          ],
+        },
+        'Über diese Studien hinweg sah mehr Rollen nicht klar besser aus.',
         'Walkito beginnt das Fußrollen mit 1 x 60\u00A0Sekunden, als kurze Erholungsübung an leichteren Tagen. Setz dich hin und lass das Gewicht des Beins die meiste Arbeit machen.',
       ],
       exercises: [
@@ -121,8 +146,9 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Solltest du bei Plantarfasziitis auch die Wade rollen oder massieren?',
       keyFact: 'In einer Pilotstudie mit 69\u00A0Personen verbesserte tiefe Wadenmassage mit Nervengleitübungen und Eigendehnung die Funktion stärker als Ultraschall an der Ferse mit denselben Dehnungen (Saban und Kollegen, 2014).',
       paragraphs: [
-        'Die Wade mitzunehmen, ist bei Plantarfasziitis eine sinnvolle Ergänzung, denn eine verkürzte Wade zieht an der Ferse, und die Studien mit dem größten Nutzen haben neben der Sohle auch die Wade bearbeitet. Die Wadenmuskeln gehen in die Achillessehne über, die nahe der Stelle am Fersenbein ansetzt, an der die Plantarfaszie beginnt.',
-        'In der Pilotstudie von 2014 mit 69\u00A0Personen verbesserte tiefe Massage der Wade, plus Nervengleitübungen und Eigendehnung, die Funktion stärker als Ultraschall an der Ferse mit denselben Dehnungen. In der Studie mit der Faszienrolle von 2021 rollten die Teilnehmenden auch die Wade von der Kniekehle bis zur Achillessehne, und ihre Waden wurden weniger druckempfindlich als in der Dehngruppe. Wadendehnung hat stärkeren Rückhalt als Wadenrollen: Die Leitlinie von 2023 bewertet sie mit **A**, und eine Übersichtsarbeit von 2020 fand Belege mittlerer Qualität, dass Plantarfaszien-Dehnung den Schmerz stärker linderte als Wadendehnung, und Belege sehr geringer Qualität, dass Wadendehnung besser abschnitt als Schein-Dehnung.',
+        '**Die Wade mitzunehmen, ist bei Plantarfasziitis eine sinnvolle Ergänzung**, denn eine verkürzte Wade zieht an der Ferse, und die Studien mit dem größten Nutzen haben neben der Sohle auch die Wade bearbeitet. Die Wadenmuskeln gehen in die Achillessehne über, die nahe der Stelle am Fersenbein ansetzt, an der die Plantarfaszie beginnt.',
+        'In der Pilotstudie von 2014 mit 69\u00A0Personen verbesserte tiefe Massage der Wade, plus Nervengleitübungen und Eigendehnung, die Funktion stärker als Ultraschall an der Ferse mit denselben Dehnungen. In der Studie mit der Faszienrolle von 2021 rollten die Teilnehmenden auch die Wade von der Kniekehle bis zur Achillessehne, und ihre Waden wurden weniger druckempfindlich als in der Dehngruppe.',
+        'Wadendehnung hat stärkeren Rückhalt als Wadenrollen: Die Leitlinie von 2023 bewertet sie mit **A**, und eine Übersichtsarbeit von 2020 fand Belege mittlerer Qualität, dass Plantarfaszien-Dehnung den Schmerz stärker linderte als Wadendehnung, und Belege sehr geringer Qualität, dass Wadendehnung besser abschnitt als Schein-Dehnung.',
         'Roll die Wade eine Minute auf einer Faszienrolle, wenn du das magst, und mach dann die beiden Dehnungen unten. Mehr dazu unter [Verspannte Waden](/de/verspannte-waden/).',
       ],
       exercises: [
@@ -157,7 +183,15 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Warum tut die Massage bei Plantarfasziitis weh, und kann sie es verschlimmern?',
       paragraphs: [
         'Massage bei Plantarfasziitis tut oft weh, weil das Gewebe nahe der Ferse schon empfindlich ist, und Druck auf eine empfindliche Stelle fühlt sich stechend an. Leichte Empfindlichkeit beim Rollen, die innerhalb von Minuten abklingt, ist häufig. Schmerz, der stechend ist, bis in den nächsten Morgen anhält oder einen blauen Fleck hinterlässt, heißt, dass du zu fest oder zu lange gedrückt hast.',
-        'Nimm deine ersten Schritte am nächsten Morgen als Test. Wenn diese Schritte nach einer Roll-Einheit schlimmer sind, halbier die Zeit, nimm einen weicheren Ball und lass die Ferse selbst aus. Wenn sie dann immer noch schlimmer sind, hör eine Zeit lang mit dem Rollen auf: Dehnen und Krafttraining sind wichtiger. Mehr zu diesem Muster unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
+        '**Nimm deine ersten Schritte am nächsten Morgen als Test.** Wenn diese Schritte nach einer Roll-Einheit schlimmer sind:',
+        {
+          list: [
+            'Halbier die Zeit.',
+            'Nimm einen weicheren Ball.',
+            'Lass die Ferse selbst aus.',
+          ],
+        },
+        'Wenn sie dann immer noch schlimmer sind, hör eine Zeit lang mit dem Rollen auf: Dehnen und Krafttraining sind wichtiger. Mehr zu diesem Muster unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
         'Harte Hilfsmittel bergen das größte Risiko. Golfbälle und gerillte Roller bündeln die Kraft auf eine kleine Fläche, und wer auf einem Ball steht, bringt das ganze Körpergewicht darauf. Setz dich stattdessen hin. Wenn der Schmerz mitten im Fersenpolster sitzt und sich wie eine Prellung anfühlt, kann das ein [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/) sein, und Druck darauf hilft meist nicht.',
       ],
       cites: [],
@@ -179,8 +213,17 @@ export const MASSAGE_BALL_DE: Guide = {
     {
       h2: 'Wo passt das Rollen in eine Routine bei Plantarfasziitis?',
       paragraphs: [
-        'Rollen passt am besten als kurze Ergänzung rund um die Übungen, hinter denen die Belege stehen: eine Minute Rollen, die Plantarfaszien-Dehnung vor den ersten Schritten, Wadendehnungen über den Tag und Wadenkrafttraining ein paarmal pro Woche. In einer Studie mit 48\u00A0Personen brachte langsames Fersenheben mit einem Handtuch unter den Zehen nach drei Monaten bessere Werte bei der Fußfunktion als Plantarfaszien-Dehnung, nach sechs und zwölf Monaten lagen die Gruppen aber gleichauf.',
-        'Wenn du zu einer Physiotherapeutin oder einem Physiotherapeuten gehen kannst, ist Weichteilarbeit mit den Händen die Form von Massage, hinter der die Leitlinie am deutlichsten steht. Zu Hause kannst du den Ball behalten, aber lass ihn nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) oder das [Wadenheben](/de/wadenheben-plantarfasziitis/) ersetzen.',
+        'Rollen passt am besten als kurze Ergänzung rund um die Übungen, hinter denen die Belege stehen:',
+        {
+          list: [
+            'Eine Minute Rollen.',
+            'Die Plantarfaszien-Dehnung vor den ersten Schritten.',
+            'Wadendehnungen über den Tag.',
+            'Wadenkrafttraining ein paarmal pro Woche.',
+          ],
+        },
+        'In einer Studie mit 48\u00A0Personen brachte langsames Fersenheben mit einem Handtuch unter den Zehen nach drei Monaten bessere Werte bei der Fußfunktion als Plantarfaszien-Dehnung, nach sechs und zwölf Monaten lagen die Gruppen aber gleichauf.',
+        'Wenn du zu einer Physiotherapeutin oder einem Physiotherapeuten gehen kannst, ist **Weichteilarbeit mit den Händen die Form von Massage, hinter der die Leitlinie am deutlichsten steht.** Zu Hause kannst du den Ball behalten, aber lass ihn nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) oder das [Wadenheben](/de/wadenheben-plantarfasziitis/) ersetzen.',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

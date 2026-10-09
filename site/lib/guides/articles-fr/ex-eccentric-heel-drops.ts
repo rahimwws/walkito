@@ -31,14 +31,15 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
       h2: 'Qu’est-ce qu’une descente excentrique du talon\u00A0?',
       paragraphs: [
         'Une contraction musculaire excentrique est une contraction où le muscle s’allonge sous charge. Dans une descente du talon, le mollet s’allonge pendant que vous descendez le talon sous la marche. Cette descente contrôlée est ce qui développe la capacité du tendon au fil des semaines. La phase de montée se fait sur les deux pieds, pour retirer l’effort concentrique du côté blessé.',
-        'La confusion la plus fréquente est entre une descente du talon et un étirement du mollet. Un étirement tient la position basse. Une descente du talon la traverse lentement, avec le muscle qui travaille tout du long. Rester en bas comme pour un étirement supprime la stimulation par la charge qui rend l’exercice efficace. Le bénéfice est dans la descente lente et contrôlée.',
+        'La confusion la plus fréquente est entre une descente du talon et un étirement du mollet. Un étirement tient la position basse. Une descente du talon la traverse lentement, avec le muscle qui travaille tout du long. Rester en bas comme pour un étirement supprime la stimulation par la charge qui rend l’exercice efficace. **Le bénéfice est dans la descente lente et contrôlée.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: 'Comment faire les descentes excentriques du talon\u00A0?',
       paragraphs: [
-        'Tenez-vous au bord d’une marche, l’avant des pieds sur la marche et les talons dans le vide. Montez sur les deux pieds. Transférez votre poids sur la jambe qui travaille. Descendez ce talon lentement, en environ trois secondes, en le laissant passer sous la marche. Gardez le genou tendu. Remontez en haut sur les deux pieds.',
+        'Tenez-vous au bord d’une marche, l’avant des pieds sur la marche et les talons dans le vide. Montez sur les deux pieds. Transférez votre poids sur la jambe qui travaille.',
+        'Descendez ce talon lentement, en environ trois secondes, en le laissant passer sous la marche. Gardez le genou tendu. Remontez en haut sur les deux pieds.',
         'Une descente du talon genou tendu cible le gastrocnémien, le plus gros muscle du mollet, le plus superficiel. Alfredson prescrivait aussi une version genou plié pour cibler le soléaire, le muscle profond du mollet. La version genou plié est le même mouvement, avec le genou plié à environ 30 à 45\u00A0degrés pendant la descente.',
       ],
       exercises: [
@@ -90,17 +91,29 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
       paragraphs: [
         'La tendinopathie d’Achille du corps du tendon se situe dans la partie centrale du tendon, en général 2 à 6\u00A0centimètres au-dessus de l’os du talon. Les descentes excentriques classiques au bord d’une marche conviennent ici.',
         'La tendinopathie d’Achille d’insertion est une douleur juste là où le tendon rejoint l’os. Dans une étude pilote de 2008 sur 27\u00A0personnes avec une douleur d’insertion chronique, un protocole modifié avec une charge excentrique uniquement au niveau du sol, sans descendre sous la position neutre, a donné de bons résultats dans 67\u00A0% des cas. Une flexion dorsale profonde comprime le tendon contre l’os du talon, ce qui rend les descentes profondes classiques contre-productives en cas de douleur d’insertion.',
-        'Si votre douleur se situe juste à l’arrière de l’os du talon, faites toutes les descentes du talon au sol. Ne descendez pas sous le bord de la marche. N’étirez pas de façon agressive. C’est l’adaptation la plus souvent oubliée dans les programmes pour le tendon d’Achille. Pour la page complète sur ce problème, voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/).',
+        'Si votre douleur se situe juste à l’arrière de l’os du talon\u00A0:',
+        {
+          list: [
+            'Faites toutes les descentes du talon au sol.',
+            'Ne descendez pas sous le bord de la marche.',
+            'N’étirez pas de façon agressive.',
+          ],
+        },
+        'C’est l’adaptation la plus souvent oubliée dans les programmes pour le tendon d’Achille. Pour la page complète sur ce problème, voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'Quelles sont les erreurs fréquentes avec les descentes excentriques du talon\u00A0?',
       paragraphs: [
-        'Rester en bas comme pour un étirement. Le bénéfice est dans la descente lente, pas dans le fait de rester suspendu en bas. Descendez en trois secondes, puis remontez aussitôt sur les deux pieds.',
-        'Descendre trop bas. Le talon doit descendre jusqu’à son amplitude naturelle sous la marche. Le forcer plus bas, en inclinant le pied vers l’intérieur ou l’extérieur pour gagner de l’amplitude, sollicite les tendons à l’intérieur ou à l’extérieur de la cheville. Trois à cinq centimètres sous la marche suffisent.',
-        'Aller trop vite. La vitesse supprime la charge excentrique autour de laquelle l’exercice est construit. Si vous ne pouvez pas contrôler la descente sur environ trois secondes, passez d’abord à une version sur deux pieds.',
-        'Sauter la version genou plié. La descente genou tendu cible le gastrocnémien. La version genou plié cible le soléaire. Les deux muscles se prolongent par le tendon d’Achille. Le protocole original comprend les deux.',
+        {
+          list: [
+            '**Rester en bas comme pour un étirement.** Le bénéfice est dans la descente lente, pas dans le fait de rester suspendu en bas. Descendez en trois secondes, puis remontez aussitôt sur les deux pieds.',
+            '**Descendre trop bas.** Le talon doit descendre jusqu’à son amplitude naturelle sous la marche. Le forcer plus bas, en inclinant le pied vers l’intérieur ou l’extérieur pour gagner de l’amplitude, sollicite les tendons à l’intérieur ou à l’extérieur de la cheville. Trois à cinq centimètres sous la marche suffisent.',
+            '**Aller trop vite.** La vitesse supprime la charge excentrique autour de laquelle l’exercice est construit. Si vous ne pouvez pas contrôler la descente sur environ trois secondes, passez d’abord à une version sur deux pieds.',
+            '**Sauter la version genou plié.** La descente genou tendu cible le gastrocnémien. La version genou plié cible le soléaire. Les deux muscles se prolongent par le tendon d’Achille. Le protocole original comprend les deux.',
+          ],
+        },
       ],
     },
     {

@@ -37,7 +37,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
     {
       h2: '¿Por qué te duele el talón por la noche o en reposo?',
       paragraphs: [
-        'La fascitis plantar causa dolor porque la fascia se pone rígida mientras duermes y se estira de golpe cuando te paras. Ese dolor llega al máximo en el primer paso y mejora conforme te mueves. Si te duele el talón estando acostado en la cama sin apoyar peso, normalmente hay otro mecanismo detrás.',
+        'La fascitis plantar causa dolor porque la fascia se pone rígida mientras duermes y se estira de golpe cuando te paras. Ese dolor llega al máximo en el primer paso y mejora conforme te mueves. **Si te duele el talón estando acostado en la cama sin apoyar peso, normalmente hay otro mecanismo detrás.**',
         'Una revisión de 2018 en American Family Physician lista varias causas de dolor de talón que se comportan de forma distinta a la fascitis plantar. La distinción clave: el dolor de la fascitis plantar mejora con la actividad, mientras que el dolor de las fracturas por estrés, los nervios atrapados, los tumores y las afecciones inflamatorias no sigue ese patrón.',
         'El pie también queda apuntando hacia abajo (flexión plantar) durante el sueño. Esa posición puede acortar el tendón de Aquiles y la pantorrilla, lo que a veces causa molestias en el talón. Las férulas nocturnas abordan esto manteniendo el tobillo en ángulo neutro. Pero una férula nocturna es una herramienta para la fascitis plantar, no un sustituto de la investigación de un dolor que genuinamente empeora en reposo.',
       ],
@@ -47,7 +47,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       h2: '¿Podría ser una fractura por estrés del calcáneo?',
       paragraphs: [
         'Una fractura por estrés del calcáneo, una fisura pequeña en el hueso del talón por carga repetitiva, puede producir un dolor profundo que late de noche. A diferencia de la fascitis plantar, el dolor suele empeorar con la actividad y no «entra en calor». Es común que aparezca después de un aumento repentino en la carrera, la caminata o el tiempo de pie sobre superficies duras.',
-        'La «prueba del apretón», presionar los dos lados del hueso del talón entre sí, es la señal clínica clásica. El dolor con el apretón es inusual en la fascitis plantar y común en las fracturas por estrés. Las radiografías simples suelen pasar por alto las fracturas tempranas. Normalmente se necesita una resonancia magnética o una gammagrafía ósea para confirmarla.',
+        'La «prueba del apretón», presionar los dos lados del hueso del talón entre sí, es la señal clínica clásica. **El dolor con el apretón es inusual en la fascitis plantar y común en las fracturas por estrés.** Las radiografías simples suelen pasar por alto las fracturas tempranas. Normalmente se necesita una resonancia magnética o una gammagrafía ósea para confirmarla.',
         'Una revisión de 2011 en American Family Physician señaló que las fracturas por estrés del calcáneo producen un dolor que empeora progresivamente después de un aumento de actividad o un cambio a superficies más duras para caminar. El dolor nocturno y el dolor en reposo se mencionaron entre las características que distinguen las fracturas por estrés de la fascitis.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -58,7 +58,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       paragraphs: [
         'El nervio tibial pasa por un espacio detrás del tobillo interno llamado túnel del tarso. La compresión ahí, el síndrome del túnel del tarso, causa ardor, hormigueo o entumecimiento en la planta y el talón. Tu (2018) describe el dolor del túnel del tarso como uno que normalmente empeora al estar de pie, caminar o correr, y se alivia con el reposo y la elevación. Ese patrón difiere de la fascitis plantar, pero no es lo mismo que un dolor verdaderamente en reposo, así que el túnel del tarso no siempre encaja con el patrón del que habla esta página.',
         'El nervio de Baxter es la primera rama del nervio plantar lateral, un nervio más pequeño cerca de la parte interna del talón. Cuando se comprime, produce un dolor agudo o ardiente en la parte medial del talón. El dolor suele empeorar con la actividad a lo largo del día, pero también puede aparecer en reposo. Una revisión de 2025 indica que el atrapamiento del nervio de Baxter podría representar hasta el 20\u00A0% de los casos de dolor crónico de talón (Tedeschi, 2025).',
-        'El atrapamiento de nervios se confunde con frecuencia con la fascitis plantar porque ambos causan dolor en la parte medial del talón. La diferencia es el carácter: ardor, hormigueo o entumecimiento son señales de un nervio. Los estudios de imagen y de conducción nerviosa pueden ayudar a un profesional de la salud a confirmar el diagnóstico.',
+        'El atrapamiento de nervios se confunde con frecuencia con la fascitis plantar porque ambos causan dolor en la parte medial del talón. La diferencia es el carácter: **ardor, hormigueo o entumecimiento son señales de un nervio.** Los estudios de imagen y de conducción nerviosa pueden ayudar a un profesional de la salud a confirmar el diagnóstico.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -68,7 +68,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       paragraphs: [
         'Las espondiloartropatías, un grupo de afecciones inflamatorias que incluyen la espondilitis anquilosante y la artritis psoriásica, pueden causar entesitis, inflamación donde un tendón o ligamento se une al hueso. El talón es un sitio frecuente. El dolor suele ser bilateral, puede estar en la inserción del Aquiles o bajo el talón, y va acompañado de rigidez matutina prolongada (más de 30\u00A0minutos) que mejora con el movimiento.',
         'En un seguimiento de 5 a 15\u00A0años de 174\u00A0personas con fascitis plantar, el dolor bilateral de talón fue un predictor significativo de mayor duración de los síntomas. Los autores señalaron que una enfermedad inflamatoria sistémica no reconocida podría explicar en parte ese hallazgo.',
-        'La artritis reumatoide y la gota también pueden producir dolor de talón. Si tu dolor es bilateral, si la rigidez dura más de 30\u00A0minutos cada mañana, o si hay otras articulaciones afectadas, un profesional de la salud debe evaluar si hay una causa inflamatoria.',
+        'La artritis reumatoide y la gota también pueden producir dolor de talón. **Si tu dolor es bilateral, si la rigidez dura más de 30\u00A0minutos cada mañana, o si hay otras articulaciones afectadas, un profesional de la salud debe evaluar si hay una causa inflamatoria.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -130,8 +130,16 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       h2: '¿En qué se diferencia el dolor nocturno del dolor matutino de talón?',
       paragraphs: [
         'El dolor de talón por la mañana y el dolor nocturno suenan parecidos pero apuntan en direcciones distintas. El dolor matutino, el tirón agudo del primer paso que se calma después de unos minutos caminando, es la presentación clásica de la fascitis plantar. El tejido se puso rígido durante la noche y se estira de golpe bajo la carga.',
-        'El dolor nocturno, es decir, el dolor que aparece o empeora cuando estás en la cama sin apoyar peso, sugiere algo más allá de la simple rigidez de la fascia. Las afecciones más asociadas con el dolor verdaderamente en reposo son las fracturas por estrés, el atrapamiento de nervios, la artritis inflamatoria y, en casos raros, los tumores óseos o las infecciones.',
-        'Si no estás seguro de cuál es tu patrón, una prueba sencilla: ¿el dolor mejora después de caminar de 5 a 10\u00A0minutos? Si sí, el patrón de fascitis plantar es más probable, y la página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) es mejor punto de partida. Si no, sigue leyendo aquí y piensa en consultar a un profesional de la salud.',
+        'El dolor nocturno, es decir, el dolor que aparece o empeora cuando estás en la cama sin apoyar peso, sugiere algo más allá de la simple rigidez de la fascia. Las afecciones más asociadas con el dolor verdaderamente en reposo son:',
+        {
+          list: [
+            'Las fracturas por estrés.',
+            'El atrapamiento de nervios.',
+            'La artritis inflamatoria.',
+            'En casos raros, los tumores óseos o las infecciones.',
+          ],
+        },
+        'Si no estás seguro de cuál es tu patrón, una prueba sencilla: **¿el dolor mejora después de caminar de 5 a 10\u00A0minutos?** Si sí, el patrón de fascitis plantar es más probable, y la página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) es mejor punto de partida. Si no, sigue leyendo aquí y piensa en consultar a un profesional de la salud.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },

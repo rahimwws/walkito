@@ -32,14 +32,15 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
       h2: 'Cos’è una discesa eccentrica del tallone?',
       paragraphs: [
         'Una contrazione muscolare eccentrica è quella in cui il muscolo si allunga sotto carico. Nella discesa del tallone, il polpaccio si allunga mentre abbassi il tallone sotto il gradino. È questa discesa controllata che, nel giro di settimane, aumenta la capacità del tendine. La fase di salita si fa su entrambi i piedi, per togliere lo sforzo concentrico al lato dolorante.',
-        'La confusione più comune è tra discesa del tallone e allungamento del polpaccio. L’allungamento tiene la posizione in basso. La discesa del tallone la attraversa piano, con il muscolo che lavora per tutto il tempo. Tenere la posizione in basso come un allungamento toglie lo stimolo di carico che fa funzionare l’esercizio. Il beneficio sta nella discesa lenta e controllata.',
+        'La confusione più comune è tra discesa del tallone e allungamento del polpaccio. L’allungamento tiene la posizione in basso. La discesa del tallone la attraversa piano, con il muscolo che lavora per tutto il tempo. Tenere la posizione in basso come un allungamento toglie lo stimolo di carico che fa funzionare l’esercizio. **Il beneficio sta nella discesa lenta e controllata.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: 'Come si fanno le discese eccentriche del tallone?',
       paragraphs: [
-        'Stai sul bordo di un gradino con gli avampiedi sul gradino e i talloni fuori dal bordo. Sali su entrambi i piedi. Sposta il peso sulla gamba che lavora. Abbassa piano quel tallone in circa tre secondi, lasciandolo scendere sotto il gradino. Tieni il ginocchio teso. Usa entrambi i piedi per risalire in alto.',
+        'Stai sul bordo di un gradino con gli avampiedi sul gradino e i talloni fuori dal bordo. Sali su entrambi i piedi. Sposta il peso sulla gamba che lavora.',
+        'Abbassa piano quel tallone in circa tre secondi, lasciandolo scendere sotto il gradino. Tieni il ginocchio teso. Usa entrambi i piedi per risalire in alto.',
         'La discesa a ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio. Alfredson prescriveva anche una versione a ginocchio piegato per lavorare sul soleo, il muscolo più profondo del polpaccio. La versione a ginocchio piegato è lo stesso movimento con il ginocchio piegato di circa 30-45\u00A0gradi durante la discesa.',
       ],
       exercises: [
@@ -91,17 +92,29 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
       paragraphs: [
         'La tendinopatia achillea della porzione media si trova nel corpo del tendine, di solito 2-6\u00A0cm sopra l’osso del tallone. Qui le discese eccentriche classiche dal bordo di un gradino sono adatte.',
         'La tendinopatia achillea inserzionale è un dolore proprio dove il tendine si attacca all’osso. In uno studio pilota del 2008 su 27\u00A0persone con dolore inserzionale cronico, un protocollo modificato con carico eccentrico solo a livello del pavimento, senza scendere sotto la posizione neutra, ha riportato buoni risultati nel 67% dei casi. Una dorsiflessione profonda comprime il tendine contro l’osso del tallone, e questo rende controproducenti le discese profonde classiche per il dolore inserzionale.',
-        'Se il dolore è proprio sul retro dell’osso del tallone, fai tutte le discese a terra. Non scendere sotto il bordo del gradino. Non allungare in modo aggressivo. È la modifica che si dimentica più spesso nei programmi per l’Achille. Per la pagina completa sul problema, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+        'Se il dolore è proprio sul retro dell’osso del tallone:',
+        {
+          list: [
+            'Fai tutte le discese a terra.',
+            'Non scendere sotto il bordo del gradino.',
+            'Non allungare in modo aggressivo.',
+          ],
+        },
+        'È la modifica che si dimentica più spesso nei programmi per l’Achille. Per la pagina completa sul problema, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'Quali sono gli errori più comuni nelle discese eccentriche del tallone?',
       paragraphs: [
-        'Tenere la posizione in basso come un allungamento. Il beneficio sta nella discesa lenta, non nel restare appeso in basso. Scendi in tre secondi, poi usa subito entrambi i piedi per risalire.',
-        'Scendere troppo. Il tallone deve scendere fin dove arriva in modo naturale sotto il gradino. Forzarlo più in basso, inclinando il piede verso l’interno o l’esterno per guadagnare movimento, mette in tensione i tendini sul lato interno o esterno della caviglia. Tre-cinque centimetri sotto il gradino bastano.',
-        'Andare troppo veloce. La velocità toglie il carico eccentrico su cui si basa l’esercizio. Se non riesci a controllare la discesa in circa tre secondi, passa prima a una versione su due piedi.',
-        'Saltare la versione a ginocchio piegato. La discesa a ginocchio teso lavora sul gastrocnemio. La versione a ginocchio piegato lavora sul soleo. Entrambi i muscoli contribuiscono al tendine d’Achille. Il protocollo originale li include tutti e due.',
+        {
+          list: [
+            '**Tenere la posizione in basso come un allungamento.** Il beneficio sta nella discesa lenta, non nel restare appeso in basso. Scendi in tre secondi, poi usa subito entrambi i piedi per risalire.',
+            '**Scendere troppo.** Il tallone deve scendere fin dove arriva in modo naturale sotto il gradino. Forzarlo più in basso, inclinando il piede verso l’interno o l’esterno per guadagnare movimento, mette in tensione i tendini sul lato interno o esterno della caviglia. Tre-cinque centimetri sotto il gradino bastano.',
+            '**Andare troppo veloce.** La velocità toglie il carico eccentrico su cui si basa l’esercizio. Se non riesci a controllare la discesa in circa tre secondi, passa prima a una versione su due piedi.',
+            '**Saltare la versione a ginocchio piegato.** La discesa a ginocchio teso lavora sul gastrocnemio. La versione a ginocchio piegato lavora sul soleo. Entrambi i muscoli contribuiscono al tendine d’Achille. Il protocollo originale li include tutti e due.',
+          ],
+        },
       ],
     },
     {

@@ -33,7 +33,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
         alt: 'Vista laterale di un piede con la fascia plantare evidenziata dal calcagno alle dita',
       },
       paragraphs: [
-        'Un tutore notturno per la fascite plantare è un supporto che porti a letto e che impedisce al piede di puntare verso il basso mentre dormi. Quando stai fermo sdraiato, il piede di solito scivola in flessione plantare (dita che puntano lontano da te). In quella posizione la fascia plantare, la spessa fascia di tessuto sotto il piede, e il polpaccio restano accorciati per ore.',
+        'Un tutore notturno per la fascite plantare è un supporto che porti a letto e che **impedisce al piede di puntare verso il basso mentre dormi.** Quando stai fermo sdraiato, il piede di solito scivola in flessione plantare (dita che puntano lontano da te). In quella posizione la fascia plantare, la spessa fascia di tessuto sotto il piede, e il polpaccio restano accorciati per ore.',
         'Il tutore tiene la caviglia in posizione neutra o in leggera flessione dorsale (dita tirate un po’ verso lo stinco). L’idea è che il tessuto resti a una lunghezza moderata durante la notte, così i primi passi non sono un allungamento improvviso su una fascia rigida e accorciata. Quell’allungamento improvviso è la spiegazione più comune della fitta ai primi passi che rende la fascite plantare così riconoscibile.',
         'La linea guida del 2023 sul dolore al tallone definisce i tutori notturni come «ortesi prefabbricate in plastica usate per impedire la flessione plantare della caviglia durante il sonno». Le versioni più morbide, come cinghie e calze, mirano alla stessa posizione con meno struttura.',
       ],
@@ -45,7 +45,13 @@ export const NIGHT_SPLINTS_IT: Guide = {
       paragraphs: [
         'I tutori notturni funzionano per alcune persone con fascite plantare, soprattutto per il dolore ai primi passi del mattino, ma la ricerca alle spalle è più scarsa di quanto faccia pensare il loro grado. La linea guida del 2023 sul dolore al tallone dell’American Physical Therapy Association dice che i professionisti «dovrebbero prescrivere un programma di 1-3\u00A0mesi di tutori notturni» per chi ha costantemente dolore al primo passo del mattino. È un grado **A**, il più alto della linea guida.',
         'Però conviene leggere le note in piccolo. L’aggiornamento delle prove della linea guida dice che dal 2014 non sono stati trovati nuovi studi sui tutori notturni, quindi la raccomandazione è stata ripresa senza modifiche. Il grado si basa su una manciata di studi degli anni 1990 e 2000.',
-        'Due revisioni danno un quadro più prudente. Una revisione sistematica del 2023 ha trovato solo tre studi randomizzati che rispettavano i suoi criteri, e li ha giudicati tutti e tre ad alto rischio di bias, cioè con un disegno che poteva falsare i risultati. Ha concluso che i tutori sembrano migliorare dolore e funzione ma che servono altri studi. Una revisione del 2020 sulle opzioni meccaniche ha trovato che tutori e plantari insieme funzionavano meglio di ciascuno da solo.',
+        'Due revisioni danno un quadro più prudente:',
+        {
+          list: [
+            '**Una revisione sistematica del 2023** ha trovato solo tre studi randomizzati che rispettavano i suoi criteri, e li ha giudicati tutti e tre ad alto rischio di bias, cioè con un disegno che poteva falsare i risultati. Ha concluso che i tutori sembrano migliorare dolore e funzione ma che servono altri studi.',
+            '**Una revisione del 2020 sulle opzioni meccaniche** ha trovato che tutori e plantari insieme funzionavano meglio di ciascuno da solo.',
+          ],
+        },
         'Quindi un riassunto onesto è questo: i tutori notturni sono un’opzione ragionevole se le mattine restano brutte nonostante gli allungamenti, ma non sono una cosa sicura, e gli studi che esistono sono piccoli.',
       ],
       cites: [CITE.guideline, CITE.bendoSplintReview, CITE.schuitemaMechanical],
@@ -87,7 +93,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
       ],
       after: [
         'L’unico confronto diretto che abbiamo trovato è un piccolo studio preliminare del 2012. Due terzi delle persone hanno detto che dolore e rigidità del mattino erano minori dopo aver portato un tutore. Lo stivaletto era più scomodo e disturbava il sonno, e il tipo sul davanti dello stinco riduceva di più il dolore al tallone in media. Gli autori hanno definito i tutori notturni «poco tollerati» nel complesso.',
-        'Se scegli da solo, quello giusto è probabilmente quello che riuscirai davvero a tenere tutta la notte. Un professionista sanitario o un fisioterapista può aiutarti con la misura.',
+        'Se scegli da solo, **quello giusto è probabilmente quello che riuscirai davvero a tenere tutta la notte.** Un professionista sanitario o un fisioterapista può aiutarti con la misura.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
     },
@@ -95,7 +101,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
       h2: 'Per quanto tempo portare un tutore notturno per la fascite plantare?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone raccomanda un programma di tutore notturno da uno a tre mesi (Koc e colleghi, 2023).',
       paragraphs: [
-        'La linea guida del 2023 raccomanda di portare un tutore notturno per un periodo da uno a tre mesi. Negli studi, le persone lo hanno portato di notte per un mese (Powell) o tre mesi (Probe, Martin).',
+        '**La linea guida del 2023 raccomanda di portare un tutore notturno per un periodo da uno a tre mesi.** Negli studi, le persone lo hanno portato di notte per un mese (Powell) o tre mesi (Probe, Martin).',
         'Quante ore a notte è meno chiaro. Nessuno studio che abbiamo trovato ha confrontato le ore di utilizzo. Produttori e ambulatori spesso suggeriscono di partire da qualche ora e arrivare a tutta la notte, il che è sensato ma non è stato verificato. Se ti svegli e il tutore è insopportabile, toglierlo e rimetterlo la notte dopo è meglio che rinunciare alla prima notte.',
       ],
       bullets: [
@@ -112,7 +118,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
       keyFact: 'Dopo un anno, 1 delle 28\u00A0persone a cui era stato dato un tutore notturno lo usava ancora, contro 19 su 23 che usavano ancora i plantari (Roos e colleghi, 2006).',
       paragraphs: [
         'La maggior parte delle persone smette di portare il tutore notturno perché è scomodo per dormire. Nello studio di Roos e colleghi del 2006, solo 1 delle 28\u00A0persone a cui era stato dato un tutore lo usava ancora dopo un anno, mentre 19 su 23 usavano ancora i plantari. Lo stesso studio ha trovato anche meno effetti collaterali e una costanza migliore con i plantari. Nello studio di Martin del 2001 su 255\u00A0persone, alcune hanno abbandonato presto perché non tolleravano il dispositivo o continuavano ad avere un dolore forte.',
-        'Una costanza bassa è normale, non un fallimento personale. Il tutore è pensato per un periodo da uno a tre mesi, non per sempre. Alcune cose pratiche lo rendono più facile:',
+        '**Una costanza bassa è normale, non un fallimento personale.** Il tutore è pensato per un periodo da uno a tre mesi, non per sempre. Alcune cose pratiche lo rendono più facile:',
       ],
       bullets: [
         'Se dormi sul fianco o a pancia in giù, un tipo calza o un piccolo tutore dorsale di solito si adatta meglio di uno stivaletto.',
@@ -127,8 +133,16 @@ export const NIGHT_SPLINTS_IT: Guide = {
       h2: 'Tutore notturno, plantari o allungamenti: cosa provare per primo?',
       keyFact: 'In uno studio su 43\u00A0persone, il dolore era sceso del 62% a un anno nei gruppi con plantari e del 48% con il solo tutore notturno (Roos e colleghi, 2006).',
       paragraphs: [
-        'Di solito si parte dagli allungamenti del mattino, perché hanno lo stesso grado **A** dei tutori notturni, non costano nulla e non disturbano il sonno. La linea guida del 2023 dà una **A** all’allungamento della fascia plantare e del polpaccio, e una **B** al rinforzo dei muscoli del piede e della caviglia. Una meta-analisi del 2020 su otto studi ha trovato che gli allungamenti riducevano il dolore, con prove di qualità moderata che l’allungamento della fascia plantare lo riducesse più di un allungamento del polpaccio.',
-        'Tutori notturni e plantari sembrano funzionare meglio insieme che separati. Nello studio di Roos, entrambi i gruppi con plantari hanno avuto più sollievo dal dolore a un anno rispetto al gruppo con il solo tutore. Il piccolo studio di Lee del 2012 ha trovato che plantari più tutore funzionavano meglio dei soli plantari. La revisione del 2020 sulle opzioni meccaniche è arrivata alla stessa conclusione. La linea guida sconsiglia inoltre i plantari come unica cosa da fare per alleviare il dolore nel breve periodo. Per saperne di più, vedi [plantari o esercizi](/it/plantari-o-esercizi/).',
+        '**Di solito si parte dagli allungamenti del mattino**, perché hanno lo stesso grado **A** dei tutori notturni, non costano nulla e non disturbano il sonno. La linea guida del 2023 dà una **A** all’allungamento della fascia plantare e del polpaccio, e una **B** al rinforzo dei muscoli del piede e della caviglia. Una meta-analisi del 2020 su otto studi ha trovato che gli allungamenti riducevano il dolore, con prove di qualità moderata che l’allungamento della fascia plantare lo riducesse più di un allungamento del polpaccio.',
+        'Tutori notturni e plantari sembrano funzionare meglio insieme che separati:',
+        {
+          list: [
+            'Nello studio di Roos, entrambi i gruppi con plantari hanno avuto più sollievo dal dolore a un anno rispetto al gruppo con il solo tutore.',
+            'Il piccolo studio di Lee del 2012 ha trovato che plantari più tutore funzionavano meglio dei soli plantari.',
+            'La revisione del 2020 sulle opzioni meccaniche è arrivata alla stessa conclusione.',
+          ],
+        },
+        'La linea guida sconsiglia inoltre i plantari come unica cosa da fare per alleviare il dolore nel breve periodo. Per saperne di più, vedi [plantari o esercizi](/it/plantari-o-esercizi/).',
         'Un ordine comune è prima allungamenti e lavoro sul polpaccio. Se dopo un mese circa i primi passi sono ancora brutti, aggiungi un tutore per un periodo da uno a tre mesi. Molte persone usano anche i plantari. Questo ordine è una lettura ragionevole della linea guida, non qualcosa che uno studio abbia verificato.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
@@ -170,7 +184,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
     {
       h2: 'A chi può essere utile un tutore notturno, e chi dovrebbe evitarlo?',
       paragraphs: [
-        'Un tutore notturno è più adatto se la tua fascite plantare segue lo schema classico: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di una spina calcaneare alla radiografia.',
+        '**Un tutore notturno è più adatto se la tua fascite plantare segue lo schema classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di una spina calcaneare alla radiografia.',
         'Un tutore ha meno senso se il tallone ti fa male soprattutto mentre sei sdraiato a letto, o ti sveglia. È uno schema diverso, e [dolore al tallone di notte](/it/dolore-tallone-di-notte/) spiega le cause da escludere. Un tutore è poco adatto anche se hai una sensibilità o una circolazione ridotte ai piedi, perché cinghie e gusci possono sfregare la pelle che non senti.',
         'La fascite plantare spesso si calma nel giro di mesi qualunque cosa usi, ed è uno dei motivi per cui gli studi sui tutori sono difficili da interpretare. Per tempi realistici, vedi [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/).',
       ],

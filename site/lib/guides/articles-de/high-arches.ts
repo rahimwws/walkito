@@ -39,7 +39,15 @@ export const HIGH_ARCHES_DE: Guide = {
       paragraphs: [
         'Ein Hohlfuß (Pes cavus) ist ein Fuß mit einem übermäßig hohen inneren Längsgewölbe. Das Gewölbe bleibt auch hoch, wenn der Fuß belastet wird. Anders als ein Plattfuß, der unter Last absinkt und den Aufprall auf eine große Fläche verteilt, ist ein Hohlfuß steif und konzentriert die Kraft auf eine kleinere Fläche: die Ferse und den Fußballen.',
         'Die Plantarfaszie ist bei einem Hohlfuß meist kurz und straff. Das hält das Gewölbe in seiner hohen Position, verringert aber die Fähigkeit des Fußes, nachzugeben und Stöße abzufangen. Der Vorfuß steht oft tiefer als der Rückfuß (ein nach unten geneigter erster Mittelfußknochen), und die Zehen können sich krallen. Diese Veränderungen verlagern den Druck auf die Mittelfußköpfchen und die Ferse und weg vom Mittelfuß.',
-        'Fußschmerzen bei Hohlfuß zeigen sich häufig als Metatarsalgie (Schmerz unter dem Fußballen), Schmerz unter der Ferse oder Schmerz entlang der verkürzten Plantarfaszie. Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist.',
+        'Fußschmerzen bei Hohlfuß zeigen sich häufig als:',
+        {
+          list: [
+            'Metatarsalgie (Schmerz unter dem Fußballen).',
+            'Schmerz unter der Ferse.',
+            'Schmerz entlang der verkürzten Plantarfaszie.',
+          ],
+        },
+        'Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist.',
       ],
       cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },
@@ -48,15 +56,34 @@ export const HIGH_ARCHES_DE: Guide = {
       paragraphs: [
         'Die meisten Hohlfüße sind idiopathisch, es wird also keine bestimmte Ursache gefunden. Sie treten meist auf beiden Seiten auf, bleiben über die Zeit stabil und bestehen seit der Kindheit.',
         'Eine kleinere, aber klinisch wichtige Gruppe wird durch neurologische Erkrankungen verursacht. Die häufigste ist die Charcot-Marie-Tooth-Krankheit (CMT), eine erbliche motorische und sensible Neuropathie, die zu fortschreitender Muskelschwäche und Muskelschwund führt, beginnend an Füßen und Unterschenkeln. Der Hohl-Klumpfuß (Pes cavovarus) bei CMT entsteht, weil bestimmte Muskeln schneller schwächer werden als andere und den Fuß in eine hohe, nach innen gekippte Position ziehen.',
-        'Weitere neurologische Ursachen sind Fehlbildungen des Rückenmarks, Kinderlähmung, Spina bifida, Zerebralparese und andere periphere Neuropathien. Ein Hohlfuß kann auch nach einem Schlaganfall oder einer Rückenmarksverletzung entstehen.',
-        'Der Unterschied ist für die Übungen wichtig. Ein idiopathischer Hohlfuß ist meist stabil: Der Fuß hat diese Form und behält sie. Ein neurologisch bedingter Hohlfuß kann fortschreiten: Das Gewölbe wird höher, die Schwäche nimmt zu und der Fuß wird mit der Zeit instabiler. Übungen können bei einem neurologischen Hohlfuß Beweglichkeit und Stabilität erhalten, aber die zugrunde liegende Erkrankung nicht rückgängig machen, und eine medizinische Fachperson muss eingebunden sein.',
+        'Weitere neurologische Ursachen sind:',
+        {
+          list: [
+            'Fehlbildungen des Rückenmarks.',
+            'Kinderlähmung.',
+            'Spina bifida.',
+            'Zerebralparese.',
+            'Andere periphere Neuropathien.',
+          ],
+        },
+        'Ein Hohlfuß kann auch nach einem Schlaganfall oder einer Rückenmarksverletzung entstehen.',
+        'Der Unterschied ist für die Übungen wichtig. Ein idiopathischer Hohlfuß ist meist stabil: Der Fuß hat diese Form und behält sie. **Ein neurologisch bedingter Hohlfuß kann fortschreiten**: Das Gewölbe wird höher, die Schwäche nimmt zu und der Fuß wird mit der Zeit instabiler. Übungen können bei einem neurologischen Hohlfuß Beweglichkeit und Stabilität erhalten, aber die zugrunde liegende Erkrankung nicht rückgängig machen, und eine medizinische Fachperson muss eingebunden sein.',
       ],
     },
     {
       h2: 'Wann sollte ein Hohlfuß ärztlich abgeklärt werden?',
       paragraphs: [
         'Nicht jeder Hohlfuß braucht eine neurologische Abklärung. Aber bestimmte Muster sollten immer untersucht werden.',
-        'Ein zunehmender Hohlfuß, bei dem das Gewölbe über Monate oder Jahre höher wird, ist ein Warnzeichen für eine neurologische Ursache. Ein einseitiger Hohlfuß, bei dem ein Fuß ein deutlich höheres Gewölbe hat als der andere, ist ein weiteres. Schwäche in Fuß oder Unterschenkel, Schwierigkeiten, den Fuß beim Gehen anzuheben (Fußheberschwäche), Krallenzehen, die schlimmer werden, oder CMT oder eine andere Neuropathie in der Familie sind alles Gründe, zu einer Neurologin, einem Neurologen oder einer Fachärztin bzw. einem Facharzt für Fuß und Sprunggelenk zu gehen.',
+        'Ein zunehmender Hohlfuß, bei dem das Gewölbe über Monate oder Jahre höher wird, **ist ein Warnzeichen für eine neurologische Ursache.** Ein einseitiger Hohlfuß, bei dem ein Fuß ein deutlich höheres Gewölbe hat als der andere, ist ein weiteres.',
+        'Gründe, zu einer Neurologin, einem Neurologen oder einer Fachärztin bzw. einem Facharzt für Fuß und Sprunggelenk zu gehen:',
+        {
+          list: [
+            'Schwäche in Fuß oder Unterschenkel.',
+            'Schwierigkeiten, den Fuß beim Gehen anzuheben (Fußheberschwäche).',
+            'Krallenzehen, die schlimmer werden.',
+            'CMT oder eine andere Neuropathie in der Familie.',
+          ],
+        },
         'Wenn deine Hohlfüße auf beiden Seiten auftreten, stabil sind und seit der Kindheit so sind und du keine Schwäche und keine Gefühlsstörungen hast, sind sie höchstwahrscheinlich idiopathisch. Die Übungen unten und ein Gespräch mit einer Podologin oder einem Podologen über Einlagen sind ein vernünftiger Anfang.',
       ],
     },
@@ -64,7 +91,8 @@ export const HIGH_ARCHES_DE: Guide = {
       h2: 'Helfen Einlagen bei Fußschmerzen durch Hohlfuß?',
       keyFact: 'Eine randomisierte Studie mit 154\u00A0Erwachsenen mit Fußschmerzen durch Hohlfuß fand, dass maßgefertigte Einlagen nach drei Monaten beim Schmerz um 8,3\u00A0Punkte und bei der Funktion um 9,5\u00A0Punkte besser abschnitten als eine Schein-Einlage (Burns und Kollegen, 2006).',
       paragraphs: [
-        'Maßgefertigte Einlagen haben die stärksten Belege bei Fußschmerzen durch Hohlfuß. In der einzigen randomisierten Studie teilten Burns und Kollegen 154\u00A0Erwachsene mit chronischen Fußschmerzen und Hohlfuß auf beiden Seiten entweder maßgefertigten Einlagen aus Polypropylen oder einer flachen Schein-Einlage zu. Nach drei Monaten berichtete die Gruppe mit maßgefertigten Einlagen im Foot Health Status Questionnaire eine um 8,3\u00A0Punkte stärkere Verbesserung des Fußschmerzes als die Schein-Gruppe. Die Funktionswerte verbesserten sich um 9,5\u00A0Punkte mehr. Der Druck unter der Fußsohle sank mit den maßgefertigten Einlagen um 26\u00A0%, mit der Schein-Einlage um 9\u00A0%.',
+        '**Maßgefertigte Einlagen haben die stärksten Belege bei Fußschmerzen durch Hohlfuß.** In der einzigen randomisierten Studie teilten Burns und Kollegen 154\u00A0Erwachsene mit chronischen Fußschmerzen und Hohlfuß auf beiden Seiten entweder maßgefertigten Einlagen aus Polypropylen oder einer flachen Schein-Einlage zu.',
+        'Nach drei Monaten berichtete die Gruppe mit maßgefertigten Einlagen im Foot Health Status Questionnaire eine um 8,3\u00A0Punkte stärkere Verbesserung des Fußschmerzes als die Schein-Gruppe. Die Funktionswerte verbesserten sich um 9,5\u00A0Punkte mehr. Der Druck unter der Fußsohle sank mit den maßgefertigten Einlagen um 26\u00A0%, mit der Schein-Einlage um 9\u00A0%.',
         'Die Studie umfasste Menschen mit idiopathischem und mit neuromuskulärem Hohlfuß (133 idiopathisch, 21 neuromuskulär, davon 16 mit Charcot-Marie-Tooth-Krankheit). Die Einlagen waren der Form des Fußes angepasst und hatten eine gedämpfte Deckschicht über die ganze Länge.',
         'Gedämpfte Einlagen aus dem Handel sind ein vernünftiger erster Schritt, bevor du dich für die teureren maßgefertigten Einlagen entscheidest. Das Merkmal, das sich in der Studie als wirksam erwies, war eine Schale, die genau an die Form des Fußes angepasst war, nicht nur eine flache Dämpfung.',
       ],
@@ -159,8 +187,16 @@ export const HIGH_ARCHES_DE: Guide = {
     {
       h2: 'Welche Schuhe passen bei Hohlfuß?',
       paragraphs: [
-        'Schuhe bei Hohlfuß sollten dämpfen statt führen. Anders als beim Plattfuß, wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
-        'Achte auf eine gedämpfte Sohle, viel Platz im Zehenbereich (Krallenzehen brauchen Raum) und keine starke Gewölbestütze. Eine harte Gewölbestütze, die für einen normalen Fuß gebaut ist, drückt an der falschen Stelle gegen ein hohes Gewölbe. Neutrale Laufschuhe mit guter Dämpfung an Ferse und Vorfuß werden häufig empfohlen.',
+        '**Schuhe bei Hohlfuß sollten dämpfen statt führen.** Anders als beim Plattfuß, wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
+        'Achte auf:',
+        {
+          list: [
+            'Eine gedämpfte Sohle.',
+            'Viel Platz im Zehenbereich (Krallenzehen brauchen Raum).',
+            'Keine starke Gewölbestütze. Eine harte Gewölbestütze, die für einen normalen Fuß gebaut ist, drückt an der falschen Stelle gegen ein hohes Gewölbe.',
+          ],
+        },
+        'Neutrale Laufschuhe mit guter Dämpfung an Ferse und Vorfuß werden häufig empfohlen.',
         'Wenn Schuhe und Einlagen aus dem Handel nicht reichen, kann eine Podologin oder ein Podologe beurteilen, ob sich maßgefertigte Einlagen lohnen. Die Studie von Burns 2006 fand, dass der Schlüssel zu einer erfolgreichen Einlage bei Hohlfuß eine an den Fuß angepasste Schale mit gedämpfter Deckschicht war, keine starre korrigierende Einlage.',
       ],
       cites: [CITE.burnsCavus],
@@ -169,7 +205,8 @@ export const HIGH_ARCHES_DE: Guide = {
       h2: 'Hilft Walkito bei Hohlfuß?',
       paragraphs: [
         'Walkito ist rund um Schmerzen unter der Ferse und im Gewölbe bei Erwachsenen aufgebaut. Die App enthält Wadendehnen, Plantarfaszien-Dehnen, Fußrollen und Stabilitätstraining für das Sprunggelenk, die alle für einen Hohlfuß relevant sind. Wenn du in der Körperkarte der App auf das Gewölbe zeigst, bietet die Entlastungseinheit den kurzen Fuß, die Plantarfaszien-Dehnung und das Fußrollen an.',
-        'Was die App nicht hat, ist ein eigenes Ziel für Hohlfuß oder ein Hohlfuß-Programm. Die Übungen, die erscheinen, sind dieselben wie bei Plantarfasziitis und Plattfuß. Für jemanden mit Hohlfuß und Schmerzen unter der Ferse überschneiden sich diese Übungen mit dem, was diese Seite empfiehlt. Für jemanden, dessen Schmerzen durch den Hohlfuß vor allem unter dem Fußballen sitzen oder eine neurologische Ursache haben, passt die App nicht gut, und eine medizinische Fachperson sollte den Übungsplan bestimmen.',
+        'Was die App nicht hat, ist ein eigenes Ziel für Hohlfuß oder ein Hohlfuß-Programm. Die Übungen, die erscheinen, sind dieselben wie bei Plantarfasziitis und Plattfuß.',
+        'Für jemanden mit Hohlfuß und Schmerzen unter der Ferse überschneiden sich diese Übungen mit dem, was diese Seite empfiehlt. Für jemanden, dessen Schmerzen durch den Hohlfuß vor allem unter dem Fußballen sitzen oder eine neurologische Ursache haben, passt die App nicht gut, und eine medizinische Fachperson sollte den Übungsplan bestimmen.',
       ],
     },
   ],

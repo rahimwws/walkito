@@ -37,7 +37,7 @@ export const EX_BAND_INVERSION_ES: Guide = {
       h2: '¿Cómo se hace la inversión de tobillo con banda?',
       paragraphs: [
         'Siéntate con las piernas estiradas al frente o en la orilla de una silla. Pasa una banda elástica alrededor del lado interno de la parte delantera del pie que trabaja. Sujeta el otro extremo bajo el pie contrario o alrededor de la pata de una mesa, para que la banda jale el pie hacia afuera.',
-        'Empieza con el pie un poco girado hacia afuera (en eversión). Gira la planta del pie hacia adentro contra la banda, llevando la parte delantera del pie hacia la línea media. Mueve el pie, no toda la pierna. La rodilla apunta al frente todo el tiempo. Vuelve despacio y repite.',
+        'Empieza con el pie un poco girado hacia afuera (en eversión). Gira la planta del pie hacia adentro contra la banda, llevando la parte delantera del pie hacia la línea media. **Mueve el pie, no toda la pierna.** La rodilla apunta al frente todo el tiempo. Vuelve despacio y repite.',
         'Empieza con una banda suave. El movimiento es pequeño. Si la rodilla se tuerce o la cadera gira, la banda es demasiado fuerte o la pierna está compensando.',
       ],
       exercises: [
@@ -61,14 +61,22 @@ export const EX_BAND_INVERSION_ES: Guide = {
       keyFact: 'Un estudio con resonancia magnética de 2004 con 5 adultos sanos encontró que girar el pie hacia adentro aumentó la señal del tibial posterior un 50 %, con menos del 5 % de cambio en los músculos cercanos (Kulig y colegas, 2004).',
       paragraphs: [
         'El objetivo principal es el tibial posterior. Es el músculo más profundo de la parte de atrás de la pierna, detrás de la tibia y el peroné. Su tendón pasa por detrás del maléolo medial (el hueso interno del tobillo) y luego se abre en varias bandas que se unen a casi todos los huesos de la parte media del pie.',
-        'Un estudio de 2004 con resonancia magnética de Kulig y colegas probó tres ejercicios en 5\u00A0adultos sanos: aducción del pie (girar el pie hacia adentro sobre el piso), elevación de talón a una pierna y supinación del pie en cadena abierta. La aducción del pie logró la mayor activación del tibial posterior (50\u00A0% más de señal) con la menor activación de los músculos de alrededor (menos del 5\u00A0%). La elevación de talón a una pierna también activó el tibial posterior, pero activó mucho el gastrocnemio (99\u00A0%) y el sóleo (39\u00A0%), así que es un ejercicio mucho menos selectivo para el tibial posterior.',
+        'Un estudio de 2004 con resonancia magnética de Kulig y colegas probó tres ejercicios en 5\u00A0adultos sanos:',
+        {
+          list: [
+            'Aducción del pie (girar el pie hacia adentro sobre el piso).',
+            'Elevación de talón a una pierna.',
+            'Supinación del pie en cadena abierta.',
+          ],
+        },
+        'La aducción del pie logró la mayor activación del tibial posterior (50\u00A0% más de señal) con la menor activación de los músculos de alrededor (menos del 5\u00A0%). La elevación de talón a una pierna también activó el tibial posterior, pero activó mucho el gastrocnemio (99\u00A0%) y el sóleo (39\u00A0%), así que es un ejercicio mucho menos selectivo para el tibial posterior.',
       ],
       cites: [CITE.kulig],
     },
     {
       h2: '¿Por qué importa el tibial posterior para el arco?',
       paragraphs: [
-        'El tibial posterior es el principal estabilizador dinámico del arco longitudinal interno. Cada vez que das un paso, se contrae para sostener el arco en la fase media del apoyo, cuando todo tu peso está sobre un pie. Los músculos intrínsecos del pie (que entrenan el [ejercicio de pie corto](/es/ejercicios/pie-corto/) y la [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/)) dan un sostén local al arco, pero el tibial posterior aporta la fuerza mayor, extrínseca, desde arriba.',
+        'El tibial posterior es **el principal estabilizador dinámico del arco longitudinal interno.** Cada vez que das un paso, se contrae para sostener el arco en la fase media del apoyo, cuando todo tu peso está sobre un pie. Los músculos intrínsecos del pie (que entrenan el [ejercicio de pie corto](/es/ejercicios/pie-corto/) y la [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/)) dan un sostén local al arco, pero el tibial posterior aporta la fuerza mayor, extrínseca, desde arriba.',
         'Cuando el tendón del tibial posterior se debilita o se degenera, el arco se hunde poco a poco y el pie hace pronación. Una revisión de 2017 de Ling y Lui lo describió como la causa más común del pie plano adquirido del adulto. Una revisión sistemática de 2018 de Ross y colegas encontró que los programas de ejercicio que incluían fortalecimiento del tibial posterior mejoraron el dolor y la función en la disfunción del tendón tibial posterior en etapa temprana.',
         'Por eso los [programas de ejercicios para el pie plano](/es/ejercicios-pie-plano/) incluyen ejercicios intrínsecos del pie y también trabajo del tibial posterior. Los músculos intrínsecos son los estabilizadores locales. El tibial posterior es el principal estabilizador extrínseco. Los dos importan.',
       ],
@@ -77,10 +85,14 @@ export const EX_BAND_INVERSION_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en la inversión con banda?',
       paragraphs: [
-        'El error más común es girar toda la pierna en lugar de solo el pie. Cuando la cadera gira hacia adentro para girar el pie, el tibial posterior casi no trabaja. Mantén la rodilla apuntando al frente. Solo el pie se mueve en el tobillo.',
-        'Otro error es usar una banda demasiado fuerte. El tibial posterior es un músculo pequeño y profundo. Una banda pesada hace que los músculos más grandes tomen el control. Empieza con una banda suave y concéntrate en sentir el trabajo a lo largo de la parte interna del tobillo y del arco.',
-        'Un tercer problema es dejar que el pie vuelva de golpe entre repeticiones. Controla la vuelta. La fase excéntrica, volver despacio, carga el tendón de una forma que le ayuda a adaptarse. Una vuelta lenta vale más que un tirón rápido.',
-        'Por último, algunas personas ponen la banda demasiado arriba en el pie, cerca de la articulación del tobillo. La banda debe ir alrededor de la parte delantera del pie, cerca de la base de los dedos, para que la palanca trabaje en el ángulo correcto.',
+        {
+          list: [
+            '**El error más común es girar toda la pierna en lugar de solo el pie.** Cuando la cadera gira hacia adentro para girar el pie, el tibial posterior casi no trabaja. Mantén la rodilla apuntando al frente. Solo el pie se mueve en el tobillo.',
+            '**Otro error es usar una banda demasiado fuerte.** El tibial posterior es un músculo pequeño y profundo. Una banda pesada hace que los músculos más grandes tomen el control. Empieza con una banda suave y concéntrate en sentir el trabajo a lo largo de la parte interna del tobillo y del arco.',
+            '**Un tercer problema es dejar que el pie vuelva de golpe entre repeticiones.** Controla la vuelta. La fase excéntrica, volver despacio, carga el tendón de una forma que le ayuda a adaptarse. Una vuelta lenta vale más que un tirón rápido.',
+            '**Por último, algunas personas ponen la banda demasiado arriba en el pie, cerca de la articulación del tobillo.** La banda debe ir alrededor de la parte delantera del pie, cerca de la base de los dedos, para que la palanca trabaje en el ángulo correcto.',
+          ],
+        },
       ],
     },
     {
@@ -88,7 +100,7 @@ export const EX_BAND_INVERSION_ES: Guide = {
       paragraphs: [
         'La evidencia más directa sobre el movimiento viene del estudio de 2004 con resonancia magnética de Kulig y colegas. Confirmó que la aducción del pie activa de forma selectiva el tibial posterior, con muy poca activación de los músculos de alrededor. Por eso la inversión contra una banda es el ejercicio de elección cuando el objetivo es fortalecer ese músculo en concreto.',
         'En cuanto a resultados clínicos, una revisión sistemática de 2018 de Ross y colegas analizó programas de ejercicio para la disfunción del tendón tibial posterior. La mayoría de los estudios eran pequeños, pero la revisión concluyó que los programas con ejercicios excéntricos y concéntricos del tibial posterior, muchas veces combinados con fortalecimiento de pantorrilla y plantillas ortopédicas, mejoraron el dolor y la función.',
-        'El ejercicio no se ha probado solo en un ensayo grande de fascitis plantar. Su papel en el programa de Walkito es sostener el arco fortaleciendo el estabilizador extrínseco que trabaja junto con los músculos intrínsecos. Páginas relacionadas: [ejercicios para el pie plano](/es/ejercicios-pie-plano/), [ejercicio de pie corto](/es/ejercicios/pie-corto/), [abducción de cadera](/es/ejercicios/abduccion-de-cadera/).',
+        '**El ejercicio no se ha probado solo en un ensayo grande de fascitis plantar.** Su papel en el programa de Walkito es sostener el arco fortaleciendo el estabilizador extrínseco que trabaja junto con los músculos intrínsecos. Páginas relacionadas: [ejercicios para el pie plano](/es/ejercicios-pie-plano/), [ejercicio de pie corto](/es/ejercicios/pie-corto/), [abducción de cadera](/es/ejercicios/abduccion-de-cadera/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
     },

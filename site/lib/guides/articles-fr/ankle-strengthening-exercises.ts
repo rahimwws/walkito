@@ -27,7 +27,15 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
     {
       h2: 'Quels exercices renforcent les chevilles\u00A0?',
       paragraphs: [
-        'Les exercices de renforcement de la cheville font travailler quatre groupes de muscles, plus le système d’équilibre qui les contrôle. Les fibulaires (sur le côté externe du bas de la jambe) tournent le pied vers l’extérieur et sont la principale protection contre la cheville qui se tord. Le tibial postérieur (en profondeur, côté interne) tourne le pied vers l’intérieur et soutient la voûte. Le mollet vous pousse sur la pointe des pieds, et le tibial antérieur (le muscle du tibia) relève l’avant du pied.',
+        'Les exercices de renforcement de la cheville font travailler quatre groupes de muscles, plus le système d’équilibre qui les contrôle\u00A0:',
+        {
+          list: [
+            '**Fibulaires\u00A0:** Les fibulaires (sur le côté externe du bas de la jambe) tournent le pied vers l’extérieur et sont la principale protection contre la cheville qui se tord.',
+            '**Tibial postérieur\u00A0:** Le tibial postérieur (en profondeur, côté interne) tourne le pied vers l’intérieur et soutient la voûte.',
+            '**Mollet\u00A0:** Le mollet vous pousse sur la pointe des pieds.',
+            '**Tibial antérieur\u00A0:** Le tibial antérieur (le muscle du tibia) relève l’avant du pied.',
+          ],
+        },
         'La force n’est que la moitié de l’histoire. Les chevilles se tordent aussi parce que les muscles réagissent une fraction de seconde trop tard. Le travail d’équilibre entraîne la vitesse de ces réactions, et c’est pour cela qu’il revient sans cesse dans la recherche sur les récidives d’entorse.',
         'Le tableau montre l’ordre suivi sur cette page. Passez à l’étape suivante quand l’étape actuelle vous paraît facile et que la cheville ne fait pas plus mal le lendemain matin.',
       ],
@@ -46,10 +54,17 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
       h2: 'Les exercices de renforcement de la cheville évitent-ils une nouvelle entorse\u00A0?',
       keyFact: 'Dans un essai sur 522\u00A0sportifs après une entorse de la cheville, 22\u00A0% de ceux qui ont reçu un programme d’équilibre à domicile ont refait une entorse dans l’année, contre 33\u00A0% de ceux qui n’ont eu que la prise en charge habituelle (Hupperets et coll., 2009).',
       paragraphs: [
-        'Oui, et c’est l’entraînement de l’équilibre qui a les meilleures preuves. Dans un essai randomisé de 2009 aux Pays-Bas, 522\u00A0sportifs de 12 à 70\u00A0ans qui s’étaient fait une entorse de la cheville dans les deux mois précédents ont reçu soit la prise en charge habituelle, soit la prise en charge habituelle plus un programme sur plateau d’équilibre à domicile. Sur un an, 22\u00A0% du groupe équilibre ont refait une entorse, contre 33\u00A0% du groupe prise en charge habituelle. Cela représente un risque environ 35\u00A0% plus faible. Il fallait que neuf personnes suivent le programme pour éviter une récidive.',
+        'Oui, et **c’est l’entraînement de l’équilibre qui a les meilleures preuves.** Dans un essai randomisé de 2009 aux Pays-Bas, 522\u00A0sportifs de 12 à 70\u00A0ans qui s’étaient fait une entorse de la cheville dans les deux mois précédents ont reçu soit la prise en charge habituelle, soit la prise en charge habituelle plus un programme sur plateau d’équilibre à domicile.',
+        'Sur un an, 22\u00A0% du groupe équilibre ont refait une entorse, contre 33\u00A0% du groupe prise en charge habituelle. Cela représente un risque environ 35\u00A0% plus faible. Il fallait que neuf personnes suivent le programme pour éviter une récidive.',
         'Le programme demandait trois séances par semaine de 30\u00A0minutes au maximum, pendant deux mois, de plus en plus difficiles. Les participants le faisaient chez eux, sans supervision.',
-        'Les études regroupées vont dans le même sens. Une méta-analyse de 2015 portant sur 7\u00A0essais et 3\u00A0726\u00A0personnes a constaté que l’entraînement de l’équilibre réduisait le risque d’entorse d’environ un tiers (risque relatif 0,65). Chez les personnes ayant déjà eu une entorse, le résultat tenait (risque relatif 0,64). Chez celles qui ne s’étaient jamais fait d’entorse, les preuves étaient plus faibles et les auteurs les ont jugées non concluantes. Une revue de 2018 sur des essais chez des sportifs de compétition (six de ses huit essais testaient l’entraînement de l’équilibre) a constaté que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0%.',
-        'Une synthèse de 2017 portant sur 46\u00A0revues a jugé modérées les preuves en faveur de l’entraînement neuromusculaire (travail d’équilibre et de coordination) pour prévenir les récidives d’entorse, et fortes celles en faveur des orthèses de cheville.',
+        'Les études regroupées vont dans le même sens\u00A0:',
+        {
+          list: [
+            'Une méta-analyse de 2015 portant sur 7\u00A0essais et 3\u00A0726\u00A0personnes a constaté que l’entraînement de l’équilibre réduisait le risque d’entorse d’environ un tiers (risque relatif 0,65). Chez les personnes ayant déjà eu une entorse, le résultat tenait (risque relatif 0,64). Chez celles qui ne s’étaient jamais fait d’entorse, les preuves étaient plus faibles et les auteurs les ont jugées non concluantes.',
+            'Une revue de 2018 sur des essais chez des sportifs de compétition (six de ses huit essais testaient l’entraînement de l’équilibre) a constaté que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0%.',
+            'Une synthèse de 2017 portant sur 46\u00A0revues a jugé modérées les preuves en faveur de l’entraînement neuromusculaire (travail d’équilibre et de coordination) pour prévenir les récidives d’entorse, et fortes celles en faveur des orthèses de cheville.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009\u00A0: risque relatif 0,63 (IC à 95\u00A0% 0,45 à 0,88) pour les récidives déclarées\u00A0; le bénéfice était le plus net chez les sportifs dont la première entorse n’avait pas été prise en charge médicalement. Schiftan 2015\u00A0: RR 0,65 (0,55 à 0,77) au total, 0,64 (0,51 à 0,81) avec antécédent d’entorse, 0,57 (0,34 à 0,97) sans, à partir de deux essais non significatifs.',
@@ -151,7 +166,14 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
       paragraphs: [
         'Vous pouvez en général commencer des exercices doux de la cheville peu après une entorse, dès que vous pouvez mettre du poids sur le pied. Une synthèse de 2017 portant sur 46\u00A0revues a trouvé des preuves fortes en faveur de la mobilisation précoce (faire bouger la cheville tôt) et des preuves modérées en faveur de l’exercice après une entorse aiguë. Une recommandation néerlandaise de 2018 indique que les personnes ayant une déchirure d’un ligament externe de la cheville s’en sortent le mieux avec un strapping ou une orthèse associé à un programme d’exercices, et préfère l’exercice supervisé aux options passives.',
         'Commencez par des mouvements sans douleur et le travail à l’élastique assis, ajoutez les montées debout quand la marche paraît normale, et ajoutez l’équilibre quand vous pouvez tenir sur la jambe blessée sans douleur vive. Si la cheville est aussi raide, voir les [exercices de mobilité de la cheville](/fr/exercices-mobilite-cheville/) pour l’amplitude articulaire.',
-        'Avant tout cela, écartez une fracture. Les règles d’Ottawa pour la cheville sont une courte liste de critères utilisée par les médecins\u00A0: une radiographie est conseillée si vous n’avez pas pu faire quatre pas juste après la blessure et lors de la consultation, ou si l’os est douloureux au bord postérieur ou à la pointe de l’une des deux malléoles, à la base du cinquième métatarsien ou sur l’os naviculaire (un os du côté interne du médio-pied). Une revue de 2003 portant sur 27\u00A0études et 15\u00A0581\u00A0patients a constaté que ces règles ne manquent presque aucune fracture.',
+        'Avant tout cela, **écartez une fracture.** Les règles d’Ottawa pour la cheville sont une courte liste de critères utilisée par les médecins. Une radiographie est conseillée si\u00A0:',
+        {
+          list: [
+            'Vous n’avez pas pu faire quatre pas juste après la blessure et lors de la consultation.',
+            'L’os est douloureux au bord postérieur ou à la pointe de l’une des deux malléoles, à la base du cinquième métatarsien ou sur l’os naviculaire (un os du côté interne du médio-pied).',
+          ],
+        },
+        'Une revue de 2003 portant sur 27\u00A0études et 15\u00A0581\u00A0patients a constaté que ces règles ne manquent presque aucune fracture.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -160,7 +182,7 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
       keyFact: 'Dans un essai sur 39\u00A0personnes aux chevilles instables, le travail à l’élastique a amélioré la force de la cheville et la sensation d’instabilité, mais pas les tests d’équilibre ni de sauts (Hall et coll., 2015).',
       paragraphs: [
         'Le travail à l’élastique seul développe la force, mais ne change peut-être pas la façon dont la cheville gère un déséquilibre. Dans un essai de 2015, 39\u00A0jeunes adultes atteints d’instabilité chronique de la cheville (une cheville qui continue de lâcher) ont été répartis entre un groupe élastique, un groupe de renforcement contre résistance manuelle et un groupe témoin. Les deux groupes de renforcement se sont entraînés trois fois par semaine pendant environ un mois et demi. Les deux ont gagné en force et ont dit que leur cheville paraissait plus stable. Aucun ne s’est amélioré à un test d’équilibre avec portée ni à un test de sauts croisés.',
-        'Les auteurs ont suggéré d’ajouter des exercices qui sollicitent plusieurs directions et plusieurs articulations. Les essais de prévention utilisaient l’équilibre, pas l’élastique. Faites les deux.',
+        'Les auteurs ont suggéré d’ajouter des exercices qui sollicitent plusieurs directions et plusieurs articulations. Les essais de prévention utilisaient l’équilibre, pas l’élastique. **Faites les deux.**',
         'La hanche compte aussi. Dans un petit essai de 2018 sur 26\u00A0personnes aux chevilles instables, après un mois d’exercices supervisés à l’élastique pour la hanche, trois fois par semaine, le groupe entraîné faisait en moyenne 9,9\u00A0erreurs à un test d’équilibre debout, contre 21,2 dans le groupe qui n’avait rien fait. C’était un seul petit essai\u00A0: voyez la hanche comme un complément utile, pas comme le cœur du plan.',
       ],
       sourceNote:
@@ -172,13 +194,22 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
       paragraphs: [
         'La plus grande partie de la progression ne demande qu’un mur. Seuls les mouvements d’inversion et d’éversion demandent un élastique.',
         'Sans élastique, vous pouvez travailler les deux mêmes directions en isométrique (en poussant contre quelque chose qui ne bouge pas). Asseyez-vous, le bord externe du pied contre un pied de table ou un encadrement de porte, et poussez vers l’extérieur pendant 5 à 10\u00A0secondes sans que le pied bouge. Faites ensuite de même avec le bord interne en poussant vers l’intérieur. C’est une étape précoce courante après une entorse, même si elle n’a pas été testée comme programme à part entière.',
-        'Si vous n’avez le temps que pour une chose, gardez le travail d’équilibre. Il a les preuves les plus solides et prend une minute par jour.',
+        'Si vous n’avez le temps que pour une chose, **gardez le travail d’équilibre.** Il a les preuves les plus solides et prend une minute par jour.',
       ],
     },
     {
       h2: 'Les exercices de renforcement de la cheville aident-ils l’équilibre des personnes âgées\u00A0?',
       paragraphs: [
-        'Les exercices de la cheville font souvent partie de la prévention des chutes chez les personnes âgées, mais les preuves pour le travail de la cheville seul sont limitées. Le meilleur essai a testé un ensemble de mesures. En 2011, 305\u00A0personnes d’un âge moyen de 74\u00A0ans, souffrant de douleurs au pied invalidantes et à risque accru de chute, ont reçu soit les soins de podologie habituels, soit un ensemble comprenant des orthèses, des conseils de chaussage et un bon d’achat, des exercices du pied et de la cheville à domicile et une brochure sur les chutes. Sur 12\u00A0mois, le groupe ayant reçu l’ensemble a fait 36\u00A0% de chutes en moins. Le nombre de personnes tombées au moins une fois ne différait pas nettement.',
+        'Les exercices de la cheville font souvent partie de la prévention des chutes chez les personnes âgées, mais les preuves pour le travail de la cheville seul sont limitées. Le meilleur essai a testé un ensemble de mesures. En 2011, 305\u00A0personnes d’un âge moyen de 74\u00A0ans, souffrant de douleurs au pied invalidantes et à risque accru de chute, ont reçu soit les soins de podologie habituels, soit un ensemble comprenant\u00A0:',
+        {
+          list: [
+            'Des orthèses.',
+            'Des conseils de chaussage et un bon d’achat.',
+            'Des exercices du pied et de la cheville à domicile.',
+            'Une brochure sur les chutes.',
+          ],
+        },
+        'Sur 12\u00A0mois, le groupe ayant reçu l’ensemble a fait 36\u00A0% de chutes en moins. Le nombre de personnes tombées au moins une fois ne différait pas nettement.',
         'Ce groupe a aussi gagné en force de la cheville, en amplitude articulaire et en équilibre. Comme il s’agissait d’un ensemble, l’essai ne peut pas dire quelle part revient aux exercices.',
         'Si l’équilibre est votre principale inquiétude, faites l’équilibre sur une jambe devant un plan de travail, une main juste au-dessus. Si vous avez fait des chutes, si vous avez des vertiges ou des pieds engourdis, faites d’abord évaluer votre équilibre.',
       ],
@@ -195,7 +226,7 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
     {
       h2: 'À quelle fréquence faire les exercices de renforcement de la cheville\u00A0?',
       paragraphs: [
-        'Deux ou trois séances de renforcement par semaine, avec un court travail d’équilibre la plupart des jours, est un rythme raisonnable. Il correspond à l’essai de prévention ci-dessus, qui demandait trois séances par semaine pendant deux mois. Le travail d’équilibre est peu chargé et peut se faire presque tous les jours.',
+        '**Deux ou trois séances de renforcement par semaine, avec un court travail d’équilibre la plupart des jours,** est un rythme raisonnable. Il correspond à l’essai de prévention ci-dessus, qui demandait trois séances par semaine pendant deux mois. Le travail d’équilibre est peu chargé et peut se faire presque tous les jours.',
         'Passez au niveau supérieur quand un exercice vous paraît facile deux séances de suite et que la cheville ne va pas plus mal le lendemain matin. Progressez en ajoutant une version plus difficile (une jambe au lieu de deux, yeux fermés au lieu d’ouverts, un élastique plus ferme) plutôt qu’en empilant les séries. Revenez une étape en arrière après une poussée de douleur.',
         'Walkito est conçu autour des douleurs du talon, de la voûte et du bas de la jambe, et n’a pas de programme de rééducation de l’entorse de la cheville. Ses plans peuvent inclure, parmi les exercices de cette page, l’inversion avec élastique (après un premier travail de la voûte), les relevés des orteils, les montées sur pointes, l’abduction de hanche couché sur le côté et l’équilibre sur une jambe, avec au début un court test de l’endurance du mollet, du maintien de la voûte et de l’équilibre toutes les deux semaines. Si vous voulez aussi muscler les petits muscles sous la voûte, voir les [exercices de renforcement du pied](/fr/exercices-renforcement-pied/).',
       ],

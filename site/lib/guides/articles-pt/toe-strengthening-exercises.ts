@@ -30,10 +30,12 @@ export const TOE_STRENGTHENING_PT: Guide = {
       keyFact:
         'Num estudo de um ano com 312\u00A0adultos de 60 a 90\u00A0anos, as pessoas que caíram tinham o dedão mais fraco (11,6 contra 14,8% do peso corporal) do que as que não caíram (Mickle e colegas, 2009).',
       paragraphs: [
-        'A força dos dedos importa principalmente para o equilíbrio e para o impulso ao andar. Os dedos são a última parte do pé a sair do chão a cada passo e, quando você está parado em pé, eles pressionam o chão para segurar pequenas oscilações.',
-        'A evidência mais clara vem dos idosos. Uma equipe australiana mediu a força dos dedos de 312\u00A0pessoas de 60 a 90\u00A0anos e depois acompanhou quem caiu nos 12\u00A0meses seguintes. Delas, 107 (35%) tiveram uma queda. Em média, quem caiu conseguia pressionar o chão com o dedão com 11,6% do peso corporal, contra 14,8% de quem não caiu. Os dedos menores mostraram o mesmo padrão. Um estudo anterior com 176\u00A0pessoas, com idade média de 80\u00A0anos, concluiu que os flexores plantares dos dedos fracos (os músculos que pressionam os dedos para baixo) estavam ligados a quedas mesmo depois de levar em conta outros fatores de risco de queda, como visão, tempo de reação e força, e a idade.',
+        '**A força dos dedos importa principalmente para o equilíbrio e para o impulso ao andar.** Os dedos são a última parte do pé a sair do chão a cada passo e, quando você está parado em pé, eles pressionam o chão para segurar pequenas oscilações.',
+        'A evidência mais clara vem dos idosos. Uma equipe australiana mediu a força dos dedos de 312\u00A0pessoas de 60 a 90\u00A0anos e depois acompanhou quem caiu nos 12\u00A0meses seguintes. Delas, 107 (35%) tiveram uma queda. Em média, quem caiu conseguia pressionar o chão com o dedão com 11,6% do peso corporal, contra 14,8% de quem não caiu. Os dedos menores mostraram o mesmo padrão.',
+        'Um estudo anterior com 176\u00A0pessoas, com idade média de 80\u00A0anos, concluiu que os flexores plantares dos dedos fracos (os músculos que pressionam os dedos para baixo) estavam ligados a quedas mesmo depois de levar em conta outros fatores de risco de queda, como visão, tempo de reação e força, e a idade.',
         'Uma revisão de 2026 com 14\u00A0estudos de coorte em adultos de 60\u00A0anos ou mais juntou os dados e concluiu que músculos fracos do dedão estavam associados a uma chance cerca de 1,65\u00A0vez maior de cair no futuro. Os autores tiveram o cuidado de dizer que muitos dos estudos não levaram em conta outras causas, então dedos fracos podem ser em parte um sinal de fragilidade geral.',
-        'Quanto ao equilíbrio em si, uma revisão de 2020 com nove estudos concluiu que flexores dos dedos mais fortes andavam junto com um equilíbrio melhor em todos os estudos incluídos. Todos esses estudos foram feitos com pessoas acima de 60\u00A0anos, então essa ligação ainda não foi testada da mesma forma em adultos mais jovens. Num outro estudo com 305\u00A0pessoas de 65 a 93\u00A0anos, a força do dedão foi um dos dois fatores que previram de forma mais consistente o desempenho nos testes de equilíbrio e de marcha.',
+        'Quanto ao equilíbrio em si, uma revisão de 2020 com nove estudos concluiu que flexores dos dedos mais fortes andavam junto com um equilíbrio melhor em todos os estudos incluídos. Todos esses estudos foram feitos com pessoas acima de 60\u00A0anos, então essa ligação ainda não foi testada da mesma forma em adultos mais jovens.',
+        'Num outro estudo com 305\u00A0pessoas de 65 a 93\u00A0anos, a força do dedão foi um dos dois fatores que previram de forma mais consistente o desempenho nos testes de equilíbrio e de marcha.',
       ],
       sourceNote:
         'Mickle 2009: força medida numa plataforma de pressão como porcentagem do peso corporal, médias com DP de 6,9 e 7,8. Valeriani 2026: fraqueza dos flexores plantares do hálux, OR combinado de 1,65 (IC 95% 1,14 a 2,38). Quinlan 2020: 7\u00A0estudos transversais, 2\u00A0ensaios randomizados, 1\u00A0caso-controle, sem metanálise.',
@@ -42,17 +44,32 @@ export const TOE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Dedos fracos têm relação com dor no calcanhar?',
       paragraphs: [
-        'Dedos fracos aparecem, sim, em pessoas com fascite plantar (dor embaixo do calcanhar, onde se prende a fáscia plantar, uma faixa grossa ao longo da sola do pé). Num estudo de 2003 com 20\u00A0pessoas com fascite plantar em um pé só, o pé com dor tinha os flexores dos dedos mais fracos que o outro pé e mais fracos que os de 20\u00A0pessoas sem dor com características parecidas. Um estudo maior, de 2015, comparou 202\u00A0pessoas com dor plantar no calcanhar e 70 sem essa dor. Em média, o grupo com dor no calcanhar tinha flexores dos dedos mais fracos, tornozelos mais rígidos e um índice de massa corporal (peso em relação à altura) mais alto.',
-        'Nenhum dos dois estudos consegue dizer o que veio primeiro. Os autores dos dois artigos dizem isso com todas as letras: a fraqueza pode ajudar a causar a dor, ou a dor pode fazer a pessoa usar menos os dedos. Fortalecer os dedos é uma parte razoável de um plano para dor no calcanhar, mas os exercícios mais testados para fascite plantar continuam sendo os alongamentos de panturrilha e da fáscia plantar e as elevações de calcanhar de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Uma revisão de 2017 sobre treino de força para fascite plantar não conseguiu dizer o quanto o treino dos músculos do pé, sozinho, ajuda quem tem dor no calcanhar.',
+        'Dedos fracos aparecem, sim, em pessoas com fascite plantar (dor embaixo do calcanhar, onde se prende a fáscia plantar, uma faixa grossa ao longo da sola do pé). Num estudo de 2003 com 20\u00A0pessoas com fascite plantar em um pé só, o pé com dor tinha os flexores dos dedos mais fracos que o outro pé e mais fracos que os de 20\u00A0pessoas sem dor com características parecidas.',
+        'Um estudo maior, de 2015, comparou 202\u00A0pessoas com dor plantar no calcanhar e 70 sem essa dor. Em média, o grupo com dor no calcanhar tinha:',
+        {
+          list: [
+            'Flexores dos dedos mais fracos.',
+            'Tornozelos mais rígidos.',
+            'Um índice de massa corporal (peso em relação à altura) mais alto.',
+          ],
+        },
+        '**Nenhum dos dois estudos consegue dizer o que veio primeiro.** Os autores dos dois artigos dizem isso com todas as letras: a fraqueza pode ajudar a causar a dor, ou a dor pode fazer a pessoa usar menos os dedos.',
+        'Fortalecer os dedos é uma parte razoável de um plano para dor no calcanhar, mas os exercícios mais testados para fascite plantar continuam sendo os alongamentos de panturrilha e da fáscia plantar e as elevações de calcanhar de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Uma revisão de 2017 sobre treino de força para fascite plantar não conseguiu dizer o quanto o treino dos músculos do pé, sozinho, ajuda quem tem dor no calcanhar.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: 'Quais músculos movem os dedos dos pés?',
       paragraphs: [
-        'Dois grupos de músculos movem os dedos. Os músculos intrínsecos começam e terminam dentro do pé. Eles ficam em camadas embaixo da sola, e os mais conhecidos são o abdutor do hálux (que afasta o dedão dos outros dedos) e os flexores curtos dos dedos. Os músculos extrínsecos começam na parte de baixo da perna e chegam aos dedos por tendões longos que passam pelo tornozelo.',
+        'Dois grupos de músculos movem os dedos:',
+        {
+          list: [
+            '**Músculos intrínsecos:** começam e terminam dentro do pé. Eles ficam em camadas embaixo da sola, e os mais conhecidos são o abdutor do hálux (que afasta o dedão dos outros dedos) e os flexores curtos dos dedos.',
+            '**Músculos extrínsecos:** começam na parte de baixo da perna e chegam aos dedos por tendões longos que passam pelo tornozelo.',
+          ],
+        },
         'Quando você dobra os dedos com força, os dois grupos trabalham juntos. É por isso que os pesquisadores acham tão difícil medir a força intrínseca sozinha: uma revisão de 2012 concluiu que não está claro se algum método consegue separar totalmente os dois. Um artigo de medicina esportiva de 2015 chama os músculos intrínsecos de core do pé porque, assim como os músculos profundos do tronco, eles fazem mais ajustes pequenos e constantes do que movimentos grandes.',
-        'Então um bom programa para os dedos mistura trabalho de controle (abrir os dedos, elevação do dedão) com trabalho de força (puxar a toalha com os dedos, pressionar os dedos contra uma carga) que usa os dois grupos.',
+        'Então **um bom programa para os dedos mistura trabalho de controle (abrir os dedos, elevação do dedão) com trabalho de força (puxar a toalha com os dedos, pressionar os dedos contra uma carga)** que usa os dois grupos.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -166,10 +183,17 @@ export const TOE_STRENGTHENING_PT: Guide = {
       keyFact:
         'Num ensaio com 118\u00A0corredores amadores, quem não fez o programa para os pés teve 2,42\u00A0vezes mais chance de se lesionar ao longo de um ano (Taddei e colegas, 2020).',
       paragraphs: [
-        'Os exercícios para os dedos podem aumentar a força dos dedos, mas só quando o trabalho fica mais difícil com o tempo. Num ensaio de 2016, 85\u00A0adultos de 60 a 90\u00A0anos foram divididos entre um programa supervisionado, com resistência que aumentava ao longo de três meses, e um programa de exercícios em casa. O grupo supervisionado ganhou até 36% de força nos dedos e conseguiu ficar mais tempo em uma perna. O grupo de casa, e um grupo de controle separado de 32\u00A0pessoas, não mostraram mudança na força dos dedos. Os autores disseram que ainda faltava um ensaio que contasse as quedas.',
+        'Os exercícios para os dedos podem aumentar a força dos dedos, mas **só quando o trabalho fica mais difícil com o tempo.**',
+        'Num ensaio de 2016, 85\u00A0adultos de 60 a 90\u00A0anos foram divididos entre um programa supervisionado, com resistência que aumentava ao longo de três meses, e um programa de exercícios em casa. O grupo supervisionado ganhou até 36% de força nos dedos e conseguiu ficar mais tempo em uma perna. O grupo de casa, e um grupo de controle separado de 32\u00A0pessoas, não mostraram mudança na força dos dedos. Os autores disseram que ainda faltava um ensaio que contasse as quedas.',
         'Os corredores também respondem. Num ensaio de 2019 com 57\u00A0corredores, tanto um programa de fortalecimento do pé feito pelo menos cinco vezes por semana quanto a troca para andar com calçados minimalistas (finos, planos e flexíveis) aumentaram o tamanho e a força dos músculos do pé ao longo de dois meses, enquanto o grupo de controle continuou igual. Alguns músculos já estavam maiores em um mês. Se você tem curiosidade sobre o caminho do calçado, veja [calçados barefoot](/pt/calcados-barefoot/).',
         'Para lesões, o resultado isolado mais forte vem de um ensaio de 2020 com 118\u00A0corredores amadores. Quem não recebeu o programa para pé e tornozelo teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida ao longo de 12\u00A0meses do que quem recebeu. É um ensaio só, e o programa treinava o pé e o tornozelo inteiros, não só os dedos. Corredores podem ler mais em [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
-        'O quadro geral é menos certo. Uma revisão de 2022 classificou como de certeza muito baixa a evidência de que o treino dos músculos do pé melhora o equilíbrio dinâmico. Uma revisão de 2025 com 16\u00A0ensaios em idosos concluiu que os exercícios de pé e tornozelo melhoraram a força do tornozelo e o equilíbrio de olhos abertos, mas os dois ensaios que contaram quedas não encontraram um efeito claro. Essa revisão observou, sim, que exercícios para fortalecer os dedos e treinar três vezes por semana pareciam importar para o equilíbrio.',
+        'O quadro geral é menos certo:',
+        {
+          list: [
+            '**Uma revisão de 2022** classificou como de certeza muito baixa a evidência de que o treino dos músculos do pé melhora o equilíbrio dinâmico.',
+            '**Uma revisão de 2025** com 16\u00A0ensaios em idosos concluiu que os exercícios de pé e tornozelo melhoraram a força do tornozelo e o equilíbrio de olhos abertos, mas os dois ensaios que contaram quedas não encontraram um efeito claro. Essa revisão observou, sim, que exercícios para fortalecer os dedos e treinar três vezes por semana pareciam importar para o equilíbrio.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016: 43 supervisionados, 42 em casa, 32 controles não randomizados; 80% dos participantes das intervenções completaram o acompanhamento. Ridge 2019: tamanho dos músculos do pé por ultrassom, força por dinamômetros feitos sob medida. Taddei 2020: o grupo de controle teve 2,42\u00A0vezes (IC 95% 1,98 a 3,62) mais chance de ter uma lesão relacionada à corrida em 12\u00A0meses. Liang 2025: 16\u00A0artigos, 651\u00A0participantes, GRADE baixo a muito baixo.',
@@ -178,8 +202,17 @@ export const TOE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Exercícios para os dedos ajudam a prevenir quedas?',
       paragraphs: [
-        'Não foi demonstrado que exercícios para os dedos, sozinhos, previnem quedas. Dedos fracos andam junto com quedas nos estudos de coorte, e o treino pode aumentar a força dos dedos, mas não encontramos nenhum ensaio que testasse um programa só de dedos tendo as quedas como resultado.',
-        'O teste mais próximo é um ensaio de 2011 com 305\u00A0idosos com dor no pé incapacitante. Metade recebeu um pacote com palmilhas ortopédicas, orientação sobre calçado com um vale para comprar sapatos, um programa de exercícios de pé e tornozelo em casa e um folheto sobre quedas. Esse grupo teve 36% menos quedas ao longo de 12\u00A0meses do que as pessoas que receberam o atendimento de podologia de rotina. A proporção de pessoas que caíram pelo menos uma vez não teve uma diferença clara. Como o exercício era só uma parte do pacote, o ensaio não consegue dizer quanto os exercícios em si contribuíram.',
+        '**Não foi demonstrado que exercícios para os dedos, sozinhos, previnem quedas.** Dedos fracos andam junto com quedas nos estudos de coorte, e o treino pode aumentar a força dos dedos, mas não encontramos nenhum ensaio que testasse um programa só de dedos tendo as quedas como resultado.',
+        'O teste mais próximo é um ensaio de 2011 com 305\u00A0idosos com dor no pé incapacitante. Metade recebeu um pacote com:',
+        {
+          list: [
+            'Palmilhas ortopédicas.',
+            'Orientação sobre calçado com um vale para comprar sapatos.',
+            'Um programa de exercícios de pé e tornozelo em casa.',
+            'Um folheto sobre quedas.',
+          ],
+        },
+        'Esse grupo teve 36% menos quedas ao longo de 12\u00A0meses do que as pessoas que receberam o atendimento de podologia de rotina. A proporção de pessoas que caíram pelo menos uma vez não teve uma diferença clara. Como o exercício era só uma parte do pacote, o ensaio não consegue dizer quanto os exercícios em si contribuíram.',
         'Se você já caiu ou se sente instável, o trabalho dos dedos é um complemento sensato, mas uma avaliação de risco de queda com um profissional de saúde deve vir primeiro. Os exercícios desta página não são um programa de prevenção de quedas.',
       ],
       sourceNote: 'Spink 2011: razão de taxas de incidência de 0,64 (IC 95% 0,45 a 0,91); proporção de pessoas que caíram, RR 0,85 (0,66 a 1,08).',
@@ -189,7 +222,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
       h2: 'Com que frequência fazer exercícios para fortalecer os dedos dos pés?',
       paragraphs: [
         'Os exercícios para fortalecer os dedos costumam ser feitos de três a cinco vezes por semana. A revisão de 2025 sobre ensaios em idosos concluiu que treinar três vezes por semana parecia importar para o equilíbrio, e o ensaio de 2019 com corredores usou pelo menos cinco sessões por semana. As sessões podem ser curtas: de cinco a dez minutos é mais que suficiente para o trabalho de dedos e arco.',
-        'Conte com alguns meses, não algumas sessões: os estudos acima mediram os principais ganhos depois de dois a três meses. Refaça os testes caseiros acima mais ou menos uma vez por mês para ver o que está mudando.',
+        '**Conte com alguns meses, não algumas sessões**: os estudos acima mediram os principais ganhos depois de dois a três meses. Refaça os testes caseiros acima mais ou menos uma vez por mês para ver o que está mudando.',
         'Se os seus dedos são tortos ou rígidos, comece por [exercícios para dedo em martelo](/pt/dedo-em-martelo-exercicios/) ou [exercícios para joanete](/pt/joanete-exercicios/), que cobrem esses formatos. Para um plano mais amplo, que acrescenta a panturrilha e o tornozelo, veja [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

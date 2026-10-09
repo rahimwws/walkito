@@ -33,7 +33,8 @@ export const EX_FOOT_ROLL_ES: Guide = {
     {
       h2: '¿Cómo se hace el masaje plantar con pelota?',
       paragraphs: [
-        'Siéntate en una silla con un pie sobre una pelota. Sirve una pelota de tenis, una de lacrosse o una de masaje. Pon la pelota bajo el arco y ruédala despacio desde la parte delantera del pie hacia el talón y de vuelta. Usa presión firme, no ligera. La pelota debe hundirse en el tejido lo suficiente para que sientas una presión profunda y sostenida.',
+        'Siéntate en una silla con un pie sobre una pelota. Sirve una pelota de tenis, una de lacrosse o una de masaje. Pon la pelota bajo el arco y ruédala despacio desde la parte delantera del pie hacia el talón y de vuelta.',
+        'Usa presión firme, no ligera. La pelota debe hundirse en el tejido lo suficiente para que sientas una presión profunda y sostenida.',
         'Rueda unos 2\u00A0minutos por pie. Mantén la presión constante y evita los puntos que se sientan agudos. Si un punto te hace hacer muecas de dolor, afloja o sáltalo. La meta es un masaje firme, no dolor.',
       ],
       exercises: [
@@ -58,7 +59,7 @@ export const EX_FOOT_ROLL_ES: Guide = {
       h2: '¿Rodar una pelota bajo el pie ayuda con la fascitis plantar?',
       paragraphs: [
         'Fisioterapeutas y podólogos recomiendan mucho rodar el pie como parte del cuidado de la fascitis plantar. La idea es que funciona como un automasaje: presiona a lo largo de la fascia, puede aumentar el flujo de sangre en la zona y puede bajar la sensación de tensión. Es común que las personas sientan alivio por un rato después de rodar el pie.',
-        'Aun así, ningún ensayo aleatorizado ha probado el masaje con pelota como intervención única para la fascitis plantar. Aparece en protocolos junto con estiramientos y fortalecimiento, pero nunca es lo que se mide. La guía de 2023 no le da un grado propio. La evidencia está en los estiramientos y el entrenamiento de fuerza.',
+        'Aun así, **ningún ensayo aleatorizado ha probado el masaje con pelota como intervención única para la fascitis plantar.** Aparece en protocolos junto con estiramientos y fortalecimiento, pero nunca es lo que se mide. La guía de 2023 no le da un grado propio. La evidencia está en los estiramientos y el entrenamiento de fuerza.',
         'El masaje con pelota entra en la categoría de recuperación. Sirve después de un día largo de pie, después de una sesión de elevaciones de talón, o cuando sientas la planta tensa y adolorida. No reemplaza el [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/), el [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) ni las [elevaciones de talón](/es/ejercicios/elevaciones-de-talon/), que son los que tienen grados en la guía.',
       ],
       cites: [CITE.guideline],
@@ -67,14 +68,21 @@ export const EX_FOOT_ROLL_ES: Guide = {
       h2: '¿Conviene usar una botella de agua congelada?',
       paragraphs: [
         'La botella de agua congelada es uno de los remedios caseros más populares para la fascitis plantar. Su forma te deja rodar toda la planta, y el frío adormece la zona al mismo tiempo. Los profesionales de la salud la recomiendan seguido, y sí se siente bien.',
-        'Esto es lo que dice de verdad la evidencia. El frío (hielo, botellas congeladas) es una herramienta general para manejar el dolor. Baja la molestia porque adormece las terminaciones nerviosas y puede bajar la hinchazón por un rato. Pero ningún ensayo aleatorizado ha comparado una botella congelada con una a temperatura ambiente en la fascitis plantar. El alivio que sientes probablemente es una mezcla del masaje (presión sobre la fascia) y del adormecimiento (frío sobre las terminaciones nerviosas). Si el frío acelera la recuperación más allá de lo que hace rodar el pie es una pregunta abierta.',
-        'Si una botella congelada te alivia, úsala. Solo no cuentes con el frío como reemplazo de los estiramientos y el trabajo de fuerza. Y no pongas hielo más de 15 a 20\u00A0minutos seguidos. El frío prolongado puede irritar la piel.',
+        'Esto es lo que dice de verdad la evidencia. El frío (hielo, botellas congeladas) es una herramienta general para manejar el dolor. Baja la molestia porque adormece las terminaciones nerviosas y puede bajar la hinchazón por un rato.',
+        'Pero ningún ensayo aleatorizado ha comparado una botella congelada con una a temperatura ambiente en la fascitis plantar. El alivio que sientes probablemente es una mezcla del masaje (presión sobre la fascia) y del adormecimiento (frío sobre las terminaciones nerviosas). Si el frío acelera la recuperación más allá de lo que hace rodar el pie es una pregunta abierta.',
+        'Si una botella congelada te alivia, úsala. **Solo no cuentes con el frío como reemplazo de los estiramientos y el trabajo de fuerza.** Y no pongas hielo más de 15 a 20\u00A0minutos seguidos. El frío prolongado puede irritar la piel.',
       ],
     },
     {
       h2: '¿Qué pelota usar?',
       paragraphs: [
-        'La pelota de tenis es el punto de partida más común. Es lo bastante blanda para hundirse en el arco sin sentirse aguda. Una pelota de lacrosse es más dura y da más presión. Una pelota de golf es pequeña y muy dura, y puede ser demasiado para un talón adolorido.',
+        {
+          list: [
+            'La pelota de tenis es el punto de partida más común. Es lo bastante blanda para hundirse en el arco sin sentirse aguda.',
+            'Una pelota de lacrosse es más dura y da más presión.',
+            'Una pelota de golf es pequeña y muy dura, y puede ser demasiado para un talón adolorido.',
+          ],
+        },
         'Empieza con la que tengas. Si después de unas sesiones la pelota de tenis se siente demasiado blanda, prueba una de lacrosse. Si haces muecas de dolor con cualquier pelota, es demasiado dura o estás presionando demasiado. El ejercicio debe sentirse como un masaje profundo, nunca como si apretaras con fuerza sobre una lesión.',
         'Una botella de agua congelada sirve en lugar de una pelota y suma frío. Un rodillo de espuma bajo el pie es todavía más suave. Un rodillo especial para pies de una tienda de deportes hace lo mismo. No está demostrado que ninguno funcione mejor que los otros.',
       ],
@@ -82,9 +90,13 @@ export const EX_FOOT_ROLL_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en el masaje plantar?',
       paragraphs: [
-        'Presionar demasiado. Más fuerte no es mejor. Si empujas hasta que el dolor llega a 6/10 o haces muecas, puedes estar irritando la fascia en lugar de calmarla. Vuelve a una presión firme y constante.',
-        'Rodar demasiado rápido. Ir y venir rápido pasa por encima del tejido. Rueda despacio, más o menos una pasada completa por segundo, para que cada punto reciba presión sostenida.',
-        'Usarlo como único ejercicio. Rodar el pie se siente productivo, y es fácil hacerlo en el escritorio. Pero no fortalece la pantorrilla ni estira la fascia como los ejercicios que tienen grado en la guía. Combínalo con el [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) y las [elevaciones de talón](/es/elevaciones-de-talon-fascitis-plantar/) para cubrirlo todo.',
+        {
+          list: [
+            '**Presionar demasiado.** Más fuerte no es mejor. Si empujas hasta que el dolor llega a 6/10 o haces muecas, puedes estar irritando la fascia en lugar de calmarla. Vuelve a una presión firme y constante.',
+            '**Rodar demasiado rápido.** Ir y venir rápido pasa por encima del tejido. Rueda despacio, más o menos una pasada completa por segundo, para que cada punto reciba presión sostenida.',
+            '**Usarlo como único ejercicio.** Rodar el pie se siente productivo, y es fácil hacerlo en el escritorio. Pero no fortalece la pantorrilla ni estira la fascia como los ejercicios que tienen grado en la guía. Combínalo con el [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) y las [elevaciones de talón](/es/elevaciones-de-talon-fascitis-plantar/) para cubrirlo todo.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -92,7 +104,7 @@ export const EX_FOOT_ROLL_ES: Guide = {
       h2: '¿Cuándo conviene hacerlo y cuándo es mejor evitarlo?',
       paragraphs: [
         'Rueda el pie después de un día largo de pie, después de una sesión de elevaciones de talón, o cuando sientas la planta tensa. En Walkito, el automasaje plantar aparece en los días de recuperación y al final de las sesiones para bajar el ritmo.',
-        'No lo hagas si el talón está muy hinchado, rojo o caliente. Esas señales pueden apuntar a algo distinto de la fascitis plantar, y presionar una zona inflamada puede empeorarla. Consulta primero a un profesional de la salud. Para todos los ejercicios que recomienda la guía, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/).',
+        '**No lo hagas si el talón está muy hinchado, rojo o caliente.** Esas señales pueden apuntar a algo distinto de la fascitis plantar, y presionar una zona inflamada puede empeorarla. Consulta primero a un profesional de la salud. Para todos los ejercicios que recomienda la guía, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/).',
       ],
     },
   ],

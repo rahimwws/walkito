@@ -40,7 +40,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
     {
       h2: 'How do you do a single-leg balance hold?',
       paragraphs: [
-        'Stand near a wall or counter. Lift one foot off the ground by bending the knee slightly. Look at a fixed point straight ahead. Let the standing foot wobble. That wobble is the point: the small muscles in the foot and ankle are working to keep you upright.',
+        'Stand near a wall or counter. Lift one foot off the ground by bending the knee slightly. Look at a fixed point straight ahead. Let the standing foot wobble. **That wobble is the point:** the small muscles in the foot and ankle are working to keep you upright.',
         'Hold for as long as you can, up to 30 seconds, then switch sides. Three holds per side is a common dose. If you cannot hold for more than a few seconds, keep your fingertips on the wall and build up gradually.',
       ],
       exercises: [
@@ -81,14 +81,14 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
       },
       after: [
         'The numbers drop sharply once the eyes close, especially after 50. That makes the eyes-closed version a much more sensitive test of ankle and foot control. It is also why the Walkito app includes an eyes-closed progression after the open-eyes hold.',
-        'What matters more than matching a table is whether your time is improving over weeks and whether both sides are roughly even. A large gap between legs can point to a strength or stability deficit on one side.',
+        '**What matters more than matching a table is whether your time is improving over weeks and whether both sides are roughly even.** A large gap between legs can point to a strength or stability deficit on one side.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'The eyes-closed progression',
       paragraphs: [
-        'Closing your eyes removes the visual input that your brain normally uses to help balance. That forces the proprioceptors in the foot and ankle, the sensors that detect position and movement, to do more of the work. It is a harder version of the same exercise, not a different one.',
+        'Closing your eyes removes the visual input that your brain normally uses to help balance. That forces the proprioceptors in the foot and ankle, the sensors that detect position and movement, to do more of the work. **It is a harder version of the same exercise, not a different one.**',
         'Stand near a wall for safety. Close your eyes and hold as long as you can. Most people find their time drops to a fraction of their eyes-open time. That gap narrows with practice.',
         'The Walkito app includes the eyes-closed stand as a separate exercise: 3 holds of 20 seconds, both feet (alternating). It opens as a progression once the open-eyes balance goal is solid.',
       ],
@@ -97,7 +97,16 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
       h2: 'Why does balance matter for foot pain?',
       keyFact: 'For ankle sprains, a pooled analysis of 8 studies and 3,577 athletes found that balance training lowered sprain risk by 46 percent versus no intervention (Bellows and Wong, 2018).',
       paragraphs: [
-        'Balance is not separate from foot strength. When you stand on one leg, the intrinsic muscles of the foot (the small muscles inside the foot that support the arch), the calf muscles, the tibialis anterior, and the hip stabilizers all work together. A deficit anywhere in that chain makes the foot compensate.',
+        '**Balance is not separate from foot strength.** When you stand on one leg, these all work together:',
+        {
+          list: [
+            'The intrinsic muscles of the foot (the small muscles inside the foot that support the arch).',
+            'The calf muscles.',
+            'The tibialis anterior.',
+            'The hip stabilizers.',
+          ],
+        },
+        'A deficit anywhere in that chain makes the foot compensate.',
         'For plantar fasciitis and flat feet, balance training appears in exercise programs alongside stretching and strengthening because it trains the whole chain at once. A 2023 trial of 52 people with flexible flat feet found that a program combining short-foot exercises, ankle work, hip strengthening, stretching and balance work changed arch shape more than a control group. Balance was not isolated in that trial, but it was part of the program that worked.',
         'For ankle sprains specifically, a 2018 meta-analysis of 8 studies and 3,577 athletes found that balance training reduced ankle sprain risk by 46 percent compared to no intervention. That is the strongest single finding behind including balance in a foot program.',
       ],
@@ -106,18 +115,26 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
     {
       h2: 'What are the common mistakes with single-leg balance?',
       paragraphs: [
-        'Looking at the floor. Your eyes should be on a fixed point at eye level. Looking down shifts your weight forward and makes the exercise easier, which defeats the purpose.',
-        'Locking the standing knee. A slight bend keeps the muscles active. A locked knee transfers the load to the joint rather than the muscles around it.',
-        'Trying not to wobble. The wobble is the exercise. The small corrections your foot makes to stay upright are what build proprioception and ankle control. Gripping the floor with curled toes or tensing up to eliminate all movement reduces the training effect.',
-        'Standing too far from a wall. You need to be close enough to catch yourself if you lose balance, especially during the eyes-closed version. Safety first.',
+        {
+          list: [
+            '**Looking at the floor.** Your eyes should be on a fixed point at eye level. Looking down shifts your weight forward and makes the exercise easier, which defeats the purpose.',
+            '**Locking the standing knee.** A slight bend keeps the muscles active. A locked knee transfers the load to the joint rather than the muscles around it.',
+            '**Trying not to wobble.** The wobble is the exercise. The small corrections your foot makes to stay upright are what build proprioception and ankle control. Gripping the floor with curled toes or tensing up to eliminate all movement reduces the training effect.',
+            '**Standing too far from a wall.** You need to be close enough to catch yourself if you lose balance, especially during the eyes-closed version. Safety first.',
+          ],
+        },
       ],
     },
     {
       h2: 'Easier and harder versions',
       paragraphs: [
-        'If you cannot hold one leg for more than a few seconds, keep fingertips on a wall and work up. Even a light touch gives the brain extra balance input. Remove one finger at a time as you improve.',
-        'If 30 seconds on a hard floor feels easy, try standing on a folded towel or a pillow. The soft surface makes the ankle work harder with each wobble. The app includes a balance-on-a-pillow exercise as a further progression.',
-        'The hardest progression is single-leg balance with eyes closed on a soft surface. That removes both visual input and a stable floor, leaving the foot and ankle to do nearly all the work.',
+        {
+          list: [
+            '**Easier:** If you cannot hold one leg for more than a few seconds, keep fingertips on a wall and work up. Even a light touch gives the brain extra balance input. Remove one finger at a time as you improve.',
+            '**Harder:** If 30 seconds on a hard floor feels easy, try standing on a folded towel or a pillow. The soft surface makes the ankle work harder with each wobble. The app includes a balance-on-a-pillow exercise as a further progression.',
+            '**Hardest:** The hardest progression is single-leg balance with eyes closed on a soft surface. That removes both visual input and a stable floor, leaving the foot and ankle to do nearly all the work.',
+          ],
+        },
         'For related exercises that build the chain, see [calf raises](/exercises/calf-raises/), [tibialis raises](/exercises/tibialis-raises/) and [short foot exercise](/exercises/short-foot-exercise/).',
       ],
     },

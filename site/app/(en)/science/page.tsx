@@ -139,7 +139,10 @@ export default function Science() {
           For heel pain from plantar fasciitis, the 2023 guideline gives
           stretching its top grade, A, and strength training a B. In a trial of
           48 people, heavy heel raises eased pain faster than stretching, and by
-          twelve months both groups were even. For <b>flexible</b> flat feet,
+          twelve months both groups were even.
+        </p>
+        <p>
+          For <b>flexible</b> flat feet,
           one trial of 52 people found that six weeks of exercise changed the
           shape of the arch. A 2024 review of short-foot training found no
           significant difference overall, and one arch measure improved only in
@@ -214,7 +217,10 @@ export default function Science() {
           The heel raise in Walkito follows this trial. You stand on one leg on
           a step, with a towel under your toes. You take three seconds to rise,
           hold for two, and take three to lower, on strength days, three a
-          week, never two in a row. It sits near
+          week, never two in a row.
+        </p>
+        <p>
+          It sits near
           the top of Walkito’s calf exercises, which get harder one level at a
           time. It never comes in the first week, which keeps load off the
           plantar fascia at the start. The exercise and its starting dose are
@@ -329,7 +335,10 @@ export default function Science() {
           length and no last week where the exercises stop. The plan is built
           one week at a time around a focus goal. When you reach a goal, it
           moves to maintaining: it keeps a place in the plan at a lower dose,
-          and the next goal takes its place. Tests continue every{' '}
+          and the next goal takes its place.
+        </p>
+        <p>
+          Tests continue every{' '}
           {PROGRAM.testEveryDaysAfterGoal} days after the first goal is reached,
           so a slide in the numbers shows up instead of being guessed at. None
           of this promises the pain will not come back.

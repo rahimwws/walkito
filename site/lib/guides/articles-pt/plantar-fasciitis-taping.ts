@@ -39,7 +39,9 @@ export const PF_TAPING_PT: Guide = {
       h2: 'Quanto a bandagem ajuda, e por quanto tempo?',
       keyFact: 'Em um ensaio cego com 92\u00A0pessoas, a bandagem low-Dye reduziu a dor dos primeiros passos em cerca de 1,2\u00A0ponto de 10 a mais que uma bandagem falsa depois de uma semana (Radford e colegas, 2006).',
       paragraphs: [
-        'O alívio da fita é real, mas modesto, e passa rápido depois que você tira a fita. O teste mais limpo é um ensaio australiano de 2006 com 92\u00A0pessoas com dor no calcanhar. Metade usou a bandagem rígida low-Dye por uma semana mais um ultrassom falso, e a outra metade recebeu só o ultrassom falso. Os participantes foram avisados de que uma das duas opções podia ser falsa, embora a maioria no grupo da fita tenha achado que estava com a verdadeira. O grupo com fita teve cerca de 1,2\u00A0ponto a menos de dor nos primeiros passos, numa escala de 0 a 10, que o grupo do placebo. Outras medidas, como a função do pé, não mudaram entre os grupos (Radford e colegas, 2006).',
+        '**O alívio da fita é real, mas modesto, e passa rápido depois que você tira a fita.**',
+        'O teste mais limpo é um ensaio australiano de 2006 com 92\u00A0pessoas com dor no calcanhar. Metade usou a bandagem rígida low-Dye por uma semana mais um ultrassom falso, e a outra metade recebeu só o ultrassom falso. Os participantes foram avisados de que uma das duas opções podia ser falsa, embora a maioria no grupo da fita tenha achado que estava com a verdadeira.',
+        'O grupo com fita teve cerca de 1,2\u00A0ponto a menos de dor nos primeiros passos, numa escala de 0 a 10, que o grupo do placebo. Outras medidas, como a função do pé, não mudaram entre os grupos (Radford e colegas, 2006).',
         'O grupo do placebo também melhorou, perto de 2\u00A0pontos, só por estar em um estudo e esperar ajuda. Um estudo anterior da mesma equipe, sem sorteio dos grupos, relatou uma diferença mais que duas vezes maior (Landorf e colegas, 2005). Quando não há um grupo de comparação justo, a fita parece mais forte do que é.',
         'A kinesio tape mostra o mesmo padrão curto. Em um ensaio de 2024 com 34\u00A0pessoas, a kinesio tape superou uma fita falsa em até 3,5\u00A0pontos de 10 no segundo dia, e a diferença foi diminuindo dia após dia até a fita ser retirada (García-Gomariz e colegas, 2024). A diretriz de 2023 não encontrou estudos sobre bandagem que fossem além de cerca de um mês e meio.',
       ],
@@ -51,9 +53,16 @@ export const PF_TAPING_PT: Guide = {
       h2: 'Bandagem low-Dye ou kinesio tape: qual é melhor?',
       keyFact: 'Em um ensaio com 40\u00A0pessoas, a kinesio tape aliviou a dor 2\u00A0pontos de 10 a mais que a bandagem low-Dye no primeiro dia, com a diferença diminuindo a cada dia (García-Gomariz e colegas, 2024).',
       paragraphs: [
-        'Os dois tipos de fita têm apoio de ensaios, e ainda não há um vencedor claro. A bandagem low-Dye usa esparadrapo esportivo rígido, que não estica (muitas vezes fita de óxido de zinco), para segurar o arco e limitar o quanto ele afunda. A kinesio tape, a bandagem elástica muitas vezes vendida como KT tape, é fina e elástica. Ela acompanha o movimento e não prende o pé no lugar.',
-        'Só um ensaio pequeno comparou as duas diretamente. Em 40\u00A0pessoas, a kinesio tape aliviou mais a dor no primeiro dia, 2\u00A0pontos de 10, e os participantes a acharam mais confortável, menos abafada e mais durável. A diferença na dor diminuiu a cada dia depois disso (García-Gomariz e colegas, 2024). Uma terceira opção, a bandagem do calcâneo (quatro tiras em volta do osso do calcanhar e do tendão de Aquiles, sem tocar o arco), reduziu a dor mais que o alongamento ou uma fita falsa depois de uma semana, em um ensaio com 41\u00A0pessoas (Hyland e colegas, 2006).',
-        'Duas revisões de 2026, cada uma com 11\u00A0ensaios, apontam para o mesmo lado. A kinesio tape somada à reabilitação reduziu a dor um pouco mais que só a reabilitação, um resultado que os autores chamaram de preliminar (Song e colegas, 2026). A bandagem low-Dye foi melhor que um placebo, mas não foi melhor que outras opções (Zhang e colegas, 2026).',
+        'Os dois tipos de fita têm apoio de ensaios, e **ainda não há um vencedor claro.** A bandagem low-Dye usa esparadrapo esportivo rígido, que não estica (muitas vezes fita de óxido de zinco), para segurar o arco e limitar o quanto ele afunda. A kinesio tape, a bandagem elástica muitas vezes vendida como KT tape, é fina e elástica. Ela acompanha o movimento e não prende o pé no lugar.',
+        'Só um ensaio pequeno comparou as duas diretamente. Em 40\u00A0pessoas, a kinesio tape aliviou mais a dor no primeiro dia, 2\u00A0pontos de 10, e os participantes a acharam mais confortável, menos abafada e mais durável. A diferença na dor diminuiu a cada dia depois disso (García-Gomariz e colegas, 2024).',
+        'Uma terceira opção, a bandagem do calcâneo (quatro tiras em volta do osso do calcanhar e do tendão de Aquiles, sem tocar o arco), reduziu a dor mais que o alongamento ou uma fita falsa depois de uma semana, em um ensaio com 41\u00A0pessoas (Hyland e colegas, 2006).',
+        'Duas revisões de 2026, cada uma com 11\u00A0ensaios, apontam para o mesmo lado:',
+        {
+          list: [
+            'A kinesio tape somada à reabilitação reduziu a dor um pouco mais que só a reabilitação, um resultado que os autores chamaram de preliminar (Song e colegas, 2026).',
+            'A bandagem low-Dye foi melhor que um placebo, mas não foi melhor que outras opções (Zhang e colegas, 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Bandagem rígida low-Dye ou kinesio tape para fascite plantar',
@@ -71,7 +80,7 @@ export const PF_TAPING_PT: Guide = {
     {
       h2: 'Como fazer a bandagem no pé para fascite plantar (método low-Dye)?',
       paragraphs: [
-        'A bandagem low-Dye leva cerca de cinco minutos depois que você pega a prática. Se puder, peça a um fisioterapeuta ou podólogo para mostrar como se faz na primeira vez. Os passos abaixo seguem a versão mais comum.',
+        'A bandagem low-Dye leva cerca de cinco minutos depois que você pega a prática. **Se puder, peça a um fisioterapeuta ou podólogo para mostrar como se faz na primeira vez.** Os passos abaixo seguem a versão mais comum.',
         'Antes de começar, lave o pé com sabonete comum, seque bem e não passe creme. Corte as tiras antes, de um esparadrapo esportivo rígido com cerca de 2,5\u00A0cm de largura. Sente-se com o pé apoiado em ângulo reto com a perna, sem apontar os dedos para baixo.',
       ],
       bullets: [
@@ -102,7 +111,7 @@ export const PF_TAPING_PT: Guide = {
     {
       h2: 'Por quanto tempo deixar a bandagem para fascite plantar, e dá para dormir com ela?',
       paragraphs: [
-        'A maioria das pessoas deixa a fita de dois a cinco dias e depois dá um descanso para a pele. Isso bate com os ensaios: a bandagem low-Dye ficou de 3 a 5\u00A0dias em um estudo e uma semana em outro, e a kinesio tape foi usada por 5\u00A0dias nos ensaios de 2024 (Landorf e colegas, 2005; Radford e colegas, 2006; García-Gomariz e colegas, 2024).',
+        '**A maioria das pessoas deixa a fita de dois a cinco dias e depois dá um descanso para a pele.** Isso bate com os ensaios: a bandagem low-Dye ficou de 3 a 5\u00A0dias em um estudo e uma semana em outro, e a kinesio tape foi usada por 5\u00A0dias nos ensaios de 2024 (Landorf e colegas, 2005; Radford e colegas, 2006; García-Gomariz e colegas, 2024).',
         'A fita rígida afrouxa conforme você anda, então muitas vezes precisa de uma tira nova antes. A kinesio tape é feita para durar vários dias e pode molhar. Seque com batidinhas da toalha depois do banho e não use secador de cabelo nela.',
         'Você pode dormir com a fita se a pele estiver normal, mas não encontramos nenhum ensaio que tenha testado a fita usada só à noite. Para a dor da manhã, a opção com apoio da diretriz é a tala noturna, explicada em [tala noturna para fascite plantar](/pt/tala-noturna-fascite-plantar/), junto com os alongamentos de [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/).',
       ],
@@ -112,8 +121,23 @@ export const PF_TAPING_PT: Guide = {
       h2: 'Quais são os efeitos colaterais da bandagem?',
       keyFact: 'Em um ensaio com 92\u00A0pessoas, 13 das 46 que usaram a bandagem low-Dye (28%) tiveram um efeito colateral, e todos sumiram quando a fita foi retirada (Radford e colegas, 2006).',
       paragraphs: [
-        'Os principais efeitos colaterais da bandagem são irritação na pele e a fita parecer apertada demais. A diretriz de 2023 diz que uma irritação leve na pele é o único dano relatado. O ensaio cego de 2006 traz os números mais claros. Das 46\u00A0pessoas que usaram a fita rígida por uma semana, 13 (28%) tiveram um efeito colateral: 4 acharam a fita apertada demais, 4 tiveram uma reação alérgica na pele e 5 notaram uma dor nova em outro ponto da perna. Cinco tiraram a fita antes do tempo. Todos esses efeitos sumiram quando a fita foi retirada (Radford e colegas, 2006).',
-        'Para diminuir o risco, use fita hipoalergênica ou uma proteção fina por baixo (underwrap) se a pele for sensível, nunca puxe a fita rígida apertada em volta do pé e tire a fita devagar, de preferência depois de soltá-la com um pouco de óleo de bebê.',
+        '**Os principais efeitos colaterais da bandagem são irritação na pele e a fita parecer apertada demais.** A diretriz de 2023 diz que uma irritação leve na pele é o único dano relatado. O ensaio cego de 2006 traz os números mais claros. Das 46\u00A0pessoas que usaram a fita rígida por uma semana, 13 (28%) tiveram um efeito colateral:',
+        {
+          list: [
+            '4 acharam a fita apertada demais.',
+            '4 tiveram uma reação alérgica na pele.',
+            '5 notaram uma dor nova em outro ponto da perna.',
+          ],
+        },
+        'Cinco tiraram a fita antes do tempo. Todos esses efeitos sumiram quando a fita foi retirada (Radford e colegas, 2006).',
+        'Para diminuir o risco:',
+        {
+          list: [
+            'Use fita hipoalergênica ou uma proteção fina por baixo (underwrap) se a pele for sensível.',
+            'Nunca puxe a fita rígida apertada em volta do pé.',
+            'Tire a fita devagar, de preferência depois de soltá-la com um pouco de óleo de bebê.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -122,7 +146,9 @@ export const PF_TAPING_PT: Guide = {
       keyFact: 'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, e os dois grupos estavam iguais aos doze meses (Rathleff e colegas, 2015).',
       paragraphs: [
         'Combine a fita com alongamento e fortalecimento da panturrilha, porque essas são as partes com evidência além do curto prazo. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau **A** para dor tanto no curto quanto no longo prazo. O treino de força recebe um **B**. Em um ensaio com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, embora os dois grupos estivessem iguais aos doze meses (Rathleff e colegas, 2015).',
-        'A fita pode deixar a caminhada mais fácil nesta semana, para você continuar se mexendo e fazendo os exercícios. Se a própria caminhada dispara a dor, [dor no calcanhar depois de andar](/pt/dor-no-calcanhar-depois-de-andar/) explica como ajustar a carga. Os três exercícios abaixo são a base. No Walkito, os alongamentos começam com 2\u00A0vezes de 30\u00A0segundos, e esta elevação de calcanhar com toalha, quando o seu plano chega nela, fica em 4\u00A0séries de 10 com a mesma contagem lenta de 3-2-3 (uma mochila acrescenta peso quando você tem um degrau). Uma vez por semana, o exercício da sua meta principal sobe um degrau se as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou, e desce um degrau se uma sessão pareceu difícil ou a dor da manhã subiu 2\u00A0pontos ou mais.',
+        'A fita pode deixar a caminhada mais fácil nesta semana, para você continuar se mexendo e fazendo os exercícios. Se a própria caminhada dispara a dor, [dor no calcanhar depois de andar](/pt/dor-no-calcanhar-depois-de-andar/) explica como ajustar a carga.',
+        'Os três exercícios abaixo são a base. No Walkito, os alongamentos começam com 2\u00A0vezes de 30\u00A0segundos, e esta elevação de calcanhar com toalha, quando o seu plano chega nela, fica em 4\u00A0séries de 10 com a mesma contagem lenta de 3-2-3 (uma mochila acrescenta peso quando você tem um degrau).',
+        'Uma vez por semana, o exercício da sua meta principal sobe um degrau se as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou, e desce um degrau se uma sessão pareceu difícil ou a dor da manhã subiu 2\u00A0pontos ou mais.',
       ],
       exercises: [
         {
@@ -167,7 +193,15 @@ export const PF_TAPING_PT: Guide = {
     {
       h2: 'Quando parar de usar a bandagem?',
       paragraphs: [
-        'Pare de usar a bandagem quando ela não fizer mais uma diferença que você sinta, quando a pele reagir, ou quando a dor tiver acalmado o bastante para você andar normalmente sem ela. A fita não foi feita para ser usada por meses. A pesquisa cobre até cerca de um mês e meio, e a diretriz só a recomenda para o curto prazo.',
+        'Pare de usar a bandagem:',
+        {
+          list: [
+            'Quando ela não fizer mais uma diferença que você sinta.',
+            'Quando a pele reagir.',
+            'Quando a dor tiver acalmado o bastante para você andar normalmente sem ela.',
+          ],
+        },
+        '**A fita não foi feita para ser usada por meses.** A pesquisa cobre até cerca de um mês e meio, e a diretriz só a recomenda para o curto prazo.',
         'Um teste simples: fique um dia sem fita e dê uma nota de 0 a 10 para a dor dos primeiros passos. Se for igual à dos dias com fita, ela já não está fazendo muita coisa. Se você ainda precisa da fita todos os dias depois de um mês de exercícios regulares, procure um profissional de saúde para descartar outra causa e conversar sobre outras opções, como palmilhas (veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/)).',
       ],
       cites: [CITE.guideline],

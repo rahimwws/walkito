@@ -30,7 +30,18 @@ export const FLAT_FEET_AGE_FR: Guide = {
       keyFact: 'Dans une comparaison entre 50\u00A0jeunes adultes (âge moyen 20,9\u00A0ans) et 50\u00A0adultes âgés (âge moyen 80,2\u00A0ans) sans problème de pied, les pieds âgés étaient plus plats et en plus forte pronation (Scott et coll., 2007).',
       figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       paragraphs: [
-        'Les pieds plats ont tendance à devenir légèrement plus plats avec l’âge, comme la plupart des pieds. Dans une étude de 2007 de l’université La Trobe, des chercheurs ont comparé 50\u00A0jeunes adultes (âge moyen 20,9\u00A0ans) à 50\u00A0adultes âgés (âge moyen 80,2\u00A0ans). Personne dans les deux groupes n’avait de problème de pied. Le groupe âgé avait des pieds plus plats et en plus forte pronation (la pronation veut dire que le pied s’affaisse vers l’intérieur), des chevilles et des articulations du gros orteil plus raides, des muscles des orteils plus faibles, plus d’hallux valgus et moins de sensibilité sous la plante. À la marche, leur médio-pied restait au sol pendant une part de chaque pas plus grande de 14\u00A0%.',
+        '**Les pieds plats ont tendance à devenir légèrement plus plats avec l’âge, comme la plupart des pieds.** Dans une étude de 2007 de l’université La Trobe, des chercheurs ont comparé 50\u00A0jeunes adultes (âge moyen 20,9\u00A0ans) à 50\u00A0adultes âgés (âge moyen 80,2\u00A0ans). Personne dans les deux groupes n’avait de problème de pied.',
+        'Le groupe âgé avait\u00A0:',
+        {
+          list: [
+            'Des pieds plus plats et en plus forte pronation (la pronation veut dire que le pied s’affaisse vers l’intérieur).',
+            'Des chevilles et des articulations du gros orteil plus raides.',
+            'Des muscles des orteils plus faibles.',
+            'Plus d’hallux valgus.',
+            'Moins de sensibilité sous la plante.',
+          ],
+        },
+        'À la marche, leur médio-pied restait au sol pendant une part de chaque pas plus grande de 14\u00A0%.',
         'Cette étude a une limite importante. Elle a comparé deux groupes de personnes différents à un même moment. Elle n’a pas suivi les mêmes pieds pendant 60\u00A0ans. Elle montre donc que les pieds âgés sont plus plats en moyenne, mais pas à quelle vitesse un pied donné change, ni si un pied déjà plat change plus ou moins qu’un pied ordinaire. Nous n’avons pas trouvé d’étude qui ait suivi des pieds plats de naissance sur des décennies.',
         'Chez la plupart des gens, ce changement lent touche les deux pieds, sans date de début nette et souvent sans douleur. Un changement rapide et d’un seul côté, c’est une autre histoire, abordée plus bas.',
       ],
@@ -39,8 +50,18 @@ export const FLAT_FEET_AGE_FR: Guide = {
     {
       h2: 'Pourquoi la voûte s’affaisse-t-elle avec l’âge\u00A0?',
       paragraphs: [
-        'La voûte est maintenue par les os, les ligaments (les bandes solides qui relient les os entre eux), le fascia plantaire sous le pied, et des muscles. Le muscle principal est le tibial postérieur, un muscle profond du mollet dont le tendon passe derrière la malléole interne et tire la voûte vers le haut à chaque pas. De petits muscles à l’intérieur du pied y contribuent aussi.',
-        'Plusieurs de ces éléments changent avec l’âge. Dans la comparaison de 2007, le groupe âgé avait aussi des muscles des orteils plus faibles et des chevilles plus raides, même si l’étude n’a pas vérifié si cela expliquait les pieds plus plats. Le poids compte aussi. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une probabilité environ 2,6\u00A0fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.',
+        'La voûte est maintenue par\u00A0:',
+        {
+          list: [
+            'Les os.',
+            'Les ligaments (les bandes solides qui relient les os entre eux).',
+            'Le fascia plantaire sous le pied.',
+            'Des muscles.',
+          ],
+        },
+        'Le muscle principal est le tibial postérieur, un muscle profond du mollet dont le tendon passe derrière la malléole interne et tire la voûte vers le haut à chaque pas. De petits muscles à l’intérieur du pied y contribuent aussi.',
+        'Plusieurs de ces éléments changent avec l’âge. Dans la comparaison de 2007, le groupe âgé avait aussi des muscles des orteils plus faibles et des chevilles plus raides, même si l’étude n’a pas vérifié si cela expliquait les pieds plus plats.',
+        'Le poids compte aussi. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une probabilité environ 2,6\u00A0fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -48,7 +69,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
       h2: 'Peut-on avoir les pieds plats à l’âge adulte\u00A0?',
       keyFact: 'Dans une enquête auprès de 582\u00A0femmes de plus de 40\u00A0ans, 3,3\u00A0% avaient une dysfonction du tendon tibial postérieur de stade I ou II, et aucune n’avait été diagnostiquée malgré des symptômes anciens (Kohls-Gatzoulis et coll., 2009).',
       paragraphs: [
-        'On peut avoir les pieds plats à l’âge adulte, et la cause la plus fréquente est la dysfonction du tendon tibial postérieur, quand le tendon qui soutient la voûte s’affaiblit, s’étire ou se déchire. On parlait autrefois de pied plat acquis de l’adulte. En 2020, un groupe de chirurgiens du pied et de la cheville s’est accordé sur un nouveau nom, la déformation progressive du pied par affaissement (progressive collapsing foot deformity), car la déformation peut continuer à progresser et n’est pas toujours due au seul tendon.',
+        '**On peut avoir les pieds plats à l’âge adulte**, et la cause la plus fréquente est la dysfonction du tendon tibial postérieur, quand le tendon qui soutient la voûte s’affaiblit, s’étire ou se déchire. On parlait autrefois de pied plat acquis de l’adulte. En 2020, un groupe de chirurgiens du pied et de la cheville s’est accordé sur un nouveau nom, la déformation progressive du pied par affaissement (progressive collapsing foot deformity), car la déformation peut continuer à progresser et n’est pas toujours due au seul tendon.',
         'Ce n’est pas rare. Dans une enquête de 2009 auprès de femmes de plus de 40\u00A0ans suivies dans un cabinet de médecine générale en Angleterre, 582 ont renvoyé un questionnaire exploitable. Après des appels et des examens, 3,3\u00A0% avaient une dysfonction du tendon tibial postérieur à un stade débutant (stade I ou II). Aucune n’avait été diagnostiquée, alors que leurs symptômes étaient typiques et duraient depuis longtemps.',
         'Contrairement à un pied plat présent depuis toujours, elle commence en général d’un seul côté, avec une douleur et parfois un gonflement derrière ou sous la malléole interne. Monter sur la pointe de ce seul pied devient difficile ou douloureux. Les stades et les essais d’exercices sont présentés dans le [guide de la dysfonction du tendon tibial postérieur](/fr/dysfonction-tendon-tibial-posterieur/).',
       ],
@@ -57,7 +78,17 @@ export const FLAT_FEET_AGE_FR: Guide = {
     {
       h2: 'Qu’est-ce qui aggrave les pieds plats\u00A0?',
       paragraphs: [
-        'Les facteurs liés à l’affaissement de la voûte chez l’adulte sont surtout ceux liés à l’usure du tendon. Dans une revue de 1992 portant sur 67\u00A0personnes dont le tendon tibial postérieur s’était rompu (âge moyen 57\u00A0ans), 60\u00A0% avaient au moins l’un de ces facteurs\u00A0: hypertension, obésité, diabète, chirurgie ou blessure antérieure du côté intérieur du pied, ou exposition aux corticoïdes. L’obésité montrait le lien le plus net. Il s’agissait d’une analyse rétrospective de cas, pas d’une étude contrôlée\u00A0: elle désigne des facteurs probables sans prouver qu’ils sont la cause.',
+        'Les facteurs liés à l’affaissement de la voûte chez l’adulte sont surtout ceux liés à l’usure du tendon. Dans une revue de 1992 portant sur 67\u00A0personnes dont le tendon tibial postérieur s’était rompu (âge moyen 57\u00A0ans), 60\u00A0% avaient au moins l’un de ces facteurs\u00A0:',
+        {
+          list: [
+            'Hypertension.',
+            'Obésité.',
+            'Diabète.',
+            'Chirurgie ou blessure antérieure du côté intérieur du pied.',
+            'Exposition aux corticoïdes.',
+          ],
+        },
+        'L’obésité montrait le lien le plus net. Il s’agissait d’une analyse rétrospective de cas, pas d’une étude contrôlée\u00A0: elle désigne des facteurs probables sans prouver qu’ils sont la cause.',
       ],
       bullets: [
         '**Le poids.** L’obésité est liée à la fois aux pieds plats en général et à la rupture du tendon.',
@@ -67,7 +98,8 @@ export const FLAT_FEET_AGE_FR: Guide = {
         '**La grossesse**, abordée juste après.',
       ],
       after: [
-        'Le **pied de Charcot** mérite une mise en garde à part. Chez les personnes diabétiques avec une atteinte des nerfs (neuropathie, quand les pieds perdent leur sensibilité), les os et les articulations du médio-pied peuvent s’affaiblir et s’effondrer, parfois rapidement. Un groupe d’experts a décrit en 2011 le tableau précoce typique\u00A0: un pied nettement gonflé, chaud, souvent rouge, avec une douleur seulement légère à modérée. On le confond souvent avec une infection, un caillot ou une crise de goutte. Si vous êtes diabétique et qu’un pied devient chaud et gonflé, faites-le examiner le jour même.',
+        'Le **pied de Charcot** mérite une mise en garde à part. Chez les personnes diabétiques avec une atteinte des nerfs (neuropathie, quand les pieds perdent leur sensibilité), les os et les articulations du médio-pied peuvent s’affaiblir et s’effondrer, parfois rapidement.',
+        'Un groupe d’experts a décrit en 2011 le tableau précoce typique\u00A0: un pied nettement gonflé, chaud, souvent rouge, avec une douleur seulement légère à modérée. On le confond souvent avec une infection, un caillot ou une crise de goutte. Si vous êtes diabétique et qu’un pied devient chaud et gonflé, faites-le examiner le jour même.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -75,7 +107,8 @@ export const FLAT_FEET_AGE_FR: Guide = {
       h2: 'La grossesse peut-elle rendre les pieds plus plats pour de bon\u00A0?',
       keyFact: 'Chez 49\u00A0femmes mesurées en début de grossesse puis environ quatre mois et demi après l’accouchement, la hauteur de la voûte a baissé et la longueur du pied a augmenté, surtout lors d’une première grossesse (Segal et coll., 2013).',
       paragraphs: [
-        'La grossesse peut abaisser un peu la voûte, et ce changement peut persister après l’accouchement. Dans une étude de 2013, les pieds de 49\u00A0femmes ont été mesurés au premier trimestre puis environ quatre mois et demi après l’accouchement. La hauteur et la rigidité de la voûte ont diminué, et la longueur du pied et l’affaissement de la voûte ont augmenté. La première grossesse expliquait l’essentiel du changement. Chez les femmes qui avaient leur premier enfant, la longueur du pied a augmenté d’environ 1,4\u00A0millimètre et l’affaissement de la voûte d’environ 1,0\u00A0millimètre en moyenne.',
+        '**La grossesse peut abaisser un peu la voûte, et ce changement peut persister après l’accouchement.** Dans une étude de 2013, les pieds de 49\u00A0femmes ont été mesurés au premier trimestre puis environ quatre mois et demi après l’accouchement. La hauteur et la rigidité de la voûte ont diminué, et la longueur du pied et l’affaissement de la voûte ont augmenté.',
+        'La première grossesse expliquait l’essentiel du changement. Chez les femmes qui avaient leur premier enfant, la longueur du pied a augmenté d’environ 1,4\u00A0millimètre et l’affaissement de la voûte d’environ 1,0\u00A0millimètre en moyenne.',
         'Deux éléments remettent cela en perspective. Les auteurs ont jugé les changements moyens faibles, et l’étude n’a trouvé aucun changement d’une mesure de la façon dont le pied s’affaissait à la marche. «\u00A0Durable\u00A0», dans cette étude, veut dire encore présent à la visite de suivi quelques mois après l’accouchement. Personne n’a été suivi pendant des années.',
         'Si votre pointure a augmenté après une grossesse et que vos pieds vont bien, ce changement est fréquent. Si une voûte continue de s’affaisser, ou si l’intérieur de la cheville commence à faire mal, faites-le examiner.',
       ],
@@ -84,7 +117,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
     {
       h2: 'Quand un pied qui s’aplatit pose-t-il problème\u00A0?',
       paragraphs: [
-        'Un pied qui s’aplatit pose problème quand il change vite, d’un seul côté, ou avec une douleur ou un gonflement. Un changement lent des deux pieds sans douleur est fréquent avec l’âge. Le tableau classe les situations habituelles.',
+        '**Un pied qui s’aplatit pose problème quand il change vite, d’un seul côté, ou avec une douleur ou un gonflement.** Un changement lent des deux pieds sans douleur est fréquent avec l’âge. Le tableau classe les situations habituelles.',
       ],
       table: {
         caption: 'Changements de la voûte chez l’adulte et ce qu’ils signifient en général',
@@ -108,9 +141,10 @@ export const FLAT_FEET_AGE_FR: Guide = {
       keyFact: 'Une revue de 2018 n’a constaté que trois essais, 93\u00A0personnes au total, testant l’exercice contre la dysfonction du tendon tibial postérieur, avec des effets modérés pour un renforcement en descente lente (excentrique) ajouté aux orthèses et aux étirements (Ross et coll., 2018).',
       paragraphs: [
         'Aucun essai n’a vérifié si l’exercice ou les semelles empêchent les pieds plats de changer avec l’âge. Il existe des preuves sur deux questions voisines, et elles sont minces.',
-        'Pour le problème de tendon à l’origine de l’affaissement de la voûte chez l’adulte, une revue de 2018 a trouvé trois essais portant sur 93\u00A0personnes au total. Un renforcement en descente lente (excentrique) ajouté aux orthèses (semelles qui soutiennent la voûte) et aux étirements a réduit la douleur et l’incapacité davantage que les orthèses et les étirements seuls, avec un effet d’ampleur modérée. Dans un essai, 36\u00A0adultes à un stade précoce ont suivi leur programme pendant trois mois. Tous les groupes se sont améliorés, et le groupe du renforcement excentrique le plus. Dans un autre essai sur 39\u00A0personnes, ajouter du renforcement n’a fait qu’une petite différence. Les auteurs de la revue ont jugé la recherche mince.',
+        'Pour le problème de tendon à l’origine de l’affaissement de la voûte chez l’adulte, une revue de 2018 a trouvé trois essais portant sur 93\u00A0personnes au total. Un renforcement en descente lente (excentrique) ajouté aux orthèses (semelles qui soutiennent la voûte) et aux étirements a réduit la douleur et l’incapacité davantage que les orthèses et les étirements seuls, avec un effet d’ampleur modérée.',
+        'Dans un essai, 36\u00A0adultes à un stade précoce ont suivi leur programme pendant trois mois. Tous les groupes se sont améliorés, et le groupe du renforcement excentrique le plus. Dans un autre essai sur 39\u00A0personnes, ajouter du renforcement n’a fait qu’une petite différence. Les auteurs de la revue ont jugé la recherche mince.',
         'Pour les pieds plats souples présents depuis toujours, un essai sur 52\u00A0personnes a trouvé qu’un court programme d’exercices du pied, de la cheville et de la hanche modifiait la forme de la voûte davantage que dans un groupe témoin. Il a mesuré la forme, pas la douleur, et sur une courte période. On ne sait pas si ce type d’entraînement ralentit le changement lié à l’âge sur des décennies.',
-        'Garder forts les muscles qui soutiennent la voûte est donc raisonnable et peu risqué, mais personne ne peut promettre que cela maintiendra votre voûte là où elle est. Walkito commence chaque exercice ci-dessous à une dose faible et vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre par un court test toutes les deux semaines au début (toutes les quatre une fois un objectif atteint), pour que vous voyiez si ces muscles se renforcent.',
+        'Garder forts les muscles qui soutiennent la voûte est donc raisonnable et peu risqué, mais **personne ne peut promettre que cela maintiendra votre voûte là où elle est.** Walkito commence chaque exercice ci-dessous à une dose faible et vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre par un court test toutes les deux semaines au début (toutes les quatre une fois un objectif atteint), pour que vous voyiez si ces muscles se renforcent.',
       ],
       exercises: [
         {

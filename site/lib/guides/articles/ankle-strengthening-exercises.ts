@@ -42,7 +42,15 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
     {
       h2: 'Which exercises strengthen your ankles?',
       paragraphs: [
-        'Ankle strengthening exercises work four groups of muscles, plus the balance system that controls them. The peroneals (on the outer side of the lower leg) turn the foot outward and are the main defence against rolling the ankle. The tibialis posterior (deep on the inner side) turns the foot inward and holds up the arch. The calf pushes you up onto your toes, and the tibialis anterior (the shin muscle) lifts the front of the foot.',
+        'Ankle strengthening exercises work four groups of muscles, plus the balance system that controls them:',
+        {
+          list: [
+            '**Peroneals:** The peroneals (on the outer side of the lower leg) turn the foot outward and are the main defence against rolling the ankle.',
+            '**Tibialis posterior:** The tibialis posterior (deep on the inner side) turns the foot inward and holds up the arch.',
+            '**Calf:** The calf pushes you up onto your toes.',
+            '**Tibialis anterior:** The tibialis anterior (the shin muscle) lifts the front of the foot.',
+          ],
+        },
         'Strength is only half of it. Ankles also roll because the muscles react a fraction too late. Balance work trains the speed of those reactions, which is why it keeps showing up in the research on repeat sprains.',
         'The table shows the order used on this page. Move to the next stage when the current one feels easy and the ankle does not ache more the next morning.',
       ],
@@ -61,10 +69,17 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
       h2: 'Do ankle strengthening exercises prevent another sprain?',
       keyFact: 'In a trial of 522 athletes after an ankle sprain, 22 percent of those given a home balance program sprained again within a year, compared with 33 percent of those who had usual care only (Hupperets and colleagues, 2009).',
       paragraphs: [
-        'Yes, and balance training has the best evidence. In a 2009 randomised trial in the Netherlands, 522 athletes aged 12 to 70 who had sprained an ankle in the previous two months got either usual care or usual care plus a home balance board program. Over one year, 22 percent of the balance group sprained again, compared with 33 percent of the usual care group. That is about a 35 percent lower risk. Nine people needed to do the program to prevent one repeat sprain.',
+        'Yes, and **balance training has the best evidence.** In a 2009 randomised trial in the Netherlands, 522 athletes aged 12 to 70 who had sprained an ankle in the previous two months got either usual care or usual care plus a home balance board program.',
+        'Over one year, 22 percent of the balance group sprained again, compared with 33 percent of the usual care group. That is about a 35 percent lower risk. Nine people needed to do the program to prevent one repeat sprain.',
         'The program asked for three sessions a week of up to 30 minutes, for two months, getting harder as it went. People did it at home without supervision.',
-        'Pooled studies point the same way. A 2015 meta-analysis of 7 trials with 3,726 people found balance training cut sprain risk by about a third (relative risk 0.65). In people with a past sprain the result held (relative risk 0.64). For people who had never sprained an ankle, the evidence was weaker and the authors called it inconclusive. A 2018 review of trials in competitive athletes (six of its eight trials tested balance training) found balance training lowered sprain risk by 46 percent.',
-        'A 2017 overview of 46 reviews rated the evidence for neuromuscular training (balance and coordination work) in preventing repeat sprains as moderate, and for bracing as strong.',
+        'Pooled studies point the same way:',
+        {
+          list: [
+            'A 2015 meta-analysis of 7 trials with 3,726 people found balance training cut sprain risk by about a third (relative risk 0.65). In people with a past sprain the result held (relative risk 0.64). For people who had never sprained an ankle, the evidence was weaker and the authors called it inconclusive.',
+            'A 2018 review of trials in competitive athletes (six of its eight trials tested balance training) found balance training lowered sprain risk by 46 percent.',
+            'A 2017 overview of 46 reviews rated the evidence for neuromuscular training (balance and coordination work) in preventing repeat sprains as moderate, and for bracing as strong.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009: relative risk 0.63 (95% CI 0.45 to 0.88) for self-reported recurrence; benefit was clearest in athletes whose first sprain had not been medically managed. Schiftan 2015: RR 0.65 (0.55 to 0.77) overall, 0.64 (0.51 to 0.81) with prior sprain, 0.57 (0.34 to 0.97) without, from two non-significant trials.',
@@ -166,7 +181,14 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
       paragraphs: [
         'You can usually start gentle ankle exercises soon after a sprain, as long as you can put weight on the foot. A 2017 overview of 46 reviews found strong evidence for early mobilisation (getting the ankle moving early) and moderate evidence for exercise after an acute sprain. A 2018 Dutch guideline says people with a torn outer ankle ligament do best with tape or a brace combined with an exercise program, and prefers supervised exercise over passive options.',
         'Begin with pain-free movement and seated band work, add standing raises when walking feels normal, and add balance once you can stand on the injured leg without sharp pain. If the ankle is also stiff, see [ankle mobility exercises](/ankle-mobility-exercises/) for the range of motion side.',
-        'Before any of this, rule out a fracture. The Ottawa ankle rules are a short checklist doctors use: an X-ray is advised if you could not take four steps right after the injury and in the clinic, or if there is bone tenderness at the back edge or tip of either ankle bone, the base of the fifth toe bone or the navicular (a bone on the inner midfoot). A 2003 review of 27 studies with 15,581 patients found the rules miss almost no fractures.',
+        'Before any of this, **rule out a fracture.** The Ottawa ankle rules are a short checklist doctors use. An X-ray is advised if:',
+        {
+          list: [
+            'You could not take four steps right after the injury and in the clinic.',
+            'There is bone tenderness at the back edge or tip of either ankle bone, the base of the fifth toe bone or the navicular (a bone on the inner midfoot).',
+          ],
+        },
+        'A 2003 review of 27 studies with 15,581 patients found the rules miss almost no fractures.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -175,7 +197,7 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
       keyFact: 'In a trial of 39 people with unstable ankles, band training improved ankle strength and perceived instability but did not improve balance or hop tests (Hall and colleagues, 2015).',
       paragraphs: [
         'Band work on its own builds strength but may not change how well the ankle copes with a wobble. In a 2015 trial, 39 young adults with chronic ankle instability (an ankle that keeps giving way) were split into a band group, a manual-resistance strength group and a control group. The two strength groups trained three times a week for about a month and a half. Both got stronger and said their ankle felt more stable. Neither improved on a balance reach test or a crossover hop test.',
-        'The authors suggested adding exercises that use several directions and joints. The prevention trials used balance, not bands. Do both.',
+        'The authors suggested adding exercises that use several directions and joints. The prevention trials used balance, not bands. **Do both.**',
         'The hip matters too. In a small 2018 trial of 26 people with unstable ankles, after a month of supervised band exercises for the hip, three times a week, the training group made 9.9 errors on average on a standing balance test, against 21.2 in the group that did nothing. This was one small trial, so think of the hip as a useful add-on, not the core of the plan.',
       ],
       sourceNote:
@@ -187,13 +209,22 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
       paragraphs: [
         'Most of the progression needs only a wall. Just the inversion and eversion moves need a band.',
         'Without a band, you can do the same two directions as isometrics (holds against something that does not move). Sit with the outer edge of your foot against a table leg or door frame and push outward for 5 to 10 seconds without the foot moving. Then do the same with the inner edge pushing inward. This is a common early step after a sprain, though it has not been tested as its own program.',
-        'If you only have time for one thing, keep the balance work. It has the strongest evidence and takes a minute a day.',
+        'If you only have time for one thing, **keep the balance work.** It has the strongest evidence and takes a minute a day.',
       ],
     },
     {
       h2: 'Do ankle strengthening exercises help older adults with balance?',
       paragraphs: [
-        'Ankle exercises are often part of falls prevention for older adults, but the evidence for ankle work alone is limited. The best trial tested a package. In 2011, 305 people with a mean age of 74, with disabling foot pain and a raised risk of falling, got either routine podiatry care or a bundle of orthoses, footwear advice and a voucher, home foot and ankle exercises and a falls booklet. Over 12 months, the bundle group had 36 percent fewer falls. The number of people who fell at least once was not clearly different.',
+        'Ankle exercises are often part of falls prevention for older adults, but the evidence for ankle work alone is limited. The best trial tested a package. In 2011, 305 people with a mean age of 74, with disabling foot pain and a raised risk of falling, got either routine podiatry care or a bundle of:',
+        {
+          list: [
+            'Orthoses.',
+            'Footwear advice and a voucher.',
+            'Home foot and ankle exercises.',
+            'A falls booklet.',
+          ],
+        },
+        'Over 12 months, the bundle group had 36 percent fewer falls. The number of people who fell at least once was not clearly different.',
         'The bundle group also gained ankle strength, range of motion and balance. Because it was a package, the trial cannot say how much came from the exercises.',
         'If balance is your main worry, do the single-leg hold at a counter with a hand hovering over it. If you have had falls, dizziness or numb feet, get a balance assessment first.',
       ],
@@ -210,7 +241,7 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
     {
       h2: 'How often should you do ankle strengthening exercises?',
       paragraphs: [
-        'Two or three strength sessions a week, with a short balance practice on most days, is a sensible pattern. It matches the prevention trial above, which asked for three sessions a week over two months. Balance work is low load and can be done almost daily.',
+        '**Two or three strength sessions a week, with a short balance practice on most days,** is a sensible pattern. It matches the prevention trial above, which asked for three sessions a week over two months. Balance work is low load and can be done almost daily.',
         'Move up when an exercise feels easy for two sessions in a row and the ankle is no worse the next morning. Progress by adding a harder version (one leg instead of two, eyes closed instead of open, a firmer band) rather than piling on more sets. Drop back a stage after a flare.',
         'Walkito is built around heel, arch and lower leg pain, and it does not have an ankle sprain rehab program. Its plans can include the band inversion (after some arch work first), tibialis raises, calf raises, side-lying hip work and single-leg balance from this page, with a short test of calf endurance, arch hold and balance every two weeks at first. If you also want to build the small muscles under the arch, see [foot strengthening exercises](/foot-strengthening-exercises/).',
       ],

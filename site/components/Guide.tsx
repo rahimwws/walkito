@@ -14,7 +14,7 @@ import { Masthead } from '@/components/Masthead';
 import { FaqRows, Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
-import type { GuideTable } from '@/lib/guides/types';
+import type { GuideBlock, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { videoSchema, imageSchema } from '@/lib/video';
@@ -82,6 +82,28 @@ function Inline({ text }: { text: string }) {
   );
 }
 
+/** A paragraph, or a list that sits between paragraphs. A function, not a
+ * component: the reading time counts words through `text` props, so the
+ * paragraphs must reach the tree as <Inline text> directly. */
+function block(b: GuideBlock, key: number) {
+  if (typeof b === 'string') {
+    return (
+      <p key={key}>
+        <Inline text={b} />
+      </p>
+    );
+  }
+  return (
+    <ul key={key}>
+      {b.list.map((item) => (
+        <li key={item}>
+          <Inline text={item} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 /** A heading as an anchor: lower case, words joined by hyphens. */
 /** The anchor of an exercise card, linked from the list at the top. */
 function exerciseId(name: string): string {
@@ -90,8 +112,9 @@ function exerciseId(name: string): string {
 
 /** A first paragraph ending in a colon introduces the list that follows, so
  * the figure goes after the list instead of between them. */
-function figureAtEnd(section: { paragraphs?: readonly string[] }): boolean {
-  return section.paragraphs?.[0]?.trimEnd().endsWith(':') ?? false;
+function figureAtEnd(section: { paragraphs?: readonly GuideBlock[] }): boolean {
+  const first = section.paragraphs?.[0];
+  return typeof first === 'string' && first.trimEnd().endsWith(':');
 }
 
 function slug(text: string): string {
@@ -322,10 +345,8 @@ export function Guide({ guide }: { guide: GuideData }) {
               </p>
             )}
             {section.paragraphs?.map((p, i) => (
-              <Fragment key={p}>
-                <p>
-                  <Inline text={p} />
-                </p>
+              <Fragment key={i}>
+                {block(p, i)}
                 {i === 0 && section.figure && !figureAtEnd(section) && (
                   <AnatomyFigure lang={guide.lang} {...section.figure} />
                 )}
@@ -335,11 +356,7 @@ export function Guide({ guide }: { guide: GuideData }) {
               <AnatomyFigure lang={guide.lang} {...section.figure} />
             )}
             {section.table && <Table table={section.table} />}
-            {section.after?.map((p) => (
-              <p key={p}>
-                <Inline text={p} />
-              </p>
-            ))}
+            {section.after?.map((p, i) => block(p, i))}
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.

@@ -24,7 +24,8 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
     {
       h2: '¿Qué diferencia hay entre plantillas, plantillas ortopédicas y ejercicios?',
       paragraphs: [
-        'Una **plantilla** es cualquier cosa que metes en el zapato. Una **plantilla ortopédica** (ortesis plantar) es una plantilla con forma para sostener el arco y quitarle carga al talón. Las **prefabricadas** se compran hechas. Las **a medida** se fabrican a partir de un escaneo o molde de tu pie, por lo general con un podólogo (especialista en pies), y cuestan mucho más. Las dos cambian la carga sobre el pie mientras las usas. El ejercicio cambia el tejido en sí, para que el pie y la pantorrilla soporten más carga con o sin plantilla.',
+        'Una **plantilla** es cualquier cosa que metes en el zapato. Una **plantilla ortopédica** (ortesis plantar) es una plantilla con forma para sostener el arco y quitarle carga al talón. Las **prefabricadas** se compran hechas. Las **a medida** se fabrican a partir de un escaneo o molde de tu pie, por lo general con un podólogo (especialista en pies), y cuestan mucho más.',
+        'Las dos cambian la carga sobre el pie mientras las usas. El ejercicio cambia el tejido en sí, para que el pie y la pantorrilla soporten más carga con o sin plantilla.',
       ],
     },
     {
@@ -48,7 +49,15 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
       keyFact: 'En un ensayo con 185\u00A0personas con dolor de talón, las plantillas a medida no funcionaron mejor que las simuladas a los tres meses, y las personas manejadas por su médico general reportaron un dolor en los primeros pasos 1,48\u00A0puntos menor que las que usaron plantillas a medida (Rasenberg y colegas, 2021).',
       paragraphs: [
         'Para el dolor de talón común, la investigación dice que por lo general no. La revisión de Whittaker **no encontró diferencia entre plantillas a medida y prefabricadas en ningún momento**, y la guía de 2023 señala «una similitud en los resultados entre las ortesis a medida y las prefabricadas».',
-        'El ensayo holandés STAP asignó al azar a 185\u00A0adultos con dolor de talón a manejo con el médico general, a una plantilla a medida hecha por un podólogo o a una plantilla simulada (Rasenberg y colegas, 2021). **Todos los grupos recibieron además un folleto con ejercicios.** A los tres meses, las plantillas a medida no funcionaron mejor que las simuladas. El grupo del médico general salió mejor que el de las plantillas a medida: cerca de 1\u00A0punto menos de dolor durante la actividad y 1,5\u00A0puntos menos de dolor en los primeros pasos, en una escala de 0 a 10. Un análisis de costos del mismo ensayo, a lo largo de unos seis meses, concluyó que las plantillas a medida «no son costo-efectivas» frente al manejo con el médico general.',
+        'El ensayo holandés STAP asignó al azar a 185\u00A0adultos con dolor de talón (Rasenberg y colegas, 2021) a:',
+        {
+          list: [
+            'Manejo con el médico general.',
+            'Una plantilla a medida hecha por un podólogo.',
+            'Una plantilla simulada.',
+          ],
+        },
+        '**Todos los grupos recibieron además un folleto con ejercicios.** A los tres meses, las plantillas a medida no funcionaron mejor que las simuladas. El grupo del médico general salió mejor que el de las plantillas a medida: cerca de 1\u00A0punto menos de dolor durante la actividad y 1,5\u00A0puntos menos de dolor en los primeros pasos, en una escala de 0 a 10. Un análisis de costos del mismo ensayo, a lo largo de unos seis meses, concluyó que las plantillas a medida «no son costo-efectivas» frente al manejo con el médico general.',
         'Las plantillas ortopédicas a medida todavía pueden ayudar a algunas personas (mira abajo). Pero si quieres una plantilla para el dolor de talón, un soporte de arco de farmacia que te quede bien es la primera opción razonable.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
@@ -58,7 +67,8 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
       keyFact: 'En un ensayo con 48\u00A0personas que usaban plantillas, el grupo que añadió elevaciones de talón con carga obtuvo 29\u00A0puntos mejor en el Foot Function Index a los tres meses que el grupo que añadió estiramientos (Rathleff y colegas, 2015).',
       paragraphs: [
         'El ejercicio cambia el tejido, así que el cambio dura después de la sesión. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla un grado **A** y al entrenamiento de fuerza una **B**.',
-        'En un ensayo, las 48\u00A0personas con fascitis plantar recibieron una plantilla (Rathleff y colegas, 2015). La mitad añadió estiramientos diarios; la otra mitad añadió una elevación de talón con carga y una toalla bajo los dedos, cada dos días. A los tres meses, el grupo de las elevaciones obtuvo 29\u00A0puntos mejor en el Foot Function Index (una puntuación de 0 a 100 de dolor y discapacidad del pie). A los seis y doce meses los grupos estaban igualados. La plantilla era la misma en los dos grupos; el ejercicio marcó la diferencia al principio. La rutina completa está en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'En un ensayo, las 48\u00A0personas con fascitis plantar recibieron una plantilla (Rathleff y colegas, 2015). La mitad añadió estiramientos diarios; la otra mitad añadió una elevación de talón con carga y una toalla bajo los dedos, cada dos días.',
+        'A los tres meses, el grupo de las elevaciones obtuvo 29\u00A0puntos mejor en el Foot Function Index (una puntuación de 0 a 100 de dolor y discapacidad del pie). A los seis y doce meses los grupos estaban igualados. La plantilla era la misma en los dos grupos; el ejercicio marcó la diferencia al principio. La rutina completa está en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       exercises: [
         {
@@ -91,8 +101,9 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
     {
       h2: '¿Las plantillas ayudan con el pie plano?',
       paragraphs: [
-        'La evidencia es escasa para las dos opciones. El pie plano (un arco bajo) a menudo no causa ningún dolor, y en ese caso no hay nada que corregir. Mira [pie plano](/es/pie-plano/).',
-        'Para adultos con pie plano flexible, una revisión encontró 13\u00A0estudios, solo dos de ellos aleatorizados (Banwell y colegas, 2014). No encontró «evidencia de alto nivel» para las plantillas ortopédicas y solo evidencia de bajo nivel de que alivian el dolor. Del lado del ejercicio, en un ensayo con 45\u00A0adultos, cerca de mes y medio de ejercicios de pie mejoró la postura del pie más que las plantillas de arco a medida, y ejercicio más plantillas también superó a solo plantillas (Kirmizi y colegas, 2024). En otro ensayo con 52\u00A0personas, un programa de ejercicios cambió la forma del arco más que un grupo de control (Brijwasi y Borkar, 2023). Ninguno de los dos reportó el dolor como resultado principal.',
+        '**La evidencia es escasa para las dos opciones.** El pie plano (un arco bajo) a menudo no causa ningún dolor, y en ese caso no hay nada que corregir. Mira [pie plano](/es/pie-plano/).',
+        'Para adultos con pie plano flexible, una revisión encontró 13\u00A0estudios, solo dos de ellos aleatorizados (Banwell y colegas, 2014). No encontró «evidencia de alto nivel» para las plantillas ortopédicas y solo evidencia de bajo nivel de que alivian el dolor.',
+        'Del lado del ejercicio, en un ensayo con 45\u00A0adultos, cerca de mes y medio de ejercicios de pie mejoró la postura del pie más que las plantillas de arco a medida, y ejercicio más plantillas también superó a solo plantillas (Kirmizi y colegas, 2024). En otro ensayo con 52\u00A0personas, un programa de ejercicios cambió la forma del arco más que un grupo de control (Brijwasi y Borkar, 2023). Ninguno de los dos reportó el dolor como resultado principal.',
         'Para niños, una revisión Cochrane de 16\u00A0ensayos (1\u00A0058\u00A0niños) encontró evidencia de certeza baja a muy baja, y concluyó que las plantillas ortopédicas a medida, que son caras, no tienen evidencia que las respalde en niños con pie plano flexible sin dolor (Evans y colegas, 2022). Mira [pie plano en niños](/es/pie-plano-en-ninos/). Los ejercicios de aquí y la app Walkito son para adultos.',
       ],
       exercises: [
@@ -114,7 +125,7 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
     {
       h2: '¿Las plantillas ortopédicas debilitan los pies?',
       paragraphs: [
-        'Puede que un poco. En un estudio con 18\u00A0adultos jóvenes con pie plano, tres músculos pequeños dentro del pie se redujeron entre un 9,6 y un 17,4\u00A0% después de tres meses de usar plantillas a medida (Protopapas y Perry, 2020). Los grupos no fueron aleatorizados y el estudio fue pequeño, así que tómalo como una señal, no como un hecho comprobado.',
+        '**Puede que un poco.** En un estudio con 18\u00A0adultos jóvenes con pie plano, tres músculos pequeños dentro del pie se redujeron entre un 9,6 y un 17,4\u00A0% después de tres meses de usar plantillas a medida (Protopapas y Perry, 2020). Los grupos no fueron aleatorizados y el estudio fue pequeño, así que tómalo como una señal, no como un hecho comprobado.',
         'El ejercicio parece compensarlo. En un ensayo aleatorizado con 28\u00A0personas con pie plano, todas usaron plantillas ortopédicas durante dos meses y la mitad también hizo el ejercicio de pie corto (Jung y colegas, 2011). El músculo a lo largo del arco interno creció en los dos grupos, pero más con el ejercicio, y la fuerza del dedo gordo también aumentó más. Si usas plantillas todo el día, mantén el pie trabajando con unos minutos de [ejercicios para fortalecer los pies](/es/ejercicios-para-fortalecer-los-pies/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
@@ -150,7 +161,8 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
     {
       h2: '¿Cómo combinar plantillas y ejercicios?',
       paragraphs: [
-        'Usa la plantilla para la comodidad y los ejercicios para el cambio. Tanto en el ensayo de Rathleff como en el STAP, todos recibieron indicaciones de ejercicio además de lo que llevaran en el zapato. Usa un soporte de arco de farmacia los días que duele, y empieza los estiramientos y las elevaciones de talón al mismo tiempo. Conforme el dolor de la mañana se calme, prueba ratos cortos sin la plantilla, y luego más largos. Walkito puede organizar la parte del ejercicio como un plan semanal: una vez a la semana sube un nivel tu ejercicio principal cuando calificaste como fáciles tus últimas dos sesiones con él y el dolor de la mañana no ha subido.',
+        '**Usa la plantilla para la comodidad y los ejercicios para el cambio.** Tanto en el ensayo de Rathleff como en el STAP, todos recibieron indicaciones de ejercicio además de lo que llevaran en el zapato. Usa un soporte de arco de farmacia los días que duele, y empieza los estiramientos y las elevaciones de talón al mismo tiempo. Conforme el dolor de la mañana se calme, prueba ratos cortos sin la plantilla, y luego más largos.',
+        'Walkito puede organizar la parte del ejercicio como un plan semanal: una vez a la semana sube un nivel tu ejercicio principal cuando calificaste como fáciles tus últimas dos sesiones con él y el dolor de la mañana no ha subido.',
         'Si unos meses de estiramiento y trabajo de fuerza diarios no han ayudado, consulta a un profesional de la salud. Ese es el momento en que vale la pena hablar de una plantilla a medida, entre otras opciones, con alguien que haya revisado tu pie.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],

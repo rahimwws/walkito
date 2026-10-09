@@ -28,7 +28,8 @@ export const SHIN_SPLINTS_FR: Guide = {
     'La périostite tibiale est une douleur le long du bord interne du tibia, étalée sur plusieurs centimètres plutôt qu’en un seul point douloureux. Son nom clinique est le syndrome de stress tibial médial (en anglais MTSS). La plupart des pages présentent des exercices comme s’ils accéléraient la guérison de façon prouvée. Une revue systématique de 2013 portant sur tous les essais de traitement a montré que les étirements et le renforcement n’ont pas fait la preuve qu’ils raccourcissent la récupération.',
   intro: [
     'Cela ne veut pas dire que l’exercice ne sert à rien. Les exercices ci-dessous visent l’endurance du mollet, la force du tibial antérieur et le contrôle de la hanche, les points où les chercheurs ont trouvé des différences entre les personnes avec et sans périostite tibiale. Une étude cas-témoins a montré que les coureurs avec une périostite tibiale faisaient moins de montées sur pointes jusqu’à l’épuisement que des témoins appariés qui n’en avaient pas.',
-    'Reste à savoir si retrouver cette endurance raccourcit la récupération. Le levier le plus sûr, dans tous les essais à ce jour, est de réduire la charge de course qui a causé le problème. La montée sur pointes elle-même, avec le nombre de répétitions et le moment d’ajouter de la charge, est détaillée dans [montées sur pointes pour la fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/). Si vous êtes debout toute la journée plutôt que de courir, [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) reprend les mêmes exercices du mollet et de la voûte pour cette cause.',
+    'Reste à savoir si retrouver cette endurance raccourcit la récupération. Le levier le plus sûr, dans tous les essais à ce jour, est de réduire la charge de course qui a causé le problème.',
+    'La montée sur pointes elle-même, avec le nombre de répétitions et le moment d’ajouter de la charge, est détaillée dans [montées sur pointes pour la fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/). Si vous êtes debout toute la journée plutôt que de courir, [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) reprend les mêmes exercices du mollet et de la voûte pour cette cause.',
   ],
   toc: true,
   takeaways: [
@@ -43,7 +44,16 @@ export const SHIN_SPLINTS_FR: Guide = {
       keyFact: 'Une revue systématique de 2013 couvrant 11\u00A0essais de traitement de la périostite tibiale a conclu qu’aucune approche par étirement ou renforcement n’avait de preuve claire d’accélérer la récupération (Winters et coll., 2013).',
       paragraphs: [
         'La périostite tibiale, ou syndrome de stress tibial médial, est une blessure de surmenage du tibia et des tissus qui l’entourent. La douleur est en général diffuse, étalée le long du bord interne du tibia sur plusieurs centimètres, et elle commence souvent pendant ou après la course. Une revue de 2020 sur des coureurs débutants et de loisir a trouvé les liens les plus nets dans la façon de bouger des coureurs, notamment une rotation de hanche plus grande et un pied qui s’affaisse vers l’intérieur plus que la normale.',
-        'La réponse honnête sur les exercices contre la périostite tibiale, c’est qu’aucun programme d’exercices précis n’a montré dans un essai contrôlé qu’il accélère la récupération. Une revue systématique de 2013 a examiné 11\u00A0études de traitement et a conclu que les étirements et le renforcement «\u00A0n’ont pas fait la preuve de leur efficacité dans le traitement du MTSS\u00A0». Dans le seul essai randomisé avec un bras exercice, 74\u00A0sportifs ont été répartis en trois groupes\u00A0: un programme de course progressif seul, le même programme plus des étirements et du renforcement du mollet, et le même programme plus des bas de compression. Les trois groupes se sont améliorés à un rythme semblable.',
+        'La réponse honnête sur les exercices contre la périostite tibiale, c’est qu’**aucun programme d’exercices précis n’a montré dans un essai contrôlé qu’il accélère la récupération.** Une revue systématique de 2013 a examiné 11\u00A0études de traitement et a conclu que les étirements et le renforcement «\u00A0n’ont pas fait la preuve de leur efficacité dans le traitement du MTSS\u00A0».',
+        'Dans le seul essai randomisé avec un bras exercice, 74\u00A0sportifs ont été répartis en trois groupes\u00A0:',
+        {
+          list: [
+            'Un programme de course progressif seul.',
+            'Le même programme plus des étirements et du renforcement du mollet.',
+            'Le même programme plus des bas de compression.',
+          ],
+        },
+        'Les trois groupes se sont améliorés à un rythme semblable.',
         'Les exercices ci-dessous ne forment donc pas un protocole dédié à la périostite tibiale. Ce sont des exercices généraux pour le bas de la jambe et la hanche, déjà dans le catalogue, qui visent les muscles et les articulations que les chercheurs ont étudiés chez les personnes atteintes. Le geste le plus efficace reste de réduire la charge de course et de la reconstruire lentement.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
@@ -195,8 +205,9 @@ export const SHIN_SPLINTS_FR: Guide = {
       h2: 'En quoi la douleur de la périostite tibiale diffère-t-elle d’une fracture de fatigue\u00A0?',
       paragraphs: [
         'Distinguer une périostite tibiale d’une fracture de fatigue compte, car les deux demandent des réponses différentes. Le syndrome de stress tibial médial et les fractures de fatigue du tibia se situent sur un même continuum de lésions osseuses de stress. Sous une charge continue, une périostite tibiale peut évoluer vers une fracture de fatigue. C’est la principale raison de modifier la charge d’entraînement tôt, au lieu de continuer à courir malgré une douleur diffuse au tibia.',
-        'La périostite tibiale donne en général une sensibilité diffuse, étalée sur plusieurs centimètres du bord interne du tibia. Une fracture de fatigue donne une sensibilité localisée en un petit point, souvent avec un gonflement. Une douleur qui diminue à l’échauffement évoque plutôt une périostite tibiale. Une douleur qui ne cesse de monter pendant la course, ou qui apparaît au repos ou la nuit, évoque plutôt une fracture de fatigue. Une douleur à l’arrière du talon plutôt qu’au tibia est un autre problème, le plus souvent le tendon d’Achille\u00A0; voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) si c’est là que se trouve la vôtre.',
-        'Un test souvent cité à faire chez soi consiste à sauter sur une jambe\u00A0: s’il reproduit une douleur vive et localisée, il évoque une fracture. Mais une revue de 2011 dans American Family Physician n’a trouvé aucune donnée récente validant sa fiabilité, et un test du saut positif a aussi été observé chez près de la moitié des patients avec une périostite tibiale confirmée. Un saut douloureux est donc une raison de consulter un professionnel de santé, pas un moyen fiable de confirmer ou d’écarter une fracture par vous-même.',
+        'La périostite tibiale donne en général une sensibilité diffuse, étalée sur plusieurs centimètres du bord interne du tibia. Une fracture de fatigue donne une sensibilité localisée en un petit point, souvent avec un gonflement. Une douleur qui diminue à l’échauffement évoque plutôt une périostite tibiale. Une douleur qui ne cesse de monter pendant la course, ou qui apparaît au repos ou la nuit, évoque plutôt une fracture de fatigue.',
+        'Une douleur à l’arrière du talon plutôt qu’au tibia est un autre problème, le plus souvent le tendon d’Achille\u00A0; voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) si c’est là que se trouve la vôtre.',
+        'Un test souvent cité à faire chez soi consiste à sauter sur une jambe\u00A0: s’il reproduit une douleur vive et localisée, il évoque une fracture. Mais une revue de 2011 dans American Family Physician n’a trouvé aucune donnée récente validant sa fiabilité, et un test du saut positif a aussi été observé chez près de la moitié des patients avec une périostite tibiale confirmée. **Un saut douloureux est donc une raison de consulter un professionnel de santé, pas un moyen fiable de confirmer ou d’écarter une fracture par vous-même.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -205,16 +216,42 @@ export const SHIN_SPLINTS_FR: Guide = {
       keyFact: 'Un essai de 2008 sur 532\u00A0coureurs débutants n’a trouvé aucune différence de taux de blessure entre une hausse de 10\u00A0% du kilométrage par semaine et une progression plus rapide, ce qui laisse cette règle non prouvée (Buist et coll., 2008).',
       paragraphs: [
         'Aucun essai ne vous dit exactement de combien réduire. Ce qui a un certain appui, c’est la forme d’un programme de course progressif\u00A0: dans le seul essai randomisé, les trois groupes suivaient une reprise progressive de la course, et les trois se sont améliorés à peu près au même rythme. La constante était le programme de course, pas les exercices ajoutés ni la compression.',
-        'Une douleur vive pendant la course, une douleur qui s’aggrave au fil de la sortie ou une douleur au repos sont des raisons d’arrêter et de faire examiner, au lieu de continuer à courir malgré tout. Si la douleur diminue à l’échauffement et reste supportable, une sortie plus courte ou plus facile, moins souvent, est un juste milieu raisonnable le temps que le tibia s’adapte. Les jours de repos entre les sorties laissent à l’os le temps de répondre à la charge.',
-        'La règle des 10\u00A0%, ne pas augmenter son kilométrage hebdomadaire de plus de 10\u00A0%, est un repère souvent cité, mais pas prouvé. Un essai de 2008 sur 532\u00A0coureurs débutants n’a trouvé aucune différence de taux de blessure entre un programme fondé sur cette règle et un programme plus rapide. Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai. La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la même logique de gestion de la charge.',
+        'Des raisons d’arrêter et de faire examiner, au lieu de continuer à courir malgré tout\u00A0:',
+        {
+          list: [
+            'Une douleur vive pendant la course.',
+            'Une douleur qui s’aggrave au fil de la sortie.',
+            'Une douleur au repos.',
+          ],
+        },
+        'Si la douleur diminue à l’échauffement et reste supportable, une sortie plus courte ou plus facile, moins souvent, est un juste milieu raisonnable le temps que le tibia s’adapte. Les jours de repos entre les sorties laissent à l’os le temps de répondre à la charge.',
+        'La règle des 10\u00A0%, ne pas augmenter son kilométrage hebdomadaire de plus de 10\u00A0%, est un repère souvent cité, mais pas prouvé. Un essai de 2008 sur 532\u00A0coureurs débutants n’a trouvé aucune différence de taux de blessure entre un programme fondé sur cette règle et un programme plus rapide.',
+        'Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. **Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai.** La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la même logique de gestion de la charge.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
     {
       h2: 'Quels changements d’entraînement évitent vraiment que la périostite tibiale revienne\u00A0?',
       paragraphs: [
-        'Aucun exercice n’a montré dans un essai qu’il prévient la périostite tibiale. Les facteurs de risque identifiés dans deux méta-analyses indépendantes orientent vers une gestion générale de la charge d’entraînement et une progression graduelle, plutôt que vers un étirement ou un exercice de renforcement en particulier. Les facteurs de risque retrouvés dans les deux revues étaient un IMC plus élevé, un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge), le sexe féminin, moins d’années de pratique de la course et des antécédents de périostite tibiale.',
-        'Un schéma général pour reprendre la course\u00A0: d’abord marcher sans douleur, puis trottiner facilement sur des surfaces souples avec des jours de repos entre les sorties, puis allonger peu à peu les sorties tant que les matins restent sans douleur. Tout jour qui reproduit une douleur vive ou localisée, ou une douleur qui monte pendant la course au lieu de diminuer à l’échauffement, est un signal d’arrêt, pas un signal pour forcer.',
+        'Aucun exercice n’a montré dans un essai qu’il prévient la périostite tibiale. Les facteurs de risque identifiés dans deux méta-analyses indépendantes orientent vers une gestion générale de la charge d’entraînement et une progression graduelle, plutôt que vers un étirement ou un exercice de renforcement en particulier. Les facteurs de risque retrouvés dans les deux revues étaient\u00A0:',
+        {
+          list: [
+            'Un IMC plus élevé.',
+            'Un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge).',
+            'Le sexe féminin.',
+            'Moins d’années de pratique de la course.',
+            'Des antécédents de périostite tibiale.',
+          ],
+        },
+        'Un schéma général pour reprendre la course\u00A0:',
+        {
+          list: [
+            'D’abord marcher sans douleur.',
+            'Puis trottiner facilement sur des surfaces souples avec des jours de repos entre les sorties.',
+            'Puis allonger peu à peu les sorties tant que les matins restent sans douleur.',
+          ],
+        },
+        'Tout jour qui reproduit une douleur vive ou localisée, ou une douleur qui monte pendant la course au lieu de diminuer à l’échauffement, **est un signal d’arrêt, pas un signal pour forcer.**',
       ],
       cites: [CITE.newman, CITE.hamstraWright],
     },
@@ -224,7 +261,7 @@ export const SHIN_SPLINTS_FR: Guide = {
       paragraphs: [
         'Les sources varient, et aucune ne donne un chiffre unique appuyé par un essai. Selon les conseils généraux sur les blessures de surmenage, les cas légers se calment en quelques semaines d’activité réduite, tandis que les cas liés à des erreurs d’entraînement répétées peuvent durer plus longtemps si la même charge revient avant que le tissu se soit adapté.',
         'Dans l’essai randomisé sur 74\u00A0sportifs avec une périostite tibiale, le temps moyen pour terminer le programme de course allait d’environ 102 à 118\u00A0jours selon les trois groupes (moyenne globale de 105\u00A0jours), avec de grands écarts.',
-        'Comme la périostite tibiale et les fractures de fatigue du tibia se situent sur un même continuum, une douleur qui ne s’améliore pas après quelques semaines de course allégée et de jours de repos est une raison de la faire examiner plutôt que d’attendre plus longtemps. Le signe le plus clair de récupération, c’est de marcher sans douleur, puis de trottiner facilement sans douleur, dans cet ordre, avant de remonter le kilométrage.',
+        'Comme la périostite tibiale et les fractures de fatigue du tibia se situent sur un même continuum, une douleur qui ne s’améliore pas après quelques semaines de course allégée et de jours de repos est une raison de la faire examiner plutôt que d’attendre plus longtemps. **Le signe le plus clair de récupération, c’est de marcher sans douleur, puis de trottiner facilement sans douleur, dans cet ordre, avant de remonter le kilométrage.**',
       ],
       cites: [CITE.moen],
     },

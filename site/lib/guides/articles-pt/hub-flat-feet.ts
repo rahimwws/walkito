@@ -39,7 +39,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
         'O arco do pé, chamado arco longitudinal medial, é formado pelos ossos, ligamentos e tendões da parte de dentro do pé. No pé chato, esse arco fica mais baixo ou some quando você fica em pé. O nome médico é pé plano (pes planus).',
         'Pé chato é comum. Uma revisão sistemática de 2023 juntou 12\u00A0estudos populacionais com cerca de 16.000\u00A0pessoas e relatou uma prevalência geral de 15,6%. Só em adultos, as estimativas vão de cerca de 5 a 27%, conforme a população e o método de medida. IMC mais alto e idade mais avançada estão ligados a uma prevalência maior.',
         '“Arco caído” é um nome comum para pé chato. Na maioria das vezes as duas expressões querem dizer a mesma coisa. Às vezes “arco caído” é usado de forma mais específica para um arco que desceu na vida adulta, que tem outra causa, explicada mais abaixo.',
-        'Ter pé chato não quer dizer automaticamente que algo está errado. Muitas pessoas com arco baixo caminham, correm e ficam em pé sem sintoma nenhum. As perguntas que importam são se o pé chato é flexível ou rígido, e se ele está causando dor.',
+        '**Ter pé chato não quer dizer automaticamente que algo está errado.** Muitas pessoas com arco baixo caminham, correm e ficam em pé sem sintoma nenhum. As perguntas que importam são se o pé chato é flexível ou rígido, e se ele está causando dor.',
       ],
       cites: [CITE.salinasTorres],
     },
@@ -49,7 +49,8 @@ export const HUB_FLAT_FEET_PT: Guide = {
       paragraphs: [
         'Um pé chato flexível é aquele em que o arco abaixa com o seu peso, mas volta quando o pé sai do chão. A maioria dos pés chatos é desse tipo. Um pé chato rígido continua plano, esteja você apoiado nele ou não.',
         'Um teste rápido: sente-se e olhe a parte de dentro do pé. Se você vê um arco, fique em pé sobre os dois pés. Se o arco some quando você fica em pé, mas estava lá quando você estava sentado, o pé chato é flexível. Outro jeito: suba na ponta dos pés. Se o arco aparece quando você sobe, ele é flexível.',
-        'A diferença importa porque o exercício pode influenciar um arco flexível. Em um ensaio com 52\u00A0pessoas com pé chato flexível, seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudaram duas medidas do formato do arco mais do que em um grupo controle. Um pé chato rígido é estrutural (muitas vezes por uma coalizão tarsal, uma ponte de osso entre ossos do pé), e o exercício não vai mudar o formato dele. Um pé chato rígido que causa dor normalmente precisa da avaliação de um profissional de saúde.',
+        '**A diferença importa porque o exercício pode influenciar um arco flexível.** Em um ensaio com 52\u00A0pessoas com pé chato flexível, seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudaram duas medidas do formato do arco mais do que em um grupo controle.',
+        'Um pé chato rígido é estrutural (muitas vezes por uma coalizão tarsal, uma ponte de osso entre ossos do pé), e o exercício não vai mudar o formato dele. Um pé chato rígido que causa dor normalmente precisa da avaliação de um profissional de saúde.',
       ],
       cites: [CITE.brijwasi],
     },
@@ -57,9 +58,17 @@ export const HUB_FLAT_FEET_PT: Guide = {
       h2: 'Pé chato é mesmo um problema?',
       keyFact: 'O Framingham Foot Study, com cerca de 1.900\u00A0adultos, não encontrou relação entre a postura de pé chato e dor nas costas, embora uma pisada pronada ao caminhar tenha mostrado uma pequena relação só em mulheres (Menz e colegas, 2013).',
       paragraphs: [
-        'Para a maioria das pessoas, não. Um pé chato flexível que não causa dor e não limita o que você faz é uma variação normal do formato do pé, não uma condição que precisa ser resolvida.',
-        'A preocupação mais comum é a dor nas costas. O maior estudo sobre o assunto, o Framingham Foot Study, avaliou cerca de 1.900\u00A0adultos. Ele não encontrou associação entre a postura de pé chato e dor lombar. Em mulheres, um pé que virava para dentro ao caminhar (pisada pronada) mostrou uma pequena relação com dor nas costas, mas a postura do pé em si, chato ou não, não mostrou. Em homens, nem a postura nem a pisada tiveram relação com dor nas costas.',
-        'O pé chato pode mudar o caminho da carga pela perna. Alguns corredores com pés muito pronados desenvolvem lesões por sobrecarga no tornozelo ou no joelho, mas a relação entre a postura do pé e lesões é mais fraca do que muita gente imagina. Uma revisão de 2024 sobre treino de pé curto em pé chato não encontrou mudança clara na postura do pé no geral, e encontrou mudança em uma medida da queda do arco só em programas com mais de seis semanas. Tanto o ensaio quanto a revisão mediram o formato do arco, não a dor nem as taxas de lesão.',
+        '**Para a maioria das pessoas, não.** Um pé chato flexível que não causa dor e não limita o que você faz é uma variação normal do formato do pé, não uma condição que precisa ser resolvida.',
+        'A preocupação mais comum é a dor nas costas. O maior estudo sobre o assunto, o Framingham Foot Study, avaliou cerca de 1.900\u00A0adultos. O que ele encontrou:',
+        {
+          list: [
+            '**No geral:** nenhuma associação entre a postura de pé chato e dor lombar.',
+            '**Em mulheres:** um pé que virava para dentro ao caminhar (pisada pronada) mostrou uma pequena relação com dor nas costas, mas a postura do pé em si, chato ou não, não mostrou.',
+            '**Em homens:** nem a postura nem a pisada tiveram relação com dor nas costas.',
+          ],
+        },
+        'O pé chato pode mudar o caminho da carga pela perna. Alguns corredores com pés muito pronados desenvolvem lesões por sobrecarga no tornozelo ou no joelho, mas a relação entre a postura do pé e lesões é mais fraca do que muita gente imagina.',
+        'Uma revisão de 2024 sobre treino de pé curto em pé chato não encontrou mudança clara na postura do pé no geral, e encontrou mudança em uma medida da queda do arco só em programas com mais de seis semanas. Tanto o ensaio quanto a revisão mediram o formato do arco, não a dor nem as taxas de lesão.',
         'Os casos em que o pé chato importa de verdade estão explicados abaixo: o pé plano adquirido do adulto, por um tendão que enfraquece, e o pé chato que vem com dor, inchaço ou uma mudança repentina na altura do arco.',
       ],
       cites: [CITE.menz, CITE.cheng],
@@ -68,10 +77,19 @@ export const HUB_FLAT_FEET_PT: Guide = {
       h2: 'O que é pé plano adquirido do adulto?',
       paragraphs: [
         'A deformidade do pé plano adquirido do adulto é uma condição em que um arco que era normal cai na vida adulta, normalmente porque o tendão tibial posterior (o tendão que sustenta o arco pela parte de dentro do tornozelo) enfraquece e não consegue mais fazer o seu trabalho. O nome clínico do problema no tendão é disfunção do tendão tibial posterior.',
-        'O tendão tibial posterior passa por trás do osso de dentro do tornozelo e se prende aos ossos que formam o arco. Quando ele se estica ou se rompe, o arco cai, o calcanhar inclina para fora e a parte da frente do pé pode começar a apontar para longe da linha do meio. Dor e inchaço na parte de dentro do tornozelo são sinais iniciais comuns. O teste de elevação do calcanhar em uma perna, em que você tenta ficar em um pé só e subir na ponta dos dedos, pode ser difícil ou doloroso no lado afetado.',
-        'Uma revisão no The Open Orthopaedics Journal descreve quatro estágios: o estágio I tem inflamação no tendão, mas nenhuma deformidade visível; o estágio II mostra uma deformidade de pé plano flexível que ainda pode ser corrigida com a mão; o estágio III é uma deformidade rígida que não pode ser corrigida manualmente; e o estágio IV envolve alterações na articulação do tornozelo além da deformidade rígida.',
+        'O tendão tibial posterior passa por trás do osso de dentro do tornozelo e se prende aos ossos que formam o arco. Quando ele se estica ou se rompe, o arco cai, o calcanhar inclina para fora e a parte da frente do pé pode começar a apontar para longe da linha do meio.',
+        'Dor e inchaço na parte de dentro do tornozelo são sinais iniciais comuns. O teste de elevação do calcanhar em uma perna, em que você tenta ficar em um pé só e subir na ponta dos dedos, pode ser difícil ou doloroso no lado afetado.',
+        'Uma revisão no The Open Orthopaedics Journal descreve quatro estágios:',
+        {
+          list: [
+            '**Estágio I:** inflamação no tendão, mas nenhuma deformidade visível.',
+            '**Estágio II:** uma deformidade de pé plano flexível que ainda pode ser corrigida com a mão.',
+            '**Estágio III:** uma deformidade rígida que não pode ser corrigida manualmente.',
+            '**Estágio IV:** alterações na articulação do tornozelo além da deformidade rígida.',
+          ],
+        },
         'Uma revisão sistemática sobre exercício para disfunção do tendão tibial posterior encontrou pouca evidência de ensaios randomizados. A revisão observou que as diretrizes clínicas recomendam tratamento sem cirurgia, incluindo exercício, órteses e ajuste das atividades, nos estágios iniciais (estágios I e II), mas o número de ensaios de alta qualidade é pequeno. Estágios mais avançados muitas vezes precisam da avaliação de um profissional de saúde e podem envolver órtese de tornozelo ou cirurgia.',
-        'Se um arco caiu na vida adulta, com dor ou inchaço na parte de dentro do tornozelo, procure um profissional de saúde antes de começar um programa de exercícios. Isso não é a mesma coisa que um pé chato flexível que você sempre teve.',
+        'Se um arco caiu na vida adulta, com dor ou inchaço na parte de dentro do tornozelo, **procure um profissional de saúde antes de começar um programa de exercícios.** Isso não é a mesma coisa que um pé chato flexível que você sempre teve.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -94,8 +112,9 @@ export const HUB_FLAT_FEET_PT: Guide = {
       h2: 'Calçados e palmilhas ajudam no pé chato?',
       paragraphs: [
         'Calçados com bom suporte, com entressola firme e algum suporte para o arco, podem deixar mais confortável ficar em pé e caminhar para quem tem pé chato. Eles não mudam o arco com o tempo, mas diminuem o trabalho que os músculos do arco precisam fazer durante o dia.',
-        'Palmilhas de arco prontas são fáceis de achar e baratas. Palmilhas sob medida, feitas a partir de um molde do seu pé, custam mais e às vezes são recomendadas para disfunção do tendão tibial posterior. A evidência sobre palmilhas especificamente para pé chato é mais fraca do que a maioria das pessoas imagina. Para fascite plantar, a diretriz de 2023 para dor no calcanhar recomenda não usar palmilhas como abordagem isolada de curto prazo (grau B contra), mas dá um C ao tratamento combinado que inclui palmilhas.',
-        'Se o seu pé chato não causa dor, você não precisa de calçado especial. Se ficar em pé ou caminhar deixa o arco ou o tornozelo doendo, um calçado com sola firme e um suporte leve para o arco é um primeiro passo razoável, e vale testar antes de gastar mais com palmilhas sob medida. Calçados com sola muito plana e sem suporte (sandálias finas, tênis gastos) costumam piorar o cansaço no arco em dias longos.',
+        'Palmilhas de arco prontas são fáceis de achar e baratas. Palmilhas sob medida, feitas a partir de um molde do seu pé, custam mais e às vezes são recomendadas para disfunção do tendão tibial posterior.',
+        'A evidência sobre palmilhas especificamente para pé chato é mais fraca do que a maioria das pessoas imagina. Para fascite plantar, a diretriz de 2023 para dor no calcanhar recomenda não usar palmilhas como abordagem isolada de curto prazo (grau B contra), mas dá um C ao tratamento combinado que inclui palmilhas.',
+        '**Se o seu pé chato não causa dor, você não precisa de calçado especial.** Se ficar em pé ou caminhar deixa o arco ou o tornozelo doendo, um calçado com sola firme e um suporte leve para o arco é um primeiro passo razoável, e vale testar antes de gastar mais com palmilhas sob medida. Calçados com sola muito plana e sem suporte (sandálias finas, tênis gastos) costumam piorar o cansaço no arco em dias longos.',
       ],
       cites: [CITE.guideline],
     },
@@ -103,7 +122,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
       h2: 'Quais exercícios ajudam no pé chato?',
       paragraphs: [
         'Os exercícios para pé chato focam nos músculos que sustentam o arco por baixo (os músculos intrínsecos do pé) e nos músculos mais acima que controlam como o pé pisa (a panturrilha, o quadril). A melhor evidência até agora vem de um ensaio com 52\u00A0pessoas com pé chato flexível em que seis semanas de exercícios combinados mudaram o formato do arco mais do que em um grupo controle. Esse ensaio incluiu pé curto, exercícios de tornozelo, fortalecimento de quadril e alongamentos, feitos juntos.',
-        'Uma revisão de 2024 sobre o treino de pé curto sozinho foi menos animadora: não encontrou mudança clara no geral, e encontrou melhora em uma medida do arco só em programas com mais de seis semanas. A lição é que um programa combinado funciona melhor do que um exercício isolado, e que paciência importa.',
+        'Uma revisão de 2024 sobre o treino de pé curto sozinho foi menos animadora: não encontrou mudança clara no geral, e encontrou melhora em uma medida do arco só em programas com mais de seis semanas. A lição é que **um programa combinado funciona melhor do que um exercício isolado, e que paciência importa.**',
         '[Exercícios para pé chato](/pt/exercicios-pe-chato/) tem a lista completa de exercícios, as doses, o que cada um deve fazer você sentir e a evidência por trás de cada um. O Walkito monta um plano semanal em torno da meta de sustentar o arco, começando pelo pé curto sentado, passando para as versões em pé e em uma perna, e depois acrescentando faixa elástica e fortalecimento de quadril. As páginas de cada exercício se aprofundam:',
       ],
       bullets: [

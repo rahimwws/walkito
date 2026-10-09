@@ -35,8 +35,9 @@ export const CALF_RAISES_EN: Guide = {
       keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index at three months, though both groups had converged by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Calf raises help plantar fasciitis by strengthening the calf-Achilles-fascia chain that absorbs load every time the heel hits the ground.',
-        'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia. At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.',
-        'So calf raises brought the improvement forward. They did not produce a bigger improvement in the long run. The 2023 clinical guideline grades strength training B and stretching A. It recommends both. Nothing in the evidence suggests you should pick one and skip the other.',
+        'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia.',
+        'At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.',
+        '**So calf raises brought the improvement forward.** They did not produce a bigger improvement in the long run. The 2023 clinical guideline grades strength training B and stretching A. It recommends both. Nothing in the evidence suggests you should pick one and skip the other.',
       ],
       sourceNote:
         'Rathleff 2015: Foot Function Index 29 points lower in the heel-raise group at 3 months (95% CI 6-52, p = 0.016). At 12 months, 22 vs. 16, no significant difference.',
@@ -45,8 +46,9 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How do you do a towel calf raise for plantar fasciitis?',
       paragraphs: [
-        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism: the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.',
-        'Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance. Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.',
+        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism: the way the plantar fascia tightens when the big toe bends back. **Without the towel, you are training the calf but loading the fascia much less.**',
+        'Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance.',
+        'Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.',
         'Start on both feet if single-leg raises are too hard right now. Both-leg raises on the floor, without a step, are where the calf chain begins. The towel and the step come in later, once standing heel raises feel easy for two sessions in a row.',
       ],
       exercises: [
@@ -144,8 +146,20 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'What does Walkito start you on?',
       paragraphs: [
-        'Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to double-leg standing raises, then a heel raise hold, and only then the towel-loaded single-leg raise. Each step opens once two sessions at the current level felt easy. That ladder is the app\'s own pacing, not a published protocol, and it exists because most people starting an exercise plan for heel pain are not ready for a weighted single-leg raise on the first session.',
-        'The calf chain in the app runs: seated heel raises, double-leg heel raises, heel raise hold, heel raises with a towel, heel drops (an eccentric lowering off a step), and pogo hops. The towel raise is level 4 of 6. Reaching the calf goal of 25 single-leg heel raises does not end the calf work. It moves to maintaining, and a new goal takes its place.',
+        'Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to double-leg standing raises, then a heel raise hold, and only then the towel-loaded single-leg raise. Each step opens once two sessions at the current level felt easy.',
+        'That ladder is the app\'s own pacing, not a published protocol, and it exists because most people starting an exercise plan for heel pain are not ready for a weighted single-leg raise on the first session.',
+        'The calf chain in the app runs:',
+        {
+          list: [
+            'Seated heel raises.',
+            'Double-leg heel raises.',
+            'Heel raise hold.',
+            'Heel raises with a towel.',
+            'Heel drops (an eccentric lowering off a step).',
+            'Pogo hops.',
+          ],
+        },
+        'The towel raise is level 4 of 6. Reaching the calf goal of 25 single-leg heel raises does not end the calf work. It moves to maintaining, and a new goal takes its place.',
       ],
       cites: [CITE.rathleff],
     },
@@ -154,8 +168,9 @@ export const CALF_RAISES_EN: Guide = {
       figure: { id: 'calf', caption: 'The two calf muscles, the gastrocnemius and the soleus, join into the Achilles tendon, which attaches to the heel bone.', alt: 'Side and back views of a lower leg showing the gastrocnemius and soleus muscles narrowing into the Achilles tendon above the heel.' },
       keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
-        'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.',
-        'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the more superficial calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
+        'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. **When the ankle cannot bend enough, every step puts more strain on the fascia.**',
+        'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the more superficial calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture.',
+        'Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
         'This is why calf stretching and calf strengthening both appear on the list. Stretching gives the ankle more range. Strengthening gives the calf enough capacity that it does not tighten under normal daily load. The guideline recommends both. The same tight-calf mechanism shows up in other lower-leg pain too: see [shin splints exercises](/shin-splints-exercises/) and [feet hurt from standing all day](/feet-hurt-standing-all-day/) if your pain pattern looks more like either of those.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -163,8 +178,9 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How is a calf raise for plantar fasciitis different from one for Achilles tendonitis?',
       paragraphs: [
-        'The movement is nearly the same, but the intent, the towel, and the pain rule differ. For plantar fasciitis, the towel under the toes loads the fascia through the windlass mechanism. The tempo is 3 seconds up, 2-second hold, 3 down, every other day. The pain rule on this page is: stop if pain reaches 6/10 or more.',
-        'For Achilles tendonitis, the classic protocol is an eccentric heel drop (lowering only, with the rise done on both feet), originally done twice a day, seven days a week, and into pain up to about 5/10 as long as it settles by the next morning. The towel is not used because loading the fascia is not the goal. And for insertional Achilles pain, right at the back of the heel bone, heel drops should stay at floor level rather than going below the step edge, because deep dorsiflexion compresses the tendon against the bone.',
+        '**The movement is nearly the same, but the intent, the towel, and the pain rule differ.** For plantar fasciitis, the towel under the toes loads the fascia through the windlass mechanism. The tempo is 3 seconds up, 2-second hold, 3 down, every other day. The pain rule on this page is: stop if pain reaches 6/10 or more.',
+        'For Achilles tendonitis, the classic protocol is an eccentric heel drop (lowering only, with the rise done on both feet), originally done twice a day, seven days a week, and into pain up to about 5/10 as long as it settles by the next morning.',
+        'The towel is not used because loading the fascia is not the goal. And for insertional Achilles pain, right at the back of the heel bone, heel drops should stay at floor level rather than going below the step edge, because deep dorsiflexion compresses the tendon against the bone.',
         'The two exercises are close relatives. If your pain is at the back of the heel or in the tendon above it rather than under the foot, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -173,7 +189,7 @@ export const CALF_RAISES_EN: Guide = {
       h2: 'How many single-leg calf raises should you be able to do?',
       keyFact: 'A normative study of 566 healthy adults found a single-leg heel-raise count in the low-to-mid 20s, about 23 to 24 repetitions on average (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
-        'A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is whether the number goes up week to week, and whether the two sides are roughly even.',
+        'A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is **whether the number goes up week to week, and whether the two sides are roughly even.**',
         'The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.',
       ],
       cites: [CITE.hebertLosier],

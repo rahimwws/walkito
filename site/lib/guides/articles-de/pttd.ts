@@ -19,7 +19,8 @@ export const PTTD_DE: Guide = {
   lede:
     'Bei einer Tibialis-posterior-Insuffizienz (englisch PTTD) wird die Sehne, die das Gewölbe an der Innenseite des Sprunggelenks stützt, schwächer oder entzündet sich. Sie ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen. Übungen können in den frühen Stadien helfen, aber nicht jedes Stadium spricht gleich an, und die Studienlage ist noch dünn. Diese Seite erklärt die Stadien, die Übungen mit den besten Belegen und wann ein Stiefel oder eine Operation ins Spiel kommt.',
   intro: [
-    'Die Tibialis-posterior-Sehne läuft hinter dem Innenknöchel entlang und setzt unter dem Fuß an. Sie hält beim Gehen das Gewölbe oben. Wenn sie degeneriert, flacht das Gewölbe ab, die Ferse kippt nach außen, und der Schmerz sitzt am Innenknöchel oder an der Innenseite des Mittelfußes. Eine systematische Übersichtsarbeit von 2018 fand nur drei randomisierte oder kontrollierte Studien mit insgesamt 93\u00A0Personen. Die Belege für Übungen sind hier also viel dünner als bei Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung.',
+    'Die Tibialis-posterior-Sehne läuft hinter dem Innenknöchel entlang und setzt unter dem Fuß an. Sie hält beim Gehen das Gewölbe oben. Wenn sie degeneriert, flacht das Gewölbe ab, die Ferse kippt nach außen, und der Schmerz sitzt am Innenknöchel oder an der Innenseite des Mittelfußes.',
+    'Eine systematische Übersichtsarbeit von 2018 fand nur drei randomisierte oder kontrollierte Studien mit insgesamt 93\u00A0Personen. Die Belege für Übungen sind hier also viel dünner als bei Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung.',
   ],
   toc: true,
   takeaways: [
@@ -32,7 +33,7 @@ export const PTTD_DE: Guide = {
     {
       h2: 'Was ist eine Tibialis-posterior-Insuffizienz?',
       paragraphs: [
-        'Der Tibialis posterior ist ein Muskel in der tiefen Wade. Seine Sehne läuft hinter dem Innenknöchel (Malleolus medialis) entlang und fächert sich unter dem Fuß auf, um an mehreren Knochen im Mittelfuß anzusetzen. Beim Gehen zieht sie das Gewölbe nach oben und steuert, wie weit der Fuß nach innen kippt. Wenn die Sehne degeneriert oder reißt, fällt diese Stütze weg.',
+        'Der Tibialis posterior ist ein Muskel in der tiefen Wade. Seine Sehne läuft hinter dem Innenknöchel (Malleolus medialis) entlang und fächert sich unter dem Fuß auf, um an mehreren Knochen im Mittelfuß anzusetzen. Beim Gehen zieht sie das Gewölbe nach oben und steuert, wie weit der Fuß nach innen kippt. **Wenn die Sehne degeneriert oder reißt, fällt diese Stütze weg.**',
         'Die Tibialis-posterior-Insuffizienz ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen. Sie kommt häufiger bei Frauen vor, bei Menschen über 40 und bei einem höheren BMI. Zu den Risikofaktoren gehören Bluthochdruck, Diabetes und frühere Kortisonspritzen in der Nähe der Sehne. Der Schmerz sitzt meist hinter oder unter dem Innenknöchel und wird bei Belastung schlimmer, vor allem bergauf oder auf unebenem Boden.',
         'Der klinische Name, den du sehen kannst, ist Tendinopathie des Tibialis posterior. Ältere Quellen sprechen manchmal von einer Sehnenentzündung des Tibialis posterior, wenn vor allem eine Entzündung vorliegt, oder von einer Insuffizienz, wenn sich die Sehne verlängert hat und das Gewölbe abzusinken beginnt. Alle drei Begriffe beschreiben dasselbe Spektrum.',
       ],
@@ -42,11 +43,15 @@ export const PTTD_DE: Guide = {
       h2: 'Welche Stadien hat die Tibialis-posterior-Insuffizienz?',
       paragraphs: [
         'Medizinische Fachpersonen teilen die Tibialis-posterior-Insuffizienz in vier Stadien ein. Das Stadium entscheidet, ob Übungen und Einlagen wahrscheinlich helfen oder ob über einen Stiefel, eine Orthese oder eine Operation gesprochen werden sollte.',
-        '**Stadium I** heißt, die Sehne ist entzündet, aber noch intakt. Das Gewölbe sieht normal aus. Es gibt Schmerzen und manchmal eine leichte Schwellung hinter dem Innenknöchel. Die Kraft beim einbeinigen Fersenheben ist meist geringer als auf der anderen Seite, aber die Form des Fußes hat sich nicht verändert. Übungen und stützende Einlagen sind der wichtigste Ansatz.',
-        '**Stadium II** heißt, die Sehne hat sich verlängert oder ist teilweise gerissen. Das Gewölbe ist abgesunken und die Ferse kippt nach außen, aber die Fehlstellung ist noch flexibel, das heißt, eine Fachperson kann den Fuß wieder in Position drücken. Auf dieses Stadium bezieht sich der Großteil der Forschung zu Übungen. Einlagen, Dehnen und schrittweise gesteigerte Kräftigung sind das übliche konservative Programm.',
-        '**Stadium III** heißt, die Fehlstellung ist starr geworden. Der Fuß lässt sich nicht mehr in eine korrigierte Position drücken, und oft gibt es arthrotische Veränderungen in den Gelenken unter dem Sprunggelenk. Übungen allein werden die Form des Fußes in diesem Stadium kaum ändern. Meist wird über eine chirurgische Einschätzung gesprochen.',
-        '**Stadium IV** betrifft zusätzlich das Sprunggelenk. Das Sprunggelenk kippt in eine Valgusstellung, es neigt sich also nach außen. Das ist das am weitesten fortgeschrittene Stadium und braucht in der Regel einen chirurgischen Eingriff.',
-        'Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II. Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Fachperson das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
+        {
+          list: [
+            '**Stadium I** heißt, die Sehne ist entzündet, aber noch intakt. Das Gewölbe sieht normal aus. Es gibt Schmerzen und manchmal eine leichte Schwellung hinter dem Innenknöchel. Die Kraft beim einbeinigen Fersenheben ist meist geringer als auf der anderen Seite, aber die Form des Fußes hat sich nicht verändert. Übungen und stützende Einlagen sind der wichtigste Ansatz.',
+            '**Stadium II** heißt, die Sehne hat sich verlängert oder ist teilweise gerissen. Das Gewölbe ist abgesunken und die Ferse kippt nach außen, aber die Fehlstellung ist noch flexibel, das heißt, eine Fachperson kann den Fuß wieder in Position drücken. Auf dieses Stadium bezieht sich der Großteil der Forschung zu Übungen. Einlagen, Dehnen und schrittweise gesteigerte Kräftigung sind das übliche konservative Programm.',
+            '**Stadium III** heißt, die Fehlstellung ist starr geworden. Der Fuß lässt sich nicht mehr in eine korrigierte Position drücken, und oft gibt es arthrotische Veränderungen in den Gelenken unter dem Sprunggelenk. Übungen allein werden die Form des Fußes in diesem Stadium kaum ändern. Meist wird über eine chirurgische Einschätzung gesprochen.',
+            '**Stadium IV** betrifft zusätzlich das Sprunggelenk. Das Sprunggelenk kippt in eine Valgusstellung, es neigt sich also nach außen. Das ist das am weitesten fortgeschrittene Stadium und braucht in der Regel einen chirurgischen Eingriff.',
+          ],
+        },
+        '**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Fachperson das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -55,9 +60,17 @@ export const PTTD_DE: Guide = {
       keyFact: 'Über drei kleine Studien mit insgesamt 93\u00A0Personen zusammengefasst fand eine Übersichtsarbeit von 2018, dass exzentrische Kräftigung zusätzlich zu Einlagen und Dehnen mittelgroße Verbesserungen gegenüber Einlagen und Dehnen allein brachte (Ross und Kollegen, 2018).',
       paragraphs: [
         'Eine systematische Übersichtsarbeit von 2018 fand drei randomisierte kontrollierte Studien mit insgesamt 93\u00A0Teilnehmenden. Zwei testeten Kräftigung zusätzlich zu Einlagen und Dehnen, die dritte testete Kräftigung und Gleichgewichtstraining gegen keine Maßnahme. Die Übersichtsarbeit fand mittlere Effektstärken (SMD 0,6 bis 1,2) für exzentrische Kräftigung bei Schmerz und Einschränkung im Vergleich zu Einlagen und Dehnen allein.',
-        'Die größte der drei Studien war eine randomisierte Studie von 2009 mit 36\u00A0Personen im Stadium I oder II. Die Teilnehmenden wurden für drei Monate einer von drei Gruppen zugeteilt: nur Einlagen und Dehnen, Einlagen plus Dehnen plus konzentrische Übungen oder Einlagen plus Dehnen plus exzentrische Übungen. Beide Übungsgruppen verbesserten sich stärker als die Gruppe nur mit Einlagen. Die exzentrische Gruppe erreichte am Ende des Programms 3,3-mal höhere Lasten als die konzentrische Gruppe, wobei beide Übungsarten den Schmerz senkten.',
+        'Die größte der drei Studien war eine randomisierte Studie von 2009 mit 36\u00A0Personen im Stadium I oder II. Die Teilnehmenden wurden für drei Monate einer von drei Gruppen zugeteilt:',
+        {
+          list: [
+            'Nur Einlagen und Dehnen.',
+            'Einlagen plus Dehnen plus konzentrische Übungen.',
+            'Einlagen plus Dehnen plus exzentrische Übungen.',
+          ],
+        },
+        'Beide Übungsgruppen verbesserten sich stärker als die Gruppe nur mit Einlagen. Die exzentrische Gruppe erreichte am Ende des Programms 3,3-mal höhere Lasten als die konzentrische Gruppe, wobei beide Übungsarten den Schmerz senkten.',
         'Eine zweite randomisierte Studie, veröffentlicht 2015, teilte 39\u00A0Personen im Stadium II zufällig Einlagen plus Dehnen oder Einlagen plus Dehnen plus Kräftigung zu (unter anderem Übungen mit Band und Fersenheben). Beide Gruppen verbesserten sich, aber die Kräftigungsgruppe unterschied sich beim Hauptergebnis nicht signifikant von der Dehngruppe. Die Autoren vermuteten, dass die Dosis der Kräftigung nicht hoch genug war.',
-        'Die Autoren der Übersichtsarbeit kamen zu dem Schluss, dass die Belege dafür sprechen, bei früher Tibialis-posterior-Insuffizienz schrittweise gesteigerte Kraftübungen zu Einlagen hinzuzufügen, forderten aber größere Studien. In diesem Bereich hinkt die Forschung der klinischen Praxis noch hinterher.',
+        'Die Autoren der Übersichtsarbeit kamen zu dem Schluss, dass **die Belege dafür sprechen, bei früher Tibialis-posterior-Insuffizienz schrittweise gesteigerte Kraftübungen zu Einlagen hinzuzufügen**, forderten aber größere Studien. In diesem Bereich hinkt die Forschung der klinischen Praxis noch hinterher.',
       ],
       sourceNote:
         'Ross 2018: 3\u00A0Studien, n = 93. Kulig 2009: n = 36, 3\u00A0Gruppen, 3\u00A0Monate, Foot Function Index, Schmerz-VAS. Houck 2015: n = 39, 2\u00A0Gruppen, 3\u00A0Monate, FAAM.',
@@ -67,7 +80,7 @@ export const PTTD_DE: Guide = {
       h2: 'Welche Übungen helfen bei Tibialis-posterior-Insuffizienz?',
       paragraphs: [
         'Die Übungen unten zielen auf den Tibialis posterior und die Muskeln, die das Gewölbe stützen. Einwärtsdrehen mit Band trainiert den Tibialis posterior direkt. Fersenheben mit Fokus auf das Anheben des Gewölbes belastet die Sehne in einer alltagsnahen Bewegung. Der kurze Fuß kräftigt die inneren Fußmuskeln, die das Gewölbe unterstützen. Die Wadendehnung setzt an der häufig eingeschränkten Dorsalflexion des Sprunggelenks bei Tibialis-posterior-Insuffizienz an.',
-        'Die Übungsprogramme in den Studien enthielten auch Wadendehnung und Einlagen. Einlagen waren in keiner Studie optional. Bei einer Tibialis-posterior-Insuffizienz ist eine gewölbestützende Einlage Teil des Programms, kein Ersatz für Übungen, und umgekehrt.',
+        'Die Übungsprogramme in den Studien enthielten auch Wadendehnung und Einlagen. Einlagen waren in keiner Studie optional. Bei einer Tibialis-posterior-Insuffizienz ist **eine gewölbestützende Einlage Teil des Programms, kein Ersatz für Übungen, und umgekehrt.**',
       ],
       exercises: [
         {
@@ -124,7 +137,7 @@ export const PTTD_DE: Guide = {
     {
       h2: 'Helfen Einlagen, und solltest du sie beim Training tragen?',
       paragraphs: [
-        'Jede Übungsstudie zur Tibialis-posterior-Insuffizienz nutzte Einlagen als Teil der Grundbehandlung. Einlagen wurden nicht gegen Übungen getestet, sondern Übungen kamen zusätzlich dazu. Die randomisierte Studie von 2009 fand, dass schon Einlagen und Dehnen allein die Funktion verbesserten und dass zusätzliche Übungen sie weiter verbesserten.',
+        'Jede Übungsstudie zur Tibialis-posterior-Insuffizienz nutzte Einlagen als Teil der Grundbehandlung. **Einlagen wurden nicht gegen Übungen getestet, sondern Übungen kamen zusätzlich dazu.** Die randomisierte Studie von 2009 fand, dass schon Einlagen und Dehnen allein die Funktion verbesserten und dass zusätzliche Übungen sie weiter verbesserten.',
         'Eine feste oder halbfeste gewölbestützende Einlage verhindert, dass das Gewölbe beim Stehen und Gehen einsinkt. Bei den Übungen auf dieser Seite kannst du Einwärtsdrehen mit Band und den kurzen Fuß ohne Schuhe machen. Fersenheben solltest du aber in denselben stützenden Schuhen machen, in denen du gehst, weil das Gewölbe unter Last Unterstützung braucht.',
         'Einlagen von der Stange können im Stadium I reichen. Maßeinlagen sind im Stadium II häufiger, weil die Fehlstellung dort größer ist. Eine medizinische Fachperson oder eine Podologin bzw. ein Podologe kann dir helfen zu entscheiden, was passt.',
       ],
@@ -133,7 +146,7 @@ export const PTTD_DE: Guide = {
     {
       h2: 'Wann wird über einen Stiefel oder eine Operation gesprochen?',
       paragraphs: [
-        'Ein Gehstiefel oder eine Sprunggelenksorthese wird im Stadium I oder II manchmal eingesetzt, wenn der Schmerz für Übungen zu stark ist. Der Stiefel stellt die Sehne ruhig, damit die akute Entzündung abklingen kann. Das ist eine kurzfristige Maßnahme, kein langfristiges Programm. Sobald der Schmerz weit genug gesunken ist, übernehmen Übungen und Einlagen.',
+        'Ein Gehstiefel oder eine Sprunggelenksorthese wird im Stadium I oder II manchmal eingesetzt, wenn der Schmerz für Übungen zu stark ist. Der Stiefel stellt die Sehne ruhig, damit die akute Entzündung abklingen kann. **Das ist eine kurzfristige Maßnahme, kein langfristiges Programm.** Sobald der Schmerz weit genug gesunken ist, übernehmen Übungen und Einlagen.',
         'Über eine Operation wird meist gesprochen, wenn sich die Beschwerden mit konservativer Behandlung nach mehreren Monaten nicht gebessert haben oder wenn die Fehlstellung bis zum Stadium III oder IV fortgeschritten ist. Die Möglichkeiten reichen von Sehnennaht und Sehnentransfer in früheren Stadien bis zur Gelenkversteifung in späteren Stadien. Die Entscheidung hängt vom Stadium, vom Ausmaß der Fehlstellung und von der Person ab.',
         'Diese Seite geht nicht im Detail auf Operationen ein. Wenn du im Stadium III oder IV bist oder wenn Beschwerden im Stadium II über mehrere Monate nicht auf Übungen und Einlagen angesprochen haben, kann eine Fachperson für Fuß und Sprunggelenk mit dir die nächsten Schritte besprechen.',
       ],
@@ -142,7 +155,7 @@ export const PTTD_DE: Guide = {
     {
       h2: 'Wie hängt die Tibialis-posterior-Insuffizienz mit Plattfüßen zusammen?',
       paragraphs: [
-        'Die Tibialis-posterior-Insuffizienz ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen, also einen Plattfuß, der im Erwachsenenalter entsteht und nicht seit der Kindheit da ist. Wenn du normale Gewölbe hattest und eines davon einseitig abzusinken beginnt, mit Schmerz hinter dem Innenknöchel, ist eine Tibialis-posterior-Insuffizienz die wahrscheinlichste Erklärung.',
+        'Die Tibialis-posterior-Insuffizienz ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen, also einen Plattfuß, der im Erwachsenenalter entsteht und nicht seit der Kindheit da ist. **Wenn du normale Gewölbe hattest und eines davon einseitig abzusinken beginnt, mit Schmerz hinter dem Innenknöchel, ist eine Tibialis-posterior-Insuffizienz die wahrscheinlichste Erklärung.**',
         'Angeborene flexible Plattfüße, die seit der Kindheit bestehen, sind eine andere Situation. Sie machen vielleicht nie Beschwerden. Die Übungen überschneiden sich: kurzer Fuß, Einwärtsdrehen mit Band und Fersenheben kommen sowohl bei [Übungen bei Plattfuß](/de/plattfuss-uebungen/) als auch in Programmen bei Tibialis-posterior-Insuffizienz vor. Aber der klinische Zusammenhang ist anders, und eine Tibialis-posterior-Insuffizienz braucht meist Einlagen und engere Kontrolle, weil die Sehne degeneriert und nicht einfach nur nachgiebig ist.',
         'Wenn du nicht sicher bist, ob dein Plattfuß schon lange besteht oder neu ist, kann eine Fachperson beide Füße vergleichen, die Sehne prüfen und die Stellung der Ferse im Stand ansehen.',
       ],
@@ -153,7 +166,7 @@ export const PTTD_DE: Guide = {
       keyFact: 'Eine kleine Pilotstudie mit zehn Patienten, die etwa zweieinhalb Monate lang zweimal täglich exzentrisch trainierten, fand eine Besserung der Beschwerden zusammen mit einigen Veränderungen der Sehne im Ultraschall (Kulig und Kollegen, 2009).',
       paragraphs: [
         'Die beiden randomisierten Studien liefen drei Monate. Beide zeigten am Ende des Programms eine Besserung, aber keine verfolgte die Teilnehmenden langfristig. Eine kleine Pilotstudie derselben Gruppe mit zehn Patienten lief ebenfalls etwa zweieinhalb Monate mit zweimal täglichem exzentrischem Training und fand eine Besserung der Beschwerden zusammen mit einigen Veränderungen der Sehne im Ultraschall.',
-        'In der Praxis wird die Besserung im Stadium I oder II mit Übungen und Einlagen in Monaten gemessen, nicht in Wochen. Eine Degeneration der Sehne bildet sich nicht schnell zurück. Realistisch sind weniger Schmerz und bessere Funktion über drei bis sechs Monate, danach mit laufenden Übungen zur Erhaltung. Wenn es nach drei Monaten regelmäßiger Übungen mit Einlagen keine Besserung gibt, lohnt es sich, das Stadium von einer Fachperson neu einschätzen zu lassen.',
+        'In der Praxis **wird die Besserung im Stadium I oder II mit Übungen und Einlagen in Monaten gemessen, nicht in Wochen.** Eine Degeneration der Sehne bildet sich nicht schnell zurück. Realistisch sind weniger Schmerz und bessere Funktion über drei bis sechs Monate, danach mit laufenden Übungen zur Erhaltung. Wenn es nach drei Monaten regelmäßiger Übungen mit Einlagen keine Besserung gibt, lohnt es sich, das Stadium von einer Fachperson neu einschätzen zu lassen.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },

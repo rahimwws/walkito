@@ -39,7 +39,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Come si fa l’esercizio del piede corto?',
       paragraphs: [
         'Siediti su una sedia con i piedi appoggiati a terra, scalzo. Metti il piede in modo che tallone, avampiede e tutte e cinque le dita poggino a terra. Senza arricciare né stringere le dita, prova a tirare l’avampiede indietro verso il tallone. L’arco si alza. Tieni la contrazione, poi lascia.',
-        'Pensa a rendere il piede più corto e più alto, non più largo e più piatto. Le dita non devono premere a terra, sollevarsi o arricciarsi sotto. Se vedi le dita che stringono, stai usando i muscoli sbagliati. All’inizio metti un dito sotto l’arco, così senti quando si alza.',
+        'Pensa a rendere il piede più corto e più alto, non più largo e più piatto. Le dita non devono premere a terra, sollevarsi o arricciarsi sotto. **Se vedi le dita che stringono, stai usando i muscoli sbagliati.** All’inizio metti un dito sotto l’arco, così senti quando si alza.',
       ],
       exercises: [
         {
@@ -61,8 +61,16 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Quali muscoli lavora l’esercizio del piede corto?',
       paragraphs: [
         'L’esercizio del piede corto lavora sui muscoli plantari intrinseci: abduttore dell’alluce, flessore breve delle dita, quadrato della pianta e abduttore del quinto dito. Questi muscoli stanno interamente dentro il piede e sostengono da sotto l’arco longitudinale mediale.',
-        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha misurato l’attivazione muscolare dopo 40\u00A0ripetizioni di quattro diversi esercizi per il piede in 8\u00A0atleti universitari. Il piede corto ha dato l’attivazione media più alta nell’abduttore del quinto dito (34,9%), nell’abduttore dell’alluce (29,7%) e nel flessore breve delle dita (24,8%). Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era più di quattro volte maggiore durante il piede corto che durante la raccolta dell’asciugamano.',
-        'Per questo il piede corto è considerato un esercizio migliore della raccolta dell’asciugamano per lavorare in modo specifico sui muscoli intrinseci. La raccolta dell’asciugamano recluta i flessori lunghi delle dita, i muscoli estrinseci che vanno dallo stinco alle dita. Il piede corto tiene più tranquilli quei muscoli estrinseci.',
+        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha misurato l’attivazione muscolare dopo 40\u00A0ripetizioni di quattro diversi esercizi per il piede in 8\u00A0atleti universitari. Il piede corto ha dato l’attivazione media più alta in:',
+        {
+          list: [
+            'Abduttore del quinto dito (34,9%).',
+            'Abduttore dell’alluce (29,7%).',
+            'Flessore breve delle dita (24,8%).',
+          ],
+        },
+        'Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era più di quattro volte maggiore durante il piede corto che durante la raccolta dell’asciugamano.',
+        'Per questo **il piede corto è considerato un esercizio migliore della raccolta dell’asciugamano per lavorare in modo specifico sui muscoli intrinseci.** La raccolta dell’asciugamano recluta i flessori lunghi delle dita, i muscoli estrinseci che vanno dallo stinco alle dita. Il piede corto tiene più tranquilli quei muscoli estrinseci.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -70,7 +78,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Come passare da seduto a in piedi e poi su una gamba?',
       paragraphs: [
         'Quando le tenute del piede corto da seduto ti sembrano facili per due sessioni di fila, il passo successivo è in piedi su entrambi i piedi. La stessa contrazione ora deve reggere il peso del corpo. Poi il piede corto su una gamba aggiunge l’equilibrio e mostra eventuali differenze tra lato sinistro e destro.',
-        'Ogni versione è lo stesso movimento. Cambia solo il carico. In piedi raddoppia il lavoro per i muscoli dell’arco. Su una gamba lo raddoppia più o meno di nuovo e aggiunge il bisogno di stabilizzare la caviglia.',
+        'Ogni versione è lo stesso movimento. **Cambia solo il carico.** In piedi raddoppia il lavoro per i muscoli dell’arco. Su una gamba lo raddoppia più o meno di nuovo e aggiunge il bisogno di stabilizzare la caviglia.',
       ],
       exercises: [
         {
@@ -103,8 +111,13 @@ export const EX_SHORT_FOOT_IT: Guide = {
     {
       h2: 'Quali errori rendono meno utile l’esercizio del piede corto?',
       paragraphs: [
-        'L’errore più comune è arricciare le dita. Se le dita si flettono e stringono il pavimento, l’esercizio diventa una flessione delle dita e prendono il sopravvento i flessori estrinseci. Tieni le dita lunghe e rilassate. Ad alcune persone aiuta sollevare un attimo le dita, contrarre l’arco, poi riappoggiare le dita.',
-        'Il secondo errore è spingere il piede verso l’esterno invece di accorciarlo. Il movimento deve andare dritto indietro, avampiede verso tallone, non da un lato all’altro. Il terzo è trattenere il respiro. Respira normalmente durante ogni tenuta.',
+        {
+          list: [
+            'L’errore più comune è arricciare le dita. Se le dita si flettono e stringono il pavimento, l’esercizio diventa una flessione delle dita e prendono il sopravvento i flessori estrinseci. **Tieni le dita lunghe e rilassate.** Ad alcune persone aiuta sollevare un attimo le dita, contrarre l’arco, poi riappoggiare le dita.',
+            'Il secondo errore è spingere il piede verso l’esterno invece di accorciarlo. Il movimento deve andare dritto indietro, avampiede verso tallone, non da un lato all’altro.',
+            'Il terzo è trattenere il respiro. Respira normalmente durante ogni tenuta.',
+          ],
+        },
         'Se non senti per niente l’arco che si alza, prova a mettere un dito o una penna sotto l’arco. Lo scopo è sentire l’arco che preme contro quell’oggetto. Possono servire diverse sessioni prima che il cervello impari ad attivare questi muscoli a comando. È un apprendimento normale.',
       ],
     },
@@ -112,10 +125,19 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Cosa dicono gli studi sull’esercizio del piede corto?',
       keyFact: 'In uno studio del 2023 su 52\u00A0persone con piede piatto flessibile, un programma di sei settimane con piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti ha cambiato la forma dell’arco più che in un gruppo di controllo (Brijwasi e colleghi, 2023).',
       paragraphs: [
-        'Le prove più forti vengono da programmi che uniscono il piede corto ad altri esercizi, non dal piede corto da solo. In uno studio del 2023 su 52\u00A0persone con piede piatto flessibile, Brijwasi e colleghi hanno testato un programma di sei settimane con piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti. Il programma ha cambiato due misure della forma dell’arco più che nel gruppo di controllo.',
+        'Le prove più forti vengono da programmi che uniscono il piede corto ad altri esercizi, non dal piede corto da solo. In uno studio del 2023 su 52\u00A0persone con piede piatto flessibile, Brijwasi e colleghi hanno testato un programma di sei settimane con:',
+        {
+          list: [
+            'Piede corto.',
+            'Lavoro sulla caviglia.',
+            'Rinforzo dell’anca.',
+            'Allungamenti.',
+          ],
+        },
+        'Il programma ha cambiato due misure della forma dell’arco più che nel gruppo di controllo.',
         'Una meta-analisi del 2024 di Cheng e colleghi ha esaminato l’allenamento del piede corto da solo in più studi. Nel complesso, i risultati non mostravano un miglioramento significativo del navicular drop o del Foot Posture Index. Ma quando i revisori hanno limitato l’analisi ai programmi più lunghi di sei settimane, il navicular drop migliorava in modo significativo. La durata dell’allenamento conta.',
         'Per l’equilibrio, uno studio randomizzato del 2012 di Lynn e colleghi ha confrontato quattro settimane di piede corto con quattro settimane di raccolta dell’asciugamano in adulti sani. Il gruppo del piede corto ha migliorato l’equilibrio dinamico più del gruppo della raccolta dell’asciugamano.',
-        'Nessuno di questi studi è grande. Le prove sostengono il piede corto come parte di un programma più ampio di rinforzo del piede, soprattutto per piede piatto e dolore all’arco. Non è una soluzione a sé, e non è stato testato da solo come trattamento principale per la fascite plantare. Per l’elenco completo degli esercizi, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/) o [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'Nessuno di questi studi è grande. **Le prove sostengono il piede corto come parte di un programma più ampio di rinforzo del piede, soprattutto per piede piatto e dolore all’arco.** Non è una soluzione a sé, e non è stato testato da solo come trattamento principale per la fascite plantare. Per l’elenco completo degli esercizi, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/) o [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

@@ -22,7 +22,8 @@ export const SEVERS_DE: Guide = {
   lede:
     'Morbus Sever, auch Apophysitis calcanei genannt, ist die häufigste Ursache für Fersenschmerzen bei Kindern. Er entsteht, wenn die Wachstumsfuge hinten am Fersenbein durch wiederholten Zug der Achillessehne gereizt wird, meist während eines Wachstumsschubs und bei einem Sport mit viel Laufen oder Springen. Er ist keine Krankheit im üblichen Sinn. Er verschwindet von selbst, sobald sich die Wachstumsfuge schließt.',
   intro: [
-    'Diese Seite ist für Eltern geschrieben. Sie erklärt, was in der Ferse passiert, was die Forschung zu Fersenschalen, Dehnen und Belastungssteuerung sagt und wann der Schmerz eine medizinische Fachperson braucht statt Ruhe. Walkito ist eine Übungs-App für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Sie ist nicht für Kinder gemacht, und nichts auf dieser Seite ist eine Empfehlung, sie mit einem Kind zu nutzen. Wenn die Fersenschmerzen deines Kindes mit den Schritten unten nicht besser werden, ist eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe der richtige nächste Schritt.',
+    'Diese Seite ist für Eltern geschrieben. Sie erklärt, was in der Ferse passiert, was die Forschung zu Fersenschalen, Dehnen und Belastungssteuerung sagt und wann der Schmerz eine medizinische Fachperson braucht statt Ruhe.',
+    'Walkito ist eine Übungs-App für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Sie ist nicht für Kinder gemacht, und nichts auf dieser Seite ist eine Empfehlung, sie mit einem Kind zu nutzen. Wenn die Fersenschmerzen deines Kindes mit den Schritten unten nicht besser werden, ist eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe der richtige nächste Schritt.',
   ],
   takeaways: [
     'Morbus Sever betrifft Kinder von 8 bis 15\u00A0Jahren, am häufigsten während eines Wachstumsschubs, und verschwindet, sobald sich die Wachstumsfuge des Fersenbeins schließt, meist zwischen 12 und 17\u00A0Jahren (StatPearls-Übersicht, 2024).',
@@ -47,14 +48,24 @@ export const SEVERS_DE: Guide = {
       paragraphs: [
         'Morbus Sever betrifft Kinder zwischen etwa 8 und 15\u00A0Jahren. Die Apophyse des Fersenbeins erscheint erstmals mit etwa 7 bis 9\u00A0Jahren und verschmilzt meist zwischen 15 und 17. Jungen sind zwei- bis dreimal häufiger betroffen als Mädchen, mit einem typischen Beginn um 12\u00A0Jahre bei Jungen und 11 bei Mädchen. Etwa 60\u00A0% der Fälle betreffen beide Fersen.',
         'Er macht 2 bis 16\u00A0% der Besuche von Kindern in Sportambulanzen aus. Die Sportarten, die am stärksten damit verbunden sind, sind Fußball, Basketball, Leichtathletik, Crosslauf, Turnen und Tennis. Das Muster ist vorhersehbar: Er zeigt sich oft zu Beginn einer Sportsaison oder während eines Wachstumsschubs, wenn die Belastung der Ferse plötzlich steigt.',
-        'Zu den Risikofaktoren gehören viel Laufen und Springen, verkürzte Wadenmuskeln, eingeschränkte Beweglichkeit im Sprunggelenk, ein hoher BMI, harte Spielflächen und schlecht gedämpfte Schuhe oder Stollenschuhe.',
+        'Zu den Risikofaktoren gehören:',
+        {
+          list: [
+            'Viel Laufen und Springen.',
+            'Verkürzte Wadenmuskeln.',
+            'Eingeschränkte Beweglichkeit im Sprunggelenk.',
+            'Ein hoher BMI.',
+            'Harte Spielflächen.',
+            'Schlecht gedämpfte Schuhe oder Stollenschuhe.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: 'Wie fühlt sich Morbus Sever an?',
       paragraphs: [
-        'Das Hauptsymptom ist Schmerz hinten oder an den Seiten der Ferse, meist bei oder nach Aktivität und vor allem nach Laufen oder Springen. Der Schmerz wird oft wie ein blauer Fleck beschrieben. Sichtbare Schwellungen oder Blutergüsse gibt es selten. Druck auf die Seiten der Ferse oder Zusammendrücken löst den Schmerz meist aus. Dieser Squeeze-Test ist die übliche klinische Prüfung.',
+        'Das Hauptsymptom ist Schmerz hinten oder an den Seiten der Ferse, meist bei oder nach Aktivität und vor allem nach Laufen oder Springen. Der Schmerz wird oft wie ein blauer Fleck beschrieben. Sichtbare Schwellungen oder Blutergüsse gibt es selten. **Druck auf die Seiten der Ferse oder Zusammendrücken löst den Schmerz meist aus.** Dieser Squeeze-Test ist die übliche klinische Prüfung.',
         'Anders als die Plantarfasziitis bei Erwachsenen, die bei den ersten Schritten nach einer Ruhephase am schlimmsten ist, wird der Schmerz bei Morbus Sever eher mit Aktivität schlimmer und beim Gehen nicht besser. Manche Kinder fangen an zu hinken oder auf den Zehen zu gehen, um die Ferse nicht zu belasten.',
         'Der Schmerz kann von leicht, nur beim Sport spürbar, bis so stark reichen, dass das Kind gar nicht mehr spielen kann.',
       ],
@@ -63,8 +74,16 @@ export const SEVERS_DE: Guide = {
       h2: 'Was hilft bei Morbus Sever? Die Belege',
       keyFact: 'In einer Studie mit 101\u00A0Kindern verbesserten alle drei Ansätze den Schmerz, und die Gruppe mit Fersenerhöhung war nach sechs Wochen zufriedener, wobei der Unterschied nach drei Monaten verschwunden war (Wiegerinck und Kollegen, 2016).',
       paragraphs: [
-        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder Einlagen sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.',
-        'In einer Studie von 2016 mit 101\u00A0Kindern im Alter von 8 bis 15\u00A0Jahren verglichen Wiegerinck und Kollegen drei Ansätze: Abwarten mit dem Rat, schmerzhafte Aktivität einzustellen, eine Fersenerhöhung im Schuh und angeleitete exzentrische Übungen. Alle drei Gruppen verbesserten sich signifikant. Nach sechs Wochen war die Gruppe mit Fersenerhöhung zufriedener als die anderen beiden. Nach drei Monaten blieb kein klinisch relevanter Unterschied zwischen den dreien.',
+        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder Einlagen sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und **für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.**',
+        'In einer Studie von 2016 mit 101\u00A0Kindern im Alter von 8 bis 15\u00A0Jahren verglichen Wiegerinck und Kollegen drei Ansätze:',
+        {
+          list: [
+            'Abwarten mit dem Rat, schmerzhafte Aktivität einzustellen.',
+            'Eine Fersenerhöhung im Schuh.',
+            'Angeleitete exzentrische Übungen.',
+          ],
+        },
+        'Alle drei Gruppen verbesserten sich signifikant. Nach sechs Wochen war die Gruppe mit Fersenerhöhung zufriedener als die anderen beiden. Nach drei Monaten blieb kein klinisch relevanter Unterschied zwischen den dreien.',
         'In einer weiteren faktoriellen Studie von 2016 mit 124\u00A0Kindern verglichen James und Kollegen Fersenerhöhungen mit vorgefertigten Einlagen sowie neue Schuhe mit keinen neuen Schuhen. Fersenerhöhungen hatten nach 2\u00A0Monaten im körperlichen Bereich des Oxford Ankle Foot Questionnaire einen kleinen Vorteil gegenüber vorgefertigten Einlagen. Nach 6 und 12\u00A0Monaten gab es zwischen den Kombinationen keinen Unterschied mehr.',
         'In einer Crossover-Studie mit 51\u00A0Jungen verglichen Perhamre und Kollegen eine Fersenschale von 3\u00A0mm mit einem Fersenkeil von 5\u00A0mm. Die Fersenschale verringerte den Schmerz auf der Borg-CR-10-Skala um etwa 80\u00A0%, was darauf hindeutet, dass Dämpfung und Stoßabsorption wichtiger sein könnten als ein bloßes Anheben der Ferse.',
       ],
@@ -75,8 +94,17 @@ export const SEVERS_DE: Guide = {
     {
       h2: 'Belastungssteuerung und angepasste Aktivität',
       paragraphs: [
-        'Belastungssteuerung ist die Grundlage bei Morbus Sever. Das heißt nicht, mit allem Sport aufzuhören. Es heißt, die Aktivitäten zu verringern, die den Schmerz auslösen, vor allem Laufen und Springen auf hartem Boden, bis der Schmerz abklingt. Die meisten Kinder können innerhalb von zwei bis acht Wochen wieder Sport machen, wenn die Belastung früh gesteuert wird.',
-        'Praktische Schritte sind, Trainingseinheiten zu reduzieren statt ganz aufzuhören, Stollenschuhe auf hartem Boden möglichst zu meiden, auf gut gedämpfte Schuhe umzusteigen und die Teile des Trainings auszulassen, bei denen am meisten gelaufen und gesprungen wird. Manche Trainerinnen und Trainer lassen Kinder bei Technikübungen mitmachen, während sie bei Sprints und Konditionstraining aussetzen.',
+        'Belastungssteuerung ist die Grundlage bei Morbus Sever. **Das heißt nicht, mit allem Sport aufzuhören.** Es heißt, die Aktivitäten zu verringern, die den Schmerz auslösen, vor allem Laufen und Springen auf hartem Boden, bis der Schmerz abklingt. Die meisten Kinder können innerhalb von zwei bis acht Wochen wieder Sport machen, wenn die Belastung früh gesteuert wird.',
+        'Praktische Schritte sind:',
+        {
+          list: [
+            'Trainingseinheiten reduzieren statt ganz aufhören.',
+            'Stollenschuhe auf hartem Boden möglichst meiden.',
+            'Auf gut gedämpfte Schuhe umsteigen.',
+            'Die Teile des Trainings auslassen, bei denen am meisten gelaufen und gesprungen wird.',
+          ],
+        },
+        'Manche Trainerinnen und Trainer lassen Kinder bei Technikübungen mitmachen, während sie bei Sprints und Konditionstraining aussetzen.',
         'Das Schwierigste an der Belastungssteuerung ist, dass Morbus Sever oft wiederkommt. Ein Kind fühlt sich vielleicht nach zwei Wochen Pause besser, kehrt voll zurück, und der Schmerz ist wieder da. Das heißt nicht, dass die erste Pause gescheitert ist. Es heißt, dass die Wachstumsfuge noch offen und noch anfällig ist. Bis zur Skelettreife ist das Wiederkommen häufig.',
       ],
       cites: [CITE.wiegerinck],
@@ -87,7 +115,7 @@ export const SEVERS_DE: Guide = {
       paragraphs: [
         'Fersenschalen gehören zu den praktischsten Maßnahmen bei Morbus Sever. Sie dämpfen die Ferse, fangen Stöße ab und verringern die Spitzenkräfte, die an der Wachstumsfuge ankommen. Die Crossover-Studie von Perhamre fand, dass eine Fersenschale den Schmerz bei 51\u00A0Jungen im Vergleich zu einem Fersenkeil um etwa 80\u00A0% verringerte, was darauf hindeutet, dass Stoßabsorption an der Ferse wichtiger ist als eine bloße Änderung des Fersenwinkels.',
         'In der faktoriellen Studie von James zeigten Fersenerhöhungen (eine Art Einlage, die die Ferse anhebt) nach 2\u00A0Monaten einen kleinen kurzfristigen Vorteil gegenüber vorgefertigten Einlagen, nach 12\u00A0Monaten aber keinen. Maßgefertigte Einlagen wurden in keiner der beiden Studien getestet.',
-        'Ein vernünftiger Anfang ist eine günstige Fersenschale aus dem Handel, in beiden Schuhen und beim Sport getragen. Wenn das nicht hilft, kann eine medizinische Fachperson beurteilen, ob sich eine maßgefertigte Einlage lohnt.',
+        '**Ein vernünftiger Anfang ist eine günstige Fersenschale aus dem Handel, in beiden Schuhen und beim Sport getragen.** Wenn das nicht hilft, kann eine medizinische Fachperson beurteilen, ob sich eine maßgefertigte Einlage lohnt.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -95,7 +123,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Hilft Wadendehnen bei Morbus Sever?',
       paragraphs: [
         'Verkürzte Wadenmuskeln verstärken den Zug an der Wachstumsfuge, und verkürzte Waden sind einer der bekannten Risikofaktoren für eine Apophysitis calcanei. Das Dehnen des Gastrocnemius (der oberflächlichere Wadenmuskel, gedehnt mit gestrecktem Knie) und des Soleus (der tiefere Wadenmuskel, gedehnt mit gebeugtem Knie) ist eine übliche Empfehlung.',
-        'In der Studie von Wiegerinck machte die Übungsgruppe unter Anleitung einer Physiotherapeutin oder eines Physiotherapeuten ein exzentrisches Krafttraining für die Wade. Diese Gruppe verbesserte sich genauso stark wie die Gruppen mit Fersenerhöhung und mit Abwarten. Dehnen und sanftes Krafttraining sind sicher und helfen möglicherweise, weil sie den Zug an der Wachstumsfuge verringern, aber die Belege zeigen nicht, dass sie Fersenschalen oder Belastungssteuerung allein überlegen sind.',
+        'In der Studie von Wiegerinck machte die Übungsgruppe unter Anleitung einer Physiotherapeutin oder eines Physiotherapeuten ein exzentrisches Krafttraining für die Wade. Diese Gruppe verbesserte sich genauso stark wie die Gruppen mit Fersenerhöhung und mit Abwarten. Dehnen und sanftes Krafttraining sind sicher und helfen möglicherweise, weil sie den Zug an der Wachstumsfuge verringern, aber **die Belege zeigen nicht, dass sie Fersenschalen oder Belastungssteuerung allein überlegen sind.**',
         'Übungen für Kinder mit Apophysitis calcanei sollten von einer medizinischen Fachperson oder in der Physiotherapie angeleitet oder gezeigt werden. Dosis und Steigerung hängen vom Alter des Kindes, der Schmerzstärke und den Anforderungen des Sports ab. Ein Kind mit akuten Schmerzen, das hinkt, braucht zuerst Ruhe, keine Übungen.',
       ],
       cites: [CITE.wiegerinck],
@@ -111,7 +139,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Wie lange dauert er, und kommt er wieder?',
       paragraphs: [
         'Morbus Sever klingt mit Belastungssteuerung und unterstützenden Maßnahmen meist innerhalb von Wochen bis Monaten ab. Die meisten Kinder können innerhalb von zwei bis acht Wochen wieder Sport machen. Der Schmerz verschwindet meist endgültig, sobald die Wachstumsfuge zu festem Knochen verschmilzt, meist zwischen 12 und 17\u00A0Jahren, je nach Geschlecht und Reifetempo des Kindes (StatPearls-Übersicht, 2024).',
-        'Dass der Schmerz wiederkommt, ist häufig und zu erwarten. Jeder Wachstumsschub und jede neue Sportsaison kann ihn zurückbringen. Das ist kein Zeichen, dass die Maßnahmen gescheitert sind. Es ist ein Zeichen, dass die Wachstumsfuge noch offen ist. Fersenschalen, gute Schuhe und Wadendehnen während der Sportsaison weiterzuführen, kann Stärke und Häufigkeit der Schübe verringern.',
+        'Dass der Schmerz wiederkommt, ist häufig und zu erwarten. Jeder Wachstumsschub und jede neue Sportsaison kann ihn zurückbringen. **Das ist kein Zeichen, dass die Maßnahmen gescheitert sind.** Es ist ein Zeichen, dass die Wachstumsfuge noch offen ist. Fersenschalen, gute Schuhe und Wadendehnen während der Sportsaison weiterzuführen, kann Stärke und Häufigkeit der Schübe verringern.',
         'Mit Morbus Sever wurden keine Langzeitfolgen in Verbindung gebracht. Er schädigt die Wachstumsfuge nicht und beeinflusst die endgültige Form des Knochens nicht.',
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

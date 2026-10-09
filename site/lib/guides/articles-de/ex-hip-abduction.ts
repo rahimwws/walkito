@@ -35,8 +35,9 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
     {
       h2: 'Wie geht Hüftabduktion im Stehen mit Band?',
       paragraphs: [
-        'Stell dich hin, ein Widerstandsband liegt um beide Knöchel oder knapp über den Knien. Halte dich zum Gleichgewicht an einer Wand oder einem Stuhl fest. Verlager dein Gewicht aufs Standbein. Heb das andere Bein gerade zur Seite, die Zehen zeigen nach vorn, der Oberkörper bleibt aufrecht. Lehn dich nicht zur anderen Seite. Senk langsam ab und wiederhole.',
-        'Drück über die Ferse des Arbeitsbeins, nicht über die Zehen. Die Bewegung kommt aus der Hüfte, nicht aus der Taille. Du musst das Bein nicht hoch heben. Etwa 30 bis 45\u00A0Grad vom Boden reichen, wenn die Ausführung sauber bleibt. Ein höheres Anheben mit seitlich gekipptem Oberkörper bringt dem Gluteus medius weniger.',
+        'Stell dich hin, ein Widerstandsband liegt um beide Knöchel oder knapp über den Knien. Halte dich zum Gleichgewicht an einer Wand oder einem Stuhl fest. Verlager dein Gewicht aufs Standbein.',
+        'Heb das andere Bein gerade zur Seite, die Zehen zeigen nach vorn, der Oberkörper bleibt aufrecht. Lehn dich nicht zur anderen Seite. Senk langsam ab und wiederhole.',
+        'Drück über die Ferse des Arbeitsbeins, nicht über die Zehen. **Die Bewegung kommt aus der Hüfte, nicht aus der Taille.** Du musst das Bein nicht hoch heben. Etwa 30 bis 45\u00A0Grad vom Boden reichen, wenn die Ausführung sauber bleibt. Ein höheres Anheben mit seitlich gekipptem Oberkörper bringt dem Gluteus medius weniger.',
       ],
       exercises: [
         {
@@ -58,8 +59,15 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
       h2: 'Wie beeinflusst die Hüfte Fuß und Gewölbe?',
       keyFact: 'Eine Studie von 2013 mit etwa 1.900\u00A0Erwachsenen aus der Framingham Foot Study fand keinen Zusammenhang zwischen Plattfüßen und Kreuzschmerzen, aber einen kleinen Zusammenhang zwischen einem nach innen kippenden Fuß und Rückenschmerzen bei Frauen (Menz und Kollegen, 2013).',
       paragraphs: [
-        'Der Zusammenhang läuft über eine biomechanische Kette: Hüfte, Knie, Sprunggelenk, Fuß. Wenn der Gluteus medius das Becken im Einbeinstand nicht waagerecht halten kann, dreht sich der Oberschenkel nach innen. Das Knie folgt und knickt Richtung Körpermitte ein. Diese Drehung zwingt den Fuß in die Pronation, das Sprunggelenk kippt nach innen, und das Gewölbe flacht ab.',
-        'Deshalb haben viele Menschen mit Plattfüßen oder Schmerzen im Gewölbe auch schwache Hüften. Das Gewölbe versagt nicht von allein. Es wird von oben überlastet. Eine kräftigere Hüfte verringert diese Last von oben.',
+        'Der Zusammenhang läuft über eine biomechanische Kette: Hüfte, Knie, Sprunggelenk, Fuß. Wenn der Gluteus medius das Becken im Einbeinstand nicht waagerecht halten kann:',
+        {
+          list: [
+            'Der Oberschenkel dreht sich nach innen.',
+            'Das Knie folgt und knickt Richtung Körpermitte ein.',
+            'Diese Drehung zwingt den Fuß in die Pronation, das Sprunggelenk kippt nach innen, und das Gewölbe flacht ab.',
+          ],
+        },
+        'Deshalb haben viele Menschen mit Plattfüßen oder Schmerzen im Gewölbe auch schwache Hüften. Das Gewölbe versagt nicht von allein. **Es wird von oben überlastet.** Eine kräftigere Hüfte verringert diese Last von oben.',
         'Eine Querschnittsstudie von 2013 aus der Framingham Foot Study untersuchte etwa 1.900\u00A0Erwachsene aus der Allgemeinbevölkerung. Die Plattfußhaltung selbst hing nicht mit Kreuzschmerzen zusammen, aber ein Fuß, der beim Gehen nach innen kippte, zeigte bei Frauen einen kleinen Zusammenhang mit Kreuzschmerzen. Das deutet an, dass die Kette Fuß, Hüfte, Rücken in beide Richtungen laufen kann.',
         'Die Plattfuß-Studie von Brijwasi und Kollegen (2023) nahm Hüftkräftigung neben Kurzer-Fuß-Übungen, Arbeit am Sprunggelenk und Dehnen auf. Das kombinierte Programm verbesserte die Form des Gewölbes über sechs Wochen. Die Studie trennte nicht, wie viel die Hüftkräftigung allein beitrug, aber dass sie dabei war, spiegelt die biomechanische Begründung wider.',
       ],
@@ -76,10 +84,14 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler bei der Hüftabduktion im Stehen?',
       paragraphs: [
-        'Der häufigste Fehler ist, den Oberkörper zur anderen Seite zu lehnen. Wenn du dich wegneigst, nutzt der Körper Schwung und Seitneigung statt des Gluteus medius. Bleib aufrecht. Ein kleineres Anheben mit geradem Oberkörper ist besser als ein hohes mit Schieflage.',
-        'Ein weiterer Fehler ist, den Fuß nach außen zu drehen, sodass die Zehen zur Decke zeigen. Dann wandert die Arbeit zu den Hüftbeugern und zum Tensor fasciae latae statt zum Gluteus medius. Lass die Zehen nach vorn oder leicht nach unten zeigen.',
-        'Ein drittes Problem ist, das Bein zu schwingen. Die Übung sollte langsam und kontrolliert sein, vor allem auf dem Weg nach unten. In der Absenkphase (exzentrisch) passiert ein großer Teil der Kräftigung. Wenn das Bein schnell fällt, macht der Muskel die Arbeit nicht.',
-        'Und wenn die Hüfte auf der Standseite absackt, ist das ein Zeichen, dass das Band zu stark ist oder der Gluteus medius auf der Standseite ermüdet. Das Becken sollte die ganze Zeit waagerecht bleiben. Nimm ein leichteres Band oder mach zwischen den Sätzen eine Pause.',
+        {
+          list: [
+            'Der häufigste Fehler ist, **den Oberkörper zur anderen Seite zu lehnen**. Wenn du dich wegneigst, nutzt der Körper Schwung und Seitneigung statt des Gluteus medius. Bleib aufrecht. Ein kleineres Anheben mit geradem Oberkörper ist besser als ein hohes mit Schieflage.',
+            'Ein weiterer Fehler ist, **den Fuß nach außen zu drehen**, sodass die Zehen zur Decke zeigen. Dann wandert die Arbeit zu den Hüftbeugern und zum Tensor fasciae latae statt zum Gluteus medius. Lass die Zehen nach vorn oder leicht nach unten zeigen.',
+            'Ein drittes Problem ist, **das Bein zu schwingen**. Die Übung sollte langsam und kontrolliert sein, vor allem auf dem Weg nach unten. In der Absenkphase (exzentrisch) passiert ein großer Teil der Kräftigung. Wenn das Bein schnell fällt, macht der Muskel die Arbeit nicht.',
+            '**Und wenn die Hüfte auf der Standseite absackt**, ist das ein Zeichen, dass das Band zu stark ist oder der Gluteus medius auf der Standseite ermüdet. Das Becken sollte die ganze Zeit waagerecht bleiben. Nimm ein leichteres Band oder mach zwischen den Sätzen eine Pause.',
+          ],
+        },
       ],
     },
     {
@@ -87,8 +99,16 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
       paragraphs: [
         'Die biomechanische Begründung für Hüftabduktion in Fußprogrammen ist gut belegt: Schwache Hüftabduktoren lassen das Knie nach innen einknicken, was die Pronation des Fußes und die Last auf dem Gewölbe erhöht. Mehrere Beobachtungsstudien bestätigen den Zusammenhang zwischen schwacher Hüfte und Problemen bei der Ausrichtung der Beine.',
         'Für klinische Ergebnisse kommen die stärksten Belege aus kombinierten Programmen. Die Studie von Brijwasi und Kollegen von 2023 nahm Hüftkräftigung als Teil eines sechswöchigen Übungsprogramms für 52\u00A0Personen mit flexiblem Plattfuß auf. Das Programm verbesserte die Form des Gewölbes. Hüftkräftigung wurde nicht in einer eigenen Studie zu Plattfüßen oder Plantarfasziitis einzeln getestet.',
-        'Eine randomisierte Studie von 2024 mit 45\u00A0Frauen mit flexiblem Plattfuß verglich über sechs Wochen Kurzer-Fuß-Übungen, ein kombiniertes Übungsprogramm und Kurzer-Fuß-Übungen plus isometrische Hüftabduktion. Alle drei Gruppen verbesserten den Navikular-Drop (wie stark das Gewölbe unter dem Körpergewicht absinkt). Die Gruppe mit isometrischer Hüftabduktion verbesserte sich am stärksten, war beim Navikular-Drop aber nicht signifikant besser als das kombinierte Programm; beim seitlichen Schwanken schon (Zarali und Kollegen, 2024). Das deutet darauf hin, dass Arbeit an der Hüfte den Fußübungen etwas hinzufügen könnte, gestützt auf eine einzige kleine Studie.',
-        'Die Belege stützen Hüftabduktion als Teil eines umfassenderen Fußprogramms. Sie ist keine alleinige Übung gegen Schmerzen im Gewölbe, schließt aber eine Lücke, die reine Fußübungen offenlassen. Verwandte Seiten: [Übungen bei Plattfüßen](/de/plattfuss-uebungen/), [Einwärtsdrehen mit Band](/de/uebungen/einwaertsdrehen-mit-band/), [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
+        'Eine randomisierte Studie von 2024 mit 45\u00A0Frauen mit flexiblem Plattfuß verglich über sechs Wochen:',
+        {
+          list: [
+            'Kurzer-Fuß-Übungen.',
+            'Ein kombiniertes Übungsprogramm.',
+            'Kurzer-Fuß-Übungen plus isometrische Hüftabduktion.',
+          ],
+        },
+        'Alle drei Gruppen verbesserten den Navikular-Drop (wie stark das Gewölbe unter dem Körpergewicht absinkt). Die Gruppe mit isometrischer Hüftabduktion verbesserte sich am stärksten, war beim Navikular-Drop aber nicht signifikant besser als das kombinierte Programm; beim seitlichen Schwanken schon (Zarali und Kollegen, 2024). Das deutet darauf hin, dass Arbeit an der Hüfte den Fußübungen etwas hinzufügen könnte, gestützt auf eine einzige kleine Studie.',
+        '**Die Belege stützen Hüftabduktion als Teil eines umfassenderen Fußprogramms.** Sie ist keine alleinige Übung gegen Schmerzen im Gewölbe, schließt aber eine Lücke, die reine Fußübungen offenlassen. Verwandte Seiten: [Übungen bei Plattfüßen](/de/plattfuss-uebungen/), [Einwärtsdrehen mit Band](/de/uebungen/einwaertsdrehen-mit-band/), [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },

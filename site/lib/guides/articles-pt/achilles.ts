@@ -19,7 +19,8 @@ export const ACHILLES_PT: Guide = {
   lede:
     'Os exercícios para tendinite de Aquiles funcionam melhor quando você entende a descida do calcanhar como treino de força, não como alongamento. A diretriz clínica de 2024 dá ao exercício o grau máximo, **A**, e uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou nenhum protocolo claramente melhor que outro. O que importa é colocar carga no tendão com constância por semanas.',
   intro: [
-    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) resume os dois casos. Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/). A maioria das pessoas usa “tendinite” e “tendinopatia” como sinônimos. As diretrizes atuais usam “tendinopatia” porque o problema costuma ser de carga, não uma inflamação pura. Esta página usa “tendinite” nos títulos e “tendinopatia” onde a diretriz usa.',
+    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) resume os dois casos. Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+    'A maioria das pessoas usa “tendinite” e “tendinopatia” como sinônimos. As diretrizes atuais usam “tendinopatia” porque o problema costuma ser de carga, não uma inflamação pura. Esta página usa “tendinite” nos títulos e “tendinopatia” onde a diretriz usa.',
   ],
   takeaways: [
     'A diretriz clínica de 2024 dá ao exercício (qualquer tipo que coloque carga no tendão) o grau **A**, o mais alto, para a tendinopatia de Aquiles no meio do tendão (Chimenti e colegas, 2024).',
@@ -42,7 +43,7 @@ export const ACHILLES_PT: Guide = {
       h2: 'O que é a descida excêntrica do calcanhar, e por que não é um alongamento?',
       paragraphs: [
         'A descida excêntrica do calcanhar é um exercício de força, não um alongamento de flexibilidade. Você sobe com os dois pés, passa o peso para o lado dolorido e desce devagar em um pé só, deixando o calcanhar afundar abaixo da beira do degrau. A fase de descida é a contração excêntrica: o músculo da panturrilha se alongando sob carga. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas.',
-        'O erro mais comum é ficar parado embaixo como em um alongamento de panturrilha. Isso transforma o exercício em um alongamento estático, que é outro estímulo. O que importa é a descida lenta e com carga. Três segundos para descer, com o músculo trabalhando o tempo todo.',
+        'O erro mais comum é ficar parado embaixo como em um alongamento de panturrilha. Isso transforma o exercício em um alongamento estático, que é outro estímulo. **O que importa é a descida lenta e com carga.** Três segundos para descer, com o músculo trabalhando o tempo todo.',
         'No ensaio de Alfredson de 1998, 15\u00A0atletas com dor antiga no meio do tendão de Aquiles fizeram descidas excêntricas do calcanhar duas vezes por dia, 7\u00A0dias por semana, por três meses, com o joelho esticado e dobrado. Os 15 voltaram ao nível de corrida que tinham antes. Foi um ensaio pequeno, sem grupo controle, mas abriu toda uma linha de pesquisa.',
       ],
       exercises: [
@@ -67,7 +68,7 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'Sim, pela evidência atual. Um ensaio de 2015 com 58\u00A0pessoas comparou a resistência pesada e lenta (HSR, de heavy slow resistance), feita 3\u00A0dias por semana, com o protocolo excêntrico clássico de duas vezes por dia. A conclusão: “Tanto o excêntrico tradicional quanto a HSR dão resultados clínicos positivos, igualmente bons e duradouros em pacientes com tendinopatia de Aquiles.”',
         'Uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou diferença clinicamente relevante entre nenhuma das abordagens de exercício ativo aos 3 ou aos 12\u00A0meses. Todas foram melhores do que não fazer nada. Nenhum ensaio tinha baixo risco de viés. Os autores recomendaram começar com um programa de exercícios para a panturrilha porque é barato e tem poucos riscos.',
-        'O formato do protocolo importa menos do que colocar carga no tendão com constância. As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na fascite plantar, veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
+        '**O formato do protocolo importa menos do que colocar carga no tendão com constância.** As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na fascite plantar, veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -169,7 +170,14 @@ export const ACHILLES_PT: Guide = {
       h2: 'Quanta dor é aceitável nos exercícios para o Aquiles?',
       keyFact: 'Em um ensaio com 38\u00A0pessoas, quem continuou correndo com a dor limitada a cerca de 5 de 10, passando até a manhã seguinte, melhorou tanto aos doze meses quanto quem descansou primeiro (Silbernagel e colegas, 2007).',
       paragraphs: [
-        'No estudo de Silbernagel de 2007, 38\u00A0pessoas com dor no Aquiles foram divididas em dois grupos. Um continuou correndo e saltando durante a reabilitação, seguindo a regra de que a dor durante e depois da carga podia chegar a cerca de **5 de 10**, desde que voltasse ao nível de sempre até a manhã seguinte e não piorasse de semana em semana. O outro grupo descansou primeiro. Os dois melhoraram de forma significativa aos 12\u00A0meses, sem diferença entre eles.',
+        'No estudo de Silbernagel de 2007, 38\u00A0pessoas com dor no Aquiles foram divididas em dois grupos:',
+        {
+          list: [
+            'Um continuou correndo e saltando durante a reabilitação, seguindo a regra de que a dor durante e depois da carga podia chegar a cerca de **5 de 10**, desde que voltasse ao nível de sempre até a manhã seguinte e não piorasse de semana em semana.',
+            'O outro grupo descansou primeiro.',
+          ],
+        },
+        'Os dois melhoraram de forma significativa aos 12\u00A0meses, sem diferença entre eles.',
         'Esse é um limite diferente da regra de parar em 6/10 da página de [fascite plantar](/pt/exercicios-fascite-plantar/), que é o limite que o Walkito usa para dor no calcanhar. O número 5/10 vem de um estudo só, não é um padrão universal, mas é o modelo de dor mais citado na reabilitação do Aquiles.',
         'Algum desconforto durante a carga é esperado e foi aceito no ensaio. Dor que não passa durante a noite, que piora de semana em semana ou que chega como um episódio agudo e repentino, não.',
       ],
@@ -182,7 +190,7 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'A tendinopatia de Aquiles no meio do tendão fica no corpo do tendão, em geral de 2 a 6\u00A0centímetros acima do osso do calcanhar. As descidas excêntricas padrão e a resistência pesada e lenta têm a melhor evidência aqui. Descidas do calcanhar passando da beira de um degrau são adequadas para dor no meio do tendão.',
         'A tendinopatia de Aquiles insercional é dor bem no ponto onde o tendão se prende no osso. Em um estudo piloto de 2008 com 27\u00A0pessoas (34\u00A0tendões) com dor insercional crônica, um protocolo adaptado com carga excêntrica só no nível do chão, sem dorsiflexão além da posição neutra, relatou bons resultados em 67\u00A0por cento dos casos. A dorsiflexão profunda comprime o tendão contra o osso do calcanhar, o que irrita a inserção.',
-        'Se a sua dor é na parte de trás do osso do calcanhar e não mais acima no tendão, faça todas as elevações e descidas do calcanhar no nível do chão. Não desça abaixo da beira do degrau. Evite alongamentos fortes pelo mesmo motivo. Essa é a adaptação mais importante dos programas para o Aquiles, e a que mais passa despercebida.',
+        'Se a sua dor é na parte de trás do osso do calcanhar e não mais acima no tendão, **faça todas as elevações e descidas do calcanhar no nível do chão.** Não desça abaixo da beira do degrau. Evite alongamentos fortes pelo mesmo motivo. Essa é a adaptação mais importante dos programas para o Aquiles, e a que mais passa despercebida.',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
@@ -198,7 +206,7 @@ export const ACHILLES_PT: Guide = {
       h2: 'Dá para continuar correndo durante a reabilitação do Aquiles?',
       paragraphs: [
         'No estudo de Silbernagel de 2007, os pacientes que continuaram correndo durante a reabilitação, seguindo o modelo de monitorar a dor, não se saíram pior do que os que descansaram primeiro. Os dois grupos melhoraram aos 12\u00A0meses. O ensaio concluiu que a atividade contínua, com a dor monitorada, “pode, portanto, representar uma opção valiosa” durante a reabilitação.',
-        'Isso não quer dizer que correr é inofensivo em todos os casos. Se a dor não passa durante a noite, ou se cada semana é pior, diminua. Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde.',
+        'Isso não quer dizer que correr é inofensivo em todos os casos. **Se a dor não passa durante a noite, ou se cada semana é pior, diminua.** Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde.',
         'A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) trata do controle de carga específico da corrida com mais detalhes.',
       ],
       cites: [CITE.silbernagel],

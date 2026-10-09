@@ -37,7 +37,15 @@ export const HIGH_ARCHES_EN: Guide = {
       paragraphs: [
         'Pes cavus is a foot with an excessively high medial longitudinal arch. The arch stays high even when the foot is bearing weight. Unlike a flat foot, which collapses under load and spreads impact across a wide area, a high-arched foot is rigid and concentrates force on a smaller surface: the heel and the ball of the foot.',
         'The plantar fascia in a cavus foot is typically short and tight, which holds the arch in its high position but reduces the foot\'s ability to flex and absorb shock. The forefoot often sits lower than the rearfoot (a plantarflexed first metatarsal), and the toes may claw. These changes shift pressure onto the metatarsal heads and the heel, and away from the midfoot.',
-        'Foot pain in pes cavus commonly presents as metatarsalgia (pain under the ball of the foot), plantar heel pain, or aching along the tight plantar fascia. Ankle sprains are also more common because the rigid, inverted foot is less stable on uneven ground.',
+        'Foot pain in pes cavus commonly presents as:',
+        {
+          list: [
+            'Metatarsalgia (pain under the ball of the foot).',
+            'Plantar heel pain.',
+            'Aching along the tight plantar fascia.',
+          ],
+        },
+        'Ankle sprains are also more common because the rigid, inverted foot is less stable on uneven ground.',
       ],
       cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },
@@ -46,15 +54,34 @@ export const HIGH_ARCHES_EN: Guide = {
       paragraphs: [
         'Most high arches are idiopathic, meaning no specific cause is found. These are usually bilateral (both feet), stable over time, and present from childhood.',
         'A smaller but clinically important group is caused by neurological conditions. The most common is Charcot-Marie-Tooth disease (CMT), a hereditary motor and sensory neuropathy that causes progressive muscle weakness and wasting, starting in the feet and lower legs. The cavovarus foot in CMT develops because certain muscles weaken faster than others, pulling the foot into a high-arched, inverted position.',
-        'Other neurological causes include spinal cord abnormalities, poliomyelitis, spina bifida, cerebral palsy, and other peripheral neuropathies. Pes cavus can also follow a stroke or spinal cord injury.',
-        'The distinction matters for exercise. Idiopathic pes cavus is usually stable: the foot is shaped that way and stays that way. Neurological pes cavus can be progressive: the arch gets higher, the weakness gets worse, and the foot becomes less stable over time. Exercises can maintain mobility and stability in a neurological cavus foot, but they cannot reverse the underlying condition, and a clinician needs to be involved.',
+        'Other neurological causes include:',
+        {
+          list: [
+            'Spinal cord abnormalities.',
+            'Poliomyelitis.',
+            'Spina bifida.',
+            'Cerebral palsy.',
+            'Other peripheral neuropathies.',
+          ],
+        },
+        'Pes cavus can also follow a stroke or spinal cord injury.',
+        'The distinction matters for exercise. Idiopathic pes cavus is usually stable: the foot is shaped that way and stays that way. **Neurological pes cavus can be progressive**: the arch gets higher, the weakness gets worse, and the foot becomes less stable over time. Exercises can maintain mobility and stability in a neurological cavus foot, but they cannot reverse the underlying condition, and a clinician needs to be involved.',
       ],
     },
     {
       h2: 'When should high arches be checked by a clinician?',
       paragraphs: [
         'Not every high-arched foot needs a neurological workup. But certain patterns should always be assessed.',
-        'Progressive high arches, meaning the arch is getting higher over months or years, are a red flag for a neurological cause. One-sided pes cavus, where one foot has a much higher arch than the other, is another. Weakness in the foot or lower leg, difficulty lifting the foot during walking (foot drop), clawing of the toes that is getting worse, or a family history of CMT or other neuropathy are all reasons to see a neurologist or a foot and ankle specialist.',
+        'Progressive high arches, meaning the arch is getting higher over months or years, **are a red flag for a neurological cause.** One-sided pes cavus, where one foot has a much higher arch than the other, is another.',
+        'Reasons to see a neurologist or a foot and ankle specialist:',
+        {
+          list: [
+            'Weakness in the foot or lower leg.',
+            'Difficulty lifting the foot during walking (foot drop).',
+            'Clawing of the toes that is getting worse.',
+            'A family history of CMT or other neuropathy.',
+          ],
+        },
         'If your high arches are bilateral, stable, and have been that way since childhood, and you have no weakness or sensory changes, the arches are most likely idiopathic. The exercises below and a conversation with a podiatrist about orthoses are a reasonable starting point.',
       ],
     },
@@ -62,7 +89,8 @@ export const HIGH_ARCHES_EN: Guide = {
       h2: 'Do orthoses help pes cavus foot pain?',
       keyFact: 'A randomized trial of 154 adults with pes cavus foot pain found custom orthoses beat a sham insole by 8.3 points on pain and 9.5 points on function at three months (Burns and colleagues, 2006).',
       paragraphs: [
-        'Custom foot orthoses have the strongest evidence for pes cavus foot pain. In the only randomized trial, Burns and colleagues assigned 154 adults with chronic foot pain and bilateral pes cavus to either custom-made polypropylene foot orthoses or a flat sham insole. At three months, the custom orthoses group reported 8.3 points more improvement in foot pain on the Foot Health Status Questionnaire than the sham group. Function scores improved 9.5 points more. Plantar pressure dropped 26 percent with the custom orthoses, compared with 9 percent with the sham.',
+        '**Custom foot orthoses have the strongest evidence for pes cavus foot pain.** In the only randomized trial, Burns and colleagues assigned 154 adults with chronic foot pain and bilateral pes cavus to either custom-made polypropylene foot orthoses or a flat sham insole.',
+        'At three months, the custom orthoses group reported 8.3 points more improvement in foot pain on the Foot Health Status Questionnaire than the sham group. Function scores improved 9.5 points more. Plantar pressure dropped 26 percent with the custom orthoses, compared with 9 percent with the sham.',
         'The trial included people with both idiopathic and neuromuscular pes cavus (133 idiopathic, 21 neuromuscular including 16 with Charcot-Marie-Tooth disease). The orthoses were contoured to the shape of the foot with a full-length cushioned top cover.',
         'Over-the-counter cushioned insoles are a reasonable first step before committing to custom orthoses, which are more expensive. The key feature the trial found effective was contouring the shell to the foot\'s exact shape, not just adding flat cushioning.',
       ],
@@ -157,8 +185,16 @@ export const HIGH_ARCHES_EN: Guide = {
     {
       h2: 'What about shoes for high arches?',
       paragraphs: [
-        'Shoes for pes cavus should cushion rather than control. Unlike flat feet, where a firm medial post prevents collapse, a high-arched foot needs the opposite: a shoe that absorbs impact because the foot itself does not.',
-        'Look for a cushioned sole, a roomy toe box (clawed toes need space), and no aggressive arch support. A rigid arch cookie built for a normal foot pushes against a cavus arch in the wrong place. Neutral running shoes with good heel and forefoot cushioning are a common recommendation.',
+        '**Shoes for pes cavus should cushion rather than control.** Unlike flat feet, where a firm medial post prevents collapse, a high-arched foot needs the opposite: a shoe that absorbs impact because the foot itself does not.',
+        'Look for:',
+        {
+          list: [
+            'A cushioned sole.',
+            'A roomy toe box (clawed toes need space).',
+            'No aggressive arch support. A rigid arch cookie built for a normal foot pushes against a cavus arch in the wrong place.',
+          ],
+        },
+        'Neutral running shoes with good heel and forefoot cushioning are a common recommendation.',
         'If over-the-counter shoes and insoles are not enough, a podiatrist can assess whether custom orthoses are worth the investment. The Burns 2006 trial found that the key to a successful orthotic for pes cavus was a shell contoured to the foot with cushioned top cover, not a rigid corrective device.',
       ],
       cites: [CITE.burnsCavus],
@@ -167,7 +203,8 @@ export const HIGH_ARCHES_EN: Guide = {
       h2: 'Does Walkito help with high arches?',
       paragraphs: [
         'Walkito is built around plantar heel pain and arch pain in adults. It includes calf stretching, plantar fascia stretching, a foot roll and ankle stability work, all of which are relevant to a cavus foot. When you point at the arch on the app\'s body map, the relief session offers the short foot exercise, the plantar fascia stretch and the foot roll.',
-        'What the app does not have is a specific high arches goal or a pes cavus program. The exercises that appear are the same ones prescribed for plantar fasciitis and flat feet. For someone with high arches and plantar heel pain, those exercises overlap with what this page recommends. For someone whose pes cavus pain is mainly under the ball of the foot, or who has a neurological cause, the app is not a good fit and a clinician should direct the exercise plan.',
+        'What the app does not have is a specific high arches goal or a pes cavus program. The exercises that appear are the same ones prescribed for plantar fasciitis and flat feet.',
+        'For someone with high arches and plantar heel pain, those exercises overlap with what this page recommends. For someone whose pes cavus pain is mainly under the ball of the foot, or who has a neurological cause, the app is not a good fit and a clinician should direct the exercise plan.',
       ],
     },
   ],

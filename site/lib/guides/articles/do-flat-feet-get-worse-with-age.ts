@@ -44,7 +44,18 @@ export const FLAT_FEET_AGE_EN: Guide = {
       keyFact: 'In a comparison of 50 young adults (mean age 20.9) and 50 older adults (mean age 80.2) without foot problems, the older feet were flatter and more pronated (Scott and colleagues, 2007).',
       figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       paragraphs: [
-        'Flat feet tend to get slightly flatter with age, the same way most feet do. In a 2007 study from La Trobe University, researchers compared 50 young adults (mean age 20.9) with 50 older adults (mean age 80.2). Nobody in either group had foot problems. The older group had flatter, more pronated feet (pronated means the foot rolls inward), stiffer ankles and big toe joints, weaker toe muscles, more bunions and less feeling in the soles. When walking, their midfoot stayed on the ground for a 14 percent larger share of each step.',
+        '**Flat feet tend to get slightly flatter with age, the same way most feet do.** In a 2007 study from La Trobe University, researchers compared 50 young adults (mean age 20.9) with 50 older adults (mean age 80.2). Nobody in either group had foot problems.',
+        'The older group had:',
+        {
+          list: [
+            'Flatter, more pronated feet (pronated means the foot rolls inward).',
+            'Stiffer ankles and big toe joints.',
+            'Weaker toe muscles.',
+            'More bunions.',
+            'Less feeling in the soles.',
+          ],
+        },
+        'When walking, their midfoot stayed on the ground for a 14 percent larger share of each step.',
         'There is an important limit to this. The study compared two different groups of people at one point in time. It did not follow the same feet for 60 years. So it shows that older feet are flatter on average, not how fast any one foot changes, or whether a foot that was already flat changes more or less than a typical one. We did not find a study that has tracked lifelong flat feet over decades.',
         'For most people, the slow change happens in both feet, with no clear start date and often no pain. A fast, one-sided change is a different story, covered below.',
       ],
@@ -53,8 +64,18 @@ export const FLAT_FEET_AGE_EN: Guide = {
     {
       h2: 'Why do arches drop as you get older?',
       paragraphs: [
-        'The arch is held up by bones, ligaments (the tough bands that tie bones together), the plantar fascia under the foot, and muscles. The main muscle is the tibialis posterior, a deep calf muscle whose tendon runs behind the inner ankle bone and pulls the arch up with each step. Small muscles inside the foot help too.',
-        'Several of these change with age. In the 2007 comparison, the older group also had weaker toe muscles and stiffer ankles, though the study did not test whether these caused the flatter feet. Weight matters as well. A 2023 review of 12 population studies, about 16,000 people, found flat feet were more common in people with obesity, with odds about 2.6 times higher. That review measured how common flat feet were at one time point. It did not test whether gaining weight makes an arch drop.',
+        'The arch is held up by:',
+        {
+          list: [
+            'Bones.',
+            'Ligaments (the tough bands that tie bones together).',
+            'The plantar fascia under the foot.',
+            'Muscles.',
+          ],
+        },
+        'The main muscle is the tibialis posterior, a deep calf muscle whose tendon runs behind the inner ankle bone and pulls the arch up with each step. Small muscles inside the foot help too.',
+        'Several of these change with age. In the 2007 comparison, the older group also had weaker toe muscles and stiffer ankles, though the study did not test whether these caused the flatter feet.',
+        'Weight matters as well. A 2023 review of 12 population studies, about 16,000 people, found flat feet were more common in people with obesity, with odds about 2.6 times higher. That review measured how common flat feet were at one time point. It did not test whether gaining weight makes an arch drop.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -62,7 +83,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
       h2: 'Can you develop flat feet as an adult?',
       keyFact: 'In a survey of 582 women over 40, 3.3 percent had stage I or II posterior tibial tendon dysfunction, and all were undiagnosed despite long-standing symptoms (Kohls-Gatzoulis and colleagues, 2009).',
       paragraphs: [
-        'You can develop flat feet as an adult, and the most common cause is posterior tibial tendon dysfunction (PTTD), where the tendon that holds the arch up weakens, stretches or tears. The result used to be called adult-acquired flatfoot. In 2020 a group of foot and ankle surgeons agreed on a new name, progressive collapsing foot deformity, because the deformity can keep progressing and is not always caused by the tendon alone.',
+        '**You can develop flat feet as an adult**, and the most common cause is posterior tibial tendon dysfunction (PTTD), where the tendon that holds the arch up weakens, stretches or tears. The result used to be called adult-acquired flatfoot. In 2020 a group of foot and ankle surgeons agreed on a new name, progressive collapsing foot deformity, because the deformity can keep progressing and is not always caused by the tendon alone.',
         'This is not rare. In a 2009 survey of women over 40 at a family practice in England, 582 sent back a usable questionnaire. After phone calls and exams, 3.3 percent had early-stage PTTD (stage I or II). None of them had been diagnosed, even though their symptoms were typical and had lasted a long time.',
         'Unlike a lifelong flat foot, it usually starts on one side, with pain and sometimes swelling behind or below the inner ankle bone. Rising onto your toes on that foot alone becomes hard or painful. The stages and the exercise trials are covered in the [posterior tibial tendon dysfunction guide](/posterior-tibial-tendon-dysfunction-exercises/).',
       ],
@@ -71,7 +92,17 @@ export const FLAT_FEET_AGE_EN: Guide = {
     {
       h2: 'What makes flat feet worse?',
       paragraphs: [
-        'The factors linked to a collapsing arch in adults are mostly the ones linked to tendon wear. In a 1992 review of 67 people whose posterior tibial tendon had ruptured (average age 57), 60 percent had at least one of these: high blood pressure, obesity, diabetes, earlier surgery or injury on the inner side of the foot, or steroid exposure. Obesity showed the clearest link. It was a look back at past cases, not a controlled study, so it points to likely factors rather than proving cause.',
+        'The factors linked to a collapsing arch in adults are mostly the ones linked to tendon wear. In a 1992 review of 67 people whose posterior tibial tendon had ruptured (average age 57), 60 percent had at least one of these:',
+        {
+          list: [
+            'High blood pressure.',
+            'Obesity.',
+            'Diabetes.',
+            'Earlier surgery or injury on the inner side of the foot.',
+            'Steroid exposure.',
+          ],
+        },
+        'Obesity showed the clearest link. It was a look back at past cases, not a controlled study, so it points to likely factors rather than proving cause.',
       ],
       bullets: [
         '**Body weight.** Obesity is linked both to flat feet in general and to tendon rupture.',
@@ -81,7 +112,8 @@ export const FLAT_FEET_AGE_EN: Guide = {
         '**Pregnancy**, covered next.',
       ],
       after: [
-        '**Charcot foot** needs its own warning. In people with diabetes and nerve damage (neuropathy, where the feet lose feeling), the bones and joints of the midfoot can weaken and collapse, sometimes quickly. A 2011 expert task force described the typical early picture as a markedly swollen, warm, often red foot with only mild to modest pain. It is often mistaken for an infection, a clot or gout. If you have diabetes and one foot becomes warm and swollen, get it seen the same day.',
+        '**Charcot foot** needs its own warning. In people with diabetes and nerve damage (neuropathy, where the feet lose feeling), the bones and joints of the midfoot can weaken and collapse, sometimes quickly.',
+        'A 2011 expert task force described the typical early picture as a markedly swollen, warm, often red foot with only mild to modest pain. It is often mistaken for an infection, a clot or gout. If you have diabetes and one foot becomes warm and swollen, get it seen the same day.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -89,7 +121,8 @@ export const FLAT_FEET_AGE_EN: Guide = {
       h2: 'Can pregnancy make your feet flatter for good?',
       keyFact: 'In 49 women measured in early pregnancy and again about four and a half months after birth, arch height fell and foot length grew, mainly in first pregnancies (Segal and colleagues, 2013).',
       paragraphs: [
-        'Pregnancy can lower the arch a little, and the change can last after birth. In a 2013 study, 49 women had their feet measured in the first trimester and again about four and a half months after giving birth. Arch height and arch stiffness went down, and foot length and arch drop went up. The first pregnancy drove most of the change. In first-time mothers, foot length grew by about 1.4 millimetres and arch drop by about 1.0 millimetre on average.',
+        '**Pregnancy can lower the arch a little, and the change can last after birth.** In a 2013 study, 49 women had their feet measured in the first trimester and again about four and a half months after giving birth. Arch height and arch stiffness went down, and foot length and arch drop went up.',
+        'The first pregnancy drove most of the change. In first-time mothers, foot length grew by about 1.4 millimetres and arch drop by about 1.0 millimetre on average.',
         'Two things keep this in proportion. The authors said the average changes were small, and the study found no change in one measure of how the foot rolled during walking. "Lasting" in this study means still there at the follow-up visit a few months after birth. Nobody was followed for years.',
         'If your shoe size went up after a pregnancy and your feet feel fine, that change is common. If one arch keeps dropping, or the inner ankle starts to hurt, get it checked.',
       ],
@@ -98,7 +131,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
     {
       h2: 'When is a flattening foot a problem?',
       paragraphs: [
-        'A flattening foot is a problem when it changes fast, on one side, or with pain or swelling. Slow change in both feet with no pain is common with age. The table sorts the usual patterns.',
+        '**A flattening foot is a problem when it changes fast, on one side, or with pain or swelling.** Slow change in both feet with no pain is common with age. The table sorts the usual patterns.',
       ],
       table: {
         caption: 'Patterns of arch change in adults and what they usually mean',
@@ -122,9 +155,10 @@ export const FLAT_FEET_AGE_EN: Guide = {
       keyFact: 'A 2018 review found only three trials, 93 people in total, testing exercise for posterior tibial tendon dysfunction, with moderate effects for slow lowering (eccentric) strength work added to orthoses and stretching (Ross and colleagues, 2018).',
       paragraphs: [
         'No trial has tested whether exercise or insoles stop flat feet changing with age. What exists is evidence on two nearby questions, and it is small.',
-        'For the tendon problem behind adult arch collapse, a 2018 review found three trials with 93 people in total. Slow lowering (eccentric) strength work added to orthoses (arch-supporting insoles) and stretching eased pain and disability a moderate amount more than orthoses and stretching alone. In one trial, 36 adults in early stages did three months of their program. All groups improved, and the eccentric strength group improved most. In another trial of 39 people, adding strength work made only a small difference. The review authors called the research thin.',
+        'For the tendon problem behind adult arch collapse, a 2018 review found three trials with 93 people in total. Slow lowering (eccentric) strength work added to orthoses (arch-supporting insoles) and stretching eased pain and disability a moderate amount more than orthoses and stretching alone.',
+        'In one trial, 36 adults in early stages did three months of their program. All groups improved, and the eccentric strength group improved most. In another trial of 39 people, adding strength work made only a small difference. The review authors called the research thin.',
         'For lifelong flexible flat feet, one trial of 52 people found a short program of foot, ankle and hip exercises changed arch shape more than in a control group. It measured shape, not pain, and over a short time. Whether that kind of training slows age-related change over decades is unknown.',
-        'So keeping the muscles that hold up the arch strong is reasonable and low-risk, but nobody can promise it keeps your arch where it is. Walkito starts each exercise below at a low dose and checks calf endurance, arch hold and balance with a short test every two weeks at first (every four once you reach a goal), so you can see whether these muscles are getting stronger.',
+        'So keeping the muscles that hold up the arch strong is reasonable and low-risk, but **nobody can promise it keeps your arch where it is.** Walkito starts each exercise below at a low dose and checks calf endurance, arch hold and balance with a short test every two weeks at first (every four once you reach a goal), so you can see whether these muscles are getting stronger.',
       ],
       exercises: [
         {

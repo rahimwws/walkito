@@ -115,7 +115,7 @@ export const EX_CALF_RAISES_FR: Guide = {
       h2: 'Combien de montées sur pointes faire\u00A0?',
       keyFact: 'Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé de 20 à 81\u00A0ans a montré que le nombre de montées sur pointes sur une jambe variait selon l’âge, le sexe et le niveau d’activité, avec une médiane de 21\u00A0répétitions chez les femmes (Hébert-Losier et coll., 2017).',
       paragraphs: [
-        'Cela dépend de votre étape dans la progression et de ce que vous travaillez. Pour la force générale du mollet, 3\u00A0séries de 10 à 15\u00A0répétitions à un rythme lent sont une dose de départ courante. Pour le protocole testé par la recherche dans la fasciite plantaire, la montée sur pointes avec serviette commence à 12RM (répétitions maximales) sur 3\u00A0séries et progresse vers 8RM sur 5\u00A0séries en environ cinq semaines.',
+        'Cela dépend de votre étape dans la progression et de ce que vous travaillez. Pour la force générale du mollet, **3\u00A0séries de 10 à 15\u00A0répétitions à un rythme lent sont une dose de départ courante.** Pour le protocole testé par la recherche dans la fasciite plantaire, la montée sur pointes avec serviette commence à 12RM (répétitions maximales) sur 3\u00A0séries et progresse vers 8RM sur 5\u00A0séries en environ cinq semaines.',
         'Un repère utile est le test d’endurance des montées sur pointes sur une jambe. Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé a trouvé une médiane de 24\u00A0répétitions chez les hommes et de 21 chez les femmes, variable selon l’âge, le sexe et l’activité. L’objectif mollet dans l’application Walkito est de 25\u00A0montées sur pointes sur une jambe. L’atteindre ne met pas fin au travail. On passe au maintien des acquis.',
         'Pour le protocole propre à la fasciite plantaire, voir les [montées sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/). Pour la version destinée au tendon d’Achille, voir les [descentes excentriques du talon](/fr/exercices/descentes-excentriques-talon/).',
       ],
@@ -124,9 +124,13 @@ export const EX_CALF_RAISES_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec les montées sur pointes\u00A0?',
       paragraphs: [
-        'Aller trop vite. C’est une descente lente (environ trois secondes) qui développe la force. Rebondir en bas gaspille la phase excentrique, celle qui fait l’essentiel du travail d’adaptation du tendon.',
-        'Basculer sur le bord externe du pied. La poussée doit passer par le gros orteil et l’avant du pied. Si la cheville bascule vers l’extérieur, le mollet ne peut pas se contracter pleinement et les petits muscles de l’extérieur de la cheville subissent une tension pour laquelle ils ne sont pas faits.',
-        'Sauter la version assise. Si les montées debout sont douloureuses, passer directement au travail sur une jambe sur une marche aggrave les choses. La progression existe pour une raison\u00A0: assis, puis deux pieds debout, puis un maintien, puis une jambe. Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
+        {
+          list: [
+            '**Aller trop vite.** C’est une descente lente (environ trois secondes) qui développe la force. Rebondir en bas gaspille la phase excentrique, celle qui fait l’essentiel du travail d’adaptation du tendon.',
+            '**Basculer sur le bord externe du pied.** La poussée doit passer par le gros orteil et l’avant du pied. Si la cheville bascule vers l’extérieur, le mollet ne peut pas se contracter pleinement et les petits muscles de l’extérieur de la cheville subissent une tension pour laquelle ils ne sont pas faits.',
+            '**Sauter la version assise.** Si les montées debout sont douloureuses, passer directement au travail sur une jambe sur une marche aggrave les choses. La progression existe pour une raison\u00A0: assis, puis deux pieds debout, puis un maintien, puis une jambe. Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
+          ],
+        },
       ],
     },
     {

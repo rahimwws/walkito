@@ -39,7 +39,9 @@ export const PF_TAPING_FR: Guide = {
       h2: 'À quel point le strapping aide-t-il, et combien de temps\u00A0?',
       keyFact: 'Dans un essai en aveugle sur 92\u00A0personnes, le strapping low-Dye a réduit la douleur des premiers pas d’environ 1,2\u00A0point sur 10 de plus qu’un faux strapping après une semaine (Radford et coll., 2006).',
       paragraphs: [
-        'Le soulagement apporté par la bande est réel mais modeste, et il s’estompe vite une fois la bande retirée. Le test le plus propre est un essai australien de 2006 sur 92\u00A0personnes ayant mal au talon. La moitié a porté un strapping rigide low-Dye pendant une semaine plus de faux ultrasons, l’autre moitié n’a reçu que les faux ultrasons. On avait dit aux participants que l’une des deux options pouvait être factice, mais la plupart des personnes du groupe strapping pensaient avoir la vraie. Le groupe avec strapping avait une douleur des premiers pas inférieure d’environ 1,2\u00A0point sur une échelle de 0 à 10 par rapport au groupe placebo. Les autres mesures, comme la fonction du pied, ne différaient pas (Radford et coll., 2006).',
+        '**Le soulagement apporté par la bande est réel mais modeste, et il s’estompe vite une fois la bande retirée.**',
+        'Le test le plus propre est un essai australien de 2006 sur 92\u00A0personnes ayant mal au talon. La moitié a porté un strapping rigide low-Dye pendant une semaine plus de faux ultrasons, l’autre moitié n’a reçu que les faux ultrasons. On avait dit aux participants que l’une des deux options pouvait être factice, mais la plupart des personnes du groupe strapping pensaient avoir la vraie.',
+        'Le groupe avec strapping avait une douleur des premiers pas inférieure d’environ 1,2\u00A0point sur une échelle de 0 à 10 par rapport au groupe placebo. Les autres mesures, comme la fonction du pied, ne différaient pas (Radford et coll., 2006).',
         'Le groupe placebo s’est amélioré lui aussi, de près de 2\u00A0points, simplement parce qu’il participait à une étude et attendait une aide. Une étude antérieure de la même équipe, sans répartition au hasard, rapportait un écart plus de deux fois plus grand (Landorf et coll., 2005). Sans groupe de comparaison équitable, la bande paraît plus efficace qu’elle ne l’est.',
         'Le kinesio tape suit le même schéma de courte durée. Dans un essai de 2024 sur 34\u00A0personnes, il a fait mieux qu’une fausse bande, jusqu’à 3,5\u00A0points sur 10 de différence le deuxième jour, puis l’écart s’est réduit jour après jour jusqu’au retrait de la bande (García-Gomariz et coll., 2024). La recommandation de 2023 n’a trouvé aucune étude sur le strapping avec un suivi au-delà d’environ un mois et demi.',
       ],
@@ -51,9 +53,16 @@ export const PF_TAPING_FR: Guide = {
       h2: 'Strapping low-Dye ou kinesio tape\u00A0: lequel choisir\u00A0?',
       keyFact: 'Dans un essai sur 40\u00A0personnes, le kinesio tape a soulagé la douleur de 2\u00A0points sur 10 de plus que le strapping low-Dye le premier jour, avec un écart qui se réduisait chaque jour (García-Gomariz et coll., 2024).',
       paragraphs: [
-        'Les deux types de bande ont des essais en leur faveur, et aucun ne l’emporte clairement pour l’instant. Le strapping low-Dye utilise une bande de sport rigide, non extensible (souvent une bande à l’oxyde de zinc), pour maintenir la voûte et limiter son affaissement. Le kinesio tape, ou bande de kinésiologie, est fin et élastique. Il bouge avec vous et ne bloque pas le pied.',
-        'Un seul petit essai les a comparés directement. Chez 40\u00A0personnes, le kinesio tape a davantage soulagé la douleur le premier jour, de 2\u00A0points sur 10, et les participants l’ont jugé plus confortable, moins propice à la transpiration et plus durable. L’écart de douleur s’est réduit chaque jour ensuite (García-Gomariz et coll., 2024). Une troisième option, le strapping calcanéen (quatre bandes autour de l’os du talon et du tendon d’Achille, sans toucher la voûte), a réduit la douleur davantage que les étirements ou une fausse bande après une semaine dans un essai sur 41\u00A0personnes (Hyland et coll., 2006).',
-        'Deux revues de 2026, portant chacune sur 11\u00A0essais, vont dans le même sens. Le kinesio tape ajouté à la rééducation a réduit la douleur un peu plus que la rééducation seule, un résultat que les auteurs qualifient de préliminaire (Song et coll., 2026). Le strapping low-Dye a fait mieux qu’un placebo, mais pas mieux que les autres options (Zhang et coll., 2026).',
+        'Les deux types de bande ont des essais en leur faveur, et **aucun ne l’emporte clairement pour l’instant.** Le strapping low-Dye utilise une bande de sport rigide, non extensible (souvent une bande à l’oxyde de zinc), pour maintenir la voûte et limiter son affaissement. Le kinesio tape, ou bande de kinésiologie, est fin et élastique. Il bouge avec vous et ne bloque pas le pied.',
+        'Un seul petit essai les a comparés directement. Chez 40\u00A0personnes, le kinesio tape a davantage soulagé la douleur le premier jour, de 2\u00A0points sur 10, et les participants l’ont jugé plus confortable, moins propice à la transpiration et plus durable. L’écart de douleur s’est réduit chaque jour ensuite (García-Gomariz et coll., 2024).',
+        'Une troisième option, le strapping calcanéen (quatre bandes autour de l’os du talon et du tendon d’Achille, sans toucher la voûte), a réduit la douleur davantage que les étirements ou une fausse bande après une semaine dans un essai sur 41\u00A0personnes (Hyland et coll., 2006).',
+        'Deux revues de 2026, portant chacune sur 11\u00A0essais, vont dans le même sens\u00A0:',
+        {
+          list: [
+            'Le kinesio tape ajouté à la rééducation a réduit la douleur un peu plus que la rééducation seule, un résultat que les auteurs qualifient de préliminaire (Song et coll., 2026).',
+            'Le strapping low-Dye a fait mieux qu’un placebo, mais pas mieux que les autres options (Zhang et coll., 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Strapping rigide low-Dye ou kinesio tape pour la fasciite plantaire',
@@ -71,7 +80,7 @@ export const PF_TAPING_FR: Guide = {
     {
       h2: 'Comment faire un strapping du pied pour la fasciite plantaire (méthode low-Dye)\u00A0?',
       paragraphs: [
-        'Le strapping low-Dye prend environ cinq minutes une fois que vous avez pris le coup de main. Si possible, faites-vous montrer la première fois par un kinésithérapeute ou un podologue. Les étapes ci-dessous suivent la version la plus courante.',
+        'Le strapping low-Dye prend environ cinq minutes une fois que vous avez pris le coup de main. **Si possible, faites-vous montrer la première fois par un kinésithérapeute ou un podologue.** Les étapes ci-dessous suivent la version la plus courante.',
         'Avant de commencer, lavez le pied au savon simple, séchez-le bien et n’appliquez pas de crème. Coupez les bandes à l’avance dans une bande de sport rigide d’environ 2,5\u00A0cm de large. Asseyez-vous, le pied à angle droit par rapport à la jambe, sans pointer.',
       ],
       bullets: [
@@ -102,7 +111,7 @@ export const PF_TAPING_FR: Guide = {
     {
       h2: 'Combien de temps garder le strapping, et peut-on dormir avec\u00A0?',
       paragraphs: [
-        'La plupart des personnes gardent la bande deux à cinq jours, puis laissent la peau se reposer. Cela correspond aux essais\u00A0: le strapping low-Dye est resté en place 3 à 5\u00A0jours dans une étude et une semaine dans une autre, et le kinesio tape a été porté 5\u00A0jours dans les essais de 2024 (Landorf et coll., 2005\u00A0; Radford et coll., 2006\u00A0; García-Gomariz et coll., 2024).',
+        '**La plupart des personnes gardent la bande deux à cinq jours, puis laissent la peau se reposer.** Cela correspond aux essais\u00A0: le strapping low-Dye est resté en place 3 à 5\u00A0jours dans une étude et une semaine dans une autre, et le kinesio tape a été porté 5\u00A0jours dans les essais de 2024 (Landorf et coll., 2005\u00A0; Radford et coll., 2006\u00A0; García-Gomariz et coll., 2024).',
         'La bande rigide se relâche à la marche et doit donc souvent être refaite plus tôt. Le kinesio tape est conçu pour tenir plusieurs jours et peut être mouillé. Séchez-le en tamponnant après la douche, et ne le passez pas au sèche-cheveux.',
         'Vous pouvez dormir avec la bande si la peau semble normale, mais nous n’avons trouvé aucun essai testant une bande portée uniquement la nuit. Pour la douleur du matin, l’option soutenue par la recommandation est l’attelle de nuit, présentée dans [attelles de nuit et fasciite plantaire](/fr/attelle-de-nuit-fasciite-plantaire/), avec les étirements de [douleur au talon au réveil](/fr/douleur-talon-au-reveil/).',
       ],
@@ -112,8 +121,23 @@ export const PF_TAPING_FR: Guide = {
       h2: 'Quels sont les effets indésirables du strapping\u00A0?',
       keyFact: 'Dans un essai sur 92\u00A0personnes, 13 des 46\u00A0personnes qui portaient le strapping low-Dye (28\u00A0%) ont eu un effet indésirable, et tous ont disparu une fois la bande retirée (Radford et coll., 2006).',
       paragraphs: [
-        'Les principaux effets indésirables du strapping sont l’irritation de la peau et une bande qui serre trop. La recommandation de 2023 indique qu’une légère irritation de la peau est le seul effet néfaste rapporté. L’essai en aveugle de 2006 donne les chiffres les plus clairs. Sur 46\u00A0personnes qui ont porté une bande rigide pendant une semaine, 13 (28\u00A0%) ont eu un effet indésirable\u00A0: 4 la trouvaient trop serrée, 4 ont eu une réaction allergique de la peau et 5 ont remarqué une nouvelle douleur ailleurs dans la jambe. Cinq ont retiré la bande plus tôt. Tous ces effets ont disparu une fois la bande enlevée (Radford et coll., 2006).',
-        'Pour limiter le risque, utilisez une bande hypoallergénique ou une fine sous-bande sur une peau sensible, ne serrez jamais une bande rigide autour du pied, et retirez la bande lentement, idéalement après l’avoir décollée avec un peu d’huile pour bébé.',
+        '**Les principaux effets indésirables du strapping sont l’irritation de la peau et une bande qui serre trop.** La recommandation de 2023 indique qu’une légère irritation de la peau est le seul effet néfaste rapporté. L’essai en aveugle de 2006 donne les chiffres les plus clairs. Sur 46\u00A0personnes qui ont porté une bande rigide pendant une semaine, 13 (28\u00A0%) ont eu un effet indésirable\u00A0:',
+        {
+          list: [
+            '4 la trouvaient trop serrée.',
+            '4 ont eu une réaction allergique de la peau.',
+            '5 ont remarqué une nouvelle douleur ailleurs dans la jambe.',
+          ],
+        },
+        'Cinq ont retiré la bande plus tôt. Tous ces effets ont disparu une fois la bande enlevée (Radford et coll., 2006).',
+        'Pour limiter le risque\u00A0:',
+        {
+          list: [
+            'Utilisez une bande hypoallergénique ou une fine sous-bande sur une peau sensible.',
+            'Ne serrez jamais une bande rigide autour du pied.',
+            'Retirez la bande lentement, idéalement après l’avoir décollée avec un peu d’huile pour bébé.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -122,7 +146,9 @@ export const PF_TAPING_FR: Guide = {
       keyFact: 'Dans un essai sur 48\u00A0personnes, des montées sur pointes lentes avec une serviette sous les orteils ont soulagé la douleur plus vite que les étirements seuls à trois mois, et les deux groupes étaient à égalité à douze mois (Rathleff et coll., 2015).',
       paragraphs: [
         'Associez la bande aux étirements et au renforcement du mollet, car ce sont les éléments dont l’intérêt est démontré au-delà du court terme. La recommandation de 2023 note les étirements du fascia plantaire et du mollet **A** pour la douleur à court et à long terme. Le renforcement musculaire obtient un **B**. Dans un essai sur 48\u00A0personnes, des montées sur pointes lentes avec une serviette sous les orteils ont soulagé la douleur plus vite que les étirements seuls à trois mois, même si les deux groupes étaient à égalité à douze mois (Rathleff et coll., 2015).',
-        'La bande peut rendre la marche plus facile cette semaine, pour que vous continuiez à bouger et à faire les exercices. Si c’est la marche elle-même qui déclenche la douleur, [douleur au talon après la marche](/fr/douleur-talon-apres-marche/) explique comment adapter la charge. Les trois exercices ci-dessous sont l’essentiel. Dans Walkito, les étirements commencent à 2\u00A0maintiens de 30\u00A0secondes, et la montée sur pointes avec serviette, une fois que votre plan y arrive, est fixée à 4\u00A0séries de 10 avec le même rythme lent 3-2-3 (un sac à dos ajoute du poids quand vous avez une marche). Une fois par semaine, l’exercice de votre objectif principal monte d’une étape si vos deux dernières séances avec lui vous ont paru faciles et que la douleur du matin n’a pas augmenté, et redescend d’une étape si une séance a été difficile ou si la douleur du matin a augmenté de 2\u00A0points ou plus.',
+        'La bande peut rendre la marche plus facile cette semaine, pour que vous continuiez à bouger et à faire les exercices. Si c’est la marche elle-même qui déclenche la douleur, [douleur au talon après la marche](/fr/douleur-talon-apres-marche/) explique comment adapter la charge.',
+        'Les trois exercices ci-dessous sont l’essentiel. Dans Walkito, les étirements commencent à 2\u00A0maintiens de 30\u00A0secondes, et la montée sur pointes avec serviette, une fois que votre plan y arrive, est fixée à 4\u00A0séries de 10 avec le même rythme lent 3-2-3 (un sac à dos ajoute du poids quand vous avez une marche).',
+        'Une fois par semaine, l’exercice de votre objectif principal monte d’une étape si vos deux dernières séances avec lui vous ont paru faciles et que la douleur du matin n’a pas augmenté, et redescend d’une étape si une séance a été difficile ou si la douleur du matin a augmenté de 2\u00A0points ou plus.',
       ],
       exercises: [
         {
@@ -167,7 +193,15 @@ export const PF_TAPING_FR: Guide = {
     {
       h2: 'Quand arrêter le strapping\u00A0?',
       paragraphs: [
-        'Arrêtez le strapping quand il ne fait plus de différence que vous sentez, quand votre peau réagit, ou quand la douleur s’est assez calmée pour que vous marchiez normalement sans lui. La bande n’est pas faite pour être portée pendant des mois. La recherche couvre jusqu’à environ un mois et demi, et la recommandation ne le conseille qu’à court terme.',
+        'Arrêtez le strapping\u00A0:',
+        {
+          list: [
+            'Quand il ne fait plus de différence que vous sentez.',
+            'Quand votre peau réagit.',
+            'Quand la douleur s’est assez calmée pour que vous marchiez normalement sans lui.',
+          ],
+        },
+        '**La bande n’est pas faite pour être portée pendant des mois.** La recherche couvre jusqu’à environ un mois et demi, et la recommandation ne le conseille qu’à court terme.',
         'Un test simple\u00A0: passez une journée sans bande et notez votre douleur des premiers pas de 0 à 10. Si elle est la même que les jours avec bande, la bande n’apporte plus grand-chose. Si vous avez encore besoin de la bande tous les jours après un mois d’exercices réguliers, consultez un professionnel de santé pour vérifier qu’il ne s’agit pas d’autre chose et parler d’autres options, comme les semelles (voir [semelles ou exercices](/fr/semelles-ou-exercices/)).',
       ],
       cites: [CITE.guideline],

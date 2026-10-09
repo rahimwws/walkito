@@ -27,7 +27,15 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Quali esercizi rinforzano le caviglie?',
       paragraphs: [
-        'Gli esercizi di rinforzo della caviglia lavorano su quattro gruppi di muscoli, più il sistema dell’equilibrio che li controlla. I peronieri (sul lato esterno della gamba) girano il piede verso l’esterno e sono la principale difesa contro le distorsioni. Il tibiale posteriore (in profondità sul lato interno) gira il piede verso l’interno e sostiene l’arco. Il polpaccio ti spinge sulle punte, e il tibiale anteriore (il muscolo dello stinco) solleva la parte anteriore del piede.',
+        'Gli esercizi di rinforzo della caviglia lavorano su quattro gruppi di muscoli, più il sistema dell’equilibrio che li controlla:',
+        {
+          list: [
+            '**Peronieri:** I peronieri (sul lato esterno della gamba) girano il piede verso l’esterno e sono la principale difesa contro le distorsioni.',
+            '**Tibiale posteriore:** Il tibiale posteriore (in profondità sul lato interno) gira il piede verso l’interno e sostiene l’arco.',
+            '**Polpaccio:** Il polpaccio ti spinge sulle punte.',
+            '**Tibiale anteriore:** Il tibiale anteriore (il muscolo dello stinco) solleva la parte anteriore del piede.',
+          ],
+        },
         'La forza è solo metà del discorso. Le caviglie si girano anche perché i muscoli reagiscono una frazione di secondo troppo tardi. Il lavoro di equilibrio allena la velocità di quelle reazioni, ed è per questo che compare sempre negli studi sulle distorsioni ripetute.',
         'La tabella mostra l’ordine usato in questa pagina. Passa alla fase successiva quando quella attuale ti sembra facile e la caviglia non fa più male la mattina dopo.',
       ],
@@ -46,10 +54,17 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
       h2: 'Gli esercizi di rinforzo della caviglia evitano un’altra distorsione?',
       keyFact: 'In uno studio su 522\u00A0sportivi dopo una distorsione della caviglia, il 22% di chi aveva ricevuto un programma di equilibrio a casa ha avuto una nuova distorsione entro un anno, contro il 33% di chi aveva solo le cure abituali (Hupperets e colleghi, 2009).',
       paragraphs: [
-        'Sì, e l’allenamento dell’equilibrio ha le prove migliori. In uno studio randomizzato del 2009 nei Paesi Bassi, 522\u00A0sportivi tra 12 e 70\u00A0anni che avevano preso una distorsione alla caviglia nei due mesi precedenti hanno ricevuto le cure abituali oppure le cure abituali più un programma a casa con la tavoletta propriocettiva. In un anno, il 22% del gruppo equilibrio ha avuto una nuova distorsione, contro il 33% del gruppo con le cure abituali. È un rischio più basso di circa il 35%. Nove persone dovevano fare il programma per evitare una distorsione ripetuta.',
+        'Sì, e **l’allenamento dell’equilibrio ha le prove migliori.** In uno studio randomizzato del 2009 nei Paesi Bassi, 522\u00A0sportivi tra 12 e 70\u00A0anni che avevano preso una distorsione alla caviglia nei due mesi precedenti hanno ricevuto le cure abituali oppure le cure abituali più un programma a casa con la tavoletta propriocettiva.',
+        'In un anno, il 22% del gruppo equilibrio ha avuto una nuova distorsione, contro il 33% del gruppo con le cure abituali. È un rischio più basso di circa il 35%. Nove persone dovevano fare il programma per evitare una distorsione ripetuta.',
         'Il programma chiedeva tre sessioni a settimana fino a 30\u00A0minuti, per due mesi, sempre più difficili. Le persone lo facevano a casa senza supervisione.',
-        'Gli studi messi insieme vanno nella stessa direzione. Una meta-analisi del 2015 di 7\u00A0studi con 3.726\u00A0persone ha trovato che l’allenamento dell’equilibrio riduceva il rischio di distorsione di circa un terzo (rischio relativo 0,65). Nelle persone con una distorsione passata il risultato reggeva (rischio relativo 0,64). Per chi non aveva mai avuto una distorsione, le prove erano più deboli e gli autori le hanno definite non conclusive. Una revisione del 2018 di studi su atleti agonisti (sei degli otto studi inclusi testavano l’allenamento dell’equilibrio) ha trovato che l’allenamento dell’equilibrio riduceva il rischio di distorsione del 46%.',
-        'Una panoramica del 2017 di 46\u00A0revisioni ha valutato moderate le prove per l’allenamento neuromuscolare (lavoro di equilibrio e coordinazione) nel prevenire le distorsioni ripetute, e forti quelle per il tutore.',
+        'Gli studi messi insieme vanno nella stessa direzione:',
+        {
+          list: [
+            'Una meta-analisi del 2015 di 7\u00A0studi con 3.726\u00A0persone ha trovato che l’allenamento dell’equilibrio riduceva il rischio di distorsione di circa un terzo (rischio relativo 0,65). Nelle persone con una distorsione passata il risultato reggeva (rischio relativo 0,64). Per chi non aveva mai avuto una distorsione, le prove erano più deboli e gli autori le hanno definite non conclusive.',
+            'Una revisione del 2018 di studi su atleti agonisti (sei degli otto studi inclusi testavano l’allenamento dell’equilibrio) ha trovato che l’allenamento dell’equilibrio riduceva il rischio di distorsione del 46%.',
+            'Una panoramica del 2017 di 46\u00A0revisioni ha valutato moderate le prove per l’allenamento neuromuscolare (lavoro di equilibrio e coordinazione) nel prevenire le distorsioni ripetute, e forti quelle per il tutore.',
+          ],
+        },
       ],
       sourceNote:
         'Hupperets 2009: rischio relativo 0,63 (IC 95% da 0,45 a 0,88) per le recidive riferite dai partecipanti; il beneficio era più chiaro negli sportivi la cui prima distorsione non era stata gestita da un medico. Schiftan 2015: RR 0,65 (da 0,55 a 0,77) nel complesso, 0,64 (da 0,51 a 0,81) con una distorsione precedente, 0,57 (da 0,34 a 0,97) senza, da due studi non significativi.',
@@ -151,7 +166,14 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
       paragraphs: [
         'Di solito puoi iniziare esercizi delicati per la caviglia poco dopo una distorsione, purché tu riesca a caricare il peso sul piede. Una panoramica del 2017 di 46\u00A0revisioni ha trovato prove forti per la mobilizzazione precoce (rimettere presto in movimento la caviglia) e prove moderate per l’esercizio dopo una distorsione acuta. Una linea guida olandese del 2018 dice che le persone con una lesione dei legamenti esterni della caviglia stanno meglio con un taping o un tutore insieme a un programma di esercizi, e preferisce l’esercizio supervisionato alle opzioni passive.',
         'Comincia con movimenti senza dolore e con il lavoro con l’elastico da seduto, aggiungi i sollevamenti in piedi quando camminare ti sembra normale, e aggiungi l’equilibrio quando riesci a stare sulla gamba infortunata senza dolore acuto. Se la caviglia è anche rigida, vedi gli [esercizi di mobilità della caviglia](/it/esercizi-mobilita-caviglia/) per la parte del movimento.',
-        'Prima di tutto questo, escludi una frattura. Le regole di Ottawa per la caviglia sono una breve lista di controllo usata dai medici: la radiografia è consigliata se subito dopo il trauma e in ambulatorio non riuscivi a fare quattro passi, o se c’è dolore alla pressione sul bordo posteriore o sulla punta di uno dei due malleoli, alla base del quinto metatarso o sullo scafoide (un osso del mesopiede sul lato interno). Una revisione del 2003 di 27\u00A0studi con 15.581\u00A0pazienti ha trovato che le regole non fanno sfuggire quasi nessuna frattura.',
+        'Prima di tutto questo, **escludi una frattura.** Le regole di Ottawa per la caviglia sono una breve lista di controllo usata dai medici. La radiografia è consigliata se:',
+        {
+          list: [
+            'Subito dopo il trauma e in ambulatorio non riuscivi a fare quattro passi.',
+            'C’è dolore alla pressione sul bordo posteriore o sulla punta di uno dei due malleoli, alla base del quinto metatarso o sullo scafoide (un osso del mesopiede sul lato interno).',
+          ],
+        },
+        'Una revisione del 2003 di 27\u00A0studi con 15.581\u00A0pazienti ha trovato che le regole non fanno sfuggire quasi nessuna frattura.',
       ],
       cites: [CITE.dohertyOverview, CITE.vuurberg, CITE.bachmannOttawa],
     },
@@ -160,7 +182,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
       keyFact: 'In uno studio su 39\u00A0persone con caviglie instabili, l’allenamento con l’elastico ha migliorato la forza della caviglia e l’instabilità percepita, ma non i test di equilibrio o di salto (Hall e colleghi, 2015).',
       paragraphs: [
         'Il solo elastico costruisce forza ma potrebbe non cambiare come la caviglia reagisce a un’oscillazione. In uno studio del 2015, 39\u00A0giovani adulti con instabilità cronica della caviglia (una caviglia che continua a cedere) sono stati divisi tra un gruppo con l’elastico, un gruppo di forza con resistenza manuale e un gruppo di controllo. I due gruppi di forza si sono allenati tre volte a settimana per circa un mese e mezzo. Entrambi sono diventati più forti e hanno detto di sentire la caviglia più stabile. Nessuno dei due è migliorato in un test di equilibrio con allungamento o in un test di salti incrociati.',
-        'Gli autori hanno suggerito di aggiungere esercizi che usino più direzioni e più articolazioni. Gli studi sulla prevenzione usavano l’equilibrio, non l’elastico. Fai entrambi.',
+        'Gli autori hanno suggerito di aggiungere esercizi che usino più direzioni e più articolazioni. Gli studi sulla prevenzione usavano l’equilibrio, non l’elastico. **Fai entrambi.**',
         'Conta anche l’anca. In un piccolo studio del 2018 su 26\u00A0persone con caviglie instabili, dopo un mese di esercizi supervisionati con l’elastico per l’anca, tre volte a settimana, il gruppo che si allenava faceva in media 9,9\u00A0errori in un test di equilibrio in piedi, contro 21,2 nel gruppo che non faceva nulla. Era un solo piccolo studio, quindi considera l’anca un’aggiunta utile, non il centro del piano.',
       ],
       sourceNote:
@@ -172,13 +194,22 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
       paragraphs: [
         'Per la maggior parte della progressione basta un muro. Solo i movimenti di inversione ed eversione richiedono un elastico.',
         'Senza elastico puoi fare le stesse due direzioni come esercizi isometrici (tenute contro qualcosa che non si muove). Siediti con il bordo esterno del piede contro la gamba di un tavolo o lo stipite di una porta e spingi verso l’esterno per 5-10\u00A0secondi senza che il piede si muova. Poi fai lo stesso con il bordo interno, spingendo verso l’interno. È un primo passo comune dopo una distorsione, anche se non è stato testato come programma a sé.',
-        'Se hai tempo per una cosa sola, tieni il lavoro di equilibrio. Ha le prove più forti e richiede un minuto al giorno.',
+        'Se hai tempo per una cosa sola, **tieni il lavoro di equilibrio.** Ha le prove più forti e richiede un minuto al giorno.',
       ],
     },
     {
       h2: 'Gli esercizi di rinforzo della caviglia aiutano l’equilibrio negli anziani?',
       paragraphs: [
-        'Gli esercizi per la caviglia fanno spesso parte della prevenzione delle cadute negli anziani, ma le prove per il solo lavoro sulla caviglia sono limitate. Lo studio migliore ha testato un pacchetto. Nel 2011, 305\u00A0persone con un’età media di 74\u00A0anni, con un dolore al piede invalidante e un rischio di caduta aumentato, hanno ricevuto le normali cure podologiche oppure un pacchetto con plantari, consigli sulle calzature e un buono, esercizi per piede e caviglia a casa e un opuscolo sulle cadute. Nei 12\u00A0mesi, il gruppo con il pacchetto ha avuto il 36% di cadute in meno. Il numero di persone cadute almeno una volta non era chiaramente diverso.',
+        'Gli esercizi per la caviglia fanno spesso parte della prevenzione delle cadute negli anziani, ma le prove per il solo lavoro sulla caviglia sono limitate. Lo studio migliore ha testato un pacchetto. Nel 2011, 305\u00A0persone con un’età media di 74\u00A0anni, con un dolore al piede invalidante e un rischio di caduta aumentato, hanno ricevuto le normali cure podologiche oppure un pacchetto con:',
+        {
+          list: [
+            'Plantari.',
+            'Consigli sulle calzature e un buono.',
+            'Esercizi per piede e caviglia a casa.',
+            'Un opuscolo sulle cadute.',
+          ],
+        },
+        'Nei 12\u00A0mesi, il gruppo con il pacchetto ha avuto il 36% di cadute in meno. Il numero di persone cadute almeno una volta non era chiaramente diverso.',
         'Il gruppo con il pacchetto ha guadagnato anche forza della caviglia, movimento ed equilibrio. Visto che era un pacchetto, lo studio non può dire quanto sia dipeso dagli esercizi.',
         'Se la tua preoccupazione principale è l’equilibrio, fai l’equilibrio su una gamba davanti a un piano di lavoro, con una mano sospesa sopra. Se hai avuto cadute, capogiri o piedi intorpiditi, fatti fare prima una valutazione dell’equilibrio.',
       ],
@@ -195,7 +226,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Quanto spesso fare gli esercizi di rinforzo della caviglia?',
       paragraphs: [
-        'Due o tre sessioni di forza a settimana, con un breve lavoro di equilibrio quasi tutti i giorni, è uno schema sensato. Corrisponde allo studio sulla prevenzione visto sopra, che chiedeva tre sessioni a settimana per due mesi. Il lavoro di equilibrio ha un carico basso e si può fare quasi ogni giorno.',
+        '**Due o tre sessioni di forza a settimana, con un breve lavoro di equilibrio quasi tutti i giorni,** è uno schema sensato. Corrisponde allo studio sulla prevenzione visto sopra, che chiedeva tre sessioni a settimana per due mesi. Il lavoro di equilibrio ha un carico basso e si può fare quasi ogni giorno.',
         'Sali di livello quando un esercizio ti sembra facile per due sessioni di fila e la caviglia non sta peggio la mattina dopo. Progredisci passando a una versione più difficile (una gamba invece di due, occhi chiusi invece che aperti, un elastico più duro) invece di accumulare più serie. Torna indietro di una fase dopo una riacutizzazione.',
         'Walkito è costruito intorno al dolore a tallone, arco e parte bassa della gamba, e non ha un programma di riabilitazione per la distorsione della caviglia. I suoi piani possono includere l’inversione con elastico (dopo un primo lavoro sull’arco), i sollevamenti dell’avampiede, i sollevamenti sulle punte, il lavoro per l’anca su un fianco e l’equilibrio su una gamba di questa pagina, con un breve test di resistenza del polpaccio, tenuta dell’arco ed equilibrio ogni due settimane all’inizio. Se vuoi rinforzare anche i piccoli muscoli sotto l’arco, vedi gli [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
       ],

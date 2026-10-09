@@ -36,7 +36,8 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
     {
       h2: 'Comment faire un relevé des orteils\u00A0?',
       paragraphs: [
-        'Tenez-vous debout, le dos à plat contre un mur. Avancez les pieds d’environ 30\u00A0centimètres (à peu près une longueur de pied) par rapport au mur. Gardez les talons au sol. Levez l’avant des deux pieds aussi haut que possible, en tirant les orteils vers les tibias. Marquez un temps en haut. Redescendez lentement.',
+        'Tenez-vous debout, le dos à plat contre un mur. Avancez les pieds d’environ 30\u00A0centimètres (à peu près une longueur de pied) par rapport au mur. Gardez les talons au sol.',
+        'Levez l’avant des deux pieds aussi haut que possible, en tirant les orteils vers les tibias. Marquez un temps en haut. Redescendez lentement.',
         'Le mur soutient votre poids pour que vous puissiez vous concentrer sur la contraction à l’avant du tibia. Si vous glissez loin du mur, vos pieds sont trop en avant.',
       ],
       exercises: [
@@ -62,8 +63,9 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
       keyFact: 'Dans une étude cas-témoins de 2007, des sportifs atteints de périostite tibiale avaient une endurance aux montées sur pointes plus faible que des témoins appariés, ce qui suggère un déficit de force général du bas de la jambe, pas celui d’un muscle précis (Madeley et coll., 2007).',
       paragraphs: [
         'La périostite tibiale, appelée cliniquement syndrome de stress tibial médial (en anglais MTSS), donne une douleur le long du bord interne du tibia. Le tibial antérieur se situe à l’avant et vers l’extérieur du tibia, pas à l’endroit habituel de la douleur, donc le lien est indirect. Le raisonnement est qu’un tibial antérieur plus fort aide à absorber les chocs pendant la course et la marche, ce qui réduit la contrainte sur l’ensemble du tibia.',
-        'Une étude cas-témoins de 2007 a montré que des sportifs atteints de MTSS avaient une endurance aux montées sur pointes plus faible que des témoins appariés, ce qui suggère un déficit de force général du bas de la jambe, pas la faiblesse d’un muscle précis. Une revue systématique de 2013 s’est intéressée au traitement d’un MTSS déjà installé, pas à sa prévention, et aucun essai n’y montrait que les étirements ou le renforcement étaient efficaces, même si les preuves derrière ce constat étaient globalement de faible qualité.',
-        'Pour être honnête, nous n’avons pas d’essai qui ait testé les relevés des orteils seuls dans la périostite tibiale et montré qu’ils réduisaient les symptômes ou les récidives. L’exercice figure dans les programmes parce qu’il a du sens sur le plan biomécanique, pas parce qu’un essai l’a prouvé. C’est pourquoi son niveau de preuve est «\u00A0préliminaire\u00A0». Pour la page complète sur la périostite tibiale, voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
+        'Une étude cas-témoins de 2007 a montré que des sportifs atteints de MTSS avaient une endurance aux montées sur pointes plus faible que des témoins appariés, ce qui suggère un déficit de force général du bas de la jambe, pas la faiblesse d’un muscle précis.',
+        'Une revue systématique de 2013 s’est intéressée au traitement d’un MTSS déjà installé, pas à sa prévention, et aucun essai n’y montrait que les étirements ou le renforcement étaient efficaces, même si les preuves derrière ce constat étaient globalement de faible qualité.',
+        'Pour être honnête, nous n’avons pas d’essai qui ait testé les relevés des orteils seuls dans la périostite tibiale et montré qu’ils réduisaient les symptômes ou les récidives. **L’exercice figure dans les programmes parce qu’il a du sens sur le plan biomécanique, pas parce qu’un essai l’a prouvé.** C’est pourquoi son niveau de preuve est «\u00A0préliminaire\u00A0». Pour la page complète sur la périostite tibiale, voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
       ],
       cites: [CITE.madeley, CITE.winters],
     },
@@ -71,7 +73,15 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
       h2: 'Séries, répétitions et progression',
       paragraphs: [
         'Walkito commence à 3\u00A0séries de 10, deux pieds, contre un mur. C’est un point de départ confortable pour la plupart des gens. Si 10\u00A0répétitions vous semblent faciles, sans aucune fatigue, passez à 15 ou ajoutez une pause de 2\u00A0secondes en haut.',
-        'Pour rendre l’exercice plus difficile, essayez les relevés des orteils sur une jambe\u00A0: même position contre le mur, un pied à la fois. Un élastique passé autour du pied ajoute de la charge. Tenir un haltère léger sur le dessus du pied est une autre option, même si c’est peu pratique. La progression la plus simple reste d’ajouter des répétitions avec un tempo contrôlé.',
+        'Pour rendre l’exercice plus difficile\u00A0:',
+        {
+          list: [
+            'Essayez les relevés des orteils sur une jambe\u00A0: même position contre le mur, un pied à la fois.',
+            'Un élastique passé autour du pied ajoute de la charge.',
+            'Tenir un haltère léger sur le dessus du pied est une autre option, même si c’est peu pratique.',
+          ],
+        },
+        'La progression la plus simple reste d’ajouter des répétitions avec un tempo contrôlé.',
         'Dans l’application, cet exercice s’appelle «\u00A0Relevés des orteils\u00A0». Le mouvement est le même\u00A0: levez les orteils, les talons restent au sol.',
       ],
     },
@@ -79,15 +89,19 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
       h2: 'Relevés des orteils ou montées sur pointes',
       paragraphs: [
         'Les relevés des orteils et les [montées sur pointes](/fr/exercices/montees-sur-pointes/) sont des mouvements opposés. Une montée sur pointes pointe le pied vers le bas (flexion plantaire). Un relevé des orteils lève le pied vers le haut (flexion dorsale). Les muscles du mollet et le tibial antérieur travaillent ensemble pour contrôler chaque pas, en absorbant le choc à la réception et en poussant au moment où les orteils quittent le sol.',
-        'Renforcer un côté sans l’autre peut créer un déséquilibre. Les coureurs qui ne font que des montées sur pointes peuvent quand même avoir mal au tibia, car le tibial antérieur ne suit pas le mollet quand le kilométrage est élevé. Un programme équilibré comprend les deux.',
+        'Renforcer un côté sans l’autre peut créer un déséquilibre. Les coureurs qui ne font que des montées sur pointes peuvent quand même avoir mal au tibia, car le tibial antérieur ne suit pas le mollet quand le kilométrage est élevé. **Un programme équilibré comprend les deux.**',
       ],
     },
     {
       h2: 'Quelles sont les erreurs fréquentes avec les relevés des orteils\u00A0?',
       paragraphs: [
-        'Des pieds trop loin du mur. Si les talons glissent vers l’avant, vous perdez l’appui du mur et l’exercice devient un exercice d’équilibre au lieu d’un renforcement du tibia. Environ une longueur de pied par rapport au mur convient à la plupart des gens.',
-        'Enchaîner les répétitions trop vite. Une montée et une descente lentes et contrôlées font plus travailler le muscle que des répétitions rapides. Deux secondes de montée, une seconde de maintien, deux secondes de descente est un bon tempo.',
-        'Confondre brûlure musculaire et douleur osseuse. Une sensation de brûlure le long des muscles à l’avant du tibia est normale pendant la série. Une douleur vive et localisée sur l’os du tibia lui-même ne l’est pas, et peut évoquer une réaction de stress osseux. Arrêtez et faites-vous examiner.',
+        {
+          list: [
+            '**Des pieds trop loin du mur.** Si les talons glissent vers l’avant, vous perdez l’appui du mur et l’exercice devient un exercice d’équilibre au lieu d’un renforcement du tibia. Environ une longueur de pied par rapport au mur convient à la plupart des gens.',
+            '**Enchaîner les répétitions trop vite.** Une montée et une descente lentes et contrôlées font plus travailler le muscle que des répétitions rapides. Deux secondes de montée, une seconde de maintien, deux secondes de descente est un bon tempo.',
+            '**Confondre brûlure musculaire et douleur osseuse.** Une sensation de brûlure le long des muscles à l’avant du tibia est normale pendant la série. Une douleur vive et localisée sur l’os du tibia lui-même ne l’est pas, et peut évoquer une réaction de stress osseux. Arrêtez et faites-vous examiner.',
+          ],
+        },
       ],
     },
   ],

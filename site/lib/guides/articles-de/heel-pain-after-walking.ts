@@ -38,18 +38,22 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       paragraphs: [
         'Gehen belastet die Plantarfaszie, das dicke Gewebeband unter dem Fuß, bei jedem Schritt. Jedes Mal, wenn die Ferse aufsetzt und der Fuß nach vorn abrollt, wird die Faszie gedehnt und fängt Kraft ab. Bei einem gesunden Fuß ist das kein Problem. Aber wenn die Faszie gereizt ist oder die Wade zu verkürzt ist, um ihren Anteil abzufangen, konzentriert sich die Last am Ansatz an der Ferse.',
         'Das Ergebnis ist ein Schmerz, der beim oder nach dem Gehen zunimmt, vor allem nach einem längeren Weg als sonst. Die Leitlinie von 2023 zu Fersenschmerzen nennt zwei typische Muster der Plantarfasziitis: Schmerz bei den ersten Schritten nach einer Ruhephase und Schmerz, der bei längerer Belastung zunimmt. Gehen ist die häufigste längere Belastung überhaupt.',
-        'Eine verkürzte Wade spielt dabei eine große Rolle. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen hatte eingeschränkte Dorsalflexion im Sprunggelenk die höchste Odds Ratio aller gemessenen Risikofaktoren. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss die Faszie bei jedem Schritt den Unterschied ausgleichen.',
+        'Eine verkürzte Wade spielt dabei eine große Rolle. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen hatte eingeschränkte Dorsalflexion im Sprunggelenk die höchste Odds Ratio aller gemessenen Risikofaktoren. **Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss die Faszie bei jedem Schritt den Unterschied ausgleichen.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: 'Sind Fersenschmerzen nach dem Gehen immer Plantarfasziitis?',
       paragraphs: [
-        'Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Wo der Schmerz sitzt und wann er auftritt, hilft, die Ursachen auseinanderzuhalten.',
-        '**Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
-        '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-        '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
-        '**Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zu einer medizinischen Fachperson zu gehen.',
+        'Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Wo der Schmerz sitzt und wann er auftritt, hilft, die Ursachen auseinanderzuhalten:',
+        {
+          list: [
+            '**Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
+            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
+            '**Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zu einer medizinischen Fachperson zu gehen.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -57,7 +61,15 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       h2: 'Was unterscheidet Fersenschmerzen nach dem Gehen von Fersenschmerzen am Morgen?',
       paragraphs: [
         'Fersenschmerzen am Morgen und Fersenschmerzen nach dem Gehen sind in den meisten Fällen zwei Seiten derselben Erkrankung. Der Morgenschmerz entsteht, weil die Faszie über Nacht steif wird und sich verkürzt und dann beim Aufstehen plötzlich gedehnt wird. Der Schmerz nach dem Gehen entsteht, weil die Faszie beim Gehen immer wieder belastet wurde und das Gewebe dir zeigt, dass es genug hat.',
-        'Der Unterschied ist wichtig für den Zeitpunkt deiner Übungen. Morgenschmerz spricht am besten auf eine Plantarfaszien-Dehnung vor dem ersten Schritt an. Schmerz nach dem Gehen spricht auf Belastungssteuerung an: eine Strecke gehen, die der Fuß verkraftet, diese Strecke schrittweise steigern und mit Dehnen und Wadentraining die Belastungsgrenze anheben. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Dehnungen am Morgen und Nachtschienen genauer.',
+        'Der Unterschied ist wichtig für den Zeitpunkt deiner Übungen. Morgenschmerz spricht am besten auf eine Plantarfaszien-Dehnung vor dem ersten Schritt an. Schmerz nach dem Gehen spricht auf Belastungssteuerung an:',
+        {
+          list: [
+            'Eine Strecke gehen, die der Fuß verkraftet.',
+            'Diese Strecke schrittweise steigern.',
+            'Mit Dehnen und Wadentraining die Belastungsgrenze anheben.',
+          ],
+        },
+        '[Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Dehnungen am Morgen und Nachtschienen genauer.',
         'Wenn du sowohl Morgenschmerz als auch Schmerz nach dem Gehen hast, ist das das typische Muster der Plantarfasziitis. Die Übungen überschneiden sich. Die Dehnung am Morgen und die Wadendehnungen helfen bei beidem. Das Wadentraining erhöht die Belastbarkeit der ganzen Kette, sodass deine tägliche Gehbelastung innerhalb dessen liegt, was das Gewebe verkraftet.',
       ],
       cites: [CITE.guideline],
@@ -144,8 +156,15 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       h2: 'Wie weit solltest du gehen, wenn deine Ferse wehtut?',
       paragraphs: [
         'Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu finden, die deine Ferse verkraftet, ohne dass es am nächsten Morgen schlimmer wird, und von dort aus zu steigern.',
-        'Ein praktischer Ansatz: Geh eine Strecke, bei der der Morgenschmerz am nächsten Tag bei oder unter deinem aktuellen Ausgangswert bleibt. Wenn dein üblicher Morgenwert 4 von 10 ist und ein Spaziergang von 30\u00A0Minuten ihn am nächsten Morgen auf 6 treibt, war dieser Spaziergang zu viel. Verkürze ihn, bis der Morgenwert stabil bleibt. Nimm dann alle ein, zwei Wochen fünf Minuten dazu, solange der Morgenschmerz nicht in die Höhe schießt.',
-        'Das ist Belastungssteuerung, keine Schonung. Völlige Ruhe hilft bei Plantarfasziitis selten. Die Leitlinie empfiehlt, die Aktivität anzupassen, nicht inaktiv zu sein. In stützenden Schuhen auf weicherem Untergrund zu gehen, schont die Faszie mehr als barfuß auf Beton.',
+        'Ein praktischer Ansatz:',
+        {
+          list: [
+            'Geh eine Strecke, bei der der Morgenschmerz am nächsten Tag bei oder unter deinem aktuellen Ausgangswert bleibt. Wenn dein üblicher Morgenwert 4 von 10 ist und ein Spaziergang von 30\u00A0Minuten ihn am nächsten Morgen auf 6 treibt, war dieser Spaziergang zu viel.',
+            'Verkürze ihn, bis der Morgenwert stabil bleibt.',
+            'Nimm dann alle ein, zwei Wochen fünf Minuten dazu, solange der Morgenschmerz nicht in die Höhe schießt.',
+          ],
+        },
+        '**Das ist Belastungssteuerung, keine Schonung.** Völlige Ruhe hilft bei Plantarfasziitis selten. Die Leitlinie empfiehlt, die Aktivität anzupassen, nicht inaktiv zu sein. In stützenden Schuhen auf weicherem Untergrund zu gehen, schont die Faszie mehr als barfuß auf Beton.',
         'Wenn du auch läufst, gilt dasselbe Prinzip in einem anderen Maßstab. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt Belastungsspitzen und Änderungen beim Trainingsumfang genauer.',
       ],
       cites: [CITE.guideline],
@@ -155,7 +174,8 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       keyFact: 'In Normdaten von 566\u00A0gesunden Erwachsenen lag die durchschnittliche Zahl beim einbeinigen Fersenheben bei etwa 23 bis 24\u00A0Wiederholungen, ein Richtwert, um die Wadenausdauer über die Zeit zu verfolgen (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
         'Es gibt keinen festen Zeitrahmen. Eine Übersichtsarbeit zu den klinischen Belegen berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit nicht-operativer Behandlung besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In einer längeren Beobachtung von 174\u00A0Menschen hatte nach 5\u00A0Jahren etwa die Hälfte noch Beschwerden, die meisten davon aber nur noch leichte (Hansen und Kollegen, 2018).',
-        'Früher messen kannst du, ob die Übungen wirken. Der Morgenschmerz auf einer Skala von 0 bis 10 ist das klarste Signal von Tag zu Tag. Die Wadenausdauer, gemessen durch Zählen der einbeinigen Fersenhebungen, zeigt die Kraftentwicklung über Wochen. Ein häufig zitierter Richtwert für Erwachsene liegt im Durchschnitt bei etwa 23 bis 24\u00A0Wiederholungen, aus Normdaten von 566\u00A0gesunden Erwachsenen (Hebert-Losier und Kollegen, 2017). Entscheidend ist, ob deine Zahl steigt, nicht ob sie den Richtwert erreicht.',
+        'Früher messen kannst du, ob die Übungen wirken. Der Morgenschmerz auf einer Skala von 0 bis 10 ist das klarste Signal von Tag zu Tag.',
+        'Die Wadenausdauer, gemessen durch Zählen der einbeinigen Fersenhebungen, zeigt die Kraftentwicklung über Wochen. Ein häufig zitierter Richtwert für Erwachsene liegt im Durchschnitt bei etwa 23 bis 24\u00A0Wiederholungen, aus Normdaten von 566\u00A0gesunden Erwachsenen (Hebert-Losier und Kollegen, 2017). **Entscheidend ist, ob deine Zahl steigt, nicht ob sie den Richtwert erreicht.**',
         'Mehr zum Zeitverlauf insgesamt findest du unter [wie lange Plantarfasziitis dauert](/de/wie-lange-dauert-plantarfasziitis/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

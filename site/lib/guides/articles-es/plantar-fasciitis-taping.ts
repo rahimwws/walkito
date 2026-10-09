@@ -39,7 +39,9 @@ export const PF_TAPING_ES: Guide = {
       h2: '¿Cuánto ayuda el vendaje y cuánto dura el efecto?',
       keyFact: 'En un ensayo cegado con 92\u00A0personas, la cinta low-Dye bajó el dolor de los primeros pasos cerca de 1,2\u00A0puntos de 10 más que un vendaje simulado después de una semana (Radford y colegas, 2006).',
       paragraphs: [
-        'El alivio del vendaje es real pero modesto, y se pierde rápido al quitar la cinta. La prueba más limpia es un ensayo australiano de 2006 con 92\u00A0personas con dolor de talón. La mitad usó cinta rígida low-Dye durante una semana más un ultrasonido falso, y la otra mitad recibió solo el ultrasonido falso. A los participantes se les dijo que una de las dos opciones podía ser falsa, aunque la mayoría del grupo con cinta creyó tener la real. El grupo con cinta tuvo cerca de 1,2\u00A0puntos menos de dolor en los primeros pasos, en una escala de 0 a 10, que el grupo simulado. Otras medidas, como la función del pie, no fueron distintas (Radford y colegas, 2006).',
+        '**El alivio del vendaje es real pero modesto, y se pierde rápido al quitar la cinta.**',
+        'La prueba más limpia es un ensayo australiano de 2006 con 92\u00A0personas con dolor de talón. La mitad usó cinta rígida low-Dye durante una semana más un ultrasonido falso, y la otra mitad recibió solo el ultrasonido falso. A los participantes se les dijo que una de las dos opciones podía ser falsa, aunque la mayoría del grupo con cinta creyó tener la real.',
+        'El grupo con cinta tuvo cerca de 1,2\u00A0puntos menos de dolor en los primeros pasos, en una escala de 0 a 10, que el grupo simulado. Otras medidas, como la función del pie, no fueron distintas (Radford y colegas, 2006).',
         'El grupo simulado también mejoró, casi 2\u00A0puntos, solo por estar en un estudio y esperar ayuda. Un estudio anterior del mismo equipo, sin grupos al azar, reportó una diferencia más del doble de grande (Landorf y colegas, 2005). Cuando no hay un grupo de comparación justo, la cinta parece más fuerte de lo que es.',
         'El kinesiotape muestra el mismo patrón corto. En un ensayo de 2024 con 34\u00A0personas, el kinesiotape superó a una cinta simulada por hasta 3,5\u00A0puntos de 10 el segundo día, y luego la diferencia se fue achicando día a día hasta que se quitó la cinta (García-Gomariz y colegas, 2024). La guía de 2023 no encontró estudios de vendaje que siguieran a las personas más allá de cerca de mes y medio.',
       ],
@@ -51,9 +53,16 @@ export const PF_TAPING_ES: Guide = {
       h2: 'Vendaje low-Dye o kinesiotape: ¿cuál es mejor?',
       keyFact: 'En un ensayo con 40\u00A0personas, el kinesiotape alivió el dolor 2\u00A0puntos de 10 más que la cinta low-Dye el primer día, y la diferencia se achicó cada día (García-Gomariz y colegas, 2024).',
       paragraphs: [
-        'Los dos tipos de cinta tienen respaldo de ensayos, y todavía no hay un ganador claro. El vendaje low-Dye usa cinta deportiva rígida que no se estira (a menudo cinta de óxido de zinc) para sostener el arco y limitar cuánto se aplana. El kinesiotape, también llamado cinta kinesiológica o vendaje neuromuscular, es delgado y elástico. Se mueve contigo y no sujeta el pie en su lugar.',
-        'Solo un ensayo pequeño los ha comparado directamente. En 40\u00A0personas, el kinesiotape alivió más el dolor el primer día, por 2\u00A0puntos de 10, y las personas lo calificaron como más cómodo, con menos sudor y más duradero. La diferencia en el dolor se fue achicando cada día después (García-Gomariz y colegas, 2024). Una tercera opción, el vendaje del calcáneo (cuatro tiras alrededor del hueso del talón y el Aquiles, sin tocar el arco), bajó el dolor más que los estiramientos o una cinta simulada después de una semana en un ensayo con 41\u00A0personas (Hyland y colegas, 2006).',
-        'Dos revisiones de 2026, de 11\u00A0ensayos cada una, apuntan en la misma dirección. El kinesiotape sumado a la rehabilitación bajó el dolor un poco más que la rehabilitación sola, un resultado que los autores llamaron preliminar (Song y colegas, 2026). La cinta low-Dye superó a un placebo, pero no fue mejor que otras opciones (Zhang y colegas, 2026).',
+        'Los dos tipos de cinta tienen respaldo de ensayos, y **todavía no hay un ganador claro.** El vendaje low-Dye usa cinta deportiva rígida que no se estira (a menudo cinta de óxido de zinc) para sostener el arco y limitar cuánto se aplana. El kinesiotape, también llamado cinta kinesiológica o vendaje neuromuscular, es delgado y elástico. Se mueve contigo y no sujeta el pie en su lugar.',
+        'Solo un ensayo pequeño los ha comparado directamente. En 40\u00A0personas, el kinesiotape alivió más el dolor el primer día, por 2\u00A0puntos de 10, y las personas lo calificaron como más cómodo, con menos sudor y más duradero. La diferencia en el dolor se fue achicando cada día después (García-Gomariz y colegas, 2024).',
+        'Una tercera opción, el vendaje del calcáneo (cuatro tiras alrededor del hueso del talón y el Aquiles, sin tocar el arco), bajó el dolor más que los estiramientos o una cinta simulada después de una semana en un ensayo con 41\u00A0personas (Hyland y colegas, 2006).',
+        'Dos revisiones de 2026, de 11\u00A0ensayos cada una, apuntan en la misma dirección:',
+        {
+          list: [
+            'El kinesiotape sumado a la rehabilitación bajó el dolor un poco más que la rehabilitación sola, un resultado que los autores llamaron preliminar (Song y colegas, 2026).',
+            'La cinta low-Dye superó a un placebo, pero no fue mejor que otras opciones (Zhang y colegas, 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Cinta rígida low-Dye vs kinesiotape para la fascitis plantar',
@@ -71,7 +80,7 @@ export const PF_TAPING_ES: Guide = {
     {
       h2: '¿Cómo vendar el pie para la fascitis plantar (método low-Dye)?',
       paragraphs: [
-        'El vendaje low-Dye toma unos cinco minutos cuando ya tienes práctica. Si puedes, pide a un fisioterapeuta o podólogo que te enseñe la primera vez. Los pasos de abajo siguen la versión más común.',
+        'El vendaje low-Dye toma unos cinco minutos cuando ya tienes práctica. **Si puedes, pide a un fisioterapeuta o podólogo que te enseñe la primera vez.** Los pasos de abajo siguen la versión más común.',
         'Antes de empezar, lava el pie con jabón neutro, sécalo bien y no uses crema. Corta las tiras de antemano de una cinta deportiva rígida de unos 2,5\u00A0cm de ancho. Siéntate con el pie apoyado en ángulo recto con la pierna, no en punta.',
       ],
       bullets: [
@@ -102,7 +111,7 @@ export const PF_TAPING_ES: Guide = {
     {
       h2: '¿Cuánto tiempo puedes dejarte la cinta y puedes dormir con ella?',
       paragraphs: [
-        'La mayoría de las personas se deja la cinta de dos a cinco días y luego le da un descanso a la piel. Eso coincide con los ensayos: la cinta low-Dye se dejó de 3 a 5\u00A0días en un estudio y una semana en otro, y el kinesiotape se usó durante 5\u00A0días en los ensayos de 2024 (Landorf y colegas, 2005; Radford y colegas, 2006; García-Gomariz y colegas, 2024).',
+        '**La mayoría de las personas se deja la cinta de dos a cinco días y luego le da un descanso a la piel.** Eso coincide con los ensayos: la cinta low-Dye se dejó de 3 a 5\u00A0días en un estudio y una semana en otro, y el kinesiotape se usó durante 5\u00A0días en los ensayos de 2024 (Landorf y colegas, 2005; Radford y colegas, 2006; García-Gomariz y colegas, 2024).',
         'La cinta rígida se afloja al caminar, así que a menudo necesita una tira nueva antes. El kinesiotape está hecho para durar varios días y se puede mojar. Sécalo con golpecitos de toalla después de bañarte y no le pongas secadora de pelo.',
         'Puedes dormir con la cinta si la piel se siente normal, pero no encontramos ningún ensayo que probara la cinta usada solo de noche. Para el dolor de la mañana, la opción con respaldo de la guía es la férula nocturna, que se explica en [férula nocturna para la fascitis plantar](/es/ferula-nocturna-fascitis-plantar/), junto con los estiramientos de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/).',
       ],
@@ -112,8 +121,23 @@ export const PF_TAPING_ES: Guide = {
       h2: '¿Qué efectos secundarios tiene el vendaje?',
       keyFact: 'En un ensayo con 92\u00A0personas, 13 de las 46 que usaron cinta low-Dye (28\u00A0%) tuvieron un efecto secundario, y en todos los casos desapareció al quitar la cinta (Radford y colegas, 2006).',
       paragraphs: [
-        'Los principales efectos secundarios del vendaje son la irritación de la piel y una cinta que se siente demasiado apretada. La guía de 2023 dice que la irritación leve de la piel es el único daño reportado. El ensayo cegado de 2006 da las cifras más claras. De 46\u00A0personas que usaron cinta rígida durante una semana, 13 (28\u00A0%) tuvieron un efecto secundario: 4 dijeron que estaba demasiado apretada, 4 tuvieron una reacción alérgica en la piel y 5 notaron un dolor nuevo en otra parte de la pierna. Cinco se quitaron la cinta antes de tiempo. Todos estos efectos desaparecieron al quitar la cinta (Radford y colegas, 2006).',
-        'Para bajar el riesgo, usa cinta hipoalergénica o un prevendaje delgado si tienes la piel sensible, nunca aprietes la cinta rígida alrededor del pie y despega la cinta despacio, de preferencia después de aflojarla con un poco de aceite para bebé.',
+        '**Los principales efectos secundarios del vendaje son la irritación de la piel y una cinta que se siente demasiado apretada.** La guía de 2023 dice que la irritación leve de la piel es el único daño reportado. El ensayo cegado de 2006 da las cifras más claras. De 46\u00A0personas que usaron cinta rígida durante una semana, 13 (28\u00A0%) tuvieron un efecto secundario:',
+        {
+          list: [
+            '4 dijeron que estaba demasiado apretada.',
+            '4 tuvieron una reacción alérgica en la piel.',
+            '5 notaron un dolor nuevo en otra parte de la pierna.',
+          ],
+        },
+        'Cinco se quitaron la cinta antes de tiempo. Todos estos efectos desaparecieron al quitar la cinta (Radford y colegas, 2006).',
+        'Para bajar el riesgo:',
+        {
+          list: [
+            'Usa cinta hipoalergénica o un prevendaje delgado si tienes la piel sensible.',
+            'Nunca aprietes la cinta rígida alrededor del pie.',
+            'Despega la cinta despacio, de preferencia después de aflojarla con un poco de aceite para bebé.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -122,7 +146,9 @@ export const PF_TAPING_ES: Guide = {
       keyFact: 'En un ensayo con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, y a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
       paragraphs: [
         'Combina la cinta con estiramientos y trabajo de fuerza de pantorrilla, porque esas son las partes con evidencia más allá del corto plazo. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla un grado **A** para el dolor a corto y a largo plazo. El entrenamiento de fuerza recibe una **B**. En un ensayo con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
-        'La cinta puede hacer que caminar sea más fácil esta semana, para que sigas moviéndote y haciendo los ejercicios. Si caminar en sí dispara el dolor, [dolor de talón al caminar](/es/dolor-de-talon-al-caminar/) explica cómo ajustar la carga. Los tres ejercicios de abajo son la base. En Walkito, los estiramientos empiezan con 2\u00A0repeticiones de 30\u00A0segundos, y esta elevación de talones con toalla, cuando tu plan llega a ella, se pone en 4\u00A0series de 10 con el mismo ritmo lento de 3-2-3 (una mochila añade peso cuando tienes un escalón). Una vez a la semana, el ejercicio de tu meta principal sube un nivel si tus últimas dos sesiones con él se sintieron fáciles y el dolor de la mañana no subió, y baja un nivel si una sesión se sintió difícil o el dolor de la mañana subió 2\u00A0puntos o más.',
+        'La cinta puede hacer que caminar sea más fácil esta semana, para que sigas moviéndote y haciendo los ejercicios. Si caminar en sí dispara el dolor, [dolor de talón al caminar](/es/dolor-de-talon-al-caminar/) explica cómo ajustar la carga.',
+        'Los tres ejercicios de abajo son la base. En Walkito, los estiramientos empiezan con 2\u00A0repeticiones de 30\u00A0segundos, y esta elevación de talones con toalla, cuando tu plan llega a ella, se pone en 4\u00A0series de 10 con el mismo ritmo lento de 3-2-3 (una mochila añade peso cuando tienes un escalón).',
+        'Una vez a la semana, el ejercicio de tu meta principal sube un nivel si tus últimas dos sesiones con él se sintieron fáciles y el dolor de la mañana no subió, y baja un nivel si una sesión se sintió difícil o el dolor de la mañana subió 2\u00A0puntos o más.',
       ],
       exercises: [
         {
@@ -167,7 +193,15 @@ export const PF_TAPING_ES: Guide = {
     {
       h2: '¿Cuándo dejar de usar el vendaje?',
       paragraphs: [
-        'Deja la cinta cuando ya no notes una diferencia, cuando tu piel reaccione, o cuando el dolor se haya calmado lo suficiente para caminar normal sin ella. La cinta no está pensada para usarse durante meses. La investigación cubre hasta cerca de mes y medio, y la guía solo la recomienda a corto plazo.',
+        'Deja la cinta:',
+        {
+          list: [
+            'Cuando ya no notes una diferencia.',
+            'Cuando tu piel reaccione.',
+            'Cuando el dolor se haya calmado lo suficiente para caminar normal sin ella.',
+          ],
+        },
+        '**La cinta no está pensada para usarse durante meses.** La investigación cubre hasta cerca de mes y medio, y la guía solo la recomienda a corto plazo.',
         'Una prueba sencilla: pasa un día sin cinta y califica tu dolor de los primeros pasos de 0 a 10. Si es igual que en los días con cinta, la cinta ya no está haciendo mucho. Si todavía necesitas la cinta todos los días después de un mes de ejercicios constantes, consulta a un profesional de la salud para descartar otra cosa y hablar de otras opciones, como las plantillas (mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/)).',
       ],
       cites: [CITE.guideline],

@@ -31,7 +31,13 @@ export const ANKLE_MOBILITY_PT: Guide = {
       keyFact: 'Em 1.093\u00A0recrutas do exército acompanhados ao longo de três meses de treinamento, a amplitude de dorsiflexão do tornozelo foi um forte preditor de lesão (Pope e colegas, 1998).',
       paragraphs: [
         'Mobilidade do tornozelo normalmente quer dizer dorsiflexão do tornozelo: o quanto a canela consegue ir para a frente por cima do pé enquanto o calcanhar fica no chão. Você usa isso a cada passo, em cada degrau e no fundo de cada agachamento. Quando falta, o corpo pega amplitude emprestada de outro lugar. O calcanhar sobe cedo, o pé gira para dentro ou o joelho vai para dentro.',
-        'Pouca dobra do tornozelo está ligada a vários problemas, embora estar ligado não seja o mesmo que causar. Num estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003). Em 1.093\u00A0recrutas homens do exército acompanhados ao longo de três meses de treinamento pesado, a amplitude do tornozelo medida no início foi um forte preditor de quem se lesionou, num total de 48\u00A0lesões (Pope e colegas, 1998).',
+        'Pouca dobra do tornozelo está ligada a vários problemas, embora estar ligado não seja o mesmo que causar:',
+        {
+          list: [
+            '**Fascite plantar:** Num estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003).',
+            '**Lesões em recrutas:** Em 1.093\u00A0recrutas homens do exército acompanhados ao longo de três meses de treinamento pesado, a amplitude do tornozelo medida no início foi um forte preditor de quem se lesionou, num total de 48\u00A0lesões (Pope e colegas, 1998).',
+          ],
+        },
         'O agachamento mostra o efeito com clareza. Num estudo de laboratório, 30\u00A0pessoas saudáveis agacharam com uma cunha de 12\u00A0graus embaixo da parte da frente do pé para imitar um tornozelo rígido. Os joelhos dobraram menos e foram mais para dentro do que quando agacharam com o pé plano (Macrum e colegas, 2012). Foi uma restrição simulada numa única sessão, então mostra a mecânica, não o que acontece com pessoas de tornozelo rígido ao longo dos anos.',
       ],
       cites: [CITE.riddle, CITE.popeDorsiflexion, CITE.macrumSquat],
@@ -51,8 +57,9 @@ export const ANKLE_MOBILITY_PT: Guide = {
         'Anote onde você sentiu que travou: um alongamento atrás da panturrilha ou um pinçamento na frente do tornozelo.',
       ],
       after: [
-        'O teste é confiável quando feito sempre do mesmo jeito. Num estudo pequeno de 1998, 13\u00A0pessoas saudáveis foram medidas por quatro avaliadores, e os resultados concordaram quase perfeitamente entre os avaliadores e quando dois deles repetiram o teste uma semana depois (Bennell e colegas). Uma revisão de 2015 com 12\u00A0estudos de confiabilidade concordou que o teste é bom e acrescentou a parte útil: uma mudança precisa ser de cerca de 1,6 a 1,9\u00A0cm, ou mais ou menos 5\u00A0graus, para você ter bastante certeza de que ela é real e não ruído de medida (Powden e colegas).',
-        'Então refaça o teste a cada duas semanas mais ou menos, não todo dia, e não fique correndo atrás de alguns milímetros.',
+        'O teste é confiável quando feito sempre do mesmo jeito. Num estudo pequeno de 1998, 13\u00A0pessoas saudáveis foram medidas por quatro avaliadores, e os resultados concordaram quase perfeitamente entre os avaliadores e quando dois deles repetiram o teste uma semana depois (Bennell e colegas).',
+        'Uma revisão de 2015 com 12\u00A0estudos de confiabilidade concordou que o teste é bom e acrescentou a parte útil: uma mudança precisa ser de cerca de 1,6 a 1,9\u00A0cm, ou mais ou menos 5\u00A0graus, para você ter bastante certeza de que ela é real e não ruído de medida (Powden e colegas).',
+        'Então **refaça o teste a cada duas semanas mais ou menos, não todo dia,** e não fique correndo atrás de alguns milímetros.',
       ],
       sourceNote:
         'Bennell 1998: ICC intra-avaliador de 0,97-0,98, ICC interavaliador de 0,97 (ângulo) e 0,99 (distância). Powden 2015: ICC entre profissionais de 0,80-0,99, do mesmo profissional de 0,65-0,99; mudança mínima detectável de 4,6\u00A0graus ou 1,6\u00A0cm entre profissionais, 4,7\u00A0graus ou 1,9\u00A0cm para o mesmo profissional.',
@@ -64,16 +71,20 @@ export const ANKLE_MOBILITY_PT: Guide = {
       paragraphs: [
         'Não existe um resultado normal único e consensual para o teste do joelho na parede. Os sites citam 10\u00A0cm, 14\u00A0cm ou 4\u00A0polegadas como meta, normalmente sem fonte. Use qualquer um desses números só como referência aproximada.',
         'Um estudo dá uma ideia dos valores típicos. Hoch e colegas mediram 30\u00A0adultos saudáveis e 30\u00A0pessoas pareadas com instabilidade crônica do tornozelo (tornozelos que continuam falseando depois de entorses). O grupo saudável teve média de 12,47\u00A0cm, e o grupo instável, de 10,73\u00A0cm. São médias de dois grupos pequenos, então muitas pessoas saudáveis ficam acima ou abaixo delas.',
-        'A comparação mais útil é com você mesmo. Uma diferença clara entre os dois tornozelos, principalmente do lado de uma entorse antiga, diz mais do que um número de tabela. O mesmo vale para o seu próprio resultado ao longo do tempo, usando a regra de 1,6 a 1,9\u00A0cm da seção anterior.',
+        '**A comparação mais útil é com você mesmo.** Uma diferença clara entre os dois tornozelos, principalmente do lado de uma entorse antiga, diz mais do que um número de tabela. O mesmo vale para o seu próprio resultado ao longo do tempo, usando a regra de 1,6 a 1,9\u00A0cm da seção anterior.',
       ],
       cites: [CITE.hochInstability, CITE.powdenLunge],
     },
     {
       h2: 'É a panturrilha tensa ou a articulação do tornozelo rígida?',
       paragraphs: [
-        'A dobra do tornozelo pode ser limitada pelos músculos da panturrilha, atrás, ou pela própria articulação, na frente. O lugar onde você sente o travamento no teste do joelho na parede é a pista mais comum, embora nenhum ensaio tenha testado o quanto essa pista é precisa.',
-        'Um alongamento ou puxão atrás da panturrilha, perto do Aquiles ou mais embaixo, perto do calcanhar, aponta para a panturrilha. O gastrocnêmio (o músculo grande da parte de cima da panturrilha) limita mais com o joelho esticado. O sóleo (o músculo mais profundo da panturrilha) limita com o joelho dobrado, que é a posição do teste do joelho na parede. Aqui, o alongamento e as descidas lentas do calcanhar funcionam.',
-        'Uma sensação de bloqueio ou de pinçamento na frente do tornozelo, com pouco alongamento na panturrilha, aponta mais para a articulação: o tálus (o osso do tornozelo sobre o qual a canela se apoia) não desliza para trás quando a canela vai para a frente. Isso pode acontecer depois de entorses. Forçar mais contra um pinçamento na frente raramente ajuda. Um fisioterapeuta pode avaliar e usar a mobilização articular, um deslizamento suave da articulação feito com as mãos, que tem alguma evidência de curto prazo depois de entorses (veja abaixo).',
+        'A dobra do tornozelo pode ser limitada pelos músculos da panturrilha, atrás, ou pela própria articulação, na frente. O lugar onde você sente o travamento no teste do joelho na parede é a pista mais comum, embora nenhum ensaio tenha testado o quanto essa pista é precisa:',
+        {
+          list: [
+            '**Parte de trás da panturrilha:** Um alongamento ou puxão atrás da panturrilha, perto do Aquiles ou mais embaixo, perto do calcanhar, aponta para a panturrilha. O gastrocnêmio (o músculo grande da parte de cima da panturrilha) limita mais com o joelho esticado. O sóleo (o músculo mais profundo da panturrilha) limita com o joelho dobrado, que é a posição do teste do joelho na parede. Aqui, o alongamento e as descidas lentas do calcanhar funcionam.',
+            '**Frente do tornozelo:** Uma sensação de bloqueio ou de pinçamento na frente do tornozelo, com pouco alongamento na panturrilha, aponta mais para a articulação: o tálus (o osso do tornozelo sobre o qual a canela se apoia) não desliza para trás quando a canela vai para a frente. Isso pode acontecer depois de entorses. Forçar mais contra um pinçamento na frente raramente ajuda. Um fisioterapeuta pode avaliar e usar a mobilização articular, um deslizamento suave da articulação feito com as mãos, que tem alguma evidência de curto prazo depois de entorses (veja abaixo).',
+          ],
+        },
         'Uma revisão de 2013 sobre estudos de entorse chegou à mesma conclusão: a abordagem certa depende do que está limitando o tornozelo (Terada e colegas).',
       ],
       cites: [CITE.teradaSprain],
@@ -82,7 +93,15 @@ export const ANKLE_MOBILITY_PT: Guide = {
       h2: 'Quais exercícios de mobilidade do tornozelo funcionam?',
       keyFact: 'Uma revisão de 2013 com 23\u00A0estudos e 734\u00A0pessoas saudáveis encontrou o maior apoio para o alongamento estático como forma de aumentar a dorsiflexão do tornozelo (Young e colegas).',
       paragraphs: [
-        'Os exercícios de mobilidade do tornozelo com pesquisa por trás se dividem em dois grupos: alongamentos de panturrilha e trabalho de força da panturrilha em amplitude completa, como a elevação de calcanhar e as descidas lentas do calcanhar. Uma revisão de 2013 com 23\u00A0estudos e 734\u00A0pessoas saudáveis encontrou o maior apoio para o alongamento estático, algum apoio, vindo de um único ensaio, para a elevação de calcanhar feita junto com alongamento, e pouca evidência boa para a maioria dos outros métodos (Young e colegas). O resultado mais forte só com força vem de um ensaio separado de descida do calcanhar (abaixo). O balanço do tornozelo não tem um ensaio próprio, mas trabalha a mesma amplitude.',
+        'Os exercícios de mobilidade do tornozelo com pesquisa por trás se dividem em dois grupos: alongamentos de panturrilha e trabalho de força da panturrilha em amplitude completa, como a elevação de calcanhar e as descidas lentas do calcanhar. Uma revisão de 2013 com 23\u00A0estudos e 734\u00A0pessoas saudáveis encontrou:',
+        {
+          list: [
+            'O maior apoio para o alongamento estático.',
+            'Algum apoio, vindo de um único ensaio, para a elevação de calcanhar feita junto com alongamento.',
+            'Pouca evidência boa para a maioria dos outros métodos (Young e colegas).',
+          ],
+        },
+        'O resultado mais forte só com força vem de um ensaio separado de descida do calcanhar (abaixo). O balanço do tornozelo não tem um ensaio próprio, mas trabalha a mesma amplitude.',
         'Abaixo, “O Walkito começa com” indica a dose inicial do app. As doses da pesquisa estão identificadas como da pesquisa. Se algum exercício levar a dor a **6/10 ou mais**, pare por hoje.',
       ],
       exercises: [
@@ -141,7 +160,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
       h2: 'Quanto o alongamento melhora a mobilidade do tornozelo?',
       keyFact: 'Uma revisão de 2006 com cinco ensaios randomizados e 161\u00A0pessoas saudáveis concluiu que o alongamento estático da panturrilha acrescentou cerca de 2 a 3\u00A0graus de dobra do tornozelo em comparação com não alongar (Radford e colegas).',
       paragraphs: [
-        'O alongamento melhora a mobilidade do tornozelo, mas só um pouco. Uma revisão de 2006 juntou cinco ensaios randomizados com 161\u00A0pessoas saudáveis e concluiu que o alongamento estático da panturrilha acrescentou cerca de 2 a 3\u00A0graus de dorsiflexão em comparação com não alongar. O ganho foi parecido tanto com um total de 15\u00A0minutos de alongamento ou menos quanto com mais de 30\u00A0minutos ao longo do ensaio. Os autores disseram que não estava claro se uma mudança desse tamanho faz diferença para as pessoas.',
+        '**O alongamento melhora a mobilidade do tornozelo, mas só um pouco.** Uma revisão de 2006 juntou cinco ensaios randomizados com 161\u00A0pessoas saudáveis e concluiu que o alongamento estático da panturrilha acrescentou cerca de 2 a 3\u00A0graus de dorsiflexão em comparação com não alongar. O ganho foi parecido tanto com um total de 15\u00A0minutos de alongamento ou menos quanto com mais de 30\u00A0minutos ao longo do ensaio. Os autores disseram que não estava claro se uma mudança desse tamanho faz diferença para as pessoas.',
         'Nenhum desses ensaios incluiu pessoas com lesão na perna ou no pé, e a maioria mediu a amplitude logo depois do último alongamento, então os números podem não valer para um tornozelo rígido depois de uma entorse.',
         'Alongue por algumas semanas, refaça o teste do joelho na parede e julgue pelo seu próprio resultado. Se o travamento é um pinçamento na frente do tornozelo e nada muda, talvez não seja a panturrilha que esteja limitando você.',
       ],
@@ -152,7 +171,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
     {
       h2: 'O treino de força melhora a mobilidade do tornozelo?',
       paragraphs: [
-        'O treino de força em amplitude completa pode melhorar a mobilidade do tornozelo, não só o alongamento. Num ensaio randomizado com 74\u00A0pessoas saudáveis, um grupo fez um programa de descida excêntrica do calcanhar (descer o calcanhar devagar com carga) por cerca de um mês e meio e o outro grupo não fez. A amplitude de dorsiflexão aumentou só no grupo da descida do calcanhar, e a panturrilha passou a resistir menos ao alongamento do que antes (Mahieu e colegas, 2008).',
+        '**O treino de força em amplitude completa pode melhorar a mobilidade do tornozelo, não só o alongamento.** Num ensaio randomizado com 74\u00A0pessoas saudáveis, um grupo fez um programa de descida excêntrica do calcanhar (descer o calcanhar devagar com carga) por cerca de um mês e meio e o outro grupo não fez. A amplitude de dorsiflexão aumentou só no grupo da descida do calcanhar, e a panturrilha passou a resistir menos ao alongamento do que antes (Mahieu e colegas, 2008).',
         'A revisão de 2013 com 23\u00A0estudos também incluiu um ensaio em que a elevação de calcanhar feita junto com o alongamento estático aumentou a dobra do tornozelo em comparação com não fazer exercício (Young e colegas). Tanto a revisão quanto o ensaio da descida do calcanhar estudaram pessoas saudáveis, não pessoas com tornozelo rígido ou dolorido.',
         'O trabalho de força tem um segundo benefício: ele fortalece a panturrilha ao mesmo tempo. Se você também tem dor no calcanhar ou no Aquiles, o trabalho de panturrilha de [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) e de [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) faz as duas coisas.',
       ],
@@ -164,7 +183,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
       paragraphs: [
         'Depois de uma entorse, o tornozelo muitas vezes perde dobra, e recuperá-la é uma parte normal da reabilitação. Uma revisão de 2013 com nove estudos concluiu que o alongamento estático, como parte de um programa de exercícios em casa, teve o maior efeito na dorsiflexão duas semanas depois de uma entorse aguda. A mobilização com movimento, uma técnica feita com as mãos em que o profissional desliza o tornozelo enquanto você o dobra, teve efeitos só pequenos em pessoas com entorses repetidas (Terada e colegas).',
         'Uma revisão maior, de 2018, com 23\u00A0estudos, concluiu que a mobilização articular melhorou a dobra do tornozelo com o peso do corpo no curto prazo em pessoas com problemas de entorse de longa data, mas não logo depois de uma única sessão. Os efeitos no longo prazo não foram bem estudados (Weerasekara e colegas).',
-        'A amplitude é só uma parte da recuperação de uma entorse. No estudo de Hoch de 2012, as pessoas com tornozelos que continuavam falseando tinham, em média, cerca de 1,7\u00A0cm a menos no teste do joelho na parede do que as pessoas saudáveis, e o alcance para a frente no teste de equilíbrio também era menor. Aqui, o trabalho de equilíbrio e de força importa tanto quanto a mobilidade. Veja [exercícios para fortalecer o tornozelo](/pt/exercicios-para-fortalecer-tornozelo/).',
+        'A amplitude é só uma parte da recuperação de uma entorse. No estudo de Hoch de 2012, as pessoas com tornozelos que continuavam falseando tinham, em média, cerca de 1,7\u00A0cm a menos no teste do joelho na parede do que as pessoas saudáveis, e o alcance para a frente no teste de equilíbrio também era menor. **Aqui, o trabalho de equilíbrio e de força importa tanto quanto a mobilidade.** Veja [exercícios para fortalecer o tornozelo](/pt/exercicios-para-fortalecer-tornozelo/).',
       ],
       sourceNote:
         'Terada 2013: alongamento estático com exercícios em casa duas semanas depois de entorse aguda, d de Cohen 1,06 (IC 95% 0,12 a 2,42); mobilização com movimento em entorses recorrentes, d de 0,14 a 0,39. Weerasekara 2018: dorsiflexão com carga no curto prazo P=0,003, imediata P=0,16. Hoch 2012: 10,73\u00A0cm contra 12,47\u00A0cm.',
@@ -173,8 +192,9 @@ export const ANKLE_MOBILITY_PT: Guide = {
     {
       h2: 'Com que frequência fazer exercícios de mobilidade do tornozelo?',
       paragraphs: [
-        'A maioria das pessoas faz exercícios de mobilidade do tornozelo de algumas vezes por semana até quase todos os dias, em sessões curtas, e avalia o progresso refazendo o teste a cada duas semanas mais ou menos. Os ensaios usaram rotinas muito diferentes, e a revisão de 2006 sobre alongamento encontrou pouca diferença entre um tempo total de alongamento curto e longo, então sessões mais longas não parecem acrescentar muito.',
-        'No Walkito, os alongamentos de panturrilha, uma sustentação do joelho na parede e o balanço do tornozelo se revezam nas suas sessões: normalmente um num dia de força, mais nos dias de mobilidade, e o balanço do tornozelo também aparece nos dias de equilíbrio. Os testes do próprio app, a cada 14\u00A0dias no início (a cada 28 quando você alcança uma meta), medem a resistência da panturrilha, a sustentação do arco e o equilíbrio. Eles não medem a sua distância no teste do joelho na parede, então, se você quer esse número, anote você mesmo.',
+        'A maioria das pessoas faz exercícios de mobilidade do tornozelo de algumas vezes por semana até quase todos os dias, em sessões curtas, e avalia o progresso refazendo o teste a cada duas semanas mais ou menos. Os ensaios usaram rotinas muito diferentes, e a revisão de 2006 sobre alongamento encontrou pouca diferença entre um tempo total de alongamento curto e longo, então **sessões mais longas não parecem acrescentar muito.**',
+        'No Walkito, os alongamentos de panturrilha, uma sustentação do joelho na parede e o balanço do tornozelo se revezam nas suas sessões: normalmente um num dia de força, mais nos dias de mobilidade, e o balanço do tornozelo também aparece nos dias de equilíbrio.',
+        'Os testes do próprio app, a cada 14\u00A0dias no início (a cada 28 quando você alcança uma meta), medem a resistência da panturrilha, a sustentação do arco e o equilíbrio. Eles não medem a sua distância no teste do joelho na parede, então, se você quer esse número, anote você mesmo.',
         'Um aquecimento antes de uma sessão de agachamento ou de uma corrida também faz sentido, mas a evidência é fraca. Na revisão de 2013, o resultado sobre aquecimento veio de um único estudo pequeno em que o aquecimento foi combinado com alongamento.',
       ],
       cites: [CITE.radfordStretch, CITE.youngDorsiflexion],

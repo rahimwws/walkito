@@ -39,7 +39,8 @@ export const EX_TOE_SPREAD: Guide = {
       h2: 'How do you do the toe spread exercise?',
       paragraphs: [
         'Sit barefoot with your feet flat on the floor. Spread all five toes apart as wide as you can, as though you are trying to put space between every toe. Hold the widest position, then relax. That is one rep.',
-        'The lift is not the point. Keep the toes on the floor and focus on spreading outward. Do not press the toes down or curl them. If only a few toes move, that is normal at the start. The big toe and the little toe usually move first. The middle three toes often follow once the muscles get stronger.',
+        'The lift is not the point. Keep the toes on the floor and focus on spreading outward. Do not press the toes down or curl them.',
+        'If only a few toes move, that is normal at the start. The big toe and the little toe usually move first. The middle three toes often follow once the muscles get stronger.',
       ],
       exercises: [
         {
@@ -62,7 +63,15 @@ export const EX_TOE_SPREAD: Guide = {
       keyFact: 'A 2016 MRI study found toe spreads activated the abductor hallucis at only 18.9 percent, compared with 29.7 percent during the short foot exercise, in the same small group of athletes (Gooding and colleagues, 2016).',
       paragraphs: [
         'The toe spread targets two muscles in particular. The abductor hallucis runs along the inner edge of the foot and pulls the big toe inward (toward the midline of the body). It is also one of the main supporters of the medial longitudinal arch. The abductor digiti minimi runs along the outer edge and pulls the little toe outward.',
-        'A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced its highest activation in the abductor digiti minimi (35.2%), followed by the adductor hallucis oblique (31.5%) and the flexor digiti minimi (30.2%). Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).',
+        'A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced its highest activation in these muscles:',
+        {
+          list: [
+            'The abductor digiti minimi (35.2%).',
+            'The adductor hallucis oblique (31.5%).',
+            'The flexor digiti minimi (30.2%).',
+          ],
+        },
+        'Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).',
         'This means the toe spread and the [short foot exercise](/exercises/short-foot-exercise/) complement each other. The short foot targets the muscles that run along the arch. The toe spread targets the muscles at the edges. Together they cover more of the intrinsic foot muscle group.',
       ],
       cites: [CITE.gooding],
@@ -70,8 +79,13 @@ export const EX_TOE_SPREAD: Guide = {
     {
       h2: 'Who benefits from toe spread exercises?',
       paragraphs: [
-        'People with flat feet benefit because the toe spread activates several of the small muscles that share the job of holding up the arch alongside the abductor hallucis. People with bunions (hallux valgus) may benefit because the exercise trains muscles that pull the big toe away from the other toes, countering the inward drift of a bunion. A separate EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises, though that study is not yet part of this site\'s citation list.',
-        'Runners and people who spend long hours on their feet can use the toe spread as part of a foot-strengthening routine. Toes that can spread share load more evenly across the forefoot during push-off. If your toes are cramped from narrow shoes, the exercise helps restore range of motion.',
+        {
+          list: [
+            '**Flat feet.** People with flat feet benefit because the toe spread activates several of the small muscles that share the job of holding up the arch alongside the abductor hallucis.',
+            '**Bunions.** People with bunions (hallux valgus) may benefit because the exercise trains muscles that pull the big toe away from the other toes, countering the inward drift of a bunion. A separate EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises, though that study is not yet part of this site\'s citation list.',
+            '**Runners and long hours on your feet.** Runners and people who spend long hours on their feet can use the toe spread as part of a foot-strengthening routine. Toes that can spread share load more evenly across the forefoot during push-off. If your toes are cramped from narrow shoes, the exercise helps restore range of motion.',
+          ],
+        },
         'For a broader program, see [flat feet exercises](/flat-feet-exercises/) or [ball-of-foot pain](/ball-of-foot-pain/).',
       ],
       cites: [CITE.gooding],
@@ -79,10 +93,14 @@ export const EX_TOE_SPREAD: Guide = {
     {
       h2: 'What are the common mistakes with the toe spread exercise?',
       paragraphs: [
-        'Lifting the toes off the floor instead of spreading them sideways is the most common mistake. The goal is horizontal spread, not vertical lift. Keep the toes lightly touching the ground.',
-        'Another mistake is curling the toes while trying to spread. This happens when the brain cannot yet separate the spreading movement from the flexion movement. It improves with practice. Try spreading while looking at your toes so you can see what is actually happening.',
-        'Some people find that only the big toe and little toe move at first while the middle three stay stuck together. That is normal. The middle toes have less independent muscle control. Over several weeks of practice, the spread gets wider.',
-        'Do not force the spread to the point of cramping. If the foot cramps, stop, massage the area briefly, and try again with fewer reps.',
+        {
+          list: [
+            '**Lifting the toes.** Lifting the toes off the floor instead of spreading them sideways is the most common mistake. The goal is horizontal spread, not vertical lift. Keep the toes lightly touching the ground.',
+            '**Curling the toes.** Another mistake is curling the toes while trying to spread. This happens when the brain cannot yet separate the spreading movement from the flexion movement. It improves with practice. Try spreading while looking at your toes so you can see what is actually happening.',
+            '**Middle toes stuck.** Some people find that only the big toe and little toe move at first while the middle three stay stuck together. That is normal. The middle toes have less independent muscle control. Over several weeks of practice, the spread gets wider.',
+            '**Forcing it.** Do not force the spread to the point of cramping. If the foot cramps, stop, massage the area briefly, and try again with fewer reps.',
+          ],
+        },
       ],
     },
     {
@@ -90,7 +108,7 @@ export const EX_TOE_SPREAD: Guide = {
       paragraphs: [
         'The toe spread exercise has been studied primarily through MRI and EMG, which measure muscle activation during the exercise. A 2016 MRI study by Gooding and colleagues confirmed it activates all four intrinsic plantar muscles tested. The activation level was comparable to the short foot exercise for most muscles and higher for the abductor digiti minimi.',
         'What the research has not done yet is test the toe spread as a standalone treatment in a randomized trial measuring patient outcomes like pain or arch height over weeks or months. It appears as part of combined programs in flat-feet trials, but the individual contribution of the toe spread cannot be separated from the other exercises in those studies.',
-        'The evidence supports it as a useful exercise for activating the intrinsic foot muscles. Whether it changes foot structure on its own is not yet known. Related exercise pages: [short foot exercise](/exercises/short-foot-exercise/), [big toe lift](/exercises/big-toe-lift/), [towel scrunch](/exercises/towel-scrunch/).',
+        '**The evidence supports it as a useful exercise for activating the intrinsic foot muscles.** Whether it changes foot structure on its own is not yet known. Related exercise pages: [short foot exercise](/exercises/short-foot-exercise/), [big toe lift](/exercises/big-toe-lift/), [towel scrunch](/exercises/towel-scrunch/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

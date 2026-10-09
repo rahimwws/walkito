@@ -30,8 +30,15 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
       keyFact: 'Bei 1.903 älteren Erwachsenen hatten die flachsten Füße eine 1,3-fache Chance auf häufige Knieschmerzen im Vergleich zu allen anderen Füßen (Gross und Kollegen, 2011).',
       figure: { id: 'arches', caption: 'Dieselben Fußknochen bei Plattfuß, normalem und hohem Gewölbe, von der Innenseite gesehen.', alt: 'Drei Füße von der Innenseite auf ebenem Boden: ein Plattfuß, dessen Gewölbe auf dem Boden aufliegt, ein normales Gewölbe mit kleinem Spalt darunter und ein hohes Gewölbe mit großem Spalt unter der Fußmitte.' },
       paragraphs: [
-        'In mehreren großen Studien hängen Plattfüße mit Knieschmerzen zusammen, aber keine davon beweist, dass das Gewölbe den Schmerz verursacht. Der Zusammenhang ist klein und zeigt sich vor allem bei den flachsten Füßen.',
-        'Die bekannteste Studie stammt aus den Framingham-Studien in den USA. Gross und Kollegen vermaßen die Fußabdrücke von 1.903 älteren Erwachsenen (Durchschnittsalter 65) und fragten nach Knieschmerzen. Die Ergebnisse von 2011: Die flachsten Füße hatten eine 1,3-fache Chance auf Knieschmerzen an den meisten Tagen, im Vergleich zu allen anderen Füßen. Im MRT hatten sie außerdem eine 1,4-fache Chance auf Knorpelschäden an der Innenseite des Kniegelenks. Knorpel ist die glatte Schicht, die die Enden der Knochen überzieht. Mit Schäden in anderen Teilen des Knies gab es keinen Zusammenhang.',
+        'In mehreren großen Studien hängen Plattfüße mit Knieschmerzen zusammen, aber **keine davon beweist, dass das Gewölbe den Schmerz verursacht.** Der Zusammenhang ist klein und zeigt sich vor allem bei den flachsten Füßen.',
+        'Die bekannteste Studie stammt aus den Framingham-Studien in den USA. Gross und Kollegen vermaßen die Fußabdrücke von 1.903 älteren Erwachsenen (Durchschnittsalter 65) und fragten nach Knieschmerzen. Die Ergebnisse von 2011, für die flachsten Füße im Vergleich zu allen anderen Füßen:',
+        {
+          list: [
+            '**Knieschmerzen:** eine 1,3-fache Chance auf Knieschmerzen an den meisten Tagen.',
+            '**Knorpel:** im MRT eine 1,4-fache Chance auf Knorpelschäden an der Innenseite des Kniegelenks. Knorpel ist die glatte Schicht, die die Enden der Knochen überzieht.',
+            '**Rest des Knies:** mit Schäden in anderen Teilen des Knies gab es keinen Zusammenhang.',
+          ],
+        },
         'Eine zweite Studie betrachtete das junge Ende des Lebens. Kosashvili und Kollegen werteten 2008 die Daten von 97.279 jungen Rekrutinnen und Rekruten aus. Schmerzen vorn am Knie fanden sich bei 7\u00A0% mit mittlerem oder starkem Plattfuß und bei 4\u00A0% mit leichtem Plattfuß oder normalem Gewölbe. Ein leichter Plattfuß, der 74\u00A0% der Gruppe mit Plattfüßen ausmachte, brachte kein zusätzliches Risiko.',
         'Beide Studien haben die Menschen nur einmal gemessen und können deshalb nicht sagen, ob der Fuß zuerst da war. Die Framingham-Autoren wiesen außerdem darauf hin, dass ein Fußabdruck einen Plattfuß vielleicht nicht von einem breiten, fleischigen Fuß unterscheiden kann, und das Körpergewicht wirkt für sich allein auf das Knie.',
       ],
@@ -42,9 +49,13 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     {
       h2: 'Wo im Knie zeigen sich Knieschmerzen bei Plattfüßen?',
       paragraphs: [
-        'Knieschmerzen, die mit Plattfüßen in Verbindung gebracht werden, sitzen meist an einer von zwei Stellen: rund um oder hinter der Kniescheibe oder an der Innenseite des Knies. Das sind unterschiedliche Probleme, und sie werden unterschiedlich angegangen.',
-        'Schmerzen rund um oder hinter der Kniescheibe heißen patellofemorales Schmerzsyndrom. Sie kommen meist langsam und werden schlimmer bei Kniebeugen, auf der Treppe, beim Laufen, Springen oder langen Sitzen mit gebeugtem Knie. Sie sind häufig bei Jugendlichen und aktiven Erwachsenen. Zu diesem Knieproblem gibt es die meiste Forschung zur Fußhaltung, und der Großteil dieser Seite handelt davon.',
-        'Schmerzen an der Innenseite des Knies bei älteren Erwachsenen hängen häufiger mit Arthrose zusammen, also verschleißbedingten Veränderungen im Gelenk. Die Framingham-Studie fand Knorpelschäden an der Innenseite des Knies häufiger bei den flachsten Füßen, was zu diesem Bild passt. Aber mehr als einen Zusammenhang zu einem Zeitpunkt zeigt die Studie nicht.',
+        'Knieschmerzen, die mit Plattfüßen in Verbindung gebracht werden, sitzen meist an einer von zwei Stellen. Das sind unterschiedliche Probleme, und sie werden unterschiedlich angegangen.',
+        {
+          list: [
+            '**Rund um oder hinter der Kniescheibe.** Das heißt patellofemorales Schmerzsyndrom. Die Schmerzen kommen meist langsam und werden schlimmer bei Kniebeugen, auf der Treppe, beim Laufen, Springen oder langen Sitzen mit gebeugtem Knie. Sie sind häufig bei Jugendlichen und aktiven Erwachsenen. Zu diesem Knieproblem gibt es die meiste Forschung zur Fußhaltung, und der Großteil dieser Seite handelt davon.',
+            '**An der Innenseite des Knies, bei älteren Erwachsenen.** Das hängt häufiger mit Arthrose zusammen, also verschleißbedingten Veränderungen im Gelenk. Die Framingham-Studie fand Knorpelschäden an der Innenseite des Knies häufiger bei den flachsten Füßen, was zu diesem Bild passt. Aber mehr als einen Zusammenhang zu einem Zeitpunkt zeigt die Studie nicht.',
+          ],
+        },
         'Ein Knie, das nach einer Verdrehung anschwillt, blockiert oder wegknickt, ist etwas anderes. Das deutet auf den Meniskus (das Knorpelpolster im Knie) oder ein Band hin und gehört zu einer medizinischen Fachperson.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -53,8 +64,13 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
       h2: 'Wie könnte ein Plattfuß das Knie beeinflussen?',
       paragraphs: [
         'Die übliche Erklärung ist eine Kette: Wenn der Fuß nach innen kippt, dreht sich das Schienbein mit nach innen, und das Knie wandert nach innen. Das Einwärtskippen heißt Pronation, und ein gewisses Maß davon gehört zu jedem Schritt. Die Idee ist, dass zu viel davon verändert, wie die Kniescheibe in ihrer Rinne gleitet.',
-        'Fuß und Schienbein drehen sich tatsächlich zusammen. Ob das Knieschmerzen erklärt, ist weniger klar. Eine Übersichtsarbeit von Barton und Kollegen von 2009 trug 24\u00A0Studien dazu zusammen, wie Menschen mit Schmerzen an der Kniescheibe gehen und laufen. Sie fand einige Unterschiede am Fersenbein und bei Läuferinnen und Läufern mehr Einwärtsbewegung an der Hüfte. Sie fand aber keine vorausschauenden Studien mit verwertbaren Daten. Die Studien, die sie auswerten konnte, verglichen Menschen, die bereits Schmerzen hatten, mit Menschen ohne Schmerzen, und das kann Ursache und Wirkung nicht trennen.',
-        'Die vorausschauenden Belege sind dünn. Eine Übersichtsarbeit von Neal und Kollegen von 2014 fasste 21 prospektive Studien mit 6.228\u00A0Personen zusammen, also Studien, die Menschen über die Zeit begleiten, um zu sehen, wer sich verletzt. Eine nach innen gekippte Fußhaltung war ein klarer Risikofaktor für Schienbeinkantensyndrom. Bei Schmerzen an der Kniescheibe waren die Belege sehr begrenzt und die Effekte klein. Die Autoren schlossen, dass die Fußhaltung ein Teil einer umfassenderen Untersuchung ist, nicht für sich allein die Antwort.',
+        'Fuß und Schienbein drehen sich tatsächlich zusammen. Ob das Knieschmerzen erklärt, ist weniger klar, und die vorausschauenden Belege sind dünn. Zwei Übersichtsarbeiten haben das untersucht:',
+        {
+          list: [
+            '**Barton und Kollegen, 2009:** trug 24\u00A0Studien dazu zusammen, wie Menschen mit Schmerzen an der Kniescheibe gehen und laufen. Sie fand einige Unterschiede am Fersenbein und bei Läuferinnen und Läufern mehr Einwärtsbewegung an der Hüfte. Sie fand aber keine vorausschauenden Studien mit verwertbaren Daten. Die Studien, die sie auswerten konnte, verglichen Menschen, die bereits Schmerzen hatten, mit Menschen ohne Schmerzen, und das kann Ursache und Wirkung nicht trennen.',
+            '**Neal und Kollegen, 2014:** fasste 21 prospektive Studien mit 6.228\u00A0Personen zusammen, also Studien, die Menschen über die Zeit begleiten, um zu sehen, wer sich verletzt. Eine nach innen gekippte Fußhaltung war ein klarer Risikofaktor für Schienbeinkantensyndrom. Bei Schmerzen an der Kniescheibe waren die Belege sehr begrenzt und die Effekte klein. Die Autoren schlossen, dass die Fußhaltung ein Teil einer umfassenderen Untersuchung ist, nicht für sich allein die Antwort.',
+          ],
+        },
         'Die Hüfte sitzt am oberen Ende derselben Kette. Schwache Muskeln an der Außenseite der Hüfte lassen den Oberschenkel nach innen drehen, und das kann das Knie von oben nach innen ziehen. Das ist ein Grund, warum die Übungsempfehlungen bei Schmerzen an der Kniescheibe an der Hüfte beginnen, nicht am Fuß.',
       ],
       sourceNote:
@@ -82,9 +98,18 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
       keyFact: 'In einer Studie mit 179\u00A0Erwachsenen mit Schmerzen an der Kniescheibe schnitten geformte Einlagen kurzfristig besser ab als flache Einlagen, waren aber nicht besser als Physiotherapie (Collins und Kollegen, 2008).',
       paragraphs: [
         'Geformte Einlagen können Schmerzen vorn am Knie kurzfristig lindern, bringen aber wenig, sobald du gute Übungen machst.',
-        'Der klarste Test ist eine Studie von 2008 im BMJ. Collins und Kollegen teilten 179\u00A0Erwachsene zwischen 18 und 40\u00A0Jahren mit Schmerzen rund um die Kniescheibe in vier Gruppen ein: geformte Einlagen von der Stange, flache Einlagen, Physiotherapie (Übungen für die Oberschenkelmuskeln, Tapen, manuelle Techniken und Beratung) oder Einlagen plus Physiotherapie. Die geformten Einlagen schnitten nach etwa anderthalb Monaten besser ab als flache Einlagen. Sie waren nicht besser als Physiotherapie, und zusätzlich zur Physiotherapie verbesserten sie die Ergebnisse nicht. Nach einem Jahr hatten sich alle vier Gruppen deutlich verbessert.',
+        'Der klarste Test ist eine Studie von 2008 im BMJ. Collins und Kollegen teilten 179\u00A0Erwachsene zwischen 18 und 40\u00A0Jahren mit Schmerzen rund um die Kniescheibe in vier Gruppen ein:',
+        {
+          list: [
+            'Geformte Einlagen von der Stange.',
+            'Flache Einlagen.',
+            'Physiotherapie: Übungen für die Oberschenkelmuskeln, Tapen, manuelle Techniken und Beratung.',
+            'Einlagen plus Physiotherapie.',
+          ],
+        },
+        'Die geformten Einlagen schnitten nach etwa anderthalb Monaten besser ab als flache Einlagen. Sie waren nicht besser als Physiotherapie, und zusätzlich zur Physiotherapie verbesserten sie die Ergebnisse nicht. Nach einem Jahr hatten sich alle vier Gruppen deutlich verbessert.',
         'Eine kleinere Studie von Mølgaard und Kollegen von 2018 wählte 40\u00A0Menschen mit Schmerzen an der Kniescheibe aus, deren Fersen stärker als üblich nach innen kippten. Fußübungen und maßgefertigte Einlagen zusätzlich zu Knieübungen brachten nach vier Monaten 8,9\u00A0Punkte mehr Schmerzlinderung auf einer 100-Punkte-Knieskala. Nach zwölf Monaten war der Unterschied zwischen den Gruppen statistisch nicht mehr klar. Die Studie kann nicht sagen, ob die Einlagen, die Fußübungen oder die zusätzlichen Termine den Unterschied ausmachten.',
-        'Die Leitlinie von 2019 fasst es so zusammen: Einlagen von der Stange können Menschen nutzen, deren Füße stärker als üblich nach innen kippen, nur zur kurzfristigen Schmerzlinderung und immer zusammen mit Übungen. Sie fand zu wenig Belege, um maßgefertigte Einlagen gegenüber Einlagen von der Stange zu bevorzugen. Mehr zur Debatte um Einlagen findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
+        'Die Leitlinie von 2019 fasst es so zusammen: **Einlagen von der Stange können Menschen nutzen, deren Füße stärker als üblich nach innen kippen, nur zur kurzfristigen Schmerzlinderung und immer zusammen mit Übungen.** Sie fand zu wenig Belege, um maßgefertigte Einlagen gegenüber Einlagen von der Stange zu bevorzugen. Mehr zur Debatte um Einlagen findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
       ],
       sourceNote:
         'Collins 2008: einfach verblindete RCT, Endpunkte nach etwa anderthalb Monaten, drei Monaten und einem Jahr; geformte Einlagen gegenüber flachen Einlagen bei der globalen Verbesserung, Number Needed to Benefit 4. Ein Autor hatte Fördermittel von einem Einlagenhersteller erhalten. Mølgaard 2018: KOOS-Subskala Schmerz, 8,9\u00A0Punkte (95-%-KI 0,4 bis 17,4). Willy 2019: Empfehlungsgrad A.',

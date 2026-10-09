@@ -23,7 +23,8 @@ export const SEVERS_PT: Guide = {
   lede:
     'A doença de Sever, também chamada de apofisite do calcâneo, é a causa mais comum de dor no calcanhar em crianças. Ela acontece quando a placa de crescimento na parte de trás do osso do calcanhar fica irritada pelo puxão repetido do tendão de Aquiles, normalmente durante um estirão de crescimento e num esporte com corrida ou saltos. Não é uma doença no sentido comum. Ela passa sozinha quando a placa de crescimento se fecha.',
   intro: [
-    'Esta página foi escrita para pais e mães. Ela explica o que está acontecendo no calcanhar, o que a pesquisa diz sobre calcanheiras, alongamento e controle da carga, e quando a dor precisa de um profissional de saúde em vez de repouso. O Walkito é um app de exercícios feito para adultos com dor no calcanhar e no arco. Ele não foi feito para crianças, e nada nesta página é uma recomendação para usá-lo com uma criança. Se a dor no calcanhar do seu filho não melhora com as medidas abaixo, um médico do esporte pediátrico ou um podólogo é o próximo passo certo.',
+    'Esta página foi escrita para pais e mães. Ela explica o que está acontecendo no calcanhar, o que a pesquisa diz sobre calcanheiras, alongamento e controle da carga, e quando a dor precisa de um profissional de saúde em vez de repouso.',
+    'O Walkito é um app de exercícios feito para adultos com dor no calcanhar e no arco. Ele não foi feito para crianças, e nada nesta página é uma recomendação para usá-lo com uma criança. Se a dor no calcanhar do seu filho não melhora com as medidas abaixo, um médico do esporte pediátrico ou um podólogo é o próximo passo certo.',
   ],
   takeaways: [
     'A doença de Sever afeta crianças de 8 a 15 anos, na maioria das vezes durante um estirão de crescimento, e passa quando a placa de crescimento do calcâneo se fecha, normalmente entre os 12 e os 17 anos (revisão StatPearls, 2024).',
@@ -48,14 +49,24 @@ export const SEVERS_PT: Guide = {
       paragraphs: [
         'A doença de Sever afeta crianças entre cerca de 8 e 15 anos. A apófise do calcâneo aparece por volta dos 7 a 9 anos e normalmente se funde entre os 15 e os 17. Os meninos são afetados duas a três vezes mais que as meninas, com início típico por volta dos 12 anos nos meninos e dos 11 nas meninas. Cerca de 60% dos casos envolvem os dois calcanhares.',
         'Ela responde por 2 a 16% das consultas de crianças em clínicas de esporte. Os esportes mais ligados a ela são futebol, basquete, atletismo, corrida cross-country, ginástica e tênis. O padrão é previsível: ela costuma aparecer no começo de uma temporada esportiva ou durante um estirão de crescimento, quando a carga no calcanhar aumenta de repente.',
-        'Os fatores de risco incluem muita atividade de corrida e salto, panturrilha tensa, pouca flexibilidade no tornozelo, IMC alto, superfícies de jogo duras e calçados ou chuteiras pouco amortecidos.',
+        'Os fatores de risco incluem:',
+        {
+          list: [
+            'Muita atividade de corrida e salto.',
+            'Panturrilha tensa.',
+            'Pouca flexibilidade no tornozelo.',
+            'IMC alto.',
+            'Superfícies de jogo duras.',
+            'Calçados ou chuteiras pouco amortecidos.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: 'Como é a dor da doença de Sever?',
       paragraphs: [
-        'O principal sintoma é dor na parte de trás ou nas laterais do calcanhar, normalmente durante ou depois da atividade e principalmente depois de correr ou pular. A dor muitas vezes é descrita como a de um hematoma. Raramente há inchaço ou mancha roxa visível. Apertar as laterais do calcanhar normalmente reproduz a dor. Esse teste de compressão é a verificação clínica padrão.',
+        'O principal sintoma é dor na parte de trás ou nas laterais do calcanhar, normalmente durante ou depois da atividade e principalmente depois de correr ou pular. A dor muitas vezes é descrita como a de um hematoma. Raramente há inchaço ou mancha roxa visível. **Apertar as laterais do calcanhar normalmente reproduz a dor.** Esse teste de compressão é a verificação clínica padrão.',
         'Ao contrário da fascite plantar nos adultos, que é pior nos primeiros passos depois do repouso, a dor da doença de Sever costuma piorar com a atividade e não melhora andando. Algumas crianças começam a mancar ou a andar na ponta dos pés para não apoiar o peso no calcanhar.',
         'A dor pode ir de leve, perceptível só durante o esporte, até forte o bastante para impedir a criança de jogar.',
       ],
@@ -64,8 +75,16 @@ export const SEVERS_PT: Guide = {
       h2: 'O que ajuda na doença de Sever? A evidência',
       keyFact: 'Em um ensaio com 101\u00A0crianças, as três abordagens melhoraram a dor, e o grupo da elevação do calcanhar relatou mais satisfação em seis semanas, embora a diferença tenha sumido aos três meses (Wiegerinck e colegas, 2016).',
       paragraphs: [
-        'A evidência sobre a doença de Sever é pequena, mas está crescendo. As três principais opções estudadas são o controle da carga (reduzir a atividade que dói), calcanheiras ou palmilhas, e exercícios de alongamento ou fortalecimento. As três mostraram benefício, e nenhuma se mostrou claramente melhor que as outras no acompanhamento final.',
-        'Em um ensaio de 2016 com 101\u00A0crianças de 8 a 15 anos, Wiegerinck e colegas compararam três abordagens: esperar e observar com a orientação de parar a atividade que dói, uma palmilha de elevação do calcanhar e exercícios excêntricos supervisionados. Os três grupos melhoraram de forma significativa. Em seis semanas, o grupo da elevação do calcanhar estava mais satisfeito que os outros dois. Aos três meses, não restava nenhuma diferença clinicamente relevante entre os três.',
+        'A evidência sobre a doença de Sever é pequena, mas está crescendo. As três principais opções estudadas são o controle da carga (reduzir a atividade que dói), calcanheiras ou palmilhas, e exercícios de alongamento ou fortalecimento. As três mostraram benefício, e **nenhuma se mostrou claramente melhor que as outras no acompanhamento final.**',
+        'Em um ensaio de 2016 com 101\u00A0crianças de 8 a 15 anos, Wiegerinck e colegas compararam três abordagens:',
+        {
+          list: [
+            'Esperar e observar com a orientação de parar a atividade que dói.',
+            'Uma palmilha de elevação do calcanhar.',
+            'Exercícios excêntricos supervisionados.',
+          ],
+        },
+        'Os três grupos melhoraram de forma significativa. Em seis semanas, o grupo da elevação do calcanhar estava mais satisfeito que os outros dois. Aos três meses, não restava nenhuma diferença clinicamente relevante entre os três.',
         'Em outro ensaio fatorial de 2016 com 124\u00A0crianças, James e colegas compararam a elevação do calcanhar com palmilhas pré-fabricadas, e a troca de calçado com não trocar. A elevação do calcanhar teve uma pequena vantagem sobre as palmilhas pré-fabricadas aos 2\u00A0meses no domínio físico do Oxford Ankle Foot Questionnaire. Aos 6 e aos 12\u00A0meses, não restava diferença entre nenhuma combinação.',
         'Em um ensaio cruzado com 51\u00A0meninos, Perhamre e colegas compararam uma calcanheira de 3\u00A0mm com uma cunha de calcanhar de 5\u00A0mm. A calcanheira reduziu a dor em cerca de 80% na escala Borg CR-10, o que sugere que o amortecimento e a absorção do impacto podem importar mais do que simplesmente levantar o calcanhar.',
       ],
@@ -76,8 +95,17 @@ export const SEVERS_PT: Guide = {
     {
       h2: 'Controle da carga e mudança de atividade',
       paragraphs: [
-        'O controle da carga é a base do cuidado na doença de Sever. Isso não quer dizer parar todo esporte. Quer dizer reduzir as atividades que causam a dor, principalmente correr e pular em superfícies duras, até a dor acalmar. A maioria das crianças consegue voltar ao esporte em duas a oito semanas se a carga for controlada cedo.',
-        'Medidas práticas incluem diminuir os treinos em vez de parar totalmente, evitar chuteiras em chão duro quando possível, trocar por calçados bem amortecidos e pular as partes do treino com mais corrida e salto. Alguns treinadores deixam a criança participar dos exercícios de técnica e ficar de fora dos tiros e do condicionamento.',
+        'O controle da carga é a base do cuidado na doença de Sever. **Isso não quer dizer parar todo esporte.** Quer dizer reduzir as atividades que causam a dor, principalmente correr e pular em superfícies duras, até a dor acalmar. A maioria das crianças consegue voltar ao esporte em duas a oito semanas se a carga for controlada cedo.',
+        'Medidas práticas incluem:',
+        {
+          list: [
+            'Diminuir os treinos em vez de parar totalmente.',
+            'Evitar chuteiras em chão duro quando possível.',
+            'Trocar por calçados bem amortecidos.',
+            'Pular as partes do treino com mais corrida e salto.',
+          ],
+        },
+        'Alguns treinadores deixam a criança participar dos exercícios de técnica e ficar de fora dos tiros e do condicionamento.',
         'A parte mais difícil do controle da carga é que a doença de Sever costuma voltar. A criança pode melhorar depois de duas semanas de repouso, voltar à atividade completa e a dor reaparecer. Isso não quer dizer que a primeira rodada de repouso falhou. Quer dizer que a placa de crescimento ainda está aberta e ainda é vulnerável. É comum a dor voltar até o fim do crescimento do esqueleto.',
       ],
       cites: [CITE.wiegerinck],
@@ -88,7 +116,7 @@ export const SEVERS_PT: Guide = {
       paragraphs: [
         'As calcanheiras estão entre as intervenções mais práticas para a doença de Sever. Elas amortecem o calcanhar, absorvem o impacto e reduzem os picos de força que chegam à placa de crescimento. O ensaio cruzado de Perhamre concluiu que uma calcanheira reduziu a dor em cerca de 80% em comparação com uma cunha de calcanhar em 51\u00A0meninos, o que sugere que a absorção do impacto no calcanhar importa mais do que simplesmente mudar o ângulo do calcanhar.',
         'No ensaio fatorial de James, a elevação do calcanhar (um tipo de palmilha que levanta o calcanhar) mostrou uma pequena vantagem de curto prazo sobre as palmilhas pré-fabricadas aos 2\u00A0meses, mas nenhuma vantagem aos 12\u00A0meses. Palmilhas sob medida não foram testadas em nenhum desses ensaios.',
-        'Um ponto de partida razoável é uma calcanheira barata, comprada pronta, usada nos dois calçados e durante o esporte. Se isso não ajudar, um profissional de saúde pode avaliar se uma palmilha sob medida vale o custo.',
+        '**Um ponto de partida razoável é uma calcanheira barata, comprada pronta, usada nos dois calçados e durante o esporte.** Se isso não ajudar, um profissional de saúde pode avaliar se uma palmilha sob medida vale o custo.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -96,7 +124,7 @@ export const SEVERS_PT: Guide = {
       h2: 'Alongar a panturrilha ajuda na doença de Sever?',
       paragraphs: [
         'A panturrilha tensa aumenta o puxão sobre a placa de crescimento, e a panturrilha tensa é um dos fatores de risco reconhecidos da apofisite do calcâneo. Alongar o gastrocnêmio (o músculo mais superficial da panturrilha, alongado com o joelho esticado) e o sóleo (o músculo mais profundo da panturrilha, alongado com o joelho dobrado) é uma recomendação padrão.',
-        'No ensaio de Wiegerinck, o grupo de exercício fez um programa de fortalecimento excêntrico da panturrilha supervisionado por fisioterapeuta. Esse grupo melhorou tanto quanto os grupos da elevação do calcanhar e de esperar e observar. Alongamento e fortalecimento leve são seguros e podem ajudar reduzindo a tração sobre a placa de crescimento, mas a evidência não mostra que eles sejam superiores às calcanheiras ou ao controle da carga sozinhos.',
+        'No ensaio de Wiegerinck, o grupo de exercício fez um programa de fortalecimento excêntrico da panturrilha supervisionado por fisioterapeuta. Esse grupo melhorou tanto quanto os grupos da elevação do calcanhar e de esperar e observar. Alongamento e fortalecimento leve são seguros e podem ajudar reduzindo a tração sobre a placa de crescimento, mas **a evidência não mostra que eles sejam superiores às calcanheiras ou ao controle da carga sozinhos.**',
         'Os exercícios para crianças com apofisite do calcâneo devem ser supervisionados ou ensinados por um profissional de saúde ou fisioterapeuta. A dose e a progressão dependem da idade da criança, do nível de dor e das exigências do esporte. Uma criança com dor aguda que está mancando precisa primeiro de repouso, não de exercícios.',
       ],
       cites: [CITE.wiegerinck],
@@ -112,7 +140,7 @@ export const SEVERS_PT: Guide = {
       h2: 'Quanto tempo dura e ela volta?',
       paragraphs: [
         'A doença de Sever normalmente passa em semanas a meses com controle da carga e cuidados de apoio. A maioria das crianças consegue voltar ao esporte em duas a oito semanas. A dor normalmente some de vez quando a placa de crescimento se funde em osso sólido, em geral entre os 12 e os 17 anos, dependendo do sexo da criança e do ritmo de maturação (revisão StatPearls, 2024).',
-        'É comum e esperado que a dor volte. Cada estirão de crescimento e cada nova temporada esportiva podem trazer a dor de volta. A volta da dor não é sinal de que o cuidado falhou. É sinal de que a placa de crescimento ainda está aberta. Continuar com calcanheiras, bons calçados e alongamento da panturrilha nas temporadas esportivas pode reduzir a intensidade e a frequência das crises.',
+        'É comum e esperado que a dor volte. Cada estirão de crescimento e cada nova temporada esportiva podem trazer a dor de volta. **A volta da dor não é sinal de que o cuidado falhou.** É sinal de que a placa de crescimento ainda está aberta. Continuar com calcanheiras, bons calçados e alongamento da panturrilha nas temporadas esportivas pode reduzir a intensidade e a frequência das crises.',
         'Nenhum problema de longo prazo foi associado à doença de Sever. Ela não danifica a placa de crescimento nem afeta o formato final do osso.',
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

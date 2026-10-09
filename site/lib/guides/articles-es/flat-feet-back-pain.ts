@@ -29,8 +29,17 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       h2: '¿El pie plano puede causar dolor de espalda?',
       keyFact: 'El Framingham Foot Study, con 1930 adultos, no encontró relación entre la forma del pie plano y el dolor de espalda baja (Menz y colegas, 2013).',
       paragraphs: [
-        'No se ha demostrado que el pie plano cause dolor de espalda. Algunos estudios encuentran que las personas con pies más planos o que se van hacia adentro reportan dolor de espalda un poco más seguido, y otros no encuentran ninguna relación. Ninguno puede mostrar que primero vinieron los pies y después el dolor de espalda.',
-        'Esa diferencia importa porque el dolor de espalda baja es muy común y casi nunca tiene una sola causa. Una revisión de 2018 en The Lancet lo dijo sin rodeos: en casi todas las personas con dolor de espalda baja no se puede identificar una fuente específica del dolor. Solo una pequeña parte tiene una causa médica clara, como una fractura, una infección o un tumor. Según esa revisión, las personas con más riesgo incluyen a quienes tienen trabajos físicamente pesados, a quienes fuman, a las personas con obesidad y a quienes tienen otras condiciones físicas o mentales. Con tantos factores, una historia simple de «el pie causa la espalda» es difícil de probar.',
+        '**No se ha demostrado que el pie plano cause dolor de espalda.** Algunos estudios encuentran que las personas con pies más planos o que se van hacia adentro reportan dolor de espalda un poco más seguido, y otros no encuentran ninguna relación. Ninguno puede mostrar que primero vinieron los pies y después el dolor de espalda.',
+        'Esa diferencia importa porque el dolor de espalda baja es muy común y casi nunca tiene una sola causa. Una revisión de 2018 en The Lancet lo dijo sin rodeos: en casi todas las personas con dolor de espalda baja no se puede identificar una fuente específica del dolor. Solo una pequeña parte tiene una causa médica clara, como una fractura, una infección o un tumor. Según esa revisión, las personas con más riesgo incluyen:',
+        {
+          list: [
+            'A quienes tienen trabajos físicamente pesados.',
+            'A quienes fuman.',
+            'A las personas con obesidad.',
+            'A quienes tienen otras condiciones físicas o mentales.',
+          ],
+        },
+        'Con tantos factores, una historia simple de «el pie causa la espalda» es difícil de probar.',
         'Así que la respuesta honesta es «probablemente no por sí solo, en la mayoría de las personas». Vale la pena ver tu dolor de espalda como un problema aparte.',
       ],
       cites: [CITE.menz, CITE.hartvigsen],
@@ -40,8 +49,17 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       keyFact: 'En el Framingham Foot Study, las mujeres cuyo pie se iba hacia adentro al caminar tuvieron alrededor de 1,5\u00A0veces más probabilidades de dolor de espalda baja, mientras que la forma del pie al estar de pie no mostró relación (Menz y colegas, 2013).',
       paragraphs: [
         'El Framingham Foot Study es uno de los estudios más grandes que midieron los pies directamente, y no encontró relación entre el pie plano y el dolor de espalda baja. Los investigadores estudiaron a 1930\u00A0adultos del pueblo de Framingham, Massachusetts, entre 2002 y 2005. Midieron el arco de cada persona de pie a partir de una huella y clasificaron los pies en planos, normales o de arco alto. La forma del pie, plano o no, no mostró ninguna asociación con el dolor de espalda baja.',
-        'El estudio también midió la función del pie: cómo se movía la presión debajo del pie mientras cada persona caminaba. Un pie que se va hacia adentro al caminar se llama pronado. En mujeres, una marcha en pronación se relacionó con el dolor de espalda baja, con alrededor de 1,5\u00A0veces más probabilidades que en mujeres cuyo pie se movía de forma normal. La relación se mantuvo después de que los investigadores tomaron en cuenta la edad, el peso, el tabaquismo y los síntomas depresivos. En hombres no hubo relación.',
-        'Muchos sitios web reportan este estudio como «las personas con pie plano tienen un 50\u00A0% más de probabilidades de tener dolor de espalda». Eso no es lo que encontró. La forma del arco que ves cuando estás de pie no importó. Lo que importó, solo en mujeres, fue cómo se movía el pie al caminar. Y como el estudio midió a todos una sola vez, no puede decir si el movimiento del pie llevó al dolor de espalda, si el dolor de espalda cambió la forma de caminar, o si otra cosa provocó las dos.',
+        'El estudio también midió la función del pie: cómo se movía la presión debajo del pie mientras cada persona caminaba. Un pie que se va hacia adentro al caminar se llama pronado.',
+        'En mujeres, una marcha en pronación se relacionó con el dolor de espalda baja, con alrededor de 1,5\u00A0veces más probabilidades que en mujeres cuyo pie se movía de forma normal. La relación se mantuvo después de que los investigadores tomaron en cuenta la edad, el peso, el tabaquismo y los síntomas depresivos. En hombres no hubo relación.',
+        'Muchos sitios web reportan este estudio como «las personas con pie plano tienen un 50\u00A0% más de probabilidades de tener dolor de espalda». Eso no es lo que encontró. **La forma del arco que ves cuando estás de pie no importó.** Lo que importó, solo en mujeres, fue cómo se movía el pie al caminar.',
+        'Y como el estudio midió a todos una sola vez, no puede decir si:',
+        {
+          list: [
+            'El movimiento del pie llevó al dolor de espalda.',
+            'El dolor de espalda cambió la forma de caminar.',
+            'Otra cosa provocó las dos.',
+          ],
+        },
       ],
       sourceNote:
         'Menz 2013: estudio transversal, n = 1930. Función del pie en pronación y dolor de espalda baja en mujeres, razón de probabilidades de 1,51 (IC del 95\u00A0%: 1,1 a 2,07); 1,48 (IC del 95\u00A0%: 1,07 a 2,05) después de ajustar por edad, peso, tabaquismo y síntomas depresivos.',
@@ -52,8 +70,9 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       keyFact: 'Entre 97\u00A0279 reclutas militares, el 5\u00A0% de los que tenían pie plano leve tuvo dolor de espalda baja intermitente, lo mismo que los reclutas con pies normales, frente al 10\u00A0% de los que tenían pie plano moderado o severo (Kosashvili y colegas, 2008).',
       paragraphs: [
         'En algunos estudios, las personas con pie plano marcado reportan dolor de espalda un poco más seguido, pero las personas con pie plano leve no. El conjunto de datos más grande viene de 97\u00A0279 reclutas militares jóvenes, en el que un médico ortopedista calificó el pie plano de cada recluta. El 16\u00A0% tenía pie plano, y la mayoría de ellos (74\u00A0%) era leve.',
-        'El dolor de espalda baja intermitente, es decir, dolor de espalda sin hallazgos en la exploración ni en la radiografía, apareció en el 5\u00A0% de los reclutas con pies normales y en el 5\u00A0% de los que tenían pie plano leve. Fue del 10\u00A0% en los que tenían pie plano moderado o severo. Así que en la mayoría de los pies planos, los leves, no hubo ninguna diferencia.',
-        'Una encuesta de 2021 con 1798\u00A0adultos entrevistados en un festival en Arabia Saudita reportó cifras mucho más altas: el 65,9\u00A0% de las personas con pie plano dijo tener dolor de espalda baja, y el pie plano vino con 3,3\u00A0veces más probabilidades de dolor de espalda de corta duración y 4,5\u00A0veces más de dolor de espalda de larga duración. Una encuesta así mira los pies y la espalda en un solo momento, en quien se detuvo a participar, y cada persona dijo por sí misma si tenía pie plano. No puede descartar otras explicaciones, y los propios investigadores encontraron que el sexo, la edad, el trabajo y la actividad física también se relacionaban con el dolor de espalda.',
+        'El dolor de espalda baja intermitente, es decir, dolor de espalda sin hallazgos en la exploración ni en la radiografía, apareció en el 5\u00A0% de los reclutas con pies normales y en el 5\u00A0% de los que tenían pie plano leve. Fue del 10\u00A0% en los que tenían pie plano moderado o severo. **Así que en la mayoría de los pies planos, los leves, no hubo ninguna diferencia.**',
+        'Una encuesta de 2021 con 1798\u00A0adultos entrevistados en un festival en Arabia Saudita reportó cifras mucho más altas: el 65,9\u00A0% de las personas con pie plano dijo tener dolor de espalda baja, y el pie plano vino con 3,3\u00A0veces más probabilidades de dolor de espalda de corta duración y 4,5\u00A0veces más de dolor de espalda de larga duración.',
+        'Una encuesta así mira los pies y la espalda en un solo momento, en quien se detuvo a participar, y cada persona dijo por sí misma si tenía pie plano. No puede descartar otras explicaciones, y los propios investigadores encontraron que el sexo, la edad, el trabajo y la actividad física también se relacionaban con el dolor de espalda.',
       ],
       cites: [CITE.kosashvili, CITE.almutairi],
     },
@@ -61,7 +80,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       h2: '¿Cómo podría el pie plano afectar la espalda?',
       keyFact: 'En un estudio de laboratorio con 20\u00A0personas, unas plantillas que hacían que el pie se fuera hacia adentro inclinaron la pelvis alrededor de medio grado en promedio al caminar (Hornestam y colegas, 2021).',
       paragraphs: [
-        'La explicación de siempre es la cadena cinética: la idea de que las articulaciones desde el pie hasta la columna se mueven como un sistema conectado, así que un pie que se va hacia adentro gira la pierna y el muslo hacia adentro, inclina la pelvis y carga la espalda baja de otra forma. La mecánica es real, pero el tamaño del efecto parece pequeño.',
+        'La explicación de siempre es la cadena cinética: la idea de que las articulaciones desde el pie hasta la columna se mueven como un sistema conectado, así que un pie que se va hacia adentro gira la pierna y el muslo hacia adentro, inclina la pelvis y carga la espalda baja de otra forma. **La mecánica es real, pero el tamaño del efecto parece pequeño.**',
         'En un estudio de laboratorio de 2021, 20\u00A0personas caminaron con plantillas con cuña que hacían que el pie se fuera hacia adentro. La pelvis se inclinó un poco más hacia un lado (alrededor de medio grado en promedio) y la cadera giró hacia adentro alrededor de 1,4\u00A0grados. Eso muestra que el pie puede mover un poco la pelvis. No muestra que medio grado cause dolor, y el estudio no midió el dolor.',
         'La cadena cinética es una idea razonable para que un profesional de la salud la revise en una persona concreta. No es motivo para dar por hecho que tus arcos están detrás de tu dolor de espalda.',
       ],
@@ -73,9 +92,18 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       paragraphs: [
         'La evidencia sobre plantillas y plantillas ortopédicas para el dolor de espalda es mixta y de baja calidad, y el beneficio que se ha visto hasta ahora ha durado poco. Las plantillas ortopédicas son insertos con forma para el zapato, y las hechas a medida se fabrican a partir de un molde o un escaneo de tu pie.',
         'Una revisión de 2014 juntó cinco ensayos de plantillas en personas que ya tenían dolor de espalda baja (293\u00A0personas) y no encontró un efecto significativo. Otros seis ensayos (2379\u00A0personas) probaron plantillas para prevenir el dolor de espalda y tampoco encontraron un efecto significativo.',
-        'El ensayo individual más conocido, de 2017, asignó a 225\u00A0adultos con dolor de espalda de al menos tres meses a plantillas ortopédicas a medida, a plantillas más atención quiropráctica o a nada (una lista de espera). Después de un mes y medio, el grupo de solo plantillas tenía menos dolor y mejor función que la lista de espera. A los tres meses y después, los grupos ya no eran distintos. Las personas del ensayo no se eligieron por tener pie plano, y la comparación fue con no hacer nada, no con una plantilla falsa.',
-        'Dos líneas de investigación más pequeñas estudiaron a personas cuyo pie se va hacia adentro. Un ensayo de 2013 con 51\u00A0personas con dolor de espalda crónico y pies muy pronados encontró que las plantillas ortopédicas a medida aliviaron el dolor de espalda más que unas plantillas placebo en alrededor de un mes. Una revisión de 2025 juntó cuatro ensayos pequeños en este grupo y encontró menos dolor y menos discapacidad. Una revisión de 2026 de siete ensayos (423\u00A0personas) encontró que las plantillas ortopédicas ayudaron con el dolor en general, pero calificó la evidencia como de baja calidad y no encontró un efecto claro de las plantillas compradas en tienda.',
-        'Usar plantillas para la comodidad del pie es razonable y de bajo riesgo. No esperes que resuelvan por sí solas un problema de espalda. [Plantillas o ejercicios](/es/plantillas-o-ejercicios/) explica el lado del pie de esa decisión.',
+        'El ensayo individual más conocido, de 2017, asignó a 225\u00A0adultos con dolor de espalda de al menos tres meses a:',
+        {
+          list: [
+            'Plantillas ortopédicas a medida.',
+            'Plantillas más atención quiropráctica.',
+            'Nada (una lista de espera).',
+          ],
+        },
+        'Después de un mes y medio, el grupo de solo plantillas tenía menos dolor y mejor función que la lista de espera. A los tres meses y después, los grupos ya no eran distintos. Las personas del ensayo no se eligieron por tener pie plano, y la comparación fue con no hacer nada, no con una plantilla falsa.',
+        'Dos líneas de investigación más pequeñas estudiaron a personas cuyo pie se va hacia adentro. Un ensayo de 2013 con 51\u00A0personas con dolor de espalda crónico y pies muy pronados encontró que las plantillas ortopédicas a medida aliviaron el dolor de espalda más que unas plantillas placebo en alrededor de un mes. Una revisión de 2025 juntó cuatro ensayos pequeños en este grupo y encontró menos dolor y menos discapacidad.',
+        'Una revisión de 2026 de siete ensayos (423\u00A0personas) encontró que las plantillas ortopédicas ayudaron con el dolor en general, pero calificó la evidencia como de baja calidad y no encontró un efecto claro de las plantillas compradas en tienda.',
+        'Usar plantillas para la comodidad del pie es razonable y de bajo riesgo. **No esperes que resuelvan por sí solas un problema de espalda.** [Plantillas o ejercicios](/es/plantillas-o-ejercicios/) explica el lado del pie de esa decisión.',
       ],
       table: {
         caption: 'Estudios de plantillas y plantillas ortopédicas para el dolor de espalda baja',
@@ -97,7 +125,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       keyFact: 'Una revisión Cochrane de 2021 con 249\u00A0ensayos encontró que el ejercicio bajó el dolor de espalda baja crónico en unos 15\u00A0puntos en una escala de 100, comparado con no hacer ejercicio, la atención habitual o un placebo (Hayden y colegas, 2021).',
       paragraphs: [
         'El ejercicio en general tiene una evidencia mucho más sólida para el dolor de espalda que cualquier cosa enfocada en los pies. Una revisión Cochrane de 2021, un gran resumen de ensayos, juntó 249\u00A0ensayos de ejercicio para el dolor de espalda baja crónico. Encontró evidencia de certeza moderada de que el ejercicio bajó el dolor en unos 15\u00A0puntos en una escala de 100, comparado con no hacer ejercicio, la atención habitual o un placebo. El efecto en la función diaria fue menor, de unos 7\u00A0puntos.',
-        'Los ensayos incluyeron muchos tipos de ejercicio, y 151 de ellos probaron dos o más tipos. Para el dolor, el ejercicio también superó a dar solo consejos o información. Para la mayoría de las personas, lo práctico es elegir algo regular que puedas mantener, idealmente con la ayuda de un fisioterapeuta al principio.',
+        'Los ensayos incluyeron muchos tipos de ejercicio, y 151 de ellos probaron dos o más tipos. Para el dolor, el ejercicio también superó a dar solo consejos o información. Para la mayoría de las personas, lo práctico es **elegir algo regular que puedas mantener**, idealmente con la ayuda de un fisioterapeuta al principio.',
         'La revisión de 2018 en The Lancet da algo de tranquilidad: la mayoría de los episodios nuevos de dolor de espalda baja se calman pronto, aunque el dolor de espalda muchas veces regresa. Si la espalda es el problema principal, un fisioterapeuta o un médico puede armar un plan para tu espalda. El trabajo de pies puede ir junto a ese plan, no en su lugar.',
       ],
       sourceNote:
@@ -109,7 +137,8 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       keyFact: 'En un ensayo con 52\u00A0personas con pie plano flexible, un programa de pie corto, ejercicios de tobillo, cadera y estiramientos cambió dos medidas de la forma del arco más que en un grupo de control (Brijwasi y Borkar, 2023).',
       paragraphs: [
         'Trabajar tu pie plano tiene sentido si los pies en sí te duelen, se cansan rápido o se sienten inestables. No es un programa para la espalda, y ningún ensayo ha mostrado que los ejercicios de pie por sí solos alivien el dolor de espalda.',
-        'En el pie plano flexible, en el que el arco vuelve cuando levantas el pie, un ensayo con 52\u00A0personas encontró que el pie corto, los ejercicios de tobillo, el fortalecimiento de cadera y los estiramientos, hechos juntos, cambiaron la forma del arco más que en un grupo de control. Ese ensayo midió la forma del arco, no el dolor. Una revisión de 2024 sobre el entrenamiento de pie corto por sí solo no encontró un cambio claro en la postura del pie en general. El programa completo, con dosis y progresiones, está en [ejercicios para pie plano](/es/ejercicios-pie-plano/). Abajo están tres de los movimientos principales.',
+        'En el pie plano flexible, en el que el arco vuelve cuando levantas el pie, un ensayo con 52\u00A0personas encontró que el pie corto, los ejercicios de tobillo, el fortalecimiento de cadera y los estiramientos, hechos juntos, cambiaron la forma del arco más que en un grupo de control. Ese ensayo midió la forma del arco, no el dolor. Una revisión de 2024 sobre el entrenamiento de pie corto por sí solo no encontró un cambio claro en la postura del pie en general.',
+        'El programa completo, con dosis y progresiones, está en [ejercicios para pie plano](/es/ejercicios-pie-plano/). Abajo están tres de los movimientos principales.',
         'Walkito los incluye en un plan semanal para los pies y empieza el ejercicio de pie corto con 3\u00A0series de 8, sosteniendo 5\u00A0segundos. No hace nada directamente por la espalda, y no dice hacerlo.',
         'Si algún ejercicio lleva el dolor de tu pie a **6/10 o más**, o te provoca dolor de espalda o dolor que baja por la pierna, para por el día.',
       ],
@@ -157,9 +186,19 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       h2: '¿Qué necesita revisar un profesional de la salud?',
       keyFact: 'Los problemas graves de la columna son raros, y un marco internacional para profesionales de la salud enumera las señales de alarma que hay que descartar primero (Finucane y colegas, 2020).',
       paragraphs: [
-        'Un profesional de la salud ve la espalda y los pies como dos preguntas separadas, y empieza por la espalda. Lo primero es descartar las causas graves y raras del dolor de espalda: compresión de un nervio, fractura, infección o cáncer. Un marco internacional para profesionales de la salud enumera las señales de alarma que buscan, y están en la lista al final de esta página.',
+        'Un profesional de la salud ve la espalda y los pies como dos preguntas separadas, y **empieza por la espalda**. Lo primero es descartar las causas graves y raras del dolor de espalda:',
+        {
+          list: [
+            'Compresión de un nervio.',
+            'Fractura.',
+            'Infección.',
+            'Cáncer.',
+          ],
+        },
+        'Un marco internacional para profesionales de la salud enumera las señales de alarma que buscan, y están en la lista al final de esta página.',
         'Para la espalda, espera preguntas sobre cómo empezó el dolor, qué lo calma y si se extiende hacia una pierna. La exploración suele revisar cómo se mueve la espalda, además de la fuerza, los reflejos y la sensibilidad en las piernas y los pies. Por lo general no hacen falta estudios de imagen, a menos que algo apunte a una causa grave.',
-        'Para los pies, el profesional revisa si el pie plano es flexible (el arco vuelve cuando subes en puntas o levantas el pie) o rígido (sigue plano). Un pie plano rígido, o un arco que bajó en la edad adulta con dolor en la parte interna del tobillo, necesita su propia evaluación. El segundo caso muchas veces es un tendón que se debilita, como se explica en [ejercicios para el tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/). El profesional también puede verte caminar para ver cuánto se van tus pies hacia adentro.',
+        'Para los pies, el profesional revisa si el pie plano es flexible (el arco vuelve cuando subes en puntas o levantas el pie) o rígido (sigue plano).',
+        'Un pie plano rígido, o un arco que bajó en la edad adulta con dolor en la parte interna del tobillo, necesita su propia evaluación. El segundo caso muchas veces es un tendón que se debilita, como se explica en [ejercicios para el tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/). El profesional también puede verte caminar para ver cuánto se van tus pies hacia adentro.',
         'Los problemas de espalda también pueden causar síntomas en el pie. Un nervio pinzado en la espalda baja puede traer entumecimiento, hormigueo o debilidad en el pie, y un pie débil puede parecer un problema del pie cuando la causa está más arriba.',
       ],
       cites: [CITE.finucaneRedFlags, CITE.hartvigsen],

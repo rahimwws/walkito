@@ -31,7 +31,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       paragraphs: [
         'The plantar fascia, the thick band of tissue that runs from your heel bone to your toes, stiffens while you sleep. Your foot usually points downward at rest, which lets the fascia shorten. When you stand up and flatten the foot under your full weight, that shortened tissue stretches suddenly. The result is a sharp pull at the inside of the heel.',
         'The 2023 heel pain guideline describes this as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." The same pattern happens after you sit for a while and then stand, for the same reason: the tissue shortens at rest, then loads abruptly.',
-        'This is not new damage happening each morning. The tissue is stiff, not tearing. Once you have taken a few steps and the fascia warms up, the pain usually eases. That warm-up effect is one of the things that separates plantar fasciitis from some of the other causes below.',
+        '**This is not new damage happening each morning.** The tissue is stiff, not tearing. Once you have taken a few steps and the fascia warms up, the pain usually eases. That warm-up effect is one of the things that separates plantar fasciitis from some of the other causes below.',
       ],
       cites: [CITE.guideline],
     },
@@ -39,13 +39,16 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       h2: 'What else causes heel pain in the morning?',
       keyFact: 'In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain predicted a worse long-term outcome, which the authors said might reflect unrecognized systemic inflammatory disease (Hansen and colleagues, 2018).',
       paragraphs: [
-        'Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart.',
-        '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then worsens again with prolonged activity. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-        '**Heel fat pad thinning.** The fat pad under your heel bone acts as a cushion. When it thins or shifts, the bone takes more impact directly.',
-        'A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, feels worse on hard surfaces and with barefoot walking, and can be difficult to tell apart from plantar fasciitis without imaging (Chang and colleagues, 2022). The key difference: plantar fasciitis pain is usually sharpest at the inside front of the heel, while fat pad pain sits right under the center.',
-        '**Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can hurt at rest or at night. If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](/heel-pain-runners/) covers how sudden load changes affect the heel.',
-        '**Inflammatory arthritis (a red flag).** When both heels hurt in the morning, the stiffness lasts more than 30 minutes, and other joints are also stiff or swollen, the pattern moves away from plantar fasciitis and toward something a clinician should check. Conditions like psoriatic arthritis or ankylosing spondylitis can cause pain where tendons attach to bone, including the heel.',
-        'In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain was a significant predictor of worse long-term prognosis, and the authors noted that some unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018). If both heels hurt and other joints are involved, see a clinician first.',
+        'Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart:',
+        {
+          list: [
+            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then worsens again with prolonged activity. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+            '**Heel fat pad thinning.** The fat pad under your heel bone acts as a cushion. When it thins or shifts, the bone takes more impact directly. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, feels worse on hard surfaces and with barefoot walking, and can be difficult to tell apart from plantar fasciitis without imaging (Chang and colleagues, 2022). The key difference: plantar fasciitis pain is usually sharpest at the inside front of the heel, while fat pad pain sits right under the center.',
+            '**Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can hurt at rest or at night. If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](/heel-pain-runners/) covers how sudden load changes affect the heel.',
+            '**Inflammatory arthritis (a red flag).** When both heels hurt in the morning, the stiffness lasts more than 30 minutes, and other joints are also stiff or swollen, the pattern moves away from plantar fasciitis and toward something a clinician should check. Conditions like psoriatic arthritis or ankylosing spondylitis can cause pain where tendons attach to bone, including the heel.',
+          ],
+        },
+        'In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain was a significant predictor of worse long-term prognosis, and the authors noted that some unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018). **If both heels hurt and other joints are involved, see a clinician first.**',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.patelStressFracture, CITE.hansen],
     },
@@ -114,7 +117,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       paragraphs: [
         'Walking barefoot on a hard floor puts the plantar fascia under its maximum stretch with no cushion underneath. For someone whose fascia is already irritated, this is the worst combination, and it usually happens right after the morning stretch when the tissue is still warming up.',
         'Supportive shoes or firm-soled slippers at home keep the arch slightly lifted and cushion the heel. The 2023 guideline recommends footwear education as part of the overall approach, and reduced ankle flexibility, meaning how far the foot bends up toward the shin, is one of the strongest risk factors for plantar fasciitis. A shoe with a small heel-to-toe drop helps compensate for a tight calf.',
-        'This does not need to be a special shoe. Any sneaker or house shoe with a firm sole and some arch support is better than bare feet on tile or hardwood. If your pain is worse at home than outside, this is often why. Standing all day on hard surfaces causes a related problem: [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the exercises and footwear for that.',
+        'This does not need to be a special shoe. **Any sneaker or house shoe with a firm sole and some arch support is better than bare feet on tile or hardwood.** If your pain is worse at home than outside, this is often why. Standing all day on hard surfaces causes a related problem: [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the exercises and footwear for that.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -123,8 +126,15 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       paragraphs: [
         'Morning pain is the clearest day-to-day signal of how a foot is doing. A run might feel fine but leave the fascia overloaded, and you will not know until the next morning. A long shift on your feet may feel tolerable, but the next morning tells you whether it was too much. The pattern is simple: if your first steps the next morning are worse than usual, yesterday asked more of the foot than it could handle.',
         'That is why a daily morning pain score, 0 to 10, is more useful than checking pain during the day. Daytime pain rises and falls with activity, posture, and shoes. Morning pain measures the same thing, in the same way, at roughly the same time every day. When the number drops over weeks, the foot is gaining ground. When it spikes, something in the past day or two pushed too far.',
-        'Walkito asks for a morning pain score before every session. If the score is 7 or higher, the day becomes a gentle session: only seated, low-load exercises that do not stress the fascia, capped at 3 minutes. If the score is 3 or more points above the 7-day average, the app steps each exercise down one level. If yesterday had more hours on your feet than usual, a strength session converts to a lighter recovery one.',
-        'The goal is morning pain at or under 1 out of 10 for 14 days in a row. That trend, not any single reading, is what tells you the foot is ready for the next stage.',
+        'Walkito asks for a morning pain score before every session:',
+        {
+          list: [
+            'If the score is 7 or higher, the day becomes a gentle session: only seated, low-load exercises that do not stress the fascia, capped at 3 minutes.',
+            'If the score is 3 or more points above the 7-day average, the app steps each exercise down one level.',
+            'If yesterday had more hours on your feet than usual, a strength session converts to a lighter recovery one.',
+          ],
+        },
+        '**The goal is morning pain at or under 1 out of 10 for 14 days in a row.** That trend, not any single reading, is what tells you the foot is ready for the next stage.',
       ],
       cites: [CITE.guideline],
     },

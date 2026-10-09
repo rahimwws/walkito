@@ -14,7 +14,8 @@ export const PTTD_EN: Guide = {
   lede:
     'Posterior tibial tendon dysfunction, often called PTTD, happens when the tendon that supports the arch on the inside of the ankle weakens or becomes inflamed. It is the most common cause of adult-acquired flatfoot. Exercise can help in the early stages, but not every stage responds the same way, and the evidence is still limited. This page covers the stages, the exercises with the best support, and when a boot or surgery enters the picture.',
   intro: [
-    'The posterior tibial tendon runs behind the inner ankle bone and attaches under the foot. It holds the arch up during walking. When it degenerates, the arch flattens, the heel tilts outward, and pain settles along the inner ankle or inner midfoot. A 2018 systematic review found only three randomized or controlled trials totalling 93 people, so the exercise evidence here is much thinner than for conditions like [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis.',
+    'The posterior tibial tendon runs behind the inner ankle bone and attaches under the foot. It holds the arch up during walking. When it degenerates, the arch flattens, the heel tilts outward, and pain settles along the inner ankle or inner midfoot.',
+    'A 2018 systematic review found only three randomized or controlled trials totalling 93 people, so the exercise evidence here is much thinner than for conditions like [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis.',
   ],
   toc: true,
   takeaways: [
@@ -27,7 +28,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'What is posterior tibial tendon dysfunction?',
       paragraphs: [
-        'The tibialis posterior is a muscle in the deep calf. Its tendon passes behind the inner ankle bone, the medial malleolus, and fans out under the foot to attach to several bones in the midfoot. During walking, it pulls the arch up and controls how much the foot rolls inward. When the tendon degenerates or tears, that support is lost.',
+        'The tibialis posterior is a muscle in the deep calf. Its tendon passes behind the inner ankle bone, the medial malleolus, and fans out under the foot to attach to several bones in the midfoot. During walking, it pulls the arch up and controls how much the foot rolls inward. **When the tendon degenerates or tears, that support is lost.**',
         'PTTD is the most common cause of adult-acquired flatfoot. It is more common in women, in people over 40, and in those with a higher BMI. Risk factors include hypertension, diabetes, and previous steroid injections near the tendon. The pain typically sits behind or below the inner ankle bone and gets worse with activity, especially walking uphill or on uneven ground.',
         'The clinical name you may see is tibialis posterior tendinopathy. Older sources sometimes call it posterior tibial tendonitis when the problem is mainly inflammation, or posterior tibial tendon insufficiency when the tendon has lengthened and the arch has started to drop. All three terms describe the same spectrum.',
       ],
@@ -37,11 +38,15 @@ export const PTTD_EN: Guide = {
       h2: 'What are the stages of PTTD?',
       paragraphs: [
         'Clinicians grade PTTD in four stages. The stage determines whether exercise and orthoses are likely to help, or whether a boot, brace, or surgery should be discussed.',
-        '**Stage I** means the tendon is inflamed but still intact. The arch looks normal. There is pain and sometimes mild swelling behind the inner ankle. Strength on a single-leg heel raise is usually reduced compared with the other side, but the shape of the foot has not changed. Exercise and supportive orthoses are the main approach.',
-        '**Stage II** means the tendon has lengthened or partially torn. The arch has dropped and the heel tilts outward, but the deformity is still flexible, meaning a clinician can push the foot back into position. This is the stage most of the exercise research covers. Orthoses, stretching, and progressive strengthening are the standard conservative program.',
-        '**Stage III** means the deformity has become rigid. The foot cannot be pushed back into a corrected position, and there are often arthritic changes in the joints below the ankle. Exercise alone is unlikely to change the shape of the foot at this stage. Surgical assessment is usually discussed.',
-        '**Stage IV** adds ankle joint involvement. The ankle tilts into a valgus position, meaning it leans outward. This is the most advanced stage and typically requires surgical intervention.',
-        'Most people who search for PTTD exercises are in stage I or II. If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a quick screening tool: difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.',
+        {
+          list: [
+            '**Stage I** means the tendon is inflamed but still intact. The arch looks normal. There is pain and sometimes mild swelling behind the inner ankle. Strength on a single-leg heel raise is usually reduced compared with the other side, but the shape of the foot has not changed. Exercise and supportive orthoses are the main approach.',
+            '**Stage II** means the tendon has lengthened or partially torn. The arch has dropped and the heel tilts outward, but the deformity is still flexible, meaning a clinician can push the foot back into position. This is the stage most of the exercise research covers. Orthoses, stretching, and progressive strengthening are the standard conservative program.',
+            '**Stage III** means the deformity has become rigid. The foot cannot be pushed back into a corrected position, and there are often arthritic changes in the joints below the ankle. Exercise alone is unlikely to change the shape of the foot at this stage. Surgical assessment is usually discussed.',
+            '**Stage IV** adds ankle joint involvement. The ankle tilts into a valgus position, meaning it leans outward. This is the most advanced stage and typically requires surgical intervention.',
+          ],
+        },
+        '**Most people who search for PTTD exercises are in stage I or II.** If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a quick screening tool: difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -50,9 +55,17 @@ export const PTTD_EN: Guide = {
       keyFact: 'Pooling three small trials with 93 people in total, a 2018 review found eccentric strengthening added to orthoses and stretching produced moderately sized improvements over orthoses and stretching alone (Ross and colleagues, 2018).',
       paragraphs: [
         'A 2018 systematic review identified three randomized controlled trials with 93 participants total. Two tested strengthening on top of orthoses and stretching; the third tested strengthening and balance training against no intervention. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.',
-        'The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months: orthoses and stretching only, orthoses plus stretching plus concentric exercise, or orthoses plus stretching plus eccentric exercise. Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.',
+        'The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months:',
+        {
+          list: [
+            'Orthoses and stretching only.',
+            'Orthoses plus stretching plus concentric exercise.',
+            'Orthoses plus stretching plus eccentric exercise.',
+          ],
+        },
+        'Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.',
         'A second RCT, published in 2015, randomized 39 people with stage II PTTD to orthoses plus stretching or orthoses plus stretching plus strengthening (including band exercises and heel raises). Both groups improved, but the strengthening group did not separate significantly from the stretching group on the primary outcome. The authors suggested the strengthening dose may not have been high enough.',
-        'The review authors concluded that the evidence supports adding progressive resistance exercise to orthoses for early PTTD, but called for larger trials. This is an area where the research is still catching up to clinical practice.',
+        'The review authors concluded that **the evidence supports adding progressive resistance exercise to orthoses for early PTTD**, but called for larger trials. This is an area where the research is still catching up to clinical practice.',
       ],
       sourceNote:
         'Ross 2018: 3 studies, n = 93. Kulig 2009: n = 36, 3 arms, 3 months, Foot Function Index, pain VAS. Houck 2015: n = 39, 2 arms, 3 months, FAAM.',
@@ -62,7 +75,7 @@ export const PTTD_EN: Guide = {
       h2: 'Which exercises help posterior tibial tendon dysfunction?',
       paragraphs: [
         'The exercises below target the tibialis posterior muscle and the muscles that support the arch. Band inversion trains the tibialis posterior directly. Heel raises with a focus on arch lift load the tendon during a functional movement. Short foot strengthens the intrinsic muscles that help the arch. Calf stretching addresses the common finding of reduced ankle dorsiflexion in people with PTTD.',
-        'The exercise programs in the trials also included calf stretching and orthoses. Orthoses were not optional in any study. If you have PTTD, an arch-supporting orthosis is part of the program, not a substitute for exercise or the other way around.',
+        'The exercise programs in the trials also included calf stretching and orthoses. Orthoses were not optional in any study. If you have PTTD, **an arch-supporting orthosis is part of the program, not a substitute for exercise or the other way around.**',
       ],
       exercises: [
         {
@@ -119,7 +132,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'Do orthoses help, and should you wear them during exercise?',
       paragraphs: [
-        'Every PTTD exercise trial used orthoses as part of the baseline intervention. Orthoses were not tested against exercise; they were tested with exercise on top. The 2009 RCT found that orthoses and stretching alone improved function, and that adding exercise improved it further.',
+        'Every PTTD exercise trial used orthoses as part of the baseline intervention. **Orthoses were not tested against exercise; they were tested with exercise on top.** The 2009 RCT found that orthoses and stretching alone improved function, and that adding exercise improved it further.',
         'A rigid or semi-rigid arch-supporting orthosis keeps the arch from collapsing during standing and walking. For the exercises on this page, you can do band inversion and short foot without shoes, but heel raises should be done in the same supportive shoes you walk in, because the arch needs support under load.',
         'Over-the-counter arch supports may be enough for stage I. Custom orthoses are more common for stage II, where the deformity is greater. A clinician or podiatrist can help you decide which is appropriate.',
       ],
@@ -128,7 +141,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'When is a boot or surgery discussed?',
       paragraphs: [
-        'A walking boot or ankle brace is sometimes used in stage I or II PTTD when pain is too high for exercise. The boot immobilizes the tendon to let acute inflammation settle. It is a short-term measure, not a long-term program. Once pain drops enough, exercise and orthoses take over.',
+        'A walking boot or ankle brace is sometimes used in stage I or II PTTD when pain is too high for exercise. The boot immobilizes the tendon to let acute inflammation settle. **It is a short-term measure, not a long-term program.** Once pain drops enough, exercise and orthoses take over.',
         'Surgery is usually discussed when conservative management has not improved symptoms after several months, or when the deformity has progressed to stage III or IV. Surgical options range from tendon repair and transfer in earlier stages to joint fusion in later stages. The decision depends on the stage, the degree of deformity, and the person.',
         'This page does not cover surgical options in detail. If you are in stage III or IV, or if stage II symptoms have not responded to exercise and orthoses over several months, a foot and ankle specialist can discuss next steps.',
       ],
@@ -137,7 +150,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'How does PTTD relate to flat feet?',
       paragraphs: [
-        'PTTD is the most common cause of adult-acquired flatfoot, meaning a flat foot that develops in adulthood rather than being present since childhood. If you had normal arches and they have started to drop on one side, with pain behind the inner ankle, PTTD is the most likely explanation.',
+        'PTTD is the most common cause of adult-acquired flatfoot, meaning a flat foot that develops in adulthood rather than being present since childhood. **If you had normal arches and they have started to drop on one side, with pain behind the inner ankle, PTTD is the most likely explanation.**',
         'Congenital flexible flat feet, the kind present since childhood, are a different situation. They may never cause symptoms. The exercises overlap: short foot, band inversion, and heel raises appear in both [flat feet exercises](/flat-feet-exercises/) and PTTD programs. But the clinical context is different, and PTTD usually needs orthotics and closer monitoring because the tendon is degenerating, not simply lax.',
         'If you are not sure whether your flat foot is long-standing or new, a clinician can compare the two feet, check the tendon, and look at the heel alignment when you stand.',
       ],
@@ -148,7 +161,7 @@ export const PTTD_EN: Guide = {
       keyFact: 'A small pilot study of ten patients using twice-daily eccentric loading for about two and a half months found symptom improvement along with some tendon changes on ultrasound (Kulig and colleagues, 2009).',
       paragraphs: [
         'The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. A small pilot study of ten patients by the same group also ran for about two and a half months of twice-daily eccentric loading and found symptom improvement along with some tendon changes on ultrasound.',
-        'In clinical practice, improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks. Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.',
+        'In clinical practice, **improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks.** Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },

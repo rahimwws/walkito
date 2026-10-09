@@ -32,7 +32,14 @@ export const TOP_OF_FOOT_DE: Guide = {
       h2: 'Was verursacht Schmerzen am Fußrücken?',
       keyFact: 'Ein Ermüdungsbruch eines Mittelfußknochens ist auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen nach Beginn der Beschwerden vielleicht nicht zu sehen, ein MRT kann ihn früher bestätigen (Patel und Kollegen, 2011).',
       paragraphs: [
-        '**Strecksehnenentzündung** ist die häufigste Ursache. Die Strecksehnen laufen oben über den Fuß vom Schienbein zu den Zehen. Sie heben beim Gehen die Zehen und den Fuß an. Wenn sie gereizt sind, spürst du einen Schmerz entlang des Fußrückens, der bei Belastung schlimmer wird und oft wehtut, wenn du die Zehen gegen Widerstand nach oben ziehst. Die üblichen Auslöser sind zu eng geschnürte Schuhe, die direkt auf die Sehnen drücken, eine plötzliche Steigerung der Geh- oder Laufstrecke oder Schuhe mit einer steifen Zunge.',
+        '**Strecksehnenentzündung** ist die häufigste Ursache. Die Strecksehnen laufen oben über den Fuß vom Schienbein zu den Zehen. Sie heben beim Gehen die Zehen und den Fuß an. Wenn sie gereizt sind, spürst du einen Schmerz entlang des Fußrückens, der bei Belastung schlimmer wird und oft wehtut, wenn du die Zehen gegen Widerstand nach oben ziehst. Die üblichen Auslöser sind:',
+        {
+          list: [
+            'Zu eng geschnürte Schuhe, die direkt auf die Sehnen drücken.',
+            'Eine plötzliche Steigerung der Geh- oder Laufstrecke.',
+            'Schuhe mit einer steifen Zunge.',
+          ],
+        },
         '**Ermüdungsbruch eines Mittelfußknochens** ist ein kleiner Riss in einem der langen Knochen des Fußes, meist im zweiten oder dritten Mittelfußknochen. Der Schmerz ist enger begrenzt als bei einer Sehnenentzündung, sitzt über einer bestimmten Stelle und wird im Lauf des Tages eher schlimmer. Eine Schwellung oben auf dem Fuß ist häufig. Ermüdungsbrüche können zwei bis drei Wochen brauchen, bis sie auf einem normalen Röntgenbild zu sehen sind, deshalb braucht eine frühe Bildgebung eventuell ein MRT. Hier ist Ruhe gefragt, keine Übungen.',
         '**Knochensporn am Fußrücken** (auch Exostose genannt) ist ein knöcherner Höcker, der sich oben auf den Gelenken des Mittelfußes bildet, meist dort, wo die Mittelfußknochen auf die Keilbeine treffen. Er entsteht langsam durch jahrelangen Druck auf diese Gelenke. Der Sporn selbst muss nicht wehtun, kann aber gegen die Schuhzunge drücken oder einen Nerv reizen, der darüber verläuft.',
         '**Gicht** kann plötzliche, starke Schmerzen oben auf dem Fuß auslösen, am häufigsten am Großzehengrundgelenk. Das Gelenk wird rot, geschwollen, heiß und extrem druckempfindlich. Gicht entsteht durch Ablagerungen von Harnsäurekristallen und braucht ärztliche Behandlung. Übungen helfen bei einem akuten Gichtanfall nicht.',
@@ -44,15 +51,23 @@ export const TOP_OF_FOOT_DE: Guide = {
     {
       h2: 'Wie unterscheidest du diese Ursachen?',
       paragraphs: [
-        'Ort und Muster sind die ersten Hinweise. Eine Strecksehnenentzündung macht einen breiten Schmerz entlang der Sehnen, der schlimmer wird, wenn du die Zehen nach oben ziehst. Ein Ermüdungsbruch tut an einer bestimmten Stelle weh und wird im Lauf des Tages schlimmer. Gicht kommt plötzlich, meist am Großzehengrundgelenk, mit Rötung und Wärme. Nervenschmerz ist eher brennend oder kribbelnd, kein tiefer Schmerz.',
+        'Ort und Muster sind die ersten Hinweise:',
+        {
+          list: [
+            '**Eine Strecksehnenentzündung** macht einen breiten Schmerz entlang der Sehnen, der schlimmer wird, wenn du die Zehen nach oben ziehst.',
+            '**Ein Ermüdungsbruch** tut an einer bestimmten Stelle weh und wird im Lauf des Tages schlimmer.',
+            '**Gicht** kommt plötzlich, meist am Großzehengrundgelenk, mit Rötung und Wärme.',
+            '**Nervenschmerz** ist eher brennend oder kribbelnd, kein tiefer Schmerz.',
+          ],
+        },
         'Eine Fachperson kann den Unterschied oft mit einer körperlichen Untersuchung erkennen. Das Strecken der Zehen gegen Widerstand (die Zehen gegen Druck nach oben ziehen) löst den Schmerz einer Sehnenentzündung aus. Ein punktueller Druckschmerz über einem Knochen mit einer begrenzten Schwellung deutet auf einen Ermüdungsbruch hin. Bei Verdacht auf einen Ermüdungsbruch ist Bildgebung wichtig, weil weitere Belastung eines gebrochenen Knochens ihn verschlimmern kann.',
-        'Wenn der Schmerz nur in Schuhen da ist und barfuß verschwindet, ist Druck vom Schuh der wahrscheinlichste Grund. Wenn er in Ruhe bleibt oder dich nachts weckt, lohnt es sich, nach mehr als einer einfachen Sehnenentzündung zu suchen.',
+        'Wenn der Schmerz nur in Schuhen da ist und barfuß verschwindet, **ist Druck vom Schuh der wahrscheinlichste Grund.** Wenn er in Ruhe bleibt oder dich nachts weckt, lohnt es sich, nach mehr als einer einfachen Sehnenentzündung zu suchen.',
       ],
     },
     {
       h2: 'Was hilft bei einer Strecksehnenentzündung?',
       paragraphs: [
-        'Der schnellste erste Schritt ist meist eine andere Schnürung. Lass die Öse direkt über der schmerzenden Stelle aus. Viele Sportschuhe haben genug Ösen, sodass du den Schnürsenkel um die empfindliche Stelle herumführen kannst, ohne anderswo Halt zu verlieren. Das nimmt den direkten Druck weg, mit dem das Problem angefangen hat.',
+        '**Der schnellste erste Schritt ist meist eine andere Schnürung.** Lass die Öse direkt über der schmerzenden Stelle aus. Viele Sportschuhe haben genug Ösen, sodass du den Schnürsenkel um die empfindliche Stelle herumführen kannst, ohne anderswo Halt zu verlieren. Das nimmt den direkten Druck weg, mit dem das Problem angefangen hat.',
         'Schuhe mit einer gepolsterten oder weichen Zunge drücken weniger auf die Sehnen. Wenn du Stiefel, Stollenschuhe oder Anzugschuhe mit einem steifen Obermaterial trägst, ist der Druck von oben oft schon die ganze Erklärung.',
         'Die Aktivität, die den Schmerz ausgelöst hat, vorübergehend zu reduzieren, hilft. Wenn der Schmerz angefangen hat, als du deine Geh- oder Laufstrecke gesteigert hast, geh für ein bis zwei Wochen auf das vorherige Niveau zurück und steigere dann langsam wieder.',
         'Eis auf den schmerzenden Sehnen für 10 bis 15\u00A0Minuten nach Belastung kann in den ersten Tagen helfen, die Reizung zu beruhigen. Entzündungshemmende Schmerzmittel sind eine kurzfristige Möglichkeit, wenn der Schmerz den Alltag stört, beschleunigen aber die eigentliche Erholung nicht.',
@@ -61,8 +76,9 @@ export const TOP_OF_FOOT_DE: Guide = {
     {
       h2: 'Helfen Übungen bei Schmerzen am Fußrücken?',
       paragraphs: [
-        'Keine randomisierte Studie hat Übungen speziell bei Schmerzen am Fußrücken oder bei einer Strecksehnenentzündung getestet. Die ehrliche Antwort lautet: Wir wissen nicht, ob Übungen die Erholung von einer Strecksehnenentzündung im Vergleich zu einer anderen Schnürung und Schonung allein beschleunigen.',
-        'Was Übungen angehen können, sind beitragende Faktoren. Der Tibialis anterior, der Muskel vorn am Schienbein, der den Fuß anhebt, ist ebenfalls ein Strecker. Wenn er im Vergleich zur Wade schwach ist, übernehmen die kleineren Strecksehnen oben auf dem Fuß beim Gehen mehr Last. Den Tibialis anterior mit Zehenheben zu kräftigen (den Vorfuß im Stehen an einer Wand anheben) ist eine Möglichkeit, dieses Ungleichgewicht zu verringern. Mehr zum Tibialis anterior findest du unter [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
+        'Keine randomisierte Studie hat Übungen speziell bei Schmerzen am Fußrücken oder bei einer Strecksehnenentzündung getestet. Die ehrliche Antwort lautet: **Wir wissen nicht, ob Übungen die Erholung von einer Strecksehnenentzündung im Vergleich zu einer anderen Schnürung und Schonung allein beschleunigen.**',
+        'Was Übungen angehen können, sind beitragende Faktoren. Der Tibialis anterior, der Muskel vorn am Schienbein, der den Fuß anhebt, ist ebenfalls ein Strecker. Wenn er im Vergleich zur Wade schwach ist, übernehmen die kleineren Strecksehnen oben auf dem Fuß beim Gehen mehr Last.',
+        'Den Tibialis anterior mit Zehenheben zu kräftigen (den Vorfuß im Stehen an einer Wand anheben) ist eine Möglichkeit, dieses Ungleichgewicht zu verringern. Mehr zum Tibialis anterior findest du unter [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
         'Wadendehnung ist wichtig, wenn die Dorsalflexion des Sprunggelenks eingeschränkt ist. Wenn sich das Sprunggelenk nicht weit genug beugen kann, gleicht der Fuß auf eine Weise aus, die die Strukturen am Fußrücken stärker belasten kann. Eine verkürzte Wade ist außerdem ein gemeinsamer Risikofaktor für [Plantarfasziitis](/de/plantarfasziitis-uebungen/) und Überlastung des Vorfußes.',
         'Bei Knochenspornen am Fußrücken und Arthrose im Mittelfuß ändern Übungen nichts an den Knochen. Übungen für die Beweglichkeit des Sprunggelenks können helfen, den Bewegungsumfang zu erhalten, und Kräftigung kann Beschwerden verringern, aber der Sporn oder der Gelenkverschleiß bleiben. Bei Ermüdungsbrüchen sind Übungen der falsche Ansatz, bis der Knochen verheilt ist.',
       ],
@@ -117,9 +133,17 @@ export const TOP_OF_FOOT_DE: Guide = {
       h2: 'Wann ist ein Schmerz am Fußrücken ein Ermüdungsbruch?',
       paragraphs: [
         'Ein Ermüdungsbruch eines Mittelfußknochens ist die Ursache, die du am dringendsten ausschließen musst, weil weitere Belastung eines gebrochenen Knochens aus einem kleinen Riss einen vollständigen Bruch machen kann.',
-        'Ermüdungsbrüche entstehen meist langsam durch wiederholte Stoßbelastung. Sie sind häufiger bei Läufern, Rekruten beim Militär und bei Menschen, die ihre Aktivität plötzlich gesteigert haben. Der Schmerz sitzt an einer Stelle, wird bei Belastung schlimmer und kann nachts wehtun. Eine Schwellung oben auf dem Fuß über dem schmerzenden Knochen ist häufig.',
+        'Ermüdungsbrüche entstehen meist langsam durch wiederholte Stoßbelastung. Sie sind häufiger bei:',
+        {
+          list: [
+            'Läufern.',
+            'Rekruten beim Militär.',
+            'Menschen, die ihre Aktivität plötzlich gesteigert haben.',
+          ],
+        },
+        'Der Schmerz sitzt an einer Stelle, wird bei Belastung schlimmer und kann nachts wehtun. Eine Schwellung oben auf dem Fuß über dem schmerzenden Knochen ist häufig.',
         'Ein normales Röntgenbild zeigt einen Ermüdungsbruch in den ersten zwei bis drei Wochen vielleicht nicht. Wenn eine Fachperson einen vermutet, kann ein MRT oder eine Knochenszintigrafie ihn früher bestätigen. Der Ansatz ist Ruhe und geschützte Belastung, keine Übungen. Wer zu früh wieder aktiv wird, riskiert einen vollständigen Bruch.',
-        'Wenn der Schmerz nach einer Steigerung des Trainingsumfangs angefangen hat, an einer Stelle sitzt und im Lauf des Tages schlimmer wird, geh zu einer Fachperson, bevor du irgendeine Übung auf dieser Seite machst.',
+        'Wenn der Schmerz nach einer Steigerung des Trainingsumfangs angefangen hat, an einer Stelle sitzt und im Lauf des Tages schlimmer wird, **geh zu einer Fachperson, bevor du irgendeine Übung auf dieser Seite machst.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -128,7 +152,7 @@ export const TOP_OF_FOOT_DE: Guide = {
       paragraphs: [
         'Gicht ist eine entzündliche Erkrankung, bei der sich Harnsäurekristalle in einem Gelenk ablagern. Klassisch betrifft sie das Großzehengrundgelenk (das erste Metatarsophalangealgelenk), sie kann aber jedes Gelenk im Fuß treffen, auch im Mittelfuß.',
         'Ein Gichtanfall kommt schnell, oft über Nacht. Das Gelenk wird stark schmerzhaft, rot, heiß und geschwollen. Das sieht anders aus und fühlt sich anders an als eine Sehnenentzündung oder ein Ermüdungsbruch. Wenn du plötzlich starke Schmerzen in einem einzelnen Gelenk mit Rötung und Wärme hast, ist das ein Grund, zügig zu einer Fachperson zu gehen. Bluttests und manchmal eine Untersuchung der Gelenkflüssigkeit bestätigen die Diagnose.',
-        'Gicht braucht ärztliche Behandlung. Übungen, andere Schuhe und Dehnen helfen bei einem akuten Anfall nicht. Zwischen den Anfällen ist es sinnvoll, die Beweglichkeit von Fuß und Sprunggelenk zu erhalten, aber das eigentliche Harnsäureproblem wird mit Medikamenten und einer Ernährungsumstellung behandelt.',
+        '**Gicht braucht ärztliche Behandlung.** Übungen, andere Schuhe und Dehnen helfen bei einem akuten Anfall nicht. Zwischen den Anfällen ist es sinnvoll, die Beweglichkeit von Fuß und Sprunggelenk zu erhalten, aber das eigentliche Harnsäureproblem wird mit Medikamenten und einer Ernährungsumstellung behandelt.',
       ],
     },
   ],

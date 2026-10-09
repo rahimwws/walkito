@@ -38,8 +38,9 @@ export const EX_HIP_ABDUCTION: Guide = {
     {
       h2: 'How do you do standing hip abduction with a band?',
       paragraphs: [
-        'Stand with a resistance band looped around both ankles or just above the knees. Hold a wall or chair for balance. Shift your weight to the stance leg. Lift the other leg straight out to the side, keeping the toes pointing forward and the body upright. Do not lean to the opposite side. Lower slowly and repeat.',
-        'Push through the heel of the working leg, not the toes. The movement is at the hip, not the waist. The lift does not need to be high. About 30 to 45 degrees from the floor is enough if the form stays clean. A higher lift with the body tilting sideways does less for the gluteus medius.',
+        'Stand with a resistance band looped around both ankles or just above the knees. Hold a wall or chair for balance. Shift your weight to the stance leg.',
+        'Lift the other leg straight out to the side, keeping the toes pointing forward and the body upright. Do not lean to the opposite side. Lower slowly and repeat.',
+        'Push through the heel of the working leg, not the toes. **The movement is at the hip, not the waist.** The lift does not need to be high. About 30 to 45 degrees from the floor is enough if the form stays clean. A higher lift with the body tilting sideways does less for the gluteus medius.',
       ],
       exercises: [
         {
@@ -61,8 +62,15 @@ export const EX_HIP_ABDUCTION: Guide = {
       h2: 'How does the hip affect the foot and arch?',
       keyFact: 'A 2013 study of about 1,900 adults in the Framingham Foot Study found no link between flat feet and low back pain, but a small link between inward foot roll and back pain in women (Menz and colleagues, 2013).',
       paragraphs: [
-        'The connection runs through a biomechanical chain: hip, knee, ankle, foot. When the gluteus medius cannot hold the pelvis level during single-leg stance, the thigh rotates inward. The knee follows, collapsing toward the midline. That rotation forces the foot to pronate, rolling the ankle inward and flattening the arch.',
-        'This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. It is being overloaded from above. Strengthening the hip reduces that top-down load.',
+        'The connection runs through a biomechanical chain: hip, knee, ankle, foot. When the gluteus medius cannot hold the pelvis level during single-leg stance:',
+        {
+          list: [
+            'The thigh rotates inward.',
+            'The knee follows, collapsing toward the midline.',
+            'That rotation forces the foot to pronate, rolling the ankle inward and flattening the arch.',
+          ],
+        },
+        'This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. **It is being overloaded from above.** Strengthening the hip reduces that top-down load.',
         'A 2013 cross-sectional study from the Framingham Foot Study looked at about 1,900 community-dwelling adults. Flat foot posture itself was not linked to low back pain, but a foot that rolled inward while walking showed a small link to low back pain in women, hinting that the foot-hip-back chain can run both ways.',
         'The flat-feet trial by Brijwasi and colleagues (2023) included hip strengthening alongside short foot exercises, ankle work and stretching. The combined program improved arch shape over six weeks. The study did not separate how much the hip strengthening contributed on its own, but the inclusion reflects the biomechanical rationale.',
       ],
@@ -79,10 +87,14 @@ export const EX_HIP_ABDUCTION: Guide = {
     {
       h2: 'What are the common mistakes with standing hip abduction?',
       paragraphs: [
-        'Leaning the body to the opposite side is the most common mistake. When you lean away, the body uses momentum and side-bending instead of the gluteus medius. Stay upright. A smaller lift with a straight body is better than a high lift with a lean.',
-        'Rotating the foot outward so the toes point to the ceiling is another mistake. This shifts the work to the hip flexors and the tensor fasciae latae instead of the gluteus medius. Keep the toes pointing forward or slightly downward.',
-        'Swinging the leg is a third issue. The exercise should be slow and controlled, especially on the way down. The lowering phase (eccentric) is where much of the strengthening happens. If the leg drops fast, the muscle is not doing the work.',
-        'Finally, letting the standing hip drop is a sign the band is too strong or the gluteus medius on the stance side is fatiguing. The pelvis should stay level throughout. Use a lighter band or take a rest between sets.',
+        {
+          list: [
+            '**Leaning the body to the opposite side** is the most common mistake. When you lean away, the body uses momentum and side-bending instead of the gluteus medius. Stay upright. A smaller lift with a straight body is better than a high lift with a lean.',
+            '**Rotating the foot outward** so the toes point to the ceiling is another mistake. This shifts the work to the hip flexors and the tensor fasciae latae instead of the gluteus medius. Keep the toes pointing forward or slightly downward.',
+            '**Swinging the leg** is a third issue. The exercise should be slow and controlled, especially on the way down. The lowering phase (eccentric) is where much of the strengthening happens. If the leg drops fast, the muscle is not doing the work.',
+            '**Finally, letting the standing hip drop** is a sign the band is too strong or the gluteus medius on the stance side is fatiguing. The pelvis should stay level throughout. Use a lighter band or take a rest between sets.',
+          ],
+        },
       ],
     },
     {
@@ -90,8 +102,16 @@ export const EX_HIP_ABDUCTION: Guide = {
       paragraphs: [
         'The biomechanical rationale for hip abduction in foot programs is well established: weak hip abductors allow the knee to collapse inward, increasing foot pronation and arch load. Multiple observational studies confirm the link between hip weakness and lower-limb alignment issues.',
         'For clinical outcomes, the strongest evidence comes from combined programs. The 2023 trial by Brijwasi and colleagues included hip strengthening as part of a six-week exercise program for 52 people with flexible flat feet. The program improved arch shape. Hip strengthening has not been isolated in its own flat-feet or plantar-fasciitis trial.',
-        'A 2024 randomized trial of 45 women with flexible flat feet compared short foot exercises, a combined exercise program, and short foot exercises plus isometric hip abduction over six weeks. All three groups improved navicular drop (how far the arch sinks under body weight). The group that added isometric hip abduction improved the most, but its navicular drop was not significantly better than the combined program; its side-to-side sway was (Zarali and colleagues, 2024). That hints that hip work may add something to foot exercises, from one small trial.',
-        'The evidence supports hip abduction as part of a broader foot program. It is not a standalone exercise for arch pain, but it fills a gap that foot-only exercises leave open. Related pages: [flat feet exercises](/flat-feet-exercises/), [ankle inversion with a band](/exercises/ankle-inversion-band/), [short foot exercise](/exercises/short-foot-exercise/).',
+        'A 2024 randomized trial of 45 women with flexible flat feet compared, over six weeks:',
+        {
+          list: [
+            'Short foot exercises.',
+            'A combined exercise program.',
+            'Short foot exercises plus isometric hip abduction.',
+          ],
+        },
+        'All three groups improved navicular drop (how far the arch sinks under body weight). The group that added isometric hip abduction improved the most, but its navicular drop was not significantly better than the combined program; its side-to-side sway was (Zarali and colleagues, 2024). That hints that hip work may add something to foot exercises, from one small trial.',
+        '**The evidence supports hip abduction as part of a broader foot program.** It is not a standalone exercise for arch pain, but it fills a gap that foot-only exercises leave open. Related pages: [flat feet exercises](/flat-feet-exercises/), [ankle inversion with a band](/exercises/ankle-inversion-band/), [short foot exercise](/exercises/short-foot-exercise/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },

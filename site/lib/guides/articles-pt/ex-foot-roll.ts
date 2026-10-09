@@ -32,7 +32,8 @@ export const EX_FOOT_ROLL_PT: Guide = {
     {
       h2: 'Como rolar o pé na bolinha?',
       paragraphs: [
-        'Sente-se em uma cadeira com um pé sobre uma bolinha. Bolinha de tênis, bola de lacrosse ou bolinha de massagem, todas servem. Coloque a bolinha embaixo do arco e role devagar da parte da frente do pé até o calcanhar e de volta. Use pressão firme, não leve. A bolinha deve afundar no tecido o bastante para você sentir uma pressão profunda e constante.',
+        'Sente-se em uma cadeira com um pé sobre uma bolinha. Bolinha de tênis, bola de lacrosse ou bolinha de massagem, todas servem. Coloque a bolinha embaixo do arco e role devagar da parte da frente do pé até o calcanhar e de volta.',
+        'Use pressão firme, não leve. A bolinha deve afundar no tecido o bastante para você sentir uma pressão profunda e constante.',
         'Role por cerca de 2\u00A0minutos em cada pé. Mantenha a pressão constante e evite pontos que doem de forma aguda. Se um ponto faz você fazer careta, alivie ou passe direto por ele. O objetivo é uma massagem firme, não dor.',
       ],
       exercises: [
@@ -57,7 +58,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
       h2: 'Rolar uma bolinha embaixo do pé ajuda na fascite plantar?',
       paragraphs: [
         'Fisioterapeutas e podólogos recomendam muito o rolamento como parte do cuidado da fascite plantar. A ideia é que ele funciona como uma automassagem: aplica pressão ao longo da fáscia, pode aumentar o fluxo de sangue no local e pode diminuir a sensação de tensão. É comum os pacientes contarem alívio de curto prazo depois de rolar o pé.',
-        'Dito isso, nenhum ensaio randomizado testou o rolamento como intervenção isolada para fascite plantar. Ele aparece em protocolos junto com alongamento e fortalecimento, mas nunca é a variável medida. A diretriz de 2023 não dá a ele um grau próprio. Quem carrega a evidência são o alongamento e o treino de força.',
+        'Dito isso, **nenhum ensaio randomizado testou o rolamento como intervenção isolada para fascite plantar.** Ele aparece em protocolos junto com alongamento e fortalecimento, mas nunca é a variável medida. A diretriz de 2023 não dá a ele um grau próprio. Quem carrega a evidência são o alongamento e o treino de força.',
         'Rolar o pé fica na categoria de recuperação. Ajuda depois de um dia longo em pé, depois de uma sessão de elevação de calcanhar, ou sempre que a sola parecer tensa e dolorida. Não substitui o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/), o [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) ou a [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/), que têm os graus da diretriz.',
       ],
       cites: [CITE.guideline],
@@ -66,14 +67,21 @@ export const EX_FOOT_ROLL_PT: Guide = {
       h2: 'Vale usar uma garrafa de água congelada?',
       paragraphs: [
         'A garrafa de água congelada é um dos remédios caseiros mais populares para fascite plantar. O formato deixa você rolar a sola inteira, e o frio adormece a região ao mesmo tempo. Profissionais de saúde costumam recomendar, e é gostoso mesmo.',
-        'Veja o que a evidência diz de fato. A terapia com frio (gelo, garrafa congelada) é uma ferramenta geral para controlar dor. Ela reduz o desconforto adormecendo as terminações nervosas e pode reduzir o inchaço por um tempo. Mas nenhum ensaio randomizado comparou uma garrafa congelada com uma garrafa em temperatura ambiente na fascite plantar. O alívio que você sente provavelmente é uma mistura do rolamento (pressão na fáscia) com o adormecimento (frio nas terminações nervosas). Se o frio acelera a recuperação além do que o rolamento sozinho faz é uma pergunta em aberto.',
-        'Se a garrafa congelada dá alívio, use. Só não conte com o frio para substituir o alongamento e o trabalho de força. E evite gelo por mais de 15 a 20\u00A0minutos de cada vez. Frio prolongado pode irritar a pele.',
+        'Veja o que a evidência diz de fato. A terapia com frio (gelo, garrafa congelada) é uma ferramenta geral para controlar dor. Ela reduz o desconforto adormecendo as terminações nervosas e pode reduzir o inchaço por um tempo.',
+        'Mas nenhum ensaio randomizado comparou uma garrafa congelada com uma garrafa em temperatura ambiente na fascite plantar. O alívio que você sente provavelmente é uma mistura do rolamento (pressão na fáscia) com o adormecimento (frio nas terminações nervosas). Se o frio acelera a recuperação além do que o rolamento sozinho faz é uma pergunta em aberto.',
+        'Se a garrafa congelada dá alívio, use. **Só não conte com o frio para substituir o alongamento e o trabalho de força.** E evite gelo por mais de 15 a 20\u00A0minutos de cada vez. Frio prolongado pode irritar a pele.',
       ],
     },
     {
       h2: 'Que tipo de bolinha usar?',
       paragraphs: [
-        'A bolinha de tênis é o ponto de partida mais comum. Ela é macia o bastante para afundar no arco sem machucar. A bola de lacrosse é mais firme e dá mais pressão. A bolinha de golfe é pequena e muito dura, e pode ser demais para um calcanhar dolorido.',
+        {
+          list: [
+            'A bolinha de tênis é o ponto de partida mais comum. Ela é macia o bastante para afundar no arco sem machucar.',
+            'A bola de lacrosse é mais firme e dá mais pressão.',
+            'A bolinha de golfe é pequena e muito dura, e pode ser demais para um calcanhar dolorido.',
+          ],
+        },
         'Comece com o que você tiver. Se a bolinha de tênis parecer macia demais depois de algumas sessões, tente uma bola de lacrosse. Se você faz careta com qualquer bolinha, ela está dura demais ou você está apertando demais. O exercício deve parecer uma massagem profunda, nunca como se você estivesse esfregando uma lesão.',
         'Uma garrafa de água congelada funciona no lugar da bolinha e acrescenta frio. Um rolo de espuma embaixo do pé é ainda mais suave. Um rolinho próprio para os pés, de loja de esportes, faz o mesmo trabalho. Nenhum deles tem prova de funcionar melhor que os outros.',
       ],
@@ -81,9 +89,13 @@ export const EX_FOOT_ROLL_PT: Guide = {
     {
       h2: 'Quais são os erros comuns ao rolar o pé?',
       paragraphs: [
-        'Apertar demais. Mais forte não é melhor. Se você aperta até a dor chegar a 6/10 ou até fazer careta, pode estar irritando a fáscia em vez de acalmá-la. Volte para uma pressão firme e constante.',
-        'Rolar rápido demais. O vaivém rápido passa por cima do tecido. Role devagar, mais ou menos uma passada completa por segundo, para cada ponto receber uma pressão sustentada.',
-        'Usar como único exercício. Rolar o pé dá sensação de produtividade, e é fácil de fazer na mesa de trabalho. Mas não fortalece a panturrilha nem alonga a fáscia como os exercícios com grau na diretriz. Junte com o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e a [elevação de calcanhar](/pt/elevacao-de-calcanhar-fascite-plantar/) para o quadro completo.',
+        {
+          list: [
+            '**Apertar demais.** Mais forte não é melhor. Se você aperta até a dor chegar a 6/10 ou até fazer careta, pode estar irritando a fáscia em vez de acalmá-la. Volte para uma pressão firme e constante.',
+            '**Rolar rápido demais.** O vaivém rápido passa por cima do tecido. Role devagar, mais ou menos uma passada completa por segundo, para cada ponto receber uma pressão sustentada.',
+            '**Usar como único exercício.** Rolar o pé dá sensação de produtividade, e é fácil de fazer na mesa de trabalho. Mas não fortalece a panturrilha nem alonga a fáscia como os exercícios com grau na diretriz. Junte com o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e a [elevação de calcanhar](/pt/elevacao-de-calcanhar-fascite-plantar/) para o quadro completo.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -91,7 +103,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
       h2: 'Quando rolar o pé, e quando pular?',
       paragraphs: [
         'Role depois de um dia longo em pé, depois de uma sessão de elevação de calcanhar, ou sempre que a sola estiver tensa. No Walkito, o rolamento do pé aparece nos dias de recuperação e no fim das sessões, para desacelerar.',
-        'Pule o rolamento se o calcanhar estiver inchado, vermelho ou quente em uma crise aguda. Esses sinais podem indicar algo diferente de fascite plantar, e apertar uma área inflamada pode piorar. Procure um profissional de saúde primeiro. Para o conjunto completo de exercícios que a diretriz recomenda, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+        '**Pule o rolamento se o calcanhar estiver inchado, vermelho ou quente em uma crise aguda.** Esses sinais podem indicar algo diferente de fascite plantar, e apertar uma área inflamada pode piorar. Procure um profissional de saúde primeiro. Para o conjunto completo de exercícios que a diretriz recomenda, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
       ],
     },
   ],

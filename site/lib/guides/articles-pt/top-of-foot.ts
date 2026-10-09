@@ -27,7 +27,14 @@ export const TOP_OF_FOOT_PT: Guide = {
       h2: 'O que causa dor no peito do pé?',
       keyFact: 'Uma fratura por estresse do metatarso pode não aparecer em um raio-X simples por duas a três semanas depois do início dos sintomas, então uma ressonância consegue confirmar mais cedo (Patel e colegas, 2011).',
       paragraphs: [
-        'A **tendinite dos extensores** é a causa mais comum. Os tendões extensores correm pelo peito do pé, da canela até os dedos. Eles levantam os dedos e o pé durante a caminhada. Quando ficam irritados, você sente uma dor difusa ao longo do peito do pé que piora com a atividade e muitas vezes dói quando você puxa os dedos para cima contra resistência. Os gatilhos de costume são cadarços apertados pressionando direto os tendões, um aumento repentino na distância de caminhada ou corrida, ou calçados com a língua rígida.',
+        'A **tendinite dos extensores** é a causa mais comum. Os tendões extensores correm pelo peito do pé, da canela até os dedos. Eles levantam os dedos e o pé durante a caminhada. Quando ficam irritados, você sente uma dor difusa ao longo do peito do pé que piora com a atividade e muitas vezes dói quando você puxa os dedos para cima contra resistência. Os gatilhos de costume são:',
+        {
+          list: [
+            'Cadarços apertados pressionando direto os tendões.',
+            'Um aumento repentino na distância de caminhada ou corrida.',
+            'Calçados com a língua rígida.',
+          ],
+        },
         'A **fratura por estresse do metatarso** é uma pequena trinca em um dos ossos longos do pé, normalmente o segundo ou o terceiro metatarso. A dor é mais localizada do que na tendinite, fica em um ponto específico e tende a piorar ao longo do dia. Inchaço no peito do pé é comum. As fraturas por estresse podem levar duas a três semanas para aparecer em um raio-X simples, então o exame de imagem no começo pode precisar de uma ressonância. Esta pede repouso, não exercício.',
         'O **esporão ósseo dorsal** (também chamado de exostose do metatarso) é um calombo de osso que se forma em cima das articulações do meio do pé, normalmente onde os metatarsos encontram os ossos cuneiformes. Ele se desenvolve aos poucos, com anos de compressão nessas articulações. O esporão em si pode não doer, mas pode pressionar a língua do calçado ou irritar um nervo que passa por cima dele.',
         'A **gota** pode causar uma dor repentina e forte no peito do pé, na maioria das vezes na articulação do dedão. A articulação fica vermelha, inchada, quente e extremamente sensível. A gota é causada por depósitos de cristais de ácido úrico e precisa de acompanhamento médico. Exercício não ajuda em uma crise de gota ativa.',
@@ -39,15 +46,23 @@ export const TOP_OF_FOOT_PT: Guide = {
     {
       h2: 'Como diferenciar essas causas?',
       paragraphs: [
-        'O local e o padrão são as primeiras pistas. A tendinite dos extensores causa uma dor difusa ao longo dos tendões que piora quando você puxa os dedos para cima. Uma fratura por estresse dói em um ponto específico e piora ao longo do dia. A gota aparece de repente, normalmente na articulação do dedão, com vermelhidão e calor. A dor de nervo tende a ser em queimação ou formigamento, não uma dor profunda.',
+        'O local e o padrão são as primeiras pistas:',
+        {
+          list: [
+            '**A tendinite dos extensores** causa uma dor difusa ao longo dos tendões que piora quando você puxa os dedos para cima.',
+            '**Uma fratura por estresse** dói em um ponto específico e piora ao longo do dia.',
+            '**A gota** aparece de repente, normalmente na articulação do dedão, com vermelhidão e calor.',
+            '**A dor de nervo** tende a ser em queimação ou formigamento, não uma dor profunda.',
+          ],
+        },
         'Um profissional de saúde muitas vezes consegue diferenciar com um exame físico. A extensão dos dedos contra resistência (puxar os dedos para cima contra uma pressão) reproduz a dor da tendinite. Uma dor ao toque em um ponto de um osso, com inchaço localizado, sugere fratura por estresse. Se houver suspeita de fratura por estresse, o exame de imagem é importante, porque continuar carregando um osso fraturado pode piorar o quadro.',
-        'Se a dor só aparece de sapato e some descalço, a pressão do calçado é o fator mais provável. Se ela continua em repouso ou acorda você à noite, vale investigar algo além de uma simples tendinite.',
+        'Se a dor só aparece de sapato e some descalço, **a pressão do calçado é o fator mais provável.** Se ela continua em repouso ou acorda você à noite, vale investigar algo além de uma simples tendinite.',
       ],
     },
     {
       h2: 'O que ajuda na tendinite dos extensores?',
       paragraphs: [
-        'O primeiro passo mais rápido costuma ser mudar o jeito de amarrar o cadarço. Pule o ilhós que fica bem em cima do ponto dolorido. Muitos tênis esportivos têm ilhoses suficientes para você passar o cadarço em volta da área sensível sem perder suporte no resto. Isso tira a pressão direta que começou o problema.',
+        '**O primeiro passo mais rápido costuma ser mudar o jeito de amarrar o cadarço.** Pule o ilhós que fica bem em cima do ponto dolorido. Muitos tênis esportivos têm ilhoses suficientes para você passar o cadarço em volta da área sensível sem perder suporte no resto. Isso tira a pressão direta que começou o problema.',
         'Calçados com a língua acolchoada ou flexível comprimem menos os tendões. Se você usa botas, chuteiras ou sapatos sociais com a parte de cima rígida, a pressão do calçado em cima do pé muitas vezes é a história toda.',
         'Reduzir por um tempo a atividade que causou a dor ajuda. Se a dor começou quando você aumentou a distância de caminhada ou corrida, volte ao nível anterior por uma ou duas semanas e depois aumente de novo aos poucos.',
         'Gelo sobre os tendões doloridos por 10 a 15\u00A0minutos depois da atividade pode ajudar a acalmar a irritação nos primeiros dias. Anti-inflamatório é uma opção de curto prazo se a dor estiver atrapalhando o dia a dia, mas não acelera a recuperação de fundo.',
@@ -56,8 +71,9 @@ export const TOP_OF_FOOT_PT: Guide = {
     {
       h2: 'Exercício ajuda na dor no peito do pé?',
       paragraphs: [
-        'Nenhum ensaio randomizado testou exercício especificamente para dor no peito do pé ou para tendinite dos extensores. A evidência aqui é honesta: não sabemos se o exercício acelera a recuperação da tendinite dos extensores em comparação só com a mudança no cadarço e o repouso.',
-        'O que o exercício pode trabalhar são os fatores que contribuem. O tibial anterior, o músculo da frente da canela que levanta o pé, também é um extensor. Quando ele está fraco em relação à panturrilha, os tendões extensores menores do peito do pé recebem mais carga durante a caminhada. Fortalecer o tibial anterior com a elevação dos dedos (levantar a parte da frente do pé em pé, encostado na parede) é um jeito de reduzir esse desequilíbrio. Veja [exercícios para canelite](/pt/canelite-exercicios/) para saber mais sobre o tibial anterior.',
+        'Nenhum ensaio randomizado testou exercício especificamente para dor no peito do pé ou para tendinite dos extensores. A evidência aqui é honesta: **não sabemos se o exercício acelera a recuperação da tendinite dos extensores** em comparação só com a mudança no cadarço e o repouso.',
+        'O que o exercício pode trabalhar são os fatores que contribuem. O tibial anterior, o músculo da frente da canela que levanta o pé, também é um extensor. Quando ele está fraco em relação à panturrilha, os tendões extensores menores do peito do pé recebem mais carga durante a caminhada.',
+        'Fortalecer o tibial anterior com a elevação dos dedos (levantar a parte da frente do pé em pé, encostado na parede) é um jeito de reduzir esse desequilíbrio. Veja [exercícios para canelite](/pt/canelite-exercicios/) para saber mais sobre o tibial anterior.',
         'O alongamento de panturrilha importa se o tornozelo dobra pouco para cima. Quando o tornozelo não consegue dobrar o suficiente, o pé compensa de jeitos que podem aumentar o estresse nas estruturas do peito do pé. Uma panturrilha tensa também é um fator de risco em comum com a [fascite plantar](/pt/exercicios-fascite-plantar/) e com a sobrecarga na parte da frente do pé.',
         'Nos esporões ósseos dorsais e na artrose do meio do pé, o exercício não muda a anatomia do osso. O trabalho de mobilidade do tornozelo pode ajudar a manter a amplitude, e o fortalecimento pode reduzir os sintomas, mas o esporão ou o desgaste da articulação continuam lá. Nas fraturas por estresse, exercício é a abordagem errada até o osso se recuperar.',
       ],
@@ -112,9 +128,17 @@ export const TOP_OF_FOOT_PT: Guide = {
       h2: 'Quando a dor no peito do pé é uma fratura por estresse?',
       paragraphs: [
         'A fratura por estresse do metatarso é a causa que você mais precisa descartar, porque continuar carregando um osso fraturado pode transformar uma pequena trinca em uma fratura completa.',
-        'As fraturas por estresse costumam se desenvolver aos poucos, com impacto repetido. São mais comuns em corredores, em recrutas militares e em pessoas que aumentaram a atividade de repente. A dor fica em um ponto, piora com atividades com o peso do corpo e pode doer à noite. Inchaço no peito do pé sobre o osso dolorido é comum.',
+        'As fraturas por estresse costumam se desenvolver aos poucos, com impacto repetido. São mais comuns em:',
+        {
+          list: [
+            'Corredores.',
+            'Recrutas militares.',
+            'Pessoas que aumentaram a atividade de repente.',
+          ],
+        },
+        'A dor fica em um ponto, piora com atividades com o peso do corpo e pode doer à noite. Inchaço no peito do pé sobre o osso dolorido é comum.',
         'Um raio-X simples pode não mostrar uma fratura por estresse nas primeiras duas a três semanas. Se um profissional de saúde suspeitar de uma, a ressonância ou a cintilografia óssea pode confirmar mais cedo. A abordagem é repouso e apoio protegido, não exercício. Voltar à atividade cedo demais traz o risco de uma fratura completa.',
-        'Se a dor começou depois de um salto no volume de treino, fica em um ponto só e piora ao longo do dia, procure um profissional de saúde antes de fazer qualquer exercício desta página.',
+        'Se a dor começou depois de um salto no volume de treino, fica em um ponto só e piora ao longo do dia, **procure um profissional de saúde antes de fazer qualquer exercício desta página.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -123,7 +147,7 @@ export const TOP_OF_FOOT_PT: Guide = {
       paragraphs: [
         'A gota é uma doença inflamatória causada pelo depósito de cristais de ácido úrico em uma articulação. Ela afeta classicamente a articulação do dedão (a primeira articulação metatarsofalângica), mas pode atingir qualquer articulação do pé, incluindo o meio do pé.',
         'Uma crise de gota aparece rápido, muitas vezes de um dia para o outro. A articulação fica muito dolorida, vermelha, quente e inchada. Ela parece e se sente diferente de uma tendinite ou de uma fratura por estresse. Se você tem uma dor forte e repentina em uma única articulação, com vermelhidão e calor, é motivo para procurar um profissional de saúde logo. Exames de sangue e às vezes a análise do líquido da articulação confirmam o diagnóstico.',
-        'A gota precisa de acompanhamento médico. Exercício, troca de calçado e alongamento não ajudam em uma crise ativa. Entre as crises, manter a mobilidade do pé e do tornozelo é razoável, mas o problema de fundo do ácido úrico é controlado com medicação e mudanças na alimentação.',
+        '**A gota precisa de acompanhamento médico.** Exercício, troca de calçado e alongamento não ajudam em uma crise ativa. Entre as crises, manter a mobilidade do pé e do tornozelo é razoável, mas o problema de fundo do ácido úrico é controlado com medicação e mudanças na alimentação.',
       ],
     },
   ],

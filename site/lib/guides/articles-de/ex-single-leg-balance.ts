@@ -28,7 +28,7 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
     {
       h2: 'Wie geht der Einbeinstand?',
       paragraphs: [
-        'Stell dich in die Nähe einer Wand oder Arbeitsplatte. Heb einen Fuß vom Boden, indem du das Knie leicht beugst. Schau auf einen festen Punkt geradeaus. Lass den Standfuß wackeln. Genau darum geht es: Die kleinen Muskeln in Fuß und Sprunggelenk arbeiten, um dich aufrecht zu halten.',
+        'Stell dich in die Nähe einer Wand oder Arbeitsplatte. Heb einen Fuß vom Boden, indem du das Knie leicht beugst. Schau auf einen festen Punkt geradeaus. Lass den Standfuß wackeln. **Genau darum geht es:** Die kleinen Muskeln in Fuß und Sprunggelenk arbeiten, um dich aufrecht zu halten.',
         'Halte so lange du kannst, bis zu 30\u00A0Sekunden, dann wechsle die Seite. Dreimal pro Seite ist eine übliche Dosis. Wenn du nicht länger als ein paar Sekunden halten kannst, lass die Fingerspitzen an der Wand und steigere dich nach und nach.',
       ],
       exercises: [
@@ -69,14 +69,14 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
       },
       after: [
         'Sobald die Augen zu sind, fallen die Zahlen stark ab, vor allem ab 50. Deshalb ist die Variante mit geschlossenen Augen ein viel empfindlicherer Test für die Kontrolle von Sprunggelenk und Fuß. Das ist auch der Grund, warum die Walkito-App nach dem Halten mit offenen Augen eine Steigerung mit geschlossenen Augen hat.',
-        'Wichtiger, als eine Tabelle zu treffen, ist, ob deine Zeit über die Wochen besser wird und ob beide Seiten ungefähr gleich sind. Ein großer Unterschied zwischen den Beinen kann auf eine Lücke bei Kraft oder Stabilität auf einer Seite hindeuten.',
+        '**Wichtiger, als eine Tabelle zu treffen, ist, ob deine Zeit über die Wochen besser wird und ob beide Seiten ungefähr gleich sind.** Ein großer Unterschied zwischen den Beinen kann auf eine Lücke bei Kraft oder Stabilität auf einer Seite hindeuten.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'Die Steigerung mit geschlossenen Augen',
       paragraphs: [
-        'Wenn du die Augen schließt, fällt die visuelle Information weg, die dein Gehirn normalerweise fürs Gleichgewicht nutzt. Dadurch müssen die Propriozeptoren in Fuß und Sprunggelenk, die Sensoren, die Position und Bewegung erfassen, mehr Arbeit übernehmen. Es ist eine schwerere Variante derselben Übung, keine andere Übung.',
+        'Wenn du die Augen schließt, fällt die visuelle Information weg, die dein Gehirn normalerweise fürs Gleichgewicht nutzt. Dadurch müssen die Propriozeptoren in Fuß und Sprunggelenk, die Sensoren, die Position und Bewegung erfassen, mehr Arbeit übernehmen. **Es ist eine schwerere Variante derselben Übung, keine andere Übung.**',
         'Stell dich zur Sicherheit in die Nähe einer Wand. Schließ die Augen und halte so lange du kannst. Bei den meisten fällt die Zeit auf einen Bruchteil der Zeit mit offenen Augen. Dieser Unterschied wird mit Übung kleiner.',
         'Die Walkito-App hat den Stand mit geschlossenen Augen als eigene Übung: 3-mal 20\u00A0Sekunden halten, beide Füße (im Wechsel). Sie öffnet sich als Steigerung, sobald das Gleichgewichtsziel mit offenen Augen sicher sitzt.',
       ],
@@ -85,7 +85,16 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
       h2: 'Warum zählt das Gleichgewicht bei Fußschmerzen?',
       keyFact: 'Bei Umknicktraumata fand eine gepoolte Analyse von 8\u00A0Studien mit 3.577\u00A0Sportlern, dass Gleichgewichtstraining das Risiko im Vergleich zu keiner Maßnahme um 46\u00A0% senkte (Bellows und Wong, 2018).',
       paragraphs: [
-        'Gleichgewicht ist nicht getrennt von der Kraft im Fuß. Wenn du auf einem Bein stehst, arbeiten die kurzen Fußmuskeln (die kleinen Muskeln im Fuß, die das Gewölbe stützen), die Wadenmuskeln, der Tibialis anterior und die Stabilisatoren der Hüfte zusammen. Eine Lücke irgendwo in dieser Kette zwingt den Fuß auszugleichen.',
+        '**Gleichgewicht ist nicht getrennt von der Kraft im Fuß.** Wenn du auf einem Bein stehst, arbeiten diese zusammen:',
+        {
+          list: [
+            'Die kurzen Fußmuskeln (die kleinen Muskeln im Fuß, die das Gewölbe stützen).',
+            'Die Wadenmuskeln.',
+            'Der Tibialis anterior.',
+            'Die Stabilisatoren der Hüfte.',
+          ],
+        },
+        'Eine Lücke irgendwo in dieser Kette zwingt den Fuß auszugleichen.',
         'Bei Plantarfasziitis und Plattfüßen steht Gleichgewichtstraining in Übungsprogrammen neben Dehnen und Kräftigen, weil es die ganze Kette auf einmal trainiert. Eine Studie von 2023 mit 52\u00A0Personen mit flexiblem Plattfuß fand, dass ein Programm aus Kurzer-Fuß-Übungen, Arbeit am Sprunggelenk, Hüftkräftigung, Dehnen und Gleichgewichtsarbeit die Form des Gewölbes stärker veränderte als bei einer Kontrollgruppe. Das Gleichgewicht wurde in dieser Studie nicht einzeln getestet, war aber Teil des Programms, das gewirkt hat.',
         'Speziell bei Umknicktraumata fand eine Metaanalyse von 2018 mit 8\u00A0Studien und 3.577\u00A0Sportlern, dass Gleichgewichtstraining das Risiko im Vergleich zu keiner Maßnahme um 46\u00A0% senkte. Das ist der stärkste einzelne Befund dafür, Gleichgewicht in ein Fußprogramm aufzunehmen.',
       ],
@@ -94,18 +103,26 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Einbeinstand?',
       paragraphs: [
-        'Auf den Boden schauen. Dein Blick sollte auf einem festen Punkt auf Augenhöhe ruhen. Wenn du nach unten schaust, verlagert sich dein Gewicht nach vorn, und die Übung wird leichter, was den Zweck verfehlt.',
-        'Das Standknie durchdrücken. Eine leichte Beugung hält die Muskeln aktiv. Ein durchgedrücktes Knie schiebt die Last aufs Gelenk statt auf die Muskeln drumherum.',
-        'Versuchen, nicht zu wackeln. Das Wackeln ist die Übung. Die kleinen Korrekturen, die dein Fuß macht, um dich aufrecht zu halten, bauen Propriozeption und Kontrolle im Sprunggelenk auf. Wenn du dich mit eingekrallten Zehen am Boden festhältst oder dich anspannst, um jede Bewegung zu unterdrücken, sinkt der Trainingseffekt.',
-        'Zu weit von der Wand weg stehen. Du musst nah genug dran sein, um dich abzufangen, wenn du das Gleichgewicht verlierst, vor allem bei der Variante mit geschlossenen Augen. Sicherheit geht vor.',
+        {
+          list: [
+            '**Auf den Boden schauen.** Dein Blick sollte auf einem festen Punkt auf Augenhöhe ruhen. Wenn du nach unten schaust, verlagert sich dein Gewicht nach vorn, und die Übung wird leichter, was den Zweck verfehlt.',
+            '**Das Standknie durchdrücken.** Eine leichte Beugung hält die Muskeln aktiv. Ein durchgedrücktes Knie schiebt die Last aufs Gelenk statt auf die Muskeln drumherum.',
+            '**Versuchen, nicht zu wackeln.** Das Wackeln ist die Übung. Die kleinen Korrekturen, die dein Fuß macht, um dich aufrecht zu halten, bauen Propriozeption und Kontrolle im Sprunggelenk auf. Wenn du dich mit eingekrallten Zehen am Boden festhältst oder dich anspannst, um jede Bewegung zu unterdrücken, sinkt der Trainingseffekt.',
+            '**Zu weit von der Wand weg stehen.** Du musst nah genug dran sein, um dich abzufangen, wenn du das Gleichgewicht verlierst, vor allem bei der Variante mit geschlossenen Augen. Sicherheit geht vor.',
+          ],
+        },
       ],
     },
     {
       h2: 'Leichtere und schwerere Varianten',
       paragraphs: [
-        'Wenn du ein Bein nicht länger als ein paar Sekunden halten kannst, lass die Fingerspitzen an einer Wand und arbeite dich hoch. Schon eine leichte Berührung gibt dem Gehirn zusätzliche Information fürs Gleichgewicht. Nimm einen Finger nach dem anderen weg, wenn du besser wirst.',
-        'Wenn sich 30\u00A0Sekunden auf hartem Boden leicht anfühlen, stell dich auf ein gefaltetes Handtuch oder ein Kissen. Der weiche Untergrund lässt das Sprunggelenk bei jedem Wackeln härter arbeiten. Die App hat Gleichgewicht auf einem Kissen als weitere Steigerung.',
-        'Die schwerste Steigerung ist der Einbeinstand mit geschlossenen Augen auf weichem Untergrund. Dann fallen die visuelle Information und ein stabiler Boden weg, und Fuß und Sprunggelenk machen fast die ganze Arbeit.',
+        {
+          list: [
+            '**Leichter:** Wenn du ein Bein nicht länger als ein paar Sekunden halten kannst, lass die Fingerspitzen an einer Wand und arbeite dich hoch. Schon eine leichte Berührung gibt dem Gehirn zusätzliche Information fürs Gleichgewicht. Nimm einen Finger nach dem anderen weg, wenn du besser wirst.',
+            '**Schwerer:** Wenn sich 30\u00A0Sekunden auf hartem Boden leicht anfühlen, stell dich auf ein gefaltetes Handtuch oder ein Kissen. Der weiche Untergrund lässt das Sprunggelenk bei jedem Wackeln härter arbeiten. Die App hat Gleichgewicht auf einem Kissen als weitere Steigerung.',
+            '**Am schwersten:** Die schwerste Steigerung ist der Einbeinstand mit geschlossenen Augen auf weichem Untergrund. Dann fallen die visuelle Information und ein stabiler Boden weg, und Fuß und Sprunggelenk machen fast die ganze Arbeit.',
+          ],
+        },
         'Für verwandte Übungen, die die Kette aufbauen, siehe [Fersenheben](/de/uebungen/fersenheben/), [Zehenheben an der Wand](/de/uebungen/zehenheben-an-der-wand/) und [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
       ],
     },

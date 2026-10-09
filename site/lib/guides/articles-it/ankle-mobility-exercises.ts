@@ -31,7 +31,13 @@ export const ANKLE_MOBILITY_IT: Guide = {
       keyFact: 'In 1.093\u00A0reclute dell’esercito seguite durante tre mesi di addestramento, l’ampiezza della dorsiflessione della caviglia era un forte fattore predittivo di infortunio (Pope e colleghi, 1998).',
       paragraphs: [
         'Per mobilità della caviglia di solito si intende la dorsiflessione: quanto lo stinco riesce ad avanzare sopra il piede mentre il tallone resta a terra. La usi a ogni passo, su ogni gradino e in fondo a ogni squat. Quando non basta, il corpo prende in prestito movimento da un’altra parte. Il tallone si alza troppo presto, il piede ruota verso l’interno o il ginocchio scivola verso l’interno.',
-        'Una flessione della caviglia ridotta è legata a diversi problemi, anche se legata non vuol dire che li causi. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva una probabilità di fascite plantare 23,3\u00A0volte più alta rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003). In 1.093\u00A0reclute maschi dell’esercito seguite durante tre mesi di addestramento duro, il movimento della caviglia misurato all’inizio era un forte fattore predittivo di chi si sarebbe infortunato, su 48\u00A0infortuni in totale (Pope e colleghi, 1998).',
+        'Una flessione della caviglia ridotta è legata a diversi problemi, anche se legata non vuol dire che li causi:',
+        {
+          list: [
+            '**Fascite plantare:** In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva una probabilità di fascite plantare 23,3\u00A0volte più alta rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003).',
+            '**Infortuni nelle reclute:** In 1.093\u00A0reclute maschi dell’esercito seguite durante tre mesi di addestramento duro, il movimento della caviglia misurato all’inizio era un forte fattore predittivo di chi si sarebbe infortunato, su 48\u00A0infortuni in totale (Pope e colleghi, 1998).',
+          ],
+        },
         'Lo squat mostra bene l’effetto. In uno studio di laboratorio, 30\u00A0persone sane hanno fatto squat con un cuneo di 12\u00A0gradi sotto l’avampiede per simulare una caviglia rigida. Le ginocchia si piegavano meno e si spostavano di più verso l’interno rispetto allo squat con i piedi piatti (Macrum e colleghi, 2012). Era una limitazione simulata in una sola sessione, quindi mostra la meccanica, non cosa succede negli anni alle persone con caviglie rigide.',
       ],
       cites: [CITE.riddle, CITE.popeDorsiflexion, CITE.macrumSquat],
@@ -51,8 +57,9 @@ export const ANKLE_MOBILITY_IT: Guide = {
         'Scrivi dove hai sentito il blocco: un allungamento dietro il polpaccio, o un pizzico davanti alla caviglia.',
       ],
       after: [
-        'Il test è affidabile quando lo fai sempre allo stesso modo. In un piccolo studio del 1998, 13\u00A0persone sane sono state misurate da quattro valutatori, e i punteggi coincidevano quasi perfettamente tra i valutatori e quando due di loro hanno ripetuto il test una settimana dopo (Bennell e colleghi). Una revisione del 2015 di 12\u00A0studi sull’affidabilità ha confermato che il test è buono, e ha aggiunto la parte utile: un cambiamento deve essere di circa 1,6-1,9\u00A0cm, cioè più o meno 5\u00A0gradi, prima di poter essere abbastanza sicuro che sia reale e non rumore di misura (Powden e colleghi).',
-        'Quindi ripeti il test ogni due settimane circa, non tutti i giorni, e non inseguire pochi millimetri.',
+        'Il test è affidabile quando lo fai sempre allo stesso modo. In un piccolo studio del 1998, 13\u00A0persone sane sono state misurate da quattro valutatori, e i punteggi coincidevano quasi perfettamente tra i valutatori e quando due di loro hanno ripetuto il test una settimana dopo (Bennell e colleghi).',
+        'Una revisione del 2015 di 12\u00A0studi sull’affidabilità ha confermato che il test è buono, e ha aggiunto la parte utile: un cambiamento deve essere di circa 1,6-1,9\u00A0cm, cioè più o meno 5\u00A0gradi, prima di poter essere abbastanza sicuro che sia reale e non rumore di misura (Powden e colleghi).',
+        'Quindi **ripeti il test ogni due settimane circa, non tutti i giorni,** e non inseguire pochi millimetri.',
       ],
       sourceNote:
         'Bennell 1998: ICC intra-valutatore 0,97-0,98, ICC inter-valutatore 0,97 (angolo) e 0,99 (distanza). Powden 2015: ICC tra professionisti diversi 0,80-0,99, stesso professionista 0,65-0,99; minima differenza rilevabile 4,6\u00A0gradi o 1,6\u00A0cm tra professionisti diversi, 4,7\u00A0gradi o 1,9\u00A0cm per lo stesso professionista.',
@@ -64,16 +71,20 @@ export const ANKLE_MOBILITY_IT: Guide = {
       paragraphs: [
         'Non esiste un unico punteggio normale condiviso per il test del ginocchio al muro. I siti citano come obiettivo 10\u00A0cm, 14\u00A0cm o 4\u00A0pollici, di solito senza fonte. Usa qualsiasi numero solo come indicazione approssimativa.',
         'Uno studio dà un’idea dei valori tipici. Hoch e colleghi hanno misurato 30\u00A0adulti sani e 30\u00A0persone simili con instabilità cronica della caviglia (caviglie che continuano a cedere dopo le distorsioni). Il gruppo sano aveva in media 12,47\u00A0cm e il gruppo instabile 10,73\u00A0cm. Sono medie di due piccoli gruppi, quindi molte persone sane hanno punteggi sopra o sotto.',
-        'Il confronto più utile è con te stesso. Una differenza chiara tra le due caviglie, soprattutto dal lato di una vecchia distorsione, ti dice di più di un numero preso da una tabella. Lo stesso vale per il tuo punteggio nel tempo, usando la regola di 1,6-1,9\u00A0cm della sezione precedente.',
+        '**Il confronto più utile è con te stesso.** Una differenza chiara tra le due caviglie, soprattutto dal lato di una vecchia distorsione, ti dice di più di un numero preso da una tabella. Lo stesso vale per il tuo punteggio nel tempo, usando la regola di 1,6-1,9\u00A0cm della sezione precedente.',
       ],
       cites: [CITE.hochInstability, CITE.powdenLunge],
     },
     {
       h2: 'È il polpaccio rigido o l’articolazione della caviglia?',
       paragraphs: [
-        'La flessione della caviglia può essere limitata dai muscoli del polpaccio dietro, o dall’articolazione stessa davanti. Il punto dove senti il blocco durante il test del ginocchio al muro è l’indizio abituale, anche se nessuno studio ha verificato quanto sia preciso.',
-        'Un allungamento o una tensione dietro il polpaccio, vicino all’Achille o più in basso vicino al tallone, fa pensare al polpaccio. Il gastrocnemio (il grande muscolo nella parte alta del polpaccio) ti limita di più con il ginocchio teso. Il soleo (il muscolo più profondo del polpaccio) ti limita con il ginocchio piegato, che è la posizione del test del ginocchio al muro. Qui funzionano lo stretching e le discese lente del tallone.',
-        'Una sensazione di blocco o di pizzico davanti alla caviglia, con poco allungamento nel polpaccio, fa pensare più all’articolazione: l’astragalo (l’osso della caviglia su cui poggia la tibia) che non scivola indietro mentre lo stinco va avanti. Può succedere dopo le distorsioni. Spingere di più contro un pizzico davanti raramente aiuta. Un fisioterapista può valutarlo e usare la mobilizzazione articolare, uno scivolamento delicato dell’articolazione fatto con le mani, che ha qualche prova a breve termine dopo le distorsioni (vedi più sotto).',
+        'La flessione della caviglia può essere limitata dai muscoli del polpaccio dietro, o dall’articolazione stessa davanti. Il punto dove senti il blocco durante il test del ginocchio al muro è l’indizio abituale, anche se nessuno studio ha verificato quanto sia preciso:',
+        {
+          list: [
+            '**Dietro il polpaccio:** Un allungamento o una tensione dietro il polpaccio, vicino all’Achille o più in basso vicino al tallone, fa pensare al polpaccio. Il gastrocnemio (il grande muscolo nella parte alta del polpaccio) ti limita di più con il ginocchio teso. Il soleo (il muscolo più profondo del polpaccio) ti limita con il ginocchio piegato, che è la posizione del test del ginocchio al muro. Qui funzionano lo stretching e le discese lente del tallone.',
+            '**Davanti alla caviglia:** Una sensazione di blocco o di pizzico davanti alla caviglia, con poco allungamento nel polpaccio, fa pensare più all’articolazione: l’astragalo (l’osso della caviglia su cui poggia la tibia) che non scivola indietro mentre lo stinco va avanti. Può succedere dopo le distorsioni. Spingere di più contro un pizzico davanti raramente aiuta. Un fisioterapista può valutarlo e usare la mobilizzazione articolare, uno scivolamento delicato dell’articolazione fatto con le mani, che ha qualche prova a breve termine dopo le distorsioni (vedi più sotto).',
+          ],
+        },
         'Una revisione del 2013 sugli studi sulle distorsioni arrivava alla stessa conclusione: l’approccio giusto dipende da cosa limita la caviglia (Terada e colleghi).',
       ],
       cites: [CITE.teradaSprain],
@@ -82,7 +93,15 @@ export const ANKLE_MOBILITY_IT: Guide = {
       h2: 'Quali esercizi di mobilità della caviglia funzionano?',
       keyFact: 'Una revisione del 2013 di 23\u00A0studi su 734\u00A0persone sane ha trovato il supporto maggiore per lo stretching statico per aumentare la dorsiflessione della caviglia (Young e colleghi).',
       paragraphs: [
-        'Gli esercizi di mobilità della caviglia con studi alle spalle rientrano in due gruppi: gli allungamenti del polpaccio e il lavoro di forza del polpaccio fatto su tutta l’escursione, come i sollevamenti sulle punte e le discese lente del tallone. Una revisione del 2013 di 23\u00A0studi su 734\u00A0persone sane ha trovato il supporto maggiore per lo stretching statico, un certo supporto da un singolo studio per i sollevamenti sulle punte fatti insieme allo stretching, e poche prove valide per la maggior parte degli altri metodi (Young e colleghi). Il risultato più forte per il solo lavoro di forza viene da un altro studio sulle discese del tallone (più sotto). Le oscillazioni della caviglia non hanno uno studio proprio, ma caricano lo stesso movimento.',
+        'Gli esercizi di mobilità della caviglia con studi alle spalle rientrano in due gruppi: gli allungamenti del polpaccio e il lavoro di forza del polpaccio fatto su tutta l’escursione, come i sollevamenti sulle punte e le discese lente del tallone. Una revisione del 2013 di 23\u00A0studi su 734\u00A0persone sane ha trovato:',
+        {
+          list: [
+            'Il supporto maggiore per lo stretching statico.',
+            'Un certo supporto da un singolo studio per i sollevamenti sulle punte fatti insieme allo stretching.',
+            'Poche prove valide per la maggior parte degli altri metodi (Young e colleghi).',
+          ],
+        },
+        'Il risultato più forte per il solo lavoro di forza viene da un altro studio sulle discese del tallone (più sotto). Le oscillazioni della caviglia non hanno uno studio proprio, ma caricano lo stesso movimento.',
         'Qui sotto, «Walkito parte da» indica la dose di partenza dell’app. Le dosi degli studi sono indicate come tali. Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno.',
       ],
       exercises: [
@@ -141,7 +160,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
       h2: 'Quanto migliora la mobilità della caviglia con lo stretching?',
       keyFact: 'Una revisione del 2006 di cinque studi randomizzati su 161\u00A0persone sane ha trovato che lo stretching statico del polpaccio aggiungeva circa 2-3\u00A0gradi di flessione della caviglia rispetto a nessuno stretching (Radford e colleghi).',
       paragraphs: [
-        'Lo stretching migliora la mobilità della caviglia, ma solo di poco. Una revisione del 2006 ha messo insieme cinque studi randomizzati su 161\u00A0persone sane e ha trovato che lo stretching statico del polpaccio aggiungeva circa 2-3\u00A0gradi di dorsiflessione rispetto a nessuno stretching. Il guadagno era simile sia con un totale di 15\u00A0minuti di stretching o meno sia con oltre 30\u00A0minuti nel corso dello studio. Gli autori hanno detto che non era chiaro se un cambiamento di quelle dimensioni conti per le persone.',
+        '**Lo stretching migliora la mobilità della caviglia, ma solo di poco.** Una revisione del 2006 ha messo insieme cinque studi randomizzati su 161\u00A0persone sane e ha trovato che lo stretching statico del polpaccio aggiungeva circa 2-3\u00A0gradi di dorsiflessione rispetto a nessuno stretching. Il guadagno era simile sia con un totale di 15\u00A0minuti di stretching o meno sia con oltre 30\u00A0minuti nel corso dello studio. Gli autori hanno detto che non era chiaro se un cambiamento di quelle dimensioni conti per le persone.',
         'Nessuno di quegli studi includeva persone con un infortunio all’arto inferiore, e la maggior parte misurava il movimento subito dopo l’ultimo allungamento, quindi i numeri potrebbero non valere per una caviglia rigida dopo una distorsione.',
         'Fai stretching per qualche settimana, ripeti il test del ginocchio al muro e giudica dal tuo risultato. Se il blocco è un pizzico davanti alla caviglia e non cambia nulla, forse non è il polpaccio a limitarti.',
       ],
@@ -152,7 +171,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
     {
       h2: 'Il lavoro di forza migliora la mobilità della caviglia?',
       paragraphs: [
-        'Il lavoro di forza su tutta l’escursione può migliorare la mobilità della caviglia, non solo lo stretching. In uno studio randomizzato su 74\u00A0persone sane, un gruppo ha fatto un programma di discese eccentriche del tallone (abbassare lentamente il tallone sotto carico) per circa un mese e mezzo e l’altro gruppo no. La dorsiflessione è aumentata solo nel gruppo delle discese del tallone, e il polpaccio opponeva meno resistenza all’allungamento di prima (Mahieu e colleghi, 2008).',
+        '**Il lavoro di forza su tutta l’escursione può migliorare la mobilità della caviglia, non solo lo stretching.** In uno studio randomizzato su 74\u00A0persone sane, un gruppo ha fatto un programma di discese eccentriche del tallone (abbassare lentamente il tallone sotto carico) per circa un mese e mezzo e l’altro gruppo no. La dorsiflessione è aumentata solo nel gruppo delle discese del tallone, e il polpaccio opponeva meno resistenza all’allungamento di prima (Mahieu e colleghi, 2008).',
         'La revisione del 2013 di 23\u00A0studi includeva anche uno studio in cui i sollevamenti sulle punte fatti insieme allo stretching statico aumentavano la flessione della caviglia rispetto a nessun esercizio (Young e colleghi). Sia la revisione sia lo studio sulle discese del tallone riguardavano persone sane, non persone con caviglie rigide o doloranti.',
         'Il lavoro di forza ha un secondo vantaggio: rinforza il polpaccio nello stesso tempo. Se hai anche dolore al tallone o all’Achille, il lavoro sul polpaccio dei [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) e degli [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) fa entrambe le cose.',
       ],
@@ -164,7 +183,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
       paragraphs: [
         'Dopo una distorsione la caviglia spesso perde flessione, e recuperarla è una parte normale della riabilitazione. Una revisione del 2013 di nove studi ha trovato che lo stretching statico, all’interno di un programma di esercizi a casa, aveva l’effetto più grande sulla dorsiflessione due settimane dopo una distorsione acuta. La mobilizzazione con movimento, una tecnica manuale in cui il professionista fa scivolare la caviglia mentre tu la pieghi, aveva solo effetti piccoli nelle persone con distorsioni ripetute (Terada e colleghi).',
         'Una revisione più ampia del 2018 di 23\u00A0studi ha trovato che la mobilizzazione articolare migliorava la flessione della caviglia sotto carico nel breve periodo nelle persone con problemi di distorsione di lunga data, ma non subito dopo una singola seduta. Gli effetti a lungo termine non sono stati studiati bene (Weerasekara e colleghi).',
-        'Il movimento è solo una parte del recupero da una distorsione. Nello studio di Hoch del 2012, le persone con caviglie che continuavano a cedere avevano in media circa 1,7\u00A0cm in meno nel test del ginocchio al muro rispetto alle persone sane, e anche la loro portata in avanti nei test di equilibrio era più corta. Qui equilibrio e forza contano quanto la mobilità. Vedi gli [esercizi di rinforzo della caviglia](/it/esercizi-rinforzo-caviglia/).',
+        'Il movimento è solo una parte del recupero da una distorsione. Nello studio di Hoch del 2012, le persone con caviglie che continuavano a cedere avevano in media circa 1,7\u00A0cm in meno nel test del ginocchio al muro rispetto alle persone sane, e anche la loro portata in avanti nei test di equilibrio era più corta. **Qui equilibrio e forza contano quanto la mobilità.** Vedi gli [esercizi di rinforzo della caviglia](/it/esercizi-rinforzo-caviglia/).',
       ],
       sourceNote:
         'Terada 2013: stretching statico con esercizi a casa due settimane dopo una distorsione acuta, d di Cohen 1,06 (IC 95% da 0,12 a 2,42); mobilizzazione con movimento nelle distorsioni ricorrenti, d da 0,14 a 0,39. Weerasekara 2018: dorsiflessione sotto carico a breve termine P=0,003, immediata P=0,16. Hoch 2012: 10,73\u00A0cm contro 12,47\u00A0cm.',
@@ -173,8 +192,9 @@ export const ANKLE_MOBILITY_IT: Guide = {
     {
       h2: 'Quanto spesso fare gli esercizi di mobilità della caviglia?',
       paragraphs: [
-        'La maggior parte delle persone fa gli esercizi di mobilità della caviglia da qualche volta a settimana a quasi tutti i giorni, in sessioni brevi, e valuta i progressi con un nuovo test ogni due settimane circa. Gli studi usavano programmi molto diversi, e la revisione del 2006 sullo stretching ha trovato poca differenza tra un tempo totale di stretching breve e lungo, quindi sessioni più lunghe non sembrano aggiungere molto.',
-        'In Walkito, gli allungamenti del polpaccio, una tenuta del ginocchio al muro e le oscillazioni della caviglia si alternano nelle tue sessioni: di solito uno nei giorni di forza, di più nei giorni di mobilità, e le oscillazioni della caviglia compaiono anche nei giorni di equilibrio. I test dell’app, all’inizio ogni 14\u00A0giorni (ogni 28 quando raggiungi un obiettivo), controllano resistenza del polpaccio, tenuta dell’arco ed equilibrio. Non misurano la distanza del ginocchio dal muro, quindi se vuoi quel numero, annotalo tu.',
+        'La maggior parte delle persone fa gli esercizi di mobilità della caviglia da qualche volta a settimana a quasi tutti i giorni, in sessioni brevi, e valuta i progressi con un nuovo test ogni due settimane circa. Gli studi usavano programmi molto diversi, e la revisione del 2006 sullo stretching ha trovato poca differenza tra un tempo totale di stretching breve e lungo, quindi **sessioni più lunghe non sembrano aggiungere molto.**',
+        'In Walkito, gli allungamenti del polpaccio, una tenuta del ginocchio al muro e le oscillazioni della caviglia si alternano nelle tue sessioni: di solito uno nei giorni di forza, di più nei giorni di mobilità, e le oscillazioni della caviglia compaiono anche nei giorni di equilibrio.',
+        'I test dell’app, all’inizio ogni 14\u00A0giorni (ogni 28 quando raggiungi un obiettivo), controllano resistenza del polpaccio, tenuta dell’arco ed equilibrio. Non misurano la distanza del ginocchio dal muro, quindi se vuoi quel numero, annotalo tu.',
         'Ha senso anche un riscaldamento prima di una sessione di squat o di una corsa, ma le prove sono scarse. Nella revisione del 2013, il risultato sul riscaldamento veniva da un piccolo studio in cui il riscaldamento era combinato con lo stretching.',
       ],
       cites: [CITE.radfordStretch, CITE.youngDorsiflexion],

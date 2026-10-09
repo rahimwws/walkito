@@ -31,7 +31,15 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     {
       h2: 'Cosa lavora il sollevamento sulle punte con asciugamano?',
       paragraphs: [
-        'Il sollevamento sulle punte con asciugamano lavora su gastrocnemio e soleo (i due muscoli del polpaccio), tendine d’Achille e fascia plantare. L’asciugamano arrotolato piega le dita verso l’alto quando sei in cima, e questo tira la fascia plantare attraverso il meccanismo a verricello. Senza asciugamano, l’esercizio allena soprattutto il polpaccio. Con l’asciugamano, la fascia prende una parte del carico.',
+        'Il sollevamento sulle punte con asciugamano lavora su:',
+        {
+          list: [
+            'Gastrocnemio e soleo (i due muscoli del polpaccio).',
+            'Tendine d’Achille.',
+            'Fascia plantare.',
+          ],
+        },
+        'L’asciugamano arrotolato piega le dita verso l’alto quando sei in cima, e questo tira la fascia plantare attraverso il meccanismo a verricello. Senza asciugamano, l’esercizio allena soprattutto il polpaccio. Con l’asciugamano, **la fascia prende una parte del carico.**',
         'Per questo lo studio di Rathleff ha usato proprio l’asciugamano per la fascite plantare invece di un semplice sollevamento sulle punte. Lo scopo è caricare insieme la catena polpaccio-Achille-fascia. Se il dolore è nel tendine d’Achille e non sotto il piede, una [discesa eccentrica del tallone](/it/esercizi/discese-eccentriche-tallone/) senza asciugamano è un punto di partenza migliore.',
       ],
       cites: [CITE.rathleff],
@@ -40,7 +48,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
       h2: 'Come si fa il sollevamento sulle punte con asciugamano?',
       paragraphs: [
         'Arrotola un piccolo asciugamano fino a farne un cilindro largo più o meno come il tuo pugno. Mettilo sul bordo di un gradino. Stai su un piede con tutte e cinque le dita sull’asciugamano e l’avampiede sul gradino. Tieniti a un muro o a un corrimano per l’equilibrio.',
-        'Sali in tre secondi, spingendo sull’alluce. Tieni due secondi in alto. Scendi in tre secondi, lasciando il tallone un po’ sotto il livello del gradino. Quel ritmo lento fa parte del protocollo. Le ripetizioni veloci riducono il carico sul tendine e sulla fascia.',
+        'Sali in tre secondi, spingendo sull’alluce. Tieni due secondi in alto. Scendi in tre secondi, lasciando il tallone un po’ sotto il livello del gradino. **Quel ritmo lento fa parte del protocollo.** Le ripetizioni veloci riducono il carico sul tendine e sulla fascia.',
         'Nello studio di Rathleff, i partecipanti aggiungevano peso con uno zaino quando il solo peso del corpo non bastava più a rendere dura l’ultima ripetizione. «12RM» vuol dire il carico più pesante con cui riesci a fare esattamente 12\u00A0ripetizioni controllate.',
       ],
       exercises: [
@@ -81,7 +89,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nel sollevamento sulle punte con asciugamano?',
       paragraphs: [
-        'Andare troppo veloce è l’errore più comune. Una discesa di tre secondi tiene il polpaccio sotto tensione abbastanza a lungo da costruire forza. Rimbalzare su e giù lo trasforma in un esercizio cardio, non di forza.',
+        '**Andare troppo veloce è l’errore più comune.** Una discesa di tre secondi tiene il polpaccio sotto tensione abbastanza a lungo da costruire forza. Rimbalzare su e giù lo trasforma in un esercizio cardio, non di forza.',
         'Se l’asciugamano scivola e ci restano sopra solo una o due dita, il carico sulla fascia si riduce. Tutte e cinque le dita devono stare sull’asciugamano. Se continua a scivolare, piegalo più spesso o usa un asciugamano da mani invece di un telo da bagno.',
         'Partire su una gamba quando i sollevamenti su due piedi sono ancora duri porta a una tecnica scadente e a compensazioni. Se per ora un sollevamento su una gamba sul gradino è troppo, inizia con i [sollevamenti sulle punte su due piedi](/it/esercizi/sollevamenti-sulle-punte/) a terra e costruisci da lì.',
       ],
@@ -89,7 +97,16 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     {
       h2: 'Versioni più facili e più difficili',
       paragraphs: [
-        'Se il sollevamento sulle punte con asciugamano completo sul gradino è troppo difficile, torna indietro lungo la catena del polpaccio. I [sollevamenti sulle punte da seduto](/it/esercizi/sollevamenti-sulle-punte/) sono il carico più basso. Poi vengono i sollevamenti in piedi su due piedi. Poi la tenuta sulle punte in alto. Poi il sollevamento con asciugamano su una gamba sul gradino. Ogni gradino deve sembrarti gestibile per due sessioni prima di salire.',
+        'Se il sollevamento sulle punte con asciugamano completo sul gradino è troppo difficile, torna indietro lungo la catena del polpaccio:',
+        {
+          list: [
+            'I [sollevamenti sulle punte da seduto](/it/esercizi/sollevamenti-sulle-punte/) sono il carico più basso.',
+            'Poi vengono i sollevamenti in piedi su due piedi.',
+            'Poi la tenuta sulle punte in alto.',
+            'Poi il sollevamento con asciugamano su una gamba sul gradino.',
+          ],
+        },
+        'Ogni gradino deve sembrarti gestibile per due sessioni prima di salire.',
         'Se il peso del corpo su una gamba è troppo facile, aggiungi carico. Lo studio di Rathleff usava uno zaino con libri o bottiglie d’acqua. In palestra puoi usare una macchina per i polpacci o un giubbotto zavorrato. Lo scopo è che l’ultima ripetizione di ogni serie sia davvero l’ultima che riesci a fare con una buona tecnica.',
       ],
     },
@@ -99,7 +116,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
       paragraphs: [
         'Lo studio di Rathleff del 2015 è l’unico studio randomizzato che ha testato il sollevamento sulle punte con asciugamano proprio per la fascite plantare. In 48\u00A0persone con fascite plantare confermata da ecografia, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) nel Foot Function Index a tre mesi rispetto al gruppo del solo stretching. A dodici mesi, i due gruppi erano pari.',
         'La linea guida del 2023 sul dolore al tallone ha esaminato questo e altri studi e ha dato al lavoro di forza una **B** e allo stretching una **A**. Sono consigliati entrambi. La linea guida non indica in modo specifico la versione con asciugamano, ma è l’unico esercizio di forza testato in un suo studio sulla fascite plantare.',
-        'Niente nelle prove dice che questo esercizio debba sostituire lo stretching. L’approccio più solido è fare entrambe le cose: un [allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) per la rigidità del mattino e il sollevamento con carico per costruire capacità. Per l’elenco completo degli esercizi e come si incastrano, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'Niente nelle prove dice che questo esercizio debba sostituire lo stretching. **L’approccio più solido è fare entrambe le cose:** un [allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) per la rigidità del mattino e il sollevamento con carico per costruire capacità. Per l’elenco completo degli esercizi e come si incastrano, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       sourceNote:
         'Rathleff 2015: differenza nel FFI di 29\u00A0punti a 3\u00A0mesi (IC al 95%: 6-52, p = 0,016). A 12\u00A0mesi: 22 contro 16, nessuna differenza significativa.',

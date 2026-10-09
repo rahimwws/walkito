@@ -30,8 +30,15 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
       keyFact: 'In 1.903 adulti anziani, i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore frequente al ginocchio rispetto a tutti gli altri piedi (Gross e colleghi, 2011).',
       figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       paragraphs: [
-        'In diversi studi grandi il piede piatto è legato al dolore al ginocchio, ma nessuno dimostra che sia l’arco a causare il dolore. Il legame è piccolo, e compare soprattutto nei piedi più piatti.',
-        'Lo studio più noto viene dai Framingham Studies negli Stati Uniti. Gross e colleghi hanno misurato le impronte di 1.903 adulti anziani (età media 65\u00A0anni) e hanno chiesto del dolore al ginocchio. I risultati del 2011: i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore al ginocchio quasi tutti i giorni, rispetto a tutti gli altri piedi. Avevano anche 1,4\u00A0volte la probabilità di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa. Non c’era alcun legame con danni in altre parti del ginocchio.',
+        'In diversi studi grandi il piede piatto è legato al dolore al ginocchio, ma **nessuno dimostra che sia l’arco a causare il dolore.** Il legame è piccolo, e compare soprattutto nei piedi più piatti.',
+        'Lo studio più noto viene dai Framingham Studies negli Stati Uniti. Gross e colleghi hanno misurato le impronte di 1.903 adulti anziani (età media 65\u00A0anni) e hanno chiesto del dolore al ginocchio. I risultati del 2011, per i piedi più piatti rispetto a tutti gli altri piedi:',
+        {
+          list: [
+            '**Dolore al ginocchio:** 1,3\u00A0volte la probabilità di dolore al ginocchio quasi tutti i giorni.',
+            '**Cartilagine:** 1,4\u00A0volte la probabilità di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa.',
+            '**Resto del ginocchio:** nessun legame con danni in altre parti del ginocchio.',
+          ],
+        },
         'Un secondo studio ha guardato le persone giovani. Kosashvili e colleghi hanno esaminato nel 2008 i dati di 97.279 giovani reclute militari. Il dolore nella parte anteriore del ginocchio è stato trovato nel 7% delle reclute con piede piatto moderato o grave e nel 4% di quelle con piede piatto lieve o arco normale. Il piede piatto lieve, che era il 74% del gruppo con piede piatto, non comportava alcun rischio in più.',
         'Entrambi gli studi hanno misurato le persone una sola volta, quindi non possono dire se sia venuto prima il piede. Gli autori di Framingham hanno anche notato che un’impronta potrebbe non distinguere un piede piatto da un piede largo e carnoso, e il peso corporeo influisce da solo sul ginocchio.',
       ],
@@ -42,9 +49,13 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     {
       h2: 'In che punto del ginocchio compare il dolore legato al piede piatto?',
       paragraphs: [
-        'Il dolore al ginocchio legato al piede piatto di solito viene descritto in uno di due punti: intorno o dietro la rotula, oppure sul lato interno del ginocchio. Sono problemi diversi, e si gestiscono in modi diversi.',
-        'Il dolore intorno o dietro la rotula si chiama dolore femoro-rotuleo. Tende a comparire piano piano e peggiora accovacciandosi, facendo le scale, correndo, saltando o stando seduti a lungo con il ginocchio piegato. È comune negli adolescenti e negli adulti attivi. È il problema al ginocchio con più ricerca sulla forma del piede, e la maggior parte di questa pagina parla di questo.',
-        'Il dolore sul lato interno del ginocchio in un adulto anziano è più spesso legato all’artrosi, le alterazioni da usura di un’articolazione. Lo studio di Framingham ha trovato che il danno alla cartilagine sul lato interno del ginocchio era più comune nei piedi più piatti, il che è coerente con questo quadro. Ma lo studio mostra solo un legame in un singolo momento.',
+        'Il dolore al ginocchio legato al piede piatto di solito viene descritto in uno di due punti. Sono problemi diversi, e si gestiscono in modi diversi.',
+        {
+          list: [
+            '**Intorno o dietro la rotula.** Si chiama dolore femoro-rotuleo. Tende a comparire piano piano e peggiora accovacciandosi, facendo le scale, correndo, saltando o stando seduti a lungo con il ginocchio piegato. È comune negli adolescenti e negli adulti attivi. È il problema al ginocchio con più ricerca sulla forma del piede, e la maggior parte di questa pagina parla di questo.',
+            '**Sul lato interno del ginocchio, in un adulto anziano.** È più spesso legato all’artrosi, le alterazioni da usura di un’articolazione. Lo studio di Framingham ha trovato che il danno alla cartilagine sul lato interno del ginocchio era più comune nei piedi più piatti, il che è coerente con questo quadro. Ma lo studio mostra solo un legame in un singolo momento.',
+          ],
+        },
         'Un ginocchio che si gonfia dopo una torsione, si blocca o cede è un’altra storia. Fa pensare al menisco (il cuscinetto di cartilagine dentro il ginocchio) o a un legamento, e va fatto vedere a un professionista sanitario.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -53,8 +64,13 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
       h2: 'In che modo un piede piatto potrebbe influire sul ginocchio?',
       paragraphs: [
         'La spiegazione più comune è una catena: quando il piede cede verso l’interno, la tibia ruota verso l’interno con lui e il ginocchio scivola verso l’interno. Questo cedimento si chiama pronazione, e in parte è normale in ogni passo. L’idea è che una pronazione eccessiva cambi lo scorrimento della rotula nel suo solco.',
-        'Piede e tibia ruotano davvero insieme. Se questo spieghi il dolore al ginocchio è meno chiaro. Una revisione del 2009 di Barton e colleghi ha raccolto 24\u00A0studi su come camminano e corrono le persone con dolore alla rotula. Ha trovato alcune differenze a livello del calcagno e un maggiore movimento verso l’interno dell’anca nei runner. Ma la revisione non ha trovato studi prospettici con dati utilizzabili. Gli studi che ha potuto valutare confrontavano persone che avevano già dolore con persone che non ne avevano, e questo non permette di separare la causa dall’effetto.',
-        'Le prove prospettiche sono poche. Una revisione del 2014 di Neal e colleghi ha messo insieme 21\u00A0studi prospettici su 6.228\u00A0persone, cioè studi che seguono le persone nel tempo per vedere chi si fa male. Un piede che cede verso l’interno era un chiaro fattore di rischio per la periostite tibiale. Per il dolore alla rotula, le prove erano molto limitate e gli effetti piccoli. Gli autori hanno concluso che la forma del piede è un pezzo di una valutazione più ampia, non la risposta da sola.',
+        'Piede e tibia ruotano davvero insieme. Se questo spieghi il dolore al ginocchio è meno chiaro, e le prove prospettiche sono poche. Due revisioni l’hanno studiato:',
+        {
+          list: [
+            '**Barton e colleghi, 2009:** ha raccolto 24\u00A0studi su come camminano e corrono le persone con dolore alla rotula. Ha trovato alcune differenze a livello del calcagno e un maggiore movimento verso l’interno dell’anca nei runner. Ma la revisione non ha trovato studi prospettici con dati utilizzabili. Gli studi che ha potuto valutare confrontavano persone che avevano già dolore con persone che non ne avevano, e questo non permette di separare la causa dall’effetto.',
+            '**Neal e colleghi, 2014:** ha messo insieme 21\u00A0studi prospettici su 6.228\u00A0persone, cioè studi che seguono le persone nel tempo per vedere chi si fa male. Un piede che cede verso l’interno era un chiaro fattore di rischio per la periostite tibiale. Per il dolore alla rotula, le prove erano molto limitate e gli effetti piccoli. Gli autori hanno concluso che la forma del piede è un pezzo di una valutazione più ampia, non la risposta da sola.',
+          ],
+        },
         'L’anca sta in cima alla stessa catena. Muscoli deboli sul lato esterno dell’anca lasciano ruotare la coscia verso l’interno, e questo può tirare il ginocchio verso l’interno dall’alto. È uno dei motivi per cui i consigli di esercizio per il dolore alla rotula partono dall’anca, non dal piede.',
       ],
       sourceNote:
@@ -82,9 +98,18 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
       keyFact: 'In uno studio su 179\u00A0adulti con dolore alla rotula, i plantari sagomati funzionavano meglio di solette piatte nel breve periodo, ma non meglio della fisioterapia (Collins e colleghi, 2008).',
       paragraphs: [
         'I plantari sagomati possono alleviare il dolore nella parte anteriore del ginocchio nel breve periodo, ma aggiungono poco quando fai già un buon esercizio.',
-        'La prova più chiara è uno studio del 2008 pubblicato sul BMJ. Collins e colleghi hanno diviso 179\u00A0adulti tra i 18 e i 40\u00A0anni con dolore intorno alla rotula in quattro gruppi: plantari sagomati già pronti, solette piatte, fisioterapia (esercizi per i muscoli della coscia, taping, terapia manuale e consigli) o plantari più fisioterapia. I plantari sagomati sono andati meglio delle solette piatte dopo circa un mese e mezzo. Non sono andati meglio della fisioterapia, e aggiungerli alla fisioterapia non ha migliorato i risultati. A un anno, tutti e quattro i gruppi erano migliorati in modo significativo.',
+        'La prova più chiara è uno studio del 2008 pubblicato sul BMJ. Collins e colleghi hanno diviso 179\u00A0adulti tra i 18 e i 40\u00A0anni con dolore intorno alla rotula in quattro gruppi:',
+        {
+          list: [
+            'Plantari sagomati già pronti.',
+            'Solette piatte.',
+            'Fisioterapia: esercizi per i muscoli della coscia, taping, terapia manuale e consigli.',
+            'Plantari più fisioterapia.',
+          ],
+        },
+        'I plantari sagomati sono andati meglio delle solette piatte dopo circa un mese e mezzo. Non sono andati meglio della fisioterapia, e aggiungerli alla fisioterapia non ha migliorato i risultati. A un anno, tutti e quattro i gruppi erano migliorati in modo significativo.',
         'Uno studio più piccolo del 2018 di Mølgaard e colleghi ha scelto 40\u00A0persone con dolore alla rotula il cui tallone si inclinava verso l’interno più del normale. Aggiungere esercizi per il piede e plantari su misura agli esercizi per il ginocchio ha dato 8,9\u00A0punti in più di sollievo dal dolore su una scala del ginocchio da 100 a quattro mesi. A dodici mesi la differenza tra i gruppi non era più statisticamente chiara. Lo studio non può dire se a fare la differenza siano stati i plantari, gli esercizi per il piede o le sedute in più.',
-        'La linea guida del 2019 mette insieme il tutto così: i plantari già pronti si possono usare per chi ha piedi che cedono verso l’interno più del normale, solo per alleviare il dolore nel breve periodo, e sempre insieme all’esercizio. Ha trovato troppe poche prove per preferire i plantari su misura a quelli già pronti. Per il dibattito più ampio sui plantari, vedi [plantari o esercizi](/it/plantari-o-esercizi/).',
+        'La linea guida del 2019 mette insieme il tutto così: **i plantari già pronti si possono usare per chi ha piedi che cedono verso l’interno più del normale, solo per alleviare il dolore nel breve periodo, e sempre insieme all’esercizio.** Ha trovato troppe poche prove per preferire i plantari su misura a quelli già pronti. Per il dibattito più ampio sui plantari, vedi [plantari o esercizi](/it/plantari-o-esercizi/).',
       ],
       sourceNote:
         'Collins 2008: RCT in singolo cieco, esiti dopo circa un mese e mezzo, tre mesi e un anno; plantari sagomati contro solette piatte sul miglioramento globale, numero di persone necessario per avere un beneficio: 4. Uno degli autori aveva ricevuto finanziamenti da un produttore di plantari. Mølgaard 2018: sottoscala del dolore KOOS, 8,9\u00A0punti (IC al 95%: da 0,4 a 17,4). Willy 2019: grado A.',

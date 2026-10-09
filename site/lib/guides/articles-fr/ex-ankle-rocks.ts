@@ -31,7 +31,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       paragraphs: [
         'Placez-vous en fente, un pied devant et un pied derrière, les mains contre un mur ou un encadrement de porte pour l’équilibre. En gardant le talon avant à plat au sol, basculez lentement le genou avant vers l’avant, au-dessus des orteils. Laissez le genou avancer aussi loin que possible tant que le talon reste au sol. Puis revenez à la position de départ. C’est une répétition.',
         'Le mouvement est lent et contrôlé. Pas de rebonds. Chaque bascule doit prendre environ deux secondes vers l’avant et deux secondes vers l’arrière. La jambe arrière sert seulement à l’équilibre. Tout le travail de la cheville se fait dans la jambe avant.',
-        'Gardez le pied avant pointé droit devant. Si le pied tourne vers l’extérieur, la cheville trouve un raccourci et vous manquez l’amplitude que vous cherchez à gagner.',
+        '**Gardez le pied avant pointé droit devant.** Si le pied tourne vers l’extérieur, la cheville trouve un raccourci et vous manquez l’amplitude que vous cherchez à gagner.',
       ],
       exercises: [
         {
@@ -56,8 +56,15 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       h2: 'Pourquoi la mobilité de la cheville compte-t-elle pour la douleur au talon\u00A0?',
       keyFact: 'Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville limitée était un facteur de risque plus fort que l’IMC ou le temps passé debout, avec un odds ratio de 23,3 (Riddle et coll., 2003).',
       paragraphs: [
-        'La flexion dorsale de la cheville, c’est jusqu’où le pied peut se plier vers le haut, vers le tibia, pendant que le talon reste au sol. Chaque pas demande un peu de flexion dorsale. Quand la cheville ne se plie pas assez, le corps compense. Le pied peut s’affaisser vers l’intérieur, le mollet subit plus de tension, et le fascia plantaire absorbe des forces pour lesquelles il n’est pas fait.',
-        'Dans l’étude cas-témoins de Riddle 2003, une flexion dorsale de cheville réduite était la variable avec le plus grand effet indépendant, avec un odds ratio de 23,3 pour l’apparition d’une fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou la distance de course. Dans une revue distincte, un mollet raide, plus précisément le gastrocnémien, était présent chez 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire.',
+        'La flexion dorsale de la cheville, c’est jusqu’où le pied peut se plier vers le haut, vers le tibia, pendant que le talon reste au sol. Chaque pas demande un peu de flexion dorsale. Quand la cheville ne se plie pas assez, le corps compense\u00A0:',
+        {
+          list: [
+            'Le pied peut s’affaisser vers l’intérieur.',
+            'Le mollet subit plus de tension.',
+            'Le fascia plantaire absorbe des forces pour lesquelles il n’est pas fait.',
+          ],
+        },
+        'Dans l’étude cas-témoins de Riddle 2003, **une flexion dorsale de cheville réduite était la variable avec le plus grand effet indépendant**, avec un odds ratio de 23,3 pour l’apparition d’une fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou la distance de course. Dans une revue distincte, un mollet raide, plus précisément le gastrocnémien, était présent chez 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire.',
         'Étirer le mollet de façon passive (comme avec l’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/)) agit sur un côté du problème\u00A0: la longueur du muscle. Les bascules de cheville agissent sur l’autre côté\u00A0: le contrôle actif en fin d’amplitude. Basculer le genou au-dessus des orteils sous le poids du corps apprend à la cheville à utiliser l’amplitude qu’elle a, pas seulement à l’atteindre passivement.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -67,14 +74,15 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       paragraphs: [
         'L’[étirement du mollet](/fr/exercices/etirement-mollet/) est un maintien passif. Vous vous penchez contre le mur et attendez que le muscle s’allonge. La jambe arrière est tendue, ce qui cible le gastrocnémien. L’[étirement du soléaire](/fr/exercices/etirement-soleaire/) fait la même chose genou plié.',
         'Les bascules de cheville sont un mouvement actif et répété. Vous poussez le genou vers l’avant, revenez, poussez de nouveau. Vous chargez la cheville sur toute son amplitude au lieu de rester immobile en fin d’amplitude. Les bascules de cheville développent la capacité à utiliser la flexion dorsale sous charge, ce que la marche et la course demandent réellement.',
-        'Les deux sont utiles. L’étirement ouvre l’amplitude. Les bascules de cheville vous apprennent à l’utiliser. La recommandation donne aux étirements du mollet la note A. Les bascules de cheville font partie du travail de mobilité que Walkito programme avec ces étirements.',
+        'Les deux sont utiles. **L’étirement ouvre l’amplitude. Les bascules de cheville vous apprennent à l’utiliser.** La recommandation donne aux étirements du mollet la note A. Les bascules de cheville font partie du travail de mobilité que Walkito programme avec ces étirements.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Le test genou au mur et son lien avec l’exercice',
       paragraphs: [
-        'Le test genou au mur, aussi appelé test de fente en charge, est un moyen simple de mesurer la flexion dorsale de la cheville. Placez-vous face à un mur, un pied à quelques centimètres en arrière, et avancez le genou en fente jusqu’à ce qu’il touche le mur. Si le talon se soulève avant que le genou atteigne le mur, rapprochez le pied. La distance entre le gros orteil et le mur, au moment où le genou touche tout juste le mur avec le talon encore à plat, est votre score.',
+        'Le test genou au mur, aussi appelé test de fente en charge, est un moyen simple de mesurer la flexion dorsale de la cheville.',
+        'Placez-vous face à un mur, un pied à quelques centimètres en arrière, et avancez le genou en fente jusqu’à ce qu’il touche le mur. Si le talon se soulève avant que le genou atteigne le mur, rapprochez le pied. La distance entre le gros orteil et le mur, au moment où le genou touche tout juste le mur avec le talon encore à plat, est votre score.',
         'Walkito comprend un exercice genou au mur dans l’application (2\u00A0maintiens de 30\u00A0secondes, chaque jambe). Suivre cette distance au fil des semaines vous indique si l’amplitude de votre cheville progresse vraiment. Un gain d’un ou deux centimètres en quelques semaines est significatif.',
         'Les bascules de cheville et l’exercice genou au mur travaillent la même amplitude sous des angles différents. Les bascules sont des répétitions à travers l’amplitude. Le maintien genou au mur est une charge soutenue en fin d’amplitude. Les deux aident. Walkito les programme les jours de mobilité.',
       ],
@@ -82,10 +90,14 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec les bascules de cheville\u00A0?',
       paragraphs: [
-        'Laisser le talon se soulever. Le talon doit rester à plat pendant chaque répétition. S’il se soulève, vous avez dépassé la fin de votre amplitude et l’exercice perd son intérêt. Basculez seulement aussi loin que le talon le permet.',
-        'Tourner le pied vers l’extérieur. Le pied doit pointer droit devant. Une rotation vers l’extérieur permet à la cheville de contourner sa zone raide. Gardez le deuxième orteil dirigé vers le mur.',
-        'Aller trop vite. Rebondir ou enchaîner les répétitions à toute vitesse ne développe pas une amplitude contrôlée. Deux secondes vers l’avant, deux secondes vers l’arrière. Laissez la cheville sentir la fin de son amplitude à chaque répétition.',
-        'Se passer de la fente. Certaines personnes essaient de faire les bascules sur les deux jambes à la fois, en faisant simplement un squat. Cela divise la charge et réduit l’amplitude que la cheville avant doit parcourir. Placez-vous en fente pour qu’une seule cheville fasse le travail.',
+        {
+          list: [
+            '**Laisser le talon se soulever.** Le talon doit rester à plat pendant chaque répétition. S’il se soulève, vous avez dépassé la fin de votre amplitude et l’exercice perd son intérêt. Basculez seulement aussi loin que le talon le permet.',
+            '**Tourner le pied vers l’extérieur.** Le pied doit pointer droit devant. Une rotation vers l’extérieur permet à la cheville de contourner sa zone raide. Gardez le deuxième orteil dirigé vers le mur.',
+            '**Aller trop vite.** Rebondir ou enchaîner les répétitions à toute vitesse ne développe pas une amplitude contrôlée. Deux secondes vers l’avant, deux secondes vers l’arrière. Laissez la cheville sentir la fin de son amplitude à chaque répétition.',
+            '**Se passer de la fente.** Certaines personnes essaient de faire les bascules sur les deux jambes à la fois, en faisant simplement un squat. Cela divise la charge et réduit l’amplitude que la cheville avant doit parcourir. Placez-vous en fente pour qu’une seule cheville fasse le travail.',
+          ],
+        },
       ],
     },
     {

@@ -36,7 +36,7 @@ export const BEST_APP_DE: Guide = {
       h2: 'Was sollte eine App bei Plantarfasziitis wirklich können?',
       keyFact: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, der besten Bewertung, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Eine nützliche App bei Plantarfasziitis sollte Übungen enthalten, die zur Forschung passen. Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet die Belege für jeden Ansatz. Dehnen von Plantarfaszie und Wade bekommt ein A, die beste Bewertung. Krafttraining bekommt ein B. Beides sollte also in der App sein, nicht nur eins davon.',
+        'Eine nützliche App bei Plantarfasziitis sollte Übungen enthalten, die zur Forschung passen. Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet die Belege für jeden Ansatz. Dehnen von Plantarfaszie und Wade bekommt ein A, die beste Bewertung. Krafttraining bekommt ein B. **Beides sollte also in der App sein, nicht nur eins davon.**',
         'Über die Übungsliste hinaus lohnt es sich, diese Punkte zu prüfen, bevor du ein Abo abschließt:',
       ],
       bullets: [
@@ -119,8 +119,24 @@ export const BEST_APP_DE: Guide = {
         'Exakt Health ist für Läuferinnen und Läufer gebaut, und das merkt man. Die App hat über 15\u00A0Reha-Pläne für Verletzungen, von Plantarfasziitis über Achillessehnen-Tendinopathie bis zu Meniskusrissen, dazu Laufpläne vom Sofa bis zum Marathon. Jeder Reha-Plan endet mit einer strukturierten Phase für den Wiedereinstieg ins Laufen, was die meisten Apps bei Fußschmerzen nicht bieten.',
         'Sie ist in der EU als Medizinprodukt zertifiziert, hat also eine behördliche Prüfung zu Sicherheit und Zweckbestimmung durchlaufen. Entwickelt wurde sie von zugelassenen Sportphysiotherapeutinnen und -physiotherapeuten und Lauftrainern. Die App hat über 600\u00A0Übungsvideos und passt ihren Plan an, während du die Level durchläufst.',
         'Mit 19,99\u00A0$ im Monat oder 59,99\u00A0$ für sechs Monate ist Exakt nicht billig, aber die Bandbreite an Beschwerden und die Qualität der Reha-Pläne sind auf dem Markt der Selbsthilfe-Apps schwer zu schlagen. Mit der 7-tägigen kostenlosen Testphase siehst du die ganze App, bevor du zahlst. Sie ist auf Englisch, Französisch, Deutsch und Spanisch verfügbar, für iOS und Android.',
-        'Wo Exakt stärker ist als Walkito: mehr abgedeckte Verletzungen (15+ gegenüber Fersenschmerzen, Plattfüßen und Schienbein), ein vollständiges Programm für den Wiedereinstieg ins Laufen, Android, die Zertifizierung als Medizinprodukt in der EU und eine etablierte Nutzerschaft mit einer Bewertung von 4,8 bei 125\u00A0iOS-Rezensionen.',
-        'Wo Walkito anders ist: Walkito passt die Einheit jedes Tages anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit, testet alle 14\u00A0Tage Unterschiede zwischen links und rechts und konzentriert sich gezielt auf Fersen- und Fußschmerzen statt auf die ganze Bandbreite der Laufverletzungen.',
+        'Wo Exakt stärker ist als Walkito:',
+        {
+          list: [
+            'Mehr abgedeckte Verletzungen (15+ gegenüber Fersenschmerzen, Plattfüßen und Schienbein).',
+            'Ein vollständiges Programm für den Wiedereinstieg ins Laufen.',
+            'Android.',
+            'Die Zertifizierung als Medizinprodukt in der EU.',
+            'Eine etablierte Nutzerschaft mit einer Bewertung von 4,8 bei 125\u00A0iOS-Rezensionen.',
+          ],
+        },
+        'Wo Walkito anders ist:',
+        {
+          list: [
+            'Walkito passt die Einheit jedes Tages anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit.',
+            'Es testet alle 14\u00A0Tage Unterschiede zwischen links und rechts.',
+            'Es konzentriert sich gezielt auf Fersen- und Fußschmerzen statt auf die ganze Bandbreite der Laufverletzungen.',
+          ],
+        },
       ],
     },
     {
@@ -128,14 +144,23 @@ export const BEST_APP_DE: Guide = {
       paragraphs: [
         'Hinge Health ist die größte digitale Plattform für den Bewegungsapparat in den USA, mit über 2\u00A0Millionen Mitgliedern. Wenn dein Arbeitgeber oder deine Krankenversicherung sie bezahlt, ist sie für dich kostenlos und bringt etwas mit, das keine Selbsthilfe-App bieten kann: ein eigenes Betreuungsteam mit Physiotherapeutinnen und Physiotherapeuten, Orthopädinnen und Orthopäden und anderen Fachleuten.',
         'Die App deckt viele Beschwerden an Gelenken und Muskeln ab, nicht nur die Füße. Dazu gehört auch das tragbare Gerät Enso zur Linderung akuter Schmerzen. Die Bewertung von 4,9 bei 168.000\u00A0iOS-Rezensionen spiegelt die Mischung aus angeleiteten Übungen, menschlicher Betreuung und null Kosten.',
-        'Der Haken ist der Zugang. Du kannst Hinge Health nicht im App Store kaufen. Du brauchst eine Kostenübernahme über einen der über 2.800\u00A0Arbeitgeber oder Krankenversicherer, die es anbieten. Wenn du Zugang hast, ist es wahrscheinlich die umfassendste Option auf dieser Liste. Wenn nicht, ist es gar keine Option.',
+        '**Der Haken ist der Zugang.** Du kannst Hinge Health nicht im App Store kaufen. Du brauchst eine Kostenübernahme über einen der über 2.800\u00A0Arbeitgeber oder Krankenversicherer, die es anbieten.',
+        'Wenn du Zugang hast, ist es wahrscheinlich die umfassendste Option auf dieser Liste. Wenn nicht, ist es gar keine Option.',
         'Hinge Health ist nicht auf Füße spezialisiert. Die Hauptanwendungen sind Rücken-, Knie-, Hüft- und Nackenschmerzen. Speziell bei Plantarfasziitis ist eine fokussiertere App vielleicht der bessere Startpunkt.',
       ],
     },
     {
       h2: 'Prehab: die größte Übungsbibliothek',
       paragraphs: [
-        'Die App von The Prehab Guys wurde von promovierten Physiotherapeutinnen und Physiotherapeuten entwickelt und hat die größte Übungsbibliothek in diesem Vergleich: über 55\u00A0Programme, über 170\u00A0Workouts und über 4.000\u00A0Übungsvideos. Sie hat ein eigenes Reha-Programm bei Plantarfasziitis. Die Funktion Body Scan fragt nach deinem Schmerz, deinen Zielen und deinen Bewegungsbedürfnissen und empfiehlt dann ein Programm.',
+        'Die App von The Prehab Guys wurde von promovierten Physiotherapeutinnen und Physiotherapeuten entwickelt und hat die größte Übungsbibliothek in diesem Vergleich:',
+        {
+          list: [
+            'Über 55\u00A0Programme.',
+            'Über 170\u00A0Workouts.',
+            'Über 4.000\u00A0Übungsvideos.',
+          ],
+        },
+        'Sie hat ein eigenes Reha-Programm bei Plantarfasziitis. Die Funktion Body Scan fragt nach deinem Schmerz, deinen Zielen und deinen Bewegungsbedürfnissen und empfiehlt dann ein Programm.',
         'Mit 49\u00A0$ im Monat oder etwa 200\u00A0$ im Jahr ist sie hier die teuerste Selbsthilfe-Option. Die 7-tägige kostenlose Testphase gibt es nur beim Jahresabo. Die Einheiten dauern etwa 20\u00A0Minuten, länger als die 3 bis 10\u00A0Minuten der Apps, die sich auf Füße konzentrieren. Die Qualität der Videoanleitungen wird in Rezensionen durchweg gelobt.',
         'Prehab passt gut, wenn du an mehreren Stellen Schmerzen hast und eine einzige App willst, die alles von den Schultern bis zu den Füßen abdeckt. Sie ist weniger fokussiert als Apps, die speziell für Plantarfasziitis gebaut sind, und passt die täglichen Einheiten nicht an deinen Morgenschmerz an.',
         'Sie gibt es nur für iOS und nur auf Englisch.',
@@ -145,7 +170,15 @@ export const BEST_APP_DE: Guide = {
       h2: 'PlantarCare: der kostenlose Tracker',
       paragraphs: [
         'PlantarCare ist kostenlos, hat keine In-App-Käufe und braucht kein Konto. Die App konzentriert sich ganz auf Fersenschmerzen und Plantarfasziitis. Du trägst deinen Schmerz bei den ersten Schritten am Morgen und deinen stärksten Schmerz am Tag ein, und die App führt dich durch Erholungsphasen mit angeleiteten Dehnungen, Wadentraining, Fersenheben und Erinnerungen zum Kühlen, passend zu deiner Phase.',
-        'Für eine kostenlose App macht sie überraschend viel richtig: Schmerzverlauf über die Zeit, Eintragen von Schuhen und Belastung und Erinnerungen an Warnzeichen, die dir sagen, wann du zu einer medizinischen Fachperson solltest. Der Haken: Sie ist neu, hat noch keine Bewertungen und beschreibt nicht, welche Forschung hinter der Auswahl der Übungen steht.',
+        'Für eine kostenlose App macht sie überraschend viel richtig:',
+        {
+          list: [
+            'Schmerzverlauf über die Zeit.',
+            'Eintragen von Schuhen und Belastung.',
+            'Erinnerungen an Warnzeichen, die dir sagen, wann du zu einer medizinischen Fachperson solltest.',
+          ],
+        },
+        'Der Haken: Sie ist neu, hat noch keine Bewertungen und beschreibt nicht, welche Forschung hinter der Auswahl der Übungen steht.',
         'PlantarCare ist ein vernünftiger Startpunkt, wenn du deinen Schmerz kostenlos festhalten und einfache Dehnungen machen willst, ohne ein Abo abzuschließen. Sie gibt es nur für iOS.',
       ],
     },
@@ -169,8 +202,27 @@ export const BEST_APP_DE: Guide = {
       h2: 'Walkito: was es kann und was nicht',
       paragraphs: [
         'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es ist am 2. Oktober 2026 im App Store erschienen. Es ist neu, hat noch keine Bewertungen und ist nur für iOS verfügbar.',
-        'Was es kann: Es baut aus deinen Antworten zu Schmerz, Zielen und Zeitplan einen Wochenplan. Jeden Morgen passt ein Check die Einheit des Tages daran an, wie sich dein Fuß anfühlt. Tests alle 14\u00A0Tage messen Fersenheben, Gewölbehalten und Einbeinstand und vergleichen links mit rechts. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen und der Studie von Rathleff 2015. Es verbindet sich mit Apple Health für Schritte, Schlaf und Gehdaten, die auf deinem Handy bleiben.',
-        'Was es nicht kann: Es stellt keine Diagnose, es ist kein Medizinprodukt, auf der anderen Seite sitzt keine medizinische Fachperson, und es gibt es nicht für Android. Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15\u00A0Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.',
+        'Was es kann:',
+        {
+          list: [
+            'Es baut aus deinen Antworten zu Schmerz, Zielen und Zeitplan einen Wochenplan.',
+            'Jeden Morgen passt ein Check die Einheit des Tages daran an, wie sich dein Fuß anfühlt.',
+            'Tests alle 14\u00A0Tage messen Fersenheben, Gewölbehalten und Einbeinstand und vergleichen links mit rechts.',
+            'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten.',
+            'Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen und der Studie von Rathleff 2015.',
+            'Es verbindet sich mit Apple Health für Schritte, Schlaf und Gehdaten, die auf deinem Handy bleiben.',
+          ],
+        },
+        'Was es nicht kann:',
+        {
+          list: [
+            'Es stellt keine Diagnose.',
+            'Es ist kein Medizinprodukt.',
+            'Auf der anderen Seite sitzt keine medizinische Fachperson.',
+            'Es gibt es nicht für Android.',
+          ],
+        },
+        'Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15\u00A0Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.',
         'Mit 44,99\u00A0$ im Jahr oder 7,99\u00A0$ pro Woche ist der Jahrespreis niedriger als bei den meisten Mitbewerbern. Der Wochenpreis ist im Verhältnis zum Jahrespreis höher, was bei Abos üblich ist.',
       ],
       cites: [CITE.guideline, CITE.rathleff],

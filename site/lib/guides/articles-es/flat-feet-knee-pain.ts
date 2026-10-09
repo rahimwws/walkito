@@ -30,8 +30,15 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
       keyFact: 'En 1903 adultos mayores, los pies más planos tuvieron 1,3\u00A0veces más probabilidades de dolor de rodilla frecuente que todos los demás pies (Gross y colegas, 2011).',
       figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interno sobre un piso plano: un pie plano con el arco apoyado en el piso, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
-        'Varios estudios grandes relacionan el pie plano con el dolor de rodilla, pero ninguno demuestra que el arco cause el dolor. La relación es pequeña y aparece sobre todo en los pies más planos.',
-        'El estudio más conocido viene de los Framingham Studies en Estados Unidos. Gross y colegas midieron las huellas de 1903\u00A0adultos mayores (edad promedio de 65\u00A0años) y les preguntaron por el dolor de rodilla. Los resultados de 2011: los pies más planos tuvieron 1,3\u00A0veces más probabilidades de dolor de rodilla la mayoría de los días, comparados con todos los demás pies. También tuvieron 1,4\u00A0veces más probabilidades de daño en el cartílago del lado interno de la articulación de la rodilla en la resonancia magnética. El cartílago es la capa lisa que cubre los extremos de los huesos. No hubo relación con daño en ninguna otra parte de la rodilla.',
+        'Varios estudios grandes relacionan el pie plano con el dolor de rodilla, pero **ninguno demuestra que el arco cause el dolor.** La relación es pequeña y aparece sobre todo en los pies más planos.',
+        'El estudio más conocido viene de los Framingham Studies en Estados Unidos. Gross y colegas midieron las huellas de 1903\u00A0adultos mayores (edad promedio de 65\u00A0años) y les preguntaron por el dolor de rodilla. Los resultados de 2011, para los pies más planos comparados con todos los demás pies:',
+        {
+          list: [
+            '**Dolor de rodilla:** 1,3\u00A0veces más probabilidades de dolor de rodilla la mayoría de los días.',
+            '**Cartílago:** 1,4\u00A0veces más probabilidades de daño en el cartílago del lado interno de la articulación de la rodilla en la resonancia magnética. El cartílago es la capa lisa que cubre los extremos de los huesos.',
+            '**Resto de la rodilla:** no hubo relación con daño en ninguna otra parte de la rodilla.',
+          ],
+        },
         'Un segundo estudio se fijó en personas jóvenes. Kosashvili y colegas revisaron a 97\u00A0279 reclutas militares jóvenes en 2008. Se encontró dolor en la parte delantera de la rodilla en el 7\u00A0% de los reclutas con pie plano moderado o severo, y en el 4\u00A0% de los que tenían pie plano leve o arcos normales. El pie plano leve, que era el 74\u00A0% del grupo con pie plano, no tuvo un riesgo mayor.',
         'Los dos estudios midieron a las personas una sola vez, así que no pueden decir si el pie vino primero. Los autores de Framingham también señalaron que una huella quizá no distinga un pie plano de uno ancho y carnoso, y el peso corporal afecta la rodilla por sí solo.',
       ],
@@ -42,9 +49,13 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
     {
       h2: '¿En qué parte de la rodilla aparece el dolor relacionado con el pie plano?',
       paragraphs: [
-        'El dolor de rodilla relacionado con el pie plano suele describirse en uno de dos lugares: alrededor o detrás de la rótula, o en el lado interno de la rodilla. Son problemas distintos, y se manejan de formas distintas.',
-        'El dolor alrededor o detrás de la rótula se llama dolor patelofemoral. Suele empezar poco a poco y empeora al ponerse en cuclillas, subir escaleras, correr, saltar o estar sentado mucho tiempo con la rodilla doblada. Es común en adolescentes y adultos activos. Es el problema de rodilla con más investigación sobre la postura del pie, y la mayor parte de esta página habla de él.',
-        'El dolor en el lado interno de la rodilla en un adulto mayor se relaciona más seguido con la osteoartritis, los cambios por desgaste en una articulación. El estudio de Framingham encontró que el daño en el cartílago del lado interno de la rodilla era más común en los pies más planos, lo que encaja con este cuadro. Pero una relación en un solo momento es todo lo que muestra el estudio.',
+        'El dolor de rodilla relacionado con el pie plano suele describirse en uno de dos lugares. Son problemas distintos, y se manejan de formas distintas.',
+        {
+          list: [
+            '**Alrededor o detrás de la rótula.** Se llama dolor patelofemoral. Suele empezar poco a poco y empeora al ponerse en cuclillas, subir escaleras, correr, saltar o estar sentado mucho tiempo con la rodilla doblada. Es común en adolescentes y adultos activos. Es el problema de rodilla con más investigación sobre la postura del pie, y la mayor parte de esta página habla de él.',
+            '**En el lado interno de la rodilla, en un adulto mayor.** Se relaciona más seguido con la osteoartritis, los cambios por desgaste en una articulación. El estudio de Framingham encontró que el daño en el cartílago del lado interno de la rodilla era más común en los pies más planos, lo que encaja con este cuadro. Pero una relación en un solo momento es todo lo que muestra el estudio.',
+          ],
+        },
         'Una rodilla que se hincha después de un giro, se traba o falla es otra historia. Eso apunta al menisco (el cojín de cartílago dentro de la rodilla) o a un ligamento, y necesita que la revise un profesional de la salud.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -53,8 +64,13 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
       h2: '¿Cómo podría un pie plano afectar la rodilla?',
       paragraphs: [
         'La explicación de siempre es una cadena: cuando el pie se va hacia adentro, la tibia gira hacia adentro con él, y la rodilla se desvía hacia adentro. Ese movimiento hacia adentro se llama pronación, y un poco es normal en cada paso. La idea es que demasiada pronación cambia cómo se desliza la rótula en su surco.',
-        'El pie y la tibia sí giran juntos. Si eso explica el dolor de rodilla es menos claro. Una revisión de 2009 de Barton y colegas juntó 24\u00A0estudios sobre cómo caminan y corren las personas con dolor de rótula. Encontró algunas diferencias en el hueso del talón y más movimiento hacia adentro de la cadera en corredores. Pero la revisión no encontró estudios prospectivos con datos útiles. Los estudios que pudo analizar comparaban a personas que ya tenían dolor con personas que no, lo que no permite separar la causa del efecto.',
-        'La evidencia prospectiva es escasa. Una revisión de 2014 de Neal y colegas juntó 21\u00A0estudios prospectivos con 6228\u00A0personas, estudios que siguen a las personas en el tiempo para ver quién se lesiona. Un pie que se va hacia adentro fue un factor de riesgo claro para la periostitis tibial. Para el dolor de rótula, la evidencia fue muy limitada y los efectos fueron pequeños. Los autores concluyeron que la postura del pie es una pieza de una evaluación más amplia, no la respuesta por sí sola.',
+        'El pie y la tibia sí giran juntos. Si eso explica el dolor de rodilla es menos claro, y la evidencia prospectiva es escasa. Dos revisiones lo estudiaron:',
+        {
+          list: [
+            '**Barton y colegas, 2009:** juntó 24\u00A0estudios sobre cómo caminan y corren las personas con dolor de rótula. Encontró algunas diferencias en el hueso del talón y más movimiento hacia adentro de la cadera en corredores. Pero la revisión no encontró estudios prospectivos con datos útiles. Los estudios que pudo analizar comparaban a personas que ya tenían dolor con personas que no, lo que no permite separar la causa del efecto.',
+            '**Neal y colegas, 2014:** juntó 21\u00A0estudios prospectivos con 6228\u00A0personas, estudios que siguen a las personas en el tiempo para ver quién se lesiona. Un pie que se va hacia adentro fue un factor de riesgo claro para la periostitis tibial. Para el dolor de rótula, la evidencia fue muy limitada y los efectos fueron pequeños. Los autores concluyeron que la postura del pie es una pieza de una evaluación más amplia, no la respuesta por sí sola.',
+          ],
+        },
         'La cadera está en la parte de arriba de la misma cadena. Los músculos débiles en la parte externa de la cadera dejan que el muslo gire hacia adentro, y eso puede jalar la rodilla hacia adentro desde arriba. Es una de las razones por las que los consejos de ejercicio para el dolor de rótula empiezan por la cadera, no por el pie.',
       ],
       sourceNote:
@@ -82,9 +98,18 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
       keyFact: 'En un ensayo con 179\u00A0adultos con dolor de rótula, las plantillas con forma superaron a las plantillas planas a corto plazo, pero no fueron mejores que la fisioterapia (Collins y colegas, 2008).',
       paragraphs: [
         'Las plantillas con forma pueden aliviar el dolor en la parte delantera de la rodilla a corto plazo, pero aportan poco cuando ya haces un buen programa de ejercicio.',
-        'La prueba más clara es un ensayo de 2008 publicado en el BMJ. Collins y colegas dividieron a 179\u00A0adultos de 18 a 40\u00A0años con dolor alrededor de la rótula en cuatro grupos: plantillas con forma compradas en tienda, plantillas planas, fisioterapia (ejercicio para los músculos del muslo, vendaje, terapia manual y consejos), o plantillas más fisioterapia. Las plantillas con forma funcionaron mejor que las planas después de un mes y medio. No fueron mejores que la fisioterapia, y agregarlas a la fisioterapia no mejoró los resultados. Al año, los cuatro grupos habían mejorado de forma importante.',
+        'La prueba más clara es un ensayo de 2008 publicado en el BMJ. Collins y colegas dividieron a 179\u00A0adultos de 18 a 40\u00A0años con dolor alrededor de la rótula en cuatro grupos:',
+        {
+          list: [
+            'Plantillas con forma compradas en tienda.',
+            'Plantillas planas.',
+            'Fisioterapia: ejercicio para los músculos del muslo, vendaje, terapia manual y consejos.',
+            'Plantillas más fisioterapia.',
+          ],
+        },
+        'Las plantillas con forma funcionaron mejor que las planas después de un mes y medio. No fueron mejores que la fisioterapia, y agregarlas a la fisioterapia no mejoró los resultados. Al año, los cuatro grupos habían mejorado de forma importante.',
         'Un ensayo más pequeño de 2018, de Mølgaard y colegas, eligió a 40\u00A0personas con dolor de rótula cuyo talón se inclinaba hacia adentro más de lo normal. Agregar ejercicios de pie y plantillas a medida a los ejercicios de rodilla dio 8,9\u00A0puntos más de alivio del dolor en una escala de rodilla de 100\u00A0puntos a los cuatro meses. A los doce meses, la diferencia entre los grupos ya no era estadísticamente clara. El ensayo no puede decir si la diferencia vino de las plantillas, de los ejercicios de pie o de las sesiones extra.',
-        'La guía de 2019 lo resume así: las plantillas compradas en tienda pueden usarse en personas cuyo pie se va hacia adentro más de lo normal, solo para aliviar el dolor a corto plazo y siempre junto con ejercicio. No encontró suficiente evidencia para preferir las plantillas a medida sobre las compradas en tienda. Para el debate más amplio sobre plantillas, mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
+        'La guía de 2019 lo resume así: **las plantillas compradas en tienda pueden usarse en personas cuyo pie se va hacia adentro más de lo normal, solo para aliviar el dolor a corto plazo y siempre junto con ejercicio.** No encontró suficiente evidencia para preferir las plantillas a medida sobre las compradas en tienda. Para el debate más amplio sobre plantillas, mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
       ],
       sourceNote:
         'Collins 2008: ensayo aleatorizado simple ciego, resultados a un mes y medio, a los tres meses y al año; plantillas con forma frente a plantillas planas en la mejoría global, número necesario para beneficiar de 4. Uno de los autores había recibido financiamiento de un fabricante de plantillas. Mølgaard 2018: subescala de dolor del KOOS, 8,9\u00A0puntos (IC del 95\u00A0%: 0,4 a 17,4). Willy 2019: grado A.',

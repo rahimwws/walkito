@@ -130,15 +130,25 @@ export const VS_EXAKT_FR: Guide = {
       paragraphs: [
         'Exakt Health est conçue pour les coureurs. C’est son identité de base, et tout dans l’application le reflète. Si vous êtes coureur et que vous récupérez d’une fasciite plantaire, d’une tendinopathie d’Achille, d’une entorse de cheville, d’une lésion des ischio-jambiers ou d’une lésion du ménisque, Exakt a un plan de rééducation propre à votre blessure. Elle couvre plus de 15\u00A0problèmes différents.',
         'Chaque plan de rééducation se termine par un programme marche-course de reprise de la course, l’une des étapes de la récupération les plus difficiles à bien gérer seul. L’application propose aussi des plans d’entraînement à la course pour toutes les distances, du canapé au 5\u00A0km jusqu’au marathon.',
-        'Exakt a été fondée en 2021 par Philip Billaudelle, Lucia Payo et Maryke Louw. Elle est conçue par des kinésithérapeutes du sport diplômés et des entraîneurs de course, et a levé environ 2,2\u00A0millions d’euros en amorçage en septembre 2024. L’équipe est basée à Berlin. L’application est certifiée comme dispositif médical dans l’UE, ce qui veut dire qu’elle a passé un examen réglementaire pour son usage prévu.',
-        'Si vous êtes coureur et avez besoin à la fois d’une rééducation et d’un plan d’entraînement structuré, Exakt est difficile à égaler. Sa note de 4,8 sur 125\u00A0avis iOS et ses plus de 100\u00A0000\u00A0téléchargements sur Android montrent qu’elle fonctionne pour son public.',
+        'Exakt a été fondée en 2021 par Philip Billaudelle, Lucia Payo et Maryke Louw. Elle est conçue par des kinésithérapeutes du sport diplômés et des entraîneurs de course, et a levé environ 2,2\u00A0millions d’euros en amorçage en septembre 2024. L’équipe est basée à Berlin.',
+        'L’application est certifiée comme dispositif médical dans l’UE, ce qui veut dire qu’elle a passé un examen réglementaire pour son usage prévu.',
+        '**Si vous êtes coureur et avez besoin à la fois d’une rééducation et d’un plan d’entraînement structuré, Exakt est difficile à égaler.** Sa note de 4,8 sur 125\u00A0avis iOS et ses plus de 100\u00A0000\u00A0téléchargements sur Android montrent qu’elle fonctionne pour son public.',
       ],
     },
     {
       h2: 'Pour qui Walkito est-elle conçue\u00A0?',
       paragraphs: [
-        'Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices quotidien qui s’adapte à leur état chaque matin. Cela inclut la fasciite plantaire, les pieds plats souples et la douleur au tibia. Elle est aussi conçue pour les personnes debout toute la journée\u00A0: infirmières, employés de commerce, personnel d’entrepôt.',
-        'L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est ajuster la séance de chaque jour à partir d’un bilan de douleur le matin plutôt que d’un retour en fin de séance. Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé) transforme la séance de renforcement suivante en séance de récupération plus légère.',
+        'Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices quotidien qui s’adapte à leur état chaque matin. Cela inclut\u00A0:',
+        {
+          list: [
+            'La fasciite plantaire.',
+            'Les pieds plats souples.',
+            'La douleur au tibia.',
+          ],
+        },
+        'Elle est aussi conçue pour les personnes debout toute la journée\u00A0: infirmières, employés de commerce, personnel d’entrepôt.',
+        'L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster la séance de chaque jour à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.',
+        'Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé) transforme la séance de renforcement suivante en séance de récupération plus légère.',
         'Walkito teste vos progrès tous les 14\u00A0jours avec des montées sur pointes, un maintien de la voûte et l’équilibre sur une jambe, et compare votre côté gauche à votre côté droit. Cette comparaison gauche-droite n’est pas suivie par la plupart des applications de ce domaine.',
         'Walkito est sortie le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes d’utilisateurs, et n’existe que sur iOS. Elle n’a ni l’historique ni l’étendue qu’Exakt a construits depuis 2021.',
       ],
@@ -147,7 +157,17 @@ export const VS_EXAKT_FR: Guide = {
       h2: 'Comment chaque application construit-elle votre plan\u00A0?',
       paragraphs: [
         'Exakt vous interroge sur votre blessure, votre niveau d’expérience et votre emploi du temps de la semaine, puis vous attribue un plan de rééducation structuré par niveaux. Vous passez les niveaux selon le déroulement de chaque séance. Une fois la rééducation terminée, vous pouvez passer directement à un plan d’entraînement à la course sans repartir de zéro.',
-        'Walkito vous interroge sur l’endroit de la douleur, le côté, votre niveau d’activité, votre objectif, et le nombre de jours et de minutes dont vous disposez. Elle construit un plan hebdomadaire autour d’objectifs mesurés\u00A0: des matins sans douleur, un maintien de la voûte de 60\u00A0secondes, 25\u00A0montées sur pointes sur une jambe, 30\u00A0secondes d’équilibre sur une jambe, et la symétrie gauche-droite. Chaque semaine, elle reconstruit le plan à partir du déroulement de la semaine précédente. Un seul objectif est prioritaire à la fois. Quand un objectif est atteint, il passe en entretien et le suivant commence.',
+        'Walkito vous interroge sur l’endroit de la douleur, le côté, votre niveau d’activité, votre objectif, et le nombre de jours et de minutes dont vous disposez. Elle construit un plan hebdomadaire autour d’objectifs mesurés\u00A0:',
+        {
+          list: [
+            'Des matins sans douleur.',
+            'Un maintien de la voûte de 60\u00A0secondes.',
+            '25\u00A0montées sur pointes sur une jambe.',
+            '30\u00A0secondes d’équilibre sur une jambe.',
+            'La symétrie gauche-droite.',
+          ],
+        },
+        'Chaque semaine, elle reconstruit le plan à partir du déroulement de la semaine précédente. Un seul objectif est prioritaire à la fois. Quand un objectif est atteint, il passe en entretien et le suivant commence.',
         'La principale différence\u00A0: Exakt suit une progression structurée par niveaux. Walkito suit une progression par objectifs, où le bilan de chaque matin ajuste l’intensité de la journée.',
       ],
     },
@@ -155,7 +175,7 @@ export const VS_EXAKT_FR: Guide = {
       h2: 'Quels problèmes chaque application couvre-t-elle\u00A0?',
       keyFact: 'Les exercices de Walkito suivent la recommandation de 2023 sur la douleur au talon, qui donne aux étirements du fascia plantaire et du mollet la note A et au renforcement musculaire la note B (Koc et coll., 2023).',
       paragraphs: [
-        'C’est là qu’Exakt est nettement plus forte. Ses plans de rééducation couvrent la fasciite plantaire, la tendinopathie d’Achille, les entorses de cheville, les lésions des ischio-jambiers, les lésions du ménisque, le genou du coureur et d’autres encore. Si votre douleur est au genou, à la hanche ou aux ischio-jambiers, Walkito n’a pas de plan pour cela.',
+        '**C’est là qu’Exakt est nettement plus forte.** Ses plans de rééducation couvrent la fasciite plantaire, la tendinopathie d’Achille, les entorses de cheville, les lésions des ischio-jambiers, les lésions du ménisque, le genou du coureur et d’autres encore. Si votre douleur est au genou, à la hanche ou aux ischio-jambiers, Walkito n’a pas de plan pour cela.',
         'Walkito couvre la fasciite plantaire, les pieds plats (souples), la douleur au talon liée à la station debout et la douleur au tibia. Ses exercices suivent la recommandation de 2023 sur la douleur au talon (étirements note A, renforcement note B) et l’essai de Rathleff 2015 (montées sur pointes avec charge pour la fasciite plantaire). Pour ces problèmes précis, elle a des exercices, une logique de progression et une adaptation à la douleur. Pour tout ce qui sort de ce cadre, Exakt ou une application plus large comme Prehab est le bon choix.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -165,8 +185,15 @@ export const VS_EXAKT_FR: Guide = {
       paragraphs: [
         'Walkito coûte 44,99\u00A0$ par an ou 7,99\u00A0$ par semaine. Le prix annuel revient à environ 0,87\u00A0$ par semaine. Aucun essai gratuit n’est indiqué sur l’App Store, même si les conditions d’utilisation prévoient des offres de lancement.',
         'Exakt coûte 19,99\u00A0$ par mois pour les plans de rééducation, avec des formules de 3\u00A0mois (39,99\u00A0$) et de 6\u00A0mois (59,99\u00A0$). Les plans d’entraînement à la course vont jusqu’à 99,99\u00A0$ par an. Chaque abonnement commence par un essai gratuit de 7\u00A0jours.',
-        'Sur une année complète\u00A0: l’abonnement annuel de Walkito coûte 44,99\u00A0$. La formule de rééducation la moins chère d’Exakt (le plan de 6\u00A0mois renouvelé deux fois) revient à environ 120\u00A0$. Avec un plan de course en plus, Exakt peut dépasser 200\u00A0$ par an.',
-        'Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, Walkito est nettement moins chère. Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, le prix plus élevé d’Exakt couvre davantage.',
+        'Sur une année complète\u00A0:',
+        {
+          list: [
+            'L’abonnement annuel de Walkito coûte 44,99\u00A0$.',
+            'La formule de rééducation la moins chère d’Exakt (le plan de 6\u00A0mois renouvelé deux fois) revient à environ 120\u00A0$.',
+            'Avec un plan de course en plus, Exakt peut dépasser 200\u00A0$ par an.',
+          ],
+        },
+        'Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, **Walkito est nettement moins chère.** Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, le prix plus élevé d’Exakt couvre davantage.',
       ],
     },
     {
@@ -180,16 +207,32 @@ export const VS_EXAKT_FR: Guide = {
       h2: 'Confidentialité',
       paragraphs: [
         'Walkito lit les données Apple Santé (pas, sommeil, asymétrie de la marche, vitesse de marche, fréquence cardiaque au repos) et les garde sur l’appareil. Elles ne sont jamais envoyées. Ce qui est synchronisé avec le compte Walkito, ce sont les scores de douleur, les données de séance et les résultats des tests. Il n’y a pas de pistage publicitaire.',
-        'L’étiquette de confidentialité d’Exakt Health sur l’App Store indique les identifiants comme données utilisées pour vous pister, et les achats, les identifiants, les données d’utilisation et les diagnostics comme données collectées mais non liées à votre identité. Sa fiche Google Play indique qu’aucune donnée n’est partagée avec des tiers, que des données financières peuvent être collectées, que les données sont chiffrées en transit et que leur suppression est possible.',
-        'Les deux applications collectent des données d’utilisation classiques. Aucune ne vend de données de santé. L’approche de Walkito, qui garde les données Apple Santé sur l’appareil, est un modèle de confidentialité plus strict.',
+        'L’étiquette de confidentialité d’Exakt Health sur l’App Store indique les identifiants comme données utilisées pour vous pister, et les achats, les identifiants, les données d’utilisation et les diagnostics comme données collectées mais non liées à votre identité. Sa fiche Google Play indique\u00A0:',
+        {
+          list: [
+            'Qu’aucune donnée n’est partagée avec des tiers.',
+            'Que des données financières peuvent être collectées.',
+            'Que les données sont chiffrées en transit.',
+            'Que leur suppression est possible.',
+          ],
+        },
+        'Les deux applications collectent des données d’utilisation classiques. **Aucune ne vend de données de santé.** L’approche de Walkito, qui garde les données Apple Santé sur l’appareil, est un modèle de confidentialité plus strict.',
       ],
     },
     {
       h2: 'Sur quelles données scientifiques chaque application repose-t-elle\u00A0?',
       paragraphs: [
         'Exakt Health est certifiée comme dispositif médical dans l’UE (Allemagne), ce qui demande des preuves de sécurité et d’usage prévu. L’application est conçue par des kinésithérapeutes du sport diplômés. Elle indique que ses méthodes sont fondées sur des preuves, mais ne cite pas d’études précises sur sa fiche App Store ni sur sa page de prix.',
-        'Walkito liste ses sources sur son site. Ses exercices suivent la recommandation clinique de 2023 sur la douleur au talon (Koc et coll., JOSPT), l’essai de Rathleff 2015 sur les montées sur pointes avec charge lourde, l’essai de Brijwasi 2023 sur les exercices pour les pieds plats, et d’autres. Chaque exercice de l’application porte un niveau de preuve (solide, modéré ou préliminaire) avec une explication en une ligne.',
-        'Aucune des deux applications n’a publié son propre essai clinique. Les deux s’appuient sur la recherche existante, appliquée à travers leurs programmes respectifs.',
+        'Walkito liste ses sources sur son site. Ses exercices suivent\u00A0:',
+        {
+          list: [
+            'La recommandation clinique de 2023 sur la douleur au talon (Koc et coll., JOSPT).',
+            'L’essai de Rathleff 2015 sur les montées sur pointes avec charge lourde.',
+            'L’essai de Brijwasi 2023 sur les exercices pour les pieds plats, et d’autres.',
+          ],
+        },
+        'Chaque exercice de l’application porte un niveau de preuve (solide, modéré ou préliminaire) avec une explication en une ligne.',
+        '**Aucune des deux applications n’a publié son propre essai clinique.** Les deux s’appuient sur la recherche existante, appliquée à travers leurs programmes respectifs.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

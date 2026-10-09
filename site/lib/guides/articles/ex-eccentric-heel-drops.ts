@@ -31,14 +31,15 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
       h2: 'What is an eccentric heel drop?',
       paragraphs: [
         'An eccentric muscle contraction is one where the muscle lengthens under load. In a heel drop, the calf lengthens as you lower the heel below the step. That controlled descent is what builds tendon capacity over weeks. The upward phase is done on both feet to remove the concentric effort from the injured side.',
-        'The most common confusion is between a heel drop and a calf stretch. A stretch holds the bottom position. A heel drop moves through it slowly, with the muscle working the whole way. Holding the bottom like a stretch removes the loading stimulus that makes the exercise work. The benefit is in the slow, controlled descent.',
+        'The most common confusion is between a heel drop and a calf stretch. A stretch holds the bottom position. A heel drop moves through it slowly, with the muscle working the whole way. Holding the bottom like a stretch removes the loading stimulus that makes the exercise work. **The benefit is in the slow, controlled descent.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: 'How do you do eccentric heel drops?',
       paragraphs: [
-        'Stand on the edge of a step with the balls of your feet on the step and heels off the edge. Rise up on both feet. Shift your weight to the working leg. Lower that heel slowly over about three seconds, letting it sink below the step. Keep the knee straight. Use both feet to rise back to the top.',
+        'Stand on the edge of a step with the balls of your feet on the step and heels off the edge. Rise up on both feet. Shift your weight to the working leg.',
+        'Lower that heel slowly over about three seconds, letting it sink below the step. Keep the knee straight. Use both feet to rise back to the top.',
         'A straight-knee heel drop targets the gastrocnemius, the bigger, more superficial calf muscle. Alfredson also prescribed a bent-knee version to target the soleus, the deeper calf muscle. The bent-knee version is the same movement with the knee bent to about 30 to 45 degrees during the lowering phase.',
       ],
       exercises: [
@@ -90,17 +91,29 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
       paragraphs: [
         'Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops over a step edge are appropriate here.',
         'Insertional Achilles tendinopathy is pain right where the tendon meets the bone. In a 2008 pilot study of 27 people with chronic insertional pain, a modified protocol using floor-level-only eccentric loading, with no drop below neutral, reported good results in 67 percent of cases. Deep dorsiflexion compresses the tendon against the heel bone, which makes standard deep drops counterproductive for insertional pain.',
-        'If your pain is right at the back of the heel bone, do all heel drops on the floor. Do not go below the step edge. Do not stretch aggressively. This is the most commonly missed modification in Achilles programs. For the full condition page, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+        'If your pain is right at the back of the heel bone:',
+        {
+          list: [
+            'Do all heel drops on the floor.',
+            'Do not go below the step edge.',
+            'Do not stretch aggressively.',
+          ],
+        },
+        'This is the most commonly missed modification in Achilles programs. For the full condition page, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'What are the common mistakes with eccentric heel drops?',
       paragraphs: [
-        'Holding the bottom position like a stretch. The benefit is in the slow descent, not in hanging at the bottom. Lower over three seconds, then use both feet to come back up immediately.',
-        'Dropping too far. The heel should sink to its natural range below the step. Forcing it lower, tilting the foot in or out to get more range, strains the tendons on the inside or outside of the ankle. Three to five centimeters below the step is enough.',
-        'Going too fast. Speed removes the eccentric load that the exercise is built around. If you cannot control the descent over about three seconds, drop to a double-leg version first.',
-        'Skipping the bent-knee version. The straight-knee drop targets the gastrocnemius. The bent-knee version targets the soleus. Both muscles contribute to the Achilles tendon. The original protocol includes both.',
+        {
+          list: [
+            '**Holding the bottom position like a stretch.** The benefit is in the slow descent, not in hanging at the bottom. Lower over three seconds, then use both feet to come back up immediately.',
+            '**Dropping too far.** The heel should sink to its natural range below the step. Forcing it lower, tilting the foot in or out to get more range, strains the tendons on the inside or outside of the ankle. Three to five centimeters below the step is enough.',
+            '**Going too fast.** Speed removes the eccentric load that the exercise is built around. If you cannot control the descent over about three seconds, drop to a double-leg version first.',
+            '**Skipping the bent-knee version.** The straight-knee drop targets the gastrocnemius. The bent-knee version targets the soleus. Both muscles contribute to the Achilles tendon. The original protocol includes both.',
+          ],
+        },
       ],
     },
     {

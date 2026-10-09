@@ -60,9 +60,17 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
     {
       h2: 'Quali muscoli lavorano nella raccolta dell’asciugamano?',
       paragraphs: [
-        'La raccolta dell’asciugamano lavora sui muscoli flessori delle dita: il flessore breve delle dita (che sta dentro il piede), il flessore breve dell’alluce e il quadrato della pianta. Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.',
+        'La raccolta dell’asciugamano lavora sui muscoli flessori delle dita:',
+        {
+          list: [
+            'Il flessore breve delle dita (che sta dentro il piede).',
+            'Il flessore breve dell’alluce.',
+            'Il quadrato della pianta.',
+          ],
+        },
+        'Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.',
         'Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano. La raccolta dell’asciugamano produceva invece più attività nei flessori estrinseci delle dita.',
-        'Questo vuol dire che la raccolta dell’asciugamano è un buon esercizio per la forza di presa delle dita, ma è meno specifica per i muscoli intrinseci dell’arco rispetto all’[esercizio del piede corto](/it/esercizi/piede-corto/).',
+        'Questo vuol dire che **la raccolta dell’asciugamano è un buon esercizio per la forza di presa delle dita**, ma è meno specifica per i muscoli intrinseci dell’arco rispetto all’[esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
       cites: [CITE.jung],
     },
@@ -80,7 +88,8 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
       keyFact: 'In uno studio del 2020 su 41\u00A0persone (56\u00A0piedi) con metatarsalgia, dopo un programma di otto settimane di esercizi per le dita con raccolta dell’asciugamano e raccolta di biglie il dolore era minore e la presa delle dita migliore, senza gruppo di controllo (Amaha e colleghi, 2020).',
       paragraphs: [
         'La raccolta dell’asciugamano va bene per chi è alle prime armi con gli esercizi per il piede e vuole un punto di partenza semplice. Va bene anche per chi ha una presa debole delle dita, perché l’esercizio allena direttamente la capacità di flettere le dita sotto carico.',
-        'Uno studio del 2020 di Amaha e colleghi ha seguito 41\u00A0persone (56\u00A0piedi) con metatarsalgia primaria, cioè dolore sotto l’avampiede, durante un programma di otto settimane di esercizi per le dita che includeva la raccolta dell’asciugamano e la raccolta di biglie. La forza di presa delle dita e i punteggi del dolore sono migliorati dal prima al dopo il programma. Non c’era un gruppo di controllo, quindi parte del cambiamento potrebbe dipendere dal tempo o dall’attenzione ricevuta più che dagli esercizi. La forza di presa delle dita può contare anche per gli anziani a rischio di cadute, perché le dita aiutano l’equilibrio quando stai in piedi e cammini.',
+        'Uno studio del 2020 di Amaha e colleghi ha seguito 41\u00A0persone (56\u00A0piedi) con metatarsalgia primaria, cioè dolore sotto l’avampiede, durante un programma di otto settimane di esercizi per le dita che includeva la raccolta dell’asciugamano e la raccolta di biglie. La forza di presa delle dita e i punteggi del dolore sono migliorati dal prima al dopo il programma. Non c’era un gruppo di controllo, quindi parte del cambiamento potrebbe dipendere dal tempo o dall’attenzione ricevuta più che dagli esercizi.',
+        'La forza di presa delle dita può contare anche per gli anziani a rischio di cadute, perché le dita aiutano l’equilibrio quando stai in piedi e cammini.',
         'Se il tuo obiettivo principale è alzare un arco piatto, l’[esercizio del piede corto](/it/esercizi/piede-corto/) e il [programma di esercizi per il piede piatto](/it/esercizi-piede-piatto/) sono più mirati. Se il tuo obiettivo principale è la presa delle dita e l’attivazione generale dei muscoli del piede, la raccolta dell’asciugamano è una buona scelta.',
       ],
       cites: [CITE.amaha],
@@ -88,10 +97,14 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nella raccolta dell’asciugamano?',
       paragraphs: [
-        'L’errore più comune è sollevare il tallone da terra. Quando il tallone si alza, prende il comando il polpaccio e i muscoli del piede lavorano meno. Premi il tallone a terra per tutta la ripetizione.',
-        'Un altro errore è tirare troppo veloce. Uno strattone veloce all’asciugamano usa lo slancio invece della contrazione muscolare. Tira piano e tieni l’asciugamano raccolto per tutti i cinque secondi prima di lasciare.',
-        'Alcune persone afferrano solo con l’alluce e ignorano le dita più piccole. Prova a usare tutte e cinque le dita insieme. Se all’inizio le dita piccole non collaborano, è normale. La coordinazione migliora con la pratica.',
-        'Infine, non lasciare che il piede scivoli di lato sull’asciugamano. La tirata deve andare dritta indietro, dalle dita verso il tallone. Se l’asciugamano si sposta da un lato, risistemalo e concentrati sull’usare le dita in modo uniforme.',
+        {
+          list: [
+            '**L’errore più comune è sollevare il tallone da terra.** Quando il tallone si alza, prende il comando il polpaccio e i muscoli del piede lavorano meno. Premi il tallone a terra per tutta la ripetizione.',
+            '**Un altro errore è tirare troppo veloce.** Uno strattone veloce all’asciugamano usa lo slancio invece della contrazione muscolare. Tira piano e tieni l’asciugamano raccolto per tutti i cinque secondi prima di lasciare.',
+            '**Alcune persone afferrano solo con l’alluce e ignorano le dita più piccole.** Prova a usare tutte e cinque le dita insieme. Se all’inizio le dita piccole non collaborano, è normale. La coordinazione migliora con la pratica.',
+            '**Infine, non lasciare che il piede scivoli di lato sull’asciugamano.** La tirata deve andare dritta indietro, dalle dita verso il tallone. Se l’asciugamano si sposta da un lato, risistemalo e concentrati sull’usare le dita in modo uniforme.',
+          ],
+        },
       ],
     },
   ],

@@ -38,8 +38,9 @@ export const CALF_RAISES_IT: Guide = {
       keyFact: 'In uno studio su 48\u00A0persone, il gruppo dei sollevamenti sulle punte aveva un punteggio migliore di 29\u00A0punti nel Foot Function Index a tre mesi, anche se a dodici mesi i due gruppi si erano allineati (Rathleff e colleghi, 2015).',
       paragraphs: [
         'I sollevamenti sulle punte aiutano la fascite plantare perché rinforzano la catena polpaccio-Achille-fascia che assorbe il carico ogni volta che il tallone tocca terra.',
-        'L’unico studio randomizzato che ha testato direttamente questo esercizio per la fascite plantare è Rathleff 2015. In quello studio, 48\u00A0persone con fascite plantare confermata da ecografia sono state divise in due gruppi. Tutti portavano plantari. Un gruppo faceva un sollevamento sulle punte lento e con carico, con un asciugamano arrotolato sotto le dita. L’altro allungava la fascia plantare. A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) nel Foot Function Index. A dodici mesi, i due gruppi si erano allineati.',
-        'Quindi i sollevamenti sulle punte hanno anticipato il miglioramento. Non hanno dato un miglioramento più grande nel lungo periodo. La linea guida clinica del 2023 dà al lavoro di forza una B e allo stretching una A. Li consiglia entrambi. Niente nelle prove suggerisce di sceglierne uno e saltare l’altro.',
+        'L’unico studio randomizzato che ha testato direttamente questo esercizio per la fascite plantare è Rathleff 2015. In quello studio, 48\u00A0persone con fascite plantare confermata da ecografia sono state divise in due gruppi. Tutti portavano plantari. Un gruppo faceva un sollevamento sulle punte lento e con carico, con un asciugamano arrotolato sotto le dita. L’altro allungava la fascia plantare.',
+        'A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) nel Foot Function Index. A dodici mesi, i due gruppi si erano allineati.',
+        '**Quindi i sollevamenti sulle punte hanno anticipato il miglioramento.** Non hanno dato un miglioramento più grande nel lungo periodo. La linea guida clinica del 2023 dà al lavoro di forza una B e allo stretching una A. Li consiglia entrambi. Niente nelle prove suggerisce di sceglierne uno e saltare l’altro.',
       ],
       sourceNote:
         'Rathleff 2015: Foot Function Index più basso di 29\u00A0punti nel gruppo dei sollevamenti a 3\u00A0mesi (IC al 95%: 6-52, p = 0,016). A 12\u00A0mesi, 22 contro 16, nessuna differenza significativa.',
@@ -48,8 +49,9 @@ export const CALF_RAISES_IT: Guide = {
     {
       h2: 'Come si fa il sollevamento sulle punte con asciugamano per la fascite plantare?',
       paragraphs: [
-        'Il sollevamento sulle punte con asciugamano è l’esercizio dello studio di Rathleff. È un sollevamento su una gamba su un gradino, con un asciugamano arrotolato sotto le dita. L’asciugamano tira le dita verso l’alto quando sei in cima, e questo attiva il meccanismo a verricello: il modo in cui la fascia plantare si tende quando l’alluce si piega indietro. Senza asciugamano alleni il polpaccio, ma carichi molto meno la fascia.',
-        'Stai su un piede sul bordo di un gradino, con un asciugamano da mani arrotolato sotto tutte e cinque le dita. L’avampiede resta sul gradino. Tieniti a un muro o a un corrimano per l’equilibrio. Sali in tre secondi, tieni due secondi in alto e scendi in tre secondi. Lascia il tallone un po’ sotto il livello del gradino mentre scendi. Nello studio, i partecipanti aggiungevano peso con uno zaino quando il peso del corpo diventava troppo facile.',
+        'Il sollevamento sulle punte con asciugamano è l’esercizio dello studio di Rathleff. È un sollevamento su una gamba su un gradino, con un asciugamano arrotolato sotto le dita. L’asciugamano tira le dita verso l’alto quando sei in cima, e questo attiva il meccanismo a verricello: il modo in cui la fascia plantare si tende quando l’alluce si piega indietro. **Senza asciugamano alleni il polpaccio, ma carichi molto meno la fascia.**',
+        'Stai su un piede sul bordo di un gradino, con un asciugamano da mani arrotolato sotto tutte e cinque le dita. L’avampiede resta sul gradino. Tieniti a un muro o a un corrimano per l’equilibrio.',
+        'Sali in tre secondi, tieni due secondi in alto e scendi in tre secondi. Lascia il tallone un po’ sotto il livello del gradino mentre scendi. Nello studio, i partecipanti aggiungevano peso con uno zaino quando il peso del corpo diventava troppo facile.',
         'Parti su due piedi se per ora i sollevamenti su una gamba sono troppo duri. I sollevamenti su due piedi a terra, senza gradino, sono l’inizio della catena del polpaccio. L’asciugamano e il gradino arrivano dopo, quando i sollevamenti in piedi ti sono sembrati facili per due sessioni di fila.',
       ],
       exercises: [
@@ -147,8 +149,20 @@ export const CALF_RAISES_IT: Guide = {
     {
       h2: 'Da cosa ti fa partire Walkito?',
       paragraphs: [
-        'Walkito non ti butta nel protocollo di Rathleff dal primo giorno. L’app parte dai sollevamenti sulle punte da seduto (3\u00A0serie da 10, entrambi i piedi), poi passa ai sollevamenti in piedi su due piedi, poi alla tenuta sulle punte, e solo dopo al sollevamento su una gamba con asciugamano e carico. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili. Questa scala è il ritmo scelto dall’app, non un protocollo pubblicato, ed esiste perché la maggior parte di chi inizia un piano di esercizi per il dolore al tallone non è pronto per un sollevamento su una gamba con peso alla prima sessione.',
-        'La catena del polpaccio nell’app è: sollevamenti sulle punte da seduto, sollevamenti sulle punte su due piedi, tenuta sulle punte, sollevamenti sulle punte con asciugamano, discese del tallone (una discesa eccentrica dal bordo di un gradino) e saltelli sulle punte. Il sollevamento con asciugamano è il livello 4 di 6. Raggiungere l’obiettivo del polpaccio, 25\u00A0sollevamenti su una gamba, non chiude il lavoro sul polpaccio. Passa al mantenimento, e un nuovo obiettivo prende il suo posto.',
+        'Walkito non ti butta nel protocollo di Rathleff dal primo giorno. L’app parte dai sollevamenti sulle punte da seduto (3\u00A0serie da 10, entrambi i piedi), poi passa ai sollevamenti in piedi su due piedi, poi alla tenuta sulle punte, e solo dopo al sollevamento su una gamba con asciugamano e carico. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili.',
+        'Questa scala è il ritmo scelto dall’app, non un protocollo pubblicato, ed esiste perché la maggior parte di chi inizia un piano di esercizi per il dolore al tallone non è pronto per un sollevamento su una gamba con peso alla prima sessione.',
+        'La catena del polpaccio nell’app è:',
+        {
+          list: [
+            'Sollevamenti sulle punte da seduto.',
+            'Sollevamenti sulle punte su due piedi.',
+            'Tenuta sulle punte.',
+            'Sollevamenti sulle punte con asciugamano.',
+            'Discese del tallone (una discesa eccentrica dal bordo di un gradino).',
+            'Saltelli sulle punte.',
+          ],
+        },
+        'Il sollevamento con asciugamano è il livello 4 di 6. Raggiungere l’obiettivo del polpaccio, 25\u00A0sollevamenti su una gamba, non chiude il lavoro sul polpaccio. Passa al mantenimento, e un nuovo obiettivo prende il suo posto.',
       ],
       cites: [CITE.rathleff],
     },
@@ -157,8 +171,9 @@ export const CALF_RAISES_IT: Guide = {
       figure: { id: 'calf', caption: 'I due muscoli del polpaccio, il gastrocnemio e il soleo, si uniscono nel tendine d’Achille, che si attacca all’osso del tallone.', alt: 'Viste laterale e posteriore di una gamba con i muscoli gastrocnemio e soleo che si assottigliano nel tendine d’Achille, sopra il tallone.' },
       keyFact: 'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo (Patel e colleghi, 2011).',
       paragraphs: [
-        'Un polpaccio rigido tira il tallone attraverso il tendine d’Achille, e la fascia plantare si divide il carico dall’altra parte. Quando la caviglia non riesce a piegarsi abbastanza, ogni passo mette più tensione sulla fascia.',
-        'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, il muscolo superficiale del polpaccio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. A parte, uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli ha trovato che una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte per la fascite plantare.',
+        'Un polpaccio rigido tira il tallone attraverso il tendine d’Achille, e la fascia plantare si divide il carico dall’altra parte. **Quando la caviglia non riesce a piegarsi abbastanza, ogni passo mette più tensione sulla fascia.**',
+        'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, il muscolo superficiale del polpaccio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo.',
+        'A parte, uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli ha trovato che una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte per la fascite plantare.',
         'Per questo nell’elenco ci sono sia l’allungamento sia il rinforzo del polpaccio. L’allungamento dà più movimento alla caviglia. Il rinforzo dà al polpaccio abbastanza capacità da non irrigidirsi sotto il normale carico quotidiano. La linea guida consiglia entrambi. Lo stesso meccanismo del polpaccio rigido compare anche in altri dolori della gamba: vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) e [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) se il tuo dolore somiglia più a uno di questi.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -166,8 +181,9 @@ export const CALF_RAISES_IT: Guide = {
     {
       h2: 'Che differenza c’è tra i sollevamenti sulle punte per la fascite plantare e per la tendinite d’Achille?',
       paragraphs: [
-        'Il movimento è quasi lo stesso, ma cambiano lo scopo, l’asciugamano e la regola sul dolore. Per la fascite plantare, l’asciugamano sotto le dita carica la fascia attraverso il meccanismo a verricello. Il ritmo è 3\u00A0secondi su, 2 in alto, 3 giù, a giorni alterni. La regola sul dolore di questa pagina è: fermati se il dolore arriva a 6/10 o più.',
-        'Per la tendinite d’Achille, il protocollo classico è la discesa eccentrica del tallone (solo la discesa, con la salita fatta su due piedi), in origine due volte al giorno, sette giorni su sette, e anche con dolore fino a circa 5/10 purché passi entro la mattina dopo. L’asciugamano non si usa perché caricare la fascia non è lo scopo. E per il dolore all’inserzione dell’Achille, proprio dietro l’osso del tallone, le discese del tallone vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda schiaccia il tendine contro l’osso.',
+        '**Il movimento è quasi lo stesso, ma cambiano lo scopo, l’asciugamano e la regola sul dolore.** Per la fascite plantare, l’asciugamano sotto le dita carica la fascia attraverso il meccanismo a verricello. Il ritmo è 3\u00A0secondi su, 2 in alto, 3 giù, a giorni alterni. La regola sul dolore di questa pagina è: fermati se il dolore arriva a 6/10 o più.',
+        'Per la tendinite d’Achille, il protocollo classico è la discesa eccentrica del tallone (solo la discesa, con la salita fatta su due piedi), in origine due volte al giorno, sette giorni su sette, e anche con dolore fino a circa 5/10 purché passi entro la mattina dopo.',
+        'L’asciugamano non si usa perché caricare la fascia non è lo scopo. E per il dolore all’inserzione dell’Achille, proprio dietro l’osso del tallone, le discese del tallone vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda schiaccia il tendine contro l’osso.',
         'I due esercizi sono parenti stretti. Se il dolore è dietro il tallone o nel tendine sopra, e non sotto il piede, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -176,7 +192,7 @@ export const CALF_RAISES_IT: Guide = {
       h2: 'Quanti sollevamenti sulle punte su una gamba dovresti riuscire a fare?',
       keyFact: 'Uno studio con dati di riferimento su 566\u00A0adulti sani ha trovato un numero di sollevamenti su una gamba intorno ai 20-25, in media circa 23-24\u00A0ripetizioni (Hebert-Losier e colleghi, 2017).',
       paragraphs: [
-        'Un riferimento comune per gli adulti nel test di resistenza dei sollevamenti su una gamba è intorno ai 20-25, in media circa 23-24\u00A0ripetizioni, secondo i dati di riferimento di 566\u00A0adulti sani. Quel numero cambia con età, sesso, IMC e livello di attività, quindi è un punto di riferimento, non una soglia da superare. Per seguire i progressi nella fascite plantare conta di più che il numero salga di settimana in settimana, e che i due lati siano più o meno pari.',
+        'Un riferimento comune per gli adulti nel test di resistenza dei sollevamenti su una gamba è intorno ai 20-25, in media circa 23-24\u00A0ripetizioni, secondo i dati di riferimento di 566\u00A0adulti sani. Quel numero cambia con età, sesso, IMC e livello di attività, quindi è un punto di riferimento, non una soglia da superare. Per seguire i progressi nella fascite plantare conta di più **che il numero salga di settimana in settimana, e che i due lati siano più o meno pari.**',
         'L’obiettivo del polpaccio nell’app è 25\u00A0sollevamenti sulle punte su una gamba. Il test si ripete ogni 14\u00A0giorni finché l’obiettivo del polpaccio è attivo, poi ogni 28\u00A0giorni dopo averlo raggiunto, così vedi l’andamento senza tirare a indovinare.',
       ],
       cites: [CITE.hebertLosier],

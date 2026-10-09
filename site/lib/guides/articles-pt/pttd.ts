@@ -14,7 +14,8 @@ export const PTTD_PT: Guide = {
   lede:
     'A disfunção do tendão tibial posterior, muitas vezes chamada de DTTP, acontece quando o tendão que sustenta o arco pela parte de dentro do tornozelo enfraquece ou inflama. É a causa mais comum de pé chato adquirido na vida adulta. O exercício pode ajudar nos estágios iniciais, mas nem todo estágio responde do mesmo jeito, e a evidência ainda é limitada. Esta página explica os estágios, os exercícios com mais apoio e quando uma bota ou uma cirurgia entram na conversa.',
   intro: [
-    'O tendão tibial posterior passa por trás do osso de dentro do tornozelo e se prende embaixo do pé. Ele segura o arco durante a caminhada. Quando ele se degenera, o arco abaixa, o calcanhar inclina para fora e a dor se instala na parte de dentro do tornozelo ou do meio do pé. Uma revisão sistemática de 2018 encontrou só três ensaios randomizados ou controlados, somando 93\u00A0pessoas, então a evidência sobre exercício aqui é bem mais fraca do que para problemas como a [fascite plantar](/pt/exercicios-fascite-plantar/) ou a tendinite de Aquiles.',
+    'O tendão tibial posterior passa por trás do osso de dentro do tornozelo e se prende embaixo do pé. Ele segura o arco durante a caminhada. Quando ele se degenera, o arco abaixa, o calcanhar inclina para fora e a dor se instala na parte de dentro do tornozelo ou do meio do pé.',
+    'Uma revisão sistemática de 2018 encontrou só três ensaios randomizados ou controlados, somando 93\u00A0pessoas, então a evidência sobre exercício aqui é bem mais fraca do que para problemas como a [fascite plantar](/pt/exercicios-fascite-plantar/) ou a tendinite de Aquiles.',
   ],
   toc: true,
   takeaways: [
@@ -27,7 +28,7 @@ export const PTTD_PT: Guide = {
     {
       h2: 'O que é a disfunção do tendão tibial posterior?',
       paragraphs: [
-        'O tibial posterior é um músculo da parte profunda da panturrilha. O tendão dele passa por trás do osso de dentro do tornozelo, o maléolo medial, e se abre embaixo do pé para se prender em vários ossos do meio do pé. Durante a caminhada, ele puxa o arco para cima e controla o quanto o pé rola para dentro. Quando o tendão se degenera ou rompe, esse suporte se perde.',
+        'O tibial posterior é um músculo da parte profunda da panturrilha. O tendão dele passa por trás do osso de dentro do tornozelo, o maléolo medial, e se abre embaixo do pé para se prender em vários ossos do meio do pé. Durante a caminhada, ele puxa o arco para cima e controla o quanto o pé rola para dentro. **Quando o tendão se degenera ou rompe, esse suporte se perde.**',
         'A DTTP é a causa mais comum de pé chato adquirido na vida adulta. É mais comum em mulheres, em pessoas com mais de 40\u00A0anos e em quem tem IMC mais alto. Os fatores de risco incluem hipertensão, diabetes e injeções de corticoide anteriores perto do tendão. A dor costuma ficar atrás ou abaixo do osso de dentro do tornozelo e piora com a atividade, principalmente ao subir ladeira ou andar em terreno irregular.',
         'O nome clínico que você pode encontrar é tendinopatia do tibial posterior. Fontes mais antigas às vezes chamam de tendinite do tibial posterior quando o problema é principalmente inflamação, ou de insuficiência do tendão tibial posterior quando o tendão já alongou e o arco começou a cair. Os três termos descrevem o mesmo espectro.',
       ],
@@ -37,11 +38,15 @@ export const PTTD_PT: Guide = {
       h2: 'Quais são os estágios da DTTP?',
       paragraphs: [
         'Os profissionais de saúde classificam a DTTP em quatro estágios. O estágio define se exercício e órteses têm chance de ajudar, ou se vale conversar sobre bota, órtese de tornozelo ou cirurgia.',
-        '**Estágio I** quer dizer que o tendão está inflamado, mas ainda inteiro. O arco parece normal. Há dor e às vezes um inchaço leve atrás do osso de dentro do tornozelo. A força na elevação de calcanhar em uma perna costuma estar menor do que do outro lado, mas o formato do pé não mudou. Exercício e órteses de suporte são a abordagem principal.',
-        '**Estágio II** quer dizer que o tendão alongou ou teve uma ruptura parcial. O arco caiu e o calcanhar inclina para fora, mas a deformidade ainda é flexível, ou seja, um profissional de saúde consegue empurrar o pé de volta para a posição. É o estágio que a maior parte da pesquisa sobre exercício cobre. Órteses, alongamento e fortalecimento progressivo são o programa conservador padrão.',
-        '**Estágio III** quer dizer que a deformidade ficou rígida. O pé não consegue ser empurrado de volta para uma posição corrigida, e muitas vezes há alterações de artrose nas articulações abaixo do tornozelo. Só exercício dificilmente muda o formato do pé nesse estágio. Normalmente se fala em avaliação cirúrgica.',
-        '**Estágio IV** acrescenta o envolvimento da articulação do tornozelo. O tornozelo inclina em valgo, ou seja, fica tombado para fora. É o estágio mais avançado e costuma exigir cirurgia.',
-        'A maioria das pessoas que procura exercícios para DTTP está no estágio I ou II. Se você não tem certeza de qual estágio é o seu, um profissional de saúde consegue dizer com um exame físico e, se precisar, exames de imagem. O teste de elevação do calcanhar em uma perna, em que você tenta subir na ponta de um pé só, é uma triagem rápida: dificuldade para subir, dor durante a subida ou o calcanhar que não inclina para dentro lá em cima sugerem fraqueza do tibial posterior.',
+        {
+          list: [
+            '**Estágio I** quer dizer que o tendão está inflamado, mas ainda inteiro. O arco parece normal. Há dor e às vezes um inchaço leve atrás do osso de dentro do tornozelo. A força na elevação de calcanhar em uma perna costuma estar menor do que do outro lado, mas o formato do pé não mudou. Exercício e órteses de suporte são a abordagem principal.',
+            '**Estágio II** quer dizer que o tendão alongou ou teve uma ruptura parcial. O arco caiu e o calcanhar inclina para fora, mas a deformidade ainda é flexível, ou seja, um profissional de saúde consegue empurrar o pé de volta para a posição. É o estágio que a maior parte da pesquisa sobre exercício cobre. Órteses, alongamento e fortalecimento progressivo são o programa conservador padrão.',
+            '**Estágio III** quer dizer que a deformidade ficou rígida. O pé não consegue ser empurrado de volta para uma posição corrigida, e muitas vezes há alterações de artrose nas articulações abaixo do tornozelo. Só exercício dificilmente muda o formato do pé nesse estágio. Normalmente se fala em avaliação cirúrgica.',
+            '**Estágio IV** acrescenta o envolvimento da articulação do tornozelo. O tornozelo inclina em valgo, ou seja, fica tombado para fora. É o estágio mais avançado e costuma exigir cirurgia.',
+          ],
+        },
+        '**A maioria das pessoas que procura exercícios para DTTP está no estágio I ou II.** Se você não tem certeza de qual estágio é o seu, um profissional de saúde consegue dizer com um exame físico e, se precisar, exames de imagem. O teste de elevação do calcanhar em uma perna, em que você tenta subir na ponta de um pé só, é uma triagem rápida: dificuldade para subir, dor durante a subida ou o calcanhar que não inclina para dentro lá em cima sugerem fraqueza do tibial posterior.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -50,9 +55,17 @@ export const PTTD_PT: Guide = {
       keyFact: 'Somando três ensaios pequenos com 93\u00A0pessoas no total, uma revisão de 2018 concluiu que o fortalecimento excêntrico acrescentado a órteses e alongamento trouxe melhoras de tamanho moderado em relação a órteses e alongamento sozinhos (Ross e colegas, 2018).',
       paragraphs: [
         'Uma revisão sistemática de 2018 identificou três ensaios controlados randomizados com 93\u00A0participantes no total. Dois testaram fortalecimento somado a órteses e alongamento; o terceiro testou fortalecimento e treino de equilíbrio contra nenhuma intervenção. A revisão encontrou tamanhos de efeito moderados (SMD 0,6 a 1,2) do fortalecimento excêntrico para reduzir dor e incapacidade em comparação com órteses e alongamento sozinhos.',
-        'O maior dos três estudos foi um ensaio randomizado de 2009 com 36\u00A0pessoas com DTTP estágio I ou II. Os participantes foram divididos em três grupos por três meses: só órteses e alongamento, órteses mais alongamento mais exercício concêntrico, ou órteses mais alongamento mais exercício excêntrico. Os dois grupos de exercício melhoraram mais do que o grupo só com órteses. O grupo excêntrico chegou a cargas 3,3\u00A0vezes maiores que o grupo concêntrico no fim do programa, embora os dois tipos de exercício tenham reduzido a dor.',
+        'O maior dos três estudos foi um ensaio randomizado de 2009 com 36\u00A0pessoas com DTTP estágio I ou II. Os participantes foram divididos em três grupos por três meses:',
+        {
+          list: [
+            'Só órteses e alongamento.',
+            'Órteses mais alongamento mais exercício concêntrico.',
+            'Órteses mais alongamento mais exercício excêntrico.',
+          ],
+        },
+        'Os dois grupos de exercício melhoraram mais do que o grupo só com órteses. O grupo excêntrico chegou a cargas 3,3\u00A0vezes maiores que o grupo concêntrico no fim do programa, embora os dois tipos de exercício tenham reduzido a dor.',
         'Um segundo ensaio randomizado, publicado em 2015, dividiu 39\u00A0pessoas com DTTP estágio II entre órteses mais alongamento ou órteses mais alongamento mais fortalecimento (incluindo exercícios com faixa e elevação de calcanhar). Os dois grupos melhoraram, mas o grupo de fortalecimento não se separou de forma significativa do grupo de alongamento no desfecho principal. Os autores sugeriram que a dose de fortalecimento talvez não tenha sido alta o bastante.',
-        'Os autores da revisão concluíram que a evidência apoia acrescentar exercício de resistência progressivo às órteses na DTTP inicial, mas pediram ensaios maiores. É uma área em que a pesquisa ainda está alcançando a prática clínica.',
+        'Os autores da revisão concluíram que **a evidência apoia acrescentar exercício de resistência progressivo às órteses na DTTP inicial**, mas pediram ensaios maiores. É uma área em que a pesquisa ainda está alcançando a prática clínica.',
       ],
       sourceNote:
         'Ross 2018: 3\u00A0estudos, n = 93. Kulig 2009: n = 36, 3\u00A0braços, 3\u00A0meses, Foot Function Index, EVA de dor. Houck 2015: n = 39, 2\u00A0braços, 3\u00A0meses, FAAM.',
@@ -62,7 +75,7 @@ export const PTTD_PT: Guide = {
       h2: 'Quais exercícios ajudam na disfunção do tendão tibial posterior?',
       paragraphs: [
         'Os exercícios abaixo trabalham o músculo tibial posterior e os músculos que sustentam o arco. A inversão com faixa treina o tibial posterior diretamente. A elevação de calcanhar com foco em subir o arco carrega o tendão durante um movimento funcional. O pé curto fortalece os músculos pequenos do pé que ajudam o arco. O alongamento de panturrilha cuida de um achado comum na DTTP: o tornozelo que dobra menos para cima.',
-        'Os programas de exercício dos ensaios também incluíam alongamento de panturrilha e órteses. As órteses não eram opcionais em nenhum estudo. Se você tem DTTP, uma órtese de suporte do arco faz parte do programa, não substitui o exercício, e o exercício também não substitui a órtese.',
+        'Os programas de exercício dos ensaios também incluíam alongamento de panturrilha e órteses. As órteses não eram opcionais em nenhum estudo. Se você tem DTTP, **uma órtese de suporte do arco faz parte do programa, não substitui o exercício, e o exercício também não substitui a órtese.**',
       ],
       exercises: [
         {
@@ -119,7 +132,7 @@ export const PTTD_PT: Guide = {
     {
       h2: 'As órteses ajudam, e devo usar durante o exercício?',
       paragraphs: [
-        'Todos os ensaios de exercício para DTTP usaram órteses como parte da intervenção de base. As órteses não foram testadas contra o exercício; foram testadas com o exercício por cima. O ensaio randomizado de 2009 mostrou que órteses e alongamento sozinhos melhoraram a função, e que acrescentar exercício melhorou ainda mais.',
+        'Todos os ensaios de exercício para DTTP usaram órteses como parte da intervenção de base. **As órteses não foram testadas contra o exercício; foram testadas com o exercício por cima.** O ensaio randomizado de 2009 mostrou que órteses e alongamento sozinhos melhoraram a função, e que acrescentar exercício melhorou ainda mais.',
         'Uma órtese de suporte do arco rígida ou semirrígida impede o arco de desabar quando você fica em pé e caminha. Nos exercícios desta página, você pode fazer a inversão com faixa e o pé curto sem sapato, mas a elevação de calcanhar deve ser feita com o mesmo calçado de suporte que você usa para andar, porque o arco precisa de suporte sob carga.',
         'Palmilhas de suporte do arco compradas prontas podem bastar no estágio I. Órteses sob medida são mais comuns no estágio II, em que a deformidade é maior. Um profissional de saúde ou um podólogo pode ajudar você a decidir o que é adequado.',
       ],
@@ -128,7 +141,7 @@ export const PTTD_PT: Guide = {
     {
       h2: 'Quando se fala em bota ou cirurgia?',
       paragraphs: [
-        'Uma bota imobilizadora ou uma órtese de tornozelo às vezes é usada na DTTP estágio I ou II quando a dor está alta demais para o exercício. A bota imobiliza o tendão para deixar a inflamação aguda baixar. É uma medida de curto prazo, não um programa de longo prazo. Quando a dor cai o suficiente, exercício e órteses assumem.',
+        'Uma bota imobilizadora ou uma órtese de tornozelo às vezes é usada na DTTP estágio I ou II quando a dor está alta demais para o exercício. A bota imobiliza o tendão para deixar a inflamação aguda baixar. **É uma medida de curto prazo, não um programa de longo prazo.** Quando a dor cai o suficiente, exercício e órteses assumem.',
         'A cirurgia costuma entrar na conversa quando o tratamento conservador não melhorou os sintomas depois de vários meses, ou quando a deformidade avançou para o estágio III ou IV. As opções cirúrgicas vão de reparo e transferência de tendão nos estágios iniciais até artrodese nos estágios mais avançados. A decisão depende do estágio, do grau de deformidade e da pessoa.',
         'Esta página não cobre as opções cirúrgicas em detalhe. Se você está no estágio III ou IV, ou se os sintomas do estágio II não responderam a exercício e órteses ao longo de vários meses, um especialista em pé e tornozelo pode conversar sobre os próximos passos.',
       ],
@@ -137,7 +150,7 @@ export const PTTD_PT: Guide = {
     {
       h2: 'Qual a relação entre a DTTP e o pé chato?',
       paragraphs: [
-        'A DTTP é a causa mais comum de pé chato adquirido na vida adulta, ou seja, um pé chato que aparece na idade adulta em vez de existir desde a infância. Se você tinha arcos normais e eles começaram a cair de um lado, com dor atrás da parte de dentro do tornozelo, a DTTP é a explicação mais provável.',
+        'A DTTP é a causa mais comum de pé chato adquirido na vida adulta, ou seja, um pé chato que aparece na idade adulta em vez de existir desde a infância. **Se você tinha arcos normais e eles começaram a cair de um lado, com dor atrás da parte de dentro do tornozelo, a DTTP é a explicação mais provável.**',
         'O pé chato flexível congênito, aquele que existe desde a infância, é outra situação. Ele pode nunca causar sintomas. Os exercícios se sobrepõem: pé curto, inversão com faixa e elevação de calcanhar aparecem tanto nos [exercícios para pé chato](/pt/exercicios-pe-chato/) quanto nos programas para DTTP. Mas o contexto clínico é diferente, e a DTTP costuma precisar de órteses e de um acompanhamento mais de perto, porque o tendão está se degenerando, e não apenas frouxo.',
         'Se você não tem certeza se o seu pé chato é antigo ou novo, um profissional de saúde pode comparar os dois pés, examinar o tendão e olhar o alinhamento do calcanhar quando você fica em pé.',
       ],
@@ -148,7 +161,7 @@ export const PTTD_PT: Guide = {
       keyFact: 'Um pequeno estudo piloto com dez pacientes, com carga excêntrica duas vezes por dia por cerca de dois meses e meio, encontrou melhora dos sintomas junto com algumas mudanças no tendão no ultrassom (Kulig e colegas, 2009).',
       paragraphs: [
         'Os dois ensaios randomizados duraram três meses. Os dois mostraram melhora no fim do programa, mas nenhum acompanhou os participantes a longo prazo. Um pequeno estudo piloto com dez pacientes, do mesmo grupo, também durou cerca de dois meses e meio de carga excêntrica duas vezes por dia e encontrou melhora dos sintomas junto com algumas mudanças no tendão no ultrassom.',
-        'Na prática clínica, a melhora da DTTP estágio I ou II com exercício e órteses é medida em meses, não em semanas. A degeneração do tendão não se reverte rápido. Uma expectativa razoável é menos dor e melhor função ao longo de três a seis meses, com exercício de manutenção depois disso. Se não houver melhora depois de três meses de exercício e órteses feitos com regularidade, vale voltar a um profissional de saúde para reavaliar o estágio.',
+        'Na prática clínica, **a melhora da DTTP estágio I ou II com exercício e órteses é medida em meses, não em semanas.** A degeneração do tendão não se reverte rápido. Uma expectativa razoável é menos dor e melhor função ao longo de três a seis meses, com exercício de manutenção depois disso. Se não houver melhora depois de três meses de exercício e órteses feitos com regularidade, vale voltar a um profissional de saúde para reavaliar o estágio.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },

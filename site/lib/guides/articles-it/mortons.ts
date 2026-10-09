@@ -37,7 +37,7 @@ export const MORTONS_IT: Guide = {
       h2: 'Cos’è il neuroma di Morton?',
       figure: { id: 'mortons', caption: 'Il neuroma di Morton è un nervo ispessito tra le teste metatarsali, più spesso tra il terzo e il quarto dito.', alt: 'Vista dall’alto delle ossa del piede, con nervi gialli che corrono verso le dita e un ovale gonfio sul nervo tra il terzo e il quarto dito.' },
       paragraphs: [
-        'Il neuroma di Morton è un ispessimento benigno del nervo digitale plantare comune, di solito nel terzo spazio intermetatarsale (tra il terzo e il quarto dito). Meno spesso si trova nel secondo spazio. Non è un cancro e non è una crescita sull’osso.',
+        'Il neuroma di Morton è un ispessimento benigno del nervo digitale plantare comune, di solito nel terzo spazio intermetatarsale (tra il terzo e il quarto dito). Meno spesso si trova nel secondo spazio. **Non è un cancro e non è una crescita sull’osso.**',
         'Il nervo passa sotto il legamento metatarsale trasverso, una fascia di tessuto che tiene unite le teste metatarsali. Quando le teste si stringono, il nervo viene pizzicato. Col tempo la guaina del nervo si ispessisce, e il nervo stesso può ingrossarsi. Il risultato è dolore, bruciore, formicolio o intorpidimento nello spazio tra le dita, che si irradia verso le dita interessate.',
         'È più frequente nelle donne, in parte per la scelta delle scarpe. Le scarpe a punta stretta e i tacchi alti spingono le teste metatarsali l’una contro l’altra e aumentano la pressione sul nervo. Anche la corsa, gli sport su campo e i lavori che richiedono di stare a lungo in piedi con scarpe strette sono fattori di rischio.',
       ],
@@ -46,8 +46,15 @@ export const MORTONS_IT: Guide = {
       h2: 'Che differenza c’è tra neuroma di Morton e metatarsalgia?',
       paragraphs: [
         'Metatarsalgia è un termine più ampio che indica dolore intorno alle teste metatarsali, le nocche ossee nella [parte anteriore della pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Il neuroma di Morton è una causa specifica di dolore all’avampiede, e rientra nel grande contenitore della metatarsalgia.',
-        'La differenza chiave è cosa fa male e come. La metatarsalgia di solito è un dolore da sordo ad acuto sotto la parte anteriore della pianta, spesso sotto la seconda e la terza testa metatarsale. Il neuroma di Morton dà bruciore, formicolio o intorpidimento tra le dita, più spesso il terzo e il quarto. Stringere l’avampiede di lato, il cosiddetto test del click di Mulder, può riprodurre i sintomi del neuroma e a volte provoca un click udibile quando il nervo scatta tra i metatarsi.',
-        'La distinzione conta perché gli approcci sono diversi. La metatarsalgia risponde allo scarico delle teste metatarsali e al rinforzo delle dita. Il neuroma di Morton risponde alla decompressione del nervo, cioè scarpe più larghe, cuscinetti e a volte infiltrazioni o chirurgia. Gli esercizi aiutano il comfort dell’avampiede in entrambi i casi, ma nessuno dei due problemi ha prove forti da studi specifici sull’esercizio. Vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) per il quadro più ampio della metatarsalgia.',
+        'La differenza chiave è cosa fa male e come:',
+        {
+          list: [
+            '**La metatarsalgia** di solito è un dolore da sordo ad acuto sotto la parte anteriore della pianta, spesso sotto la seconda e la terza testa metatarsale.',
+            '**Il neuroma di Morton** dà bruciore, formicolio o intorpidimento tra le dita, più spesso il terzo e il quarto. Stringere l’avampiede di lato, il cosiddetto test del click di Mulder, può riprodurre i sintomi del neuroma e a volte provoca un click udibile quando il nervo scatta tra i metatarsi.',
+          ],
+        },
+        'La distinzione conta perché gli approcci sono diversi. La metatarsalgia risponde allo scarico delle teste metatarsali e al rinforzo delle dita. Il neuroma di Morton risponde alla decompressione del nervo, cioè scarpe più larghe, cuscinetti e a volte infiltrazioni o chirurgia.',
+        'Gli esercizi aiutano il comfort dell’avampiede in entrambi i casi, ma nessuno dei due problemi ha prove forti da studi specifici sull’esercizio. Vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) per il quadro più ampio della metatarsalgia.',
       ],
     },
     {
@@ -56,7 +63,7 @@ export const MORTONS_IT: Guide = {
       paragraphs: [
         'Scarpe più larghe con tacco basso e un cuscinetto metatarsale sono il primo passo consigliato più spesso per il neuroma di Morton. Il cuscinetto va messo appena dietro le teste metatarsali, non direttamente sotto, per sollevare il corpo dei metatarsi e allargarli, riducendo la compressione sul nervo.',
         'Scarpe ben calzanti con una punta larga, un tacco basso e un cuscinetto metatarsale sono state valutate in due studi inclusi in una revisione sistematica del 2019. Mettendo insieme quei due studi, scarpe e cuscinetti hanno funzionato in circa il 32% delle persone a un controllo dopo quattro mesi e mezzo in media. Però uno studio randomizzato che confrontava scarpe e cuscinetti con l’infiltrazione di cortisone ha trovato che il gruppo con l’infiltrazione aveva probabilità di successo sei volte più alte a sei mesi.',
-        'In pratica: cambiare scarpe e usare cuscinetti è a basso rischio e vale la pena provarlo per primo. Funziona per alcune persone e per altre no. Se non ha aiutato dopo quattro-sei settimane, il passo successivo di solito è una visita per parlare di infiltrazioni o di altri esami di imaging.',
+        'In pratica: **cambiare scarpe e usare cuscinetti è a basso rischio e vale la pena provarlo per primo.** Funziona per alcune persone e per altre no. Se non ha aiutato dopo quattro-sei settimane, il passo successivo di solito è una visita per parlare di infiltrazioni o di altri esami di imaging.',
         'La posizione conta. Un cuscinetto troppo avanti, direttamente sotto la testa metatarsale, può aumentare la pressione invece di ridurla. I cuscinetti metatarsali adesivi della farmacia costano abbastanza poco da provarli, ma per trovare la posizione giusta serve qualche tentativo. Un podologo può realizzare un plantare su misura se quelli già pronti non funzionano.',
       ],
       cites: [CITE.matthewsSR],
@@ -65,9 +72,18 @@ export const MORTONS_IT: Guide = {
       h2: 'Cosa dicono gli studi sulle infiltrazioni?',
       keyFact: 'Nella revisione Cochrane del 2024, l’infiltrazione di cortisone ecoguidata probabilmente migliorava il dolore più di quella non guidata, con prove di certezza moderata a 2, 6 e 12\u00A0mesi (Matthews e colleghi, 2024).',
       paragraphs: [
-        'L’infiltrazione di cortisone è l’approccio invasivo non chirurgico più studiato per il neuroma di Morton. La revisione Cochrane del 2024 includeva sei studi randomizzati con 373\u00A0partecipanti. Ha trovato prove di bassa certezza che aggiungere un cortisonico a un anestetico locale possa portare a poca o nessuna differenza su dolore o funzione a tre-sei mesi rispetto alla sola infiltrazione di anestetico locale. Gli autori Cochrane hanno notato che aggiungere un cortisonico può aumentare gli effetti avversi, tra cui atrofia del cuscinetto adiposo e alterazioni della pelle.',
+        'L’infiltrazione di cortisone è l’approccio invasivo non chirurgico più studiato per il neuroma di Morton.',
+        'La revisione Cochrane del 2024 includeva sei studi randomizzati con 373\u00A0partecipanti. Ha trovato prove di bassa certezza che aggiungere un cortisonico a un anestetico locale possa portare a poca o nessuna differenza su dolore o funzione a tre-sei mesi rispetto alla sola infiltrazione di anestetico locale. Gli autori Cochrane hanno notato che aggiungere un cortisonico può aumentare gli effetti avversi, tra cui atrofia del cuscinetto adiposo e alterazioni della pelle.',
         'L’infiltrazione ecoguidata probabilmente migliora il dolore rispetto a quella non guidata, con differenze clinicamente rilevanti a 2, 6 e 12\u00A0mesi negli studi inclusi. Le prove sono state classificate di certezza moderata.',
-        'Sono stati studiati anche altri tipi di infiltrazione, tra cui infiltrazioni sclerosanti con alcol, ablazione con radiofrequenza e crioterapia. La revisione sistematica del 2019 ha trovato che infiltrazione di cortisone e manipolazione avevano le prove più forti per la riduzione del dolore nel breve periodo, ma ha chiesto più studi randomizzati di alta qualità. La revisione Cochrane del 2024 è arrivata alla stessa conclusione: dopo altri 20\u00A0anni di ricerca dalla prima revisione Cochrane del 2004, non ci sono ancora abbastanza prove di alta qualità per trarre conclusioni solide su qualsiasi singolo intervento.',
+        'Sono stati studiati anche altri tipi di infiltrazione, tra cui:',
+        {
+          list: [
+            'Infiltrazioni sclerosanti con alcol.',
+            'Ablazione con radiofrequenza.',
+            'Crioterapia.',
+          ],
+        },
+        'La revisione sistematica del 2019 ha trovato che infiltrazione di cortisone e manipolazione avevano le prove più forti per la riduzione del dolore nel breve periodo, ma ha chiesto più studi randomizzati di alta qualità. La revisione Cochrane del 2024 è arrivata alla stessa conclusione: dopo altri 20\u00A0anni di ricerca dalla prima revisione Cochrane del 2004, **non ci sono ancora abbastanza prove di alta qualità per trarre conclusioni solide su qualsiasi singolo intervento.**',
         'Questo non vuol dire che le infiltrazioni siano inutili. Vuol dire che le prove non sono abbastanza forti per dichiarare un approccio chiaramente migliore di un altro. Un professionista sanitario può parlarti delle opzioni, dei rischi e di cosa aspettarti. L’infiltrazione di cortisone dà un buon sollievo nel breve periodo a molte persone, ma le infiltrazioni ripetute comportano rischi per i tessuti intorno.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -77,15 +93,16 @@ export const MORTONS_IT: Guide = {
       paragraphs: [
         'Di solito si considera la chirurgia quando la gestione conservativa, cioè cambio di scarpe, cuscinetti e uno o due cicli di infiltrazioni, non ha dato un sollievo duraturo. L’intervento più comune è la neurectomia, la rimozione chirurgica del tratto di nervo ispessito. Funziona per molte persone ma lascia un intorpidimento permanente tra le dita interessate, perché il nervo che portava la sensibilità lì non c’è più.',
         'Altre opzioni chirurgiche sono la decompressione del nervo (liberare il legamento metatarsale trasverso senza togliere il nervo) e l’osteotomia metatarsale (rimodellare l’osso per dare più spazio al nervo). La revisione Cochrane del 2024 ha trovato prove di bassa certezza per i confronti chirurgici, senza un vincitore chiaro tra neurectomia con incisione plantare e dorsale per soddisfazione dei pazienti o effetti avversi.',
-        'La chirurgia non è un approccio di prima linea. La maggior parte dei professionisti sanitari consiglia di provare in modo strutturato la gestione conservativa per diversi mesi prima di prenderla in considerazione. Se sei a quel punto, uno specialista di piede e caviglia può spiegarti le opzioni chirurgiche e cosa aspettarti per il recupero.',
+        '**La chirurgia non è un approccio di prima linea.** La maggior parte dei professionisti sanitari consiglia di provare in modo strutturato la gestione conservativa per diversi mesi prima di prenderla in considerazione. Se sei a quel punto, uno specialista di piede e caviglia può spiegarti le opzioni chirurgiche e cosa aspettarti per il recupero.',
       ],
       cites: [CITE.matthewsCochrane],
     },
     {
       h2: 'Gli esercizi aiutano il neuroma di Morton?',
       paragraphs: [
-        'La risposta onesta è che nessuno studio ha testato l’esercizio per il neuroma di Morton. L’esercizio non lavora direttamente sul nervo. Non può ridurre un neuroma né decomprimere lo spazio intermetatarsale come fanno una scarpa più larga o un cuscinetto metatarsale.',
-        'Quello che l’esercizio può fare è migliorare il comfort generale dell’avampiede e la distribuzione del carico. Rinforzare i muscoli intrinseci del piede, i piccoli muscoli tra e sotto i metatarsi, può aiutare le teste metatarsali a stare più aperte mentre cammini. L’allungamento del polpaccio riduce il sovraccarico dell’avampiede migliorando la dorsiflessione della caviglia. Sono esercizi per il comfort e la gestione del carico, non interventi specifici per il neuroma. Lo diciamo chiaramente perché esagerare il ruolo dell’esercizio qui non sarebbe onesto.',
+        'La risposta onesta è che **nessuno studio ha testato l’esercizio per il neuroma di Morton.** L’esercizio non lavora direttamente sul nervo. Non può ridurre un neuroma né decomprimere lo spazio intermetatarsale come fanno una scarpa più larga o un cuscinetto metatarsale.',
+        'Quello che l’esercizio può fare è migliorare il comfort generale dell’avampiede e la distribuzione del carico. Rinforzare i muscoli intrinseci del piede, i piccoli muscoli tra e sotto i metatarsi, può aiutare le teste metatarsali a stare più aperte mentre cammini. L’allungamento del polpaccio riduce il sovraccarico dell’avampiede migliorando la dorsiflessione della caviglia.',
+        'Sono esercizi per il comfort e la gestione del carico, non interventi specifici per il neuroma. Lo diciamo chiaramente perché esagerare il ruolo dell’esercizio qui non sarebbe onesto.',
         'Se il tuo dolore all’avampiede va oltre il neuroma, cioè hai anche una metatarsalgia generale o un polpaccio rigido, sono utili gli esercizi della pagina su [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Gli esercizi qui sotto vengono dallo stesso gruppo, ma sono elencati qui per comodità.',
       ],
       exercises: [
@@ -140,7 +157,15 @@ export const MORTONS_IT: Guide = {
       h2: 'Cosa ci dicono gli studi, e cosa no',
       paragraphs: [
         'La revisione Cochrane del 2024 è la sintesi più rigorosa disponibile. Includeva sei studi randomizzati con 373\u00A0partecipanti. Le sue conclusioni: ci sono prove di certezza da bassa a moderata per la maggior parte degli interventi per il neuroma di Morton, e nessun singolo trattamento ha un sostegno forte e ad alta certezza. Dopo altri 20\u00A0anni di ricerca dalla revisione Cochrane originale del 2004, gli autori sono arrivati alla stessa conclusione di fondo.',
-        'Questo non vuol dire che non funzioni niente. Cambio di scarpe e cuscinetti metatarsali aiutano circa 3\u00A0persone su 10. L’infiltrazione di cortisone ecoguidata probabilmente migliora il dolore rispetto a quella non guidata. La neurectomia toglie il dolore a molte persone, ma al prezzo di un intorpidimento permanente. Quello che manca è un chiaro trattamento di prima linea sostenuto da prove forti.',
+        'Questo non vuol dire che non funzioni niente:',
+        {
+          list: [
+            'Cambio di scarpe e cuscinetti metatarsali aiutano circa 3\u00A0persone su 10.',
+            'L’infiltrazione di cortisone ecoguidata probabilmente migliora il dolore rispetto a quella non guidata.',
+            'La neurectomia toglie il dolore a molte persone, ma al prezzo di un intorpidimento permanente.',
+          ],
+        },
+        '**Quello che manca è un chiaro trattamento di prima linea sostenuto da prove forti.**',
         'Per l’esercizio la lacuna è ancora più grande. Nessuno studio ha testato l’esercizio per il neuroma di Morton. Gli esercizi di questa pagina sono misure per il comfort e la gestione del carico, non interventi specifici per il neuroma. Se l’esercizio fa parte del tuo piano, deve stare accanto al cambio di scarpe e ai consigli del professionista sanitario, non sostituirli.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],

@@ -114,7 +114,7 @@ export const EX_CALF_RAISES_DE: Guide = {
       h2: 'Wie viele Wiederholungen Fersenheben solltest du machen?',
       keyFact: 'Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen zwischen 20 und 81\u00A0Jahren fand, dass die Zahl beim einbeinigen Fersenheben je nach Alter, Geschlecht und Aktivität schwankte, wobei Frauen auf einen Median von 21\u00A0Wiederholungen kamen (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
-        'Das hängt davon ab, wo du auf der Leiter stehst und woran du arbeitest. Für allgemeine Wadenkraft sind 3\u00A0Sätze à 10 bis 15\u00A0Wiederholungen in langsamem Tempo eine übliche Anfangsdosis. Beim in der Forschung getesteten Protokoll bei Plantarfasziitis beginnt das Fersenheben mit Handtuch mit 3\u00A0Sätzen à 12RM und steigert sich über etwa fünf Wochen auf 5\u00A0Sätze à 8RM.',
+        'Das hängt davon ab, wo du auf der Leiter stehst und woran du arbeitest. Für allgemeine Wadenkraft sind **3\u00A0Sätze à 10 bis 15\u00A0Wiederholungen in langsamem Tempo eine übliche Anfangsdosis.** Beim in der Forschung getesteten Protokoll bei Plantarfasziitis beginnt das Fersenheben mit Handtuch mit 3\u00A0Sätzen à 12RM und steigert sich über etwa fünf Wochen auf 5\u00A0Sätze à 8RM.',
         'Ein nützlicher Richtwert ist der einbeinige Ausdauertest mit Fersenheben. Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen fand einen Median von 24\u00A0Wiederholungen bei Männern und 21 bei Frauen, abhängig von Alter, Geschlecht und Aktivität. Das Wadenziel in der Walkito-App sind 25\u00A0einbeinige Fersenheben. Wenn du es erreichst, ist die Arbeit nicht vorbei. Dann geht es darum, das Niveau zu halten.',
         'Mehr zum speziellen Protokoll bei Plantarfasziitis findest du unter [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/). Die Variante für die Achillessehne findest du unter [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/).',
       ],
@@ -123,9 +123,13 @@ export const EX_CALF_RAISES_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Fersenheben?',
       paragraphs: [
-        'Zu schnell sein. Das langsame Absenken (etwa drei Sekunden) baut die Kraft auf. Wer unten federt, verschenkt die exzentrische Phase, also den Teil, der den Großteil der Arbeit für die Anpassung der Sehne leistet.',
-        'Auf die Außenkante des Fußes rollen. Der Druck sollte über den großen Zeh und den Fußballen gehen. Wenn das Sprunggelenk nach außen kippt, kann sich die Wade nicht voll zusammenziehen, und die kleinen Muskeln an der Außenseite des Sprunggelenks bekommen eine Spannung ab, für die sie nicht gebaut sind.',
-        'Die Variante im Sitzen überspringen. Wenn Fersenheben im Stehen wehtut, macht ein Sprung zur einbeinigen Arbeit auf einer Stufe es schlimmer. Die Leiter gibt es aus gutem Grund: im Sitzen, dann beidbeinig im Stehen, dann mit Halten, dann einbeinig. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
+        {
+          list: [
+            '**Zu schnell sein.** Das langsame Absenken (etwa drei Sekunden) baut die Kraft auf. Wer unten federt, verschenkt die exzentrische Phase, also den Teil, der den Großteil der Arbeit für die Anpassung der Sehne leistet.',
+            '**Auf die Außenkante des Fußes rollen.** Der Druck sollte über den großen Zeh und den Fußballen gehen. Wenn das Sprunggelenk nach außen kippt, kann sich die Wade nicht voll zusammenziehen, und die kleinen Muskeln an der Außenseite des Sprunggelenks bekommen eine Spannung ab, für die sie nicht gebaut sind.',
+            '**Die Variante im Sitzen überspringen.** Wenn Fersenheben im Stehen wehtut, macht ein Sprung zur einbeinigen Arbeit auf einer Stufe es schlimmer. Die Leiter gibt es aus gutem Grund: im Sitzen, dann beidbeinig im Stehen, dann mit Halten, dann einbeinig. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
+          ],
+        },
       ],
     },
     {

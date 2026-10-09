@@ -36,7 +36,14 @@ export const STANDING_DESK_DE: Guide = {
       h2: 'Warum tun die Füße am Stehschreibtisch weh?',
       keyFact: 'Eine systematische Übersichtsarbeit von 2017 zu 25\u00A0Studien fand, dass Beschwerden im unteren Rücken im Allgemeinen nach etwa 71\u00A0Minuten Stehen klinisch relevant wurden, bei Menschen mit Neigung zu Schmerzen im Stehen aber schon nach 42\u00A0Minuten (Coenen und Kollegen, 2017).',
       paragraphs: [
-        'Fußschmerzen am Stehschreibtisch entstehen aus demselben Grund wie bei jedem langen Stehen: Füße, Waden und Unterschenkel tragen eine statische Last ohne die Entlastung, die Gehen oder Sitzen bringt. Wenn du ruhig stehst, sammelt die Schwerkraft das Blut in den Unterschenkeln, die Wadenmuskeln halten dieselbe Position, ohne sich anzuspannen und zu entspannen, und die Plantarfaszie unter dem Gewölbe fängt eine gleichmäßige Last ab.',
+        'Fußschmerzen am Stehschreibtisch entstehen aus demselben Grund wie bei jedem langen Stehen: Füße, Waden und Unterschenkel tragen eine statische Last ohne die Entlastung, die Gehen oder Sitzen bringt. Wenn du ruhig stehst:',
+        {
+          list: [
+            'Die Schwerkraft sammelt das Blut in den Unterschenkeln.',
+            'Die Wadenmuskeln halten dieselbe Position, ohne sich anzuspannen und zu entspannen.',
+            'Die Plantarfaszie unter dem Gewölbe fängt eine gleichmäßige Last ab.',
+          ],
+        },
         'Eine systematische Übersichtsarbeit von 2017 zu 25\u00A0Laborstudien fasste Daten von 591\u00A0Teilnehmenden zusammen und fand, dass sich klinisch relevante Beschwerden im unteren Rücken in der Allgemeinbevölkerung nach etwa 71\u00A0Minuten ununterbrochenem Stehen entwickelten, bei Menschen, die beim Stehen leicht Schmerzen bekommen, aber schon nach 42\u00A0Minuten. Für Beschwerden in den Beinen sah das Bild ähnlich aus. Die Autoren empfahlen 40\u00A0Minuten als praktische Grenze, nach der man das Stehen unterbrechen sollte.',
         'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung bestätigte den Zusammenhang zwischen langem Stehen und Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen in vielen Arten von Arbeit im Stehen. Die Übersicht fand auch, dass Belastung für Herz und Kreislauf und geschwollene Beine mit der Stehdauer zunehmen.',
       ],
@@ -47,7 +54,7 @@ export const STANDING_DESK_DE: Guide = {
       keyFact: 'Eine Expertenempfehlung von 2015 rät, sich auf 2\u00A0Stunden pro Tag Stehen und leichte Aktivität hochzuarbeiten und später auf 4\u00A0Stunden zu steigern, aufgeteilt in kürzere Phasen (Buckley und Kollegen, 2015).',
       paragraphs: [
         'Eine Antwort, die für alle passt, gibt es nicht, aber die Forschung grenzt es ein. Eine Expertenempfehlung von 2015 im Auftrag von Public Health England und der Active Working Community Interest Company riet Menschen mit Schreibtischarbeit, sich zunächst darauf hinzuarbeiten, während der Arbeitszeit 2\u00A0Stunden pro Tag Stehen und leichte Aktivität zu sammeln, und später auf 4\u00A0Stunden pro Tag zu steigern. Die Empfehlung legte fest, dass das Stehen in kürzere Phasen aufgeteilt werden sollte, nicht am Stück.',
-        'Die Übersichtsarbeit von 2017 zu Laborstudien deutet darauf hin, dass ab 40\u00A0Minuten ununterbrochenem Stehen die Beschwerden klinisch relevant werden. Beides zusammen ergibt einen praktischen Anfang: 20 bis 30\u00A0Minuten stehen, 20 bis 30\u00A0Minuten sitzen und das über den Tag wiederholen, angepasst daran, wie sich dein Körper umstellt.',
+        'Die Übersichtsarbeit von 2017 zu Laborstudien deutet darauf hin, dass ab 40\u00A0Minuten ununterbrochenem Stehen die Beschwerden klinisch relevant werden. Beides zusammen ergibt **einen praktischen Anfang: 20 bis 30\u00A0Minuten stehen, 20 bis 30\u00A0Minuten sitzen und das über den Tag wiederholen**, angepasst daran, wie sich dein Körper umstellt.',
         'Eine systematische Übersichtsarbeit von 2014 zu 14\u00A0Studien über Sitz-Steh-Arbeitsplätze fand ausreichende Belege, dass sie Beschwerden im unteren Rücken verringern, ohne Einbußen bei der Produktivität. Die Übersicht fand kein optimales Verhältnis von Sitzen zu Stehen, und die Autoren hielten fest, dass das beste Verhältnis wahrscheinlich von Mensch zu Mensch und von Job zu Job verschieden ist. Was die Belege stützen, ist der Wechsel, keine feste Regel.',
       ],
       sourceNote:
@@ -59,7 +66,7 @@ export const STANDING_DESK_DE: Guide = {
       paragraphs: [
         'Für Anti-Ermüdungsmatten gibt es gewisse Belege. Die arbeitsmedizinische Übersichtsarbeit von 2015 nennt Bodenmatten unter den Maßnahmen mit Belegen dafür, Beschwerden bei langem Stehen zu verringern. Eine Crossover-Studie mit 38\u00A0Mitgliedern eines OP-Teams fand, dass Stehen auf einer 15\u00A0mm dicken Anti-Ermüdungsmatte aus Gummi während der Eingriffe zu deutlich niedrigeren Werten für Schmerz und Ermüdung führte als Stehen auf normalem Boden.',
         'Der Mechanismus ist einfach: Eine weichere Fläche lässt die Füße kleine Anpassungen machen und nimmt einen Teil der Last weg, die ein harter Boden auf Ferse und Fußballen bündelt. Eine systematische Übersichtsarbeit von 2018 zu dämpfenden Materialien bei langem Stehen fand übereinstimmend weniger Beschwerden, auch wenn die Studien klein waren und der Nutzen den Komfort betraf, nicht die Vorbeugung einer bestimmten Erkrankung.',
-        'Eine Matte allein löst Fußschmerzen nicht, aber sie ist eines der einfacheren Dinge, die du ausprobieren kannst. Wenn du schon einen Stehschreibtisch hast und dir die Füße wehtun, deckt eine Matte zusammen mit kürzeren Stehphasen und den Übungen auf dieser Seite das Wichtigste ab.',
+        '**Eine Matte allein löst Fußschmerzen nicht, aber sie ist eines der einfacheren Dinge, die du ausprobieren kannst.** Wenn du schon einen Stehschreibtisch hast und dir die Füße wehtun, deckt eine Matte zusammen mit kürzeren Stehphasen und den Übungen auf dieser Seite das Wichtigste ab.',
       ],
       cites: [CITE.waters],
     },
@@ -67,7 +74,8 @@ export const STANDING_DESK_DE: Guide = {
       h2: 'Welche Schuhe solltest du am Stehschreibtisch tragen?',
       paragraphs: [
         'Wenn du von zu Hause arbeitest, stehst du vielleicht in Socken oder Hausschuhen am Schreibtisch. Das sind viele Stunden ohne Dämpfung oder Gewölbestütze. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein bei Plantarfasziitis mit B dagegen, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Das betrifft aber Einlagen für sich genommen, nicht die Frage, ob irgendein Schuh besser ist als gar keiner.',
-        'Ein vernünftiger Weg: Trag beim Stehen einen Schuh mit etwas Dämpfung und einer stützenden Innensohle, auch zu Hause. Du brauchst keinen speziellen Schuh für den Stehschreibtisch. Wenn du zwischen Stehen und Sitzen wechselst, kannst du die Schuhe in den Sitzphasen ausziehen. Die Übungen auf dieser Seite setzen direkt an den Geweben an. Schuhe und Matten verbessern den Komfort beim Stehen, aber sie ersetzen weder Dehnen noch Krafttraining.',
+        'Ein vernünftiger Weg: **Trag beim Stehen einen Schuh mit etwas Dämpfung und einer stützenden Innensohle, auch zu Hause.** Du brauchst keinen speziellen Schuh für den Stehschreibtisch. Wenn du zwischen Stehen und Sitzen wechselst, kannst du die Schuhe in den Sitzphasen ausziehen.',
+        'Die Übungen auf dieser Seite setzen direkt an den Geweben an. Schuhe und Matten verbessern den Komfort beim Stehen, aber sie ersetzen weder Dehnen noch Krafttraining.',
       ],
       cites: [CITE.guideline],
     },
@@ -178,9 +186,17 @@ export const STANDING_DESK_DE: Guide = {
     {
       h2: 'Wie gewöhnst du dich ohne Fußschmerzen an einen Stehschreibtisch?',
       paragraphs: [
-        'Fang mit weniger Stehen an, als du glaubst zu brauchen. Die Expertenempfehlung von 2015 rät, sich auf 2\u00A0Stunden Stehen und leichte Aktivität pro Tag hochzuarbeiten, nicht damit anzufangen. Wenn Stehen neu für dich ist, beginn mit 15 bis 20\u00A0Minuten Stehen pro Stunde und steigere das über ein paar Wochen nach und nach.',
-        'Eine praktische erste Woche: 15\u00A0Minuten stehen, 45\u00A0Minuten sitzen, über den Tag wiederholen. In der zweiten Woche 20\u00A0Minuten stehen, 40 sitzen. In der dritten oder vierten Woche versuch 30 und 30. Hör auf deine Füße und deinen unteren Rücken. Wenn sich Beschwerden aufbauen, setz dich früher hin, statt durchzuhalten.',
-        'Leg von Anfang an eine Matte hin, wenn du eine hast. Trag Schuhe mit etwas Dämpfung, auch zu Hause. Mach die Wadendehnungen aus der Tabelle oben mindestens einmal am Tag. Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/).',
+        '**Fang mit weniger Stehen an, als du glaubst zu brauchen.** Die Expertenempfehlung von 2015 rät, sich auf 2\u00A0Stunden Stehen und leichte Aktivität pro Tag hochzuarbeiten, nicht damit anzufangen. Wenn Stehen neu für dich ist, beginn mit 15 bis 20\u00A0Minuten Stehen pro Stunde und steigere das über ein paar Wochen nach und nach:',
+        {
+          list: [
+            '**Eine praktische erste Woche:** 15\u00A0Minuten stehen, 45\u00A0Minuten sitzen, über den Tag wiederholen.',
+            '**In der zweiten Woche:** 20\u00A0Minuten stehen, 40 sitzen.',
+            '**In der dritten oder vierten Woche:** versuch 30 und 30.',
+          ],
+        },
+        'Hör auf deine Füße und deinen unteren Rücken. Wenn sich Beschwerden aufbauen, setz dich früher hin, statt durchzuhalten.',
+        'Leg von Anfang an eine Matte hin, wenn du eine hast. Trag Schuhe mit etwas Dämpfung, auch zu Hause. Mach die Wadendehnungen aus der Tabelle oben mindestens einmal am Tag.',
+        'Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/).',
       ],
       cites: [CITE.buckley],
     },

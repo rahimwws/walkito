@@ -31,7 +31,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
       h2: 'Como fazer o alongamento de panturrilha com o joelho esticado?',
       paragraphs: [
         'Fique de frente para uma parede com as mãos apoiadas nela, mais ou menos na altura dos ombros. Leve um pé para trás, cerca de 60\u00A0cm. Mantenha a perna de trás esticada, o calcanhar pressionando o chão e os dedos apontando para a frente. Incline o quadril em direção à parede até sentir um alongamento na parte de cima da panturrilha de trás. Segure por 30\u00A0segundos e troque de perna.',
-        'O segredo é manter o joelho de trás travado e esticado. Isso isola o gastrocnêmio, que cruza o joelho e o tornozelo. Se você dobra o joelho, o alongamento passa para o sóleo, o músculo mais profundo da panturrilha, e esse é outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) para essa versão.',
+        '**O segredo é manter o joelho de trás travado e esticado.** Isso isola o gastrocnêmio, que cruza o joelho e o tornozelo. Se você dobra o joelho, o alongamento passa para o sóleo, o músculo mais profundo da panturrilha, e esse é outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) para essa versão.',
       ],
       exercises: [
         {
@@ -58,7 +58,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
       paragraphs: [
         'O gastrocnêmio vai de trás do joelho até o calcanhar, pelo tendão de Aquiles. A fáscia plantar começa onde o Aquiles termina, passando por baixo do osso do calcanhar e indo para a frente até os dedos. Quando o gastrocnêmio está tenso, ele limita o quanto o tornozelo consegue dobrar para cima. Isso obriga a fáscia plantar a absorver mais tensão a cada passo.',
         'Em um estudo caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo teve razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou qualquer outra variável do estudo.',
-        'Em outro trabalho, uma revisão de 254\u00A0pessoas com fascite plantar encontrou que 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio, e outros 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Ou seja, a panturrilha tensa não é um detalhe. Ela está presente na maioria das pessoas com esse problema.',
+        'Em outro trabalho, uma revisão de 254\u00A0pessoas com fascite plantar encontrou que 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio, e outros 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Ou seja, **a panturrilha tensa não é um detalhe.** Ela está presente na maioria das pessoas com esse problema.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -74,10 +74,14 @@ export const EX_CALF_STRETCH_PT: Guide = {
     {
       h2: 'Quais são os erros comuns no alongamento de panturrilha?',
       paragraphs: [
-        'Dobrar o joelho de trás. No momento em que o joelho dobra, o gastrocnêmio relaxa e o alongamento passa para o sóleo. Mantenha o joelho de trás travado e esticado durante todo o tempo.',
-        'Deixar o calcanhar de trás levantar. Se o calcanhar sai do chão, a panturrilha não está sendo alongada. Primeiro pressione o calcanhar no chão, depois incline para a frente até o alongamento aparecer.',
-        'Virar o pé de trás para fora. Quando o pé gira para fora, o alongamento pega a parte de fora da panturrilha em vez do músculo inteiro. Mantenha os dedos apontando reto para a parede.',
-        'Segurar pouco tempo. Um alongamento de 10\u00A0segundos não é longo o bastante para ter efeito no comprimento do tecido. Segure pelo menos 30\u00A0segundos de cada vez.',
+        {
+          list: [
+            '**Dobrar o joelho de trás.** No momento em que o joelho dobra, o gastrocnêmio relaxa e o alongamento passa para o sóleo. Mantenha o joelho de trás travado e esticado durante todo o tempo.',
+            '**Deixar o calcanhar de trás levantar.** Se o calcanhar sai do chão, a panturrilha não está sendo alongada. Primeiro pressione o calcanhar no chão, depois incline para a frente até o alongamento aparecer.',
+            '**Virar o pé de trás para fora.** Quando o pé gira para fora, o alongamento pega a parte de fora da panturrilha em vez do músculo inteiro. Mantenha os dedos apontando reto para a parede.',
+            '**Segurar pouco tempo.** Um alongamento de 10\u00A0segundos não é longo o bastante para ter efeito no comprimento do tecido. Segure pelo menos 30\u00A0segundos de cada vez.',
+          ],
+        },
       ],
     },
     {
@@ -92,7 +96,8 @@ export const EX_CALF_STRETCH_PT: Guide = {
       h2: 'Como o alongamento de panturrilha se encaixa com o alongamento do sóleo',
       paragraphs: [
         'O gastrocnêmio e o sóleo juntos formam a panturrilha. A versão com o joelho esticado alonga o gastrocnêmio. A versão com o joelho dobrado alonga o sóleo. São dois exercícios, não duas versões do mesmo.',
-        'A maioria dos programas para fascite plantar inclui os dois, porque a panturrilha pode estar tensa em um dos músculos ou nos dois. A diretriz não os separa. O Walkito coloca os dois na mesma sessão quando há alongamento no plano. A página do [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) explica a versão com o joelho dobrado. Para o programa completo de alongamento e força, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'A maioria dos programas para fascite plantar inclui os dois, porque a panturrilha pode estar tensa em um dos músculos ou nos dois. A diretriz não os separa. O Walkito coloca os dois na mesma sessão quando há alongamento no plano.',
+        'A página do [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) explica a versão com o joelho dobrado. Para o programa completo de alongamento e força, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       cites: [CITE.guideline],
     },

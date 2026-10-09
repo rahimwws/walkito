@@ -39,7 +39,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
       h2: 'Como fazer a inversão do tornozelo com faixa?',
       paragraphs: [
         'Sente-se com as pernas esticadas à frente ou na beira de uma cadeira. Passe uma faixa elástica em volta da parte de dentro da frente do pé da perna que vai trabalhar. Prenda a outra ponta embaixo do pé oposto ou em volta do pé de uma mesa, para a faixa puxar o pé para fora.',
-        'Comece com o pé um pouco virado para fora (em eversão). Vire a sola do pé para dentro contra a faixa, levando a parte da frente do pé em direção ao meio do corpo. Mexa o pé, não a perna inteira. O joelho aponta reto para a frente o tempo todo. Volte devagar e repita.',
+        'Comece com o pé um pouco virado para fora (em eversão). Vire a sola do pé para dentro contra a faixa, levando a parte da frente do pé em direção ao meio do corpo. **Mexa o pé, não a perna inteira.** O joelho aponta reto para a frente o tempo todo. Volte devagar e repita.',
         'Comece com uma faixa leve. O movimento é pequeno. Se o joelho torce ou o quadril gira, a faixa está pesada demais ou a perna está compensando.',
       ],
       exercises: [
@@ -63,14 +63,22 @@ export const EX_BAND_INVERSION_PT: Guide = {
       keyFact: 'Um estudo de ressonância magnética de 2004 com 5\u00A0adultos saudáveis mostrou que virar o pé para dentro aumentou o sinal do tibial posterior em 50\u00A0por cento, com menos de 5\u00A0por cento de mudança nos músculos vizinhos (Kulig e colegas, 2004).',
       paragraphs: [
         'O alvo principal é o tibial posterior. Ele é o músculo mais profundo da parte de trás da perna, atrás da tíbia e da fíbula. O tendão dele passa por trás do maléolo medial (o osso de dentro do tornozelo) e depois se abre em várias faixas que se prendem a quase todos os ossos do meio do pé.',
-        'Um estudo de ressonância magnética de 2004 de Kulig e colegas testou três exercícios em 5\u00A0adultos saudáveis: adução do pé (virar o pé para dentro deslizando no chão), elevação de calcanhar em uma perna e supinação do pé em cadeia aberta. A adução do pé produziu a maior ativação do tibial posterior (aumento de 50% no sinal) com a menor ativação nos músculos em volta (menos de 5%). A elevação de calcanhar em uma perna também ativou o tibial posterior, mas ativou muito o gastrocnêmio (99%) e o sóleo (39%), o que faz dela um exercício bem menos seletivo para o tibial posterior.',
+        'Um estudo de ressonância magnética de 2004 de Kulig e colegas testou três exercícios em 5\u00A0adultos saudáveis:',
+        {
+          list: [
+            'Adução do pé (virar o pé para dentro deslizando no chão).',
+            'Elevação de calcanhar em uma perna.',
+            'Supinação do pé em cadeia aberta.',
+          ],
+        },
+        'A adução do pé produziu a maior ativação do tibial posterior (aumento de 50% no sinal) com a menor ativação nos músculos em volta (menos de 5%). A elevação de calcanhar em uma perna também ativou o tibial posterior, mas ativou muito o gastrocnêmio (99%) e o sóleo (39%), o que faz dela um exercício bem menos seletivo para o tibial posterior.',
       ],
       cites: [CITE.kulig],
     },
     {
       h2: 'Por que o tibial posterior importa para o arco?',
       paragraphs: [
-        'O tibial posterior é o principal estabilizador dinâmico do arco longitudinal medial. Toda vez que você dá um passo, ele contrai para segurar o arco no meio do apoio, quando todo o seu peso está em um pé só. Os músculos intrínsecos do pé (treinados pelo [exercício do pé curto](/pt/exercicios/pe-curto/) e por [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/)) dão o apoio local ao arco, mas o tibial posterior dá a força extrínseca maior, de cima.',
+        'O tibial posterior é **o principal estabilizador dinâmico do arco longitudinal medial.** Toda vez que você dá um passo, ele contrai para segurar o arco no meio do apoio, quando todo o seu peso está em um pé só. Os músculos intrínsecos do pé (treinados pelo [exercício do pé curto](/pt/exercicios/pe-curto/) e por [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/)) dão o apoio local ao arco, mas o tibial posterior dá a força extrínseca maior, de cima.',
         'Quando o tendão do tibial posterior enfraquece ou se desgasta, o arco cai aos poucos e o pé faz mais pronação. Uma revisão de 2017 de Ling e Lui descreveu isso como a causa mais comum de pé chato adquirido do adulto. Uma revisão sistemática de 2018 de Ross e colegas mostrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função na disfunção do tendão tibial posterior em fase inicial.',
         'Por isso os [programas de exercícios para pé chato](/pt/exercicios-pe-chato/) incluem exercícios intrínsecos do pé e trabalho do tibial posterior. Os músculos intrínsecos são os estabilizadores locais. O tibial posterior é o principal estabilizador extrínseco. Os dois importam.',
       ],
@@ -79,10 +87,14 @@ export const EX_BAND_INVERSION_PT: Guide = {
     {
       h2: 'Quais são os erros comuns na inversão com faixa?',
       paragraphs: [
-        'O erro mais comum é girar a perna inteira em vez de só o pé. Quando o quadril gira para dentro para virar o pé, o tibial posterior quase não trabalha. Mantenha o joelho apontando reto para a frente. Só o pé se mexe, no tornozelo.',
-        'Outro erro é usar uma faixa forte demais. O tibial posterior é um músculo pequeno e profundo. Uma faixa pesada obriga os músculos maiores a assumir. Comece com uma faixa leve e foque em sentir o trabalho na parte de dentro do tornozelo e no arco.',
-        'Deixar o pé voltar de uma vez entre as repetições é um terceiro problema. Controle a volta. A fase excêntrica, voltando devagar, coloca carga no tendão de um jeito que ajuda ele a se adaptar. Uma volta lenta vale mais que uma puxada rápida.',
-        'Por fim, algumas pessoas colocam a faixa muito acima no pé, perto da própria articulação do tornozelo. A faixa deve ficar em volta da parte da frente do pé, perto da base dos dedos, para a alavanca trabalhar no ângulo certo.',
+        {
+          list: [
+            '**O erro mais comum é girar a perna inteira em vez de só o pé.** Quando o quadril gira para dentro para virar o pé, o tibial posterior quase não trabalha. Mantenha o joelho apontando reto para a frente. Só o pé se mexe, no tornozelo.',
+            '**Outro erro é usar uma faixa forte demais.** O tibial posterior é um músculo pequeno e profundo. Uma faixa pesada obriga os músculos maiores a assumir. Comece com uma faixa leve e foque em sentir o trabalho na parte de dentro do tornozelo e no arco.',
+            '**Deixar o pé voltar de uma vez entre as repetições é um terceiro problema.** Controle a volta. A fase excêntrica, voltando devagar, coloca carga no tendão de um jeito que ajuda ele a se adaptar. Uma volta lenta vale mais que uma puxada rápida.',
+            '**Por fim, algumas pessoas colocam a faixa muito acima no pé, perto da própria articulação do tornozelo.** A faixa deve ficar em volta da parte da frente do pé, perto da base dos dedos, para a alavanca trabalhar no ângulo certo.',
+          ],
+        },
       ],
     },
     {
@@ -90,7 +102,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
       paragraphs: [
         'A evidência mais direta sobre o movimento vem do estudo de ressonância magnética de 2004 de Kulig e colegas. Ele confirmou que a adução do pé ativa o tibial posterior de forma seletiva, com ativação mínima dos músculos em volta. Isso faz da inversão contra uma faixa o exercício de escolha quando o objetivo é fortalecer esse músculo específico.',
         'Para resultados clínicos, uma revisão sistemática de 2018 de Ross e colegas analisou programas de exercício para a disfunção do tendão tibial posterior. A maioria dos estudos era pequena, mas a revisão concluiu que programas com exercícios excêntricos e concêntricos do tibial posterior, muitas vezes junto com fortalecimento da panturrilha e palmilhas, melhoraram a dor e a função.',
-        'O exercício não foi testado sozinho em um ensaio grande de fascite plantar. O papel dele no programa do Walkito é apoiar o arco fortalecendo o estabilizador extrínseco que trabalha junto com os músculos intrínsecos. Páginas relacionadas: [exercícios para pé chato](/pt/exercicios-pe-chato/), [exercício do pé curto](/pt/exercicios/pe-curto/), [abdução de quadril](/pt/exercicios/abducao-quadril/).',
+        '**O exercício não foi testado sozinho em um ensaio grande de fascite plantar.** O papel dele no programa do Walkito é apoiar o arco fortalecendo o estabilizador extrínseco que trabalha junto com os músculos intrínsecos. Páginas relacionadas: [exercícios para pé chato](/pt/exercicios-pe-chato/), [exercício do pé curto](/pt/exercicios/pe-curto/), [abdução de quadril](/pt/exercicios/abducao-quadril/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
     },

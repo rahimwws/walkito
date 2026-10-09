@@ -24,7 +24,8 @@ export const SEVERS_IT: Guide = {
   lede:
     'La malattia di Sever, chiamata anche apofisite calcaneare, è la causa più comune di dolore al tallone nei bambini. Succede quando la cartilagine di accrescimento nella parte posteriore dell’osso del tallone viene irritata dalla trazione ripetuta del tendine d’Achille, di solito durante uno scatto di crescita e in uno sport con corsa o salti. Non è una malattia nel senso comune del termine. Si risolve da sola quando la cartilagine di accrescimento si chiude.',
   intro: [
-    'Questa pagina è scritta per i genitori. Spiega cosa succede nel tallone, cosa dicono gli studi su talloniere, stretching e gestione del carico, e quando il dolore richiede un professionista sanitario invece del riposo. Walkito è un’app di esercizi pensata per adulti con dolore al tallone e all’arco. Non è pensata per i bambini, e niente in questa pagina è un invito a usarla con un bambino. Se il dolore al tallone di tuo figlio non migliora con i passi descritti qui sotto, il passo successivo giusto è un medico dello sport pediatrico o un podologo.',
+    'Questa pagina è scritta per i genitori. Spiega cosa succede nel tallone, cosa dicono gli studi su talloniere, stretching e gestione del carico, e quando il dolore richiede un professionista sanitario invece del riposo.',
+    'Walkito è un’app di esercizi pensata per adulti con dolore al tallone e all’arco. Non è pensata per i bambini, e niente in questa pagina è un invito a usarla con un bambino. Se il dolore al tallone di tuo figlio non migliora con i passi descritti qui sotto, il passo successivo giusto è un medico dello sport pediatrico o un podologo.',
   ],
   takeaways: [
     'La malattia di Sever colpisce i bambini tra 8 e 15\u00A0anni, più spesso durante uno scatto di crescita, e si risolve quando la cartilagine di accrescimento del calcagno si chiude, di solito tra i 12 e i 17\u00A0anni (revisione StatPearls, 2024).',
@@ -49,14 +50,24 @@ export const SEVERS_IT: Guide = {
       paragraphs: [
         'La malattia di Sever colpisce i bambini tra circa 8 e 15\u00A0anni. L’apofisi calcaneare compare intorno ai 7-9\u00A0anni e di solito si salda tra i 15 e i 17. I maschi sono colpiti da due a tre volte più spesso delle femmine, con un esordio tipico intorno ai 12\u00A0anni nei maschi e agli 11 nelle femmine. Circa il 60% dei casi interessa entrambi i talloni.',
         'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. Lo schema è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
-        'I fattori di rischio comprendono molta attività di corsa e salti, polpacci rigidi, una caviglia poco flessibile, un IMC alto, superfici di gioco dure e scarpe normali o con i tacchetti poco ammortizzate.',
+        'I fattori di rischio comprendono:',
+        {
+          list: [
+            'Molta attività di corsa e salti.',
+            'Polpacci rigidi.',
+            'Una caviglia poco flessibile.',
+            'Un IMC alto.',
+            'Superfici di gioco dure.',
+            'Scarpe normali o con i tacchetti poco ammortizzate.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: 'Che sensazione dà la malattia di Sever?',
       paragraphs: [
-        'Il sintomo principale è un dolore nella parte posteriore o ai lati del tallone, di solito durante o dopo l’attività e soprattutto dopo corse o salti. Il dolore viene spesso descritto come un livido. Raramente c’è gonfiore o un livido visibile. Premere o stringere i lati del tallone di solito riproduce il dolore. Questo test della compressione è il controllo clinico standard.',
+        'Il sintomo principale è un dolore nella parte posteriore o ai lati del tallone, di solito durante o dopo l’attività e soprattutto dopo corse o salti. Il dolore viene spesso descritto come un livido. Raramente c’è gonfiore o un livido visibile. **Premere o stringere i lati del tallone di solito riproduce il dolore.** Questo test della compressione è il controllo clinico standard.',
         'A differenza della fascite plantare negli adulti, che è peggiore ai primi passi dopo il riposo, il dolore della malattia di Sever tende a peggiorare con l’attività e non migliora camminando. Alcuni bambini iniziano a zoppicare o a camminare sulle punte per non caricare il peso sul tallone.',
         'Il dolore può andare da lieve, che si nota solo durante lo sport, a così forte da impedire del tutto al bambino di giocare.',
       ],
@@ -65,8 +76,16 @@ export const SEVERS_IT: Guide = {
       h2: 'Cosa aiuta la malattia di Sever? Le prove',
       keyFact: 'In uno studio su 101\u00A0bambini, tutti e tre gli approcci hanno migliorato il dolore, e il gruppo con il rialzo per il tallone era più soddisfatto a sei settimane, anche se la differenza è sparita a tre mesi (Wiegerinck e colleghi, 2016).',
       paragraphs: [
-        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o solette per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.',
-        'In uno studio del 2016 su 101\u00A0bambini tra 8 e 15\u00A0anni, Wiegerinck e colleghi hanno confrontato tre approcci: attesa vigile con il consiglio di interrompere l’attività che fa male, un rialzo per il tallone ed esercizi eccentrici supervisionati. Tutti e tre i gruppi sono migliorati in modo significativo. A sei settimane il gruppo con il rialzo per il tallone era più soddisfatto degli altri due. A tre mesi non restava nessuna differenza clinicamente rilevante tra i tre.',
+        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o solette per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e **nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.**',
+        'In uno studio del 2016 su 101\u00A0bambini tra 8 e 15\u00A0anni, Wiegerinck e colleghi hanno confrontato tre approcci:',
+        {
+          list: [
+            'Attesa vigile con il consiglio di interrompere l’attività che fa male.',
+            'Un rialzo per il tallone.',
+            'Esercizi eccentrici supervisionati.',
+          ],
+        },
+        'Tutti e tre i gruppi sono migliorati in modo significativo. A sei settimane il gruppo con il rialzo per il tallone era più soddisfatto degli altri due. A tre mesi non restava nessuna differenza clinicamente rilevante tra i tre.',
         'In un altro studio fattoriale del 2016 su 124\u00A0bambini, James e colleghi hanno confrontato i rialzi per il tallone con i plantari prefabbricati, e il cambio di scarpe con nessun cambio. I rialzi per il tallone hanno avuto un piccolo vantaggio sui plantari prefabbricati a 2\u00A0mesi nel dominio fisico dell’Oxford Ankle Foot Questionnaire. A 6 e 12\u00A0mesi non restava nessuna differenza tra nessuna combinazione.',
         'In uno studio crossover su 51\u00A0ragazzi, Perhamre e colleghi hanno confrontato una coppetta per il tallone da 3\u00A0mm con un cuneo per il tallone da 5\u00A0mm. La coppetta ha ridotto il dolore di circa l’80% sulla scala Borg CR-10, il che fa pensare che ammortizzare e assorbire l’urto possa contare più del semplice sollevare il tallone.',
       ],
@@ -77,8 +96,17 @@ export const SEVERS_IT: Guide = {
     {
       h2: 'Gestione del carico e modifica dell’attività',
       paragraphs: [
-        'La gestione del carico è la base della cura della malattia di Sever. Non significa interrompere tutto lo sport. Significa ridurre le attività che fanno male, soprattutto corsa e salti su superfici dure, finché il dolore si calma. La maggior parte dei bambini può tornare allo sport entro due-otto settimane se il carico viene gestito presto.',
-        'I passi pratici comprendono ridurre gli allenamenti invece di smettere del tutto, evitare le scarpe con i tacchetti su terreno duro quando possibile, passare a scarpe ben ammortizzate e saltare le parti dell’allenamento con più corsa e salti. Alcuni allenatori fanno partecipare i bambini agli esercizi tecnici e li tengono fuori da scatti e preparazione atletica.',
+        'La gestione del carico è la base della cura della malattia di Sever. **Non significa interrompere tutto lo sport.** Significa ridurre le attività che fanno male, soprattutto corsa e salti su superfici dure, finché il dolore si calma. La maggior parte dei bambini può tornare allo sport entro due-otto settimane se il carico viene gestito presto.',
+        'I passi pratici comprendono:',
+        {
+          list: [
+            'Ridurre gli allenamenti invece di smettere del tutto.',
+            'Evitare le scarpe con i tacchetti su terreno duro quando possibile.',
+            'Passare a scarpe ben ammortizzate.',
+            'Saltare le parti dell’allenamento con più corsa e salti.',
+          ],
+        },
+        'Alcuni allenatori fanno partecipare i bambini agli esercizi tecnici e li tengono fuori da scatti e preparazione atletica.',
         'La parte più difficile della gestione del carico è che la malattia di Sever tende a ripresentarsi. Un bambino può stare meglio dopo due settimane di riposo, tornare all’attività piena e ritrovarsi con il dolore. Non significa che il primo periodo di riposo non abbia funzionato. Significa che la cartilagine di accrescimento è ancora aperta e ancora vulnerabile. Le ricadute sono comuni fino alla maturità scheletrica.',
       ],
       cites: [CITE.wiegerinck],
@@ -89,7 +117,7 @@ export const SEVERS_IT: Guide = {
       paragraphs: [
         'Le coppette per il tallone sono tra gli interventi più pratici per la malattia di Sever. Ammortizzano il tallone, assorbono l’urto e riducono i picchi di forza che arrivano alla cartilagine di accrescimento. Lo studio crossover di Perhamre ha trovato che una coppetta per il tallone riduceva il dolore di circa l’80% rispetto a un cuneo per il tallone in 51\u00A0ragazzi, il che fa pensare che assorbire l’urto al tallone conti più del semplice cambiare l’angolo del tallone.',
         'Nello studio fattoriale di James, i rialzi per il tallone (un tipo di inserto che solleva il tallone) hanno mostrato un piccolo vantaggio a breve termine sui plantari prefabbricati a 2\u00A0mesi, ma nessun vantaggio a 12\u00A0mesi. I plantari su misura non sono stati testati in nessuno di questi studi.',
-        'Un punto di partenza ragionevole è una coppetta per il tallone economica da banco, da portare in entrambe le scarpe e durante lo sport. Se non aiuta, un professionista sanitario può valutare se valga la pena spendere per un plantare su misura.',
+        '**Un punto di partenza ragionevole è una coppetta per il tallone economica da banco, da portare in entrambe le scarpe e durante lo sport.** Se non aiuta, un professionista sanitario può valutare se valga la pena spendere per un plantare su misura.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -97,7 +125,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Lo stretching del polpaccio aiuta la malattia di Sever?',
       paragraphs: [
         'Polpacci rigidi aumentano la trazione sulla cartilagine di accrescimento, e la rigidità del polpaccio è uno dei fattori di rischio riconosciuti per l’apofisite calcaneare. Allungare il gastrocnemio (il muscolo del polpaccio più superficiale, allungato a ginocchio teso) e il soleo (il muscolo più profondo, allungato a ginocchio piegato) è una raccomandazione standard.',
-        'Nello studio di Wiegerinck, il gruppo degli esercizi ha seguito un programma di rinforzo eccentrico del polpaccio con la supervisione di un fisioterapista. Questo gruppo è migliorato quanto i gruppi del rialzo per il tallone e dell’attesa vigile. Stretching e rinforzo leggero sono sicuri e possono aiutare riducendo la trazione sulla cartilagine di accrescimento, ma le prove non li mostrano superiori alle coppette per il tallone o alla sola gestione del carico.',
+        'Nello studio di Wiegerinck, il gruppo degli esercizi ha seguito un programma di rinforzo eccentrico del polpaccio con la supervisione di un fisioterapista. Questo gruppo è migliorato quanto i gruppi del rialzo per il tallone e dell’attesa vigile. Stretching e rinforzo leggero sono sicuri e possono aiutare riducendo la trazione sulla cartilagine di accrescimento, ma **le prove non li mostrano superiori alle coppette per il tallone o alla sola gestione del carico.**',
         'Gli esercizi per i bambini con apofisite calcaneare vanno supervisionati o insegnati da un professionista sanitario o da un fisioterapista. Dose e progressione dipendono dall’età del bambino, dal livello di dolore e dalle richieste del suo sport. Un bambino con dolore acuto che zoppica ha bisogno prima di riposo, non di esercizi.',
       ],
       cites: [CITE.wiegerinck],
@@ -113,7 +141,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Quanto dura e torna?',
       paragraphs: [
         'La malattia di Sever di solito si risolve nel giro di settimane o mesi con gestione del carico e cure di supporto. La maggior parte dei bambini può tornare allo sport entro due-otto settimane. Il dolore di solito si calma per sempre quando la cartilagine di accrescimento si salda in osso solido, in genere tra i 12 e i 17\u00A0anni a seconda del sesso e del ritmo di maturazione del bambino (revisione StatPearls, 2024).',
-        'Le ricadute sono comuni e prevedibili. Ogni scatto di crescita e ogni nuova stagione sportiva possono riportare il dolore. Una ricaduta non è segno di cure fallite. È segno che la cartilagine di accrescimento è ancora aperta. Continuare con coppette per il tallone, buone scarpe e stretching del polpaccio durante le stagioni sportive può ridurre l’intensità e la frequenza delle riacutizzazioni.',
+        'Le ricadute sono comuni e prevedibili. Ogni scatto di crescita e ogni nuova stagione sportiva possono riportare il dolore. **Una ricaduta non è segno di cure fallite.** È segno che la cartilagine di accrescimento è ancora aperta. Continuare con coppette per il tallone, buone scarpe e stretching del polpaccio durante le stagioni sportive può ridurre l’intensità e la frequenza delle riacutizzazioni.',
         'Alla malattia di Sever non sono stati associati problemi a lungo termine. Non danneggia la cartilagine di accrescimento e non cambia la forma finale dell’osso.',
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

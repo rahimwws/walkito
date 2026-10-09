@@ -32,7 +32,7 @@ export const BUNIONS_FR: Guide = {
       h2: 'Les exercices peuvent-ils corriger un hallux valgus\u00A0?',
       figure: { id: 'bunion', caption: 'Un hallux valgus (oignon) est une bosse osseuse à l’articulation du gros orteil, avec le gros orteil qui penche vers les autres orteils.', alt: 'Les os du pied vus de dessus, le gros orteil incliné vers le deuxième orteil et une bosse rouge sur le côté intérieur de l’articulation du gros orteil.' },
       paragraphs: [
-        'Non. Un oignon, appelé cliniquement hallux valgus, est une déviation osseuse de la première articulation métatarso-phalangienne (l’articulation du gros orteil). Le premier métatarsien dérive vers l’intérieur et le gros orteil s’incline vers l’extérieur. Une fois que l’os s’est déplacé et que la capsule articulaire s’est adaptée, l’exercice ne peut pas le remettre en place.',
+        'Non. Un oignon, appelé cliniquement hallux valgus, est une déviation osseuse de la première articulation métatarso-phalangienne (l’articulation du gros orteil). Le premier métatarsien dérive vers l’intérieur et le gros orteil s’incline vers l’extérieur. Une fois que l’os s’est déplacé et que la capsule articulaire s’est adaptée, **l’exercice ne peut pas le remettre en place.**',
         'Ce que l’exercice peut faire, c’est renforcer les muscles autour de l’articulation. L’abducteur de l’hallux longe l’intérieur de la voûte et ramène le gros orteil dans l’alignement. Chez les personnes avec un hallux valgus, ce muscle est plus faible et plus petit que chez les personnes sans. Le renforcer ne défera pas le changement de structure, mais cela peut améliorer le contrôle, réduire les symptômes et peut-être ralentir la dérive dans les cas légers.',
         'Un commentaire clinique de 2016 dans le Journal of Orthopaedic and Sports Physical Therapy a proposé une approche de renforcement musculaire fondée sur la biomécanique pour l’hallux valgus débutant, centrée sur les muscles intrinsèques du pied. L’auteur soutenait que la déformation progresse en partie à cause d’un déséquilibre musculaire, et que rétablir l’activité musculaire pourrait donc avoir un effet protecteur. C’est un argument plausible, mais les preuves directes à long terme restent limitées.',
       ],
@@ -44,7 +44,15 @@ export const BUNIONS_FR: Guide = {
         'Les meilleures preuves viennent d’une poignée de petits essais. Aucun n’est grand, et aucun n’a suivi les participants plus d’un an.',
         'Kim et coll. (2015) ont réparti au hasard 24\u00A0personnes avec un hallux valgus léger à modéré entre une orthèse seule et une orthèse plus des exercices d’écartement des orteils pendant 8\u00A0semaines. Le groupe exercice a réduit son angle d’hallux valgus de 3,4\u00A0degrés en moyenne et augmenté la section transversale de l’abducteur de l’hallux. Le groupe orthèse seule n’a montré aucun changement significatif sur ces deux mesures. L’étude était petite et portait surtout sur de jeunes adultes avec un hallux valgus léger.',
         'Abdalbary (2018) a réparti au hasard 56\u00A0femmes avec un hallux valgus modéré entre 3\u00A0mois de mobilisation du pied, d’exercices de renforcement et d’écarteur d’orteils, et l’absence d’intervention (liste d’attente). À 3\u00A0mois puis à 1\u00A0an, le groupe exercice avait une douleur, une fonction et des mesures d’angle à la radio significativement meilleures que le groupe sans intervention. Cet essai se distingue par son suivi plus long, mais comme l’écarteur d’orteils était associé à la mobilisation et aux exercices, l’étude ne peut pas dire ce que l’écarteur seul a apporté.',
-        'Külünkoğlu et coll. (2021) ont réparti au hasard 60\u00A0femmes (120\u00A0pieds) avec un hallux valgus entre un mois d’orthèse de nuit, d’exercices ou d’électrostimulation. Les trois groupes se sont améliorés en douleur et en fonction, mais l’orthèse de nuit était plus efficace que l’exercice et l’électrothérapie, et l’exercice faisait mieux que l’électrothérapie. L’étude n’avait pas de groupe témoin sans traitement, il est donc difficile de savoir ce que chacune des trois approches a apporté au-delà de la variation naturelle.',
+        'Külünkoğlu et coll. (2021) ont réparti au hasard 60\u00A0femmes (120\u00A0pieds) avec un hallux valgus entre un mois de\u00A0:',
+        {
+          list: [
+            'Orthèse de nuit.',
+            'Exercices.',
+            'Électrostimulation.',
+          ],
+        },
+        'Les trois groupes se sont améliorés en douleur et en fonction, mais l’orthèse de nuit était plus efficace que l’exercice et l’électrothérapie, et l’exercice faisait mieux que l’électrothérapie. L’étude n’avait pas de groupe témoin sans traitement, il est donc difficile de savoir ce que chacune des trois approches a apporté au-delà de la variation naturelle.',
       ],
       sourceNote:
         'Kim 2015\u00A0: 24\u00A0sujets, essai randomisé de 8\u00A0semaines. Variation de l’angle HV\u00A0: groupe exercice -3,41 ± 3,17\u00A0degrés, groupe orthèse -0,5 ± 2,07\u00A0degrés (p < 0,05). Variation de la section transversale de l’AbdH\u00A0: groupe exercice +0,48\u00A0cm², groupe orthèse -0,11\u00A0cm². Abdalbary 2018\u00A0: 56\u00A0femmes, réparties au hasard entre 3\u00A0mois de mobilisation + exercices + écarteur d’orteils (36\u00A0séances) et l’absence d’intervention, essai randomisé avec suivi à 1\u00A0an. Külünkoğlu 2021\u00A0: 60\u00A0femmes (120\u00A0pieds), essai randomisé à 3\u00A0bras (orthèse, exercices, électrothérapie), 1\u00A0mois de traitement, pas de groupe témoin sans traitement\u00A0; l’orthèse était la plus efficace des trois.',
@@ -55,8 +63,9 @@ export const BUNIONS_FR: Guide = {
       keyFact: 'Dans une étude sur 30\u00A0femmes avec un hallux valgus douloureux, une semelle avec écarteur d’orteils a réduit significativement la douleur sur trois mois, alors qu’un autre groupe avec orthèse de nuit ne s’est pas amélioré (Tehraninasr et coll., 2008).',
       paragraphs: [
         'Les écarteurs d’orteils, aussi appelés séparateurs d’orteils, se placent entre le gros orteil et le deuxième orteil. Ils réduisent les frottements, soulagent la pression sur l’oignon et éloignent doucement le gros orteil du deuxième orteil tant qu’ils sont portés.',
-        'Tehraninasr et coll. (2008) ont étudié 30\u00A0femmes avec un hallux valgus douloureux sur 3\u00A0mois. Un groupe portait une semelle avec un écarteur d’orteils intégré, et un autre groupe portait une orthèse de nuit à la place. La douleur a baissé de façon significative dans le groupe écarteur, mais pas dans le groupe orthèse de nuit. Aucun des deux groupes n’a eu de changement statistiquement significatif de l’angle de l’hallux valgus. L’essai d’Abdalbary associait un écarteur d’orteils à de la thérapie manuelle et des exercices, il ne permet donc pas d’isoler ce que l’écarteur a fait seul.',
-        'Le schéma est le même d’une étude à l’autre\u00A0: les écarteurs d’orteils peuvent améliorer le confort et les symptômes à court terme, mais les preuves qu’ils changent l’angle osseux avec le temps sont faibles. Ils ne sont pas nocifs et coûtent peu, donc beaucoup de professionnels de santé les conseillent en plus des exercices et du changement de chaussures.',
+        'Tehraninasr et coll. (2008) ont étudié 30\u00A0femmes avec un hallux valgus douloureux sur 3\u00A0mois. Un groupe portait une semelle avec un écarteur d’orteils intégré, et un autre groupe portait une orthèse de nuit à la place. La douleur a baissé de façon significative dans le groupe écarteur, mais pas dans le groupe orthèse de nuit. Aucun des deux groupes n’a eu de changement statistiquement significatif de l’angle de l’hallux valgus.',
+        'L’essai d’Abdalbary associait un écarteur d’orteils à de la thérapie manuelle et des exercices, il ne permet donc pas d’isoler ce que l’écarteur a fait seul.',
+        'Le schéma est le même d’une étude à l’autre\u00A0: **les écarteurs d’orteils peuvent améliorer le confort et les symptômes à court terme, mais les preuves qu’ils changent l’angle osseux avec le temps sont faibles.** Ils ne sont pas nocifs et coûtent peu, donc beaucoup de professionnels de santé les conseillent en plus des exercices et du changement de chaussures.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -128,7 +137,7 @@ export const BUNIONS_FR: Guide = {
     {
       h2: 'Les chaussures comptent-elles pour l’hallux valgus\u00A0?',
       paragraphs: [
-        'Les chaussures sont l’un des changements les plus utiles que vous puissiez faire. Un avant de chaussure large laisse au gros orteil la place de se tenir dans une position plus neutre et empêche la chaussure d’appuyer sur l’oignon. Les chaussures étroites et pointues poussent le gros orteil encore plus en valgus et compriment l’articulation.',
+        'Les chaussures sont l’un des changements les plus utiles que vous puissiez faire. **Un avant de chaussure large laisse au gros orteil la place de se tenir dans une position plus neutre** et empêche la chaussure d’appuyer sur l’oignon. Les chaussures étroites et pointues poussent le gros orteil encore plus en valgus et compriment l’articulation.',
         'Les talons hauts reportent le poids sur l’avant-pied et augmentent la pression sur la première articulation métatarso-phalangienne. Si l’oignon fait mal, réduire la hauteur du talon est une première mesure simple.',
         'Les chaussures seules ne corrigeront pas la déformation, mais elles peuvent réduire les symptômes et ralentir l’évolution en supprimant la force extérieure qui pousse l’orteil encore plus hors de l’alignement.',
       ],
@@ -136,7 +145,7 @@ export const BUNIONS_FR: Guide = {
     {
       h2: 'Quand la chirurgie est-elle envisagée\u00A0?',
       paragraphs: [
-        'La chirurgie est envisagée quand la douleur et la gêne persistent malgré des mesures conservatrices comme le changement de chaussures, les exercices, les écarteurs et les orthèses. La décision dépend de l’impact de l’oignon sur la vie quotidienne, pas de l’angle seul.',
+        'La chirurgie est envisagée quand la douleur et la gêne persistent malgré des mesures conservatrices comme le changement de chaussures, les exercices, les écarteurs et les orthèses. **La décision dépend de l’impact de l’oignon sur la vie quotidienne, pas de l’angle seul.**',
         'Il existe plus de 150\u00A0techniques chirurgicales pour l’hallux valgus, du réalignement des tissus mous à l’ostéotomie (couper et repositionner l’os). Le choix dépend de la sévérité et de l’anatomie de chacun. La récupération va de quelques semaines à quelques mois.',
         'L’exercice et la prise en charge conservatrice sont en général essayés pendant plusieurs mois d’abord. Si vous gérez bien vos symptômes avec les approches de cette page, la chirurgie n’est pas urgente. Si la douleur limite la marche, le choix des chaussures ou l’activité malgré ces mesures, un spécialiste du pied et de la cheville peut discuter des options.',
       ],

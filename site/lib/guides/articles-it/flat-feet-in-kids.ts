@@ -31,8 +31,9 @@ export const FLAT_FEET_KIDS_IT: Guide = {
       figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       paragraphs: [
         'Il piede piatto è normale nei neonati e nei bambini piccoli ed è comune per tutta la prima infanzia. Il piede di un bambino piccolo ha un cuscinetto di grasso sotto l’arco, e i legamenti (le fasce che tengono unite le ossa) sono lassi ed elastici. Quando il bambino sta in piedi, l’arco scende verso il pavimento. Per un piede giovane è normale.',
-        'I numeri su questo sono chiari. In uno studio del 2006 a Vienna, i ricercatori hanno fatto la scansione dei piedi di 835\u00A0bambini tra i 3 e i 6\u00A0anni. Nel complesso, il 44% aveva il piede piatto flessibile. Meno dell’1% aveva un piede piatto che era un vero problema medico. Un bambino su dieci portava già plantari per l’arco, e gli autori hanno giudicato che più del 90% di questi non servisse. Un’indagine più vecchia su 441\u00A0persone tra 1 e 80\u00A0anni era arrivata alla stessa conclusione: il piede piatto è abituale nei neonati, comune nei bambini e ancora nella norma negli adulti.',
-        'Quindi se tuo figlio di 2 o 4\u00A0anni ha il piede piatto e corre in giro contento, è proprio il quadro che ci si aspetta.',
+        'I numeri su questo sono chiari. In uno studio del 2006 a Vienna, i ricercatori hanno fatto la scansione dei piedi di 835\u00A0bambini tra i 3 e i 6\u00A0anni. Nel complesso, il 44% aveva il piede piatto flessibile. Meno dell’1% aveva un piede piatto che era un vero problema medico.',
+        'Un bambino su dieci portava già plantari per l’arco, e gli autori hanno giudicato che più del 90% di questi non servisse. Un’indagine più vecchia su 441\u00A0persone tra 1 e 80\u00A0anni era arrivata alla stessa conclusione: il piede piatto è abituale nei neonati, comune nei bambini e ancora nella norma negli adulti.',
+        'Quindi se tuo figlio di 2 o 4\u00A0anni ha il piede piatto e corre in giro contento, **è proprio il quadro che ci si aspetta.**',
       ],
       cites: [CITE.pfeifferPreschool, CITE.staheliArch],
     },
@@ -41,8 +42,16 @@ export const FLAT_FEET_KIDS_IT: Guide = {
       keyFact: 'Il piede piatto è sceso dal 54% dei bambini di 3\u00A0anni al 24% di quelli di 6\u00A0anni in uno studio su 835\u00A0bambini (Pfeiffer e colleghi, 2006).',
       paragraphs: [
         'La maggior parte dei bambini sviluppa un arco visibile lentamente tra i 3 e i 6\u00A0anni circa, e alcuni più tardi. Nello studio di Vienna, aveva il piede piatto il 54% dei bambini di 3\u00A0anni, contro il 24% di quelli di 6\u00A0anni. I maschi avevano il piede piatto più spesso delle femmine, 52% contro 36%, e il loro arco tendeva a formarsi più tardi. Anche i bambini in sovrappeso o con obesità avevano il piede piatto più spesso.',
-        'Alcuni bambini non sviluppano mai molto arco, e spesso va bene così. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone di tutte le età, ha trovato il piede piatto nel 15,6% dei casi complessivi. I bambini tra i 3 e i 5\u00A0anni e i ragazzi tra gli 11 e i 17 avevano una probabilità circa doppia di avere il piede piatto rispetto alle altre fasce d’età. Molti adulti con il piede piatto flessibile non hanno alcun dolore. Se il piede piatto cambia più avanti nella vita è spiegato in [il piede piatto peggiora con l’età?](/it/piede-piatto-con-l-eta/)',
-        'Non c’è un compleanno preciso entro cui l’arco deve comparire. Più dell’età conta come si comporta il piede: se è flessibile, se fa male e se i due piedi sono simili.',
+        'Alcuni bambini non sviluppano mai molto arco, e spesso va bene così. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone di tutte le età, ha trovato il piede piatto nel 15,6% dei casi complessivi. I bambini tra i 3 e i 5\u00A0anni e i ragazzi tra gli 11 e i 17 avevano una probabilità circa doppia di avere il piede piatto rispetto alle altre fasce d’età.',
+        'Molti adulti con il piede piatto flessibile non hanno alcun dolore. Se il piede piatto cambia più avanti nella vita è spiegato in [il piede piatto peggiora con l’età?](/it/piede-piatto-con-l-eta/)',
+        'Non c’è un compleanno preciso entro cui l’arco deve comparire. **Più dell’età conta come si comporta il piede:**',
+        {
+          list: [
+            'Se è flessibile.',
+            'Se fa male.',
+            'Se i due piedi sono simili.',
+          ],
+        },
       ],
       cites: [CITE.pfeifferPreschool, CITE.salinasTorres],
     },
@@ -64,8 +73,22 @@ export const FLAT_FEET_KIDS_IT: Guide = {
     {
       h2: 'Quando preoccuparsi del piede piatto in un bambino?',
       paragraphs: [
-        'Preoccupati del piede piatto in un bambino quando c’è dolore, rigidità, una differenza tra i due piedi o un problema nel modo in cui il bambino si muove. Il piede piatto da solo, in un bambino che corre e gioca senza problemi, non è motivo di preoccupazione. Un percorso di gestione del 2008 della podologa Angela Evans lo divide in tre gruppi: il piede piatto che fa male va seguito, il piede piatto che sembra insolito ma non fa male va tenuto d’occhio nel tempo, e il piede piatto che è semplicemente parte della crescita richiede solo rassicurazione.',
-        'Alcune cause specifiche vale la pena conoscerle per nome. Una **coalizione tarsale** è un ponte di osso o di tessuto duro tra due ossa nella parte posteriore del piede. I bambini ci nascono, ma di solito inizia a dare dolore verso la fine dell’infanzia o nell’adolescenza, spesso con un piede rigido e distorsioni della caviglia ripetute. Un **tendine d’Achille rigido** può spingere il piede in una posizione più piatta e dare dolore. E il piede piatto può far parte di un problema più ampio che coinvolge nervi, muscoli o articolazioni, come la paralisi cerebrale o l’artrite giovanile (un’artrite che inizia nell’infanzia). Questi bambini vanno seguiti da uno specialista indipendentemente dall’arco.',
+        'Preoccupati del piede piatto in un bambino quando c’è dolore, rigidità, una differenza tra i due piedi o un problema nel modo in cui il bambino si muove. Il piede piatto da solo, in un bambino che corre e gioca senza problemi, non è motivo di preoccupazione. Un percorso di gestione del 2008 della podologa Angela Evans lo divide in tre gruppi:',
+        {
+          list: [
+            'Il piede piatto che fa male va seguito.',
+            'Il piede piatto che sembra insolito ma non fa male va tenuto d’occhio nel tempo.',
+            'Il piede piatto che è semplicemente parte della crescita richiede solo rassicurazione.',
+          ],
+        },
+        'Alcune cause specifiche vale la pena conoscerle per nome:',
+        {
+          list: [
+            'Una **coalizione tarsale** è un ponte di osso o di tessuto duro tra due ossa nella parte posteriore del piede. I bambini ci nascono, ma di solito inizia a dare dolore verso la fine dell’infanzia o nell’adolescenza, spesso con un piede rigido e distorsioni della caviglia ripetute.',
+            'Un **tendine d’Achille rigido** può spingere il piede in una posizione più piatta e dare dolore.',
+            'Il piede piatto può far parte di un problema più ampio che coinvolge nervi, muscoli o articolazioni, come la paralisi cerebrale o l’artrite giovanile (un’artrite che inizia nell’infanzia). Questi bambini vanno seguiti da uno specialista indipendentemente dall’arco.',
+          ],
+        },
       ],
       cites: [CITE.evansTrafficLight, CITE.harrisPediatricFlatfoot],
     },
@@ -73,10 +96,29 @@ export const FLAT_FEET_KIDS_IT: Guide = {
       h2: 'Plantari o scarpe speciali aiutano i bambini con il piede piatto?',
       keyFact: 'In uno studio su 129\u00A0bambini, scarpe correttive o plantari portati per almeno tre anni non hanno cambiato il piede piatto flessibile rispetto a nessun plantare (Wenger e colleghi, 1989).',
       paragraphs: [
-        'Plantari e scarpe speciali non fanno sviluppare l’arco di un bambino. La prova più chiara è uno studio del 1989 in un ospedale pediatrico di Dallas. I ricercatori hanno diviso a caso 129\u00A0bambini con piede piatto flessibile in quattro gruppi: nessun plantare, scarpe ortopediche correttive, una coppetta per il tallone o un plantare in plastica modellato su misura. I bambini li hanno portati per almeno tre anni, e 98 hanno completato lo studio. Le radiografie hanno mostrato che l’arco era migliorato in tutti e quattro i gruppi, compresi i bambini senza niente, e non c’era una differenza reale tra loro.',
-        'Uno studio australiano del 2007 ha trovato lo stesso. I 178\u00A0bambini, tra i 7 e gli 11\u00A0anni, sono stati divisi in tre gruppi: plantari su misura, plantari già pronti o nessun plantare. A tre mesi e a un anno, nessun confronto ha mostrato una differenza reale, anche nei bambini che all’inizio avevano dolore.',
+        '**Plantari e scarpe speciali non fanno sviluppare l’arco di un bambino.** La prova più chiara è uno studio del 1989 in un ospedale pediatrico di Dallas. I ricercatori hanno diviso a caso 129\u00A0bambini con piede piatto flessibile in quattro gruppi:',
+        {
+          list: [
+            'Nessun plantare.',
+            'Scarpe ortopediche correttive.',
+            'Una coppetta per il tallone.',
+            'Un plantare in plastica modellato su misura.',
+          ],
+        },
+        'I bambini li hanno portati per almeno tre anni, e 98 hanno completato lo studio. Le radiografie hanno mostrato che l’arco era migliorato in tutti e quattro i gruppi, compresi i bambini senza niente, e non c’era una differenza reale tra loro.',
+        'Uno studio australiano del 2007 ha trovato lo stesso. I 178\u00A0bambini, tra i 7 e gli 11\u00A0anni, sono stati divisi in tre gruppi:',
+        {
+          list: [
+            'Plantari su misura.',
+            'Plantari già pronti.',
+            'Nessun plantare.',
+          ],
+        },
+        'A tre mesi e a un anno, nessun confronto ha mostrato una differenza reale, anche nei bambini che all’inizio avevano dolore.',
         'La revisione Cochrane del 2022 ha raccolto le prove degli studi: 16\u00A0studi con 1.058\u00A0bambini. La certezza delle prove era da bassa a molto bassa. La conclusione era diretta: nei bambini il cui piede piatto non fa male, i costosi plantari su misura non hanno prove a favore. Nei bambini con artrite giovanile, i plantari possono aiutare dolore e funzione.',
-        'Per il piede piatto che fa male, il quadro è meno chiaro. Una meta-analisi a rete del 2026 (una revisione che confronta molte opzioni insieme) su 11\u00A0studi e 761\u00A0bambini ha trovato che i normali plantari con supporto per l’arco abbassavano i punteggi del dolore più delle solette piatte, ma la certezza di questo risultato era molto bassa. Un grande studio britannico sui plantari per i bambini con piede piatto doloroso, chiamato OSTRICH, si è dovuto fermare prima del previsto durante la pandemia di COVID-19. Con 134 dei 478\u00A0bambini previsti, non ha potuto rispondere alla domanda. Per un bambino con i piedi doloranti, un professionista sanitario può comunque suggerire un semplice plantare già pronto per il comfort, ma non costruirà l’arco. Il confronto tra plantari ed esercizi è in [plantari o esercizi](/it/plantari-o-esercizi/).',
+        'Per il piede piatto che fa male, il quadro è meno chiaro. Una meta-analisi a rete del 2026 (una revisione che confronta molte opzioni insieme) su 11\u00A0studi e 761\u00A0bambini ha trovato che i normali plantari con supporto per l’arco abbassavano i punteggi del dolore più delle solette piatte, ma la certezza di questo risultato era molto bassa.',
+        'Un grande studio britannico sui plantari per i bambini con piede piatto doloroso, chiamato OSTRICH, si è dovuto fermare prima del previsto durante la pandemia di COVID-19. Con 134 dei 478\u00A0bambini previsti, non ha potuto rispondere alla domanda.',
+        'Per un bambino con i piedi doloranti, un professionista sanitario può comunque suggerire un semplice plantare già pronto per il comfort, ma non costruirà l’arco. Il confronto tra plantari ed esercizi è in [plantari o esercizi](/it/plantari-o-esercizi/).',
       ],
       cites: [CITE.wengerShoes, CITE.whitfordOrthoses, CITE.evansCochrane2022, CITE.linFlatfootNMA, CITE.cockayneOstrich],
       sourceNote: 'Lin e colleghi, 2026: plantari tradizionali contro solette piatte, differenza media −2,92\u00A0punti (IC al 95%: da −3,73 a −2,11), certezza delle prove molto bassa. Negli studi sugli esercizi di quella revisione il dolore non è stato misurato.',
@@ -86,7 +128,8 @@ export const FLAT_FEET_KIDS_IT: Guide = {
       paragraphs: [
         'Gli esercizi per il piede possono aiutare i bambini il cui piede piatto fa male o si stanca facilmente, ma gli studi sono piccoli e i risultati contrastanti. Una revisione del 2024 ha esaminato 11\u00A0studi con 419\u00A0bambini tra i 6 e i 14\u00A0anni. Ha trovato che i programmi di esercizi miglioravano i sintomi e la funzione del piede, e che gli esercizi per i piccoli muscoli dentro il piede funzionavano meglio. Gli studi erano molto diversi tra loro per esercizi, test e durata, e la revisione suggeriva almeno due mesi circa.',
         'Uno studio turco del 2025 su 36\u00A0bambini tra i 4 e i 7\u00A0anni ha confrontato due programmi di esercizi per circa due mesi. Entrambi i gruppi sono migliorati nelle misure dell’arco e nell’equilibrio, e il programma che aggiungeva lavoro sui muscoli della gamba è andato meglio. Non c’era un gruppo senza esercizi, quindi non si può dire quanta parte del cambiamento fosse la normale crescita.',
-        'Nelle interviste dello studio OSTRICH, quasi nessun bambino trovava piacevoli i propri esercizi, e molti non li hanno continuati. Un bambino senza dolore con il piede piatto flessibile non ha bisogno di alcun esercizio. Se a tuo figlio fanno male i piedi, un fisioterapista o un podologo può impostare un programma. Le idee qui sotto sono versioni delicate, sotto forma di gioco, di movimenti usati in quegli studi. Le quantità indicate sono suggerimenti di partenza prudenti per i bambini, non dosi provate negli studi, e non le dosi per adulti che usa Walkito.',
+        'Nelle interviste dello studio OSTRICH, quasi nessun bambino trovava piacevoli i propri esercizi, e molti non li hanno continuati. **Un bambino senza dolore con il piede piatto flessibile non ha bisogno di alcun esercizio.** Se a tuo figlio fanno male i piedi, un fisioterapista o un podologo può impostare un programma.',
+        'Le idee qui sotto sono versioni delicate, sotto forma di gioco, di movimenti usati in quegli studi. Le quantità indicate sono suggerimenti di partenza prudenti per i bambini, non dosi provate negli studi, e non le dosi per adulti che usa Walkito.',
       ],
       exercises: [
         {
@@ -132,16 +175,17 @@ export const FLAT_FEET_KIDS_IT: Guide = {
       h2: 'Camminare scalzi o il peso influiscono sull’arco di un bambino?',
       keyFact: 'In un’indagine su 2.300\u00A0bambini in India, aveva il piede piatto l’8,6% di chi portava le scarpe, contro il 2,8% di chi non le portava (Rao e Joseph, 1992).',
       paragraphs: [
-        'Giocare scalzi e un peso nella norma vanno entrambi insieme a meno piedi piatti, anche se nessuno dei due è stato provato come modo per cambiare il piede piatto. In un’indagine del 1992 su 2.300\u00A0bambini tra i 4 e i 13\u00A0anni in India, aveva il piede piatto l’8,6% dei bambini che portavano le scarpe, contro il 2,8% di quelli che andavano scalzi. Il piede piatto era più comune nei bambini con scarpe chiuse in punta e meno comune in quelli senza scarpe. Era un’indagine in un solo momento, quindi mostra un legame, non la prova che siano state le scarpe a causare il piede piatto.',
+        'Giocare scalzi e un peso nella norma vanno entrambi insieme a meno piedi piatti, anche se nessuno dei due è stato provato come modo per cambiare il piede piatto. In un’indagine del 1992 su 2.300\u00A0bambini tra i 4 e i 13\u00A0anni in India, aveva il piede piatto l’8,6% dei bambini che portavano le scarpe, contro il 2,8% di quelli che andavano scalzi.',
+        'Il piede piatto era più comune nei bambini con scarpe chiuse in punta e meno comune in quelli senza scarpe. Era un’indagine in un solo momento, quindi mostra un legame, non la prova che siano state le scarpe a causare il piede piatto.',
         'Il peso mostra un legame simile. Una revisione del 2021 su 73\u00A0studi con più di 1,7\u00A0milioni di bambini e ragazzi ha trovato che chi era in sovrappeso o con obesità aveva circa 1,5\u00A0volte la probabilità di avere il piede piatto. Anche questi erano per lo più studi in un solo momento.',
-        'Lasciare che un bambino vada scalzo su superfici sicure in casa, sull’erba o sulla sabbia dà lavoro ai muscoli del piede. Le scarpe devono calzare bene e piegarsi all’altezza delle dita. Non servono scarpe rigide «correttive». Per saperne di più sulle scarpe flessibili con suola sottile, vedi [scarpe barefoot](/it/scarpe-barefoot/).',
+        'Lasciare che un bambino vada scalzo su superfici sicure in casa, sull’erba o sulla sabbia dà lavoro ai muscoli del piede. Le scarpe devono calzare bene e piegarsi all’altezza delle dita. **Non servono scarpe rigide «correttive».** Per saperne di più sulle scarpe flessibili con suola sottile, vedi [scarpe barefoot](/it/scarpe-barefoot/).',
       ],
       cites: [CITE.raoFootwear, CITE.molinaGarciaObesity],
     },
     {
       h2: 'Mio figlio avrà problemi ai piedi da adulto?',
       paragraphs: [
-        'La maggior parte dei bambini con piede piatto flessibile e senza dolore diventa adulta senza problemi ai piedi. La revisione Cochrane del 2022 è arrivata a dire che quello che si sa sullo sviluppo del piede nei bambini basta a mettere da parte la maggior parte delle preoccupazioni sul piede piatto, e che i fondi per la ricerca dovrebbero andare piuttosto ai bambini con veri problemi ai piedi. L’indagine del 1987 su 441\u00A0persone ha trovato che il piede piatto degli adulti era ancora nella norma.',
+        '**La maggior parte dei bambini con piede piatto flessibile e senza dolore diventa adulta senza problemi ai piedi.** La revisione Cochrane del 2022 è arrivata a dire che quello che si sa sullo sviluppo del piede nei bambini basta a mettere da parte la maggior parte delle preoccupazioni sul piede piatto, e che i fondi per la ricerca dovrebbero andare piuttosto ai bambini con veri problemi ai piedi. L’indagine del 1987 su 441\u00A0persone ha trovato che il piede piatto degli adulti era ancora nella norma.',
         'Qui c’è un vuoto da riconoscere onestamente. Nessuno studio ha seguito un grande gruppo di bambini con piede piatto senza dolore fino alla mezza età per vedere chi ha poi dolore. Alcuni adulti con il piede piatto hanno dolore all’arco, al tallone o al ginocchio, e la [guida sul piede piatto](/it/piede-piatto/) spiega cosa li aiuta.',
         'Molti genitori che cercano queste informazioni hanno a loro volta il piede piatto. Se a fine giornata ti fanno male i piedi, è una questione diversa da quella di tuo figlio. Walkito è un’app di esercizi per adulti con dolore al tallone, all’arco e alle gambe, e il suo piano per il piede piatto è pensato per piedi adulti, non per quelli dei bambini.',
       ],

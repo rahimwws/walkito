@@ -33,7 +33,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
         alt: 'Seitenansicht eines Fußes, die Plantarfaszie ist vom Fersenbein bis zu den Zehen hervorgehoben',
       },
       paragraphs: [
-        'Eine Nachtschiene bei Plantarfasziitis ist eine Orthese, die du im Bett trägst und die verhindert, dass dein Fuß im Schlaf nach unten zeigt. Wenn du still liegst, sinkt der Fuß meist in eine Plantarflexion (die Zehen zeigen von dir weg). In dieser Stellung ruhen die Plantarfaszie, die dicke Gewebeplatte unter deinem Fuß, und die Wade stundenlang verkürzt.',
+        'Eine Nachtschiene bei Plantarfasziitis ist eine Orthese, die du im Bett trägst und die **verhindert, dass dein Fuß im Schlaf nach unten zeigt.** Wenn du still liegst, sinkt der Fuß meist in eine Plantarflexion (die Zehen zeigen von dir weg). In dieser Stellung ruhen die Plantarfaszie, die dicke Gewebeplatte unter deinem Fuß, und die Wade stundenlang verkürzt.',
         'Die Schiene hält das Sprunggelenk in Neutralstellung oder leichter Dorsalextension (die Zehen etwas Richtung Schienbein gezogen). Die Idee ist, dass das Gewebe über Nacht in einer sanften Länge bleibt, sodass deine ersten Schritte keine plötzliche Dehnung einer steifen, verkürzten Faszie sind. Diese plötzliche Dehnung ist die übliche Erklärung für den stechenden Anlaufschmerz, an dem man eine Plantarfasziitis so gut erkennt.',
         'Die Leitlinie von 2023 zu Fersenschmerzen beschreibt Nachtschienen als „vorgefertigte Kunststofforthesen, die eine Plantarflexion im Sprunggelenk während des Schlafs verhindern sollen“. Weichere Varianten wie Bänder und Strümpfe zielen auf dieselbe Stellung, mit weniger Material.',
       ],
@@ -45,7 +45,13 @@ export const NIGHT_SPLINTS_DE: Guide = {
       paragraphs: [
         'Nachtschienen helfen manchen Menschen mit Plantarfasziitis, vor allem beim Anlaufschmerz am Morgen, aber die Forschung dahinter ist dünner, als ihre Bewertung vermuten lässt. Die Leitlinie von 2023 zu Fersenschmerzen der American Physical Therapy Association sagt, dass Fachleute bei Menschen, die regelmäßig Schmerzen beim ersten Schritt am Morgen haben, „ein 1- bis 3-monatiges Programm mit Nachtschienen verordnen sollten“. Das ist Bewertung **A**, die beste Bewertung der Leitlinie.',
         'Lies aber das Kleingedruckte. Laut der Überprüfung der Belege in der Leitlinie wurden seit 2014 keine neuen Studien zu Nachtschienen gefunden, die Empfehlung wurde also unverändert übernommen. Die Bewertung stützt sich auf eine Handvoll Studien aus den 1990er- und 2000er-Jahren.',
-        'Zwei Übersichtsarbeiten zeichnen ein vorsichtigeres Bild. Eine systematische Übersichtsarbeit von 2023 fand nur drei randomisierte Studien, die ihre Kriterien erfüllten, und stufte alle drei mit hohem Verzerrungsrisiko ein. Das heißt, ihr Aufbau könnte die Ergebnisse verfälschen. Sie schloss, dass Schienen Schmerzen und Funktion zu verbessern scheinen, aber mehr Studien nötig sind. Eine Übersichtsarbeit von 2020 zu mechanischen Hilfsmitteln fand, dass Schienen zusammen mit Einlagen besser abschnitten als jedes von beiden allein.',
+        'Zwei Übersichtsarbeiten zeichnen ein vorsichtigeres Bild:',
+        {
+          list: [
+            '**Eine systematische Übersichtsarbeit von 2023** fand nur drei randomisierte Studien, die ihre Kriterien erfüllten, und stufte alle drei mit hohem Verzerrungsrisiko ein. Das heißt, ihr Aufbau könnte die Ergebnisse verfälschen. Sie schloss, dass Schienen Schmerzen und Funktion zu verbessern scheinen, aber mehr Studien nötig sind.',
+            '**Eine Übersichtsarbeit von 2020 zu mechanischen Hilfsmitteln** fand, dass Schienen zusammen mit Einlagen besser abschnitten als jedes von beiden allein.',
+          ],
+        },
         'Eine faire Zusammenfassung lautet also: Nachtschienen sind eine vernünftige Option, wenn deine Morgen trotz Dehnen schlecht bleiben, aber sie sind keine sichere Sache, und die vorhandenen Studien sind klein.',
       ],
       cites: [CITE.guideline, CITE.bendoSplintReview, CITE.schuitemaMechanical],
@@ -87,7 +93,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
       ],
       after: [
         'Der einzige direkte Vergleich, den wir gefunden haben, ist eine kleine vorläufige Studie von 2012. Zwei Drittel der Teilnehmenden sagten, dass Morgenschmerz und Steifheit nach dem Tragen einer Schiene geringer waren. Die Stiefelschiene war unbequemer und störte den Schlaf, und die Schiene vorn am Schienbein senkte den Fersenschmerz im Schnitt stärker. Die Autoren nannten Nachtschienen insgesamt „schlecht vertragen“.',
-        'Wenn du selbst wählst, ist wahrscheinlich die richtige, die du tatsächlich die ganze Nacht anbehältst. Eine Fachperson oder Physiotherapeutin kann dir bei der Anpassung helfen.',
+        'Wenn du selbst wählst, **ist wahrscheinlich die richtige, die du tatsächlich die ganze Nacht anbehältst.** Eine Fachperson oder Physiotherapeutin kann dir bei der Anpassung helfen.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
     },
@@ -95,7 +101,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
       h2: 'Wie lange solltest du eine Nachtschiene bei Plantarfasziitis tragen?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt ein Programm mit Nachtschiene über ein bis drei Monate (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Die Leitlinie von 2023 empfiehlt, eine Nachtschiene ein bis drei Monate zu tragen. In den Studien trugen die Teilnehmenden sie nachts einen Monat (Powell) oder drei Monate (Probe, Martin).',
+        '**Die Leitlinie von 2023 empfiehlt, eine Nachtschiene ein bis drei Monate zu tragen.** In den Studien trugen die Teilnehmenden sie nachts einen Monat (Powell) oder drei Monate (Probe, Martin).',
         'Wie viele Stunden pro Nacht, ist weniger klar. Keine Studie, die wir gefunden haben, hat die Tragedauer verglichen. Hersteller und Praxen empfehlen oft, mit ein paar Stunden anzufangen und bis zur ganzen Nacht zu steigern. Das ist sinnvoll, aber nicht getestet. Wenn du aufwachst und die Schiene unerträglich ist, nimm sie ab und leg sie in der nächsten Nacht wieder an. Das ist besser, als nach der ersten Nacht aufzugeben.',
       ],
       bullets: [
@@ -112,7 +118,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
       keyFact: 'Nach einem Jahr nutzte noch 1 von 28\u00A0Personen die Nachtschiene, gegenüber 19 von 23, die ihre Einlagen noch trugen (Roos und Kollegen, 2006).',
       paragraphs: [
         'Die meisten hören mit der Nachtschiene auf, weil man damit unbequem schläft. In der Studie von Roos und Kollegen von 2006 nutzte nach einem Jahr nur noch 1 von 28\u00A0Personen mit Schiene diese, während 19 von 23 ihre Einlagen noch trugen. Diese Studie fand bei Einlagen auch weniger Nebenwirkungen und besseres Durchhalten. In Martins Studie von 2001 mit 255\u00A0Personen brachen einige früh ab, weil sie ihr Hilfsmittel nicht vertrugen oder weiter starke Schmerzen hatten.',
-        'Schlechtes Durchhalten ist normal, kein persönliches Versagen. Die Schiene ist für ein bis drei Monate gedacht, nicht für immer. Ein paar praktische Dinge machen es leichter:',
+        '**Schlechtes Durchhalten ist normal, kein persönliches Versagen.** Die Schiene ist für ein bis drei Monate gedacht, nicht für immer. Ein paar praktische Dinge machen es leichter:',
       ],
       bullets: [
         'Wenn du auf der Seite oder auf dem Bauch schläfst, passt eine Strumpfvariante oder eine kleine dorsale Schiene meist besser als eine Stiefelschiene.',
@@ -127,8 +133,16 @@ export const NIGHT_SPLINTS_DE: Guide = {
       h2: 'Nachtschiene, Einlagen oder Dehnen: was solltest du zuerst ausprobieren?',
       keyFact: 'In einer Studie mit 43\u00A0Personen war der Schmerz nach einem Jahr in den Gruppen mit Einlagen um 62\u00A0% gesunken, mit Nachtschiene allein um 48\u00A0% (Roos und Kollegen, 2006).',
       paragraphs: [
-        'Dehnen am Morgen kommt meist zuerst, weil es dieselbe Bewertung **A** hat wie Nachtschienen, nichts kostet und den Schlaf nicht stört. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A** und Krafttraining für die Fuß- und Sprunggelenkmuskeln mit **B**. Eine Metaanalyse von 2020 über acht Studien fand, dass Dehnen Schmerzen linderte, mit Belegen mittlerer Qualität, dass die Plantarfaszien-Dehnung stärker linderte als eine Wadendehnung.',
-        'Nachtschienen und Einlagen scheinen zusammen besser zu wirken als getrennt. In der Studie von Roos hatten beide Gruppen mit Einlagen nach einem Jahr mehr Schmerzlinderung als die Gruppe nur mit Schiene. Die kleine Studie von Lee von 2012 fand, dass Einlagen plus Schiene besser abschnitten als Einlagen allein. Die Übersichtsarbeit von 2020 zu mechanischen Hilfsmitteln kam zum selben Schluss. Die Leitlinie rät außerdem davon ab, Einlagen als einzige Maßnahme zur kurzfristigen Schmerzlinderung zu nutzen. Mehr zu dieser Frage findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
+        '**Dehnen am Morgen kommt meist zuerst**, weil es dieselbe Bewertung **A** hat wie Nachtschienen, nichts kostet und den Schlaf nicht stört. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A** und Krafttraining für die Fuß- und Sprunggelenkmuskeln mit **B**. Eine Metaanalyse von 2020 über acht Studien fand, dass Dehnen Schmerzen linderte, mit Belegen mittlerer Qualität, dass die Plantarfaszien-Dehnung stärker linderte als eine Wadendehnung.',
+        'Nachtschienen und Einlagen scheinen zusammen besser zu wirken als getrennt:',
+        {
+          list: [
+            'In der Studie von Roos hatten beide Gruppen mit Einlagen nach einem Jahr mehr Schmerzlinderung als die Gruppe nur mit Schiene.',
+            'Die kleine Studie von Lee von 2012 fand, dass Einlagen plus Schiene besser abschnitten als Einlagen allein.',
+            'Die Übersichtsarbeit von 2020 zu mechanischen Hilfsmitteln kam zum selben Schluss.',
+          ],
+        },
+        'Die Leitlinie rät außerdem davon ab, Einlagen als einzige Maßnahme zur kurzfristigen Schmerzlinderung zu nutzen. Mehr zu dieser Frage findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
         'Eine übliche Reihenfolge ist: zuerst Dehnen und Wadentraining. Wenn deine ersten Schritte nach etwa einem Monat damit noch schlecht sind, nimm für ein bis drei Monate eine Schiene dazu. Viele nutzen zusätzlich Einlagen. Diese Reihenfolge ist eine vernünftige Lesart der Leitlinie, nichts, was eine Studie getestet hat.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
@@ -170,7 +184,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
     {
       h2: 'Für wen passt eine Nachtschiene, und wer sollte sie lassen?',
       paragraphs: [
-        'Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein Fersensporn zu sehen war.',
+        '**Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt**: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein Fersensporn zu sehen war.',
         'Weniger Sinn ergibt eine Schiene, wenn deine Ferse vor allem wehtut, während du im Bett liegst, oder dich weckt. Das ist ein anderes Muster, und [Fersenschmerzen nachts](/de/fersenschmerzen-nachts/) erklärt, welche Ursachen abgeklärt werden sollten. Eine Schiene passt auch schlecht, wenn du wenig Gefühl oder eine schlechte Durchblutung in den Füßen hast, denn Bänder und Schalen können an Haut scheuern, die du nicht spürst.',
         'Eine Plantarfasziitis klingt oft über Monate ab, egal was du nutzt, und das ist ein Grund, warum Studien zu Schienen schwer zu deuten sind. Realistische Zeiträume findest du unter [Wie lange dauert eine Plantarfasziitis](/de/wie-lange-dauert-plantarfasziitis/).',
       ],

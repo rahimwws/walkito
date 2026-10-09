@@ -37,7 +37,15 @@ export const CALF_RAISE_TEST_DE: Guide = {
       paragraphs: [
         'Der Test misst die Ausdauer der Plantarflexoren, der Muskeln, die den Fuß nach unten drücken und die Ferse vom Boden heben. Die wichtigsten sind der Gastrocnemius (der größere, oberflächlichere Wadenmuskel) und der Soleus (der tiefere darunter). Zusammen setzen sie über die Achillessehne am Fersenbein an.',
         'Ausdauer heißt hier, wie viele Wiederholungen du schaffst, bevor die Wade ermüdet und die Ferse nicht mehr hoch genug kommt oder den Takt nicht mehr halten kann. Die Zahl erfasst die Fähigkeit, Arbeit über Dutzende Zyklen durchzuhalten, und das liegt näher an dem, was die Wade beim Gehen und Laufen tut, als ein einzelner schwerer Stoß.',
-        'Medizinische Fachpersonen nutzen den Test, um die Erholung nach einem Achillessehnenriss zu verfolgen, um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen und um ein Bein mit dem anderen zu vergleichen. Sportlerinnen und Sportler mit medialem tibialem Stresssyndrom (Schienbeinkantensyndrom) hatten in einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern eine geringere Wadenausdauer als gesunde Kontrollen.',
+        'Medizinische Fachpersonen nutzen den Test:',
+        {
+          list: [
+            'Um die Erholung nach einem Achillessehnenriss zu verfolgen.',
+            'Um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen.',
+            'Um ein Bein mit dem anderen zu vergleichen.',
+          ],
+        },
+        'Sportlerinnen und Sportler mit medialem tibialem Stresssyndrom (Schienbeinkantensyndrom) hatten in einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern eine geringere Wadenausdauer als gesunde Kontrollen.',
       ],
       cites: [CITE.hebertLosier, CITE.madeley],
     },
@@ -46,7 +54,16 @@ export const CALF_RAISE_TEST_DE: Guide = {
       paragraphs: [
         'Das Protokoll aus Hebert-Losier 2017 ist die am häufigsten zitierte Version und die Quelle der Normwerte auf dieser Seite. In dieser Studie machten 566\u00A0gesunde Erwachsene zwischen 20 und 81\u00A0Jahren einbeiniges Fersenheben bis zur Erschöpfung, mit jedem Bein.',
         'Die Person steht barfuß oder in flachen Schuhen auf einem um 10\u00A0Grad geneigten Brett, ein Fuß nach dem anderen. Fingerspitzen an der Wand in Schulterhöhe sind nur fürs Gleichgewicht erlaubt. Ein Metronom ist auf 60\u00A0Schläge pro Minute eingestellt: ein Schlag hoch, ein Schlag runter, jede ganze Wiederholung dauert also zwei Sekunden. Die Anweisung lautet, die Ferse so hoch wie möglich zu heben, mit gestrecktem Knie und aufrechtem Oberkörper.',
-        'Der Test endet, wenn sich die Ferse nicht mehr vom Brett hebt, der Takt des Metronoms nicht mehr gehalten werden kann, das Knie sich beugt oder der Oberkörper sich neigt oder die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren. Vor dem Abbruch gibt es eine mündliche Erinnerung. Zum Aufwärmen gibt es 10\u00A0Minuten zügiges Gehen und danach 10-mal Fersenheben beidbeinig. Zwischen den Beinen liegen zwei Minuten Pause.',
+        'Der Test endet, wenn:',
+        {
+          list: [
+            'Sich die Ferse nicht mehr vom Brett hebt.',
+            'Der Takt des Metronoms nicht mehr gehalten werden kann.',
+            'Das Knie sich beugt oder der Oberkörper sich neigt.',
+            'Die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren.',
+          ],
+        },
+        'Vor dem Abbruch gibt es eine mündliche Erinnerung. Zum Aufwärmen gibt es 10\u00A0Minuten zügiges Gehen und danach 10-mal Fersenheben beidbeinig. Zwischen den Beinen liegen zwei Minuten Pause.',
       ],
       sourceNote:
         'Hebert-Losier 2017: ICC 0,96 (rechts) und 0,96 (links); mittlere Differenz zwischen den Testtagen 0,2\u00A0Wiederholungen (95-%-Übereinstimmungsgrenzen -6,2 bis 6,5) rechts und 0,1\u00A0Wiederholungen (95-%-Übereinstimmungsgrenzen -6,1 bis 6,2) links.',
@@ -56,8 +73,9 @@ export const CALF_RAISE_TEST_DE: Guide = {
       h2: 'Wie machst du den Fersenheben-Test zu Hause?',
       paragraphs: [
         'Du brauchst kein Schrägbrett. Auf flachem Boden ist der Test etwas leichter, deine Zahl liegt also vielleicht ein paar Wiederholungen über den veröffentlichten Normwerten. Um Veränderungen über die Zeit zu verfolgen und links mit rechts zu vergleichen, ist das in Ordnung.',
-        'Stell dich nah an eine Wand, die Fingerspitzen berühren sie in Schulterhöhe. Heb einen Fuß an. Stell eine Metronom-App auf 60\u00A0Schläge pro Minute. Beim ersten Schlag kommst du so hoch wie möglich auf die Zehen. Beim zweiten Schlag senkst du die Ferse wieder auf den Boden. Mach weiter, bis du den Takt nicht mehr halten kannst, die Ferse kaum noch hochkommt oder dein Knie sich beugt.',
-        'Zähl alle Wiederholungen. Mach zwei Minuten Pause und wiederhole es dann mit dem anderen Bein. Schreib beide Zahlen und das Datum auf. Der typische Messfehler liegt bei etwa zwei Wiederholungen, eine kleine Verschiebung zwischen zwei Testtagen ist also Rauschen. Was zählt, ist der Trend über Wochen.',
+        'Stell dich nah an eine Wand, die Fingerspitzen berühren sie in Schulterhöhe. Heb einen Fuß an. Stell eine Metronom-App auf 60\u00A0Schläge pro Minute.',
+        'Beim ersten Schlag kommst du so hoch wie möglich auf die Zehen. Beim zweiten Schlag senkst du die Ferse wieder auf den Boden. Mach weiter, bis du den Takt nicht mehr halten kannst, die Ferse kaum noch hochkommt oder dein Knie sich beugt.',
+        'Zähl alle Wiederholungen. Mach zwei Minuten Pause und wiederhole es dann mit dem anderen Bein. Schreib beide Zahlen und das Datum auf. Der typische Messfehler liegt bei etwa zwei Wiederholungen, eine kleine Verschiebung zwischen zwei Testtagen ist also Rauschen. **Was zählt, ist der Trend über Wochen.**',
       ],
       exercises: [
         {
@@ -80,7 +98,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
       keyFact: 'Eine Studie von 1995 mit 203\u00A0Erwachsenen zwischen 20 und 59\u00A0Jahren schlug 25\u00A0Wiederholungen als Richtwert für ein normales Ergebnis beim einbeinigen Fersenheben vor (Lunsford und Perry, 1995).',
       paragraphs: [
         'Die Tabelle unten zeigt den Median der Wiederholungen beim einbeinigen Fersenheben nach Alter und Geschlecht, aus Hebert-Losier 2017. Es sind Schätzwerte aus einem Modell für eine Person mit mittlerer körperlicher Aktivität (Stufe 4 auf einer 6-stufigen Skala) und einem Body-Mass-Index von 24,2, gemittelt über beide Beine.',
-        'Höhere Aktivität bringt etwa fünf bis neun Wiederholungen mehr im Median. 1995 testeten Lunsford und Perry 203\u00A0Erwachsene zwischen 20 und 59\u00A0Jahren und empfahlen 25\u00A0Wiederholungen als Kriterium für ein normales Ergebnis. Die Daten von Hebert-Losier stützen diese Zahl als vernünftigen Richtwert für Erwachsene, auch wenn sie ein Median für die Bevölkerung ist, keine Grenze zum Bestehen oder Durchfallen. Dein eigener Ausgangswert und die Richtung der Veränderung zählen mehr als jede einzelne Zahl.',
+        'Höhere Aktivität bringt etwa fünf bis neun Wiederholungen mehr im Median. 1995 testeten Lunsford und Perry 203\u00A0Erwachsene zwischen 20 und 59\u00A0Jahren und empfahlen 25\u00A0Wiederholungen als Kriterium für ein normales Ergebnis. Die Daten von Hebert-Losier stützen diese Zahl als vernünftigen Richtwert für Erwachsene, auch wenn sie ein Median für die Bevölkerung ist, keine Grenze zum Bestehen oder Durchfallen. **Dein eigener Ausgangswert und die Richtung der Veränderung zählen mehr als jede einzelne Zahl.**',
       ],
       table: {
         caption: 'Median der Wiederholungen beim einbeinigen Fersenheben nach Alter und Geschlecht (Hebert-Losier 2017)',
@@ -104,23 +122,34 @@ export const CALF_RAISE_TEST_DE: Guide = {
       keyFact: 'In einer Studie mit 78\u00A0Personen nach einem Achillessehnenriss lag die mittlere Symmetrie der Beine nach sechs Monaten bei 84\u00A0% nach Wiederholungen, aber nur bei 61\u00A0% nach geleisteter Gesamtarbeit, was zeigt, dass die Zahl der Wiederholungen allein ein Defizit unterschätzen kann (Silbernagel und Kollegen, 2010).',
       paragraphs: [
         'Ungefähr gleich, ja. In der Studie von Hebert-Losier lag der mittlere Unterschied zwischen rechts und links bei einer Wiederholung, und der typische Messfehler bei etwa zwei. Ein so kleiner Unterschied ist Rauschen.',
-        'In der Reha der unteren Extremität ist ein Limb Symmetry Index (LSI) von 90\u00A0% oder mehr der übliche Richtwert für normale Funktion. Der LSI ist die schwächere Seite geteilt durch die stärkere Seite, mal 100. Unter 90\u00A0% heißt, dass eine Seite mehr als 10\u00A0% schwächer ist. Silbernagel und Kollegen nutzten diese Schwelle bei 78\u00A0Patientinnen und Patienten nach einem Achillessehnenriss: Nach 6\u00A0Monaten lag der LSI im Schnitt bei 84\u00A0% nach Wiederholungen und nur bei 61\u00A0% nach Gesamtarbeit, was zeigt, dass Wiederholungen zu zählen allein ein Defizit unterschätzen kann.',
-        'Ohne Verletzung lohnt es sich, einen Unterschied von mehr als 10\u00A0% festzuhalten und zu verfolgen. Das heißt nicht, dass etwas nicht stimmt. Aber wenn der Unterschied über mehrere Tests bestehen bleibt und du auf der schwächeren Seite auch Schmerzen hast, ist das für eine medizinische Fachperson ein nützlicher Hinweis.',
+        'In der Reha der unteren Extremität ist ein Limb Symmetry Index (LSI) von 90\u00A0% oder mehr der übliche Richtwert für normale Funktion. Der LSI ist die schwächere Seite geteilt durch die stärkere Seite, mal 100. Unter 90\u00A0% heißt, dass eine Seite mehr als 10\u00A0% schwächer ist.',
+        'Silbernagel und Kollegen nutzten diese Schwelle bei 78\u00A0Patientinnen und Patienten nach einem Achillessehnenriss: Nach 6\u00A0Monaten lag der LSI im Schnitt bei 84\u00A0% nach Wiederholungen und nur bei 61\u00A0% nach Gesamtarbeit, was zeigt, dass Wiederholungen zu zählen allein ein Defizit unterschätzen kann.',
+        'Ohne Verletzung **lohnt es sich, einen Unterschied von mehr als 10\u00A0% festzuhalten und zu verfolgen.** Das heißt nicht, dass etwas nicht stimmt. Aber wenn der Unterschied über mehrere Tests bestehen bleibt und du auf der schwächeren Seite auch Schmerzen hast, ist das für eine medizinische Fachperson ein nützlicher Hinweis.',
       ],
       cites: [CITE.hebertLosier, CITE.silbernagelHeelRise],
     },
     {
       h2: 'Was bedeutet ein niedriges Ergebnis, und was bedeutet es nicht?',
       paragraphs: [
-        'Eine niedrige Zahl beim Fersenheben sagt dir, dass die Wade auf dieser Seite früher ermüdet als der Median der Bevölkerung für dein Alter, dein Geschlecht und deine Aktivität. Sie sagt dir nicht, warum. Mangelndes Training, eine frische Verletzung, ein Problem mit der Achillessehne, Schonung wegen Schmerzen oder fehlende Übung mit dem Test können alle zu einer niedrigen Zahl führen.',
-        'Der Test ist keine Diagnose. Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine Plantarfasziitis oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt. Eine medizinische Fachperson kombiniert die Zahl mit anderen Befunden, um zu entscheiden, ob sie ein Symptom erklärt. Als Trend sagt der Test mehr als ein einzelner Messwert: Von 14 auf 22 in zwei Monaten ist ein klareres Signal als jede einzelne Zahl im Vergleich mit einer Tabelle.',
+        'Eine niedrige Zahl beim Fersenheben sagt dir, dass die Wade auf dieser Seite früher ermüdet als der Median der Bevölkerung für dein Alter, dein Geschlecht und deine Aktivität. Sie sagt dir nicht, warum. All das kann zu einer niedrigen Zahl führen:',
+        {
+          list: [
+            'Mangelndes Training.',
+            'Eine frische Verletzung.',
+            'Ein Problem mit der Achillessehne.',
+            'Schonung wegen Schmerzen.',
+            'Fehlende Übung mit dem Test.',
+          ],
+        },
+        '**Der Test ist keine Diagnose.** Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine Plantarfasziitis oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt.',
+        'Eine medizinische Fachperson kombiniert die Zahl mit anderen Befunden, um zu entscheiden, ob sie ein Symptom erklärt. Als Trend sagt der Test mehr als ein einzelner Messwert: Von 14 auf 22 in zwei Monaten ist ein klareres Signal als jede einzelne Zahl im Vergleich mit einer Tabelle.',
       ],
       cites: [CITE.hebertLosier],
     },
     {
       h2: 'Wie hängt die Wadenausdauer mit Fersenschmerzen, Problemen an der Achillessehne und Laufen zusammen?',
       paragraphs: [
-        'Wade und Plantarfaszie sind über das Fersenbein verbunden. Die Achillessehne zieht von hinten, die Faszie von unten. Schwache oder schnell ermüdende Waden bringen bei jedem Schritt mehr Spannung auf beide.',
+        'Wade und Plantarfaszie sind über das Fersenbein verbunden. Die Achillessehne zieht von hinten, die Faszie von unten. **Schwache oder schnell ermüdende Waden bringen bei jedem Schritt mehr Spannung auf beide.**',
         'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie ihre beste Bewertung, A, und Krafttraining die Bewertung B. Die Rathleff-Studie, die Fersenheben mit Zusatzgewicht bei Plantarfasziitis getestet hat, nutzte Wadenheben als Hauptübung, und die Teilnehmenden verbesserten ihre Schmerzwerte über drei Monate schneller als mit Dehnen allein. Das ganze Protokoll findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Bei Achillessehnenentzündung ist der Fersenheben-Test eines der üblichen Messinstrumente. Menschen mit Achillessehnen-Tendinopathie im mittleren Abschnitt (Schmerz in der Mitte der Sehne, nicht am Fersenbein) zeigen typischerweise eine geringere Wadenausdauer auf der betroffenen Seite. Zur exzentrischen Arbeit lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         'Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein. Das größere Bild zeigt [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
@@ -130,8 +159,9 @@ export const CALF_RAISE_TEST_DE: Guide = {
     {
       h2: 'Wie verbesserst du ein niedriges Ergebnis beim Fersenheben-Test?',
       paragraphs: [
-        'Die Übungen, die in der Reha die Wadenausdauer aufbauen, sind dieselben, die dein Testergebnis steigern. Fang auf der Stufe an, die zu deinem jetzigen Stand passt, und geh eine Stufe höher, sobald sich zwei Einheiten hintereinander leicht angefühlt haben.',
-        'Wenn du weniger als 10-mal einbeiniges Fersenheben schaffst, fang mit Fersenheben im Sitzen oder beidbeinig im Stehen an. Geh dann zum Fersenheben mit Halten, um isometrische Ausdauer aufzubauen, und danach zum einbeinigen Fersenheben auf dem Boden. Eine Stufe vergrößert den Bewegungsumfang. Ein Rucksack erhöht die Last. Die Grundbewegung findest du unter [Fersenheben](/de/uebungen/fersenheben/), die Variante, die auch die Plantarfaszie belastet, unter [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) und die Variante mit Fokus auf die Achillessehne unter [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/).',
+        'Die Übungen, die in der Reha die Wadenausdauer aufbauen, sind dieselben, die dein Testergebnis steigern. Fang auf der Stufe an, die zu deinem jetzigen Stand passt, und **geh eine Stufe höher, sobald sich zwei Einheiten hintereinander leicht angefühlt haben.**',
+        'Wenn du weniger als 10-mal einbeiniges Fersenheben schaffst, fang mit Fersenheben im Sitzen oder beidbeinig im Stehen an. Geh dann zum Fersenheben mit Halten, um isometrische Ausdauer aufzubauen, und danach zum einbeinigen Fersenheben auf dem Boden. Eine Stufe vergrößert den Bewegungsumfang. Ein Rucksack erhöht die Last.',
+        'Die Grundbewegung findest du unter [Fersenheben](/de/uebungen/fersenheben/), die Variante, die auch die Plantarfaszie belastet, unter [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) und die Variante mit Fokus auf die Achillessehne unter [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/).',
       ],
       exercises: [
         {

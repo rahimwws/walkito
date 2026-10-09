@@ -75,8 +75,17 @@ export const HEEL_FAT_PAD_PT: Guide = {
     {
       h2: 'O que faz o coxim gorduroso do calcanhar afinar?',
       paragraphs: [
-        'A idade é o fator mais importante. Depois dos 40 anos, mais ou menos, o coxim gorduroso perde naturalmente água, colágeno e elasticidade. Anos de atividade de alto impacto, muito tempo em pé em superfícies duras e andar descalço aceleram o processo.',
-        'Outros fatores de risco são peso corporal mais alto (mais força a cada passo), injeções repetidas de corticoide no calcanhar (a cortisona pode desfazer o tecido gorduroso), diabetes, pé cavo (que concentra a carga no calcanhar e na parte da frente do pé) e histórico familiar de problemas no tecido conjuntivo.',
+        '**A idade é o fator mais importante.** Depois dos 40 anos, mais ou menos, o coxim gorduroso perde naturalmente água, colágeno e elasticidade. Anos de atividade de alto impacto, muito tempo em pé em superfícies duras e andar descalço aceleram o processo.',
+        'Outros fatores de risco são:',
+        {
+          list: [
+            'Peso corporal mais alto (mais força a cada passo).',
+            'Injeções repetidas de corticoide no calcanhar (a cortisona pode desfazer o tecido gorduroso).',
+            'Diabetes.',
+            'Pé cavo (que concentra a carga no calcanhar e na parte da frente do pé).',
+            'Histórico familiar de problemas no tecido conjuntivo.',
+          ],
+        },
         'Ao contrário de um músculo ou de um tendão, o coxim gorduroso não se reconstrói com exercício nem com repouso. Depois que ele afinou, a meta prática é proteger o que sobrou e reduzir o impacto que chega ao osso do calcanhar.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
@@ -85,18 +94,28 @@ export const HEEL_FAT_PAD_PT: Guide = {
       h2: 'O que ajuda na dor do coxim gorduroso do calcanhar?',
       keyFact: 'Um único relato de caso encontrou alívio da dor com calcanheiras de gel de silicone em um e três meses, mas nenhum ensaio randomizado testou calcanheiras ou bandagem para essa condição (Chang e colegas, 2022).',
       paragraphs: [
-        'Os primeiros passos mais recomendados para a síndrome do coxim gorduroso do calcanhar são externos: calcanheiras viscoelásticas, palmilhas amortecidas e calçados com sola grossa que absorve impacto. A ideia é repor o amortecimento que o coxim gorduroso já não oferece.',
-        'A revisão de escopo de 2022 apontou uma lacuna incômoda: nenhum ensaio clínico randomizado testou calcanheiras ou bandagem especificamente para a síndrome do coxim gorduroso do calcanhar. Um único relato de caso descreveu alívio da dor com calcanheiras de gel de silicone depois de um e três meses. Alguns ensaios pequenos com bandagem low-dye para dor embaixo do calcanhar em geral relatam uma queda modesta na dor em comparação com placebo ou nenhum tratamento, mas nenhum deles separa a síndrome do coxim gorduroso das outras causas de dor no calcanhar, então o tamanho de qualquer benefício aqui não é conhecido.',
-        'Apesar da evidência fraca, a lógica é simples: se a almofada sumiu, acrescentar uma por fora é um passo razoável. Evite andar descalço em superfícies duras. Escolha calçados com o calcanhar bem amortecido e evite calçados retos de sola fina. Essas são recomendações de consenso, não testadas em ensaios, e esta página diz isso com clareza.',
+        'Os primeiros passos mais recomendados para a síndrome do coxim gorduroso do calcanhar são externos:',
+        {
+          list: [
+            'Calcanheiras viscoelásticas.',
+            'Palmilhas amortecidas.',
+            'Calçados com sola grossa que absorve impacto.',
+          ],
+        },
+        'A ideia é repor o amortecimento que o coxim gorduroso já não oferece.',
+        'A revisão de escopo de 2022 apontou uma lacuna incômoda: nenhum ensaio clínico randomizado testou calcanheiras ou bandagem especificamente para a síndrome do coxim gorduroso do calcanhar. Um único relato de caso descreveu alívio da dor com calcanheiras de gel de silicone depois de um e três meses.',
+        'Alguns ensaios pequenos com bandagem low-dye para dor embaixo do calcanhar em geral relatam uma queda modesta na dor em comparação com placebo ou nenhum tratamento, mas nenhum deles separa a síndrome do coxim gorduroso das outras causas de dor no calcanhar, então o tamanho de qualquer benefício aqui não é conhecido.',
+        'Apesar da evidência fraca, a lógica é simples: **se a almofada sumiu, acrescentar uma por fora é um passo razoável.** Evite andar descalço em superfícies duras. Escolha calçados com o calcanhar bem amortecido e evite calçados retos de sola fina. Essas são recomendações de consenso, não testadas em ensaios, e esta página diz isso com clareza.',
       ],
       cites: [CITE.fatPadReview],
     },
     {
       h2: 'Exercícios ajudam na síndrome do coxim gorduroso do calcanhar?',
       paragraphs: [
-        'Exercícios não conseguem reconstruir um coxim gorduroso afinado. Isso é uma mudança na estrutura, não uma fraqueza muscular. Mas o exercício ainda pode ter um papel em cuidar do pé em volta do problema.',
+        '**Exercícios não conseguem reconstruir um coxim gorduroso afinado.** Isso é uma mudança na estrutura, não uma fraqueza muscular. Mas o exercício ainda pode ter um papel em cuidar do pé em volta do problema.',
         'A força da panturrilha importa porque uma panturrilha mais forte absorve mais da força do impacto antes de ela chegar ao calcanhar. É a mesma lógica de carga por trás dos programas de elevação de calcanhar para fascite plantar, mas na síndrome do coxim gorduroso a meta é distribuir a carga, não reparar o tecido. O trabalho dos músculos intrínsecos do pé (pé curto, abrir os dedos) pode ajudar o pé a lidar com o contato com o chão.',
-        'A evidência para esses exercícios na síndrome do coxim gorduroso especificamente não existe. Nenhum ensaio os testou para essa condição. Eles vêm da pesquisa mais ampla sobre dor no calcanhar e força do pé. Os exercícios do Walkito são pensados para fascite plantar e força do pé. São um acréscimo razoável se o seu profissional de saúde confirmou atrofia do coxim gorduroso, mas não foram testados especificamente para isso, e vale saber disso.',
+        'A evidência para esses exercícios na síndrome do coxim gorduroso especificamente não existe. Nenhum ensaio os testou para essa condição. Eles vêm da pesquisa mais ampla sobre dor no calcanhar e força do pé.',
+        'Os exercícios do Walkito são pensados para fascite plantar e força do pé. São um acréscimo razoável se o seu profissional de saúde confirmou atrofia do coxim gorduroso, mas não foram testados especificamente para isso, e vale saber disso.',
       ],
       exercises: [
         {

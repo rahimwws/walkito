@@ -39,7 +39,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
     {
       h2: 'Perché il tallone fa male di notte o a riposo?',
       paragraphs: [
-        'La fascite plantare fa male perché la fascia si irrigidisce mentre dormi e poi si allunga di colpo quando ti alzi. Quel dolore raggiunge il picco al primo passo e migliora quando ti muovi. Se il tallone fa male mentre sei sdraiato a letto e non carichi affatto il peso, di solito c’entra un meccanismo diverso.',
+        'La fascite plantare fa male perché la fascia si irrigidisce mentre dormi e poi si allunga di colpo quando ti alzi. Quel dolore raggiunge il picco al primo passo e migliora quando ti muovi. **Se il tallone fa male mentre sei sdraiato a letto e non carichi affatto il peso, di solito c’entra un meccanismo diverso.**',
         'Una revisione del 2018 su American Family Physician elenca diverse cause di dolore al tallone che si comportano in modo diverso dalla fascite plantare. La distinzione chiave: il dolore della fascite plantare migliora con l’attività, mentre il dolore da fratture da stress, nervi compressi, tumori e problemi infiammatori non segue questo schema.',
         'Durante il sonno il piede punta anche verso il basso (flessione plantare). Questa posizione può accorciare il tendine d’Achille e il polpaccio, e a volte contribuisce al fastidio al tallone. I tutori notturni intervengono tenendo la caviglia ad angolo neutro. Ma un tutore notturno è uno strumento per la fascite plantare, e non sostituisce gli accertamenti per un dolore che peggiora davvero a riposo.',
       ],
@@ -49,7 +49,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       h2: 'Potrebbe essere una frattura da stress del calcagno?',
       paragraphs: [
         'Una frattura da stress del calcagno, una piccola incrinatura dell’osso del tallone dovuta a un carico ripetuto, può dare un dolore profondo che pulsa di notte. A differenza della fascite plantare, il dolore di solito peggiora con l’attività e non si calma quando ti scaldi. Spesso arriva dopo un aumento improvviso di corsa, camminata o tempo in piedi su superfici dure.',
-        'Il «test della compressione», cioè stringere insieme i due lati dell’osso del tallone, è il segno clinico classico. Un dolore alla compressione è insolito nella fascite plantare e comune nelle fratture da stress. Le radiografie semplici spesso non vedono le fratture da stress all’inizio. Di solito per confermarne una serve una risonanza magnetica o una scintigrafia ossea.',
+        'Il «test della compressione», cioè stringere insieme i due lati dell’osso del tallone, è il segno clinico classico. **Un dolore alla compressione è insolito nella fascite plantare e comune nelle fratture da stress.** Le radiografie semplici spesso non vedono le fratture da stress all’inizio. Di solito per confermarne una serve una risonanza magnetica o una scintigrafia ossea.',
         'Una revisione del 2011 su American Family Physician ha notato che le fratture da stress del calcagno danno un dolore che peggiora progressivamente dopo un aumento dell’attività o un passaggio a superfici più dure. Il dolore notturno e a riposo era tra le caratteristiche che distinguono le fratture da stress dalla fascite.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -60,7 +60,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       paragraphs: [
         'Il nervo tibiale passa in uno spazio dietro la caviglia, sul lato interno, chiamato tunnel tarsale. Una compressione lì, la sindrome del tunnel tarsale, dà bruciore, formicolio o intorpidimento lungo la pianta e il tallone. Tu (2018) descrive il dolore del tunnel tarsale come di solito peggiore stando in piedi, camminando o correndo, e alleviato da riposo e piede sollevato. Questo schema è diverso dalla fascite plantare, ma non è un vero dolore a riposo, quindi il tunnel tarsale non sempre rientra nello schema di cui parla questa pagina.',
         'Il nervo di Baxter è il primo ramo del nervo plantare laterale, un nervo più piccolo vicino alla parte interna del tallone. Quando è compresso dà un dolore acuto o bruciante nella parte interna del tallone. Il dolore spesso peggiora con l’attività nel corso della giornata, ma può comparire anche a riposo. Una revisione del 2025 afferma che la compressione del nervo di Baxter potrebbe spiegare fino al 20% dei casi di dolore cronico al tallone (Tedeschi, 2025).',
-        'Un nervo compresso viene spesso scambiato per fascite plantare, perché entrambi danno dolore nella parte interna del tallone. La differenza sta nel tipo di dolore: bruciore, formicolio o intorpidimento sono segni da nervo. Gli esami di imaging e gli studi di conduzione nervosa possono aiutare un professionista sanitario a confermare la diagnosi.',
+        'Un nervo compresso viene spesso scambiato per fascite plantare, perché entrambi danno dolore nella parte interna del tallone. La differenza sta nel tipo di dolore: **bruciore, formicolio o intorpidimento sono segni da nervo.** Gli esami di imaging e gli studi di conduzione nervosa possono aiutare un professionista sanitario a confermare la diagnosi.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -70,7 +70,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       paragraphs: [
         'Le spondiloartropatie, un gruppo di problemi infiammatori che comprende la spondilite anchilosante e l’artrite psoriasica, possono causare entesite, un’infiammazione nel punto in cui un tendine o un legamento si attacca all’osso. Il tallone è una sede comune. Il dolore è spesso su entrambi i lati, può trovarsi all’inserzione dell’Achille o sotto il tallone, e si accompagna a una rigidità del mattino prolungata (più di 30\u00A0minuti) che migliora con il movimento.',
         'In un follow-up da 5 a 15\u00A0anni su 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di una durata più lunga dei sintomi. Gli autori hanno notato che una malattia infiammatoria sistemica non riconosciuta potrebbe spiegare in parte questo risultato.',
-        'Anche l’artrite reumatoide e la gotta possono dare dolore al tallone. Se il dolore è su entrambi i talloni, se la rigidità dura più di 30\u00A0minuti ogni mattina o se sono coinvolte altre articolazioni, un professionista sanitario dovrebbe valutare una possibile causa infiammatoria.',
+        'Anche l’artrite reumatoide e la gotta possono dare dolore al tallone. **Se il dolore è su entrambi i talloni, se la rigidità dura più di 30\u00A0minuti ogni mattina o se sono coinvolte altre articolazioni, un professionista sanitario dovrebbe valutare una possibile causa infiammatoria.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -132,8 +132,16 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       h2: 'In cosa il dolore al tallone di notte è diverso da quello del mattino?',
       paragraphs: [
         'Il dolore al tallone al mattino e quello notturno sembrano simili, ma indicano direzioni diverse. Il dolore del mattino, la fitta acuta ai primi passi che passa dopo qualche minuto di cammino, è la presentazione da manuale della fascite plantare. Il tessuto si è irrigidito durante la notte e si allunga di colpo sotto carico.',
-        'Il dolore notturno, cioè un dolore che arriva o peggiora quando sei a letto e non carichi il peso, fa pensare a qualcosa che va oltre una semplice rigidità della fascia. I problemi più legati al vero dolore a riposo sono le fratture da stress, i nervi compressi, l’artrite infiammatoria e, raramente, tumori ossei o infezioni.',
-        'Se non sei sicuro di quale schema hai, c’è una prova semplice: il dolore migliora dopo 5-10\u00A0minuti di cammino? Se sì, lo schema della fascite plantare è più probabile, e la pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) è un punto di partenza migliore. Se no, continua a leggere qui e valuta di rivolgerti a un professionista sanitario.',
+        'Il dolore notturno, cioè un dolore che arriva o peggiora quando sei a letto e non carichi il peso, fa pensare a qualcosa che va oltre una semplice rigidità della fascia. I problemi più legati al vero dolore a riposo sono:',
+        {
+          list: [
+            'Le fratture da stress.',
+            'I nervi compressi.',
+            'L’artrite infiammatoria.',
+            'Raramente, tumori ossei o infezioni.',
+          ],
+        },
+        'Se non sei sicuro di quale schema hai, c’è una prova semplice: **il dolore migliora dopo 5-10\u00A0minuti di cammino?** Se sì, lo schema della fascite plantare è più probabile, e la pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) è un punto di partenza migliore. Se no, continua a leggere qui e valuta di rivolgerti a un professionista sanitario.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },
