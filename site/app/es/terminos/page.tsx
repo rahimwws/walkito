@@ -97,10 +97,11 @@ export default function TerminosEs() {
 
         <h2>Tu cuenta</h2>
         <p>
-          Inicias sesión con Apple cuando configuras Walkito, y en esa cuenta se
+          Inicias sesión con Apple en iPhone o con Google en Android cuando
+          configuras Walkito, y en esa cuenta se
           guarda tu plan. Iniciar sesión con correo y contraseña solo funciona
           en cuentas que creamos nosotros; no existe el registro con correo.
-          Protege tu teléfono y tu Apple ID, porque cualquiera que los use puede
+          Protege tu teléfono y tu Apple ID o tu cuenta de Google, porque cualquiera que los use puede
           usar tu cuenta.
         </p>
         <p>
@@ -202,9 +203,9 @@ export default function TerminosEs() {
           momento. El descuento con el que ya te hayas suscrito sigue siendo tuyo.
         </p>
 
-        <h2>Apple Salud</h2>
+        <h2>Apple Salud y Health Connect</h2>
         <p>
-          Si lo permites, Walkito lee los pasos, la velocidad al caminar, la
+          En iPhone, si lo permites, Walkito lee los pasos, la velocidad al caminar, la
           asimetría al caminar, los pisos subidos, la frecuencia
           cardiaca en reposo, la frecuencia cardiaca, la energía activa, el
           análisis del sueño y los entrenamientos, y guarda las sesiones que
@@ -214,6 +215,15 @@ export default function TerminosEs() {
           guardan en tu cuenta.
           Consulta la <a href="/es/privacidad/">página de privacidad</a> para
           saber qué sí sale de él.
+        </p>
+        <p>
+          En Android, si lo permites, Walkito lee de Health Connect los pasos,
+          las sesiones de ejercicio, la distancia y el sueño, y guarda las
+          sesiones que terminas como sesiones de ejercicio. En Android no se leen
+          la velocidad ni la asimetría al caminar. Cada permiso es opcional y
+          puedes retirarlo en cualquier momento en Health Connect. Los datos de
+          Health Connect se quedan en tu teléfono y nunca se suben ni se guardan
+          en tu cuenta.
         </p>
 
         <h2>Cambios</h2>

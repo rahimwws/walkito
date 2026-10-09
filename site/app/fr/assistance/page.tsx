@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Assistance',
   description:
-    'Aide pour Walkito : notifications, Apple Santé, achats, remboursements et suppression de votre compte. Écrivez-nous, une personne vous répond.',
+    'Aide pour Walkito : notifications, Apple Santé et Health Connect, achats, remboursements et suppression de votre compte. Écrivez-nous, une personne vous répond.',
   alternates: alternatesFor('support', 'fr'),
 };
 
@@ -43,11 +43,12 @@ export default function AssistanceFr() {
 
         <h2>Connexion, et nouveau téléphone</h2>
         <p>
-          La configuration vous connecte avec Apple et demande une connexion
-          internet une seule fois. Ensuite, l’usage quotidien fonctionne hors
+          La configuration vous connecte avec Apple sur iPhone ou avec Google
+          sur Android, et demande une connexion internet une seule fois. Ensuite, l’usage quotidien fonctionne hors
           ligne, et ce que vous notez est copié dans votre compte dès qu’il y a
           une connexion. Sur un nouveau téléphone ou après une réinstallation,
-          connectez-vous avec le même identifiant Apple et votre plan, vos
+          connectez-vous avec le même identifiant Apple ou le même compte Google
+          et votre plan, vos
           bilans, vos résultats de tests et vos séances reviennent.
         </p>
 
@@ -80,6 +81,16 @@ export default function AssistanceFr() {
           celles que vous voulez dans Réglages → Apps → Santé → Accès aux
           données et appareils → Walkito, et les parties qui en avaient besoin
           se mettent simplement en veille. Le plan fonctionne toujours.
+        </p>
+        <p>
+          Sur Android, Walkito lit dans Health Connect les pas, les séances
+          d’exercice, la distance et le sommeil, et y enregistre les séances que
+          vous terminez comme séances d’exercice. La vitesse et l’asymétrie de
+          la marche n’existent que sur iPhone. Ces données restent elles aussi
+          sur votre téléphone et ne sont jamais envoyées. Modifiez ce que
+          Walkito peut voir dans l’application Health Connect, ou dans les
+          Paramètres d’Android sous Health Connect → Autorisations des
+          applications → Walkito.
         </p>
 
         <h2>La douleur, et quand s’arrêter</h2>

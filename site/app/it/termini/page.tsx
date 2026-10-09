@@ -101,10 +101,11 @@ export default function TerminiIt() {
 
         <h2>Il tuo account</h2>
         <p>
-          Quando configuri Walkito accedi con Apple, e quell’account è dove viene
+          Quando configuri Walkito accedi con Apple su iPhone o con Google su
+          Android, e quell’account è dove viene
           salvato il tuo piano. L’accesso con email e password funziona solo per
           account creati da noi; non ci si può registrare con l’email. Tieni al
-          sicuro il tuo telefono e il tuo ID Apple, perché chiunque li usi può
+          sicuro il tuo telefono e il tuo ID Apple o account Google, perché chiunque li usi può
           usare il tuo account.
         </p>
         <p>
@@ -205,9 +206,9 @@ export default function TerminiIt() {
           Uno sconto con cui ti sei già abbonato resta tuo.
         </p>
 
-        <h2>Apple Salute</h2>
+        <h2>Apple Salute e Health Connect</h2>
         <p>
-          Se lo permetti, Walkito legge passi, velocità della camminata,
+          Su iPhone, se lo permetti, Walkito legge passi, velocità della camminata,
           asimmetria della camminata, piani saliti, frequenza cardiaca a riposo,
           frequenza cardiaca, energia attiva, analisi del sonno e allenamenti, e
           scrive le sessioni che completi come allenamenti e minuti di
@@ -216,6 +217,15 @@ export default function TerminiIt() {
           sul tuo telefono e non vengono mai caricati né salvati nel tuo
           account. Vedi la <a href="/it/privacy/">pagina sulla privacy</a> per
           sapere cosa invece esce dal telefono.
+        </p>
+        <p>
+          Su Android, se lo permetti, Walkito legge da Health Connect passi,
+          sessioni di esercizio, distanza e sonno, e vi scrive le sessioni che
+          completi come sessioni di esercizio. Velocità e asimmetria della
+          camminata non vengono lette su Android. Ogni permesso è facoltativo e
+          puoi revocarlo in qualsiasi momento in Health Connect. I dati di Health
+          Connect restano sul tuo telefono e non vengono mai caricati né salvati
+          nel tuo account.
         </p>
 
         <h2>Modifiche</h2>

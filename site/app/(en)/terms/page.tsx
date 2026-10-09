@@ -120,10 +120,11 @@ export default function Terms() {
 
         <h2>Your account</h2>
         <p>
-          You sign in with Apple when you set up Walkito, and that account is
+          You sign in with Apple on iPhone or with Google on Android when you set
+          up Walkito, and that account is
           where your plan is saved. Signing in with an email and password works
           only for accounts we set up ourselves; there is no sign-up with email.
-          Keep your phone and your Apple ID secure, because anyone using them can
+          Keep your phone and your Apple ID or Google account secure, because anyone using them can
           use your account.
         </p>
         <p>
@@ -221,15 +222,23 @@ export default function Terms() {
           have already subscribed at stays yours.
         </p>
 
-        <h2>Apple Health</h2>
+        <h2>Apple Health and Health Connect</h2>
         <p>
-          If you allow it, Walkito reads step count, walking speed, walking
+          On iPhone, if you allow it, Walkito reads step count, walking speed, walking
           asymmetry, flights climbed, resting heart rate, heart rate, active
           energy, sleep analysis and workouts, and writes the sessions you finish
           back as workouts and mindful minutes. Every permission is optional and
           can be withdrawn at any time in Settings. Apple Health data stays on
           your phone and is never uploaded or saved to your account. See the{' '}
           <a href="/privacy/">privacy page</a> for what does leave it.
+        </p>
+        <p>
+          On Android, if you allow it, Walkito reads steps, exercise sessions,
+          distance and sleep from Health Connect, and writes the sessions you
+          finish back as exercise sessions. Walking speed and walking asymmetry
+          are not read on Android. Every permission is optional and can be
+          withdrawn at any time in Health Connect. Health Connect data stays on
+          your phone and is never uploaded or saved to your account.
         </p>
 
         <h2>Changes</h2>

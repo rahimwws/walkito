@@ -99,10 +99,11 @@ export default function TermosPt() {
 
         <h2>A sua conta</h2>
         <p>
-          Você entra com a Apple ao configurar o Walkito, e é nessa conta que o
+          Você entra com a Apple no iPhone ou com o Google no Android ao
+          configurar o Walkito, e é nessa conta que o
           seu plano fica salvo. Entrar com e-mail e senha funciona só para
           contas que nós mesmos criamos; não existe cadastro por e-mail. Mantenha
-          o seu celular e o seu ID Apple seguros, porque qualquer pessoa que os
+          o seu celular e o seu ID Apple ou a sua Conta do Google seguros, porque qualquer pessoa que os
           use pode usar a sua conta.
         </p>
         <p>
@@ -204,9 +205,9 @@ export default function TermosPt() {
           Um desconto com o qual você já assinou continua sendo seu.
         </p>
 
-        <h2>App Saúde da Apple (Apple Health)</h2>
+        <h2>App Saúde da Apple (Apple Health) e Health Connect</h2>
         <p>
-          Se você permitir, o Walkito lê contagem de passos, velocidade de
+          No iPhone, se você permitir, o Walkito lê contagem de passos, velocidade de
           caminhada, assimetria ao caminhar, lances de escada, frequência
           cardíaca em repouso, frequência cardíaca, energia ativa, análise do
           sono e exercícios, e grava as sessões que você termina como exercícios
@@ -215,6 +216,15 @@ export default function TermosPt() {
           no seu celular e nunca são enviados nem salvos na sua conta. Veja a{' '}
           <a href="/pt/privacidade/">página de privacidade</a> para saber o que
           sai do celular.
+        </p>
+        <p>
+          No Android, se você permitir, o Walkito lê do Health Connect os passos,
+          as sessões de exercício, a distância e o sono, e grava as sessões que
+          você termina como sessões de exercício. No Android, a velocidade de
+          caminhada e a assimetria ao caminhar não são lidas. Toda permissão é
+          opcional e pode ser retirada a qualquer momento no Health Connect. Os
+          dados do Health Connect ficam no seu celular e nunca são enviados nem
+          salvos na sua conta.
         </p>
 
         <h2>Mudanças</h2>

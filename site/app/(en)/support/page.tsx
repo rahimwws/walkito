@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   // Long enough that Google uses it rather than picking arbitrary text off the
   // page. Forty characters is an invitation for it to write your ad copy.
   description:
-    'Help with Walkito: notifications, Apple Health, purchases, refunds and deleting your account. Write to us and a person replies.',
+    'Help with Walkito: notifications, Apple Health and Health Connect, purchases, refunds and deleting your account. Write to us and a person replies.',
   alternates: alternatesFor('support', 'en'),
 };
 
@@ -50,11 +50,12 @@ export default function Support() {
 
         <h2>Signing in, and a new phone</h2>
         <p>
-          Setup signs you in with Apple and needs a connection once. After that
-          the daily flow works offline, and what you log is copied to your
-          account whenever there is a connection. On a new phone or after
-          reinstalling, sign in with the same Apple ID and your plan, check-ins,
-          test results and sessions come back.
+          Setup signs you in with Apple on iPhone or with Google on Android, and
+          needs a connection once. After that the daily flow works offline, and
+          what you log is copied to your account whenever there is a connection.
+          On a new phone or after reinstalling, sign in with the same Apple ID or
+          Google account and your plan, check-ins, test results and sessions come
+          back.
         </p>
 
         <h2>The plan runs on dates, not attendance</h2>
@@ -84,6 +85,14 @@ export default function Support() {
           uploaded or saved to your account. Turn any of them off in Settings →
           Apps → Health → Data Access &amp; Devices → Walkito and the parts that
           needed it simply go quiet. The plan still works.
+        </p>
+        <p>
+          On Android, Walkito reads steps, exercise sessions, distance and sleep
+          from Health Connect, and writes the sessions you finish back as
+          exercise sessions. Walking speed and walking asymmetry are iPhone only.
+          These readings also stay on your phone and are never uploaded. Change
+          what Walkito can see in the Health Connect app, or in Android Settings
+          under Health Connect → App permissions → Walkito.
         </p>
 
         <h2>Pain, and when to stop</h2>

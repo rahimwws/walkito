@@ -103,11 +103,12 @@ export default function NutzungsbedingungenDe() {
 
         <h2>Dein Konto</h2>
         <p>
-          Bei der Einrichtung von Walkito meldest du dich mit Apple an, und in
+          Bei der Einrichtung von Walkito meldest du dich auf dem iPhone mit
+          Apple an, auf Android mit Google, und in
           diesem Konto wird dein Plan gespeichert. Die Anmeldung mit E-Mail und
           Passwort funktioniert nur für Konten, die wir selbst einrichten; eine
           Registrierung per E-Mail gibt es nicht. Schütze dein Handy und deine
-          Apple-ID, denn wer sie nutzt, kann dein Konto nutzen.
+          Apple-ID oder dein Google-Konto, denn wer sie nutzt, kann dein Konto nutzen.
         </p>
         <p>
           Dein Plan, deine Antworten, Check-ins, Testergebnisse und Einheiten
@@ -209,9 +210,9 @@ export default function NutzungsbedingungenDe() {
           Rabatt, zu dem du bereits ein Abo abgeschlossen hast, bleibt dir.
         </p>
 
-        <h2>Apple Health</h2>
+        <h2>Apple Health und Health Connect</h2>
         <p>
-          Wenn du es erlaubst, liest Walkito Schritte, Gehgeschwindigkeit,
+          Auf dem iPhone liest Walkito, wenn du es erlaubst, Schritte, Gehgeschwindigkeit,
           Gang-Asymmetrie, gestiegene Etagen, Ruheherzfrequenz, Herzfrequenz,
           aktive Energie, Schlafanalyse und Trainings, und schreibt die
           Einheiten, die du abschließt, als Trainings und Achtsamkeitsminuten
@@ -220,6 +221,15 @@ export default function NutzungsbedingungenDe() {
           deinem Handy und werden nie hochgeladen oder in deinem Konto
           gespeichert. Was das Handy doch verlässt, steht in der{' '}
           <a href="/de/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+        <p>
+          Auf Android liest Walkito, wenn du es erlaubst, Schritte,
+          Trainingseinheiten, Distanz und Schlaf aus Health Connect und schreibt
+          die Einheiten, die du abschließt, als Trainingseinheiten zurück.
+          Gehgeschwindigkeit und Gang-Asymmetrie werden auf Android nicht
+          gelesen. Jede Erlaubnis ist optional und kann jederzeit in Health
+          Connect widerrufen werden. Daten aus Health Connect bleiben auf deinem
+          Handy und werden nie hochgeladen oder in deinem Konto gespeichert.
         </p>
 
         <h2>Änderungen</h2>
