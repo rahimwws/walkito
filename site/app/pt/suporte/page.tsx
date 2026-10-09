@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Suporte',
   description:
-    'Ajuda com o Walkito: notificações, app Saúde, compras, reembolsos e como excluir sua conta. Escreva para nós e uma pessoa responde.',
+    'Ajuda com o Walkito: notificações, app Saúde e Health Connect, compras, reembolsos e como excluir sua conta. Escreva para nós e uma pessoa responde.',
   alternates: alternatesFor('support', 'pt'),
 };
 
@@ -42,11 +42,11 @@ export default function SuportePt() {
 
         <h2>Login, e um celular novo</h2>
         <p>
-          Na configuração você entra com a Apple, e para isso precisa de
-          conexão uma vez. Depois, o uso diário funciona sem internet, e o que
+          Na configuração você entra com a Apple no iPhone ou com o Google no
+          Android, e para isso precisa de conexão uma vez. Depois, o uso diário funciona sem internet, e o que
           você registra é copiado para a sua conta sempre que houver conexão.
           Em um celular novo ou depois de reinstalar, entre com o mesmo ID Apple
-          e o seu plano, os seus registros, os resultados dos testes e as
+          ou a mesma Conta do Google e o seu plano, os seus registros, os resultados dos testes e as
           sessões voltam.
         </p>
 
@@ -78,6 +78,15 @@ export default function SuportePt() {
           Ajustes → Apps → Saúde → Acesso a Dados e Dispositivos → Walkito, e as
           partes que usavam esses dados simplesmente deixam de aparecer. O plano
           continua funcionando.
+        </p>
+        <p>
+          No Android, o Walkito lê do Health Connect os passos, as sessões de
+          exercício, a distância e o sono, e grava lá as sessões que você
+          termina como sessões de exercício. A velocidade de caminhada e a
+          assimetria ao caminhar existem só no iPhone. Esses dados também ficam
+          no seu celular e nunca são enviados. Mude o que o Walkito pode ver no
+          app Health Connect, ou nas Configurações do Android em Health Connect
+          → Permissões de apps → Walkito.
         </p>
 
         <h2>A dor, e quando parar</h2>

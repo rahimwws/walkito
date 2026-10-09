@@ -102,11 +102,12 @@ export default function ConditionsFr() {
 
         <h2>Votre compte</h2>
         <p>
-          Vous vous connectez avec Apple quand vous configurez Walkito, et c’est
+          Vous vous connectez avec Apple sur iPhone ou avec Google sur Android
+          quand vous configurez Walkito, et c’est
           dans ce compte que votre plan est enregistré. La connexion par e-mail
           et mot de passe ne fonctionne que pour les comptes que nous créons
           nous-mêmes ; il n’y a pas d’inscription par e-mail. Protégez votre
-          téléphone et votre identifiant Apple, car toute personne qui les
+          téléphone et votre identifiant Apple ou votre compte Google, car toute personne qui les
           utilise peut utiliser votre compte.
         </p>
         <p>
@@ -211,9 +212,9 @@ export default function ConditionsFr() {
           moment. Une réduction à laquelle vous êtes déjà abonné reste la vôtre.
         </p>
 
-        <h2>Apple Santé</h2>
+        <h2>Apple Santé et Health Connect</h2>
         <p>
-          Si vous l’autorisez, Walkito lit le nombre de pas, la vitesse de
+          Sur iPhone, si vous l’autorisez, Walkito lit le nombre de pas, la vitesse de
           marche, l’asymétrie de la marche, les étages montés, la fréquence
           cardiaque au repos, la fréquence cardiaque, l’énergie active,
           l’analyse du sommeil et les entraînements, et enregistre les séances
@@ -224,6 +225,15 @@ export default function ConditionsFr() {
           compte. Consultez la{' '}
           <a href="/fr/confidentialite/">page confidentialité</a> pour savoir ce
           qui en sort.
+        </p>
+        <p>
+          Sur Android, si vous l’autorisez, Walkito lit dans Health Connect les
+          pas, les séances d’exercice, la distance et le sommeil, et y enregistre
+          les séances que vous terminez comme séances d’exercice. La vitesse et
+          l’asymétrie de la marche ne sont pas lues sur Android. Chaque
+          autorisation est facultative et peut être retirée à tout moment dans
+          Health Connect. Les données de Health Connect restent sur votre
+          téléphone et ne sont jamais envoyées ni enregistrées dans votre compte.
         </p>
 
         <h2>Modifications</h2>

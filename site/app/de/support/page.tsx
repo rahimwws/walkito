@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Hilfe und Support',
   description:
-    'Hilfe zu Walkito: Mitteilungen, Apple Health, Käufe, Erstattungen und das Löschen deines Kontos. Schreib uns, und ein Mensch antwortet.',
+    'Hilfe zu Walkito: Mitteilungen, Apple Health und Health Connect, Käufe, Erstattungen und das Löschen deines Kontos. Schreib uns, und ein Mensch antwortet.',
   alternates: alternatesFor('support', 'de'),
 };
 
@@ -43,11 +43,12 @@ export default function SupportDe() {
 
         <h2>Anmelden, und ein neues Handy</h2>
         <p>
-          Bei der Einrichtung meldest du dich mit Apple an, dafür brauchst du
-          einmal eine Verbindung. Danach funktioniert der tägliche Ablauf
+          Bei der Einrichtung meldest du dich auf dem iPhone mit Apple an, auf
+          Android mit Google, dafür brauchst du einmal eine Verbindung. Danach funktioniert der tägliche Ablauf
           offline, und was du einträgst, wird in dein Konto kopiert, sobald es
           eine Verbindung gibt. Auf einem neuen Handy oder nach einer
-          Neuinstallation meldest du dich mit derselben Apple-ID an, und dein
+          Neuinstallation meldest du dich mit derselben Apple-ID oder demselben
+          Google-Konto an, und dein
           Plan, deine Check-ins, Testergebnisse und Einheiten kommen zurück.
         </p>
 
@@ -79,6 +80,15 @@ export default function SupportDe() {
           Health → Datenzugriff &amp; Geräte → Walkito aus, und die Teile, die
           sie gebraucht haben, werden einfach still. Der Plan funktioniert
           weiter.
+        </p>
+        <p>
+          Auf Android liest Walkito Schritte, Trainingseinheiten, Distanz und
+          Schlaf aus Health Connect und schreibt die Einheiten, die du
+          abschließt, als Trainingseinheiten zurück. Gehgeschwindigkeit und
+          Gang-Asymmetrie gibt es nur auf dem iPhone. Auch diese Werte bleiben
+          auf deinem Handy und werden nie hochgeladen. Was Walkito sehen darf,
+          änderst du in der Health Connect App oder in den Android-Einstellungen
+          unter Health Connect → App-Berechtigungen → Walkito.
         </p>
 
         <h2>Schmerzen, und wann du aufhören solltest</h2>
