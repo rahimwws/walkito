@@ -31,3 +31,14 @@ export function chose(
   const values = Array.isArray(answer) ? answer : [answer];
   return values.some((value) => typeof value === 'string' && wanted.includes(value));
 }
+
+/**
+ * The answer key that lists which steps a plan code from ChatGPT or Claude
+ * answered (`plan-code.ts`). Those steps are stepped over.
+ */
+export const CODE_FILLED = 'codeFilled';
+
+/** Whether a plan code already answered the step stored under `key`. */
+export function codeFilled(answers: Readonly<Record<string, unknown>>, key: string): boolean {
+  return chose(answers, CODE_FILLED, key);
+}

@@ -24,6 +24,7 @@ import Animated, {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LanguageBadge } from "@/features/language-switch";
+import { redeemPlanCode } from "@/features/plan-code";
 import { SignInSheet } from "@/features/sign-in";
 import { fonts, meterColors, palette } from "@/shared/config";
 import {
@@ -33,11 +34,13 @@ import {
   type AcquisitionSource,
 } from "@/shared/lib/analytics";
 import { useT, type Key, type Translate } from "@/shared/lib/i18n";
+import type { PlanCodeParams } from "@/shared/lib/plan-code";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
 import { setBilateral } from "@/entities/health";
 import { whereKey } from "@/entities/leg-zone";
 import { armOffer } from "@/entities/offer";
+import { pendingPlanCode, subscribePlanCode } from "@/entities/plan-code";
 import { recordAcquisitionSource } from "@/entities/purchase";
 import {
   saveIntake,
@@ -101,6 +104,7 @@ import { PLANS, recommendedIndex } from "../model/plans";
 import { primaryPain } from "../model/reflection";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
+import { answersFromPlanCode } from "../model/plan-code";
 import {
   STEPS,
   STEP_COUNT,
@@ -126,6 +130,7 @@ import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
 import { OutlookStep } from "./outlook-step";
 import { PainMapStep } from "./pain-map-step";
+import { PlanCodeSheet } from "./plan-code-sheet";
 import { ReactionStep } from "./reaction-step";
 import { SexStep } from "./sex-step";
 import { StepProgress } from "./step-progress";
@@ -291,6 +296,28 @@ export function OnboardingPage() {
   const ctaSquash = useSharedValue(0);
   /** "Already have an account?" */
   const [signIn, setSignIn] = useState(false);
+  /** "Got a code from ChatGPT or Claude?" */
+  const [codeOpen, setCodeOpen] = useState(false);
+
+  /**
+   * A plan code from ChatGPT or Claude answers the questions its assistant
+   * already asked (`answersFromPlanCode`); those steps are then stepped over.
+   * Typed in on the intro, or held by a link (`pages/open`), which can arrive
+   * before this screen mounts or while it is open.
+   */
+  const applyPlanCode = useCallback((params: PlanCodeParams) => {
+    setAnswers((prev) => ({ ...prev, ...answersFromPlanCode(params) }));
+  }, []);
+  useEffect(() => {
+    const take = () => {
+      const held = pendingPlanCode();
+      if (held == null) return;
+      const params = redeemPlanCode(held.code);
+      if (params != null) applyPlanCode(params);
+    };
+    take();
+    return subscribePlanCode(take);
+  }, [applyPlanCode]);
   /** The one-leg check, in seconds, per side. */
   const [balance, setBalance] = useState<{
     left: number | null;
@@ -1118,10 +1145,29 @@ export function OnboardingPage() {
                   {t("onboarding.intro.haveAccount")}
                 </Text>
               </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  setCodeOpen(true);
+                }}
+                hitSlop={8}
+                style={({ pressed }) => pressed && { opacity: 0.6 }}
+              >
+                <Text style={[styles.haveCode, { color: meter.caption }]}>
+                  {t("aiCode.introLink")}
+                </Text>
+              </Pressable>
             </Animated.View>
           )}
         </View>
       )}
+
+      <PlanCodeSheet
+        visible={codeOpen}
+        onClose={() => setCodeOpen(false)}
+        onRedeemed={applyPlanCode}
+      />
 
       <SignInSheet
         visible={signIn}
@@ -1193,4 +1239,5 @@ const styles = StyleSheet.create({
   },
   footnote: fonts.medium(13),
   haveAccount: fonts.semibold(15, -0.2),
+  haveCode: fonts.medium(14),
 });

@@ -55,6 +55,8 @@ export type IntroPlanProps = {
   name: string;
   /** Their own numbers, across the top: where, this morning, how long. */
   strip: readonly string[];
+  /** "Your plan: …" for somebody with a plan code from an AI assistant. */
+  planLine?: string | null;
   minutes: number;
   daysPerWeek: number;
   /** The first progress check, epoch ms. */
@@ -62,7 +64,7 @@ export type IntroPlanProps = {
 };
 
 /** Step one: how the plan starts. */
-export function IntroPlan({ name, strip, minutes, daysPerWeek, checkOn }: IntroPlanProps) {
+export function IntroPlan({ name, strip, planLine, minutes, daysPerWeek, checkOn }: IntroPlanProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -104,6 +106,13 @@ export function IntroPlan({ name, strip, minutes, daysPerWeek, checkOn }: IntroP
             </View>
           ))}
         </Animated.View>
+      )}
+      {planLine != null && (
+        <Animated.Text
+          entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
+          style={[styles.planLine, { color: accents[scheme].violet.fill }]}>
+          {planLine}
+        </Animated.Text>
       )}
       <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)} style={styles.heading}>
         <Image source={WAVE} style={styles.wave} resizeMode="contain" />
@@ -273,6 +282,10 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
   },
   stripText: fonts.bold(14),
+  planLine: {
+    ...fonts.bold(15, -0.2),
+    lineHeight: 20,
+  },
   clip: { aspectRatio: 16 / 10 },
   howRow: {
     flexDirection: 'row',

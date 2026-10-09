@@ -113,6 +113,10 @@ export const OFFERINGS = {
    * or coming back. `$rc_weekly` here is optional and, when present, is the
    * ordinary weekly product. Never on a first view — see the paywall. */
   offer: 'offer',
+  /** For somebody an AI assistant sent with a plan code (`assistant.ts`).
+   * May not exist in the dashboard: the paywall falls back to `standard`
+   * through `fetchShelf`, so a missing one sells at the ordinary price. */
+  assistant: 'ai_assistant',
 } as const;
 
 /**

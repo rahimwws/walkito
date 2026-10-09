@@ -109,6 +109,21 @@ export type AnalyticsEvents = {
   checkin_logged: { day: number; entries_today: number };
   morning_stretch_done: { day: number };
 
+  // ── Plan codes from AI assistants ───────────────────────────────────────
+  /** A plan code link (`walkito://plan?code=`, `walkito.site/p/<code>`) opened
+   * the app with a valid code. Which assistant made it, nothing else. */
+  ai_code_opened: { source: 'chatgpt' | 'claude' | 'other' };
+  /** Onboarding was prefilled from a plan code, by link or typed in. `area`
+   * and `minutes` are plan settings the assistant chose, not anything the
+   * person reported about their body. */
+  ai_code_redeemed: {
+    source: 'chatgpt' | 'claude' | 'other';
+    area: 'heel_arch' | 'achilles' | 'flat_feet' | 'shin' | 'general_plus';
+    minutes: 3 | 5 | 10;
+  };
+  /** A plan code that did not decode, from a link or the onboarding field. */
+  ai_code_invalid: Record<string, never>;
+
   // ── Email ────────────────────────────────────────────────────────────────
   /** The app was opened from an email button. `email_key` names the email
    * (`welcome`, `day10_keep`…), `path` the screen it asked for. The metric that

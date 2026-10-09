@@ -15,6 +15,7 @@ import Purchases, {
   type PurchasesStoreProduct,
 } from 'react-native-purchases';
 
+import { assistantSource, type AssistantSource } from './assistant';
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import {
   ENTITLEMENT,
@@ -340,6 +341,8 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
 
   void linkAnalytics();
   void collectAdAttribution();
+  const assistant = assistantSource();
+  if (assistant != null) void setAssistantSource(assistant);
 
   await refreshEntitlement();
 }
@@ -419,6 +422,21 @@ export async function setAcquisitionSource(source: string): Promise<void> {
     await Purchases.setMediaSource(source);
   } catch {
     // Not configured yet, or offline. The answer is also on the PostHog person.
+  }
+}
+
+/**
+ * Which AI assistant sent this person, as the custom `acq_source` attribute.
+ *
+ * A custom attribute rather than the media source: the media source already
+ * carries the onboarding's "how did you find us" answer, and the two should not
+ * overwrite each other. `$posthogUserId` is untouched.
+ */
+export async function setAssistantSource(source: AssistantSource): Promise<void> {
+  try {
+    await Purchases.setAttributes({ acq_source: source });
+  } catch {
+    // Not configured yet, or offline. `startRevenueCat` sends it again.
   }
 }
 

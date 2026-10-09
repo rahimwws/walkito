@@ -1,12 +1,15 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef } from 'react';
+import { Alert } from 'react-native';
 
 import { unlockBoost } from '@/entities/offer';
 import { recordEmailLinkOpened } from '@/entities/profile';
 import { requestProtocol } from '@/entities/protocols';
 import { clearBrowsingLapsed, useAccessLapsed, useEntitled } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
+import { openPlanCodeLink } from '@/features/plan-code';
 import { track } from '@/shared/lib/analytics';
+import { useT } from '@/shared/lib/i18n';
 import { requestProgram } from '@/shared/lib/program';
 
 import { linkTarget } from '../model/route';
@@ -20,6 +23,9 @@ import { linkTarget } from '../model/route';
  * the root layout's guards, so a link always resolves; the guards then decide
  * what Home means for this user — onboarding, the paywall, or the tabs.
  *
+ * A plan code from ChatGPT or Claude lands here too (`/open/plan-code?code=`,
+ * rewritten from every shape of the link in `intent.ts`).
+ *
  * The plan, today's session and the test cannot be opened by route: the
  * program overlay lives inside the tabs. They are asked for through
  * `requestProgram`, which the plan acts on once it has mounted.
@@ -29,7 +35,15 @@ export function OpenLinkPage() {
   const onboarded = useOnboarded();
   const entitled = useEntitled();
   const lapsed = useAccessLapsed();
-  const params = useLocalSearchParams<{ path?: string | string[]; src?: string; e?: string; minutes?: string; offering?: string }>();
+  const t = useT();
+  const params = useLocalSearchParams<{
+    path?: string | string[];
+    src?: string;
+    e?: string;
+    minutes?: string;
+    offering?: string;
+    code?: string;
+  }>();
   const handled = useRef(false);
 
   useEffect(() => {
@@ -43,12 +57,26 @@ export function OpenLinkPage() {
       void recordEmailLinkOpened(params.e, path);
     }
 
+    const target = linkTarget(segments, { minutes: params.minutes, offering: params.offering, code: params.code });
+
+    // A plan code from ChatGPT or Claude. Before a plan exists it is held for
+    // onboarding, which prefills from it; an invalid one is counted and the
+    // ordinary onboarding runs. After, the plan they have is kept, and a short
+    // note says why the code changed nothing.
+    if (target.to === 'plan-code') {
+      const result = openPlanCodeLink(target.code, onboarded);
+      router.replace('/');
+      if (result === 'already-onboarded') {
+        setTimeout(() => Alert.alert(t('aiCode.onboardedTitle'), t('aiCode.onboardedBody')), 400);
+      }
+      return;
+    }
+
     if (!onboarded) {
       router.replace('/');
       return;
     }
 
-    const target = linkTarget(segments, { minutes: params.minutes, offering: params.offering });
     switch (target.to) {
       case 'program':
         requestProgram(target.request);
@@ -88,7 +116,7 @@ export function OpenLinkPage() {
       case 'home':
         router.replace('/');
     }
-  }, [onboarded, entitled, lapsed, params, router]);
+  }, [onboarded, entitled, lapsed, params, router, t]);
 
   return null;
 }

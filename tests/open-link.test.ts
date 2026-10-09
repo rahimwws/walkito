@@ -24,6 +24,26 @@ describe('incoming links', () => {
     expect(rewriteIncomingPath('walkito.dev://open/plan/')).toBe('/open/plan');
   });
 
+  test('every shape of a plan-code link reaches one route', () => {
+    const to = '/open/plan-code?code=WK-2GMA00';
+    expect(rewriteIncomingPath('walkito://plan?code=WK-2GMA00')).toBe(to);
+    expect(rewriteIncomingPath('walkito:///plan?code=WK-2GMA00')).toBe(to);
+    expect(rewriteIncomingPath('walkito.dev://plan/?code=WK-2GMA00')).toBe(to);
+    expect(rewriteIncomingPath('https://walkito.site/p/WK-2GMA00/')).toBe(to);
+    expect(rewriteIncomingPath('https://walkito.site/p/WK-2GMA00')).toBe(to);
+    expect(rewriteIncomingPath('/p/WK-2GMA00/')).toBe(to);
+    expect(rewriteIncomingPath('walkito://p/WK-2GMA00')).toBe(to);
+    // Passed on as typed; the page decides whether it is a code.
+    expect(rewriteIncomingPath('walkito://plan?code=wk 2gma00')).toBe('/open/plan-code?code=wk%202gma00');
+  });
+
+  test('a plan link without a code is not a plan-code link', () => {
+    expect(rewriteIncomingPath('walkito://plan')).toBe('walkito://plan');
+    expect(rewriteIncomingPath('walkito:///plan?code=')).toBe('walkito:///plan?code=');
+    expect(rewriteIncomingPath('https://walkito.site/p/')).toBe('https://walkito.site/p/');
+    expect(rewriteIncomingPath('https://walkito.site/p/a/b/')).toBe('https://walkito.site/p/a/b/');
+  });
+
   test('everything else passes through untouched', () => {
     expect(rewriteIncomingPath('https://walkito.site/open/today/?src=email&e=welcome')).toBe(
       'https://walkito.site/open/today/?src=email&e=welcome',
@@ -44,6 +64,7 @@ describe('where each email path goes', () => {
     expect(linkTarget(['library', 'morning'], {})).toEqual({ to: 'library', protocol: 'morning' });
     expect(linkTarget(['paywall'], { offering: 'offer' })).toEqual({ to: 'offer', offering: 'offer' });
     expect(linkTarget(['settings'], {})).toEqual({ to: 'settings' });
+    expect(linkTarget(['plan-code'], { code: 'WK-2GMA00' })).toEqual({ to: 'plan-code', code: 'WK-2GMA00' });
   });
 
   test('an unknown path goes Home, and odd minutes are ignored', () => {

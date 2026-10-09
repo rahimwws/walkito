@@ -2,6 +2,7 @@ import Constants from 'expo-constants';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
+import { isAssistantSource, storeAssistantSource } from './assistant';
 import { compAccess, subscribeComp } from './comp';
 import { type Purchases as Store, unconfigured } from './purchase';
 
@@ -215,6 +216,20 @@ export function recordAcquisitionSource(source: string): void {
   if (!purchases.configured || !keyIsUsable) return;
   const { setAcquisitionSource } = require('./revenuecat') as typeof import('./revenuecat');
   void setAcquisitionSource(source);
+}
+
+/**
+ * Record which AI assistant sent this person (`assistant.ts`), as the
+ * `acq_source` subscriber attribute. Anything but ChatGPT or Claude is
+ * ignored. Kept on disk first, so a store that is not configured yet gets it
+ * when it starts.
+ */
+export function recordAssistantSource(source: string): void {
+  if (!isAssistantSource(source)) return;
+  storeAssistantSource(source);
+  if (!purchases.configured || !keyIsUsable) return;
+  const { setAssistantSource } = require('./revenuecat') as typeof import('./revenuecat');
+  void setAssistantSource(source);
 }
 
 /**

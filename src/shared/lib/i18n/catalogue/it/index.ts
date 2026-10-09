@@ -1,5 +1,6 @@
 import type { CatalogueFor } from '../types';
 
+import { AI_CODE_IT } from './ai-code';
 import { CORE_IT } from './core';
 import { EXERCISES_IT } from './exercises';
 import { HOME_IT } from './home';
@@ -40,4 +41,5 @@ export const it: CatalogueFor<'it'> = {
   ...PLAYER_IT,
   ...TESTDAY_IT,
   ...UPDATE_IT,
+  ...AI_CODE_IT,
 };

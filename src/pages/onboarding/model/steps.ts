@@ -14,7 +14,7 @@ import { MAX_ZONES } from '@/entities/leg-zone';
 import type { AccentName } from '@/shared/config';
 import type { Translate } from '@/shared/lib/i18n';
 
-import { chose } from './answers';
+import { chose, codeFilled } from './answers';
 import { balanceAllowed, miniTestEligible, roleOf, runs, standsAtWork } from './journey';
 
 /**
@@ -275,6 +275,8 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 1,
     title: (t) => t('onboarding.pain.title', NAME_SLOT),
     blurb: (t) => t('onboarding.pain.blurb', { count: MAX_ZONES }),
+    // A plan code from ChatGPT or Claude names the area (`plan-code.ts`).
+    skipWhen: (a) => codeFilled(a, 'pain'),
   },
   {
     // Which side: the retest compares the sore leg with the other, and "both"
@@ -289,7 +291,7 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'right', label: (t) => t('onboarding.side.right') },
       { value: 'both', label: (t) => t('onboarding.side.both') },
     ],
-    skipWhen: (a) => !hurts(a),
+    skipWhen: (a) => !hurts(a) || codeFilled(a, 'side'),
   },
   {
     kind: 'choice',
@@ -428,6 +430,7 @@ export const STEPS: readonly OnboardingStep[] = [
       label: (t: Translate) => t(`onboarding.days.${value}`),
       caption: (t: Translate) => t(`onboarding.days.${value}Caption`),
     })),
+    skipWhen: (a) => codeFilled(a, 'planDays'),
   },
   {
     kind: 'choice',
@@ -440,6 +443,7 @@ export const STEPS: readonly OnboardingStep[] = [
       label: (t: Translate) => t(`onboarding.minutes.${value}`),
       caption: (t: Translate) => t(`onboarding.minutes.${value}Caption`),
     })),
+    skipWhen: (a) => codeFilled(a, 'planMinutes'),
   },
   {
     kind: 'choice',
@@ -452,6 +456,7 @@ export const STEPS: readonly OnboardingStep[] = [
       value,
       label: (t: Translate) => t(`onboarding.equipment.${value}`),
     })),
+    skipWhen: (a) => codeFilled(a, 'equipment'),
   },
   { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },

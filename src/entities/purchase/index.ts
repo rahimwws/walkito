@@ -19,6 +19,7 @@ export {
   onSimulator,
   purchases,
   recordAcquisitionSource,
+  recordAssistantSource,
   startPurchases,
   storeDiagnosis,
 } from './model/store';
@@ -34,3 +35,4 @@ export {
   useBrowsingLapsed,
   useSessionsLocked,
 } from './model/lapse';
+export { assistantSource, type AssistantSource } from './model/assistant';
