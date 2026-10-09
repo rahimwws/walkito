@@ -306,11 +306,11 @@
   line-height: 1.55;
 }
 
-@supports (corner-shape: superellipse(1.35)) {
+@supports (corner-shape: superellipse(1.45)) {
   .ft-panel,
   .ft-top,
   .ft .social a {
-    corner-shape: superellipse(1.35);
+    corner-shape: superellipse(1.45);
   }
 }
 

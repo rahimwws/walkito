@@ -343,14 +343,14 @@
 }
 
 /* The continuous corner, where the browser draws one. */
-@supports (corner-shape: superellipse(1.35)) {
+@supports (corner-shape: superellipse(1.45)) {
   .hfaq::before,
   .hfaq .hfaq-panel,
   .hfaq .hfaq-item,
   .hfaq .hfaq-q,
   .hfaq .hfaq-num,
   .hfaq .hfaq-toggle {
-    corner-shape: superellipse(1.35);
+    corner-shape: superellipse(1.45);
   }
 }
 
