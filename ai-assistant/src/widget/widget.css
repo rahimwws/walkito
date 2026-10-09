@@ -1,0 +1,381 @@
+/*
+ * The widget's look, from the app: the session screen's exercise card, the
+ * Plan screen's week circles, the glass chips, the primary button, the safety
+ * screen's notes. Every colour, radius and font is a token from tokens.css,
+ * which scripts/build.mjs generates from src/shared/config/theme.ts and the
+ * site's radii.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--w-bg);
+  color: var(--w-ink);
+  font-family: var(--w-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: grid;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  line-height: 1.15;
+}
+
+h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.eyebrow {
+  margin-bottom: 4px;
+  color: var(--w-label);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.intro,
+.cue,
+.day-meta,
+.rest {
+  color: var(--w-caption);
+}
+
+header .intro {
+  margin-top: 6px;
+}
+
+/* ---- exercise card ---- */
+
+.ex {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 12px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.clip {
+  display: block;
+  width: 96px;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--w-radius-item);
+  background: var(--w-icon-tile);
+  object-fit: cover;
+}
+
+.clip-empty {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  color: var(--w-caption);
+  font-size: 12px;
+  text-align: center;
+}
+
+.ex-body {
+  display: grid;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* The app's glass chip. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--w-glass);
+  box-shadow: inset 0 0 0 1px var(--w-divider);
+  color: var(--w-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chip-button {
+  min-height: 44px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+/* ---- week strip ---- */
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  padding: 10px 6px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.day {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  min-height: 56px;
+  padding: 6px 0;
+  border: 0;
+  border-radius: var(--w-radius-item);
+  background: transparent;
+  color: var(--w-caption);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.day[aria-selected='true'] {
+  background: var(--w-icon-tile);
+  color: var(--w-ink);
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--w-track);
+}
+
+.day-strength .dot {
+  background: var(--w-violet);
+}
+
+.day-mobility .dot {
+  background: var(--w-teal);
+}
+
+.day-balance .dot {
+  background: var(--w-blue);
+}
+
+.day-recovery .dot {
+  background: var(--w-teal-track);
+  box-shadow: inset 0 0 0 2px var(--w-teal);
+}
+
+.day-test .dot {
+  background: var(--w-amber);
+}
+
+.day-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ---- notes ---- */
+
+.note,
+.app-changes,
+.evidence,
+.result,
+.question {
+  padding: 12px 14px;
+  border-radius: var(--w-radius-item);
+  background: var(--w-card);
+}
+
+.note {
+  color: var(--w-focus);
+  background: var(--w-focus-bg);
+}
+
+.result {
+  font-weight: 600;
+}
+
+.warning {
+  padding: 12px 14px;
+  border-radius: var(--w-radius-item);
+  background: var(--w-focus-bg);
+  color: var(--w-focus);
+  font-weight: 700;
+}
+
+.steps {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 14px 14px 14px 34px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.flags {
+  padding: 12px 14px;
+  border-radius: var(--w-radius-item);
+  background: var(--w-card);
+}
+
+.flags summary {
+  min-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.flags ul,
+.flag-list {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--w-caption);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.flag-list {
+  padding: 14px 14px 14px 32px;
+  margin: 0;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+  color: var(--w-ink);
+}
+
+.flag-list .selected {
+  color: var(--w-focus);
+  font-weight: 700;
+}
+
+.tip {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.tip p {
+  color: var(--w-caption);
+}
+
+/* ---- call to action ---- */
+
+.cta {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.cta-line {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.cta-list {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--w-caption);
+  font-size: 14px;
+}
+
+/* The app's primary button. */
+.primary {
+  min-height: 52px;
+  border: 0;
+  border-radius: var(--w-radius-button);
+  background: var(--w-button);
+  color: var(--w-button-label);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.code {
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--w-caption);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  gap: 4px;
+  padding: 4px 4px 0;
+}
+
+footer p {
+  color: var(--w-unit);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--w-violet);
+  outline-offset: 2px;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .ex,
+  .clip,
+  .week,
+  .day,
+  .note,
+  .app-changes,
+  .evidence,
+  .result,
+  .question,
+  .warning,
+  .steps,
+  .flags,
+  .flag-list,
+  .tip,
+  .cta,
+  .primary {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+@media (max-width: 380px) {
+  .ex {
+    grid-template-columns: 76px 1fr;
+  }
+
+  .clip {
+    width: 76px;
+  }
+}

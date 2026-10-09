@@ -89,7 +89,7 @@ export const PAGE_UPDATED = {
   faq: '2026-10-01',
   about: '2026-10-03',
   support: '2026-10-01',
-  privacy: '2026-10-08',
+  privacy: '2026-10-09',
   terms: '2026-10-01',
 } as const;
 
