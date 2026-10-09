@@ -1,5 +1,5 @@
 /**
- * The two Android changes AppsFlyer's own config plugin does not make.
+ * The three Android changes AppsFlyer's own config plugin does not make.
  *
  * 1. **No advertising id.** The AppsFlyer Android SDK declares
  *    `com.google.android.gms.permission.AD_ID` in its library manifest, and the
@@ -17,8 +17,16 @@
  *    is where the AppsFlyer SDK looks for the link when the activity resumes.
  *    Without this a OneLink works from a cold start and silently does nothing
  *    from the background.
+ *
+ * 3. **`kotlin-stdlib` at the project's Kotlin.** `react-native-appsflyer` 7
+ *    compiles its module against `kotlin-stdlib` 2.4.10 unless the root
+ *    project sets `kotlin_stdlib_version`. The project builds with React
+ *    Native's Kotlin (2.1.20), whose compiler cannot read 2.4 metadata, and the
+ *    module then fails with "Unresolved reference 'mapOf'" (1.0.3 build 11 on
+ *    EAS). The AppsFlyer SDK itself only asks for 2.0.21, so the project's own
+ *    version satisfies everything.
  */
-const { withAndroidManifest, withMainActivity } = require('@expo/config-plugins');
+const { withAndroidManifest, withMainActivity, withProjectBuildGradle } = require('@expo/config-plugins');
 
 const AD_ID = 'com.google.android.gms.permission.AD_ID';
 
@@ -79,6 +87,26 @@ function withNewIntent(config) {
   });
 }
 
+const STDLIB_MARKER = '// with-appsflyer-android: kotlin_stdlib_version';
+
+function withProjectStdlib(config) {
+  return withProjectBuildGradle(config, (config) => {
+    if (config.modResults.language !== 'groovy') {
+      throw new Error('with-appsflyer-android: android/build.gradle is not Groovy; set ext.kotlin_stdlib_version by hand.');
+    }
+    if (!config.modResults.contents.includes(STDLIB_MARKER)) {
+      config.modResults.contents = [
+        config.modResults.contents.trimEnd(),
+        '',
+        STDLIB_MARKER,
+        "ext.kotlin_stdlib_version = rootProject.ext.has('kotlinVersion') ? rootProject.ext.get('kotlinVersion') : '2.1.20'",
+        '',
+      ].join('\n');
+    }
+    return config;
+  });
+}
+
 module.exports = function withAppsFlyerAndroid(config) {
-  return withNewIntent(withoutAdId(config));
+  return withProjectStdlib(withNewIntent(withoutAdId(config)));
 };
