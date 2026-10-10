@@ -1,5 +1,5 @@
 import type { Lang } from '@/lib/i18n';
-import { SITE_URL } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
 
 /**
  * Labelled anatomy illustrations, one file per language with the labels drawn
@@ -103,7 +103,7 @@ export function anatomySchema(
     height: h,
   };
   if (source.by === 'walkito') {
-    return { ...base, creator: walkito, creditText: 'Walkito', copyrightNotice: '© Walkito' };
+    return { ...base, creator: walkito, creditText: 'Walkito', copyrightNotice: '© Walkito', ...OWN_IMAGE_LICENSE };
   }
   return {
     ...base,

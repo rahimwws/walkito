@@ -227,3 +227,14 @@ export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_
  * held only in someone's shell history is a key nobody can re-submit with.
  */
 export const INDEXNOW_KEY = 'b12b80b67ebf6ee0111493fef69eb7de';
+
+/**
+ * Licence fields for every image Walkito made (exercise stills, the foot map,
+ * our own anatomy figures), for Google's image metadata: the terms say how
+ * they may be used, and support is where to ask to use one. Images from
+ * InjuryMap carry their own Creative Commons licence instead (lib/anatomy.ts).
+ */
+export const OWN_IMAGE_LICENSE = {
+  license: `${SITE_URL}/terms/`,
+  acquireLicensePage: `${SITE_URL}/support/`,
+} as const;
