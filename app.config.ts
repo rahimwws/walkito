@@ -6,6 +6,14 @@ import { ConfigContext, ExpoConfig } from 'expo/config';
 // pulled locally into .env.local by `eas env:pull`.
 const BUNDLE_ID = 'com.walkito.app';
 
+/**
+ * The ad networks allowed to sign SKAdNetwork installs of this app: every one
+ * AppsFlyer lists for its SKAN partners (`plugins/skadnetwork-ids.json`, with
+ * the source and the date it was fetched). A network missing from Info.plist
+ * gets no SKAN postback at all, so the list is the whole of it, not a pick.
+ */
+const SKADNETWORK_IDS: string[] = require('./plugins/skadnetwork-ids.json').ids;
+
 function getBundleId() {
   switch (process.env.APP_VARIANT) {
     case 'production':
@@ -136,6 +144,10 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     },
     ios: {
       ...config.ios,
+      infoPlist: {
+        ...config.ios?.infoPlist,
+        SKAdNetworkItems: SKADNETWORK_IDS.map((id) => ({ SKAdNetworkIdentifier: id })),
+      },
       bundleIdentifier: getBundleId(),
       icon: iosIcon ?? config.ios?.icon,
       // Sign in with Apple is an entitlement, not just a library. Without this

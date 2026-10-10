@@ -105,6 +105,13 @@ function appsflyerProblems(variant, config) {
   if (plist.NSAdvertisingAttributionReportEndpoint !== SKAN_ENDPOINT) {
     out.push(`${variant}: ios.infoPlist.NSAdvertisingAttributionReportEndpoint is not ${SKAN_ENDPOINT}`);
   }
+  // Every network in plugins/skadnetwork-ids.json, once: one missing gets no
+  // SKAN postback, and a duplicate is a sign the list was merged by hand.
+  const declared = (plist.SKAdNetworkItems ?? []).map((item) => item.SKAdNetworkIdentifier);
+  const expected = JSON.parse(readFileSync(new URL('../plugins/skadnetwork-ids.json', import.meta.url), 'utf8')).ids;
+  const missing = expected.filter((id) => !declared.includes(id));
+  if (missing.length > 0) out.push(`${variant}: SKAdNetworkItems lacks ${missing.length} id(s), e.g. ${missing[0]}`);
+  if (new Set(declared).size !== declared.length) out.push(`${variant}: SKAdNetworkItems has duplicates`);
   if (plist.NSUserTrackingUsageDescription != null) {
     out.push(`${variant}: NSUserTrackingUsageDescription is set, but the app never asks to track (no ATT)`);
   }
