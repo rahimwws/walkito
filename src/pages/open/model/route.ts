@@ -15,11 +15,13 @@ export type LinkTarget =
   | { to: 'library'; protocol: 'morning' }
   | { to: 'offer'; offering: string | null }
   | { to: 'settings' }
+  /** A plan code from ChatGPT or Claude (`intent.ts` routes every shape of it here). */
+  | { to: 'plan-code'; code: string }
   | { to: 'home' };
 
 const MINUTES = new Set(['3', '5', '10']);
 
-export function linkTarget(segments: readonly string[], params: { minutes?: string; offering?: string }): LinkTarget {
+export function linkTarget(segments: readonly string[], params: { minutes?: string; offering?: string; code?: string }): LinkTarget {
   const path = segments.filter((s) => s.length > 0).join('/');
   switch (path) {
     case 'today': {
@@ -38,6 +40,8 @@ export function linkTarget(segments: readonly string[], params: { minutes?: stri
       return { to: 'offer', offering: params.offering ?? null };
     case 'settings':
       return { to: 'settings' };
+    case 'plan-code':
+      return { to: 'plan-code', code: params.code ?? '' };
     default:
       return { to: 'home' };
   }

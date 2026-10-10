@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
+import { redeemedPlanCode } from '@/entities/plan-code';
 import { firstName, getIntake, useProfileName } from '@/entities/profile';
 import { planSettings } from '@/entities/program';
 import {
@@ -22,6 +23,7 @@ import {
   PACKAGES,
   PRINTED_PRICES as PRINTED,
   annualSavingPercent,
+  assistantSource,
   discountPercent,
   fetchShelf,
   grantDevAccess,
@@ -38,6 +40,7 @@ import { PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { formatPrice } from '@/shared/lib/money';
+import type { PlanArea } from '@/shared/lib/plan-code';
 import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -56,6 +59,15 @@ const DURATION: Readonly<Record<string, Key>> = {
   months: 'onboarding.duration.months',
   year: 'onboarding.duration.year',
   longer: 'onboarding.duration.longer',
+};
+
+/** The area a plan code from ChatGPT or Claude names, as the paywall says it. */
+const CODE_AREA: Readonly<Record<PlanArea, Key>> = {
+  heel_arch: 'aiCode.area.heelArch',
+  achilles: 'aiCode.area.achilles',
+  flat_feet: 'aiCode.area.flatFeet',
+  shin: 'aiCode.area.shin',
+  general_plus: 'aiCode.area.general',
 };
 
 /**
@@ -182,7 +194,14 @@ export function OfferPage() {
    */
   const invited = useReferral().discounted;
   const boosted = winback || invited;
-  const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
+  /**
+   * Somebody ChatGPT or Claude sent with a plan code (`acq_source` in
+   * RevenueCat) is sold from the `ai_assistant` offering. `fetchShelf` falls
+   * back to the standard offering when the dashboard has none, so until it
+   * exists they see the ordinary prices.
+   */
+  const [assistant] = useState(assistantSource);
+  const offeringId = boosted ? OFFERINGS.offer : assistant != null ? OFFERINGS.assistant : OFFERINGS.standard;
 
   /**
    * Which step is on screen: how the plan starts, how a day works, then the
@@ -227,6 +246,17 @@ export function OfferPage() {
     const duration = intake.painDuration != null ? DURATION[intake.painDuration] : undefined;
     if (duration != null) out.push(t(duration));
     return out;
+  })();
+
+  /**
+   * One line for somebody who arrived with a plan code from ChatGPT or Claude:
+   * the plan the assistant set up, in its own words. The area is a plan
+   * setting the assistant chose; like the strip, it stays on our paywall.
+   */
+  const codeLine = (() => {
+    const held = redeemedPlanCode();
+    if (held == null) return null;
+    return t('aiCode.paywallLine', { area: t(CODE_AREA[held.params.area]), minutes: held.params.minutes });
   })();
 
   /**
@@ -690,6 +720,7 @@ export function OfferPage() {
               <IntroPlan
                 name={profileName}
                 strip={strip}
+                planLine={codeLine}
                 minutes={settings.defaultMinutes}
                 daysPerWeek={settings.daysPerWeek}
                 checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}

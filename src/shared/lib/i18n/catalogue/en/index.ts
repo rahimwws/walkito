@@ -1,3 +1,4 @@
+import { AI_CODE_EN } from './ai-code';
 import { CORE_EN } from './core';
 import { EXERCISES_EN } from './exercises';
 import { HOME_EN } from './home';
@@ -42,4 +43,5 @@ export const en = {
   ...PLAYER_EN,
   ...TESTDAY_EN,
   ...UPDATE_EN,
+  ...AI_CODE_EN,
 };
