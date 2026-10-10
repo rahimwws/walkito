@@ -1,7 +1,6 @@
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
 import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
 import Delete02Icon from '@hugeicons/core-free-icons/Delete02Icon';
-import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
 import Mail01Icon from '@hugeicons/core-free-icons/Mail01Icon';
 import Settings02Icon from '@hugeicons/core-free-icons/Settings02Icon';
 import StarIcon from '@hugeicons/core-free-icons/StarIcon';
@@ -14,12 +13,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
-import { REFERRAL_DISCOUNT_PERCENT, referralsAvailable, useReferral } from '@/entities/referral';
 import { APP_STORE_REVIEW_URL, PLAY_STORE_URL, SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { DeleteAccountSheet } from './delete-account-sheet';
@@ -45,12 +42,10 @@ export function ProfilePage() {
 
   const name = useProfileName();
   const streak = useStreak();
-  const referral = useReferral();
   const email = useProfileEmail();
   /** Where "Rate Walkito" goes on this phone: the store that sold the app. */
   const rateUrl = Platform.OS === 'ios' ? APP_STORE_REVIEW_URL : PLAY_STORE_URL;
 
-  const [giftOpen, setGiftOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
 
   const greeting = firstName(name);
@@ -96,32 +91,6 @@ export function ProfilePage() {
           />
           <Stat label={t('profile.sessionsDone')} value={String(streak.total)} tint={meter.ink} />
         </View>
-
-        {referralsAvailable && (
-          <Section title={t('profile.sectionInvite')}>
-            <Row
-              icon={GiftIcon}
-              label={t('profile.referFriend')}
-              // The count is the reason to tap, so it is on the row rather than
-              // behind it. Zero is left blank: "0 invited" is a scoreboard of
-              // failure on a screen asking for a favour.
-              value={
-                referral.invites > 0
-                  ? t('profile.invitesJoined', { count: referral.invites })
-                  : undefined
-              }
-              // What an invite is worth, under the label: the friend's
-              // discount. It used to count the free weeks the owner had earned,
-              // which a subscriber never actually received — an App Store
-              // subscription cannot be lengthened from the device.
-              hint={t('profile.inviteHint', { percent: REFERRAL_DISCOUNT_PERCENT })}
-              onPress={() => {
-                Haptics.selectionAsync();
-                setGiftOpen(true);
-              }}
-            />
-          </Section>
-        )}
 
         <Section title={t('profile.sectionApp')}>
           <Row
@@ -193,7 +162,6 @@ export function ProfilePage() {
         </Section>
       </ScrollView>
 
-      <GiftSheet visible={giftOpen} onClose={() => setGiftOpen(false)} />
       <DeleteAccountSheet visible={deleteOpen} onClose={() => setDeleteOpen(false)} />
     </View>
   );

@@ -18,7 +18,6 @@ import {
   type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
-import { useReferral } from '@/entities/referral';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { usePaywall } from '@/shared/lib/paywall';
@@ -77,15 +76,13 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   // them while this screen is open, and re-deriving them on every render would
   // re-scan the whole log for nothing.
   const [summary] = useState<ProgramSummary>(() => programSummary());
-  const invited = useReferral().discounted;
 
   // Never the win-back offering: that belongs to somebody who walked away
   // from a first purchase, and quoting it to a customer who has paid and
   // stopped would teach them that waiting is cheaper than renewing. The invite
-  // price is different — it was earned, by sharing a code somebody used or by
-  // joining with one — and coming back is where a customer who has already
-  // paid finally gets to spend it.
-  const wanted = invited ? OFFERINGS.offer : OFFERINGS.standard;
+  // price used to be quoted here, unlocked by a code; App Review rejected that
+  // (Guideline 3.1.1), so renewing is the standard price.
+  const wanted = OFFERINGS.standard;
 
   const [shelf, setShelf] = useState<Shelf>({ offering: null, standard: null });
   /** Set only by an answer from the store — see the same flag on the paywall.

@@ -32,7 +32,6 @@ import { HeaderActions } from '@/shared/ui/header-actions';
 import { IntroReveal } from '@/shared/ui/splash';
 
 import { briefTokens } from '../model/brief';
-import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { kv } from '@/shared/lib/storage';
@@ -124,8 +123,6 @@ export function HomePage() {
   const t = useT();
   const dockHeight = useDockHeight();
   const program = useProgram();
-  /** The reward sheet, opened from the capsule in the header. */
-  const [giftOpen, setGiftOpen] = useState(false);
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
@@ -205,8 +202,6 @@ export function HomePage() {
             streak={streak.current}
             onStreakPress={() => setStreakOpen(true)}
             streakGlyph={<FireIcon size={22} color={accents[scheme].orange.fill} weight="fill" />}
-            gift
-            onGift={() => setGiftOpen(true)}
             swapProgress={program?.progress}
             centre={todayLines()}
             onProfile={() => router.push('/profile')}
@@ -319,8 +314,6 @@ export function HomePage() {
           }}
         />
       )}
-
-      <GiftSheet visible={giftOpen} onClose={() => setGiftOpen(false)} />
 
       <StreakSheet
         visible={streakOpen}

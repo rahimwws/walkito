@@ -24,7 +24,6 @@ import { useT, type Key } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useDockHeight } from '@/shared/ui/action-dock';
-import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
@@ -84,8 +83,6 @@ export function ProgressPage() {
   useSeedDemoTrigger();
   const t = useT();
 
-  /** The reward sheet, opened from the capsule in the header. */
-  const [giftOpen, setGiftOpen] = useState(false);
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const [rangeIndex, setRangeIndex] = useState(0);
@@ -130,8 +127,6 @@ export function ProgressPage() {
             streak={streak.current}
             onStreakPress={() => setStreakOpen(true)}
             streakGlyph={<FireIcon size={22} color={accents[scheme].orange.fill} weight="fill" />}
-            gift
-            onGift={() => setGiftOpen(true)}
             swapProgress={program?.progress}
             onProfile={() => router.push('/profile')}
           />
@@ -162,8 +157,6 @@ export function ProgressPage() {
         <IntroReveal order={5} style={styles.next}>
           <ConsistencyCard weeks={weeks} current={streak.current} longest={streak.longest} />
         </IntroReveal>
-
-        <GiftSheet visible={giftOpen} onClose={() => setGiftOpen(false)} />
 
         <StreakSheet
           visible={streakOpen}

@@ -33,7 +33,6 @@ import {
   type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
-import { REFERRAL_DISCOUNT_PERCENT, referralsAvailable, useReferral } from '@/entities/referral';
 import { PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
@@ -48,7 +47,6 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 import { introSeen, markIntroSeen } from '../model/intro';
-import { CodeSheet } from './code-sheet';
 import { IntroHow, IntroPlan, StepBar } from './offer-intro';
 
 /** The goal they picked, in the words onboarding offered it in. */
@@ -181,18 +179,16 @@ export function OfferPage() {
    * Apple has no notion of "the same product, cheaper" — a discount is a
    * different product — so the cheaper annual subscription is its own product
    * and the `offer` offering sells it. It is shown to somebody who dismissed the
-   * paywall and came back, who arrived from the win-back notification, or who
-   * has an invite. Never on a first view.
+   * paywall and came back, or who arrived from the win-back notification or
+   * the offer email. Never on a first view.
+   *
+   * Never because of a code. An invite code used to unlock this price, and App
+   * Review rejected 1.0.3 (35) for it (Guideline 3.1.1: a discount unlocked by
+   * a code typed into the app). A code is now only ever Apple's own offer code,
+   * redeemed in Apple's sheet ("Have a code?" below).
    */
   const winback = useBoost();
-  /**
-   * The invite price. Earned rather than offered — by redeeming a friend's
-   * code, or by having one's own code redeemed — so unlike the win-back it
-   * holds on every visit, and it is badged as what it is rather than as a
-   * one-time offer.
-   */
-  const invited = useReferral().discounted;
-  const boosted = winback || invited;
+  const boosted = winback;
   const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
@@ -220,8 +216,6 @@ export function OfferPage() {
 
   const profileName = firstName(useProfileName());
   const settings = planSettings();
-  /** "Have a code?" under the plans — the referral screen, folded in here. */
-  const [code, setCode] = useState(false);
 
   /**
    * Their own numbers across the top of the first step: where it hurts, this
@@ -260,24 +254,23 @@ export function OfferPage() {
    * paywall the user sees. A beat after mount, so the screen has arrived — and,
    * at the end of onboarding, the founders' note has gone — before anything
    * covers it. Once per view.
+   *
+   * Registered as the paywall opens, on its first step rather than on the
+   * plans, so Superwall counts everyone who saw it and not only those who
+   * read on to the prices. Every campaign holds this screen as a 100% holdout
+   * (see AGENTS.md), so nothing covers it; a dashboard paywall given traffic
+   * again would stand in from the first step.
    */
   const paywall = usePaywall();
-  const registered = useRef(false);
   useEffect(() => {
-    // On the plans, not before: the two screens ahead of them are this
-    // paywall's own, and a dashboard paywall stands in for the plans.
-    if (step !== 3 || registered.current) return;
     // A simulator in development cannot buy through Superwall (no StoreKit
     // products), so our own paywall stays up and its button carries on.
     if (__DEV__ && onSimulator) return;
-    const placement = invited ? 'paywall_invite' : winback ? 'paywall_comeback' : 'paywall_first';
-    const timer = setTimeout(() => {
-      registered.current = true;
-      paywall.register(placement, { offering: offeringId });
-    }, 600);
+    const placement = winback ? 'paywall_comeback' : 'paywall_first';
+    const timer = setTimeout(() => paywall.register(placement, { offering: offeringId }), 600);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step]);
+  }, []);
 
   /**
    * The offering being sold, and the standard one to strike through against.
@@ -492,24 +485,11 @@ export function OfferPage() {
       : null;
   const discounted = offerPct != null;
 
-  useEffect(() => {
-    if (!__DEV__ || !invited || offerPct == null || offerPct === REFERRAL_DISCOUNT_PERCENT) return;
-    // The invite copy — the code sheet, the share message, onboarding — prints
-    // REFERRAL_DISCOUNT_PERCENT, and the friend it was sent to lands here.
-    // When the store's two annual prices say something else, the promise and
-    // the price disagree.
-    console.error(
-      `[paywall] The invite price is ${offerPct}% off in the store, but ` +
-        `REFERRAL_DISCOUNT_PERCENT is ${REFERRAL_DISCOUNT_PERCENT}. Change the discounted annual ` +
-        'price in App Store Connect or the constant in entities/referral/model/referral.ts.',
-    );
-  }, [invited, offerPct]);
-
   /**
    * Whether this view presents itself as the offer: the badge and the headline
    * about a price.
    *
-   * While the store is still answering, an invited or returning visitor is
+   * While the store is still answering, a returning visitor is
    * assumed to be getting the offer, so the screen does not open plain and then
    * change its mind. Once it has answered, only a real discount keeps it.
    */
@@ -754,7 +734,7 @@ export function OfferPage() {
                 entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
                 style={styles.badge}>
                 <Text style={styles.badgeText}>
-                  {invited ? t('offer.inviteBadge') : t('offer.comebackBadge')}
+                  {t('offer.comebackBadge')}
                 </Text>
               </Animated.View>
             )}
@@ -762,11 +742,7 @@ export function OfferPage() {
             <Animated.Text
               entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
               style={[offerShown ? styles.headline : styles.title, { color: colors.foreground }]}>
-              {!offerShown
-                ? t('offer.headline')
-                : invited
-                  ? t('offer.headlineInvite')
-                  : t('offer.headlineComeback')}
+              {!offerShown ? t('offer.headline') : t('offer.headlineComeback')}
             </Animated.Text>
             <Animated.Text
               entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
@@ -923,17 +899,19 @@ export function OfferPage() {
           onPress={start}
         />
         <LegalLinks onRestore={restore} disabled={busy} />
-        {/* The referral screen used to stand in front of the paywall and
-            send people off looking for a discount. Now it is a line here,
-            for somebody who already has a code. Not on an invited view: the
-            code has been used. */}
-        {referralsAvailable && !invited && (
+        {/* For somebody holding an App Store offer code: Apple's own sheet,
+            which redeems it in the store, and the subscription it starts
+            arrives through the usual purchase listener. Never a field of
+            ours: a code typed into the app that unlocks or discounts anything
+            is what App Review rejected 1.0.3 (35) for (Guideline 3.1.1).
+            Only where the store has such a sheet (iOS). */}
+        {purchases.canRedeemCode && (
           <Pressable
             accessibilityRole="button"
             onPress={() => {
               Haptics.selectionAsync();
               track('paywall_code_opened');
-              setCode(true);
+              void purchases.redeemCode();
             }}
             hitSlop={8}
             style={({ pressed }) => [styles.codeLink, pressed && { opacity: 0.6 }]}>
@@ -941,8 +919,6 @@ export function OfferPage() {
           </Pressable>
         )}
       </View>
-
-      <CodeSheet visible={code} onClose={() => setCode(false)} />
 
       {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
