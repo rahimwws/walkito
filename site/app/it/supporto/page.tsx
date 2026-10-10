@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Supporto',
   description:
-    'Aiuto con Walkito: notifiche, Apple Salute, acquisti, rimborsi e come eliminare il tuo account. Scrivici e ti risponde una persona.',
+    'Aiuto con Walkito: notifiche, Apple Salute e Health Connect, acquisti, rimborsi e come eliminare il tuo account. Scrivici e ti risponde una persona.',
   alternates: alternatesFor('support', 'it'),
 };
 
@@ -42,11 +42,11 @@ export default function SupportoIt() {
 
         <h2>Accesso, e un telefono nuovo</h2>
         <p>
-          La configurazione ti fa accedere con Apple e serve una connessione una
-          volta. Dopo, l’uso quotidiano funziona offline, e quello che registri
+          La configurazione ti fa accedere con Apple su iPhone o con Google su
+          Android, e serve una connessione una volta. Dopo, l’uso quotidiano funziona offline, e quello che registri
           viene copiato nel tuo account ogni volta che c’è connessione. Su un
           telefono nuovo o dopo aver reinstallato l’app, accedi con lo stesso
-          ID Apple e il tuo piano, i check-in, i risultati dei test e le
+          ID Apple o lo stesso account Google e il tuo piano, i check-in, i risultati dei test e le
           sessioni tornano.
         </p>
 
@@ -79,6 +79,15 @@ export default function SupportoIt() {
           ne avevano bisogno semplicemente si fermano. Il piano continua a
           funzionare.
         </p>
+        <p>
+          Su Android, Walkito legge da Health Connect passi, sessioni di
+          esercizio, distanza e sonno, e vi scrive le sessioni che completi come
+          sessioni di esercizio. Velocità e asimmetria della camminata ci sono
+          solo su iPhone. Anche questi dati restano sul tuo telefono e non
+          vengono mai caricati. Cambia quello che Walkito può vedere nell’app
+          Health Connect, o nelle Impostazioni di Android in Health Connect →
+          Autorizzazioni app → Walkito.
+        </p>
 
         <h2>Il dolore, e quando fermarsi</h2>
         <p>
@@ -89,26 +98,36 @@ export default function SupportoIt() {
 
         <h2>Acquisti</h2>
         <p>
-          Walkito si paga con un abbonamento tramite l’App Store, annuale o
-          settimanale. Entrambi si rinnovano automaticamente, e l’App Store ti
-          mostra il prezzo nella tua valuta prima dell’acquisto.
+          Walkito si paga con un abbonamento, annuale o settimanale, tramite
+          l’App Store su iPhone o Google Play su Android. Entrambi si rinnovano
+          automaticamente, e lo store ti mostra il prezzo nella tua valuta prima
+          dell’acquisto.
         </p>
         <ul>
           <li>
-            <b>Gestisci o annulla</b> l’abbonamento in Impostazioni → [il tuo
-            nome] → Abbonamenti. Disattiva il rinnovo almeno 24 ore prima della
-            fine del periodo e non ti verrà addebitato altro. Mantieni l’accesso
-            fino alla fine del periodo che hai pagato.
+            <b>Gestisci o annulla</b> l’abbonamento su iPhone in Impostazioni →
+            [il tuo nome] → Abbonamenti. Disattiva il rinnovo almeno 24 ore
+            prima della fine del periodo e non ti verrà addebitato altro. Su
+            Android, apri l’app Google Play, tocca l’icona del profilo, poi
+            Pagamenti e abbonamenti → Abbonamenti → Walkito → Annulla
+            abbonamento. In entrambi i casi mantieni l’accesso fino alla fine
+            del periodo che hai pagato.
           </li>
           <li>
-            <b>I rimborsi</b> li gestisce Apple. Usa la pagina{' '}
+            <b>I rimborsi</b> li gestisce lo store in cui hai pagato. Su iPhone,
+            usa la pagina{' '}
             <a href="https://reportaproblem.apple.com">Segnala un problema</a> di
-            Apple. Non possiamo gestire rimborsi per conto di Apple.
+            Apple. Su Android, richiedilo dalla tua{' '}
+            <a href="https://play.google.com/store/account/orderhistory">cronologia ordini di Google Play</a>.
+            Non possiamo gestire rimborsi per conto di Apple o di Google.
           </li>
           <li>
-            <b>Telefono nuovo?</b> Accedi con lo stesso ID Apple e tocca Restore
-            Purchases (Ripristina acquisti) nell’app. Il tuo piano torna con il
-            tuo account.
+            <b>Telefono nuovo?</b> Su iPhone, accedi con lo stesso ID Apple e
+            tocca Restore Purchases (Ripristina acquisti) nell’app. Su Android,
+            usa lo stesso account Google in Google Play e l’abbonamento torna.
+            Il tuo piano torna con il tuo account. Un abbonamento acquistato su
+            iPhone non passa ad Android, né il contrario, perché Apple e Google
+            fatturano separatamente.
           </li>
         </ul>
 

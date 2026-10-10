@@ -1,6 +1,6 @@
 # Walkito: full text
 
-> An exercise plan on iPhone for runners with heel pain (often linked to
+> An exercise plan on iPhone and Android for runners with heel pain (often linked to
 > plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
 > one week at a time around a goal that can be measured, adapts each day to
 > the morning's pain, and checks progress with physical tests. It has no fixed
@@ -31,7 +31,7 @@ should be seen by a clinician.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
-- Available on iPhone now, on the App Store (https://apps.apple.com/app/id6813076846); Android is planned. The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
+- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
 - Contact: hello@walkito.site
 
 ## The evidence
@@ -1996,7 +1996,7 @@ It can. Standing keeps the plantar fascia and calf under sustained load without 
 
 ## Best app for plantar fasciitis: a buyer's guide for 2026
 
-Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-04
+Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-09
 
 This page compares seven apps that include exercises for plantar fasciitis, flat feet or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.
 
@@ -2038,7 +2038,6 @@ Where Exakt is stronger than Walkito:
 
 - More injury types covered (15+ versus heel pain, flat feet and shins).
 - A full return-to-running program.
-- Android availability.
 - EU medical device certification.
 - An established user base with a 4.8 rating across 125 iOS reviews.
 
@@ -2108,7 +2107,7 @@ If you want a free reference for what stretches to try, check the store listing 
 
 ### Walkito: what it does and what it does not
 
-Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026. It is new, has no ratings yet, and is iOS only.
+Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026, and on Google Play later in October 2026. It is new and has no ratings yet.
 
 What it does:
 
@@ -2117,14 +2116,13 @@ What it does:
 - Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right.
 - Sessions are 3, 5 or 10 minutes.
 - Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial.
-- It connects to Apple Health for steps, sleep and walking data, which stay on your phone.
+- On iPhone it reads steps, sleep and walking data from Apple Health, which stay on your phone. On Android it reads steps, exercise sessions, distance and sleep from Health Connect.
 
 What it does not:
 
 - It does not diagnose your pain.
 - It is not a medical device.
 - It has no clinician on the other end.
-- It is not available on Android.
 
 It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.
 
@@ -2169,7 +2167,7 @@ The 2023 clinical guideline for heel pain gives plantar fascia and calf stretchi
 
 #### Is Exakt Health better than Walkito for plantar fasciitis?
 
-Exakt Health covers more conditions, including 15+ running injuries and full run training plans. It is on both iOS and Android and is certified as a medical device in the EU. Walkito focuses specifically on heel and foot pain with daily pain-based adaptation and 14-day progress tests. Exakt is the stronger choice for runners who need rehab plus a running plan. Walkito is narrower but adjusts each session to your morning.
+Exakt Health covers more conditions, including 15+ running injuries and full run training plans. It is certified as a medical device in the EU. Walkito focuses specifically on heel and foot pain with daily pain-based adaptation and 14-day progress tests. Exakt is the stronger choice for runners who need rehab plus a running plan. Walkito is narrower but adjusts each session to your morning. Both are on iOS and Android.
 
 #### Can an app replace seeing a physical therapist for plantar fasciitis?
 
@@ -2185,7 +2183,7 @@ Because it would not be honest. Walkito is new, has no user ratings yet, covers 
 
 #### Do any of these apps work on Android?
 
-Exakt Health and Hinge Health are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Walkito, Prehab, PlantarCare and Arch are currently iOS only. If you use Android, Exakt Health is the most feature-complete option for foot pain.
+Exakt Health, Hinge Health and Walkito are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Prehab, PlantarCare and Arch are currently iOS only. On Android, Exakt Health covers the most conditions, and Walkito is the narrower option built around heel pain and flat feet.
 
 #### Do you need an app to do plantar fasciitis exercises?
 
@@ -2197,19 +2195,19 @@ Most plantar fasciitis exercise programs, including the ones graded highest in t
 
 ## Walkito vs Exakt Health: which one fits you?
 
-Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-04
+Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-09
 
 Walkito and Exakt Health both offer exercise-based plans for plantar fasciitis, but they are built for different people. Exakt is a runner's app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, flat feet and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.
 
 - Exakt Health covers 15+ running injuries and includes running training plans from 5K to marathon. Walkito covers heel pain, flat feet and shin pain only.
-- Exakt is on both iOS and Android. Walkito is iOS only as of October 2026.
+- Both apps are on iOS and Android. Walkito arrived on Google Play in October 2026.
 - Exakt Health is certified as a medical device in the EU. Walkito is not a medical device.
 - Walkito adjusts each session from a morning pain check-in and tests left-right asymmetry every 14 days. Exakt adapts its plan from end-of-session feedback.
 - Exakt costs $19.99/month or $59.99 for six months. Walkito costs $44.99/year or $7.99/week.
 
 ### Side-by-side comparison
 
-Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store listing, walkito.site and the app's own source code.
+Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app's own source code.
 
 ### Who is Exakt Health built for?
 
@@ -2235,11 +2233,11 @@ It is also built for people on their feet all day: nurses, retail workers, wareh
 
 The app is narrower than Exakt. It does not cover knee injuries, hamstring strains or running plans. What it does differently is **adjust each day's session from a morning pain check-in** rather than end-of-session feedback.
 
-A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps) turns the next strength session into a lighter recovery one.
+A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps on iPhone or Health Connect on Android) turns the next strength session into a lighter recovery one.
 
 Walkito tests progress every 14 days with calf raises, an arch hold and single-leg balance, and compares your left side with your right. That left-right comparison is something most apps in this space do not track.
 
-Walkito was released on October 2, 2026. It is new, has no user ratings yet, and is iOS only. It does not have the track record or breadth that Exakt has built since 2021.
+Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has no user ratings yet. It does not have the track record or breadth that Exakt has built since 2021.
 
 ### How does each app build your plan?
 
@@ -2282,7 +2280,7 @@ If you need only heel or foot pain exercises, **Walkito is significantly cheaper
 
 ### Platforms and languages
 
-Exakt Health is on both iOS and Android. If you use an Android phone, this is the deciding factor by itself since Walkito is iOS only.
+Both apps are on iOS and Android, so the platform no longer decides between them. On iPhone, Walkito reads Apple Health. On Android it reads Health Connect (steps, exercise sessions, distance and sleep); walking asymmetry and walking speed are read on iPhone only.
 
 Exakt supports English, French, German and Spanish. Walkito supports English, Russian and Spanish. The overlap is English and Spanish. If you need French or German, Exakt is the only option. If you need Russian, Walkito is the only option.
 
@@ -2322,7 +2320,6 @@ Pick Exakt Health if any of the following is true:
 
 - You are a runner recovering from a running injury and want a structured return-to-running plan.
 - Your injury is not plantar fasciitis or flat feet. Exakt covers 15+ conditions; Walkito covers three.
-- You use an Android phone.
 - You want a 7-day free trial to test the app before paying.
 - EU medical device certification matters to you.
 - You need the app in French or German.
@@ -2355,7 +2352,7 @@ If Walkito sounds like the right fit for your situation, here is how it works. Y
 
 #### Is Exakt Health better than Walkito?
 
-It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is on both iOS and Android and is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.
+It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. Both are on iOS and Android. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.
 
 #### Is Walkito cheaper than Exakt Health?
 
@@ -2367,7 +2364,7 @@ Yes. Exakt Health has a specific plantar fasciitis rehab plan, along with plans 
 
 #### Can I use Walkito on Android?
 
-Not yet. Walkito is iOS only as of October 2026. Android is planned but no release date has been announced. If you use Android, Exakt Health is available on Google Play with a plantar fasciitis rehab plan, and it works on both Android and iOS today.
+Yes. Walkito has been on Google Play since October 2026, as well as on the App Store for iPhone. On Android it reads Health Connect (steps, exercise sessions, distance and sleep) where the iPhone reads Apple Health; walking asymmetry and walking speed are iPhone only. Exakt Health is also on both Android and iOS.
 
 #### Is Exakt Health a medical device?
 
@@ -9713,7 +9710,7 @@ Walkito’s [privacy policy](https://walkito.site/privacy/) explains what Walkit
 
 ### Is Walkito available on Android?
 
-Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.
+Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.
 
 ### Do I need an Apple Watch?
 
@@ -9825,19 +9822,19 @@ Yes, Walkito works offline after setup. Setup needs a connection once, to sign y
 
 ### What happens to my plan if I get a new phone?
 
-Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back, sign in with the same Apple ID and tap Restore Purchases in Walkito. Apple Health readings are not part of that copy, because they stay on the phone.
+Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back. A subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.
 
 ### How do I delete my Walkito account and data?
 
-Delete your account in Walkito under Profile, then Delete account. That removes your account from Walkito’s server with everything saved to it, and clears the phone. It cannot be undone. Deleting only the app leaves your account in place. Neither one cancels a subscription, which only Apple can do. You can also write to hello@walkito.site.
+Delete your account in Walkito under Profile, then Delete account. That removes your account from Walkito’s server with everything saved to it, and clears the phone. It cannot be undone. Deleting only the app leaves your account in place. Neither one cancels a subscription, which only Apple or Google can do. You can also write to hello@walkito.site.
 
 ### How much does Walkito cost?
 
-Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the App Store shows is the one that applies.
+Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the store shows is the one that applies.
 
 ### How do I cancel my Walkito subscription?
 
-Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. Refunds are handled by Apple.
+Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. On Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period. Deleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.
 
 ## Other languages
 

@@ -16,7 +16,7 @@ export const BEST_APP_FR: Guide = {
   lang: 'fr',
   page: 'bestApp',
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-09',
   title: 'Meilleure app pour la fasciite plantaire en 2026',
   description:
     'Meilleure application pour la fasciite plantaire en 2026\u00A0: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch et Walkito comparées (prix, plateformes).',
@@ -106,7 +106,7 @@ export const BEST_APP_FR: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS. 44,99\u00A0$/an ou 7,99\u00A0$/semaine',
+            'iOS, Android. 44,99\u00A0$/an ou 7,99\u00A0$/semaine',
             'Douleur au talon, pieds plats, station debout prolongée, coureurs',
             'Le bilan du matin ajuste chaque séance',
             'Pas encore notée (nouvelle, oct. 2026)',
@@ -127,7 +127,6 @@ export const BEST_APP_FR: Guide = {
           list: [
             'Plus de types de blessures couverts (plus de 15, contre la douleur au talon, les pieds plats et les tibias).',
             'Un programme complet de reprise de la course.',
-            'La disponibilité sur Android.',
             'La certification de dispositif médical dans l’UE.',
             'Une base d’utilisateurs établie avec une note de 4,8 sur 125\u00A0avis iOS.',
           ],
@@ -204,7 +203,7 @@ export const BEST_APP_FR: Guide = {
     {
       h2: 'Walkito\u00A0: ce qu’elle fait et ce qu’elle ne fait pas',
       paragraphs: [
-        'Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes et n’existe que sur iOS.',
+        'Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2\u00A0octobre 2026, puis sur Google Play. Elle est nouvelle et n’a pas encore de notes.',
         'Ce qu’elle fait\u00A0:',
         {
           list: [
@@ -213,7 +212,7 @@ export const BEST_APP_FR: Guide = {
             'Des tests tous les 14\u00A0jours mesurent les montées sur pointes, le maintien de la voûte et l’équilibre sur une jambe, et comparent la gauche et la droite.',
             'Les séances durent 3, 5 ou 10\u00A0minutes.',
             'Les exercices suivent la recommandation de 2023 sur la douleur au talon et l’essai de Rathleff 2015.',
-            'Elle se connecte à Apple Santé pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone.',
+            'Elle se connecte à Apple Santé sur iPhone ou à Health Connect sur Android pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone. L’asymétrie et la vitesse de marche ne sont disponibles que sur iPhone.',
           ],
         },
         'Ce qu’elle ne fait pas\u00A0:',
@@ -222,7 +221,6 @@ export const BEST_APP_FR: Guide = {
             'Elle ne diagnostique pas votre douleur.',
             'Ce n’est pas un dispositif médical.',
             'Il n’y a pas de professionnel de santé de l’autre côté.',
-            'Elle n’est pas disponible sur Android.',
           ],
         },
         'Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15\u00A0types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.',
@@ -273,7 +271,7 @@ export const BEST_APP_FR: Guide = {
     },
     {
       q: 'Ces applications marchent-elles sur Android\u00A0?',
-      a: 'Exakt Health et Hinge Health sont sur iOS et Android. «\u00A0Plantar Fasciitis Exercises\u00A0» est aussi sur les deux, mais affiche des achats intégrés sur chaque store. Walkito, Prehab, PlantarCare et Arch ne sont pour l’instant que sur iOS. Si vous êtes sur Android, Exakt Health est l’option la plus complète pour les douleurs de pied.',
+      a: 'Exakt Health, Hinge Health et Walkito sont sur iOS et Android. «\u00A0Plantar Fasciitis Exercises\u00A0» est aussi sur les deux, mais affiche des achats intégrés sur chaque store. Prehab, PlantarCare et Arch ne sont pour l’instant que sur iOS. Sur Android, Exakt Health couvre le plus de problèmes, et Walkito est l’option ciblée sur la douleur au talon et au pied.',
     },
     {
       q: 'Faut-il une application pour faire les exercices de la fasciite plantaire\u00A0?',
@@ -305,7 +303,7 @@ export const BEST_APP_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Les exercices suivent la recommandation clinique de 2023 sur la douleur au talon. Le plan n’a pas de date de fin fixe\u00A0: quand vous atteignez un objectif, il passe en entretien et le suivant prend sa place. Walkito est un programme d’exercices, pas un diagnostic ni un substitut à un professionnel de santé.',
     ],
-    cta: 'Essayez Walkito sur l’App Store.',
+    cta: 'Essayez Walkito sur iPhone ou Android.',
   },
   crumb: 'Meilleure app fasciite plantaire',
   campaign: 'compare-best-app-fr',

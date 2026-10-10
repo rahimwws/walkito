@@ -130,15 +130,11 @@ export function storeHref(campaign: string): string | null {
 }
 
 /**
- * The Google Play listing, null until the Android build is live in production.
- *
- * The Android app (`com.walkito.app`) was submitted to Play review on
- * 30 September 2026 with managed publishing on, so the listing 404s until it
- * is published. The day it is, set this and every app call-out and badge on
- * the site gains a Google Play link next to the App Store one. A link to a
- * listing that 404s would be worse than no link.
+ * The Google Play listing (`com.walkito.app`), live since 9 October 2026. Every
+ * app call-out and badge on the site shows it next to the App Store one, and
+ * an Android phone is sent here instead of to the App Store.
  */
-export const PLAY_STORE_URL: string | null = null;
+export const PLAY_STORE_URL: string | null = 'https://play.google.com/store/apps/details?id=com.walkito.app';
 
 /** The Play link for one placement, tagged so Play Console's acquisition
  * report can tell placements apart (`utm_source=walkito.site`). */
@@ -214,8 +210,9 @@ export const LINKEDIN_URL = 'https://www.linkedin.com/company/walkito-app';
 export const CRUNCHBASE_URL = 'https://www.crunchbase.com/organization/walkito';
 export const WIKIDATA_URL = 'https://www.wikidata.org/wiki/Q141670731';
 export const PINTEREST_URL = 'https://www.pinterest.com/walkitoapp/';
+export const GOOGLE_SITE_URL = 'https://sites.google.com/view/walkito';
 
-export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, WIKIDATA_URL, PINTEREST_URL, STRAVA_CLUB_URL].filter(
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, WIKIDATA_URL, PINTEREST_URL, STRAVA_CLUB_URL, GOOGLE_SITE_URL, PLAY_STORE_URL].filter(
   (url): url is string => url != null && url !== '',
 );
 
@@ -231,3 +228,14 @@ export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_
  * held only in someone's shell history is a key nobody can re-submit with.
  */
 export const INDEXNOW_KEY = 'b12b80b67ebf6ee0111493fef69eb7de';
+
+/**
+ * Licence fields for every image Walkito made (exercise stills, the foot map,
+ * our own anatomy figures), for Google's image metadata: the terms say how
+ * they may be used, and support is where to ask to use one. Images from
+ * InjuryMap carry their own Creative Commons licence instead (lib/anatomy.ts).
+ */
+export const OWN_IMAGE_LICENSE = {
+  license: `${SITE_URL}/terms/`,
+  acquireLicensePage: `${SITE_URL}/support/`,
+} as const;

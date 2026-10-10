@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Suporte',
   description:
-    'Ajuda com o Walkito: notificações, app Saúde, compras, reembolsos e como excluir sua conta. Escreva para nós e uma pessoa responde.',
+    'Ajuda com o Walkito: notificações, app Saúde e Health Connect, compras, reembolsos e como excluir sua conta. Escreva para nós e uma pessoa responde.',
   alternates: alternatesFor('support', 'pt'),
 };
 
@@ -42,11 +42,11 @@ export default function SuportePt() {
 
         <h2>Login, e um celular novo</h2>
         <p>
-          Na configuração você entra com a Apple, e para isso precisa de
-          conexão uma vez. Depois, o uso diário funciona sem internet, e o que
+          Na configuração você entra com a Apple no iPhone ou com o Google no
+          Android, e para isso precisa de conexão uma vez. Depois, o uso diário funciona sem internet, e o que
           você registra é copiado para a sua conta sempre que houver conexão.
           Em um celular novo ou depois de reinstalar, entre com o mesmo ID Apple
-          e o seu plano, os seus registros, os resultados dos testes e as
+          ou a mesma Conta do Google e o seu plano, os seus registros, os resultados dos testes e as
           sessões voltam.
         </p>
 
@@ -79,6 +79,15 @@ export default function SuportePt() {
           partes que usavam esses dados simplesmente deixam de aparecer. O plano
           continua funcionando.
         </p>
+        <p>
+          No Android, o Walkito lê do Health Connect os passos, as sessões de
+          exercício, a distância e o sono, e grava lá as sessões que você
+          termina como sessões de exercício. A velocidade de caminhada e a
+          assimetria ao caminhar existem só no iPhone. Esses dados também ficam
+          no seu celular e nunca são enviados. Mude o que o Walkito pode ver no
+          app Health Connect, ou nas Configurações do Android em Health Connect
+          → Permissões de apps → Walkito.
+        </p>
 
         <h2>A dor, e quando parar</h2>
         <p>
@@ -89,26 +98,36 @@ export default function SuportePt() {
 
         <h2>Compras</h2>
         <p>
-          O Walkito é pago com uma assinatura pela App Store, anual ou semanal.
-          As duas são renovadas automaticamente, e a App Store mostra o preço na
-          sua moeda antes de você comprar.
+          O Walkito é pago com uma assinatura, anual ou semanal, pela App Store
+          no iPhone ou pelo Google Play no Android. As duas são renovadas
+          automaticamente, e a loja mostra o preço na sua moeda antes de você
+          comprar.
         </p>
         <ul>
           <li>
-            <b>Gerencie ou cancele</b> a sua assinatura em Ajustes → [seu nome]
-            → Assinaturas. Se você desativar a renovação pelo menos 24 horas
-            antes do fim do período, não será cobrado de novo. Você mantém o
-            acesso até o fim do período que já pagou.
+            <b>Gerencie ou cancele</b> a sua assinatura no iPhone em Ajustes →
+            [seu nome] → Assinaturas. Se você desativar a renovação pelo menos
+            24 horas antes do fim do período, não será cobrado de novo. No
+            Android, abra o app Google Play, toque no ícone do seu perfil e
+            depois em Pagamentos e assinaturas → Assinaturas → Walkito →
+            Cancelar assinatura. Nos dois casos você mantém o acesso até o fim
+            do período que já pagou.
           </li>
           <li>
-            <b>Reembolsos</b> são feitos pela Apple. Use a página{' '}
+            <b>Reembolsos</b> são feitos pela loja em que você pagou. No iPhone,
+            use a página{' '}
             <a href="https://reportaproblem.apple.com">Relatar um Problema</a>{' '}
-            da Apple. Não podemos processar reembolsos em nome da Apple.
+            da Apple. No Android, peça pelo seu{' '}
+            <a href="https://play.google.com/store/account/orderhistory">histórico de pedidos do Google Play</a>.
+            Não podemos processar reembolsos em nome da Apple ou do Google.
           </li>
           <li>
-            <b>Celular novo?</b> Entre com o mesmo ID Apple e toque em Restore
-            purchases (Restaurar compras) no app. O seu plano volta com a sua
-            conta.
+            <b>Celular novo?</b> No iPhone, entre com o mesmo ID Apple e toque
+            em Restore purchases (Restaurar compras) no app. No Android, use a
+            mesma conta Google no Google Play e a assinatura volta. O seu plano
+            volta com a sua conta. Uma assinatura comprada no iPhone não passa
+            para o Android, nem o contrário, porque a Apple e o Google cobram
+            separadamente.
           </li>
         </ul>
 

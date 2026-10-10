@@ -49,7 +49,7 @@ export default function TerminiIt() {
       <Prose className="shell prose">
         <h1>Termini di utilizzo</h1>
 
-        <p className="updated">Ultimo aggiornamento: 1 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: 9 ottobre 2026</p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/terms/">versione in inglese</a>, vale la versione in
@@ -101,10 +101,11 @@ export default function TerminiIt() {
 
         <h2>Il tuo account</h2>
         <p>
-          Quando configuri Walkito accedi con Apple, e quell’account è dove viene
+          Quando configuri Walkito accedi con Apple su iPhone o con Google su
+          Android, e quell’account è dove viene
           salvato il tuo piano. L’accesso con email e password funziona solo per
           account creati da noi; non ci si può registrare con l’email. Tieni al
-          sicuro il tuo telefono e il tuo ID Apple, perché chiunque li usi può
+          sicuro il tuo telefono e il tuo ID Apple o account Google, perché chiunque li usi può
           usare il tuo account.
         </p>
         <p>
@@ -112,7 +113,8 @@ export default function TerminiIt() {
           sessioni sono salvati sul tuo telefono e copiati nel tuo account.
           Accedi con lo stesso account su un telefono nuovo o dopo una
           reinstallazione e tornano. Gli acquisti tornano con Restore Purchases
-          (Ripristina acquisti) sullo stesso ID Apple.
+          (Ripristina acquisti) sullo stesso ID Apple su iPhone, o con lo stesso
+          account Google in Google Play su Android.
         </p>
 
         <h2>La tua licenza</h2>
@@ -132,8 +134,9 @@ export default function TerminiIt() {
 
         <h2>Pagamenti</h2>
         <p>
-          Walkito si paga tramite l’App Store. Apple riceve il pagamento,
-          conserva la ricevuta e mostra le opzioni, il prezzo e la durata prima
+          Walkito si paga tramite l’App Store su iPhone, gestito da Apple, o
+          Google Play su Android, gestito da Google LLC. Lo store riceve il
+          pagamento, conserva la ricevuta e mostra le opzioni, il prezzo e la durata prima
           dell’acquisto. Vale quel prezzo, non una cifra indicata altrove. Oggi
           ci sono due abbonamenti, ed entrambi si rinnovano automaticamente:
         </p>
@@ -150,12 +153,18 @@ export default function TerminiIt() {
         <ul>
           <li>
             Un abbonamento si rinnova automaticamente alla fine di ogni periodo, e
-            l’importo viene addebitato sul tuo ID Apple, a meno che tu non
+            l’importo viene addebitato sul tuo ID Apple o sul tuo account Google, a meno che tu non
             disattivi il rinnovo almeno 24 ore prima della fine del periodo.
           </li>
           <li>
-            Gestiscilo o annullalo in <b>Impostazioni → [il tuo nome] →
-            Abbonamenti</b>. Annullare ferma il rinnovo successivo; mantieni
+            Gestiscilo o annullalo su iPhone in{' '}
+            <b>Impostazioni → [il tuo nome] → Abbonamenti</b>, o su Android
+            nell’app Google Play, in{' '}
+            <b>
+              icona del profilo → Pagamenti e abbonamenti → Abbonamenti → Walkito
+              → Annulla abbonamento
+            </b>
+            . Annullare ferma il rinnovo successivo; mantieni
             l’accesso fino alla fine del periodo che hai pagato.
           </li>
           <li>
@@ -165,15 +174,19 @@ export default function TerminiIt() {
           </li>
           <li>
             Eliminare l’app o il tuo account non annulla un abbonamento. Può
-            farlo solo Apple, dalla schermata indicata sopra.
+            farlo solo lo store, Apple o Google, dalle schermate indicate sopra.
           </li>
         </ul>
 
         <h3>Rimborsi</h3>
         <p>
-          I rimborsi sono gestiti solo da Apple. Usa{' '}
+          I rimborsi sono gestiti solo dallo store in cui hai pagato, secondo la
+          sua politica. Per l’App Store, usa{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          Non possiamo emettere o stornare un addebito per conto di Apple.
+          Per Google Play, richiedilo dalla tua{' '}
+          <a href="https://play.google.com/store/account/orderhistory">cronologia ordini di Google Play</a>.
+          Non possiamo emettere o stornare un addebito per conto di Apple o di
+          Google.
         </p>
 
         <h2>Inviti</h2>
@@ -193,9 +206,9 @@ export default function TerminiIt() {
           Uno sconto con cui ti sei già abbonato resta tuo.
         </p>
 
-        <h2>Apple Salute</h2>
+        <h2>Apple Salute e Health Connect</h2>
         <p>
-          Se lo permetti, Walkito legge passi, velocità della camminata,
+          Su iPhone, se lo permetti, Walkito legge passi, velocità della camminata,
           asimmetria della camminata, piani saliti, frequenza cardiaca a riposo,
           frequenza cardiaca, energia attiva, analisi del sonno e allenamenti, e
           scrive le sessioni che completi come allenamenti e minuti di
@@ -204,6 +217,15 @@ export default function TerminiIt() {
           sul tuo telefono e non vengono mai caricati né salvati nel tuo
           account. Vedi la <a href="/it/privacy/">pagina sulla privacy</a> per
           sapere cosa invece esce dal telefono.
+        </p>
+        <p>
+          Su Android, se lo permetti, Walkito legge da Health Connect passi,
+          sessioni di esercizio, distanza e sonno, e vi scrive le sessioni che
+          completi come sessioni di esercizio. Velocità e asimmetria della
+          camminata non vengono lette su Android. Ogni permesso è facoltativo e
+          puoi revocarlo in qualsiasi momento in Health Connect. I dati di Health
+          Connect restano sul tuo telefono e non vengono mai caricati né salvati
+          nel tuo account.
         </p>
 
         <h2>Modifiche</h2>
@@ -221,7 +243,7 @@ export default function TerminiIt() {
           Puoi smettere in qualsiasi momento eliminando il tuo account in Profile
           → Delete account, che rimuove quello che hai registrato dal telefono e
           dal nostro server, e annullando eventuali abbonamenti tramite Apple
-          come indicato sopra. Eliminare solo l’app rimuove soltanto la copia sul
+          o Google come indicato sopra. Eliminare solo l’app rimuove soltanto la copia sul
           telefono. Possiamo sospendere l’accesso se l’app viene usata in un modo
           che questi termini vietano. In pratica significa rivendita o
           manomissione, non qualcosa che potresti fare usandola normalmente.

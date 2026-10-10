@@ -50,7 +50,7 @@ export default function NutzungsbedingungenDe() {
       <Prose className="shell prose">
         <h1>Nutzungsbedingungen</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 1. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: 9. Oktober 2026</p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/terms/">der englischen Fassung</a> abweicht, gilt die
@@ -103,18 +103,20 @@ export default function NutzungsbedingungenDe() {
 
         <h2>Dein Konto</h2>
         <p>
-          Bei der Einrichtung von Walkito meldest du dich mit Apple an, und in
+          Bei der Einrichtung von Walkito meldest du dich auf dem iPhone mit
+          Apple an, auf Android mit Google, und in
           diesem Konto wird dein Plan gespeichert. Die Anmeldung mit E-Mail und
           Passwort funktioniert nur für Konten, die wir selbst einrichten; eine
           Registrierung per E-Mail gibt es nicht. Schütze dein Handy und deine
-          Apple-ID, denn wer sie nutzt, kann dein Konto nutzen.
+          Apple-ID oder dein Google-Konto, denn wer sie nutzt, kann dein Konto nutzen.
         </p>
         <p>
           Dein Plan, deine Antworten, Check-ins, Testergebnisse und Einheiten
           werden auf deinem Handy gespeichert und in dein Konto kopiert. Melde
           dich auf einem neuen Handy oder nach einer Neuinstallation mit
           demselben Konto an, und sie kommen zurück. Käufe kommen mit „Restore
-          Purchases“ unter derselben Apple-ID zurück.
+          Purchases“ unter derselben Apple-ID auf dem iPhone zurück, auf Android
+          mit demselben Google-Konto in Google Play.
         </p>
 
         <h2>Deine Lizenz</h2>
@@ -135,8 +137,9 @@ export default function NutzungsbedingungenDe() {
 
         <h2>Zahlungen</h2>
         <p>
-          Walkito wird über den App Store bezahlt. Apple nimmt die Zahlung
-          entgegen, bewahrt den Beleg auf und zeigt dir vor dem Kauf die
+          Walkito wird auf dem iPhone über den App Store bezahlt, den Apple
+          betreibt, und auf Android über Google Play, das Google LLC betreibt.
+          Der Store nimmt die Zahlung entgegen, bewahrt den Beleg auf und zeigt dir vor dem Kauf die
           Optionen, den Preis und die Laufzeit. Dieser Preis gilt, nicht
           irgendein Betrag, der anderswo genannt wird. Derzeit gibt es zwei Abos,
           und beide verlängern sich automatisch:
@@ -154,12 +157,17 @@ export default function NutzungsbedingungenDe() {
         <ul>
           <li>
             Ein Abo verlängert sich am Ende jedes Zeitraums automatisch, und
-            deine Apple-ID wird belastet, es sei denn, du schaltest die
+            deine Apple-ID oder dein Google-Konto wird belastet, es sei denn, du schaltest die
             Verlängerung mindestens 24 Stunden vor Ende des Zeitraums aus.
           </li>
           <li>
-            Verwalten oder kündigen kannst du es unter{' '}
-            <b>Einstellungen → [dein Name] → Abonnements</b>. Eine Kündigung
+            Verwalten oder kündigen kannst du es auf dem iPhone unter{' '}
+            <b>Einstellungen → [dein Name] → Abonnements</b>, auf Android in der
+            Google Play App unter{' '}
+            <b>
+              Profilbild → Zahlungen und Abos → Abos → Walkito → Abo kündigen
+            </b>
+            . Eine Kündigung
             stoppt die nächste Verlängerung; du behältst den Zugang bis zum Ende
             des Zeitraums, für den du bezahlt hast.
           </li>
@@ -170,16 +178,19 @@ export default function NutzungsbedingungenDe() {
           </li>
           <li>
             Das Löschen der App oder deines Kontos kündigt kein Abo. Das kann nur
-            Apple, über den Bildschirm oben.
+            der Store, Apple oder Google, über die Bildschirme oben.
           </li>
         </ul>
 
         <h3>Erstattungen</h3>
         <p>
-          Erstattungen wickelt nur Apple ab. Nutze{' '}
+          Erstattungen wickelt nur der Store ab, in dem du bezahlt hast, nach
+          seinen eigenen Regeln. Für den App Store nutze{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          Wir können keine Belastung im Namen von Apple vornehmen oder
-          rückgängig machen.
+          Für Google Play beantragst du sie in deinem{' '}
+          <a href="https://play.google.com/store/account/orderhistory">Bestellverlauf bei Google Play</a>.
+          Wir können keine Belastung im Namen von Apple oder Google vornehmen
+          oder rückgängig machen.
         </p>
 
         <h2>Einladungen</h2>
@@ -199,9 +210,9 @@ export default function NutzungsbedingungenDe() {
           Rabatt, zu dem du bereits ein Abo abgeschlossen hast, bleibt dir.
         </p>
 
-        <h2>Apple Health</h2>
+        <h2>Apple Health und Health Connect</h2>
         <p>
-          Wenn du es erlaubst, liest Walkito Schritte, Gehgeschwindigkeit,
+          Auf dem iPhone liest Walkito, wenn du es erlaubst, Schritte, Gehgeschwindigkeit,
           Gang-Asymmetrie, gestiegene Etagen, Ruheherzfrequenz, Herzfrequenz,
           aktive Energie, Schlafanalyse und Trainings, und schreibt die
           Einheiten, die du abschließt, als Trainings und Achtsamkeitsminuten
@@ -210,6 +221,15 @@ export default function NutzungsbedingungenDe() {
           deinem Handy und werden nie hochgeladen oder in deinem Konto
           gespeichert. Was das Handy doch verlässt, steht in der{' '}
           <a href="/de/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+        <p>
+          Auf Android liest Walkito, wenn du es erlaubst, Schritte,
+          Trainingseinheiten, Distanz und Schlaf aus Health Connect und schreibt
+          die Einheiten, die du abschließt, als Trainingseinheiten zurück.
+          Gehgeschwindigkeit und Gang-Asymmetrie werden auf Android nicht
+          gelesen. Jede Erlaubnis ist optional und kann jederzeit in Health
+          Connect widerrufen werden. Daten aus Health Connect bleiben auf deinem
+          Handy und werden nie hochgeladen oder in deinem Konto gespeichert.
         </p>
 
         <h2>Änderungen</h2>
@@ -227,7 +247,7 @@ export default function NutzungsbedingungenDe() {
           Du kannst jederzeit aufhören, indem du dein Konto unter Profile →
           Delete account löschst, was alles, was du eingetragen hast, vom Handy
           und von unserem Server entfernt, und ein Abo wie oben beschrieben über
-          Apple kündigst. Wenn du nur die App löschst, wird nur die Kopie auf dem
+          Apple oder Google kündigst. Wenn du nur die App löschst, wird nur die Kopie auf dem
           Handy entfernt. Wir können den Zugang sperren, wenn die App auf eine
           Weise genutzt wird, die diese Bedingungen verbieten. In der Praxis
           heißt das Weiterverkauf oder Manipulation, nichts, was du bei normaler

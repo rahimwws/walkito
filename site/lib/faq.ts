@@ -71,7 +71,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'Is Walkito available on Android?',
-        a: 'Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.',
+        a: 'Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.',
       },
       {
         q: 'Do I need an Apple Watch?',
@@ -212,11 +212,11 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'What happens to my plan if I get a new phone?',
-        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back, sign in with the same Apple ID and tap Restore Purchases in Walkito. Apple Health readings are not part of that copy, because they stay on the phone.',
+        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back. A subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.',
       },
       {
         q: 'How do I delete my Walkito account and data?',
-        a: `Delete your account in Walkito under Profile, then Delete account. That removes your account from Walkito’s server with everything saved to it, and clears the phone. It cannot be undone. Deleting only the app leaves your account in place. Neither one cancels a subscription, which only Apple can do. You can also write to ${SUPPORT_EMAIL}.`,
+        a: `Delete your account in Walkito under Profile, then Delete account. That removes your account from Walkito’s server with everything saved to it, and clears the phone. It cannot be undone. Deleting only the app leaves your account in place. Neither one cancels a subscription, which only Apple or Google can do. You can also write to ${SUPPORT_EMAIL}.`,
       },
     ],
   },
@@ -226,11 +226,11 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'How much does Walkito cost?',
-        a: 'Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the App Store shows is the one that applies.',
+        a: 'Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the store shows is the one that applies.',
       },
       {
         q: 'How do I cancel my Walkito subscription?',
-        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. Refunds are handled by Apple.',
+        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. On Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period. Deleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.',
       },
     ],
   },

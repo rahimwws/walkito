@@ -22,7 +22,8 @@ import {
 } from '@/shared/lib/plan-code';
 import { z } from 'zod';
 
-import { EXERCISE_IDS } from './content';
+import { EXERCISE_IDS, LANGS, type Lang } from './content';
+import { COPY, langOf } from './copy';
 import { planPage } from './plan-page';
 import {
   EXERCISE_SYNONYMS,
@@ -95,7 +96,14 @@ function log(entry: Record<string, unknown>) {
 
 // ─── Tools ──────────────────────────────────────────────────────────────────
 
-type Handler = (args: never, source: PlanSource) => ToolResult;
+type Handler = (args: never, source: PlanSource, lang: Lang) => ToolResult;
+
+/** On every tool: the language to answer in. The model sets it from the
+ * conversation; ChatGPT's own locale stands in when it does not. */
+const LANGUAGE = z
+  .enum(LANGS)
+  .optional()
+  .describe('The language of the conversation: en, ru, es, pt, fr, it or de. Default en. Text in the result comes back in it.');
 
 const TOOLS: {
   name: string;
@@ -115,7 +123,7 @@ const TOOLS: {
       area: z.enum(PLAN_AREAS).optional().describe('Where it hurts. Default heel_arch.'),
       pain_today: z.number().int().min(0).max(10).optional().describe('Pain today, 0 to 10, if the person said it.'),
     }),
-    run: ((args: { area?: (typeof PLAN_AREAS)[number]; pain_today?: number }, source) => reliefNow(args, source)) as Handler,
+    run: ((args: { area?: (typeof PLAN_AREAS)[number]; pain_today?: number }, source, lang) => reliefNow(args, source, lang)) as Handler,
   },
   {
     name: 'first_step_stretch',
@@ -124,7 +132,7 @@ const TOOLS: {
     description:
       'Use this when someone has heel or arch pain with the first steps in the morning or after sitting, and wants a stretch to do before standing up. Returns the plantar fascia stretch done in bed (10 × 10 seconds per foot) with a video.',
     input: z.object({ side: z.enum(PLAN_SIDES).optional().describe('Which foot hurts. Default both.') }),
-    run: ((args: { side?: (typeof PLAN_SIDES)[number] }, source) => firstStepStretch(args, source)) as Handler,
+    run: ((args: { side?: (typeof PLAN_SIDES)[number] }, source, lang) => firstStepStretch(args, source, lang)) as Handler,
   },
   {
     name: 'build_starter_plan',
@@ -145,7 +153,7 @@ const TOOLS: {
       age_group: z.enum(['under_40', '40_59', '60_plus', 'unknown']).optional().describe('Age group, if said. Default unknown.'),
       pain_today: z.number().int().min(0).max(10).optional().describe('Pain today, 0 to 10, if the person said it.'),
     }),
-    run: ((args, source) => buildStarterPlan(args, source, todayKey())) as Handler,
+    run: ((args, source, lang) => buildStarterPlan(args, source, todayKey(), lang)) as Handler,
   },
   {
     name: 'exercise_demo',
@@ -158,7 +166,7 @@ const TOOLS: {
         .enum([...EXERCISE_IDS, ...Object.keys(EXERCISE_SYNONYMS)] as [string, ...string[]])
         .describe('The exercise, by id or common name.'),
     }),
-    run: ((args: { exercise: string }, source) => exerciseDemo(args, source)) as Handler,
+    run: ((args: { exercise: string }, source, lang) => exerciseDemo(args, source, lang)) as Handler,
   },
   {
     name: 'flat_foot_check',
@@ -172,7 +180,7 @@ const TOOLS: {
         .optional()
         .describe('After lifting the big toe, did an arch appear? Leave out to get the instructions.'),
     }),
-    run: ((args: { arch_appears?: 'yes' | 'no' | 'not_sure' }, source) => flatFootCheck(args, source)) as Handler,
+    run: ((args: { arch_appears?: 'yes' | 'no' | 'not_sure' }, source, lang) => flatFootCheck(args, source, lang)) as Handler,
   },
   {
     name: 'when_to_see_doctor',
@@ -183,7 +191,7 @@ const TOOLS: {
     input: z.object({
       symptoms: z.array(z.enum(RED_FLAG_IDS as [string, ...string[]])).optional().describe('Warning signs the person mentioned.'),
     }),
-    run: ((args: { symptoms?: never[] }) => whenToSeeDoctor(args)) as Handler,
+    run: ((args: { symptoms?: never[] }, _source, lang) => whenToSeeDoctor(args, lang)) as Handler,
   },
   {
     name: 'feet_after_work',
@@ -192,7 +200,7 @@ const TOOLS: {
     description:
       'Use this when someone’s feet or legs hurt after standing or walking all day at work (for example nurses, servers, retail workers) and they want something to do after a shift. Returns a short after-work routine with videos and simple shoe tips.',
     input: z.object({}),
-    run: ((_args, source) => feetAfterWork(source)) as Handler,
+    run: ((_args, source, lang) => feetAfterWork(source, lang)) as Handler,
   },
   {
     name: 'shoes_and_inserts',
@@ -201,7 +209,7 @@ const TOOLS: {
     description:
       'Use this when someone asks what shoes, insoles or heel cups help with heel pain, arch pain or flat feet, or how to find shoes for wide feet. Returns general footwear tips. Does not recommend brands.',
     input: z.object({}),
-    run: (() => shoesAndInserts()) as Handler,
+    run: ((_args, _source, lang) => shoesAndInserts(lang)) as Handler,
   },
   {
     name: 'ready_to_run',
@@ -213,7 +221,7 @@ const TOOLS: {
       morning_pain_avg_2w: z.number().min(0).max(10).describe('Average first-step pain over the last two weeks, 0 to 10.'),
       single_leg_calf_raises: z.number().int().min(0).max(200).optional().describe('Single-leg calf raises in a row on the painful side.'),
     }),
-    run: ((args: { morning_pain_avg_2w: number; single_leg_calf_raises?: number }, source) => readyToRun(args, source)) as Handler,
+    run: ((args: { morning_pain_avg_2w: number; single_leg_calf_raises?: number }, source, lang) => readyToRun(args, source, lang)) as Handler,
   },
 ];
 
@@ -232,7 +240,7 @@ function serverFor(ctx: McpRequestContext): McpServer {
       // What the server is for, so a host that loads connectors on demand
       // knows when to reach for it. Describes; does not ask to be preferred.
       instructions:
-        'Walkito has short foot and calf exercises with videos for heel pain, plantar fasciitis, heel spurs, arch pain, flat feet, Achilles pain, shin splints and feet that hurt after standing all day: a gentle routine for pain right now, a stretch before the first steps in the morning, a 7-day starter plan, how to do a named exercise, a flat-foot check, footwear tips, a check before running again, and the warning signs that need a doctor. It does not diagnose and does not cover medicines or other body parts.',
+        'Walkito has short foot and calf exercises with videos for heel pain, plantar fasciitis, heel spurs, arch pain, flat feet, Achilles pain, shin splints and feet that hurt after standing all day: a gentle routine for pain right now, a stretch before the first steps in the morning, a 7-day starter plan, how to do a named exercise, a flat-foot check, footwear tips, a check before running again, and the warning signs that need a doctor. It does not diagnose and does not cover medicines or other body parts. Results come in English, Russian, Spanish, Portuguese, French, Italian or German: pass the conversation\'s language as `language`.',
     },
   );
 
@@ -268,7 +276,7 @@ function serverFor(ctx: McpRequestContext): McpServer {
       {
         title: tool.title,
         description: tool.description,
-        inputSchema: tool.input ?? z.object({}),
+        inputSchema: (tool.input ?? z.object({})).extend({ language: LANGUAGE }),
         annotations: { ...ANNOTATIONS, title: tool.title },
         _meta: {
           ui: { resourceUri: uri(tool.widget) },
@@ -278,17 +286,19 @@ function serverFor(ctx: McpRequestContext): McpServer {
       },
       async (args: Record<string, unknown>, extra) => {
         const started = performance.now();
-        const source = sourceOf(extra?.mcpReq?._meta as Record<string, unknown> | undefined, userAgent);
+        const meta = extra?.mcpReq?._meta as Record<string, unknown> | undefined;
+        const source = sourceOf(meta, userAgent);
+        const lang = langOf(args.language, meta?.['openai/locale']);
         try {
-          const out = tool.run(args as never, source);
-          log({ tool: tool.name, host: source, args: logArgs(args), ms: Math.round(performance.now() - started), status: 'ok' });
+          const out = tool.run(args as never, source, lang);
+          log({ tool: tool.name, host: source, lang, args: logArgs(args), ms: Math.round(performance.now() - started), status: 'ok' });
           return {
             content: [{ type: 'text' as const, text: out.text }],
             structuredContent: out.structuredContent as unknown as Record<string, unknown>,
           };
         } catch (error) {
           log({ tool: tool.name, host: source, args: logArgs(args), ms: Math.round(performance.now() - started), status: 'error', code: (error as Error).name });
-          return { isError: true, content: [{ type: 'text' as const, text: 'That did not work. Please try again.' }] };
+          return { isError: true, content: [{ type: 'text' as const, text: COPY[lang].error }] };
         }
       },
     );
@@ -369,8 +379,9 @@ const http = createServer((req, res) => {
   }
   const code = /^\/p\/([^/]+)\/?$/.exec(path);
   if (code) {
-    const page = planPage(decodeURIComponent(code[1]));
-    res.writeHead(page.status, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300' });
+    const query = new URLSearchParams((req.url ?? '').split('?')[1] ?? '');
+    const page = planPage(decodeURIComponent(code[1]), langOf(query.get('l'), req.headers['accept-language']));
+    res.writeHead(page.status, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=300', vary: 'Accept-Language' });
     res.end(page.html);
     log({ page: 'p', status: page.status === 200 ? 'ok' : 'invalid', host: page.source ?? 'unknown' });
     return;

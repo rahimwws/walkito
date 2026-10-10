@@ -3,3 +3,4 @@ export * from './tools';
 export * from './content';
 export { planPage } from './plan-page';
 export { encodePlanCode, decodePlanCode } from '@/shared/lib/plan-code';
+export { COPY, langOf, weekdays } from './copy';

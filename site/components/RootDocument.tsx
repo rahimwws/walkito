@@ -24,7 +24,7 @@ const ORGANISATION = {
   // walkito.com), and Google's AI answers have been resolving the name to it.
   // This says in one line which Walkito this one is.
   disambiguatingDescription:
-    'Walkito is an iPhone exercise app for heel pain, plantar fasciitis and flat feet. It is not a dog-walking service.',
+    'Walkito is an iPhone and Android exercise app for heel pain, plantar fasciitis and flat feet. It is not a dog-walking service.',
   foundingDate: '2026',
   // Both co-founders, each with a public profile.
   founder: [

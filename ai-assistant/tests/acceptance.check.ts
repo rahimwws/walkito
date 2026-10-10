@@ -196,10 +196,99 @@ describe('plan page', () => {
     expect(page.html).toContain('ct=ai-chatgpt');
     expect(page.html).toContain('utm_source=chatgpt');
     expect(page.html).toContain(`walkito://plan?code=${code}`);
+    expect(page.html).toContain('play.google.com/store/apps/details?id=com.walkito.app');
+    expect(page.html).toContain('utm_source%3Dchatgpt');
   });
 
   test('a bad code says so', () => {
     expect(core.planPage('WK-ZZZZZZ').status).toBe(404);
+  });
+});
+
+describe('languages', () => {
+  const LANGS = core.LANGS as readonly string[];
+
+  function resultsIn(lang: string) {
+    const out: { name: string; r: ReturnType<typeof core.reliefNow> }[] = [];
+    for (const area of AREAS) {
+      out.push({ name: `relief ${area}`, r: core.reliefNow({ area }, 'chatgpt', lang) });
+      for (const days of [3, 5, 7] as const)
+        out.push({ name: `plan ${area} ${days}`, r: core.buildStarterPlan({ area, minutes: 5, days_per_week: days }, 'claude', TODAY, lang) });
+    }
+    out.push({ name: 'relief pain 8', r: core.reliefNow({ pain_today: 8 }, 'chatgpt', lang) });
+    out.push({ name: 'plan pain 9', r: core.buildStarterPlan({ area: 'heel_arch', pain_today: 9 }, 'chatgpt', TODAY, lang) });
+    out.push({ name: 'stretch', r: core.firstStepStretch({ side: 'right' }, 'chatgpt', lang) });
+    for (const id of core.EXERCISE_IDS) out.push({ name: `demo ${id}`, r: core.exerciseDemo({ exercise: id }, 'chatgpt', lang) });
+    for (const a of [undefined, 'yes', 'no', 'not_sure'] as const) out.push({ name: `flat ${a}`, r: core.flatFootCheck({ arch_appears: a }, 'chatgpt', lang) });
+    out.push({ name: 'doctor flags', r: core.whenToSeeDoctor({ symptoms: ['fever'] }, lang) });
+    out.push({ name: 'work', r: core.feetAfterWork('chatgpt', lang) });
+    out.push({ name: 'shoes', r: core.shoesAndInserts(lang) });
+    for (const [pain, calf] of [[2, 25], [2, undefined], [5, 10]] as const)
+      out.push({ name: `run ${pain} ${calf}`, r: core.readyToRun({ morning_pain_avg_2w: pain, single_leg_calf_raises: calf }, 'chatgpt', lang) });
+    return out;
+  }
+
+  test('every result in every language: its own disclaimer, no placeholders, no long dash', () => {
+    for (const lang of LANGS)
+      for (const { name, r } of resultsIn(lang)) {
+        expect(r.structuredContent.lang).toBe(lang);
+        expect(r.structuredContent.footer.disclaimer).toBe(core.COPY[lang].disclaimer);
+        expect(r.text).toContain(core.COPY[lang].disclaimer);
+        for (const s of strings({ ...r, structuredContent: { ...r.structuredContent, ui: undefined } }))
+          if (/\{\w+\}|—|undefined|NaN/.test(s)) throw new Error(`${lang} ${name}: "${s}"`);
+      }
+  });
+
+  test('Russian results are Russian throughout (nothing left in English)', () => {
+    for (const { name, r } of resultsIn('ru')) {
+      const sc = r.structuredContent;
+      const shown = strings({ ...sc, kind: 0, cta: sc.cta && { ...sc.cta, url: 0, code: 0 }, steps: (sc.steps ?? []).map((e: object) => ({ ...e, id: 0, clip: 0 })), exercise: sc.exercise && { ...sc.exercise, id: 0, clip: 0 }, days: (sc.days ?? []).map((d: { exercises: object[] }) => ({ ...d, type: 0, exercises: d.exercises.map((e) => ({ ...e, id: 0, clip: 0 })) })), lang: 0 });
+      for (const s of shown) if (/[a-z]{3,}/i.test(s.replace(/Walkito|ChatGPT|Claude|DiGiovanni|WK-\w+/g, '')) && !/[а-я]/i.test(s)) throw new Error(`${name}: "${s}"`);
+    }
+  });
+
+  test('the same exercises and safety rules in every language', () => {
+    for (const lang of LANGS) {
+      const en = core.buildStarterPlan({ area: 'achilles', minutes: 10 }, 'chatgpt', TODAY).structuredContent;
+      const other = core.buildStarterPlan({ area: 'achilles', minutes: 10 }, 'chatgpt', TODAY, lang).structuredContent;
+      expect(other.days.map((d: { exercises: { id: string }[] }) => d.exercises.map((e) => e.id))).toEqual(en.days.map((d: { exercises: { id: string }[] }) => d.exercises.map((e) => e.id)));
+      const high = core.buildStarterPlan({ area: 'heel_arch', pain_today: 8 }, 'chatgpt', TODAY, lang).structuredContent;
+      expect(high.kind).toBe('routine');
+      expect(high.minutes).toBe(3);
+      const doctor = core.whenToSeeDoctor({ symptoms: ['numbness'] }, lang);
+      expect(doctor.structuredContent.cta).toBeUndefined();
+      expect(doctor.text).toContain(core.COPY[lang].seeDoctorFirst);
+      expect(Object.keys(core.COPY[lang].redFlags)).toEqual(core.RED_FLAG_IDS);
+    }
+  });
+
+  test('Russian counts take their own forms', () => {
+    expect(core.COPY.ru.planIntro(5, 5)).toBe('5 минут в день · 5 дней в неделю');
+    expect(core.COPY.ru.planIntro(3, 3)).toBe('3 минуты в день · 3 дня в неделю');
+    expect(core.minutesLabel(10, 'ru')).toBe('10 минут');
+  });
+
+  test('weekday names, Monday first', () => {
+    expect(core.weekdays('en')[0].short).toBe('Mon');
+    expect(core.weekdays('ru')[0].short).toBe('Пн');
+    expect(core.weekdays('de')[6].initial).toBe('S');
+  });
+
+  test('the language resolves from the argument, then the host locale, then English', () => {
+    expect(core.langOf('ru')).toBe('ru');
+    expect(core.langOf(undefined, 'pt-BR')).toBe('pt');
+    expect(core.langOf('xx', 'de_DE')).toBe('de');
+    expect(core.langOf(undefined, undefined)).toBe('en');
+  });
+
+  test('the button carries the language to the plan page, which speaks it', () => {
+    const r = core.buildStarterPlan({ area: 'flat_feet' }, 'chatgpt', TODAY, 'ru');
+    expect(r.structuredContent.cta.url).toBe(`https://walkito.site/p/${r.structuredContent.cta.code}/?l=ru`);
+    const page = core.planPage(r.structuredContent.cta.code, 'ru');
+    expect(page.html).toContain('<html lang="ru">');
+    expect(page.html).toContain('Плоскостопие');
+    expect(page.html).toContain(core.COPY.ru.disclaimer.replaceAll('-', '-'));
+    expect(core.planPage('WK-ZZZZZZ', 'de').html).toContain('Code nicht erkannt');
   });
 });
 

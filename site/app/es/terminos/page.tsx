@@ -48,7 +48,7 @@ export default function TerminosEs() {
       <Prose className="shell prose">
         <h1>Términos de uso</h1>
 
-        <p className="updated">Última actualización: 1 de octubre de 2026</p>
+        <p className="updated">Última actualización: 9 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/terms/">la versión en inglés</a>, se aplica la versión en
@@ -97,10 +97,11 @@ export default function TerminosEs() {
 
         <h2>Tu cuenta</h2>
         <p>
-          Inicias sesión con Apple cuando configuras Walkito, y en esa cuenta se
+          Inicias sesión con Apple en iPhone o con Google en Android cuando
+          configuras Walkito, y en esa cuenta se
           guarda tu plan. Iniciar sesión con correo y contraseña solo funciona
           en cuentas que creamos nosotros; no existe el registro con correo.
-          Protege tu teléfono y tu Apple ID, porque cualquiera que los use puede
+          Protege tu teléfono y tu Apple ID o tu cuenta de Google, porque cualquiera que los use puede
           usar tu cuenta.
         </p>
         <p>
@@ -108,7 +109,8 @@ export default function TerminosEs() {
           y tus sesiones se guardan en tu teléfono y se copian a tu cuenta. Si
           inicias sesión con la misma cuenta en un teléfono nuevo o después de
           reinstalar la app, vuelven. Las compras vuelven con Restaurar compras
-          usando el mismo Apple ID.
+          usando el mismo Apple ID en iPhone, o con la misma cuenta de Google en
+          Google Play en Android.
         </p>
 
         <h2>Tu licencia</h2>
@@ -128,8 +130,9 @@ export default function TerminosEs() {
 
         <h2>Pagos</h2>
         <p>
-          Walkito se paga a través del App Store. Apple cobra el pago, guarda el
-          recibo y te muestra las opciones, el precio y la duración antes de
+          Walkito se paga a través del App Store en iPhone, que gestiona Apple,
+          o de Google Play en Android, que gestiona Google LLC. La tienda cobra
+          el pago, guarda el recibo y te muestra las opciones, el precio y la duración antes de
           comprar. Ese es el precio que se aplica, no cualquier cifra que
           aparezca en otro sitio. Hoy hay dos suscripciones, y las dos se
           renuevan automáticamente:
@@ -147,12 +150,18 @@ export default function TerminosEs() {
         <ul>
           <li>
             Una suscripción se renueva automáticamente al final de cada periodo,
-            y se cobra a tu Apple ID, a menos que desactives la renovación al
+            y se cobra a tu Apple ID o a tu cuenta de Google, a menos que desactives la renovación al
             menos 24 horas antes de que termine el periodo.
           </li>
           <li>
-            Adminístrala o cancélala en <b>Ajustes → [tu nombre] → Suscripciones</b>.
-            Cancelar detiene la próxima renovación; mantienes el acceso hasta
+            Adminístrala o cancélala en iPhone en{' '}
+            <b>Ajustes → [tu nombre] → Suscripciones</b>, o en Android en la app
+            de Google Play, en{' '}
+            <b>
+              icono de perfil → Pagos y suscripciones → Suscripciones → Walkito →
+              Cancelar suscripción
+            </b>
+            . Cancelar detiene la próxima renovación; mantienes el acceso hasta
             el final del periodo que ya pagaste.
           </li>
           <li>
@@ -162,15 +171,19 @@ export default function TerminosEs() {
           </li>
           <li>
             Borrar la app o eliminar tu cuenta no cancela una suscripción. Solo
-            Apple puede hacerlo, desde la pantalla indicada arriba.
+            la tienda puede hacerlo, Apple o Google, desde las pantallas indicadas
+            arriba.
           </li>
         </ul>
 
         <h3>Reembolsos</h3>
         <p>
-          Los reembolsos los gestiona únicamente Apple. Usa{' '}
+          Los reembolsos los gestiona únicamente la tienda en la que pagaste,
+          según su propia política. Para el App Store, usa{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          No podemos hacer ni anular un cargo en nombre de Apple.
+          Para Google Play, pídelo desde tu{' '}
+          <a href="https://play.google.com/store/account/orderhistory">historial de pedidos de Google Play</a>.
+          No podemos hacer ni anular un cargo en nombre de Apple ni de Google.
         </p>
 
         <h2>Invitaciones</h2>
@@ -190,9 +203,9 @@ export default function TerminosEs() {
           momento. El descuento con el que ya te hayas suscrito sigue siendo tuyo.
         </p>
 
-        <h2>Apple Salud</h2>
+        <h2>Apple Salud y Health Connect</h2>
         <p>
-          Si lo permites, Walkito lee los pasos, la velocidad al caminar, la
+          En iPhone, si lo permites, Walkito lee los pasos, la velocidad al caminar, la
           asimetría al caminar, los pisos subidos, la frecuencia
           cardiaca en reposo, la frecuencia cardiaca, la energía activa, el
           análisis del sueño y los entrenamientos, y guarda las sesiones que
@@ -202,6 +215,15 @@ export default function TerminosEs() {
           guardan en tu cuenta.
           Consulta la <a href="/es/privacidad/">página de privacidad</a> para
           saber qué sí sale de él.
+        </p>
+        <p>
+          En Android, si lo permites, Walkito lee de Health Connect los pasos,
+          las sesiones de ejercicio, la distancia y el sueño, y guarda las
+          sesiones que terminas como sesiones de ejercicio. En Android no se leen
+          la velocidad ni la asimetría al caminar. Cada permiso es opcional y
+          puedes retirarlo en cualquier momento en Health Connect. Los datos de
+          Health Connect se quedan en tu teléfono y nunca se suben ni se guardan
+          en tu cuenta.
         </p>
 
         <h2>Cambios</h2>
@@ -217,8 +239,8 @@ export default function TerminosEs() {
         <p>
           Puedes dejarlo cuando quieras eliminando tu cuenta en Perfil →
           Eliminar cuenta, lo que borra lo que registraste del teléfono y de
-          nuestro servidor, y cancelar cualquier suscripción a través de Apple
-          como se indica arriba. Borrar solo la app elimina únicamente la copia
+          nuestro servidor, y cancelar cualquier suscripción a través de Apple o
+          Google como se indica arriba. Borrar solo la app elimina únicamente la copia
           del teléfono. Podemos suspender el acceso si la app se usa de
           una forma que estos términos prohíben. En la práctica, eso significa
           reventa o manipulación, nunca algo que puedas hacer usándola con

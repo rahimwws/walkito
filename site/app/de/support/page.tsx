@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Hilfe und Support',
   description:
-    'Hilfe zu Walkito: Mitteilungen, Apple Health, Käufe, Erstattungen und das Löschen deines Kontos. Schreib uns, und ein Mensch antwortet.',
+    'Hilfe zu Walkito: Mitteilungen, Apple Health und Health Connect, Käufe, Erstattungen und das Löschen deines Kontos. Schreib uns, und ein Mensch antwortet.',
   alternates: alternatesFor('support', 'de'),
 };
 
@@ -43,11 +43,12 @@ export default function SupportDe() {
 
         <h2>Anmelden, und ein neues Handy</h2>
         <p>
-          Bei der Einrichtung meldest du dich mit Apple an, dafür brauchst du
-          einmal eine Verbindung. Danach funktioniert der tägliche Ablauf
+          Bei der Einrichtung meldest du dich auf dem iPhone mit Apple an, auf
+          Android mit Google, dafür brauchst du einmal eine Verbindung. Danach funktioniert der tägliche Ablauf
           offline, und was du einträgst, wird in dein Konto kopiert, sobald es
           eine Verbindung gibt. Auf einem neuen Handy oder nach einer
-          Neuinstallation meldest du dich mit derselben Apple-ID an, und dein
+          Neuinstallation meldest du dich mit derselben Apple-ID oder demselben
+          Google-Konto an, und dein
           Plan, deine Check-ins, Testergebnisse und Einheiten kommen zurück.
         </p>
 
@@ -80,6 +81,15 @@ export default function SupportDe() {
           sie gebraucht haben, werden einfach still. Der Plan funktioniert
           weiter.
         </p>
+        <p>
+          Auf Android liest Walkito Schritte, Trainingseinheiten, Distanz und
+          Schlaf aus Health Connect und schreibt die Einheiten, die du
+          abschließt, als Trainingseinheiten zurück. Gehgeschwindigkeit und
+          Gang-Asymmetrie gibt es nur auf dem iPhone. Auch diese Werte bleiben
+          auf deinem Handy und werden nie hochgeladen. Was Walkito sehen darf,
+          änderst du in der Health Connect App oder in den Android-Einstellungen
+          unter Health Connect → App-Berechtigungen → Walkito.
+        </p>
 
         <h2>Schmerzen, und wann du aufhören solltest</h2>
         <p>
@@ -91,27 +101,37 @@ export default function SupportDe() {
 
         <h2>Käufe</h2>
         <p>
-          Walkito bezahlst du mit einem Abo über den App Store, jährlich oder
-          wöchentlich. Beide verlängern sich automatisch, und der App Store
-          zeigt dir den Preis in deiner Währung, bevor du kaufst.
+          Walkito bezahlst du mit einem Abo, jährlich oder wöchentlich, über den
+          App Store auf dem iPhone oder Google Play auf Android. Beide
+          verlängern sich automatisch, und der Store zeigt dir den Preis in
+          deiner Währung, bevor du kaufst.
         </p>
         <ul>
           <li>
-            <b>Verwalten oder kündigen</b> kannst du dein Abo unter Einstellungen
-            → [dein Name] → Abonnements. Schalte die Verlängerung mindestens 24
-            Stunden vor Ende des Zeitraums aus, dann wird dir nichts mehr
-            berechnet. Du behältst den Zugang bis zum Ende des Zeitraums, für den
-            du bezahlt hast.
+            <b>Verwalten oder kündigen</b> kannst du dein Abo auf dem iPhone
+            unter Einstellungen → [dein Name] → Abonnements. Schalte die
+            Verlängerung mindestens 24 Stunden vor Ende des Zeitraums aus, dann
+            wird dir nichts mehr berechnet. Auf Android öffnest du die Google
+            Play App, tippst auf dein Profilbild und dann auf Zahlungen und Abos
+            → Abos → Walkito → Abo kündigen. In beiden Fällen behältst du den
+            Zugang bis zum Ende des Zeitraums, für den du bezahlt hast.
           </li>
           <li>
-            <b>Erstattungen</b> laufen über Apple. Nutze Apples Seite{' '}
-            <a href="https://reportaproblem.apple.com">Problem melden</a>. Wir
-            können keine Erstattungen im Namen von Apple bearbeiten.
+            <b>Erstattungen</b> laufen über den Store, in dem du bezahlt hast.
+            Auf dem iPhone nutzt du Apples Seite{' '}
+            <a href="https://reportaproblem.apple.com">Problem melden</a>. Auf
+            Android beantragst du sie in deinem{' '}
+            <a href="https://play.google.com/store/account/orderhistory">Bestellverlauf bei Google Play</a>.
+            Wir können keine Erstattungen im Namen von Apple oder Google
+            bearbeiten.
           </li>
           <li>
-            <b>Neues Handy?</b> Melde dich mit derselben Apple-ID an und tippe
-            in der App auf „Restore Purchases“. Dein Plan kommt mit deinem Konto
-            zurück.
+            <b>Neues Handy?</b> Auf dem iPhone meldest du dich mit derselben
+            Apple-ID an und tippst in der App auf „Restore Purchases“. Auf
+            Android nutzt du in Google Play dasselbe Google-Konto, und das Abo
+            ist wieder da. Dein Plan kommt mit deinem Konto zurück. Ein auf dem
+            iPhone gekauftes Abo gilt nicht auf Android und umgekehrt, weil Apple
+            und Google getrennt abrechnen.
           </li>
         </ul>
 
