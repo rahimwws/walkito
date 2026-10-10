@@ -114,11 +114,11 @@ export default function HeelPainRunnersEs() {
           </h1>
           <Byline lang="es" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />
           <p>
-            Tu talón duele en los primeros pasos la mañana después de correr. Se calma cuando
+            Te duele el talón en los primeros pasos la mañana después de correr. Se calma cuando
             empiezas a moverte, y vuelve después de estar un rato sentado. No tienes que dejarlo
             todo. La guía de 2023 para el dolor de talón aconseja cambiar la carga sobre tus pies.
             Walkito lo incorpora en un plan de fuerza de pantorrilla, estiramiento y equilibrio, en
-            sesiones de {MIN_A}, {MIN_B} o {MIN_C}&nbsp;minutos que se adaptan a cómo se siente
+            sesiones de {MIN_A}, {MIN_B} o {MIN_C}&nbsp;minutos que se adaptan a cómo se sienten tus pies
             cada mañana.
           </p>
           <AppStoreBadge campaign="runners-hero-es" lang="es" anchor />
@@ -163,7 +163,7 @@ export default function HeelPainRunnersEs() {
           <section id="descansar-o-correr">
             <h2>¿Descansar o seguir corriendo con dolor de talón?</h2>
             <p>
-              Si el dolor de talón se enciende cuando corres, cambia la carga en vez de dejarlo
+              Si el dolor de talón empeora al correr, cambia la carga en vez de dejarlo
               todo. La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el
               trabajo, en el deporte y en el día a día. Ese consejo tiene grado E, lo que significa
               que se basa en teoría, no en ensayos. Así que no hay una regla probada sobre cuánto
@@ -223,9 +223,9 @@ export default function HeelPainRunnersEs() {
             <h2>¿Cómo se adapta Walkito a la carrera de ayer?</h2>
             <p>
               Walkito adapta cada sesión a la carga de ayer y al talón de esta mañana, para que un
-              día duro baje la carga sin detener el plan. Si conectas Apple Health, Walkito lee tus
+              día duro baje la carga sin detener el plan. Si conectas la app Salud, Walkito lee tus
               pasos y tu sueño. Si tu teléfono o reloj cuenta los pasos de tu carrera, una carrera
-              larga se suma al total de ese día. Los datos de Health se quedan en tu teléfono. Cada
+              larga se suma al total de ese día. Los datos de Salud se quedan en tu teléfono. Cada
               mañana, la primera fila de abajo que coincida define la sesión de hoy.
             </p>
             <div className="table-wrap">
@@ -257,36 +257,52 @@ export default function HeelPainRunnersEs() {
             <p>
               El dolor de Aquiles se siente más arriba que la fascitis plantar: donde el tendón se
               une a la parte de atrás del hueso del talón, o unos centímetros más arriba, en el
-              tendón. La guía clínica de 2024 sobre el dolor del tendón de Aquiles menciona el dolor
+              tendón.
+            </p>
+            <p>
+              La guía clínica de 2024 sobre el dolor del tendón de Aquiles menciona el dolor
               que aparece al cargar el tendón, como al correr, saltar o subir escaleras, como la
               señal principal. Si presionar la parte de atrás del talón o el tendón arriba duele más
-              que presionar el arco, eso apunta lejos de la fascitis plantar.
+              que presionar el arco, eso hace menos probable la fascitis plantar.
             </p>
             <p>
               Dónde duele cambia el siguiente paso. El dolor en la mitad del tendón, unos
               centímetros por encima del talón, suele empezar con trabajo de carga para la
-              pantorrilla. El dolor justo donde el tendón se inserta se maneja con más cuidado: un
+              pantorrilla.
+            </p>
+            <p>
+              El dolor justo donde el tendón se inserta se maneja con más cuidado: un
               estiramiento profundo en la parte baja de un descenso de talón puede irritar ese
               punto, así que el trabajo suele empezar desde piso plano en vez de bajar de un
-              escalón. Los estiramientos de pantorrilla y las elevaciones de talón de Walkito están
-              hechos para la fascia plantar y la pantorrilla, no para el dolor en la inserción. Si
-              el tuyo está justo en la parte de atrás del hueso del talón, que lo revise un
-              profesional de la salud antes de cargarlo fuerte.
+              escalón.
             </p>
-            <Evidence level="strong">
+            <p>
+              Los estiramientos de pantorrilla y las elevaciones de talón de Walkito están
+              hechos para la fascia plantar y la pantorrilla, no para el dolor en la inserción.{' '}
+              <strong>Si el tuyo está justo en la parte de atrás del hueso del talón, que lo revise
+              un profesional de la salud antes de cargarlo fuerte.</strong>
+            </p>
+            <Evidence level="strong" lang="es">
               Varios ensayos controlados coinciden en que cargar la pantorrilla ayuda con el dolor
               de Aquiles en la porción media.
             </Evidence>
-            <p>
-              En un ensayo pequeño de 1998, 15&nbsp;atletas recreativos con dolor de Aquiles de
-              mucho tiempo hicieron elevaciones excéntricas de pantorrilla (bajar despacio con carga)
-              dos veces al día durante tres meses. Los 15 volvieron a correr a su nivel anterior.
-              Un ensayo de 2007 con 38&nbsp;personas encontró que seguir activo durante la
-              rehabilitación, mientras el dolor se mantuviera dentro de un límite acordado, dio
-              resultados tan buenos como dejar de correr y saltar primero. Un ensayo de 2015 con
-              58&nbsp;personas comparó el trabajo de fuerza pesado y lento tres veces por semana con
-              la rutina excéntrica.
-            </p>
+            <ul>
+              <li>
+                <strong>1998:</strong> en un ensayo pequeño, 15&nbsp;atletas recreativos con dolor
+                de Aquiles de mucho tiempo hicieron elevaciones excéntricas de pantorrilla (bajar
+                despacio con carga) dos veces al día durante tres meses. Los 15 volvieron a correr a
+                su nivel anterior.
+              </li>
+              <li>
+                <strong>2007:</strong> un ensayo con 38&nbsp;personas encontró que seguir activo
+                durante la rehabilitación, mientras el dolor se mantuviera dentro de un límite
+                acordado, dio resultados tan buenos como dejar de correr y saltar primero.
+              </li>
+              <li>
+                <strong>2015:</strong> un ensayo con 58&nbsp;personas comparó el trabajo de fuerza
+                pesado y lento tres veces por semana con la rutina excéntrica.
+              </li>
+            </ul>
             <blockquote>
               <p>
                 "Both traditional ECC and HSR yield positive, equally good,
@@ -308,14 +324,17 @@ export default function HeelPainRunnersEs() {
           <section id="periostitis-tibial">
             <h2>¿Y el dolor a lo largo de la tibia?</h2>
             <p>
-              La periostitis tibial, o síndrome de estrés medial de la tibia, es dolor a lo largo de
+              La periostitis tibial, o síndrome de estrés tibial medial, es dolor a lo largo de
               la parte interna de la tibia, normalmente repartido en varios centímetros en vez de un
               solo punto. No es la fascia plantar: el hueso y el tejido a su alrededor reaccionan a
-              la carga repetida de correr. Una revisión de 2020 de corredores novatos y recreativos
+              la carga repetida de correr.
+            </p>
+            <p>
+              Una revisión de 2020 de corredores novatos y recreativos
               encontró que las relaciones más claras eran con la forma de moverse, como más rotación
               de la cadera y un pie que se va hacia adentro más de lo habitual.
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               La revisión de 2020 encontró solo 11&nbsp;estudios que valían la pena incluir, la
               mayoría pequeños. Solo uno era un ensayo aleatorizado, y probó terapia de ondas de
               choque, no ejercicio.
@@ -325,13 +344,13 @@ export default function HeelPainRunnersEs() {
               algunos de esos estudios, pero los autores escribieron que «se necesita más
               investigación para confirmar estos resultados». Lo que suele ayudar en la práctica es
               la carga: reducir la carrera que lo provocó, y volver despacio cuando caminar y trotar
-              suave son libres de dolor.
+              suave ya no duelen.
             </p>
             <p>
               Un solo punto doloroso que puedes señalar con un dedo, en vez de dolor a lo largo de
               un tramo de hueso, puede ser una fractura por estrés. Eso necesita un profesional de
               la salud, no más carrera. Walkito no tiene un programa específico para la tibia. Si
-              marcas la tibia como dolorida, te da trabajo de movilidad de tobillo, que puede
+              marcas la tibia como adolorida, te da trabajo de movilidad de tobillo, que puede
               acompañar esa recuperación pero no reemplaza correr menos.
             </p>
             <Cite index={CITE.mtssReview} />
@@ -346,9 +365,9 @@ export default function HeelPainRunnersEs() {
               La guía de 2023 para el dolor de talón lo menciona como una de las causas que caen
               bajo «dolor de talón plantar».
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               Una revisión de 2022 encontró 7&nbsp;estudios aprovechables, la mayoría observacionales
-              pequeños, y ningún ensayo de ejercicio para esta condición.
+              pequeños, y ningún ensayo de ejercicio para esta afección.
             </Evidence>
             <p>
               La conclusión de la propia revisión es que las recomendaciones actuales para el
@@ -370,7 +389,7 @@ export default function HeelPainRunnersEs() {
               fascia plantar, pero las dos están conectadas: un tendón que no está haciendo su
               trabajo puede dejar caer el arco y cambiar cómo se carga la fascia.
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               Una revisión sistemática de 2018 encontró «evidencia preliminar» de que el ejercicio
               ayuda, y pocos ensayos de alta calidad.
             </Evidence>
@@ -379,6 +398,8 @@ export default function HeelPainRunnersEs() {
               tendón, estiramientos de pantorrilla y tobillo, y trabajo de equilibrio, a menudo con
               una plantilla de soporte de arco. La inversión con banda de Walkito entrena ese mismo
               músculo, y su trabajo de tobillo y equilibrio coincide con lo que cubrió la revisión.
+            </p>
+            <p>
               Si la parte interna de tu tobillo está hinchada, o un arco se ve más plano de lo que
               era hace un año, consulta primero a un profesional de la salud. Si se pasa por alto al
               principio, esto puede llevar a un pie plano que se queda plano.
@@ -396,19 +417,19 @@ export default function HeelPainRunnersEs() {
               8&nbsp;semanas. Las lesiones fueron casi idénticas: 20,8&nbsp;% en el grupo más lento
               y 20,3&nbsp;% en el más rápido.
             </p>
-            <Evidence level="unsupported">
+            <Evidence level="unsupported" lang="es">
               Un ensayo aleatorizado probó la regla del 10&nbsp;% directamente y no encontró
               diferencia.
             </Evidence>
             <p>
-              Los saltos bruscos son mejor cosa a la que prestar atención que cualquier porcentaje
+              Conviene fijarse más en los saltos bruscos que en cualquier porcentaje
               exacto. Un estudio de 2014 siguió a 874&nbsp;corredores nuevos con relojes GPS
               durante un año. Los corredores que añadieron más del 30&nbsp;% en dos semanas tuvieron
               más lesiones relacionadas con la distancia que los que se mantuvieron bajo el
               10&nbsp;%, aunque el resultado quedó justo por debajo de la significancia estadística.
-              Los que añadieron entre 10 y 30&nbsp;% no les fue claramente peor.
+              A los que añadieron entre un 10 y un 30&nbsp;% no les fue claramente peor.
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               Evita saltos bruscos grandes en la distancia. Un estudio de cohorte apunta en esa
               dirección, y el resultado fue limítrofe.
             </Evidence>
@@ -429,7 +450,7 @@ export default function HeelPainRunnersEs() {
               contra la edad del zapato. Si no registras kilómetros, una entresuela aplanada o una
               suela gastada de un lado te dice lo mismo.
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               El rango de 500 a 800&nbsp;km es una regla de uso común, no un resultado de ensayo.
             </Evidence>
             <p>
@@ -440,7 +461,7 @@ export default function HeelPainRunnersEs() {
               La explicación de los autores es que zapatos diferentes reparten la carga un poco
               diferente de una carrera a otra.
             </p>
-            <Evidence level="early">
+            <Evidence level="early" lang="es">
               Un estudio observacional de 264&nbsp;corredores, no un ensayo aleatorizado.
             </Evidence>
             <p>
@@ -467,7 +488,10 @@ export default function HeelPainRunnersEs() {
               Un corredor debe consultar a un profesional de la salud antes de seguir corriendo si
               el dolor aumenta durante las carreras después de subir el kilometraje, o si le duele
               al apretar los lados del talón. Las dos cosas pueden ser señales de una fractura por
-              estrés. Un dolor agudo al correr, o un dolor que empeora semana tras semana, también
+              estrés.
+            </p>
+            <p>
+              Un dolor agudo al correr, o un dolor que empeora semana tras semana, también
               necesita un profesional. Y un dolor de talón o tibia que te despierta por la noche:
               el dolor en reposo apunta más a una fractura por estrés que a fascitis plantar, dolor
               de Aquiles o periostitis tibial.
@@ -486,11 +510,17 @@ export default function HeelPainRunnersEs() {
               No tienes que decidir el orden, las dosis ni cuándo pasar al siguiente. Walkito arma
               un plan una semana a la vez en torno a una meta que puedes medir. Para el dolor de
               talón, la primera meta es dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
-              {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son mantener el arco{' '}
-              {archHoldSeconds}&nbsp;segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
-              {balanceSeconds}&nbsp;segundos de equilibrio a una pierna, e izquierda y derecha
-              dentro del {gapPercent}&nbsp;% la una de la otra. Una meta que alcanzas pasa a
-              mantenimiento con una dosis más baja, y la siguiente ocupa su lugar.
+              {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son:
+            </p>
+            <ul>
+              <li>Mantener el arco {archHoldSeconds}&nbsp;segundos.</li>
+              <li>{calfRaises} elevaciones de talón a una pierna.</li>
+              <li>{balanceSeconds}&nbsp;segundos de equilibrio a una pierna.</li>
+              <li>Izquierda y derecha dentro del {gapPercent}&nbsp;% la una de la otra.</li>
+            </ul>
+            <p>
+              Una meta que alcanzas pasa a mantenimiento con una dosis más baja, y la siguiente
+              ocupa su lugar.
             </p>
             <p>
               Eliges {DAYS_A}, {DAYS_B} o {DAYS_C}&nbsp;días a la semana y sesiones de {MIN_A},{' '}

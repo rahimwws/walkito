@@ -27,14 +27,15 @@ export const SHIN_SPLINTS_DE: Guide = {
   lede:
     'Das Schienbeinkantensyndrom ist Schmerz an der Innenkante des Schienbeins, verteilt über mehrere Zentimeter statt an einer einzelnen wunden Stelle. Der medizinische Name ist mediales tibiales Stresssyndrom, kurz MTSS. Die meisten Seiten listen Übungen auf, als wäre bewiesen, dass sie die Heilung beschleunigen. Eine systematische Übersichtsarbeit von 2013 über alle Behandlungsstudien fand, dass für Dehn- und Kraftübungen nicht gezeigt ist, dass sie es verkürzen.',
   intro: [
-    'Das heißt nicht, dass Übungen nutzlos sind. Die Übungen unten zielen auf Wadenausdauer, Kraft am Schienbein und Hüftkontrolle, die Bereiche, in denen Forschende Unterschiede zwischen Menschen mit und ohne Schienbeinkantensyndrom gefunden haben. Eine Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom bis zur Erschöpfung weniger Fersenhebungen schafften als passende Kontrollpersonen ohne.',
-    'Ob es die Erholung verkürzt, diese Ausdauer wieder aufzubauen, ist noch offen. Der sicherste Hebel ist in jeder bisherigen Studie, die Laufbelastung zu reduzieren, die es ausgelöst hat. Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
+    'Das heißt nicht, dass Übungen nutzlos sind. Die Übungen unten zielen auf Wadenausdauer, Kraft am Schienbein und Hüftkontrolle, die Bereiche, in denen Forschende Unterschiede zwischen Menschen mit und ohne Schienbeinkantensyndrom gefunden haben. Eine Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben schafften als passende Kontrollpersonen ohne.',
+    'Ob es die Erholung verkürzt, diese Ausdauer wieder aufzubauen, ist noch offen. Der sicherste Hebel ist in jeder bisherigen Studie, die Laufbelastung zu reduzieren, die die Beschwerden ausgelöst hat.',
+    'Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst, statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
   ],
   toc: true,
   takeaways: [
     'Eine systematische Übersichtsarbeit von 2013 über 11\u00A0Behandlungsstudien fand, dass für Dehn- und Kraftübungen nicht bewiesen ist, dass sie die Erholung vom medialen tibialen Stresssyndrom beschleunigen (Winters und Kollegen, 2013).',
     'In der einzigen randomisierten Studie zu Übungen beim Schienbeinkantensyndrom verkürzte es die Erholung nicht, Wadendehnen und Wadenkräftigung zu einem gestuften Laufprogramm hinzuzufügen, verglichen mit dem Laufprogramm allein, in einer Studie mit 74\u00A0Sportlern (Moen und Kollegen, 2012).',
-    'Läufer mit Schienbeinkantensyndrom schafften bis zur Erschöpfung weniger Fersenhebungen als passende Kontrollpersonen, was auf eine Lücke bei der Wadenausdauer hindeutet (Madeley und Kollegen, 2007).',
+    'Läufer mit Schienbeinkantensyndrom schafften bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben als passende Kontrollpersonen, was auf eine Lücke bei der Wadenausdauer hindeutet (Madeley und Kollegen, 2007).',
     'Punktgenauer Druckschmerz an einer kleinen Stelle, statt eines Schmerzes, der sich über mehrere Zentimeter Knochen verteilt, kann ein Ermüdungsbruch sein und braucht eine medizinische Fachperson, keine weiteren Übungen.',
   ],
   sections: [
@@ -42,8 +43,17 @@ export const SHIN_SPLINTS_DE: Guide = {
       h2: 'Was ist das Schienbeinkantensyndrom, und welche Übungen helfen wirklich?',
       keyFact: 'Eine systematische Übersichtsarbeit von 2013 über 11\u00A0Behandlungsstudien zum Schienbeinkantensyndrom kam zu dem Schluss, dass kein Dehn- oder Kraftansatz klare Belege dafür hat, die Erholung zu beschleunigen (Winters und Kollegen, 2013).',
       paragraphs: [
-        'Das Schienbeinkantensyndrom, oder mediale tibiale Stresssyndrom, ist eine Überlastungsverletzung des Schienbeins und des Gewebes darum. Der Schmerz ist meist flächig, verteilt über mehrere Zentimeter entlang der Innenkante der Tibia, und beginnt in der Regel während oder nach dem Laufen. Eine Übersichtsarbeit von 2020 zu Laufanfängern und Freizeitläufern fand die klarsten Zusammenhänge in der Art, wie Läufer sich bewegen, darunter mehr Rotation in der Hüfte und ein Fuß, der stärker als üblich nach innen rollt.',
-        'Die ehrliche Antwort zu Übungen beim Schienbeinkantensyndrom ist, dass für kein bestimmtes Übungsprogramm in einer kontrollierten Studie gezeigt wurde, dass es die Erholung beschleunigt. Eine systematische Übersichtsarbeit von 2013 hat 11\u00A0Behandlungsstudien angesehen und kam zu dem Schluss, dass Dehnen und Kräftigen „sich bei der Behandlung von MTSS nicht als wirksam erwiesen haben“. In der einzigen randomisierten Studie mit einem Übungsarm wurden 74\u00A0Sportler in drei Gruppen aufgeteilt: ein gestuftes Laufprogramm allein, dasselbe Programm plus Wadendehnen und Wadenkräftigung, und dasselbe Programm plus Kompressionsstrümpfe. Alle drei Gruppen verbesserten sich ähnlich schnell.',
+        'Das Schienbeinkantensyndrom, oder mediales tibiales Stresssyndrom, ist eine Überlastungsverletzung des Schienbeins und des Gewebes darum. Der Schmerz ist meist flächig, verteilt über mehrere Zentimeter entlang der Innenkante der Tibia, und beginnt in der Regel während oder nach dem Laufen. Eine Übersichtsarbeit von 2020 zu Laufanfängern und Freizeitläufern fand die klarsten Zusammenhänge in der Art, wie Läufer sich bewegen, darunter mehr Rotation in der Hüfte und ein Fuß, der stärker als üblich nach innen rollt.',
+        'Die ehrliche Antwort zu Übungen beim Schienbeinkantensyndrom ist, dass **für kein bestimmtes Übungsprogramm in einer kontrollierten Studie gezeigt wurde, dass es die Erholung beschleunigt.** Eine systematische Übersichtsarbeit von 2013 hat 11\u00A0Behandlungsstudien angesehen und kam zu dem Schluss, dass Dehnen und Kräftigen „sich bei der Behandlung von MTSS nicht als wirksam erwiesen haben“.',
+        'In der einzigen randomisierten Studie mit einem Übungsarm wurden 74\u00A0Sportler in drei Gruppen aufgeteilt:',
+        {
+          list: [
+            'Ein gestuftes Laufprogramm allein.',
+            'Dasselbe Programm plus Wadendehnen und Wadenkräftigung.',
+            'Dasselbe Programm plus Kompressionsstrümpfe.',
+          ],
+        },
+        'Alle drei Gruppen verbesserten sich ähnlich schnell.',
         'Die Übungen unten sind also kein eigenes Protokoll für das Schienbeinkantensyndrom. Es sind allgemeine Übungen für Unterschenkel und Hüfte aus dem Übungskatalog, die auf die Muskeln und Gelenke zielen, die Forschende bei Menschen mit Schienbeinkantensyndrom untersucht haben. Der stärkste Schritt bleibt, die Laufbelastung zu reduzieren und sie langsam wieder aufzubauen.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
@@ -102,12 +112,12 @@ export const SHIN_SPLINTS_DE: Guide = {
           name: 'Zehenheben',
           evidence: {
             level: 'early',
-            why: 'Zielt auf den Tibialis anterior, den Schienbeinmuskel selbst. Keine Studie speziell zum Schienbeinkantensyndrom, aber es ist der Muskel, der wehtut.',
+            why: 'Zielt auf den Tibialis anterior, den Muskel vorn am Schienbein. Keine Studie speziell zum Schienbeinkantensyndrom, und das Schienbeinkantensyndrom schmerzt meist entlang der Innenkante des Schienbeins, der Zusammenhang ist also indirekt.',
           },
           dose: '3\u00A0Sätze à 10, beide Füße',
           often: 'Krafttage',
           feel: 'Der Schienbeinmuskel arbeitet, während sich die Zehen heben',
-          how: 'Stell dich mit dem Rücken an eine Wand. Heb die Zehen und den vorderen Teil beider Füße vom Boden, die Fersen bleiben unten. Senk langsam ab. Das ist der Muskel vorn am Schienbein, der wehtut, wenn das Schienbeinkantensyndrom aufflammt.',
+          how: 'Stell dich mit dem Rücken an eine Wand. Heb die Zehen und den vorderen Teil beider Füße vom Boden, die Fersen bleiben unten. Senk langsam ab. Dabei arbeitet der Tibialis anterior, der Muskel vorn am Schienbein.',
           image: 'Übung: Zehenheben',
           media: 'tibialis_raise',
           caption: 'Zehenheben: Rücken an die Wand, Zehen heben, Fersen bleiben unten',
@@ -132,7 +142,7 @@ export const SHIN_SPLINTS_DE: Guide = {
           name: 'Hüftabduktion',
           evidence: {
             level: 'early',
-            why: 'Außenrotation in der Hüfte ist in zwei Metaanalysen ein bestätigter Risikofaktor. Keine Studie hat Hüftkräftigung als Behandlung des Schienbeinkantensyndroms getestet.',
+            why: 'Zwei Metaanalysen haben den Bewegungsumfang der Hüftrotation mit dem Schienbeinkantensyndrom in Verbindung gebracht. Keine Studie hat Hüftkräftigung als Behandlung des Schienbeinkantensyndroms getestet.',
           },
           dose: '3\u00A0Sätze à 15, jedes Bein',
           often: 'Krafttage',
@@ -195,8 +205,9 @@ export const SHIN_SPLINTS_DE: Guide = {
       h2: 'Wie unterscheidet sich das Schienbeinkantensyndrom von einem Ermüdungsbruch?',
       paragraphs: [
         'Das Schienbeinkantensyndrom von einem Ermüdungsbruch zu unterscheiden ist wichtig, weil beide eine andere Reaktion brauchen. Das mediale tibiale Stresssyndrom und Ermüdungsbrüche der Tibia liegen auf demselben Kontinuum von Stressverletzungen des Knochens. Unter weiterer Belastung kann sich ein Schienbeinkantensyndrom in Richtung Ermüdungsbruch entwickeln. Das ist der Hauptgrund, die Trainingsbelastung früh zu ändern, statt trotz flächiger Schienbeinschmerzen weiterzulaufen.',
-        'Das Schienbeinkantensyndrom macht meist einen flächigen Druckschmerz, verteilt über mehrere Zentimeter an der Innenseite des Schienbeins. Ein Ermüdungsbruch macht einen punktgenauen Druckschmerz an einer kleinen Stelle, oft mit Schwellung. Schmerz, der beim Aufwärmen nachlässt, spricht eher für ein Schienbeinkantensyndrom. Schmerz, der beim Laufen immer weiter zunimmt oder in Ruhe oder nachts auftritt, spricht eher für einen Ermüdungsbruch. Schmerz hinten an der Ferse statt am Schienbein ist ein anderes Problem, meist die Achillessehne; lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wenn deiner dort sitzt.',
-        'Ein häufig genannter Test für zu Hause ist ein Hüpfer auf einem Bein, der einen stechenden, punktgenauen Schmerz auslöst und so auf einen Bruch hindeuten soll. Eine Übersichtsarbeit von 2011 in American Family Physician fand aber keine neueren Belege für seine Genauigkeit, und ein positiver Hüpftest kam auch bei fast der Hälfte der Patienten mit bestätigtem Schienbeinkantensyndrom vor. Ein positiver Hüpftest ist also ein Grund, zu einer medizinischen Fachperson zu gehen, kein verlässlicher Weg, einen Bruch selbst festzustellen oder auszuschließen.',
+        'Das Schienbeinkantensyndrom macht meist einen flächigen Druckschmerz, verteilt über mehrere Zentimeter an der Innenseite des Schienbeins. Ein Ermüdungsbruch macht einen punktgenauen Druckschmerz an einer kleinen Stelle, oft mit Schwellung. Schmerz, der beim Aufwärmen nachlässt, spricht eher für ein Schienbeinkantensyndrom. Schmerz, der beim Laufen immer weiter zunimmt oder in Ruhe oder nachts auftritt, spricht eher für einen Ermüdungsbruch.',
+        'Schmerz hinten an der Ferse statt am Schienbein ist ein anderes Problem, meist die Achillessehne; lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wenn deiner dort sitzt.',
+        'Ein häufig genannter Test für zu Hause ist ein Hüpfer auf einem Bein, der einen stechenden, punktgenauen Schmerz auslöst und so auf einen Bruch hindeuten soll. Eine Übersichtsarbeit von 2011 in American Family Physician fand aber keine neueren Belege für seine Genauigkeit, und ein positiver Hüpftest kam auch bei fast der Hälfte der Patienten mit bestätigtem Schienbeinkantensyndrom vor. **Ein positiver Hüpftest ist also ein Grund, zu einer medizinischen Fachperson zu gehen, kein verlässlicher Weg, einen Bruch selbst festzustellen oder auszuschließen.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -205,16 +216,42 @@ export const SHIN_SPLINTS_DE: Guide = {
       keyFact: 'Eine Studie von 2008 mit 532\u00A0Laufanfängern fand keinen Unterschied bei den Verletzungsraten zwischen einer Steigerung des Wochenumfangs um 10\u00A0% und einer schnelleren Steigerung, die Regel ist also nicht belegt (Buist und Kollegen, 2008).',
       paragraphs: [
         'Es gibt keine Studie, die dir genau sagt, wie viel du reduzieren sollst. Was etwas Unterstützung hat, ist die Form eines gestuften Laufprogramms: In der einzigen randomisierten Studie folgten alle drei Gruppen einem schrittweisen Wiedereinstieg ins Laufen, und alle drei verbesserten sich ungefähr gleich schnell. Das Laufprogramm war die Konstante, nicht die zusätzlichen Übungen oder die Kompression.',
-        'Stechender Schmerz beim Laufen, Schmerz, der unterwegs schlimmer wird, oder Schmerz in Ruhe sind Gründe, aufzuhören und es abklären zu lassen, statt weiterzulaufen. Wenn der Schmerz beim Aufwärmen nachlässt und erträglich bleibt, ist ein kürzerer oder leichterer Lauf seltener pro Woche ein vernünftiger Mittelweg, während sich das Schienbein anpasst. Ruhetage zwischen den Läufen geben dem Knochen Zeit, auf die Belastung zu reagieren.',
-        'Die 10-%-Regel, also den Wochenumfang um höchstens 10\u00A0% zu steigern, ist eine oft genannte Faustregel, aber keine bewiesene. Eine Studie von 2008 mit 532\u00A0Laufanfängern fand keinen Unterschied bei den Verletzungsraten zwischen einem Programm nach der 10-%-Regel und einem schnelleren. Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf dieselbe Belastungssteuerung ein.',
+        'Gründe, aufzuhören und es abklären zu lassen, statt weiterzulaufen:',
+        {
+          list: [
+            'Stechender Schmerz beim Laufen.',
+            'Schmerz, der unterwegs schlimmer wird.',
+            'Schmerz in Ruhe.',
+          ],
+        },
+        'Wenn der Schmerz beim Aufwärmen nachlässt und erträglich bleibt, ist ein kürzerer oder leichterer Lauf seltener pro Woche ein vernünftiger Mittelweg, während sich das Schienbein anpasst. Ruhetage zwischen den Läufen geben dem Knochen Zeit, auf die Belastung zu reagieren.',
+        'Die 10-%-Regel, also den Wochenumfang um höchstens 10\u00A0% zu steigern, ist eine oft genannte Faustregel, aber keine bewiesene. Eine Studie von 2008 mit 532\u00A0Laufanfängern fand keinen Unterschied bei den Verletzungsraten zwischen einem Programm nach der 10-%-Regel und einem schnelleren.',
+        'Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. **Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt.** [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf dieselbe Belastungssteuerung ein.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
     {
       h2: 'Was im Training verhindert wirklich, dass das Schienbeinkantensyndrom zurückkommt?',
       paragraphs: [
-        'Für keine einzelne Übung wurde in einer Studie gezeigt, dass sie ein Schienbeinkantensyndrom verhindert. Die Risikofaktoren aus zwei unabhängigen Metaanalysen sprechen für eine allgemeine Steuerung der Trainingsbelastung und eine langsame Steigerung, nicht für eine bestimmte Dehnung oder Kraftübung. Die übereinstimmenden Risikofaktoren in beiden Übersichtsarbeiten waren ein höherer BMI, ein stärkerer Navicular Drop (wie weit das Gewölbe unter Last absinkt), weibliches Geschlecht, weniger Jahre Lauferfahrung und ein früheres Schienbeinkantensyndrom.',
-        'Ein allgemeines Muster für den Wiedereinstieg ins Laufen: zuerst schmerzfreies Gehen, dann lockeres Joggen auf weichem Untergrund mit Ruhetagen dazwischen, dann nach und nach längere Läufe, solange die Morgen schmerzfrei bleiben. Jeder Tag, der einen stechenden oder punktgenauen Schmerz auslöst, oder einen Schmerz, der beim Laufen zunimmt, statt beim Aufwärmen nachzulassen, ist ein Signal zum Aufhören, nicht zum Durchbeißen.',
+        'Für keine einzelne Übung wurde in einer Studie gezeigt, dass sie ein Schienbeinkantensyndrom verhindert. Die Risikofaktoren aus zwei unabhängigen Metaanalysen sprechen für eine allgemeine Steuerung der Trainingsbelastung und eine langsame Steigerung, nicht für eine bestimmte Dehnung oder Kraftübung. Die übereinstimmenden Risikofaktoren in beiden Übersichtsarbeiten waren:',
+        {
+          list: [
+            'Ein höherer BMI.',
+            'Ein stärkerer Navicular Drop (wie weit das Gewölbe unter Last absinkt).',
+            'Weibliches Geschlecht.',
+            'Weniger Jahre Lauferfahrung.',
+            'Ein früheres Schienbeinkantensyndrom.',
+          ],
+        },
+        'Ein allgemeines Muster für den Wiedereinstieg ins Laufen:',
+        {
+          list: [
+            'Zuerst schmerzfreies Gehen.',
+            'Dann lockeres Joggen auf weichem Untergrund mit Ruhetagen dazwischen.',
+            'Dann nach und nach längere Läufe, solange die Morgen schmerzfrei bleiben.',
+          ],
+        },
+        'Jeder Tag, der einen stechenden oder punktgenauen Schmerz auslöst, oder einen Schmerz, der beim Laufen zunimmt, statt beim Aufwärmen nachzulassen, **ist ein Signal zum Aufhören, nicht zum Durchbeißen.**',
       ],
       cites: [CITE.newman, CITE.hamstraWright],
     },
@@ -224,7 +261,7 @@ export const SHIN_SPLINTS_DE: Guide = {
       paragraphs: [
         'Die Quellen unterscheiden sich, und keine nennt eine einzelne, durch Studien gestützte Zahl. Allgemein gilt bei Überlastungsverletzungen, dass leichte Fälle innerhalb weniger Wochen mit weniger Aktivität abklingen, während Fälle, die mit wiederkehrenden Trainingsfehlern zusammenhängen, länger dauern können, wenn dieselbe Belastung zurückkommt, bevor sich das Gewebe angepasst hat.',
         'In der randomisierten Studie mit 74\u00A0Sportlern mit Schienbeinkantensyndrom dauerte es über die drei Gruppen im Mittel etwa 102 bis 118\u00A0Tage (insgesamt im Mittel 105\u00A0Tage), bis das Laufprogramm abgeschlossen war, die Spanne war aber groß.',
-        'Weil Schienbeinkantensyndrom und Ermüdungsbrüche der Tibia auf demselben Kontinuum liegen, ist Schmerz, der nach ein paar Wochen mit leichterem Laufen und Ruhetagen nicht besser wird, ein Grund, es abklären zu lassen, statt länger zu warten. Das klarste Zeichen der Erholung ist schmerzfreies Gehen und dann schmerzfreies lockeres Joggen, in dieser Reihenfolge, bevor der Umfang wieder steigt.',
+        'Weil Schienbeinkantensyndrom und Ermüdungsbrüche der Tibia auf demselben Kontinuum liegen, ist Schmerz, der nach ein paar Wochen mit leichterem Laufen und Ruhetagen nicht besser wird, ein Grund, es abklären zu lassen, statt länger zu warten. **Das klarste Zeichen der Erholung ist schmerzfreies Gehen und dann schmerzfreies lockeres Joggen, in dieser Reihenfolge, bevor der Umfang wieder steigt.**',
       ],
       cites: [CITE.moen],
     },
@@ -232,7 +269,7 @@ export const SHIN_SPLINTS_DE: Guide = {
   faq: [
     {
       q: 'Was hilft am schnellsten gegen Schienbeinkantensyndrom?',
-      a: 'Keine Studie hat gezeigt, dass eine bestimmte Übung oder Dehnung die Erholung vom Schienbeinkantensyndrom beschleunigt. Die nächsten Belege kommen aus einer randomisierten Studie mit 74\u00A0Sportlern, in der Wadendehnen und Wadenkräftigung zusätzlich zu einem gestuften Laufprogramm die Erholung gegenüber dem Laufprogramm allein nicht verkürzten. Die Laufbelastung zu reduzieren, die es ausgelöst hat, bleibt der wichtigste Hebel, keine bestimmte Übung.',
+      a: 'Keine Studie hat gezeigt, dass eine bestimmte Übung oder Dehnung die Erholung vom Schienbeinkantensyndrom beschleunigt. Die am ehesten passenden Belege kommen aus einer randomisierten Studie mit 74\u00A0Sportlern, in der Wadendehnen und Wadenkräftigung zusätzlich zu einem gestuften Laufprogramm die Erholung gegenüber dem Laufprogramm allein nicht verkürzten. Die Laufbelastung zu reduzieren, die die Beschwerden ausgelöst hat, bleibt der wichtigste Hebel, keine bestimmte Übung.',
       cites: [CITE.moen],
     },
     {
@@ -251,7 +288,7 @@ export const SHIN_SPLINTS_DE: Guide = {
     },
     {
       q: 'Was verursacht ein Schienbeinkantensyndrom bei Läufern?',
-      a: 'Zwei unabhängige Metaanalysen fanden übereinstimmende Risikofaktoren: einen höheren BMI, einen stärkeren Navicular Drop (wie weit das Gewölbe unter Last absinkt), weibliches Geschlecht, weniger Jahre Lauferfahrung und ein früheres Schienbeinkantensyndrom. Eine eigene Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom weniger Wadenausdauer hatten, was darauf hindeutet, dass ein Defizit der Plantarflexoren Teil des Bildes sein könnte.',
+      a: 'Zwei unabhängige Metaanalysen fanden übereinstimmende Risikofaktoren: einen höheren BMI, einen stärkeren Navicular Drop (wie weit das Gewölbe unter Last absinkt), weibliches Geschlecht, weniger Jahre Lauferfahrung und ein früheres Schienbeinkantensyndrom. Eine weitere Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom weniger Wadenausdauer hatten, was darauf hindeutet, dass ein Defizit der Plantarflexoren Teil des Bildes sein könnte.',
       cites: [CITE.newman, CITE.hamstraWright, CITE.madeley],
     },
     {

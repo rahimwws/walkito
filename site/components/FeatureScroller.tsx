@@ -161,7 +161,11 @@ export function FeatureScroller({
                   alt={visual.alt}
                   // Eager: the next screenshot must be decoded before its turn
                   // comes, or it arrives blank and flashes in mid-scroll.
+                  // Low priority: still fetched on load, but after the hero
+                  // phone (the page's LCP) instead of competing with it, and
+                  // React no longer adds a <link rel="preload"> for each.
                   loading="eager"
+                  fetchPriority="low"
                   decoding="async"
                 />, extras]
               ) : (

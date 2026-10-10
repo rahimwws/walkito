@@ -19,11 +19,11 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
   title: 'Fascitis plantar vs espolón calcáneo: ¿son lo mismo?',
   description:
     'Fascitis plantar vs espolón calcáneo: en qué se diferencian, si el espolón causa dolor, qué dice la investigación y cuándo conviene una radiografía.',
-  h1: 'Fascitis plantar vs espolón calcáneo: ¿son la misma condición?',
+  h1: 'Fascitis plantar vs espolón calcáneo: ¿son la misma afección?',
   lede:
-    'Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va de ese hueso hasta los dedos. Suelen aparecer juntos, pero no son la misma condición, y el espolón casi nunca es lo que duele. Muchas personas con espolón en la radiografía no sienten ningún dolor.',
+    'Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va de ese hueso hasta los dedos. Suelen aparecer juntos, pero no son la misma afección, y el espolón casi nunca es lo que duele. Muchas personas con espolón en la radiografía no sienten ningún dolor.',
   intro: [
-    'Si te dijeron que tienes un espolón calcáneo y quieres saber qué hacer, los ejercicios son los mismos que ayudan con la fascitis plantar. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina completa. Esta página explica la diferencia entre las dos condiciones, qué dice la investigación sobre los espolones y el dolor, y cuándo vale la pena pedir estudios de imagen.',
+    'Si te dijeron que tienes un espolón calcáneo y quieres saber qué hacer, los ejercicios son los mismos que ayudan con la fascitis plantar. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina completa. Esta página explica la diferencia entre las dos afecciones, qué dice la investigación sobre los espolones y el dolor, y cuándo vale la pena pedir estudios de imagen.',
   ],
   takeaways: [
     'En un estudio con 216\u00A0adultos mayores de 62 a 94\u00A0años, el 55\u00A0% tenía al menos un espolón calcáneo plantar en la radiografía, y la presencia de espolón se relacionó con obesidad y artrosis, pero no con la postura del pie (Menz y colegas, 2008). Es una muestra de adultos mayores, no una cifra de la población general.',
@@ -38,7 +38,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       h2: '¿Un espolón calcáneo es lo mismo que la fascitis plantar?',
       figure: { id: 'heel-side', caption: 'Un espolón, cuando existe, se forma en la parte inferior del hueso del talón, cerca de donde se une la fascia plantar.', alt: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.' },
       paragraphs: [
-        'Un espolón calcáneo y la fascitis plantar no son lo mismo. La fascitis plantar es un problema de tejido blando: la fascia plantar, la banda gruesa que va del hueso del talón a los dedos, se irrita, generalmente donde se une al hueso. Un espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón (el calcáneo). Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.',
+        '**Un espolón calcáneo y la fascitis plantar no son lo mismo.** La fascitis plantar es un problema de tejido blando: la fascia plantar, la banda gruesa que va del hueso del talón a los dedos, se irrita, generalmente donde se une al hueso. Un espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón (el calcáneo). Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.',
         'La fascitis plantar provoca el dolor agudo y punzante que la gente describe en la parte de abajo del talón, sobre todo en los primeros pasos de la mañana o después de estar sentado un rato. La guía de 2023 la define como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Un espolón calcáneo, en cambio, es un hallazgo estructural en una radiografía. Puede o no producir síntomas por sí solo.',
         'La confusión es comprensible. Durante décadas se pensó que los espolones eran la causa del dolor plantar del talón. Esa visión ha sido reemplazada en gran medida por evidencia que muestra que los espolones son comunes en personas sin dolor, y que muchas personas con fascitis plantar no tienen ningún espolón.',
       ],
@@ -48,8 +48,17 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       h2: '¿Los espolones calcáneos realmente causan dolor?',
       keyFact: 'En un estudio con 530\u00A0personas con dolor de pie, un espolón solo en la radiografía apareció en apenas el 6\u00A0% de los pies, casi siempre junto con una fascia plantar engrosada (Menz y colegas, 2019).',
       paragraphs: [
-        'La mayoría de los espolones calcáneos no causan dolor. La investigación muestra de forma consistente que los espolones aparecen en personas sin síntomas de talón, y que quitar el espolón no detiene el dolor de manera confiable.',
-        'En un estudio con 530\u00A0personas de 50\u00A0años o más que reportaron dolor de pie, las radiografías encontraron un espolón calcáneo en el 26,5\u00A0% de los pies y el ultrasonido encontró una fascia plantar engrosada en el 47,3\u00A0% de los pies. Los dos hallazgos casi siempre iban juntos, y un espolón solo era raro (6\u00A0% de los pies). Las personas con dolor de talón tenían el doble de probabilidades de tener los dos hallazgos juntos (Menz y colegas, 2019). Dicho de otra forma, el espolón rara vez aparece sin el cambio de tejido blando que lo acompaña.',
+        '**La mayoría de los espolones calcáneos no causan dolor.** La investigación muestra de forma consistente que los espolones aparecen en personas sin síntomas de talón, y que quitar el espolón no detiene el dolor de manera confiable.',
+        'En un estudio con 530\u00A0personas de 50\u00A0años o más que reportaron dolor de pie:',
+        {
+          list: [
+            'Las radiografías encontraron un espolón calcáneo en el 26,5\u00A0% de los pies.',
+            'El ultrasonido encontró una fascia plantar engrosada en el 47,3\u00A0% de los pies.',
+            'Los dos hallazgos casi siempre iban juntos, y un espolón solo era raro (6\u00A0% de los pies).',
+            'Las personas con dolor de talón tenían el doble de probabilidades de tener los dos hallazgos juntos (Menz y colegas, 2019).',
+          ],
+        },
+        'Dicho de otra forma, el espolón rara vez aparece sin el cambio de tejido blando que lo acompaña.',
         'Por separado, en un estudio con 216\u00A0adultos mayores de 62 a 94\u00A0años, el 55\u00A0% tenía al menos un espolón calcáneo plantar en la radiografía. Los espolones se relacionaron con obesidad, artrosis e historial de dolor de talón, pero no con la postura del pie. Los autores sugirieron que los espolones pueden ser una respuesta adaptativa a la compresión vertical del talón, no un resultado de la fascia plantar jalando del hueso (Menz y colegas, 2008).',
         'El estudio de Menz de 2008 señala que investigaciones anteriores en la población general habían reportado una frecuencia de espolón calcáneo del 11 al 16\u00A0%, muy por debajo del 55\u00A0% que los autores encontraron en su muestra de adultos mayores. En esa misma muestra, cerca de 6 de cada 10\u00A0personas con espolón nunca habían tenido dolor de talón, aunque el dolor de talón sí fue más común en personas con espolón (40\u00A0%) que sin él (12\u00A0%) (Menz y colegas, 2008). Un espolón aumenta las probabilidades, pero no decide quién termina con dolor.',
       ],
@@ -63,24 +72,39 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       paragraphs: [
         'Los espolones calcáneos son comunes. La frecuencia depende del grupo de edad y del método que se use para buscarlos.',
         'El estudio de Menz de 2008 con adultos mayores cita investigaciones anteriores que reportaron una frecuencia de espolón calcáneo del 11 al 16\u00A0% en la población general, un rango muy por debajo del 55\u00A0% que los autores encontraron en su muestra de 216\u00A0personas de 62 a 94\u00A0años. Un estudio de resonancia magnética aparte, con 77\u00A0voluntarios sin síntomas (edad promedio 48, rango de 23 a 83), encontró un espolón calcáneo en 15 de ellos, el 19\u00A0% (Ehrmann y colegas, 2014).',
-        'El patrón es consistente: una proporción grande de personas con espolón no tiene síntomas, y un espolón solo no predice si alguien va a tener dolor de talón. Por eso la guía de 2023 no incluye el espolón calcáneo como razón para cambiar el enfoque de ejercicios.',
+        'El patrón es consistente: una proporción grande de personas con espolón no tiene síntomas, y **un espolón solo no predice si alguien va a tener dolor de talón.** Por eso la guía de 2023 no incluye el espolón calcáneo como razón para cambiar el enfoque de ejercicios.',
       ],
       cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: '¿Qué dice la guía de 2023 sobre los espolones calcáneos?',
       paragraphs: [
-        'La guía de práctica clínica de 2023 para el dolor de talón, publicada en el Journal of Orthopaedic and Sports Physical Therapy, se centra en la fascitis plantar como la causa más común de dolor plantar del talón. Menciona el «síndrome de espolón calcáneo» como uno de varios diagnósticos diferenciales, junto con el síndrome de la almohadilla grasa, la irritación nerviosa y la fractura por estrés del calcáneo.',
+        'La guía de práctica clínica de 2023 para el dolor de talón, publicada en el Journal of Orthopaedic and Sports Physical Therapy, se centra en la fascitis plantar como la causa más común de dolor plantar del talón. Menciona el «síndrome de espolón calcáneo» como uno de varios diagnósticos diferenciales, junto con:',
+        {
+          list: [
+            'El síndrome de la almohadilla grasa.',
+            'La irritación nerviosa.',
+            'La fractura por estrés del calcáneo.',
+          ],
+        },
         'La guía no recomienda estudios de imagen como primer paso cuando la exploración clínica ya apunta a fascitis plantar. Señala que los estudios de imagen «por lo general no están indicados en pacientes que cumplen los criterios de exploración clínica para fascitis plantar hasta que no responden a intervenciones conservadoras». Cuando se consideran, la radiografía con apoyo es la primera opción, seguida del ultrasonido o la resonancia magnética si hace falta.',
-        'En la práctica, esto significa que un profesional que ve el patrón típico, dolor en los primeros pasos de la mañana, sensibilidad al presionar la parte interna del talón y menos flexibilidad del tobillo, puede empezar con estiramientos y trabajo de fuerza sin esperar una radiografía. Que haya o no un espolón en una radiografía posterior no cambia el plan de ejercicios.',
+        'En la práctica, esto significa que un profesional que ve el patrón típico, dolor en los primeros pasos de la mañana, sensibilidad al presionar la parte interna del talón y menos flexibilidad del tobillo, puede empezar con estiramientos y trabajo de fuerza sin esperar una radiografía. **Que haya o no un espolón en una radiografía posterior no cambia el plan de ejercicios.**',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: '¿Necesitas una radiografía para distinguir la fascitis plantar de un espolón?',
       paragraphs: [
-        'Por lo general no necesitas una radiografía para la fascitis plantar. El diagnóstico es clínico: se basa en dónde está el dolor, cuándo aparece y qué lo empeora. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia lo que haces contra el dolor, y no encontrar uno no descarta la fascitis plantar.',
-        'Los estudios de imagen se vuelven útiles cuando el dolor no sigue el patrón típico de la fascitis plantar, cuando no ha mejorado después de varias semanas de cuidados conservadores, o cuando el profesional sospecha algo distinto, como una fractura por estrés, un problema nervioso o un desgarro de la fascia plantar. El ultrasonido puede medir el grosor de la fascia plantar (una lectura por encima de 4\u00A0mm generalmente se considera engrosada), y la resonancia magnética puede mostrar detalles de tejido blando que la radiografía no capta.',
+        '**Por lo general no necesitas una radiografía para la fascitis plantar.** El diagnóstico es clínico: se basa en dónde está el dolor, cuándo aparece y qué lo empeora. Una radiografía puede mostrar un espolón, pero encontrar uno no cambia lo que haces contra el dolor, y no encontrar uno no descarta la fascitis plantar.',
+        'Los estudios de imagen se vuelven útiles:',
+        {
+          list: [
+            'Cuando el dolor no sigue el patrón típico de la fascitis plantar.',
+            'Cuando no ha mejorado después de varias semanas de cuidados conservadores.',
+            'Cuando el profesional sospecha algo distinto, como una fractura por estrés, un problema nervioso o un desgarro de la fascia plantar.',
+          ],
+        },
+        'El ultrasonido puede medir el grosor de la fascia plantar (una lectura por encima de 4\u00A0mm generalmente se considera engrosada), y la resonancia magnética puede mostrar detalles de tejido blando que la radiografía no capta.',
         'Si ya te dijeron que tienes un espolón en una radiografía, el espolón en sí casi nunca necesita atención aparte. Los ejercicios y estiramientos que ayudan con la fascitis plantar también trabajan el tejido blando alrededor del espolón. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina completa.',
       ],
       cites: [CITE.guideline],
@@ -89,8 +113,14 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       h2: 'Si el espolón no es el problema, ¿qué es?',
       paragraphs: [
         'El dolor suele venir de la fascia plantar y los tejidos que la rodean, no del hueso. La fascia plantar se une a la parte inferior del hueso del talón. Cuando se sobrecarga, sobre todo en alguien con la pantorrilla tensa, un IMC alto o muchas horas de pie, ese punto de unión se irrita. Esa irritación es la fascitis plantar.',
-        'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos. Estar de pie la mayor parte de la jornada laboral también fue significativo, con 3,6\u00A0veces las probabilidades (Riddle y colegas, 2003).',
-        'El espolón, cuando está, se encuentra cerca. Puede haberse formado a lo largo de meses o años como respuesta al mismo estrés mecánico que irritó la fascia. Pero es la fascia y la pantorrilla lo que responde al estiramiento y al trabajo de fuerza, no el hueso. Por eso la guía recomienda ejercicio, no la remoción del espolón.',
+        'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles:',
+        {
+          list: [
+            'Una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos.',
+            'Estar de pie la mayor parte de la jornada laboral también fue significativo, con una razón de probabilidades de 3,6 (Riddle y colegas, 2003).',
+          ],
+        },
+        'El espolón, cuando está, se encuentra cerca. Puede haberse formado a lo largo de meses o años como respuesta al mismo estrés mecánico que irritó la fascia. Pero **es la fascia y la pantorrilla lo que responde al estiramiento y al trabajo de fuerza, no el hueso.** Por eso la guía recomienda ejercicio, no la remoción del espolón.',
         'Para una visión general completa de la fascitis plantar, incluyendo causas, factores de riesgo y lo que recomienda la guía, mira [fascitis plantar](/es/fascitis-plantar/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -98,7 +128,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     {
       h2: '¿Alguna vez es necesario quitar un espolón calcáneo?',
       paragraphs: [
-        'La remoción quirúrgica de un espolón calcáneo es rara y no es una opción de primera línea. La guía de 2023 no recomienda la remoción del espolón para la fascitis plantar. Varios estudios han demostrado que el dolor de la fascitis plantar puede resolverse con cuidados conservadores aunque el espolón siga en la radiografía. La Academia Americana de Cirujanos Ortopédicos señala directamente que «los espolones del talón no causan el dolor de la fascitis plantar» y que «el dolor de la fascitis plantar puede abordarse sin quitar el espolón».',
+        'La remoción quirúrgica de un espolón calcáneo es rara y no es una opción de primera línea. **La guía de 2023 no recomienda la remoción del espolón para la fascitis plantar.** Varios estudios han demostrado que el dolor de la fascitis plantar puede resolverse con cuidados conservadores aunque el espolón siga en la radiografía. La Academia Americana de Cirujanos Ortopédicos señala directamente que «los espolones del talón no causan el dolor de la fascitis plantar» y que «el dolor de la fascitis plantar puede abordarse sin quitar el espolón».',
         'La cirugía a veces se considera cuando el dolor no ha respondido a meses de cuidados conservadores, pero el procedimiento típico es una liberación parcial de la fascia plantar, no una remoción del espolón. Si el espolón se retira durante esa cirugía, la evidencia sugiere que el beneficio vino de la liberación de la fascia, no de quitar el hueso.',
         'La gran mayoría de las personas con dolor de talón y un espolón mejoran con los mismos estiramientos, trabajo de pantorrilla y manejo de la carga que usan las personas sin espolón. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina práctica.',
       ],
@@ -125,7 +155,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
         },
         {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
-          evidence: { level: 'strong', why: 'Mismo grado A en la guía. Trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla.' },
+          evidence: { level: 'strong', why: 'Mismo grado A en la guía. Trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla.' },
           dose: '2\u00A0repeticiones de 30\u00A0segundos, cada pierna',
           how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Una pantorrilla tensa jala del talón a través del tendón de Aquiles, añadiendo carga a la fascia.',
           often: 'La mayoría de las sesiones',

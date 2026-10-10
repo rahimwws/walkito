@@ -40,7 +40,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
       h2: 'Esporão no calcanhar é a mesma coisa que fascite plantar?',
       figure: { id: 'heel-side', caption: 'O esporão, quando existe, se forma na parte de baixo do osso do calcanhar, perto de onde a fáscia plantar se prende.', alt: 'Vista lateral interna de um pé com a pele transparente, mostrando o osso do calcanhar, a fáscia plantar sob o arco e uma área vermelha sob o calcanhar onde a dor costuma começar.' },
       paragraphs: [
-        'Esporão no calcanhar e fascite plantar não são a mesma coisa. A fascite plantar é um problema de tecido mole: a fáscia plantar, a faixa grossa que vai do osso do calcanhar até os dedos, fica irritada, normalmente onde se prende ao osso. O esporão é um crescimento de osso na parte de baixo do osso do calcanhar (o calcâneo). Os dois muitas vezes existem juntos, mas cada um pode aparecer sem o outro.',
+        '**Esporão no calcanhar e fascite plantar não são a mesma coisa.** A fascite plantar é um problema de tecido mole: a fáscia plantar, a faixa grossa que vai do osso do calcanhar até os dedos, fica irritada, normalmente onde se prende ao osso. O esporão é um crescimento de osso na parte de baixo do osso do calcanhar (o calcâneo). Os dois muitas vezes existem juntos, mas cada um pode aparecer sem o outro.',
         'A fascite plantar causa a dor forte, em pontada, que as pessoas descrevem embaixo do calcanhar, principalmente nos primeiros passos da manhã ou depois de ficar sentado. A diretriz de 2023 para dor no calcanhar a define como uma dor “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. O esporão, por outro lado, é um achado estrutural no raio-X. Ele pode ou não causar sintomas próprios.',
         'A confusão é compreensível. Durante décadas, achava-se que o esporão era a causa da dor embaixo do calcanhar. Essa visão foi em grande parte substituída por evidências mostrando que o esporão é comum em pessoas sem dor, e que muitas pessoas com fascite plantar não têm esporão nenhum.',
       ],
@@ -48,10 +48,19 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     },
     {
       h2: 'Esporão no calcanhar causa dor?',
-      keyFact: 'Em um estudo com 530\u00A0pessoas com dor no pé, o esporão no raio-X apareceu sozinho em só 6% dos pés, normalmente junto com uma fáscia plantar espessada (Menz e colegas, 2019).',
+      keyFact: 'Em um estudo com 530\u00A0pessoas com dor no pé, o esporão no raio-X apareceu sozinho em só 6% dos pés; na maioria das vezes vinha junto com uma fáscia plantar espessada (Menz e colegas, 2019).',
       paragraphs: [
-        'A maioria dos esporões não causa dor. A pesquisa mostra de forma consistente que o esporão aparece em pessoas sem nenhum sintoma no calcanhar, e que tirar o esporão não acaba com a dor de forma confiável.',
-        'Em um estudo com 530\u00A0pessoas de 50\u00A0anos ou mais que relatavam dor no pé, o raio-X encontrou esporão em 26,5% dos pés e o ultrassom encontrou fáscia plantar espessada em 47,3% dos pés. Os dois normalmente vinham juntos, e o esporão sozinho era raro (6% dos pés). Pessoas com dor no calcanhar tinham cerca de duas vezes mais chance de ter os dois achados juntos (Menz e colegas, 2019). Ou seja, o esporão raramente aparece sem a mudança no tecido mole que vem com ele.',
+        '**A maioria dos esporões não causa dor.** A pesquisa mostra de forma consistente que o esporão aparece em pessoas sem nenhum sintoma no calcanhar, e que tirar o esporão não acaba com a dor de forma confiável.',
+        'Em um estudo com 530\u00A0pessoas de 50\u00A0anos ou mais que relatavam dor no pé:',
+        {
+          list: [
+            'O raio-X encontrou esporão em 26,5% dos pés.',
+            'O ultrassom encontrou fáscia plantar espessada em 47,3% dos pés.',
+            'Os dois normalmente vinham juntos, e o esporão sozinho era raro (6% dos pés).',
+            'Pessoas com dor no calcanhar tinham cerca de duas vezes as chances de ter os dois achados juntos (Menz e colegas, 2019).',
+          ],
+        },
+        'Ou seja, o esporão raramente aparece sem a mudança no tecido mole que vem com ele.',
         'Em outro estudo, com 216\u00A0idosos de 62 a 94\u00A0anos, 55% tinham pelo menos um esporão plantar no calcâneo no raio-X. O esporão estava ligado a obesidade, artrose e histórico de dor no calcanhar, mas não à postura do pé. Os autores sugeriram que o esporão pode ser uma resposta de adaptação à compressão vertical do calcanhar, e não resultado da fáscia plantar puxando o osso (Menz e colegas, 2008).',
         'O estudo de Menz de 2008 observa que pesquisas anteriores na população em geral tinham relatado prevalência de esporão de 11 a 16%, bem abaixo dos 55% que os autores encontraram na amostra de idosos deles. Nessa mesma amostra de idosos, cerca de 6 em cada 10 pessoas com esporão nunca tinham tido dor no calcanhar, embora a dor no calcanhar ainda fosse mais comum em quem tinha esporão (40%) do que em quem não tinha (12%) (Menz e colegas, 2008). O esporão aumenta as chances, mas não decide quem vai ter dor.',
       ],
@@ -65,24 +74,39 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
       paragraphs: [
         'O esporão no calcanhar é comum. A prevalência depende da faixa etária e do método usado para procurá-lo.',
         'O estudo de Menz de 2008 com idosos cita pesquisas anteriores que relataram prevalência de esporão de 11 a 16% na população em geral, bem abaixo dos 55% que os autores encontraram na própria amostra de 216\u00A0pessoas de 62 a 94\u00A0anos. Um estudo separado de ressonância magnética com 77\u00A0voluntários sem sintomas (idade média de 48\u00A0anos, de 23 a 83) encontrou esporão no calcâneo em 15 deles, 19% (Ehrmann e colegas, 2014).',
-        'O padrão é consistente: uma parte grande das pessoas com esporão não tem sintomas, e o esporão sozinho não prevê se alguém vai ter dor no calcanhar. É por isso que a diretriz de 2023 para dor no calcanhar não cita o esporão como motivo para mudar a abordagem de exercícios.',
+        'O padrão é consistente: uma parte grande das pessoas com esporão não tem sintomas, e **o esporão sozinho não prevê se alguém vai ter dor no calcanhar.** É por isso que a diretriz de 2023 para dor no calcanhar não cita o esporão como motivo para mudar a abordagem de exercícios.',
       ],
       cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: 'O que a diretriz de 2023 diz sobre esporão no calcanhar?',
       paragraphs: [
-        'A diretriz de prática clínica de 2023 para dor no calcanhar, publicada no Journal of Orthopaedic and Sports Physical Therapy, trata a fascite plantar como a causa mais comum de dor embaixo do calcanhar. Ela cita a “síndrome do esporão do calcâneo” como um dos vários diagnósticos diferenciais, junto com a síndrome do coxim gorduroso, a irritação de nervo e a fratura por estresse do calcâneo.',
+        'A diretriz de prática clínica de 2023 para dor no calcanhar, publicada no Journal of Orthopaedic and Sports Physical Therapy, trata a fascite plantar como a causa mais comum de dor embaixo do calcanhar. Ela cita a “síndrome do esporão do calcâneo” como um dos vários diagnósticos diferenciais, junto com:',
+        {
+          list: [
+            'A síndrome do coxim gorduroso.',
+            'A irritação de nervo.',
+            'A fratura por estresse do calcâneo.',
+          ],
+        },
         'A diretriz não recomenda exame de imagem como primeiro passo quando o exame clínico já aponta para fascite plantar. Ela diz que exames de imagem “normalmente não são indicados para pacientes que atendem aos critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem”. Quando um exame de imagem é considerado, o raio-X com apoio de peso é a primeira escolha, seguido de ultrassom ou ressonância magnética se for preciso.',
-        'Na prática, isso significa que um profissional de saúde que vê o padrão típico (dor nos primeiros passos da manhã, sensibilidade na parte de dentro do calcanhar e pouca flexibilidade no tornozelo) pode começar alongamento e treino de força sem esperar um raio-X. Ter ou não ter esporão num raio-X feito depois não muda o plano de exercícios.',
+        'Na prática, isso significa que um profissional de saúde que vê o padrão típico (dor nos primeiros passos da manhã, dor ao toque na parte de dentro do calcanhar e pouca flexibilidade no tornozelo) pode começar alongamento e treino de força sem esperar um raio-X. **Ter ou não ter esporão num raio-X feito depois não muda o plano de exercícios.**',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Precisa de raio-X para diferenciar fascite plantar de esporão?',
       paragraphs: [
-        'Normalmente você não precisa de raio-X para fascite plantar. O diagnóstico é clínico: se baseia em onde a dor fica, quando ela aparece e o que a piora. Um raio-X pode mostrar um esporão, mas encontrá-lo não muda o que você faz pela dor, e não encontrá-lo não descarta fascite plantar.',
-        'O exame de imagem passa a ser útil quando a dor não segue o padrão típico da fascite plantar, quando ela não melhorou depois de várias semanas de tratamento conservador, ou quando um profissional de saúde suspeita de outra coisa, como uma fratura por estresse, um problema de nervo ou uma ruptura da fáscia plantar. O ultrassom consegue medir a espessura da fáscia plantar (uma medida acima de 4\u00A0mm costuma ser considerada espessada), e a ressonância magnética mostra detalhes do tecido mole que o raio-X não mostra.',
+        '**Normalmente você não precisa de raio-X para fascite plantar.** O diagnóstico é clínico: se baseia em onde a dor fica, quando ela aparece e o que a piora. Um raio-X pode mostrar um esporão, mas encontrá-lo não muda o que você faz pela dor, e não encontrá-lo não descarta fascite plantar.',
+        'O exame de imagem passa a ser útil:',
+        {
+          list: [
+            'Quando a dor não segue o padrão típico da fascite plantar.',
+            'Quando ela não melhorou depois de várias semanas de tratamento conservador.',
+            'Quando um profissional de saúde suspeita de outra coisa, como uma fratura por estresse, um problema de nervo ou uma ruptura da fáscia plantar.',
+          ],
+        },
+        'O ultrassom consegue medir a espessura da fáscia plantar (uma medida acima de 4\u00A0mm costuma ser considerada espessada), e a ressonância magnética mostra detalhes do tecido mole que o raio-X não mostra.',
         'Se já disseram que você tem esporão num raio-X, o esporão em si quase nunca precisa de atenção separada. Os exercícios e alongamentos que ajudam na fascite plantar também trabalham o tecido mole em volta do esporão. Veja [exercícios para esporão no calcanhar](/pt/esporao-calcaneo-exercicios/) para a rotina completa.',
       ],
       cites: [CITE.guideline],
@@ -91,8 +115,14 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
       h2: 'Se o problema não é o esporão, o que é?',
       paragraphs: [
         'A dor normalmente vem da fáscia plantar e dos tecidos em volta dela, não do osso. A fáscia plantar se prende embaixo do osso do calcanhar. Quando ela é sobrecarregada, principalmente em quem tem a panturrilha tensa, IMC alto ou passa muitas horas em pé, esse ponto de ligação fica irritado. Essa irritação é a fascite plantar.',
-        'Uma panturrilha tensa é um dos fatores de risco mais fortes. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão do tornozelo reduzida, o quanto o pé consegue subir em direção à canela, teve a maior razão de chances de todos os fatores medidos. Ficar em pé a maior parte do dia de trabalho também foi significativo, com 3,6\u00A0vezes as chances (Riddle e colegas, 2003).',
-        'O esporão, quando existe, fica ali perto. Ele pode ter se formado ao longo de meses ou anos em resposta ao mesmo estresse mecânico que irritou a fáscia. Mas são a fáscia e a panturrilha que respondem ao alongamento e ao fortalecimento, não o osso. É por isso que a diretriz recomenda exercício, e não retirar o esporão.',
+        'Uma panturrilha tensa é um dos fatores de risco mais fortes. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles:',
+        {
+          list: [
+            'A dorsiflexão do tornozelo reduzida, o quanto o pé consegue subir em direção à canela, teve a maior razão de chances de todos os fatores medidos.',
+            'Ficar em pé a maior parte do dia de trabalho também foi significativo, com 3,6\u00A0vezes as chances (Riddle e colegas, 2003).',
+          ],
+        },
+        'O esporão, quando existe, fica ali perto. Ele pode ter se formado ao longo de meses ou anos em resposta ao mesmo estresse mecânico que irritou a fáscia. Mas **são a fáscia e a panturrilha que respondem ao alongamento e ao fortalecimento, não o osso.** É por isso que a diretriz recomenda exercício, e não retirar o esporão.',
         'Para uma visão completa da fascite plantar, incluindo causas, fatores de risco e o que a diretriz recomenda, veja [fascite plantar](/pt/fascite-plantar/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -100,7 +130,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     {
       h2: 'O esporão no calcanhar precisa ser retirado alguma vez?',
       paragraphs: [
-        'Retirar o esporão com cirurgia é raro e não é uma opção de primeira linha. A diretriz de 2023 não recomenda retirar o esporão na fascite plantar. Vários estudos mostraram que a dor da fascite plantar pode passar com tratamento conservador mesmo com o esporão continuando no raio-X. A American Academy of Orthopaedic Surgeons diz claramente que “o esporão no calcanhar não causa a dor da fascite plantar” e que “a dor da fascite plantar pode ser tratada sem retirar o esporão”.',
+        'Retirar o esporão com cirurgia é raro e não é uma opção de primeira linha. **A diretriz de 2023 não recomenda retirar o esporão na fascite plantar.** Vários estudos mostraram que a dor da fascite plantar pode passar com tratamento conservador mesmo com o esporão continuando no raio-X. A American Academy of Orthopaedic Surgeons diz claramente que “o esporão no calcanhar não causa a dor da fascite plantar” e que “a dor da fascite plantar pode ser tratada sem retirar o esporão”.',
         'A cirurgia às vezes é considerada quando a dor não respondeu a meses de tratamento conservador, mas o procedimento costuma ser uma liberação parcial da fáscia plantar, não a retirada do esporão. Se o esporão acaba sendo retirado nessa cirurgia, a evidência sugere que o benefício veio da liberação da fáscia, não da retirada do osso.',
         'A grande maioria das pessoas com dor no calcanhar e esporão melhora com o mesmo alongamento, o mesmo treino de panturrilha e o mesmo controle de carga que as pessoas sem esporão usam. Veja [exercícios para esporão no calcanhar](/pt/esporao-calcaneo-exercicios/) para a rotina prática.',
       ],
@@ -127,7 +157,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
         },
         {
           name: 'Alongamento de panturrilha (joelho esticado)',
-          evidence: { level: 'strong', why: 'O mesmo grau A na diretriz. Trabalha o gastrocnêmio, o músculo maior e mais externo da panturrilha.' },
+          evidence: { level: 'strong', why: 'O mesmo grau A na diretriz. Trabalha o gastrocnêmio, o músculo maior e mais superficial da panturrilha.' },
           dose: '2\u00A0vezes de 30\u00A0segundos, cada perna',
           how: 'Mãos na parede. Perna de trás esticada, calcanhar no chão, quadril para a frente. Uma panturrilha tensa puxa o calcanhar pelo tendão de Aquiles, o que aumenta a carga na fáscia.',
           often: 'Quase todas as sessões',
@@ -166,7 +196,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     },
     {
       q: 'Dá para ter fascite plantar sem esporão?',
-      a: 'Sim. Muitas pessoas com fascite plantar não têm esporão no raio-X. A dor vem da fáscia plantar irritada, não do osso. A diretriz de 2023 não exige exame de imagem para diagnosticar fascite plantar quando o padrão clínico é claro: dor nos primeiros passos da manhã, sensibilidade no calcanhar e panturrilha tensa.',
+      a: 'Sim. Muitas pessoas com fascite plantar não têm esporão no raio-X. A dor vem da fáscia plantar irritada, não do osso. A diretriz de 2023 não exige exame de imagem para diagnosticar fascite plantar quando o padrão clínico é claro: dor nos primeiros passos da manhã, dor ao toque no calcanhar e panturrilha tensa.',
     },
     {
       q: 'Exercício para esporão dissolve o esporão?',

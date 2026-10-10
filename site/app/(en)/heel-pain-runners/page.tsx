@@ -298,28 +298,38 @@ export default function HeelPainRunners() {
             <p>
               Where it hurts changes the next step. Pain in the middle of the
               tendon, a few centimeters above the heel, usually starts with calf
-              loading. Pain right where the tendon attaches is handled more
+              loading.
+            </p>
+            <p>
+              Pain right where the tendon attaches is handled more
               carefully: a deep stretch at the bottom of a heel drop can irritate
               that spot, so the work usually starts from flat ground instead of
               off a step. Walkito’s calf stretches and heel raises are built for
-              the plantar fascia and the calf, not for pain at the attachment. If
-              yours sits right on the back of the heel bone, have a clinician
-              check it before you load it hard.
+              the plantar fascia and the calf, not for pain at the attachment.{' '}
+              <strong>If yours sits right on the back of the heel bone, have a clinician
+              check it before you load it hard.</strong>
             </p>
             <Evidence level="strong">
               Several controlled trials agree that loading the calf helps
               mid-tendon Achilles pain.
             </Evidence>
-            <p>
-              In a small 1998 trial, 15 recreational athletes with long-standing
-              Achilles pain did heavy eccentric calf raises (lowering slowly under
-              load) twice a day for 12 weeks. All 15 were back to running at
-              their earlier level. A 2007 trial of 38 people found that staying
-              active during rehab, as long as pain stayed within an agreed limit,
-              did as well as stopping running and jumping first. A 2015 trial of
-              58 people compared heavy slow strength work three times a week with
-              the eccentric routine.
-            </p>
+            <ul>
+              <li>
+                <strong>1998:</strong> in a small trial, 15 recreational athletes with
+                long-standing Achilles pain did heavy eccentric calf raises (lowering
+                slowly under load) twice a day for 12 weeks. All 15 were back to
+                running at their earlier level.
+              </li>
+              <li>
+                <strong>2007:</strong> a trial of 38 people found that staying active
+                during rehab, as long as pain stayed within an agreed limit, did as
+                well as stopping running and jumping first.
+              </li>
+              <li>
+                <strong>2015:</strong> a trial of 58 people compared heavy slow strength
+                work three times a week with the eccentric routine.
+              </li>
+            </ul>
             <blockquote>
               <p>
                 “Both traditional ECC and HSR yield positive, equally good,
@@ -414,7 +424,10 @@ export default function HeelPainRunners() {
               this tendon, calf and ankle stretches, and balance work, often with
               an arch-support insert. Walkito’s band turn-in trains that same
               muscle, and its ankle and balance work overlaps with what the review
-              covered. If the inside of your ankle is swollen, or one arch looks
+              covered.
+            </p>
+            <p>
+              If the inside of your ankle is swollen, or one arch looks
               flatter than it did a year ago, see a clinician first. Missed early,
               this can lead to a flat foot that stays flat.
             </p>
@@ -504,10 +517,12 @@ export default function HeelPainRunners() {
             <p>
               A runner should see a clinician before running on if the pain
               builds during runs after adding mileage, or if squeezing the sides
-              of the heel hurts. Both can be signs of a stress fracture. Sharp
-              pain when you run, or pain that gets worse week after week, needs a
-              clinician too. So does heel or shin pain that wakes you at night:
-              pain at rest points more toward a stress fracture than toward
+              of the heel hurts. Both can be signs of a stress fracture.
+            </p>
+            <p>
+              Sharp pain when you run, or pain that gets worse week after week,
+              needs a clinician too. So does heel or shin pain that wakes you at
+              night: pain at rest points more toward a stress fracture than toward
               plantar fasciitis, Achilles pain or shin splints.
             </p>
             <h3>{HEEL_PAIN_EN.redFlags.h2}</h3>
@@ -525,11 +540,17 @@ export default function HeelPainRunners() {
               Walkito builds a plan one week at a time around one goal you can
               measure. For heel pain, the first goal is morning pain at{' '}
               {PAIN_GOAL_MAX}/10 or less for {PROGRAM.painFreeDays} days in a
-              row. The others are a {archHoldSeconds}-second arch hold,{' '}
-              {calfRaises} single-leg calf raises, {balanceSeconds} seconds of
-              single-leg balance, and left and right within {gapPercent}% of each
-              other. A goal you reach moves to maintaining at a lower dose, and
-              the next one takes its place.
+              row. The others are:
+            </p>
+            <ul>
+              <li>A {archHoldSeconds}-second arch hold.</li>
+              <li>{calfRaises} single-leg calf raises.</li>
+              <li>{balanceSeconds} seconds of single-leg balance.</li>
+              <li>Left and right within {gapPercent}% of each other.</li>
+            </ul>
+            <p>
+              A goal you reach moves to maintaining at a lower dose, and the next
+              one takes its place.
             </p>
             <p>
               You pick {DAYS_A}, {DAYS_B} or {DAYS_C} days a week and sessions of{' '}

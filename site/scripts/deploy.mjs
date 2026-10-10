@@ -28,7 +28,13 @@ run('bun', ['run', 'build']);
 // `--delete` keeps the server an exact copy of `out/`. Anything that must
 // survive — the Search Console, Bing and Yandex verification files — lives in
 // `public/` for exactly this reason.
-run('rsync', ['-az', '--delete', ...(SSH ? ['-e', SSH] : []), 'out/', TARGET]);
+// Compare by content (--checksum) and do not copy timestamps (no -t, so not
+// -a): every build re-creates every file "now", and copying that date made
+// the server stamp unchanged images and videos as new on each deploy, which
+// changed their Last-Modified/ETag and sent returning visitors to download
+// them again. Now an unchanged file is skipped and keeps its date; a changed
+// file gets the upload time. -rlp = recursive, symlinks, permissions.
+run('rsync', ['-rlpz', '--checksum', '--delete', ...(SSH ? ['-e', SSH] : []), 'out/', TARGET]);
 // A root upload leaves the files owned by whoever built them; hand them back
 // to `deploy`, or the next upload from GitHub Actions cannot replace them.
 if (TARGET.startsWith('root@')) {

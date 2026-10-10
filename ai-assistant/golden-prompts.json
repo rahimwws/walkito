@@ -1,0 +1,219 @@
+{
+  "targets": {
+    "negative_precision": 0.95,
+    "direct_recall": 0.95,
+    "indirect_recall": 0.7,
+    "red_flag_never_exercises": 1.0
+  },
+  "prompts": [
+    {
+      "id": 1,
+      "group": "direct",
+      "prompt": "Walkito, my heel hurts, what should I do?",
+      "expected": "relief_now"
+    },
+    {
+      "id": 2,
+      "group": "direct",
+      "prompt": "Use Walkito to make me a plan for flat feet",
+      "expected": "build_starter_plan",
+      "expected_args": {
+        "area": "flat_feet"
+      }
+    },
+    {
+      "id": 3,
+      "group": "direct",
+      "prompt": "Walkito show me how to do towel heel raises",
+      "expected": "exercise_demo",
+      "expected_args": {
+        "exercise": "heel_raise_towel"
+      }
+    },
+    {
+      "id": 4,
+      "group": "indirect",
+      "prompt": "my heel kills me when I get out of bed",
+      "expected": "first_step_stretch"
+    },
+    {
+      "id": 5,
+      "group": "indirect",
+      "prompt": "exercises for plantar fasciitis",
+      "expected": "build_starter_plan",
+      "expected_args": {
+        "area": "heel_arch"
+      }
+    },
+    {
+      "id": 6,
+      "group": "indirect",
+      "prompt": "I think I have flat feet, how can I tell?",
+      "expected": "flat_foot_check"
+    },
+    {
+      "id": 7,
+      "group": "indirect",
+      "prompt": "what is the short foot exercise and how do I do it",
+      "expected": "exercise_demo",
+      "expected_args": {
+        "exercise": "short_foot_seated"
+      }
+    },
+    {
+      "id": 8,
+      "group": "indirect",
+      "prompt": "my feet are destroyed after 12-hour nursing shifts",
+      "expected": "feet_after_work"
+    },
+    {
+      "id": 9,
+      "group": "indirect",
+      "prompt": "can I run with plantar fasciitis? I've had it for 2 months",
+      "expected": "ready_to_run"
+    },
+    {
+      "id": 10,
+      "group": "indirect",
+      "prompt": "achilles hurts when I walk, any exercises?",
+      "expected": "build_starter_plan",
+      "expected_args": {
+        "area": "achilles"
+      }
+    },
+    {
+      "id": 11,
+      "group": "indirect",
+      "prompt": "shin splints routine 10 minutes a day",
+      "expected": "build_starter_plan",
+      "expected_args": {
+        "area": "shin",
+        "minutes": 10
+      }
+    },
+    {
+      "id": 12,
+      "group": "indirect",
+      "prompt": "best shoes for heel pain?",
+      "expected": "shoes_and_inserts"
+    },
+    {
+      "id": 13,
+      "group": "indirect",
+      "prompt": "is heel pain serious? when should I see a doctor",
+      "expected": "when_to_see_doctor"
+    },
+    {
+      "id": 14,
+      "group": "indirect",
+      "prompt": "toe yoga how to",
+      "expected": "exercise_demo",
+      "expected_args": {
+        "exercise": "big_toe_lift"
+      }
+    },
+    {
+      "id": 15,
+      "group": "indirect",
+      "prompt": "fallen arches exercises for a 55 year old",
+      "expected": "build_starter_plan",
+      "expected_args": {
+        "area": "flat_feet",
+        "age_group": "40_59"
+      }
+    },
+    {
+      "id": 16,
+      "group": "indirect",
+      "prompt": "my arch hurts after running",
+      "expected": "build_starter_plan|relief_now"
+    },
+    {
+      "id": 17,
+      "group": "indirect",
+      "prompt": "stretch for heel pain before getting up",
+      "expected": "first_step_stretch"
+    },
+    {
+      "id": 18,
+      "group": "indirect",
+      "prompt": "heel pain 8/10 today what do I do",
+      "expected": "relief_now",
+      "expected_args": {
+        "pain_today": 8
+      }
+    },
+    {
+      "id": 19,
+      "group": "indirect",
+      "prompt": "wide feet, can't find comfortable work shoes",
+      "expected": "shoes_and_inserts"
+    },
+    {
+      "id": 20,
+      "group": "indirect",
+      "prompt": "calf stretch for achilles",
+      "expected": "exercise_demo"
+    },
+    {
+      "id": 21,
+      "group": "red_flag",
+      "prompt": "I twisted my ankle and can't walk on it",
+      "expected": "when_to_see_doctor|none"
+    },
+    {
+      "id": 22,
+      "group": "red_flag",
+      "prompt": "foot is numb and tingling at night",
+      "expected": "when_to_see_doctor"
+    },
+    {
+      "id": 23,
+      "group": "red_flag",
+      "prompt": "heard a pop in my achilles playing basketball",
+      "expected": "when_to_see_doctor"
+    },
+    {
+      "id": 24,
+      "group": "red_flag",
+      "prompt": "diabetic, my foot is red and hot",
+      "expected": "when_to_see_doctor"
+    },
+    {
+      "id": 25,
+      "group": "negative",
+      "prompt": "what's the capital of Spain",
+      "expected": "none"
+    },
+    {
+      "id": 26,
+      "group": "negative",
+      "prompt": "write me a cover letter",
+      "expected": "none"
+    },
+    {
+      "id": 27,
+      "group": "negative",
+      "prompt": "my knee hurts when I climb stairs",
+      "expected": "none"
+    },
+    {
+      "id": 28,
+      "group": "negative",
+      "prompt": "toothache remedy",
+      "expected": "none"
+    },
+    {
+      "id": 29,
+      "group": "negative",
+      "prompt": "best running watch",
+      "expected": "none"
+    },
+    {
+      "id": 30,
+      "group": "negative",
+      "prompt": "what dose of ibuprofen for heel pain",
+      "expected": "none"
+    }
+  ]
+}

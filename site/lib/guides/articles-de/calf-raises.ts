@@ -24,7 +24,7 @@ export const CALF_RAISES_DE: Guide = {
   takeaways: [
     'In einer Studie mit 48\u00A0Personen linderte Fersenheben mit Zusatzgewicht und einem Handtuch unter den Zehen die Schmerzen bei Plantarfasziitis nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
     'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Krafttraining mit B, ihrer zweitbesten Bewertung, und Dehnen mit A (Koc und Kollegen, 2023).',
-    'Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, oft verursacht durch einen verkürzten Gastrocnemius, den größeren äußeren Wadenmuskel, ist ein unabhängiger Risikofaktor für Plantarfasziitis (Riddle und Kollegen, 2003).',
+    'Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, oft verursacht durch einen verkürzten Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel, ist ein unabhängiger Risikofaktor für Plantarfasziitis (Riddle und Kollegen, 2003).',
     'Das Handtuch unter den Zehen aktiviert den Windlass-Mechanismus und belastet so die Plantarfaszie zusammen mit der Wade.',
     'Eine Zahl im unteren bis mittleren 20er-Bereich beim einbeinigen Fersenheben, im Schnitt etwa 23 bis 24, ist ein häufig genannter Richtwert für Erwachsene und hilft, den Fortschritt über Wochen zu verfolgen (Hebert-Losier und Kollegen, 2017).',
   ],
@@ -35,8 +35,9 @@ export const CALF_RAISES_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Wadenheben hilft bei Plantarfasziitis, weil es die Kette aus Wade, Achillessehne und Plantarfaszie kräftigt, die bei jedem Fersenaufsatz die Last abfängt.',
-        'Die einzige randomisierte Studie, die diese Übung direkt bei Plantarfasziitis getestet hat, ist Rathleff 2015. In dieser Studie wurden 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis in zwei Gruppen aufgeteilt. Beide trugen Schuheinlagen. Eine Gruppe machte langsames Fersenheben mit Zusatzgewicht und einem zusammengerollten Handtuch unter den Zehen. Die andere dehnte die Plantarfaszie. Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index um 29\u00A0Punkte besser ab. Nach zwölf Monaten lagen beide Gruppen gleichauf.',
-        'Wadenheben hat die Besserung also vorgezogen. Langfristig größer gemacht hat es sie nicht. Die klinische Leitlinie von 2023 bewertet Krafttraining mit B und Dehnen mit A. Sie empfiehlt beides. Nichts in der Studienlage spricht dafür, dass du dich für eins entscheiden und das andere weglassen solltest.',
+        'Die einzige randomisierte Studie, die diese Übung direkt bei Plantarfasziitis getestet hat, ist Rathleff 2015. In dieser Studie wurden 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis in zwei Gruppen aufgeteilt. Beide trugen Schuheinlagen. Eine Gruppe machte langsames Fersenheben mit Zusatzgewicht und einem zusammengerollten Handtuch unter den Zehen. Die andere dehnte die Plantarfaszie.',
+        'Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index um 29\u00A0Punkte besser ab. Nach zwölf Monaten lagen beide Gruppen gleichauf.',
+        '**Wadenheben hat die Besserung also beschleunigt,** aber langfristig nicht verstärkt. Die klinische Leitlinie von 2023 bewertet Krafttraining mit B und Dehnen mit A. Sie empfiehlt beides. Nichts in der Studienlage spricht dafür, dass du dich für eins entscheiden und das andere weglassen solltest.',
       ],
       sourceNote:
         'Rathleff 2015: Foot Function Index 29\u00A0Punkte niedriger in der Fersenheben-Gruppe nach 3\u00A0Monaten (95-%-KI 6-52, p = 0,016). Nach 12\u00A0Monaten 22 gegenüber 16, kein signifikanter Unterschied.',
@@ -45,8 +46,9 @@ export const CALF_RAISES_DE: Guide = {
     {
       h2: 'Wie geht Fersenheben mit Handtuch bei Plantarfasziitis?',
       paragraphs: [
-        'Das Fersenheben mit Handtuch ist die Übung aus der Rathleff-Studie. Es ist ein einbeiniges Fersenheben auf einer Stufe, mit einem zusammengerollten Handtuch unter den Zehen. Das Handtuch zieht die Zehen oben in der Bewegung nach oben und aktiviert so den Windlass-Mechanismus: die Art, wie sich die Plantarfaszie spannt, wenn sich der große Zeh nach hinten beugt. Ohne Handtuch trainierst du die Wade, belastest die Faszie aber viel weniger.',
-        'Stell dich mit einem Fuß auf die Kante einer Stufe, ein zusammengerolltes Handtuch liegt unter allen fünf Zehen. Der Fußballen bleibt auf der Stufe. Halt dich zum Ausbalancieren an einer Wand oder einem Geländer fest. Nimm dir drei Sekunden zum Hochkommen, halte oben zwei und nimm dir drei zum Absenken. Lass die Ferse beim Absenken leicht unter die Stufe sinken. In der Studie nahmen die Teilnehmenden einen Rucksack als Zusatzgewicht dazu, sobald das eigene Körpergewicht zu leicht wurde.',
+        'Das Fersenheben mit Handtuch ist die Übung aus der Rathleff-Studie. Es ist ein einbeiniges Fersenheben auf einer Stufe, mit einem zusammengerollten Handtuch unter den Zehen. Das Handtuch zieht die Zehen oben in der Bewegung nach oben und aktiviert so den Windlass-Mechanismus: die Art, wie sich die Plantarfaszie spannt, wenn sich der große Zeh nach hinten beugt. **Ohne Handtuch trainierst du die Wade, belastest die Faszie aber viel weniger.**',
+        'Stell dich mit einem Fuß auf die Kante einer Stufe, ein zusammengerolltes Handtuch liegt unter allen fünf Zehen. Der Fußballen bleibt auf der Stufe. Halt dich zum Ausbalancieren an einer Wand oder einem Geländer fest.',
+        'Nimm dir drei Sekunden zum Hochkommen, halte oben zwei und nimm dir drei zum Absenken. Lass die Ferse beim Absenken leicht unter die Stufe sinken. In der Studie nahmen die Teilnehmenden einen Rucksack als Zusatzgewicht dazu, sobald das eigene Körpergewicht zu leicht wurde.',
         'Fang beidbeinig an, wenn einbeiniges Fersenheben gerade noch zu schwer ist. Fersenheben beidbeinig auf dem Boden, ohne Stufe, ist der Anfang der Wadenkette. Handtuch und Stufe kommen später dazu, sobald sich Fersenheben im Stehen zwei Einheiten hintereinander leicht angefühlt hat.',
       ],
       exercises: [
@@ -144,8 +146,20 @@ export const CALF_RAISES_DE: Guide = {
     {
       h2: 'Womit fängst du in Walkito an?',
       paragraphs: [
-        'Walkito wirft dich nicht am ersten Tag ins Rathleff-Protokoll. Die App beginnt mit Fersenheben im Sitzen (3\u00A0Sätze à 10, beide Füße), geht dann zum Fersenheben beidbeinig im Stehen, dann zum Fersenheben mit Halten und erst danach zum einbeinigen Fersenheben mit Handtuch und Zusatzgewicht. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben. Diese Leiter ist das eigene Tempo der App, kein veröffentlichtes Protokoll. Es gibt sie, weil die meisten, die mit einem Übungsplan gegen Fersenschmerzen anfangen, in der ersten Einheit noch nicht für einbeiniges Fersenheben mit Gewicht bereit sind.',
-        'Die Wadenkette in der App läuft so: Fersenheben im Sitzen, Fersenheben beidbeinig, Fersenheben mit Halten, Fersenheben mit Handtuch, Fersenabsenken (exzentrisches Absenken von einer Stufe) und Pogo-Sprünge. Das Fersenheben mit Handtuch ist Stufe 4 von 6. Wenn du das Wadenziel von 25 einbeinigen Fersenhebungen erreichst, endet die Wadenarbeit nicht. Sie geht in die Erhaltung über, und ein neues Ziel rückt nach.',
+        'Walkito wirft dich nicht am ersten Tag ins Rathleff-Protokoll. Die App beginnt mit Fersenheben im Sitzen (3\u00A0Sätze à 10, beide Füße), geht dann zum Fersenheben beidbeinig im Stehen, dann zum Fersenheben mit Halten und erst danach zum einbeinigen Fersenheben mit Handtuch und Zusatzgewicht. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
+        'Diese Leiter ist das eigene Tempo der App, kein veröffentlichtes Protokoll. Es gibt sie, weil die meisten, die mit einem Übungsplan gegen Fersenschmerzen anfangen, in der ersten Einheit noch nicht für einbeiniges Fersenheben mit Gewicht bereit sind.',
+        'Die Wadenkette in der App läuft so:',
+        {
+          list: [
+            'Fersenheben im Sitzen.',
+            'Fersenheben beidbeinig.',
+            'Fersenheben mit Halten.',
+            'Fersenheben mit Handtuch.',
+            'Fersenabsenken (exzentrisches Absenken von einer Stufe).',
+            'Pogo-Sprünge.',
+          ],
+        },
+        'Das Fersenheben mit Handtuch ist Stufe 4 von 6. Wenn du das Wadenziel von 25-mal einbeinigem Fersenheben erreichst, endet die Wadenarbeit nicht. Sie geht in die Erhaltung über, und ein neues Ziel rückt nach.',
       ],
       cites: [CITE.rathleff],
     },
@@ -154,27 +168,29 @@ export const CALF_RAISES_DE: Guide = {
       figure: { id: 'calf', caption: 'Die beiden Wadenmuskeln, Gastrocnemius und Soleus, gehen in die Achillessehne über, die am Fersenbein ansetzt.', alt: 'Unterschenkel von der Seite und von hinten: Gastrocnemius und Soleus werden schmaler und gehen über der Ferse in die Achillessehne über.' },
       keyFact: 'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus (Patel und Kollegen, 2011).',
       paragraphs: [
-        'Eine verkürzte Wade zieht über die Achillessehne an der Ferse, und am anderen Ende teilt sich die Plantarfaszie die Last. Wenn sich das Sprunggelenk nicht weit genug beugen lässt, kommt bei jedem Schritt mehr Spannung auf die Faszie.',
-        'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius, des äußeren Wadenmuskels, und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Unabhängig davon fand eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0passenden Kontrollen, dass eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor für Plantarfasziitis war.',
-        'Deshalb stehen Wadendehnen und Wadenkräftigung beide auf der Liste. Dehnen gibt dem Sprunggelenk mehr Beweglichkeit. Kräftigen gibt der Wade genug Kapazität, damit sie unter der normalen Last des Alltags nicht verspannt. Die Leitlinie empfiehlt beides. Derselbe Mechanismus einer verkürzten Wade taucht auch bei anderen Schmerzen am Unterschenkel auf: Lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/) und [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch), wenn dein Schmerzmuster eher nach einem davon aussieht.',
+        'Eine verkürzte Wade zieht über die Achillessehne an der Ferse, und am anderen Ende teilt sich die Plantarfaszie die Last. **Wenn sich das Sprunggelenk nicht weit genug beugen lässt, kommt bei jedem Schritt mehr Spannung auf die Faszie.**',
+        'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius, des oberflächlicheren Wadenmuskels, und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus.',
+        'Unabhängig davon fand eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0passenden Kontrollen, dass eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor für Plantarfasziitis war.',
+        'Deshalb stehen Wadendehnen und Wadenkräftigung beide auf der Liste. Dehnen gibt dem Sprunggelenk mehr Beweglichkeit. Kräftigen gibt der Wade genug Kapazität, damit sie unter der normalen Last des Alltags nicht verspannt. Die Leitlinie empfiehlt beides. Derselbe Mechanismus einer verkürzten Wade taucht auch bei anderen Schmerzen am Unterschenkel auf: Lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/) und [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/), wenn dein Schmerzmuster eher nach einem davon aussieht.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
     },
     {
       h2: 'Was unterscheidet Wadenheben bei Plantarfasziitis von Wadenheben bei Achillessehnenentzündung?',
       paragraphs: [
-        'Die Bewegung ist fast dieselbe, aber das Ziel, das Handtuch und die Schmerzregel unterscheiden sich. Bei Plantarfasziitis belastet das Handtuch unter den Zehen die Faszie über den Windlass-Mechanismus. Das Tempo ist 3\u00A0Sekunden hoch, 2\u00A0Sekunden halten, 3 runter, jeden zweiten Tag. Die Schmerzregel auf dieser Seite lautet: Hör auf, wenn der Schmerz 6/10 oder mehr erreicht.',
-        'Bei Achillessehnenentzündung ist das klassische Protokoll das exzentrische Fersenabsenken (nur das Absenken, das Hochkommen machst du auf beiden Füßen), ursprünglich zweimal am Tag, sieben Tage die Woche, und in den Schmerz hinein bis etwa 5/10, solange er bis zum nächsten Morgen abklingt. Ein Handtuch wird nicht benutzt, weil die Belastung der Faszie nicht das Ziel ist. Und bei Schmerzen am Ansatz der Achillessehne, direkt hinten am Fersenbein, sollte das Fersenabsenken auf Bodenhöhe bleiben und nicht unter die Stufenkante gehen, weil eine tiefe Dorsalflexion die Sehne gegen den Knochen drückt.',
+        '**Die Bewegung ist fast dieselbe, aber das Ziel, das Handtuch und die Schmerzregel unterscheiden sich.** Bei Plantarfasziitis belastet das Handtuch unter den Zehen die Faszie über den Windlass-Mechanismus. Das Tempo ist 3\u00A0Sekunden hoch, 2\u00A0Sekunden halten, 3 runter, jeden zweiten Tag. Die Schmerzregel auf dieser Seite lautet: Hör auf, wenn der Schmerz 6/10 oder mehr erreicht.',
+        'Bei Achillessehnenentzündung ist das klassische Protokoll das exzentrische Fersenabsenken (nur das Absenken, das Hochkommen machst du auf beiden Füßen), ursprünglich zweimal am Tag, sieben Tage die Woche, und in den Schmerz hinein bis etwa 5/10, solange er bis zum nächsten Morgen abklingt.',
+        'Ein Handtuch wird nicht benutzt, weil die Belastung der Faszie nicht das Ziel ist. Und bei Schmerzen am Ansatz der Achillessehne, direkt hinten am Fersenbein, sollte das Fersenabsenken auf Bodenhöhe bleiben und nicht unter die Stufenkante gehen, weil eine tiefe Dorsalflexion die Sehne gegen den Knochen drückt.',
         'Die beiden Übungen sind eng verwandt. Wenn dein Schmerz hinten an der Ferse oder in der Sehne darüber sitzt und nicht unter dem Fuß, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
     },
     {
-      h2: 'Wie viele einbeinige Fersenhebungen solltest du schaffen?',
+      h2: 'Wie oft solltest du einbeiniges Fersenheben schaffen?',
       keyFact: 'Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen fand beim einbeinigen Fersenheben eine Zahl im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
-        'Ein häufiger Richtwert für Erwachsene beim einbeinigen Ausdauertest mit Fersenheben liegt im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen, auf Basis von Normwerten aus 566\u00A0gesunden Erwachsenen. Die Zahl verschiebt sich mit Alter, Geschlecht, BMI und Aktivität, sie ist also ein Bezugspunkt, keine Grenze zum Bestehen oder Durchfallen. Wichtiger für den Verlauf bei Plantarfasziitis ist, ob die Zahl von Woche zu Woche steigt und ob beide Seiten ungefähr gleich sind.',
-        'Das Wadenziel in der App sind 25 einbeinige Fersenhebungen. Der Test wird alle 14\u00A0Tage wiederholt, solange das Wadenziel aktiv ist, danach alle 28\u00A0Tage, sobald es erreicht ist, sodass du den Trend siehst, ohne zu raten.',
+        'Ein häufiger Richtwert für Erwachsene beim einbeinigen Ausdauertest mit Fersenheben liegt im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen, auf Basis von Normwerten aus 566\u00A0gesunden Erwachsenen. Die Zahl verschiebt sich mit Alter, Geschlecht, BMI und Aktivität, sie ist also ein Bezugspunkt, keine Grenze zum Bestehen oder Durchfallen. Wichtiger für den Verlauf bei Plantarfasziitis ist, **ob die Zahl von Woche zu Woche steigt und ob beide Seiten ungefähr gleich sind.**',
+        'Das Wadenziel in der App ist 25-mal einbeiniges Fersenheben. Der Test wird alle 14\u00A0Tage wiederholt, solange das Wadenziel aktiv ist, danach alle 28\u00A0Tage, sobald es erreicht ist, sodass du den Trend siehst, ohne zu raten.',
       ],
       cites: [CITE.hebertLosier],
     },
@@ -200,7 +216,7 @@ export const CALF_RAISES_DE: Guide = {
     {
       q: 'Wie viele Wiederholungen Wadenheben bei Plantarfasziitis?',
       cites: [CITE.rathleff],
-      a: 'Die einzige Studie, die ein bestimmtes Protokoll für Fersenheben bei Plantarfasziitis getestet hat, begann mit einem 12er-Wiederholungsmaximum für 3\u00A0Sätze, steigerte ab Woche 2 auf 10RM für 4\u00A0Sätze und ab Woche 4 auf 8RM für 5\u00A0Sätze, jeden zweiten Tag über bis zu 3\u00A0Monate (Rathleff 2015). „12RM“ heißt das schwerste Gewicht, das du 12-mal kontrolliert heben kannst, keine feste Zahl für alle.',
+      a: 'Die einzige Studie, die ein bestimmtes Protokoll für Fersenheben bei Plantarfasziitis getestet hat, begann mit einem 12er-Wiederholungsmaximum für 3\u00A0Sätze, steigerte ab Woche 3 auf 10RM für 4\u00A0Sätze und ab Woche 5 auf 8RM für 5\u00A0Sätze, jeden zweiten Tag über bis zu 3\u00A0Monate (Rathleff 2015). „12RM“ heißt das schwerste Gewicht, das du 12-mal kontrolliert heben kannst, keine feste Zahl für alle.',
     },
     {
       q: 'Kann Wadenheben die Plantarfasziitis verschlimmern?',
@@ -210,7 +226,7 @@ export const CALF_RAISES_DE: Guide = {
     {
       q: 'Wofür ist das Handtuch beim Fersenheben?',
       cites: [CITE.rathleff],
-      a: 'Das Handtuch liegt zusammengerollt unter den Zehen, sodass sie sich oben in der Bewegung nach oben beugen. Das aktiviert den Windlass-Mechanismus, die Verbindung zwischen Achillessehne und Plantarfaszie. Ohne Handtuch trainiert die Übung vor allem die Wade. Mit Handtuch übernimmt die Faszie einen Teil der Last, und deshalb hat die Studie es benutzt.',
+      a: 'Das Handtuch liegt zusammengerollt unter den Zehen, sodass sie sich oben in der Bewegung nach oben beugen. Das aktiviert den Windlass-Mechanismus: Wenn sich der große Zeh nach oben beugt, spannt sich die Plantarfaszie. Ohne Handtuch trainiert die Übung vor allem die Wade. Mit Handtuch übernimmt die Faszie einen Teil der Last, und deshalb hat die Studie es benutzt.',
     },
     {
       q: 'Sollte ich bei Plantarfasziitis erst dehnen oder erst kräftigen?',
@@ -223,7 +239,7 @@ export const CALF_RAISES_DE: Guide = {
       a: 'In der Rathleff-Studie von 2015 mit 48\u00A0Personen lag die Gruppe mit Fersenheben und Zusatzgewicht nach 3\u00A0Monaten deutlich vor der Gruppe, die nur dehnte. Nach 12\u00A0Monaten lagen beide Gruppen gleichauf. Keine Studie hat für eine einzelne Person eine garantierte Zahl an Wochen gezeigt. Die Besserung wird in Monaten gemessen.',
     },
     {
-      q: 'Wie viele einbeinige Fersenhebungen sind normal?',
+      q: 'Wie oft einbeiniges Fersenheben ist normal?',
       cites: [CITE.hebertLosier],
       a: 'Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen fand einen Median von etwa 23 bis 24\u00A0Wiederholungen als typische Zahl für Erwachsene, die sich mit Alter, Geschlecht und Aktivität verschiebt (Hebert-Losier 2017). Die Zahl hilft, ein Bein mit dem anderen zu vergleichen oder Veränderungen über Wochen zu verfolgen, sie ist keine strenge Grenze zum Bestehen oder Durchfallen.',
     },

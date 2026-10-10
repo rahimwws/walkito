@@ -25,7 +25,7 @@ export const BALL_OF_FOOT_ES: Guide = {
   toc: true,
   takeaways: [
     'En un estudio con 41\u00A0personas con metatarsalgia primaria, un programa de ejercicios de dedos de 8\u00A0semanas bajó el dolor en promedio 2,7\u00A0puntos en una escala de 10. El estudio no tenía grupo de control (Amaha y colegas, 2020).',
-    'Un gastrocnemio rígido, el músculo más grande y externo de la pantorrilla, pasa el peso hacia adelante, a la parte delantera del pie. En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011).',
+    'Un gastrocnemio rígido, el músculo más grande y superficial de la pantorrilla, pasa el peso hacia adelante, a la parte delantera del pie. En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011).',
     'Las almohadillas metatarsales, colocadas justo detrás de las cabezas de los metatarsianos, son el enfoque conservador más estudiado para el dolor en la parte delantera del pie.',
     'El neuroma de Morton y la metatarsalgia tienen síntomas parecidos, pero duelen en lugares distintos: el dolor del neuroma suele estar entre el tercer y el cuarto dedo, con hormigueo, mientras que la metatarsalgia ocupa una zona más amplia.',
   ],
@@ -48,15 +48,23 @@ export const BALL_OF_FOOT_ES: Guide = {
         '**Dedos en garra y dedos en martillo** doblan las articulaciones de los dedos hacia abajo, lo que levanta el dedo del piso y pasa su carga al impulsarte a la cabeza del metatarsiano que está detrás.',
         '**Los tacones y los zapatos angostos** llevan el peso hacia la parte delantera del pie y aprietan las cabezas de los metatarsianos entre sí. Por eso el neuroma de Morton es más común en quienes los usan.',
         '**El arco alto** (pie cavo, un pie con el arco alto y rígido) reduce la superficie de apoyo de la planta y concentra la presión en el talón y en la parte delantera del pie. En el otro extremo, el [pie plano](/es/ejercicios-pie-plano/) también puede contribuir al dolor en la parte delantera del pie, porque cambia cómo rueda el pie al impulsarte.',
-        '**La pantorrilla rígida** es una causa poco valorada. Cuando el gastrocnemio, el músculo más grande y externo de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más carga a la parte delantera del pie. Es el mismo mecanismo que hay detrás de la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y de la [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+        '**La pantorrilla rígida** es una causa poco valorada. Cuando el gastrocnemio, el músculo más grande y superficial de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más carga a la parte delantera del pie. Es el mismo mecanismo que hay detrás de la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y de la [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
       cites: [CITE.patelGastrocnemius],
     },
     {
       h2: '¿Cómo distinguir estos problemas?',
       paragraphs: [
-        'La ubicación es la primera pista. Un dolor amplio debajo de la segunda y la tercera cabeza de los metatarsianos apunta a metatarsalgia. Un dolor entre el tercer y el cuarto dedo, con hormigueo, sugiere neuroma de Morton. Un dolor justo debajo de la articulación del dedo gordo encaja más con sesamoiditis. Un punto concreto en la parte de arriba del pie, con hinchazón, hace pensar en una fractura por estrés.',
-        'Las fracturas por estrés muchas veces no se ven en una radiografía simple durante las primeras dos o tres semanas y pueden necesitar una resonancia magnética. Vale la pena ver a un profesional de la salud si el dolor sigue después de dos semanas a pesar del reposo y del cambio de zapatos, o si hay hormigueo, dolor nocturno o hinchazón visible.',
+        'La ubicación es la primera pista:',
+        {
+          list: [
+            'Un dolor amplio debajo de la segunda y la tercera cabeza de los metatarsianos apunta a metatarsalgia.',
+            'Un dolor entre el tercer y el cuarto dedo, con hormigueo, sugiere neuroma de Morton.',
+            'Un dolor justo debajo de la articulación del dedo gordo encaja más con sesamoiditis.',
+            'Un punto concreto en la parte de arriba del pie, con hinchazón, hace pensar en una fractura por estrés.',
+          ],
+        },
+        'Las fracturas por estrés muchas veces no se ven en una radiografía simple durante las primeras dos o tres semanas y pueden necesitar una resonancia magnética. **Vale la pena ver a un profesional de la salud** si el dolor sigue después de dos semanas a pesar del reposo y del cambio de zapatos, o si hay hormigueo, dolor nocturno o hinchazón visible.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -64,7 +72,7 @@ export const BALL_OF_FOOT_ES: Guide = {
       h2: '¿El ejercicio ayuda con la metatarsalgia?',
       keyFact: 'En un estudio antes y después de 2020 con 41 personas con metatarsalgia primaria, un programa de ejercicios de dedos de 8 semanas bajó el dolor en promedio 2,7 puntos en una escala de 10, sin grupo de control (Amaha y colegas, 2020).',
       paragraphs: [
-        'La respuesta honesta es que la evidencia sobre el ejercicio en la metatarsalgia es inicial y limitada. Es mucho más escasa que la evidencia para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles, donde sí hay ensayos aleatorizados.',
+        'La respuesta honesta es que **la evidencia sobre el ejercicio en la metatarsalgia es inicial y limitada.** Es mucho más escasa que la evidencia para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles, donde sí hay ensayos aleatorizados.',
         'El mejor estudio hasta ahora es un estudio antes y después de 2020 con 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria. Un programa de ejercicios de dedos de 8\u00A0semanas, sobre todo recoger la toalla y levantar canicas, bajó el dolor en promedio 2,7\u00A0puntos en una escala de 10 y mejoró la fuerza de agarre de los dedos. Pero no hubo grupo de control, así que parte de la mejora podría deberse a la recuperación natural. Los autores pidieron ensayos aleatorizados.',
         'La lógica es simple: al impulsarte, los dedos ayudan a repartir la carga con las cabezas de los metatarsianos. Cuando los músculos que doblan los dedos están débiles, cae más fuerza sobre los metatarsianos. El estudio de 2020 apoya esa idea, pero un solo estudio sin control no es una prueba. Las personas que tenían síntomas desde hacía más de un año mejoraron menos, igual que las que tenían un IMC más alto.',
       ],
@@ -77,7 +85,7 @@ export const BALL_OF_FOOT_ES: Guide = {
       keyFact: 'En 254 personas con fascitis plantar, entre el 52 y el 60 % tenía una contractura aislada del gastrocnemio, la pantorrilla rígida también vinculada a la sobrecarga de la parte delantera del pie (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'Es muy probable. Cuando el gastrocnemio está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo levanta el talón antes de tiempo, y eso carga más peso sobre la parte delantera de la planta. El término clínico es equino funcional, y es una causa reconocida de metatarsalgia.',
-        'Los números vienen de la investigación sobre la fascitis plantar, pero el mecanismo es el mismo. En 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio. Un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles encontró que la menor dorsiflexión del tobillo (cuánto sube el pie hacia la tibia) era el factor de riesgo independiente más fuerte, con 23,3\u00A0veces más probabilidades.',
+        'Los números vienen de la investigación sobre la fascitis plantar, pero el mecanismo es el mismo. En 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio. Un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles encontró que la menor dorsiflexión del tobillo (cuánto sube el pie hacia la tibia) era el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3.',
         'Ningún ensayo ha probado el estiramiento de pantorrilla específicamente para la metatarsalgia, pero la relación está reconocida en la clínica. Mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) para saber más sobre la relación entre la pantorrilla y el tobillo.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
@@ -86,14 +94,15 @@ export const BALL_OF_FOOT_ES: Guide = {
       h2: '¿Y las almohadillas metatarsales, las plantillas y los zapatos?',
       paragraphs: [
         'Las almohadillas metatarsales son el enfoque conservador más usado. Una almohadilla colocada justo detrás de las cabezas de los metatarsianos levanta un poco el hueso y reparte la presión en una zona más amplia. La posición importa. Si queda muy adelante, justo debajo de la cabeza, puede empeorar el dolor.',
-        'Los zapatos con suela balancín bajan la presión en la parte delantera del pie porque dejan que el pie ruede al impulsarte sin doblarse en las articulaciones de los metatarsianos. Una puntera ancha evita que las cabezas de los metatarsianos se aprieten entre sí. Dejar los zapatos angostos o de tacón suele ser el primer paso más sencillo.',
+        'Los zapatos con suela balancín bajan la presión en la parte delantera del pie porque dejan que el pie ruede al impulsarte sin doblarse en las articulaciones de los metatarsianos. Una puntera ancha evita que las cabezas de los metatarsianos se aprieten entre sí. **Dejar los zapatos angostos o de tacón suele ser el primer paso más sencillo.**',
         'Las almohadillas y los zapatos cambian cómo se reparte la carga. El ejercicio construye la fuerza y la flexibilidad para soportarla. Cuando [estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) es parte del problema, las dos cosas importan.',
       ],
     },
     {
       h2: '¿Qué ejercicios ayudan con el dolor en la planta del pie (metatarsalgia)?',
       paragraphs: [
-        'Estos ejercicios atacan dos lados del problema: la fuerza de los dedos y de los músculos intrínsecos del pie (para repartir la carga al impulsarte) y la flexibilidad de la pantorrilla (para que la parte delantera del pie no se sobrecargue). Ninguno se ha probado en un ensayo aleatorizado específicamente para la metatarsalgia. Cuando tocas la zona de la planta delantera en el mapa de dolor de Walkito durante un check-in, la sesión de alivio te da separación de dedos y estiramiento plantar. La zona de los dedos te da separación de dedos y pie corto sentado.',
+        'Estos ejercicios atacan dos lados del problema: la fuerza de los dedos y de los músculos intrínsecos del pie (para repartir la carga al impulsarte) y la flexibilidad de la pantorrilla (para que la parte delantera del pie no se sobrecargue). Ninguno se ha probado en un ensayo aleatorizado específicamente para la metatarsalgia.',
+        'Cuando tocas la zona de la planta delantera en el mapa de dolor de Walkito durante un check-in, la sesión de alivio te da separación de dedos y estiramiento plantar. La zona de los dedos te da separación de dedos y pie corto sentado.',
       ],
       exercises: [
         {
@@ -180,7 +189,8 @@ export const BALL_OF_FOOT_ES: Guide = {
       h2: 'Lo que la evidencia dice y lo que no',
       paragraphs: [
         'La evidencia sobre el ejercicio para el dolor en la planta delantera del pie es más escasa que para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles, donde sí hay ensayos aleatorizados. Para la metatarsalgia hay un estudio antes y después con 41\u00A0personas y sin grupo de control. El razonamiento biomecánico tiene sentido, y el riesgo de unos ejercicios suaves de dedos y estiramientos de pantorrilla es bajo, pero falta una prueba directa de un ensayo controlado.',
-        'El ejercicio solo puede no ser suficiente. Las almohadillas metatarsales, los zapatos con puntera ancha y usar menos tacones tienen un consenso clínico más amplio. Para el neuroma de Morton, cambiar de zapatos y usar almohadillas suele funcionar mejor que el ejercicio. Para una fractura por estrés de un metatarsiano, el ejercicio no es el camino hasta que el hueso se haya recuperado. Si el dolor dura más de unas semanas, o viene con entumecimiento o hinchazón, que te revisen primero. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica cómo manejar la carga si corres.',
+        '**El ejercicio solo puede no ser suficiente.** Las almohadillas metatarsales, los zapatos con puntera ancha y usar menos tacones tienen un consenso clínico más amplio.',
+        'Para el neuroma de Morton, cambiar de zapatos y usar almohadillas suele funcionar mejor que el ejercicio. Para una fractura por estrés de un metatarsiano, el ejercicio no es el camino hasta que el hueso se haya recuperado. Si el dolor dura más de unas semanas, o viene con entumecimiento o hinchazón, que te revisen primero. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica cómo manejar la carga si corres.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -203,7 +213,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     {
       q: '¿Por qué una pantorrilla rígida hace que me duela la planta del pie?',
       cites: [CITE.patelGastrocnemius, CITE.riddle],
-      a: 'Cuando el gastrocnemio, el músculo más grande y externo de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más peso a la parte delantera de la planta. En personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011). El mismo mecanismo contribuye a sobrecargar la parte delantera del pie.',
+      a: 'Cuando el gastrocnemio, el músculo más grande y superficial de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más peso a la parte delantera de la planta. En personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011). El mismo mecanismo contribuye a sobrecargar la parte delantera del pie.',
     },
     {
       q: '¿Las almohadillas metatarsales funcionan?',
@@ -224,7 +234,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     },
     {
       q: '¿Cuáles son las complicaciones de una metatarsalgia sin tratar?',
-      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto dolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
+      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto adolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
     },
   ],
   redFlags: {

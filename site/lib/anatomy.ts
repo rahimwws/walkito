@@ -59,7 +59,7 @@ const LABELS_BY = {
   en: 'labels by Walkito',
   es: 'rótulos de Walkito',
   ru: 'подписи Walkito',
-  pt: 'legendas da Walkito',
+  pt: 'legendas do Walkito',
   fr: 'légendes de Walkito',
   it: 'didascalie di Walkito',
   de: 'Beschriftung von Walkito',

@@ -19,7 +19,8 @@ export const NURSES_EN: Guide = {
   lede:
     'Nurses walk more in a single shift than most people walk in a day, and they do it on hard floors in shoes that may not fit well. Foot and ankle problems are one of the most common musculoskeletal complaints in nursing, reported by more than half of hospital nurses over a 12-month period in one survey. Most of the things that help, calf stretches, arch exercises, compression stockings, can be done in a few minutes before or after a shift.',
   intro: [
-    'This page covers foot pain that comes from the demands of nursing work: prolonged standing, long walking distances and rotating shifts. If your pain is sharp and worst on the first steps after rest, that pattern points toward plantar fasciitis, and the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide. If you are not sure, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between general standing pain and named conditions.',
+    'This page covers foot pain that comes from the demands of nursing work: prolonged standing, long walking distances and rotating shifts. If your pain is sharp and worst on the first steps after rest, that pattern points toward plantar fasciitis, and the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide.',
+    'If you are not sure, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between general standing pain and named conditions.',
   ],
   toc: true,
   takeaways: [
@@ -33,7 +34,8 @@ export const NURSES_EN: Guide = {
     {
       h2: 'How common is foot pain in nurses?',
       paragraphs: [
-        'Foot and ankle pain is one of the top three musculoskeletal complaints in nurses, alongside lower back and neck pain. In a survey of 312 paediatric hospital nurses, 55.3% reported foot or ankle musculoskeletal problems in the past 12 months, and 43.8% had symptoms in the past seven days alone. One in six nurses said the pain limited their physical activity. Working 12-hour shifts in the intensive care unit was the single work-related factor that independently raised the odds of disabling foot problems.',
+        '**Foot and ankle pain is one of the top three musculoskeletal complaints in nurses**, alongside lower back and neck pain. In a survey of 312 paediatric hospital nurses, 55.3% reported foot or ankle musculoskeletal problems in the past 12 months, and 43.8% had symptoms in the past seven days alone.',
+        'One in six nurses said the pain limited their physical activity. Working 12-hour shifts in the intensive care unit was the single work-related factor that independently raised the odds of disabling foot problems.',
         'A separate study of 636 hospital nurses in Japan found that 51% reported foot pain or disability in the past month when assessed with a validated questionnaire. The prevalence of pain that prevented normal work was 17%. A tracker-based study of Korean nurses found an average of 5.8 km walked per shift, a physical demand well above the general population.',
         'A cross-sectional study of 411 Finnish nurses found that dry skin, foot pain and calluses were the most common foot complaints, and that foot problems were associated with decreased working ability. The authors called for prevention of foot problems in nurses to be prioritised.',
       ],
@@ -44,7 +46,7 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'Three things combine on a nursing shift: prolonged standing, long walking distances and hard floors. Standing still loads the plantar fascia, calf muscles and heel pad without the pumping action that walking provides. Walking helps blood return from the legs, but nurses alternate unpredictably between standing still at a bedside and walking long corridors, so the calf pump never settles into a steady rhythm.',
         'A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain across many standing occupations, with nurses cited as one of the highest-risk groups. The review noted that cardiovascular strain and leg swelling increase with standing duration.',
-        'On the tissue level, a tight calf is a key piece. A case-control study of 50 people with plantar fasciitis and 100 matched controls found that reduced ankle flexibility, meaning the ankle cannot bend upward as far as it should because the calf is tight, was the single strongest independent risk factor for plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. Nurses face both risk factors at once.',
+        'On the tissue level, a tight calf is a key piece. A case-control study of 50 people with plantar fasciitis and 100 matched controls found that reduced ankle flexibility, meaning the ankle cannot bend upward as far as it should because the calf is tight, was the single strongest independent risk factor for plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. **Nurses face both risk factors at once.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -52,7 +54,7 @@ export const NURSES_EN: Guide = {
       h2: 'What exercises help nurses with foot pain?',
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
-        'The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a plantar fascia stretch, heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. A few minutes before or after a shift is enough to cover the most important ones.',
+        'The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a plantar fascia stretch, heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. **A few minutes before or after a shift is enough to cover the most important ones.**',
         'The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both grades are for plantar fasciitis specifically, but the tissues involved are the same ones that take the load during a nursing shift. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.',
       ],
       exercises: [
@@ -63,7 +65,7 @@ export const NURSES_EN: Guide = {
             why: 'The 2023 heel pain guideline grades calf stretching A for plantar fasciitis. A tight calf was the strongest risk factor in a 2003 case-control study.',
           },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. This targets the gastrocnemius, the bigger outer calf muscle. You can do this in the break room or against any wall.',
+          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. This targets the gastrocnemius, the bigger, more superficial calf muscle. You can do this in the break room or against any wall.',
           media: 'calf_stretch_straight',
           caption: 'Calf stretch: back leg straight, heel down, hips forward',
           alt: 'A figure leaning against a wall with the back leg straight and the calf highlighted',
@@ -148,7 +150,7 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'A 12-hour shift leaves little time for a separate exercise routine, and rotating between day and night shifts makes scheduling even harder. The stretches on this page take about 3 minutes, so the simplest approach is to do them right before or right after a shift, at the same point in your routine every time. For example, do them after you change into or out of your work shoes.',
         'On days off, add the strength exercises: heel raises and the short foot. These take about 5 to 10 minutes. Doing strength work on off days, rather than after a demanding shift, means the calf and arch have recovery time before the next stint on your feet.',
-        'Three sessions a week is a reasonable starting point. If you work three 12-hour shifts with four days off, that fits strength work on each off day. If you rotate between day and night shifts, the time of day does not matter. What matters is consistency, not the clock.',
+        'Three sessions a week is a reasonable starting point. If you work three 12-hour shifts with four days off, that fits strength work on each off day. If you rotate between day and night shifts, the time of day does not matter. **What matters is consistency, not the clock.**',
       ],
     },
     {
@@ -156,7 +158,7 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'Footwear is one of the most discussed topics among nurses, but the evidence for one type over another is limited. A 2007 evaluation of three brands of professional nursing shoes found that the shoe with a more cushioned insole and better arch support reduced lower-extremity muscle effort compared to the other two, but the study was small and brand-specific.',
         'What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades orthotics on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.',
-        'A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.',
+        'A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. **Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.**',
       ],
       cites: [CITE.guideline],
     },
@@ -166,7 +168,8 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'Compression stockings have one of the better-controlled studies behind them for standing-related discomfort. In a randomized trial of 40 security guards standing roughly 12-hour shifts, both the 15-20 mmHg and the 20-30 mmHg compression-stocking groups avoided the significant rise in foot and leg discomfort, fatigue and swelling seen in the group that wore regular socks. Participants commonly said the lower-pressure stocking was easier to put on.',
         'A pilot randomized trial of 20 nursing students compared knee-length and thigh-length compression stockings worn during 9-hour clinical training shifts. Both groups reported high satisfaction, though the sample was too small to show clear differences in outcomes between the two lengths.',
-        'The Garcia trial was all male security guards, not nurses, and neither study was large. But compression stockings are one of the few standing-specific interventions with randomized evidence behind them. A 2015 occupational health review lists them alongside floor mats and supportive footwear as interventions with some evidence for reducing discomfort during prolonged standing work. They do not replace stretching or strength work. They manage the swelling and fatigue, while the calf and fascia still need their own attention.',
+        'The Garcia trial was all male security guards, not nurses, and neither study was large. But compression stockings are one of the few standing-specific interventions with randomized evidence behind them.',
+        'A 2015 occupational health review lists them alongside floor mats and supportive footwear as interventions with some evidence for reducing discomfort during prolonged standing work. **They do not replace stretching or strength work.** They manage the swelling and fatigue, while the calf and fascia still need their own attention.',
       ],
       sourceNote:
         'Garcia and colleagues (2023): parallel-group design, 40 male security guards randomly assigned to three groups (regular socks, 15-20 mmHg, 20-30 mmHg), each worn for a full work shift. Discomfort, fatigue and edema measured pre- and post-shift.',
@@ -175,10 +178,14 @@ export const NURSES_EN: Guide = {
     {
       h2: 'What can you do before and after a shift in 3, 5, or 10 minutes?',
       paragraphs: [
-        'If you have 3 minutes: do the two calf stretches (straight knee and bent knee, 30 seconds each side). That covers the single strongest modifiable risk factor, a tight calf, and takes the same time as tying your shoes.',
-        'If you have 5 minutes: add the plantar fascia stretch (30 seconds each foot). This is the combination the 2023 guideline grades A for plantar fasciitis. If your heel is worst on the first steps of the day, do the fascia stretch before your feet touch the floor.',
-        'If you have 10 minutes: add the heel raises (3 sets of 10) and the short foot (3 sets of 10 with a 5-second hold). This covers the strength side, graded B in the guideline. On off days, 10 minutes covers everything on this page.',
-        'Consistency matters more than length. Three minutes of calf stretching every shift day, done at the same point in your routine, is more useful than a longer session you skip when the schedule changes.',
+        {
+          list: [
+            '**If you have 3 minutes:** do the two calf stretches (straight knee and bent knee, 30 seconds each side). That covers the single strongest modifiable risk factor, a tight calf, and takes the same time as tying your shoes.',
+            '**If you have 5 minutes:** add the plantar fascia stretch (30 seconds each foot). This is the combination the 2023 guideline grades A for plantar fasciitis. If your heel is worst on the first steps of the day, do the fascia stretch before your feet touch the floor.',
+            '**If you have 10 minutes:** add the heel raises (3 sets of 10) and the short foot (3 sets of 10 with a 5-second hold). This covers the strength side, graded B in the guideline. On off days, 10 minutes covers everything on this page.',
+          ],
+        },
+        '**Consistency matters more than length.** Three minutes of calf stretching every shift day, done at the same point in your routine, is more useful than a longer session you skip when the schedule changes.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -187,7 +194,7 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'General ache and tiredness from a long shift is common and usually goes away with rest. Plantar fasciitis is a specific condition: sharp pain near the heel, worst on the first steps after rest (getting out of bed, standing after a long sit). If your pain follows that pattern, the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide, and the calf raise detail is in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
         'If your arches feel flat or rolled in by the end of a shift, the arch exercises in [flat feet exercises for fallen arches](/flat-feet-exercises/) target the muscles that hold the arch up. Pain along the shin could be shin splints. Pain in the Achilles tendon at the back of the heel is a different problem.',
-        'If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. For the standing-desk version of this problem, see [standing desk foot pain](/standing-desk-foot-pain/). If you are not sure what is causing the pain, see a clinician before loading it with exercise.',
+        'If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. For the standing-desk version of this problem, see [standing desk foot pain](/standing-desk-foot-pain/). **If you are not sure what is causing the pain, see a clinician before loading it with exercise.**',
       ],
     },
   ],

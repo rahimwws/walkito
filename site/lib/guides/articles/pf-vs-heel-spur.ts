@@ -56,7 +56,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       h2: 'Is a heel spur the same as plantar fasciitis?',
       figure: { id: 'heel-side', caption: 'A heel spur, when there is one, forms on the underside of the heel bone, close to where the plantar fascia attaches.', alt: 'Inner side view of a foot with see-through skin showing the heel bone, the plantar fascia running under the arch, and a red area under the heel where pain usually starts.' },
       paragraphs: [
-        'A heel spur and plantar fasciitis are not the same thing. Plantar fasciitis is a soft tissue problem: the plantar fascia, the thick band running from the heel bone to the toes, becomes irritated, usually where it attaches to the bone. A heel spur is a bony outgrowth on the underside of the heel bone (the calcaneus). The two often coexist, but they can each appear without the other.',
+        '**A heel spur and plantar fasciitis are not the same thing.** Plantar fasciitis is a soft tissue problem: the plantar fascia, the thick band running from the heel bone to the toes, becomes irritated, usually where it attaches to the bone. A heel spur is a bony outgrowth on the underside of the heel bone (the calcaneus). The two often coexist, but they can each appear without the other.',
         'Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.',
         'The confusion is understandable. For decades, heel spurs were thought to be the cause of plantar heel pain. That view has largely been replaced by evidence showing that spurs are common in people without pain, and that many people with plantar fasciitis have no spur at all.',
       ],
@@ -66,8 +66,17 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       h2: 'Do heel spurs actually cause pain?',
       keyFact: 'In a study of 530 people with foot pain, a heel spur on X-ray appeared alone in only 6 percent of feet, usually alongside a thickened plantar fascia (Menz and colleagues, 2019).',
       paragraphs: [
-        'Most heel spurs do not cause pain. The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.',
-        'In a study of 530 people aged 50 and over who reported foot pain, X-rays found a heel spur in 26.5% of feet and ultrasound found a thickened plantar fascia in 47.3% of feet. The two usually came together, and a spur on its own was rare (6% of feet). People with heel pain were about twice as likely to have both findings together (Menz and colleagues, 2019). In other words, the spur rarely shows up without the soft tissue change that goes with it.',
+        '**Most heel spurs do not cause pain.** The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.',
+        'In a study of 530 people aged 50 and over who reported foot pain:',
+        {
+          list: [
+            'X-rays found a heel spur in 26.5% of feet.',
+            'Ultrasound found a thickened plantar fascia in 47.3% of feet.',
+            'The two usually came together, and a spur on its own was rare (6% of feet).',
+            'People with heel pain were about twice as likely to have both findings together (Menz and colleagues, 2019).',
+          ],
+        },
+        'In other words, the spur rarely shows up without the soft tissue change that goes with it.',
         'Separately, in a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray. Spurs were related to obesity, osteoarthritis and a history of heel pain, but not to foot posture. The authors suggested that spurs may be an adaptive response to vertical compression of the heel, not a result of the plantar fascia pulling on the bone (Menz and colleagues, 2008).',
         'The Menz 2008 study notes that earlier research in the general population had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, about 6 in 10 people with a spur had never had heel pain, although heel pain was still more common in people with spurs (40%) than without (12%) (Menz and colleagues, 2008). A spur raises the odds, but it does not decide who ends up with pain.',
       ],
@@ -81,24 +90,39 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       paragraphs: [
         'Heel spurs are common. Prevalence depends on the age group and the method used to look for them.',
         'The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in the general population, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).',
-        'The pattern is consistent: a large proportion of people with spurs have no symptoms, and a spur on its own does not predict whether someone will have heel pain. This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.',
+        'The pattern is consistent: a large proportion of people with spurs have no symptoms, and **a spur on its own does not predict whether someone will have heel pain.** This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.',
       ],
       cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: 'What does the 2023 heel pain guideline say about heel spurs?',
       paragraphs: [
-        'The 2023 clinical practice guideline for heel pain, published in the Journal of Orthopaedic and Sports Physical Therapy, focuses on plantar fasciitis as the most common cause of plantar heel pain. It mentions "heel spur syndrome" as one of several differential diagnoses alongside fat pad syndrome, nerve irritation and calcaneal stress fracture.',
+        'The 2023 clinical practice guideline for heel pain, published in the Journal of Orthopaedic and Sports Physical Therapy, focuses on plantar fasciitis as the most common cause of plantar heel pain. It mentions "heel spur syndrome" as one of several differential diagnoses, alongside:',
+        {
+          list: [
+            'Fat pad syndrome.',
+            'Nerve irritation.',
+            'Calcaneal stress fracture.',
+          ],
+        },
         'The guideline does not recommend imaging as a first step when the clinical examination already points to plantar fasciitis. It states that imaging studies "are usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions." When imaging is considered, weight-bearing X-ray is the first choice, followed by ultrasound or MRI if needed.',
-        'In practice, this means a clinician who sees the typical pattern, first-step pain in the morning, tenderness at the inside of the heel, and reduced ankle flexibility, can begin stretching and strength work without waiting for an X-ray. The presence or absence of a spur on a later X-ray does not change the exercise plan.',
+        'In practice, this means a clinician who sees the typical pattern, first-step pain in the morning, tenderness at the inside of the heel, and reduced ankle flexibility, can begin stretching and strength work without waiting for an X-ray. **The presence or absence of a spur on a later X-ray does not change the exercise plan.**',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Do you need an X-ray to tell plantar fasciitis from a heel spur?',
       paragraphs: [
-        'You usually do not need an X-ray for plantar fasciitis. The diagnosis is clinical: it is based on where the pain is, when it happens and what makes it worse. An X-ray can show a heel spur, but finding one does not change what you do about the pain, and not finding one does not rule out plantar fasciitis.',
-        'Imaging becomes useful when the pain does not follow the typical plantar fasciitis pattern, when it has not improved after several weeks of conservative care, or when a clinician suspects something else, such as a stress fracture, a nerve problem or a plantar fascia tear. Ultrasound can measure plantar fascia thickness (a reading above 4 mm is generally considered thickened), and MRI can show soft tissue detail that X-rays miss.',
+        '**You usually do not need an X-ray for plantar fasciitis.** The diagnosis is clinical: it is based on where the pain is, when it happens and what makes it worse. An X-ray can show a heel spur, but finding one does not change what you do about the pain, and not finding one does not rule out plantar fasciitis.',
+        'Imaging becomes useful:',
+        {
+          list: [
+            'When the pain does not follow the typical plantar fasciitis pattern.',
+            'When it has not improved after several weeks of conservative care.',
+            'When a clinician suspects something else, such as a stress fracture, a nerve problem or a plantar fascia tear.',
+          ],
+        },
+        'Ultrasound can measure plantar fascia thickness (a reading above 4 mm is generally considered thickened), and MRI can show soft tissue detail that X-rays miss.',
         'If you have already been told you have a heel spur on an X-ray, the spur itself almost never needs separate attention. The exercises and stretches that help plantar fasciitis also address the soft tissue around the spur. See [heel spur exercises](/heel-spur-exercises/) for the full routine.',
       ],
       cites: [CITE.guideline],
@@ -107,8 +131,14 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       h2: 'If the spur is not the problem, what is?',
       paragraphs: [
         'The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a tight calf, high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.',
-        'A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, had the highest odds ratio of any factor measured. Standing for most of the working day was also significant, at 3.6 times the odds (Riddle and colleagues, 2003).',
-        'The spur, when it is there, sits nearby. It may have formed over months or years in response to the same mechanical stress that irritated the fascia. But it is the fascia and the calf that respond to stretching and strengthening, not the bone. That is why the guideline recommends exercise, not spur removal.',
+        'A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls:',
+        {
+          list: [
+            'Reduced ankle dorsiflexion, how far the foot bends up toward the shin, had the highest odds ratio of any factor measured.',
+            'Standing for most of the working day was also significant, at 3.6 times the odds (Riddle and colleagues, 2003).',
+          ],
+        },
+        'The spur, when it is there, sits nearby. It may have formed over months or years in response to the same mechanical stress that irritated the fascia. But **it is the fascia and the calf that respond to stretching and strengthening, not the bone.** That is why the guideline recommends exercise, not spur removal.',
         'For a full overview of plantar fasciitis, including causes, risk factors and what the guideline recommends, see [plantar fasciitis](/plantar-fasciitis/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -116,7 +146,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     {
       h2: 'Does a heel spur ever need to be removed?',
       paragraphs: [
-        'Surgical removal of a heel spur is rare and is not a first-line option. The 2023 guideline does not recommend spur removal for plantar fasciitis. Multiple studies have shown that plantar fasciitis pain can resolve with conservative care even when a spur remains on X-ray. The American Academy of Orthopaedic Surgeons states plainly that "heel spurs do not cause plantar fasciitis pain" and that "plantar fasciitis pain can be treated without removing the spur."',
+        'Surgical removal of a heel spur is rare and is not a first-line option. **The 2023 guideline does not recommend spur removal for plantar fasciitis.** Multiple studies have shown that plantar fasciitis pain can resolve with conservative care even when a spur remains on X-ray. The American Academy of Orthopaedic Surgeons states plainly that "heel spurs do not cause plantar fasciitis pain" and that "plantar fasciitis pain can be treated without removing the spur."',
         'Surgery is sometimes considered when pain has not responded to months of conservative treatment, but the procedure is typically a partial plantar fascia release, not a spur removal. If a spur happens to be taken out during that surgery, the evidence suggests the benefit came from releasing the fascia, not from removing the bone.',
         'The vast majority of people with heel pain and a spur improve with the same stretching, calf work and load management that people without a spur use. See [heel spur exercises](/heel-spur-exercises/) for the practical routine.',
       ],
@@ -143,7 +173,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
         },
         {
           name: 'Calf stretch (straight knee)',
-          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger outer calf muscle.' },
+          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger, more superficial calf muscle.' },
           dose: '2 holds of 30 seconds, each leg',
           how: 'Hands on a wall. Back leg straight, heel down, hips forward. A tight calf pulls on the heel through the Achilles tendon, adding load to the fascia.',
           often: 'Most sessions',

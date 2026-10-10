@@ -54,8 +54,8 @@ export const EX_SOLEUS_STRETCH: Guide = {
       h2: 'Why does the soleus need its own stretch?',
       keyFact: 'In a review of 254 people with plantar fasciitis, roughly one quarter had tightness in both calf muscles, the gastrocnemius and the soleus (Patel and DiGiovanni, 2011).',
       paragraphs: [
-        'The gastrocnemius, the outer calf muscle, crosses both the knee and the ankle. When you straighten the knee and lean forward, it takes the stretch. The soleus sits deeper and crosses only the ankle. With a straight knee, the gastrocnemius does all the work and the soleus barely moves.',
-        'Bending the knee puts slack into the gastrocnemius so it stops resisting. Now the ankle dorsiflexion pulls on the soleus instead. That is the whole point of the bent-knee version. It is not a modification. It is a separate exercise for a separate muscle.',
+        'The gastrocnemius, the more superficial calf muscle, crosses both the knee and the ankle. When you straighten the knee and lean forward, it takes the stretch. The soleus sits deeper and crosses only the ankle. With a straight knee, the gastrocnemius does all the work and the soleus barely moves.',
+        'Bending the knee puts slack into the gastrocnemius so it stops resisting. Now the ankle dorsiflexion pulls on the soleus instead. That is the whole point of the bent-knee version. It is not a modification. **It is a separate exercise for a separate muscle.**',
         'In a review of 254 people with plantar fasciitis, about a quarter had both muscles tight. The straight-knee stretch alone would not have reached the soleus portion of that tightness.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -65,16 +65,20 @@ export const EX_SOLEUS_STRETCH: Guide = {
       paragraphs: [
         'If you feel the stretch high in the calf, behind the knee, the knee is too straight and the gastrocnemius is taking over. Bend the knee further. The stretch should drop to the lower third of the calf or just above the heel.',
         'If you feel nothing, try stepping the back foot closer to the wall and bending the knee more deeply. Some people need a smaller stance to load the soleus.',
-        'If the stretch sits in the Achilles tendon itself and feels sharp rather than like a pull, ease off. A stretch should feel firm and sustained, not painful. Pain in the tendon during stretching is different from calf tightness and may point to [Achilles tendonitis](/achilles-tendonitis-exercises/).',
+        'If the stretch sits in the Achilles tendon itself and feels sharp rather than like a pull, ease off. **A stretch should feel firm and sustained, not painful.** Pain in the tendon during stretching is different from calf tightness and may point to [Achilles tendonitis](/achilles-tendonitis-exercises/).',
       ],
     },
     {
       h2: 'What are the common mistakes with the soleus stretch?',
       paragraphs: [
-        'Not bending the knee enough. A slight bend is not enough to release the gastrocnemius. You need a real bend, enough that you can see the back knee tracking forward over the toes.',
-        'Letting the heel lift. The moment the heel comes off the floor, the stretch vanishes. Press the heel down and let the knee move forward over the foot.',
-        'Rushing through it. A 5-second hold is too short for a sustained stretch to affect tissue length. Hold for 30 seconds, and try to relax into the stretch rather than pushing harder.',
-        'Skipping it because the straight-knee stretch felt like enough. They are different muscles. If both are tight, you need both stretches.',
+        {
+          list: [
+            '**Not bending the knee enough.** A slight bend is not enough to release the gastrocnemius. You need a real bend, enough that you can see the back knee tracking forward over the toes.',
+            '**Letting the heel lift.** The moment the heel comes off the floor, the stretch vanishes. Press the heel down and let the knee move forward over the foot.',
+            '**Rushing through it.** A 5-second hold is too short for a sustained stretch to affect tissue length. Hold for 30 seconds, and try to relax into the stretch rather than pushing harder.',
+            '**Skipping it because the straight-knee stretch felt like enough.** They are different muscles. If both are tight, you need both stretches.',
+          ],
+        },
       ],
     },
     {

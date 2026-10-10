@@ -20,7 +20,9 @@ export type ProgramRequest =
   /** The plan, open, nothing started. */
   | { kind: 'plan' }
   /** Today's test, if today has one; the plan otherwise. */
-  | { kind: 'test' };
+  | { kind: 'test' }
+  /** The plan, open, with one exercise's card over it (a OneLink's `exercise_<id>`). */
+  | { kind: 'exercise'; id: string };
 
 const FRESH_MS = 2 * 60 * 1000;
 

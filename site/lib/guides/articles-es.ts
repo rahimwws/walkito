@@ -1,5 +1,20 @@
 import type { EnglishPage } from '@/lib/i18n';
 
+import { TIGHT_CALVES_ES } from './articles-es/tight-calves';
+import { FLAT_FEET_KIDS_ES } from './articles-es/flat-feet-in-kids';
+import { FLAT_FEET_BACK_PAIN_ES } from './articles-es/flat-feet-back-pain';
+import { BAREFOOT_ES } from './articles-es/barefoot-shoes';
+import { FOOT_STRENGTHENING_ES } from './articles-es/foot-strengthening-exercises';
+import { ANKLE_MOBILITY_ES } from './articles-es/ankle-mobility-exercises';
+import { ICE_HEAT_ES } from './articles-es/ice-or-heat-for-plantar-fasciitis';
+import { FLAT_FEET_AGE_ES } from './articles-es/do-flat-feet-get-worse-with-age';
+import { ANKLE_STRENGTHENING_ES } from './articles-es/ankle-strengthening-exercises';
+import { NIGHT_SPLINTS_ES } from './articles-es/night-splints-plantar-fasciitis';
+import { INSOLES_VS_EXERCISES_ES } from './articles-es/insoles-vs-exercises';
+import { TOE_STRENGTHENING_ES } from './articles-es/toe-strengthening-exercises';
+import { MASSAGE_BALL_ES } from './articles-es/massage-ball-plantar-fasciitis';
+import { FLAT_FEET_KNEE_PAIN_ES } from './articles-es/flat-feet-knee-pain';
+import { PF_TAPING_ES } from './articles-es/plantar-fasciitis-taping';
 import { ACHILLES_ES } from './articles-es/achilles';
 import { ARCH_PAIN_ES } from './articles-es/arch-pain';
 import { BALL_OF_FOOT_ES } from './articles-es/ball-of-foot';
@@ -95,4 +110,19 @@ export const ARTICLES_ES: Partial<Record<EnglishPage, Guide>> = {
   standing: STANDING_ES,
   topOfFoot: TOP_OF_FOOT_ES,
   vsExakt: VS_EXAKT_ES,
+  pfTaping: PF_TAPING_ES,
+  flatFeetKneePain: FLAT_FEET_KNEE_PAIN_ES,
+  massageBall: MASSAGE_BALL_ES,
+  toeStrengthening: TOE_STRENGTHENING_ES,
+  insolesVsExercises: INSOLES_VS_EXERCISES_ES,
+  nightSplints: NIGHT_SPLINTS_ES,
+  ankleStrengthening: ANKLE_STRENGTHENING_ES,
+  flatFeetAge: FLAT_FEET_AGE_ES,
+  iceHeat: ICE_HEAT_ES,
+  ankleMobility: ANKLE_MOBILITY_ES,
+  footStrengthening: FOOT_STRENGTHENING_ES,
+  barefoot: BAREFOOT_ES,
+  flatFeetBackPain: FLAT_FEET_BACK_PAIN_ES,
+  flatFeetKids: FLAT_FEET_KIDS_ES,
+  tightCalves: TIGHT_CALVES_ES,
 };

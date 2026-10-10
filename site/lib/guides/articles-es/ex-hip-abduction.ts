@@ -36,8 +36,9 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
     {
       h2: '¿Cómo se hace la abducción de cadera de pie con banda?',
       paragraphs: [
-        'Párate con una banda elástica alrededor de los dos tobillos o justo encima de las rodillas. Apóyate en una pared o una silla para no perder el equilibrio. Pasa tu peso a la pierna de apoyo. Lleva la otra pierna recta hacia el lado, con los dedos apuntando al frente y el cuerpo derecho. No te inclines hacia el lado contrario. Baja despacio y repite.',
-        'Empuja con el talón de la pierna que trabaja, no con los dedos. El movimiento es en la cadera, no en la cintura. No hace falta subir mucho. Unos 30 a 45\u00A0grados desde el piso es suficiente si la técnica se mantiene limpia. Subir más inclinando el cuerpo hacia el lado hace menos por el glúteo medio.',
+        'Párate con una banda elástica alrededor de los dos tobillos o justo encima de las rodillas. Apóyate en una pared o una silla para no perder el equilibrio. Pasa tu peso a la pierna de apoyo.',
+        'Lleva la otra pierna recta hacia el lado, con los dedos apuntando al frente y el cuerpo derecho. No te inclines hacia el lado contrario. Baja despacio y repite.',
+        'Empuja con el talón de la pierna que trabaja, no con los dedos. **El movimiento es en la cadera, no en la cintura.** No hace falta subir mucho. Unos 30 a 45\u00A0grados desde el piso es suficiente si la técnica se mantiene limpia. Subir más inclinando el cuerpo hacia el lado hace menos por el glúteo medio.',
       ],
       exercises: [
         {
@@ -59,8 +60,15 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       h2: '¿Cómo afecta la cadera al pie y al arco?',
       keyFact: 'En unos 1900 adultos del Framingham Foot Study, el pie plano no se relacionó con el dolor lumbar, pero el pie que se va hacia adentro al caminar sí mostró una relación pequeña en mujeres (Menz y colegas, 2013).',
       paragraphs: [
-        'La conexión pasa por una cadena biomecánica: cadera, rodilla, tobillo, pie. Cuando el glúteo medio no logra mantener la pelvis nivelada al apoyarte en una pierna, el muslo gira hacia adentro. La rodilla lo sigue y se va hacia la línea media. Ese giro obliga al pie a hacer pronación: el tobillo se va hacia adentro y el arco se aplana.',
-        'Por eso muchas personas con pie plano o dolor en el arco también tienen las caderas débiles. El arco no está fallando por sí solo. Está recibiendo demasiada carga desde arriba. Fortalecer la cadera reduce esa carga que baja.',
+        'La conexión pasa por una cadena biomecánica: cadera, rodilla, tobillo, pie. Cuando el glúteo medio no logra mantener la pelvis nivelada al apoyarte en una pierna:',
+        {
+          list: [
+            'El muslo gira hacia adentro.',
+            'La rodilla lo sigue y se va hacia la línea media.',
+            'Ese giro obliga al pie a hacer pronación: el tobillo se va hacia adentro y el arco se aplana.',
+          ],
+        },
+        'Por eso muchas personas con pie plano o dolor en el arco también tienen las caderas débiles. El arco no está fallando por sí solo. **Está recibiendo demasiada carga desde arriba.** Fortalecer la cadera reduce esa carga que baja.',
         'Un estudio transversal de 2013 del Framingham Foot Study analizó a unos 1900\u00A0adultos de la comunidad. La postura de pie plano por sí sola no se relacionó con el dolor lumbar, pero un pie que se iba hacia adentro al caminar mostró una relación pequeña con el dolor lumbar en mujeres, lo que sugiere que la cadena pie-cadera-espalda puede funcionar en los dos sentidos.',
         'El ensayo de pie plano de Brijwasi y colegas (2023) incluyó fortalecimiento de cadera junto con ejercicios de pie corto, trabajo de tobillo y estiramientos. El programa combinado mejoró la forma del arco en seis semanas. El estudio no separó cuánto aportó el fortalecimiento de cadera por sí solo, pero incluirlo refleja la lógica biomecánica.',
       ],
@@ -77,10 +85,14 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en la abducción de cadera de pie?',
       paragraphs: [
-        'Inclinar el cuerpo hacia el lado contrario es el error más común. Cuando te inclinas, el cuerpo usa impulso y flexión lateral en lugar del glúteo medio. Mantente derecho. Es mejor subir menos con el cuerpo recto que subir mucho inclinándote.',
-        'Otro error es girar el pie hacia afuera, con los dedos apuntando al techo. Así el trabajo pasa a los flexores de cadera y al tensor de la fascia lata en lugar del glúteo medio. Mantén los dedos apuntando al frente o un poco hacia abajo.',
-        'Un tercer problema es balancear la pierna. El ejercicio debe ser lento y controlado, sobre todo al bajar. La fase de bajada (excéntrica) es donde se da buena parte del fortalecimiento. Si la pierna cae rápido, el músculo no está haciendo el trabajo.',
-        'Por último, si la cadera de la pierna de apoyo se cae, es señal de que la banda es demasiado fuerte o de que el glúteo medio de ese lado se está cansando. La pelvis debe quedarse nivelada todo el tiempo. Usa una banda más suave o descansa entre series.',
+        {
+          list: [
+            '**Inclinar el cuerpo hacia el lado contrario** es el error más común. Cuando te inclinas, el cuerpo usa impulso y flexión lateral en lugar del glúteo medio. Mantente derecho. Es mejor subir menos con el cuerpo recto que subir mucho inclinándote.',
+            'Otro error es **girar el pie hacia afuera**, con los dedos apuntando al techo. Así el trabajo pasa a los flexores de cadera y al tensor de la fascia lata en lugar del glúteo medio. Mantén los dedos apuntando al frente o un poco hacia abajo.',
+            'Un tercer problema es **balancear la pierna**. El ejercicio debe ser lento y controlado, sobre todo al bajar. La fase de bajada (excéntrica) es donde se da buena parte del fortalecimiento. Si la pierna cae rápido, el músculo no está haciendo el trabajo.',
+            '**Por último, si la cadera de la pierna de apoyo se cae**, es señal de que la banda es demasiado fuerte o de que el glúteo medio de ese lado se está cansando. La pelvis debe quedarse nivelada todo el tiempo. Usa una banda más suave o descansa entre series.',
+          ],
+        },
       ],
     },
     {
@@ -88,8 +100,16 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       paragraphs: [
         'La lógica biomecánica de la abducción de cadera en los programas para los pies está bien establecida: unos abductores de cadera débiles dejan que la rodilla se vaya hacia adentro, lo que aumenta la pronación del pie y la carga sobre el arco. Varios estudios observacionales confirman la relación entre la debilidad de cadera y los problemas de alineación de la pierna.',
         'En cuanto a resultados clínicos, la evidencia más fuerte viene de programas combinados. El ensayo de 2023 de Brijwasi y colegas incluyó fortalecimiento de cadera como parte de un programa de ejercicio de seis semanas para 52\u00A0personas con pie plano flexible. El programa mejoró la forma del arco. El fortalecimiento de cadera no se ha probado por separado en un ensayo propio de pie plano o de fascitis plantar.',
-        'Un ensayo aleatorizado de 2024 con 45\u00A0mujeres con pie plano flexible comparó, durante seis semanas, ejercicios de pie corto, un programa de ejercicio combinado, y ejercicios de pie corto más abducción isométrica de cadera. El grupo que sumó abducción isométrica de cadera al pie corto tuvo una reducción significativamente mayor de la caída del navicular (una medida de cuánto se hunde el arco) que los otros dos grupos (Zarali y colegas, 2024), lo que apoya la idea de que el trabajo de cadera aporta algo que los ejercicios de pie solos no dan.',
-        'La evidencia respalda la abducción de cadera como parte de un programa más amplio para los pies. No es un ejercicio aislado para el dolor en el arco, pero cubre un hueco que dejan los ejercicios que trabajan solo el pie. Páginas relacionadas: [ejercicios para el pie plano](/es/ejercicios-pie-plano/), [inversión de tobillo con banda](/es/ejercicios/inversion-de-tobillo-con-banda/), [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
+        'Un ensayo aleatorizado de 2024 con 45\u00A0mujeres con pie plano flexible comparó, durante seis semanas:',
+        {
+          list: [
+            'Ejercicios de pie corto.',
+            'Un programa de ejercicio combinado.',
+            'Ejercicios de pie corto más abducción isométrica de cadera.',
+          ],
+        },
+        'Los tres grupos mejoraron la caída del navicular (cuánto se hunde el arco con el peso del cuerpo). El grupo que sumó abducción isométrica de cadera mejoró más, pero su caída del navicular no fue significativamente mejor que la del programa combinado; su balanceo de lado a lado sí lo fue (Zarali y colegas, 2024). Eso sugiere que el trabajo de cadera podría aportar algo a los ejercicios de pie, según un solo ensayo pequeño.',
+        '**La evidencia respalda la abducción de cadera como parte de un programa más amplio para los pies.** No es un ejercicio aislado para el dolor en el arco, pero cubre un hueco que dejan los ejercicios que trabajan solo el pie. Páginas relacionadas: [ejercicios para el pie plano](/es/ejercicios-pie-plano/), [inversión de tobillo con banda](/es/ejercicios/inversion-de-tobillo-con-banda/), [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },
@@ -129,7 +149,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'Walkito añade la abducción de cadera en los días de fuerza cuando una meta de equilibrio entre izquierda y derecha entra en tu plan. Va junto con ejercicios intrínsecos del pie y trabajo de pantorrilla, para que el arco tenga apoyo desde arriba y desde abajo. Las sesiones duran 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días sigue tu avance.',
+    text: 'Walkito añade la abducción de cadera en los días de fuerza cuando una meta de diferencia entre izquierda y derecha entra en tu plan. Va junto con ejercicios intrínsecos del pie y trabajo de pantorrilla, para que el arco tenga apoyo desde arriba y desde abajo. Las sesiones duran 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días sigue tu avance.',
     cta: 'Empieza con 3\u00A0minutos al día.',
   },
   crumb: 'Abducción de cadera',

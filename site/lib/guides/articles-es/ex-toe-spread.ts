@@ -37,7 +37,8 @@ export const EX_TOE_SPREAD_ES: Guide = {
       h2: '¿Cómo se hace el ejercicio de separar los dedos?',
       paragraphs: [
         'Siéntate descalzo con los pies apoyados en el piso. Separa los cinco dedos todo lo que puedas, como si quisieras dejar espacio entre cada dedo. Mantén la posición más abierta y luego relaja. Eso es una repetición.',
-        'Levantar los dedos no es el objetivo. Mantén los dedos en el piso y concéntrate en abrirlos hacia afuera. No los aprietes contra el piso ni los encojas. Si al principio solo se mueven algunos dedos, es normal. El dedo gordo y el meñique del pie suelen moverse primero. Los tres dedos del medio muchas veces los siguen cuando los músculos se fortalecen.',
+        'Levantar los dedos no es el objetivo. Mantén los dedos en el piso y concéntrate en abrirlos hacia afuera. No los aprietes contra el piso ni los encojas.',
+        'Si al principio solo se mueven algunos dedos, es normal. El dedo gordo y el meñique del pie suelen moverse primero. Los tres dedos del medio muchas veces los siguen cuando los músculos se fortalecen.',
       ],
       exercises: [
         {
@@ -60,7 +61,15 @@ export const EX_TOE_SPREAD_ES: Guide = {
       keyFact: 'Un estudio de resonancia magnética de 2016 encontró que separar los dedos activó el abductor del dedo gordo solo al 18,9 %, frente al 29,7 % con el ejercicio de pie corto, en el mismo grupo pequeño de deportistas (Gooding y colegas, 2016).',
       paragraphs: [
         'Separar los dedos trabaja sobre todo dos músculos. El abductor del dedo gordo va por el borde interno del pie y lleva el dedo gordo hacia adentro (hacia la línea media del cuerpo). También es uno de los principales sostenes del arco longitudinal medial. El abductor del quinto dedo va por el borde externo y lleva el dedo pequeño hacia afuera.',
-        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, probó cuatro ejercicios para los músculos intrínsecos del pie y midió la activación de cada músculo. Separar los dedos produjo su activación más alta en el abductor del quinto dedo (35,2\u00A0%), seguido del fascículo oblicuo del aductor del dedo gordo (31,5\u00A0%) y el flexor corto del quinto dedo (30,2\u00A0%). La activación del abductor del dedo gordo al separar los dedos (18,9\u00A0%) fue menor que con el ejercicio de pie corto (29,7\u00A0%).',
+        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, probó cuatro ejercicios para los músculos intrínsecos del pie y midió la activación de cada músculo. Separar los dedos produjo su activación más alta en estos músculos:',
+        {
+          list: [
+            'El abductor del quinto dedo (35,2\u00A0%).',
+            'El fascículo oblicuo del aductor del dedo gordo (31,5\u00A0%).',
+            'El flexor corto del quinto dedo (30,2\u00A0%).',
+          ],
+        },
+        'La activación del abductor del dedo gordo al separar los dedos (18,9\u00A0%) fue menor que con el ejercicio de pie corto (29,7\u00A0%).',
         'Esto quiere decir que separar los dedos y el [ejercicio de pie corto](/es/ejercicios/pie-corto/) se complementan. El pie corto trabaja los músculos que recorren el arco. Separar los dedos trabaja los músculos de los bordes. Juntos cubren más del grupo de músculos intrínsecos del pie.',
       ],
       cites: [CITE.gooding],
@@ -68,8 +77,13 @@ export const EX_TOE_SPREAD_ES: Guide = {
     {
       h2: '¿A quién le sirve separar los dedos del pie?',
       paragraphs: [
-        'A las personas con pie plano, porque separar los dedos activa varios de los músculos pequeños que comparten con el abductor del dedo gordo el trabajo de sostener el arco. A las personas con juanetes (hallux valgus) les puede servir porque el ejercicio entrena músculos que alejan el dedo gordo de los otros dedos, en sentido contrario a la desviación hacia adentro de un juanete. Otro estudio de electromiografía en personas con juanetes leves encontró más actividad del abductor del dedo gordo al separar los dedos que con el pie corto, aunque ese estudio todavía no está en la lista de citas de este sitio.',
-        'Los corredores y quienes pasan muchas horas de pie pueden usar este ejercicio como parte de una rutina para fortalecer el pie. Unos dedos que se separan reparten la carga de forma más pareja en la parte delantera del pie al impulsarte. Si tus dedos están apretados por zapatos angostos, el ejercicio ayuda a recuperar el rango de movimiento.',
+        {
+          list: [
+            '**Pie plano.** A las personas con pie plano, porque separar los dedos activa varios de los músculos pequeños que comparten con el abductor del dedo gordo el trabajo de sostener el arco.',
+            '**Juanetes.** A las personas con juanetes (hallux valgus) les puede servir porque el ejercicio entrena músculos que alejan el dedo gordo de los otros dedos, en sentido contrario a la desviación hacia adentro de un juanete. Otro estudio de electromiografía en personas con juanetes leves encontró más actividad del abductor del dedo gordo al separar los dedos que con el pie corto, aunque ese estudio todavía no está en la lista de citas de este sitio.',
+            '**Corredores y muchas horas de pie.** Los corredores y quienes pasan muchas horas de pie pueden usar este ejercicio como parte de una rutina para fortalecer el pie. Unos dedos que se separan reparten la carga de forma más pareja en la parte delantera del pie al impulsarte. Si tus dedos están apretados por zapatos angostos, el ejercicio ayuda a recuperar el rango de movimiento.',
+          ],
+        },
         'Para un programa más amplio, mira [ejercicios para pie plano](/es/ejercicios-pie-plano/) o [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/).',
       ],
       cites: [CITE.gooding],
@@ -77,10 +91,14 @@ export const EX_TOE_SPREAD_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes al separar los dedos?',
       paragraphs: [
-        'El error más común es levantar los dedos del piso en lugar de separarlos hacia los lados. La meta es abrirlos en horizontal, no levantarlos. Mantén los dedos tocando el piso suavemente.',
-        'Otro error es encoger los dedos mientras intentas separarlos. Pasa cuando el cerebro todavía no logra separar el movimiento de abrir del movimiento de doblar. Mejora con la práctica. Intenta separarlos mirándote los dedos, así ves lo que de verdad está pasando.',
-        'Algunas personas notan que al principio solo se mueven el dedo gordo y el meñique, mientras los tres del medio se quedan pegados. Es normal. Los dedos del medio tienen menos control muscular propio. Con varias semanas de práctica, la apertura crece.',
-        'No fuerces la apertura hasta acalambrarte. Si el pie se acalambra, detente, date un masaje corto en la zona y vuelve a intentar con menos repeticiones.',
+        {
+          list: [
+            '**Levantar los dedos.** El error más común es levantar los dedos del piso en lugar de separarlos hacia los lados. La meta es abrirlos en horizontal, no levantarlos. Mantén los dedos tocando el piso suavemente.',
+            '**Encoger los dedos.** Otro error es encoger los dedos mientras intentas separarlos. Pasa cuando el cerebro todavía no logra separar el movimiento de abrir del movimiento de doblar. Mejora con la práctica. Intenta separarlos mirándote los dedos, así ves lo que de verdad está pasando.',
+            '**Dedos del medio pegados.** Algunas personas notan que al principio solo se mueven el dedo gordo y el meñique, mientras los tres del medio se quedan pegados. Es normal. Los dedos del medio tienen menos control muscular propio. Con varias semanas de práctica, la apertura crece.',
+            '**Forzarlo.** No fuerces la apertura hasta acalambrarte. Si el pie se acalambra, detente, date un masaje corto en la zona y vuelve a intentar con menos repeticiones.',
+          ],
+        },
       ],
     },
     {
@@ -88,7 +106,7 @@ export const EX_TOE_SPREAD_ES: Guide = {
       paragraphs: [
         'Separar los dedos se ha estudiado sobre todo con resonancia magnética y electromiografía, que miden la activación de los músculos durante el ejercicio. Un estudio con resonancia magnética de 2016, de Gooding y colegas, confirmó que activa los cuatro músculos intrínsecos de la planta que se midieron. La activación fue parecida a la del ejercicio de pie corto en la mayoría de los músculos, y más alta en el abductor del quinto dedo.',
         'Lo que la investigación todavía no ha hecho es probar separar los dedos como tratamiento por sí solo en un ensayo aleatorizado que mida resultados como el dolor o la altura del arco durante semanas o meses. Aparece como parte de programas combinados en ensayos sobre pie plano, pero en esos estudios no se puede separar su aporte del de los otros ejercicios.',
-        'La evidencia lo respalda como un ejercicio útil para activar los músculos intrínsecos del pie. Si cambia la estructura del pie por sí solo, todavía no se sabe. Otros ejercicios: [ejercicio de pie corto](/es/ejercicios/pie-corto/), [levantar el dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/), [recoger la toalla con los dedos](/es/ejercicios/recoger-toalla-con-los-dedos/).',
+        '**La evidencia lo respalda como un ejercicio útil para activar los músculos intrínsecos del pie.** Si cambia la estructura del pie por sí solo, todavía no se sabe. Otros ejercicios: [ejercicio de pie corto](/es/ejercicios/pie-corto/), [levantar el dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/), [recoger la toalla con los dedos](/es/ejercicios/recoger-toalla-con-los-dedos/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

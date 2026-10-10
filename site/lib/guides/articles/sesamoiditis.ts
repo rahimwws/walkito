@@ -38,7 +38,7 @@ export const SESAMOIDITIS_EN: Guide = {
       keyFact: 'About 1 in 10 people have a bipartite sesamoid, a normal variant that can look like a fracture on X-ray but has smooth, rounded edges rather than jagged ones (Yammine, 2015).',
       paragraphs: [
         'Sesamoiditis is an overuse condition. The pain comes on gradually and aches during activity. A sesamoid fracture is a crack in the bone, usually from a single acute event or from chronic stress. Fracture pain tends to be sharper and may be present even at rest.',
-        'One complication is that about 1 in 10 people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.',
+        'One complication is that about 1 in 10 people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: **bipartite edges are smooth and rounded, while fracture edges are jagged and irregular.** Your clinician may also X-ray the other foot for comparison.',
         'If X-rays are unclear, a bone scan or MRI can confirm the diagnosis. An MRI shows bone marrow edema, swelling inside the bone, which is present in most cases of sesamoiditis. MRI is usually reserved for cases where symptoms persist despite initial management.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -47,7 +47,15 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'What does conservative management look like?',
       keyFact: 'A 2025 review pooling 11 studies and 59 patients found pain scores improved in about 66 percent of cases treated conservatively, though recurrence was common (Biz and colleagues, 2025).',
       paragraphs: [
-        'The 2025 systematic review by Biz and colleagues pooled individual-level data from 11 studies covering 59 patients. The most common treatments were orthotics, activity modification, and corticosteroid injections. Pain scores improved in about 66 percent of cases, but recurrence was common and some patients remained symptomatic.',
+        'The 2025 systematic review by Biz and colleagues pooled individual-level data from 11 studies covering 59 patients. The most common treatments were:',
+        {
+          list: [
+            'Orthotics.',
+            'Activity modification.',
+            'Corticosteroid injections.',
+          ],
+        },
+        '**Pain scores improved in about 66 percent of cases, but recurrence was common** and some patients remained symptomatic.',
         'The review found that orthotics and offloading were used in nearly every case. Corticosteroid injections gave short-term relief but carried a risk of recurrence. No treatment was compared head to head in a randomized trial. The authors concluded that standardized protocols and higher-quality studies are needed.',
         'Surgery, usually partial or total sesamoidectomy (removal of the bone), is considered only when several months of conservative care have not helped. Most clinicians try at least three to six months of non-surgical management first.',
       ],
@@ -59,7 +67,7 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'What is a dancer\'s pad and how does it work?',
       paragraphs: [
         'A dancer\'s pad is a flat felt or foam pad with a U-shaped cutout under the first metatarsal head. The cutout sits right over the sesamoid area so that the pad lifts the surrounding forefoot while relieving direct pressure on the painful spot. The name comes from ballet, where forefoot loading is extreme.',
-        'You can buy pre-cut dancer\'s pads or have a clinician cut one to fit your foot. Placement matters: the cutout must sit directly under the sesamoid bones, not too far forward or back. Some people use the pad inside a shoe; others have it built into a custom insole.',
+        'You can buy pre-cut dancer\'s pads or have a clinician cut one to fit your foot. Placement matters: **the cutout must sit directly under the sesamoid bones**, not too far forward or back. Some people use the pad inside a shoe; others have it built into a custom insole.',
         'A stiff-soled or rocker-bottom shoe reduces how much the big toe joint bends during push-off, which limits loading on the sesamoids. Avoiding flexible, thin-soled shoes and high heels during the symptomatic period helps for the same reason.',
       ],
     },
@@ -67,7 +75,15 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'Does footwear matter?',
       paragraphs: [
         'Shoes play a supporting role. A shoe with a stiff sole limits first metatarsophalangeal joint (the big toe joint) motion, which directly reduces stress on the sesamoids. Rocker-bottom soles do the same thing by rolling the foot through push-off without requiring the toe to bend.',
-        'Avoid shoes that are flexible at the forefoot, very flat, or have a thin sole. High heels push weight forward onto the ball of the foot, increasing sesamoid load. If running triggered the problem, temporarily switching to a shoe with more forefoot cushioning and a higher stack height may help while symptoms settle.',
+        'Avoid shoes that:',
+        {
+          list: [
+            'Are flexible at the forefoot.',
+            'Are very flat.',
+            'Have a thin sole.',
+          ],
+        },
+        'High heels push weight forward onto the ball of the foot, increasing sesamoid load. If running triggered the problem, temporarily switching to a shoe with more forefoot cushioning and a higher stack height may help while symptoms settle.',
         'These changes alone will not resolve the condition if the underlying irritation is significant, but they reduce the load that caused the problem in the first place.',
       ],
     },
@@ -76,14 +92,14 @@ export const SESAMOIDITIS_EN: Guide = {
       paragraphs: [
         'The honest answer is that exercise has a limited role in managing sesamoiditis itself. Unlike [plantar fasciitis](/plantar-fasciitis-exercises/) or [Achilles tendonitis](/achilles-tendonitis-exercises/), where loading programs have good trial support, there are no exercise trials for sesamoiditis. The 2025 systematic review did not identify any study testing a specific exercise protocol.',
         'What exercise can help with is the surrounding picture. A tight calf shifts weight onto the forefoot during walking. Stretching the gastrocnemius and soleus can reduce that forward load. Weak intrinsic foot muscles may also contribute to uneven forefoot pressure distribution. Toe spreads and short foot work may help share the load more evenly across the metatarsal heads, though this has not been tested for sesamoiditis specifically.',
-        'If you are recovering from sesamoiditis and have lost toe strength or calf flexibility during the rest period, gentle exercises for the [ball of foot](/ball-of-foot-pain/) area can be part of a return-to-activity plan. But offloading and activity modification are the primary tools, not exercise.',
+        'If you are recovering from sesamoiditis and have lost toe strength or calf flexibility during the rest period, gentle exercises for the [ball of foot](/ball-of-foot-pain/) area can be part of a return-to-activity plan. But **offloading and activity modification are the primary tools, not exercise.**',
       ],
     },
     {
       h2: 'How does sesamoiditis relate to other forefoot conditions?',
       paragraphs: [
         'Sesamoiditis pain sits under the big toe, which separates it from broader [ball of foot pain](/ball-of-foot-pain/) (metatarsalgia), where pain is usually under the second and third metatarsal heads. [Morton\'s neuroma](/mortons-neuroma/) produces tingling or burning between the third and fourth toes, not under the big toe.',
-        'Gout can also affect the big toe joint and feels similar at first, but gout comes on suddenly, often overnight, with redness, swelling, and heat. Sesamoiditis develops gradually. If the onset was sudden and the joint is red and warm, see a clinician to rule out gout or infection.',
+        'Gout can also affect the big toe joint and feels similar at first, but gout comes on suddenly, often overnight, with redness, swelling, and heat. Sesamoiditis develops gradually. **If the onset was sudden and the joint is red and warm, see a clinician to rule out gout or infection.**',
         'Hallux rigidus, stiffness and arthritis of the big toe joint, can also cause pain in a similar location but involves the joint itself rather than the sesamoid bones underneath.',
       ],
     },

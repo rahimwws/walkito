@@ -26,14 +26,29 @@ export const HAMMER_TOE_EN: Guide = {
       paragraphs: [
         'A hammer toe is a flexion deformity at the proximal interphalangeal joint (the middle joint) of one of the lesser toes, most often the second. The toe bends downward at that joint while the tip may point down or slightly up. It is one of the most common forefoot deformities.',
         'The deformity develops from an imbalance between the muscles that flex and extend the toe. The extrinsic muscles, the long flexors and extensors that run from the leg through the foot, overpower the smaller intrinsic muscles inside the foot. When the intrinsics weaken, the flexors pull the middle joint down, and the extensors pull the base of the toe up at the metatarsophalangeal joint.',
-        'Common contributors include shoes that crowd the toes (narrow toe boxes, high heels), a second toe that is longer than the big toe, and conditions like hallux valgus (bunions) where the big toe pushes the second toe out of position. Neuromuscular conditions can also cause it.',
+        'Common contributors include:',
+        {
+          list: [
+            'Shoes that crowd the toes (narrow toe boxes, high heels).',
+            'A second toe that is longer than the big toe.',
+            'Conditions like hallux valgus (bunions) where the big toe pushes the second toe out of position.',
+          ],
+        },
+        'Neuromuscular conditions can also cause it.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: 'How is hammer toe different from claw toe and mallet toe?',
       paragraphs: [
-        'The three names describe which joints are bent. A hammer toe bends at the middle joint (proximal interphalangeal joint). A mallet toe bends at the end joint (distal interphalangeal joint), near the tip of the toe. A claw toe bends at both the middle and end joints while the base of the toe (metatarsophalangeal joint) extends upward.',
+        'The three names describe which joints are bent:',
+        {
+          list: [
+            'A hammer toe bends at the middle joint (proximal interphalangeal joint).',
+            'A mallet toe bends at the end joint (distal interphalangeal joint), near the tip of the toe.',
+            'A claw toe bends at both the middle and end joints while the base of the toe (metatarsophalangeal joint) extends upward.',
+          ],
+        },
         'Claw toes tend to be more severe, often affect multiple toes on both feet, and are more commonly linked to neuromuscular conditions. Hammer toes usually affect a single toe, most often the second, and are more commonly related to footwear and foot structure.',
         'In practice, the treatments overlap. Wider shoes, padding, and exercises that target intrinsic foot muscles apply to all three. The distinction matters most when surgery is considered, because the surgical approach depends on which joints are involved.',
       ],
@@ -43,7 +58,7 @@ export const HAMMER_TOE_EN: Guide = {
       h2: 'What is the difference between flexible and rigid hammer toes?',
       keyFact: 'A 2022 study of 20 older adults with hammer or claw toe found custom-molded silicone toe props significantly reduced peak pressure at the tip of the second toe in both flexible and rigid cases (Formosa and colleagues, 2022).',
       paragraphs: [
-        'A flexible hammer toe still has motion at the middle joint. You can straighten it with your hand. The muscles and tendons are tight, but the joint has not developed a fixed contracture. This is the stage where conservative measures have the most to offer.',
+        'A flexible hammer toe still has motion at the middle joint. You can straighten it with your hand. The muscles and tendons are tight, but the joint has not developed a fixed contracture. **This is the stage where conservative measures have the most to offer.**',
         'A rigid hammer toe has a fixed contracture at the middle joint. The joint no longer straightens. At this point, exercise cannot change the position. The goals shift to reducing friction (wider shoes, toe pads) and preventing corns, calluses, and skin breakdown.',
         'A 2022 quasi-experimental study of 20 older adults with hammer or claw toe deformities found that custom-molded silicone toe props significantly reduced peak pressure at the tip of the second toe in both flexible and rigid cases. At the metatarsophalangeal joint, pressure reduction was significant only in the rigid group.',
       ],
@@ -52,7 +67,7 @@ export const HAMMER_TOE_EN: Guide = {
     {
       h2: 'Does exercise help hammer toes?',
       paragraphs: [
-        'The honest answer is that there are no randomized controlled trials testing exercises specifically for hammer toes. The exercises commonly recommended, such as towel scrunches, toe spreads, and manual stretching, are based on the idea that strengthening intrinsic foot muscles and maintaining joint flexibility can help keep a flexible deformity from becoming rigid.',
+        'The honest answer is that **there are no randomized controlled trials testing exercises specifically for hammer toes.** The exercises commonly recommended, such as towel scrunches, toe spreads, and manual stretching, are based on the idea that strengthening intrinsic foot muscles and maintaining joint flexibility can help keep a flexible deformity from becoming rigid.',
         'That logic is reasonable. The deformity comes from a muscle imbalance: weak intrinsics and relatively stronger extrinsics. Exercises that target the intrinsics may restore some of that balance. But without direct trials, we do not know how much difference they make or whether they can actually prevent progression.',
         'What we do know from studies on other forefoot conditions is that intrinsic foot exercises like short foot work, toe spreads, and towel scrunches activate the right muscles. An MRI study by Gooding and colleagues (2016) confirmed that the short foot exercise and toe-spread-out exercise selectively activate intrinsic foot muscles. Whether that activation translates into better outcomes for hammer toes specifically has not been tested.',
       ],
@@ -112,7 +127,14 @@ export const HAMMER_TOE_EN: Guide = {
     {
       h2: 'Does footwear make a difference?',
       paragraphs: [
-        'Footwear is the single most recommended conservative approach for hammer toes. A review of lesser toe deformity management in the EFORT Open Reviews (Malhotra and colleagues, 2016) put footwear modification first in the conservative treatment list: a wide toe box to give toes room, a tall toe box to prevent friction on the bent joint, and avoidance of high heels.',
+        '**Footwear is the single most recommended conservative approach for hammer toes.** A review of lesser toe deformity management in the EFORT Open Reviews (Malhotra and colleagues, 2016) put footwear modification first in the conservative treatment list:',
+        {
+          list: [
+            'A wide toe box to give toes room.',
+            'A tall toe box to prevent friction on the bent joint.',
+            'Avoidance of high heels.',
+          ],
+        },
         'Narrow shoes compress the toes together and push the bent joint against the top of the shoe, causing corns and calluses. High heels slide the foot forward, cramming the toes into the front. Switching shoes will not straighten a rigid hammer toe, but it reduces the daily friction and pressure that cause most of the pain.',
         'Toe pads, gel sleeves, and silicone props can cushion the bent joint and redistribute pressure at the tip of the toe. The Formosa 2022 study showed that molded silicone toe props reduced peak pressure at the tip of the second toe in both flexible and rigid deformities.',
       ],
@@ -121,7 +143,7 @@ export const HAMMER_TOE_EN: Guide = {
     {
       h2: 'Can hammer toes be reversed without surgery?',
       paragraphs: [
-        'If the hammer toe is still flexible, conservative measures, including exercises, stretching, wider shoes, and toe taping, may keep it from progressing and may improve comfort. Taping the affected toe to its neighbor can gently hold it in a more neutral position throughout the day. But none of these measures has been shown to permanently correct the deformity.',
+        'If the hammer toe is still flexible, conservative measures, including exercises, stretching, wider shoes, and toe taping, may keep it from progressing and may improve comfort. Taping the affected toe to its neighbor can gently hold it in a more neutral position throughout the day. **But none of these measures has been shown to permanently correct the deformity.**',
         'Once a hammer toe becomes rigid, the joint is contracted and cannot be straightened. At that point, exercise and stretching will not change the shape. The focus shifts to protecting the skin from friction and managing pressure with pads and footwear.',
         'How quickly a flexible hammer toe becomes rigid varies. In some people it stays flexible for years. Wearing shoes with a wide toe box and maintaining toe mobility with daily stretching and exercises are the most commonly recommended strategies for slowing progression.',
       ],
@@ -131,7 +153,14 @@ export const HAMMER_TOE_EN: Guide = {
       keyFact: 'A 2016 review cited Swedish registry data showing lesser toe procedures, including hammer and claw toe surgery, made up almost a quarter of all forefoot operations (Malhotra and colleagues, 2016).',
       paragraphs: [
         'Surgery is considered when a rigid hammer toe causes persistent pain, skin breakdown, or difficulty wearing shoes despite conservative care. The decision is based on symptoms and functional limitation, not on the appearance of the toe.',
-        'Common procedures include proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint) and arthrodesis (fusing the joint in a straight position). Newer minimally invasive techniques exist but long-term outcome data are still being collected.',
+        'Common procedures include:',
+        {
+          list: [
+            'Proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint).',
+            'Arthrodesis (fusing the joint in a straight position).',
+          ],
+        },
+        'Newer minimally invasive techniques exist but long-term outcome data are still being collected.',
         'Recovery from hammer toe surgery typically takes three to six weeks in a postoperative shoe. Some stiffness in the toe is expected. A 2016 review cited Swedish registry data showing that lesser toe procedures, which include hammer toe, claw toe, and related deformities, made up almost a quarter of all forefoot surgeries.',
       ],
       cites: [CITE.malhotra],

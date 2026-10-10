@@ -39,14 +39,14 @@ export const FR: Copy = {
     balance: 'ton équilibre',
     symmetry: 'l’écart entre tes jambes',
   },
-  value: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `${n} %` : `${n} s`),
-  target: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `moins de ${n} %` : `${n} s`),
+  value: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `${n}\u00A0%` : `${n} s`),
+  target: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `moins de ${n}\u00A0%` : `${n} s`),
 
   welcome: {
     subject: 'bienvenue sur walkito',
-    intro: 'ici rahim et rahman - on a créé walkito, juste nous deux.',
+    intro: 'ici rahim et rahman. on a créé walkito, juste nous deux.',
     first: (m) => `ta première séance dure ${minutesFr(m)}. commence aujourd’hui, c’est la plus facile.`,
-    firstRunner: (m) => `ta première séance dure ${minutesFr(m)} - moins que ton échauffement.`,
+    firstRunner: (m) => `ta première séance dure ${minutesFr(m)}, moins que ton échauffement.`,
     button: 'ouvrir walkito',
     ps: 'p.-s. réponds à cet e-mail. on les lit tous.',
   },
@@ -66,13 +66,13 @@ export const FR: Copy = {
       balance: 'cette semaine, on s’occupe de ton équilibre',
       symmetry: 'cette semaine, on rééquilibre tes deux jambes',
     },
-    numbers: (name, current, target) => `${name} : ${current} aujourd’hui. objectif : ${target}.`,
+    numbers: (name, current, target) => `${name}\u00A0: ${current} aujourd’hui. objectif\u00A0: ${target}.`,
     moves: 'chaque séance de la semaine fait bouger ce chiffre.',
-    noNumbers: (goal) => `chaque séance de la semaine te rapproche de ton objectif : ${goal}.`,
+    noNumbers: (goal) => `chaque séance de la semaine te rapproche de ton objectif\u00A0: ${goal}.`,
     button: 'voir cette semaine',
   },
   day5Easy: {
-    subject: 'trop facile ? tant mieux.',
+    subject: 'trop facile\u00A0? tant mieux.',
     lines: [
       'la première semaine est douce exprès. on calme les choses avant d’ajouter de la charge.',
       'le vrai travail commence la semaine prochaine.',
@@ -85,14 +85,14 @@ export const FR: Copy = {
     button: (m) => `commencer avec ${minutesFr(m)}`,
   },
   day10Keep: {
-    subject: 'la plupart des gens arrêtent à la semaine 4',
-    notBecause: 'la plupart des gens arrêtent trop tôt. pas toi.',
-    painDrop: (s, l) => `tes matins sont passés de ${s} à ${l}. c’est justement là que les gens arrêtent.`,
+    subject: 'reprends aujourd’hui',
+    notBecause: 'c’est le moment où il est facile d’arrêter. n’arrête pas.',
+    painDrop: (s, l) => `tes matins sont passés de ${s} à ${l}. ce n’est pas le moment d’arrêter.`,
     daysIn: (d) => twoFr(d, `${d} jour déjà. continue.`, `${d} jours déjà. continue.`),
     button: (m) => (m <= 1 ? `faire la minute du jour` : `faire les ${m} minutes du jour`),
   },
   day14Test: {
-    subject: 'jour de réévaluation - vois ce qui a changé',
+    subject: 'jour de réévaluation\u00A0: vois ce qui a changé',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -102,7 +102,7 @@ export const FR: Copy = {
         case 'balance':
           return `il y a deux semaines, tu as tenu ${shown} ${secondsFr(n)} sur une jambe. voyons aujourd’hui.`;
         case 'symmetry':
-          return `il y a deux semaines, l’écart entre tes jambes était de ${shown} %. voyons aujourd’hui.`;
+          return `il y a deux semaines, l’écart entre tes jambes était de ${shown}\u00A0%. voyons aujourd’hui.`;
       }
     },
     generic: 'deux semaines déjà. voyons ce qui a changé.',
@@ -110,7 +110,7 @@ export const FR: Copy = {
     button: 'faire la réévaluation',
   },
   testResult: {
-    subject: (name, before, now) => `${name} : ${before} → ${now}`,
+    subject: (name, before, now) => `${name}\u00A0: ${before} → ${now}`,
     work: (w) =>
       w <= 1
         ? 'c’est une semaine de travail, mesurée.'
@@ -121,7 +121,7 @@ export const FR: Copy = {
     button: 'voir tes progrès',
   },
   goalReached: {
-    subject: (goal) => `${goal} - c’est fait`,
+    subject: (goal) => `${goal}\u00A0: c’est fait`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -131,17 +131,17 @@ export const FR: Copy = {
         case 'balance':
           return `tu voulais tenir ${t} ${secondsFr(t)} sur une jambe. c’est fait.`;
         case 'symmetry':
-          return `tu voulais ramener l’écart entre tes jambes sous ${t} %. c’est fait.`;
+          return `tu voulais ramener l’écart entre tes jambes sous ${t}\u00A0%. c’est fait.`;
         case 'pain_free_mornings':
           return 'tu voulais des matins plus faciles. c’est fait.';
       }
     },
-    next: (goal) => `prochaine étape : ${goal}.`,
+    next: (goal) => `prochaine étape\u00A0: ${goal}.`,
     buttonNext: 'commencer le prochain objectif',
     buttonPlan: 'voir ton plan',
   },
   painUp: {
-    subject: 'une semaine plus dure - voici le plan',
+    subject: 'une semaine plus dure. voici le plan',
     lines: [
       'la douleur a un peu augmenté cette semaine. ça arrive. ton plan s’est déjà allégé.',
       'si tu remarques un gonflement, un engourdissement ou une douleur la nuit, consulte un médecin.',
@@ -150,22 +150,22 @@ export const FR: Copy = {
   },
   winback7: {
     subject: 'ton plan t’attend toujours',
-    lines: ['pas besoin de rattraper quoi que ce soit - il reprend là où tu en es.', '3 minutes aujourd’hui ?'],
+    lines: ['pas besoin de rattraper quoi que ce soit. il reprend là où tu en es.', '3 minutes aujourd’hui\u00A0?'],
     button: 'commencer avec 3 minutes',
   },
   winback21: {
     subject: 'toujours là si tes pieds en ont besoin',
-    saved: (name, value) => `tes chiffres sont enregistrés : ${name} ${value}.`,
+    saved: (name, value) => `tes chiffres sont enregistrés\u00A0: ${name} ${value}.`,
     savedPlain: 'ton plan et tes progrès sont enregistrés.',
     button: 'ouvrir walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `ton plan est enregistré - ${p} % de réduction` : 'ton plan est enregistré - à prix réduit'),
-    ready: (goal, current, target) => `ton plan pour ${goal} est prêt : ${current} aujourd’hui, objectif ${target}.`,
+    subject: (p) => (p != null ? `ton plan est enregistré, ${p}\u00A0% de réduction` : 'ton plan est enregistré, maintenant à prix réduit'),
+    ready: (goal, current, target) => `ton plan pour ${goal} est prêt\u00A0: ${current} aujourd’hui, objectif ${target}.`,
     readyPlain: (goal) => `ton plan pour ${goal} est prêt et t’attend.`,
     price: (price, standard) => `l’abonnement annuel est à ${price} au lieu de ${standard}.`,
     priceUnknown: 'l’abonnement annuel coûte moins cher en ce moment.',
-    button: (p) => (p != null ? `profiter de ${p} % de réduction` : 'voir l’offre'),
+    button: (p) => (p != null ? `profiter de ${p}\u00A0% de réduction` : 'voir l’offre'),
   },
   offerFinal: {
     subject: 'notre dernier message',
@@ -174,15 +174,15 @@ export const FR: Copy = {
     button: (price) => (price != null ? `l’avoir pour ${price}` : 'voir l’offre'),
   },
   weekly: {
-    subject: (s) => `ta semaine : ${s} ${twoFr(s, 'séance', 'séances')}`,
-    subjectWithMetric: (s, name, value) => `ta semaine : ${s} ${twoFr(s, 'séance', 'séances')}, ${name} ${value}`,
+    subject: (s) => `ta semaine\u00A0: ${s} ${twoFr(s, 'séance', 'séances')}`,
+    subjectWithMetric: (s, name, value) => `ta semaine\u00A0: ${s} ${twoFr(s, 'séance', 'séances')}, ${name} ${value}`,
     mornings: (avg) => `tes matins étaient en moyenne à ${avg}/10.`,
-    next: (goal) => `la semaine prochaine : ${goal}.`,
+    next: (goal) => `la semaine prochaine\u00A0: ${goal}.`,
     button: 'voir la semaine prochaine',
   },
   unsubscribePage: {
     title: 'désabonnement confirmé',
-    done: 'walkito ne t’enverra plus d’e-mails. tu peux les réactiver dans l’app : réglages → e-mail.',
+    done: 'walkito ne t’enverra plus d’e-mails. tu peux les réactiver dans l’app\u00A0: réglages → e-mail.',
     undo: 'réactiver les e-mails',
     resubscribed: 'les e-mails sont réactivés.',
     invalid: 'ce lien ne fonctionne plus.',

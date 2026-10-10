@@ -33,7 +33,7 @@ export default function ConfidentialiteFr() {
       <Prose className="shell prose">
         <h1>Confidentialité</h1>
 
-        <p className="updated">Dernière mise à jour : 8 octobre 2026</p>
+        <p className="updated">Dernière mise à jour : 9 octobre 2026</p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/privacy/">la version anglaise</a>, c’est la version anglaise
@@ -449,6 +449,17 @@ export default function ConfidentialiteFr() {
           <b>Pas de cookies, pas de traceurs.</b> Le site ne dépose aucun cookie
           et ne charge aucun script de statistiques ou de pistage.
         </p>
+
+        <h2 id="ai-assistants">Assistants IA (ChatGPT et Claude)</h2>
+        <p>
+          Walkito peut être utilisé dans ChatGPT et Claude. Quand vous posez une question là-bas, l’assistant peut appeler l’un de nos outils et envoyer à notre serveur les réglages qu’il a choisis : par exemple la zone douloureuse, les minutes par jour, les jours par semaine, le matériel et le côté, et, si vous les avez mentionnés, la douleur du jour ou le résultat d’un test, qui décident de ce qui est affiché. Notre serveur s’en sert pour composer les exercices et le plan, et ne garde rien.
+        </p>
+        <ul>
+          <li>Aucun message, nom, adresse e-mail, valeur de douleur ni adresse IP n’est conservé.</li>
+          <li>Chaque appel n’est enregistré qu’avec le nom de l’outil, l’assistant (ChatGPT ou Claude), les réglages du plan (zone, minutes, jours, matériel, côté), sa durée et s’il a fonctionné.</li>
+          <li>Un code de plan (WK-…) ne contient que les réglages du plan et l’assistant qui l’a créé, rien sur vous.</li>
+          <li>Ce que vous écrivez dans ChatGPT ou Claude est traité par OpenAI ou Anthropic selon leurs propres politiques de confidentialité.</li>
+        </ul>
 
         <h2>Pas un avis médical</h2>
         <p>

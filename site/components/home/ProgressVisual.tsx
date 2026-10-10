@@ -141,7 +141,7 @@ const COPY: Record<Lang, VisualCopy> = {
   en: {
     painTitle: 'Morning pain',
     painNow: (value) => `${value} / 10 this week`,
-    painCaption: 'Day-to-day ups and downs are normal - watch the line.',
+    painCaption: 'Day-to-day ups and downs are normal. Watch the line.',
     goalsTitle: 'Goals',
     goalName: { arch_hold: 'Stronger arch', calf_raises: 'Stronger calves', balance: 'Better balance' },
     goalLine: {
@@ -165,16 +165,16 @@ const COPY: Record<Lang, VisualCopy> = {
   ru: {
     painTitle: 'Боль по утрам',
     painNow: (value) => `${value} / 10 за неделю`,
-    painCaption: 'Скачки день ото дня - это нормально. Смотрите на линию.',
+    painCaption: 'Перепады изо дня в день нормальны. Смотрите на линию.',
     goalsTitle: 'Цели',
     goalName: { arch_hold: 'Сильный свод', calf_raises: 'Сильные икры', balance: 'Лучше баланс' },
     goalLine: {
       arch_hold: (c, t) => `Удержание свода ${c} с → ${t} с`,
-      calf_raises: (c, t) => `Подъёмы на носок ${c} → ${t}`,
+      calf_raises: (c, t) => `Подъёмы на носки ${c} → ${t}`,
       balance: (c, t) => `Баланс ${c} с → ${t} с`,
     },
     strengthTitle: 'Сила и баланс',
-    calf: (from, to) => `Подъёмы на носок ${from} → ${to}`,
+    calf: (from, to) => `Подъёмы на носки ${from} → ${to}`,
     balance: (from, to) => `Баланс ${from} с → ${to} с`,
     arch: (from, to) => `Удержание свода ${from} с → ${to} с`,
     strengthSince: 'Первый тест и последний.',
@@ -182,19 +182,19 @@ const COPY: Record<Lang, VisualCopy> = {
     longestStreak: 'Лучшая серия',
     dayCount: { one: '{count} день', few: '{count} дня', many: '{count} дней' },
     title: { one: '{count} день подряд', few: '{count} дня подряд', many: '{count} дней подряд' },
-    rule: 'День засчитан, если вы отметили боль, провели сессию, прошли комплекс из библиотеки или план сам назначил отдых.',
+    rule: 'День засчитан, если вы отметили боль, провели занятие, прошли комплекс из библиотеки или план сам назначил отдых.',
     total: { one: 'Всего {count} день.', few: 'Всего {count} дня.', many: 'Всего {count} дней.' },
     dismiss: 'Понятно',
   },
   es: {
     painTitle: 'Dolor por la mañana',
     painNow: (value) => `${value} / 10 esta semana`,
-    painCaption: 'Los altibajos de cada día son normales - fíjate en la línea.',
+    painCaption: 'Los altibajos de cada día son normales. Fíjate en la línea.',
     goalsTitle: 'Objetivos',
-    goalName: { arch_hold: 'Arco más fuerte', calf_raises: 'Gemelos más fuertes', balance: 'Mejor equilibrio' },
+    goalName: { arch_hold: 'Arco más fuerte', calf_raises: 'Pantorrillas más fuertes', balance: 'Mejor equilibrio' },
     goalLine: {
       arch_hold: (c, t) => `Arco sostenido ${c} s → ${t} s`,
-      calf_raises: (c, t) => `Elevaciones de gemelo ${c} → ${t}`,
+      calf_raises: (c, t) => `Elevaciones de talón ${c} → ${t}`,
       balance: (c, t) => `Equilibrio ${c} s → ${t} s`,
     },
     strengthTitle: 'Fuerza y equilibrio',
@@ -213,7 +213,7 @@ const COPY: Record<Lang, VisualCopy> = {
   pt: {
     painTitle: 'Dor de manhã',
     painNow: (value) => `${value} / 10 esta semana`,
-    painCaption: 'Altos e baixos de um dia para o outro são normais - acompanhe a linha.',
+    painCaption: 'Altos e baixos de um dia para o outro são normais. Acompanhe a linha.',
     goalsTitle: 'Objetivos',
     goalName: { arch_hold: 'Arco mais forte', calf_raises: 'Panturrilhas mais fortes', balance: 'Mais equilíbrio' },
     goalLine: {
@@ -230,14 +230,14 @@ const COPY: Record<Lang, VisualCopy> = {
     longestStreak: 'Melhor sequência',
     dayCount: { one: '{count} dia', other: '{count} dias' },
     title: { one: '{count} dia seguido', other: '{count} dias seguidos' },
-    rule: 'Um dia conta quando você faz o registro, treina, termina uma rotina da biblioteca ou o plano te dá um dia de descanso.',
+    rule: 'Um dia conta quando você faz o registro, treina, termina uma rotina da biblioteca ou o plano dá a você um dia de descanso.',
     total: { one: '{count} dia até agora.', other: '{count} dias até agora.' },
     dismiss: 'Entendi',
   },
   fr: {
     painTitle: 'Douleur du matin',
     painNow: (value) => `${value} / 10 cette semaine`,
-    painCaption: 'Les hauts et les bas d’un jour à l’autre sont normaux - regarde la courbe.',
+    painCaption: 'Les hauts et les bas d’un jour à l’autre sont normaux. Regarde la courbe.',
     goalsTitle: 'Objectifs',
     goalName: {
       arch_hold: 'Une voûte plus forte',
@@ -265,16 +265,16 @@ const COPY: Record<Lang, VisualCopy> = {
   it: {
     painTitle: 'Dolore al mattino',
     painNow: (value) => `${value} / 10 questa settimana`,
-    painCaption: 'Gli alti e bassi di ogni giorno sono normali - guarda la linea.',
+    painCaption: 'Gli alti e bassi di ogni giorno sono normali. Guarda la linea.',
     goalsTitle: 'Obiettivi',
     goalName: { arch_hold: 'Arco più forte', calf_raises: 'Polpacci più forti', balance: 'Equilibrio migliore' },
     goalLine: {
       arch_hold: (c, t) => `Tenuta dell’arco ${c} s → ${t} s`,
-      calf_raises: (c, t) => `Sollevamenti sui talloni ${c} → ${t}`,
+      calf_raises: (c, t) => `Sollevamenti sulle punte ${c} → ${t}`,
       balance: (c, t) => `Equilibrio ${c} s → ${t} s`,
     },
     strengthTitle: 'Forza ed equilibrio',
-    calf: (from, to) => `Sollevamenti sui talloni ${from} → ${to}`,
+    calf: (from, to) => `Sollevamenti sulle punte ${from} → ${to}`,
     balance: (from, to) => `Equilibrio ${from} s → ${to} s`,
     arch: (from, to) => `Tenuta dell’arco ${from} s → ${to} s`,
     strengthSince: 'Il tuo primo test confrontato con l’ultimo.',
@@ -289,7 +289,7 @@ const COPY: Record<Lang, VisualCopy> = {
   de: {
     painTitle: 'Morgenschmerz',
     painNow: (value) => `${value} / 10 diese Woche`,
-    painCaption: 'Auf und Ab von Tag zu Tag ist normal - achte auf die Linie.',
+    painCaption: 'Auf und Ab von Tag zu Tag ist normal. Achte auf die Linie.',
     goalsTitle: 'Ziele',
     goalName: { arch_hold: 'Kräftigeres Gewölbe', calf_raises: 'Kräftigere Waden', balance: 'Bessere Balance' },
     goalLine: {

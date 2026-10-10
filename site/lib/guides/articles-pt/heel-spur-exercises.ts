@@ -31,15 +31,15 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
     'A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força um **B** (Koc e colegas, 2023).',
     'Em um ensaio com 48\u00A0pessoas com fascite plantar, elevações de calcanhar pesadas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais (Rathleff e colegas, 2015).',
     'Uma panturrilha tensa, medida como dorsiflexão do tornozelo reduzida, foi o fator de risco independente mais forte para fascite plantar em um estudo de caso-controle pareado com 50\u00A0casos e 100\u00A0controles (Riddle e colegas, 2003).',
-    'Uma revisão sistemática com meta-análise encontrou que tanto o alongamento de panturrilha quanto o alongamento da fáscia plantar reduziram a dor em comparação com não alongar (Siriphorn e Eksakulkla, 2020).',
+    'Uma revisão sistemática com metanálise encontrou que tanto o alongamento de panturrilha quanto o alongamento da fáscia plantar reduziram a dor em comparação com não alongar (Siriphorn e Eksakulkla, 2020).',
   ],
   toc: true,
   sections: [
     {
       h2: 'Por que os exercícios ajudam no esporão?',
-      keyFact: 'Em um estudo com 530\u00A0pessoas com dor no pé, o esporão apareceu sozinho em só 6% dos pés, normalmente junto com uma fáscia plantar espessada (Menz e colegas, 2019).',
+      keyFact: 'Em um estudo com 530\u00A0pessoas com dor no pé, o esporão apareceu sozinho em só 6% dos pés; na maioria das vezes vinha junto com uma fáscia plantar espessada (Menz e colegas, 2019).',
       paragraphs: [
-        'O esporão no calcanhar é um crescimento de osso na parte de baixo do osso do calcanhar. Em um estudo com 530\u00A0pessoas de 50\u00A0anos ou mais com dor no pé, o esporão sozinho era raro (6% dos pés), e a dor no calcanhar estava ligada ao esporão junto com uma fáscia plantar espessada, a faixa de tecido embaixo do pé (Menz e colegas, 2019). A dor vem do tecido mole, e é ele que o exercício consegue alcançar.',
+        'O esporão no calcanhar é um crescimento de osso na parte de baixo do osso do calcanhar. Em um estudo com 530\u00A0pessoas de 50\u00A0anos ou mais com dor no pé, o esporão sozinho era raro (6% dos pés), e a dor no calcanhar estava ligada ao esporão junto com uma fáscia plantar espessada, a faixa de tecido embaixo do pé (Menz e colegas, 2019). **A dor vem do tecido mole, e é ele que o exercício consegue alcançar.**',
         'Alongar a fáscia plantar e a panturrilha diminui a tensão onde ela se prende no calcanhar. Fortalecer a panturrilha aumenta a capacidade da cadeia que absorve a carga toda vez que o calcanhar bate no chão. Juntos, eles diminuem o estresse diário no tecido em volta do esporão.',
         'Nenhum programa de exercícios vai fazer um esporão sumir do raio-X. Mas a maioria das pessoas com esporão não precisa que ele suma. Elas precisam que a dor diminua, e isso vem da fáscia e da panturrilha ficando mais fortes e mais flexíveis.',
       ],
@@ -49,12 +49,12 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       h2: 'Quais alongamentos ajudam na dor do esporão?',
       keyFact: 'Uma revisão sistemática encontrou que tanto o alongamento de panturrilha quanto o alongamento da fáscia plantar aliviaram a dor da fascite plantar em comparação com não alongar (Siriphorn e Eksakulkla, 2020).',
       paragraphs: [
-        'O alongamento é o ponto de partida. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau **A**, o mais alto. Uma revisão sistemática com meta-análise sobre alongamento para fascite plantar encontrou que tanto o alongamento de panturrilha quanto o alongamento da fáscia plantar reduziram a dor em comparação com não alongar (Siriphorn e Eksakulkla, 2020). Comece com estes três.',
+        'O alongamento é o ponto de partida. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau **A**, o mais alto. Uma revisão sistemática com metanálise sobre alongamento para fascite plantar encontrou que tanto o alongamento de panturrilha quanto o alongamento da fáscia plantar reduziram a dor em comparação com não alongar (Siriphorn e Eksakulkla, 2020). Comece com estes três.',
       ],
       exercises: [
         {
           name: 'Alongamento da fáscia plantar',
-          evidence: { level: 'strong', why: 'Grau A na diretriz. Um ensaio de 2003 com 101\u00A0pessoas encontrou este alongamento mais eficaz que só alongar a panturrilha em 8\u00A0semanas.' },
+          evidence: { level: 'strong', why: 'Grau A na diretriz. Um ensaio de 2003 com 101\u00A0pessoas (82 concluíram o acompanhamento) encontrou este alongamento mais eficaz que só alongar a panturrilha em 8\u00A0semanas.' },
           dose: '10\u00A0vezes de 10\u00A0segundos, cada pé',
           how: 'Sente-se e cruze um tornozelo sobre o outro joelho. Puxe os dedos para trás com cuidado até sentir um alongamento ao longo do arco. Segure e solte. Faça antes do primeiro passo de toda manhã e depois de ficar muito tempo sentado.',
           often: 'Toda manhã e depois de ficar sentado',
@@ -66,9 +66,9 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
         },
         {
           name: 'Alongamento de panturrilha (joelho esticado)',
-          evidence: { level: 'strong', why: 'Grau A na diretriz. Um gastrocnêmio tenso foi o fator de risco mais forte para fascite plantar em um estudo de caso-controle de 2003.' },
+          evidence: { level: 'strong', why: 'Grau A na diretriz. A dorsiflexão reduzida do tornozelo foi o fator de risco mais forte para fascite plantar em um estudo de caso-controle de 2003.' },
           dose: '2\u00A0vezes de 30\u00A0segundos, cada perna',
-          how: 'Mãos na parede. Perna de trás esticada, calcanhar no chão, quadril para a frente. Segure até sentir o alongamento na parte de cima da panturrilha. O gastrocnêmio, o músculo maior e mais externo da panturrilha, só alonga com o joelho esticado.',
+          how: 'Mãos na parede. Perna de trás esticada, calcanhar no chão, quadril para a frente. Segure até sentir o alongamento na parte de cima da panturrilha. O gastrocnêmio, o músculo maior e mais superficial da panturrilha, só alonga com o joelho esticado.',
           often: 'Quase todas as sessões',
           feel: 'Um alongamento na parte de cima da panturrilha',
           stop: 'A dor chegar a 6/10',
@@ -95,7 +95,8 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       h2: 'Quais exercícios de fortalecimento ajudam na dor do esporão?',
       keyFact: 'Em um ensaio com 48\u00A0pessoas, o grupo das elevações de calcanhar teve 29\u00A0pontos a mais de melhora no Foot Function Index que o grupo que só alongava, aos três meses (Rathleff e colegas, 2015).',
       paragraphs: [
-        'Só alongar muitas vezes basta nas primeiras semanas. Quando a dor da manhã começa a diminuir, acrescentar o fortalecimento da panturrilha aumenta a capacidade que a cadeia do calcanhar precisa. A diretriz dá ao treino de força o grau **B**, o segundo mais alto. No único ensaio feito para testar elevações de calcanhar na fascite plantar, 48\u00A0pessoas foram divididas entre um grupo de elevações de calcanhar com carga e um grupo que só alongava. O grupo das elevações teve 29\u00A0pontos a mais de melhora no Foot Function Index aos três meses (Rathleff e colegas, 2015).',
+        'Só alongar muitas vezes basta nas primeiras semanas. Quando a dor da manhã começa a diminuir, acrescentar o fortalecimento da panturrilha aumenta a capacidade de que a cadeia do calcanhar precisa. A diretriz dá ao treino de força o grau **B**, o segundo mais alto.',
+        'No único ensaio feito para testar elevações de calcanhar na fascite plantar, 48\u00A0pessoas foram divididas entre um grupo de elevações de calcanhar com carga e um grupo que só alongava. O grupo das elevações teve 29\u00A0pontos a mais de melhora no Foot Function Index aos três meses (Rathleff e colegas, 2015).',
         'Comece pelo nível mais fácil e só suba quando ele parecer fácil por duas sessões seguidas. A progressão abaixo vai do trabalho sentado até a elevação de calcanhar com toalha e carga do ensaio.',
       ],
       exercises: [
@@ -127,7 +128,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           name: 'Elevação de calcanhar sustentada (isométrica)',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Sustentação isométrica no fim do movimento. Não foi testada em um ensaio isolado de fascite plantar.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima carrega o tendão sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o quique de uma repetição completa.',
           often: 'Dias de força, o degrau depois da elevação com os dois pés',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
@@ -139,7 +140,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           name: 'Elevação de calcanhar com toalha (em uma perna)',
           evidence: { level: 'strong', why: 'O exercício do ensaio randomizado de Rathleff de 2015. Grau B na diretriz.' },
           dose: 'Protocolo da pesquisa: 3\u00A0séries de 12RM, progredindo para 5\u00A0séries de 8RM. O Walkito começa com 3\u00A0séries de 12, cada perna',
-          how: 'Fique em um pé só na beira de um degrau, com uma toalha enrolada embaixo dos cinco dedos. Três segundos para subir, dois segundos parado lá em cima, três segundos para descer. A toalha ativa o mecanismo de molinete (windlass), que carrega a fáscia plantar junto com a panturrilha. Acrescente peso com uma mochila quando a última repetição deixar de ser difícil.',
+          how: 'Fique em um pé só na beira de um degrau, com uma toalha enrolada embaixo dos cinco dedos. Três segundos para subir, dois segundos parado lá em cima, três segundos para descer. A toalha ativa o mecanismo de molinete (windlass), que põe carga na fáscia plantar junto com a panturrilha. Acrescente peso com uma mochila quando a última repetição deixar de ser difícil.',
           often: 'Dia sim, dia não no ensaio. O Walkito coloca esse exercício nos dias de força, nunca dois seguidos.',
           feel: 'Trabalho pesado na panturrilha e um puxão embaixo do arco',
           stop: 'A dor chegar a 6/10',
@@ -182,7 +183,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           name: 'Rolar o pé na bolinha',
           evidence: { level: 'early', why: 'Não foi testado nos estudos desta página. Serve para dar alívio entre as sessões.' },
           dose: '2\u00A0minutos, cada pé',
-          how: 'Sente-se e role a sola do pé devagar sobre uma bolinha de massagem ou uma garrafa de água congelada. Mantenha a pressão firme, mas não a ponto de fazer você fazer careta. Rolar depois de um dia longo em pé pode acalmar o tecido.',
+          how: 'Sente-se e role a sola do pé devagar sobre uma bolinha de massagem ou uma garrafa de água congelada. Mantenha a pressão firme, mas não a ponto de você fazer careta. Rolar depois de um dia longo em pé pode acalmar o tecido.',
           often: 'Dias de recuperação ou depois de um dia longo',
           feel: 'Pressão firme embaixo do pé, nunca dor aguda',
           stop: 'A dor chegar a 6/10',
@@ -222,7 +223,8 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       paragraphs: [
         'O alongamento deve dar a sensação de um puxão, não de uma pontada. Um alongamento de panturrilha que dá uma tensão confortável na parte de cima ou de baixo da panturrilha está certo. Um alongamento da fáscia plantar que puxa de leve ao longo do arco está certo. Se o alongamento reproduz a dor forte que você sente nos primeiros passos, alivie.',
         'As elevações de calcanhar devem dar a sensação de trabalho na panturrilha. A versão com toalha também vai dar um puxão embaixo do arco, que é a fáscia recebendo carga. Esse puxão é esperado e é justamente a função da toalha.',
-        'Pare por hoje se a dor chegar a **6/10 ou mais** em qualquer exercício, ou se os seus primeiros passos na manhã seguinte estiverem claramente piores que o normal. Essa regra de parar e voltar um degrau é a que o app usa. Uma dor muscular leve que passa em um dia é normal, principalmente nas duas primeiras semanas. Dor que continua alta por dias ou que piora semana após semana é motivo para voltar um nível ou procurar um profissional de saúde.',
+        'Pare por hoje se a dor chegar a **6/10 ou mais** em qualquer exercício, ou se os seus primeiros passos na manhã seguinte estiverem claramente piores que o normal. Essa regra de parar e voltar um degrau é a que o app usa.',
+        'Uma dor muscular leve que passa em um dia é normal, principalmente nas duas primeiras semanas. Dor que continua alta por dias ou que piora semana após semana é motivo para voltar um nível ou procurar um profissional de saúde.',
       ],
       cites: [CITE.guideline],
     },
@@ -231,14 +233,21 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       paragraphs: [
         'Não existe ensaio que meça os resultados do exercício especificamente em pessoas com esporão. Os prazos abaixo vêm de estudos sobre fascite plantar, que é a condição que causa a dor em volta do esporão na maioria dos casos.',
         'Uma revisão da evidência clínica relata que cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento e palmilhas, muitas vezes em alguns meses (Latt e colegas, 2020). No ensaio de Rathleff de 2015, o grupo das elevações de calcanhar com carga estava significativamente à frente do grupo que só alongava aos três meses.',
-        'Nenhum programa de exercícios pode prometer um prazo para uma pessoa específica. O que você pode medir é se as coisas estão mudando. A dor da manhã numa escala de 0 a 10, anotada antes do primeiro passo, é o sinal mais claro do dia a dia. A resistência da panturrilha, medida por quantas elevações de calcanhar em uma perna você consegue fazer, acompanha a força ao longo das semanas. As duas coisas são mais úteis do que adivinhar.',
+        'Nenhum programa de exercícios pode prometer um prazo para uma pessoa específica. **O que você pode medir é se as coisas estão mudando**:',
+        {
+          list: [
+            'A dor da manhã numa escala de 0 a 10, anotada antes do primeiro passo, é o sinal mais claro do dia a dia.',
+            'A resistência da panturrilha, medida por quantas elevações de calcanhar em uma perna você consegue fazer, acompanha a força ao longo das semanas.',
+          ],
+        },
+        'As duas coisas são mais úteis do que adivinhar.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: 'Dá para eliminar o esporão de forma natural?',
       paragraphs: [
-        'Exercício, alongamento e mudanças na alimentação não dissolvem um esporão. O esporão é osso calcificado. Ele continua no raio-X, você alongando ou não.',
+        '**Exercício, alongamento e mudanças na alimentação não dissolvem um esporão.** O esporão é osso calcificado. Ele continua no raio-X, você alongando ou não.',
         'Mas “eliminar o esporão” raramente é a meta certa. No estudo de 2019, o esporão quase sempre vinha junto com uma fáscia plantar espessada, e o tecido mole é a parte que o exercício consegue mudar. A dor vem do tecido mole. Os exercícios desta página trabalham o tecido mole. Se a dor diminui, o esporão não é um problema que precisa ser resolvido.',
         'Se alguém prometeu a você um suplemento, uma pomada ou um aparelho que dissolve esporão, desconfie. Nenhuma evidência publicada apoia essa promessa. A abordagem recomendada pela diretriz é alongamento, fortalecimento da panturrilha e controle da carga.',
       ],
@@ -258,7 +267,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
     {
       q: 'Com que frequência fazer alongamento para esporão?',
       cites: [CITE.guideline, CITE.digiovanni2003],
-      a: 'O alongamento da fáscia plantar funciona melhor feito toda manhã antes de ficar em pé e depois de ficar muito tempo sentado. Os alongamentos de panturrilha entram na maioria das sessões. Em um ensaio com 101\u00A0pessoas com dor crônica no calcanhar, o grupo que fazia o alongamento da fáscia plantar relatou resultados melhores em 8\u00A0semanas que o grupo que só alongava a panturrilha (DiGiovanni e colegas, 2003).',
+      a: 'O alongamento da fáscia plantar funciona melhor feito toda manhã antes de ficar em pé e depois de ficar muito tempo sentado. Os alongamentos de panturrilha entram na maioria das sessões. Em um ensaio com 101\u00A0pessoas com dor crônica no calcanhar (82 concluíram o acompanhamento), o grupo que fazia o alongamento da fáscia plantar relatou resultados melhores em 8\u00A0semanas que o grupo que só alongava a panturrilha (DiGiovanni e colegas, 2003).',
     },
     {
       q: 'Quanto tempo demora para a dor do esporão passar?',
@@ -273,7 +282,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
     {
       q: 'Caminhar é bom para esporão?',
       cites: [CITE.guideline],
-      a: 'Caminhar em si não é o problema. Caminhar com calçados de bom suporte, num ritmo confortável, normalmente não tem problema e é melhor que repouso total. A dor vem da fáscia plantar e da panturrilha embaixo do esporão, e caminhar de forma moderada mantém a bomba da panturrilha ativa. Se caminhar deixa a sua dor da manhã pior no dia seguinte, encurte a distância e volte a aumentar aos poucos.',
+      a: 'Caminhar em si não é o problema. Caminhar com calçados de bom suporte, num ritmo confortável, normalmente não tem problema e é melhor que repouso total. A dor vem da fáscia plantar em volta do esporão e da panturrilha, e caminhar de forma moderada mantém a bomba da panturrilha ativa. Se caminhar deixa a sua dor da manhã pior no dia seguinte, encurte a distância e volte a aumentar aos poucos.',
     },
     {
       q: 'Quais exercícios evitar com esporão?',

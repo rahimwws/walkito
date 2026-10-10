@@ -183,7 +183,7 @@ describe('offers', () => {
 
   test('the offer carries the store price', () => {
     const e = evaluate(user({ subscription: 'none', paywall: paywall(1), profile: freshAt(day(5)) }), day(5));
-    expect(e.decision?.content.subject).toBe('your plan is saved - 33% off');
+    expect(e.decision?.content.subject).toBe('your plan is saved, 33% off');
     expect(e.decision?.content.paragraphs.join(' ')).toContain('the annual subscription is $29.99 instead of $44.99');
   });
 });

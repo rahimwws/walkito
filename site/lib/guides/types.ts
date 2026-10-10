@@ -59,6 +59,13 @@ export type GuideTable = {
   rows: readonly (readonly string[])[];
 };
 
+/**
+ * One block of running text: a paragraph, or a short bullet list that sits
+ * between paragraphs (a list the sentence before it introduces, usually ending
+ * in a colon). A list here reads in place; `bullets` prints after everything.
+ */
+export type GuideBlock = string | { readonly list: readonly string[] };
+
 export type GuideSection = {
   h2: string;
   /** One sentence with the section's key study number and who found it,
@@ -70,12 +77,12 @@ export type GuideSection = {
   figure?: { id: AnatomyId; caption: string; alt: string };
   /** An interactive tool printed at the end of the section. */
   tool?: 'calf-raise-calculator' | 'pf-timeline';
-  paragraphs?: readonly string[];
+  paragraphs?: readonly GuideBlock[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];
   table?: GuideTable;
   /** Paragraphs printed after the table, for text that reads the table. */
-  after?: readonly string[];
+  after?: readonly GuideBlock[];
   /** Study detail kept out of the running text (scales, intervals, p-values),
    * printed with the section's sources. */
   sourceNote?: string;

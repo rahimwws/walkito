@@ -265,7 +265,10 @@ export default function Program() {
         <p>
           The plan gets harder slowly, one level at a time, and only when your
           foot is ready. Exercises sit on chains, such as calf, arch, balance
-          and hip, from level 1 to level 5. The chain for your focus goal moves
+          and hip, from level 1 to level 5.
+        </p>
+        <p>
+          The chain for your focus goal moves
           up one level after the last two sessions with that exercise felt
           easy, and only if your morning pain did not rise that week. A hard
           session, or a week when morning pain went up, steps it back a level.

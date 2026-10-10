@@ -52,6 +52,7 @@
         "react-dom": "19.2.3",
         "react-native": "0.86.3",
         "react-native-android-widget": "^0.22.1",
+        "react-native-appsflyer": "7.0.2",
         "react-native-gesture-handler": "~2.32.0",
         "react-native-health-connect": "^4.1.3",
         "react-native-keyboard-controller": "1.21.9",
@@ -82,6 +83,8 @@
     "@expo/ui": "57.0.7",
   },
   "packages": {
+    "@appsflyer-sdk/js-core-plugin": ["@appsflyer-sdk/js-core-plugin@7.0.15", "", {}, "sha512-YEp/GzYr+Ce4CF8x7U8prDgUVgcwHAcVsSYJh9vWX34nFrqzA7xI9sQ7mHU2zpabNmRmakzWlOxT7RqwnVqB/A=="],
+
     "@babel/code-frame": ["@babel/code-frame@7.29.7", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.29.7", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw=="],
 
     "@babel/compat-data": ["@babel/compat-data@7.29.7", "", {}, "sha512-locTkQyKvwIEgBzVrn8693ebc97F2U8ZHjbXwDXJ5Fn2TCpNwTlKcaKLkdHop5c/icOFE7qt7Q9JC5hnKNa6Gg=="],
@@ -1099,6 +1102,8 @@
     "react-native": ["react-native@0.86.3", "", { "dependencies": { "@react-native/assets-registry": "0.86.3", "@react-native/codegen": "0.86.3", "@react-native/community-cli-plugin": "0.86.3", "@react-native/gradle-plugin": "0.86.3", "@react-native/js-polyfills": "0.86.3", "@react-native/normalize-colors": "0.86.3", "@react-native/virtualized-lists": "0.86.3", "abort-controller": "^3.0.0", "anser": "^1.4.9", "ansi-regex": "^5.0.0", "babel-plugin-syntax-hermes-parser": "0.36.0", "base64-js": "^1.5.1", "commander": "^12.0.0", "flow-enums-runtime": "^0.0.6", "hermes-compiler": "250829098.0.17", "invariant": "^2.2.4", "memoize-one": "^5.0.0", "metro-runtime": "^0.84.3", "metro-source-map": "^0.84.3", "nullthrows": "^1.1.1", "pretty-format": "^29.7.0", "promise": "^8.3.0", "react-devtools-core": "^6.1.5", "react-refresh": "^0.14.0", "regenerator-runtime": "^0.13.2", "scheduler": "0.27.0", "semver": "^7.1.3", "stacktrace-parser": "^0.1.10", "tinyglobby": "^0.2.15", "whatwg-fetch": "^3.0.0", "ws": "^7.5.10", "yargs": "^17.6.2" }, "peerDependencies": { "@react-native/jest-preset": "0.86.3", "@types/react": "^19.1.1", "react": "^19.2.3" }, "optionalPeers": ["@react-native/jest-preset", "@types/react"], "bin": { "react-native": "cli.js" } }, "sha512-JR5s3bM9ezud+Mw24GlNXNfthqPIKwrQgPPJcam+L97t2sKjjEavhCzBn+fyqZZRcM5+XlhYxpTxVkK7e1n38Q=="],
 
     "react-native-android-widget": ["react-native-android-widget@0.22.1", "", { "peerDependencies": { "expo": ">=54.0.0", "react": "*", "react-native": "*" }, "optionalPeers": ["expo"] }, "sha512-BBMuqShRrxV23Z09Rn5zNHJaPegCnH3DhhZQgXbhw2GMh45Gez0RbwKTIWHftuW4nLrqWy6esz8XwecUZLiZKA=="],
+
+    "react-native-appsflyer": ["react-native-appsflyer@7.0.2", "", { "dependencies": { "@appsflyer-sdk/js-core-plugin": "7.0.15" }, "peerDependencies": { "react-native": ">=0.76.0" } }, "sha512-IJyxPPleeFfk1vytK3VNVAOEerpdY/srjvekfJFEM2SVw7s3FuYUtnDlRC6boo2giY0qfiX6RyzT7u905aF0sg=="],
 
     "react-native-drawer-layout": ["react-native-drawer-layout@4.2.9", "", { "dependencies": { "color": "^4.2.3", "use-latest-callback": "^0.2.4" }, "peerDependencies": { "react": ">= 18.2.0", "react-native": "*", "react-native-gesture-handler": ">= 2.0.0", "react-native-reanimated": ">= 2.0.0" } }, "sha512-ETOxvlhhb4LmuuG3RN7A3qwt9jr9AZ2it+1G2kNE4g2fTyxxay7QQkPm1HfKi/JzmMSWC5+YTepGSgZNpJIDGg=="],
 

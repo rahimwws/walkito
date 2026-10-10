@@ -56,8 +56,8 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
       h2: '¿Por qué el sóleo necesita su propio estiramiento?',
       keyFact: 'En una revisión de 254\u00A0personas con fascitis plantar, alrededor de una cuarta parte tenía tensos los dos músculos de la pantorrilla, el gastrocnemio y el sóleo (Patel y DiGiovanni, 2011).',
       paragraphs: [
-        'El gastrocnemio, el músculo externo de la pantorrilla, cruza la rodilla y el tobillo. Cuando estiras la rodilla y te inclinas hacia adelante, él recibe el estiramiento. El sóleo está más profundo y cruza solo el tobillo. Con la rodilla estirada, el gastrocnemio hace todo el trabajo y el sóleo casi no se mueve.',
-        'Al doblar la rodilla, el gastrocnemio se afloja y deja de resistir. Ahora la dorsiflexión del tobillo jala del sóleo. Ese es todo el sentido de la versión con la rodilla doblada. No es una adaptación. Es otro ejercicio para otro músculo.',
+        'El gastrocnemio, el músculo superficial de la pantorrilla, cruza la rodilla y el tobillo. Cuando estiras la rodilla y te inclinas hacia adelante, él recibe el estiramiento. El sóleo está más profundo y cruza solo el tobillo. Con la rodilla estirada, el gastrocnemio hace todo el trabajo y el sóleo casi no se mueve.',
+        'Al doblar la rodilla, el gastrocnemio se afloja y deja de resistir. Ahora la dorsiflexión del tobillo jala del sóleo. Ese es todo el sentido de la versión con la rodilla doblada. No es una adaptación. **Es otro ejercicio para otro músculo.**',
         'En una revisión de 254\u00A0personas con fascitis plantar, alrededor de una cuarta parte tenía tensos los dos músculos. El estiramiento con la rodilla estirada por sí solo no habría llegado a la parte de esa tensión que está en el sóleo.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -67,16 +67,20 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
       paragraphs: [
         'Si sientes el estiramiento arriba en la pantorrilla, detrás de la rodilla, la rodilla está demasiado estirada y el gastrocnemio está tomando el control. Dobla más la rodilla. El estiramiento debe bajar al tercio inferior de la pantorrilla o justo arriba del talón.',
         'Si no sientes nada, acerca el pie de atrás a la pared y dobla más la rodilla. Algunas personas necesitan una postura más corta para cargar el sóleo.',
-        'Si el estiramiento se siente en el propio tendón de Aquiles y es agudo en lugar de un tirón, afloja. Un estiramiento debe sentirse firme y sostenido, no doloroso. El dolor en el tendón al estirar es distinto de la pantorrilla tensa y puede apuntar a una [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+        'Si el estiramiento se siente en el propio tendón de Aquiles y es agudo en lugar de un tirón, afloja. **Un estiramiento debe sentirse firme y sostenido, no doloroso.** El dolor en el tendón al estirar es distinto de la pantorrilla tensa y puede apuntar a una [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
     },
     {
       h2: '¿Cuáles son los errores comunes en el estiramiento de sóleo?',
       paragraphs: [
-        'No doblar lo suficiente la rodilla. Una flexión ligera no alcanza para aflojar el gastrocnemio. Necesitas doblarla de verdad, lo bastante para ver que la rodilla de atrás avanza por encima de los dedos.',
-        'Dejar que el talón se levante. En cuanto el talón se despega del piso, el estiramiento desaparece. Apoya bien el talón y deja que la rodilla avance por encima del pie.',
-        'Hacerlo con prisa. 5\u00A0segundos son muy poco para que un estiramiento sostenido tenga efecto sobre la longitud del tejido. Mantén 30\u00A0segundos y trata de relajarte en el estiramiento en lugar de empujar más fuerte.',
-        'Saltártelo porque el estiramiento con la rodilla estirada pareció suficiente. Son músculos distintos. Si los dos están tensos, necesitas los dos estiramientos.',
+        {
+          list: [
+            '**No doblar lo suficiente la rodilla.** Una flexión ligera no alcanza para aflojar el gastrocnemio. Necesitas doblarla de verdad, lo bastante para ver que la rodilla de atrás avanza por encima de los dedos.',
+            '**Dejar que el talón se levante.** En cuanto el talón se despega del piso, el estiramiento desaparece. Apoya bien el talón y deja que la rodilla avance por encima del pie.',
+            '**Hacerlo con prisa.** 5\u00A0segundos son muy poco para que un estiramiento sostenido tenga efecto sobre la longitud del tejido. Mantén 30\u00A0segundos y trata de relajarte en el estiramiento en lugar de empujar más fuerte.',
+            '**Saltártelo porque el estiramiento con la rodilla estirada pareció suficiente.** Son músculos distintos. Si los dos están tensos, necesitas los dos estiramientos.',
+          ],
+        },
       ],
     },
     {

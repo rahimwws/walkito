@@ -38,12 +38,24 @@ export const PF_DURATION_FR: Guide = {
       h2: 'Combien de temps dure en général une fasciite plantaire\u00A0?',
       keyFact: 'Dans une cohorte de 174\u00A0personnes, le risque d’avoir encore des symptômes de fasciite plantaire était de 80,5\u00A0% à un an, et descendait à 45,6\u00A0% à dix ans (Hansen et coll., 2018).',
       paragraphs: [
-        'Il n’y a pas de chiffre unique. La récupération dépend de depuis combien de temps vous l’avez, de ce que vous faites, et de facteurs que vous ne contrôlez pas.',
+        '**Il n’y a pas de chiffre unique.** La récupération dépend\u00A0:',
+        {
+          list: [
+            'De l’ancienneté de la douleur.',
+            'De ce que vous faites.',
+            'De facteurs que vous ne contrôlez pas.',
+          ],
+        },
         'Une revue de la littérature de 2020 indique que les approches non chirurgicales marchent pour environ 90\u00A0% des personnes atteintes de fasciite plantaire, en général en trois à six mois (Latt et coll., 2020).',
         'Une étude de cohorte de 2018 donne une vue à plus long terme. Hansen et coll. ont suivi 174\u00A0patients dont la fasciite plantaire avait été diagnostiquée à l’échographie, en moyenne 9,7\u00A0ans après le début des symptômes. Au suivi, 54\u00A0% n’avaient plus de symptômes et 46\u00A0% avaient encore un peu mal.',
         'L’analyse de Kaplan-Meier a montré que le risque d’avoir encore une fasciite plantaire était de 80,5\u00A0% à un an, 50,0\u00A0% à cinq ans et 45,6\u00A0% à dix ans. Chez ceux qui n’avaient plus de symptômes, la durée moyenne des symptômes était de 725\u00A0jours, soit environ deux ans (Hansen et coll., 2018).',
-        'Ces chiffres semblent pires que le «\u00A0ça passe en quelques mois\u00A0» habituel. Deux choses expliquent l’écart. D’abord, la cohorte de Hansen était une population adressée à un spécialiste\u00A0: 93\u00A0% avaient reçu une infiltration de cortisone, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.',
-        'Ensuite, les patients qui avaient encore des symptômes au suivi ne signalaient en moyenne qu’une douleur légère, environ 2 à 3 sur 10 à la marche. «\u00A0Encore des symptômes à dix ans\u00A0» ne veut donc pas forcément dire «\u00A0incapable de marcher\u00A0». Pour beaucoup, cela voulait dire une gêne occasionnelle au lieu de la vive douleur des premiers pas du début.',
+        'Ces chiffres semblent pires que le «\u00A0ça passe en quelques mois\u00A0» habituel. Deux choses expliquent l’écart\u00A0:',
+        {
+          list: [
+            '**D’abord,** la cohorte de Hansen était une population adressée à un spécialiste\u00A0: 93\u00A0% avaient reçu une infiltration de cortisone, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.',
+            '**Ensuite,** les patients qui avaient encore des symptômes au suivi ne signalaient en moyenne qu’une douleur légère, environ 2 à 3 sur 10 à la marche. «\u00A0Encore des symptômes à dix ans\u00A0» ne veut donc pas forcément dire «\u00A0incapable de marcher\u00A0». Pour beaucoup, cela voulait dire une gêne occasionnelle au lieu de la vive douleur des premiers pas du début.',
+          ],
+        },
       ],
       sourceNote:
         'Hansen 2018\u00A0: risque de FP selon Kaplan-Meier\u00A0: 80,5\u00A0% (IC à 95\u00A0% 73,5-85,6) à 1\u00A0an, 50,0\u00A0% (42,4-57,1) à 5\u00A0ans, 45,6\u00A0% (37,9-53,0) à 10\u00A0ans, 44,0\u00A0% (35,9-51,8) à 15\u00A0ans. Durée moyenne des symptômes dans le groupe asymptomatique\u00A0: 725\u00A0jours (de 41 à 4018). Score NRS du groupe symptomatique au suivi\u00A0: 0,7 au repos, 1,8 à la marche, 2,8 à la course, 2,1 à la pression.',
@@ -53,8 +65,14 @@ export const PF_DURATION_FR: Guide = {
       h2: 'La fasciite plantaire part-elle toute seule\u00A0?',
       paragraphs: [
         'Parfois. Certaines personnes se réveillent un matin et la douleur a disparu, sans rien de particulier. Mais «\u00A0ça passe tout seul\u00A0» n’est pas une prédiction utile pour une personne donnée, car il n’y a aucun moyen de savoir à l’avance si vous faites partie de ce groupe.',
-        'Ce que disent les données, c’est qu’agir, en s’étirant, en renforçant le mollet et en portant des chaussures qui soutiennent le pied, a tendance à avancer l’amélioration. Dans l’essai de Rathleff, 48\u00A0personnes atteintes de fasciite plantaire ont été réparties en deux groupes\u00A0: l’un faisait des montées sur pointes avec charge et une serviette sous les orteils, l’autre étirait le fascia plantaire.',
-        'Le groupe des montées sur pointes s’est amélioré plus vite à trois mois. À un an, les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). Les exercices n’ont donc pas donné une amélioration finale plus grande, mais ils l’ont avancée. On ne sait pas si elle serait arrivée aussi vite sans aucune des deux approches.',
+        'Ce que disent les données, c’est qu’agir, en s’étirant, en renforçant le mollet et en portant des chaussures qui soutiennent le pied, a tendance à accélérer l’amélioration. Dans l’essai de Rathleff, 48\u00A0personnes atteintes de fasciite plantaire ont été réparties en deux groupes\u00A0:',
+        {
+          list: [
+            'L’un faisait des montées sur pointes avec charge et une serviette sous les orteils.',
+            'L’autre étirait le fascia plantaire.',
+          ],
+        },
+        'Le groupe des montées sur pointes s’est amélioré plus vite à trois mois. À un an, les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). **Les exercices n’ont donc pas donné une amélioration finale plus grande, mais ils l’ont accélérée.** On ne sait pas si elle serait arrivée aussi vite sans aucune des deux approches.',
         'La recommandation de 2023 conseille les étirements (note A) et le renforcement (note B) comme premières choses à essayer, avec des conseils sur les chaussures. La recommandation ne dit pas «\u00A0attendez de voir\u00A0». Elle dit «\u00A0commencez ces exercices tout en surveillant\u00A0» (Koc et coll., 2023). Si la douleur est à l’arrière du talon plutôt que dessous, voir plutôt [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
@@ -63,10 +81,13 @@ export const PF_DURATION_FR: Guide = {
       h2: 'Qu’est-ce qui prédit une récupération plus lente\u00A0?',
       keyFact: 'Dans une cohorte de 174\u00A0personnes, les femmes devenaient asymptomatiques à un rythme environ deux fois plus lent que les hommes, et les personnes qui avaient mal aux deux talons à un rythme environ trois fois plus lent que celles qui avaient mal d’un seul côté (Hansen et coll., 2018).',
       paragraphs: [
-        'La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée des symptômes. Deux sont ressortis significatifs.',
-        '**Être une femme.** Pour 100\u00A0hommes qui devenaient asymptomatiques par an, seules 49\u00A0femmes l’étaient (rapport de taux de risque 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).',
-        '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de taux de risque 0,33, p inférieur à 0,01).',
-        'Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
+        'La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée des symptômes. Deux sont ressortis significatifs\u00A0:',
+        {
+          list: [
+            '**Être une femme.** Pour 100\u00A0hommes qui devenaient asymptomatiques par an, seules 49\u00A0femmes l’étaient (rapport de taux de risque 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).',
+            '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de taux de risque 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
+          ],
+        },
         'L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une épine calcanéenne n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
         'Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.',
       ],
@@ -78,7 +99,8 @@ export const PF_DURATION_FR: Guide = {
       h2: 'Que veut dire fasciite plantaire «\u00A0chronique\u00A0»\u00A0?',
       paragraphs: [
         'Il n’y a pas de définition unique reconnue. Certaines sources parlent de fasciite plantaire chronique au-delà de trois mois, d’autres au-delà de six mois. La recommandation de 2023 ne fixe pas de limite. Une revue de 2020 définit la fasciite plantaire chronique comme «\u00A0la cause la plus fréquente de douleur chronique au talon chez l’adulte\u00A0», sans donner de seuil en mois (Latt et coll., 2020).',
-        'Plus que l’étiquette, c’est le schéma qui compte. Une fasciite plantaire chronique veut en général dire que la vive douleur aux premiers pas du matin est devenue une douleur plus sourde et plus constante. Le tissu change aussi avec le temps\u00A0: le suffixe «\u00A0-ite\u00A0» évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de cortisone, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.',
+        '**Plus que l’étiquette, c’est le schéma qui compte.** Une fasciite plantaire chronique veut en général dire que la vive douleur aux premiers pas du matin est devenue une douleur plus sourde et plus constante.',
+        'Le tissu change aussi avec le temps\u00A0: le suffixe «\u00A0-ite\u00A0» évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de cortisone, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.',
         'Si vous avez une fasciite plantaire depuis plus de quelques mois et qu’elle ne s’améliore pas clairement, la section suivante présente ce que conseille la recommandation.',
       ],
       cites: [CITE.latt, CITE.guideline],
@@ -87,12 +109,16 @@ export const PF_DURATION_FR: Guide = {
       h2: 'Quels repères réalistes\u00A0?',
       keyFact: 'Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur (plus bas) de 29\u00A0points que le groupe des étirements à trois mois, une différence décrite comme importante et mesurable (Rathleff et coll., 2015).',
       paragraphs: [
-        'Aucune étude ne donne un calendrier semaine par semaine valable pour tout le monde, et tout article qui le fait devine. Ce que les données offrent, ce sont quelques repères que la plupart des gens reconnaîtront.',
-        '**Les premières semaines.** La douleur du matin peut ne pas beaucoup changer. L’essai de Rathleff a montré une différence nette entre les groupes à trois mois, pas à trois semaines. Au début, le principal changement est que les exercices deviennent plus faciles à faire et que le mollet paraît moins raide. Cela vaut la peine de le remarquer, même si le talon fait encore mal.',
-        '**Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est un peu plus basse plus souvent qu’autrement, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).',
-        '**Trois à six mois.** La fourchette «\u00A0souvent en trois à six mois\u00A0» de la revue de 2020 place ici le milieu de l’amélioration pour la plupart des personnes qui font les exercices conseillés et portent des chaussures qui soutiennent le pied (Latt et coll., 2020).',
-        '**Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà\u00A0: la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration ralentit. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.',
-        'Le chiffre utile n’est pas «\u00A0dans combien de semaines j’en aurai fini\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?». Cette tendance est le vrai repère.',
+        'Aucune étude ne donne un calendrier semaine par semaine valable pour tout le monde, et tout article qui le fait devine. Ce que les données offrent, ce sont quelques repères que la plupart des gens reconnaîtront\u00A0:',
+        {
+          list: [
+            '**Les premières semaines.** La douleur du matin peut ne pas beaucoup changer. L’essai de Rathleff a montré une différence nette entre les groupes à trois mois, pas à trois semaines. Au début, le principal changement est que les exercices deviennent plus faciles à faire et que le mollet paraît moins raide. Cela vaut la peine de le remarquer, même si le talon fait encore mal.',
+            '**Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est un peu plus basse plus souvent qu’autrement, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).',
+            '**Trois à six mois.** La fourchette «\u00A0souvent en trois à six mois\u00A0» de la revue de 2020 place ici le milieu de l’amélioration pour la plupart des personnes qui font les exercices conseillés et portent des chaussures qui soutiennent le pied (Latt et coll., 2020).',
+            '**Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà\u00A0: la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration ralentit. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.',
+          ],
+        },
+        '**Le chiffre utile n’est pas «\u00A0dans combien de semaines j’en aurai fini\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?».** Cette tendance est le vrai repère.',
       ],
       cites: [CITE.rathleff, CITE.latt, CITE.hansen],
     },
@@ -109,7 +135,7 @@ export const PF_DURATION_FR: Guide = {
           ['Étirements du fascia plantaire et du mollet', '**A**', 'La meilleure note de la recommandation. Conseillés comme le cœur des soins conservateurs.'],
           ['Strapping du pied (rigide ou élastique)', '**A**', 'Meilleure note pour la douleur et la fonction à court terme, en plus d’autres soins.'],
           ['Attelles de nuit pendant 1 à 3\u00A0mois (douleur du matin qui persiste)', '**A**', 'Meilleure note pour les personnes dont les premiers pas restent douloureux. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/).'],
-          ['Exercices contre résistance et renforcement (par ex. montées sur pointes avec charge)', '**B**', 'Deuxième meilleure note. A avancé l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
+          ['Exercices contre résistance et renforcement (par ex. montées sur pointes avec charge)', '**B**', 'Deuxième meilleure note. A accéléré l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
           ['Laser de basse intensité et dry needling (par un professionnel de santé)', '**B**', 'Deuxième meilleure note. Les deux se font en cabinet.'],
           ['Semelles orthopédiques seules pour soulager la douleur à court terme', '**B contre**', 'La recommandation **déconseille** les semelles orthopédiques comme approche isolée à court terme.'],
           ['Semelles orthopédiques associées à d’autres soins', '**C**', 'Preuves faibles. Peuvent aider dans le cadre d’un programme plus large.'],
@@ -123,16 +149,16 @@ export const PF_DURATION_FR: Guide = {
     {
       h2: 'Quand consulter si la fasciite plantaire ne s’améliore pas\u00A0?',
       paragraphs: [
-        'Le tableau ci-dessus est clair\u00A0: les étirements et le renforcement ont le soutien le plus large. Les options en cabinet (laser, dry needling, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
+        'Le tableau ci-dessus est clair\u00A0: **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, dry needling, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
         'Si vous faites les exercices régulièrement depuis plusieurs mois et que la douleur du matin ne s’améliore pas, c’est un bon moment pour consulter un professionnel de santé et parler des options ci-dessus. C’est aussi un bon moment pour vérifier que le diagnostic est le bon\u00A0: voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour les autres problèmes qui partagent le même schéma.',
-        'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais) traitent de cet aspect.',
+        'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) traitent de cet aspect.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
     {
-      h2: 'Comment suivre la douleur du matin montre-t-il les progrès\u00A0?',
+      h2: 'En quoi le suivi de la douleur du matin montre-t-il les progrès\u00A0?',
       paragraphs: [
-        'La douleur du matin est le signal quotidien le plus fiable de l’état du pied. Elle mesure la même chose (la raideur aux premiers pas), dans les mêmes conditions (juste au réveil, pied sans charge), à peu près à la même heure chaque jour. Elle donne donc une bien meilleure tendance que «\u00A0comment mon pied allait dans la journée\u00A0», qui varie avec l’activité, les chaussures et les surfaces.',
+        '**La douleur du matin est le signal quotidien le plus fiable de l’état du pied.** Elle mesure la même chose (la raideur aux premiers pas), dans les mêmes conditions (juste au réveil, pied sans charge), à peu près à la même heure chaque jour. Elle donne donc une bien meilleure tendance que «\u00A0comment mon pied allait dans la journée\u00A0», qui varie avec l’activité, les chaussures et les surfaces.',
         'Une note quotidienne de 0 à 10 sur vos premiers pas, suivie sur plusieurs semaines, montre des tendances que vous ne remarqueriez pas autrement. Une note qui glisse de 5 à 3 en un mois est un vrai progrès, même si chaque matin fait encore un peu mal. Une note qui grimpe le lendemain d’une longue course ou d’une journée debout vous dit exactement quelle charge était de trop.',
         'Walkito vous demande votre douleur du matin avant chaque séance et s’en sert pour adapter les exercices du jour. Le premier objectif pour la douleur au talon est une douleur du matin à 1/10 ou moins pendant 14\u00A0jours de suite. Une fois cet objectif atteint, il passe en entretien et l’objectif suivant (en général la force du mollet ou l’équilibre) prend sa place. Ce passage de «\u00A0rendre les matins plus faciles\u00A0» à «\u00A0développer la capacité\u00A0» est le vrai repère.',
       ],

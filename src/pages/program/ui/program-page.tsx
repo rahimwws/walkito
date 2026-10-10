@@ -20,6 +20,7 @@ import {
   clearRetestRequest,
   completePlanSession,
   exerciseById,
+  EXERCISES_BY_ID,
   currentDay,
   doseLabel,
   goals as readGoals,
@@ -251,6 +252,12 @@ export function ProgramPage() {
     clearProgramRequest();
     program.open();
     if (linkRequest.kind === 'plan') return;
+    // An id the catalogue does not have (a link made for a later build, or a
+    // typo in a campaign) still opens the plan, just without a card.
+    if (linkRequest.kind === 'exercise') {
+      if (EXERCISES_BY_ID[linkRequest.id] != null) setPreview(linkRequest.id);
+      return;
+    }
     if (linkRequest.kind === 'test') {
       if (adjusted.type === 'test' && !doneToday) setPendingStart(true);
       return;

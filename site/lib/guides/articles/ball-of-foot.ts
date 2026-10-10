@@ -21,7 +21,7 @@ export const BALL_OF_FOOT_EN: Guide = {
   toc: true,
   takeaways: [
     'In a study of 41 people with primary metatarsalgia, an 8-week toe exercise program improved pain by an average of 2.7 points on a 10-point scale. The study had no control group (Amaha and colleagues, 2020).',
-    'A tight gastrocnemius, the bigger outer calf muscle, shifts weight forward onto the forefoot. In a series of 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011).',
+    'A tight gastrocnemius, the bigger, more superficial calf muscle, shifts weight forward onto the forefoot. In a series of 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011).',
     'Metatarsal pads placed just behind the metatarsal heads are the most studied conservative approach for forefoot pain.',
     'Morton\'s neuroma and metatarsalgia overlap in symptoms but differ in location: neuroma pain is typically between the third and fourth toes with tingling, while metatarsalgia is broader.',
   ],
@@ -44,15 +44,23 @@ export const BALL_OF_FOOT_EN: Guide = {
         '**Claw toes and hammer toes** bend the toe joints downward, which lifts the toe off the ground and shifts its push-off load back onto the metatarsal head behind it.',
         '**High heels and narrow shoes** tip weight forward onto the forefoot and compress the metatarsal heads together, which is why Morton\'s neuroma is more common in people who wear them.',
         '**High arches** (pes cavus, meaning a foot with a high, rigid arch) reduce the contact area on the sole, concentrating pressure on the heel and the ball of the foot. On the other end, [flat feet](/flat-feet-exercises/) can also contribute to forefoot pain by altering how the foot rolls during push-off.',
-        '**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](/plantar-fasciitis-exercises/) and [Achilles tendonitis](/achilles-tendonitis-exercises/).',
+        '**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger, more superficial calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](/plantar-fasciitis-exercises/) and [Achilles tendonitis](/achilles-tendonitis-exercises/).',
       ],
       cites: [CITE.patelGastrocnemius],
     },
     {
       h2: 'How do you tell these conditions apart?',
       paragraphs: [
-        'Location is the first clue. Broad pain under the second and third metatarsal heads points toward metatarsalgia. Pain between the third and fourth toes, with tingling, suggests Morton\'s neuroma. Pain directly under the big toe joint is more consistent with sesamoiditis. A localized spot on the top of the foot with swelling raises the question of a stress fracture.',
-        'Stress fractures often do not show on a plain X-ray for the first two to three weeks and may need an MRI. A clinician visit is worth it when pain stays beyond two weeks despite rest and shoe changes, or when there is tingling, night pain, or visible swelling.',
+        'Location is the first clue:',
+        {
+          list: [
+            'Broad pain under the second and third metatarsal heads points toward metatarsalgia.',
+            'Pain between the third and fourth toes, with tingling, suggests Morton\'s neuroma.',
+            'Pain directly under the big toe joint is more consistent with sesamoiditis.',
+            'A localized spot on the top of the foot with swelling raises the question of a stress fracture.',
+          ],
+        },
+        'Stress fractures often do not show on a plain X-ray for the first two to three weeks and may need an MRI. **A clinician visit is worth it** when pain stays beyond two weeks despite rest and shoe changes, or when there is tingling, night pain, or visible swelling.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -60,7 +68,7 @@ export const BALL_OF_FOOT_EN: Guide = {
       h2: 'Does exercise help ball of foot pain?',
       keyFact: 'In a 2020 pre-post study of 41 people with primary metatarsalgia, an 8-week toe exercise program lowered pain by an average of 2.7 points on a 10-point scale, with no control group (Amaha and colleagues, 2020).',
       paragraphs: [
-        'The honest answer is that the evidence for exercise in metatarsalgia is early and limited. It is much thinner than the evidence for [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist.',
+        'The honest answer is that **the evidence for exercise in metatarsalgia is early and limited.** It is much thinner than the evidence for [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist.',
         'The best study so far is a 2020 pre-post study of 41 people (56 feet) with primary metatarsalgia. An 8-week toe exercise program, mainly towel scrunches and marble pickups, dropped pain scores by an average of 2.7 points on a 10-point scale and improved toe grip strength. But there was no control group, so the improvement could partly reflect natural recovery. The authors called for randomized trials.',
         'The logic is straightforward: during push-off, the toes help share the load with the metatarsal heads. When toe flexor muscles are weak, more force lands on the metatarsals. The 2020 study supports that idea, but one uncontrolled study is not proof. People who had symptoms for more than a year improved less, as did those with a higher BMI.',
       ],
@@ -82,14 +90,15 @@ export const BALL_OF_FOOT_EN: Guide = {
       h2: 'What about metatarsal pads, insoles, and shoes?',
       paragraphs: [
         'Metatarsal pads are the most widely used conservative approach. A pad placed just behind the metatarsal heads lifts the shaft slightly, spreading pressure wider. Placement matters. Too far forward, directly under the head, can make pain worse.',
-        'Rocker-sole shoes reduce forefoot pressure by letting the foot roll through push-off without bending at the metatarsal joints. A wide toe box stops the heads from being compressed together. Switching away from narrow or heeled shoes is often the simplest first step.',
+        'Rocker-sole shoes reduce forefoot pressure by letting the foot roll through push-off without bending at the metatarsal joints. A wide toe box stops the heads from being compressed together. **Switching away from narrow or heeled shoes is often the simplest first step.**',
         'Pads and shoes change how load is distributed. Exercise builds the strength and flexibility to handle that load. When [standing all day](/feet-hurt-standing-all-day/) is part of the picture, both matter.',
       ],
     },
     {
       h2: 'Which exercises help ball of foot pain?',
       paragraphs: [
-        'These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically. When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.',
+        'These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically.',
+        'When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.',
       ],
       exercises: [
         {
@@ -176,7 +185,8 @@ export const BALL_OF_FOOT_EN: Guide = {
       h2: 'What the evidence does and does not tell us',
       paragraphs: [
         'The evidence for exercise in ball-of-foot pain is thinner than for [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist. For metatarsalgia, there is one pre-post study with 41 people and no control group. The biomechanical reasoning is sound, and the risk of gentle toe exercises and calf stretches is low, but direct proof from a controlled trial is missing.',
-        'Exercise alone may not be enough. Metatarsal pads, shoes with a wide toe box, and reducing time in heels have broader clinical consensus. For Morton\'s neuroma, shoe changes and padding are often more effective than exercise. For a metatarsal stress fracture, exercise is the wrong approach until the bone has recovered. If pain has lasted more than a few weeks, or comes with numbness or swelling, get it checked first. [Heel pain from running](/heel-pain-runners/) covers load management for runners.',
+        '**Exercise alone may not be enough.** Metatarsal pads, shoes with a wide toe box, and reducing time in heels have broader clinical consensus.',
+        'For Morton\'s neuroma, shoe changes and padding are often more effective than exercise. For a metatarsal stress fracture, exercise is the wrong approach until the bone has recovered. If pain has lasted more than a few weeks, or comes with numbness or swelling, get it checked first. [Heel pain from running](/heel-pain-runners/) covers load management for runners.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -199,7 +209,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     {
       q: 'Why does a tight calf cause pain in the ball of the foot?',
       cites: [CITE.patelGastrocnemius, CITE.riddle],
-      a: 'When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend enough during walking. The body compensates by lifting the heel early, which shifts more weight onto the ball of the foot. In people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011). The same mechanism contributes to forefoot overload.',
+      a: 'When the gastrocnemius, the bigger, more superficial calf muscle, is tight, the ankle cannot bend enough during walking. The body compensates by lifting the heel early, which shifts more weight onto the ball of the foot. In people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011). The same mechanism contributes to forefoot overload.',
     },
     {
       q: 'Do metatarsal pads work for ball of foot pain?',

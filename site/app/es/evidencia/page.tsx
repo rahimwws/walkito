@@ -111,7 +111,10 @@ export default function ScienceEs() {
           Para el dolor de talón por fascitis plantar, la guía de 2023 le da al estiramiento su
           grado más alto, A, y al entrenamiento de fuerza una B. En un ensayo con 48&nbsp;personas,
           las elevaciones de talón con carga alta aliviaron el dolor más rápido que el estiramiento,
-          y a los doce meses los dos grupos estaban igualados. Para el pie plano{' '}
+          y a los doce meses los dos grupos estaban igualados.
+        </p>
+        <p>
+          Para el pie plano{' '}
           <b>flexible</b>, un ensayo con 52&nbsp;personas encontró que seis semanas de ejercicio
           cambiaron la forma del arco. Una revisión de 2024 sobre el entrenamiento de pie corto no
           encontró una diferencia significativa en general, y solo una medida del arco mejoró en
@@ -144,7 +147,7 @@ export default function ScienceEs() {
           Así que un resultado para uno no es prueba para el otro. Los estudios del arco no
           demuestran que el entrenamiento del arco alivie el dolor. El trabajo de fuerza de
           pantorrilla no está hecho para cambiar la forma del arco. Walkito trabaja las dos cosas
-          como metas separadas: mañanas sin dolor, y mantener el arco{' '}
+          como metas separadas: mañanas más fáciles, y mantener el arco{' '}
           {PROGRAM.goals.archHoldSeconds}&nbsp;segundos. Hasta tres metas pueden estar activas a la
           vez, y el dolor va primero cuando tienes dolor.
         </p>
@@ -179,7 +182,10 @@ export default function ScienceEs() {
         <p>
           La elevación de talón de Walkito sigue este ensayo. Te paras en un pie en un escalón, con
           una toalla bajo los dedos. Tardas tres segundos en subir, mantienes dos y tardas tres en
-          bajar, en días de fuerza, tres a la semana, nunca dos seguidos. Está cerca de lo más alto
+          bajar, en días de fuerza, tres a la semana, nunca dos seguidos.
+        </p>
+        <p>
+          Está cerca de lo más alto
           de los ejercicios de pantorrilla de Walkito, que se ponen más difíciles un nivel a la vez.
           Nunca llega en la primera semana, que mantiene la carga lejos de la fascia plantar al
           inicio. El ejercicio y su dosis de inicio están en{' '}
@@ -270,7 +276,10 @@ export default function ScienceEs() {
           tiene una duración fija ni una última semana en la que los ejercicios se detengan. El plan
           se arma una semana a la vez en torno a una meta. Cuando alcanzas una meta, pasa a
           mantenimiento: conserva un lugar en el plan con una dosis más baja, y la siguiente meta
-          ocupa su lugar. Las pruebas siguen cada{' '}
+          ocupa su lugar.
+        </p>
+        <p>
+          Las pruebas siguen cada{' '}
           {PROGRAM.testEveryDaysAfterGoal}&nbsp;días después de tu primera meta, así que una bajada
           en los números se ve en vez de adivinarse. Nada de esto promete que el dolor no va a
           volver.
@@ -286,7 +295,7 @@ export default function ScienceEs() {
           puede subirlas.
         </p>
         <p>
-          Walkito también puede leer la asimetría al caminar de Apple Health: el porcentaje de
+          Walkito también puede leer la asimetría al caminar de la app Salud: el porcentaje de
           tiempo en que tus pasos con un pie son más rápidos o más lentos que con el otro. El
           iPhone la estima por su cuenta. Walkito la compara solo con <b>tu propio</b> punto de
           partida, nunca con los números de otras personas. Te va a decir cuando tu patrón de
@@ -295,7 +304,7 @@ export default function ScienceEs() {
 
         <h2 id={H.isNot.id}>{H.isNot.h2}</h2>
         <p>
-          Walkito es un programa de ejercicios. No diagnostica ni trata ninguna condición, y no
+          Walkito es un programa de ejercicios. No diagnostica ni trata ninguna afección, y no
           reemplaza a un profesional de la salud. Cómo se escriben y revisan estas páginas está en{' '}
           <a href="/es/sobre-walkito/">la página Sobre Walkito</a>. Las preguntas sobre la app se
           responden en <a href="/es/preguntas-frecuentes/">las preguntas frecuentes</a>.

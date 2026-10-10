@@ -26,15 +26,30 @@ export const HAMMER_TOE_ES: Guide = {
       paragraphs: [
         'Un dedo en martillo es una deformidad en flexión de la articulación interfalángica proximal (la articulación del medio) de uno de los dedos menores, casi siempre el segundo. El dedo se dobla hacia abajo en esa articulación mientras que la punta puede apuntar hacia abajo o un poco hacia arriba. Es una de las deformidades más comunes de la parte delantera del pie.',
         'La deformidad se desarrolla por un desequilibrio entre los músculos que doblan y los que extienden el dedo. Los músculos extrínsecos, los flexores y extensores largos que van desde la pierna hasta el pie, dominan a los músculos intrínsecos más pequeños que están dentro del pie. Cuando los intrínsecos se debilitan, los flexores jalan la articulación del medio hacia abajo y los extensores jalan la base del dedo hacia arriba en la articulación metatarsofalángica.',
-        'Los factores que contribuyen incluyen zapatos que amontonan los dedos (puntera angosta, tacones altos), un segundo dedo más largo que el dedo gordo y condiciones como el hallux valgus ([juanetes](/es/ejercicios-juanetes/)) donde el dedo gordo empuja al segundo dedo fuera de posición. Las condiciones neuromusculares también pueden causarlo.',
+        'Los factores que contribuyen incluyen:',
+        {
+          list: [
+            'Zapatos que amontonan los dedos (puntera angosta, tacones altos).',
+            'Un segundo dedo más largo que el dedo gordo.',
+            'Afecciones como el hallux valgus ([juanetes](/es/ejercicios-juanetes/)) donde el dedo gordo empuja al segundo dedo fuera de posición.',
+          ],
+        },
+        'Las afecciones neuromusculares también pueden causarlo.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: '¿Cuál es la diferencia entre dedo en martillo, dedo en garra y dedo en mazo?',
       paragraphs: [
-        'Los tres nombres describen qué articulaciones están dobladas. Un dedo en martillo se dobla en la articulación del medio (interfalángica proximal). Un dedo en mazo se dobla en la articulación de la punta (interfalángica distal), cerca del extremo del dedo. Un dedo en garra se dobla en las dos, la del medio y la de la punta, mientras que la base del dedo (articulación metatarsofalángica) se extiende hacia arriba.',
-        'Los dedos en garra tienden a ser más graves, muchas veces afectan varios dedos en los dos pies y se asocian más con condiciones neuromusculares. Los dedos en martillo suelen afectar un solo dedo, casi siempre el segundo, y se relacionan más con el calzado y la estructura del pie.',
+        'Los tres nombres describen qué articulaciones están dobladas:',
+        {
+          list: [
+            'Un dedo en martillo se dobla en la articulación del medio (interfalángica proximal).',
+            'Un dedo en mazo se dobla en la articulación de la punta (interfalángica distal), cerca del extremo del dedo.',
+            'Un dedo en garra se dobla en las dos, la del medio y la de la punta, mientras que la base del dedo (articulación metatarsofalángica) se extiende hacia arriba.',
+          ],
+        },
+        'Los dedos en garra tienden a ser más graves, muchas veces afectan varios dedos en los dos pies y se asocian más con afecciones neuromusculares. Los dedos en martillo suelen afectar un solo dedo, casi siempre el segundo, y se relacionan más con el calzado y la estructura del pie.',
         'En la práctica, los tratamientos se traslapan. Zapatos más anchos, almohadillas y ejercicios que trabajan los músculos intrínsecos del pie aplican para los tres. La distinción importa más cuando se considera la cirugía, porque el enfoque quirúrgico depende de qué articulaciones están involucradas.',
       ],
       cites: [CITE.malhotra],
@@ -43,7 +58,7 @@ export const HAMMER_TOE_ES: Guide = {
       h2: '¿Cuál es la diferencia entre un dedo en martillo flexible y uno rígido?',
       keyFact: 'En 20 adultos mayores con dedo en martillo o en garra, unos protectores de silicón a la medida redujeron la presión máxima en la punta del segundo dedo, en dedos flexibles y rígidos (Formosa y colegas, 2022).',
       paragraphs: [
-        'Un dedo en martillo flexible todavía se puede enderezar a mano. La articulación se dobla pero no está contraída de forma permanente. Si el dedo se endereza cuando lo empujas, los ejercicios, los estiramientos y el calzado más ancho pueden ayudar a mantener esa movilidad y posiblemente frenar el avance.',
+        'Un dedo en martillo flexible todavía se puede enderezar a mano. La articulación se dobla pero no está contraída de forma permanente. **Si el dedo se endereza cuando lo empujas, los ejercicios, los estiramientos y el calzado más ancho pueden ayudar a mantener esa movilidad y posiblemente frenar el avance.**',
         'Un dedo en martillo rígido no se puede enderezar a mano. La articulación está fija. En este punto, los ejercicios y los estiramientos no van a cambiar la forma. El enfoque se desplaza a proteger la piel de la fricción con almohadillas, fundas de gel y zapatos con suficiente espacio sobre el dedo doblado.',
         'Un estudio cuasiexperimental de 2022 con 20 adultos mayores con deformidades de dedo en martillo o en garra encontró que los protectores de silicón moldeados a la medida redujeron de forma significativa la presión máxima en la punta del segundo dedo, tanto en los casos flexibles como en los rígidos. En la articulación metatarsofalángica, la reducción de presión solo fue significativa en el grupo rígido.',
       ],
@@ -52,9 +67,9 @@ export const HAMMER_TOE_ES: Guide = {
     {
       h2: '¿El ejercicio ayuda con los dedos en martillo?',
       paragraphs: [
-        'La respuesta honesta es que no existen ensayos controlados aleatorizados que prueben ejercicios específicamente para dedos en martillo. Los ejercicios que se recomiendan habitualmente, como recoger la toalla, la separación de dedos y el estiramiento manual, se basan en la idea de que fortalecer los músculos intrínsecos del pie y mantener la flexibilidad de la articulación puede ayudar a que una deformidad flexible no se vuelva rígida.',
+        'La respuesta honesta es que **no existen ensayos controlados aleatorizados que prueben ejercicios específicamente para dedos en martillo.** Los ejercicios que se recomiendan habitualmente, como recoger la toalla, la separación de dedos y el estiramiento manual, se basan en la idea de que fortalecer los músculos intrínsecos del pie y mantener la flexibilidad de la articulación puede ayudar a que una deformidad flexible no se vuelva rígida.',
         'Esa lógica es razonable. La deformidad viene de un desequilibrio muscular: intrínsecos débiles y extrínsecos relativamente más fuertes. Los ejercicios que trabajan los intrínsecos pueden restaurar algo de ese equilibrio. Pero sin ensayos directos, no sabemos cuánta diferencia hacen ni si realmente pueden prevenir el avance.',
-        'Lo que sí sabemos por estudios en otras condiciones de la parte delantera del pie es que los ejercicios intrínsecos del pie como el pie corto, la separación de dedos y recoger la toalla activan los músculos correctos. Un estudio de resonancia magnética de Gooding y colegas (2016) confirmó que el ejercicio de pie corto y el de separación de dedos activan selectivamente los músculos intrínsecos del pie. Si esa activación se traduce en mejores resultados para los dedos en martillo específicamente, no se ha probado.',
+        'Lo que sí sabemos por estudios en otras afecciones de la parte delantera del pie es que los ejercicios intrínsecos del pie como el pie corto, la separación de dedos y recoger la toalla activan los músculos correctos. Un estudio de resonancia magnética de Gooding y colegas (2016) confirmó que el ejercicio de pie corto y el de separación de dedos activan selectivamente los músculos intrínsecos del pie. Si esa activación se traduce en mejores resultados para los dedos en martillo específicamente, no se ha probado.',
       ],
       cites: [CITE.gooding],
     },
@@ -112,7 +127,14 @@ export const HAMMER_TOE_ES: Guide = {
     {
       h2: '¿El calzado hace diferencia?',
       paragraphs: [
-        'El calzado es el enfoque conservador más recomendado para los dedos en martillo. Una revisión sobre el manejo de las deformidades de los dedos menores en EFORT Open Reviews (Malhotra y colegas, 2016) puso la modificación del calzado primero en la lista de tratamiento conservador: una puntera ancha para darle espacio a los dedos, una puntera alta para evitar la fricción sobre la articulación doblada y evitar los tacones altos.',
+        '**El calzado es el enfoque conservador más recomendado para los dedos en martillo.** Una revisión sobre el manejo de las deformidades de los dedos menores en EFORT Open Reviews (Malhotra y colegas, 2016) puso la modificación del calzado primero en la lista de tratamiento conservador:',
+        {
+          list: [
+            'Una puntera ancha para darle espacio a los dedos.',
+            'Una puntera alta para evitar la fricción sobre la articulación doblada.',
+            'Evitar los tacones altos.',
+          ],
+        },
         'Los zapatos angostos comprimen los dedos entre sí y empujan la articulación doblada contra la parte de arriba del zapato, causando callos y callosidades. Los tacones deslizan el pie hacia adelante, metiendo los dedos a la fuerza en la punta. Cambiar de zapatos no va a enderezar un dedo en martillo rígido, pero reduce la fricción diaria y la presión que causan la mayor parte del dolor.',
         'Las almohadillas para los dedos, las fundas de gel y los protectores de silicón pueden amortiguar la articulación doblada y redistribuir la presión en la punta del dedo. El estudio de Formosa de 2022 mostró que los protectores moldeados de silicón redujeron la presión máxima en la punta del segundo dedo tanto en deformidades flexibles como rígidas.',
       ],
@@ -121,7 +143,7 @@ export const HAMMER_TOE_ES: Guide = {
     {
       h2: '¿Se pueden revertir los dedos en martillo sin cirugía?',
       paragraphs: [
-        'Si el dedo en martillo todavía es flexible, las medidas conservadoras, incluyendo ejercicios, estiramientos, zapatos más anchos y vendaje del dedo, pueden ayudar a que no avance y pueden mejorar la comodidad. Pegar el dedo afectado al de al lado con cinta puede mantenerlo suavemente en una posición más neutra durante el día. Pero ninguna de estas medidas ha demostrado corregir la deformidad de forma permanente.',
+        'Si el dedo en martillo todavía es flexible, las medidas conservadoras, incluyendo ejercicios, estiramientos, zapatos más anchos y vendaje del dedo, pueden ayudar a que no avance y pueden mejorar la comodidad. Pegar el dedo afectado al de al lado con cinta puede mantenerlo suavemente en una posición más neutra durante el día. **Pero ninguna de estas medidas ha demostrado corregir la deformidad de forma permanente.**',
         'Una vez que un dedo en martillo se vuelve rígido, la articulación está contraída y no se puede enderezar. En ese punto, el ejercicio y los estiramientos no van a cambiar la forma. El enfoque se desplaza a proteger la piel de la fricción y a manejar la presión con almohadillas y calzado.',
         'Qué tan rápido un dedo en martillo flexible se vuelve rígido varía. En algunas personas se mantiene flexible por años. Usar zapatos con puntera ancha y mantener la movilidad de los dedos con estiramientos y ejercicios diarios son las estrategias más recomendadas para frenar el avance.',
       ],
@@ -131,7 +153,14 @@ export const HAMMER_TOE_ES: Guide = {
       keyFact: 'Una revisión de 2016 citó datos de un registro sueco que mostraron que los procedimientos de los dedos menores, incluido el dedo en martillo, representaron casi una cuarta parte de todas las cirugías de la parte delantera del pie (Malhotra y colegas, 2016).',
       paragraphs: [
         'La cirugía se considera cuando un dedo en martillo rígido causa dolor persistente, daño en la piel o dificultad para usar zapatos a pesar del manejo conservador. La decisión se basa en los síntomas y la limitación funcional, no en la apariencia del dedo.',
-        'Los procedimientos más comunes incluyen la artroplastia de la articulación interfalángica proximal (retirar un pequeño trozo de hueso para enderezar la articulación) y la artrodesis (fusionar la articulación en posición recta). Existen técnicas mínimamente invasivas más nuevas, pero los datos de resultados a largo plazo todavía se están recopilando.',
+        'Los procedimientos más comunes incluyen:',
+        {
+          list: [
+            'La artroplastia de la articulación interfalángica proximal (retirar un pequeño trozo de hueso para enderezar la articulación).',
+            'La artrodesis (fusionar la articulación en posición recta).',
+          ],
+        },
+        'Existen técnicas mínimamente invasivas más nuevas, pero los datos de resultados a largo plazo todavía se están recopilando.',
         'La recuperación de la cirugía de dedo en martillo suele tomar de tres a seis semanas con un zapato postoperatorio. Se espera algo de rigidez en el dedo. Una revisión de 2016 citó datos de un registro sueco que muestran que los procedimientos de los dedos menores, que incluyen dedo en martillo, dedo en garra y deformidades relacionadas, representaron casi una cuarta parte de todas las cirugías de la parte delantera del pie.',
       ],
       cites: [CITE.malhotra],
@@ -144,12 +173,12 @@ export const HAMMER_TOE_ES: Guide = {
     },
     {
       q: '¿Cuál es la diferencia entre un dedo en martillo y un dedo en garra?',
-      a: 'Un dedo en martillo se dobla en la articulación del medio del dedo. Un dedo en garra se dobla en la articulación del medio y en la de la punta, y la base del dedo se extiende hacia arriba en la articulación metatarsofalángica. Los dedos en garra se asocian más con condiciones neuromusculares, mientras que los dedos en martillo se relacionan más con el calzado y la estructura del pie.',
+      a: 'Un dedo en martillo se dobla en la articulación del medio del dedo. Un dedo en garra se dobla en la articulación del medio y en la de la punta, y la base del dedo se extiende hacia arriba en la articulación metatarsofalángica. Los dedos en garra se asocian más con afecciones neuromusculares, mientras que los dedos en martillo se relacionan más con el calzado y la estructura del pie.',
       cites: [CITE.malhotra],
     },
     {
       q: '¿Funcionan los estiramientos para el dedo en martillo?',
-      a: 'Ningún ensayo aleatorizado ha probado estiramientos o ejercicios para dedos en martillo. El estiramiento manual de un dedo en martillo flexible puede ayudar a mantener el rango de movimiento y a prevenir que se vuelva rígido. Los ejercicios de músculos intrínsecos del pie se recomiendan con base en razonamiento biomecánico, no en evidencia directa de ensayos para esta condición.',
+      a: 'Ningún ensayo aleatorizado ha probado estiramientos o ejercicios para dedos en martillo. El estiramiento manual de un dedo en martillo flexible puede ayudar a mantener el rango de movimiento y a prevenir que se vuelva rígido. Los ejercicios de músculos intrínsecos del pie se recomiendan con base en razonamiento biomecánico, no en evidencia directa de ensayos para esta afección.',
     },
     {
       q: '¿Qué zapatos son mejores para el dedo en martillo?',

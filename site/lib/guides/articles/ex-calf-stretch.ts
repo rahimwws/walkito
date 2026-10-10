@@ -22,7 +22,7 @@ export const EX_CALF_STRETCH: Guide = {
     'How to do the calf stretch (straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, and what the evidence says.',
   h1: 'Calf stretch for plantar fasciitis: technique, sets and hold time',
   lede:
-    'The calf stretch with a straight knee targets the gastrocnemius, the large outer calf muscle. A tight gastrocnemius limits how far the ankle bends, and in a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion was the strongest independent risk factor. The 2023 heel pain guideline gives calf stretching its top grade, A.',
+    'The calf stretch with a straight knee targets the gastrocnemius, the large, more superficial calf muscle. A tight gastrocnemius limits how far the ankle bends, and in a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion was the strongest independent risk factor. The 2023 heel pain guideline gives calf stretching its top grade, A.',
   takeaways: [
     'Reduced ankle dorsiflexion was the strongest independent risk factor for plantar fasciitis in a matched case-control study, at 23.3 times the odds (Riddle and colleagues, 2003).',
     'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius (Patel and DiGiovanni, 2011).',
@@ -36,7 +36,7 @@ export const EX_CALF_STRETCH: Guide = {
       h2: 'How do you do a calf stretch with a straight knee?',
       paragraphs: [
         'Stand facing a wall with your hands flat against it at about shoulder height. Step one foot back about two feet. Keep the back leg straight, the heel pressed into the floor and the toes pointing forward. Lean your hips toward the wall until you feel a stretch in the upper part of the back calf. Hold for 30 seconds, then switch legs.',
-        'The key is keeping the back knee locked straight. That isolates the gastrocnemius, which crosses both the knee and the ankle. If you bend the knee, the stretch shifts to the soleus, the deeper calf muscle, and that is a different exercise. See [soleus stretch](/exercises/soleus-stretch/) for that version.',
+        '**The key is keeping the back knee locked straight.** That isolates the gastrocnemius, which crosses both the knee and the ankle. If you bend the knee, the stretch shifts to the soleus, the deeper calf muscle, and that is a different exercise. See [soleus stretch](/exercises/soleus-stretch/) for that version.',
       ],
       exercises: [
         {
@@ -63,7 +63,7 @@ export const EX_CALF_STRETCH: Guide = {
       paragraphs: [
         'The gastrocnemius runs from behind the knee down to the heel through the Achilles tendon. The plantar fascia picks up where the Achilles leaves off, wrapping under the heel bone and running forward to the toes. When the gastrocnemius is tight, it limits how far the ankle can bend upward. That forces the plantar fascia to absorb more strain with every step.',
         'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion raised the odds of plantar fasciitis 23.3 times. That was stronger than BMI, standing time or any other variable in the study.',
-        'Separately, a review of 254 people with plantar fasciitis found that 52 to 60 percent had a contracture isolated to the gastrocnemius, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. In other words, a tight calf is not a side issue. It is present in most people with this condition.',
+        'Separately, a review of 254 people with plantar fasciitis found that 52 to 60 percent had a contracture isolated to the gastrocnemius, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. In other words, **a tight calf is not a side issue.** It is present in most people with this condition.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -79,10 +79,14 @@ export const EX_CALF_STRETCH: Guide = {
     {
       h2: 'What are the common mistakes with the calf stretch?',
       paragraphs: [
-        'Bending the back knee. The moment the knee bends, the gastrocnemius goes slack and the stretch moves to the soleus. Keep the back knee locked straight throughout the hold.',
-        'Letting the back heel lift. If the heel comes off the floor, the calf is not being stretched. Press the heel down first, then lean forward until the stretch appears.',
-        'Turning the back foot outward. When the foot rotates out, the stretch hits the outside of the calf instead of the full muscle. Keep the toes pointed straight at the wall.',
-        'Holding too short. A 10-second hold is not long enough for a sustained stretch to have an effect on tissue length. Hold for at least 30 seconds per rep.',
+        {
+          list: [
+            '**Bending the back knee.** The moment the knee bends, the gastrocnemius goes slack and the stretch moves to the soleus. Keep the back knee locked straight throughout the hold.',
+            '**Letting the back heel lift.** If the heel comes off the floor, the calf is not being stretched. Press the heel down first, then lean forward until the stretch appears.',
+            '**Turning the back foot outward.** When the foot rotates out, the stretch hits the outside of the calf instead of the full muscle. Keep the toes pointed straight at the wall.',
+            '**Holding too short.** A 10-second hold is not long enough for a sustained stretch to have an effect on tissue length. Hold for at least 30 seconds per rep.',
+          ],
+        },
       ],
     },
     {
@@ -97,7 +101,8 @@ export const EX_CALF_STRETCH: Guide = {
       h2: 'How the calf stretch fits with the soleus stretch',
       paragraphs: [
         'The gastrocnemius and the soleus together make up the calf. The straight-knee version stretches the gastrocnemius. The bent-knee version stretches the soleus. They are two exercises, not two versions of the same one.',
-        'Most programs for plantar fasciitis include both, because a tight calf can be tight in either muscle or both. The guideline does not separate them. Walkito programs both on the same session when stretching is on the schedule. The [soleus stretch](/exercises/soleus-stretch/) page covers the bent-knee version. For the full stretching and strength program, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'Most programs for plantar fasciitis include both, because a tight calf can be tight in either muscle or both. The guideline does not separate them. Walkito programs both on the same session when stretching is on the schedule.',
+        'The [soleus stretch](/exercises/soleus-stretch/) page covers the bent-knee version. For the full stretching and strength program, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
       ],
       cites: [CITE.guideline],
     },
@@ -116,7 +121,7 @@ export const EX_CALF_STRETCH: Guide = {
     {
       q: 'What is the difference between a calf stretch and a soleus stretch?',
       cites: [CITE.patelGastrocnemius],
-      a: 'The calf stretch with a straight knee targets the gastrocnemius, the large outer calf muscle. The soleus stretch bends the back knee, which lets the gastrocnemius go slack and isolates the deeper soleus. Both muscles were found to be tight in the majority of people with plantar fasciitis (Patel and DiGiovanni, 2011).',
+      a: 'The calf stretch with a straight knee targets the gastrocnemius, the large, more superficial calf muscle. The soleus stretch bends the back knee, which lets the gastrocnemius go slack and isolates the deeper soleus. Over half of people with plantar fasciitis had only the gastrocnemius tight, and 23 to 30 percent had both calf muscles tight (Patel and DiGiovanni, 2011).',
     },
     {
       q: 'Can tight calves cause plantar fasciitis?',
@@ -139,7 +144,7 @@ export const EX_CALF_STRETCH: Guide = {
     h2: 'Doing it as a plan',
     text: 'Walkito schedules the calf stretch alongside the soleus stretch and the plantar fascia stretch on most sessions. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app moves from stretching into strength work at your pace.',
     more: [
-      'Every 14 days, a short test checks calf endurance, arch hold and balance. A tight calf that loosens up over weeks will show as more ankle range on the test. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
+      'Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
     cta: 'Start with 3 minutes a day.',
   },

@@ -30,7 +30,8 @@ export const SHIN_SPLINTS_ES: Guide = {
     'La periostitis tibial es un dolor a lo largo del borde interno de la tibia, repartido en varios centímetros y no en un solo punto. Su nombre clínico es síndrome de estrés tibial medial (SETM). La mayoría de las páginas presentan los ejercicios como si estuviera probado que aceleran la recuperación. Una revisión sistemática de 2013 sobre todos los ensayos de tratamiento encontró que no se ha demostrado que los estiramientos ni los ejercicios de fuerza la acorten.',
   intro: [
     'Eso no quiere decir que el ejercicio no sirva. Los ejercicios de abajo trabajan la resistencia de la pantorrilla, la fuerza de la parte delantera de la pierna y el control de la cadera, las zonas donde los investigadores encontraron diferencias entre personas con y sin periostitis tibial. Un estudio de casos y controles encontró que los corredores con periostitis tibial hacían menos elevaciones de talón hasta el fallo que controles comparables sin ella.',
-    'Si recuperar esa resistencia acorta la recuperación sigue siendo una pregunta abierta. Lo más seguro, en todos los ensayos hasta ahora, es bajar la carga de carrera que la causó. Las elevaciones de talón, incluidas cuántas repeticiones hacer y cuándo agregar peso, están explicadas con más detalle en [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/). Si pasas todo el día de pie en lugar de correr, [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/) cubre los mismos ejercicios de pantorrilla y arco para esa causa.',
+    'Si recuperar esa resistencia acorta la recuperación sigue siendo una pregunta abierta. Lo más seguro, en todos los ensayos hasta ahora, es bajar la carga de carrera que la causó.',
+    'Las elevaciones de talón, incluidas cuántas repeticiones hacer y cuándo agregar peso, están explicadas con más detalle en [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/). Si pasas todo el día de pie en lugar de correr, [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/) cubre los mismos ejercicios de pantorrilla y arco para esa causa.',
   ],
   toc: true,
   takeaways: [
@@ -45,7 +46,16 @@ export const SHIN_SPLINTS_ES: Guide = {
       keyFact: 'Una revisión sistemática de 2013 que cubrió 11\u00A0ensayos de tratamiento para la periostitis tibial no encontró evidencia clara de que el estiramiento o el fortalecimiento aceleraran la recuperación (Winters y colegas, 2013).',
       paragraphs: [
         'La periostitis tibial, o síndrome de estrés tibial medial, es una lesión por sobreuso de la tibia y del tejido que la rodea. El dolor suele ser difuso, repartido a lo largo del borde interno de la tibia en varios centímetros, y casi siempre empieza durante o después de correr. Una revisión de 2020 sobre corredores principiantes y recreativos encontró que las relaciones más claras estaban en cómo se mueven los corredores, por ejemplo más rotación de cadera y un pie que se va hacia adentro más de lo normal.',
-        'La respuesta honesta sobre los ejercicios para la periostitis tibial es que ningún programa de ejercicios concreto ha demostrado acelerar la recuperación en un ensayo controlado. Una revisión sistemática de 2013 analizó 11\u00A0estudios de tratamiento y concluyó que el estiramiento y el fortalecimiento «no han demostrado ser eficaces para tratar el SETM». En el único ensayo aleatorizado con un grupo de ejercicio, 74\u00A0deportistas se dividieron en tres grupos: un programa de carrera progresivo solo, el mismo programa más estiramiento y fortalecimiento de pantorrilla, y el mismo programa más medias de compresión. Los tres grupos mejoraron a un ritmo parecido.',
+        'La respuesta honesta sobre los ejercicios para la periostitis tibial es que **ningún programa de ejercicios concreto ha demostrado acelerar la recuperación en un ensayo controlado.** Una revisión sistemática de 2013 analizó 11\u00A0estudios de tratamiento y concluyó que el estiramiento y el fortalecimiento «no han demostrado ser eficaces para tratar el SETM».',
+        'En el único ensayo aleatorizado con un grupo de ejercicio, 74\u00A0deportistas se dividieron en tres grupos:',
+        {
+          list: [
+            'Un programa de carrera progresivo solo.',
+            'El mismo programa más estiramiento y fortalecimiento de pantorrilla.',
+            'El mismo programa más medias de compresión.',
+          ],
+        },
+        'Los tres grupos mejoraron a un ritmo parecido.',
         'Así que los ejercicios de abajo no son un protocolo específico para la periostitis tibial. Son ejercicios generales de pierna y cadera que ya están en el catálogo y que trabajan los músculos y articulaciones que los investigadores estudiaron en personas con periostitis tibial. Lo más útil sigue siendo bajar la carga de carrera y volver a subirla poco a poco.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
@@ -53,15 +63,15 @@ export const SHIN_SPLINTS_ES: Guide = {
     {
       h2: '¿Qué ejercicios ayudan con la periostitis tibial y cuánto hacer?',
       paragraphs: [
-        'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo son **inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
-        'Si marcas la tibia como adolorida en el check-in, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
+        'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo dicen **Inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
+        'Si marcas la tibia como adolorida en el registro de la mañana, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos y antepié aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
       ],
       table: {
         head: ['Ejercicio', 'Dosis', 'Con qué frecuencia', 'Qué debes sentir', 'Detente si'],
         rows: [
           ['Estiramiento de pantorrilla', '2\u00A0series de 30\u00A0segundos, cada pierna', 'Casi todas las sesiones', 'Un estiramiento en la pantorrilla de la pierna de atrás, estirada', 'El dolor llega a 6/10'],
           ['Estiramiento de sóleo', '2\u00A0series de 30\u00A0segundos, cada pierna', 'Casi todas las sesiones', 'Un estiramiento en la parte baja de la pantorrilla, cerca del talón', 'El dolor llega a 6/10'],
-          ['Elevaciones de puntas', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'El músculo de la parte delantera de la pierna trabajando al subir los dedos', 'El dolor llega a 6/10'],
+          ['Elevaciones de dedos y antepié', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'El músculo de la parte delantera de la pierna trabajando al subir los dedos', 'El dolor llega a 6/10'],
           ['Elevaciones de talón con dos pies', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'Las pantorrillas trabajando, con los dos pies compartiendo la carga', 'El dolor llega a 6/10'],
           ['Abducción de cadera', '3\u00A0series de 15, cada pierna', 'Días de fuerza', 'Trabajo en la parte externa de la cadera', 'El dolor llega a 6/10'],
           ['Equilibrio a una pierna', '3\u00A0series de 30\u00A0segundos, cada pierna', 'Días de equilibrio', 'El pie y el tobillo haciendo pequeñas correcciones', 'El dolor llega a 6/10'],
@@ -101,18 +111,18 @@ export const SHIN_SPLINTS_ES: Guide = {
           alt: 'Una figura estirando contra la pared con la rodilla de atrás doblada, con la parte baja de la pantorrilla resaltada',
         },
         {
-          name: 'Elevaciones de puntas',
+          name: 'Elevaciones de dedos y antepié',
           evidence: {
             level: 'early',
-            why: 'Trabaja el tibial anterior, el músculo de la parte delantera de la pierna. No hay un ensayo específico para la periostitis tibial, pero es justo el músculo que duele.',
+            why: 'Trabaja el tibial anterior, el músculo de la parte delantera de la tibia. No hay un ensayo específico para la periostitis tibial, que además suele doler a lo largo del borde interno de la tibia, así que la relación es indirecta.',
           },
           dose: '3\u00A0series de 10, los dos pies',
           often: 'Días de fuerza',
           feel: 'El músculo de la parte delantera de la pierna trabajando al subir los dedos',
-          how: 'Párate con la espalda contra una pared. Levanta los dedos y la parte delantera de los dos pies del piso, con los talones abajo. Baja despacio. Es el músculo que va por delante de la tibia, el que duele cuando la periostitis tibial se activa.',
-          image: 'Ejercicio: elevaciones de dedos',
+          how: 'Párate con la espalda contra una pared. Levanta los dedos y la parte delantera de los dos pies del piso, con los talones abajo. Baja despacio. Trabaja el músculo que va por delante de la tibia.',
+          image: 'Ejercicio: elevaciones de dedos y antepié',
           media: 'tibialis_raise',
-          caption: 'Elevaciones de puntas: espalda contra la pared, sube los dedos, los talones no se mueven',
+          caption: 'Elevaciones de dedos y antepié: espalda contra la pared, sube los dedos, los talones no se mueven',
           alt: 'Una figura de pie contra una pared levanta los dedos del piso, con los músculos de la parte delantera de la pierna resaltados',
         },
         {
@@ -134,7 +144,7 @@ export const SHIN_SPLINTS_ES: Guide = {
           name: 'Abducción de cadera',
           evidence: {
             level: 'early',
-            why: 'La rotación externa de cadera es un factor de riesgo confirmado en dos metaanálisis. Ningún ensayo ha probado el fortalecimiento de cadera como tratamiento para la periostitis tibial.',
+            why: 'Dos metaanálisis relacionaron el rango de rotación de cadera con la periostitis tibial. Ningún ensayo ha probado el fortalecimiento de cadera como tratamiento para la periostitis tibial.',
           },
           dose: '3\u00A0series de 15, cada pierna',
           often: 'Días de fuerza',
@@ -197,8 +207,9 @@ export const SHIN_SPLINTS_ES: Guide = {
       h2: '¿Cómo distinguir la periostitis tibial de una fractura por estrés?',
       paragraphs: [
         'Distinguir la periostitis tibial de una fractura por estrés importa porque cada una necesita una respuesta distinta. El síndrome de estrés tibial medial y las fracturas por estrés de la tibia están en un mismo continuo de lesión ósea por estrés. Si sigues cargando la pierna, la periostitis tibial puede avanzar hacia una fractura por estrés, y esa es la razón principal para cambiar la carga de entrenamiento pronto en lugar de seguir corriendo con un dolor difuso en la tibia.',
-        'La periostitis tibial suele causar una sensibilidad difusa, repartida en varios centímetros de la parte interna de la tibia. Una fractura por estrés causa sensibilidad en un solo punto pequeño, a menudo con hinchazón. Un dolor que se calma cuando entras en calor apunta más a periostitis tibial. Un dolor que sigue subiendo durante la carrera, o que aparece en reposo o de noche, apunta más a una fractura por estrés. Si el dolor está en la parte de atrás del talón y no en la tibia, es otro problema, casi siempre del tendón de Aquiles: mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) si ahí es donde te duele.',
-        'Una prueba casera que se menciona mucho es saltar en una pierna: si reproduce un dolor agudo y localizado, sugiere una fractura. Pero una revisión de 2011 en American Family Physician no encontró evidencia reciente que confirme su precisión, y casi la mitad de los pacientes con periostitis tibial confirmada también tuvieron un salto positivo. Así que un salto positivo es una razón para ver a un profesional de la salud, no una forma confiable de confirmar o descartar una fractura por tu cuenta.',
+        'La periostitis tibial suele causar una sensibilidad difusa, repartida en varios centímetros de la parte interna de la tibia. Una fractura por estrés causa sensibilidad en un solo punto pequeño, a menudo con hinchazón. Un dolor que se calma cuando entras en calor apunta más a periostitis tibial. Un dolor que sigue subiendo durante la carrera, o que aparece en reposo o de noche, apunta más a una fractura por estrés.',
+        'Si el dolor está en la parte de atrás del talón y no en la tibia, es otro problema, casi siempre del tendón de Aquiles: mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) si ahí es donde te duele.',
+        'Una prueba casera que se menciona mucho es saltar en una pierna: si reproduce un dolor agudo y localizado, sugiere una fractura. Pero una revisión de 2011 en American Family Physician no encontró evidencia reciente que confirme su precisión, y casi la mitad de los pacientes con periostitis tibial confirmada también tuvieron un salto positivo. **Así que un salto positivo es una razón para ver a un profesional de la salud, no una forma confiable de confirmar o descartar una fractura por tu cuenta.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -207,16 +218,42 @@ export const SHIN_SPLINTS_ES: Guide = {
       keyFact: 'Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre subir el kilometraje un 10\u00A0% semanal o hacerlo más rápido, dejando esa regla sin respaldo (Buist y colegas, 2008).',
       paragraphs: [
         'No hay un ensayo que te diga exactamente cuánto bajar. Lo que tiene algo de respaldo es la forma de un programa de carrera progresivo: en el único ensayo aleatorizado, los tres grupos siguieron un regreso gradual a correr, y los tres mejoraron más o menos al mismo ritmo. El programa de carrera, no los ejercicios agregados ni la compresión, fue lo que tuvieron en común.',
-        'Un dolor agudo durante la carrera, un dolor que empeora mientras corres o un dolor en reposo son razones para parar y que te revisen, en lugar de seguir corriendo con él. Si el dolor se calma al entrar en calor y sigue siendo manejable, correr menos, más suave y menos veces es un punto medio razonable mientras la tibia se adapta. Los días de descanso entre carreras le dan tiempo al hueso para responder a la carga.',
-        'La regla del 10\u00A0%, no subir más de un 10\u00A0% el kilometraje semanal, se menciona mucho, pero no está demostrada. Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre un programa basado en la regla del 10\u00A0% y uno más rápido. Lo que sí mostró un estudio de 2014 con 874\u00A0corredores es que los saltos grandes y repentinos de distancia vienen con más lesiones. Gradual es mejor que repentino, pero un porcentaje concreto no tiene respaldo de ensayos. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica la misma forma de manejar la carga con más detalle.',
+        'Razones para parar y que te revisen, en lugar de seguir corriendo con él:',
+        {
+          list: [
+            'Un dolor agudo durante la carrera.',
+            'Un dolor que empeora mientras corres.',
+            'Un dolor en reposo.',
+          ],
+        },
+        'Si el dolor se calma al entrar en calor y sigue siendo manejable, correr menos, más suave y menos veces es un punto medio razonable mientras la tibia se adapta. Los días de descanso entre carreras le dan tiempo al hueso para responder a la carga.',
+        'La regla del 10\u00A0%, no subir más de un 10\u00A0% el kilometraje semanal, se menciona mucho, pero no está demostrada. Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre un programa basado en la regla del 10\u00A0% y uno más rápido.',
+        'Lo que sí mostró un estudio de 2014 con 874\u00A0corredores es que los saltos grandes y repentinos de distancia vienen con más lesiones. **Gradual es mejor que repentino, pero un porcentaje concreto no tiene respaldo de ensayos.** [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica la misma forma de manejar la carga con más detalle.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
     {
       h2: '¿Qué cambios en el entrenamiento evitan que la periostitis tibial vuelva?',
       paragraphs: [
-        'Ningún ejercicio concreto ha demostrado prevenir la periostitis tibial en un ensayo. Los factores de riesgo que encontraron dos metaanálisis independientes apuntan a manejar la carga de entrenamiento en general y avanzar poco a poco, no a un estiramiento o ejercicio de fuerza en particular. Los factores de riesgo que se repitieron en las dos revisiones fueron un IMC más alto, una mayor caída del navicular (cuánto se aplana el arco bajo carga), ser mujer, tener menos años corriendo y haber tenido periostitis tibial antes.',
-        'Un patrón general para volver a correr: primero caminar sin dolor, después trotar suave en superficies blandas con días de descanso entre medio, y después carreras más largas poco a poco mientras las mañanas sigan sin dolor. Cualquier día que reproduzca un dolor agudo o en un solo punto, o un dolor que sube durante la carrera en lugar de calmarse al entrar en calor, es una señal para parar, no para aguantar.',
+        'Ningún ejercicio concreto ha demostrado prevenir la periostitis tibial en un ensayo. Los factores de riesgo que encontraron dos metaanálisis independientes apuntan a manejar la carga de entrenamiento en general y avanzar poco a poco, no a un estiramiento o ejercicio de fuerza en particular. Los factores de riesgo que se repitieron en las dos revisiones fueron:',
+        {
+          list: [
+            'Un IMC más alto.',
+            'Una mayor caída del navicular (cuánto se aplana el arco bajo carga).',
+            'Ser mujer.',
+            'Tener menos años corriendo.',
+            'Haber tenido periostitis tibial antes.',
+          ],
+        },
+        'Un patrón general para volver a correr:',
+        {
+          list: [
+            'Primero caminar sin dolor.',
+            'Después trotar suave en superficies blandas con días de descanso entre medio.',
+            'Después carreras más largas poco a poco mientras las mañanas sigan sin dolor.',
+          ],
+        },
+        'Cualquier día que reproduzca un dolor agudo o en un solo punto, o un dolor que sube durante la carrera en lugar de calmarse al entrar en calor, **es una señal para parar, no para aguantar.**',
       ],
       cites: [CITE.newman, CITE.hamstraWright],
     },
@@ -226,7 +263,7 @@ export const SHIN_SPLINTS_ES: Guide = {
       paragraphs: [
         'Las fuentes varían y ninguna apunta a un número único respaldado por un ensayo. La orientación general para lesiones por sobreuso es que los casos leves se calman en unas semanas con menos actividad, mientras que los casos ligados a errores de entrenamiento que se repiten pueden tardar más si vuelve la misma carga antes de que el tejido se adapte.',
         'En el ensayo aleatorizado con 74\u00A0deportistas con periostitis tibial, el tiempo promedio para completar el programa de carrera fue de unos 102 a 118\u00A0días según el grupo (promedio general de 105\u00A0días), aunque el rango fue amplio.',
-        'Como la periostitis tibial y las fracturas por estrés de la tibia están en el mismo continuo, un dolor que no mejora después de unas semanas corriendo menos y con días de descanso es una razón para que te revisen, en lugar de esperar más. La señal más clara de recuperación es caminar sin dolor y después trotar suave sin dolor, en ese orden, antes de volver a subir el kilometraje.',
+        'Como la periostitis tibial y las fracturas por estrés de la tibia están en el mismo continuo, un dolor que no mejora después de unas semanas corriendo menos y con días de descanso es una razón para que te revisen, en lugar de esperar más. **La señal más clara de recuperación es caminar sin dolor y después trotar suave sin dolor, en ese orden, antes de volver a subir el kilometraje.**',
       ],
       cites: [CITE.moen],
     },

@@ -39,14 +39,14 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       h2: 'Pourquoi les exercices aident-ils en cas d’épine calcanéenne\u00A0?',
       keyFact: 'Dans une étude sur 530\u00A0personnes ayant mal aux pieds, une épine calcanéenne n’apparaissait seule que dans 6\u00A0% des pieds, le plus souvent avec un fascia plantaire épaissi (Menz et coll., 2019).',
       paragraphs: [
-        'L’épine calcanéenne est une excroissance osseuse sous l’os du talon. Dans une étude sur 530\u00A0personnes de 50\u00A0ans et plus ayant mal aux pieds, une épine calcanéenne seule était rare (6\u00A0% des pieds), et la douleur au talon était liée à une épine accompagnée d’un fascia plantaire épaissi, la bande de tissu sous le pied (Menz et coll., 2019). La douleur vient du tissu mou, et c’est lui que l’exercice peut atteindre.',
+        'L’épine calcanéenne est une excroissance osseuse sous l’os du talon. Dans une étude sur 530\u00A0personnes de 50\u00A0ans et plus ayant mal aux pieds, une épine calcanéenne seule était rare (6\u00A0% des pieds), et la douleur au talon était liée à une épine accompagnée d’un fascia plantaire épaissi, la bande de tissu sous le pied (Menz et coll., 2019). **La douleur vient du tissu mou, et c’est lui que l’exercice peut atteindre.**',
         'Étirer le fascia plantaire et le mollet réduit la tension sur l’attache au talon. Renforcer le mollet augmente la capacité de la chaîne qui absorbe la charge chaque fois que le talon touche le sol. Ensemble, ils réduisent le stress quotidien sur le tissu autour de l’épine.',
         'Aucun programme d’exercices ne fera disparaître une épine à la radio. Mais la plupart des personnes qui ont une épine calcanéenne n’ont pas besoin qu’elle disparaisse. Elles ont besoin que la douleur se calme, et cela passe par un fascia et un mollet plus forts et plus souples.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'Quels étirements aident la douleur de l’épine calcanéenne\u00A0?',
+      h2: 'Quels étirements contre la douleur de l’épine calcanéenne\u00A0?',
       keyFact: 'Une revue systématique a montré que les étirements du mollet comme ceux du fascia plantaire réduisaient la douleur de la fasciite plantaire par rapport à l’absence d’étirements (Siriphorn et Eksakulkla, 2020).',
       paragraphs: [
         'Les étirements sont le point de départ. La recommandation de 2023 note les étirements du fascia plantaire et du mollet **A**, sa meilleure note. Une revue systématique avec méta-analyse des étirements dans la fasciite plantaire a montré que les étirements du mollet comme ceux du fascia plantaire réduisaient la douleur par rapport à l’absence d’étirements (Siriphorn et Eksakulkla, 2020). Commencez par ces trois-là.',
@@ -54,7 +54,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       exercises: [
         {
           name: 'Étirement du fascia plantaire',
-          evidence: { level: 'strong', why: 'Note A de la recommandation. Un essai de 2003 sur 101\u00A0personnes a trouvé cet étirement plus efficace que l’étirement du mollet seul à 8\u00A0semaines.' },
+          evidence: { level: 'strong', why: 'Note A de la recommandation. Un essai de 2003 sur 101\u00A0personnes (82 ont terminé le suivi) a trouvé cet étirement plus efficace que l’étirement du mollet seul à 8\u00A0semaines.' },
           dose: '10\u00A0maintiens de 10\u00A0secondes, chaque pied',
           how: 'Asseyez-vous et croisez une cheville sur l’autre genou. Tirez doucement les orteils vers vous jusqu’à sentir un étirement le long de la voûte. Tenez, puis relâchez. Faites-le avant votre premier pas chaque matin et après être resté longtemps assis.',
           often: 'Chaque matin et après être resté assis',
@@ -92,10 +92,11 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'Quels exercices de renforcement aident la douleur de l’épine calcanéenne\u00A0?',
+      h2: 'Quels exercices de renforcement contre la douleur de l’épine calcanéenne\u00A0?',
       keyFact: 'Dans un essai sur 48\u00A0personnes, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points que le groupe des étirements seuls à trois mois (Rathleff et coll., 2015).',
       paragraphs: [
-        'Les étirements seuls suffisent souvent les premières semaines. Une fois que la douleur du matin commence à se calmer, ajouter le renforcement du mollet donne à la chaîne du talon la capacité dont elle a besoin. La recommandation note le renforcement musculaire **B**, sa deuxième meilleure note. Dans le seul essai conçu pour tester les montées sur pointes dans la fasciite plantaire, 48\u00A0personnes ont été réparties entre un groupe de montées sur pointes avec charge et un groupe d’étirements seuls. Le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points à trois mois (Rathleff et coll., 2015).',
+        'Les étirements seuls suffisent souvent les premières semaines. Une fois que la douleur du matin commence à se calmer, ajouter le renforcement du mollet donne à la chaîne du talon la capacité dont elle a besoin. La recommandation note le renforcement musculaire **B**, sa deuxième meilleure note.',
+        'Dans le seul essai conçu pour tester les montées sur pointes dans la fasciite plantaire, 48\u00A0personnes ont été réparties entre un groupe de montées sur pointes avec charge et un groupe d’étirements seuls. Le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points à trois mois (Rathleff et coll., 2015).',
         'Commencez au niveau le plus facile et ne montez que lorsqu’il vous a paru facile deux séances de suite. La progression ci-dessous va du travail assis jusqu’à la montée sur pointes avec serviette et charge de l’essai.',
       ],
       exercises: [
@@ -194,7 +195,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
           name: 'Pied court, assis',
           evidence: { level: 'early', why: 'Une revue de 2024 a montré que l’entraînement du pied court modifiait la forme de la voûte, mais pas la douleur. Fait partie d’un programme qui a amélioré les mesures de la voûte dans un essai de 2023.' },
           dose: '3\u00A0séries de 10, tenir 5\u00A0secondes, chaque pied',
-          how: 'Asseyez-vous, le pied à plat au sol. Tirez la base des orteils vers le talon pour que la voûte se soulève. Ne recroquevillez pas les orteils. Cet exercice entraîne le petit muscle à l’intérieur de la voûte.',
+          how: 'Asseyez-vous, le pied à plat au sol. Tirez la base des orteils vers le talon pour que la voûte se soulève. Ne recroquevillez pas les orteils. Cet exercice entraîne les petits muscles à l’intérieur de la voûte.',
           often: 'Jours de renforcement',
           feel: 'La voûte qui se soulève, orteils détendus',
           stop: 'La douleur atteint 6/10',
@@ -222,7 +223,8 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       paragraphs: [
         'Un étirement doit tirer, pas piquer. Un étirement du mollet qui donne une tension confortable dans le haut ou le bas du mollet est bon. Un étirement du fascia plantaire qui tire doucement le long de la voûte est bon. Si l’étirement reproduit la douleur vive de vos premiers pas, relâchez.',
         'Les montées sur pointes doivent faire travailler le mollet. La version avec serviette donne aussi une traction sous la voûte\u00A0: c’est le fascia qui prend la charge. Cette traction est attendue, c’est tout l’intérêt de la serviette.',
-        'Arrêtez pour aujourd’hui si la douleur atteint **6/10 ou plus** pendant un exercice, ou si vos premiers pas le lendemain matin sont nettement pires que d’habitude. Cette règle d’arrêt et de retour en arrière est celle de l’application. Une légère courbature qui passe en un jour est normale, surtout les deux premières semaines. Une douleur qui reste élevée plusieurs jours ou s’aggrave de semaine en semaine est une raison de redescendre d’un niveau ou de consulter un professionnel de santé.',
+        'Arrêtez pour aujourd’hui si la douleur atteint **6/10 ou plus** pendant un exercice, ou si vos premiers pas le lendemain matin sont nettement pires que d’habitude. Cette règle d’arrêt et de retour en arrière est celle de l’application.',
+        'Une légère courbature qui passe en un jour est normale, surtout les deux premières semaines. Une douleur qui reste élevée plusieurs jours ou s’aggrave de semaine en semaine est une raison de redescendre d’un niveau ou de consulter un professionnel de santé.',
       ],
       cites: [CITE.guideline],
     },
@@ -231,14 +233,21 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       paragraphs: [
         'Aucun essai ne mesure les résultats de l’exercice spécifiquement chez les personnes qui ont une épine calcanéenne. Les délais ci-dessous viennent d’études sur la fasciite plantaire, le problème qui cause la douleur autour de l’épine dans la plupart des cas.',
         'Une revue des données cliniques indique qu’environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements et les semelles, souvent en quelques mois (Latt et coll., 2020). Dans l’essai de Rathleff 2015, le groupe des montées sur pointes avec charge était nettement devant le groupe des étirements seuls à trois mois.',
-        'Aucun programme d’exercices ne peut promettre un délai à une personne en particulier. Ce que vous pouvez mesurer, c’est si les choses bougent. La douleur du matin sur une échelle de 0 à 10, notée avant votre premier pas, est le signal quotidien le plus clair. L’endurance du mollet, mesurée par le nombre de montées sur pointes sur une jambe que vous pouvez faire, suit la force au fil des semaines. Les deux sont plus utiles que deviner.',
+        'Aucun programme d’exercices ne peut promettre un délai à une personne en particulier. **Ce que vous pouvez mesurer, c’est si les choses bougent**\u00A0:',
+        {
+          list: [
+            'La douleur du matin sur une échelle de 0 à 10, notée avant votre premier pas, est le signal quotidien le plus clair.',
+            'L’endurance du mollet, mesurée par le nombre de montées sur pointes sur une jambe que vous pouvez faire, suit la force au fil des semaines.',
+          ],
+        },
+        'Les deux sont plus utiles que de deviner.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: 'Peut-on se débarrasser d’une épine calcanéenne naturellement\u00A0?',
       paragraphs: [
-        'L’exercice, les étirements et les changements d’alimentation ne dissolvent pas une épine calcanéenne. L’épine est de l’os calcifié. Elle reste visible à la radio, que vous vous étiriez ou non.',
+        '**L’exercice, les étirements et les changements d’alimentation ne dissolvent pas une épine calcanéenne.** L’épine est de l’os calcifié. Elle reste visible à la radio, que vous vous étiriez ou non.',
         'Mais «\u00A0se débarrasser de l’épine\u00A0» est rarement le bon objectif. Dans l’étude de 2019, l’épine allait presque toujours avec un fascia plantaire épaissi, et c’est le tissu mou que l’exercice peut changer. La douleur vient du tissu mou. Les exercices de cette page visent le tissu mou. Si la douleur se calme, l’épine n’est pas un problème à régler.',
         'Si quelqu’un vous a promis un complément alimentaire, une crème ou un appareil qui dissout les épines calcanéennes, méfiez-vous. Aucune donnée publiée ne soutient cette affirmation. L’approche conseillée par la recommandation repose sur les étirements, le renforcement du mollet et la gestion de la charge.',
       ],
@@ -249,7 +258,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
     {
       q: 'Quels exercices pour soulager une épine calcanéenne\u00A0?',
       cites: [CITE.guideline],
-      a: 'Les exercices qui aident la douleur de l’épine calcanéenne sont les mêmes que ceux que la recommandation de 2023 sur la douleur au talon conseille pour la fasciite plantaire\u00A0: étirement du fascia plantaire (note A), étirement du mollet (note A) et renforcement progressif du mollet par des montées sur pointes (note B). Ils visent le fascia plantaire et les muscles du mollet autour de l’épine, qui sont en général à l’origine de la douleur.',
+      a: 'Les exercices utiles contre la douleur de l’épine calcanéenne sont les mêmes que ceux que la recommandation de 2023 sur la douleur au talon conseille pour la fasciite plantaire\u00A0: étirement du fascia plantaire (note A), étirement du mollet (note A) et renforcement progressif du mollet par des montées sur pointes (note B). Ils visent le fascia plantaire et les muscles du mollet autour de l’épine, qui sont en général à l’origine de la douleur.',
     },
     {
       q: 'Les exercices font-ils disparaître l’épine calcanéenne\u00A0?',
@@ -258,7 +267,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
     {
       q: 'À quelle fréquence faire les étirements pour l’épine calcanéenne\u00A0?',
       cites: [CITE.guideline, CITE.digiovanni2003],
-      a: 'L’étirement du fascia plantaire marche le mieux chaque matin avant de vous lever et après être resté longtemps assis. Les étirements du mollet trouvent leur place dans la plupart des séances. Dans un essai sur 101\u00A0personnes avec une douleur chronique au talon, le groupe qui faisait l’étirement du fascia plantaire avait de meilleurs résultats à 8\u00A0semaines que le groupe qui faisait seulement l’étirement du mollet (DiGiovanni et coll., 2003).',
+      a: 'L’étirement du fascia plantaire marche le mieux chaque matin avant de vous lever et après être resté longtemps assis. Les étirements du mollet trouvent leur place dans la plupart des séances. Dans un essai sur 101\u00A0personnes avec une douleur chronique au talon (82 ont terminé le suivi), le groupe qui faisait l’étirement du fascia plantaire avait de meilleurs résultats à 8\u00A0semaines que le groupe qui faisait seulement l’étirement du mollet (DiGiovanni et coll., 2003).',
     },
     {
       q: 'Combien de temps pour que la douleur d’une épine calcanéenne passe\u00A0?',
@@ -273,7 +282,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
     {
       q: 'Marcher est-il bon pour une épine calcanéenne\u00A0?',
       cites: [CITE.guideline],
-      a: 'La marche en elle-même n’est pas le problème. Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème et vaut mieux que le repos complet. La douleur vient du fascia plantaire et du mollet sous l’épine, et une marche modérée garde la pompe du mollet active. Si la marche aggrave votre douleur du lendemain matin, raccourcissez la distance et reprenez-la progressivement.',
+      a: 'La marche en elle-même n’est pas le problème. Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème et vaut mieux que le repos complet. La douleur vient du fascia plantaire autour de l’épine, et une marche modérée garde la pompe du mollet active. Si la marche aggrave votre douleur du lendemain matin, raccourcissez la distance et reprenez-la progressivement.',
     },
     {
       q: 'Quels exercices éviter avec une épine calcanéenne\u00A0?',

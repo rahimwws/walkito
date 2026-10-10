@@ -38,7 +38,7 @@ export const EX_BAND_INVERSION: Guide = {
       h2: 'How do you do ankle inversion with a band?',
       paragraphs: [
         'Sit with your legs out in front of you or on the edge of a chair. Loop a resistance band around the inside of the forefoot of the working leg. Anchor the other end under the opposite foot or around a table leg so the band pulls the foot outward.',
-        'Start with the foot turned slightly outward (everted). Turn the sole of the foot inward against the band, sliding the forefoot toward the midline. Move the foot, not the whole leg. The knee points straight ahead the entire time. Return slowly and repeat.',
+        'Start with the foot turned slightly outward (everted). Turn the sole of the foot inward against the band, sliding the forefoot toward the midline. **Move the foot, not the whole leg.** The knee points straight ahead the entire time. Return slowly and repeat.',
         'Use a light band to start. The movement is small. If the knee twists or the hip rotates, the band is too heavy or the leg is compensating.',
       ],
       exercises: [
@@ -62,14 +62,22 @@ export const EX_BAND_INVERSION: Guide = {
       keyFact: 'A 2004 MRI study of 5 healthy adults found that turning the foot inward raised tibialis posterior signal by 50 percent, with under 5 percent change in nearby muscles (Kulig and colleagues, 2004).',
       paragraphs: [
         'The primary target is the tibialis posterior. It is the deepest muscle in the back of the lower leg, sitting behind the tibia and fibula. Its tendon runs behind the medial malleolus (the inner ankle bone), then fans out in multiple slips that attach to nearly every bone in the midfoot.',
-        'A 2004 MRI study by Kulig and colleagues tested three exercises in 5 healthy adults: foot adduction (turning the foot inward along the floor), a single-leg heel raise, and open-chain foot supination. Foot adduction produced the greatest tibialis posterior activation (50% signal increase) with the least activation in surrounding muscles (under 5%). The single-leg heel raise activated the tibialis posterior too, but also heavily activated the gastrocnemius (99%) and the soleus (39%), making it a much less selective exercise for the tibialis posterior.',
+        'A 2004 MRI study by Kulig and colleagues tested three exercises in 5 healthy adults:',
+        {
+          list: [
+            'Foot adduction (turning the foot inward along the floor).',
+            'A single-leg heel raise.',
+            'Open-chain foot supination.',
+          ],
+        },
+        'Foot adduction produced the greatest tibialis posterior activation (50% signal increase) with the least activation in surrounding muscles (under 5%). The single-leg heel raise activated the tibialis posterior too, but also heavily activated the gastrocnemius (99%) and the soleus (39%), making it a much less selective exercise for the tibialis posterior.',
       ],
       cites: [CITE.kulig],
     },
     {
       h2: 'Why does the tibialis posterior matter for the arch?',
       paragraphs: [
-        'The tibialis posterior is the primary dynamic stabilizer of the medial longitudinal arch. Every time you take a step, it contracts to hold the arch up during the mid-stance phase when all your weight is on one foot. The intrinsic foot muscles (trained by the [short foot exercise](/exercises/short-foot-exercise/) and [toe spread](/exercises/toe-spread/)) provide local arch support, but the tibialis posterior provides the bigger, extrinsic force from above.',
+        'The tibialis posterior is **the primary dynamic stabilizer of the medial longitudinal arch.** Every time you take a step, it contracts to hold the arch up during the mid-stance phase when all your weight is on one foot. The intrinsic foot muscles (trained by the [short foot exercise](/exercises/short-foot-exercise/) and [toe spread](/exercises/toe-spread/)) provide local arch support, but the tibialis posterior provides the bigger, extrinsic force from above.',
         'When the tibialis posterior tendon weakens or degenerates, the arch collapses progressively and the foot pronates. A 2017 review by Ling and Lui described this as the most common cause of adult-acquired flat foot. A 2018 systematic review by Ross and colleagues found that exercise programs including tibialis posterior strengthening improved pain and function in early-stage posterior tibial tendon dysfunction.',
         'This is why [flat feet exercise programs](/flat-feet-exercises/) include both intrinsic foot exercises and tibialis posterior work. The intrinsic muscles are the local stabilizers. The tibialis posterior is the main extrinsic stabilizer. Both matter.',
       ],
@@ -78,10 +86,14 @@ export const EX_BAND_INVERSION: Guide = {
     {
       h2: 'What are the common mistakes with the band inversion exercise?',
       paragraphs: [
-        'The most common mistake is rotating the whole leg instead of just the foot. When the hip rotates inward to turn the foot, the tibialis posterior does almost nothing. Keep the knee pointing straight ahead. Only the foot moves at the ankle.',
-        'Another mistake is using a band that is too strong. The tibialis posterior is a small, deep muscle. A heavy band forces the larger muscles to take over. Start with a light band and focus on feeling the work along the inner ankle and arch.',
-        'Letting the foot snap back between reps is a third issue. Control the return. The eccentric phase, lowering slowly, loads the tendon in a way that helps it adapt. A slow return is more valuable than a fast pull.',
-        'Finally, some people place the band too far up the foot, near the ankle joint itself. The band should sit around the forefoot, near the ball of the foot, so the leverage works at the right angle.',
+        {
+          list: [
+            '**The most common mistake is rotating the whole leg instead of just the foot.** When the hip rotates inward to turn the foot, the tibialis posterior does almost nothing. Keep the knee pointing straight ahead. Only the foot moves at the ankle.',
+            '**Another mistake is using a band that is too strong.** The tibialis posterior is a small, deep muscle. A heavy band forces the larger muscles to take over. Start with a light band and focus on feeling the work along the inner ankle and arch.',
+            '**Letting the foot snap back between reps is a third issue.** Control the return. The eccentric phase, lowering slowly, loads the tendon in a way that helps it adapt. A slow return is more valuable than a fast pull.',
+            '**Finally, some people place the band too far up the foot, near the ankle joint itself.** The band should sit around the forefoot, near the ball of the foot, so the leverage works at the right angle.',
+          ],
+        },
       ],
     },
     {
@@ -89,7 +101,7 @@ export const EX_BAND_INVERSION: Guide = {
       paragraphs: [
         'The most direct evidence for the movement comes from the 2004 MRI study by Kulig and colleagues. It confirmed that foot adduction selectively activates the tibialis posterior with minimal activation of surrounding muscles. This makes inversion against a band the exercise of choice when the goal is to strengthen that specific muscle.',
         'For clinical outcomes, a 2018 systematic review by Ross and colleagues looked at exercise programs for posterior tibial tendon dysfunction. Most studies were small, but the review concluded that programs including eccentric and concentric tibialis posterior exercises, often combined with calf strengthening and orthotics, improved pain and function.',
-        'The exercise has not been tested on its own in a large plantar fasciitis trial. Its role in the Walkito program is to support the arch by strengthening the extrinsic stabilizer that works alongside the intrinsic muscles. Related pages: [flat feet exercises](/flat-feet-exercises/), [short foot exercise](/exercises/short-foot-exercise/), [hip abduction](/exercises/hip-abduction/).',
+        '**The exercise has not been tested on its own in a large plantar fasciitis trial.** Its role in the Walkito program is to support the arch by strengthening the extrinsic stabilizer that works alongside the intrinsic muscles. Related pages: [flat feet exercises](/flat-feet-exercises/), [short foot exercise](/exercises/short-foot-exercise/), [hip abduction](/exercises/hip-abduction/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
     },

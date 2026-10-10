@@ -38,7 +38,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       h2: '¿Por qué los ejercicios ayudan con un espolón calcáneo?',
       keyFact: 'En un estudio con 530\u00A0personas con dolor de pie, un espolón apareció solo en el 6\u00A0% de los pies, por lo general junto con una fascia plantar engrosada (Menz y colegas, 2019).',
       paragraphs: [
-        'El espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón. En un estudio con 530\u00A0personas de 50\u00A0años o más con dolor de pie, un espolón calcáneo solo era raro (6\u00A0% de los pies), y el dolor de talón se asoció con un espolón junto con una fascia plantar engrosada, la banda de tejido bajo el pie (Menz y colegas, 2019). El dolor viene del tejido blando, y eso es lo que el ejercicio puede alcanzar.',
+        'El espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón. En un estudio con 530\u00A0personas de 50\u00A0años o más con dolor de pie, un espolón calcáneo solo era raro (6\u00A0% de los pies), y el dolor de talón se asoció con un espolón junto con una fascia plantar engrosada, la banda de tejido bajo el pie (Menz y colegas, 2019). **El dolor viene del tejido blando, y eso es lo que el ejercicio puede alcanzar.**',
         'Estirar la fascia plantar y la pantorrilla reduce la tensión en la unión del talón. Fortalecer la pantorrilla aumenta la capacidad de la cadena que absorbe la carga cada vez que el talón golpea el piso. Juntos, bajan el estrés diario sobre el tejido alrededor del espolón.',
         'Ningún programa de ejercicios va a hacer que un espolón desaparezca de la radiografía. Pero la mayoría de las personas con un espolón calcáneo no necesitan que el espolón desaparezca. Necesitan que el dolor se calme, y eso viene de que la fascia y la pantorrilla se vuelvan más fuertes y más flexibles.',
       ],
@@ -67,7 +67,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
           evidence: { level: 'strong', why: 'Grado A en la guía. Un gastrocnemio tenso fue el factor de riesgo más fuerte para la fascitis plantar en un estudio de casos y controles de 2003.' },
           dose: '2\u00A0repeticiones de 30\u00A0segundos, cada pierna',
-          how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla. El gastrocnemio, el músculo más grande y externo de la pantorrilla, solo se estira con la rodilla estirada.',
+          how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla. El gastrocnemio, el músculo más grande y superficial de la pantorrilla, solo se estira con la rodilla estirada.',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'Dolor de 6/10',
@@ -94,7 +94,8 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       h2: '¿Qué ejercicios de fortalecimiento ayudan con el espolón calcáneo?',
       keyFact: 'En un ensayo con 48\u00A0personas, el grupo de las elevaciones de talón anotó 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba, a los tres meses (Rathleff y colegas, 2015).',
       paragraphs: [
-        'El estiramiento solo suele ser suficiente en las primeras semanas. Cuando el dolor de la mañana empiece a ceder, añadir fortalecimiento de la pantorrilla aumenta la capacidad que la cadena del talón necesita. La guía le da al entrenamiento de fuerza un grado **B**, el segundo más alto. En el único ensayo diseñado para probar las elevaciones de talón en la fascitis plantar, 48\u00A0personas se dividieron en un grupo de elevaciones con carga y un grupo de solo estiramientos. El grupo de elevaciones de talón mejoró 29\u00A0puntos más en el Foot Function Index a los tres meses (Rathleff y colegas, 2015).',
+        'El estiramiento solo suele ser suficiente en las primeras semanas. Cuando el dolor de la mañana empiece a ceder, añadir fortalecimiento de la pantorrilla aumenta la capacidad que la cadena del talón necesita. La guía le da al entrenamiento de fuerza un grado **B**, el segundo más alto.',
+        'En el único ensayo diseñado para probar las elevaciones de talón en la fascitis plantar, 48\u00A0personas se dividieron en un grupo de elevaciones con carga y un grupo de solo estiramientos. El grupo de elevaciones de talón mejoró 29\u00A0puntos más en el Foot Function Index a los tres meses (Rathleff y colegas, 2015).',
         'Empieza en el nivel más fácil y sube solo cuando se sienta fácil durante dos sesiones seguidas. La progresión de abajo va desde el trabajo sentado hasta la elevación con toalla y carga del ensayo.',
       ],
       exercises: [
@@ -221,23 +222,31 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       paragraphs: [
         'El estiramiento debe sentirse como un tirón, no como una puñalada. Un estiramiento de pantorrilla que produce una tensión cómoda en la parte alta o baja de la pantorrilla va por buen camino. Un estiramiento de la fascia plantar que jala suavemente a lo largo del arco va por buen camino. Si el estiramiento reproduce el dolor agudo que sientes en los primeros pasos, afloja.',
         'Las elevaciones de talón deben sentirse como trabajo de pantorrilla. La versión con toalla también produce un tirón bajo el arco, que es la fascia cargándose. Ese tirón es lo esperado y es el objetivo de la toalla.',
-        'Detente por el resto del día si el dolor llega a **6/10 o más** durante cualquier ejercicio, o si los primeros pasos a la mañana siguiente son claramente peores de lo normal. Esa regla de parar y bajar un nivel es la que usa la app. Un poco de molestia que se calma en un día es normal, sobre todo en las primeras dos semanas. Un dolor que se mantiene elevado por días o que empeora semana a semana es razón para bajar un nivel o consultar a un profesional de la salud.',
+        'Detente por el resto del día si el dolor llega a **6/10 o más** durante cualquier ejercicio, o si los primeros pasos a la mañana siguiente son claramente peores de lo normal. Esa regla de parar y bajar un nivel es la que usa la app.',
+        'Un poco de molestia que se calma en un día es normal, sobre todo en las primeras dos semanas. Un dolor que se mantiene elevado por días o que empeora semana a semana es razón para bajar un nivel o consultar a un profesional de la salud.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: '¿Cuánto tarda el dolor del espolón en mejorar con ejercicio?',
       paragraphs: [
-        'No hay un ensayo que mida los resultados del ejercicio específicamente para personas con espolón calcáneo. Los tiempos de abajo vienen de estudios de fascitis plantar, que es la condición que produce el dolor alrededor del espolón en la mayoría de los casos.',
+        'No hay un ensayo que mida los resultados del ejercicio específicamente para personas con espolón calcáneo. Los tiempos de abajo vienen de estudios de fascitis plantar, que es la afección que produce el dolor alrededor del espolón en la mayoría de los casos.',
         'Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, como estiramientos y plantillas, a menudo en varios meses (Latt y colegas, 2020). En el ensayo de Rathleff de 2015, el grupo de elevaciones de talón con carga iba significativamente adelante del grupo de solo estiramientos a los tres meses.',
-        'Ningún programa de ejercicios puede prometer un plazo para ninguna persona. Lo que sí puedes medir es si las cosas están cambiando. El dolor de la mañana en una escala de 0 a 10, anotado antes del primer paso, es la señal más clara en el día a día. La resistencia de la pantorrilla, medida por cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Las dos son más útiles que adivinar.',
+        'Ningún programa de ejercicios puede prometer un plazo para ninguna persona. **Lo que sí puedes medir es si las cosas están cambiando**:',
+        {
+          list: [
+            'El dolor de la mañana en una escala de 0 a 10, anotado antes del primer paso, es la señal más clara en el día a día.',
+            'La resistencia de la pantorrilla, medida por cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas.',
+          ],
+        },
+        'Las dos son más útiles que adivinar.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: '¿Se puede eliminar un espolón calcáneo de forma natural?',
       paragraphs: [
-        'El ejercicio, el estiramiento y los cambios de alimentación no disuelven un espolón calcáneo. El espolón es hueso calcificado. Se queda en la radiografía estires o no.',
+        '**El ejercicio, el estiramiento y los cambios de alimentación no disuelven un espolón calcáneo.** El espolón es hueso calcificado. Se queda en la radiografía estires o no.',
         'Pero «eliminar el espolón» rara vez es la meta correcta. En el estudio de 2019, el espolón casi siempre venía con una fascia plantar engrosada, y el tejido blando es la parte que el ejercicio puede cambiar. El dolor viene del tejido blando. Los ejercicios de esta página trabajan el tejido blando. Si el dolor se calma, el espolón no es un problema que haga falta resolver.',
         'Si alguien te ha prometido un suplemento, crema o aparato que disuelve espolones calcáneos, desconfía. No hay evidencia publicada que respalde esa afirmación. El enfoque que recomienda la guía es estiramiento, fortalecimiento de la pantorrilla y manejo de la carga.',
       ],
@@ -277,7 +286,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
     {
       q: '¿Qué ejercicios debo evitar si tengo un espolón calcáneo?',
       cites: [CITE.guideline],
-      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté inflamado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
+      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté irritado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
     },
     {
       q: '¿Qué dispara el dolor de un espolón calcáneo?',

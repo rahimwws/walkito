@@ -34,7 +34,14 @@ export const STANDING_DESK_EN: Guide = {
       h2: 'Why do your feet hurt from a standing desk?',
       keyFact: 'A 2017 systematic review of 25 studies found low-back symptoms became clinically relevant after about 71 minutes of standing in general, but only 42 minutes in people prone to standing pain (Coenen and colleagues, 2017).',
       paragraphs: [
-        'Standing desk foot pain happens for the same reason any prolonged standing hurts: your feet, calves and lower legs carry a static load without the relief that walking or sitting provides. When you stand still, gravity pools blood in the lower legs, the calf muscles hold the same position without contracting and relaxing, and the plantar fascia under the arch absorbs a steady load.',
+        'Standing desk foot pain happens for the same reason any prolonged standing hurts: your feet, calves and lower legs carry a static load without the relief that walking or sitting provides. When you stand still:',
+        {
+          list: [
+            'Gravity pools blood in the lower legs.',
+            'The calf muscles hold the same position without contracting and relaxing.',
+            'The plantar fascia under the arch absorbs a steady load.',
+          ],
+        },
         'A 2017 systematic review of 25 laboratory studies pooled data from 591 participants and found that clinically relevant levels of low-back symptoms developed after about 71 minutes of uninterrupted standing in the general population, but only 42 minutes in people who tend to develop pain while standing. For lower-limb symptoms, the picture was similar. The authors recommended a threshold of 40 minutes as a practical limit before breaking up standing time.',
         'A 2015 review of the occupational health literature confirmed the association between prolonged standing and musculoskeletal discomfort, fatigue and leg pain across many types of standing work. The review also found that cardiovascular strain and leg swelling increase with standing duration.',
       ],
@@ -45,7 +52,7 @@ export const STANDING_DESK_EN: Guide = {
       keyFact: 'A 2015 expert statement recommends building toward 2 hours per day of standing and light activity, progressing eventually to 4 hours, broken into shorter bouts (Buckley and colleagues, 2015).',
       paragraphs: [
         'There is no single answer that fits everyone, but the research narrows it down. A 2015 expert statement commissioned by Public Health England and the Active Working Community Interest Company recommended that desk-based workers initially build toward accumulating 2 hours per day of standing and light activity during working hours, eventually progressing to 4 hours per day. The statement specified that standing should be broken into shorter bouts, not done in one stretch.',
-        'The 2017 review of laboratory studies suggests that 40 minutes of continuous standing is the point where symptoms start to become clinically relevant. Putting those together, a practical starting point is standing for 20 to 30 minutes, sitting for 20 to 30 minutes, and repeating through the day, adjusting as your body adapts.',
+        'The 2017 review of laboratory studies suggests that 40 minutes of continuous standing is the point where symptoms start to become clinically relevant. Putting those together, **a practical starting point is standing for 20 to 30 minutes, sitting for 20 to 30 minutes, and repeating through the day**, adjusting as your body adapts.',
         'A 2014 systematic review of 14 studies on sit-stand workstations found sufficient evidence that they reduce low-back discomfort, with no decrease in productivity. The review found no optimal sit-stand ratio, and the authors noted that the best ratio likely varies from person to person and job to job. What the evidence supports is alternating, not a fixed rule.',
       ],
       sourceNote:
@@ -57,7 +64,7 @@ export const STANDING_DESK_EN: Guide = {
       paragraphs: [
         'Anti-fatigue mats have some evidence behind them. The 2015 occupational health review lists floor mats among the interventions with evidence for reducing discomfort during prolonged standing. A crossover study of 38 surgical team members found that standing on a 15 mm rubber anti-fatigue mat during procedures resulted in significantly lower pain and fatigue scores compared to standing on standard flooring.',
         'The mechanism is straightforward: a softer surface lets the feet make small adjustments and shifts some of the load that a hard floor concentrates on the heel and ball of the foot. A 2018 systematic review of cushioning materials during prolonged standing noted consistent findings for reduced discomfort, though the studies were small and the benefit was for comfort, not for preventing a specific condition.',
-        'A mat is not going to solve foot pain on its own, but it is one of the simpler things to try. If you already have a standing desk and your feet hurt, a mat combined with shorter standing bouts and the exercises on this page covers the main bases.',
+        '**A mat is not going to solve foot pain on its own, but it is one of the simpler things to try.** If you already have a standing desk and your feet hurt, a mat combined with shorter standing bouts and the exercises on this page covers the main bases.',
       ],
       cites: [CITE.waters],
     },
@@ -65,7 +72,8 @@ export const STANDING_DESK_EN: Guide = {
       h2: 'What shoes should you wear at a standing desk?',
       paragraphs: [
         'If you work from home, you may be standing at your desk in socks or slippers. That is a lot of hours without any cushioning or arch support. The 2023 heel pain guideline grades orthotics on their own B-against for plantar fasciitis, meaning the evidence leans against using them as a standalone option, but that is about inserts in isolation, not about whether any shoe is better than no shoe.',
-        'A reasonable approach: wear a shoe with some cushioning and a supportive insole while you stand, even at home. You do not need a special standing-desk shoe. If you alternate between standing and sitting, you can take the shoes off during sitting periods. The exercises on this page target the tissues directly. Shoes and mats help with comfort during standing, but they do not replace the stretching and strength work.',
+        'A reasonable approach: **wear a shoe with some cushioning and a supportive insole while you stand, even at home.** You do not need a special standing-desk shoe. If you alternate between standing and sitting, you can take the shoes off during sitting periods.',
+        'The exercises on this page target the tissues directly. Shoes and mats help with comfort during standing, but they do not replace the stretching and strength work.',
       ],
       cites: [CITE.guideline],
     },
@@ -84,7 +92,7 @@ export const STANDING_DESK_EN: Guide = {
             why: 'The 2023 heel pain guideline grades calf stretching A. A tight calf was the strongest risk factor for plantar fasciitis in a 2003 case-control study.',
           },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Step back from your desk, put your hands on the desk edge or a wall, and keep the back leg straight with the heel down. This targets the gastrocnemius, the bigger outer calf muscle. You can do this during a transition from standing to sitting.',
+          how: 'Step back from your desk, put your hands on the desk edge or a wall, and keep the back leg straight with the heel down. This targets the gastrocnemius, the bigger, more superficial calf muscle. You can do this during a transition from standing to sitting.',
           media: 'calf_stretch_straight',
           caption: 'Calf stretch: back leg straight, heel down, hands on desk or wall',
           alt: 'A figure leaning against a desk with the back leg straight and the calf highlighted',
@@ -176,9 +184,17 @@ export const STANDING_DESK_EN: Guide = {
     {
       h2: 'How do you transition to a standing desk without foot pain?',
       paragraphs: [
-        'Start with less standing than you think you need. The 2015 expert statement recommends building toward 2 hours of standing and light activity per day, not starting there. If you are new to standing, begin with 15 to 20 minutes of standing per hour and increase gradually over a few weeks.',
-        'A practical first week: stand for 15 minutes, sit for 45 minutes, repeat through the day. In the second week, move to 20 minutes standing, 40 sitting. By the third or fourth week, try 30 and 30. Listen to your feet and lower back. If discomfort is building, sit down sooner instead of pushing through.',
-        'Add a mat from the start if you have one. Wear shoes with some cushioning, even at home. Do the calf stretches from the table above at least once a day. If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](/nurses-foot-pain/).',
+        '**Start with less standing than you think you need.** The 2015 expert statement recommends building toward 2 hours of standing and light activity per day, not starting there. If you are new to standing, begin with 15 to 20 minutes of standing per hour and increase gradually over a few weeks:',
+        {
+          list: [
+            '**A practical first week:** stand for 15 minutes, sit for 45 minutes, repeat through the day.',
+            '**In the second week:** move to 20 minutes standing, 40 sitting.',
+            '**By the third or fourth week:** try 30 and 30.',
+          ],
+        },
+        'Listen to your feet and lower back. If discomfort is building, sit down sooner instead of pushing through.',
+        'Add a mat from the start if you have one. Wear shoes with some cushioning, even at home. Do the calf stretches from the table above at least once a day.',
+        'If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](/nurses-foot-pain/).',
       ],
       cites: [CITE.buckley],
     },

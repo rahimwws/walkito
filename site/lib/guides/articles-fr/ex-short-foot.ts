@@ -38,12 +38,12 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Comment faire l’exercice du pied court\u00A0?',
       paragraphs: [
         'Asseyez-vous sur une chaise, pieds nus à plat au sol. Placez le pied pour que le talon, la base des orteils et les cinq orteils reposent au sol. Sans recroqueviller ni crisper les orteils, essayez de tirer la base des orteils vers le talon. Votre voûte va se soulever. Tenez cette contraction, puis relâchez.',
-        'Pensez à rendre le pied plus court et plus haut, plutôt que plus large et plus plat. Les orteils ne doivent ni appuyer dans le sol, ni se soulever, ni se replier dessous. Si vous voyez les orteils se crisper, vous utilisez les mauvais muscles. Commencez par placer un doigt sous la voûte pour la sentir se soulever.',
+        'Pensez à rendre le pied plus court et plus haut, plutôt que plus large et plus plat. Les orteils ne doivent ni appuyer dans le sol, ni se soulever, ni se replier dessous. **Si vous voyez les orteils se crisper, vous utilisez les mauvais muscles.** Commencez par placer un doigt sous la voûte pour la sentir se soulever.',
       ],
       exercises: [
         {
           name: 'Pied court, assis',
-          evidence: { level: 'moderate', why: 'Fait partie du programme testé dans un essai randomisé de 2023 sur les pieds plats (Brijwasi 2023). Seul, une méta-analyse de 2024 n’a trouvé de résultats significatifs qu’après six semaines.' },
+          evidence: { level: 'moderate', why: 'Fait partie du programme testé dans un essai randomisé de 2023 sur les pieds plats (Brijwasi 2023). Testé seul, l’exercice n’a donné de résultats significatifs qu’au-delà de six semaines (méta-analyse de 2024).' },
           dose: 'Walkito commence à 3\u00A0séries de 10, tenir 5\u00A0secondes, chaque pied',
           how: 'Asseyez-vous, pieds à plat au sol. Tirez la base des orteils vers le talon pour que la voûte se soulève. Gardez les orteils détendus et à plat. Tenez cinq secondes, puis relâchez.',
           often: 'À chaque séance, tant que c’est votre niveau',
@@ -60,8 +60,16 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Quels muscles l’exercice du pied court fait-il travailler\u00A0?',
       paragraphs: [
         'L’exercice du pied court vise les muscles plantaires intrinsèques\u00A0: l’abducteur de l’hallux, le court fléchisseur des orteils, le carré plantaire et l’abducteur du petit orteil. Ces muscles sont situés entièrement dans le pied et soutiennent la voûte longitudinale interne par en dessous.',
-        'Une étude IRM de 2016 de Gooding et coll. a mesuré l’activation musculaire après 40\u00A0répétitions de quatre exercices du pied différents chez 8\u00A0sportifs universitaires. L’exercice du pied court a produit l’activation moyenne la plus élevée dans l’abducteur du petit orteil (34,9\u00A0%), l’abducteur de l’hallux (29,7\u00A0%) et le court fléchisseur des orteils (24,8\u00A0%). Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était plus de quatre fois plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils.',
-        'C’est pourquoi le pied court est considéré comme un meilleur exercice que le ramassage de serviette pour viser précisément les muscles intrinsèques. Le ramassage de serviette sollicite les longs fléchisseurs des orteils, les muscles extrinsèques qui vont de la jambe aux orteils. L’exercice du pied court laisse ces muscles extrinsèques plus au repos.',
+        'Une étude IRM de 2016 de Gooding et coll. a mesuré l’activation musculaire après 40\u00A0répétitions de quatre exercices du pied différents chez 8\u00A0sportifs universitaires. L’exercice du pied court a produit l’activation moyenne la plus élevée dans\u00A0:',
+        {
+          list: [
+            'L’abducteur du petit orteil (34,9\u00A0%).',
+            'L’abducteur de l’hallux (29,7\u00A0%).',
+            'Le court fléchisseur des orteils (24,8\u00A0%).',
+          ],
+        },
+        'Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était plus de quatre fois plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils.',
+        'C’est pourquoi **le pied court est considéré comme un meilleur exercice que le ramassage de serviette pour viser précisément les muscles intrinsèques.** Le ramassage de serviette sollicite les longs fléchisseurs des orteils, les muscles extrinsèques qui vont de la jambe aux orteils. L’exercice du pied court laisse ces muscles extrinsèques plus au repos.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -69,7 +77,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Comment progresser d’assis à debout, puis sur une jambe\u00A0?',
       paragraphs: [
         'Une fois que les maintiens du pied court assis vous ont paru faciles deux séances de suite, l’étape suivante se fait debout sur les deux pieds. La même contraction doit maintenant porter le poids du corps. Ensuite, le pied court sur une jambe ajoute un travail d’équilibre et révèle toute différence entre votre côté gauche et votre côté droit.',
-        'Chaque version est le même mouvement. Seule la charge change. Debout, la demande sur les muscles de la voûte double. Sur une jambe, elle double encore à peu près, et il faut en plus stabiliser la cheville.',
+        'Chaque version est le même mouvement. **Seule la charge change.** Debout, la demande sur les muscles de la voûte double. Sur une jambe, elle double encore à peu près, et il faut en plus stabiliser la cheville.',
       ],
       exercises: [
         {
@@ -102,8 +110,13 @@ export const EX_SHORT_FOOT_FR: Guide = {
     {
       h2: 'Quelles erreurs rendent l’exercice du pied court moins efficace\u00A0?',
       paragraphs: [
-        'L’erreur la plus fréquente est de recroqueviller les orteils. Si les orteils se plient et agrippent le sol, l’exercice devient une flexion des orteils et les fléchisseurs extrinsèques prennent le relais. Gardez les orteils allongés et détendus. Certaines personnes trouvent utile de lever brièvement les orteils, de contracter la voûte, puis de reposer les orteils.',
-        'La deuxième erreur est de pousser le pied vers l’extérieur au lieu de le raccourcir. Le mouvement doit aller droit vers l’arrière, de la base des orteils vers le talon, pas sur le côté. La troisième est de bloquer sa respiration. Respirez normalement pendant chaque maintien.',
+        {
+          list: [
+            'L’erreur la plus fréquente est de recroqueviller les orteils. Si les orteils se plient et agrippent le sol, l’exercice devient une flexion des orteils et les fléchisseurs extrinsèques prennent le relais. **Gardez les orteils allongés et détendus.** Certaines personnes trouvent utile de lever brièvement les orteils, de contracter la voûte, puis de reposer les orteils.',
+            'La deuxième erreur est de pousser le pied vers l’extérieur au lieu de le raccourcir. Le mouvement doit aller droit vers l’arrière, de la base des orteils vers le talon, pas sur le côté.',
+            'La troisième est de bloquer sa respiration. Respirez normalement pendant chaque maintien.',
+          ],
+        },
         'Si vous ne sentez pas du tout la voûte se soulever, placez un doigt ou un stylo sous la voûte. Le but est de sentir la voûte appuyer contre cet objet. Il faut parfois plusieurs séances avant que le cerveau apprenne à activer ces muscles à la demande. Ce temps d’apprentissage est normal.',
       ],
     },
@@ -111,10 +124,19 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Que dit la recherche sur les exercices du pied court\u00A0?',
       keyFact: 'Dans un essai de 2023 sur 52\u00A0personnes aux pieds plats souples, un programme de six semaines associant pied court, travail de la cheville, renforcement de la hanche et étirements a modifié la forme de la voûte davantage que dans un groupe témoin (Brijwasi et coll., 2023).',
       paragraphs: [
-        'Les données les plus solides viennent de programmes qui associent l’exercice du pied court à d’autres exercices, pas du pied court seul. Dans un essai de 2023 sur 52\u00A0personnes aux pieds plats souples, Brijwasi et coll. ont testé un programme de six semaines d’exercices du pied court, de travail de la cheville, de renforcement de la hanche et d’étirements. Le programme a modifié deux mesures de la forme de la voûte davantage que dans le groupe témoin.',
+        'Les données les plus solides viennent de programmes qui associent l’exercice du pied court à d’autres exercices, pas du pied court seul. Dans un essai de 2023 sur 52\u00A0personnes aux pieds plats souples, Brijwasi et coll. ont testé un programme de six semaines comprenant\u00A0:',
+        {
+          list: [
+            'Des exercices du pied court.',
+            'Du travail de la cheville.',
+            'Du renforcement de la hanche.',
+            'Des étirements.',
+          ],
+        },
+        'Le programme a modifié deux mesures de la forme de la voûte davantage que dans le groupe témoin.',
         'Une méta-analyse de 2024 de Cheng et coll. a étudié l’entraînement du pied court seul sur plusieurs essais. Les résultats regroupés ne montraient aucune amélioration significative de l’affaissement du naviculaire ni du Foot Posture Index dans l’ensemble. Mais quand les auteurs ont limité l’analyse aux programmes de plus de six semaines, l’affaissement du naviculaire s’est nettement amélioré. La durée de l’entraînement compte.',
         'Pour l’équilibre, un essai randomisé de 2012 de Lynn et coll. a comparé quatre semaines d’entraînement du pied court à quatre semaines de ramassage de serviette chez des adultes en bonne santé. Le groupe du pied court a plus amélioré son équilibre dynamique que le groupe de la serviette.',
-        'Aucune de ces études n’est grande. Les données soutiennent l’exercice du pied court comme partie d’un programme plus large de renforcement du pied, surtout pour les pieds plats et la douleur de voûte. Ce n’est pas une solution à lui seul, et il n’a pas été testé seul comme traitement principal de la fasciite plantaire. Pour la liste complète des exercices, voir [exercices pour pieds plats](/fr/exercices-pieds-plats/) ou [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
+        'Aucune de ces études n’est grande. **Les données soutiennent l’exercice du pied court comme partie d’un programme plus large de renforcement du pied, surtout pour les pieds plats et la douleur de voûte.** Ce n’est pas une solution à lui seul, et il n’a pas été testé seul comme traitement principal de la fasciite plantaire. Pour la liste complète des exercices, voir [exercices pour pieds plats](/fr/exercices-pieds-plats/) ou [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

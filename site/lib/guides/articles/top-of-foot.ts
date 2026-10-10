@@ -27,7 +27,14 @@ export const TOP_OF_FOOT_EN: Guide = {
       h2: 'What causes pain on the top of the foot?',
       keyFact: 'A metatarsal stress fracture may not show up on a plain X-ray for two to three weeks after symptoms start, so an MRI can confirm it earlier (Patel and colleagues, 2011).',
       paragraphs: [
-        '**Extensor tendonitis** is the most common cause. The extensor tendons run along the top of the foot from the shin to the toes. They lift the toes and the foot during walking. When they become irritated, you feel an ache along the top of the foot that gets worse with activity and often hurts when you pull the toes upward against resistance. The usual triggers are tight shoe laces pressing directly on the tendons, a sudden increase in walking or running distance, or shoes with a rigid tongue.',
+        '**Extensor tendonitis** is the most common cause. The extensor tendons run along the top of the foot from the shin to the toes. They lift the toes and the foot during walking. When they become irritated, you feel an ache along the top of the foot that gets worse with activity and often hurts when you pull the toes upward against resistance. The usual triggers are:',
+        {
+          list: [
+            'Tight shoe laces pressing directly on the tendons.',
+            'A sudden increase in walking or running distance.',
+            'Shoes with a rigid tongue.',
+          ],
+        },
         '**Metatarsal stress fracture** is a small crack in one of the long bones of the foot, usually the second or third metatarsal. The pain is more localized than tendonitis, sits over one specific spot, and tends to get worse through the day. Swelling on the top of the foot is common. Stress fractures can take two to three weeks to show on a plain X-ray, so early imaging may need an MRI. This one needs rest, not exercise.',
         '**Dorsal bone spur** (also called a metatarsal exostosis) is a bony bump that forms on top of the midfoot joints, usually where the metatarsals meet the cuneiform bones. It develops gradually from years of compression at those joints. The spur itself may not hurt, but it can press against the shoe tongue or irritate a nerve running over it.',
         '**Gout** can cause sudden, severe pain on the top of the foot, most often at the big toe joint. The joint becomes red, swollen, hot, and extremely tender. Gout is caused by uric acid crystal deposits and needs medical management. Exercise does not help an active gout flare.',
@@ -39,15 +46,23 @@ export const TOP_OF_FOOT_EN: Guide = {
     {
       h2: 'How do you tell these causes apart?',
       paragraphs: [
-        'Location and pattern are the first clues. Extensor tendonitis produces a broad ache along the tendons that worsens when you pull the toes up. A stress fracture hurts in one specific spot and gets worse through the day. Gout comes on suddenly, usually at the big toe joint, with redness and heat. Nerve pain tends to be burning or tingling, not a deep ache.',
+        'Location and pattern are the first clues:',
+        {
+          list: [
+            '**Extensor tendonitis** produces a broad ache along the tendons that worsens when you pull the toes up.',
+            '**A stress fracture** hurts in one specific spot and gets worse through the day.',
+            '**Gout** comes on suddenly, usually at the big toe joint, with redness and heat.',
+            '**Nerve pain** tends to be burning or tingling, not a deep ache.',
+          ],
+        },
         'A clinician can often tell the difference with a physical exam. Resisted toe extension (pulling the toes up against pressure) reproduces tendonitis pain. Point tenderness over one bone with localized swelling suggests a stress fracture. If a stress fracture is suspected, imaging is important because continuing to load a fractured bone can make it worse.',
-        'If the pain is only present in shoes and goes away barefoot, shoe pressure is the most likely factor. If it persists at rest or wakes you at night, something beyond simple tendonitis is worth investigating.',
+        'If the pain is only present in shoes and goes away barefoot, **shoe pressure is the most likely factor.** If it persists at rest or wakes you at night, something beyond simple tendonitis is worth investigating.',
       ],
     },
     {
       h2: 'What helps extensor tendonitis?',
       paragraphs: [
-        'The fastest first step is usually a lacing change. Skip the eyelet directly over the sore spot. Many athletic shoes have enough eyelets that you can thread the lace around the tender area without losing support elsewhere. This removes the direct pressure that started the problem.',
+        '**The fastest first step is usually a lacing change.** Skip the eyelet directly over the sore spot. Many athletic shoes have enough eyelets that you can thread the lace around the tender area without losing support elsewhere. This removes the direct pressure that started the problem.',
         'Shoes with a padded or flexible tongue compress the tendons less. If you wear boots, cleats, or dress shoes with a rigid upper, the pressure from the top of the shoe is often the whole story.',
         'Temporarily reducing the activity that triggered the pain helps. If the pain started when you increased your walking or running distance, back off to the previous level for a week or two, then build back up gradually.',
         'Ice over the sore tendons for 10 to 15 minutes after activity can help settle the irritation in the early days. Anti-inflammatory medication is a short-term option if the pain is interfering with daily life, but it does not speed up the underlying recovery.',
@@ -56,8 +71,9 @@ export const TOP_OF_FOOT_EN: Guide = {
     {
       h2: 'Does exercise help top-of-foot pain?',
       paragraphs: [
-        'No randomized trial has tested exercise specifically for dorsal foot pain or extensor tendonitis. The evidence here is honest: we do not know whether exercise speeds recovery from extensor tendonitis compared with lacing changes and rest alone.',
-        'What exercise can address are contributing factors. The tibialis anterior, the muscle on the front of the shin that lifts the foot, is also an extensor. When it is weak relative to the calf, the smaller extensor tendons on top of the foot take more load during walking. Strengthening the tibialis anterior with toe raises (lifting the front of the foot while standing against a wall) is one way to reduce that imbalance. See [shin splints exercises](/shin-splints-exercises/) for more on the tibialis anterior.',
+        'No randomized trial has tested exercise specifically for dorsal foot pain or extensor tendonitis. The evidence here is honest: **we do not know whether exercise speeds recovery from extensor tendonitis** compared with lacing changes and rest alone.',
+        'What exercise can address are contributing factors. The tibialis anterior, the muscle on the front of the shin that lifts the foot, is also an extensor. When it is weak relative to the calf, the smaller extensor tendons on top of the foot take more load during walking.',
+        'Strengthening the tibialis anterior with toe raises (lifting the front of the foot while standing against a wall) is one way to reduce that imbalance. See [shin splints exercises](/shin-splints-exercises/) for more on the tibialis anterior.',
         'Calf stretching is relevant if ankle dorsiflexion is limited. When the ankle cannot bend enough, the foot compensates in ways that can increase stress on the dorsal structures. A tight calf is also a shared risk factor for [plantar fasciitis](/plantar-fasciitis-exercises/) and forefoot overload.',
         'For dorsal bone spurs and midfoot arthritis, exercise does not change the bony anatomy. Ankle mobility work can help maintain range, and strengthening can reduce symptoms, but the spur or joint degeneration stays. For stress fractures, exercise is the wrong approach until the bone has recovered.',
       ],
@@ -112,9 +128,17 @@ export const TOP_OF_FOOT_EN: Guide = {
       h2: 'When is top-of-foot pain a stress fracture?',
       paragraphs: [
         'A metatarsal stress fracture is the cause you most need to rule out, because continuing to load a fractured bone can turn a small crack into a full break.',
-        'Stress fractures usually develop gradually from repetitive impact. They are more common in runners, military recruits, and people who have suddenly increased their activity. The pain is localized to one spot, gets worse with weight-bearing activity, and may hurt at night. Swelling on the top of the foot over the sore bone is common.',
+        'Stress fractures usually develop gradually from repetitive impact. They are more common in:',
+        {
+          list: [
+            'Runners.',
+            'Military recruits.',
+            'People who have suddenly increased their activity.',
+          ],
+        },
+        'The pain is localized to one spot, gets worse with weight-bearing activity, and may hurt at night. Swelling on the top of the foot over the sore bone is common.',
         'A plain X-ray may not show a stress fracture in the first two to three weeks. If a clinician suspects one, an MRI or bone scan can confirm it earlier. The approach is rest and protected weight-bearing, not exercise. Returning to activity too soon risks a complete fracture.',
-        'If the pain came on after a jump in training volume, sits in one spot, and gets worse through the day, see a clinician before doing any of the exercises on this page.',
+        'If the pain came on after a jump in training volume, sits in one spot, and gets worse through the day, **see a clinician before doing any of the exercises on this page.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -123,7 +147,7 @@ export const TOP_OF_FOOT_EN: Guide = {
       paragraphs: [
         'Gout is an inflammatory condition caused by uric acid crystals depositing in a joint. It classically affects the big toe joint (the first metatarsophalangeal joint), but can hit any joint in the foot, including the midfoot.',
         'A gout flare comes on fast, often overnight. The joint becomes intensely painful, red, hot, and swollen. It looks and feels different from tendonitis or a stress fracture. If you have sudden severe pain in a single joint with redness and heat, this is a reason to see a clinician promptly. Blood tests and sometimes joint fluid analysis confirm the diagnosis.',
-        'Gout needs medical management. Exercise, shoe changes, and stretching do not help an active flare. Between flares, maintaining foot and ankle mobility is reasonable, but the underlying uric acid problem is managed with medication and dietary changes.',
+        '**Gout needs medical management.** Exercise, shoe changes, and stretching do not help an active flare. Between flares, maintaining foot and ankle mobility is reasonable, but the underlying uric acid problem is managed with medication and dietary changes.',
       ],
     },
   ],

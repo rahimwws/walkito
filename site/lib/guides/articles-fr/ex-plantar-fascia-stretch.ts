@@ -57,14 +57,14 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'Quand étirer le fascia plantaire\u00A0?',
       paragraphs: [
-        'Avant votre premier pas le matin. C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la douleur au talon le matin est le signe typique de la fasciite plantaire.',
+        '**Avant votre premier pas le matin.** C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la douleur au talon le matin est le signe typique de la fasciite plantaire.',
         'Le deuxième moment le plus important est avant de vous lever après être resté longtemps assis. Le même raccourcissement se produit au repos. Étirer le fascia avant de le charger réduit ce choc.',
         'Dans l’essai, on demandait aux participants de faire 10\u00A0maintiens de 10\u00A0secondes, trois fois par jour, pendant au moins huit semaines. Les séances les plus importantes étaient celle du matin et celle après une longue période assise. Plus de séances dans la journée étaient encouragées si possible.',
       ],
       cites: [CITE.digiovanni2003, CITE.guideline],
     },
     {
-      h2: 'L’étirement du fascia plantaire aide-t-il vraiment la fasciite plantaire\u00A0?',
+      h2: 'L’étirement du fascia plantaire aide-t-il vraiment en cas de fasciite plantaire\u00A0?',
       keyFact: 'Dans un essai sur 82\u00A0personnes atteintes de fasciite plantaire chronique, les scores de douleur étaient nettement meilleurs dans le groupe de l’étirement du fascia plantaire à huit semaines, pour la pire douleur et pour les premiers pas du matin (DiGiovanni et coll., 2003).',
       paragraphs: [
         'Dans l’essai original de 2003, 82\u00A0personnes atteintes d’une fasciite plantaire chronique depuis plus de dix mois ont été réparties au hasard entre un étirement du fascia plantaire et un étirement classique du tendon d’Achille. À huit semaines, le groupe du fascia plantaire avait un score nettement meilleur au Foot Function Index, qui mesure la douleur et les limitations d’activité. Les auteurs ont qualifié cette différence de cliniquement significative.',
@@ -78,19 +78,23 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'En quoi l’étirement du fascia plantaire diffère-t-il d’un étirement du mollet\u00A0?',
       paragraphs: [
-        'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle externe du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
+        'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle superficiel du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
         'Un mollet raide est à lui seul un facteur de risque de fasciite plantaire. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant. C’est pourquoi la recommandation conseille les deux étirements, pas l’un ou l’autre.',
-        'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/exercises/soleus-stretch/) (en anglais).',
+        'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’étirement du fascia plantaire\u00A0?',
       paragraphs: [
-        'Tirer trop fort sur les orteils. L’étirement doit être ferme sous la voûte, pas douloureux. Si vous grimacez, vous avez dépassé la zone utile. Relâchez jusqu’à sentir une traction sans pointe vive.',
-        'Le sentir dans le mollet plutôt que dans la voûte. Si l’étirement est surtout dans le mollet, le genou est trop tendu ou la traction trop brusque. Croisez le pied plus haut sur le genou opposé pour que la cheville se relâche, et concentrez-vous sur les orteils qui se replient vers l’arrière plutôt que sur tout le pied.',
-        'Sauter l’étirement du matin. C’est la séance qui agit le plus sur le pire moment de la journée. Laissez un mot sur la table de nuit ou mettez un rappel. L’étirement prend environ deux minutes, et il vaut la peine d’être fait avant que le pied touche le sol.',
-        'Faire des rebonds. Restez immobile pendant les 10\u00A0secondes entières. Les rebonds ne laissent pas au fascia le temps de s’allonger et peuvent irriter davantage le tissu.',
+        {
+          list: [
+            '**Tirer trop fort sur les orteils.** L’étirement doit être ferme sous la voûte, pas douloureux. Si vous grimacez, vous avez dépassé la zone utile. Relâchez jusqu’à sentir une traction sans pointe vive.',
+            '**Le sentir dans le mollet plutôt que dans la voûte.** Si l’étirement est surtout dans le mollet, le genou est trop tendu ou la traction trop brusque. Croisez le pied plus haut sur le genou opposé pour que la cheville se relâche, et concentrez-vous sur les orteils qui se replient vers l’arrière plutôt que sur tout le pied.',
+            '**Sauter l’étirement du matin.** C’est la séance qui agit le plus sur le pire moment de la journée. Laissez un mot sur la table de nuit ou mettez un rappel. L’étirement prend environ deux minutes, et il vaut la peine d’être fait avant que le pied touche le sol.',
+            '**Faire des rebonds.** Restez immobile pendant les 10\u00A0secondes entières. Les rebonds ne laissent pas au fascia le temps de s’allonger et peuvent irriter davantage le tissu.',
+          ],
+        },
       ],
     },
     {
@@ -98,7 +102,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       paragraphs: [
         'Si croiser la jambe est inconfortable, gardez les deux pieds au sol et passez une serviette ou une ceinture autour de l’avant du pied. Tirez la serviette vers vous pour que les orteils se replient vers l’arrière. L’étirement est le même, sous un autre angle.',
         'Une version plus difficile est l’étirement du fascia plantaire debout\u00A0: placez l’avant du pied contre un mur, le talon au sol, et penchez-vous doucement vers l’avant. Cela ajoute le poids du corps à l’étirement, et il est plus difficile à doser précisément. Il convient une fois que la version assise est devenue facile et ne réveille pas la douleur.',
-        'C’est la version assise de l’essai que les données soutiennent. Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/exercises/foot-roll/) (en anglais).',
+        '**C’est la version assise de l’essai que les données soutiennent.** Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/fr/exercices/massage-pied-balle/).',
       ],
     },
   ],

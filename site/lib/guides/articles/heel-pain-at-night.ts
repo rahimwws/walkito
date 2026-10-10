@@ -52,7 +52,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     {
       h2: 'Why does your heel hurt at night or at rest?',
       paragraphs: [
-        'Plantar fasciitis causes pain because the fascia stiffens while you sleep and then stretches sharply when you stand. That pain peaks on the first step and gets better as you move. If your heel hurts while you are lying in bed and not bearing weight at all, a different mechanism is usually responsible.',
+        'Plantar fasciitis causes pain because the fascia stiffens while you sleep and then stretches sharply when you stand. That pain peaks on the first step and gets better as you move. **If your heel hurts while you are lying in bed and not bearing weight at all, a different mechanism is usually responsible.**',
         'An 2018 review in American Family Physician lists several causes of heel pain that behave differently from plantar fasciitis. The key distinction: plantar fasciitis pain improves with activity, while pain from stress fractures, nerve entrapment, tumours, and inflammatory conditions does not follow that pattern.',
         'The foot also points downward (plantarflexion) during sleep. That position can shorten the Achilles tendon and calf, which sometimes contributes to discomfort at the heel. Night splints address this by holding the ankle at a neutral angle. But a night splint is a tool for plantar fasciitis, not a substitute for investigating pain that genuinely worsens at rest.',
       ],
@@ -62,7 +62,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       h2: 'Could it be a calcaneal stress fracture?',
       paragraphs: [
         'A calcaneal stress fracture, a hairline crack in the heel bone from repetitive loading, can produce a deep ache that throbs at night. Unlike plantar fasciitis, the pain usually gets worse with activity and does not warm up. It often follows a sudden increase in running, walking, or standing on hard surfaces.',
-        'The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures. Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.',
+        'The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. **Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures.** Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.',
         'A 2011 review in American Family Physician noted that calcaneal stress fractures cause progressively worsening pain after an increase in activity or a change to harder walking surfaces. Night pain and pain at rest were listed among features that distinguish stress fractures from fasciitis.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -73,7 +73,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       paragraphs: [
         'The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Tu (2018) describes tarsal tunnel pain as typically worse with standing, walking, or running, and eased by rest and elevation. That pattern differs from plantar fasciitis, but it is not the same as true rest pain, so tarsal tunnel does not always fit the pattern this page is about.',
         'Baxter\'s nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. A 2025 review states Baxter\'s nerve entrapment may account for up to 20% of chronic heel pain cases (Tedeschi, 2025).',
-        'Nerve entrapment is frequently misdiagnosed as plantar fasciitis because both cause medial heel pain. The difference is the character: burning, tingling, or numbness is a nerve sign. Imaging and nerve conduction studies can help a clinician confirm the diagnosis.',
+        'Nerve entrapment is frequently misdiagnosed as plantar fasciitis because both cause medial heel pain. The difference is the character: **burning, tingling, or numbness is a nerve sign.** Imaging and nerve conduction studies can help a clinician confirm the diagnosis.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -83,7 +83,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       paragraphs: [
         'Spondyloarthropathies, a group of inflammatory conditions including ankylosing spondylitis and psoriatic arthritis, can cause enthesitis, inflammation where a tendon or ligament attaches to bone. The heel is a common site. The pain is often bilateral, may be present at the Achilles insertion or under the heel, and is accompanied by prolonged morning stiffness (over 30 minutes) that improves with movement.',
         'In a 5-to-15-year follow-up of 174 people with plantar fasciitis, bilateral heel pain was a significant predictor of longer symptom duration. The authors noted that unrecognised systemic inflammatory disease could partly explain that finding.',
-        'Rheumatoid arthritis and gout can also produce heel pain. If your heel pain is bilateral, if stiffness lasts more than 30 minutes each morning, or if other joints are involved, a clinician should assess for an inflammatory cause.',
+        'Rheumatoid arthritis and gout can also produce heel pain. **If your heel pain is bilateral, if stiffness lasts more than 30 minutes each morning, or if other joints are involved, a clinician should assess for an inflammatory cause.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -116,7 +116,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       exercises: [
         {
           name: 'Plantar fascia stretch (seated)',
-          evidence: { level: 'strong', why: 'Guideline grade A. DiGiovanni 2003 RCT of 101 people found tissue-specific stretching superior to calf stretching for first-step pain.' },
+          evidence: { level: 'strong', why: 'Guideline grade A. DiGiovanni 2003 RCT of 101 people (82 completed follow-up) found tissue-specific stretching superior to calf stretching for first-step pain.' },
           dose: '10 holds of 10 seconds, each foot',
           how: 'Sit on the edge of the bed. Cross the affected foot over the opposite knee. Pull the toes back toward the shin until you feel a stretch along the arch. Hold for 10 seconds. This is also the morning stretch the guideline recommends doing before your foot touches the floor.',
           often: 'Before bed and before standing in the morning',
@@ -145,8 +145,16 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       h2: 'How is night heel pain different from morning heel pain?',
       paragraphs: [
         'Morning heel pain and night heel pain sound similar but point in different directions. Morning pain, the sharp first-step pull that fades after a few minutes of walking, is the textbook presentation of plantar fasciitis. The tissue stiffened overnight and stretches abruptly under load.',
-        'Night pain, meaning pain that arrives or worsens when you are in bed and not bearing weight, suggests something beyond simple fascial stiffness. The conditions most associated with true rest pain are stress fractures, nerve entrapment, inflammatory arthritis, and rarely bone tumours or infection.',
-        'If you are not sure which pattern you have, a simple test: does the pain get better once you have been walking for 5 to 10 minutes? If yes, the plantar fasciitis pattern is more likely, and the [heel pain in the morning](/heel-pain-in-the-morning/) page is the better starting point. If no, keep reading here and consider seeing a clinician.',
+        'Night pain, meaning pain that arrives or worsens when you are in bed and not bearing weight, suggests something beyond simple fascial stiffness. The conditions most associated with true rest pain are:',
+        {
+          list: [
+            'Stress fractures.',
+            'Nerve entrapment.',
+            'Inflammatory arthritis.',
+            'Rarely, bone tumours or infection.',
+          ],
+        },
+        'If you are not sure which pattern you have, a simple test: **does the pain get better once you have been walking for 5 to 10 minutes?** If yes, the plantar fasciitis pattern is more likely, and the [heel pain in the morning](/heel-pain-in-the-morning/) page is the better starting point. If no, keep reading here and consider seeing a clinician.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },

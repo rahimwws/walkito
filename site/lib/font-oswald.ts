@@ -14,6 +14,8 @@ export const oswald = Oswald({
   // Only Cyrillic is preloaded; the Latin face (for "Walkito" in a headline)
   // is still declared and loads on demand.
   subsets: ['cyrillic'],
+  // 'swap': the hero headline keeps its lines while the face loads because
+  // of 'Anton Caps Fallback' in globals.css, so swapping causes no jump.
   display: 'swap',
   variable: '--font-display',
 });

@@ -38,7 +38,7 @@ export const HAGLUNDS_EN: Guide = {
     {
       h2: "How is Haglund's related to insertional Achilles tendinopathy?",
       paragraphs: [
-        "Haglund's deformity and insertional Achilles tendinopathy often appear together, but they are not the same condition. Insertional tendinopathy is pain at the spot where the Achilles tendon attaches to the heel bone, typically from overload. Haglund's deformity is a structural bone shape. The bump can irritate the tendon from behind, and the tendon\'s insertion can be affected by the same compression that inflames the bursa.",
+        "Haglund's deformity and insertional Achilles tendinopathy often appear together, but **they are not the same condition.** Insertional tendinopathy is pain at the spot where the Achilles tendon attaches to the heel bone, typically from overload. Haglund's deformity is a structural bone shape. The bump can irritate the tendon from behind, and the tendon\'s insertion can be affected by the same compression that inflames the bursa.",
         'The practical link: if you have a Haglund\'s bump and posterior heel pain, the pain may come from the bursa, the tendon insertion, or both. A clinician can differentiate by examining where tenderness is greatest and whether stretching or loading reproduces the pain.',
         'The 2024 Achilles tendinopathy guideline makes a clear split between midportion and insertional disease. For insertional problems, which include cases associated with Haglund\'s, the standard eccentric heel drop protocol needs modification. Deep dorsiflexion, letting the heel drop below the step edge, compresses the tendon against the bone and can flare symptoms.',
       ],
@@ -56,9 +56,18 @@ export const HAGLUNDS_EN: Guide = {
     {
       h2: "What are the conservative options for Haglund's deformity?",
       paragraphs: [
-        'A 2020 narrative review lists the first-line conservative steps: shoe modification (avoiding shoes with rigid heel counters, using open-backed shoes or padding the heel area), heel lifts to reduce Achilles tension, stretching the gastrocnemius and soleus, strengthening the calf, and activity modification.',
+        'A 2020 narrative review lists the first-line conservative steps:',
+        {
+          list: [
+            '**Shoe modification:** avoiding shoes with rigid heel counters, using open-backed shoes or padding the heel area.',
+            '**Heel lifts:** to reduce Achilles tension.',
+            '**Stretching:** the gastrocnemius and soleus.',
+            '**Strengthening:** the calf.',
+            '**Activity modification.**',
+          ],
+        },
         "No randomised controlled trial has tested any of these interventions specifically for Haglund's deformity. The evidence is expert opinion and case series. The 2022 surgical review noted that most authors recommend at least six months of conservative treatment before considering surgery.",
-        'The most immediate change is often the shoe. If a rigid heel counter is pressing on the bump, removing that pressure can reduce symptoms quickly. Backless shoes, shoes with a soft or flexible heel counter, or padding placed inside the shoe around (not over) the bump are practical options.',
+        '**The most immediate change is often the shoe.** If a rigid heel counter is pressing on the bump, removing that pressure can reduce symptoms quickly. Backless shoes, shoes with a soft or flexible heel counter, or padding placed inside the shoe around (not over) the bump are practical options.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -136,7 +145,15 @@ export const HAGLUNDS_EN: Guide = {
       keyFact: 'A 2022 systematic review of 20 studies found both open and endoscopic surgery improved AOFAS function scores, with endoscopic techniques showing shorter recovery (Yuen and colleagues, 2022).',
       paragraphs: [
         'Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 20 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.',
-        "The surgery typically involves removing the bony prominence (calcaneoplasty), excising the inflamed bursa, and in some cases debriding or reattaching the Achilles tendon. Complications can include wound healing problems, nerve injury, and tendon weakening. The decision is between you and your surgeon.",
+        'The surgery typically involves:',
+        {
+          list: [
+            'Removing the bony prominence (calcaneoplasty).',
+            'Excising the inflamed bursa.',
+            'In some cases, debriding or reattaching the Achilles tendon.',
+          ],
+        },
+        "Complications can include wound healing problems, nerve injury, and tendon weakening. The decision is between you and your surgeon.",
         'This page does not recommend for or against surgery. The conservative steps above are where most people start, and many respond well enough to avoid an operation. If six months of shoe modification, exercise, and activity changes have not helped, a foot and ankle specialist can discuss surgical options.',
       ],
       cites: [CITE.yuenHaglund],
@@ -146,7 +163,7 @@ export const HAGLUNDS_EN: Guide = {
       paragraphs: [
         'Shoes do not create the bony prominence. The shape of the calcaneus is partly genetic. But shoes with a rigid, unyielding heel counter can irritate a bump that would otherwise be painless. This is the origin of the name "pump bump," from the rigid backs of pump-style shoes.',
         'Shoes to avoid: anything with a stiff, narrow heel counter that presses on the back of the heel. Shoes to look for: soft or padded heel collars, slightly open or flexible backs, and enough room that the heel counter does not dig in. Heel lifts inside the shoe can also shift the Achilles tendon away from the bump slightly.',
-        'Shoe modification is the most immediately actionable step and the one most consistently recommended across the expert-opinion literature. If you can remove the pressure, you can often reduce the pain.',
+        'Shoe modification is the most immediately actionable step and the one most consistently recommended across the expert-opinion literature. **If you can remove the pressure, you can often reduce the pain.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

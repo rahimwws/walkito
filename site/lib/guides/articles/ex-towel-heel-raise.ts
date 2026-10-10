@@ -30,7 +30,15 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     {
       h2: 'What does a towel heel raise work?',
       paragraphs: [
-        'A towel heel raise works the gastrocnemius and soleus (the two calf muscles), the Achilles tendon, and the plantar fascia. The rolled towel bends the toes upward at the top of the raise, which pulls on the plantar fascia through the windlass mechanism. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load.',
+        'A towel heel raise works:',
+        {
+          list: [
+            'The gastrocnemius and soleus (the two calf muscles).',
+            'The Achilles tendon.',
+            'The plantar fascia.',
+          ],
+        },
+        'The rolled towel bends the toes upward at the top of the raise, which pulls on the plantar fascia through the windlass mechanism. Without the towel, the exercise mainly trains the calf. With it, **the fascia takes part of the load.**',
         'This is why the Rathleff trial used the towel specifically for plantar fasciitis instead of a plain heel raise. The goal is to load the calf-Achilles-fascia chain together. If your pain is in the Achilles tendon rather than under the foot, an [eccentric heel drop](/exercises/eccentric-heel-drops/) without the towel is the better starting point.',
       ],
       cites: [CITE.rathleff],
@@ -39,7 +47,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       h2: 'How do you do the towel heel raise?',
       paragraphs: [
         'Roll a small hand towel into a cylinder about the width of your fist. Place it on the edge of a step. Stand on one foot with all five toes on the towel and the ball of the foot on the step. Hold a wall or rail for balance.',
-        'Rise up over three seconds, pushing through the big toe. Hold at the top for two seconds. Lower over three seconds, letting the heel sink slightly below the step. That slow tempo is part of the protocol. Fast reps reduce the load on the tendon and fascia.',
+        'Rise up over three seconds, pushing through the big toe. Hold at the top for two seconds. Lower over three seconds, letting the heel sink slightly below the step. **That slow tempo is part of the protocol.** Fast reps reduce the load on the tendon and fascia.',
         'In the Rathleff trial, participants added weight with a backpack once bodyweight alone was no longer enough to make the last rep hard. "12RM" means the heaviest load you can lift for exactly 12 controlled reps.',
       ],
       exercises: [
@@ -80,7 +88,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     {
       h2: 'What are the common mistakes with the towel heel raise?',
       paragraphs: [
-        'Going too fast is the most common mistake. A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.',
+        '**Going too fast is the most common mistake.** A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.',
         'Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel instead of a bath towel.',
         'Starting on one leg when both-leg raises are still hard leads to poor form and compensation. If a single-leg raise on a step is too much right now, start with [double-leg calf raises](/exercises/calf-raises/) on the floor and build up.',
       ],
@@ -88,7 +96,16 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     {
       h2: 'Easier and harder versions',
       paragraphs: [
-        'If the full towel heel raise on a step is too hard, work backward through the calf chain. [Seated heel raises](/exercises/calf-raises/) are the lowest load. Double-leg standing raises come next. Then a heel raise hold at the top. Then the single-leg towel raise on a step. Each step should feel manageable for two sessions before moving up.',
+        'If the full towel heel raise on a step is too hard, work backward through the calf chain:',
+        {
+          list: [
+            '[Seated heel raises](/exercises/calf-raises/) are the lowest load.',
+            'Double-leg standing raises come next.',
+            'Then a heel raise hold at the top.',
+            'Then the single-leg towel raise on a step.',
+          ],
+        },
+        'Each step should feel manageable for two sessions before moving up.',
         'If bodyweight on one leg is too easy, add load. The Rathleff trial used a backpack with books or water bottles. Gym access opens up a calf raise machine or a weighted vest. The goal is that the last rep of each set is genuinely the last one you can do with good form.',
       ],
     },
@@ -98,7 +115,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       paragraphs: [
         'The Rathleff 2015 trial is the only randomized trial that tested the towel heel raise specifically for plantar fasciitis. In 48 people with ultrasound-confirmed plantar fasciitis, the heel-raise group scored 29 points better on the Foot Function Index at three months than the stretching-only group. By twelve months, both groups had converged.',
         'The 2023 heel pain guideline reviewed this and other evidence and gave strength training a grade of **B** and stretching a grade of **A**. Both are recommended. The guideline does not single out the towel variant, but it is the only strength exercise tested in its own plantar-fasciitis trial.',
-        'Nothing in the evidence says this exercise should replace stretching. The strongest approach is both: a [plantar fascia stretch](/exercises/plantar-fascia-stretch/) for morning stiffness and the loaded raise for building capacity. For the full list of exercises and how they fit together, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'Nothing in the evidence says this exercise should replace stretching. **The strongest approach is both:** a [plantar fascia stretch](/exercises/plantar-fascia-stretch/) for morning stiffness and the loaded raise for building capacity. For the full list of exercises and how they fit together, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
       ],
       sourceNote:
         'Rathleff 2015: FFI difference 29 points at 3 months (95% CI 6-52, p = 0.016). At 12 months: 22 vs. 16, no significant difference.',

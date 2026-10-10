@@ -39,7 +39,7 @@ export const BEST_APP_FR: Guide = {
       h2: 'Que doit vraiment faire une application pour la fasciite plantaire\u00A0?',
       keyFact: 'La recommandation clinique de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet A, sa meilleure note, et le renforcement musculaire B (Koc et coll., 2023).',
       paragraphs: [
-        'Une application utile pour la fasciite plantaire doit proposer des exercices qui correspondent à ce que soutient la recherche. La recommandation clinique de 2023 sur la douleur au talon note les preuves derrière chaque approche. Les étirements du fascia plantaire et du mollet obtiennent un A, la meilleure note. Le renforcement musculaire obtient un B. Les deux devraient donc être dans l’application, pas un seul.',
+        'Une application utile pour la fasciite plantaire doit proposer des exercices qui correspondent à ce que soutient la recherche. La recommandation clinique de 2023 sur la douleur au talon note les preuves derrière chaque approche. Les étirements du fascia plantaire et du mollet obtiennent un A, la meilleure note. Le renforcement musculaire obtient un B. **Les deux devraient donc être dans l’application, pas un seul.**',
         'Au-delà de la liste d’exercices, voici ce qui vaut la peine d’être vérifié avant de vous abonner\u00A0:',
       ],
       bullets: [
@@ -122,8 +122,24 @@ export const BEST_APP_FR: Guide = {
         'Exakt Health est conçue pour les coureurs, et ça se voit. L’application propose plus de 15\u00A0plans de rééducation de blessures, de la fasciite plantaire à la tendinopathie d’Achille en passant par les lésions du ménisque, ainsi que des plans d’entraînement à la course, du canapé au marathon. Chaque plan de rééducation se termine par une phase structurée de reprise de la course, ce que la plupart des applications pour les douleurs de pied ne proposent pas.',
         'Elle est certifiée comme dispositif médical dans l’UE, ce qui veut dire qu’elle a passé un examen réglementaire sur la sécurité et l’usage prévu. Elle a été conçue par des kinésithérapeutes du sport diplômés et des entraîneurs de course. L’application compte plus de 600\u00A0vidéos d’exercices et adapte son plan à mesure que vous passez les niveaux.',
         'À 19,99\u00A0$ par mois ou 59,99\u00A0$ pour six mois, Exakt n’est pas bon marché, mais l’étendue des problèmes couverts et la qualité de ses plans de rééducation sont difficiles à égaler parmi les applications en libre-service. L’essai gratuit de 7\u00A0jours permet de voir toute l’application avant de payer. Elle est disponible en anglais, en français, en allemand et en espagnol, sur iOS et Android.',
-        'Là où Exakt est plus forte que Walkito\u00A0: plus de types de blessures couverts (plus de 15, contre la douleur au talon, les pieds plats et les tibias), un programme complet de reprise de la course, la disponibilité sur Android, la certification de dispositif médical dans l’UE, et une base d’utilisateurs établie avec une note de 4,8 sur 125\u00A0avis iOS.',
-        'Là où Walkito est différent\u00A0: Walkito ajuste la séance de chaque jour à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance, teste l’asymétrie gauche-droite tous les 14\u00A0jours, et se concentre sur la douleur au talon et au pied plutôt que sur toute la gamme des blessures de course.',
+        'Là où Exakt est plus forte que Walkito\u00A0:',
+        {
+          list: [
+            'Plus de types de blessures couverts (plus de 15, contre la douleur au talon, les pieds plats et les tibias).',
+            'Un programme complet de reprise de la course.',
+            'La disponibilité sur Android.',
+            'La certification de dispositif médical dans l’UE.',
+            'Une base d’utilisateurs établie avec une note de 4,8 sur 125\u00A0avis iOS.',
+          ],
+        },
+        'Là où Walkito se distingue\u00A0:',
+        {
+          list: [
+            'Walkito ajuste la séance de chaque jour à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance.',
+            'Elle teste l’asymétrie gauche-droite tous les 14\u00A0jours.',
+            'Elle se concentre sur la douleur au talon et au pied plutôt que sur toute la gamme des blessures de course.',
+          ],
+        },
       ],
     },
     {
@@ -131,14 +147,23 @@ export const BEST_APP_FR: Guide = {
       paragraphs: [
         'Hinge Health est la plus grande plateforme numérique pour les troubles musculo-squelettiques aux États-Unis, avec plus de 2\u00A0millions de membres. Si votre employeur ou votre assurance santé la prend en charge, elle est gratuite pour vous et offre quelque chose qu’aucune application en libre-service ne peut égaler\u00A0: une équipe soignante dédiée qui comprend des kinésithérapeutes, des médecins orthopédistes et d’autres spécialistes.',
         'L’application couvre une large gamme de problèmes articulaires et musculaires, pas seulement les pieds. Elle inclut aussi l’appareil portable Enso pour soulager la douleur aiguë. La note de 4,9 sur 168\u00A0000\u00A0avis iOS reflète la combinaison d’exercices guidés, d’accompagnement humain et de gratuité.',
-        'Le hic, c’est l’accès. Vous ne pouvez pas acheter Hinge Health sur l’App Store. Il faut être couvert par l’un des plus de 2\u00A0800\u00A0employeurs ou assurances santé qui la proposent. Si vous y avez accès, c’est probablement l’option la plus complète de cette liste. Sinon, ce n’est pas une option du tout.',
+        '**Le hic, c’est l’accès.** Vous ne pouvez pas acheter Hinge Health sur l’App Store. Il faut être couvert par l’un des plus de 2\u00A0800\u00A0employeurs ou assurances santé qui la proposent.',
+        'Si vous y avez accès, c’est probablement l’option la plus complète de cette liste. Sinon, ce n’est pas une option du tout.',
         'Hinge Health n’est pas spécialisée dans le pied. Ses usages principaux sont les douleurs du dos, du genou, de la hanche et du cou. Pour la fasciite plantaire en particulier, une application plus ciblée peut être un meilleur point de départ.',
       ],
     },
     {
       h2: 'Prehab\u00A0: la plus grande bibliothèque d’exercices',
       paragraphs: [
-        'L’application The Prehab Guys est conçue par des docteurs en kinésithérapie (Doctors of Physical Therapy) et a la plus grande bibliothèque d’exercices de ce comparatif\u00A0: plus de 55\u00A0programmes, plus de 170\u00A0séances et plus de 4\u00A0000\u00A0vidéos d’exercices. Elle a un programme de rééducation spécifique pour la fasciite plantaire. La fonction Body Scan vous interroge sur votre douleur, vos objectifs et vos besoins de mouvement, puis recommande un programme.',
+        'L’application The Prehab Guys est conçue par des docteurs en kinésithérapie (Doctors of Physical Therapy) et a la plus grande bibliothèque d’exercices de ce comparatif\u00A0:',
+        {
+          list: [
+            'Plus de 55\u00A0programmes.',
+            'Plus de 170\u00A0séances.',
+            'Plus de 4\u00A0000\u00A0vidéos d’exercices.',
+          ],
+        },
+        'Elle a un programme de rééducation spécifique pour la fasciite plantaire. La fonction Body Scan vous interroge sur votre douleur, vos objectifs et vos besoins de mouvement, puis recommande un programme.',
         'À 49\u00A0$ par mois ou environ 200\u00A0$ par an, c’est l’option en libre-service la plus chère ici. L’essai gratuit de 7\u00A0jours ne concerne que l’offre annuelle. Les séances durent environ 20\u00A0minutes, plus que les 3 à 10\u00A0minutes des applications centrées sur le pied. La qualité des vidéos est régulièrement saluée dans les avis.',
         'Prehab convient bien si vous avez mal à plusieurs endroits et voulez une seule application qui couvre tout, des épaules aux pieds. Elle est moins ciblée que les applications conçues spécifiquement pour la fasciite plantaire, et elle n’adapte pas les séances quotidiennes à votre douleur du matin.',
         'Elle n’existe que sur iOS et qu’en anglais.',
@@ -148,7 +173,15 @@ export const BEST_APP_FR: Guide = {
       h2: 'PlantarCare\u00A0: le suivi gratuit',
       paragraphs: [
         'PlantarCare est gratuite, sans achats intégrés, et ne demande pas de compte. Elle se concentre entièrement sur la douleur au talon et la fasciite plantaire. Vous notez votre douleur aux premiers pas du matin et votre pire douleur de la journée, et l’application vous fait passer par des étapes de récupération avec des étirements guidés, du travail du mollet, des montées sur pointes et des rappels pour la glace adaptés à votre étape.',
-        'Pour une application gratuite, elle fait étonnamment bien beaucoup de choses\u00A0: suivi de la douleur dans le temps, journal des chaussures et de la charge, et rappels de signaux d’alerte qui vous disent quand consulter un professionnel de santé. En contrepartie, elle est nouvelle, n’a pas encore de notes, et ne décrit pas la recherche derrière le choix de ses exercices.',
+        'Pour une application gratuite, elle fait étonnamment bien beaucoup de choses\u00A0:',
+        {
+          list: [
+            'Suivi de la douleur dans le temps.',
+            'Journal des chaussures et de la charge.',
+            'Rappels de signaux d’alerte qui vous disent quand consulter un professionnel de santé.',
+          ],
+        },
+        'En contrepartie, elle est nouvelle, n’a pas encore de notes, et ne décrit pas la recherche derrière le choix de ses exercices.',
         'PlantarCare est un point de départ raisonnable si vous voulez suivre votre douleur gratuitement et faire des étirements de base sans vous engager dans un abonnement. Elle n’existe que sur iOS.',
       ],
     },
@@ -171,9 +204,28 @@ export const BEST_APP_FR: Guide = {
     {
       h2: 'Walkito\u00A0: ce qu’elle fait et ce qu’elle ne fait pas',
       paragraphs: [
-        'Walkito est un programme d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes et n’existe que sur iOS.',
-        'Ce qu’elle fait\u00A0: elle construit un plan hebdomadaire à partir de vos réponses sur la douleur, les objectifs et votre emploi du temps. Chaque matin, un bilan ajuste la séance du jour à l’état de votre pied. Des tests tous les 14\u00A0jours mesurent les montées sur pointes, le maintien de la voûte et l’équilibre sur une jambe, et comparent la gauche et la droite. Les séances durent 3, 5 ou 10\u00A0minutes. Les exercices suivent la recommandation de 2023 sur la douleur au talon et l’essai de Rathleff 2015. Elle se connecte à Apple Santé pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone.',
-        'Ce qu’elle ne fait pas\u00A0: elle ne diagnostique pas votre douleur, ce n’est pas un dispositif médical, il n’y a pas de professionnel de santé de l’autre côté et elle n’est pas disponible sur Android. Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15\u00A0types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.',
+        'Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes et n’existe que sur iOS.',
+        'Ce qu’elle fait\u00A0:',
+        {
+          list: [
+            'Elle construit un plan hebdomadaire à partir de vos réponses sur la douleur, les objectifs et votre emploi du temps.',
+            'Chaque matin, un bilan ajuste la séance du jour à l’état de votre pied.',
+            'Des tests tous les 14\u00A0jours mesurent les montées sur pointes, le maintien de la voûte et l’équilibre sur une jambe, et comparent la gauche et la droite.',
+            'Les séances durent 3, 5 ou 10\u00A0minutes.',
+            'Les exercices suivent la recommandation de 2023 sur la douleur au talon et l’essai de Rathleff 2015.',
+            'Elle se connecte à Apple Santé pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone.',
+          ],
+        },
+        'Ce qu’elle ne fait pas\u00A0:',
+        {
+          list: [
+            'Elle ne diagnostique pas votre douleur.',
+            'Ce n’est pas un dispositif médical.',
+            'Il n’y a pas de professionnel de santé de l’autre côté.',
+            'Elle n’est pas disponible sur Android.',
+          ],
+        },
+        'Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15\u00A0types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.',
         'À 44,99\u00A0$ par an ou 7,99\u00A0$ par semaine, le prix annuel est plus bas que celui de la plupart des concurrentes. Le prix hebdomadaire est plus élevé par rapport à l’annuel, ce qui est classique pour un abonnement.',
       ],
       cites: [CITE.guideline, CITE.rathleff],

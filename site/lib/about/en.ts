@@ -22,7 +22,8 @@ export const ABOUT_EN: About = {
     {
       h2: 'What is Walkito?',
       paragraphs: [
-        `Walkito is an iPhone app that builds your exercise plan one week at a time around goals you can measure. There are five goals: pain-free mornings (morning pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days in a row), a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of balance on one leg, and a gap of less than ${PROGRAM.goals.gapPercent}% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.`,
+        `Walkito is an iPhone app that builds your exercise plan one week at a time around goals you can measure.`,
+        `There are five goals: pain-free mornings (morning pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days in a row), a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of balance on one leg, and a gap of less than ${PROGRAM.goals.gapPercent}% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.`,
         `You pick ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes. Each day's session adapts to how your morning went. Every ${PROGRAM.testEveryDays} days, a short test shows whether your numbers are moving. Once you reach your first goal, the test comes every ${PROGRAM.testEveryDaysAfterGoal} days.`,
         'The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](/program/).',
         'Walkito is in English, Russian and Spanish.',
@@ -32,7 +33,7 @@ export const ABOUT_EN: About = {
       h2: 'How we research',
       id: 'how-we-research',
       paragraphs: [
-        'Walkito Research writes the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
+        'Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
         'We read the full paper, not just the abstract, before a number from it goes on a page. Every dose, grade and figure links to the study behind it, so you can open it and check.',
         'Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.',
         'Walkito has no sponsors, no affiliate links and no paid placement. Nothing is on a page because someone paid for it. We recheck a page when new research on its topic comes out. Every guide follows five rules:',
@@ -70,7 +71,7 @@ export const ABOUT_EN: About = {
       h2: 'Has a clinician reviewed Walkito’s guides?',
       id: 'clinician',
       paragraphs: [
-        'No licensed clinician has reviewed Walkito’s guides yet. Walkito Research writes them from the published research cited on each page.',
+        'No licensed clinician has reviewed Walkito’s guides yet. Rahim and Rahman write them from the published research cited on each page.',
         'When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
       ],
     },

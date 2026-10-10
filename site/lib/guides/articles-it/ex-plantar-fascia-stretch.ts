@@ -59,7 +59,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     {
       h2: 'Quando fare l’allungamento della fascia plantare?',
       paragraphs: [
-        'Prima del primo passo del mattino. È l’indicazione più ripetuta sia nello studio sia nella linea guida del 2023. La fascia plantare si accorcia durante la notte mentre il piede è rilassato. I primi passi della giornata la tirano di colpo e con forza, ed è per questo che il dolore al tallone del mattino è il segno tipico della fascite plantare.',
+        '**Prima del primo passo del mattino.** È l’indicazione più ripetuta sia nello studio sia nella linea guida del 2023. La fascia plantare si accorcia durante la notte mentre il piede è rilassato. I primi passi della giornata la tirano di colpo e con forza, ed è per questo che il dolore al tallone del mattino è il segno tipico della fascite plantare.',
         'Il secondo momento più importante è prima di alzarti dopo essere stato seduto a lungo. Lo stesso accorciamento avviene a riposo. Allungare la fascia prima di caricarla riduce quello strappo.',
         'Nello studio, ai partecipanti si chiedeva di fare 10\u00A0tenute da 10\u00A0secondi, tre volte al giorno, per almeno otto settimane. Le sessioni più importanti erano quella del mattino e quella dopo essere stati seduti a lungo. Se possibile, si incoraggiavano altre sessioni durante la giornata.',
       ],
@@ -80,19 +80,23 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     {
       h2: 'Che differenza c’è tra allungamento della fascia plantare e del polpaccio?',
       paragraphs: [
-        'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il grande muscolo esterno del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
+        'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il muscolo più grande e superficiale del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
         'Un polpaccio rigido è di per sé un fattore di rischio per la fascite plantare. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte. Per questo la linea guida consiglia entrambi gli allungamenti, non uno o l’altro.',
-        'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/exercises/soleus-stretch/) (in inglese).',
+        'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
     {
       h2: 'Quali sono gli errori più comuni nell’allungamento della fascia plantare?',
       paragraphs: [
-        'Tirare le dita troppo forte. L’allungamento deve essere deciso sotto l’arco, non doloroso. Se fai smorfie, sei oltre il punto utile. Torna indietro finché senti una tensione senza una fitta.',
-        'Sentirlo nel polpaccio invece che nell’arco. Se l’allungamento è soprattutto nel polpaccio, il ginocchio è troppo teso o stai tirando troppo. Accavalla il piede più in alto sul ginocchio opposto così la caviglia si rilassa, e concentrati sulle dita che si piegano indietro più che su tutto il piede.',
-        'Saltare l’allungamento del mattino. È la sessione che incide di più sul momento peggiore della giornata. Lascia un biglietto sul comodino o metti un promemoria. L’allungamento richiede circa due minuti, e vale la pena farlo prima che il piede tocchi terra.',
-        'Molleggiare. Resta fermo per tutti i 10\u00A0secondi. Molleggiare non dà alla fascia il tempo di allungarsi e può irritare ancora di più il tessuto.',
+        {
+          list: [
+            '**Tirare le dita troppo forte.** L’allungamento deve essere deciso sotto l’arco, non doloroso. Se fai smorfie, sei oltre il punto utile. Torna indietro finché senti una tensione senza una fitta.',
+            '**Sentirlo nel polpaccio invece che nell’arco.** Se l’allungamento è soprattutto nel polpaccio, il ginocchio è troppo teso o stai tirando troppo. Accavalla il piede più in alto sul ginocchio opposto così la caviglia si rilassa, e concentrati sulle dita che si piegano indietro più che su tutto il piede.',
+            '**Saltare l’allungamento del mattino.** È la sessione che incide di più sul momento peggiore della giornata. Lascia un biglietto sul comodino o metti un promemoria. L’allungamento richiede circa due minuti, e vale la pena farlo prima che il piede tocchi terra.',
+            '**Molleggiare.** Resta fermo per tutti i 10\u00A0secondi. Molleggiare non dà alla fascia il tempo di allungarsi e può irritare ancora di più il tessuto.',
+          ],
+        },
       ],
     },
     {
@@ -100,7 +104,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
       paragraphs: [
         'Se accavallare la gamba è scomodo, tieni entrambi i piedi a terra e usa un asciugamano o una cintura passata intorno all’avampiede. Tira l’asciugamano verso di te così le dita si piegano indietro. L’allungamento è lo stesso, solo da un’altra angolazione.',
         'Una versione più difficile è l’allungamento della fascia plantare in piedi: appoggia l’avampiede contro il muro con il tallone a terra e sporgiti piano in avanti. Così aggiungi il peso del corpo all’allungamento ed è più difficile dosarlo con precisione. Va bene quando la versione da seduto ti sembra facile e non provoca dolore.',
-        'La versione da seduto dello studio è quella sostenuta dalle prove. Inizia da lì. Tutti gli allungamenti e gli esercizi di forza per il dolore al tallone sono in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Per far rotolare la pianta del piede dopo gli allungamenti, vedi [massaggio con la pallina](/exercises/foot-roll/) (in inglese).',
+        '**La versione da seduto dello studio è quella sostenuta dalle prove.** Inizia da lì. Tutti gli allungamenti e gli esercizi di forza per il dolore al tallone sono in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Per far rotolare la pianta del piede dopo gli allungamenti, vedi [massaggio con la pallina](/it/esercizi/massaggio-pallina-piede/).',
       ],
     },
   ],

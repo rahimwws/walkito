@@ -57,7 +57,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     {
       h2: 'Quando alongar a fáscia plantar?',
       paragraphs: [
-        'Antes do primeiro passo da manhã. É a instrução mais repetida, tanto no ensaio quanto na diretriz de 2023. A fáscia plantar encurta durante a noite enquanto o pé está relaxado. Os primeiros passos do dia a puxam de repente e com força, e é por isso que a dor no calcanhar pela manhã é a marca registrada da fascite plantar.',
+        '**Antes do primeiro passo da manhã.** É a instrução mais repetida, tanto no ensaio quanto na diretriz de 2023. A fáscia plantar encurta durante a noite enquanto o pé está relaxado. Os primeiros passos do dia a puxam de repente e com força, e é por isso que a dor no calcanhar pela manhã é a marca registrada da fascite plantar.',
         'O segundo momento mais importante é antes de levantar depois de ficar muito tempo sentado. O mesmo encurtamento acontece no repouso. Alongar a fáscia antes de colocar carga nela diminui esse tranco.',
         'No ensaio, os participantes deviam fazer 10\u00A0vezes de 10\u00A0segundos, três vezes por dia, por pelo menos oito semanas. As sessões mais importantes eram a da manhã e a depois de ficar muito tempo sentado. Mais sessões ao longo do dia eram incentivadas, quando possível.',
       ],
@@ -78,19 +78,23 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     {
       h2: 'Qual a diferença entre o alongamento da fáscia plantar e o de panturrilha?',
       paragraphs: [
-        'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais externo da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para carregar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
+        'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais superficial da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para tensionar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
         'Uma panturrilha tensa é por si só um fator de risco para fascite plantar. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, foi o fator de risco independente mais forte. É por isso que a diretriz recomenda os dois alongamentos, e não um ou outro.',
-        'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês).',
+        'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
     {
       h2: 'Quais são os erros comuns no alongamento da fáscia plantar?',
       paragraphs: [
-        'Puxar os dedos com força demais. O alongamento deve ser firme embaixo do arco, não doloroso. Se você está fazendo careta, passou da amplitude útil. Volte até sentir um puxão sem nada agudo.',
-        'Sentir na panturrilha em vez de no arco. Se o alongamento fica mais na panturrilha, o joelho está esticado demais ou o puxão está forte demais. Cruze o pé mais alto sobre o outro joelho para o tornozelo relaxar, e foque nos dedos dobrando para trás, não no pé inteiro.',
-        'Pular o alongamento da manhã. É a sessão que mais faz diferença no pior momento do dia. Deixe um bilhete no criado-mudo ou coloque um lembrete. O alongamento leva cerca de dois minutos, e vale a pena fazer antes de o pé tocar o chão.',
-        'Dar trancos. Fique parado durante os 10\u00A0segundos inteiros. Os trancos não dão tempo para a fáscia alongar e podem irritar ainda mais o tecido.',
+        {
+          list: [
+            '**Puxar os dedos com força demais.** O alongamento deve ser firme embaixo do arco, não doloroso. Se você está fazendo careta, passou da amplitude útil. Volte até sentir um puxão sem nada agudo.',
+            '**Sentir na panturrilha em vez de no arco.** Se o alongamento fica mais na panturrilha, o joelho está esticado demais ou o puxão está forte demais. Cruze o pé mais alto sobre o outro joelho para o tornozelo relaxar, e foque nos dedos dobrando para trás, não no pé inteiro.',
+            '**Pular o alongamento da manhã.** É a sessão que mais faz diferença no pior momento do dia. Deixe um bilhete no criado-mudo ou coloque um lembrete. O alongamento leva cerca de dois minutos, e vale a pena fazer antes de o pé tocar o chão.',
+            '**Dar trancos.** Fique parado durante os 10\u00A0segundos inteiros. Os trancos não dão tempo para a fáscia alongar e podem irritar ainda mais o tecido.',
+          ],
+        },
       ],
     },
     {
@@ -98,7 +102,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
       paragraphs: [
         'Se cruzar a perna for desconfortável, mantenha os dois pés no chão e passe uma toalha ou um cinto em volta da parte da frente do pé. Puxe a toalha em sua direção para os dedos dobrarem para trás. O alongamento é o mesmo, só de outro ângulo.',
         'Uma versão mais difícil é o alongamento da fáscia plantar em pé: apoie a parte da frente do pé na parede, com o calcanhar no chão, e incline o corpo para a frente com cuidado. Isso coloca o peso do corpo no alongamento e é mais difícil de dosar com precisão. Funciona quando a versão sentada fica fácil e não provoca dor.',
-        'A versão sentada, do ensaio, é a que tem evidência por trás. Comece por ela. O conjunto completo de alongamentos e exercícios de força para dor no calcanhar está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Para rolar a sola do pé depois de uma sessão de alongamento, veja [rolar o pé na bolinha](/exercises/foot-roll/) (em inglês).',
+        '**A versão sentada, do ensaio, é a que tem evidência por trás.** Comece por ela. O conjunto completo de alongamentos e exercícios de força para dor no calcanhar está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Para rolar a sola do pé depois de uma sessão de alongamento, veja [rolar o pé na bolinha](/pt/exercicios/massagem-pe-bolinha/).',
       ],
     },
   ],

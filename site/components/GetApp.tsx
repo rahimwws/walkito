@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/csr/ArrowRight';
 import { XIcon } from '@phosphor-icons/react/dist/csr/X';
 import type { ReactNode } from 'react';
 
@@ -63,12 +64,16 @@ export function GetAppButton({
 }
 
 /**
- * The desktop dialog: a QR code for the phone, and both stores as links.
+ * The desktop dialog: "Scan to download Walkito", and under it one grey panel
+ * with the app's Home screen, the QR code over its corner with the icon in the
+ * middle, and both stores as a row of links.
  *
  * The code points at `/get/`, which looks at the phone that opened it and goes
- * on to the App Store or Google Play. It is drawn on the server (`lib/qr.ts`),
- * so this component only lays it out. A native `<dialog>`: focus is trapped,
- * Escape closes it, and the close button is a form submit that needs no script.
+ * on to the App Store or Google Play. It is drawn on the server (`lib/qr.ts`,
+ * high correction, its middle cleared for the icon), so this component only
+ * lays it out. A native `<dialog>`: focus is trapped, Escape closes it, and the
+ * close button is a form submit that needs no script. No star ratings beside
+ * the stores: the listing has none yet.
  */
 export function GetAppDialog({
   qr,
@@ -95,39 +100,55 @@ export function GetAppDialog({
       }}
     >
       <div className="get-card">
-        <form method="dialog">
-          <button className="get-close" aria-label={words.close}>
-            <XIcon size={20} weight="bold" aria-hidden />
-          </button>
-        </form>
-
-        <img className="get-icon" src="/icon.png" alt="" width={64} height={64} />
-        <h2 id="get-dialog-title">{words.title}</h2>
-
-        <div className="get-qr">
-          <svg viewBox={`0 0 ${box} ${box}`} role="img" aria-label={words.scan} shapeRendering="crispEdges">
-            <rect width={box} height={box} fill="#fff" />
-            <path d={qr.d} transform={`translate(${pad} ${pad})`} fill="#111114" />
-          </svg>
+        <div className="get-head">
+          <h2 id="get-dialog-title">{words.title}</h2>
+          <form method="dialog">
+            <button className="get-close" aria-label={words.close}>
+              <XIcon size={26} aria-hidden />
+            </button>
+          </form>
         </div>
-        <p className="get-scan">{words.scan}</p>
 
-        <div className="get-stores">
-          <a className="get-store" href={ios}>
-            <AppleLogo size={18} />
-            {words.appStore}
-          </a>
-          {android ? (
-            <a className="get-store" href={android}>
-              <GooglePlayLogo size={18} />
-              {words.play}
+        <div className="get-panel">
+          <div className="get-stage">
+            <img
+              className="get-phone"
+              src="/hero/phone-home.webp"
+              srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+              sizes="230px"
+              width={751}
+              height={1550}
+              alt=""
+              loading="lazy"
+            />
+            <div className="get-qr">
+              <svg viewBox={`0 0 ${box} ${box}`} role="img" aria-label={words.scan} shapeRendering="crispEdges">
+                <rect width={box} height={box} fill="#fff" />
+                <path d={qr.d} transform={`translate(${pad} ${pad})`} fill="#111114" />
+              </svg>
+              <img className="get-qr-icon" src="/icon.png" alt="" width={64} height={64} />
+            </div>
+          </div>
+
+          <div className="get-stores">
+            <a className="get-store" href={ios}>
+              <AppleLogo size={22} />
+              {words.appStore}
+              <ArrowRightIcon size={18} weight="bold" aria-hidden />
             </a>
-          ) : (
-            <span className="get-store get-store-soon" aria-disabled="true">
-              <GooglePlayLogo size={18} />
-              {words.playSoon}
-            </span>
-          )}
+            {android ? (
+              <a className="get-store" href={android}>
+                <GooglePlayLogo size={22} />
+                {words.play}
+                <ArrowRightIcon size={18} weight="bold" aria-hidden />
+              </a>
+            ) : (
+              <span className="get-store get-store-soon" aria-disabled="true">
+                <GooglePlayLogo size={22} />
+                {words.playSoon}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </dialog>

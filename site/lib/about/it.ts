@@ -25,8 +25,8 @@ export const ABOUT_IT: About = {
       h2: 'Cos’è Walkito?',
       paragraphs: [
         `Walkito è un’app per iPhone che costruisce il tuo piano di esercizi una settimana alla volta intorno a obiettivi che puoi misurare. Gli obiettivi sono cinque: mattine senza dolore (dolore del mattino a ${PAIN_GOAL_MAX}/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila), tenere l’arco per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, ${PROGRAM.goals.calfRaises} sollevamenti sulle punte su una gamba, ${PROGRAM.goals.balanceSeconds}\u00A0secondi di equilibrio su una gamba, e una differenza di meno del ${PROGRAM.goals.gapPercent}% tra lato sinistro e destro. Inizi con al massimo tre. Se qualcosa fa male, prima viene il dolore.`,
-        `Scegli ${either(PROGRAM.daysPerWeek)} giorni di allenamento a settimana e sessioni da ${either(PROGRAM.sessionMinutes)}\u00A0minuti. La sessione di ogni giorno si adatta a com’è andata la tua mattina. Ogni ${PROGRAM.testEveryDays}\u00A0giorni, un breve test mostra se i tuoi numeri si muovono. Quando raggiungi il primo obiettivo, il test arriva ogni ${PROGRAM.testEveryDaysAfterGoal}\u00A0giorni.`,
-        'Il piano non ha una durata fissa. Quando raggiungi un obiettivo, passa al mantenimento con una dose più bassa e il successivo prende il suo posto. E va avanti così finché usi Walkito. [Come funziona il piano](/program/) (in inglese).',
+        `Scegli ${either(PROGRAM.daysPerWeek)} giorni di allenamento a settimana e sessioni da ${either(PROGRAM.sessionMinutes)}\u00A0minuti. La sessione di ogni giorno si adatta a com’è andata la tua mattina. Ogni ${PROGRAM.testEveryDays}\u00A0giorni, un breve test mostra se i tuoi numeri cambiano. Quando raggiungi il primo obiettivo, il test arriva ogni ${PROGRAM.testEveryDaysAfterGoal}\u00A0giorni.`,
+        'Il piano non ha una durata fissa. Quando raggiungi un obiettivo, quell’obiettivo passa al mantenimento con una dose più bassa e il successivo prende il suo posto. E va avanti così finché usi Walkito. [Come funziona il piano](/program/) (in inglese).',
         'Walkito è disponibile in inglese, russo e spagnolo.',
       ],
     },
@@ -34,9 +34,9 @@ export const ABOUT_IT: About = {
       h2: 'Come facciamo ricerca',
       id: 'how-we-research',
       paragraphs: [
-        'Le guide di questo sito le scrive Walkito Research: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
+        'Le guide di questo sito le scrivono Rahim Hudaykylyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
         'Leggiamo l’articolo completo, non solo l’abstract, prima che un suo numero finisca su una pagina. Ogni dose, grado e cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare.',
-        'Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica le dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto la sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando ne esce altra. Una regola popolare che uno studio ha testato senza trovarle conferma è segnata **Non supportato**.',
+        'Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica gli dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto lo sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando escono nuovi studi. Una regola popolare che uno studio ha testato senza trovarle conferma è segnata **Non supportato**.',
         'Walkito non ha sponsor, link di affiliazione o contenuti a pagamento. Niente è su una pagina perché qualcuno ha pagato. Ricontrolliamo una pagina quando esce nuova ricerca sul suo argomento. Ogni guida segue cinque regole:',
       ],
       bullets: [
@@ -44,7 +44,7 @@ export const ABOUT_IT: About = {
         '**Il riferimento è la linea guida di pratica clinica del 2023 sul dolore al tallone.** Viene dal Journal of Orthopaedic & Sports Physical Therapy. Dà a ogni intervento un grado in base alla forza delle sue prove, compresi quelli che sconsiglia.',
         '**Le precisazioni viaggiano con le cifre.** Un risultato a tre mesi è sempre riportato insieme a quello che è successo a dodici mesi. Ogni affermazione sulla forma dell’arco dice su quali piedi è stata misurata.',
         '**Le dosi sono le dosi di partenza di Walkito.** Mostrano da dove partono gli esercizi di Walkito. Non sono una prescrizione per te.',
-        '**Nessuna promessa di guarigione.** Le pagine dicono cosa ha trovato la ricerca e dove finiscono le sue prove.',
+        '**Nessuna promessa di guarigione.** Le pagine dicono cosa ha trovato la ricerca e fin dove arrivano le prove.',
       ],
     },
     {
@@ -72,7 +72,7 @@ export const ABOUT_IT: About = {
       h2: 'Un professionista sanitario ha rivisto le guide di Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Nessun professionista sanitario abilitato ha ancora rivisto le guide di Walkito. Le scrive Walkito Research a partire dalla ricerca pubblicata citata in ogni pagina.',
+        'Nessun professionista sanitario abilitato ha ancora rivisto le guide di Walkito. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.',
         'Quando un professionista le rivedrà, questa pagina riporterà il suo nome, le sue qualifiche e cosa ha controllato. Fino ad allora, nessuna pagina di questo sito dichiara una revisione medica.',
       ],
     },

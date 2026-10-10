@@ -40,7 +40,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       h2: 'Ist ein Fersensporn dasselbe wie Plantarfasziitis?',
       figure: { id: 'heel-side', caption: 'Ein Fersensporn bildet sich, wenn es einen gibt, an der Unterseite des Fersenbeins, nahe dem Ansatz der Plantarfaszie.', alt: 'Fuß von der Innenseite mit durchsichtiger Haut: Fersenbein, Plantarfaszie unter dem Gewölbe und eine rote Stelle unter der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
-        'Ein Fersensporn und eine Plantarfasziitis sind nicht dasselbe. Plantarfasziitis ist ein Problem des Weichgewebes: Die Plantarfaszie, das dicke Band vom Fersenbein bis zu den Zehen, wird gereizt, meist dort, wo sie am Knochen ansetzt. Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins (Calcaneus). Beides kommt oft zusammen vor, aber jedes kann auch ohne das andere auftreten.',
+        '**Ein Fersensporn und eine Plantarfasziitis sind nicht dasselbe.** Plantarfasziitis ist ein Problem des Weichgewebes: Die Plantarfaszie, das dicke Band vom Fersenbein bis zu den Zehen, wird gereizt, meist dort, wo sie am Knochen ansetzt. Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins (Calcaneus). Beides kommt oft zusammen vor, aber jedes kann auch ohne das andere auftreten.',
         'Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.',
         'Die Verwechslung ist verständlich. Jahrzehntelang galt der Fersensporn als Ursache für Fersenschmerzen unter dem Fuß. Diese Sicht wurde weitgehend von Belegen abgelöst, die zeigen, dass Sporne bei Menschen ohne Schmerzen häufig sind und dass viele Menschen mit Plantarfasziitis gar keinen Sporn haben.',
       ],
@@ -50,8 +50,17 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       h2: 'Macht ein Fersensporn wirklich Schmerzen?',
       keyFact: 'In einer Studie mit 530\u00A0Menschen mit Fußschmerzen kam ein Fersensporn auf dem Röntgenbild nur an 6\u00A0% der Füße allein vor, meist zusammen mit einer verdickten Plantarfaszie (Menz und Kollegen, 2019).',
       paragraphs: [
-        'Die meisten Fersensporne machen keine Schmerzen. Die Forschung zeigt immer wieder, dass Sporne bei Menschen ohne Fersenbeschwerden vorkommen und dass das Entfernen des Sporns den Schmerz nicht zuverlässig beendet.',
-        'In einer Studie mit 530\u00A0Menschen ab 50, die über Fußschmerzen berichteten, fanden Röntgenbilder einen Fersensporn an 26,5\u00A0% der Füße und Ultraschall eine verdickte Plantarfaszie an 47,3\u00A0% der Füße. Beides kam meist zusammen vor, und ein Sporn allein war selten (6\u00A0% der Füße). Menschen mit Fersenschmerzen hatten etwa doppelt so häufig beide Befunde zusammen (Menz und Kollegen, 2019). Anders gesagt: Der Sporn zeigt sich selten ohne die Veränderung im Weichgewebe, die dazugehört.',
+        '**Die meisten Fersensporne machen keine Schmerzen.** Die Forschung zeigt immer wieder, dass Sporne bei Menschen ohne Fersenbeschwerden vorkommen und dass das Entfernen des Sporns den Schmerz nicht zuverlässig beendet.',
+        'In einer Studie mit 530\u00A0Menschen ab 50, die über Fußschmerzen berichteten:',
+        {
+          list: [
+            'Röntgenbilder fanden einen Fersensporn an 26,5\u00A0% der Füße.',
+            'Ultraschall fand eine verdickte Plantarfaszie an 47,3\u00A0% der Füße.',
+            'Beides kam meist zusammen vor, und ein Sporn allein war selten (6\u00A0% der Füße).',
+            'Menschen mit Fersenschmerzen hatten etwa doppelt so häufig beide Befunde zusammen (Menz und Kollegen, 2019).',
+          ],
+        },
+        'Anders gesagt: Der Sporn zeigt sich selten ohne die Veränderung im Weichgewebe, die dazugehört.',
         'In einer anderen Studie mit 216\u00A0älteren Erwachsenen zwischen 62 und 94\u00A0Jahren hatten 55\u00A0% mindestens einen plantaren Fersensporn auf dem Röntgenbild. Sporne hingen mit Übergewicht, Arthrose und früheren Fersenschmerzen zusammen, aber nicht mit der Fußhaltung. Die Autoren vermuteten, dass Sporne eine Anpassung an senkrechten Druck auf die Ferse sein könnten und nicht dadurch entstehen, dass die Plantarfaszie am Knochen zieht (Menz und Kollegen, 2008).',
         'Die Studie von Menz 2008 erwähnt, dass frühere Forschung in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16\u00A0% berichtet hatte, deutlich unter den 55\u00A0%, die die Autoren in ihrer eigenen Stichprobe älterer Menschen fanden. In derselben Stichprobe hatten etwa 6 von 10\u00A0Menschen mit Sporn nie Fersenschmerzen gehabt, auch wenn Fersenschmerzen bei Menschen mit Sporn trotzdem häufiger waren (40\u00A0%) als ohne (12\u00A0%) (Menz und Kollegen, 2008). Ein Sporn erhöht die Odds, aber er entscheidet nicht, wer am Ende Schmerzen hat.',
       ],
@@ -65,24 +74,39 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       paragraphs: [
         'Fersensporne sind häufig. Wie häufig, hängt von der Altersgruppe ab und davon, mit welcher Methode man nach ihnen sucht.',
         'Die Studie von Menz 2008 mit älteren Erwachsenen zitiert frühere Forschung, die in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16\u00A0% berichtete, deutlich unter den 55\u00A0%, die die Autoren in ihrer eigenen Stichprobe von 216\u00A0Menschen zwischen 62 und 94\u00A0Jahren fanden. Eine andere MRT-Studie mit 77\u00A0beschwerdefreien Freiwilligen (Durchschnittsalter 48, Spanne 23 bis 83) fand bei 15 von ihnen einen Fersensporn, 19\u00A0% (Ehrmann und Kollegen, 2014).',
-        'Das Muster ist einheitlich: Ein großer Teil der Menschen mit Sporn hat keine Beschwerden, und ein Sporn allein sagt nicht voraus, ob jemand Fersenschmerzen bekommt. Deshalb nennt die Leitlinie von 2023 zu Fersenschmerzen einen Fersensporn nicht als Grund, die Übungen zu ändern.',
+        'Das Muster ist einheitlich: Ein großer Teil der Menschen mit Sporn hat keine Beschwerden, und **ein Sporn allein sagt nicht voraus, ob jemand Fersenschmerzen bekommt.** Deshalb nennt die Leitlinie von 2023 zu Fersenschmerzen einen Fersensporn nicht als Grund, die Übungen zu ändern.',
       ],
       cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: 'Was sagt die Leitlinie von 2023 zum Fersensporn?',
       paragraphs: [
-        'Die klinische Leitlinie von 2023 zu Fersenschmerzen, veröffentlicht im Journal of Orthopaedic and Sports Physical Therapy, stellt die Plantarfasziitis als häufigste Ursache für Fersenschmerzen unter dem Fuß in den Mittelpunkt. Das „Fersenspornsyndrom“ nennt sie als eine von mehreren Differenzialdiagnosen, neben dem Fersenpolster-Syndrom, Nervenreizungen und dem Ermüdungsbruch des Fersenbeins.',
+        'Die klinische Leitlinie von 2023 zu Fersenschmerzen, veröffentlicht im Journal of Orthopaedic and Sports Physical Therapy, stellt die Plantarfasziitis als häufigste Ursache für Fersenschmerzen unter dem Fuß in den Mittelpunkt. Das „Fersenspornsyndrom“ nennt sie als eine von mehreren Differenzialdiagnosen, neben:',
+        {
+          list: [
+            'Dem Fersenpolster-Syndrom.',
+            'Nervenreizungen.',
+            'Dem Ermüdungsbruch des Fersenbeins.',
+          ],
+        },
         'Die Leitlinie empfiehlt Bildgebung nicht als ersten Schritt, wenn die klinische Untersuchung schon auf eine Plantarfasziitis hindeutet. Sie hält fest, dass Bildgebung „bei Patienten, die die klinischen Untersuchungskriterien für eine Plantarfasziitis erfüllen, meist nicht angezeigt ist, solange konservative Maßnahmen nicht gescheitert sind“. Wenn Bildgebung in Frage kommt, ist ein Röntgenbild im Stehen die erste Wahl, danach bei Bedarf Ultraschall oder MRT.',
-        'In der Praxis heißt das: Eine medizinische Fachperson, die das typische Muster sieht, Schmerz bei den ersten Schritten am Morgen, Druckschmerz an der Innenseite der Ferse und eingeschränkte Beweglichkeit im Sprunggelenk, kann mit Dehnen und Krafttraining anfangen, ohne auf ein Röntgenbild zu warten. Ob ein späteres Röntgenbild einen Sporn zeigt oder nicht, ändert den Übungsplan nicht.',
+        'In der Praxis heißt das: Eine medizinische Fachperson, die das typische Muster sieht, Schmerz bei den ersten Schritten am Morgen, Druckschmerz an der Innenseite der Ferse und eingeschränkte Beweglichkeit im Sprunggelenk, kann mit Dehnen und Krafttraining anfangen, ohne auf ein Röntgenbild zu warten. **Ob ein späteres Röntgenbild einen Sporn zeigt oder nicht, ändert den Übungsplan nicht.**',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Brauchst du ein Röntgenbild, um Plantarfasziitis und Fersensporn zu unterscheiden?',
       paragraphs: [
-        'Für eine Plantarfasziitis brauchst du meist kein Röntgenbild. Die Diagnose ist klinisch: Sie beruht darauf, wo der Schmerz sitzt, wann er auftritt und was ihn schlimmer macht. Ein Röntgenbild kann einen Fersensporn zeigen, aber einen zu finden ändert nichts daran, was du gegen den Schmerz tust, und keinen zu finden schließt eine Plantarfasziitis nicht aus.',
-        'Bildgebung wird sinnvoll, wenn der Schmerz nicht dem typischen Muster der Plantarfasziitis folgt, wenn er nach mehreren Wochen konservativer Behandlung nicht besser geworden ist oder wenn eine medizinische Fachperson etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie. Ultraschall kann die Dicke der Plantarfaszie messen (über 4\u00A0mm gilt allgemein als verdickt), und ein MRT zeigt Details im Weichgewebe, die ein Röntgenbild nicht zeigt.',
+        '**Für eine Plantarfasziitis brauchst du meist kein Röntgenbild.** Die Diagnose ist klinisch: Sie beruht darauf, wo der Schmerz sitzt, wann er auftritt und was ihn schlimmer macht. Ein Röntgenbild kann einen Fersensporn zeigen, aber einen zu finden ändert nichts daran, was du gegen den Schmerz tust, und keinen zu finden schließt eine Plantarfasziitis nicht aus.',
+        'Bildgebung wird sinnvoll:',
+        {
+          list: [
+            'Wenn der Schmerz nicht dem typischen Muster der Plantarfasziitis folgt.',
+            'Wenn er nach mehreren Wochen konservativer Behandlung nicht besser geworden ist.',
+            'Wenn eine medizinische Fachperson etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie.',
+          ],
+        },
+        'Ultraschall kann die Dicke der Plantarfaszie messen (über 4\u00A0mm gilt allgemein als verdickt), und ein MRT zeigt Details im Weichgewebe, die ein Röntgenbild nicht zeigt.',
         'Wenn man dir schon gesagt hat, dass auf deinem Röntgenbild ein Fersensporn zu sehen ist, braucht der Sporn selbst fast nie eine eigene Behandlung. Die Übungen und Dehnungen, die bei Plantarfasziitis helfen, setzen auch am Weichgewebe rund um den Sporn an. Die ganze Routine findest du unter [Übungen bei Fersensporn](/de/fersensporn-uebungen/).',
       ],
       cites: [CITE.guideline],
@@ -91,8 +115,14 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       h2: 'Wenn der Sporn nicht das Problem ist, was dann?',
       paragraphs: [
         'Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vom Knochen. Die Plantarfaszie setzt unten am Fersenbein an. Wenn sie überlastet wird, vor allem bei einer verkürzten Wade, einem hohen BMI oder vielen Stunden auf den Beinen, wird dieser Ansatzpunkt gereizt. Diese Reizung ist die Plantarfasziitis.',
-        'Eine verkürzte Wade gehört zu den stärksten Risikofaktoren. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen hatte eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein anziehen lässt, die höchste Odds Ratio aller gemessenen Faktoren. Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit 3,6-fachen Odds (Riddle und Kollegen, 2003).',
-        'Der Sporn, wenn er da ist, sitzt in der Nähe. Er kann sich über Monate oder Jahre als Antwort auf dieselbe mechanische Belastung gebildet haben, die die Faszie gereizt hat. Aber es sind Faszie und Wade, die auf Dehnen und Kräftigen ansprechen, nicht der Knochen. Deshalb empfiehlt die Leitlinie Übungen und nicht das Entfernen des Sporns.',
+        'Eine verkürzte Wade gehört zu den stärksten Risikofaktoren. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen:',
+        {
+          list: [
+            'Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein anziehen lässt, hatte die höchste Odds Ratio aller gemessenen Faktoren.',
+            'Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit 3,6-fachen Odds (Riddle und Kollegen, 2003).',
+          ],
+        },
+        'Der Sporn, wenn er da ist, sitzt in der Nähe. Er kann sich über Monate oder Jahre als Antwort auf dieselbe mechanische Belastung gebildet haben, die die Faszie gereizt hat. Aber **es sind Faszie und Wade, die auf Dehnen und Kräftigen ansprechen, nicht der Knochen.** Deshalb empfiehlt die Leitlinie Übungen und nicht das Entfernen des Sporns.',
         'Einen vollständigen Überblick über die Plantarfasziitis mit Ursachen, Risikofaktoren und den Empfehlungen der Leitlinie gibt [Plantarfasziitis](/de/plantarfasziitis/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -100,7 +130,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       h2: 'Muss ein Fersensporn jemals entfernt werden?',
       paragraphs: [
-        'Ein Fersensporn wird selten operativ entfernt, und das ist keine Option für den Anfang. Die Leitlinie von 2023 empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen. Mehrere Studien haben gezeigt, dass Plantarfasziitis-Schmerzen mit konservativer Behandlung abklingen können, auch wenn der Sporn auf dem Röntgenbild bleibt. Die American Academy of Orthopaedic Surgeons schreibt klar, dass „Fersensporne keine Plantarfasziitis-Schmerzen verursachen“ und dass sich „Plantarfasziitis-Schmerzen behandeln lassen, ohne den Sporn zu entfernen“.',
+        'Ein Fersensporn wird selten operativ entfernt, und das ist keine Option für den Anfang. **Die Leitlinie von 2023 empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen.** Mehrere Studien haben gezeigt, dass Plantarfasziitis-Schmerzen mit konservativer Behandlung abklingen können, auch wenn der Sporn auf dem Röntgenbild bleibt. Die American Academy of Orthopaedic Surgeons schreibt klar, dass „Fersensporne keine Plantarfasziitis-Schmerzen verursachen“ und dass sich „Plantarfasziitis-Schmerzen behandeln lassen, ohne den Sporn zu entfernen“.',
         'Eine Operation wird manchmal erwogen, wenn der Schmerz über Monate nicht auf konservative Behandlung angesprochen hat, aber der Eingriff ist dann meist eine teilweise Durchtrennung der Plantarfaszie, keine Entfernung des Sporns. Wenn dabei auch ein Sporn entfernt wird, deuten die Belege darauf hin, dass der Nutzen von der Entlastung der Faszie kam und nicht vom Entfernen des Knochens.',
         'Den allermeisten Menschen mit Fersenschmerzen und Sporn geht es mit demselben Dehnen, demselben Wadentraining und derselben Belastungssteuerung besser, die auch Menschen ohne Sporn nutzen. Die praktische Routine findest du unter [Übungen bei Fersensporn](/de/fersensporn-uebungen/).',
       ],
@@ -127,7 +157,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, äußeren Wadenmuskel.' },
+          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse unten, die Hüfte nach vorn. Eine verkürzte Wade zieht über die Achillessehne an der Ferse und belastet so zusätzlich die Faszie.',
           often: 'Die meisten Einheiten',
@@ -189,7 +219,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       a: 'Fast nie. Die Leitlinie empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen. Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit nicht-operativer Behandlung wie Dehnen, Wadenkrafttraining und Belastungssteuerung besser (Latt und Kollegen, 2020). Wenn nach Monaten erfolgloser konservativer Behandlung eine Operation erwogen wird, wird meist die Plantarfaszie teilweise durchtrennt, nicht der Sporn entfernt.',
     },
     {
-      q: 'Was passiert, wenn man mit Fersensporn weiter läuft?',
+      q: 'Was passiert, wenn man mit Fersensporn weiterläuft?',
       cites: [CITE.menzSpur, CITE.guideline],
       a: 'Durch Gehen bohrt sich der Sporn nicht in das umliegende Gewebe. Schmerz, der beim Gehen aufflammt, kommt meist von der gereizten Plantarfaszie neben dem Sporn, nicht vom Knochen selbst. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, etwa Strecke oder Tempo, statt aufzuhören, wenn Gehen die Ferse am nächsten Morgen schlimmer macht.',
     },

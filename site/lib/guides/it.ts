@@ -57,7 +57,8 @@ export const FLAT_FEET_IT: Guide = {
   h1: 'Esercizi per il piede piatto e il dolore all’arco',
   lede: 'La sera hai i piedi stanchi e ti fanno male gli archi. Quando sei in piedi, i piedi sembrano cedere verso l’interno e gli archi scendono verso il pavimento. Magari ti hanno detto che il piede piatto è fatto così e non serve pensarci. Voler fare qualcosa ha senso, e c’è ricerca vera su come allenare l’arco.',
   intro: [
-    'Inizia con una verifica: guarda se il tuo piede piatto è flessibile, cioè se l’arco torna quando sollevi il piede. Nel piede piatto flessibile, uno studio su 52\u00A0persone ha visto che sei settimane di esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti, fatti insieme, cambiavano la forma dell’arco più che in un gruppo di controllo. Le prove sul piede corto da solo sono più deboli. Una revisione del 2024 non ha trovato un cambiamento chiaro nel complesso, e ha visto un cambiamento in una misura dell’arco solo nei programmi più lunghi di sei settimane. Entrambi hanno misurato la forma dell’arco, non il dolore. Se il tuo dolore è vicino al tallone, la ricerca sul dolore al tallone è la guida migliore.',
+    'Inizia con una verifica: guarda se il tuo piede piatto è flessibile, cioè se l’arco torna quando sollevi il piede. Nel piede piatto flessibile, uno studio su 52\u00A0persone ha visto che sei settimane di esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti, fatti insieme, cambiavano la forma dell’arco più che in un gruppo di controllo.',
+    'Le prove sul piede corto da solo sono più deboli. Una revisione del 2024 non ha trovato un cambiamento chiaro nel complesso, e ha visto un cambiamento in una misura dell’arco solo nei programmi più lunghi di sei settimane. Entrambi hanno misurato la forma dell’arco, non il dolore. Se il tuo dolore è vicino al tallone, la ricerca sul dolore al tallone è la guida migliore.',
   ],
   takeaways: [
     'Lo studio randomizzato di questa pagina riguardava il piede piatto flessibile, quello in cui l’arco torna quando il piede è sollevato da terra (Brijwasi e Borkar, 2023).',
@@ -87,7 +88,8 @@ export const FLAT_FEET_IT: Guide = {
       paragraphs: [
         'Gli esercizi per il piede piatto in Walkito iniziano con la raccolta dell’asciugamano e il sollevamento dell’alluce, poi salgono attraverso tre versioni del piede corto. L’apertura delle dita, l’inversione con elastico, l’equilibrio su una gamba, l’abduzione dell’anca e gli allungamenti del polpaccio completano il resto. Sono le dosi di partenza di Walkito, non una prescrizione. Falli a piedi nudi. [Come scriviamo queste guide](/it/chi-siamo/).',
         'Il piede corto è il cuore del lavoro sull’arco. Accorci il piede tirando l’avampiede verso il tallone, così l’arco si alza, senza arricciare le dita. Il piede corto, il rinforzo dell’anca e gli allungamenti sono ciò che lo studio ha testato. La raccolta dell’asciugamano, il sollevamento dell’alluce, l’apertura delle dita, l’inversione con elastico e l’equilibrio su una gamba sono aggiunte di Walkito.',
-        'Fai un esercizio per l’arco alla volta, quello del tuo livello. Walkito ti fa salire di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Finché l’arco è il tuo obiettivo, ogni sessione ha un esercizio per l’arco, e gli altri si danno il turno. Alcuni esercizi richiedono un asciugamano o un elastico. Walkito ti chiede cosa hai e toglie quello che non hai. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.',
+        'Fai un esercizio per l’arco alla volta, quello del tuo livello. Walkito ti fa salire di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Finché l’arco è il tuo obiettivo, ogni sessione ha un esercizio per l’arco, e gli altri si danno il turno.',
+        'Alcuni esercizi richiedono un asciugamano o un elastico. Walkito ti chiede cosa hai e toglie quello che non hai. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.',
       ],
       table: {
         head: ['Esercizio', 'Dose', 'Quanto spesso', 'Cosa dovresti sentire', 'Fermati se'],
@@ -159,7 +161,7 @@ export const FLAT_FEET_IT: Guide = {
           dose: '3\u00A0serie da 10, tieni 5\u00A0secondi, ogni piede',
           often: 'Ogni sessione, finché è il tuo livello',
           feel: 'Più lavoro nell’arco',
-          how: 'Stai su un piede e alza l’arco. Tieni l’alluce giù. Se si alza, l’arco sta barando. Lavorando un piede alla volta si vede qual è il lato più debole.',
+          how: 'Stai su un piede e alza l’arco. Tieni l’alluce giù. Se si alza, stai compensando con le dita invece che con l’arco. Lavorando un piede alla volta si vede qual è il lato più debole.',
           image: 'Esercizio: piede corto, su una gamba',
           media: 'short_foot_single',
           caption: 'Piede corto, su una gamba: alza l’arco e tieni l’alluce giù',
@@ -232,7 +234,7 @@ export const FLAT_FEET_IT: Guide = {
       paragraphs: [
         'Finora, nella ricerca, gli esercizi per il piede piatto hanno cambiato l’arco dopo sei settimane o più, e solo nel piede piatto flessibile. In uno studio su 52\u00A0persone con piede piatto **flessibile**, un programma di sei settimane con esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti ha cambiato due misure della forma dell’arco più che nel gruppo di controllo.',
         'Le prove sul piede corto da solo sono più deboli. Una revisione del 2024 ha messo insieme studi sull’allenamento del piede corto nel piede piatto in generale. Nel complesso non ha trovato una differenza chiara rispetto ai gruppi di controllo nella forma dell’arco o nella postura del piede. Solo i programmi più lunghi di sei settimane hanno migliorato quanto l’arco si abbassa sotto il tuo peso, e gli autori dicono che servono studi più grandi. Quindi metti in conto almeno sei settimane, e di più se fai solo il piede corto.',
-        `Anche per questo il piano di Walkito non ha una data di fine. L’obiettivo dell’arco, tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, resta nel piano finché non lo raggiungi, per quante settimane servano. La tenuta dell’arco viene testata ogni ${PROGRAM.testEveryDays}\u00A0giorni finché non raggiungi il primo obiettivo, poi ogni ${PROGRAM.testEveryDaysAfterGoal}, così vedi se si sta muovendo. Gli studi sono riassunti nella [pagina delle evidenze](/science/) (in inglese).`,
+        `Anche per questo il piano di Walkito non ha una data di fine. L’obiettivo dell’arco, tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, resta nel piano finché non lo raggiungi, per quante settimane servano. La tenuta dell’arco viene testata ogni ${PROGRAM.testEveryDays}\u00A0giorni finché non raggiungi il primo obiettivo, poi ogni ${PROGRAM.testEveryDaysAfterGoal}, così vedi se sta cambiando. Gli studi sono riassunti nella [pagina delle evidenze](/science/) (in inglese).`,
       ],
       sourceNote:
         'Brijwasi e Borkar: il navicular drop (quanto scende l’osso navicolare, all’interno dell’arco, quando stai in piedi) è migliorato di 0,4\u00A0cm, e l’angolo dell’arco di 16\u00A0gradi, più che nel gruppo di controllo. Cheng e colleghi: nessuna differenza significativa nel complesso nel navicular drop o nel Foot Posture Index; il navicular drop è migliorato in modo significativo solo nel sottogruppo dei programmi più lunghi di sei settimane.',
@@ -250,7 +252,7 @@ export const FLAT_FEET_IT: Guide = {
     {
       h2: 'Cosa succede quando raggiungi l’obiettivo dell’arco?',
       paragraphs: [
-        `Quando raggiungi l’obiettivo dell’arco, cioè tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, Walkito tiene il lavoro sull’arco nel piano a una dose più bassa. L’obiettivo passa al mantenimento e il successivo prende il suo posto. Raggiungerlo non vuol dire che il lavoro sull’arco si ferma.`,
+        `Quando raggiungi l’obiettivo dell’arco, cioè tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, **Walkito tiene il lavoro sull’arco nel piano a una dose più bassa.** L’obiettivo passa al mantenimento e il successivo prende il suo posto. Raggiungerlo non vuol dire che il lavoro sull’arco si ferma.`,
         `Anche i test continuano, ogni ${PROGRAM.testEveryDaysAfterGoal}\u00A0giorni dopo il primo obiettivo raggiunto. Se la tenuta dell’arco inizia a calare, lo vedi nei numeri invece di tirare a indovinare.`,
         'Se ti fa male anche il tallone, il tallone ha i suoi esercizi e il suo obiettivo: vedi [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/). Le domande sull’app hanno risposta nelle [domande frequenti](/faq/) (in inglese).',
       ],
@@ -281,7 +283,7 @@ export const FLAT_FEET_IT: Guide = {
     },
     {
       q: 'Quali esercizi rinforzano gli archi dei piedi?',
-      a: 'Il principale è l’esercizio del piede corto: alzi l’arco avvicinando l’avampiede al tallone, senza arricciare le dita. Walkito lo inizia da seduto, con 3\u00A0serie da 8 e 5\u00A0secondi di tenuta, poi in piedi, poi su una gamba. Raccolta dell’asciugamano, sollevamento dell’alluce, apertura delle dita e inversione con elastico allenano i piccoli muscoli intorno all’arco. Tutto questo è per il piede piatto flessibile. Passo passo: [esercizio del piede corto](/exercises/short-foot-exercise/) (in inglese).',
+      a: 'Il principale è l’esercizio del piede corto: alzi l’arco avvicinando l’avampiede al tallone, senza arricciare le dita. Walkito lo inizia da seduto, con 3\u00A0serie da 8 e 5\u00A0secondi di tenuta, poi in piedi, poi su una gamba. Raccolta dell’asciugamano, sollevamento dell’alluce, apertura delle dita e inversione con elastico allenano i piccoli muscoli intorno all’arco. Tutto questo è per il piede piatto flessibile. Passo passo: [esercizio del piede corto](/it/esercizi/piede-corto/).',
     },
     {
       q: 'Quanto spesso devo fare gli esercizi per il piede piatto?',
@@ -318,9 +320,10 @@ export const HEEL_PAIN_IT: Guide = {
   description:
     'Otto esercizi e allungamenti per la fascite plantare: dosi, cosa evitare, quando fare stretching e i gradi di evidenza della linea guida del 2023.',
   h1: 'Esercizi e allungamenti per la fascite plantare e il dolore al tallone',
-  lede: 'I primi passi appena sceso dal letto sono il momento peggiore della giornata. Una fitta proprio sul tallone, prima ancora del caffè. Si calma quando ti muovi, poi torna dopo che sei stato seduto un po’. Quello schema ha un nome, [fascite plantare](/plantar-fasciitis/) (in inglese), e la linea guida clinica del 2023 sul dolore al tallone la indica come la causa più riconosciuta del dolore sotto il tallone.',
+  lede: 'I primi passi appena sceso dal letto sono il momento peggiore della giornata. Una fitta proprio sul tallone, prima ancora del caffè. Si calma quando ti muovi, poi torna dopo che sei stato seduto un po’. Quello schema ha un nome, [fascite plantare](/it/fascite-plantare/), e la linea guida clinica del 2023 sul dolore al tallone la indica come la causa più riconosciuta del dolore sotto il tallone.',
   intro: [
-    'Cercare informazioni confonde, perché ognuno dice una cosa diversa. Le prove indicano due cose: allungare la fascia plantare e il polpaccio, e fare lavoro di forza per il polpaccio. Una linea guida clinica del 2023 dà allo stretching il grado più alto, A, e al lavoro di forza una B. In uno studio su 48\u00A0persone, tutte con plantari, sollevamenti lenti sulle punte con un asciugamano sotto le dita hanno aiutato più in fretta del solo stretching. A dodici mesi i due gruppi erano pari. Fare entrambe le cose è ciò che la linea guida sostiene.',
+    'Cercare informazioni confonde, perché ognuno dice una cosa diversa. Le prove indicano due cose: allungare la fascia plantare e il polpaccio, e fare lavoro di forza per il polpaccio. Una linea guida clinica del 2023 dà allo stretching il grado più alto, A, e al lavoro di forza una B.',
+    'In uno studio su 48\u00A0persone, tutte con plantari, sollevamenti lenti sulle punte con un asciugamano sotto le dita hanno aiutato più in fretta del solo stretching. A dodici mesi i due gruppi erano pari. Fare entrambe le cose è ciò che la linea guida sostiene.',
   ],
   takeaways: [
     'La linea guida del 2023 sul dolore al tallone del Journal of Orthopaedic & Sports Physical Therapy dà all’allungamento della fascia plantare e del polpaccio il grado più alto, A, e al lavoro di forza una B.',
@@ -335,7 +338,15 @@ export const HEEL_PAIN_IT: Guide = {
       figure: { id: 'plantar-fascia', caption: 'La fascia plantare va dall’osso del tallone alle dita. Il dolore della fascite plantare di solito inizia dove si attacca al tallone.', alt: 'Pianta di un piede con la fascia plantare come fasce bianche che si aprono a ventaglio dall’osso del tallone alla base delle dita, e una macchia rossa sul tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'Gli esercizi per la fascite plantare in Walkito sono allungamenti per la fascia plantare e il polpaccio, lavoro di forza per il polpaccio che sale a piccoli passi, e un massaggio con la pallina. Sono le dosi di partenza di Walkito, non una prescrizione. Un riassunto di una pagina è nelle [schede di esercizi da stampare](/printable-exercise-sheets/) (in inglese). [Come scriviamo queste guide](/it/chi-siamo/).',
-        'L’ordine conta. Finché il dolore è il tuo obiettivo, Walkito tiene leggero il lavoro sul polpaccio: prima i sollevamenti sulle punte da seduto, poi quelli su due piedi, poi la tenuta sulle punte, un gradino alla volta. Sali di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Il [sollevamento sulle punte con asciugamano](/exercises/towel-heel-raise/) (in inglese) carica di più la fascia plantare, quindi arriva solo quando il dolore del mattino è sceso e l’obiettivo passa alla forza del polpaccio. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.',
+        'L’ordine conta. Finché il dolore è il tuo obiettivo, Walkito tiene leggero il lavoro sul polpaccio, un gradino alla volta:',
+        {
+          list: [
+            'Prima i sollevamenti sulle punte da seduto.',
+            'Poi quelli su due piedi.',
+            'Poi la tenuta sulle punte.',
+          ],
+        },
+        'Sali di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/) carica di più la fascia plantare, quindi arriva solo quando il dolore del mattino è sceso e l’obiettivo passa alla forza del polpaccio. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.',
       ],
       table: {
         head: ['Esercizio', 'Dose', 'Quanto spesso', 'Cosa dovresti sentire', 'Fermati se'],
@@ -441,7 +452,7 @@ export const HEEL_PAIN_IT: Guide = {
           dose: '1\u00A0minuto',
           often: 'Giorni di recupero',
           feel: 'Pressione decisa sotto il piede',
-          how: 'Siediti e fai rotolare lentamente la pianta del piede su una pallina da massaggio, con una pressione decisa. Se fai smorfie, alleggerisci. Far rotolare il piede calma il tessuto dopo che ha lavorato. Niente pallina? Il massaggio plantare usa invece passate decise con il pollice dal tallone alle dita.',
+          how: 'Siediti e fai rotolare lentamente la pianta del piede su una pallina da massaggio, con una pressione decisa. Se fai smorfie, alleggerisci. Far rotolare il piede può dare sollievo al tessuto dopo che ha lavorato. Niente pallina? In alternativa, massaggia la pianta con passate decise del pollice, dal tallone alle dita.',
           image: 'Esercizio: massaggio con la pallina',
           media: 'foot_roll',
           caption: 'Massaggio con la pallina: fai rotolare lentamente la pianta su una pallina, con pressione decisa',
@@ -452,18 +463,26 @@ export const HEEL_PAIN_IT: Guide = {
     {
       h2: 'Quali esercizi evitare con la fascite plantare?',
       paragraphs: [
-        'Evita le attività ad alto impatto che fanno impennare il carico sul tallone mentre il dolore è acceso, ed evita di camminare scalzo su pavimenti duri appena alzato.',
-        'Salti, scatti e pliometria scaricano sulla fascia plantare un picco di forza improvviso. Quando il tessuto è irritato, quel picco può farti tornare indietro. La linea guida del 2023 consiglia di regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni, un consiglio di grado E. Non vieta esercizi specifici. La domanda è se il carico supera quello da cui il tessuto riesce a riprendersi durante la notte. Camminare scalzo su pavimenti duri è un fattore scatenante comune, perché la fascia è più rigida dopo il riposo e una superficie dura non ammortizza.',
-        'Altre due cose a cui fare attenzione. Far rotolare una pallina sotto il piede deve dare una sensazione decisa, non una fitta. Se fa male, alleggerisci o saltalo. E se hai anche dolore al tendine d’Achille vicino alla parte posteriore del tallone, evita discese profonde del tallone dal bordo di un gradino, perché la discesa può caricare l’inserzione dell’Achille. Fai il [sollevamento sulle punte con asciugamano](/exercises/towel-heel-raise/) (in inglese) a terra in piano finché un professionista sanitario non ha escluso problemi all’Achille.',
+        'Evita le attività ad alto impatto che fanno impennare il carico sul tallone nelle fasi in cui il dolore è più forte, ed evita di camminare scalzo su pavimenti duri appena alzato.',
+        'Salti, scatti e pliometria scaricano sulla fascia plantare un picco di forza improvviso. Quando il tessuto è irritato, quel picco può farti tornare indietro. La linea guida del 2023 consiglia di regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni, un consiglio di grado E. Non vieta esercizi specifici. **La domanda è se il carico supera quello da cui il tessuto riesce a riprendersi durante la notte.**',
+        'Camminare scalzo su pavimenti duri è un fattore scatenante comune, perché la fascia è più rigida dopo il riposo e una superficie dura non ammortizza.',
+        'Altre due cose a cui fare attenzione:',
+        {
+          list: [
+            '**Far rotolare una pallina** sotto il piede deve dare una sensazione decisa, non una fitta. Se fa male, alleggerisci o saltalo.',
+            'Se hai anche **dolore al tendine d’Achille** vicino alla parte posteriore del tallone, evita discese profonde del tallone dal bordo di un gradino, perché la discesa può caricare l’inserzione dell’Achille. Fai il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/) a terra in piano finché un professionista sanitario non ha escluso problemi all’Achille.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Qual è il momento migliore per gli allungamenti per la fascite plantare?',
       paragraphs: [
-        'Prima dei primi passi del mattino e prima di alzarti dopo essere stato seduto a lungo. Sono i due momenti in cui la fascia plantare è più rigida e fa più facilmente male.',
-        'Uno studio del 2003 su 82\u00A0persone con fascite plantare cronica ha testato un allungamento specifico della fascia plantare fatto prima di caricare il peso. I pazienti tenevano l’allungamento 10\u00A0secondi, lo ripetevano 10 volte, tre volte al giorno, con la prima serie prima del primo passo del mattino. A otto settimane, il gruppo che faceva questo allungamento aveva molto meno dolore ai primi passi del mattino del gruppo che faceva solo un allungamento del polpaccio. A due anni, dopo che tutti i pazienti avevano ricevuto lo stesso allungamento, entrambi i gruppi erano migliorati.',
-        'In questa pagina, l’[allungamento della fascia plantare](/exercises/plantar-fascia-stretch/) (in inglese) inizia sul bordo del letto, prima che il piede tocchi terra. Poi viene l’[allungamento del polpaccio](/exercises/calf-stretch/) (in inglese). Walkito mette il primo allungamento prima di alzarti per lo stesso motivo dello studio: allungare prima che il tessuto prenda carico è più delicato che farlo dopo.',
+        '**Prima dei primi passi del mattino e prima di alzarti dopo essere stato seduto a lungo.** Sono i due momenti in cui la fascia plantare è più rigida e fa più facilmente male.',
+        'Uno studio del 2003 su 82\u00A0persone con fascite plantare cronica ha testato un allungamento specifico della fascia plantare fatto prima di caricare il peso. I pazienti tenevano l’allungamento 10\u00A0secondi, lo ripetevano 10 volte, tre volte al giorno, con la prima serie prima del primo passo del mattino.',
+        'A otto settimane, il gruppo che faceva questo allungamento aveva molto meno dolore ai primi passi del mattino del gruppo che faceva solo un allungamento del polpaccio. A due anni, dopo che tutti i pazienti avevano ricevuto lo stesso allungamento, entrambi i gruppi erano migliorati.',
+        'In questa pagina, l’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) inizia sul bordo del letto, prima che il piede tocchi terra. Poi viene l’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/). Walkito mette il primo allungamento prima di alzarti per lo stesso motivo dello studio: allungare prima che il tessuto prenda carico è più delicato che farlo dopo.',
       ],
       cites: [CITE.digiovanni2003],
     },
@@ -471,16 +490,23 @@ export const HEEL_PAIN_IT: Guide = {
       h2: 'Cosa aiuta il dolore al tallone del mattino?',
       paragraphs: [
         'Il dolore al tallone ai primi passi del mattino è lo schema più spesso legato alla fascite plantare. Di solito si calma quando inizi a muoverti, e torna dopo che sei stato seduto un po’.',
-        'Due cose in questa pagina puntano a questo. L’allungamento della fascia plantare si fa **prima di alzarti**, sul bordo del letto con le dita tirate indietro, così i tuoi primi passi non sono il tuo primo allungamento. E la linea guida del 2023 dà una **A** ai tutori notturni, portati per 1-3\u00A0mesi, per chi continua ad avere dolore ai primi passi del mattino. I tutori notturni sono da valutare con un professionista sanitario. Walkito non li fornisce.',
-        'Walkito ti chiede del dolore del mattino ogni giorno per lo stesso motivo. Il dolore del mattino è il segnale più chiaro di come il piede ha retto il giorno prima, e decide quanto ti chiede la sessione di oggi. Altro su cosa lo provoca è in [dolore al tallone al mattino](/heel-pain-in-the-morning/) (in inglese).',
+        'Due cose in questa pagina puntano a questo:',
+        {
+          list: [
+            'L’allungamento della fascia plantare si fa **prima di alzarti**, sul bordo del letto con le dita tirate indietro, così i tuoi primi passi non sono il tuo primo allungamento.',
+            'La linea guida del 2023 dà una **A** ai tutori notturni, portati per 1-3\u00A0mesi, per chi continua ad avere dolore ai primi passi del mattino. I tutori notturni sono da valutare con un professionista sanitario. Walkito non li fornisce.',
+          ],
+        },
+        'Walkito ti chiede del dolore del mattino ogni giorno per lo stesso motivo. Il dolore del mattino è il segnale più chiaro di come il piede ha retto il giorno prima, e decide quanto ti chiede la sessione di oggi. Altro su cosa lo provoca è in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Riposare o continuare a correre con il dolore al tallone?',
       paragraphs: [
-        'Se il dolore al tallone da fascite plantare si accende quando corri, cambia il carico invece di fermare tutto. La linea guida del 2023 consiglia di imparare a regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni. Quel consiglio è di grado E, cioè si basa sulla teoria più che su studi. Quindi continua con gli allungamenti ogni giorno, e riduci quello che peggiora il tallone.',
-        'In una brutta mattina, tieni gli allungamenti e togli i sollevamenti sulle punte per quel giorno. La mattina dopo ti dice com’è andata. Se dopo una corsa i primi passi sono chiaramente peggiori, quella corsa era più di quanto il tallone potesse reggere. Walkito la legge allo stesso modo. Una giornata intensa in piedi trasforma la sessione di forza successiva in una di recupero più leggera, e una mattina dolorosa accorcia la sessione senza annullarla.',
+        'Se il dolore al tallone da fascite plantare peggiora quando corri, **cambia il carico invece di fermare tutto.** La linea guida del 2023 consiglia di imparare a regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni. Quel consiglio è di grado E, cioè si basa sulla teoria più che su studi. Quindi continua con gli allungamenti ogni giorno, e riduci quello che peggiora il tallone.',
+        'In una brutta mattina, tieni gli allungamenti e togli i sollevamenti sulle punte per quel giorno. La mattina dopo ti dice com’è andata. Se dopo una corsa i primi passi sono chiaramente peggiori, quella corsa era più di quanto il tallone potesse reggere.',
+        'Walkito la legge allo stesso modo. Una giornata intensa in piedi trasforma la sessione di forza successiva in una di recupero più leggera, e una mattina dolorosa accorcia la sessione senza annullarla.',
         'Fermati e rivolgiti a un professionista sanitario se correre fa molto male o se il dolore peggiora di settimana in settimana. Vale lo stesso per un dolore che aumenta durante la corsa dopo che hai aumentato i chilometri, o un dolore quando stringi i lati del tallone. Entrambi possono essere segni di una frattura da stress, una delle altre cause di dolore al tallone che la linea guida nomina.',
       ],
       cites: [CITE.guideline],
@@ -488,8 +514,9 @@ export const HEEL_PAIN_IT: Guide = {
     {
       h2: 'Meglio il lavoro di forza o lo stretching per la fascite plantare?',
       paragraphs: [
-        'Il lavoro di forza e lo stretching aiutano entrambi la fascite plantare, e il lavoro di forza aiuta prima.',
-        'In uno studio su 48\u00A0persone con fascite plantare confermata da ecografia, tutti portavano plantari. Un gruppo aggiungeva sollevamenti sulle punte con carico alto a giorni alterni. L’altro allungava la fascia plantare ogni giorno. A tre mesi, il gruppo dei sollevamenti era chiaramente avanti su dolore e attività quotidiane. A dodici mesi, i due gruppi erano pari. Il lavoro di forza ha anticipato il miglioramento. Non lo ha reso più grande.',
+        'Il lavoro di forza e lo stretching aiutano entrambi la fascite plantare, e **il lavoro di forza aiuta prima.**',
+        'In uno studio su 48\u00A0persone con fascite plantare confermata da ecografia, tutti portavano plantari. Un gruppo aggiungeva sollevamenti sulle punte con carico alto a giorni alterni. L’altro allungava la fascia plantare ogni giorno.',
+        'A tre mesi, il gruppo dei sollevamenti era chiaramente avanti su dolore e attività quotidiane. A dodici mesi, i due gruppi erano pari. Il lavoro di forza ha anticipato il miglioramento. Non lo ha reso più grande.',
         'La linea guida sostiene di fare entrambe le cose. Il ragionamento studio per studio è nella [pagina delle evidenze](/science/) (in inglese).',
       ],
       sourceNote:
@@ -499,7 +526,7 @@ export const HEEL_PAIN_IT: Guide = {
     {
       h2: 'Cosa raccomanda la linea guida del 2023 per la fascite plantare?',
       paragraphs: [
-        'La linea guida del 2023 sulla fascite plantare dà a ogni opzione un grado in base alla forza delle prove. A è il grado più alto. Un grado segnato «contro» vuol dire che la linea guida consiglia di non usare quell’opzione.',
+        'La linea guida del 2023 sul dolore al tallone dà a ogni opzione un grado in base alla forza delle prove. A è il grado più alto. Un grado segnato «contro» vuol dire che la linea guida consiglia di non usare quell’opzione.',
       ],
       table: {
         head: ['Opzione', 'Grado'],
@@ -522,7 +549,7 @@ export const HEEL_PAIN_IT: Guide = {
       paragraphs: [
         'Le scarpe con un buon sostegno aiutano, ma i plantari da soli non bastano per la maggior parte delle persone. La linea guida del 2023 dà alle ortesi (plantari e supporti per l’arco) come opzione a sé un **B contro**, cioè le prove dicono di non contare solo su di loro. Insieme a stretching e lavoro di forza, le ortesi prendono una **C**.',
         'I tutori notturni, portati mentre dormi per 1-3\u00A0mesi, ricevono il grado più alto della linea guida, **A**, per chi continua ad avere dolore ai primi passi di ogni mattina. Tengono ferma la caviglia così la fascia plantare non si accorcia durante la notte. Chiedi a un professionista sanitario se vale la pena provarli.',
-        'La linea guida non valuta tipi specifici di scarpe, ma le calzature senza sostegno sono un fattore di rischio comunemente riconosciuto. Scarpe con supporto per l’arco e un contrafforte del tallone rigido si prendono una parte del carico che la fascia plantare porterebbe da sola. Se ti fanno male i piedi dopo una lunga giornata in piedi, vedi [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese). Chi lavora a turni può iniziare da [infermieri e dolore ai piedi](/nurses-foot-pain/) (in inglese).',
+        'La linea guida non valuta tipi specifici di scarpe, ma le calzature senza sostegno sono un fattore di rischio comunemente riconosciuto. Scarpe con supporto per l’arco e un contrafforte del tallone rigido si prendono una parte del carico che la fascia plantare porterebbe da sola. Se ti fanno male i piedi dopo una lunga giornata in piedi, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). Chi lavora a turni può iniziare da [infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/).',
       ],
       cites: [CITE.guideline],
     },
@@ -537,7 +564,7 @@ export const HEEL_PAIN_IT: Guide = {
   faq: [
     {
       q: 'Posso continuare a correre con la fascite plantare?',
-      a: 'Non devi fermare tutto. Cambia il carico. La linea guida clinica del 2023 consiglia di imparare a regolare il carico sui piedi, con grado E, cioè un consiglio che viene dalla teoria, non da studi. Riduci quello che peggiora il tallone e continua ad allungare ogni giorno. Se la mattina dopo i primi passi sono chiaramente peggiori, la corsa era troppo. Un dolore acuto o in peggioramento richiede un professionista sanitario.',
+      a: 'Non devi fermare tutto. Cambia il carico. La linea guida clinica del 2023 consiglia di imparare a regolare il carico sui piedi, con grado E, cioè un consiglio che viene dalla teoria, non da studi. Riduci quello che peggiora il tallone e continua ad allungare ogni giorno. Se la mattina dopo i primi passi sono chiaramente peggiori, la corsa è stata troppo impegnativa. Un dolore acuto o in peggioramento richiede un professionista sanitario.',
     },
     {
       q: 'Perché il dolore al tallone è peggio al mattino?',
@@ -545,7 +572,7 @@ export const HEEL_PAIN_IT: Guide = {
     },
     {
       q: 'Quanto dura la fascite plantare?',
-      a: 'Per la maggior parte delle persone si calma nel giro di mesi, non di settimane. I tempi completi sono in [quanto dura la fascite plantare](/how-long-does-plantar-fasciitis-last/) (in inglese). Una [revisione del 2020](https://doi.org/10.1177/2473011419896763) riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e plantari, spesso in 3-6\u00A0mesi. Alcuni ci mettono di più, e un gruppo più piccolo ha ancora dolore dopo un anno. Nessun programma di esercizi può promettere dei tempi. La linea guida del 2023 sul dolore al tallone dà allo stretching e al lavoro di forza sul polpaccio i suoi gradi migliori, ed è per questo che vengono prima in questa pagina.',
+      a: 'Per la maggior parte delle persone si calma nel giro di mesi, non di settimane. I tempi completi sono in [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/). Una [revisione del 2020](https://doi.org/10.1177/2473011419896763) riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e plantari, spesso in 3-6\u00A0mesi. Alcuni ci mettono di più, e un gruppo più piccolo ha ancora dolore dopo un anno. Nessun programma di esercizi può promettere dei tempi. La linea guida del 2023 sul dolore al tallone dà allo stretching e al lavoro di forza sul polpaccio i suoi gradi migliori, ed è per questo che vengono prima in questa pagina.',
       cites: [CITE.latt],
     },
     {
@@ -562,7 +589,7 @@ export const HEEL_PAIN_IT: Guide = {
     },
     {
       q: 'Quali sono i migliori allungamenti per il dolore al tallone?',
-      a: 'L’allungamento della fascia plantare e quelli di polpaccio e soleo sono quelli a cui la linea guida del 2023 sul dolore al tallone dà una A, il suo grado più alto. Accavalla il piede sul ginocchio e tira indietro le dita per 30\u00A0secondi, la prima volta prima di alzarti al mattino. Poi allunga il polpaccio contro il muro, ginocchio dietro teso, poi piegato. Walkito parte da 2\u00A0tenute da 30\u00A0secondi ciascuna. Tecnica: [allungamento della fascia plantare](/exercises/plantar-fascia-stretch/) (in inglese).',
+      a: 'L’allungamento della fascia plantare e quelli di polpaccio e soleo sono quelli a cui la linea guida del 2023 sul dolore al tallone dà una A, il suo grado più alto. Accavalla il piede sul ginocchio e tira indietro le dita per 30\u00A0secondi, la prima volta prima di alzarti al mattino. Poi allunga il polpaccio contro il muro, ginocchio dietro teso, poi piegato. Walkito parte da 2\u00A0tenute da 30\u00A0secondi ciascuna. Tecnica: [allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/).',
       cites: [CITE.guideline],
     },
     {
@@ -571,7 +598,7 @@ export const HEEL_PAIN_IT: Guide = {
     },
     {
       q: 'Camminare aiuta la fascite plantare?',
-      a: 'Camminare di solito va bene, ma da solo non è un esercizio per la fascite plantare. La linea guida del 2023 consiglia di regolare il carico invece di fermare l’attività. Se una camminata ti lascia i primi passi della mattina dopo chiaramente peggiori, la distanza o il ritmo erano troppo. Allungarsi prima di camminare, soprattutto con l’[allungamento della fascia plantare](/exercises/plantar-fascia-stretch/) (in inglese) prima dei primi passi, rende più facili i primi minuti.',
+      a: 'Camminare di solito va bene, ma da solo non è un esercizio per la fascite plantare. La linea guida del 2023 consiglia di regolare il carico invece di fermare l’attività. Se una camminata ti lascia i primi passi della mattina dopo chiaramente peggiori, la distanza o il ritmo erano eccessivi. Allungarsi prima di camminare, soprattutto con l’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) prima dei primi passi, rende più facili i primi minuti.',
     },
   ],
   redFlags: RED_FLAGS,
@@ -579,7 +606,7 @@ export const HEEL_PAIN_IT: Guide = {
     h2: 'Farlo come un piano',
     text: `Non devi capire da solo l’ordine, le dosi o per quanto restare su ogni esercizio. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila.`,
     more: [
-      `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/calf-raise-test/) (in inglese), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,
+      `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/it/test-sollevamento-punte/), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,
     ],
     cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
   },

@@ -33,10 +33,10 @@ export const ABOUT_FR: About = {
       h2: 'Notre méthode de recherche',
       id: 'how-we-research',
       paragraphs: [
-        'Walkito Research écrit les guides de ce site\u00A0: [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), [exercices pour pieds plats](/fr/exercices-pieds-plats/), [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [la page des données scientifiques](/science/) (en anglais). Nous les construisons à partir de recommandations de pratique clinique, d’essais randomisés et de revues systématiques. Nous n’utilisons pas d’articles de blog, de forums ni de résumés d’autres sites comme source. Quand un résumé cite une étude, nous allons lire l’étude.',
+        'Rahim Hudaykylyyev et Rahman Bazarov, les deux cofondateurs de Walkito, écrivent les guides de ce site\u00A0: [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), [exercices pour pieds plats](/fr/exercices-pieds-plats/), [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [la page des données scientifiques](/science/) (en anglais). Nous les construisons à partir de recommandations de pratique clinique, d’essais randomisés et de revues systématiques. Nous n’utilisons pas d’articles de blog, de forums ni de résumés d’autres sites comme source. Quand un résumé cite une étude, nous allons lire l’étude.',
         'Nous lisons l’article complet, pas seulement le résumé, avant qu’un chiffre qui en vient arrive sur une page. Chaque dose, note et chiffre renvoie à l’étude qui le soutient, pour que vous puissiez l’ouvrir et vérifier.',
-        'Les exercices et les affirmations portent l’un de trois niveaux de preuve. **Solide** veut dire qu’une recommandation clinique lui donne une bonne note, ou que plusieurs bons essais concordent. **Modérée** veut dire qu’au moins un essai bien conçu le soutient. **Préliminaire** veut dire que la recherche est petite ou commence à peine\u00A0: ça vaut la peine d’essayer, et le niveau peut changer avec de nouvelles études. Une règle populaire qu’un essai a testée sans la confirmer est marquée **Non étayé**.',
-        'Walkito n’a pas de sponsors, pas de liens d’affiliation et pas de placements payants. Rien n’est sur une page parce que quelqu’un a payé pour. Nous revérifions une page quand de nouvelles recherches sortent sur son sujet. Chaque guide suit cinq règles\u00A0:',
+        'Les exercices et les affirmations portent l’un des trois niveaux de preuve. **Solide** veut dire qu’une recommandation clinique lui donne une bonne note, ou que plusieurs bons essais concordent. **Modérée** veut dire qu’au moins un essai bien conçu le soutient. **Préliminaire** veut dire que la recherche est petite ou commence à peine\u00A0: ça vaut la peine d’essayer, et le niveau peut changer avec de nouvelles études. Une règle populaire qu’un essai a testée sans la confirmer est marquée **Non étayé**.',
+        'Walkito n’a pas de sponsors, pas de liens d’affiliation et pas de placements payants. Aucun contenu n’est publié contre paiement. Nous revérifions une page quand de nouvelles recherches sortent sur son sujet. Chaque guide suit cinq règles\u00A0:',
       ],
       bullets: [
         '**Chaque chiffre remonte à une source primaire.** C’est-à-dire un essai randomisé, une méta-analyse ou une recommandation clinique. La source est indiquée et liée sur la page qui l’utilise. Si nous ne pouvons pas faire remonter un chiffre à l’une d’elles, il ne va pas sur le site. Nous avons déjà supprimé des phrases pour cette raison.',
@@ -71,7 +71,7 @@ export const ABOUT_FR: About = {
       h2: 'Un professionnel de santé a-t-il relu les guides de Walkito\u00A0?',
       id: 'clinician',
       paragraphs: [
-        'Aucun professionnel de santé diplômé n’a encore relu les guides de Walkito. Walkito Research les écrit à partir des recherches publiées citées sur chaque page.',
+        'Aucun professionnel de santé diplômé n’a encore relu les guides de Walkito. Rahim et Rahman les écrivent à partir des recherches publiées citées sur chaque page.',
         'Quand un professionnel de santé les relira, cette page indiquera son nom, ses diplômes et ce qu’il a vérifié. D’ici là, aucune page de ce site ne prétend avoir été relue par un médecin.',
       ],
     },

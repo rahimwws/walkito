@@ -43,7 +43,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       h2: 'La spina calcaneare è la stessa cosa della fascite plantare?',
       figure: { id: 'heel-side', caption: 'Una spina calcaneare, quando c’è, si forma nella parte inferiore dell’osso del tallone, vicino al punto in cui si attacca la fascia plantare.', alt: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.' },
       paragraphs: [
-        'Spina calcaneare e fascite plantare non sono la stessa cosa. La fascite plantare è un problema del tessuto molle: la fascia plantare, la banda spessa che va dall’osso del tallone alle dita, si irrita, di solito dove si attacca all’osso. La spina calcaneare è una sporgenza ossea sulla parte inferiore dell’osso del tallone (il calcagno). Le due spesso convivono, ma ognuna può comparire senza l’altra.',
+        '**Spina calcaneare e fascite plantare non sono la stessa cosa.** La fascite plantare è un problema del tessuto molle: la fascia plantare, la banda spessa che va dall’osso del tallone alle dita, si irrita, di solito dove si attacca all’osso. La spina calcaneare è una sporgenza ossea sulla parte inferiore dell’osso del tallone (il calcagno). Le due spesso convivono, ma ognuna può comparire senza l’altra.',
         'La fascite plantare dà il dolore acuto, a fitta, che le persone descrivono sotto il tallone, soprattutto ai primi passi del mattino o dopo essere state sedute. La linea guida del 2023 sul dolore al tallone la definisce come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». La spina calcaneare invece è un reperto strutturale in una radiografia. Può dare sintomi propri oppure no.',
         'La confusione è comprensibile. Per decenni si è pensato che la spina calcaneare fosse la causa del dolore sotto il tallone. Quell’idea è stata in gran parte sostituita da prove che mostrano che le spine sono comuni in persone senza dolore, e che molte persone con fascite plantare non hanno alcuna spina.',
       ],
@@ -53,8 +53,17 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       h2: 'La spina calcaneare fa davvero male?',
       keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, una spina calcaneare ai raggi X compariva da sola solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
       paragraphs: [
-        'La maggior parte delle spine calcaneari non fa male. La ricerca mostra in modo coerente che le spine si trovano in persone senza sintomi al tallone, e che togliere la spina non fa passare il dolore in modo affidabile.',
-        'In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, le radiografie hanno trovato una spina calcaneare nel 26,5% dei piedi e l’ecografia una fascia plantare ispessita nel 47,3% dei piedi. Le due di solito comparivano insieme, e una spina da sola era rara (6% dei piedi). Le persone con dolore al tallone avevano circa il doppio delle probabilità di avere entrambe insieme (Menz e colleghi, 2019). In altre parole, la spina raramente compare senza il cambiamento del tessuto molle che la accompagna.',
+        '**La maggior parte delle spine calcaneari non fa male.** La ricerca mostra in modo coerente che le spine si trovano in persone senza sintomi al tallone, e che togliere la spina non fa passare il dolore in modo affidabile.',
+        'In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede:',
+        {
+          list: [
+            'Le radiografie hanno trovato una spina calcaneare nel 26,5% dei piedi.',
+            'L’ecografia ha trovato una fascia plantare ispessita nel 47,3% dei piedi.',
+            'Le due di solito comparivano insieme, e una spina da sola era rara (6% dei piedi).',
+            'Nelle persone con dolore al tallone, avere entrambe insieme aveva un odds ratio di circa 2 (Menz e colleghi, 2019).',
+          ],
+        },
+        'In altre parole, la spina raramente compare senza il cambiamento del tessuto molle che la accompagna.',
         'In un altro studio, su 216\u00A0anziani tra i 62 e i 94\u00A0anni, il 55% aveva almeno una spina calcaneare plantare ai raggi X. Le spine erano legate all’obesità, all’artrosi e a una storia di dolore al tallone, ma non alla forma del piede. Gli autori hanno ipotizzato che le spine possano essere una risposta di adattamento alla compressione verticale del tallone, non il risultato della fascia plantare che tira sull’osso (Menz e colleghi, 2008).',
         'Lo studio di Menz del 2008 nota che ricerche precedenti nella popolazione generale avevano riportato una frequenza della spina calcaneare tra l’11 e il 16%, molto sotto il 55% trovato dagli autori nel loro campione di anziani. In quello stesso campione, circa 6\u00A0persone su 10 con una spina non avevano mai avuto dolore al tallone, anche se il dolore al tallone era comunque più comune in chi aveva una spina (40%) che in chi non l’aveva (12%) (Menz e colleghi, 2008). Una spina aumenta le probabilità, ma non decide chi avrà dolore.',
       ],
@@ -68,24 +77,39 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       paragraphs: [
         'Le spine calcaneari sono comuni. La frequenza dipende dalla fascia d’età e dal metodo usato per cercarle.',
         'Lo studio di Menz del 2008 sugli anziani cita ricerche precedenti che riportavano una frequenza della spina calcaneare tra l’11 e il 16% nella popolazione generale, un intervallo molto sotto il 55% trovato dagli autori nel loro campione di 216\u00A0persone tra i 62 e i 94\u00A0anni. Un altro studio con risonanza magnetica su 77\u00A0volontari senza sintomi (età media 48\u00A0anni, tra i 23 e gli 83) ha trovato una spina calcaneare in 15 di loro, il 19% (Ehrmann e colleghi, 2014).',
-        'Lo schema è coerente: una gran parte delle persone con una spina non ha sintomi, e una spina da sola non predice se qualcuno avrà dolore al tallone. Per questo la linea guida del 2023 sul dolore al tallone non indica la spina calcaneare come motivo per cambiare l’approccio con gli esercizi.',
+        'Lo schema è coerente: una gran parte delle persone con una spina non ha sintomi, e **una spina da sola non predice se qualcuno avrà dolore al tallone.** Per questo la linea guida del 2023 sul dolore al tallone non indica la spina calcaneare come motivo per cambiare l’approccio con gli esercizi.',
       ],
       cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: 'Cosa dice la linea guida del 2023 sulla spina calcaneare?',
       paragraphs: [
-        'La linea guida di pratica clinica del 2023 sul dolore al tallone, pubblicata sul Journal of Orthopaedic and Sports Physical Therapy, si concentra sulla fascite plantare come causa più comune del dolore sotto il tallone. Cita la «heel spur syndrome» (sindrome da spina calcaneare) come una delle diagnosi da distinguere, insieme alla sindrome del cuscinetto adiposo, all’irritazione dei nervi e alla frattura da stress del calcagno.',
+        'La linea guida di pratica clinica del 2023 sul dolore al tallone, pubblicata sul Journal of Orthopaedic and Sports Physical Therapy, si concentra sulla fascite plantare come causa più comune del dolore sotto il tallone. Cita la «heel spur syndrome» (sindrome da spina calcaneare) come una delle diagnosi da distinguere, insieme a:',
+        {
+          list: [
+            'La sindrome del cuscinetto adiposo.',
+            'L’irritazione dei nervi.',
+            'La frattura da stress del calcagno.',
+          ],
+        },
         'La linea guida non raccomanda esami di imaging come primo passo quando la visita clinica indica già una fascite plantare. Dice che gli esami di imaging «di solito non sono indicati per i pazienti che soddisfano i criteri clinici della fascite plantare, finché le cure conservative non falliscono». Quando si valuta un esame, la prima scelta è la radiografia sotto carico, poi l’ecografia o la risonanza magnetica se servono.',
-        'In pratica, un professionista sanitario che vede lo schema tipico, dolore ai primi passi del mattino, dolorabilità nella parte interna del tallone e caviglia meno flessibile, può far iniziare stretching e lavoro di forza senza aspettare una radiografia. La presenza o l’assenza di una spina in una radiografia fatta dopo non cambia il piano di esercizi.',
+        'In pratica, un professionista sanitario che vede lo schema tipico, dolore ai primi passi del mattino, dolorabilità nella parte interna del tallone e caviglia meno flessibile, può far iniziare stretching e lavoro di forza senza aspettare una radiografia. **La presenza o l’assenza di una spina in una radiografia fatta dopo non cambia il piano di esercizi.**',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Serve una radiografia per distinguere fascite plantare e spina calcaneare?',
       paragraphs: [
-        'Di solito per la fascite plantare non serve una radiografia. La diagnosi è clinica: si basa su dove fa male, quando fa male e cosa lo peggiora. Una radiografia può mostrare una spina calcaneare, ma trovarla non cambia cosa fai per il dolore, e non trovarla non esclude la fascite plantare.',
-        'Gli esami di imaging diventano utili quando il dolore non segue lo schema tipico della fascite plantare, quando non è migliorato dopo diverse settimane di cure conservative, o quando un professionista sanitario sospetta altro, come una frattura da stress, un problema ai nervi o una rottura della fascia plantare. L’ecografia può misurare lo spessore della fascia plantare (un valore sopra i 4\u00A0mm di solito si considera ispessito), e la risonanza magnetica può mostrare dettagli dei tessuti molli che la radiografia non vede.',
+        '**Di solito per la fascite plantare non serve una radiografia.** La diagnosi è clinica: si basa su dove fa male, quando fa male e cosa lo peggiora. Una radiografia può mostrare una spina calcaneare, ma trovarla non cambia cosa fai per il dolore, e non trovarla non esclude la fascite plantare.',
+        'Gli esami di imaging diventano utili:',
+        {
+          list: [
+            'Quando il dolore non segue lo schema tipico della fascite plantare.',
+            'Quando non è migliorato dopo diverse settimane di cure conservative.',
+            'Quando un professionista sanitario sospetta altro, come una frattura da stress, un problema ai nervi o una rottura della fascia plantare.',
+          ],
+        },
+        'L’ecografia può misurare lo spessore della fascia plantare (un valore sopra i 4\u00A0mm di solito si considera ispessito), e la risonanza magnetica può mostrare dettagli dei tessuti molli che la radiografia non vede.',
         'Se ti hanno già detto che hai una spina calcaneare in una radiografia, la spina in sé quasi mai richiede un’attenzione a parte. Gli esercizi e gli allungamenti che aiutano la fascite plantare lavorano anche sul tessuto molle intorno alla spina. Vedi [esercizi per la spina calcaneare](/it/spina-calcaneare-esercizi/) per la routine completa.',
       ],
       cites: [CITE.guideline],
@@ -94,8 +118,14 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       h2: 'Se il problema non è la spina, cos’è?',
       paragraphs: [
         'Il dolore di solito viene dalla fascia plantare e dai tessuti intorno, non dall’osso. La fascia plantare si attacca alla parte inferiore dell’osso del tallone. Quando è sovraccaricata, soprattutto in chi ha un polpaccio rigido, un indice di massa corporea alto o passa molte ore in piedi, quel punto di attacco si irrita. Quell’irritazione è la fascite plantare.',
-        'Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, aveva l’odds ratio più alto tra tutti i fattori misurati. Anche stare in piedi per gran parte della giornata di lavoro era significativo, con probabilità 3,6\u00A0volte più alte (Riddle e colleghi, 2003).',
-        'La spina, quando c’è, sta lì vicino. Potrebbe essersi formata in mesi o anni in risposta allo stesso stress meccanico che ha irritato la fascia. Ma sono la fascia e il polpaccio a rispondere a stretching e rinforzo, non l’osso. Per questo la linea guida raccomanda l’esercizio, non la rimozione della spina.',
+        'Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli:',
+        {
+          list: [
+            'Una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, aveva l’odds ratio più alto tra tutti i fattori misurati.',
+            'Anche stare in piedi per gran parte della giornata di lavoro era significativo, con un odds ratio di 3,6 (Riddle e colleghi, 2003).',
+          ],
+        },
+        'La spina, quando c’è, sta lì vicino. Potrebbe essersi formata in mesi o anni in risposta allo stesso stress meccanico che ha irritato la fascia. Ma **sono la fascia e il polpaccio a rispondere a stretching e rinforzo, non l’osso.** Per questo la linea guida raccomanda l’esercizio, non la rimozione della spina.',
         'Per una panoramica completa sulla fascite plantare, con cause, fattori di rischio e raccomandazioni della linea guida, vedi [fascite plantare](/it/fascite-plantare/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -103,7 +133,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
     {
       h2: 'La spina calcaneare va mai tolta?',
       paragraphs: [
-        'La rimozione chirurgica di una spina calcaneare è rara e non è un’opzione di prima scelta. La linea guida del 2023 non raccomanda di togliere la spina nella fascite plantare. Diversi studi hanno mostrato che il dolore da fascite plantare può risolversi con cure conservative anche quando la spina resta nella radiografia. L’American Academy of Orthopaedic Surgeons dice chiaramente che «le spine calcaneari non causano il dolore della fascite plantare» e che «il dolore della fascite plantare si può trattare senza togliere la spina».',
+        'La rimozione chirurgica di una spina calcaneare è rara e non è un’opzione di prima scelta. **La linea guida del 2023 non raccomanda di togliere la spina nella fascite plantare.** Diversi studi hanno mostrato che il dolore da fascite plantare può risolversi con cure conservative anche quando la spina resta nella radiografia. L’American Academy of Orthopaedic Surgeons dice chiaramente che «le spine calcaneari non causano il dolore della fascite plantare» e che «il dolore della fascite plantare si può trattare senza togliere la spina».',
         'A volte si valuta la chirurgia quando il dolore non ha risposto a mesi di trattamento conservativo, ma l’intervento di solito è un rilascio parziale della fascia plantare, non una rimozione della spina. Se durante quell’intervento viene tolta anche la spina, le prove suggeriscono che il beneficio venga dal rilascio della fascia, non dalla rimozione dell’osso.',
         'La grande maggioranza delle persone con dolore al tallone e una spina migliora con lo stesso stretching, lo stesso lavoro sul polpaccio e la stessa gestione del carico di chi non ha la spina. Vedi [esercizi per la spina calcaneare](/it/spina-calcaneare-esercizi/) per la routine pratica.',
       ],
@@ -130,7 +160,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
         },
         {
           name: 'Allungamento del polpaccio (ginocchio teso)',
-          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più esterno.' },
+          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più superficiale.' },
           dose: '2\u00A0tenute da 30\u00A0secondi, ogni gamba',
           how: 'Mani al muro. Gamba dietro tesa, tallone giù, fianchi in avanti. Un polpaccio rigido tira il tallone attraverso il tendine d’Achille e aggiunge carico alla fascia.',
           often: 'Quasi tutte le sessioni',

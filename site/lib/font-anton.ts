@@ -22,6 +22,8 @@ export const anton = Anton({
   // in the CSS (next/font includes every subset) and loads only if a headline
   // actually uses one of its letters.
   subsets: ['latin'],
+  // 'swap': the hero headline keeps its lines while the face loads because
+  // of 'Anton Caps Fallback' in globals.css, so swapping causes no jump.
   display: 'swap',
   variable: '--font-display',
 });

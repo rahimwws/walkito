@@ -33,7 +33,14 @@ export const TOP_OF_FOOT_ES: Guide = {
       h2: '¿Qué causa el dolor en el empeine del pie?',
       keyFact: 'Una fractura por estrés de un metatarsiano puede no aparecer en una radiografía simple hasta dos o tres semanas después de empezar los síntomas, por lo que una resonancia magnética puede confirmarla antes (Patel y colegas, 2011).',
       paragraphs: [
-        '**Tendinitis de los extensores** es la causa más común. Los tendones extensores recorren el empeine del pie desde la tibia hasta los dedos. Levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor a lo largo del empeine que empeora con la actividad y muchas veces duele cuando jalas los dedos hacia arriba contra resistencia. Los detonantes habituales son cordones de zapato que presionan directo sobre los tendones, un aumento repentino en la distancia que caminas o corres, o zapatos con una lengüeta rígida.',
+        '**Tendinitis de los extensores** es la causa más común. Los tendones extensores recorren el empeine del pie desde la tibia hasta los dedos. Levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor a lo largo del empeine que empeora con la actividad y muchas veces duele cuando jalas los dedos hacia arriba contra resistencia. Los detonantes habituales son:',
+        {
+          list: [
+            'Cordones de zapato que presionan directo sobre los tendones.',
+            'Un aumento repentino en la distancia que caminas o corres.',
+            'Zapatos con una lengüeta rígida.',
+          ],
+        },
         '**Fractura por estrés de un metatarsiano** es una pequeña fisura en uno de los huesos largos del pie, casi siempre en el segundo o el tercero. El dolor está más localizado que el de la tendinitis, se centra en un solo punto y tiende a empeorar a lo largo del día. La hinchazón en el empeine es común. Las fracturas por estrés pueden tardar dos o tres semanas en aparecer en una radiografía simple, así que los estudios tempranos pueden necesitar una resonancia magnética. Este caso requiere reposo, no ejercicio.',
         '**Espolón óseo dorsal** (también llamado exostosis metatarsal) es un bulto de hueso que se forma en la parte de arriba de las articulaciones del pie medio, normalmente donde los metatarsianos se juntan con los cuneiformes. Se desarrolla gradualmente por años de compresión en esas articulaciones. El espolón en sí puede no doler, pero puede presionar contra la lengüeta del zapato o irritar un nervio que pasa por encima.',
         '**Gota** puede causar un dolor repentino e intenso en el empeine del pie, casi siempre en la articulación del dedo gordo. La articulación se pone roja, hinchada, caliente y extremadamente sensible. La gota se produce por depósitos de cristales de ácido úrico y necesita manejo médico. El ejercicio no ayuda durante un episodio agudo de gota.',
@@ -45,15 +52,23 @@ export const TOP_OF_FOOT_ES: Guide = {
     {
       h2: '¿Cómo distinguir estas causas?',
       paragraphs: [
-        'La ubicación y el patrón son las primeras pistas. La tendinitis de los extensores produce un dolor amplio a lo largo de los tendones que empeora cuando jalas los dedos hacia arriba. Una fractura por estrés duele en un solo punto y empeora a lo largo del día. La gota aparece de golpe, normalmente en la articulación del dedo gordo, con enrojecimiento y calor. El dolor de nervio tiende a ser tipo ardor u hormigueo, no un dolor profundo y sordo.',
+        'La ubicación y el patrón son las primeras pistas:',
+        {
+          list: [
+            '**La tendinitis de los extensores** produce un dolor amplio a lo largo de los tendones que empeora cuando jalas los dedos hacia arriba.',
+            '**Una fractura por estrés** duele en un solo punto y empeora a lo largo del día.',
+            '**La gota** aparece de golpe, normalmente en la articulación del dedo gordo, con enrojecimiento y calor.',
+            '**El dolor de nervio** tiende a ser tipo ardor u hormigueo, no un dolor profundo y sordo.',
+          ],
+        },
         'Un profesional de la salud muchas veces puede notar la diferencia con un examen físico. La extensión de los dedos contra resistencia (jalar los dedos hacia arriba contra presión) reproduce el dolor de la tendinitis. Un punto muy sensible sobre un hueso con hinchazón localizada sugiere una fractura por estrés. Si se sospecha una fractura por estrés, los estudios de imagen son importantes porque seguir cargando un hueso fracturado puede empeorarlo.',
-        'Si el dolor solo está presente con zapatos y se va al andar descalzo, la presión del zapato es el factor más probable. Si persiste en reposo o te despierta por la noche, vale la pena investigar algo más allá de una simple tendinitis.',
+        'Si el dolor solo está presente con zapatos y se va al andar descalzo, **la presión del zapato es el factor más probable.** Si persiste en reposo o te despierta por la noche, vale la pena investigar algo más allá de una simple tendinitis.',
       ],
     },
     {
       h2: '¿Qué ayuda con la tendinitis de los extensores?',
       paragraphs: [
-        'El primer paso más rápido suele ser cambiar la forma de atar los cordones. Sáltate el ojal justo sobre el punto que duele. Muchos zapatos deportivos tienen suficientes ojales para pasar el cordón alrededor de la zona sensible sin perder soporte en el resto. Esto quita la presión directa que empezó el problema.',
+        '**El primer paso más rápido suele ser cambiar la forma de atar los cordones.** Sáltate el ojal justo sobre el punto que duele. Muchos zapatos deportivos tienen suficientes ojales para pasar el cordón alrededor de la zona sensible sin perder soporte en el resto. Esto quita la presión directa que empezó el problema.',
         'Los zapatos con una lengüeta acolchada o flexible comprimen menos los tendones. Si usas botas, tacos o zapatos de vestir con un empeine rígido, la presión desde arriba del zapato muchas veces es toda la historia.',
         'Reducir temporalmente la actividad que detonó el dolor ayuda. Si el dolor empezó cuando aumentaste la distancia que caminas o corres, baja al nivel anterior por una o dos semanas y después sube de nuevo gradualmente.',
         'Hielo sobre los tendones adoloridos por 10 a 15\u00A0minutos después de la actividad puede ayudar a calmar la irritación en los primeros días. Los antiinflamatorios son una opción a corto plazo si el dolor interfiere con la vida diaria, pero no aceleran la recuperación de fondo.',
@@ -62,8 +77,9 @@ export const TOP_OF_FOOT_ES: Guide = {
     {
       h2: '¿El ejercicio ayuda con el dolor en el empeine?',
       paragraphs: [
-        'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine o la tendinitis de los extensores. La verdad es que no sabemos si el ejercicio acelera la recuperación de la tendinitis de los extensores comparado con cambiar los cordones y descansar.',
-        'Lo que el ejercicio puede abordar son los factores que contribuyen. El tibial anterior, el músculo del frente de la tibia que levanta el pie, también es un extensor. Cuando está débil en comparación con la pantorrilla, los tendones extensores más pequeños del empeine cargan más al caminar. Fortalecer el tibial anterior con elevaciones de la punta del pie (levantar la parte delantera del pie estando de pie contra una pared) es una forma de reducir ese desequilibrio. Mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más sobre el tibial anterior.',
+        'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine o la tendinitis de los extensores. La verdad es que **no sabemos si el ejercicio acelera la recuperación de la tendinitis de los extensores** comparado con cambiar los cordones y descansar.',
+        'Lo que el ejercicio puede abordar son los factores que contribuyen. El tibial anterior, el músculo del frente de la tibia que levanta el pie, también es un extensor. Cuando está débil en comparación con la pantorrilla, los tendones extensores más pequeños del empeine cargan más al caminar.',
+        'Fortalecer el tibial anterior con elevaciones de la punta del pie (levantar la parte delantera del pie estando de pie contra una pared) es una forma de reducir ese desequilibrio. Mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más sobre el tibial anterior.',
         'El estiramiento de pantorrilla es relevante si la dorsiflexión del tobillo está limitada. Cuando el tobillo no se dobla lo suficiente, el pie compensa de formas que pueden aumentar el estrés en las estructuras del empeine. La pantorrilla rígida también es un factor de riesgo compartido con la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y la sobrecarga de la parte delantera del pie.',
         'Para los espolones óseos y la artritis del pie medio, el ejercicio no cambia la anatomía ósea. El trabajo de movilidad del tobillo puede ayudar a mantener el rango, y el fortalecimiento puede reducir los síntomas, pero el espolón o la degeneración articular se quedan. Para las fracturas por estrés, el ejercicio no es el camino hasta que el hueso se haya recuperado.',
       ],
@@ -94,7 +110,7 @@ export const TOP_OF_FOOT_ES: Guide = {
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'Dolor en el tendón de Aquiles',
-          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para condiciones de la pierna relacionadas. No se ha probado para la tendinitis de los extensores específicamente.' },
+          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para afecciones de la pierna relacionadas. No se ha probado para la tendinitis de los extensores específicamente.' },
           media: 'calf_stretch_straight',
           caption: 'Estiramiento de pantorrilla: pierna de atrás estirada, talón abajo, cadera hacia adelante',
           alt: 'Una figura apoyada en una pared con la pierna de atrás estirada, con la pantorrilla resaltada',
@@ -118,18 +134,26 @@ export const TOP_OF_FOOT_ES: Guide = {
       h2: '¿Cuándo el dolor en el empeine es una fractura por estrés?',
       paragraphs: [
         'La fractura por estrés de un metatarsiano es la causa que más importa descartar, porque seguir cargando un hueso fracturado puede convertir una fisura pequeña en una fractura completa.',
-        'Las fracturas por estrés suelen desarrollarse gradualmente por impacto repetitivo. Son más comunes en corredores, reclutas militares y personas que aumentaron su actividad de golpe. El dolor está en un solo punto, empeora con la actividad que carga peso y puede doler de noche. La hinchazón en el empeine sobre el hueso que duele es común.',
+        'Las fracturas por estrés suelen desarrollarse gradualmente por impacto repetitivo. Son más comunes en:',
+        {
+          list: [
+            'Corredores.',
+            'Reclutas militares.',
+            'Personas que aumentaron su actividad de golpe.',
+          ],
+        },
+        'El dolor está en un solo punto, empeora con la actividad que carga peso y puede doler de noche. La hinchazón en el empeine sobre el hueso que duele es común.',
         'Una radiografía simple puede no mostrar una fractura por estrés en las primeras dos o tres semanas. Si un profesional de la salud sospecha una, una resonancia magnética o una gammagrafía ósea puede confirmarla antes. El enfoque es reposo y carga de peso protegida, no ejercicio. Volver a la actividad demasiado pronto puede llevar a una fractura completa.',
-        'Si el dolor apareció después de un salto en el volumen de entrenamiento, está en un solo punto y empeora a lo largo del día, consulta a un profesional de la salud antes de hacer cualquiera de los ejercicios de esta página.',
+        'Si el dolor apareció después de un salto en el volumen de entrenamiento, está en un solo punto y empeora a lo largo del día, **consulta a un profesional de la salud antes de hacer cualquiera de los ejercicios de esta página.**',
       ],
       cites: [CITE.patelStressFracture],
     },
     {
       h2: '¿Y la gota en el empeine?',
       paragraphs: [
-        'La gota es una condición inflamatoria causada por cristales de ácido úrico que se depositan en una articulación. Clásicamente afecta la articulación del dedo gordo (la primera metatarsofalángica), pero puede afectar cualquier articulación del pie, incluido el pie medio.',
+        'La gota es una afección inflamatoria causada por cristales de ácido úrico que se depositan en una articulación. Clásicamente afecta la articulación del dedo gordo (la primera metatarsofalángica), pero puede afectar cualquier articulación del pie, incluido el pie medio.',
         'Un episodio de gota aparece rápido, muchas veces de la noche a la mañana. La articulación se vuelve intensamente dolorosa, roja, caliente e hinchada. Se ve y se siente diferente de la tendinitis o de una fractura por estrés. Si tienes un dolor repentino e intenso en una sola articulación con enrojecimiento y calor, es una razón para consultar a un profesional de la salud pronto. Los análisis de sangre y a veces el análisis del líquido articular confirman el diagnóstico.',
-        'La gota necesita manejo médico. El ejercicio, los cambios de zapatos y los estiramientos no ayudan durante un episodio agudo. Entre episodios, mantener la movilidad del pie y el tobillo es razonable, pero el problema de fondo con el ácido úrico se maneja con medicamentos y cambios en la alimentación.',
+        '**La gota necesita manejo médico.** El ejercicio, los cambios de zapatos y los estiramientos no ayudan durante un episodio agudo. Entre episodios, mantener la movilidad del pie y el tobillo es razonable, pero el problema de fondo con el ácido úrico se maneja con medicamentos y cambios en la alimentación.',
       ],
     },
   ],

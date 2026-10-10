@@ -28,7 +28,8 @@
    * corner on a 76pt button (0.42 of the height), with the continuous curve
    * iOS draws (`borderCurve: 'continuous'`). The web's version of that curve is
    * `corner-shape: superellipse()`, applied below where a browser has it;
-   * elsewhere the same radius is a plain arc.
+   * elsewhere the same radius is a plain arc. Everywhere at 1.5 (1.2, 1.35
+   * and 1.45 were tried and read too round).
    */
   --radius-button: 18px;
   --radius-button-lg: 24px;
@@ -1686,10 +1687,11 @@ figcaption {
   background:
     linear-gradient(180deg,
       var(--icon-deep) 0%,
-      #0b52ff 16%,
-      #3d8bff 32%,
-      #a9c8ff 47%,
-      #e4ddff 62%,
+      #0b52ff 20%,
+      #1f5fff 36%,
+      #3d7dff 46%,
+      #8fb4ff 55%,
+      #e4ddff 66%,
       #ece4ff 100%);
 }
 
@@ -1722,7 +1724,8 @@ figcaption {
 .sky-b {
   width: 40vw;
   height: 34vw;
-  top: 38%;
+  /* Below the headline: pale glows behind it would wash out its lilac. */
+  top: 54%;
   left: -14vw;
   background: var(--icon-pink);
   opacity: 0.7;
@@ -1731,7 +1734,7 @@ figcaption {
 .sky-c {
   width: 36vw;
   height: 30vw;
-  top: 46%;
+  top: 58%;
   right: -8vw;
   background: var(--icon-lilac);
   opacity: 0.5;
@@ -1756,7 +1759,7 @@ figcaption {
 .sky-s2 {
   top: 26%;
   left: -18%;
-  opacity: 0.6;
+  opacity: 0.25;
   transform: rotate(-32deg);
 }
 
@@ -1984,7 +1987,7 @@ figcaption {
   }
 }
 
-/* ---- the headline over the fade ---- */
+/* ---- the lead under the fade ---- */
 
 .hero-glass .hero-text {
   position: relative;
@@ -1992,25 +1995,6 @@ figcaption {
   /* A short overlap only, over the part of the device box where the phone
      has already faded out and no card reaches. */
   margin-top: calc(var(--pw) * -0.12);
-}
-
-.hero-glass h1 {
-  font-size: clamp(48px, 7vw, 112px);
-  line-height: 0.98;
-}
-
-.hero-glass h1 {
-  /* The icon's blue, a step brighter than its deepest stop, so the first line
-     reads clearly over the phone fading under it. */
-  color: #1652ff;
-}
-
-.hero-glass h1 span {
-  color: var(--ink);
-}
-
-.hero-glass .hero-text > p:not(.hero-small) {
-  margin-top: 28px;
 }
 
 /* The lead and the small line sit on the band's lilac foot, where the page's
@@ -2170,7 +2154,8 @@ figcaption {
 /* ---- the "Get the app" dialog ---- */
 
 .get-dialog {
-  width: min(400px, calc(100vw - 32px));
+  width: min(600px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
   padding: 0;
   border: 0;
   background: transparent;
@@ -2184,62 +2169,95 @@ figcaption {
 }
 
 .get-dialog[open] {
-  animation: get-in 0.22s ease-out;
+  animation: get-in 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes get-in {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(0.98);
+    transform: translateY(14px) scale(0.97);
   }
 }
 
+/* White card: the title and the cross on one row, then the grey panel. */
 .get-card {
-  position: relative;
   display: grid;
-  justify-items: center;
-  gap: 14px;
-  padding: 32px 28px 28px;
-  border-radius: 32px;
-  background: var(--paper);
-  text-align: center;
+  gap: 20px;
+  padding: 28px 16px 16px;
+  border-radius: 44px;
+  background: #fff;
   color: var(--ink);
 }
 
-.get-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border: 0;
-  border-radius: 50%;
-  background: #f1f1f4;
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.get-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+.get-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-inline: 20px 8px;
 }
 
 .get-card h2 {
   margin: 0;
-  font-size: 24px;
-  font-weight: 800;
+  font-family: var(--font-body);
+  font-size: clamp(20px, 3.2vw, 26px);
+  font-weight: 600;
   letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.get-close {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.get-close:hover {
+  background: #f1f1f4;
+}
+
+.get-panel {
+  display: grid;
+  gap: 8px;
+  padding: 28px 20px 22px;
+  border-radius: 32px;
+  background: #f4f4f7;
+}
+
+/* The phone's top on the left, falling away; the code over its right edge. */
+.get-stage {
+  position: relative;
+  height: 320px;
+}
+
+.get-phone {
+  position: absolute;
+  left: 12%;
+  top: 0;
+  width: 230px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 98%);
+  mask-image: linear-gradient(180deg, #000 60%, transparent 98%);
 }
 
 .get-qr {
-  width: 200px;
-  padding: 10px;
-  border-radius: 24px;
+  position: absolute;
+  right: 6%;
+  top: 34px;
+  width: 236px;
+  padding: 22px;
+  border-radius: 48px;
   background: #fff;
-  box-shadow: inset 0 0 0 1px var(--hairline);
+  box-shadow: 0 18px 40px rgba(17, 17, 20, 0.08);
 }
 
 .get-qr svg {
@@ -2248,42 +2266,65 @@ figcaption {
   height: auto;
 }
 
-.get-scan {
-  max-width: 30ch;
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--muted);
+/* The icon in the cleared middle of the code. */
+.get-qr-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22%;
+  height: auto;
+  border-radius: 22%;
+  translate: -50% -50%;
 }
 
 .get-stores {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 100%;
-  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 32px;
 }
 
 .get-store {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 52px;
-  padding: 0 12px;
-  border-radius: var(--radius-button);
-  background: var(--ink);
-  color: #fff;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 4px;
+  color: var(--ink);
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.get-store:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .get-store-soon {
-  background: #f1f1f4;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.2;
+}
+
+.get-store-soon:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .get-stage {
+    height: 270px;
+  }
+
+  .get-phone {
+    left: 0;
+    width: 190px;
+  }
+
+  .get-qr {
+    right: 0;
+    width: 190px;
+    padding: 16px;
+    border-radius: 38px;
+  }
 }
 
 .handoff-card img[src='/icon.png'] {
@@ -2354,11 +2395,6 @@ figcaption {
   max-width: 1360px;
 }
 
-/* «Всё перепробовали?» is 9.6em wide in Oswald: 8.6vw keeps it on one line
-   down to 320px. */
-:lang(ru) .hero-glass h1 {
-  font-size: clamp(27px, 8.6vw, 96px);
-}
 
 /* Apple's mark in the "Get the app" buttons. */
 .download svg,
@@ -3289,16 +3325,16 @@ html[data-scrolled] .masthead-float .download {
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Over the hero's blue the burger is white, like the laptop's button. */
+  /* The burger is the icon alone, no tile: white over the hero's blue, ink
+     once the page has scrolled onto white. */
   .masthead-float .menu-toggle {
-    background: #fff;
-    color: var(--ink);
-    transition: background 0.4s ease, color 0.4s ease;
+    background: transparent;
+    color: #fff;
+    transition: color 0.4s ease;
   }
 
   html[data-scrolled] .masthead-float .menu-toggle {
-    background: rgba(8, 40, 200, 0.9);
-    color: #fff;
+    color: var(--ink);
   }
 
   .menu-panel[data-open] {
@@ -4736,23 +4772,382 @@ html[data-scrolled] .masthead-float .download {
   font-size: 15px;
 }
 
-/*
- * The hero headline, sized so its longer line fits the row in every language.
- *
- * The lines are the language's own ("Попробуйте план, созданный для ваших
- * стоп." is 41 characters to the English 31), so one size would wrap some to
- * four rows. On wide screens the size is the smaller of the design size and
- * what the longer line needs: about 0.46em a character in Anton capitals,
- * 0.54em in Oswald's Cyrillic. Phones keep the design size and wrap.
- */
-@media (min-width: 761px) {
-  .hero-glass h1 {
-    --h1-em: 0.46;
-    font-size: min(clamp(48px, 7vw, 112px), calc(min(94vw, 1300px) / (var(--h1-len, 31) * var(--h1-em))));
-  }
 
-  :lang(ru) .hero-glass h1 {
-    --h1-em: 0.54;
-    font-size: min(clamp(40px, 7vw, 96px), calc(min(94vw, 1300px) / (var(--h1-len, 31) * var(--h1-em))));
+/*
+ * A fallback for the hero headline that is as wide as Anton's capitals.
+ *
+ * next/font's own "Anton Fallback" (Arial at 90.69%) matches Anton's average
+ * width, which is mostly lowercase. The hero headline is all capitals, where
+ * Anton is far narrower: measured in Chrome, Anton capitals run 0.68-0.70 of
+ * Arial's. With the stock fallback the not-yet-loaded headline wrapped onto an
+ * extra line on phones and the page jumped when Anton arrived (PageSpeed CLS
+ * 0.087 on that headline). At 69.5% the lines break where Anton's do, so
+ * nothing moves when Anton swaps in.
+ * Russian uses Oswald, whose stock fallback is already within 4%.
+ */
+@font-face {
+  font-family: 'Anton Caps Fallback';
+  src: local('Arial'), local('Liberation Sans'), local('Helvetica');
+  size-adjust: 69.5%;
+  ascent-override: 129.7%;
+  descent-override: 36.29%;
+  line-gap-override: 0%;
+}
+
+html:not(:lang(ru)) .hero-glass h1.hero-title {
+  font-family: Anton, 'Anton Caps Fallback', var(--font-body);
+}
+
+/*
+ * The hero headline, set like the closing section's (components/home/cta.css):
+ * huge pale lilac capitals on the band's deep blue, a gradient down each word,
+ * the phone rising in front of the last line.
+ *
+ * Sized per language from the lengths HeroTitle passes in. Wide screens: the
+ * design size, or less if the first line would not stay whole or the second
+ * would need more than two rows. Phones: smaller, and never more than the
+ * longest word allows. About 0.46em a character in Anton capitals; Oswald's
+ * Cyrillic capitals run 0.54em on average and up to 0.6em in a long word.
+ * `h1.` to outweigh `:lang(ru) .hero h1`.
+ */
+.hero-glass h1.hero-title {
+  --h1-em: 0.46;
+  --h1-word-em: 0.48;
+  position: relative;
+  z-index: 1;
+  max-width: 1300px;
+  margin: 0.32em auto -0.22em;
+  font-size: min(12.5vw, calc(90vw / (var(--h1-word, 10) * var(--h1-word-em))));
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+:lang(ru) .hero-glass h1.hero-title {
+  --h1-em: 0.54;
+  --h1-word-em: 0.6;
+}
+
+@media (min-width: 761px) {
+  .hero-glass h1.hero-title {
+    margin-bottom: -0.4em;
+    font-size: min(
+      clamp(64px, 10.5vw, 168px),
+      calc(min(94vw, 1300px) / (var(--h1a-len, 17) * var(--h1-em))),
+      calc(min(94vw, 1300px) / (var(--h1b-len, 31) * var(--h1-word-em) / 2.1))
+    );
   }
+}
+
+.hero-glass .hero-line {
+  display: block;
+  --g0: #f1eeff;
+  --g1: #e2daff;
+}
+
+.hero-glass .hero-line + .hero-line {
+  --g0: #e2daff;
+  --g1: #c2b3ff;
+}
+
+/* A word and the clip it rises out of, reaching past the line above and below
+   so accents and descenders stay inside both (see .hcta-word). */
+.hero-glass .hero-word,
+.hero-glass .hero-word > span {
+  display: inline-block;
+  padding-block: 0.22em 0.08em;
+  margin-block: -0.22em -0.08em;
+}
+
+.hero-glass .hero-word {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.hero-glass .hero-word + .hero-word {
+  margin-left: 0.22em;
+}
+
+.hero-glass .hero-word > span {
+  color: #ddd5ff;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero-glass .hero-word > span {
+    background-image: linear-gradient(180deg, var(--g0), var(--g1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* The phone and the cards stand in front of the headline's last line, the
+   glass arch behind it: the device box makes no stacking context of its own,
+   so its children's z-index (phone 2, cards 1 and 3) meet the headline's 1. */
+
+/*
+ * The opening: the words rise in reading order, then the phone comes up and
+ * the app's pieces settle round it. CSS animations from the first paint (see
+ * HeroTitle); `both` holds each at its start until its turn.
+ */
+@keyframes hero-word-rise {
+  from {
+    translate: 0 110%;
+  }
+}
+
+@keyframes hero-phone-rise {
+  from {
+    opacity: 0;
+    translate: 0 14%;
+  }
+}
+
+@keyframes hero-piece-in {
+  from {
+    opacity: 0;
+    scale: 0.86;
+    translate: 0 24px;
+  }
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+}
+
+.hero-glass .hero-word > span {
+  animation: hero-word-rise 1.05s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.05s + var(--w) * 0.07s);
+}
+
+.hero-glass .hero-main {
+  animation: hero-phone-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+}
+
+.hero-glass .hero-piece > * {
+  animation: hero-piece-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-glass .card-nopain > * {
+  animation-delay: 0.7s;
+}
+
+.hero-glass .card-streak > * {
+  animation-delay: 0.8s;
+}
+
+.hero-glass .card-calf > * {
+  animation-delay: 0.9s;
+}
+
+.hero-glass .card-today > * {
+  animation-delay: 1s;
+}
+
+.hero-glass .hero-text {
+  animation: hero-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glass .hero-word > span,
+  .hero-glass .hero-main,
+  .hero-glass .hero-piece > *,
+  .hero-glass .hero-text {
+    animation: none;
+  }
+}
+
+/* ---- the burger's two bars ---- */
+
+.menu-bars {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 14px;
+}
+
+.menu-bars > span {
+  position: absolute;
+  right: 0;
+  height: 2.5px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: top 0.3s var(--ease-pull, ease), width 0.3s ease, rotate 0.3s var(--ease-pull, ease);
+}
+
+.menu-bars > span:first-child {
+  top: 0;
+  width: 24px;
+}
+
+.menu-bars > span:last-child {
+  top: 11.5px;
+  width: 15px;
+}
+
+.menu-toggle[aria-expanded='true'] .menu-bars > span {
+  top: 5.75px;
+  width: 22px;
+}
+
+.menu-toggle[aria-expanded='true'] .menu-bars > span:first-child {
+  rotate: 45deg;
+}
+
+.menu-toggle[aria-expanded='true'] .menu-bars > span:last-child {
+  rotate: -45deg;
+}
+
+/* ---- "Get the app" under the hero headline: the header's white button ---- */
+
+.hero-glass .hero-get {
+  gap: 10px;
+  margin-top: 8px;
+  min-height: 58px;
+  padding: 0 30px;
+  border-radius: var(--radius-button);
+  background: #fff;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  box-shadow: 0 10px 30px rgba(2, 20, 120, 0.22), inset 0 -2px 0 rgba(17, 17, 20, 0.06);
+}
+
+/* ---- the header's "Get the app" on home: glass, so it is not the hero's twin ---- */
+
+.masthead-float .download-alt {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+html[data-scrolled] .masthead-float .download-alt {
+  background: rgba(8, 40, 200, 0.86);
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-bars > span {
+    transition: none;
+  }
+}
+
+/* ---- the header's right end: the languages, then "Get the app" ---- */
+
+/* The wrapper keeps `.download` for the floating header's measuring, and none
+   of the button's look. Both children sit in its one cell, left-aligned, so it
+   keeps the size and the left edge the header measured. */
+.masthead .download.masthead-end,
+html[data-scrolled] .masthead-float .download.masthead-end {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.masthead-end > * {
+  grid-area: 1 / 1;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+/* A smaller button than the footer's: the globe and the name, no caret. */
+.masthead-end .lp-button {
+  gap: 7px;
+  min-height: 42px;
+  padding: 0 15px 0 12px;
+  font-size: 15px;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.masthead-end .lp-button svg {
+  display: block;
+  flex: none;
+}
+
+.masthead-end .lp-button:hover,
+.masthead-end .lp[open] .lp-button {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.masthead-get {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: var(--radius-button);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 20, 0.08);
+}
+
+.masthead-get svg {
+  width: 17px;
+  height: 17px;
+  margin-top: -2px;
+}
+
+/* At the top: the languages. */
+.masthead-end > .masthead-get {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Phones: neither; the burger's menu has both, the footer the languages. */
+@media (max-width: 760px) {
+  .masthead .download.masthead-end,
+  html[data-scrolled] .masthead-float .download.masthead-end {
+    display: none;
+  }
+}
+
+/* Scrolled: "Get the app". */
+html[data-scrolled] .masthead-end > .lp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html[data-scrolled] .masthead-end > .masthead-get {
+  opacity: 1;
+  visibility: visible;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .masthead-get {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+.lp-down .lp-menu {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+@keyframes lp-in-down {
+  from {
+    opacity: 0;
+    translate: 0 -6px;
+  }
+}
+
+.lp-down .lp-menu {
+  animation-name: lp-in-down;
 }

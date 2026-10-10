@@ -30,8 +30,16 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
     {
       h2: 'Que fait travailler la montée sur pointes avec serviette\u00A0?',
       paragraphs: [
-        'La montée sur pointes avec serviette fait travailler le gastrocnémien et le soléaire (les deux muscles du mollet), le tendon d’Achille et le fascia plantaire. En haut du mouvement, la serviette roulée relève les orteils, ce qui tire sur le fascia plantaire par le mécanisme de treuil. Sans la serviette, l’exercice entraîne surtout le mollet. Avec elle, le fascia prend une partie de la charge.',
-        'C’est pourquoi l’essai de Rathleff a utilisé la serviette précisément pour la fasciite plantaire, plutôt qu’une montée sur pointes simple. Le but est de charger ensemble la chaîne mollet-tendon d’Achille-fascia. Si votre douleur est dans le tendon d’Achille plutôt que sous le pied, une [descente excentrique du talon](/exercises/eccentric-heel-drops/) (en anglais) sans serviette est un meilleur point de départ.',
+        'La montée sur pointes avec serviette fait travailler\u00A0:',
+        {
+          list: [
+            'Le gastrocnémien et le soléaire (les deux muscles du mollet).',
+            'Le tendon d’Achille.',
+            'Le fascia plantaire.',
+          ],
+        },
+        'En haut du mouvement, la serviette roulée relève les orteils, ce qui tire sur le fascia plantaire par le mécanisme de treuil. Sans la serviette, l’exercice entraîne surtout le mollet. Avec elle, **le fascia prend une partie de la charge.**',
+        'C’est pourquoi l’essai de Rathleff a utilisé la serviette précisément pour la fasciite plantaire, plutôt qu’une montée sur pointes simple. Le but est de charger ensemble la chaîne mollet-tendon d’Achille-fascia. Si votre douleur est dans le tendon d’Achille plutôt que sous le pied, une [descente excentrique du talon](/fr/exercices/descentes-excentriques-talon/) sans serviette est un meilleur point de départ.',
       ],
       cites: [CITE.rathleff],
     },
@@ -39,8 +47,8 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
       h2: 'Comment faire la montée sur pointes avec serviette\u00A0?',
       paragraphs: [
         'Roulez une petite serviette en un cylindre à peu près de la largeur de votre poing. Posez-la au bord d’une marche. Tenez-vous sur un pied, les cinq orteils sur la serviette et l’avant du pied sur la marche. Tenez-vous à un mur ou à une rampe pour l’équilibre.',
-        'Montez en trois secondes, en poussant par le gros orteil. Tenez deux secondes en haut. Redescendez en trois secondes, en laissant le talon descendre un peu sous le niveau de la marche. Ce tempo lent fait partie du protocole. Des répétitions rapides réduisent la charge sur le tendon et le fascia.',
-        'Dans l’essai de Rathleff, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps seul ne suffisait plus à rendre la dernière répétition difficile. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous pouvez soulever pour exactement 12\u00A0répétitions contrôlées.',
+        'Montez en trois secondes, en poussant par le gros orteil. Tenez deux secondes en haut. Redescendez en trois secondes, en laissant le talon descendre un peu sous le niveau de la marche. **Ce tempo lent fait partie du protocole.** Des répétitions rapides réduisent la charge sur le tendon et le fascia.',
+        'Dans l’essai de Rathleff, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps seul ne suffisait plus à rendre la dernière répétition difficile. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous puissiez soulever pour exactement 12\u00A0répétitions contrôlées.',
       ],
       exercises: [
         {
@@ -80,16 +88,25 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec la montée sur pointes avec serviette\u00A0?',
       paragraphs: [
-        'Aller trop vite est l’erreur la plus fréquente. Une descente en trois secondes garde le mollet sous tension assez longtemps pour construire de la force. Rebondir de haut en bas en fait un exercice cardio, pas un exercice de renforcement.',
+        '**Aller trop vite est l’erreur la plus fréquente.** Une descente en trois secondes garde le mollet sous tension assez longtemps pour construire de la force. Rebondir de haut en bas en fait un exercice cardio, pas un exercice de renforcement.',
         'Laisser glisser la serviette, si bien qu’un ou deux orteils seulement reposent dessus, réduit la charge sur le fascia. Les cinq orteils doivent être sur la serviette. Si elle glisse sans arrêt, pliez-la plus épaisse ou prenez une serviette à main plutôt qu’une serviette de bain.',
-        'Commencer sur une jambe alors que les montées sur deux pieds sont encore difficiles mène à une mauvaise technique et à des compensations. Si une montée sur une jambe sur une marche est de trop pour l’instant, commencez par les [montées sur pointes sur deux pieds](/exercises/calf-raises/) (en anglais) au sol, et progressez.',
+        'Commencer sur une jambe alors que les montées sur deux pieds sont encore difficiles mène à une mauvaise technique et à des compensations. Si une montée sur une jambe sur une marche est de trop pour l’instant, commencez par les [montées sur pointes sur deux pieds](/fr/exercices/montees-sur-pointes/) au sol, et progressez.',
       ],
     },
     {
       h2: 'Versions plus faciles et plus difficiles',
       paragraphs: [
-        'Si la montée sur pointes avec serviette complète sur une marche est trop difficile, redescendez dans la chaîne du mollet. Les [montées sur pointes assis](/exercises/calf-raises/) (en anglais) sont la charge la plus faible. Les montées debout sur deux pieds viennent ensuite. Puis le maintien sur pointes en haut. Puis la montée sur une jambe avec serviette sur une marche. Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
-        'Si le poids du corps sur une jambe est trop facile, ajoutez de la charge. L’essai de Rathleff utilisait un sac à dos rempli de livres ou de bouteilles d’eau. En salle, vous avez accès à une machine à mollets ou à un gilet lesté. Le but est que la dernière répétition de chaque série soit vraiment la dernière que vous pouvez faire avec une bonne technique.',
+        'Si la montée sur pointes avec serviette complète sur une marche est trop difficile, revenez à une étape plus facile de la progression du mollet\u00A0:',
+        {
+          list: [
+            'Les [montées sur pointes assis](/fr/exercices/montees-sur-pointes/) sont la charge la plus faible.',
+            'Les montées debout sur deux pieds viennent ensuite.',
+            'Puis le maintien sur pointes en haut.',
+            'Puis la montée sur une jambe avec serviette sur une marche.',
+          ],
+        },
+        'Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
+        'Si le poids du corps sur une jambe est trop facile, ajoutez de la charge. L’essai de Rathleff utilisait un sac à dos rempli de livres ou de bouteilles d’eau. En salle, vous avez accès à une machine à mollets ou à un gilet lesté. Le but est que la dernière répétition de chaque série soit vraiment la dernière que vous puissiez faire avec une bonne technique.',
       ],
     },
     {
@@ -98,7 +115,7 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
       paragraphs: [
         'L’essai de Rathleff de 2015 est le seul essai randomisé à avoir testé la montée sur pointes avec serviette précisément pour la fasciite plantaire. Chez 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index à trois mois que le groupe des étirements seuls. À douze mois, les deux groupes s’étaient rejoints.',
         'La recommandation de 2023 sur la douleur au talon a examiné ces données et d’autres, et a donné au renforcement musculaire la note **B** et aux étirements la note **A**. Les deux sont recommandés. La recommandation ne met pas en avant la variante avec serviette, mais c’est le seul exercice de renforcement testé dans un essai qui lui est propre sur la fasciite plantaire.',
-        'Rien dans les données ne dit que cet exercice doit remplacer les étirements. L’approche la plus solide associe les deux\u00A0: un [étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) pour la raideur du matin et la montée avec charge pour construire la capacité. Pour la liste complète des exercices et la façon dont ils s’articulent, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
+        'Rien dans les données ne dit que cet exercice doit remplacer les étirements. **L’approche la plus solide associe les deux\u00A0:** un [étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) pour la raideur du matin et la montée avec charge pour construire la capacité. Pour la liste complète des exercices et la façon dont ils s’articulent, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
       sourceNote:
         'Rathleff 2015\u00A0: différence de 29\u00A0points au FFI à 3\u00A0mois (IC à 95\u00A0% 6-52, p = 0,016). À 12\u00A0mois\u00A0: 22 contre 16, une différence non significative.',
@@ -108,7 +125,7 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
       h2: 'À qui s’adresse la montée sur pointes avec serviette\u00A0?',
       paragraphs: [
         'À toute personne atteinte de fasciite plantaire qui a assez de force dans le mollet pour faire une montée sur une jambe sur une marche. L’essai a inclus des adultes dont la douleur durait depuis au moins trois mois et qui supportaient la mise en charge.',
-        'Si votre douleur est récente et que vous ne tenez pas confortablement sur une jambe, commencez plus bas dans l’échelle\u00A0: d’abord les montées assis ou sur deux pieds. Si votre douleur est dans le tendon d’Achille plutôt que dans le fascia plantaire, l’approche de mise en charge est proche, mais sans serviette et avec un protocole différent. Voir [descentes excentriques du talon](/exercises/eccentric-heel-drops/) (en anglais) ou [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour cette voie.',
+        'Si votre douleur est récente et que vous ne tenez pas confortablement sur une jambe, commencez plus bas dans l’échelle\u00A0: d’abord les montées assis ou sur deux pieds. Si votre douleur est dans le tendon d’Achille plutôt que dans le fascia plantaire, l’approche de mise en charge est proche, mais sans serviette et avec un protocole différent. Voir [descentes excentriques du talon](/fr/exercices/descentes-excentriques-talon/) ou [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour cette voie.',
       ],
       cites: [CITE.rathleff],
     },
@@ -151,7 +168,7 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'La montée sur pointes avec serviette est une étape d’une chaîne du mollet que Walkito intègre à un plan hebdomadaire. La chaîne va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, à la montée avec serviette, aux descentes excentriques du talon et enfin aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
+    text: 'La montée sur pointes avec serviette est une étape d’une progression du mollet que Walkito intègre à un plan hebdomadaire. La progression va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, à la montée avec serviette, aux descentes excentriques du talon et enfin aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. Walkito est un programme d’exercices, pas un outil de diagnostic.',
     ],

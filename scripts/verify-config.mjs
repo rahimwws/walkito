@@ -11,9 +11,22 @@
  *
  * 2. `app.config.ts` throwing, or the variant switch returning something
  *    unexpected. The config is code; nothing else type-checks it.
+ *
+ * And the AppsFlyer setup, whose parts live in three places that only meet in
+ * the binary: the OneLink domain in `ios.associatedDomains` and in
+ * `android.intentFilters` (both checked against `shared/config/appsflyer.ts`),
+ * the SKAdNetwork postback endpoint, the two plugins, and no App Tracking
+ * Transparency text — the app runs without the prompt.
  */
 
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
+
+/** The OneLink domain and template the app's code reads, from the source. */
+const appsflyerSource = readFileSync(new URL('../src/shared/config/appsflyer.ts', import.meta.url), 'utf8');
+const ONELINK_HOST = appsflyerSource.match(/oneLinkHost:\s*'([^']+)'/)?.[1];
+const ONELINK_TEMPLATE = appsflyerSource.match(/oneLinkTemplate:\s*'([^']+)'/)?.[1];
+const SKAN_ENDPOINT = 'https://appsflyer-skadnetwork.com/';
 
 const VARIANTS = ['development', 'preview', 'production'];
 const problems = [];
@@ -73,7 +86,51 @@ for (const variant of VARIANTS) {
     }
   }
 
+  problems.push(...appsflyerProblems(variant, config));
+
   console.log(`${variant.padEnd(12)} ${host}`);
+}
+
+function appsflyerProblems(variant, config) {
+  const out = [];
+  if (ONELINK_HOST == null || ONELINK_TEMPLATE == null) {
+    out.push(`${variant}: could not read oneLinkHost / oneLinkTemplate from src/shared/config/appsflyer.ts`);
+    return out;
+  }
+  const plugins = (config.plugins ?? []).map((plugin) => (Array.isArray(plugin) ? plugin[0] : plugin));
+  for (const name of ['react-native-appsflyer', './plugins/with-appsflyer-android']) {
+    if (!plugins.includes(name)) out.push(`${variant}: plugin ${name} is missing`);
+  }
+  const plist = config.ios?.infoPlist ?? {};
+  if (plist.NSAdvertisingAttributionReportEndpoint !== SKAN_ENDPOINT) {
+    out.push(`${variant}: ios.infoPlist.NSAdvertisingAttributionReportEndpoint is not ${SKAN_ENDPOINT}`);
+  }
+  // Every network in plugins/skadnetwork-ids.json, once: one missing gets no
+  // SKAN postback, and a duplicate is a sign the list was merged by hand.
+  const declared = (plist.SKAdNetworkItems ?? []).map((item) => item.SKAdNetworkIdentifier);
+  const expected = JSON.parse(readFileSync(new URL('../plugins/skadnetwork-ids.json', import.meta.url), 'utf8')).ids;
+  const missing = expected.filter((id) => !declared.includes(id));
+  if (missing.length > 0) out.push(`${variant}: SKAdNetworkItems lacks ${missing.length} id(s), e.g. ${missing[0]}`);
+  if (new Set(declared).size !== declared.length) out.push(`${variant}: SKAdNetworkItems has duplicates`);
+  if (plist.NSUserTrackingUsageDescription != null) {
+    out.push(`${variant}: NSUserTrackingUsageDescription is set, but the app never asks to track (no ATT)`);
+  }
+  const domains = config.ios?.associatedDomains ?? [];
+  for (const domain of ['applinks:walkito.site', `applinks:${ONELINK_HOST}`]) {
+    if (!domains.includes(domain)) out.push(`${variant}: ios.associatedDomains lacks ${domain}`);
+  }
+  const filters = config.android?.intentFilters ?? [];
+  const oneLink = filters.find((filter) =>
+    (filter.data ?? []).some(
+      (data) => data.scheme === 'https' && data.host === ONELINK_HOST && data.pathPrefix === `/${ONELINK_TEMPLATE}`,
+    ),
+  );
+  if (oneLink == null) {
+    out.push(`${variant}: no android.intentFilters entry for https://${ONELINK_HOST}/${ONELINK_TEMPLATE}`);
+  } else if (oneLink.autoVerify !== true) {
+    out.push(`${variant}: the OneLink intent filter needs autoVerify: true, or Android opens the browser`);
+  }
+  return out;
 }
 
 if (problems.length > 0) {
