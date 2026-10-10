@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Lang } from '@/lib/i18n';
-import { SITE_URL } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
 
 /**
  * `VideoObject` for the exercise clips in a guide, so search engines know the
@@ -80,5 +80,6 @@ export function imageSchema(
       creator: { '@type': 'Organization', name: 'Walkito', url: SITE_URL },
       creditText: 'Walkito',
       copyrightNotice: '© Walkito',
+      ...OWN_IMAGE_LICENSE,
     }));
 }
