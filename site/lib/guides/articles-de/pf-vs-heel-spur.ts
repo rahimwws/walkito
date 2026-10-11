@@ -62,7 +62,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         },
         'Anders gesagt: Der Sporn zeigt sich selten ohne die Veränderung im Weichgewebe, die dazugehört.',
         'In einer anderen Studie mit 216\u00A0älteren Erwachsenen zwischen 62 und 94\u00A0Jahren hatten 55\u00A0% mindestens einen plantaren Fersensporn auf dem Röntgenbild. Sporne hingen mit Übergewicht, Arthrose und früheren Fersenschmerzen zusammen, aber nicht mit der Fußhaltung. Die Autoren vermuteten, dass Sporne eine Anpassung an senkrechten Druck auf die Ferse sein könnten und nicht dadurch entstehen, dass die Plantarfaszie am Knochen zieht (Menz und Kollegen, 2008).',
-        'Die Studie von Menz 2008 erwähnt, dass frühere Forschung in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16\u00A0% berichtet hatte, deutlich unter den 55\u00A0%, die die Autoren in ihrer eigenen Stichprobe älterer Menschen fanden. In derselben Stichprobe hatten etwa 6 von 10\u00A0Menschen mit Sporn nie Fersenschmerzen gehabt, auch wenn Fersenschmerzen bei Menschen mit Sporn trotzdem häufiger waren (40\u00A0%) als ohne (12\u00A0%) (Menz und Kollegen, 2008). Ein Sporn erhöht die Odds, aber er entscheidet nicht, wer am Ende Schmerzen hat.',
+        'Die Studie von Menz 2008 erwähnt, dass frühere Forschung in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16\u00A0% berichtet hatte, deutlich unter den 55\u00A0%, die die Autoren in ihrer eigenen Stichprobe älterer Menschen fanden. In derselben Stichprobe hatten etwa 6 von 10\u00A0Menschen mit Sporn nie Fersenschmerzen gehabt, auch wenn Fersenschmerzen bei Menschen mit Sporn trotzdem häufiger waren (40\u00A0%) als ohne (12\u00A0%) (Menz und Kollegen, 2008). Ein Sporn erhöht die Chance, aber er entscheidet nicht, wer am Ende Schmerzen hat.',
       ],
       sourceNote:
         'Menz 2019: 530\u00A0Teilnehmende ab 50 mit Fußschmerzen, Querschnittsstudie. Sporne an 26,5\u00A0% der Füße, verdickte Plantarfaszie an 47,3\u00A0%, Sporn allein an 6,0\u00A0%. Fersenschmerzen hingen mit beiden Merkmalen zusammen (OR 2,16, 95-%-KI 1,24 bis 3,77). Menz 2008: 216\u00A0Teilnehmende zwischen 62 und 94\u00A0Jahren, Querschnittsstudie, Häufigkeit von Spornen 55\u00A0%, aktuelle oder frühere Fersenschmerzen OR 4,6 (95-%-KI 2,3 bis 9,4).',
@@ -119,7 +119,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         {
           list: [
             'Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein anziehen lässt, hatte die höchste Odds Ratio aller gemessenen Faktoren.',
-            'Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit 3,6-fachen Odds (Riddle und Kollegen, 2003).',
+            'Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit einer 3,6-fachen Chance (Riddle und Kollegen, 2003).',
           ],
         },
         'Der Sporn, wenn er da ist, sitzt in der Nähe. Er kann sich über Monate oder Jahre als Antwort auf dieselbe mechanische Belastung gebildet haben, die die Faszie gereizt hat. Aber **es sind Faszie und Wade, die auf Dehnen und Kräftigen ansprechen, nicht der Knochen.** Deshalb empfiehlt die Leitlinie Übungen und nicht das Entfernen des Sporns.',

@@ -39,7 +39,7 @@ export const STANDING_FR: Guide = {
   sections: [
     {
       h2: 'Pourquoi a-t-on mal aux pieds après une journée debout\u00A0?',
-      keyFact: 'Dans une étude cas-témoins de 2003, une cheville moins soupla multipliait par 23,3 la cote (odds) de fasciite plantaire, le plus fort facteur de risque trouvé, et rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
+      keyFact: 'Dans une étude cas-témoins de 2003, une cheville moins souple multipliait par 23,3 la cote (odds) de fasciite plantaire, le plus fort facteur de risque trouvé, et rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
       paragraphs: [
         'Les pieds font mal à force de rester debout, car **la station debout immobile charge le fascia plantaire, les muscles du mollet et le talon sans leur laisser de pause.** En marchant, chaque pas renvoie le sang des jambes vers le haut. Debout sans bouger, cette pompe disparaît\u00A0: le sang stagne dans le bas des jambes, et les tissus sous le pied portent la même charge statique pendant des heures.',
         'Une revue de 2015 de la recherche en santé au travail a associé la station debout prolongée à des douleurs du bas du dos, des douleurs dans les jambes, de la gêne et de la fatigue, dans de nombreux métiers où l’on reste debout. La revue notait aussi que la charge cardiovasculaire et le gonflement des jambes augmentent avec la durée de la station debout. Les auteurs demandaient des définitions plus claires de la «\u00A0station debout prolongée\u00A0» dans les futures études, car le seuil entre une durée sans risque et une durée nocive varie selon les personnes et les métiers.',

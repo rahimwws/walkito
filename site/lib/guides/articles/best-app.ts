@@ -95,7 +95,7 @@ export const BEST_APP_EN: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. $44.99/yr or $7.99/wk',
+            'iOS, Android. Weekly or yearly subscription',
             'Heel pain, flat feet, standing all day, runners',
             'Morning check-in adjusts every session',
             'Not rated yet (new, Oct 2026)',
@@ -213,7 +213,7 @@ export const BEST_APP_EN: Guide = {
           ],
         },
         'It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.',
-        'At $44.99 a year or $7.99 a week, the annual price is lower than most competitors. The weekly price is higher relative to the annual, which is standard subscription pricing.',
+        'It is a weekly or yearly subscription through the App Store or Google Play, and the current price is shown in the store before you subscribe.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

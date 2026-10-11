@@ -20,7 +20,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
     'El ejercicio de pie corto entrena los músculos pequeños dentro del pie para sostener el arco sin encoger los dedos. Llevas la parte delantera del pie hacia el talón para que el pie se acorte y el arco suba. Una revisión narrativa de 2015 lo llamó la base del entrenamiento del «core del pie», y aparece en la mayoría de los programas para pie plano y fascitis plantar que trabajan los músculos intrínsecos del pie.',
   takeaways: [
     'Un estudio con resonancia magnética de 2016 en 8\u00A0deportistas encontró que el pie corto produjo la activación media más alta (hasta 34,9\u00A0%) en tres de los cuatro músculos intrínsecos de la planta que se midieron, comparado con separar los dedos, extender el dedo gordo y extender los otros cuatro dedos (Gooding y colegas, 2016).',
-    'Un estudio de electromiografía encontró que el abductor del dedo gordo, el músculo que sostiene la parte interna del arco, trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos (Jung y colegas, 2011).',
+    'Un estudio de electromiografía encontró que el abductor del dedo gordo, el músculo que sostiene la parte interna del arco, trabajó claramente más durante el pie corto que al recoger la toalla con los dedos (Jung y colegas, 2011).',
     'Un metaanálisis de 2024 sobre el entrenamiento de pie corto en personas con pie plano encontró que los programas de más de seis semanas mejoraron la caída del navicular, pero los más cortos no llegaron a un resultado significativo (Cheng y colegas, 2024).',
     'Adultos sanos que hicieron pie corto durante cuatro semanas mejoraron más el equilibrio dinámico que un grupo que recogió la toalla con los dedos el mismo tiempo (Lynn y colegas, 2012).',
   ],
@@ -68,7 +68,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
             'El flexor corto de los dedos (24,8\u00A0%).',
           ],
         },
-        'Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos.',
+        'Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó claramente más durante el pie corto que al recoger la toalla con los dedos, tanto sentado como de pie sobre una pierna.',
         'Por eso **el pie corto se considera mejor que recoger la toalla para trabajar específicamente los músculos intrínsecos.** Recoger la toalla usa los flexores largos de los dedos, los músculos extrínsecos que van de la pierna a los dedos. El pie corto mantiene más tranquilos esos músculos extrínsecos.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -159,7 +159,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
     {
       q: '¿El pie corto es mejor que recoger la toalla con los dedos?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'Para trabajar específicamente los músculos intrínsecos del pie, sí. La electromiografía muestra que el abductor del dedo gordo trabaja más de cuatro veces más con el pie corto que al recoger la toalla (Jung 2011). Otro ensayo aleatorizado encontró que el grupo de pie corto mejoró más el equilibrio que el de la toalla después de cuatro semanas (Lynn 2012). Recoger la toalla sigue siendo útil como ejercicio inicial más sencillo.',
+      a: 'Para trabajar específicamente los músculos intrínsecos del pie, sí. La electromiografía muestra que el abductor del dedo gordo trabaja claramente más con el pie corto que al recoger la toalla (Jung 2011). Otro ensayo aleatorizado encontró que el grupo de pie corto mejoró más el equilibrio que el de la toalla después de cuatro semanas (Lynn 2012). Recoger la toalla sigue siendo útil como ejercicio inicial más sencillo.',
     },
     {
       q: '¿Cuántas series y repeticiones de pie corto debo hacer?',

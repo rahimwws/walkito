@@ -74,6 +74,8 @@ export function articleSchema(input: {
   cites: readonly number[];
   /** Page key, to add the reviewer when she has reviewed this page. */
   page?: string;
+  /** The page's own share images (16:9, 4:3, 1:1); else the language card. */
+  images?: readonly string[];
 }) {
   const review = input.page ? reviewFor(input.page) : null;
   return {
@@ -93,7 +95,9 @@ export function articleSchema(input: {
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/icon.png` },
     },
     mainEntityOfPage: `${SITE_URL}${input.path}`,
-    image: `${SITE_URL}${shareCard(input.lang)}`,
+    image: input.images?.length
+      ? input.images.map((src) => `${SITE_URL}${src}`)
+      : `${SITE_URL}${shareCard(input.lang)}`,
     citation: input.cites.map((i) => citationSchema(CITATIONS[i])),
     ...(review
       ? {
@@ -111,10 +115,10 @@ export function articleSchema(input: {
 }
 
 /** `FAQPage` from question/answer pairs. Inline marks are stripped: the answer
- * text in schema is plain. */
+ * text in schema is plain, and paragraph breaks become spaces. */
 export function faqSchema(items: readonly { q: string; a: string }[]) {
   const plain = (text: string) =>
-    text.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+    text.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\n\n/g, ' ');
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

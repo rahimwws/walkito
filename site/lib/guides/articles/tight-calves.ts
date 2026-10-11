@@ -273,7 +273,7 @@ export const TIGHT_CALVES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: '[Walkito](/program/) is an iPhone app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.',
+    text: '[Walkito](/program/) is an iPhone and Android app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.',
     more: [
       'You choose sessions of 3, 5 or 10 minutes. Every two weeks, a short test checks calf endurance, so you can see whether your calves are getting stronger. Walkito is an exercise program. It does not diagnose, and it does not replace a clinician if any of the warning signs above apply.',
     ],

@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
 import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, indexedLanguages, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
 import { shareCard } from '@/lib/share';
+import type { AnatomyId } from '@/lib/anatomy';
+import { CARD_RATIOS, type CardRatio } from '@/lib/card-shapes';
 import { SITE_NAME, pageTitle, smartBannerContent, type AppScreen } from '@/lib/site';
 
 import { NAV_GROUPS, groupOf, type GuideKey, type NavGroup } from '@/lib/nav';
@@ -77,6 +79,45 @@ export function guidePath(guide: Guide): string {
   if (guide.lang === 'ru') return RU_ARTICLES[guide.page];
   if (!isFullLang(guide.lang)) return NEW_ARTICLE_PATHS[guide.lang][guide.page]!;
   return EN_ONLY[guide.page];
+}
+
+/** Every guide that gets share images of its own: English, Spanish and
+ * Russian, the indexed languages (K5). */
+export function cardGuides(): Guide[] {
+  const main = Object.values(GUIDES).flatMap((g) => [g.en, g.es, g.ru]);
+  const rest = [ARTICLES_EN, ARTICLES_ES, ARTICLES_RU].flatMap((m) =>
+    Object.values(m).filter((g): g is Guide => g != null),
+  );
+  return [...main, ...rest];
+}
+
+/** The picture for a guide's share image: its first anatomy drawing, else a
+ * still of its first exercise clip, else none (the card shows the mascot). */
+export function guidePicture(guide: Guide): { kind: 'anatomy'; id: AnatomyId } | { kind: 'still'; id: string } | null {
+  const figure = guide.sections.find((s) => s.figure)?.figure?.id;
+  if (figure) return { kind: 'anatomy', id: figure };
+  const clip = guide.sections.flatMap((s) => s.exercises ?? []).find((e) => e.media && !e.mediaIsStandIn)?.media;
+  return clip ? { kind: 'still', id: clip } : null;
+}
+
+/** The file name of a guide's share image, without the shape:
+ * /es/ejercicios-fascitis-plantar/ becomes es-ejercicios-fascitis-plantar. */
+export function cardSlug(guide: Guide): string {
+  return guidePath(guide).replace(/^\/|\/$/g, '').replace(/\//g, '-');
+}
+
+/** A guide's share image in one shape, or the language card where the guide
+ * has none of its own (pt, fr, it, de). */
+export function guideCard(guide: Guide, ratio: CardRatio = '16x9'): string {
+  return guide.lang === 'en' || guide.lang === 'es' || guide.lang === 'ru'
+    ? `/share/g/${cardSlug(guide)}-${ratio}.jpg`
+    : shareCard(guide.lang);
+}
+
+/** All three shapes, for an Article's image list. */
+export function guideCards(guide: Guide): string[] {
+  const own = guideCard(guide);
+  return own.startsWith('/share/g/') ? CARD_RATIOS.map((r) => guideCard(guide, r)) : [own];
 }
 
 /** Up to five guides to read next, in the same language: the same topic
@@ -158,15 +199,15 @@ export function guideMetadata(guide: Guide): Metadata {
       publishedTime: guide.published,
       modifiedTime: guide.updated,
       // Stated rather than inherited: a page-level `openGraph` replaces the
-      // layout's whole object. Russian and Spanish have a card of their own
-      // (lib/og-card.tsx); every other language shares the English one.
-      images: [shareCard(guide.lang)],
+      // layout's whole object. English, Spanish and Russian guides have a card
+      // of their own (lib/article-card.tsx); the rest share the language card.
+      images: [guideCard(guide).startsWith('/share/g/') ? { url: guideCard(guide), width: 1200, height: 675 } : guideCard(guide)],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${guide.title} | ${SITE_NAME}`,
       description: guide.description,
-      images: [shareCard(guide.lang)],
+      images: [guideCard(guide)],
     },
   };
 }

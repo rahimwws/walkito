@@ -18,9 +18,9 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     'Come fare le oscillazioni della caviglia, l’esercizio con il ginocchio oltre le dita per la mobilità: tecnica, serie, perché conta e come misurarla.',
   h1: 'Oscillazioni della caviglia: come farle e perché la mobilità conta',
   lede:
-    'Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con una probabilità di fascite plantare 23,3\u00A0volte più alta.',
+    'Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con odds di fascite plantare 23,3\u00A0volte più alte.',
   takeaways: [
-    'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con una probabilità 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
+    'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con odds 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
     'Le oscillazioni della caviglia allenano la dorsiflessione caricando la fine del movimento con il peso del corpo, a differenza di un allungamento passivo al muro.',
     'Il test ginocchio-muro misura quanto il ginocchio va oltre le dita con il tallone giù. Walkito include un esercizio ginocchio-muro (2\u00A0tenute da 30\u00A0secondi, ogni gamba).',
     'Walkito parte con le oscillazioni della caviglia da 2\u00A0serie da 15, ogni gamba.',
@@ -55,7 +55,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     },
     {
       h2: 'Perché la mobilità della caviglia conta per il dolore al tallone?',
-      keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia limitata era un fattore di rischio più forte dell’IMC o del tempo passato in piedi, e rendeva la probabilità 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
+      keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia limitata era un fattore di rischio più forte dell’IMC o del tempo passato in piedi, e rendeva le odds 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
       paragraphs: [
         'La dorsiflessione della caviglia è quanto il piede riesce a piegarsi verso l’alto, verso lo stinco, mentre il tallone resta a terra. Ogni passo che fai richiede un po’ di dorsiflessione. Quando la caviglia non si piega abbastanza, il corpo compensa:',
         {
@@ -65,7 +65,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
             'La fascia plantare assorbe forze per cui non è fatta.',
           ],
         },
-        'Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con una probabilità di sviluppare la fascite plantare 23,3\u00A0volte più alta. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
+        'Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con odds di sviluppare la fascite plantare 23,3\u00A0volte più alte. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
         'Allungare il polpaccio in modo passivo (come nell’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e nell’[allungamento del soleo](/it/esercizi/allungamento-soleo/)) affronta un lato del problema: la lunghezza del muscolo. Le oscillazioni della caviglia affrontano l’altro lato: il controllo attivo a fine movimento. Portare il ginocchio oltre le dita con il peso del corpo insegna alla caviglia a usare il movimento che ha, non solo a raggiungerlo in modo passivo.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -118,7 +118,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     {
       q: 'Le oscillazioni della caviglia aiutano la fascite plantare?',
       cites: [CITE.riddle],
-      a: 'Le oscillazioni della caviglia lavorano sulla dorsiflessione, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (probabilità 23,3\u00A0volte più alta). Nessuno studio ha testato le oscillazioni come esercizio a sé per la fascite plantare, ma migliorare il movimento su cui lavorano significa affrontare il singolo fattore di rischio biomeccanico più grande che la ricerca ha individuato.',
+      a: 'Le oscillazioni della caviglia lavorano sulla dorsiflessione, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (odds 23,3\u00A0volte più alte). Nessuno studio ha testato le oscillazioni come esercizio a sé per la fascite plantare, ma migliorare il movimento su cui lavorano significa affrontare il singolo fattore di rischio biomeccanico più grande che la ricerca ha individuato.',
     },
     {
       q: 'Cos’è il test ginocchio-muro?',

@@ -29,7 +29,7 @@ export const NURSES_IT: Guide = {
     'In un sondaggio su 312\u00A0infermieri di un ospedale pediatrico in Australia, il 55,3% ha riferito problemi a piede o caviglia negli ultimi 12\u00A0mesi, e la quota era più alta tra chi faceva turni di 12\u00A0ore in terapia intensiva (Reed e colleghi, 2014).',
     'In uno studio con contapassi, gli infermieri hanno fatto in media 9.360\u00A0passi per turno, circa 5,8\u00A0km in un turno di 9,4\u00A0ore, un carico ben sopra la media degli adulti (Chang e Cho, 2022).',
     'In uno studio trasversale su 636\u00A0infermieri ospedalieri giapponesi, il 51% ha riferito dolore o disabilità al piede nell’ultimo mese, e il 17% aveva un dolore che interferiva con le attività quotidiane (Tojo e colleghi, 2018).',
-    'Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli, con una probabilità 23,3\u00A0volte più alta. Stare in piedi per la maggior parte della giornata lavorativa la aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
+    'Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa le aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
     'In uno studio su 40\u00A0guardie giurate in piedi per turni di 12\u00A0ore, sia le calze a compressione da 15-20\u00A0mmHg sia quelle da 20-30\u00A0mmHg hanno evitato l’aumento di fastidio e gonfiore visto con le calze normali (Garcia e colleghi, 2023).',
   ],
   sections: [
@@ -48,7 +48,7 @@ export const NURSES_IT: Guide = {
       paragraphs: [
         'In un turno infermieristico si sommano tre cose: tanto tempo in piedi, lunghe distanze a piedi e pavimenti duri. Stare fermi in piedi carica la fascia plantare, i muscoli del polpaccio e il cuscinetto del tallone senza la pompa che dà la camminata. Camminare aiuta il sangue a risalire dalle gambe, ma gli infermieri passano in modo imprevedibile dallo stare fermi accanto a un letto al camminare per lunghi corridoi, quindi la pompa del polpaccio non trova mai un ritmo regolare.',
         'Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe in molti lavori in piedi, citando gli infermieri tra i gruppi a rischio più alto. La revisione ha notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi.',
-        'A livello dei tessuti, un polpaccio rigido è un pezzo chiave. Uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con una probabilità 23,3\u00A0volte più alta. Stare in piedi per la maggior parte della giornata lavorativa aumentava la probabilità di 3,6\u00A0volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**',
+        'A livello dei tessuti, un polpaccio rigido è un pezzo chiave. Uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6\u00A0volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -227,7 +227,7 @@ export const NURSES_IT: Guide = {
     },
     {
       q: 'Si può avere la fascite plantare per il lavoro da infermiere?',
-      a: 'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte la probabilità di fascite plantare in uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli. Una flessibilità della caviglia ridotta la aumentava di 23,3\u00A0volte. Gli infermieri hanno entrambi i fattori di rischio, molto tempo in piedi e poche pause per allungarsi, ed è per questo che gli esercizi di questa pagina si sovrappongono molto a quelli della guida sulla fascite plantare.',
+      a: 'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli. Una flessibilità della caviglia ridotta le aumentava di 23,3\u00A0volte. Gli infermieri hanno entrambi i fattori di rischio, molto tempo in piedi e poche pause per allungarsi, ed è per questo che gli esercizi di questa pagina si sovrappongono molto a quelli della guida sulla fascite plantare.',
       cites: [CITE.riddle],
     },
     {

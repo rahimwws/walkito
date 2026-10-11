@@ -17,7 +17,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
     'Se ti fa male la schiena e qualcuno ha dato la colpa al tuo piede piatto, l’idea all’inizio sembra logica: i piedi ti portano, quindi un arco più basso dovrebbe spostare qualcosa più in alto. La ricerca è meno lineare. Questa pagina spiega cosa hanno trovato gli studi, cosa possono fare plantari ed esercizio per la schiena e quali sintomi alla schiena richiedono prima un medico. Per la parte del piede, la [guida sul piede piatto](/it/piede-piatto/) e gli [esercizi per il piede piatto](/it/esercizi-piede-piatto/) approfondiscono l’arco.',
   ],
   takeaways: [
-    'Nel Framingham Foot Study su 1.930\u00A0adulti, la forma piatta del piede in piedi non era legata al mal di schiena lombare. Era legato solo un piede che cedeva verso l’interno camminando, nelle donne, con circa 1,5\u00A0volte la probabilità (Menz e colleghi, 2013).',
+    'Nel Framingham Foot Study su 1.930\u00A0adulti, la forma piatta del piede in piedi non era legata al mal di schiena lombare. Era legato solo un piede che cedeva verso l’interno camminando, nelle donne, con odds circa 1,5\u00A0volte più alte (Menz e colleghi, 2013).',
     'In circa 97.000 giovani reclute militari, il piede piatto lieve non dava più mal di schiena dei piedi normali (5% in entrambi i casi). Il piede piatto moderato o grave arrivava al 10% (Kosashvili e colleghi, 2008).',
     'Una revisione del 2014 su cinque studi sui plantari per il mal di schiena lombare non ha trovato un beneficio significativo. Uno studio del 2017 su 225\u00A0adulti ha visto che i plantari su misura funzionavano meglio di nessun intervento dopo circa un mese e mezzo, ma non a tre mesi o più avanti.',
     'Una revisione Cochrane del 2021 su 249\u00A0studi ha trovato prove di certezza moderata che l’esercizio riduce il mal di schiena lombare cronico, di circa 15\u00A0punti su una scala del dolore da 100, rispetto a nessun esercizio, all’assistenza abituale o al placebo.',
@@ -46,11 +46,11 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
     },
     {
       h2: 'Cosa ha trovato il Framingham Foot Study?',
-      keyFact: 'Nel Framingham Foot Study, le donne il cui piede cedeva verso l’interno camminando avevano circa 1,5\u00A0volte la probabilità di mal di schiena lombare, mentre la forma del piede in piedi non mostrava alcun legame (Menz e colleghi, 2013).',
+      keyFact: 'Nel Framingham Foot Study, le donne il cui piede cedeva verso l’interno camminando avevano odds circa 1,5\u00A0volte più alte di mal di schiena lombare, mentre la forma del piede in piedi non mostrava alcun legame (Menz e colleghi, 2013).',
       paragraphs: [
         'Il Framingham Foot Study è uno dei più grandi studi che hanno misurato direttamente i piedi, e non ha trovato un legame tra piede piatto e mal di schiena lombare. I ricercatori hanno esaminato 1.930\u00A0adulti della città di Framingham, in Massachusetts, tra il 2002 e il 2005. Hanno misurato l’arco in piedi di ogni persona da un’impronta e hanno diviso i piedi in piatti, normali o cavi. La forma del piede, piatta o no, non mostrava alcuna associazione con il mal di schiena lombare.',
         'Lo studio ha misurato anche la funzione del piede, cioè come si spostava la pressione sotto il piede mentre ogni persona camminava. Un piede che cede verso l’interno camminando si dice pronato.',
-        'Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con circa 1,5\u00A0volte la probabilità rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.',
+        'Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con odds circa 1,5\u00A0volte più alte rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.',
         'Molti siti riportano questo studio come «chi ha il piede piatto ha il 50% di probabilità in più di avere mal di schiena». Non è quello che ha trovato. **La forma dell’arco che vedi quando sei in piedi non contava.** Contava, solo nelle donne, come si muoveva il piede camminando.',
         'E dato che lo studio ha misurato tutti una sola volta, non può dire se:',
         {
@@ -208,7 +208,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
     {
       q: 'Il piede piatto può causare mal di schiena lombare?',
       cites: [CITE.menz],
-      a: 'Non è stato dimostrato che il piede piatto causi mal di schiena lombare. Il Framingham Foot Study su 1.930\u00A0adulti non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare. Ha trovato un legame solo nelle donne il cui piede cedeva verso l’interno camminando, con circa 1,5\u00A0volte la probabilità. Lo studio ha misurato tutti una sola volta, quindi non può dire cosa sia venuto prima.',
+      a: 'Non è stato dimostrato che il piede piatto causi mal di schiena lombare. Il Framingham Foot Study su 1.930\u00A0adulti non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare. Ha trovato un legame solo nelle donne il cui piede cedeva verso l’interno camminando, con odds circa 1,5\u00A0volte più alte. Lo studio ha misurato tutti una sola volta, quindi non può dire cosa sia venuto prima.',
     },
     {
       q: 'Il piede piatto può causare dolore alla parte alta o centrale della schiena?',

@@ -22,7 +22,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-10',
   title: 'Night Splints for Plantar Fasciitis: Do They Work?',
   description:
     'Night splints for plantar fasciitis: what the 2023 guideline and the trials show, boot vs sock, how long to wear one, and why so many people stop.',
@@ -112,6 +112,24 @@ export const NIGHT_SPLINTS_EN: Guide = {
         'If you are choosing for yourself, **the one you will actually keep on through the night is probably the right one.** A clinician or physical therapist can help with fit.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: 'What should you check before you buy a night splint?',
+      paragraphs: [
+        'No brand or type has trial evidence that it works better than another, so buy for comfort and fit, not for claims on the box. Check these before you pay:',
+        {
+          list: [
+            '**The type that fits how you sleep.** A boot suits back sleepers best. If you sleep on your side or stomach, a sock style or small dorsal splint is usually easier.',
+            '**An adjustable angle.** You want to start at about a right angle and change it if needed, not be stuck with a fixed stretch.',
+            '**The right size.** Use the maker\'s size chart for your shoe size and calf. A splint that slides or presses on your toes will not stay on all night.',
+            '**Soft padding and a liner you can wash.** You will wear it every night for one to three months.',
+            '**Straps you can undo in the dark.** You need to take it off before you walk, for example to get up at night.',
+            '**A return window.** In one trial, only 1 of 28 people given a splint was still using it at one year. Buy where you can send it back if it wrecks your sleep.',
+          ],
+        },
+        'Be wary of any splint sold with big promises. The trials are mixed, and morning stretches have the same guideline grade at no cost.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: 'How long should you wear a night splint for plantar fasciitis?',

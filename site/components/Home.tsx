@@ -539,7 +539,7 @@ export function Home({ lang }: { lang: Lang }) {
               />
               {/* Our own Dynamic Island, drawn over the one in the mockup. */}
               <span className="hero-island" aria-hidden>
-                <img src="/icon.png" alt="" width={64} height={64} />
+                <img src="/icon-128.webp" alt="" width={64} height={64} />
                 <span className="hero-island-name">Walkito</span>
                 <span className="hero-island-ring" />
               </span>

@@ -2126,7 +2126,7 @@ What it does not:
 
 It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.
 
-At $44.99 a year or $7.99 a week, the annual price is lower than most competitors. The weekly price is higher relative to the annual, which is standard subscription pricing.
+It is a weekly or yearly subscription through the App Store or Google Play, and the current price is shown in the store before you subscribe.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -2203,7 +2203,7 @@ Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis]
 - Both apps are on iOS and Android. Walkito arrived on Google Play in October 2026.
 - Exakt Health is certified as a medical device in the EU. Walkito is not a medical device.
 - Walkito adjusts each session from a morning pain check-in and tests left-right asymmetry every 14 days. Exakt adapts its plan from end-of-session feedback.
-- Exakt costs $19.99/month or $59.99 for six months. Walkito costs $44.99/year or $7.99/week.
+- Exakt costs $19.99/month or $59.99 for six months. Walkito is a weekly or yearly subscription, with the current price shown in the store.
 
 ### Side-by-side comparison
 
@@ -2266,17 +2266,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### How much do Walkito and Exakt Health cost?
 
-Walkito costs $44.99 per year or $7.99 per week. The annual price works out to about $0.87 per week. No free trial is listed on the App Store, though the terms of use allow for introductory offers.
+Walkito is a free download with a weekly or yearly subscription, billed through the App Store or Google Play. The current price for your country is shown in the store before you subscribe.
 
 Exakt costs $19.99 per month for rehab plans, with 3-month ($39.99) and 6-month ($59.99) options. Running training plans go up to $99.99 per year. Every subscription starts with a 7-day free trial.
 
-Over a full year:
+Over a full year, Exakt's cheapest rehab option (the 6-month plan bought twice) comes to about $120, and adding a running plan can take it past $200. Check the Walkito price in the store against those numbers.
 
-- Walkito annual is $44.99.
-- Exakt's cheapest rehab option (6-month plan renewed twice) is about $120.
-- If you include a running plan, Exakt can exceed $200 per year.
-
-If you need only heel or foot pain exercises, **Walkito is significantly cheaper.** If you need running injury rehab plus a training plan, Exakt's higher price covers more.
+If you need only heel or foot pain exercises, Walkito is the narrower, focused option. If you need running injury rehab plus a training plan, Exakt's plans cover more.
 
 ### Platforms and languages
 
@@ -2332,7 +2328,6 @@ Pick Walkito if any of the following is true:
 - You want sessions of 3 to 10 minutes rather than 15 to 30.
 - Daily pain adaptation from a morning check-in matters more to you than level-based progression.
 - You want progress tests every 14 days that compare left to right.
-- Price is a factor: Walkito at $44.99 per year is less than half of Exakt's lowest annual cost.
 - You need the app in Russian.
 - You are on your feet all day for work, not running, and want an app built for that.
 
@@ -2354,9 +2349,9 @@ If [Walkito](https://walkito.site/program/) sounds like the right fit for your s
 
 It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. Both are on iOS and Android. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.
 
-#### Is Walkito cheaper than Exakt Health?
+#### How is Walkito priced compared with Exakt Health?
 
-Yes, on an annual basis. Walkito costs $44.99 per year. Exakt Health's cheapest rehab option is $59.99 for six months, or about $120 per year. Exakt offers a 7-day free trial; Walkito does not currently list one on the App Store.
+Walkito is a weekly or yearly subscription, and the current price for your country is shown in the App Store or Google Play before you subscribe. Exakt Health's cheapest rehab option is $59.99 for six months, or about $120 per year, and it starts with a 7-day free trial.
 
 #### Does Exakt Health have a plantar fasciitis plan?
 
@@ -3406,7 +3401,7 @@ Language: English · https://walkito.site/exercises/short-foot-exercise/ · publ
 The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and [plantar fasciitis](https://walkito.site/plantar-fasciitis/) programs that target the intrinsic foot muscles.
 
 - A 2016 MRI study of 8 athletes found the short foot exercise produced the highest mean activation (up to 34.9%) across three of the four intrinsic plantar muscles tested, compared to toe spread, first-toe extension and second-to-fifth-toe extension (Gooding and colleagues, 2016).
-- EMG research found the abductor hallucis, the muscle that supports the inner arch, was over four times more active during the short foot exercise than during towel curls (Jung and colleagues, 2011).
+- EMG research found the abductor hallucis, the muscle that supports the inner arch, was clearly more active during the short foot exercise than during towel curls (Jung and colleagues, 2011).
 - A 2024 meta-analysis of short foot training in people with flat feet found that programs longer than six weeks improved navicular drop, but shorter programs did not reach significance (Cheng and colleagues, 2024).
 - Healthy adults who did four weeks of short foot exercises improved dynamic balance more than a group that did towel curls for the same period (Lynn and colleagues, 2012).
 
@@ -3439,7 +3434,7 @@ A 2016 MRI study by Gooding and colleagues measured muscle activation after 40 r
 - The abductor hallucis (29.7%).
 - The flexor digitorum brevis (24.8%).
 
-An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was over four times greater during the short foot exercise than during towel curls.
+An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was clearly greater during the short foot exercise than during towel curls, both sitting and standing on one leg.
 
 This is why **the short foot is considered a better exercise than towel curls for targeting the intrinsic muscles specifically.** Towel curls recruit the long toe flexors, the extrinsic muscles that run from the shin to the toes. The short foot exercise keeps those extrinsic muscles quieter.
 
@@ -3511,7 +3506,7 @@ The short foot exercise is not part of the main plantar fasciitis guideline, whi
 
 #### Is the short foot exercise better than towel curls?
 
-For targeting the intrinsic foot muscles specifically, yes. EMG research shows the abductor hallucis is over four times more active during the short foot exercise than during towel curls (Jung 2011). A separate RCT found the short foot group improved balance more than the towel curl group after four weeks (Lynn 2012). Towel curls still have a role as a simpler starting exercise.
+For targeting the intrinsic foot muscles specifically, yes. EMG research shows the abductor hallucis is clearly more active during the short foot exercise than during towel curls (Jung 2011). A separate RCT found the short foot group improved balance more than the towel curl group after four weeks (Lynn 2012). Towel curls still have a role as a simpler starting exercise.
 
 #### How many sets and reps of the short foot exercise should I do?
 
@@ -3554,7 +3549,7 @@ Towel scrunches work the toe flexor muscles:
 
 These are intrinsic muscles. But the exercise also recruits the extrinsic toe flexors: the flexor digitorum longus and the flexor hallucis longus, which run from the shin through the ankle to the toes.
 
-An EMG study by Jung and colleagues (2011) compared muscle activity during towel curls and short foot exercises. They found the abductor hallucis, the muscle most responsible for holding the arch up, was over four times more active during the short foot exercise than during towel curls. The towel curl produced more activity in the extrinsic toe flexors instead.
+An EMG study by Jung and colleagues (2011) compared muscle activity during towel curls and short foot exercises. They found the abductor hallucis, the muscle most responsible for holding the arch up, was clearly more active during the short foot exercise than during towel curls, both sitting and standing on one leg.
 
 This means **towel scrunches are a good exercise for toe grip strength**, but they are less specific for the intrinsic arch muscles than the [short foot exercise](https://walkito.site/exercises/short-foot-exercise/).
 
@@ -3564,7 +3559,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Each exercise has a different strength. The towel scrunch is easier to learn because the towel gives your toes a clear target. Many people struggle to feel the short foot contraction at first. Towel scrunches build toe grip strength, which matters for balance and push-off during walking.
 
-The short foot exercise is better at isolating the intrinsic arch muscles. A 2015 review by McKeon and colleagues noted that the abductor hallucis was activated over four times more during the short foot exercise than during towel curls, and recommended the short foot as the primary intrinsic foot training exercise.
+The short foot exercise is better at isolating the intrinsic arch muscles. A 2015 review by McKeon and colleagues described the short foot exercise as a key way to train the intrinsic foot muscles.
 
 In practice, programs that use both get the best of each. Walkito uses the towel scrunch as an early exercise that introduces the idea of foot muscle work. The [short foot exercise](https://walkito.site/exercises/short-foot-exercise/) comes next and adds more specific arch training. Neither replaces the other.
 
@@ -7317,7 +7312,7 @@ If you wear heels most days, you do not have to give them up. Mix in flat days a
 
 ### Doing it as a plan
 
-[Walkito](https://walkito.site/program/) is an iPhone app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.
+[Walkito](https://walkito.site/program/) is an iPhone and Android app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.
 
 #### Why are my calves so tight all the time?
 
@@ -8578,7 +8573,7 @@ No. Children with flexible flat feet do not need stiff or corrective shoes. Shoe
 
 ## Night splints for plantar fasciitis: what they do, what the trials show, and how to wear one
 
-Language: English · https://walkito.site/night-splints-plantar-fasciitis/ · published 2026-10-09 · updated 2026-10-09
+Language: English · https://walkito.site/night-splints-plantar-fasciitis/ · published 2026-10-09 · updated 2026-10-10
 
 A night splint for [plantar fasciitis](https://walkito.site/plantar-fasciitis/) holds your ankle at about a right angle while you sleep, so the plantar fascia and calf do not shorten overnight. The 2023 heel pain guideline grades it **A** for one to three months when first steps keep hurting. The trials are small and mixed, and many find splints hard to sleep in.
 
@@ -8635,6 +8630,23 @@ There are three common kinds of night splint for plantar fasciitis, and no good 
 - **Sock style, like the Strassburg sock.** A long sock with a strap from the toes to the shin that keeps the foot from pointing down. It is light and easy to sleep in. We could not find a randomized trial testing it for plantar fasciitis.
 
 Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What should you check before you buy a night splint?
+
+No brand or type has trial evidence that it works better than another, so buy for comfort and fit, not for claims on the box. Check these before you pay:
+
+- **The type that fits how you sleep.** A boot suits back sleepers best. If you sleep on your side or stomach, a sock style or small dorsal splint is usually easier.
+- **An adjustable angle.** You want to start at about a right angle and change it if needed, not be stuck with a fixed stretch.
+- **The right size.** Use the maker's size chart for your shoe size and calf. A splint that slides or presses on your toes will not stay on all night.
+- **Soft padding and a liner you can wash.** You will wear it every night for one to three months.
+- **Straps you can undo in the dark.** You need to take it off before you walk, for example to get up at night.
+- **A return window.** In one trial, only 1 of 28 people given a splint was still using it at one year. Buy where you can send it back if it wrecks your sleep.
+
+Be wary of any splint sold with big promises. The trials are mixed, and morning stretches have the same guideline grade at no cost.
+
+Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Roos E, Engström M, Söderberg B. Foot orthoses for the treatment of plantar fasciitis. Foot & Ankle International. 2006;27(8):606–611.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### How long should you wear a night splint for plantar fasciitis?
@@ -9647,7 +9659,7 @@ Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to 
 
 ### What is Walkito?
 
-Walkito is an iPhone app that builds your exercise plan one week at a time around goals you can measure.
+Walkito is an iPhone and Android app that builds your exercise plan one week at a time around goals you can measure.
 
 There are five goals: pain-free mornings (morning pain at 1/10 or less for 14 days in a row), a 60-second arch hold, 25 single-leg calf raises, 30 seconds of balance on one leg, and a gap of less than 10% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.
 
@@ -9806,7 +9818,9 @@ Heel pain can come back, and Walkito does not promise it won’t. What Walkito d
 
 ### Does uneven walking mean I am injured?
 
-Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people. Walkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.
+Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people.
+
+Walkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.
 
 ### Is my health data uploaded anywhere?
 
@@ -9822,7 +9836,9 @@ Yes, Walkito works offline after setup. Setup needs a connection once, to sign y
 
 ### What happens to my plan if I get a new phone?
 
-Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back. A subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.
+Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back.
+
+A subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.
 
 ### How do I delete my Walkito account and data?
 
@@ -9834,7 +9850,11 @@ Walkito’s price is set by the store you buy from, the App Store on iPhone or G
 
 ### How do I cancel my Walkito subscription?
 
-Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. On Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period. Deleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.
+Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for.
+
+On Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period.
+
+Deleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.
 
 ## Other languages
 

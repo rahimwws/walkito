@@ -138,7 +138,7 @@ export function Cta({ lang }: { lang: Lang }) {
                 decoding="async"
               />
               <span className="hcta-island">
-                <img src="/icon.png" alt="" width={64} height={64} />
+                <img src="/icon-128.webp" alt="" width={64} height={64} />
                 <span className="hcta-island-name">Walkito</span>
                 <span className="hcta-island-ring" />
               </span>

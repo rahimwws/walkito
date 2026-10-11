@@ -98,9 +98,11 @@ export default function FaqRu() {
                 q: entry.q,
                 a: (
                   <>
-                    <p>
-                      <Inline text={entry.a} />
-                    </p>
+                    {entry.a.split('\n\n').map((para) => (
+                      <p key={para}>
+                        <Inline text={para} />
+                      </p>
+                    ))}
                     {entry.source && (
                       <p className="cite">
                         <Inline text={entry.source} />

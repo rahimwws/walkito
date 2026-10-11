@@ -67,7 +67,7 @@ export function AppCallout({ campaign, lang }: { campaign: string; lang: Lang })
           />
           {/* Walkito's own Dynamic Island over the mockup's, as on home. */}
           <span className="pg-app-island">
-            <img src="/icon.png" alt="" width={64} height={64} />
+            <img src="/icon-128.webp" alt="" width={64} height={64} />
             <span className="pg-app-island-name">Walkito</span>
             <span className="pg-app-island-ring" />
           </span>

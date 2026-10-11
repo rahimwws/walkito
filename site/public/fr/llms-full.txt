@@ -499,7 +499,7 @@ Les exercices de mobilité de la cheville visent à augmenter la flexion dorsale
 - Le test genou au mur est fiable à la maison comme au cabinet, mais une revue de 2015 portant sur 12 études a trouvé qu’un changement doit atteindre environ 1,6 à 1,9 cm pour qu’on puisse le considérer comme réel.
 - Dans un essai sur 74 personnes en bonne santé, la flexion de la cheville a augmenté après un programme de descentes excentriques du talon, et pas dans le groupe témoin (Mahieu et coll., 2008).
 - Après une entorse de la cheville, la mobilisation articulaire par un professionnel a amélioré à court terme la flexion de la cheville en charge dans une revue de 2018, et les effets à long terme ont été peu étudiés.
-- Dans une étude cas-témoins appariée sur 50 personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient une flexion de la cheville de 0 degré ou moins avaient une probabilité de fasciite plantaire 23,3 fois plus élevée que celles au-dessus de 10 degrés.
+- Dans une étude cas-témoins appariée sur 50 personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient une flexion de la cheville de 0 degré ou moins avaient une cote (odds) 23,3 fois plus élevée de fasciite plantaire que celles au-dessus de 10 degrés.
 
 ### Qu’est-ce que la mobilité de la cheville, et pourquoi compte-t-elle ?
 
@@ -507,7 +507,7 @@ La mobilité de la cheville désigne en général la flexion dorsale de la chevi
 
 Une faible flexion de la cheville est associée à plusieurs problèmes, même si associé ne veut pas dire causé :
 
-- **Fasciite plantaire :** Dans une étude cas-témoins appariée sur 50 personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0 degré ou moins avaient une probabilité de fasciite plantaire 23,3 fois plus élevée que celles au-dessus de 10 degrés (Riddle et coll., 2003).
+- **Fasciite plantaire :** Dans une étude cas-témoins appariée sur 50 personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0 degré ou moins avaient une cote (odds) 23,3 fois plus élevée de fasciite plantaire que celles au-dessus de 10 degrés (Riddle et coll., 2003).
 - **Blessures chez les recrues :** Chez 1 093 recrues masculines de l’armée suivies pendant trois mois d’entraînement intensif, l’amplitude de la cheville mesurée au départ prédisait fortement qui se blesserait, sur 48 blessures au total (Pope et coll., 1998).
 
 Le squat montre bien l’effet. Dans une étude en laboratoire, 30 personnes en bonne santé ont fait des squats avec une cale de 12 degrés sous l’avant du pied pour imiter une cheville raide. Leurs genoux se pliaient moins et partaient davantage vers l’intérieur que lors d’un squat à plat (Macrum et coll., 2012). C’était une restriction simulée sur une seule séance : elle montre la mécanique, pas ce qui arrive sur des années aux personnes dont la cheville est raide.
@@ -1455,7 +1455,7 @@ Ce qu’elle ne fait pas :
 
 Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15 types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.
 
-À 44,99 $ par an ou 7,99 $ par semaine, le prix annuel est plus bas que celui de la plupart des concurrentes. Le prix hebdomadaire est plus élevé par rapport à l’annuel, ce qui est classique pour un abonnement.
+C’est un abonnement hebdomadaire ou annuel via l’App Store ou Google Play, et le prix actuel est affiché dans la boutique avant votre abonnement.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -2045,7 +2045,7 @@ Le muscle principal est le tibial postérieur, un muscle profond du mollet dont 
 
 Plusieurs de ces éléments changent avec l’âge. Dans la comparaison de 2007, le groupe âgé avait aussi des muscles des orteils plus faibles et des chevilles plus raides, même si l’étude n’a pas vérifié si cela expliquait les pieds plus plats.
 
-Le poids compte aussi. Une revue de 2023 portant sur 12 études de population, environ 16 000 personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une probabilité environ 2,6 fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.
+Le poids compte aussi. Une revue de 2023 portant sur 12 études de population, environ 16 000 personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une cote (odds) environ 2,6 fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.
 
 Source: Scott G, Menz HB, Newcombe L. Age-related differences in foot structure and function. Gait & Posture. 2007;26(1):68–75.
 Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
@@ -2161,7 +2161,7 @@ Oui. La cause la plus fréquente est la dysfonction du tendon tibial postérieur
 
 #### Les pieds plats peuvent-ils s’aggraver avec le temps sans douleur ?
 
-Oui. Un aplatissement lent des deux pieds sans douleur est fréquent avec l’âge et ne demande en général rien d’urgent. Dans la Framingham Foot Study sur 3 378 adultes, la posture de pied plat n’était liée qu’à une probabilité un peu plus élevée de douleur à la voûte chez les hommes. Un changement indolore d’un seul pied mérite tout de même un examen, surtout si ce talon penche vers l’extérieur.
+Oui. Un aplatissement lent des deux pieds sans douleur est fréquent avec l’âge et ne demande en général rien d’urgent. Dans la Framingham Foot Study sur 3 378 adultes, la posture de pied plat n’était liée qu’à une cote (odds) un peu plus élevée de douleur à la voûte chez les hommes. Un changement indolore d’un seul pied mérite tout de même un examen, surtout si ce talon penche vers l’extérieur.
 
 #### Comment empêcher mes pieds plats de s’aggraver ?
 
@@ -3128,7 +3128,7 @@ Language: French (Français) · https://walkito.site/fr/exercices/pied-court/ ·
 L’exercice du pied court entraîne les petits muscles à l’intérieur du pied à tenir la voûte levée sans recroqueviller les orteils. Vous tirez la base des orteils vers le talon pour que la voûte se raccourcisse et se soulève. C’est l’exercice qu’une revue narrative de 2015 a présenté comme la base de l’entraînement du « foot core », le gainage du pied, et il figure dans la plupart des programmes pour pieds plats et fasciite plantaire qui visent les muscles intrinsèques du pied.
 
 - Une étude IRM de 2016 sur 8 sportifs a montré que l’exercice du pied court produisait l’activation moyenne la plus élevée (jusqu’à 34,9 %) dans trois des quatre muscles plantaires intrinsèques testés, par rapport à l’écartement des orteils, à l’extension du gros orteil et à l’extension des quatre autres orteils (Gooding et coll., 2016).
-- Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).
+- Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).
 - Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines amélioraient l’affaissement du naviculaire, mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).
 - Des adultes en bonne santé qui ont fait quatre semaines d’exercices du pied court ont plus amélioré leur équilibre dynamique qu’un groupe qui ramassait une serviette avec les orteils pendant la même durée (Lynn et coll., 2012).
 
@@ -3161,7 +3161,7 @@ Une étude IRM de 2016 de Gooding et coll. a mesuré l’activation musculaire a
 - L’abducteur de l’hallux (29,7 %).
 - Le court fléchisseur des orteils (24,8 %).
 
-Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était plus de quatre fois plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils.
+Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était nettement plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils, assis comme debout sur une jambe.
 
 C’est pourquoi **le pied court est considéré comme un meilleur exercice que le ramassage de serviette pour viser précisément les muscles intrinsèques.** Le ramassage de serviette sollicite les longs fléchisseurs des orteils, les muscles extrinsèques qui vont de la jambe aux orteils. L’exercice du pied court laisse ces muscles extrinsèques plus au repos.
 
@@ -3233,7 +3233,7 @@ L’exercice du pied court ne fait pas partie de la principale recommandation su
 
 #### Le pied court est-il meilleur que le ramassage de serviette avec les orteils ?
 
-Pour viser précisément les muscles intrinsèques du pied, oui. Les mesures EMG montrent que l’abducteur de l’hallux est plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette (Jung 2011). Un essai randomisé séparé a montré que le groupe du pied court avait plus amélioré son équilibre que le groupe de la serviette après quatre semaines (Lynn 2012). Le ramassage de serviette garde un rôle comme exercice de départ plus simple.
+Pour viser précisément les muscles intrinsèques du pied, oui. Les mesures EMG montrent que l’abducteur de l’hallux est nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette (Jung 2011). Un essai randomisé séparé a montré que le groupe du pied court avait plus amélioré son équilibre que le groupe de la serviette après quatre semaines (Lynn 2012). Le ramassage de serviette garde un rôle comme exercice de départ plus simple.
 
 #### Combien de séries et de répétitions du pied court faire ?
 
@@ -3770,7 +3770,7 @@ Ramasser la serviette fait travailler les muscles fléchisseurs des orteils :
 
 Ce sont des muscles intrinsèques. Mais l’exercice sollicite aussi les fléchisseurs extrinsèques des orteils : le long fléchisseur des orteils et le long fléchisseur de l’hallux, qui partent de la jambe et passent par la cheville jusqu’aux orteils.
 
-Une étude EMG de Jung et coll. (2011) a comparé l’activité musculaire pendant le ramassage de serviette et l’exercice du pied court. Elle a montré que l’abducteur de l’hallux, le muscle qui contribue le plus à tenir la voûte, était plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette. Le ramassage de serviette produisait plutôt plus d’activité dans les fléchisseurs extrinsèques des orteils.
+Une étude EMG de Jung et coll. (2011) a comparé l’activité musculaire pendant le ramassage de serviette et l’exercice du pied court. Elle a montré que l’abducteur de l’hallux, le muscle qui contribue le plus à tenir la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette, assis comme debout sur une jambe.
 
 Ramasser la serviette est donc **un bon exercice pour la force de préhension des orteils**, mais il cible moins précisément les muscles intrinsèques de la voûte que l’[exercice du pied court](https://walkito.site/fr/exercices/pied-court/).
 
@@ -3780,7 +3780,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Chaque exercice a son point fort. Ramasser la serviette s’apprend plus facilement, car la serviette donne une cible claire aux orteils. Beaucoup de gens ont du mal à sentir la contraction du pied court au début. Ramasser la serviette développe la force de préhension des orteils, qui compte pour l’équilibre et la poussée pendant la marche.
 
-L’exercice du pied court isole mieux les muscles intrinsèques de la voûte. Une revue de 2015 de McKeon et coll. a noté que l’abducteur de l’hallux était plus de quatre fois plus activé pendant l’exercice du pied court que pendant le ramassage de serviette, et a recommandé le pied court comme principal exercice d’entraînement des muscles intrinsèques du pied.
+L’exercice du pied court isole mieux les muscles intrinsèques de la voûte. Une revue de 2015 de McKeon et coll. a décrit le pied court comme un moyen important d’entraîner les muscles intrinsèques du pied.
 
 En pratique, les programmes qui utilisent les deux tirent le meilleur de chacun. Walkito utilise le ramassage de serviette comme exercice de début, qui introduit l’idée du travail des muscles du pied. L’[exercice du pied court](https://walkito.site/fr/exercices/pied-court/) vient ensuite et ajoute un entraînement plus ciblé de la voûte. L’un ne remplace pas l’autre.
 
@@ -3839,7 +3839,7 @@ Language: French (Français) · https://walkito.site/fr/pieds-plats-mal-de-dos/ 
 
 Les pieds plats expliquent mal la plupart des maux de dos. Une grande étude aux mesures rigoureuses, la Framingham Foot Study, menée sur 1 930 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un petit lien chez les femmes dont le pied s’affaissait vers l’intérieur à la marche. C’est une association, pas la preuve que les pieds causent le mal de dos.
 
-- Dans la Framingham Foot Study sur 1 930 adultes, la posture de pied plat debout n’était pas liée au mal de bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une probabilité environ 1,5 fois plus élevée (Menz et coll., 2013).
+- Dans la Framingham Foot Study sur 1 930 adultes, la posture de pied plat debout n’était pas liée au mal de bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une cote (odds) environ 1,5 fois plus élevée (Menz et coll., 2013).
 - Chez environ 97 000 jeunes recrues militaires, des pieds plats légers n’allaient pas avec plus de mal de dos que des pieds normaux (5 % dans les deux cas). Des pieds plats modérés ou sévères allaient avec 10 % (Kosashvili et coll., 2008).
 - Une revue de 2014 portant sur cinq essais de semelles contre le mal de bas du dos n’a trouvé aucun bénéfice significatif. Un essai de 2017 sur 225 adultes a constaté que des orthèses sur mesure faisaient mieux que l’absence de prise en charge à environ un mois et demi, mais plus à trois mois ni ensuite.
 - Une revue Cochrane de 2021 portant sur 249 essais a trouvé, avec un niveau de certitude modéré, que l’exercice soulage le mal de bas du dos chronique d’environ 15 points sur une échelle de douleur de 100 points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo.
@@ -3869,7 +3869,7 @@ La Framingham Foot Study est l’une des plus grandes études à avoir mesuré d
 
 L’étude a aussi mesuré la fonction du pied : la façon dont la pression se déplaçait sous le pied pendant la marche. Un pied qui s’affaisse vers l’intérieur à la marche est dit en pronation.
 
-Chez les femmes, une marche en pronation était liée au mal de bas du dos, avec une probabilité environ 1,5 fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.
+Chez les femmes, une marche en pronation était liée au mal de bas du dos, avec une cote (odds) environ 1,5 fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.
 
 Beaucoup de sites présentent cette étude ainsi : « les personnes aux pieds plats ont 50 % de risque en plus d’avoir mal au dos ». Ce n’est pas ce qu’elle a trouvé. **La forme de voûte visible quand vous êtes debout ne comptait pas.** Ce qui comptait, chez les femmes seulement, c’était la façon dont le pied bougeait pendant la marche.
 
@@ -3887,7 +3887,7 @@ Dans certaines études, les personnes aux pieds nettement plats signalent un peu
 
 Le mal de bas du dos intermittent, c’est-à-dire un mal de dos sans anomalie à l’examen ni à la radio, touchait 5 % des recrues aux pieds normaux et 5 % de celles aux pieds plats légers. Il atteignait 10 % chez celles aux pieds plats modérés ou sévères. **Pour la plupart des pieds plats, les pieds plats légers, il n’y avait donc aucune différence.**
 
-Une enquête de 2021 menée auprès de 1 798 adultes interrogés lors d’un festival en Arabie saoudite a rapporté des chiffres bien plus élevés : 65,9 % des personnes aux pieds plats disaient avoir mal au bas du dos, et les pieds plats allaient avec une probabilité 3,3 fois plus élevée de mal de dos de courte durée et 4,5 fois plus élevée de mal de dos de longue durée.
+Une enquête de 2021 menée auprès de 1 798 adultes interrogés lors d’un festival en Arabie saoudite a rapporté des chiffres bien plus élevés : 65,9 % des personnes aux pieds plats disaient avoir mal au bas du dos, et les pieds plats allaient avec une cote (odds) 3,3 fois plus élevée de mal de dos de courte durée et 4,5 fois plus élevée de mal de dos de longue durée.
 
 Une enquête de ce type regarde les pieds et le dos à un seul moment, chez les personnes qui ont bien voulu s’arrêter et participer, et ce sont les personnes elles-mêmes qui disaient si elles avaient les pieds plats. Elle ne peut pas écarter d’autres explications, et les chercheurs ont eux-mêmes constaté que le sexe, l’âge, le métier et l’activité physique étaient aussi liés au mal de dos.
 
@@ -4003,7 +4003,7 @@ Walkito est un programme d’exercices pour les pieds et le bas des jambes. Pour
 
 #### Les pieds plats peuvent-ils donner mal au bas du dos ?
 
-Il n’a pas été démontré que les pieds plats causent le mal de bas du dos. La Framingham Foot Study sur 1 930 adultes n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une probabilité environ 1,5 fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.
+Il n’a pas été démontré que les pieds plats causent le mal de bas du dos. La Framingham Foot Study sur 1 930 adultes n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une cote (odds) environ 1,5 fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.
 
 #### Les pieds plats peuvent-ils donner mal au haut ou au milieu du dos ?
 
@@ -4054,7 +4054,7 @@ Source: Staheli LT, Chew DE, Corbett M. The longitudinal arch. A survey of eight
 
 La plupart des enfants développent une voûte visible lentement, entre environ 3 et 6 ans, et certains plus tard. Dans l’étude de Vienne, 54 % des enfants de 3 ans avaient les pieds plats, contre 24 % des enfants de 6 ans. Les garçons avaient plus souvent les pieds plats que les filles, 52 % contre 36 %, et leur voûte avait tendance à se former plus tard. Les enfants en surpoids ou en situation d’obésité avaient aussi plus souvent les pieds plats.
 
-Certains enfants ne développent jamais une voûte bien marquée, et c’est souvent sans conséquence. Une revue de 2023 portant sur 12 études de population, environ 16 000 personnes de tous âges, a trouvé des pieds plats chez 15,6 % des personnes au total. Les enfants de 3 à 5 ans et les jeunes de 11 à 17 ans avaient une probabilité environ deux fois plus élevée d’avoir les pieds plats que les autres tranches d’âge.
+Certains enfants ne développent jamais une voûte bien marquée, et c’est souvent sans conséquence. Une revue de 2023 portant sur 12 études de population, environ 16 000 personnes de tous âges, a trouvé des pieds plats chez 15,6 % des personnes au total. Les enfants de 3 à 5 ans et les jeunes de 11 à 17 ans avaient une cote (odds) environ deux fois plus élevée d’avoir les pieds plats que les autres tranches d’âge.
 
 Beaucoup d’adultes aux pieds plats souples n’ont aucune douleur. La question de l’évolution des pieds plats plus tard dans la vie est abordée dans [les pieds plats s’aggravent-ils avec l’âge ?](https://walkito.site/fr/pieds-plats-avec-l-age/)
 
@@ -4155,7 +4155,7 @@ Le jeu pieds nus et un poids dans la fourchette habituelle vont tous deux avec m
 
 Les pieds plats étaient les plus fréquents chez les enfants qui portaient des chaussures fermées et les moins fréquents chez ceux qui n’en portaient pas. C’était une enquête à un moment donné : elle montre un lien, pas la preuve que les chaussures ont causé les pieds plats.
 
-Le poids montre un lien semblable. Une revue de 2021 portant sur 73 études et plus de 1,7 million d’enfants et d’adolescents a constaté que ceux en surpoids ou en situation d’obésité avaient une probabilité environ 1,5 fois plus élevée d’avoir les pieds plats. La plupart de ces études étaient aussi des photographies à un instant donné.
+Le poids montre un lien semblable. Une revue de 2021 portant sur 73 études et plus de 1,7 million d’enfants et d’adolescents a constaté que ceux en surpoids ou en situation d’obésité avaient une cote (odds) environ 1,5 fois plus élevée d’avoir les pieds plats. La plupart de ces études étaient aussi des photographies à un instant donné.
 
 Laisser un enfant marcher pieds nus sur des surfaces sûres à la maison, sur l’herbe ou sur le sable donne du travail aux muscles du pied. Les chaussures doivent bien chausser et plier au niveau des orteils. **Inutile de prendre des chaussures « correctrices » rigides.** Pour en savoir plus sur les chaussures souples à semelle fine, voir [chaussures minimalistes](https://walkito.site/fr/chaussures-minimalistes/).
 
@@ -4216,9 +4216,9 @@ Non. Les enfants aux pieds plats souples n’ont pas besoin de chaussures rigide
 
 Language: French (Français) · https://walkito.site/fr/pieds-plats-douleur-genou/ · published 2026-10-09 · updated 2026-10-09
 
-Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1 903 adultes âgés, les pieds les plus plats avaient une probabilité 1,3 fois plus élevée de douleur fréquente au genou. Pour la douleur à l’avant du genou, les meilleures preuves concernent le renforcement de la hanche et du genou, avec les semelles comme complément à court terme.
+Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1 903 adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3 fois plus élevée de douleur fréquente au genou. Pour la douleur à l’avant du genou, les meilleures preuves concernent le renforcement de la hanche et du genou, avec les semelles comme complément à court terme.
 
-- Dans une étude de 2011 sur 1 903 adultes âgés, les pieds les plus plats avaient une probabilité 1,3 fois plus élevée de douleur au genou la plupart des jours et 1,4 fois plus élevée de lésion du cartilage du côté intérieur du genou (Gross et coll.). L’étude montre un lien, pas une cause.
+- Dans une étude de 2011 sur 1 903 adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3 fois plus élevée de douleur au genou la plupart des jours et 1,4 fois plus élevée de lésion du cartilage du côté intérieur du genou (Gross et coll.). L’étude montre un lien, pas une cause.
 - Chez 97 279 jeunes recrues militaires, la douleur à l’avant du genou touchait 7 % des recrues aux pieds plats modérés ou sévères et 4 % de celles aux pieds plats légers ou sans pieds plats (Kosashvili et coll., 2008).
 - Une revue de 2014 portant sur 21 études prospectives n’a constaté que des preuves très limitées, avec de faibles effets, qu’un pied affaissé vers l’intérieur augmente le risque de douleur autour de la rotule (Neal et coll.).
 - Dans un essai sur 179 adultes souffrant de douleur rotulienne, des semelles formées ont fait mieux que des semelles plates à court terme, mais pas mieux que la kinésithérapie, et n’ont rien apporté en plus de celle-ci (Collins et coll., 2008).
@@ -4230,8 +4230,8 @@ Plusieurs grandes études relient les pieds plats à la douleur au genou, mais *
 
 L’étude la plus connue vient des Framingham Studies, aux États-Unis. Gross et ses collègues ont mesuré les empreintes de 1 903 adultes âgés (65 ans en moyenne) et les ont interrogés sur leurs douleurs au genou. Résultats de 2011, pour les pieds les plus plats par rapport à tous les autres pieds :
 
-- **Douleur au genou :** une probabilité 1,3 fois plus élevée de douleur au genou la plupart des jours.
-- **Cartilage :** une probabilité 1,4 fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os.
+- **Douleur au genou :** une cote (odds) 1,3 fois plus élevée de douleur au genou la plupart des jours.
+- **Cartilage :** une cote (odds) 1,4 fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os.
 - **Reste du genou :** aucun lien avec des lésions dans les autres parties du genou.
 
 Une deuxième étude s’est intéressée aux plus jeunes. Kosashvili et ses collègues ont examiné en 2008 les dossiers de 97 279 jeunes recrues militaires. Une douleur à l’avant du genou a été trouvée chez 7 % des recrues aux pieds plats modérés ou sévères, et chez 4 % de celles aux pieds plats légers ou aux voûtes normales. Les pieds plats légers, qui représentaient 74 % du groupe aux pieds plats, n’entraînaient aucun risque supplémentaire.
@@ -4353,11 +4353,11 @@ Walkito est conçu pour la douleur au talon, au pied et au bas de la jambe chez 
 
 #### Les pieds plats peuvent-ils causer une douleur au genou ?
 
-Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1 903 adultes âgés, les pieds les plus plats avaient une probabilité 1,3 fois plus élevée de douleur fréquente au genou (Gross 2011). Une revue de 2014 n’a constaté que des preuves très limitées qu’un pied affaissé vers l’intérieur augmente le risque de douleur rotulienne. La plupart des personnes aux pieds plats n’ont pas mal au genou.
+Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1 903 adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3 fois plus élevée de douleur fréquente au genou (Gross 2011). Une revue de 2014 n’a constaté que des preuves très limitées qu’un pied affaissé vers l’intérieur augmente le risque de douleur rotulienne. La plupart des personnes aux pieds plats n’ont pas mal au genou.
 
 #### Les pieds plats peuvent-ils donner mal à l’intérieur du genou ?
 
-Il existe un lien chez les personnes âgées. Dans l’étude de Framingham de 2011, les pieds les plus plats avaient une probabilité 1,4 fois plus élevée de lésion du cartilage du côté intérieur du genou, et aucun lien avec des lésions ailleurs dans le genou. Ce schéma correspond à l’arthrose du genou. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer que les pieds en sont la cause. Un professionnel de santé peut vérifier si l’arthrose est en cause.
+Il existe un lien chez les personnes âgées. Dans l’étude de Framingham de 2011, les pieds les plus plats avaient une cote (odds) 1,4 fois plus élevée de lésion du cartilage du côté intérieur du genou, et aucun lien avec des lésions ailleurs dans le genou. Ce schéma correspond à l’arthrose du genou. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer que les pieds en sont la cause. Un professionnel de santé peut vérifier si l’arthrose est en cause.
 
 #### Les semelles aident-elles la douleur au genou due aux pieds plats ?
 
@@ -8683,7 +8683,7 @@ Des mollets tendus, c’est en général des muscles du mollet qui paraissent ra
 
 - Dans une revue de 2006 portant sur cinq essais randomisés, l’étirement statique du mollet n’a augmenté la flexion de la cheville que d’environ 2 à 3 degrés, et les auteurs n’étaient pas sûrs que ce changement compte pour les personnes (Radford et coll.).
 - Dans une revue de 11 essais sur 452 personnes, le renforcement musculaire a amélioré l’amplitude articulaire à peu près autant que l’étirement (Afonso et coll., 2021).
-- Dans une étude de 2003 sur 50 personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0 degré allait de pair avec une probabilité de fasciite plantaire 23,3 fois plus élevée qu’une cheville se pliant au-delà de 10 degrés (Riddle et coll.).
+- Dans une étude de 2003 sur 50 personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0 degré allait de pair avec une cote (odds) 23,3 fois plus élevée de fasciite plantaire qu’une cheville se pliant au-delà de 10 degrés (Riddle et coll.).
 - Chez 210 triathlètes Ironman, ceux qui ont eu des crampes n’avaient pas perdu plus de poids et n’avaient pas de taux de sel dans le sang différents. Ce qui prédisait les crampes, c’était une course plus rapide et des crampes passées (Schwellnus et coll., 2011).
 - Une douleur au mollet avec gonflement, chaleur ou rougeur d’une seule jambe peut être un caillot sanguin et demande une prise en charge le jour même.
 
@@ -8715,7 +8715,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 Des mollets tendus sont associés à la fasciite plantaire, la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).
 
-Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50 personnes atteintes de fasciite plantaire à 100 personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0 degré avaient une probabilité de fasciite plantaire 23,3 fois plus élevée que celles qui pouvaient dépasser 10 degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.
+Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50 personnes atteintes de fasciite plantaire à 100 personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0 degré avaient une cote (odds) 23,3 fois plus élevée de fasciite plantaire que celles qui pouvaient dépasser 10 degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.
 
 Dans une étude ultérieure sur 254 personnes atteintes de fasciite plantaire, 83 % avaient une flexion de la cheville limitée, et 57 % de l’ensemble des patients avaient un gastrocnémien raide isolé (Patel et DiGiovanni, 2011).
 
@@ -8829,7 +8829,7 @@ Si vous portez des talons la plupart des jours, rien ne vous oblige à y renonce
 
 ### En faire un plan
 
-Walkito est une application iPhone qui propose de courtes séances d’exercices pour les douleurs du talon, du pied et du bas de la jambe chez l’adulte. Les étirements du mollet genou tendu et genou plié, les bascules de cheville et les montées sur pointes en font tous partie. Walkito commence à 2 maintiens de 30 secondes pour chaque étirement et à 3 séries de 10 pour les montées sur pointes, puis augmente la dose au fil du temps.
+Walkito est une application iPhone et Android qui propose de courtes séances d’exercices pour les douleurs du talon, du pied et du bas de la jambe chez l’adulte. Les étirements du mollet genou tendu et genou plié, les bascules de cheville et les montées sur pointes en font tous partie. Walkito commence à 2 maintiens de 30 secondes pour chaque étirement et à 3 séries de 10 pour les montées sur pointes, puis augmente la dose au fil du temps.
 
 #### Pourquoi mes mollets sont-ils tout le temps tendus ?
 
@@ -8845,7 +8845,7 @@ Les mollets restent souvent tendus parce qu’on ne fait que l’étirement geno
 
 #### Des mollets tendus peuvent-ils causer une fasciite plantaire ?
 
-Des mollets tendus sont associés à la fasciite plantaire, même si un lien ne prouve pas une cause. Dans une étude sur 50 personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0 degré allait de pair avec une probabilité 23,3 fois plus élevée. La recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet sa meilleure note pour la douleur sous le talon.
+Des mollets tendus sont associés à la fasciite plantaire, même si un lien ne prouve pas une cause. Dans une étude sur 50 personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0 degré allait de pair avec une cote (odds) 23,3 fois plus élevée. La recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet sa meilleure note pour la douleur sous le talon.
 
 #### Boire plus d’eau aide-t-il les mollets tendus ?
 
@@ -8866,7 +8866,7 @@ Language: French (Français) · https://walkito.site/fr/exercices-renforcement-o
 Les exercices pour renforcer les orteils commencent par le contrôle (yoga des orteils, écarter les orteils), passent à la préhension (ramasser la serviette, exercice du pied court) et finissent par la charge et l’équilibre. Des orteils faibles sont associés aux chutes chez les personnes âgées et se retrouvent chez les personnes qui ont mal au talon. Un essai a constaté que la force des orteils n’augmentait qu’avec un programme supervisé devenant plus difficile au fil du temps.
 
 - Dans une étude qui a suivi pendant un an 312 adultes de 60 à 90 ans, les 107 qui sont tombés avaient un gros orteil et des petits orteils plus faibles que ceux qui ne sont pas tombés (Mickle et coll., 2009).
-- Une revue de 2026 portant sur 14 études de cohorte a constaté que des muscles du gros orteil faibles allaient de pair avec une probabilité de chute future environ 1,65 fois plus élevée chez les adultes de 60 ans et plus, même si beaucoup d’études ne tenaient pas compte des autres causes.
+- Une revue de 2026 portant sur 14 études de cohorte a constaté que des muscles du gros orteil faibles allaient de pair avec une cote (odds) environ 1,65 fois plus élevée de chute future chez les adultes de 60 ans et plus, même si beaucoup d’études ne tenaient pas compte des autres causes.
 - Dans un essai sur 85 personnes âgées, un programme supervisé devenant plus difficile sur trois mois a augmenté la force des orteils jusqu’à 36 %, alors qu’un programme à domicile et un groupe témoin n’ont montré aucun changement (Mickle et coll., 2016).
 - Dans deux études distinctes, les personnes souffrant d’une douleur sous le talon avaient des fléchisseurs des orteils plus faibles que les personnes sans douleur, mais aucune n’a pu montrer si la faiblesse venait avant ou après la douleur.
 - Il n’existe pas de test unique et reconnu de la force des orteils. Les tests maison comme le test de la carte sont des repères grossiers, réussi ou raté, utiles pour suivre votre propre évolution et guère plus.
@@ -8879,7 +8879,7 @@ Les données les plus claires concernent les personnes âgées. Une équipe aust
 
 Une étude plus ancienne sur 176 personnes d’un âge moyen de 80 ans a constaté que des fléchisseurs plantaires des orteils faibles (les muscles qui appuient les orteils vers le sol) étaient associés aux chutes, même en tenant compte d’autres facteurs de risque de chute comme la vue, le temps de réaction, la force et l’âge.
 
-Une revue de 2026 portant sur 14 études de cohorte chez des adultes de 60 ans et plus a regroupé les données et constaté que des muscles du gros orteil faibles allaient de pair avec une probabilité de chute future environ 1,65 fois plus élevée. Les auteurs ont pris soin de préciser que beaucoup d’études ne tenaient pas compte des autres causes, si bien que des orteils faibles peuvent en partie refléter une fragilité générale.
+Une revue de 2026 portant sur 14 études de cohorte chez des adultes de 60 ans et plus a regroupé les données et constaté que des muscles du gros orteil faibles allaient de pair avec une cote (odds) environ 1,65 fois plus élevée de chute future. Les auteurs ont pris soin de préciser que beaucoup d’études ne tenaient pas compte des autres causes, si bien que des orteils faibles peuvent en partie refléter une fragilité générale.
 
 Pour l’équilibre lui-même, une revue de 2020 portant sur neuf études a constaté que des fléchisseurs des orteils plus forts allaient de pair avec un meilleur équilibre dans toutes les études incluses. Toutes portaient sur des personnes de plus de 60 ans, donc ce lien n’a pas été testé de la même façon chez les adultes plus jeunes.
 
@@ -9212,7 +9212,7 @@ Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour l
 - Exakt et Walkito sont toutes les deux sur iOS et Android.
 - Exakt Health est certifiée comme dispositif médical dans l’UE. Walkito n’est pas un dispositif médical.
 - Walkito ajuste chaque séance à partir d’un bilan de douleur le matin et teste l’asymétrie gauche-droite tous les 14 jours. Exakt adapte son plan à partir d’un retour en fin de séance.
-- Exakt coûte 19,99 $/mois ou 59,99 $ pour six mois. Walkito coûte 44,99 $/an ou 7,99 $/semaine.
+- Exakt coûte 19,99 $/mois ou 59,99 $ pour six mois. Walkito est un abonnement hebdomadaire ou annuel, avec le prix actuel affiché dans la boutique.
 
 ### Comparatif côte à côte
 
@@ -9275,17 +9275,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Combien coûtent Walkito et Exakt Health ?
 
-Walkito coûte 44,99 $ par an ou 7,99 $ par semaine. Le prix annuel revient à environ 0,87 $ par semaine. Aucun essai gratuit n’est indiqué sur l’App Store, même si les conditions d’utilisation prévoient des offres de lancement.
+Walkito se télécharge gratuitement, avec un abonnement hebdomadaire ou annuel facturé via l’App Store ou Google Play. Le prix actuel pour votre pays est affiché dans la boutique avant votre abonnement.
 
 Exakt coûte 19,99 $ par mois pour les plans de rééducation, avec des formules de 3 mois (39,99 $) et de 6 mois (59,99 $). Les plans d’entraînement à la course vont jusqu’à 99,99 $ par an. Chaque abonnement commence par un essai gratuit de 7 jours.
 
-Sur une année complète :
+Sur une année complète, la formule de rééducation la moins chère d’Exakt (le plan de 6 mois acheté deux fois) revient à environ 120 $, et l’ajout d’un plan de course peut faire dépasser 200 $. Comparez le prix de Walkito dans la boutique avec ces montants.
 
-- L’abonnement annuel de Walkito coûte 44,99 $.
-- La formule de rééducation la moins chère d’Exakt (le plan de 6 mois renouvelé deux fois) revient à environ 120 $.
-- Avec un plan de course en plus, Exakt peut dépasser 200 $ par an.
-
-Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, **Walkito est nettement moins chère.** Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, le prix plus élevé d’Exakt couvre davantage.
+Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, Walkito est l’option la plus ciblée et spécialisée. Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, les formules d’Exakt couvrent davantage.
 
 ### Plateformes et langues
 
@@ -9341,7 +9337,6 @@ Choisissez Walkito si l’un des points suivants vous correspond :
 - Vous voulez des séances de 3 à 10 minutes plutôt que de 15 à 30.
 - L’adaptation quotidienne à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.
 - Vous voulez des tests de progrès tous les 14 jours qui comparent la gauche et la droite.
-- Le prix compte : Walkito, à 44,99 $ par an, coûte moins de la moitié du coût annuel le plus bas d’Exakt.
 - Vous avez besoin de l’application en russe.
 - Vous êtes debout toute la journée pour le travail, pas en train de courir, et voulez une application conçue pour cela.
 
@@ -9363,9 +9358,9 @@ Si Walkito semble convenir à votre situation, voici comment ça marche. Vous r�
 
 Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15 blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation quotidienne à la douleur et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement quotidien, Walkito a été conçue pour cela.
 
-#### Walkito est-elle moins chère qu’Exakt Health ?
+#### Comment le prix de Walkito se compare-t-il à celui d’Exakt Health ?
 
-Oui, sur une base annuelle. Walkito coûte 44,99 $ par an. La formule de rééducation la moins chère d’Exakt Health coûte 59,99 $ pour six mois, soit environ 120 $ par an. Exakt propose un essai gratuit de 7 jours ; Walkito n’en indique pas pour l’instant sur l’App Store.
+Walkito est un abonnement hebdomadaire ou annuel, et le prix actuel pour votre pays est affiché dans l’App Store ou Google Play avant votre abonnement. La formule de rééducation la moins chère d’Exakt Health coûte 59,99 $ pour six mois, soit environ 120 $ par an, et elle commence par un essai gratuit de 7 jours.
 
 #### Exakt Health a-t-elle un plan pour la fasciite plantaire ?
 
@@ -9391,7 +9386,7 @@ Walkito est un programme d’exercices personnalisé contre la douleur au talon,
 
 ### Qu’est-ce que Walkito ?
 
-Walkito est une application iPhone qui construit votre plan d’exercices une semaine à la fois, autour d’objectifs mesurables. Il y a cinq objectifs : des matins sans douleur (douleur du matin à 1/10 ou moins pendant 14 jours de suite), tenir la voûte 60 secondes, 25 montées sur pointes sur une jambe, 30 secondes d’équilibre sur une jambe, et moins de 10 % d’écart entre votre côté gauche et votre côté droit. Vous commencez avec trois d’entre eux au maximum. Si quelque chose fait mal, la douleur passe en premier.
+Walkito est une application iPhone et Android qui construit votre plan d’exercices une semaine à la fois, autour d’objectifs mesurables. Il y a cinq objectifs : des matins sans douleur (douleur du matin à 1/10 ou moins pendant 14 jours de suite), tenir la voûte 60 secondes, 25 montées sur pointes sur une jambe, 30 secondes d’équilibre sur une jambe, et moins de 10 % d’écart entre votre côté gauche et votre côté droit. Vous commencez avec trois d’entre eux au maximum. Si quelque chose fait mal, la douleur passe en premier.
 
 Vous choisissez 3, 5 ou 7 jours d’entraînement par semaine et des séances de 3, 5 ou 10 minutes. La séance de chaque jour s’adapte à votre matin. Tous les 14 jours, un court test montre si vos chiffres bougent. Une fois votre premier objectif atteint, le test a lieu tous les 28 jours.
 

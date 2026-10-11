@@ -1030,7 +1030,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 
 Sehr wahrscheinlich. Wenn der Gastrocnemius verkürzt ist, kann sich das Sprunggelenk beim Gehen nicht genug beugen. Der Körper hebt die Ferse früher an, was mehr Gewicht auf den Fußballen bringt. Der Fachbegriff dafür ist funktioneller Spitzfuß (Equinus), und er ist eine anerkannte Ursache der Metatarsalgie.
 
-Die Zahlen stammen aus der Forschung zur Plantarfasziitis, aber der Mechanismus ist derselbe. Bei 254 Personen mit Plantarfasziitis hatten 52 bis 60 % eine Kontraktur nur des Gastrocnemius. Eine Fall-Kontroll-Studie mit 50 Fällen und 100 Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein beugen lässt) der stärkste unabhängige Risikofaktor war, mit 23,3-fachen Odds.
+Die Zahlen stammen aus der Forschung zur Plantarfasziitis, aber der Mechanismus ist derselbe. Bei 254 Personen mit Plantarfasziitis hatten 52 bis 60 % eine Kontraktur nur des Gastrocnemius. Eine Fall-Kontroll-Studie mit 50 Fällen und 100 Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein beugen lässt) der stärkste unabhängige Risikofaktor war, mit einer 23,3-fachen Chance.
 
 Keine Studie hat Wadendehnung speziell bei Metatarsalgie getestet, aber der Zusammenhang ist klinisch anerkannt. Mehr zur Verbindung von Wade und Sprunggelenk findest du unter [Wadenheben bei Plantarfasziitis](https://walkito.site/de/wadenheben-plantarfasziitis/).
 
@@ -1455,7 +1455,7 @@ Was es nicht kann:
 
 Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15 Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.
 
-Mit 44,99 $ im Jahr oder 7,99 $ pro Woche ist der Jahrespreis niedriger als bei den meisten Mitbewerbern. Der Wochenpreis ist im Verhältnis zum Jahrespreis höher, was bei Abos üblich ist.
+Es ist ein Wochen- oder Jahresabo über den App Store oder Google Play, und der aktuelle Preis wird im Store angezeigt, bevor du abschließt.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -2175,9 +2175,9 @@ Das kann es sein. Menschen mit Diabetes und Nervenschäden können einen Charcot
 
 Language: German (Deutsch) · https://walkito.site/de/uebungen/sprunggelenk-mobilisation/ · published 2026-10-08 · updated 2026-10-08
 
-Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit 23,3-fachen Odds.
+Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit einer 23,3-fachen Chance.
 
-- Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit 23,3-fachen Odds (Riddle und Kollegen, 2003).
+- Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).
 - Sprunggelenk-Wippen baut Dorsalflexion auf, indem es das Ende des Bewegungsumfangs unter Körpergewicht belastet, anders als eine passive Dehnung an der Wand.
 - Der Knie-Wand-Test misst, wie weit das Knie mit der Ferse unten über die Zehen hinauskommt. Walkito enthält eine Knie-Wand-Übung (2-mal 30 Sekunden halten, jedes Bein).
 - Walkito beginnt beim Sprunggelenk-Wippen mit 2 Sätzen à 15, jedes Bein.
@@ -2202,7 +2202,7 @@ Dorsalflexion ist, wie weit sich der Fuß nach oben Richtung Schienbein beugen k
 - Die Wade bekommt mehr Spannung ab.
 - Die Plantarfaszie fängt Kräfte ab, für die sie nicht gemacht ist.
 
-In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit 23,3-fachen Odds, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60 % von 254 Personen mit Plantarfasziitis.
+In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit einer 23,3-fachen Chance, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60 % von 254 Personen mit Plantarfasziitis.
 
 Die Wade passiv zu dehnen (wie bei der [Wadendehnung](https://walkito.site/de/uebungen/wade-dehnen/) und der [Soleusdehnung](https://walkito.site/de/uebungen/soleus-dehnen/)) geht eine Seite des Problems an: die Länge des Muskels. Sprunggelenk-Wippen geht die andere Seite an: aktive Kontrolle am Ende des Bewegungsumfangs. Wenn du das Knie unter Körpergewicht über die Zehen wippst, lernt das Sprunggelenk, den Umfang zu nutzen, den es hat, statt ihn nur passiv zu erreichen.
 
@@ -2263,7 +2263,7 @@ Walkito beginnt mit 2 Sätzen à 15 pro Bein. Das sind 30 Wiederholungen pro Bei
 
 #### Hilft Sprunggelenk-Wippen bei Plantarfasziitis?
 
-Sprunggelenk-Wippen zielt auf die Dorsalflexion im Sprunggelenk, die in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis war (23,3-fache Odds). Keine Studie hat Sprunggelenk-Wippen als einzelne Übung bei Plantarfasziitis getestet, aber den Bewegungsumfang zu verbessern, auf den es zielt, geht den größten biomechanischen Risikofaktor an, den die Forschung gefunden hat.
+Sprunggelenk-Wippen zielt auf die Dorsalflexion im Sprunggelenk, die in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis war (23,3-fache Chance). Keine Studie hat Sprunggelenk-Wippen als einzelne Übung bei Plantarfasziitis getestet, aber den Bewegungsumfang zu verbessern, auf den es zielt, geht den größten biomechanischen Risikofaktor an, den die Forschung gefunden hat.
 
 #### Was ist der Knie-Wand-Test?
 
@@ -2595,7 +2595,7 @@ Language: German (Deutsch) · https://walkito.site/de/uebungen/wade-dehnen/ · p
 
 Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen ihre beste Bewertung, A.
 
-- Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit 23,3-fachen Odds (Riddle und Kollegen, 2003).
+- Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).
 - In einer Fallserie mit 254 Personen mit Plantarfasziitis hatten 52 bis 60 % eine Kontraktur nur des Gastrocnemius (Patel und DiGiovanni, 2011).
 - Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, ihrer besten Bewertung (Koc und Kollegen, 2023).
 - Eine Metaanalyse von 2020 fand einen großen Behandlungseffekt für Waden- und Plantarfaszien-Dehnung, die Qualität der Belege reichte aber von mittel bis sehr niedrig (Siriphorn und Eksakulkla, 2020).
@@ -2616,7 +2616,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Der Gastrocnemius zieht von hinter dem Knie über die Achillessehne bis zur Ferse. Die Plantarfaszie setzt unten am Fersenbein an, demselben Knochen, an dem hinten die Achillessehne ansetzt, und läuft nach vorn bis zu den Zehen. Wenn der Gastrocnemius verkürzt ist, begrenzt er, wie weit sich das Sprunggelenk nach oben beugen kann. Dadurch muss die Plantarfaszie bei jedem Schritt mehr Spannung abfangen.
 
-In einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 passenden Kontrollpersonen erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Odds für eine Plantarfasziitis um das 23,3-Fache. Das war stärker als BMI, Zeit im Stehen oder jede andere Variable in der Studie.
+In einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 passenden Kontrollpersonen erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Chance auf eine Plantarfasziitis um das 23,3-Fache. Das war stärker als BMI, Zeit im Stehen oder jede andere Variable in der Studie.
 
 Unabhängig davon fand eine Fallserie mit 254 Personen mit Plantarfasziitis, dass 52 bis 60 % eine Kontraktur nur des Gastrocnemius hatten und weitere 23 bis 30 % eine kombinierte Kontraktur von Gastrocnemius und Soleus. **Eine verkürzte Wade ist also keine Nebensache.** Sie kommt bei den meisten Menschen mit dieser Erkrankung vor.
 
@@ -2686,7 +2686,7 @@ Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größere
 
 #### Können verkürzte Waden Plantarfasziitis verursachen?
 
-Eine verkürzte Wade begrenzt die Dorsalflexion im Sprunggelenk, und das war in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis (23,3-fache Odds). Unabhängig davon hatten 52 bis 60 % von 254 Personen mit Plantarfasziitis eine Kontraktur nur des Gastrocnemius. Eine verkürzte Wade bedeutet nicht sicher eine Plantarfasziitis, erhöht die Odds aber deutlich.
+Eine verkürzte Wade begrenzt die Dorsalflexion im Sprunggelenk, und das war in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis (23,3-fache Chance). Unabhängig davon hatten 52 bis 60 % von 254 Personen mit Plantarfasziitis eine Kontraktur nur des Gastrocnemius. Eine verkürzte Wade bedeutet nicht sicher eine Plantarfasziitis, erhöht die Chance aber deutlich.
 
 ## Exzentrisches Fersenabsenken: wie es geht, Sätze, Wiederholungen und was die Forschung sagt
 
@@ -3128,7 +3128,7 @@ Language: German (Deutsch) · https://walkito.site/de/uebungen/kurzer-fuss/ · p
 Die Kurzer-Fuß-Übung trainiert die kleinen Fußmuskeln darin, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und Plantarfasziitis vor, die auf die inneren Fußmuskeln zielen.
 
 - Eine MRT-Studie von 2016 mit 8 Sportlern fand, dass die Kurzer-Fuß-Übung in drei von vier getesteten inneren Fußsohlenmuskeln die höchste mittlere Aktivierung erzeugte (bis zu 34,9 %), verglichen mit Zehenspreizen, Strecken der Großzehe und Strecken der zweiten bis fünften Zehe (Gooding und Kollegen, 2016).
-- EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen (Jung und Kollegen, 2011).
+- EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen (Jung und Kollegen, 2011).
 - Eine Metaanalyse von 2024 zum Kurzer-Fuß-Training bei Plattfüßen fand, dass Programme über sechs Wochen den Navicular Drop verbesserten, kürzere Programme aber keine Signifikanz erreichten (Cheng und Kollegen, 2024).
 - Gesunde Erwachsene, die vier Wochen Kurzer-Fuß-Übungen machten, verbesserten ihr dynamisches Gleichgewicht stärker als eine Gruppe, die im selben Zeitraum Handtuchgreifen machte (Lynn und Kollegen, 2012).
 
@@ -3161,7 +3161,7 @@ Eine MRT-Studie von Gooding und Kollegen von 2016 maß die Muskelaktivierung nac
 - Im Abductor hallucis (29,7 %).
 - Im Flexor digitorum brevis (24,8 %).
 
-Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen.
+Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen, im Sitzen wie im Einbeinstand.
 
 Deshalb gilt **der kurze Fuß als bessere Übung als Handtuchgreifen, wenn es gezielt um die inneren Fußmuskeln geht.** Handtuchgreifen setzt die langen Zehenbeuger ein, die äußeren Muskeln, die vom Schienbein zu den Zehen laufen. Bei der Kurzer-Fuß-Übung bleiben diese äußeren Muskeln ruhiger.
 
@@ -3233,7 +3233,7 @@ Die Kurzer-Fuß-Übung ist nicht Teil der wichtigsten Leitlinie zur Plantarfaszi
 
 #### Ist die Kurzer-Fuß-Übung besser als Handtuchgreifen?
 
-Wenn es gezielt um die inneren Fußmuskeln geht, ja. EMG-Forschung zeigt, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv ist wie beim Handtuchgreifen (Jung 2011). Eine eigene randomisierte Studie fand, dass die Kurzer-Fuß-Gruppe nach vier Wochen ihr Gleichgewicht stärker verbesserte als die Gruppe mit Handtuchgreifen (Lynn 2012). Handtuchgreifen hat trotzdem seinen Platz als einfachere Einstiegsübung.
+Wenn es gezielt um die inneren Fußmuskeln geht, ja. EMG-Forschung zeigt, dass der Abductor hallucis bei der Kurzer-Fuß-Übung deutlich aktiver ist als beim Handtuchgreifen (Jung 2011). Eine eigene randomisierte Studie fand, dass die Kurzer-Fuß-Gruppe nach vier Wochen ihr Gleichgewicht stärker verbesserte als die Gruppe mit Handtuchgreifen (Lynn 2012). Handtuchgreifen hat trotzdem seinen Platz als einfachere Einstiegsübung.
 
 #### Wie viele Sätze und Wiederholungen Kurzer Fuß sollte ich machen?
 
@@ -3770,7 +3770,7 @@ Handtuchgreifen trainiert die Zehenbeuger:
 
 Das sind kurze, intrinsische Fußmuskeln. Die Übung bezieht aber auch die extrinsischen Zehenbeuger ein: den Flexor digitorum longus und den Flexor hallucis longus, die vom Schienbein über das Sprunggelenk bis zu den Zehen laufen.
 
-Eine EMG-Studie von Jung und Kollegen (2011) verglich die Muskelaktivität beim Handtuchgreifen und bei der Kurzer-Fuß-Übung. Sie fand, dass der Abductor hallucis, der Muskel, der am meisten dafür sorgt, dass das Gewölbe oben bleibt, bei der Kurzer-Fuß-Übung über viermal aktiver war als beim Handtuchgreifen. Das Handtuchgreifen brachte stattdessen mehr Aktivität in den extrinsischen Zehenbeugern.
+Eine EMG-Studie von Jung und Kollegen (2011) verglich die Muskelaktivität beim Handtuchgreifen und bei der Kurzer-Fuß-Übung. Sie fand, dass der Abductor hallucis, der Muskel, der am meisten dafür sorgt, dass das Gewölbe oben bleibt, bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen, im Sitzen wie im Einbeinstand.
 
 Das heißt: **Handtuchgreifen ist eine gute Übung für die Greifkraft der Zehen**, zielt aber weniger gezielt auf die kurzen Gewölbemuskeln als die [Kurzer-Fuß-Übung](https://walkito.site/de/uebungen/kurzer-fuss/).
 
@@ -3780,7 +3780,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Jede Übung hat eine andere Stärke. Das Handtuchgreifen ist leichter zu lernen, weil das Handtuch deinen Zehen ein klares Ziel gibt. Viele tun sich anfangs schwer, die Anspannung beim kurzen Fuß zu spüren. Handtuchgreifen baut Greifkraft in den Zehen auf, und die zählt fürs Gleichgewicht und fürs Abdrücken beim Gehen.
 
-Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 hielt fest, dass der Abductor hallucis bei der Kurzer-Fuß-Übung über viermal stärker aktiviert war als beim Handtuchgreifen, und empfahl die Kurzer-Fuß-Übung als wichtigste Übung für das Training der kurzen Fußmuskeln.
+Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 beschrieb die Kurzer-Fuß-Übung als wichtigen Weg, die kurzen Fußmuskeln zu trainieren.
 
 In der Praxis holen Programme, die beides nutzen, das Beste aus beiden heraus. Walkito setzt das Handtuchgreifen als frühe Übung ein, die die Idee der Arbeit mit den Fußmuskeln einführt. Die [Kurzer-Fuß-Übung](https://walkito.site/de/uebungen/kurzer-fuss/) kommt danach und bringt gezielteres Training für das Gewölbe. Keine ersetzt die andere.
 
@@ -5862,7 +5862,7 @@ Meistens nicht. Die meisten Plattfüße machen keine Schmerzen und schränken ni
 
 #### Bei welcher Herkunft sind Plattfüße häufiger?
 
-Plattfüße (Pes planus) kommen in manchen Gruppen häufiger vor, die Forschung dazu ist aber begrenzt. Eine systematische Übersichtsarbeit von 2023 zu Bevölkerungsstudien fand in getrennten Untergruppenvergleichen, dass asiatische Herkunft mit mehr als doppelt so hohen Odds für Plattfüße verbunden war und weiße Herkunft mit etwa halb so hohen Odds. Das sind Muster in Bevölkerungen, keine Vorhersage für die Füße eines einzelnen Menschen.
+Plattfüße (Pes planus) kommen in manchen Gruppen häufiger vor, die Forschung dazu ist aber begrenzt. Eine systematische Übersichtsarbeit von 2023 zu Bevölkerungsstudien fand in getrennten Untergruppenvergleichen, dass asiatische Herkunft mit einer mehr als doppelt so hohen Chance auf Plattfüße verbunden war und weiße Herkunft mit einer etwa halb so hohen Chance. Das sind Muster in Bevölkerungen, keine Vorhersage für die Füße eines einzelnen Menschen.
 
 ## Plantarfasziitis: Symptome, Ursachen und was laut Studienlage hilft
 
@@ -5901,7 +5901,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Plantarfasziitis entsteht, wenn die Faszie stärker belastet wird, als sie verkraften und sich davon erholen kann. Die Last kann auf einmal zu groß sein (ein plötzlicher Sprung bei den Laufkilometern) oder über lange Zeit gleichmäßig wirken (den ganzen Tag auf hartem Boden stehen).
 
-Eine gematchte Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254 Personen mit Plantarfasziitis hatten 52 bis 60 % eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Odds um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.
+Eine gematchte Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254 Personen mit Plantarfasziitis hatten 52 bis 60 % eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Chance um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.
 
 Die Leitlinie nennt weitere Risikofaktoren:
 
@@ -5988,7 +5988,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Plantarfasziitis bei der Arbeit und beim Laufen
 
-Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Odds für Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.
+Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Chance auf Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.
 
 Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf theoretischen Grundlagen (Bewertung E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.
 
@@ -7437,7 +7437,7 @@ Anders gesagt: Der Sporn zeigt sich selten ohne die Veränderung im Weichgewebe,
 
 In einer anderen Studie mit 216 älteren Erwachsenen zwischen 62 und 94 Jahren hatten 55 % mindestens einen plantaren Fersensporn auf dem Röntgenbild. Sporne hingen mit Übergewicht, Arthrose und früheren Fersenschmerzen zusammen, aber nicht mit der Fußhaltung. Die Autoren vermuteten, dass Sporne eine Anpassung an senkrechten Druck auf die Ferse sein könnten und nicht dadurch entstehen, dass die Plantarfaszie am Knochen zieht (Menz und Kollegen, 2008).
 
-Die Studie von Menz 2008 erwähnt, dass frühere Forschung in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16 % berichtet hatte, deutlich unter den 55 %, die die Autoren in ihrer eigenen Stichprobe älterer Menschen fanden. In derselben Stichprobe hatten etwa 6 von 10 Menschen mit Sporn nie Fersenschmerzen gehabt, auch wenn Fersenschmerzen bei Menschen mit Sporn trotzdem häufiger waren (40 %) als ohne (12 %) (Menz und Kollegen, 2008). Ein Sporn erhöht die Odds, aber er entscheidet nicht, wer am Ende Schmerzen hat.
+Die Studie von Menz 2008 erwähnt, dass frühere Forschung in der Gesamtbevölkerung eine Häufigkeit von Fersenspornen von 11 bis 16 % berichtet hatte, deutlich unter den 55 %, die die Autoren in ihrer eigenen Stichprobe älterer Menschen fanden. In derselben Stichprobe hatten etwa 6 von 10 Menschen mit Sporn nie Fersenschmerzen gehabt, auch wenn Fersenschmerzen bei Menschen mit Sporn trotzdem häufiger waren (40 %) als ohne (12 %) (Menz und Kollegen, 2008). Ein Sporn erhöht die Chance, aber er entscheidet nicht, wer am Ende Schmerzen hat.
 
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
@@ -7490,7 +7490,7 @@ Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vo
 Eine verkürzte Wade gehört zu den stärksten Risikofaktoren. In einer gematchten Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 Kontrollen:
 
 - Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein anziehen lässt, hatte die höchste Odds Ratio aller gemessenen Faktoren.
-- Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit 3,6-fachen Odds (Riddle und Kollegen, 2003).
+- Auch Stehen während des größten Teils des Arbeitstags war signifikant, mit einer 3,6-fachen Chance (Riddle und Kollegen, 2003).
 
 Der Sporn, wenn er da ist, sitzt in der Nähe. Er kann sich über Monate oder Jahre als Antwort auf dieselbe mechanische Belastung gebildet haben, die die Faszie gereizt hat. Aber **es sind Faszie und Wade, die auf Dehnen und Kräftigen ansprechen, nicht der Knochen.** Deshalb empfiehlt die Leitlinie Übungen und nicht das Entfernen des Sporns.
 
@@ -8829,7 +8829,7 @@ Wenn du an den meisten Tagen Absätze trägst, musst du nicht darauf verzichten.
 
 ### Als Plan umsetzen
 
-Walkito ist eine iPhone-App mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30 Sekunden Halten für jede Dehnung und 3 Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.
+Walkito ist eine App für iPhone und Android mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30 Sekunden Halten für jede Dehnung und 3 Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.
 
 #### Warum sind meine Waden ständig verspannt?
 
@@ -9212,7 +9212,7 @@ Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sin
 - Exakt und Walkito gibt es beide für iOS und Android.
 - Exakt Health ist in der EU als Medizinprodukt zertifiziert. Walkito ist kein Medizinprodukt.
 - Walkito passt jede Einheit nach einem Schmerz-Check-in am Morgen an und testet alle 14 Tage den Unterschied zwischen links und rechts. Exakt passt den Plan nach dem Feedback am Ende jeder Einheit an.
-- Exakt kostet 19,99 $/Monat oder 59,99 $ für sechs Monate. Walkito kostet 44,99 $/Jahr oder 7,99 $/Woche.
+- Exakt kostet 19,99 $/Monat oder 59,99 $ für sechs Monate. Walkito ist ein Wochen- oder Jahresabo, der aktuelle Preis steht im Store.
 
 ### Direkter Vergleich
 
@@ -9275,17 +9275,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Was kosten Walkito und Exakt Health?
 
-Walkito kostet 44,99 $ pro Jahr oder 7,99 $ pro Woche. Der Jahrespreis entspricht etwa 0,87 $ pro Woche. Im App Store ist keine kostenlose Testphase angegeben, aber die Nutzungsbedingungen erlauben Einführungsangebote.
+Walkito ist ein kostenloser Download mit einem Wochen- oder Jahresabo, abgerechnet über den App Store oder Google Play. Der aktuelle Preis für dein Land wird dir im Store angezeigt, bevor du abschließt.
 
 Exakt kostet 19,99 $ pro Monat für die Reha-Pläne, mit Optionen für 3 Monate (39,99 $) und 6 Monate (59,99 $). Lauftrainingspläne kosten bis zu 99,99 $ pro Jahr. Jedes Abo beginnt mit einer 7-tägigen kostenlosen Testphase.
 
-Über ein ganzes Jahr:
+Über ein ganzes Jahr kostet die günstigste Reha-Option von Exakt (der 6-Monats-Plan, zweimal gekauft) etwa 120 $, und mit einem Laufplan können es über 200 $ werden. Vergleiche den Walkito-Preis im Store mit diesen Zahlen.
 
-- Walkito kostet im Jahresabo 44,99 $.
-- Die günstigste Reha-Option von Exakt (6-Monats-Plan, zweimal verlängert) kostet etwa 120 $.
-- Mit einem Laufplan kann Exakt über 200 $ im Jahr kosten.
-
-Wenn du nur Übungen gegen Fersen- oder Fußschmerzen brauchst, **ist Walkito deutlich günstiger.** Wenn du Reha nach einer Laufverletzung plus einen Trainingsplan brauchst, deckt der höhere Preis von Exakt mehr ab.
+Wenn du nur Übungen gegen Fersen- oder Fußschmerzen brauchst, ist Walkito die engere, fokussierte Option. Wenn du Reha nach einer Laufverletzung plus einen Trainingsplan brauchst, decken die Pläne von Exakt mehr ab.
 
 ### Plattformen und Sprachen
 
@@ -9341,7 +9337,6 @@ Nimm Walkito, wenn einer dieser Punkte zutrifft:
 - Du willst Einheiten von 3 bis 10 Minuten statt 15 bis 30.
 - Die tägliche Anpassung an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.
 - Du willst alle 14 Tage Fortschrittstests, die links und rechts vergleichen.
-- Der Preis zählt: Walkito ist mit 44,99 $ pro Jahr weniger als halb so teuer wie die günstigsten Jahreskosten von Exakt.
 - Du brauchst die App auf Russisch.
 - Du bist für die Arbeit den ganzen Tag auf den Beinen, läufst aber nicht, und willst eine App, die dafür gemacht ist.
 
@@ -9363,9 +9358,9 @@ Wenn Walkito nach der richtigen Wahl für deine Situation klingt, so funktionier
 
 Das hängt davon ab, was du brauchst. Exakt Health deckt über 15 Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit täglicher Anpassung an den Schmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit täglicher Anpassung ist Walkito gemacht.
 
-#### Ist Walkito günstiger als Exakt Health?
+#### Wie sieht der Preis von Walkito im Vergleich zu Exakt Health aus?
 
-Ja, aufs Jahr gerechnet. Walkito kostet 44,99 $ pro Jahr. Die günstigste Reha-Option von Exakt Health kostet 59,99 $ für sechs Monate, also etwa 120 $ pro Jahr. Exakt bietet 7 Tage kostenlos zum Testen, Walkito gibt im App Store derzeit keine Testphase an.
+Walkito ist ein Wochen- oder Jahresabo, und der aktuelle Preis für dein Land wird im App Store oder bei Google Play angezeigt, bevor du abschließt. Die günstigste Reha-Option von Exakt Health kostet 59,99 $ für sechs Monate, also etwa 120 $ pro Jahr, und beginnt mit einer 7-tägigen kostenlosen Testphase.
 
 #### Hat Exakt Health einen Plan bei Plantarfasziitis?
 
@@ -9391,7 +9386,7 @@ Walkito ist ein persönlicher Übungsplan bei Schmerzen in Ferse, Fuß und Bein,
 
 ### Was ist Walkito?
 
-Walkito ist eine iPhone-App, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei 1/10 oder weniger an 14 Tagen am Stück), das Gewölbe 60 Sekunden halten, 25-mal einbeiniges Fersenheben, 30 Sekunden Gleichgewicht auf einem Bein und weniger als 10 % Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.
+Walkito ist eine App für iPhone und Android, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei 1/10 oder weniger an 14 Tagen am Stück), das Gewölbe 60 Sekunden halten, 25-mal einbeiniges Fersenheben, 30 Sekunden Gleichgewicht auf einem Bein und weniger als 10 % Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.
 
 Du wählst 3, 5 oder 7 Trainingstage pro Woche und Einheiten von 3, 5 oder 10 Minuten. Die Einheit jedes Tages passt sich daran an, wie dein Morgen war. Alle 14 Tage zeigt ein kurzer Test, ob sich deine Zahlen bewegen. Sobald du dein erstes Ziel erreichst, kommt der Test alle 28 Tage.
 

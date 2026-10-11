@@ -12,12 +12,12 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     'Piede piatto e dolore al ginocchio: cosa dicono gli studi, cosa controlla lo specialista, se i plantari aiutano e perché contano anca e ginocchio.',
   h1: 'Piede piatto e dolore al ginocchio: c’è un legame e cosa aiuta?',
   lede:
-    'Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore frequente al ginocchio. Per il dolore nella parte anteriore del ginocchio, le prove migliori riguardano il rinforzo di anca e ginocchio, con i plantari come aggiunta di breve periodo.',
+    'Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano odds 1,3\u00A0volte più alte di dolore frequente al ginocchio. Per il dolore nella parte anteriore del ginocchio, le prove migliori riguardano il rinforzo di anca e ginocchio, con i plantari come aggiunta di breve periodo.',
   intro: [
     'Ti fa male il ginocchio sulle scale o dopo una corsa, e qualcuno ti ha detto che è perché hai il piede piatto. È un dubbio legittimo. Piede e ginocchio si muovono insieme. Ma la maggior parte delle persone con il piede piatto non ha alcun dolore al ginocchio, e il dolore al ginocchio ha molte cause che con l’arco non c’entrano nulla.',
   ],
   takeaways: [
-    'In uno studio del 2011 su 1.903 adulti anziani, i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore al ginocchio quasi tutti i giorni e 1,4\u00A0volte la probabilità di danno alla cartilagine sul lato interno del ginocchio (Gross e colleghi). Lo studio mostra un legame, non una causa.',
+    'In uno studio del 2011 su 1.903 adulti anziani, i piedi più piatti avevano odds 1,3\u00A0volte più alte di dolore al ginocchio quasi tutti i giorni e odds 1,4\u00A0volte più alte di danno alla cartilagine sul lato interno del ginocchio (Gross e colleghi). Lo studio mostra un legame, non una causa.',
     'In 97.279 giovani reclute militari, il dolore nella parte anteriore del ginocchio era del 7% con piede piatto moderato o grave e del 4% con piede piatto lieve o assente (Kosashvili e colleghi, 2008).',
     'Una revisione del 2014 su 21\u00A0studi prospettici ha trovato solo prove molto limitate, con effetti piccoli, che un piede che cede verso l’interno aumenti il rischio di dolore intorno alla rotula (Neal e colleghi).',
     'In uno studio su 179\u00A0adulti con dolore alla rotula, i plantari sagomati funzionavano meglio di solette piatte nel breve periodo, ma non meglio della fisioterapia, e aggiunti a essa non davano nulla in più (Collins e colleghi, 2008).',
@@ -27,15 +27,15 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
   sections: [
     {
       h2: 'Il piede piatto può causare dolore al ginocchio?',
-      keyFact: 'In 1.903 adulti anziani, i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore frequente al ginocchio rispetto a tutti gli altri piedi (Gross e colleghi, 2011).',
+      keyFact: 'In 1.903 adulti anziani, i piedi più piatti avevano odds 1,3\u00A0volte più alte di dolore frequente al ginocchio rispetto a tutti gli altri piedi (Gross e colleghi, 2011).',
       figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       paragraphs: [
         'In diversi studi grandi il piede piatto è legato al dolore al ginocchio, ma **nessuno dimostra che sia l’arco a causare il dolore.** Il legame è piccolo, e compare soprattutto nei piedi più piatti.',
         'Lo studio più noto viene dai Framingham Studies negli Stati Uniti. Gross e colleghi hanno misurato le impronte di 1.903 adulti anziani (età media 65\u00A0anni) e hanno chiesto del dolore al ginocchio. I risultati del 2011, per i piedi più piatti rispetto a tutti gli altri piedi:',
         {
           list: [
-            '**Dolore al ginocchio:** 1,3\u00A0volte la probabilità di dolore al ginocchio quasi tutti i giorni.',
-            '**Cartilagine:** 1,4\u00A0volte la probabilità di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa.',
+            '**Dolore al ginocchio:** odds 1,3\u00A0volte più alte di dolore al ginocchio quasi tutti i giorni.',
+            '**Cartilagine:** odds 1,4\u00A0volte più alte di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa.',
             '**Resto del ginocchio:** nessun legame con danni in altre parti del ginocchio.',
           ],
         },
@@ -190,12 +190,12 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     {
       q: 'Il piede piatto può causare dolore al ginocchio?',
       cites: [CITE.grossFlatFeetKnee, CITE.nealFootPosture],
-      a: 'Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano 1,3\u00A0volte la probabilità di dolore frequente al ginocchio (Gross 2011). Una revisione del 2014 ha trovato solo prove molto limitate che un piede che cede verso l’interno aumenti il rischio di dolore alla rotula. La maggior parte delle persone con il piede piatto non ha dolore al ginocchio.',
+      a: 'Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano odds 1,3\u00A0volte più alte di dolore frequente al ginocchio (Gross 2011). Una revisione del 2014 ha trovato solo prove molto limitate che un piede che cede verso l’interno aumenti il rischio di dolore alla rotula. La maggior parte delle persone con il piede piatto non ha dolore al ginocchio.',
     },
     {
       q: 'Il piede piatto può causare dolore all’interno del ginocchio?',
       cites: [CITE.grossFlatFeetKnee],
-      a: 'Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano 1,4\u00A0volte la probabilità di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo schema è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.',
+      a: 'Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano odds 1,4\u00A0volte più alte di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo schema è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.',
     },
     {
       q: 'I plantari aiutano il dolore al ginocchio da piede piatto?',

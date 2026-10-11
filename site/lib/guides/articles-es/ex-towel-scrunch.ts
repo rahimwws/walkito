@@ -67,7 +67,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
           ],
         },
         'Estos son músculos intrínsecos. Pero el ejercicio también usa los flexores extrínsecos de los dedos: el flexor largo de los dedos y el flexor largo del dedo gordo, que van desde la pierna, pasan por el tobillo y llegan a los dedos.',
-        'Un estudio de electromiografía de Jung y colegas (2011) comparó la actividad muscular al recoger la toalla y al hacer pie corto. Encontró que el abductor del dedo gordo, el músculo que más ayuda a sostener el arco, trabajó más de cuatro veces más durante el pie corto que al recoger la toalla. Recoger la toalla, en cambio, activó más los flexores extrínsecos de los dedos.',
+        'Un estudio de electromiografía de Jung y colegas (2011) comparó la actividad muscular al recoger la toalla y al hacer pie corto. Encontró que el abductor del dedo gordo, el músculo que más ayuda a sostener el arco, trabajó claramente más durante el pie corto que al recoger la toalla, tanto sentado como de pie sobre una pierna.',
         'Esto quiere decir que **recoger la toalla es un buen ejercicio para la fuerza de agarre de los dedos**, pero es menos específico para los músculos intrínsecos del arco que el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
       ],
       cites: [CITE.jung],
@@ -76,7 +76,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
       h2: 'Recoger la toalla o pie corto: ¿cuál es mejor?',
       paragraphs: [
         'Cada ejercicio tiene su punto fuerte. Recoger la toalla es más fácil de aprender porque la toalla les da a los dedos algo claro que agarrar. A mucha gente le cuesta sentir la contracción del pie corto al principio. Recoger la toalla da fuerza de agarre a los dedos, algo que importa para el equilibrio y para el impulso al caminar.',
-        'El pie corto aísla mejor los músculos intrínsecos del arco. Una revisión de 2015 de McKeon y colegas señaló que el abductor del dedo gordo se activó más de cuatro veces más durante el pie corto que al recoger la toalla, y recomendó el pie corto como el ejercicio principal para entrenar los músculos intrínsecos del pie.',
+        'El pie corto aísla mejor los músculos intrínsecos del arco. Una revisión de 2015 de McKeon y colegas describió el pie corto como una forma clave de entrenar los músculos intrínsecos del pie.',
         'En la práctica, los programas que usan los dos aprovechan lo mejor de cada uno. Walkito usa recoger la toalla como un ejercicio inicial que presenta la idea de trabajar los músculos del pie. El [ejercicio de pie corto](/es/ejercicios/pie-corto/) viene después y suma un trabajo más específico del arco. Ninguno reemplaza al otro.',
       ],
       cites: [CITE.mcKeon, CITE.jung],

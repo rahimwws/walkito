@@ -12,7 +12,7 @@ import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FaqRows, Prose, typeset } from '@/components/Prose';
-import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { guideCards, guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideBlock, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
@@ -190,6 +190,7 @@ export function Guide({ guide }: { guide: GuideData }) {
     updated: guide.updated,
     cites: cited,
     page: guide.page,
+    images: guideCards(guide),
   });
 
   // The other guides in the same language. Linked from the body of the page,

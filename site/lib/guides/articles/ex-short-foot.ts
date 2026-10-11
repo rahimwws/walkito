@@ -26,7 +26,7 @@ export const EX_SHORT_FOOT: Guide = {
     'The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and [plantar fasciitis](/plantar-fasciitis/) programs that target the intrinsic foot muscles.',
   takeaways: [
     'A 2016 MRI study of 8 athletes found the short foot exercise produced the highest mean activation (up to 34.9%) across three of the four intrinsic plantar muscles tested, compared to toe spread, first-toe extension and second-to-fifth-toe extension (Gooding and colleagues, 2016).',
-    'EMG research found the abductor hallucis, the muscle that supports the inner arch, was over four times more active during the short foot exercise than during towel curls (Jung and colleagues, 2011).',
+    'EMG research found the abductor hallucis, the muscle that supports the inner arch, was clearly more active during the short foot exercise than during towel curls (Jung and colleagues, 2011).',
     'A 2024 meta-analysis of short foot training in people with flat feet found that programs longer than six weeks improved navicular drop, but shorter programs did not reach significance (Cheng and colleagues, 2024).',
     'Healthy adults who did four weeks of short foot exercises improved dynamic balance more than a group that did towel curls for the same period (Lynn and colleagues, 2012).',
   ],
@@ -74,7 +74,7 @@ export const EX_SHORT_FOOT: Guide = {
             'The flexor digitorum brevis (24.8%).',
           ],
         },
-        'An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was over four times greater during the short foot exercise than during towel curls.',
+        'An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was clearly greater during the short foot exercise than during towel curls, both sitting and standing on one leg.',
         'This is why **the short foot is considered a better exercise than towel curls for targeting the intrinsic muscles specifically.** Towel curls recruit the long toe flexors, the extrinsic muscles that run from the shin to the toes. The short foot exercise keeps those extrinsic muscles quieter.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -165,7 +165,7 @@ export const EX_SHORT_FOOT: Guide = {
     {
       q: 'Is the short foot exercise better than towel curls?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'For targeting the intrinsic foot muscles specifically, yes. EMG research shows the abductor hallucis is over four times more active during the short foot exercise than during towel curls (Jung 2011). A separate RCT found the short foot group improved balance more than the towel curl group after four weeks (Lynn 2012). Towel curls still have a role as a simpler starting exercise.',
+      a: 'For targeting the intrinsic foot muscles specifically, yes. EMG research shows the abductor hallucis is clearly more active during the short foot exercise than during towel curls (Jung 2011). A separate RCT found the short foot group improved balance more than the towel curl group after four weeks (Lynn 2012). Towel curls still have a role as a simpler starting exercise.',
     },
     {
       q: 'How many sets and reps of the short foot exercise should I do?',

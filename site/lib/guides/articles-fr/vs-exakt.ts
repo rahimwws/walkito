@@ -27,7 +27,7 @@ export const VS_EXAKT_FR: Guide = {
     'Exakt et Walkito sont toutes les deux sur iOS et Android.',
     'Exakt Health est certifiée comme dispositif médical dans l’UE. Walkito n’est pas un dispositif médical.',
     'Walkito ajuste chaque séance à partir d’un bilan de douleur le matin et teste l’asymétrie gauche-droite tous les 14\u00A0jours. Exakt adapte son plan à partir d’un retour en fin de séance.',
-    'Exakt coûte 19,99\u00A0$/mois ou 59,99\u00A0$ pour six mois. Walkito coûte 44,99\u00A0$/an ou 7,99\u00A0$/semaine.',
+    'Exakt coûte 19,99\u00A0$/mois ou 59,99\u00A0$ pour six mois. Walkito est un abonnement hebdomadaire ou annuel, avec le prix actuel affiché dans la boutique.',
   ],
   toc: true,
   sections: [
@@ -52,13 +52,8 @@ export const VS_EXAKT_FR: Guide = {
           ],
           [
             'Prix',
-            '44,99\u00A0$/an ou 7,99\u00A0$/semaine',
+            'Abonnement hebdomadaire ou annuel (prix affiché dans la boutique)',
             '19,99\u00A0$/mois, 39,99\u00A0$/3\u00A0mois ou 59,99\u00A0$/6\u00A0mois (rééducation)\u00A0; plans de course jusqu’à 99,99\u00A0$/an',
-          ],
-          [
-            'Essai gratuit',
-            'Non indiqué sur l’App Store (les conditions prévoient des offres de lancement)',
-            'Essai gratuit de 7\u00A0jours',
           ],
           [
             'Durée des séances',
@@ -183,17 +178,10 @@ export const VS_EXAKT_FR: Guide = {
     {
       h2: 'Combien coûtent Walkito et Exakt Health\u00A0?',
       paragraphs: [
-        'Walkito coûte 44,99\u00A0$ par an ou 7,99\u00A0$ par semaine. Le prix annuel revient à environ 0,87\u00A0$ par semaine. Aucun essai gratuit n’est indiqué sur l’App Store, même si les conditions d’utilisation prévoient des offres de lancement.',
+        'Walkito se télécharge gratuitement, avec un abonnement hebdomadaire ou annuel facturé via l’App Store ou Google Play. Le prix actuel pour votre pays est affiché dans la boutique avant votre abonnement.',
         'Exakt coûte 19,99\u00A0$ par mois pour les plans de rééducation, avec des formules de 3\u00A0mois (39,99\u00A0$) et de 6\u00A0mois (59,99\u00A0$). Les plans d’entraînement à la course vont jusqu’à 99,99\u00A0$ par an. Chaque abonnement commence par un essai gratuit de 7\u00A0jours.',
-        'Sur une année complète\u00A0:',
-        {
-          list: [
-            'L’abonnement annuel de Walkito coûte 44,99\u00A0$.',
-            'La formule de rééducation la moins chère d’Exakt (le plan de 6\u00A0mois renouvelé deux fois) revient à environ 120\u00A0$.',
-            'Avec un plan de course en plus, Exakt peut dépasser 200\u00A0$ par an.',
-          ],
-        },
-        'Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, **Walkito est nettement moins chère.** Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, le prix plus élevé d’Exakt couvre davantage.',
+        'Sur une année complète, la formule de rééducation la moins chère d’Exakt (le plan de 6\u00A0mois acheté deux fois) revient à environ 120\u00A0$, et l’ajout d’un plan de course peut faire dépasser 200\u00A0$. Comparez le prix de Walkito dans la boutique avec ces montants.',
+        'Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied, Walkito est l’option la plus ciblée et spécialisée. Si vous avez besoin d’une rééducation de blessure de course plus un plan d’entraînement, les formules d’Exakt couvrent davantage.',
       ],
     },
     {
@@ -259,7 +247,6 @@ export const VS_EXAKT_FR: Guide = {
         'Vous voulez des séances de 3 à 10\u00A0minutes plutôt que de 15 à 30.',
         'L’adaptation quotidienne à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.',
         'Vous voulez des tests de progrès tous les 14\u00A0jours qui comparent la gauche et la droite.',
-        'Le prix compte\u00A0: Walkito, à 44,99\u00A0$ par an, coûte moins de la moitié du coût annuel le plus bas d’Exakt.',
         'Vous avez besoin de l’application en russe.',
         'Vous êtes debout toute la journée pour le travail, pas en train de courir, et voulez une application conçue pour cela.',
       ],
@@ -271,8 +258,8 @@ export const VS_EXAKT_FR: Guide = {
       a: 'Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15\u00A0blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation quotidienne à la douleur et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement quotidien, Walkito a été conçue pour cela.',
     },
     {
-      q: 'Walkito est-elle moins chère qu’Exakt Health\u00A0?',
-      a: 'Oui, sur une base annuelle. Walkito coûte 44,99\u00A0$ par an. La formule de rééducation la moins chère d’Exakt Health coûte 59,99\u00A0$ pour six mois, soit environ 120\u00A0$ par an. Exakt propose un essai gratuit de 7\u00A0jours\u00A0; Walkito n’en indique pas pour l’instant sur l’App Store.',
+      q: 'Comment le prix de Walkito se compare-t-il à celui d’Exakt Health\u00A0?',
+      a: 'Walkito est un abonnement hebdomadaire ou annuel, et le prix actuel pour votre pays est affiché dans l’App Store ou Google Play avant votre abonnement. La formule de rééducation la moins chère d’Exakt Health coûte 59,99\u00A0$ pour six mois, soit environ 120\u00A0$ par an, et elle commence par un essai gratuit de 7\u00A0jours.',
     },
     {
       q: 'Exakt Health a-t-elle un plan pour la fasciite plantaire\u00A0?',

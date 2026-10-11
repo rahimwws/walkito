@@ -20,7 +20,7 @@ export const VS_EXAKT_EN: Guide = {
     'Both apps are on iOS and Android. Walkito arrived on Google Play in October 2026.',
     'Exakt Health is certified as a medical device in the EU. Walkito is not a medical device.',
     'Walkito adjusts each session from a morning pain check-in and tests left-right asymmetry every 14 days. Exakt adapts its plan from end-of-session feedback.',
-    'Exakt costs $19.99/month or $59.99 for six months. Walkito costs $44.99/year or $7.99/week.',
+    'Exakt costs $19.99/month or $59.99 for six months. Walkito is a weekly or yearly subscription, with the current price shown in the store.',
   ],
   toc: true,
   sections: [
@@ -45,13 +45,8 @@ export const VS_EXAKT_EN: Guide = {
           ],
           [
             'Pricing',
-            '$44.99/year or $7.99/week',
+            'Weekly or yearly subscription (price shown in the store)',
             '$19.99/mo, $39.99/3mo, or $59.99/6mo (rehab); run plans up to $99.99/yr',
-          ],
-          [
-            'Free trial',
-            'Not listed on App Store (terms allow for introductory offers)',
-            '7-day free trial',
           ],
           [
             'Session length',
@@ -176,17 +171,10 @@ export const VS_EXAKT_EN: Guide = {
     {
       h2: 'How much do Walkito and Exakt Health cost?',
       paragraphs: [
-        'Walkito costs $44.99 per year or $7.99 per week. The annual price works out to about $0.87 per week. No free trial is listed on the App Store, though the terms of use allow for introductory offers.',
+        'Walkito is a free download with a weekly or yearly subscription, billed through the App Store or Google Play. The current price for your country is shown in the store before you subscribe.',
         'Exakt costs $19.99 per month for rehab plans, with 3-month ($39.99) and 6-month ($59.99) options. Running training plans go up to $99.99 per year. Every subscription starts with a 7-day free trial.',
-        'Over a full year:',
-        {
-          list: [
-            'Walkito annual is $44.99.',
-            'Exakt\'s cheapest rehab option (6-month plan renewed twice) is about $120.',
-            'If you include a running plan, Exakt can exceed $200 per year.',
-          ],
-        },
-        'If you need only heel or foot pain exercises, **Walkito is significantly cheaper.** If you need running injury rehab plus a training plan, Exakt\'s higher price covers more.',
+        'Over a full year, Exakt\'s cheapest rehab option (the 6-month plan bought twice) comes to about $120, and adding a running plan can take it past $200. Check the Walkito price in the store against those numbers.',
+        'If you need only heel or foot pain exercises, Walkito is the narrower, focused option. If you need running injury rehab plus a training plan, Exakt\'s plans cover more.',
       ],
     },
     {
@@ -252,7 +240,6 @@ export const VS_EXAKT_EN: Guide = {
         'You want sessions of 3 to 10 minutes rather than 15 to 30.',
         'Daily pain adaptation from a morning check-in matters more to you than level-based progression.',
         'You want progress tests every 14 days that compare left to right.',
-        'Price is a factor: Walkito at $44.99 per year is less than half of Exakt\'s lowest annual cost.',
         'You need the app in Russian.',
         'You are on your feet all day for work, not running, and want an app built for that.',
       ],
@@ -264,8 +251,8 @@ export const VS_EXAKT_EN: Guide = {
       a: 'It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. Both are on iOS and Android. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.',
     },
     {
-      q: 'Is Walkito cheaper than Exakt Health?',
-      a: 'Yes, on an annual basis. Walkito costs $44.99 per year. Exakt Health\'s cheapest rehab option is $59.99 for six months, or about $120 per year. Exakt offers a 7-day free trial; Walkito does not currently list one on the App Store.',
+      q: 'How is Walkito priced compared with Exakt Health?',
+      a: 'Walkito is a weekly or yearly subscription, and the current price for your country is shown in the App Store or Google Play before you subscribe. Exakt Health\'s cheapest rehab option is $59.99 for six months, or about $120 per year, and it starts with a 7-day free trial.',
     },
     {
       q: 'Does Exakt Health have a plantar fasciitis plan?',

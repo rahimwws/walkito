@@ -19,7 +19,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     'Die Kurzer-Fuß-Übung trainiert die kleinen Fußmuskeln darin, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und Plantarfasziitis vor, die auf die inneren Fußmuskeln zielen.',
   takeaways: [
     'Eine MRT-Studie von 2016 mit 8\u00A0Sportlern fand, dass die Kurzer-Fuß-Übung in drei von vier getesteten inneren Fußsohlenmuskeln die höchste mittlere Aktivierung erzeugte (bis zu 34,9\u00A0%), verglichen mit Zehenspreizen, Strecken der Großzehe und Strecken der zweiten bis fünften Zehe (Gooding und Kollegen, 2016).',
-    'EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen (Jung und Kollegen, 2011).',
+    'EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen (Jung und Kollegen, 2011).',
     'Eine Metaanalyse von 2024 zum Kurzer-Fuß-Training bei Plattfüßen fand, dass Programme über sechs Wochen den Navicular Drop verbesserten, kürzere Programme aber keine Signifikanz erreichten (Cheng und Kollegen, 2024).',
     'Gesunde Erwachsene, die vier Wochen Kurzer-Fuß-Übungen machten, verbesserten ihr dynamisches Gleichgewicht stärker als eine Gruppe, die im selben Zeitraum Handtuchgreifen machte (Lynn und Kollegen, 2012).',
   ],
@@ -67,7 +67,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
             'Im Flexor digitorum brevis (24,8\u00A0%).',
           ],
         },
-        'Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen.',
+        'Eine frühere EMG-Studie von Jung und Kollegen (2011) fand, dass der Abductor hallucis bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen, im Sitzen wie im Einbeinstand.',
         'Deshalb gilt **der kurze Fuß als bessere Übung als Handtuchgreifen, wenn es gezielt um die inneren Fußmuskeln geht.** Handtuchgreifen setzt die langen Zehenbeuger ein, die äußeren Muskeln, die vom Schienbein zu den Zehen laufen. Bei der Kurzer-Fuß-Übung bleiben diese äußeren Muskeln ruhiger.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -158,7 +158,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     {
       q: 'Ist die Kurzer-Fuß-Übung besser als Handtuchgreifen?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'Wenn es gezielt um die inneren Fußmuskeln geht, ja. EMG-Forschung zeigt, dass der Abductor hallucis bei der Kurzer-Fuß-Übung mehr als viermal so aktiv ist wie beim Handtuchgreifen (Jung 2011). Eine eigene randomisierte Studie fand, dass die Kurzer-Fuß-Gruppe nach vier Wochen ihr Gleichgewicht stärker verbesserte als die Gruppe mit Handtuchgreifen (Lynn 2012). Handtuchgreifen hat trotzdem seinen Platz als einfachere Einstiegsübung.',
+      a: 'Wenn es gezielt um die inneren Fußmuskeln geht, ja. EMG-Forschung zeigt, dass der Abductor hallucis bei der Kurzer-Fuß-Übung deutlich aktiver ist als beim Handtuchgreifen (Jung 2011). Eine eigene randomisierte Studie fand, dass die Kurzer-Fuß-Gruppe nach vier Wochen ihr Gleichgewicht stärker verbesserte als die Gruppe mit Handtuchgreifen (Lynn 2012). Handtuchgreifen hat trotzdem seinen Platz als einfachere Einstiegsübung.',
     },
     {
       q: 'Wie viele Sätze und Wiederholungen Kurzer Fuß sollte ich machen?',

@@ -108,7 +108,7 @@ export const BEST_APP_IT: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. 44,99\u00A0$ all’anno o 7,99\u00A0$ a settimana',
+            'iOS, Android. Abbonamento settimanale o annuale',
             'Dolore al tallone, piede piatto, stare in piedi tutto il giorno, runner',
             'Il check-in del mattino adatta ogni sessione',
             'Ancora senza valutazioni (nuova, ottobre 2026)',
@@ -226,7 +226,7 @@ export const BEST_APP_IT: Guide = {
           ],
         },
         'Copre dolore al tallone, piede piatto e dolore alla tibia, non gli oltre 15 tipi di infortunio di Exakt né l’ambito su tutto il corpo di Hinge Health o Prehab.',
-        'A 44,99\u00A0$ all’anno o 7,99\u00A0$ a settimana, il prezzo annuale è più basso di quello della maggior parte delle concorrenti. Il prezzo settimanale è più alto rispetto a quello annuale, come è normale negli abbonamenti.',
+        'È un abbonamento settimanale o annuale tramite App Store o Google Play, e il prezzo attuale è indicato nello store prima di abbonarti.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

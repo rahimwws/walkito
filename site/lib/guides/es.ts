@@ -305,14 +305,14 @@ export const HEEL_PAIN_ES: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-07',
-  title: 'Ejercicios para fascitis plantar: dosis de la guía de 2023',
+  updated: '2026-10-10',
+  title: '8 ejercicios para fascitis plantar y dolor de talón',
   description:
-    'Ocho ejercicios y estiramientos para la fascitis plantar con dosis, qué evitar, mejor momento para estirar y grados de evidencia de la guía de 2023.',
+    'Ocho ejercicios y estiramientos para la fascitis plantar que puedes hacer en casa, con dosis, qué evitar, cuándo estirar y grados de la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',
-  lede: 'Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.',
+  lede: 'Los ejercicios para la fascitis plantar con mejor evidencia son los estiramientos de la fascia plantar y de la pantorrilla, con grado A, el más alto de la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado B. Abajo tienes ocho, con sus dosis, y todos se hacen en casa. Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.',
   intro: [
-    'También es confuso buscar información, porque cada quien dice algo distinto. La evidencia apunta a dos cosas: estirar la fascia plantar y la pantorrilla, y hacer trabajo de fuerza para la pantorrilla. Una guía clínica de 2023 le da al estiramiento su grado más alto, A, y al entrenamiento de fuerza una B.',
+    'También es confuso buscar información, porque cada quien dice algo distinto. La evidencia apunta siempre a lo mismo: estirar la fascia plantar y la pantorrilla, y hacer trabajo de fuerza para la pantorrilla.',
     'En un ensayo con 48\u00A0personas, todas con plantillas, las elevaciones de talón lentas con una toalla bajo los dedos ayudaron más rápido que solo estirar. A los doce meses, los dos grupos estaban igualados. Hacer las dos cosas es lo que respalda la guía.',
   ],
   takeaways: [

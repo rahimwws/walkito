@@ -28,7 +28,7 @@ export const VS_EXAKT_DE: Guide = {
     'Exakt und Walkito gibt es beide für iOS und Android.',
     'Exakt Health ist in der EU als Medizinprodukt zertifiziert. Walkito ist kein Medizinprodukt.',
     'Walkito passt jede Einheit nach einem Schmerz-Check-in am Morgen an und testet alle 14\u00A0Tage den Unterschied zwischen links und rechts. Exakt passt den Plan nach dem Feedback am Ende jeder Einheit an.',
-    'Exakt kostet 19,99\u00A0$/Monat oder 59,99\u00A0$ für sechs Monate. Walkito kostet 44,99\u00A0$/Jahr oder 7,99\u00A0$/Woche.',
+    'Exakt kostet 19,99\u00A0$/Monat oder 59,99\u00A0$ für sechs Monate. Walkito ist ein Wochen- oder Jahresabo, der aktuelle Preis steht im Store.',
   ],
   toc: true,
   sections: [
@@ -53,13 +53,8 @@ export const VS_EXAKT_DE: Guide = {
           ],
           [
             'Preise',
-            '44,99\u00A0$/Jahr oder 7,99\u00A0$/Woche',
+            'Wochen- oder Jahresabo (Preis im Store angegeben)',
             '19,99\u00A0$/Monat, 39,99\u00A0$/3\u00A0Monate oder 59,99\u00A0$/6\u00A0Monate (Reha); Laufpläne bis 99,99\u00A0$/Jahr',
-          ],
-          [
-            'Kostenlose Testphase',
-            'Im App Store nicht angegeben (die Nutzungsbedingungen erlauben Einführungsangebote)',
-            '7\u00A0Tage kostenlos testen',
           ],
           [
             'Dauer einer Einheit',
@@ -184,17 +179,10 @@ export const VS_EXAKT_DE: Guide = {
     {
       h2: 'Was kosten Walkito und Exakt Health?',
       paragraphs: [
-        'Walkito kostet 44,99\u00A0$ pro Jahr oder 7,99\u00A0$ pro Woche. Der Jahrespreis entspricht etwa 0,87\u00A0$ pro Woche. Im App Store ist keine kostenlose Testphase angegeben, aber die Nutzungsbedingungen erlauben Einführungsangebote.',
+        'Walkito ist ein kostenloser Download mit einem Wochen- oder Jahresabo, abgerechnet über den App Store oder Google Play. Der aktuelle Preis für dein Land wird dir im Store angezeigt, bevor du abschließt.',
         'Exakt kostet 19,99\u00A0$ pro Monat für die Reha-Pläne, mit Optionen für 3\u00A0Monate (39,99\u00A0$) und 6\u00A0Monate (59,99\u00A0$). Lauftrainingspläne kosten bis zu 99,99\u00A0$ pro Jahr. Jedes Abo beginnt mit einer 7-tägigen kostenlosen Testphase.',
-        'Über ein ganzes Jahr:',
-        {
-          list: [
-            'Walkito kostet im Jahresabo 44,99\u00A0$.',
-            'Die günstigste Reha-Option von Exakt (6-Monats-Plan, zweimal verlängert) kostet etwa 120\u00A0$.',
-            'Mit einem Laufplan kann Exakt über 200\u00A0$ im Jahr kosten.',
-          ],
-        },
-        'Wenn du nur Übungen gegen Fersen- oder Fußschmerzen brauchst, **ist Walkito deutlich günstiger.** Wenn du Reha nach einer Laufverletzung plus einen Trainingsplan brauchst, deckt der höhere Preis von Exakt mehr ab.',
+        'Über ein ganzes Jahr kostet die günstigste Reha-Option von Exakt (der 6-Monats-Plan, zweimal gekauft) etwa 120\u00A0$, und mit einem Laufplan können es über 200\u00A0$ werden. Vergleiche den Walkito-Preis im Store mit diesen Zahlen.',
+        'Wenn du nur Übungen gegen Fersen- oder Fußschmerzen brauchst, ist Walkito die engere, fokussierte Option. Wenn du Reha nach einer Laufverletzung plus einen Trainingsplan brauchst, decken die Pläne von Exakt mehr ab.',
       ],
     },
     {
@@ -260,7 +248,6 @@ export const VS_EXAKT_DE: Guide = {
         'Du willst Einheiten von 3 bis 10\u00A0Minuten statt 15 bis 30.',
         'Die tägliche Anpassung an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.',
         'Du willst alle 14\u00A0Tage Fortschrittstests, die links und rechts vergleichen.',
-        'Der Preis zählt: Walkito ist mit 44,99\u00A0$ pro Jahr weniger als halb so teuer wie die günstigsten Jahreskosten von Exakt.',
         'Du brauchst die App auf Russisch.',
         'Du bist für die Arbeit den ganzen Tag auf den Beinen, läufst aber nicht, und willst eine App, die dafür gemacht ist.',
       ],
@@ -272,8 +259,8 @@ export const VS_EXAKT_DE: Guide = {
       a: 'Das hängt davon ab, was du brauchst. Exakt Health deckt über 15\u00A0Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit täglicher Anpassung an den Schmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit täglicher Anpassung ist Walkito gemacht.',
     },
     {
-      q: 'Ist Walkito günstiger als Exakt Health?',
-      a: 'Ja, aufs Jahr gerechnet. Walkito kostet 44,99\u00A0$ pro Jahr. Die günstigste Reha-Option von Exakt Health kostet 59,99\u00A0$ für sechs Monate, also etwa 120\u00A0$ pro Jahr. Exakt bietet 7\u00A0Tage kostenlos zum Testen, Walkito gibt im App Store derzeit keine Testphase an.',
+      q: 'Wie sieht der Preis von Walkito im Vergleich zu Exakt Health aus?',
+      a: 'Walkito ist ein Wochen- oder Jahresabo, und der aktuelle Preis für dein Land wird im App Store oder bei Google Play angezeigt, bevor du abschließt. Die günstigste Reha-Option von Exakt Health kostet 59,99\u00A0$ für sechs Monate, also etwa 120\u00A0$ pro Jahr, und beginnt mit einer 7-tägigen kostenlosen Testphase.',
     },
     {
       q: 'Hat Exakt Health einen Plan bei Plantarfasziitis?',

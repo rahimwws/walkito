@@ -22,7 +22,7 @@ export const ANKLE_MOBILITY_FR: Guide = {
     'Le test genou au mur est fiable à la maison comme au cabinet, mais une revue de 2015 portant sur 12\u00A0études a trouvé qu’un changement doit atteindre environ 1,6 à 1,9\u00A0cm pour qu’on puisse le considérer comme réel.',
     'Dans un essai sur 74\u00A0personnes en bonne santé, la flexion de la cheville a augmenté après un programme de descentes excentriques du talon, et pas dans le groupe témoin (Mahieu et coll., 2008).',
     'Après une entorse de la cheville, la mobilisation articulaire par un professionnel a amélioré à court terme la flexion de la cheville en charge dans une revue de 2018, et les effets à long terme ont été peu étudiés.',
-    'Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient une flexion de la cheville de 0\u00A0degré ou moins avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles au-dessus de 10\u00A0degrés.',
+    'Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient une flexion de la cheville de 0\u00A0degré ou moins avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire que celles au-dessus de 10\u00A0degrés.',
   ],
   toc: true,
   sections: [
@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_FR: Guide = {
         'Une faible flexion de la cheville est associée à plusieurs problèmes, même si associé ne veut pas dire causé\u00A0:',
         {
           list: [
-            '**Fasciite plantaire\u00A0:** Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0\u00A0degré ou moins avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles au-dessus de 10\u00A0degrés (Riddle et coll., 2003).',
+            '**Fasciite plantaire\u00A0:** Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, les personnes ayant une flexion dorsale de 0\u00A0degré ou moins avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire que celles au-dessus de 10\u00A0degrés (Riddle et coll., 2003).',
             '**Blessures chez les recrues\u00A0:** Chez 1\u00A0093\u00A0recrues masculines de l’armée suivies pendant trois mois d’entraînement intensif, l’amplitude de la cheville mesurée au départ prédisait fortement qui se blesserait, sur 48\u00A0blessures au total (Pope et coll., 1998).',
           ],
         },

@@ -258,7 +258,7 @@ export const TIGHT_CALVES_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito ist eine iPhone-App mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.',
+    text: 'Walkito ist eine App für iPhone und Android mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.',
     more: [
       'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test die Wadenausdauer, damit du siehst, ob deine Waden kräftiger werden. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson, wenn eines der Warnzeichen oben auf dich zutrifft.',
     ],

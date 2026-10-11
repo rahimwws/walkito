@@ -67,7 +67,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
           ],
         },
         'Ce sont des muscles intrinsèques. Mais l’exercice sollicite aussi les fléchisseurs extrinsèques des orteils\u00A0: le long fléchisseur des orteils et le long fléchisseur de l’hallux, qui partent de la jambe et passent par la cheville jusqu’aux orteils.',
-        'Une étude EMG de Jung et coll. (2011) a comparé l’activité musculaire pendant le ramassage de serviette et l’exercice du pied court. Elle a montré que l’abducteur de l’hallux, le muscle qui contribue le plus à tenir la voûte, était plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette. Le ramassage de serviette produisait plutôt plus d’activité dans les fléchisseurs extrinsèques des orteils.',
+        'Une étude EMG de Jung et coll. (2011) a comparé l’activité musculaire pendant le ramassage de serviette et l’exercice du pied court. Elle a montré que l’abducteur de l’hallux, le muscle qui contribue le plus à tenir la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette, assis comme debout sur une jambe.',
         'Ramasser la serviette est donc **un bon exercice pour la force de préhension des orteils**, mais il cible moins précisément les muscles intrinsèques de la voûte que l’[exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.jung],
@@ -76,7 +76,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
       h2: 'Serviette ou exercice du pied court\u00A0: lequel est le meilleur\u00A0?',
       paragraphs: [
         'Chaque exercice a son point fort. Ramasser la serviette s’apprend plus facilement, car la serviette donne une cible claire aux orteils. Beaucoup de gens ont du mal à sentir la contraction du pied court au début. Ramasser la serviette développe la force de préhension des orteils, qui compte pour l’équilibre et la poussée pendant la marche.',
-        'L’exercice du pied court isole mieux les muscles intrinsèques de la voûte. Une revue de 2015 de McKeon et coll. a noté que l’abducteur de l’hallux était plus de quatre fois plus activé pendant l’exercice du pied court que pendant le ramassage de serviette, et a recommandé le pied court comme principal exercice d’entraînement des muscles intrinsèques du pied.',
+        'L’exercice du pied court isole mieux les muscles intrinsèques de la voûte. Une revue de 2015 de McKeon et coll. a décrit le pied court comme un moyen important d’entraîner les muscles intrinsèques du pied.',
         'En pratique, les programmes qui utilisent les deux tirent le meilleur de chacun. Walkito utilise le ramassage de serviette comme exercice de début, qui introduit l’idée du travail des muscles du pied. L’[exercice du pied court](/fr/exercices/pied-court/) vient ensuite et ajoute un entraînement plus ciblé de la voûte. L’un ne remplace pas l’autre.',
       ],
       cites: [CITE.mcKeon, CITE.jung],

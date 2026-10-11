@@ -106,7 +106,7 @@ export const BEST_APP_FR: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. 44,99\u00A0$/an ou 7,99\u00A0$/semaine',
+            'iOS, Android. Abonnement hebdomadaire ou annuel',
             'Douleur au talon, pieds plats, station debout prolongée, coureurs',
             'Le bilan du matin ajuste chaque séance',
             'Pas encore notée (nouvelle, oct. 2026)',
@@ -224,7 +224,7 @@ export const BEST_APP_FR: Guide = {
           ],
         },
         'Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15\u00A0types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.',
-        'À 44,99\u00A0$ par an ou 7,99\u00A0$ par semaine, le prix annuel est plus bas que celui de la plupart des concurrentes. Le prix hebdomadaire est plus élevé par rapport à l’annuel, ce qui est classique pour un abonnement.',
+        'C’est un abonnement hebdomadaire ou annuel via l’App Store ou Google Play, et le prix actuel est affiché dans la boutique avant votre abonnement.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
