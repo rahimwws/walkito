@@ -12,12 +12,12 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
     'Pieds plats et douleur au genou\u00A0: ce que montrent les études sur le lien, le rôle des semelles et pourquoi l’exercice hanche et genou passe en premier.',
   h1: 'Pieds plats et douleur au genou\u00A0: y a-t-il un lien, et qu’est-ce qui aide\u00A0?',
   lede:
-    'Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur fréquente au genou. Pour la douleur à l’avant du genou, les meilleures preuves concernent le renforcement de la hanche et du genou, avec les semelles comme complément à court terme.',
+    'Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3\u00A0fois plus élevée de douleur fréquente au genou. Pour la douleur à l’avant du genou, les meilleures preuves concernent le renforcement de la hanche et du genou, avec les semelles comme complément à court terme.',
   intro: [
     'Votre genou fait mal dans les escaliers ou après une course, et quelqu’un vous a dit que c’était à cause de vos pieds plats. La question est légitime. Le pied et le genou bougent bien ensemble. Mais la plupart des personnes aux pieds plats n’ont aucune douleur au genou, et la douleur au genou a beaucoup de causes qui n’ont rien à voir avec la voûte.',
   ],
   takeaways: [
-    'Dans une étude de 2011 sur 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours et 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur du genou (Gross et coll.). L’étude montre un lien, pas une cause.',
+    'Dans une étude de 2011 sur 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours et 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur du genou (Gross et coll.). L’étude montre un lien, pas une cause.',
     'Chez 97\u00A0279 jeunes recrues militaires, la douleur à l’avant du genou touchait 7\u00A0% des recrues aux pieds plats modérés ou sévères et 4\u00A0% de celles aux pieds plats légers ou sans pieds plats (Kosashvili et coll., 2008).',
     'Une revue de 2014 portant sur 21\u00A0études prospectives n’a constaté que des preuves très limitées, avec de faibles effets, qu’un pied affaissé vers l’intérieur augmente le risque de douleur autour de la rotule (Neal et coll.).',
     'Dans un essai sur 179\u00A0adultes souffrant de douleur rotulienne, des semelles formées ont fait mieux que des semelles plates à court terme, mais pas mieux que la kinésithérapie, et n’ont rien apporté en plus de celle-ci (Collins et coll., 2008).',
@@ -27,15 +27,15 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
   sections: [
     {
       h2: 'Les pieds plats peuvent-ils causer une douleur au genou\u00A0?',
-      keyFact: 'Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur fréquente au genou que tous les autres pieds (Gross et coll., 2011).',
+      keyFact: 'Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3\u00A0fois plus élevée de douleur fréquente au genou que tous les autres pieds (Gross et coll., 2011).',
       figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       paragraphs: [
         'Plusieurs grandes études relient les pieds plats à la douleur au genou, mais **aucune ne prouve que la voûte cause la douleur.** Le lien est faible, et il apparaît surtout pour les pieds les plus plats.',
         'L’étude la plus connue vient des Framingham Studies, aux États-Unis. Gross et ses collègues ont mesuré les empreintes de 1\u00A0903\u00A0adultes âgés (65\u00A0ans en moyenne) et les ont interrogés sur leurs douleurs au genou. Résultats de 2011, pour les pieds les plus plats par rapport à tous les autres pieds\u00A0:',
         {
           list: [
-            '**Douleur au genou\u00A0:** une probabilité 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours.',
-            '**Cartilage\u00A0:** une probabilité 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os.',
+            '**Douleur au genou\u00A0:** une cote (odds) 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours.',
+            '**Cartilage\u00A0:** une cote (odds) 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os.',
             '**Reste du genou\u00A0:** aucun lien avec des lésions dans les autres parties du genou.',
           ],
         },
@@ -190,12 +190,12 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
     {
       q: 'Les pieds plats peuvent-ils causer une douleur au genou\u00A0?',
       cites: [CITE.grossFlatFeetKnee, CITE.nealFootPosture],
-      a: 'Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur fréquente au genou (Gross 2011). Une revue de 2014 n’a constaté que des preuves très limitées qu’un pied affaissé vers l’intérieur augmente le risque de douleur rotulienne. La plupart des personnes aux pieds plats n’ont pas mal au genou.',
+      a: 'Les pieds plats sont liés à la douleur au genou, mais le lien est faible et il n’a pas été démontré qu’il s’agit d’une cause. Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une cote (odds) 1,3\u00A0fois plus élevée de douleur fréquente au genou (Gross 2011). Une revue de 2014 n’a constaté que des preuves très limitées qu’un pied affaissé vers l’intérieur augmente le risque de douleur rotulienne. La plupart des personnes aux pieds plats n’ont pas mal au genou.',
     },
     {
       q: 'Les pieds plats peuvent-ils donner mal à l’intérieur du genou\u00A0?',
       cites: [CITE.grossFlatFeetKnee],
-      a: 'Il existe un lien chez les personnes âgées. Dans l’étude de Framingham de 2011, les pieds les plus plats avaient une probabilité 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur du genou, et aucun lien avec des lésions ailleurs dans le genou. Ce schéma correspond à l’arthrose du genou. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer que les pieds en sont la cause. Un professionnel de santé peut vérifier si l’arthrose est en cause.',
+      a: 'Il existe un lien chez les personnes âgées. Dans l’étude de Framingham de 2011, les pieds les plus plats avaient une cote (odds) 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur du genou, et aucun lien avec des lésions ailleurs dans le genou. Ce schéma correspond à l’arthrose du genou. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer que les pieds en sont la cause. Un professionnel de santé peut vérifier si l’arthrose est en cause.',
     },
     {
       q: 'Les semelles aident-elles la douleur au genou due aux pieds plats\u00A0?',

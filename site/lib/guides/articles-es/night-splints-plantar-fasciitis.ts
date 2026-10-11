@@ -6,7 +6,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-10',
   title: 'Férula nocturna para fascitis plantar: ¿funciona?',
   description:
     'Férula nocturna para fascitis plantar: qué dicen la guía de 2023 y los ensayos, bota o calcetín, cuánto tiempo usarla y por qué tanta gente la deja.',
@@ -96,6 +96,24 @@ export const NIGHT_SPLINTS_ES: Guide = {
         'Si vas a elegir tú, **la indicada probablemente es la que de verdad vas a mantener puesta toda la noche.** Un médico o un fisioterapeuta puede ayudarte con el ajuste.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: '¿Qué revisar antes de comprar una férula nocturna?',
+      paragraphs: [
+        'Ninguna marca ni tipo tiene ensayos que muestren que funciona mejor que otro, así que compra por comodidad y ajuste, no por lo que dice la caja. Revisa esto antes de pagar:',
+        {
+          list: [
+            '**El tipo que va con tu forma de dormir.** La bota le va mejor a quien duerme boca arriba. Si duermes de lado o boca abajo, un modelo tipo calcetín o una férula dorsal pequeña suele ser más fácil.',
+            '**Un ángulo ajustable.** Conviene empezar más o menos en ángulo recto y poder cambiarlo, no quedarte con un estiramiento fijo.',
+            '**La talla correcta.** Usa la tabla de tallas del fabricante según tu talla de zapato y tu pantorrilla. Una férula que se resbala o aprieta los dedos no se queda puesta toda la noche.',
+            '**Acolchado suave y un forro que se pueda lavar.** La vas a usar cada noche durante uno a tres meses.',
+            '**Correas que puedas soltar a oscuras.** Tienes que quitártela antes de caminar, por ejemplo si te levantas de noche.',
+            '**Un plazo de devolución.** En un ensayo, solo 1 de 28\u00A0personas con férula la seguía usando al año. Compra donde puedas devolverla si te arruina el sueño.',
+          ],
+        },
+        'Desconfía de cualquier férula que se venda con grandes promesas. Los ensayos son mixtos, y los estiramientos de la mañana tienen el mismo grado en la guía sin costar nada.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: '¿Cuánto tiempo hay que usar la férula nocturna para la fascitis plantar?',

@@ -11,7 +11,7 @@ export const BEST_APP_ES: Guide = {
     'Mejor app para fascitis plantar: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch y Walkito comparadas en precio y para quién sirven.',
   h1: 'Mejor app para fascitis plantar: guía para elegir en 2026',
   lede:
-    'Esta página compara siete apps que incluyen ejercicios para la fascitis plantar, el pie plano o el dolor de pies en general. Walkito es una de ellas, y Walkito hace esta página, así que es justo que lo sepas desde el principio. La idea es ser justos, decir dónde las otras son mejores y darte suficiente detalle para elegir la que va con tu situación.',
+    'Esta página compara siete apps que incluyen [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/), el pie plano o el dolor de pies en general. Walkito es una de ellas, y Walkito hace esta página, así que es justo que lo sepas desde el principio. La idea es ser justos, decir dónde las otras son mejores y darte suficiente detalle para elegir la que va con tu situación.',
   intro: [
     'No hay una sola app que sea la mejor para todos. La elección correcta depende de lo que necesitas. Un corredor que vuelve después de una fascitis plantar necesita otra cosa que alguien con pie plano que pasa todo el día de pie en el trabajo, y los dos necesitan otra cosa que alguien cuya empresa le cubre Hinge Health. Los criterios de abajo explican qué buscar, y la tabla que sigue muestra dónde queda cada app.',
   ],
@@ -95,7 +95,7 @@ export const BEST_APP_ES: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. $44.99/año o $7.99/semana',
+            'iOS, Android. Suscripción semanal o anual',
             'Dolor de talón, pie plano, estar de pie todo el día, corredores',
             'El chequeo de la mañana ajusta cada sesión',
             'Todavía sin calificaciones (nueva, oct. 2026)',
@@ -192,7 +192,7 @@ export const BEST_APP_ES: Guide = {
     {
       h2: 'Walkito: lo que hace y lo que no hace',
       paragraphs: [
-        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026 y en Google Play más tarde, en octubre de 2026. Es nueva y todavía no tiene calificaciones.',
+        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 2 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.',
         'Lo que hace:',
         {
           list: [
@@ -213,7 +213,7 @@ export const BEST_APP_ES: Guide = {
           ],
         },
         'Cubre el dolor de talón, el pie plano y el dolor de tibia, no las más de 15 lesiones que cubre Exakt ni todo el cuerpo como Hinge Health o Prehab.',
-        'A $44.99 al año o $7.99 a la semana, el precio anual es más bajo que el de la mayoría de las otras apps. El precio semanal sale más caro comparado con el anual, algo normal en las suscripciones.',
+        'Es una suscripción semanal o anual a través del App Store o Google Play, y el precio actual aparece en la tienda antes de que te suscribas.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

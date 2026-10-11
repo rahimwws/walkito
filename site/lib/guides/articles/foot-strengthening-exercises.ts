@@ -26,9 +26,9 @@ export const FOOT_STRENGTHENING_EN: Guide = {
     'Foot strengthening exercises for the small and large foot muscles, from seated to single leg, with starting doses and what trials found on injury.',
   h1: 'Foot strengthening exercises: what to do and how to progress',
   lede:
-    'Foot strengthening exercises train the small muscles inside the foot and the larger ones that run down from the calf. Start seated with the short foot exercise, toe spreads and big toe lifts, then move to standing, then to one leg. In trials, foot muscles got bigger and stronger within about two months.',
+    'Foot strengthening exercises train the small muscles inside the foot and the larger ones that run down from the calf. Start seated with the [short foot exercise](/exercises/short-foot-exercise/), toe spreads and big toe lifts, then move to standing, then to one leg. In trials, foot muscles got bigger and stronger within about two months.',
   intro: [
-    'This page is the general guide for the whole foot. For flat feet, toes or barefoot shoes, the more specific pages are linked below.',
+    'This page is the general guide for the whole foot. For [flat feet](/flat-feet/), toes or barefoot shoes, the more specific pages are linked below.',
   ],
   takeaways: [
     'In a 2020 trial of 118 recreational runners, the group without foot training was 2.42 times more likely to get a running injury over 12 months than the group that did a foot core program (Taddei and colleagues). This is one trial.',
@@ -140,9 +140,9 @@ export const FOOT_STRENGTHENING_EN: Guide = {
         'Walkito uses the same three steps for the short foot exercise: seated, then standing on both feet, then on one leg. When the arch is your plan\'s focus, the next weekly plan moves you up one step if you rated your last two sessions with that exercise as easy and your morning pain has not gone up. A session rated hard, or morning pain up by 2 points, moves you back a step. The two later steps are shown below.',
       ],
       bullets: [
-        '**Step 1, seated.** Short foot, toe spread, big toe lift and towel scrunch, all sitting down.',
+        '**Step 1, seated.** Short foot, toe spread, big toe lift and [towel scrunch](/exercises/towel-scrunch/), all sitting down.',
         '**Step 2, standing on both feet.** The short foot hold while standing, and two-foot heel raises.',
-        '**Step 3, one leg.** The short foot hold on one leg, then single-leg balance with the arch held up.',
+        '**Step 3, one leg.** The short foot hold on one leg, then [single-leg balance](/exercises/single-leg-balance/) with the arch held up.',
         '**Later.** Single-leg heel raises and, for runners, small hops. These are bigger loads. Add them only when step 3 is easy.',
       ],
       exercises: [
@@ -237,7 +237,7 @@ export const FOOT_STRENGTHENING_EN: Guide = {
     {
       h2: 'Does foot strengthening help plantar fasciitis or flat feet?',
       paragraphs: [
-        'For plantar fasciitis, foot strengthening on top of stretching did not do better than stretching alone in a trial that compared them. In 2016, Kamonseki and colleagues split 83 people with plantar fasciitis into three groups for two months:',
+        'For [plantar fasciitis](/plantar-fasciitis/), foot strengthening on top of stretching did not do better than stretching alone in a trial that compared them. In 2016, Kamonseki and colleagues split 83 people with plantar fasciitis into three groups for two months:',
         {
           list: [
             'Foot strengthening plus stretching.',
@@ -304,7 +304,7 @@ export const FOOT_STRENGTHENING_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a weekly plan around one goal and includes the foot exercises on this page: the short foot exercise from seated to single leg, toe spreads, big toe lifts, towel scrunches, heel raises and balance work. It starts the arch exercises at 3 sets of 8 with 5-second holds and balance at 3 holds of 20 seconds, and at each new weekly plan moves your focus exercise up a step when you rated your last two sessions with it as easy and your morning pain has not risen.',
+    text: '[Walkito](/program/) builds a weekly plan around one goal and includes the foot exercises on this page: the short foot exercise from seated to single leg, toe spreads, big toe lifts, towel scrunches, heel raises and balance work. It starts the arch exercises at 3 sets of 8 with 5-second holds and balance at 3 holds of 20 seconds, and at each new weekly plan moves your focus exercise up a step when you rated your last two sessions with it as easy and your morning pain has not risen.',
     more: [
       'You pick sessions of 3, 5 or 10 minutes. A short test every 14 days at first checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

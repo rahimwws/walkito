@@ -140,10 +140,11 @@ export default function HeelPainRunners() {
           </h1>
           <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />
           <p>
-            Your heel hurts on the first steps the morning after a run. It eases
-            once you get moving, then comes back after you sit for a while. You
-            don’t have to stop everything. The 2023 heel pain guideline advises
-            changing the load on your feet. Walkito builds that into a plan of
+            With heel pain from running, you don’t have to stop everything: the
+            2023 heel pain guideline advises changing the load on your feet. The
+            usual pattern: your heel hurts on the first steps the morning after a
+            run, eases once you get moving, then comes back after you sit for a
+            while. Walkito builds that change of load into a plan of
             calf strength, stretching and balance work, in sessions of {MIN_A},{' '}
             {MIN_B} or {MIN_C} minutes that adapt to how each morning feels.
           </p>

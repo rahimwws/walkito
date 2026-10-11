@@ -275,7 +275,7 @@ export const PF_TAPING_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Tape can make the next few days easier. The exercises are what keep working after it comes off. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. Each week, only the exercise for your focus goal can move up a step, and only when your last two sessions with it felt easy and morning pain did not rise.',
+    text: 'Tape can make the next few days easier. The exercises are what keep working after it comes off. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. Each week, only the exercise for your focus goal can move up a step, and only when your last two sessions with it felt easy and morning pain did not rise.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days at first (every 28 once a goal is reached), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Taping is not part of Walkito. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

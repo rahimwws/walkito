@@ -16,7 +16,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
     'How to do the soleus stretch (bent knee) for plantar fasciitis and tight calves: technique, why it needs its own stretch, sets and hold time.',
   h1: 'Soleus stretch (bent knee): technique, sets and why it matters',
   lede:
-    'The soleus is the deeper calf muscle that sits underneath the gastrocnemius. It only stretches when the knee is bent, because bending the knee takes the gastrocnemius out of the equation. In a series of 254 people with plantar fasciitis, 23 to 30 percent had a combined gastrocnemius-soleus contracture. If you only do the straight-knee stretch, you are missing this muscle entirely.',
+    'The soleus is the deeper calf muscle that sits underneath the gastrocnemius. It only stretches when the knee is bent, because bending the knee takes the gastrocnemius out of the equation. In a series of 254 people with [plantar fasciitis](/plantar-fasciitis/), 23 to 30 percent had a combined gastrocnemius-soleus contracture. If you only do the straight-knee stretch, you are missing this muscle entirely.',
   takeaways: [
     'The soleus crosses only the ankle. The gastrocnemius crosses the knee and the ankle. Bending the knee lets the gastrocnemius go slack so the soleus takes the stretch.',
     'In 254 people with plantar fasciitis, 23 to 30 percent had a contracture in both the gastrocnemius and the soleus (Patel and DiGiovanni, 2011).',
@@ -123,7 +123,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito programs the soleus stretch alongside the calf stretch and the plantar fascia stretch on most sessions. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app moves from stretching to strength at your pace, not on a fixed calendar.',
+    text: '[Walkito](/program/) programs the soleus stretch alongside the calf stretch and the plantar fascia stretch on most sessions. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app moves from stretching to strength at your pace, not on a fixed calendar.',
     more: [
       'Every 14 days, a short test checks calf endurance, arch hold and balance. Ankle range that improves over weeks shows the stretching is doing something. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

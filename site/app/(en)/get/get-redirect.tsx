@@ -45,7 +45,7 @@ export function GetRedirect() {
   const w = WORDS[lang];
   return (
     <div className="handoff-card" lang={lang}>
-      <img src="/icon.png" alt="" width={96} height={96} />
+      <img src="/icon-128.webp" alt="" width={96} height={96} />
       {waiting ? <p className="handoff-title">{w.going}</p> : null}
       {!waiting && android && !PLAY_STORE ? <p>{w.soon}</p> : null}
       <div className="handoff-stores">

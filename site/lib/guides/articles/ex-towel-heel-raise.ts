@@ -18,7 +18,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     'How to do the towel heel raise from the Rathleff protocol: sets, reps, tempo, the towel under your toes, common mistakes, and easier or harder versions.',
   h1: 'Towel heel raise: the Rathleff high-load protocol, step by step',
   lede:
-    'The towel heel raise is a single-leg calf raise on a step with a rolled towel under the toes. It comes from a 2015 trial of 48 people with plantar fasciitis, where this exercise eased heel pain faster than stretching alone over three months. The towel is what makes it different from a regular calf raise: it engages the plantar fascia through the windlass mechanism.',
+    'The towel heel raise is a single-leg calf raise on a step with a rolled towel under the toes. It comes from a 2015 trial of 48 people with [plantar fasciitis](/plantar-fasciitis/), where this exercise eased heel pain faster than stretching alone over three months. The towel is what makes it different from a regular calf raise: it engages the plantar fascia through the windlass mechanism.',
   takeaways: [
     'In a trial of 48 people, loaded towel heel raises scored 29 points better on the Foot Function Index than stretching alone at three months, though both groups converged by twelve months (Rathleff and colleagues, 2015).',
     'The 2023 heel pain guideline grades strength training B, one step below stretching at A, and recommends both (Koc and colleagues, 2023).',
@@ -168,7 +168,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'The towel heel raise is one step in a calf chain that Walkito builds into a weekly plan. The chain runs from seated heel raises through double-leg raises, a hold, the towel raise, eccentric heel drops, and eventually pogo hops. Each step opens once two sessions at the current level felt easy.',
+    text: 'The towel heel raise is one step in a calf chain that [Walkito](/program/) builds into a weekly plan. The chain runs from seated heel raises through double-leg raises, a hold, the towel raise, eccentric heel drops, and eventually pogo hops. Each step opens once two sessions at the current level felt easy.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance and balance. Walkito is an exercise program, not a diagnosis tool.',
     ],

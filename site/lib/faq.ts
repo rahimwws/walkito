@@ -79,7 +79,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'How many notifications will I get?',
-        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in iOS Settings, and the plan works the same.',
+        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in your phone’s settings, on iPhone or Android, and the plan works the same.',
       },
       {
         q: 'Will Walkito nag me if I stop using it?',
@@ -190,7 +190,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'Does uneven walking mean I am injured?',
-        a: 'Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people. Walkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.',
+        a: 'Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people.\n\nWalkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.',
       },
     ],
   },
@@ -204,7 +204,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'Which Apple Health permissions does Walkito ask for?',
-        a: 'Walkito asks to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts. It asks to write workouts and mindful minutes. Every permission is optional, and you can withdraw it in iOS Settings. The plan keeps working without them. It just adapts less to your day.',
+        a: 'On iPhone, Walkito asks Apple Health to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts, and to write workouts and mindful minutes. On Android, it reads steps, distance and sleep from Health Connect. Every permission is optional, and you can withdraw it in your phone’s settings. The plan keeps working without them. It just adapts less to your day.',
       },
       {
         q: 'Does Walkito work offline?',
@@ -212,7 +212,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'What happens to my plan if I get a new phone?',
-        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back. A subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.',
+        a: 'Your plan comes back when you sign in to the same Walkito account on the new phone, because your plan and what you log are saved to that account. To get a purchase back on iPhone, sign in with the same Apple ID and tap Restore Purchases in Walkito. On Android, use the same Google account in Google Play and the subscription comes back.\n\nA subscription bought on iPhone does not carry over to Android, or the other way round, because Apple and Google bill separately. Apple Health readings are not part of that copy, because they stay on the phone.',
       },
       {
         q: 'How do I delete my Walkito account and data?',
@@ -230,7 +230,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'How do I cancel my Walkito subscription?',
-        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. On Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period. Deleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.',
+        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for.\n\nOn Android, open the Google Play app, tap your profile icon, then Payments & subscriptions → Subscriptions → Walkito → Cancel subscription; you also keep access until the end of the paid period.\n\nDeleting the app or your account does not cancel it. Refunds are handled by the store: Apple on iPhone, Google Play on Android.',
       },
     ],
   },

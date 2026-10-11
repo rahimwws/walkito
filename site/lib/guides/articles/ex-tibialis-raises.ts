@@ -136,7 +136,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito pairs tibialis raises with calf raises, balance work and foot exercises in a plan built around your current level. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
+    text: '[Walkito](/program/) pairs tibialis raises with calf raises, balance work and foot exercises in a plan built around your current level. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
     more: [
       'Every 14 days, a short test checks calf endurance, balance and arch hold. Tibialis raises are part of the strength days. Walkito is an exercise program. It does not diagnose.',
     ],

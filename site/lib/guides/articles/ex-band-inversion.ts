@@ -30,7 +30,7 @@ export const EX_BAND_INVERSION: Guide = {
       h2: 'What is the ankle inversion band exercise?',
       paragraphs: [
         'Ankle inversion with a band is a seated exercise where a resistance band is looped around the forefoot and anchored to the other foot or a fixed point. You turn the sole of the foot inward (inversion) against the band\'s pull. The knee stays still. Only the foot and ankle move.',
-        'The exercise targets the tibialis posterior, a deep muscle in the back of the lower leg whose tendon wraps behind the inner ankle bone and fans out along the bottom of the foot. It is the most important extrinsic muscle for arch support during walking. When it weakens or its tendon degenerates, the arch flattens and the foot rolls inward. That condition is called posterior tibial tendon dysfunction, or adult-acquired flat foot.',
+        'The exercise targets the tibialis posterior, a deep muscle in the back of the lower leg whose tendon wraps behind the inner ankle bone and fans out along the bottom of the foot. It is the most important extrinsic muscle for arch support during walking. When it weakens or its tendon degenerates, the arch flattens and the foot rolls inward. That condition is called [posterior tibial tendon dysfunction](/posterior-tibial-tendon-dysfunction-exercises/), or adult-acquired flat foot.',
       ],
       cites: [CITE.ling],
     },
@@ -100,7 +100,7 @@ export const EX_BAND_INVERSION: Guide = {
       h2: 'What does the research say about tibialis posterior strengthening?',
       paragraphs: [
         'The most direct evidence for the movement comes from the 2004 MRI study by Kulig and colleagues. It confirmed that foot adduction selectively activates the tibialis posterior with minimal activation of surrounding muscles. This makes inversion against a band the exercise of choice when the goal is to strengthen that specific muscle.',
-        'For clinical outcomes, a 2018 systematic review by Ross and colleagues looked at exercise programs for posterior tibial tendon dysfunction. Most studies were small, but the review concluded that programs including eccentric and concentric tibialis posterior exercises, often combined with calf strengthening and orthotics, improved pain and function.',
+        'For clinical outcomes, a 2018 systematic review by Ross and colleagues looked at exercise programs for posterior tibial tendon dysfunction. Most studies were small, but the review concluded that programs including eccentric and concentric tibialis posterior exercises, often combined with calf strengthening and [orthotics](/insoles-vs-exercises/), improved pain and function.',
         '**The exercise has not been tested on its own in a large plantar fasciitis trial.** Its role in the Walkito program is to support the arch by strengthening the extrinsic stabilizer that works alongside the intrinsic muscles. Related pages: [flat feet exercises](/flat-feet-exercises/), [short foot exercise](/exercises/short-foot-exercise/), [hip abduction](/exercises/hip-abduction/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito adds ankle inversion with a band after six sessions of the standing short foot exercise. The progression ensures the intrinsic foot muscles are active before the extrinsic stabilizer is loaded. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
+    text: '[Walkito](/program/) adds ankle inversion with a band after six sessions of the standing short foot exercise. The progression ensures the intrinsic foot muscles are active before the extrinsic stabilizer is loaded. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
     cta: 'Start with 3 minutes a day.',
   },
   crumb: 'Ankle inversion with a band (tibialis posterior)',

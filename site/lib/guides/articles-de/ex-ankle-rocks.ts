@@ -16,9 +16,9 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     'Sprunggelenk mobilisieren mit Sprunggelenk-Wippen, Knie über die Zehen: Technik, Sätze und Wiederholungen, warum die Beugung zählt und wie du sie testest.',
   h1: 'Sprunggelenk-Wippen: so geht es und warum die Beweglichkeit zählt',
   lede:
-    'Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit 23,3-fachen Odds.',
+    'Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit einer 23,3-fachen Chance.',
   takeaways: [
-    'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit 23,3-fachen Odds (Riddle und Kollegen, 2003).',
+    'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).',
     'Sprunggelenk-Wippen baut Dorsalflexion auf, indem es das Ende des Bewegungsumfangs unter Körpergewicht belastet, anders als eine passive Dehnung an der Wand.',
     'Der Knie-Wand-Test misst, wie weit das Knie mit der Ferse unten über die Zehen hinauskommt. Walkito enthält eine Knie-Wand-Übung (2-mal 30\u00A0Sekunden halten, jedes Bein).',
     'Walkito beginnt beim Sprunggelenk-Wippen mit 2\u00A0Sätzen à 15, jedes Bein.',
@@ -53,7 +53,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     },
     {
       h2: 'Warum zählt die Beweglichkeit im Sprunggelenk bei Fersenschmerzen?',
-      keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk ein stärkerer Risikofaktor als BMI oder Zeit im Stehen und erhöhte die Odds um das 23,3-Fache (Riddle und Kollegen, 2003).',
+      keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk ein stärkerer Risikofaktor als BMI oder Zeit im Stehen und erhöhte die Chance um das 23,3-Fache (Riddle und Kollegen, 2003).',
       paragraphs: [
         'Dorsalflexion ist, wie weit sich der Fuß nach oben Richtung Schienbein beugen kann, während die Ferse am Boden bleibt. Jeder Schritt braucht etwas Dorsalflexion. Wenn sich das Sprunggelenk nicht weit genug beugen kann, gleicht der Körper aus:',
         {
@@ -63,7 +63,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
             'Die Plantarfaszie fängt Kräfte ab, für die sie nicht gemacht ist.',
           ],
         },
-        'In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit 23,3-fachen Odds, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
+        'In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit einer 23,3-fachen Chance, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
         'Die Wade passiv zu dehnen (wie bei der [Wadendehnung](/de/uebungen/wade-dehnen/) und der [Soleusdehnung](/de/uebungen/soleus-dehnen/)) geht eine Seite des Problems an: die Länge des Muskels. Sprunggelenk-Wippen geht die andere Seite an: aktive Kontrolle am Ende des Bewegungsumfangs. Wenn du das Knie unter Körpergewicht über die Zehen wippst, lernt das Sprunggelenk, den Umfang zu nutzen, den es hat, statt ihn nur passiv zu erreichen.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -116,7 +116,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     {
       q: 'Hilft Sprunggelenk-Wippen bei Plantarfasziitis?',
       cites: [CITE.riddle],
-      a: 'Sprunggelenk-Wippen zielt auf die Dorsalflexion im Sprunggelenk, die in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis war (23,3-fache Odds). Keine Studie hat Sprunggelenk-Wippen als einzelne Übung bei Plantarfasziitis getestet, aber den Bewegungsumfang zu verbessern, auf den es zielt, geht den größten biomechanischen Risikofaktor an, den die Forschung gefunden hat.',
+      a: 'Sprunggelenk-Wippen zielt auf die Dorsalflexion im Sprunggelenk, die in einer Fall-Kontroll-Studie der stärkste unabhängige Risikofaktor für Plantarfasziitis war (23,3-fache Chance). Keine Studie hat Sprunggelenk-Wippen als einzelne Übung bei Plantarfasziitis getestet, aber den Bewegungsumfang zu verbessern, auf den es zielt, geht den größten biomechanischen Risikofaktor an, den die Forschung gefunden hat.',
     },
     {
       q: 'Was ist der Knie-Wand-Test?',

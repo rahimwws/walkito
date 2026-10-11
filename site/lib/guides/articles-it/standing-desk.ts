@@ -29,7 +29,7 @@ export const STANDING_DESK_IT: Guide = {
     'Una dichiarazione di esperti del 2015 commissionata da Public Health England consiglia di accumulare all’inizio 2\u00A0ore al giorno di stazione eretta e attività leggera durante il lavoro, per poi salire a 4\u00A0ore al giorno, divise in periodi più brevi (Buckley e colleghi, 2015).',
     'Una revisione sistematica del 2014 di 14\u00A0studi ha trovato prove sufficienti che le postazioni seduto-in piedi riducono il fastidio alla parte bassa della schiena, senza calo di produttività, ma non ha trovato un rapporto ideale tra tempo seduti e in piedi (Karakolis e Callaghan, 2014).',
     'Una revisione del 2015 della ricerca di medicina del lavoro ha associato lo stare in piedi a lungo a fastidi muscoloscheletrici, stanchezza e dolore alle gambe, e ha elencato tappetini, calze a compressione e scarpe di sostegno tra gli interventi con prove a favore (Waters e Dick, 2015).',
-    'Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il fattore più forte per la fascite plantare in uno studio caso-controllo del 2003, con una probabilità 23,3\u00A0volte più alta. Stare in piedi per la maggior parte della giornata lavorativa la aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
+    'Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il fattore più forte per la fascite plantare in uno studio caso-controllo del 2003, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa le aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
   ],
   sections: [
     {
@@ -203,7 +203,7 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Il dolore ai piedi con la scrivania in piedi può essere fascite plantare o altro?',
       paragraphs: [
-        'Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quello schema fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte la probabilità di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.',
+        'Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quello schema fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.',
         'Gli esercizi che aiutano i due problemi si sovrappongono molto. Se il tuo dolore segue lo schema della fascite plantare, [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) è la guida più completa. Se senti gli archi piatti, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se non sei sicuro, senti un professionista sanitario prima di caricare il piede con gli esercizi.',
       ],
       cites: [CITE.riddle],
@@ -222,7 +222,7 @@ export const STANDING_DESK_IT: Guide = {
     },
     {
       q: 'La scrivania in piedi può causare la fascite plantare?',
-      a: 'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte la probabilità di fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli. Una scrivania in piedi aumenta le ore in piedi ogni giorno, quindi può plausibilmente contribuire se il polpaccio è già rigido, che era il fattore di rischio indipendente più forte, con una probabilità 23,3\u00A0volte più alta. Gli allungamenti del polpaccio sono il modo più diretto di lavorare su entrambi i fattori.',
+      a: 'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli. Una scrivania in piedi aumenta le ore in piedi ogni giorno, quindi può plausibilmente contribuire se il polpaccio è già rigido, che era il fattore di rischio indipendente più forte, con odds 23,3\u00A0volte più alte. Gli allungamenti del polpaccio sono il modo più diretto di lavorare su entrambi i fattori.',
       cites: [CITE.riddle],
     },
     {

@@ -155,7 +155,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       keyFact: 'In a trial of 52 people with flexible flat feet, a program of short-foot, ankle, hip and stretching work changed two measures of arch shape more than in a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'Working on your flat feet makes sense if your feet themselves ache, tire quickly or feel unstable. It is not a back program, and no trial has shown that foot exercises on their own ease back pain.',
-        'For flexible flat feet, where the arch comes back when you lift the foot, one trial of 52 people found that short-foot exercises, ankle work, hip strengthening and stretching, done together, changed arch shape more than in a control group. That trial measured arch shape, not pain. A 2024 review of short-foot training on its own found no clear change in foot posture overall.',
+        'For flexible flat feet, where the arch comes back when you lift the foot, one trial of 52 people found that [short-foot exercises](/exercises/short-foot-exercise/), ankle work, hip strengthening and stretching, done together, changed arch shape more than in a control group. That trial measured arch shape, not pain. A 2024 review of short-foot training on its own found no clear change in foot posture overall.',
         'The full program, with doses and progressions, is in [flat feet exercises](/flat-feet-exercises/). Three of the core moves are below.',
         'Walkito builds these into a weekly plan for the feet and starts the short foot exercise at 3 sets of 8 with 5-second holds. It does nothing for the back directly, and it does not claim to.',
         'If any exercise takes your foot pain to **6/10 or more**, or sets off back pain or pain down the leg, stop for the day.',
@@ -271,7 +271,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito is an exercise program for the feet and lower legs. For flat feet, it builds a plan one week at a time around foot goals such as a 60-second arch hold and 30 seconds of single-leg balance. It starts the short foot exercise at 3 sets of 8 with 5-second holds, hip work at 3 sets of 10 and calf stretches at 2 holds of 30 seconds.',
+    text: '[Walkito](/program/) is an exercise program for the feet and lower legs. For flat feet, it builds a plan one week at a time around foot goals such as a 60-second arch hold and 30 seconds of [single-leg balance](/exercises/single-leg-balance/). It starts the short foot exercise at 3 sets of 8 with 5-second holds, hip work at 3 sets of 10 and calf stretches at 2 holds of 30 seconds.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance, so you can see what is changing in your feet.',
       'Walkito does not address back pain, does not diagnose and is not a substitute for a clinician. If you have back pain, get it checked, especially if any of the signs above apply.',

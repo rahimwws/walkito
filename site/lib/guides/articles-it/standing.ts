@@ -28,23 +28,23 @@ export const STANDING_IT: Guide = {
   lede:
     'A fine turno ti fanno male i piedi. L’arco duole, il tallone è dolorante e le gambe sono pesanti. Stare in piedi per ore su un pavimento duro carica sempre gli stessi tessuti, senza la pompa che la camminata dà ai polpacci e alle vene. Allungare il polpaccio e la fascia plantare, e costruire un po’ di forza nel polpaccio, lavora proprio sui tessuti che si prendono più sforzo.',
   intro: [
-    'Non tutto il dolore ai piedi da stazione eretta è fascite plantare, ma le due cose si sovrappongono. Uno studio caso-controllo del 2003 su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte la probabilità di fascite plantare. Una flessibilità della caviglia ridotta era un fattore di rischio ancora più forte, con una probabilità 23,3\u00A0volte più alta. Gli esercizi che aiutano entrambe le cose sono in gran parte gli stessi: allungamenti del polpaccio e della fascia plantare, più lavoro di forza per il polpaccio.',
+    'Non tutto il dolore ai piedi da stazione eretta è fascite plantare, ma le due cose si sovrappongono. Uno studio caso-controllo del 2003 su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare. Una flessibilità della caviglia ridotta era un fattore di rischio ancora più forte, con odds 23,3\u00A0volte più alte. Gli esercizi che aiutano entrambe le cose sono in gran parte gli stessi: allungamenti del polpaccio e della fascia plantare, più lavoro di forza per il polpaccio.',
   ],
   toc: true,
   takeaways: [
     'Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe, con tappetini, calze a compressione e scarpe di sostegno tra gli interventi che hanno prove a favore (Waters e Dick, 2015).',
-    'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte la probabilità di fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli. Una flessibilità della caviglia ridotta la aumentava di 23,3\u00A0volte (Riddle e colleghi, 2003).',
+    'Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli. Una flessibilità della caviglia ridotta le aumentava di 23,3\u00A0volte (Riddle e colleghi, 2003).',
     'In uno studio a gruppi paralleli su 40\u00A0guardie giurate assegnate a caso a calze normali o a uno di due gruppi con calze a compressione, sia le calze da 15-20\u00A0mmHg sia quelle da 20-30\u00A0mmHg hanno evitato l’aumento del fastidio a piedi e gambe visto con le calze normali durante turni in piedi di 12\u00A0ore (Garcia e colleghi, 2023).',
     'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio il suo grado più alto, A, e al lavoro di forza una B.',
   ],
   sections: [
     {
       h2: 'Perché i piedi fanno male dopo una giornata in piedi?',
-      keyFact: 'In uno studio caso-controllo del 2003, una flessibilità della caviglia ridotta aumentava di 23,3\u00A0volte la probabilità di fascite plantare, il fattore di rischio più forte trovato, e stare in piedi per la maggior parte della giornata lavorativa la aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
+      keyFact: 'In uno studio caso-controllo del 2003, una flessibilità della caviglia ridotta aumentava di 23,3\u00A0volte le odds di fascite plantare, il fattore di rischio più forte trovato, e stare in piedi per la maggior parte della giornata lavorativa le aumentava di 3,6\u00A0volte (Riddle e colleghi, 2003).',
       paragraphs: [
         'I piedi fanno male a stare in piedi perché **restare fermi carica la fascia plantare, i muscoli del polpaccio e il tallone senza dare loro pausa.** Camminando, ogni passo pompa il sangue dalle gambe verso l’alto. Stando fermi in piedi quella pompa si spegne, quindi il sangue ristagna nella parte bassa delle gambe e i tessuti sotto il piede reggono lo stesso carico statico per ore.',
         'Una revisione del 2015 della ricerca di medicina del lavoro ha associato lo stare in piedi a lungo a mal di schiena, dolore alle gambe, fastidio e stanchezza in molti lavori in piedi. La revisione ha anche notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi. Gli autori hanno chiesto definizioni più chiare di «stare in piedi a lungo» negli studi futuri, perché il confine tra un tempo in piedi sicuro e uno dannoso cambia da persona a persona e da lavoro a lavoro.',
-        'Su polpaccio e fascia in particolare, uno studio caso-controllo del 2003 ha trovato due fattori di rischio che spiccavano sugli altri. Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare, con una probabilità 23,3\u00A0volte più alta. Stare in piedi per la maggior parte della giornata lavorativa aumentava la probabilità di 3,6\u00A0volte. Le due cose sono collegate: un polpaccio rigido tiene il tallone sotto più tensione in ogni minuto passato in piedi.',
+        'Su polpaccio e fascia in particolare, uno studio caso-controllo del 2003 ha trovato due fattori di rischio che spiccavano sugli altri. Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6\u00A0volte. Le due cose sono collegate: un polpaccio rigido tiene il tallone sotto più tensione in ogni minuto passato in piedi.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -222,7 +222,7 @@ export const STANDING_IT: Guide = {
     },
     {
       q: 'Il male ai piedi a stare in piedi tutto il giorno è fascite plantare?',
-      a: 'Non sempre. Dolore e stanchezza generici da stazione eretta sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso, con dolore acuto al tallone, spesso peggiore ai primi passi dopo il riposo. Stare in piedi per gran parte della giornata lavorativa è un fattore di rischio indipendente per la fascite plantare, con una probabilità 3,6\u00A0volte più alta in uno studio caso-controllo, quindi le due cose sono collegate ma non uguali.',
+      a: 'Non sempre. Dolore e stanchezza generici da stazione eretta sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso, con dolore acuto al tallone, spesso peggiore ai primi passi dopo il riposo. Stare in piedi per gran parte della giornata lavorativa è un fattore di rischio indipendente per la fascite plantare, con odds 3,6\u00A0volte più alte in uno studio caso-controllo, quindi le due cose sono collegate ma non uguali.',
       cites: [CITE.riddle],
     },
     {

@@ -33,7 +33,7 @@ const LEAD: Record<Lang, string> = {
   de: 'Walkito macht aus diesen Übungen einen kurzen Tagesplan, der sich danach richtet, wie sich deine Füße heute Morgen angefühlt haben.',
 };
 
-export function AppCallout({ campaign, lang }: { campaign: string; lang: Lang }) {
+export function AppCallout({ campaign, lang, lead }: { campaign: string; lang: Lang; /** The page's own sentence (lib/guides/app-lines.ts); else the general one. */ lead?: string }) {
   const ios = storeHref(campaign);
   const android = playHref(campaign);
   if (!ios && !android) return null;
@@ -44,7 +44,7 @@ export function AppCallout({ campaign, lang }: { campaign: string; lang: Lang })
           <img src="/icon-96.webp" alt="" width={28} height={28} />
           Walkito
         </p>
-        <p className="pg-app-lead">{typeset(LEAD[lang])}</p>
+        <p className="pg-app-lead">{typeset(lead ?? LEAD[lang])}</p>
         <GetAppButton className="pg-app-get" ios={ios ?? android ?? '#'} android={android}>
           <AppleGlyph />
           {CHROME[lang].headerButton}
@@ -67,7 +67,7 @@ export function AppCallout({ campaign, lang }: { campaign: string; lang: Lang })
           />
           {/* Walkito's own Dynamic Island over the mockup's, as on home. */}
           <span className="pg-app-island">
-            <img src="/icon.png" alt="" width={64} height={64} />
+            <img src="/icon-128.webp" alt="" width={64} height={64} />
             <span className="pg-app-island-name">Walkito</span>
             <span className="pg-app-island-ring" />
           </span>

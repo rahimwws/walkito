@@ -103,7 +103,7 @@ export const BEST_APP_DE: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. 44,99\u00A0$/Jahr oder 7,99\u00A0$/Woche',
+            'iOS, Android. Wochen- oder Jahresabo',
             'Fersenschmerzen, Plattfüße, langes Stehen, Laufen',
             'Der Morgen-Check passt jede Einheit an',
             'Noch keine Bewertungen (neu, Okt. 2026)',
@@ -200,7 +200,7 @@ export const BEST_APP_DE: Guide = {
     {
       h2: 'Walkito: was es kann und was nicht',
       paragraphs: [
-        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es ist am 2. Oktober 2026 im App Store erschienen, danach bei Google Play. Es ist neu und hat noch keine Bewertungen.',
+        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es gibt Walkito für iPhone und Android: seit dem 2. Oktober 2026 im App Store und seit Oktober 2026 bei Google Play. Es ist neu und hat noch keine Bewertungen.',
         'Was es kann:',
         {
           list: [
@@ -221,7 +221,7 @@ export const BEST_APP_DE: Guide = {
           ],
         },
         'Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15\u00A0Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.',
-        'Mit 44,99\u00A0$ im Jahr oder 7,99\u00A0$ pro Woche ist der Jahrespreis niedriger als bei den meisten Mitbewerbern. Der Wochenpreis ist im Verhältnis zum Jahrespreis höher, was bei Abos üblich ist.',
+        'Es ist ein Wochen- oder Jahresabo über den App Store oder Google Play, und der aktuelle Preis wird im Store angezeigt, bevor du abschließt.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

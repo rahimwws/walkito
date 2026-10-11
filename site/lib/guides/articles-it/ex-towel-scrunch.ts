@@ -69,7 +69,7 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
           ],
         },
         'Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.',
-        'Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano. La raccolta dell’asciugamano produceva invece più attività nei flessori estrinseci delle dita.',
+        'Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano, sia da seduti sia in piedi su una gamba.',
         'Questo vuol dire che **la raccolta dell’asciugamano è un buon esercizio per la forza di presa delle dita**, ma è meno specifica per i muscoli intrinseci dell’arco rispetto all’[esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
       cites: [CITE.jung],
@@ -78,7 +78,7 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
       h2: 'Raccolta dell’asciugamano o piede corto: quale è meglio?',
       paragraphs: [
         'Ogni esercizio ha un suo punto di forza. La raccolta dell’asciugamano è più facile da imparare perché l’asciugamano dà alle dita un obiettivo chiaro. Molte persone all’inizio fanno fatica a sentire la contrazione del piede corto. La raccolta dell’asciugamano costruisce la forza di presa delle dita, che conta per l’equilibrio e per la spinta quando cammini.',
-        'L’esercizio del piede corto isola meglio i muscoli intrinseci dell’arco. Una revisione del 2015 di McKeon e colleghi ha notato che l’abduttore dell’alluce si attivava più di quattro volte di più durante il piede corto che durante la raccolta dell’asciugamano, e ha consigliato il piede corto come esercizio principale per allenare i muscoli intrinseci del piede.',
+        'L’esercizio del piede corto isola meglio i muscoli intrinseci dell’arco. Una revisione del 2015 di McKeon e colleghi ha descritto il piede corto come un modo importante per allenare i muscoli intrinseci del piede.',
         'Nella pratica, i programmi che li usano entrambi prendono il meglio di ciascuno. Walkito usa la raccolta dell’asciugamano come esercizio iniziale che introduce l’idea di far lavorare i muscoli del piede. Poi arriva l’[esercizio del piede corto](/it/esercizi/piede-corto/), che aggiunge un allenamento più specifico dell’arco. Nessuno dei due sostituisce l’altro.',
       ],
       cites: [CITE.mcKeon, CITE.jung],

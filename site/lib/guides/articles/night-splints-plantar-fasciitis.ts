@@ -22,13 +22,13 @@ export const NIGHT_SPLINTS_EN: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-10',
   title: 'Night Splints for Plantar Fasciitis: Do They Work?',
   description:
     'Night splints for plantar fasciitis: what the 2023 guideline and the trials show, boot vs sock, how long to wear one, and why so many people stop.',
   h1: 'Night splints for plantar fasciitis: what they do, what the trials show, and how to wear one',
   lede:
-    'A night splint for plantar fasciitis holds your ankle at about a right angle while you sleep, so the plantar fascia and calf do not shorten overnight. The 2023 heel pain guideline grades it **A** for one to three months when first steps keep hurting. The trials are small and mixed, and many find splints hard to sleep in.',
+    'A night splint for [plantar fasciitis](/plantar-fasciitis/) holds your ankle at about a right angle while you sleep, so the plantar fascia and calf do not shorten overnight. The 2023 heel pain guideline grades it **A** for one to three months when first steps keep hurting. The trials are small and mixed, and many find splints hard to sleep in.',
   intro: [
     'This page is about the splint itself: what the studies found, which type to pick, and how to live with one. For the full morning routine, see [heel pain in the morning](/heel-pain-in-the-morning/).',
   ],
@@ -114,6 +114,24 @@ export const NIGHT_SPLINTS_EN: Guide = {
       cites: [CITE.attardSplint, CITE.guideline],
     },
     {
+      h2: 'What should you check before you buy a night splint?',
+      paragraphs: [
+        'No brand or type has trial evidence that it works better than another, so buy for comfort and fit, not for claims on the box. Check these before you pay:',
+        {
+          list: [
+            '**The type that fits how you sleep.** A boot suits back sleepers best. If you sleep on your side or stomach, a sock style or small dorsal splint is usually easier.',
+            '**An adjustable angle.** You want to start at about a right angle and change it if needed, not be stuck with a fixed stretch.',
+            '**The right size.** Use the maker\'s size chart for your shoe size and calf. A splint that slides or presses on your toes will not stay on all night.',
+            '**Soft padding and a liner you can wash.** You will wear it every night for one to three months.',
+            '**Straps you can undo in the dark.** You need to take it off before you walk, for example to get up at night.',
+            '**A return window.** In one trial, only 1 of 28 people given a splint was still using it at one year. Buy where you can send it back if it wrecks your sleep.',
+          ],
+        },
+        'Be wary of any splint sold with big promises. The trials are mixed, and morning stretches have the same guideline grade at no cost.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
+    },
+    {
       h2: 'How long should you wear a night splint for plantar fasciitis?',
       keyFact: 'The 2023 heel pain guideline recommends a night splint program of one to three months (Koc and colleagues, 2023).',
       paragraphs: [
@@ -149,7 +167,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
       h2: 'Night splint, insoles or stretching: which should you try first?',
       keyFact: 'In a 43-person trial, pain was down 62% at one year in the insole groups and 48% with a night splint alone (Roos and colleagues, 2006).',
       paragraphs: [
-        '**Morning stretching usually comes first**, because it has the same grade **A** as night splints, costs nothing and does not disturb sleep. The 2023 guideline grades plantar fascia and calf stretching **A**, and strength work for the foot and ankle muscles **B**. A 2020 meta-analysis of eight trials found that stretching eased pain, with moderate-quality evidence that the plantar fascia stretch eased it more than a calf stretch.',
+        '**Morning stretching usually comes first**, because it has the same grade **A** as night splints, costs nothing and does not disturb sleep. The 2023 guideline grades plantar fascia and calf stretching **A**, and strength work for the foot and ankle muscles **B**. A 2020 meta-analysis of eight trials found that stretching eased pain, with moderate-quality evidence that the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) eased it more than a calf stretch.',
         'Night splints and insoles seem to work better together than apart:',
         {
           list: [
@@ -200,7 +218,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
     {
       h2: 'Who might a night splint suit, and who should skip it?',
       paragraphs: [
-        '**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a heel spur showed on X-ray.',
+        '**A night splint fits best if your plantar fasciitis follows the classic pattern**: the first steps out of bed are the worst of the day, and that has kept happening despite regular stretching. That is exactly the group the guideline names. In Powell\'s trial, response to the splint did not depend on foot type, body weight or whether a [heel spur](/plantar-fasciitis-vs-heel-spur/) showed on X-ray.',
         'A splint makes less sense if your heel hurts mostly while you are lying in bed, or wakes you up. That is a different pattern, and [heel pain at night](/heel-pain-at-night/) explains the causes worth ruling out. A splint is also a poor fit if you have poor feeling or circulation in your feet, since straps and shells can rub skin you cannot feel.',
         'Plantar fasciitis often settles over months whatever you use, which is one reason splint trials are hard to read. For realistic timelines, see [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/).',
       ],
@@ -253,7 +271,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'A splint works on the night. The day is where the exercise happens. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: first-step pain at or under 1 out of 10 for 14 days in a row. Stretches like these are in the plan from the first week, and calf strength work moves up at your pace.',
+    text: 'A splint works on the night. The day is where the exercise happens. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: first-step pain at or under 1 out of 10 for 14 days in a row. Stretches like these are in the plan from the first week, and calf strength work moves up at your pace.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the morning goal is met), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose, does not provide splints and is not a substitute for a clinician.',
     ],

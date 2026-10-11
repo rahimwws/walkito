@@ -61,7 +61,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
         },
         'Le muscle principal est le tibial postérieur, un muscle profond du mollet dont le tendon passe derrière la malléole interne et tire la voûte vers le haut à chaque pas. De petits muscles à l’intérieur du pied y contribuent aussi.',
         'Plusieurs de ces éléments changent avec l’âge. Dans la comparaison de 2007, le groupe âgé avait aussi des muscles des orteils plus faibles et des chevilles plus raides, même si l’étude n’a pas vérifié si cela expliquait les pieds plus plats.',
-        'Le poids compte aussi. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une probabilité environ 2,6\u00A0fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.',
+        'Le poids compte aussi. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes, a constaté que les pieds plats étaient plus fréquents chez les personnes en situation d’obésité, avec une cote (odds) environ 2,6\u00A0fois plus élevée. Cette revue a mesuré la fréquence des pieds plats à un moment donné. Elle n’a pas vérifié si une prise de poids fait s’affaisser la voûte.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -132,7 +132,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
         ],
       },
       after: [
-        'Les pieds plats et la douleur ne sont que faiblement liés. Dans la Framingham Foot Study sur 3\u00A0378\u00A0adultes, une posture de pied plat était associée à une probabilité un peu plus élevée de douleur à la voûte chez les hommes (un odds ratio de 1,38), sans lien net avec la douleur à la voûte chez les femmes. Beaucoup de personnes aux pieds plats n’ont aucune douleur, à tout âge.',
+        'Les pieds plats et la douleur ne sont que faiblement liés. Dans la Framingham Foot Study sur 3\u00A0378\u00A0adultes, une posture de pied plat était associée à une cote (odds) un peu plus élevée de douleur à la voûte chez les hommes (un odds ratio de 1,38), sans lien net avec la douleur à la voûte chez les femmes. Beaucoup de personnes aux pieds plats n’ont aucune douleur, à tout âge.',
       ],
       cites: [CITE.menzPlanusPain, CITE.ling, CITE.rogersCharcot],
     },
@@ -230,7 +230,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
     {
       q: 'Les pieds plats peuvent-ils s’aggraver avec le temps sans douleur\u00A0?',
       cites: [CITE.scottAgeFoot, CITE.menzPlanusPain],
-      a: 'Oui. Un aplatissement lent des deux pieds sans douleur est fréquent avec l’âge et ne demande en général rien d’urgent. Dans la Framingham Foot Study sur 3\u00A0378\u00A0adultes, la posture de pied plat n’était liée qu’à une probabilité un peu plus élevée de douleur à la voûte chez les hommes. Un changement indolore d’un seul pied mérite tout de même un examen, surtout si ce talon penche vers l’extérieur.',
+      a: 'Oui. Un aplatissement lent des deux pieds sans douleur est fréquent avec l’âge et ne demande en général rien d’urgent. Dans la Framingham Foot Study sur 3\u00A0378\u00A0adultes, la posture de pied plat n’était liée qu’à une cote (odds) un peu plus élevée de douleur à la voûte chez les hommes. Un changement indolore d’un seul pied mérite tout de même un examen, surtout si ce talon penche vers l’extérieur.',
     },
     {
       q: 'Comment empêcher mes pieds plats de s’aggraver\u00A0?',

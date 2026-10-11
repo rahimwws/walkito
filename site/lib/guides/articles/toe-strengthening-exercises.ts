@@ -32,7 +32,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
     'Toe strengthening exercises with a home strength test, a four-step progression, and what studies show about toe strength, balance, falls and heel pain.',
   h1: 'Toe strengthening exercises: how to test your toes and build real strength',
   lede:
-    'Toe strengthening exercises start with control (toe yoga, toe spreads), move to grip (towel scrunches, the short foot exercise) and end with load and balance. Weak toes are linked to falls in older adults and show up in people with heel pain. One trial found toe strength rose only in a supervised program that got harder over time.',
+    'Toe strengthening exercises start with control (toe yoga, toe spreads), move to grip ([towel scrunches](/exercises/towel-scrunch/), the [short foot exercise](/exercises/short-foot-exercise/)) and end with load and balance. Weak toes are linked to falls in older adults and show up in people with heel pain. One trial found toe strength rose only in a supervised program that got harder over time.',
   intro: [
     'Most people never think about their toes until something goes wrong: a wobble on one leg, a cramp in the arch, a heel that aches in the morning. This page covers why toe strength matters, how to check yours at home, and a simple way to build it. Each exercise links to its own page for the full technique.',
   ],
@@ -64,7 +64,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
     {
       h2: 'Are weak toes linked to heel pain?',
       paragraphs: [
-        'Weak toes do show up in people with plantar fasciitis (pain under the heel where the plantar fascia, a thick band along the sole, attaches). In a 2003 study of 20 people with plantar fasciitis in one foot, the painful foot had weaker toe flexors than the other foot and weaker than 20 matched people without pain.',
+        'Weak toes do show up in people with [plantar fasciitis](/plantar-fasciitis/) (pain under the heel where the plantar fascia, a thick band along the sole, attaches). In a 2003 study of 20 people with plantar fasciitis in one foot, the painful foot had weaker toe flexors than the other foot and weaker than 20 matched people without pain.',
         'A larger 2015 study compared 202 people with plantar heel pain and 70 without it. The heel pain group had, on average:',
         {
           list: [
@@ -295,7 +295,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito includes the big toe lift, toe spread, towel scrunch and short foot exercise, and moves an exercise up a level once your last two sessions with it felt easy and pain did not rise. Toe and arch work starts at 3 sets of 8 with a 5 second hold, inside sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week.',
+    text: '[Walkito](/program/) includes the big toe lift, toe spread, towel scrunch and short foot exercise, and moves an exercise up a level once your last two sessions with it felt easy and pain did not rise. Toe and arch work starts at 3 sets of 8 with a 5 second hold, inside sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week.',
     more: [
       'Every 14 days at first, a short test checks calf endurance, arch hold and balance. It does not measure toe strength directly, so the home checks on this page are still worth doing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

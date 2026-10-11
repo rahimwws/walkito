@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site/es/
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -24,9 +24,9 @@ should be seen by a clinician.
 
 ## Ejercicios y estiramientos para la fascitis plantar y el dolor de talón
 
-Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-10-10
 
-Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.
+Los ejercicios para la fascitis plantar con mejor evidencia son los estiramientos de la fascia plantar y de la pantorrilla, con grado A, el más alto de la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado B. Abajo tienes ocho, con sus dosis, y todos se hacen en casa. Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.
 
 - La guía de 2023 para el dolor de talón del Journal of Orthopaedic & Sports Physical Therapy le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de fuerza una B.
 - En un ensayo con 48 personas, las elevaciones de talón con carga alta aliviaron el dolor y mejoraron la función diaria más rápido que el estiramiento, y a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).
@@ -812,7 +812,7 @@ Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de 
 
 Language: Spanish (Español) · https://walkito.site/es/mejor-app-fascitis-plantar/ · published 2026-10-07 · updated 2026-10-09
 
-Esta página compara siete apps que incluyen ejercicios para la fascitis plantar, el pie plano o el dolor de pies en general. Walkito es una de ellas, y Walkito hace esta página, así que es justo que lo sepas desde el principio. La idea es ser justos, decir dónde las otras son mejores y darte suficiente detalle para elegir la que va con tu situación.
+Esta página compara siete apps que incluyen [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/), el pie plano o el dolor de pies en general. Walkito es una de ellas, y Walkito hace esta página, así que es justo que lo sepas desde el principio. La idea es ser justos, decir dónde las otras son mejores y darte suficiente detalle para elegir la que va con tu situación.
 
 - La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla un grado A, y al entrenamiento de fuerza un grado B. Una buena app debería incluir los dos.
 - Adaptarse al dolor importa: una rutina fija no distingue una buena mañana de una mala, y cargar una fascia inflamada igual todos los días puede hacerte retroceder.
@@ -921,7 +921,7 @@ Si quieres una referencia gratis de qué estiramientos probar, revisa la ficha d
 
 ### Walkito: lo que hace y lo que no hace
 
-Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026 y en Google Play más tarde, en octubre de 2026. Es nueva y todavía no tiene calificaciones.
+Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 2 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.
 
 Lo que hace:
 
@@ -940,7 +940,7 @@ Lo que no hace:
 
 Cubre el dolor de talón, el pie plano y el dolor de tibia, no las más de 15 lesiones que cubre Exakt ni todo el cuerpo como Hinge Health o Prehab.
 
-A $44.99 al año o $7.99 a la semana, el precio anual es más bajo que el de la mayoría de las otras apps. El precio semanal sale más caro comparado con el anual, algo normal en las suscripciones.
+Es una suscripción semanal o anual a través del App Store o Google Play, y el precio actual aparece en la tienda antes de que te suscribas.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -2442,7 +2442,7 @@ Language: Spanish (Español) · https://walkito.site/es/ejercicios/pie-corto/ ·
 El ejercicio de pie corto entrena los músculos pequeños dentro del pie para sostener el arco sin encoger los dedos. Llevas la parte delantera del pie hacia el talón para que el pie se acorte y el arco suba. Una revisión narrativa de 2015 lo llamó la base del entrenamiento del «core del pie», y aparece en la mayoría de los programas para pie plano y fascitis plantar que trabajan los músculos intrínsecos del pie.
 
 - Un estudio con resonancia magnética de 2016 en 8 deportistas encontró que el pie corto produjo la activación media más alta (hasta 34,9 %) en tres de los cuatro músculos intrínsecos de la planta que se midieron, comparado con separar los dedos, extender el dedo gordo y extender los otros cuatro dedos (Gooding y colegas, 2016).
-- Un estudio de electromiografía encontró que el abductor del dedo gordo, el músculo que sostiene la parte interna del arco, trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos (Jung y colegas, 2011).
+- Un estudio de electromiografía encontró que el abductor del dedo gordo, el músculo que sostiene la parte interna del arco, trabajó claramente más durante el pie corto que al recoger la toalla con los dedos (Jung y colegas, 2011).
 - Un metaanálisis de 2024 sobre el entrenamiento de pie corto en personas con pie plano encontró que los programas de más de seis semanas mejoraron la caída del navicular, pero los más cortos no llegaron a un resultado significativo (Cheng y colegas, 2024).
 - Adultos sanos que hicieron pie corto durante cuatro semanas mejoraron más el equilibrio dinámico que un grupo que recogió la toalla con los dedos el mismo tiempo (Lynn y colegas, 2012).
 
@@ -2475,7 +2475,7 @@ Un estudio con resonancia magnética de 2016, de Gooding y colegas, midió la ac
 - El abductor del dedo gordo (29,7 %).
 - El flexor corto de los dedos (24,8 %).
 
-Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó más de cuatro veces más durante el pie corto que al recoger la toalla con los dedos.
+Un estudio anterior de electromiografía, de Jung y colegas (2011), encontró que el abductor del dedo gordo trabajó claramente más durante el pie corto que al recoger la toalla con los dedos, tanto sentado como de pie sobre una pierna.
 
 Por eso **el pie corto se considera mejor que recoger la toalla para trabajar específicamente los músculos intrínsecos.** Recoger la toalla usa los flexores largos de los dedos, los músculos extrínsecos que van de la pierna a los dedos. El pie corto mantiene más tranquilos esos músculos extrínsecos.
 
@@ -2547,7 +2547,7 @@ El pie corto no forma parte de la guía principal para la fascitis plantar, que 
 
 #### ¿El pie corto es mejor que recoger la toalla con los dedos?
 
-Para trabajar específicamente los músculos intrínsecos del pie, sí. La electromiografía muestra que el abductor del dedo gordo trabaja más de cuatro veces más con el pie corto que al recoger la toalla (Jung 2011). Otro ensayo aleatorizado encontró que el grupo de pie corto mejoró más el equilibrio que el de la toalla después de cuatro semanas (Lynn 2012). Recoger la toalla sigue siendo útil como ejercicio inicial más sencillo.
+Para trabajar específicamente los músculos intrínsecos del pie, sí. La electromiografía muestra que el abductor del dedo gordo trabaja claramente más con el pie corto que al recoger la toalla (Jung 2011). Otro ensayo aleatorizado encontró que el grupo de pie corto mejoró más el equilibrio que el de la toalla después de cuatro semanas (Lynn 2012). Recoger la toalla sigue siendo útil como ejercicio inicial más sencillo.
 
 #### ¿Cuántas series y repeticiones de pie corto debo hacer?
 
@@ -3084,7 +3084,7 @@ Recoger la toalla trabaja los flexores de los dedos:
 
 Estos son músculos intrínsecos. Pero el ejercicio también usa los flexores extrínsecos de los dedos: el flexor largo de los dedos y el flexor largo del dedo gordo, que van desde la pierna, pasan por el tobillo y llegan a los dedos.
 
-Un estudio de electromiografía de Jung y colegas (2011) comparó la actividad muscular al recoger la toalla y al hacer pie corto. Encontró que el abductor del dedo gordo, el músculo que más ayuda a sostener el arco, trabajó más de cuatro veces más durante el pie corto que al recoger la toalla. Recoger la toalla, en cambio, activó más los flexores extrínsecos de los dedos.
+Un estudio de electromiografía de Jung y colegas (2011) comparó la actividad muscular al recoger la toalla y al hacer pie corto. Encontró que el abductor del dedo gordo, el músculo que más ayuda a sostener el arco, trabajó claramente más durante el pie corto que al recoger la toalla, tanto sentado como de pie sobre una pierna.
 
 Esto quiere decir que **recoger la toalla es un buen ejercicio para la fuerza de agarre de los dedos**, pero es menos específico para los músculos intrínsecos del arco que el [ejercicio de pie corto](https://walkito.site/es/ejercicios/pie-corto/).
 
@@ -3094,7 +3094,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Cada ejercicio tiene su punto fuerte. Recoger la toalla es más fácil de aprender porque la toalla les da a los dedos algo claro que agarrar. A mucha gente le cuesta sentir la contracción del pie corto al principio. Recoger la toalla da fuerza de agarre a los dedos, algo que importa para el equilibrio y para el impulso al caminar.
 
-El pie corto aísla mejor los músculos intrínsecos del arco. Una revisión de 2015 de McKeon y colegas señaló que el abductor del dedo gordo se activó más de cuatro veces más durante el pie corto que al recoger la toalla, y recomendó el pie corto como el ejercicio principal para entrenar los músculos intrínsecos del pie.
+El pie corto aísla mejor los músculos intrínsecos del arco. Una revisión de 2015 de McKeon y colegas describió el pie corto como una forma clave de entrenar los músculos intrínsecos del pie.
 
 En la práctica, los programas que usan los dos aprovechan lo mejor de cada uno. Walkito usa recoger la toalla como un ejercicio inicial que presenta la idea de trabajar los músculos del pie. El [ejercicio de pie corto](https://walkito.site/es/ejercicios/pie-corto/) viene después y suma un trabajo más específico del arco. Ninguno reemplaza al otro.
 
@@ -6569,7 +6569,7 @@ Walkito y Exakt Health ofrecen planes de ejercicio para la fascitis plantar, per
 - Las dos apps están en iOS y Android. Walkito llegó a Google Play en octubre de 2026.
 - Exakt Health está certificada como dispositivo médico en la UE. Walkito no es un dispositivo médico.
 - Walkito ajusta cada sesión con un chequeo de dolor en la mañana y mide la diferencia entre izquierda y derecha cada 14 días. Exakt adapta su plan con tu opinión al final de cada sesión.
-- Exakt cuesta $19.99/mes o $59.99 por seis meses. Walkito cuesta $44.99/año o $7.99/semana.
+- Exakt cuesta $19.99/mes o $59.99 por seis meses. Walkito es una suscripción semanal o anual, y el precio actual aparece en la tienda.
 
 ### Comparación lado a lado
 
@@ -6632,17 +6632,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### ¿Cuánto cuestan Walkito y Exakt Health?
 
-Walkito cuesta $44.99 al año o $7.99 a la semana. El precio anual sale a unos $0.87 por semana. No aparece una prueba gratis en el App Store, aunque los términos de uso permiten ofertas de introducción.
+Walkito se descarga gratis y funciona con una suscripción semanal o anual, que se cobra a través del App Store o Google Play. El precio actual para tu país aparece en la tienda antes de que te suscribas.
 
 Exakt cuesta $19.99 al mes para los planes de rehabilitación, con opciones de 3 meses ($39.99) y 6 meses ($59.99). Los planes de entrenamiento para correr llegan hasta $99.99 al año. Todas las suscripciones empiezan con una prueba gratis de 7 días.
 
-En un año completo:
+En un año completo, la opción de rehabilitación más barata de Exakt (el plan de 6 meses comprado dos veces) cuesta unos $120, y si sumas un plan para correr puede pasar de $200. Compara el precio de Walkito en la tienda con esas cifras.
 
-- Walkito anual cuesta $44.99.
-- La opción de rehabilitación más barata de Exakt (el plan de 6 meses renovado dos veces) cuesta unos $120.
-- Si sumas un plan para correr, Exakt puede pasar de $200 al año.
-
-Si solo necesitas ejercicios para el dolor de talón o de pies, **Walkito es bastante más barata.** Si necesitas rehabilitación de una lesión de corredor y además un plan de entrenamiento, el precio más alto de Exakt cubre más.
+Si solo necesitas ejercicios para el dolor de talón o de pies, Walkito es la opción más limitada y enfocada. Si necesitas rehabilitación de una lesión de corredor y además un plan de entrenamiento, los planes de Exakt cubren más.
 
 ### Plataformas e idiomas
 
@@ -6698,7 +6694,6 @@ Elige Walkito si se cumple cualquiera de estas:
 - Quieres sesiones de 3 a 10 minutos en vez de 15 a 30.
 - Te importa más que el plan se adapte cada día a tu dolor con un chequeo en la mañana que avanzar por niveles.
 - Quieres pruebas de progreso cada 14 días que comparen izquierda y derecha.
-- El precio importa: Walkito, a $44.99 al año, cuesta menos de la mitad del costo anual más bajo de Exakt.
 - Necesitas la app en ruso.
 - Pasas todo el día de pie por trabajo, no corres, y quieres una app hecha para eso.
 
@@ -6720,9 +6715,9 @@ Si Walkito parece lo correcto para tu situación, así funciona. Respondes pregu
 
 Depende de lo que necesitas. Exakt Health cubre más de 15 lesiones de corredores e incluye planes para volver a correr. Está certificada como dispositivo médico en la UE. Walkito se enfoca en el dolor de talón y el pie plano, con adaptación diaria al dolor y sesiones más cortas. Las dos están en iOS y Android. Para corredores con distintos tipos de lesión, Exakt es la mejor opción. Para el dolor de talón con ajuste diario, Walkito se hizo para eso.
 
-#### ¿Walkito es más barata que Exakt Health?
+#### ¿Cómo es el precio de Walkito comparado con Exakt Health?
 
-Sí, si lo ves por año. Walkito cuesta $44.99 al año. La opción de rehabilitación más barata de Exakt Health cuesta $59.99 por seis meses, o unos $120 al año. Exakt ofrece una prueba gratis de 7 días; Walkito por ahora no muestra una en el App Store.
+Walkito es una suscripción semanal o anual, y el precio actual para tu país aparece en el App Store o Google Play antes de que te suscribas. La opción de rehabilitación más barata de Exakt Health cuesta $59.99 por seis meses, o unos $120 al año, y empieza con una prueba gratis de 7 días.
 
 #### ¿Exakt Health tiene un plan para la fascitis plantar?
 
@@ -7627,7 +7622,7 @@ Por lo general no, si los pies no le duelen. Una revisión Cochrane de 16 ensayo
 
 ## Férula nocturna para la fascitis plantar: qué hace, qué muestran los ensayos y cómo usarla
 
-Language: Spanish (Español) · https://walkito.site/es/ferula-nocturna-fascitis-plantar/ · published 2026-10-09 · updated 2026-10-09
+Language: Spanish (Español) · https://walkito.site/es/ferula-nocturna-fascitis-plantar/ · published 2026-10-09 · updated 2026-10-10
 
 Una férula nocturna para la fascitis plantar mantiene el tobillo en un ángulo más o menos recto mientras duermes, para que la fascia plantar y la pantorrilla no se acorten durante la noche. La guía de 2023 para el dolor de talón le da un grado **A** por uno a tres meses cuando los primeros pasos siguen doliendo. Los ensayos son pequeños y con resultados mixtos, y a mucha gente le cuesta dormir con una.
 
@@ -7684,6 +7679,23 @@ Hay tres tipos comunes de férula nocturna para la fascitis plantar, y ningún b
 - **Tipo calcetín, como el calcetín Strassburg.** Un calcetín largo con una correa de los dedos a la espinilla que evita que el pie apunte hacia abajo. Es ligero y fácil para dormir. No encontramos ningún ensayo aleatorizado que lo haya probado para la fascitis plantar.
 
 Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### ¿Qué revisar antes de comprar una férula nocturna?
+
+Ninguna marca ni tipo tiene ensayos que muestren que funciona mejor que otro, así que compra por comodidad y ajuste, no por lo que dice la caja. Revisa esto antes de pagar:
+
+- **El tipo que va con tu forma de dormir.** La bota le va mejor a quien duerme boca arriba. Si duermes de lado o boca abajo, un modelo tipo calcetín o una férula dorsal pequeña suele ser más fácil.
+- **Un ángulo ajustable.** Conviene empezar más o menos en ángulo recto y poder cambiarlo, no quedarte con un estiramiento fijo.
+- **La talla correcta.** Usa la tabla de tallas del fabricante según tu talla de zapato y tu pantorrilla. Una férula que se resbala o aprieta los dedos no se queda puesta toda la noche.
+- **Acolchado suave y un forro que se pueda lavar.** La vas a usar cada noche durante uno a tres meses.
+- **Correas que puedas soltar a oscuras.** Tienes que quitártela antes de caminar, por ejemplo si te levantas de noche.
+- **Un plazo de devolución.** En un ensayo, solo 1 de 28 personas con férula la seguía usando al año. Compra donde puedas devolverla si te arruina el sueño.
+
+Desconfía de cualquier férula que se venda con grandes promesas. Los ensayos son mixtos, y los estiramientos de la mañana tienen el mismo grado en la guía sin costar nada.
+
+Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Roos E, Engström M, Söderberg B. Foot orthoses for the treatment of plantar fasciitis. Foot & Ankle International. 2006;27(8):606–611.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### ¿Cuánto tiempo hay que usar la férula nocturna para la fascitis plantar?
@@ -9373,7 +9385,7 @@ Si usas tacones casi todos los días, no tienes que dejarlos. Alterna con días 
 
 ### Hacerlo como un plan
 
-Walkito es una app para iPhone con sesiones cortas de ejercicio para el dolor de talón, pie y pierna en adultos. Los estiramientos de pantorrilla con la rodilla estirada y doblada, la movilidad de tobillo y las elevaciones de talón forman parte de ella. Walkito empieza con 2 series de 30 segundos para cada estiramiento y 3 series de 10 para las elevaciones de talón, y sube la dosis conforme avanzas.
+Walkito es una app para iPhone y Android con sesiones cortas de ejercicio para el dolor de talón, pie y pierna en adultos. Los estiramientos de pantorrilla con la rodilla estirada y doblada, la movilidad de tobillo y las elevaciones de talón forman parte de ella. Walkito empieza con 2 series de 30 segundos para cada estiramiento y 3 series de 10 para las elevaciones de talón, y sube la dosis conforme avanzas.
 
 #### ¿Por qué tengo las pantorrillas tensas todo el tiempo?
 
@@ -9411,7 +9423,7 @@ Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pi
 
 ### ¿Qué es Walkito?
 
-Walkito es una app para iPhone que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir.
+Walkito es una app para iPhone y Android que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir. No tiene relación con walkito.com, un servicio de paseo de perros.
 
 Hay cinco metas: mañanas más fáciles (dolor por la mañana de 1/10 o menos durante 14 días seguidos), mantener el arco 60 segundos, 25 elevaciones de talón a una pierna, 30 segundos de equilibrio en una pierna y menos de un 10 % de diferencia entre tu lado izquierdo y el derecho. Empiezas con hasta tres de ellas. Si algo te duele, el dolor va primero.
 

@@ -72,7 +72,7 @@ export const ARCH_PAIN_EN: Guide = {
       keyFact: 'In the 2023 heel pain guideline, plantar fascia and calf stretching earn the top evidence grade, A, while strength training is graded one level lower, B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises below target the arch itself and the calf muscles that pull on it. They apply best when arch pain is related to plantar fasciitis, flat feet, or general overuse. For PTTD or nerve-related arch pain, a clinician should direct the exercise plan. If any exercise takes your pain to **6/10 or more**, stop for the day.',
-        'These are Walkito\'s starting doses, not research protocol doses. The 2023 heel pain guideline grades plantar fascia and calf stretching A, and strength training B. The short foot exercise and foot roll have thinner evidence on their own. [How these guides are written](/about/).',
+        'These are Walkito\'s starting doses, not research protocol doses. The 2023 heel pain guideline grades plantar fascia and calf stretching A, and strength training B. The [short foot exercise](/exercises/short-foot-exercise/) and foot roll have thinner evidence on their own. [How these guides are written](/about/).',
       ],
       exercises: [
         {
@@ -178,7 +178,7 @@ export const ARCH_PAIN_EN: Guide = {
     {
       h2: 'What about orthotics and shoes for arch pain?',
       paragraphs: [
-        "The 2023 heel pain guideline grades orthotics B against using them alone for short-term plantar fasciitis pain. Orthotics combined with other care, such as stretching, get a C in favor. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.",
+        "The 2023 heel pain guideline grades [orthotics](/insoles-vs-exercises/) B against using them alone for short-term plantar fasciitis pain. Orthotics combined with other care, such as stretching, get a C in favor. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.",
         'For flat feet, a medial arch support can reduce the collapse of the arch during standing and walking, giving the posterior tibial tendon and plantar fascia less work to do. For high arches, a cushioned orthotic absorbs the shock that the rigid arch does not. In a 2006 trial of 154 people with pes cavus foot pain, custom foot orthoses improved pain and function more than a sham insert at three months (Burns and colleagues, 2006).',
         '**Shoes and inserts help manage symptoms while exercise builds the capacity the foot needs.** They are not a substitute for each other.',
       ],
@@ -193,7 +193,7 @@ export const ARCH_PAIN_EN: Guide = {
     },
     {
       q: 'Why does the arch of my foot hurt when I walk?',
-      a: 'Arch pain when walking usually comes from one of a few sources: plantar fasciitis, flat feet that let the arch collapse under load, posterior tibial tendon dysfunction, a tight calf that transfers stress to the arch, or simply doing more walking than your foot is conditioned for. The pattern of pain, especially whether it is worst in the morning or after activity, helps narrow down which one.',
+      a: 'Arch pain when walking usually comes from one of a few sources: plantar fasciitis, flat feet that let the arch collapse under load, posterior tibial tendon dysfunction, a [tight calf](/tight-calves/) that transfers stress to the arch, or simply doing more walking than your foot is conditioned for. The pattern of pain, especially whether it is worst in the morning or after activity, helps narrow down which one.',
     },
     {
       q: 'Can flat feet cause arch pain?',
@@ -246,7 +246,7 @@ export const ARCH_PAIN_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'If your arch pain follows the plantar fasciitis pattern, Walkito builds a plan around one goal at a time. The first goal is a better morning: pain at 1/10 or less for 14 days in a row. The arch gets its own goal and exercises. If your arch pain comes from flat feet, the app can work on both the pain and the arch as separate goals.',
+    text: 'If your arch pain follows the plantar fasciitis pattern, [Walkito](/program/) builds a plan around one goal at a time. The first goal is a better morning: pain at 1/10 or less for 14 days in a row. The arch gets its own goal and exercises. If your arch pain comes from flat feet, the app can work on both the pain and the arch as separate goals.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If you are not sure what is causing your arch pain, see a clinician before loading it with exercise.',
     ],

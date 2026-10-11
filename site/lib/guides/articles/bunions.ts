@@ -138,7 +138,7 @@ export const BUNIONS_EN: Guide = {
     {
       h2: 'When is surgery considered?',
       paragraphs: [
-        'Surgery is considered when pain and functional limitation persist despite conservative measures like footwear changes, exercises, spacers, and orthotics. **The decision depends on how much the bunion affects daily life, not on the angle alone.**',
+        'Surgery is considered when pain and functional limitation persist despite conservative measures like footwear changes, exercises, spacers, and [orthotics](/insoles-vs-exercises/). **The decision depends on how much the bunion affects daily life, not on the angle alone.**',
         'More than 150 surgical procedures exist for hallux valgus, ranging from soft tissue realignment to osteotomy (cutting and repositioning the bone). The choice depends on the severity and the specific anatomy. Recovery varies from weeks to months.',
         'Exercise and conservative management are usually tried for several months first. If you are managing symptoms well with the approaches on this page, surgery is not urgent. If pain limits walking, shoe choices, or activity despite those measures, a foot and ankle specialist can discuss the options.',
       ],
@@ -195,7 +195,7 @@ export const BUNIONS_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      'Walkito includes [toe spreads](/exercises/toe-spread/) and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and flat feet, not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the 3-minute or 5-minute daily sessions keep the exercises consistent.',
+      '[Walkito](/program/) includes [toe spreads](/exercises/toe-spread/) and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the 3-minute or 5-minute daily sessions keep the exercises consistent.',
     more: [
       'For broader forefoot pain involving the second and third metatarsal heads, see [ball of foot pain](/ball-of-foot-pain/). For pain under the big toe joint specifically, see [sesamoiditis](/sesamoiditis/).',
     ],

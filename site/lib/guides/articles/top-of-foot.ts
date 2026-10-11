@@ -74,8 +74,8 @@ export const TOP_OF_FOOT_EN: Guide = {
         'No randomized trial has tested exercise specifically for dorsal foot pain or extensor tendonitis. The evidence here is honest: **we do not know whether exercise speeds recovery from extensor tendonitis** compared with lacing changes and rest alone.',
         'What exercise can address are contributing factors. The tibialis anterior, the muscle on the front of the shin that lifts the foot, is also an extensor. When it is weak relative to the calf, the smaller extensor tendons on top of the foot take more load during walking.',
         'Strengthening the tibialis anterior with toe raises (lifting the front of the foot while standing against a wall) is one way to reduce that imbalance. See [shin splints exercises](/shin-splints-exercises/) for more on the tibialis anterior.',
-        'Calf stretching is relevant if ankle dorsiflexion is limited. When the ankle cannot bend enough, the foot compensates in ways that can increase stress on the dorsal structures. A tight calf is also a shared risk factor for [plantar fasciitis](/plantar-fasciitis-exercises/) and forefoot overload.',
-        'For dorsal bone spurs and midfoot arthritis, exercise does not change the bony anatomy. Ankle mobility work can help maintain range, and strengthening can reduce symptoms, but the spur or joint degeneration stays. For stress fractures, exercise is the wrong approach until the bone has recovered.',
+        'Calf stretching is relevant if ankle dorsiflexion is limited. When the ankle cannot bend enough, the foot compensates in ways that can increase stress on the dorsal structures. A [tight calf](/tight-calves/) is also a shared risk factor for [plantar fasciitis](/plantar-fasciitis-exercises/) and forefoot overload.',
+        'For dorsal bone spurs and midfoot arthritis, exercise does not change the bony anatomy. [Ankle mobility](/ankle-mobility-exercises/) work can help maintain range, and strengthening can reduce symptoms, but the spur or joint degeneration stays. For stress fractures, exercise is the wrong approach until the bone has recovered.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
     },
@@ -205,7 +205,7 @@ export const TOP_OF_FOOT_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito is built around heel pain and flat feet, not dorsal foot pain specifically. But if extensor tendon overload is part of your picture, the tibialis anterior strengthening (toe raises) and calf stretching in the app address the contributing muscle imbalances. Marking the top of the foot on the pain map during a check-in lets the app track whether the pain is changing alongside your exercises.',
+    text: '[Walkito](/program/) is built around heel pain and [flat feet](/flat-feet/), not dorsal foot pain specifically. But if extensor tendon overload is part of your picture, the tibialis anterior strengthening (toe raises) and calf stretching in the app address the contributing muscle imbalances. Marking the top of the foot on the pain map during a check-in lets the app track whether the pain is changing alongside your exercises.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold, and balance. Walkito does not diagnose dorsal foot pain. If you suspect a stress fracture, gout, or nerve problem, see a clinician before starting any exercise program.',
     ],

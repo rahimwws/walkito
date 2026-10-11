@@ -66,7 +66,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
           ],
         },
         'Das sind kurze, intrinsische Fußmuskeln. Die Übung bezieht aber auch die extrinsischen Zehenbeuger ein: den Flexor digitorum longus und den Flexor hallucis longus, die vom Schienbein über das Sprunggelenk bis zu den Zehen laufen.',
-        'Eine EMG-Studie von Jung und Kollegen (2011) verglich die Muskelaktivität beim Handtuchgreifen und bei der Kurzer-Fuß-Übung. Sie fand, dass der Abductor hallucis, der Muskel, der am meisten dafür sorgt, dass das Gewölbe oben bleibt, bei der Kurzer-Fuß-Übung über viermal aktiver war als beim Handtuchgreifen. Das Handtuchgreifen brachte stattdessen mehr Aktivität in den extrinsischen Zehenbeugern.',
+        'Eine EMG-Studie von Jung und Kollegen (2011) verglich die Muskelaktivität beim Handtuchgreifen und bei der Kurzer-Fuß-Übung. Sie fand, dass der Abductor hallucis, der Muskel, der am meisten dafür sorgt, dass das Gewölbe oben bleibt, bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen, im Sitzen wie im Einbeinstand.',
         'Das heißt: **Handtuchgreifen ist eine gute Übung für die Greifkraft der Zehen**, zielt aber weniger gezielt auf die kurzen Gewölbemuskeln als die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
       ],
       cites: [CITE.jung],
@@ -75,7 +75,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
       h2: 'Handtuchgreifen oder kurzer Fuß: Was ist besser?',
       paragraphs: [
         'Jede Übung hat eine andere Stärke. Das Handtuchgreifen ist leichter zu lernen, weil das Handtuch deinen Zehen ein klares Ziel gibt. Viele tun sich anfangs schwer, die Anspannung beim kurzen Fuß zu spüren. Handtuchgreifen baut Greifkraft in den Zehen auf, und die zählt fürs Gleichgewicht und fürs Abdrücken beim Gehen.',
-        'Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 hielt fest, dass der Abductor hallucis bei der Kurzer-Fuß-Übung über viermal stärker aktiviert war als beim Handtuchgreifen, und empfahl die Kurzer-Fuß-Übung als wichtigste Übung für das Training der kurzen Fußmuskeln.',
+        'Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 beschrieb die Kurzer-Fuß-Übung als wichtigen Weg, die kurzen Fußmuskeln zu trainieren.',
         'In der Praxis holen Programme, die beides nutzen, das Beste aus beiden heraus. Walkito setzt das Handtuchgreifen als frühe Übung ein, die die Idee der Arbeit mit den Fußmuskeln einführt. Die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) kommt danach und bringt gezielteres Training für das Gewölbe. Keine ersetzt die andere.',
       ],
       cites: [CITE.mcKeon, CITE.jung],

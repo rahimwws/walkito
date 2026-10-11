@@ -51,7 +51,7 @@ export const ANKLE_MOBILITY_EN: Guide = {
         'Low ankle bend is linked with several problems, though linked is not the same as caused:',
         {
           list: [
-            '**Plantar fasciitis:** In a matched case-control study of 50 people with plantar fasciitis and 100 without, people with 0 degrees of dorsiflexion or less had 23.3 times the odds of plantar fasciitis compared with people above 10 degrees (Riddle and colleagues, 2003).',
+            '**Plantar fasciitis:** In a matched case-control study of 50 people with [plantar fasciitis](/plantar-fasciitis/) and 100 without, people with 0 degrees of dorsiflexion or less had 23.3 times the odds of plantar fasciitis compared with people above 10 degrees (Riddle and colleagues, 2003).',
             '**Injury in recruits:** In 1,093 male army recruits followed through three months of hard training, ankle range measured at the start was a strong predictor of who got injured, from 48 injuries in total (Pope and colleagues, 1998).',
           ],
         },
@@ -188,7 +188,7 @@ export const ANKLE_MOBILITY_EN: Guide = {
     {
       h2: 'Does strength training improve ankle mobility?',
       paragraphs: [
-        '**Strength training through full range can improve ankle mobility, not only stretching.** In a randomised trial of 74 healthy people, one group did an eccentric heel drop program (lowering the heel slowly under load) for about a month and a half and the other group did not. Dorsiflexion range increased only in the heel drop group, and the calf resisted being stretched less than before (Mahieu and colleagues, 2008).',
+        '**Strength training through full range can improve ankle mobility, not only stretching.** In a randomised trial of 74 healthy people, one group did an [eccentric heel drop](/exercises/eccentric-heel-drops/) program (lowering the heel slowly under load) for about a month and a half and the other group did not. Dorsiflexion range increased only in the heel drop group, and the calf resisted being stretched less than before (Mahieu and colleagues, 2008).',
         'The 2013 review of 23 studies also included one trial where heel raises done together with static stretching increased ankle bend compared with no exercise (Young and colleagues). Both the review and the heel drop trial studied healthy people, not people with stiff or painful ankles.',
         'Strength work has a second benefit: it builds the calf at the same time. If you also have heel or Achilles pain, the calf work in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) and [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) does both jobs.',
       ],
@@ -264,7 +264,7 @@ export const ANKLE_MOBILITY_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a plan one week at a time around one goal, for heel, foot and leg pain. Ankle mobility is part of it: calf stretches, a knee-to-wall hold and ankle rocks rotate through your sessions, most on mobility days, next to calf strength and balance work. Walkito starts stretches and ankle rocks at 2 sets of 30 seconds each leg.',
+    text: '[Walkito](/program/) builds a plan one week at a time around one goal, for heel, foot and leg pain. Ankle mobility is part of it: calf stretches, a knee-to-wall hold and ankle rocks rotate through your sessions, most on mobility days, next to calf strength and balance work. Walkito starts stretches and ankle rocks at 2 sets of 30 seconds each leg.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

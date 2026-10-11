@@ -35,7 +35,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
     {
       h2: 'Was ist ein Plattfuß?',
       figure: { id: 'arches', caption: 'Dieselben Fußknochen bei Plattfuß, normalem und hohem Gewölbe, von der Innenseite gesehen.', alt: 'Drei Füße von der Innenseite auf ebenem Boden: ein Plattfuß, dessen Gewölbe auf dem Boden aufliegt, ein normales Gewölbe mit kleinem Spalt darunter und ein hohes Gewölbe mit großem Spalt unter der Fußmitte.' },
-      keyFact: 'Eine systematische Übersichtsarbeit von 2023, die 12\u00A0Bevölkerungsstudien mit rund 16.000 Menschen zusammenfasste, fand Plattfüße bei insgesamt etwa 15,6\u00A0%, häufiger bei höherem BMI und höherem Alter (Salinas-Torres und Kollegen, 2023).',
+      keyFact: 'Eine systematische Übersichtsarbeit von 2023, die 12\u00A0Bevölkerungsstudien mit rund 16.000 Menschen zusammenfasste, fand Plattfüße bei insgesamt etwa 15,6\u00A0%, häufiger bei kleinen Kindern, Jugendlichen und Menschen mit Adipositas (Salinas-Torres und Kollegen, 2023).',
       paragraphs: [
         'Das Fußgewölbe, genauer das mediale Längsgewölbe, wird von den Knochen, Bändern und Sehnen an der Innenseite des Fußes gebildet. Bei einem Plattfuß liegt dieses Gewölbe im Stehen tiefer oder fehlt ganz. Der Fachbegriff ist Pes planus.',
         'Plattfüße sind häufig. Eine systematische Übersichtsarbeit von 2023 fasste 12\u00A0Bevölkerungsstudien mit rund 16.000 Menschen zusammen und berichtete eine Gesamthäufigkeit von 15,6\u00A0%. Bei Erwachsenen allein reichen die Schätzungen je nach Bevölkerung und Messmethode von etwa 5 bis 27\u00A0%. Ein höherer BMI und ein höheres Alter gehen mit einer höheren Häufigkeit einher.',
@@ -200,7 +200,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
     {
       q: 'Bei welcher Herkunft sind Plattfüße häufiger?',
       cites: [CITE.salinasTorres],
-      a: 'Plattfüße (Pes planus) kommen in manchen Gruppen häufiger vor, die Forschung dazu ist aber begrenzt. Eine systematische Übersichtsarbeit von 2023 zu Bevölkerungsstudien fand in getrennten Untergruppenvergleichen, dass asiatische Herkunft mit mehr als doppelt so hohen Odds für Plattfüße verbunden war und weiße Herkunft mit etwa halb so hohen Odds. Das sind Muster in Bevölkerungen, keine Vorhersage für die Füße eines einzelnen Menschen.',
+      a: 'Plattfüße (Pes planus) kommen in manchen Gruppen häufiger vor, die Forschung dazu ist aber begrenzt. Eine systematische Übersichtsarbeit von 2023 zu Bevölkerungsstudien fand in getrennten Untergruppenvergleichen, dass asiatische Herkunft mit einer mehr als doppelt so hohen Chance auf Plattfüße verbunden war und weiße Herkunft mit einer etwa halb so hohen Chance. Das sind Muster in Bevölkerungen, keine Vorhersage für die Füße eines einzelnen Menschen.',
     },
   ],
   redFlags: {

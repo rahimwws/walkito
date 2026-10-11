@@ -49,7 +49,7 @@ export const HAGLUNDS_EN: Guide = {
       paragraphs: [
         "The retrocalcaneal bursa sits in the space between the calcaneus and the Achilles tendon. Its job is to reduce friction. When Haglund's bump is prominent, the bursa gets squeezed during dorsiflexion (bending the ankle so the foot comes up). The result is swelling, pain, and sometimes redness at the back of the heel.",
         'Retrocalcaneal bursitis can occur without Haglund\'s deformity, for example from sudden increases in running or uphill work. But the bony prominence makes it more likely. Shoes with rigid heel counters that press on the bump are a direct mechanical irritant.',
-        'The pain from retrocalcaneal bursitis is at the back of the heel, deep between the tendon and bone. It is different from superficial bursitis (a tender, soft swelling on the skin surface) and from the medial-heel pain of plantar fasciitis.',
+        'The pain from retrocalcaneal bursitis is at the back of the heel, deep between the tendon and bone. It is different from superficial bursitis (a tender, soft swelling on the skin surface) and from the medial-heel pain of [plantar fasciitis](/plantar-fasciitis/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },
@@ -229,7 +229,7 @@ export const HAGLUNDS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: "Walkito's calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level instead of dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.",
+    text: "[Walkito](/program/)'s calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level instead of dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.",
     more: [
       "Sessions are 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If you have a visible bump on the back of your heel and are not sure what is causing the pain, have a clinician check it before you start loading.",
     ],

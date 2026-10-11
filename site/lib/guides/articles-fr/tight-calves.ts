@@ -20,7 +20,7 @@ export const TIGHT_CALVES_FR: Guide = {
   takeaways: [
     'Dans une revue de 2006 portant sur cinq essais randomisés, l’étirement statique du mollet n’a augmenté la flexion de la cheville que d’environ 2 à 3\u00A0degrés, et les auteurs n’étaient pas sûrs que ce changement compte pour les personnes (Radford et coll.).',
     'Dans une revue de 11\u00A0essais sur 452\u00A0personnes, le renforcement musculaire a amélioré l’amplitude articulaire à peu près autant que l’étirement (Afonso et coll., 2021).',
-    'Dans une étude de 2003 sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée qu’une cheville se pliant au-delà de 10\u00A0degrés (Riddle et coll.).',
+    'Dans une étude de 2003 sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire qu’une cheville se pliant au-delà de 10\u00A0degrés (Riddle et coll.).',
     'Chez 210\u00A0triathlètes Ironman, ceux qui ont eu des crampes n’avaient pas perdu plus de poids et n’avaient pas de taux de sel dans le sang différents. Ce qui prédisait les crampes, c’était une course plus rapide et des crampes passées (Schwellnus et coll., 2011).',
     'Une douleur au mollet avec gonflement, chaleur ou rougeur d’une seule jambe peut être un caillot sanguin et demande une prise en charge le jour même.',
   ],
@@ -53,10 +53,10 @@ export const TIGHT_CALVES_FR: Guide = {
     },
     {
       h2: 'Des mollets tendus causent-ils des douleurs au pied et au talon\u00A0?',
-      keyFact: 'Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée (Riddle et coll., 2003).',
+      keyFact: 'Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire (Riddle et coll., 2003).',
       paragraphs: [
         'Des mollets tendus sont associés à la fasciite plantaire, la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).',
-        'Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50\u00A0personnes atteintes de fasciite plantaire à 100\u00A0personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles qui pouvaient dépasser 10\u00A0degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.',
+        'Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50\u00A0personnes atteintes de fasciite plantaire à 100\u00A0personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire que celles qui pouvaient dépasser 10\u00A0degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.',
         'Dans une étude ultérieure sur 254\u00A0personnes atteintes de fasciite plantaire, 83\u00A0% avaient une flexion de la cheville limitée, et 57\u00A0% de l’ensemble des patients avaient un gastrocnémien raide isolé (Patel et DiGiovanni, 2011).',
         '**Les deux études montrent un lien, pas que des mollets tendus causent la fasciite plantaire.** La large fourchette autour du chiffre de 23,3 signifie aussi que la vraie valeur pourrait être bien plus faible. C’est tout de même une des raisons pour lesquelles la recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet la note A, sa meilleure note, pour la douleur sous le talon.',
         'Si la douleur au talon est votre problème principal, commencez par les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Des mollets tendus se retrouvent aussi autour du tendon d’Achille et des tibias\u00A0: voir les [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) et les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
@@ -227,7 +227,7 @@ export const TIGHT_CALVES_FR: Guide = {
     {
       q: 'Des mollets tendus peuvent-ils causer une fasciite plantaire\u00A0?',
       cites: [CITE.riddle, CITE.guideline],
-      a: 'Des mollets tendus sont associés à la fasciite plantaire, même si un lien ne prouve pas une cause. Dans une étude sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une probabilité 23,3\u00A0fois plus élevée. La recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet sa meilleure note pour la douleur sous le talon.',
+      a: 'Des mollets tendus sont associés à la fasciite plantaire, même si un lien ne prouve pas une cause. Dans une étude sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une cote (odds) 23,3\u00A0fois plus élevée. La recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet sa meilleure note pour la douleur sous le talon.',
     },
     {
       q: 'Boire plus d’eau aide-t-il les mollets tendus\u00A0?',
@@ -258,7 +258,7 @@ export const TIGHT_CALVES_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Walkito est une application iPhone qui propose de courtes séances d’exercices pour les douleurs du talon, du pied et du bas de la jambe chez l’adulte. Les étirements du mollet genou tendu et genou plié, les bascules de cheville et les montées sur pointes en font tous partie. Walkito commence à 2\u00A0maintiens de 30\u00A0secondes pour chaque étirement et à 3\u00A0séries de 10 pour les montées sur pointes, puis augmente la dose au fil du temps.',
+    text: 'Walkito est une application iPhone et Android qui propose de courtes séances d’exercices pour les douleurs du talon, du pied et du bas de la jambe chez l’adulte. Les étirements du mollet genou tendu et genou plié, les bascules de cheville et les montées sur pointes en font tous partie. Walkito commence à 2\u00A0maintiens de 30\u00A0secondes pour chaque étirement et à 3\u00A0séries de 10 pour les montées sur pointes, puis augmente la dose au fil du temps.',
     more: [
       'Vous choisissez des séances de 3, 5 ou 10\u00A0minutes. Toutes les deux semaines, un court test vérifie l’endurance du mollet, pour que vous puissiez voir si vos mollets se renforcent. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé si l’un des signaux d’alerte ci-dessus vous concerne.',
     ],

@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site/it/
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -499,7 +499,7 @@ Gli esercizi di mobilità della caviglia puntano ad aumentare la dorsiflessione,
 - Il test del ginocchio al muro è affidabile a casa e in ambulatorio, ma una revisione del 2015 di 12 studi ha trovato che un cambiamento deve essere di circa 1,6-1,9 cm prima di poterti fidare che sia reale.
 - In uno studio su 74 persone sane, la flessione della caviglia è aumentata dopo un programma di discese eccentriche del tallone, e non nel gruppo di controllo (Mahieu e colleghi, 2008).
 - Dopo una distorsione della caviglia, la mobilizzazione articolare fatta da un professionista ha migliorato la flessione della caviglia sotto carico nel breve periodo in una revisione del 2018, e gli effetti a lungo termine non sono stati studiati bene.
-- In uno studio caso-controllo appaiato su 50 persone con fascite plantare e 100 senza, chi aveva 0 gradi di flessione della caviglia o meno aveva una probabilità di fascite plantare 23,3 volte più alta rispetto a chi superava i 10 gradi.
+- In uno studio caso-controllo appaiato su 50 persone con fascite plantare e 100 senza, chi aveva 0 gradi di flessione della caviglia o meno aveva odds di fascite plantare 23,3 volte più alte rispetto a chi superava i 10 gradi.
 
 ### Cos’è la mobilità della caviglia e perché conta?
 
@@ -507,7 +507,7 @@ Per mobilità della caviglia di solito si intende la dorsiflessione: quanto lo s
 
 Una flessione della caviglia ridotta è legata a diversi problemi, anche se legata non vuol dire che li causi:
 
-- **Fascite plantare:** In uno studio caso-controllo appaiato su 50 persone con fascite plantare e 100 senza, chi aveva 0 gradi di dorsiflessione o meno aveva una probabilità di fascite plantare 23,3 volte più alta rispetto a chi superava i 10 gradi (Riddle e colleghi, 2003).
+- **Fascite plantare:** In uno studio caso-controllo appaiato su 50 persone con fascite plantare e 100 senza, chi aveva 0 gradi di dorsiflessione o meno aveva odds di fascite plantare 23,3 volte più alte rispetto a chi superava i 10 gradi (Riddle e colleghi, 2003).
 - **Infortuni nelle reclute:** In 1.093 reclute maschi dell’esercito seguite durante tre mesi di addestramento duro, il movimento della caviglia misurato all’inizio era un forte fattore predittivo di chi si sarebbe infortunato, su 48 infortuni in totale (Pope e colleghi, 1998).
 
 Lo squat mostra bene l’effetto. In uno studio di laboratorio, 30 persone sane hanno fatto squat con un cuneo di 12 gradi sotto l’avampiede per simulare una caviglia rigida. Le ginocchia si piegavano meno e si spostavano di più verso l’interno rispetto allo squat con i piedi piatti (Macrum e colleghi, 2012). Era una limitazione simulata in una sola sessione, quindi mostra la meccanica, non cosa succede negli anni alle persone con caviglie rigide.
@@ -1030,7 +1030,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 
 Molto probabilmente sì. Quando il gastrocnemio è rigido, la caviglia non si piega abbastanza camminando. Il corpo alza il tallone prima, e questo butta più peso sull’avampiede. Il termine clinico è equino funzionale, ed è una causa riconosciuta di metatarsalgia.
 
-I numeri vengono dalla ricerca sulla fascite plantare, ma il meccanismo è lo stesso. Su 254 persone con fascite plantare, tra il 52 e il 60% aveva una contrattura isolata del gastrocnemio. Uno studio caso-controllo con 50 casi e 100 controlli ha trovato che una dorsiflessione della caviglia ridotta (quanto il piede si piega verso lo stinco) era il fattore di rischio indipendente più forte, con una probabilità 23,3 volte più alta.
+I numeri vengono dalla ricerca sulla fascite plantare, ma il meccanismo è lo stesso. Su 254 persone con fascite plantare, tra il 52 e il 60% aveva una contrattura isolata del gastrocnemio. Uno studio caso-controllo con 50 casi e 100 controlli ha trovato che una dorsiflessione della caviglia ridotta (quanto il piede si piega verso lo stinco) era il fattore di rischio indipendente più forte, con odds 23,3 volte più alte.
 
 Nessuno studio ha testato l’allungamento del polpaccio proprio per la metatarsalgia, ma il legame è riconosciuto in clinica. Vedi [sollevamenti sulle punte per la fascite plantare](https://walkito.site/it/sollevamenti-tallone-fascite-plantare/) per saperne di più sul legame tra polpaccio e caviglia.
 
@@ -1436,7 +1436,7 @@ Se vuoi un riferimento gratuito su quali allungamenti provare, controlla la sche
 
 ### Walkito: cosa fa e cosa non fa
 
-Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È uscita sull’App Store il 2 ottobre 2026, poi su Google Play. È nuova e non ha ancora valutazioni.
+Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È su iPhone e Android: sull’App Store dal 2 ottobre 2026 e su Google Play da ottobre 2026. È nuova e non ha ancora valutazioni.
 
 Cosa fa:
 
@@ -1455,7 +1455,7 @@ Cosa non fa:
 
 Copre dolore al tallone, piede piatto e dolore alla tibia, non gli oltre 15 tipi di infortunio di Exakt né l’ambito su tutto il corpo di Hinge Health o Prehab.
 
-A 44,99 $ all’anno o 7,99 $ a settimana, il prezzo annuale è più basso di quello della maggior parte delle concorrenti. Il prezzo settimanale è più alto rispetto a quello annuale, come è normale negli abbonamenti.
+È un abbonamento settimanale o annuale tramite App Store o Google Play, e il prezzo attuale è indicato nello store prima di abbonarti.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -2045,7 +2045,7 @@ Il muscolo principale è il tibiale posteriore, un muscolo profondo del polpacci
 
 Diversi di questi elementi cambiano con l’età. Nel confronto del 2007, il gruppo più anziano aveva anche muscoli delle dita più deboli e caviglie più rigide, anche se lo studio non ha verificato se fossero questi a rendere i piedi più piatti.
 
-Conta anche il peso. Una revisione del 2023 su 12 studi di popolazione, circa 16.000 persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con una probabilità circa 2,6 volte più alta. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.
+Conta anche il peso. Una revisione del 2023 su 12 studi di popolazione, circa 16.000 persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con odds circa 2,6 volte più alte. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.
 
 Source: Scott G, Menz HB, Newcombe L. Age-related differences in foot structure and function. Gait & Posture. 2007;26(1):68–75.
 Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
@@ -2175,9 +2175,9 @@ Può esserlo. Le persone con diabete e danno ai nervi possono sviluppare il pied
 
 Language: Italian (Italiano) · https://walkito.site/it/esercizi/mobilita-caviglia/ · published 2026-10-08 · updated 2026-10-08
 
-Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50 persone con fascite plantare e 100 controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con una probabilità di fascite plantare 23,3 volte più alta.
+Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50 persone con fascite plantare e 100 controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con odds di fascite plantare 23,3 volte più alte.
 
-- Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con una probabilità 23,3 volte più alta (Riddle e colleghi, 2003).
+- Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con odds 23,3 volte più alte (Riddle e colleghi, 2003).
 - Le oscillazioni della caviglia allenano la dorsiflessione caricando la fine del movimento con il peso del corpo, a differenza di un allungamento passivo al muro.
 - Il test ginocchio-muro misura quanto il ginocchio va oltre le dita con il tallone giù. Walkito include un esercizio ginocchio-muro (2 tenute da 30 secondi, ogni gamba).
 - Walkito parte con le oscillazioni della caviglia da 2 serie da 15, ogni gamba.
@@ -2202,7 +2202,7 @@ La dorsiflessione della caviglia è quanto il piede riesce a piegarsi verso l’
 - Il polpaccio prende più tensione.
 - La fascia plantare assorbe forze per cui non è fatta.
 
-Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con una probabilità di sviluppare la fascite plantare 23,3 volte più alta. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254 persone con fascite plantare.
+Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con odds di sviluppare la fascite plantare 23,3 volte più alte. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254 persone con fascite plantare.
 
 Allungare il polpaccio in modo passivo (come nell’[allungamento del polpaccio](https://walkito.site/it/esercizi/stretching-polpaccio/) e nell’[allungamento del soleo](https://walkito.site/it/esercizi/allungamento-soleo/)) affronta un lato del problema: la lunghezza del muscolo. Le oscillazioni della caviglia affrontano l’altro lato: il controllo attivo a fine movimento. Portare il ginocchio oltre le dita con il peso del corpo insegna alla caviglia a usare il movimento che ha, non solo a raggiungerlo in modo passivo.
 
@@ -2263,7 +2263,7 @@ Walkito parte da 2 serie da 15 per gamba. Sono 30 ripetizioni per gamba a sessio
 
 #### Le oscillazioni della caviglia aiutano la fascite plantare?
 
-Le oscillazioni della caviglia lavorano sulla dorsiflessione, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (probabilità 23,3 volte più alta). Nessuno studio ha testato le oscillazioni come esercizio a sé per la fascite plantare, ma migliorare il movimento su cui lavorano significa affrontare il singolo fattore di rischio biomeccanico più grande che la ricerca ha individuato.
+Le oscillazioni della caviglia lavorano sulla dorsiflessione, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (odds 23,3 volte più alte). Nessuno studio ha testato le oscillazioni come esercizio a sé per la fascite plantare, ma migliorare il movimento su cui lavorano significa affrontare il singolo fattore di rischio biomeccanico più grande che la ricerca ha individuato.
 
 #### Cos’è il test ginocchio-muro?
 
@@ -3128,7 +3128,7 @@ Language: Italian (Italiano) · https://walkito.site/it/esercizi/piede-corto/ ·
 L’esercizio del piede corto allena i piccoli muscoli dentro il piede a tenere alto l’arco senza arricciare le dita. Tiri l’avampiede verso il tallone così il piede si accorcia e l’arco si alza. Una revisione narrativa del 2015 lo ha chiamato la base dell’allenamento del «foot core», il «core» del piede, e compare nella maggior parte dei programmi per piede piatto e fascite plantare che lavorano sui muscoli intrinseci del piede.
 
 - Uno studio del 2016 con risonanza magnetica su 8 atleti ha visto che il piede corto dava l’attivazione media più alta (fino al 34,9%) in tre dei quattro muscoli plantari intrinseci studiati, rispetto all’apertura delle dita, all’estensione dell’alluce e all’estensione delle dita dalla seconda alla quinta (Gooding e colleghi, 2016).
-- Uno studio elettromiografico ha trovato che l’abduttore dell’alluce, il muscolo che sostiene l’interno dell’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung e colleghi, 2011).
+- Uno studio elettromiografico ha trovato che l’abduttore dell’alluce, il muscolo che sostiene l’interno dell’arco, era nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung e colleghi, 2011).
 - Una meta-analisi del 2024 sull’allenamento del piede corto nel piede piatto ha trovato che i programmi più lunghi di sei settimane miglioravano il navicular drop, mentre quelli più brevi non arrivavano alla significatività (Cheng e colleghi, 2024).
 - Adulti sani che hanno fatto quattro settimane di piede corto hanno migliorato l’equilibrio dinamico più di un gruppo che ha fatto la raccolta dell’asciugamano per lo stesso periodo (Lynn e colleghi, 2012).
 
@@ -3161,7 +3161,7 @@ Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha misurato l�
 - Abduttore dell’alluce (29,7%).
 - Flessore breve delle dita (24,8%).
 
-Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era più di quattro volte maggiore durante il piede corto che durante la raccolta dell’asciugamano.
+Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era nettamente maggiore durante il piede corto che durante la raccolta dell’asciugamano, sia da seduti sia in piedi su una gamba.
 
 Per questo **il piede corto è considerato un esercizio migliore della raccolta dell’asciugamano per lavorare in modo specifico sui muscoli intrinseci.** La raccolta dell’asciugamano recluta i flessori lunghi delle dita, i muscoli estrinseci che vanno dallo stinco alle dita. Il piede corto tiene più tranquilli quei muscoli estrinseci.
 
@@ -3233,7 +3233,7 @@ L’esercizio del piede corto non fa parte della principale linea guida sulla fa
 
 #### Il piede corto è meglio della raccolta dell’asciugamano?
 
-Per lavorare in modo specifico sui muscoli intrinseci del piede, sì. Gli studi elettromiografici mostrano che l’abduttore dell’alluce è più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung 2011). Uno studio randomizzato a parte ha trovato che il gruppo del piede corto migliorava l’equilibrio più del gruppo della raccolta dell’asciugamano dopo quattro settimane (Lynn 2012). La raccolta dell’asciugamano resta utile come esercizio di partenza più semplice.
+Per lavorare in modo specifico sui muscoli intrinseci del piede, sì. Gli studi elettromiografici mostrano che l’abduttore dell’alluce è nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung 2011). Uno studio randomizzato a parte ha trovato che il gruppo del piede corto migliorava l’equilibrio più del gruppo della raccolta dell’asciugamano dopo quattro settimane (Lynn 2012). La raccolta dell’asciugamano resta utile come esercizio di partenza più semplice.
 
 #### Quante serie e ripetizioni di piede corto fare?
 
@@ -3770,7 +3770,7 @@ La raccolta dell’asciugamano lavora sui muscoli flessori delle dita:
 
 Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.
 
-Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano. La raccolta dell’asciugamano produceva invece più attività nei flessori estrinseci delle dita.
+Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano, sia da seduti sia in piedi su una gamba.
 
 Questo vuol dire che **la raccolta dell’asciugamano è un buon esercizio per la forza di presa delle dita**, ma è meno specifica per i muscoli intrinseci dell’arco rispetto all’[esercizio del piede corto](https://walkito.site/it/esercizi/piede-corto/).
 
@@ -3780,7 +3780,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Ogni esercizio ha un suo punto di forza. La raccolta dell’asciugamano è più facile da imparare perché l’asciugamano dà alle dita un obiettivo chiaro. Molte persone all’inizio fanno fatica a sentire la contrazione del piede corto. La raccolta dell’asciugamano costruisce la forza di presa delle dita, che conta per l’equilibrio e per la spinta quando cammini.
 
-L’esercizio del piede corto isola meglio i muscoli intrinseci dell’arco. Una revisione del 2015 di McKeon e colleghi ha notato che l’abduttore dell’alluce si attivava più di quattro volte di più durante il piede corto che durante la raccolta dell’asciugamano, e ha consigliato il piede corto come esercizio principale per allenare i muscoli intrinseci del piede.
+L’esercizio del piede corto isola meglio i muscoli intrinseci dell’arco. Una revisione del 2015 di McKeon e colleghi ha descritto il piede corto come un modo importante per allenare i muscoli intrinseci del piede.
 
 Nella pratica, i programmi che li usano entrambi prendono il meglio di ciascuno. Walkito usa la raccolta dell’asciugamano come esercizio iniziale che introduce l’idea di far lavorare i muscoli del piede. Poi arriva l’[esercizio del piede corto](https://walkito.site/it/esercizi/piede-corto/), che aggiunge un allenamento più specifico dell’arco. Nessuno dei due sostituisce l’altro.
 
@@ -3839,7 +3839,7 @@ Language: Italian (Italiano) · https://walkito.site/it/piede-piatto-mal-di-schi
 
 Il piede piatto spiega poco della maggior parte dei casi di mal di schiena. Uno studio grande e con misure accurate, il Framingham Foot Study su 1.930 adulti, non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare. Ha trovato un piccolo legame nelle donne il cui piede cedeva verso l’interno camminando. È un’associazione, non la prova che siano i piedi a causare il mal di schiena.
 
-- Nel Framingham Foot Study su 1.930 adulti, la forma piatta del piede in piedi non era legata al mal di schiena lombare. Era legato solo un piede che cedeva verso l’interno camminando, nelle donne, con circa 1,5 volte la probabilità (Menz e colleghi, 2013).
+- Nel Framingham Foot Study su 1.930 adulti, la forma piatta del piede in piedi non era legata al mal di schiena lombare. Era legato solo un piede che cedeva verso l’interno camminando, nelle donne, con odds circa 1,5 volte più alte (Menz e colleghi, 2013).
 - In circa 97.000 giovani reclute militari, il piede piatto lieve non dava più mal di schiena dei piedi normali (5% in entrambi i casi). Il piede piatto moderato o grave arrivava al 10% (Kosashvili e colleghi, 2008).
 - Una revisione del 2014 su cinque studi sui plantari per il mal di schiena lombare non ha trovato un beneficio significativo. Uno studio del 2017 su 225 adulti ha visto che i plantari su misura funzionavano meglio di nessun intervento dopo circa un mese e mezzo, ma non a tre mesi o più avanti.
 - Una revisione Cochrane del 2021 su 249 studi ha trovato prove di certezza moderata che l’esercizio riduce il mal di schiena lombare cronico, di circa 15 punti su una scala del dolore da 100, rispetto a nessun esercizio, all’assistenza abituale o al placebo.
@@ -3869,7 +3869,7 @@ Il Framingham Foot Study è uno dei più grandi studi che hanno misurato diretta
 
 Lo studio ha misurato anche la funzione del piede, cioè come si spostava la pressione sotto il piede mentre ogni persona camminava. Un piede che cede verso l’interno camminando si dice pronato.
 
-Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con circa 1,5 volte la probabilità rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.
+Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con odds circa 1,5 volte più alte rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.
 
 Molti siti riportano questo studio come «chi ha il piede piatto ha il 50% di probabilità in più di avere mal di schiena». Non è quello che ha trovato. **La forma dell’arco che vedi quando sei in piedi non contava.** Contava, solo nelle donne, come si muoveva il piede camminando.
 
@@ -4003,7 +4003,7 @@ Walkito è un programma di esercizi per piedi e gambe. Per il piede piatto, cost
 
 #### Il piede piatto può causare mal di schiena lombare?
 
-Non è stato dimostrato che il piede piatto causi mal di schiena lombare. Il Framingham Foot Study su 1.930 adulti non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare. Ha trovato un legame solo nelle donne il cui piede cedeva verso l’interno camminando, con circa 1,5 volte la probabilità. Lo studio ha misurato tutti una sola volta, quindi non può dire cosa sia venuto prima.
+Non è stato dimostrato che il piede piatto causi mal di schiena lombare. Il Framingham Foot Study su 1.930 adulti non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare. Ha trovato un legame solo nelle donne il cui piede cedeva verso l’interno camminando, con odds circa 1,5 volte più alte. Lo studio ha misurato tutti una sola volta, quindi non può dire cosa sia venuto prima.
 
 #### Il piede piatto può causare dolore alla parte alta o centrale della schiena?
 
@@ -4054,7 +4054,7 @@ Source: Staheli LT, Chew DE, Corbett M. The longitudinal arch. A survey of eight
 
 La maggior parte dei bambini sviluppa un arco visibile lentamente tra i 3 e i 6 anni circa, e alcuni più tardi. Nello studio di Vienna, aveva il piede piatto il 54% dei bambini di 3 anni, contro il 24% di quelli di 6 anni. I maschi avevano il piede piatto più spesso delle femmine, 52% contro 36%, e il loro arco tendeva a formarsi più tardi. Anche i bambini in sovrappeso o con obesità avevano il piede piatto più spesso.
 
-Alcuni bambini non sviluppano mai molto arco, e spesso va bene così. Una revisione del 2023 su 12 studi di popolazione, circa 16.000 persone di tutte le età, ha trovato il piede piatto nel 15,6% dei casi complessivi. I bambini tra i 3 e i 5 anni e i ragazzi tra gli 11 e i 17 avevano una probabilità circa doppia di avere il piede piatto rispetto alle altre fasce d’età.
+Alcuni bambini non sviluppano mai molto arco, e spesso va bene così. Una revisione del 2023 su 12 studi di popolazione, circa 16.000 persone di tutte le età, ha trovato il piede piatto nel 15,6% dei casi complessivi. I bambini tra i 3 e i 5 anni e i ragazzi tra gli 11 e i 17 avevano odds circa doppie di avere il piede piatto rispetto alle altre fasce d’età.
 
 Molti adulti con il piede piatto flessibile non hanno alcun dolore. Se il piede piatto cambia più avanti nella vita è spiegato in [il piede piatto peggiora con l’età?](https://walkito.site/it/piede-piatto-con-l-eta/)
 
@@ -4216,9 +4216,9 @@ No. I bambini con il piede piatto flessibile non hanno bisogno di scarpe rigide 
 
 Language: Italian (Italiano) · https://walkito.site/it/piede-piatto-dolore-ginocchio/ · published 2026-10-09 · updated 2026-10-09
 
-Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano 1,3 volte la probabilità di dolore frequente al ginocchio. Per il dolore nella parte anteriore del ginocchio, le prove migliori riguardano il rinforzo di anca e ginocchio, con i plantari come aggiunta di breve periodo.
+Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano odds 1,3 volte più alte di dolore frequente al ginocchio. Per il dolore nella parte anteriore del ginocchio, le prove migliori riguardano il rinforzo di anca e ginocchio, con i plantari come aggiunta di breve periodo.
 
-- In uno studio del 2011 su 1.903 adulti anziani, i piedi più piatti avevano 1,3 volte la probabilità di dolore al ginocchio quasi tutti i giorni e 1,4 volte la probabilità di danno alla cartilagine sul lato interno del ginocchio (Gross e colleghi). Lo studio mostra un legame, non una causa.
+- In uno studio del 2011 su 1.903 adulti anziani, i piedi più piatti avevano odds 1,3 volte più alte di dolore al ginocchio quasi tutti i giorni e odds 1,4 volte più alte di danno alla cartilagine sul lato interno del ginocchio (Gross e colleghi). Lo studio mostra un legame, non una causa.
 - In 97.279 giovani reclute militari, il dolore nella parte anteriore del ginocchio era del 7% con piede piatto moderato o grave e del 4% con piede piatto lieve o assente (Kosashvili e colleghi, 2008).
 - Una revisione del 2014 su 21 studi prospettici ha trovato solo prove molto limitate, con effetti piccoli, che un piede che cede verso l’interno aumenti il rischio di dolore intorno alla rotula (Neal e colleghi).
 - In uno studio su 179 adulti con dolore alla rotula, i plantari sagomati funzionavano meglio di solette piatte nel breve periodo, ma non meglio della fisioterapia, e aggiunti a essa non davano nulla in più (Collins e colleghi, 2008).
@@ -4230,8 +4230,8 @@ In diversi studi grandi il piede piatto è legato al dolore al ginocchio, ma **n
 
 Lo studio più noto viene dai Framingham Studies negli Stati Uniti. Gross e colleghi hanno misurato le impronte di 1.903 adulti anziani (età media 65 anni) e hanno chiesto del dolore al ginocchio. I risultati del 2011, per i piedi più piatti rispetto a tutti gli altri piedi:
 
-- **Dolore al ginocchio:** 1,3 volte la probabilità di dolore al ginocchio quasi tutti i giorni.
-- **Cartilagine:** 1,4 volte la probabilità di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa.
+- **Dolore al ginocchio:** odds 1,3 volte più alte di dolore al ginocchio quasi tutti i giorni.
+- **Cartilagine:** odds 1,4 volte più alte di danno alla cartilagine sul lato interno dell’articolazione del ginocchio alla risonanza magnetica. La cartilagine è lo strato liscio che riveste le estremità delle ossa.
 - **Resto del ginocchio:** nessun legame con danni in altre parti del ginocchio.
 
 Un secondo studio ha guardato le persone giovani. Kosashvili e colleghi hanno esaminato nel 2008 i dati di 97.279 giovani reclute militari. Il dolore nella parte anteriore del ginocchio è stato trovato nel 7% delle reclute con piede piatto moderato o grave e nel 4% di quelle con piede piatto lieve o arco normale. Il piede piatto lieve, che era il 74% del gruppo con piede piatto, non comportava alcun rischio in più.
@@ -4353,11 +4353,11 @@ Walkito è pensato per il dolore al tallone, al piede e alla parte bassa della g
 
 #### Il piede piatto può causare dolore al ginocchio?
 
-Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano 1,3 volte la probabilità di dolore frequente al ginocchio (Gross 2011). Una revisione del 2014 ha trovato solo prove molto limitate che un piede che cede verso l’interno aumenti il rischio di dolore alla rotula. La maggior parte delle persone con il piede piatto non ha dolore al ginocchio.
+Il piede piatto è legato al dolore al ginocchio, ma il legame è piccolo e non è stato dimostrato che ne sia la causa. In 1.903 adulti anziani, i piedi più piatti avevano odds 1,3 volte più alte di dolore frequente al ginocchio (Gross 2011). Una revisione del 2014 ha trovato solo prove molto limitate che un piede che cede verso l’interno aumenti il rischio di dolore alla rotula. La maggior parte delle persone con il piede piatto non ha dolore al ginocchio.
 
 #### Il piede piatto può causare dolore all’interno del ginocchio?
 
-Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano 1,4 volte la probabilità di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo schema è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.
+Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano odds 1,4 volte più alte di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo schema è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.
 
 #### I plantari aiutano il dolore al ginocchio da piede piatto?
 
@@ -7085,7 +7085,7 @@ Gli infermieri camminano in un solo turno più di quanto molte persone camminino
 - In un sondaggio su 312 infermieri di un ospedale pediatrico in Australia, il 55,3% ha riferito problemi a piede o caviglia negli ultimi 12 mesi, e la quota era più alta tra chi faceva turni di 12 ore in terapia intensiva (Reed e colleghi, 2014).
 - In uno studio con contapassi, gli infermieri hanno fatto in media 9.360 passi per turno, circa 5,8 km in un turno di 9,4 ore, un carico ben sopra la media degli adulti (Chang e Cho, 2022).
 - In uno studio trasversale su 636 infermieri ospedalieri giapponesi, il 51% ha riferito dolore o disabilità al piede nell’ultimo mese, e il 17% aveva un dolore che interferiva con le attività quotidiane (Tojo e colleghi, 2018).
-- Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli, con una probabilità 23,3 volte più alta. Stare in piedi per la maggior parte della giornata lavorativa la aumentava di 3,6 volte (Riddle e colleghi, 2003).
+- Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli, con odds 23,3 volte più alte. Stare in piedi per la maggior parte della giornata lavorativa le aumentava di 3,6 volte (Riddle e colleghi, 2003).
 - In uno studio su 40 guardie giurate in piedi per turni di 12 ore, sia le calze a compressione da 15-20 mmHg sia quelle da 20-30 mmHg hanno evitato l’aumento di fastidio e gonfiore visto con le calze normali (Garcia e colleghi, 2023).
 
 ### Quanto è comune il dolore ai piedi negli infermieri?
@@ -7109,7 +7109,7 @@ In un turno infermieristico si sommano tre cose: tanto tempo in piedi, lunghe di
 
 Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe in molti lavori in piedi, citando gli infermieri tra i gruppi a rischio più alto. La revisione ha notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi.
 
-A livello dei tessuti, un polpaccio rigido è un pezzo chiave. Uno studio caso-controllo su 50 persone con fascite plantare e 100 controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con una probabilità 23,3 volte più alta. Stare in piedi per la maggior parte della giornata lavorativa aumentava la probabilità di 3,6 volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**
+A livello dei tessuti, un polpaccio rigido è un pezzo chiave. Uno studio caso-controllo su 50 persone con fascite plantare e 100 controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con odds 23,3 volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6 volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**
 
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
@@ -7219,7 +7219,7 @@ Il dolore ai piedi da stazione eretta e camminata è comune nell’infermieristi
 
 #### Si può avere la fascite plantare per il lavoro da infermiere?
 
-Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte la probabilità di fascite plantare in uno studio caso-controllo appaiato con 50 casi e 100 controlli. Una flessibilità della caviglia ridotta la aumentava di 23,3 volte. Gli infermieri hanno entrambi i fattori di rischio, molto tempo in piedi e poche pause per allungarsi, ed è per questo che gli esercizi di questa pagina si sovrappongono molto a quelli della guida sulla fascite plantare.
+Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte le odds di fascite plantare in uno studio caso-controllo appaiato con 50 casi e 100 controlli. Una flessibilità della caviglia ridotta le aumentava di 23,3 volte. Gli infermieri hanno entrambi i fattori di rischio, molto tempo in piedi e poche pause per allungarsi, ed è per questo che gli esercizi di questa pagina si sovrappongono molto a quelli della guida sulla fascite plantare.
 
 #### Qual è la prima cosa che un infermiere può fare per il male ai piedi?
 
@@ -8405,7 +8405,7 @@ Passare a una scrivania in piedi dovrebbe farti bene, ma nelle prime settimane p
 - Una dichiarazione di esperti del 2015 commissionata da Public Health England consiglia di accumulare all’inizio 2 ore al giorno di stazione eretta e attività leggera durante il lavoro, per poi salire a 4 ore al giorno, divise in periodi più brevi (Buckley e colleghi, 2015).
 - Una revisione sistematica del 2014 di 14 studi ha trovato prove sufficienti che le postazioni seduto-in piedi riducono il fastidio alla parte bassa della schiena, senza calo di produttività, ma non ha trovato un rapporto ideale tra tempo seduti e in piedi (Karakolis e Callaghan, 2014).
 - Una revisione del 2015 della ricerca di medicina del lavoro ha associato lo stare in piedi a lungo a fastidi muscoloscheletrici, stanchezza e dolore alle gambe, e ha elencato tappetini, calze a compressione e scarpe di sostegno tra gli interventi con prove a favore (Waters e Dick, 2015).
-- Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il fattore più forte per la fascite plantare in uno studio caso-controllo del 2003, con una probabilità 23,3 volte più alta. Stare in piedi per la maggior parte della giornata lavorativa la aumentava di 3,6 volte (Riddle e colleghi, 2003).
+- Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il fattore più forte per la fascite plantare in uno studio caso-controllo del 2003, con odds 23,3 volte più alte. Stare in piedi per la maggior parte della giornata lavorativa le aumentava di 3,6 volte (Riddle e colleghi, 2003).
 
 ### Perché la scrivania in piedi fa male ai piedi?
 
@@ -8499,7 +8499,7 @@ Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert sta
 
 ### Il dolore ai piedi con la scrivania in piedi può essere fascite plantare o altro?
 
-Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quello schema fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte la probabilità di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.
+Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quello schema fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte le odds di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.
 
 Gli esercizi che aiutano i due problemi si sovrappongono molto. Se il tuo dolore segue lo schema della fascite plantare, [esercizi e allungamenti per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/) è la guida più completa. Se senti gli archi piatti, vedi [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/). Se non sei sicuro, senti un professionista sanitario prima di caricare il piede con gli esercizi.
 
@@ -8532,7 +8532,7 @@ Una revisione di medicina del lavoro del 2015 elenca i tappetini tra gli interve
 
 #### La scrivania in piedi può causare la fascite plantare?
 
-Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte la probabilità di fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli. Una scrivania in piedi aumenta le ore in piedi ogni giorno, quindi può plausibilmente contribuire se il polpaccio è già rigido, che era il fattore di rischio indipendente più forte, con una probabilità 23,3 volte più alta. Gli allungamenti del polpaccio sono il modo più diretto di lavorare su entrambi i fattori.
+Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte le odds di fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli. Una scrivania in piedi aumenta le ore in piedi ogni giorno, quindi può plausibilmente contribuire se il polpaccio è già rigido, che era il fattore di rischio indipendente più forte, con odds 23,3 volte più alte. Gli allungamenti del polpaccio sono il modo più diretto di lavorare su entrambi i fattori.
 
 #### Meglio stare seduti o in piedi tutto il giorno?
 
@@ -8561,7 +8561,7 @@ Language: Italian (Italiano) · https://walkito.site/it/dolore-piedi-stare-in-pi
 A fine turno ti fanno male i piedi. L’arco duole, il tallone è dolorante e le gambe sono pesanti. Stare in piedi per ore su un pavimento duro carica sempre gli stessi tessuti, senza la pompa che la camminata dà ai polpacci e alle vene. Allungare il polpaccio e la fascia plantare, e costruire un po’ di forza nel polpaccio, lavora proprio sui tessuti che si prendono più sforzo.
 
 - Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe, con tappetini, calze a compressione e scarpe di sostegno tra gli interventi che hanno prove a favore (Waters e Dick, 2015).
-- Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte la probabilità di fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli. Una flessibilità della caviglia ridotta la aumentava di 23,3 volte (Riddle e colleghi, 2003).
+- Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6 volte le odds di fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli. Una flessibilità della caviglia ridotta le aumentava di 23,3 volte (Riddle e colleghi, 2003).
 - In uno studio a gruppi paralleli su 40 guardie giurate assegnate a caso a calze normali o a uno di due gruppi con calze a compressione, sia le calze da 15-20 mmHg sia quelle da 20-30 mmHg hanno evitato l’aumento del fastidio a piedi e gambe visto con le calze normali durante turni in piedi di 12 ore (Garcia e colleghi, 2023).
 - La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio il suo grado più alto, A, e al lavoro di forza una B.
 
@@ -8571,7 +8571,7 @@ I piedi fanno male a stare in piedi perché **restare fermi carica la fascia pla
 
 Una revisione del 2015 della ricerca di medicina del lavoro ha associato lo stare in piedi a lungo a mal di schiena, dolore alle gambe, fastidio e stanchezza in molti lavori in piedi. La revisione ha anche notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi. Gli autori hanno chiesto definizioni più chiare di «stare in piedi a lungo» negli studi futuri, perché il confine tra un tempo in piedi sicuro e uno dannoso cambia da persona a persona e da lavoro a lavoro.
 
-Su polpaccio e fascia in particolare, uno studio caso-controllo del 2003 ha trovato due fattori di rischio che spiccavano sugli altri. Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare, con una probabilità 23,3 volte più alta. Stare in piedi per la maggior parte della giornata lavorativa aumentava la probabilità di 3,6 volte. Le due cose sono collegate: un polpaccio rigido tiene il tallone sotto più tensione in ogni minuto passato in piedi.
+Su polpaccio e fascia in particolare, uno studio caso-controllo del 2003 ha trovato due fattori di rischio che spiccavano sugli altri. Una flessibilità della caviglia ridotta, cioè un polpaccio rigido, era il singolo fattore più forte per la fascite plantare, con odds 23,3 volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6 volte. Le due cose sono collegate: un polpaccio rigido tiene il tallone sotto più tensione in ogni minuto passato in piedi.
 
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
@@ -8653,7 +8653,7 @@ La fascia plantare, i muscoli del polpaccio e le vene della parte bassa della ga
 
 #### Il male ai piedi a stare in piedi tutto il giorno è fascite plantare?
 
-Non sempre. Dolore e stanchezza generici da stazione eretta sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso, con dolore acuto al tallone, spesso peggiore ai primi passi dopo il riposo. Stare in piedi per gran parte della giornata lavorativa è un fattore di rischio indipendente per la fascite plantare, con una probabilità 3,6 volte più alta in uno studio caso-controllo, quindi le due cose sono collegate ma non uguali.
+Non sempre. Dolore e stanchezza generici da stazione eretta sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso, con dolore acuto al tallone, spesso peggiore ai primi passi dopo il riposo. Stare in piedi per gran parte della giornata lavorativa è un fattore di rischio indipendente per la fascite plantare, con odds 3,6 volte più alte in uno studio caso-controllo, quindi le due cose sono collegate ma non uguali.
 
 #### Le calze a compressione servono per il male ai piedi da lavoro in piedi?
 
@@ -8683,7 +8683,7 @@ Avere i polpacci rigidi di solito vuol dire che i muscoli del polpaccio sono dur
 
 - In una revisione del 2006 di cinque studi randomizzati, lo stretching statico del polpaccio ha aumentato la flessione della caviglia solo di circa 2-3 gradi, e gli autori non erano sicuri che il cambiamento conti per le persone (Radford e colleghi).
 - In una revisione di 11 studi con 452 persone, il lavoro di forza ha migliorato l’ampiezza di movimento più o meno quanto lo stretching (Afonso e colleghi, 2021).
-- In uno studio del 2003 su 50 persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0 gradi si associava a una probabilità di fascite plantare 23,3 volte più alta rispetto a una caviglia che si piegava oltre 10 gradi (Riddle e colleghi).
+- In uno studio del 2003 su 50 persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0 gradi si associava a odds di fascite plantare 23,3 volte più alte rispetto a una caviglia che si piegava oltre 10 gradi (Riddle e colleghi).
 - In 210 triatleti Ironman, quelli che hanno avuto crampi non avevano perso più peso e non avevano livelli di sali nel sangue diversi. A prevedere i crampi erano una gara più veloce e i crampi avuti in passato (Schwellnus e colleghi, 2011).
 - Un dolore al polpaccio con gonfiore, calore o arrossamento in una gamba può essere un coagulo di sangue e va valutato in giornata.
 
@@ -8715,7 +8715,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 I polpacci rigidi sono legati alla fascite plantare, la causa più comune di dolore sotto il tallone. Quando la caviglia non si piega abbastanza, il piede deve compensare a ogni passo, e la trazione aumenta su tendine d’Achille, tallone e fascia plantare (la banda spessa sotto l’arco).
 
-In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50 persone con fascite plantare e 100 persone simili senza. Chi aveva una caviglia che non si piegava oltre 0 gradi aveva una probabilità di fascite plantare 23,3 volte più alta rispetto a chi si piegava oltre 10 gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.
+In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50 persone con fascite plantare e 100 persone simili senza. Chi aveva una caviglia che non si piegava oltre 0 gradi aveva odds di fascite plantare 23,3 volte più alte rispetto a chi si piegava oltre 10 gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.
 
 In uno studio successivo su 254 persone con fascite plantare, l’83% aveva una flessione della caviglia limitata, e il 57% di tutti i pazienti aveva solo il gastrocnemio rigido (Patel e DiGiovanni, 2011).
 
@@ -8829,7 +8829,7 @@ Se porti i tacchi quasi tutti i giorni, non devi rinunciarci. Alterna giornate c
 
 ### Farlo come un piano
 
-Walkito è un’app per iPhone con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2 tenute da 30 secondi per ogni allungamento e da 3 serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.
+Walkito è un’app per iPhone e Android con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2 tenute da 30 secondi per ogni allungamento e da 3 serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.
 
 #### Perché ho sempre i polpacci rigidi?
 
@@ -8845,7 +8845,7 @@ Spesso i polpacci restano rigidi perché si fa solo l’allungamento a ginocchio
 
 #### I polpacci rigidi possono causare la fascite plantare?
 
-I polpacci rigidi sono legati alla fascite plantare, anche se un legame non prova una causa. In uno studio su 50 persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0 gradi si associava a una probabilità 23,3 volte più alta. La linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio il suo grado più alto per il dolore sotto il tallone.
+I polpacci rigidi sono legati alla fascite plantare, anche se un legame non prova una causa. In uno studio su 50 persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0 gradi si associava a odds 23,3 volte più alte. La linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio il suo grado più alto per il dolore sotto il tallone.
 
 #### Bere più acqua aiuta i polpacci rigidi?
 
@@ -8866,7 +8866,7 @@ Language: Italian (Italiano) · https://walkito.site/it/esercizi-rinforzo-dita-p
 Gli esercizi per rinforzare le dita dei piedi partono dal controllo (toe yoga, apertura delle dita), passano alla presa (raccolta dell’asciugamano, esercizio del piede corto) e finiscono con carico ed equilibrio. Le dita deboli sono legate alle cadute negli anziani e si ritrovano nelle persone con dolore al tallone. Uno studio ha trovato che la forza delle dita è aumentata solo in un programma supervisionato che diventava più difficile nel tempo.
 
 - In uno studio che ha seguito per un anno 312 adulti tra 60 e 90 anni, i 107 che sono caduti avevano l’alluce e le dita più piccole più deboli di chi non è caduto (Mickle e colleghi, 2009).
-- Una revisione del 2026 su 14 studi di coorte ha trovato che muscoli dell’alluce deboli si associavano a una probabilità di una caduta futura circa 1,65 volte più alta negli adulti dai 60 anni in su, anche se molti studi non tenevano conto di altre cause.
+- Una revisione del 2026 su 14 studi di coorte ha trovato che muscoli dell’alluce deboli si associavano a odds di una caduta futura circa 1,65 volte più alte negli adulti dai 60 anni in su, anche se molti studi non tenevano conto di altre cause.
 - In uno studio su 85 anziani, un programma supervisionato che diventava più difficile nel corso di tre mesi ha aumentato la forza delle dita fino al 36%, mentre un programma a casa e un gruppo di controllo non hanno mostrato cambiamenti (Mickle e colleghi, 2016).
 - In due studi separati, le persone con dolore sotto il tallone avevano i flessori delle dita più deboli rispetto a chi non aveva dolore, ma nessuno dei due ha potuto dire se la debolezza è venuta prima o dopo il dolore.
 - Non esiste un unico test condiviso per la forza delle dita. I controlli a casa come il test del foglietto sono screening grossolani del tipo «passa o non passa», utili per seguire i tuoi progressi e poco più.
@@ -8879,7 +8879,7 @@ Le prove più chiare vengono dagli anziani. Un gruppo australiano ha misurato la
 
 Uno studio precedente su 176 persone con un’età media di 80 anni ha trovato che i flessori plantari delle dita deboli (i muscoli che spingono le dita verso il basso) erano legati alle cadute anche dopo aver tenuto conto di altri fattori di rischio di caduta, come vista, tempo di reazione e forza, e dell’età.
 
-Una revisione del 2026 su 14 studi di coorte in adulti dai 60 anni in su ha messo insieme i dati e ha trovato che muscoli dell’alluce deboli si associavano a una probabilità di una caduta futura circa 1,65 volte più alta. Gli autori hanno precisato che molti studi non tenevano conto di altre cause, quindi le dita deboli potrebbero essere in parte un segno di fragilità generale.
+Una revisione del 2026 su 14 studi di coorte in adulti dai 60 anni in su ha messo insieme i dati e ha trovato che muscoli dell’alluce deboli si associavano a odds di una caduta futura circa 1,65 volte più alte. Gli autori hanno precisato che molti studi non tenevano conto di altre cause, quindi le dita deboli potrebbero essere in parte un segno di fragilità generale.
 
 Per l’equilibrio in sé, una revisione del 2020 su nove studi ha trovato che flessori delle dita più forti andavano insieme a un equilibrio migliore in tutti gli studi inclusi. Tutti quegli studi riguardavano persone sopra i 60 anni, quindi il legame negli adulti più giovani non è stato testato allo stesso modo.
 
@@ -9212,7 +9212,7 @@ Walkito ed Exakt Health offrono entrambe piani di esercizi per la fascite planta
 - Exakt e Walkito sono entrambe sia su iOS sia su Android.
 - Exakt Health è certificata come dispositivo medico nell’UE. Walkito non è un dispositivo medico.
 - Walkito adatta ogni sessione in base a un check-in del dolore al mattino e testa la differenza tra sinistra e destra ogni 14 giorni. Exakt adatta il piano in base al feedback di fine sessione.
-- Exakt costa 19,99 $ al mese o 59,99 $ per sei mesi. Walkito costa 44,99 $ all’anno o 7,99 $ a settimana.
+- Exakt costa 19,99 $ al mese o 59,99 $ per sei mesi. Walkito è un abbonamento settimanale o annuale, con il prezzo attuale indicato nello store.
 
 ### Confronto fianco a fianco
 
@@ -9275,17 +9275,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Quanto costano Walkito ed Exakt Health?
 
-Walkito costa 44,99 $ all’anno o 7,99 $ a settimana. Il prezzo annuale corrisponde a circa 0,87 $ a settimana. Sull’App Store non è indicata una prova gratuita, anche se i termini d’uso prevedono offerte introduttive.
+Walkito si scarica gratis, con un abbonamento settimanale o annuale addebitato tramite App Store o Google Play. Il prezzo attuale per il tuo paese è indicato nello store prima di abbonarti.
 
 Exakt costa 19,99 $ al mese per i piani di riabilitazione, con opzioni da 3 mesi (39,99 $) e da 6 mesi (59,99 $). I piani di allenamento di corsa arrivano fino a 99,99 $ all’anno. Ogni abbonamento parte con una prova gratuita di 7 giorni.
 
-Su un anno intero:
+Su un anno intero, l’opzione di riabilitazione più economica di Exakt (il piano da 6 mesi acquistato due volte) costa circa 120 $, e aggiungendo un piano di corsa si possono superare i 200 $. Confronta il prezzo di Walkito nello store con queste cifre.
 
-- Walkito annuale costa 44,99 $.
-- L’opzione di riabilitazione più economica di Exakt (piano da 6 mesi rinnovato due volte) costa circa 120 $.
-- Se aggiungi un piano di corsa, Exakt può superare i 200 $ all’anno.
-
-Se ti servono solo esercizi per il dolore al tallone o al piede, **Walkito costa molto meno.** Se ti servono riabilitazione da infortunio di corsa più un piano di allenamento, il prezzo più alto di Exakt copre di più.
+Se ti servono solo esercizi per il dolore al tallone o al piede, Walkito è l’opzione più mirata e specifica. Se ti servono riabilitazione da infortunio di corsa più un piano di allenamento, i piani di Exakt coprono di più.
 
 ### Piattaforme e lingue
 
@@ -9341,7 +9337,6 @@ Scegli Walkito se vale almeno una di queste cose:
 - Vuoi sessioni da 3 a 10 minuti invece che da 15 a 30.
 - Per te conta più l’adattamento quotidiano al dolore con un check-in al mattino che la progressione a livelli.
 - Vuoi test dei progressi ogni 14 giorni che confrontino sinistra e destra.
-- Il prezzo conta: Walkito a 44,99 $ all’anno costa meno della metà del costo annuale più basso di Exakt.
 - Ti serve l’app in russo.
 - Stai in piedi tutto il giorno per lavoro, non corri, e vuoi un’app fatta per questo.
 
@@ -9363,9 +9358,9 @@ Se Walkito ti sembra adatta alla tua situazione, ecco come funziona. Rispondi a 
 
 Dipende da cosa ti serve. Exakt Health copre oltre 15 infortuni da corsa e include piani di ritorno alla corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra su dolore al tallone e piede piatto, con adattamento quotidiano al dolore e sessioni più brevi. Per chi corre e ha infortuni di tipo diverso, Exakt è la scelta più adatta. Per il dolore al tallone con adattamento giorno per giorno, Walkito è fatta proprio per questo.
 
-#### Walkito costa meno di Exakt Health?
+#### Come si confronta il prezzo di Walkito con quello di Exakt Health?
 
-Sì, su base annuale. Walkito costa 44,99 $ all’anno. L’opzione di riabilitazione più economica di Exakt Health è 59,99 $ per sei mesi, cioè circa 120 $ all’anno. Exakt offre una prova gratuita di 7 giorni; Walkito al momento non ne indica una sull’App Store.
+Walkito è un abbonamento settimanale o annuale, e il prezzo attuale per il tuo paese è indicato nell’App Store o su Google Play prima di abbonarti. L’opzione di riabilitazione più economica di Exakt Health è 59,99 $ per sei mesi, cioè circa 120 $ all’anno, e parte con una prova gratuita di 7 giorni.
 
 #### Exakt Health ha un piano per la fascite plantare?
 
@@ -9391,7 +9386,7 @@ Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e 
 
 ### Cos’è Walkito?
 
-Walkito è un’app per iPhone che costruisce il tuo piano di esercizi una settimana alla volta intorno a obiettivi che puoi misurare. Gli obiettivi sono cinque: mattine senza dolore (dolore del mattino a 1/10 o meno per 14 giorni di fila), tenere l’arco per 60 secondi, 25 sollevamenti sulle punte su una gamba, 30 secondi di equilibrio su una gamba, e una differenza di meno del 10% tra lato sinistro e destro. Inizi con al massimo tre. Se qualcosa fa male, prima viene il dolore.
+Walkito è un’app per iPhone e Android che costruisce il tuo piano di esercizi una settimana alla volta intorno a obiettivi che puoi misurare. Gli obiettivi sono cinque: mattine senza dolore (dolore del mattino a 1/10 o meno per 14 giorni di fila), tenere l’arco per 60 secondi, 25 sollevamenti sulle punte su una gamba, 30 secondi di equilibrio su una gamba, e una differenza di meno del 10% tra lato sinistro e destro. Inizi con al massimo tre. Se qualcosa fa male, prima viene il dolore.
 
 Scegli 3, 5 o 7 giorni di allenamento a settimana e sessioni da 3, 5 o 10 minuti. La sessione di ogni giorno si adatta a com’è andata la tua mattina. Ogni 14 giorni, un breve test mostra se i tuoi numeri cambiano. Quando raggiungi il primo obiettivo, il test arriva ogni 28 giorni.
 

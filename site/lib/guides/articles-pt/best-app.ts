@@ -106,7 +106,7 @@ export const BEST_APP_PT: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. US$\u00A044,99/ano ou US$\u00A07,99/semana',
+            'iOS, Android. Assinatura semanal ou anual',
             'Dor no calcanhar, pé chato, quem passa o dia em pé, corredores',
             'O check-in da manhã ajusta cada sessão',
             'Ainda sem nota (novo, out. 2026)',
@@ -203,7 +203,7 @@ export const BEST_APP_PT: Guide = {
     {
       h2: 'Walkito: o que ele faz e o que não faz',
       paragraphs: [
-        'O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele foi lançado na App Store em 2 de outubro de 2026 e no Google Play mais tarde, em outubro de 2026. É novo e ainda não tem notas.',
+        'O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 2 de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.',
         'O que ele faz:',
         {
           list: [
@@ -224,7 +224,7 @@ export const BEST_APP_PT: Guide = {
           ],
         },
         'Ele cobre dor no calcanhar, pé chato e dor na canela, e não as mais de 15 lesões que o Exakt cobre nem o corpo inteiro como o Hinge Health ou o Prehab.',
-        'Por US$\u00A044,99 por ano ou US$\u00A07,99 por semana, o preço anual é menor que o da maioria dos concorrentes. O preço semanal é mais alto em relação ao anual, o que é o padrão em assinaturas.',
+        'É uma assinatura semanal ou anual pela App Store ou pelo Google Play, e o preço atual aparece na loja antes de você assinar.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

@@ -126,7 +126,7 @@ export function GetAppDialog({
                 <rect width={box} height={box} fill="#fff" />
                 <path d={qr.d} transform={`translate(${pad} ${pad})`} fill="#111114" />
               </svg>
-              <img className="get-qr-icon" src="/icon.png" alt="" width={64} height={64} />
+              <img className="get-qr-icon" src="/icon-128.webp" alt="" width={64} height={64} />
             </div>
           </div>
 

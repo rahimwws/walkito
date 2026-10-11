@@ -19,7 +19,7 @@ export const EX_TOE_SPREAD: Guide = {
     'How to do the toe spread exercise to splay your toes: technique, sets and reps, what muscles it works, who it helps, and what MRI research shows.',
   h1: 'Toe spread exercise: how to splay your toes for foot strength',
   lede:
-    'The toe spread exercise trains the muscles that fan the toes apart. You spread all five toes as wide as they go, hold, then release. It targets the abductor hallucis on the inner side and the abductor digiti minimi on the outer side, the same muscles that support both edges of the arch. It shows up in programs for flat feet, bunions and general foot strength.',
+    'The toe spread exercise trains the muscles that fan the toes apart. You spread all five toes as wide as they go, hold, then release. It targets the abductor hallucis on the inner side and the abductor digiti minimi on the outer side, the same muscles that support both edges of the arch. It shows up in programs for [flat feet](/flat-feet/), [bunions](/bunion-exercises/) and general foot strength.',
   takeaways: [
     'A 2016 MRI study found the toe spread exercise produced the highest mean activation (35.2%) in the abductor digiti minimi, the muscle that supports the outer arch, out of four intrinsic foot exercises tested (Gooding and colleagues, 2016).',
     'A 2016 MRI study found the toe spread exercise produced its second-highest mean activation (31.5%) in the adductor hallucis oblique, a muscle on the inner side of the big toe joint (Gooding and colleagues, 2016).',
@@ -147,7 +147,7 @@ export const EX_TOE_SPREAD: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito schedules toe spreads on strength days alongside other intrinsic foot exercises. The plan alternates them with the short foot exercise and band turn-ins so the foot muscles get varied work without overloading on one movement. You pick sessions of 3, 5 or 10 minutes.',
+    text: '[Walkito](/program/) schedules toe spreads on strength days alongside other intrinsic foot exercises. The plan alternates them with the short foot exercise and band turn-ins so the foot muscles get varied work without overloading on one movement. You pick sessions of 3, 5 or 10 minutes.',
     cta: 'Start with 3 minutes a day.',
   },
   crumb: 'Toe spread (toe splay)',

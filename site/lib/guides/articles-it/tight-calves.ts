@@ -20,7 +20,7 @@ export const TIGHT_CALVES_IT: Guide = {
   takeaways: [
     'In una revisione del 2006 di cinque studi randomizzati, lo stretching statico del polpaccio ha aumentato la flessione della caviglia solo di circa 2-3\u00A0gradi, e gli autori non erano sicuri che il cambiamento conti per le persone (Radford e colleghi).',
     'In una revisione di 11\u00A0studi con 452\u00A0persone, il lavoro di forza ha migliorato l’ampiezza di movimento più o meno quanto lo stretching (Afonso e colleghi, 2021).',
-    'In uno studio del 2003 su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a una probabilità di fascite plantare 23,3\u00A0volte più alta rispetto a una caviglia che si piegava oltre 10\u00A0gradi (Riddle e colleghi).',
+    'In uno studio del 2003 su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a odds di fascite plantare 23,3\u00A0volte più alte rispetto a una caviglia che si piegava oltre 10\u00A0gradi (Riddle e colleghi).',
     'In 210\u00A0triatleti Ironman, quelli che hanno avuto crampi non avevano perso più peso e non avevano livelli di sali nel sangue diversi. A prevedere i crampi erano una gara più veloce e i crampi avuti in passato (Schwellnus e colleghi, 2011).',
     'Un dolore al polpaccio con gonfiore, calore o arrossamento in una gamba può essere un coagulo di sangue e va valutato in giornata.',
   ],
@@ -53,10 +53,10 @@ export const TIGHT_CALVES_IT: Guide = {
     },
     {
       h2: 'I polpacci rigidi causano dolore al piede e al tallone?',
-      keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a una probabilità di fascite plantare 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
+      keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a odds di fascite plantare 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
       paragraphs: [
         'I polpacci rigidi sono legati alla fascite plantare, la causa più comune di dolore sotto il tallone. Quando la caviglia non si piega abbastanza, il piede deve compensare a ogni passo, e la trazione aumenta su tendine d’Achille, tallone e fascia plantare (la banda spessa sotto l’arco).',
-        'In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50\u00A0persone con fascite plantare e 100\u00A0persone simili senza. Chi aveva una caviglia che non si piegava oltre 0\u00A0gradi aveva una probabilità di fascite plantare 23,3\u00A0volte più alta rispetto a chi si piegava oltre 10\u00A0gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.',
+        'In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50\u00A0persone con fascite plantare e 100\u00A0persone simili senza. Chi aveva una caviglia che non si piegava oltre 0\u00A0gradi aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi si piegava oltre 10\u00A0gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.',
         'In uno studio successivo su 254\u00A0persone con fascite plantare, l’83% aveva una flessione della caviglia limitata, e il 57% di tutti i pazienti aveva solo il gastrocnemio rigido (Patel e DiGiovanni, 2011).',
         '**Entrambi gli studi mostrano un legame, non che i polpacci rigidi causino la fascite plantare.** L’ampio intervallo intorno al valore di 23,3 vuol dire anche che il numero reale potrebbe essere molto più piccolo. Resta comunque uno dei motivi per cui la linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio una A, il suo grado più alto, per il dolore sotto il tallone.',
         'Se il problema principale è il dolore al tallone, parti dagli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) o da [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). I polpacci rigidi compaiono anche nei problemi dell’Achille e degli stinchi: vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) ed [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
@@ -227,7 +227,7 @@ export const TIGHT_CALVES_IT: Guide = {
     {
       q: 'I polpacci rigidi possono causare la fascite plantare?',
       cites: [CITE.riddle, CITE.guideline],
-      a: 'I polpacci rigidi sono legati alla fascite plantare, anche se un legame non prova una causa. In uno studio su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a una probabilità 23,3\u00A0volte più alta. La linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio il suo grado più alto per il dolore sotto il tallone.',
+      a: 'I polpacci rigidi sono legati alla fascite plantare, anche se un legame non prova una causa. In uno studio su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a odds 23,3\u00A0volte più alte. La linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio il suo grado più alto per il dolore sotto il tallone.',
     },
     {
       q: 'Bere più acqua aiuta i polpacci rigidi?',
@@ -258,7 +258,7 @@ export const TIGHT_CALVES_IT: Guide = {
   },
   program: {
     h2: 'Farlo come un piano',
-    text: 'Walkito è un’app per iPhone con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.',
+    text: 'Walkito è un’app per iPhone e Android con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. Ogni due settimane un breve test controlla la resistenza del polpaccio, così vedi se i polpacci si stanno rinforzando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario se vale uno dei segnali d’allarme qui sopra.',
     ],

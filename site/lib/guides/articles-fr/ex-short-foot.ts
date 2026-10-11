@@ -20,7 +20,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
     'L’exercice du pied court entraîne les petits muscles à l’intérieur du pied à tenir la voûte levée sans recroqueviller les orteils. Vous tirez la base des orteils vers le talon pour que la voûte se raccourcisse et se soulève. C’est l’exercice qu’une revue narrative de 2015 a présenté comme la base de l’entraînement du «\u00A0foot core\u00A0», le gainage du pied, et il figure dans la plupart des programmes pour pieds plats et fasciite plantaire qui visent les muscles intrinsèques du pied.',
   takeaways: [
     'Une étude IRM de 2016 sur 8\u00A0sportifs a montré que l’exercice du pied court produisait l’activation moyenne la plus élevée (jusqu’à 34,9\u00A0%) dans trois des quatre muscles plantaires intrinsèques testés, par rapport à l’écartement des orteils, à l’extension du gros orteil et à l’extension des quatre autres orteils (Gooding et coll., 2016).',
-    'Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).',
+    'Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).',
     'Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines amélioraient l’affaissement du naviculaire, mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).',
     'Des adultes en bonne santé qui ont fait quatre semaines d’exercices du pied court ont plus amélioré leur équilibre dynamique qu’un groupe qui ramassait une serviette avec les orteils pendant la même durée (Lynn et coll., 2012).',
   ],
@@ -68,7 +68,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
             'Le court fléchisseur des orteils (24,8\u00A0%).',
           ],
         },
-        'Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était plus de quatre fois plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils.',
+        'Une étude EMG antérieure de Jung et coll. (2011) a montré que l’activité de l’abducteur de l’hallux était nettement plus forte pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils, assis comme debout sur une jambe.',
         'C’est pourquoi **le pied court est considéré comme un meilleur exercice que le ramassage de serviette pour viser précisément les muscles intrinsèques.** Le ramassage de serviette sollicite les longs fléchisseurs des orteils, les muscles extrinsèques qui vont de la jambe aux orteils. L’exercice du pied court laisse ces muscles extrinsèques plus au repos.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -159,7 +159,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
     {
       q: 'Le pied court est-il meilleur que le ramassage de serviette avec les orteils\u00A0?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'Pour viser précisément les muscles intrinsèques du pied, oui. Les mesures EMG montrent que l’abducteur de l’hallux est plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette (Jung 2011). Un essai randomisé séparé a montré que le groupe du pied court avait plus amélioré son équilibre que le groupe de la serviette après quatre semaines (Lynn 2012). Le ramassage de serviette garde un rôle comme exercice de départ plus simple.',
+      a: 'Pour viser précisément les muscles intrinsèques du pied, oui. Les mesures EMG montrent que l’abducteur de l’hallux est nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette (Jung 2011). Un essai randomisé séparé a montré que le groupe du pied court avait plus amélioré son équilibre que le groupe de la serviette après quatre semaines (Lynn 2012). Le ramassage de serviette garde un rôle comme exercice de départ plus simple.',
     },
     {
       q: 'Combien de séries et de répétitions du pied court faire\u00A0?',

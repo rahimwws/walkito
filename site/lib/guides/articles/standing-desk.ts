@@ -71,7 +71,7 @@ export const STANDING_DESK_EN: Guide = {
     {
       h2: 'What shoes should you wear at a standing desk?',
       paragraphs: [
-        'If you work from home, you may be standing at your desk in socks or slippers. That is a lot of hours without any cushioning or arch support. The 2023 heel pain guideline grades orthotics on their own B-against for plantar fasciitis, meaning the evidence leans against using them as a standalone option, but that is about inserts in isolation, not about whether any shoe is better than no shoe.',
+        'If you work from home, you may be standing at your desk in socks or slippers. That is a lot of hours without any cushioning or arch support. The 2023 heel pain guideline grades [orthotics](/insoles-vs-exercises/) on their own B-against for [plantar fasciitis](/plantar-fasciitis/), meaning the evidence leans against using them as a standalone option, but that is about inserts in isolation, not about whether any shoe is better than no shoe.',
         'A reasonable approach: **wear a shoe with some cushioning and a supportive insole while you stand, even at home.** You do not need a special standing-desk shoe. If you alternate between standing and sitting, you can take the shoes off during sitting periods.',
         'The exercises on this page target the tissues directly. Shoes and mats help with comfort during standing, but they do not replace the stretching and strength work.',
       ],
@@ -230,7 +230,7 @@ export const STANDING_DESK_EN: Guide = {
     },
     {
       q: 'What exercises can you do at a standing desk?',
-      a: 'During standing: calf stretches against the desk edge (2 holds of 30 seconds each side) and standing heel raises (3 sets of 10). During sitting breaks: seated heel raises (3 sets of 15), toe spreads and the short foot exercise. These target the calf, plantar fascia and intrinsic foot muscles that carry the standing load. If any exercise takes your pain to 6 out of 10 or higher, stop for the day.',
+      a: 'During standing: calf stretches against the desk edge (2 holds of 30 seconds each side) and standing heel raises (3 sets of 10). During sitting breaks: seated heel raises (3 sets of 15), toe spreads and the [short foot exercise](/exercises/short-foot-exercise/). These target the calf, plantar fascia and intrinsic foot muscles that carry the standing load. If any exercise takes your pain to 6 out of 10 or higher, stop for the day.',
       cites: [CITE.guideline],
     },
     {
@@ -266,7 +266,7 @@ export const STANDING_DESK_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      'You do not have to work out the order, the doses or when to progress. Walkito builds a plan one week at a time around one goal. If your standing desk pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.',
+      'You do not have to work out the order, the doses or when to progress. [Walkito](/program/) builds a plan one week at a time around one goal. If your standing desk pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once your first goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the work is doing anything.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If pain is sharp, getting worse or keeping you up at night, see a clinician first.',

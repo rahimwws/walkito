@@ -42,7 +42,7 @@ export const ACHILLES_EN: Guide = {
     {
       h2: 'What is the eccentric heel drop, and why is it not a stretch?',
       paragraphs: [
-        'The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction: the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.',
+        'The [eccentric heel drop](/exercises/eccentric-heel-drops/) is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction: the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.',
         'The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. **The point is the slow, loaded descent.** Three seconds down, with the muscle working the whole way.',
         'The 1998 Alfredson trial had 15 athletes with long-standing mid-tendon Achilles pain do eccentric heel drops twice a day, 7 days a week, for three months, straight and bent knee. All 15 returned to their prior running level. A small trial with no control group, but it launched a whole line of research.',
       ],
@@ -68,7 +68,7 @@ export const ACHILLES_EN: Guide = {
       paragraphs: [
         'Yes, based on current evidence. A 2015 trial of 58 people compared heavy slow resistance (HSR), done 3 days a week, against the classic twice-daily eccentric protocol. The conclusion: "Both traditional ECC and HSR yield positive, equally good, lasting clinical results in patients with Achilles tendinopathy."',
         'A 2021 network meta-analysis of 29 trials found no clinically relevant difference between any active exercise approach at 3 or 12 months. All were better than doing nothing. No trial was at low risk of bias. The authors recommended starting with a calf-muscle exercise program because it is low-cost and has few harms.',
-        '**The protocol shape matters less than loading the tendon consistently.** Eccentric drops are the most studied, HSR is equally effective and requires fewer weekly sessions, and both are valid starting points. For the plantar fasciitis version of this same calf-strengthening logic, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
+        '**The protocol shape matters less than loading the tendon consistently.** Eccentric drops are the most studied, HSR is equally effective and requires fewer weekly sessions, and both are valid starting points. For the [plantar fasciitis](/plantar-fasciitis/) version of this same calf-strengthening logic, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -269,7 +269,7 @@ export const ACHILLES_EN: Guide = {
     {
       q: 'What is mistaken for Achilles tendonitis?',
       cites: [CITE.chooRearfoot],
-      a: "Retrocalcaneal bursitis, Haglund's deformity, and a partial Achilles tear can all cause similar pain at the back of the heel. A visible bony bump points toward Haglund's deformity, while swelling right at the back of the shoe line suggests bursitis. Any sudden sharp pain with a pop, or an inability to rise on the toes, needs urgent assessment for a tendon tear.",
+      a: "Retrocalcaneal bursitis, [Haglund's deformity](/haglunds-deformity/), and a partial Achilles tear can all cause similar pain at the back of the heel. A visible bony bump points toward Haglund's deformity, while swelling right at the back of the shoe line suggests bursitis. Any sudden sharp pain with a pop, or an inability to rise on the toes, needs urgent assessment for a tendon tear.",
     },
   ],
   redFlags: {
@@ -287,7 +287,7 @@ export const ACHILLES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You don\'t have to guess the order, the doses or when to add load. Walkito builds a plan one week at a time around one goal. The calf chain runs from seated raises through double-leg raises, a hold, towel raises, eccentric heel drops and pogo hops. Each step opens once two sessions at the current level felt easy.',
+    text: 'You don\'t have to guess the order, the doses or when to add load. [Walkito](/program/) builds a plan one week at a time around one goal. The calf chain runs from seated raises through double-leg raises, a hold, towel raises, eccentric heel drops and pogo hops. Each step opens once two sessions at the current level felt easy.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the calf goal is reached), a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If pain is right at the heel-bone attachment, have a clinician check it before you load it hard.',
     ],

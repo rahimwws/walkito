@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 
 import { AppCallout } from '@/components/AppCallout';
+import { appLine, midBoxAfter } from '@/lib/guides/app-lines';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
@@ -12,7 +13,7 @@ import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FaqRows, Prose, typeset } from '@/components/Prose';
-import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { guideCards, guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideBlock, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
@@ -190,12 +191,16 @@ export function Guide({ guide }: { guide: GuideData }) {
     updated: guide.updated,
     cites: cited,
     page: guide.page,
+    images: guideCards(guide),
   });
 
   // The other guides in the same language. Linked from the body of the page,
   // not only the footer: a link a reader can see in context is one a crawler
   // weighs as a real recommendation.
   const related = relatedGuides(guide);
+
+  // A second app box about halfway down a long guide (lib/guides/app-lines.ts).
+  const midAfter = midBoxAfter(guide);
 
   // The exercises on the page as one numbered list near the top, each linking
   // to its card: the summary a reader scans first, and the shape Google uses
@@ -302,7 +307,7 @@ export function Guide({ guide }: { guide: GuideData }) {
           </aside>
         )}
 
-        <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} />
+        <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} lead={appLine(guide)} />
 
         {guide.toc && (
           <nav className="toc" aria-label={c.contents}>
@@ -338,8 +343,9 @@ export function Guide({ guide }: { guide: GuideData }) {
           </>
         )}
 
-        {guide.sections.map((section) => (
-          <section key={section.h2} id={slug(section.h2)}>
+        {guide.sections.map((section, si) => (
+          <Fragment key={section.h2}>
+          <section id={slug(section.h2)}>
             <h2>{section.h2}</h2>
             {section.keyFact && (
               <p className="key-fact">
@@ -423,6 +429,10 @@ export function Guide({ guide }: { guide: GuideData }) {
               </PfTimeline>
             )}
           </section>
+          {si === midAfter && (
+            <AppCallout campaign={`${guide.campaign}-mid`} lang={guide.lang} lead={appLine(guide)} />
+          )}
+          </Fragment>
         ))}
 
         {/* As the home page's questions: one open at a time, the first open. */}

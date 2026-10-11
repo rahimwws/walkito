@@ -212,7 +212,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'What is Walkito?',
-        a: 'Walkito is an exercise app for heel and foot pain, on iPhone and Android. It builds a daily plan of 3, 5 or 10 minutes from your answers and adjusts it to how your feet feel each morning.',
+        a: 'Walkito is an exercise app for heel and foot pain, on iPhone and Android. It builds a daily plan of 3, 5 or 10 minutes from your answers and adjusts it to how your feet feel each morning. It is not related to walkito.com, a dog-walking service.',
       },
       {
         q: 'How long until I feel a difference?',
@@ -304,7 +304,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'Что такое Walkito?',
-        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план на 3, 5 или 10 минут в день и подстраивает его под то, как стопы чувствуют себя каждое утро.',
+        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план на 3, 5 или 10 минут в день и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
       },
       {
         q: 'Когда я почувствую разницу?',
@@ -393,7 +393,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito es una app de ejercicios para el dolor de talón y de pie, en iPhone y Android. Con tus respuestas arma un plan diario de 3, 5 o 10 minutos y lo ajusta a cómo se sienten tus pies cada mañana.',
+        a: 'Walkito es una app de ejercicios para el dolor de talón y de pie, en iPhone y Android. Con tus respuestas arma un plan diario de 3, 5 o 10 minutos y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros.',
       },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
@@ -539,7 +539,7 @@ export function Home({ lang }: { lang: Lang }) {
               />
               {/* Our own Dynamic Island, drawn over the one in the mockup. */}
               <span className="hero-island" aria-hidden>
-                <img src="/icon.png" alt="" width={64} height={64} />
+                <img src="/icon-128.webp" alt="" width={64} height={64} />
                 <span className="hero-island-name">Walkito</span>
                 <span className="hero-island-ring" />
               </span>

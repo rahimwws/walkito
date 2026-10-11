@@ -29,7 +29,7 @@ export const MASSAGE_BALL_EN: Guide = {
     'Does a massage ball help plantar fasciitis? What trials found for balls, rollers and a frozen bottle, how hard and how long to roll, and when to skip it.',
   h1: 'Massage ball, roller or frozen bottle for plantar fasciitis: what the research says',
   lede:
-    'A massage ball can ease plantar fasciitis pain for a while, but it is a comfort step, not the main tool. Hands-on soft tissue work by a clinician has a top guideline grade. Rolling a ball or frozen bottle yourself is barely tested. Roll gently and briefly, and keep stretching and strength work as the core.',
+    'A massage ball can ease [plantar fasciitis](/plantar-fasciitis/) pain for a while, but it is a comfort step, not the main tool. Hands-on soft tissue work by a clinician has a top guideline grade. Rolling a ball or frozen bottle yourself is barely tested. Roll gently and briefly, and keep stretching and strength work as the core.',
   intro: [
     'This page compares the tools and the evidence. For the single move, step by step, see the [foot roll exercise](/exercises/foot-roll/). For the full routine with doses, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
   ],
@@ -290,7 +290,7 @@ export const MASSAGE_BALL_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not have to decide when to roll and when to stretch. Walkito builds a plan one week at a time, with the foot roll as a short recovery step and the stretches and calf work as the core. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row.',
+    text: 'You do not have to decide when to roll and when to stretch. [Walkito](/program/) builds a plan one week at a time, with the foot roll as a short recovery step and the stretches and calf work as the core. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once a goal is reached), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

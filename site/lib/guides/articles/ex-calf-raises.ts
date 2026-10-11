@@ -115,7 +115,7 @@ export const EX_CALF_RAISES: Guide = {
       h2: 'How many calf raises should you do?',
       keyFact: 'A normative study of 566 healthy adults aged 20 to 81 found single-leg calf-raise counts varied by age, sex and activity level, with women reaching a median of 21 reps (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
-        'It depends on where you are in the ladder and what you are working on. For general calf strength, **3 sets of 10 to 15 reps at a slow tempo is a common starting dose.** For the research-tested plantar fasciitis protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.',
+        'It depends on where you are in the ladder and what you are working on. For general calf strength, **3 sets of 10 to 15 reps at a slow tempo is a common starting dose.** For the research-tested [plantar fasciitis](/plantar-fasciitis/) protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.',
         'A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.',
         'For more on the specific plantar fasciitis protocol, see [towel heel raises](/exercises/towel-heel-raise/). For the Achilles tendon version, see [eccentric heel drops](/exercises/eccentric-heel-drops/).',
       ],
@@ -176,7 +176,7 @@ export const EX_CALF_RAISES: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a plan that starts at your level and moves up when you are ready. The calf chain runs from seated raises to double-leg standing raises, a hold, the towel raise, eccentric heel drops and pogo hops. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
+    text: '[Walkito](/program/) builds a plan that starts at your level and moves up when you are ready. The calf chain runs from seated raises to double-leg standing raises, a hold, the towel raise, eccentric heel drops and pogo hops. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
     more: [
       'Every 14 days, a short test checks calf endurance and balance. The calf goal is 25 single-leg raises. Reaching it does not end the work; a new goal takes its place. Walkito is an exercise program. It does not diagnose.',
     ],

@@ -247,7 +247,7 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito is built for heel, foot and lower-leg pain in adults, not knee pain. If you have flat feet with arch or heel pain as well as a sore knee, it can take care of the foot side: short-foot work, balance and hip abduction, set out one week at a time. The knee exercises should come from a physical therapist.',
+    text: '[Walkito](/program/) is built for heel, foot and lower-leg pain in adults, not knee pain. If you have flat feet with arch or heel pain as well as a sore knee, it can take care of the foot side: short-foot work, balance and hip abduction, set out one week at a time. The knee exercises should come from a physical therapist.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days at first, a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose, it does not help knee pain directly, and it is not a substitute for a clinician. For back pain with flat feet, see [flat feet and back pain](/flat-feet-back-pain/).',
     ],

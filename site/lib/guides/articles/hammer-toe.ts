@@ -69,7 +69,7 @@ export const HAMMER_TOE_EN: Guide = {
       paragraphs: [
         'The honest answer is that **there are no randomized controlled trials testing exercises specifically for hammer toes.** The exercises commonly recommended, such as towel scrunches, toe spreads, and manual stretching, are based on the idea that strengthening intrinsic foot muscles and maintaining joint flexibility can help keep a flexible deformity from becoming rigid.',
         'That logic is reasonable. The deformity comes from a muscle imbalance: weak intrinsics and relatively stronger extrinsics. Exercises that target the intrinsics may restore some of that balance. But without direct trials, we do not know how much difference they make or whether they can actually prevent progression.',
-        'What we do know from studies on other forefoot conditions is that intrinsic foot exercises like short foot work, toe spreads, and towel scrunches activate the right muscles. An MRI study by Gooding and colleagues (2016) confirmed that the short foot exercise and toe-spread-out exercise selectively activate intrinsic foot muscles. Whether that activation translates into better outcomes for hammer toes specifically has not been tested.',
+        'What we do know from studies on other forefoot conditions is that intrinsic foot exercises like short foot work, toe spreads, and towel scrunches activate the right muscles. An MRI study by Gooding and colleagues (2016) confirmed that the [short foot exercise](/exercises/short-foot-exercise/) and toe-spread-out exercise selectively activate intrinsic foot muscles. Whether that activation translates into better outcomes for hammer toes specifically has not been tested.',
       ],
       cites: [CITE.gooding],
     },
@@ -221,7 +221,7 @@ export const HAMMER_TOE_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      'Walkito includes [towel scrunches](/exercises/towel-scrunch/), [toe spreads](/exercises/toe-spread/), and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and flat feet, not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do daily toe work, the 3-minute or 5-minute sessions keep the exercises consistent without needing to remember a separate routine.',
+      '[Walkito](/program/) includes [towel scrunches](/exercises/towel-scrunch/), [toe spreads](/exercises/toe-spread/), and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do daily toe work, the 3-minute or 5-minute sessions keep the exercises consistent without needing to remember a separate routine.',
     more: [
       'For related forefoot problems, see [ball of foot pain](/ball-of-foot-pain/) and [bunion exercises](/bunion-exercises/).',
     ],

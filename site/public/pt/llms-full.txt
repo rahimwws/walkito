@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site/pt/
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -1436,7 +1436,7 @@ Se você quer uma referência gratuita de quais alongamentos tentar, confira a p
 
 ### Walkito: o que ele faz e o que não faz
 
-O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele foi lançado na App Store em 2 de outubro de 2026 e no Google Play mais tarde, em outubro de 2026. É novo e ainda não tem notas.
+O Walkito é um programa de exercícios para dor no calcanhar, pé chato e dor na parte de baixo da perna. Ele está no iPhone e no Android: na App Store desde 2 de outubro de 2026 e no Google Play desde outubro de 2026. É novo e ainda não tem notas.
 
 O que ele faz:
 
@@ -1455,7 +1455,7 @@ O que ele não faz:
 
 Ele cobre dor no calcanhar, pé chato e dor na canela, e não as mais de 15 lesões que o Exakt cobre nem o corpo inteiro como o Hinge Health ou o Prehab.
 
-Por US$ 44,99 por ano ou US$ 7,99 por semana, o preço anual é menor que o da maioria dos concorrentes. O preço semanal é mais alto em relação ao anual, o que é o padrão em assinaturas.
+É uma assinatura semanal ou anual pela App Store ou pelo Google Play, e o preço atual aparece na loja antes de você assinar.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -3128,7 +3128,7 @@ Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios/
 O exercício de pé curto treina os músculos pequenos de dentro do pé para sustentar o arco sem dobrar os dedos. Você puxa a parte da frente do pé em direção ao calcanhar para o arco encurtar e subir. É o exercício que uma revisão narrativa de 2015 chamou de base do treino do “core do pé” (foot core), e ele aparece na maioria dos programas para pé chato e fascite plantar que trabalham os músculos intrínsecos do pé.
 
 - Um estudo de ressonância magnética de 2016 com 8 atletas mostrou que o pé curto produziu a maior ativação média (até 34,9%) em três dos quatro músculos plantares intrínsecos testados, em comparação com abrir os dedos, estender o dedão e estender do segundo ao quinto dedo (Gooding e colegas, 2016).
-- Uma pesquisa com eletromiografia mostrou que o abdutor do hálux, o músculo que sustenta a parte de dentro do arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha com os dedos (Jung e colegas, 2011).
+- Uma pesquisa com eletromiografia mostrou que o abdutor do hálux, o músculo que sustenta a parte de dentro do arco, ficou claramente mais ativo no pé curto do que ao puxar a toalha com os dedos (Jung e colegas, 2011).
 - Uma metanálise de 2024 sobre o treino de pé curto em pessoas com pé chato mostrou que programas com mais de seis semanas melhoraram a queda do navicular, mas programas mais curtos não chegaram a um resultado significativo (Cheng e colegas, 2024).
 - Adultos saudáveis que fizeram quatro semanas de exercícios de pé curto melhoraram o equilíbrio dinâmico mais do que um grupo que puxou a toalha com os dedos pelo mesmo período (Lynn e colegas, 2012).
 
@@ -3161,7 +3161,7 @@ Um estudo de ressonância magnética de 2016, de Gooding e colegas, mediu a ativ
 - Abdutor do hálux (29,7%).
 - Flexor curto dos dedos (24,8%).
 
-Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era mais de quatro vezes maior no pé curto do que ao puxar a toalha com os dedos.
+Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era claramente maior no pé curto do que ao puxar a toalha com os dedos, tanto sentado quanto em pé sobre uma perna.
 
 É por isso que **o pé curto é considerado um exercício melhor do que puxar a toalha para trabalhar especificamente os músculos intrínsecos.** Puxar a toalha recruta os flexores longos dos dedos, os músculos extrínsecos que vão da canela até os dedos. O exercício de pé curto deixa esses músculos extrínsecos mais quietos.
 
@@ -3233,7 +3233,7 @@ O exercício de pé curto não faz parte da principal diretriz para fascite plan
 
 #### O pé curto é melhor do que puxar a toalha com os dedos?
 
-Para trabalhar especificamente os músculos intrínsecos do pé, sim. A eletromiografia mostra que o abdutor do hálux fica mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha (Jung 2011). Um ensaio randomizado separado mostrou que o grupo do pé curto melhorou mais o equilíbrio do que o grupo da toalha depois de quatro semanas (Lynn 2012). Puxar a toalha ainda tem seu lugar como um exercício inicial mais simples.
+Para trabalhar especificamente os músculos intrínsecos do pé, sim. A eletromiografia mostra que o abdutor do hálux fica claramente mais ativo no pé curto do que ao puxar a toalha (Jung 2011). Um ensaio randomizado separado mostrou que o grupo do pé curto melhorou mais o equilíbrio do que o grupo da toalha depois de quatro semanas (Lynn 2012). Puxar a toalha ainda tem seu lugar como um exercício inicial mais simples.
 
 #### Quantas séries e repetições do pé curto devo fazer?
 
@@ -3770,7 +3770,7 @@ Puxar a toalha trabalha os músculos flexores dos dedos:
 
 Esses são músculos intrínsecos. Mas o exercício também recruta os flexores extrínsecos dos dedos: o flexor longo dos dedos e o flexor longo do hálux, que vão da canela, passam pelo tornozelo e chegam aos dedos.
 
-Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha. Puxar a toalha gerou mais atividade nos flexores extrínsecos dos dedos.
+Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou claramente mais ativo no pé curto do que ao puxar a toalha, tanto sentado quanto em pé sobre uma perna.
 
 Isso quer dizer que **puxar a toalha é um bom exercício para a força de preensão dos dedos**, mas é menos específico para os músculos intrínsecos do arco que o [exercício do pé curto](https://walkito.site/pt/exercicios/pe-curto/).
 
@@ -3780,7 +3780,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Cada exercício tem um ponto forte diferente. Puxar a toalha é mais fácil de aprender, porque a toalha dá aos dedos um alvo claro. Muita gente tem dificuldade para sentir a contração do pé curto no começo. Puxar a toalha desenvolve a força de preensão dos dedos, que importa para o equilíbrio e para o impulso ao andar.
 
-O exercício do pé curto é melhor para isolar os músculos intrínsecos do arco. Uma revisão de 2015 de McKeon e colegas observou que o abdutor do hálux foi ativado mais de quatro vezes mais no pé curto do que ao puxar a toalha, e recomendou o pé curto como o principal exercício de treino dos músculos intrínsecos do pé.
+O exercício do pé curto é melhor para isolar os músculos intrínsecos do arco. Uma revisão de 2015 de McKeon e colegas descreveu o pé curto como uma forma importante de treinar os músculos intrínsecos do pé.
 
 Na prática, programas que usam os dois aproveitam o melhor de cada um. O Walkito usa puxar a toalha como um exercício inicial, que apresenta a ideia de trabalhar os músculos do pé. O [exercício do pé curto](https://walkito.site/pt/exercicios/pe-curto/) vem depois e acrescenta um treino mais específico do arco. Um não substitui o outro.
 
@@ -8829,7 +8829,7 @@ Se você usa salto na maioria dos dias, não precisa abrir mão dele. Intercale 
 
 ### Fazendo isso como um plano
 
-O Walkito é um app para iPhone com sessões curtas de exercícios para dor no calcanhar, no pé e na parte de baixo da perna em adultos. Alongamentos de panturrilha com o joelho esticado e dobrado, o balanço do tornozelo e a elevação de calcanhar fazem parte dele. O Walkito começa com 2 vezes de 30 segundos para cada alongamento e 3 séries de 10 para a elevação de calcanhar, e aumenta a dose conforme você avança.
+O Walkito é um app para iPhone e Android com sessões curtas de exercícios para dor no calcanhar, no pé e na parte de baixo da perna em adultos. Alongamentos de panturrilha com o joelho esticado e dobrado, o balanço do tornozelo e a elevação de calcanhar fazem parte dele. O Walkito começa com 2 vezes de 30 segundos para cada alongamento e 3 séries de 10 para a elevação de calcanhar, e aumenta a dose conforme você avança.
 
 #### Por que a minha panturrilha está sempre tensa?
 
@@ -9212,7 +9212,7 @@ O Walkito e o Exakt Health oferecem planos de exercícios para fascite plantar, 
 - Os dois apps estão no iOS e no Android. O Walkito chegou ao Google Play em outubro de 2026.
 - O Exakt Health é certificado como dispositivo médico na União Europeia. O Walkito não é um dispositivo médico.
 - O Walkito ajusta cada sessão a partir de um check-in de dor pela manhã e testa a assimetria entre esquerda e direita a cada 14 dias. O Exakt adapta o plano a partir do retorno que você dá no fim da sessão.
-- O Exakt custa US$ 19,99/mês ou US$ 59,99 por seis meses. O Walkito custa US$ 44,99/ano ou US$ 7,99/semana.
+- O Exakt custa US$ 19,99/mês ou US$ 59,99 por seis meses. O Walkito é uma assinatura semanal ou anual, com o preço atual mostrado na loja.
 
 ### Comparação lado a lado
 
@@ -9275,17 +9275,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Quanto custam o Walkito e o Exakt Health?
 
-O Walkito custa US$ 44,99 por ano ou US$ 7,99 por semana. O preço anual dá cerca de US$ 0,87 por semana. Nenhum teste grátis aparece na App Store, embora os termos de uso permitam ofertas introdutórias.
+O Walkito é um download gratuito com assinatura semanal ou anual, cobrada pela App Store ou pelo Google Play. O preço atual para o seu país aparece na loja antes de você assinar.
 
 O Exakt custa US$ 19,99 por mês nos planos de reabilitação, com opções de 3 meses (US$ 39,99) e 6 meses (US$ 59,99). Os planos de treino de corrida vão até US$ 99,99 por ano. Toda assinatura começa com 7 dias grátis.
 
-Em um ano inteiro:
+Em um ano inteiro, a opção de reabilitação mais barata do Exakt (o plano de 6 meses comprado duas vezes) fica em cerca de US$ 120, e com um plano de corrida pode passar de US$ 200. Compare o preço do Walkito na loja com esses valores.
 
-- O plano anual do Walkito custa US$ 44,99.
-- A opção de reabilitação mais barata do Exakt (o plano de 6 meses renovado duas vezes) fica em cerca de US$ 120.
-- Se você incluir um plano de corrida, o Exakt pode passar de US$ 200 por ano.
-
-Se você precisa só de exercícios para dor no calcanhar ou no pé, **o Walkito é bem mais barato.** Se você precisa de reabilitação de lesão de corrida mais um plano de treino, o preço maior do Exakt cobre mais coisas.
+Se você precisa só de exercícios para dor no calcanhar ou no pé, o Walkito é a opção mais específica e focada. Se você precisa de reabilitação de lesão de corrida mais um plano de treino, os planos do Exakt cobrem mais coisas.
 
 ### Plataformas e idiomas
 
@@ -9341,7 +9337,6 @@ Escolha o Walkito se qualquer um destes pontos for verdade:
 - Você quer sessões de 3 a 10 minutos em vez de 15 a 30.
 - A adaptação diária à dor a partir de um check-in pela manhã importa mais para você do que uma progressão por níveis.
 - Você quer testes de progresso a cada 14 dias que comparem a esquerda com a direita.
-- O preço pesa: o Walkito, a US$ 44,99 por ano, custa menos da metade do menor custo anual do Exakt.
 - Você precisa do app em russo.
 - Você passa o dia todo em pé no trabalho, não corre, e quer um app feito para isso.
 
@@ -9363,9 +9358,9 @@ Se o Walkito parece combinar com a sua situação, é assim que ele funciona. Vo
 
 Depende do que você precisa. O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de volta à corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito é focado em dor no calcanhar e pé chato, com adaptação diária à dor e sessões mais curtas. Os dois estão no iOS e no Android. Para quem corre e tem vários tipos de lesão, o Exakt combina melhor. Para dor específica no calcanhar com ajuste diário, o Walkito foi feito para isso.
 
-#### O Walkito é mais barato que o Exakt Health?
+#### Como é o preço do Walkito em comparação com o Exakt Health?
 
-Sim, no plano anual. O Walkito custa US$ 44,99 por ano. A opção de reabilitação mais barata do Exakt Health é US$ 59,99 por seis meses, ou cerca de US$ 120 por ano. O Exakt oferece 7 dias grátis; o Walkito não mostra um teste grátis na App Store no momento.
+O Walkito é uma assinatura semanal ou anual, e o preço atual para o seu país aparece na App Store ou no Google Play antes de você assinar. A opção de reabilitação mais barata do Exakt Health é US$ 59,99 por seis meses, ou cerca de US$ 120 por ano, e começa com 7 dias grátis.
 
 #### O Exakt Health tem plano para fascite plantar?
 
@@ -9391,7 +9386,7 @@ O Walkito é um plano de exercícios personalizado para dor no calcanhar, no pé
 
 ### O que é o Walkito?
 
-O Walkito é um app para iPhone que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir.
+O Walkito é um app para iPhone e Android que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir.
 
 São cinco metas: manhãs sem dor (dor da manhã em 1/10 ou menos por 14 dias seguidos), sustentar o arco por 60 segundos, 25 elevações de panturrilha em uma perna só, 30 segundos de equilíbrio em uma perna, e uma diferença menor que 10% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.
 

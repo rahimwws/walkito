@@ -149,7 +149,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
     {
       q: 'Do eccentric heel drops help plantar fasciitis?',
       cites: [CITE.rathleff],
-      a: 'Eccentric drops were designed for the Achilles tendon, not the plantar fascia. For plantar fasciitis, the tested exercise is the [towel heel raise](/exercises/towel-heel-raise/), which adds a towel under the toes to engage the fascia. Heel drops appear later in the Walkito calf chain, after the towel raise.',
+      a: 'Eccentric drops were designed for the Achilles tendon, not the plantar fascia. For [plantar fasciitis](/plantar-fasciitis/), the tested exercise is the [towel heel raise](/exercises/towel-heel-raise/), which adds a towel under the toes to engage the fascia. Heel drops appear later in the Walkito calf chain, after the towel raise.',
     },
   ],
   redFlags: {
@@ -165,7 +165,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Eccentric heel drops are one step in a calf chain that Walkito builds into a weekly plan. The chain starts with seated raises and works up through double-leg raises, a hold, the towel raise, heel drops, and pogo hops. Each step opens once two sessions at the current level felt easy.',
+    text: 'Eccentric heel drops are one step in a calf chain that [Walkito](/program/) builds into a weekly plan. The chain starts with seated raises and works up through double-leg raises, a hold, the towel raise, heel drops, and pogo hops. Each step opens once two sessions at the current level felt easy.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance and balance. If pain is right at the heel-bone attachment, have a clinician check it before you load it hard. Walkito is an exercise program. It does not diagnose.',
     ],

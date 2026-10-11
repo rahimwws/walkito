@@ -21,7 +21,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
     'O exercício de pé curto treina os músculos pequenos de dentro do pé para sustentar o arco sem dobrar os dedos. Você puxa a parte da frente do pé em direção ao calcanhar para o arco encurtar e subir. É o exercício que uma revisão narrativa de 2015 chamou de base do treino do “core do pé” (foot core), e ele aparece na maioria dos programas para pé chato e fascite plantar que trabalham os músculos intrínsecos do pé.',
   takeaways: [
     'Um estudo de ressonância magnética de 2016 com 8\u00A0atletas mostrou que o pé curto produziu a maior ativação média (até 34,9%) em três dos quatro músculos plantares intrínsecos testados, em comparação com abrir os dedos, estender o dedão e estender do segundo ao quinto dedo (Gooding e colegas, 2016).',
-    'Uma pesquisa com eletromiografia mostrou que o abdutor do hálux, o músculo que sustenta a parte de dentro do arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha com os dedos (Jung e colegas, 2011).',
+    'Uma pesquisa com eletromiografia mostrou que o abdutor do hálux, o músculo que sustenta a parte de dentro do arco, ficou claramente mais ativo no pé curto do que ao puxar a toalha com os dedos (Jung e colegas, 2011).',
     'Uma metanálise de 2024 sobre o treino de pé curto em pessoas com pé chato mostrou que programas com mais de seis semanas melhoraram a queda do navicular, mas programas mais curtos não chegaram a um resultado significativo (Cheng e colegas, 2024).',
     'Adultos saudáveis que fizeram quatro semanas de exercícios de pé curto melhoraram o equilíbrio dinâmico mais do que um grupo que puxou a toalha com os dedos pelo mesmo período (Lynn e colegas, 2012).',
   ],
@@ -69,7 +69,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
             'Flexor curto dos dedos (24,8%).',
           ],
         },
-        'Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era mais de quatro vezes maior no pé curto do que ao puxar a toalha com os dedos.',
+        'Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era claramente maior no pé curto do que ao puxar a toalha com os dedos, tanto sentado quanto em pé sobre uma perna.',
         'É por isso que **o pé curto é considerado um exercício melhor do que puxar a toalha para trabalhar especificamente os músculos intrínsecos.** Puxar a toalha recruta os flexores longos dos dedos, os músculos extrínsecos que vão da canela até os dedos. O exercício de pé curto deixa esses músculos extrínsecos mais quietos.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -160,7 +160,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
     {
       q: 'O pé curto é melhor do que puxar a toalha com os dedos?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'Para trabalhar especificamente os músculos intrínsecos do pé, sim. A eletromiografia mostra que o abdutor do hálux fica mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha (Jung 2011). Um ensaio randomizado separado mostrou que o grupo do pé curto melhorou mais o equilíbrio do que o grupo da toalha depois de quatro semanas (Lynn 2012). Puxar a toalha ainda tem seu lugar como um exercício inicial mais simples.',
+      a: 'Para trabalhar especificamente os músculos intrínsecos do pé, sim. A eletromiografia mostra que o abdutor do hálux fica claramente mais ativo no pé curto do que ao puxar a toalha (Jung 2011). Um ensaio randomizado separado mostrou que o grupo do pé curto melhorou mais o equilíbrio do que o grupo da toalha depois de quatro semanas (Lynn 2012). Puxar a toalha ainda tem seu lugar como um exercício inicial mais simples.',
     },
     {
       q: 'Quantas séries e repetições do pé curto devo fazer?',

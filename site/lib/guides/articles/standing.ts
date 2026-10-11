@@ -37,15 +37,15 @@ export const STANDING_EN: Guide = {
   lang: 'en',
   page: 'standing',
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: 'Why Do My Feet Hurt After Standing All Day?',
   description:
     'Why feet hurt from standing all day, what helps (calf stretches, strength work, compression socks), and when standing-related foot pain needs a clinician.',
   h1: 'Why do my feet hurt after standing all day?',
   lede:
-    'Your feet hurt by the end of a long shift. The arch aches, the heel is sore, and your legs feel heavy. Standing on a hard floor for hours loads the same tissues over and over, without the pumping action that walking gives your calves and veins. Stretching the calf and plantar fascia, and building some calf strength, targets the tissues that take the most strain.',
+    'Feet hurt after standing all day because hours on a hard floor load the same tissues over and over, without the pumping action that walking gives your calves and veins. Stretching the calf and plantar fascia, and building some calf strength, targets the tissues that take the most strain. Your feet hurt by the end of a long shift. The arch aches, the heel is sore, and your legs feel heavy.',
   intro: [
-    'Not all foot pain from standing is plantar fasciitis, but the two overlap. A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that standing for most of the working day raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility was an even stronger risk factor, at 23.3 times the odds. The exercises that help both are largely the same: calf and plantar fascia stretches, plus strength work for the calf.',
+    'Not all foot pain from standing is [plantar fasciitis](/plantar-fasciitis/), but the two overlap. A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that standing for most of the working day raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility was an even stronger risk factor, at 23.3 times the odds. The exercises that help both are largely the same: calf and plantar fascia stretches, plus strength work for the calf.',
   ],
   toc: true,
   takeaways: [
@@ -61,7 +61,7 @@ export const STANDING_EN: Guide = {
       paragraphs: [
         'Feet hurt from standing because **standing still loads the plantar fascia, calf muscles and heel without giving them a break.** Walking pumps blood back up from the legs with each step. Standing takes that pump away, so blood pools in the lower legs and the tissues under the foot carry the same static load for hours.',
         'A 2015 review of the occupational health research found prolonged standing associated with low back pain, leg pain, discomfort and fatigue across many standing occupations. The review also noted that cardiovascular strain and leg swelling increase with standing duration. The authors called for clearer definitions of "prolonged standing" in future studies, since the threshold between safe and harmful standing time varies across people and jobs.',
-        'On the calf and fascia specifically, a 2003 case-control study found two risk factors that stood out above the rest. Reduced ankle flexibility, meaning a tight calf, was the single strongest predictor of plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. The two are connected: a tight calf keeps the heel under more tension during every minute of standing.',
+        'On the calf and fascia specifically, a 2003 case-control study found two risk factors that stood out above the rest. Reduced ankle flexibility, meaning a [tight calf](/tight-calves/), was the single strongest predictor of plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. The two are connected: a tight calf keeps the heel under more tension during every minute of standing.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -196,7 +196,7 @@ export const STANDING_EN: Guide = {
     {
       h2: 'Do insoles or supportive shoes help feet that hurt from standing?',
       paragraphs: [
-        'Supportive shoes and shoe inserts are commonly recommended for foot pain from standing, and there is some basis for it, but the evidence is thinner than for stretching and strength work. The 2023 heel pain guideline grades orthotics on their own **B against** for short-term pain relief, meaning the evidence leans toward not using them as a standalone option. Orthotics combined with other care get a **C**.',
+        'Supportive shoes and [shoe inserts](/insoles-vs-exercises/) are commonly recommended for foot pain from standing, and there is some basis for it, but the evidence is thinner than for stretching and strength work. The 2023 heel pain guideline grades orthotics on their own **B against** for short-term pain relief, meaning the evidence leans toward not using them as a standalone option. Orthotics combined with other care get a **C**.',
         'What the occupational health review supports is broader: floor mats, supportive footwear and sit-stand options all appear in the list of interventions with some evidence for reducing discomfort during standing work. None of them has a single large trial behind it in the same way calf stretching does. A reasonable approach is to use supportive shoes and a mat if your floor is hard, and do the stretching and strength work for the tissues themselves.',
       ],
       cites: [CITE.guideline, CITE.waters],

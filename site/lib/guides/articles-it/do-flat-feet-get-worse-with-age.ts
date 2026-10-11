@@ -61,7 +61,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
         },
         'Il muscolo principale è il tibiale posteriore, un muscolo profondo del polpaccio il cui tendine passa dietro il malleolo interno e tira su l’arco a ogni passo. Aiutano anche i piccoli muscoli dentro il piede.',
         'Diversi di questi elementi cambiano con l’età. Nel confronto del 2007, il gruppo più anziano aveva anche muscoli delle dita più deboli e caviglie più rigide, anche se lo studio non ha verificato se fossero questi a rendere i piedi più piatti.',
-        'Conta anche il peso. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con una probabilità circa 2,6\u00A0volte più alta. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.',
+        'Conta anche il peso. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con odds circa 2,6\u00A0volte più alte. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },

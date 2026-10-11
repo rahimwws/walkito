@@ -21,7 +21,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
     'L’esercizio del piede corto allena i piccoli muscoli dentro il piede a tenere alto l’arco senza arricciare le dita. Tiri l’avampiede verso il tallone così il piede si accorcia e l’arco si alza. Una revisione narrativa del 2015 lo ha chiamato la base dell’allenamento del «foot core», il «core» del piede, e compare nella maggior parte dei programmi per piede piatto e fascite plantare che lavorano sui muscoli intrinseci del piede.',
   takeaways: [
     'Uno studio del 2016 con risonanza magnetica su 8\u00A0atleti ha visto che il piede corto dava l’attivazione media più alta (fino al 34,9%) in tre dei quattro muscoli plantari intrinseci studiati, rispetto all’apertura delle dita, all’estensione dell’alluce e all’estensione delle dita dalla seconda alla quinta (Gooding e colleghi, 2016).',
-    'Uno studio elettromiografico ha trovato che l’abduttore dell’alluce, il muscolo che sostiene l’interno dell’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung e colleghi, 2011).',
+    'Uno studio elettromiografico ha trovato che l’abduttore dell’alluce, il muscolo che sostiene l’interno dell’arco, era nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung e colleghi, 2011).',
     'Una meta-analisi del 2024 sull’allenamento del piede corto nel piede piatto ha trovato che i programmi più lunghi di sei settimane miglioravano il navicular drop, mentre quelli più brevi non arrivavano alla significatività (Cheng e colleghi, 2024).',
     'Adulti sani che hanno fatto quattro settimane di piede corto hanno migliorato l’equilibrio dinamico più di un gruppo che ha fatto la raccolta dell’asciugamano per lo stesso periodo (Lynn e colleghi, 2012).',
   ],
@@ -69,7 +69,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
             'Flessore breve delle dita (24,8%).',
           ],
         },
-        'Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era più di quattro volte maggiore durante il piede corto che durante la raccolta dell’asciugamano.',
+        'Uno studio elettromiografico precedente di Jung e colleghi (2011) ha trovato che l’attività dell’abduttore dell’alluce era nettamente maggiore durante il piede corto che durante la raccolta dell’asciugamano, sia da seduti sia in piedi su una gamba.',
         'Per questo **il piede corto è considerato un esercizio migliore della raccolta dell’asciugamano per lavorare in modo specifico sui muscoli intrinseci.** La raccolta dell’asciugamano recluta i flessori lunghi delle dita, i muscoli estrinseci che vanno dallo stinco alle dita. Il piede corto tiene più tranquilli quei muscoli estrinseci.',
       ],
       cites: [CITE.gooding, CITE.jung],
@@ -160,7 +160,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
     {
       q: 'Il piede corto è meglio della raccolta dell’asciugamano?',
       cites: [CITE.jung, CITE.lynn],
-      a: 'Per lavorare in modo specifico sui muscoli intrinseci del piede, sì. Gli studi elettromiografici mostrano che l’abduttore dell’alluce è più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung 2011). Uno studio randomizzato a parte ha trovato che il gruppo del piede corto migliorava l’equilibrio più del gruppo della raccolta dell’asciugamano dopo quattro settimane (Lynn 2012). La raccolta dell’asciugamano resta utile come esercizio di partenza più semplice.',
+      a: 'Per lavorare in modo specifico sui muscoli intrinseci del piede, sì. Gli studi elettromiografici mostrano che l’abduttore dell’alluce è nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung 2011). Uno studio randomizzato a parte ha trovato che il gruppo del piede corto migliorava l’equilibrio più del gruppo della raccolta dell’asciugamano dopo quattro settimane (Lynn 2012). La raccolta dell’asciugamano resta utile come esercizio di partenza più semplice.',
     },
     {
       q: 'Quante serie e ripetizioni di piede corto fare?',

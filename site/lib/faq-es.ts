@@ -30,7 +30,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Cuántas notificaciones voy a recibir?',
-        a: 'Walkito envía como máximo una notificación al día, y nada después de las 21:30. La mayoría de las semanas, cinco es el límite. Solo cuatro tipos pueden pasarlo: un brote después de un día con dolor, un día muy largo de pie, un cambio en tu forma de caminar y un día de prueba. Puedes apagar las notificaciones en Ajustes de iOS, y el plan funciona igual.',
+        a: 'Walkito envía como máximo una notificación al día, y nada después de las 21:30. La mayoría de las semanas, cinco es el límite. Solo cuatro tipos pueden pasarlo: un brote después de un día con dolor, un día muy largo de pie, un cambio en tu forma de caminar y un día de prueba. Puedes apagar las notificaciones en los ajustes de tu teléfono, en iPhone o Android, y el plan funciona igual.',
       },
       {
         q: '¿Walkito me va a molestar si dejo de usarlo?',
@@ -102,7 +102,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Cuánto tardan los ejercicios para el arco en funcionar?',
-        a: 'Los ejercicios para el arco necesitan seis semanas o más, según los ensayos. En un ensayo con pie plano flexible, seis semanas de pie corto (llevar la parte delantera del pie hacia el talón para que el arco suba), trabajo de cadera y estiramientos cambiaron el arco más que el grupo de control. Una revisión de 2024 sobre el pie corto solo no encontró una diferencia significativa en general. Una medida del arco mejoró solo en programas de más de seis semanas.',
+        a: 'Los ejercicios para el arco necesitan seis semanas o más, según los ensayos. En un ensayo con pie plano flexible, seis semanas de pie corto (llevar la parte delantera del pie hacia el talón para que el arco suba), trabajo de cadera y estiramientos cambiaron el arco más que el grupo de control.\n\nUna revisión de 2024 sobre el pie corto solo no encontró una diferencia significativa en general. Una medida del arco mejoró solo en programas de más de seis semanas.',
         source:
           'Resultados de la revisión: caída del navicular y Foot Posture Index, ninguno significativamente diferente del control en general. La caída del navicular mejoró de forma significativa solo en el subgrupo de programas de más de seis semanas.',
         cites: [CITE.brijwasi, CITE.cheng],
@@ -127,7 +127,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Debo descansar por completo cuando me duele el talón?',
-        a: 'La respuesta de Walkito es cambiar la carga sobre tu talón, no dejarlo todo. La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el día a día, en el trabajo y en el deporte. Ese consejo tiene grado E, lo que significa que se basa en teoría, no en ensayos. En un mal día, mantén los estiramientos y quita el trabajo con carga. En Walkito, una mañana de 7/10 o más se convierte en tres minutos de trabajo sentado.',
+        a: 'La respuesta de Walkito es cambiar la carga sobre tu talón, no dejarlo todo. La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el día a día, en el trabajo y en el deporte. Ese consejo tiene grado E, lo que significa que se basa en teoría, no en ensayos.\n\nEn un mal día, mantén los estiramientos y quita el trabajo con carga. En Walkito, una mañana de 7/10 o más se convierte en tres minutos de trabajo sentado.',
         cites: [CITE.guideline],
       },
       {
@@ -141,7 +141,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Caminar de forma desigual significa que estoy lesionado?',
-        a: 'Walkito nunca lee un cambio en la forma de caminar como señal de lesión. La asimetría al caminar es el porcentaje de tiempo en que tus pasos con un pie son más rápidos o más lentos que con el otro. Walkito la compara, según la estimación del iPhone, solo con tus propias lecturas anteriores, nunca con las de otras personas. Walkito puede decirte que tu forma de caminar cambió. Nunca te dirá qué significa eso ni que estás lesionado. Si algo se siente mal, consulta a un profesional de la salud.',
+        a: 'Walkito nunca lee un cambio en la forma de caminar como señal de lesión. La asimetría al caminar es el porcentaje de tiempo en que tus pasos con un pie son más rápidos o más lentos que con el otro. Walkito la compara, según la estimación del iPhone, solo con tus propias lecturas anteriores, nunca con las de otras personas.\n\nWalkito puede decirte que tu forma de caminar cambió. Nunca te dirá qué significa eso ni que estás lesionado. Si algo se siente mal, consulta a un profesional de la salud.',
       },
     ],
   },
@@ -155,7 +155,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Qué permisos de Apple Health pide Walkito?',
-        a: 'Walkito pide leer conteo de pasos, velocidad al caminar, asimetría al caminar, pisos subidos, frecuencia cardíaca, frecuencia cardíaca en reposo, energía activa, sueño y entrenamientos. Pide escribir entrenamientos y minutos de atención plena. Cada permiso es opcional, y puedes quitarlo en Ajustes de iOS. El plan sigue funcionando sin ellos. Solo se adapta menos a tu día.',
+        a: 'En iPhone, Walkito pide a Apple Health leer conteo de pasos, velocidad al caminar, asimetría al caminar, pisos subidos, frecuencia cardíaca, frecuencia cardíaca en reposo, energía activa, sueño y entrenamientos, y escribir entrenamientos y minutos de atención plena. En Android, lee pasos, distancia y sueño de Health Connect. Cada permiso es opcional, y puedes quitarlo en los ajustes de tu teléfono. El plan sigue funcionando sin ellos. Solo se adapta menos a tu día.',
       },
       {
         q: '¿Walkito funciona sin conexión?',
@@ -163,7 +163,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Qué pasa con mi plan si cambio de teléfono?',
-        a: 'Tu plan vuelve cuando inicias sesión con la misma cuenta de Walkito en el teléfono nuevo, porque tu plan y lo que registras se guardan en esa cuenta. Para recuperar una compra en iPhone, inicia sesión con el mismo Apple ID y toca Restaurar compras en Walkito. En Android, usa la misma cuenta de Google en Google Play y la suscripción vuelve. Una suscripción comprada en iPhone no pasa a Android, ni al revés, porque Apple y Google cobran por separado. Las lecturas de Apple Health no son parte de esa copia, porque se quedan en el teléfono.',
+        a: 'Tu plan vuelve cuando inicias sesión con la misma cuenta de Walkito en el teléfono nuevo, porque tu plan y lo que registras se guardan en esa cuenta. Para recuperar una compra en iPhone, inicia sesión con el mismo Apple ID y toca Restaurar compras en Walkito. En Android, usa la misma cuenta de Google en Google Play y la suscripción vuelve.\n\nUna suscripción comprada en iPhone no pasa a Android, ni al revés, porque Apple y Google cobran por separado. Las lecturas de Apple Health no son parte de esa copia, porque se quedan en el teléfono.',
       },
       {
         q: '¿Cómo borro mi cuenta y mis datos de Walkito?',
@@ -181,7 +181,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Cómo cancelo mi suscripción de Walkito?',
-        a: 'Cancela una suscripción de Walkito en tu iPhone en Ajustes → tu nombre → Suscripciones, al menos 24\u00A0horas antes de que termine el período. Cancelar detiene la próxima renovación, y conservas el acceso hasta el final del período que pagaste. En Android, abre la app de Google Play, toca tu icono de perfil y luego Pagos y suscripciones → Suscripciones → Walkito → Cancelar suscripción; también conservas el acceso hasta el final del período pagado. Borrar la app o tu cuenta no la cancela. Los reembolsos los maneja la tienda: Apple en iPhone, Google Play en Android.',
+        a: 'Cancela una suscripción de Walkito en tu iPhone en Ajustes → tu nombre → Suscripciones, al menos 24\u00A0horas antes de que termine el período. Cancelar detiene la próxima renovación, y conservas el acceso hasta el final del período que pagaste.\n\nEn Android, abre la app de Google Play, toca tu icono de perfil y luego Pagos y suscripciones → Suscripciones → Walkito → Cancelar suscripción; también conservas el acceso hasta el final del período pagado.\n\nBorrar la app o tu cuenta no la cancela. Los reembolsos los maneja la tienda: Apple en iPhone, Google Play en Android.',
       },
     ],
   },

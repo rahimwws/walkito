@@ -6,13 +6,13 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
   page: 'morningHeelPain',
   mainSource: CITE.guideline,
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: 'Heel Pain in the Morning: Why It Happens and What to Do',
   description:
     'Why your heel hurts when you wake up, other causes of first-step pain beyond plantar fasciitis, and what to do before you stand up each morning.',
   h1: 'Heel pain in the morning: why it happens and what to do before your first step',
   lede:
-    'Your first steps out of bed are the worst part of the day. That sharp pull at the heel, before you have even stood up straight, is the pattern most people describe when they look up heel pain. The most common cause is plantar fasciitis, but it is not the only one, and the morning is the most useful moment to do something about it.',
+    'Heel pain on the first steps in the morning is the classic sign of [plantar fasciitis](/plantar-fasciitis/), and the 2023 heel pain guideline gives its top grade, A, to stretching the plantar fascia before you stand up. Your first steps out of bed are the worst part of the day. That sharp pull at the heel, before you have even stood up straight, is the pattern most people describe when they look up heel pain. The most common cause is plantar fasciitis, but it is not the only one, and the morning is the most useful moment to do something about it.',
   intro: [
     'The [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page covers the full exercise list, the evidence behind each one, and the guideline grades. This page goes deeper on the morning itself: why that first step hurts, what other conditions share the same pattern, what to do before your foot hits the floor, and how tracking your morning pain tells you whether things are getting better.',
   ],
@@ -58,7 +58,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
         'The most useful thing you can do for morning heel pain happens before your foot touches the floor. The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, **A**, and the morning is the single most repeated context in which it recommends stretching.',
         'Sit on the edge of the bed. Cross one ankle over the opposite knee and pull the toes back gently with one hand until you feel a stretch along the arch. Hold for about 10 seconds, then release. Do that 10 times on each foot. This loads the fascia slowly, in a controlled way, before you ask it to take your full weight.',
         'Follow with a calf stretch. Stand near the bed or a wall, one foot behind the other, back heel on the floor, and lean forward until you feel the stretch in the upper calf. Hold for 30 seconds each side.',
-        'Tight calves pull on the heel through the Achilles tendon, and reduced ankle flexibility is one of the strongest independent risk factors for plantar fasciitis: in a matched case-control study of 50 cases and 100 controls, it had the highest odds ratio of any measured factor (Riddle and colleagues, 2003).',
+        '[Tight calves](/tight-calves/) pull on the heel through the Achilles tendon, and reduced ankle flexibility is one of the strongest independent risk factors for plantar fasciitis: in a matched case-control study of 50 cases and 100 controls, it had the highest odds ratio of any measured factor (Riddle and colleagues, 2003).',
         'Then put on supportive shoes or firm-soled slippers before walking to the kitchen. Barefoot on a hard floor is the worst combination for a stiff fascia. These morning stretches are the starting point. The longer-term plan adds strength work: [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) are the exercise with the most direct trial evidence behind them.',
       ],
       exercises: [
@@ -105,7 +105,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       h2: 'Do night splints help morning heel pain?',
       keyFact: 'The 2023 guideline gives night splints, worn one to three months, its top grade, A, for people whose first-step morning pain keeps returning despite stretching (Koc and colleagues, 2023).',
       paragraphs: [
-        'Night splints hold the foot at a right angle while you sleep, so the plantar fascia and calf stay gently lengthened instead of shortening overnight. The idea is simple: if morning pain comes from the fascia stiffening at rest, keeping it stretched should take some of that first-step shock away.',
+        '[Night splints](/night-splints-plantar-fasciitis/) hold the foot at a right angle while you sleep, so the plantar fascia and calf stay gently lengthened instead of shortening overnight. The idea is simple: if morning pain comes from the fascia stiffening at rest, keeping it stretched should take some of that first-step shock away.',
         'The 2023 heel pain guideline gives night splints a grade of **A** for people whose first steps in the morning keep hurting despite stretching and other conservative care. The recommended duration is 1 to 3 months. Most night splints are a rigid or semi-rigid boot that props the foot up.',
         'Some people find them uncomfortable to sleep in, and the guideline does not suggest them as a first step for everyone. They are for the group that has already been stretching and still wakes up in pain.',
         'Night splints are something to talk over with a clinician. They are not an exercise, and no app can provide them. But they are worth knowing about because they have one of the strongest evidence grades in the guideline, specifically for the problem this page is about: first-step pain that will not settle.',
@@ -153,7 +153,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
     {
       q: 'Is morning heel pain always plantar fasciitis?',
       cites: [CITE.fatPadReview, CITE.achillesGuideline],
-      a: 'Not always. Achilles tendonitis (pain at the back of the heel), heel fat pad thinning (deep central ache, worse barefoot on hard surfaces), calcaneal stress fracture (builds with activity, may hurt at rest), and inflammatory arthritis (both heels, prolonged stiffness, other joints involved) can all cause morning pain. Location and behavior help tell them apart, but a clinician makes the call.',
+      a: 'Not always. Achilles tendonitis (pain at the back of the heel), [heel fat pad](/heel-fat-pad-syndrome/) thinning (deep central ache, worse barefoot on hard surfaces), calcaneal stress fracture (builds with activity, may hurt at rest), and inflammatory arthritis (both heels, prolonged stiffness, other joints involved) can all cause morning pain. Location and behavior help tell them apart, but a clinician makes the call.',
     },
     {
       q: 'Do night splints work for morning heel pain?',
@@ -201,7 +201,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not have to remember the stretches, the doses or when to move to something harder. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain before your first step, and the day\'s session adjusts to that score.',
+    text: 'You do not have to remember the stretches, the doses or when to move to something harder. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain before your first step, and the day\'s session adjusts to that score.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the morning goal is met), a short test checks calf endurance, arch hold and balance, so you can see what is changing.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If morning pain is sharp, getting worse, or in both heels with other joints involved, see a clinician first.',

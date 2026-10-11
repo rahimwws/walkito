@@ -11,15 +11,15 @@ export const NURSES_EN: Guide = {
   page: 'nurses',
   mainSource: CITE.reedNurse,
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: 'Foot Pain for Nurses: 12-Hour Shifts, Shoes & Exercises',
   description:
     'Why nurses get foot pain on 12-hour shifts: shoes, compression stockings, exercises, and how to fit a routine around rotating shifts.',
   h1: 'Foot pain for nurses: what helps on 12-hour shifts',
   lede:
-    'Nurses walk more in a single shift than most people walk in a day, and they do it on hard floors in shoes that may not fit well. Foot and ankle problems are one of the most common musculoskeletal complaints in nursing, reported by more than half of hospital nurses over a 12-month period in one survey. Most of the things that help, calf stretches, arch exercises, compression stockings, can be done in a few minutes before or after a shift.',
+    'The things that help nurses’ feet, calf stretches, arch exercises and compression stockings, take a few minutes before or after a shift. Nurses walk more in a single shift than most people walk in a day, and they do it on hard floors in shoes that may not fit well. Foot and ankle problems are one of the most common musculoskeletal complaints in nursing, reported by more than half of hospital nurses over a 12-month period in one survey.',
   intro: [
-    'This page covers foot pain that comes from the demands of nursing work: prolonged standing, long walking distances and rotating shifts. If your pain is sharp and worst on the first steps after rest, that pattern points toward plantar fasciitis, and the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide.',
+    'This page covers foot pain that comes from the demands of nursing work: prolonged standing, long walking distances and rotating shifts. If your pain is sharp and worst on the first steps after rest, that pattern points toward [plantar fasciitis](/plantar-fasciitis/), and the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide.',
     'If you are not sure, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the overlap between general standing pain and named conditions.',
   ],
   toc: true,
@@ -46,7 +46,7 @@ export const NURSES_EN: Guide = {
       paragraphs: [
         'Three things combine on a nursing shift: prolonged standing, long walking distances and hard floors. Standing still loads the plantar fascia, calf muscles and heel pad without the pumping action that walking provides. Walking helps blood return from the legs, but nurses alternate unpredictably between standing still at a bedside and walking long corridors, so the calf pump never settles into a steady rhythm.',
         'A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain across many standing occupations, with nurses cited as one of the highest-risk groups. The review noted that cardiovascular strain and leg swelling increase with standing duration.',
-        'On the tissue level, a tight calf is a key piece. A case-control study of 50 people with plantar fasciitis and 100 matched controls found that reduced ankle flexibility, meaning the ankle cannot bend upward as far as it should because the calf is tight, was the single strongest independent risk factor for plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. **Nurses face both risk factors at once.**',
+        'On the tissue level, a [tight calf](/tight-calves/) is a key piece. A case-control study of 50 people with plantar fasciitis and 100 matched controls found that reduced ankle flexibility, meaning the ankle cannot bend upward as far as it should because the calf is tight, was the single strongest independent risk factor for plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. **Nurses face both risk factors at once.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -54,7 +54,7 @@ export const NURSES_EN: Guide = {
       h2: 'What exercises help nurses with foot pain?',
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
-        'The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a plantar fascia stretch, heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. **A few minutes before or after a shift is enough to cover the most important ones.**',
+        'The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a [plantar fascia stretch](/exercises/plantar-fascia-stretch/), heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. **A few minutes before or after a shift is enough to cover the most important ones.**',
         'The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both grades are for plantar fasciitis specifically, but the tissues involved are the same ones that take the load during a nursing shift. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.',
       ],
       exercises: [
@@ -157,7 +157,7 @@ export const NURSES_EN: Guide = {
       h2: 'Do nursing shoes make a difference: clogs, sneakers or something else?',
       paragraphs: [
         'Footwear is one of the most discussed topics among nurses, but the evidence for one type over another is limited. A 2007 evaluation of three brands of professional nursing shoes found that the shoe with a more cushioned insole and better arch support reduced lower-extremity muscle effort compared to the other two, but the study was small and brand-specific.',
-        'What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades orthotics on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.',
+        'What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades [orthotics](/insoles-vs-exercises/) on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.',
         'A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. **Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.**',
       ],
       cites: [CITE.guideline],
@@ -193,7 +193,7 @@ export const NURSES_EN: Guide = {
       h2: 'Could foot pain from a nursing shift be plantar fasciitis or something else?',
       paragraphs: [
         'General ache and tiredness from a long shift is common and usually goes away with rest. Plantar fasciitis is a specific condition: sharp pain near the heel, worst on the first steps after rest (getting out of bed, standing after a long sit). If your pain follows that pattern, the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) are the fuller guide, and the calf raise detail is in [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
-        'If your arches feel flat or rolled in by the end of a shift, the arch exercises in [flat feet exercises for fallen arches](/flat-feet-exercises/) target the muscles that hold the arch up. Pain along the shin could be shin splints. Pain in the Achilles tendon at the back of the heel is a different problem.',
+        'If your arches feel flat or rolled in by the end of a shift, the arch exercises in [flat feet exercises for fallen arches](/flat-feet-exercises/) target the muscles that hold the arch up. Pain along the shin could be [shin splints](/shin-splints-exercises/). Pain in the Achilles tendon at the back of the heel is a different problem.',
         'If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. For the standing-desk version of this problem, see [standing desk foot pain](/standing-desk-foot-pain/). **If you are not sure what is causing the pain, see a clinician before loading it with exercise.**',
       ],
     },
@@ -252,7 +252,7 @@ export const NURSES_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      'You do not have to work out the order, the doses or when to move to a harder version. Walkito builds a plan one week at a time around one goal. If your foot pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.',
+      'You do not have to work out the order, the doses or when to move to a harder version. [Walkito](/program/) builds a plan one week at a time around one goal. If your foot pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once your first goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the work is doing anything. On rotating shifts, the time of day does not matter. What matters is hitting the sessions consistently.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If pain is sharp, getting worse or keeping you up at night, see a clinician first.',

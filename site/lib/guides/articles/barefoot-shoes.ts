@@ -31,7 +31,7 @@ export const BAREFOOT_EN: Guide = {
     'Are barefoot shoes good for your feet? What trials show on foot strength, transition injuries, plantar fasciitis, flat feet and who should avoid them.',
   h1: 'Are barefoot shoes good for your feet? Strength, risks and foot pain',
   lede:
-    'Barefoot shoes, also called minimalist shoes, can make your foot muscles stronger. In trials, adults who walked in them gained foot strength over a few months. But switching too fast raises the risk of bone stress and pain, no trial shows they ease plantar fasciitis on their own, and people with diabetes or numb feet need protective shoes.',
+    'Barefoot shoes, also called minimalist shoes, can make your foot muscles stronger. In trials, adults who walked in them gained foot strength over a few months. But switching too fast raises the risk of bone stress and pain, no trial shows they ease [plantar fasciitis](/plantar-fasciitis/) on their own, and people with diabetes or numb feet need protective shoes.',
   takeaways: [
     'In a 2019 trial of 57 runners, walking in minimalist shoes for about two months made foot muscles bigger and stronger, as much as doing foot exercises (Ridge and colleagues).',
     'Adults who wore minimal shoes for daily life for six months gained 57.4 percent in toe strength on average, in a controlled study of 22 people who switched (Curtis and colleagues, 2021).',
@@ -278,7 +278,7 @@ export const BAREFOOT_EN: Guide = {
     {
       q: 'Can I strengthen my feet without barefoot shoes?',
       cites: [CITE.ridgeMinimalist, CITE.taddeiRRI],
-      a: 'Yes. In a 2019 trial, foot exercises built foot muscle size and strength as well as walking in minimalist shoes. In a 2020 trial of 118 runners, those who did not do a foot core training program were 2.42 times as likely to get a running injury within a year. The short foot exercise, toe spreads, heel raises and single-leg balance cover most of it.',
+      a: 'Yes. In a 2019 trial, foot exercises built foot muscle size and strength as well as walking in minimalist shoes. In a 2020 trial of 118 runners, those who did not do a foot core training program were 2.42 times as likely to get a running injury within a year. The [short foot exercise](/exercises/short-foot-exercise/), toe spreads, heel raises and [single-leg balance](/exercises/single-leg-balance/) cover most of it.',
     },
   ],
   redFlags: {
@@ -294,7 +294,7 @@ export const BAREFOOT_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito is an exercise program for heel, foot and leg pain. It includes the short foot exercise, toe spreads, heel raises and balance work from this page and builds them up as they get easier. It does not pick your shoes and does not diagnose. A stronger foot and calf is a sensible base whichever shoes you end up in.',
+    text: '[Walkito](/program/) is an exercise program for heel, foot and leg pain. It includes the short foot exercise, toe spreads, heel raises and balance work from this page and builds them up as they get easier. It does not pick your shoes and does not diagnose. A stronger foot and calf is a sensible base whichever shoes you end up in.',
     more: [
       'You choose sessions of 3, 5 or 10 minutes. Every 14 days at first (every 28 once you reach a goal), a short test checks calf endurance, arch hold and balance. Walkito is for adults and is not a substitute for a clinician.',
     ],

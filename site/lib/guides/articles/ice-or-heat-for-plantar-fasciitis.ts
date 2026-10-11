@@ -111,7 +111,7 @@ export const ICE_HEAT_EN: Guide = {
       keyFact: 'Across 36 studies in 1,301 people without injuries, heat plus stretching improved range of motion more than stretching alone (Bleakley and Costello, 2013).',
       paragraphs: [
         '**Warming the foot before you stretch is a reasonable choice**, and it has more support than icing before stretching. A 2013 review of 36 studies in 1,301 people without injuries found that heat increased range of motion, and that heat plus stretching worked better than stretching alone. The data on cold were conflicting. Every study had a high risk of bias, and none involved people with heel pain, so take this as a sensible idea, not a tested plan for plantar fasciitis.',
-        'Warming up can be simple. A warm shower, or a few minutes with your feet in warm water, before the plantar fascia stretch and calf stretch.',
+        'Warming up can be simple. A warm shower, or a few minutes with your feet in warm water, before the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) and calf stretch.',
         'In the morning, though, do not wait for a warm-up before you stretch. The first-step stretch is meant to happen before your foot takes weight, on the edge of the bed. [Heel pain in the morning](/heel-pain-in-the-morning/) walks through that routine.',
       ],
       cites: [CITE.bleakleyThermal],
@@ -260,7 +260,7 @@ export const ICE_HEAT_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Ice and heat can take the edge off a bad day. The exercise plan is the part the guideline backs. Walkito builds that plan one week at a time around one focus goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Stretches are in the plan from the first week, and the foot roll shows up as a short recovery step.',
+    text: 'Ice and heat can take the edge off a bad day. The exercise plan is the part the guideline backs. [Walkito](/program/) builds that plan one week at a time around one focus goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Stretches are in the plan from the first week, and the foot roll shows up as a short recovery step.',
     more: [
       'Each week, only the exercise for your focus goal can change. It moves up one step when your last two sessions with it felt easy and morning pain did not rise, and down a step if a session felt hard or morning pain rose by 2 or more.',
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. A short test checks calf endurance, arch hold and balance every 14 days at first, then every 28 once you reach a goal, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',

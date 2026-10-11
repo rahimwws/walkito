@@ -68,7 +68,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
           ],
         },
         'Esses são músculos intrínsecos. Mas o exercício também recruta os flexores extrínsecos dos dedos: o flexor longo dos dedos e o flexor longo do hálux, que vão da canela, passam pelo tornozelo e chegam aos dedos.',
-        'Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha. Puxar a toalha gerou mais atividade nos flexores extrínsecos dos dedos.',
+        'Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou claramente mais ativo no pé curto do que ao puxar a toalha, tanto sentado quanto em pé sobre uma perna.',
         'Isso quer dizer que **puxar a toalha é um bom exercício para a força de preensão dos dedos**, mas é menos específico para os músculos intrínsecos do arco que o [exercício do pé curto](/pt/exercicios/pe-curto/).',
       ],
       cites: [CITE.jung],
@@ -77,7 +77,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
       h2: 'Puxar a toalha ou pé curto: qual é melhor?',
       paragraphs: [
         'Cada exercício tem um ponto forte diferente. Puxar a toalha é mais fácil de aprender, porque a toalha dá aos dedos um alvo claro. Muita gente tem dificuldade para sentir a contração do pé curto no começo. Puxar a toalha desenvolve a força de preensão dos dedos, que importa para o equilíbrio e para o impulso ao andar.',
-        'O exercício do pé curto é melhor para isolar os músculos intrínsecos do arco. Uma revisão de 2015 de McKeon e colegas observou que o abdutor do hálux foi ativado mais de quatro vezes mais no pé curto do que ao puxar a toalha, e recomendou o pé curto como o principal exercício de treino dos músculos intrínsecos do pé.',
+        'O exercício do pé curto é melhor para isolar os músculos intrínsecos do arco. Uma revisão de 2015 de McKeon e colegas descreveu o pé curto como uma forma importante de treinar os músculos intrínsecos do pé.',
         'Na prática, programas que usam os dois aproveitam o melhor de cada um. O Walkito usa puxar a toalha como um exercício inicial, que apresenta a ideia de trabalhar os músculos do pé. O [exercício do pé curto](/pt/exercicios/pe-curto/) vem depois e acrescenta um treino mais específico do arco. Um não substitui o outro.',
       ],
       cites: [CITE.mcKeon, CITE.jung],

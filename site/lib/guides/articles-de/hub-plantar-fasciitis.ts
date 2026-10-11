@@ -53,10 +53,10 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     },
     {
       h2: 'Was verursacht Plantarfasziitis, und wen trifft sie?',
-      keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100 ohne erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Odds für Plantarfasziitis um das 23,3-Fache, der stärkste gemessene Risikofaktor (Riddle und Kollegen, 2003).',
+      keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100 ohne erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Chance auf Plantarfasziitis um das 23,3-Fache, der stärkste gemessene Risikofaktor (Riddle und Kollegen, 2003).',
       paragraphs: [
         'Plantarfasziitis entsteht, wenn die Faszie stärker belastet wird, als sie verkraften und sich davon erholen kann. Die Last kann auf einmal zu groß sein (ein plötzlicher Sprung bei den Laufkilometern) oder über lange Zeit gleichmäßig wirken (den ganzen Tag auf hartem Boden stehen).',
-        'Eine gematchte Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Odds um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.',
+        'Eine gematchte Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Chance um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.',
         'Die Leitlinie nennt weitere Risikofaktoren:',
         {
           list: [
@@ -165,7 +165,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Plantarfasziitis bei der Arbeit und beim Laufen',
       paragraphs: [
-        'Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Odds für Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.',
+        'Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Chance auf Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.',
         'Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf theoretischen Grundlagen (Bewertung E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.',
       ],
       bullets: [
