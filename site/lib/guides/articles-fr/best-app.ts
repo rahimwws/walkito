@@ -203,7 +203,7 @@ export const BEST_APP_FR: Guide = {
     {
       h2: 'Walkito\u00A0: ce qu’elle fait et ce qu’elle ne fait pas',
       paragraphs: [
-        'Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2\u00A0octobre 2026, puis sur Google Play. Elle est nouvelle et n’a pas encore de notes.',
+        'Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sur iPhone et Android\u00A0: sur l’App Store depuis le 2\u00A0octobre 2026, et sur Google Play depuis octobre 2026. Elle est nouvelle et n’a pas encore de notes.',
         'Ce qu’elle fait\u00A0:',
         {
           list: [

@@ -31,6 +31,7 @@ should be seen by a clinician.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
+- Not related to walkito.com, a dog-walking service with a similar name.
 - Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
 - Contact: hello@walkito.site
 
@@ -2107,7 +2108,7 @@ If you want a free reference for what stretches to try, check the store listing 
 
 ### Walkito: what it does and what it does not
 
-Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026, and on Google Play later in October 2026. It is new and has no ratings yet.
+Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It is on iPhone and Android: on the App Store since October 2, 2026, and on Google Play since October 2026. It is new and has no ratings yet.
 
 What it does:
 
@@ -9659,7 +9660,7 @@ Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to 
 
 ### What is Walkito?
 
-Walkito is an iPhone and Android app that builds your exercise plan one week at a time around goals you can measure.
+Walkito is an iPhone and Android app that builds your exercise plan one week at a time around goals you can measure. It is not related to walkito.com, a dog-walking service.
 
 There are five goals: pain-free mornings (morning pain at 1/10 or less for 14 days in a row), a 60-second arch hold, 25 single-leg calf raises, 30 seconds of balance on one leg, and a gap of less than 10% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.
 
@@ -9730,7 +9731,7 @@ No, Walkito works without an Apple Watch. The step count, walking speed and walk
 
 ### How many notifications will I get?
 
-Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in iOS Settings, and the plan works the same.
+Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in your phone’s settings, on iPhone or Android, and the plan works the same.
 
 ### Will Walkito nag me if I stop using it?
 
@@ -9828,7 +9829,7 @@ Walkito uploads what you log, but not your Apple Health data. Apple Health readi
 
 ### Which Apple Health permissions does Walkito ask for?
 
-Walkito asks to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts. It asks to write workouts and mindful minutes. Every permission is optional, and you can withdraw it in iOS Settings. The plan keeps working without them. It just adapts less to your day.
+On iPhone, Walkito asks Apple Health to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts, and to write workouts and mindful minutes. On Android, it reads steps, distance and sleep from Health Connect. Every permission is optional, and you can withdraw it in your phone’s settings. The plan keeps working without them. It just adapts less to your day.
 
 ### Does Walkito work offline?
 

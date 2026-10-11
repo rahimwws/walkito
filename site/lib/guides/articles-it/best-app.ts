@@ -205,7 +205,7 @@ export const BEST_APP_IT: Guide = {
     {
       h2: 'Walkito: cosa fa e cosa non fa',
       paragraphs: [
-        'Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È uscita sull’App Store il 2 ottobre 2026, poi su Google Play. È nuova e non ha ancora valutazioni.',
+        'Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È su iPhone e Android: sull’App Store dal 2 ottobre 2026 e su Google Play da ottobre 2026. È nuova e non ha ancora valutazioni.',
         'Cosa fa:',
         {
           list: [

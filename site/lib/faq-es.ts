@@ -30,7 +30,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Cuántas notificaciones voy a recibir?',
-        a: 'Walkito envía como máximo una notificación al día, y nada después de las 21:30. La mayoría de las semanas, cinco es el límite. Solo cuatro tipos pueden pasarlo: un brote después de un día con dolor, un día muy largo de pie, un cambio en tu forma de caminar y un día de prueba. Puedes apagar las notificaciones en Ajustes de iOS, y el plan funciona igual.',
+        a: 'Walkito envía como máximo una notificación al día, y nada después de las 21:30. La mayoría de las semanas, cinco es el límite. Solo cuatro tipos pueden pasarlo: un brote después de un día con dolor, un día muy largo de pie, un cambio en tu forma de caminar y un día de prueba. Puedes apagar las notificaciones en los ajustes de tu teléfono, en iPhone o Android, y el plan funciona igual.',
       },
       {
         q: '¿Walkito me va a molestar si dejo de usarlo?',
@@ -155,7 +155,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Qué permisos de Apple Health pide Walkito?',
-        a: 'Walkito pide leer conteo de pasos, velocidad al caminar, asimetría al caminar, pisos subidos, frecuencia cardíaca, frecuencia cardíaca en reposo, energía activa, sueño y entrenamientos. Pide escribir entrenamientos y minutos de atención plena. Cada permiso es opcional, y puedes quitarlo en Ajustes de iOS. El plan sigue funcionando sin ellos. Solo se adapta menos a tu día.',
+        a: 'En iPhone, Walkito pide a Apple Health leer conteo de pasos, velocidad al caminar, asimetría al caminar, pisos subidos, frecuencia cardíaca, frecuencia cardíaca en reposo, energía activa, sueño y entrenamientos, y escribir entrenamientos y minutos de atención plena. En Android, lee pasos, distancia y sueño de Health Connect. Cada permiso es opcional, y puedes quitarlo en los ajustes de tu teléfono. El plan sigue funcionando sin ellos. Solo se adapta menos a tu día.',
       },
       {
         q: '¿Walkito funciona sin conexión?',

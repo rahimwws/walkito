@@ -921,7 +921,7 @@ Si quieres una referencia gratis de qué estiramientos probar, revisa la ficha d
 
 ### Walkito: lo que hace y lo que no hace
 
-Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026 y en Google Play más tarde, en octubre de 2026. Es nueva y todavía no tiene calificaciones.
+Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 2 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.
 
 Lo que hace:
 
@@ -9423,7 +9423,7 @@ Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pi
 
 ### ¿Qué es Walkito?
 
-Walkito es una app para iPhone y Android que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir.
+Walkito es una app para iPhone y Android que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir. No tiene relación con walkito.com, un servicio de paseo de perros.
 
 Hay cinco metas: mañanas más fáciles (dolor por la mañana de 1/10 o menos durante 14 días seguidos), mantener el arco 60 segundos, 25 elevaciones de talón a una pierna, 30 segundos de equilibrio en una pierna y menos de un 10 % de diferencia entre tu lado izquierdo y el derecho. Empiezas con hasta tres de ellas. Si algo te duele, el dolor va primero.
 

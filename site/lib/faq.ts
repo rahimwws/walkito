@@ -79,7 +79,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'How many notifications will I get?',
-        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in iOS Settings, and the plan works the same.',
+        a: 'Walkito sends at most one notification a day, and nothing after 21:30. Most weeks, five is the limit. Only four kinds can go past it: a flare after a painful day, a big day on your feet, a change in your walking, and a test day. You can turn notifications off in your phone’s settings, on iPhone or Android, and the plan works the same.',
       },
       {
         q: 'Will Walkito nag me if I stop using it?',
@@ -204,7 +204,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'Which Apple Health permissions does Walkito ask for?',
-        a: 'Walkito asks to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts. It asks to write workouts and mindful minutes. Every permission is optional, and you can withdraw it in iOS Settings. The plan keeps working without them. It just adapts less to your day.',
+        a: 'On iPhone, Walkito asks Apple Health to read step count, walking speed, walking asymmetry, flights climbed, heart rate, resting heart rate, active energy, sleep and workouts, and to write workouts and mindful minutes. On Android, it reads steps, distance and sleep from Health Connect. Every permission is optional, and you can withdraw it in your phone’s settings. The plan keeps working without them. It just adapts less to your day.',
       },
       {
         q: 'Does Walkito work offline?',

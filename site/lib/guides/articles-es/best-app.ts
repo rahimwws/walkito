@@ -192,7 +192,7 @@ export const BEST_APP_ES: Guide = {
     {
       h2: 'Walkito: lo que hace y lo que no hace',
       paragraphs: [
-        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026 y en Google Play más tarde, en octubre de 2026. Es nueva y todavía no tiene calificaciones.',
+        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Está en iPhone y Android: en el App Store desde el 2 de octubre de 2026 y en Google Play desde octubre de 2026. Es nueva y todavía no tiene calificaciones.',
         'Lo que hace:',
         {
           list: [

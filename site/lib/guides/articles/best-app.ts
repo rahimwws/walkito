@@ -192,7 +192,7 @@ export const BEST_APP_EN: Guide = {
     {
       h2: 'Walkito: what it does and what it does not',
       paragraphs: [
-        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026, and on Google Play later in October 2026. It is new and has no ratings yet.',
+        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It is on iPhone and Android: on the App Store since October 2, 2026, and on Google Play since October 2026. It is new and has no ratings yet.',
         'What it does:',
         {
           list: [

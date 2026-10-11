@@ -200,7 +200,7 @@ export const BEST_APP_DE: Guide = {
     {
       h2: 'Walkito: was es kann und was nicht',
       paragraphs: [
-        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es ist am 2. Oktober 2026 im App Store erschienen, danach bei Google Play. Es ist neu und hat noch keine Bewertungen.',
+        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es gibt Walkito für iPhone und Android: seit dem 2. Oktober 2026 im App Store und seit Oktober 2026 bei Google Play. Es ist neu und hat noch keine Bewertungen.',
         'Was es kann:',
         {
           list: [
