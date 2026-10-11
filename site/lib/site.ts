@@ -15,6 +15,16 @@ export const SITE_URL = 'https://walkito.site';
 
 export const SITE_NAME = 'Walkito';
 
+/**
+ * A page title for metadata: the layout adds " | Walkito", unless that would
+ * take it past 60 characters, where Google starts cutting titles off with
+ * "...". Then the brand goes and the words that say what the page is stay.
+ */
+export const TITLE_MAX = 60;
+export function pageTitle(title: string): string | { absolute: string } {
+  return `${title} | ${SITE_NAME}`.length > TITLE_MAX ? { absolute: title } : title;
+}
+
 /** The app's name on the App Store, word for word. Used beside the short
  * brand so search engines tie "Walkito" to this app. */
 export const APP_STORE_NAME = 'Walkito: Heel Pain & Flat Feet';

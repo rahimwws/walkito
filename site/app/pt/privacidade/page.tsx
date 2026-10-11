@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ogPage } from '@/lib/share';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   description:
     'O que o Walkito coleta e por quê. Seu plano fica na sua conta; dados do app Saúde e do Health Connect ficam no celular. Sem anúncios nem rastreamento.',
   alternates: alternatesFor('privacy', 'pt'),
+  openGraph: ogPage('privacy', 'pt'),
 };
 
 const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;

@@ -1,4 +1,5 @@
-import type { Lang } from '@/lib/i18n';
+import { OG_LOCALE, TRANSLATED, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { SITE_NAME } from '@/lib/site';
 
 /**
  * The share card a page in this language points at (og:image, twitter:image).
@@ -10,4 +11,14 @@ import type { Lang } from '@/lib/i18n';
  */
 export function shareCard(lang: Lang): string {
   return lang === 'ru' || lang === 'es' ? `/share/${lang}.jpg` : '/share/en.jpg';
+}
+
+/**
+ * Open Graph for a translated page that has no card of its own (support,
+ * privacy): the layout's site name, locale and share card, plus the page's own
+ * og:url. A page-level `openGraph` replaces the layout's whole object, so a
+ * page that set nothing inherited the home page's og:url instead of its own.
+ */
+export function ogPage(page: TranslatedPage, lang: Lang) {
+  return { siteName: SITE_NAME, locale: OG_LOCALE[lang], images: [shareCard(lang)], url: TRANSLATED[page][lang], type: 'website' as const };
 }

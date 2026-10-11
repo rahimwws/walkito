@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ogPage } from '@/lib/share';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   description:
     'Ajuda com o Walkito: notificações, app Saúde e Health Connect, compras, reembolsos e como excluir sua conta. Escreva para nós e uma pessoa responde.',
   alternates: alternatesFor('support', 'pt'),
+  openGraph: ogPage('support', 'pt'),
 };
 
 const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;
