@@ -415,6 +415,7 @@ export const EN_ONLY = {
   standingDesk: '/standing-desk-foot-pain/',
   bestApp: '/best-app-for-plantar-fasciitis/',
   vsExakt: '/walkito-vs-exakt-health/',
+  ytStudy: '/plantar-fasciitis-youtube-study/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -535,6 +536,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   massageBall: '/es/pelota-de-masaje-fascitis-plantar/',
   insolesVsExercises: '/es/plantillas-o-ejercicios/',
   barefoot: '/es/zapatos-barefoot/',
+  ytStudy: '/es/estudio-videos-youtube-fascitis-plantar/',
 };
 
 /**
@@ -603,6 +605,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   massageBall: '/ru/massazhnyy-myach-pri-plantarnom-fastsiite/',
   insolesVsExercises: '/ru/stelki-ili-uprazhneniya/',
   barefoot: '/ru/bosonogaya-obuv/',
+  ytStudy: '/ru/issledovanie-video-youtube-plantarnyy-fastsiit/',
 };
 
 /**

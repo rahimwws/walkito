@@ -108,7 +108,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and [night splints](/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
-        '**No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls.',
+        '**No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. When we checked the 50 most-watched plantar fasciitis videos on YouTube, [only 9 included all three home exercises](/plantar-fasciitis-youtube-study/) the guideline supports.',
         'In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using [orthotics](/insoles-vs-exercises/) alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
       ],
       table: {

@@ -18,6 +18,7 @@ import { TOE_STRENGTHENING_EN } from './articles/toe-strengthening-exercises';
 import { ACHILLES_EN } from './articles/achilles';
 import { BALL_OF_FOOT_EN } from './articles/ball-of-foot';
 import { BEST_APP_EN } from './articles/best-app';
+import { YT_STUDY_EN } from './articles/youtube-study';
 import { MORNING_HEEL_PAIN_EN } from './articles/morning-heel-pain';
 import { NURSES_EN } from './articles/nurses';
 import { PF_DURATION_EN } from './articles/pf-duration';
@@ -78,6 +79,7 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   nurses: NURSES_EN,
   standingDesk: STANDING_DESK_EN,
   bestApp: BEST_APP_EN,
+  ytStudy: YT_STUDY_EN,
   vsExakt: VS_EXAKT_EN,
   exPlantarFasciaStretch: EX_PLANTAR_FASCIA_STRETCH,
   exCalfStretch: EX_CALF_STRETCH,

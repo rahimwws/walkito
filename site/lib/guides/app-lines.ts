@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  ytStudy: {
+    en: 'Walkito puts all three parts, the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, into one 3, 5 or 10 minute daily plan.',
+    es: 'Walkito junta las tres partes, el estiramiento de la fascia plantar, los dos estiramientos de pantorrilla y una elevación de talón que se vuelve más difícil, en un plan diario de 3, 5 o 10 minutos.',
+    ru: 'Walkito собирает все три части, растяжку подошвенной фасции, обе растяжки икр и подъём на носки, который постепенно усложняется, в один ежедневный план на 3, 5 или 10 минут.',
+  },
   barefoot: {
     en: 'Walkito works on foot and calf strength in 3, 5 or 10 minute sessions at home, whatever shoes you wear.',
     es: 'Walkito trabaja la fuerza del pie y la pantorrilla en sesiones de 3, 5 o 10 minutos en casa, uses el calzado que uses.',

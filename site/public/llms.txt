@@ -12,7 +12,7 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-10
+Last updated: 2026-10-12
 
 ## Who writes this
 - The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
@@ -32,6 +32,7 @@ Last updated: 2026-10-10
 - [Foot pain for nurses: what helps on 12-hour shifts](https://walkito.site/nurses-foot-pain/): Why nurses get foot pain on 12-hour shifts: shoes, compression stockings, exercises, and how to fit a routine around rotating shifts.
 - [Standing desk foot pain: why it happens and what helps](https://walkito.site/standing-desk-foot-pain/): Why feet hurt from a standing desk, how long to stand before sitting, anti-fatigue mats, and exercises you can do at your desk.
 - [Best app for plantar fasciitis: a buyer's guide for 2026](https://walkito.site/best-app-for-plantar-fasciitis/): Best app for plantar fasciitis in 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch and Walkito compared on price, platforms and fit.
+- [We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 guideline](https://walkito.site/plantar-fasciitis-youtube-study/): We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 heel pain guideline. Only 9 teach all three top-rated exercise types.
 - [Walkito vs Exakt Health: which one fits you?](https://walkito.site/walkito-vs-exakt-health/): Walkito vs Exakt Health compared: conditions, pricing, platforms, how each builds your plan, evidence base, languages and privacy. Checked October 2026.
 - [Plantar fascia stretch: how to do it, sets and reps](https://walkito.site/exercises/plantar-fascia-stretch/): How to do the plantar fascia stretch for plantar fasciitis: technique, when to stretch, how long to hold, and what the research says.
 - [Calf stretch for plantar fasciitis: technique, sets and hold time](https://walkito.site/exercises/calf-stretch/): How to do the calf stretch (straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, and what the evidence says.
