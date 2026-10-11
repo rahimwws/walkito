@@ -2,7 +2,7 @@ import { CITATIONS, citationSchema } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
 import { shareCard } from '@/lib/share';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL, isoDateTime } from '@/lib/site';
 
 export const HOW_WE_RESEARCH_ID = 'how-we-research';
 export function howWeResearchHref(lang: Lang): string {
@@ -82,8 +82,8 @@ export function articleSchema(input: {
     headline: input.headline,
     description: input.description,
     inLanguage: input.lang,
-    datePublished: input.published,
-    dateModified: input.updated,
+    datePublished: isoDateTime(input.published),
+    dateModified: isoDateTime(input.updated),
     author: authorFor(input.lang),
     publishingPrinciples: `${SITE_URL}${howWeResearchHref(input.lang)}`,
     publisher: {

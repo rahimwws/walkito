@@ -9,7 +9,7 @@ import { Cite } from '@/components/Cite';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
-import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 
 /**
  * Spanish evidence page, translated from `app/(en)/science/page.tsx`.
@@ -32,7 +32,7 @@ const DESCRIPTION =
 const PATH = '/es/evidencia/';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: pageTitle(TITLE),
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('science', 'es'),
   openGraph: {

@@ -50,6 +50,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Google-Extended', allow: '/' },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
+    // No `host`: it prints a Yandex-only "Host:" line that Bing reports as an
+    // error. The canonical domain is already stated by every page canonical.
   };
 }

@@ -7,7 +7,7 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom, type FullLang } from '@/lib/i18n';
 import { shareCard } from '@/lib/share';
-import { OWN_IMAGE_LICENSE, SITE_NAME, SITE_URL } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 import { FOOT_MAP, FOOT_MAP_PATH, HOTSPOTS, REGION_ORDER, guideHref, type MapView } from '@/lib/tools/foot-map';
 
 /**
@@ -26,7 +26,7 @@ const LOCALE = { en: 'en_US', es: 'es_MX', ru: 'ru_RU' } as const;
 export function footMapMetadata(lang: FullLang): Metadata {
   const c = FOOT_MAP[lang];
   return {
-    title: c.title,
+    title: pageTitle(c.title),
     description: c.description,
     alternates: alternatesCustom('footMap', lang),
     openGraph: {

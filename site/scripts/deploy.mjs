@@ -13,6 +13,8 @@
  *   bun run deploy
  */
 import { execFileSync } from 'node:child_process';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -25,6 +27,50 @@ const SSH = process.env.DEPLOY_SSH;
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: ROOT, stdio: 'inherit' });
 
 run('bun', ['run', 'build']);
+
+// Which English pages changed, by their sitemap lastmod: read the live
+// sitemaps now, before the upload replaces them. A page is "changed" when it
+// is new or its date moved. Works with the old single sitemap and the new
+// index alike. If the live sitemaps cannot be read, nothing is pinged.
+const lastmods = (xmlByFile) => {
+  const map = new Map();
+  for (const xml of xmlByFile) {
+    for (const [, block] of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+      const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1];
+      const mod = block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+      // The video sitemap lists exercise pages without a date: never let a
+      // missing date overwrite the page's real one.
+      if (loc && (mod || !map.has(loc))) map.set(loc, mod ?? '');
+    }
+  }
+  return map;
+};
+const childLocs = (xml) => (xml.includes('<sitemapindex') ? [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, u]) => u) : null);
+async function liveSitemaps() {
+  const get = (u) => fetch(u).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`${u}: ${r.status}`))));
+  const root = await get('https://walkito.site/sitemap.xml');
+  const kids = childLocs(root);
+  return kids ? Promise.all(kids.map(get)) : [root];
+}
+function localSitemaps() {
+  const root = readFileSync(join(ROOT, 'out', 'sitemap.xml'), 'utf8');
+  const kids = childLocs(root);
+  return kids ? kids.map((u) => readFileSync(join(ROOT, 'out', new URL(u).pathname), 'utf8')) : [root];
+}
+const CHANGED = join(ROOT, '.indexnow-urls.json');
+let changedEnglish = null;
+try {
+  const before = lastmods(await liveSitemaps());
+  const after = lastmods(localSitemaps());
+  changedEnglish = [...after]
+    .filter(([url, mod]) => !/^https:\/\/walkito\.site\/(es|ru|pt|fr|it|de)\//.test(url) && before.get(url) !== mod)
+    .map(([url]) => url)
+    .filter((url) => !url.endsWith('.xml'));
+  writeFileSync(CHANGED, JSON.stringify(changedEnglish));
+  console.log(`deploy: ${changedEnglish.length} English page(s) new or changed by date`);
+} catch (e) {
+  console.log(`deploy: could not compare sitemaps (${e.message}); IndexNow skipped`);
+}
 // `--delete` keeps the server an exact copy of `out/`. Anything that must
 // survive — the Search Console, Bing and Yandex verification files — lives in
 // `public/` for exactly this reason.
@@ -40,4 +86,4 @@ run('rsync', ['-rlpz', '--checksum', '--delete', ...(SSH ? ['-e', SSH] : []), 'o
 if (TARGET.startsWith('root@')) {
   run('ssh', [TARGET.split(':')[0], 'chown -R deploy:deploy /var/www/walkito']);
 }
-run('node', ['scripts/indexnow.mjs']);
+if (changedEnglish && existsSync(CHANGED)) run('node', ['scripts/indexnow.mjs', CHANGED]);

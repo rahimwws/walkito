@@ -3,7 +3,9 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { OG_LOCALE } from '@/lib/i18n';
+import { shareCard } from '@/lib/share';
+import { SITE_NAME, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The docs page the ChatGPT and Claude directory listings link to: what the
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
   description:
     'Use Walkito inside ChatGPT and Claude: short foot and calf exercises with videos, a 7-day starter plan, and when to see a doctor. Nothing you type is stored.',
   alternates: { canonical: '/ai/' },
+  // Its own og:url: without a page-level openGraph it inherited the home page's.
+  openGraph: { siteName: SITE_NAME, locale: OG_LOCALE.en, images: [shareCard('en')], url: '/ai/', type: 'website' },
 };
 
 const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;

@@ -9,7 +9,7 @@ import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
-import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 
 const or = (xs: readonly number[]) => `${xs.slice(0, -1).join(', ')} o ${xs[xs.length - 1]}`;
 
@@ -21,7 +21,7 @@ const DESCRIPTION = `Cómo Walkito arma tu plan para el dolor de talón: metas m
 const PATH = '/es/programa/';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: pageTitle(TITLE),
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('program', 'es'),
   openGraph: {

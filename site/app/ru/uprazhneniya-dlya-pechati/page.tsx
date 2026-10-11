@@ -7,7 +7,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 
 const PATH = '/ru/uprazhneniya-dlya-pechati/';
 const TITLE = 'Листы с упражнениями для стоп для печати (PDF бесплатно)';
@@ -15,7 +15,7 @@ const DESCRIPTION =
   'Бесплатные PDF для печати: упражнения при плантарном фасциите, плоскостопии и усталости стоп от стоячей работы, с дозировками и журналом.';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: pageTitle(TITLE),
   description: DESCRIPTION,
   alternates: alternatesCustom('printables', 'ru'),
   openGraph: {
@@ -99,6 +99,7 @@ export default function PrintableSheetsRu() {
           На каждом листе упражнения с иллюстрацией, дозировкой, описанием выполнения,
           когда остановиться, недельный журнал для отметок и когда обратиться к врачу.
           Они основаны на наших гайдах, поэтому дозировки совпадают. Файлы PDF на английском.
+          Клиники, тренеры и преподаватели могут свободно распечатывать их и делиться ими с пациентами и клиентами.
         </p>
         <EmailSignup lang="ru" source="printables" page={PATH} />
         <div className="printables">

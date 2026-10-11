@@ -59,7 +59,7 @@ export default function PrintableSheets() {
         <p className="lede">
           Free PDF sheets you can print and stick on the fridge. Each one has the exercises with a picture, the dose,
           how to do it, when to stop, a week log to tick off, and when to see a clinician. They come from our guides,
-          so the doses match.
+          so the doses match. Clinics, coaches and teachers are free to print and share them with patients and clients.
         </p>
         <EmailSignup lang="en" source="printables" page="/printable-exercise-sheets/" />
         <div className="printables">

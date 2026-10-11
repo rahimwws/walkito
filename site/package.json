@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "prebuild": "node scripts/build-llms.mjs",
+    "postbuild": "node scripts/stable-build-id.mjs",
     "deploy": "node scripts/deploy.mjs",
     "qa": "node scripts/qa-layout.mjs",
     "typeset": "node scripts/typeset.mjs"

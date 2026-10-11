@@ -15,9 +15,9 @@ import { FaqRows, Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideBlock, GuideTable } from '@/lib/guides/types';
-import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
-import { videoSchema, imageSchema } from '@/lib/video';
+import { mainClip, videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
 import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
 import { PfTimeline } from '@/components/tools/PfTimeline';
@@ -236,7 +236,10 @@ export function Guide({ guide }: { guide: GuideData }) {
       <JsonLd data={article} />
       <JsonLd data={breadcrumbs} />
       <JsonLd data={faqSchema(guide.faq)} />
-      {videoSchema(guide.sections.flatMap((s) => s.exercises ?? []), guide.lang, guide.published).map((v) => (
+      {/* A video is described only where it is the main content: the exercise
+          pages, and only their own clip (lib/video.ts, mainClip). On guides
+          the clips still play; they just are not offered as videos. */}
+      {(inLibrary ? videoSchema([mainClip(guide.sections.flatMap((s) => s.exercises ?? []))].filter((e) => e != null), guide.lang, guide.published) : []).map((v) => (
         <JsonLd key={v.contentUrl} data={v} />
       ))}
       {/* Stills render only in sections laid out as exercise cards (the ones
@@ -455,6 +458,9 @@ export function Guide({ guide }: { guide: GuideData }) {
         ))}
 
         <UpdatedLine lang={guide.lang} updated={guide.updated} />
+        {/* The calf raise test is the page others are most likely to quote
+            (its norms by age): a ready citation makes linking to it easy. */}
+        {guide.page === 'calfRaiseTest' && <CiteBox lang={guide.lang} title={guide.title} updated={guide.updated} url={url} />}
         <p className="notice">{c.notice}</p>
 
         {guide.program.cta && <p className="cta-line">{guide.program.cta}</p>}
@@ -479,5 +485,27 @@ export function Guide({ guide }: { guide: GuideData }) {
         languages={languagesOf(guide)}
       />
     </>
+  );
+}
+
+const CITE: Record<Lang, { label: string; free: string; open: string; close: string; locale: string }> = {
+  en: { label: 'Cite this page', free: 'Free to share with a link to this page.', open: '“', close: '”', locale: 'en-US' },
+  es: { label: 'Cita esta página', free: 'Puedes compartirla libremente con un enlace a esta página.', open: '«', close: '»', locale: 'es' },
+  ru: { label: 'Как сослаться на эту страницу', free: 'Можно свободно использовать со ссылкой на эту страницу.', open: '«', close: '»', locale: 'ru' },
+  pt: { label: 'Cite esta página', free: 'Uso livre com um link para esta página.', open: '“', close: '”', locale: 'pt-BR' },
+  fr: { label: 'Citer cette page', free: 'Libre de partage avec un lien vers cette page.', open: '«\u00A0', close: '\u00A0»', locale: 'fr' },
+  it: { label: 'Cita questa pagina', free: 'Uso libero con un link a questa pagina.', open: '“', close: '”', locale: 'it' },
+  de: { label: 'Diese Seite zitieren', free: 'Frei teilbar mit einem Link auf diese Seite.', open: '„', close: '“', locale: 'de' },
+};
+
+/** A ready-made citation (plan A.12): author, title, date, link. */
+function CiteBox({ lang, title, updated, url }: { lang: Lang; title: string; updated: string; url: string }) {
+  const t = CITE[lang];
+  // No trailing period of its own ("7 октября 2026 г."): the sentence adds one.
+  const date = new Date(`${updated}T00:00:00Z`).toLocaleDateString(t.locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).replace(/\.$/, '');
+  return (
+    <p className="printable-box cite-box">
+      <strong>{t.label}:</strong> Walkito. {t.open}{title}{t.close}. {date}. <a href={url}>{url}</a>. {t.free}
+    </p>
   );
 }

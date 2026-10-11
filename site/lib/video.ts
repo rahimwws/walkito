@@ -1,7 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, SITE_URL, isoDateTime } from '@/lib/site';
+
+export { isoDateTime };
 
 /**
  * `VideoObject` for the exercise clips in a guide, so search engines know the
@@ -11,7 +13,7 @@ import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
  * MP4's own `mvhd` box, so the duration in the schema is the file's, not a
  * number typed by hand.
  */
-function clipSeconds(id: string): number | undefined {
+export function clipSeconds(id: string): number | undefined {
   try {
     const buf = readFileSync(join(process.cwd(), 'public', 'exercises', `${id}.mp4`));
     const at = buf.indexOf('mvhd');
@@ -23,6 +25,16 @@ function clipSeconds(id: string): number | undefined {
   } catch {
     return undefined;
   }
+}
+
+/**
+ * The clip a page is about, for the video schema and the video sitemap: the
+ * first real (not stand-in) clip. Google only lists a video when it is the
+ * main content of its page ("Video isn't on a watch page" on every guide, 0 of
+ * 11 indexed), so only exercise pages describe a video, and only this one.
+ */
+export function mainClip<T extends { media?: string; mediaIsStandIn?: boolean }>(items: readonly T[]): (T & { media: string }) | undefined {
+  return items.find((e): e is T & { media: string } => Boolean(e.media) && !e.mediaIsStandIn);
 }
 
 export function videoSchema(
@@ -46,7 +58,7 @@ export function videoSchema(
         inLanguage: lang,
         thumbnailUrl: `${SITE_URL}/exercises/${e.media}@2x.webp`,
         contentUrl: `${SITE_URL}/exercises/${e.media}.mp4`,
-        uploadDate,
+        uploadDate: isoDateTime(uploadDate),
         ...(seconds ? { duration: `PT${seconds}S` } : {}),
       };
     });

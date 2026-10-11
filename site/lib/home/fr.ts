@@ -78,6 +78,12 @@ export const HOME_FR: HomeCopy = {
     },
   ],
   faq: [
+    // Plain words on what Walkito is, first: search engines and AI answers
+    // quote this kind of sentence when they describe the app (plan A.10).
+    {
+      q: 'Qu’est-ce que Walkito\u00A0?',
+      a: 'Walkito est une application d’exercices pour les douleurs au talon et au pied, sur iPhone et Android. À partir de vos réponses, elle crée un plan quotidien de 3, 5 ou 10\u00A0minutes et l’adapte à l’état de vos pieds chaque matin.',
+    },
     {
       q: 'Au bout de combien de temps vais-je sentir une différence\u00A0?',
       a: `Cela dépend de la personne et de la douleur. Le plan se construit une semaine à la fois autour d’un objectif mesurable, et un test tous les ${testEveryDays}\u00A0jours vous montre ce qui change vraiment.`,

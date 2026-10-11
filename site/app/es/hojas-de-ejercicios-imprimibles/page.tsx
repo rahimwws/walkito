@@ -8,7 +8,7 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 
 const PATH = '/es/hojas-de-ejercicios-imprimibles/';
 const TITLE = 'Hojas de ejercicios para pies imprimibles (PDF gratis)';
@@ -16,7 +16,7 @@ const DESCRIPTION =
   'Hojas PDF gratis para imprimir: ejercicios para fascitis plantar, pie plano y pies cansados de estar de pie, con dosis, imágenes y un registro semanal.';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: pageTitle(TITLE),
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('printables', 'es'),
   openGraph: {
@@ -104,7 +104,8 @@ export default function PrintableSheetsEs() {
           Hojas PDF gratis que puedes imprimir y pegar en el refrigerador. Cada una tiene los
           ejercicios con una imagen, la dosis, cómo hacerlo, cuándo parar, un registro semanal
           para marcar los días, y cuándo consultar a un profesional de la salud. Vienen de
-          nuestras guías, así que las dosis coinciden. Los PDF están en inglés.
+          nuestras guías, así que las dosis coinciden. Los PDF están en inglés. Clínicas,
+          entrenadores y docentes pueden imprimirlas y compartirlas libremente con pacientes y alumnos.
         </p>
         <EmailSignup lang="es" source="printables" page={PATH} />
         <div className="printables">

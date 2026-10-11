@@ -42,6 +42,52 @@ export function isFullLang(lang: Lang): lang is FullLang {
   return (FULL_LANGS as readonly string[]).includes(lang);
 }
 
+/**
+ * Languages search engines may index: the ones the app itself speaks.
+ *
+ * Portuguese, French, Italian and German stay online for anyone who picks them
+ * in the menu, but they carry `noindex`, leave the sitemaps and leave every
+ * page's hreflang until the app ships in those languages (decision with
+ * Rahman, 2026-10-09): a search visitor in French would land on a page for an
+ * app they cannot read, and 490 pages in 7 languages on a new domain read as
+ * mass-produced. To switch a language back on, add it here; the robots tag,
+ * hreflang and sitemaps all follow this one list.
+ */
+export const INDEXED_LANGS: readonly Lang[] = ['en', 'es', 'ru'];
+export function isIndexedLang(lang: string): boolean {
+  return (INDEXED_LANGS as readonly string[]).includes(lang);
+}
+
+/** An hreflang map with only the indexed languages (and `x-default`). */
+export function indexedLanguages(languages: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(languages).filter(([l]) => l === 'x-default' || isIndexedLang(l)));
+}
+
+/** The language a site path belongs to: `/es/...` is Spanish, no prefix is English. */
+export function langOfPath(path: string): Lang {
+  const first = path.replace(/^https?:\/\/[^/]+/, '').split('/')[1];
+  return (LANGS as readonly string[]).includes(first) ? (first as Lang) : 'en';
+}
+
+/**
+ * The robots rules for a language's root layout: indexable for the indexed
+ * languages, `noindex, follow` for the rest (links on those pages still count).
+ */
+export function robotsFor(lang: Lang) {
+  const index = isIndexedLang(lang);
+  return {
+    index,
+    follow: true,
+    googleBot: {
+      index,
+      follow: true,
+      'max-image-preview': 'large' as const,
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  };
+}
+
 /** The Open Graph locale for each language. */
 export const OG_LOCALE: Record<Lang, string> = {
   en: 'en_US',
@@ -890,6 +936,6 @@ export function alternatesFor(page: TranslatedPage, lang: Lang) {
   const paths = TRANSLATED[page];
   return {
     canonical: paths[lang],
-    languages: { ...paths, 'x-default': paths.en },
+    languages: indexedLanguages({ ...paths, 'x-default': paths.en }),
   };
 }

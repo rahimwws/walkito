@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ogPage } from '@/lib/share';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   description:
     'Was Walkito erfasst und warum. Dein Plan wird in deinem Konto gespeichert, Daten aus Apple Health und Health Connect bleiben auf dem Handy. Keine Werbung.',
   alternates: alternatesFor('privacy', 'de'),
+  openGraph: ogPage('privacy', 'de'),
 };
 
 const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;

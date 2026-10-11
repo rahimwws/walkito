@@ -75,6 +75,12 @@ export const HOME_PT: HomeCopy = {
     },
   ],
   faq: [
+    // Plain words on what Walkito is, first: search engines and AI answers
+    // quote this kind of sentence when they describe the app (plan A.10).
+    {
+      q: 'O que é o Walkito?',
+      a: 'O Walkito é um app de exercícios para dor no calcanhar e no pé, no iPhone e no Android. Com as suas respostas, ele monta um plano diário de 3, 5 ou 10 minutos e o ajusta a como seus pés estão a cada manhã.',
+    },
     {
       q: 'Em quanto tempo vou sentir diferença?',
       a: `Depende da pessoa e da dor. O plano é montado uma semana de cada vez em torno de uma meta que dá para medir, e um teste a cada ${testEveryDays} dias mostra o que está mudando de verdade.`,

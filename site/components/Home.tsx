@@ -208,6 +208,12 @@ const COPY: Record<Lang, HomeCopy> = {
       },
     ],
     faq: [
+      // Plain words on what Walkito is, first: search engines and AI answers
+      // quote this kind of sentence when they describe the app (plan A.10).
+      {
+        q: 'What is Walkito?',
+        a: 'Walkito is an exercise app for heel and foot pain, on iPhone and Android. It builds a daily plan of 3, 5 or 10 minutes from your answers and adjusts it to how your feet feel each morning.',
+      },
       {
         q: 'How long until I feel a difference?',
         a: `It depends on the person and the pain. The plan is built one week at a time around a goal you can measure, and a test every ${testEveryDays} days shows you what’s actually changing.`,
@@ -294,6 +300,12 @@ const COPY: Record<Lang, HomeCopy> = {
       },
     ],
     faq: [
+      // Plain words on what Walkito is, first: search engines and AI answers
+      // quote this kind of sentence when they describe the app (plan A.10).
+      {
+        q: 'Что такое Walkito?',
+        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план на 3, 5 или 10 минут в день и подстраивает его под то, как стопы чувствуют себя каждое утро.',
+      },
       {
         q: 'Когда я почувствую разницу?',
         a: `Это зависит от человека и от боли. План строится по одной неделе вокруг цели, которую можно измерить, а тест каждые ${testEveryDays} дней показывает, что на самом деле меняется.`,
@@ -377,6 +389,12 @@ const COPY: Record<Lang, HomeCopy> = {
       },
     ],
     faq: [
+      // Plain words on what Walkito is, first: search engines and AI answers
+      // quote this kind of sentence when they describe the app (plan A.10).
+      {
+        q: '¿Qué es Walkito?',
+        a: 'Walkito es una app de ejercicios para el dolor de talón y de pie, en iPhone y Android. Con tus respuestas arma un plan diario de 3, 5 o 10 minutos y lo ajusta a cómo se sienten tus pies cada mañana.',
+      },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
         a: `Depende de la persona y del dolor. El plan se arma una semana a la vez en torno a una meta que se puede medir, y una prueba cada ${testEveryDays} días te muestra lo que de verdad está cambiando.`,
