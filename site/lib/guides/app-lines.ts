@@ -275,3 +275,33 @@ export function appLine(guide: Guide): string | undefined {
   const line = APP_LINES[guide.page];
   return line && (guide.lang === 'en' || guide.lang === 'es' || guide.lang === 'ru') ? line[guide.lang] : undefined;
 }
+
+/**
+ * After which section a second app box goes (B.14), or null for none. Most
+ * readers never reach the end of a long guide, and the box near the top has
+ * scrolled away by the middle. The box goes where a section ends, never inside
+ * one: after the exercises when they end between 30% and 70% of the page
+ * (the reader has just seen what the app would plan), else after the section
+ * that passes the halfway point. Never in the top 30% of the page (the first
+ * box is there), after the last section, or next to a tool that carries its own app badge; none on guides
+ * with fewer than four sections.
+ */
+export function midBoxAfter(guide: Guide): number | null {
+  const s = guide.sections;
+  if (s.length < 4) return null;
+  const size = s.map((x) => JSON.stringify(x).length);
+  const total = size.reduce((a, b) => a + b, 0);
+  const upTo = (i: number) => size.slice(0, i + 1).reduce((a, b) => a + b, 0) / total;
+  const ok = (i: number) => i >= 0 && upTo(i) >= 0.3 && i <= s.length - 2 && !s[i].tool && !s[i + 1]?.tool;
+  const exercises = s.findIndex((x) => (x.exercises?.length ?? 0) >= 3);
+  if (exercises >= 0 && upTo(exercises) >= 0.3 && upTo(exercises) <= 0.7 && ok(exercises)) return exercises;
+  for (let i = 0; i < s.length; i++) {
+    if (upTo(i) >= 0.5) {
+      if (ok(i)) return i;
+      if (ok(i + 1)) return i + 1;
+      if (ok(i - 1)) return i - 1;
+      return null;
+    }
+  }
+  return null;
+}

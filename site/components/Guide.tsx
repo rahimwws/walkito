@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
 import { AppCallout } from '@/components/AppCallout';
-import { appLine } from '@/lib/guides/app-lines';
+import { appLine, midBoxAfter } from '@/lib/guides/app-lines';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
@@ -199,6 +199,9 @@ export function Guide({ guide }: { guide: GuideData }) {
   // weighs as a real recommendation.
   const related = relatedGuides(guide);
 
+  // A second app box about halfway down a long guide (lib/guides/app-lines.ts).
+  const midAfter = midBoxAfter(guide);
+
   // The exercises on the page as one numbered list near the top, each linking
   // to its card: the summary a reader scans first, and the shape Google uses
   // for "... exercises" featured snippets. Built from the same data as the
@@ -340,8 +343,9 @@ export function Guide({ guide }: { guide: GuideData }) {
           </>
         )}
 
-        {guide.sections.map((section) => (
-          <section key={section.h2} id={slug(section.h2)}>
+        {guide.sections.map((section, si) => (
+          <Fragment key={section.h2}>
+          <section id={slug(section.h2)}>
             <h2>{section.h2}</h2>
             {section.keyFact && (
               <p className="key-fact">
@@ -425,6 +429,10 @@ export function Guide({ guide }: { guide: GuideData }) {
               </PfTimeline>
             )}
           </section>
+          {si === midAfter && (
+            <AppCallout campaign={`${guide.campaign}-mid`} lang={guide.lang} lead={appLine(guide)} />
+          )}
+          </Fragment>
         ))}
 
         {/* As the home page's questions: one open at a time, the first open. */}
