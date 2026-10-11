@@ -28,9 +28,12 @@ const BASE = process.env.QA_BASE ?? 'http://localhost:3002';
 const WIDTHS = [320, 375, 390, 768, 1024, 1440];
 const filter = process.argv[2];
 
-const sitemap = readFileSync(join(root, 'out/sitemap.xml'), 'utf8');
-const paths = [...sitemap.matchAll(/<loc>https?:\/\/[^/]+([^<]*)<\/loc>/g)]
-  .map((m) => m[1] || '/')
+// /sitemap.xml is an index of per-language sitemaps (lib/sitemap.ts): read
+// the language sitemaps it lists, not the video one (same pages again).
+const index = readFileSync(join(root, 'out/sitemap.xml'), 'utf8');
+const files = [...index.matchAll(/<loc>https?:\/\/[^/]+(\/sitemap-[a-z]+\.xml)<\/loc>/g)].map((m) => m[1]).filter((f) => f !== '/sitemap-video.xml');
+const sitemap = files.map((f) => readFileSync(join(root, 'out', f), 'utf8')).join('\n');
+const paths = [...new Set([...sitemap.matchAll(/<loc>https?:\/\/[^/]+([^<]*)<\/loc>/g)].map((m) => m[1] || '/'))]
   .filter((p) => !filter || p.includes(filter));
 
 /** Runs in the page: every finding for the current layout. */

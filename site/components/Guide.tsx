@@ -17,7 +17,7 @@ import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideBlock, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
-import { videoSchema, imageSchema } from '@/lib/video';
+import { mainClip, videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
 import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
 import { PfTimeline } from '@/components/tools/PfTimeline';
@@ -236,7 +236,10 @@ export function Guide({ guide }: { guide: GuideData }) {
       <JsonLd data={article} />
       <JsonLd data={breadcrumbs} />
       <JsonLd data={faqSchema(guide.faq)} />
-      {videoSchema(guide.sections.flatMap((s) => s.exercises ?? []), guide.lang, guide.published).map((v) => (
+      {/* A video is described only where it is the main content: the exercise
+          pages, and only their own clip (lib/video.ts, mainClip). On guides
+          the clips still play; they just are not offered as videos. */}
+      {(inLibrary ? videoSchema([mainClip(guide.sections.flatMap((s) => s.exercises ?? []))].filter((e) => e != null), guide.lang, guide.published) : []).map((v) => (
         <JsonLd key={v.contentUrl} data={v} />
       ))}
       {/* Stills render only in sections laid out as exercise cards (the ones

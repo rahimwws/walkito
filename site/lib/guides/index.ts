@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
-import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
+import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, indexedLanguages, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
 import { shareCard } from '@/lib/share';
 import { SITE_NAME, smartBannerContent, type AppScreen } from '@/lib/site';
 
@@ -131,7 +131,7 @@ export function guideMetadata(guide: Guide): Metadata {
     alternates: isTranslatedPage(guide.page)
       ? alternatesFor(guide.page, guide.lang)
       : languagesOf(guide)
-        ? { canonical: url, languages: { ...languagesOf(guide)!, 'x-default': EN_ONLY[guide.page] } }
+        ? { canonical: url, languages: indexedLanguages({ ...languagesOf(guide)!, 'x-default': EN_ONLY[guide.page] }) }
         : { canonical: url },
     openGraph: {
       title: `${guide.title} | ${SITE_NAME}`,

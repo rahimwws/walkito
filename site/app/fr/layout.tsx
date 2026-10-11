@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
 import { anton } from '@/lib/font-anton';
-import { OG_LOCALE } from '@/lib/i18n';
+import { OG_LOCALE, robotsFor } from '@/lib/i18n';
 import { smartBannerContent, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
@@ -24,17 +24,8 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: HOME_META.fr.description,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-      'max-video-preview': -1,
-    },
-  },
+  // noindex until the app speaks FR: see INDEXED_LANGS in lib/i18n.ts.
+  robots: robotsFor('fr'),
   icons: { icon: '/favicon.png', apple: '/apple-touch-icon.png' },
   // The English card: `next/og` renders its default face, which has no
   // Cyrillic, so a translated card would ship as boxes. The English one is
