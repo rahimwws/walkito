@@ -11,7 +11,7 @@ import type { About as AboutData } from '@/lib/about/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { formatDate } from '@/lib/schema';
 import { REVIEWER } from '@/lib/reviewer';
-import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL, isoDateTime } from '@/lib/site';
 
 const REVIEWER_HEADING = {
   en: 'Who reviews our guides',
@@ -50,7 +50,7 @@ export function About({ about }: { about: AboutData }) {
     description: about.description,
     inLanguage: about.lang,
     url: `${SITE_URL}${path}`,
-    dateModified: PAGE_UPDATED.about,
+    dateModified: isoDateTime(PAGE_UPDATED.about),
     mainEntity: {
       '@type': 'Organization',
       name: SITE_NAME,

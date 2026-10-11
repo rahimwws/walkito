@@ -1,7 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, SITE_URL, isoDateTime } from '@/lib/site';
+
+export { isoDateTime };
 
 /**
  * `VideoObject` for the exercise clips in a guide, so search engines know the
@@ -23,15 +25,6 @@ export function clipSeconds(id: string): number | undefined {
   } catch {
     return undefined;
   }
-}
-
-/**
- * A date as Google wants it on a video: full ISO 8601 with a time and a
- * timezone. A bare `2026-10-04` was flagged on every VideoObject ("invalid
- * datetime value"), so day-only dates get midnight UTC.
- */
-export function isoDateTime(date: string): string {
-  return /^\d{4}-\d{2}-\d{2}$/.test(date) ? `${date}T00:00:00+00:00` : date;
 }
 
 /**
