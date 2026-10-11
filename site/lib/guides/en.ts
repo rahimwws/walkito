@@ -37,14 +37,14 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-10-07',
+  updated: '2026-10-10',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
   h1: 'Flat feet exercises for fallen arches and arch pain',
-  lede: 'By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.',
+  lede: 'For flexible [flat feet](/flat-feet/), the exercise program with trial evidence combines short-foot exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of it changed arch shape more than in a control group. By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.',
   intro: [
-    'Start with one check: whether your flat feet are flexible, meaning the arch comes back when you lift the foot. For flexible flat feet, one trial of 52 people found that six weeks of short-foot exercises, ankle work, hip strengthening and stretching, done together, changed the shape of the arch more than in a control group.',
+    'Start with one check: whether your flat feet are flexible, meaning the arch comes back when you lift the foot. That trial, and the exercises below, are about flexible flat feet.',
     'The evidence for short-foot training on its own is thinner. A 2024 review found no clear change overall, and a change in one arch measure only in programs that ran longer than six weeks. Both measured the shape of the arch, not pain. If your pain is near the heel, the heel pain research is the better guide.',
   ],
   takeaways: [
@@ -73,7 +73,7 @@ export const FLAT_FEET_EN: Guide = {
     {
       h2: 'Which exercises help flat feet, and how much should you do?',
       paragraphs: [
-        'The exercises for flat feet in Walkito start with towel scrunches and big toe lifts, then move up through three versions of the short foot. Toe spreads, band turn-ins, a single-leg hold, hip abduction and calf stretches fill in around them. These are Walkito’s starting doses, not a prescription. Do them barefoot. [How these guides are written](/about/).',
+        'The exercises for flat feet in Walkito start with [towel scrunches](/exercises/towel-scrunch/) and big toe lifts, then move up through three versions of the short foot. Toe spreads, band turn-ins, a single-leg hold, hip abduction and calf stretches fill in around them. These are Walkito’s starting doses, not a prescription. Do them barefoot. [How these guides are written](/about/).',
         'The short foot is the core of the arch work. You shorten the foot by pulling the ball of the foot toward the heel, so the arch lifts, without curling the toes. Short-foot work, hip strengthening and stretching are what the trial tested. The towel scrunch, big toe lift, toe spread, band turn-in and single-leg hold are Walkito’s own additions.',
         'You do one arch exercise at a time, the one at your level. Walkito moves you up one step once the last two sessions with it felt easy. While the arch is your goal, every session has an arch exercise in it, and the others take turns.',
         'Some exercises need a towel or a resistance band. Walkito asks what you have and leaves out anything you don’t. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',
@@ -248,7 +248,7 @@ export const FLAT_FEET_EN: Guide = {
   ],
   faq: [
     {
-      q: 'Can exercises change flat feet?',
+      q: 'Can exercises build an arch in flat feet?',
       a: 'Exercise can change the arch shape of flexible flat feet, but not rigid ones. In a trial of 52 people whose arch came back off the ground, six weeks of short-foot, ankle, hip and stretching work changed arch measures more than in a control group. A foot that stays flat even when lifted is structural, and exercise will not change its shape.',
     },
     {
@@ -261,7 +261,7 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       q: 'Can flat feet cause back pain?',
-      a: 'The evidence is weak and mixed, not a clear yes. The largest study on it, the [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) of about 1,900 adults, found no link between flat foot posture and low back pain. It found a small link in women between a foot that rolls inward while walking and low back pain, and none in men. So flat feet alone are a weak explanation for back pain. If you have both, look at them as two separate problems, and see a clinician about the back.',
+      a: 'The evidence is weak and mixed, not a clear yes. The largest study on it, the [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) of about 1,900 adults, found no link between flat foot posture and [low back pain](/flat-feet-back-pain/). It found a small link in women between a foot that rolls inward while walking and low back pain, and none in men. So flat feet alone are a weak explanation for back pain. If you have both, look at them as two separate problems, and see a clinician about the back.',
       cites: [CITE.menz],
     },
     {
@@ -317,16 +317,16 @@ export const HEEL_PAIN_EN: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-07',
+  updated: '2026-10-10',
   title: '8 Plantar Fasciitis Exercises & Stretches (Guideline Doses)',
   description:
     'Eight plantar fasciitis exercises and stretches with doses, what to avoid, best time to stretch, and evidence grades from the 2023 guideline.',
   // Non-breaking space in «stretches for»: on a phone the balanced break otherwise leaves «stretches» alone on a line.
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
-  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
+  lede: 'The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
   intro: [
-    'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B.',
-    'In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
+    'It’s also confusing to look up, because everyone says something different. The evidence keeps pointing to the same two things: stretching the plantar fascia and calf, and strength work for the calf.',
+    'In one trial of 48 people, all wearing [shoe inserts](/insoles-vs-exercises/), slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
   ],
   takeaways: [
     'The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.',
@@ -498,7 +498,7 @@ export const HEEL_PAIN_EN: Guide = {
         {
           list: [
             'The plantar fascia stretch is done **before you stand up**, on the edge of the bed with the toes pulled back, so your first steps are not your first stretch.',
-            'The 2023 guideline gives night splints, worn for 1 to 3 months, an **A** for people who keep getting pain on their first steps in the morning. Night splints are something to talk over with a clinician. Walkito doesn’t provide them.',
+            'The 2023 guideline gives [night splints](/night-splints-plantar-fasciitis/), worn for 1 to 3 months, an **A** for people who keep getting pain on their first steps in the morning. Night splints are something to talk over with a clinician. Walkito doesn’t provide them.',
           ],
         },
         'Walkito asks about your morning pain every day for the same reason. Morning pain is the clearest sign of how your foot coped with yesterday, and it decides how much today’s session asks of you. More on what drives it is on [heel pain in the morning](/heel-pain-in-the-morning/).',
@@ -586,7 +586,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       q: 'Is a heel spur the same as plantar fasciitis?',
-      a: 'Not exactly. People often say “heel spur” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. Only a clinician can say what is behind yours.',
+      a: 'Not exactly. People often say “[heel spur](/plantar-fasciitis-vs-heel-spur/)” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. Only a clinician can say what is behind yours.',
     },
     {
       q: 'How often should I do plantar fasciitis exercises?',

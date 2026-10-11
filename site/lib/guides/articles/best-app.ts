@@ -11,7 +11,7 @@ export const BEST_APP_EN: Guide = {
     'Best app for plantar fasciitis in 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch and Walkito compared on price, platforms and fit.',
   h1: 'Best app for plantar fasciitis: a buyer\'s guide for 2026',
   lede:
-    'This page compares seven apps that include exercises for plantar fasciitis, flat feet or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.',
+    'This page compares seven apps that include exercises for [plantar fasciitis](/plantar-fasciitis/), [flat feet](/flat-feet/) or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.',
   intro: [
     'There is no single best app for everyone. The right choice depends on what you need: a runner returning from plantar fasciitis has different requirements from someone with flat feet who stands at work all day, and both have different requirements from someone whose employer covers Hinge Health. The criteria below explain what to look for, and the table after that shows where each app sits.',
   ],
@@ -108,7 +108,7 @@ export const BEST_APP_EN: Guide = {
     {
       h2: 'Exakt Health: the runner\'s rehab app',
       paragraphs: [
-        'Exakt Health is built for runners, and it shows. The app has over 15 injury rehab plans, from plantar fasciitis to Achilles tendinopathy to meniscus tears, plus running training plans from couch to marathon. Each rehab plan ends with a structured return-to-running phase, which is something most foot pain apps do not offer.',
+        '[Exakt Health](/walkito-vs-exakt-health/) is built for runners, and it shows. The app has over 15 injury rehab plans, from plantar fasciitis to [Achilles tendinopathy](/achilles-tendonitis-exercises/) to meniscus tears, plus running training plans from couch to marathon. Each rehab plan ends with a structured return-to-running phase, which is something most foot pain apps do not offer.',
         'It is certified as a medical device in the EU, which means it has passed regulatory review for safety and intended use. It was built by licensed sports physiotherapists and running coaches. The app has 600+ exercise videos and adapts its plan as you progress through levels.',
         'At $19.99 a month or $59.99 for six months, Exakt is not cheap, but the breadth of conditions and the quality of its rehab plans are hard to match in the self-serve app market. The 7-day free trial lets you see the full app before paying. It is available in English, French, German and Spanish, on both iOS and Android.',
         'Where Exakt is stronger than Walkito:',
@@ -198,7 +198,7 @@ export const BEST_APP_EN: Guide = {
           list: [
             'Builds a weekly plan from your answers about pain, goals and schedule.',
             'Each morning, a check-in adjusts that day\'s session to how your foot feels.',
-            'Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right.',
+            'Tests every 14 days measure calf raises, arch hold and [single-leg balance](/exercises/single-leg-balance/), and compare left to right.',
             'Sessions are 3, 5 or 10 minutes.',
             'Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial.',
             'On iPhone it reads steps, sleep and walking data from Apple Health, which stay on your phone. On Android it reads steps, exercise sessions, distance and sleep from Health Connect.',
@@ -288,7 +288,7 @@ export const BEST_APP_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'If you have read this far and Walkito sounds like a fit, here is how it works. You answer a few questions about where it hurts, which side, how active you are and your goal. Walkito builds a weekly plan around those answers. Each morning, a check-in adjusts the day. Every 14 days, a short test measures calf endurance, arch hold and single-leg balance.',
+    text: 'If you have read this far and [Walkito](/program/) sounds like a fit, here is how it works. You answer a few questions about where it hurts, which side, how active you are and your goal. Walkito builds a weekly plan around those answers. Each morning, a check-in adjusts the day. Every 14 days, a short test measures calf endurance, arch hold and single-leg balance.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Exercises follow the 2023 clinical guideline for heel pain. The plan has no fixed end date: when you reach a goal, it moves to maintaining and the next goal takes its place. Walkito is an exercise program, not a diagnosis or a substitute for a clinician.',
     ],

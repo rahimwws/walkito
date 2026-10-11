@@ -178,7 +178,7 @@ export const MORTONS_EN: Guide = {
     },
     {
       q: "Do exercises help Morton's neuroma?",
-      a: "No trial has tested exercise for Morton's neuroma. Exercise does not act on the nerve directly. Toe spreads and intrinsic foot strengthening may help distribute forefoot load more evenly, and calf stretching reduces forefoot overload from a tight calf. These are comfort measures, not neuroma-specific interventions. Shoe changes and pads should come first.",
+      a: "No trial has tested exercise for Morton's neuroma. Exercise does not act on the nerve directly. Toe spreads and intrinsic foot strengthening may help distribute forefoot load more evenly, and calf stretching reduces forefoot overload from a [tight calf](/tight-calves/). These are comfort measures, not neuroma-specific interventions. Shoe changes and pads should come first.",
     },
     {
       q: "Does Morton's neuroma go away on its own?",
@@ -196,7 +196,7 @@ export const MORTONS_EN: Guide = {
     },
     {
       q: "What triggers Morton's neuroma?",
-      a: "Morton's neuroma is triggered by anything that compresses the nerve between the metatarsal bones. Common triggers include narrow or pointed-toe shoes, high heels, repetitive impact activities like running, and foot shapes such as flat feet or high arches that shift extra pressure forward. It is more common in women and in middle age.",
+      a: "Morton's neuroma is triggered by anything that compresses the nerve between the metatarsal bones. Common triggers include narrow or pointed-toe shoes, high heels, repetitive impact activities like running, and foot shapes such as [flat feet](/flat-feet/) or [high arches](/high-arches-exercises/) that shift extra pressure forward. It is more common in women and in middle age.",
     },
     {
       q: "What is the pinch test for Morton's neuroma?",
@@ -222,7 +222,7 @@ export const MORTONS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: "Walkito is built around plantar fasciitis and flat feet, not Morton's neuroma. But the forefoot exercises in the app, including toe spreads and calf stretching, address the same forefoot load distribution that contributes to neuroma symptoms. Marking the ball of the foot on the pain map during a check-in lets the app include toe spreads and plantar fascia stretching in your session.",
+    text: "[Walkito](/program/) is built around [plantar fasciitis](/plantar-fasciitis/) and flat feet, not Morton's neuroma. But the forefoot exercises in the app, including toe spreads and calf stretching, address the same forefoot load distribution that contributes to neuroma symptoms. Marking the ball of the foot on the pain map during a check-in lets the app include toe spreads and plantar fascia stretching in your session.",
     more: [
       "You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold, and balance. Walkito does not diagnose Morton's neuroma. The exercises it includes are comfort and load measures. Wider shoes, metatarsal pads, and clinical assessment should come first.",
     ],

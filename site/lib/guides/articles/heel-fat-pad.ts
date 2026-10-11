@@ -12,7 +12,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     'Heel fat pad syndrome causes deep pain in the centre of the heel when cushioning thins. How it differs from plantar fasciitis and what helps.',
   h1: 'Heel fat pad syndrome: what it is, how it differs from plantar fasciitis, and what the evidence says',
   lede:
-    'Heel fat pad syndrome is the thinning or damage of the fatty cushion under your heel bone. It causes a deep, bruise-like pain in the centre of the heel, especially on hard surfaces or barefoot. It may be the second most common cause of plantar heel pain after plantar fasciitis, yet the research behind it is thin. A 2022 scoping review found only seven original studies.',
+    'Heel fat pad syndrome is the thinning or damage of the fatty cushion under your heel bone. It causes a deep, bruise-like pain in the centre of the heel, especially on hard surfaces or barefoot. It may be the second most common cause of plantar heel pain after [plantar fasciitis](/plantar-fasciitis/), yet the research behind it is thin. A 2022 scoping review found only seven original studies.',
   intro: [
     'This page covers what is known about heel fat pad syndrome, how to tell it apart from plantar fasciitis, and which conservative steps have at least some support. If your pain is more of a sharp pull at the inner heel with your first steps in the morning, [heel pain in the morning](/heel-pain-in-the-morning/) is probably the better page. If it is at the back of the heel near the Achilles, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) or [Haglund\'s deformity](/haglunds-deformity/).',
   ],
@@ -89,13 +89,13 @@ export const HEEL_FAT_PAD_EN: Guide = {
         {
           list: [
             'Viscoelastic heel cups.',
-            'Cushioned insoles.',
+            'Cushioned [insoles](/insoles-vs-exercises/).',
             'Shoes with thick, shock-absorbing soles.',
           ],
         },
         'These aim to replace the cushioning the fat pad no longer provides.',
         'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months.',
-        'Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
+        'Some small trials of [low-dye taping](/plantar-fasciitis-taping/) for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
         'Despite the weak evidence base, the logic is straightforward: **if the cushion is gone, adding one externally is a reasonable step.** Avoid walking barefoot on hard surfaces. Choose shoes with well-cushioned heels and avoid flat, thin-soled shoes. These are consensus recommendations, not trial-tested ones, and this page says so plainly.',
       ],
       cites: [CITE.fatPadReview],
@@ -104,7 +104,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
       h2: 'Do exercises help heel fat pad syndrome?',
       paragraphs: [
         '**Exercises cannot rebuild a thinned fat pad.** That is a structural change, not a muscle weakness. But exercise may still play a role in managing the foot around the problem.',
-        'Calf strength matters because a stronger calf absorbs more of the landing force before it reaches the heel. This is the same loading logic behind the calf raise programs for plantar fasciitis, but for fat pad syndrome the goal is load distribution, not tissue repair. Intrinsic foot muscle work (short foot exercise, toe spreads) may help the foot manage ground contact.',
+        'Calf strength matters because a stronger calf absorbs more of the landing force before it reaches the heel. This is the same loading logic behind the calf raise programs for plantar fasciitis, but for fat pad syndrome the goal is load distribution, not tissue repair. Intrinsic foot muscle work ([short foot exercise](/exercises/short-foot-exercise/), toe spreads) may help the foot manage ground contact.',
         'The evidence for these exercises in fat pad syndrome specifically is absent. No trial has tested them for this condition. They are borrowed from the broader heel pain and foot strength literature.',
         'Walkito\'s exercises are designed around plantar fasciitis and foot strength. They are a reasonable addition if your clinician has confirmed fat pad atrophy, but they are not specifically tested for it, and this is worth knowing.',
       ],
@@ -212,7 +212,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
   },
   program: {
     h2: 'Where an exercise plan fits in',
-    text: 'Walkito builds daily sessions around calf raises, foot-muscle work, and stretching. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito\'s is a reasonable complement to cushioning and footwear, not a replacement for it.',
+    text: '[Walkito](/program/) builds daily sessions around calf raises, foot-muscle work, and stretching. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito\'s is a reasonable complement to cushioning and footwear, not a replacement for it.',
     more: [
       'Sessions are 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito does not diagnose. If you are unsure whether your heel pain is fat pad atrophy or plantar fasciitis, see a clinician first.',
     ],

@@ -15,13 +15,13 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   page: 'heelPainAfterWalking',
   mainSource: CITE.guideline,
   published: '2026-10-07',
-  updated: '2026-10-07',
+  updated: '2026-10-10',
   title: 'Heel Pain After Walking: Why It Happens and What Helps',
   description:
     'Heel pain after walking or standing: why your heel hurts after a long walk, what conditions cause it, when to worry, and the exercises that help the most.',
   h1: 'Heel pain after walking: why your heel hurts and what to do about it',
   lede:
-    'Your heel felt fine while you were walking, but now that you have stopped it aches. Or it started partway through a long walk and got worse with each step. Both patterns point to the same thing: the tissues under your heel were loaded past what they could handle that day. The most common cause is plantar fasciitis, and the most useful response is stretching and gradual calf strengthening.',
+    'Heel pain after walking usually means the tissues under your heel were loaded past what they could handle that day. The most common cause is [plantar fasciitis](/plantar-fasciitis/), and the most useful response is stretching and gradual calf strengthening. Your heel felt fine while you were walking, but now that you have stopped it aches. Or it started partway through a long walk and got worse with each step. Both patterns point to the same overload.',
   intro: [
     'This page is about heel pain that comes on during or after walking. If your heel hurts most on the very first steps in the morning, that pattern is covered in [heel pain in the morning](/heel-pain-in-the-morning/). If your feet ache from standing in one place for hours, [feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the static-load side. The three overlap, but each has a different angle.',
   ],
@@ -39,7 +39,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       paragraphs: [
         'Walking loads the plantar fascia, the thick band of tissue under the foot, with every step. Each time the heel hits the ground and the foot rolls forward, the fascia stretches and absorbs force. In a healthy foot this is fine. But when the fascia is irritated or the calf is too tight to absorb its share, the load concentrates at the heel attachment.',
         'The result is pain that builds during or after a walk, especially a longer one than usual. The 2023 heel pain guideline lists two hallmark patterns for plantar fasciitis: first-step pain after rest, and pain that increases with prolonged weight-bearing activity. Walking is the most common prolonged weight-bearing activity there is.',
-        'A tight calf is a big part of the picture. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion had the highest odds ratio of any measured risk factor. **When the ankle cannot bend enough, every step asks the fascia to make up the difference.**',
+        'A [tight calf](/tight-calves/) is a big part of the picture. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion had the highest odds ratio of any measured risk factor. **When the ankle cannot bend enough, every step asks the fascia to make up the difference.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -62,7 +62,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       h2: 'What makes heel pain after walking different from morning heel pain?',
       paragraphs: [
         'Morning heel pain and post-walking heel pain are two sides of the same condition in most cases. Morning pain happens because the fascia stiffens and shortens overnight, then gets stretched suddenly when you stand. Post-walking pain happens because the fascia was loaded repetitively during the walk and the tissue is telling you it has had enough.',
-        'The difference matters for timing your exercises. Morning pain responds best to a plantar fascia stretch done before your first step. Post-walking pain responds to managing the load:',
+        'The difference matters for timing your exercises. Morning pain responds best to a [plantar fascia stretch](/exercises/plantar-fascia-stretch/) done before your first step. Post-walking pain responds to managing the load:',
         {
           list: [
             'Walking a distance the foot can handle.',
@@ -70,7 +70,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
             'Using stretching and calf work to raise the threshold.',
           ],
         },
-        '[Heel pain in the morning](/heel-pain-in-the-morning/) covers the morning stretches and night splints in detail.',
+        '[Heel pain in the morning](/heel-pain-in-the-morning/) covers the morning stretches and [night splints](/night-splints-plantar-fasciitis/) in detail.',
         'If you have both morning pain and pain after walking, that is the typical plantar fasciitis pattern. The exercises overlap. The morning stretch and the calf stretches help both. The calf strengthening raises the capacity of the whole chain so that your daily walking load falls inside what the tissues can handle.',
       ],
       cites: [CITE.guideline],
@@ -244,7 +244,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not have to figure out the exercises, the doses or when to move up a level. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. If yesterday included more walking than usual and the morning score spikes, the session adjusts automatically.',
+    text: 'You do not have to figure out the exercises, the doses or when to move up a level. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. If yesterday included more walking than usual and the morning score spikes, the session adjusts automatically.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the morning goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the work is raising your walking threshold.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If heel pain after walking is getting worse despite the exercises, see a clinician first.',

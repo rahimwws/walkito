@@ -60,13 +60,13 @@ export const SHIN_SPLINTS_EN: Guide = {
   lang: 'en',
   page: 'shinSplints',
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: "Shin Splints Exercises: What Helps and What Doesn't",
   description:
     'Shin splints exercises for runners: what the research shows, starting doses, how to tell shin splints from a stress fracture, and when to see a clinician.',
   h1: "Shin splints exercises: what helps and what doesn't",
   lede:
-    'Shin splints is pain along the inner edge of the shinbone, spread over several inches rather than one sore spot. The clinical name is medial tibial stress syndrome, or MTSS. Most pages list exercises as if they are proven to speed recovery. A 2013 systematic review of every treatment trial found that stretching and strengthening exercises have not been shown to shorten it.',
+    'What reliably helps shin splints is cutting back the running load that caused them: in a 2013 review of 11 treatment trials, stretching and strengthening exercises were not shown to shorten recovery. Shin splints is pain along the inner edge of the shinbone, spread over several inches rather than one sore spot. The clinical name is medial tibial stress syndrome, or MTSS. Most pages list exercises as if they are proven to speed recovery.',
   intro: [
     'That does not mean exercise is useless. The exercises below target calf endurance, shin strength and hip control, the areas where researchers have found differences between people with and without shin splints. A case-control study found runners with shin splints could do fewer calf raises to failure than matched controls without it.',
     'Whether building that endurance back up shortens recovery is still an open question. The surest lever, in every trial so far, is cutting back the running load that caused it.',
@@ -364,7 +364,7 @@ export const SHIN_SPLINTS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: `Walkito has no dedicated shin splints program, and this page explains why: no exercise program has been proven to speed recovery from shin splints in a trial. What Walkito does have is calf, ankle and balance work that targets the same muscles researchers have studied, plus a plan that adapts to how each morning feels.`,
+    text: `[Walkito](/program/) has no dedicated shin splints program, and this page explains why: no exercise program has been proven to speed recovery from shin splints in a trial. What Walkito does have is calf, ankle and balance work that targets the same muscles researchers have studied, plus a plan that adapts to how each morning feels.`,
     more: [
       `You pick ${DAYS} days a week and sessions of ${MINUTES} minutes. Every ${PROGRAM.testEveryDays} days (then every ${PROGRAM.testEveryDaysAfterGoal} once your first goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the lower-leg work is doing anything.`,
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If your shin pain is focal, getting worse, or showing up at rest, see a clinician before loading it further.',

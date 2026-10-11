@@ -54,7 +54,7 @@ export const SEVERS_EN: Guide = {
         {
           list: [
             'High levels of running and jumping activity.',
-            'Tight calf muscles.',
+            '[Tight calf](/tight-calves/) muscles.',
             'Limited ankle flexibility.',
             'A high BMI.',
             'Hard playing surfaces.',
@@ -68,7 +68,7 @@ export const SEVERS_EN: Guide = {
       h2: "What does Sever's disease feel like?",
       paragraphs: [
         'The main symptom is pain at the back or sides of the heel, usually during or after activity and especially after running or jumping. The pain is often described as a bruise. There is rarely visible swelling or bruising. **Pressing or squeezing the sides of the heel usually reproduces the pain.** This squeeze test is the standard clinical check.',
-        "Unlike plantar fasciitis in adults, which is worst on the first steps after rest, Sever's disease pain tends to get worse with activity and does not improve with walking. Some children start limping or walking on their toes to avoid putting weight on the heel.",
+        "Unlike [plantar fasciitis](/plantar-fasciitis/) in adults, which is worst on the first steps after rest, Sever's disease pain tends to get worse with activity and does not improve with walking. Some children start limping or walking on their toes to avoid putting weight on the heel.",
         'The pain can range from mild, only noticeable during sport, to severe enough to stop the child from playing altogether.',
       ],
     },
@@ -76,7 +76,7 @@ export const SEVERS_EN: Guide = {
       h2: "What helps Sever's disease? The evidence",
       keyFact: 'In a trial of 101 children, all three approaches improved pain, and the heel raise group reported more satisfaction at six weeks, though the difference disappeared by three months (Wiegerinck and colleagues, 2016).',
       paragraphs: [
-        "The evidence base for Sever's disease is small but growing. The three main options studied are load management (reducing painful activity), heel cups or insoles, and stretching or strengthening exercises. All three have shown benefit, and **no single one has been shown to be clearly better than the others at final follow-up.**",
+        "The evidence base for Sever's disease is small but growing. The three main options studied are load management (reducing painful activity), heel cups or [insoles](/insoles-vs-exercises/), and stretching or strengthening exercises. All three have shown benefit, and **no single one has been shown to be clearly better than the others at final follow-up.**",
         "In a 2016 trial of 101 children aged 8 to 15, Wiegerinck and colleagues compared three approaches:",
         {
           list: [
@@ -204,7 +204,7 @@ export const SEVERS_EN: Guide = {
   },
   program: {
     h2: 'A note for parents looking for an app',
-    text: "Walkito is an exercise program for adults with heel and arch pain. It is not designed for children, and its doses and progression rules assume a fully fused heel bone. If you are an adult reading this page because your own heel hurts, the adult guides may help: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [heel pain in the morning](/heel-pain-in-the-morning/), or [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). For a child, a clinician is the right starting point.",
+    text: "[Walkito](/program/) is an exercise program for adults with heel and arch pain. It is not designed for children, and its doses and progression rules assume a fully fused heel bone. If you are an adult reading this page because your own heel hurts, the adult guides may help: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [heel pain in the morning](/heel-pain-in-the-morning/), or [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/). For a child, a clinician is the right starting point.",
   },
   crumb: "Sever's disease",
   campaign: 'guide-severs',

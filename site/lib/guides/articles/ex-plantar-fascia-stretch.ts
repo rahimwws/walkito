@@ -31,7 +31,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     'How to do the plantar fascia stretch for plantar fasciitis: technique, when to stretch, how long to hold, and what the research says.',
   h1: 'Plantar fascia stretch: how to do it, sets and reps',
   lede:
-    'The plantar fascia stretch is the single stretch tested head-to-head against Achilles tendon stretching for plantar fasciitis. In a trial of 82 people with chronic heel pain, those who did the plantar fascia stretch had better pain and function scores at eight weeks than those who stretched the Achilles tendon. This page covers the technique, the dose and when the stretch matters most.',
+    'The plantar fascia stretch is the single stretch tested head-to-head against Achilles tendon stretching for [plantar fasciitis](/plantar-fasciitis/). In a trial of 82 people with chronic heel pain, those who did the plantar fascia stretch had better pain and function scores at eight weeks than those who stretched the Achilles tendon. This page covers the technique, the dose and when the stretch matters most.',
   takeaways: [
     'In a trial of 82 people with chronic plantar fasciitis, the plantar fascia stretch produced better pain and function scores at eight weeks than an Achilles tendon stretch (DiGiovanni and colleagues, 2003).',
     'At a two-year follow-up, after all participants crossed over to the plantar fascia stretch, 92% reported satisfaction with their outcome (DiGiovanni and colleagues, 2006).',
@@ -70,7 +70,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     {
       h2: 'When should you stretch the plantar fascia?',
       paragraphs: [
-        '**Before your first step in the morning.** That is the single most repeated instruction across both the trial and the 2023 guideline. The plantar fascia shortens overnight while the foot is relaxed. The first steps of the day pull it suddenly and sharply, which is why morning heel pain is the hallmark of plantar fasciitis.',
+        '**Before your first step in the morning.** That is the single most repeated instruction across both the trial and the 2023 guideline. The plantar fascia shortens overnight while the foot is relaxed. The first steps of the day pull it suddenly and sharply, which is why [morning heel pain](/heel-pain-in-the-morning/) is the hallmark of plantar fasciitis.',
         'The second most important time is before standing after any long period of sitting. The same shortening happens during rest. Stretching the fascia before loading it reduces that jolt.',
         'In the trial, participants were asked to do 10 holds of 10 seconds, three times a day, for at least eight weeks. The most critical sessions were the morning one and the one after prolonged sitting. More sessions throughout the day were encouraged if possible.',
       ],
@@ -92,7 +92,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
       h2: 'How is the plantar fascia stretch different from a calf stretch?',
       paragraphs: [
         'They target different structures. The [calf stretch](/exercises/calf-stretch/) lengthens the gastrocnemius, the big, more superficial calf muscle, through the Achilles tendon. The plantar fascia stretch pulls the toes back to load the fascia directly under the arch. The two are connected through the heel bone but respond to different positions.',
-        'A tight calf is a risk factor for plantar fasciitis on its own. In a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor. That is why the guideline recommends both stretches, not one or the other.',
+        'A [tight calf](/tight-calves/) is a risk factor for plantar fasciitis on its own. In a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor. That is why the guideline recommends both stretches, not one or the other.',
         'For the deeper calf muscle, the soleus, the stretch changes: you bend the back knee to shift the load from the gastrocnemius to the soleus. That is a separate exercise. See [soleus stretch](/exercises/soleus-stretch/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -160,7 +160,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito schedules the plantar fascia stretch on most sessions and prompts it before your first step each morning. You do not need to remember the timing or the count. The app builds a plan one week at a time, starting with stretching and adding strength work once pain settles.',
+    text: '[Walkito](/program/) schedules the plantar fascia stretch on most sessions and prompts it before your first step each morning. You do not need to remember the timing or the count. The app builds a plan one week at a time, starting with stretching and adding strength work once pain settles.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

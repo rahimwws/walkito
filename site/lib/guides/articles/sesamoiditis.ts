@@ -28,7 +28,7 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'What are the sesamoid bones and why do they hurt?',
       paragraphs: [
         'The two sesamoid bones sit under the head of the first metatarsal, the long bone behind the big toe. The medial sesamoid, closer to the center of the foot, is the one that is injured more often. Together they help the big toe push off the ground and absorb force during the push-off phase of walking.',
-        'Sesamoiditis develops when those bones or the surrounding tissues become inflamed. Activities that load the forefoot repeatedly, such as running, dancing, or jumping, are common triggers. So is a sudden increase in training volume. People with high arches or a prominent first metatarsal head are more prone to the condition because more pressure lands on that spot.',
+        'Sesamoiditis develops when those bones or the surrounding tissues become inflamed. Activities that load the forefoot repeatedly, such as running, dancing, or jumping, are common triggers. So is a sudden increase in training volume. People with [high arches](/high-arches-exercises/) or a prominent first metatarsal head are more prone to the condition because more pressure lands on that spot.',
         'The term sesamoiditis is used broadly in practice and does not have one strict definition. It can describe inflammation of the bones themselves, the surrounding soft tissues, or both. A 2025 systematic review noted that there are still no standardized guidelines for its conservative management.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -50,7 +50,7 @@ export const SESAMOIDITIS_EN: Guide = {
         'The 2025 systematic review by Biz and colleagues pooled individual-level data from 11 studies covering 59 patients. The most common treatments were:',
         {
           list: [
-            'Orthotics.',
+            '[Orthotics](/insoles-vs-exercises/).',
             'Activity modification.',
             'Corticosteroid injections.',
           ],
@@ -91,7 +91,7 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'What role does exercise play?',
       paragraphs: [
         'The honest answer is that exercise has a limited role in managing sesamoiditis itself. Unlike [plantar fasciitis](/plantar-fasciitis-exercises/) or [Achilles tendonitis](/achilles-tendonitis-exercises/), where loading programs have good trial support, there are no exercise trials for sesamoiditis. The 2025 systematic review did not identify any study testing a specific exercise protocol.',
-        'What exercise can help with is the surrounding picture. A tight calf shifts weight onto the forefoot during walking. Stretching the gastrocnemius and soleus can reduce that forward load. Weak intrinsic foot muscles may also contribute to uneven forefoot pressure distribution. Toe spreads and short foot work may help share the load more evenly across the metatarsal heads, though this has not been tested for sesamoiditis specifically.',
+        'What exercise can help with is the surrounding picture. A [tight calf](/tight-calves/) shifts weight onto the forefoot during walking. Stretching the gastrocnemius and soleus can reduce that forward load. Weak intrinsic foot muscles may also contribute to uneven forefoot pressure distribution. Toe spreads and short foot work may help share the load more evenly across the metatarsal heads, though this has not been tested for sesamoiditis specifically.',
         'If you are recovering from sesamoiditis and have lost toe strength or calf flexibility during the rest period, gentle exercises for the [ball of foot](/ball-of-foot-pain/) area can be part of a return-to-activity plan. But **offloading and activity modification are the primary tools, not exercise.**',
       ],
     },
@@ -156,7 +156,7 @@ export const SESAMOIDITIS_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      'Sesamoiditis is primarily managed with offloading and footwear, not with an exercise program. Walkito is built for conditions like plantar fasciitis and flat feet, where structured loading programs have trial support. If your sesamoiditis clears and you want to rebuild foot and calf strength as part of returning to activity, the app\'s intrinsic foot work and calf stretches may be a useful addition.',
+      'Sesamoiditis is primarily managed with offloading and footwear, not with an exercise program. [Walkito](/program/) is built for conditions like [plantar fasciitis](/plantar-fasciitis/) and [flat feet](/flat-feet/), where structured loading programs have trial support. If your sesamoiditis clears and you want to rebuild foot and calf strength as part of returning to activity, the app\'s intrinsic foot work and calf stretches may be a useful addition.',
     more: [
       'If forefoot pain is broader and involves the second or third metatarsal heads, see the [ball of foot pain](/ball-of-foot-pain/) page for exercises with more evidence behind them.',
     ],

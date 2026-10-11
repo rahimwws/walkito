@@ -23,7 +23,7 @@ export const EX_SHORT_FOOT: Guide = {
     'How to do the short foot exercise: technique cues, sets and reps, seated to standing progression, mistakes to avoid, and what research shows.',
   h1: 'Short foot exercise: how to do it, sets, and progression',
   lede:
-    'The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and plantar fasciitis programs that target the intrinsic foot muscles.',
+    'The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and [plantar fasciitis](/plantar-fasciitis/) programs that target the intrinsic foot muscles.',
   takeaways: [
     'A 2016 MRI study of 8 athletes found the short foot exercise produced the highest mean activation (up to 34.9%) across three of the four intrinsic plantar muscles tested, compared to toe spread, first-toe extension and second-to-fifth-toe extension (Gooding and colleagues, 2016).',
     'EMG research found the abductor hallucis, the muscle that supports the inner arch, was over four times more active during the short foot exercise than during towel curls (Jung and colleagues, 2011).',
@@ -36,7 +36,7 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'What is the short foot exercise?',
       paragraphs: [
         'The short foot exercise is an isometric contraction of the intrinsic foot muscles. You shorten the distance between the ball of the foot and the heel by pulling them toward each other, which lifts the arch. The toes stay flat and relaxed the whole time. A 2015 review by McKeon and colleagues named it the core exercise in their "foot core" model, comparing the intrinsic foot muscles to the deep core muscles of the trunk.',
-        'Other names for it include arch doming, foot doming, and the foot shortening exercise. It is different from a towel scrunch or a toe curl because those exercises use toe flexion, which recruits the long toe flexor muscles running down from the shin. The short foot exercise is meant to isolate the muscles that live entirely inside the foot.',
+        'Other names for it include arch doming, foot doming, and the foot shortening exercise. It is different from a [towel scrunch](/exercises/towel-scrunch/) or a toe curl because those exercises use toe flexion, which recruits the long toe flexor muscles running down from the shin. The short foot exercise is meant to isolate the muscles that live entirely inside the foot.',
       ],
       cites: [CITE.mcKeon],
     },
@@ -130,7 +130,7 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'What does the research say about short foot exercises?',
       keyFact: 'In a 2023 trial of 52 people with flexible flat feet, a six-week program combining short foot exercises, ankle work, hip strengthening and stretching changed arch shape more than a control group (Brijwasi and colleagues, 2023).',
       paragraphs: [
-        'The strongest evidence comes from programs that combine the short foot exercise with other exercises, not from the short foot alone. In a 2023 trial of 52 people with flexible flat feet, Brijwasi and colleagues tested a six-week program of:',
+        'The strongest evidence comes from programs that combine the short foot exercise with other exercises, not from the short foot alone. In a 2023 trial of 52 people with flexible [flat feet](/flat-feet/), Brijwasi and colleagues tested a six-week program of:',
         {
           list: [
             'Short foot exercises.',
@@ -184,7 +184,7 @@ export const EX_SHORT_FOOT: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a plan that includes the short foot exercise in a three-step progression: seated, standing, then single-leg. Each step opens once two sessions at the current level felt easy. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks whether your arch hold time is improving.',
+    text: '[Walkito](/program/) builds a plan that includes the short foot exercise in a three-step progression: seated, standing, then single-leg. Each step opens once two sessions at the current level felt easy. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks whether your arch hold time is improving.',
     cta: 'Start with 3 minutes a day.',
   },
   crumb: 'Short foot exercise',

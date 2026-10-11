@@ -206,7 +206,7 @@ export const FLAT_FEET_KIDS_EN: Guide = {
       h2: 'Will my child have foot problems as an adult?',
       paragraphs: [
         '**Most children with flexible, pain-free flat feet grow into adults without foot problems.** The 2022 Cochrane review went as far as saying that what is known about how children’s feet develop puts most flat foot worries to rest, and that research money should go to children with real foot conditions instead. The 1987 survey of 441 people found the flat feet of adults still sat within the normal range.',
-        'There is an honest gap here. No trial has followed a large group of pain-free flat-footed children into middle age to see who later gets pain. Some adults with flat feet do get arch, heel or knee pain, and the [flat feet guide](/flat-feet/) covers what helps them.',
+        'There is an honest gap here. No trial has followed a large group of pain-free flat-footed children into middle age to see who later gets pain. Some adults with flat feet do get arch, heel or [knee pain](/flat-feet-knee-pain/), and the [flat feet guide](/flat-feet/) covers what helps them.',
         'Many parents searching this have flat feet themselves. If your own feet ache at the end of the day, that is a separate question from your child’s. Walkito is an exercise app for adults with heel, arch and leg pain, and its flat feet plan is built for grown-up feet, not children’s.',
       ],
       cites: [CITE.evansCochrane2022, CITE.staheliArch],
@@ -258,7 +258,7 @@ export const FLAT_FEET_KIDS_EN: Guide = {
   },
   program: {
     h2: 'A note for parents looking for an app',
-    text: 'Walkito is an exercise program for adults with heel, arch and leg pain. It is not designed for children, and its doses and progressions assume an adult foot. Nothing on this page is a suggestion to use it with a child. For a child whose feet hurt, a GP, paediatrician, physiotherapist or podiatrist is the right first step.',
+    text: '[Walkito](/program/) is an exercise program for adults with heel, arch and leg pain. It is not designed for children, and its doses and progressions assume an adult foot. Nothing on this page is a suggestion to use it with a child. For a child whose feet hurt, a GP, paediatrician, physiotherapist or podiatrist is the right first step.',
     more: [
       'If you are reading this because your own flat feet ache, the adult guides may help: [flat feet exercises](/flat-feet-exercises/) and [arch pain](/arch-pain/).',
     ],

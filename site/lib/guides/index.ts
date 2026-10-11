@@ -5,7 +5,7 @@ import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArt
 import { shareCard } from '@/lib/share';
 import { SITE_NAME, pageTitle, smartBannerContent, type AppScreen } from '@/lib/site';
 
-import { groupOf } from '@/lib/nav';
+import { NAV_GROUPS, groupOf, type GuideKey, type NavGroup } from '@/lib/nav';
 
 import { ARTICLES_EN } from './articles-en';
 import { ARTICLES_ES } from './articles-es';
@@ -94,6 +94,15 @@ export function relatedGuides(guide: Guide, max = 5): Guide[] {
           : (Object.values(ARTICLES_NEW[guide.lang as NewLang]) as Guide[]);
   const all = [...translated, ...english].filter((g) => g.page !== guide.page);
   const own = groupOf(guide.page);
+  // Within the topic, the pages that come next in the topic's order, wrapping
+  // round: every page is then offered by its neighbours, instead of the first
+  // five of a long topic taking every slot and the rest getting none.
+  const order: readonly GuideKey[] = own ? NAV_GROUPS[own] : [];
+  const at = order.indexOf(guide.page as GuideKey);
+  const dist = (g: Guide) => {
+    const i = order.indexOf(g.page as GuideKey);
+    return i < 0 || at < 0 ? 0 : (i - at + order.length) % order.length;
+  };
   const rank = (g: Guide) =>
     own && groupOf(g.page) === own
       ? 0
@@ -102,11 +111,17 @@ export function relatedGuides(guide: Guide, max = 5): Guide[] {
         : groupOf(g.page) === 'compare' || groupOf(g.page) === 'library'
           ? 3
           : 2;
-  return all
+  const picked = all
     .map((g, i) => ({ g, i }))
-    .sort((x, y) => rank(x.g) - rank(y.g) || x.i - y.i)
+    .sort((x, y) => rank(x.g) - rank(y.g) || (rank(x.g) === 0 ? dist(x.g) - dist(y.g) : 0) || x.i - y.i)
     .slice(0, max)
     .map((x) => x.g);
+  // Heel pain pages end with the app comparison: the next step for a reader
+  // who has the exercises and wants a plan (plan B.11, reader stages).
+  const heelGroups: readonly (NavGroup | null)[] = ['exercises', 'pain', 'heel', 'tools', 'work'];
+  const bestApp = all.find((g) => g.page === 'bestApp');
+  if (bestApp && heelGroups.includes(own) && !picked.includes(bestApp) && picked.length === max) picked[max - 1] = bestApp;
+  return picked;
 }
 
 /** A guide's metadata: title, description, canonical and hreflang together, so

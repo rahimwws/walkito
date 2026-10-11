@@ -100,7 +100,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
         'The 2023 clinical practice guideline for heel pain, published in the Journal of Orthopaedic and Sports Physical Therapy, focuses on plantar fasciitis as the most common cause of plantar heel pain. It mentions "heel spur syndrome" as one of several differential diagnoses, alongside:',
         {
           list: [
-            'Fat pad syndrome.',
+            '[Fat pad syndrome](/heel-fat-pad-syndrome/).',
             'Nerve irritation.',
             'Calcaneal stress fracture.',
           ],
@@ -130,7 +130,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     {
       h2: 'If the spur is not the problem, what is?',
       paragraphs: [
-        'The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a tight calf, high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.',
+        'The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a [tight calf](/tight-calves/), high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.',
         'A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls:',
         {
           list: [
@@ -261,7 +261,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Whether your X-ray shows a spur or not, the exercise approach is the same. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. Calf strength work is added once the first goal moves past settling pain into building capacity.',
+    text: 'Whether your X-ray shows a spur or not, the exercise approach is the same. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. Calf strength work is added once the first goal moves past settling pain into building capacity.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the goal is met), a short test checks calf endurance, arch hold and balance, so you can track progress instead of guessing.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If you are unsure whether your heel pain is plantar fasciitis, a heel spur or something else, see a clinician first.',

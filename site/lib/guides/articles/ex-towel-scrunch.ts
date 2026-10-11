@@ -21,7 +21,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
     'How to do the towel scrunch (towel curls) for stronger feet: technique, sets and reps, what it works, mistakes, and how it compares to short foot.',
   h1: 'Towel scrunch: how to do towel curls for foot strength',
   lede:
-    'The towel scrunch is an exercise where you pull a towel toward you using only your toes. It targets the small muscles under the arch and the toe flexors. It is one of the oldest and simplest foot-strengthening exercises in rehabilitation, and it appears in exercise programs for flat feet, plantar fasciitis and ball-of-foot pain.',
+    'The towel scrunch is an exercise where you pull a towel toward you using only your toes. It targets the small muscles under the arch and the toe flexors. It is one of the oldest and simplest foot-strengthening exercises in rehabilitation, and it appears in exercise programs for [flat feet](/flat-feet/), [plantar fasciitis](/plantar-fasciitis/) and ball-of-foot pain.',
   takeaways: [
     'Towel scrunches activate the intrinsic foot muscles, but EMG research shows they also recruit the long toe flexors (extrinsic muscles) more than the short foot exercise does (Jung and colleagues, 2011).',
     'In a 2012 RCT of healthy adults, a four-week towel curl group improved balance less than a short foot exercise group, though both improved compared to baseline (Lynn and colleagues, 2012).',
@@ -141,7 +141,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito uses the towel scrunch as an early foot-strengthening exercise. Once it feels easy for two sessions in a row, the plan moves you to the short foot exercise and its seated-to-standing progression. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
+    text: '[Walkito](/program/) uses the towel scrunch as an early foot-strengthening exercise. Once it feels easy for two sessions in a row, the plan moves you to the short foot exercise and its seated-to-standing progression. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
     cta: 'Start with 3 minutes a day.',
   },
   crumb: 'Towel scrunch (towel curls)',

@@ -36,7 +36,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     'Heel pain at night or at rest can signal stress fractures, nerve entrapment or arthritis. Red-flag patterns and when to see a clinician.',
   h1: 'Heel pain at night: what causes it and when it is a red flag',
   lede:
-    'Heel pain that shows up at night, in bed, or at rest is a different pattern from the classic first-step-in-the-morning pull of plantar fasciitis. Night and rest pain can signal a calcaneal stress fracture, nerve entrapment, inflammatory arthritis, or another condition that needs a clinician. This page walks through the common causes and the ones you should not sit on.',
+    'Heel pain that shows up at night, in bed, or at rest is a different pattern from the classic first-step-in-the-morning pull of [plantar fasciitis](/plantar-fasciitis/). Night and rest pain can signal a calcaneal stress fracture, nerve entrapment, inflammatory arthritis, or another condition that needs a clinician. This page walks through the common causes and the ones you should not sit on.',
   intro: [
     'If your heel hurts mainly with your first steps in the morning and then eases up, the more likely starting point is [heel pain in the morning](/heel-pain-in-the-morning/). This page is for pain that persists at rest, wakes you up, or arrives after you have been off your feet for a while and does not match the typical plantar fasciitis pattern.',
   ],
@@ -54,7 +54,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       paragraphs: [
         'Plantar fasciitis causes pain because the fascia stiffens while you sleep and then stretches sharply when you stand. That pain peaks on the first step and gets better as you move. **If your heel hurts while you are lying in bed and not bearing weight at all, a different mechanism is usually responsible.**',
         'An 2018 review in American Family Physician lists several causes of heel pain that behave differently from plantar fasciitis. The key distinction: plantar fasciitis pain improves with activity, while pain from stress fractures, nerve entrapment, tumours, and inflammatory conditions does not follow that pattern.',
-        'The foot also points downward (plantarflexion) during sleep. That position can shorten the Achilles tendon and calf, which sometimes contributes to discomfort at the heel. Night splints address this by holding the ankle at a neutral angle. But a night splint is a tool for plantar fasciitis, not a substitute for investigating pain that genuinely worsens at rest.',
+        'The foot also points downward (plantarflexion) during sleep. That position can shorten the Achilles tendon and calf, which sometimes contributes to discomfort at the heel. [Night splints](/night-splints-plantar-fasciitis/) address this by holding the ankle at a neutral angle. But a night splint is a tool for plantar fasciitis, not a substitute for investigating pain that genuinely worsens at rest.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },
@@ -220,7 +220,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
   },
   program: {
     h2: 'When exercise is the right step',
-    text: 'If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline\'s top-graded approach. Walkito builds a daily plan around calf and fascia loading, starting with stretches and working up to strength exercises at your pace.',
+    text: 'If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline\'s top-graded approach. [Walkito](/program/) builds a daily plan around calf and fascia loading, starting with stretches and working up to strength exercises at your pace.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If your heel pain is worse at night or at rest, see a clinician before you start loading the foot.',
     ],

@@ -36,7 +36,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
     'Heel spur exercises and stretches for the plantar fascia and calf: the routine, doses, and progression that ease pain without dissolving the spur.',
   h1: 'Heel spur exercises: stretches and strengthening for the pain around a spur',
   lede:
-    'Exercise does not dissolve a heel spur. The spur is bone, and bone does not shrink from stretching. But the pain people feel when they have a heel spur almost always comes from the plantar fascia and calf around it, not from the bone itself. The exercises below target those soft tissues. They are the same ones the 2023 heel pain guideline recommends for plantar fasciitis.',
+    'Exercise does not dissolve a heel spur. The spur is bone, and bone does not shrink from stretching. But the pain people feel when they have a heel spur almost always comes from the plantar fascia and calf around it, not from the bone itself. The exercises below target those soft tissues. They are the same ones the 2023 heel pain guideline recommends for [plantar fasciitis](/plantar-fasciitis/).',
   intro: [
     'If you want to understand the difference between a heel spur and plantar fasciitis first, see [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/). This page is the practical routine: which exercises, how many, how to progress, and when to stop.',
   ],
@@ -182,7 +182,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
         ],
       },
       after: [
-        'Add the plantar fascia stretch and calf stretches at every level. Stretching is not something you drop when you start strengthening. The guideline grades both independently.',
+        'Add the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) and calf stretches at every level. Stretching is not something you drop when you start strengthening. The guideline grades both independently.',
         'For more detail on the towel heel raise protocol and the research behind it, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -246,7 +246,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       h2: 'How long before heel spur pain improves with exercise?',
       paragraphs: [
         'There is no trial measuring exercise outcomes specifically for people with heel spurs. The timelines below come from plantar fasciitis studies, which is the condition producing the pain around the spur in most cases.',
-        'A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care such as stretching and shoe inserts, often within several months (Latt and colleagues, 2020). In the Rathleff 2015 trial, the loaded heel-raise group was significantly ahead of the stretching-only group by three months.',
+        'A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care such as stretching and [shoe inserts](/insoles-vs-exercises/), often within several months (Latt and colleagues, 2020). In the Rathleff 2015 trial, the loaded heel-raise group was significantly ahead of the stretching-only group by three months.',
         'No exercise program can promise a timeline for any one person. **What you can measure is whether things are changing**:',
         {
           list: [
@@ -325,7 +325,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not have to track the levels, the sets or when to progress. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. The calf chain, seated raises through to the loaded towel raise, moves at your pace.',
+    text: 'You do not have to track the levels, the sets or when to progress. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is morning pain at or under 1 out of 10 for 14 days in a row. Stretching starts on day one. The calf chain, seated raises through to the loaded towel raise, moves at your pace.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the morning goal is met), a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

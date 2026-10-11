@@ -16,7 +16,7 @@ export const EX_ANKLE_ROCKS: Guide = {
     'How to do ankle rocks, the knee-over-toes drill for ankle mobility: technique, sets and reps, why ankle bend matters, and how to test it.',
   h1: 'Ankle rocks: how to do them, why ankle mobility matters',
   lede:
-    'Ankle rocks are a standing exercise where the knee travels forward over the toes while the heel stays flat on the floor. They build ankle dorsiflexion, how far the ankle bends when the foot is on the ground. In a case-control study of 50 people with plantar fasciitis and 100 controls, reduced dorsiflexion was the single strongest risk factor, at 23.3 times the odds.',
+    'Ankle rocks are a standing exercise where the knee travels forward over the toes while the heel stays flat on the floor. They build ankle dorsiflexion, how far the ankle bends when the foot is on the ground. In a case-control study of 50 people with [plantar fasciitis](/plantar-fasciitis/) and 100 controls, reduced dorsiflexion was the single strongest risk factor, at 23.3 times the odds.',
   takeaways: [
     'Reduced ankle dorsiflexion was the strongest independent risk factor for plantar fasciitis in a matched case-control study, at 23.3 times the odds (Riddle and colleagues, 2003).',
     'Ankle rocks build dorsiflexion by loading the end of the range under bodyweight, unlike a passive wall stretch.',
@@ -63,7 +63,7 @@ export const EX_ANKLE_ROCKS: Guide = {
             'The plantar fascia absorbs forces it was not designed for.',
           ],
         },
-        'In the Riddle 2003 case-control study, **reduced ankle dorsiflexion was the variable with the largest independent effect**, at 23.3 times the odds of developing plantar fasciitis. That was stronger than BMI, standing time or running distance. A tight calf, specifically the gastrocnemius, was present in 52 to 60 percent of 254 people with plantar fasciitis in a separate review.',
+        'In the Riddle 2003 case-control study, **reduced ankle dorsiflexion was the variable with the largest independent effect**, at 23.3 times the odds of developing plantar fasciitis. That was stronger than BMI, standing time or running distance. A [tight calf](/tight-calves/), specifically the gastrocnemius, was present in 52 to 60 percent of 254 people with plantar fasciitis in a separate review.',
         'Stretching the calf passively (as in the [calf stretch](/exercises/calf-stretch/) and [soleus stretch](/exercises/soleus-stretch/)) addresses one side of the problem: muscle length. Ankle rocks address the other side: active control at end-range. Rocking the knee over the toes under bodyweight teaches the ankle to use the range it has, not just reach it passively.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -73,7 +73,7 @@ export const EX_ANKLE_ROCKS: Guide = {
       paragraphs: [
         'The [calf stretch](/exercises/calf-stretch/) is a passive hold. You lean into the wall and wait for the muscle to lengthen. The back leg is straight, which targets the gastrocnemius. The [soleus stretch](/exercises/soleus-stretch/) does the same with a bent knee.',
         'Ankle rocks are an active, repetitive movement. You push the knee forward, come back, push again. You are loading the ankle through its range rather than holding still at end-range. Ankle rocks build the ability to use dorsiflexion under load, which is what walking and running actually require.',
-        'Both are useful. **Stretching opens the range. Ankle rocks train you to use it.** The guideline grades calf stretching A. Ankle rocks are part of the ankle mobility work Walkito programs alongside those stretches.',
+        'Both are useful. **Stretching opens the range. Ankle rocks train you to use it.** The guideline grades calf stretching A. Ankle rocks are part of the [ankle mobility](/ankle-mobility-exercises/) work Walkito programs alongside those stretches.',
       ],
       cites: [CITE.guideline],
     },
@@ -144,7 +144,7 @@ export const EX_ANKLE_ROCKS: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito programs ankle rocks on mobility days, alongside the calf and soleus stretches. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
+    text: '[Walkito](/program/) programs ankle rocks on mobility days, alongside the calf and soleus stretches. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
     more: [
       'A centimeter of improvement in the knee-to-wall score over a few weeks is meaningful. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

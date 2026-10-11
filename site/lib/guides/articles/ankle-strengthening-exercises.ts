@@ -27,7 +27,7 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
     'Ankle strengthening exercises in order: band work, calf and tibialis raises, single-leg balance. Doses, re-sprain evidence and when to see a clinician.',
   h1: 'Ankle strengthening exercises: a progression from band to balance',
   lede:
-    'The best ankle strengthening exercises combine resistance band work for the muscles that turn the foot in and out, calf and tibialis raises, and single-leg balance. Balance training has the strongest evidence: in a trial of 522 athletes after a sprain, a home balance program cut repeat sprains from 33 to 22 percent over a year.',
+    'The best ankle strengthening exercises combine resistance band work for the muscles that turn the foot in and out, calf and [tibialis raises](/exercises/tibialis-raises/), and [single-leg balance](/exercises/single-leg-balance/). Balance training has the strongest evidence: in a trial of 522 athletes after a sprain, a home balance program cut repeat sprains from 33 to 22 percent over a year.',
   intro: [
     'An ankle that feels unreliable after a sprain, ankles that roll in sport and shaky balance with age all use the same building blocks. What changes is where you start. This page puts the exercises in order and links to the full how-to for each.',
   ],
@@ -288,7 +288,7 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a plan one week at a time around foot and leg pain goals. It includes balance, band inversion, tibialis raises, calf raises and hip work. Each week it can move the exercise for your main goal one step harder (for balance: single-leg hold, then eyes closed, then standing on a pillow), but only when your last two sessions with it felt easy and morning pain did not rise. If a session felt hard or pain went up, it steps back instead. The band inversion and tibialis raises do not move up this way. It does not have an ankle sprain program, and it does not check whether an ankle is broken or torn.',
+    text: '[Walkito](/program/) builds a plan one week at a time around foot and leg pain goals. It includes balance, band inversion, tibialis raises, calf raises and hip work. Each week it can move the exercise for your main goal one step harder (for balance: single-leg hold, then eyes closed, then standing on a pillow), but only when your last two sessions with it felt easy and morning pain did not rise. If a session felt hard or pain went up, it steps back instead. The band inversion and tibialis raises do not move up this way. It does not have an ankle sprain program, and it does not check whether an ankle is broken or torn.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every two weeks at first (every four once you reach a goal), a short test checks calf endurance, arch hold and balance. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],

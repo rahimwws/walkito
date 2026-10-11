@@ -15,7 +15,7 @@ export const PTTD_EN: Guide = {
     'Posterior tibial tendon dysfunction, often called PTTD, happens when the tendon that supports the arch on the inside of the ankle weakens or becomes inflamed. It is the most common cause of adult-acquired flatfoot. Exercise can help in the early stages, but not every stage responds the same way, and the evidence is still limited. This page covers the stages, the exercises with the best support, and when a boot or surgery enters the picture.',
   intro: [
     'The posterior tibial tendon runs behind the inner ankle bone and attaches under the foot. It holds the arch up during walking. When it degenerates, the arch flattens, the heel tilts outward, and pain settles along the inner ankle or inner midfoot.',
-    'A 2018 systematic review found only three randomized or controlled trials totalling 93 people, so the exercise evidence here is much thinner than for conditions like [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis.',
+    'A 2018 systematic review found only three randomized or controlled trials totalling 93 people, so the exercise evidence here is much thinner than for conditions like [plantar fasciitis](/plantar-fasciitis-exercises/) or [Achilles tendonitis](/achilles-tendonitis-exercises/).',
   ],
   toc: true,
   takeaways: [
@@ -151,7 +151,7 @@ export const PTTD_EN: Guide = {
       h2: 'How does PTTD relate to flat feet?',
       paragraphs: [
         'PTTD is the most common cause of adult-acquired flatfoot, meaning a flat foot that develops in adulthood rather than being present since childhood. **If you had normal arches and they have started to drop on one side, with pain behind the inner ankle, PTTD is the most likely explanation.**',
-        'Congenital flexible flat feet, the kind present since childhood, are a different situation. They may never cause symptoms. The exercises overlap: short foot, band inversion, and heel raises appear in both [flat feet exercises](/flat-feet-exercises/) and PTTD programs. But the clinical context is different, and PTTD usually needs orthotics and closer monitoring because the tendon is degenerating, not simply lax.',
+        'Congenital flexible [flat feet](/flat-feet/), the kind present since childhood, are a different situation. They may never cause symptoms. The exercises overlap: short foot, band inversion, and heel raises appear in both [flat feet exercises](/flat-feet-exercises/) and PTTD programs. But the clinical context is different, and PTTD usually needs [orthotics](/insoles-vs-exercises/) and closer monitoring because the tendon is degenerating, not simply lax.',
         'If you are not sure whether your flat foot is long-standing or new, a clinician can compare the two feet, check the tendon, and look at the heel alignment when you stand.',
       ],
       cites: [CITE.ling, CITE.zarali],
@@ -184,7 +184,7 @@ export const PTTD_EN: Guide = {
     {
       q: 'What does posterior tibial tendon pain feel like?',
       cites: [CITE.ling],
-      a: 'The pain usually sits behind or below the inner ankle bone. It can extend along the inner arch. It gets worse with activity, especially walking uphill, on uneven ground, or during single-leg balance. The area may swell. A common early sign is difficulty doing a single-leg heel raise on the affected side.',
+      a: 'The pain usually sits behind or below the inner ankle bone. It can extend along the inner arch. It gets worse with activity, especially walking uphill, on uneven ground, or during [single-leg balance](/exercises/single-leg-balance/). The area may swell. A common early sign is difficulty doing a single-leg heel raise on the affected side.',
     },
     {
       q: 'Do I need orthotics for PTTD?',
@@ -224,7 +224,7 @@ export const PTTD_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito includes band inversion, short foot, and heel raises in its exercise library, and schedules them on strength days as part of an arch and balance program. When you mark the inner ankle or arch on the pain map during a check-in, the session adjusts around that input. The app is built for plantar fasciitis and flat feet. PTTD overlaps with both, but the app does not diagnose PTTD and does not replace orthoses or clinical staging.',
+    text: '[Walkito](/program/) includes band inversion, short foot, and heel raises in its exercise library, and schedules them on strength days as part of an arch and balance program. When you mark the inner ankle or arch on the pain map during a check-in, the session adjusts around that input. The app is built for [plantar fasciitis](/plantar-fasciitis/) and flat feet. PTTD overlaps with both, but the app does not diagnose PTTD and does not replace orthoses or clinical staging.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold, and balance, so you can see what is changing. If you have been diagnosed with PTTD, use the app alongside orthoses and check with your clinician that the stage is appropriate for exercise.',
     ],

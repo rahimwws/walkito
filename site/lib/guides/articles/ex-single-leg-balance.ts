@@ -107,7 +107,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
           ],
         },
         'A deficit anywhere in that chain makes the foot compensate.',
-        'For plantar fasciitis and flat feet, balance training appears in exercise programs alongside stretching and strengthening because it trains the whole chain at once. A 2023 trial of 52 people with flexible flat feet found that a program combining short-foot exercises, ankle work, hip strengthening, stretching and balance work changed arch shape more than a control group. Balance was not isolated in that trial, but it was part of the program that worked.',
+        'For [plantar fasciitis](/plantar-fasciitis/) and [flat feet](/flat-feet/), balance training appears in exercise programs alongside stretching and strengthening because it trains the whole chain at once. A 2023 trial of 52 people with flexible flat feet found that a program combining short-foot exercises, ankle work, hip strengthening, stretching and balance work changed arch shape more than a control group. Balance was not isolated in that trial, but it was part of the program that worked.',
         'For ankle sprains specifically, a 2018 meta-analysis of 8 studies and 3,577 athletes found that balance training reduced ankle sprain risk by 46 percent compared to no intervention. That is the strongest single finding behind including balance in a foot program.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],
@@ -172,7 +172,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito includes the single-leg hold and the eyes-closed stand as part of a plan alongside calf raises, stretches and foot exercises. The balance goal is 30 seconds on each leg. Every 14 days, a short test checks how long you can hold, and the two-sided gap is tracked too.',
+    text: '[Walkito](/program/) includes the single-leg hold and the eyes-closed stand as part of a plan alongside calf raises, stretches and foot exercises. The balance goal is 30 seconds on each leg. Every 14 days, a short test checks how long you can hold, and the two-sided gap is tracked too.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Once the balance goal is met, the test moves to every 28 days and a new goal takes its place. Walkito is an exercise program. It does not diagnose.',
     ],

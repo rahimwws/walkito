@@ -22,15 +22,15 @@ export const CALF_RAISE_TEST_EN: Guide = {
   page: 'calfRaiseTest' as any,
   mainSource: CITE.hebertLosier,
   published: '2026-10-05',
-  updated: '2026-10-05',
+  updated: '2026-10-10',
   title: 'Calf Raise Test: Norms by Age, Protocol, Results',
   description:
     'The single-leg calf raise test measures calf endurance. See the protocol, normative values by age and sex, what your score means, and how to improve it.',
   h1: 'Calf raise test: how many should you do, and what does your score mean?',
   lede:
-    'The single-leg calf raise test, also called the heel-rise test, measures the endurance of your calf muscles. You stand on one foot and rise onto your toes as many times as you can at a set pace. The count tells you how much fatigue-resistant strength the calf has on each side, which matters for walking, running, and recovering from heel or Achilles injuries.',
+    'Healthy adults do about 23 to 24 single-leg calf raises per leg on average, in a study of 566 people aged 20 to 81, and the number shifts with age, sex and activity. The single-leg calf raise test, also called the heel-rise test, measures the endurance of your calf muscles. You stand on one foot and rise onto your toes as many times as you can at a set pace. The count tells you how much fatigue-resistant strength the calf has on each side, which matters for walking, running, and recovering from heel or Achilles injuries.',
   intro: [
-    'A 2017 study of 566 healthy adults found an overall median of about 23 to 24 repetitions per leg, shifting by age, sex, and activity level. This page covers the research protocol, a home version, normative values by age, what a left-right gap means, and how the test connects to heel pain and running.',
+    'This page covers the research protocol, a home version, normative values by age, what a left-right gap means, and how the test connects to heel pain and running.',
   ],
   takeaways: [
     'The overall median for healthy adults is 24 repetitions on the right leg and 23 on the left, from a study of 566 people aged 20 to 81 (Hebert-Losier and colleagues, 2017).',
@@ -50,7 +50,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
         {
           list: [
             'To track recovery from Achilles tendon ruptures.',
-            'To screen for calf weakness in people with heel pain or shin splints.',
+            'To screen for calf weakness in people with heel pain or [shin splints](/shin-splints-exercises/).',
             'To compare one leg to the other.',
           ],
         },
@@ -150,7 +150,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
             'Unfamiliarity with the test.',
           ],
         },
-        '**The test is not a diagnosis.** A score of 15 in a 30-year-old male does not mean he has plantar fasciitis or Achilles tendonitis. It means his calf endurance is below the median of 33 for that group.',
+        '**The test is not a diagnosis.** A score of 15 in a 30-year-old male does not mean he has [plantar fasciitis](/plantar-fasciitis/) or Achilles tendonitis. It means his calf endurance is below the median of 33 for that group.',
         'A clinician combines the count with other findings to decide whether the number explains a symptom. The test is more informative as a trend than a single data point: going from 14 to 22 over two months is a clearer signal than any one number compared to a table.',
       ],
       cites: [CITE.hebertLosier],
@@ -235,7 +235,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
     {
       q: 'What are signs of weak calves?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during single-leg balance. The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels.',
+      a: 'Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during [single-leg balance](/exercises/single-leg-balance/). The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels.',
     },
     {
       q: 'Where should you feel a calf raise?',
@@ -257,7 +257,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito runs the single-leg calf raise test every 14 days and tracks both legs. The calf goal is 25 single-leg raises. The symmetry goal is a left-right gap under 10 percent. The app computes the gap as the difference between the stronger and weaker side, divided by the stronger side. Once both goals are met, the test widens to every 28 days and the plan shifts to the next active goal.',
+    text: '[Walkito](/program/) runs the single-leg calf raise test every 14 days and tracks both legs. The calf goal is 25 single-leg raises. The symmetry goal is a left-right gap under 10 percent. The app computes the gap as the difference between the stronger and weaker side, divided by the stronger side. Once both goals are met, the test widens to every 28 days and the plan shifts to the next active goal.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The calf work starts with seated raises and moves up through double-leg, hold, towel, eccentric drops and pogo hops at your own pace. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

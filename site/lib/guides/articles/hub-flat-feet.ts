@@ -67,7 +67,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       keyFact: 'The Framingham Foot Study of about 1,900 adults found no link between flat foot posture and back pain, though a pronated walking gait showed a small link in women only (Menz and colleagues, 2013).',
       paragraphs: [
         '**For most people, no.** A flexible flat foot that causes no pain and does not limit what you do is a normal variation in foot shape, not a condition that needs solving.',
-        'The worry people most often bring up is back pain. The largest study on the question, the Framingham Foot Study, looked at about 1,900 adults. What it found:',
+        'The worry people most often bring up is [back pain](/flat-feet-back-pain/). The largest study on the question, the Framingham Foot Study, looked at about 1,900 adults. What it found:',
         {
           list: [
             '**Overall:** no association between flat foot posture and low back pain.',
@@ -84,7 +84,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
     {
       h2: 'What is adult-acquired flatfoot?',
       paragraphs: [
-        'Adult-acquired flatfoot deformity is a condition where an arch that was normal collapses in adulthood, usually because the posterior tibial tendon (the tendon that holds up the arch from the inside of the ankle) weakens and can no longer do its job. The clinical name for the tendon problem is posterior tibial tendon dysfunction.',
+        'Adult-acquired flatfoot deformity is a condition where an arch that was normal collapses in adulthood, usually because the posterior tibial tendon (the tendon that holds up the arch from the inside of the ankle) weakens and can no longer do its job. The clinical name for the tendon problem is [posterior tibial tendon dysfunction](/posterior-tibial-tendon-dysfunction-exercises/).',
         'The posterior tibial tendon runs behind the inside ankle bone and attaches to the bones that form the arch. When it stretches or tears, the arch drops, the heel tilts outward, and the forefoot can start to point away from the midline.',
         'Pain and swelling along the inside of the ankle are common early signs. A single-heel rise test, where you try to stand on one foot and rise onto your toes, may be difficult or painful on the affected side.',
         'An overview in The Open Orthopaedics Journal describes four stages:',
@@ -120,7 +120,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       h2: 'Do shoes and insoles help flat feet?',
       paragraphs: [
         'Supportive shoes with a firm midsole and some arch support can make standing and walking more comfortable for people with flat feet. They do not change the arch over time, but they reduce the work the arch muscles have to do during the day.',
-        'Off-the-shelf arch insoles are widely available and inexpensive. Custom orthotics, made from a mold of your foot, cost more and are sometimes recommended for posterior tibial tendon dysfunction.',
+        'Off-the-shelf arch [insoles](/insoles-vs-exercises/) are widely available and inexpensive. Custom orthotics, made from a mold of your foot, cost more and are sometimes recommended for posterior tibial tendon dysfunction.',
         'The evidence behind orthotics for flat feet specifically is thinner than most people assume. For plantar fasciitis, the 2023 heel pain guideline recommends against using orthotics as a standalone short-term approach (grade B against) but gives combined care including orthotics a C.',
         '**If your flat feet cause no pain, you do not need special shoes.** If standing or walking makes the arch or ankle ache, a shoe with a firm sole and mild arch support is a reasonable first step, and worth trying before spending more on custom inserts. Shoes with very flat, unsupportive soles (thin sandals, worn-out sneakers) tend to make arch fatigue worse on long days.',
       ],
@@ -226,7 +226,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not need to decide which arch exercises to do or when to move to a harder version. Walkito builds a plan one week at a time around one goal. For a flexible flat foot, that goal is an arch hold: holding the arch up for 60 seconds. If you also have heel pain, pain-free mornings come first.',
+    text: 'You do not need to decide which arch exercises to do or when to move to a harder version. [Walkito](/program/) builds a plan one week at a time around one goal. For a flexible flat foot, that goal is an arch hold: holding the arch up for 60 seconds. If you also have heel pain, pain-free mornings come first.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the first goal is met), a short test checks arch hold, calf endurance and balance. The arch-hold goal stays until you reach it, however many weeks that takes.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If one arch has dropped as an adult with pain or swelling, see a clinician before starting.',

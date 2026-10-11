@@ -22,7 +22,7 @@ export const EX_CALF_STRETCH: Guide = {
     'How to do the calf stretch (straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, and what the evidence says.',
   h1: 'Calf stretch for plantar fasciitis: technique, sets and hold time',
   lede:
-    'The calf stretch with a straight knee targets the gastrocnemius, the large, more superficial calf muscle. A tight gastrocnemius limits how far the ankle bends, and in a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion was the strongest independent risk factor. The 2023 heel pain guideline gives calf stretching its top grade, A.',
+    'The calf stretch with a straight knee targets the gastrocnemius, the large, more superficial calf muscle. A tight gastrocnemius limits how far the ankle bends, and in a case-control study of 50 people with [plantar fasciitis](/plantar-fasciitis/) and 100 controls, reduced ankle dorsiflexion was the strongest independent risk factor. The 2023 heel pain guideline gives calf stretching its top grade, A.',
   takeaways: [
     'Reduced ankle dorsiflexion was the strongest independent risk factor for plantar fasciitis in a matched case-control study, at 23.3 times the odds (Riddle and colleagues, 2003).',
     'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius (Patel and DiGiovanni, 2011).',
@@ -92,7 +92,7 @@ export const EX_CALF_STRETCH: Guide = {
     {
       h2: 'Who should do this stretch and who should skip it?',
       paragraphs: [
-        'This stretch is relevant for anyone with heel pain, plantar fasciitis, tight calves from standing all day or a sport that loads the calf, like running. It appears in the exercise lists for [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [feet that hurt from standing](/feet-hurt-standing-all-day/) and [heel pain from running](/heel-pain-runners/).',
+        'This stretch is relevant for anyone with heel pain, plantar fasciitis, [tight calves](/tight-calves/) from standing all day or a sport that loads the calf, like running. It appears in the exercise lists for [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [feet that hurt from standing](/feet-hurt-standing-all-day/) and [heel pain from running](/heel-pain-runners/).',
         'Skip it or modify it if you have an Achilles tendon problem that is actively painful during the stretch. In that case, the pain is coming from a different structure, and loading the Achilles through a wall stretch may not be the right starting point. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) for the Achilles-specific approach.',
         'If you cannot reach the wall or stand comfortably, a seated towel stretch gives a similar pull on the calf. Loop a towel around the ball of the foot, keep the knee straight and pull the toes toward you.',
       ],
@@ -142,7 +142,7 @@ export const EX_CALF_STRETCH: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito schedules the calf stretch alongside the soleus stretch and the plantar fascia stretch on most sessions. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app moves from stretching into strength work at your pace.',
+    text: '[Walkito](/program/) schedules the calf stretch alongside the soleus stretch and the plantar fascia stretch on most sessions. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app moves from stretching into strength work at your pace.',
     more: [
       'Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

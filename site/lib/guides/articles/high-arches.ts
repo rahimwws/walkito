@@ -18,7 +18,7 @@ export const HIGH_ARCHES_EN: Guide = {
     'High arches exercises for pes cavus foot pain: calf and plantar fascia stretching, ankle stability, custom orthoses evidence, and neurological red flags.',
   h1: 'High arches exercises: what helps and what needs a clinician',
   lede:
-    'A high-arched foot, called pes cavus, is rigid and does not flex enough to absorb shock. Force concentrates at the heel and the ball of the foot, and the plantar fascia is often tight. About 60 percent of people with pes cavus report foot pain. The strongest evidence is for cushioned or custom orthoses. Exercise focuses on stretching the calf and plantar fascia, improving ankle mobility, and building stability.',
+    'A high-arched foot, called pes cavus, is rigid and does not flex enough to absorb shock. Force concentrates at the heel and the ball of the foot, and the plantar fascia is often tight. About 60 percent of people with pes cavus report foot pain. The strongest evidence is for cushioned or custom orthoses. Exercise focuses on stretching the calf and plantar fascia, improving [ankle mobility](/ankle-mobility-exercises/), and building stability.',
   intro: [
     'Pes cavus affects roughly 1 in 10 people (Burns and colleagues, 2007). Many people with high arches never have foot pain. For those who do, the pain is usually under the heel, the ball of the foot, or along the tight plantar fascia. The cause matters: most high arches are idiopathic (no known cause), but a subset is caused by neurological conditions such as Charcot-Marie-Tooth disease. Progressive or one-sided high arches always need a clinician.',
   ],
@@ -40,7 +40,7 @@ export const HIGH_ARCHES_EN: Guide = {
         'Foot pain in pes cavus commonly presents as:',
         {
           list: [
-            'Metatarsalgia (pain under the ball of the foot).',
+            '[Metatarsalgia](/ball-of-foot-pain/) (pain under the ball of the foot).',
             'Plantar heel pain.',
             'Aching along the tight plantar fascia.',
           ],
@@ -92,7 +92,7 @@ export const HIGH_ARCHES_EN: Guide = {
         '**Custom foot orthoses have the strongest evidence for pes cavus foot pain.** In the only randomized trial, Burns and colleagues assigned 154 adults with chronic foot pain and bilateral pes cavus to either custom-made polypropylene foot orthoses or a flat sham insole.',
         'At three months, the custom orthoses group reported 8.3 points more improvement in foot pain on the Foot Health Status Questionnaire than the sham group. Function scores improved 9.5 points more. Plantar pressure dropped 26 percent with the custom orthoses, compared with 9 percent with the sham.',
         'The trial included people with both idiopathic and neuromuscular pes cavus (133 idiopathic, 21 neuromuscular including 16 with Charcot-Marie-Tooth disease). The orthoses were contoured to the shape of the foot with a full-length cushioned top cover.',
-        'Over-the-counter cushioned insoles are a reasonable first step before committing to custom orthoses, which are more expensive. The key feature the trial found effective was contouring the shell to the foot\'s exact shape, not just adding flat cushioning.',
+        'Over-the-counter cushioned [insoles](/insoles-vs-exercises/) are a reasonable first step before committing to custom orthoses, which are more expensive. The key feature the trial found effective was contouring the shell to the foot\'s exact shape, not just adding flat cushioning.',
       ],
       sourceNote:
         'Burns 2006: 154 adults, 3-month follow-up, Foot Health Status Questionnaire pain difference 8.3 points (95% CI 1.2-15.3, p=0.022), function difference 9.5 points (95% CI 2.9-16.1, p=0.005).',
@@ -102,7 +102,7 @@ export const HIGH_ARCHES_EN: Guide = {
       h2: 'Which exercises help high arches?',
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, the most common pain site in pes cavus (Koc and colleagues, 2023).',
       paragraphs: [
-        'No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for plantar fasciitis, ankle instability, and general foot conditioning, and labeled accordingly.',
+        'No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for [plantar fasciitis](/plantar-fasciitis/), ankle instability, and general foot conditioning, and labeled accordingly.',
         'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, which is one of the most common pain sites in pes cavus. No comparable guideline exists for pes cavus specifically.',
         'If any exercise takes your pain to **6/10 or more**, stop for the day.',
       ],
@@ -185,7 +185,7 @@ export const HIGH_ARCHES_EN: Guide = {
     {
       h2: 'What about shoes for high arches?',
       paragraphs: [
-        '**Shoes for pes cavus should cushion rather than control.** Unlike flat feet, where a firm medial post prevents collapse, a high-arched foot needs the opposite: a shoe that absorbs impact because the foot itself does not.',
+        '**Shoes for pes cavus should cushion rather than control.** Unlike [flat feet](/flat-feet/), where a firm medial post prevents collapse, a high-arched foot needs the opposite: a shoe that absorbs impact because the foot itself does not.',
         'Look for:',
         {
           list: [
@@ -268,7 +268,7 @@ export const HIGH_ARCHES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito includes calf stretching, plantar fascia stretching, ankle stability work and a foot roll, all relevant to high arches. When you point at the arch on the body map, the app offers exercises for that area. But the app does not have a specific pes cavus goal or program. If your high arches cause plantar heel pain, the app\'s heel pain goals may fit. If your pain is mainly under the ball of the foot or related to a neurological condition, a clinician should direct your exercise plan.',
+    text: '[Walkito](/program/) includes calf stretching, plantar fascia stretching, ankle stability work and a foot roll, all relevant to high arches. When you point at the arch on the body map, the app offers exercises for that area. But the app does not have a specific pes cavus goal or program. If your high arches cause plantar heel pain, the app\'s heel pain goals may fit. If your pain is mainly under the ball of the foot or related to a neurological condition, a clinician should direct your exercise plan.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

@@ -12,7 +12,7 @@ export const PF_DURATION_EN: Guide = {
     'How long plantar fasciitis lasts, what predicts slower recovery, what to do if it is not getting better, and how to tell whether yours is improving.',
   h1: 'How long does plantar fasciitis last? What the evidence actually says',
   lede:
-    'The honest answer is: it depends, and most sources understate how much it varies. A 2020 review reports that about 90 percent of people get better with non-surgical care such as stretching and shoe inserts. A longer follow-up of 174 people tells a more nuanced story: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
+    'The honest answer is: it depends, and most sources understate how much it varies. A 2020 review reports that about 90 percent of people get better with non-surgical care such as stretching and [shoe inserts](/insoles-vs-exercises/). A longer follow-up of 174 people tells a more nuanced story: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
   intro: [
     'The [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page covers the exercises, the evidence, and the guideline grades. This page answers the question that comes next: how long does all of that take, what makes it take longer, and what are the options if things are not getting better?',
   ],
@@ -38,7 +38,7 @@ export const PF_DURATION_EN: Guide = {
             'Some factors you cannot control.',
           ],
         },
-        'A 2020 review of the literature states that non-surgical approaches work for about 90 percent of people with plantar fasciitis, usually within three to six months (Latt and colleagues, 2020).',
+        'A 2020 review of the literature states that non-surgical approaches work for about 90 percent of people with [plantar fasciitis](/plantar-fasciitis/), usually within three to six months (Latt and colleagues, 2020).',
         'A 2018 cohort study gives the longer view. Hansen and colleagues followed 174 patients diagnosed with plantar fasciitis by ultrasound for a mean of 9.7 years from the onset of symptoms. At follow-up, 54 percent were symptom-free and 46 percent still had some pain.',
         'The Kaplan-Meier analysis showed the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years. Among those who became symptom-free, the mean duration of symptoms was 725 days, roughly two years (Hansen and colleagues, 2018).',
         'Those numbers sound worse than the usual "it goes away in a few months." Two things explain the gap:',
@@ -80,7 +80,7 @@ export const PF_DURATION_EN: Guide = {
             '**Bilateral heel pain.** People who had pain in both heels at baseline had about a third the rate of becoming symptom-free per year compared to those with one-sided pain (hazard rate ratio 0.33, P less than 0.01). The authors noted that bilateral pain could reflect an unrecognized inflammatory condition, since pain at tendon-bone attachments on both sides is a feature of some forms of arthritis. Nobody in their cohort had a known inflammatory diagnosis, but no serological screening was done (Hansen and colleagues, 2018).',
           ],
         },
-        'BMI, age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a heel spur all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.',
+        'BMI, age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.',
         'If both heels hurt and morning stiffness lasts a long time or other joints are involved, that is worth mentioning to a clinician even if the exercises are helping. See [heel pain in the morning](/heel-pain-in-the-morning/) for more on when bilateral pain is a red flag.',
       ],
       sourceNote:
@@ -171,7 +171,7 @@ export const PF_DURATION_EN: Guide = {
     {
       q: 'Why is my plantar fasciitis not getting better?',
       cites: [CITE.guideline],
-      a: 'Several possibilities. The exercises may not be consistent enough, the footwear may not be supportive, or the daily load on the foot (steps, standing hours, running mileage) may be more than the tissue can keep up with. It is also possible the diagnosis is not plantar fasciitis. If stretching and strengthening have not helped after several months, the 2023 guideline recommends discussing options like night splints, laser therapy, or dry needling with a clinician.',
+      a: 'Several possibilities. The exercises may not be consistent enough, the footwear may not be supportive, or the daily load on the foot (steps, standing hours, running mileage) may be more than the tissue can keep up with. It is also possible the diagnosis is not plantar fasciitis. If stretching and strengthening have not helped after several months, the 2023 guideline recommends discussing options like [night splints](/night-splints-plantar-fasciitis/), laser therapy, or dry needling with a clinician.',
     },
     {
       q: 'Does a heel spur make plantar fasciitis last longer?',
@@ -220,7 +220,7 @@ export const PF_DURATION_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Recovery takes time, and the hardest part is knowing whether the time is doing anything. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain, and every 14 days a short test checks calf endurance, arch hold and balance, so you can see the numbers moving.',
+    text: 'Recovery takes time, and the hardest part is knowing whether the time is doing anything. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain, and every 14 days a short test checks calf endurance, arch hold and balance, so you can see the numbers moving.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Once the morning goal is met, it moves to maintaining and the next goal takes its place. There is no fixed end date, because the foot sets the pace.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If pain is not improving after several months, see a clinician to check the diagnosis and discuss the options on this page.',

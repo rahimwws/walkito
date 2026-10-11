@@ -20,7 +20,7 @@ export const EX_FOOT_ROLL: Guide = {
     'How to do the foot roll for plantar fasciitis: ball or frozen bottle technique, how long to roll, and what it does and does not do.',
   h1: 'Foot roll for plantar fasciitis: ball, bottle and technique',
   lede:
-    'Rolling the sole of the foot over a ball or bottle is one of the most common self-care steps for plantar fasciitis. It feels good, and clinicians recommend it as a way to settle the tissue between sessions. But no randomized trial has tested rolling on its own for plantar fasciitis. This page covers what rolling does, what it does not do, and where a frozen bottle fits in honestly.',
+    'Rolling the sole of the foot over a ball or bottle is one of the most common self-care steps for [plantar fasciitis](/plantar-fasciitis/). It feels good, and clinicians recommend it as a way to settle the tissue between sessions. But no randomized trial has tested rolling on its own for plantar fasciitis. This page covers what rolling does, what it does not do, and where a frozen bottle fits in honestly.',
   takeaways: [
     'No randomized trial has tested foot rolling as an isolated intervention for plantar fasciitis. It is widely recommended as a comfort and recovery measure, not as a primary intervention.',
     'The 2023 heel pain guideline recommends stretching (grade A) and strength training (grade B) as the exercise pillars. Rolling is not graded separately.',
@@ -143,7 +143,7 @@ export const EX_FOOT_ROLL: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito puts the foot roll at the end of sessions and on recovery days. The app handles the timing and the order so you do not have to remember which days to roll and which to stretch or strengthen.',
+    text: '[Walkito](/program/) puts the foot roll at the end of sessions and on recovery days. The app handles the timing and the order so you do not have to remember which days to roll and which to stretch or strengthen.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

@@ -11,13 +11,13 @@ export const CALF_RAISES_EN: Guide = {
   page: 'calfRaises',
   mainSource: CITE.rathleff,
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: 'Calf Raises for Plantar Fasciitis: How & How Many',
   description:
     'Calf raises for plantar fasciitis: the Rathleff protocol dose, towel calf raise technique, how many reps, when to progress, and what Walkito starts you on.',
   h1: 'Calf raises for plantar fasciitis: how to do them and how many',
   lede:
-    'Calf raises are one of the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/), and it is the exercise behind the one randomized trial built specifically to test strength training against stretching for plantar fasciitis. In a study of 48 people, heavy heel raises eased pain faster than stretching alone over three months. This page is the deep dive on that exercise: the exact protocol, the towel, the progression, and where it sits next to stretching.',
+    'For [plantar fasciitis](/plantar-fasciitis/), the tested way to do calf raises is slowly on one leg with a towel under your toes: 3 sets of 12, every other day, 3 seconds up, 2 seconds at the top and 3 seconds down, adding a backpack when 12 gets easy. Calf raises are one of the exercises in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/), and it is the exercise behind the one randomized trial built specifically to test strength training against stretching for plantar fasciitis. In a study of 48 people, heavy heel raises eased pain faster than stretching alone over three months. This page is the deep dive on that exercise: the exact protocol, the towel, the progression, and where it sits next to stretching.',
   intro: [
     'The 2023 heel pain guideline gives strength training a grade of **B**, one step below stretching at **A**. Both are recommended. The calf raise is the strength side of that pair. If your pain is fresh and you are looking for the full list of exercises, start at [plantar fasciitis exercises](/plantar-fasciitis-exercises/). This page assumes you want the details on the raise itself.',
   ],
@@ -35,7 +35,7 @@ export const CALF_RAISES_EN: Guide = {
       keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index at three months, though both groups had converged by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Calf raises help plantar fasciitis by strengthening the calf-Achilles-fascia chain that absorbs load every time the heel hits the ground.',
-        'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia.',
+        'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore [shoe inserts](/insoles-vs-exercises/). One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia.',
         'At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.',
         '**So calf raises brought the improvement forward.** They did not produce a bigger improvement in the long run. The 2023 clinical guideline grades strength training B and stretching A. It recommends both. Nothing in the evidence suggests you should pick one and skip the other.',
       ],
@@ -168,7 +168,7 @@ export const CALF_RAISES_EN: Guide = {
       figure: { id: 'calf', caption: 'The two calf muscles, the gastrocnemius and the soleus, join into the Achilles tendon, which attaches to the heel bone.', alt: 'Side and back views of a lower leg showing the gastrocnemius and soleus muscles narrowing into the Achilles tendon above the heel.' },
       keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
-        'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. **When the ankle cannot bend enough, every step puts more strain on the fascia.**',
+        'A [tight calf](/tight-calves/) pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. **When the ankle cannot bend enough, every step puts more strain on the fascia.**',
         'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the more superficial calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture.',
         'Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
         'This is why calf stretching and calf strengthening both appear on the list. Stretching gives the ankle more range. Strengthening gives the calf enough capacity that it does not tighten under normal daily load. The guideline recommends both. The same tight-calf mechanism shows up in other lower-leg pain too: see [shin splints exercises](/shin-splints-exercises/) and [feet hurt from standing all day](/feet-hurt-standing-all-day/) if your pain pattern looks more like either of those.',
@@ -179,7 +179,7 @@ export const CALF_RAISES_EN: Guide = {
       h2: 'How is a calf raise for plantar fasciitis different from one for Achilles tendonitis?',
       paragraphs: [
         '**The movement is nearly the same, but the intent, the towel, and the pain rule differ.** For plantar fasciitis, the towel under the toes loads the fascia through the windlass mechanism. The tempo is 3 seconds up, 2-second hold, 3 down, every other day. The pain rule on this page is: stop if pain reaches 6/10 or more.',
-        'For Achilles tendonitis, the classic protocol is an eccentric heel drop (lowering only, with the rise done on both feet), originally done twice a day, seven days a week, and into pain up to about 5/10 as long as it settles by the next morning.',
+        'For Achilles tendonitis, the classic protocol is an [eccentric heel drop](/exercises/eccentric-heel-drops/) (lowering only, with the rise done on both feet), originally done twice a day, seven days a week, and into pain up to about 5/10 as long as it settles by the next morning.',
         'The towel is not used because loading the fascia is not the goal. And for insertional Achilles pain, right at the back of the heel bone, heel drops should stay at floor level rather than going below the step edge, because deep dorsiflexion compresses the tendon against the bone.',
         'The two exercises are close relatives. If your pain is at the back of the heel or in the tendon above it rather than under the foot, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
       ],
@@ -207,7 +207,7 @@ export const CALF_RAISES_EN: Guide = {
       h2: 'Should you stretch or strengthen first for plantar fasciitis?',
       paragraphs: [
         'The 2023 heel pain guideline gives plantar fascia and calf stretching a grade of **A** and strength training a grade of **B**. That means both are recommended, and the stretching evidence is slightly broader. In the Rathleff trial, the strength group improved faster in the first three months, but by twelve months both groups were even.',
-        'Nothing in the evidence says you need to finish one before starting the other. The app starts stretching on day one and adds the first calf strengthening exercise once the goal moves past settling pain into building capacity. Doing the plantar fascia stretch before your first steps each morning is the single most repeated piece of advice in the guideline.',
+        'Nothing in the evidence says you need to finish one before starting the other. The app starts stretching on day one and adds the first calf strengthening exercise once the goal moves past settling pain into building capacity. Doing the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) before your first steps each morning is the single most repeated piece of advice in the guideline.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -219,7 +219,7 @@ export const CALF_RAISES_EN: Guide = {
       a: 'The only trial that tested a specific heel-raise protocol for plantar fasciitis started at a 12-repetition maximum for 3 sets, progressed to 10RM for 4 sets at week 3, and to 8RM for 5 sets at week 5, done every other day for up to 3 months (Rathleff 2015). "12RM" means the heaviest load you can lift for 12 controlled reps, not a fixed count for everyone.',
     },
     {
-      q: 'Do calf raises make plantar fasciitis worse?',
+      q: 'If calf raises hurt, should you still do them?',
       cites: [CITE.rathleff],
       a: 'In the Rathleff 2015 trial, the group doing loaded heel raises improved faster than the group that only stretched. Loading made things better, not worse, in that study. Any single exercise that pushes pain to 6/10 or more should be backed off for the day, but the exercise itself is not the problem when dosed correctly.',
     },
@@ -234,7 +234,7 @@ export const CALF_RAISES_EN: Guide = {
       a: 'The 2023 heel pain guideline gives stretching its top grade, A, and strength training a B, so both are recommended. In the Rathleff trial, strengthening moved pain scores faster in the first 3 months, but by 12 months both groups were even. Nothing in the evidence says you must finish one before starting the other.',
     },
     {
-      q: 'How soon do calf raises help plantar fasciitis pain?',
+      q: 'How many weeks of calf raises does it take to help plantar fasciitis?',
       cites: [CITE.rathleff],
       a: 'In the Rathleff 2015 trial of 48 people, the loaded heel-raise group was significantly ahead of the stretching-only group by the 3-month mark. By 12 months the two groups had converged. No trial has shown a guaranteed number of weeks for any one person. Recovery is measured in months.',
     },
@@ -274,7 +274,7 @@ export const CALF_RAISES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder (seated, double-leg, hold, towel, heel drops) moves at your pace, not on a fixed calendar.',
+    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. [Walkito](/program/) builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder (seated, double-leg, hold, towel, heel drops) moves at your pace, not on a fixed calendar.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once that goal is met), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

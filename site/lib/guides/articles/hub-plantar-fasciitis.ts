@@ -67,7 +67,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
             'Occupations that involve prolonged standing.',
           ],
         },
-        'Flat feet or high arches can shift how load travels through the fascia, but neither guarantees the condition.',
+        '[Flat feet](/flat-feet/) or [high arches](/high-arches-exercises/) can shift how load travels through the fascia, but neither guarantees the condition.',
         '**Plantar fasciitis usually comes from a combination**:',
         {
           list: [
@@ -107,9 +107,9 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       h2: 'What helps plantar fasciitis?',
       keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
-        'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and night splints for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
+        'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and [night splints](/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
         '**No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls.',
-        'In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using orthotics alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
+        'In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using [orthotics](/insoles-vs-exercises/) alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
       ],
       table: {
         caption: '2023 guideline grades for plantar heel pain',
@@ -136,7 +136,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       keyFact: 'In a cohort of 174 people, about half were symptom-free by five years, and 46 percent still had some pain at ten years, most only minor (Hansen and colleagues, 2018).',
       paragraphs: [
         'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. A longer follow-up of 174 patients gives a more detailed picture: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
-        'Recovery depends on how long you have had it, what you do about it, and some factors you cannot control. The Hansen 2018 cohort found that being female and having bilateral heel pain were significant predictors of slower recovery. BMI, age, fascia thickness, and the presence of a heel spur were not.',
+        'Recovery depends on how long you have had it, what you do about it, and some factors you cannot control. The Hansen 2018 cohort found that being female and having bilateral heel pain were significant predictors of slower recovery. BMI, age, fascia thickness, and the presence of a [heel spur](/plantar-fasciitis-vs-heel-spur/) were not.',
         'The useful question is not "how many weeks until it is over" but "is my morning pain lower this month than last month?" **That trend is the real milestone.** [How long does plantar fasciitis last?](/how-long-does-plantar-fasciitis-last/) covers the timeline evidence in full.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -278,7 +278,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You do not need to figure out which exercises to do, in what order, or when to progress. Walkito builds a plan one week at a time around one goal. For plantar fasciitis, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row.',
+    text: 'You do not need to figure out which exercises to do, in what order, or when to progress. [Walkito](/program/) builds a plan one week at a time around one goal. For plantar fasciitis, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days a short test checks calf endurance, arch hold and balance. Once the morning goal is met, it moves to maintaining and the next goal takes its place.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',

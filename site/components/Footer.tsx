@@ -211,6 +211,29 @@ export function Footer({
           </div>
 
           <nav aria-label={c.guidesHeading} className="ft-cols">
+            {lang === 'en' ? (
+              /* English: a lighter footer (plan B.1). The long topic lists left:
+                 every English guide now gets at least five links from other
+                 pages' text and related guides, so the footer no longer has to
+                 carry them, and the main guides stop sharing their weight with
+                 sixty others. Kept: the main guides and tools, the hubs, and
+                 the small topics that still lean on the footer. Spanish and
+                 Russian keep the full lists until their pages get the same
+                 in-text links. */
+              <>
+                <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
+                <Column
+                  heading={h.pain}
+                  links={[...group(['hubPlantarFasciitis', 'hubFlatFeet']), ...footMap, ...group(['morningHeelPain', 'pfDuration', 'runners', 'ballOfFoot'])]}
+                />
+                <div className="ft-stack">
+                  <Column heading={h.flat} links={group(NAV_GROUPS.flat)} />
+                  <Column heading={h.work} links={group(NAV_GROUPS.work)} />
+                </div>
+                <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
+              </>
+            ) : (
+            <>
             <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
             <Column
               heading={h.heel}
@@ -228,6 +251,8 @@ export function Footer({
               <Column heading={h.work} links={group(NAV_GROUPS.work)} />
               <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
             </div>
+            </>
+            )}
             <Column heading={h.walkito} links={walkito} />
           </nav>
           <script dangerouslySetInnerHTML={{ __html: FOLD_ON_PHONE }} />

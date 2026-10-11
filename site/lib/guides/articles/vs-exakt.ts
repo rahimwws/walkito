@@ -11,7 +11,7 @@ export const VS_EXAKT_EN: Guide = {
     'Walkito vs Exakt Health compared: conditions, pricing, platforms, how each builds your plan, evidence base, languages and privacy. Checked October 2026.',
   h1: 'Walkito vs Exakt Health: which one fits you?',
   lede:
-    'Walkito and Exakt Health both offer exercise-based plans for plantar fasciitis, but they are built for different people. Exakt is a runner\'s app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, flat feet and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.',
+    'Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis](/plantar-fasciitis/), but they are built for different people. Exakt is a runner\'s app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, [flat feet](/flat-feet/) and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.',
   intro: [
     'Walkito makes this page. That means you should read the Exakt facts (which are sourced from their App Store listing, Google Play listing and official website, all checked October 2026) and decide for yourself. Links to every source are at the bottom of the comparison table.',
   ],
@@ -121,7 +121,7 @@ export const VS_EXAKT_EN: Guide = {
     {
       h2: 'Who is Exakt Health built for?',
       paragraphs: [
-        'Exakt Health is built for runners. That is its core identity, and everything in the app reflects it. If you are a runner recovering from plantar fasciitis, Achilles tendinopathy, an ankle sprain, a hamstring strain or a meniscus tear, Exakt has a specific rehab plan for your injury. It covers over 15 different conditions.',
+        'Exakt Health is built for runners. That is its core identity, and everything in the app reflects it. If you are a runner recovering from plantar fasciitis, [Achilles tendinopathy](/achilles-tendonitis-exercises/), an ankle sprain, a hamstring strain or a meniscus tear, Exakt has a specific rehab plan for your injury. It covers over 15 different conditions.',
         'Each rehab plan ends with a walk-run return-to-running program, which is one of the hardest parts of recovery to get right on your own. The app also has running training plans for every distance from couch to 5K through to marathon.',
         'Exakt was founded in 2021 by Philip Billaudelle, Lucia Payo and Maryke Louw. It is built by licensed sports physiotherapists and running coaches, and it raised about EUR 2.2 million in seed funding in September 2024. The team is based in Berlin.',
         'The app is certified as a medical device in the EU, meaning it has passed regulatory review for its intended use.',
@@ -142,7 +142,7 @@ export const VS_EXAKT_EN: Guide = {
         'It is also built for people on their feet all day: nurses, retail workers, warehouse staff.',
         'The app is narrower than Exakt. It does not cover knee injuries, hamstring strains or running plans. What it does differently is **adjust each day\'s session from a morning pain check-in** rather than end-of-session feedback.',
         'A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps on iPhone or Health Connect on Android) turns the next strength session into a lighter recovery one.',
-        'Walkito tests progress every 14 days with calf raises, an arch hold and single-leg balance, and compares your left side with your right. That left-right comparison is something most apps in this space do not track.',
+        'Walkito tests progress every 14 days with calf raises, an arch hold and [single-leg balance](/exercises/single-leg-balance/), and compares your left side with your right. That left-right comparison is something most apps in this space do not track.',
         'Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has no user ratings yet. It does not have the track record or breadth that Exakt has built since 2021.',
       ],
     },
@@ -298,7 +298,7 @@ export const VS_EXAKT_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'If Walkito sounds like the right fit for your situation, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal. Walkito builds a weekly plan around measured goals, starting with pain-free mornings. Each morning, one check-in adjusts the day.',
+    text: 'If [Walkito](/program/) sounds like the right fit for your situation, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal. Walkito builds a weekly plan around measured goals, starting with pain-free mornings. Each morning, one check-in adjusts the day.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test measures calf endurance, arch hold and balance, and shows the gap between your left and right sides. Exercises follow the 2023 clinical guideline and the Rathleff 2015 trial. Walkito is an exercise program, not a diagnosis or a substitute for a clinician.',
     ],

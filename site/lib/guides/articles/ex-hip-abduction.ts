@@ -70,7 +70,7 @@ export const EX_HIP_ABDUCTION: Guide = {
             'That rotation forces the foot to pronate, rolling the ankle inward and flattening the arch.',
           ],
         },
-        'This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. **It is being overloaded from above.** Strengthening the hip reduces that top-down load.',
+        'This is why many people with [flat feet](/flat-feet/) or arch pain also have weak hips. The arch is not failing on its own. **It is being overloaded from above.** Strengthening the hip reduces that top-down load.',
         'A 2013 cross-sectional study from the Framingham Foot Study looked at about 1,900 community-dwelling adults. Flat foot posture itself was not linked to low back pain, but a foot that rolled inward while walking showed a small link to low back pain in women, hinting that the foot-hip-back chain can run both ways.',
         'The flat-feet trial by Brijwasi and colleagues (2023) included hip strengthening alongside short foot exercises, ankle work and stretching. The combined program improved arch shape over six weeks. The study did not separate how much the hip strengthening contributed on its own, but the inclusion reflects the biomechanical rationale.',
       ],
@@ -80,7 +80,7 @@ export const EX_HIP_ABDUCTION: Guide = {
       h2: 'Who benefits from hip abduction for foot pain?',
       paragraphs: [
         'People with flat feet or excessive pronation benefit because the exercise addresses a common upstream cause of arch collapse. If your knees tend to collapse inward when you squat or walk, weak hip abductors are a likely contributor.',
-        'Runners benefit because single-leg stance is the default running posture. Every stride lands on one foot. A weak gluteus medius on that side lets the knee and foot roll inward, which can contribute to shin splints, plantar fasciitis and runner\'s knee. See [heel pain for runners](/heel-pain-runners/) and [shin splints exercises](/shin-splints-exercises/) for more.',
+        'Runners benefit because single-leg stance is the default running posture. Every stride lands on one foot. A weak gluteus medius on that side lets the knee and foot roll inward, which can contribute to shin splints, [plantar fasciitis](/plantar-fasciitis/) and runner\'s knee. See [heel pain for runners](/heel-pain-runners/) and [shin splints exercises](/shin-splints-exercises/) for more.',
         'People who stand for long hours, especially nurses and retail workers, can also benefit. Prolonged standing fatigues the gluteus medius, and by the end of a shift the hip control weakens. See [feet hurt standing all day](/feet-hurt-standing-all-day/) for exercises that pair with hip abduction.',
       ],
     },
@@ -151,7 +151,7 @@ export const EX_HIP_ABDUCTION: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito adds hip abduction on strength days once a left-and-right balance goal enters your plan. It sits alongside intrinsic foot exercises and calf work, so the arch gets support from above and below. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks progress.',
+    text: '[Walkito](/program/) adds hip abduction on strength days once a left-and-right balance goal enters your plan. It sits alongside intrinsic foot exercises and calf work, so the arch gets support from above and below. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks progress.',
     cta: 'Start with 3 minutes a day.',
   },
   crumb: 'Hip abduction',

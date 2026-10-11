@@ -48,7 +48,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
       h2: 'Do insoles help plantar fasciitis?',
       keyFact: 'In a review of 19 trials with 1,660 people, insoles eased heel pain more than sham inserts only in the medium term, and custom and prefabricated insoles did not differ at any time point (Whittaker and colleagues, 2018).',
       paragraphs: [
-        'A little, for a while. Plantar fasciitis is irritation of the plantar fascia, the band of tissue under the arch. The fair test compares a real insole with a **sham**: a flat, soft insert that looks real but gives no support.',
+        'A little, for a while. [Plantar fasciitis](/plantar-fasciitis/) is irritation of the plantar fascia, the band of tissue under the arch. The fair test compares a real insole with a **sham**: a flat, soft insert that looks real but gives no support.',
         'In a trial of 135 people, both a prefabricated and a custom insole improved function by about 8 points on a 0 to 100 scale over a sham at three months (Landorf and colleagues, 2006). The pain difference was similar in size but not statistically clear. At twelve months, no group differed.',
         'A systematic review pooled 19 randomised trials with 1,660 people (Whittaker and colleagues, 2018). In the medium term, roughly the second and third month, insoles eased pain more than a sham, with moderate-quality evidence. The effect was small, and the authors called it "uncertain whether this is a clinically important change." In the short and longer term, there was no clear benefit.',
         'The 2023 heel pain guideline reads it the same way: **not** orthoses alone for short-term relief (grade B against), but they **may** be used alongside other care (grade C).',
@@ -142,7 +142,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
       h2: 'Do orthotics weaken your feet?',
       paragraphs: [
         '**Possibly a little.** In a study of 18 young adults with flat feet, three small muscles inside the foot shrank by 9.6 to 17.4 percent after three months of wearing custom orthoses (Protopapas and Perry, 2020). The groups were not randomised and the study was small, so read this as a signal, not a settled fact.',
-        'Exercise appears to offset it. In a randomised trial of 28 people with flat feet, everyone wore orthoses for two months and half also did the short-foot exercise (Jung and colleagues, 2011). The muscle along the inner arch grew in both groups, but more with the exercise, and big-toe strength rose more too. If you wear insoles all day, keep the foot working with a few minutes of [foot strengthening exercises](/foot-strengthening-exercises/).',
+        'Exercise appears to offset it. In a randomised trial of 28 people with flat feet, everyone wore orthoses for two months and half also did the [short-foot exercise](/exercises/short-foot-exercise/) (Jung and colleagues, 2011). The muscle along the inner arch grew in both groups, but more with the exercise, and big-toe strength rose more too. If you wear insoles all day, keep the foot working with a few minutes of [foot strengthening exercises](/foot-strengthening-exercises/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
     },
@@ -226,7 +226,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
   },
   program: {
     h2: 'Doing the exercises as a plan',
-    text: 'An insole goes in your shoe once. Exercise works only if you keep at it. Walkito builds a plan one week at a time for heel pain or flat feet, starting with stretches like the plantar fascia stretch (2 holds of 30 seconds) and arch work like the short foot (3 sets of 8 with 5-second holds), then steps your main exercise up when you rate it easy twice in a row and morning pain holds steady.',
+    text: 'An insole goes in your shoe once. Exercise works only if you keep at it. [Walkito](/program/) builds a plan one week at a time for heel pain or flat feet, starting with stretches like the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) (2 holds of 30 seconds) and arch work like the short foot (3 sets of 8 with 5-second holds), then steps your main exercise up when you rate it easy twice in a row and morning pain holds steady.',
     more: [
       'You choose sessions of 3, 5 or 10 minutes. Every 14 days at first (every 28 once you reach a goal), a short test checks calf endurance, arch hold and balance. Walkito is an exercise program for adults. It does not diagnose, it is not a substitute for a clinician, and it works fine alongside an insole.',
     ],

@@ -51,7 +51,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
             'Flatter, more pronated feet (pronated means the foot rolls inward).',
             'Stiffer ankles and big toe joints.',
             'Weaker toe muscles.',
-            'More bunions.',
+            'More [bunions](/bunion-exercises/).',
             'Less feeling in the soles.',
           ],
         },
@@ -154,7 +154,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
       h2: 'Can exercise or insoles stop flat feet getting worse?',
       keyFact: 'A 2018 review found only three trials, 93 people in total, testing exercise for posterior tibial tendon dysfunction, with moderate effects for slow lowering (eccentric) strength work added to orthoses and stretching (Ross and colleagues, 2018).',
       paragraphs: [
-        'No trial has tested whether exercise or insoles stop flat feet changing with age. What exists is evidence on two nearby questions, and it is small.',
+        'No trial has tested whether exercise or [insoles](/insoles-vs-exercises/) stop flat feet changing with age. What exists is evidence on two nearby questions, and it is small.',
         'For the tendon problem behind adult arch collapse, a 2018 review found three trials with 93 people in total. Slow lowering (eccentric) strength work added to orthoses (arch-supporting insoles) and stretching eased pain and disability a moderate amount more than orthoses and stretching alone.',
         'In one trial, 36 adults in early stages did three months of their program. All groups improved, and the eccentric strength group improved most. In another trial of 39 people, adding strength work made only a small difference. The review authors called the research thin.',
         'For lifelong flexible flat feet, one trial of 52 people found a short program of foot, ankle and hip exercises changed arch shape more than in a control group. It measured shape, not pain, and over a short time. Whether that kind of training slows age-related change over decades is unknown.',
@@ -272,7 +272,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito builds a plan one week at a time around one goal. For flat feet, one goal is an arch hold: holding the short foot position for 60 seconds. The plan can include band work for the tibialis posterior, heel raises, short foot and calf stretching, each starting at a low dose and moving up only when it feels easy.',
+    text: '[Walkito](/program/) builds a plan one week at a time around one goal. For flat feet, one goal is an arch hold: holding the short foot position for 60 seconds. The plan can include band work for the tibialis posterior, heel raises, short foot and calf stretching, each starting at a low dose and moving up only when it feels easy.',
     more: [
       'You pick 3, 5 or 7 sessions a week of 3, 5 or 10 minutes. Every two weeks, a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician. If one arch is dropping or your inner ankle hurts, see a clinician first.',
     ],

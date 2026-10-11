@@ -8,13 +8,13 @@ export const BALL_OF_FOOT_EN: Guide = {
   page: 'ballOfFoot',
   mainSource: CITE.amaha,
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-10',
   title: 'Ball of Foot Pain: Causes, Exercises, and What Helps',
   description:
     'Ball of foot pain causes, metatarsalgia vs. Morton\'s neuroma, toe exercises, calf stretches, metatarsal pads, and when to see a clinician.',
   h1: 'Ball of foot pain: what causes it and what helps',
   lede:
-    'You push off the ground and there it is: a sharp ache right behind the toes, like walking on a pebble. The ball of the foot takes your full body weight every time you step, and several different conditions can make it hurt. This page covers what those conditions are, what the evidence says about exercise and footwear, and where the honest gaps in the research are.',
+    'Metatarsal pads are the most studied first step for ball of foot pain, and in one small study without a control group, an 8-week toe exercise program improved pain by an average of 2.7 points on a 10-point scale. You push off the ground and there it is: a sharp ache right behind the toes, like walking on a pebble. The ball of the foot takes your full body weight every time you step, and several different conditions can make it hurt. This page covers what those conditions are, what the evidence says about exercise and footwear, and where the honest gaps in the research are.',
   intro: [
     'The clinical umbrella term is metatarsalgia, which means pain around the metatarsal heads, the bony knuckles behind the toes. But metatarsalgia is a description of where it hurts, not a diagnosis. Several different problems live under that umbrella, and they do not all respond to the same thing.',
   ],
@@ -37,12 +37,12 @@ export const BALL_OF_FOOT_EN: Guide = {
     {
       h2: 'What causes ball of foot pain?',
       paragraphs: [
-        '**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, high arches, and tight calf muscles can all contribute.',
+        '**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, [high arches](/high-arches-exercises/), and [tight calf](/tight-calves/) muscles can all contribute.',
         '**Morton\'s neuroma** is a thickening of the nerve between the metatarsal heads, most often between the third and fourth toes. It produces burning, tingling, or numbness rather than a pure ache. Narrow or high-heeled shoes compress the nerve and make it worse.',
         '**Sesamoiditis** is inflammation of the two small bones embedded in the tendon under the big toe joint. The pain sits directly under the big toe rather than under the middle of the forefoot.',
         '**Metatarsal stress fracture** is a small crack in one of the metatarsal bones, usually the second or third. The pain is localized, often gets worse through the day, and may hurt at night. Swelling on the top of the foot is common. This one needs imaging and rest.',
         '**Claw toes and hammer toes** bend the toe joints downward, which lifts the toe off the ground and shifts its push-off load back onto the metatarsal head behind it.',
-        '**High heels and narrow shoes** tip weight forward onto the forefoot and compress the metatarsal heads together, which is why Morton\'s neuroma is more common in people who wear them.',
+        '**High heels and narrow shoes** tip weight forward onto the forefoot and compress the metatarsal heads together, which is why [Morton\'s neuroma](/mortons-neuroma/) is more common in people who wear them.',
         '**High arches** (pes cavus, meaning a foot with a high, rigid arch) reduce the contact area on the sole, concentrating pressure on the heel and the ball of the foot. On the other end, [flat feet](/flat-feet-exercises/) can also contribute to forefoot pain by altering how the foot rolls during push-off.',
         '**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger, more superficial calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](/plantar-fasciitis-exercises/) and [Achilles tendonitis](/achilles-tendonitis-exercises/).',
       ],
@@ -56,7 +56,7 @@ export const BALL_OF_FOOT_EN: Guide = {
           list: [
             'Broad pain under the second and third metatarsal heads points toward metatarsalgia.',
             'Pain between the third and fourth toes, with tingling, suggests Morton\'s neuroma.',
-            'Pain directly under the big toe joint is more consistent with sesamoiditis.',
+            'Pain directly under the big toe joint is more consistent with [sesamoiditis](/sesamoiditis/).',
             'A localized spot on the top of the foot with swelling raises the question of a stress fracture.',
           ],
         },
@@ -230,7 +230,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     },
     {
       q: 'What are the complications of untreated metatarsalgia?',
-      a: 'Left unaddressed, metatarsalgia can change how you walk, since people naturally shift weight off the painful spot and onto other parts of the foot, which can create new areas of pain. Ongoing pressure on the metatarsal heads can also contribute to calluses or, less often, toe deformities like hammer toes. Early shoe changes and metatarsal pads reduce this risk.',
+      a: 'Left unaddressed, metatarsalgia can change how you walk, since people naturally shift weight off the painful spot and onto other parts of the foot, which can create new areas of pain. Ongoing pressure on the metatarsal heads can also contribute to calluses or, less often, toe deformities like [hammer toes](/hammer-toe-exercises/). Early shoe changes and metatarsal pads reduce this risk.',
     },
   ],
   redFlags: {
@@ -249,7 +249,7 @@ export const BALL_OF_FOOT_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You can do the exercises on this page on your own, or you can let Walkito schedule them for you. The app builds a plan one week at a time. When you mark the ball of the foot on the pain map, the check-in session focuses on toe spreads and plantar fascia stretching. The broader program adds calf stretching and strengthening as the weeks go on.',
+    text: 'You can do the exercises on this page on your own, or you can let [Walkito](/program/) schedule them for you. The app builds a plan one week at a time. When you mark the ball of the foot on the pain map, the check-in session focuses on toe spreads and plantar fascia stretching. The broader program adds calf stretching and strengthening as the weeks go on.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once that goal is met), a short test checks progress so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If your forefoot pain comes with numbness, swelling, or a lump, see a clinician first.',
     ],

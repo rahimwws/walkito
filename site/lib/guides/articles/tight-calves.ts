@@ -70,7 +70,7 @@ export const TIGHT_CALVES_EN: Guide = {
       h2: 'Do tight calves cause foot and heel pain?',
       keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, an ankle that could not bend past 0 degrees came with 23.3 times the odds of plantar fasciitis (Riddle and colleagues, 2003).',
       paragraphs: [
-        'Tight calves are linked with plantar fasciitis, the most common cause of heel pain under the foot. When the ankle cannot bend far enough, the foot has to make up for it with each step, and more pull goes through the Achilles tendon, the heel and the plantar fascia (the thick band under the arch).',
+        'Tight calves are linked with [plantar fasciitis](/plantar-fasciitis/), the most common cause of heel pain under the foot. When the ankle cannot bend far enough, the foot has to make up for it with each step, and more pull goes through the Achilles tendon, the heel and the plantar fascia (the thick band under the arch).',
         'In a 2003 case-control study, Riddle and colleagues compared 50 people with plantar fasciitis to 100 matched people without it. People whose ankle could not bend past 0 degrees had 23.3 times the odds of plantar fasciitis compared with people who could bend past 10 degrees. Reduced ankle bend was the strongest risk factor they measured, ahead of body weight and standing at work.',
         'In a later study of 254 people with plantar fasciitis, 83 percent had limited ankle bend, and 57 percent of all the patients had a tight gastrocnemius alone (Patel and DiGiovanni, 2011).',
         '**Both studies show a link, not that tight calves cause plantar fasciitis.** The wide range around the 23.3 figure also means the true number could be much smaller. Still, it is one reason the 2023 heel pain guideline gives calf stretching a grade A, its top grade, for plantar heel pain.',
@@ -273,7 +273,7 @@ export const TIGHT_CALVES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito is an iPhone app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.',
+    text: '[Walkito](/program/) is an iPhone app with short exercise sessions for heel, foot and lower leg pain in adults. Calf stretches with the knee straight and bent, ankle rocks and calf raises are all part of it. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for calf raises, and raises the dose as you go.',
     more: [
       'You choose sessions of 3, 5 or 10 minutes. Every two weeks, a short test checks calf endurance, so you can see whether your calves are getting stronger. Walkito is an exercise program. It does not diagnose, and it does not replace a clinician if any of the warning signs above apply.',
     ],
