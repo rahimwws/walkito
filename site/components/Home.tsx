@@ -393,7 +393,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito es una app de ejercicios para el dolor de talón y de pie, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros.',
+        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
       },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
@@ -440,7 +440,20 @@ export function Home({ lang }: { lang: Lang }) {
   const copy = COPY[lang];
   const c = CHROME[lang];
   const suffix = lang === 'en' ? '' : `-${lang}`;
-  const app = lang === 'en' ? APP : { ...APP, description: copy.meta.description, featureList: undefined };
+  const app =
+    lang === 'en'
+      ? APP
+      : {
+          ...APP,
+          description: copy.meta.description,
+          featureList: undefined,
+          ...(lang === 'es'
+            ? {
+                disambiguatingDescription:
+                  'Una app de ejercicios para iPhone y Android para el dolor de talón, la fascitis plantar y el pie plano. No es walkito.com, el servicio de paseo de perros de Uruguay.',
+              }
+            : {}),
+        };
 
   /**
    * The picture in each card: the piece of the app that card's person meets

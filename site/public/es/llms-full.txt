@@ -9645,7 +9645,7 @@ Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pi
 
 ### ¿Qué es Walkito?
 
-Walkito es una app para iPhone y Android que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir. No tiene relación con walkito.com, un servicio de paseo de perros.
+Walkito es una app para iPhone y Android que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir.
 
 Hay cinco metas: mañanas más fáciles (dolor por la mañana de 1/10 o menos durante 14 días seguidos), mantener el arco 60 segundos, 25 elevaciones de talón a una pierna, 30 segundos de equilibrio en una pierna y menos de un 10 % de diferencia entre tu lado izquierdo y el derecho. Empiezas con hasta tres de ellas. Si algo te duele, el dolor va primero.
 
@@ -9654,6 +9654,8 @@ Eliges 3, 5 o 7 días de entrenamiento por semana y sesiones de 3, 5 o 10 minuto
 El plan no tiene una duración fija. Cuando alcanzas una meta, pasa a mantenimiento con una dosis menor y la siguiente ocupa su lugar. Y así sigue mientras uses Walkito. [Cómo funciona el plan](https://walkito.site/es/programa/).
 
 Walkito está en inglés, ruso y español.
+
+Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.
 
 ### Cómo investigamos
 

@@ -40,6 +40,18 @@ const ORGANISATION = {
 };
 
 /**
+ * Spanish pages carry the one-line disambiguation in Spanish too: ChatGPT,
+ * asked "qué es Walkito", was answering with the Uruguayan dog-walking service
+ * at walkito.com. Every other language keeps the English line.
+ */
+const DISAMBIGUATION_ES =
+  'Walkito (walkito.site) es una app de ejercicios para iPhone y Android para el dolor de talón, la fascitis plantar y el pie plano. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.';
+
+function organisation(lang: Lang) {
+  return lang === 'es' ? { ...ORGANISATION, disambiguatingDescription: DISAMBIGUATION_ES } : ORGANISATION;
+}
+
+/**
  * `WebSite`, alongside `Organization`.
  *
  * The pair is what lets an engine treat "Walkito" as one named thing with a
@@ -83,7 +95,7 @@ export function RootDocument({
   return (
     <html lang={lang} className={fontClass}>
       <body>
-        <JsonLd data={ORGANISATION} />
+        <JsonLd data={organisation(lang)} />
         <JsonLd data={website(lang)} />
         {/* The wash behind the hero. Two soft violet pools rather than a
             gradient bar, so the colour reads as light in the room instead of a
