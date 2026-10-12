@@ -151,7 +151,7 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
   program: {
     h2: 'Farlo come un piano',
     text: 'Walkito aggiunge l’abduzione dell’anca nei giorni di forza quando nel tuo piano entra un obiettivo di equilibrio tra sinistra e destra. Sta insieme agli esercizi per i muscoli intrinseci del piede e al lavoro sul polpaccio, così l’arco riceve sostegno dall’alto e dal basso. Le sessioni durano 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue i progressi.',
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Abduzione dell’anca',
   campaign: 'ex-hip-abduction-it',

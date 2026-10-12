@@ -221,11 +221,11 @@ export const HEEL_FAT_PAD_PT: Guide = {
   },
   program: {
     h2: 'Onde um plano de exercícios entra',
-    text: 'O Walkito monta sessões diárias em torno de elevação de calcanhar, trabalho dos músculos do pé e alongamento. Esses exercícios são pensados para fascite plantar e força do pé. Eles podem ajudar um pé com atrofia do coxim gorduroso a lidar melhor com a carga, mas não foram testados especificamente para essa condição e não vão reconstruir um coxim gorduroso afinado. Se um profissional de saúde confirmou a síndrome do coxim gorduroso, um plano de exercícios como o do Walkito é um complemento razoável ao amortecimento e ao calçado, não um substituto.',
+    text: 'O Walkito monta sessões, 3, 5 ou 7 dias por semana, você escolhe, em torno de elevação de calcanhar, trabalho dos músculos do pé e alongamento. Esses exercícios são pensados para fascite plantar e força do pé. Eles podem ajudar um pé com atrofia do coxim gorduroso a lidar melhor com a carga, mas não foram testados especificamente para essa condição e não vão reconstruir um coxim gorduroso afinado. Se um profissional de saúde confirmou a síndrome do coxim gorduroso, um plano de exercícios como o do Walkito é um complemento razoável ao amortecimento e ao calçado, não um substituto.',
     more: [
       'As sessões são de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste mede a resistência da panturrilha e o equilíbrio. O Walkito não faz diagnóstico. Se você não tem certeza se a sua dor no calcanhar é atrofia do coxim gorduroso ou fascite plantar, procure primeiro um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Coxim gorduroso do calcanhar',
   campaign: 'guide-heel-fat-pad-pt',

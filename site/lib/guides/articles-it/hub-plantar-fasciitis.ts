@@ -284,7 +284,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Quando hai raggiunto l’obiettivo del mattino, quell’obiettivo passa al mantenimento e il successivo prende il suo posto.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Fascite plantare',
   campaign: 'hub-plantar-fasciitis-it',

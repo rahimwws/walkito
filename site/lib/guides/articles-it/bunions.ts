@@ -204,7 +204,7 @@ export const BUNIONS_IT: Guide = {
   program: {
     h2: 'Farlo come un piano',
     text:
-      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni quotidiane da 3 o 5\u00A0minuti ti aiutano a fare gli esercizi con costanza.',
+      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni da 3 o 5\u00A0minuti, 3, 5 o 7 giorni a settimana a tua scelta, ti aiutano a fare gli esercizi con costanza.',
     more: [
       'Per un dolore all’avampiede più ampio che coinvolge la seconda e la terza testa metatarsale, vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Per un dolore proprio sotto l’articolazione dell’alluce, vedi [sesamoidite](/it/sesamoidite/).',
     ],

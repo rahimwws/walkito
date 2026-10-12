@@ -292,7 +292,7 @@ export const ANKLE_STRENGTHENING_EN: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every two weeks at first (every four once you reach a goal), a short test checks calf endurance, arch hold and balance. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Ankle strengthening',
   campaign: 'guide-ankle-strength',

@@ -164,7 +164,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Plantar fascia stretch',
   campaign: 'ex-plantar-fascia-stretch',

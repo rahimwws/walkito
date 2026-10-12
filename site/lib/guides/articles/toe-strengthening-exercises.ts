@@ -299,7 +299,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
     more: [
       'Every 14 days at first, a short test checks calf endurance, arch hold and balance. It does not measure toe strength directly, so the home checks on this page are still worth doing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Toe strengthening',
   campaign: 'guide-toe-strength',

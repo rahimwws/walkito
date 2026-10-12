@@ -134,7 +134,7 @@ export const BEST_APP_FR: Guide = {
         'Là où Walkito se distingue\u00A0:',
         {
           list: [
-            'Walkito ajuste la séance de chaque jour à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance.',
+            'Walkito ajuste chaque séance à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance.',
             'Elle teste l’asymétrie gauche-droite tous les 14\u00A0jours.',
             'Elle se concentre sur la douleur au talon et au pied plutôt que sur toute la gamme des blessures de course.',
           ],
@@ -239,7 +239,7 @@ export const BEST_APP_FR: Guide = {
         '**Vous avez mal à plusieurs endroits du corps**, pas seulement aux pieds\u00A0: [Prehab](https://theprehabguys.com/) vous donne plus de 55\u00A0programmes avec un seul abonnement.',
         '**Vous voulez un point de départ gratuit** pour suivre votre douleur au talon et essayer des étirements de base\u00A0: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) le fait bien, gratuitement.',
         '**Votre problème principal, ce sont les pieds plats** sans douleur importante\u00A0: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) est conçue exactement pour ça.',
-        '**Vous voulez un plan quotidien pour la douleur au talon ou les pieds plats qui s’adapte à votre matin** et teste vos progrès\u00A0: c’est pour cela que [Walkito](https://walkito.site/) a été conçue.',
+        '**Vous voulez un plan pour la douleur au talon ou les pieds plats qui s’adapte à votre matin** et teste vos progrès, 3, 5 ou 7\u00A0jours par semaine, au choix\u00A0: c’est pour cela que [Walkito](https://walkito.site/) a été conçue.',
       ],
     },
   ],
@@ -255,7 +255,7 @@ export const BEST_APP_FR: Guide = {
     },
     {
       q: 'Exakt Health est-elle meilleure que Walkito pour la fasciite plantaire\u00A0?',
-      a: 'Exakt Health couvre plus de problèmes, dont plus de 15\u00A0blessures de course et des plans complets d’entraînement à la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et au pied, avec une adaptation quotidienne à la douleur et des tests de progrès tous les 14\u00A0jours. Exakt est le meilleur choix pour les coureurs qui ont besoin de rééducation et d’un plan de course. Walkito est plus ciblée mais ajuste chaque séance à votre matin.',
+      a: 'Exakt Health couvre plus de problèmes, dont plus de 15\u00A0blessures de course et des plans complets d’entraînement à la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et au pied, avec une adaptation à la douleur du matin et des tests de progrès tous les 14\u00A0jours. Exakt est le meilleur choix pour les coureurs qui ont besoin de rééducation et d’un plan de course. Walkito est plus ciblée mais ajuste chaque séance à votre matin.',
     },
     {
       q: 'Une application peut-elle remplacer un kiné pour la fasciite plantaire\u00A0?',
@@ -267,7 +267,7 @@ export const BEST_APP_FR: Guide = {
     },
     {
       q: 'Pourquoi Walkito ne se dit-elle pas la meilleure application pour la fasciite plantaire\u00A0?',
-      a: 'Parce que ce ne serait pas honnête. Walkito est nouvelle, n’a pas encore de notes d’utilisateurs, couvre moins de problèmes qu’Exakt Health, et n’a pas de professionnel de santé de l’autre côté comme Hinge Health. Ce qu’elle fait bien, c’est ajuster chaque jour à votre douleur et tester vos progrès tous les 14\u00A0jours. Que ce soit la bonne application pour vous dépend de ce dont vous avez besoin.',
+      a: 'Parce que ce ne serait pas honnête. Walkito est nouvelle, n’a pas encore de notes d’utilisateurs, couvre moins de problèmes qu’Exakt Health, et n’a pas de professionnel de santé de l’autre côté comme Hinge Health. Ce qu’elle fait bien, c’est ajuster chaque séance à votre douleur du matin et tester vos progrès tous les 14\u00A0jours. Que ce soit la bonne application pour vous dépend de ce dont vous avez besoin.',
     },
     {
       q: 'Ces applications marchent-elles sur Android\u00A0?',

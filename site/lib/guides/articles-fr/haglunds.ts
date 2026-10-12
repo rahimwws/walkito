@@ -242,7 +242,7 @@ export const HAGLUNDS_FR: Guide = {
     more: [
       'Les séances durent 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un test vérifie l’endurance du mollet et l’équilibre. Walkito est un programme d’exercices. Il ne pose pas de diagnostic. Si vous avez une bosse visible à l’arrière du talon et ne savez pas ce qui cause la douleur, faites-la examiner par un professionnel de santé avant de commencer la mise en charge.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Maladie de Haglund',
   campaign: 'guide-haglunds-fr',

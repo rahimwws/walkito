@@ -247,7 +247,7 @@ export const ICE_HEAT_IT: Guide = {
       'Ogni settimana, solo l’esercizio del tuo obiettivo principale può cambiare. Sale di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato, e scende di un gradino se una sessione è stata pesante o il dolore del mattino è salito di 2 o più punti.',
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio ogni 14\u00A0giorni all’inizio, poi ogni 28 quando raggiungi un obiettivo, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Ghiaccio o caldo',
   campaign: 'guide-ice-heat-it',

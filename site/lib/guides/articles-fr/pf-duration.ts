@@ -233,7 +233,7 @@ export const PF_DURATION_FR: Guide = {
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Une fois l’objectif du matin atteint, il passe en entretien et le suivant prend sa place. Il n’y a pas de date de fin fixe, car c’est le pied qui donne le rythme.',
       'Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si la douleur ne s’améliore pas après plusieurs mois, consultez un professionnel de santé pour vérifier le diagnostic et parler des options de cette page.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Durée de la fasciite plantaire',
   campaign: 'guide-pf-duration-fr',

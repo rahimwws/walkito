@@ -164,7 +164,7 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Sobald das Gleichgewichtsziel erreicht ist, läuft der Test nur noch alle 28\u00A0Tage, und ein neues Ziel tritt an seine Stelle. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Einbeinstand',
   campaign: 'ex-single-leg-balance-de',

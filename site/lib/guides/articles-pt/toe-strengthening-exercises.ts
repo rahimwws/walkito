@@ -279,7 +279,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
     more: [
       'A cada 14\u00A0dias no início, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Ele não mede diretamente a força dos dedos, então os testes caseiros desta página continuam valendo a pena. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Fortalecer os dedos dos pés',
   campaign: 'guide-toe-strength-pt',

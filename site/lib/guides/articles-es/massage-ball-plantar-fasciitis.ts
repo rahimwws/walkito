@@ -277,7 +277,7 @@ export const MASSAGE_BALL_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas una meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Pelota de masaje y botella congelada',
   campaign: 'guide-massage-ball-es',

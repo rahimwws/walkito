@@ -1372,7 +1372,7 @@ Dove Exakt è più forte di Walkito:
 
 Dove Walkito è diversa:
 
-- Walkito adatta la sessione di ogni giorno in base a un check-in del dolore al mattino invece che al feedback di fine sessione.
+- Walkito adatta ogni sessione in base a un check-in del dolore al mattino invece che al feedback di fine sessione.
 - Testa l’asimmetria tra sinistra e destra ogni 14 giorni.
 - Si concentra proprio sul dolore al tallone e al piede invece che su tutti gli infortuni da corsa.
 
@@ -1469,7 +1469,7 @@ Parti dalla tua situazione, non dall’elenco delle funzioni.
 - **Hai dolore in più zone del corpo**, non solo ai piedi: [Prehab](https://theprehabguys.com/) ti dà oltre 55 programmi in un solo abbonamento.
 - **Vuoi un punto di partenza gratuito** per seguire il dolore al tallone e provare allungamenti di base: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) lo fa bene, gratis.
 - **Il tuo problema principale è il piede piatto** senza un dolore importante: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) è pensata proprio per questo.
-- **Vuoi un piano quotidiano per il dolore al tallone o il piede piatto che si adatti alla tua mattina** e testi i tuoi progressi: è per questo che è nata [Walkito](https://walkito.site/).
+- **Vuoi un piano per il dolore al tallone o il piede piatto che si adatti alla tua mattina** e testi i tuoi progressi, 3, 5 o 7 giorni a settimana, a tua scelta: è per questo che è nata [Walkito](https://walkito.site/).
 
 ### Quando un’app non basta, rivolgiti a un professionista sanitario
 
@@ -1496,7 +1496,7 @@ La linea guida clinica del 2023 sul dolore al tallone dà all’allungamento del
 
 #### Meglio Exakt Health o Walkito per la fascite plantare?
 
-Exakt Health copre più problemi, tra cui oltre 15 infortuni da corsa e piani completi di allenamento di corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra proprio sul dolore al tallone e al piede, con un adattamento quotidiano in base al dolore e test dei progressi ogni 14 giorni. Exakt è la scelta più forte per chi corre e ha bisogno di riabilitazione più un piano di corsa. Walkito è più mirata ma adatta ogni sessione alla tua mattina.
+Exakt Health copre più problemi, tra cui oltre 15 infortuni da corsa e piani completi di allenamento di corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra proprio sul dolore al tallone e al piede, con un adattamento in base al dolore del mattino e test dei progressi ogni 14 giorni. Exakt è la scelta più forte per chi corre e ha bisogno di riabilitazione più un piano di corsa. Walkito è più mirata ma adatta ogni sessione alla tua mattina.
 
 #### Un’app può sostituire il fisioterapista per la fascite plantare?
 
@@ -1508,7 +1508,7 @@ Hinge Health è gratuita per gli iscritti il cui datore di lavoro o la cui assic
 
 #### Perché Walkito non si definisce la migliore app per la fascite plantare?
 
-Perché non sarebbe onesto. Walkito è nuova, non ha ancora valutazioni degli utenti, copre meno problemi di Exakt Health e non ha un professionista dall’altra parte come Hinge Health. Quello che fa bene è adattare ogni giornata al tuo dolore e testare i tuoi progressi ogni 14 giorni. Se questo la rende l’app giusta per te dipende da cosa ti serve.
+Perché non sarebbe onesto. Walkito è nuova, non ha ancora valutazioni degli utenti, copre meno problemi di Exakt Health e non ha un professionista dall’altra parte come Hinge Health. Quello che fa bene è adattare ogni sessione al tuo dolore del mattino e testare i tuoi progressi ogni 14 giorni. Se questo la rende l’app giusta per te dipende da cosa ti serve.
 
 #### Qualcuna di queste app funziona su Android?
 
@@ -1613,7 +1613,7 @@ Di solito si provano prima per diversi mesi esercizi e gestione conservativa. Se
 
 ### Farlo come un piano
 
-Walkito include l’[apertura delle dita](https://walkito.site/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](https://walkito.site/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni quotidiane da 3 o 5 minuti ti aiutano a fare gli esercizi con costanza.
+Walkito include l’[apertura delle dita](https://walkito.site/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](https://walkito.site/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni da 3 o 5 minuti, 3, 5 o 7 giorni a settimana a tua scelta, ti aiutano a fare gli esercizi con costanza.
 
 #### Gli esercizi possono correggere l’alluce valgo?
 
@@ -4837,7 +4837,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 
 ### Farlo come un piano
 
-Walkito include la [raccolta dell’asciugamano](https://walkito.site/it/esercizi/raccolta-asciugamano-dita/), l’[apertura delle dita](https://walkito.site/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](https://walkito.site/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per il dito a martello, ma gli esercizi si sovrappongono. Se hai un dito a martello flessibile e vuoi un modo strutturato per lavorare sulle dita ogni giorno, le sessioni da 3 o 5 minuti rendono gli esercizi costanti senza doverti ricordare una routine a parte.
+Walkito include la [raccolta dell’asciugamano](https://walkito.site/it/esercizi/raccolta-asciugamano-dita/), l’[apertura delle dita](https://walkito.site/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](https://walkito.site/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per il dito a martello, ma gli esercizi si sovrappongono. Se hai un dito a martello flessibile e vuoi un modo strutturato per lavorare sulle dita con regolarità, le sessioni da 3 o 5 minuti rendono gli esercizi costanti senza doverti ricordare una routine a parte.
 
 #### Il dito a martello si può correggere?
 
@@ -5000,7 +5000,7 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 ### Dove si inserisce un piano di esercizi
 
-Walkito costruisce sessioni quotidiane con sollevamenti sulle punte, lavoro sui muscoli del piede e stretching. Questi esercizi sono pensati per la fascite plantare e la forza del piede. Possono aiutare un piede con atrofia del cuscinetto adiposo a gestire meglio il carico, ma non sono stati testati proprio per questo problema e non ricostruiscono un cuscinetto adiposo assottigliato. Se un professionista sanitario ha confermato la sindrome del cuscinetto adiposo, un piano di esercizi come quello di Walkito è un complemento ragionevole ad ammortizzazione e scarpe, non un sostituto.
+Walkito costruisce sessioni, 3, 5 o 7 giorni a settimana a tua scelta, con sollevamenti sulle punte, lavoro sui muscoli del piede e stretching. Questi esercizi sono pensati per la fascite plantare e la forza del piede. Possono aiutare un piede con atrofia del cuscinetto adiposo a gestire meglio il carico, ma non sono stati testati proprio per questo problema e non ricostruiscono un cuscinetto adiposo assottigliato. Se un professionista sanitario ha confermato la sindrome del cuscinetto adiposo, un piano di esercizi come quello di Walkito è un complemento ragionevole ad ammortizzazione e scarpe, non un sostituto.
 
 #### Che sensazione dà la sindrome del cuscinetto adiposo del tallone?
 
@@ -5312,7 +5312,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### Quando l’esercizio è il passo giusto
 
-Se un professionista sanitario ha confermato la fascite plantare ed escluso i problemi descritti sopra, l’esercizio è l’approccio con il grado più alto nella linea guida. Walkito costruisce un piano quotidiano intorno al carico di polpaccio e fascia, partendo dagli allungamenti e arrivando agli esercizi di forza al tuo ritmo.
+Se un professionista sanitario ha confermato la fascite plantare ed escluso i problemi descritti sopra, l’esercizio è l’approccio con il grado più alto nella linea guida. Walkito costruisce un piano di 3, 5 o 7 giorni a settimana, a tua scelta, intorno al carico di polpaccio e fascia, partendo dagli allungamenti e arrivando agli esercizi di forza al tuo ritmo.
 
 #### Il dolore al tallone di notte è segno di qualcosa di grave?
 
@@ -9206,7 +9206,7 @@ Nessuno studio ha seguito i tempi di recupero specificamente per la tendinite de
 
 Language: Italian (Italiano) · https://walkito.site/it/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
 
-Walkito ed Exakt Health offrono entrambe piani di esercizi per la fascite plantare, ma sono fatte per persone diverse. Exakt è un’app per chi corre, con oltre 15 piani di riabilitazione per infortuni e un programma di ritorno alla corsa. Walkito è un’app più ristretta, concentrata su dolore al tallone, piede piatto e adattamento quotidiano al dolore. Questa pagina le confronta con onestà, dice dove Exakt è la scelta migliore e spiega cosa fa di diverso Walkito.
+Walkito ed Exakt Health offrono entrambe piani di esercizi per la fascite plantare, ma sono fatte per persone diverse. Exakt è un’app per chi corre, con oltre 15 piani di riabilitazione per infortuni e un programma di ritorno alla corsa. Walkito è un’app più ristretta, concentrata su dolore al tallone, piede piatto e adattamento al dolore di ogni mattina. Questa pagina le confronta con onestà, dice dove Exakt è la scelta migliore e spiega cosa fa di diverso Walkito.
 
 - Exakt Health copre oltre 15 infortuni da corsa e include piani di allenamento di corsa dai 5 km alla maratona. Walkito copre solo dolore al tallone, piede piatto e dolore alla tibia.
 - Exakt e Walkito sono entrambe sia su iOS sia su Android.
@@ -9232,7 +9232,7 @@ L’app è certificata come dispositivo medico nell’UE, cioè ha superato una 
 
 ### Per chi è fatta Walkito?
 
-Walkito è fatta per chi ha male ai piedi e vuole un breve piano di esercizi quotidiano che si adatti a come si sente ogni mattina. Questo include:
+Walkito è fatta per chi ha male ai piedi e vuole un breve piano di esercizi, 3, 5 o 7 giorni a settimana a sua scelta, che si adatti a come si sente ogni mattina. Questo include:
 
 - Fascite plantare.
 - Piede piatto flessibile.
@@ -9240,7 +9240,7 @@ Walkito è fatta per chi ha male ai piedi e vuole un breve piano di esercizi quo
 
 È fatta anche per chi sta in piedi tutto il giorno: infermieri, commessi, addetti di magazzino.
 
-L’app è più ristretta di Exakt. Non copre infortuni al ginocchio, stiramenti del bicipite femorale né piani di corsa. Quello che fa di diverso è **adattare la sessione di ogni giorno in base a un check-in del dolore al mattino**, invece che al feedback di fine sessione.
+L’app è più ristretta di Exakt. Non copre infortuni al ginocchio, stiramenti del bicipite femorale né piani di corsa. Quello che fa di diverso è **adattare ogni sessione in base a un check-in del dolore al mattino**, invece che al feedback di fine sessione.
 
 Una mattina a 7/10 o più trasforma la giornata in circa tre minuti di lavoro da seduti. Una giornata con tanti passi (misurati tramite Apple Health o Health Connect) trasforma la sessione di forza successiva in una sessione di recupero più leggera.
 
@@ -9335,7 +9335,7 @@ Scegli Walkito se vale almeno una di queste cose:
 
 - Il tuo dolore è proprio dolore al tallone, fascite plantare o piede piatto, e vuoi un programma concentrato su questo.
 - Vuoi sessioni da 3 a 10 minuti invece che da 15 a 30.
-- Per te conta più l’adattamento quotidiano al dolore con un check-in al mattino che la progressione a livelli.
+- Per te conta più l’adattamento di ogni sessione al dolore con un check-in al mattino che la progressione a livelli.
 - Vuoi test dei progressi ogni 14 giorni che confrontino sinistra e destra.
 - Ti serve l’app in russo.
 - Stai in piedi tutto il giorno per lavoro, non corri, e vuoi un’app fatta per questo.
@@ -9356,7 +9356,7 @@ Se Walkito ti sembra adatta alla tua situazione, ecco come funziona. Rispondi a 
 
 #### Exakt Health è meglio di Walkito?
 
-Dipende da cosa ti serve. Exakt Health copre oltre 15 infortuni da corsa e include piani di ritorno alla corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra su dolore al tallone e piede piatto, con adattamento quotidiano al dolore e sessioni più brevi. Per chi corre e ha infortuni di tipo diverso, Exakt è la scelta più adatta. Per il dolore al tallone con adattamento giorno per giorno, Walkito è fatta proprio per questo.
+Dipende da cosa ti serve. Exakt Health copre oltre 15 infortuni da corsa e include piani di ritorno alla corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra su dolore al tallone e piede piatto, con adattamento al dolore del mattino e sessioni più brevi. Per chi corre e ha infortuni di tipo diverso, Exakt è la scelta più adatta. Per il dolore al tallone con adattamento a ogni sessione, Walkito è fatta proprio per questo.
 
 #### Come si confronta il prezzo di Walkito con quello di Exakt Health?
 

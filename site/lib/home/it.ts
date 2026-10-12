@@ -80,7 +80,7 @@ export const HOME_IT: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'Che cos’è Walkito?',
-      a: 'Walkito è un’app di esercizi per il dolore al tallone e al piede, su iPhone e Android. Dalle tue risposte crea un piano quotidiano di 3, 5 o 10\u00A0minuti e lo adatta a come stanno i tuoi piedi ogni mattina.',
+      a: 'Walkito è un’app di esercizi per il dolore al tallone e al piede, su iPhone e Android. Dalle tue risposte crea un piano con sessioni di 3, 5 o 10\u00A0minuti nei giorni che scegli (3, 5 o 7 a settimana) e lo adatta a come stanno i tuoi piedi ogni mattina.',
     },
     {
       q: 'Quanto ci vuole prima di sentire una differenza?',

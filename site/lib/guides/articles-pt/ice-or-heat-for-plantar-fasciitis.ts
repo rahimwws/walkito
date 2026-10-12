@@ -247,7 +247,7 @@ export const ICE_HEAT_PT: Guide = {
       'A cada semana, só o exercício da sua meta principal pode mudar. Ele sobe um degrau quando as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou, e desce um degrau se uma sessão pareceu difícil ou a dor da manhã subiu 2\u00A0pontos ou mais.',
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio a cada 14\u00A0dias no início, e depois a cada 28 quando você alcança uma meta, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Gelo ou calor',
   campaign: 'guide-ice-heat-pt',

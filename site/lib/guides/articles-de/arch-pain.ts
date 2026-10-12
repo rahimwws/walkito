@@ -252,7 +252,7 @@ export const ARCH_PAIN_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du nicht sicher bist, woher dein Schmerz im Gewölbe kommt, geh zu einer medizinischen Fachperson, bevor du den Fuß mit Übungen belastest.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Schmerzen im Fußgewölbe',
   campaign: 'guide-arch-pain-de',

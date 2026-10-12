@@ -258,7 +258,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando nei tuoi piedi.',
       'Walkito non si occupa del mal di schiena, non fa diagnosi e non sostituisce un professionista sanitario. Se hai mal di schiena, fallo controllare, soprattutto se hai uno dei segnali qui sopra.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno per i tuoi piedi',
+    cta: 'Inizia con una sessione da 3\u00A0minuti per i tuoi piedi',
   },
   crumb: 'Piede piatto e mal di schiena',
   campaign: 'guide-flat-feet-back-it',

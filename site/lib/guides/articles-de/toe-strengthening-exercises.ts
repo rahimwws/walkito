@@ -279,7 +279,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     more: [
       'Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Er misst die Zehenkraft nicht direkt, die Tests für zu Hause auf dieser Seite lohnen sich also trotzdem. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Zehen kräftigen',
   campaign: 'guide-toe-strength-de',

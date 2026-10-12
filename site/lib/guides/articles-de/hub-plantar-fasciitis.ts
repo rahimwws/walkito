@@ -281,7 +281,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Sobald das Morgenziel erreicht ist, geht es in die Erhaltung über, und das nächste Ziel rückt nach.',
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Plantarfasziitis',
   campaign: 'hub-plantar-fasciitis-de',

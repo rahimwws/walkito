@@ -258,7 +258,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando nos seus pés.',
       'O Walkito não cuida de dor nas costas, não faz diagnóstico e não substitui um profissional de saúde. Se você tem dor nas costas, faça uma avaliação, principalmente se algum dos sinais acima se aplicar a você.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia para os seus pés',
+    cta: 'Comece com uma sessão de 3\u00A0minutos para os seus pés',
   },
   crumb: 'Pé chato e dor nas costas',
   campaign: 'guide-flat-feet-back-pt',

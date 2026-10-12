@@ -220,7 +220,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio. La meta de mantener el arco sigue en el plan hasta que la alcanzas, tome las semanas que tome.',
       'Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si un arco se te bajó de adulto con dolor o hinchazón, consulta a un profesional antes de empezar.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Pie plano',
   campaign: 'hub-flat-feet-es',

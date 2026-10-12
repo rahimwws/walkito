@@ -238,7 +238,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Am Anfang prüft alle 14\u00A0Tage ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose, hilft nicht direkt gegen Knieschmerzen und ersetzt keine medizinische Fachperson. Zu Rückenschmerzen bei Plattfüßen lies [Plattfuß und Rückenschmerzen](/de/plattfuss-rueckenschmerzen/).',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Plattfuß und Knieschmerzen',
   campaign: 'guide-flat-feet-knee-de',

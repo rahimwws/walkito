@@ -272,7 +272,7 @@ export const STANDING_FR: Guide = {
       `Vous choisissez ${DAYS}\u00A0jours par semaine et des séances de ${MINUTES}\u00A0minutes. Tous les ${PROGRAM.testEveryDays}\u00A0jours (puis tous les ${PROGRAM.testEveryDaysAfterGoal} une fois votre premier objectif atteint), un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez si le travail donne quelque chose.`,
       'Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si la douleur est vive, s’aggrave ou vous empêche de dormir, consultez d’abord un professionnel de santé.',
     ],
-    cta: `Commencez avec ${PROGRAM.sessionMinutes[0]}\u00A0minutes par jour.`,
+    cta: `Commencez par une séance de ${PROGRAM.sessionMinutes[0]}\u00A0minutes.`,
   },
   crumb: 'Mal aux pieds debout',
   campaign: 'guide-standing-fr',

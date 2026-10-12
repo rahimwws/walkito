@@ -328,7 +328,7 @@ export const SHIN_SPLINTS_DE: Guide = {
       `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, ob die Arbeit am Unterschenkel etwas bringt.`,
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn dein Schienbeinschmerz punktgenau ist, schlimmer wird oder in Ruhe auftritt, geh zu einer medizinischen Fachperson, bevor du ihn weiter belastest.',
     ],
-    cta: `Fang mit ${PROGRAM.sessionMinutes[0]}\u00A0Minuten am Tag an.`,
+    cta: `Fang mit einer Einheit von ${PROGRAM.sessionMinutes[0]}\u00A0Minuten an.`,
   },
   crumb: 'Übungen beim Schienbeinkantensyndrom',
   campaign: 'guide-shin-splints-de',

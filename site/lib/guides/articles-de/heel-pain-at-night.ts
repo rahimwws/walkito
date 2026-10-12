@@ -205,11 +205,11 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
   },
   program: {
     h2: 'Wenn Übungen der richtige Schritt sind',
-    text: 'Wenn eine medizinische Fachperson eine Plantarfasziitis bestätigt und die Erkrankungen oben ausgeschlossen hat, ist Training der Ansatz mit der besten Bewertung in der Leitlinie. Walkito baut einen täglichen Plan rund um die Belastung von Wade und Faszie, beginnt mit Dehnungen und steigert sich in deinem Tempo bis zu Kraftübungen.',
+    text: 'Wenn eine medizinische Fachperson eine Plantarfasziitis bestätigt und die Erkrankungen oben ausgeschlossen hat, ist Training der Ansatz mit der besten Bewertung in der Leitlinie. Walkito baut einen Plan an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um die Belastung von Wade und Faszie, beginnt mit Dehnungen und steigert sich in deinem Tempo bis zu Kraftübungen.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn deine Fersenschmerzen nachts oder in Ruhe schlimmer sind, geh zu einer medizinischen Fachperson, bevor du anfängst, den Fuß zu belasten.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Fersenschmerzen nachts',
   campaign: 'guide-heel-night-de',

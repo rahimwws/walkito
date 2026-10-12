@@ -215,7 +215,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da manhã for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a dor da manhã é aguda, está piorando, ou aparece nos dois calcanhares com outras articulações envolvidas, procure primeiro um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Dor no calcanhar ao acordar',
   campaign: 'guide-morning-heel-pt',

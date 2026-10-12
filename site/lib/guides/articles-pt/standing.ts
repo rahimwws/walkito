@@ -272,7 +272,7 @@ export const STANDING_PT: Guide = {
       `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando a sua primeira meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho está fazendo efeito.`,
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a dor for aguda, estiver piorando ou não deixar você dormir, procure primeiro um profissional de saúde.',
     ],
-    cta: `Comece com ${PROGRAM.sessionMinutes[0]}\u00A0minutos por dia.`,
+    cta: `Comece com uma sessão de ${PROGRAM.sessionMinutes[0]}\u00A0minutos.`,
   },
   crumb: 'Dor nos pés de ficar em pé',
   campaign: 'guide-standing-pt',

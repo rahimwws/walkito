@@ -230,7 +230,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
     more: [
       'You choose sessions of 3, 5 or 10 minutes. Every 14 days at first (every 28 once you reach a goal), a short test checks calf endurance, arch hold and balance. Walkito is an exercise program for adults. It does not diagnose, it is not a substitute for a clinician, and it works fine alongside an insole.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Insoles vs exercises',
   campaign: 'guide-insoles-vs-exercises',

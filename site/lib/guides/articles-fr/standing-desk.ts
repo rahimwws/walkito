@@ -274,7 +274,7 @@ export const STANDING_DESK_FR: Guide = {
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours (puis tous les 28 une fois votre premier objectif atteint), un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez si le travail donne quelque chose.',
       'Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si la douleur est vive, s’aggrave ou vous empêche de dormir, consultez d’abord un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Bureau debout et mal aux pieds',
   campaign: 'guide-standing-desk-fr',

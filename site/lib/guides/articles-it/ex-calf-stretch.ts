@@ -142,7 +142,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Allungamento del polpaccio (gastrocnemio, ginocchio teso)',
   campaign: 'ex-calf-stretch-it',

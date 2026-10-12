@@ -178,7 +178,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut einen Plan, der die Kurzer-Fuß-Übung in drei Stufen enthält: im Sitzen, im Stehen, dann auf einem Bein. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben. Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage zeigt, ob sich deine Haltezeit für das Gewölbe verbessert.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Kurzer-Fuß-Übung',
   campaign: 'ex-short-foot-de',

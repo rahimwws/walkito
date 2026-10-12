@@ -179,7 +179,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito construit un plan qui inclut l’exercice du pied court en trois étapes\u00A0: assis, debout, puis sur une jambe. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles. Vous choisissez des séances de 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit l’évolution de votre temps de maintien de la voûte.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Exercice du pied court',
   campaign: 'ex-short-foot-fr',

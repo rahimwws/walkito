@@ -171,7 +171,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm, kein Werkzeug für Diagnosen.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Fersenheben mit Handtuch',
   campaign: 'ex-towel-heel-raise-de',

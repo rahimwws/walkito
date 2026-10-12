@@ -277,7 +277,7 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Au début toutes les deux semaines (toutes les quatre une fois un objectif atteint), un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito est un programme d’exercices pour adultes. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Renforcement de la cheville',
   campaign: 'guide-ankle-strength-fr',

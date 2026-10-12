@@ -206,11 +206,11 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
   },
   program: {
     h2: 'Quando o exercício é o passo certo',
-    text: 'Se um profissional de saúde confirmou fascite plantar e descartou as condições acima, o exercício é a abordagem com o grau mais alto na diretriz. O Walkito monta um plano diário em torno de carga na panturrilha e na fáscia, começando com alongamentos e avançando para exercícios de força no seu ritmo.',
+    text: 'Se um profissional de saúde confirmou fascite plantar e descartou as condições acima, o exercício é a abordagem com o grau mais alto na diretriz. O Walkito monta um plano de 3, 5 ou 7 dias por semana, você escolhe, em torno de carga na panturrilha e na fáscia, começando com alongamentos e avançando para exercícios de força no seu ritmo.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se a sua dor no calcanhar é pior à noite ou em repouso, procure um profissional de saúde antes de começar a pôr carga no pé.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Dor no calcanhar à noite',
   campaign: 'guide-heel-night-pt',

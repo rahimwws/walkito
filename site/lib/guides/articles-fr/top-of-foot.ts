@@ -215,7 +215,7 @@ export const TOP_OF_FOOT_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito ne diagnostique pas la douleur sur le dessus du pied. Si vous suspectez une fracture de fatigue, la goutte ou un problème nerveux, consultez un professionnel de santé avant de commencer un programme d’exercices.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Douleur sur le dessus du pied',
   campaign: 'guide-top-of-foot-fr',

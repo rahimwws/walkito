@@ -250,7 +250,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você acompanhar a evolução em vez de adivinhar.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se você não tem certeza se a sua dor no calcanhar é fascite plantar, esporão ou outra coisa, procure primeiro um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Fascite plantar ou esporão',
   campaign: 'guide-pf-vs-heel-spur-pt',

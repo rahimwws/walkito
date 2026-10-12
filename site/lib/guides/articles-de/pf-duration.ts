@@ -232,7 +232,7 @@ export const PF_DURATION_DE: Guide = {
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Sobald das Morgenziel erreicht ist, geht es in die Erhaltung über, und das nächste Ziel rückt nach. Es gibt kein festes Enddatum, weil der Fuß das Tempo vorgibt.',
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn der Schmerz nach mehreren Monaten nicht besser wird, lass bei einer medizinischen Fachperson die Diagnose prüfen und sprich über die Optionen auf dieser Seite.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Wie lange dauert Plantarfasziitis',
   campaign: 'guide-pf-duration-de',

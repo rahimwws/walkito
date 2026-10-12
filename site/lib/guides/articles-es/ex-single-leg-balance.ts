@@ -165,7 +165,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cuando alcanzas la meta de equilibrio, la prueba pasa a hacerse cada 28\u00A0días y una nueva meta ocupa su lugar. Walkito es un programa de ejercicio. No diagnostica.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Equilibrio a una pierna',
   campaign: 'ex-single-leg-balance-es',

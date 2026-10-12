@@ -214,7 +214,7 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no início (a cada 28 quando você alcança uma meta), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico, não substitui um profissional de saúde e funciona bem junto com uma palmilha.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Palmilhas ou exercícios',
   campaign: 'guide-insoles-vs-exercises-pt',

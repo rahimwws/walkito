@@ -24,50 +24,50 @@ type CtaCopy = {
 /**
  * The closing call to action, per language. The lines say again what the
  * hero's last heading said ("Your feet, your plan.", `finalH2`), with the
- * daily rhythm the app is built around added as the third. The store lines
+ * days added as the third: the user picks 3, 5 or 7 training days a week. The store lines
  * follow Apple's and Google's localized badges. The profiles' names come from
  * `SOCIAL_LABELS`, shared with the footer.
  */
 const COPY: Record<Lang, CtaCopy> = {
   en: {
-    lines: ['Your feet.', 'Your plan.', 'Every day.'],
+    lines: ['Your feet.', 'Your plan.', 'Your days.'],
     appStoreTop: 'Download on the',
     playTop: 'Get it on',
     playSoon: 'Coming soon',
   },
   ru: {
-    lines: ['Ваши стопы.', 'Ваш план.', 'Каждый день.'],
+    lines: ['Ваши стопы.', 'Ваш план.', 'Ваши дни.'],
     appStoreTop: 'Загрузите в',
     playTop: 'Доступно в',
     playSoon: 'Скоро',
   },
   es: {
-    lines: ['Tus pies.', 'Tu plan.', 'Cada día.'],
+    lines: ['Tus pies.', 'Tu plan.', 'Tus días.'],
     appStoreTop: 'Descárgalo en el',
     playTop: 'Disponible en',
     playSoon: 'Muy pronto',
   },
   pt: {
-    lines: ['Seus pés.', 'Seu plano.', 'Todo dia.'],
+    lines: ['Seus pés.', 'Seu plano.', 'Seus dias.'],
     appStoreTop: 'Baixar na',
     playTop: 'Disponível no',
     playSoon: 'Em breve',
   },
   fr: {
-    lines: ['Vos pieds.', 'Votre plan.', 'Chaque jour.'],
+    lines: ['Vos pieds.', 'Votre plan.', 'Vos jours.'],
     appStoreTop: 'Télécharger dans',
     appStoreName: 'l’App Store',
     playTop: 'Disponible sur',
     playSoon: 'Bientôt disponible',
   },
   it: {
-    lines: ['I tuoi piedi.', 'Il tuo piano.', 'Ogni giorno.'],
+    lines: ['I tuoi piedi.', 'Il tuo piano.', 'I tuoi giorni.'],
     appStoreTop: 'Scarica su',
     playTop: 'Disponibile su',
     playSoon: 'Prossimamente',
   },
   de: {
-    lines: ['Deine Füße.', 'Dein Plan.', 'Jeden Tag.'],
+    lines: ['Deine Füße.', 'Dein Plan.', 'Deine Tage.'],
     appStoreTop: 'Laden im',
     playTop: 'Jetzt bei',
     playSoon: 'Demnächst',

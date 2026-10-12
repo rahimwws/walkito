@@ -236,7 +236,7 @@ export const PTTD_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Se ti è stata diagnosticata una PTTD, usa l’app insieme ai plantari e chiedi al professionista sanitario che ti segue se lo stadio è adatto all’esercizio.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Esercizi per il tendine tibiale posteriore',
   campaign: 'guide-pttd-it',

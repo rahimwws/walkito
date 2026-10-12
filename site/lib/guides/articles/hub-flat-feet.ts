@@ -231,7 +231,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the first goal is met), a short test checks arch hold, calf endurance and balance. The arch-hold goal stays until you reach it, however many weeks that takes.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If one arch has dropped as an adult with pain or swelling, see a clinician before starting.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Flat feet',
   campaign: 'hub-flat-feet',

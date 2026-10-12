@@ -258,7 +258,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald dieses Ziel erreicht ist) prüft ein kurzer Test deinen Fortschritt, sodass du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn deine Vorfußschmerzen mit Taubheit, Schwellung oder einem Knoten einhergehen, geh zuerst zu einer medizinischen Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Schmerzen im Fußballen',
   campaign: 'guide-ball-of-foot-de',

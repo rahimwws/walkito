@@ -238,7 +238,7 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours au début, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change. Walkito est un programme d’exercices. Il ne pose pas de diagnostic, il n’agit pas directement sur la douleur au genou et il ne remplace pas un professionnel de santé. Pour le mal de dos avec des pieds plats, voir [pieds plats et mal de dos](/fr/pieds-plats-mal-de-dos/).',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Pieds plats et douleur au genou',
   campaign: 'guide-flat-feet-knee-fr',

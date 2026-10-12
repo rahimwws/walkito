@@ -185,7 +185,7 @@ export const EX_SHORT_FOOT: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) builds a plan that includes the short foot exercise in a three-step progression: seated, standing, then single-leg. Each step opens once two sessions at the current level felt easy. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks whether your arch hold time is improving.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Short foot exercise',
   campaign: 'ex-short-foot',

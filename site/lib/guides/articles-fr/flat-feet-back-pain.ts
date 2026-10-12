@@ -258,7 +258,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change dans vos pieds.',
       'Walkito ne s’occupe pas du mal de dos, ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si vous avez mal au dos, faites-le examiner, surtout si l’un des signes ci-dessus vous concerne.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour pour vos pieds.',
+    cta: 'Commencez par une séance de 3\u00A0minutes pour vos pieds.',
   },
   crumb: 'Pieds plats et mal de dos',
   campaign: 'guide-flat-feet-back-fr',

@@ -129,7 +129,7 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Si el rango del tobillo mejora con las semanas, es señal de que los estiramientos están sirviendo. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Estiramiento de sóleo (rodilla doblada)',
   campaign: 'ex-soleus-stretch-es',

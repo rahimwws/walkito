@@ -127,7 +127,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
     more: [
       'Every 14 days, a short test checks calf endurance, arch hold and balance. Ankle range that improves over weeks shows the stretching is doing something. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Soleus stretch (bent knee)',
   campaign: 'ex-soleus-stretch',

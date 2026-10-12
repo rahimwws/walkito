@@ -200,7 +200,7 @@ export const BUNIONS_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die täglichen Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig.',
+      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die Einheiten von 3 oder 5\u00A0Minuten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, die Übungen regelmäßig.',
     more: [
       'Bei breiteren Vorfußschmerzen am zweiten und dritten Mittelfußköpfchen lies [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/). Bei Schmerzen direkt unter dem Großzehengrundgelenk lies [Sesamoiditis](/de/sesamoiditis/).',
     ],

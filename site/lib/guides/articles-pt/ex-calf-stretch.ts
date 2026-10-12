@@ -141,7 +141,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Alongamento de panturrilha (gastrocnêmio, joelho esticado)',
   campaign: 'ex-calf-stretch-pt',

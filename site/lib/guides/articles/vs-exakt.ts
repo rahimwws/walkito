@@ -126,7 +126,7 @@ export const VS_EXAKT_EN: Guide = {
     {
       h2: 'Who is Walkito built for?',
       paragraphs: [
-        'Walkito is built for people whose feet hurt and who want a short daily exercise plan that adjusts to how they feel each morning. That includes:',
+        'Walkito is built for people whose feet hurt and who want a short exercise plan, on 3, 5 or 7 days a week they choose, that adjusts to how they feel each morning. That includes:',
         {
           list: [
             'Plantar fasciitis.',

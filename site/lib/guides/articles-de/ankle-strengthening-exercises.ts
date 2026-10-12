@@ -277,7 +277,7 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle zwei Wochen (alle vier, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Sprunggelenk stärken',
   campaign: 'guide-ankle-strength-de',

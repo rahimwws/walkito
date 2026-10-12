@@ -180,7 +180,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
   program: {
     h2: 'Farlo come un piano',
     text: 'Walkito costruisce un piano che include l’esercizio del piede corto in una progressione a tre gradini: da seduto, in piedi, poi su una gamba. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili. Scegli sessioni da 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni controlla se il tempo di tenuta dell’arco sta migliorando.',
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Esercizio del piede corto',
   campaign: 'ex-short-foot-it',

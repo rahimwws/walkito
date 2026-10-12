@@ -266,7 +266,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once the goal is met), a short test checks calf endurance, arch hold and balance, so you can track progress instead of guessing.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If you are unsure whether your heel pain is plantar fasciitis, a heel spur or something else, see a clinician first.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Plantar fasciitis vs heel spur',
   campaign: 'guide-pf-vs-heel-spur',

@@ -170,7 +170,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. Se il dolore è proprio nel punto in cui il tendine si attacca all’osso del tallone, fallo controllare da un professionista sanitario prima di caricarlo forte. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Discese eccentriche del tallone',
   campaign: 'ex-eccentric-heel-drops-it',

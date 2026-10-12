@@ -304,7 +304,7 @@ export const FLAT_FEET_IT: Guide = {
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla tenuta dell’arco, resistenza del polpaccio ed equilibrio, così vedi se il lavoro sull’arco sta servendo.`,
     ],
-    cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
+    cta: `Inizia con una sessione da ${PROGRAM.sessionMinutes[0]}\u00A0minuti.`,
   },
   crumb: 'Esercizi per piede piatto',
   campaign: 'guide-flat-feet-it',
@@ -608,7 +608,7 @@ export const HEEL_PAIN_IT: Guide = {
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/it/test-sollevamento-punte/), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,
     ],
-    cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
+    cta: `Inizia con una sessione da ${PROGRAM.sessionMinutes[0]}\u00A0minuti.`,
   },
   crumb: 'Esercizi per la fascite plantare',
   campaign: 'guide-plantar-fasciitis-it',

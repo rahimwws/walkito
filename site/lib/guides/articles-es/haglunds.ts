@@ -242,7 +242,7 @@ export const HAGLUNDS_ES: Guide = {
     more: [
       'Las sesiones son de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si tienes un bulto visible en la parte de atrás del talón y no estás seguro de qué está causando el dolor, pide a un profesional de la salud que lo revise antes de empezar a cargarlo.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Deformidad de Haglund',
   campaign: 'guide-haglunds-es',

@@ -55,7 +55,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
         a: 'El plan de Walkito no tiene una duración fija. Dura lo que lo uses. Walkito arma una semana a la vez en torno a una meta, como mañanas sin dolor o mantener el arco 60\u00A0segundos. Cuando alcanzas una meta, pasa a mantenimiento con una dosis más baja, y la siguiente ocupa su lugar. [Cómo funciona el plan](/es/programa/).',
       },
       {
-        q: '¿Cuánto dura una sesión diaria?',
+        q: '¿Cuánto dura una sesión?',
         a: 'Una sesión de Walkito dura 5\u00A0minutos por defecto, y puedes cambiar cualquier sesión a 3 o 10. Cada sesión tiene de 2 a 4\u00A0ejercicios. El ejercicio de la meta de la semana siempre se queda, incluso en la versión de 3\u00A0minutos. Un día de prueba dura unos cuatro minutos y no tiene entrenamiento.',
       },
       {

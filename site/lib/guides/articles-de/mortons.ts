@@ -231,7 +231,7 @@ export const MORTONS_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito stellt keine Diagnose beim Morton-Neurom. Die Übungen darin sind Maßnahmen für Komfort und Lastverteilung. Breitere Schuhe, Mittelfußpelotten und eine fachliche Einschätzung sollten zuerst kommen.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Morton-Neurom',
   campaign: 'guide-mortons-de',

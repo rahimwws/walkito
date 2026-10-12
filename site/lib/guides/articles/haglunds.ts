@@ -233,7 +233,7 @@ export const HAGLUNDS_EN: Guide = {
     more: [
       "Sessions are 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If you have a visible bump on the back of your heel and are not sure what is causing the pain, have a clinician check it before you start loading.",
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: "Haglund's deformity",
   campaign: 'guide-haglunds',

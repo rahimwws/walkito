@@ -238,7 +238,7 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Al principio, cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios. No diagnostica, no ayuda directamente con el dolor de rodilla y no reemplaza a un profesional de la salud. Para el dolor de espalda con pie plano, mira [pie plano y dolor de espalda](/es/pie-plano-y-dolor-de-espalda/).',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Pie plano y dolor de rodilla',
   campaign: 'guide-flat-feet-knee-es',

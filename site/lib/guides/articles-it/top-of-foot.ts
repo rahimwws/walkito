@@ -217,7 +217,7 @@ export const TOP_OF_FOOT_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito non fa diagnosi del dolore al dorso del piede. Se sospetti una frattura da stress, la gotta o un problema a un nervo, rivolgiti a un professionista sanitario prima di iniziare qualsiasi programma di esercizi.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Dolore al dorso del piede',
   campaign: 'guide-top-of-foot-it',

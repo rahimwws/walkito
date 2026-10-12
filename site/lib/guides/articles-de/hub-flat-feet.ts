@@ -224,7 +224,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das erste Ziel erreicht ist) prüft ein kurzer Test Gewölbehalten, Wadenausdauer und Gleichgewicht. Das Gewölbeziel bleibt im Plan, bis du es erreichst, egal wie viele Wochen das dauert.',
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn ein Gewölbe im Erwachsenenalter mit Schmerzen oder Schwellung abgesunken ist, geh zu einer medizinischen Fachperson, bevor du anfängst.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Plattfuß',
   campaign: 'hub-flat-feet-de',

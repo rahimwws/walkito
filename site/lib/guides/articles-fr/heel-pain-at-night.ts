@@ -205,11 +205,11 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
   },
   program: {
     h2: 'Quand l’exercice est la bonne étape',
-    text: 'Si un professionnel de santé a confirmé une fasciite plantaire et écarté les problèmes ci-dessus, l’exercice est l’approche la mieux notée par la recommandation. Walkito construit un plan quotidien autour de la mise en charge du mollet et du fascia, en commençant par des étirements et en progressant vers des exercices de renforcement à votre rythme.',
+    text: 'Si un professionnel de santé a confirmé une fasciite plantaire et écarté les problèmes ci-dessus, l’exercice est l’approche la mieux notée par la recommandation. Walkito construit un plan de 3, 5 ou 7\u00A0jours par semaine, au choix, autour de la mise en charge du mollet et du fascia, en commençant par des étirements et en progressant vers des exercices de renforcement à votre rythme.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un test vérifie l’endurance du mollet et l’équilibre. Walkito est un programme d’exercices. Il ne pose pas de diagnostic. Si votre douleur au talon est pire la nuit ou au repos, consultez un professionnel de santé avant de commencer à charger le pied.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Douleur au talon la nuit',
   campaign: 'guide-heel-night-fr',

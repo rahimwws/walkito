@@ -195,7 +195,7 @@ export const BUNIONS_PT: Guide = {
   program: {
     h2: 'Fazendo isso como um plano',
     text:
-      'O Walkito inclui [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões diárias de 3 ou 5\u00A0minutos mantêm os exercícios regulares.',
+      'O Walkito inclui [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões de 3 ou 5\u00A0minutos, 3, 5 ou 7 dias por semana, você escolhe, mantêm os exercícios regulares.',
     more: [
       'Para uma dor mais ampla na parte da frente do pé, envolvendo a segunda e a terceira cabeça dos metatarsos, veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/). Para dor especificamente embaixo da articulação do dedão, veja [sesamoidite](/pt/sesamoidite/).',
     ],

@@ -2191,7 +2191,7 @@ Start from your situation, not from feature lists.
 - **You have pain in several body areas**, not just your feet: [Prehab](https://theprehabguys.com/) gives you 55+ programs in one subscription.
 - **You want a free starting point** to track heel pain and try basic stretches: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) does that well for no cost.
 - **Your main issue is flat feet** without significant pain: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) is focused on exactly that.
-- **You want a daily plan for heel pain or flat feet that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.
+- **You want a plan for heel pain or flat feet, on 3, 5 or 7 days a week you choose, that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.
 
 ### When an app is not enough, see a clinician
 
@@ -2348,7 +2348,7 @@ Ordered by views on October 11, 2026, except video 40, which replaced a Hindi vi
 
 ### All three parts, in one plan
 
-[Walkito](https://walkito.site/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short daily plan, with a dose for each exercise.
+[Walkito](https://walkito.site/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short plan on the 3, 5 or 7 days a week you pick, with a dose for each exercise.
 
 #### Are YouTube videos good for plantar fasciitis?
 
@@ -2445,7 +2445,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Stretching and strengthening, in one plan
 
-[Walkito](https://walkito.site/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short daily plan, with a dose for each exercise.
+[Walkito](https://walkito.site/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short plan on the 3, 5 or 7 days a week you pick, with a dose for each exercise.
 
 #### Can I trust ChatGPT about plantar fasciitis?
 
@@ -2566,7 +2566,7 @@ Strength means the listing or website mentions strengthening; Clinician shows wh
 
 ### If you want to try Walkito
 
-[Walkito](https://walkito.site/program/) is one of the apps above. It puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short daily plan.
+[Walkito](https://walkito.site/program/) is one of the apps above. It puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short plan on the 3, 5 or 7 days a week you pick.
 
 #### Are plantar fasciitis apps any good?
 
@@ -3417,7 +3417,7 @@ The app is certified as a medical device in the EU, meaning it has passed regula
 
 ### Who is Walkito built for?
 
-Walkito is built for people whose feet hurt and who want a short daily exercise plan that adjusts to how they feel each morning. That includes:
+Walkito is built for people whose feet hurt and who want a short exercise plan, on 3, 5 or 7 days a week they choose, that adjusts to how they feel each morning. That includes:
 
 - Plantar fasciitis.
 - Flexible flat feet.
@@ -6423,7 +6423,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### When exercise is the right step
 
-If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline's top-graded approach. [Walkito](https://walkito.site/program/) builds a daily plan around calf and fascia loading, starting with stretches and working up to strength exercises at your pace.
+If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline's top-graded approach. [Walkito](https://walkito.site/program/) builds a plan around calf and fascia loading, on the 3, 5 or 7 days a week you pick, starting with stretches and working up to strength exercises at your pace.
 
 #### Is heel pain at night a sign of something serious?
 
@@ -6586,7 +6586,7 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 ### Where an exercise plan fits in
 
-[Walkito](https://walkito.site/program/) builds daily sessions around calf raises, foot-muscle work, and stretching. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito's is a reasonable complement to cushioning and footwear, not a replacement for it.
+[Walkito](https://walkito.site/program/) builds sessions around calf raises, foot-muscle work, and stretching, on 3, 5 or 7 days a week you choose. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito's is a reasonable complement to cushioning and footwear, not a replacement for it.
 
 #### What does heel fat pad syndrome feel like?
 
@@ -7973,7 +7973,7 @@ Exercise and conservative management are usually tried for several months first.
 
 ### Doing it as a plan
 
-[Walkito](https://walkito.site/program/) includes [toe spreads](https://walkito.site/exercises/toe-spread/) and [big toe lifts](https://walkito.site/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](https://walkito.site/flat-feet/), not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the 3-minute or 5-minute daily sessions keep the exercises consistent.
+[Walkito](https://walkito.site/program/) includes [toe spreads](https://walkito.site/exercises/toe-spread/) and [big toe lifts](https://walkito.site/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](https://walkito.site/flat-feet/), not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the short sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week you choose, keep the exercises consistent.
 
 #### Can exercises fix bunions?
 
@@ -8127,7 +8127,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 
 ### Doing it as a plan
 
-[Walkito](https://walkito.site/program/) includes [towel scrunches](https://walkito.site/exercises/towel-scrunch/), [toe spreads](https://walkito.site/exercises/toe-spread/), and [big toe lifts](https://walkito.site/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](https://walkito.site/flat-feet/), not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do daily toe work, the 3-minute or 5-minute sessions keep the exercises consistent without needing to remember a separate routine.
+[Walkito](https://walkito.site/program/) includes [towel scrunches](https://walkito.site/exercises/towel-scrunch/), [toe spreads](https://walkito.site/exercises/toe-spread/), and [big toe lifts](https://walkito.site/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](https://walkito.site/flat-feet/), not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do regular toe work, the short sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week you choose, keep the exercises consistent without needing to remember a separate routine.
 
 #### Can hammer toes be reversed?
 
@@ -10942,7 +10942,7 @@ A bad week does not have to end your streak, because Walkito gives you freezes. 
 
 The Walkito plan has no fixed length. It lasts as long as you use it. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. [How the plan works](https://walkito.site/program/).
 
-### How long is a daily session?
+### How long is a session?
 
 A Walkito session takes 5 minutes by default, and you can switch any session to 3 or 10. Each session has 2 to 4 exercises. The exercise for the week’s focus goal always stays in, even in the 3-minute version. A test day takes about four minutes and has no training in it.
 

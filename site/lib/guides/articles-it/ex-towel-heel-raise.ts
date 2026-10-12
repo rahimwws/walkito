@@ -173,7 +173,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi, non uno strumento di diagnosi.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Sollevamento sulle punte con asciugamano',
   campaign: 'ex-towel-heel-raise-it',

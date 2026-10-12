@@ -272,7 +272,7 @@ export const STANDING_DE: Guide = {
       `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, ob die Arbeit etwas bringt.`,
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts wach hält, geh zuerst zu einer medizinischen Fachperson.',
     ],
-    cta: `Fang mit ${PROGRAM.sessionMinutes[0]}\u00A0Minuten am Tag an.`,
+    cta: `Fang mit einer Einheit von ${PROGRAM.sessionMinutes[0]}\u00A0Minuten an.`,
   },
   crumb: 'Fußschmerzen vom Stehen',
   campaign: 'guide-standing-de',

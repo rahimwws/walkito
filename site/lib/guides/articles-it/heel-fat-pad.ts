@@ -222,11 +222,11 @@ export const HEEL_FAT_PAD_IT: Guide = {
   },
   program: {
     h2: 'Dove si inserisce un piano di esercizi',
-    text: 'Walkito costruisce sessioni quotidiane con sollevamenti sulle punte, lavoro sui muscoli del piede e stretching. Questi esercizi sono pensati per la fascite plantare e la forza del piede. Possono aiutare un piede con atrofia del cuscinetto adiposo a gestire meglio il carico, ma non sono stati testati proprio per questo problema e non ricostruiscono un cuscinetto adiposo assottigliato. Se un professionista sanitario ha confermato la sindrome del cuscinetto adiposo, un piano di esercizi come quello di Walkito è un complemento ragionevole ad ammortizzazione e scarpe, non un sostituto.',
+    text: 'Walkito costruisce sessioni, 3, 5 o 7 giorni a settimana a tua scelta, con sollevamenti sulle punte, lavoro sui muscoli del piede e stretching. Questi esercizi sono pensati per la fascite plantare e la forza del piede. Possono aiutare un piede con atrofia del cuscinetto adiposo a gestire meglio il carico, ma non sono stati testati proprio per questo problema e non ricostruiscono un cuscinetto adiposo assottigliato. Se un professionista sanitario ha confermato la sindrome del cuscinetto adiposo, un piano di esercizi come quello di Walkito è un complemento ragionevole ad ammortizzazione e scarpe, non un sostituto.',
     more: [
       'Le sessioni durano 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un test controlla resistenza del polpaccio ed equilibrio. Walkito non fa diagnosi. Se non sei sicuro che il tuo dolore al tallone sia atrofia del cuscinetto adiposo o fascite plantare, rivolgiti prima a un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Cuscinetto adiposo del tallone',
   campaign: 'guide-heel-fat-pad-it',

@@ -308,7 +308,7 @@ export const FOOT_STRENGTHENING_EN: Guide = {
     more: [
       'You pick sessions of 3, 5 or 10 minutes. A short test every 14 days at first checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Foot strengthening',
   campaign: 'guide-foot-strength',

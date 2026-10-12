@@ -238,7 +238,7 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi, non agisce direttamente sul dolore al ginocchio e non sostituisce un professionista sanitario. Per il mal di schiena con piede piatto, vedi [piede piatto e mal di schiena](/it/piede-piatto-mal-di-schiena/).',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Piede piatto e dolore al ginocchio',
   campaign: 'guide-flat-feet-knee-it',

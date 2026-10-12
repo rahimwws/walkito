@@ -228,7 +228,7 @@ export const BEST_APP_EN: Guide = {
         '**You have pain in several body areas**, not just your feet: [Prehab](https://theprehabguys.com/) gives you 55+ programs in one subscription.',
         '**You want a free starting point** to track heel pain and try basic stretches: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) does that well for no cost.',
         '**Your main issue is flat feet** without significant pain: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) is focused on exactly that.',
-        '**You want a daily plan for heel pain or flat feet that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.',
+        '**You want a plan for heel pain or flat feet, on 3, 5 or 7 days a week you choose, that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.',
       ],
     },
   ],

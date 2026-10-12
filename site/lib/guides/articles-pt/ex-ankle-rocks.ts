@@ -150,7 +150,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
     more: [
       'Um centímetro de melhora no teste do joelho na parede em algumas semanas é significativo. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Balanço do tornozelo',
   campaign: 'ex-ankle-rocks-pt',

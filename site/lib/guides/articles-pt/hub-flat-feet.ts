@@ -223,7 +223,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a primeira meta for alcançada), um teste curto mede a sustentação do arco, a resistência da panturrilha e o equilíbrio. A meta de sustentar o arco fica no plano até você alcançá-la, leve as semanas que levar.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se um arco caiu na vida adulta com dor ou inchaço, procure um profissional de saúde antes de começar.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Pé chato',
   campaign: 'hub-flat-feet-pt',

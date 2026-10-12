@@ -147,7 +147,7 @@ export const EX_TOE_SPREAD_PT: Guide = {
   program: {
     h2: 'Fazendo isso como um plano',
     text: 'O Walkito coloca o exercício de abrir os dedos nos dias de força, junto com outros exercícios para os músculos intrínsecos do pé. O plano reveza com o pé curto e a inversão com faixa, para os músculos do pé terem um trabalho variado sem sobrecarregar um movimento só. Você escolhe sessões de 3, 5 ou 10\u00A0minutos.',
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Abrir os dedos do pé',
   campaign: 'ex-toe-spread-pt',

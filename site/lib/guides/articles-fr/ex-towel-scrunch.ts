@@ -138,7 +138,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito utilise le ramassage de serviette comme exercice de renforcement du pied en début de parcours. Une fois qu’il vous a paru facile deux séances de suite, le plan vous fait passer à l’exercice du pied court et à sa progression d’assis à debout. Vous choisissez des séances de 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit votre temps de maintien de la voûte et l’endurance du mollet.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Ramasser la serviette',
   campaign: 'ex-towel-scrunch-fr',

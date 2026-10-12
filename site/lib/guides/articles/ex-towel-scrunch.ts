@@ -142,7 +142,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) uses the towel scrunch as an early foot-strengthening exercise. Once it feels easy for two sessions in a row, the plan moves you to the short foot exercise and its seated-to-standing progression. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Towel scrunch (towel curls)',
   campaign: 'ex-towel-scrunch',

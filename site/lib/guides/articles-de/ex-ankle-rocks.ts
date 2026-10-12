@@ -148,7 +148,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     more: [
       'Ein Zentimeter mehr beim Knie-Wand-Test in ein paar Wochen ist bedeutsam. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Sprunggelenk-Wippen',
   campaign: 'ex-ankle-rocks-de',

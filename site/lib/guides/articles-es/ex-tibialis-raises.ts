@@ -140,7 +140,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, el equilibrio y cuánto mantienes el arco. Las elevaciones de tibial anterior forman parte de los días de fuerza. Walkito es un programa de ejercicio. No diagnostica.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Elevaciones de tibial anterior',
   campaign: 'ex-tibialis-raises-es',

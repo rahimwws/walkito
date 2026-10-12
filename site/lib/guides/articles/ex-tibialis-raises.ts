@@ -140,7 +140,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
     more: [
       'Every 14 days, a short test checks calf endurance, balance and arch hold. Tibialis raises are part of the strength days. Walkito is an exercise program. It does not diagnose.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Tibialis raises',
   campaign: 'ex-tibialis-raises',

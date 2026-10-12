@@ -330,7 +330,7 @@ export const SHIN_SPLINTS_PT: Guide = {
       `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando a sua primeira meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho na perna está fazendo efeito.`,
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a sua dor na canela é localizada, está piorando ou aparece em repouso, procure um profissional de saúde antes de aumentar a carga.',
     ],
-    cta: `Comece com ${PROGRAM.sessionMinutes[0]}\u00A0minutos por dia.`,
+    cta: `Comece com uma sessão de ${PROGRAM.sessionMinutes[0]}\u00A0minutos.`,
   },
   crumb: 'Exercícios para canelite',
   campaign: 'guide-shin-splints-pt',

@@ -257,7 +257,7 @@ export const NURSES_EN: Guide = {
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once your first goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the work is doing anything. On rotating shifts, the time of day does not matter. What matters is hitting the sessions consistently.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If pain is sharp, getting worse or keeping you up at night, see a clinician first.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Foot pain for nurses',
   campaign: 'guide-nurses',

@@ -294,7 +294,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     more: [
       'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Fuß kräftigen',
   campaign: 'guide-foot-strength-de',

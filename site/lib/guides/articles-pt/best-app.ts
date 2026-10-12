@@ -134,7 +134,7 @@ export const BEST_APP_PT: Guide = {
         'Onde o Walkito é diferente:',
         {
           list: [
-            'O Walkito ajusta a sessão de cada dia a partir de um check-in de dor pela manhã, e não de um retorno no fim da sessão.',
+            'O Walkito ajusta cada sessão a partir de um check-in de dor pela manhã, e não de um retorno no fim da sessão.',
             'Testa a diferença entre esquerda e direita a cada 14\u00A0dias.',
             'Foca especificamente em dor no calcanhar e no pé, e não em toda a variedade de lesões de corrida.',
           ],
@@ -239,7 +239,7 @@ export const BEST_APP_PT: Guide = {
         '**Você tem dor em várias partes do corpo**, não só nos pés: o [Prehab](https://theprehabguys.com/) dá mais de 55 programas numa assinatura só.',
         '**Você quer um ponto de partida gratuito** para acompanhar a dor no calcanhar e tentar alongamentos básicos: o [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) faz isso bem, sem custo.',
         '**O seu problema principal é pé chato** sem dor importante: o [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) foca exatamente nisso.',
-        '**Você quer um plano diário para dor no calcanhar ou pé chato que se ajuste à sua manhã** e teste a sua evolução: foi para isso que o [Walkito](https://walkito.site/) foi feito.',
+        '**Você quer um plano para dor no calcanhar ou pé chato que se ajuste à sua manhã** e teste a sua evolução, 3, 5 ou 7 dias por semana, você escolhe: foi para isso que o [Walkito](https://walkito.site/) foi feito.',
       ],
     },
   ],
@@ -255,7 +255,7 @@ export const BEST_APP_PT: Guide = {
     },
     {
       q: 'Exakt Health ou Walkito: qual é melhor para fascite plantar?',
-      a: 'O Exakt Health cobre mais condições, incluindo mais de 15 lesões de corrida e planos completos de treino de corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito foca especificamente em dor no calcanhar e no pé, com adaptação diária pela dor e testes de evolução a cada 14\u00A0dias. O Exakt é a escolha mais forte para corredores que precisam de reabilitação e de um plano de corrida. O Walkito é mais restrito, mas ajusta cada sessão à sua manhã. Os dois estão no iOS e no Android.',
+      a: 'O Exakt Health cobre mais condições, incluindo mais de 15 lesões de corrida e planos completos de treino de corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito foca especificamente em dor no calcanhar e no pé, com adaptação à dor da manhã e testes de evolução a cada 14\u00A0dias. O Exakt é a escolha mais forte para corredores que precisam de reabilitação e de um plano de corrida. O Walkito é mais restrito, mas ajusta cada sessão à sua manhã. Os dois estão no iOS e no Android.',
     },
     {
       q: 'Um app pode substituir o fisioterapeuta na fascite plantar?',
@@ -267,7 +267,7 @@ export const BEST_APP_PT: Guide = {
     },
     {
       q: 'Por que o Walkito não diz que é o melhor app para fascite plantar?',
-      a: 'Porque não seria honesto. O Walkito é novo, ainda não tem avaliações de usuários, cobre menos condições que o Exakt Health e não tem um profissional de saúde do outro lado como o Hinge Health. O que ele faz bem é ajustar cada dia à sua dor e testar a sua evolução a cada 14\u00A0dias. Se isso faz dele o app certo para você depende do que você precisa.',
+      a: 'Porque não seria honesto. O Walkito é novo, ainda não tem avaliações de usuários, cobre menos condições que o Exakt Health e não tem um profissional de saúde do outro lado como o Hinge Health. O que ele faz bem é ajustar cada sessão à sua dor da manhã e testar a sua evolução a cada 14\u00A0dias. Se isso faz dele o app certo para você depende do que você precisa.',
     },
     {
       q: 'Algum desses apps funciona no Android?',

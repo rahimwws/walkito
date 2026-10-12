@@ -137,7 +137,7 @@ export const EX_BAND_INVERSION: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) adds ankle inversion with a band after six sessions of the standing short foot exercise. The progression ensures the intrinsic foot muscles are active before the extrinsic stabilizer is loaded. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks arch hold time and calf endurance.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Ankle inversion with a band (tibialis posterior)',
   campaign: 'ex-band-inversion',

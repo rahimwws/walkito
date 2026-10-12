@@ -331,7 +331,7 @@ export const SHIN_SPLINTS_IT: Guide = {
       `Scegli ${DAYS}\u00A0giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sulla gamba sta servendo a qualcosa.`,
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore alla tibia è localizzato, peggiora o compare a riposo, rivolgiti a un professionista sanitario prima di caricarlo ancora.',
     ],
-    cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
+    cta: `Inizia con una sessione da ${PROGRAM.sessionMinutes[0]}\u00A0minuti.`,
   },
   crumb: 'Esercizi per la periostite tibiale',
   campaign: 'guide-shin-splints-it',

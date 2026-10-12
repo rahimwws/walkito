@@ -279,7 +279,7 @@ export const TOE_STRENGTHENING_ES: Guide = {
     more: [
       'Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. No mide directamente la fuerza de los dedos, así que vale la pena seguir haciendo las pruebas caseras de esta página. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Fortalecer los dedos de los pies',
   campaign: 'guide-toe-strength-es',

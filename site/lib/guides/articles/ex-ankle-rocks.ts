@@ -148,7 +148,7 @@ export const EX_ANKLE_ROCKS: Guide = {
     more: [
       'A centimeter of improvement in the knee-to-wall score over a few weeks is meaningful. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Ankle rocks',
   campaign: 'ex-ankle-rocks',

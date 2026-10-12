@@ -244,7 +244,7 @@ export const HAGLUNDS_IT: Guide = {
     more: [
       'Le sessioni durano 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi. Se hai una sporgenza visibile dietro il tallone e non sei sicuro di cosa causi il dolore, fatti controllare da un professionista sanitario prima di iniziare a caricare.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Morbo di Haglund',
   campaign: 'guide-haglunds-it',

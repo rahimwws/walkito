@@ -226,7 +226,7 @@ export const MORTONS_PT: Guide = {
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito não faz diagnóstico de neuroma de Morton. Os exercícios que ele inclui são medidas de conforto e de carga. Calçados mais largos, coxins metatarsais e uma avaliação profissional devem vir primeiro.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Neuroma de Morton',
   campaign: 'guide-mortons-pt',

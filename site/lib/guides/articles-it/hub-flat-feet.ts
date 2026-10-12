@@ -227,7 +227,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto il primo obiettivo), un breve test controlla tenuta dell’arco, resistenza del polpaccio ed equilibrio. L’obiettivo della tenuta dell’arco resta finché non lo raggiungi, per quante settimane servano.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se da adulto un arco si è abbassato con dolore o gonfiore, rivolgiti a un professionista sanitario prima di iniziare.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Piede piatto',
   campaign: 'hub-flat-feet-it',

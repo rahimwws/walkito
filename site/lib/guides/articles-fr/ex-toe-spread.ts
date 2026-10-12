@@ -146,7 +146,7 @@ export const EX_TOE_SPREAD_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito place l’exercice pour écarter les orteils les jours de renforcement, avec d’autres exercices des muscles intrinsèques du pied. Le plan l’alterne avec l’exercice du pied court et l’inversion avec élastique, pour que les muscles du pied travaillent de façon variée sans surcharger un seul mouvement. Vous choisissez des séances de 3, 5 ou 10\u00A0minutes.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Écarter les orteils',
   campaign: 'ex-toe-spread-fr',

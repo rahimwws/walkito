@@ -129,7 +129,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Un movimento della caviglia che migliora nel giro di settimane mostra che gli allungamenti stanno servendo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Allungamento del soleo (ginocchio piegato)',
   campaign: 'ex-soleus-stretch-it',

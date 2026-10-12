@@ -294,7 +294,7 @@ export const FLAT_FEET_ES: Guide = {
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio, así puedes ver si el trabajo del arco está sirviendo de algo.`,
     ],
-    cta: `Empieza con ${PROGRAM.sessionMinutes[0]}\u00A0minutos al día.`,
+    cta: `Empieza con una sesión de ${PROGRAM.sessionMinutes[0]}\u00A0minutos.`,
   },
   crumb: 'Ejercicios para pie plano',
   campaign: 'guide-flat-feet-es',
@@ -615,7 +615,7 @@ export const HEEL_PAIN_ES: Guide = {
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas esa meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver qué está cambiando.`,
     ],
-    cta: `Empieza con ${PROGRAM.sessionMinutes[0]}\u00A0minutos al día.`,
+    cta: `Empieza con una sesión de ${PROGRAM.sessionMinutes[0]}\u00A0minutos.`,
   },
   crumb: 'Ejercicios para la fascitis plantar',
   campaign: 'guide-plantar-fasciitis-es',

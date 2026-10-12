@@ -169,7 +169,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla y el equilibrio. Si el dolor está justo donde el tendón se une al hueso del talón, pide a un profesional de la salud que lo revise antes de cargarlo fuerte. Walkito es un programa de ejercicio. No diagnostica.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Excéntricos de talón',
   campaign: 'ex-eccentric-heel-drops-es',

@@ -259,7 +259,7 @@ export const PF_TAPING_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald ein Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Tapen ist kein Teil von Walkito. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Tapen',
   campaign: 'guide-pf-taping-de',

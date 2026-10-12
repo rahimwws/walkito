@@ -140,7 +140,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     more: [
       'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Wadendehnung (Gastrocnemius, gestrecktes Knie)',
   campaign: 'ex-calf-stretch-de',

@@ -277,7 +277,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Al principio cada dos semanas (cada cuatro una vez que alcanzas una meta), una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Fortalecer el tobillo',
   campaign: 'guide-ankle-strength-es',

@@ -235,7 +235,7 @@ export const PTTD_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio, para que veas qué está cambiando. Si te han diagnosticado DTTP, usa la app junto con ortesis y confirma con tu profesional de la salud que la etapa es adecuada para el ejercicio.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Ejercicios para el tendón tibial posterior',
   campaign: 'guide-pttd-es',

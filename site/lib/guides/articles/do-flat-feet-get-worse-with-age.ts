@@ -276,7 +276,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
     more: [
       'You pick 3, 5 or 7 sessions a week of 3, 5 or 10 minutes. Every two weeks, a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician. If one arch is dropping or your inner ankle hurts, see a clinician first.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Flat feet with age',
   campaign: 'guide-flat-feet-age',

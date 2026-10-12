@@ -254,7 +254,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del mattino), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta alzando la tua soglia di camminata.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore al tallone dopo aver camminato peggiora nonostante gli esercizi, rivolgiti prima a un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Dolore al tallone dopo aver camminato',
   campaign: 'guide-heel-after-walking-it',

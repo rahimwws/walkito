@@ -139,7 +139,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito setzt das Großzehenheben früh in der Abfolge zur Fußkräftigung ein, zusammen mit dem Handtuchgreifen. Sobald du den großen Zeh zwei Einheiten lang sauber isolieren kannst, verlagert der Plan den Fokus auf die Kurzer-Fuß-Übung und ihre Steigerung vom Sitzen zum Stehen. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt den Fortschritt.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Großzehenheben (Zehen-Yoga)',
   campaign: 'ex-big-toe-lift-de',

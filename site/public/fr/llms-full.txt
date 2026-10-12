@@ -1372,7 +1372,7 @@ Là où Exakt est plus forte que Walkito :
 
 Là où Walkito se distingue :
 
-- Walkito ajuste la séance de chaque jour à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance.
+- Walkito ajuste chaque séance à partir d’un bilan de douleur le matin plutôt qu’à partir d’un retour en fin de séance.
 - Elle teste l’asymétrie gauche-droite tous les 14 jours.
 - Elle se concentre sur la douleur au talon et au pied plutôt que sur toute la gamme des blessures de course.
 
@@ -1469,7 +1469,7 @@ Partez de votre situation, pas des listes de fonctionnalités.
 - **Vous avez mal à plusieurs endroits du corps**, pas seulement aux pieds : [Prehab](https://theprehabguys.com/) vous donne plus de 55 programmes avec un seul abonnement.
 - **Vous voulez un point de départ gratuit** pour suivre votre douleur au talon et essayer des étirements de base : [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) le fait bien, gratuitement.
 - **Votre problème principal, ce sont les pieds plats** sans douleur importante : [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) est conçue exactement pour ça.
-- **Vous voulez un plan quotidien pour la douleur au talon ou les pieds plats qui s’adapte à votre matin** et teste vos progrès : c’est pour cela que [Walkito](https://walkito.site/) a été conçue.
+- **Vous voulez un plan pour la douleur au talon ou les pieds plats qui s’adapte à votre matin** et teste vos progrès, 3, 5 ou 7 jours par semaine, au choix : c’est pour cela que [Walkito](https://walkito.site/) a été conçue.
 
 ### Quand une application ne suffit pas, consultez un professionnel de santé
 
@@ -1496,7 +1496,7 @@ La recommandation clinique de 2023 sur la douleur au talon donne aux étirements
 
 #### Exakt Health est-elle meilleure que Walkito pour la fasciite plantaire ?
 
-Exakt Health couvre plus de problèmes, dont plus de 15 blessures de course et des plans complets d’entraînement à la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et au pied, avec une adaptation quotidienne à la douleur et des tests de progrès tous les 14 jours. Exakt est le meilleur choix pour les coureurs qui ont besoin de rééducation et d’un plan de course. Walkito est plus ciblée mais ajuste chaque séance à votre matin.
+Exakt Health couvre plus de problèmes, dont plus de 15 blessures de course et des plans complets d’entraînement à la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et au pied, avec une adaptation à la douleur du matin et des tests de progrès tous les 14 jours. Exakt est le meilleur choix pour les coureurs qui ont besoin de rééducation et d’un plan de course. Walkito est plus ciblée mais ajuste chaque séance à votre matin.
 
 #### Une application peut-elle remplacer un kiné pour la fasciite plantaire ?
 
@@ -1508,7 +1508,7 @@ Hinge Health est gratuite pour les membres dont l’employeur ou l’assurance s
 
 #### Pourquoi Walkito ne se dit-elle pas la meilleure application pour la fasciite plantaire ?
 
-Parce que ce ne serait pas honnête. Walkito est nouvelle, n’a pas encore de notes d’utilisateurs, couvre moins de problèmes qu’Exakt Health, et n’a pas de professionnel de santé de l’autre côté comme Hinge Health. Ce qu’elle fait bien, c’est ajuster chaque jour à votre douleur et tester vos progrès tous les 14 jours. Que ce soit la bonne application pour vous dépend de ce dont vous avez besoin.
+Parce que ce ne serait pas honnête. Walkito est nouvelle, n’a pas encore de notes d’utilisateurs, couvre moins de problèmes qu’Exakt Health, et n’a pas de professionnel de santé de l’autre côté comme Hinge Health. Ce qu’elle fait bien, c’est ajuster chaque séance à votre douleur du matin et tester vos progrès tous les 14 jours. Que ce soit la bonne application pour vous dépend de ce dont vous avez besoin.
 
 #### Ces applications marchent-elles sur Android ?
 
@@ -1613,7 +1613,7 @@ L’exercice et la prise en charge conservatrice sont en général essayés pend
 
 ### En faire un plan
 
-Walkito inclut [écarter les orteils](https://walkito.site/fr/exercices/ecarter-orteils/) et [lever le gros orteil](https://walkito.site/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances quotidiennes de 3 ou 5 minutes gardent les exercices réguliers.
+Walkito inclut [écarter les orteils](https://walkito.site/fr/exercices/ecarter-orteils/) et [lever le gros orteil](https://walkito.site/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances de 3 ou 5 minutes, 3, 5 ou 7 jours par semaine au choix, gardent les exercices réguliers.
 
 #### Les exercices peuvent-ils corriger un hallux valgus ?
 
@@ -4837,7 +4837,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 
 ### En faire un plan
 
-Walkito inclut [ramasser la serviette](https://walkito.site/fr/exercices/ramasser-serviette-orteils/), [écarter les orteils](https://walkito.site/fr/exercices/ecarter-orteils/) et [lever le gros orteil](https://walkito.site/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles propres au pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’orteil en marteau, mais les exercices se recoupent. Si vous avez un orteil en marteau souple et voulez un cadre pour un travail quotidien des orteils, les séances de 3 ou 5 minutes gardent les exercices réguliers sans avoir à retenir une routine à part.
+Walkito inclut [ramasser la serviette](https://walkito.site/fr/exercices/ramasser-serviette-orteils/), [écarter les orteils](https://walkito.site/fr/exercices/ecarter-orteils/) et [lever le gros orteil](https://walkito.site/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles propres au pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’orteil en marteau, mais les exercices se recoupent. Si vous avez un orteil en marteau souple et voulez un cadre pour travailler vos orteils, les séances de 3 ou 5 minutes gardent les exercices réguliers sans avoir à retenir une routine à part.
 
 #### Un orteil en marteau peut-il se redresser ?
 
@@ -5000,7 +5000,7 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 ### La place d’un plan d’exercices
 
-Walkito construit des séances quotidiennes autour des montées sur pointes, du travail des muscles du pied et des étirements. Ces exercices sont conçus pour la fasciite plantaire et la force du pied. Ils peuvent aider un pied avec une atrophie du coussinet graisseux à mieux gérer la charge, mais ils n’ont pas été testés pour ce problème précis et ne reconstruiront pas un coussinet aminci. Si un professionnel de santé a confirmé un syndrome du coussinet graisseux, un plan d’exercices comme celui de Walkito est un complément raisonnable à l’amorti et aux chaussures, pas un remplacement.
+Walkito construit des séances, 3, 5 ou 7 jours par semaine, au choix, autour des montées sur pointes, du travail des muscles du pied et des étirements. Ces exercices sont conçus pour la fasciite plantaire et la force du pied. Ils peuvent aider un pied avec une atrophie du coussinet graisseux à mieux gérer la charge, mais ils n’ont pas été testés pour ce problème précis et ne reconstruiront pas un coussinet aminci. Si un professionnel de santé a confirmé un syndrome du coussinet graisseux, un plan d’exercices comme celui de Walkito est un complément raisonnable à l’amorti et aux chaussures, pas un remplacement.
 
 #### Qu’est-ce qu’on ressent avec un syndrome du coussinet graisseux du talon ?
 
@@ -5312,7 +5312,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### Quand l’exercice est la bonne étape
 
-Si un professionnel de santé a confirmé une fasciite plantaire et écarté les problèmes ci-dessus, l’exercice est l’approche la mieux notée par la recommandation. Walkito construit un plan quotidien autour de la mise en charge du mollet et du fascia, en commençant par des étirements et en progressant vers des exercices de renforcement à votre rythme.
+Si un professionnel de santé a confirmé une fasciite plantaire et écarté les problèmes ci-dessus, l’exercice est l’approche la mieux notée par la recommandation. Walkito construit un plan de 3, 5 ou 7 jours par semaine, au choix, autour de la mise en charge du mollet et du fascia, en commençant par des étirements et en progressant vers des exercices de renforcement à votre rythme.
 
 #### Une douleur au talon la nuit, est-ce grave ?
 
@@ -9206,7 +9206,7 @@ Aucun essai n’a suivi la durée de récupération d’une tendinite des extens
 
 Language: French (Français) · https://walkito.site/fr/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
 
-Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15 plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation quotidienne à la douleur. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.
+Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15 plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation à la douleur de chaque matin. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.
 
 - Exakt Health couvre plus de 15 blessures de course et propose des plans d’entraînement à la course du 5 km au marathon. Walkito couvre uniquement la douleur au talon, les pieds plats et la douleur au tibia.
 - Exakt et Walkito sont toutes les deux sur iOS et Android.
@@ -9232,7 +9232,7 @@ L’application est certifiée comme dispositif médical dans l’UE, ce qui veu
 
 ### Pour qui Walkito est-elle conçue ?
 
-Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices quotidien qui s’adapte à leur état chaque matin. Cela inclut :
+Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices, 3, 5 ou 7 jours par semaine au choix, qui s’adapte à leur état chaque matin. Cela inclut :
 
 - La fasciite plantaire.
 - Les pieds plats souples.
@@ -9240,7 +9240,7 @@ Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court
 
 Elle est aussi conçue pour les personnes debout toute la journée : infirmières, employés de commerce, personnel d’entrepôt.
 
-L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster la séance de chaque jour à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.
+L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster chaque séance à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.
 
 Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé ou de Health Connect) transforme la séance de renforcement suivante en séance de récupération plus légère.
 
@@ -9335,7 +9335,7 @@ Choisissez Walkito si l’un des points suivants vous correspond :
 
 - Votre douleur est précisément une douleur au talon, une fasciite plantaire ou des pieds plats, et vous voulez un programme ciblé pour cela.
 - Vous voulez des séances de 3 à 10 minutes plutôt que de 15 à 30.
-- L’adaptation quotidienne à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.
+- L’adaptation de chaque séance à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.
 - Vous voulez des tests de progrès tous les 14 jours qui comparent la gauche et la droite.
 - Vous avez besoin de l’application en russe.
 - Vous êtes debout toute la journée pour le travail, pas en train de courir, et voulez une application conçue pour cela.
@@ -9356,7 +9356,7 @@ Si Walkito semble convenir à votre situation, voici comment ça marche. Vous r�
 
 #### Exakt Health est-elle meilleure que Walkito ?
 
-Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15 blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation quotidienne à la douleur et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement quotidien, Walkito a été conçue pour cela.
+Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15 blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation à la douleur du matin et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement à chaque séance, Walkito a été conçue pour cela.
 
 #### Comment le prix de Walkito se compare-t-il à celui d’Exakt Health ?
 

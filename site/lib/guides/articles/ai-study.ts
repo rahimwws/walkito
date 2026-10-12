@@ -168,7 +168,7 @@ export const AI_STUDY_EN: Guide = {
   },
   program: {
     h2: 'Stretching and strengthening, in one plan',
-    text: '[Walkito](/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short daily plan, with a dose for each exercise.',
+    text: '[Walkito](/program/) puts the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time into one short plan on the 3, 5 or 7 days a week you pick, with a dose for each exercise.',
     more: [
       'Each morning a one-tap check-in makes a bad day lighter, and every 14 days a short test shows whether your calves, arch and balance are changing. Walkito is an exercise program, not a diagnosis or a substitute for a clinician.',
     ],

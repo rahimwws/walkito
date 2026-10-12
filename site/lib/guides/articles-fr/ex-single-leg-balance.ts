@@ -165,7 +165,7 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Une fois l’objectif équilibre atteint, le test passe à tous les 28\u00A0jours et un nouvel objectif prend le relais. Walkito est un programme d’exercices. Il ne pose pas de diagnostic.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Équilibre sur une jambe',
   campaign: 'ex-single-leg-balance-fr',

@@ -150,7 +150,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito ajoute l’abduction de hanche les jours de renforcement dès qu’un objectif d’équilibre gauche-droite entre dans votre plan. Elle s’ajoute aux exercices des muscles intrinsèques du pied et au travail du mollet, pour que la voûte soit soutenue par le haut et par le bas. Les séances durent 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit vos progrès.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Abduction de hanche',
   campaign: 'ex-hip-abduction-fr',

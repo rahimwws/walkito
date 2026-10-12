@@ -19,7 +19,7 @@ export const VS_EXAKT_DE: Guide = {
     'Walkito und Exakt Health im Vergleich: Beschwerden, Preise, Plattformen, wie dein Plan entsteht, Studienlage, Sprachen, Datenschutz. Stand Oktober 2026.',
   h1: 'Walkito vs Exakt Health: welche App passt zu dir?',
   lede:
-    'Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15\u00A0Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, Plattfüße und die tägliche Anpassung an den Schmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.',
+    'Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15\u00A0Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, Plattfüße und die Anpassung an den Morgenschmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.',
   intro: [
     'Diese Seite stammt von Walkito. Deshalb solltest du die Fakten zu Exakt lesen (sie stammen aus dem App-Store-Eintrag, dem Google-Play-Eintrag und der offiziellen Website, alle im Oktober 2026 geprüft) und selbst entscheiden. Links zu allen Quellen stehen unter der Vergleichstabelle.',
   ],
@@ -134,7 +134,7 @@ export const VS_EXAKT_DE: Guide = {
     {
       h2: 'Für wen ist Walkito gemacht?',
       paragraphs: [
-        'Walkito ist für Menschen gemacht, denen die Füße wehtun und die einen kurzen täglichen Übungsplan wollen, der sich daran anpasst, wie sie sich jeden Morgen fühlen. Dazu gehören:',
+        'Walkito ist für Menschen gemacht, denen die Füße wehtun und die einen kurzen Übungsplan an 3, 5 oder 7 Tagen pro Woche, nach Wahl, wollen, der sich daran anpasst, wie sie sich jeden Morgen fühlen. Dazu gehören:',
         {
           list: [
             'Plantarfasziitis.',
@@ -143,7 +143,7 @@ export const VS_EXAKT_DE: Guide = {
           ],
         },
         'Die App ist auch für Menschen gemacht, die den ganzen Tag auf den Beinen sind: Pflegekräfte, Beschäftigte im Einzelhandel, im Lager.',
-        'Die App ist schmaler als Exakt. Sie deckt keine Knieverletzungen, keine Zerrungen der hinteren Oberschenkelmuskulatur und keine Laufpläne ab. Was sie anders macht: **Sie passt die Einheit jedes Tages nach einem Schmerz-Check-in am Morgen an** statt nach dem Feedback am Ende der Einheit.',
+        'Die App ist schmaler als Exakt. Sie deckt keine Knieverletzungen, keine Zerrungen der hinteren Oberschenkelmuskulatur und keine Laufpläne ab. Was sie anders macht: **Sie passt jede Einheit nach einem Schmerz-Check-in am Morgen an** statt nach dem Feedback am Ende der Einheit.',
         'Ein Morgen mit 7/10 oder mehr stellt den Tag auf etwa drei Minuten Arbeit im Sitzen um. Ein großer Tag auf den Beinen (gemessen über die Schritte in Apple Health oder Health Connect) macht aus der nächsten Krafteinheit eine leichtere Erholungseinheit.',
         'Walkito testet den Fortschritt alle 14\u00A0Tage mit Fersenheben, Gewölbehalten und Einbeinstand und vergleicht deine linke mit deiner rechten Seite. Diesen Vergleich zwischen links und rechts verfolgen die meisten Apps in diesem Bereich nicht.',
         'Walkito ist am 2.\u00A0Oktober 2026 erschienen. Die App ist neu, hat noch keine Bewertungen von Nutzern und läuft auf iOS und Android. Sie hat nicht die Erfolgsgeschichte oder Bandbreite, die Exakt seit 2021 aufgebaut hat.',
@@ -246,7 +246,7 @@ export const VS_EXAKT_DE: Guide = {
       bullets: [
         'Dein Schmerz ist genau Fersenschmerz, Plantarfasziitis oder Plattfuß, und du willst ein Programm, das sich darauf konzentriert.',
         'Du willst Einheiten von 3 bis 10\u00A0Minuten statt 15 bis 30.',
-        'Die tägliche Anpassung an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.',
+        'Die Anpassung jeder Einheit an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.',
         'Du willst alle 14\u00A0Tage Fortschrittstests, die links und rechts vergleichen.',
         'Du brauchst die App auf Russisch.',
         'Du bist für die Arbeit den ganzen Tag auf den Beinen, läufst aber nicht, und willst eine App, die dafür gemacht ist.',
@@ -256,7 +256,7 @@ export const VS_EXAKT_DE: Guide = {
   faq: [
     {
       q: 'Ist Exakt Health besser als Walkito?',
-      a: 'Das hängt davon ab, was du brauchst. Exakt Health deckt über 15\u00A0Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit täglicher Anpassung an den Schmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit täglicher Anpassung ist Walkito gemacht.',
+      a: 'Das hängt davon ab, was du brauchst. Exakt Health deckt über 15\u00A0Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit Anpassung an den Morgenschmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit Anpassung bei jeder Einheit ist Walkito gemacht.',
     },
     {
       q: 'Wie sieht der Preis von Walkito im Vergleich zu Exakt Health aus?',

@@ -276,7 +276,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance, arch hold and balance, so you can see what is changing in your feet.',
       'Walkito does not address back pain, does not diagnose and is not a substitute for a clinician. If you have back pain, get it checked, especially if any of the signs above apply.',
     ],
-    cta: 'Start with 3 minutes a day for your feet',
+    cta: 'Start with 3 minutes, 3 days a week, for your feet',
   },
   crumb: 'Flat feet and back pain',
   campaign: 'guide-flat-feet-back',

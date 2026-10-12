@@ -279,7 +279,7 @@ export const TOE_STRENGTHENING_FR: Guide = {
     more: [
       'Au début, tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Il ne mesure pas directement la force des orteils, donc les tests maison de cette page restent utiles. Walkito est un programme d’exercices pour adultes. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Renforcer les orteils',
   campaign: 'guide-toe-strength-fr',

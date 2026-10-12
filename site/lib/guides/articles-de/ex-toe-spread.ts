@@ -145,7 +145,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant das Zehenspreizen an Krafttagen zusammen mit anderen Übungen für die kurzen Fußmuskeln ein. Der Plan wechselt es mit der Kurzer-Fuß-Übung und dem Einwärtsdrehen mit Band ab, damit die Fußmuskeln abwechslungsreich arbeiten, ohne dass eine Bewegung überlastet wird. Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Zehenspreizen',
   campaign: 'ex-toe-spread-de',

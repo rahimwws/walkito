@@ -225,7 +225,7 @@ export const PF_DURATION_EN: Guide = {
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Once the morning goal is met, it moves to maintaining and the next goal takes its place. There is no fixed end date, because the foot sets the pace.',
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If pain is not improving after several months, see a clinician to check the diagnosis and discuss the options on this page.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'How long plantar fasciitis lasts',
   campaign: 'guide-pf-duration',

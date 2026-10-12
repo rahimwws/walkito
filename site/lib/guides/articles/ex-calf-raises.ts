@@ -180,7 +180,7 @@ export const EX_CALF_RAISES: Guide = {
     more: [
       'Every 14 days, a short test checks calf endurance and balance. The calf goal is 25 single-leg raises. Reaching it does not end the work; a new goal takes its place. Walkito is an exercise program. It does not diagnose.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Calf raises',
   campaign: 'ex-calf-raises',
