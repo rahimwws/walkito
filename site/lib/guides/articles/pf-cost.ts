@@ -179,7 +179,7 @@ export const PF_COST_EN: Guide = {
   },
   program: {
     h2: 'If you start at home',
-    text: '[Walkito](/program/) gives you the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.',
+    text: '[Walkito](/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.',
     more: [
       'It does not diagnose and has no hands-on care, so see a clinician if the pain is not improving.',
     ],

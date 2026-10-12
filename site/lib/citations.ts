@@ -1153,6 +1153,56 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.2519/jospt.2017.6999',
     pmid: '28142368',
   },
+  {
+    text: 'Yüce A, Ocak O, Gur V, et al. YouTube Videos About Plantar Fasciitis and Calcaneal Spurs Are Insufficient and Poor Quality. Journal of the American Podiatric Medical Association. 2023;113(3).',
+    doi: '10.7547/22-187',
+    pmid: '37463193',
+  },
+  {
+    text: 'Feyzioğlu Ö, Öztürk Ö, Muğrabi S. Video-Based Information About Plantar Fasciitis Reflects Current Treatment Guidelines. Journal of the American Podiatric Medical Association. 2023;113(6).',
+    doi: '10.7547/22-105',
+    pmid: '37494298',
+  },
+  {
+    text: 'Satılmış AB, Cengiz T. Analysis of Plantar Fasciitis Videos on YouTube: Quality and Reliability Assessment. Cureus. 2025;17(2):e78993.',
+    doi: '10.7759/cureus.78993',
+    pmid: '40091945',
+  },
+  {
+    text: 'Ülgen NK, Nazlıgül AS, Yiğit N, et al. AI-Generated Exercise Videos vs Traditional Leaflets: A Novel Approach to Home Exercise Education in Achilles Tendinitis and Plantar Fasciitis: A Randomized Controlled Trial. Foot & Ankle Orthopaedics. 2026;11(2):24730114261436388.',
+    doi: '10.1177/24730114261436388',
+    pmid: '42007200',
+  },
+  {
+    text: 'Bennell KL, Marshall CJ, Dobson F, et al. Does a Web-Based Exercise Programming System Improve Home Exercise Adherence for People With Musculoskeletal Conditions?: A Randomized Controlled Trial. American Journal of Physical Medicine & Rehabilitation. 2019;98(10):850–858.',
+    doi: '10.1097/PHM.0000000000001204',
+    pmid: '31021823',
+  },
+  {
+    text: 'Lang S, McLelland C, MacDonald D, et al. Do digital interventions increase adherence to home exercise rehabilitation? A systematic review of randomised controlled trials. Archives of Physiotherapy. 2022;12(1):24.',
+    doi: '10.1186/s40945-022-00148-z',
+    pmid: '36184611',
+  },
+  {
+    text: 'Riel H, Jensen MB, Olesen JL, et al. Self-dosed and pre-determined progressive heavy-slow resistance training have similar effects in people with plantar fasciopathy: a randomised trial. Journal of Physiotherapy. 2019;65(3):144–151.',
+    doi: '10.1016/j.jphys.2019.05.011',
+    pmid: '31204294',
+  },
+  {
+    text: 'Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.',
+    doi: '10.1136/bjsports-2023-106948',
+    pmid: '37414460',
+  },
+  {
+    text: 'Jordan JL, Holden MA, Mason EE, et al. Interventions to improve adherence to exercise for chronic musculoskeletal pain in adults. Cochrane Database of Systematic Reviews. 2010;2010(1):CD005956.',
+    doi: '10.1002/14651858.CD005956.pub2',
+    pmid: '20091582',
+  },
+  {
+    text: 'Nicolson PJA, Bennell KL, Dobson FL, et al. Interventions to increase adherence to therapeutic exercise in older adults with low back pain and/or hip/knee osteoarthritis: a systematic review and meta-analysis. British Journal of Sports Medicine. 2017;51(10):791–799.',
+    doi: '10.1136/bjsports-2016-096458',
+    pmid: '28087567',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1386,6 +1436,16 @@ export const CITE = {
   shimICT: 226,
   kosehasanogullariLaserESWT: 227,
   fraserPTUse: 228,
+  yuceYoutube: 229,
+  feyziogluYoutube: 230,
+  satilmisYoutube: 231,
+  ulgenAIVideo: 232,
+  bennellWebAdherence: 233,
+  langDigitalAdherence: 234,
+  rielSelfDosed: 235,
+  rielHeelRaiseAdd: 236,
+  jordanAdherenceCochrane: 237,
+  nicolsonAdherence: 238,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

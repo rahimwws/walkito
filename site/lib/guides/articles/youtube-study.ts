@@ -12,8 +12,8 @@ export const YT_STUDY_EN: Guide = {
   lang: 'en',
   page: 'ytStudy',
   mainSource: CITE.guideline,
-  published: '2026-10-12',
-  updated: '2026-10-12',
+  published: '2026-10-11',
+  updated: '2026-10-11',
   title: 'Top 50 Plantar Fasciitis YouTube Videos vs the 2023 Guideline',
   description:
     'We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 heel pain guideline. Only 9 teach all three top-rated exercise types.',
@@ -147,7 +147,7 @@ export const YT_STUDY_EN: Guide = {
     {
       h2: 'All 50 videos',
       paragraphs: [
-        'Ordered by views on October 11, 2026. Fascia means a plantar fascia stretch; Calf shows which calf stretch (straight knee, bent knee or both); Doctor means it says when to see one. Square brackets in titles are shown as round ones. The [data file](/downloads/youtube-plantar-fasciitis-study-2026.csv) has every check with its timestamp and quote.',
+        'Ordered by views on October 11, 2026, except video 40, which replaced a Hindi video at that rank. Fascia means a plantar fascia stretch; Calf shows which calf stretch (straight knee, bent knee or both); Doctor means it says when to see one. Square brackets in titles are shown as round ones. The [data file](/downloads/youtube-plantar-fasciitis-study-2026.csv) has every check with its timestamp and quote.',
       ],
       table: {
         head: ['#', 'Video, channel', 'Views', 'Fascia', 'Calf', 'Strength', 'Doctor'],

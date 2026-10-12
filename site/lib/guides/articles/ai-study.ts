@@ -11,8 +11,8 @@ export const AI_STUDY_EN: Guide = {
   lang: 'en',
   page: 'aiStudy',
   mainSource: CITE.guideline,
-  published: '2026-10-12',
-  updated: '2026-10-12',
+  published: '2026-10-11',
+  updated: '2026-10-11',
   title: '120 AI Answers on Plantar Fasciitis vs the 2023 Guideline',
   description:
     'We asked ChatGPT, Google AI Mode and Perplexity 40 plantar fasciitis questions: 80% of treatment answers cover stretching, 14% name a strength exercise.',

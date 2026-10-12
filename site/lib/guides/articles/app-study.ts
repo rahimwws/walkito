@@ -11,8 +11,8 @@ export const APP_STUDY_EN: Guide = {
   lang: 'en',
   page: 'appStudy',
   mainSource: CITE.guideline,
-  published: '2026-10-12',
-  updated: '2026-10-12',
+  published: '2026-10-11',
+  updated: '2026-10-11',
   title: 'Heel Pain Apps Checked: What 20 App Listings Promise',
   description:
     'We checked 20 heel pain and plantar fasciitis apps. 9 of 19 promise to end the pain or claim proven results, and only 3 of 19 cite any evidence.',

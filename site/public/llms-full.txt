@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-12
+Last updated: 2026-10-11
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -272,6 +272,16 @@ Sources:
 - Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.
 - Kosehasanogullari M, Büyükvural Şen S, Okur Yılmaz N, et al. Home exercise with or without high-intensity laser or radial shockwave therapy for plantar fasciitis: a randomized controlled trial. Foot & Ankle International. 2026;47(3):386–397.
 - Fraser JJ, Glaviano NR, Hertel J. Utilization of physical therapy intervention among patients with plantar fasciitis in the United States. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(2):49–55.
+- Yüce A, Ocak O, Gur V, et al. YouTube Videos About Plantar Fasciitis and Calcaneal Spurs Are Insufficient and Poor Quality. Journal of the American Podiatric Medical Association. 2023;113(3).
+- Feyzioğlu Ö, Öztürk Ö, Muğrabi S. Video-Based Information About Plantar Fasciitis Reflects Current Treatment Guidelines. Journal of the American Podiatric Medical Association. 2023;113(6).
+- Satılmış AB, Cengiz T. Analysis of Plantar Fasciitis Videos on YouTube: Quality and Reliability Assessment. Cureus. 2025;17(2):e78993.
+- Ülgen NK, Nazlıgül AS, Yiğit N, et al. AI-Generated Exercise Videos vs Traditional Leaflets: A Novel Approach to Home Exercise Education in Achilles Tendinitis and Plantar Fasciitis: A Randomized Controlled Trial. Foot & Ankle Orthopaedics. 2026;11(2):24730114261436388.
+- Bennell KL, Marshall CJ, Dobson F, et al. Does a Web-Based Exercise Programming System Improve Home Exercise Adherence for People With Musculoskeletal Conditions?: A Randomized Controlled Trial. American Journal of Physical Medicine & Rehabilitation. 2019;98(10):850–858.
+- Lang S, McLelland C, MacDonald D, et al. Do digital interventions increase adherence to home exercise rehabilitation? A systematic review of randomised controlled trials. Archives of Physiotherapy. 2022;12(1):24.
+- Riel H, Jensen MB, Olesen JL, et al. Self-dosed and pre-determined progressive heavy-slow resistance training have similar effects in people with plantar fasciopathy: a randomised trial. Journal of Physiotherapy. 2019;65(3):144–151.
+- Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
+- Jordan JL, Holden MA, Mason EE, et al. Interventions to improve adherence to exercise for chronic musculoskeletal pain in adults. Cochrane Database of Systematic Reviews. 2010;2010(1):CD005956.
+- Nicolson PJA, Bennell KL, Dobson FL, et al. Interventions to increase adherence to therapeutic exercise in older adults with low back pain and/or hip/knee osteoarthritis: a systematic review and meta-analysis. British Journal of Sports Medicine. 2017;51(10):791–799.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -2206,7 +2216,7 @@ Most plantar fasciitis exercise programs, including the ones graded highest in t
 
 ## We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 guideline
 
-Language: English · https://walkito.site/plantar-fasciitis-youtube-study/ · published 2026-10-12 · updated 2026-10-12
+Language: English · https://walkito.site/plantar-fasciitis-youtube-study/ · published 2026-10-11 · updated 2026-10-11
 
 Only 9 of the 50 most-watched plantar fasciitis videos on YouTube teach all three kinds of home exercise the 2023 heel pain guideline supports: a plantar fascia stretch, a calf stretch and calf or foot strengthening. Together the 50 videos have 75 million views. Only 9 say when to see a doctor, none of them in the top 10, and 17 titles promise a fast or permanent result.
 
@@ -2295,7 +2305,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### All 50 videos
 
-Ordered by views on October 11, 2026. Fascia means a plantar fascia stretch; Calf shows which calf stretch (straight knee, bent knee or both); Doctor means it says when to see one. Square brackets in titles are shown as round ones. The [data file](https://walkito.site/downloads/youtube-plantar-fasciitis-study-2026.csv) has every check with its timestamp and quote.
+Ordered by views on October 11, 2026, except video 40, which replaced a Hindi video at that rank. Fascia means a plantar fascia stretch; Calf shows which calf stretch (straight knee, bent knee or both); Doctor means it says when to see one. Square brackets in titles are shown as round ones. The [data file](https://walkito.site/downloads/youtube-plantar-fasciitis-study-2026.csv) has every check with its timestamp and quote.
 
 ### See a clinician first if
 
@@ -2328,7 +2338,7 @@ Yes. The data file is free to download and reuse. Please cite it as: Walkito, Th
 
 ## We asked ChatGPT, Google and Perplexity 40 questions about plantar fasciitis and checked the answers
 
-Language: English · https://walkito.site/plantar-fasciitis-ai-answers-study/ · published 2026-10-12 · updated 2026-10-12
+Language: English · https://walkito.site/plantar-fasciitis-ai-answers-study/ · published 2026-10-11 · updated 2026-10-11
 
 AI answers about plantar fasciitis are mostly safe and mostly about stretching. Of 87 answers to treatment questions, 80% mention a calf stretch, but only 14% name a strengthening exercise such as a heel raise, the part the 2023 heel pain guideline grades B. Only 8 of all 120 answers cite that guideline, and the website the answers cite most is YouTube.
 
@@ -2425,7 +2435,7 @@ Yes. The data file is free to download and reuse. Please cite it as: Walkito, 12
 
 ## We checked 20 heel pain and plantar fasciitis apps: what they promise and who is behind them
 
-Language: English · https://walkito.site/heel-pain-apps-study/ · published 2026-10-12 · updated 2026-10-12
+Language: English · https://walkito.site/heel-pain-apps-study/ · published 2026-10-11 · updated 2026-10-11
 
 9 of 19 heel pain apps on the App Store and Google Play promise to end the pain or claim proven results, but only 3 of the 19 cite any studies. 10 of 19 name no clinician behind their program, and only 1 mentions the plantar fascia stretch the 2023 guideline grades highest. Walkito is one of the 20 apps we found; we scored it the same way and left it out of every total.
 
@@ -2546,7 +2556,7 @@ Yes. The data file is free to download and reuse. Please cite it as: Walkito, 20
 
 ## Walkito vs Hinge Health for heel pain and plantar fasciitis
 
-Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-12 · updated 2026-10-12
+Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-11 · updated 2026-10-11
 
 If your employer or health plan offers Hinge Health, start there: it costs you nothing and comes with your own physical therapist. If it does not, you cannot buy Hinge Health on your own, and Walkito is a heel and foot focused alternative you can download on iPhone or Android. Walkito makes this page, so we say plainly where Hinge Health is stronger.
 
@@ -2734,7 +2744,7 @@ The [NHS advises](https://www.nhs.uk/conditions/plantar-fasciitis/) seeing a doc
 
 ### If you go the home route
 
-[Walkito](https://walkito.site/program/) covers the exercise part: the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.
+[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.
 
 #### Do I need physical therapy for plantar fasciitis?
 
@@ -2846,7 +2856,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### If you start at home
 
-[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
 
 #### How much is physical therapy for plantar fasciitis without insurance?
 
@@ -2863,6 +2873,133 @@ Medicare covers therapeutic shoes and inserts only for people with diabetes and 
 #### What can I do if I can’t afford physical therapy?
 
 Start with the free home exercises the 2023 guideline recommends: plantar fascia and calf stretches and strengthening. If you can afford one visit, use it to confirm the diagnosis and check your exercises. The NHS advises seeing a doctor if heel pain has not improved after 2 weeks of home care.
+
+## Free YouTube videos or an exercise app for plantar fasciitis?
+
+Language: English · https://walkito.site/youtube-vs-app-plantar-fasciitis/ · published 2026-10-11 · updated 2026-10-11
+
+Free videos can be enough if you pick a good one: we found no trial comparing YouTube routines with an exercise app for plantar fasciitis. The catch is picking. In our check of the 50 most-viewed plantar fasciitis videos, only 9 included a plantar fascia stretch, a calf stretch and strengthening, the three exercise types the 2023 guideline recommends. An app mainly adds structure; in trials, digital tools usually helped people do their exercises a bit more often, at least in the first weeks.
+
+- We found no trial comparing free YouTube videos with an exercise app for plantar fasciitis.
+- Of the 50 most-viewed plantar fasciitis videos we checked, 9 covered all three exercise types the guideline recommends, 15 had neither a plantar fascia stretch nor strengthening, and 9 said when to see a doctor.
+- Published reviews of plantar fasciitis videos disagree: one rated 67% of 140 plantar fasciitis and heel spur videos poor or very poor for reliability, another found most of the 79 most-viewed videos useful.
+- In a trial of people with heel pain, AI-made exercise videos and free paper leaflets gave the same adherence (73% vs 71%), but the video group did harder exercises more accurately.
+- Heavy heel raises may speed early improvement, but how to dose them is not settled: in one trial, people who set their own load did as well as those on a fixed plan.
+
+### Free videos vs an exercise app at a glance
+
+Video numbers are from [our study of the 50 most-viewed plantar fasciitis videos](https://walkito.site/plantar-fasciitis-youtube-study/), October 2026. App numbers are from [our check of heel pain apps](https://walkito.site/heel-pain-apps-study/) (19 apps, Walkito not counted), based on store listings and websites, not on using each app.
+
+### Are YouTube videos for plantar fasciitis any good?
+
+Some are, many are not. In our check of the 50 most-viewed videos, with 75 million views between them:
+
+- 15 of 50 had neither a plantar fascia stretch nor any strengthening.
+- 9 of 50 said when to see a doctor, and none of the top 10 did.
+- 17 of 50 titles promised a fast or permanent result.
+- 34 of 50 sold something, such as a product or a paid program.
+- On the plus side, 46 of 50 gave a clear dose, such as how many reps or how long to hold.
+
+Published reviews disagree. One rated 67% of 140 plantar fasciitis and heel spur videos poor or very poor for reliability. Another, of the 79 most-viewed videos, found 30% high quality and most of them useful and in line with guidelines; the largest share of high-quality videos came from health professionals such as physiotherapists. A third, of 50 videos, found most were low quality and that videos by doctors scored higher.
+
+Source: Yüce A, Ocak O, Gur V, et al. YouTube Videos About Plantar Fasciitis and Calcaneal Spurs Are Insufficient and Poor Quality. Journal of the American Podiatric Medical Association. 2023;113(3).
+Source: Feyzioğlu Ö, Öztürk Ö, Muğrabi S. Video-Based Information About Plantar Fasciitis Reflects Current Treatment Guidelines. Journal of the American Podiatric Medical Association. 2023;113(6).
+Source: Satılmış AB, Cengiz T. Analysis of Plantar Fasciitis Videos on YouTube: Quality and Reliability Assessment. Cureus. 2025;17(2):e78993.
+
+### How do you know if a plantar fasciitis video is good?
+
+Check for these before you follow a routine:
+
+- A plantar fascia stretch, such as pulling your toes back.
+- Calf stretches, ideally with the knee straight and bent.
+- At least one strengthening exercise, such as a [heel raise with a towel under the toes](https://walkito.site/exercises/towel-heel-raise/).
+- A clear dose: how many reps or seconds, and how often.
+- Advice on when to see a doctor.
+- A named clinician, such as a physical therapist or doctor.
+- No promise of a fast or permanent result, and no hard sell.
+
+Stretching is graded A and strengthening B in the 2023 guideline, so a routine with only stretches leaves out part of what is recommended. [Our study page](https://walkito.site/plantar-fasciitis-youtube-study/) lists which of the top 50 videos include all three.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What does an app add over free videos?
+
+Mainly structure: a set plan, reminders and a record of what you did. The evidence that this matters is real but modest:
+
+- **Heel pain, app vs handout.** In a trial of 87 people with plantar fasciitis or Achilles pain, an app-based program and a paper handout gave similar first-step pain; foot function scores favoured the app at 4 and 24 weeks.
+- **Heel pain, video vs leaflet.** In a trial of 103 people with plantar fasciitis or Achilles pain, AI-made videos and free AAOS leaflets gave the same adherence (73% vs 71%), but the video group did the harder exercises, such as towel curls, more accurately.
+- **Muscle and joint pain.** An app with remote support improved adherence over paper handouts in a 4-week trial of 80 people, and a web-based program gave a small improvement at 3 weeks in a trial of 305 people.
+
+Exercise videos alone may not be what helps. A Cochrane review found that 5 of 6 trials of different ways of delivering exercise, such as supervised sessions, refresher sessions or audio and video tapes to take home, improved adherence. But a later review in adults 45 and older with back pain or hip or knee arthritis found audio or video cues did not improve adherence, while booster sessions with a physiotherapist did for people with arthritis.
+
+Source: Lang S, McLelland C, MacDonald D, et al. Do digital interventions increase adherence to home exercise rehabilitation? A systematic review of randomised controlled trials. Archives of Physiotherapy. 2022;12(1):24.
+Source: Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.
+Source: Ülgen NK, Nazlıgül AS, Yiğit N, et al. AI-Generated Exercise Videos vs Traditional Leaflets: A Novel Approach to Home Exercise Education in Achilles Tendinitis and Plantar Fasciitis: A Randomized Controlled Trial. Foot & Ankle Orthopaedics. 2026;11(2):24730114261436388.
+Source: Lambert TE, Harvey LA, Avdalis C, et al. An app with remote support achieves better adherence to home exercise programs than paper handouts in people with musculoskeletal conditions: a randomised trial. Journal of Physiotherapy. 2017;63(3):161–167.
+Source: Bennell KL, Marshall CJ, Dobson F, et al. Does a Web-Based Exercise Programming System Improve Home Exercise Adherence for People With Musculoskeletal Conditions?: A Randomized Controlled Trial. American Journal of Physical Medicine & Rehabilitation. 2019;98(10):850–858.
+Source: Jordan JL, Holden MA, Mason EE, et al. Interventions to improve adherence to exercise for chronic musculoskeletal pain in adults. Cochrane Database of Systematic Reviews. 2010;2010(1):CD005956.
+Source: Nicolson PJA, Bennell KL, Dobson FL, et al. Interventions to increase adherence to therapeutic exercise in older adults with low back pain and/or hip/knee osteoarthritis: a systematic review and meta-analysis. British Journal of Sports Medicine. 2017;51(10):791–799.
+
+### Does a plan that gets harder matter?
+
+Heavy heel raises may speed early improvement. In a trial of 48 people, heel raises that got heavier scored 29 points better than plantar fascia stretching on a foot function score at 3 months, with no difference at 1, 6 or 12 months.
+
+In a trial of 70 people, those who chose their own load (as heavy as they could manage) did as well as people following a fixed progression. And in a trial of 180 adults, adding heel raises to advice and a heel cup made no significant difference to pain at any point over a year. The 2023 guideline says more research is needed on the dose and timing of exercise.
+
+If you use a free routine, you can make it harder yourself as it gets easier. An app plans that for you, which helps if you would rather not.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Riel H, Jensen MB, Olesen JL, et al. Self-dosed and pre-determined progressive heavy-slow resistance training have similar effects in people with plantar fasciopathy: a randomised trial. Journal of Physiotherapy. 2019;65(3):144–151.
+Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Good free plantar fasciitis exercise resources
+
+These are free and include strengthening, not just stretches:
+
+- [AAOS Foot and Ankle Conditioning Program](https://orthoinfo.aaos.org/en/recovery/foot-and-ankle-conditioning-program), from the American Academy of Orthopaedic Surgeons.
+- [Mayo Clinic foot stretches](https://www.mayoclinic.org/diseases-conditions/plantar-fasciitis/multimedia/foot-stretches-to-prevent-plantar-fasciitis/img-20008230), illustrated, with a towel exercise.
+- [Royal Berkshire NHS leaflet](https://www.royalberkshire.nhs.uk/media/413p4ouw/advice-and-exercises-for-patients-with-plantar-fasciitis_jul25.pdf) (PDF).
+- [United Lincolnshire NHS leaflet](https://www.ulh.nhs.uk/wp-content/uploads/2025/07/Plantar-fasciitis-Exercises.pdf) (PDF).
+- Our own [plantar fasciitis exercises guide](https://walkito.site/plantar-fasciitis-exercises/), with a video for each exercise.
+
+### When is an app worth it?
+
+If a free routine with all three exercise types is going well, there is no need to pay for anything. An app may be worth it if:
+
+- you keep stopping and want a set plan and reminders
+- you want the exercises to get harder without planning it yourself
+- you want to track whether things are changing
+
+Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/).
+
+### See a clinician first if
+
+- your heel pain followed an injury or a fall
+- the pain is severe or stops you doing normal activities
+- it has not improved after about two weeks of home care, or keeps getting worse
+- the pain comes with numbness, tingling or swelling
+- you have diabetes or reduced feeling in your feet
+
+### If you want a set plan
+
+[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+
+#### Can YouTube videos help plantar fasciitis?
+
+They can, if the routine includes a plantar fascia stretch, calf stretches and strengthening, which the 2023 guideline recommends. In our check of the 50 most-viewed videos, only 9 included all three.
+
+#### What is the best YouTube video for plantar fasciitis?
+
+We do not rank videos, but a good one includes a plantar fascia stretch, calf stretches and strengthening, gives a clear dose, says when to see a doctor and is made by a named clinician. Our YouTube study lists which of the top 50 videos include all three exercise types.
+
+#### Do I need an app for plantar fasciitis exercises?
+
+No. The exercises need no equipment and good free guides exist. An app adds a set plan, reminders and progress tracking; in trials, digital tools usually helped people do their exercises a bit more often, at least in the first weeks.
+
+#### Are AI-made or video instructions better than a paper handout?
+
+For adherence, not clearly. In a trial of 103 people with heel pain, AI-made videos and paper leaflets gave the same adherence, but the video group did harder exercises more accurately.
 
 ## Walkito vs Exakt Health: which one fits you?
 

@@ -10,8 +10,8 @@ import type { Guide } from '../types';
 export const VS_HINGE_EN: Guide = {
   lang: 'en',
   page: 'vsHinge',
-  published: '2026-10-12',
-  updated: '2026-10-12',
+  published: '2026-10-11',
+  updated: '2026-10-11',
   title: 'Walkito vs Hinge Health for Heel Pain (2026)',
   description:
     'Walkito vs Hinge Health for plantar fasciitis: who can get each, what you get, clinicians, evidence and which fits. If your employer covers Hinge, start there.',

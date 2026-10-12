@@ -153,9 +153,9 @@ export const APP_VS_PT_EN: Guide = {
   },
   program: {
     h2: 'If you go the home route',
-    text: '[Walkito](/program/) covers the exercise part: the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.',
+    text: '[Walkito](/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.',
     more: [
-      'Each morning a one-tap check-in makes a bad day lighter, and every 14 days a short test shows whether your calves, arch and balance are changing.',
+      'Each morning a one-tap check-in makes a bad day lighter, and a short test every 14 days, then every 28 after your first goal, shows whether your calves, arch and balance are changing.',
     ],
     cta: 'Try Walkito on iPhone or Android.',
   },
