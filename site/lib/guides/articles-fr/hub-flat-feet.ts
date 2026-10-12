@@ -223,7 +223,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours (puis tous les 28 une fois le premier objectif atteint), un court test vérifie le maintien de la voûte, l’endurance du mollet et l’équilibre. L’objectif de maintien de la voûte reste jusqu’à ce que vous l’atteigniez, quel que soit le nombre de semaines nécessaire.',
       'Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si une voûte est descendue à l’âge adulte avec une douleur ou un gonflement, consultez un professionnel de santé avant de commencer.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Pieds plats',
   campaign: 'hub-flat-feet-fr',

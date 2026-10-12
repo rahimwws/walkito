@@ -169,7 +169,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. Si la douleur se situe juste au point d’attache sur l’os du talon, faites examiner la zone par un professionnel de santé avant de la solliciter fortement. Walkito est un programme d’exercices. Il ne pose pas de diagnostic.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Descentes excentriques du talon',
   campaign: 'ex-eccentric-heel-drops-fr',

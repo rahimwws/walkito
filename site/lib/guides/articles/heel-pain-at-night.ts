@@ -220,11 +220,11 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
   },
   program: {
     h2: 'When exercise is the right step',
-    text: 'If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline\'s top-graded approach. [Walkito](/program/) builds a daily plan around calf and fascia loading, starting with stretches and working up to strength exercises at your pace.',
+    text: 'If a clinician has confirmed plantar fasciitis and ruled out the conditions above, exercise is the guideline\'s top-graded approach. [Walkito](/program/) builds a plan around calf and fascia loading, on the 3, 5 or 7 days a week you pick, starting with stretches and working up to strength exercises at your pace.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If your heel pain is worse at night or at rest, see a clinician before you start loading the foot.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Heel pain at night',
   campaign: 'guide-heel-night',

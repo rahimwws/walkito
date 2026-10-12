@@ -214,7 +214,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni (poi ogni 28 quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi per adulti. Non fa diagnosi, non sostituisce un professionista sanitario e si può usare senza problemi insieme a un plantare.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Plantari o esercizi',
   campaign: 'guide-insoles-vs-exercises-it',

@@ -168,7 +168,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass die Stelle von einer medizinischen Fachperson ansehen, bevor du sie stark belastest. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Exzentrisches Fersenabsenken',
   campaign: 'ex-eccentric-heel-drops-de',

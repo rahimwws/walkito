@@ -79,7 +79,7 @@ export const HOME_PT: HomeCopy = {
     // quote this kind of sentence when they describe the app (plan A.10).
     {
       q: 'O que é o Walkito?',
-      a: 'O Walkito é um app de exercícios para dor no calcanhar e no pé, no iPhone e no Android. Com as suas respostas, ele monta um plano diário de 3, 5 ou 10 minutos e o ajusta a como seus pés estão a cada manhã.',
+      a: 'O Walkito é um app de exercícios para dor no calcanhar e no pé, no iPhone e no Android. Com as suas respostas, ele monta um plano com sessões de 3, 5 ou 10 minutos nos dias que você escolher (3, 5 ou 7 por semana) e o ajusta a como seus pés estão a cada manhã.',
     },
     {
       q: 'Em quanto tempo vou sentir diferença?',

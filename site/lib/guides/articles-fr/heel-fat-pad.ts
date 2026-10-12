@@ -222,11 +222,11 @@ export const HEEL_FAT_PAD_FR: Guide = {
   },
   program: {
     h2: 'La place d’un plan d’exercices',
-    text: 'Walkito construit des séances quotidiennes autour des montées sur pointes, du travail des muscles du pied et des étirements. Ces exercices sont conçus pour la fasciite plantaire et la force du pied. Ils peuvent aider un pied avec une atrophie du coussinet graisseux à mieux gérer la charge, mais ils n’ont pas été testés pour ce problème précis et ne reconstruiront pas un coussinet aminci. Si un professionnel de santé a confirmé un syndrome du coussinet graisseux, un plan d’exercices comme celui de Walkito est un complément raisonnable à l’amorti et aux chaussures, pas un remplacement.',
+    text: 'Walkito construit des séances, 3, 5 ou 7\u00A0jours par semaine, au choix, autour des montées sur pointes, du travail des muscles du pied et des étirements. Ces exercices sont conçus pour la fasciite plantaire et la force du pied. Ils peuvent aider un pied avec une atrophie du coussinet graisseux à mieux gérer la charge, mais ils n’ont pas été testés pour ce problème précis et ne reconstruiront pas un coussinet aminci. Si un professionnel de santé a confirmé un syndrome du coussinet graisseux, un plan d’exercices comme celui de Walkito est un complément raisonnable à l’amorti et aux chaussures, pas un remplacement.',
     more: [
       'Les séances durent 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un test vérifie l’endurance du mollet et l’équilibre. Walkito ne pose pas de diagnostic. Si vous ne savez pas si votre douleur au talon vient d’une atrophie du coussinet graisseux ou d’une fasciite plantaire, consultez d’abord un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Coussinet graisseux du talon',
   campaign: 'guide-heel-fat-pad-fr',

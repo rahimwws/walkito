@@ -250,7 +250,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du deinen Fortschritt verfolgen kannst, statt zu raten.',
       'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis, einem Fersensporn oder etwas anderem kommen, geh zuerst zu einer medizinischen Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Plantarfasziitis oder Fersensporn',
   campaign: 'guide-pf-vs-heel-spur-de',

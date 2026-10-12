@@ -303,7 +303,7 @@ export const FLAT_FEET_FR: Guide = {
     more: [
       `Vous choisissez ${DAYS}\u00A0jours par semaine et des séances de ${MINUTES}\u00A0minutes. Tous les ${PROGRAM.testEveryDays}\u00A0jours (puis tous les ${PROGRAM.testEveryDaysAfterGoal} une fois votre premier objectif atteint), un court test vérifie le maintien de la voûte, l’endurance du mollet et l’équilibre, pour que vous voyiez si le travail de la voûte donne quelque chose.`,
     ],
-    cta: `Commencez avec ${PROGRAM.sessionMinutes[0]}\u00A0minutes par jour.`,
+    cta: `Commencez par une séance de ${PROGRAM.sessionMinutes[0]}\u00A0minutes.`,
   },
   crumb: 'Exercices pieds plats',
   campaign: 'guide-flat-feet-fr',
@@ -607,7 +607,7 @@ export const HEEL_PAIN_FR: Guide = {
     more: [
       `Vous choisissez ${DAYS}\u00A0jours par semaine et des séances de ${MINUTES}\u00A0minutes. Tous les ${PROGRAM.testEveryDays}\u00A0jours (puis tous les ${PROGRAM.testEveryDaysAfterGoal} une fois cet objectif atteint), un court test vérifie l’[endurance du mollet](/fr/test-montee-sur-pointes/), le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change.`,
     ],
-    cta: `Commencez avec ${PROGRAM.sessionMinutes[0]}\u00A0minutes par jour.`,
+    cta: `Commencez par une séance de ${PROGRAM.sessionMinutes[0]}\u00A0minutes.`,
   },
   crumb: 'Exercices fasciite plantaire',
   campaign: 'guide-plantar-fasciitis-fr',

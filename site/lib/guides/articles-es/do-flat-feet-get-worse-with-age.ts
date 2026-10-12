@@ -262,7 +262,7 @@ export const FLAT_FEET_AGE_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0sesiones a la semana de 3, 5 o 10\u00A0minutos. Cada dos semanas, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud. Si un arco está bajando o te duele la parte interna del tobillo, consulta primero a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Pie plano con la edad',
   campaign: 'guide-flat-feet-age-es',

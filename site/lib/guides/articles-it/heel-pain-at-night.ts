@@ -207,11 +207,11 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
   },
   program: {
     h2: 'Quando l’esercizio è il passo giusto',
-    text: 'Se un professionista sanitario ha confermato la fascite plantare ed escluso i problemi descritti sopra, l’esercizio è l’approccio con il grado più alto nella linea guida. Walkito costruisce un piano quotidiano intorno al carico di polpaccio e fascia, partendo dagli allungamenti e arrivando agli esercizi di forza al tuo ritmo.',
+    text: 'Se un professionista sanitario ha confermato la fascite plantare ed escluso i problemi descritti sopra, l’esercizio è l’approccio con il grado più alto nella linea guida. Walkito costruisce un piano di 3, 5 o 7 giorni a settimana, a tua scelta, intorno al carico di polpaccio e fascia, partendo dagli allungamenti e arrivando agli esercizi di forza al tuo ritmo.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi. Se il dolore al tallone è peggio di notte o a riposo, rivolgiti a un professionista sanitario prima di iniziare a caricare il piede.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Dolore al tallone di notte',
   campaign: 'guide-heel-night-it',

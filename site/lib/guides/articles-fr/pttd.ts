@@ -234,7 +234,7 @@ export const PTTD_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change. Si l’on vous a diagnostiqué cette dysfonction, utilisez l’application en plus des orthèses et vérifiez avec votre professionnel de santé que votre stade se prête à l’exercice.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Exercices tendon tibial postérieur',
   campaign: 'guide-pttd-fr',

@@ -150,7 +150,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     more: [
       'Un centimetro di miglioramento nel test ginocchio-muro in qualche settimana è significativo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Oscillazioni della caviglia',
   campaign: 'ex-ankle-rocks-it',

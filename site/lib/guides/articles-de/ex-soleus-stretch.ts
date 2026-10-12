@@ -127,7 +127,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     more: [
       'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Wenn die Beweglichkeit im Sprunggelenk über die Wochen besser wird, zeigt das, dass das Dehnen etwas bewirkt. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Soleusdehnung (gebeugtes Knie)',
   campaign: 'ex-soleus-stretch-de',

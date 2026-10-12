@@ -169,7 +169,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance and balance. If pain is right at the heel-bone attachment, have a clinician check it before you load it hard. Walkito is an exercise program. It does not diagnose.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Eccentric heel drops',
   campaign: 'ex-eccentric-heel-drops',

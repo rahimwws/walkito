@@ -291,7 +291,7 @@ export const ACHILLES_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Wadenziel erreicht ist) prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass ihn von einer medizinischen Fachperson prüfen, bevor du ihn stark belastest.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Übungen bei Achillessehnenentzündung',
   campaign: 'guide-achilles-de',

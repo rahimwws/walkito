@@ -248,7 +248,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que se cumple la meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que puedas seguir tu progreso en vez de adivinar.',
       'Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si no estás seguro de si tu dolor de talón es fascitis plantar, un espolón calcáneo u otra cosa, consulta primero a un profesional.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Fascitis plantar vs espolón calcáneo',
   campaign: 'guide-pf-vs-heel-spur-es',

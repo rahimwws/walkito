@@ -179,7 +179,7 @@ export const EX_CALF_RAISES_DE: Guide = {
     more: [
       'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Das Wadenziel sind 25\u00A0einbeinige Fersenheben. Wenn du es erreichst, ist die Arbeit nicht vorbei, ein neues Ziel tritt an seine Stelle. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Fersenheben',
   campaign: 'ex-calf-raises-de',

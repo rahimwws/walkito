@@ -137,7 +137,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito ajoute l’inversion de cheville avec élastique après six séances de pied court debout. Cette progression fait en sorte que les muscles intrinsèques du pied soient actifs avant que le stabilisateur extrinsèque soit chargé. Les séances durent 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit votre temps de maintien de la voûte et l’endurance du mollet.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Inversion de cheville avec élastique (tibial postérieur)',
   campaign: 'ex-band-inversion-fr',

@@ -247,7 +247,7 @@ export const ICE_HEAT_DE: Guide = {
       'Jede Woche kann sich nur die Übung für dein Fokusziel ändern. Sie geht eine Stufe höher, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist, und eine Stufe zurück, wenn sich eine Einheit schwer angefühlt hat oder der Morgenschmerz um 2 oder mehr gestiegen ist.',
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Ein kurzer Test prüft anfangs alle 14\u00A0Tage Wadenausdauer, Gewölbehalten und Gleichgewicht, dann alle 28, sobald du ein Ziel erreicht hast, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Kühlen oder wärmen',
   campaign: 'guide-ice-heat-de',

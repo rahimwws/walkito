@@ -141,7 +141,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
     more: [
       'Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Étirement du mollet (gastrocnémien, genou tendu)',
   campaign: 'ex-calf-stretch-fr',

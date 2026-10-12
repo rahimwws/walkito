@@ -141,7 +141,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, o equilíbrio e a sustentação do arco. A elevação dos dedos faz parte dos dias de força. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Elevação dos dedos (tibial anterior)',
   campaign: 'ex-tibialis-raises-pt',

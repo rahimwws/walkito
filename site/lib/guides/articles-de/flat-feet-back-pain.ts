@@ -258,7 +258,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich an deinen Füßen verändert.',
       'Walkito kümmert sich nicht um Rückenschmerzen, stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du Rückenschmerzen hast, lass sie abklären, vor allem wenn eines der Zeichen oben auf dich zutrifft.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag für deine Füße an',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten für deine Füße an',
   },
   crumb: 'Plattfuß und Rückenschmerzen',
   campaign: 'guide-flat-feet-back-de',

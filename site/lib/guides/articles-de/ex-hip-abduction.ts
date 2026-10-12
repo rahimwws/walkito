@@ -149,7 +149,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito nimmt die Hüftabduktion an Krafttagen dazu, sobald ein Ziel zum Ausgleich zwischen links und rechts in deinen Plan kommt. Sie steht neben Übungen für die kurzen Fußmuskeln und Wadenarbeit, damit das Gewölbe Halt von oben und von unten bekommt. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt den Fortschritt.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Hüftabduktion',
   campaign: 'ex-hip-abduction-de',

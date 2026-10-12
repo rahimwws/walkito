@@ -279,7 +279,7 @@ export const PF_TAPING_EN: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days at first (every 28 once a goal is reached), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Taping is not part of Walkito. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Taping',
   campaign: 'guide-pf-taping',

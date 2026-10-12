@@ -212,11 +212,11 @@ export const HEEL_FAT_PAD_EN: Guide = {
   },
   program: {
     h2: 'Where an exercise plan fits in',
-    text: '[Walkito](/program/) builds daily sessions around calf raises, foot-muscle work, and stretching. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito\'s is a reasonable complement to cushioning and footwear, not a replacement for it.',
+    text: '[Walkito](/program/) builds sessions around calf raises, foot-muscle work, and stretching, on 3, 5 or 7 days a week you choose. These exercises are designed for plantar fasciitis and foot strength. They may help a foot with fat pad atrophy manage load better, but they are not tested for this condition specifically, and they will not rebuild a thinned fat pad. If a clinician has confirmed fat pad syndrome, an exercise plan like Walkito\'s is a reasonable complement to cushioning and footwear, not a replacement for it.',
     more: [
       'Sessions are 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito does not diagnose. If you are unsure whether your heel pain is fat pad atrophy or plantar fasciitis, see a clinician first.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Heel fat pad syndrome',
   campaign: 'guide-heel-fat-pad',

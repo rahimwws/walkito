@@ -142,7 +142,7 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, equilibrio e tenuta dell’arco. I sollevamenti dell’avampiede fanno parte dei giorni di forza. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Sollevamenti dell’avampiede',
   campaign: 'ex-tibialis-raises-it',

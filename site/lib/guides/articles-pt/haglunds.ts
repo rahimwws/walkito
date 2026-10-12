@@ -242,7 +242,7 @@ export const HAGLUNDS_PT: Guide = {
     more: [
       'As sessões são de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se você tem um calombo visível atrás do calcanhar e não tem certeza do que está causando a dor, peça para um profissional de saúde avaliar antes de começar a pôr carga.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Deformidade de Haglund',
   campaign: 'guide-haglunds-pt',

@@ -136,7 +136,7 @@ export const BEST_APP_IT: Guide = {
         'Dove Walkito è diversa:',
         {
           list: [
-            'Walkito adatta la sessione di ogni giorno in base a un check-in del dolore al mattino invece che al feedback di fine sessione.',
+            'Walkito adatta ogni sessione in base a un check-in del dolore al mattino invece che al feedback di fine sessione.',
             'Testa l’asimmetria tra sinistra e destra ogni 14\u00A0giorni.',
             'Si concentra proprio sul dolore al tallone e al piede invece che su tutti gli infortuni da corsa.',
           ],
@@ -241,7 +241,7 @@ export const BEST_APP_IT: Guide = {
         '**Hai dolore in più zone del corpo**, non solo ai piedi: [Prehab](https://theprehabguys.com/) ti dà oltre 55 programmi in un solo abbonamento.',
         '**Vuoi un punto di partenza gratuito** per seguire il dolore al tallone e provare allungamenti di base: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) lo fa bene, gratis.',
         '**Il tuo problema principale è il piede piatto** senza un dolore importante: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) è pensata proprio per questo.',
-        '**Vuoi un piano quotidiano per il dolore al tallone o il piede piatto che si adatti alla tua mattina** e testi i tuoi progressi: è per questo che è nata [Walkito](https://walkito.site/).',
+        '**Vuoi un piano per il dolore al tallone o il piede piatto che si adatti alla tua mattina** e testi i tuoi progressi, 3, 5 o 7 giorni a settimana, a tua scelta: è per questo che è nata [Walkito](https://walkito.site/).',
       ],
     },
   ],
@@ -257,7 +257,7 @@ export const BEST_APP_IT: Guide = {
     },
     {
       q: 'Meglio Exakt Health o Walkito per la fascite plantare?',
-      a: 'Exakt Health copre più problemi, tra cui oltre 15 infortuni da corsa e piani completi di allenamento di corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra proprio sul dolore al tallone e al piede, con un adattamento quotidiano in base al dolore e test dei progressi ogni 14\u00A0giorni. Exakt è la scelta più forte per chi corre e ha bisogno di riabilitazione più un piano di corsa. Walkito è più mirata ma adatta ogni sessione alla tua mattina.',
+      a: 'Exakt Health copre più problemi, tra cui oltre 15 infortuni da corsa e piani completi di allenamento di corsa. È sia su iOS sia su Android ed è certificata come dispositivo medico nell’UE. Walkito si concentra proprio sul dolore al tallone e al piede, con un adattamento in base al dolore del mattino e test dei progressi ogni 14\u00A0giorni. Exakt è la scelta più forte per chi corre e ha bisogno di riabilitazione più un piano di corsa. Walkito è più mirata ma adatta ogni sessione alla tua mattina.',
     },
     {
       q: 'Un’app può sostituire il fisioterapista per la fascite plantare?',
@@ -269,7 +269,7 @@ export const BEST_APP_IT: Guide = {
     },
     {
       q: 'Perché Walkito non si definisce la migliore app per la fascite plantare?',
-      a: 'Perché non sarebbe onesto. Walkito è nuova, non ha ancora valutazioni degli utenti, copre meno problemi di Exakt Health e non ha un professionista dall’altra parte come Hinge Health. Quello che fa bene è adattare ogni giornata al tuo dolore e testare i tuoi progressi ogni 14\u00A0giorni. Se questo la rende l’app giusta per te dipende da cosa ti serve.',
+      a: 'Perché non sarebbe onesto. Walkito è nuova, non ha ancora valutazioni degli utenti, copre meno problemi di Exakt Health e non ha un professionista dall’altra parte come Hinge Health. Quello che fa bene è adattare ogni sessione al tuo dolore del mattino e testare i tuoi progressi ogni 14\u00A0giorni. Se questo la rende l’app giusta per te dipende da cosa ti serve.',
     },
     {
       q: 'Qualcuna di queste app funziona su Android?',

@@ -214,7 +214,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     more: [
       'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose, ersetzt keine medizinische Fachperson und lässt sich gut mit einer Einlage kombinieren.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Einlagen oder Übungen',
   campaign: 'guide-insoles-vs-exercises-de',

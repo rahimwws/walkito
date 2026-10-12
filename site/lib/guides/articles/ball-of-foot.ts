@@ -253,7 +253,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once that goal is met), a short test checks progress so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If your forefoot pain comes with numbness, swelling, or a lump, see a clinician first.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Ball of foot pain',
   campaign: 'guide-ball-of-foot',

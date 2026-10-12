@@ -249,7 +249,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da manhã for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho está aumentando o quanto você consegue andar.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a dor no calcanhar depois de andar está piorando mesmo com os exercícios, procure primeiro um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Dor no calcanhar depois de andar',
   campaign: 'guide-heel-after-walking-pt',

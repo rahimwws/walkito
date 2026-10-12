@@ -214,7 +214,7 @@ export const INSOLES_VS_EXERCISES_ES: Guide = {
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días al principio (cada 28 una vez que alcanzas una meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios para adultos. No diagnostica, no reemplaza a un profesional de la salud y funciona bien junto con una plantilla.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Plantillas o ejercicios',
   campaign: 'guide-insoles-vs-exercises-es',

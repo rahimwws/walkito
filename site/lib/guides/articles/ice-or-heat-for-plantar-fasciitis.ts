@@ -265,7 +265,7 @@ export const ICE_HEAT_EN: Guide = {
       'Each week, only the exercise for your focus goal can change. It moves up one step when your last two sessions with it felt easy and morning pain did not rise, and down a step if a session felt hard or morning pain rose by 2 or more.',
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. A short test checks calf endurance, arch hold and balance every 14 days at first, then every 28 once you reach a goal, so you can see what is changing. Walkito is an exercise program for adults. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Ice or heat',
   campaign: 'guide-ice-heat',

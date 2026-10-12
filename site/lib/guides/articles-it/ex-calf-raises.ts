@@ -181,7 +181,7 @@ export const EX_CALF_RAISES_IT: Guide = {
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. L’obiettivo per il polpaccio è di 25\u00A0sollevamenti su una gamba. Raggiungerlo non chiude il lavoro: al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Sollevamenti sulle punte',
   campaign: 'ex-calf-raises-it',

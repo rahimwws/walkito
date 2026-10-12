@@ -262,7 +262,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0sessioni a settimana da 3, 5 o 10\u00A0minuti. Ogni due settimane, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario. Se un arco si sta abbassando o ti fa male l’interno della caviglia, rivolgiti prima a un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Piede piatto con l’età',
   campaign: 'guide-flat-feet-age-it',

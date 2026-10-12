@@ -280,7 +280,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Fascite plantar',
   campaign: 'hub-plantar-fasciitis-pt',

@@ -304,7 +304,7 @@ export const FLAT_FEET_EN: Guide = {
     more: [
       `You pick ${DAYS} days a week and sessions of ${MINUTES} minutes. Every ${PROGRAM.testEveryDays} days (then every ${PROGRAM.testEveryDaysAfterGoal} once your first goal is met), a short test checks arch hold, calf endurance and balance, so you can see whether the arch work is doing anything.`,
     ],
-    cta: `Start with ${PROGRAM.sessionMinutes[0]} minutes a day.`,
+    cta: `Start with a ${PROGRAM.sessionMinutes[0]}-minute session.`,
   },
   crumb: 'Flat feet exercises',
   campaign: 'guide-flat-feet',
@@ -329,7 +329,7 @@ export const HEEL_PAIN_EN: Guide = {
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
   lede: 'The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
   intro: [
-    'It’s also confusing to look up, because everyone says something different. The evidence keeps pointing to the same two things: stretching the plantar fascia and calf, and strength work for the calf.',
+    'It’s also confusing to look up, because [everyone says something different](/plantar-fasciitis-youtube-study/). The evidence keeps pointing to the same two things: stretching the plantar fascia and calf, and strength work for the calf.',
     'In one trial of 48 people, all wearing [shoe inserts](/insoles-vs-exercises/), slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
   ],
   takeaways: [
@@ -627,7 +627,7 @@ export const HEEL_PAIN_EN: Guide = {
     more: [
       `You pick ${DAYS} days a week and sessions of ${MINUTES} minutes. Every ${PROGRAM.testEveryDays} days (then every ${PROGRAM.testEveryDaysAfterGoal} once that goal is met), a short test checks [calf endurance](/calf-raise-test/), arch hold and balance, so you can see what’s changing.`,
     ],
-    cta: `Start with ${PROGRAM.sessionMinutes[0]} minutes a day.`,
+    cta: `Start with a ${PROGRAM.sessionMinutes[0]}-minute session.`,
   },
   crumb: 'Plantar fasciitis exercises',
   campaign: 'guide-plantar-fasciitis',

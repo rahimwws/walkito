@@ -18,6 +18,16 @@ import { TOE_STRENGTHENING_EN } from './articles/toe-strengthening-exercises';
 import { ACHILLES_EN } from './articles/achilles';
 import { BALL_OF_FOOT_EN } from './articles/ball-of-foot';
 import { BEST_APP_EN } from './articles/best-app';
+import { YT_STUDY_EN } from './articles/youtube-study';
+import { AI_STUDY_EN } from './articles/ai-study';
+import { APP_STUDY_EN } from './articles/app-study';
+import { VS_HINGE_EN } from './articles/vs-hinge';
+import { APP_VS_PT_EN } from './articles/app-vs-pt';
+import { PF_COST_EN } from './articles/pf-cost';
+import { YT_VS_APP_EN } from './articles/yt-vs-app';
+import { FOOT_APPS_EN } from './articles/foot-apps';
+import { HINGE_ALT_EN } from './articles/hinge-alternatives';
+import { BEST_INSOLES_EN } from './articles/best-insoles';
 import { MORNING_HEEL_PAIN_EN } from './articles/morning-heel-pain';
 import { NURSES_EN } from './articles/nurses';
 import { PF_DURATION_EN } from './articles/pf-duration';
@@ -78,6 +88,16 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   nurses: NURSES_EN,
   standingDesk: STANDING_DESK_EN,
   bestApp: BEST_APP_EN,
+  ytStudy: YT_STUDY_EN,
+  aiStudy: AI_STUDY_EN,
+  appStudy: APP_STUDY_EN,
+  vsHinge: VS_HINGE_EN,
+  appVsPt: APP_VS_PT_EN,
+  pfCost: PF_COST_EN,
+  ytVsApp: YT_VS_APP_EN,
+  footApps: FOOT_APPS_EN,
+  hingeAlt: HINGE_ALT_EN,
+  bestInsoles: BEST_INSOLES_EN,
   vsExakt: VS_EXAKT_EN,
   exPlantarFasciaStretch: EX_PLANTAR_FASCIA_STRETCH,
   exCalfStretch: EX_CALF_STRETCH,

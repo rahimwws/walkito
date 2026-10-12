@@ -293,7 +293,7 @@ export const ACHILLES_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del polpaccio), un test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi. Se il dolore è proprio all’attaccatura sull’osso del tallone, fallo controllare da un professionista sanitario prima di caricarlo forte.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Esercizi per la tendinite d’Achille',
   campaign: 'guide-achilles-it',

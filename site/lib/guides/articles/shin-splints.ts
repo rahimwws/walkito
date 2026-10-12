@@ -369,7 +369,7 @@ export const SHIN_SPLINTS_EN: Guide = {
       `You pick ${DAYS} days a week and sessions of ${MINUTES} minutes. Every ${PROGRAM.testEveryDays} days (then every ${PROGRAM.testEveryDaysAfterGoal} once your first goal is met), a short test checks calf endurance, arch hold and balance, so you can see whether the lower-leg work is doing anything.`,
       'Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician. If your shin pain is focal, getting worse, or showing up at rest, see a clinician before loading it further.',
     ],
-    cta: `Start with ${PROGRAM.sessionMinutes[0]} minutes a day.`,
+    cta: `Start with a ${PROGRAM.sessionMinutes[0]}-minute session.`,
   },
   crumb: 'Shin splints exercises',
   campaign: 'guide-shin-splints',

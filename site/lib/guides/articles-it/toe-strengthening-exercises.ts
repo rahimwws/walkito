@@ -279,7 +279,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
     more: [
       'All’inizio, ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Non misura direttamente la forza delle dita, quindi vale comunque la pena fare i controlli a casa di questa pagina. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Rinforzo delle dita dei piedi',
   campaign: 'guide-toe-strength-it',

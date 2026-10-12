@@ -148,7 +148,7 @@ export const EX_TOE_SPREAD: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) schedules toe spreads on strength days alongside other intrinsic foot exercises. The plan alternates them with the short foot exercise and band turn-ins so the foot muscles get varied work without overloading on one movement. You pick sessions of 3, 5 or 10 minutes.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Toe spread (toe splay)',
   campaign: 'ex-toe-spread',

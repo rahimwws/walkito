@@ -139,7 +139,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
   program: {
     h2: 'Fazendo isso como um plano',
     text: 'O Walkito usa puxar a toalha com os dedos como um exercício inicial de fortalecimento do pé. Quando ele parece fácil por duas sessões seguidas, o plano passa você para o exercício do pé curto e a progressão dele, de sentado para em pé. Você escolhe sessões de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o tempo de sustentação do arco e a resistência da panturrilha.',
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Puxar a toalha com os dedos',
   campaign: 'ex-towel-scrunch-pt',

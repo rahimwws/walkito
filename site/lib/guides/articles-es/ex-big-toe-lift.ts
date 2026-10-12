@@ -140,7 +140,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
   program: {
     h2: 'Hacerlo como un plan',
     text: 'Walkito usa la elevación del dedo gordo al inicio de la secuencia para fortalecer el pie, junto con recoger la toalla. Cuando puedes aislar bien el dedo gordo durante dos sesiones, el plan pasa el foco al ejercicio de pie corto y a su progresión de sentado a de pie. Las sesiones son de 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días mide tu avance.',
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Levantar el dedo gordo (toe yoga)',
   campaign: 'ex-big-toe-lift-es',

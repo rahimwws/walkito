@@ -152,7 +152,7 @@ export const EX_HIP_ABDUCTION: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) adds hip abduction on strength days once a left-and-right balance goal enters your plan. It sits alongside intrinsic foot exercises and calf work, so the arch gets support from above and below. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks progress.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Hip abduction',
   campaign: 'ex-hip-abduction',

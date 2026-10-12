@@ -294,7 +294,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
     more: [
       'Vous choisissez des séances de 3, 5 ou 10\u00A0minutes. Au début, un court test tous les 14\u00A0jours vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous puissiez voir ce qui change. Walkito est un programme d’exercices pour adultes. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Renforcement du pied',
   campaign: 'guide-foot-strength-fr',

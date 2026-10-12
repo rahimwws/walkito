@@ -152,11 +152,24 @@ export function relatedGuides(guide: Guide, max = 5): Guide[] {
         : groupOf(g.page) === 'compare' || groupOf(g.page) === 'library'
           ? 3
           : 2;
-  const picked = all
+  const sorted = all
     .map((g, i) => ({ g, i }))
     .sort((x, y) => rank(x.g) - rank(y.g) || (rank(x.g) === 0 ? dist(x.g) - dist(y.g) : 0) || x.i - y.i)
-    .slice(0, max)
     .map((x) => x.g);
+  // The compare group is long (studies and comparisons), so on its own it
+  // would take every slot and cut comparison pages off from the exercise
+  // guides. There: 3 neighbours (the app guide always among them), then the
+  // two main guides.
+  if (own === 'compare') {
+    const same = sorted.filter((g) => groupOf(g.page) === own);
+    const appGuide = same.find((g) => g.page === 'bestApp');
+    const near = same.slice(0, 3);
+    if (appGuide && !near.includes(appGuide)) near[near.length - 1] = appGuide;
+    const mains = sorted.filter((g) => g.page === 'heelPain' || g.page === 'flatFeet');
+    const rest = sorted.filter((g) => !near.includes(g) && !mains.includes(g));
+    return [...near, ...mains, ...rest].slice(0, max);
+  }
+  const picked = sorted.slice(0, max);
   // Heel pain pages end with the app comparison: the next step for a reader
   // who has the exercises and wants a plan (plan B.11, reader stages).
   const heelGroups: readonly (NavGroup | null)[] = ['exercises', 'pain', 'heel', 'tools', 'work'];

@@ -247,7 +247,7 @@ export const ICE_HEAT_FR: Guide = {
       'Chaque semaine, seul l’exercice de votre objectif principal peut changer. Il monte d’une étape quand vos deux dernières séances avec lui vous ont paru faciles et que la douleur du matin n’a pas augmenté, et redescend d’une étape si une séance a été difficile ou si la douleur du matin a augmenté de 2\u00A0points ou plus.',
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre tous les 14\u00A0jours au début, puis tous les 28 une fois un objectif atteint, pour que vous voyiez ce qui change. Walkito est un programme d’exercices pour adultes. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Glace ou chaleur',
   campaign: 'guide-ice-heat-fr',

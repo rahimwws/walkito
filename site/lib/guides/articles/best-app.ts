@@ -13,7 +13,7 @@ export const BEST_APP_EN: Guide = {
   lede:
     'This page compares seven apps that include exercises for [plantar fasciitis](/plantar-fasciitis/), [flat feet](/flat-feet/) or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.',
   intro: [
-    'There is no single best app for everyone. The right choice depends on what you need: a runner returning from plantar fasciitis has different requirements from someone with flat feet who stands at work all day, and both have different requirements from someone whose employer covers Hinge Health. The criteria below explain what to look for, and the table after that shows where each app sits.',
+    'There is no single best app for everyone. The right choice depends on what you need: a runner returning from plantar fasciitis has different requirements from someone with flat feet who stands at work all day, and both have different requirements from someone whose employer covers [Hinge Health](/walkito-vs-hinge-health/). The criteria below explain what to look for, and the table after that shows where each app sits.',
   ],
   takeaways: [
     'The 2023 clinical guideline for heel pain gives plantar fascia and calf stretching a grade of A and strength training a grade of B. A good app should include both.',
@@ -228,7 +228,7 @@ export const BEST_APP_EN: Guide = {
         '**You have pain in several body areas**, not just your feet: [Prehab](https://theprehabguys.com/) gives you 55+ programs in one subscription.',
         '**You want a free starting point** to track heel pain and try basic stretches: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) does that well for no cost.',
         '**Your main issue is flat feet** without significant pain: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) is focused on exactly that.',
-        '**You want a daily plan for heel pain or flat feet that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.',
+        '**You want a plan for heel pain or flat feet, on 3, 5 or 7 days a week you choose, that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.',
       ],
     },
   ],
@@ -256,7 +256,7 @@ export const BEST_APP_EN: Guide = {
     },
     {
       q: 'Why does Walkito not call itself the best app for plantar fasciitis?',
-      a: 'Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like Hinge Health. What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.',
+      a: 'Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like [Hinge Health](/walkito-vs-hinge-health/). What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.',
     },
     {
       q: 'Do any of these apps work on Android?',

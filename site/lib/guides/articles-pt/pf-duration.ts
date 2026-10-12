@@ -233,7 +233,7 @@ export const PF_DURATION_PT: Guide = {
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar. Não há data fixa para acabar, porque quem dita o ritmo é o pé.',
       'O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a dor não melhora depois de vários meses, procure um profissional de saúde para confirmar o diagnóstico e conversar sobre as opções desta página.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Quanto tempo dura a fascite plantar',
   campaign: 'guide-pf-duration-pt',

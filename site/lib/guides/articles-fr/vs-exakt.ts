@@ -18,7 +18,7 @@ export const VS_EXAKT_FR: Guide = {
     'Walkito ou Exakt Health\u00A0: problèmes couverts, prix, plateformes, plan, données scientifiques, langues, confidentialité. Vérifié en octobre 2026.',
   h1: 'Walkito vs Exakt Health\u00A0: laquelle vous convient\u00A0?',
   lede:
-    'Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15\u00A0plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation quotidienne à la douleur. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.',
+    'Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15\u00A0plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation à la douleur de chaque matin. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.',
   intro: [
     'C’est Walkito qui publie cette page. Lisez donc les informations sur Exakt (tirées de sa fiche App Store, de sa fiche Google Play et de son site officiel, toutes vérifiées en octobre 2026) et faites-vous votre propre avis. Les liens vers chaque source sont sous le tableau comparatif.',
   ],
@@ -133,7 +133,7 @@ export const VS_EXAKT_FR: Guide = {
     {
       h2: 'Pour qui Walkito est-elle conçue\u00A0?',
       paragraphs: [
-        'Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices quotidien qui s’adapte à leur état chaque matin. Cela inclut\u00A0:',
+        'Walkito est conçue pour les personnes qui ont mal aux pieds et veulent un court plan d’exercices, 3, 5 ou 7\u00A0jours par semaine au choix, qui s’adapte à leur état chaque matin. Cela inclut\u00A0:',
         {
           list: [
             'La fasciite plantaire.',
@@ -142,7 +142,7 @@ export const VS_EXAKT_FR: Guide = {
           ],
         },
         'Elle est aussi conçue pour les personnes debout toute la journée\u00A0: infirmières, employés de commerce, personnel d’entrepôt.',
-        'L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster la séance de chaque jour à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.',
+        'L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster chaque séance à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.',
         'Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé ou de Health Connect) transforme la séance de renforcement suivante en séance de récupération plus légère.',
         'Walkito teste vos progrès tous les 14\u00A0jours avec des montées sur pointes, un maintien de la voûte et l’équilibre sur une jambe, et compare votre côté gauche à votre côté droit. Cette comparaison gauche-droite n’est pas suivie par la plupart des applications de ce domaine.',
         'Walkito est sortie le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes d’utilisateurs et existe sur iOS comme sur Android. Elle n’a ni l’historique ni l’étendue qu’Exakt a construits depuis 2021.',
@@ -245,7 +245,7 @@ export const VS_EXAKT_FR: Guide = {
       bullets: [
         'Votre douleur est précisément une douleur au talon, une fasciite plantaire ou des pieds plats, et vous voulez un programme ciblé pour cela.',
         'Vous voulez des séances de 3 à 10\u00A0minutes plutôt que de 15 à 30.',
-        'L’adaptation quotidienne à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.',
+        'L’adaptation de chaque séance à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.',
         'Vous voulez des tests de progrès tous les 14\u00A0jours qui comparent la gauche et la droite.',
         'Vous avez besoin de l’application en russe.',
         'Vous êtes debout toute la journée pour le travail, pas en train de courir, et voulez une application conçue pour cela.',
@@ -255,7 +255,7 @@ export const VS_EXAKT_FR: Guide = {
   faq: [
     {
       q: 'Exakt Health est-elle meilleure que Walkito\u00A0?',
-      a: 'Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15\u00A0blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation quotidienne à la douleur et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement quotidien, Walkito a été conçue pour cela.',
+      a: 'Tout dépend de ce dont vous avez besoin. Exakt Health couvre plus de 15\u00A0blessures de course et inclut des plans de reprise de la course. Elle est sur iOS et Android et certifiée comme dispositif médical dans l’UE. Walkito se concentre sur la douleur au talon et les pieds plats, avec une adaptation à la douleur du matin et des séances plus courtes. Pour les coureurs avec plusieurs types de blessures, Exakt convient mieux. Pour une douleur au talon avec un ajustement à chaque séance, Walkito a été conçue pour cela.',
     },
     {
       q: 'Comment le prix de Walkito se compare-t-il à celui d’Exakt Health\u00A0?',

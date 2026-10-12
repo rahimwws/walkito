@@ -180,7 +180,7 @@ export const EX_CALF_RAISES_PT: Guide = {
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha e o equilíbrio. A meta de panturrilha é 25\u00A0elevações em uma perna. Chegar lá não encerra o trabalho; uma nova meta entra no lugar. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Elevação de calcanhar',
   campaign: 'ex-calf-raises-pt',

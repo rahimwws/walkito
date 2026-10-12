@@ -294,7 +294,7 @@ export const FOOT_STRENGTHENING_ES: Guide = {
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Fortalecer los pies',
   campaign: 'guide-foot-strength-es',

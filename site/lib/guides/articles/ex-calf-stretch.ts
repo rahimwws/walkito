@@ -146,7 +146,7 @@ export const EX_CALF_STRETCH: Guide = {
     more: [
       'Every 14 days, a short test checks calf endurance, arch hold and balance. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Calf stretch (gastrocnemius, straight knee)',
   campaign: 'ex-calf-stretch',

@@ -137,7 +137,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito setzt das Handtuchgreifen als frühe Übung zur Fußkräftigung ein. Sobald es sich zwei Einheiten hintereinander leicht anfühlt, bringt dich der Plan zur Kurzer-Fuß-Übung und ihrer Steigerung vom Sitzen zum Stehen. Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt die Haltezeit des Gewölbes und die Wadenausdauer.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Handtuchgreifen',
   campaign: 'ex-towel-scrunch-de',

@@ -253,7 +253,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così segui i progressi invece di tirare a indovinare.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se non sei sicuro che il tuo dolore al tallone sia fascite plantare, una spina calcaneare o altro, rivolgiti prima a un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Fascite plantare o spina calcaneare',
   campaign: 'guide-pf-vs-heel-spur-it',

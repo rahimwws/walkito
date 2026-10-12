@@ -262,7 +262,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7 Einheiten pro Woche von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn ein Gewölbe absinkt oder dein Innenknöchel wehtut, geh zuerst zu einer Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Plattfuß im Alter',
   campaign: 'guide-flat-feet-age-de',

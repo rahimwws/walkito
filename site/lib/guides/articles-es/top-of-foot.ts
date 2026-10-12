@@ -215,7 +215,7 @@ export const TOP_OF_FOOT_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio. Walkito no diagnostica el dolor en el empeine. Si sospechas una fractura por estrés, gota o un problema de nervio, consulta a un profesional de la salud antes de empezar cualquier programa de ejercicio.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Dolor en el empeine',
   campaign: 'guide-top-of-foot-es',

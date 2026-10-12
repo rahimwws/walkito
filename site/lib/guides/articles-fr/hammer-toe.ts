@@ -227,7 +227,7 @@ export const HAMMER_TOE_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text:
-      'Walkito inclut [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/), [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles propres au pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’orteil en marteau, mais les exercices se recoupent. Si vous avez un orteil en marteau souple et voulez un cadre pour un travail quotidien des orteils, les séances de 3 ou 5\u00A0minutes gardent les exercices réguliers sans avoir à retenir une routine à part.',
+      'Walkito inclut [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/), [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles propres au pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’orteil en marteau, mais les exercices se recoupent. Si vous avez un orteil en marteau souple et voulez un cadre pour travailler vos orteils, les séances de 3 ou 5\u00A0minutes gardent les exercices réguliers sans avoir à retenir une routine à part.',
     more: [
       'Pour les problèmes voisins de l’avant-pied, voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) et [exercices pour hallux valgus](/fr/hallux-valgus-exercices/).',
     ],

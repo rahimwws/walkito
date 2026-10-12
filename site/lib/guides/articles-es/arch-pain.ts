@@ -251,7 +251,7 @@ export const ARCH_PAIN_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si no estás seguro de qué causa tu dolor de arco, consulta a un profesional de la salud antes de cargarlo con ejercicio.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Dolor en el arco del pie',
   campaign: 'guide-arch-pain-es',

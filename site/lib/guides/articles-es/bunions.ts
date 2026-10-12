@@ -195,7 +195,7 @@ export const BUNIONS_ES: Guide = {
   program: {
     h2: 'Hacerlo como un plan',
     text:
-      'Walkito incluye [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para juanetes, pero el ejercicio de separación de dedos es el mismo movimiento probado en el ensayo de Kim de 2015 para hallux valgus. Si quieres una forma estructurada de crear el hábito, las sesiones diarias de 3 o 5\u00A0minutos mantienen los ejercicios constantes.',
+      'Walkito incluye [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para juanetes, pero el ejercicio de separación de dedos es el mismo movimiento probado en el ensayo de Kim de 2015 para hallux valgus. Si quieres una forma estructurada de crear el hábito, las sesiones de 3 o 5\u00A0minutos, en los días de la semana que tú elijas, mantienen los ejercicios constantes.',
     more: [
       'Para dolor más amplio en la planta delantera del pie que incluye la segunda y la tercera cabeza de los metatarsianos, mira [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/). Para dolor justo debajo de la articulación del dedo gordo, mira [sesamoiditis](/es/sesamoiditis/).',
     ],

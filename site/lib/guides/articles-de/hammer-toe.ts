@@ -226,7 +226,7 @@ export const HAMMER_TOE_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Walkito enthält [Handtuchgreifen](/de/uebungen/handtuchgreifen/), [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für tägliche Zehenübungen suchst, halten die Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.',
+      'Walkito enthält [Handtuchgreifen](/de/uebungen/handtuchgreifen/), [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für Zehenübungen suchst, halten die Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.',
     more: [
       'Bei verwandten Vorfußproblemen lies [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) und [Übungen bei Hallux valgus](/de/hallux-valgus-uebungen/).',
     ],

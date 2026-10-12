@@ -139,7 +139,7 @@ export const EX_TIBIALIS_RAISES_DE: Guide = {
     more: [
       'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gleichgewicht und Gewölbehalten. Zehenheben gehört zu den Krafttagen. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Zehenheben an der Wand',
   campaign: 'ex-tibialis-raises-de',

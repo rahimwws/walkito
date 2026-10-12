@@ -131,7 +131,7 @@ export const BEST_APP_DE: Guide = {
         'Wo Walkito anders ist:',
         {
           list: [
-            'Walkito passt die Einheit jedes Tages anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit.',
+            'Walkito passt jede Einheit anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit.',
             'Es testet alle 14\u00A0Tage Unterschiede zwischen links und rechts.',
             'Es konzentriert sich gezielt auf Fersen- und Fußschmerzen statt auf die ganze Bandbreite der Laufverletzungen.',
           ],
@@ -236,7 +236,7 @@ export const BEST_APP_DE: Guide = {
         '**Du hast an mehreren Körperstellen Schmerzen**, nicht nur an den Füßen: [Prehab](https://theprehabguys.com/) gibt dir über 55\u00A0Programme in einem Abo.',
         '**Du willst einen kostenlosen Einstieg**, um Fersenschmerzen festzuhalten und einfache Dehnungen auszuprobieren: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) macht das gut und kostenlos.',
         '**Dein Hauptthema sind Plattfüße** ohne nennenswerte Schmerzen: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) konzentriert sich genau darauf.',
-        '**Du willst einen täglichen Plan bei Fersenschmerzen oder Plattfüßen, der sich deinem Morgen anpasst** und deinen Fortschritt testet: Dafür wurde [Walkito](https://walkito.site/) gebaut.',
+        '**Du willst einen Plan bei Fersenschmerzen oder Plattfüßen, der sich deinem Morgen anpasst** und deinen Fortschritt testet, an 3, 5 oder 7 Tagen pro Woche, nach Wahl: Dafür wurde [Walkito](https://walkito.site/) gebaut.',
       ],
     },
   ],
@@ -252,7 +252,7 @@ export const BEST_APP_DE: Guide = {
     },
     {
       q: 'Ist Exakt Health bei Plantarfasziitis besser als Walkito?',
-      a: 'Exakt Health deckt mehr Beschwerden ab, darunter über 15\u00A0Laufverletzungen und vollständige Laufpläne. Es gibt die App für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich gezielt auf Fersen- und Fußschmerzen, mit täglicher Anpassung an den Schmerz und Fortschrittstests alle 14\u00A0Tage. Exakt ist die stärkere Wahl für Läuferinnen und Läufer, die Reha plus Laufplan brauchen. Walkito ist enger, passt aber jede Einheit an deinen Morgen an.',
+      a: 'Exakt Health deckt mehr Beschwerden ab, darunter über 15\u00A0Laufverletzungen und vollständige Laufpläne. Es gibt die App für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich gezielt auf Fersen- und Fußschmerzen, mit Anpassung an den Morgenschmerz und Fortschrittstests alle 14\u00A0Tage. Exakt ist die stärkere Wahl für Läuferinnen und Läufer, die Reha plus Laufplan brauchen. Walkito ist enger, passt aber jede Einheit an deinen Morgen an.',
     },
     {
       q: 'Kann eine App bei Plantarfasziitis die Physiotherapie ersetzen?',
@@ -264,7 +264,7 @@ export const BEST_APP_DE: Guide = {
     },
     {
       q: 'Warum nennt sich Walkito nicht die beste App bei Plantarfasziitis?',
-      a: 'Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine medizinische Fachperson auf der anderen Seite wie Hinge Health. Was es gut kann: jeden Tag an deinen Schmerz anpassen und deinen Fortschritt alle 14\u00A0Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.',
+      a: 'Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine medizinische Fachperson auf der anderen Seite wie Hinge Health. Was es gut kann: jede Einheit an deinen Morgenschmerz anpassen und deinen Fortschritt alle 14\u00A0Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.',
     },
     {
       q: 'Funktionieren diese Apps auch auf Android?',

@@ -291,7 +291,7 @@ export const ACHILLES_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas la meta de pantorrilla), una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si el dolor está justo donde el tendón se une al hueso del talón, pide a un profesional de la salud que lo revise antes de cargarlo fuerte.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Ejercicios para tendinitis de Aquiles',
   campaign: 'guide-achilles-es',

@@ -262,7 +262,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0séances par semaine de 3, 5 ou 10\u00A0minutes. Toutes les deux semaines, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change. Walkito est un programme d’exercices pour adultes. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si une voûte s’affaisse ou si l’intérieur de votre cheville fait mal, consultez d’abord un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Pieds plats avec l’âge',
   campaign: 'guide-flat-feet-age-fr',

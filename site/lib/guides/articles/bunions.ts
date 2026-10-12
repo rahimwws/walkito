@@ -195,7 +195,7 @@ export const BUNIONS_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      '[Walkito](/program/) includes [toe spreads](/exercises/toe-spread/) and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the 3-minute or 5-minute daily sessions keep the exercises consistent.',
+      '[Walkito](/program/) includes [toe spreads](/exercises/toe-spread/) and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for bunions, but the toe-spread-out exercise is the same movement tested in the Kim 2015 hallux valgus trial. If you want a structured way to build the habit, the short sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week you choose, keep the exercises consistent.',
     more: [
       'For broader forefoot pain involving the second and third metatarsal heads, see [ball of foot pain](/ball-of-foot-pain/). For pain under the big toe joint specifically, see [sesamoiditis](/sesamoiditis/).',
     ],

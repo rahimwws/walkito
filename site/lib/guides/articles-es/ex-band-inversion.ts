@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_ES: Guide = {
   program: {
     h2: 'Hacerlo como un plan',
     text: 'Walkito añade la inversión de tobillo con banda después de seis sesiones de pie corto de pie. Esa progresión asegura que los músculos intrínsecos del pie estén activos antes de cargar el estabilizador extrínseco. Las sesiones duran 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días sigue cuánto mantienes el arco y la resistencia de la pantorrilla.',
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Inversión de tobillo con banda (tibial posterior)',
   campaign: 'ex-band-inversion-es',

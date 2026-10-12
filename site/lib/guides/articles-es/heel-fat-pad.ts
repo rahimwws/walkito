@@ -221,11 +221,11 @@ export const HEEL_FAT_PAD_ES: Guide = {
   },
   program: {
     h2: 'Dónde encaja un plan de ejercicios',
-    text: 'Walkito arma sesiones diarias con elevaciones de talón, trabajo de músculos del pie y estiramientos. Estos ejercicios están diseñados para la fascitis plantar y la fuerza del pie. Pueden ayudar a un pie con atrofia de la almohadilla grasa a manejar mejor la carga, pero no están probados para esta afección específicamente y no van a reconstruir una almohadilla adelgazada. Si un profesional de la salud ha confirmado el síndrome de la almohadilla grasa, un plan de ejercicios como el de Walkito es un complemento razonable a la amortiguación y el calzado, no un sustituto.',
+    text: 'Walkito arma sesiones con elevaciones de talón, trabajo de músculos del pie y estiramientos, 3, 5 o 7 días a la semana, tú eliges. Estos ejercicios están diseñados para la fascitis plantar y la fuerza del pie. Pueden ayudar a un pie con atrofia de la almohadilla grasa a manejar mejor la carga, pero no están probados para esta afección específicamente y no van a reconstruir una almohadilla adelgazada. Si un profesional de la salud ha confirmado el síndrome de la almohadilla grasa, un plan de ejercicios como el de Walkito es un complemento razonable a la amortiguación y el calzado, no un sustituto.',
     more: [
       'Las sesiones son de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito no diagnostica. Si no estás seguro de si tu dolor de talón es atrofia de la almohadilla grasa o fascitis plantar, consulta primero a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Síndrome de la almohadilla grasa del talón',
   campaign: 'guide-heel-fat-pad-es',

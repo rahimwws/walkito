@@ -142,7 +142,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text: '[Walkito](/program/) uses the big toe lift early in the foot-strengthening sequence, alongside towel scrunches. Once you can isolate the big toe cleanly for two sessions, the plan shifts focus to the short foot exercise and its seated-to-standing progression. Sessions are 3, 5 or 10 minutes, and a test every 14 days tracks progress.',
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Big toe lift (toe yoga)',
   campaign: 'ex-big-toe-lift',

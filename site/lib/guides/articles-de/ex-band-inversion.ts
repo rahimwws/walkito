@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito nimmt das Einwärtsdrehen mit Band nach sechs Einheiten der Kurzer-Fuß-Übung im Stehen dazu. Diese Abfolge sorgt dafür, dass die kurzen Fußmuskeln aktiv sind, bevor der extrinsische Stabilisator belastet wird. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt die Haltezeit des Gewölbes und die Wadenausdauer.',
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Einwärtsdrehen mit Band (Tibialis posterior)',
   campaign: 'ex-band-inversion-de',

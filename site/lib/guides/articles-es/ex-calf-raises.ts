@@ -179,7 +179,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla y el equilibrio. La meta de pantorrilla son 25\u00A0elevaciones a una pierna. Alcanzarla no termina el trabajo: una nueva meta ocupa su lugar. Walkito es un programa de ejercicio. No diagnostica.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Elevaciones de talón',
   campaign: 'ex-calf-raises-es',

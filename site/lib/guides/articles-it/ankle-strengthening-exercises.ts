@@ -277,7 +277,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni due settimane (ogni quattro quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Rinforzo della caviglia',
   campaign: 'guide-ankle-strength-it',

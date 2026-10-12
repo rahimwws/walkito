@@ -241,7 +241,7 @@ export const HAGLUNDS_DE: Guide = {
     more: [
       'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn du einen sichtbaren Höcker hinten an der Ferse hast und nicht sicher bist, woher der Schmerz kommt, lass ihn von einer medizinischen Fachperson untersuchen, bevor du anfängst zu belasten.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Haglundferse',
   campaign: 'guide-haglunds-de',

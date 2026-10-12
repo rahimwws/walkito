@@ -150,7 +150,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     more: [
       'Ganar un centímetro en la prueba de rodilla a la pared en unas semanas es importante. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Movilidad de tobillo',
   campaign: 'ex-ankle-rocks-es',

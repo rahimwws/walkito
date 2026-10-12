@@ -205,11 +205,11 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
   },
   program: {
     h2: 'Cuándo el ejercicio es el paso correcto',
-    text: 'Si un profesional de la salud ha confirmado fascitis plantar y ha descartado las afecciones de arriba, el ejercicio es el enfoque con el grado más alto de la guía. Walkito arma un plan diario alrededor de la carga de pantorrilla y fascia, empezando con estiramientos y subiendo a ejercicios de fuerza a tu ritmo.',
+    text: 'Si un profesional de la salud ha confirmado fascitis plantar y ha descartado las afecciones de arriba, el ejercicio es el enfoque con el grado más alto de la guía. Walkito arma un plan alrededor de la carga de pantorrilla y fascia, 3, 5 o 7 días a la semana, tú eliges, empezando con estiramientos y subiendo a ejercicios de fuerza a tu ritmo.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si tu dolor de talón empeora por la noche o en reposo, consulta a un profesional de la salud antes de empezar a cargar el pie.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Dolor de talón por la noche',
   campaign: 'guide-heel-night-es',

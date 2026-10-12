@@ -258,7 +258,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando en tus pies.',
       'Walkito no se ocupa del dolor de espalda, no diagnostica y no reemplaza a un profesional de la salud. Si tienes dolor de espalda, haz que lo revisen, sobre todo si aplica alguna de las señales de arriba.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día para tus pies.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos para tus pies.',
   },
   crumb: 'Pie plano y dolor de espalda',
   campaign: 'guide-flat-feet-back-es',

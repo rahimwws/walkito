@@ -140,7 +140,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text: 'Walkito utilise l’exercice pour lever le gros orteil tôt dans la progression du renforcement du pied, avec le ramassage de serviette. Une fois que vous isolez proprement le gros orteil deux séances de suite, le plan passe à l’exercice du pied court et à sa progression d’assis à debout. Les séances durent 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit vos progrès.',
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Lever le gros orteil (yoga des orteils)',
   campaign: 'ex-big-toe-lift-fr',

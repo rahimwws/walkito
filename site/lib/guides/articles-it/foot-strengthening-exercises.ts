@@ -294,7 +294,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio, ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Rinforzo del piede',
   campaign: 'guide-foot-strength-it',

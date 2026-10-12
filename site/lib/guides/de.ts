@@ -308,7 +308,7 @@ export const FLAT_FEET_DE: Guide = {
     more: [
       `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Gewölbehalten, Wadenausdauer und Gleichgewicht, sodass du siehst, ob die Gewölbearbeit etwas bringt.`,
     ],
-    cta: `Fang mit ${PROGRAM.sessionMinutes[0]}\u00A0Minuten am Tag an.`,
+    cta: `Fang mit einer Einheit von ${PROGRAM.sessionMinutes[0]}\u00A0Minuten an.`,
   },
   crumb: 'Plattfuß-Übungen',
   campaign: 'guide-flat-feet-de',
@@ -612,7 +612,7 @@ export const HEEL_PAIN_DE: Guide = {
     more: [
       `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dieses Ziel erreicht ist) prüft ein kurzer Test [Wadenausdauer](/de/fersenheben-test/), Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert.`,
     ],
-    cta: `Fang mit ${PROGRAM.sessionMinutes[0]}\u00A0Minuten am Tag an.`,
+    cta: `Fang mit einer Einheit von ${PROGRAM.sessionMinutes[0]}\u00A0Minuten an.`,
   },
   crumb: 'Übungen bei Plantarfasziitis',
   campaign: 'guide-plantar-fasciitis-de',

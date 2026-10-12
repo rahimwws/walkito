@@ -149,7 +149,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
     more: [
       'Un centimètre gagné au test genou au mur en quelques semaines est significatif. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Bascules de cheville',
   campaign: 'ex-ankle-rocks-fr',

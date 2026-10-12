@@ -141,7 +141,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
   program: {
     h2: 'Farlo come un piano',
     text: 'Walkito usa il sollevamento dell’alluce all’inizio della sequenza di rinforzo del piede, insieme alla raccolta dell’asciugamano. Quando riesci a isolare bene l’alluce per due sessioni, il piano sposta l’attenzione sull’esercizio del piede corto e sulla sua progressione da seduto a in piedi. Le sessioni durano 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue i progressi.',
-    cta: 'Inizia con 3\u00A0minuti al giorno.',
+    cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
   crumb: 'Sollevamento dell’alluce (toe yoga)',
   campaign: 'ex-big-toe-lift-it',

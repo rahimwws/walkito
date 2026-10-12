@@ -1372,7 +1372,7 @@ Wo Exakt stärker ist als Walkito:
 
 Wo Walkito anders ist:
 
-- Walkito passt die Einheit jedes Tages anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit.
+- Walkito passt jede Einheit anhand eines Morgen-Checks zum Schmerz an statt anhand von Feedback am Ende der Einheit.
 - Es testet alle 14 Tage Unterschiede zwischen links und rechts.
 - Es konzentriert sich gezielt auf Fersen- und Fußschmerzen statt auf die ganze Bandbreite der Laufverletzungen.
 
@@ -1469,7 +1469,7 @@ Geh von deiner Situation aus, nicht von Funktionslisten.
 - **Du hast an mehreren Körperstellen Schmerzen**, nicht nur an den Füßen: [Prehab](https://theprehabguys.com/) gibt dir über 55 Programme in einem Abo.
 - **Du willst einen kostenlosen Einstieg**, um Fersenschmerzen festzuhalten und einfache Dehnungen auszuprobieren: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) macht das gut und kostenlos.
 - **Dein Hauptthema sind Plattfüße** ohne nennenswerte Schmerzen: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) konzentriert sich genau darauf.
-- **Du willst einen täglichen Plan bei Fersenschmerzen oder Plattfüßen, der sich deinem Morgen anpasst** und deinen Fortschritt testet: Dafür wurde [Walkito](https://walkito.site/) gebaut.
+- **Du willst einen Plan bei Fersenschmerzen oder Plattfüßen, der sich deinem Morgen anpasst** und deinen Fortschritt testet, an 3, 5 oder 7 Tagen pro Woche, nach Wahl: Dafür wurde [Walkito](https://walkito.site/) gebaut.
 
 ### Eine App reicht nicht. Geh zu einer medizinischen Fachperson, wenn
 
@@ -1496,7 +1496,7 @@ Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarf
 
 #### Ist Exakt Health bei Plantarfasziitis besser als Walkito?
 
-Exakt Health deckt mehr Beschwerden ab, darunter über 15 Laufverletzungen und vollständige Laufpläne. Es gibt die App für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich gezielt auf Fersen- und Fußschmerzen, mit täglicher Anpassung an den Schmerz und Fortschrittstests alle 14 Tage. Exakt ist die stärkere Wahl für Läuferinnen und Läufer, die Reha plus Laufplan brauchen. Walkito ist enger, passt aber jede Einheit an deinen Morgen an.
+Exakt Health deckt mehr Beschwerden ab, darunter über 15 Laufverletzungen und vollständige Laufpläne. Es gibt die App für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich gezielt auf Fersen- und Fußschmerzen, mit Anpassung an den Morgenschmerz und Fortschrittstests alle 14 Tage. Exakt ist die stärkere Wahl für Läuferinnen und Läufer, die Reha plus Laufplan brauchen. Walkito ist enger, passt aber jede Einheit an deinen Morgen an.
 
 #### Kann eine App bei Plantarfasziitis die Physiotherapie ersetzen?
 
@@ -1508,7 +1508,7 @@ Hinge Health ist für Mitglieder kostenlos, deren Arbeitgeber oder Krankenversic
 
 #### Warum nennt sich Walkito nicht die beste App bei Plantarfasziitis?
 
-Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine medizinische Fachperson auf der anderen Seite wie Hinge Health. Was es gut kann: jeden Tag an deinen Schmerz anpassen und deinen Fortschritt alle 14 Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.
+Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine medizinische Fachperson auf der anderen Seite wie Hinge Health. Was es gut kann: jede Einheit an deinen Morgenschmerz anpassen und deinen Fortschritt alle 14 Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.
 
 #### Funktionieren diese Apps auch auf Android?
 
@@ -1613,7 +1613,7 @@ Es gibt mehr als 150 Operationsverfahren bei Hallux valgus, von der Korrektur de
 
 ### Als Plan umsetzen
 
-Walkito enthält [Zehenspreizen](https://walkito.site/de/uebungen/zehen-spreizen/) und [Großzehenheben](https://walkito.site/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die täglichen Einheiten von 3 oder 5 Minuten die Übungen regelmäßig.
+Walkito enthält [Zehenspreizen](https://walkito.site/de/uebungen/zehen-spreizen/) und [Großzehenheben](https://walkito.site/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die Einheiten von 3 oder 5 Minuten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, die Übungen regelmäßig.
 
 #### Kann man einen Hallux valgus mit Übungen korrigieren?
 
@@ -4837,7 +4837,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 
 ### Als Plan umsetzen
 
-Walkito enthält [Handtuchgreifen](https://walkito.site/de/uebungen/handtuchgreifen/), [Zehenspreizen](https://walkito.site/de/uebungen/zehen-spreizen/) und [Großzehenheben](https://walkito.site/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für tägliche Zehenübungen suchst, halten die Einheiten von 3 oder 5 Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.
+Walkito enthält [Handtuchgreifen](https://walkito.site/de/uebungen/handtuchgreifen/), [Zehenspreizen](https://walkito.site/de/uebungen/zehen-spreizen/) und [Großzehenheben](https://walkito.site/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für Zehenübungen suchst, halten die Einheiten von 3 oder 5 Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.
 
 #### Kann man eine Hammerzehe rückgängig machen?
 
@@ -5000,7 +5000,7 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 ### Wo ein Übungsplan hineinpasst
 
-Walkito baut tägliche Einheiten rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine medizinische Fachperson ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.
+Walkito baut Einheiten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine medizinische Fachperson ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.
 
 #### Wie fühlt sich das Fersenfettpolster-Syndrom an?
 
@@ -5312,7 +5312,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### Wenn Übungen der richtige Schritt sind
 
-Wenn eine medizinische Fachperson eine Plantarfasziitis bestätigt und die Erkrankungen oben ausgeschlossen hat, ist Training der Ansatz mit der besten Bewertung in der Leitlinie. Walkito baut einen täglichen Plan rund um die Belastung von Wade und Faszie, beginnt mit Dehnungen und steigert sich in deinem Tempo bis zu Kraftübungen.
+Wenn eine medizinische Fachperson eine Plantarfasziitis bestätigt und die Erkrankungen oben ausgeschlossen hat, ist Training der Ansatz mit der besten Bewertung in der Leitlinie. Walkito baut einen Plan an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um die Belastung von Wade und Faszie, beginnt mit Dehnungen und steigert sich in deinem Tempo bis zu Kraftübungen.
 
 #### Sind Fersenschmerzen nachts ein Zeichen für etwas Ernstes?
 
@@ -9206,7 +9206,7 @@ Keine Studie hat die Erholungszeit speziell bei einer Strecksehnenentzündung ve
 
 Language: German (Deutsch) · https://walkito.site/de/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
 
-Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15 Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, Plattfüße und die tägliche Anpassung an den Schmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.
+Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15 Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, Plattfüße und die Anpassung an den Morgenschmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.
 
 - Exakt Health deckt über 15 Laufverletzungen ab und enthält Trainingspläne für das Laufen von 5 km bis Marathon. Walkito deckt nur Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab.
 - Exakt und Walkito gibt es beide für iOS und Android.
@@ -9232,7 +9232,7 @@ Die App ist in der EU als Medizinprodukt zertifiziert, sie hat also die behördl
 
 ### Für wen ist Walkito gemacht?
 
-Walkito ist für Menschen gemacht, denen die Füße wehtun und die einen kurzen täglichen Übungsplan wollen, der sich daran anpasst, wie sie sich jeden Morgen fühlen. Dazu gehören:
+Walkito ist für Menschen gemacht, denen die Füße wehtun und die einen kurzen Übungsplan an 3, 5 oder 7 Tagen pro Woche, nach Wahl, wollen, der sich daran anpasst, wie sie sich jeden Morgen fühlen. Dazu gehören:
 
 - Plantarfasziitis.
 - Flexible Plattfüße.
@@ -9240,7 +9240,7 @@ Walkito ist für Menschen gemacht, denen die Füße wehtun und die einen kurzen 
 
 Die App ist auch für Menschen gemacht, die den ganzen Tag auf den Beinen sind: Pflegekräfte, Beschäftigte im Einzelhandel, im Lager.
 
-Die App ist schmaler als Exakt. Sie deckt keine Knieverletzungen, keine Zerrungen der hinteren Oberschenkelmuskulatur und keine Laufpläne ab. Was sie anders macht: **Sie passt die Einheit jedes Tages nach einem Schmerz-Check-in am Morgen an** statt nach dem Feedback am Ende der Einheit.
+Die App ist schmaler als Exakt. Sie deckt keine Knieverletzungen, keine Zerrungen der hinteren Oberschenkelmuskulatur und keine Laufpläne ab. Was sie anders macht: **Sie passt jede Einheit nach einem Schmerz-Check-in am Morgen an** statt nach dem Feedback am Ende der Einheit.
 
 Ein Morgen mit 7/10 oder mehr stellt den Tag auf etwa drei Minuten Arbeit im Sitzen um. Ein großer Tag auf den Beinen (gemessen über die Schritte in Apple Health oder Health Connect) macht aus der nächsten Krafteinheit eine leichtere Erholungseinheit.
 
@@ -9335,7 +9335,7 @@ Nimm Walkito, wenn einer dieser Punkte zutrifft:
 
 - Dein Schmerz ist genau Fersenschmerz, Plantarfasziitis oder Plattfuß, und du willst ein Programm, das sich darauf konzentriert.
 - Du willst Einheiten von 3 bis 10 Minuten statt 15 bis 30.
-- Die tägliche Anpassung an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.
+- Die Anpassung jeder Einheit an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.
 - Du willst alle 14 Tage Fortschrittstests, die links und rechts vergleichen.
 - Du brauchst die App auf Russisch.
 - Du bist für die Arbeit den ganzen Tag auf den Beinen, läufst aber nicht, und willst eine App, die dafür gemacht ist.
@@ -9356,7 +9356,7 @@ Wenn Walkito nach der richtigen Wahl für deine Situation klingt, so funktionier
 
 #### Ist Exakt Health besser als Walkito?
 
-Das hängt davon ab, was du brauchst. Exakt Health deckt über 15 Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit täglicher Anpassung an den Schmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit täglicher Anpassung ist Walkito gemacht.
+Das hängt davon ab, was du brauchst. Exakt Health deckt über 15 Laufverletzungen ab und enthält Pläne für den Wiedereinstieg ins Laufen. Die App gibt es für iOS und Android, und sie ist in der EU als Medizinprodukt zertifiziert. Walkito konzentriert sich auf Fersenschmerzen und Plattfüße, mit Anpassung an den Morgenschmerz und kürzeren Einheiten. Wer läuft und verschiedene Verletzungen hat, ist mit Exakt besser bedient. Für Fersenschmerzen mit Anpassung bei jeder Einheit ist Walkito gemacht.
 
 #### Wie sieht der Preis von Walkito im Vergleich zu Exakt Health aus?
 

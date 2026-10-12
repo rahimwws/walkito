@@ -202,7 +202,7 @@ export const BUNIONS_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text:
-      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances quotidiennes de 3 ou 5\u00A0minutes gardent les exercices réguliers.',
+      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances de 3 ou 5\u00A0minutes, 3, 5 ou 7\u00A0jours par semaine au choix, gardent les exercices réguliers.',
     more: [
       'Pour une douleur de l’avant-pied plus étendue, qui touche les têtes du deuxième et du troisième métatarsien, voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/). Pour une douleur sous l’articulation du gros orteil en particulier, voir [sésamoïdite](/fr/sesamoidite/).',
     ],

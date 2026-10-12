@@ -257,7 +257,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas esa meta), una prueba corta mide tu avance para que veas qué está cambiando. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si el dolor en la parte delantera del pie viene con entumecimiento, hinchazón o un bulto, consulta primero a un profesional de la salud.',
     ],
-    cta: 'Empieza con 3\u00A0minutos al día.',
+    cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },
   crumb: 'Dolor en la planta del pie',
   campaign: 'guide-ball-of-foot-es',

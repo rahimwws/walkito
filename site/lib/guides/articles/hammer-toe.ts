@@ -221,7 +221,7 @@ export const HAMMER_TOE_EN: Guide = {
   program: {
     h2: 'Doing it as a plan',
     text:
-      '[Walkito](/program/) includes [towel scrunches](/exercises/towel-scrunch/), [toe spreads](/exercises/toe-spread/), and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do daily toe work, the 3-minute or 5-minute sessions keep the exercises consistent without needing to remember a separate routine.',
+      '[Walkito](/program/) includes [towel scrunches](/exercises/towel-scrunch/), [toe spreads](/exercises/toe-spread/), and [big toe lifts](/exercises/big-toe-lift/) as part of its intrinsic foot strengthening track. The app is built for plantar fasciitis and [flat feet](/flat-feet/), not specifically for hammer toes, but the exercises overlap. If you have a flexible hammer toe and want a structured way to do regular toe work, the short sessions of 3, 5 or 10 minutes, on 3, 5 or 7 days a week you choose, keep the exercises consistent without needing to remember a separate routine.',
     more: [
       'For related forefoot problems, see [ball of foot pain](/ball-of-foot-pain/) and [bunion exercises](/bunion-exercises/).',
     ],

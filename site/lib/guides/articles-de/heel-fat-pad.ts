@@ -220,11 +220,11 @@ export const HEEL_FAT_PAD_DE: Guide = {
   },
   program: {
     h2: 'Wo ein Übungsplan hineinpasst',
-    text: 'Walkito baut tägliche Einheiten rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine medizinische Fachperson ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.',
+    text: 'Walkito baut Einheiten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine medizinische Fachperson ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.',
     more: [
       'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Atrophie des Fettpolsters oder einer Plantarfasziitis kommen, geh zuerst zu einer medizinischen Fachperson.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Fersenfettpolster-Syndrom',
   campaign: 'guide-heel-fat-pad-de',

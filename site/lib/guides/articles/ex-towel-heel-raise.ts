@@ -172,7 +172,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days, a short test checks calf endurance and balance. Walkito is an exercise program, not a diagnosis tool.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Towel heel raise',
   campaign: 'ex-towel-heel-raise',

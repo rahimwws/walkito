@@ -180,7 +180,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
   program: {
     h2: 'Fazendo isso como um plano',
     text: 'O Walkito monta um plano que inclui o exercício de pé curto em uma progressão de três degraus: sentado, em pé e depois em uma perna. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis. Você escolhe sessões de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias mostra se o tempo de sustentação do arco está melhorando.',
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Exercício de pé curto',
   campaign: 'ex-short-foot-pt',

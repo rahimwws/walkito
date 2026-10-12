@@ -273,7 +273,7 @@ export const STANDING_IT: Guide = {
       `Scegli ${DAYS}\u00A0giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta dando risultati.`,
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore è acuto, peggiora o ti tiene sveglio di notte, rivolgiti prima a un professionista sanitario.',
     ],
-    cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
+    cta: `Inizia con una sessione da ${PROGRAM.sessionMinutes[0]}\u00A0minuti.`,
   },
   crumb: 'Piedi doloranti a stare in piedi',
   campaign: 'guide-standing-it',

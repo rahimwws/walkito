@@ -290,7 +290,7 @@ export const FLAT_FEET_RU: Guide = {
     more: [
       `Вы выбираете ${DAYS} дней в неделю и занятия по ${MINUTES} минут. Каждые ${PROGRAM.testEveryDays} дней (а после первой достигнутой цели каждые ${PROGRAM.testEveryDaysAfterGoal}) короткий тест проверяет удержание свода, выносливость икр и баланс, так что видно, даёт ли работа со сводом результат.`,
     ],
-    cta: `Начните с ${PROGRAM.sessionMinutes[0]} минут в день.`,
+    cta: `Начните с ${PROGRAM.sessionMinutes[0]}-минутного занятия.`,
   },
   crumb: 'Упражнения при плоскостопии',
   campaign: 'guide-flat-feet-ru',
@@ -593,7 +593,7 @@ export const HEEL_PAIN_RU: Guide = {
     more: [
       `Вы выбираете ${DAYS} дней в неделю и занятия по ${MINUTES} минут. Каждые ${PROGRAM.testEveryDays} дней (а когда цель достигнута, каждые ${PROGRAM.testEveryDaysAfterGoal}) короткий тест проверяет выносливость икр, удержание свода и баланс, так что видно, что меняется.`,
     ],
-    cta: `Начните с ${PROGRAM.sessionMinutes[0]} минут в день.`,
+    cta: `Начните с ${PROGRAM.sessionMinutes[0]}-минутного занятия.`,
   },
   crumb: 'Упражнения при плантарном фасциите',
   campaign: 'guide-plantar-fasciitis-ru',

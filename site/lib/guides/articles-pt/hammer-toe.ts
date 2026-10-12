@@ -221,7 +221,7 @@ export const HAMMER_TOE_PT: Guide = {
   program: {
     h2: 'Fazendo isso como um plano',
     text:
-      'O Walkito inclui [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de fazer o trabalho diário dos dedos, as sessões de 3 ou 5\u00A0minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.',
+      'O Walkito inclui [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de trabalhar os dedos, as sessões de 3 ou 5\u00A0minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.',
     more: [
       'Para problemas parecidos na parte da frente do pé, veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) e [exercícios para joanete](/pt/joanete-exercicios/).',
     ],

@@ -232,7 +232,7 @@ export const MORTONS_FR: Guide = {
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito ne diagnostique pas le névrome de Morton. Les exercices qu’il propose sont des mesures de confort et de charge. Des chaussures plus larges, des coussinets métatarsiens et un avis clinique passent en premier.',
     ],
-    cta: 'Commencez avec 3\u00A0minutes par jour.',
+    cta: 'Commencez par une séance de 3\u00A0minutes.',
   },
   crumb: 'Névrome de Morton',
   campaign: 'guide-mortons-fr',

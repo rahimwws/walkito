@@ -169,7 +169,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha e o equilíbrio. Se a dor é bem no ponto onde o tendão se prende ao osso do calcanhar, peça para um profissional de saúde avaliar antes de colocar muita carga. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Descida excêntrica do calcanhar',
   campaign: 'ex-eccentric-heel-drops-pt',

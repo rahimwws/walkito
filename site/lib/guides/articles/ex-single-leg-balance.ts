@@ -176,7 +176,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Once the balance goal is met, the test moves to every 28 days and a new goal takes its place. Walkito is an exercise program. It does not diagnose.',
     ],
-    cta: 'Start with 3 minutes a day.',
+    cta: 'Start with a 3-minute session.',
   },
   crumb: 'Single-leg balance',
   campaign: 'ex-single-leg-balance',

@@ -104,7 +104,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
         a: 'The Walkito plan has no fixed length. It lasts as long as you use it. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. [How the plan works](/program/).',
       },
       {
-        q: 'How long is a daily session?',
+        q: 'How long is a session?',
         a: 'A Walkito session takes 5 minutes by default, and you can switch any session to 3 or 10. Each session has 2 to 4 exercises. The exercise for the week’s focus goal always stays in, even in the 3-minute version. A test day takes about four minutes and has no training in it.',
       },
       {

@@ -238,7 +238,7 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no começo, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico, não ajuda diretamente na dor no joelho e não substitui um profissional de saúde. Para dor nas costas com pé chato, veja [pé chato e dor nas costas](/pt/pe-chato-dor-nas-costas/).',
     ],
-    cta: 'Comece com 3\u00A0minutos por dia.',
+    cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
   crumb: 'Pé chato e dor no joelho',
   campaign: 'guide-flat-feet-knee-pt',

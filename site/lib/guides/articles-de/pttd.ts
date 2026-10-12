@@ -233,7 +233,7 @@ export const PTTD_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert. Wenn bei dir eine Tibialis-posterior-Insuffizienz festgestellt wurde, nutz die App zusammen mit Einlagen und klär mit deiner Fachperson, ob dein Stadium für Übungen geeignet ist.',
     ],
-    cta: 'Fang mit 3\u00A0Minuten am Tag an.',
+    cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
   crumb: 'Übungen bei Tibialis-posterior-Insuffizienz',
   campaign: 'guide-pttd-de',

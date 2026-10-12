@@ -19,7 +19,7 @@ export const VS_EXAKT_PT: Guide = {
     'Walkito ou Exakt Health: condições, preço, plataformas, como cada um monta o seu plano, evidências, idiomas e privacidade. Conferido em outubro de 2026.',
   h1: 'Walkito vs Exakt Health: qual combina com você?',
   lede:
-    'O Walkito e o Exakt Health oferecem planos de exercícios para fascite plantar, mas foram feitos para pessoas diferentes. O Exakt é um app para corredores, com mais de 15 planos de reabilitação de lesões e um programa de volta à corrida. O Walkito é um app mais focado, em dor no calcanhar, pé chato e adaptação diária à dor. Esta página compara os dois com honestidade, diz onde o Exakt é a melhor escolha e explica o que o Walkito faz de diferente.',
+    'O Walkito e o Exakt Health oferecem planos de exercícios para fascite plantar, mas foram feitos para pessoas diferentes. O Exakt é um app para corredores, com mais de 15 planos de reabilitação de lesões e um programa de volta à corrida. O Walkito é um app mais focado, em dor no calcanhar, pé chato e adaptação à dor de cada manhã. Esta página compara os dois com honestidade, diz onde o Exakt é a melhor escolha e explica o que o Walkito faz de diferente.',
   intro: [
     'É o Walkito que faz esta página. Por isso, leia as informações sobre o Exakt (tiradas da página dele na App Store, da página no Google Play e do site oficial, tudo conferido em outubro de 2026) e decida por conta própria. Os links para todas as fontes estão embaixo da tabela de comparação.',
   ],
@@ -134,7 +134,7 @@ export const VS_EXAKT_PT: Guide = {
     {
       h2: 'Para quem o Walkito foi feito?',
       paragraphs: [
-        'O Walkito foi feito para quem tem dor nos pés e quer um plano de exercícios diário e curto que se ajuste a como a pessoa acorda cada manhã. Isso inclui:',
+        'O Walkito foi feito para quem tem dor nos pés e quer um plano de exercícios curto, 3, 5 ou 7 dias por semana, você escolhe, que se ajuste a como a pessoa acorda cada manhã. Isso inclui:',
         {
           list: [
             'Fascite plantar.',
@@ -143,7 +143,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
         },
         'Ele também foi feito para quem passa o dia todo em pé: enfermagem, comércio, estoque e armazém.',
-        'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar a sessão de cada dia a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
+        'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar cada sessão a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
         'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple no iPhone ou do Health Connect no Android) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
         'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e equilíbrio em uma perna, e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
         'O Walkito foi lançado em 2 de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
@@ -246,7 +246,7 @@ export const VS_EXAKT_PT: Guide = {
       bullets: [
         'A sua dor é especificamente dor no calcanhar, fascite plantar ou pé chato, e você quer um programa focado nisso.',
         'Você quer sessões de 3 a 10\u00A0minutos em vez de 15 a 30.',
-        'A adaptação diária à dor a partir de um check-in pela manhã importa mais para você do que uma progressão por níveis.',
+        'A adaptação de cada sessão à dor a partir de um check-in pela manhã importa mais para você do que uma progressão por níveis.',
         'Você quer testes de progresso a cada 14\u00A0dias que comparem a esquerda com a direita.',
         'Você precisa do app em russo.',
         'Você passa o dia todo em pé no trabalho, não corre, e quer um app feito para isso.',
@@ -256,7 +256,7 @@ export const VS_EXAKT_PT: Guide = {
   faq: [
     {
       q: 'O Exakt Health é melhor que o Walkito?',
-      a: 'Depende do que você precisa. O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de volta à corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito é focado em dor no calcanhar e pé chato, com adaptação diária à dor e sessões mais curtas. Os dois estão no iOS e no Android. Para quem corre e tem vários tipos de lesão, o Exakt combina melhor. Para dor específica no calcanhar com ajuste diário, o Walkito foi feito para isso.',
+      a: 'Depende do que você precisa. O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de volta à corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito é focado em dor no calcanhar e pé chato, com adaptação à dor da manhã e sessões mais curtas. Os dois estão no iOS e no Android. Para quem corre e tem vários tipos de lesão, o Exakt combina melhor. Para dor específica no calcanhar com ajuste a cada sessão, o Walkito foi feito para isso.',
     },
     {
       q: 'Como é o preço do Walkito em comparação com o Exakt Health?',
