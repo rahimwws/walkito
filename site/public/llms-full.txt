@@ -282,6 +282,16 @@ Sources:
 - Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
 - Jordan JL, Holden MA, Mason EE, et al. Interventions to improve adherence to exercise for chronic musculoskeletal pain in adults. Cochrane Database of Systematic Reviews. 2010;2010(1):CD005956.
 - Nicolson PJA, Bennell KL, Dobson FL, et al. Interventions to increase adherence to therapeutic exercise in older adults with low back pain and/or hip/knee osteoarthritis: a systematic review and meta-analysis. British Journal of Sports Medicine. 2017;51(10):791–799.
+- Martin RL, Davenport TE, Fraser JJ, et al. Ankle Stability and Movement Coordination Impairments: Lateral Ankle Ligament Sprains Revision 2021. Journal of Orthopaedic & Sports Physical Therapy. 2021;51(4):CPG1–CPG80.
+- Van Reijen M, Vriend I, Zuidema V, et al. Increasing compliance with neuromuscular training to prevent ankle sprain in sport: does the 'Strengthen your ankle' mobile App make a difference? A randomised controlled trial. British Journal of Sports Medicine. 2016;50(19):1200–5.
+- Van Reijen M, Vriend I, Zuidema V, et al. The "Strengthen your ankle" program to prevent recurrent injuries: A randomized controlled trial aimed at long-term effectiveness. Journal of Science and Medicine in Sport. 2017;20(6):549–554.
+- Mailuhu AK, Verhagen EA, van Ochten J, et al. E-health intervention for preventing recurrent ankle sprains: a randomised controlled trial in general practice. British Journal of General Practice. 2024;74(738):e56–e62.
+- Hoang NT, Chen S, Chou LW. The Impact of Foot Orthoses and Exercises on Pain and Navicular Drop for Adult Flatfoot: A Network Meta-Analysis. International Journal of Environmental Research and Public Health. 2021;18(15).
+- Hurn SE, Matthews BG, Munteanu SE, et al. Effectiveness of Nonsurgical Interventions for Hallux Valgus: A Systematic Review and Meta-Analysis. Arthritis Care & Research. 2022;74(10):1676–1688.
+- Dias CG, Godoy-Santos AL, Ferrari J, et al. Surgical interventions for treating hallux valgus and bunions. Cochrane Database of Systematic Reviews. 2024;7(7):CD013726.
+- Cooper MT. Common Painful Foot and Ankle Conditions: A Review. JAMA. 2023;330(23):2285–2294.
+- Kang JH, Chen MD, Chen SC, et al. Correlations between subjective treatment responses and plantar pressure parameters of metatarsal pad treatment in metatarsalgia patients: a prospective study. BMC Musculoskeletal Disorders. 2006;7:95.
+- Janssen T, van Berkel S, Edens M, et al. Effectiveness of eccentric calf muscle exercise therapy in patients with chronic midportion Achilles tendinopathy: a randomized controlled trial. Journal of Science and Medicine in Sport. 2026. Online ahead of print.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -2744,7 +2754,7 @@ The [NHS advises](https://www.nhs.uk/conditions/plantar-fasciitis/) seeing a doc
 
 ### If you go the home route
 
-[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.
+[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.
 
 #### Do I need physical therapy for plantar fasciitis?
 
@@ -2856,7 +2866,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### If you start at home
 
-[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
 
 #### How much is physical therapy for plantar fasciitis without insurance?
 
@@ -2983,7 +2993,7 @@ Either way, see a doctor or physical therapist if the pain has not improved afte
 
 ### If you want a set plan
 
-[Walkito](https://walkito.site/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
 
 #### Can YouTube videos help plantar fasciitis?
 
@@ -3000,6 +3010,149 @@ No. The exercises need no equipment and good free guides exist. An app adds a se
 #### Are AI-made or video instructions better than a paper handout?
 
 For adherence, not clearly. In a trial of 103 people with heel pain, AI-made videos and paper leaflets gave the same adherence, but the video group did harder exercises more accurately.
+
+## Best apps for foot pain, by problem
+
+Language: English · https://walkito.site/best-apps-for-foot-pain/ · published 2026-10-11 · updated 2026-10-11
+
+No foot pain app has been tested in a published trial, so there is no proven best one. We checked 16 apps for flat feet, Achilles pain, ankle sprains, bunions and ball of foot pain: 2 named a licensed clinician as the creator, 5 promised to end pain or gave a quick timeline, and only 1 cited a specific study. The research supports the exercises, not any one app, so pick an app that gives the right exercises for your problem.
+
+- Of 16 foot pain apps we checked in the App Store and Google Play, none had a published trial, 2 named a licensed clinician as the creator and 1 cited a specific study.
+- 5 of 16 promised to end pain or gave a quick timeline, such as “eliminate pain” or “results in just 6 weeks”.
+- For ankle sprains, an app version of a proven exercise program did as well as a printed booklet, not better.
+- Flat feet exercises can reduce pain but did not realign the foot in a review of 10 trials.
+- For bunions and ball of foot pain, the evidence for exercise is weak or missing; shoes, pads and a clinician matter more.
+
+### Foot pain apps by problem at a glance
+
+Some apps cover more than one problem. Checked October 11, 2026, in the US App Store and Google Play.
+
+### Best apps for flat feet
+
+Look for foot and arch strengthening, such as the short foot exercise. Be wary of any app that promises a new arch: in a 2024 review of the short foot exercise, there was no clear overall change in arch height (navicular drop); only programs longer than 6 weeks showed one.
+
+- [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/id6755728858) (iPhone). Subscription. Says “live pain-free” and “See significant results in just 6 weeks”, and “BACKED BY SCIENCE” without naming a study.
+- [ArchFix](https://apps.apple.com/us/app/id6743368281) (iPhone, Android). Free, with nothing to buy. Offers “preventive and corrective exercises”. No clinician named.
+
+Our [flat feet exercises guide](https://walkito.site/flat-feet-exercises/) shows the exercises from the trials.
+
+Source: Hoang NT, Chen S, Chou LW. The Impact of Foot Orthoses and Exercises on Pain and Navicular Drop for Adult Flatfoot: A Network Meta-Analysis. International Journal of Environmental Research and Public Health. 2021;18(15).
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+
+### Best apps for Achilles tendinopathy
+
+Look for heel drops or heavy heel raises that get harder over weeks, with a way to adjust to pain. One caution: in a 2026 trial of 68 people, unsupervised home eccentric exercise did no better than sham exercise over three months.
+
+- [ROM Coach](https://apps.apple.com/us/app/id1485733376) (iPhone, Android). The most rated app we found (4.8 from about 1,600 ratings on iPhone). Made by a kinesiologist. Calls itself “your #1 resource to eliminate pain”.
+- [Rehab Science](https://apps.apple.com/us/app/id6752273938) (iPhone, Android). Made by a named physical therapist, Dr. Tom Walters, DPT. Says “Heal pain”.
+- [Tendon Tracker](https://apps.apple.com/us/app/id6756897904) (iPhone, Android). Names research models but no paper. Asks “READY TO ACTUALLY HEAL?”.
+- [GaitLab Coach](https://apps.apple.com/us/app/id6755685826) (iPhone), for runners. The only app that cited a specific study, and the only one that spelled out warning signs in its listing.
+- [Sidekick](https://apps.apple.com/us/app/id6759810159) (iPhone), [PhysioCare](https://apps.apple.com/us/app/id950989316) (iPhone) and [Achilles Rebuild](https://play.google.com/store/apps/details?id=com.jcs.fitsw.achillesrebuild) (Android) also name Achilles problems.
+
+Our [Achilles tendonitis exercises guide](https://walkito.site/achilles-tendonitis-exercises/) covers the loading programs from the trials.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Janssen T, van Berkel S, Edens M, et al. Effectiveness of eccentric calf muscle exercise therapy in patients with chronic midportion Achilles tendinopathy: a randomized controlled trial. Journal of Science and Medicine in Sport. 2026. Online ahead of print.
+
+### Best apps for ankle sprain rehab
+
+The 2021 ankle sprain guideline grades a structured exercise program and balance training A. On how to deliver a home program, such as written instructions, exercise video games or an app, the guideline gives only a D because the evidence conflicts.
+
+The same program has been tested as an app. In one trial of 220 athletes, reported in two papers, compliance was 73% with the “Strengthen your ankle” app and 77% with a printed booklet, and repeat sprains were similar. A separate e-health program for people seen by their family doctor made no difference to repeat sprains, and only 6.1% stuck with it.
+
+- [AnklePath](https://apps.apple.com/us/app/id6781827965) (iPhone). Physiotherapist-led videos, no one named. Tells you to know the warning signs, without listing them in the store.
+- [Sports Injury Rehabilitation](https://apps.apple.com/us/app/id1538404666) (iPhone, Android). Made by named physiotherapists Phil Pask and Paul Tanner. The first phase of each program is free.
+- [Adapted](https://apps.apple.com/us/app/id6756030925) (iPhone), for ankle instability. Says “Most users report noticeable improvements in flexibility, range of motion, and recovery within 1-2 weeks”.
+- [Sidekick](https://apps.apple.com/us/app/id6759810159) (iPhone), [PhysioCare](https://apps.apple.com/us/app/id950989316) (iPhone) and [Fitivity Ankle Sprain Rehab](https://play.google.com/store/apps/details?id=com.fitivity.rehab_ankle) (Android, with ads) also cover sprains.
+
+Our [ankle strengthening exercises guide](https://walkito.site/ankle-strengthening-exercises/) has balance and strength exercises.
+
+Source: Martin RL, Davenport TE, Fraser JJ, et al. Ankle Stability and Movement Coordination Impairments: Lateral Ankle Ligament Sprains Revision 2021. Journal of Orthopaedic & Sports Physical Therapy. 2021;51(4):CPG1–CPG80.
+Source: Hupperets MD, Verhagen EA, van Mechelen W. Effect of unsupervised home based proprioceptive training on recurrences of ankle sprain: randomised controlled trial. BMJ. 2009;339:b2684.
+Source: Van Reijen M, Vriend I, Zuidema V, et al. Increasing compliance with neuromuscular training to prevent ankle sprain in sport: does the 'Strengthen your ankle' mobile App make a difference? A randomised controlled trial. British Journal of Sports Medicine. 2016;50(19):1200–5.
+Source: Van Reijen M, Vriend I, Zuidema V, et al. The "Strengthen your ankle" program to prevent recurrent injuries: A randomized controlled trial aimed at long-term effectiveness. Journal of Science and Medicine in Sport. 2017;20(6):549–554.
+Source: Mailuhu AK, Verhagen EA, van Ochten J, et al. E-health intervention for preventing recurrent ankle sprains: a randomised controlled trial in general practice. British Journal of General Practice. 2024;74(738):e56–e62.
+
+### Apps for bunions
+
+Exercise may ease bunion pain, but there is no reliable evidence that exercise straightens the toe. The [NHS](https://www.nhs.uk/conditions/bunions/) says a GP may refer you for surgery if bunions are very painful or having a big effect on your life, and that surgery is not done just to improve how feet look.
+
+- [Correct Toes](https://apps.apple.com/us/app/id6793699449) (iPhone). Free, from a foot and ankle clinic that also sells toe spacers. Names bunions, hammertoes, neuromas and metatarsalgia. No clinician named.
+- [Neatsy](https://apps.apple.com/us/app/id1483925852) (iPhone). A 3D foot scan that flags bunions; it says it “does not diagnose diseases or suggest treatment plans”.
+
+See our [bunion exercises guide](https://walkito.site/bunion-exercises/) for what the trials tested.
+
+Source: Hurn SE, Matthews BG, Munteanu SE, et al. Effectiveness of Nonsurgical Interventions for Hallux Valgus: A Systematic Review and Meta-Analysis. Arthritis Care & Research. 2022;74(10):1676–1688.
+Source: Dias CG, Godoy-Santos AL, Ferrari J, et al. Surgical interventions for treating hallux valgus and bunions. Cochrane Database of Systematic Reviews. 2024;7(7):CD013726.
+
+### Apps for ball of foot pain and Morton’s neuroma
+
+Here exercise is not the main tool. The [NHS](https://www.nhs.uk/symptoms/foot-pain/pain-in-the-ball-of-the-foot/) advises shoes with plenty of room, a low heel and a soft sole, and soft insoles or pads. In a small study, a metatarsal pad lowered pressure under the ball of the foot and improved pain scores. For Morton’s neuroma, first-line care is less of the activity that hurts, orthotics and injections.
+
+The only app we found that names ball of foot pain is [Correct Toes](https://apps.apple.com/us/app/id6793699449). An exercise-only app is missing the main part of care here. Our guides on [ball of foot pain](https://walkito.site/ball-of-foot-pain/) and [Morton’s neuroma](https://walkito.site/mortons-neuroma/) explain the options.
+
+Source: Kang JH, Chen MD, Chen SC, et al. Correlations between subjective treatment responses and plantar pressure parameters of metatarsal pad treatment in metatarsalgia patients: a prospective study. BMC Musculoskeletal Disorders. 2006;7:95.
+Source: Cooper MT. Common Painful Foot and Ankle Conditions: A Review. JAMA. 2023;330(23):2285–2294.
+
+### Apps for general foot pain
+
+There is no single exercise program for “foot pain”, because the right care depends on the cause. On its ball of foot pain page, the [NHS](https://www.nhs.uk/symptoms/foot-pain/pain-in-the-ball-of-the-foot/) advises: “Do not try to diagnose the cause of pain yourself.” [How to Do Foot Exercises](https://play.google.com/store/apps/details?id=com.Fitness.Flexibility.Workout.How.to.Do.Foot.Exercises) (Android, with ads) offers general foot exercises, and Arch covers general foot strengthening.
+
+Our [foot pain identifier](https://walkito.site/foot-pain-identifier/) can help you narrow down where your pain fits before you pick an app.
+
+Source: Cooper MT. Common Painful Foot and Ankle Conditions: A Review. JAMA. 2023;330(23):2285–2294.
+
+### All 16 foot pain apps we checked
+
+“Pain promise” means the listing promises to end pain or gives a quick timeline; “in the name” means only the app’s name does (ArchFix, Run Pain-Free). None of the 16 had a published trial when we searched PubMed.
+
+### How do you choose a foot pain app?
+
+- It names your problem and gives the exercises the research supports for it (see the table above).
+- It names who made it, ideally a licensed clinician such as a physical therapist.
+- It makes the exercises harder over time and lets you go easier on a bad day.
+- It tells you when to stop and see a clinician. Only 1 of 16 spelled out warning signs in its listing.
+- It does not promise to end pain or give a quick timeline.
+- It tells you what it costs before you start.
+
+### How we checked these apps
+
+On October 11, 2026 we searched the US App Store and Google Play with 2 or 3 terms for each problem, such as “flat feet exercises”, “achilles rehab” and “ankle sprain rehab”. We included an app if its listing named the foot problem and offered exercises. We left out shoe and insole stores, foot scanners without exercises, step trackers, single-clinic portals, general fitness apps, apps only available through an employer or health plan, and apps not updated since 2023.
+
+Every fact comes from the store listing or the developer’s website, not from using the apps, and a second reviewer re-checked each listing. We also searched PubMed for each app’s name. Plantar fasciitis apps are covered in our [heel pain app study](https://walkito.site/heel-pain-apps-study/).
+
+### Where Walkito fits
+
+Walkito is our app, so it is not counted above. Its listing names plantar fasciitis, flat feet, Achilles pain in runners and general foot pain, and it says to see a clinician first if pain came from an injury or comes with swelling, numbness or night pain. Like the others, it has no published trial and names no clinician as its creator. Its listing does not name ankle sprains, bunions or ball of foot pain.
+
+### See a clinician first if
+
+- your foot pain followed an injury, a fall or a pop or snap
+- you cannot put weight on the foot
+- the foot is swollen, red or hot
+- you have numbness, tingling or burning
+- it has not improved after about two weeks of home care
+- you have diabetes or reduced feeling in your feet
+
+### If your problem is heel pain or flat feet
+
+[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and foot and ankle strength work that gets harder over time, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+
+#### Is there a free app for foot pain exercises?
+
+Yes. Of the apps we checked, ArchFix (flat feet) showed nothing to buy, Correct Toes (bunions, ball of foot) is free with no subscription though it sells toe spacers in the app, and Sports Injury Rehabilitation gives the first phase of each program free. How to Do Foot Exercises is free with ads.
+
+#### Can exercise change flat feet?
+
+It can ease pain, but it did not realign the foot in a review of 10 trials, and a 2024 review of the short foot exercise found no clear overall change in arch height, except in programs longer than 6 weeks. In the first review, exercise, alone or with insoles, did better for pain than insoles alone.
+
+#### What is the best app for ankle sprain rehab?
+
+No app has been shown to beat a printed program. The 2021 guideline grades structured exercise and balance training A. An app version of a proven program did as well as a booklet, so pick the format you will stick with.
+
+#### Are foot pain apps safe?
+
+An app cannot diagnose you. See a clinician if pain followed an injury, comes with swelling, numbness or tingling, or has not improved after about two weeks of home care.
 
 ## Walkito vs Exakt Health: which one fits you?
 

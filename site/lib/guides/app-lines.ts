@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  footApps: {
+    en: 'Heel pain or flat feet? Walkito gives you stretching and foot strength work in 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
+    es: '¿Dolor de talón o pie plano? Walkito te da estiramientos y fuerza del pie en sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
+    ru: 'Боль в пятке или плоскостопие? Walkito даёт растяжки и силовые упражнения для стопы в занятиях на 3, 5 или 10 минут, которые подстраиваются под то, как стопы чувствовали себя утром.',
+  },
   ytVsApp: {
     en: 'Want a set plan instead of picking videos? Walkito gives you stretching and strength work in 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
     es: '¿Prefieres un plan fijo en vez de elegir videos? Walkito te da estiramientos y fuerza en sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',

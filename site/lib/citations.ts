@@ -1203,6 +1203,56 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1136/bjsports-2016-096458',
     pmid: '28087567',
   },
+  {
+    text: 'Martin RL, Davenport TE, Fraser JJ, et al. Ankle Stability and Movement Coordination Impairments: Lateral Ankle Ligament Sprains Revision 2021. Journal of Orthopaedic & Sports Physical Therapy. 2021;51(4):CPG1–CPG80.',
+    doi: '10.2519/jospt.2021.0302',
+    pmid: '33789434',
+  },
+  {
+    text: 'Van Reijen M, Vriend I, Zuidema V, et al. Increasing compliance with neuromuscular training to prevent ankle sprain in sport: does the \'Strengthen your ankle\' mobile App make a difference? A randomised controlled trial. British Journal of Sports Medicine. 2016;50(19):1200–5.',
+    doi: '10.1136/bjsports-2015-095290',
+    pmid: '26781292',
+  },
+  {
+    text: 'Van Reijen M, Vriend I, Zuidema V, et al. The "Strengthen your ankle" program to prevent recurrent injuries: A randomized controlled trial aimed at long-term effectiveness. Journal of Science and Medicine in Sport. 2017;20(6):549–554.',
+    doi: '10.1016/j.jsams.2016.12.001',
+    pmid: '27988093',
+  },
+  {
+    text: 'Mailuhu AK, Verhagen EA, van Ochten J, et al. E-health intervention for preventing recurrent ankle sprains: a randomised controlled trial in general practice. British Journal of General Practice. 2024;74(738):e56–e62.',
+    doi: '10.3399/BJGP.2022.0465',
+    pmid: '38154933',
+  },
+  {
+    text: 'Hoang NT, Chen S, Chou LW. The Impact of Foot Orthoses and Exercises on Pain and Navicular Drop for Adult Flatfoot: A Network Meta-Analysis. International Journal of Environmental Research and Public Health. 2021;18(15).',
+    doi: '10.3390/ijerph18158063',
+    pmid: '34360354',
+  },
+  {
+    text: 'Hurn SE, Matthews BG, Munteanu SE, et al. Effectiveness of Nonsurgical Interventions for Hallux Valgus: A Systematic Review and Meta-Analysis. Arthritis Care & Research. 2022;74(10):1676–1688.',
+    doi: '10.1002/acr.24603',
+    pmid: '33768721',
+  },
+  {
+    text: 'Dias CG, Godoy-Santos AL, Ferrari J, et al. Surgical interventions for treating hallux valgus and bunions. Cochrane Database of Systematic Reviews. 2024;7(7):CD013726.',
+    doi: '10.1002/14651858.CD013726.pub2',
+    pmid: '39051477',
+  },
+  {
+    text: 'Cooper MT. Common Painful Foot and Ankle Conditions: A Review. JAMA. 2023;330(23):2285–2294.',
+    doi: '10.1001/jama.2023.23906',
+    pmid: '38112812',
+  },
+  {
+    text: 'Kang JH, Chen MD, Chen SC, et al. Correlations between subjective treatment responses and plantar pressure parameters of metatarsal pad treatment in metatarsalgia patients: a prospective study. BMC Musculoskeletal Disorders. 2006;7:95.',
+    doi: '10.1186/1471-2474-7-95',
+    pmid: '17147793',
+  },
+  {
+    text: 'Janssen T, van Berkel S, Edens M, et al. Effectiveness of eccentric calf muscle exercise therapy in patients with chronic midportion Achilles tendinopathy: a randomized controlled trial. Journal of Science and Medicine in Sport. 2026. Online ahead of print.',
+    doi: '10.1016/j.jsams.2026.07.012',
+    pmid: '42575766',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1446,6 +1496,16 @@ export const CITE = {
   rielHeelRaiseAdd: 236,
   jordanAdherenceCochrane: 237,
   nicolsonAdherence: 238,
+  ankleSprainGuideline: 239,
+  vanReijenApp2016: 240,
+  vanReijenApp2017: 241,
+  mailuhuEhealth: 242,
+  hoangFlatfootNMA: 243,
+  hurnBunionReview: 244,
+  diasBunionSurgery: 245,
+  cooperFootPainJAMA: 246,
+  kangMetatarsalPad: 247,
+  janssenHomeEccentric: 248,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

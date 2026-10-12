@@ -422,6 +422,7 @@ export const EN_ONLY = {
   appVsPt: '/app-vs-physical-therapy-plantar-fasciitis/',
   pfCost: '/plantar-fasciitis-treatment-cost/',
   ytVsApp: '/youtube-vs-app-plantar-fasciitis/',
+  footApps: '/best-apps-for-foot-pain/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -549,6 +550,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   appVsPt: '/es/app-vs-fisioterapia-fascitis-plantar/',
   pfCost: '/es/costo-tratamiento-fascitis-plantar/',
   ytVsApp: '/es/youtube-vs-app-fascitis-plantar/',
+  footApps: '/es/mejores-apps-dolor-de-pie/',
 };
 
 /**
@@ -624,6 +626,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   appVsPt: '/ru/prilozhenie-ili-fizioterapiya-plantarnyy-fastsiit/',
   pfCost: '/ru/stoimost-lecheniya-plantarnogo-fastsiita/',
   ytVsApp: '/ru/youtube-ili-prilozhenie-plantarnyy-fastsiit/',
+  footApps: '/ru/luchshie-prilozheniya-pri-boli-v-stope/',
 };
 
 /**

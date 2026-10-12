@@ -174,7 +174,7 @@ export const YT_VS_APP_EN: Guide = {
   },
   program: {
     h2: 'If you want a set plan',
-    text: '[Walkito](/program/) combines stretching with strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.',
+    text: '[Walkito](/program/) gives you the plantar fascia stretch, calf stretches with the knee straight and bent, and strength work that gets harder over time, such as the towel heel raise later in the plan, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.',
     more: [
       'Each morning a one-tap check-in makes a bad day lighter, and a short test every 14 days, then every 28 after your first goal, shows whether your calves, arch and balance are changing.',
     ],
