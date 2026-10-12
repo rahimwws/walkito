@@ -1253,6 +1253,26 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1016/j.jsams.2026.07.012',
     pmid: '42575766',
   },
+  {
+    text: 'Cui D, Janela D, Costa F, et al. Randomized-controlled trial assessing a digital care program versus conventional physiotherapy for chronic low back pain. npj Digital Medicine. 2023;6(1):121.',
+    doi: '10.1038/s41746-023-00870-3',
+    pmid: '37420107',
+  },
+  {
+    text: 'Toelle TR, Utpadel-Fischler DA, Haas KK, et al. App-based multidisciplinary back pain treatment versus combined physiotherapy plus online education: a randomized controlled trial. npj Digital Medicine. 2019;2:34.',
+    doi: '10.1038/s41746-019-0109-x',
+    pmid: '31304380',
+  },
+  {
+    text: 'Napoleone JM, Devaraj SM, Noble M, et al. Health Care Cost Savings and Utilization Reductions Associated With Virtual Physical Therapy Care: A Propensity-Matched Claims Analysis. Physical Therapy. 2025;105(8).',
+    doi: '10.1093/ptj/pzaf084',
+    pmid: '40600643',
+  },
+  {
+    text: 'O\'Connor MI, Dorak Ribaudo M, Peters KC, et al. Clinical Efficacy of Telemedicine for Musculoskeletal Conditions in a Medicare Advantage Population. Telemedicine Reports. 2025;6(1):162–170.',
+    doi: '10.1089/tmr.2025.0017',
+    pmid: '40630808',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1506,6 +1526,10 @@ export const CITE = {
   cooperFootPainJAMA: 246,
   kangMetatarsalPad: 247,
   janssenHomeEccentric: 248,
+  cuiSwordRCT: 249,
+  toelleKaiaRCT: 250,
+  napoleoneOmadaClaims: 251,
+  oconnorVori: 252,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

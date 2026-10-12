@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  hingeAlt: {
+    en: 'No employer plan? Walkito is a foot exercise app you can download yourself, with 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
+    es: '¿Sin plan de tu empresa? Walkito es una app de ejercicios para los pies que puedes descargar tú mismo, con sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
+    ru: 'Нет программы от работодателя? Walkito: приложение с упражнениями для стоп, которое можно скачать самому, с занятиями на 3, 5 или 10 минут, которые подстраиваются под то, как стопы чувствовали себя утром.',
+  },
   footApps: {
     en: 'Heel pain or flat feet? Walkito gives you stretching and foot strength work in 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
     es: '¿Dolor de talón o pie plano? Walkito te da estiramientos y fuerza del pie en sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
