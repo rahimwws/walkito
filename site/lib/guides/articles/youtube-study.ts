@@ -124,7 +124,7 @@ export const YT_STUDY_EN: Guide = {
             'When to stop: pain that gets worse, numbness, swelling or night pain means a clinician, not more stretching.',
           ],
         },
-        'Be careful with titles that promise an instant or permanent result. The full routine with doses is in our guide to [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'Be careful with titles that promise an instant or permanent result. The full routine with doses is in our guide to [plantar fasciitis exercises](/plantar-fasciitis-exercises/). We ran the same check on what ChatGPT, Google and Perplexity say in our [AI answers study](/plantar-fasciitis-ai-answers-study/).',
       ],
       cites: [CITE.guideline],
     },
