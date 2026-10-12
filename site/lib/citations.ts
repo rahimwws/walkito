@@ -1273,6 +1273,46 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1089/tmr.2025.0017',
     pmid: '40630808',
   },
+  {
+    text: 'Pfeffer G, Bacchetti P, Deland J, et al. Comparison of custom and prefabricated orthoses in the initial treatment of proximal plantar fasciitis. Foot & Ankle International. 1999;20(4):214–21.',
+    doi: '10.1177/107110079902000402',
+    pmid: '10229276',
+  },
+  {
+    text: 'Baldassin V, Gomes CR, Beraldo PS. Effectiveness of prefabricated and customized foot orthoses made from low-cost foam for noncomplicated plantar fasciitis: a randomized controlled trial. Archives of Physical Medicine and Rehabilitation. 2009;90(4):701–6.',
+    doi: '10.1016/j.apmr.2008.11.002',
+    pmid: '19345789',
+  },
+  {
+    text: 'Ring K, Otter S. Clinical efficacy and cost-effectiveness of bespoke and prefabricated foot orthoses for plantar heel pain: a prospective cohort study. Musculoskeletal Care. 2014;12(1):1–10.',
+    doi: '10.1002/msc.1053',
+    pmid: '23801649',
+  },
+  {
+    text: 'Bonanno DR, Landorf KB, Menz HB. Pressure-relieving properties of various shoe inserts in older people with plantar heel pain. Gait & Posture. 2011;33(3):385–9.',
+    doi: '10.1016/j.gaitpost.2010.12.009',
+    pmid: '21256025',
+  },
+  {
+    text: 'Walther M, Kratschmer B, Verschl J, et al. Effect of different orthotic concepts as first line treatment of plantar fasciitis. Foot and Ankle Surgery. 2013;19(2):103–7.',
+    doi: '10.1016/j.fas.2012.12.008',
+    pmid: '23548451',
+  },
+  {
+    text: 'Whittaker GA, Munteanu SE, Menz HB, et al. Effectiveness of Foot Orthoses Versus Corticosteroid Injection for Plantar Heel Pain: The SOOTHE Randomized Clinical Trial. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(7):491–500.',
+    doi: '10.2519/jospt.2019.8807',
+    pmid: '31130060',
+  },
+  {
+    text: 'Rasenberg N, Riel H, Rathleff MS, et al. Efficacy of foot orthoses for the treatment of plantar heel pain: a systematic review and meta-analysis. British Journal of Sports Medicine. 2018;52(16):1040–1046.',
+    doi: '10.1136/bjsports-2017-097892',
+    pmid: '29555795',
+  },
+  {
+    text: 'Winemiller MH, Billow RG, Laskowski ER, et al. Effect of magnetic vs sham-magnetic insoles on plantar heel pain: a randomized controlled trial. JAMA. 2003;290(11):1474–8.',
+    doi: '10.1001/jama.290.11.1474',
+    pmid: '13129987',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1530,6 +1570,14 @@ export const CITE = {
   toelleKaiaRCT: 250,
   napoleoneOmadaClaims: 251,
   oconnorVori: 252,
+  pfefferHeelPads: 253,
+  baldassinFoam: 254,
+  ringPowerstep: 255,
+  bonannoInserts: 256,
+  waltherInsoles: 257,
+  whittakerSoothe: 258,
+  rasenbergReview2018: 259,
+  winemillerMagnets: 260,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

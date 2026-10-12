@@ -424,6 +424,7 @@ export const EN_ONLY = {
   ytVsApp: '/youtube-vs-app-plantar-fasciitis/',
   footApps: '/best-apps-for-foot-pain/',
   hingeAlt: '/hinge-health-alternatives/',
+  bestInsoles: '/best-insoles-for-plantar-fasciitis/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -553,6 +554,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   ytVsApp: '/es/youtube-vs-app-fascitis-plantar/',
   footApps: '/es/mejores-apps-dolor-de-pie/',
   hingeAlt: '/es/alternativas-a-hinge-health/',
+  bestInsoles: '/es/mejores-plantillas-fascitis-plantar/',
 };
 
 /**
@@ -630,6 +632,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   ytVsApp: '/ru/youtube-ili-prilozhenie-plantarnyy-fastsiit/',
   footApps: '/ru/luchshie-prilozheniya-pri-boli-v-stope/',
   hingeAlt: '/ru/alternativy-hinge-health/',
+  bestInsoles: '/ru/luchshie-stelki-pri-plantarnom-fastsiite/',
 };
 
 /**
