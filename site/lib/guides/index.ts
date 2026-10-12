@@ -225,3 +225,12 @@ export function guideMetadata(guide: Guide): Metadata {
   };
 }
 
+
+/** A guide by its page key, in one language (main guides first, then articles). */
+export function guideFor(page: string, lang: Lang): Guide | undefined {
+  const main = (GUIDES as Record<string, Partial<Record<Lang, Guide>>>)[page]?.[lang];
+  if (main) return main;
+  const articles =
+    lang === 'en' ? ARTICLES_EN : lang === 'es' ? ARTICLES_ES : lang === 'ru' ? ARTICLES_RU : ARTICLES_NEW[lang as NewLang];
+  return (articles as unknown as Record<string, Guide | undefined>)[page];
+}

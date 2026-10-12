@@ -102,15 +102,17 @@ export const IN_SESSION_STOP = 6;
  * Guides keep their own date in their data (`lib/guides/*.ts`).
  */
 export const PAGE_UPDATED = {
-  home: '2026-10-08',
+  home: '2026-10-11',
   runners: '2026-10-03',
   program: '2026-09-28',
   science: '2026-09-28',
-  faq: '2026-10-01',
-  about: '2026-10-03',
+  faq: '2026-10-11',
+  about: '2026-10-12',
   support: '2026-10-01',
   privacy: '2026-10-09',
   terms: '2026-10-01',
+  footMap: '2026-10-12',
+  printables: '2026-10-12',
 } as const;
 
 /** The App Store listing, live since 1.0.1 passed review (2 October 2026).

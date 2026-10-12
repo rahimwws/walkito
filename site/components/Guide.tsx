@@ -9,6 +9,8 @@ import { EmailSignup } from '@/components/EmailSignup';
 import { printableForGuide } from '@/lib/printables';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
+import { CiteBox } from '@/components/CiteBox';
+import { WriterImage, writerImageFor } from '@/components/WriterImage';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
@@ -175,6 +177,9 @@ function Table({ table }: { table: GuideTable }) {
  * Exercises are an ordered list with the dose set apart from the instruction,
  * because the dose is what a reader comes back to check mid-set.
  */
+/** Pages writers are pitched to link (outreach): each carries a ready citation. */
+const CITE_BOX_PAGES: readonly string[] = ['calfRaiseTest', 'pfDuration', 'nurses'];
+
 export function Guide({ guide }: { guide: GuideData }) {
   const c = CHROME[guide.lang];
   const url = `${SITE_URL}${guidePath(guide)}`;
@@ -428,6 +433,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                 <AppStoreBadge campaign="tool-pf-timeline" lang={guide.lang} />
               </PfTimeline>
             )}
+            {writerImageFor(guide.lang, section.tool) && <WriterImage id={writerImageFor(guide.lang, section.tool)!} />}
           </section>
           {si === midAfter && (
             <AppCallout campaign={`${guide.campaign}-mid`} lang={guide.lang} lead={appLine(guide)} />
@@ -470,7 +476,7 @@ export function Guide({ guide }: { guide: GuideData }) {
         <UpdatedLine lang={guide.lang} updated={guide.updated} />
         {/* The calf raise test is the page others are most likely to quote
             (its norms by age): a ready citation makes linking to it easy. */}
-        {guide.page === 'calfRaiseTest' && <CiteBox lang={guide.lang} title={guide.title} updated={guide.updated} url={url} />}
+        {CITE_BOX_PAGES.includes(guide.page) && <CiteBox lang={guide.lang} title={guide.title} updated={guide.updated} url={url} />}
         <p className="notice">{c.notice}</p>
 
         {guide.program.cta && <p className="cta-line">{guide.program.cta}</p>}
@@ -495,27 +501,5 @@ export function Guide({ guide }: { guide: GuideData }) {
         languages={languagesOf(guide)}
       />
     </>
-  );
-}
-
-const CITE: Record<Lang, { label: string; free: string; open: string; close: string; locale: string }> = {
-  en: { label: 'Cite this page', free: 'Free to share with a link to this page.', open: '“', close: '”', locale: 'en-US' },
-  es: { label: 'Cita esta página', free: 'Puedes compartirla libremente con un enlace a esta página.', open: '«', close: '»', locale: 'es' },
-  ru: { label: 'Как сослаться на эту страницу', free: 'Можно свободно использовать со ссылкой на эту страницу.', open: '«', close: '»', locale: 'ru' },
-  pt: { label: 'Cite esta página', free: 'Uso livre com um link para esta página.', open: '“', close: '”', locale: 'pt-BR' },
-  fr: { label: 'Citer cette page', free: 'Libre de partage avec un lien vers cette page.', open: '«\u00A0', close: '\u00A0»', locale: 'fr' },
-  it: { label: 'Cita questa pagina', free: 'Uso libero con un link a questa pagina.', open: '“', close: '”', locale: 'it' },
-  de: { label: 'Diese Seite zitieren', free: 'Frei teilbar mit einem Link auf diese Seite.', open: '„', close: '“', locale: 'de' },
-};
-
-/** A ready-made citation (plan A.12): author, title, date, link. */
-function CiteBox({ lang, title, updated, url }: { lang: Lang; title: string; updated: string; url: string }) {
-  const t = CITE[lang];
-  // No trailing period of its own ("7 октября 2026 г."): the sentence adds one.
-  const date = new Date(`${updated}T00:00:00Z`).toLocaleDateString(t.locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).replace(/\.$/, '');
-  return (
-    <p className="printable-box cite-box">
-      <strong>{t.label}:</strong> Walkito. {t.open}{title}{t.close}. {date}. <a href={url}>{url}</a>. {t.free}
-    </p>
   );
 }

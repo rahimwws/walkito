@@ -213,6 +213,8 @@ body {
 
 .store {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
   margin-top: 36px;
   scroll-margin-top: 100px;
@@ -1657,7 +1659,7 @@ figcaption {
 
 /* Google Play beside the App Store badge, once Android is live. */
 .store .store-play {
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 /* ------------------------------------------------------- hero (glass) -- */

@@ -9,6 +9,19 @@ import { typeset } from '@/components/Prose';
  *
  * `contact` is split around the address so the address can be a link.
  */
+/** Where an editor can check who we are (the same profiles as the site's sameAs). */
+const LINKEDIN = { rahman: 'https://www.linkedin.com/in/rahman-bazarov/', rahim: 'https://www.linkedin.com/in/rhdklv/' } as const;
+
+const PEOPLE: Record<Lang, [string, string, string]> = {
+  en: ['Find us on LinkedIn: ', ' and ', '.'],
+  ru: ['Мы в LinkedIn: ', ' и ', '.'],
+  es: ['Estamos en LinkedIn: ', ' y ', '.'],
+  pt: ['Estamos no LinkedIn: ', ' e ', '.'],
+  fr: ['Retrouvez-nous sur LinkedIn\u00A0: ', ' et ', '.'],
+  it: ['Ci trovi su LinkedIn: ', ' e ', '.'],
+  de: ['Du findest uns auf LinkedIn: ', ' und ', '.'],
+};
+
 const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [string, string] }> = {
   en: {
     h2: 'Made by Rahman and Rahim',
@@ -94,6 +107,17 @@ export function Founders({ lang }: { lang: Lang }) {
         {copy.contact[0]}
         <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
         {copy.contact[1]}
+      </p>
+      <p className="story-people">
+        {PEOPLE[lang][0]}
+        <a href={LINKEDIN.rahman} rel="noopener" target="_blank">
+          Rahman Bazarov
+        </a>
+        {PEOPLE[lang][1]}
+        <a href={LINKEDIN.rahim} rel="noopener" target="_blank">
+          Rahim Hudaykylyyev
+        </a>
+        {PEOPLE[lang][2]}
       </p>
       <SocialLinks lang={lang} />
     </>,
