@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  appStudy: {
+    en: 'Walkito is one of the 20 apps in this study: a 3, 5 or 10 minute daily plan with the plantar fascia stretch, both calf stretches and strengthening.',
+    es: 'Walkito es una de las 20 apps de este estudio: un plan diario de 3, 5 o 10 minutos con el estiramiento de la fascia plantar, los dos de pantorrilla y fuerza.',
+    ru: 'Walkito: одно из 20 приложений в этом исследовании, ежедневный план на 3, 5 или 10 минут с растяжкой подошвенной фасции, обеими растяжками икр и силовыми упражнениями.',
+  },
   aiStudy: {
     en: 'Walkito adds the part most AI answers skip: a heel raise that gets harder over time, next to the stretches, in one 3, 5 or 10 minute daily plan.',
     es: 'Walkito suma la parte que casi todas las respuestas de IA omiten: una elevación de talón que se vuelve más difícil, junto a los estiramientos, en un plan diario de 3, 5 o 10 minutos.',

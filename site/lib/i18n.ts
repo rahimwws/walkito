@@ -417,6 +417,7 @@ export const EN_ONLY = {
   vsExakt: '/walkito-vs-exakt-health/',
   ytStudy: '/plantar-fasciitis-youtube-study/',
   aiStudy: '/plantar-fasciitis-ai-answers-study/',
+  appStudy: '/heel-pain-apps-study/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -539,6 +540,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   barefoot: '/es/zapatos-barefoot/',
   ytStudy: '/es/estudio-videos-youtube-fascitis-plantar/',
   aiStudy: '/es/estudio-respuestas-ia-fascitis-plantar/',
+  appStudy: '/es/estudio-apps-dolor-de-talon/',
 };
 
 /**
@@ -609,6 +611,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   barefoot: '/ru/bosonogaya-obuv/',
   ytStudy: '/ru/issledovanie-video-youtube-plantarnyy-fastsiit/',
   aiStudy: '/ru/issledovanie-otvetov-ii-plantarnyy-fastsiit/',
+  appStudy: '/ru/issledovanie-prilozheniy-bol-v-pyatke/',
 };
 
 /**

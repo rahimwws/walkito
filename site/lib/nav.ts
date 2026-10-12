@@ -31,6 +31,7 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   bestApp: 'Best app for plantar fasciitis',
   ytStudy: 'YouTube video study',
   aiStudy: 'AI answers study',
+  appStudy: 'Heel pain apps study',
   vsExakt: 'Walkito vs Exakt Health',
   pfVsHeelSpur: 'Plantar fasciitis vs heel spur',
   heelSpurExercises: 'Heel spur exercises',
@@ -203,7 +204,7 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
   work: ['standing', 'nurses', 'standingDesk'],
-  compare: ['bestApp', 'vsExakt', 'ytStudy', 'aiStudy'],
+  compare: ['bestApp', 'vsExakt', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
     'exTowelHeelRaise', 'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance',

@@ -20,6 +20,7 @@ import { BALL_OF_FOOT_EN } from './articles/ball-of-foot';
 import { BEST_APP_EN } from './articles/best-app';
 import { YT_STUDY_EN } from './articles/youtube-study';
 import { AI_STUDY_EN } from './articles/ai-study';
+import { APP_STUDY_EN } from './articles/app-study';
 import { MORNING_HEEL_PAIN_EN } from './articles/morning-heel-pain';
 import { NURSES_EN } from './articles/nurses';
 import { PF_DURATION_EN } from './articles/pf-duration';
@@ -82,6 +83,7 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   bestApp: BEST_APP_EN,
   ytStudy: YT_STUDY_EN,
   aiStudy: AI_STUDY_EN,
+  appStudy: APP_STUDY_EN,
   vsExakt: VS_EXAKT_EN,
   exPlantarFasciaStretch: EX_PLANTAR_FASCIA_STRETCH,
   exCalfStretch: EX_CALF_STRETCH,
