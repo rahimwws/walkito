@@ -262,6 +262,15 @@ Sources:
 - MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass as a potential treatment for plantar fasciitis: a prospective case series. International Journal of Environmental Research and Public Health. 2022;19(23):15466.
 - Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
 - Bus SA, Sacco ICN, Monteiro-Soares M, et al. Guidelines on the prevention of foot ulcers in persons with diabetes (IWGDF 2023 update). Diabetes/Metabolism Research and Reviews. 2024;40(3):e3651.
+- Kaiser PB, Keyser C, Crawford AM, et al. A prospective randomized controlled trial comparing physical therapy with independent home stretching for plantar fasciitis. Journal of the American Academy of Orthopaedic Surgeons. 2022;30(14):682–689.
+- Çil ET, Şaylı U, Subaşı F. Outpatient vs home management protocol results for plantar fasciitis. Foot & Ankle International. 2019;40(11):1295–1303.
+- McClinton SM, Heiderscheit BC, McPoil TG, et al. Effectiveness of physical therapy treatment in addition to usual podiatry management of plantar heel pain: a randomized clinical trial. BMC Musculoskeletal Disorders. 2019;20(1):630.
+- Xu W, Yao L, Wang H, et al. Home-based digital exercise versus hospital physiotherapy for plantar fasciitis: a propensity-score-matched retrospective cohort study with dual-perspective cost-utility evaluation. Journal of Rehabilitation Medicine. 2026;58:jrm45974.
+- Li Z, He S, Wu J, et al. Efficacy of physical therapy interventions delivered with home exercise programs for pain and function in plantar fasciitis: a systematic review and network meta-analysis of randomized controlled trials. Physical Therapy. 2026;106(6):pzag056.
+- Molina-Garcia P, Mora-Traverso M, Prieto-Moreno R, et al. Effectiveness and cost-effectiveness of telerehabilitation for musculoskeletal disorders: a systematic review and meta-analysis. Annals of Physical and Rehabilitation Medicine. 2024;67(1):101791.
+- Lambert TE, Harvey LA, Avdalis C, et al. An app with remote support achieves better adherence to home exercise programs than paper handouts in people with musculoskeletal conditions: a randomised trial. Journal of Physiotherapy. 2017;63(3):161–167.
+- Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.
+- Kosehasanogullari M, Büyükvural Şen S, Okur Yılmaz N, et al. Home exercise with or without high-intensity laser or radial shockwave therapy for plantar fasciitis: a randomized controlled trial. Foot & Ankle International. 2026;47(3):386–397.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -2632,6 +2641,115 @@ No. Walkito is a weekly or yearly subscription you pay through the App Store or 
 #### Can I use Walkito and Hinge Health together?
 
 You can, but if you have a Hinge Health physical therapist, follow their plan first and tell them about anything else you do, so your heel is not loaded twice in one day.
+
+## Is an exercise app as good as physical therapy for plantar fasciitis?
+
+Language: English · https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/ · published 2026-10-12 · updated 2026-10-12
+
+Nobody knows yet: we found no trial comparing an exercise app with physical therapy for plantar fasciitis. What the trials do show is that home exercise did about as well as physical therapy in one trial and worse than supervised clinic care in another, and that hands-on treatment added to home exercise helps short-term pain. A sensible middle path is a clinician visit to confirm the diagnosis, then the home exercises, with or without an app.
+
+- We found no randomized trial comparing an exercise app with physical therapy for plantar fasciitis. The only study comparing a digital program with physiotherapy was observational, and its authors call the results provisional.
+- Home exercise vs physical therapy is mixed: one 57-person trial found no difference over a year, while a 47-person trial found a supervised outpatient program did better.
+- Hands-on treatments added to home exercise, such as dry needling, manual therapy, laser and taping, improved short-term pain or function in a 2026 review of 24 trials.
+- A physical therapist can diagnose, rule out other causes and do hands-on care. An app can only guide the exercises, though the stretching and strengthening the 2023 guideline recommends are exercises you can do at home.
+- See a clinician if the pain is severe, keeps getting worse, has not improved after about two weeks of home care, or comes with numbness or tingling.
+
+### Exercise app vs physical therapy at a glance
+
+### What does the research say?
+
+We found no trial of an app against physical therapy for plantar fasciitis, so the closest evidence is home exercise against physical therapy:
+
+- **Home stretching did about as well.** In a randomized trial of 57 people, home stretching and formal physical therapy showed no notable differences in pain, function or quality of life at any point over a year.
+- **Supervised care did better.** In a randomized trial of 47 people, a supervised outpatient program beat a home program on pain and function at 8 weeks and 6 months.
+- **Adding physical therapy to podiatry care.** In a trial of 95 people, adding physical therapy made no difference on the main measure at 6 months, though some secondary measures favoured it.
+
+The only study of a digital program against hospital physiotherapy for plantar fasciitis followed 587 people in China. Home digital exercise was not worse for first-step pain at 3 months and cost less. But it was not randomized, only about 6% of screened patients were eligible, and its authors call the findings provisional until a randomized trial confirms them.
+
+Across muscle and joint problems in general, a review of 37 trials found remote rehabilitation helped compared with other controls, but the advantage disappeared when it was compared with face-to-face rehabilitation. It was cheaper per person.
+
+Source: Kaiser PB, Keyser C, Crawford AM, et al. A prospective randomized controlled trial comparing physical therapy with independent home stretching for plantar fasciitis. Journal of the American Academy of Orthopaedic Surgeons. 2022;30(14):682–689.
+Source: Çil ET, Şaylı U, Subaşı F. Outpatient vs home management protocol results for plantar fasciitis. Foot & Ankle International. 2019;40(11):1295–1303.
+Source: McClinton SM, Heiderscheit BC, McPoil TG, et al. Effectiveness of physical therapy treatment in addition to usual podiatry management of plantar heel pain: a randomized clinical trial. BMC Musculoskeletal Disorders. 2019;20(1):630.
+Source: Xu W, Yao L, Wang H, et al. Home-based digital exercise versus hospital physiotherapy for plantar fasciitis: a propensity-score-matched retrospective cohort study with dual-perspective cost-utility evaluation. Journal of Rehabilitation Medicine. 2026;58:jrm45974.
+Source: Molina-Garcia P, Mora-Traverso M, Prieto-Moreno R, et al. Effectiveness and cost-effectiveness of telerehabilitation for musculoskeletal disorders: a systematic review and meta-analysis. Annals of Physical and Rehabilitation Medicine. 2024;67(1):101791.
+
+### What does a physical therapist do that an app can’t?
+
+Three things an app cannot do:
+
+- **Diagnose.** Heel pain is not always plantar fasciitis. A stress fracture, a trapped nerve or an Achilles problem can feel similar and need different care.
+- **Hands-on treatment.** The 2023 guideline grades manual therapy and taping A, and dry needling and laser B. All need a clinician. In a 2026 review of 24 trials, adding dry needling, laser or manual therapy to home exercise improved short-term pain, and dry needling and taping improved short-term function.
+- **Watch you move.** A therapist can see how you walk, how far your ankle bends and whether you do an exercise right, and change the plan on the spot.
+
+Not every add-on helps: a separate 84-person trial found that adding high-intensity laser or shockwave to home exercise gave no extra benefit over three months.
+
+Source: Li Z, He S, Wu J, et al. Efficacy of physical therapy interventions delivered with home exercise programs for pain and function in plantar fasciitis: a systematic review and network meta-analysis of randomized controlled trials. Physical Therapy. 2026;106(6):pzag056.
+Source: Kosehasanogullari M, Büyükvural Şen S, Okur Yılmaz N, et al. Home exercise with or without high-intensity laser or radial shockwave therapy for plantar fasciitis: a randomized controlled trial. Foot & Ankle International. 2026;47(3):386–397.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What can an exercise app do well?
+
+The exercises themselves are the part of care you can do at home, and the 2023 guideline recommends them: stretching the plantar fascia and calf (grade A) and strengthening (grade B). A good app gives you those every week, with doses that grow over time.
+
+Apps may also help you keep going. In a 4-week trial of 80 people with muscle and joint problems, an app with remote support led to better home exercise adherence than paper handouts, though the authors call the clinical importance unclear. In a 2026 trial of 87 people with heel pain, an app-style home program and a paper handout gave similar first-step pain, with some other measures favouring the app.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Lambert TE, Harvey LA, Avdalis C, et al. An app with remote support achieves better adherence to home exercise programs than paper handouts in people with musculoskeletal conditions: a randomised trial. Journal of Physiotherapy. 2017;63(3):161–167.
+Source: Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.
+
+### Is physical therapy worth it for plantar fasciitis?
+
+It can be, especially at the start or when home exercise is not working. There is no standard number of visits for plantar fasciitis; in one of the trials above, the supervised group came twice a week for 8 weeks. Copays add up, so it is worth asking your insurance what it covers.
+
+If you cannot get or afford regular visits, a clinician visit to confirm the diagnosis and check your exercises, then a home program, is a reasonable middle path. Bring your questions and ask the therapist to watch you do each exercise once.
+
+Source: Çil ET, Şaylı U, Subaşı F. Outpatient vs home management protocol results for plantar fasciitis. Foot & Ankle International. 2019;40(11):1295–1303.
+
+### What should a good plantar fasciitis app include?
+
+If you go the home route with an app, check that it has:
+
+- A plantar fascia stretch and calf stretches with the knee straight and bent.
+- Strengthening that gets harder over the weeks, such as the [towel heel raise](https://walkito.site/exercises/towel-heel-raise/).
+- Clear doses, and a way to make a bad day lighter.
+- Advice on when to stop and see a clinician.
+- No promise to end the pain. In our [check of 20 heel pain apps](https://walkito.site/heel-pain-apps-study/), 9 of 19 promised to end the pain or claimed proven results.
+
+Our [buyer’s guide](https://walkito.site/best-app-for-plantar-fasciitis/) compares the main apps, and [Walkito vs Hinge Health](https://walkito.site/walkito-vs-hinge-health/) covers the option that includes a physical therapist.
+
+### When should you see a physical therapist or doctor?
+
+The [NHS advises](https://www.nhs.uk/conditions/plantar-fasciitis/) seeing a doctor if the pain is severe or stopping your normal activities, is getting worse or keeps coming back, has not improved after 2 weeks of home care, or comes with tingling or loss of feeling, and if you have diabetes. The red flags below add a few more reasons to get checked.
+
+### See a clinician first if
+
+- your heel pain followed an injury or a fall
+- the pain is severe or stops you doing normal activities
+- it has not improved after about two weeks of home care, or keeps getting worse
+- the pain comes with numbness, tingling, swelling, redness or warmth
+- pain wakes you at night or is there at rest
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### If you go the home route
+
+[Walkito](https://walkito.site/program/) covers the exercise part: the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It does not diagnose and has no hands-on care.
+
+#### Do I need physical therapy for plantar fasciitis?
+
+Not always. In one 57-person trial, home stretching did about as well as formal physical therapy over a year, but another trial found supervised clinic care better. A visit is worth it to confirm the diagnosis, and if home exercise is not helping.
+
+#### Can I do physical therapy for plantar fasciitis at home?
+
+You can do the exercise part at home: plantar fascia and calf stretches and strengthening, which the 2023 guideline recommends. Diagnosis and hands-on care such as manual therapy, taping or dry needling need a clinician.
+
+#### Is virtual physical therapy as good as in person?
+
+For muscle and joint problems in general, a review of 37 trials found no clear advantage for remote rehabilitation over face-to-face care, and it was cheaper. We found no randomized trial of virtual physical therapy for plantar fasciitis specifically.
+
+#### How many physical therapy sessions do you need for plantar fasciitis?
+
+There is no standard number. Trials vary; in one, the supervised group had sessions twice a week for 8 weeks. Your therapist will suggest a plan based on how you respond.
 
 ## Walkito vs Exakt Health: which one fits you?
 

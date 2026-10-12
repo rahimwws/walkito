@@ -1103,6 +1103,51 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1002/dmrr.3651',
     pmid: '37302121',
   },
+  {
+    text: "Kaiser PB, Keyser C, Crawford AM, et al. A prospective randomized controlled trial comparing physical therapy with independent home stretching for plantar fasciitis. Journal of the American Academy of Orthopaedic Surgeons. 2022;30(14):682–689.",
+    doi: '10.5435/JAAOS-D-21-00009',
+    pmid: '35797682',
+  },
+  {
+    text: "Çil ET, Şaylı U, Subaşı F. Outpatient vs home management protocol results for plantar fasciitis. Foot & Ankle International. 2019;40(11):1295–1303.",
+    doi: '10.1177/1071100719865302',
+    pmid: '31387381',
+  },
+  {
+    text: "McClinton SM, Heiderscheit BC, McPoil TG, et al. Effectiveness of physical therapy treatment in addition to usual podiatry management of plantar heel pain: a randomized clinical trial. BMC Musculoskeletal Disorders. 2019;20(1):630.",
+    doi: '10.1186/s12891-019-3009-y',
+    pmid: '31883516',
+  },
+  {
+    text: "Xu W, Yao L, Wang H, et al. Home-based digital exercise versus hospital physiotherapy for plantar fasciitis: a propensity-score-matched retrospective cohort study with dual-perspective cost-utility evaluation. Journal of Rehabilitation Medicine. 2026;58:jrm45974.",
+    doi: '10.2340/jrm.v58.45974',
+    pmid: '42683610',
+  },
+  {
+    text: "Li Z, He S, Wu J, et al. Efficacy of physical therapy interventions delivered with home exercise programs for pain and function in plantar fasciitis: a systematic review and network meta-analysis of randomized controlled trials. Physical Therapy. 2026;106(6):pzag056.",
+    doi: '10.1093/ptj/pzag056',
+    pmid: '42176209',
+  },
+  {
+    text: "Molina-Garcia P, Mora-Traverso M, Prieto-Moreno R, et al. Effectiveness and cost-effectiveness of telerehabilitation for musculoskeletal disorders: a systematic review and meta-analysis. Annals of Physical and Rehabilitation Medicine. 2024;67(1):101791.",
+    doi: '10.1016/j.rehab.2023.101791',
+    pmid: '38128150',
+  },
+  {
+    text: "Lambert TE, Harvey LA, Avdalis C, et al. An app with remote support achieves better adherence to home exercise programs than paper handouts in people with musculoskeletal conditions: a randomised trial. Journal of Physiotherapy. 2017;63(3):161–167.",
+    doi: '10.1016/j.jphys.2017.05.015',
+    pmid: '28662834',
+  },
+  {
+    text: "Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.",
+    doi: '10.1038/s41598-026-44709-9',
+    pmid: '41834015',
+  },
+  {
+    text: "Kosehasanogullari M, Büyükvural Şen S, Okur Yılmaz N, et al. Home exercise with or without high-intensity laser or radial shockwave therapy for plantar fasciitis: a randomized controlled trial. Foot & Ankle International. 2026;47(3):386–397.",
+    doi: '10.1177/10711007251408439',
+    pmid: '41664959',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1326,6 +1371,15 @@ export const CITE = {
   macgabhannGrass: 216,
   landorfFootwear: 217,
   busIWGDF: 218,
+  kaiserHomeStretch: 219,
+  cilOutpatient: 220,
+  mcclintonPodiatryPT: 221,
+  xuDigitalPT: 222,
+  liHomeAddons: 223,
+  molinaTelerehab: 224,
+  lambertAppAdherence: 225,
+  shimICT: 226,
+  kosehasanogullariLaserESWT: 227,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  appVsPt: {
+    en: 'Doing the exercise part at home? Walkito gives you the stretches and strengthening in 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
+    es: '¿Haces la parte de ejercicios en casa? Walkito te da los estiramientos y la fuerza en sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
+    ru: 'Делаете упражнения дома? Walkito даёт растяжки и силовые упражнения в занятиях на 3, 5 или 10 минут, которые подстраиваются под то, как стопы чувствовали себя утром.',
+  },
   vsHinge: {
     en: 'No Hinge Health through work? Walkito gives you 3, 5 or 10 minute sessions for heel and foot pain that adjust to how your feet felt this morning.',
     es: '¿No tienes Hinge Health por tu trabajo? Walkito es un plan diario de 3, 5 o 10 minutos para el dolor de talón y de pie que se ajusta a cómo amanecieron tus pies.',
