@@ -418,6 +418,7 @@ export const EN_ONLY = {
   ytStudy: '/plantar-fasciitis-youtube-study/',
   aiStudy: '/plantar-fasciitis-ai-answers-study/',
   appStudy: '/heel-pain-apps-study/',
+  vsHinge: '/walkito-vs-hinge-health/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -541,6 +542,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   ytStudy: '/es/estudio-videos-youtube-fascitis-plantar/',
   aiStudy: '/es/estudio-respuestas-ia-fascitis-plantar/',
   appStudy: '/es/estudio-apps-dolor-de-talon/',
+  vsHinge: '/es/walkito-vs-hinge-health/',
 };
 
 /**
@@ -612,6 +614,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   ytStudy: '/ru/issledovanie-video-youtube-plantarnyy-fastsiit/',
   aiStudy: '/ru/issledovanie-otvetov-ii-plantarnyy-fastsiit/',
   appStudy: '/ru/issledovanie-prilozheniy-bol-v-pyatke/',
+  vsHinge: '/ru/walkito-vs-hinge-health/',
 };
 
 /**

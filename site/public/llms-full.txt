@@ -2180,7 +2180,7 @@ Hinge Health is free to members whose employer or health plan covers it. You can
 
 #### Why does Walkito not call itself the best app for plantar fasciitis?
 
-Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like Hinge Health. What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.
+Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like [Hinge Health](https://walkito.site/walkito-vs-hinge-health/). What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.
 
 #### Do any of these apps work on Android?
 
@@ -2533,6 +2533,105 @@ Because we make it. We scored it with the same checklist so you can compare, but
 #### Can I use this data?
 
 Yes. The data file is free to download and reuse. Please cite it as: Walkito, 20 heel pain apps checked against the 2023 guideline, October 2026, walkito.site.
+
+## Walkito vs Hinge Health for heel pain and plantar fasciitis
+
+Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-12 · updated 2026-10-12
+
+If your employer or health plan offers Hinge Health, start there: it costs you nothing and comes with your own physical therapist. If it does not, you cannot buy Hinge Health on your own, and Walkito is a heel and foot focused alternative you can download on iPhone or Android. Walkito makes this page, so we say plainly where Hinge Health is stronger.
+
+- Hinge Health is free to you through an employer or health plan; we found no way to buy it on your own. Walkito is a weekly or yearly subscription anyone can download.
+- Hinge Health gives you a dedicated physical therapist and a health coach. Walkito has no clinician; it is a self-guided plan built on the 2023 heel pain guideline.
+- Hinge Health covers the whole body, including feet. Walkito covers only heel, foot and lower leg pain, and adjusts each day to how your feet felt that morning.
+- Hinge Health has published studies, mostly on back and knee pain; we found none on feet. Walkito has not been tested in a trial; its exercises come from published trials and the guideline.
+- Either way, see a clinician first if the pain followed an injury, comes with numbness or swelling, or wakes you at night.
+
+### Walkito vs Hinge Health side by side
+
+Hinge Health facts are from its own website and app listings, checked in October 2026. Features can differ by employer.
+
+### Is Hinge Health actually free?
+
+For most members, yes. Hinge Health says its program "is provided for free as a benefit through your employer or insurance provider" with "no out-of-pocket costs or copays for you". Your employer or health plan pays for it instead, and Hinge Health does not publish what they pay.
+
+Some members write in [app reviews](https://apps.apple.com/us/app/hinge-health/id1429270372) that they later saw the program billed to their health insurance. If that matters to you, ask your plan how it is billed before you start.
+
+### Can you use Hinge Health without an employer?
+
+Not as far as we could find. Hinge Health is offered through employers and health plans, and its [eligibility check](https://www.hingehealth.com/check-eligibility/) starts with your employer or insurance details. Spouses and adult dependents can often join if the plan includes them. If you leave the job or the plan stops offering it, access ends.
+
+If you have no access, the options are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer’s guide to plantar fasciitis apps](https://walkito.site/best-app-for-plantar-fasciitis/) compares the self-guided apps.
+
+### Does Hinge Health have a plantar fasciitis program?
+
+Hinge Health covers foot and ankle pain inside its general program, with a [foot and ankle page](https://www.hingehealth.com/acquisition/foot-and-ankle-pain/) and articles on plantar fasciitis. Its plantar fasciitis articles describe calf raises, calf and plantar fascia stretches and towel scrunches, which match the 2023 heel pain guideline.
+
+Its headline result, an average 68% drop in pain in the first three months, comes from a large study of people with chronic back and knee pain. We did not find a Hinge Health study on foot or heel pain.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How does each plan work day to day?
+
+**Hinge Health.** You answer a questionnaire, get a physical therapist and a health coach, and do exercise sessions of about 15 minutes or less in the app. Your therapist adjusts the plan through messages and video visits, and on some exercises the phone camera checks your form.
+
+**Walkito.** You answer a few questions about where it hurts, which side and how active you are. Each morning a one-tap check-in sets the day: a bad morning gets a lighter session. Sessions take 3, 5 or 10 minutes, with a video and a cue for every exercise. Every 14 days a short test measures calf raises on each leg, how long you hold your arch and single-leg balance, so you can see whether things are changing. The full plan is on [how the plan works](https://walkito.site/program/).
+
+### What are the downsides of each?
+
+**Hinge Health:**
+
+- Only available if your employer or health plan offers it.
+- Built for the whole body rather than for heel pain specifically.
+- No published study on foot or heel pain that we could find.
+- Some members report app or form-tracking bugs and confusion about billing.
+
+**Walkito:**
+
+- No physical therapist or doctor behind it, and no one reviews your form.
+- New, with no ratings yet, and the app itself has not been tested in a trial.
+- You pay for it yourself.
+- Covers only heel, foot and lower leg pain.
+
+### Which should you choose?
+
+**Choose Hinge Health if** your employer or health plan offers it, you want a physical therapist to check in with, or your pain is in more than one place.
+
+**Choose Walkito if** you cannot get Hinge Health, your pain is mainly heel, arch or lower leg, your first steps in the morning are the worst part of the day, or you want 3 to 10 minutes a day that adjusts to how your feet feel.
+
+Neither one is a diagnosis. If you are not sure what is causing your heel pain, a clinician is the right first step.
+
+### See a clinician first if
+
+- your heel pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, swelling, redness or warmth
+- pain wakes you at night or is there at rest
+- pain is getting worse week over week despite exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### If Walkito fits you
+
+[Walkito](https://walkito.site/program/) builds a short daily plan from where your foot hurts, adjusts it each morning, and tests your calves, arch and balance every 14 days.
+
+#### Is Hinge Health good for plantar fasciitis?
+
+It can be. Hinge Health covers foot and ankle pain with a dedicated physical therapist, and its plantar fasciitis exercises match the 2023 heel pain guideline. Its published results are mainly for back and knee pain; we did not find a study on foot or heel pain.
+
+#### Is Hinge Health free?
+
+It is $0 to you when your employer or health plan offers it. The employer or plan pays instead. Some members report seeing it billed to their insurance, so ask your plan if that matters to you.
+
+#### Can I use Hinge Health if my employer does not offer it?
+
+We found no way to buy Hinge Health on your own. It is offered through employers and health plans, and access ends if you leave the job or the plan stops offering it.
+
+#### Is Walkito covered by insurance?
+
+No. Walkito is a weekly or yearly subscription you pay through the App Store or Google Play, and the current price is shown in the store before you subscribe.
+
+#### Can I use Walkito and Hinge Health together?
+
+You can, but if you have a Hinge Health physical therapist, follow their plan first and tell them about anything else you do, so your heel is not loaded twice in one day.
 
 ## Walkito vs Exakt Health: which one fits you?
 

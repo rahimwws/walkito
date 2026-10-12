@@ -263,6 +263,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Uses lo que uses en los zapatos, Walkito se ocupa de los ejercicios: un plan diario corto y cada 14 días una prueba de pantorrillas, arco y equilibrio.',
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
+  vsHinge: {
+    en: 'No Hinge Health through work? Walkito is a 3, 5 or 10 minute daily plan for heel and foot pain that adjusts to how your feet felt this morning.',
+    es: '¿No tienes Hinge Health por tu trabajo? Walkito es un plan diario de 3, 5 o 10 minutos para el dolor de talón y de pie que se ajusta a cómo amanecieron tus pies.',
+    ru: 'Нет Hinge Health через работу? Walkito: ежедневный план на 3, 5 или 10 минут при боли в пятке и стопе, который подстраивается под то, как стопы чувствовали себя утром.',
+  },
   appStudy: {
     en: 'Walkito is one of the 20 apps in this study: a 3, 5 or 10 minute daily plan with the plantar fascia stretch, both calf stretches and strengthening.',
     es: 'Walkito es una de las 20 apps de este estudio: un plan diario de 3, 5 o 10 minutos con el estiramiento de la fascia plantar, los dos de pantorrilla y fuerza.',

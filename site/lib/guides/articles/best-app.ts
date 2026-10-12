@@ -13,7 +13,7 @@ export const BEST_APP_EN: Guide = {
   lede:
     'This page compares seven apps that include exercises for [plantar fasciitis](/plantar-fasciitis/), [flat feet](/flat-feet/) or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.',
   intro: [
-    'There is no single best app for everyone. The right choice depends on what you need: a runner returning from plantar fasciitis has different requirements from someone with flat feet who stands at work all day, and both have different requirements from someone whose employer covers Hinge Health. The criteria below explain what to look for, and the table after that shows where each app sits.',
+    'There is no single best app for everyone. The right choice depends on what you need: a runner returning from plantar fasciitis has different requirements from someone with flat feet who stands at work all day, and both have different requirements from someone whose employer covers [Hinge Health](/walkito-vs-hinge-health/). The criteria below explain what to look for, and the table after that shows where each app sits.',
   ],
   takeaways: [
     'The 2023 clinical guideline for heel pain gives plantar fascia and calf stretching a grade of A and strength training a grade of B. A good app should include both.',
@@ -256,7 +256,7 @@ export const BEST_APP_EN: Guide = {
     },
     {
       q: 'Why does Walkito not call itself the best app for plantar fasciitis?',
-      a: 'Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like Hinge Health. What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.',
+      a: 'Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like [Hinge Health](/walkito-vs-hinge-health/). What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.',
     },
     {
       q: 'Do any of these apps work on Android?',
