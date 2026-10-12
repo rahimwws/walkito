@@ -37,7 +37,7 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-10-10',
+  updated: '2026-10-12',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
@@ -268,6 +268,10 @@ export const FLAT_FEET_EN: Guide = {
       q: 'What is the difference between fallen arches and flat feet?',
       a: 'Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.',
       cites: [CITE.ling],
+    },
+    {
+      q: 'What exercises help a collapsed arch?',
+      a: '“Collapsed arch” usually means the same thing as flat feet or fallen arches. For a flexible arch, one that comes back once the foot is off the ground, the short-foot exercise has the trial evidence: done seated, then standing, then on one leg, together with hip and calf work. A rigid arch that stays flat even when lifted needs a clinician, not more exercise.',
     },
     {
       q: 'What exercises strengthen the arches of the feet?',

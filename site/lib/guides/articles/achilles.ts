@@ -11,7 +11,7 @@ export const ACHILLES_EN: Guide = {
   page: 'achilles',
   mainSource: CITE.achillesGuideline,
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-12',
   title: 'Achilles Tendonitis Exercises: Eccentric Drops & More',
   description:
     'Achilles tendonitis exercises with doses: eccentric heel drops, heavy slow resistance, insertional vs. mid-portion differences, and when to stop.',
@@ -230,6 +230,11 @@ export const ACHILLES_EN: Guide = {
       q: 'What are eccentric heel drops for Achilles tendonitis?',
       cites: [CITE.alfredson],
       a: 'Eccentric heel drops are a strength exercise: rise on both feet, lower slowly on one, heel sinking below a step edge. The lowering phase is the focus. In a 1998 trial, 15 athletes doing this twice daily for three months all returned to their prior running level. Later research shows other loading styles work equally well.',
+    },
+    {
+      q: 'What are the best eccentric exercises for Achilles tendon pain?',
+      cites: [CITE.alfredson, CITE.beyer],
+      a: 'Eccentric heel drops are the most studied exercise for Achilles tendon pain: rise on both feet, shift to the sore leg, lower slowly over three seconds with the heel sinking below the step. In a 1998 trial, 15 athletes doing this twice daily for three months all returned to their prior running level. Heavy slow resistance gave equally good results in a later trial.',
     },
     {
       q: 'Is heavy slow resistance as good as eccentric heel drops?',
