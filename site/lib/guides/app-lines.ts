@@ -264,7 +264,7 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     ru: 'Что бы ни было у вас в обуви, Walkito берёт на себя упражнения: короткий план на день и каждые 14 дней проверка икр, свода и баланса.',
   },
   vsHinge: {
-    en: 'No Hinge Health through work? Walkito is a 3, 5 or 10 minute daily plan for heel and foot pain that adjusts to how your feet felt this morning.',
+    en: 'No Hinge Health through work? Walkito gives you 3, 5 or 10 minute sessions for heel and foot pain that adjust to how your feet felt this morning.',
     es: '¿No tienes Hinge Health por tu trabajo? Walkito es un plan diario de 3, 5 o 10 minutos para el dolor de talón y de pie que se ajusta a cómo amanecieron tus pies.',
     ru: 'Нет Hinge Health через работу? Walkito: ежедневный план на 3, 5 или 10 минут при боли в пятке и стопе, который подстраивается под то, как стопы чувствовали себя утром.',
   },
