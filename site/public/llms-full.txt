@@ -271,6 +271,7 @@ Sources:
 - Lambert TE, Harvey LA, Avdalis C, et al. An app with remote support achieves better adherence to home exercise programs than paper handouts in people with musculoskeletal conditions: a randomised trial. Journal of Physiotherapy. 2017;63(3):161–167.
 - Shim DW, Park KH, Lee JW, et al. Information and communications technology-based versus handout-based home exercise programs for heel pain syndrome: a prospective randomized study. Scientific Reports. 2026;16(1):13584.
 - Kosehasanogullari M, Büyükvural Şen S, Okur Yılmaz N, et al. Home exercise with or without high-intensity laser or radial shockwave therapy for plantar fasciitis: a randomized controlled trial. Foot & Ankle International. 2026;47(3):386–397.
+- Fraser JJ, Glaviano NR, Hertel J. Utilization of physical therapy intervention among patients with plantar fasciitis in the United States. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(2):49–55.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -2644,7 +2645,7 @@ You can, but if you have a Hinge Health physical therapist, follow their plan fi
 
 ## Is an exercise app as good as physical therapy for plantar fasciitis?
 
-Language: English · https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/ · published 2026-10-12 · updated 2026-10-12
+Language: English · https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/ · published 2026-10-11 · updated 2026-10-11
 
 Nobody knows yet: we found no trial comparing an exercise app with physical therapy for plantar fasciitis. What the trials do show is that home exercise did about as well as physical therapy in one trial and worse than supervised clinic care in another, and that hands-on treatment added to home exercise helps short-term pain. A sensible middle path is a clinician visit to confirm the diagnosis, then the home exercises, with or without an app.
 
@@ -2750,6 +2751,118 @@ For muscle and joint problems in general, a review of 37 trials found no clear a
 #### How many physical therapy sessions do you need for plantar fasciitis?
 
 There is no standard number. Trials vary; in one, the supervised group had sessions twice a week for 8 weeks. Your therapist will suggest a plan based on how you respond.
+
+## How much does plantar fasciitis care cost?
+
+Language: English · https://walkito.site/plantar-fasciitis-treatment-cost/ · published 2026-10-11 · updated 2026-10-11
+
+Home exercise costs the least: the stretches and strengthening the 2023 guideline recommends need no equipment, and the exercise apps we checked range from free to about $300 a year. Store-bought insoles cost about $40 to $60 a pair. Of the first-line options, physical therapy costs the most: in a study of US private insurance claims from 2007 to 2011, an average course of 5 to 6 visits for plantar fasciitis cost about $1,000 to $1,400. Custom orthotics, often $300 to $800, did no better than store-bought insoles in trials.
+
+- The 2026 national Medicare-approved amount for a physical therapy evaluation is $97.87; after the Part B deductible, you pay 20% of it.
+- A physical therapy visit for a privately insured patient cost $192 on average, according to the Health Care Cost Institute.
+- Nearly 4 in 5 ACA plans sold to individuals and small businesses in 2024 capped physical therapy visits; 20 a year was the most common limit.
+- The foot pain apps we checked cost from free to $299.99 a year in the App Store. Hinge Health and Sword are $0 through many employers and health plans.
+- Custom orthotics did no better than store-bought insoles in a review of 19 trials, and a Dutch trial found them not cost-effective compared with usual care from a family doctor.
+
+### Plantar fasciitis costs at a glance
+
+Prices vary a lot by state, clinic and insurance plan. Use these as a starting point and ask for a quote before you book.
+
+### How much does physical therapy cost for plantar fasciitis?
+
+That study used claims from 2007 to 2011, so today’s costs may be higher. Newer per-visit numbers:
+
+- **Medicare.** The 2026 national Medicare-approved amounts are $97.87 for a physical therapy evaluation, $29.06 for each 15 minutes of therapeutic exercise and $27.72 for each 15 minutes of manual therapy ([CMS fee schedule](https://www.cms.gov/medicare/physician-fee-schedule/search)). After the Part B deductible, you pay 20% of the approved amount ([Medicare.gov](https://www.medicare.gov/coverage/physical-therapy-services)).
+- **Private insurance.** A visit for a privately insured patient cost $192 on average, according to Health Care Cost Institute data reported by [KFF Health News](https://kffhealthnews.org/health-care-costs/physical-occupational-therapy-visit-session-cap-limit-prior-authorization-aca/) in 2025. What you pay depends on your copay, coinsurance and deductible.
+- **Without insurance.** Price guides from companies that sell therapy put a self-pay visit at roughly $100 to $350 or more, with the first evaluation at $150 to $400 or more ([Hinge Health](https://www.hingehealth.com/resources/articles/physical-therapy-cost-calculator)). These are rough guides, not independent surveys.
+
+A quick way to estimate your own cost: multiply your copay by the number of visits. With a $30 copay and 8 visits, that is $240, plus anything you owe toward your deductible first.
+
+Source: Fraser JJ, Glaviano NR, Hertel J. Utilization of physical therapy intervention among patients with plantar fasciitis in the United States. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(2):49–55.
+
+### Does insurance cover physical therapy for plantar fasciitis?
+
+Many plans do when it is medically necessary, but often with limits:
+
+- **Visit caps.** Nearly 4 in 5 ACA plans sold to individuals and small businesses in 2024 limited physical therapy visits, from 20 to 60 a year, and 20 was the most common cap ([KFF Health News](https://kffhealthnews.org/health-care-costs/physical-occupational-therapy-visit-session-cap-limit-prior-authorization-aca/)).
+- **Prior approval.** Therapists told [KFF Health News](https://kffhealthnews.org/health-care-costs/physical-occupational-therapy-visit-session-cap-limit-prior-authorization-aca/) that some insurers demand a new approval request every two or three visits.
+- **Medicare.** There is no hard cap, but once therapy costs pass $2,480 in a year (2026), the therapist must confirm that more care is needed ([APTA](https://www.apta.org/your-practice/payment/medicare-payment/coding-billing/therapy-cap)).
+
+Before your first visit, ask your plan three things: how many visits are covered, whether you need a referral, and what you pay per visit before and after the deductible.
+
+### How much do plantar fasciitis apps cost?
+
+Prices from each app’s App Store page or website, checked October 11, 2026:
+
+### Is an app cheaper than physical therapy, and does it work as well?
+
+An app costs less than even a few physical therapy visits. Whether it does as well is not known: we found no trial comparing an exercise app with physical therapy for plantar fasciitis. In a study in China, a digital home program cost less than half as much as hospital physiotherapy in direct medical costs over a year and was not worse for first-step pain at three months. But it was not randomized, and its authors call the results provisional.
+
+What an app cannot do is diagnose your heel pain or give hands-on care. Our page on [exercise apps vs physical therapy](https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/) goes through the trials.
+
+Source: Xu W, Yao L, Wang H, et al. Home-based digital exercise versus hospital physiotherapy for plantar fasciitis: a propensity-score-matched retrospective cohort study with dual-perspective cost-utility evaluation. Journal of Rehabilitation Medicine. 2026;58:jrm45974.
+
+### Are custom orthotics worth the money?
+
+Custom orthotics often cost $300 to $800, and some insurance plans do not pay for them or pay only for certain conditions ([GoodRx](https://www.goodrx.com/conditions/musculoskeletal/custom-orthotics-cost)). Medicare covers shoe inserts only for people with diabetes and severe diabetes-related foot disease ([Medicare.gov](https://www.medicare.gov/coverage/therapeutic-shoes-inserts)).
+
+The trials do not show that the extra money buys better results. In a trial of 185 adults, custom insoles did no better than sham insoles at three months, and a cost analysis of the same trial found custom insoles were not cost-effective compared with usual care from a family doctor.
+
+Store-bought arch supports cost much less, for example [Dr. Scholl’s Plantar Fasciitis insoles](https://www.drscholls.com/products/advanced-pain-relief-plantar-fasciitis-orthotic-insoles) at $39.99, [Powerstep Pinnacle](https://powerstep.com/products/pinnacle-insoles) at $54.95 and [Superfeet High Arch](https://www.superfeet.com/products/all-purpose-support-high-arch) at $59.99. The 2023 guideline advises against relying on insoles alone for short-term pain relief, so pair them with the exercises. More in [insoles vs exercises](https://walkito.site/insoles-vs-exercises/).
+
+Source: Whittaker GA, Munteanu SE, Menz HB, Tan JM, Rabusin CL, Landorf KB. Foot orthoses for plantar heel pain: a systematic review and meta-analysis. British Journal of Sports Medicine. 2018;52(5):322–328.
+Source: Rasenberg N, Bierma-Zeinstra SMA, Fuit L, et al. Custom insoles versus sham and GP-led usual care in patients with plantar heel pain: results of the STAP-study - a randomised controlled trial. British Journal of Sports Medicine. 2021;55(5):272–278.
+Source: Rasenberg N, van Middelkoop M, Bierma-Zeinstra SMA, El Alili M, Bindels P, Bosmans J. Cost-effectiveness of custom-made insoles versus usual care in patients with plantar heel pain in primary care: cost-effectiveness analysis of a randomised controlled trial. BMJ Open. 2021;11(11):e051866.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What do other plantar fasciitis treatments cost?
+
+- **Podiatrist visit.** About $165 on average for a new patient without insurance ([Mira](https://www.talktomira.com/post/how-much-does-it-cost-to-see-a-podiatrist-without-insurance)). The 2026 national Medicare-approved amount for a standard new-patient office visit is $117.57.
+- **Cortisone shot.** The 2026 national Medicare-approved amount for the injection itself in an office is $60.46; the drug and any separate visit can add to that.
+- **Night splint.** $49.95 to $56.95 at list price from [Powerstep](https://powerstep.com/products/dorsal-night-splint). See [night splints for plantar fasciitis](https://walkito.site/night-splints-plantar-fasciitis/).
+- **Shockwave therapy.** UCHealth charged $550 for a package in 2023; bundled prices on [MDsave](https://www.mdsave.com/procedures/shockwave-therapy-for-plantar-fasciitis/d28bfbc9) run $2,602 to $3,890. Some insurers do not pay for it: Cigna lists it as unproven for plantar fasciitis ([policy](https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/mm_0097_coveragepositioncriteria_plantar_fasciitis_treatments.pdf)).
+- **Surgery.** $3,431 to $9,434 for a plantar fasciotomy ([MDsave](https://www.mdsave.com/procedures/plantar-fasciotomy/d784f9c5)).
+
+### What is the cheapest way to start?
+
+A low-cost order that follows the guideline:
+
+- Start the plantar fascia stretch, calf stretches and a strengthening exercise such as the [towel heel raise](https://walkito.site/exercises/towel-heel-raise/). They cost nothing.
+- Add store-bought arch supports if you want extra comfort, together with the exercises.
+- See a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)), or sooner for the warning signs below.
+- Leave the costly options, such as shots, shockwave and surgery, for later, and decide on them with a clinician.
+
+Our [plantar fasciitis exercises guide](https://walkito.site/plantar-fasciitis-exercises/) shows each exercise step by step.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### See a clinician first if
+
+- your heel pain followed an injury or a fall
+- the pain is severe or stops you doing normal activities
+- it has not improved after about two weeks of home care, or keeps getting worse
+- the pain comes with numbness, tingling or swelling
+- you have diabetes or reduced feeling in your feet
+
+### If you start at home
+
+[Walkito](https://walkito.site/program/) gives you the plantar fascia stretch, both calf stretches and a heel raise that gets harder over time, on 3, 5 or 7 days a week. It is a weekly or yearly subscription; the price is shown in the store.
+
+#### How much is physical therapy for plantar fasciitis without insurance?
+
+Price guides from therapy companies put a self-pay visit at roughly $100 to $350 or more, and the first evaluation at $150 to $400 or more. Multiply by the number of visits your therapist suggests to estimate the total.
+
+#### Will insurance pay for plantar fasciitis treatment?
+
+Many plans pay for physical therapy when it is medically necessary, but many cap visits; 20 a year was the most common cap in ACA plans sold in 2024. Some plans do not pay for custom orthotics, and some insurers, such as Cigna, do not pay for shockwave therapy.
+
+#### Does Medicare cover orthotics for plantar fasciitis?
+
+Medicare covers therapeutic shoes and inserts only for people with diabetes and severe diabetes-related foot disease. For outpatient physical therapy, you pay 20% of the approved amount after the Part B deductible.
+
+#### What can I do if I can’t afford physical therapy?
+
+Start with the free home exercises the 2023 guideline recommends: plantar fascia and calf stretches and strengthening. If you can afford one visit, use it to confirm the diagnosis and check your exercises. The NHS advises seeing a doctor if heel pain has not improved after 2 weeks of home care.
 
 ## Walkito vs Exakt Health: which one fits you?
 

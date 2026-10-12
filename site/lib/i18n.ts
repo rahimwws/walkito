@@ -420,6 +420,7 @@ export const EN_ONLY = {
   appStudy: '/heel-pain-apps-study/',
   vsHinge: '/walkito-vs-hinge-health/',
   appVsPt: '/app-vs-physical-therapy-plantar-fasciitis/',
+  pfCost: '/plantar-fasciitis-treatment-cost/',
   exPlantarFasciaStretch: '/exercises/plantar-fascia-stretch/',
   exCalfStretch: '/exercises/calf-stretch/',
   exSoleusStretch: '/exercises/soleus-stretch/',
@@ -545,6 +546,7 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   appStudy: '/es/estudio-apps-dolor-de-talon/',
   vsHinge: '/es/walkito-vs-hinge-health/',
   appVsPt: '/es/app-vs-fisioterapia-fascitis-plantar/',
+  pfCost: '/es/costo-tratamiento-fascitis-plantar/',
 };
 
 /**
@@ -618,6 +620,7 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   appStudy: '/ru/issledovanie-prilozheniy-bol-v-pyatke/',
   vsHinge: '/ru/walkito-vs-hinge-health/',
   appVsPt: '/ru/prilozhenie-ili-fizioterapiya-plantarnyy-fastsiit/',
+  pfCost: '/ru/stoimost-lecheniya-plantarnogo-fastsiita/',
 };
 
 /**

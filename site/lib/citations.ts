@@ -1148,6 +1148,11 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1177/10711007251408439',
     pmid: '41664959',
   },
+  {
+    text: 'Fraser JJ, Glaviano NR, Hertel J. Utilization of physical therapy intervention among patients with plantar fasciitis in the United States. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(2):49–55.',
+    doi: '10.2519/jospt.2017.6999',
+    pmid: '28142368',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1380,6 +1385,7 @@ export const CITE = {
   lambertAppAdherence: 225,
   shimICT: 226,
   kosehasanogullariLaserESWT: 227,
+  fraserPTUse: 228,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

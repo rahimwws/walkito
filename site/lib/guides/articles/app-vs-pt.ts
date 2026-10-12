@@ -11,8 +11,8 @@ export const APP_VS_PT_EN: Guide = {
   lang: 'en',
   page: 'appVsPt',
   mainSource: CITE.guideline,
-  published: '2026-10-12',
-  updated: '2026-10-12',
+  published: '2026-10-11',
+  updated: '2026-10-11',
   title: 'Exercise App vs Physical Therapy for Plantar Fasciitis',
   description:
     'Is an exercise app as good as physical therapy for plantar fasciitis? What the trials show, what a physical therapist adds, and when to go in person.',
