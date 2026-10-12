@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-10
+Last updated: 2026-10-12
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -445,7 +445,7 @@ No single rub session massages plantar fasciitis away, but gentle self massage c
 
 ## Flat feet exercises for fallen arches and arch pain
 
-Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-10
+Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-12
 
 For flexible [flat feet](https://walkito.site/flat-feet/), the exercise program with trial evidence combines short-foot exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of it changed arch shape more than in a control group. By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.
 
@@ -553,6 +553,10 @@ The evidence is weak and mixed, not a clear yes. The largest study on it, the [F
 #### What is the difference between fallen arches and flat feet?
 
 Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.
+
+#### What exercises help a collapsed arch?
+
+“Collapsed arch” usually means the same thing as flat feet or fallen arches. For a flexible arch, one that comes back once the foot is off the ground, the short-foot exercise has the trial evidence: done seated, then standing, then on one leg, together with hip and calf work. A rigid arch that stays flat even when lifted needs a clinician, not more exercise.
 
 #### What exercises strengthen the arches of the feet?
 
@@ -873,7 +877,7 @@ There is no single best exercise; the 2023 guideline grades stretching (A) and s
 
 ## Achilles tendonitis exercises: eccentric heel drops, doses and what the research says
 
-Language: English · https://walkito.site/achilles-tendonitis-exercises/ · published 2026-10-04 · updated 2026-10-04
+Language: English · https://walkito.site/achilles-tendonitis-exercises/ · published 2026-10-04 · updated 2026-10-12
 
 Achilles tendonitis exercises work best when the heel drop is understood as strength training, not a stretch. The 2024 clinical guideline gives exercise its top grade, **A**, and a 2021 network meta-analysis of 29 trials found no single protocol clearly better than another. What matters is loading the tendon steadily for weeks.
 
@@ -1010,6 +1014,10 @@ You don't have to guess the order, the doses or when to add load. [Walkito](http
 #### What are eccentric heel drops for Achilles tendonitis?
 
 Eccentric heel drops are a strength exercise: rise on both feet, lower slowly on one, heel sinking below a step edge. The lowering phase is the focus. In a 1998 trial, 15 athletes doing this twice daily for three months all returned to their prior running level. Later research shows other loading styles work equally well.
+
+#### What are the best eccentric exercises for Achilles tendon pain?
+
+Eccentric heel drops are the most studied exercise for Achilles tendon pain: rise on both feet, shift to the sore leg, lower slowly over three seconds with the heel sinking below the step. In a 1998 trial, 15 athletes doing this twice daily for three months all returned to their prior running level. Heavy slow resistance gave equally good results in a later trial.
 
 #### Is heavy slow resistance as good as eccentric heel drops?
 
