@@ -1,13 +1,17 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { Cite } from '@/components/Cite';
+import { CiteBox } from '@/components/CiteBox';
+import { guideFor } from '@/lib/guides';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom, type FullLang } from '@/lib/i18n';
 import { shareCard } from '@/lib/share';
-import { OWN_IMAGE_LICENSE, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
+import { OWN_IMAGE_LICENSE, PAGE_UPDATED, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
 import { FOOT_MAP, FOOT_MAP_PATH, HOTSPOTS, REGION_ORDER, guideHref, type MapView } from '@/lib/tools/foot-map';
 
 /**
@@ -42,8 +46,28 @@ export function footMapMetadata(lang: FullLang): Metadata {
   };
 }
 
+/** "Sources" on the map: it restates its guides, so it lists their main sources. */
+const SOURCES: Record<FullLang, { h2: string; intro: string }> = {
+  en: { h2: 'Sources', intro: 'Each area above restates the guide it links to. These are the main studies and clinical guidelines behind most of those guides; each guide cites more.' },
+  es: { h2: 'Fuentes', intro: 'Cada zona de arriba resume la guía a la que enlaza. Estos son los principales estudios y guías clínicas en los que se basan la mayoría de esas guías; cada guía cita más.' },
+  ru: { h2: 'Источники', intro: 'Каждая зона выше пересказывает гайд, на который ведёт ссылка. Здесь главные исследования и клинические рекомендации, на которых основано большинство этих гайдов; в каждом гайде их больше.' },
+};
+
+/** The main source of every guide the map links to, once each, in map order. */
+function mapSources(lang: FullLang): number[] {
+  const c = FOOT_MAP[lang];
+  const pages = REGION_ORDER.flatMap((id) => [...c.regions[id].conditions.map((x) => x.page), ...(c.regions[id].more ?? []).map((m) => m.page)]);
+  const out: number[] = [];
+  for (const p of pages) {
+    const main = guideFor(p, lang)?.mainSource;
+    if (main != null && !out.includes(main)) out.push(main);
+  }
+  return out;
+}
+
 export function FootMapPage({ lang }: { lang: FullLang }) {
   const c = FOOT_MAP[lang];
+  const sources = mapSources(lang);
   const url = `${SITE_URL}${FOOT_MAP_PATH[lang]}`;
   const home = lang === 'en' ? '/' : `/${lang}/`;
 
@@ -130,6 +154,7 @@ export function FootMapPage({ lang }: { lang: FullLang }) {
       <Masthead lang={lang} />
       <Prose className="shell prose">
         <h1>{c.h1}</h1>
+        <Byline lang={lang} cites={sources} />
         <p className="lede">{c.lede}</p>
 
         <div className="foot-map">
@@ -185,8 +210,18 @@ export function FootMapPage({ lang }: { lang: FullLang }) {
           </ul>
         </section>
 
+        <section id="sources">
+          <h2>{SOURCES[lang].h2}</h2>
+          <p>{SOURCES[lang].intro}</p>
+          {sources.map((i) => (
+            <Cite key={i} index={i} />
+          ))}
+        </section>
+
         <p>{c.appText}</p>
         <AppStoreBadge campaign="tool-foot-map" lang={lang} />
+        <UpdatedLine lang={lang} updated={PAGE_UPDATED.footMap} />
+        <CiteBox lang={lang} title={c.title} updated={PAGE_UPDATED.footMap} url={url} />
         <p className="notice">{CHROME[lang].notice}</p>
       </Prose>
       <Footer lang={lang} languages={FOOT_MAP_PATH} />

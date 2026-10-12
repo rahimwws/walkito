@@ -1072,6 +1072,7 @@ body:has(> .pg) > .wash {
 
 .pg .prose .updated-line {
   display: inline-flex;
+  gap: 0.35em;
   margin: 40px 0 0;
   padding: 6px 12px;
   border-radius: 10px;
@@ -2123,5 +2124,45 @@ body:not(:has(.pg-head, .hero-stage)) .handoff {
   body:not(:has(.pg-head, .hero-stage)) .masthead-float .menu-toggle {
     background: rgba(8, 40, 200, 0.9);
     color: #fff;
+  }
+}
+
+/* The calculator verdicts keep room for their coloured dot: the article list
+   rule (.pg .prose li) would otherwise pull the text over it. */
+.pg .prose .tool-verdict {
+  padding-left: 18px;
+}
+
+/* A chart writers can reuse (components/WriterImage.tsx). */
+.pg .prose .writer-image {
+  margin: 28px 0 0;
+}
+
+.pg .prose .writer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #e6e6ea;
+}
+
+.pg .prose .writer-image-download {
+  display: block;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.pg .prose .writer-image figcaption {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--pg-muted);
+}
+
+/* Store buttons: on a phone the two pills stack instead of running off the screen. */
+@media (max-width: 480px) {
+  .store a {
+    padding: 15px 26px;
+    font-size: 18px;
   }
 }

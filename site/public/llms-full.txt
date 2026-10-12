@@ -11087,9 +11087,9 @@ Walkito is in English, Russian and Spanish.
 
 ### How we research
 
-Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), [flat feet exercises](https://walkito.site/flat-feet-exercises/), [heel pain from running](https://walkito.site/heel-pain-runners/) and [the evidence page](https://walkito.site/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.
+Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. No licensed clinician has reviewed the guides yet.
 
-We read the full paper, not just the abstract, before a number from it goes on a page. Every dose, grade and figure links to the study behind it, so you can open it and check.
+Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), [flat feet exercises](https://walkito.site/flat-feet-exercises/), [heel pain from running](https://walkito.site/heel-pain-runners/) and [the evidence page](https://walkito.site/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.
 
 Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.
 

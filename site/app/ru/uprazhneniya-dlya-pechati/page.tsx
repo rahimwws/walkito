@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { CiteBox } from '@/components/CiteBox';
 import { EmailSignup } from '@/components/EmailSignup';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
+import { SITE_NAME, SITE_URL, pageTitle, PAGE_UPDATED } from '@/lib/site';
 
 const PATH = '/ru/uprazhneniya-dlya-pechati/';
 const TITLE = 'Листы с упражнениями для стоп для печати (PDF бесплатно)';
@@ -94,6 +96,7 @@ export default function PrintableSheetsRu() {
       <Masthead lang="ru" />
       <Prose className="shell prose">
         <h1>Листы с упражнениями для стоп для печати</h1>
+        <Byline lang="ru" />
         <p className="lede">
           Бесплатные PDF-листы, которые можно распечатать и повесить на холодильник.
           На каждом листе упражнения с иллюстрацией, дозировкой, описанием выполнения,
@@ -141,6 +144,8 @@ export default function PrintableSheetsRu() {
           приложение Walkito: спрашивает, как чувствуют себя ваши стопы, и выбирает
           сегодняшнее занятие.
         </p>
+        <UpdatedLine lang="ru" updated={PAGE_UPDATED.printables} />
+        <CiteBox lang="ru" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-ru" lang="ru" />
       </Prose>

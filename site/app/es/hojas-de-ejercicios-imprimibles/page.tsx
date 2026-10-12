@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { CiteBox } from '@/components/CiteBox';
 import { EmailSignup } from '@/components/EmailSignup';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
@@ -8,7 +10,7 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
+import { SITE_NAME, SITE_URL, pageTitle, PAGE_UPDATED } from '@/lib/site';
 
 const PATH = '/es/hojas-de-ejercicios-imprimibles/';
 const TITLE = 'Hojas de ejercicios para pies imprimibles (PDF gratis)';
@@ -100,6 +102,7 @@ export default function PrintableSheetsEs() {
       <Masthead lang="es" />
       <Prose className="shell prose">
         <h1>Hojas de ejercicios para pies imprimibles</h1>
+        <Byline lang="es" />
         <p className="lede">
           Hojas PDF gratis que puedes imprimir y pegar en el refrigerador. Cada una tiene los
           ejercicios con una imagen, la dosis, cómo hacerlo, cuándo parar, un registro semanal
@@ -146,6 +149,8 @@ export default function PrintableSheetsEs() {
           ¿Quieres que el plan se ajuste por ti cada mañana? Eso es lo que hace la app de Walkito:
           te pregunta cómo se sienten tus pies y elige la sesión de hoy.
         </p>
+        <UpdatedLine lang="es" updated={PAGE_UPDATED.printables} />
+        <CiteBox lang="es" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-es" lang="es" />
       </Prose>

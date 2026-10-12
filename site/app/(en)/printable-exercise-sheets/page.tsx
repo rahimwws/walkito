@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { CiteBox } from '@/components/CiteBox';
 import { EmailSignup } from '@/components/EmailSignup';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
@@ -8,7 +10,7 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL, PAGE_UPDATED } from '@/lib/site';
 
 const PATH = '/printable-exercise-sheets/';
 const TITLE = 'Printable Foot Exercise Sheets (Free PDF)';
@@ -56,6 +58,7 @@ export default function PrintableSheets() {
       <Masthead lang="en" />
       <Prose className="shell prose">
         <h1>Printable foot exercise sheets</h1>
+        <Byline lang="en" />
         <p className="lede">
           Free PDF sheets you can print and stick on the fridge. Each one has the exercises with a picture, the dose,
           how to do it, when to stop, a week log to tick off, and when to see a clinician. They come from our guides,
@@ -94,6 +97,8 @@ export default function PrintableSheets() {
           Want the plan to adjust for you each morning instead? That is what the Walkito app does: it asks how your feet
           feel and picks today&rsquo;s session.
         </p>
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.printables} />
+        <CiteBox lang="en" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables" lang="en" />
       </Prose>
