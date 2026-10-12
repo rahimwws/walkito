@@ -274,6 +274,16 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: '¿Sin plan de tu empresa? Walkito es una app de ejercicios para los pies que puedes descargar tú mismo, con sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
     ru: 'Нет программы от работодателя? Walkito: приложение с упражнениями для стоп, которое можно скачать самому, с занятиями на 3, 5 или 10 минут, которые подстраиваются под то, как стопы чувствовали себя утром.',
   },
+  exaktAlt: {
+    en: 'Pain in your heel or arch, not a running injury? Walkito gives you 3, 5 or 10 minute sessions on the 3, 5 or 7 days a week you pick, adjusted to how your feet felt this morning.',
+    es: '¿Te duele el talón o el arco y no es una lesión de correr? Walkito te da sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana), ajustadas a cómo amanecieron tus pies.',
+    ru: 'Болит пятка или свод, а не беговая травма? Walkito даёт занятия на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю), с поправкой на то, как стопы чувствовали себя утром.',
+  },
+  bestFlatApp: {
+    en: 'Walkito builds arch exercises into a plan for the 3, 5 or 7 days a week you pick and tests your arch hold, calf raises and balance every 14 days.',
+    es: 'Walkito arma con ejercicios para el arco un plan de 3, 5 o 7 días a la semana, a tu elección, y cada 14 días mide cuánto sostienes el arco, tus elevaciones de talón y tu equilibrio.',
+    ru: 'Walkito собирает упражнения для свода в план на 3, 5 или 7 дней в неделю по вашему выбору и каждые 14 дней проверяет удержание свода, подъёмы на носки и баланс.',
+  },
   footApps: {
     en: 'Heel pain or flat feet? Walkito gives you stretching and foot strength work in 3, 5 or 10 minute sessions that adjust to how your feet felt this morning.',
     es: '¿Dolor de talón o pie plano? Walkito te da estiramientos y fuerza del pie en sesiones de 3, 5 o 10 minutos que se ajustan a cómo amanecieron tus pies.',
