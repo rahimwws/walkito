@@ -186,7 +186,18 @@ export function HomeTour({ visible }: HomeTourProps) {
           rect = await measureSpotlight(stop.anchor);
         }
       }
-      if (!live || rect == null) return;
+      if (rect == null) {
+        // Not on screen yet (Home still laying out): once more, then on.
+        await wait(400);
+        rect = await measureSpotlight(stop.anchor);
+      }
+      if (!live) return;
+      if (rect == null) {
+        // A stop that is not there is skipped rather than held on a dimmed
+        // screen with nothing lit; the last one is always there (the dock).
+        if (step < LAST) setHomeTourStep(step + 1);
+        return;
+      }
       // Kept inside the screen, so the ring is whole round a place that runs
       // to its edges (the start button runs under both sides and the foot).
       const x = Math.max(SCREEN_INSET, rect.x - stop.padX);

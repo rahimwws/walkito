@@ -22,10 +22,14 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   PROGRAM,
   TODAY_INDEX,
+  checkInOn,
   currentDay,
   isFirstStepTime,
+  lastFlareOn,
+  logFlare,
   painOn,
   logPain,
+  useLogsVersion,
   settleOffset,
   type ProgramDay,
   exerciseById,
@@ -134,14 +138,26 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   const t = useT();
   const [selected, setSelected] = useState<CardKey | null>(null);
   const [open, setOpen] = useState(false);
+  /** "It hurts right now": the same sheet, asked for relief rather than as
+   * the day's answer. */
+  const [flareOpen, setFlareOpen] = useState(false);
+  // Re-read on every log write, so the answer shows the moment it is saved.
+  useLogsVersion();
+  const today = currentDay();
+  /** The day's check-in, once answered: one a day, corrected in place. */
+  const checkIn = checkInOn(today);
+  const flare = lastFlareOn(today);
+  /** "Edit" on the answered card: the question again, the answer picked. */
+  const [editing, setEditing] = useState(false);
+  const answered = checkIn != null && !editing;
   const focused = useIsFocused();
   /** The red-flag check, behind "Something new?". */
   const [safety, setSafety] = useState(false);
   const sheetRef = useRef(onSheet);
   sheetRef.current = onSheet;
   useEffect(() => {
-    sheetRef.current?.(open || safety);
-  }, [open, safety]);
+    sheetRef.current?.(open || flareOpen || safety);
+  }, [open, flareOpen, safety]);
   /** Before noon the question is about the first steps out of bed; after it,
    * about the day. Read per render, so a screen left open across noon follows. */
   const morning = isFirstStepTime(Date.now());
@@ -205,10 +221,21 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    * `PROGRAM_MS` would be lost by anyone who logged and immediately left.
    */
   const record = (score: number, zones: readonly LegZone[], said?: string) => {
+    const correction = checkInOn(currentDay()) != null;
     logPain(currentDay(), score, zones);
     // The morning's answer is what moves the plan a step back or lets it return.
     settleOffset(currentDay());
-    acknowledge(score, said);
+    acknowledge(score, said ?? (correction ? t('home.ackUpdated') : undefined));
+    setEditing(false);
+  };
+
+  /** "Edit": back to the question with today's answer picked. */
+  const edit = () => {
+    Haptics.selectionAsync();
+    setAck(null);
+    setSelected(checkIn != null && checkIn.score > 0 ? 'pain' : 'nopain');
+    setLogged(false);
+    setEditing(true);
   };
 
   /**
@@ -235,13 +262,22 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
     if (checkin !== 'fine' && checkin !== 'hurts' && checkin !== 'open') return;
     if (!revealed) return;
     router.setParams({ checkin: undefined });
+    // Answered already today: the widget does not answer twice. "Fine" shows
+    // the day's answer; "it hurts" is then "it hurts right now".
+    const answeredToday = checkInOn(currentDay()) != null;
     if (checkin === 'fine') {
+      if (answeredToday) return;
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       setSelected('nopain');
       setLogged(true);
       onLogged?.(true);
       record(0, [], t('widget.ackNoPain'));
     } else if (checkin === 'hurts') {
+      if (answeredToday) {
+        setEditing(false);
+        setFlareOpen(true);
+        return;
+      }
       setSelected('pain');
       setLogged(false);
       setOpen(true);
@@ -255,6 +291,23 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   return (
     <>
       <View style={styles.wrap}>
+        {answered ? (
+          <View {...REPLAY_MASK} style={styles.block}>
+            <CheckInSummary
+              score={checkIn.score}
+              zones={(checkIn.zones ?? []) as LegZone[]}
+              flareScore={flare?.score ?? null}
+              paused={!focused || open || flareOpen || safety || covered}
+              onEdit={edit}
+            />
+            {ack != null && (
+              <Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }]}>
+                {ack}
+              </Text>
+            )}
+            <FlareRow onPress={() => setFlareOpen(true)} />
+          </View>
+        ) : (
         <View style={styles.block} {...REPLAY_MASK}>
           <View style={styles.head}>
             <Text style={[styles.kicker, { color: meter.label }]}>
@@ -293,7 +346,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
               two answers that already read as the thing to tap. */}
           {selected != null && (
             <PrimaryButton
-              label={logged ? t('home.checkInAgain') : t('home.logCheckIn')}
+              label={editing ? t('home.checkInUpdate') : logged ? t('home.checkInAgain') : t('home.logCheckIn')}
               onPress={() => {
                 Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
                 // "No pain today" is already the whole answer. Opening a slider to
@@ -301,7 +354,9 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
                 // to take yes for an answer.
                 if (selected === 'nopain') {
                   setLogged(true);
-                  onLogged?.(true);
+                  // Confetti once, for the day's first answer: a correction is
+                  // not a second good morning.
+                  if (!editing) onLogged?.(true);
                   // A real zero, not an absent reading. The engine treats null as
                   // "they have not been asked yet" and would go on adapting today
                   // off yesterday's number; "no pain today" is an answer and has to
@@ -315,12 +370,26 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
             />
           )}
 
+          {editing && (
+            <Pressable
+              accessibilityRole="button"
+              hitSlop={8}
+              onPress={() => {
+                Haptics.selectionAsync();
+                setEditing(false);
+              }}
+              style={({ pressed }) => [styles.cancel, pressed && { opacity: 0.5 }]}>
+              <Text style={[styles.cancelText, { color: meter.caption }]}>{t('common.cancel')}</Text>
+            </Pressable>
+          )}
+
           {ack != null && (
             <Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }]}>
               {ack}
             </Text>
           )}
         </View>
+        )}
 
         <SomethingNewRow onPress={() => setSafety(true)} />
       </View>
@@ -330,10 +399,26 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
       <Modal animationType="slide" presentationStyle="pageSheet" visible={open} onRequestClose={() => setOpen(false)}>
         <Sheet
           onClose={() => setOpen(false)}
+          initialScore={editing && checkIn != null && checkIn.score > 0 ? checkIn.score : undefined}
+          initialZones={editing ? ((checkIn?.zones ?? []) as LegZone[]) : undefined}
           onSaved={(score, zones) => {
             setLogged(true);
-            onLogged?.(false);
+            if (!editing) onLogged?.(false);
             record(score, zones);
+          }}
+        />
+      </Modal>
+
+      <Modal
+        animationType="slide"
+        presentationStyle="pageSheet"
+        visible={flareOpen}
+        onRequestClose={() => setFlareOpen(false)}>
+        <Sheet
+          flare
+          onClose={() => setFlareOpen(false)}
+          onSaved={(score, zones) => {
+            logFlare(currentDay(), score, zones);
           }}
         />
       </Modal>
@@ -463,6 +548,102 @@ function SomethingNewRow({ onPress }: { onPress: () => void }) {
   );
 }
 
+/**
+ * The day's check-in, answered: what was said, where, and a way to change it.
+ *
+ * The question used to stay on screen after it was answered, cards live and
+ * looking unanswered, so tapping "No pain today" again and again seemed to do
+ * nothing (it wrote another zero each time). Answered, it is the day's answer,
+ * the way the pain apps show it, with "Edit" to correct it in place. The
+ * mascot wears the answer: hands up for no pain, holding the sore foot
+ * otherwise, never cheering a number.
+ */
+function CheckInSummary({
+  score,
+  zones,
+  flareScore,
+  paused,
+  onEdit,
+}: {
+  score: number;
+  zones: readonly LegZone[];
+  flareScore: number | null;
+  paused: boolean;
+  onEdit: () => void;
+}) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+  const where = zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin'));
+  return (
+    <View style={[styles.summary, { backgroundColor: colors.card }]}>
+      <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.summaryArt}>
+        <CardMascot rig={score === 0 ? handsUpRig : painRig} size={76} surface={colors.card} paused={paused} />
+      </View>
+      <View style={styles.summaryCopy}>
+        <Text style={[styles.summaryTitle, { color: colors.foreground }]}>
+          {score === 0 ? t('home.todayNoPain') : t('home.todayPain', { score })}
+        </Text>
+        {where !== '' && (
+          <Text numberOfLines={2} style={[styles.summaryLine, { color: meter.caption }]}>
+            {t('home.todayWhere', { zones: where })}
+          </Text>
+        )}
+        {flareScore != null && (
+          <Text style={[styles.summaryLine, { color: meter.caption }]}>{t('home.flareLast', { score: flareScore })}</Text>
+        )}
+      </View>
+      <Pressable
+        accessibilityRole="button"
+        hitSlop={10}
+        onPress={onEdit}
+        style={({ pressed }) => [styles.editChip, { backgroundColor: meter.iconTile }, pressed && { opacity: 0.6 }]}>
+        <Text style={[styles.editText, { color: colors.foreground }]}>{t('home.checkInEdit')}</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+/**
+ * "Hurts right now?": any time after the day's answer, straight to help. The
+ * same sheet as the check-in, then always the relief session, because the
+ * point is getting through the next few minutes, not filling in a log.
+ */
+function FlareRow({ onPress }: { onPress: () => void }) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+  // Once the day is answered the "It hurts" card is gone, and this is where
+  // the Home tour's second stop points instead.
+  const tourAnchor = useSpotlightAnchor('home.pain');
+  return (
+    <Pressable
+      ref={tourAnchor}
+      accessibilityRole="button"
+      accessibilityLabel={t('home.flareTitle')}
+      onPress={() => {
+        Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.newRow, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}>
+      <View style={[styles.newTile, { backgroundColor: meter.iconTile }]}>
+        <FluentIcon name="relief" size={26} />
+      </View>
+      <View style={styles.newCopy}>
+        <Text numberOfLines={1} style={[styles.newTitle, { color: colors.foreground }]}>
+          {t('home.flareTitle')}
+        </Text>
+        <Text numberOfLines={2} style={[styles.newSub, { color: meter.caption }]}>
+          {t('home.flareBody')}
+        </Text>
+      </View>
+      <HugeiconsIcon icon={ArrowRight01Icon} size={20} color={meter.caption} strokeWidth={2} />
+    </Pressable>
+  );
+}
+
 /** The same way in, inside the check-in sheet, where the height is spoken for
  * and a line of text is all there is room for. */
 function SomethingNew({ onPress }: { onPress: () => void }) {
@@ -487,8 +668,17 @@ function SomethingNew({ onPress }: { onPress: () => void }) {
 function Sheet({
   onClose,
   onSaved,
+  flare = false,
+  initialScore,
+  initialZones,
 }: {
   onClose: () => void;
+  /** "It hurts right now": its own words, and relief always follows the save,
+   * whatever the number, because getting help is what it was opened for. */
+  flare?: boolean;
+  /** A correction of the day's answer opens on that answer. */
+  initialScore?: number;
+  initialZones?: readonly LegZone[];
   /** Carries the number up with it: the block above owns what gets said back,
    * and it cannot say the right thing without knowing what was logged. The
    * zones travel the same way, so the write stays in one place. */
@@ -507,7 +697,7 @@ function Sheet({
    * a second obligation in front of a check-in whose whole value is that it
    * takes a moment.
    */
-  const [zones, setZones] = useState<readonly LegZone[]>([]);
+  const [zones, setZones] = useState<readonly LegZone[]>(initialZones ?? []);
   /** Set when a fourth zone is refused, cleared by the next accepted tap. The
    * map has to answer every tap — see `toggleZone`. */
   const [zonesFull, setZonesFull] = useState(false);
@@ -545,7 +735,7 @@ function Sheet({
   /** Opens on the middle of their usual range rather than on zero. Zero is a
    * claim, and a slider that starts on one collects a lot of accidental zeros
    * from people who only meant to close the sheet. */
-  const [score, setScore] = useState(() => Math.round((usual.low + usual.high) / 2));
+  const [score, setScore] = useState(() => initialScore ?? Math.round((usual.low + usual.high) / 2));
   const [logged, setLogged] = useState(false);
   /** Mounted only once the offload is actually on its way in — the player owns
    * a video and a frame callback, and neither should be running behind a screen
@@ -581,7 +771,7 @@ function Sheet({
      * it. The score still decides whether the *programme* changes; this only
      * decides whether we show them the thing that helps.
      */
-    if (score <= RELIEF_ABOVE && zones.length === 0) {
+    if (!flare && score <= RELIEF_ABOVE && zones.length === 0) {
       onClose();
       return;
     }
@@ -602,9 +792,11 @@ function Sheet({
       <Animated.View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }, checkPane]}>
         <View style={[styles.grabber, { backgroundColor: meter.track }]} />
 
-        <Text style={[styles.sheetTitle, { color: colors.foreground }]}>{t('home.checkInTitle')}</Text>
+        <Text style={[styles.sheetTitle, { color: colors.foreground }]}>
+          {flare ? t('home.flareSheetTitle') : t('home.checkInTitle')}
+        </Text>
         <Text style={[styles.sheetSub, { color: meter.caption }]}>
-          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+          {flare ? t('home.flareSheetSub') : morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
         </Text>
 
         <View style={styles.readout}>
@@ -648,7 +840,7 @@ function Sheet({
         <SafetySheet visible={safety} onClose={() => setSafety(false)} />
 
         <PrimaryButton
-          label={logged ? t('home.saved') : t('home.save')}
+          label={logged ? t('home.saved') : flare ? t('home.flareSave') : t('home.save')}
           // The button is the colour of the answer it is about to commit. It is
           // the last thing under the thumb before the number is written down, and
           // carrying the same colour as the wedge is what makes it read as "save
@@ -923,6 +1115,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   newCopy: { flex: 1, gap: 2 },
+  summary: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    borderRadius: CARD_RADIUS,
+    borderCurve: 'continuous',
+    paddingVertical: 14,
+    paddingLeft: 10,
+    paddingRight: 16,
+  },
+  summaryArt: { width: 76, height: 76 },
+  summaryCopy: { flex: 1, gap: 3 },
+  summaryTitle: fonts.heavy(19, -0.4),
+  summaryLine: { ...fonts.medium(14, -0.1), lineHeight: 18 },
+  editChip: { height: 34, paddingHorizontal: 14, borderRadius: 17, alignItems: 'center', justifyContent: 'center' },
+  editText: fonts.bold(14, -0.2),
+  cancel: { alignSelf: 'center', paddingVertical: 4 },
+  cancelText: fonts.semibold(15, -0.2),
   newTitle: fonts.bold(16, -0.3),
   newSub: fonts.medium(14, -0.1),
   sheetRoot: { flex: 1 },

@@ -195,8 +195,9 @@ export type AnalyticsEvents = {
    * `network` / `thrown`; never a row's contents. */
   plan_sync_failed: { table: string; code: string };
   plan_settings_changed: { field: 'daysPerWeek' | 'defaultMinutes' | 'equipmentMissing' | 'footType' | 'reminderMinutes' | 'outcome' };
-  /** A pain check-in happened. The score deliberately does not travel. */
-  checkin_logged: { day: number; entries_today: number };
+  /** A pain reading happened. The score deliberately does not travel. `kind`:
+   * the day's check-in, a correction of it, or "it hurts right now". */
+  checkin_logged: { day: number; entries_today: number; kind: 'checkin' | 'edit' | 'flare' };
   morning_stretch_done: { day: number };
   /** The sticker album was opened. Nothing else: which stickers are in it follows check-ins and tests. */
   sticker_book_opened: Record<string, never>;
