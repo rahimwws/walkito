@@ -35,7 +35,7 @@ type GoalSpec = {
 };
 
 export const GOAL_SPECS: Readonly<Record<GoalType, GoalSpec>> = {
-  // Morning pain, 0–10. Reached at ≤ 1 for 14 days running — see `painGoalReached`.
+  // Morning pain, 0–10. Reached at ≤ 1 on 14 of 16 mornings — see `painGoalReached`.
   pain_free_mornings: { target: 1, lowerIsBetter: true, tag: 'pain', chain: 'mobility', priority: 1 },
   arch_hold: { target: 60, lowerIsBetter: false, tag: 'arch', chain: 'arch', priority: 2 },
   calf_raises: { target: 25, lowerIsBetter: false, tag: 'calf', chain: 'calf', priority: 3 },
@@ -48,8 +48,15 @@ export const GOAL_ORDER: readonly GoalType[] = ['pain_free_mornings', 'arch_hold
 
 export const MAX_ACTIVE_GOALS = 3;
 
-/** Days in a row at ≤ 1 that count as pain-free mornings. */
+/** Mornings at ≤ 1 that count as pain-free mornings. */
 export const PAIN_FREE_DAYS = 14;
+/**
+ * The days those mornings are counted over. Two mornings may go unlogged: a
+ * lie-in, a check-in made after noon. Fourteen logged days in a row, with any
+ * gap restarting the count, kept the goal out of reach for anyone who forgot
+ * once, and said nothing about their feet.
+ */
+export const PAIN_FREE_WINDOW = 16;
 
 /** How far along a goal is, 0 to 1. Unmeasured goals count as not started. */
 export function goalProgress(goal: Goal): number {
@@ -147,10 +154,15 @@ export function pickFocus(goals: readonly Goal[], ctx: FocusContext): GoalType |
   return ranked[0].type;
 }
 
-/** Whether morning pain has been at 1 or under for the last 14 days in a row. */
+/**
+ * Whether morning pain has been at 1 or under across the last 16 days, with at
+ * least 14 of them logged. An unlogged morning is not counted either way; a
+ * logged one above 1 restarts it.
+ */
 export function painGoalReached(painByDay: readonly (number | null)[]): boolean {
-  const last = painByDay.slice(-PAIN_FREE_DAYS);
-  return last.length === PAIN_FREE_DAYS && last.every((p) => p != null && p <= 1);
+  const last = painByDay.slice(-PAIN_FREE_WINDOW);
+  const logged = last.filter((p): p is number => p != null);
+  return logged.length >= PAIN_FREE_DAYS && logged.every((p) => p <= 1);
 }
 
 /**

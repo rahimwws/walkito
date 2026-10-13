@@ -8,7 +8,7 @@ import { kv } from '@/shared/lib/storage';
 
 import { retestResults, type RetestResult } from '../program';
 import { dayNumberFor, firstStepOn, fromDateKey, logFor, painLatestOn, programState, toDateKey, writeLog } from '../state';
-import { CHAINS, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
+import { CHAINS, currentLevels, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
 import { doseFor, fitDoses } from './dose';
 import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import {
@@ -16,6 +16,7 @@ import {
   MAX_ACTIVE_GOALS,
   measuredGoalReached,
   painGoalReached,
+  PAIN_FREE_WINDOW,
   startingGoals,
   type Goal,
   type GoalType,
@@ -78,6 +79,12 @@ export type PlanSettings = {
    * for the same reason as `seatedStart`.
    */
   toeWork?: boolean;
+  /**
+   * Numb feet or diabetes, from the safety check: no hopping and no balancing
+   * with the eyes closed, for as long as the plan runs. Health data: never
+   * sent to analytics. Optional for the same reason as `seatedStart`.
+   */
+  protectFeet?: boolean;
 };
 
 const SETTINGS_KEY = 'plan/settings';
@@ -165,8 +172,9 @@ export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date
   const next = { ...planSettings(), ...patch };
   write(SETTINGS_KEY, next);
   for (const field of Object.keys(patch) as (keyof PlanSettings)[]) {
-    // Set once by onboarding, never from Settings; nothing to chart.
-    if (field !== 'seatedStart' && field !== 'toeWork') track('plan_settings_changed', { field });
+    // Set once by onboarding, never from Settings; nothing to chart, and
+    // `protectFeet` says something about the body.
+    if (field !== 'seatedStart' && field !== 'toeWork' && field !== 'protectFeet') track('plan_settings_changed', { field });
   }
   // A rigid foot drops the arch step; a flexible one gets it back.
   const set = outcome();
@@ -529,7 +537,7 @@ export function refreshGoals(now: number = Date.now()): GoalType[] {
   const latest = results[results.length - 1];
   const firstM = measurementsFrom(first);
   const latestM = measurementsFrom(latest);
-  const pain14 = painSeries(today, 14);
+  const pain14 = painSeries(today, PAIN_FREE_WINDOW);
   const pain7 = mean(painSeries(today, 7));
   const painFirstWeek = mean(painSeries(addDays(programState().startDate, 6), 7));
 
@@ -654,7 +662,7 @@ const WEEKS_SCHEMA_KEY = 'plan/weeks-schema';
  * doses, fitted to each day's minutes. Not a schema bump, which would drop the
  * weeks and with them the chain levels the next week progresses from.
  */
-const WEEKS_DOSES = 2;
+const WEEKS_DOSES = 3;
 const WEEKS_DOSES_KEY = 'plan/weeks-doses';
 
 function redosed(store: WeekStore): WeekStore {
@@ -679,12 +687,29 @@ function redosed(store: WeekStore): WeekStore {
   return out;
 }
 
+/**
+ * Every week's levels in the current chain layout. Weeks stored, or restored
+ * from the server, before the single-leg floor raise joined the calf chain
+ * count their calf level in the old layout; `currentLevels` moves each to the
+ * same exercise. Idempotent, so it runs on every read and needs no flag.
+ */
+function withCurrentLevels(store: WeekStore): WeekStore {
+  let changed = false;
+  const out: WeekStore = {};
+  for (const [start, plan] of Object.entries(store)) {
+    const levels = plan.levels == null ? plan.levels : currentLevels(plan.levels);
+    if (levels !== plan.levels) changed = true;
+    out[start] = levels === plan.levels ? plan : { ...plan, levels };
+  }
+  return changed ? out : store;
+}
+
 function weeks(): WeekStore {
   if (Number(kv.getString(WEEKS_SCHEMA_KEY) ?? 0) !== WEEKS_SCHEMA) {
     kv.remove(WEEKS_KEY);
     kv.set(WEEKS_SCHEMA_KEY, String(WEEKS_SCHEMA));
   }
-  const store = read<WeekStore>(WEEKS_KEY, {});
+  const store = withCurrentLevels(read<WeekStore>(WEEKS_KEY, {}));
   if (Number(kv.getString(WEEKS_DOSES_KEY) ?? 0) !== WEEKS_DOSES) {
     kv.set(WEEKS_DOSES_KEY, String(WEEKS_DOSES));
     const next = redosed(store);
@@ -707,6 +732,7 @@ export function eligibilityFor(dateKey: string): Omit<EligibilityContext, 'settl
     painLast14: painSeries(dateKey, 14),
     shortFootStandingSessions: standing,
     ...(settings.seatedStart === true ? { seatedOnly: true } : {}),
+    ...(settings.protectFeet === true ? { protectFeet: true } : {}),
   };
 }
 

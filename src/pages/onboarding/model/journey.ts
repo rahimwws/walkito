@@ -80,11 +80,16 @@ export function goalValuesFor(role: Role | null, painless: boolean): string[] {
 /** The answers that mean starting week one sitting down. */
 const SEATED = ['calf', 'pop', 'diabetes', 'fall'];
 
+/** The answers that keep hopping and eyes-closed balance out of the plan. */
+export const PROTECTED_FEET = ['numb', 'diabetes'];
+
 export type SafetyPlan = {
   /** Week one seated, and one step lighter. */
   seated: boolean;
   /** Numbness: the ordinary plan, watched in the check-ins. */
   numb: boolean;
+  /** Numb feet or diabetes: no hops and no eyes-closed balance, for good (`PlanSettings.protectFeet`). */
+  protectFeet: boolean;
 };
 
 export function safetyPlan(answers: Answers): SafetyPlan {
@@ -92,6 +97,7 @@ export function safetyPlan(answers: Answers): SafetyPlan {
   return {
     seated: picked.some((value) => SEATED.includes(value)),
     numb: picked.includes('numb'),
+    protectFeet: picked.some((value) => PROTECTED_FEET.includes(value)),
   };
 }
 

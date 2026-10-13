@@ -22,7 +22,7 @@ export type PlanDose = {
    * scrunch is two seconds, a pogo hop one. Three when absent. */
   repSec?: number;
   perSide: boolean;
-  /** Only the calf work at levels 4–5 with a step: add a backpack. */
+  /** Only the calf work on a step at levels 4–5: add a backpack. Never hops. */
   addWeight?: boolean;
 };
 
@@ -67,6 +67,8 @@ const TABLE: Readonly<Record<DoseClass, Bands>> = {
  * - **Heel raise on a towel**: the 3 · 2 · 3 tempo is eight seconds a rep, each
  *   leg, so two sets of eight (under five minutes); the backpack, not more
  *   reps, is how it gets harder. Four sets of ten was eleven minutes.
+ * - **Single-leg heel raise on the floor**: the same move and tempo as the
+ *   towel raise, without the step, so the same sets and reps.
  * - **Heel drop**: up on both, down slowly on one, four seconds a rep.
  * - **Pogo hops**: one second a hop.
  * - **Ankle rocks**: rocked, two seconds each, not held like a stretch.
@@ -77,6 +79,7 @@ const OWN: Readonly<Record<string, Bands>> = {
   toe_spread: [{ sets: 2, reps: 10, holdSec: 2 }, { sets: 2, reps: 12, holdSec: 2 }, { sets: 3, reps: 12, holdSec: 2 }],
   short_foot_single: [{ sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 8, holdSec: 5 }],
   heel_raise_towel: [{ sets: 2, reps: 6 }, { sets: 2, reps: 8 }, { sets: 2, reps: 8 }],
+  heel_raise_plain: [{ sets: 2, reps: 6 }, { sets: 2, reps: 8 }, { sets: 2, reps: 8 }],
   heel_drop_straight: [{ sets: 2, reps: 8, repSec: 4 }, { sets: 2, reps: 10, repSec: 4 }, { sets: 2, reps: 12, repSec: 4 }],
   pogo_hops: [{ sets: 2, reps: 10, repSec: 1 }, { sets: 2, reps: 10, repSec: 1 }, { sets: 3, reps: 10, repSec: 1 }],
   ankle_rocks: [{ sets: 2, reps: 10, repSec: 2 }, { sets: 2, reps: 12, repSec: 2 }, { sets: 2, reps: 15, repSec: 2 }],
@@ -100,11 +103,18 @@ const BILATERAL = new Set([
   'toe_spread',
 ]);
 
+const TEMPO_IDS = new Set(['heel_raise_towel', 'heel_raise_plain']);
+
 /**
  * The dose for an exercise at the level the plan has it at.
  *
  * `level` defaults to the exercise's own level; a day that steps back passes a
- * lower one. `heel_raise_towel` keeps its 3 · 2 · 3 tempo at every level.
+ * lower one. The single-leg heel raises keep their 3 · 2 · 3 tempo at every
+ * level.
+ *
+ * The backpack is for the slow calf work on a step only. Pogo hops sit in the
+ * same dose class at level 5, and "add a backpack" reached them too: weight is
+ * never how hopping gets harder.
  */
 export function doseFor(id: string, level?: number, hasStep = true): PlanDose {
   const meta = planMeta(id);
@@ -112,8 +122,8 @@ export function doseFor(id: string, level?: number, hasStep = true): PlanDose {
   const at = Math.max(1, Math.min(5, level ?? meta?.level ?? 1));
   const base = (OWN[id] ?? TABLE[cls])[bandOf(at)];
   const dose: PlanDose = { ...base, perSide: !BILATERAL.has(id) };
-  if (id === 'heel_raise_towel') dose.tempo = HEEL_RAISE_TEMPO;
-  if (cls === 'calf' && at >= 4 && hasStep) dose.addWeight = true;
+  if (TEMPO_IDS.has(id)) dose.tempo = HEEL_RAISE_TEMPO;
+  if (cls === 'calf' && at >= 4 && hasStep && id !== 'pogo_hops') dose.addWeight = true;
   return dose;
 }
 

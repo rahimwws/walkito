@@ -165,6 +165,7 @@ export function planSettingsFrom(
 ): Partial<PlanSettings> {
   const out: Partial<PlanSettings> = {};
   if (safetyPlan(answers).seated) out.seatedStart = true;
+  if (safetyPlan(answers).protectFeet) out.protectFeet = true;
   if (toeWorkFrom(answers)) out.toeWork = true;
   const foot = footTypeFor(miniTest?.arch ?? null);
   if (foot !== 'unknown') out.footType = foot;

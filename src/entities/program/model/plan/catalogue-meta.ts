@@ -62,6 +62,7 @@ export const PLAN_META: readonly PlanMeta[] = [
   m({ id: 'heel_raise_double', kind: 'strength', tags: ['calf'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calf' }),
   m({ id: 'heel_raise_seated', kind: 'strength', tags: ['calf'], position: 'seated', equipment: [], fascia: false, level: 1, chain: 'calf', dose: 'calf' }),
   m({ id: 'heel_raise_hold', kind: 'strength', tags: ['calf', 'pain'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calfHold' }),
+  m({ id: 'heel_raise_plain', kind: 'strength', tags: ['calf'], position: 'standing', equipment: [], fascia: true, level: 3, chain: 'calf', dose: 'calf' }),
   m({ id: 'big_toe_lift', kind: 'strength', tags: ['arch'], position: 'seated', equipment: [], fascia: false, level: 1, chain: 'arch', dose: 'arch' }),
   m({ id: 'towel_scrunch', kind: 'strength', tags: ['arch'], position: 'seated', equipment: ['towel'], fascia: false, level: 1, chain: 'arch', dose: 'arch' }),
   m({ id: 'knee_to_wall', kind: 'mobility', tags: ['calf'], position: 'standing', equipment: [], fascia: false, level: 1, chain: 'mobility', dose: 'stretch' }),
@@ -83,18 +84,44 @@ export function planMeta(id: string): PlanMeta | undefined {
 
 /**
  * The progression chains, easiest first. The engine moves along a chain one
- * step at a time and never jumps.
+ * step at a time and never more than one level up (`nextAbove`).
+ *
+ * The single-leg raise on the floor sits between the two-foot hold and the
+ * towel raise on a step. Without it the calf work went from both feet on the
+ * floor to one foot on a step with a backpack in one move, and with no step it
+ * went from the hold straight to pogo hops. Adding it moved the steps above it
+ * up by one: `CHAINS_VERSION` and `currentLevels` carry stored levels across.
  *
  * Mobility and recovery are not progressions — their order is the rotation.
  */
 export const CHAINS: Readonly<Record<ChainName, readonly string[]>> = {
-  calf: ['heel_raise_seated', 'heel_raise_double', 'heel_raise_hold', 'heel_raise_towel', 'heel_drop_straight', 'pogo_hops'],
+  calf: ['heel_raise_seated', 'heel_raise_double', 'heel_raise_hold', 'heel_raise_plain', 'heel_raise_towel', 'heel_drop_straight', 'pogo_hops'],
   arch: ['towel_scrunch', 'big_toe_lift', 'short_foot_seated', 'short_foot_double', 'short_foot_single'],
   balance: ['single_leg_hold', 'eyes_closed_stand', 'balance_pillow'],
   hip: ['hip_abduction', 'step_down'],
   mobility: ['fascia_stretch', 'calf_stretch_straight', 'calf_stretch_bent', 'knee_to_wall', 'ankle_rocks'],
   recovery: ['foot_roll', 'sole_massage'],
 };
+
+/**
+ * The layout of `CHAINS` that stored levels are indices into. A week stored
+ * before version 2 has no `_chains` on its levels, and its calf index counts
+ * the old calf chain, which had no `heel_raise_plain`.
+ */
+export const CHAINS_VERSION = 2;
+
+const CALF_V1 = ['heel_raise_seated', 'heel_raise_double', 'heel_raise_hold', 'heel_raise_towel', 'heel_drop_straight', 'pogo_hops'];
+
+/**
+ * Stored chain levels in the current layout: the same exercise on every chain,
+ * whatever layout they were saved in. Idempotent, so a week can be passed
+ * through it on every read, including weeks restored from the server.
+ */
+export function currentLevels<T extends Record<ChainName, number> & { _chains?: number }>(levels: T): T {
+  if (levels._chains === CHAINS_VERSION) return levels;
+  const id = CALF_V1[Math.max(0, Math.min(CALF_V1.length - 1, levels.calf ?? 0))];
+  return { ...levels, calf: Math.max(0, CHAINS.calf.indexOf(id)), _chains: CHAINS_VERSION };
+}
 
 /** Chains that progress. The other two rotate. */
 export const PROGRESSING: readonly ChainName[] = ['calf', 'arch', 'balance', 'hip'];

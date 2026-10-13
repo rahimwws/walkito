@@ -16,7 +16,7 @@ export const QUICK_PT = {
   'quick.preRun.cue': 'Acorde o pé. Não alongue por muito tempo.',
   'quick.postRun.cue': 'Segure cada alongamento. Sem balançar.',
   'quick.atWork.cue': 'Ninguém vai perceber. Pode ficar de sapato.',
-  'quick.morning.cue': 'Antes de o pé tocar o chão.',
+  'quick.morning.cue': 'Antes de o pé tocar o chão. Segure 10 segundos, solte, 10 vezes em cada pé.',
 
   'quick.seated': 'sentado',
   'quick.standing': 'em pé',

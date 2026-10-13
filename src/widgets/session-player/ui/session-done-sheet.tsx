@@ -66,12 +66,18 @@ const FEELS: readonly {
    * colours on the picked pill, which says the pick by its fill. */
   emoji: FluentName;
   /** What the plan stores. "It hurt" is a hard session as far as the dose is
-   * concerned; the pain score it goes on to ask for is kept on its own. */
+   * concerned; the pain score it goes on to ask for is kept on its own.
+   *
+   * "No" is not. Not having two more good reps in you is the effort the work
+   * is meant to reach (a set ends one to three reps short of failure), so it
+   * keeps the level, as "About right" does. Stored as `hard`, a single "No"
+   * stepped the next week back and taught people that honest effort costs
+   * them progress. Only pain steps the plan down. */
   feedback: Feedback;
 }[] = [
   { feel: 'easy', label: 'player.feedback.easy', emoji: 'feather', feedback: 'easy' },
   { feel: 'right', label: 'player.feedback.right', emoji: 'target', feedback: 'ok' },
-  { feel: 'hard', label: 'player.feedback.hard', emoji: 'strength', feedback: 'hard' },
+  { feel: 'hard', label: 'player.feedback.hard', emoji: 'strength', feedback: 'ok' },
   { feel: 'hurt', label: 'player.feedback.hurt', emoji: 'bandage', feedback: 'hard' },
 ];
 
@@ -274,7 +280,7 @@ function FeelCard({ onAnswer }: { onAnswer: (feel: Feel) => void }) {
         <Text style={[styles.lineText, { color: picked == null ? meter.caption : meter.label }]}>
           {picked == null
             ? t('player.feedback.purpose')
-            : picked === 'right'
+            : picked === 'right' || picked === 'hard'
               ? t('player.feedback.keeps')
               : t('player.feedback.adjusts')}
         </Text>

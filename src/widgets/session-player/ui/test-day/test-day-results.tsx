@@ -48,7 +48,7 @@ import { settle } from '@/shared/lib/motion';
 
 import { TEST_PICTURES } from '../../config/test-pictures';
 import { goalValuesOf, legsOf, resultRows, type ResultRow, type TestKind } from '../../model/test-day';
-import { CARD_ORDER, daysBetween, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
+import { CARD_ORDER, daysBetween, realGain, signed, verdictOf, type CardGoal, type Verdict } from './results-math';
 import { GOAL_ZONE } from './test-meta';
 import { TestHistoryBars, TestRing } from './test-visuals';
 
@@ -375,7 +375,7 @@ function heroOf(rows: readonly ResultRow[], verdict: Verdict, reached: readonly 
   let bestShare = 0;
   for (const type of CARD_ORDER) {
     const row = rows.find((candidate) => candidate.type === type);
-    if (row?.change == null || row.change <= 0) continue;
+    if (row?.change == null || !realGain(type, row.change)) continue;
     const share = row.change / Math.max(1, row.target);
     if (share > bestShare) {
       bestShare = share;

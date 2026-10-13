@@ -1,10 +1,10 @@
 import { describe, expect, test } from 'bun:test';
 
 import { CLIPS } from '../src/shared/config/clip-manifest';
-import { PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
-import { doseSeconds } from '../src/entities/program/model/plan/dose';
+import { CHAINS, currentLevels, PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
+import { doseFor, doseSeconds } from '../src/entities/program/model/plan/dose';
 import { allowed, playableId, pogoAllowed, type EligibilityContext } from '../src/entities/program/model/plan/eligibility';
-import { advanceGoals, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
+import { advanceGoals, painGoalReached, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
 import { adjustToday, twoMinuteVersion } from '../src/entities/program/model/plan/today';
 import {
   addDays,
@@ -339,5 +339,75 @@ describe('goals', () => {
     expect(reached).toEqual(['arch_hold']);
     expect(goals.find((g) => g.type === 'arch_hold')?.status).toBe('maintaining');
     expect(added).toEqual(['pain_free_mornings']);
+  });
+});
+
+describe('the exercise review fixes', () => {
+  const calm = { painLast14: Array(14).fill(0) };
+  const easyWith = (id: string) => [
+    { date: '2026-09-22', feedback: 'easy' as const, exerciseIds: [id] },
+    { date: '2026-09-24', feedback: 'easy' as const, exerciseIds: [id] },
+  ];
+  const noStep = (patch: Partial<WeekInput> = {}) =>
+    input({
+      goals: [goal('calf_raises', 10)],
+      painLastWeek: Array(7).fill(0),
+      painWeekBefore: Array(7).fill(0),
+      eligibility: { ...input().eligibility, ...calm, equipmentMissing: ['step'] },
+      ...patch,
+    });
+
+  test('the single-leg floor raise comes after the two-foot hold', () => {
+    const hold = CHAINS.calf.indexOf('heel_raise_hold');
+    expect(CHAINS.calf[hold + 1]).toBe('heel_raise_plain');
+    const plan = buildWeek(noStep({ levels: { ...DEFAULT_LEVELS, calf: hold }, lastWeekFeedback: easyWith('heel_raise_hold') }));
+    expect(CHAINS.calf[plan.levels.calf]).toBe('heel_raise_plain');
+  });
+
+  test('with no step the calf work never jumps from the floor raise to hops', () => {
+    const plain = CHAINS.calf.indexOf('heel_raise_plain');
+    const plan = buildWeek(noStep({ levels: { ...DEFAULT_LEVELS, calf: plain }, lastWeekFeedback: easyWith('heel_raise_plain') }));
+    expect(CHAINS.calf[plan.levels.calf]).toBe('heel_raise_plain');
+    expect(ids(plan)).not.toContain('pogo_hops');
+  });
+
+  test('hops never carry a backpack; the slow work on a step does', () => {
+    expect(doseFor('pogo_hops', 5, true).addWeight).toBeUndefined();
+    expect(doseFor('heel_drop_straight', 4, true).addWeight).toBe(true);
+    expect(doseFor('heel_raise_plain').tempo).toBeDefined();
+  });
+
+  test('no towel still gets arch work, from the step above at the same level', () => {
+    const plan = buildWeek(
+      input({
+        goals: [goal('arch_hold', 10)],
+        levels: { ...DEFAULT_LEVELS, arch: 0 },
+        eligibility: { ...input().eligibility, equipmentMissing: ['towel'] },
+      }),
+    );
+    expect(plan.days.find((d) => d.type === 'strength')!.exercises[0].id).toBe('big_toe_lift');
+  });
+
+  test('numb feet or diabetes: no hops and no eyes-closed balance, ever', () => {
+    const ctx: EligibilityContext = { ...input().eligibility, ...calm, settling: false, protectFeet: true };
+    expect(allowed('pogo_hops', ctx)).toBe(false);
+    expect(allowed('eyes_closed_stand', ctx)).toBe(false);
+    expect(allowed('pogo_hops', { ...ctx, protectFeet: false })).toBe(true);
+  });
+
+  test('stored levels from the old calf chain land on the same exercise', () => {
+    // Old layout: seated, double, hold, towel, drop, hops. Index 3 was the towel raise.
+    const moved = currentLevels({ ...DEFAULT_LEVELS, _chains: undefined, calf: 3 });
+    expect(CHAINS.calf[moved.calf]).toBe('heel_raise_towel');
+    expect(currentLevels(moved)).toBe(moved);
+    expect(currentLevels({ ...DEFAULT_LEVELS, calf: 3 }).calf).toBe(3);
+  });
+
+  test('pain-free mornings: 14 of the last 16 logged at 1 or under', () => {
+    const fine = Array(16).fill(1);
+    expect(painGoalReached(fine)).toBe(true);
+    expect(painGoalReached([...fine.slice(0, 14), null, null])).toBe(true);
+    expect(painGoalReached([...fine.slice(0, 13), null, null, null])).toBe(false);
+    expect(painGoalReached([...fine.slice(0, 15), 2])).toBe(false);
   });
 });

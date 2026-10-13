@@ -16,7 +16,7 @@ export const QUICK_ES = {
   'quick.preRun.cue': 'Despierta el pie. No estires mucho tiempo.',
   'quick.postRun.cue': 'Mantén cada estiramiento. Sin rebotes.',
   'quick.atWork.cue': 'Nadie lo notará. Puedes dejarte los zapatos.',
-  'quick.morning.cue': 'Antes de que el pie toque el suelo.',
+  'quick.morning.cue': 'Antes de que el pie toque el suelo. Aguanta 10 segundos, suelta, 10 veces cada pie.',
 
   'quick.seated': 'sentado',
   'quick.standing': 'de pie',

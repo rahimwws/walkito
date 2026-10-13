@@ -38,8 +38,13 @@ describe('the safety check only changes the plan', () => {
   test('a fall or a red flag starts seated, numbness does not', () => {
     expect(safetyPlan({ safety: ['fall'] }).seated).toBe(true);
     expect(safetyPlan({ safety: ['pop'] }).seated).toBe(true);
-    expect(safetyPlan({ safety: ['numb'] })).toEqual({ seated: false, numb: true });
-    expect(safetyPlan({ safety: ['none'] })).toEqual({ seated: false, numb: false });
+    expect(safetyPlan({ safety: ['numb'] })).toEqual({ seated: false, numb: true, protectFeet: true });
+    expect(safetyPlan({ safety: ['none'] })).toEqual({ seated: false, numb: false, protectFeet: false });
+  });
+
+  test('numb feet or diabetes keep hops and eyes-closed balance out, for good', () => {
+    expect(safetyPlan({ safety: ['diabetes'] }).protectFeet).toBe(true);
+    expect(safetyPlan({ safety: ['fall'] }).protectFeet).toBe(false);
   });
 
   test('says something only when it changed something', () => {

@@ -3,13 +3,15 @@ import { daysBetween, fromDateKey, toDateKey } from '../state';
 
 import {
   CHAINS,
+  CHAINS_VERSION,
+  currentLevels,
   PLAN_META,
   planMeta,
   type ChainName,
   type PlanKind,
 } from './catalogue-meta';
 import { doseFor, doseSeconds, fitDoses, type PlanDose } from './dose';
-import { allowed, atOrBelow, nextAbove, type EligibilityContext } from './eligibility';
+import { allowed, atOrBelow, nearestOn, nextAbove, type EligibilityContext } from './eligibility';
 import { GOAL_SPECS, pickFocus, type Goal, type GoalType } from './goals';
 
 /**
@@ -47,7 +49,8 @@ export type RationaleKind = 'first' | 'painUp' | 'hard' | 'easy' | 'painLow' | '
 
 export type Rationale = { kind: RationaleKind; /** The pain figure for `painLow`. */ n?: number };
 
-export type ChainLevels = Record<ChainName, number>;
+/** Indices into `CHAINS`. `_chains` is the layout they count in; see `currentLevels`. */
+export type ChainLevels = Record<ChainName, number> & { _chains?: number };
 
 export type WeekPlan = {
   /** Monday, `YYYY-MM-DD`. */
@@ -122,7 +125,7 @@ export const WEEK_SHAPES: Readonly<Record<DaysPerWeek, readonly DayType[]>> = {
 export const MIN_EXERCISES = 2;
 export const MAX_EXERCISES = 4;
 
-export const DEFAULT_LEVELS: ChainLevels = { calf: 0, arch: 0, balance: 0, hip: 0, mobility: 0, recovery: 0 };
+export const DEFAULT_LEVELS: ChainLevels = { calf: 0, arch: 0, balance: 0, hip: 0, mobility: 0, recovery: 0, _chains: CHAINS_VERSION };
 
 /** Test cadence: every two weeks until the first goal is reached, then every four. */
 export const TEST_EVERY_DAYS = 14;
@@ -210,7 +213,7 @@ function planned(id: string, focus: boolean, hasStep: boolean, level?: number, m
 /** The exercise a chain is at, clamped to what is allowed. Null when nothing on it is. */
 function chainExercise(chain: ChainName, levels: ChainLevels, ctx: EligibilityContext, cap?: number): string | null {
   const at = Math.min(levels[chain], cap ?? CHAINS[chain].length - 1);
-  return atOrBelow(chain, at, ctx)?.id ?? null;
+  return nearestOn(chain, at, ctx)?.id ?? null;
 }
 
 /** A rotating pick from a pool, so consecutive days and weeks differ. */
@@ -271,13 +274,13 @@ export function buildWeek(input: WeekInput): WeekPlan {
 
   // Progression on the focus chain, then every chain clamped to what is allowed
   // this week — week one and missing equipment can both pull a chain back.
-  let levels = { ...input.levels };
+  let levels: ChainLevels = { ...currentLevels(input.levels), _chains: CHAINS_VERSION };
   if (focus != null && input.weekIndex > 1) {
     const chain = focusChainOf(focus);
     levels = progress(levels, chain, input, ctx, capFor(focus, chain));
   }
   for (const chain of Object.keys(CHAINS) as ChainName[]) {
-    const clamped = atOrBelow(chain, levels[chain], ctx);
+    const clamped = nearestOn(chain, levels[chain], ctx);
     if (clamped != null) levels[chain] = clamped.index;
   }
 
@@ -371,7 +374,7 @@ function focusFor(slot: PlanKind, goal: GoalType, levels: ChainLevels, ctx: Elig
   if (tagged != null) return tagged;
   // Nothing of the day's own kind serves the goal: bring the goal's exercise,
   // at the bottom of its chain — a mobility day stays light.
-  return atOrBelow(chain, 0, ctx)?.id ?? null;
+  return nearestOn(chain, 0, ctx)?.id ?? null;
 }
 
 /** A secondary or maintained goal's exercise on a strength day. */

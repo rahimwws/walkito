@@ -221,6 +221,7 @@ Which ad, campaign or link brought an install, and what it went on to pay. Throu
 
 - **Never run** `eas build` without `--local`, `eas submit` or `--auto-submit`. The EAS workflow `release.yml` publishes updates only and stops when a build is needed; no workflow builds or submits. If a task seems to need a cloud build, stop and ask.
 - **Update or build?** `bun run ship` answers it by the fingerprint (`scripts/can-update.mjs`): a JS-only change goes out as an EAS Update; a native change builds locally into `.builds/` and prints the upload command. `bun run ship --dry-run` only says which.
+- **The fingerprint leaves out package.json scripts and .gitignore** (`fingerprint.config.js`): neither reaches the binary, and hashed they turned every script edit into a store build. Changing that file is itself a native change.
 
 **OTA (JS and assets only, fingerprint unchanged):**
 

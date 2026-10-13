@@ -16,7 +16,7 @@ export const QUICK_FR = {
   'quick.preRun.cue': 'Réveille le pied. Ne l’étire pas longtemps.',
   'quick.postRun.cue': 'Tiens chaque étirement. Sans à-coups.',
   'quick.atWork.cue': 'Personne ne le remarquera. Garde tes chaussures.',
-  'quick.morning.cue': 'Avant que ton pied touche le sol.',
+  'quick.morning.cue': 'Avant que ton pied touche le sol. Tiens 10 secondes, relâche, 10 fois par pied.',
 
   // Position names, gender-neutral rather than «assis/debout».
   'quick.seated': 'en position assise',
