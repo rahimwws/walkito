@@ -115,7 +115,7 @@ export function Founders({ lang }: { lang: Lang }) {
         </a>
         {PEOPLE[lang][1]}
         <a href={LINKEDIN.rahim} rel="noopener" target="_blank">
-          Rahim Hudaykylyyev
+          Rahim Hudaykulyyev
         </a>
         {PEOPLE[lang][2]}
       </p>

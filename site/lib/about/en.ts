@@ -17,7 +17,7 @@ export const ABOUT_EN: About = {
   description:
     'What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.',
   h1: 'About Walkito',
-  lede: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.',
+  lede: 'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.',
   sections: [
     {
       h2: 'What is Walkito?',
@@ -36,7 +36,7 @@ export const ABOUT_EN: About = {
         // The one paragraph writers quote (outreach). The count is the unique studies and
         // guidelines linked on English pages (Oct 12, 2026: 261); 'more than 250' stays true as pages grow.
         'Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. No licensed clinician has reviewed the guides yet.',
-        'Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
+        'Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
         'Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.',
         'Walkito has no sponsors, no affiliate links and no paid placement. Nothing is on a page because someone paid for it. We recheck a page when new research on its topic comes out. Every guide follows five rules:',
       ],

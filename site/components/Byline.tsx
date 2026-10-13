@@ -6,7 +6,7 @@ import { reviewFor } from '@/lib/reviewer';
 import { AUTHOR_NAMES, authorHref, formatDate, howWeResearchHref } from '@/lib/schema';
 
 /**
- * "Rahim Hudaykylyyev & Rahman Bazarov · Based on <main source> and <N> published studies · How
+ * "Rahim Hudaykulyyev & Rahman Bazarov · Based on <main source> and <N> published studies · How
  * we research →", near the top of every article.
  *
  * The credibility comes from the sources, not from a name: a stranger does not

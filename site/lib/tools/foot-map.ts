@@ -292,7 +292,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
+      'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
     imageAlt: {
       side: 'Inner side of a right lower leg and foot, showing the shin, the Achilles tendon, the heel, the ankle, the arch and the big toe.',
       sole: 'Sole of a right foot showing the heel bone, the arch, the metatarsal bones and the toes.',
@@ -497,7 +497,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito es un plan de ejercicios personal para el dolor de talón, pie y pierna que se adapta a cómo sientes los pies cada día.',
+      'Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies.',
     imageAlt: {
       side: 'Lado interior de una pierna y un pie derechos, con la espinilla, el tendón de Aquiles, el talón, el tobillo, el arco y el dedo gordo.',
       sole: 'Planta de un pie derecho con el hueso del talón, el arco, los metatarsianos y los dedos.',
@@ -705,7 +705,7 @@ export const FOOT_MAP: Record<FullLang, FootMapCopy> = {
       ],
     },
     appText:
-      'Walkito: персональный план упражнений при боли в пятке, стопе и ноге, который подстраивается под то, как ваши стопы чувствуют себя каждый день.',
+      'Walkito составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
     imageAlt: {
       side: 'Правая голень и стопа с внутренней стороны: голень, ахиллово сухожилие, пятка, лодыжка, свод и большой палец.',
       sole: 'Подошва правой стопы: пяточная кость, свод, плюсневые кости и пальцы.',

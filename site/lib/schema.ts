@@ -21,7 +21,7 @@ export function howWeResearchHref(lang: Lang): string {
  */
 export const AUTHORS = [
   {
-    name: 'Rahim Hudaykylyyev',
+    name: 'Rahim Hudaykulyyev',
     sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
   },
   { name: 'Rahman Bazarov', sameAs: ['https://www.linkedin.com/in/rahman-bazarov/'] },
@@ -37,7 +37,7 @@ export const AUTHOR_ROLE: Record<Lang, string> = {
   de: 'Mitgründer von Walkito',
 };
 
-/** Both names for a byline: "Rahim Hudaykylyyev & Rahman Bazarov". */
+/** Both names for a byline: "Rahim Hudaykulyyev & Rahman Bazarov". */
 export const AUTHOR_NAMES = AUTHORS.map((a) => a.name).join(' & ');
 
 export const FOUNDERS_ID = 'founders';

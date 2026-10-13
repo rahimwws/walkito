@@ -18,7 +18,7 @@ should be seen by a clinician.
 
 ## Who writes this
 
-- The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
+- The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
 - No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
@@ -9382,7 +9382,7 @@ Walkito adatta ogni sessione in base a un check-in del dolore al mattino, prima 
 
 https://walkito.site/it/chi-siamo/
 
-Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e gamba, che si adatta ogni giorno a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.
+Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.
 
 ### Cos’è Walkito?
 
@@ -9396,7 +9396,7 @@ Walkito è disponibile in inglese, russo e spagnolo.
 
 ### Come facciamo ricerca
 
-Le guide di questo sito le scrivono Rahim Hudaykylyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](https://walkito.site/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](https://walkito.site/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.
+Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](https://walkito.site/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](https://walkito.site/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.
 
 Leggiamo l’articolo completo, non solo l’abstract, prima che un suo numero finisca su una pagina. Ogni dose, grado e cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare.
 

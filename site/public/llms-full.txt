@@ -17,7 +17,7 @@ should be seen by a clinician.
 
 ## Who writes this
 
-- The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
+- The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
 - No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
@@ -11071,7 +11071,7 @@ Yes. In a 2019 trial, foot exercises built foot muscle size and strength as well
 
 https://walkito.site/about/
 
-Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.
+Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.
 
 ### What is Walkito?
 
@@ -11089,7 +11089,7 @@ Walkito is in English, Russian and Spanish.
 
 Walkito’s guides are built from more than 250 published studies and clinical guidelines. We read the full paper, not just the abstract, before a number goes on a page, and every grade and figure links to the study behind it, so you can open it and check. No licensed clinician has reviewed the guides yet.
 
-Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), [flat feet exercises](https://walkito.site/flat-feet-exercises/), [heel pain from running](https://walkito.site/heel-pain-runners/) and [the evidence page](https://walkito.site/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.
+Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), [flat feet exercises](https://walkito.site/flat-feet-exercises/), [heel pain from running](https://walkito.site/heel-pain-runners/) and [the evidence page](https://walkito.site/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.
 
 Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.
 

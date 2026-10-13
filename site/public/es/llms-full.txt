@@ -18,7 +18,7 @@ should be seen by a clinician.
 
 ## Who writes this
 
-- The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
+- The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
 - No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
@@ -9641,7 +9641,7 @@ Una pantorrilla tensa es grave cuando viene con hinchazón, calor, enrojecimient
 
 https://walkito.site/es/sobre-walkito/
 
-Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pierna que se ajusta cada día a cómo se sienten tus pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.
+Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.
 
 ### ¿Qué es Walkito?
 

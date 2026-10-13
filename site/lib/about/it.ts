@@ -19,7 +19,7 @@ export const ABOUT_IT: About = {
   description:
     'Cos’è Walkito, come scriviamo e documentiamo le guide su dolore al tallone e piede piatto, cosa Walkito non fa e come segnalarci un errore.',
   h1: 'Chi siamo',
-  lede: 'Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e gamba, che si adatta ogni giorno a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.',
+  lede: 'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.',
   sections: [
     {
       h2: 'Cos’è Walkito?',
@@ -34,7 +34,7 @@ export const ABOUT_IT: About = {
       h2: 'Come facciamo ricerca',
       id: 'how-we-research',
       paragraphs: [
-        'Le guide di questo sito le scrivono Rahim Hudaykylyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
+        'Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
         'Leggiamo l’articolo completo, non solo l’abstract, prima che un suo numero finisca su una pagina. Ogni dose, grado e cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare.',
         'Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica gli dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto lo sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando escono nuovi studi. Una regola popolare che uno studio ha testato senza trovarle conferma è segnata **Non supportato**.',
         'Walkito non ha sponsor, link di affiliazione o contenuti a pagamento. Niente è su una pagina perché qualcuno ha pagato. Ricontrolliamo una pagina quando esce nuova ricerca sul suo argomento. Ogni guida segue cinque regole:',

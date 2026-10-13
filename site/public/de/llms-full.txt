@@ -18,7 +18,7 @@ should be seen by a clinician.
 
 ## Who writes this
 
-- The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
+- The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
 - No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
@@ -9382,7 +9382,7 @@ Walkito passt jede Einheit nach einem Schmerz-Check-in am Morgen an, bevor du an
 
 https://walkito.site/de/ueber-walkito/
 
-Walkito ist ein persönlicher Übungsplan bei Schmerzen in Ferse, Fuß und Bein, der sich jeden Tag daran anpasst, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.
+Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen. Diese Seite erklärt, wie die Ratgeber auf dieser Website geschrieben werden und woher ihre Zahlen kommen. Sie sagt auch, was Walkito nicht tut und wie du uns Bescheid gibst, wenn etwas nicht stimmt.
 
 ### Was ist Walkito?
 
@@ -9396,7 +9396,7 @@ Walkito gibt es auf Englisch, Russisch und Spanisch.
 
 ### Wie wir recherchieren
 
-Rahim Hudaykylyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](https://walkito.site/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](https://walkito.site/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.
+Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](https://walkito.site/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](https://walkito.site/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.
 
 Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl daraus auf eine Seite kommt. Jede Dosis, jede Bewertung und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst.
 
