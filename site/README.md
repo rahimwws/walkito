@@ -5,10 +5,11 @@ ships in. No server.
 
 The site is split into seven root layouts (`app/(en)`, `app/ru`, `app/es`,
 `app/pt`, `app/fr`, `app/it`, `app/de`) because `<html lang>` can only be set
-by a root layout. English, Russian and Spanish have every page. Portuguese,
-French, Italian and German have the core pages and most guides; where one of
-them lacks a page, links point at the English one. Those four carry `noindex`
-and stay out of the sitemaps and hreflang until `INDEXED_LANGS` lists them.
+by a root layout. English has every page, and Russian and Spanish nearly all
+of them. Portuguese, French, Italian and German have the core pages and most
+guides. Where a language lacks a page, links point at the English one. Those
+four carry `noindex` and stay out of the sitemaps and hreflang until
+`INDEXED_LANGS` lists them.
 Which page exists in which language is in `lib/i18n.ts` (`TRANSLATED`,
 `CUSTOM_PAGES` and the article path tables), and hreflang, the sitemaps and the
 footer's language switcher all read it.

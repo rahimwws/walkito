@@ -222,7 +222,10 @@ export function faqSchema(items: readonly { q: string; a: string }[]) {
 /** A date as the page prints it, in the page's language. */
 export function formatDate(iso: string, lang: Lang): string {
   const locale = { en: 'en-US', ru: 'ru-RU', es: 'es-ES', pt: 'pt-BR', fr: 'fr-FR', it: 'it-IT', de: 'de-DE' }[lang];
-  return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
+  const text = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
     new Date(`${iso}T00:00:00Z`),
   );
+  // Russian keeps the day with its month and the year's abbreviation with the
+  // year, with no-break spaces, as the dates typed into the legal pages did.
+  return lang === 'ru' ? text.replace(/^(\d+) /, '$1\u00A0').replace(/ г\.$/, '\u00A0г.') : text;
 }
