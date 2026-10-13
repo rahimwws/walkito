@@ -155,7 +155,10 @@ export function FeatureScroller({
                   {...state}
                   src={visual.src}
                   srcSet={`${visual.src} 376w, ${visual.src.replace(/\.webp$/, "@560.webp")} 560w, ${visual.src.replace(/\.webp$/, "@2x.webp")} 751w`}
-                  sizes="(max-width: 760px) 60vw, 340px"
+                  // The shot is drawn at min(58%, 360px) of its column: about
+                  // 44vw on a phone (170 px on a 393 px iPhone), so a 3x phone
+                  // takes the 560 px file, not the 751 px one it asked for at 60vw.
+                  sizes="(max-width: 760px) 44vw, 340px"
                   width={751}
                   height={1548}
                   alt={visual.alt}

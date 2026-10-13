@@ -1255,3 +1255,16 @@
     padding: 8px 18px 22px;
   }
 }
+
+/*
+ * On a phone, the same rise and fade without the blur. Animating
+ * filter: blur() on every block as it scrolls in re-renders each one offscreen
+ * on every frame, and that is where iPhone Safari dropped frames. A pointer
+ * that can hover (a desktop) keeps the blur.
+ */
+@media (hover: none) {
+  .gd[data-js] .gd-lead,
+  .gd[data-js] .gd-card {
+    filter: none;
+  }
+}

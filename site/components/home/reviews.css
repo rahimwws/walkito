@@ -46,7 +46,7 @@
     radial-gradient(34% 46% at 50% 0%, rgba(139, 92, 246, 0.42), transparent 70%),
     radial-gradient(30% 38% at 24% 4%, rgba(22, 82, 255, 0.3), transparent 70%),
     radial-gradient(26% 32% at 78% 2%, rgba(24, 216, 253, 0.14), transparent 70%);
-  filter: blur(24px);
+  /* Already soft: no filter: blur() pass on top (costly in Safari). */
 }
 
 /* ---- the founders' line ---- */
@@ -783,5 +783,19 @@ a.rev-chip:focus-visible,
   .rev-chip,
   .rev-mail {
     transition: none;
+  }
+}
+
+/*
+ * On a phone, the same rise and fade without the blur. Animating
+ * filter: blur() on every block as it scrolls in re-renders each one offscreen
+ * on every frame, and that is where iPhone Safari dropped frames. A pointer
+ * that can hover (a desktop) keeps the blur.
+ */
+@media (hover: none) {
+  .rev[data-js] .rev-rise,
+  .rev[data-js] .rev-slot,
+  .rev[data-js] .rev-mascot {
+    filter: none;
   }
 }
