@@ -220,6 +220,13 @@ const otherLanguage = (lang) => {
   ].join('\n');
 };
 
+/**
+ * The order is for a reader that stops early: an AI engine often reads only the
+ * start of the file. So the key facts and findings come straight after the
+ * intro, then the English pages, and the long per-language lists come last,
+ * under "## Optional", the llms.txt section a reader may skip. The full-text
+ * file of each language is still named in "## Full text", one line each.
+ */
 const llms = `# ${SITE_NAME}
 
 ${SUMMARY}
@@ -227,6 +234,12 @@ ${SUMMARY}
 ${NOTICE}
 
 Last updated: ${newest}
+
+## Key facts
+${list(KEY_FACTS)}
+
+## Key findings the plan follows
+${list(FINDINGS)}
 
 ## Who writes this
 ${list(WHO)}
@@ -249,6 +262,9 @@ ${ARTICLES.map(guideLine).join('\n')}
     ? plain(aboutEn.description)
     : 'who makes the site, how the guides are written and checked, and what the app does not do'
 }
+- [Walkito in ChatGPT and Claude](${url('/ai/')}): the Walkito tools inside
+  ChatGPT and Claude (exercises with short videos, a starter plan, when to see
+  a doctor), example prompts, and privacy: nothing typed in the chat is stored
 
 ## Support and legal
 - [Support](${url('/support/')}): notifications, Apple Health permissions,
@@ -256,20 +272,6 @@ ${ARTICLES.map(guideLine).join('\n')}
 - [Privacy](${url('/privacy/')}): what stays on the device and what leaves it
 - [Terms of use](${url('/terms/')}): the license, App Store billing and
   cancellation, health and safety, and what the app does not promise
-
-## Other languages
-The site is in seven languages. Russian and Spanish have the plan, the
-evidence and the questions pages as well; every language has the home page,
-both main guides, its translated articles, the About page and the support,
-privacy and terms pages. Each language has its own full-text file.
-
-${OTHER_LANGS.map(otherLanguage).join('\n\n')}
-
-## Key facts
-${list(KEY_FACTS)}
-
-## Key findings the plan follows
-${list(FINDINGS)}
 
 ## Full text
 The English text of every guide, the plan, the evidence, the About page and
@@ -279,6 +281,15 @@ ${OTHER_LANGS.map((l) => `- ${LANG_LABEL[l]}: ${url(`/${l}/llms-full.txt`)}`).jo
 ## Not published
 There is no aggregate user-outcome data on this site. It does not exist
 rather than being withheld.
+
+## Optional
+The pages in the other six languages. The site is in seven languages. Russian
+and Spanish have the plan, the evidence and the questions pages as well; every
+language has the home page, both main guides, its translated articles, the
+About page and the support, privacy and terms pages. Each language has its
+own full-text file.
+
+${OTHER_LANGS.map(otherLanguage).join('\n\n')}
 `;
 
 // ─── llms-full.txt ──────────────────────────────────────────────────────────

@@ -451,7 +451,7 @@ export default function DatenschutzDe() {
 
         <h2 id="ai-assistants">KI-Assistenten (ChatGPT und Claude)</h2>
         <p>
-          Walkito lässt sich in ChatGPT und Claude nutzen. Wenn du dort fragst, kann der Assistent eines unserer Werkzeuge aufrufen und unserem Server die gewählten Einstellungen schicken: zum Beispiel die schmerzende Stelle, Minuten pro Tag, Tage pro Woche, Ausrüstung und Seite und, falls du sie genannt hast, die heutigen Schmerzen oder ein Testergebnis, die bestimmen, was angezeigt wird. Unser Server stellt daraus die Übungen und den Plan zusammen und speichert nichts.
+          Walkito lässt sich in ChatGPT und Claude nutzen (<a href="/ai/" hrefLang="en">so funktioniert es, auf Englisch</a>). Wenn du dort fragst, kann der Assistent eines unserer Werkzeuge aufrufen und unserem Server die gewählten Einstellungen schicken: zum Beispiel die schmerzende Stelle, Minuten pro Tag, Tage pro Woche, Ausrüstung und Seite und, falls du sie genannt hast, die heutigen Schmerzen oder ein Testergebnis, die bestimmen, was angezeigt wird. Unser Server stellt daraus die Übungen und den Plan zusammen und speichert nichts.
         </p>
         <ul>
           <li>Nachrichten, Namen, E-Mail-Adressen, Schmerzwerte und IP-Adressen werden nicht gespeichert.</li>

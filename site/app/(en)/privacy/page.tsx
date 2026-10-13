@@ -426,7 +426,7 @@ export default function Privacy() {
 
         <h2 id="ai-assistants">AI assistants (ChatGPT and Claude)</h2>
         <p>
-          Walkito can be used inside ChatGPT and Claude. When you ask there, the assistant may call one of our tools and send our server the settings it chose: for example the painful area, minutes a day, days a week, equipment and side, and, if you mentioned them, today’s pain or a test result, which decide what is shown. Our server uses them to put together the exercises and the plan, and keeps nothing.
+          Walkito can be used inside ChatGPT and Claude (<a href="/ai/">how it works</a>). When you ask there, the assistant may call one of our tools and send our server the settings it chose: for example the painful area, minutes a day, days a week, equipment and side, and, if you mentioned them, today’s pain or a test result, which decide what is shown. Our server uses them to put together the exercises and the plan, and keeps nothing.
         </p>
         <ul>
           <li>No messages, names, email addresses, pain values or IP addresses are stored.</li>

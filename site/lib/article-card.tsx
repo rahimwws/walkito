@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { ImageResponse } from 'next/og';
 import sharp from 'sharp';
 
-import type { AnatomyId } from '@/lib/anatomy';
+import { anatomyCredit, type AnatomyId } from '@/lib/anatomy';
 
 /**
  * One share image per article, in the three shapes Google asks for on an
@@ -12,6 +12,11 @@ import type { AnatomyId } from '@/lib/anatomy';
  * drawing, on the brand gradient of the home card (lib/og-card.tsx), so a
  * shared link or an image result says which guide it is. An article with no
  * drawing gets the app's mascot on its dark check-in card instead.
+ *
+ * A drawing that comes from InjuryMap carries its credit and licence along the
+ * bottom edge, as it does under the figure on the page: the licence asks for
+ * the credit wherever the picture goes, and a share card travels without the
+ * page around it.
  *
  * Built once into static JPEGs by app/share/g/[file]; the file names come from
  * `guideCard()` in lib/guides/index.ts. English, Spanish and Russian only:
@@ -130,6 +135,10 @@ async function card(input: CardInput, ratio: CardRatio) {
   const inset = input.picture?.kind === 'still' ? 0 : 40;
   const inner = art ? fit(art.w, art.h, panel.width - inset, panel.height - inset) : null;
   const mascotSize = Math.round(Math.min(panel.width, panel.height) * 0.6);
+  // "Illustration: InjuryMap, CC BY-SA 4.0, labels by Walkito", in the card's
+  // language and with the figure's own licence; nothing for Walkito's own art.
+  const credit = input.picture?.kind === 'anatomy' ? anatomyCredit(input.picture.id, input.lang) : null;
+  const creditLine = credit && 'author' in credit ? `${credit.lead}${credit.author}, ${credit.license}, ${credit.tail}` : null;
 
   return new ImageResponse(
     (
@@ -214,6 +223,24 @@ async function card(input: CardInput, ratio: CardRatio) {
             <span style={{ marginTop: 22, fontFamily: 'Oswald', fontSize: 30, color: '#1652ff' }}>walkito.site</span>
           </div>
         </div>
+        {/* In the bottom padding, under the picture panel, on the light end of
+            the gradient. */}
+        {creditLine && (
+          <div
+            style={{
+              position: 'absolute',
+              left: pad,
+              bottom: 16,
+              display: 'flex',
+              fontFamily: 'Oswald',
+              fontSize: 20,
+              lineHeight: 1,
+              color: 'rgba(17,17,20,0.62)',
+            }}
+          >
+            {creditLine}
+          </div>
+        )}
       </div>
     ),
     {

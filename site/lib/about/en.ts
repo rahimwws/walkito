@@ -27,6 +27,7 @@ export const ABOUT_EN: About = {
         `You pick ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes. Each day's session adapts to how your morning went. Every ${PROGRAM.testEveryDays} days, a short test shows whether your numbers are moving. Once you reach your first goal, the test comes every ${PROGRAM.testEveryDaysAfterGoal} days.`,
         'The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](/program/).',
         'Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.',
+        'Walkito can also be used inside ChatGPT and Claude, where it answers with short exercise videos and a starter plan. [Walkito in ChatGPT and Claude](/ai/).',
       ],
     },
     {

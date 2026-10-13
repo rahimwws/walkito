@@ -441,7 +441,7 @@ export default function PrivacidadePt() {
 
         <h2 id="ai-assistants">Assistentes de IA (ChatGPT e Claude)</h2>
         <p>
-          O Walkito pode ser usado dentro do ChatGPT e do Claude. Quando você pergunta lá, o assistente pode chamar uma das nossas ferramentas e enviar ao nosso servidor as configurações que escolheu: por exemplo a área que dói, os minutos por dia, os dias por semana, o equipamento e o lado e, se você os mencionou, a dor de hoje ou o resultado de um teste, que decidem o que é mostrado. O nosso servidor usa esses dados para montar os exercícios e o plano, e não guarda nada.
+          O Walkito pode ser usado dentro do ChatGPT e do Claude (<a href="/ai/" hrefLang="en">como funciona, em inglês</a>). Quando você pergunta lá, o assistente pode chamar uma das nossas ferramentas e enviar ao nosso servidor as configurações que escolheu: por exemplo a área que dói, os minutos por dia, os dias por semana, o equipamento e o lado e, se você os mencionou, a dor de hoje ou o resultado de um teste, que decidem o que é mostrado. O nosso servidor usa esses dados para montar os exercícios e o plano, e não guarda nada.
         </p>
         <ul>
           <li>Mensagens, nomes, e-mails, valores de dor e endereços IP não são guardados.</li>

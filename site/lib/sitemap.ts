@@ -120,6 +120,7 @@ function allEntries(): MetadataRoute.Sitemap {
     ...customPage('faq', PAGE_UPDATED.faq, 'monthly', 0.8),
     ...customPage('footMap', PAGE_UPDATED.footMap, 'monthly', 0.9),
     ...translated('support', () => PAGE_UPDATED.support, 'monthly', 0.5),
+    single('/ai/', PAGE_UPDATED.ai, 'monthly', 0.5),
     ...translated('privacy', () => PAGE_UPDATED.privacy, 'yearly', 0.3),
     ...translated('terms', () => PAGE_UPDATED.terms, 'yearly', 0.3),
   ];

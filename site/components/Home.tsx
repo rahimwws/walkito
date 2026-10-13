@@ -40,7 +40,7 @@ import { HOME_IT } from '@/lib/home/it';
 import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
-import { CHROME, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
+import { CHROME, EN_ONLY, ES_ARTICLES, NEW_ARTICLE_PATHS, RU_ARTICLES, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
 import { APP_STORE_NAME, APP_STORE_URL, ORG_REF, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref, WIKIDATA_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
@@ -497,11 +497,21 @@ export function Home({ lang }: { lang: Lang }) {
    */
   const customInEnglish = !isFullLang(lang);
 
+  /** The standing-all-day guide in the reader's language; every language has
+   * one, and the English page stands in if a language ever lacks it. */
+  const standing =
+    lang === 'en'
+      ? EN_ONLY.standing
+      : lang === 'es'
+        ? ES_ARTICLES.standing
+        : lang === 'ru'
+          ? RU_ARTICLES.standing
+          : NEW_ARTICLE_PATHS[lang].standing;
+
   const forWho = [
     { card: copy.who.heel, href: TRANSLATED.heelPain[lang], accent: 'teal', en: false, visual: visuals.heel },
     { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], accent: 'violet', en: false, visual: visuals.flat },
-    // No page of its own yet; the program page is the closest honest answer.
-    { card: copy.who.allday, href: customHref('program', lang), accent: 'amber', en: customInEnglish, visual: visuals.allday },
+    { card: copy.who.allday, href: standing ?? EN_ONLY.standing, accent: 'amber', en: !standing, visual: visuals.allday },
     { card: copy.who.run, href: customHref('runners', lang), accent: 'blue', en: customInEnglish, visual: visuals.run },
   ] as const;
 

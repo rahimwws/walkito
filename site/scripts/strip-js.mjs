@@ -11,7 +11,8 @@
  *
  * Pages with a guide tool (calf raise calculator, recovery timeline) also get
  * lib/vanilla/tools.ts, bundled here with Bun. What stays on React: the four
- * utility pages an email or a QR code links to.
+ * utility pages an email or a QR code links to. A stripped page's RSC payload
+ * files (index.txt, __next.*.txt) are deleted with it.
  *
  * Fails the build if a stripped page still holds any Next runtime, so a Next
  * upgrade that changes its output cannot ship half-stripped pages.
@@ -20,7 +21,7 @@
  */
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { basename, dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const OUT = fileURLToPath(new URL('../out', import.meta.url));
@@ -71,6 +72,17 @@ const strip = (html) =>
 
 const LEFTOVER = [/\/_next\/static\/chunks\/[^"']*\.js/, /__next_f/, /<link\b[^>]*rel="modulepreload"/];
 
+/**
+ * Next's RSC payload files beside each page's index.html: `index.txt` and the
+ * segment files `__next._full.txt`, `__next._tree.txt`, `__next.<segment>.txt`.
+ * Only the Next router reads them, so once a page has no React they are dead
+ * weight that the server still answers with 200 (/flat-feet/index.txt was
+ * 116 KB), and the deploy uploads and precompresses them for nothing. The
+ * pages that keep React keep theirs.
+ */
+const PAYLOAD = /^(?:index|__next\..+)\.txt$/;
+const strippedDirs = new Set();
+
 let stripped = 0;
 let kept = 0;
 let before = 0;
@@ -94,8 +106,26 @@ for (const file of walk(OUT)) {
   after += out.length;
   writeFileSync(file, out);
   stripped++;
+  // The payload files in a folder belong to its index.html (out/ itself is the
+  // home page's), so 404.html stripping does not touch the home page's.
+  if (basename(file) === 'index.html') strippedDirs.add(dirname(file));
 }
 if (stripped < 400) throw new Error(`strip-js: only ${stripped} pages stripped; expected the whole site`);
+
+let payloads = 0;
+let payloadBytes = 0;
+for (const dir of strippedDirs) {
+  for (const name of readdirSync(dir)) {
+    const p = join(dir, name);
+    if (!PAYLOAD.test(name) || !statSync(p).isFile()) continue;
+    payloadBytes += statSync(p).size;
+    rmSync(p);
+    payloads++;
+  }
+}
+// Next 16 writes them for every page; none found means its output changed.
+if (payloads === 0) console.warn('strip-js: no RSC payload files found beside the stripped pages; check the Next output format');
+
 const kb = (n) => `${(n / 1024).toFixed(0)} KB`;
-console.log(`strip-js: ${stripped} pages without React (HTML ${kb(before)} -> ${kb(after)}), ${kept} kept, ${siteJs}, ${toolsJs} (${toolsCode.length} bytes)`);
+console.log(`strip-js: ${stripped} pages without React (HTML ${kb(before)} -> ${kb(after)}), ${kept} kept, ${payloads} payload files removed (${kb(payloadBytes)}), ${siteJs}, ${toolsJs} (${toolsCode.length} bytes)`);
 if (!existsSync(join(OUT, siteJs))) throw new Error('strip-js: site.js missing');

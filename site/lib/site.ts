@@ -131,6 +131,8 @@ export const PAGE_UPDATED = {
   privacy: '2026-10-09',
   terms: '2026-10-09',
   footMap: '2026-10-12',
+  // The ChatGPT and Claude page, in English only like the assistant.
+  ai: '2026-10-10',
   // The Spanish and Russian libraries were written on 7 October.
   exercises: { en: '2026-10-05', es: '2026-10-07', ru: '2026-10-07' },
   // The Spanish and Russian pages got their own PDFs on 13 October.

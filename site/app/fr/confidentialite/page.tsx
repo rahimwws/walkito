@@ -455,7 +455,7 @@ export default function ConfidentialiteFr() {
 
         <h2 id="ai-assistants">Assistants IA (ChatGPT et Claude)</h2>
         <p>
-          Walkito peut être utilisé dans ChatGPT et Claude. Quand vous posez une question là-bas, l’assistant peut appeler l’un de nos outils et envoyer à notre serveur les réglages qu’il a choisis : par exemple la zone douloureuse, les minutes par jour, les jours par semaine, le matériel et le côté, et, si vous les avez mentionnés, la douleur du jour ou le résultat d’un test, qui décident de ce qui est affiché. Notre serveur s’en sert pour composer les exercices et le plan, et ne garde rien.
+          Walkito peut être utilisé dans ChatGPT et Claude (<a href="/ai/" hrefLang="en">comment cela fonctionne, en anglais</a>). Quand vous posez une question là-bas, l’assistant peut appeler l’un de nos outils et envoyer à notre serveur les réglages qu’il a choisis : par exemple la zone douloureuse, les minutes par jour, les jours par semaine, le matériel et le côté, et, si vous les avez mentionnés, la douleur du jour ou le résultat d’un test, qui décident de ce qui est affiché. Notre serveur s’en sert pour composer les exercices et le plan, et ne garde rien.
         </p>
         <ul>
           <li>Aucun message, nom, adresse e-mail, valeur de douleur ni adresse IP n’est conservé.</li>
