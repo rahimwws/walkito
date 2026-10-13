@@ -92,7 +92,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "prebuild:ios": "expo prebuild && bun run ios",
+    "native:ios": "expo prebuild && bun run ios",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
     "verify:assets": "node scripts/verify-assets.mjs",
