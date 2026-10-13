@@ -187,7 +187,7 @@ export function SetupPage() {
       if (widget != null) {
         setNudge(widget === 'nudge');
         setAdded(widget === 'added');
-        setStep(widget === 'ask' ? 'widget' : widget === 'nudge' || widget === 'added' ? 'search' : widget);
+        setStep(widget === 'ask' ? 'widget' : widget === 'nudge' || widget === 'added' ? 'search' : (widget as GuideStep));
         return;
       }
       const state = url?.match(/[?&]authPreview=([\w-]+)/)?.[1];
