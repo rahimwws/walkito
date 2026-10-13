@@ -27,6 +27,10 @@ const SSH = process.env.DEPLOY_SSH;
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: ROOT, stdio: 'inherit' });
 
 run('bun', ['run', 'build']);
+// file.br and file.gz beside every text file, served as they are by nginx
+// (brotli_static / gzip_static): compressed once here, at the strongest
+// levels, rather than on every request.
+run('node', ['scripts/precompress.mjs']);
 
 // Which English pages changed, by their sitemap lastmod: read the live
 // sitemaps now, before the upload replaces them. A page is "changed" when it
