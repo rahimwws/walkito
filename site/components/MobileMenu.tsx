@@ -54,6 +54,8 @@ export function MobileMenu({
         ref={button}
         type="button"
         className="menu-toggle"
+        data-label-open={labels.open}
+        data-label-close={labels.close}
         aria-expanded={open}
         aria-controls={id}
         aria-label={open ? labels.close : labels.open}
@@ -72,6 +74,7 @@ export function MobileMenu({
             <Link
               key={link.href}
               href={link.href}
+              prefetch={false}
               aria-current={link.current ? 'page' : undefined}
               onClick={() => setOpen(false)}
             >

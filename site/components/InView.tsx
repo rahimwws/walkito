@@ -33,7 +33,7 @@ export function InView({ className, children }: { className: string; children: R
   }, []);
 
   return (
-    <section ref={ref} className={className}>
+    <section ref={ref} className={className} data-inview="">
       {children}
     </section>
   );

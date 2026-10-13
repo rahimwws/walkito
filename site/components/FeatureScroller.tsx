@@ -154,7 +154,7 @@ export function FeatureScroller({
                   className="feat-shot"
                   {...state}
                   src={visual.src}
-                  srcSet={`${visual.src} 376w, ${visual.src.replace(/\.webp$/, '@2x.webp')} 751w`}
+                  srcSet={`${visual.src} 376w, ${visual.src.replace(/\.webp$/, "@560.webp")} 560w, ${visual.src.replace(/\.webp$/, "@2x.webp")} 751w`}
                   sizes="(max-width: 760px) 60vw, 340px"
                   width={751}
                   height={1548}
@@ -196,6 +196,7 @@ export function FeatureScroller({
                   <button
                     type="button"
                     className="feat-item"
+                    data-title={it.title}
                     aria-pressed={k === active}
                     data-on={k === active ? '' : undefined}
                     onClick={() => go(k)}

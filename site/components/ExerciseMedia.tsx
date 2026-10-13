@@ -44,7 +44,7 @@ export function ExerciseMedia({ id, alt, caption }: { id: string; alt: string; c
   const still = `/exercises/${id}.webp`;
 
   return (
-    <figure ref={ref} className="exercise-media">
+    <figure ref={ref} className="exercise-media" data-exercise={id}>
       <div className="exercise-media-frame">
         <img
           src={still}

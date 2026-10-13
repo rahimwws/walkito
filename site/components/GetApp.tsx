@@ -43,6 +43,8 @@ export function GetAppButton({
     <a
       className={className}
       href={ios}
+      data-get-app=""
+      data-android={android ?? undefined}
       onClick={(event) => {
         const platform = detectPlatform();
         if (platform === 'ios') return;
@@ -114,7 +116,7 @@ export function GetAppDialog({
             <img
               className="get-phone"
               src="/hero/phone-home.webp"
-              srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+              srcSet="/hero/phone-home.webp 376w, /hero/phone-home@560.webp 560w, /hero/phone-home@2x.webp 751w"
               sizes="230px"
               width={751}
               height={1550}
@@ -126,7 +128,7 @@ export function GetAppDialog({
                 <rect width={box} height={box} fill="#fff" />
                 <path d={qr.d} transform={`translate(${pad} ${pad})`} fill="#111114" />
               </svg>
-              <img className="get-qr-icon" src="/icon-128.webp" alt="" width={64} height={64} />
+              <img className="get-qr-icon" src="/icon-128.webp" alt="" width={64} height={64} loading="lazy" decoding="async" />
             </div>
           </div>
 

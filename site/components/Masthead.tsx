@@ -57,14 +57,14 @@ export function Masthead({
   return (
     <header className={`shell masthead${floating ? ' masthead-float' : ''}`}>
       {floating && <ScrollState />}
-      <Link className="brand" href={home} aria-label="Walkito">
+      <Link className="brand" href={home} prefetch={false} aria-label="Walkito">
         <Image src="/icon-96.webp" alt="" width={36} height={36} priority />
         <span className="brand-name">Walkito</span>
       </Link>
 
       <nav className="nav">
         {links.map((link) => (
-          <Link key={link.href} href={link.href} aria-current={link.current ? 'page' : undefined}>
+          <Link key={link.href} href={link.href} prefetch={false} aria-current={link.current ? 'page' : undefined}>
             {link.label}
           </Link>
         ))}
