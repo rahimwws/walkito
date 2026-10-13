@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Terms of Use App Store Connect asks for alongside the privacy policy.
@@ -76,7 +77,7 @@ export default function Terms() {
       <Prose className="shell prose">
         <h1>Terms of use</h1>
 
-        <p className="updated">Last updated: 9 October 2026</p>
+        <p className="updated">Last updated: <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'en')}</time></p>
 
         <p className="lede">
           These terms cover your use of the Walkito app, which is run by Walkito

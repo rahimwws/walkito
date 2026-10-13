@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Russian Privacy Policy. It mirrors `app/(en)/privacy/page.tsx`, which is
@@ -34,7 +35,7 @@ export default function PrivacyRu() {
       <Prose className="shell prose">
         <h1>Политика конфиденциальности</h1>
 
-        <p className="updated">Последнее обновление: 9 октября 2026 г.</p>
+        <p className="updated">Последнее обновление: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'ru')}</time></p>
         <p className="updated">
           Это перевод. Если он расходится с{' '}
           <a href="/privacy/">английской версией</a>, действует английская.

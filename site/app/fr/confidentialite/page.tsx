@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The French Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -35,7 +36,7 @@ export default function ConfidentialiteFr() {
       <Prose className="shell prose">
         <h1>Confidentialité</h1>
 
-        <p className="updated">Dernière mise à jour : 9 octobre 2026</p>
+        <p className="updated">Dernière mise à jour : <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'fr')}</time></p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/privacy/">la version anglaise</a>, c’est la version anglaise

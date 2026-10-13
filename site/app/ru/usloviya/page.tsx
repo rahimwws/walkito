@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Russian Terms of Use. It mirrors `app/(en)/terms/page.tsx` and must be
@@ -53,7 +54,7 @@ export default function TermsRu() {
       <Prose className="shell prose">
         <h1>Условия использования</h1>
 
-        <p className="updated">Последнее обновление: 9 октября 2026 г.</p>
+        <p className="updated">Последнее обновление: <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'ru')}</time></p>
         <p className="updated">
           Это перевод. Если он расходится с{' '}
           <a href="/terms/">английской версией</a>, действует английская.

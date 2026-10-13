@@ -97,8 +97,8 @@ export default function PrintableSheets() {
           Want the plan to adjust for you each morning instead? That is what the Walkito app does: it asks how your feet
           feel and picks today&rsquo;s session.
         </p>
-        <UpdatedLine lang="en" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="en" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.printables.en} />
+        <CiteBox lang="en" title={TITLE} updated={PAGE_UPDATED.printables.en} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables" lang="en" />
       </Prose>

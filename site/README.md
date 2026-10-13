@@ -1,12 +1,17 @@
 # Walkito — site
 
-Next.js (App Router), statically exported, in three languages. No server.
+Next.js (App Router), statically exported, in the seven languages the app
+ships in. No server.
 
-The site is split into three root layouts — `app/(en)`, `app/ru`, `app/es` —
-because `<html lang>` can only be set by a root layout. English has every page;
-Russian and Spanish have the home page and the two guides. Which page exists in
-which language is one table, `TRANSLATED` in `lib/i18n.ts`, and hreflang, the
-sitemap and the footer's language switcher all read it.
+The site is split into seven root layouts (`app/(en)`, `app/ru`, `app/es`,
+`app/pt`, `app/fr`, `app/it`, `app/de`) because `<html lang>` can only be set
+by a root layout. English, Russian and Spanish have every page. Portuguese,
+French, Italian and German have the core pages and most guides; where one of
+them lacks a page, links point at the English one. Those four carry `noindex`
+and stay out of the sitemaps and hreflang until `INDEXED_LANGS` lists them.
+Which page exists in which language is in `lib/i18n.ts` (`TRANSLATED`,
+`CUSTOM_PAGES` and the article path tables), and hreflang, the sitemaps and the
+footer's language switcher all read it.
 
 The guides (`lib/guides/{en,ru,es}.ts`, rendered by `components/Guide.tsx`) are
 the pages built to rank: one query each, answer in the first paragraph, every

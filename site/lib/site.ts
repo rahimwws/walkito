@@ -99,7 +99,9 @@ export const IN_SESSION_STOP = 6;
  * move on every build gets its dates ignored, and a visible date bumped without
  * a change is a small lie a reader can catch.
  *
- * Guides keep their own date in their data (`lib/guides/*.ts`).
+ * Guides keep their own date in their data (`lib/guides/*.ts`). A page whose
+ * English, Spanish and Russian versions last changed on different days carries
+ * one date per language, so an edit to one never moves the others' dates.
  */
 export const PAGE_UPDATED = {
   home: '2026-10-13',
@@ -110,9 +112,12 @@ export const PAGE_UPDATED = {
   about: '2026-10-13',
   support: '2026-10-01',
   privacy: '2026-10-09',
-  terms: '2026-10-01',
+  terms: '2026-10-09',
   footMap: '2026-10-12',
-  printables: '2026-10-12',
+  // The Spanish and Russian libraries were written on 7 October.
+  exercises: { en: '2026-10-05', es: '2026-10-07', ru: '2026-10-07' },
+  // The Spanish and Russian pages got their own PDFs on 13 October.
+  printables: { en: '2026-10-12', es: '2026-10-13', ru: '2026-10-13' },
 } as const;
 
 /** The App Store listing, live since 1.0.1 passed review (2 October 2026).

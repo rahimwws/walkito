@@ -157,8 +157,8 @@ export default function PrintableSheetsEs() {
           ¿Quieres que el plan se ajuste por ti cada mañana? Eso es lo que hace la app de Walkito:
           te pregunta cómo se sienten tus pies y elige la sesión de hoy.
         </p>
-        <UpdatedLine lang="es" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="es" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="es" updated={PAGE_UPDATED.printables.es} />
+        <CiteBox lang="es" title={TITLE} updated={PAGE_UPDATED.printables.es} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-es" lang="es" />
       </Prose>

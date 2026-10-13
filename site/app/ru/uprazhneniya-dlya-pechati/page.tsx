@@ -157,8 +157,8 @@ export default function PrintableSheetsRu() {
           приложение Walkito: спрашивает, как чувствуют себя ваши стопы, и выбирает
           сегодняшнее занятие.
         </p>
-        <UpdatedLine lang="ru" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="ru" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="ru" updated={PAGE_UPDATED.printables.ru} />
+        <CiteBox lang="ru" title={TITLE} updated={PAGE_UPDATED.printables.ru} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-ru" lang="ru" />
       </Prose>

@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Italian Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -34,7 +35,7 @@ export default function PrivacyIt() {
       <Prose className="shell prose">
         <h1>Informativa sulla privacy</h1>
 
-        <p className="updated">Ultimo aggiornamento: 9 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'it')}</time></p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/privacy/">versione in inglese</a>, vale la versione in

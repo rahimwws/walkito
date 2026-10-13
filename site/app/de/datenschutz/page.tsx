@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The German Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -35,7 +36,7 @@ export default function DatenschutzDe() {
       <Prose className="shell prose">
         <h1>Datenschutz</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 9. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'de')}</time></p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/privacy/">der englischen Fassung</a> abweicht, gilt die

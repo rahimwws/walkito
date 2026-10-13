@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Brazilian Portuguese Privacy Policy. It mirrors
@@ -35,7 +36,7 @@ export default function PrivacidadePt() {
       <Prose className="shell prose">
         <h1>Privacidade</h1>
 
-        <p className="updated">Última atualização: 9 de outubro de 2026</p>
+        <p className="updated">Última atualização: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'pt')}</time></p>
         <p className="updated">
           Esta é uma tradução. Se ela for diferente da{' '}
           <a href="/privacy/">versão em inglês</a>, vale a versão em inglês.

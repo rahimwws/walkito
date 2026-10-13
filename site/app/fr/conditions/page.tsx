@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The French Terms of Use. It mirrors `app/(en)/terms/page.tsx` and must be
@@ -49,7 +50,7 @@ export default function ConditionsFr() {
       <Prose className="shell prose">
         <h1>Conditions d’utilisation</h1>
 
-        <p className="updated">Dernière mise à jour : 9 octobre 2026</p>
+        <p className="updated">Dernière mise à jour : <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'fr')}</time></p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/terms/">la version anglaise</a>, c’est la version anglaise

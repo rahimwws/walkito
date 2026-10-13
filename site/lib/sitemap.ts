@@ -54,15 +54,17 @@ const single = (
 ): MetadataRoute.Sitemap[number] => ({ url: `${SITE_URL}${path}`, lastModified: updated, changeFrequency, priority });
 
 /**
- * A custom page that exists in English, Spanish and Russian.
+ * A custom page that exists in English, Spanish and Russian, with one date for
+ * all three or one per language.
  */
 function customPage(
   page: CustomPage,
-  updated: string,
+  updated: string | Readonly<Record<'en' | 'es' | 'ru', string>>,
   changeFrequency: 'monthly' | 'yearly',
   priority: number,
 ): MetadataRoute.Sitemap {
   const paths = CUSTOM_PAGES[page];
+  const date = (lang: 'en' | 'es' | 'ru') => (typeof updated === 'string' ? updated : updated[lang]);
   const languages = {
     en: `${SITE_URL}${paths.en}`,
     es: `${SITE_URL}${paths.es}`,
@@ -70,9 +72,9 @@ function customPage(
     'x-default': `${SITE_URL}${paths.en}`,
   };
   return [
-    { url: languages.en, lastModified: updated, changeFrequency, priority, alternates: { languages } },
-    { url: languages.es, lastModified: updated, changeFrequency, priority: priority - 0.1, alternates: { languages } },
-    { url: languages.ru, lastModified: updated, changeFrequency, priority: priority - 0.1, alternates: { languages } },
+    { url: languages.en, lastModified: date('en'), changeFrequency, priority, alternates: { languages } },
+    { url: languages.es, lastModified: date('es'), changeFrequency, priority: priority - 0.1, alternates: { languages } },
+    { url: languages.ru, lastModified: date('ru'), changeFrequency, priority: priority - 0.1, alternates: { languages } },
   ];
 }
 
@@ -110,12 +112,12 @@ function allEntries(): MetadataRoute.Sitemap {
     ...translated('about', () => PAGE_UPDATED.about, 'monthly', 0.6),
     ...customPage('runners', PAGE_UPDATED.runners, 'monthly', 0.9),
     ...Object.values(ARTICLES_EN).flatMap((g) => article(g.page as EnglishPage, g.updated)),
-    ...customPage('exercises', '2026-10-05', 'monthly', 0.8),
-    ...customPage('printables', '2026-10-05', 'monthly', 0.7),
+    ...customPage('exercises', PAGE_UPDATED.exercises, 'monthly', 0.8),
+    ...customPage('printables', PAGE_UPDATED.printables, 'monthly', 0.7),
     ...customPage('program', PAGE_UPDATED.program, 'monthly', 0.9),
     ...customPage('science', PAGE_UPDATED.science, 'monthly', 0.9),
     ...customPage('faq', PAGE_UPDATED.faq, 'monthly', 0.8),
-    ...customPage('footMap', '2026-10-08', 'monthly', 0.9),
+    ...customPage('footMap', PAGE_UPDATED.footMap, 'monthly', 0.9),
     ...translated('support', () => PAGE_UPDATED.support, 'monthly', 0.5),
     ...translated('privacy', () => PAGE_UPDATED.privacy, 'yearly', 0.3),
     ...translated('terms', () => PAGE_UPDATED.terms, 'yearly', 0.3),

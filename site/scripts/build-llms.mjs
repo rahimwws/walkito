@@ -130,7 +130,8 @@ const days = PROGRAM.daysPerWeek;
 const or = (xs) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
 
 const newest = [
-  ...Object.values(PAGE_UPDATED),
+  // A page dated per language holds { en, es, ru } instead of one date.
+  ...Object.values(PAGE_UPDATED).flatMap((d) => (typeof d === 'string' ? [d] : Object.values(d))),
   ...Object.values(GUIDES).flatMap((byLang) => Object.values(byLang).map((g) => g.updated)),
   ...ARTICLES.map((g) => g.updated),
 ]
