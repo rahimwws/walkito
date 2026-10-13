@@ -3200,11 +3200,11 @@ Checked October 11, 2026. We do not list Kaia separately because it is joining S
 
 Check your benefits portal or call the number on your insurance card and ask about these by name:
 
-- **[Sword Health](https://sword.com/individuals).** A Doctor of Physical Therapy plus an exercise kit that may include a tablet or sensors. Sword says it “may be offered at no cost through your employer or health plan”, and its [foot pain page](https://sword.com/care-explorer/foot-pain) covers pain “anywhere in the heel, arch, toes, or ankle”. In a trial of 140 people with low back pain, its program did as well as in-person physiotherapy.
-- **[Kaia Health](https://apps.apple.com/us/app/kaia-health/id1100673977).** Its App Store listing says it is “currently not available on a self-pay basis”. Sword agreed to buy Kaia in January 2026. Kaia’s app did better than physiotherapy plus online education in a German trial in low back pain.
-- **[Omada Joint & Muscle](https://www.omadahealth.com/for-individuals/musculoskeletal)**, formerly Physera. A licensed physical therapist and a free exercise kit. Unlike Hinge, Omada’s [resources page](https://www.omadahealth.com/resources) says the program is “subject to deductibles, copays and co-insurance”. Its published studies are observational, including an insurance claims analysis that found lower costs.
-- **[Vori Health](https://www.vorihealth.com/).** A doctor, a physical therapist and a health coach online, billed to insurance, including Medicare Advantage and Medicaid plans. It names “foot & ankle pain”. Its one study followed 100 Medicare Advantage patients without a comparison group.
-- **[RecoveryOne](https://www.recoveryone.com/).** A licensed physical therapist, through doctors, health plans or employers. Names “ankle/foot”. We found no published trial.
+- [Sword Health](https://sword.com/individuals). A Doctor of Physical Therapy plus an exercise kit that may include a tablet or sensors. Sword says it “may be offered at no cost through your employer or health plan”, and its [foot pain page](https://sword.com/care-explorer/foot-pain) covers pain “anywhere in the heel, arch, toes, or ankle”. In a trial of 140 people with low back pain, its program did as well as in-person physiotherapy.
+- [Kaia Health](https://apps.apple.com/us/app/kaia-health/id1100673977). Its App Store listing says it is “currently not available on a self-pay basis”. Sword agreed to buy Kaia in January 2026. Kaia’s app did better than physiotherapy plus online education in a German trial in low back pain.
+- [Omada Joint & Muscle](https://www.omadahealth.com/for-individuals/musculoskeletal), formerly Physera. A licensed physical therapist and a free exercise kit. Unlike Hinge, Omada’s [resources page](https://www.omadahealth.com/resources) says the program is “subject to deductibles, copays and co-insurance”. Its published studies are observational, including an insurance claims analysis that found lower costs.
+- [Vori Health](https://www.vorihealth.com/). A doctor, a physical therapist and a health coach online, billed to insurance, including Medicare Advantage and Medicaid plans. It names “foot & ankle pain”. Its one study followed 100 Medicare Advantage patients without a comparison group.
+- [RecoveryOne](https://www.recoveryone.com/). A licensed physical therapist, through doctors, health plans or employers. Names “ankle/foot”. We found no published trial.
 
 None of these has a published trial for foot or heel pain. Their trials are mostly in back and shoulder pain.
 
@@ -3215,8 +3215,8 @@ Source: O'Connor MI, Dorak Ribaudo M, Peters KC, et al. Clinical Efficacy of Tel
 
 ### Alternatives you can sign up for yourself
 
-- **[Luna](https://www.getluna.com/).** A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.
-- **[Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/).** One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.
+- [Luna](https://www.getluna.com/). A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.
+- [Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/). One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.
 - **Physical therapy in a clinic.** Through your insurance, a visit usually costs your copay or coinsurance. Our [plantar fasciitis cost guide](https://walkito.site/plantar-fasciitis-treatment-cost/) has typical prices and the questions to ask your plan.
 - **Exercise apps.** No clinician, but you can start today. Prices we checked range from free (PlantarCare) to $299.99 a year (Prehab’s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](https://walkito.site/best-apps-for-foot-pain/).
 
