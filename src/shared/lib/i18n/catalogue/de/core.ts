@@ -149,19 +149,22 @@ export const CORE_DE = {
 
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Diese Version hat keinen Kontoserver. Nutze Mit Apple fortfahren.',
+  'auth.noServer': 'Diese Version hat keinen Kontoserver.',
   'auth.missingFields': 'Gib eine E-Mail-Adresse und ein Passwort ein.',
   'auth.invalidCredentials': 'E-Mail und Passwort passen nicht zusammen.',
   'auth.notConfirmed':
     'Dieses Konto ist noch nicht bestätigt. Bestätige die E-Mail-Adresse und versuch es dann noch einmal.',
   'auth.banned': 'Dieses Konto ist deaktiviert.',
-  'auth.providerDisabled':
-    'Die Anmeldung per E-Mail ist für diese App ausgeschaltet. Nutze Mit Apple fortfahren.',
+  'auth.providerDisabled': 'Die Anmeldung per E-Mail ist für diese App ausgeschaltet.',
   'auth.rateLimited': 'Zu viele Versuche. Warte eine Minute und versuch es noch einmal.',
   'auth.badEmail': 'Das sieht nicht nach einer E-Mail-Adresse aus.',
   'auth.noAccount': 'Es kam kein Konto zurück.',
   'auth.generic': 'Das hat nicht geklappt.',
   'auth.unreachable': 'Der Server war nicht erreichbar.',
+  'auth.badCode': 'Der Code hat nicht gepasst. Prüf ihn oder lass dir einen neuen schicken.',
+  'auth.codeRateLimited': 'Gerade wurde ein Code geschickt. Warte eine Minute, bevor du einen neuen anforderst.',
+  'auth.emailUndeliverable': 'Die E-Mail konnte gerade nicht verschickt werden. Versuch es gleich noch einmal.',
+  'auth.noAccountForEmail': 'Zu dieser E-Mail-Adresse gibt es kein Konto.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, du hast es geschafft.',

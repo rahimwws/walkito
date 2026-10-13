@@ -27,3 +27,5 @@ export function shade(color: string, amount: number): string {
 
   return `#${channel(16)}${channel(8)}${channel(0)}`;
 }
+
+export { contrast, filledFace, labelOn, luminance, mix, readableOn } from './contrast';

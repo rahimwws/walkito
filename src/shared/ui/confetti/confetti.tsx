@@ -58,9 +58,16 @@ export type ConfettiProps = {
    * screen — finishing a session — where the default reads as sprinkles from
    * across the room. */
   size?: number;
+  /**
+   * How long after mount the burst goes off, in ms, counted on the UI thread:
+   * for a burst that lands on a beat of an entrance already under way. Each
+   * piece stays hidden until it is thrown, rather than waiting in a heap at
+   * its origin.
+   */
+  delay?: number;
 };
 
-export function Confetti({ origins = CENTRE, size = 1 }: ConfettiProps) {
+export function Confetti({ origins = CENTRE, size = 1, delay = 0 }: ConfettiProps) {
   const { width, height } = useWindowDimensions();
   const scheme = useColorScheme();
   const hue = accents[scheme];
@@ -83,6 +90,7 @@ export function Confetti({ origins = CENTRE, size = 1 }: ConfettiProps) {
           // left margin that drifts left is a burst mostly spent off screen.
           bias={origins.length === 1 ? 0 : 0.5 - origins[i % origins.length].x}
           size={size}
+          delay={delay}
           color={colors[i % colors.length]}
         />
       ))}
@@ -96,6 +104,7 @@ function Piece({
   origin,
   bias,
   size,
+  delay,
   color,
 }: {
   width: number;
@@ -103,6 +112,7 @@ function Piece({
   origin: ConfettiOrigin;
   bias: number;
   size: number;
+  delay: number;
   color: string;
 }) {
   const t = useSharedValue(0);
@@ -133,7 +143,7 @@ function Piece({
 
   useEffect(() => {
     t.value = withDelay(
-      seed.delay,
+      delay + seed.delay,
       withTiming(1, {
         duration: seed.life,
         // Linear, and the arc comes from the arithmetic below. An eased clock
@@ -143,8 +153,9 @@ function Piece({
         reduceMotion: ReduceMotion.System,
       }),
     );
-  }, [t, seed]);
+  }, [t, seed, delay]);
 
+  const hidden = delay > 0;
   const style = useAnimatedStyle(() => {
     const p = t.value;
     return {
@@ -157,8 +168,9 @@ function Piece({
       ],
       // Only at the very end, so the burst does not spend its whole life
       // dissolving. Opacity is safe here: these views are the confetti itself,
-      // never an ancestor of a GlassView.
-      opacity: p < 0.75 ? 1 : 1 - (p - 0.75) / 0.25,
+      // never an ancestor of a GlassView. A burst that waits (`delay`) keeps
+      // each piece out of sight until it is thrown.
+      opacity: hidden && p === 0 ? 0 : p < 0.75 ? 1 : 1 - (p - 0.75) / 0.25,
     };
   });
 

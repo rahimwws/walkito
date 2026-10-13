@@ -4,21 +4,25 @@ import * as Haptics from "expo-haptics";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Keyboard,
+  Linking,
   Pressable,
-  ScrollView,
   StyleSheet,
   Text,
   View,
+  useWindowDimensions,
 } from "react-native";
 import { KeyboardAvoidingView } from "react-native-keyboard-controller";
 import Animated, {
   Easing,
   FadeIn,
+  LinearTransition,
   ReduceMotion,
   SlideInDown,
   runOnJS,
   useAnimatedStyle,
+  useReducedMotion,
   useSharedValue,
+  withSequence,
   withTiming,
 } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -55,10 +59,8 @@ import {
   todayDayNumber,
 } from "@/entities/program";
 import { armSetup, completeOnboarding } from "@/entities/session";
-import {
-  PRIMARY_BUTTON_HEIGHT,
-  PrimaryButton,
-} from "@/shared/ui/primary-button";
+import { BUTTON_3D_XL_HEIGHT, Button3D } from "@/shared/ui/button-3d";
+import { preloadMascotSounds, type MascotShot } from "@/shared/ui/mascot";
 import { REPLAY_MASK } from "@/shared/ui/replay-mask";
 import { Glow } from "@/shared/ui/glow";
 import { WelcomePage } from "@/pages/welcome";
@@ -66,8 +68,20 @@ import { WelcomePage } from "@/pages/welcome";
 import { QUESTION_PHOTOS } from "../config/question-photos";
 import { chose } from "../model/answers";
 import {
+  coachAnswer,
+  coachDone,
+  coachEnter,
+  coachLine,
+  coachMirrored,
+  reactionAnalyticsId,
+  type CoachMoment,
+  type CoachReply,
+} from "../model/coach";
+import {
+  daysPerWeekOf,
   intakeFrom,
   planSettingsFrom,
+  sessionMinutesOf,
   startingPlan,
   type MiniTestAnswers,
 } from "../model/intake";
@@ -79,9 +93,9 @@ import {
   durationOf,
   durationReaction,
   equipmentReaction,
-  firstWeekMoves,
   goalValuesFor,
   habitOf,
+  habitReaction,
   miniTestEligible,
   morningPainOf,
   reminderFor,
@@ -90,7 +104,6 @@ import {
   runs,
   safetyPlan,
   safetyReaction,
-  sessionDays,
   standsAtWork,
   triedKey,
   triedReaction,
@@ -104,6 +117,7 @@ import { primaryPain } from "../model/reflection";
 import { outlookMonths } from "../model/outlook";
 import { painAreasFor, zonesIn } from "../model/pain-areas";
 import {
+  RECOMMENDED,
   STEPS,
   STEP_COUNT,
   hurts,
@@ -115,26 +129,37 @@ import {
 } from "../model/steps";
 import { BuildingStep, type BuildingRow } from "./building-step";
 import { ChoiceStep } from "./choice-step";
-import { ScheduleStep } from "./schedule-step";
+import { CoachBubble } from "./coach-bubble";
+import { rigFor } from "./coach-rigs";
+import {
+  CoachSpeaker,
+  speakerInset,
+  type SpeakerShot,
+  type SpeakerSize,
+} from "./coach-speaker";
 import { ContractStep } from "./contract-step";
-import { FirstWeekStep, type WeekMove } from "./first-week-step";
+import { FirstWeekStep } from "./first-week-step";
 import { HabitStep } from "./habit-step";
-import { InlineReaction } from "./inline-reaction";
 import { IntroStep } from "./intro-step";
-import { PassportCard, PassportStrip, type PassportStamp } from "./foot-passport";
+import { KitAdds } from "./kit-tile";
+import { PassportCard, type PassportStamp } from "./foot-passport";
 import { MidwayStep } from "./midway-step";
-import { TestBalance, TestIntro, TestResult, TestToe } from "./mini-test";
+import { TestBalance, TestIntro, TestToe } from "./mini-test";
 import { MorningPainStep } from "./morning-pain-step";
 import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
 import { OutlookStep } from "./outlook-step";
 import { PainMapStep } from "./pain-map-step";
+import { TimerGauge, WeekGauge } from "./plan-gauges";
 import { QuestionNote, QuestionPhoto } from "./question-photo";
 import { ReactionStep } from "./reaction-step";
 import { StepProgress } from "./step-progress";
-import { WhyStep } from "./why-step";
+import { WhyStep, whySectionLandsMs } from "./why-step";
 
 const SIDE_PAD = 24;
+/** The call to action reaches 16pt from the screen's edges, wider than the
+ * questions above it. */
+const CTA_BLEED = 8;
 
 /** The two halves of a step change. The exit is quicker than the entrance —
  * exits should get out of the way, entrances should feel like arriving. */
@@ -142,8 +167,23 @@ const EXIT_MS = 130;
 const ENTER_MS = 240;
 /** How far a question slides. Enough to read as direction, not as a page. */
 const SLIDE = 28;
-/** The sub-line trails the question rather than landing with it. */
-const BLURB_DELAY_MS = 220;
+/** The answers sliding down as a reaction arrives over them. */
+const MAKE_ROOM = LinearTransition.duration(260)
+  .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
+  .reduceMotion(ReduceMotion.System);
+
+/** Below this window height the coach in the corner is the smaller size. */
+const SHORT_WINDOW = 700;
+/** The coach's move on arriving lands with the question, not before it. */
+const ENTER_SHOT_MS = EXIT_MS + Math.round(ENTER_MS / 2);
+/** His own lines (a beat, "try it now") wait for the question to be up. */
+const COACH_LINE_DELAY_MS = 400;
+/** The name is said back once typing has paused this long. */
+const NAME_SETTLE_MS = 500;
+/** Tapping down a list of answers: a nod at most this often. */
+const NOD_GAP_MS = 600;
+/** The last Continue: his cheer plays before Home takes over. */
+const FINISH_HOLD_MS = 500;
 
 type Answer = string | string[];
 type Answers = Record<string, Answer>;
@@ -176,25 +216,19 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
   "why",
   "test-toe",
   "test-balance",
-  "test-result",
   "first-week",
   "outlook",
 ]);
 
 /**
- * The only questions with a line under them. Everywhere else the question is
- * enough: a sub-line that explains why we ask is reading nobody does. These
- * keep one because it says how to answer (several, up to three) or what the
- * screen is.
+ * No question has a line under it any more: a sub-line that explains why we
+ * ask is reading nobody does, and the boxes, the radios and the coach's own
+ * line say how to answer. The step table keeps its blurbs as bookkeeping.
+ *
+ * The questions about the body: a chosen answer's emoji pops less there, as
+ * the coach only nods (`ChoiceStep`'s `calm`).
  */
-const BLURB_STEPS: ReadonlySet<string> = new Set([
-  "toe",
-  "bunion",
-  "pain",
-  "safety",
-  "tried",
-  "contract",
-]);
+const CALM_STEPS: ReadonlySet<string> = new Set(["side", "duration", "safety", "tried"]);
 
 /** The onboarding answers that are sent to analytics, and nothing else. */
 const ANSWERS_TRACKED = ["source", "goal", "runner", "role"] as const;
@@ -254,12 +288,13 @@ const EQUIPMENT_LABEL: Readonly<Record<string, Key>> = {
 };
 
 /** The morning seed, and the recommended middle of each time pick, so the
- * schedule screen only asks for a tap where the default is not wanted. */
+ * days and minutes screens only ask for a tap where the default is not
+ * wanted. */
 function seedAnswers(): Answers {
   return {
     morningPain: String(MORNING_PAIN_SEED),
-    planDays: ["days5"],
-    planMinutes: ["min5"],
+    planDays: [RECOMMENDED.days],
+    planMinutes: [RECOMMENDED.minutes],
   };
 }
 
@@ -274,11 +309,13 @@ function list(answer: Answer | undefined): string[] {
  * objects the whole way through, so they hold still while only the question
  * moves — which is what makes the screens read as one conversation.
  *
- * Every few questions the flow says something back: a line under the options,
- * or a whole screen when the answer deserves one. It ends on what the answers
- * point to, the plan built from them, the first week, and the contract; then
- * Home, where the paywall rises. Signing in, Health and the watch come after
- * the first purchase (`pages/setup`).
+ * Walkito coaches the whole way: in the top-right corner of every question,
+ * changing pose as it changes and nodding at answers, or large on the steps
+ * that are his. Every few questions the flow says something back: a line in
+ * his bubble under the question, or a whole screen when the answer deserves
+ * one. It ends on what the answers point to, the plan built from them, the
+ * first week, and the contract; then Home, where the paywall rises. Signing
+ * in, Health and the watch come after the first purchase (`pages/setup`).
  */
 export function OnboardingPage() {
   const insets = useSafeAreaInsets();
@@ -287,8 +324,16 @@ export function OnboardingPage() {
   const meter = meterColors[scheme];
   const t = useT();
 
+  const reduceMotion = useReducedMotion();
+  const { height: windowHeight } = useWindowDimensions();
+
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Answers>(seedAnswers);
+  /** The answers as last written, ahead of the render that shows them: two
+   * taps in one frame, or a tap and then Next, each build on the one before,
+   * and the coach compares an answer with the one it replaced. */
+  const answersRef = useRef(answers);
+  answersRef.current = answers;
   /** The daily reminder, minutes past midnight. Follows the habit they pick
    * until they change it by hand. */
   const [reminder, setReminder] = useState(() => wakeMinutes() + 15);
@@ -304,6 +349,10 @@ export function OnboardingPage() {
     left: number | null;
     right: number | null;
   }>({ left: null, right: null });
+  /** The habit's time wheel, and a clip open full screen: both cover the
+   * coach in the corner, who stops breathing under them. */
+  const [habitPicking, setHabitPicking] = useState(false);
+  const [clipViewerOpen, setClipViewerOpen] = useState(false);
 
   /** Whether the contract has been signed, and how far its stamp has come down. */
   const [signed, setSigned] = useState(false);
@@ -338,6 +387,8 @@ export function OnboardingPage() {
       caption: option.caption?.(t),
       icon: option.icon,
       accent: option.accent,
+      emoji: option.emoji,
+      recommended: option.recommended,
     }));
 
   const goalValues = goalValuesFor(role, painless);
@@ -437,34 +488,20 @@ export function OnboardingPage() {
       loadOption == null ? null : say(loadOption.label),
     );
     add("habit", t("onboarding.passport.habit"), choiceLabel("habit"));
-    const days = choiceLabelFrom("planDays", list(answers.planDays)[0]);
-    const minutes = choiceLabelFrom("planMinutes", list(answers.planMinutes)[0]);
-    add(
-      "planDays",
-      t("onboarding.passport.plan"),
-      days != null && minutes != null
-        ? t("onboarding.passport.planValue", { days, minutes })
-        : null,
-    );
+    // Stamped once the minutes are answered too: until then the minutes
+    // are only the seed. Editing it goes back to the days.
+    const days = choiceLabel("planDays");
+    const minutes = choiceLabel("planMinutes");
+    if (passed("planMinutes"))
+      add(
+        "planDays",
+        t("onboarding.passport.plan"),
+        days != null && minutes != null
+          ? t("onboarding.passport.planValue", { days, minutes })
+          : null,
+      );
     return out;
   })();
-  /** The schedule step keeps its two lists apart from `options`. */
-  function choiceLabelFrom(key: "planDays" | "planMinutes", value: string | undefined): string | null {
-    const schedule = STEPS.find((candidate) => candidate.kind === "schedule");
-    if (value == null || schedule == null || schedule.kind !== "schedule") return null;
-    const options = key === "planDays" ? schedule.days : schedule.minutes;
-    const option = options.find((candidate) => candidate.value === value);
-    return option == null ? null : say(option.label);
-  }
-  /** Folded above the questions themselves, never over a screen of its own. */
-  const showPassport =
-    passed("name") &&
-    name !== "" &&
-    (step.kind === "choice" ||
-      step.kind === "pain-map" ||
-      step.kind === "morning-pain" ||
-      step.kind === "habit" ||
-      step.kind === "schedule");
 
 
   // What is at home, said back: nothing, everything, or what the plan goes
@@ -504,8 +541,8 @@ export function OnboardingPage() {
           ? t("onboarding.building.seated")
           : t("onboarding.building.safety"),
       });
-    const days = choiceLabelFrom("planDays", list(answers.planDays)[0]);
-    const minutes = choiceLabelFrom("planMinutes", list(answers.planMinutes)[0]);
+    const days = choiceLabel("planDays");
+    const minutes = choiceLabel("planMinutes");
     if (days != null && minutes != null)
       rows.push({
         art: "calendar",
@@ -551,20 +588,6 @@ export function OnboardingPage() {
           { head: t("onboarding.why.helpsHead"), text: t(why.helps) },
         ];
 
-  const settingsNow = planSettingsFrom(answers, null);
-  const weekMoves: WeekMove[] = [
-    {
-      id: "fascia_stretch",
-      title: t("quick.morning.title"),
-      meta: t("onboarding.week.morningMeta"),
-    },
-    ...firstWeekMoves(area).map((id) => ({
-      id,
-      title: t(exerciseById(id).titleKey),
-      meta: t("onboarding.week.sessionMeta"),
-    })),
-  ];
-
   const reaction: Reaction | null =
     step.kind !== "reaction"
       ? null
@@ -574,12 +597,125 @@ export function OnboardingPage() {
           ? durationReaction(durationOf(answers))
           : triedReaction(triedKey(answers));
 
-  /** The line under the options, for the questions that get one. */
+  // ── The coach ────────────────────────────────────────────────────────────
+  // Walkito in the top-right corner of every question (`CoachSpeaker`), or
+  // large in the steps that draw him themselves. What he holds and does is
+  // `model/coach.ts`; this is the wiring.
+
+  /** Steps already shown in this run: halfway and the plan ready celebrate
+   * on the first visit only. Marked after the step's first render, which is
+   * the one its hero reads. */
+  const [seen, setSeen] = useState<ReadonlySet<string>>(() => new Set());
+  const again = seen.has(step.key);
+  /** The coach on this step as the table has him. Only where he stands and
+   * the heroes' poses are read from it; the corner's pose is `coach`. */
+  const here = coachEnter(step.key, answers, again);
+  /** 44 on the name question, where the keyboard is up, and on a short phone. */
+  const sizeFor = (key: string): SpeakerSize =>
+    key === "name" || windowHeight < SHORT_WINDOW ? 44 : 56;
+  const speakerHere = here.where === "speaker";
+  const speakerSize = sizeFor(step.key);
+  /** What the question block keeps clear on its right for him. */
+  const inset = speakerHere ? speakerInset(speakerSize) : 0;
+
+  /** The coach in the corner as drawn. Set as a question leaves for the
+   * next, so his change lands inside the exit, and by each answer after. */
+  const [coach, setCoach] = useState<{ moment: CoachMoment; size: SpeakerSize }>(
+    () => ({ moment: { where: "none", pose: "idle" }, size: 56 }),
+  );
+  const coachNow = useRef(coach);
+  const [coachShot, setCoachShot] = useState<SpeakerShot | null>(null);
+  const shotSerial = useRef(0);
+  const lastNod = useRef(0);
+  /** The name question's thumbs up: once a visit. */
+  const namedThisVisit = useRef(false);
+
+  /** A move for the coach in the corner, if he is there. */
+  const playCoach = (
+    shot: MascotShot,
+    delay = 0,
+    sound?: CoachReply["sound"],
+  ) => {
+    if (coachNow.current.moment.where !== "speaker") return;
+    shotSerial.current += 1;
+    setCoachShot({ move: shot, key: shotSerial.current, delay, sound });
+  };
+
+  /**
+   * What an answer, or a step's own moment, makes the coach in the corner do
+   * (`coachAnswer`, `coachDone`): a swap only when the pose changes, and a
+   * nod at most every `NOD_GAP_MS`, so tapping down a list is not a nodding
+   * fit. The steps that draw him themselves play their own moves and sounds,
+   * so this does nothing there.
+   */
+  const applyCoach = (reply: CoachReply | null) => {
+    const now = coachNow.current;
+    if (reply == null || now.moment.where !== "speaker") return;
+    if (reply.pose != null && reply.pose !== now.moment.pose) {
+      const next = {
+        ...now,
+        moment: {
+          where: now.moment.where,
+          pose: reply.pose,
+          mirrored: coachMirrored(now.moment.where, reply.pose),
+        },
+      };
+      coachNow.current = next;
+      setCoach(next);
+    }
+    if (reply.shot == null) return;
+    if (reply.shot === "nod") {
+      const at = Date.now();
+      if (at - lastNod.current < NOD_GAP_MS) return;
+      lastNod.current = at;
+    }
+    playCoach(reply.shot, 0, reply.sound);
+  };
+
+  /** A step arriving: where the coach stands on it and how, and his move
+   * once the question is up. A hero step plays its own. */
+  const arrive = (next: number, nextAnswers: Answers) => {
+    const key = STEPS[next].key;
+    const moment = coachEnter(key, nextAnswers);
+    const placed = {
+      moment: { where: moment.where, pose: moment.pose, mirrored: moment.mirrored },
+      size: sizeFor(key),
+    };
+    coachNow.current = placed;
+    setCoach(placed);
+    lastNod.current = 0;
+    namedThisVisit.current = false;
+    setHabitPicking(false);
+    setClipViewerOpen(false);
+    // Made before halfway, so the run's first cheer is not the sound that
+    // waits for its file. Kept once made, so asking again costs nothing.
+    if (STEPS[next].act >= 2) preloadMascotSounds(["cheer", "boing"]);
+    if (moment.where === "speaker" && moment.enter != null)
+      playCoach(moment.enter, ENTER_SHOT_MS);
+  };
+  const arriveRef = useRef(arrive);
+  arriveRef.current = arrive;
+
+  /** The name as typed, once typing has paused: said back then, rather than
+   * retyped on every keystroke. */
+  const [settledName, setSettledName] = useState("");
+  useEffect(() => {
+    if (step.kind !== "name") return undefined;
+    const typed = name.trim();
+    if (typed.length < 2) {
+      setSettledName("");
+      return undefined;
+    }
+    const timer = setTimeout(() => setSettledName(typed), NAME_SETTLE_MS);
+    return () => clearTimeout(timer);
+  }, [name, step.kind]);
+
+  /** The line under the question, for the questions that get one. */
   const inline = (() => {
-    if (step.kind === "name" && name.trim().length > 1) {
+    if (step.kind === "name" && settledName.length > 1) {
       return {
         id: "name",
-        text: t("onboarding.react.nameNamed", { name: name.trim() }),
+        text: t("onboarding.react.nameNamed", { name: settledName }),
       };
     }
     if (step.kind === "pain-map" && list(answer).length > 0) {
@@ -590,12 +726,28 @@ export function OnboardingPage() {
       const found = safetyReaction(answers);
       return found != null ? { id: found.key, text: t(found.text) } : null;
     }
-    if (step.key === "planDays") {
+    if (step.key === "equipment") {
       const found = equipmentReaction(answers);
       return found != null ? { id: found.key, text: t(found.text) } : null;
     }
     return null;
   })();
+  /** In the coach's bubble: the answer said back, or else his own line (a
+   * beat as a part of the flow begins, "try it now"). */
+  const coachSays = speakerHere ? coachLine(step.key, answers) : null;
+  const bubble =
+    inline ??
+    (coachSays != null ? { id: `coach_${step.key}`, text: say(coachSays) } : null);
+  /** What a hero says: halfway, and the plan ready. */
+  const heroSays = here.where === "hero" ? coachLine(step.key, answers) : null;
+  const heroLine = heroSays != null ? say(heroSays) : "";
+
+  /** The line said back now, the habit's included (its step draws its own).
+   * Counted only through `reactionAnalyticsId`: most ids name a body. */
+  const lineId =
+    step.kind === "habit"
+      ? (habitReaction(habitOf(answers))?.key ?? null)
+      : (inline?.id ?? null);
 
   const miniTestAnswers: MiniTestAnswers | null =
     chose(answers, "miniTest", "test") && list(answers["test-toe"]).length > 0
@@ -636,11 +788,6 @@ export function OnboardingPage() {
         if (step.key === "load")
           return load.options.some((o) => o.value === list(answer)[0]);
         return list(answer).length > 0;
-      case "schedule":
-        return (
-          list(answers.planDays).length > 0 &&
-          list(answers.planMinutes).length > 0
-        );
       case "pain-map":
         return list(answer).length > 0;
       case "habit":
@@ -659,10 +806,25 @@ export function OnboardingPage() {
   const settled = useSharedValue(1);
   const direction = useSharedValue(1);
 
+  /** The button pops once as an answer makes it ready: its own value, since
+   * `ctaSquash` only ever squashes. */
+  const ctaPop = useSharedValue(1);
+  const lastAdvance = useRef({ index, can: canAdvance });
+  useEffect(() => {
+    const was = lastAdvance.current;
+    lastAdvance.current = { index, can: canAdvance };
+    // Only on the same step: arriving on one that is ready is not an answer.
+    if (reduceMotion || was.index !== index || was.can || !canAdvance) return;
+    ctaPop.value = withSequence(
+      withTiming(1.05, { duration: 120, easing: Easing.out(Easing.quad) }),
+      withTiming(1, { duration: 160, easing: Easing.bezier(0.23, 1, 0.32, 1) }),
+    );
+  }, [index, canAdvance, reduceMotion, ctaPop]);
+
   const ctaSquashStyle = useAnimatedStyle(() => ({
     transform: [
-      { scaleY: 1 - ctaSquash.value * 0.11 },
-      { scaleX: 1 + ctaSquash.value * 0.025 },
+      { scaleY: (1 - ctaSquash.value * 0.11) * ctaPop.value },
+      { scaleX: (1 + ctaSquash.value * 0.025) * ctaPop.value },
     ],
   }));
 
@@ -695,8 +857,11 @@ export function OnboardingPage() {
    * trough, inside the animation callback, so nothing is visible mid-swap.
    */
   const go = useCallback(
-    (next: number, forward: boolean) => {
+    (next: number, forward: boolean, nextAnswers?: Answers) => {
       if (STEPS[next].kind !== "name") Keyboard.dismiss();
+      // The coach changes as the question leaves, so his squash and swap
+      // land inside the exit, beside the body rather than in it.
+      arriveRef.current(next, nextAnswers ?? answersRef.current);
       enterFrom.current = forward ? 1 : -1;
       direction.value = forward ? -1 : 1;
       settled.value = withTiming(
@@ -715,16 +880,69 @@ export function OnboardingPage() {
     [direction, settled],
   );
 
+  // Development: `walkito.dev://?onboardingStep=<key>` jumps to that step, so
+  // a screen can be reached on the simulator without tapping through, and
+  // `globalThis.__onboarding` does the same from the JS console (with no
+  // "Open in" prompt), plus setting an answer.
+  useEffect(() => {
+    if (!__DEV__) return undefined;
+    const jump = (key: string) => {
+      const at = STEPS.findIndex((candidate) => candidate.key === key);
+      if (at >= 0) go(at, true);
+    };
+    (globalThis as { __onboarding?: unknown }).__onboarding = {
+      go: jump,
+      answer: (key: string, value: Answer) => setAnswers((prev) => ({ ...prev, [key]: value })),
+    };
+    const onUrl = (url: string | null) => {
+      const key = url?.match(/[?&]onboardingStep=([\w-]+)/)?.[1];
+      if (key != null) jump(key);
+    };
+    void Linking.getInitialURL()
+      .then(onUrl)
+      .catch(() => undefined);
+    const subscription = Linking.addEventListener("url", ({ url }) => onUrl(url));
+    return () => subscription.remove();
+  }, [go]);
+
   /** One event per screen shown, keyed by the step's stable `key`. */
   useEffect(() => {
     if (index === 0) track("onboarding_started");
     track("onboarding_step_viewed", { step: step.key, index, act: step.act });
-    if (step.kind === "reaction" && reaction != null)
-      track("onboarding_reaction_viewed", {
-        reaction: reaction.key,
-        full: true,
-      });
+    // A whole-screen reaction, counted only when its id says nothing about a
+    // body: how long it has hurt and what was tried never leave the device.
+    const fullId = reaction != null ? reactionAnalyticsId(reaction.key) : null;
+    if (step.kind === "reaction" && fullId != null)
+      track("onboarding_reaction_viewed", { reaction: fullId, full: true });
+    setSeen((prev) => (prev.has(step.key) ? prev : new Set(prev).add(step.key)));
     // `step` follows `index`; listing it would only repeat the same trigger.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
+
+  /** A line said back, counted by the same rule. */
+  useEffect(() => {
+    const id = lineId != null ? reactionAnalyticsId(lineId) : null;
+    if (id != null) track("onboarding_reaction_viewed", { reaction: id, full: false });
+  }, [lineId]);
+
+  // The name said back lands: his thumbs up and happy jump, once a visit.
+  useEffect(() => {
+    if (step.kind !== "name" || settledName === "" || namedThisVisit.current)
+      return;
+    namedThisVisit.current = true;
+    applyCoach(coachAnswer("name", answersRef.current, {}));
+    // `applyCoach` reads refs only; these are the triggers.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [settledName, step.kind]);
+
+  // Why it still hurts: a nod as each section lands.
+  useEffect(() => {
+    if (step.kind !== "why") return undefined;
+    const timers = whySections.map((_, i) =>
+      setTimeout(() => playCoach("nod"), whySectionLandsMs(i)),
+    );
+    return () => timers.forEach(clearTimeout);
+    // Once per arrival.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
@@ -767,17 +985,20 @@ export function OnboardingPage() {
    */
   const move = (forward: boolean, patch?: Answers) => {
     if (forward) reportAnswer();
+    const current = answersRef.current;
+    const nextAnswers = patch != null ? { ...current, ...patch } : current;
+    if (patch != null) {
+      answersRef.current = nextAnswers;
+      setAnswers(nextAnswers);
+    }
     if (forward && returnTo != null) {
-      if (patch != null) setAnswers({ ...answers, ...patch });
       const back = returnTo;
       setReturnTo(null);
-      go(back, true);
+      go(back, true, nextAnswers);
       return;
     }
-    const nextAnswers = patch != null ? { ...answers, ...patch } : answers;
-    if (patch != null) setAnswers(nextAnswers);
     const next = stepAfter(index, forward, nextAnswers);
-    if (next != null) go(next, forward);
+    if (next != null) go(next, forward, nextAnswers);
   };
 
   /**
@@ -796,10 +1017,12 @@ export function OnboardingPage() {
       logPain(todayDayNumber(), intake.morningPain, painZones);
   };
 
+  /** Set by the last Continue, which holds a moment for the coach's cheer. */
+  const finishing = useRef(false);
+
   /** The end: the answers kept, the offer armed, the screens after the first
    * purchase owed, and Home. */
   const finish = () => {
-    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     Keyboard.dismiss();
     commit();
     armOffer({ weeks: String(plan.weeks), name });
@@ -823,14 +1046,20 @@ export function OnboardingPage() {
       return;
     }
     if (isLast) {
-      finish();
+      // Once: the hold for his cheer would otherwise let a second tap commit
+      // the answers, and start the plan, twice.
+      if (finishing.current) return;
+      finishing.current = true;
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      applyCoach(coachDone(step.key));
+      setTimeout(finish, reduceMotion ? 0 : FINISH_HOLD_MS);
       return;
     }
     // The 30-second check's experiment is decided here, as the flow reaches
     // it, and only for somebody it is for: reading the flag records the
     // exposure, and an ineligible person must not count in either arm.
     if (
-      step.key === "planDays" &&
+      step.key === "equipment" &&
       answers.miniTest == null &&
       miniTestEligible(answers, painless)
     ) {
@@ -840,20 +1069,35 @@ export function OnboardingPage() {
       move(true, { miniTest: variant });
       return;
     }
-    if (step.kind === "test-result") {
+    // The check's last screen: the toe, or one leg after it. There is no
+    // result screen; the plan it changes is what comes next.
+    if (
+      step.kind === "test-balance" ||
+      (step.kind === "test-toe" && !balanceAllowed(answers, painless))
+    ) {
       track("mini_test_completed", { balance: balance.left != null });
     }
     move(true);
   };
 
   const onBack = () => {
+    if (finishing.current) return;
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     if (index === 0) return;
     move(false);
   };
 
-  const setAnswer = (value: Answer) =>
-    setAnswers((prev) => ({ ...prev, [step.key]: value }));
+  /** Writes an answer and lets the coach answer it (`coachAnswer`, compared
+   * with the answer it replaced). The name is answered once typing pauses
+   * rather than per keystroke: see `settledName`. */
+  const writeAnswer = (key: string, value: Answer) => {
+    const prev = answersRef.current;
+    const next = { ...prev, [key]: value };
+    answersRef.current = next;
+    setAnswers(next);
+    if (step.kind !== "name") applyCoach(coachAnswer(step.key, next, prev));
+  };
+  const setAnswer = (value: Answer) => writeAnswer(step.key, value);
 
   const ctaLabel = (() => {
     switch (step.kind) {
@@ -867,7 +1111,6 @@ export function OnboardingPage() {
       case "first-week":
       case "outlook":
       case "contract":
-      case "test-result":
         return t("onboarding.cta.continue");
       default:
         return t("onboarding.cta.next");
@@ -883,12 +1126,6 @@ export function OnboardingPage() {
     if (step.kind === "choice" && step.key === "load") return say(load.title);
     return say(step.title);
   })();
-  const blurb = (() => {
-    if (step.kind === "outlook" && painless)
-      return t("onboarding.outlook.blurbNone");
-    if (step.kind === "choice" && step.key === "load") return say(load.blurb);
-    return say(step.blurb);
-  })();
 
   return (
     <KeyboardAvoidingView
@@ -898,7 +1135,7 @@ export function OnboardingPage() {
     >
       <Glow />
       {!bare && (
-        <View style={[styles.header, showPassport && styles.headerTight]}>
+        <View style={styles.header}>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t("common.back")}
@@ -913,274 +1150,274 @@ export function OnboardingPage() {
               strokeWidth={2}
             />
           </Pressable>
-          <StepProgress index={index} count={STEP_COUNT} checkpoints={CHECKPOINTS} />
+          <StepProgress
+            index={index}
+            count={STEP_COUNT}
+            checkpoints={CHECKPOINTS}
+            runner={runs(answers)}
+          />
           <LanguageBadge />
         </View>
       )}
-      {!bare && showPassport && (
-        <PassportStrip name={name} stamps={passportStamps} />
-      )}
 
-      <Animated.View
-        style={[styles.body, questionStyle]}
+      {/* The question slides; the coach beside it stays put. Masked whole on
+          the steps about the body: his pose follows the answers there too. */}
+      <View
+        style={styles.stage}
         {...(UNRECORDED_STEPS.has(step.key)
           ? REPLAY_MASK
           : { collapsable: false })}
       >
-        {step.kind === "intro" ? (
-          <IntroStep
-            squash={ctaSquash}
-            greeting={step.greeting(t)}
-            headline={step.headline(t)}
-            onReady={() => setIntroReady(true)}
-          />
-        ) : (
-          <>
-            {!ownHeading && (
-              <>
-                {/* Typed in, so the app reads as speaking each question. Keyed
-                    on the step so it retypes on every arrival. */}
-                <TypedText
-                  key={step.key}
-                  text={heading}
-                  style={[styles.title, { color: colors.foreground }]}
-                  maxDuration={QUESTION_LINE_MS}
-                />
-                {BLURB_STEPS.has(step.key) && (
-                  <Animated.Text
-                    key={`${step.key}-blurb`}
-                    entering={FadeIn.duration(320)
-                      .delay(BLURB_DELAY_MS)
-                      .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
-                      .reduceMotion(ReduceMotion.System)}
-                    style={[styles.blurb, { color: meter.caption }]}
-                  >
-                    {blurb}
-                  </Animated.Text>
-                )}
-              </>
-            )}
-
-            {step.kind === "name" && (
-              <View style={styles.scroll}>
-                <NameStep
-                  value={typeof answer === "string" ? answer : ""}
-                  placeholder={step.placeholder(t)}
-                  onChange={(next) => {
-                    setAnswer(next);
-                    setProfileName(next);
-                  }}
-                  onSubmit={onNext}
-                />
-                {inline != null && (
-                  <InlineReaction id={inline.id} text={inline.text} />
-                )}
-              </View>
-            )}
-
-            {step.kind === "choice" && (
-              <ScrollView
-                style={styles.scroll}
-                contentContainerStyle={styles.scrollContent}
-                showsVerticalScrollIndicator={false}
-              >
-                {step.hero != null && QUESTION_PHOTOS[step.key] != null && (
-                  <QuestionPhoto
-                    image={QUESTION_PHOTOS[step.key]}
-                    captions={step.hero.captions?.map((caption) => say(caption))}
-                  />
-                )}
-                <ChoiceStep
-                  art={step.key === "side" ? "side" : (step.art ?? "option")}
-                  options={optionsFor(step)}
-                  selected={list(answer)}
-                  multi={step.multi ?? false}
-                  max={step.max}
-                  onChange={setAnswer}
-                  // Under the answer just picked: the last in the list is
-                  // the latest tap.
-                  reactAfter={list(answer)[list(answer).length - 1] ?? null}
-                  reaction={
-                    inline != null ? (
-                      <InlineReaction
-                        id={inline.id}
-                        text={inline.text}
-                        style={styles.reactionInList}
-                      />
-                    ) : undefined
+        <Animated.View style={[styles.body, questionStyle]} collapsable={false}>
+          {step.kind === "intro" ? (
+            <IntroStep
+              squash={ctaSquash}
+              greeting={step.greeting(t)}
+              headline={step.headline(t)}
+              onReady={() => setIntroReady(true)}
+              paused={signIn}
+            />
+          ) : (
+            <>
+              {!ownHeading && (
+                // The whole question block, the line under it included, keeps
+                // clear of the coach, and is at least as tall as him, so his
+                // bubble below starts under his feet.
+                <View
+                  style={
+                    speakerHere && { paddingRight: inset, minHeight: speakerSize }
                   }
+                >
+                  {/* Typed in, so the app reads as speaking each question. Keyed
+                      on the step so it retypes on every arrival. */}
+                  <TypedText
+                    key={step.key}
+                    text={heading}
+                    style={[styles.title, { color: colors.foreground }]}
+                    maxDuration={QUESTION_LINE_MS}
+                  />
+                </View>
+              )}
+
+              {/* What the coach says, above the answers: the answer said back,
+                  or his own line. Keyed on the step, so each one arrives. */}
+              {bubble != null && (
+                <CoachBubble
+                  key={step.key}
+                  id={bubble.id}
+                  text={bubble.text}
+                  tail="top-right"
+                  delay={bubble.id.startsWith("coach_") ? COACH_LINE_DELAY_MS : 0}
+                  style={styles.reaction}
                 />
-                {step.hero?.note != null && (
-                  <QuestionNote text={say(step.hero.note)} />
-                )}
-              </ScrollView>
-            )}
+              )}
 
-            {step.kind === "schedule" && (
-              <ScheduleStep
-                days={resolve(step.days)}
-                minutes={resolve(step.minutes)}
-                kit={resolve(step.kit)}
-                picked={{
-                  days: list(answers.planDays)[0] ?? null,
-                  minutes: list(answers.planMinutes)[0] ?? null,
-                  kit: list(answers.equipment),
-                }}
-                onPick={(key, next) =>
-                  setAnswers((prev) => ({ ...prev, [key]: next }))
-                }
-                adds={kitAdds}
-                reaction={
-                  inline != null ? (
-                    <InlineReaction id={inline.id} text={inline.text} />
-                  ) : undefined
-                }
-              />
-            )}
+              {step.kind === "name" && (
+                <Animated.View layout={MAKE_ROOM} style={styles.scroll}>
+                  <NameStep
+                    value={typeof answer === "string" ? answer : ""}
+                    placeholder={step.placeholder(t)}
+                    onChange={(next) => {
+                      setAnswer(next);
+                      setProfileName(next);
+                    }}
+                    onSubmit={onNext}
+                  />
+                </Animated.View>
+              )}
 
-            {step.kind === "pain-map" && (
-              <View style={styles.fill}>
-                <PainMapStep value={list(answer)} onChange={setAnswer} />
-                {inline != null && (
-                  <InlineReaction id={inline.id} text={inline.text} />
-                )}
-              </View>
-            )}
+              {step.kind === "choice" && (
+                <Animated.ScrollView
+                  layout={MAKE_ROOM}
+                  style={styles.scroll}
+                  contentContainerStyle={styles.scrollContent}
+                  showsVerticalScrollIndicator={false}
+                >
+                  {step.hero != null && QUESTION_PHOTOS[step.key] != null && (
+                    <QuestionPhoto
+                      image={QUESTION_PHOTOS[step.key]}
+                      captions={step.hero.captions?.map((caption) => say(caption))}
+                    />
+                  )}
+                  {/* The answer drawn above the cards: the week it makes,
+                      or the timer filled to it. */}
+                  {step.gauge === "week" && (
+                    <WeekGauge days={daysPerWeekOf(answers)} />
+                  )}
+                  {step.gauge === "timer" && (
+                    <TimerGauge minutes={sessionMinutesOf(answers)} />
+                  )}
+                  <ChoiceStep
+                    art={step.art ?? "fluent"}
+                    options={optionsFor(step)}
+                    selected={list(answer)}
+                    multi={step.multi ?? false}
+                    max={step.max}
+                    calm={CALM_STEPS.has(step.key)}
+                    onChange={setAnswer}
+                  />
+                  {step.hero?.note != null && (
+                    <QuestionNote text={say(step.hero.note)} />
+                  )}
+                  {step.key === "equipment" && <KitAdds adds={kitAdds} />}
+                </Animated.ScrollView>
+              )}
 
-            {step.kind === "reaction" && reaction != null && (
-              <ReactionStep
-                title={t(reaction.title)}
-                body={t(reaction.body)}
-                onNext={onNext}
-              />
-            )}
+              {step.kind === "pain-map" && (
+                <Animated.View layout={MAKE_ROOM} style={styles.fill}>
+                  <PainMapStep value={list(answer)} onChange={setAnswer} />
+                </Animated.View>
+              )}
 
-            {step.kind === "morning-pain" && (
-              <MorningPainStep
-                score={score}
-                onChange={(next) =>
-                  setAnswers((prev) => ({ ...prev, morningPain: String(next) }))
-                }
-              />
-            )}
+              {step.kind === "reaction" && reaction != null && (
+                <ReactionStep
+                  title={t(reaction.title)}
+                  body={t(reaction.body)}
+                  onNext={onNext}
+                  rig={rigFor(here.pose)}
+                  shot={here.enter ?? null}
+                />
+              )}
 
-            {step.kind === "midway" && (
-              <MidwayStep
-                title={say(() =>
-                  t("onboarding.passport.heading", { name: "{name}" }),
-                )}
-              >
-                <PassportCard
+              {step.kind === "morning-pain" && (
+                <MorningPainStep
+                  score={score}
+                  onChange={(next) => writeAnswer("morningPain", String(next))}
+                />
+              )}
+
+              {step.kind === "midway" && (
+                <MidwayStep
+                  title={say(() =>
+                    t("onboarding.passport.heading", { name: "{name}" }),
+                  )}
+                  line={heroLine}
+                  celebrate={!again}
+                >
+                  <PassportCard
+                    stamps={passportStamps}
+                    onEdit={editFromPassport}
+                  />
+                </MidwayStep>
+              )}
+
+              {step.kind === "why" && (
+                <WhyStep
+                  title={say(() => t("onboarding.why.title", { name: "{name}" }))}
+                  sections={whySections}
+                  footer={t("onboarding.why.footer")}
+                  speakerInset={inset}
+                />
+              )}
+
+              {step.kind === "outlook" && (
+                <OutlookStep zones={painZones} months={outlookMonths(t)} />
+              )}
+
+              {step.kind === "habit" && (
+                <HabitStep
+                  options={resolve(step.options)}
+                  habit={habitOf(answers)}
+                  onHabit={(next: Habit) => {
+                    setAnswer([next]);
+                    if (!reminderTouched.current)
+                      setReminder(reminderFor(next, wakeMinutes()));
+                  }}
+                  minutes={reminder}
+                  onMinutes={(next) => {
+                    reminderTouched.current = true;
+                    setReminder(next);
+                  }}
+                  onPickingChange={setHabitPicking}
+                />
+              )}
+
+              {step.kind === "notify" && (
+                <NotifyStep
                   name={name}
-                  stamps={passportStamps}
-                  zones={painless ? [] : painZones}
-                  onEdit={editFromPassport}
+                  granted={notify}
+                  // He is the step's own here and nods at a yes and a no
+                  // alike: allowing is not a win.
+                  onAnswered={setNotify}
+                  onNext={onNext}
+                  speakerInset={inset}
                 />
-              </MidwayStep>
-            )}
+              )}
 
-            {step.kind === "why" && (
-              <WhyStep
-                title={say(() => t("onboarding.why.title", { name: "{name}" }))}
-                sections={whySections}
-                footer={t("onboarding.why.footer")}
-              />
-            )}
-
-            {step.kind === "outlook" && (
-              <OutlookStep zones={painZones} months={outlookMonths(t)} />
-            )}
-
-            {step.kind === "habit" && (
-              <HabitStep
-                options={resolve(step.options)}
-                habit={habitOf(answers)}
-                onHabit={(next: Habit) => {
-                  setAnswer([next]);
-                  if (!reminderTouched.current)
-                    setReminder(reminderFor(next, wakeMinutes()));
-                }}
-                minutes={reminder}
-                onMinutes={(next) => {
-                  reminderTouched.current = true;
-                  setReminder(next);
-                }}
-              />
-            )}
-
-            {step.kind === "notify" && (
-              <NotifyStep
-                name={name}
-                granted={notify}
-                onAnswered={setNotify}
-                onNext={onNext}
-              />
-            )}
-
-            {step.kind === "test-intro" && (
-              <TestIntro
-                withBalance={balanceAllowed(answers, painless)}
-                onSkip={() => {
-                  Haptics.selectionAsync();
-                  move(true, { miniTest: "skipped" });
-                }}
-              />
-            )}
-
-            {step.kind === "test-toe" && (
-              <TestToe
-                total={balanceAllowed(answers, painless) ? 2 : 1}
-                options={[
-                  { value: "yes", label: t("onboarding.test.toeYes") },
-                  { value: "no", label: t("onboarding.test.toeNo") },
-                  { value: "unsure", label: t("onboarding.test.toeUnsure") },
-                ]}
-                answer={list(answer)[0] ?? null}
-                onAnswer={(next) => setAnswer([next])}
-              />
-            )}
-
-            {step.kind === "test-balance" && (
-              <TestBalance
-                total={2}
-                left={balance.left}
-                right={balance.right}
-                onResult={(which, seconds) =>
-                  setBalance((prev) => ({ ...prev, [which]: seconds }))
-                }
-              />
-            )}
-
-            {step.kind === "test-result" && (
-              <TestResult
-                arch={miniTestAnswers?.arch ?? null}
-                left={balance.left}
-                right={balance.right}
-              />
-            )}
-
-            {step.kind === "first-week" && (
-              <FirstWeekStep
-                days={sessionDays(settingsNow.daysPerWeek ?? 5)}
-                moves={weekMoves}
-              />
-            )}
-
-            {step.kind === "contract" && (
-              <View style={styles.scroll}>
-                <ContractStep
-                  name={name}
-                  onSignedChange={setSigned}
-                  onDrawingChange={setDrawing}
-                  stamp={stamp}
-                  sealing={sealing}
-                  onSealed={() => move(true)}
+              {step.kind === "test-intro" && (
+                <TestIntro
+                  withBalance={balanceAllowed(answers, painless)}
+                  onSkip={() => {
+                    Haptics.selectionAsync();
+                    move(true, { miniTest: "skipped" });
+                  }}
                 />
-              </View>
-            )}
-          </>
-        )}
-      </Animated.View>
+              )}
+
+              {step.kind === "test-toe" && (
+                <TestToe
+                  total={balanceAllowed(answers, painless) ? 2 : 1}
+                  options={[
+                    { value: "yes", label: t("onboarding.test.toeYes") },
+                    { value: "no", label: t("onboarding.test.toeNo") },
+                    { value: "unsure", label: t("onboarding.test.toeUnsure") },
+                  ]}
+                  answer={list(answer)[0] ?? null}
+                  onAnswer={(next) => setAnswer([next])}
+                  speakerInset={inset}
+                  onViewerChange={setClipViewerOpen}
+                />
+              )}
+
+              {step.kind === "test-balance" && (
+                <TestBalance
+                  total={2}
+                  left={balance.left}
+                  right={balance.right}
+                  onResult={(which, seconds) =>
+                    setBalance((prev) => ({ ...prev, [which]: seconds }))
+                  }
+                  onStart={() =>
+                    applyCoach(
+                      coachAnswer(step.key, answersRef.current, answersRef.current),
+                    )
+                  }
+                  speakerInset={inset}
+                  onViewerChange={setClipViewerOpen}
+                />
+              )}
+
+              {step.kind === "first-week" && (
+                <FirstWeekStep
+                  answers={answers}
+                  squash={ctaSquash}
+                  onViewerChange={setClipViewerOpen}
+                />
+              )}
+
+              {step.kind === "contract" && (
+                <View style={styles.scroll}>
+                  <ContractStep
+                    name={name}
+                    onSignedChange={setSigned}
+                    onDrawingChange={setDrawing}
+                    stamp={stamp}
+                    sealing={sealing}
+                    onSealed={() => move(true)}
+                  />
+                </View>
+              )}
+            </>
+          )}
+        </Animated.View>
+        <CoachSpeaker
+          moment={coach.moment}
+          shot={coachShot}
+          size={coach.size}
+          paused={signIn || habitPicking || clipViewerOpen}
+          surface={colors.background}
+        />
+      </View>
 
       {/* Pinned over the whole page rather than carried by the step slide. */}
       {step.kind === "building" && (
@@ -1188,6 +1425,8 @@ export function OnboardingPage() {
           rows={buildingRows}
           onDone={onNext}
           insets={insets}
+          readyLine={heroLine}
+          celebrate={!again}
         />
       )}
 
@@ -1206,10 +1445,12 @@ export function OnboardingPage() {
                     : undefined
                 }
               >
-                <PrimaryButton
+                <Button3D
                   label={ctaLabel}
                   onPress={onNext}
                   disabled={!canAdvance}
+                  size="xl"
+                  docked
                 />
               </Animated.View>
             )}
@@ -1276,10 +1517,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 2,
     marginBottom: 26,
   },
-  /** Inside the answer list, whose own gap already spaces it. */
-  reactionInList: { marginTop: 0 },
+  /** Under the question, over the answers; the tail rises into the gap. */
+  reaction: { marginTop: 12 },
   /** With the passport folded under it, which brings its own gap. */
-  headerTight: { marginBottom: 12 },
+  /** The body and the coach beside it. */
+  stage: {
+    flex: 1,
+  },
   body: {
     flex: 1,
   },
@@ -1290,11 +1534,6 @@ const styles = StyleSheet.create({
     ...fonts.bold(30, -0.8),
     lineHeight: 36,
   },
-  blurb: {
-    marginTop: 10,
-    ...fonts.regular(16),
-    lineHeight: 22,
-  },
   scroll: {
     flex: 1,
     marginTop: 26,
@@ -1302,21 +1541,14 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingBottom: 8,
   },
-  /** A label over each list on the schedule step. */
-  section: {
-    ...fonts.bold(15, -0.2),
-    marginBottom: 10,
-  },
-  sectionNext: {
-    marginTop: 22,
-  },
   bar: {
     paddingTop: 16,
   },
   /** Reserves the button's height so the body never changes size when the
-   * welcome screen's CTA arrives. */
+   * welcome screen's CTA arrives. Wider than the page's gutter. */
   ctaSlot: {
-    height: PRIMARY_BUTTON_HEIGHT,
+    height: BUTTON_3D_XL_HEIGHT,
+    marginHorizontal: -CTA_BLEED,
     transformOrigin: "bottom",
   },
   introFoot: {

@@ -10,6 +10,7 @@ import { kv } from '@/shared/lib/storage';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 import { Platform } from 'react-native';
 import Purchases, {
+  INTRO_ELIGIBILITY_STATUS,
   LOG_LEVEL,
   PACKAGE_TYPE,
   PRODUCT_CATEGORY,
@@ -25,7 +26,11 @@ import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './
 import { campaignAttributes } from './attribution';
 import {
   ENTITLEMENT,
+  LIFETIME_PRODUCT_IDS,
+  OFFERING_V2,
   PACKAGES,
+  V2_SHELVES,
+  type IntroOffer,
   type Offering,
   type Plan,
   type PlanPeriod,
@@ -33,6 +38,7 @@ import {
   type Purchases as Store,
   type PurchaseResult,
   type RestoreResult,
+  type StorePeriod,
 } from './purchase';
 
 /**
@@ -185,6 +191,20 @@ function entitledIn(info: CustomerInfo): boolean {
         'the RevenueCat dashboard (Product catalog → Entitlements).',
     );
   }
+  if (
+    __DEV__ &&
+    !verdict.entitled &&
+    info.nonSubscriptionTransactions.some((t) => LIFETIME_PRODUCT_IDS.includes(t.productIdentifier))
+  ) {
+    // Lifetime is a non-consumable: only the entitlement it is attached to
+    // grants anything, so a purchase that grants none is a dashboard missing a
+    // link, and a paying customer locked out until it is made.
+    console.warn(
+      `[purchases] A lifetime product was bought but no "${ENTITLEMENT}" entitlement is active. ` +
+        `Attach ${LIFETIME_PRODUCT_IDS.join(' and ')} to "${ENTITLEMENT}" in the RevenueCat dashboard ` +
+        '(Product catalog → Entitlements).',
+    );
+  }
   if (__DEV__ && verdict.reason === 'pass-undated') {
     console.warn(
       '[purchases] A legacy pass granted an entitlement but no purchase date came ' +
@@ -215,6 +235,7 @@ function explainMissingEntitlement(info: CustomerInfo): void {
   console.error(
     `[purchases] The purchase completed but granted no "${ENTITLEMENT}" entitlement.\n` +
       `  bought        : ${info.activeSubscriptions.join(', ') || '(nothing active)'}\n` +
+      `  one-time      : ${info.nonSubscriptionTransactions.map((t) => t.productIdentifier).join(', ') || 'none'}\n` +
       `  entitlements  : active [${active.join(', ') || 'none'}], known [${known.join(', ') || 'none'}]\n` +
       `  expected      : "${ENTITLEMENT}"\n` +
       'Attach the products to an entitlement with that identifier in the RevenueCat ' +
@@ -278,58 +299,254 @@ function messageFor(error: unknown): string {
   }
 }
 
+/** A store's period unit and count, or null for a unit the app does not draw. */
+function storePeriod(unit: string | null | undefined, count: number): StorePeriod | null {
+  if (!Number.isFinite(count) || count < 1) return null;
+  switch (unit?.toUpperCase()) {
+    case 'DAY':
+      return { unit: 'day', count };
+    case 'WEEK':
+      return { unit: 'week', count };
+    case 'MONTH':
+      return { unit: 'month', count };
+    case 'YEAR':
+      return { unit: 'year', count };
+    default:
+      return null;
+  }
+}
+
+const ISO_UNITS: Readonly<Record<string, string>> = { D: 'DAY', W: 'WEEK', M: 'MONTH', Y: 'YEAR' };
+
+/** An ISO 8601 period as the store writes it ("P1Y", "P1M", "P1W", "P3D"). */
+function isoPeriod(iso: string | null | undefined): StorePeriod | null {
+  const match = iso == null ? null : /^P(\d+)([DWMY])$/.exec(iso);
+  if (match == null) return null;
+  return storePeriod(ISO_UNITS[match[2]], Number(match[1]));
+}
+
+/** What a product's introductory offer, if any, is eligible for: the answer
+ * per product id from `introEligibility`. */
+type Eligibility = Readonly<Record<string, INTRO_ELIGIBILITY_STATUS>>;
+
+/**
+ * The introductory offer this customer would get on a product, or null.
+ *
+ * On iOS only one StoreKit calls eligible: Apple gives an introductory offer
+ * once per subscription group, and RevenueCat's advice for "unknown" is to show
+ * the ordinary price rather than promise a trial the sheet may not give. A
+ * screen may say "free" only where this returns a free trial. Google Play lists
+ * only the offers this account can take (and RevenueCat always answers
+ * "unknown" there), so on Android the product's own offer stands.
+ *
+ * RevenueCat reports one billing period of the offer and how many times it
+ * repeats. A price of zero is a free trial; one payment is paid up front for
+ * the whole of it; more than one is pay-as-you-go.
+ */
+function introOf(product: PurchasesStoreProduct, eligibility: Eligibility): IntroOffer | null {
+  const intro = product.introPrice;
+  if (intro == null) return null;
+  if (
+    Platform.OS === 'ios' &&
+    eligibility[product.identifier] !== INTRO_ELIGIBILITY_STATUS.INTRO_ELIGIBILITY_STATUS_ELIGIBLE
+  ) {
+    return null;
+  }
+  const one = storePeriod(intro.periodUnit, intro.periodNumberOfUnits) ?? isoPeriod(intro.period);
+  if (one == null) return null;
+  const cycles = Number.isFinite(intro.cycles) && intro.cycles >= 1 ? Math.round(intro.cycles) : 1;
+  const whole: StorePeriod = { unit: one.unit, count: one.count * cycles };
+  if (!(intro.price > 0)) return { kind: 'free-trial', period: whole };
+  if (cycles === 1) {
+    return { kind: 'pay-up-front', price: intro.price, priceString: intro.priceString, period: whole };
+  }
+  return { kind: 'pay-as-you-go', price: intro.price, priceString: intro.priceString, period: one, cycles };
+}
+
+/** Whether a product is a one-time purchase rather than a subscription. */
+function isOneTime(product: PurchasesStoreProduct): boolean {
+  return (
+    product.productCategory === PRODUCT_CATEGORY.NON_SUBSCRIPTION ||
+    LIFETIME_PRODUCT_IDS.includes(product.identifier)
+  );
+}
+
 /** A package as the app sees it: a price to print and a token to buy with. */
 function toPlan(
   offeringId: string,
   pkg: PurchasesPackage | null,
   period: PlanPeriod,
+  eligibility: Eligibility,
 ): Plan | null {
   if (pkg == null) return null;
   const token = `${offeringId}:${pkg.identifier}`;
   packages.set(token, { pkg, period });
+  const store = pkg.product;
   const product: Product = {
-    id: pkg.product.identifier,
-    price: pkg.product.price,
-    currencyCode: pkg.product.currencyCode,
+    id: store.identifier,
+    price: store.price,
+    currencyCode: store.currencyCode,
     // The store's own string. Formatting `price` by hand gets the symbol on the
     // wrong side in half of Europe and the separator wrong in the other half.
-    display: pkg.product.priceString,
+    display: store.priceString,
   };
-  return { token, period, product };
+  const lifetime = period === 'lifetime' || isOneTime(store);
+  return {
+    token,
+    period,
+    product,
+    priceString: store.priceString,
+    pricePerMonthString: lifetime ? null : (store.pricePerMonthString ?? null),
+    pricePerWeekString: lifetime ? null : (store.pricePerWeekString ?? null),
+    billingPeriod: lifetime ? null : isoPeriod(store.subscriptionPeriod),
+    isLifetime: lifetime,
+    intro: lifetime ? null : introOf(store, eligibility),
+  };
 }
 
+/** Where each plan sits in an offering: RevenueCat's own slot, its package
+ * type, and the period a product in it bills over (null: one-time). */
+const SLOTS: Readonly<
+  Record<PlanPeriod, { named: (o: PurchasesOffering) => PurchasesPackage | null; type: PACKAGE_TYPE; iso: string | null }>
+> = {
+  annual: { named: (o) => o.annual, type: PACKAGE_TYPE.ANNUAL, iso: 'P1Y' },
+  monthly: { named: (o) => o.monthly, type: PACKAGE_TYPE.MONTHLY, iso: 'P1M' },
+  weekly: { named: (o) => o.weekly, type: PACKAGE_TYPE.WEEKLY, iso: 'P1W' },
+  lifetime: { named: (o) => o.lifetime, type: PACKAGE_TYPE.LIFETIME, iso: null },
+};
+
 /**
- * One of the two plans in an offering.
+ * One of the plans in an offering.
  *
- * RevenueCat's own slot first — `$rc_annual` and `$rc_weekly` are what the
- * dashboard is expected to use (see `PACKAGES`). The fallbacks keep a plan on
- * sale when a package was created under a custom identifier: the same
- * identifier typed by hand, then any package whose product bills over that
- * period. Without them a dashboard typo shows as a plan that is simply not
- * there, which is the hardest version of the mistake to notice.
+ * RevenueCat's own slot first — `$rc_annual`, `$rc_monthly`, `$rc_weekly` and
+ * `$rc_lifetime` are what the dashboard is expected to use (see `PACKAGES`).
+ * The fallbacks keep a plan on sale when a package was created under a custom
+ * identifier: the same identifier typed by hand, then any package whose product
+ * bills over that period (or, for lifetime, is a one-time purchase). Without
+ * them a dashboard typo shows as a plan that is simply not there, which is the
+ * hardest version of the mistake to notice.
  */
-function slot(
-  found: PurchasesOffering,
-  period: PlanPeriod,
-): PurchasesPackage | null {
-  const named = period === 'annual' ? found.annual : found.weekly;
-  if (named != null) return named;
+function slot(found: PurchasesOffering, period: PlanPeriod): PurchasesPackage | null {
+  const { named, type, iso } = SLOTS[period];
+  const direct = named(found);
+  if (direct != null) return direct;
   const id = PACKAGES[period];
-  const type = period === 'annual' ? PACKAGE_TYPE.ANNUAL : PACKAGE_TYPE.WEEKLY;
-  const iso = period === 'annual' ? 'P1Y' : 'P1W';
   return (
     found.availablePackages.find((pkg) => pkg.identifier === id || pkg.packageType === type) ??
-    found.availablePackages.find((pkg) => pkg.product.subscriptionPeriod === iso) ??
+    found.availablePackages.find((pkg) =>
+      iso == null ? isOneTime(pkg.product) : !isOneTime(pkg.product) && pkg.product.subscriptionPeriod === iso,
+    ) ??
     null
   );
 }
 
-function toOffering(found: PurchasesOffering): Offering {
+/** The package in each slot of one offering, null where it has none. */
+type Slots = Readonly<Record<PlanPeriod, PurchasesPackage | null>>;
+
+const PERIODS: readonly PlanPeriod[] = ['annual', 'monthly', 'weekly', 'lifetime'];
+
+/** The slots of an offering read by its own name (`slot`). */
+function slotsOf(found: PurchasesOffering): Slots {
   return {
-    identifier: found.identifier,
-    annual: toPlan(found.identifier, slot(found, 'annual'), 'annual'),
-    weekly: toPlan(found.identifier, slot(found, 'weekly'), 'weekly'),
+    annual: slot(found, 'annual'),
+    monthly: slot(found, 'monthly'),
+    weekly: slot(found, 'weekly'),
+    lifetime: slot(found, 'lifetime'),
   };
+}
+
+/** `v2` package ids already warned about: a missing one is reported once per
+ * process, not on every fetch. */
+const reportedV2 = new Set<string>();
+
+/**
+ * One of the app's offerings, cut out of `v2` (`V2_SHELVES`). Null when the
+ * name is not one of the three, or `v2` holds none of its packages: the caller
+ * then reads the offering by name, as before `v2` existed.
+ *
+ * By package identifier only, never by type or billing period as `slot` falls
+ * back to: `v2` holds three yearly subscriptions and two lifetimes, and "the
+ * package that bills yearly" could sell the trial as the standard annual.
+ */
+function v2Slots(v2: PurchasesOffering, identifier: string): Slots | null {
+  const wanted = V2_SHELVES[identifier];
+  if (wanted == null) return null;
+  const byId = (id: string | undefined): PurchasesPackage | null =>
+    id == null ? null : (v2.availablePackages.find((pkg) => pkg.identifier === id) ?? null);
+  const slots: Slots = {
+    annual: byId(wanted.annual),
+    monthly: byId(wanted.monthly),
+    weekly: byId(wanted.weekly),
+    lifetime: byId(wanted.lifetime),
+  };
+  if (__DEV__) {
+    // A package typed differently in the dashboard, or a product StoreKit did
+    // not return (RevenueCat leaves those packages out), reads as a plan that
+    // is simply not there.
+    for (const period of PERIODS) {
+      const id = wanted[period];
+      if (id == null || slots[period] != null || reportedV2.has(id)) continue;
+      reportedV2.add(id);
+      console.warn(
+        `[purchases] Offering "${OFFERING_V2}" has no "${id}" package, so the ${period} plan of ` +
+          `"${identifier}" is missing. Check the package identifier in the RevenueCat dashboard ` +
+          '(Offerings → v2) and that its product loads from the store.',
+      );
+    }
+  }
+  return PERIODS.some((period) => slots[period] != null) ? slots : null;
+}
+
+/**
+ * Whether this customer can have each introductory offer among an offering's
+ * plans, on iOS. Asked only when a product there has one, so the standard
+ * offering costs nothing extra. A failed check answers nothing, which `introOf`
+ * reads as "show the ordinary price".
+ */
+async function introEligibility(slots: Slots): Promise<Eligibility> {
+  if (Platform.OS !== 'ios') return {};
+  const ids = PERIODS.map((period) => slots[period])
+    .filter((pkg): pkg is PurchasesPackage => pkg != null && pkg.product.introPrice != null)
+    .map((pkg) => pkg.product.identifier);
+  if (ids.length === 0) return {};
+  try {
+    const answers = await Purchases.checkTrialOrIntroductoryPriceEligibility(ids);
+    const out: Record<string, INTRO_ELIGIBILITY_STATUS> = {};
+    for (const [id, answer] of Object.entries(answers)) out[id] = answer.status;
+    return out;
+  } catch {
+    return {};
+  }
+}
+
+/**
+ * An offering as the app sees it. `identifier` starts every plan's token, which
+ * is where the `offering` of a purchase event comes from. Cut out of `v2`, it is
+ * the name the app asked for (`default`, `trial`, `offer`), so purchase events
+ * stay in the series they were in before `v2`.
+ */
+async function toOffering(identifier: string, slots: Slots): Promise<Offering> {
+  const eligibility = await introEligibility(slots);
+  const plan = (period: PlanPeriod) => toPlan(identifier, slots[period], period, eligibility);
+  return {
+    identifier,
+    annual: plan('annual'),
+    monthly: plan('monthly'),
+    weekly: plan('weekly'),
+    lifetime: plan('lifetime'),
+  };
+}
+
+/** Which plan a product bought by id is, for a paywall the app did not draw. */
+function tierOf(product: PurchasesStoreProduct): PlanTier {
+  if (isOneTime(product)) return 'lifetime';
+  const unit = isoPeriod(product.subscriptionPeriod)?.unit;
+  if (unit === 'year') return 'annual';
+  if (unit === 'month') return 'monthly';
+  if (unit === 'week') return 'weekly';
+  if (/annual|year/i.test(product.identifier)) return 'annual';
+  if (/month/i.test(product.identifier)) return 'monthly';
+  return 'weekly';
 }
 
 /**
@@ -351,9 +568,41 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   Purchases.addCustomerInfoUpdateListener((info) => announce(info));
 
   void linkAnalytics();
+  relinkOnSignIn();
   void collectAdAttribution();
 
   await refreshEntitlement();
+}
+
+/**
+ * Joins the store's customer to the account again whenever the device signs
+ * in to a different one: the intro's "Already have an account", a code for an
+ * address that already had an account, Apple or Google on a second phone.
+ * Otherwise the purchase webhook keeps naming the abandoned anonymous id until
+ * the next launch. A code that only confirms an address keeps the same id and
+ * changes nothing here.
+ */
+function relinkOnSignIn(): void {
+  const client = supabase;
+  if (client == null) return;
+  let linked: string | null = null;
+  client.auth.onAuthStateChange((event, session) => {
+    const uid = session?.user.id ?? null;
+    if (uid == null || uid === linked) return;
+    const first = linked == null;
+    linked = uid;
+    // The launch's own session is linked by `linkAnalytics`.
+    if (first || (event !== 'SIGNED_IN' && event !== 'USER_UPDATED')) return;
+    // Deferred: supabase-js holds its auth lock while this callback runs, and
+    // a request made from inside it waits on that lock. The id comes from the
+    // event, not `currentUserId()`, whose cached answer may still be the old
+    // user until the caller has called `forgetIdentity()`.
+    setTimeout(() => {
+      void Purchases.getAppUserID()
+        .then((rcId) => linkBackend(rcId, uid))
+        .catch(() => undefined);
+    }, 0);
+  });
 }
 
 /**
@@ -451,7 +700,8 @@ function recordCampaign(data: Parameters<typeof campaignAttributes>[0]): void {
  *
  * SKAdNetwork conversion values and the networks' own on-device optimisation
  * only see events the SDK logs on the device. `af_start_trial` or
- * `af_subscribe`, with the product and the plan.
+ * `af_subscribe`, with the product and the plan; `af_purchase` for lifetime,
+ * a one-time purchase.
  *
  * **No `af_revenue`, no `af_currency`.** The money reaches AppsFlyer from
  * RevenueCat's server (`linkAppsFlyer`), with renewals and refunds the phone
@@ -459,6 +709,11 @@ function recordCampaign(data: Parameters<typeof campaignAttributes>[0]): void {
  * twice.
  */
 function logStoreConversion(info: CustomerInfo, productId: string, plan: PlanTier): void {
+  // A lifetime purchase is not a subscription: AppsFlyer's one-time event.
+  if (plan === 'lifetime') {
+    logAppsFlyerEvent('af_purchase', { af_content_id: productId, plan });
+    return;
+  }
   const trial = info.entitlements.active[ENTITLEMENT]?.periodType?.toUpperCase() === 'TRIAL';
   logAppsFlyerEvent(trial ? 'af_start_trial' : 'af_subscribe', { af_content_id: productId, plan });
 }
@@ -493,11 +748,11 @@ async function linkAnalytics(): Promise<void> {
  * id is also sent to RevenueCat as an attribute, for looking a customer up by
  * hand. Neither changes the RevenueCat id itself, which PostHog is keyed on.
  */
-async function linkBackend(rcId: string): Promise<void> {
+async function linkBackend(rcId: string, knownUid?: string): Promise<void> {
   const client = supabase;
   if (client == null) return;
   try {
-    const uid = await currentUserId();
+    const uid = knownUid ?? (await currentUserId());
     if (uid == null) return;
     await client.rpc('link_revenuecat', { p_app_user_id: rcId });
     await Purchases.setAttributes({ supabase_user_id: uid });
@@ -562,11 +817,20 @@ export const revenueCatStore: Store = {
     // offering — so one dropped connection greyed every plan out for good and
     // left the only door into the app shut. See `offering` on the contract.
     const all = await Purchases.getOfferings();
+    // The App Store line-up first: one offering, `v2`, cut into the three the
+    // app asks for. Read by name, so it holds whether or not `v2` is current.
+    // RevenueCat leaves out an offering none of whose products loaded, so a
+    // `v2` the store cannot serve, or Android's (it has no products there),
+    // is simply absent and everything below runs exactly as it always did.
+    const v2 = all.all[OFFERING_V2];
+    const cut = v2 == null ? null : v2Slots(v2, identifier);
+    if (cut != null) return toOffering(identifier, cut);
     // By name first, then whatever the dashboard marks current. The fallback
     // matters for `default`, which RevenueCat exposes as `current` rather than
     // under that key in some dashboard configurations.
     const found = all.all[identifier] ?? (identifier === 'default' ? all.current : null);
-    return found == null ? null : toOffering(found);
+    if (found == null) return null;
+    return toOffering(found.identifier, slotsOf(found));
   },
 
   async buy(plan: Plan): Promise<PurchaseResult> {
@@ -642,7 +906,7 @@ export const revenueCatStore: Store = {
       return { status: 'failed', message: translatorFor(getLanguage())('purchase.unavailable') };
     }
     const props: PurchaseProps = {
-      plan: /annual|year/i.test(product.identifier) ? 'annual' : 'weekly',
+      plan: tierOf(product),
       product_id: product.identifier,
       offering: source,
       price: product.price,

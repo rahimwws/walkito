@@ -213,12 +213,6 @@ export const JOURNEY_PT = {
   'onboarding.test.left': 'Esquerda',
   'onboarding.test.right': 'Direita',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Seu ponto de partida',
-  'onboarding.test.archYes': 'Pé flexível. Responde bem ao trabalho de força.',
-  'onboarding.test.archNo': 'Sem arco. Vamos focar em panturrilha e tornozelo.',
-  'onboarding.test.archUnsure': 'Difícil dizer. Sua primeira reavaliação vai medir isso.',
-  'onboarding.test.balanceHead': 'Em uma perna só',
-  'onboarding.test.resultFoot': 'Seu plano usa isso desde o primeiro dia.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Montando seu plano',
@@ -233,17 +227,35 @@ export const JOURNEY_PT = {
   'onboarding.building.choosing': 'Escolhendo sua primeira semana…',
   'onboarding.building.ctaWeek': 'Ver minha primeira semana',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  'onboarding.coach.toeTry': 'Tente agora: levante só o dedão.',
+  'onboarding.coach.beatFeet': 'Agora, seus pés.',
+  'onboarding.coach.beatGoal': 'Agora, o que você quer conquistar.',
+  'onboarding.coach.midway': 'Metade do caminho, {name}.',
+  'onboarding.coach.planReady': 'Seu plano está pronto, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Sua primeira semana',
   'onboarding.week.blurb': 'Sessões curtas nos dias que você escolheu. Cada uma se ajusta a como seu pé está naquela manhã.',
-  'onboarding.week.morningMeta': 'Toda manhã, antes de levantar · 2 min',
-  'onboarding.week.sessionMeta': 'Nas suas sessões desta semana',
+  'onboarding.week.cadence': {
+    one: '{count} sessão por semana, de {minutes} min cada',
+    other: '{count} sessões por semana, de {minutes} min cada',
+  },
+  'onboarding.week.everyMorning': 'Toda manhã',
+  'onboarding.week.sessionDays': 'Nos dias de sessão',
+  'onboarding.week.moveA11yMorning': 'Exercício {index} de {total}. {title}, {dose}, toda manhã. {cue}',
+  'onboarding.week.moveA11ySession': 'Exercício {index} de {total}. {title}, {dose}, nos dias de sessão. {cue}',
+  'onboarding.week.deckHint': 'Deslize para cima ou para baixo para trocar de exercício. Toque duas vezes para ver em tela cheia.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'Tudo pronto, {name}',
   'setup.save.title': 'Tudo pronto',
   'setup.save.blurb': 'Para ficar seguro se você trocar de celular.',
   'setup.save.later': 'Agora não',
+  'setup.save.email': 'Continuar com e-mail',
+  'setup.save.googleUnavailable': 'O login com Google não está disponível neste celular. Use seu e-mail.',
+  'setup.save.deferred': 'Continuar por enquanto',
+  'setup.save.deferredNote': 'Não deu para entrar agora. Vamos pedir de novo na próxima vez que você abrir o Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Enviar seu plano para o seu email?',
@@ -267,7 +279,7 @@ export const JOURNEY_PT = {
   'setup.widget.mockSearch': 'Buscar Widgets',
   'setup.next': 'Próximo',
   'setup.done': 'Pronto',
-  'setup.finish': 'Começar minha primeira sessão',
+  'setup.finish': 'Concluir',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   'offer.stripMornings': 'Manhãs {score}/10',
@@ -277,6 +289,16 @@ export const JOURNEY_PT = {
   'offer.howCheckinShort': 'Check-in de 10 segundos pela manhã',
   'offer.howSessionShort': 'Sessão de 3–10 minutos, ajustada todo dia',
   'offer.howRetestShort': 'O mesmo teste a cada duas semanas',
+  'offer.goldPlan': 'Como funciona o seu plano',
+  'offer.goldHow': 'O que você ganha todo dia',
+  'offer.goldStart': 'Tudo liberado',
+  'offer.tomorrowWhen': 'Amanhã',
+  'offer.tomorrowBody': '2 minutos, ainda na cama',
+  'offer.weekBody': '{minutes} min por dia',
+  'offer.sundayBody': 'Se ajusta ao que você sentiu',
+  'offer.checkBody': 'Veja o que mudou',
+  'offer.howHeadline': 'Poucos minutos por dia, feitos para os seus pés',
+  'offer.builtShort': 'Exercícios de estudos publicados',
   'offer.builtTitle': 'No que ele se baseia',
   'offer.builtBody':
     'Exercícios de pesquisas publicadas e da diretriz de 2023 sobre dor no calcanhar. O Walkito em si não foi testado em um estudo clínico.',

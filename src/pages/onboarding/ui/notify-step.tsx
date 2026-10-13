@@ -1,9 +1,8 @@
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { Image, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   Easing,
-  FadeIn,
   ReduceMotion,
   useAnimatedStyle,
   useSharedValue,
@@ -11,13 +10,17 @@ import Animated, {
   withSequence,
   withTiming,
 } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { requestNotificationAccess } from '@/entities/notifications';
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { PrimaryButton } from '@/shared/ui/primary-button';
+import { Button3D } from '@/shared/ui/button-3d';
+import { Mascot, type MascotHandle } from '@/shared/ui/mascot';
 import { settle } from '@/shared/lib/motion';
+
+import { rigFor } from './coach-rigs';
 
 /** The app's own icon, so the mock banner is the real thing at notification
  * size rather than an illustration of one. The 150 px copy, not `icon.png`:
@@ -25,12 +28,20 @@ import { settle } from '@/shared/lib/motion';
  * require of it shipped its 1.1 MB again inside the bundle to draw 38 pt. */
 const APP_ICON = require('@assets/icon-small.webp');
 
-/** What each line of the ask promises, in the order it is delivered. */
-const PROMISES = [
-  'onboarding.notify.promise1',
-  'onboarding.notify.promise2',
-  'onboarding.notify.promise3',
-] as const;
+/** The mock banner drops in after this long, over this long. */
+const BANNER_DELAY_MS = 260;
+const BANNER_DROP_MS = 480;
+/** When the banner has landed, from the screen's arrival: the coach pokes at
+ * it then (the page times his move from this). */
+export const BANNER_LANDS_MS = BANNER_DELAY_MS + BANNER_DROP_MS;
+
+/** Walkito with his alarm clock and bell, under the banner. */
+const HERO = 200;
+const HERO_SHORT = 150;
+/** Below this window height he is the smaller size. */
+const SHORT_WINDOW = 700;
+/** The CTA reaches 16pt from the screen's edges rather than the page's 24. */
+const CTA_BLEED = 8;
 
 export type NotifyStepProps = {
   name: string;
@@ -39,6 +50,8 @@ export type NotifyStepProps = {
   granted: boolean | null;
   onAnswered: (granted: boolean) => void;
   onNext: () => void;
+  /** Room the coach takes in the top-right corner, kept clear by the heading. */
+  speakerInset?: number;
 };
 
 /**
@@ -46,23 +59,35 @@ export type NotifyStepProps = {
  *
  * iOS gives an app exactly one chance to show the system dialog, so this
  * screen exists to make sure that chance is spent on someone who already knows
- * what they will get. It says what will be sent, and — just as importantly —
- * what will not be, because the objection at this moment is never "will this
- * be useful", it is "how often is this going to buzz".
+ * what they will get. Less said, more shown: the heading, the banner they will
+ * get, and Walkito holding up his alarm clock and bell as it lands. The three
+ * promises it used to list under the banner were reading nobody did.
  *
- * The banner above the copy is a mock, not a screenshot: it drops in the way a
- * real one does, holds, then settles. Showing the thing being asked for is the
- * whole argument, and a static picture of a notification reads as an
- * illustration where a moving one reads as a preview.
+ * The banner is a mock, not a screenshot: it drops in the way a real one does,
+ * holds, then settles. Showing the thing being asked for is the whole
+ * argument, and a static picture of a notification reads as an illustration
+ * where a moving one reads as a preview.
+ *
+ * He is this step's own (`coachEnter` has him as the hero here, so the coach
+ * in the corner stands aside): he shows the clock as the banner lands, and a
+ * yes and a no get the same nod, since allowing is not a win. Silent.
  */
-export function NotifyStep({ name, granted, onAnswered, onNext }: NotifyStepProps) {
+export function NotifyStep({ name, granted, onAnswered, onNext, speakerInset = 0 }: NotifyStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
+  const insets = useSafeAreaInsets();
+  const { height } = useWindowDimensions();
 
   const [busy, setBusy] = useState(false);
   const answered = granted != null;
+
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    const timer = setTimeout(() => mascot.current?.play('present'), BANNER_LANDS_MS);
+    return () => clearTimeout(timer);
+  }, []);
 
   const ask = async () => {
     if (busy || answered) return;
@@ -70,50 +95,47 @@ export function NotifyStep({ name, granted, onAnswered, onNext }: NotifyStepProp
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     const result = await requestNotificationAccess();
     setBusy(false);
-    Haptics.notificationAsync(
-      result
-        ? Haptics.NotificationFeedbackType.Success
-        : Haptics.NotificationFeedbackType.Warning,
-    );
+    // A no is a fine answer, so it gets a light tap rather than the warning
+    // buzz of something gone wrong.
+    if (result) Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    else Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    mascot.current?.play('nod');
     onAnswered(result);
   };
 
   return (
     <View style={styles.wrap}>
-      <Text style={[styles.title, { color: colors.foreground }]}>
-        {name.trim().length > 0
-          ? t('onboarding.notify.askNamed', { name: name.trim() })
-          : t('onboarding.notify.ask')}
-      </Text>
-      <Text style={[styles.blurb, { color: meter.caption }]}>
-        {t('onboarding.notify.askBlurb')}
-      </Text>
+      <View style={{ paddingRight: speakerInset }}>
+        <Text style={[styles.title, { color: colors.foreground }]}>
+          {name.trim().length > 0
+            ? t('onboarding.notify.askNamed', { name: name.trim() })
+            : t('onboarding.notify.ask')}
+        </Text>
+      </View>
 
       <Banner />
 
-      <View style={styles.promises}>
-        {PROMISES.map((promise, i) => (
-          <Animated.View
-            key={promise}
-            entering={FadeIn.delay(700 + i * 110)
-              .duration(340)
-              .reduceMotion(ReduceMotion.System)}
-            style={styles.promise}>
-            <View style={[styles.dot, { backgroundColor: PRIMARY }]} />
-            <Text style={[styles.promiseText, { color: meter.caption }]}>{t(promise)}</Text>
-          </Animated.View>
-        ))}
+      <View style={styles.hero}>
+        <Mascot
+          ref={mascot}
+          rig={rigFor('reminder')}
+          size={height < SHORT_WINDOW ? HERO_SHORT : HERO}
+          surface={colors.background}
+        />
       </View>
 
-      <View style={styles.actions}>
+      <View style={[styles.actions, { marginBottom: Math.max(insets.bottom, 16) }]}>
         {/* "Continue", and no "Not now": the same rule App Review applied to
             the Health ask (guideline 5.1.1(iv)) holds for every permission.
             The screen explains, the first press always opens the system
             dialog, and whatever is answered there the same button carries on. */}
-        <PrimaryButton
+        <Button3D
           label={busy ? t('onboarding.notify.opening') : t('onboarding.cta.continue')}
           onPress={answered ? onNext : ask}
-          disabled={busy}
+          loading={busy}
+          size="xl"
+          docked
+          style={styles.cta}
         />
         {granted === false && (
           <Text style={[styles.skipText, { color: meter.unit, textAlign: 'center' }]}>
@@ -142,7 +164,7 @@ function Banner() {
   const pulse = useSharedValue(0);
 
   useEffect(() => {
-    drop.value = withDelay(260, settle(1, 480));
+    drop.value = withDelay(BANNER_DELAY_MS, settle(1, BANNER_DROP_MS));
     pulse.value = withDelay(
       1200,
       withSequence(
@@ -192,11 +214,6 @@ const styles = StyleSheet.create({
     ...fonts.bold(28, -0.7),
     lineHeight: 34,
   },
-  blurb: {
-    marginTop: 10,
-    ...fonts.regular(16),
-    lineHeight: 23,
-  },
   banner: {
     marginTop: 30,
     flexDirection: 'row',
@@ -227,29 +244,20 @@ const styles = StyleSheet.create({
     ...fonts.regular(14),
     lineHeight: 19,
   },
-  promises: {
-    marginTop: 26,
-    gap: 14,
-  },
-  promise: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-  },
-  dot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-  },
-  promiseText: {
+  /** The room between the banner and the button, with him in the middle of it. */
+  hero: {
     flex: 1,
-    ...fonts.regular(15),
-    lineHeight: 21,
+    alignItems: 'center',
+    justifyContent: 'center',
+    // Headroom for his moves: nothing here clips, but the banner is above.
+    paddingTop: 12,
   },
   actions: {
-    marginTop: 'auto',
-    marginBottom: 28,
+    paddingTop: 16,
     gap: 14,
+  },
+  cta: {
+    marginHorizontal: -CTA_BLEED,
   },
   skipText: fonts.semibold(15),
 });

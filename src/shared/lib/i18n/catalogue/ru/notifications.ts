@@ -144,8 +144,8 @@ export const NOTIFICATIONS_RU = {
   'notifications.winbackDay30': 'Мы здесь, если стопа снова даст о себе знать.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, подождите - скидка {percent}%',
-  'notifications.offerWait': 'Подождите - скидка {percent}%',
+  'notifications.offerWaitNamed': '{name}, подождите - скидка {percent}% на первый год',
+  'notifications.offerWait': 'Подождите - скидка {percent}% на первый год',
   'notifications.offerWaitBody': 'Годовая подписка ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

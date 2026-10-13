@@ -41,6 +41,7 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, handsUpRig, preloadMascotSounds, trophyRig, type MascotHandle } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 import { settle } from '@/shared/lib/motion';
@@ -51,8 +52,11 @@ import { CARD_ORDER, daysBetween, signed, verdictOf, type CardGoal, type Verdict
 import { GOAL_ZONE } from './test-meta';
 import { TestHistoryBars, TestRing } from './test-visuals';
 
-/** Arms up: the same "nothing hurts, all good" pose Home's check-in uses. */
-const MASCOT = require('@assets/home/mascot-nopain.png');
+/** The mascot, when the moment is the test done rather than a number gained:
+ * the trophy on the first test day, arms up on every one after it. */
+const MASCOT_SIZE = 132;
+/** The share card is captured as a picture, so its mascot is the still art. */
+const SHARE_MASCOT = require('@assets/home/mascot-nopain.png');
 
 const NAME_KEY = {
   arch_hold: 'testday.results.name.arch_hold',
@@ -180,6 +184,9 @@ function useCountUp(from: number, to: number, delay: number): number {
 export type TestDayResultsProps = {
   outcome: TestDayOutcome;
   side: 'left' | 'right' | 'both' | null;
+  /** Off once the flow is on its way out: the mascot holds still while the
+   * host slides it away or keeps it mounted out of sight. */
+  active?: boolean;
   onDone: () => void;
 };
 
@@ -208,7 +215,7 @@ type Hero =
  * same screen serves "See results" on a later day (Home's test task and the
  * plan's today card both open the flow with `review`).
  */
-export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
+export function TestDayResults({ outcome, side, active = true, onDone }: TestDayResultsProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -250,6 +257,9 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
   }).format(fromDateKey(outcome.nextTestOn));
 
   const verdict: Verdict = read == null ? { kind: 'first' } : verdictOf(read.rows);
+  /** The person's first test day: nothing stored before it. Read from the
+   * stored results, so "See results" later on shows the same picture. */
+  const firstTest = read?.previousDate == null;
   const hero = heroOf(read?.rows ?? [], verdict, outcome.reached);
   const dateLine =
     read == null
@@ -280,7 +290,14 @@ export function TestDayResults({ outcome, side, onDone }: TestDayResultsProps) {
     <View style={styles.root}>
       <ReplayMask style={styles.root}>
         <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-          <HeroBlock hero={hero} rows={cards} dateLine={dateLine} />
+          <HeroBlock
+            hero={hero}
+            rows={cards}
+            dateLine={dateLine}
+            firstTest={firstTest}
+            // Still under the share card, and once the flow is leaving.
+            paused={!active || sharing}
+          />
 
           <View style={styles.rows}>
             {cards.map((row, index) => (
@@ -397,18 +414,54 @@ function heroEyebrow(t: Translate, hero: Hero): string {
 }
 
 /**
+ * The mascot for a test that is done without a gain to show. The same for any
+ * such result, because the test being done is what is marked, never the
+ * number.
+ *
+ * On the first test day it is the trophy, held up once ("look what I've
+ * got") for having done the first one at all, whatever it measured. Every
+ * later test day keeps the arms-up pose, which waves hello once it is up.
+ */
+function HeroMascot({ surface, first, paused }: { surface: string; first: boolean; paused: boolean }) {
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    preloadMascotSounds([first ? 'gift' : 'pop']);
+    const timer = setTimeout(() => mascot.current?.play(first ? 'present' : 'wave'), 600);
+    return () => clearTimeout(timer);
+    // Once per mount: the results are read once, and `first` with them.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return (
+    <Mascot
+      ref={mascot}
+      rig={first ? trophyRig : handsUpRig}
+      size={MASCOT_SIZE}
+      sounds
+      surface={surface}
+      paused={paused}
+    />
+  );
+}
+
+/**
  * The moment. With something to celebrate it is the test's own picture on a
  * glow in its accent, the gain popping in over it and a burst around it, with
- * a success tap; otherwise the mascot, arms up, on a quiet glow.
+ * a success tap; otherwise the mascot on a quiet glow: the trophy on the first
+ * test day, arms up on every later one.
  */
 function HeroBlock({
   hero,
   rows,
   dateLine,
+  firstTest,
+  paused,
 }: {
   hero: Hero;
   rows: readonly (ResultRow & { type: CardGoal })[];
   dateLine: string | null;
+  /** The person's first test day: the mascot is the trophy. */
+  firstTest: boolean;
+  paused: boolean;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -475,13 +528,9 @@ function HeroBlock({
               accessibilityIgnoresInvertColors
             />
           ) : (
-            <Image
-              source={MASCOT}
-              style={styles.heroMascot}
-              resizeMode="contain"
-              accessibilityElementsHidden
-              importantForAccessibility="no"
-            />
+            <View style={styles.heroMascot} accessibilityElementsHidden importantForAccessibility="no">
+              <HeroMascot surface={colors.background} first={firstTest} paused={paused} />
+            </View>
           )}
         </Animated.View>
         {celebrate && row != null && (
@@ -834,7 +883,7 @@ function ShareOverlay({
           </Canvas>
         </View>
         <View style={styles.cardHead}>
-          <Image source={MASCOT} style={styles.cardMascot} resizeMode="contain" />
+          <Image source={SHARE_MASCOT} style={styles.cardMascot} resizeMode="contain" />
           <View style={styles.flex}>
             <Text style={styles.cardBrand}>{t('testday.results.shareBrand')}</Text>
             <Text style={styles.cardDate}>{date}</Text>
@@ -916,8 +965,8 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   heroMascot: {
-    width: 132,
-    height: 132,
+    width: MASCOT_SIZE,
+    height: MASCOT_SIZE,
   },
   heroBadge: {
     position: 'absolute',

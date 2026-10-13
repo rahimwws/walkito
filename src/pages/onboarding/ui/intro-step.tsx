@@ -1,52 +1,41 @@
 import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import LottieView from 'lottie-react-native';
 import type { SharedValue } from 'react-native-reanimated';
 import Animated, {
   Easing,
   ReduceMotion,
-  useAnimatedProps,
-  useDerivedValue,
-  withRepeat,
   interpolate,
   interpolateColor,
   useAnimatedStyle,
   useSharedValue,
+  withSequence,
   withTiming,
 } from 'react-native-reanimated';
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Mascot, waveRig, type MascotHandle } from '@/shared/ui/mascot';
 import { useSplashRevealed } from '@/shared/ui/splash';
 import { TypedText } from '@/shared/ui/typed-text';
-
-import { MASCOT, MASCOT_HEIGHT } from '../config/mascot';
 
 /** Beat after the greeting lands, before it steps back. */
 const SETTLE_MS = 300;
 const DEMOTE_MS = 320;
 
+/** The character, the screen's whole lower half. */
+const HERO = 220;
+
 /**
- * The mascot's loop, measured off the file frame by frame rather than guessed.
- *
- * 121 frames at 24fps — 5.042s — and he does not jump once. He hops four times
- * in quick succession at the end of the loop, leaving the ground on frames 81,
- * 90, 99 and 110 and landing on 87, 96, 105 and 112. An earlier pass sampled
- * every sixth frame, found two of them, and put the second in the wrong place;
- * the button dipped out of time because it was answering a beat that was not
- * there.
+ * When the feet touch down in the mascot's `hop`, from its start: two hops,
+ * up 150 ms and down 140, a 60 ms pause between them
+ * (`shared/ui/mascot/mascot.tsx`). The button dips on each.
  */
-const FPS = 24;
-const FRAMES = 121;
-const LOOP_MS = (FRAMES / FPS) * 1000;
-const LANDING_FRAMES = [10, 96, 105] as const;
+const HOP_LANDINGS_MS = [290, 640] as const;
 /** How long the dip takes to reach the landing, and to come back out of it.
  * Down fast, back slow — the way weight settles out of a surface. */
 const DIP_MS = 70;
 const RISE_MS = 150;
-
-const AnimatedLottie = Animated.createAnimatedComponent(LottieView);
 
 export type IntroStepProps = {
   greeting: string;
@@ -59,6 +48,9 @@ export type IntroStepProps = {
   /** 0…1, peaking each time the character lands. The button below reads this
    * and squashes; it lives in the page because the button is the page's. */
   squash: SharedValue<number>;
+  /** Something covers the screen (the sign-in sheet): he stops breathing
+   * under it rather than redrawing at 30 fps where nobody can see. */
+  paused?: boolean;
 };
 
 /**
@@ -73,7 +65,7 @@ export type IntroStepProps = {
  * Nothing here is decorative: the CTA is deliberately absent until the last
  * beat, so the first thing on screen is an introduction rather than a demand.
  */
-export function IntroStep({ greeting, headline, signInFailed, onReady, squash }: IntroStepProps) {
+export function IntroStep({ greeting, headline, signInFailed, onReady, squash, paused = false }: IntroStepProps) {
   const revealed = useSplashRevealed();
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -87,28 +79,28 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
   const ready = useRef(onReady);
   ready.current = onReady;
 
-  /** 0…1 across the mascot's loop. Drives the character and the button alike. */
-  const progress = useSharedValue(0);
-
-  const mascotProps = useAnimatedProps(() => ({ progress: progress.value }));
-
-  // The dip peaks exactly on the landing frame — ramping in just before it and
-  // decaying after, rather than starting there and so always reading late.
-  useDerivedValue(() => {
-    const p = progress.value;
-    const inW = DIP_MS / LOOP_MS;
-    const outW = RISE_MS / LOOP_MS;
-    let v = 0;
-    for (const frame of LANDING_FRAMES) {
-      const at = frame / FRAMES;
-      if (p >= at - inW && p <= at) {
-        v = Math.max(v, (p - (at - inW)) / inW);
-      } else if (p > at && p <= at + outW) {
-        v = Math.max(v, 1 - (p - at) / outW);
-      }
-    }
-    squash.value = v;
-  });
+  // He waves as the button arrives, then hops twice and the button dips under
+  // each landing, as if he had stepped onto it. Once: a loop would keep
+  // pointing at a button that has already been seen.
+  const mascot = useRef<MascotHandle>(null);
+  const next = useRef<'hop' | null>(null);
+  const dips = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const dip = () => {
+    squash.value = withSequence(
+      withTiming(1, { duration: DIP_MS, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
+      withTiming(0, { duration: RISE_MS, easing: Easing.inOut(Easing.quad), reduceMotion: ReduceMotion.System }),
+    );
+  };
+  // The wave's end, then the hop's. Only the first of them leads anywhere.
+  const onShotEnd = () => {
+    if (next.current !== 'hop') return;
+    next.current = null;
+    mascot.current?.play('hop');
+    // Started a dip's length early, so it bottoms out on the landing itself
+    // rather than always reading late.
+    for (const at of HOP_LANDINGS_MS) dips.current.push(setTimeout(dip, at - DIP_MS));
+  };
+  useEffect(() => () => dips.current.forEach(clearTimeout), []);
 
   useEffect(() => {
     if (phase !== 1) return;
@@ -124,23 +116,12 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
   useEffect(() => {
     if (phase !== 3) return;
     ready.current();
-
-    // A timer of the same period rather than a hook into Lottie's frames.
-    // `LottieView` reports nothing per frame, and driving it from a shared
-    // `progress` instead of `autoPlay` would mean rebuilding a working
-    // animation. Both start on this same line, so they stay together for the
-    // handful of seconds anyone spends here.
-    // One clock for both. The character is no longer left to play itself on a
-    // timer of its own — its frame and the button's dip are now two readings of
-    // this single value, so they cannot drift apart whatever the device is
-    // doing. Chasing it with a start offset only ever approximated it: the lag
-    // was Lottie decoding 121 PNGs before frame one, which is not a constant.
-    progress.value = withRepeat(
-      withTiming(1, { duration: LOOP_MS, easing: Easing.linear }),
-      -1,
-      false,
-    );
-  }, [phase, squash]);
+    // Here and not at the splash: the button only exists from this phase on,
+    // and a wave played while the lines were still typing had finished, and
+    // taken its dips with it, before there was anything to dip.
+    next.current = 'hop';
+    mascot.current?.play('wave');
+  }, [phase]);
 
   // Scale rather than fontSize: animating a font size relayouts the text every
   // frame, and the line below it would jitter as it reflows.
@@ -208,20 +189,17 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
         )}
       </View>
 
-      {/* Sits below the copy and above the button. `Contain` rather than
-          `Cover`: the character has to stay whole — a crop of it is just a
-          purple shape. */}
+      {/* Sits below the copy and stands on the button, his hand up in a
+          hello from the first frame. Silent: the first sound in the flow
+          should not be one nobody asked for. */}
       <View style={styles.stage}>
-        <AnimatedLottie
-          source={MASCOT}
-          style={styles.mascot}
-          resizeMode="contain"
-          // Neither autoplay nor loop: the frame is whatever `progress` says.
-          // It sits on frame one until the introduction has finished speaking,
-          // because the value only starts moving then.
-          autoPlay
-          loop={false}
-          animatedProps={mascotProps}
+        <Mascot
+          ref={mascot}
+          rig={waveRig}
+          size={HERO}
+          surface={colors.background}
+          paused={paused}
+          onAnimationEnd={onShotEnd}
         />
       </View>
     </View>
@@ -264,18 +242,7 @@ const styles = StyleSheet.create({
   },
   stage: {
     flex: 1,
-    height: MASCOT_HEIGHT,
     alignItems: 'center',
     justifyContent: 'flex-end',
-  },
-  mascot: {
-    width: '120%',
-    height: MASCOT_HEIGHT,
-    backgroundColor: 'transparent',
-    // The stage already bottom-aligns this box; the gap under the character is
-    // empty canvas inside the animation itself, which `contain` preserves.
-    // Pulling the box down by that much stands him on the button instead of
-    // leaving him floating above it.
-    marginBottom: -67,
   },
 });

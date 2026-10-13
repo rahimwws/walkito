@@ -151,19 +151,22 @@ export const CORE_ES = {
 
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Esta versión no tiene servidor de cuentas. Usa Continuar con Apple.',
+  'auth.noServer': 'Esta versión no tiene servidor de cuentas.',
   'auth.missingFields': 'Escribe el correo y la contraseña.',
   'auth.invalidCredentials': 'El correo y la contraseña no coinciden.',
   'auth.notConfirmed':
     'Esa cuenta aún no está confirmada. Confirma la dirección de correo y vuelve a intentarlo.',
   'auth.banned': 'Esa cuenta está desactivada.',
-  'auth.providerDisabled':
-    'El inicio de sesión por correo está desactivado en esta app. Usa Continuar con Apple.',
+  'auth.providerDisabled': 'El inicio de sesión por correo está desactivado en esta app.',
   'auth.rateLimited': 'Demasiados intentos. Espera un minuto y vuelve a intentarlo.',
   'auth.badEmail': 'Eso no parece una dirección de correo.',
   'auth.noAccount': 'No se recibió ninguna cuenta.',
   'auth.generic': 'No se ha podido completar.',
   'auth.unreachable': 'No se ha podido conectar con el servidor.',
+  'auth.badCode': 'Ese código no funcionó. Revísalo o pide uno nuevo.',
+  'auth.codeRateLimited': 'Acabamos de enviar un código. Espera un minuto antes de pedir otro.',
+  'auth.emailUndeliverable': 'Ahora no pudimos enviar el correo. Inténtalo de nuevo en un rato.',
+  'auth.noAccountForEmail': 'Ninguna cuenta usa este correo.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, lo has completado.',

@@ -3,8 +3,20 @@ import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { Card3D } from '@/shared/ui/card-3d';
 
 const EASE = Easing.bezier(0.23, 1, 0.32, 1).factory();
+
+/** The sections arrive one after another, each rising into place. */
+const SECTION_DELAY_MS = 260;
+const SECTION_GAP_MS = 380;
+const SECTION_MS = 380;
+
+/** When section `i` has landed, from the screen's arrival: the coach nods at
+ * each one then. The rise's ease-out has all but finished by four fifths. */
+export function whySectionLandsMs(i: number): number {
+  return SECTION_DELAY_MS + i * SECTION_GAP_MS + Math.round(SECTION_MS * 0.8);
+}
 
 export type WhySection = { head: string; text: string };
 
@@ -16,7 +28,18 @@ export type WhySection = { head: string; text: string };
  * sentence or two assembled from their own answers. It describes a pattern
  * and says so under it; it never names what this person has.
  */
-export function WhyStep({ title, sections, footer }: { title: string; sections: readonly WhySection[]; footer: string }) {
+export function WhyStep({
+  title,
+  sections,
+  footer,
+  speakerInset = 0,
+}: {
+  title: string;
+  sections: readonly WhySection[];
+  footer: string;
+  /** Room the coach takes in the top-right corner, kept clear by the title. */
+  speakerInset?: number;
+}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -26,19 +49,27 @@ export function WhyStep({ title, sections, footer }: { title: string; sections: 
     <ScrollView style={styles.fill} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
       <Animated.Text
         entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
-        style={[styles.title, { color: colors.foreground }]}>
+        style={[styles.title, { color: colors.foreground, paddingRight: speakerInset }]}>
         {title}
       </Animated.Text>
       {sections.map((section, i) => (
         <Animated.View
           key={section.head}
-          entering={FadeInDown.delay(260 + i * 380).duration(380).easing(EASE).reduceMotion(ReduceMotion.System)}
-          style={[styles.card, { backgroundColor: colors.card }]}>
-          <Text style={[styles.head, { color: tint }]}>{section.head}</Text>
-          <Text style={[styles.text, { color: colors.foreground }]}>{section.text}</Text>
+          entering={FadeInDown.delay(SECTION_DELAY_MS + i * SECTION_GAP_MS)
+            .duration(SECTION_MS)
+            .easing(EASE)
+            .reduceMotion(ReduceMotion.System)}>
+          {/* Glass on its lip, as every card in the flow. */}
+          <Card3D contentStyle={styles.card}>
+            <Text style={[styles.head, { color: tint }]}>{section.head}</Text>
+            <Text style={[styles.text, { color: colors.foreground }]}>{section.text}</Text>
+          </Card3D>
         </Animated.View>
       ))}
-      <Animated.View entering={FadeIn.delay(260 + sections.length * 380).duration(320).reduceMotion(ReduceMotion.System)}>
+      <Animated.View
+        entering={FadeIn.delay(SECTION_DELAY_MS + sections.length * SECTION_GAP_MS)
+          .duration(320)
+          .reduceMotion(ReduceMotion.System)}>
         <Text style={[styles.footer, { color: meter.caption }]}>{footer}</Text>
       </Animated.View>
     </ScrollView>
@@ -49,7 +80,7 @@ const styles = StyleSheet.create({
   fill: { flex: 1 },
   content: { gap: 12, paddingBottom: 16 },
   title: { ...fonts.heavy(28, -0.7), lineHeight: 33, marginBottom: 8 },
-  card: { borderRadius: 20, borderCurve: 'continuous', padding: 16, gap: 6 },
+  card: { gap: 6 },
   head: fonts.heavy(13, 0.3),
   text: { ...fonts.medium(16), lineHeight: 22 },
   footer: { ...fonts.medium(13), lineHeight: 18, marginTop: 4 },

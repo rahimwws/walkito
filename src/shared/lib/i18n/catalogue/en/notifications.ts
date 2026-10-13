@@ -162,8 +162,8 @@ export const NOTIFICATIONS_EN = {
   // switched offers on. Says what is on offer and asks for nothing more — it
   // names the annual subscription, because "{percent}% off" alone does not say
   // off what, and the annual is the one the offer price applies to.
-  'notifications.offerWaitNamed': '{name}, before you go - {percent}% off',
-  'notifications.offerWait': 'Before you go - {percent}% off',
+  'notifications.offerWaitNamed': '{name}, before you go - {percent}% off your first year',
+  'notifications.offerWait': 'Before you go - {percent}% off your first year',
   'notifications.offerWaitBody': 'The annual subscription is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

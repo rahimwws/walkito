@@ -18,6 +18,7 @@ import { currentDay, nextSession, painEntriesOn, toDateKey } from '@/entities/pr
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
+import { scheduleWithArt } from './attachment';
 import { messageFor, retestFollowUpBody, stepsCheckMessage } from './copy';
 import {
   FOLLOW_UP_HOURS,
@@ -317,7 +318,8 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
 
     const id = identifierFor(item);
     try {
-      await Notifications.scheduleNotificationAsync({
+      // The mascot for the kind rides along on iPhone; see `attachment.ts`.
+      await scheduleWithArt(item.kind, {
         identifier: id,
         content: {
           title: item.title,
@@ -475,7 +477,7 @@ export async function maybeSendStepCheck(
   writeDelivery(recordSent(delivery, STEP_CHECK, dateKey));
   const message = stepsCheckMessage(stepsToday ?? 0, getLanguage());
   try {
-    await Notifications.scheduleNotificationAsync({
+    await scheduleWithArt('steps', {
       identifier: `steps-${dateKey}`,
       content: {
         title: message.title,

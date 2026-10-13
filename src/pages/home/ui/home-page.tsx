@@ -1,4 +1,3 @@
-import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { useIsFocused, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -26,6 +25,7 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useProgram } from '@/shared/lib/program';
 import { useDockHeight } from '@/shared/ui/action-dock';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Glow } from '@/shared/ui/glow';
 import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
@@ -38,6 +38,7 @@ import { kv } from '@/shared/lib/storage';
 import { StreakWeek } from '@/shared/ui/streak-week';
 import { Confetti } from '@/shared/ui/confetti';
 import { DailyStack } from './daily-stack';
+import { MilestoneMascot } from './milestone-mascot';
 import { PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
@@ -135,6 +136,8 @@ export function HomePage() {
   useEffect(() => {
     if (milestone != null && !milestoneSeen(milestone)) setMilestoneOpen(true);
   }, [milestone]);
+  /** The check-in's own sheet is up over Home: the list's mascot holds still. */
+  const [checkSheet, setCheckSheet] = useState(false);
   /** Whether today's answer is in. Once it is, the check-in gives up the top of
    * the screen to the list of work it was asked about. */
   /**
@@ -201,7 +204,7 @@ export function HomePage() {
             spread
             streak={streak.current}
             onStreakPress={() => setStreakOpen(true)}
-            streakGlyph={<FireIcon size={22} color={accents[scheme].orange.fill} weight="fill" />}
+            streakGlyph={<FluentIcon name="fire" size={22} />}
             swapProgress={program?.progress}
             centre={todayLines()}
             onProfile={() => router.push('/profile')}
@@ -286,9 +289,11 @@ export function HomePage() {
                   // it they are hurting.
                   if (painless) setBurst((n) => n + 1);
                 }}
+                covered={milestoneOpen || streakOpen}
+                onSheet={setCheckSheet}
               />
             }
-            second={<TodayTasks />}
+            second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet} />}
           />
         </IntroReveal>
 
@@ -308,6 +313,10 @@ export function HomePage() {
           blurb={milestone === BIG_MILESTONE ? t('streak.milestoneBigBlurb') : t('streak.milestoneBlurb')}
           confetti={milestone === BIG_MILESTONE}
           emblem={milestone >= BIG_MILESTONE}
+          // Stands where the emblem was (the sheet drops the badge for him):
+          // thumbs up for three and seven, the jump for ten, the trophy for a
+          // month and a hundred. Paused while the sheet leaves.
+          mascot={<MilestoneMascot days={milestone} paused={!milestoneOpen} />}
           onClose={() => {
             markMilestone(milestone);
             setMilestoneOpen(false);
@@ -320,7 +329,9 @@ export function HomePage() {
         onClose={() => setStreakOpen(false)}
         current={streak.current}
         total={streak.total}
+        longest={streak.longest}
         week={streak.strip}
+        rest={weekAttendance(Date.now(), 0).map((day) => day.rest)}
       />
     </View>
   );

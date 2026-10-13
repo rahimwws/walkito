@@ -27,7 +27,7 @@ import { settle } from '@/shared/lib/motion';
  */
 const SUNDAY = Date.UTC(1970, 0, 4);
 
-function weekdayNames(language: Language, style: 'short' | 'long'): string[] {
+export function weekdayNames(language: Language, style: 'short' | 'long'): string[] {
   const format = new Intl.DateTimeFormat(language, { weekday: style, timeZone: 'UTC' });
   return Array.from({ length: 7 }, (_, index) =>
     format.format(new Date(SUNDAY + index * 86_400_000)),

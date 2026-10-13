@@ -214,12 +214,6 @@ export const JOURNEY_FR = {
   'onboarding.test.left': 'Gauche',
   'onboarding.test.right': 'Droite',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Ton point de départ',
-  'onboarding.test.archYes': 'Pied souple. Il répond bien au renforcement.',
-  'onboarding.test.archNo': 'Pas de voûte. On se concentre sur le mollet et la cheville.',
-  'onboarding.test.archUnsure': 'Difficile à dire. Ton premier retest le mesurera.',
-  'onboarding.test.balanceHead': 'Sur une jambe',
-  'onboarding.test.resultFoot': 'Ton plan s’en sert dès le premier jour.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Création de ton plan',
@@ -234,17 +228,35 @@ export const JOURNEY_FR = {
   'onboarding.building.choosing': 'Choix de ta première semaine…',
   'onboarding.building.ctaWeek': 'Voir ma première semaine',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  'onboarding.coach.toeTry': 'Essaie maintenant : lève seulement le gros orteil.',
+  'onboarding.coach.beatFeet': 'Maintenant, tes pieds.',
+  'onboarding.coach.beatGoal': 'Maintenant, ce que tu veux en retirer.',
+  'onboarding.coach.midway': 'Tu es à mi-chemin, {name}.',
+  'onboarding.coach.planReady': 'Ton plan est prêt, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Ta première semaine',
   'onboarding.week.blurb': 'Des séances courtes les jours que tu as choisis. Chacune s’ajuste à l’état de ton pied ce matin-là.',
-  'onboarding.week.morningMeta': 'Chaque matin, avant de te lever · 2 min',
-  'onboarding.week.sessionMeta': 'Dans tes séances cette semaine',
+  'onboarding.week.cadence': {
+    one: '{count} séance par semaine, {minutes} min chacune',
+    other: '{count} séances par semaine, {minutes} min chacune',
+  },
+  'onboarding.week.everyMorning': 'Chaque matin',
+  'onboarding.week.sessionDays': 'Les jours de séance',
+  'onboarding.week.moveA11yMorning': 'Exercice {index} sur {total}. {title}, {dose}, chaque matin. {cue}',
+  'onboarding.week.moveA11ySession': 'Exercice {index} sur {total}. {title}, {dose}, les jours de séance. {cue}',
+  'onboarding.week.deckHint': 'Balaie vers le haut ou vers le bas pour changer d’exercice. Touche deux fois pour le voir en plein écran.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'C’est parti, {name}',
   'setup.save.title': 'C’est parti',
   'setup.save.blurb': 'Pour le retrouver sur un nouveau téléphone.',
   'setup.save.later': 'Pas maintenant',
+  'setup.save.email': 'Continuer avec un e-mail',
+  'setup.save.googleUnavailable': 'La connexion avec Google n’est pas disponible sur ce téléphone. Utilise ton e-mail.',
+  'setup.save.deferred': 'Continuer pour l’instant',
+  'setup.save.deferredNote': 'La connexion n’a pas pu se faire. On te la redemandera à la prochaine ouverture de Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'T’envoyer ton plan par email ?',
@@ -267,7 +279,7 @@ export const JOURNEY_FR = {
   'setup.widget.mockSearch': 'Rechercher des widgets',
   'setup.next': 'Suivant',
   'setup.done': 'OK',
-  'setup.finish': 'Commencer ma première séance',
+  'setup.finish': 'Terminer',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   'offer.stripMornings': 'Matins {score}/10',
@@ -277,6 +289,16 @@ export const JOURNEY_FR = {
   'offer.howCheckinShort': 'Un bilan de 10 secondes le matin',
   'offer.howSessionShort': 'Une séance de 3-10 minutes, ajustée chaque jour',
   'offer.howRetestShort': 'Le même test toutes les deux semaines',
+  'offer.goldPlan': 'Comment marche ton plan',
+  'offer.goldHow': 'Ce que tu as chaque jour',
+  'offer.goldStart': 'Tout débloqué',
+  'offer.tomorrowWhen': 'Demain',
+  'offer.tomorrowBody': '2 minutes, encore au lit',
+  'offer.weekBody': '{minutes} min par jour',
+  'offer.sundayBody': 'S’adapte à ton ressenti',
+  'offer.checkBody': 'Vois ce qui a changé',
+  'offer.howHeadline': 'Quelques minutes par jour, pensées pour tes pieds',
+  'offer.builtShort': 'Des exercices issus d’études publiées',
   'offer.builtTitle': 'Sur quoi ça repose',
   'offer.builtBody':
     'Des exercices issus de la recherche publiée et des recommandations de 2023 sur la douleur au talon. Walkito lui-même n’a pas été testé dans un essai.',

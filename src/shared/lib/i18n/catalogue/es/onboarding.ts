@@ -54,6 +54,22 @@ export const ONBOARDING_ES = {
   'onboarding.email.password': 'Contraseña',
   'onboarding.email.submit': 'Iniciar sesión',
   'onboarding.email.submitting': 'Iniciando sesión…',
+  'onboarding.email.createTitle': 'Guarda tu plan',
+  'onboarding.email.createBlurb': 'Te enviaremos un código por correo. Tu plan quedará guardado con esta dirección.',
+  'onboarding.email.signInBlurb': 'Te enviaremos un código por correo para iniciar sesión.',
+  'onboarding.email.sendCode': 'Enviar código',
+  'onboarding.email.sending': 'Enviando…',
+  'onboarding.email.codeTitle': 'Revisa tu correo',
+  'onboarding.email.codeBlurb': 'Escribe el código que enviamos a {email}.',
+  'onboarding.email.code': 'Código',
+  'onboarding.email.verify': 'Confirmar',
+  'onboarding.email.verifying': 'Comprobando…',
+  'onboarding.email.resend': 'Enviar un código nuevo',
+  'onboarding.email.resendIn': 'Nuevo código en {seconds} s',
+  'onboarding.email.changeAddress': 'Usar otro correo',
+  'onboarding.email.existing': 'Este correo ya tiene una cuenta. Con el código entrarás en ella.',
+  'onboarding.email.usePassword': 'Usar contraseña',
+  'onboarding.email.useCode': 'Enviarme un código',
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': '¿Cómo quieres\nque te llamemos?',
@@ -64,8 +80,11 @@ export const ONBOARDING_ES = {
   'onboarding.passport.title': 'Pasaporte del pie',
   'onboarding.passport.owner': 'Pasaporte del pie de {name}',
   'onboarding.passport.empty': 'Aquí aparecerán tus respuestas',
-  'onboarding.passport.issued': 'Emitido el {date}',
   'onboarding.passport.edit': '¿Algo que corregir? Toca para editar.',
+  // The first stamp, on the halfway screen. The edition line is set in small
+  // capitals by the screen; written here in sentence case.
+  'onboarding.passport.stampEdition': 'Pasaporte del pie · primera edición',
+  'onboarding.passport.firstStamp': 'Tu primer sello',
   'onboarding.passport.heading': 'Tu pasaporte del pie, {name}',
   // Who they are, in the passport's words: the role question's own
   // answers ("Both") mean nothing out of it.
@@ -136,26 +155,21 @@ export const ONBOARDING_ES = {
   'onboarding.goal.allday': 'Aguantar de pie todo el día',
   'onboarding.goal.comeback': 'Volver tras una lesión',
   'onboarding.goal.steady': 'Caminar con seguridad',
-  // Days and minutes, one screen: a heading over two short lists.
-  'onboarding.schedule.title': '¿Cuánto tiempo tienes, {name}?',
-  'onboarding.schedule.days': 'Días por semana',
-  'onboarding.schedule.minutes': 'Minutos por sesión',
-  'onboarding.schedule.kit': '¿Qué tienes en casa?',
+  // Days, minutes and what is at home: a screen each, the cards under a
+  // drawing of the answer. The kit's question is `onboarding.equipment.title`.
+  'onboarding.days.title': '¿Cuántos días a la semana?',
+  'onboarding.minutes.title': '¿Cuánto dura cada sesión?',
   // Under the kit: the exercises it brings into the plan, as they are picked.
   'onboarding.schedule.adds': 'Se suma a tu plan',
+  // The badge on the recommended days and minutes cards.
+  'onboarding.schedule.recommended': 'Recomendado',
   'onboarding.days.days3': '3 días',
-  'onboarding.days.days3Caption': 'Un comienzo tranquilo',
   'onboarding.days.days5': '5 días',
-  'onboarding.days.days5Caption': 'Recomendado',
   'onboarding.days.days7': 'Cada día',
-  'onboarding.days.days7Caption': 'Corto y diario',
   'onboarding.minutes.blurb': 'Cámbialo cualquier día: los días ocupados también cuentan.',
   'onboarding.minutes.min3': '3 minutos',
-  'onboarding.minutes.min3Caption': 'Incluso en días ocupados',
   'onboarding.minutes.min5': '5 minutos',
-  'onboarding.minutes.min5Caption': 'Recomendado',
   'onboarding.minutes.min10': '10 minutos',
-  'onboarding.minutes.min10Caption': 'Para progresar más rápido',
   'onboarding.equipment.title': '¿Qué tienes en casa?',
   'onboarding.equipment.blurb': 'Marca todo lo que tienes.',
   'onboarding.equipment.step': 'Un escalón o escaleras',
@@ -299,10 +313,6 @@ export const ONBOARDING_ES = {
   'onboarding.notify.blurb': 'Para que tu plan pueda avisarte cuando te necesita.',
   'onboarding.notify.askNamed': '{name}, no tienes que hacerlo a solas',
   'onboarding.notify.ask': 'No tienes que hacerlo a solas',
-  'onboarding.notify.askBlurb': 'Solo los días con sesión en tu plan.',
-  'onboarding.notify.promise1': 'Un aviso los días que tu plan tiene sesión',
-  'onboarding.notify.promise2': 'Un apunte cuando cambie lo que vas a hacer',
-  'onboarding.notify.promise3': 'Y de vez en cuando un descuento, nada más.',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'ahora',
   'onboarding.notify.bannerBody':

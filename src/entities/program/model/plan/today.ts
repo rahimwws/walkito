@@ -1,5 +1,5 @@
 import { CHAINS, PROGRESSING, planMeta, type ChainName } from './catalogue-meta';
-import { doseFor, doseSeconds, scaleSets } from './dose';
+import { doseFor, fitDoses, scaleSets } from './dose';
 import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import type { PlanDay, PlannedExercise, SessionMinutes } from './week';
 
@@ -99,7 +99,7 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
     // Keep the focus goal present if any seated exercise serves it.
     if (!exercises.some((e) => e.focus) && exercises.length > 0) exercises = [{ ...exercises[0], focus: true }, ...exercises.slice(1)];
     minutes = FLARE_MINUTES;
-    exercises = fitTo(exercises, minutes);
+    exercises = fitDoses(exercises, minutes);
     return { ...day, exercises, minutes, reason, steppedDown };
   }
   if (spike) {
@@ -131,6 +131,10 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
   if (signals.minutesChoice != null && signals.minutesChoice !== signals.defaultMinutes) {
     exercises = scaleToMinutes(exercises, signals.minutesChoice, signals.defaultMinutes);
   }
+  // Fitted here as well as when the week is built, so a week stored before the
+  // week did it (and any step-down or choice above) still runs in the minutes
+  // the header promises.
+  exercises = fitDoses(exercises, minutes);
   return { ...day, type, exercises, minutes, reason, steppedDown };
 }
 
@@ -149,14 +153,6 @@ export function scaleToMinutes(exercises: PlannedExercise[], minutes: SessionMin
   return list;
 }
 
-function fitTo(exercises: PlannedExercise[], minutes: number): PlannedExercise[] {
-  const total = exercises.reduce((sum, e) => sum + doseSeconds(e.dose), 0);
-  const budget = minutes * 60;
-  if (total <= budget || total === 0) return exercises;
-  const factor = budget / total;
-  return exercises.map((e) => ({ ...e, dose: scaleSets(e.dose, factor) }));
-}
-
 /**
  * The two-minute version — section 4.6. The focus exercise only, a set or two.
  * Offered when pain is 7 or more, or the day is nearly over and nothing has
@@ -166,7 +162,7 @@ export function twoMinuteVersion(day: PlanDay): PlanDay {
   const focus = day.exercises.find((e) => e.focus) ?? day.exercises[0];
   if (focus == null) return { ...day, minutes: 2 };
   const one: PlannedExercise = { ...focus, dose: { ...focus.dose, sets: Math.min(2, focus.dose.sets) } };
-  return { ...day, exercises: [one], minutes: 2 };
+  return { ...day, exercises: fitDoses([one], 2), minutes: 2 };
 }
 
 /** Evening, from this hour on, a day with nothing started offers the short version. */

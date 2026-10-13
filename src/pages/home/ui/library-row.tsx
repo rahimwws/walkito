@@ -79,7 +79,7 @@ export function LibraryRow() {
               key={id}
               title={t(protocol.titleKey)}
               image={PROTOCOL_ART[id]}
-              icon={PROTOCOL_ICONS[id]}
+              emoji={PROTOCOL_ICONS[id]}
               accent={protocol.accent}
               style={styles.card}
               onPress={() => open(protocol)}

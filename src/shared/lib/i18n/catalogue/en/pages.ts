@@ -187,7 +187,7 @@ export const PAGES_EN = {
   'pages.week.rationale.painUp': 'Pain went up this week, so the plan steps back a level.',
   'pages.week.rationale.hard': 'Last week felt hard. This week is lighter.',
   'pages.week.rationale.easy': 'Last week felt easy. Time to push a little.',
-  'pages.week.rationale.painLow': 'Pain stayed at {n} all week, so we’re adding load.',
+  'pages.week.rationale.painLow': 'Pain stayed low all week, so we’re adding load.',
   'pages.week.rationale.newFocus': 'New focus: {goal}. {line}.',
   'pages.week.rationale.default': 'This week works on {goal}: {line}.',
   'pages.week.newThisWeek': 'New this week: {exercise}',
@@ -208,19 +208,6 @@ export const PAGES_EN = {
   // ── The plan screen ──────────────────────────────────────────────────────
   'pages.plan.title': 'Your plan',
   'pages.plan.goalEyebrow': 'Your goal',
-  'pages.plan.goalNow': 'Now {value}',
-  'pages.plan.goalTarget': 'Goal {value}',
-  'pages.plan.goalTestToday': 'Test today - see how much it’s grown.',
-  'pages.plan.unitSeconds': '{n}s',
-  'pages.plan.unitReps': '{n}',
-  'pages.plan.unitPain': '{n}/10',
-  'pages.plan.unitPercent': '{n}%',
-  'pages.plan.unmeasured': '-',
-  'pages.plan.explain.pain_free_mornings': 'Your pain at the first step of the day',
-  'pages.plan.explain.arch_hold': 'How long you can hold your arch up',
-  'pages.plan.explain.calf_raises': 'Heel raises on one leg, weaker side',
-  'pages.plan.explain.balance': 'Standing on one leg, eyes closed',
-  'pages.plan.explain.symmetry': 'Difference between left and right',
   'pages.plan.short.pain_free_mornings': 'mornings',
   'pages.plan.short.arch_hold': 'arch',
   'pages.plan.short.calf_raises': 'calves',
@@ -237,11 +224,8 @@ export const PAGES_EN = {
     other: '{count} short timed tests, about {minutes} min in all. They show what your training has built, and the plan adjusts to the results.',
   },
   'pages.plan.rest': 'Rest day. Try a 2-minute stretch if you feel like it.',
-  'pages.plan.done': 'Done for today',
-  'pages.plan.tomorrow': 'Tomorrow: {kind}, {minutes}.',
-  'pages.plan.tomorrowRest': 'Tomorrow is a rest day.',
-  /** In place of "Tomorrow is a rest day" when the next session is further
-   * off: the day it falls on and what it is. */
+  /** Under "Rest day" on tomorrow's card: the day the next session falls on
+   * and what it is. */
   'pages.plan.nextSessionOn': 'Next session: {day}, {kind}.',
   /** On a finished test day: the results again, read-only. */
   'pages.plan.seeResults': 'See results',
@@ -254,32 +238,6 @@ export const PAGES_EN = {
   'pages.plan.reached': '{goal} - done. Next up: {next}.',
   'pages.plan.seeNextGoal': 'See next goal',
   'pages.plan.chipPreviewA11y': '{name}, preview',
-  'pages.plan.headline.pain_free_mornings.before': 'Let’s make mornings',
-  'pages.plan.headline.pain_free_mornings.beforeNamed': '{name}, let’s make mornings',
-  'pages.plan.headline.pain_free_mornings.lead': 'easier',
-  'pages.plan.headline.pain_free_mornings.after': '.',
-  'pages.plan.detail.pain_free_mornings': 'Your first steps score {now} today. The aim is {target} for two weeks running - daily mobility and calf work get you there.',
-  'pages.plan.headline.arch_hold.before': 'Let’s train the muscles that',
-  'pages.plan.headline.arch_hold.beforeNamed': '{name}, let’s train the muscles that',
-  'pages.plan.headline.arch_hold.lead': 'support',
-  'pages.plan.headline.arch_hold.after': ' your arch.',
-  'pages.plan.detail.arch_hold': 'You hold it up for {now} now. The aim is {target} - short-foot work on every strength day builds it.',
-  'pages.plan.headline.calf_raises.before': 'Let’s make your calves',
-  'pages.plan.headline.calf_raises.beforeNamed': '{name}, let’s make your calves',
-  'pages.plan.headline.calf_raises.lead': 'stronger',
-  'pages.plan.headline.calf_raises.after': '.',
-  'pages.plan.detail.calf_raises': '{now} heel raises on your weaker leg now. The aim is {target} - the calf work on strength days builds it.',
-  'pages.plan.headline.balance.before': 'Let’s make your balance',
-  'pages.plan.headline.balance.beforeNamed': '{name}, let’s make your balance',
-  'pages.plan.headline.balance.lead': 'steadier',
-  'pages.plan.headline.balance.after': '.',
-  'pages.plan.detail.balance': '{now} on one leg, eyes closed, now. The aim is {target} - balance days train exactly that.',
-  'pages.plan.headline.symmetry.before': 'Let’s make your feet',
-  'pages.plan.headline.symmetry.beforeNamed': '{name}, let’s make your feet',
-  'pages.plan.headline.symmetry.lead': 'even',
-  'pages.plan.headline.symmetry.after': '.',
-  'pages.plan.detail.symmetry': 'Left and right differ by {now} now. The aim is under {target} - the weaker side gets the extra work.',
-  'pages.plan.detailFirst': 'Your first test sets the starting number. The aim is {target}.',
   'pages.plan.outcome.sport.running': 'running',
   'pages.plan.outcome.sport.tennis': 'tennis',
   'pages.plan.outcome.sport.gym': 'gym sessions',
@@ -306,12 +264,111 @@ export const PAGES_EN = {
   'pages.plan.outcome.all_day': 'On your feet [all day]',
   'pages.plan.outcome.comeback': '[Back] after an injury',
   'pages.plan.outcome.steady': '[Confident] steps',
-  'pages.plan.outcome.step': 'Step {n} of {total} · {goal}',
   'pages.plan.outcome.done': 'Every step done. Now we keep it that way.',
-  'pages.plan.outcome.doneDetail': 'The plan keeps going: short sessions that hold what you built.',
   'pages.plan.nextWeek': 'Next week',
   'pages.plan.nextWeekHow': 'A new week is planned every Sunday evening from how this one went - your check-ins, your tests and how hard sessions felt.',
   'pages.plan.nextWeekSummary': '{sessions} · focus: {goal}',
   'pages.plan.sessionCount': { one: '{count} session', other: '{count} sessions' },
   'pages.plan.restDay': 'Rest',
+
+  // ── Today's moves, and what finishing them earns ────────────────────────
+  /** Over the checklist of today's moves. */
+  'pages.plan.movesTitle': 'Today’s moves',
+  /** Beside it: how many are ticked, of how many. */
+  'pages.plan.movesProgress': '{done} / {total}',
+  /** The bar under it, read aloud. */
+  'pages.plan.movesDoneA11y': '{done} of {total} done',
+  /** A move already ticked today. `name` carries its dose. */
+  'pages.plan.moveDoneA11y': '{name}, done',
+  /** Over the rewards: only what the plan's own dose earns. */
+  'pages.plan.rewardTitle': 'Rewards',
+  /** Today not yet counted, and no streak running. */
+  'pages.plan.rewardStreakStart': 'Finish today to start your streak.',
+  /** Today not yet counted: `count` is the streak once it is. */
+  'pages.plan.rewardStreak': {
+    one: 'Finish today and your streak reaches {count} day.',
+    other: 'Finish today and your streak reaches {count} days.',
+  },
+  /** The next session sticker, more than one session away. `name` is its own name. */
+  'pages.plan.rewardSticker': 'Next sticker: {name}.',
+  /** One session away. */
+  'pages.plan.rewardStickerLast': 'Finish today to collect a sticker: {name}.',
+  'pages.plan.rewardStickerCount': '{have} / {need}',
+  'pages.plan.rewardStickerCountA11y': '{have} of {need}',
+
+  // ── A finished day: what it earned, and tomorrow ─────────────────────────
+  /** The tiles' headers. Three share a card's width: keep them short. */
+  'pages.plan.earnedMinutes': 'Minutes',
+  'pages.plan.earnedMoves': 'Moves',
+  /** On a test day, in place of the moves. */
+  'pages.plan.earnedTests': 'Tests',
+  'pages.plan.earnedStreak': 'Days in a row',
+  /** Each tile read aloud as one. The streak's is `streakSheet.inARow`. */
+  'pages.plan.earnedMinutesA11y': { one: '{count} minute today', other: '{count} minutes today' },
+  'pages.plan.earnedMovesA11y': { one: '{count} move done today', other: '{count} moves done today' },
+  'pages.plan.earnedTestsA11y': { one: '{count} test done today', other: '{count} tests done today' },
+  /** Under the tiles, the next session sticker one session away. Today is
+   * already counted; further off, `rewardSticker` says it. */
+  'pages.plan.earnedStickerLast': 'One more session for a sticker: {name}.',
+  /** Over tomorrow's card. */
+  'pages.plan.tomorrowEyebrow': 'Tomorrow',
+  /** When tomorrow's session opens, counted: "Opens in 1h 50m". */
+  'pages.plan.opensIn': 'Opens in {time}',
+  /** Read after a finished day's title on the card that leads it; the card
+   * draws it as a tick. */
+  'pages.plan.doneToday': 'Done for today',
+
+  // ── The goal's weeks: this week and next on a rail, the test days between ─
+  /** The chip on this week's card. */
+  'pages.plan.path.now': 'Now',
+  /** Read after a test taken, which the rail draws as a tick. */
+  'pages.plan.path.done': 'Done',
+  /** A test day on the rail: today's (taken or to take), tomorrow's, the next
+   * one counted in days, and a taken one by its day ("Test day · Oct 12"). */
+  'pages.plan.path.testToday': 'Test day · today',
+  'pages.plan.path.testTomorrow': 'Test day · tomorrow',
+  'pages.plan.path.testIn': { one: 'Test day · in {count} day', other: 'Test day · in {count} days' },
+  'pages.plan.path.testOn': 'Test day · {date}',
+  /** Over each week's card. Never a week number: the plan has no length.
+   * `date` is next week's Monday, formatted by `Intl` ("Oct 19"). */
+  'pages.plan.weeks.this': 'This week',
+  'pages.plan.weeks.nextFrom': 'Next week · from {date}',
+  /** A week's title: what it works on. Short, a few words. `settling` is the
+   * plan's first week; `keep` a week with every goal reached. */
+  'pages.plan.weeks.title.settling': 'Settle things down',
+  'pages.plan.weeks.title.pain_free_mornings': 'Ease the mornings',
+  'pages.plan.weeks.title.arch_hold': 'Build the arch',
+  'pages.plan.weeks.title.calf_raises': 'Build the calves',
+  'pages.plan.weeks.title.balance': 'Train your balance',
+  'pages.plan.weeks.title.symmetry': 'Even out both legs',
+  'pages.plan.weeks.title.keep': 'Keep what you built',
+  /** Under the title, one sentence of what changes in the week, read off the
+   * plan itself. The work, never a result, a promise or a pain figure.
+   * `exercise` is a move's name. */
+  'pages.plan.weeks.change.settling': 'Gentle moves only, while your feet get used to the work.',
+  'pages.plan.weeks.change.settlingSeated': 'Seated moves only, while your feet get used to the work.',
+  'pages.plan.weeks.change.down': 'A level easier than the week before, to keep it comfortable.',
+  'pages.plan.weeks.change.up': 'A step up: {exercise}.',
+  'pages.plan.weeks.change.newMove': 'New move: {exercise}.',
+  'pages.plan.weeks.change.opens': 'Settling is over: moves can step up once two sessions in a row feel easy.',
+  'pages.plan.weeks.change.same': 'Same level as the week before, so the work can build.',
+  'pages.plan.weeks.change.keep': 'Lighter work that keeps what you have built.',
+  /** A week with a new focus, or this week when nothing else changed: what
+   * the focus's work is, in one plain sentence. */
+  'pages.plan.weeks.about.pain_free_mornings': 'Daily stretches and gentle load for the first steps of the day.',
+  'pages.plan.weeks.about.arch_hold': 'Training the small muscles under your foot that hold the arch up.',
+  'pages.plan.weeks.about.calf_raises': 'Building how much work your calf and Achilles can do before they tire.',
+  'pages.plan.weeks.about.balance': 'Training how well your foot and ankle sense the ground.',
+  'pages.plan.weeks.about.symmetry': 'Extra work for the weaker leg, to close the gap to the other.',
+  /** The week's chips: days with something to do, and a session's length. */
+  'pages.plan.weeks.days': { one: '{count} day', other: '{count} days' },
+  'pages.plan.weeks.minutes': '{minutes} min each',
+  /** Beside a move the plan has never scheduled before. */
+  'pages.plan.weeks.newTag': 'New',
+  /** Under the first five moves: opens the rest. */
+  'pages.plan.weeks.more': '+{n} more',
+  /** Beside the rail where it fades, past next week: how the weeks after are
+   * made, since nothing truthful can be said of them yet. */
+  'pages.plan.weeks.after':
+    'The weeks after are planned one at a time, each Sunday evening, from your check-ins, your tests and how sessions felt.',
 } as const satisfies Record<string, SourceEntry>;

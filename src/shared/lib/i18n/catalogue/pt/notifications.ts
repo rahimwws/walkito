@@ -130,8 +130,8 @@ export const NOTIFICATIONS_PT = {
   'notifications.winbackDay30': 'Continuamos aqui se o pé voltar a dar sinal.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, antes de ir - {percent}% de desconto',
-  'notifications.offerWait': 'Antes de ir - {percent}% de desconto',
+  'notifications.offerWaitNamed': '{name}, antes de ir - {percent}% de desconto no primeiro ano',
+  'notifications.offerWait': 'Antes de ir - {percent}% de desconto no primeiro ano',
   'notifications.offerWaitBody': 'A assinatura anual está esperando por um preço menor. Toque para ver.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

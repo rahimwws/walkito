@@ -51,10 +51,17 @@ describe('onboarding is reachable', () => {
     const setup = /guard=\{onboarded && entitled && setupPending\}\s*>\s*<Stack\.Screen\s+name="setup"/s;
     expect(layout).toMatch(setup);
 
-    // The app itself: paid and set up, or reading their own history after a lapse.
-    const tabs =
-      /guard=\{onboarded && \(\(entitled && !setupPending\) \|\| \(lapsed && browsing\)\)\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
+    // The app itself: paid and set up, or reading their own history after a
+    // lapse. One condition, which the links wait on too. Never for somebody
+    // who skipped the paywall: it is a hard paywall, and "Not now" leads to
+    // the one-time trial offer on the same `offer` screen, not into the app.
+    const tabs = /guard=\{tabsReachable\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
     expect(layout).toMatch(tabs);
+    expect(layout).toContain(
+      'const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));',
+    );
+    expect(layout).not.toContain('skipper');
+    expect(layout).not.toContain('usePaywallSkipped');
   });
 
   /**

@@ -38,7 +38,8 @@ import { FeatureCard } from '@/shared/ui/feature-card';
  * thing. Nothing here is a new component.
  */
 
-/** One glyph per protocol, shared with the small cards on Today. */
+/** One Fluent emoji per protocol, shared with the small cards on Today. A
+ * locked card trades it for the lock, which is a state rather than content. */
 const ICONS = PROTOCOL_ICONS;
 
 export function QuickPage() {
@@ -147,7 +148,8 @@ export function QuickPage() {
         <FeatureCard
           title={t(featured.titleKey)}
           image={PROTOCOL_ART[featured.id]}
-          icon={locked(featured) ? SquareLock02Icon : ICONS[featured.id]}
+          icon={locked(featured) ? SquareLock02Icon : undefined}
+          emoji={locked(featured) ? undefined : ICONS[featured.id]}
           accent={featured.accent}
           onPress={() => openProtocol(featured)}
           style={styles.featured}
@@ -158,7 +160,8 @@ export function QuickPage() {
               key={protocol.id}
               title={t(protocol.titleKey)}
               image={PROTOCOL_ART[protocol.id]}
-              icon={locked(protocol) ? SquareLock02Icon : ICONS[protocol.id]}
+              icon={locked(protocol) ? SquareLock02Icon : undefined}
+              emoji={locked(protocol) ? undefined : ICONS[protocol.id]}
               accent={protocol.accent}
               onPress={() => openProtocol(protocol)}
               // An odd one out is alone on its row and stretches to the full

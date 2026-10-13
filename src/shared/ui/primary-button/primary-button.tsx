@@ -1,5 +1,6 @@
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
+import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
 import Animated, {
   Easing,
@@ -36,6 +37,8 @@ export type PrimaryButtonProps = {
   onPress: () => void;
   /** Trailing glyph, e.g. an arrow. */
   icon?: IconSvgElement;
+  /** Something before the label: a provider's logo on a sign-in button. */
+  leading?: ReactNode;
   /** Dims and stops responding, for a step with nothing chosen yet. */
   disabled?: boolean;
   /**
@@ -62,6 +65,7 @@ export function PrimaryButton({
   label,
   onPress,
   icon,
+  leading,
   disabled = false,
   tint,
   style,
@@ -100,6 +104,7 @@ export function PrimaryButton({
         onPress={onPress}
         style={[styles.face, { backgroundColor: theme.fill }, disabled && styles.disabled]}>
         <View style={styles.row}>
+          {leading}
           <Text style={[styles.label, { color: theme.label }]} numberOfLines={1}>
             {label}
           </Text>

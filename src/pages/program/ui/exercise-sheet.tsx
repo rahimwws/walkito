@@ -12,8 +12,8 @@ const BLUR = 28;
 
 /**
  * One exercise, previewed: its clip, the one line that matters most while
- * doing it, and why it is in the plan. Opened from an exercise chip on the today card. It starts nothing —
- * the session begins from the card's own button — and a tap anywhere outside
+ * doing it, and why it is in the plan. Opened from a move in today's checklist. It starts nothing —
+ * the session begins from the today card's own button — and a tap anywhere outside
  * closes it, the same way the day sheet closes.
  */
 export function ExerciseSheet({ exerciseId, onClose }: { exerciseId: string | null; onClose: () => void }) {

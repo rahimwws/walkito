@@ -208,12 +208,6 @@ export const JOURNEY_RU = {
   'onboarding.test.left': 'Левая',
   'onboarding.test.right': 'Правая',
   'onboarding.test.seconds': '{count} с',
-  'onboarding.test.resultTitle': 'Ваша точка отсчёта',
-  'onboarding.test.archYes': 'Гибкая стопа. Хорошо отвечает на укрепление.',
-  'onboarding.test.archNo': 'Свода нет. Сделаем упор на икру и голеностоп.',
-  'onboarding.test.archUnsure': 'Трудно сказать. Первый ретест измерит.',
-  'onboarding.test.balanceHead': 'На одной ноге',
-  'onboarding.test.resultFoot': 'План учтёт это с первого дня.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Собираем ваш план',
@@ -228,17 +222,36 @@ export const JOURNEY_RU = {
   'onboarding.building.choosing': 'Подбираем первую неделю…',
   'onboarding.building.ctaWeek': 'Показать первую неделю',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  'onboarding.coach.toeTry': 'Попробуйте прямо сейчас: поднимите только большой палец.',
+  'onboarding.coach.beatFeet': 'Теперь о ваших стопах.',
+  'onboarding.coach.beatGoal': 'Теперь о том, чего вы хотите.',
+  'onboarding.coach.midway': 'Полпути позади, {name}.',
+  'onboarding.coach.planReady': 'Ваш план готов, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Ваша первая неделя',
   'onboarding.week.blurb': 'Короткие занятия в выбранные дни. Каждое подстраивается под то, как стопа чувствует себя утром.',
-  'onboarding.week.morningMeta': 'Каждое утро, до того как встать · 2 мин',
-  'onboarding.week.sessionMeta': 'В занятиях этой недели',
+  'onboarding.week.cadence': {
+    one: '{count} занятие в неделю, по {minutes} мин',
+    few: '{count} занятия в неделю, по {minutes} мин',
+    many: '{count} занятий в неделю, по {minutes} мин',
+  },
+  'onboarding.week.everyMorning': 'Каждое утро',
+  'onboarding.week.sessionDays': 'В дни занятий',
+  'onboarding.week.moveA11yMorning': 'Упражнение {index} из {total}. {title}, {dose}, каждое утро. {cue}',
+  'onboarding.week.moveA11ySession': 'Упражнение {index} из {total}. {title}, {dose}, в дни занятий. {cue}',
+  'onboarding.week.deckHint': 'Смахните вверх или вниз, чтобы сменить упражнение. Коснитесь дважды, чтобы открыть на весь экран.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'Вы с нами, {name}',
   'setup.save.title': 'Вы с нами',
   'setup.save.blurb': 'Чтобы не потерять при смене телефона.',
   'setup.save.later': 'Не сейчас',
+  'setup.save.email': 'Продолжить с почтой',
+  'setup.save.googleUnavailable': 'Вход через Google на этом телефоне недоступен. Войдите по почте.',
+  'setup.save.deferred': 'Пока продолжить без входа',
+  'setup.save.deferredNote': 'Сейчас войти не получилось. Мы спросим снова, когда вы откроете Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Отправить план вам на почту?',
@@ -261,7 +274,7 @@ export const JOURNEY_RU = {
   'setup.widget.mockSearch': 'Поиск виджетов',
   'setup.next': 'Далее',
   'setup.done': 'Готово',
-  'setup.finish': 'Начать первое занятие',
+  'setup.finish': 'Завершить',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   'offer.stripMornings': 'По утрам {score}/10',
@@ -271,6 +284,16 @@ export const JOURNEY_RU = {
   'offer.howCheckinShort': 'Утренняя отметка за 10 секунд',
   'offer.howSessionShort': 'Занятие на 3–10 минут, каждый день под вас',
   'offer.howRetestShort': 'Тот же тест каждые две недели',
+  'offer.goldPlan': 'Как работает ваш план',
+  'offer.goldHow': 'Что вы получаете каждый день',
+  'offer.goldStart': 'Всё открыто',
+  'offer.tomorrowWhen': 'Завтра',
+  'offer.tomorrowBody': '2 минуты, ещё в кровати',
+  'offer.weekBody': '{minutes} мин в день',
+  'offer.sundayBody': 'Подстраивается под ощущения',
+  'offer.checkBody': 'Видно, что изменилось',
+  'offer.howHeadline': 'Несколько минут в день, специально для ваших стоп',
+  'offer.builtShort': 'Упражнения из опубликованных исследований',
   'offer.builtTitle': 'На чём это основано',
   'offer.builtBody':
     'Упражнения из опубликованных исследований и рекомендаций 2023 года по боли в пятке. Сам Walkito в испытаниях не проверялся.',

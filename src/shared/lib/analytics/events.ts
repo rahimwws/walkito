@@ -30,9 +30,10 @@ export type AcquisitionSource =
   | 'google'
   | 'other';
 
-/** Which subscription a paywall event is about. The two plans on sale; the
- * one-time pass and the monthly plan that came before them are not sold. */
-export type PlanTier = 'annual' | 'weekly';
+/** Which plan a paywall or purchase event is about: the annual, monthly and
+ * lifetime plans on sale, and the weekly one Android still sells. The one-time
+ * pass and the first monthly plan are not sold. */
+export type PlanTier = 'annual' | 'monthly' | 'weekly' | 'lifetime';
 
 export type AnalyticsEvents = {
   // ── Onboarding ───────────────────────────────────────────────────────────
@@ -42,20 +43,47 @@ export type AnalyticsEvents = {
   onboarding_step_viewed: { step: string; index: number; act: number };
   /** Only for the few answers that segment a funnel without describing a body. */
   onboarding_answered: { step: 'source' | 'goal' | 'sport' | 'runner' | 'role'; answer: string };
-  /** A reaction to an answer appeared — a full screen or a line under the
-   * options. The reaction's key, never the answer that chose it. */
-  onboarding_reaction_viewed: { reaction: string; full: boolean };
+  /** A reaction to an answer appeared — a full screen or a line said back.
+   * Only the reactions whose key says nothing about a body: the name, who
+   * they are, the habit and the kit. A reaction's key names the answer that
+   * chose it, so one about where it hurts, how long, the safety check or what
+   * was tried is never sent; `reactionAnalyticsId` in `pages/onboarding`
+   * decides, and this type refuses anything it would not pass. */
+  onboarding_reaction_viewed: {
+    reaction: 'name' | `role_${string}` | `habit_${string}` | `equipment_${string}`;
+    full: boolean;
+  };
   /** The 30-second check: whether this person is in it, then that they did it.
    * Never the result — an arch or a balance time is a body measurement. */
   mini_test_assigned: { variant: 'test' | 'control' };
   mini_test_completed: { balance: boolean };
+  /** The first week's deck: a card came to the front, by a swipe or by itself
+   * (`auto`). Its place in the deck, never the move: the deck is always three
+   * cards, so a place says nothing, while which moves fill it follows the
+   * pain answers. */
+  first_week_move_viewed: { index: number; auto: boolean };
+  /** A card's clip opened full screen. */
+  first_week_expanded: { index: number };
+  /** The deck's last card was reached, by a swipe or by itself. */
+  first_week_deck_completed: { auto: boolean };
   /** "Already have an account?" on the intro. */
   sign_in_opened: { from: 'intro' | 'setup' };
   acquisition_source_selected: { source: AcquisitionSource };
-  sign_in_completed: { method: 'apple' | 'google' | 'email'; status: 'signed-in' | 'unavailable' };
+  /** `created`: an emailed code made the anonymous account this person's own,
+   * rather than signing in to one the address already had. */
+  sign_in_completed: { method: 'apple' | 'google' | 'email'; status: 'signed-in' | 'unavailable'; created?: boolean };
   /** `stage` says whether the provider's own sheet or our server refused — a
-   * server failure means that provider on Supabase needs looking at. */
-  sign_in_failed: { method: 'apple' | 'google' | 'email'; stage?: 'provider' | 'server' };
+   * server failure means that provider on Supabase needs looking at. `code`:
+   * sending or checking an emailed code. */
+  sign_in_failed: {
+    method: 'apple' | 'google' | 'email';
+    stage?: 'provider' | 'server' | 'code';
+    failure?: 'user' | 'offline' | 'server';
+  };
+  /** An emailed code went out. `existing`: on the save screen, the address
+   * already had an account, so the code signs in to it (always false from the
+   * intro, where every code signs in). */
+  sign_in_code_sent: { resend: boolean; existing: boolean };
   /** Left the flow — by finishing it, or by the header's Skip. */
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 
@@ -75,10 +103,40 @@ export type AnalyticsEvents = {
   purchase_pending: PurchaseProps;
   purchase_failed: PurchaseProps & { reason: string };
   restore_completed: { status: 'restored' | 'nothing-found' | 'failed' };
+  /** "See all plans" on the paywall: the monthly and lifetime plans shown
+   * under the annual one. */
+  paywall_plans_expanded: Record<string, never>;
+  /** "Not now" on the paywall: on to the one-time trial offer (never into
+   * the app; it is a hard paywall). Once per person, sent by `skipPaywall()`
+   * in `entities/purchase` (never by a screen). */
+  paywall_skipped: Record<string, never>;
+  /** The offer screen for somebody who skipped the paywall: the one-time
+   * trial, the comeback price while its 15 minutes run, or the standard plans
+   * after them. The name is from when it stood over Home; kept, as an
+   * analytics identifier. */
+  home_offer_viewed: { stage: 'trial' | 'comeback' | 'standard' };
+  /** A plan chosen on the offer screen's switch (the comeback's year or
+   * lifetime, or one of the standard plans). */
+  home_offer_plan_selected: { plan: PlanTier };
+  /** The app was left with the one-time trial offer up: the trial is over and
+   * the comeback's 15 minutes start (`features/home-offer`). */
+  trial_offer_missed: Record<string, never>;
+  /** A push about the comeback price was accepted by the system:
+   * `last_chance` as the app is left, `ends_soon` laid for before the
+   * deadline. Sent only with notification permission. */
+  comeback_push_sent: { push: 'last_chance' | 'ends_soon' };
 
   // ── After the first purchase ─────────────────────────────────────────────
   setup_step_viewed: { step: string };
   setup_completed: Record<string, never>;
+  /** Signing in is required after the purchase, except when it failed for a
+   * reason that was not the person's (no network, a server or provider down):
+   * then "Continue for now", and it is asked again on the next launch. */
+  setup_account_deferred: { reason: 'offline' | 'server' };
+  /** The platform's sheet (Apple or Google) on the save screen ended without
+   * an account. On iPhone that goes on (App Review requires signing in to stay
+   * optional there); on Android a cancel stays. */
+  setup_account_declined: { platform: 'ios' | 'android'; outcome: 'cancelled' | 'unavailable' | 'failed' };
   /** The widget, asked for. `pinned` only where the system could add it
    * itself (Android); on iPhone it is the walkthrough being finished. */
   widget_add: { result: 'pinned' | 'guided' | 'skipped' };
@@ -116,6 +174,8 @@ export type AnalyticsEvents = {
   /** A pain check-in happened. The score deliberately does not travel. */
   checkin_logged: { day: number; entries_today: number };
   morning_stretch_done: { day: number };
+  /** The sticker album was opened. Nothing else: which stickers are in it follows check-ins and tests. */
+  sticker_book_opened: Record<string, never>;
 
   // ── Email ────────────────────────────────────────────────────────────────
   /** The app was opened from an email button. `email_key` names the email

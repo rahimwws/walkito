@@ -223,12 +223,6 @@ export const JOURNEY_EN = {
   'onboarding.test.left': 'Left',
   'onboarding.test.right': 'Right',
   'onboarding.test.seconds': '{count} s',
-  'onboarding.test.resultTitle': 'Your starting point',
-  'onboarding.test.archYes': 'Flexible foot. It responds well to strength work.',
-  'onboarding.test.archNo': 'No arch. We’ll focus on calf and ankle.',
-  'onboarding.test.archUnsure': 'Hard to tell. Your first retest will measure it.',
-  'onboarding.test.balanceHead': 'On one leg',
-  'onboarding.test.resultFoot': 'Your plan uses this from day one.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Building your plan',
@@ -243,17 +237,42 @@ export const JOURNEY_EN = {
   'onboarding.building.choosing': 'Choosing your first week…',
   'onboarding.building.ctaWeek': 'See my first week',
 
+  // ── The coach ────────────────────────────────────────────────────────────
+  // His own lines, in the bubble beside the question: a beat as a part of
+  // the flow begins, halfway (printed on the passport's first stamp) and the
+  // plan ready. They speak to the flow, never to an answer: nothing here
+  // judges what was said.
+  'onboarding.coach.toeTry': 'Try it now: lift just your big toe.',
+  'onboarding.coach.beatFeet': 'Now, your feet.',
+  'onboarding.coach.beatGoal': 'Now, what you want from this.',
+  'onboarding.coach.midway': 'Halfway there, {name}.',
+  'onboarding.coach.planReady': 'Your plan is ready, {name}.',
+
   // ── First week ───────────────────────────────────────────────────────────
   'onboarding.week.title': 'Your first week',
   'onboarding.week.blurb': 'Short sessions on the days you picked. Each one adjusts to how your foot feels that morning.',
-  'onboarding.week.morningMeta': 'Every morning, before you stand · 2 min',
-  'onboarding.week.sessionMeta': 'In your sessions this week',
+  /** Under the title: the days and the minutes picked on the schedule screen. */
+  'onboarding.week.cadence': {
+    one: '{count} session a week, {minutes} min each',
+    other: '{count} sessions a week, {minutes} min each',
+  },
+  'onboarding.week.everyMorning': 'Every morning',
+  'onboarding.week.sessionDays': 'On session days',
+  /** What VoiceOver reads for a card of the deck: one whole sentence for each
+   * kind of move, `{cue}` being the move’s own sentence. */
+  'onboarding.week.moveA11yMorning': 'Move {index} of {total}. {title}, {dose}, every morning. {cue}',
+  'onboarding.week.moveA11ySession': 'Move {index} of {total}. {title}, {dose}, on session days. {cue}',
+  'onboarding.week.deckHint': 'Swipe up or down to switch moves. Double-tap to watch it full screen.',
 
   // ── After the first purchase ─────────────────────────────────────────────
   'setup.save.titleNamed': 'You’re in, {name}',
   'setup.save.title': 'You’re in',
   'setup.save.blurb': 'So it’s safe on a new phone.',
   'setup.save.later': 'Not now',
+  'setup.save.email': 'Continue with email',
+  'setup.save.googleUnavailable': 'Google sign-in isn’t available on this phone. Use your email instead.',
+  'setup.save.deferred': 'Continue for now',
+  'setup.save.deferredNote': 'We couldn’t sign you in right now. We’ll ask again next time you open Walkito.',
   // After the purchase, for anyone with no address on file: the welcome and
   // the first fortnight's emails go to it.
   'setup.email.title': 'Send your plan to your email?',
@@ -277,7 +296,8 @@ export const JOURNEY_EN = {
   'setup.widget.mockSearch': 'Search Widgets',
   'setup.next': 'Next',
   'setup.done': 'Done',
-  'setup.finish': 'Start my first session',
+  /** The last step's button. Setup ends on Home; nothing is started for them. */
+  'setup.finish': 'Finish',
 
   // ── The paywall ──────────────────────────────────────────────────────────
   // Before the plans: their own numbers on top, tomorrow morning first, then
@@ -289,6 +309,16 @@ export const JOURNEY_EN = {
   'offer.howCheckinShort': '10-second morning check-in',
   'offer.howSessionShort': '3–10 minute session, adjusted every day',
   'offer.howRetestShort': 'The same test every two weeks',
+  'offer.goldPlan': 'How your plan works',
+  'offer.goldHow': 'What you get every day',
+  'offer.goldStart': 'Everything unlocked',
+  'offer.tomorrowWhen': 'Tomorrow',
+  'offer.tomorrowBody': '2 minutes, still in bed',
+  'offer.weekBody': '{minutes} min a day',
+  'offer.sundayBody': 'Adjusts to how it felt',
+  'offer.checkBody': 'See what changed',
+  'offer.howHeadline': 'A few minutes a day, made for your feet',
+  'offer.builtShort': 'Moves from published research',
   'offer.builtTitle': 'What it’s built on',
   'offer.builtBody':
     'Exercises from published research and the 2023 heel pain guideline. Walkito itself hasn’t been tested in a trial.',

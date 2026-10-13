@@ -1,98 +1,91 @@
-import * as Haptics from 'expo-haptics';
-import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
+import { useMemo } from 'react';
+import type { SharedValue } from 'react-native-reanimated';
 
-import { ExercisePreview } from '@/widgets/session-player';
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
-import { useLanguage, useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
+import { mirroredFor } from '@/widgets/session-player';
+import { DEFAULT_SETTINGS, doseFor, doseLabel, exerciseById } from '@/entities/program';
+import { protocolById } from '@/entities/protocols';
+import { useT } from '@/shared/lib/i18n';
 
-const EASE = Easing.bezier(0.23, 1, 0.32, 1).factory();
+import { firstWeekDeck } from '../model/first-week-deck';
+import { planSettingsFrom } from '../model/intake';
+import { painAreasFor } from '../model/pain-areas';
+import { primaryPain } from '../model/reflection';
+import type { DeckCard } from './move-card';
+import { WeekDeck } from './week-deck';
 
-export type WeekMove = { id: string; title: string; meta: string };
+type Answers = Readonly<Record<string, unknown>>;
 
-/** A Monday, any Monday: the labels only need the weekday names. */
-const MONDAY = new Date(2024, 0, 1);
+export type FirstWeekStepProps = {
+  /** The flow's answers so far. Read here, never from `useIntake()`: the
+   * intake is saved only when the flow ends, so on this screen it is empty or
+   * somebody else's, and a left foot would see the right foot's clip. */
+  answers: Answers;
+  /** The page's button squash: it dips once when the last card is reached. */
+  squash: SharedValue<number>;
+  /** The full-screen clip opened or closed, for anything the page pauses. */
+  onViewerChange?: (open: boolean) => void;
+};
 
 /**
- * The first week, before anybody pays: the days they picked and the moves in
- * it, with the selected one playing above the list.
+ * The first week, before anybody pays: the moves in it, playing, one tall
+ * card each, with the coach pointing at them and saying why.
  *
- * The product shown rather than described. Only moves with a clip appear, so
- * every card can be watched.
+ * The product shown rather than described. This wrapper only turns answers
+ * into cards; the deck is `WeekDeck`.
  */
-export function FirstWeekStep({ days, moves }: { days: readonly number[]; moves: readonly WeekMove[] }) {
-  const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
+export function FirstWeekStep({ answers, squash, onViewerChange }: FirstWeekStepProps) {
   const t = useT();
-  const language = useLanguage();
-  const [selected, setSelected] = useState(moves[0]?.id ?? null);
 
-  const weekday = new Intl.DateTimeFormat(language, { weekday: 'short' });
-  const labels = Array.from({ length: 7 }, (_, i) => {
-    const day = new Date(MONDAY);
-    day.setDate(MONDAY.getDate() + i);
-    return weekday.format(day);
-  });
+  const settings = planSettingsFrom(answers, null);
+  const cards = useMemo<DeckCard[]>(() => {
+    const area = primaryPain(painAreasFor(answers.pain));
+    return firstWeekDeck(area, planSettingsFrom(answers, null).toeWork === true).map((move) => {
+      const exercise = exerciseById(move.id);
+      const copy = { rationale: t(exercise.rationaleKey), cue: t(exercise.cueKey) };
+      if (move.when === 'morning') {
+        return {
+          id: move.id,
+          when: move.when,
+          whenLabel: t('onboarding.week.everyMorning'),
+          // The routine's name and length, not the stretch's: what is done
+          // every morning is the two-minute routine this stretch makes up.
+          title: t('quick.morning.title'),
+          dose: t('exercises.dose.holdMinutes', { minutes: protocolById('morning').minutes }),
+          ...copy,
+        };
+      }
+      // The plan's own week-one dose, not a stand-in. `buildWeek` doses every
+      // move at its catalogue level (`planned`), and week one never climbs a
+      // chain; the seated start only narrows which moves, and the lighter
+      // start (`progressionOffset`) is the block programme's, which the weekly
+      // plan does not read. Only picking other minutes on the day rescales the
+      // sets, and that has not happened yet.
+      const dose = doseFor(move.id);
+      return {
+        id: move.id,
+        when: move.when,
+        whenLabel: t('onboarding.week.sessionDays'),
+        title: t(exercise.titleKey),
+        dose: doseLabel(dose.sets, dose.reps, dose.holdSec, dose.perSide),
+        ...copy,
+      };
+    });
+  }, [answers, t]);
 
   return (
-    <ScrollView style={styles.fill} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
-      <Animated.Text entering={FadeIn.duration(300).reduceMotion(ReduceMotion.System)} style={[styles.title, { color: colors.foreground }]}>
-        {t('onboarding.week.title')}
-      </Animated.Text>
-
-      <View style={styles.days}>
-        {labels.map((label, i) => {
-          const on = days.includes(i);
-          return (
-            <View
-              key={label}
-              style={[styles.day, { backgroundColor: on ? PRIMARY : colors.card }]}
-              accessibilityLabel={label}
-              accessibilityState={{ selected: on }}>
-              <Text numberOfLines={1} style={[styles.dayLabel, { color: on ? '#FFFFFF' : meter.caption }]}>
-                {label}
-              </Text>
-            </View>
-          );
-        })}
-      </View>
-
-      {selected != null && <ExercisePreview key={selected} exerciseId={selected} style={styles.clip} expandable />}
-
-      {moves.map((move, i) => {
-        const on = move.id === selected;
-        return (
-          <Animated.View key={move.id} entering={FadeInDown.delay(140 + i * 90).duration(340).easing(EASE).reduceMotion(ReduceMotion.System)}>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityState={{ selected: on }}
-              onPress={() => {
-                Haptics.selectionAsync();
-                setSelected(move.id);
-              }}
-              style={[styles.card, { backgroundColor: colors.card, borderColor: on ? PRIMARY : 'transparent' }]}>
-              <Text style={[styles.cardTitle, { color: colors.foreground }]}>{move.title}</Text>
-              <Text style={[styles.cardMeta, { color: meter.caption }]}>{move.meta}</Text>
-            </Pressable>
-          </Animated.View>
-        );
-      })}
-    </ScrollView>
+    <WeekDeck
+      cards={cards}
+      daysPerWeek={settings.daysPerWeek ?? DEFAULT_SETTINGS.daysPerWeek}
+      minutes={settings.defaultMinutes ?? DEFAULT_SETTINGS.defaultMinutes}
+      mirrored={mirroredFor(sideOf(answers))}
+      squash={squash}
+      onViewerChange={onViewerChange}
+    />
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  content: { gap: 12, paddingBottom: 12 },
-  title: { ...fonts.heavy(30, -0.8), lineHeight: 36 },
-  days: { flexDirection: 'row', gap: 6, marginTop: 4 },
-  day: { flex: 1, height: 40, borderRadius: 12, borderCurve: 'continuous', alignItems: 'center', justifyContent: 'center' },
-  dayLabel: fonts.bold(13),
-  clip: { aspectRatio: 16 / 10 },
-  card: { borderRadius: 18, borderCurve: 'continuous', paddingVertical: 14, paddingHorizontal: 16, gap: 2, borderWidth: 2 },
-  cardTitle: fonts.bold(17, -0.2),
-  cardMeta: { ...fonts.medium(14), lineHeight: 19 },
-});
+/** The side answered on the side question, as the clip rule reads it. */
+function sideOf(answers: Answers): 'left' | 'right' | 'both' | null {
+  const value = Array.isArray(answers.side) ? answers.side[0] : answers.side;
+  return value === 'left' || value === 'right' || value === 'both' ? value : null;
+}

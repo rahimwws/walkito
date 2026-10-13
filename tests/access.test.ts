@@ -9,6 +9,7 @@ import {
   type EntitlementFacts,
 } from '../src/entities/purchase/model/access';
 import {
+  FIRST_PRODUCTS,
   LEGACY_PRODUCTS,
   PASS_ACCESS_DAYS,
   PRODUCTS,
@@ -67,7 +68,7 @@ describe('a subscription', () => {
   });
 
   test('the weekly one is enough on its own', () => {
-    const info = customer({ activeSubscriptions: [PRODUCTS.weekly] });
+    const info = customer({ activeSubscriptions: [FIRST_PRODUCTS.weekly] });
     expect(decideAccess(info, NOW)).toEqual({ entitled: true, reason: 'subscription' });
   });
 
@@ -96,8 +97,8 @@ describe('a subscription', () => {
   test('ends when RevenueCat says it does, not on a clock of ours', () => {
     // Lapsed: no longer active, entitlement only in `all`.
     const info = customer({
-      allPurchasedProductIdentifiers: [PRODUCTS.weekly],
-      entitlements: { active: {}, all: premium(PRODUCTS.weekly) },
+      allPurchasedProductIdentifiers: [FIRST_PRODUCTS.weekly],
+      entitlements: { active: {}, all: premium(FIRST_PRODUCTS.weekly) },
     });
     expect(decideAccess(info, NOW)).toEqual({ entitled: false, reason: 'nothing' });
   });
@@ -117,6 +118,44 @@ describe('a subscription', () => {
     expect(subscriptionActive(customer({ activeSubscriptions: [LEGACY_PRODUCTS.pass] }))).toBe(
       false,
     );
+  });
+});
+
+/**
+ * Lifetime: a non-consumable attached to `premium`, which RevenueCat grants
+ * with no expiry. Unlike the legacy pass it is meant to last for good, so the
+ * entitlement is taken at its word — and only the entitlement: RevenueCat
+ * revokes it on a refund while the purchase stays in the transaction list.
+ */
+describe('a lifetime purchase', () => {
+  const bought = (id: string) => ({ productIdentifier: id, purchaseDate: new Date(NOW - 400 * DAY).toISOString() });
+
+  test('is access for good through its entitlement', () => {
+    const info = customer({
+      allPurchasedProductIdentifiers: [PRODUCTS.lifetime],
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetime)],
+      entitlements: { active: premium(PRODUCTS.lifetime, NOW - 400 * DAY), all: premium(PRODUCTS.lifetime) },
+    });
+    expect(decideAccess(info, NOW)).toEqual({ entitled: true, reason: 'entitlement' });
+    expect(passEnd(info)).toBeNull();
+  });
+
+  test('the comeback lifetime grants exactly the same access', () => {
+    const info = customer({
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetimeOffer)],
+      entitlements: { active: premium(PRODUCTS.lifetimeOffer), all: premium(PRODUCTS.lifetimeOffer) },
+    });
+    expect(decideAccess(info, NOW).entitled).toBe(true);
+  });
+
+  test('is nothing once the entitlement is gone, as after a refund', () => {
+    const info = customer({
+      allPurchasedProductIdentifiers: [PRODUCTS.lifetime],
+      nonSubscriptionTransactions: [bought(PRODUCTS.lifetime)],
+      entitlements: { active: {}, all: premium(PRODUCTS.lifetime) },
+    });
+    expect(decideAccess(info, NOW)).toEqual({ entitled: false, reason: 'nothing' });
+    expect(hadAccess(info)).toBe(true);
   });
 });
 
@@ -276,7 +315,7 @@ describe('hadAccess', () => {
   });
 
   test('is true for a subscription that has ended', () => {
-    const info = customer({ entitlements: { active: {}, all: premium(PRODUCTS.weekly) } });
+    const info = customer({ entitlements: { active: {}, all: premium(FIRST_PRODUCTS.weekly) } });
     expect(hadAccess(info)).toBe(true);
     expect(decideAccess(info, NOW).entitled).toBe(false);
   });

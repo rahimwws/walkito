@@ -168,7 +168,7 @@ export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowPro
   let key: string;
   if (screen.at === 'results' && outcome != null) {
     key = 'results';
-    content = <TestDayResults outcome={outcome} side={side} onDone={close} />;
+    content = <TestDayResults outcome={outcome} side={side} active={!leaving} onDone={close} />;
   } else if (screen.at === 'test') {
     const { station } = screen;
     const { kind, leg } = station;
@@ -195,6 +195,7 @@ export function TestDayFlow({ onClose, onSaved, review = false }: TestDayFlowPro
     key = 'intro';
     content = (
       <TestDayIntro
+        active={!leaving}
         onStart={() => {
           setAutoStart(false);
           setScreen({ at: 'test', station: STATIONS[0] });

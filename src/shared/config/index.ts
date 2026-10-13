@@ -28,3 +28,12 @@ export {
   type ClipEntry,
 } from './clip-manifest';
 export { VOICE, VOICE_TOTAL_BYTES, voiceEntry, type VoiceEntry } from './voice-manifest';
+export {
+  DEPTH,
+  RAISED_BORDER,
+  filled,
+  raised,
+  type DepthSize,
+  type FilledFace,
+  type RaisedColors,
+} from './raised';

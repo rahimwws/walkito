@@ -59,9 +59,13 @@ export const OFFER_EN = {
   'offer.annualNoteSave': '{perWeek} a week · Save {percent}% vs weekly',
   'offer.weeklyTitle': 'Weekly',
   'offer.weeklyPrice': '{price} per week',
+  /** The plans the standard offering sells beside the year, on the expiry screen. */
+  'offer.monthlyPrice': '{price} per month',
+  'offer.lifetimePrice': '{price} one time',
   'offer.weeklyNote': 'Billed weekly · Cancel anytime',
   /** On the annual row, only while it is cheaper over a year than weekly. */
   'offer.badgeBest': 'Best value',
+  'offer.badgeRecommended': 'Recommended',
   /** On the discounted annual row: the invite or comeback price against the
    * standard annual price, both from the store. */
   'offer.badgeOff': '{percent}% off',
@@ -74,15 +78,17 @@ export const OFFER_EN = {
   /** One line directly above the button, for the plan that is selected. */
   'offer.ctaAnnual': '{price} per year, renews automatically. Cancel anytime.',
   'offer.ctaWeekly': '{price} per week, renews automatically. Cancel anytime.',
-  'offer.termsIncluded':
-    'Walkito Premium gives you full access: your adaptive plan, every session and routine, retests and progress tracking.',
+  'offer.ctaMonthly': '{price} per month, renews automatically. Cancel anytime.',
+  /** A one-time purchase: one payment, and nothing renews. */
+  'offer.ctaLifetime': '{price} once. No subscription, nothing renews.',
   'offer.termsAnnual': 'Annual subscription: {price} per year.',
   'offer.termsWeekly': 'Weekly subscription: {price} per week.',
-  'offer.termsRenewal':
-    'Payment is charged to your Apple Account at confirmation of purchase. Your subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period, and renewal is charged within the 24 hours before it ends. Manage or cancel in Settings → Apple Account → Subscriptions.',
+  'offer.termsMonthly': 'Monthly subscription: {price} per month.',
+  'offer.termsLifetime':
+    'Lifetime access: one payment of {price}, charged at confirmation of purchase. Nothing renews.',
+  'offer.termsRenewal': 'Renews automatically. Cancel anytime in Settings.',
   /** The same disclosure for Google Play, which bills and cancels elsewhere. */
-  'offer.termsRenewalAndroid':
-    'Payment is charged to your Google Play account at confirmation of purchase. Your subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period. Manage or cancel in Google Play → Payments & subscriptions → Subscriptions.',
+  'offer.termsRenewalAndroid': 'Renews automatically. Cancel anytime in Google Play.',
   'offer.linkTerms': 'Terms of use',
   'offer.linkPrivacy': 'Privacy policy',
   'offer.restore': 'Restore purchases',
@@ -162,6 +168,72 @@ export const OFFER_EN = {
   'offer.chipTests': 'A test every two weeks',
   'offer.chipRoutines': 'Flare-up and run routines',
   'offer.chipReminders': 'Reminders',
+
+  // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
+  // The third step (`plans-step.tsx`), after BitePal's paywall. Every amount
+  // is the store's own string: `{price}` the billed amount, `{perMonth}` the
+  // store's own division of a year, `{intro}` an introductory offer's price,
+  // `{period}` a free trial's length (`offer.plans.days` and the rest). Trial
+  // wording is only ever shown on a plan the store says carries a free trial.
+  /** The product, left as-is in every language: the brand and its tier. */
+  'offer.plans.brand': 'Walkito',
+  'offer.plans.badge': 'Plus',
+  'offer.plans.name': 'Walkito Plus',
+  /** The headline. The word in square brackets is drawn in the Plus colour;
+   * the brackets go round whichever word carries the sentence. Said of the
+   * training, never a figure or a multiple. */
+  'offer.plans.headline': 'Your feet, [stronger] every day',
+  /** A comeback view, only once the store’s prices make it cheaper. */
+  'offer.plans.headlineComeback': 'Walkito Plus, now for [less]',
+  'offer.plans.mostPopular': 'Most popular',
+  'offer.plans.yearly': 'Yearly',
+  'offer.plans.monthly': 'Monthly',
+  'offer.plans.lifetime': 'Lifetime',
+  /** Under the price on a card: what the amount is for. */
+  'offer.plans.perYear': 'per year',
+  'offer.plans.perMonth': 'per month',
+  'offer.plans.perWeek': 'per week',
+  'offer.plans.once': 'one time',
+  'offer.plans.firstYear': 'first year',
+  /** Under a plan’s title. */
+  'offer.plans.yearlyNote': '{perMonth} per month, billed yearly',
+  'offer.plans.monthlyNote': 'Billed monthly',
+  'offer.plans.weeklyNote': 'Billed weekly',
+  'offer.plans.lifetimeNote': 'One-time payment, yours for good',
+  'offer.plans.upfrontNote': 'Then {price} per year',
+  'offer.plans.trialNote': '{period} free, then {price} per year',
+  /** A free trial’s length, as the store states it. */
+  'offer.plans.days': { one: '{count} day', other: '{count} days' },
+  'offer.plans.weeks': { one: '{count} week', other: '{count} weeks' },
+  'offer.plans.months': { one: '{count} month', other: '{count} months' },
+  'offer.plans.years': { one: '{count} year', other: '{count} years' },
+  'offer.plans.showAll': 'Show all plans',
+  /** "What you get": what Walkito Plus includes. Only what the app does, and
+   * never a "free" column: there is no way into the app without Plus. */
+  'offer.plans.tableTitle': 'What you get',
+  'offer.plans.rowPlan': 'A daily plan that adapts to you',
+  'offer.plans.rowSessions': 'Every guided session, with video',
+  'offer.plans.rowTests': 'A progress test every two weeks',
+  'offer.plans.rowStreaks': 'Streaks and stickers',
+  'offer.plans.rowMorning': 'The morning stretch',
+  /** What a screen reader says for one row of the table. */
+  'offer.plans.rowA11y': '{feature}. Included with Plus.',
+  /** The button, and the line under it: what is charged, when it renews,
+   * where to cancel. The two sentences are separate keys, side by side. */
+  'offer.plans.ctaLifetime': 'Get Walkito Plus',
+  'offer.plans.ctaTrial': 'Start my free trial',
+  'offer.plans.renewsYearly': 'Renews at {price} per year.',
+  'offer.plans.renewsMonthly': 'Renews at {price} per month.',
+  'offer.plans.renewsWeekly': 'Renews at {price} per week.',
+  'offer.plans.renewsUpfront': '{intro} for the first year, then {price} per year.',
+  'offer.plans.renewsTrial': 'No payment now. {period} free, then {price} per year.',
+  'offer.plans.cancel': 'Cancel anytime in Settings.',
+  'offer.plans.cancelAndroid': 'Cancel anytime in Google Play.',
+  'offer.plans.oneTime': 'One payment, no subscription.',
+  /** At the very bottom, three seconds after "Show all plans". It leads to
+   * the one-time trial offer, never into the app: say nothing that implies
+   * the app can be used without Plus. */
+  'offer.plans.skip': 'Not now',
 
   // ── Session player: the locked state ─────────────────────────────────────
   // Only ever seen by somebody whose subscription ended and who answered the

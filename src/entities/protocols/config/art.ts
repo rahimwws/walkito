@@ -1,10 +1,6 @@
-import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
-import MoonIcon from '@hugeicons/core-free-icons/Moon02Icon';
-import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
-import SunriseIcon from '@hugeicons/core-free-icons/Sun03Icon';
-import WorkoutStretchingIcon from '@hugeicons/core-free-icons/WorkoutStretchingIcon';
-import type { IconSvgElement } from '@hugeicons/react-native';
 import type { ImageSourcePropType } from 'react-native';
+
+import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import type { ProtocolId } from '../model/protocols';
 
@@ -42,13 +38,18 @@ export const PROTOCOL_ART: Readonly<Record<ProtocolId, ImageSourcePropType>> = {
 };
 
 /**
- * Each routine's glyph. Here with the art, rather than in the Library page, so
- * the small cards on Today wear the same picture and the same icon.
+ * Each routine's emoji, a Fluent one (`@/shared/ui/fluent-icon`) beside its
+ * title. Here with the art, rather than in the Library page, so the small
+ * cards on Today wear the same picture and the same emoji.
+ *
+ * What the moment is, never how bad it is: the herb for easing a flare, the
+ * spark before a run, the shoe after it, the briefcase at work and the sunrise
+ * before the first step.
  */
-export const PROTOCOL_ICONS: Readonly<Record<ProtocolId, IconSvgElement>> = {
-  flare: WorkoutStretchingIcon,
-  pre_run: FlashIcon,
-  post_run: RunningShoesIcon,
-  at_work: SunriseIcon,
-  morning: MoonIcon,
+export const PROTOCOL_ICONS: Readonly<Record<ProtocolId, FluentName>> = {
+  flare: 'relief',
+  pre_run: 'bolt',
+  post_run: 'shoe',
+  at_work: 'briefcase',
+  morning: 'morning',
 };

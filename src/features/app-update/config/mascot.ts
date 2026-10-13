@@ -12,14 +12,16 @@
 import { SPLASH_MASCOT_SIZE } from '@/shared/ui/splash';
 
 /**
- * The welcome screen's character. Required directly rather than through
- * `pages/onboarding` (a feature may not import a page); Metro resolves both
- * requires to the same module, so it is in the bundle once.
+ * The character the welcome screen used to play, now drawn by the traced
+ * rigs (`shared/ui/mascot`) everywhere else; this sheet is the last place
+ * the Lottie is shown.
  *
- * A raster sequence in a JSON wrapper — 121 WebP frames at 720×720, 24fps. See
- * `pages/onboarding/config/mascot.ts` for what that costs to mount, and why it
- * is not a `.lottie`: the sheet rises three frames after layout, which only
- * works because a JSON source is decoded by then.
+ * A raster sequence in a JSON wrapper — 121 WebP frames at 720×720, 24fps:
+ * about 3.7 MB of the bundle, and 121 bitmaps to decode when it mounts. It
+ * stays JSON rather than a `.lottie` on purpose: lottie-ios reads a `.lottie`
+ * off the main thread and decodes it 50-250 ms after mount, while a JSON
+ * source is decoded as the view mounts, and the sheet rises three frames
+ * after layout, which only works because the frames are there by then.
  */
 export const MASCOT_LOTTIE = require('@assets/lottie/mascot.json');
 

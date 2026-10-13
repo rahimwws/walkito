@@ -51,6 +51,22 @@ export const ONBOARDING_PT = {
   'onboarding.email.password': 'Senha',
   'onboarding.email.submit': 'Entrar',
   'onboarding.email.submitting': 'Entrando…',
+  'onboarding.email.createTitle': 'Salve seu plano',
+  'onboarding.email.createBlurb': 'Vamos te mandar um código por e-mail. Seu plano fica salvo neste endereço.',
+  'onboarding.email.signInBlurb': 'Vamos te mandar um código por e-mail para entrar.',
+  'onboarding.email.sendCode': 'Enviar código',
+  'onboarding.email.sending': 'Enviando…',
+  'onboarding.email.codeTitle': 'Confira seu e-mail',
+  'onboarding.email.codeBlurb': 'Digite o código que enviamos para {email}.',
+  'onboarding.email.code': 'Código',
+  'onboarding.email.verify': 'Confirmar',
+  'onboarding.email.verifying': 'Verificando…',
+  'onboarding.email.resend': 'Enviar um novo código',
+  'onboarding.email.resendIn': 'Novo código em {seconds} s',
+  'onboarding.email.changeAddress': 'Usar outro e-mail',
+  'onboarding.email.existing': 'Este e-mail já tem uma conta. Com o código você entra nela.',
+  'onboarding.email.usePassword': 'Usar senha',
+  'onboarding.email.useCode': 'Me mandar um código',
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': 'Como devemos\nchamar você?',
@@ -61,8 +77,11 @@ export const ONBOARDING_PT = {
   'onboarding.passport.title': 'Passaporte do pé',
   'onboarding.passport.owner': 'Passaporte do pé de {name}',
   'onboarding.passport.empty': 'Suas respostas aparecem aqui',
-  'onboarding.passport.issued': 'Emitido em {date}',
   'onboarding.passport.edit': 'Algo para corrigir? Toque para editar.',
+  // The first stamp, on the halfway screen. The edition line is set in small
+  // capitals by the screen; written here in sentence case.
+  'onboarding.passport.stampEdition': 'Passaporte do pé · primeira edição',
+  'onboarding.passport.firstStamp': 'Seu primeiro selo',
   'onboarding.passport.heading': 'Seu passaporte do pé, {name}',
   // Who they are, in the passport's words: the role question's own
   // answers ("Both") mean nothing out of it.
@@ -133,26 +152,21 @@ export const ONBOARDING_PT = {
   'onboarding.goal.allday': 'Aguentar o dia todo de pé',
   'onboarding.goal.comeback': 'Voltar depois de uma lesão',
   'onboarding.goal.steady': 'Andar com confiança',
-  // Days and minutes, one screen: a heading over two short lists.
-  'onboarding.schedule.title': 'Quanto tempo você tem, {name}?',
-  'onboarding.schedule.days': 'Dias por semana',
-  'onboarding.schedule.minutes': 'Minutos por sessão',
-  'onboarding.schedule.kit': 'O que você tem em casa?',
+  // Days, minutes and what is at home: a screen each, the cards under a
+  // drawing of the answer. The kit's question is `onboarding.equipment.title`.
+  'onboarding.days.title': 'Quantos dias por semana?',
+  'onboarding.minutes.title': 'Quanto tempo por sessão?',
   // Under the kit: the exercises it brings into the plan, as they are picked.
   'onboarding.schedule.adds': 'Entra no seu plano',
+  // The badge on the recommended days and minutes cards.
+  'onboarding.schedule.recommended': 'Recomendado',
   'onboarding.days.days3': '3 dias',
-  'onboarding.days.days3Caption': 'Um começo tranquilo',
   'onboarding.days.days5': '5 dias',
-  'onboarding.days.days5Caption': 'Recomendado',
   'onboarding.days.days7': 'Todo dia',
-  'onboarding.days.days7Caption': 'Curto e diário',
   'onboarding.minutes.blurb': 'Mude quando quiser - dias corridos também contam.',
   'onboarding.minutes.min3': '3 minutos',
-  'onboarding.minutes.min3Caption': 'Até nos dias corridos',
   'onboarding.minutes.min5': '5 minutos',
-  'onboarding.minutes.min5Caption': 'Recomendado',
   'onboarding.minutes.min10': '10 minutos',
-  'onboarding.minutes.min10Caption': 'Para avançar mais rápido',
   'onboarding.equipment.title': 'O que você tem em casa?',
   'onboarding.equipment.blurb': 'Marque tudo o que você tem.',
   'onboarding.equipment.step': 'Um degrau ou escada',
@@ -296,10 +310,6 @@ export const ONBOARDING_PT = {
   'onboarding.notify.blurb': 'Para o seu plano avisar quando precisar de você.',
   'onboarding.notify.askNamed': 'Conte com a gente, {name}',
   'onboarding.notify.ask': 'Conte com a gente',
-  'onboarding.notify.askBlurb': 'Só nos dias em que seu plano tem sessão.',
-  'onboarding.notify.promise1': 'Um lembrete nos dias em que seu plano tem sessão',
-  'onboarding.notify.promise2': 'Um aviso quando o plano mudar o que você vai fazer',
-  'onboarding.notify.promise3': 'E de vez em quando um desconto - nada mais.',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'agora',
   'onboarding.notify.bannerBody':

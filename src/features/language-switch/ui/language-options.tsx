@@ -15,6 +15,8 @@ import {
 } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
+import { LanguageFlag } from './language-flag';
+
 /**
  * The list itself — "System" and then the three languages, with a check on the
  * chosen one.
@@ -78,6 +80,8 @@ export function LanguageOptions() {
               },
               pressed && { opacity: 0.6 },
             ]}>
+            {/* The System row shows the flag of what following the device gives. */}
+            <LanguageFlag language={system ? device : option} width={27} />
             <View style={styles.rowText}>
               <Text style={[styles.rowLabel, { color: colors.foreground }]}>{label}</Text>
               {hint != null && (

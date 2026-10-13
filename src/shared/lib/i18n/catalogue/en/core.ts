@@ -207,18 +207,22 @@ export const CORE_EN = {
   // that says what to do next. `auth.invalidCredentials` deliberately does not
   // say which half was wrong — that would tell anyone trying addresses which
   // ones have accounts.
-  'auth.noServer': 'This build has no account server. Use Continue with Apple.',
+  'auth.noServer': 'This build has no account server.',
   'auth.missingFields': 'Enter both an email and a password.',
   'auth.invalidCredentials': 'That email and password don’t match.',
   'auth.notConfirmed':
     'That account hasn’t been confirmed yet. Confirm the email address, then try again.',
   'auth.banned': 'That account is disabled.',
-  'auth.providerDisabled': 'Email sign-in is switched off for this app. Use Continue with Apple.',
+  'auth.providerDisabled': 'Email sign-in is switched off for this app.',
   'auth.rateLimited': 'Too many attempts. Wait a minute and try again.',
   'auth.badEmail': 'That doesn’t look like an email address.',
   'auth.noAccount': 'No account came back.',
   'auth.generic': 'That didn’t go through.',
   'auth.unreachable': 'The server could not be reached.',
+  'auth.badCode': 'That code didn’t work. Check it, or send a new one.',
+  'auth.codeRateLimited': 'A code was just sent. Wait a minute before asking for another.',
+  'auth.emailUndeliverable': 'We couldn’t send the email right now. Try again in a little while.',
+  'auth.noAccountForEmail': 'No account uses this email.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   // Said once, on the day the twelve weeks end. The five-year figure travels

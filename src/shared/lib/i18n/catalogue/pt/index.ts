@@ -15,6 +15,11 @@ import { PLAYER_PT } from './player';
 import { TESTDAY_PT } from './testday';
 import { WIDGET_PT } from './widget';
 import { UPDATE_PT } from './update';
+import { DONE_PT } from './done';
+import { STREAKS_PT } from './streaks';
+import { STICKERS_PT } from './stickers';
+import { RECAP_PT } from './recap';
+import { HOME_OFFER_PT } from './home-offer';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -40,4 +45,9 @@ export const pt: CatalogueFor<'pt'> = {
   ...PLAYER_PT,
   ...TESTDAY_PT,
   ...UPDATE_PT,
+  ...DONE_PT,
+  ...STREAKS_PT,
+  ...STICKERS_PT,
+  ...RECAP_PT,
+  ...HOME_OFFER_PT,
 };

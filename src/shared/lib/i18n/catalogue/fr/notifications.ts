@@ -121,8 +121,8 @@ export const NOTIFICATIONS_FR = {
   'notifications.winbackDay30': 'Toujours là si le pied se remet à parler.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, avant de partir - {percent} % de réduction',
-  'notifications.offerWait': 'Avant de partir - {percent} % de réduction',
+  'notifications.offerWaitNamed': '{name}, avant de partir - {percent} % de réduction la première année',
+  'notifications.offerWait': 'Avant de partir - {percent} % de réduction la première année',
   'notifications.offerWaitBody': 'L’abonnement annuel t’attend à prix réduit. Touche pour le voir.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

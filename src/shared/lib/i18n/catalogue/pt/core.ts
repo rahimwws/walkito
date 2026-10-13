@@ -150,19 +150,22 @@ export const CORE_PT = {
   'tabs.progress': 'Progresso',
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Esta versão não tem servidor de contas. Use Continuar com a Apple.',
+  'auth.noServer': 'Esta versão não tem servidor de contas.',
   'auth.missingFields': 'Digite o e-mail e a senha.',
   'auth.invalidCredentials': 'O e-mail e a senha não conferem.',
   'auth.notConfirmed':
     'Essa conta ainda não foi confirmada. Confirme o endereço de e-mail e tente de novo.',
   'auth.banned': 'Essa conta está desativada.',
-  'auth.providerDisabled':
-    'O login por e-mail está desativado neste app. Use Continuar com a Apple.',
+  'auth.providerDisabled': 'O login por e-mail está desativado neste app.',
   'auth.rateLimited': 'Tentativas demais. Espere um minuto e tente de novo.',
   'auth.badEmail': 'Isso não parece um endereço de e-mail.',
   'auth.noAccount': 'Nenhuma conta foi retornada.',
   'auth.generic': 'Não deu certo.',
   'auth.unreachable': 'Não foi possível conectar ao servidor.',
+  'auth.badCode': 'Esse código não funcionou. Confira ou peça um novo.',
+  'auth.codeRateLimited': 'Acabamos de enviar um código. Espere um minuto antes de pedir outro.',
+  'auth.emailUndeliverable': 'Não conseguimos enviar o e-mail agora. Tente de novo daqui a pouco.',
+  'auth.noAccountForEmail': 'Nenhuma conta usa este e-mail.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, você concluiu.',

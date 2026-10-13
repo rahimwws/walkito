@@ -1,35 +1,49 @@
-import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
 import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
-import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
-import FeatherIcon from '@hugeicons/core-free-icons/FeatherIcon';
-import Target02Icon from '@hugeicons/core-free-icons/Target02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useMemo, useState } from 'react';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import {
   IN_SESSION_STOP_PAIN,
+  attended,
+  currentDay,
   noteInSessionPain,
   noteSessionFeedback,
   sessions,
   setLastSessionFeedback,
   stepBackAfterSession,
+  useStreak,
 } from '@/entities/program';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
+import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
+import { DoneMascot, DoneTiles, StreakChip } from './session-done-hero';
 import { SessionPainSheet } from './session-pain-sheet';
 
 export type SessionDoneSheetProps = {
   visible: boolean;
-  /** Days in a row, including today. */
-  streak: number;
   /** How many moves were just completed. */
   moves: number;
+  /** The session's length at the plan's dose, in whole minutes. */
+  minutes: number;
+  /**
+   * Finishing this run counts today: the host files it as a session or a
+   * Library routine when the sheet closes. Off for a run nothing is recorded
+   * for (the pain check's relief moves), whose sheet must not add today to
+   * the run on its own say-so. Default on.
+   */
+  counts?: boolean;
+  /**
+   * The development preview (`SessionDonePreview`): the sheet as it is, with
+   * the real streak, but every answer goes nowhere. A preview that filed a
+   * feedback note or stepped the plan back would change the next real session.
+   */
+  preview?: boolean;
   /** Stopped on a pain report rather than run to the end. */
   early?: boolean;
   /** Ask "Could you have done 2 more good reps?". See `SessionViewProps.feedback`. */
@@ -48,15 +62,17 @@ type Feedback = 'easy' | 'ok' | 'hard';
 const FEELS: readonly {
   feel: Feel;
   label: Key;
-  icon: typeof FeatherIcon;
+  /** The answer's Fluent emoji, as the onboarding answers have: it keeps its
+   * colours on the picked pill, which says the pick by its fill. */
+  emoji: FluentName;
   /** What the plan stores. "It hurt" is a hard session as far as the dose is
    * concerned; the pain score it goes on to ask for is kept on its own. */
   feedback: Feedback;
 }[] = [
-  { feel: 'easy', label: 'player.feedback.easy', icon: FeatherIcon, feedback: 'easy' },
-  { feel: 'right', label: 'player.feedback.right', icon: Target02Icon, feedback: 'ok' },
-  { feel: 'hard', label: 'player.feedback.hard', icon: Dumbbell01Icon, feedback: 'hard' },
-  { feel: 'hurt', label: 'player.feedback.hurt', icon: BandageIcon, feedback: 'hard' },
+  { feel: 'easy', label: 'player.feedback.easy', emoji: 'feather', feedback: 'easy' },
+  { feel: 'right', label: 'player.feedback.right', emoji: 'target', feedback: 'ok' },
+  { feel: 'hard', label: 'player.feedback.hard', emoji: 'strength', feedback: 'hard' },
+  { feel: 'hurt', label: 'player.feedback.hurt', emoji: 'bandage', feedback: 'hard' },
 ];
 
 /**
@@ -87,6 +103,26 @@ function remember(feedback: Feedback, startedAt: number): void {
 }
 
 /**
+ * The run and the days of care as they will stand once this session is filed.
+ *
+ * The host records the session when the sheet closes, so while it is up the
+ * streak still reads as if today were empty: a first session would say "0 days
+ * in a row". Today is added here, once, unless something already counted it
+ * (a morning check-in, a session earlier today, a rest day) or this run will
+ * not be filed at all.
+ */
+function withToday(current: number, total: number, counts: boolean): { run: number; care: number } {
+  if (!counts || attended(currentDay())) return { run: current, care: total };
+  return { run: current + 1, care: total + 1 };
+}
+
+/** The mascot on the card's edge, by the room the screen has: the sheet has
+ * to fit the feedback question under him on the smallest phone. */
+function mascotSize(windowHeight: number): number {
+  return Math.round(Math.min(156, Math.max(104, windowHeight * 0.17)));
+}
+
+/**
  * The end of a session.
  *
  * The one place in the app allowed to celebrate finishing work, and it is
@@ -96,12 +132,18 @@ function remember(feedback: Feedback, startedAt: number): void {
  * somebody's pain, and there is no pain here to cheer at.
  *
  * The sheet itself is `CelebrationSheet`, shared with the paywall. What belongs
- * here is the copy, and the one question the plan needs answered.
+ * here is the hero and the one question the plan needs answered. The hero is
+ * the mascot jumping on the card's edge, "Nice work.", the run in an orange
+ * chip, and three tiles: the minutes, the moves, and every day of care so far.
+ * The tiles say what the old blurb said ("All 5 moves done"), so the blurb is
+ * gone from this state rather than said twice.
  */
 export function SessionDoneSheet({
   visible,
-  streak,
   moves,
+  minutes,
+  counts = true,
+  preview = false,
   early = false,
   feedback = false,
   startedAt,
@@ -109,6 +151,16 @@ export function SessionDoneSheet({
 }: SessionDoneSheetProps) {
   const t = useT();
   const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const { height } = useWindowDimensions();
+  const streak = useStreak();
+  // Keyed on the streak, which is a new object only when a log is written:
+  // this sheet sits mounted under a player that re-renders every second, and
+  // asking whether today counts reads the plan's store.
+  const { run, care } = useMemo(
+    () => withToday(streak.current, streak.total, counts),
+    [streak, counts],
+  );
   const [askingPain, setAskingPain] = useState(false);
 
   // The pain question goes down with the sheet: closing on Done while it was
@@ -119,6 +171,7 @@ export function SessionDoneSheet({
 
   const reportPain = (score: number) => {
     setAskingPain(false);
+    if (preview) return;
     // Onto the record being written, where the plan reads it; analytics never
     // does. Only onto one not yet written: held for a session already on file
     // it would be picked up by whatever is recorded next.
@@ -132,19 +185,26 @@ export function SessionDoneSheet({
     <>
       <CelebrationSheet
         visible={visible}
-        // Stopped on pain: no "nice work", and nothing about moves done. What
-        // they need to hear is that it counts and what happens tomorrow.
+        // Stopped on pain: no "nice work", no chip, no tiles of what was done.
+        // What they need to hear is that it counts and what happens tomorrow,
+        // from a mascot who nods rather than jumps, with no confetti and no
+        // sound.
         title={early ? t('widgets.sessionStoppedTitle') : t('widgets.sessionDoneTitle')}
-        // Both lines were assembled here from an English singular and an English
-        // plural. They are plural entries in the catalogue now, which is what
-        // gets "2 дня" and "5 дней" right — the form Russian needs at 2, 3 and 4
-        // has no English counterpart to have been built from.
-        headline={early ? undefined : t('widgets.sessionDoneStreak', { count: streak })}
-        headlineColor={accents[scheme].orange.fill}
-        blurb={early ? t('widgets.sessionStoppedBlurb') : t('widgets.sessionDoneBlurb', { count: moves })}
+        blurb={early ? t('widgets.sessionStoppedBlurb') : undefined}
         confetti={!early}
-        emblem={!early}
+        mascot={
+          <DoneMascot calm={early} size={mascotSize(height)} surface={colors.card} paused={askingPain} />
+        }
         onClose={onClose}>
+        {!early && (
+          <>
+            {/* A plural entry in the catalogue, which is what gets "2 дня" and
+                "5 дней" right. Not drawn for a run that is still nothing: a
+                relief session on an empty day files nothing to count. */}
+            {run > 0 && <StreakChip count={run} />}
+            <DoneTiles minutes={minutes} moves={moves} care={care} />
+          </>
+        )}
         {/* Skipped after a pain stop — that session already said how it went. */}
         {feedback && !early && (
           // Starts unanswered on every opening without being told to: the
@@ -154,7 +214,7 @@ export function SessionDoneSheet({
             onAnswer={(feel) => {
               const entry = FEELS.find((candidate) => candidate.feel === feel);
               if (entry == null) return;
-              remember(entry.feedback, startedAt);
+              if (!preview) remember(entry.feedback, startedAt);
               if (feel === 'hurt') setAskingPain(true);
             }}
           />
@@ -245,7 +305,7 @@ function FeelCard({ onAnswer }: { onAnswer: (feel: Feel) => void }) {
                     { backgroundColor: selected ? colors.foreground : colors.card },
                     pressed && { opacity: 0.6 },
                   ]}>
-                  <HugeiconsIcon icon={entry.icon} size={18} color={ink} strokeWidth={1.8} />
+                  <FluentIcon name={entry.emoji} size={22} />
                   <Text style={[styles.pillText, { color: ink }]} numberOfLines={1} adjustsFontSizeToFit>
                     {t(entry.label)}
                   </Text>

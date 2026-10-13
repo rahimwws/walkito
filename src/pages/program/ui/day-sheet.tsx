@@ -26,6 +26,7 @@ import { useLanguage, useT, type Key, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
+import { RestMascot } from './plan-mascot';
 import { RestButton } from './rest-button';
 
 import { artFor } from '../config/kind-art';
@@ -90,6 +91,12 @@ export type DaySheetProps = {
    * place of "Day 15" over the block, and the preview note for a day ahead.
    */
   week?: { moves: number; stat: string; statLabel: string; note?: string };
+  /**
+   * The day is a planned rest. Asked of the weekly plan's own type, because
+   * `day.kind` cannot say it: a rest day, a test day and a relief day all
+   * arrive here as `recovery`.
+   */
+  rest?: boolean;
 };
 
 /**
@@ -100,11 +107,13 @@ export type DaySheetProps = {
  * closes it.
  *
  * The figure is the day's own kind, which is what makes the sheet feel like it
- * belongs to the card that opened it rather than to the list in general. A rest
- * day has no figure and the sheet closes up around the gap — see `kind-art.ts`
- * for why recovery is deliberately unillustrated.
+ * belongs to the card that opened it rather than to the list in general. A
+ * planned rest gets the mascot asleep in that place, which says what the day is
+ * for without turning it into work (see `kind-art.ts` for why it never gets a
+ * pose mid-exercise). A test or a relief day has no figure and the sheet closes
+ * up around the gap.
  */
-export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DaySheetProps) {
+export function DaySheet({ day, status, onClose, onStart, unlockAt, week, rest = false }: DaySheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -124,14 +133,14 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DayS
    */
   const [mounted, setMounted] = useState(false);
   /** Held past the close, so the card does not blank out mid-exit. */
-  const [shown, setShown] = useState<{ day: ProgramDay; status: DayStatus } | null>(null);
+  const [shown, setShown] = useState<{ day: ProgramDay; status: DayStatus; rest: boolean } | null>(null);
   /** 0 away, 1 up. Named rather than `t`, which is the translator everywhere
    * else in this codebase. */
   const phase = useSharedValue(0);
 
   useEffect(() => {
     if (day != null) {
-      setShown({ day, status });
+      setShown({ day, status, rest });
       setMounted(true);
       // A frame late on purpose: the modal has to exist before the transition
       // starts, or the first frames play against nothing.
@@ -153,7 +162,7 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DayS
       },
     );
     return undefined;
-  }, [day, status, phase]);
+  }, [day, status, rest, phase]);
 
   const backdrop = useAnimatedStyle(() => ({ opacity: phase.value }));
   const dock = useAnimatedStyle(() => ({
@@ -165,6 +174,8 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DayS
 
   const art = artFor(shown.day.kind);
   const retest = shown.day.checkpoint;
+  /** The sleeper, for a planned rest and nothing else. */
+  const sleeping = shown.rest && !retest && art == null;
   const moves = retest ? RETEST_TESTS : week != null ? week.moves : movePlanFor(shown.day).length;
   const minutes = retest ? RETEST_MINUTES : shown.day.minutes;
   /** Only today can be begun. Every other card in the list carries a padlock,
@@ -195,14 +206,26 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DayS
           {art != null && (
             <Image source={art} resizeMode="contain" accessible={false} style={styles.art} />
           )}
+          {/* Mounted with the sheet and gone with it: one sleepy nod as it
+              lands, and still while it leaves. */}
+          {sleeping && (
+            <View
+              pointerEvents="none"
+              accessibilityElementsHidden
+              importantForAccessibility="no-hide-descendants"
+              style={styles.art}>
+              <RestMascot size={ART} surface={colors.card} covered={day == null} />
+            </View>
+          )}
 
           <View
             style={[
               styles.card,
               { backgroundColor: colors.card },
-              // No figure, no overhang to clear. A rest day's sheet is simply
-              // shorter rather than carrying a hole where a mascot would be.
-              art == null && styles.cardBare,
+              // No figure, no overhang to clear. A test or relief day's sheet
+              // is simply shorter rather than carrying a hole where a mascot
+              // would be.
+              art == null && !sleeping && styles.cardBare,
             ]}>
             <Text style={[styles.date, { color: meter.caption }]}>
               {shortDate(dateFor(shown.day.index, Date.now()), language)}

@@ -1,6 +1,8 @@
+import FireIcon from '@hugeicons/core-free-icons/FireIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import { BlurView } from 'expo-blur';
 import { useEffect, useState } from 'react';
-import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Modal, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -11,21 +13,34 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { fonts, meterColors, palette } from '@/shared/config';
+import { accents, fonts, meterColors, palette, raised } from '@/shared/config';
+import { readableOn } from '@/shared/lib/color';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { Mascot, thumbsUpRig } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
-import { StreakWeek } from '@/shared/ui/streak-week';
+import { Raised, faceFor, useRaisedScheme } from '@/shared/ui/raised';
+import { STAT_TILE_STAGGER_MS, StatTile } from '@/shared/ui/stat-tile';
+import { StreakWeekRaised, streakWeekNodeSize } from '@/shared/ui/streak-week';
 
-/** 552 px wide: 3x this sheet's `BADGE`, the largest the emblem is ever drawn
- * (the celebration sheet's is 132 pt). Grow `BADGE` past 184 and the art has
- * to be re-exported bigger, or it goes soft on a 3x screen. */
-const BADGE_ART = require('@assets/achievements/streak-badge.webp');
-
-const BADGE = 184;
 /** The card's corner. Generous, because a sheet this short with a small radius
  * reads as a bar stuck to the bottom of the screen rather than as a card. */
 const RADIUS = 36;
+/** Room between the card and the screen's edges, and inside the card. Small
+ * enough that seven week nodes fit across a 390pt phone at their full size. */
+const DOCK_PAD = 10;
+const CARD_PAD = 16;
+
+/** The thumbs-up beside the number: the sheet's one mascot. */
+const MASCOT = 120;
+
+/**
+ * The streak lengths that get a moment: `STREAK_MILESTONES` in
+ * `entities/program`, which this layer cannot import. Change both together.
+ */
+const MILESTONES = [3, 7, 10, 30, 100] as const;
+const RUNG_LIP = 3;
 
 /**
  * How hard the page behind is blurred.
@@ -45,36 +60,54 @@ const OUT_MS = 220;
  * short enough that it never looks like it is being thrown. */
 const RISE = 44;
 
+/** The mascot boings when tapped; there is nothing else for a tap to do. */
+const noop = () => undefined;
+
 export type StreakSheetProps = {
   visible: boolean;
   onClose: () => void;
   /** Consecutive attended days. */
   current: number;
-  /** Attended days since the plan began. */
+  /** Attended days since the plan began: the "Showed up" tile. */
   total: number;
   /** Sunday-first, seven entries — the shape `StreakWeek` reads. */
   week: readonly boolean[];
+  /**
+   * The best run so far (`Streak.longest`). Without it the sheet leaves the
+   * "Longest streak" tile out rather than guess, and the milestone ladder
+   * counts from `current`.
+   */
+  longest?: number;
+  /**
+   * Sunday-first, seven entries: the days that counted only because the plan
+   * said rest (`DayAttendance.rest`). With it, those days are drawn as rest
+   * and the line about what counts gets the sleeping mascot when one fell this
+   * week. Without it, every counted day is a flame and the line is plain.
+   */
+  rest?: readonly boolean[];
 };
 
 /**
  * What the streak means, opened from the capsule that shows it.
  *
- * A bottom sheet sized to its contents, not a page. The number in the header is
- * a bare figure with no units and no rule attached, and a streak is exactly the
- * kind of number people invent their own rules for — usually harsher ones than
- * the app's. So this exists mostly to say what counts, and an aside that
- * explains something should cost a glance rather than a whole screen.
+ * A bottom sheet sized to its contents, not a page. The run is the big orange
+ * number with the flame and the mascot's thumbs up beside it; under it the
+ * week as raised nodes, three tiles (the run, every day shown up, the best
+ * run), the line that says what counts, and the ladder of milestones. A day
+ * not attended is an empty node like a day still to come, so nothing here
+ * ever counts what was lost.
  *
  * The week is the argument, not the decoration. Reading "you showed up Monday,
- * Tuesday and today" off seven cells is what makes the headline checkable, and
+ * Tuesday and today" off seven nodes is what makes the headline checkable, and
  * a number the user can check is one they will still trust on the morning it
  * says something they did not expect.
  */
-export function StreakSheet({ visible, onClose, current, total, week }: StreakSheetProps) {
+export function StreakSheet({ visible, onClose, current, total, week, longest, rest }: StreakSheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const { width } = useWindowDimensions();
   const t = useT();
 
   /**
@@ -136,6 +169,13 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
 
   if (!mounted) return null;
 
+  // Large text, so 3:1 is the bar: the light scheme's orange needs a nudge
+  // darker to reach it on white, the dark one is already there.
+  const flame = readableOn(accents[scheme].orange.fill, colors.card, 3);
+  const best = Math.max(longest ?? current, current);
+  const nextMilestone = MILESTONES.find((days) => days > best);
+  const nodeSize = streakWeekNodeSize(width - DOCK_PAD * 2 - CARD_PAD * 2);
+
   return (
     <Modal
       // Transparent, so the page stays visible behind the sheet. `pageSheet`
@@ -181,48 +221,171 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
           onPress={onClose}
         />
 
+        {/* The whole height, with the card pushed to its foot: on a short phone
+            the card stops under the status bar and its body scrolls, rather
+            than running off the top. Touches above the card fall through to
+            the backdrop. */}
         <Animated.View
-          style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]}
+          style={[
+            styles.dock,
+            { paddingTop: insets.top + 12, paddingBottom: Math.max(insets.bottom, 16) },
+            dock,
+          ]}
           pointerEvents="box-none">
-          {/* Half over the card and half in the air. The dock reserves the top
-              half as padding and the badge is hung at the dock's own top edge,
-              so its centre lands exactly on the card's, whatever the card grows
-              to underneath. */}
-          <Image
-            source={BADGE_ART}
-            resizeMode="contain"
-            accessible={false}
-            style={styles.badge}
-          />
-
           <View style={[styles.card, { backgroundColor: colors.card }]}>
-            {/* One key, not "{count} Days" plus " Streak". English leads with
-                the number and ends with the noun, Russian closes with "подряд"
-                after both, and Spanish needs "de" between them — no ordering of
-                two English fragments reaches either. */}
-            <Text style={[styles.title, { color: colors.foreground }]}>
-              {t('streak.title', { count: current })}
-            </Text>
+            <ScrollView
+              style={styles.scroll}
+              contentContainerStyle={styles.body}
+              bounces={false}
+              showsVerticalScrollIndicator={false}>
+              <View style={styles.hero}>
+                {/* One element for the figure and its words: read apart, the
+                    number is a bare figure after an unnamed glyph. */}
+                <View
+                  style={styles.count}
+                  accessible
+                  accessibilityRole="header"
+                  accessibilityLabel={t('streakSheet.inARow', { count: current })}>
+                  <View style={styles.number}>
+                    <FluentIcon name="fire" size={48} />
+                    <Text
+                      style={[styles.big, { color: flame }]}
+                      numberOfLines={1}
+                      adjustsFontSizeToFit
+                      maxFontSizeMultiplier={1.2}>
+                      {current}
+                    </Text>
+                  </View>
+                  {/* One key, not "{count} days" plus " in a row": Russian
+                      closes with "подряд" after both, French with
+                      "d'affilée", and no ordering of two English fragments
+                      reaches either. */}
+                  <Text style={[styles.caption, { color: colors.foreground }]} maxFontSizeMultiplier={1.3}>
+                    {t('streakSheet.inARow', { count: current })}
+                  </Text>
+                </View>
+                {/* Thumbs up for any run at all; at zero he only stands there,
+                    since there is nothing yet to be pleased about and nothing
+                    to be sorry for either. Paused while the sheet leaves. */}
+                <Mascot
+                  rig={thumbsUpRig}
+                  size={MASCOT}
+                  state={current > 0 ? 'happy' : 'idle'}
+                  paused={!visible}
+                  surface={colors.card}
+                  onPress={noop}
+                />
+              </View>
 
-            <Text style={[styles.blurb, { color: meter.caption }]}>
-              {/* The rule, stated plainly. It is the thing the number cannot say
-                  on its own, and "a check-in or a session or a rest day" is a
-                  far kinder rule than the one a user assumes. */}
-              {t('streak.rule')} {t('streak.total', { count: total })}
-            </Text>
+              <View style={styles.block}>
+                <StreakWeekRaised done={week} rest={rest} size={nodeSize} />
+              </View>
 
-            <View style={styles.week}>
-              <StreakWeek done={week} />
-            </View>
+              {/* Showing up and runs only: never a pain figure, never a test. */}
+              <View style={[styles.block, styles.tiles]}>
+                <StatTile
+                  label={t('streakSheet.current')}
+                  value={current}
+                  emoji="fire"
+                  accent="orange"
+                  accessibilityLabel={t('streakSheet.currentA11y', { count: current })}
+                />
+                <StatTile
+                  label={t('streakSheet.showedUp')}
+                  value={total}
+                  emoji="seedling"
+                  accent="teal"
+                  delayMs={STAT_TILE_STAGGER_MS}
+                  accessibilityLabel={t('streakSheet.showedUpA11y', { count: total })}
+                />
+                {longest != null && (
+                  <StatTile
+                    label={t('streakSheet.longest')}
+                    value={best}
+                    emoji="trophy"
+                    accent="amber"
+                    delayMs={STAT_TILE_STAGGER_MS * 2}
+                    accessibilityLabel={t('streakSheet.longestA11y', { count: best })}
+                  />
+                )}
+              </View>
 
-            {/* "Got it", not "Claim". The reference hands over a reward; this
-                hands over an explanation, and a button promising something to
-                collect would be writing a cheque the app cannot cash. */}
-            <PrimaryButton label={t('streak.dismiss')} onPress={onClose} />
+              {/* What counts, said calmly. The rule is the thing the number
+                  cannot say on its own, and "a check-in or a session or a rest
+                  day" is a far kinder rule than the one a user assumes. No
+                  figure of its own: the thumbs up above is the sheet's one
+                  mascot, and the moon on the row already marks a rest day. */}
+              <View style={[styles.block, styles.calm, { backgroundColor: colors.background }]}>
+                <View style={styles.calmText}>
+                  <Text style={[styles.calmTitle, { color: colors.foreground }]}>
+                    {t('streakSheet.allCount')}
+                  </Text>
+                  <Text style={[styles.calmRule, { color: meter.caption }]}>{t('streak.rule')}</Text>
+                </View>
+              </View>
+
+              {/* The ladder. Reached rungs stand up in orange and stay reached
+                  whatever the run does next, so it counts from the best run;
+                  the next one is in the brand violet, the rest wait in grey. */}
+              <View style={[styles.block, styles.ladder]}>
+                {MILESTONES.map((days) => {
+                  const reached = days <= best;
+                  return (
+                    <Rung
+                      key={days}
+                      days={days}
+                      tone={reached ? 'orange' : days === nextMilestone ? 'primary' : 'neutral'}
+                      label={
+                        reached
+                          ? t('streakSheet.milestoneReached', { count: days })
+                          : t('streakSheet.milestoneAhead', { count: days })
+                      }
+                    />
+                  );
+                })}
+              </View>
+            </ScrollView>
+
+            {/* "Got it", not "Claim". This hands over an explanation, and a
+                button promising something to collect would be writing a cheque
+                the app cannot cash. The app's own committing button, as it
+                always was here. */}
+            <PrimaryButton label={t('streak.dismiss')} onPress={onClose} style={styles.cta} />
           </View>
         </Animated.View>
       </View>
     </Modal>
+  );
+}
+
+/**
+ * One milestone: a chip standing on its lip with the flame and the day count.
+ * `neutral` is one not reached yet; a tone names a state of the ladder, never
+ * a verdict.
+ */
+function Rung({ days, tone, label }: { days: number; tone: 'orange' | 'primary' | 'neutral'; label: string }) {
+  const scheme = useRaisedScheme();
+  const tokens = raised[scheme];
+  const colours =
+    tone === 'neutral'
+      ? { face: tokens.surface, edge: tokens.edge, lip: tokens.lip, label: meterColors[scheme].label }
+      : { ...faceFor(scheme, tone), edge: undefined };
+  return (
+    <Raised
+      face={colours.face}
+      edge={colours.edge}
+      lip={colours.lip}
+      depth={RUNG_LIP}
+      radius={12}
+      accessibilityRole="text"
+      accessibilityLabel={label}
+      style={styles.rungOuter}
+      contentStyle={styles.rung}>
+      <HugeiconsIcon icon={FireIcon} size={15} color={colours.label} strokeWidth={2.4} />
+      <Text style={[styles.rungLabel, { color: colours.label }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+        {days}
+      </Text>
+    </Raised>
   );
 }
 
@@ -241,47 +404,89 @@ const styles = StyleSheet.create({
   },
   dock: {
     position: 'absolute',
+    top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    paddingHorizontal: 14,
-    // The room the badge needs above the card.
-    paddingTop: BADGE / 2,
-  },
-  badge: {
-    position: 'absolute',
-    // Hung at the dock's top edge: with `paddingTop` above equal to half the
-    // badge, the card's top edge cuts it exactly in half.
-    top: 0,
-    alignSelf: 'center',
-    width: BADGE,
-    height: BADGE,
-    // Over the card, not under it — the whole effect is the badge sitting proud
-    // of the surface.
-    zIndex: 2,
+    justifyContent: 'flex-end',
+    paddingHorizontal: DOCK_PAD,
   },
   card: {
+    flexShrink: 1,
     borderRadius: RADIUS,
     borderCurve: 'continuous',
-    paddingHorizontal: 20,
-    paddingBottom: 18,
-    // Clears the half of the badge that overhangs it.
-    paddingTop: BADGE / 2 + 14,
-    alignItems: 'stretch',
+    paddingTop: 6,
+    paddingBottom: 16,
+    overflow: 'hidden',
   },
-  title: {
-    ...fonts.heavy(28, -0.8),
-    textAlign: 'center',
+  /** Its content's height until the screen runs out, then it scrolls. Full
+   * width of the card, its padding inside: a scroll view clips what is drawn
+   * past it, and the mascot's hop and arms reach past his own square. */
+  scroll: {
+    flexGrow: 0,
+    flexShrink: 1,
   },
-  blurb: {
-    ...fonts.medium(15),
-    lineHeight: 21,
-    textAlign: 'center',
-    marginTop: 6,
-    paddingHorizontal: 4,
+  body: {
+    paddingHorizontal: CARD_PAD,
+    // The height of his hop, so the top of it is not cut off.
+    paddingTop: 16,
+    paddingBottom: 4,
   },
-  week: {
-    marginTop: 20,
-    marginBottom: 20,
+  hero: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+  count: {
+    flex: 1,
+    paddingLeft: 4,
+  },
+  number: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  big: { ...fonts.heavy(68, -2.4), flexShrink: 1 },
+  caption: { ...fonts.heavy(19, -0.4), marginTop: -2 },
+  block: {
+    marginTop: 18,
+  },
+  tiles: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  calm: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    padding: 12,
+    borderRadius: 20,
+    borderCurve: 'continuous',
+  },
+  calmText: {
+    flex: 1,
+    gap: 4,
+  },
+  calmTitle: fonts.semibold(15, -0.1),
+  calmRule: { ...fonts.medium(13), lineHeight: 18 },
+  ladder: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  rungOuter: {
+    alignSelf: 'flex-start',
+  },
+  rung: {
+    height: 30,
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  rungLabel: fonts.heavy(14, 0.1),
+  cta: {
+    marginTop: 16,
+    marginHorizontal: CARD_PAD,
   },
 });

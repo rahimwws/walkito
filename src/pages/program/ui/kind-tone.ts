@@ -1,46 +1,63 @@
-import BalanceScaleIcon from '@hugeicons/core-free-icons/BalanceScaleIcon';
-import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
-import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
-import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
-import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
-import type { IconSvgElement } from '@hugeicons/react-native';
-
-import type { ExerciseCategory, SessionKind } from '@/entities/program';
+import { planMeta, type DayType, type ExerciseCategory, type PlanKind } from '@/entities/program';
 import type { AccentName } from '@/shared/config';
+import type { FluentName } from '@/shared/ui/fluent-icon';
 
 /**
- * A day type's colour, as the plan screen paints it.
+ * How each kind of work looks on the plan screen: its Fluent emoji and its
+ * accent.
  *
- * What survived of the old day card when the plan screen became a schedule:
- * the accent each kind of day wears and the strength a card carries it at.
- * The accent names the kind and never rates it — a rest is amber because it is
- * a rest, not because it counts for less.
+ * The emoji is content, so it is the colourful set (the onboarding's answers
+ * draw from it too); the arrows, the clock and the lock around it stay
+ * Hugeicons, which are chrome. The accent names the kind and never rates it:
+ * a recovery day is amber because it is recovery, not because it counts for
+ * less, and a move keeps its accent whether it is done or not.
  */
+export type Look = { art: FluentName; accent: AccentName };
 
-/** How strongly today's card carries its kind's colour. */
-export const TINT_TODAY = 0.46;
+/** The plan's four kinds of work. `SessionKind` (the old program's day) is the
+ * same four, so a `ProgramDay` reads this table too. */
+export const KIND_LOOK: Readonly<Record<PlanKind, Look>> = {
+  strength: { art: 'strength', accent: 'violet' },
+  mobility: { art: 'stretch', accent: 'teal' },
+  balance: { art: 'balance', accent: 'blue' },
+  recovery: { art: 'relief', accent: 'amber' },
+};
 
-/** A palette accent at a chosen strength. */
-export function tint(hex: string, alpha: number): string {
-  const r = Number.parseInt(hex.slice(1, 3), 16);
-  const g = Number.parseInt(hex.slice(3, 5), 16);
-  const b = Number.parseInt(hex.slice(5, 7), 16);
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+/** A test is measured with a ruler and wears the checkpoint's amber. */
+export const TEST_LOOK: Look = { art: 'test', accent: 'amber' };
+
+/** A planned rest: asleep, and no accent, since there is no work to colour. */
+export const REST_ART: FluentName = 'rest';
+
+/** A day of the weekly plan. Null accent for a rest day. */
+export function dayLook(type: DayType): { art: FluentName; accent: AccentName | null } {
+  if (type === 'test') return TEST_LOOK;
+  if (type === 'rest') return { art: REST_ART, accent: null };
+  return KIND_LOOK[type];
 }
 
-/** The glyphs are the program entity's own (`SESSION_META`), so a kind wears
- * the same one here as in a day sheet or on the path. */
-export const KIND_STICKER: Record<SessionKind, { icon: IconSvgElement; accent: AccentName }> = {
-  strength: { icon: Dumbbell01Icon, accent: 'violet' },
-  mobility: { icon: Yoga01Icon, accent: 'teal' },
-  balance: { icon: BalanceScaleIcon, accent: 'blue' },
-  recovery: { icon: Moon02Icon, accent: 'amber' },
+/** The catalogue's categories, for a move the plan has no row for (the
+ * barefoot habit). The same accents Home's task list wears. */
+const CATEGORY_LOOK: Readonly<Record<ExerciseCategory, Look>> = {
+  Fitness: KIND_LOOK.strength,
+  Mobility: KIND_LOOK.mobility,
+  Recovery: KIND_LOOK.recovery,
+  Habit: { art: 'seedling', accent: 'blue' },
 };
 
-/** Each exercise category's chip: the same glyph and accent Home's list uses. */
-export const CATEGORY_TONE: Record<ExerciseCategory, { icon: IconSvgElement; accent: AccentName }> = {
-  Fitness: { icon: Dumbbell01Icon, accent: 'violet' },
-  Mobility: { icon: Yoga01Icon, accent: 'teal' },
-  Recovery: { icon: Moon02Icon, accent: 'amber' },
-  Habit: { icon: RepeatIcon, accent: 'blue' },
-};
+/**
+ * One move's look, from what the plan says the move is for.
+ *
+ * The plan's own kind rather than the catalogue's category: the catalogue
+ * files every balance and arch move under Fitness, which drew a column of
+ * identical biceps. Strength work that only trains the arch is foot work, and
+ * wears the foot; everything else wears its kind.
+ */
+export function moveLook(id: string, category: ExerciseCategory): Look {
+  const meta = planMeta(id);
+  if (meta == null) return CATEGORY_LOOK[category];
+  if (meta.kind === 'strength' && meta.tags.length > 0 && meta.tags.every((tag) => tag === 'arch')) {
+    return { art: 'foot', accent: KIND_LOOK.strength.accent };
+  }
+  return KIND_LOOK[meta.kind];
+}

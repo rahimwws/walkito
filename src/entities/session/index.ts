@@ -5,6 +5,24 @@ export {
 } from './model/onboarding';
 export { signInWithApple, type AppleSignIn } from './model/apple-auth';
 export { signInWithGoogle, signInWithPlatform } from './model/google-auth';
-export { signInWithEmail, type EmailSignIn } from './model/email-auth';
+export {
+  EMAIL_CODE_LENGTH,
+  confirmEmailCode,
+  resendEmailCode,
+  sendEmailCode,
+  signInWithEmail,
+  type AuthFailure,
+  type EmailCodeMode,
+  type EmailCodeSent,
+  type EmailSignIn,
+} from './model/email-auth';
 export { deleteAccount, type DeleteResult } from './model/delete-account';
-export { accountSaved, armSetup, finishSetup, useSetupPending } from './model/setup';
+export {
+  accountSaved,
+  armSetup,
+  deferAccount,
+  finishSetup,
+  settleAccount,
+  useAccountOwed,
+  useSetupPending,
+} from './model/setup';

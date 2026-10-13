@@ -31,6 +31,7 @@ import { ZONE_META } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../../config/exercise-clips';
@@ -648,9 +649,21 @@ function ClipCard({
           <HugeiconsIcon icon={ArrowExpandDiagonal01Icon} size={small ? 14 : 18} color="#111114" strokeWidth={2.2} />
         </View>
       )}
-      {failed && !small && (
+      {/* The unplugged mascot, still, where the clip would be: in the corner
+          thumbnail on its own, which has no room for the line. */}
+      {failed && (
         <View style={styles.clipFallback} pointerEvents="none">
-          <Text style={[styles.clipFallbackText, { color: meter.caption }]}>{t('widgets.clipFailed')}</Text>
+          {/* Sized, so the 88pt thumbnail's side padding (kept for the line)
+              cannot squeeze the box and push the figure off centre. */}
+          <View
+            accessibilityElementsHidden
+            importantForAccessibility="no-hide-descendants"
+            style={small ? styles.failSmall : styles.failLarge}>
+            <MascotStill rig={noInternetRig} size={small ? 60 : 72} surface={colors.card} />
+          </View>
+          {!small && (
+            <Text style={[styles.clipFallbackText, { color: meter.caption }]}>{t('widgets.clipFailed')}</Text>
+          )}
         </View>
       )}
     </Pressable>
@@ -740,7 +753,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 24,
+    gap: 10,
   },
+  failSmall: { width: 60, height: 60 },
+  failLarge: { width: 72, height: 72 },
   clipFallbackText: {
     ...fonts.medium(15),
     textAlign: 'center',

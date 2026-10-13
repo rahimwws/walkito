@@ -8,7 +8,7 @@ import {
   type ChainName,
   type PlanKind,
 } from './catalogue-meta';
-import { doseFor, doseSeconds, type PlanDose } from './dose';
+import { doseFor, doseSeconds, fitDoses, type PlanDose } from './dose';
 import { allowed, atOrBelow, nextAbove, type EligibilityContext } from './eligibility';
 import { GOAL_SPECS, pickFocus, type Goal, type GoalType } from './goals';
 
@@ -151,8 +151,9 @@ function mean(values: readonly (number | null)[]): number | null {
   return logged.reduce((sum, v) => sum + v, 0) / logged.length;
 }
 
-/** The chain a goal's focus exercise climbs on strength days. */
-function focusChainOf(goal: GoalType): ChainName {
+/** The chain a goal's focus exercise climbs on strength days. Exported so the
+ * plan screen can say when a week stepped up or back on it. */
+export function focusChainOf(goal: GoalType): ChainName {
   // Pain is worked by mobility and low calf work; on a strength day that means
   // the calf chain, held to its first two levels.
   return goal === 'pain_free_mornings' ? 'calf' : GOAL_SPECS[goal].chain;
@@ -232,7 +233,9 @@ function focusFromPool(pool: readonly string[], goal: GoalType, ctx: Eligibility
 
 /**
  * Rule 8: two to four exercises that fit the minutes. The focus exercise goes
- * first and is never cut; the rest are added in order while there is time.
+ * first and is never cut; the rest are added in order while there is time, and
+ * the doses are then cut to the minutes (`fitDoses`), since the focus exercise
+ * and the minimum of two can take longer than the day has on their own.
  */
 function fit(candidates: PlannedExercise[], minutes: number): PlannedExercise[] {
   const unique: PlannedExercise[] = [];
@@ -248,7 +251,7 @@ function fit(candidates: PlannedExercise[], minutes: number): PlannedExercise[] 
       used += cost;
     }
   }
-  return out;
+  return fitDoses(out, minutes);
 }
 
 const MOBILITY_POOL = CHAINS.mobility;

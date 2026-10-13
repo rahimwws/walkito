@@ -26,13 +26,15 @@ import {
   useScreenTracking,
   useReferralSync,
   useQuickActions,
+  useDevLinks,
   useOneLinks,
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
+import { SessionDonePreview } from '@/widgets/session-player';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled } from '@/entities/purchase';
-import { useOnboarded, useSetupPending } from '@/entities/session';
+import { useAccountOwed, useOnboarded, useSetupPending } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
@@ -135,7 +137,12 @@ function RootLayoutInner() {
    * watch, the founders' note and the widget (`pages/setup`). Armed when the
    * new onboarding finishes, so an install from before never sees them.
    */
-  const setupPending = useSetupPending();
+  // The screens after the first purchase, or, on Android, an account still
+  // owed from a launch where signing in failed (`deferAccount`): either keeps
+  // the setup stack in front of the tabs.
+  const setupArmed = useSetupPending();
+  const accountOwed = useAccountOwed();
+  const setupPending = setupArmed || accountOwed;
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
@@ -153,6 +160,7 @@ function RootLayoutInner() {
   // The plan copied to Supabase in the background; local stays the record.
   usePlanSync(onboarded);
   useAppUsage();
+  useDevLinks();
   // Apple's review prompt, at a win only — never during onboarding.
   useReviewAtWin(onboarded);
   // The rating asked for in the founders' note, raised over the screen after it.
@@ -169,6 +177,9 @@ function RootLayoutInner() {
   // are reachable — the same condition as the tabs' own guard below — and
   // otherwise kept and opened once they are. Email links tapped before the
   // onboarding was done open through the second hook too.
+  // Skipping the paywall changes nothing here: "Not now" leads to the one-time
+  // trial offer on the same `offer` screen (`pages/offer`), never into the app,
+  // so a kept link simply stays kept until there is a purchase.
   const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
@@ -252,7 +263,14 @@ function RootLayoutInner() {
 
                       Not shown to somebody whose paid access has ended: they get
                       `expired` below instead. This door is for a first
-                      purchase. */}
+                      purchase.
+
+                      A hard paywall: there is no way into the app without
+                      buying. "Not now" on it leads to the one-time trial offer
+                      and the offers after it, on this same screen
+                      (`pages/offer` draws them in place of the plans), so
+                      somebody who skipped it is still here, and still without
+                      the tabs. */}
                   <Stack.Protected guard={onboarded && !entitled && !lapsed}>
                     <Stack.Screen
                       name="offer"
@@ -300,7 +318,10 @@ function RootLayoutInner() {
                     />
                   </Stack.Protected>
 
-                  <Stack.Protected guard={onboarded && ((entitled && !setupPending) || (lapsed && browsing))}>
+                  {/* The tabs: paid and past setup, or browsing after access
+                      ended (above). `tabsReachable`, so the links wait for the
+                      same thing. */}
+                  <Stack.Protected guard={tabsReachable}>
                     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                     {/* A routine from the Quick tab or Home's row: a pushed
                         page over the tabs, under the same guard, so it goes
@@ -366,6 +387,9 @@ function RootLayoutInner() {
                   for a restart. Its own component so expo-updates' progress
                   events re-render it rather than this layout. */}
               {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
+              {/* Development only: the end-of-session sheet without finishing a
+                  session (`?previewDone`, `?previewDone=stopped`). */}
+              {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}
             </PaywallRoot>
           </NavThemeProvider>
         </IntroRevealProvider>

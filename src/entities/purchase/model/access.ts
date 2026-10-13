@@ -12,10 +12,14 @@ import { ENTITLEMENT, LEGACY_PASS_IDS, PASS_ACCESS_DAYS } from './purchase';
  * so the adapter passes its object straight through with no mapping layer to
  * drift, while a test can hand over an object literal.
  *
- * What is sold is two auto-renewing subscriptions, and RevenueCat expires those
- * itself: an active subscription, or an active `premium` entitlement it grants,
- * is access. The only arithmetic left is for the legacy one-time pass, which
- * Apple never expires and which is no longer sold.
+ * What is sold is auto-renewing subscriptions, which RevenueCat expires
+ * itself, and a lifetime purchase, which never expires: an active
+ * subscription, or an active `premium` entitlement (the lifetime products grant
+ * it with no expiry, which is what lifetime means), is access. A lifetime
+ * purchase counts only through that entitlement — RevenueCat revokes it on a
+ * refund, while the purchase stays in the transaction list. The only
+ * arithmetic left is for the legacy one-time pass, which Apple never expires
+ * and which is no longer sold.
  */
 
 /** The fields of `PurchasesEntitlementInfo` this calculation reads. */
@@ -132,9 +136,9 @@ export type AccessVerdict = {
  * 1. A live subscription. RevenueCat expires these itself, so its word is
  *    final, and it wins over everything below — a pass that ran out must not
  *    hide a subscription bought after it.
- * 2. An active entitlement granted by anything other than a pass: a
- *    subscription the store reported only through the entitlement, or access
- *    granted from the RevenueCat dashboard. This app sells one level of access,
+ * 2. An active entitlement granted by anything other than a pass: a lifetime
+ *    purchase, a subscription the store reported only through the
+ *    entitlement, or access granted from the RevenueCat dashboard. This app sells one level of access,
  *    so an active entitlement under any name means somebody paid; the name is
  *    only checked to tell a drifted dashboard apart in the diagnostics.
  * 3. A legacy pass, against the clock — the entitlement it grants never

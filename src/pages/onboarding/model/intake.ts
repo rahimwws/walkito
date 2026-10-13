@@ -143,6 +143,16 @@ export function toeWorkFrom(answers: Answers): boolean {
 const DAYS: Readonly<Record<string, DaysPerWeek>> = { days3: 3, days5: 5, days7: 7 };
 const MINUTES: Readonly<Record<string, SessionMinutes>> = { min3: 3, min5: 5, min10: 10 };
 
+/** Days a week as picked (`planDays`), or null before anything is. */
+export function daysPerWeekOf(answers: Answers): DaysPerWeek | null {
+  return DAYS[first(answers, 'planDays') ?? ''] ?? null;
+}
+
+/** Minutes a session as picked (`planMinutes`), or null before anything is. */
+export function sessionMinutesOf(answers: Answers): SessionMinutes | null {
+  return MINUTES[first(answers, 'planMinutes') ?? ''] ?? null;
+}
+
 /**
  * The plan settings onboarding asked for: days a week, minutes a session, what
  * is at home, and when to be reminded. Only what was answered — a question
@@ -158,9 +168,9 @@ export function planSettingsFrom(
   if (toeWorkFrom(answers)) out.toeWork = true;
   const foot = footTypeFor(miniTest?.arch ?? null);
   if (foot !== 'unknown') out.footType = foot;
-  const days = DAYS[first(answers, 'planDays') ?? ''];
+  const days = daysPerWeekOf(answers);
   if (days != null) out.daysPerWeek = days;
-  const minutes = MINUTES[first(answers, 'planMinutes') ?? ''];
+  const minutes = sessionMinutesOf(answers);
   if (minutes != null) out.defaultMinutes = minutes;
   const have = answers.equipment;
   if (Array.isArray(have) && have.length > 0) {

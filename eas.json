@@ -24,7 +24,9 @@
         "env": {
           "SOURCEMAP_FILE": "build/sourcemaps/main.jsbundle.map"
         },
-        "buildArtifactPaths": ["ios/build/sourcemaps/main.jsbundle.map"]
+        "buildArtifactPaths": [
+          "ios/build/sourcemaps/main.jsbundle.map"
+        ]
       }
     }
   },
@@ -32,6 +34,10 @@
     "production": {
       "ios": {
         "ascAppId": "6813076846"
+      },
+      "android": {
+        "track": "production",
+        "releaseStatus": "completed"
       }
     },
     "internal": {

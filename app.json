@@ -3,7 +3,7 @@
     "name": "Walkito",
     "slug": "tread",
     "scheme": "walkito",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -49,6 +49,7 @@
     },
     "plugins": [
       "./plugins/with-strip-frameworks",
+      "./plugins/with-scene-delegate",
       "expo-router",
       [
         "expo-font",

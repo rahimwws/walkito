@@ -2,6 +2,7 @@ import { describe, expect, test } from 'bun:test';
 
 import { CLIPS } from '../src/shared/config/clip-manifest';
 import { PLAN_META, planMeta, type Equipment } from '../src/entities/program/model/plan/catalogue-meta';
+import { doseSeconds } from '../src/entities/program/model/plan/dose';
 import { allowed, playableId, pogoAllowed, type EligibilityContext } from '../src/entities/program/model/plan/eligibility';
 import { advanceGoals, pickFocus, startingGoals, type Goal } from '../src/entities/program/model/plan/goals';
 import { adjustToday, twoMinuteVersion } from '../src/entities/program/model/plan/today';
@@ -48,6 +49,15 @@ function input(patch: Partial<WeekInput> = {}): WeekInput {
 }
 
 const ids = (plan: WeekPlan) => plan.days.flatMap((d) => d.exercises.map((e) => e.id));
+
+/** Seconds a day's doses take, as the player counts them down. */
+const daySeconds = (exercises: readonly { dose: Parameters<typeof doseSeconds>[0] }[]) =>
+  exercises.reduce((sum, e) => sum + doseSeconds(e.dose), 0);
+
+/** A day fits its minutes, or has nothing left to take off: one set of each. */
+function fitsOrFloored(exercises: readonly { dose: Parameters<typeof doseSeconds>[0] }[], minutes: number) {
+  return daySeconds(exercises) <= minutes * 60 || exercises.every((e) => e.dose.sets === 1);
+}
 
 function everyWeek(check: (plan: WeekPlan) => void, patch: Partial<WeekInput> = {}) {
   for (const daysPerWeek of [3, 5, 7] as const) {
@@ -123,6 +133,34 @@ describe('the week', () => {
         eligibility: { ...input().eligibility, equipmentMissing: ['step'] },
         goals: [goal('calf_raises', 10), goal('symmetry', 25)],
       },
+    );
+  });
+
+  test('8 · every day fits its minutes, cutting sets but never below one', () => {
+    for (const defaultMinutes of [3, 5, 10] as const) {
+      everyWeek(
+        (plan) => {
+          for (const day of plan.days) {
+            if (day.exercises.length === 0) continue;
+            expect(fitsOrFloored(day.exercises, day.minutes)).toBe(true);
+            for (const e of day.exercises) expect(e.dose.sets).toBeGreaterThanOrEqual(1);
+          }
+        },
+        { defaultMinutes, toeWork: true },
+      );
+    }
+  });
+
+  test('8 · a three-minute day is close to three minutes, not six', () => {
+    // The day that ran "3 min · 2 moves" with a six-minute towel scrunch in it.
+    everyWeek(
+      (plan) => {
+        for (const day of plan.days) {
+          if (day.exercises.length === 0) continue;
+          expect(daySeconds(day.exercises)).toBeLessThanOrEqual(3 * 60 * 1.15);
+        }
+      },
+      { defaultMinutes: 3, toeWork: true },
     );
   });
 
@@ -258,6 +296,18 @@ describe('today', () => {
     const short = twoMinuteVersion(strengthDay());
     expect(short.exercises).toHaveLength(1);
     expect(short.exercises[0].focus).toBe(true);
+    expect(fitsOrFloored(short.exercises, 2)).toBe(true);
+  });
+
+  test('a day stored at full doses is cut to its minutes when it is opened', () => {
+    // Weeks built before the week fitted its doses are still in storage.
+    const day = strengthDay();
+    const stored = { ...day, minutes: 3, exercises: day.exercises.map((e) => ({ ...e, dose: { ...e.dose, sets: 4 } })) };
+    expect(daySeconds(stored.exercises)).toBeGreaterThan(3 * 60);
+    const adjusted = adjustToday(stored, signals, ctx);
+    expect(adjusted.minutes).toBe(3);
+    expect(fitsOrFloored(adjusted.exercises, 3)).toBe(true);
+    expect(adjusted.exercises.map((e) => e.id)).toEqual(stored.exercises.map((e) => e.id));
   });
 });
 

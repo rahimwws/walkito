@@ -121,8 +121,8 @@ export const NOTIFICATIONS_DE = {
   'notifications.winbackDay30': 'Wir sind noch da, falls sich der Fuß wieder meldet.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, bevor du gehst - {percent}% Rabatt',
-  'notifications.offerWait': 'Bevor du gehst - {percent}% Rabatt',
+  'notifications.offerWaitNamed': '{name}, bevor du gehst - {percent}% Rabatt im ersten Jahr',
+  'notifications.offerWait': 'Bevor du gehst - {percent}% Rabatt im ersten Jahr',
   'notifications.offerWaitBody': 'Das Jahresabo wartet zu einem niedrigeren Preis. Tipp, um es zu sehen.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

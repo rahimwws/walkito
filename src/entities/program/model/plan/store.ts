@@ -9,6 +9,7 @@ import { kv } from '@/shared/lib/storage';
 import { retestResults, type RetestResult } from '../program';
 import { dayNumberFor, firstStepOn, fromDateKey, logFor, painLatestOn, programState, toDateKey, writeLog } from '../state';
 import { CHAINS, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
+import { doseFor, fitDoses } from './dose';
 import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import {
   advanceGoals,
@@ -646,12 +647,51 @@ type WeekStore = Record<string, WeekPlan>;
 const WEEKS_SCHEMA = 2;
 const WEEKS_SCHEMA_KEY = 'plan/weeks-schema';
 
+/**
+ * The dose tables a stored week was written with. Bumped when `dose.ts`
+ * changes how much of an exercise a level means, so the weeks already stored
+ * are re-dosed in place: the same exercises at the same levels, with the new
+ * doses, fitted to each day's minutes. Not a schema bump, which would drop the
+ * weeks and with them the chain levels the next week progresses from.
+ */
+const WEEKS_DOSES = 2;
+const WEEKS_DOSES_KEY = 'plan/weeks-doses';
+
+function redosed(store: WeekStore): WeekStore {
+  const hasStep = !planSettings().equipmentMissing.includes('step');
+  const out: WeekStore = {};
+  for (const [start, plan] of Object.entries(store)) {
+    out[start] = {
+      ...plan,
+      days: plan.days.map((day) =>
+        day.exercises.length === 0
+          ? day
+          : {
+              ...day,
+              exercises: fitDoses(
+                day.exercises.map((e) => ({ ...e, dose: doseFor(e.id, e.level, hasStep) })),
+                day.minutes,
+              ),
+            },
+      ),
+    };
+  }
+  return out;
+}
+
 function weeks(): WeekStore {
   if (Number(kv.getString(WEEKS_SCHEMA_KEY) ?? 0) !== WEEKS_SCHEMA) {
     kv.remove(WEEKS_KEY);
     kv.set(WEEKS_SCHEMA_KEY, String(WEEKS_SCHEMA));
   }
-  return read<WeekStore>(WEEKS_KEY, {});
+  const store = read<WeekStore>(WEEKS_KEY, {});
+  if (Number(kv.getString(WEEKS_DOSES_KEY) ?? 0) !== WEEKS_DOSES) {
+    kv.set(WEEKS_DOSES_KEY, String(WEEKS_DOSES));
+    const next = redosed(store);
+    write(WEEKS_KEY, next);
+    return next;
+  }
+  return store;
 }
 
 /** The eligibility inputs that come from stored data, for a given day. */
@@ -973,6 +1013,8 @@ export function importPlan(snapshot: Partial<PlanSnapshot>): void {
   if (snapshot.weeks != null) {
     kv.set(WEEKS_SCHEMA_KEY, String(WEEKS_SCHEMA));
     kv.set(WEEKS_KEY, JSON.stringify(snapshot.weeks));
+    // A backup can predate the current doses; the next read re-doses it.
+    kv.remove(WEEKS_DOSES_KEY);
   }
   write(SETTINGS_KEY, planSettings());
 }

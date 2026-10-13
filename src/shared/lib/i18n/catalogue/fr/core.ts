@@ -152,19 +152,22 @@ export const CORE_FR = {
 
 
   // ── Account / sign-in errors ───────────────────────────────────────────────
-  'auth.noServer': 'Cette version n’a pas de serveur de comptes. Utilise Continuer avec Apple.',
+  'auth.noServer': 'Cette version n’a pas de serveur de comptes.',
   'auth.missingFields': 'Saisis un e-mail et un mot de passe.',
   'auth.invalidCredentials': 'Cet e-mail et ce mot de passe ne correspondent pas.',
   'auth.notConfirmed':
     'Ce compte n’est pas encore confirmé. Confirme l’adresse e-mail, puis réessaie.',
   'auth.banned': 'Ce compte est désactivé.',
-  'auth.providerDisabled':
-    'La connexion par e-mail est désactivée pour cette app. Utilise Continuer avec Apple.',
+  'auth.providerDisabled': 'La connexion par e-mail est désactivée pour cette app.',
   'auth.rateLimited': 'Trop de tentatives. Attends une minute et réessaie.',
   'auth.badEmail': 'Ça ne ressemble pas à une adresse e-mail.',
   'auth.noAccount': 'Aucun compte n’a été renvoyé.',
   'auth.generic': 'Ça n’est pas passé.',
   'auth.unreachable': 'Impossible de joindre le serveur.',
+  'auth.badCode': 'Ce code n’a pas marché. Vérifie-le ou demandes-en un nouveau.',
+  'auth.codeRateLimited': 'Un code vient d’être envoyé. Attends une minute avant d’en demander un autre.',
+  'auth.emailUndeliverable': 'L’e-mail n’a pas pu partir pour l’instant. Réessaie dans un moment.',
+  'auth.noAccountForEmail': 'Aucun compte n’utilise cet e-mail.',
 
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, tu as tout terminé.',

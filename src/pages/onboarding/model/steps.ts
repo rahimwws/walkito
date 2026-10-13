@@ -1,10 +1,13 @@
 import AppStoreIcon from '@hugeicons/core-free-icons/AppStoreIcon';
 import PlayStoreIcon from '@hugeicons/core-free-icons/PlayStoreIcon';
 import GoogleIcon from '@hugeicons/core-free-icons/GoogleIcon';
+import Infinity01Icon from '@hugeicons/core-free-icons/Infinity01Icon';
 import InstagramIcon from '@hugeicons/core-free-icons/InstagramIcon';
 import MoreHorizontalCircle01Icon from '@hugeicons/core-free-icons/MoreHorizontalCircle01Icon';
+import Stairs01Icon from '@hugeicons/core-free-icons/Stairs01Icon';
 import TiktokIcon from '@hugeicons/core-free-icons/TiktokIcon';
 import UserMultipleIcon from '@hugeicons/core-free-icons/UserMultipleIcon';
+import YogaMatIcon from '@hugeicons/core-free-icons/YogaMatIcon';
 import YoutubeIcon from '@hugeicons/core-free-icons/YoutubeIcon';
 import type { IconSvgElement } from '@hugeicons/react-native';
 import { Platform } from 'react-native';
@@ -13,6 +16,7 @@ import { MAX_ZONES } from '@/entities/leg-zone';
 
 import type { AccentName } from '@/shared/config';
 import type { Translate } from '@/shared/lib/i18n';
+import type { FluentName } from '@/shared/ui/fluent-icon';
 
 import { chose } from './answers';
 import { balanceAllowed, miniTestEligible, roleOf, runs, standsAtWork } from './journey';
@@ -48,6 +52,10 @@ export type OnboardingOption = {
   /** Cards lead with a glyph on a tinted tile. */
   icon?: IconSvgElement;
   accent?: AccentName;
+  /** Or with a colourful Fluent emoji, drawn as given (`FLUENT_ICONS`). */
+  emoji?: FluentName;
+  /** The recommended middle of a time pick: it wears a "Recommended" badge. */
+  recommended?: boolean;
 };
 
 /** The same option once the page has resolved its text for this render. The
@@ -99,22 +107,18 @@ export type OnboardingStep = StepBase &
         /** Selecting more than one. `max` caps it. */
         multi?: boolean;
         max?: number;
-        /** The answer glyphs for an observation about the foot: how full a
-         * circle is, in place of the per-answer art. */
-        art?: 'verdict';
+        /** What leads each answer in place of its emoji: Walkito peeking up
+         * over the card (`peek`), the pair of feet (`side`), or, for an
+         * observation about the foot, how full a circle is (`verdict`).
+         * `kit` lays the answers out as a grid of coloured tiles instead. */
+        art?: 'peek' | 'side' | 'verdict' | 'kit';
         /** A photograph above the answers (`QUESTION_PHOTOS`, by step key),
          * with an optional caption under each half and a line under the list. */
         hero?: { captions?: readonly Phrase[]; note?: Phrase };
-      }
-    /** Days a week, minutes a session and what is at home, on one screen.
-     * The days are the step's own answer (its key is `planDays`); the minutes
-     * go to `planMinutes`, the kit to `equipment`. */
-    | {
-        kind: 'schedule';
-        days: readonly OnboardingOption[];
-        minutes: readonly OnboardingOption[];
-        /** What is at home, written to `equipment`. */
-        kit: readonly OnboardingOption[];
+        /** What the answer looks like, above the answers: the week with its
+         * session days lit (`week`), or a timer ring filled to the minutes
+         * (`timer`). */
+        gauge?: 'week' | 'timer';
       }
     /** A full-screen answer to the question before it: mascot, a heading, a
      * line, tap anywhere. `of` names the question it reacts to. */
@@ -130,11 +134,10 @@ export type OnboardingStep = StepBase &
     /** The moment of the day the session is tied to, and the reminder it sets. */
     | { kind: 'habit'; options: readonly OnboardingOption[] }
     /** The 30-second check, behind a PostHog flag: what it is, the big toe
-     * lift, one leg, and the result. */
+     * lift and one leg. No result screen: the plan it changes is shown next. */
     | { kind: 'test-intro' }
     | { kind: 'test-toe' }
     | { kind: 'test-balance' }
-    | { kind: 'test-result' }
     /** The liquid-glass gate that opens the app. */
     | { kind: 'welcome' }
     /** Signing the commitment contract. */
@@ -159,6 +162,10 @@ export const ACTS: readonly Phrase[] = [
   (t) => t('onboarding.act.health'),
   (t) => t('onboarding.act.plan'),
 ];
+
+/** The recommended middle of each time pick: seeded as the answer, and
+ * marked with a badge on its card. */
+export const RECOMMENDED = { days: 'days5', minutes: 'min5' } as const;
 
 /** Whether anything at all was picked on the pain step besides "nothing". */
 export function hurts(answers: Readonly<Record<string, unknown>>): boolean {
@@ -214,6 +221,7 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 0,
     title: (t) => t('onboarding.role.title', NAME_SLOT),
     blurb: (t) => t('onboarding.role.blurb'),
+    art: 'peek',
     options: [
       { value: 'running', label: (t) => t('onboarding.role.running') },
       { value: 'feet', label: (t) => t('onboarding.role.feet') },
@@ -230,11 +238,11 @@ export const STEPS: readonly OnboardingStep[] = [
     title: (t) => t('onboarding.runner.titleRunning', NAME_SLOT),
     blurb: (t) => t('onboarding.runner.blurb'),
     options: [
-      { value: 'new', label: (t) => t('onboarding.runner.new') },
-      { value: 'casual', label: (t) => t('onboarding.runner.casual') },
-      { value: 'regular', label: (t) => t('onboarding.runner.regular') },
-      { value: 'racing', label: (t) => t('onboarding.runner.racing') },
-      { value: 'serious', label: (t) => t('onboarding.runner.serious') },
+      { value: 'new', label: (t) => t('onboarding.runner.new'), emoji: 'seedling' },
+      { value: 'casual', label: (t) => t('onboarding.runner.casual'), emoji: 'runningShoe' },
+      { value: 'regular', label: (t) => t('onboarding.runner.regular'), emoji: 'personRunning' },
+      { value: 'racing', label: (t) => t('onboarding.runner.racing'), emoji: 'bullseye' },
+      { value: 'serious', label: (t) => t('onboarding.runner.serious'), emoji: 'fire' },
     ],
     skipWhen: (a) => !runs(a),
   },
@@ -290,6 +298,7 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 1,
     title: (t) => t('onboarding.side.title', NAME_SLOT),
     blurb: (t) => t('onboarding.side.blurb'),
+    art: 'side',
     options: [
       { value: 'left', label: (t) => t('onboarding.side.left') },
       { value: 'right', label: (t) => t('onboarding.side.right') },
@@ -303,11 +312,13 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 1,
     title: (t) => t('onboarding.duration.title'),
     blurb: (t) => t('onboarding.duration.blurb'),
+    // Four different things rather than four calendars, so the rows tell
+    // apart at a glance: a stopwatch, the calendar, a season, the hourglass.
     options: [
-      { value: 'weeks', label: (t) => t('onboarding.duration.weeks') },
-      { value: 'months', label: (t) => t('onboarding.duration.months') },
-      { value: 'year', label: (t) => t('onboarding.duration.year') },
-      { value: 'longer', label: (t) => t('onboarding.duration.longer') },
+      { value: 'weeks', label: (t) => t('onboarding.duration.weeks'), emoji: 'stopwatch' },
+      { value: 'months', label: (t) => t('onboarding.duration.months'), emoji: 'calendar' },
+      { value: 'year', label: (t) => t('onboarding.duration.year'), emoji: 'fallenLeaf' },
+      { value: 'longer', label: (t) => t('onboarding.duration.longer'), emoji: 'hourglass' },
     ],
     skipWhen: (a) => !hurts(a),
   },
@@ -330,13 +341,15 @@ export const STEPS: readonly OnboardingStep[] = [
     title: (t) => t('onboarding.safety.title'),
     blurb: (t) => t('onboarding.safety.blurb'),
     multi: true,
+    // Calm pictures of the thing named, never of harm: no blood, no
+    // lightning, nothing red that reads as an alarm.
     options: [
-      { value: 'calf', label: (t) => t('onboarding.safety.calf') },
-      { value: 'pop', label: (t) => t('onboarding.safety.pop') },
-      { value: 'diabetes', label: (t) => t('onboarding.safety.diabetes') },
-      { value: 'fall', label: (t) => t('onboarding.safety.fall') },
-      { value: 'numb', label: (t) => t('onboarding.safety.numb') },
-      { value: 'none', label: (t) => t('onboarding.safety.none') },
+      { value: 'calf', label: (t) => t('onboarding.safety.calf'), emoji: 'leg' },
+      { value: 'pop', label: (t) => t('onboarding.safety.pop'), emoji: 'foot' },
+      { value: 'diabetes', label: (t) => t('onboarding.safety.diabetes'), emoji: 'bandage' },
+      { value: 'fall', label: (t) => t('onboarding.safety.fall'), emoji: 'crutch' },
+      { value: 'numb', label: (t) => t('onboarding.safety.numb'), emoji: 'feather' },
+      { value: 'none', label: (t) => t('onboarding.safety.none'), emoji: 'leafInWind' },
     ],
     skipWhen: (a) => !hurts(a),
   },
@@ -348,12 +361,12 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.tried.blurb'),
     multi: true,
     options: [
-      { value: 'insoles', label: (t) => t('onboarding.tried.insoles') },
-      { value: 'stretching', label: (t) => t('onboarding.tried.stretching') },
-      { value: 'shoes', label: (t) => t('onboarding.tried.shoes') },
-      { value: 'rest', label: (t) => t('onboarding.tried.rest') },
-      { value: 'physio', label: (t) => t('onboarding.tried.physio') },
-      { value: 'none', label: (t) => t('onboarding.tried.none') },
+      { value: 'insoles', label: (t) => t('onboarding.tried.insoles'), emoji: 'sandal' },
+      { value: 'stretching', label: (t) => t('onboarding.tried.stretching'), emoji: 'lotus' },
+      { value: 'shoes', label: (t) => t('onboarding.tried.shoes'), emoji: 'runningShoe' },
+      { value: 'rest', label: (t) => t('onboarding.tried.rest'), emoji: 'couch' },
+      { value: 'physio', label: (t) => t('onboarding.tried.physio'), emoji: 'healthWorker' },
+      { value: 'none', label: (t) => t('onboarding.tried.none'), emoji: 'sparkles' },
     ],
     skipWhen: (a) => !hurts(a),
   },
@@ -366,6 +379,7 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 2,
     title: (t) => t('onboarding.goal.titleShort'),
     blurb: (t) => t('onboarding.goal.blurb'),
+    art: 'peek',
     options: [],
   },
   {
@@ -402,7 +416,9 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'other', label: (t) => t('onboarding.source.other'), icon: MoreHorizontalCircle01Icon, accent: 'violet' },
     ],
   },
-  { kind: 'why', key: 'why', act: 2, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
+  // Retired by the founder: the flow goes from the source straight on. Kept
+  // in the table until its copy and code are removed.
+  { kind: 'why', key: 'why', act: 2, title: UNUSED, blurb: UNUSED, skipWhen: () => true },
   {
     kind: 'notify',
     key: 'notify',
@@ -417,37 +433,64 @@ export const STEPS: readonly OnboardingStep[] = [
     title: (t) => t('onboarding.habit.title'),
     blurb: (t) => t('onboarding.habit.blurb'),
     options: [
-      { value: 'wake', label: (t) => t('onboarding.habit.wake') },
-      { value: 'coffee', label: (t) => t('onboarding.habit.coffee') },
-      { value: 'shift', label: (t) => t('onboarding.habit.shift') },
-      { value: 'bed', label: (t) => t('onboarding.habit.bed') },
+      { value: 'wake', label: (t) => t('onboarding.habit.wake'), emoji: 'sunrise' },
+      { value: 'coffee', label: (t) => t('onboarding.habit.coffee'), emoji: 'hotBeverage' },
+      { value: 'shift', label: (t) => t('onboarding.habit.shift'), emoji: 'briefcase' },
+      { value: 'bed', label: (t) => t('onboarding.habit.bed'), emoji: 'bed' },
     ],
   },
   {
-    // One screen for all three: two picks from three with a recommended
-    // middle, and the kit, whose answer visibly changes the plan. Keyed
-    // `planDays`, the first of the screens it replaced, so the step funnel
-    // runs on unbroken.
-    kind: 'schedule',
+    // The schedule, one question a screen: three questions on one screen
+    // read as a form. Days and minutes are picks from three with the
+    // recommended middle seeded, so Next is ready on arrival; the answer is
+    // drawn above the cards as it is picked. The keys are the ones these
+    // questions always had, so the step funnel reads as it did.
+    kind: 'choice',
     key: 'planDays',
     act: 3,
-    title: (t) => t('onboarding.schedule.title', NAME_SLOT),
-    // Not drawn on this screen; kept for anything that reads a step's blurb.
+    title: (t) => t('onboarding.days.title'),
+    // Not drawn; kept for anything that reads a step's blurb.
     blurb: (t) => t('onboarding.minutes.blurb'),
-    days: (['days3', 'days5', 'days7'] as const).map((value) => ({
+    gauge: 'week',
+    options: (['days3', 'days5', 'days7'] as const).map((value) => ({
       value,
       label: (t: Translate) => t(`onboarding.days.${value}`),
-      caption: (t: Translate) => t(`onboarding.days.${value}Caption`),
+      recommended: value === RECOMMENDED.days,
     })),
-    minutes: (['min3', 'min5', 'min10'] as const).map((value) => ({
+  },
+  {
+    kind: 'choice',
+    key: 'planMinutes',
+    act: 3,
+    title: (t) => t('onboarding.minutes.title'),
+    blurb: (t) => t('onboarding.minutes.blurb'),
+    gauge: 'timer',
+    options: (['min3', 'min5', 'min10'] as const).map((value) => ({
       value,
       label: (t: Translate) => t(`onboarding.minutes.${value}`),
-      caption: (t: Translate) => t(`onboarding.minutes.${value}Caption`),
+      recommended: value === RECOMMENDED.minutes,
     })),
-    kit: (['towel', 'step', 'band', 'ball', 'pillow', 'none'] as const).map((value) => ({
-      value,
-      label: (t: Translate) => t(`onboarding.equipment.${value}`),
-    })),
+  },
+  {
+    // What is at home, as tiles: a Fluent emoji where one is the thing (a
+    // ball, a bed with its pillow), a glyph where none is. "None of these"
+    // is exclusive, and the kit picked so far is listed under the tiles by
+    // what it adds to the plan. One answer at least, "none" included.
+    kind: 'choice',
+    key: 'equipment',
+    act: 3,
+    title: (t) => t('onboarding.equipment.title'),
+    blurb: (t) => t('onboarding.equipment.blurb'),
+    multi: true,
+    art: 'kit',
+    options: [
+      { value: 'towel', label: (t) => t('onboarding.equipment.towel'), icon: YogaMatIcon, accent: 'teal' },
+      { value: 'step', label: (t) => t('onboarding.equipment.step'), icon: Stairs01Icon, accent: 'orange' },
+      { value: 'band', label: (t) => t('onboarding.equipment.band'), icon: Infinity01Icon, accent: 'violet' },
+      { value: 'ball', label: (t) => t('onboarding.equipment.ball'), emoji: 'softball', accent: 'blue' },
+      { value: 'pillow', label: (t) => t('onboarding.equipment.pillow'), emoji: 'bed', accent: 'amber' },
+      { value: 'none', label: (t) => t('onboarding.equipment.none'), emoji: 'sparkles', accent: 'teal' },
+    ],
   },
   { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
@@ -459,7 +502,6 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: UNUSED,
     skipWhen: (a) => !testing(a) || !balanceAllowed(a, !hurts(a)),
   },
-  { kind: 'test-result', key: 'test-result', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
   { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },
   {

@@ -2,20 +2,25 @@ import type { Tempo } from '../exercises';
 import { HEEL_RAISE_TEMPO } from '../exercises';
 
 import { planMeta, type DoseClass } from './catalogue-meta';
+import { doseTimeline, timelineSeconds } from './timeline';
 
 /**
  * How much of an exercise, at a level.
  *
- * One table per kind of work, three bands each (levels 1–2, 3, 4–5). The level
- * is the exercise's own place in its chain, so moving up the chain is what
- * moves the dose — there is no separate "intensity" dial to drift out of step
- * with it.
+ * One table per kind of work, three bands each (levels 1–2, 3, 4–5), and a row
+ * of its own for every exercise that is not done the way its kind is (see
+ * `OWN`). The level is the exercise's own place in its chain, so moving up the
+ * chain is what moves the dose — there is no separate "intensity" dial to drift
+ * out of step with it.
  */
 export type PlanDose = {
   sets: number;
   reps?: number;
   holdSec?: number;
   tempo?: Tempo;
+  /** One rep's length where there is neither a tempo nor a hold: a towel
+   * scrunch is two seconds, a pogo hop one. Three when absent. */
+  repSec?: number;
   perSide: boolean;
   /** Only the calf work at levels 4–5 with a step: add a backpack. */
   addWeight?: boolean;
@@ -29,20 +34,71 @@ function bandOf(level: number): Band {
   return 2;
 }
 
-const TABLE: Readonly<Record<DoseClass, readonly [Omit<PlanDose, 'perSide'>, Omit<PlanDose, 'perSide'>, Omit<PlanDose, 'perSide'>]>> = {
-  calf: [{ sets: 3, reps: 10 }, { sets: 3, reps: 12 }, { sets: 4, reps: 10 }],
+type Row = Omit<PlanDose, 'perSide'>;
+type Bands = readonly [Row, Row, Row];
+
+/**
+ * By kind of work. Two sets is the default and three the top: these are short
+ * daily sessions, and a third and fourth set is where people stop. Held
+ * stretches and balance alternate feet, so the other foot's turn is the rest.
+ */
+const TABLE: Readonly<Record<DoseClass, Bands>> = {
+  calf: [{ sets: 3, reps: 10 }, { sets: 3, reps: 12 }, { sets: 3, reps: 15 }],
   // The hold variant of the calf work: the same effort, spent as time at the top.
-  calfHold: [{ sets: 3, holdSec: 20 }, { sets: 3, holdSec: 30 }, { sets: 4, holdSec: 30 }],
-  arch: [{ sets: 3, reps: 8, holdSec: 5 }, { sets: 3, reps: 10, holdSec: 5 }, { sets: 3, reps: 10, holdSec: 8 }],
+  calfHold: [{ sets: 3, holdSec: 20 }, { sets: 3, holdSec: 30 }, { sets: 3, holdSec: 30 }],
+  arch: [{ sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 8, holdSec: 5 }, { sets: 3, reps: 8, holdSec: 5 }],
   // Band and hip work, and the accessories: plain strength reps.
-  reps: [{ sets: 3, reps: 10 }, { sets: 3, reps: 12 }, { sets: 4, reps: 10 }],
-  balance: [{ sets: 3, holdSec: 20 }, { sets: 3, holdSec: 30 }, { sets: 3, holdSec: 40 }],
-  stretch: [{ sets: 2, holdSec: 30 }, { sets: 3, holdSec: 30 }, { sets: 3, holdSec: 30 }],
-  recovery: [{ sets: 1, holdSec: 60 }, { sets: 1, holdSec: 90 }, { sets: 1, holdSec: 90 }],
+  reps: [{ sets: 2, reps: 10 }, { sets: 2, reps: 12 }, { sets: 3, reps: 12 }],
+  balance: [{ sets: 2, holdSec: 20 }, { sets: 2, holdSec: 30 }, { sets: 3, holdSec: 30 }],
+  stretch: [{ sets: 2, holdSec: 30 }, { sets: 2, holdSec: 30 }, { sets: 3, holdSec: 30 }],
+  // A roll or a massage, one foot after the other.
+  recovery: [{ sets: 1, holdSec: 30 }, { sets: 1, holdSec: 45 }, { sets: 1, holdSec: 45 }],
 };
 
-/** Exercises done one leg at a time. The rest are both feet together. */
-const BILATERAL = new Set(['heel_raise_double', 'heel_raise_seated', 'heel_raise_hold', 'tibialis_raise', 'pogo_hops', 'short_foot_double']);
+/**
+ * Exercises not done the way their kind is.
+ *
+ * - **Towel scrunch**: quick pulls, two seconds each. It sat in the arch table
+ *   with the short-foot holds, so every scrunch was "held" five seconds and the
+ *   exercise ran six minutes.
+ * - **Big toe lift, toe spread**: a two-second hold, not five.
+ * - **Short foot on one leg**: two sets at every level below the top; it is the
+ *   hardest of the arch work and the longest per rep.
+ * - **Heel raise on a towel**: the 3 · 2 · 3 tempo is eight seconds a rep, each
+ *   leg, so two sets of eight (under five minutes); the backpack, not more
+ *   reps, is how it gets harder. Four sets of ten was eleven minutes.
+ * - **Heel drop**: up on both, down slowly on one, four seconds a rep.
+ * - **Pogo hops**: one second a hop.
+ * - **Ankle rocks**: rocked, two seconds each, not held like a stretch.
+ */
+const OWN: Readonly<Record<string, Bands>> = {
+  towel_scrunch: [{ sets: 2, reps: 10, repSec: 2 }, { sets: 2, reps: 12, repSec: 2 }, { sets: 3, reps: 12, repSec: 2 }],
+  big_toe_lift: [{ sets: 2, reps: 10, holdSec: 2 }, { sets: 2, reps: 12, holdSec: 2 }, { sets: 3, reps: 12, holdSec: 2 }],
+  toe_spread: [{ sets: 2, reps: 10, holdSec: 2 }, { sets: 2, reps: 12, holdSec: 2 }, { sets: 3, reps: 12, holdSec: 2 }],
+  short_foot_single: [{ sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 6, holdSec: 5 }, { sets: 2, reps: 8, holdSec: 5 }],
+  heel_raise_towel: [{ sets: 2, reps: 6 }, { sets: 2, reps: 8 }, { sets: 2, reps: 8 }],
+  heel_drop_straight: [{ sets: 2, reps: 8, repSec: 4 }, { sets: 2, reps: 10, repSec: 4 }, { sets: 2, reps: 12, repSec: 4 }],
+  pogo_hops: [{ sets: 2, reps: 10, repSec: 1 }, { sets: 2, reps: 10, repSec: 1 }, { sets: 3, reps: 10, repSec: 1 }],
+  ankle_rocks: [{ sets: 2, reps: 10, repSec: 2 }, { sets: 2, reps: 12, repSec: 2 }, { sets: 2, reps: 15, repSec: 2 }],
+};
+
+/**
+ * Exercises done on both feet at once. The rest go one foot at a time.
+ *
+ * The toe work joined this list: lifting the big toes or spreading the toes is
+ * done with both feet on the floor together, and running it one foot after the
+ * other only doubled the time.
+ */
+const BILATERAL = new Set([
+  'heel_raise_double',
+  'heel_raise_seated',
+  'heel_raise_hold',
+  'tibialis_raise',
+  'pogo_hops',
+  'short_foot_double',
+  'big_toe_lift',
+  'toe_spread',
+]);
 
 /**
  * The dose for an exercise at the level the plan has it at.
@@ -54,26 +110,60 @@ export function doseFor(id: string, level?: number, hasStep = true): PlanDose {
   const meta = planMeta(id);
   const cls: DoseClass = meta?.dose ?? 'reps';
   const at = Math.max(1, Math.min(5, level ?? meta?.level ?? 1));
-  const base = TABLE[cls][bandOf(at)];
-  const dose: PlanDose = { ...base, perSide: !BILATERAL.has(id) && cls !== 'recovery' };
+  const base = (OWN[id] ?? TABLE[cls])[bandOf(at)];
+  const dose: PlanDose = { ...base, perSide: !BILATERAL.has(id) };
   if (id === 'heel_raise_towel') dose.tempo = HEEL_RAISE_TEMPO;
   if (cls === 'calf' && at >= 4 && hasStep) dose.addWeight = true;
   return dose;
 }
 
-/** Seconds a dose takes, rests included. Used to fit a session to its minutes. */
+/**
+ * Seconds a dose takes: every set on every foot, the rests and the changes of
+ * foot, exactly as the player runs it (`doseTimeline`). Used to fit a session
+ * to its minutes and to print how long an exercise takes.
+ */
 export function doseSeconds(dose: PlanDose): number {
-  const perRep = dose.tempo != null ? dose.tempo.up + dose.tempo.hold + dose.tempo.down : 3;
-  const work =
-    dose.reps != null
-      ? dose.reps * (dose.holdSec != null ? dose.holdSec + 2 : perRep)
-      : (dose.holdSec ?? 30);
-  const sides = dose.perSide ? 2 : 1;
-  const rests = Math.max(0, dose.sets - 1) * 15;
-  return dose.sets * work * sides + rests;
+  return timelineSeconds(doseTimeline(dose));
 }
 
 /** A dose scaled by a factor of sets, never below one set. */
 export function scaleSets(dose: PlanDose, factor: number): PlanDose {
   return { ...dose, sets: Math.max(1, Math.round(dose.sets * factor)) };
+}
+
+/**
+ * A session's doses, cut until they fit its minutes.
+ *
+ * One set comes off at a time, from whichever exercise takes longest, until the
+ * whole session fits or every exercise is down to one set. The exercises stay:
+ * the plan chose them, and the focus one is never cut. One set of each is the
+ * floor, so a three-minute day of two one-foot holds can still run a little
+ * over, by seconds rather than by minutes.
+ *
+ * Without it a day said "3 min" and ran four times that: the week picked the
+ * focus exercise and at least one more at their full doses whatever the
+ * minutes, and the towel scrunch alone (three sets of eight five-second holds,
+ * each foot) is six minutes. The player counts down exactly these seconds, so
+ * what this returns is what the user lives through.
+ */
+export function fitDoses<T extends { dose: PlanDose }>(items: readonly T[], minutes: number): T[] {
+  const budget = minutes * 60;
+  const out: T[] = items.map((item) => ({ ...item, dose: { ...item.dose } }));
+  let total = out.reduce((sum, item) => sum + doseSeconds(item.dose), 0);
+  while (budget > 0 && total > budget) {
+    let longest = -1;
+    let most = 0;
+    out.forEach((item, i) => {
+      const seconds = doseSeconds(item.dose);
+      if (item.dose.sets > 1 && seconds > most) {
+        longest = i;
+        most = seconds;
+      }
+    });
+    if (longest < 0) break;
+    const cut = { ...out[longest].dose, sets: out[longest].dose.sets - 1 };
+    total += doseSeconds(cut) - most;
+    out[longest] = { ...out[longest], dose: cut };
+  }
+  return out;
 }

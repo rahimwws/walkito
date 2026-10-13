@@ -51,6 +51,20 @@ export function grantDevAccess(): void {
   for (const listener of listeners) listener();
 }
 
+/** Development only: back to the paywall, for `walkito.dev://?resetDevAccess`
+ * and the paywall and Home offer previews (`skip.ts`). */
+export function revokeDevAccess(): void {
+  if (!__DEV__) return;
+  // The first paywall's two intro steps play once per phone
+  // (`pages/offer/model/intro.ts`); seeing the paywall again means seeing it
+  // from the start.
+  kv.remove('offer/intro-seen');
+  if (!devGranted) return;
+  devGranted = false;
+  kv.remove(DEV_KEY);
+  for (const listener of listeners) listener();
+}
+
 export function compAccess(now: number = Date.now()): boolean {
   if (devGranted) return true;
   return until != null && (until === FOREVER || until > now);
@@ -103,6 +117,16 @@ export function startCompAccess(): void {
   if (started) return;
   started = true;
   void refreshCompAccess();
+  if (__DEV__) {
+    // `xcrun simctl openurl booted "walkito.dev://?resetDevAccess"` takes the
+    // simulator's pretend purchase away, so the paywall can be looked at again.
+    const { Linking } = require('react-native') as typeof import('react-native');
+    const onUrl = (url: string | null) => {
+      if (url != null && /[?&]resetDevAccess\b/.test(url)) revokeDevAccess();
+    };
+    void Linking.getInitialURL().then(onUrl).catch(() => undefined);
+    Linking.addEventListener('url', ({ url }) => onUrl(url));
+  }
   supabase?.auth.onAuthStateChange((event) => {
     // Deferred: supabase-js holds its auth lock while this callback runs, and
     // a session read from inside it waits on that lock forever.

@@ -232,6 +232,15 @@ export {
   type PlanMeta,
 } from './model/plan/catalogue-meta';
 export { doseFor, doseSeconds, type PlanDose } from './model/plan/dose';
+export {
+  doseTimeline,
+  timelineAt,
+  timelineSeconds,
+  type RepReading,
+  type Segment,
+  type TimelineReading,
+  type TimelineSide,
+} from './model/plan/timeline';
 export { allowed, playableId, pogoAllowed, type EligibilityContext } from './model/plan/eligibility';
 export {
   GOAL_ORDER,
@@ -260,8 +269,10 @@ export {
   type TodayReason,
 } from './model/plan/today';
 export {
+  WEEK_SHAPES,
   addDays,
   buildWeek,
+  focusChainOf,
   weekIndexFor,
   weekStartOf,
   type DayType,
@@ -303,6 +314,7 @@ export {
   setOutcomeAreas,
   setOutcomeKind,
   setPlanSettings,
+  storedWeeks,
   swapFor,
   testDue,
   todayKey,

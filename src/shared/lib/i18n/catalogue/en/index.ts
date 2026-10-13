@@ -13,6 +13,11 @@ import { PLAYER_EN } from './player';
 import { TESTDAY_EN } from './testday';
 import { WIDGET_EN } from './widget';
 import { UPDATE_EN } from './update';
+import { DONE_EN } from './done';
+import { STREAKS_EN } from './streaks';
+import { STICKERS_EN } from './stickers';
+import { RECAP_EN } from './recap';
+import { HOME_OFFER_EN } from './home-offer';
 
 /**
  * English, assembled from its domain files.
@@ -42,4 +47,9 @@ export const en = {
   ...PLAYER_EN,
   ...TESTDAY_EN,
   ...UPDATE_EN,
+  ...DONE_EN,
+  ...STREAKS_EN,
+  ...STICKERS_EN,
+  ...RECAP_EN,
+  ...HOME_OFFER_EN,
 };

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -17,6 +18,9 @@ export type PlanOptionProps = {
   title: string;
   /** "Best value", or the discount on a returning visit. */
   badge?: string;
+  /** Draws the badge in the screen's own finish; a small capsule in `accent`
+   * otherwise. */
+  renderBadge?: (label: string) => ReactNode;
   /**
    * The billed amount — "$44.99 per year". The most prominent price on the
    * row, always.
@@ -37,6 +41,9 @@ export type PlanOptionProps = {
    * selecting it would arm a buy button with nothing behind it. */
   disabled?: boolean;
   selected: boolean;
+  /** The colour a chosen row is outlined and lit in. The app's violet by
+   * default; the paywall passes its own blue. */
+  accent?: string;
   onPress: () => void;
 };
 
@@ -53,11 +60,13 @@ export type PlanOptionProps = {
 export function PlanOption({
   title,
   badge,
+  renderBadge,
   price,
   was,
   note,
   disabled = false,
   selected,
+  accent = PRIMARY,
   onPress,
 }: PlanOptionProps) {
   const scheme = useColorScheme();
@@ -75,8 +84,10 @@ export function PlanOption({
   );
 
   const rowStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(chosen.value, [0, 1], ['transparent', colors.card]),
+    backgroundColor: interpolateColor(chosen.value, [0, 1], [colors.card, colors.card]),
+    borderColor: interpolateColor(chosen.value, [0, 1], [meter.track, accent]),
   }));
+  const dotStyle = useAnimatedStyle(() => ({ transform: [{ scale: chosen.value }] }));
 
   return (
     <Animated.View style={[styles.row, rowStyle, disabled && styles.disabled]}>
@@ -87,12 +98,19 @@ export function PlanOption({
         onPress={onPress}
         style={styles.press}>
         <View style={styles.head}>
+          <View style={[styles.radio, { borderColor: selected ? accent : meter.unit }]}>
+            <Animated.View style={[styles.radioDot, { backgroundColor: accent }, dotStyle]} />
+          </View>
           <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
-          {badge != null && (
-            <View style={[styles.badge, { backgroundColor: meter.track }]}>
-              <Text style={[styles.badgeText, { color: PRIMARY }]}>{badge}</Text>
-            </View>
-          )}
+          {/* Inside the row, over the price, a small chip. */}
+          {badge != null &&
+            (renderBadge != null ? (
+              renderBadge(badge)
+            ) : (
+              <View style={[styles.badge, { backgroundColor: accent }]}>
+                <Text style={styles.badgeText}>{badge}</Text>
+              </View>
+            ))}
         </View>
 
         {/* The billed amount, and the struck-through one beside it. Keyed on
@@ -123,16 +141,26 @@ export function PlanOption({
 
 const styles = StyleSheet.create({
   row: {
-    borderRadius: 18,
+    borderRadius: 26,
     borderCurve: 'continuous',
+    borderWidth: 2,
   },
+  radio: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  radioDot: { width: 10, height: 10, borderRadius: 5 },
   disabled: { opacity: 0.45 },
   press: {
     // A column, not a row. The billed price has to sit under the title at
     // display size, and a price pinned to the right edge cannot be larger than
     // the title without unbalancing the row.
-    paddingHorizontal: 16,
-    paddingVertical: 14,
+    paddingHorizontal: 18,
+    paddingVertical: 16,
     gap: 2,
   },
   head: {
@@ -147,10 +175,10 @@ const styles = StyleSheet.create({
   badge: {
     borderRadius: 8,
     borderCurve: 'continuous',
-    paddingHorizontal: 8,
+    paddingHorizontal: 9,
     paddingVertical: 3,
   },
-  badgeText: fonts.heavy(11, 0.4),
+  badgeText: { ...fonts.heavy(11, 0.2), color: '#FFFFFF' },
   priceRow: {
     flexDirection: 'row',
     alignItems: 'baseline',

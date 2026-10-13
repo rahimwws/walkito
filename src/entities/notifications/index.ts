@@ -64,3 +64,22 @@ export {
   wakeMinutes,
 } from './model/wake';
 export { setAudience, type Audience } from './model/audience';
+export { NOTIFICATION_ART, type NotificationArt } from './model/art';
+export { PREVIEW_KIND, previewNotification, type PreviewOptions } from './model/preview';
+export {
+  COMEBACK_KIND,
+  TRIAL_ENDING_KIND,
+  cancelComebackPushes,
+  dismissLastChance,
+  endsSoonMessage,
+  lastChanceMessage,
+  notificationsPossible,
+  prepareComebackPush,
+  releaseComebackPush,
+  scheduleEndsSoonPush,
+  scheduleTrialReminder,
+  sendComebackPush,
+  trialEndingMessage,
+  type ComebackDeals,
+  type ReadyComeback,
+} from './model/offer-pushes';

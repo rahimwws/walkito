@@ -2,8 +2,10 @@ import Constants from 'expo-constants';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
-import { compAccess, subscribeComp } from './comp';
+import { compAccess, grantDevAccess, subscribeComp } from './comp';
 import { type Purchases as Store, unconfigured } from './purchase';
+import { isSamplePlan, sampleOffering, samplePricesOn } from './samples';
+import { storeSheetClosed, storeSheetOpened } from './skip';
 
 /**
  * Which store the app talks to, decided once at startup.
@@ -171,7 +173,56 @@ function pick(): Store {
  * branches were all written against this contract before there was anything
  * behind it, so none of them needed touching when there was.
  */
-export const purchases: Store = withComp(pick());
+export const purchases: Store = withSamplePrices(withComp(withSheetCount(pick())));
+
+/**
+ * The store, counting its own sheets: a purchase, a restore and the offer-code
+ * sheet each hold `skip.ts` from reading the app going to the background as
+ * the person leaving it — on Android the Play billing sheet is reported that
+ * way, and leaving is what ends the one-time trial offer.
+ */
+function withSheetCount(store: Store): Store {
+  const held =
+    <A extends unknown[], R>(call: (...args: A) => Promise<R>) =>
+    async (...args: A): Promise<R> => {
+      storeSheetOpened();
+      try {
+        return await call(...args);
+      } finally {
+        storeSheetClosed();
+      }
+    };
+  return {
+    ...store,
+    buy: held(store.buy),
+    buyProduct: held(store.buyProduct),
+    restore: held(store.restore),
+    redeemCode: held(store.redeemCode),
+  };
+}
+
+/**
+ * Development only: sample prices instead of the store (`samples.ts`), while
+ * `?samplePrices` is on. `configured` reads true then, so every screen draws
+ * as it will against a store; buying a sample plan grants the simulator's
+ * pretend purchase. A release build gets the store untouched.
+ */
+function withSamplePrices(store: Store): Store {
+  if (!__DEV__) return store;
+  return {
+    ...store,
+    get configured() {
+      return store.configured || samplePricesOn();
+    },
+    offering: (identifier) =>
+      samplePricesOn() ? Promise.resolve(sampleOffering(identifier)) : store.offering(identifier),
+    buy: async (plan) => {
+      if (!isSamplePlan(plan)) return store.buy(plan);
+      grantDevAccess();
+      return { status: 'purchased' };
+    },
+  };
+}
 
 /**
  * The store, unlocked as well for an account granted access (`comp.ts`): the

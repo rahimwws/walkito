@@ -1,7 +1,6 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
 import ArrowShrink01Icon from '@hugeicons/core-free-icons/ArrowShrink01Icon';
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
-import Backpack03Icon from '@hugeicons/core-free-icons/Backpack03Icon';
 import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
 import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
 import ReplayIcon from '@hugeicons/core-free-icons/ReplayIcon';
@@ -11,6 +10,8 @@ import VolumeHighIcon from '@hugeicons/core-free-icons/VolumeHighIcon';
 import VolumeOffIcon from '@hugeicons/core-free-icons/VolumeOffIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
@@ -44,16 +45,21 @@ import {
   writeLog,
   exerciseById,
   exerciseByTitle,
+  doseTimeline,
+  timelineAt,
+  timelineSeconds,
   kindFor,
   loadNoteFor,
   movesFor,
   prescriptionFor,
   useProgramState,
-  useStreak,
   type Exercise,
   type ProgramDay,
   type CantDoReason,
+  type PlanDose,
+  type Segment,
   type Tempo,
+  type TimelineReading,
 } from '@/entities/program';
 import { useIntake } from '@/entities/profile';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
@@ -64,15 +70,19 @@ import { setSoundPrefs, useSoundPrefs } from '@/shared/lib/sound';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { holdGlowStill } from '@/shared/ui/glow';
-import { PrimaryButton } from '@/shared/ui/primary-button';
+import { MascotStill, noInternetRig } from '@/shared/ui/mascot';
+import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { mirroredFor } from '../model/mirror';
+import { BreakOverlay } from './break-overlay';
 import { CountInOverlay } from './count-in-overlay';
 import { SessionDoneSheet } from './session-done-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
 import { CantDoSheet, PainRuleSheet } from './session-sheets';
+import { playCountInCue } from '../model/count-in-sound';
 import { playTempoCue, preloadTempoSounds } from '../model/tempo-sound';
 import { hasInstruction, instructionSpeaking, playInstruction, stopInstruction } from '../model/exercise-voice';
 import { clearResume, readResume, writeResume } from '../model/session-resume';
@@ -173,6 +183,8 @@ function EdgeFade({ side }: { side: 'left' | 'right' }) {
  * against a wall a couple of metres away — and no longer the biggest thing on
  * the screen. The demonstration is. */
 const CLOCK_SIZE = 64;
+/** The phase and foot pills over the clock. */
+const PILL_HEIGHT = 38;
 /** SwiftUI hosts do not self-size reliably inside flex, so the digits get a
  * fixed box to sit in — the same ratio `HeroStat` settled on. */
 const CLOCK_BOX = CLOCK_SIZE * 1.14;
@@ -207,6 +219,9 @@ const STAGE_CHIP = 28;
  * drawn in the light scheme's colours whatever the app is in. */
 const CHIP_FILL = 'rgba(255,255,255,0.92)';
 const CHIP_INK = palette.light.foreground;
+/** The unplugged mascot over a clip that did not load: small, so the line under
+ * it still sits where the clip would have been. */
+const CLIP_FAILED_MASCOT = 64;
 
 /** "01:00", counting down. Padded on both halves so the digits never reflow. */
 function clock(seconds: number): string {
@@ -279,6 +294,13 @@ type MovePlan = {
   perSide: boolean;
   /** Heel raises at the top of the calf chain: load with a backpack. */
   addWeight?: boolean;
+  /**
+   * The planned dose, laid out set by set (`doseTimeline`): work on each foot,
+   * the rests and the changes of foot. Present for the weekly plan's moves;
+   * null for a protocol's held time, a swapped-in move, and the old program's
+   * days, which keep the single countdown.
+   */
+  timeline?: readonly Segment[] | null;
 };
 
 /** Moves at least this long hear their instruction a second time, halfway. */
@@ -340,6 +362,35 @@ function firstStrengthDay(blockIndex: number): number | null {
   return null;
 }
 
+/**
+ * The line under the move's name while a set of a planned move runs: which set
+ * of how many. Left out of a one-set move, where "Set 1 of 1" only says nothing
+ * twice. The rep is the big number itself (see `repCount`), and rests and
+ * changes of foot have a screen of their own (`BreakOverlay`).
+ */
+function workLine(reading: TimelineReading, t: ReturnType<typeof useT>): string | null {
+  const segment = reading.segment;
+  if (segment.kind !== 'work' || segment.sets <= 1) return null;
+  return t('player.line.set', { set: segment.set, sets: segment.sets });
+}
+
+/**
+ * The word over the big number while a set runs: what to do right now. "Hold"
+ * and "Relax" on a held rep, "Up", "Hold", "Down" on a tempo rep, in a filled
+ * pill, violet while working and plain while letting go. Plain reps at a steady
+ * pace have no phase, and a single hold says "Hold".
+ */
+function workPill(
+  reading: TimelineReading,
+  t: ReturnType<typeof useT>,
+): { label: string; easing: boolean } | null {
+  const rep = reading.rep;
+  if (reading.segment.kind !== 'work' || rep == null) return null;
+  if (rep.phase === 'relax') return { label: t('player.phase.relax'), easing: true };
+  if (rep.phase === 'rep') return null;
+  return { label: t(PHASE_KEY[rep.phase]), easing: false };
+}
+
 type Frame = { x: number; y: number; width: number; height: number };
 
 /**
@@ -362,6 +413,14 @@ export type PlaylistStep = {
   cadence?: Cadence;
   /** The plan's dose asks for weight on top — shown as the backpack line. */
   addWeight?: boolean;
+  /**
+   * The weekly plan's dose itself. With it the move runs set by set — the
+   * line under the name says which set, which rep and which foot, rests and
+   * changes of foot get their own countdown, and "Done" ends a set early — and
+   * its length is the dose's own (`timelineSeconds`), the same seconds the
+   * plan fitted the day with.
+   */
+  dose?: PlanDose;
 };
 
 export type SessionViewProps = {
@@ -571,18 +630,23 @@ function SessionRun({
   const [swaps, setSwaps] = useState<Readonly<Record<number, string>>>({});
 
   const basePlan: readonly MovePlan[] = playlist != null
-    ? playlist.map((step) => ({
+    ? playlist.map((step) => {
+        const timeline = step.dose != null ? doseTimeline(step.dose) : null;
+        return {
         exercise: exerciseById(step.exerciseId) ?? null,
         // The playlist's own length, clamped for the same reason `planMove`
-        // clamps its own: the frame callback divides by this.
-        seconds: Math.max(1, Math.round(step.seconds)),
+        // clamps its own: the frame callback divides by this. A planned dose
+        // is timed by its timeline, which is what the plan fitted it with.
+        seconds: Math.max(1, Math.round(timeline != null ? timelineSeconds(timeline) : step.seconds)),
+        timeline,
         // No tempo unless the step brings one. A protocol is held time, not
         // counted reps, and a readout counting reps over a stretch would be
         // inventing a dose; the weekly plan's heel raises do bring theirs.
         cadence: step.cadence ?? null,
         perSide: step.perSide === true,
         addWeight: step.addWeight === true,
-      }))
+      };
+      })
     : moves.map((title) => planMove(title, day.block, progressionOffset));
 
   const plan: readonly MovePlan[] = basePlan.map((entry, index) => {
@@ -722,7 +786,11 @@ function SessionRun({
   const [celebrating, setCelebrating] = useState(false);
   /** The celebration has been closed, and the host told. See its `onClose`. */
   const closedDone = useRef(false);
-  const streak = useStreak();
+  /** The session's length for the closing sheet: the dose the player timed,
+   * every move at its own length, never the wall clock. Pauses, the count-ins
+   * and the time spent reading the pain rule are not the session, and a tile
+   * that grew with them would reward taking longer. */
+  const doseMinutes = Math.max(1, Math.round(plan.reduce((sum, entry) => sum + entry.seconds, 0) / 60));
 
   const [clipFailed, setClipFailed] = useState(false);
   useEffect(() => setClipFailed(false), [move]);
@@ -896,10 +964,25 @@ function SessionRun({
    * Derived, not stored: it is a pure function of a second and a dose, and
    * anything derived that is also stored is a second copy that can be wrong.
    */
+  /**
+   * Where a planned move stands: which segment (a set on one foot, a rest, a
+   * change of foot), and where the rep is inside a set. Null for a move with no
+   * timeline, which keeps the single countdown.
+   */
+  const reading: TimelineReading | null =
+    current?.timeline != null ? timelineAt(current.timeline, elapsed) : null;
+
   const phase: PhaseReading | null =
-    current?.cadence != null
-      ? phaseAt(elapsed, current.cadence.tempo, current.cadence.reps, current.cadence.sets)
-      : null;
+    reading != null
+      ? reading.segment.kind === 'work' &&
+        reading.segment.tempo != null &&
+        reading.rep?.rep != null &&
+        (reading.rep.phase === 'up' || reading.rep.phase === 'hold' || reading.rep.phase === 'down')
+        ? { phase: reading.rep.phase, secondsLeft: reading.rep.secondsLeft, rep: reading.rep.rep, set: reading.segment.set, done: false }
+        : null
+      : current?.cadence != null
+        ? phaseAt(elapsed, current.cadence.tempo, current.cadence.reps, current.cadence.sets)
+        : null;
 
   /**
    * Which foot, and how long is left on it.
@@ -909,9 +992,15 @@ function SessionRun({
    * of at the one place that knows.
    */
   const side: SideReading | null =
-    current?.perSide === true
-      ? sideAt(elapsed, moveSeconds, current.cadence?.tempo ?? null)
-      : null;
+    reading != null
+      ? reading.segment.kind === 'work' && reading.segment.side != null
+        ? { side: reading.segment.side, secondsLeft: reading.secondsLeft, last: reading.segment.side === 'left' }
+        : reading.segment.kind === 'switch'
+          ? { side: reading.segment.to, secondsLeft: reading.secondsLeft, last: reading.segment.to === 'left' }
+          : null
+      : current?.perSide === true
+        ? sideAt(elapsed, moveSeconds, current.cadence?.tempo ?? null)
+        : null;
 
   /** What is left of the move itself, whatever the big number happens to be
    * counting. This is what "the move is over" means, and the only thing that
@@ -953,7 +1042,48 @@ function SessionRun({
    * a number nobody is following. Seconds left in the move where there is not,
    * which is exactly what this readout has always shown.
    */
-  const remaining = phase != null ? phase.secondsLeft : moveLeft;
+  const remaining =
+    reading != null ? (reading.rep?.secondsLeft ?? reading.secondsLeft) : phase != null ? phase.secondsLeft : moveLeft;
+
+  /**
+   * A tap when a set ends, and the count-in's own "go" when the next set begins
+   * after a rest or a change of foot: the break counts its last three seconds
+   * out loud (`BreakOverlay`), and this is the word that ends the count. Within
+   * one move only: a new move starts on the count-in itself, and a change of
+   * foot has its own buzz (see `announcedSide`).
+   */
+  const lastSegment = useRef<{ step: number; index: number } | null>(null);
+  const segmentIndex = reading?.index ?? null;
+  const segmentKind = reading?.segment.kind ?? null;
+  useEffect(() => {
+    const was = lastSegment.current;
+    lastSegment.current = segmentIndex == null ? null : { step, index: segmentIndex };
+    if (segmentIndex == null || was == null || was.step !== step || was.index === segmentIndex) return;
+    if (segmentKind === 'rest') void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    else if (segmentKind === 'work') {
+      playCountInCue('go');
+      void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
+    }
+  }, [segmentIndex, segmentKind, step]);
+
+  /**
+   * "Done", "Skip", "Next": the rest of this segment, given up. A set finished
+   * before the clock, a rest not wanted, the other foot already in place. The
+   * playhead moves to where the segment ends; the last one ends the move, and
+   * the reaction that advances on a move running out takes it from there. A
+   * press while paused carries on: it is a way forward, not a step.
+   */
+  const skipSegment = useCallback(() => {
+    if (reading == null) return;
+    const total = moveMs.value / 1000;
+    if (total <= 0) return;
+    const end = Math.min(total, reading.segment.start + reading.segment.seconds);
+    void Haptics.selectionAsync();
+    progress.value = Math.min(1, end / total);
+    deadline.value = 0;
+    setElapsed(Math.floor(end));
+    setPlaying(true);
+  }, [reading, moveMs, progress, deadline]);
 
   /**
    * The Lock Screen's copy of this session, if it has one.
@@ -1527,7 +1657,13 @@ function SessionRun({
    */
   const counter: { text: string; spoken: string } | null = finished
     ? { text: t('widgets.sessionDone'), spoken: t('widgets.sessionDoneSpoken') }
-    : phase != null && current?.cadence != null
+    : reading != null
+      ? (() => {
+          const text = workLine(reading, t);
+          // Read aloud with commas: a middot is read as nothing at all.
+          return text == null ? null : { text, spoken: text.replace(/ · /g, ', ') };
+        })()
+      : phase != null && current?.cadence != null
       ? {
           text: t('widgets.sessionRepLine', {
             phase: t(PHASE_KEY[phase.phase]),
@@ -1611,6 +1747,39 @@ function SessionRun({
       : playing
         ? 'running'
         : 'paused';
+
+  /** The small button beside Pause during a set of a planned move: this set
+   * is done before the clock. See `skipSegment`. A rest and a change of foot
+   * have their own Skip, on their own screen. */
+  const showSetDone = reading?.segment.kind === 'work' && !finished && !ready && !counting;
+
+  /** The rest or change of foot under way, for `BreakOverlay`. */
+  const breakSegment =
+    !finished && reading != null && (reading.segment.kind === 'rest' || reading.segment.kind === 'switch')
+      ? reading.segment
+      : null;
+
+  /** The pill over the clock. See `workPill`. */
+  const pill = reading != null && !finished ? workPill(reading, t) : null;
+  /** Whether this move ever shows a pill, so the row keeps its height for the
+   * whole move and the stage does not jump when one comes and goes. */
+  const hasPills =
+    current?.timeline?.some(
+      (segment) => segment.kind === 'work' && (segment.side != null || segment.holdSec != null || segment.tempo != null),
+    ) === true;
+  /**
+   * During a set of counted reps the big number counts the reps, "4/10", not
+   * seconds. A held rep is two seconds held and two let go, and a clock that
+   * went 2, 1, 2, 1 under it told nobody anything. A timed hold (a stretch, a
+   * balance) has no reps and keeps its countdown.
+   */
+  const repCount =
+    !finished && reading?.segment.kind === 'work' && reading.rep?.rep != null && reading.rep.reps != null
+      ? { rep: reading.rep.rep, reps: reading.rep.reps }
+      : null;
+  /** Which foot, in a pill beside it, during a one-foot set. */
+  const pillSide =
+    !finished && reading?.segment.kind === 'work' && reading.segment.side != null ? reading.segment.side : null;
 
   const pauseByHand = useCallback(() => {
     // Not a question, so nothing comes back by itself: the move waits for
@@ -1826,6 +1995,38 @@ function SessionRun({
         />
 
         <View style={styles.readout}>
+          {/* What to do this second, in a pill big enough to read from the
+              floor, and the foot beside it. The row keeps its height for the
+              whole of a planned move, so the stage does not jump each time a
+              rest takes the pills away. */}
+          {hasPills && (
+            <View style={styles.pills}>
+              {pill != null && (
+                <View
+                  style={[
+                    styles.pill,
+                    { backgroundColor: pill.easing ? meter.track : PRIMARY },
+                  ]}>
+                  <Text
+                    accessibilityLiveRegion="polite"
+                    style={[styles.pillText, { color: pill.easing ? colors.foreground : '#FFFFFF' }]}
+                    numberOfLines={1}>
+                    {pill.label}
+                  </Text>
+                </View>
+              )}
+              {pillSide != null && (
+                <View style={[styles.pill, { backgroundColor: meter.track }]}>
+                  <View style={pillSide === 'left' ? styles.mirrored : undefined}>
+                    <HugeiconsIcon icon={FootprintsIcon} size={18} color={colors.foreground} strokeWidth={2} />
+                  </View>
+                  <Text style={[styles.pillText, { color: colors.foreground }]} numberOfLines={1}>
+                    {t(SIDE_KEY[pillSide])}
+                  </Text>
+                </View>
+              )}
+            </View>
+          )}
           {/* The rolling treatment the rest of the app uses for a figure that
               changes. Dimmed while paused, so a clock that has stopped looks
               stopped from across the room.
@@ -1836,16 +2037,27 @@ function SessionRun({
           <View
             accessible
             accessibilityRole="timer"
-            accessibilityLabel={t('session.secondsLeftA11y', { count: remaining })}
-            style={styles.clockBox}>
+            accessibilityLabel={
+              repCount != null
+                ? t('player.line.plain', repCount)
+                : t('session.secondsLeftA11y', { count: remaining })
+            }
+            // Hidden under a rest or a change of foot, which have their own
+            // countdown: through the blur a second clock read as a ghost.
+            style={[styles.clockBox, repCount != null && styles.clockRow, breakSegment != null && styles.hidden]}>
             <AnimatedNumber
-              text={clock(remaining)}
-              value={remaining}
+              text={repCount != null ? t('player.repCount', repCount) : clock(remaining)}
+              value={repCount != null ? repCount.rep : remaining}
               color={ctaState === 'paused' ? meter.caption : colors.foreground}
               fontSize={CLOCK_SIZE}
               weight="heavy"
               duration={CLOCK_ROLL_SECONDS}
             />
+            {repCount != null && (
+              <Text style={[styles.repUnit, { color: meter.label }]}>
+                {t('player.unit.reps', { count: repCount.reps })}
+              </Text>
+            )}
           </View>
           {/* The name is all the screen has room to show. Why this move is in
               the session, the cue for it, and the load note on the day the load
@@ -1866,7 +2078,11 @@ function SessionRun({
           {counter != null && (
             <Text
               accessibilityLabel={counter.spoken}
-              style={[styles.counter, { color: meter.label }]}>
+              style={[
+                styles.counter,
+                reading != null && !finished && styles.counterStrong,
+                { color: reading != null && !finished ? colors.foreground : meter.label },
+              ]}>
               {counter.text}
             </Text>
           )}
@@ -1874,7 +2090,7 @@ function SessionRun({
               on the days the dose asks for it. */}
           {!finished && (current?.addWeight === true || loadNote != null) && (
             <View style={styles.load}>
-              <HugeiconsIcon icon={Backpack03Icon} size={17} color={meter.label} strokeWidth={1.8} />
+              <FluentIcon name="backpack" size={18} />
               <Text style={[styles.loadText, { color: meter.label }]}>
                 {current?.addWeight === true ? t('player.load.backpack') : loadNote}
               </Text>
@@ -1916,7 +2132,21 @@ function SessionRun({
         {/* Where the three-icon transport used to be. A scrubber offers four
             answers — back, pause, forward, drag — to a screen that only ever
             has one thing to do next. */}
-        <View style={styles.transport}>{ctaButton}</View>
+        <View style={styles.transport}>
+          <View style={styles.transportMain}>{ctaButton}</View>
+          {showSetDone && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('player.cta.setDone')}
+              onPress={skipSegment}
+              style={({ pressed }) => [styles.skip, { backgroundColor: colors.card }, pressed && { opacity: 0.6 }]}>
+              <HugeiconsIcon icon={Tick02Icon} size={22} color={colors.foreground} strokeWidth={2} />
+              <Text style={[styles.skipText, { color: colors.foreground }]} numberOfLines={1} adjustsFontSizeToFit>
+                {t('player.cta.setDone')}
+              </Text>
+            </Pressable>
+          )}
+        </View>
       </Animated.View>
 
       {/* Absolute, so one interpolation carries it from the stage to the whole
@@ -1947,9 +2177,22 @@ function SessionRun({
         </View>
 
         {/* Over the player, not instead of it: the stage keeps its size and its
-            corner, and the line sits in the space the clip would have filled. */}
+            corner, and the line sits in the space the clip would have filled.
+            The unplugged mascot above it is the still drawing, in the light
+            scheme's colours like the chips, because the studio is light in
+            both. Gone once the session is over: the done sheet brings its own. */}
         {clipFailed && (
           <View style={styles.clipFallback} pointerEvents="none">
+            {!finished && (
+              <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+                <MascotStill
+                  rig={noInternetRig}
+                  size={CLIP_FAILED_MASCOT}
+                  paper={palette.light.background}
+                  ink={CHIP_INK}
+                />
+              </View>
+            )}
             <Text style={[styles.clipFallbackText, { color: CHIP_INK }]}>
               {t('widgets.clipFailed')}
             </Text>
@@ -2071,6 +2314,24 @@ function SessionRun({
         onDone={() => setCountFrom(null)}
       />
 
+      {/* The rest between sets and the change of foot, in the same seat as
+          the count-in and for the same reason. */}
+      <BreakOverlay
+        segment={breakSegment}
+        id={breakSegment == null ? null : `${step}:${reading?.index ?? 0}`}
+        secondsLeft={reading?.secondsLeft ?? 0}
+        progress={progress}
+        moveMs={moveMs}
+        running={running}
+        playing={playing}
+        move={move ?? ''}
+        top={expanded ? 0 : HEADER_HEIGHT + PROGRESS_BLOCK}
+        bottom={floor}
+        onSkip={skipSegment}
+        onPause={pauseByHand}
+        onResume={() => setPlaying(true)}
+      />
+
       <SessionPainSheet
         visible={askingPain}
         onPick={reportPain}
@@ -2095,8 +2356,11 @@ function SessionRun({
       <SessionDoneSheet
         visible={celebrating}
         early={endedEarly}
-        streak={streak.current}
         moves={moveCount}
+        minutes={doseMinutes}
+        // Every host but the pain check's relief moves files the run when the
+        // sheet closes; that one passes no `onFinish` and records nothing.
+        counts={onFinish != null}
         feedback={feedback}
         startedAt={startedAt.current.getTime()}
         onClose={() => {
@@ -2216,6 +2480,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 24,
+    gap: 10,
   },
   clipFallbackText: {
     ...fonts.medium(15),
@@ -2285,6 +2550,37 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 4,
   },
+  /** The set, during a planned move: read from the floor too. */
+  counterStrong: fonts.bold(18, -0.1),
+  hidden: { opacity: 0 },
+  /** "4/10 reps": the count and its unit on one line. */
+  clockRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    gap: 8,
+  },
+  repUnit: {
+    ...fonts.bold(20, -0.2),
+    paddingBottom: CLOCK_SIZE * 0.22,
+  },
+  pills: {
+    height: PILL_HEIGHT,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    marginBottom: 2,
+  },
+  pill: {
+    height: PILL_HEIGHT,
+    borderRadius: PILL_HEIGHT / 2,
+    borderCurve: 'continuous',
+    paddingHorizontal: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  pillText: fonts.heavy(19, -0.2),
   load: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -2312,7 +2608,24 @@ const styles = StyleSheet.create({
   hintText: fonts.medium(13),
   transport: {
     paddingHorizontal: SIDE,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
   },
+  transportMain: {
+    flex: 1,
+  },
+  skip: {
+    width: 92,
+    height: PRIMARY_BUTTON_HEIGHT,
+    borderRadius: PRIMARY_BUTTON_HEIGHT / 2,
+    borderCurve: 'continuous',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 2,
+    paddingHorizontal: 8,
+  },
+  skipText: fonts.semibold(13),
   continueRow: {
     position: 'absolute',
     left: SIDE,

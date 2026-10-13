@@ -8,6 +8,7 @@ import Animated, {
   runOnJS,
   useAnimatedStyle,
   useSharedValue,
+  withDelay,
   withTiming,
 } from 'react-native-reanimated';
 
@@ -42,7 +43,19 @@ export type TypedTextProps = {
   maxDuration?: number;
   /** Fires once the line has finished. */
   onDone?: () => void;
+  /** Waits this long before the first character, so a screen can type its
+   * lines one after another without mounting them late (which would shift
+   * everything above them as they appear). */
+  delay?: number;
+  /** Centres each line, for copy set in the middle of a screen. */
+  align?: 'left' | 'center';
 };
+
+/** How long a line takes to type, so a screen can start the next one as this
+ * one ends. The same sum the sweep uses. */
+export function typingDuration(text: string, maxDuration = INTRO_LINE_MS): number {
+  return Math.min((text.length + FADE_CHARS) * TYPE_MS, maxDuration);
+}
 
 /**
  * A line that types itself in.
@@ -61,6 +74,8 @@ export function TypedText({
   style,
   maxDuration = INTRO_LINE_MS,
   onDone,
+  delay = 0,
+  align = 'left',
 }: TypedTextProps) {
   const progress = useSharedValue(0);
   const done = useRef(onDone);
@@ -77,21 +92,25 @@ export function TypedText({
 
   useEffect(() => {
     progress.value = 0;
-    progress.value = withTiming(
-      1,
-      {
-        duration: Math.min(span * TYPE_MS, maxDuration),
-        // Linear: a character is a character, and easing the sweep would make
-        // the middle of the word race and the ends crawl.
-        easing: Easing.linear,
-        reduceMotion: ReduceMotion.System,
-      },
-      (finished) => {
-        'worklet';
-        if (finished) runOnJS(finish)();
-      },
+    progress.value = withDelay(
+      delay,
+      withTiming(
+        1,
+        {
+          duration: Math.min(span * TYPE_MS, maxDuration),
+          // Linear: a character is a character, and easing the sweep would make
+          // the middle of the word race and the ends crawl.
+          easing: Easing.linear,
+          reduceMotion: ReduceMotion.System,
+        },
+        (finished) => {
+          'worklet';
+          if (finished) runOnJS(finish)();
+        },
+      ),
+      ReduceMotion.System,
     );
-  }, [text, span, maxDuration, progress]);
+  }, [text, span, maxDuration, delay, progress]);
 
   // Explicit line breaks first, then words inside each line.
   //
@@ -114,7 +133,7 @@ export function TypedText({
       {lines.map((line, l) => {
         const words = line.split(' ');
         return (
-          <View key={l} style={styles.line}>
+          <View key={l} style={[styles.line, align === 'center' && styles.centred]}>
             {words.map((word, w) => {
               const start = cursor;
               cursor += word.length + 1;
@@ -192,4 +211,5 @@ const styles = StyleSheet.create({
   word: {
     flexDirection: 'row',
   },
+  centred: { justifyContent: 'center' },
 });

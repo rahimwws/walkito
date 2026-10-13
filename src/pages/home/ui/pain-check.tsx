@@ -1,12 +1,11 @@
 import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
-import StethoscopeIcon from '@hugeicons/core-free-icons/StethoscopeIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useIsFocused, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Image, Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -33,8 +32,10 @@ import {
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
-import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
+import { PROGRAM_EASING, PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
+import { FluentIcon } from '@/shared/ui/fluent-icon';
+import { Mascot, handsUpRig, painRig, type MascotHandle, type MascotProps } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { useSplashRevealed } from '@/shared/ui/splash';
@@ -67,6 +68,8 @@ const GLASS_WIDTH = '62%';
 const STAGGER = 34;
 const TILT = 5;
 const GLASS_HEIGHT = 182;
+/** The mascot on each card. The card clips, so a hop stays inside it. */
+const MASCOT_SIZE = 118;
 
 /** The title is a key, resolved where the card is drawn — so the pair repaints
  * with the language rather than at next launch. */
@@ -74,17 +77,17 @@ const CARDS = [
   {
     key: 'pain',
     title: 'home.itHurts',
-    art: require('@assets/home/mascot-pain.png'),
+    rig: painRig,
     /** Leading card: sits high and left, tipped anticlockwise. */
     side: 'left',
   },
   {
     key: 'nopain',
     title: 'home.noPain',
-    art: require('@assets/home/mascot-nopain.png'),
+    rig: handsUpRig,
     side: 'right',
   },
-] as const satisfies readonly { key: string; title: Key; art: unknown; side: 'left' | 'right' }[];
+] as const satisfies readonly { key: string; title: Key; rig: unknown; side: 'left' | 'right' }[];
 
 type CardKey = (typeof CARDS)[number]['key'];
 
@@ -93,6 +96,12 @@ export type PainCheckProps = {
    * the reordering above both key off — a good day is worth marking, and either
    * way the question is done and should stop holding the top of the screen. */
   onLogged?: (painless: boolean) => void;
+  /** A sheet of Home's is over the cards (the streak, a milestone): the
+   * mascots hold still under it. */
+  covered?: boolean;
+  /** The check-in's own sheets opened or closed, so Home can hold its other
+   * mascots still under them. */
+  onSheet?: (open: boolean) => void;
 };
 
 /**
@@ -118,14 +127,20 @@ export type PainCheckProps = {
  * by side. Now a tap picks — the chosen card comes level and forward while the
  * other tips away — and one primary underneath commits it.
  */
-export function PainCheck({ onLogged }: PainCheckProps) {
+export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
   const [selected, setSelected] = useState<CardKey | null>(null);
   const [open, setOpen] = useState(false);
+  const focused = useIsFocused();
   /** The red-flag check, behind "Something new?". */
   const [safety, setSafety] = useState(false);
+  const sheetRef = useRef(onSheet);
+  sheetRef.current = onSheet;
+  useEffect(() => {
+    sheetRef.current?.(open || safety);
+  }, [open, safety]);
   /** Before noon the question is about the first steps out of bed; after it,
    * about the day. Read per render, so a screen left open across noon follows. */
   const morning = isFirstStepTime(Date.now());
@@ -261,6 +276,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
                 // Not locked once answered. The cards stay live so a second
                 // check-in can be started from the same place as the first.
                 locked={false}
+                visible={focused && !open && !safety && !covered}
                 onPress={() => {
                   Haptics.selectionAsync();
                   setSelected(card.key);
@@ -410,8 +426,10 @@ function reliefDay(): ProgramDay {
  * It was an underlined line of grey text, which read as a footnote — and the
  * thing it opens is the one screen in the app that can say "see a doctor".
  * A tile, a title, the examples on a line of their own and a chevron make it
- * read as somewhere you can go, without making it loud. The stethoscope is
- * neutral on purpose: the row asks a question, it does not raise an alarm.
+ * read as somewhere you can go, without making it loud. The plaster is calm
+ * on purpose: the row asks a question, it does not raise an alarm. Not a face
+ * (the answer cards above already have Walkito in them) and not the
+ * stethoscope, whose navy outline the dark card swallows.
  */
 function SomethingNewRow({ onPress }: { onPress: () => void }) {
   const scheme = useColorScheme();
@@ -429,7 +447,7 @@ function SomethingNewRow({ onPress }: { onPress: () => void }) {
       style={({ pressed }) => [styles.newRow, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}
     >
       <View style={[styles.newTile, { backgroundColor: meter.iconTile }]}>
-        <HugeiconsIcon icon={StethoscopeIcon} size={21} color={colors.foreground} strokeWidth={1.8} />
+        <FluentIcon name="bandage" size={26} />
       </View>
       <View style={styles.newCopy}>
         <Text numberOfLines={1} style={[styles.newTitle, { color: colors.foreground }]}>
@@ -659,12 +677,15 @@ function PainCard({
   card,
   selected,
   dimmed,
+  visible,
   locked,
   onPress,
 }: {
   card: (typeof CARDS)[number];
   selected: boolean;
   dimmed: boolean;
+  /** The cards are on screen and nothing covers them. */
+  visible: boolean;
   /** The day's answer is already in. The cards stay legible — they are the
    * record of what was chosen — but they stop taking a new one. */
   locked: boolean;
@@ -678,6 +699,17 @@ function PainCard({
 
   const left = card.side === 'left';
   const pressed = useSharedValue(0);
+
+  // The mascot answers the pick: "It hurts" winces and stays with you,
+  // "No pain" gives a small hop. Both stand still until one is picked, and
+  // only the picked one breathes, so the screen opened every morning is not
+  // two loops running. No sound: this is a daily screen.
+  const mascot = useRef<MascotHandle>(null);
+  const picked = useRef(selected);
+  useEffect(() => {
+    if (selected && !picked.current) mascot.current?.play(card.key === 'pain' ? 'wince' : 'happy');
+    picked.current = selected;
+  }, [selected, card.key]);
 
   const chosen = useDerivedValue(
     () =>
@@ -774,7 +806,19 @@ function PainCard({
         <Animated.View style={[StyleSheet.absoluteFill, glass.shape, glass.ring, ring]} />
 
         <View style={glass.body}>
-          <Image source={card.art} style={glass.art} resizeMode="contain" />
+          <View style={glass.art}>
+            <CardMascot
+              ref={mascot}
+              rig={card.rig}
+              size={MASCOT_SIZE}
+              state={card.key === 'pain' && selected ? 'sad' : 'idle'}
+              // The sore-foot art as drawn: its pained face and ache marks.
+              restFace={card.key === 'pain' ? 'pain' : undefined}
+              ache={card.key === 'pain'}
+              surface={colors.card}
+              paused={!selected || !visible}
+            />
+          </View>
           <Text style={[glass.title, { color: colors.foreground }]}>{title}</Text>
         </View>
 
@@ -792,6 +836,16 @@ function PainCard({
       </Pressable>
     </Animated.View>
   );
+}
+
+/**
+ * A card's mascot, still under the plan as well: the overlay is not a route,
+ * so Home stays the focused tab under it. Its own component, so the plan's
+ * coming and going re-renders the mascot and not the card.
+ */
+function CardMascot({ paused = false, ...props }: MascotProps) {
+  const planOver = usePlanOver();
+  return <Mascot {...props} paused={paused || planOver} />;
 }
 
 const styles = StyleSheet.create({
@@ -946,7 +1000,7 @@ const glass = StyleSheet.create({
     paddingHorizontal: 12,
     gap: 6,
   },
-  art: { width: 118, height: 118 },
+  art: { width: MASCOT_SIZE, height: MASCOT_SIZE },
   title: {
     ...fonts.bold(19, -0.3),
     textAlign: 'center',

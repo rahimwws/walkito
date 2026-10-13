@@ -15,6 +15,11 @@ import { PLAYER_FR } from './player';
 import { TESTDAY_FR } from './testday';
 import { WIDGET_FR } from './widget';
 import { UPDATE_FR } from './update';
+import { DONE_FR } from './done';
+import { STREAKS_FR } from './streaks';
+import { STICKERS_FR } from './stickers';
+import { RECAP_FR } from './recap';
+import { HOME_OFFER_FR } from './home-offer';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -40,4 +45,9 @@ export const fr: CatalogueFor<'fr'> = {
   ...PLAYER_FR,
   ...TESTDAY_FR,
   ...UPDATE_FR,
+  ...DONE_FR,
+  ...STREAKS_FR,
+  ...STICKERS_FR,
+  ...RECAP_FR,
+  ...HOME_OFFER_FR,
 };

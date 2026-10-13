@@ -1,4 +1,8 @@
 export { SessionView, type PlaylistStep, type SessionViewProps } from './ui/session-view';
+/** The end-of-session sheet on demand, in development builds only: the dev
+ * menu's "Preview session done", or `walkito.dev://?previewDone` (and
+ * `?previewDone=stopped`). The app layer mounts it behind `__DEV__`. */
+export { SessionDonePreview } from './ui/session-done-preview';
 /** The arithmetic that turns a prescription into seconds.
  *
  * Exported because Today's Tasks prints the same figure the player counts down,
@@ -27,8 +31,19 @@ export {
   type ClipCacheState,
 } from './model/clip-cache';
 export { prefetchVoice, surveyVoice } from './model/voice-cache';
-/** One exercise's clip, looping — the plan screen's preview sheet. */
-export { ExercisePreview } from './ui/exercise-preview';
+/** One exercise's clip, looping — the plan screen's preview sheet, and the
+ * cards of onboarding's first week, which also draw its backdrop before a
+ * card's player exists. */
+export {
+  CLIP_BACKDROP,
+  ExercisePreview,
+  type ExercisePreviewHandle,
+  type ExercisePreviewProps,
+} from './ui/exercise-preview';
+/** Whether a clip is shown flipped for this side. Exported for a host that
+ * knows the side before the intake is saved, so it asks the same rule rather
+ * than restating it. */
+export { mirroredFor } from './model/mirror';
 /** The test day, whole: intro, the three tests, results.
  *
  * One flow for both hosts — Home presents it in a page sheet, Plan in its
