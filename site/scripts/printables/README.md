@@ -11,3 +11,9 @@ Regenerate when a guide's exercises, doses or red flags change:
    or use Playwright `page.pdf({ format: 'Letter', printBackground: true })`.
 4. Save as `public/downloads/walkito-<slug>.pdf` and a page-one preview as
    `walkito-<slug>.webp` (420 px wide). Keep each PDF around 250 KB.
+
+## Spanish and Russian sheets
+Same steps, then `node scripts/printables/build-localized.mjs` (from /site; set CHROMIUM_PATH if
+Playwright's own Chromium is missing). It writes `public/downloads/walkito-ejercicios-*.pdf` and
+`walkito-uprazhneniya-*.pdf` plus their `.webp` previews from the Spanish and Russian guides' data.
+The words on the sheet itself (title, how-to, labels, footer) are in that script.

@@ -33,37 +33,41 @@ export const metadata: Metadata = {
 };
 
 /**
- * Spanish labels for the English-only PDF printables. The PDFs themselves stay
- * in English (there are no Spanish PDF files), and each entry says so honestly
- * with "(PDF en inglés)".
+ * The Spanish PDF sheets (scripts/printables/build-localized.mjs, from the
+ * Spanish guides' own exercise data), each with its English original as a
+ * second download.
  */
 const PRINTABLES_ES: readonly {
   slug: string;
+  en: string;
   title: string;
   blurb: string;
   guide: string;
   pages: number;
 }[] = [
   {
-    slug: 'walkito-plantar-fasciitis-exercises',
-    title: 'Ejercicios para fascitis plantar (PDF en inglés)',
+    slug: 'walkito-ejercicios-fascitis-plantar',
+    en: 'walkito-plantar-fasciitis-exercises',
+    title: 'Ejercicios para fascitis plantar (PDF)',
     blurb: '8 estiramientos y ejercicios de fuerza de pantorrilla con dosis, un registro semanal y cuándo consultar a un profesional.',
     guide: '/es/ejercicios-fascitis-plantar/',
     pages: 2,
   },
   {
-    slug: 'walkito-flat-feet-exercises',
-    title: 'Ejercicios para pie plano (PDF en inglés)',
+    slug: 'walkito-ejercicios-pie-plano',
+    en: 'walkito-flat-feet-exercises',
+    title: 'Ejercicios para pie plano (PDF)',
     blurb: '10 ejercicios de arco, dedos y cadera con dosis, un registro semanal y cuándo consultar a un profesional.',
     guide: '/es/ejercicios-pie-plano/',
-    pages: 3,
+    pages: 2,
   },
   {
-    slug: 'walkito-standing-all-day-exercises',
-    title: 'Ejercicios para pies cansados de estar de pie (PDF en inglés)',
+    slug: 'walkito-ejercicios-pies-cansados-de-estar-de-pie',
+    en: 'walkito-standing-all-day-exercises',
+    title: 'Ejercicios para pies cansados de estar de pie (PDF)',
     blurb: '7 ejercicios cortos para turnos largos, con dosis, un registro semanal y cuándo consultar a un profesional.',
     guide: '/es/dolor-de-pies-por-estar-de-pie/',
-    pages: 2,
+    pages: 3,
   },
 ];
 
@@ -79,6 +83,7 @@ const SCHEMA = {
     name: p.title,
     description: p.blurb,
     encodingFormat: 'application/pdf',
+    inLanguage: 'es',
     url: `${SITE_URL}/downloads/${p.slug}.pdf`,
     isBasedOn: `${SITE_URL}${p.guide}`,
   })),
@@ -107,7 +112,7 @@ export default function PrintableSheetsEs() {
           Hojas PDF gratis que puedes imprimir y pegar en el refrigerador. Cada una tiene los
           ejercicios con una imagen, la dosis, cómo hacerlo, cuándo parar, un registro semanal
           para marcar los días, y cuándo consultar a un profesional de la salud. Vienen de
-          nuestras guías, así que las dosis coinciden. Los PDF están en inglés. Clínicas,
+          nuestras guías, así que las dosis coinciden. Cada hoja también está en inglés. Clínicas,
           entrenadores y docentes pueden imprimirlas y compartirlas libremente con pacientes y alumnos.
         </p>
         <EmailSignup lang="es" source="printables" page={PATH} />
@@ -132,6 +137,9 @@ export default function PrintableSheetsEs() {
                 <p>
                   <a className="printable-download" href={`/downloads/${p.slug}.pdf`} download>
                     Descargar PDF
+                  </a>{' '}
+                  <a href={`/downloads/${p.en}.pdf`} download hrefLang="en">
+                    Versión en inglés
                   </a>
                 </p>
               </div>

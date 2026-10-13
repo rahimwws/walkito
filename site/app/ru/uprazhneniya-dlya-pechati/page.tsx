@@ -31,33 +31,42 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * The Russian PDF sheets (scripts/printables/build-localized.mjs, from the
+ * Russian guides' own exercise data), each with its English original as a
+ * second download.
+ */
 const PRINTABLES_RU: readonly {
   slug: string;
+  en: string;
   title: string;
   blurb: string;
   guide: string;
   pages: number;
 }[] = [
   {
-    slug: 'walkito-plantar-fasciitis-exercises',
-    title: 'Упражнения при плантарном фасциите (PDF на английском)',
+    slug: 'walkito-uprazhneniya-plantarnyy-fastsiit',
+    en: 'walkito-plantar-fasciitis-exercises',
+    title: 'Упражнения при плантарном фасциите (PDF)',
     blurb: '8 растяжек и силовых упражнений для икр с дозировками, недельный журнал и когда обратиться к врачу.',
     guide: '/ru/bol-v-pyatke-uprazhneniya/',
     pages: 2,
   },
   {
-    slug: 'walkito-flat-feet-exercises',
-    title: 'Упражнения при плоскостопии (PDF на английском)',
+    slug: 'walkito-uprazhneniya-ploskostopie',
+    en: 'walkito-flat-feet-exercises',
+    title: 'Упражнения при плоскостопии (PDF)',
     blurb: '10 упражнений для свода, пальцев и бёдер с дозировками, недельный журнал и когда обратиться к врачу.',
     guide: '/ru/ploskostopie-uprazhneniya/',
     pages: 3,
   },
   {
-    slug: 'walkito-standing-all-day-exercises',
-    title: 'Упражнения при усталости стоп от стоячей работы (PDF на английском)',
+    slug: 'walkito-uprazhneniya-dlya-stoyachey-raboty',
+    en: 'walkito-standing-all-day-exercises',
+    title: 'Упражнения при усталости стоп от стоячей работы (PDF)',
     blurb: '7 коротких упражнений для длинных смен, с дозировками, недельный журнал и когда обратиться к врачу.',
     guide: '/ru/bolyat-nogi-ot-stoyaniya/',
-    pages: 2,
+    pages: 3,
   },
 ];
 
@@ -73,6 +82,7 @@ const SCHEMA = {
     name: p.title,
     description: p.blurb,
     encodingFormat: 'application/pdf',
+    inLanguage: 'ru',
     url: `${SITE_URL}/downloads/${p.slug}.pdf`,
     isBasedOn: `${SITE_URL}${p.guide}`,
   })),
@@ -101,7 +111,7 @@ export default function PrintableSheetsRu() {
           Бесплатные PDF-листы, которые можно распечатать и повесить на холодильник.
           На каждом листе упражнения с иллюстрацией, дозировкой, описанием выполнения,
           когда остановиться, недельный журнал для отметок и когда обратиться к врачу.
-          Они основаны на наших гайдах, поэтому дозировки совпадают. Файлы PDF на английском.
+          Они основаны на наших гайдах, поэтому дозировки совпадают. У каждого листа есть и версия на английском.
           Клиники, тренеры и преподаватели могут свободно распечатывать их и делиться ими с пациентами и клиентами.
         </p>
         <EmailSignup lang="ru" source="printables" page={PATH} />
@@ -126,6 +136,9 @@ export default function PrintableSheetsRu() {
                 <p>
                   <a className="printable-download" href={`/downloads/${p.slug}.pdf`} download>
                     Скачать PDF
+                  </a>{' '}
+                  <a href={`/downloads/${p.en}.pdf`} download hrefLang="en">
+                    Версия на английском
                   </a>
                 </p>
               </div>
