@@ -8,6 +8,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
+  FadeIn,
+  FadeInDown,
   ReduceMotion,
   interpolate,
   interpolateColor,
@@ -56,6 +58,11 @@ import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale
 import { SafetySheet } from './safety-sheet';
 
 const PRESS_MS = 90;
+/** The question leaving, and the answer arriving in its place. */
+const VIEW_OUT_MS = 200;
+const VIEW_IN_MS = 460;
+/** His reaction waits for the card to have risen in. */
+const SUMMARY_SHOT_MS = 380;
 const SELECT_MS = 260;
 const SELECT_EASING = Easing.bezier(0.23, 1, 0.32, 1);
 
@@ -150,6 +157,57 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   /** "Edit" on the answered card: the question again, the answer picked. */
   const [editing, setEditing] = useState(false);
   const answered = checkIn != null && !editing;
+
+  /**
+   * What is on screen, which follows `answered` a beat behind so the change
+   * is seen rather than cut.
+   *
+   * A fresh answer moves the whole block under the task list first (Home's
+   * `DailyStack`, `PROGRAM_MS`); swapping the cards for the answer in the
+   * middle of that crossing was the jolt. So: the crossing, then the question
+   * fades down and out, then the answer rises in. Edit runs the same fade the
+   * other way, with no crossing to wait for.
+   */
+  const target: 'question' | 'summary' = answered ? 'summary' : 'question';
+  const [view, setView] = useState(target);
+  const viewIn = useSharedValue(1);
+  /** Set by a fresh answer: the first change waits for the crossing. */
+  const crossing = useRef(false);
+  useEffect(() => {
+    if (target === view) return undefined;
+    const wait = crossing.current ? PROGRAM_MS : 0;
+    crossing.current = false;
+    // Two timers rather than the animation's own callback, so the swap
+    // happens on time whatever becomes of the fade.
+    const out = setTimeout(() => {
+      viewIn.value = withTiming(0, {
+        duration: VIEW_OUT_MS,
+        easing: Easing.in(Easing.cubic),
+        reduceMotion: ReduceMotion.System,
+      });
+    }, wait);
+    const swap = setTimeout(() => setView(target), wait + VIEW_OUT_MS);
+    return () => {
+      clearTimeout(out);
+      clearTimeout(swap);
+    };
+  }, [target, view, viewIn]);
+  useEffect(() => {
+    viewIn.value = withTiming(1, { duration: VIEW_IN_MS, easing: SELECT_EASING, reduceMotion: ReduceMotion.System });
+  }, [view, viewIn]);
+  // The answer has no glass, so it fades. The question's cards are liquid
+  // glass, which an animated opacity on any ancestor kills for good (see
+  // `scrim` in `PainCard`), so it only moves, and a veil in the page colour
+  // over it does the fading.
+  const summaryMotion = useAnimatedStyle(() => ({
+    opacity: viewIn.value,
+    transform: [{ translateY: (1 - viewIn.value) * 16 }, { scale: 0.97 + 0.03 * viewIn.value }],
+  }));
+  const questionMotion = useAnimatedStyle(() => ({
+    transform: [{ translateY: (1 - viewIn.value) * 16 }, { scale: 0.97 + 0.03 * viewIn.value }],
+  }));
+  const veil = useAnimatedStyle(() => ({ opacity: 1 - viewIn.value }));
+  const showingSummary = view === 'summary' && checkIn != null;
   const focused = useIsFocused();
   /** The red-flag check, behind "Something new?". */
   const [safety, setSafety] = useState(false);
@@ -222,6 +280,8 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    */
   const record = (score: number, zones: readonly LegZone[], said?: string) => {
     const correction = checkInOn(currentDay()) != null;
+    // The day's first answer sends the block under the tasks: wait for it.
+    crossing.current = !correction;
     logPain(currentDay(), score, zones);
     // The morning's answer is what moves the plan a step back or lets it return.
     settleOffset(currentDay());
@@ -291,7 +351,12 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   return (
     <>
       <View style={styles.wrap}>
-        {answered ? (
+        {/* Keyed, so each is a fresh view: handing one view the two styles in
+            turn left the question at the opacity the answer had faded to. */}
+        <Animated.View
+          key={showingSummary ? 'summary' : 'question'}
+          style={showingSummary ? summaryMotion : questionMotion}>
+        {showingSummary ? (
           <View {...REPLAY_MASK} style={styles.block}>
             <CheckInSummary
               score={checkIn.score}
@@ -301,11 +366,17 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
               onEdit={edit}
             />
             {ack != null && (
-              <Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }]}>
+              <Animated.Text
+                key={ack}
+                entering={FadeIn.duration(360).reduceMotion(ReduceMotion.System)}
+                accessibilityLiveRegion="polite"
+                style={[styles.ack, { color: meter.caption }]}>
                 {ack}
-              </Text>
+              </Animated.Text>
             )}
-            <FlareRow onPress={() => setFlareOpen(true)} />
+            <Animated.View entering={FadeInDown.delay(160).duration(420).easing(SELECT_EASING).reduceMotion(ReduceMotion.System)}>
+              <FlareRow onPress={() => setFlareOpen(true)} />
+            </Animated.View>
           </View>
         ) : (
         <View style={styles.block} {...REPLAY_MASK}>
@@ -345,6 +416,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
           {/* Only once a tile is picked. Disabled, it was a big grey slab under
               two answers that already read as the thing to tap. */}
           {selected != null && (
+            <Animated.View entering={FadeInDown.duration(300).easing(SELECT_EASING).reduceMotion(ReduceMotion.System)}>
             <PrimaryButton
               label={editing ? t('home.checkInUpdate') : logged ? t('home.checkInAgain') : t('home.logCheckIn')}
               onPress={() => {
@@ -368,6 +440,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
                 setOpen(true);
               }}
             />
+            </Animated.View>
           )}
 
           {editing && (
@@ -390,6 +463,13 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
           )}
         </View>
         )}
+        {!showingSummary && (
+          <Animated.View
+            pointerEvents="none"
+            style={[StyleSheet.absoluteFill, { backgroundColor: palette[scheme].background }, veil]}
+          />
+        )}
+        </Animated.View>
 
         <SomethingNewRow onPress={() => setSafety(true)} />
       </View>
@@ -576,10 +656,24 @@ function CheckInSummary({
   const meter = meterColors[scheme];
   const t = useT();
   const where = zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin'));
+  // He answers the answer as it lands: a hop for a day with no pain, a small
+  // nod for a sore one (never a cheer at a number). Again on a correction.
+  const mascot = useRef<MascotHandle>(null);
+  useEffect(() => {
+    if (paused) return undefined;
+    const timer = setTimeout(() => mascot.current?.play(score === 0 ? 'happy' : 'nod'), SUMMARY_SHOT_MS);
+    return () => clearTimeout(timer);
+  }, [score, paused]);
   return (
     <View style={[styles.summary, { backgroundColor: colors.card }]}>
       <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.summaryArt}>
-        <CardMascot rig={score === 0 ? handsUpRig : painRig} size={76} surface={colors.card} paused={paused} />
+        <CardMascot
+          ref={mascot}
+          rig={score === 0 ? handsUpRig : painRig}
+          size={76}
+          surface={colors.card}
+          paused={paused}
+        />
       </View>
       <View style={styles.summaryCopy}>
         <Text style={[styles.summaryTitle, { color: colors.foreground }]}>
@@ -591,7 +685,12 @@ function CheckInSummary({
           </Text>
         )}
         {flareScore != null && (
-          <Text style={[styles.summaryLine, { color: meter.caption }]}>{t('home.flareLast', { score: flareScore })}</Text>
+          <Animated.Text
+            key={flareScore}
+            entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
+            style={[styles.summaryLine, { color: meter.caption }]}>
+            {t('home.flareLast', { score: flareScore })}
+          </Animated.Text>
         )}
       </View>
       <Pressable
