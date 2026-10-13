@@ -104,7 +104,17 @@ export function EmailSignup({
   }
 
   return (
-    <div className="email-signup">
+    <div
+      className="email-signup"
+      // For public/site.js, which runs this form on pages served without React.
+      data-email-signup=""
+      data-url={SITE_SUBSCRIBE_URL}
+      data-lang={lang}
+      data-source={source}
+      data-page={page}
+      data-support={SUPPORT_EMAIL}
+      data-copy={JSON.stringify({ success: c.success, already: c.already, error: c.error, tooMany: c.tooMany })}
+    >
       <p className="email-signup-heading">{c.heading}</p>
       <p className="email-signup-description">{c.description}</p>
       <form

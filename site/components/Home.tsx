@@ -542,7 +542,7 @@ export function Home({ lang }: { lang: Lang }) {
             <div className="hero-main">
               <img
                 src="/hero/phone-home.webp"
-                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@560.webp 560w, /hero/phone-home@2x.webp 751w"
                 sizes="(max-width: 760px) 64vw, 330px"
                 width={751}
                 height={1550}

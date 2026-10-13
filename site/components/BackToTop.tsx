@@ -39,7 +39,7 @@ export function BackToTop({ lang, className }: { lang: Lang; className?: string 
   }
 
   return (
-    <a href="#top" className={className} aria-label={LABEL[lang]} onClick={onClick}>
+    <a href="#top" className={className} aria-label={LABEL[lang]} onClick={onClick} data-back-to-top="">
       <ArrowUpIcon size={24} weight="bold" aria-hidden />
     </a>
   );

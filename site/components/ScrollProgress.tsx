@@ -45,7 +45,7 @@ export function ScrollProgress({ className, children }: { className: string; chi
   }, []);
 
   return (
-    <section ref={ref} className={className}>
+    <section ref={ref} className={className} data-scroll-progress="">
       {children}
     </section>
   );

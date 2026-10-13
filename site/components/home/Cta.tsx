@@ -129,7 +129,7 @@ export function Cta({ lang }: { lang: Lang }) {
             <div className="hcta-phone">
               <img
                 src="/hero/phone-home.webp"
-                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@560.webp 560w, /hero/phone-home@2x.webp 751w"
                 sizes="(max-width: 760px) 62vw, 360px"
                 width={751}
                 height={1550}
@@ -138,7 +138,7 @@ export function Cta({ lang }: { lang: Lang }) {
                 decoding="async"
               />
               <span className="hcta-island">
-                <img src="/icon-128.webp" alt="" width={64} height={64} />
+                <img src="/icon-128.webp" alt="" width={64} height={64} loading="lazy" decoding="async" />
                 <span className="hcta-island-name">Walkito</span>
                 <span className="hcta-island-ring" />
               </span>

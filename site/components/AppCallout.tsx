@@ -57,7 +57,7 @@ export function AppCallout({ campaign, lang, lead }: { campaign: string; lang: L
         <div className="pg-app-phone">
           <img
             src="/hero/phone-home.webp"
-            srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+            srcSet="/hero/phone-home.webp 376w, /hero/phone-home@560.webp 560w, /hero/phone-home@2x.webp 751w"
             sizes="(max-width: 640px) 200px, 230px"
             width={751}
             height={1550}
@@ -67,7 +67,7 @@ export function AppCallout({ campaign, lang, lead }: { campaign: string; lang: L
           />
           {/* Walkito's own Dynamic Island over the mockup's, as on home. */}
           <span className="pg-app-island">
-            <img src="/icon-128.webp" alt="" width={64} height={64} />
+            <img src="/icon-128.webp" alt="" width={64} height={64} loading="lazy" decoding="async" />
             <span className="pg-app-island-name">Walkito</span>
             <span className="pg-app-island-ring" />
           </span>
