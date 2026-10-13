@@ -452,6 +452,9 @@ figure figcaption b {
   border-left: 2px solid var(--hairline);
   padding-left: 14px;
   margin: 14px 0 26px;
+  /* Store links and DOIs are long unbroken strings: let them wrap instead of
+     widening the page on a phone (vs-exakt-health was 461px at 390). */
+  overflow-wrap: anywhere;
 }
 
 /* Tables scroll rather than squeeze. A three-column grade table at 390px is
