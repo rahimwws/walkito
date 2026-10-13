@@ -357,6 +357,7 @@ export const ONBOARDING_EN = {
   'onboarding.notify.opening': 'Opening…',
   'onboarding.notify.notNow': 'Not now',
   'onboarding.notify.declined': 'No problem - you can turn these on later in Settings.',
+  'onboarding.notify.consent': 'Reminders, progress and occasional offers.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Building your plan',

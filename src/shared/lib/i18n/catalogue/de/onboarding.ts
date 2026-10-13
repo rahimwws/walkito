@@ -316,6 +316,7 @@ export const ONBOARDING_DE = {
   'onboarding.notify.opening': 'Wird geöffnet…',
   'onboarding.notify.notNow': 'Nicht jetzt',
   'onboarding.notify.declined': 'Kein Problem - du kannst sie später in den Einstellungen einschalten.',
+  'onboarding.notify.consent': 'Erinnerungen, Fortschritt und ab und zu Angebote.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Dein Plan entsteht',

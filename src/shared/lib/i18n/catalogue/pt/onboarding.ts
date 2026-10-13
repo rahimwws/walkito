@@ -318,6 +318,7 @@ export const ONBOARDING_PT = {
   'onboarding.notify.opening': 'Abrindo…',
   'onboarding.notify.notNow': 'Agora não',
   'onboarding.notify.declined': 'Tudo bem - você pode ativar depois em Ajustes.',
+  'onboarding.notify.consent': 'Lembretes, progresso e ofertas de vez em quando.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Montando seu plano',

@@ -137,6 +137,11 @@ export function NotifyStep({ name, granted, onAnswered, onNext, speakerInset = 0
           docked
           style={styles.cta}
         />
+        {/* What the notifications are for, offers included, said before the
+            system asks: an offer push needs this consent (guideline 4.5.4). */}
+        {granted !== false && (
+          <Text style={[styles.consent, { color: meter.unit }]}>{t('onboarding.notify.consent')}</Text>
+        )}
         {granted === false && (
           <Text style={[styles.skipText, { color: meter.unit, textAlign: 'center' }]}>
             {t('onboarding.notify.declined')}
@@ -260,4 +265,5 @@ const styles = StyleSheet.create({
     marginHorizontal: -CTA_BLEED,
   },
   skipText: fonts.semibold(15),
+  consent: { ...fonts.medium(13), lineHeight: 17, textAlign: 'center' },
 });

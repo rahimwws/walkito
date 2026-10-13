@@ -322,6 +322,7 @@ export const ONBOARDING_RU = {
   'onboarding.notify.opening': 'Открываем…',
   'onboarding.notify.notNow': 'Не сейчас',
   'onboarding.notify.declined': 'Ничего страшного - их можно включить позже в Настройках.',
+  'onboarding.notify.consent': 'Напоминания, прогресс и иногда спецпредложения.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Собираем ваш план',

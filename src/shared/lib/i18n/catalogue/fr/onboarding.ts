@@ -314,6 +314,7 @@ export const ONBOARDING_FR = {
   'onboarding.notify.opening': 'Ouverture…',
   'onboarding.notify.notNow': 'Pas maintenant',
   'onboarding.notify.declined': 'Pas de souci - tu pourras les activer plus tard dans Réglages.',
+  'onboarding.notify.consent': 'Rappels, progrès et offres de temps en temps.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Création de ton plan',
