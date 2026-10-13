@@ -5,7 +5,7 @@ export const VS_EXAKT_EN: Guide = {
   lang: 'en',
   page: 'vsExakt',
   published: '2026-10-04',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Walkito vs Exakt Health: Side-by-Side Comparison (2026)',
   description:
     'Walkito vs Exakt Health compared: conditions, pricing, platforms, how each builds your plan, evidence base, languages and privacy. Checked October 2026.',
@@ -75,7 +75,7 @@ export const VS_EXAKT_EN: Guide = {
           ],
           [
             'Languages',
-            'English, Russian, Spanish',
+            'English, Russian, Spanish, Portuguese, French, Italian, German',
             'English, French, German, Spanish',
           ],
           [
@@ -164,7 +164,7 @@ export const VS_EXAKT_EN: Guide = {
       keyFact: 'Walkito\'s exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         '**This is where Exakt is clearly stronger.** Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner\'s knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.',
-        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.',
+        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a [broader app like Prehab](/exakt-health-alternatives/) is the right choice.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -181,7 +181,7 @@ export const VS_EXAKT_EN: Guide = {
       h2: 'Platforms and languages',
       paragraphs: [
         'Both apps are on iOS and Android, so the platform no longer decides between them. On iPhone, Walkito reads Apple Health. On Android it reads Health Connect (steps, exercise sessions, distance and sleep); walking asymmetry and walking speed are read on iPhone only.',
-        'Exakt supports English, French, German and Spanish. Walkito supports English, Russian and Spanish. The overlap is English and Spanish. If you need French or German, Exakt is the only option. If you need Russian, Walkito is the only option.',
+        'Exakt supports English, French, German and Spanish. Walkito supports English, Russian, Spanish, Portuguese, French, Italian and German. Both cover English, Spanish, French and German. If you need Russian, Portuguese or Italian, Walkito is the only option of the two.',
       ],
     },
     {
@@ -227,7 +227,6 @@ export const VS_EXAKT_EN: Guide = {
         'Your injury is not plantar fasciitis or flat feet. Exakt covers 15+ conditions; Walkito covers three.',
         'You want a 7-day free trial to test the app before paying.',
         'EU medical device certification matters to you.',
-        'You need the app in French or German.',
       ],
     },
     {
@@ -236,11 +235,11 @@ export const VS_EXAKT_EN: Guide = {
         'Pick Walkito if any of the following is true:',
       ],
       bullets: [
-        'Your pain is specifically heel pain, plantar fasciitis or flat feet, and you want a focused program for that.',
+        'Your pain is specifically heel pain, plantar fasciitis or [flat feet](/best-app-for-flat-feet/), and you want a focused program for that.',
         'You want sessions of 3 to 10 minutes rather than 15 to 30.',
         'Daily pain adaptation from a morning check-in matters more to you than level-based progression.',
         'You want progress tests every 14 days that compare left to right.',
-        'You need the app in Russian.',
+        'You need the app in Russian, Portuguese or Italian.',
         'You are on your feet all day for work, not running, and want an app built for that.',
       ],
     },

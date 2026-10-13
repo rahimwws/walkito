@@ -53,6 +53,7 @@ const FAQ_SCHEMA = faqSchema(FAQ);
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}/faq/#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
     { '@type': 'ListItem', position: 2, name: 'Questions', item: `${SITE_URL}/faq/` },

@@ -87,7 +87,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Fersenheben-Test: Komm bei jedem Schlag so hoch wie möglich, Fingerspitzen fürs Gleichgewicht',
-          alt: 'Eine Figur kommt auf die Zehen eines Fußes, die Fingerspitzen an einer Wand fürs Gleichgewicht',
+          alt: 'Seitenansicht einer Figur, die sich auf die Zehenspitzen hebt, die Wade hervorgehoben',
         },
       ],
       cites: [CITE.hebertLosier],

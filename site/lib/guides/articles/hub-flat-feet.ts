@@ -23,7 +23,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
   page: 'hubFlatFeet' as any,
   mainSource: CITE.ling,
   published: '2026-10-05',
-  updated: '2026-10-05',
+  updated: '2026-10-13',
   title: 'Flat Feet: Causes, Types and When They Need Attention',
   description:
     'What flat feet are, flexible vs rigid, whether they cause problems, adult-acquired flatfoot, fallen arches, exercises, and when to see a clinician.',
@@ -129,14 +129,14 @@ export const HUB_FLAT_FEET_EN: Guide = {
     {
       h2: 'Which exercises help flat feet?',
       paragraphs: [
-        'Exercise for flat feet focuses on the muscles that support the arch from below (the intrinsic foot muscles) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, ankle exercises, hip strengthening and stretching, done together.',
+        'Exercise for flat feet focuses on the muscles that support the arch from below ([the intrinsic foot muscles](/foot-strengthening-exercises/)) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, [ankle exercises](/ankle-strengthening-exercises/), hip strengthening and stretching, done together.',
         'A 2024 review of short-foot training on its own was less encouraging: it found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks. The takeaway is that **a combined program works better than one exercise in isolation, and patience matters.**',
         '[Flat feet exercises](/flat-feet-exercises/) has the full exercise list, doses, what each should feel like, and the evidence behind each one. Walkito builds a weekly plan around an arch-hold goal, progressing from seated short-foot work through standing and single-leg versions, then adding band resistance and hip strengthening. Individual exercise pages go deeper:',
       ],
       bullets: [
         '[Short foot exercise](/exercises/short-foot-exercise/) trains the arch to lift without curling the toes.',
         '[Towel scrunch](/exercises/towel-scrunch/) wakes up the small muscles under the arch.',
-        '[Toe spread](/exercises/toe-spread/) works the muscles between the toes that share load with the arch.',
+        '[Toe spread](/exercises/toe-spread/) works [the muscles between the toes](/toe-strengthening-exercises/) that share load with the arch.',
         '[Ankle inversion with a band](/exercises/ankle-inversion-band/) strengthens the posterior tibial muscle, the same one involved in adult-acquired flatfoot.',
       ],
       cites: [CITE.brijwasi, CITE.cheng],
@@ -163,6 +163,11 @@ export const HUB_FLAT_FEET_EN: Guide = {
         '[Ball of foot pain](/ball-of-foot-pain/) covers forefoot pain, which overlaps with flat feet when load shifts forward.',
         '[Feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the exercises and footwear for long days on your feet.',
         '[Nurses and foot pain](/nurses-foot-pain/) addresses foot pain specific to healthcare workers.',
+        'Strength and mobility: [foot strengthening](/foot-strengthening-exercises/), [toe strengthening](/toe-strengthening-exercises/), [ankle strengthening](/ankle-strengthening-exercises/), [ankle mobility](/ankle-mobility-exercises/) and [tight calves](/tight-calves/).',
+        'Flat feet and pain: [arch pain](/arch-pain/), [posterior tibial tendon dysfunction](/posterior-tibial-tendon-dysfunction-exercises/), [knee pain](/flat-feet-knee-pain/) and [back pain](/flat-feet-back-pain/).',
+        'Kids and age: [flat feet in kids](/flat-feet-in-kids/) and [whether flat feet get worse with age](/do-flat-feet-get-worse-with-age/).',
+        'Other foot problems: [high arches](/high-arches-exercises/) and [bunions](/bunion-exercises/).',
+        'Shoes and apps: [barefoot shoes](/barefoot-shoes/), [insoles vs exercises](/insoles-vs-exercises/) and the [best app for flat feet](/best-app-for-flat-feet/).',
       ],
     },
   ],

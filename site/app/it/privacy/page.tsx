@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Italian Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -34,7 +35,7 @@ export default function PrivacyIt() {
       <Prose className="shell prose">
         <h1>Informativa sulla privacy</h1>
 
-        <p className="updated">Ultimo aggiornamento: 9 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'it')}</time></p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/privacy/">versione in inglese</a>, vale la versione in
@@ -430,7 +431,7 @@ export default function PrivacyIt() {
 
         <h2 id="ai-assistants">Assistenti IA (ChatGPT e Claude)</h2>
         <p>
-          Walkito si può usare dentro ChatGPT e Claude. Quando chiedi lì, l’assistente può chiamare uno dei nostri strumenti e inviare al nostro server le impostazioni che ha scelto: per esempio la zona che fa male, i minuti al giorno, i giorni a settimana, l’attrezzatura e il lato e, se li hai citati, il dolore di oggi o il risultato di un test, che decidono cosa mostrare. Il nostro server li usa per comporre gli esercizi e il piano, e non conserva nulla.
+          Walkito si può usare dentro ChatGPT e Claude (<a href="/ai/" hrefLang="en">come funziona, in inglese</a>). Quando chiedi lì, l’assistente può chiamare uno dei nostri strumenti e inviare al nostro server le impostazioni che ha scelto: per esempio la zona che fa male, i minuti al giorno, i giorni a settimana, l’attrezzatura e il lato e, se li hai citati, il dolore di oggi o il risultato di un test, che decidono cosa mostrare. Il nostro server li usa per comporre gli esercizi e il piano, e non conserva nulla.
         </p>
         <ul>
           <li>Non vengono conservati messaggi, nomi, indirizzi email, valori di dolore né indirizzi IP.</li>

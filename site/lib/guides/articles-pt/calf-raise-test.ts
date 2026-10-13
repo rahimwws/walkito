@@ -88,7 +88,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Teste de elevação de calcanhar: suba o mais alto que conseguir a cada batida, com a ponta dos dedos na parede para se equilibrar',
-          alt: 'Uma figura subindo na ponta de um pé, com a ponta dos dedos na parede para se equilibrar',
+          alt: 'Vista lateral de uma figura subindo na ponta dos pés, com a panturrilha destacada',
         },
       ],
       cites: [CITE.hebertLosier],

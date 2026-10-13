@@ -41,6 +41,20 @@
      worth a download. */
   --font-body: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, system-ui, sans-serif;
+
+  /*
+   * How wide a space is in the display face: Anton's is 480 of 2048 units. The
+   * headings whose words rise one by one (the hero, sections 01 and 05, the
+   * closing lines) part them with real spaces, which is what search engines
+   * read, and set those spaces as wide as the gap the design asks for with
+   * `word-spacing: calc(<gap> - var(--display-space))`.
+   */
+  --display-space: 0.2344em;
+}
+
+/* Oswald 700, the Russian display face (lib/font-oswald.ts): 256 of 1000. */
+:root:lang(ru) {
+  --display-space: 0.256em;
 }
 
 * {
@@ -2243,13 +2257,21 @@ figcaption {
   padding-inline: 20px 8px;
 }
 
-.get-card h2 {
+/* A <p> (components/GetApp.tsx) set as the h2 it was: balanced, and at the
+   taller line height Russian and Spanish headings take. */
+.get-card .get-title {
   margin: 0;
   font-family: var(--font-body);
   font-size: clamp(20px, 3.2vw, 26px);
   font-weight: 600;
   letter-spacing: -0.4px;
   text-align: left;
+  text-wrap: balance;
+}
+
+:lang(ru) .get-card .get-title,
+:lang(es) .get-card .get-title {
+  line-height: 1.14;
 }
 
 .get-close {
@@ -2679,6 +2701,8 @@ html[data-scrolled] .masthead-float .download {
   font-size: clamp(44px, 7vw, 104px);
   line-height: 1;
   text-transform: uppercase;
+  /* The space between the words, 0.24em wide (see --display-space). */
+  word-spacing: calc(0.24em - var(--display-space));
 }
 
 .rise-word {
@@ -2688,15 +2712,12 @@ html[data-scrolled] .masthead-float .download {
   /* Room for descenders and the question mark's dot inside the clip. */
   padding-block: 0.06em;
   margin-block: -0.06em;
+  /* A no-break space inside a word (French «moi ?») keeps its own width. */
+  word-spacing: normal;
 }
 
 .rise-word > span {
   display: inline-block;
-}
-
-/* The space between words, which an inline-block would swallow. */
-.rise-word + .rise-word {
-  margin-left: 0.24em;
 }
 
 .who-lead {
@@ -4869,6 +4890,9 @@ html:not(:lang(ru)) .hero-glass h1.hero-title {
   line-height: 0.9;
   text-transform: uppercase;
   text-wrap: balance;
+  /* The space between the words, 0.22em wide (see --display-space). 0.225em,
+     since the -0.005em letter-spacing of `.hero h1` falls on the space too. */
+  word-spacing: calc(0.225em - var(--display-space));
 }
 
 :lang(ru) .hero-glass h1.hero-title {
@@ -4910,10 +4934,8 @@ html:not(:lang(ru)) .hero-glass h1.hero-title {
 .hero-glass .hero-word {
   overflow: hidden;
   vertical-align: top;
-}
-
-.hero-glass .hero-word + .hero-word {
-  margin-left: 0.22em;
+  /* A no-break space inside a word (French «essayé ?») keeps its own width. */
+  word-spacing: normal;
 }
 
 .hero-glass .hero-word > span {

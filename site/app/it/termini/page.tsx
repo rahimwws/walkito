@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Italian Terms of Use. It mirrors `app/(en)/terms/page.tsx` and must be
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}/it/termini/#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/it/` },
     { '@type': 'ListItem', position: 2, name: 'Termini di utilizzo', item: `${SITE_URL}/it/termini/` },
@@ -49,7 +51,7 @@ export default function TerminiIt() {
       <Prose className="shell prose">
         <h1>Termini di utilizzo</h1>
 
-        <p className="updated">Ultimo aggiornamento: 9 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'it')}</time></p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/terms/">versione in inglese</a>, vale la versione in

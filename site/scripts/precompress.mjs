@@ -30,8 +30,9 @@ const gz = promisify(gzip);
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DIR = process.argv[2] ?? join(ROOT, 'out');
 
-/** What nginx compresses for this site (its `brotli_types`, plus HTML). */
-const TEXT = new Set(['.html', '.css', '.js', '.mjs', '.json', '.svg', '.xml', '.txt', '.webmanifest']);
+/** What nginx compresses for this site (its `brotli_types`, plus HTML), and
+ * the study data files in downloads/: the AI answers CSV is 400 KB of text. */
+const TEXT = new Set(['.html', '.css', '.js', '.mjs', '.json', '.svg', '.xml', '.txt', '.webmanifest', '.csv']);
 const MIN_BYTES = 1024;
 
 async function* files(dir) {

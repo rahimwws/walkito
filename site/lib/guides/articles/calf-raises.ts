@@ -11,7 +11,7 @@ export const CALF_RAISES_EN: Guide = {
   page: 'calfRaises',
   mainSource: CITE.rathleff,
   published: '2026-10-04',
-  updated: '2026-10-10',
+  updated: '2026-10-13',
   title: 'Calf Raises for Plantar Fasciitis: How & How Many',
   description:
     'Calf raises for plantar fasciitis: the Rathleff protocol dose, towel calf raise technique, how many reps, when to progress, and what Walkito starts you on.',
@@ -146,7 +146,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'What does Walkito start you on?',
       paragraphs: [
-        'Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to double-leg standing raises, then a heel raise hold, and only then the towel-loaded single-leg raise. Each step opens once two sessions at the current level felt easy.',
+        'Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to [double-leg standing raises](/exercises/calf-raises/), then a heel raise hold, and only then the [towel-loaded single-leg raise](/exercises/towel-heel-raise/). Each step opens once two sessions at the current level felt easy.',
         'That ladder is the app\'s own pacing, not a published protocol, and it exists because most people starting an exercise plan for heel pain are not ready for a weighted single-leg raise on the first session.',
         'The calf chain in the app runs:',
         {
@@ -189,7 +189,7 @@ export const CALF_RAISES_EN: Guide = {
       h2: 'How many single-leg calf raises should you be able to do?',
       keyFact: 'A normative study of 566 healthy adults found a single-leg heel-raise count in the low-to-mid 20s, about 23 to 24 repetitions on average (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
-        'A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is **whether the number goes up week to week, and whether the two sides are roughly even.**',
+        'A common adult benchmark for the [single-leg heel-raise endurance test](/calf-raise-test/) is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is **whether the number goes up week to week, and whether the two sides are roughly even.**',
         'The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.',
       ],
       cites: [CITE.hebertLosier],

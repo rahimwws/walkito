@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The German Terms of Use. It mirrors `app/(en)/terms/page.tsx` and must be
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}/de/nutzungsbedingungen/#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Startseite', item: `${SITE_URL}/de/` },
     { '@type': 'ListItem', position: 2, name: 'Nutzungsbedingungen', item: `${SITE_URL}/de/nutzungsbedingungen/` },
@@ -50,7 +52,7 @@ export default function NutzungsbedingungenDe() {
       <Prose className="shell prose">
         <h1>Nutzungsbedingungen</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 9. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'de')}</time></p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/terms/">der englischen Fassung</a> abweicht, gilt die

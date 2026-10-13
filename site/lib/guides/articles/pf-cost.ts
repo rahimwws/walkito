@@ -11,7 +11,7 @@ export const PF_COST_EN: Guide = {
   page: 'pfCost',
   mainSource: CITE.guideline,
   published: '2026-10-11',
-  updated: '2026-10-11',
+  updated: '2026-10-13',
   title: 'Plantar Fasciitis Treatment Cost: PT vs App vs Insoles',
   description:
     'What plantar fasciitis care costs in the US: physical therapy with and without insurance, exercise apps, insoles, custom orthotics and more, with dated sources.',
@@ -94,7 +94,7 @@ export const PF_COST_EN: Guide = {
           ['Exakt Health', '$19.99 a month or $99.99 a year'],
           ['Prehab', '$49.99 a month; yearly $199.99 or $299.99'],
           ['Alleviate', 'Free app; $59 plantar fasciitis program'],
-          ['Hinge Health, Sword', '$0 through an employer or health plan'],
+          ['[Hinge Health](/hinge-health-alternatives/), Sword', '$0 through an employer or health plan'],
           ['Walkito', 'Weekly or yearly subscription, price shown in the store'],
         ],
       },

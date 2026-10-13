@@ -10,7 +10,8 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL, pageTitle, PAGE_UPDATED } from '@/lib/site';
+import { authorFor } from '@/lib/schema';
+import { SITE_NAME, SITE_URL, pageTitle, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/es/hojas-de-ejercicios-imprimibles/';
 const TITLE = 'Hojas de ejercicios para pies imprimibles (PDF gratis)';
@@ -78,6 +79,10 @@ const SCHEMA = {
   description: DESCRIPTION,
   inLanguage: 'es',
   url: `${SITE_URL}${PATH}`,
+  // The authors the byline names, and the page's dates.
+  author: authorFor('es'),
+  datePublished: isoDateTime(PAGE_PUBLISHED.printables.es),
+  dateModified: isoDateTime(PAGE_UPDATED.printables.es),
   hasPart: PRINTABLES_ES.map((p) => ({
     '@type': 'DigitalDocument',
     name: p.title,
@@ -92,6 +97,7 @@ const SCHEMA = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/es/` },
     { '@type': 'ListItem', position: 2, name: 'Hojas imprimibles', item: `${SITE_URL}${PATH}` },
@@ -157,8 +163,8 @@ export default function PrintableSheetsEs() {
           ¿Quieres que el plan se ajuste por ti cada mañana? Eso es lo que hace la app de Walkito:
           te pregunta cómo se sienten tus pies y elige la sesión de hoy.
         </p>
-        <UpdatedLine lang="es" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="es" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="es" updated={PAGE_UPDATED.printables.es} />
+        <CiteBox lang="es" title={TITLE} updated={PAGE_UPDATED.printables.es} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-es" lang="es" />
       </Prose>

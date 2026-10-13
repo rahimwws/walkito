@@ -2,20 +2,31 @@ import '@/app/pages.css';
 
 import { AiReferral } from '@/components/AiReferral';
 import { JsonLd } from '@/components/JsonLd';
-import type { Lang } from '@/lib/i18n';
-import { APP_STORE_NAME, SAME_AS, SITE_NAME, SITE_URL } from '@/lib/site';
+import { TRANSLATED, type Lang } from '@/lib/i18n';
+import { AUTHORS, personId } from '@/lib/schema';
+import { APP_STORE_NAME, ORG_ID, ORG_REF, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL, WEBSITE_ID } from '@/lib/site';
 
-/** Sitewide, once per page. Not repeated by the pages themselves — duplicated
- * Organization blocks are a common way to make Google pick the wrong one. */
+/** Sitewide, once per page, and the only full Organization on it. Not
+ * repeated by the pages themselves — duplicated Organization blocks are a
+ * common way to make Google pick the wrong one. Every other node names
+ * Walkito by its `@id` (`ORG_REF`). */
 const ORGANISATION = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': ORG_ID,
   name: SITE_NAME,
   // The App Store name, so an engine reading "Walkito" resolves it to the
   // heel and foot pain app, not a walkie-talkie app or another Walkito.
   alternateName: [APP_STORE_NAME, 'Walkito app'],
   url: SITE_URL,
   logo: `${SITE_URL}/icon.png`,
+  email: SUPPORT_EMAIL,
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    email: SUPPORT_EMAIL,
+    url: `${SITE_URL}${TRANSLATED.support.en}`,
+  },
   // No length: the plan is built a week at a time around a measurable goal and
   // keeps going while it is used.
   description:
@@ -26,15 +37,9 @@ const ORGANISATION = {
   disambiguatingDescription:
     'Walkito is an iPhone and Android exercise app for heel pain, plantar fasciitis and flat feet. It is not a dog-walking service.',
   foundingDate: '2026',
-  // Both co-founders, each with a public profile.
-  founder: [
-    {
-      '@type': 'Person',
-      name: 'Rahim Hudaykulyyev',
-      sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws'],
-    },
-    { '@type': 'Person', name: 'Rahman Bazarov', sameAs: ['https://www.linkedin.com/in/rahman-bazarov/'] },
-  ],
+  // Both co-founders, each with a public profile: the guides' authors
+  // (lib/schema.ts), the same nodes by `@id`.
+  founder: AUTHORS.map((a) => ({ '@type': 'Person', '@id': personId(a.slug), name: a.name, sameAs: a.sameAs })),
   // Only profiles that are really ours; see `SAME_AS`.
   ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
 };
@@ -63,11 +68,12 @@ function website(lang: Lang) {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': WEBSITE_ID,
     name: SITE_NAME,
     alternateName: APP_STORE_NAME,
     url: SITE_URL,
     inLanguage: lang,
-    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: ORG_REF,
   };
 }
 

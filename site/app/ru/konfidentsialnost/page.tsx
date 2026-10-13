@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Russian Privacy Policy. It mirrors `app/(en)/privacy/page.tsx`, which is
@@ -34,7 +35,7 @@ export default function PrivacyRu() {
       <Prose className="shell prose">
         <h1>Политика конфиденциальности</h1>
 
-        <p className="updated">Последнее обновление: 9 октября 2026 г.</p>
+        <p className="updated">Последнее обновление: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'ru')}</time></p>
         <p className="updated">
           Это перевод. Если он расходится с{' '}
           <a href="/privacy/">английской версией</a>, действует английская.
@@ -409,7 +410,7 @@ export default function PrivacyRu() {
 
         <h2 id="ai-assistants">ИИ-ассистенты (ChatGPT и Claude)</h2>
         <p>
-          Walkito можно использовать внутри ChatGPT и Claude. Когда вы спрашиваете там, ассистент может вызвать один из наших инструментов и передать нашему серверу выбранные им настройки: например, где болит, сколько минут в день, сколько дней в неделю, снаряжение и сторону, а если вы их упомянули, то сегодняшнюю боль или результат теста, от которых зависит, что показать. Наш сервер использует их, чтобы собрать упражнения и план, и ничего не сохраняет.
+          Walkito можно использовать внутри ChatGPT и Claude (<a href="/ai/" hrefLang="en">как это работает, на английском</a>). Когда вы спрашиваете там, ассистент может вызвать один из наших инструментов и передать нашему серверу выбранные им настройки: например, где болит, сколько минут в день, сколько дней в неделю, снаряжение и сторону, а если вы их упомянули, то сегодняшнюю боль или результат теста, от которых зависит, что показать. Наш сервер использует их, чтобы собрать упражнения и план, и ничего не сохраняет.
         </p>
         <ul>
           <li>Сообщения, имена, адреса почты, оценки боли и IP-адреса не сохраняются.</li>

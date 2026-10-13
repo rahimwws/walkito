@@ -1,5 +1,5 @@
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
+import { ORG_REF, OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
 
 /**
  * Labelled anatomy illustrations, one file per language with the labels drawn
@@ -65,8 +65,25 @@ const LABELS_BY = {
   de: 'Beschriftung von Walkito',
 } as const satisfies Record<Lang, string>;
 
+/**
+ * The languages a figure has files in, where that is not all seven. Ball of
+ * foot, bunion, Haglund and Morton's were drawn for English, Spanish and
+ * Russian only, so a page in another language shows the English file (its
+ * labels in English) instead of a missing image, until scripts/anatomy/
+ * render.html draws them with the labels in scripts/anatomy/figures.mjs.
+ */
+const EN_ES_RU: readonly Lang[] = ['en', 'es', 'ru'];
+const DRAWN_IN: Partial<Record<AnatomyId, readonly Lang[]>> = {
+  ball: EN_ES_RU,
+  bunion: EN_ES_RU,
+  haglund: EN_ES_RU,
+  mortons: EN_ES_RU,
+};
+
 export function anatomySrc(id: AnatomyId, lang: Lang, small = false) {
-  return `/anatomy/${id}.${lang}${small ? '@600w' : ''}.webp`;
+  const drawn = DRAWN_IN[id];
+  const file = !drawn || drawn.includes(lang) ? lang : 'en';
+  return `/anatomy/${id}.${file}${small ? '@600w' : ''}.webp`;
 }
 
 /** The credit line under the image, as parts the component links up. */
@@ -90,7 +107,8 @@ export function anatomySchema(
   pageUrl: string,
 ) {
   const { w, h, source } = ANATOMY[fig.id];
-  const walkito = { '@type': 'Organization', name: 'Walkito', url: SITE_URL };
+  // Walkito by reference; InjuryMap, which has no node of its own, inline.
+  const walkito = ORG_REF;
   const base = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',

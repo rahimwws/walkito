@@ -37,7 +37,7 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-10-12',
+  updated: '2026-10-13',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
@@ -231,7 +231,7 @@ export const FLAT_FEET_EN: Guide = {
     {
       h2: 'Do flat feet exercises help arch pain?',
       paragraphs: [
-        'No study on this page shows that flat feet exercises ease arch pain, because none of them measured it. The trial and the review measured the shape of the arch. They show the arch can be trained. They are not evidence that the same exercises relieve an aching arch.',
+        'No study on this page shows that flat feet exercises ease [arch pain](/arch-pain/), because none of them measured it. The trial and the review measured the shape of the arch. They show the arch can be trained. They are not evidence that the same exercises relieve an aching arch.',
         'Pain at the heel, and sometimes along the arch, can come from the plantar fascia, the band of tissue that runs along the sole. If yours is near the heel, the 2023 heel pain guideline is the better guide. For heel pain under the foot, it gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B**. Those exercises are in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/).',
         'Walkito can work on both at once, as separate goals: pain-free mornings for the pain, and an arch hold for the arch. How the two share a week is on [the plan page](/program/).',
       ],
@@ -242,7 +242,7 @@ export const FLAT_FEET_EN: Guide = {
       paragraphs: [
         `When you reach the arch goal, holding the arch for ${PROGRAM.goals.archHoldSeconds} seconds, **Walkito keeps the arch work in the plan at a lower dose.** The goal moves to maintaining, and the next goal takes its place. Reaching it doesn’t mean the arch work stops.`,
         `The tests carry on too, every ${PROGRAM.testEveryDaysAfterGoal} days once your first goal is reached. If the arch hold starts to slide, you see it in the numbers instead of guessing.`,
-        'If your heel hurts as well, the heel has its own exercises and its own goal: see [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/). Questions about the app itself are answered in [the FAQ](/faq/).',
+        'If your heel hurts as well, the heel has its own exercises and its own goal: see [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/). Questions about the app itself are answered in [the FAQ](/faq/), and [the best app for flat feet](/best-app-for-flat-feet/) compares it with other apps.',
       ],
     },
   ],
@@ -266,7 +266,7 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       q: 'What is the difference between fallen arches and flat feet?',
-      a: 'Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.',
+      a: 'Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening [posterior tibial tendon](/posterior-tibial-tendon-dysfunction-exercises/), the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.',
       cites: [CITE.ling],
     },
     {
@@ -275,7 +275,7 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       q: 'What exercises strengthen the arches of the feet?',
-      a: 'The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train the small muscles around the arch. All of it is for flexible flat feet. Step by step: [short foot exercise](/exercises/short-foot-exercise/).',
+      a: 'The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train [the small muscles around the arch](/foot-strengthening-exercises/). All of it is for flexible flat feet. Step by step: [short foot exercise](/exercises/short-foot-exercise/).',
     },
     {
       q: 'How often should I do flat feet exercises?',
@@ -308,6 +308,7 @@ export const FLAT_FEET_EN: Guide = {
   },
   crumb: 'Flat feet exercises',
   campaign: 'guide-flat-feet',
+  related: ['hubFlatFeet'],
 };
 
 /*
@@ -321,7 +322,7 @@ export const HEEL_PAIN_EN: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-10',
+  updated: '2026-10-13',
   title: '8 Plantar Fasciitis Exercises & Stretches (Guideline Doses)',
   description:
     'Eight plantar fasciitis exercises and stretches with doses, what to avoid, best time to stretch, and evidence grades from the 2023 guideline.',
@@ -542,7 +543,7 @@ export const HEEL_PAIN_EN: Guide = {
         rows: [
           ['Plantar fascia and calf stretching', '**A**'],
           ['Manual therapy (hands-on work on the joints and soft tissue of the leg and foot), from a clinician', '**A**'],
-          ['Taping alongside other physical therapy, for better pain and function over up to 6 weeks', '**A**'],
+          ['[Taping](/plantar-fasciitis-taping/) alongside other physical therapy, for better pain and function over up to 6 weeks', '**A**'],
           ['Night splints for 1 to 3 months, if your first steps each morning keep hurting', '**A**'],
           ['Resistance and strength training', '**B**'],
           ['Low-level laser therapy and dry needling, from a clinician', '**B**'],
@@ -556,7 +557,7 @@ export const HEEL_PAIN_EN: Guide = {
     {
       h2: 'Do shoes and insoles help plantar fasciitis?',
       paragraphs: [
-        'Supportive shoes help, but insoles on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.',
+        'Supportive shoes help, but [insoles](/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.',
         'Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask a clinician whether they are worth trying.',
         'The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](/nurses-foot-pain/).',
       ],
@@ -590,7 +591,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       q: 'Is a heel spur the same as plantar fasciitis?',
-      a: 'Not exactly. People often say “[heel spur](/plantar-fasciitis-vs-heel-spur/)” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. Only a clinician can say what is behind yours.',
+      a: 'Not exactly. People often say “[heel spur](/plantar-fasciitis-vs-heel-spur/)” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. [Heel spur exercises](/heel-spur-exercises/) covers the same routine when an X-ray shows a spur. Only a clinician can say what is behind yours.',
     },
     {
       q: 'How often should I do plantar fasciitis exercises?',
@@ -616,7 +617,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       q: 'Can plantar fasciitis be massaged out?',
-      a: 'No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. Rolling your own sole is comfort care, not a replacement for stretching and calf strength work.',
+      a: 'No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. [Rolling your own sole](/massage-ball-plantar-fasciitis/) is comfort care, not a replacement for stretching and calf strength work.',
       cites: [CITE.guideline],
     },
   ],
@@ -631,4 +632,5 @@ export const HEEL_PAIN_EN: Guide = {
   },
   crumb: 'Plantar fasciitis exercises',
   campaign: 'guide-plantar-fasciitis',
+  related: ['hubPlantarFasciitis'],
 };

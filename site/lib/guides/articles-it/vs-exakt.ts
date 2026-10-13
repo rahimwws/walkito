@@ -13,7 +13,7 @@ export const VS_EXAKT_IT: Guide = {
   lang: 'it',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Walkito vs Exakt Health: confronto completo (2026)',
   description:
     'Walkito o Exakt Health? Confronto su problemi coperti, prezzo, piattaforme, come creano il piano, prove, lingue e privacy. Verificato a ottobre 2026.',
@@ -83,7 +83,7 @@ export const VS_EXAKT_IT: Guide = {
           ],
           [
             'Lingue',
-            'Inglese, russo, spagnolo',
+            'Inglese, russo, spagnolo, portoghese, francese, italiano, tedesco',
             'Inglese, francese, tedesco, spagnolo',
           ],
           [
@@ -189,7 +189,7 @@ export const VS_EXAKT_IT: Guide = {
       h2: 'Piattaforme e lingue',
       paragraphs: [
         'Exakt Health e Walkito sono entrambe sia su iOS sia su Android, quindi la piattaforma non fa la differenza tra le due.',
-        'Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo e spagnolo. In comune ci sono inglese e spagnolo. Se ti serve il francese o il tedesco, Exakt è l’unica opzione. Se ti serve il russo, Walkito è l’unica opzione.',
+        'Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo, spagnolo, portoghese, francese, italiano e tedesco. In comune ci sono inglese, spagnolo, francese e tedesco. Se ti serve il russo, il portoghese o l’italiano, tra le due solo Walkito è un’opzione.',
       ],
     },
     {
@@ -235,7 +235,6 @@ export const VS_EXAKT_IT: Guide = {
         'Il tuo infortunio non è fascite plantare né piede piatto. Exakt copre oltre 15 problemi; Walkito ne copre tre.',
         'Vuoi una prova gratuita di 7\u00A0giorni per testare l’app prima di pagare.',
         'Per te conta la certificazione come dispositivo medico nell’UE.',
-        'Ti serve l’app in francese o in tedesco.',
       ],
     },
     {
@@ -248,7 +247,7 @@ export const VS_EXAKT_IT: Guide = {
         'Vuoi sessioni da 3 a 10\u00A0minuti invece che da 15 a 30.',
         'Per te conta più l’adattamento di ogni sessione al dolore con un check-in al mattino che la progressione a livelli.',
         'Vuoi test dei progressi ogni 14\u00A0giorni che confrontino sinistra e destra.',
-        'Ti serve l’app in russo.',
+        'Ti serve l’app in russo, portoghese o italiano.',
         'Stai in piedi tutto il giorno per lavoro, non corri, e vuoi un’app fatta per questo.',
       ],
     },

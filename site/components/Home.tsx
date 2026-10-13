@@ -40,8 +40,8 @@ import { HOME_IT } from '@/lib/home/it';
 import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
-import { CHROME, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
-import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
+import { CHROME, EN_ONLY, ES_ARTICLES, NEW_ARTICLE_PATHS, RU_ARTICLES, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
+import { APP_STORE_NAME, APP_STORE_URL, ORG_REF, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref, WIKIDATA_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -51,10 +51,11 @@ const { testEveryDays, testEveryDaysAfterGoal, painFreeDays, retestTests, retest
 /**
  * The app itself, as schema.
  *
- * No `offers` and no `aggregateRating`, both deliberately. The price in the
- * brief was a number nobody checked against the store, and a rating block with
- * no ratings behind it is a manual-action risk rather than a shortcut. These go
- * in when there is a listing and real reviews to point at.
+ * `offers` is the free download alone, a price-0 Offer. The subscription inside
+ * the app is priced by each store in the buyer's currency, so no single price
+ * belongs here. No `aggregateRating`, deliberately: a rating block with no
+ * ratings behind it is a manual-action risk rather than a shortcut. It goes in
+ * when there are real reviews to point at.
  *
  * No length either. The plan has none: it is built a week at a time and keeps
  * going while the person uses it.
@@ -68,18 +69,16 @@ const APP = {
     'An iPhone and Android exercise app for heel pain, plantar fasciitis and flat feet. Not the Walkito dog-walking service.',
   url: SITE_URL,
   ...(APP_STORE_URL ? { installUrl: APP_STORE_URL } : {}),
-  sameAs: [APP_STORE_URL, PLAY_STORE_URL].filter((u): u is string => Boolean(u)),
-  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  // The two store listings and the app's Wikidata item.
+  sameAs: [APP_STORE_URL, PLAY_STORE_URL, WIKIDATA_URL].filter((u): u is string => Boolean(u)),
+  publisher: ORG_REF,
   applicationCategory: 'HealthApplication',
   operatingSystem: PLAY_STORE_URL ? 'iOS, Android' : 'iOS',
   // Free to download; the plan itself is a subscription inside the app.
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
     'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
-  // The languages of the build on the store (1.0.1). Portuguese, French,
-  // Italian and German come with 1.0.3: list them here, in the FAQ below and
-  // in lib/home/{pt,fr,it,de}.ts once it is live.
-  availableLanguage: ['en', 'ru', 'es'],
+  inLanguage: ['en', 'ru', 'es', 'pt-BR', 'fr', 'it', 'de'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
     'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
@@ -233,7 +232,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Is it medical advice?',
         a: 'No. Walkito is an exercise program. It doesn’t diagnose, and it isn’t a substitute for a clinician.',
       },
-      { q: 'What languages is it in?', a: 'English, Russian and Spanish.' },
+      { q: 'What languages is it in?', a: 'English, Russian, Spanish, Portuguese, French, Italian and German.' },
     ],
   },
 
@@ -304,7 +303,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'Что такое Walkito?',
-        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
+        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
       },
       {
         q: 'Когда я почувствую разницу?',
@@ -322,7 +321,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Это медицинская консультация?',
         a: 'Нет. Walkito даёт программу упражнений. Он не ставит диагноз и не заменяет врача.',
       },
-      { q: 'На каких языках приложение?', a: 'На английском, русском и испанском.' },
+      { q: 'На каких языках приложение?', a: 'На английском, русском, испанском, португальском, французском, итальянском и немецком.' },
     ],
   },
 
@@ -393,7 +392,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
+        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
       },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
@@ -411,7 +410,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: '¿Es un consejo médico?',
         a: 'No. Walkito es un programa de ejercicios. No diagnostica y no sustituye a un profesional de la salud.',
       },
-      { q: '¿En qué idiomas está?', a: 'En inglés, ruso y español.' },
+      { q: '¿En qué idiomas está?', a: 'En inglés, ruso, español, portugués, francés, italiano y alemán.' },
     ],
   },
 };
@@ -498,11 +497,21 @@ export function Home({ lang }: { lang: Lang }) {
    */
   const customInEnglish = !isFullLang(lang);
 
+  /** The standing-all-day guide in the reader's language; every language has
+   * one, and the English page stands in if a language ever lacks it. */
+  const standing =
+    lang === 'en'
+      ? EN_ONLY.standing
+      : lang === 'es'
+        ? ES_ARTICLES.standing
+        : lang === 'ru'
+          ? RU_ARTICLES.standing
+          : NEW_ARTICLE_PATHS[lang].standing;
+
   const forWho = [
     { card: copy.who.heel, href: TRANSLATED.heelPain[lang], accent: 'teal', en: false, visual: visuals.heel },
     { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], accent: 'violet', en: false, visual: visuals.flat },
-    // No page of its own yet; the program page is the closest honest answer.
-    { card: copy.who.allday, href: customHref('program', lang), accent: 'amber', en: customInEnglish, visual: visuals.allday },
+    { card: copy.who.allday, href: standing ?? EN_ONLY.standing, accent: 'amber', en: !standing, visual: visuals.allday },
     { card: copy.who.run, href: customHref('runners', lang), accent: 'blue', en: customInEnglish, visual: visuals.run },
   ] as const;
 
@@ -608,9 +617,12 @@ export function Home({ lang }: { lang: Lang }) {
           {/* Each word rises out of its own line box, one after another. */}
           <h2 aria-label={copy.whoH2}>
             {copy.whoH2.split(' ').map((word, w) => (
-              <span key={w} className="rise-word" aria-hidden>
-                <span style={{ '--w': w } as React.CSSProperties}>{word}</span>
-              </span>
+              <Fragment key={w}>
+                {w > 0 && ' '}
+                <span className="rise-word" aria-hidden>
+                  <span style={{ '--w': w } as React.CSSProperties}>{word}</span>
+                </span>
+              </Fragment>
             ))}
           </h2>
           <p className="who-lead">{copy.whoLead}</p>
@@ -728,6 +740,10 @@ export function Home({ lang }: { lang: Lang }) {
  * Sized in globals.css (.hero-title): on wide screens the first line stays
  * whole and the second takes two rows at most; on a phone the longest word
  * fits. In every language. Words joined by a non-breaking space stay one word.
+ *
+ * Real spaces part the words, so the heading's text is the sentence and not
+ * the words run together: search engines read that text, not the aria-label.
+ * globals.css sets the spaces as wide as the gap the design asks for.
  */
 function HeroTitle({ a, b }: { a: string; b: string }) {
   const lines = [a, b].map((line) => line.split(' '));
@@ -744,9 +760,12 @@ function HeroTitle({ a, b }: { a: string; b: string }) {
       {lines.map((line, i) => (
         <span key={i} className="hero-line" aria-hidden>
           {line.map((word, j) => (
-            <span key={j} className="hero-word">
-              <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
-            </span>
+            <Fragment key={j}>
+              {(i > 0 || j > 0) && ' '}
+              <span className="hero-word">
+                <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
+              </span>
+            </Fragment>
           ))}
         </span>
       ))}

@@ -18,7 +18,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
   page: 'hubPlantarFasciitis' as any,
   mainSource: CITE.guideline,
   published: '2026-10-05',
-  updated: '2026-10-05',
+  updated: '2026-10-13',
   title: 'Plantar Fasciitis: Symptoms, Causes and What Helps',
   description:
     'What plantar fasciitis is, its symptoms and causes, what the 2023 clinical guideline recommends, how long recovery takes, and exercises that help.',
@@ -107,7 +107,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       h2: 'What helps plantar fasciitis?',
       keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
-        'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and [night splints](/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
+        'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, [taping](/plantar-fasciitis-taping/), manual therapy from a clinician, and [night splints](/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
         '**No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. When we checked the 50 most-watched plantar fasciitis videos on YouTube, [only 9 included all three home exercises](/plantar-fasciitis-youtube-study/) the guideline supports.',
         'In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using [orthotics](/insoles-vs-exercises/) alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
       ],
@@ -185,8 +185,8 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
         {
           list: [
             '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-            '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front.',
-            '**Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain.',
+            '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front. See [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
+            '**Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain. See [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/) and [heel spur exercises](/heel-spur-exercises/).',
             '**Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.',
             '**Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.',
           ],
@@ -214,6 +214,11 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
         '[Standing desk foot pain](/standing-desk-foot-pain/) covers the sit-stand transition.',
         '[Best app for plantar fasciitis](/best-app-for-plantar-fasciitis/) compares seven plantar fasciitis apps.',
         'Exercise pages: [plantar fascia stretch](/exercises/plantar-fascia-stretch/), [calf stretch](/exercises/calf-stretch/), [towel heel raise](/exercises/towel-heel-raise/), [foot roll](/exercises/foot-roll/).',
+        'Exercises and tests: [heel spur exercises](/heel-spur-exercises/), [tight calves](/tight-calves/) and the [calf raise test](/calf-raise-test/).',
+        'Treatments and tools: [taping](/plantar-fasciitis-taping/), [ice or heat](/ice-or-heat-for-plantar-fasciitis/), a [massage ball or frozen bottle](/massage-ball-plantar-fasciitis/), [night splints](/night-splints-plantar-fasciitis/) and [insoles](/best-insoles-for-plantar-fasciitis/).',
+        'Other heel pain: [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/), [heel pain after walking](/heel-pain-after-walking/), [heel pain at night](/heel-pain-at-night/), [heel fat pad syndrome](/heel-fat-pad-syndrome/), [Haglund\'s deformity](/haglunds-deformity/) and [Sever\'s disease](/severs-disease/) in children.',
+        'The [foot pain identifier](/foot-pain-identifier/) shows the conditions that most often cause pain in each spot.',
+        'Apps and costs: [what plantar fasciitis care costs](/plantar-fasciitis-treatment-cost/), [an exercise app vs physical therapy](/app-vs-physical-therapy-plantar-fasciitis/) and [free YouTube videos vs an app](/youtube-vs-app-plantar-fasciitis/).',
       ],
     },
   ],

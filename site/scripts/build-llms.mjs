@@ -130,7 +130,8 @@ const days = PROGRAM.daysPerWeek;
 const or = (xs) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
 
 const newest = [
-  ...Object.values(PAGE_UPDATED),
+  // A page dated per language holds { en, es, ru } instead of one date.
+  ...Object.values(PAGE_UPDATED).flatMap((d) => (typeof d === 'string' ? [d] : Object.values(d))),
   ...Object.values(GUIDES).flatMap((byLang) => Object.values(byLang).map((g) => g.updated)),
   ...ARTICLES.map((g) => g.updated),
 ]
@@ -154,10 +155,11 @@ if (!aboutReady) console.warn('llms: the About page is still a placeholder; its 
 
 // ─── Shared blocks ──────────────────────────────────────────────────────────
 
-const SUMMARY = `> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+const SUMMARY = `> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.`;
 
@@ -176,7 +178,7 @@ const KEY_FACTS = [
   'Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal\'s chain moves up one level at a time.',
   `Tests: ${PROGRAM.retestTests} physical measurements (calf raises to failure, arch hold, single-leg balance) in about ${PROGRAM.retestMinutes} minutes, every ${PROGRAM.testEveryDays} days until the first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal} days.`,
   'Not related to walkito.com, a dog-walking service with a similar name.',
-  'Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).',
+  'Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in seven languages: English, Russian, Spanish, Portuguese (Brazil), French, Italian and German. This site is in the same seven.',
   `Contact: ${SUPPORT_EMAIL}`,
 ];
 
@@ -218,6 +220,13 @@ const otherLanguage = (lang) => {
   ].join('\n');
 };
 
+/**
+ * The order is for a reader that stops early: an AI engine often reads only the
+ * start of the file. So the key facts and findings come straight after the
+ * intro, then the English pages, and the long per-language lists come last,
+ * under "## Optional", the llms.txt section a reader may skip. The full-text
+ * file of each language is still named in "## Full text", one line each.
+ */
 const llms = `# ${SITE_NAME}
 
 ${SUMMARY}
@@ -225,6 +234,12 @@ ${SUMMARY}
 ${NOTICE}
 
 Last updated: ${newest}
+
+## Key facts
+${list(KEY_FACTS)}
+
+## Key findings the plan follows
+${list(FINDINGS)}
 
 ## Who writes this
 ${list(WHO)}
@@ -247,6 +262,9 @@ ${ARTICLES.map(guideLine).join('\n')}
     ? plain(aboutEn.description)
     : 'who makes the site, how the guides are written and checked, and what the app does not do'
 }
+- [Walkito in ChatGPT and Claude](${url('/ai/')}): the Walkito tools inside
+  ChatGPT and Claude (exercises with short videos, a starter plan, when to see
+  a doctor), example prompts, and privacy: nothing typed in the chat is stored
 
 ## Support and legal
 - [Support](${url('/support/')}): notifications, Apple Health permissions,
@@ -254,20 +272,6 @@ ${ARTICLES.map(guideLine).join('\n')}
 - [Privacy](${url('/privacy/')}): what stays on the device and what leaves it
 - [Terms of use](${url('/terms/')}): the license, App Store billing and
   cancellation, health and safety, and what the app does not promise
-
-## Other languages
-The site is in seven languages. Russian and Spanish have the plan, the
-evidence and the questions pages as well; every language has the home page,
-both main guides, its translated articles, the About page and the support,
-privacy and terms pages. Each language has its own full-text file.
-
-${OTHER_LANGS.map(otherLanguage).join('\n\n')}
-
-## Key facts
-${list(KEY_FACTS)}
-
-## Key findings the plan follows
-${list(FINDINGS)}
 
 ## Full text
 The English text of every guide, the plan, the evidence, the About page and
@@ -277,6 +281,15 @@ ${OTHER_LANGS.map((l) => `- ${LANG_LABEL[l]}: ${url(`/${l}/llms-full.txt`)}`).jo
 ## Not published
 There is no aggregate user-outcome data on this site. It does not exist
 rather than being withheld.
+
+## Optional
+The pages in the other six languages. The site is in seven languages. Russian
+and Spanish have the plan, the evidence and the questions pages as well; every
+language has the home page, both main guides, its translated articles, the
+About page and the support, privacy and terms pages. Each language has its
+own full-text file.
+
+${OTHER_LANGS.map(otherLanguage).join('\n\n')}
 `;
 
 // ─── llms-full.txt ──────────────────────────────────────────────────────────

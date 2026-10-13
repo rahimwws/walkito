@@ -93,6 +93,7 @@ const ARTICLE = articleSchema({
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
     { '@type': 'ListItem', position: 2, name: 'Heel pain from running', item: `${SITE_URL}${PATH}` },
@@ -135,7 +136,7 @@ export default function HeelPainRunners() {
       <Prose>
         <section className="shell hero">
           <h1>
-            Heel pain
+            Heel pain{' '}
             <span>from running?</span>
           </h1>
           <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />
@@ -288,7 +289,7 @@ export default function HeelPainRunners() {
           <section id="achilles-pain">
             <h2>Could it be the Achilles tendon instead?</h2>
             <p>
-              Achilles pain sits higher than plantar fasciitis: either where the
+              <a href="/achilles-tendonitis-exercises/">Achilles pain</a> sits higher than plantar fasciitis: either where the
               tendon meets the back of the heel bone, or a few centimeters above
               it, in the tendon itself. The 2024 clinical guideline on Achilles
               tendon pain names pain that comes with loading the tendon, like
@@ -353,7 +354,7 @@ export default function HeelPainRunners() {
           <section id="shin-splints">
             <h2>What about pain along the shin?</h2>
             <p>
-              Shin splints, or medial tibial stress syndrome, is pain along the
+              <a href="/shin-splints-exercises/">Shin splints</a>, or medial tibial stress syndrome, is pain along the
               inner edge of the shin bone, usually spread over several inches
               rather than one sore spot. It isn’t the plantar fascia: the bone and the tissue around it react to repeated
               running load. A 2020 review of novice and recreational runners
@@ -386,7 +387,7 @@ export default function HeelPainRunners() {
             <h2>Could it be the fat pad under your heel?</h2>
             <p>
               The heel fat pad is the cushion under the heel bone. Pain from it,
-              called heel fat pad syndrome, can feel like plantar fasciitis, but
+              called <a href="/heel-fat-pad-syndrome/">heel fat pad syndrome</a>, can feel like plantar fasciitis, but
               it tends to sit in the middle of the heel rather than toward the
               arch. The 2023 heel pain guideline names it as one of the causes
               that fall under “plantar heel pain.”

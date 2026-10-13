@@ -152,4 +152,36 @@ export type Guide = {
   /** Breadcrumb label for the guide itself. */
   crumb: string;
   campaign: string;
+  /** Pages to offer first under "Related guides", in this order, before the
+   * ones picked by topic (`relatedGuides`). The two main guides name their
+   * condition's overview this way, which the topic's order would otherwise
+   * offer last. A page this language does not have is skipped; left out, the
+   * cards are picked by topic alone. */
+  related?: readonly (TranslatedPage | EnglishPage)[];
+  /** An original study's data file, described as a `Dataset` beside the
+   * Article (lib/schema.ts, datasetSchema). Only the study pages have one. */
+  dataset?: GuideDataset;
+};
+
+/**
+ * A study's data file in public/downloads/. The file starts with its header
+ * row; what it is and how it was made are said here, not in a comment line
+ * at the top of the CSV, which spreadsheet tools read as a row of data.
+ */
+export type GuideDataset = {
+  /** The data file's name in public/downloads/, e.g. `heel-pain-apps-study-2026.csv`. */
+  file: string;
+  /** As the page asks to be cited. */
+  name: string;
+  /** What the file holds and how to reuse it: 50 to 5,000 characters, Google's limits. */
+  description: string;
+  /** When the data were collected (ISO 8601: a date or a range). */
+  temporalCoverage: string;
+  /** How each row was scored, in a sentence or two the page itself backs up. */
+  measurementTechnique: string;
+  /** When the data last really changed, `YYYY-MM-DD`. Not the page's date:
+   * an edit to the text around the table leaves the data as it was. */
+  updated: string;
+  /** What the data is checked against, as indexes into `CITATIONS`. */
+  cites: readonly number[];
 };

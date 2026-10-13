@@ -5,7 +5,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Russian Terms of Use. It mirrors `app/(en)/terms/page.tsx` and must be
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}/ru/usloviya/#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Главная', item: `${SITE_URL}/ru/` },
     {
@@ -53,7 +55,7 @@ export default function TermsRu() {
       <Prose className="shell prose">
         <h1>Условия использования</h1>
 
-        <p className="updated">Последнее обновление: 9 октября 2026 г.</p>
+        <p className="updated">Последнее обновление: <time dateTime={PAGE_UPDATED.terms}>{formatDate(PAGE_UPDATED.terms, 'ru')}</time></p>
         <p className="updated">
           Это перевод. Если он расходится с{' '}
           <a href="/terms/">английской версией</a>, действует английская.
@@ -114,8 +116,8 @@ export default function TermsRu() {
           Ваш план, ответы, отметки, результаты тестов и занятия сохраняются 
           на телефоне и копируются в ваш аккаунт. Войдите в тот же аккаунт на новом
           телефоне или после переустановки, и они вернутся. Покупки возвращаются
-          через «Восстановить покупки» с тем же Apple ID на iPhone или с тем же
-          аккаунтом Google в Google Play на Android.
+          через «Восстановить покупки» с тем же Apple ID на iPhone или с тем же
+          аккаунтом Google в Google Play на Android.
         </p>
 
         <h2>Ваша лицензия</h2>
@@ -135,9 +137,9 @@ export default function TermsRu() {
 
         <h2>Оплата</h2>
         <p>
-          Walkito оплачивается через App Store на iPhone (его ведёт Apple) или
-          Google Play на Android (его ведёт Google LLC). Магазин принимает
-          платёж, хранит чек и до покупки показывает варианты, цену и срок. Действует именно эта
+          Walkito оплачивается через App Store на iPhone (его ведёт Apple) или
+          Google Play на Android (его ведёт Google LLC). Магазин принимает
+          платёж, хранит чек и до покупки показывает варианты, цену и срок. Действует именно эта
           цена, а не суммы, названные где-либо ещё. Сейчас есть две подписки,
           и обе продлеваются автоматически:
         </p>
@@ -154,15 +156,15 @@ export default function TermsRu() {
         <ul>
           <li>
             Подписка автоматически продлевается в конце каждого периода, и деньги
-            списываются с вашего Apple ID или аккаунта Google, если вы не выключите продление 
+            списываются с вашего Apple ID или аккаунта Google, если вы не выключите продление 
             не позднее чем за 24 часа до конца периода.
           </li>
           <li>
-            Управлять подпиской или отменить её можно на iPhone здесь:{' '}
-            <b>Настройки → [ваше имя] → Подписки</b>, а на Android в приложении
+            Управлять подпиской или отменить её можно на iPhone здесь:{' '}
+            <b>Настройки → [ваше имя] → Подписки</b>, а на Android в приложении
             Google Play:{' '}
             <b>
-              значок профиля → Платежи и подписки → Подписки → Walkito →
+              значок профиля → Платежи и подписки → Подписки → Walkito →
               Отменить подписку
             </b>
             . Отмена останавливает
@@ -175,18 +177,18 @@ export default function TermsRu() {
           </li>
           <li>
             Удаление приложения или аккаунта не отменяет подписку. Отменить её
-            может только магазин, Apple или Google, на экранах, указанных выше.
+            может только магазин, Apple или Google, на экранах, указанных выше.
           </li>
         </ul>
 
         <h3>Возврат денег</h3>
         <p>
           Возвратом денег занимается только магазин, через который вы платили,
-          по своим правилам. Для App Store воспользуйтесь сайтом{' '}
+          по своим правилам. Для App Store воспользуйтесь сайтом{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
           Для Google Play запросите возврат в{' '}
           <a href="https://play.google.com/store/account/orderhistory">истории заказов Google Play</a>.
-          Мы не можем провести или отменить списание за Apple или Google.
+          Мы не можем провести или отменить списание за Apple или Google.
         </p>
 
         <h2>Приглашения</h2>
@@ -219,7 +221,7 @@ export default function TermsRu() {
           <a href="/ru/konfidentsialnost/">странице о конфиденциальности</a>.
         </p>
         <p>
-          На Android, если вы разрешите, Walkito читает из Health Connect шаги,
+          На Android, если вы разрешите, Walkito читает из Health Connect шаги,
           тренировки, расстояние и сон, а завершённые вами занятия записывает
           туда как тренировки. Скорость ходьбы и асимметрия при ходьбе на Android
           не читаются. Каждое разрешение необязательно, и его можно отозвать
@@ -241,7 +243,7 @@ export default function TermsRu() {
         <p>
           Вы можете прекратить пользоваться приложением в любой момент: удалите
           аккаунт (Профиль → Удалить аккаунт), и всё, что вы отметили, будет
-          удалено с телефона и с нашего сервера, а подписку отмените через
+          удалено с телефона и с нашего сервера, а подписку отмените через
           Apple или Google, как описано выше. Если удалить только приложение, исчезнет лишь
           копия на телефоне. Мы можем приостановить доступ, если приложение
           используется так, как эти условия запрещают. На практике это означает

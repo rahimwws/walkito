@@ -88,7 +88,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Test del sollevamento sulle punte: sali il più in alto possibile a ogni battito, con la punta delle dita al muro per l’equilibrio',
-          alt: 'Una figura che sale sulle punte di un piede con la punta delle dita appoggiata a un muro per l’equilibrio',
+          alt: 'Vista laterale di una figura che sale sulle punte dei piedi, con il polpaccio evidenziato',
         },
       ],
       cites: [CITE.hebertLosier],

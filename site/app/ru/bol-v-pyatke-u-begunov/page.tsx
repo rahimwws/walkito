@@ -69,6 +69,7 @@ const ARTICLE = articleSchema({
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: '\u0413\u043b\u0430\u0432\u043d\u0430\u044f', item: `${SITE_URL}/ru/` },
     { '@type': 'ListItem', position: 2, name: '\u0411\u043e\u043b\u044c \u0432 \u043f\u044f\u0442\u043a\u0435 \u0443 \u0431\u0435\u0433\u0443\u043d\u043e\u0432', item: `${SITE_URL}${PATH}` },
@@ -109,7 +110,7 @@ export default function HeelPainRunnersRu() {
       <Prose>
         <section className="shell hero">
           <h1>
-            Болит пятка
+            Болит пятка{' '}
             <span>при беге?</span>
           </h1>
           <Byline lang="ru" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />
@@ -262,7 +263,7 @@ export default function HeelPainRunnersRu() {
           <section id="akhillovo-sukhozhiliye">
             <h2>А может, это ахиллово сухожилие?</h2>
             <p>
-              Боль в ахилловом сухожилии локализуется выше, чем при плантарном
+              <a href="/ru/tendinit-akhillova-sukhozhiliya-uprazhneniya/">Боль в ахилловом сухожилии</a> локализуется выше, чем при плантарном
               фасциите: либо там, где сухожилие прикрепляется к задней части
               пяточной кости, либо на несколько сантиметров выше, в самом
               сухожилии. Клинические рекомендации 2024 года по боли в ахилловом
@@ -299,7 +300,7 @@ export default function HeelPainRunnersRu() {
           <section id="periostit-goleni">
             <h2>А если болит голень?</h2>
             <p>
-              Медиальный большеберцовый стресс-синдром (периостит голени, shin
+              Медиальный большеберцовый стресс-синдром (<a href="/ru/periostit-goleni-uprazhneniya/">периостит голени</a>, shin
               splints) проявляется болью вдоль внутреннего края большеберцовой
               кости, обычно на протяжении нескольких сантиметров, а не в одной точке.
               Дело не в подошвенной фасции, а в кости и тканях вокруг неё, которые
@@ -325,7 +326,7 @@ export default function HeelPainRunnersRu() {
             <h2>А может, это жировая подушка пятки?</h2>
             <p>
               Жировой подушкой пятки называют амортизирующую ткань под пяточной костью.
-              Боль от неё (синдром жировой подушки пятки) может ощущаться похоже
+              Боль от неё (<a href="/ru/sindrom-zhirovoy-podushki-pyatki/">синдром жировой подушки пятки</a>) может ощущаться похоже
               на плантарный фасциит, но обычно локализуется в центре пятки, а 
               не ближе к своду. Рекомендации 2023 года называют его одной из причин
               боли в пятке.
@@ -459,9 +460,9 @@ export default function HeelPainRunnersRu() {
             </p>
             <ul>
               <li>Удержание свода {archHoldSeconds}{'\u00A0'}секунд.</li>
-              <li>{calfRaises} подъёмов на носки на одной ноге.</li>
-              <li>{balanceSeconds}{'\u00A0'}секунд баланса на одной ноге.</li>
-              <li>Разница лево/право в пределах {gapPercent}{'\u00A0'}%.</li>
+              <li>{calfRaises} подъёмов на носки на одной ноге.</li>
+              <li>{balanceSeconds}{'\u00A0'}секунд баланса на одной ноге.</li>
+              <li>Разница лево/право в пределах {gapPercent}{'\u00A0'}%.</li>
             </ul>
             <p>
               Достигнутая цель

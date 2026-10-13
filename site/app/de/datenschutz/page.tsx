@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The German Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -35,7 +36,7 @@ export default function DatenschutzDe() {
       <Prose className="shell prose">
         <h1>Datenschutz</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 9. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'de')}</time></p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/privacy/">der englischen Fassung</a> abweicht, gilt die
@@ -450,7 +451,7 @@ export default function DatenschutzDe() {
 
         <h2 id="ai-assistants">KI-Assistenten (ChatGPT und Claude)</h2>
         <p>
-          Walkito lässt sich in ChatGPT und Claude nutzen. Wenn du dort fragst, kann der Assistent eines unserer Werkzeuge aufrufen und unserem Server die gewählten Einstellungen schicken: zum Beispiel die schmerzende Stelle, Minuten pro Tag, Tage pro Woche, Ausrüstung und Seite und, falls du sie genannt hast, die heutigen Schmerzen oder ein Testergebnis, die bestimmen, was angezeigt wird. Unser Server stellt daraus die Übungen und den Plan zusammen und speichert nichts.
+          Walkito lässt sich in ChatGPT und Claude nutzen (<a href="/ai/" hrefLang="en">so funktioniert es, auf Englisch</a>). Wenn du dort fragst, kann der Assistent eines unserer Werkzeuge aufrufen und unserem Server die gewählten Einstellungen schicken: zum Beispiel die schmerzende Stelle, Minuten pro Tag, Tage pro Woche, Ausrüstung und Seite und, falls du sie genannt hast, die heutigen Schmerzen oder ein Testergebnis, die bestimmen, was angezeigt wird. Unser Server stellt daraus die Übungen und den Plan zusammen und speichert nichts.
         </p>
         <ul>
           <li>Nachrichten, Namen, E-Mail-Adressen, Schmerzwerte und IP-Adressen werden nicht gespeichert.</li>

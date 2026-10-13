@@ -7,7 +7,7 @@ import type { AnatomyId } from '@/lib/anatomy';
 import { CARD_RATIOS, type CardRatio } from '@/lib/card-shapes';
 import { SITE_NAME, pageTitle, smartBannerContent, type AppScreen } from '@/lib/site';
 
-import { NAV_GROUPS, groupOf, type GuideKey, type NavGroup } from '@/lib/nav';
+import { NAV_GROUPS, TOPICS, TOPIC_APP, TOPIC_HUB, groupOf, isExercisePage, topicOf, type GuideKey } from '@/lib/nav';
 
 import { ARTICLES_EN } from './articles-en';
 import { ARTICLES_ES } from './articles-es';
@@ -120,62 +120,115 @@ export function guideCards(guide: Guide): string[] {
   return own.startsWith('/share/g/') ? CARD_RATIOS.map((r) => guideCard(guide, r)) : [own];
 }
 
-/** Up to five guides to read next, in the same language: the same topic
- * group first (`lib/nav.ts`), then the two main guides, then the rest. A list
- * of every page on the site is a list nobody reads. */
-export function relatedGuides(guide: Guide, max = 5): Guide[] {
-  const translated = (Object.keys(GUIDES) as (keyof typeof GUIDES)[]).map((page) => GUIDES[page][guide.lang]);
-  const english =
-    guide.lang === 'en'
+/** Every guide in one language: the two main guides, then the articles. */
+function guidesIn(lang: Lang): Guide[] {
+  const main = (Object.keys(GUIDES) as (keyof typeof GUIDES)[]).map((page) => GUIDES[page][lang]);
+  const articles: readonly (Guide | undefined)[] =
+    lang === 'en'
       ? Object.values(ARTICLES_EN)
-      : guide.lang === 'es'
-        ? (Object.values(ARTICLES_ES) as Guide[])
-        : guide.lang === 'ru'
-          ? (Object.values(ARTICLES_RU) as Guide[])
-          : (Object.values(ARTICLES_NEW[guide.lang as NewLang]) as Guide[]);
-  const all = [...translated, ...english].filter((g) => g.page !== guide.page);
-  const own = groupOf(guide.page);
-  // Within the topic, the pages that come next in the topic's order, wrapping
-  // round: every page is then offered by its neighbours, instead of the first
-  // five of a long topic taking every slot and the rest getting none.
-  const order: readonly GuideKey[] = own ? NAV_GROUPS[own] : [];
-  const at = order.indexOf(guide.page as GuideKey);
-  const dist = (g: Guide) => {
-    const i = order.indexOf(g.page as GuideKey);
-    return i < 0 || at < 0 ? 0 : (i - at + order.length) % order.length;
+      : lang === 'es'
+        ? Object.values(ARTICLES_ES)
+        : lang === 'ru'
+          ? Object.values(ARTICLES_RU)
+          : Object.values(ARTICLES_NEW[lang as NewLang]);
+  return [...main, ...articles.filter((g): g is Guide => g != null)];
+}
+
+/** How many places after `from` the key `to` sits in a list, wrapping round;
+ * 0 when either is not in it. */
+function stepsAfter(order: readonly GuideKey[], from: GuideKey, to: GuideKey): number {
+  const at = order.indexOf(from);
+  const i = order.indexOf(to);
+  return i < 0 || at < 0 ? 0 : (i - at + order.length) % order.length;
+}
+
+/**
+ * Up to five guides to read next, in the same language, by condition
+ * (`TOPICS` in `lib/nav.ts`): first the pages on the same condition and of the
+ * same kind, then the rest of the condition, then its overview, then the
+ * other pages, the two main guides first. A list of every page on the site is
+ * a list nobody reads.
+ *
+ * Within the topic a page is offered the pages that come after it in the
+ * topic's order, wrapping round: every page is then offered by its
+ * neighbours, instead of the first five of a long topic taking every slot and
+ * the rest getting none. A guide's own `related` list goes first, where it
+ * has one.
+ */
+export function relatedGuides(guide: Guide, max = 5): Guide[] {
+  const all = guidesIn(guide.lang).filter((g) => g.page !== guide.page);
+  const own: GuideKey = guide.page;
+  const group = groupOf(own);
+  const topic = topicOf(own);
+
+  const named = (guide.related ?? []).flatMap((page) => all.filter((g) => g.page === page)).slice(0, max);
+
+  const tier = (g: Guide) => {
+    const sameGroup = group != null && groupOf(g.page) === group;
+    if (topic) {
+      if (topicOf(g.page) === topic) return sameGroup ? 0 : 1;
+      if (g.page === TOPIC_HUB[topic]) return 2;
+    } else if (sameGroup) return 0;
+    if (g.page === 'heelPain' || g.page === 'flatFeet') return 3;
+    return groupOf(g.page) === 'compare' || groupOf(g.page) === 'library' ? 5 : 4;
   };
-  const rank = (g: Guide) =>
-    own && groupOf(g.page) === own
-      ? 0
-      : g.page === 'heelPain' || g.page === 'flatFeet'
-        ? 1
-        : groupOf(g.page) === 'compare' || groupOf(g.page) === 'library'
-          ? 3
-          : 2;
-  const sorted = all
-    .map((g, i) => ({ g, i }))
-    .sort((x, y) => rank(x.g) - rank(y.g) || (rank(x.g) === 0 ? dist(x.g) - dist(y.g) : 0) || x.i - y.i)
-    .map((x) => x.g);
-  // The compare group is long (studies and comparisons), so on its own it
-  // would take every slot and cut comparison pages off from the exercise
-  // guides. There: 3 neighbours (the app guide always among them), then the
-  // two main guides.
-  if (own === 'compare') {
-    const same = sorted.filter((g) => groupOf(g.page) === own);
-    const appGuide = same.find((g) => g.page === 'bestApp');
+  // Neighbours by the group's order within the group, by the topic's order in
+  // the rest of the topic. An exercise page comes after the topic's other
+  // pages there: the exercise cards on a guide already link their own pages.
+  const place = (g: Guide, t: number) =>
+    t === 0 && group
+      ? stepsAfter(NAV_GROUPS[group], own, g.page)
+      : t === 1 && topic
+        ? (isExercisePage(g.page) && !isExercisePage(own) ? TOPICS[topic].length : 0) + stepsAfter(TOPICS[topic], own, g.page)
+        : 0;
+  const ranked = all
+    .filter((g) => !named.includes(g))
+    .map((g, i) => {
+      const t = tier(g);
+      return { g, i, t, at: place(g, t) };
+    })
+    .sort((x, y) => x.t - y.t || x.at - y.at || x.i - y.i);
+
+  // Comparisons and exercise pages come in long groups that would take every
+  // slot and cut those pages off from the condition they are about. There: 3
+  // of the group (on a comparison, the topic's app guide always among them),
+  // then the rest of the condition.
+  let order = ranked.map((x) => x.g);
+  if (group === 'compare' || group === 'library') {
+    const same = ranked.filter((x) => x.t === 0).map((x) => x.g);
     const near = same.slice(0, 3);
+    const appGuide = group === 'compare' && topic ? same.find((g) => g.page === TOPIC_APP[topic]) : undefined;
     if (appGuide && !near.includes(appGuide)) near[near.length - 1] = appGuide;
-    const mains = sorted.filter((g) => g.page === 'heelPain' || g.page === 'flatFeet');
-    const rest = sorted.filter((g) => !near.includes(g) && !mains.includes(g));
-    return [...near, ...mains, ...rest].slice(0, max);
+    order = [...near, ...order.filter((g) => !same.includes(g)), ...same.filter((g) => !near.includes(g))];
   }
-  const picked = sorted.slice(0, max);
-  // Heel pain pages end with the app comparison: the next step for a reader
-  // who has the exercises and wants a plan (plan B.11, reader stages).
-  const heelGroups: readonly (NavGroup | null)[] = ['exercises', 'pain', 'heel', 'tools', 'work'];
-  const bestApp = all.find((g) => g.page === 'bestApp');
-  if (bestApp && heelGroups.includes(own) && !picked.includes(bestApp) && picked.length === max) picked[max - 1] = bestApp;
+  const picked = [...named, ...order].slice(0, max);
+
+  // The other pages on a condition end with its app comparison: the next step
+  // for a reader who has the exercises and wants a plan (plan B.11, reader
+  // stages). The exercise pages lead back to the condition instead.
+  const app = topic && group !== 'compare' && group !== 'library' ? all.find((g) => g.page === TOPIC_APP[topic]) : undefined;
+  if (app && !picked.includes(app) && picked.length === max && named.length < max) picked[max - 1] = app;
   return picked;
+}
+
+/** The exercise library page that shows each clip, per language: built from
+ * the `media` of the exercise pages, whose clips do not overlap. */
+const LIBRARY_BY_CLIP = new Map<Lang, Map<string, Guide>>();
+
+/** The library page for an exercise card's clip, in the card's language. */
+export function libraryPageFor(media: string, lang: Lang): Guide | undefined {
+  let clips = LIBRARY_BY_CLIP.get(lang);
+  if (!clips) {
+    clips = new Map();
+    for (const g of guidesIn(lang)) {
+      if (!isExercisePage(g.page)) continue;
+      for (const e of g.sections.flatMap((s) => s.exercises ?? [])) {
+        if (e.media && !e.mediaIsStandIn && !clips.has(e.media)) clips.set(e.media, g);
+      }
+    }
+    LIBRARY_BY_CLIP.set(lang, clips);
+  }
+  return clips.get(media);
 }
 
 /** A guide's metadata: title, description, canonical and hreflang together, so

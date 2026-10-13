@@ -13,15 +13,15 @@ export const YT_STUDY_EN: Guide = {
   page: 'ytStudy',
   mainSource: CITE.guideline,
   published: '2026-10-11',
-  updated: '2026-10-11',
-  title: 'Top 50 Plantar Fasciitis YouTube Videos vs the 2023 Guideline',
+  updated: '2026-10-13',
+  title: 'Top 50 Plantar Fasciitis YouTube Videos vs 2023 Guideline',
   description:
     'We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 heel pain guideline. Only 9 teach all three top-rated exercise types.',
   h1: 'We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 guideline',
   lede:
     'Only 9 of the 50 most-watched plantar fasciitis videos on YouTube teach all three kinds of home exercise the 2023 heel pain guideline supports: a plantar fascia stretch, a calf stretch and calf or foot strengthening. Together the 50 videos have 75 million views. Only 9 say when to see a doctor, none of them in the top 10, and 17 titles promise a fast or permanent result.',
   intro: [
-    'Walkito makes an exercise app for heel pain, so in a way we compete with these videos for your attention. That is why every score is backed by a timestamp and a quote from the video, a second person scored a sample independently, and the full data is free to [download](/downloads/youtube-plantar-fasciitis-study-2026.csv).',
+    'Walkito makes an exercise app for heel pain, so in a way we [compete with these videos](/youtube-vs-app-plantar-fasciitis/) for your attention. That is why every score is backed by a timestamp and a quote from the video, a second person scored a sample independently, and the full data is free to [download](/downloads/youtube-plantar-fasciitis-study-2026.csv).',
     'This is not a ranking of who is a good clinician. Many of these creators are physical therapists, and no short video can cover everything. It is a check of what the most-watched videos actually show, set against what the evidence supports.',
   ],
   takeaways: [
@@ -247,4 +247,15 @@ export const YT_STUDY_EN: Guide = {
   },
   crumb: 'YouTube video study',
   campaign: 'study-youtube',
+  dataset: {
+    file: 'youtube-plantar-fasciitis-study-2026.csv',
+    name: 'The 50 most-watched plantar fasciitis videos on YouTube vs the 2023 guideline',
+    description:
+      'Walkito study: the 50 most-watched plantar fasciitis videos on YouTube scored against the 2023 heel pain guideline (Koc et al., JOSPT 2023). Pulled 2026-10-11, US English. One row per video, with each check and the timestamp and quote behind it. Free to reuse with a citation to walkito.site.',
+    temporalCoverage: '2026-10-11',
+    measurementTechnique:
+      'Each video was scored from its full transcript, title and description (one video without captions from its title and description alone) against a fixed checklist based on the 2023 guideline, written before scoring. Every yes needed a timestamp and a quote. A second scorer scored 10 videos independently and the two agreed on 129 of 130 checks.',
+    updated: '2026-10-11',
+    cites: [CITE.guideline],
+  },
 };

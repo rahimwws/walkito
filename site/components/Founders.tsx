@@ -14,7 +14,7 @@ const LINKEDIN = { rahman: 'https://www.linkedin.com/in/rahman-bazarov/', rahim:
 
 const PEOPLE: Record<Lang, [string, string, string]> = {
   en: ['Find us on LinkedIn: ', ' and ', '.'],
-  ru: ['Мы в LinkedIn: ', ' и ', '.'],
+  ru: ['Мы в LinkedIn: ', ' и ', '.'],
   es: ['Estamos en LinkedIn: ', ' y ', '.'],
   pt: ['Estamos no LinkedIn: ', ' e ', '.'],
   fr: ['Retrouvez-nous sur LinkedIn\u00A0: ', ' et ', '.'],

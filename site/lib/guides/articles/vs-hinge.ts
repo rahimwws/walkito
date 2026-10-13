@@ -11,7 +11,7 @@ export const VS_HINGE_EN: Guide = {
   lang: 'en',
   page: 'vsHinge',
   published: '2026-10-11',
-  updated: '2026-10-11',
+  updated: '2026-10-13',
   title: 'Walkito vs Hinge Health for Heel Pain (2026)',
   description:
     'Walkito vs Hinge Health for plantar fasciitis: who can get each, what you get, clinicians, evidence and which fits. If your employer covers Hinge, start there.',
@@ -62,7 +62,7 @@ export const VS_HINGE_EN: Guide = {
       h2: 'Can you use Hinge Health without an employer?',
       paragraphs: [
         'Not as far as we could find. Hinge Health is offered through employers and health plans, and its [eligibility check](https://www.hingehealth.com/check-eligibility/) starts with your employer or insurance details. Spouses and adult dependents can often join if the plan includes them. If you leave the job or the plan stops offering it, access ends.',
-        'If you have no access, the options are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer\u2019s guide to plantar fasciitis apps](/best-app-for-plantar-fasciitis/) compares the self-guided apps.',
+        'If you have no access, the [Hinge Health alternatives](/hinge-health-alternatives/) are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer\u2019s guide to plantar fasciitis apps](/best-app-for-plantar-fasciitis/) compares the self-guided apps.',
       ],
     },
     {

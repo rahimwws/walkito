@@ -103,7 +103,12 @@ export function GetAppDialog({
     >
       <div className="get-card">
         <div className="get-head">
-          <h2 id="get-dialog-title">{words.title}</h2>
+          {/* A paragraph, not a heading: the dialog sits in the masthead, so an
+              h2 here was the first heading on every page, ahead of the h1.
+              aria-labelledby still names the dialog with it. */}
+          <p id="get-dialog-title" className="get-title">
+            {words.title}
+          </p>
           <form method="dialog">
             <button className="get-close" aria-label={words.close}>
               <XIcon size={26} aria-hidden />

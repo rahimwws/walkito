@@ -11,7 +11,15 @@
  * the live host, so the upload has to have landed first, and Cloudflare's copy
  * of the site has to have been emptied (see purgeCloudflare below).
  *
+ * Before anything is uploaded, scripts/schema-check.mjs reads the build's
+ * structured data and stops the deploy on an ERROR (unparseable JSON-LD, a
+ * property Google requires); its warnings never stop it. The other checks
+ * (scripts/seo-lint.mjs: links, robots, dates, headings) run on every pull
+ * request (.github/workflows/site-checks.yml) and not here, so a deploy is
+ * never held up by a date and an urgent fix can always go out.
+ *
  *   bun run deploy
+ *   bun run deploy --skip-checks   emergencies only: uploads without schema-check
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -25,9 +33,21 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const TARGET = process.env.DEPLOY_TARGET || 'root@161.35.52.54:/var/www/walkito/';
 const SSH = process.env.DEPLOY_SSH;
 
+const SKIP_CHECKS = process.argv.includes('--skip-checks');
+
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: ROOT, stdio: 'inherit' });
 
 run('bun', ['run', 'build']);
+if (SKIP_CHECKS) {
+  console.log('deploy: --skip-checks, structured data not checked');
+} else {
+  try {
+    run('node', ['scripts/schema-check.mjs', 'out']);
+  } catch {
+    console.error('deploy: schema-check found errors (above); nothing uploaded. Fix them, or in an emergency deploy with --skip-checks.');
+    process.exit(1);
+  }
+}
 // file.br and file.gz beside every text file, served as they are by nginx
 // (brotli_static / gzip_static): compressed once here, at the strongest
 // levels, rather than on every request.

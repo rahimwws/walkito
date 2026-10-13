@@ -11,6 +11,9 @@ export function Kicker({ num, label, as: Tag = 'span', className }: { num: strin
       <span className="kick-num" aria-hidden={heading ? true : undefined}>
         {num}
       </span>
+      {/* So the text reads "02 It's not your fault.", not "02It's". A flex
+          container draws no space between its items, so the chips do not move. */}
+      {' '}
       <span className="kick-label">{label}</span>
     </Tag>
   );

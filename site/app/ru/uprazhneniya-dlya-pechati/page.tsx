@@ -9,7 +9,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, pageTitle, PAGE_UPDATED } from '@/lib/site';
+import { authorFor } from '@/lib/schema';
+import { SITE_NAME, SITE_URL, pageTitle, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/ru/uprazhneniya-dlya-pechati/';
 const TITLE = 'Листы с упражнениями для стоп для печати (PDF бесплатно)';
@@ -77,6 +78,10 @@ const SCHEMA = {
   description: DESCRIPTION,
   inLanguage: 'ru',
   url: `${SITE_URL}${PATH}`,
+  // The authors the byline names, and the page's dates.
+  author: authorFor('ru'),
+  datePublished: isoDateTime(PAGE_PUBLISHED.printables.ru),
+  dateModified: isoDateTime(PAGE_UPDATED.printables.ru),
   hasPart: PRINTABLES_RU.map((p) => ({
     '@type': 'DigitalDocument',
     name: p.title,
@@ -91,6 +96,7 @@ const SCHEMA = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Главная', item: `${SITE_URL}/ru/` },
     { '@type': 'ListItem', position: 2, name: 'Листы для печати', item: `${SITE_URL}${PATH}` },
@@ -138,7 +144,7 @@ export default function PrintableSheetsRu() {
                     Скачать PDF
                   </a>{' '}
                   <a href={`/downloads/${p.en}.pdf`} download hrefLang="en">
-                    Версия на английском
+                    Версия на английском
                   </a>
                 </p>
               </div>
@@ -157,8 +163,8 @@ export default function PrintableSheetsRu() {
           приложение Walkito: спрашивает, как чувствуют себя ваши стопы, и выбирает
           сегодняшнее занятие.
         </p>
-        <UpdatedLine lang="ru" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="ru" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="ru" updated={PAGE_UPDATED.printables.ru} />
+        <CiteBox lang="ru" title={TITLE} updated={PAGE_UPDATED.printables.ru} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-ru" lang="ru" />
       </Prose>

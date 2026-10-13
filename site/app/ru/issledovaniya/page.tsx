@@ -46,6 +46,7 @@ const ARTICLE = articleSchema({
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Главная', item: `${SITE_URL}/ru/` },
     { '@type': 'ListItem', position: 2, name: 'Исследования', item: `${SITE_URL}${PATH}` },

@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Privacy Policy URL App Store Connect asks for.
@@ -58,7 +59,7 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 9 October 2026</p>
+        <p className="updated">Last updated: <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'en')}</time></p>
 
         <h2>The short version</h2>
         <ul>
@@ -425,7 +426,7 @@ export default function Privacy() {
 
         <h2 id="ai-assistants">AI assistants (ChatGPT and Claude)</h2>
         <p>
-          Walkito can be used inside ChatGPT and Claude. When you ask there, the assistant may call one of our tools and send our server the settings it chose: for example the painful area, minutes a day, days a week, equipment and side, and, if you mentioned them, today’s pain or a test result, which decide what is shown. Our server uses them to put together the exercises and the plan, and keeps nothing.
+          Walkito can be used inside ChatGPT and Claude (<a href="/ai/">how it works</a>). When you ask there, the assistant may call one of our tools and send our server the settings it chose: for example the painful area, minutes a day, days a week, equipment and side, and, if you mentioned them, today’s pain or a test result, which decide what is shown. Our server uses them to put together the exercises and the plan, and keeps nothing.
         </p>
         <ul>
           <li>No messages, names, email addresses, pain values or IP addresses are stored.</li>

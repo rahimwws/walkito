@@ -197,4 +197,15 @@ export const APP_STUDY_EN: Guide = {
   },
   crumb: 'Heel pain apps study',
   campaign: 'study-apps',
+  dataset: {
+    file: 'heel-pain-apps-study-2026.csv',
+    name: '20 heel pain apps checked against the 2023 guideline',
+    description:
+      'Walkito study: 20 heel pain and plantar fasciitis apps checked against the 2023 heel pain guideline (Koc et al., JOSPT 2023), from their US App Store and Google Play listings and websites, 2026-10-11. One row per app, with each check and the quote behind it. Walkito is scored but not counted in any total. Prices are not included. Free to reuse with a citation to walkito.site.',
+    temporalCoverage: '2026-10-11',
+    measurementTechnique:
+      'Each app was scored from its store listings and website against a fixed checklist written before scoring; the apps were not installed or tested. Every yes needed a quote and where it came from. A second scorer scored 6 apps, Walkito included, independently and the two agreed on 53 of 54 checks.',
+    updated: '2026-10-11',
+    cites: [CITE.guideline],
+  },
 };

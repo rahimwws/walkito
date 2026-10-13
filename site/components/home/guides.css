@@ -35,6 +35,8 @@
   font-size: clamp(44px, 7vw, 104px);
   line-height: 1;
   text-transform: uppercase;
+  /* The space between the words, 0.24em wide (--display-space, globals.css). */
+  word-spacing: calc(0.24em - var(--display-space));
 }
 
 .gd-word {
@@ -45,15 +47,12 @@
      the marks over capitals (É, Ü, Й). */
   padding-block: 0.2em 0.12em;
   margin-block: -0.2em -0.12em;
+  /* A no-break space inside a word keeps its own width. */
+  word-spacing: normal;
 }
 
 .gd-word > span {
   display: inline-block;
-}
-
-/* The space between words, which an inline-block would swallow. */
-.gd-word + .gd-word {
-  margin-left: 0.24em;
 }
 
 .gd-lead {

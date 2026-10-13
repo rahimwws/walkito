@@ -10,7 +10,8 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL, PAGE_UPDATED } from '@/lib/site';
+import { authorFor } from '@/lib/schema';
+import { SITE_NAME, SITE_URL, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/printable-exercise-sheets/';
 const TITLE = 'Printable Foot Exercise Sheets (Free PDF)';
@@ -30,6 +31,10 @@ const SCHEMA = {
   name: TITLE,
   description: DESCRIPTION,
   url: `${SITE_URL}${PATH}`,
+  // The authors the byline names, and the page's dates.
+  author: authorFor('en'),
+  datePublished: isoDateTime(PAGE_PUBLISHED.printables.en),
+  dateModified: isoDateTime(PAGE_UPDATED.printables.en),
   hasPart: PRINTABLES.map((p) => ({
     '@type': 'DigitalDocument',
     name: p.title,
@@ -43,6 +48,7 @@ const SCHEMA = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
     { '@type': 'ListItem', position: 2, name: 'Printable exercise sheets', item: `${SITE_URL}${PATH}` },
@@ -97,8 +103,8 @@ export default function PrintableSheets() {
           Want the plan to adjust for you each morning instead? That is what the Walkito app does: it asks how your feet
           feel and picks today&rsquo;s session.
         </p>
-        <UpdatedLine lang="en" updated={PAGE_UPDATED.printables} />
-        <CiteBox lang="en" title={TITLE} updated={PAGE_UPDATED.printables} url={`${SITE_URL}${PATH}`} />
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.printables.en} />
+        <CiteBox lang="en" title={TITLE} updated={PAGE_UPDATED.printables.en} url={`${SITE_URL}${PATH}`} />
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables" lang="en" />
       </Prose>

@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import { Fragment, type CSSProperties } from 'react';
 
 import BodyPartLegIcon from '@hugeicons/core-free-icons/BodyPartLegIcon';
 import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
@@ -368,9 +368,12 @@ export function Guides({ lang, items }: { lang: Lang; items: GuideItem[] }) {
           {/* Each word rises out of its own line box, one after another. */}
           <h2 aria-label={copy.h2}>
             {copy.h2.split(' ').map((word, w) => (
-              <span key={w} className="gd-word" aria-hidden>
-                <span style={vars({ '--w': w })}>{word}</span>
-              </span>
+              <Fragment key={w}>
+                {w > 0 && ' '}
+                <span className="gd-word" aria-hidden>
+                  <span style={vars({ '--w': w })}>{word}</span>
+                </span>
+              </Fragment>
             ))}
           </h2>
           <p className="gd-lead">{copy.lead}</p>

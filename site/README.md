@@ -1,12 +1,18 @@
 # Walkito — site
 
-Next.js (App Router), statically exported, in three languages. No server.
+Next.js (App Router), statically exported, in the seven languages the app
+ships in. No server.
 
-The site is split into three root layouts — `app/(en)`, `app/ru`, `app/es` —
-because `<html lang>` can only be set by a root layout. English has every page;
-Russian and Spanish have the home page and the two guides. Which page exists in
-which language is one table, `TRANSLATED` in `lib/i18n.ts`, and hreflang, the
-sitemap and the footer's language switcher all read it.
+The site is split into seven root layouts (`app/(en)`, `app/ru`, `app/es`,
+`app/pt`, `app/fr`, `app/it`, `app/de`) because `<html lang>` can only be set
+by a root layout. English has every page, and Russian and Spanish nearly all
+of them. Portuguese, French, Italian and German have the core pages and most
+guides. Where a language lacks a page, links point at the English one. Those
+four carry `noindex` and stay out of the sitemaps and hreflang until
+`INDEXED_LANGS` lists them.
+Which page exists in which language is in `lib/i18n.ts` (`TRANSLATED`,
+`CUSTOM_PAGES` and the article path tables), and hreflang, the sitemaps and the
+footer's language switcher all read it.
 
 The guides (`lib/guides/{en,ru,es}.ts`, rendered by `components/Guide.tsx`) are
 the pages built to rank: one query each, answer in the first paragraph, every
@@ -36,6 +42,18 @@ runs `.github/workflows/deploy-site.yml`, which does the same three steps as
 the `deploy` user (rsync into `/var/www/walkito` only). It can also be run by
 hand from the Actions tab (Deploy site, Run workflow). `bun run deploy` from a
 laptop still works and uploads as root, then hands the files back to `deploy`.
+
+**Checks.** The deploy stops before uploading if `scripts/schema-check.mjs`
+finds broken structured data (`bun run deploy --skip-checks` skips it, for
+emergencies only). Every pull request that touches `site/` runs
+`.github/workflows/site-checks.yml`: the build, schema-check, the tool numbers
+(`scripts/check-tools.mjs`), the Russian and Spanish no-break spaces
+(`scripts/typeset.mjs --check`) and `scripts/seo-lint.mjs`, which fails on a
+broken internal link, a canonical that is not the page, robots that disagree
+with the sitemaps, a page without exactly one h1, dates that disagree and a few
+more (the list is at the top of the script), and warns on long titles and
+descriptions. Its build stays downloadable as the run's `site-out` artifact for
+three days. To run the lint locally: `bun run build && node scripts/seo-lint.mjs out`.
 
 `public/google2e55515ad29a0837.html`, `public/BingSiteAuth.xml` and the
 `public/yandex_*.html` file prove ownership to Search Console, Bing Webmaster

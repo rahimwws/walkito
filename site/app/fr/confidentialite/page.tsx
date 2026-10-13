@@ -5,7 +5,8 @@ import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
-import { SUPPORT_EMAIL } from '@/lib/site';
+import { formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The French Privacy Policy. It mirrors `app/(en)/privacy/page.tsx` and must
@@ -35,7 +36,7 @@ export default function ConfidentialiteFr() {
       <Prose className="shell prose">
         <h1>Confidentialité</h1>
 
-        <p className="updated">Dernière mise à jour : 9 octobre 2026</p>
+        <p className="updated">Dernière mise à jour : <time dateTime={PAGE_UPDATED.privacy}>{formatDate(PAGE_UPDATED.privacy, 'fr')}</time></p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/privacy/">la version anglaise</a>, c’est la version anglaise
@@ -454,7 +455,7 @@ export default function ConfidentialiteFr() {
 
         <h2 id="ai-assistants">Assistants IA (ChatGPT et Claude)</h2>
         <p>
-          Walkito peut être utilisé dans ChatGPT et Claude. Quand vous posez une question là-bas, l’assistant peut appeler l’un de nos outils et envoyer à notre serveur les réglages qu’il a choisis : par exemple la zone douloureuse, les minutes par jour, les jours par semaine, le matériel et le côté, et, si vous les avez mentionnés, la douleur du jour ou le résultat d’un test, qui décident de ce qui est affiché. Notre serveur s’en sert pour composer les exercices et le plan, et ne garde rien.
+          Walkito peut être utilisé dans ChatGPT et Claude (<a href="/ai/" hrefLang="en">comment cela fonctionne, en anglais</a>). Quand vous posez une question là-bas, l’assistant peut appeler l’un de nos outils et envoyer à notre serveur les réglages qu’il a choisis : par exemple la zone douloureuse, les minutes par jour, les jours par semaine, le matériel et le côté, et, si vous les avez mentionnés, la douleur du jour ou le résultat d’un test, qui décident de ce qui est affiché. Notre serveur s’en sert pour composer les exercices et le plan, et ne garde rien.
         </p>
         <ul>
           <li>Aucun message, nom, adresse e-mail, valeur de douleur ni adresse IP n’est conservé.</li>

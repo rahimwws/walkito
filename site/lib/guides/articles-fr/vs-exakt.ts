@@ -12,7 +12,7 @@ export const VS_EXAKT_FR: Guide = {
   lang: 'fr',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Walkito vs Exakt Health\u00A0: comparatif (2026)',
   description:
     'Walkito ou Exakt Health\u00A0: problèmes couverts, prix, plateformes, plan, données scientifiques, langues, confidentialité. Vérifié en octobre 2026.',
@@ -82,7 +82,7 @@ export const VS_EXAKT_FR: Guide = {
           ],
           [
             'Langues',
-            'Anglais, russe, espagnol',
+            'Anglais, russe, espagnol, portugais, français, italien, allemand',
             'Anglais, français, allemand, espagnol',
           ],
           [
@@ -188,7 +188,7 @@ export const VS_EXAKT_FR: Guide = {
       h2: 'Plateformes et langues',
       paragraphs: [
         'Exakt Health et Walkito sont toutes les deux sur iOS et Android. La plateforme ne départage donc pas les deux applications.',
-        'Exakt est disponible en anglais, en français, en allemand et en espagnol. Walkito est disponible en anglais, en russe et en espagnol. Les langues communes sont l’anglais et l’espagnol. Si vous avez besoin du français ou de l’allemand, Exakt est la seule option. Si vous avez besoin du russe, Walkito est la seule option.',
+        'Exakt est disponible en anglais, en français, en allemand et en espagnol. Walkito est disponible en anglais, en russe, en espagnol, en portugais, en français, en italien et en allemand. Les langues communes sont l’anglais, l’espagnol, le français et l’allemand. Si vous avez besoin du russe, du portugais ou de l’italien, Walkito est la seule option des deux.',
       ],
     },
     {
@@ -234,7 +234,6 @@ export const VS_EXAKT_FR: Guide = {
         'Votre blessure n’est ni une fasciite plantaire ni des pieds plats. Exakt couvre plus de 15\u00A0problèmes\u00A0; Walkito en couvre trois.',
         'Vous voulez un essai gratuit de 7\u00A0jours pour tester l’application avant de payer.',
         'La certification de dispositif médical dans l’UE compte pour vous.',
-        'Vous avez besoin de l’application en français ou en allemand.',
       ],
     },
     {
@@ -247,7 +246,7 @@ export const VS_EXAKT_FR: Guide = {
         'Vous voulez des séances de 3 à 10\u00A0minutes plutôt que de 15 à 30.',
         'L’adaptation de chaque séance à la douleur à partir d’un bilan le matin compte plus pour vous qu’une progression par niveaux.',
         'Vous voulez des tests de progrès tous les 14\u00A0jours qui comparent la gauche et la droite.',
-        'Vous avez besoin de l’application en russe.',
+        'Vous avez besoin de l’application en russe, en portugais ou en italien.',
         'Vous êtes debout toute la journée pour le travail, pas en train de courir, et voulez une application conçue pour cela.',
       ],
     },

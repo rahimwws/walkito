@@ -88,7 +88,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Test de montée sur pointes\u00A0: montez le plus haut possible à chaque battement, le bout des doigts au mur pour l’équilibre',
-          alt: 'Une personne qui monte sur la pointe d’un pied, le bout des doigts sur un mur pour l’équilibre',
+          alt: 'Vue de profil d’une silhouette qui monte sur la pointe des pieds, le mollet mis en évidence',
         },
       ],
       cites: [CITE.hebertLosier],

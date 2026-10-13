@@ -176,4 +176,15 @@ export const AI_STUDY_EN: Guide = {
   },
   crumb: 'AI answers study',
   campaign: 'study-ai-answers',
+  dataset: {
+    file: 'ai-answers-plantar-fasciitis-study-2026.csv',
+    name: '120 AI answers on plantar fasciitis vs the 2023 guideline',
+    description:
+      'Walkito study: 40 plantar fasciitis questions asked once each in ChatGPT, Google AI Mode and Perplexity, and the 120 answers scored against the 2023 heel pain guideline (Koc et al., JOSPT 2023). Asked 2026-10-11, Arizona US. One row per answer, with the question, the tool, each check and the quote behind it, the linked sources and the full answer. Free to reuse with a citation to walkito.site.',
+    temporalCoverage: '2026-10-11',
+    measurementTechnique:
+      'Each answer was scored against a fixed checklist based on the 2023 guideline, written before the answers were collected. Every yes needed a quote from the answer, and a named strengthening exercise was checked against a fixed word list. A second scorer scored 20 answers independently and the two agreed on 178 of 180 checks.',
+    updated: '2026-10-11',
+    cites: [CITE.guideline],
+  },
 };

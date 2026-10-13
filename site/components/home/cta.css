@@ -70,6 +70,8 @@
   line-height: var(--hcta-lead);
   text-transform: uppercase;
   text-wrap: balance;
+  /* The space between the words, 0.22em wide (--display-space, globals.css). */
+  word-spacing: calc(0.22em - var(--display-space));
 }
 
 /* One pale lilac running down the three lines, a step of it per line, since
@@ -107,11 +109,8 @@
 .hcta .hcta-word {
   overflow: hidden;
   vertical-align: top;
-}
-
-/* The space between words, which an inline-block would swallow. */
-.hcta .hcta-word + .hcta-word {
-  margin-left: 0.22em;
+  /* A no-break space inside a word keeps its own width. */
+  word-spacing: normal;
 }
 
 .hcta .hcta-word > span {

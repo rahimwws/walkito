@@ -1048,6 +1048,19 @@ body:has(> .pg) > .wash {
   font-weight: 600;
 }
 
+/* Under an exercise's name, its own page in the library: one quiet line, so
+   the card still reads as the steps. */
+.pg .prose :is(.exercise-detail, .exercises) .ex-library {
+  margin: -4px 0 10px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--pg-muted);
+}
+
+.pg .prose .exercises .ex-library {
+  margin: 4px 0 0;
+}
+
 /* ---- numbered exercises without a clip ---- */
 
 .pg .prose .exercises li {

@@ -242,3 +242,80 @@ export function groupOf(key: GuideKey): NavGroup | null {
   }
   return null;
 }
+
+/** An exercise's own page in the library (exCalfRaises), not the calf raise
+ * test that shares its footer column, and not exaktAlt, whose key also starts
+ * with "ex". */
+export function isExercisePage(key: string): boolean {
+  return /^ex[A-Z]/.test(key) && key !== 'exaktAlt';
+}
+
+/**
+ * The condition each guide is about, for "related guides".
+ *
+ * The groups above say what kind of page a guide is (a tool, a comparison, an
+ * exercise); a reader at the end of a plantar fasciitis page wants more
+ * plantar fasciitis, whatever kind of page it is. Before this map the cards
+ * under the plantar fasciitis exercises led to flat feet, Achilles and shin
+ * splints, and the flat feet exercises offered no flat feet page at all.
+ *
+ * The order is the rotation `relatedGuides` reads: a page is offered the pages
+ * after it, wrapping round, so every page in a topic is offered by the ones
+ * before it. Overview and main guide first, so the app and exercise pages at
+ * the end wrap round to them; the pages for long days on your feet sit after
+ * the recovery pages rather than before the app pages, so they lead on to
+ * the condition and not to three app comparisons in a row. A key with no
+ * guide of its own (`runners`) is passed over.
+ */
+export type Topic = 'pf' | 'flat' | 'calf' | 'forefoot';
+
+export const TOPICS: Record<Topic, readonly GuideKey[]> = {
+  pf: [
+    'hubPlantarFasciitis', 'heelPain', 'morningHeelPain', 'pfDuration', 'standing', 'nurses', 'standingDesk', 'runners', 'calfRaises',
+    'pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'heelFatPad', 'haglunds', 'severs',
+    'nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'bestInsoles',
+    'bestApp', 'pfCost', 'appVsPt', 'vsHinge', 'hingeAlt', 'vsExakt', 'exaktAlt', 'ytVsApp', 'appStudy', 'ytStudy', 'aiStudy',
+    'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exTowelHeelRaise', 'exFootRoll',
+  ],
+  flat: [
+    'hubFlatFeet', 'flatFeet', 'archPain', 'pttd', 'highArches', 'footStrengthening',
+    'flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids',
+    'barefoot', 'insolesVsExercises', 'bestFlatApp', 'footApps',
+    'exShortFoot', 'exTowelScrunch', 'exBandInversion', 'exHipAbduction',
+  ],
+  calf: [
+    'achilles', 'shinSplints', 'tightCalves', 'ankleMobility', 'ankleStrengthening', 'calfRaiseTest',
+    'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exAnkleRocks', 'exSingleLegBalance',
+  ],
+  forefoot: [
+    'ballOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening', 'topOfFoot',
+    'exToeSpread', 'exBigToeLift',
+  ],
+};
+
+/** The overview page a topic falls back to once its own pages run out. Calf
+ * and forefoot have none of their own: the plantar fasciitis overview covers
+ * Achilles pain and the calf among heel pain's look-alikes, and the flat feet
+ * overview covers ball of foot pain, bunions and the toes. */
+export const TOPIC_HUB: Record<Topic, GuideKey> = {
+  pf: 'hubPlantarFasciitis',
+  flat: 'hubFlatFeet',
+  calf: 'hubPlantarFasciitis',
+  forefoot: 'hubFlatFeet',
+};
+
+/** The app comparison a topic's pages end with: the next step for a reader who
+ * has the exercises and wants a plan. None where no page compares apps for
+ * that condition alone. */
+export const TOPIC_APP: Partial<Record<Topic, GuideKey>> = {
+  pf: 'bestApp',
+  flat: 'bestFlatApp',
+};
+
+/** The topic a guide is about, or null for pages outside the map. */
+export function topicOf(key: GuideKey): Topic | null {
+  for (const [topic, keys] of Object.entries(TOPICS) as [Topic, readonly GuideKey[]][]) {
+    if (keys.includes(key)) return topic;
+  }
+  return null;
+}

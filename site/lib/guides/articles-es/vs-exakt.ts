@@ -5,7 +5,7 @@ export const VS_EXAKT_ES: Guide = {
   lang: 'es',
   page: 'vsExakt',
   published: '2026-10-07',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Walkito vs Exakt Health: alternativa y comparación (2026)',
   description:
     '¿Buscas una alternativa a Exakt Health? Walkito vs Exakt comparadas: lesiones que cubren, precio, plataformas, cómo arman tu plan, evidencia y privacidad.',
@@ -75,7 +75,7 @@ export const VS_EXAKT_ES: Guide = {
           ],
           [
             'Idiomas',
-            'Inglés, ruso, español',
+            'Inglés, ruso, español, portugués, francés, italiano, alemán',
             'Inglés, francés, alemán, español',
           ],
           [
@@ -181,7 +181,7 @@ export const VS_EXAKT_ES: Guide = {
       h2: 'Plataformas e idiomas',
       paragraphs: [
         'Las dos apps están en iOS y Android, así que la plataforma ya no decide entre ellas. En iPhone, Walkito lee Apple Health. En Android lee Health Connect (pasos, sesiones de ejercicio, distancia y sueño); la asimetría y la velocidad al caminar solo se leen en iPhone.',
-        'Exakt está en inglés, francés, alemán y español. Walkito está en inglés, ruso y español. Las dos comparten inglés y español. Si necesitas francés o alemán, Exakt es la única opción. Si necesitas ruso, Walkito es la única opción.',
+        'Exakt está en inglés, francés, alemán y español. Walkito está en inglés, ruso, español, portugués, francés, italiano y alemán. Las dos comparten inglés, español, francés y alemán. Si necesitas ruso, portugués o italiano, Walkito es la única opción de las dos.',
       ],
     },
     {
@@ -227,7 +227,6 @@ export const VS_EXAKT_ES: Guide = {
         'Tu lesión no es fascitis plantar ni pie plano. Exakt cubre más de 15 problemas; Walkito cubre tres.',
         'Quieres una prueba gratis de 7\u00A0días para probar la app antes de pagar.',
         'Te importa la certificación de dispositivo médico en la UE.',
-        'Necesitas la app en francés o alemán.',
       ],
     },
     {
@@ -240,7 +239,7 @@ export const VS_EXAKT_ES: Guide = {
         'Quieres sesiones de 3 a 10\u00A0minutos en vez de 15 a 30.',
         'Te importa más que el plan se adapte a tu dolor con un chequeo en la mañana que avanzar por niveles.',
         'Quieres pruebas de progreso cada 14\u00A0días que comparen izquierda y derecha.',
-        'Necesitas la app en ruso.',
+        'Necesitas la app en ruso, portugués o italiano.',
         'Pasas todo el día de pie por trabajo, no corres, y quieres una app hecha para eso.',
       ],
     },
