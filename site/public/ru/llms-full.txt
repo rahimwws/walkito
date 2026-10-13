@@ -18,7 +18,7 @@ should be seen by a clinician.
 
 ## Who writes this
 
-- The guides on this site are written by Rahim Hudaykylyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
+- The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
 - Neither is a clinician. Every exercise dose comes from the app's exercise catalogue and every claim from a published study cited on the page.
 - No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: https://walkito.site/about/#how-we-research
 
@@ -9629,7 +9629,7 @@ Walkito является приложением для iPhone с коротки�
 
 https://walkito.site/ru/o-proekte/
 
-Walkito составляет персональный план упражнений при боли в пятке, стопе и голени и каждый день подстраивает его под состояние ваших стоп. На этой странице рассказано, как пишутся гайды на этом сайте и откуда в них цифры. А ещё о том, чего Walkito не делает и как сообщить нам, если что-то не так.
+Walkito составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп. На этой странице рассказано, как пишутся гайды на этом сайте и откуда в них цифры. А ещё о том, чего Walkito не делает и как сообщить нам, если что-то не так.
 
 ### Что такое Walkito?
 

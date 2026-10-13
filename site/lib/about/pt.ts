@@ -20,7 +20,7 @@ export const ABOUT_PT: About = {
   description:
     'O que é o Walkito, como são escritos e embasados os guias sobre dor no calcanhar e pé chato, o que o Walkito não faz e como avisar sobre um erro.',
   h1: 'Sobre o Walkito',
-  lede: 'O Walkito é um plano de exercícios personalizado para dor no calcanhar, no pé e na perna que se ajusta todo dia a como seus pés estão. Esta página explica como os guias deste site são escritos e de onde vêm os números. Ela também diz o que o Walkito não faz, e como nos avisar quando algo estiver errado.',
+  lede: 'O Walkito é um plano de exercícios para dor no calcanhar, fascite plantar e pé chato que se ajusta toda manhã a como seus pés estão. Esta página explica como os guias deste site são escritos e de onde vêm os números. Ela também diz o que o Walkito não faz, e como nos avisar quando algo estiver errado.',
   sections: [
     {
       h2: 'O que é o Walkito?',
@@ -36,7 +36,7 @@ export const ABOUT_PT: About = {
       h2: 'Como pesquisamos',
       id: 'how-we-research',
       paragraphs: [
-        'Rahim Hudaykylyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site: [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [exercícios para pé chato](/pt/exercicios-pe-chato/), [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e a [página de evidências](/science/) (em inglês). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.',
+        'Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site: [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [exercícios para pé chato](/pt/exercicios-pe-chato/), [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e a [página de evidências](/science/) (em inglês). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.',
         'Lemos o artigo completo, não só o resumo, antes de um número dele entrar numa página. Cada dose, grau e número tem link para o estudo por trás dele, para você abrir e conferir.',
         'Exercícios e afirmações recebem um de três selos de evidência. **Forte** quer dizer que uma diretriz clínica dá um grau alto, ou que vários bons ensaios concordam. **Moderada** quer dizer que pelo menos um ensaio bem desenhado apoia. **Inicial** quer dizer que a pesquisa é pequena ou está começando: vale tentar, e o selo pode mudar conforme sair mais pesquisa. Uma regra popular que um ensaio testou e não confirmou é marcada como **Sem respaldo**.',
         'O Walkito não tem patrocinadores, links de afiliado nem conteúdo pago. Nada está numa página porque alguém pagou por isso. Revisamos uma página quando sai pesquisa nova sobre o tema dela. Todo guia segue cinco regras:',

@@ -16,11 +16,11 @@ export const HOME_IT: HomeCopy = {
   meta: {
     title: 'Walkito: esercizi per dolore al tallone e piede piatto',
     description:
-      'Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e gamba, che si adatta ogni giorno a come stanno i tuoi piedi.',
+      'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
   },
   h1a: 'Hai già provato di tutto?',
   h1b: 'Prova un piano fatto per i tuoi piedi.',
-  lead: 'Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e gamba, che si adatta ogni giorno a come stanno i tuoi piedi.',
+  lead: 'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
   small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti al giorno, a casa.`,
   alt: {
     heroCenter: 'La schermata Oggi di Walkito: un saluto, il check-in del mattino e la sessione di oggi',

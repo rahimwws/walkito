@@ -19,7 +19,7 @@ const ORGANISATION = {
   // No length: the plan is built a week at a time around a measurable goal and
   // keeps going while it is used.
   description:
-    'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
+    'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
   // Another "Walkito" exists (a dog-walking marketplace in Uruguay at
   // walkito.com), and Google's AI answers have been resolving the name to it.
   // This says in one line which Walkito this one is.
@@ -30,7 +30,7 @@ const ORGANISATION = {
   founder: [
     {
       '@type': 'Person',
-      name: 'Rahim Hudaykylyyev',
+      name: 'Rahim Hudaykulyyev',
       sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws'],
     },
     { '@type': 'Person', name: 'Rahman Bazarov', sameAs: ['https://www.linkedin.com/in/rahman-bazarov/'] },

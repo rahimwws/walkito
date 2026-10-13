@@ -19,7 +19,7 @@ export const ABOUT_ES: About = {
   description:
     'Qué es Walkito, cómo se escriben y documentan sus guías sobre dolor de talón y pie plano, qué no hace Walkito y cómo avisarnos de un error.',
   h1: 'Sobre Walkito',
-  lede: 'Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pierna que se ajusta cada día a cómo se sienten tus pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.',
+  lede: 'Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies. Esta página explica cómo se escriben las guías de este sitio y de dónde salen sus números. También dice qué no hace Walkito y cómo avisarnos cuando algo está mal.',
   sections: [
     {
       h2: '¿Qué es Walkito?',
