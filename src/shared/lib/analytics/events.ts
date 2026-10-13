@@ -140,6 +140,20 @@ export type AnalyticsEvents = {
   /** The widget, asked for. `pinned` only where the system could add it
    * itself (Android); on iPhone it is the walkthrough being finished. */
   widget_add: { result: 'pinned' | 'guided' | 'skipped' };
+  /** Whether the widget is really there, asked of the system right after the
+   * widget step: on "Finish" at the end of the walkthrough, on coming back to
+   * the app during it (`return`), or after Android's pin sheet (`pin`). */
+  widget_add_checked: { placed: boolean; moment: 'finish' | 'return' | 'pin' };
+  /** It was not there: the sheet asking again, and what was answered. */
+  widget_nudge_shown: Record<string, never>;
+  widget_nudge_answered: { choice: 'again' | 'later' };
+  /** The widget appeared on, or left, the Home Screen, noticed at launch or on
+   * a return to the app, whenever it happened. `count` is how many are there
+   * now; `sizes` lists them (`small`, `small,medium`). Never on the first
+   * check after an install or the update that brought it, which has nothing
+   * to compare with: that one only sets the `has_widget` person property. */
+  widget_installed: { count: number; sizes: string };
+  widget_removed: { count: number };
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;

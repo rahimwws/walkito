@@ -294,6 +294,15 @@ export const JOURNEY_EN = {
   'setup.widget.mockEdit': 'Edit',
   'setup.widget.mockAdd': 'Add Widget',
   'setup.widget.mockSearch': 'Search Widgets',
+  /** The widget step checked and found no widget: asked again, kindly. */
+  'setup.widget.nudgeTitle': 'The widget isn’t there yet',
+  'setup.widget.nudgeBody': 'No rush. It takes three taps, and it’s the easiest way back each morning. Shall I show you again?',
+  'setup.widget.nudgeAgain': 'Show me again',
+  'setup.widget.nudgeLater': 'Maybe later',
+  /** The widget step checked and found it on the Home Screen. */
+  'setup.widget.addedTitle': 'It’s on your Home Screen',
+  'setup.widget.addedBlurb': 'See you there tomorrow morning.',
+  'setup.widget.addedCta': 'Continue',
   'setup.next': 'Next',
   'setup.done': 'Done',
   /** The last step's button. Setup ends on Home; nothing is started for them. */

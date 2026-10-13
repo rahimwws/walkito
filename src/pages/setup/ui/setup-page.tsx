@@ -1,11 +1,11 @@
 import * as Haptics from 'expo-haptics';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect, useState } from 'react';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { AppState, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { requestWidgetPin } from '@/features/home-widget';
+import { checkWidgetPresence, requestWidgetPin } from '@/features/home-widget';
 import { SignInOptions, type EmailSheetPreview } from '@/features/sign-in';
 import { healthAvailable, type HealthSummary } from '@/entities/health';
 import { firstName, getIntake, profileEmail, saveIntake, setProfileEmail, useProfileName } from '@/entities/profile';
@@ -14,6 +14,7 @@ import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { Glow } from '@/shared/ui/glow';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -23,6 +24,7 @@ import { SaveRing, SaveSky } from './save-sky';
 import { HealthStep } from './health-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { WidgetGuideArt, WidgetPreview, type GuideStep } from './widget-guide';
+import { WidgetAddedMascot, WidgetNudgeSheet } from './widget-nudge-sheet';
 
 type SetupStep = 'save' | 'email' | 'health' | 'watch' | 'watch-sync' | 'note' | 'widget' | GuideStep;
 
@@ -34,6 +36,10 @@ const WATCH: readonly { value: string; label: Key; caption: Key }[] = [
   { value: 'whoop', label: 'onboarding.watch.whoop', caption: 'onboarding.watch.switchCaption' },
   { value: 'none', label: 'onboarding.watch.none', caption: 'onboarding.watch.noneCaption' },
 ];
+
+/** How often, and how far apart, a widget just added is looked for again. */
+const RECHECKS = 3;
+const RECHECK_MS = 800;
 
 /** Apple's relay for someone who hid their address at "Sign in with Apple". */
 const PRIVATE_RELAY = /@privaterelay\.appleid\.com$/i;
@@ -76,6 +82,13 @@ const GUIDE: Readonly<Record<GuideStep, { title: Key; body: Key; n: number }>> =
  *
  * The email address step stays optional (5.1.1(x)), and is skipped for
  * anyone whose real address came with signing in.
+ *
+ * **The widget is checked, not assumed.** Where the system can say whether it
+ * is on the Home Screen (`checkWidgetPresence`), the walkthrough's "Finish",
+ * Android's pin sheet and any return to the app during the widget steps ask
+ * it. There: the mascot celebrates and setup ends. Not there: one kind sheet
+ * offers the walkthrough again or "Maybe later", once per walkthrough. When it
+ * cannot be known (a binary without the module) setup ends as it always did.
  */
 export function SetupPage() {
   const insets = useSafeAreaInsets();
@@ -100,6 +113,15 @@ export function SetupPage() {
   const android = Platform.OS === 'android' || devAndroid;
   /** A sign-in sheet is over the save screen: its mascot holds still. */
   const [covered, setCovered] = useState(false);
+  /** The widget step's answers from the system: not there yet (the sheet
+   * asking again), or there (the celebration). */
+  const [nudge, setNudge] = useState(false);
+  const [added, setAdded] = useState(false);
+  /** Android's pin sheet was opened: the next return to the app is its answer. */
+  const pinAsked = useRef(false);
+  /** The latest answer is the one acted on: a slow check overtaken by a newer
+   * one is dropped. */
+  const checks = useRef(0);
 
   // Only an account owed from an earlier launch, the rest done: that one
   // screen, and then straight back to the app with no session started.
@@ -159,6 +181,15 @@ export function SetupPage() {
   useEffect(() => {
     if (!__DEV__) return undefined;
     const onUrl = (url: string | null) => {
+      // `?widgetPreview=ask|hold|edit|search|nudge|added`: the widget steps,
+      // and the two answers after them, without adding a widget.
+      const widget = url?.match(/[?&]widgetPreview=(ask|hold|edit|search|nudge|added)\b/)?.[1];
+      if (widget != null) {
+        setNudge(widget === 'nudge');
+        setAdded(widget === 'added');
+        setStep(widget === 'ask' ? 'widget' : widget === 'nudge' || widget === 'added' ? 'search' : widget);
+        return;
+      }
       const state = url?.match(/[?&]authPreview=([\w-]+)/)?.[1];
       if (state == null) return;
       const example = 'you@example.com';
@@ -221,10 +252,75 @@ export function SetupPage() {
     // through it, because iOS lets nothing but the person add a widget.
     if (await requestWidgetPin()) {
       track('widget_add', { result: 'pinned' });
-      done();
+      pinAsked.current = true;
       return;
     }
     setStep('hold');
+  };
+
+  /**
+   * Asks the system whether the widget is on the Home Screen, and acts on it:
+   * there, the celebration; not there, the sheet asking again, except on a
+   * plain return to the app (they may be half-way through adding it).
+   * Unknown: "Finish" and the pin sheet end setup as they always did.
+   */
+  const verify = async (moment: 'finish' | 'return' | 'pin') => {
+    const check = ++checks.current;
+    // Right after the pin sheet or the Home Screen, the launcher and WidgetKit
+    // can take a moment to list a widget just added: asked a few times then.
+    let placed = await checkWidgetPresence();
+    for (let retry = 0; moment !== 'finish' && placed?.length === 0 && retry < RECHECKS; retry += 1) {
+      await new Promise((resolve) => setTimeout(resolve, RECHECK_MS));
+      if (check !== checks.current) return;
+      placed = await checkWidgetPresence();
+    }
+    if (check !== checks.current) return;
+    if (placed == null) {
+      if (moment !== 'return') done();
+      return;
+    }
+    const there = placed.length > 0;
+    if (there || moment !== 'return') track('widget_add_checked', { placed: there, moment });
+    if (there) {
+      setNudge(false);
+      setAdded(true);
+      return;
+    }
+    if (moment === 'return') return;
+    track('widget_nudge_shown');
+    setNudge(true);
+  };
+
+  // Coming back to the app during the widget steps: that is when a widget
+  // added on the Home Screen (or through Android's pin sheet) is first seen.
+  const onWidgetSteps = step === 'widget' || step === 'hold' || step === 'edit' || step === 'search';
+  useEffect(() => {
+    if (!onWidgetSteps || added) return undefined;
+    const subscription = AppState.addEventListener('change', (next) => {
+      if (next !== 'active') return;
+      const moment = pinAsked.current ? 'pin' : 'return';
+      pinAsked.current = false;
+      void verify(moment);
+    });
+    return () => subscription.remove();
+    // `verify` reads only refs and setters; the listener follows the steps.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [onWidgetSteps, added]);
+
+  const nudgeAgain = () => {
+    track('widget_nudge_answered', { choice: 'again' });
+    setNudge(false);
+    if (Platform.OS === 'android') {
+      void addWidget();
+      return;
+    }
+    setStep('hold');
+  };
+
+  const nudgeLater = () => {
+    track('widget_nudge_answered', { choice: 'later' });
+    setNudge(false);
+    done();
   };
 
   if (step == null) return <View style={styles.root} />;
@@ -402,7 +498,7 @@ export function SetupPage() {
             onPress={() => {
               if (step === 'search') {
                 track('widget_add', { result: 'guided' });
-                done();
+                void verify('finish');
                 return;
               }
               next();
@@ -414,6 +510,16 @@ export function SetupPage() {
       {/* The founders' note, now that there is a plan behind it. "Rate
           Walkito" queues Apple's sheet for the next screen. */}
       <NoteSheet visible={step === 'note'} onDone={next} />
+
+      <WidgetNudgeSheet visible={nudge} onAgain={nudgeAgain} onLater={nudgeLater} />
+      <CelebrationSheet
+        visible={added}
+        title={t('setup.widget.addedTitle')}
+        blurb={t('setup.widget.addedBlurb')}
+        ctaLabel={t('setup.widget.addedCta')}
+        mascot={<WidgetAddedMascot paused={!added} />}
+        onClose={done}
+      />
     </View>
   );
 }

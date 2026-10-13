@@ -5,6 +5,7 @@ import { useHealthSignals } from '@/entities/health';
 import { useLogsVersion, usePlanVersion, useProgramState } from '@/entities/program';
 import { useLanguage } from '@/shared/lib/i18n';
 
+import { checkWidgetPresence } from './presence-tracking';
 import { resetWidget, syncWidget, widgetModule } from './sync';
 
 /**
@@ -33,6 +34,17 @@ export function useHomeWidget(enabled: boolean): void {
 
   useEffect(() => {
     widgetModule();
+  }, []);
+
+  // Whether the widget is on the Home Screen, for PostHog: on launch and on
+  // every return, which is when a widget added or removed outside the app is
+  // first seen.
+  useEffect(() => {
+    void checkWidgetPresence();
+    const foreground = AppState.addEventListener('change', (next) => {
+      if (next === 'active') void checkWidgetPresence();
+    });
+    return () => foreground.remove();
   }, []);
 
   useEffect(() => {

@@ -9,3 +9,5 @@
 export { useHomeWidget } from './model/use-home-widget';
 export { widgetTaskHandler } from './android/task-handler';
 export { requestWidgetPin } from './model/pin';
+export { checkWidgetPresence } from './model/presence-tracking';
+export type { WidgetSize } from './model/presence';
