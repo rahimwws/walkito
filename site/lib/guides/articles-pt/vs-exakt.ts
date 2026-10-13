@@ -13,7 +13,7 @@ export const VS_EXAKT_PT: Guide = {
   lang: 'pt',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Walkito vs Exakt Health: comparação lado a lado',
   description:
     'Walkito ou Exakt Health: condições, preço, plataformas, como cada um monta o seu plano, evidências, idiomas e privacidade. Conferido em outubro de 2026.',
@@ -83,7 +83,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
           [
             'Idiomas',
-            'Inglês, russo, espanhol',
+            'Inglês, russo, espanhol, português, francês, italiano, alemão',
             'Inglês, francês, alemão, espanhol',
           ],
           [
@@ -189,7 +189,7 @@ export const VS_EXAKT_PT: Guide = {
       h2: 'Plataformas e idiomas',
       paragraphs: [
         'Os dois apps estão no iOS e no Android, então a plataforma não decide mais entre eles. No iPhone, o Walkito lê o app Saúde da Apple. No Android, ele lê o Health Connect (passos, sessões de exercício, distância e sono); a assimetria da marcha e a velocidade da caminhada só são lidas no iPhone.',
-        'O Exakt está disponível em inglês, francês, alemão e espanhol. O Walkito está disponível em inglês, russo e espanhol. Os dois têm em comum o inglês e o espanhol. Se você precisa de francês ou alemão, o Exakt é a única opção. Se você precisa de russo, o Walkito é a única opção.',
+        'O Exakt está disponível em inglês, francês, alemão e espanhol. O Walkito está disponível em inglês, russo, espanhol, português, francês, italiano e alemão. Os dois têm em comum o inglês, o espanhol, o francês e o alemão. Se você precisa de russo, português ou italiano, o Walkito é a única opção entre os dois.',
       ],
     },
     {
@@ -235,7 +235,6 @@ export const VS_EXAKT_PT: Guide = {
         'A sua lesão não é fascite plantar nem pé chato. O Exakt cobre mais de 15 condições; o Walkito cobre três.',
         'Você quer 7\u00A0dias grátis para testar o app antes de pagar.',
         'A certificação de dispositivo médico na União Europeia é importante para você.',
-        'Você precisa do app em francês ou alemão.',
       ],
     },
     {
@@ -248,7 +247,7 @@ export const VS_EXAKT_PT: Guide = {
         'Você quer sessões de 3 a 10\u00A0minutos em vez de 15 a 30.',
         'A adaptação de cada sessão à dor a partir de um check-in pela manhã importa mais para você do que uma progressão por níveis.',
         'Você quer testes de progresso a cada 14\u00A0dias que comparem a esquerda com a direita.',
-        'Você precisa do app em russo.',
+        'Você precisa do app em russo, português ou italiano.',
         'Você passa o dia todo em pé no trabalho, não corre, e quer um app feito para isso.',
       ],
     },

@@ -154,10 +154,11 @@ if (!aboutReady) console.warn('llms: the About page is still a placeholder; its 
 
 // ─── Shared blocks ──────────────────────────────────────────────────────────
 
-const SUMMARY = `> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+const SUMMARY = `> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.`;
 
@@ -176,7 +177,7 @@ const KEY_FACTS = [
   'Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal\'s chain moves up one level at a time.',
   `Tests: ${PROGRAM.retestTests} physical measurements (calf raises to failure, arch hold, single-leg balance) in about ${PROGRAM.retestMinutes} minutes, every ${PROGRAM.testEveryDays} days until the first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal} days.`,
   'Not related to walkito.com, a dog-walking service with a similar name.',
-  'Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).',
+  'Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in seven languages: English, Russian, Spanish, Portuguese (Brazil), French, Italian and German. This site is in the same seven.',
   `Contact: ${SUPPORT_EMAIL}`,
 ];
 

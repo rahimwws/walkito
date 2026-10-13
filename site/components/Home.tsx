@@ -51,10 +51,11 @@ const { testEveryDays, testEveryDaysAfterGoal, painFreeDays, retestTests, retest
 /**
  * The app itself, as schema.
  *
- * No `offers` and no `aggregateRating`, both deliberately. The price in the
- * brief was a number nobody checked against the store, and a rating block with
- * no ratings behind it is a manual-action risk rather than a shortcut. These go
- * in when there is a listing and real reviews to point at.
+ * `offers` is the free download alone, a price-0 Offer. The subscription inside
+ * the app is priced by each store in the buyer's currency, so no single price
+ * belongs here. No `aggregateRating`, deliberately: a rating block with no
+ * ratings behind it is a manual-action risk rather than a shortcut. It goes in
+ * when there are real reviews to point at.
  *
  * No length either. The plan has none: it is built a week at a time and keeps
  * going while the person uses it.
@@ -76,10 +77,7 @@ const APP = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
     'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
-  // The languages of the build on the store (1.0.1). Portuguese, French,
-  // Italian and German come with 1.0.3: list them here, in the FAQ below and
-  // in lib/home/{pt,fr,it,de}.ts once it is live.
-  availableLanguage: ['en', 'ru', 'es'],
+  inLanguage: ['en', 'ru', 'es', 'pt-BR', 'fr', 'it', 'de'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
     'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
@@ -233,7 +231,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Is it medical advice?',
         a: 'No. Walkito is an exercise program. It doesn’t diagnose, and it isn’t a substitute for a clinician.',
       },
-      { q: 'What languages is it in?', a: 'English, Russian and Spanish.' },
+      { q: 'What languages is it in?', a: 'English, Russian, Spanish, Portuguese, French, Italian and German.' },
     ],
   },
 
@@ -322,7 +320,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Это медицинская консультация?',
         a: 'Нет. Walkito даёт программу упражнений. Он не ставит диагноз и не заменяет врача.',
       },
-      { q: 'На каких языках приложение?', a: 'На английском, русском и испанском.' },
+      { q: 'На каких языках приложение?', a: 'На английском, русском, испанском, португальском, французском, итальянском и немецком.' },
     ],
   },
 
@@ -411,7 +409,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: '¿Es un consejo médico?',
         a: 'No. Walkito es un programa de ejercicios. No diagnostica y no sustituye a un profesional de la salud.',
       },
-      { q: '¿En qué idiomas está?', a: 'En inglés, ruso y español.' },
+      { q: '¿En qué idiomas está?', a: 'En inglés, ruso, español, portugués, francés, italiano y alemán.' },
     ],
   },
 };

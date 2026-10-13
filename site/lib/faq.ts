@@ -71,7 +71,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'Is Walkito available on Android?',
-        a: 'Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.',
+        a: 'Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.',
       },
       {
         q: 'Do I need an Apple Watch?',
@@ -226,7 +226,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'How much does Walkito cost?',
-        a: 'Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the store shows is the one that applies.',
+        a: 'Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. The price the store shows is the one that applies.',
       },
       {
         q: 'How do I cancel my Walkito subscription?',
