@@ -1,4 +1,4 @@
-# The site goes live when site/ changes on main: build, upload, IndexNow.
+# The site goes live when site/ changes on main: build, upload, purge Cloudflare, IndexNow.
 #
 # Merging a branch into main is the deploy, so anyone with write access to the
 # repo can ship the site without access to the server. The upload uses the
@@ -45,9 +45,12 @@ jobs:
         working-directory: site
         run: bun install --frozen-lockfile
 
-      - name: Build, upload, IndexNow
+      - name: Build, upload, purge Cloudflare, IndexNow
         working-directory: site
         env:
           DEPLOY_TARGET: 'deploy@161.35.52.54:'
           DEPLOY_SSH: ssh -i ~/.ssh/deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes
+          # Zone > Cache Purge > Purge on walkito.site, nothing else. Without
+          # it the deploy still goes out; pages then refresh within 10 minutes.
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: bun run deploy
