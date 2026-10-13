@@ -18,7 +18,7 @@ export const BEST_APP_IT: Guide = {
   lang: 'it',
   page: 'bestApp',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-08',
   title: 'Migliore app per la fascite plantare nel 2026: confronto',
   description:
     'La migliore app per la fascite plantare nel 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch e Walkito a confronto su prezzo e piattaforme.',
@@ -41,7 +41,7 @@ export const BEST_APP_IT: Guide = {
       h2: 'Cosa dovrebbe fare davvero un’app per la fascite plantare?',
       keyFact: 'La linea guida clinica del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio una A, il grado più alto, e al lavoro di forza una B (Koc e colleghi, 2023).',
       paragraphs: [
-        'Un’app utile per la fascite plantare dovrebbe includere esercizi in linea con quello che dice la ricerca. La linea guida clinica del 2023 sul dolore al tallone dà un grado alle prove dietro ogni approccio. L’allungamento della fascia plantare e del polpaccio prende una A, il grado più alto. Il lavoro di forza prende una B. Quindi **nell’app dovrebbero esserci entrambi, non solo uno.**',
+        'Un’app utile per la fascite plantare dovrebbe includere esercizi in linea con quello che dice la ricerca. La linea guida clinica del 2023 sul dolore al tallone dà un grado alle prove dietro ogni approccio. L’allungamento della fascia plantare e del polpaccio prende una A, il grado più alto. Il lavoro di forza prende una B. Quindi nell’app dovrebbero esserci entrambi, non solo uno.',
         'Oltre all’elenco degli esercizi, queste sono le cose da controllare prima di abbonarti:',
       ],
       bullets: [
@@ -108,7 +108,7 @@ export const BEST_APP_IT: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS, Android. 44,99\u00A0$ all’anno o 7,99\u00A0$ a settimana',
+            'iOS. 44,99\u00A0$ all’anno o 7,99\u00A0$ a settimana',
             'Dolore al tallone, piede piatto, stare in piedi tutto il giorno, runner',
             'Il check-in del mattino adatta ogni sessione',
             'Ancora senza valutazioni (nuova, ottobre 2026)',
@@ -124,23 +124,8 @@ export const BEST_APP_IT: Guide = {
         'Exakt Health è fatta per chi corre, e si vede. L’app ha oltre 15 piani di riabilitazione per infortuni, dalla fascite plantare alla tendinopatia d’Achille alle lesioni del menisco, più piani di allenamento di corsa dal divano alla maratona. Ogni piano di riabilitazione finisce con una fase strutturata di ritorno alla corsa, cosa che la maggior parte delle app per il dolore al piede non offre.',
         'È certificata come dispositivo medico nell’UE, cioè ha superato una revisione normativa su sicurezza e uso previsto. È stata creata da fisioterapisti sportivi abilitati e allenatori di corsa. L’app ha oltre 600 video di esercizi e adatta il piano man mano che sali di livello.',
         'A 19,99\u00A0$ al mese o 59,99\u00A0$ per sei mesi, Exakt non è economica, ma la varietà di problemi coperti e la qualità dei piani di riabilitazione sono difficili da eguagliare tra le app da usare in autonomia. La prova gratuita di 7\u00A0giorni ti fa vedere l’app completa prima di pagare. È disponibile in inglese, francese, tedesco e spagnolo, sia su iOS sia su Android.',
-        'Dove Exakt è più forte di Walkito:',
-        {
-          list: [
-            'Più tipi di infortunio coperti (oltre 15 contro dolore al tallone, piede piatto e tibie).',
-            'Un programma completo di ritorno alla corsa.',
-            'La certificazione come dispositivo medico nell’UE.',
-            'Una base di utenti consolidata con una valutazione di 4,8 su 125 recensioni iOS.',
-          ],
-        },
-        'Dove Walkito è diversa:',
-        {
-          list: [
-            'Walkito adatta la sessione di ogni giorno in base a un check-in del dolore al mattino invece che al feedback di fine sessione.',
-            'Testa l’asimmetria tra sinistra e destra ogni 14\u00A0giorni.',
-            'Si concentra proprio sul dolore al tallone e al piede invece che su tutti gli infortuni da corsa.',
-          ],
-        },
+        'Dove Exakt è più forte di Walkito: più tipi di infortunio coperti (oltre 15 contro dolore al tallone, piede piatto e tibie), un programma completo di ritorno alla corsa, la disponibilità su Android, la certificazione come dispositivo medico nell’UE e una base di utenti consolidata con una valutazione di 4,8 su 125 recensioni iOS.',
+        'Dove Walkito è diversa: Walkito adatta la sessione di ogni giorno in base a un check-in del dolore al mattino invece che al feedback di fine sessione, testa l’asimmetria tra sinistra e destra ogni 14\u00A0giorni, e si concentra proprio sul dolore al tallone e al piede invece che su tutti gli infortuni da corsa.',
       ],
     },
     {
@@ -148,23 +133,14 @@ export const BEST_APP_IT: Guide = {
       paragraphs: [
         'Hinge Health è la più grande piattaforma digitale per il dolore muscoloscheletrico negli Stati Uniti, con oltre 2\u00A0milioni di iscritti. Se il tuo datore di lavoro o la tua assicurazione sanitaria la copre, per te è gratuita e include qualcosa che nessuna app da usare in autonomia può offrire: un team di cura dedicato con fisioterapisti, medici ortopedici e altri specialisti.',
         'L’app copre molti problemi di articolazioni e muscoli, non solo i piedi. Include anche il dispositivo indossabile Enso per il sollievo dal dolore acuto. La valutazione di 4,9 su 168.000 recensioni iOS riflette la combinazione di esercizi guidati, coaching umano e costo zero.',
-        '**Il limite è l’accesso.** Non puoi comprare Hinge Health dall’App Store. Ti serve una copertura tramite uno degli oltre 2.800 datori di lavoro o assicurazioni sanitarie che la offrono.',
-        'Se hai accesso, probabilmente è l’opzione più completa di questa lista. Se non ce l’hai, non è proprio un’opzione.',
+        'Il limite è l’accesso. Non puoi comprare Hinge Health dall’App Store. Ti serve una copertura tramite uno degli oltre 2.800 datori di lavoro o assicurazioni sanitarie che la offrono. Se hai accesso, probabilmente è l’opzione più completa di questa lista. Se non ce l’hai, non è proprio un’opzione.',
         'Hinge Health non è specifica per il piede. I suoi usi principali sono il dolore a schiena, ginocchio, anca e collo. Per la fascite plantare in particolare, un’app più mirata può essere un punto di partenza migliore.',
       ],
     },
     {
       h2: 'Prehab: la libreria di esercizi più ampia',
       paragraphs: [
-        'L’app The Prehab Guys è creata da dottori in fisioterapia (Doctors of Physical Therapy) e ha la libreria di esercizi più ampia di questo confronto:',
-        {
-          list: [
-            'Oltre 55 programmi.',
-            'Oltre 170 allenamenti.',
-            'Oltre 4.000 video di esercizi.',
-          ],
-        },
-        'Ha un programma di riabilitazione specifico per la fascite plantare. La funzione Body Scan ti chiede del dolore, degli obiettivi e delle esigenze di movimento, poi ti consiglia un programma.',
+        'L’app The Prehab Guys è creata da dottori in fisioterapia (Doctors of Physical Therapy) e ha la libreria di esercizi più ampia di questo confronto: oltre 55 programmi, oltre 170 allenamenti e oltre 4.000 video di esercizi. Ha un programma di riabilitazione specifico per la fascite plantare. La funzione Body Scan ti chiede del dolore, degli obiettivi e delle esigenze di movimento, poi ti consiglia un programma.',
         'A 49\u00A0$ al mese o circa 200\u00A0$ all’anno, è l’opzione da usare in autonomia più cara di questa lista. La prova gratuita di 7\u00A0giorni c’è solo sul piano annuale. Le sessioni durano circa 20\u00A0minuti, più dei 3-10\u00A0minuti delle app dedicate al piede. La qualità delle istruzioni video è lodata in modo costante nelle recensioni.',
         'Prehab fa per te se hai dolore in più zone e vuoi un’unica app che copra tutto, dalle spalle ai piedi. È meno mirata delle app create proprio per la fascite plantare, e non adatta le sessioni del giorno al dolore del mattino.',
         'È solo per iOS e solo in inglese.',
@@ -174,15 +150,7 @@ export const BEST_APP_IT: Guide = {
       h2: 'PlantarCare: il tracker gratuito',
       paragraphs: [
         'PlantarCare è gratuita, non ha acquisti in-app e non richiede un account. Si concentra solo sul dolore al tallone e sulla fascite plantare. Segni il dolore ai primi passi del mattino e il dolore peggiore della giornata, e l’app ti fa avanzare tra fasi di recupero con allungamenti guidati, lavoro sul polpaccio, sollevamenti sulle punte e promemoria per il ghiaccio adatti alla tua fase.',
-        'Per un’app gratuita, fa sorprendentemente tante cose bene:',
-        {
-          list: [
-            'L’andamento del dolore nel tempo.',
-            'Il registro di scarpe e carico.',
-            'Promemoria sui campanelli d’allarme che ti dicono quando rivolgerti a un professionista sanitario.',
-          ],
-        },
-        'Il rovescio della medaglia è che è nuova, non ha ancora valutazioni e non descrive la ricerca dietro la scelta degli esercizi.',
+        'Per un’app gratuita, fa sorprendentemente tante cose bene: l’andamento del dolore nel tempo, il registro di scarpe e carico, e promemoria sui campanelli d’allarme che ti dicono quando rivolgerti a un professionista sanitario. Il rovescio della medaglia è che è nuova, non ha ancora valutazioni e non descrive la ricerca dietro la scelta degli esercizi.',
         'PlantarCare è un punto di partenza ragionevole se vuoi seguire il tuo dolore gratis e fare allungamenti di base senza impegnarti in un abbonamento. È solo per iOS.',
       ],
     },
@@ -205,27 +173,9 @@ export const BEST_APP_IT: Guide = {
     {
       h2: 'Walkito: cosa fa e cosa non fa',
       paragraphs: [
-        'Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È uscita sull’App Store il 2 ottobre 2026, poi su Google Play. È nuova e non ha ancora valutazioni.',
-        'Cosa fa:',
-        {
-          list: [
-            'Costruisce un piano settimanale dalle tue risposte su dolore, obiettivi e orari.',
-            'Ogni mattina, un check-in adatta la sessione del giorno a come sta il tuo piede.',
-            'Ogni 14\u00A0giorni, dei test misurano sollevamenti sulle punte, tenuta dell’arco ed equilibrio su una gamba, e confrontano sinistra e destra.',
-            'Le sessioni durano 3, 5 o 10\u00A0minuti.',
-            'Gli esercizi seguono la linea guida del 2023 sul dolore al tallone e lo studio di Rathleff del 2015.',
-            'Si collega ad Apple Salute su iPhone o a Health Connect su Android per passi, sonno e dati di camminata, che restano sul tuo telefono. Asimmetria e velocità di camminata ci sono solo su iPhone.',
-          ],
-        },
-        'Cosa non fa:',
-        {
-          list: [
-            'Non fa diagnosi del tuo dolore.',
-            'Non è un dispositivo medico.',
-            'Non ha un professionista dall’altra parte.',
-          ],
-        },
-        'Copre dolore al tallone, piede piatto e dolore alla tibia, non gli oltre 15 tipi di infortunio di Exakt né l’ambito su tutto il corpo di Hinge Health o Prehab.',
+        'Walkito è un programma di esercizi per il dolore al tallone, il piede piatto e il dolore nella parte bassa della gamba. È uscita sull’App Store il 2 ottobre 2026. È nuova, non ha ancora valutazioni ed è solo per iOS.',
+        'Cosa fa: costruisce un piano settimanale dalle tue risposte su dolore, obiettivi e orari. Ogni mattina, un check-in adatta la sessione del giorno a come sta il tuo piede. Ogni 14\u00A0giorni, dei test misurano sollevamenti sulle punte, tenuta dell’arco ed equilibrio su una gamba, e confrontano sinistra e destra. Le sessioni durano 3, 5 o 10\u00A0minuti. Gli esercizi seguono la linea guida del 2023 sul dolore al tallone e lo studio di Rathleff del 2015. Si collega ad Apple Salute per passi, sonno e dati di camminata, che restano sul tuo telefono.',
+        'Cosa non fa: non fa diagnosi del tuo dolore, non è un dispositivo medico, non ha un professionista dall’altra parte e non è disponibile su Android. Copre dolore al tallone, piede piatto e dolore alla tibia, non gli oltre 15 tipi di infortunio di Exakt né l’ambito su tutto il corpo di Hinge Health o Prehab.',
         'A 44,99\u00A0$ all’anno o 7,99\u00A0$ a settimana, il prezzo annuale è più basso di quello della maggior parte delle concorrenti. Il prezzo settimanale è più alto rispetto a quello annuale, come è normale negli abbonamenti.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -273,7 +223,7 @@ export const BEST_APP_IT: Guide = {
     },
     {
       q: 'Qualcuna di queste app funziona su Android?',
-      a: 'Exakt Health, Hinge Health e Walkito sono sia su iOS sia su Android. Anche «Plantar Fasciitis Exercises» è su entrambi, anche se mostra acquisti in-app in tutti e due gli store. Prehab, PlantarCare e Arch per ora sono solo per iOS. Su Android, Exakt Health copre più problemi, mentre Walkito è l’opzione mirata per il dolore al tallone e al piede.',
+      a: 'Exakt Health e Hinge Health sono sia su iOS sia su Android. Anche «Plantar Fasciitis Exercises» è su entrambi, anche se mostra acquisti in-app in tutti e due gli store. Walkito, Prehab, PlantarCare e Arch per ora sono solo per iOS. Se usi Android, Exakt Health è l’opzione più completa per il dolore al piede.',
     },
     {
       q: 'Serve un’app per fare gli esercizi per la fascite plantare?',
@@ -305,7 +255,7 @@ export const BEST_APP_IT: Guide = {
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Gli esercizi seguono la linea guida clinica del 2023 sul dolore al tallone. Il piano non ha una data di fine fissa: quando raggiungi un obiettivo, passa al mantenimento e il successivo prende il suo posto. Walkito è un programma di esercizi, non una diagnosi né un sostituto di un professionista sanitario.',
     ],
-    cta: 'Prova Walkito su iPhone o Android.',
+    cta: 'Prova Walkito sull’App Store.',
   },
   crumb: 'Migliore app per la fascite plantare',
   campaign: 'compare-best-app-it',

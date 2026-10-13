@@ -41,7 +41,7 @@ import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
 import { CHROME, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
-import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
+import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -65,13 +65,12 @@ const APP = {
   name: APP_STORE_NAME,
   alternateName: [SITE_NAME, 'Walkito app'],
   disambiguatingDescription:
-    'An iPhone and Android exercise app for heel pain, plantar fasciitis and flat feet. Not the Walkito dog-walking service.',
+    'An iPhone exercise app for heel pain, plantar fasciitis and flat feet. Not the Walkito dog-walking service.',
   url: SITE_URL,
-  ...(APP_STORE_URL ? { installUrl: APP_STORE_URL } : {}),
-  sameAs: [APP_STORE_URL, PLAY_STORE_URL].filter((u): u is string => Boolean(u)),
+  ...(APP_STORE_URL ? { installUrl: APP_STORE_URL, sameAs: [APP_STORE_URL] } : {}),
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   applicationCategory: 'HealthApplication',
-  operatingSystem: PLAY_STORE_URL ? 'iOS, Android' : 'iOS',
+  operatingSystem: 'iOS',
   // Free to download; the plan itself is a subscription inside the app.
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
@@ -271,7 +270,7 @@ const COPY: Record<Lang, HomeCopy> = {
       run: {
         title: 'Бегуны и спортсмены',
         text: 'Боль в пятке, ахилле или голени, которая возвращается на тренировках.',
-        goal: `Цель: ${calfRaises} подъёмов на носки на одной ноге`,
+        goal: `Цель: ${calfRaises} подъёмов на носок на одной ноге`,
       },
     },
     whoMore: 'Читать гайд',
@@ -279,12 +278,12 @@ const COPY: Record<Lang, HomeCopy> = {
     how: [
       {
         title: 'По неделе за раз, вокруг одной цели',
-        text: `В центре каждой недели цель, которую можно измерить: утренняя боль в пятке не выше ${PAIN_GOAL_MAX} из 10 в течение ${painFreeDays} дней подряд, удержание свода ${archHoldSeconds} секунд, ${calfRaises} подъёмов на носки на одной ноге, ${balanceSeconds} секунд баланса на одной ноге или разница между левой и правой стороной не больше ${gapPercent} %. Когда цель достигнута, она переходит в поддержание, а её место занимает следующая.`,
+        text: `В центре каждой недели цель, которую можно измерить: утренняя боль в пятке не выше ${PAIN_GOAL_MAX} из 10 в течение ${painFreeDays} дней подряд, удержание свода ${archHoldSeconds} секунд, ${calfRaises} подъёмов на носок на одной ноге, ${balanceSeconds} секунд баланса на одной ноге или разница между левой и правой стороной не больше ${gapPercent} %. Когда цель достигнута, она переходит в поддержание, а её место занимает следующая.`,
         link: 'Как устроен план',
       },
       {
         title: `Тест каждые ${testEveryDays} дней, затем каждые ${testEveryDaysAfterGoal}`,
-        text: `${retestTests} физических теста примерно за ${retestMinutes} минуты: подъёмы на носки до отказа, удержание свода и баланс на одной ноге с обеих сторон. Каждые ${testEveryDays} дней, пока не достигнута первая цель, затем каждые ${testEveryDaysAfterGoal}. Прогресс измеряется, а не угадывается по ощущениям от недели.`,
+        text: `${retestTests} физических теста примерно за ${retestMinutes} минуты: подъёмы на носок до отказа, удержание свода и баланс на одной ноге с обеих сторон. Каждые ${testEveryDays} дней, пока не достигнута первая цель, затем каждые ${testEveryDaysAfterGoal}. Прогресс измеряется, а не угадывается по ощущениям от недели.`,
         link: 'Что измеряют тесты',
       },
       {
@@ -501,8 +500,6 @@ export function Home({ lang }: { lang: Lang }) {
 
 
         <InView className="shell hero hero-glass">
-          <HeroTitle a={copy.h1a} b={copy.h1b} />
-
           <div className="hero-device">
             <div className="hero-arch" aria-hidden />
 
@@ -549,6 +546,13 @@ export function Home({ lang }: { lang: Lang }) {
           </div>
 
           <div className="hero-text">
+            {/* The longer line's length sets the size on wide screens, so each
+                line stays whole in every language (globals.css, .hero-glass h1). */}
+            <h1 style={{ '--h1-len': Math.max(copy.h1a.length, copy.h1b.length) } as React.CSSProperties}>
+              {copy.h1a}
+              <span>{copy.h1b}</span>
+            </h1>
+            <p>{copy.lead}</p>
             {/* "Get the app", not the store badge: on a laptop it opens the QR
                 dialog, on a phone it goes to that phone's store. */}
             <GetAppButton
@@ -559,6 +563,7 @@ export function Home({ lang }: { lang: Lang }) {
               <AppleGlyph />
               {c.headerButton}
             </GetAppButton>
+            <p className="hero-small">{copy.small}</p>
           </div>
         </InView>
       </div>
@@ -675,45 +680,5 @@ export function Home({ lang }: { lang: Lang }) {
 
       <Footer lang={lang} page="home" />
     </>
-  );
-}
-
-/**
- * The hero headline, set like the closing section's: huge pale lilac capitals
- * on the band's deep blue, the phone rising in front of its last line.
- *
- * Each word sits in its own clip and rises out of it as the page opens. The
- * motion is a CSS animation rather than an `InView` transition, so it starts
- * with the first paint: waiting for hydration would show the words, hide them
- * and then raise them. Reduce Motion leaves them standing. (A blur passing
- * through the words was tried and dropped: a filter on gradient-clipped text
- * makes Safari paint boxes round the words.)
- *
- * Sized in globals.css (.hero-title): on wide screens the first line stays
- * whole and the second takes two rows at most; on a phone the longest word
- * fits. In every language. Words joined by a non-breaking space stay one word.
- */
-function HeroTitle({ a, b }: { a: string; b: string }) {
-  const lines = [a, b].map((line) => line.split(' '));
-  const longest = Math.max(...lines.flat().map((word) => word.length));
-  let n = 0;
-  return (
-    <h1
-      className="hero-title"
-      aria-label={`${a} ${b}`}
-      style={
-        { '--h1a-len': a.length, '--h1b-len': b.length, '--h1-word': longest } as React.CSSProperties
-      }
-    >
-      {lines.map((line, i) => (
-        <span key={i} className="hero-line" aria-hidden>
-          {line.map((word, j) => (
-            <span key={j} className="hero-word">
-              <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
-            </span>
-          ))}
-        </span>
-      ))}
-    </h1>
   );
 }

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   // Long enough that Google uses it rather than picking arbitrary text off the
   // page. Forty characters is an invitation for it to write your ad copy.
   description:
-    'Help with Walkito: notifications, Apple Health and Health Connect, purchases, refunds and deleting your account. Write to us and a person replies.',
+    'Help with Walkito: notifications, Apple Health, purchases, refunds and deleting your account. Write to us and a person replies.',
   alternates: alternatesFor('support', 'en'),
 };
 
@@ -50,12 +50,11 @@ export default function Support() {
 
         <h2>Signing in, and a new phone</h2>
         <p>
-          Setup signs you in with Apple on iPhone or with Google on Android, and
-          needs a connection once. After that the daily flow works offline, and
-          what you log is copied to your account whenever there is a connection.
-          On a new phone or after reinstalling, sign in with the same Apple ID or
-          Google account and your plan, check-ins, test results and sessions come
-          back.
+          Setup signs you in with Apple and needs a connection once. After that
+          the daily flow works offline, and what you log is copied to your
+          account whenever there is a connection. On a new phone or after
+          reinstalling, sign in with the same Apple ID and your plan, check-ins,
+          test results and sessions come back.
         </p>
 
         <h2>The plan runs on dates, not attendance</h2>
@@ -78,21 +77,10 @@ export default function Support() {
           Walkito reads steps, walking speed, walking asymmetry, flights climbed,
           heart rate, resting heart rate, active energy, sleep and workouts from
           Apple Health, and writes the sessions you finish back. Every one of
-          those is optional.
-        </p>
-        <p>
-          These readings stay on your phone and are never
+          those is optional. These readings stay on your phone and are never
           uploaded or saved to your account. Turn any of them off in Settings →
           Apps → Health → Data Access &amp; Devices → Walkito and the parts that
           needed it simply go quiet. The plan still works.
-        </p>
-        <p>
-          On Android, Walkito reads steps, exercise sessions, distance and sleep
-          from Health Connect, and writes the sessions you finish back as
-          exercise sessions. Walking speed and walking asymmetry are iPhone only.
-          These readings also stay on your phone and are never uploaded. Change
-          what Walkito can see in the Health Connect app, or in Android Settings
-          under Health Connect → App permissions → Walkito.
         </p>
 
         <h2>Pain, and when to stop</h2>
@@ -104,35 +92,25 @@ export default function Support() {
 
         <h2>Purchases</h2>
         <p>
-          Walkito is paid for with a subscription, yearly or weekly, through the
-          App Store on iPhone or Google Play on Android. Both renew
-          automatically, and the store shows the price in your currency before
-          you buy.
+          Walkito is paid for with a subscription through the App Store, yearly
+          or weekly. Both renew automatically, and the App Store shows the price
+          in your currency before you buy.
         </p>
         <ul>
           <li>
-            <b>Manage or cancel</b> on iPhone in Settings → your name →
+            <b>Manage or cancel</b> your subscription in Settings → your name →
             Subscriptions. Turn off renewal at least 24 hours before the period
-            ends and you are not charged again. On Android, open the Google Play
-            app, tap your profile icon, then Payments &amp; subscriptions →
-            Subscriptions → Walkito → Cancel subscription. Either way you keep
-            access until the end of the period you paid for.
+            ends and you are not charged again. You keep access until the end of
+            the period you paid for.
           </li>
           <li>
-            <b>Refunds</b> are handled by the store you paid. On iPhone, use
-            Apple’s{' '}
+            <b>Refunds</b> are handled by Apple. Use Apple’s{' '}
             <a href="https://reportaproblem.apple.com">Report a Problem</a> page.
-            On Android, request one from your{' '}
-            <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a>.
-            We cannot process refunds on Apple’s or Google’s behalf.
+            We cannot process refunds on Apple’s behalf.
           </li>
           <li>
-            <b>New phone?</b> On iPhone, sign in with the same Apple ID and tap
-            Restore Purchases in the app. On Android, use the same Google account
-            in Google Play and the subscription comes back. Your plan comes back
-            with your account. A subscription bought on iPhone does not carry
-            over to Android, or the other way round, because Apple and Google
-            bill separately.
+            <b>New phone?</b> Sign in with the same Apple ID and tap Restore
+            Purchases in the app. Your plan comes back with your account.
           </li>
         </ul>
 
@@ -141,10 +119,7 @@ export default function Support() {
           In the app, go to <b>Profile → Delete account</b>. That deletes your
           account on our server with everything saved to it (your plan,
           check-ins, test results, sessions, email and invite code) and clears
-          the phone. It cannot be undone.
-        </p>
-        <p>
-          Deleting the app on its own removes
+          the phone. It cannot be undone. Deleting the app on its own removes
           only the copy on the phone: your account stays and comes back when you
           sign in again. You can also write to {mail} and we will delete it for
           you.

@@ -125,7 +125,7 @@ export function Faq({ lang, items }: { lang: Lang; items: { q: string; a: string
         </div>
 
         <div className="hfaq-more">
-          <img className="hfaq-mascot" src="/hero/mascot-tasks.webp" alt="" width={240} height={240} loading="lazy" decoding="async" />
+          <img className="hfaq-mascot" src="/hero/mascot-tasks.webp" alt="" width={240} height={240} />
           <div className="hfaq-more-copy">
             <p className="hfaq-more-title">{copy.moreTitle}</p>
             <p className="hfaq-more-text">

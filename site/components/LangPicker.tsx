@@ -3,7 +3,7 @@
 import { CaretUpIcon } from '@phosphor-icons/react/dist/csr/CaretUp';
 import { CheckIcon } from '@phosphor-icons/react/dist/csr/Check';
 import { GlobeIcon } from '@phosphor-icons/react/dist/csr/Globe';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * The language switcher: one button naming the current language, opening a
@@ -14,39 +14,18 @@ import { useEffect, useRef, useState } from 'react';
  * the script only closes it on Escape or a click elsewhere. Plain `<a>`, not
  * `Link`: each language is its own root layout, so the jump is a full load
  * either way.
- *
- * In the header (`place="down"`) it opens downward and does not know the page
- * it is on: the server gives it each language's home, and once the page has
- * loaded it takes the page's own versions from the `hreflang` alternates in
- * the head, which every page already declares.
  */
 export function LangPicker({
   current,
   options,
   label,
-  place = 'up',
-  className,
 }: {
   current: string;
   options: { lang: string; name: string; href: string; current: boolean }[];
   /** "Language", for the control's accessible name. */
   label: string;
-  /** Which way the list opens: up from the footer, down from the header. */
-  place?: 'up' | 'down';
-  className?: string;
 }) {
   const ref = useRef<HTMLDetailsElement>(null);
-  const [alternates, setAlternates] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    if (place !== 'down') return;
-    const found: Record<string, string> = {};
-    document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]').forEach((link) => {
-      const url = new URL(link.href, location.href);
-      if (url.origin === location.origin) found[link.hreflang] = url.pathname;
-    });
-    setAlternates(found);
-  }, [place]);
 
   useEffect(() => {
     const el = ref.current;
@@ -69,11 +48,11 @@ export function LangPicker({
   }, []);
 
   return (
-    <details ref={ref} className={`lp lp-${place}${className ? ` ${className}` : ''}`}>
+    <details ref={ref} className="lp">
       <summary className="lp-button" aria-label={`${label}: ${current}`}>
         <GlobeIcon size={18} weight="fill" aria-hidden />
         <span>{current}</span>
-        {place === 'up' && <CaretUpIcon className="lp-caret" size={14} weight="bold" aria-hidden />}
+        <CaretUpIcon className="lp-caret" size={14} weight="bold" aria-hidden />
       </summary>
       <nav className="lp-menu" aria-label={label}>
         {options.map((o) =>
@@ -83,7 +62,7 @@ export function LangPicker({
               <CheckIcon size={16} weight="bold" aria-hidden />
             </span>
           ) : (
-            <a key={o.lang} className="lp-item" href={alternates[o.lang] ?? o.href} hrefLang={o.lang} lang={o.lang}>
+            <a key={o.lang} className="lp-item" href={o.href} hrefLang={o.lang} lang={o.lang}>
               {o.name}
             </a>
           ),

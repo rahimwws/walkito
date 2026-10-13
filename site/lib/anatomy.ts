@@ -1,5 +1,5 @@
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
+import { SITE_URL } from '@/lib/site';
 
 /**
  * Labelled anatomy illustrations, one file per language with the labels drawn
@@ -59,7 +59,7 @@ const LABELS_BY = {
   en: 'labels by Walkito',
   es: 'rótulos de Walkito',
   ru: 'подписи Walkito',
-  pt: 'legendas do Walkito',
+  pt: 'legendas da Walkito',
   fr: 'légendes de Walkito',
   it: 'didascalie di Walkito',
   de: 'Beschriftung von Walkito',
@@ -103,7 +103,7 @@ export function anatomySchema(
     height: h,
   };
   if (source.by === 'walkito') {
-    return { ...base, creator: walkito, creditText: 'Walkito', copyrightNotice: '© Walkito', ...OWN_IMAGE_LICENSE };
+    return { ...base, creator: walkito, creditText: 'Walkito', copyrightNotice: '© Walkito' };
   }
   return {
     ...base,

@@ -3,15 +3,14 @@ import Link from 'next/link';
 
 import { AppleGlyph } from '@/components/AppStoreBadge';
 import { GetAppButton, GetAppDialog } from '@/components/GetApp';
-import { LangPicker } from '@/components/LangPicker';
 import { MobileMenu } from '@/components/MobileMenu';
 import { ScrollState } from '@/components/ScrollState';
-import { CHROME, LANG_NAMES, LANGS, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
+import { CHROME, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { qrPath } from '@/lib/qr';
 import { playHref, SITE_URL, storeHref } from '@/lib/site';
 
 /** What the dialog's QR code opens: `/get/` picks the phone's own store. */
-const QR = qrPath(`${SITE_URL}/get/`, { hole: 0.24 });
+const QR = qrPath(`${SITE_URL}/get/`);
 
 /**
  * The header, identical on every page: the home page's floating one.
@@ -22,9 +21,9 @@ const QR = qrPath(`${SITE_URL}/get/`, { hole: 0.24 });
  * does the measuring and sets `html[data-scrolled]`; it is rendered here so no
  * page has to remember it.
  *
- * On the right, the language picker (the footer's, opening downward), which
- * gives way to "Get the app" once the page scrolls. The header renders the one
- * dialog with the QR code that every such button on the page opens.
+ * The button says "Get the app" and goes straight to the listing, tagged
+ * `masthead` so App Analytics can tell it apart from the badges in the page
+ * body. Until `APP_STORE_URL` is set it points at `#`, like the badges.
  *
  * `current` marks the link of the page being shown (`aria-current`), drawn as
  * the selected item in the nav.
@@ -41,6 +40,7 @@ export function Masthead({
   floating?: boolean;
 }) {
   const suffix = lang === 'en' ? '' : `-${lang}`;
+  const href = storeHref(`masthead${suffix}`);
   const c = CHROME[lang];
   const home = TRANSLATED.home[lang];
 
@@ -70,25 +70,10 @@ export function Masthead({
         ))}
       </nav>
 
-      {/* At the top of the page, the languages; once it scrolls, "Get the app"
-          in their place. Both share one grid cell, so the box the floating
-          header measures and moves (`.download`) keeps its size. */}
-      <div className="download masthead-end">
-        <LangPicker
-          place="down"
-          label={c.language}
-          current={LANG_NAMES[lang]}
-          options={LANGS.map((l) => ({ lang: l, name: LANG_NAMES[l], href: TRANSLATED.home[l], current: l === lang }))}
-        />
-        <GetAppButton
-          className="masthead-get"
-          ios={storeHref(`masthead${suffix}`) ?? '#'}
-          android={playHref(`masthead${suffix}`)}
-        >
-          <AppleGlyph />
-          {c.headerButton}
-        </GetAppButton>
-      </div>
+      <GetAppButton className="download" ios={href ?? '#'} android={playHref(`masthead${suffix}`)}>
+        <AppleGlyph />
+        {c.headerButton}
+      </GetAppButton>
 
       {/* Phones: a burger in place of the nav and the button. */}
       <MobileMenu
