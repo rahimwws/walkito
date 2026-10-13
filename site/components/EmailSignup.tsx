@@ -119,8 +119,6 @@ export function EmailSignup({
       <p className="email-signup-description">{c.description}</p>
       <form
         onSubmit={handleSubmit}
-        action={`mailto:${SUPPORT_EMAIL}?subject=Exercise%20sheets%20request`}
-        method="GET"
       >
         {/* Honeypot: hidden from real users, filled by bots. */}
         <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', height: 0, overflow: 'hidden' }}>
