@@ -105,7 +105,7 @@ export const IN_SESSION_STOP = 6;
  */
 export const PAGE_UPDATED = {
   home: '2026-10-13',
-  runners: '2026-10-03',
+  runners: '2026-10-13',
   program: '2026-09-28',
   science: '2026-09-28',
   faq: '2026-10-13',

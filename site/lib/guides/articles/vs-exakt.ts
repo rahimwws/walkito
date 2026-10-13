@@ -164,7 +164,7 @@ export const VS_EXAKT_EN: Guide = {
       keyFact: 'Walkito\'s exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         '**This is where Exakt is clearly stronger.** Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner\'s knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.',
-        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.',
+        'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a [broader app like Prehab](/exakt-health-alternatives/) is the right choice.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -235,7 +235,7 @@ export const VS_EXAKT_EN: Guide = {
         'Pick Walkito if any of the following is true:',
       ],
       bullets: [
-        'Your pain is specifically heel pain, plantar fasciitis or flat feet, and you want a focused program for that.',
+        'Your pain is specifically heel pain, plantar fasciitis or [flat feet](/best-app-for-flat-feet/), and you want a focused program for that.',
         'You want sessions of 3 to 10 minutes rather than 15 to 30.',
         'Daily pain adaptation from a morning check-in matters more to you than level-based progression.',
         'You want progress tests every 14 days that compare left to right.',

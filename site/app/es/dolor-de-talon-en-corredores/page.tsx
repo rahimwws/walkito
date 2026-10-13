@@ -255,7 +255,7 @@ export default function HeelPainRunnersEs() {
           <section id="dolor-aquiles">
             <h2>¿Puede ser el tendón de Aquiles?</h2>
             <p>
-              El dolor de Aquiles se siente más arriba que la fascitis plantar: donde el tendón se
+              El <a href="/es/ejercicios-tendinitis-aquiles/">dolor de Aquiles</a> se siente más arriba que la fascitis plantar: donde el tendón se
               une a la parte de atrás del hueso del talón, o unos centímetros más arriba, en el
               tendón.
             </p>
@@ -324,7 +324,7 @@ export default function HeelPainRunnersEs() {
           <section id="periostitis-tibial">
             <h2>¿Y el dolor a lo largo de la tibia?</h2>
             <p>
-              La periostitis tibial, o síndrome de estrés tibial medial, es dolor a lo largo de
+              La <a href="/es/ejercicios-periostitis-tibial/">periostitis tibial</a>, o síndrome de estrés tibial medial, es dolor a lo largo de
               la parte interna de la tibia, normalmente repartido en varios centímetros en vez de un
               solo punto. No es la fascia plantar: el hueso y el tejido a su alrededor reaccionan a
               la carga repetida de correr.
@@ -360,7 +360,7 @@ export default function HeelPainRunnersEs() {
             <h2>¿Puede ser la almohadilla grasa bajo el talón?</h2>
             <p>
               La almohadilla grasa del talón es el cojín bajo el hueso del talón. El dolor que viene
-              de ella, llamado síndrome de la almohadilla grasa del talón, puede sentirse como
+              de ella, llamado <a href="/es/sindrome-almohadilla-grasa-talon/">síndrome de la almohadilla grasa del talón</a>, puede sentirse como
               fascitis plantar, pero tiende a estar en el centro del talón en vez de hacia el arco.
               La guía de 2023 para el dolor de talón lo menciona como una de las causas que caen
               bajo «dolor de talón plantar».

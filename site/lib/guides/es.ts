@@ -305,7 +305,7 @@ export const HEEL_PAIN_ES: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-10',
+  updated: '2026-10-13',
   title: '8 ejercicios para fascitis plantar y dolor de talón',
   description:
     'Ocho ejercicios y estiramientos para la fascitis plantar que puedes hacer en casa, con dosis, qué evitar, cuándo estirar y grados de la guía de 2023.',
@@ -568,7 +568,7 @@ export const HEEL_PAIN_ES: Guide = {
     },
     {
       q: '¿El espolón calcáneo es lo mismo que la fascitis plantar?',
-      a: 'No exactamente. Mucha gente dice «espolón calcáneo» cuando habla de fascitis plantar, pero en sentido estricto un espolón es un crecimiento de hueso que se ve en una radiografía. La fascitis plantar es dolor de la banda de tejido bajo el pie. Los ejercicios de esta página son los que la guía de 2023 califica para el dolor de talón bajo el pie. Solo un profesional de la salud puede decir qué hay detrás del tuyo.',
+      a: 'No exactamente. Mucha gente dice «[espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/)» cuando habla de fascitis plantar, pero en sentido estricto un espolón es un crecimiento de hueso que se ve en una radiografía. La fascitis plantar es dolor de la banda de tejido bajo el pie. Los ejercicios de esta página son los que la guía de 2023 califica para el dolor de talón bajo el pie. [Ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) explica la misma rutina cuando una radiografía muestra un espolón. Solo un profesional de la salud puede decir qué hay detrás del tuyo.',
     },
     {
       q: '¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?',

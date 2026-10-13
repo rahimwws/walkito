@@ -22,7 +22,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
   page: 'insolesVsExercises',
   mainSource: CITE.whittakerOrthoses,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Insoles vs Exercises: Do You Need Orthotics?',
   description:
     'Do you need orthotics or exercises? What trials found for insoles in heel pain and flat feet, custom vs store-bought, and how to combine both.',
@@ -74,7 +74,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
           ],
         },
         '**Every group also got a booklet with exercises.** At three months, custom insoles did no better than sham. The GP care group did better than the custom group: about 1 point less pain during activity and 1.5 points less first-step pain, on a 0 to 10 scale. A cost analysis of the same trial over about six months found custom insoles "not cost-effective" compared with GP care.',
-        'Custom orthotics can still help some people (see below). But if you want an insole for heel pain, a well-fitting off-the-shelf arch support is the reasonable first try.',
+        'Custom orthotics can still help some people (see below). But if you want an insole for heel pain, a [well-fitting off-the-shelf arch support](/best-insoles-for-plantar-fasciitis/) is the reasonable first try.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
     },

@@ -5,7 +5,7 @@ export const BEST_APP_EN: Guide = {
   lang: 'en',
   page: 'bestApp',
   published: '2026-10-04',
-  updated: '2026-10-09',
+  updated: '2026-10-13',
   title: 'Best App for Plantar Fasciitis in 2026: Honest Comparison',
   description:
     'Best app for plantar fasciitis in 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch and Walkito compared on price, platforms and fit.',
@@ -177,7 +177,7 @@ export const BEST_APP_EN: Guide = {
       h2: 'Arch: Flat Feet Trainer',
       paragraphs: [
         'Arch is the only app in this comparison focused entirely on flat feet and arch strengthening. It has 40+ foot exercises, progress tracking and a clean design. At $39.99 a year or $9.99 a month, with a 7-day free trial, the price is moderate.',
-        'A reviewer noted that the app lacks exercise videos, using illustrations instead. The app claims its routines are "backed by science" and "proven physiotherapy principles" but does not cite specific studies. With only 6 ratings on the App Store, it is early in its life.',
+        'A reviewer noted that the app lacks exercise videos, using illustrations instead. The app claims its routines are "backed by science" and "proven physiotherapy principles" but [does not cite specific studies](/heel-pain-apps-study/). With only 6 ratings on the App Store, it is early in its life.',
         'If your primary concern is flat feet without significant pain, Arch is worth trying. For plantar fasciitis, it is not the right fit since it does not include heel-specific rehab exercises or pain tracking.',
       ],
     },
@@ -186,7 +186,7 @@ export const BEST_APP_EN: Guide = {
       paragraphs: [
         'This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on both iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it.',
         'The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.',
-        'If you want a free reference for what stretches to try, check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.',
+        'If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.',
       ],
     },
     {
