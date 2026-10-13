@@ -83,3 +83,4 @@ export {
   type ComebackDeals,
   type ReadyComeback,
 } from './model/offer-pushes';
+export { offerPushesAllowed, setOfferPushes, useOfferPushes } from './model/offer-prefs';

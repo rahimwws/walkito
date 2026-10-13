@@ -7,6 +7,7 @@ import { currentUserId, supabase } from '@/shared/lib/supabase';
 
 import { scheduleWithArt } from './attachment';
 import type { Message } from './copy';
+import { offerPushesAllowed } from './offer-prefs';
 
 /**
  * Local notifications: the permission ask, and the one message we send.
@@ -185,6 +186,8 @@ export function winbackMessage(percent: number, name?: string): Message {
  * since there is no screen left to show a failure on.
  */
 export async function scheduleWinback(percent: number, name?: string): Promise<boolean> {
+  // An offer: held when offers are turned off in Settings (guideline 4.5.4).
+  if (!offerPushesAllowed()) return false;
   await ensureNotificationChannel();
   const message = winbackMessage(percent, name);
   try {

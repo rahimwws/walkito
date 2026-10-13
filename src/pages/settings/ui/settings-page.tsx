@@ -13,6 +13,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { EmailSettings } from './email-settings';
 import { PlanSettings } from './plan-settings';
+import { OfferSettings } from './offer-settings';
 import { SoundSettings } from './sound-settings';
 
 /**
@@ -80,6 +81,7 @@ export function SettingsPage() {
       <PlanSettings />
 
       <SoundSettings />
+      <OfferSettings />
 
       <EmailSettings />
 

@@ -6,6 +6,7 @@ import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { prepareArt, releaseArt, scheduleWithArt, scheduleWithPreparedArt, type PreparedArt } from './attachment';
 import type { Message } from './copy';
 import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './notifications';
+import { offerPushesAllowed } from './offer-prefs';
 
 /**
  * The local notifications around the offer screen after the paywall's "Not
@@ -102,6 +103,8 @@ export type ReadyComeback = {
  */
 export async function prepareComebackPush(deals: ComebackDeals): Promise<ReadyComeback | null> {
   if (!deals.year && !deals.lifetime) return null;
+  // Offers turned off in Settings (guideline 4.5.4).
+  if (!offerPushesAllowed()) return null;
   if (!(await notificationsAllowed())) return null;
   await ensureNotificationChannel();
   const message = lastChanceMessage(deals);
@@ -156,6 +159,7 @@ export async function scheduleEndsSoonPush({
   endsAt: number;
   now?: number;
 }): Promise<boolean> {
+  if (!offerPushesAllowed()) return false;
   const at = Math.min(now + ENDS_SOON_AFTER_MS, endsAt - ENDS_SOON_BEFORE_DEADLINE_MS);
   if (at - now < MIN_LEAD_MS || endsAt <= now) return false;
   await ensureNotificationChannel();
