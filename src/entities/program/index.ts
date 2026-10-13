@@ -142,6 +142,7 @@ export {
   logPain,
   logFlare,
   checkInOn,
+  devClearCheckIn,
   lastFlareOn,
   FIRST_STEP_CUTOFF_HOUR,
   firstStepOn,

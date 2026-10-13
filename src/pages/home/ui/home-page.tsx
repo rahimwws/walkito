@@ -1,7 +1,7 @@
 import { useIsFocused, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Animated from 'react-native-reanimated';
+import Animated, { useDerivedValue, useSharedValue } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
@@ -38,15 +38,15 @@ import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { kv } from '@/shared/lib/storage';
 import { StreakWeek } from '@/shared/ui/streak-week';
-import { Confetti } from '@/shared/ui/confetti';
+import { Confetti, type ConfettiOrigin } from '@/shared/ui/confetti';
 import { DailyStack } from './daily-stack';
+import { GlideHeight } from './glide-height';
 import { MilestoneMascot } from './milestone-mascot';
-import { PainCheck } from './pain-check';
+import { CHECK_IN_GAP, PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
 import { DailyBrief } from '@/shared/ui/daily-brief';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
-
 
 /**
  * Attendance re-ordered for `StreakWeek`, which counts from Sunday.
@@ -69,7 +69,6 @@ import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 function stripWeek(now: number): boolean[] {
   return weekAttendance(now, 0).map((day) => day.attended);
 }
-
 
 /**
  * The title the header takes on while the program is up: the weekday over the
@@ -115,6 +114,10 @@ function markMilestone(days: number): void {
   kv.set(MILESTONES_KEY, JSON.stringify([...new Set([...seen, days])]));
 }
 
+/** How long after the streak reaches a milestone its sheet rises: past the
+ * check-in's own fold. */
+const MILESTONE_AFTER_MS = 1100;
+
 export function HomePage() {
   const router = useRouter();
   /** Home stays mounted under the other tabs; the drift has no reason to run
@@ -132,6 +135,12 @@ export function HomePage() {
   const scroll = useRef<Animated.ScrollView>(null);
   useSpotlightScroller((y) => scroll.current?.scrollTo({ y, animated: true }));
   const overviewAnchor = useSpotlightAnchor('home.overview');
+  /** The check-in's height, as its two parts: the question or the answer
+   * (eased by the check-in) and the row under it. Added up on the UI thread
+   * for the stack, so the list under it never lags a frame behind. */
+  const checkInViews = useSharedValue(0);
+  const checkInRow = useSharedValue(0);
+  const checkInHeight = useDerivedValue(() => checkInViews.value + CHECK_IN_GAP + checkInRow.value);
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
@@ -142,24 +151,18 @@ export function HomePage() {
   const milestone = milestoneFor(streak.current);
   const [milestoneOpen, setMilestoneOpen] = useState(false);
   useEffect(() => {
-    if (milestone != null && !milestoneSeen(milestone)) setMilestoneOpen(true);
+    if (milestone == null || milestoneSeen(milestone)) return undefined;
+    // A beat late: the answer that reaches a milestone is still folding in,
+    // and the sheet rising in the same frame was one motion too many.
+    const timer = setTimeout(() => setMilestoneOpen(true), MILESTONE_AFTER_MS);
+    return () => clearTimeout(timer);
   }, [milestone]);
   /** The check-in's own sheet is up over Home: the list's mascot holds still. */
   const [checkSheet, setCheckSheet] = useState(false);
-  /** Whether today's answer is in. Once it is, the check-in gives up the top of
-   * the screen to the list of work it was asked about. */
-  /**
-   * Whether today's answer is in, read from the log rather than remembered.
-   *
-   * It was `useState(false)`, so leaving Home and coming back put the question
-   * in front of somebody who had already answered it — and the sentence above,
-   * which reads `painOn(currentDay())` two lines down, disagreed with the cards
-   * underneath it on the same screen.
-   */
-  const checkedIn = painOn(currentDay()) != null;
   /** A counter, not a flag: remounting on a new value is what re-runs every
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
+  const [burstFrom, setBurstFrom] = useState<ConfettiOrigin | null>(null);
   const name = useProfileName();
   const signals = useHealthSignals();
   /** What they told us in onboarding — the goal and sport the brief can speak
@@ -225,86 +228,93 @@ export function HomePage() {
         {/* The week and the morning line are the tour's first stop: what
             Home says about the feet. One view around both, for it to light. */}
         <View ref={overviewAnchor} collapsable={false}>
-        <IntroReveal order={1} style={styles.week}>
-          <StreakWeek done={stripWeek(Date.now())} />
-        </IntroReveal>
+          <IntroReveal order={1} style={styles.week}>
+            <StreakWeek done={stripWeek(Date.now())} />
+          </IntroReveal>
 
-        {/* Under the week: one says which day, the other says how that day is
+          {/* Under the week: one says which day, the other says how that day is
             going. */}
-        {/* Masked in session recordings: it says the user's name, their pain
+          {/* Masked in session recordings: it says the user's name, their pain
             and their Apple Health numbers. */}
-        <IntroReveal order={2} style={styles.brief} {...REPLAY_MASK}>
-          <DailyBrief
-            tokens={briefTokens(
-              {
-                name: firstName(name),
-                // Read at render: Home re-renders on focus and on every log
-                // write, which is often enough for the greeting to keep up.
-                hour: new Date().getHours(),
-                cursor: TODAY_INDEX,
-                // Null until they have actually answered, and never zero. The
-                // ladder reads null as "not asked yet" and falls through to the
-                // day's own state; a zero would be the app deciding on their
-                // behalf that nothing hurts this morning. Read on every render
-                // rather than held — the check-in writes the log, and this
-                // component is already re-rendered by `useStreak` when it does.
-                todayPain: painOn(currentDay()),
-                // Today's session, not today's check-in. This was the check-in,
-                // so answering it switched the line to "done for today" before
-                // any work was done - and, once a test day's line learned to
-                // stop asking for tests that are done, it would have stopped
-                // asking the moment the question below was answered. The same
-                // answer Plan and the list underneath read.
-                doneToday: planSessionDone(todayKey()),
-                // The same figure the header shows. Two hand-written sevens is
-                // what this replaces: a streak that disagreed with itself
-                // between the capsule and the sentence directly under it.
-                streak: streak.current,
-                // Read from the local cache, never from HealthKit. The pipeline
-                // fills that cache in the background; a morning line that
-                // awaited a Health query would leave the screen blank on every
-                // cold start, and would be blank forever for the users who
-                // granted nothing.
-                health: signals,
-                // Both learned from the person's own history rather than set:
-                // the hours are derived from when their steps actually
-                // happened, and the limit is the hour past which their own next
-                // mornings got worse. Null until there is enough history to
-                // say, which is the honest answer and the one that keeps the
-                // line silent.
-                hoursOnFeet: signalsAreToday ? signals.hoursOnFeetToday : null,
-                // Only past the mark does this say anything, and then it asks
-                // how the heel is — the check-in card sits right below.
-                stepsToday: signalsAreToday ? signals.stepsToday : null,
-                onFeetThreshold: signals.onFeetThreshold,
-                goal: intake?.goal ?? null,
-                sport: intake?.sport ?? null,
-                ...plan,
-              },
-              language,
-            )}
-          />
-        </IntroReveal>
+          <IntroReveal order={2} style={styles.brief} {...REPLAY_MASK}>
+            {/* Its sentence can change with the answer below it (two lines become
+                three): the change of height eases rather than jumping the page. */}
+            <GlideHeight>
+            <DailyBrief
+              tokens={briefTokens(
+                {
+                  name: firstName(name),
+                  // Read at render: Home re-renders on focus and on every log
+                  // write, which is often enough for the greeting to keep up.
+                  hour: new Date().getHours(),
+                  cursor: TODAY_INDEX,
+                  // Null until they have actually answered, and never zero. The
+                  // ladder reads null as "not asked yet" and falls through to the
+                  // day's own state; a zero would be the app deciding on their
+                  // behalf that nothing hurts this morning. Read on every render
+                  // rather than held — the check-in writes the log, and this
+                  // component is already re-rendered by `useStreak` when it does.
+                  todayPain: painOn(currentDay()),
+                  // Today's session, not today's check-in. This was the check-in,
+                  // so answering it switched the line to "done for today" before
+                  // any work was done - and, once a test day's line learned to
+                  // stop asking for tests that are done, it would have stopped
+                  // asking the moment the question below was answered. The same
+                  // answer Plan and the list underneath read.
+                  doneToday: planSessionDone(todayKey()),
+                  // The same figure the header shows. Two hand-written sevens is
+                  // what this replaces: a streak that disagreed with itself
+                  // between the capsule and the sentence directly under it.
+                  streak: streak.current,
+                  // Read from the local cache, never from HealthKit. The pipeline
+                  // fills that cache in the background; a morning line that
+                  // awaited a Health query would leave the screen blank on every
+                  // cold start, and would be blank forever for the users who
+                  // granted nothing.
+                  health: signals,
+                  // Both learned from the person's own history rather than set:
+                  // the hours are derived from when their steps actually
+                  // happened, and the limit is the hour past which their own next
+                  // mornings got worse. Null until there is enough history to
+                  // say, which is the honest answer and the one that keeps the
+                  // line silent.
+                  hoursOnFeet: signalsAreToday ? signals.hoursOnFeetToday : null,
+                  // Only past the mark does this say anything, and then it asks
+                  // how the heel is — the check-in card sits right below.
+                  stepsToday: signalsAreToday ? signals.stepsToday : null,
+                  onFeetThreshold: signals.onFeetThreshold,
+                  goal: intake?.goal ?? null,
+                  sport: intake?.sport ?? null,
+                  ...plan,
+                },
+                language,
+              )}
+            />
+            </GlideHeight>
+          </IntroReveal>
 
-        {/* The check-in and the list, in that order until the check-in is
-            answered. It asks how the body took yesterday, and that answer is
-            what changes today — so until it is given it outranks the work, and
-            the moment it is given it stops outranking anything. */}
+          {/* The check-in above the list. Until it is answered it is the big
+            question, since the answer changes today; once answered it folds
+            into a short card of the day's answer where it stands, and the list
+            rises as it does. */}
         </View>
 
         <IntroReveal order={3} fade={false} style={styles.check}>
           <DailyStack
-            swapped={checkedIn}
+            firstHeight={checkInHeight}
             first={
               <PainCheck
-                onLogged={(painless) => {
+                onLogged={(painless, origin) => {
                   // Only for a day with no pain in it. Confetti for logging a
                   // seven would be the app celebrating at someone who just told
-                  // it they are hurting.
-                  if (painless) setBurst((n) => n + 1);
+                  // it they are hurting. Thrown from the mascot, on his hop.
+                  if (!painless) return;
+                  setBurstFrom(origin ?? null);
+                  setBurst((n) => n + 1);
                 }}
                 covered={milestoneOpen || streakOpen}
                 onSheet={setCheckSheet}
+                heights={{ views: checkInViews, row: checkInRow }}
               />
             }
             second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet} />}
@@ -317,7 +327,7 @@ export function HomePage() {
       </Animated.ScrollView>
 
       {/* Over everything, outside the scroller, and untouchable. */}
-      {burst > 0 && <Confetti key={burst} />}
+      {burst > 0 && <Confetti key={burst} origins={burstFrom != null ? [burstFrom] : undefined} delay={120} />}
 
       {milestone != null && (
         <CelebrationSheet

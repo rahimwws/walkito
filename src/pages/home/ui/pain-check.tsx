@@ -5,11 +5,9 @@ import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   Easing,
-  FadeIn,
-  FadeInDown,
   ReduceMotion,
   interpolate,
   interpolateColor,
@@ -17,6 +15,7 @@ import Animated, {
   useDerivedValue,
   useSharedValue,
   withTiming,
+  type SharedValue,
 } from 'react-native-reanimated';
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -42,6 +41,7 @@ import { PROGRAM_EASING, PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
 import { useSpotlightAnchor } from '@/shared/lib/spotlight';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
+import type { ConfettiOrigin } from '@/shared/ui/confetti';
 import { Mascot, handsUpRig, painRig, type MascotHandle, type MascotProps } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
@@ -57,12 +57,34 @@ import { reliefIdsFor } from '../model/zone-relief';
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 import { SafetySheet } from './safety-sheet';
 
+/** Between the question (or the answer) and the "Something new?" row. */
+export const CHECK_IN_GAP = 12;
+
 const PRESS_MS = 90;
-/** The question leaving, and the answer arriving in its place. */
-const VIEW_OUT_MS = 200;
-const VIEW_IN_MS = 460;
-/** His reaction waits for the card to have risen in. */
-const SUMMARY_SHOT_MS = 380;
+/** The view arriving, and the one leaving: one cross-dissolve. The arrival
+ * eases out and runs longer, so it is the thing the eye ends on. */
+const ENTER_MS = 440;
+const ENTER_EASING = Easing.bezier(0.22, 1, 0.36, 1);
+/** The lines under the answer card trail it by this much. */
+const LINES_LAG_MS = 160;
+const EXIT_MS = 260;
+const EXIT_EASING = Easing.bezier(0.4, 0, 0.6, 1);
+/** How far the arriving view rises into place. */
+const RISE = 14;
+/** How long a page sheet takes to go: an answer given in one is folded in
+ * once it has gone, not behind it. */
+const SHEET_GONE_MS = 380;
+/** The block easing to the height of what it now holds. */
+const HEIGHT_MS = 420;
+const HEIGHT_EASING = Easing.bezier(0.33, 1, 0.68, 1);
+/** His reaction (and the confetti) once the answer has risen in. */
+const SUMMARY_SHOT_MS = 80;
+/** The bleed of the block's clip into the page gutters, so the tipped cards'
+ * corners are never cut. */
+const CLIP_BLEED = 20;
+/** And above and below it: the mascot's hop on the answer card rises past
+ * the card's top. */
+const CLIP_BLEED_Y = 24;
 const SELECT_MS = 260;
 const SELECT_EASING = Easing.bezier(0.23, 1, 0.32, 1);
 
@@ -99,7 +121,12 @@ const CARDS = [
     rig: handsUpRig,
     side: 'right',
   },
-] as const satisfies readonly { key: string; title: Key; rig: unknown; side: 'left' | 'right' }[];
+] as const satisfies readonly {
+  key: string;
+  title: Key;
+  rig: unknown;
+  side: 'left' | 'right';
+}[];
 
 type CardKey = (typeof CARDS)[number]['key'];
 
@@ -107,13 +134,20 @@ export type PainCheckProps = {
   /** Fired once the day's answer is in. `painless` is what the celebration and
    * the reordering above both key off — a good day is worth marking, and either
    * way the question is done and should stop holding the top of the screen. */
-  onLogged?: (painless: boolean) => void;
+  onLogged?: (painless: boolean, origin?: ConfettiOrigin) => void;
   /** A sheet of Home's is over the cards (the streak, a milestone): the
    * mascots hold still under it. */
   covered?: boolean;
   /** The check-in's own sheets opened or closed, so Home can hold its other
    * mascots still under them. */
   onSheet?: (open: boolean) => void;
+  /**
+   * The block's two heights, which Home adds up (with `CHECK_IN_GAP`) for its
+   * `DailyStack` to read on the UI thread: `views`, the question or the
+   * answer, eased by the block itself; `row`, the "Something new?" row under
+   * it. Shared rather than measured, so the list can never be a frame behind.
+   */
+  heights?: { views: SharedValue<number>; row: SharedValue<number> };
 };
 
 /**
@@ -139,7 +173,7 @@ export type PainCheckProps = {
  * by side. Now a tap picks — the chosen card comes level and forward while the
  * other tips away — and one primary underneath commits it.
  */
-export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps) {
+export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainCheckProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
@@ -159,55 +193,167 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   const answered = checkIn != null && !editing;
 
   /**
-   * What is on screen, which follows `answered` a beat behind so the change
-   * is seen rather than cut.
+   * The question and the day's answer, crossing over rather than taking turns.
    *
-   * A fresh answer moves the whole block under the task list first (Home's
-   * `DailyStack`, `PROGRAM_MS`); swapping the cards for the answer in the
-   * middle of that crossing was the jolt. So: the crossing, then the question
-   * fades down and out, then the answer rises in. Edit runs the same fade the
-   * other way, with no crossing to wait for.
+   * The answer used to replace the cards in one frame, mid-crossing; then it
+   * faded out, left a blank beat and faded the other in, which read as a lag.
+   * Now both are on screen for the change: the one arriving takes its place
+   * in the flow (the block's height glides to it), the one leaving is laid
+   * over that place and goes. The answer has no glass, so it fades and always
+   * sits on top; the question's cards are liquid glass, which an animated
+   * opacity on any ancestor kills for good (see `scrim` in `PainCard`), so it
+   * sits underneath and a veil in the page colour comes over it or lifts off
+   * it instead. Whichever way the change goes, it is one cross-dissolve.
+   *
+   * It happens where the block is: the answered card stays at the top of
+   * Home, and the list under it rises as the block's height eases down. An
+   * answer given in the sheet is folded in once the sheet has gone.
    */
   const target: 'question' | 'summary' = answered ? 'summary' : 'question';
   const [view, setView] = useState(target);
-  const viewIn = useSharedValue(1);
-  /** Set by a fresh answer: the first change waits for the crossing. */
-  const crossing = useRef(false);
+  const [leaving, setLeaving] = useState<'question' | 'summary' | null>(null);
+  /**
+   * How far each view is in, 0 to 1, one value per view rather than one for
+   * "arriving" and one for "leaving": a view's style never changes role
+   * mid-change, so it can never pick up the other's value for a frame.
+   */
+  const summaryP = useSharedValue(target === 'summary' ? 1 : 0);
+  const questionP = useSharedValue(target === 'question' ? 1 : 0);
+  /** When a sheet of the check-in's last went, so the change can wait for it. */
+  const sheetGoneAt = useRef(0);
+  /** Between the swap and the start of its cross-dissolve; the new height
+   * measured in that window waits in `heldHeight`. */
+  const swapping = useRef(false);
+  const heldHeight = useRef<number | null>(null);
+  const ownViews = useSharedValue(0);
+  const ownRow = useSharedValue(0);
+  const viewsHeight = heights?.views ?? ownViews;
+  const rowHeight = heights?.row ?? ownRow;
+  const sheetUp = open || flareOpen;
+  const wasSheetUp = useRef(sheetUp);
+  if (wasSheetUp.current && !sheetUp) sheetGoneAt.current = Date.now();
+  wasSheetUp.current = sheetUp;
+  /** Bumped by every answer and correction: the mascot reacts once to each,
+   * never again for coming back to Home. */
+  const [reaction, setReaction] = useState(0);
+  /** A fresh answer waiting to be marked (confetti for a day with no pain)
+   * once the answer has landed. */
+  const celebrate = useRef<boolean | null>(null);
+  const onLoggedRef = useRef(onLogged);
+  onLoggedRef.current = onLogged;
+
   useEffect(() => {
-    if (target === view) return undefined;
-    const wait = crossing.current ? PROGRAM_MS : 0;
-    crossing.current = false;
-    // Two timers rather than the animation's own callback, so the swap
-    // happens on time whatever becomes of the fade.
-    const out = setTimeout(() => {
-      viewIn.value = withTiming(0, {
-        duration: VIEW_OUT_MS,
-        easing: Easing.in(Easing.cubic),
+    if (target === view || sheetUp) return undefined;
+    const wait = Math.max(0, SHEET_GONE_MS - (Date.now() - sheetGoneAt.current));
+    const timer = setTimeout(() => {
+      // The arriving view is not mounted yet, so starting it from nothing has
+      // nothing on screen to touch; the leaving one keeps its value.
+      if (target === 'summary') summaryP.value = 0;
+      else questionP.value = 0;
+      // The new view's height is held until the cross-dissolve starts, so the
+      // block does not begin to shrink (clipping the view still leaving)
+      // before the arriving one has begun to show.
+      swapping.current = true;
+      setLeaving(view);
+      setView(target);
+    }, wait);
+    return () => clearTimeout(timer);
+  }, [target, view, sheetUp, summaryP, questionP]);
+
+  useEffect(() => {
+    if (leaving == null) return undefined;
+    swapping.current = false;
+    if (heldHeight.current != null) {
+      viewsHeight.value = withTiming(heldHeight.current, {
+        duration: HEIGHT_MS,
+        easing: HEIGHT_EASING,
         reduceMotion: ReduceMotion.System,
       });
-    }, wait);
-    const swap = setTimeout(() => setView(target), wait + VIEW_OUT_MS);
-    return () => {
-      clearTimeout(out);
-      clearTimeout(swap);
-    };
-  }, [target, view, viewIn]);
+      heldHeight.current = null;
+    }
+    const arriving = view === 'summary' ? summaryP : questionP;
+    const going = view === 'summary' ? questionP : summaryP;
+    arriving.value = withTiming(1, { duration: ENTER_MS, easing: ENTER_EASING, reduceMotion: ReduceMotion.System });
+    going.value = withTiming(0, { duration: EXIT_MS, easing: EXIT_EASING, reduceMotion: ReduceMotion.System });
+    const done = setTimeout(() => setLeaving(null), Math.max(ENTER_MS, EXIT_MS) + 40);
+    return () => clearTimeout(done);
+  }, [leaving, view, summaryP, questionP, viewsHeight]);
+
+  /** The mascot's reaction has played: the day's first answer is celebrated
+   * on that beat, from where he is, rather than under the change. */
+  const onReacted = (origin?: ConfettiOrigin) => {
+    if (celebrate.current == null) return;
+    const painless = celebrate.current;
+    celebrate.current = null;
+    onLoggedRef.current?.(painless, origin);
+  };
+  const transitioning = leaving != null;
+
+  /**
+   * The block's own height, eased to whatever its contents now measure.
+   *
+   * Without it, the question (tall) and the answer (short) traded places in
+   * one frame and everything under the block jumped by the difference. Now
+   * the contents are measured where they lie, the block's height glides to
+   * them, and what does not fit yet is clipped (the clip reaches into the page
+   * gutters, so the tipped glass cards keep their corners). Home's column
+   * reads the same value, so the list and everything below move with it.
+   */
+  const [measured, setMeasured] = useState(false);
+  const lastHeight = useRef(0);
+  const onViews = (event: LayoutChangeEvent) => {
+    const next = event.nativeEvent.layout.height;
+    if (Math.abs(next - lastHeight.current) < 0.5) return;
+    const initial = lastHeight.current === 0;
+    lastHeight.current = next;
+    if (!initial && swapping.current) {
+      heldHeight.current = next;
+      return;
+    }
+    viewsHeight.value = initial
+      ? next
+      : withTiming(next, { duration: HEIGHT_MS, easing: HEIGHT_EASING, reduceMotion: ReduceMotion.System });
+    if (initial) setMeasured(true);
+  };
+  const onRow = (event: LayoutChangeEvent) => {
+    rowHeight.value = event.nativeEvent.layout.height;
+  };
+  // The clip reaches past the views on every side by its bleed (the tipped
+  // cards, his hop), so its own box is their height plus that.
+  const heightStyle = useAnimatedStyle(() => ({ height: viewsHeight.value + CLIP_BLEED_Y * 2 }));
+  // Every style of a layer carries the same properties, so a view that goes
+  // from arriving to leaving (or back, interrupted) never keeps a value from
+  // the style it had before.
+  const summaryStyle = useAnimatedStyle(() => ({
+    opacity: summaryP.value,
+    transform: [{ translateY: (1 - summaryP.value) * RISE }, { scale: 0.98 + 0.02 * summaryP.value }],
+  }));
+  const questionStyle = useAnimatedStyle(() => ({
+    transform: [{ translateY: (1 - questionP.value) * RISE }, { scale: 0.98 + 0.02 * questionP.value }],
+  }));
+  const veil = useAnimatedStyle(() => ({ opacity: 1 - questionP.value }));
+  // The lines under the answer card arrive a beat after it, on its clock.
+  const ackStyle = useAnimatedStyle(() => ({
+    opacity: interpolate(summaryP.value, [0.35, 0.85], [0, 1], 'clamp'),
+  }));
+  const flareRowStyle = useAnimatedStyle(() => ({
+    opacity: interpolate(summaryP.value, [0.5, 1], [0, 1], 'clamp'),
+    transform: [{ translateY: interpolate(summaryP.value, [0.5, 1], [10, 0], 'clamp') }],
+  }));
+  const buttonIn = useSharedValue(0);
+  const hasPick = selected != null;
   useEffect(() => {
-    viewIn.value = withTiming(1, { duration: VIEW_IN_MS, easing: SELECT_EASING, reduceMotion: ReduceMotion.System });
-  }, [view, viewIn]);
-  // The answer has no glass, so it fades. The question's cards are liquid
-  // glass, which an animated opacity on any ancestor kills for good (see
-  // `scrim` in `PainCard`), so it only moves, and a veil in the page colour
-  // over it does the fading.
-  const summaryMotion = useAnimatedStyle(() => ({
-    opacity: viewIn.value,
-    transform: [{ translateY: (1 - viewIn.value) * 16 }, { scale: 0.97 + 0.03 * viewIn.value }],
+    buttonIn.value = withTiming(hasPick ? 1 : 0, {
+      duration: 280,
+      easing: SELECT_EASING,
+      reduceMotion: ReduceMotion.System,
+    });
+  }, [hasPick, buttonIn]);
+  // No glass in the button, so it may fade.
+  const buttonStyle = useAnimatedStyle(() => ({
+    opacity: buttonIn.value,
+    transform: [{ translateY: (1 - buttonIn.value) * 10 }],
   }));
-  const questionMotion = useAnimatedStyle(() => ({
-    transform: [{ translateY: (1 - viewIn.value) * 16 }, { scale: 0.97 + 0.03 * viewIn.value }],
-  }));
-  const veil = useAnimatedStyle(() => ({ opacity: 1 - viewIn.value }));
-  const showingSummary = view === 'summary' && checkIn != null;
   const focused = useIsFocused();
   /** The red-flag check, behind "Something new?". */
   const [safety, setSafety] = useState(false);
@@ -234,6 +380,14 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    * Picking a card again clears it.
    */
   const [logged, setLogged] = useState(false);
+  /** The button's words, held from the moment the answer is in until the
+   * question has gone: saving ends the edit, and the label flipped to "Log
+   * today's check-in" on its way out. */
+  const labelRef = useRef('');
+  if (target === 'question') {
+    labelRef.current = editing ? t('home.checkInUpdate') : logged ? t('home.checkInAgain') : t('home.logCheckIn');
+  }
+  const buttonLabel = labelRef.current;
   /**
    * What the app says back, once the answer is in.
    *
@@ -244,14 +398,6 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    * including "No pain today", which never opens the sheet at all.
    */
   const [ack, setAck] = useState<string | null>(null);
-  const ackTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(
-    () => () => {
-      if (ackTimer.current != null) clearTimeout(ackTimer.current);
-    },
-    [],
-  );
 
   /**
    * Say it after the swap, not during it.
@@ -262,7 +408,10 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    * motion is paid off the height can grow freely.
    */
   const acknowledge = (score: number, text: string = t(acknowledgement(score))) => {
-    ackTimer.current = setTimeout(() => setAck(text), PROGRAM_MS);
+    // Set now, while the question is still up: it is drawn only by the answer,
+    // which arrives after the crossing with it already in place, so it never
+    // appears later under it and pushes the rows down.
+    setAck(text);
   };
 
   /**
@@ -280,8 +429,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
    */
   const record = (score: number, zones: readonly LegZone[], said?: string) => {
     const correction = checkInOn(currentDay()) != null;
-    // The day's first answer sends the block under the tasks: wait for it.
-    crossing.current = !correction;
+    setReaction((n) => n + 1);
     logPain(currentDay(), score, zones);
     // The morning's answer is what moves the plan a step back or lets it return.
     settleOffset(currentDay());
@@ -292,7 +440,8 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
   /** "Edit": back to the question with today's answer picked. */
   const edit = () => {
     Haptics.selectionAsync();
-    setAck(null);
+    // The reply line stays with the answer as it leaves: cleared here it took
+    // its height with it, and the block shrank a beat before it grew.
     setSelected(checkIn != null && checkIn.score > 0 ? 'pain' : 'nopain');
     setLogged(false);
     setEditing(true);
@@ -329,8 +478,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
       if (answeredToday) return;
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       setSelected('nopain');
-      setLogged(true);
-      onLogged?.(true);
+      celebrate.current = true;
       record(0, [], t('widget.ackNoPain'));
     } else if (checkin === 'hurts') {
       if (answeredToday) {
@@ -348,130 +496,152 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkin, revealed]);
 
+  const summaryView =
+    checkIn == null ? null : (
+      <View {...REPLAY_MASK} style={styles.block}>
+        <CheckInSummary
+          score={checkIn.score}
+          zones={(checkIn.zones ?? []) as LegZone[]}
+          flareScore={flare?.score ?? null}
+          paused={!focused || open || flareOpen || safety || covered || transitioning}
+          reaction={reaction}
+          onReacted={onReacted}
+          onEdit={edit}
+        />
+        {ack != null && (
+          <Animated.Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }, ackStyle]}>
+            {ack}
+          </Animated.Text>
+        )}
+        <Animated.View style={flareRowStyle}>
+          <FlareRow onPress={() => setFlareOpen(true)} />
+        </Animated.View>
+      </View>
+    );
+
+  const questionView = (
+    <View style={styles.block} {...REPLAY_MASK}>
+      <View style={styles.head}>
+        <Text style={[styles.kicker, { color: meter.label }]}>
+          {morning ? t('home.checkInKickerMorning') : t('home.checkInKickerDay')}
+        </Text>
+        <Text accessibilityRole="header" style={[styles.question, { color: palette[scheme].foreground }]}>
+          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+        </Text>
+      </View>
+
+      <View style={glass.stage} accessibilityRole="radiogroup">
+        {CARDS.map((card) => (
+          <PainCard
+            key={card.key}
+            card={card}
+            selected={selected === card.key}
+            // Nothing is chosen when the screen arrives, so both sit at full
+            // strength: dimming everything would read as disabled.
+            dimmed={selected != null && selected !== card.key}
+            // Not locked once answered. The cards stay live so a second
+            // check-in can be started from the same place as the first.
+            locked={false}
+            visible={focused && !open && !safety && !covered && !transitioning}
+            onPress={() => {
+              Haptics.selectionAsync();
+              setSelected(card.key);
+              // Re-opens the question. Without this the button would still
+              // read "Check in again" after a fresh choice had been made.
+              setLogged(false);
+            }}
+          />
+        ))}
+      </View>
+
+      {/* Its room is kept from the start and it fades up into it once a
+              tile is picked: appearing, it used to push everything under it
+              down. Disabled and visible, it was a big grey slab under two
+              answers that already read as the thing to tap. */}
+      <Animated.View style={buttonStyle} pointerEvents={selected != null ? 'auto' : 'none'}>
+        <PrimaryButton
+          pressHaptic={false}
+          label={buttonLabel}
+          onPress={() => {
+            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+            // "No pain today" is already the whole answer. Opening a slider to
+            // ask how much of the nothing there was would be the app refusing
+            // to take yes for an answer.
+            if (selected === 'nopain') {
+              // Confetti once, for the day's first answer, as it lands: a
+              // correction is not a second good morning.
+              if (!editing) celebrate.current = true;
+              // A real zero, not an absent reading. The engine treats null as
+              // "they have not been asked yet" and would go on adapting today
+              // off yesterday's number; "no pain today" is an answer and has to
+              // be stored as one.
+              // No zones: nothing hurts, so there is nowhere to point at.
+              record(0, []);
+              return;
+            }
+            setOpen(true);
+          }}
+        />
+      </Animated.View>
+
+      {editing && (
+        <Pressable
+          accessibilityRole="button"
+          hitSlop={8}
+          onPress={() => {
+            Haptics.selectionAsync();
+            setEditing(false);
+          }}
+          style={({ pressed }) => [styles.cancel, pressed && { opacity: 0.5 }]}>
+          <Text style={[styles.cancelText, { color: meter.caption }]}>{t('common.cancel')}</Text>
+        </Pressable>
+      )}
+    </View>
+  );
+
   return (
     <>
       <View style={styles.wrap}>
-        {/* Keyed, so each is a fresh view: handing one view the two styles in
-            turn left the question at the opacity the answer had faded to. */}
-        <Animated.View
-          key={showingSummary ? 'summary' : 'question'}
-          style={showingSummary ? summaryMotion : questionMotion}>
-        {showingSummary ? (
-          <View {...REPLAY_MASK} style={styles.block}>
-            <CheckInSummary
-              score={checkIn.score}
-              zones={(checkIn.zones ?? []) as LegZone[]}
-              flareScore={flare?.score ?? null}
-              paused={!focused || open || flareOpen || safety || covered}
-              onEdit={edit}
-            />
-            {ack != null && (
-              <Animated.Text
-                key={ack}
-                entering={FadeIn.duration(360).reduceMotion(ReduceMotion.System)}
-                accessibilityLiveRegion="polite"
-                style={[styles.ack, { color: meter.caption }]}>
-                {ack}
-              </Animated.Text>
-            )}
-            <Animated.View entering={FadeInDown.delay(160).duration(420).easing(SELECT_EASING).reduceMotion(ReduceMotion.System)}>
-              <FlareRow onPress={() => setFlareOpen(true)} />
-            </Animated.View>
+        <Animated.View style={[styles.clip, measured && heightStyle]}>
+          <View onLayout={onViews}>
+            {/* Question first and answer second, each keyed by what it is, so a
+                view keeps its instance when it turns from arriving to leaving. */}
+            {(['question', 'summary'] as const).map((kind) => {
+              if (kind !== view && kind !== leaving) return null;
+              if (kind === 'summary' && checkIn == null) return null;
+              const out = kind === leaving;
+              if (kind === 'summary') {
+                return (
+                  <Animated.View
+                    key="summary"
+                    style={[styles.summaryLayer, out && styles.leaving, summaryStyle]}
+                    pointerEvents={out ? 'none' : 'auto'}>
+                    {summaryView}
+                  </Animated.View>
+                );
+              }
+              return (
+                <Animated.View
+                  key="question"
+                  style={[out && styles.leaving, questionStyle]}
+                  pointerEvents={out ? 'none' : 'auto'}>
+                  {questionView}
+                  {/* Reaches past the tipped cards' corners on every side. */}
+                  <Animated.View
+                    pointerEvents="none"
+                    style={[styles.veil, { backgroundColor: palette[scheme].background }, veil]}
+                  />
+                </Animated.View>
+              );
+            })}
           </View>
-        ) : (
-        <View style={styles.block} {...REPLAY_MASK}>
-          <View style={styles.head}>
-            <Text style={[styles.kicker, { color: meter.label }]}>
-              {morning ? t('home.checkInKickerMorning') : t('home.checkInKickerDay')}
-            </Text>
-            <Text accessibilityRole="header" style={[styles.question, { color: palette[scheme].foreground }]}>
-              {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
-            </Text>
-          </View>
-
-          <View style={glass.stage} accessibilityRole="radiogroup">
-            {CARDS.map((card) => (
-              <PainCard
-                key={card.key}
-                card={card}
-                selected={selected === card.key}
-                // Nothing is chosen when the screen arrives, so both sit at full
-                // strength: dimming everything would read as disabled.
-                dimmed={selected != null && selected !== card.key}
-                // Not locked once answered. The cards stay live so a second
-                // check-in can be started from the same place as the first.
-                locked={false}
-                visible={focused && !open && !safety && !covered}
-                onPress={() => {
-                  Haptics.selectionAsync();
-                  setSelected(card.key);
-                  // Re-opens the question. Without this the button would still
-                  // read "Check in again" after a fresh choice had been made.
-                  setLogged(false);
-                }}
-              />
-            ))}
-          </View>
-
-          {/* Only once a tile is picked. Disabled, it was a big grey slab under
-              two answers that already read as the thing to tap. */}
-          {selected != null && (
-            <Animated.View entering={FadeInDown.duration(300).easing(SELECT_EASING).reduceMotion(ReduceMotion.System)}>
-            <PrimaryButton
-              label={editing ? t('home.checkInUpdate') : logged ? t('home.checkInAgain') : t('home.logCheckIn')}
-              onPress={() => {
-                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-                // "No pain today" is already the whole answer. Opening a slider to
-                // ask how much of the nothing there was would be the app refusing
-                // to take yes for an answer.
-                if (selected === 'nopain') {
-                  setLogged(true);
-                  // Confetti once, for the day's first answer: a correction is
-                  // not a second good morning.
-                  if (!editing) onLogged?.(true);
-                  // A real zero, not an absent reading. The engine treats null as
-                  // "they have not been asked yet" and would go on adapting today
-                  // off yesterday's number; "no pain today" is an answer and has to
-                  // be stored as one.
-                  // No zones: nothing hurts, so there is nowhere to point at.
-                  record(0, []);
-                  return;
-                }
-                setOpen(true);
-              }}
-            />
-            </Animated.View>
-          )}
-
-          {editing && (
-            <Pressable
-              accessibilityRole="button"
-              hitSlop={8}
-              onPress={() => {
-                Haptics.selectionAsync();
-                setEditing(false);
-              }}
-              style={({ pressed }) => [styles.cancel, pressed && { opacity: 0.5 }]}>
-              <Text style={[styles.cancelText, { color: meter.caption }]}>{t('common.cancel')}</Text>
-            </Pressable>
-          )}
-
-          {ack != null && (
-            <Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }]}>
-              {ack}
-            </Text>
-          )}
-        </View>
-        )}
-        {!showingSummary && (
-          <Animated.View
-            pointerEvents="none"
-            style={[StyleSheet.absoluteFill, { backgroundColor: palette[scheme].background }, veil]}
-          />
-        )}
         </Animated.View>
 
-        <SomethingNewRow onPress={() => setSafety(true)} />
+        {/* Outside the clip, so it rides on the views' eased height instead of
+            jumping to wherever their new height puts it. */}
+        <View onLayout={onRow}>
+          <SomethingNewRow onPress={() => setSafety(true)} />
+        </View>
       </View>
 
       <SafetySheet visible={safety} onClose={() => setSafety(false)} />
@@ -482,8 +652,7 @@ export function PainCheck({ onLogged, covered = false, onSheet }: PainCheckProps
           initialScore={editing && checkIn != null && checkIn.score > 0 ? checkIn.score : undefined}
           initialZones={editing ? ((checkIn?.zones ?? []) as LegZone[]) : undefined}
           onSaved={(score, zones) => {
-            setLogged(true);
-            if (!editing) onLogged?.(false);
+            if (!editing) celebrate.current = false;
             record(score, zones);
           }}
         />
@@ -574,7 +743,12 @@ function acknowledgement(score: number): Key {
  * the question decorative.
  */
 function reliefDay(): ProgramDay {
-  return { ...PROGRAM[TODAY_INDEX], kind: 'recovery', minutes: 3, checkpoint: false };
+  return {
+    ...PROGRAM[TODAY_INDEX],
+    kind: 'recovery',
+    minutes: 3,
+    checkpoint: false,
+  };
 }
 
 /**
@@ -610,8 +784,7 @@ function SomethingNewRow({ onPress }: { onPress: () => void }) {
         Haptics.selectionAsync();
         onPress();
       }}
-      style={({ pressed }) => [styles.newRow, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}
-    >
+      style={({ pressed }) => [styles.newRow, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}>
       <View style={[styles.newTile, { backgroundColor: meter.iconTile }]}>
         <FluentIcon name="bandage" size={26} />
       </View>
@@ -643,12 +816,18 @@ function CheckInSummary({
   zones,
   flareScore,
   paused,
+  reaction,
+  onReacted,
   onEdit,
 }: {
   score: number;
   zones: readonly LegZone[];
   flareScore: number | null;
   paused: boolean;
+  /** Bumped by each answer: he reacts once to each, not to Home reopening. */
+  reaction: number;
+  /** He has reacted, from here on the screen (for the confetti). */
+  onReacted: (origin?: ConfettiOrigin) => void;
   onEdit: () => void;
 }) {
   const scheme = useColorScheme();
@@ -656,17 +835,38 @@ function CheckInSummary({
   const meter = meterColors[scheme];
   const t = useT();
   const where = zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin'));
-  // He answers the answer as it lands: a hop for a day with no pain, a small
-  // nod for a sore one (never a cheer at a number). Again on a correction.
+  // He answers the answer once it has landed: a hop for a day with no pain, a
+  // small nod for a sore one (never a cheer at a number). Once per answer or
+  // correction; Home reopening, a sheet closing or a cold start play nothing.
   const mascot = useRef<MascotHandle>(null);
+  const art = useRef<View>(null);
+  const played = useRef(reaction);
+  const reactedRef = useRef(onReacted);
+  reactedRef.current = onReacted;
+  const { width, height } = useWindowDimensions();
   useEffect(() => {
-    if (paused) return undefined;
-    const timer = setTimeout(() => mascot.current?.play(score === 0 ? 'happy' : 'nod'), SUMMARY_SHOT_MS);
+    if (paused || reaction === played.current) return undefined;
+    const timer = setTimeout(() => {
+      played.current = reaction;
+      mascot.current?.play(score === 0 ? 'happy' : 'nod');
+      const node = art.current;
+      if (node == null) {
+        reactedRef.current();
+        return;
+      }
+      node.measureInWindow((x, y, w, h) => {
+        reactedRef.current(w > 0 ? { x: (x + w / 2) / width, y: (y + h / 3) / height } : undefined);
+      });
+    }, SUMMARY_SHOT_MS);
     return () => clearTimeout(timer);
-  }, [score, paused]);
+  }, [reaction, paused, score, width, height]);
   return (
     <View style={[styles.summary, { backgroundColor: colors.card }]}>
-      <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.summaryArt}>
+      <View
+        ref={art}
+        accessibilityElementsHidden
+        importantForAccessibility="no-hide-descendants"
+        style={styles.summaryArt}>
         <CardMascot
           ref={mascot}
           rig={score === 0 ? handsUpRig : painRig}
@@ -685,12 +885,7 @@ function CheckInSummary({
           </Text>
         )}
         {flareScore != null && (
-          <Animated.Text
-            key={flareScore}
-            entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
-            style={[styles.summaryLine, { color: meter.caption }]}>
-            {t('home.flareLast', { score: flareScore })}
-          </Animated.Text>
+          <Text style={[styles.summaryLine, { color: meter.caption }]}>{t('home.flareLast', { score: flareScore })}</Text>
         )}
       </View>
       <Pressable
@@ -757,8 +952,7 @@ function SomethingNew({ onPress }: { onPress: () => void }) {
         onPress();
       }}
       hitSlop={8}
-      style={({ pressed }) => [styles.somethingNew, pressed && { opacity: 0.5 }]}
-    >
+      style={({ pressed }) => [styles.somethingNew, pressed && { opacity: 0.5 }]}>
       <Text style={[styles.somethingNewText, { color: meter.caption }]}>{t('home.somethingNew')}</Text>
     </Pressable>
   );
@@ -1031,14 +1225,14 @@ function PainCard({
    */
   const style = useAnimatedStyle(() => {
     const rest = left ? -TILT : TILT;
-    const angle =
-      interpolate(chosen.value, [0, 1], [rest, 0]) +
-      interpolate(faded.value, [0, 1], [0, left ? -2 : 2]);
+    const angle = interpolate(chosen.value, [0, 1], [rest, 0]) + interpolate(faded.value, [0, 1], [0, left ? -2 : 2]);
     return {
       transform: [
         { rotate: `${angle}deg` },
         { translateY: interpolate(chosen.value, [0, 1], [0, -6]) },
-        { scale: 1 + chosen.value * 0.04 - faded.value * 0.04 - pressed.value * 0.02 },
+        {
+          scale: 1 + chosen.value * 0.04 - faded.value * 0.04 - pressed.value * 0.02,
+        },
       ],
     };
   });
@@ -1122,12 +1316,7 @@ function PainCard({
             glass. See `scrim` above for why this is not an opacity. */}
         <Animated.View
           pointerEvents="none"
-          style={[
-            StyleSheet.absoluteFill,
-            glass.shape,
-            { backgroundColor: colors.background },
-            scrim,
-          ]}
+          style={[StyleSheet.absoluteFill, glass.shape, { backgroundColor: colors.background }, scrim]}
         />
       </Pressable>
     </Animated.View>
@@ -1145,7 +1334,25 @@ function CardMascot({ paused = false, ...props }: MascotProps) {
 }
 
 const styles = StyleSheet.create({
-  wrap: { gap: 12 },
+  wrap: { gap: CHECK_IN_GAP },
+  clip: {
+    overflow: 'hidden',
+    marginHorizontal: -CLIP_BLEED,
+    paddingHorizontal: CLIP_BLEED,
+    marginVertical: -CLIP_BLEED_Y,
+    paddingVertical: CLIP_BLEED_Y,
+  },
+  /** The answer over the question while they cross: it is the one that fades. */
+  summaryLayer: { zIndex: 2 },
+  /** The view on its way out, laid over the place of the one arriving. */
+  leaving: { position: 'absolute', top: 0, left: 0, right: 0 },
+  veil: {
+    position: 'absolute',
+    top: -12,
+    bottom: -12,
+    left: -CLIP_BLEED,
+    right: -CLIP_BLEED,
+  },
   block: { gap: 16 },
   card: {
     borderRadius: CARD_RADIUS,
@@ -1228,7 +1435,13 @@ const styles = StyleSheet.create({
   summaryCopy: { flex: 1, gap: 3 },
   summaryTitle: fonts.heavy(19, -0.4),
   summaryLine: { ...fonts.medium(14, -0.1), lineHeight: 18 },
-  editChip: { height: 34, paddingHorizontal: 14, borderRadius: 17, alignItems: 'center', justifyContent: 'center' },
+  editChip: {
+    height: 34,
+    paddingHorizontal: 14,
+    borderRadius: 17,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   editText: fonts.bold(14, -0.2),
   cancel: { alignSelf: 'center', paddingVertical: 4 },
   cancelText: fonts.semibold(15, -0.2),
@@ -1271,10 +1484,20 @@ const styles = StyleSheet.create({
   },
   /** Takes the slack, so the wedge sits against the button on a tall phone and
    * gives way before anything else on a short one. */
-  scale: { alignSelf: 'stretch', justifyContent: 'center', marginTop: 4, marginBottom: 12 },
+  scale: {
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+    marginTop: 4,
+    marginBottom: 12,
+  },
   /** Claims what is left after the readout and the scale, and hands it to the
    * drawing — the same measure-don't-guess the watch-sync step needed. */
-  legStage: { flex: 1, alignSelf: 'stretch', alignItems: 'center', marginTop: 6 },
+  legStage: {
+    flex: 1,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    marginTop: 6,
+  },
   zoneLine: {
     marginTop: 6,
     ...fonts.medium(13, -0.1),

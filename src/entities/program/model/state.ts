@@ -564,6 +564,16 @@ function entriesOf(log: DayLog | undefined): PainEntry[] {
   return [];
 }
 
+/** Development only (`?resetCheckIn`): today's check-in unanswered again,
+ * its flares kept, so the first answer of a day can be tried over. */
+export function devClearCheckIn(dayNumber: number): void {
+  if (!__DEV__) return;
+  const existing = logs[dayNumber];
+  if (existing == null) return;
+  const flares = entriesOf(existing).filter((entry) => entry.kind === 'flare');
+  writeLog(dayNumber, { painEntries: flares, painMorning: null, painZones: [] });
+}
+
 /** The day's check-in, or null when it has not been answered. */
 export function checkInOn(dayNumber: number): PainEntry | null {
   return entriesOf(logs[dayNumber]).find((entry) => entry.kind !== 'flare') ?? null;

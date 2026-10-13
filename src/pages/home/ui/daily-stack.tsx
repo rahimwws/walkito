@@ -1,108 +1,106 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { useRef, type ReactNode } from 'react';
+import { StyleSheet, type LayoutChangeEvent } from 'react-native';
 import Animated, {
+  Easing,
   ReduceMotion,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
+  type DerivedValue,
+  type SharedValue,
 } from 'react-native-reanimated';
 
-import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
-
-/** Air between the two blocks, and part of the distance each travels. */
+/** Air between the two blocks. */
 const GAP = 34;
 
-/**
- * How far the descending block shrinks on its way past the other.
- *
- * The two have to cross, and for the length of the crossing they occupy the
- * same points on the screen — there is no arrangement of two vertical
- * translations that avoids it. Fading one out is not available: the check-in
- * holds a GlassView, and an animated opacity on an ancestor of one kills the
- * material for the life of the screen. So the one going down gives up a little
- * size and passes behind, which is what turns an overlap into a depth cue
- * rather than a collision.
- */
-const SINK = 0.96;
+/** A block changing height (a task done, the check-in answered): the column
+ * follows it rather than jumping to it. */
+const HEIGHT_MS = 420;
+const HEIGHT_EASING = Easing.bezier(0.33, 1, 0.68, 1);
 
 export type DailyStackProps = {
-  /** The block that starts on top. */
+  /** The check-in. */
   first: ReactNode;
-  /** The block that starts underneath and rises when `swapped` turns true. */
+  /** Today's tasks, under it. */
   second: ReactNode;
-  swapped: boolean;
+  /**
+   * The first block's height, when it animates its own (the check-in does:
+   * `PainCheck`'s `heights`, added up by Home). Read on the UI thread in the
+   * same frame the block draws at that height, so the list under it can never
+   * be a frame behind.
+   * Without it the block is measured, and the list glides to each new
+   * measurement.
+   */
+  firstHeight?: SharedValue<number> | DerivedValue<number>;
 };
 
 /**
- * Two blocks that trade places.
+ * The check-in and today's tasks, one under the other, with every change of
+ * height eased.
  *
- * The check-in is the most important thing on Home until it is answered, and
- * the moment it is answered it becomes the least — it is a question with no
- * question left in it, sitting above the work it was asked about. So it goes
- * down and the list comes up, once, on the same curve the rest of the app
- * moves on.
- *
- * Both blocks stay in normal flow and move by transform alone, so the column
- * keeps its full height throughout and nothing below the pair ever shifts.
+ * **No change of height jumps.** The two used to sit in normal flow, so a
+ * block that grew or shrank (the question becoming the day's answer, a task
+ * done) moved everything under it in one frame. They also used to trade
+ * places once the check-in was answered, the whole block of glass cards
+ * sinking under the list while its rows slid over it; that crossing, and the
+ * positions held by transforms read from `onLayout` a frame late, were most of
+ * what made Home jump and stutter. Now the answered check-in folds into a
+ * short card where it is, and both blocks are placed from heights held on the
+ * UI thread: the list sits at the check-in's (animated) height, and the
+ * column's own height glides, so whatever is below the pair moves smoothly
+ * too.
  */
-export function DailyStack({ first, second, swapped }: DailyStackProps) {
-  const [firstHeight, setFirstHeight] = useState(0);
-  const [secondHeight, setSecondHeight] = useState(0);
+export function DailyStack({ first, second, firstHeight }: DailyStackProps) {
+  const measuredFirst = useSharedValue(0);
+  const secondHeight = useSharedValue(0);
+  const lastFirst = useRef(0);
+  const lastSecond = useRef(0);
 
-  const t = useSharedValue(0);
+  /** A measured height: taken as is the first time, glided to after. */
+  const follow = (value: SharedValue<number>, last: { current: number }) => (event: LayoutChangeEvent) => {
+    const height = event.nativeEvent.layout.height;
+    if (Math.abs(height - last.current) < 0.5) return;
+    const initial = last.current === 0;
+    last.current = height;
+    value.value = initial
+      ? height
+      : withTiming(height, { duration: HEIGHT_MS, easing: HEIGHT_EASING, reduceMotion: ReduceMotion.System });
+  };
 
-  useEffect(() => {
-    t.value = withTiming(swapped ? 1 : 0, {
-      duration: PROGRAM_MS,
-      easing: PROGRAM_EASING,
-      reduceMotion: ReduceMotion.System,
-    });
-  }, [t, swapped]);
+  const below = useAnimatedStyle(() => {
+    const height = firstHeight != null ? firstHeight.value : measuredFirst.value;
+    return { transform: [{ translateY: height + GAP }] };
+  });
 
-  // Each travels by exactly the other's height plus the gap, which is what puts
-  // them in each other's resting place rather than merely near it.
-  const top = useAnimatedStyle(() => ({
-    transform: [
-      { translateY: t.value * (secondHeight + GAP) },
-      // A bell, not a ramp. The sink exists only for the crossing and has to be
-      // fully paid back by the end: held at 0.96, the block would rest four per
-      // cent small — seven points inside the page gutter every other element on
-      // this screen is flush with, with a primary button narrower than every
-      // other primary in the app, and a permanent non-integral transform on an
-      // ancestor of two GlassViews resampling them off the pixel grid for the
-      // life of the screen.
-      { scale: 1 - (1 - SINK) * Math.sin(Math.PI * t.value) },
-    ],
-  }));
-
-  const bottom = useAnimatedStyle(() => ({
-    transform: [{ translateY: -t.value * (firstHeight + GAP) }],
-  }));
+  const column = useAnimatedStyle(() => {
+    const height = firstHeight != null ? firstHeight.value : measuredFirst.value;
+    return { height: height + GAP + secondHeight.value };
+  });
 
   return (
-    <View style={styles.root}>
+    <Animated.View style={column}>
       <Animated.View
-        style={top}
-        onLayout={(event) => setFirstHeight(event.nativeEvent.layout.height)}>
+        style={[styles.block, styles.first]}
+        onLayout={firstHeight == null ? follow(measuredFirst, lastFirst) : undefined}>
         {first}
       </Animated.View>
-
-      {/* Above its neighbour in the stacking order, so the block arriving is the
-          one you see during the crossing. */}
-      <Animated.View
-        style={[styles.rising, bottom]}
-        onLayout={(event) => setSecondHeight(event.nativeEvent.layout.height)}>
+      <Animated.View style={[styles.block, below]} onLayout={follow(secondHeight, lastSecond)}>
         {second}
       </Animated.View>
-    </View>
+    </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
-  root: {
-    gap: GAP,
+  block: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
   },
-  rising: {
+  /** Over the list: the check-in's tipped cards may reach a little past its
+   * foot, and they belong in front. */
+  first: {
     zIndex: 2,
   },
 });

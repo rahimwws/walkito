@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { previewNotification } from '@/entities/notifications';
+import { currentDay, devClearCheckIn } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
 import {
   devPreviewComeback,
@@ -48,6 +49,8 @@ const OFFER_ENDED_PARAM = /[?&]previewOfferEnded\b/;
  * `?previewTour=untested` as somebody with no test on record meets it;
  * `?previewTour=done` ends it. */
 const TOUR_PARAM = /[?&]previewTour(?:=(\w+))?/;
+/** `walkito.dev://?resetCheckIn` leaves today's check-in unanswered again. */
+const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
 /** `walkito.dev://?previewOfferWall` raises the offer after the first test
  * over Home (`=off` to drop it); add `previewHomeOffer` for the trial stage. */
 const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
@@ -100,6 +103,7 @@ export function useDevLinks(): void {
         if (HOME_OFFER_PARAM.test(url)) devPreviewHomeOffer();
         if (COMEBACK_PARAM.test(url)) devPreviewComeback();
         if (OFFER_ENDED_PARAM.test(url)) devPreviewOfferEnded();
+        if (RESET_CHECKIN_PARAM.test(url)) devClearCheckIn(currentDay());
         const wall = WALL_PARAM.exec(url);
         if (wall != null) devPreviewOfferWall(wall[1] !== 'off');
         const tour = TOUR_PARAM.exec(url);

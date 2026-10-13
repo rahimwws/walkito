@@ -32,7 +32,7 @@ import {
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useDevOfferWall } from '@/features/home-tour';
-import { useHomeWidget } from '@/features/home-widget';
+import { HomeWidgetSync } from '@/features/home-widget';
 import { SessionDonePreview } from '@/widgets/session-player';
 import { useFirstTestDone } from '@/entities/program';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
@@ -224,8 +224,6 @@ function RootLayoutInner() {
   useNotificationScheduler();
   // A `$screen` per route, for the paths and retention charts in PostHog.
   useScreenTracking();
-  // The home-screen widget: reads back answers given on it, then redraws it.
-  useHomeWidget(onboarded);
 
   // Interactive once the fonts have resolved and the first real screen has had
   // a frame to paint — the end of the `tti` measurement in EAS Observe.
@@ -409,6 +407,10 @@ function RootLayoutInner() {
                   onboarding, where the first minutes are not the moment to ask
                   for a restart. Its own component so expo-updates' progress
                   events re-render it rather than this layout. */}
+              {/* The home-screen widget: reads back answers given on it, then
+                  redraws it. A leaf, so a check-in re-renders it alone rather
+                  than this whole layout. */}
+              <HomeWidgetSync enabled={onboarded} />
               {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
               {/* The offer after the free first test, over a blurred Home. */}
               {(fontsReady || fontError) && <OfferWall visible={offerWall} />}

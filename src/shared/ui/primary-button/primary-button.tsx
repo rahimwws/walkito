@@ -51,6 +51,9 @@ export type PrimaryButtonProps = {
    */
   tint?: { fill: string; label: string };
   style?: StyleProp<ViewStyle>;
+  /** Off where the press sets off a feedback of its own (a success buzz on
+   * release), so one tap is not felt twice. On by default. */
+  pressHaptic?: boolean;
 };
 
 /**
@@ -69,6 +72,7 @@ export function PrimaryButton({
   disabled = false,
   tint,
   style,
+  pressHaptic = true,
 }: PrimaryButtonProps) {
   const scheme = useColorScheme();
   const theme = tint ?? primaryButton[scheme];
@@ -85,7 +89,7 @@ export function PrimaryButton({
         accessibilityState={{ disabled }}
         disabled={disabled}
         onPressIn={() => {
-          Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+          if (pressHaptic) Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
           pressed.value = withTiming(1, {
             duration: PRESS_IN_MS,
             easing: Easing.out(Easing.quad),
