@@ -109,7 +109,7 @@ export default function HeelPainRunnersEs() {
       <Prose>
         <section className="shell hero">
           <h1>
-            ¿Dolor de talón
+            ¿Dolor de talón{' '}
             <span>al correr?</span>
           </h1>
           <Byline lang="es" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />

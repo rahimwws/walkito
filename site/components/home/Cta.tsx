@@ -1,6 +1,6 @@
 import './cta.css';
 
-import type { CSSProperties, ReactNode } from 'react';
+import { Fragment, type CSSProperties, type ReactNode } from 'react';
 
 import { InstagramLogo, LinkedInLogo, TikTokLogo, YouTubeLogo } from '@/components/BrandIcons';
 import { GetAppButton } from '@/components/GetApp';
@@ -115,9 +115,13 @@ export function Cta({ lang }: { lang: Lang }) {
             {lines.map((words, l) => (
               <span key={l} className="hcta-line" aria-hidden>
                 {words.map(({ word, w }) => (
-                  <span key={w} className="hcta-word">
-                    <span style={{ '--w': w } as CSSProperties}>{word}</span>
-                  </span>
+                  <Fragment key={w}>
+                    {/* `w` counts across the lines, so the lines are spaced apart too. */}
+                    {w > 0 && ' '}
+                    <span className="hcta-word">
+                      <span style={{ '--w': w } as CSSProperties}>{word}</span>
+                    </span>
+                  </Fragment>
                 ))}
               </span>
             ))}

@@ -109,7 +109,7 @@ export default function HeelPainRunnersRu() {
       <Prose>
         <section className="shell hero">
           <h1>
-            Болит пятка
+            Болит пятка{' '}
             <span>при беге?</span>
           </h1>
           <Byline lang="ru" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />

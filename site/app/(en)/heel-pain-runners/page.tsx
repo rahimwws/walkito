@@ -135,7 +135,7 @@ export default function HeelPainRunners() {
       <Prose>
         <section className="shell hero">
           <h1>
-            Heel pain
+            Heel pain{' '}
             <span>from running?</span>
           </h1>
           <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />

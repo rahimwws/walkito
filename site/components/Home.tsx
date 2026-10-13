@@ -606,9 +606,12 @@ export function Home({ lang }: { lang: Lang }) {
           {/* Each word rises out of its own line box, one after another. */}
           <h2 aria-label={copy.whoH2}>
             {copy.whoH2.split(' ').map((word, w) => (
-              <span key={w} className="rise-word" aria-hidden>
-                <span style={{ '--w': w } as React.CSSProperties}>{word}</span>
-              </span>
+              <Fragment key={w}>
+                {w > 0 && ' '}
+                <span className="rise-word" aria-hidden>
+                  <span style={{ '--w': w } as React.CSSProperties}>{word}</span>
+                </span>
+              </Fragment>
             ))}
           </h2>
           <p className="who-lead">{copy.whoLead}</p>
@@ -726,6 +729,10 @@ export function Home({ lang }: { lang: Lang }) {
  * Sized in globals.css (.hero-title): on wide screens the first line stays
  * whole and the second takes two rows at most; on a phone the longest word
  * fits. In every language. Words joined by a non-breaking space stay one word.
+ *
+ * Real spaces part the words, so the heading's text is the sentence and not
+ * the words run together: search engines read that text, not the aria-label.
+ * globals.css sets the spaces as wide as the gap the design asks for.
  */
 function HeroTitle({ a, b }: { a: string; b: string }) {
   const lines = [a, b].map((line) => line.split(' '));
@@ -742,9 +749,12 @@ function HeroTitle({ a, b }: { a: string; b: string }) {
       {lines.map((line, i) => (
         <span key={i} className="hero-line" aria-hidden>
           {line.map((word, j) => (
-            <span key={j} className="hero-word">
-              <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
-            </span>
+            <Fragment key={j}>
+              {(i > 0 || j > 0) && ' '}
+              <span className="hero-word">
+                <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
+              </span>
+            </Fragment>
           ))}
         </span>
       ))}
