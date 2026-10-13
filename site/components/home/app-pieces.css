@@ -748,3 +748,22 @@
     text-decoration-color: #9e9ea6;
   }
 }
+
+/*
+ * On a phone, the hero's cards drift over the sky (glass-float), so a
+ * backdrop blur under them was recomputed on every frame in Safari. Without
+ * it, a little more fill keeps the same dark glass.
+ */
+@media (hover: none) {
+  .ap-streak {
+    background: rgba(28, 28, 31, 0.8);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .ap-screen {
+    background: rgba(17, 17, 19, 0.95);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}

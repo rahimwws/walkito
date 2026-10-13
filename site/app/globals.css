@@ -1711,48 +1711,90 @@ figcaption {
   mask-image: linear-gradient(180deg, #000 55%, transparent 96%);
 }
 
+/*
+ * Each blob is its own soft-edged gradient, not a solid circle under
+ * filter: blur(80px). The blur looked the same but cost the most of anything on
+ * the page in WebKit: every scroll frame on an iPhone re-composited three
+ * blurred layers the size of the screen (measured in Playwright WebKit, iPhone
+ * 15: 23 frames over 33 ms in one scroll of the home page, 2 without the
+ * page's blurs). The box grows by the blur's reach (160px, two sigmas, a side)
+ * and the stops follow a blurred disk's profile, computed for blur(80px) at
+ * these sizes, so the glow spreads and fades as it did.
+ */
 .sky-blob {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
+  margin: -160px;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--blob) 100%, transparent) 0%,
+    color-mix(in srgb, var(--blob) 96%, transparent) 30%,
+    color-mix(in srgb, var(--blob) 83%, transparent) 45%,
+    color-mix(in srgb, var(--blob) 55%, transparent) 60%,
+    color-mix(in srgb, var(--blob) 24%, transparent) 75%,
+    color-mix(in srgb, var(--blob) 6%, transparent) 90%,
+    transparent 100%
+  );
+}
+
+/* A phone's blobs are a fifth of the size, so the same blur thinned them out
+   far more: the profile there is the blurred small disk's, not the large one's. */
+@media (max-width: 760px) {
+  .sky-blob {
+    background: radial-gradient(
+      closest-side,
+      color-mix(in srgb, var(--blob) 45%, transparent) 0%,
+      color-mix(in srgb, var(--blob) 41%, transparent) 15%,
+      color-mix(in srgb, var(--blob) 33%, transparent) 30%,
+      color-mix(in srgb, var(--blob) 22%, transparent) 45%,
+      color-mix(in srgb, var(--blob) 13%, transparent) 60%,
+      color-mix(in srgb, var(--blob) 6%, transparent) 75%,
+      color-mix(in srgb, var(--blob) 2%, transparent) 90%,
+      transparent 100%
+    );
+  }
 }
 
 .sky-a {
-  width: 46vw;
-  height: 46vw;
+  --blob: var(--icon-cyan);
+  width: calc(46vw + 320px);
+  height: calc(46vw + 320px);
   top: -12vw;
   right: -10vw;
-  background: var(--icon-cyan);
   opacity: 0.75;
 }
 
 .sky-b {
-  width: 40vw;
-  height: 34vw;
+  --blob: var(--icon-pink);
+  width: calc(40vw + 320px);
+  height: calc(34vw + 320px);
   /* Below the headline: pale glows behind it would wash out its lilac. */
   top: 54%;
   left: -14vw;
-  background: var(--icon-pink);
   opacity: 0.7;
 }
 
 .sky-c {
-  width: 36vw;
-  height: 30vw;
+  --blob: var(--icon-lilac);
+  width: calc(36vw + 320px);
+  height: calc(30vw + 320px);
   top: 58%;
   right: -8vw;
-  background: var(--icon-lilac);
   opacity: 0.5;
 }
 
-/* Soft diagonal light, like sun through glass. */
+/* Soft diagonal light, like sun through glass: a soft-edged gradient rather
+   than a band under filter: blur(28px), which cost the same as the blobs. */
 .sky-streak {
   position: absolute;
-  height: 120px;
+  height: 176px;
   width: 70vw;
-  border-radius: 50%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
-  filter: blur(28px);
+  margin: -28px 0 0;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.2) 45%,
+    transparent 100%
+  );
   transform: rotate(-24deg);
 }
 
@@ -1847,8 +1889,8 @@ figcaption {
   border-radius: 140px 140px 0 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.04) 60%);
   box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  /* No backdrop blur: what is behind it is already soft gradients, so a blur
+     changed nothing visible and cost a full-width filter pass every frame. */
 }
 
 .hero-main {
@@ -1859,18 +1901,17 @@ figcaption {
   width: var(--pw);
   transform: translateX(-50%);
   container-type: inline-size;
-  /* Gone completely (56% down the phone) a little before the headline
-     starts, so the headline always sits on clean light, never on the screen. */
-  -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 56%);
-  mask-image: linear-gradient(180deg, #000 30%, transparent 56%);
+  /* The phone fades out by 56% of its height, a little before the headline
+     starts, so the headline always sits on clean light, never on the screen.
+     The fade is in the picture itself (phone-home-top*), not a mask here. */
 }
 
 .hero-main > img {
   display: block;
   width: 100%;
   height: auto;
-  /* No drop shadow: the mask on .hero-main would cut it off square at the
-     box's edges. The mockup's own frame carries the depth. */
+  /* No drop shadow: the picture fades to nothing at its foot, so a shadow
+     would end square there. The mockup's own frame carries the depth. */
 }
 
 /*
@@ -3504,7 +3545,8 @@ html[data-scrolled] .masthead-float .download {
     radial-gradient(40% 50% at 30% 8%, rgba(139, 92, 246, 0.75), transparent 70%),
     radial-gradient(40% 45% at 70% 4%, rgba(22, 82, 255, 0.8), transparent 70%),
     radial-gradient(30% 30% at 52% 0%, rgba(24, 216, 253, 0.45), transparent 70%);
-  filter: blur(30px);
+  /* No filter: blur() on top: these gradients are already soft, and a blur over
+     a 900px layer was a full extra render pass in Safari. */
 }
 
 .feat-head {
@@ -4894,7 +4936,9 @@ html:not(:lang(ru)) .hero-glass h1.hero-title {
 /*
  * The opening: the words rise in reading order, then the phone comes up and
  * the app's pieces settle round it. CSS animations from the first paint (see
- * HeroTitle); `both` holds each at its start until its turn.
+ * HeroTitle); `both` holds each at its start until its turn. Timed to be done
+ * about 1.25 s after the first paint: at 1.9 s, on a phone far from the
+ * server, the hero looked like a page still loading.
  */
 @keyframes hero-word-rise {
   from {
@@ -4905,7 +4949,8 @@ html:not(:lang(ru)) .hero-glass h1.hero-title {
 @keyframes hero-phone-rise {
   from {
     opacity: 0;
-    translate: 0 14%;
+    /* 14% of the full phone, which the box was before it was cropped to 56%. */
+    translate: 0 25%;
   }
 }
 
@@ -4925,36 +4970,36 @@ html:not(:lang(ru)) .hero-glass h1.hero-title {
 }
 
 .hero-glass .hero-word > span {
-  animation: hero-word-rise 1.05s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: calc(0.05s + var(--w) * 0.07s);
+  animation: hero-word-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.02s + var(--w) * 0.045s);
 }
 
 .hero-glass .hero-main {
-  animation: hero-phone-rise 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+  animation: hero-phone-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
 }
 
 .hero-glass .hero-piece > * {
-  animation: hero-piece-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: hero-piece-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .hero-glass .card-nopain > * {
-  animation-delay: 0.7s;
+  animation-delay: 0.4s;
 }
 
 .hero-glass .card-streak > * {
-  animation-delay: 0.8s;
+  animation-delay: 0.47s;
 }
 
 .hero-glass .card-calf > * {
-  animation-delay: 0.9s;
+  animation-delay: 0.54s;
 }
 
 .hero-glass .card-today > * {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 
 .hero-glass .hero-text {
-  animation: hero-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  animation: hero-fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5155,4 +5200,18 @@ html[data-scrolled] .masthead-end > .masthead-get {
 
 .lp-down .lp-menu {
   animation-name: lp-in-down;
+}
+
+/*
+ * On a phone, the same rise and fade without the blur. Animating
+ * filter: blur() on every block as it scrolls in re-renders each one offscreen
+ * on every frame, and that is where iPhone Safari dropped frames. A pointer
+ * that can hover (a desktop) keeps the blur.
+ */
+@media (hover: none) {
+  .who-sheet[data-js] .who-lead,
+  .who-sheet[data-js] .who-tile,
+  .feat-head[data-js] > * {
+    filter: none;
+  }
 }

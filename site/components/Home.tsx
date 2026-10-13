@@ -537,15 +537,20 @@ export function Home({ lang }: { lang: Lang }) {
           <div className="hero-device">
             <div className="hero-arch" aria-hidden />
 
-            {/* The phone is one picture, frame and all (`public/hero/phone-home*`,
-                cut from the mockup with its transparent surround). */}
+            {/* The phone is one picture, frame and all, cut from the mockup with
+                its transparent surround. Only its top half: `phone-home-top*`
+                is `phone-home*` with the fade it used to get from a CSS mask
+                (gone by 56% of its height) baked into its alpha and the rest
+                cropped away. A mask over an animated image cost a composite
+                pass on every frame in Safari, and the cropped files are 42%
+                lighter. */}
             <div className="hero-main">
               <img
-                src="/hero/phone-home.webp"
-                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@560.webp 560w, /hero/phone-home@2x.webp 751w"
+                src="/hero/phone-home-top.webp"
+                srcSet="/hero/phone-home-top.webp 376w, /hero/phone-home-top@560.webp 560w, /hero/phone-home-top@2x.webp 751w"
                 sizes="(max-width: 760px) 64vw, 330px"
                 width={751}
-                height={1550}
+                height={869}
                 alt={copy.alt.heroCenter}
                 fetchPriority="high"
                 decoding="async"

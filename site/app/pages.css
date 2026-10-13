@@ -90,36 +90,66 @@ body:has(> .pg) > .wash {
   mask-image: linear-gradient(180deg, #000 45%, transparent 92%);
 }
 
+/* Soft-edged gradients, not solid circles under filter: blur(72px): the same
+   glow, without three screen-sized blurred layers to composite on every
+   scroll frame in Safari. Each box grows by the blur's reach, 144px a side. */
 .pg .pg-blob {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(72px);
+  margin: -144px;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--blob) 100%, transparent) 0%,
+    color-mix(in srgb, var(--blob) 96%, transparent) 30%,
+    color-mix(in srgb, var(--blob) 83%, transparent) 45%,
+    color-mix(in srgb, var(--blob) 55%, transparent) 60%,
+    color-mix(in srgb, var(--blob) 24%, transparent) 75%,
+    color-mix(in srgb, var(--blob) 6%, transparent) 90%,
+    transparent 100%
+  );
+}
+
+/* A phone's blobs are a fifth of the size, so the same blur thinned them out
+   far more: the profile there is the blurred small disk's, not the large one's. */
+@media (max-width: 760px) {
+  .pg .pg-blob {
+    background: radial-gradient(
+      closest-side,
+      color-mix(in srgb, var(--blob) 45%, transparent) 0%,
+      color-mix(in srgb, var(--blob) 41%, transparent) 15%,
+      color-mix(in srgb, var(--blob) 33%, transparent) 30%,
+      color-mix(in srgb, var(--blob) 22%, transparent) 45%,
+      color-mix(in srgb, var(--blob) 13%, transparent) 60%,
+      color-mix(in srgb, var(--blob) 6%, transparent) 75%,
+      color-mix(in srgb, var(--blob) 2%, transparent) 90%,
+      transparent 100%
+    );
+  }
 }
 
 .pg .pg-blob-a {
+  --blob: #18d8fd;
   top: -220px;
   right: -8vw;
-  width: min(44vw, 620px);
-  height: min(44vw, 620px);
-  background: #18d8fd;
+  width: calc(min(44vw, 620px) + 288px);
+  height: calc(min(44vw, 620px) + 288px);
   opacity: 0.55;
 }
 
 .pg .pg-blob-b {
+  --blob: #f0bffd;
   top: 34%;
   left: -12vw;
-  width: min(38vw, 520px);
-  height: min(28vw, 380px);
-  background: #f0bffd;
+  width: calc(min(38vw, 520px) + 288px);
+  height: calc(min(28vw, 380px) + 288px);
   opacity: 0.6;
 }
 
 .pg .pg-blob-c {
+  --blob: #b685fd;
   top: 46%;
   right: -6vw;
-  width: min(32vw, 440px);
-  height: min(24vw, 320px);
-  background: #b685fd;
+  width: calc(min(32vw, 440px) + 288px);
+  height: calc(min(24vw, 320px) + 288px);
   opacity: 0.4;
 }
 
@@ -128,10 +158,14 @@ body:has(> .pg) > .wash {
   top: 30%;
   left: 20%;
   width: 70vw;
-  height: 110px;
-  border-radius: 50%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-  filter: blur(26px);
+  height: 162px;
+  margin-top: -26px;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.18) 45%,
+    transparent 100%
+  );
   rotate: -22deg;
 }
 
