@@ -165,6 +165,7 @@ export function videoEntries(): VideoEntry[] {
     ...Object.values(ARTICLES_EN),
     ...(INDEXED_LANGS.includes('es') ? Object.values(ARTICLES_ES) : []),
     ...(INDEXED_LANGS.includes('ru') ? Object.values(ARTICLES_RU) : []),
+    ...NEW_LANGS.filter((l) => INDEXED_LANGS.includes(l)).flatMap((l) => Object.values(ARTICLES_NEW[l])),
   ].filter((g) => g != null && isExercisePage(g.page));
   return guides.flatMap((g) => {
     const clip = mainClip(g!.sections.flatMap((s) => s.exercises ?? []));
