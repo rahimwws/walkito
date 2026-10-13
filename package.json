@@ -102,7 +102,7 @@
     "can-update": "node scripts/can-update.mjs",
     "ship": "node scripts/ship.mjs",
     "build:ios": "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 APP_VARIANT=production EAS_LOCAL_BUILD_ARTIFACTS_DIR=.builds npx --yes eas-cli build --local --platform ios --profile production --non-interactive",
-    "build:android": "JAVA_HOME=$(/usr/libexec/java_home -v 17) APP_VARIANT=production EAS_LOCAL_BUILD_ARTIFACTS_DIR=.builds npx --yes eas-cli build --local --platform android --profile production --non-interactive",
+    "build:android": "JAVA_HOME=$(/usr/libexec/java_home -v 17) ANDROID_HOME=${ANDROID_HOME:-$HOME/Library/Android/sdk} APP_VARIANT=production EAS_LOCAL_BUILD_ARTIFACTS_DIR=.builds npx --yes eas-cli build --local --platform android --profile production --non-interactive",
     "submit:ios": ". ~/.walkito/release.env && xcrun altool --upload-app --type ios --file \"$(ls -t .builds/*.ipa | head -1)\" --apiKey \"$ASC_KEY_ID\" --apiIssuer \"$ASC_ISSUER_ID\"",
     "submit:android": ". ~/.walkito/release.env && LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 fastlane supply --aab \"$(ls -t .builds/*.aab | head -1)\" --package_name com.walkito.app --track \"${TRACK:-internal}\" --release_status completed --json_key \"$PLAY_JSON_KEY\" --skip_upload_metadata --skip_upload_images --skip_upload_screenshots --skip_upload_changelogs",
     "verify:debug": "node scripts/verify-no-debug.mjs",
