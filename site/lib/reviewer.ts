@@ -6,8 +6,9 @@ import type { EnglishPage, TranslatedPage } from '@/lib/i18n';
  * Null until every field is real. A reviewer is shown only on a page listed in
  * `reviewed`, with the date she checked it: a name on a page she never read
  * would be the one claim a health site cannot afford. Her profile lives in the
- * About page section `#reviewer`; the Article JSON-LD carries her as
- * `reviewedBy` with `lastReviewed`.
+ * About page section `#reviewer`; the page's JSON-LD carries her as
+ * `reviewedBy` with `lastReviewed` on a `WebPage` node beside the Article
+ * (lib/schema.ts, articleSchema), the type schema.org gives both.
  */
 export type Reviewer = {
   /** As she wants it printed, e.g. "Dr. Gulbek Atayeva". */

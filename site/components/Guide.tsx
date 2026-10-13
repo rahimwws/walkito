@@ -20,7 +20,7 @@ import { isExercisePage } from '@/lib/nav';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideBlock, GuideExercise, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
-import { articleSchema, faqSchema } from '@/lib/schema';
+import { articleSchema, datasetSchema, faqSchema } from '@/lib/schema';
 import { mainClip, videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
 import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
@@ -188,8 +188,9 @@ function Table({ table }: { table: GuideTable }) {
  * Exercises are an ordered list with the dose set apart from the instruction,
  * because the dose is what a reader comes back to check mid-set.
  */
-/** Pages writers are pitched to link (outreach): each carries a ready citation. */
-const CITE_BOX_PAGES: readonly string[] = ['calfRaiseTest', 'pfDuration', 'nurses'];
+/** Pages writers are pitched to link (outreach), and the three studies, which
+ * ask to be cited: each carries a ready citation. */
+const CITE_BOX_PAGES: readonly string[] = ['calfRaiseTest', 'pfDuration', 'nurses', 'ytStudy', 'aiStudy', 'appStudy'];
 
 export function Guide({ guide }: { guide: GuideData }) {
   const c = CHROME[guide.lang];
@@ -266,6 +267,7 @@ export function Guide({ guide }: { guide: GuideData }) {
   const breadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
     itemListElement: trail.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })),
   };
 
@@ -274,6 +276,11 @@ export function Guide({ guide }: { guide: GuideData }) {
       <JsonLd data={article} />
       <JsonLd data={breadcrumbs} />
       <JsonLd data={faqSchema(guide.faq)} />
+      {guide.dataset && (
+        <JsonLd
+          data={datasetSchema({ dataset: guide.dataset, path: guidePath(guide), lang: guide.lang, title: guide.title, published: guide.published })}
+        />
+      )}
       {/* A video is described only where it is the main content: the exercise
           pages, and only their own clip (lib/video.ts, mainClip). On guides
           the clips still play; they just are not offered as videos. */}

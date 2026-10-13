@@ -1,5 +1,5 @@
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
+import { ORG_REF, OWN_IMAGE_LICENSE, SITE_URL } from '@/lib/site';
 
 /**
  * Labelled anatomy illustrations, one file per language with the labels drawn
@@ -90,7 +90,8 @@ export function anatomySchema(
   pageUrl: string,
 ) {
   const { w, h, source } = ANATOMY[fig.id];
-  const walkito = { '@type': 'Organization', name: 'Walkito', url: SITE_URL };
+  // Walkito by reference; InjuryMap, which has no node of its own, inline.
+  const walkito = ORG_REF;
   const base = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',

@@ -16,6 +16,23 @@ export const SITE_URL = 'https://walkito.site';
 export const SITE_NAME = 'Walkito';
 
 /**
+ * The `@id`s that join the JSON-LD on a page into one graph. The full
+ * Organization and the WebSite are written once per page, by
+ * components/RootDocument.tsx; every other node points at them.
+ */
+export const ORG_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+/**
+ * Walkito wherever a node names it (a publisher, a creator, an employer): a
+ * reference to the full Organization, not a second copy of it. The name and
+ * url stay beside the `@id` because Bing and LLM scrapers read each block on
+ * its own and do not resolve references. Nothing else goes in: one more
+ * property makes it a second full Organization (scripts/seo-lint.mjs).
+ */
+export const ORG_REF = { '@type': 'Organization', '@id': ORG_ID, name: SITE_NAME, url: SITE_URL } as const;
+
+/**
  * A page title for metadata: the layout adds " | Walkito", unless that would
  * take it past 60 characters, where Google starts cutting titles off with
  * "...". Then the brand goes and the words that say what the page is stay.
@@ -118,6 +135,16 @@ export const PAGE_UPDATED = {
   exercises: { en: '2026-10-05', es: '2026-10-07', ru: '2026-10-07' },
   // The Spanish and Russian pages got their own PDFs on 13 October.
   printables: { en: '2026-10-12', es: '2026-10-13', ru: '2026-10-13' },
+} as const;
+
+/**
+ * When a page that is not a guide first went up, `YYYY-MM-DD`, for its
+ * `datePublished`: the day of the commit that added it. Never changes.
+ * Guides keep theirs in their data.
+ */
+export const PAGE_PUBLISHED = {
+  footMap: '2026-10-07',
+  printables: { en: '2026-10-05', es: '2026-10-07', ru: '2026-10-07' },
 } as const;
 
 /** The App Store listing, live since 1.0.1 passed review (2 October 2026).

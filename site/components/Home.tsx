@@ -41,7 +41,7 @@ import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
 import { CHROME, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
-import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
+import { APP_STORE_NAME, APP_STORE_URL, ORG_REF, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref, WIKIDATA_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -69,8 +69,9 @@ const APP = {
     'An iPhone and Android exercise app for heel pain, plantar fasciitis and flat feet. Not the Walkito dog-walking service.',
   url: SITE_URL,
   ...(APP_STORE_URL ? { installUrl: APP_STORE_URL } : {}),
-  sameAs: [APP_STORE_URL, PLAY_STORE_URL].filter((u): u is string => Boolean(u)),
-  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  // The two store listings and the app's Wikidata item.
+  sameAs: [APP_STORE_URL, PLAY_STORE_URL, WIKIDATA_URL].filter((u): u is string => Boolean(u)),
+  publisher: ORG_REF,
   applicationCategory: 'HealthApplication',
   operatingSystem: PLAY_STORE_URL ? 'iOS, Android' : 'iOS',
   // Free to download; the plan itself is a subscription inside the app.

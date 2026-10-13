@@ -96,7 +96,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Calf raise test: rise as high as you can on each beat, fingertip support for balance',
-          alt: 'A figure rising onto the toes of one foot with fingertips on a wall for balance',
+          alt: 'A side view of a figure rising onto the toes, the calf highlighted',
         },
       ],
       cites: [CITE.hebertLosier],

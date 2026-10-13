@@ -9,7 +9,8 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL, pageTitle, PAGE_UPDATED } from '@/lib/site';
+import { authorFor } from '@/lib/schema';
+import { SITE_NAME, SITE_URL, pageTitle, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/ru/uprazhneniya-dlya-pechati/';
 const TITLE = 'Листы с упражнениями для стоп для печати (PDF бесплатно)';
@@ -77,6 +78,10 @@ const SCHEMA = {
   description: DESCRIPTION,
   inLanguage: 'ru',
   url: `${SITE_URL}${PATH}`,
+  // The authors the byline names, and the page's dates.
+  author: authorFor('ru'),
+  datePublished: isoDateTime(PAGE_PUBLISHED.printables.ru),
+  dateModified: isoDateTime(PAGE_UPDATED.printables.ru),
   hasPart: PRINTABLES_RU.map((p) => ({
     '@type': 'DigitalDocument',
     name: p.title,
@@ -91,6 +96,7 @@ const SCHEMA = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Главная', item: `${SITE_URL}/ru/` },
     { '@type': 'ListItem', position: 2, name: 'Листы для печати', item: `${SITE_URL}${PATH}` },

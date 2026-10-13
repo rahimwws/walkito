@@ -19,7 +19,7 @@
  *   lists that is not in out/.
  * - A page with no h1 or more than one.
  * - The sitemap lastmod, the visible "Updated" date and dateModified
- *   disagreeing.
+ *   disagreeing (a Dataset's own dateModified excepted).
  * - An anatomy figure (/anatomy/...) that a page references and out/ lacks.
  * - reviewedBy or lastReviewed on anything but a WebPage.
  * - More than one full Organization on a page. "Full" is anything beyond a
@@ -324,7 +324,12 @@ for (const file of walk(OUT)) {
     if (!/(^|\s)(updated-line|updated|byline)(\s|$)/.test(cls)) continue;
     for (const [, d] of inner.matchAll(/<time\b[^>]*\bdatetime="([^"]+)"/gi)) saw(d.slice(0, 10), 'visible date');
   }
-  for (const node of nodes) if (typeof node.dateModified === 'string') saw(node.dateModified.slice(0, 10), `${arr(node['@type']).join('/')} dateModified`);
+  // A Dataset's dateModified is its data's, which an edit to the page around
+  // the table leaves as it was (lib/guides/types.ts, GuideDataset).
+  for (const node of nodes) {
+    if (typeof node.dateModified !== 'string' || arr(node['@type']).includes('Dataset')) continue;
+    saw(node.dateModified.slice(0, 10), `${arr(node['@type']).join('/')} dateModified`);
+  }
   if (dates.size > 1) error('dates', [...dates].map(([d, where]) => `${[...new Set(where)].join(' and ')} ${d}`).join(', '), path);
 
   // Indexable pages: what the result looks like in search.

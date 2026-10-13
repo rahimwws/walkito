@@ -69,6 +69,7 @@ const ARTICLE = articleSchema({
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: '\u0413\u043b\u0430\u0432\u043d\u0430\u044f', item: `${SITE_URL}/ru/` },
     { '@type': 'ListItem', position: 2, name: '\u0411\u043e\u043b\u044c \u0432 \u043f\u044f\u0442\u043a\u0435 \u0443 \u0431\u0435\u0433\u0443\u043d\u043e\u0432', item: `${SITE_URL}${PATH}` },

@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Lang } from '@/lib/i18n';
-import { OWN_IMAGE_LICENSE, SITE_URL, isoDateTime } from '@/lib/site';
+import { ORG_REF, OWN_IMAGE_LICENSE, SITE_URL, isoDateTime } from '@/lib/site';
 
 export { isoDateTime };
 
@@ -60,6 +60,8 @@ export function videoSchema(
         contentUrl: `${SITE_URL}/exercises/${e.media}.mp4`,
         uploadDate: isoDateTime(uploadDate),
         ...(seconds ? { duration: `PT${seconds}S` } : {}),
+        // The clips are Walkito's own, made for the app.
+        creator: ORG_REF,
       };
     });
 }
@@ -69,15 +71,19 @@ export function videoSchema(
  * list it with its name and credit it to Walkito (the stills are frames from
  * the app's own clips). Only stills that are on the page: the caller passes
  * the exercises it renders with media. One object per still per page.
+ *
+ * Not a still that only stands in for the block (`mediaIsStandIn`): it is
+ * another exercise's picture, so the card's name would describe an image that
+ * does not show it, the same reason `videoSchema` skips it.
  */
 export function imageSchema(
-  items: readonly { media?: string; name: string; alt?: string }[],
+  items: readonly { media?: string; mediaIsStandIn?: boolean; name: string; alt?: string }[],
   lang: Lang,
   pageUrl: string,
 ) {
   const seen = new Set<string>();
   return items
-    .filter((e): e is typeof e & { media: string } => Boolean(e.media))
+    .filter((e): e is typeof e & { media: string } => Boolean(e.media) && !e.mediaIsStandIn)
     .filter((e) => (seen.has(e.media) ? false : (seen.add(e.media), true)))
     .map((e) => ({
       '@context': 'https://schema.org',
@@ -89,7 +95,7 @@ export function imageSchema(
       inLanguage: lang,
       width: 720,
       height: 900,
-      creator: { '@type': 'Organization', name: 'Walkito', url: SITE_URL },
+      creator: ORG_REF,
       creditText: 'Walkito',
       copyrightNotice: '© Walkito',
       ...OWN_IMAGE_LICENSE,

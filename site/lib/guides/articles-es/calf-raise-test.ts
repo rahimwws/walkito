@@ -86,7 +86,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Test de elevación de talón: sube lo más alto que puedas en cada golpe, con la punta de los dedos en la pared para el equilibrio',
-          alt: 'Una figura sube en puntas sobre un pie, con la punta de los dedos en una pared para el equilibrio',
+          alt: 'Vista lateral de una figura que sube en puntas, con la pantorrilla resaltada',
         },
       ],
       cites: [CITE.hebertLosier],

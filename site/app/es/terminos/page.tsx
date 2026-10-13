@@ -34,6 +34,7 @@ export const metadata: Metadata = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}/es/terminos/#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/es/` },
     { '@type': 'ListItem', position: 2, name: 'Términos de uso', item: `${SITE_URL}/es/terminos/` },

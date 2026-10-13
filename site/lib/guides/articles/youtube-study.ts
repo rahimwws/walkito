@@ -247,4 +247,15 @@ export const YT_STUDY_EN: Guide = {
   },
   crumb: 'YouTube video study',
   campaign: 'study-youtube',
+  dataset: {
+    file: 'youtube-plantar-fasciitis-study-2026.csv',
+    name: 'The 50 most-watched plantar fasciitis videos on YouTube vs the 2023 guideline',
+    description:
+      'Walkito study: the 50 most-watched plantar fasciitis videos on YouTube scored against the 2023 heel pain guideline (Koc et al., JOSPT 2023). Pulled 2026-10-11, US English. One row per video, with each check and the timestamp and quote behind it. Free to reuse with a citation to walkito.site.',
+    temporalCoverage: '2026-10-11',
+    measurementTechnique:
+      'Each video was scored from its full transcript, title and description (one video without captions from its title and description alone) against a fixed checklist based on the 2023 guideline, written before scoring. Every yes needed a timestamp and a quote. A second scorer scored 10 videos independently and the two agreed on 129 of 130 checks.',
+    updated: '2026-10-11',
+    cites: [CITE.guideline],
+  },
 };

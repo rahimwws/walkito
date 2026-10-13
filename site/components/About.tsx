@@ -11,7 +11,7 @@ import type { About as AboutData } from '@/lib/about/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { formatDate } from '@/lib/schema';
 import { REVIEWER } from '@/lib/reviewer';
-import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL, isoDateTime } from '@/lib/site';
+import { ORG_REF, PAGE_UPDATED, SITE_URL, isoDateTime } from '@/lib/site';
 
 const REVIEWER_HEADING = {
   en: 'Who reviews our guides',
@@ -39,7 +39,9 @@ function Inline({ text }: { text: string }) {
   );
 }
 
-/** One About page. `AboutPage` in schema, pointing at the Organization. */
+/** One About page. `AboutPage` in schema, pointing at the Organization by
+ * its `@id`: the full node, with the email and profiles, is the sitewide one
+ * in components/RootDocument.tsx. */
 export function About({ about }: { about: AboutData }) {
   const c = CHROME[about.lang];
   const path = TRANSLATED.about[about.lang];
@@ -51,13 +53,7 @@ export function About({ about }: { about: AboutData }) {
     inLanguage: about.lang,
     url: `${SITE_URL}${path}`,
     dateModified: isoDateTime(PAGE_UPDATED.about),
-    mainEntity: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-      email: SUPPORT_EMAIL,
-      ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
-    },
+    mainEntity: ORG_REF,
   };
   return (
     <>

@@ -9,9 +9,11 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
+import { CITATIONS, citationSchema } from '@/lib/citations';
 import { CHROME, alternatesCustom, type FullLang } from '@/lib/i18n';
+import { authorFor } from '@/lib/schema';
 import { shareCard } from '@/lib/share';
-import { OWN_IMAGE_LICENSE, PAGE_UPDATED, SITE_NAME, SITE_URL, pageTitle } from '@/lib/site';
+import { ORG_REF, OWN_IMAGE_LICENSE, PAGE_PUBLISHED, PAGE_UPDATED, SITE_NAME, SITE_URL, WEBSITE_ID, isoDateTime, pageTitle } from '@/lib/site';
 import { FOOT_MAP, FOOT_MAP_PATH, HOTSPOTS, REGION_ORDER, guideHref, type MapView } from '@/lib/tools/foot-map';
 
 /**
@@ -74,21 +76,29 @@ export function FootMapPage({ lang }: { lang: FullLang }) {
   const webPage = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
+    '@id': url,
     name: c.title,
     description: c.description,
     url,
     inLanguage: lang,
-    isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+    isPartOf: { '@type': 'WebSite', '@id': WEBSITE_ID, name: SITE_NAME, url: SITE_URL },
+    // The authors the byline names, and the page's dates, as on a guide.
+    author: authorFor(lang),
+    datePublished: isoDateTime(PAGE_PUBLISHED.footMap),
+    dateModified: isoDateTime(PAGE_UPDATED.footMap),
     primaryImageOfPage: `${SITE_URL}/anatomy/map-side.webp`,
     hasPart: REGION_ORDER.map((id) => ({
       '@type': 'WebPageElement',
       name: c.regions[id].h2,
       url: `${url}#${id}`,
     })),
+    // The "Sources" list at the foot of the page.
+    citation: sources.map((i) => citationSchema(CITATIONS[i])),
   };
   const breadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -109,7 +119,7 @@ export function FootMapPage({ lang }: { lang: FullLang }) {
     inLanguage: lang,
     width: IMAGE[v].w,
     height: IMAGE[v].h,
-    creator: { '@type': 'Organization', name: 'Walkito', url: SITE_URL },
+    creator: ORG_REF,
     creditText: 'Walkito',
     copyrightNotice: '© Walkito',
     ...OWN_IMAGE_LICENSE,

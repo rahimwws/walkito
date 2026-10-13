@@ -10,7 +10,8 @@ import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
-import { SITE_NAME, SITE_URL, PAGE_UPDATED } from '@/lib/site';
+import { authorFor } from '@/lib/schema';
+import { SITE_NAME, SITE_URL, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/printable-exercise-sheets/';
 const TITLE = 'Printable Foot Exercise Sheets (Free PDF)';
@@ -30,6 +31,10 @@ const SCHEMA = {
   name: TITLE,
   description: DESCRIPTION,
   url: `${SITE_URL}${PATH}`,
+  // The authors the byline names, and the page's dates.
+  author: authorFor('en'),
+  datePublished: isoDateTime(PAGE_PUBLISHED.printables.en),
+  dateModified: isoDateTime(PAGE_UPDATED.printables.en),
   hasPart: PRINTABLES.map((p) => ({
     '@type': 'DigitalDocument',
     name: p.title,
@@ -43,6 +48,7 @@ const SCHEMA = {
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${SITE_URL}${PATH}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
     { '@type': 'ListItem', position: 2, name: 'Printable exercise sheets', item: `${SITE_URL}${PATH}` },

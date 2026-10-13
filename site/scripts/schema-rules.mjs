@@ -42,6 +42,22 @@ export const RULES = {
     ...(!o.creator && !o.creditText && !o.copyrightNotice && !o.license ? [{ level: 'ERROR', msg: 'needs one of creator, creditText, copyrightNotice, license' }] : []),
     ...(!o.license || !o.acquireLicensePage ? [{ level: 'warn', msg: 'license / acquireLicensePage missing (image metadata)' }] : []),
   ],
+  // Google's Dataset guidelines: name and description required, the
+  // description 50 to 5,000 characters; a DataDownload needs its contentUrl.
+  // A dataset with no file to download is no use to dataset search, so the
+  // distribution is required here too.
+  Dataset: (o) => {
+    const files = arr(o.distribution);
+    const length = typeof o.description === 'string' ? [...o.description].length : 0;
+    return [
+      ...['name', 'description'].filter((k) => !o[k]).map((k) => ({ level: 'ERROR', msg: `required "${k}" missing` })),
+      ...(o.description && (length < 50 || length > 5000) ? [{ level: 'ERROR', msg: `description is ${length} characters (50 to 5,000)` }] : []),
+      ...(files.length ? [] : [{ level: 'ERROR', msg: '"distribution" (the data file) missing' }]),
+      ...files.flatMap((d, i) => (d?.contentUrl ? [] : [{ level: 'ERROR', msg: `distribution[${i}] has no contentUrl` }])),
+      ...files.flatMap((d, i) => (d?.encodingFormat ? [] : [{ level: 'warn', msg: `distribution[${i}] has no encodingFormat` }])),
+      ...(o.license ? [] : [{ level: 'warn', msg: 'recommended "license" missing (once the founders choose one, say it next to the download link too)' }]),
+    ];
+  },
   Organization: (o) => ['name', 'url', 'logo'].filter((k) => !has(o, k)).map((k) => ({ level: 'warn', msg: `recommended "${k}" missing` })),
   AboutPage: (o) => (o.dateModified && !/T\d\d:\d\d(:\d\d)?([+-]\d\d:\d\d|Z)$/.test(o.dateModified) ? [{ level: 'warn', msg: 'dateModified has no time and timezone' }] : []),
   WebSite: (o) => ['name', 'url'].filter((k) => !has(o, k)).map((k) => ({ level: 'warn', msg: `"${k}" missing` })),
