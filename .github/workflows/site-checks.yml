@@ -1,0 +1,72 @@
+# The site's checks on every pull request that touches it: build it as the
+# deploy would, then read the build the way a search engine does.
+#
+# Merging into main deploys (deploy-site.yml), so this is the last look before
+# a page goes live. Nothing here needs a secret or reaches the server.
+#
+# Every check runs even when an earlier one fails, so one run shows them all
+# (the ones that read out/ need the build to have succeeded).
+# The build is kept as the artifact "site-out" for three days, to open the
+# exact HTML a check complained about.
+name: Site checks
+
+on:
+  pull_request:
+    paths: ['site/**', '.github/workflows/site-checks.yml']
+
+concurrency:
+  group: site-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        id: build
+        run: bun run build
+
+      # Unparseable JSON-LD or a property Google requires (also guards the deploy).
+      - name: Structured data
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: node scripts/schema-check.mjs out
+
+      # The calf norms and recovery numbers the tools use match the guides.
+      # Reads the sources, so it runs even when the build failed.
+      - name: Tool numbers
+        if: ${{ !cancelled() }}
+        run: bun scripts/check-tools.mjs
+
+      # Russian and Spanish no-break spaces are in the sources.
+      - name: Typesetting
+        if: ${{ !cancelled() }}
+        run: node scripts/typeset.mjs --check
+
+      # Links, canonicals, robots against the sitemaps, h1s, dates, headings;
+      # warnings for long titles and descriptions and thinly linked articles.
+      - name: SEO lint
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: node scripts/seo-lint.mjs out
+
+      - name: Keep the build
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-out
+          path: site/out
+          retention-days: 3
+          if-no-files-found: warn

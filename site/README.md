@@ -37,6 +37,18 @@ the `deploy` user (rsync into `/var/www/walkito` only). It can also be run by
 hand from the Actions tab (Deploy site, Run workflow). `bun run deploy` from a
 laptop still works and uploads as root, then hands the files back to `deploy`.
 
+**Checks.** The deploy stops before uploading if `scripts/schema-check.mjs`
+finds broken structured data (`bun run deploy --skip-checks` skips it, for
+emergencies only). Every pull request that touches `site/` runs
+`.github/workflows/site-checks.yml`: the build, schema-check, the tool numbers
+(`scripts/check-tools.mjs`), the Russian and Spanish no-break spaces
+(`scripts/typeset.mjs --check`) and `scripts/seo-lint.mjs`, which fails on a
+broken internal link, a canonical that is not the page, robots that disagree
+with the sitemaps, a page without exactly one h1, dates that disagree and a few
+more (the list is at the top of the script), and warns on long titles and
+descriptions. Its build stays downloadable as the run's `site-out` artifact for
+three days. To run the lint locally: `bun run build && node scripts/seo-lint.mjs out`.
+
 `public/google2e55515ad29a0837.html`, `public/BingSiteAuth.xml` and the
 `public/yandex_*.html` file prove ownership to Search Console, Bing Webmaster
 Tools and Yandex Webmaster (account rahimwws.me@gmail.com for the first two). They live in `public/` because `--delete` would wipe

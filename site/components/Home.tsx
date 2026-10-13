@@ -302,7 +302,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: 'Что такое Walkito?',
-        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
+        a: 'Walkito: приложение с упражнениями при боли в пятке и стопе для iPhone и Android. По вашим ответам оно составляет план с занятиями на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю) и подстраивает его под то, как стопы чувствуют себя каждое утро. Оно не связано с walkito.com, сервисом выгула собак.',
       },
       {
         q: 'Когда я почувствую разницу?',
@@ -391,7 +391,7 @@ const COPY: Record<Lang, HomeCopy> = {
       // quote this kind of sentence when they describe the app (plan A.10).
       {
         q: '¿Qué es Walkito?',
-        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
+        a: 'Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, en iPhone y Android. Con tus respuestas arma un plan con sesiones de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana) y lo ajusta a cómo se sienten tus pies cada mañana. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.',
       },
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',

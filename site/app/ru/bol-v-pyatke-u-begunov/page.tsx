@@ -459,9 +459,9 @@ export default function HeelPainRunnersRu() {
             </p>
             <ul>
               <li>Удержание свода {archHoldSeconds}{'\u00A0'}секунд.</li>
-              <li>{calfRaises} подъёмов на носки на одной ноге.</li>
-              <li>{balanceSeconds}{'\u00A0'}секунд баланса на одной ноге.</li>
-              <li>Разница лево/право в пределах {gapPercent}{'\u00A0'}%.</li>
+              <li>{calfRaises} подъёмов на носки на одной ноге.</li>
+              <li>{balanceSeconds}{'\u00A0'}секунд баланса на одной ноге.</li>
+              <li>Разница лево/право в пределах {gapPercent}{'\u00A0'}%.</li>
             </ul>
             <p>
               Достигнутая цель

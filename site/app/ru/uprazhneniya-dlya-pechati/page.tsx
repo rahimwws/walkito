@@ -138,7 +138,7 @@ export default function PrintableSheetsRu() {
                     Скачать PDF
                   </a>{' '}
                   <a href={`/downloads/${p.en}.pdf`} download hrefLang="en">
-                    Версия на английском
+                    Версия на английском
                   </a>
                 </p>
               </div>

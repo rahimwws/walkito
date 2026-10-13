@@ -306,7 +306,7 @@ export const HEEL_PAIN_ES: Guide = {
   mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-10-10',
-  title: '8 ejercicios para fascitis plantar y dolor de talón',
+  title: '8 ejercicios para fascitis plantar y dolor de talón',
   description:
     'Ocho ejercicios y estiramientos para la fascitis plantar que puedes hacer en casa, con dosis, qué evitar, cuándo estirar y grados de la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',

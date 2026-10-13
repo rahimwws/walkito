@@ -79,7 +79,7 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
 const TAGLINE: Record<Lang, string> = {
   en: 'Exercise plans for heel, foot and leg pain, on 3, 5 or 7 days a week you choose, built on clinical guidelines.',
   es: 'Planes de ejercicios para el dolor de talón, pie y pierna, 3, 5 o 7 días a la semana, tú eliges, basados en guías clínicas.',
-  ru: 'Планы упражнений при боли в пятке, стопе и ногах на 3, 5 или 7 дней в неделю, на ваш выбор, на основе клинических рекомендаций.',
+  ru: 'Планы упражнений при боли в пятке, стопе и ногах на 3, 5 или 7 дней в неделю, на ваш выбор, на основе клинических рекомендаций.',
   pt: 'Planos de exercícios para dor no calcanhar, no pé e na perna, de 3, 5 ou 7 dias por semana, à sua escolha, baseados em diretrizes clínicas.',
   fr: "Des programmes d'exercices pour la douleur au talon, au pied et à la jambe, 3, 5 ou 7 jours par semaine au choix, fondés sur les recommandations cliniques.",
   it: 'Piani di esercizi per il dolore a tallone, piede e gamba, 3, 5 o 7 giorni a settimana a tua scelta, basati sulle linee guida cliniche.',

@@ -14,7 +14,7 @@ export const YT_STUDY_EN: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-11',
   updated: '2026-10-11',
-  title: 'Top 50 Plantar Fasciitis YouTube Videos vs the 2023 Guideline',
+  title: 'Top 50 Plantar Fasciitis YouTube Videos vs 2023 Guideline',
   description:
     'We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 heel pain guideline. Only 9 teach all three top-rated exercise types.',
   h1: 'We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 guideline',
