@@ -155,6 +155,16 @@ export type AnalyticsEvents = {
   widget_installed: { count: number; sizes: string };
   widget_removed: { count: number };
 
+  // ── Home tour ────────────────────────────────────────────────────────────
+  /** The tour over Home after the purchase or the skip: its stops, 0 the
+   * overview, 1 "It hurts", 2 the start button that opens the first test. */
+  home_tour_step_viewed: { step: number };
+  /** The last stop tapped: the first test opened from it. */
+  home_tour_test_opened: Record<string, never>;
+  /** The tour ended: the first test is on record (`tested`), or it was
+   * already there and the start button was tapped. */
+  home_tour_completed: { tested: boolean };
+
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;
   session_completed: SessionProps;

@@ -3,6 +3,8 @@ import { useSyncExternalStore } from 'react';
 import { kv } from '@/shared/lib/storage';
 import { isAnonymousSession, signedInBefore } from '@/shared/lib/supabase';
 
+import { armHomeTour } from './home-tour';
+
 const KEY = 'session/setup-pending';
 const OWED_KEY = 'session/account-owed';
 
@@ -51,6 +53,8 @@ export function finishSetup(): void {
   if (!pending) return;
   pending = false;
   kv.set(KEY, false);
+  // Home opens on its tour, which ends at the first test.
+  armHomeTour();
   emit();
 }
 

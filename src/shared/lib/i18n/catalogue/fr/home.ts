@@ -89,6 +89,13 @@ export const HOME_FR = {
 
   // ── The check-in ─────────────────────────────────────────────────────────
   'home.itHurts': 'J’ai mal aujourd’hui',
+  'home.tour.overview': 'Tes pieds en un coup d’œil, chaque matin',
+  'home.tour.pain': 'Quelque chose fait mal ? Touche ici et note-le',
+  'home.tour.test': 'Commence ici : un petit test fixe ton point de départ',
+  'home.tour.session': 'Tes séances commencent ici',
+  'home.tour.next': 'Suivant',
+  'home.tour.startTest': 'Commencer le test',
+  'home.tour.stepOf': 'Étape {n} sur {total}',
   'home.noPain': 'Pas de douleur aujourd’hui',
   'home.logCheckIn': 'Faire le bilan du jour',
   'home.checkInAgain': 'Refaire le bilan',

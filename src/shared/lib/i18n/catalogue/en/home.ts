@@ -149,6 +149,14 @@ export const HOME_EN = {
 
   // ── The check-in ─────────────────────────────────────────────────────────
   'home.itHurts': 'It hurts today',
+  /** The Home tour's handwritten notes (Caveat), one per stop, and its controls. */
+  'home.tour.overview': 'Your feet at a glance, every morning',
+  'home.tour.pain': 'Something hurts? Tap here and note it',
+  'home.tour.test': 'Start here: a short test sets your starting point',
+  'home.tour.session': 'Your sessions start here',
+  'home.tour.next': 'Next',
+  'home.tour.startTest': 'Start the test',
+  'home.tour.stepOf': 'Step {n} of {total}',
   'home.noPain': 'No pain today',
   'home.logCheckIn': 'Log today’s check-in',
   'home.checkInAgain': 'Check in again',

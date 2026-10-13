@@ -631,6 +631,16 @@ export function currentLevels(cursor: number): Readonly<Record<ZoneKey, number>>
   };
 }
 
+/** Whether any test has been taken: the first one sets the starting point,
+ * and the Home tour holds everything else until it exists. */
+export function firstTestDone(): boolean {
+  return RETEST_RESULTS.length > 0;
+}
+
+export function useFirstTestDone(): boolean {
+  return useSyncExternalStore(subscribeRetests, firstTestDone, firstTestDone);
+}
+
 /** The result for a checkpoint day, if it has one. Subscribed rather than read
  * off `RETESTS`, so a sheet left open while a retest is taken updates instead
  * of showing the day as unmeasured. */

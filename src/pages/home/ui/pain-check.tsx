@@ -33,6 +33,7 @@ import {
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { PROGRAM_EASING, PROGRAM_MS, usePlanOver } from '@/shared/lib/program';
+import { useSpotlightAnchor } from '@/shared/lib/spotlight';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Mascot, handsUpRig, painRig, type MascotHandle, type MascotProps } from '@/shared/ui/mascot';
@@ -696,6 +697,7 @@ function PainCard({
   const hasGlass = isLiquidGlassAvailable();
   const t = useT();
   const title = t(card.title);
+  const tourAnchor = useSpotlightAnchor('home.pain');
 
   const left = card.side === 'left';
   const pressed = useSharedValue(0);
@@ -769,6 +771,9 @@ function PainCard({
 
   return (
     <Animated.View
+      // "It hurts" is the Home tour's second stop.
+      ref={card.key === 'pain' ? tourAnchor : undefined}
+      collapsable={false}
       style={[
         glass.slot,
         left ? glass.slotLeft : glass.slotRight,

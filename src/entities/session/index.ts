@@ -26,3 +26,13 @@ export {
   useAccountOwed,
   useSetupPending,
 } from './model/setup';
+export {
+  armHomeTour,
+  devRestartHomeTour,
+  finishHomeTour,
+  homeTourState,
+  setHomeTourStep,
+  useHomeTourState,
+  useHomeTourStep,
+  type HomeTourState,
+} from './model/home-tour';

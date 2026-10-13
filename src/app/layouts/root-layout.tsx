@@ -31,16 +31,26 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
+import { useDevOfferWall } from '@/features/home-tour';
 import { useHomeWidget } from '@/features/home-widget';
 import { SessionDonePreview } from '@/widgets/session-player';
-import { useAccessLapsed, useBrowsingLapsed, useEntitled } from '@/entities/purchase';
-import { useAccountOwed, useOnboarded, useSetupPending } from '@/entities/session';
+import { useFirstTestDone } from '@/entities/program';
+import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import {
+  armHomeTour,
+  useAccountOwed,
+  useHomeTourState,
+  useOnboarded,
+  useSetupPending,
+} from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
 // stored preference applies the saved appearance before the first render.
 import '@/shared/lib/theme';
 import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
+
+import { OfferWall } from './offer-wall';
 
 /**
  * The app shell: fonts, theme, gesture root, routes.
@@ -177,10 +187,23 @@ function RootLayoutInner() {
   // are reachable — the same condition as the tabs' own guard below — and
   // otherwise kept and opened once they are. Email links tapped before the
   // onboarding was done open through the second hook too.
-  // Skipping the paywall changes nothing here: "Not now" leads to the one-time
-  // trial offer on the same `offer` screen (`pages/offer`), never into the app,
-  // so a kept link simply stays kept until there is a purchase.
-  const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));
+  //
+  // Somebody who skipped the paywall gets the tabs too, for what is free: the
+  // Home tour and the first test (`tryingOut`). Once the test is on record the
+  // offer wall stands over Home (`OfferWall`) until a purchase, so the rest of
+  // the app stays behind it, as it stayed behind the paywall.
+  const skipped = usePaywallSkipped();
+  const firstTested = useFirstTestDone();
+  const tourState = useHomeTourState();
+  const tryingOut = onboarded && !entitled && !lapsed && skipped;
+  const devWall = useDevOfferWall();
+  const offerWall = (tryingOut && firstTested) || devWall;
+  // A skip from before the tour existed has no tour armed: it gets one, or
+  // Home would be open with nothing leading to the test.
+  useEffect(() => {
+    if (tryingOut && tourState === 'off') armHomeTour();
+  }, [tryingOut, tourState]);
+  const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
@@ -271,7 +294,7 @@ function RootLayoutInner() {
                       (`pages/offer` draws them in place of the plans), so
                       somebody who skipped it is still here, and still without
                       the tabs. */}
-                  <Stack.Protected guard={onboarded && !entitled && !lapsed}>
+                  <Stack.Protected guard={onboarded && !entitled && !lapsed && !skipped}>
                     <Stack.Screen
                       name="offer"
                       options={{
@@ -387,6 +410,8 @@ function RootLayoutInner() {
                   for a restart. Its own component so expo-updates' progress
                   events re-render it rather than this layout. */}
               {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
+              {/* The offer after the free first test, over a blurred Home. */}
+              {(fontsReady || fontError) && <OfferWall visible={offerWall} />}
               {/* Development only: the end-of-session sheet without finishing a
                   session (`?previewDone`, `?previewDone=stopped`). */}
               {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}

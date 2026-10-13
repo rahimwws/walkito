@@ -4,10 +4,11 @@ import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
+import { setFirstTestOpen, useFirstTestRequest } from '@/features/home-tour';
 import { useHealthSignals, type HealthSignals } from '@/entities/health';
 import {
   PROGRAM,
@@ -281,6 +282,12 @@ export function TodayTasks({
   /** The day's tests, taken or read back. Separate from `open` because it is
    * the whole test day rather than one task off the list. */
   const [testing, setTesting] = useState<'take' | 'review' | null>(null);
+  // The Home tour's last stop opens the first test here, and steps aside
+  // while the sheet is up.
+  useFirstTestRequest(() => setTesting('take'));
+  useEffect(() => {
+    setFirstTestOpen(testing != null);
+  }, [testing]);
   /** The 2-minute version, playing. */
   const [short, setShort] = useState<ProgramDay | null>(null);
 

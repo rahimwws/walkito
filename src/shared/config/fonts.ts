@@ -69,12 +69,20 @@ function sized(face: Face) {
   };
 }
 
+/** Caveat Bold, a handwriting face, for the Home tour's notes alone: the line
+ * with an arrow a person would scribble over a screenshot. A bundled family,
+ * not the system's, so iOS adds no tracking and nothing is taken back out.
+ * Loaded by `useFonts` with the rest (`fontAssets`): an asset, not native. */
+const HAND_FACE: Face = { fontFamily: 'Caveat_700Bold' };
+
 export const fonts = {
   regular: sized(platformFaces.regular),
   medium: sized(platformFaces.medium),
   semibold: sized(platformFaces.semibold),
   bold: sized(platformFaces.bold),
   heavy: sized(platformFaces.heavy),
+  hand: (fontSize: number, letterSpacing = 0): SizedFace =>
+    letterSpacing === 0 ? { ...HAND_FACE, fontSize } : { ...HAND_FACE, fontSize, letterSpacing },
 };
 
 export const faces: typeof platformFaces = platformFaces;
@@ -91,4 +99,5 @@ export const fontAssets = {
   [noteFonts.regular]: require('@expo-google-fonts/inter/400Regular/Inter_400Regular.ttf'),
   [noteFonts.medium]: require('@expo-google-fonts/inter/500Medium/Inter_500Medium.ttf'),
   [noteFonts.bold]: require('@expo-google-fonts/inter/700Bold/Inter_700Bold.ttf'),
+  [HAND_FACE.fontFamily]: require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf'),
 };

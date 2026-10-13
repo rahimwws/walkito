@@ -11,7 +11,8 @@ import {
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
-import { armSetup, resetOnboarding } from '@/entities/session';
+import { devPretendUntested, devPreviewOfferWall } from '@/features/home-tour';
+import { armSetup, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
 
 /** `walkito.dev://?resetOnboarding` puts onboarding back in front. */
 const RESET_PARAM = /[?&]resetOnboarding\b/;
@@ -43,6 +44,13 @@ const COMEBACK_PARAM = /[?&]previewComeback\b/;
 /** `?previewOfferEnded`: skipped, the comeback's minutes up, the standard
  * plans on the offer screen. */
 const OFFER_ENDED_PARAM = /[?&]previewOfferEnded\b/;
+/** `walkito.dev://?previewTour` starts the Home tour from its first stop;
+ * `?previewTour=untested` as somebody with no test on record meets it;
+ * `?previewTour=done` ends it. */
+const TOUR_PARAM = /[?&]previewTour(?:=(\w+))?/;
+/** `walkito.dev://?previewOfferWall` raises the offer after the first test
+ * over Home (`=off` to drop it); add `previewHomeOffer` for the trial stage. */
+const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
 
 function previewPush(url: string): void {
   const kind = PUSH_PARAM.exec(url)?.[1];
@@ -92,6 +100,14 @@ export function useDevLinks(): void {
         if (HOME_OFFER_PARAM.test(url)) devPreviewHomeOffer();
         if (COMEBACK_PARAM.test(url)) devPreviewComeback();
         if (OFFER_ENDED_PARAM.test(url)) devPreviewOfferEnded();
+        const wall = WALL_PARAM.exec(url);
+        if (wall != null) devPreviewOfferWall(wall[1] !== 'off');
+        const tour = TOUR_PARAM.exec(url);
+        if (tour != null) {
+          devPretendUntested(tour[1] === 'untested');
+          if (tour[1] === 'done') finishHomeTour();
+          else devRestartHomeTour();
+        }
         previewPush(url);
       };
       void Linking.getInitialURL()

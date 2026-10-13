@@ -31,6 +31,8 @@ export {
   requestRetest,
   retestBranch,
   retestResults,
+  firstTestDone,
+  useFirstTestDone,
   statusFor,
   useRetest,
   useRetestRequest,

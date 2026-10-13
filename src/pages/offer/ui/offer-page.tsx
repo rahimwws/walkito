@@ -30,6 +30,7 @@ import {
   type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
+import { armHomeTour } from '@/entities/session';
 import { PRIMARY, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
@@ -626,14 +627,19 @@ function Paywall() {
   };
 
   /**
-   * "Not now", and the close over the sky: on to the one-time trial offer.
+   * "Not now", and the close over the sky: on to Home, for the tour and the
+   * first test, which are free; the one-time trial offer follows the test
+   * (`OfferWall` in the root layout).
    *
-   * `skipPaywall` records it (and tracks `paywall_skipped`, once per person),
-   * and `OfferPage` puts the offer in place of these plans, so this does not
-   * navigate. Leaving unmounts this view, which counts as `paywall_dismissed`
-   * as any other way out does.
+   * `skipPaywall` records it (and tracks `paywall_skipped`, once per person);
+   * the root guards then take this route away and open the tabs, so this
+   * does not navigate. Leaving unmounts this view, which counts as
+   * `paywall_dismissed` as any other way out does.
    */
-  const skip = () => skipPaywall();
+  const skip = () => {
+    armHomeTour();
+    skipPaywall();
+  };
 
   /** The simulator has no store: the plans still look and select as they will. */
   const devPreview = __DEV__ && onSimulator;

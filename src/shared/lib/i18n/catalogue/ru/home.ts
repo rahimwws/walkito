@@ -114,6 +114,13 @@ export const HOME_RU = {
 
   // ── The check-in ─────────────────────────────────────────────────────────
   'home.itHurts': 'Сегодня болит',
+  'home.tour.overview': 'Ваши стопы на сегодня, одним взглядом',
+  'home.tour.pain': 'Что-то болит? Нажмите сюда и отметьте',
+  'home.tour.test': 'Начните здесь: короткий тест покажет вашу точку старта',
+  'home.tour.session': 'Отсюда начинаются ваши занятия',
+  'home.tour.next': 'Далее',
+  'home.tour.startTest': 'Начать тест',
+  'home.tour.stepOf': 'Шаг {n} из {total}',
   'home.noPain': 'Сегодня не болит',
   'home.logCheckIn': 'Отметить сегодняшний день',
   'home.checkInAgain': 'Отметить ещё раз',

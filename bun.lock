@@ -4,6 +4,7 @@
     "": {
       "name": "cadence",
       "dependencies": {
+        "@expo-google-fonts/caveat": "0.4.2",
         "@expo-google-fonts/inter": "^0.4.2",
         "@expo-google-fonts/nunito": "^0.4.2",
         "@expo/ui": "57.0.7",
@@ -230,6 +231,8 @@
     "@babel/types": ["@babel/types@7.29.7", "", { "dependencies": { "@babel/helper-string-parser": "^7.29.7", "@babel/helper-validator-identifier": "^7.29.7" } }, "sha512-4zBIxpPzowiZpusoFkyGVwakdRJUyuH5PxQ/PrqghfdFWWasvnCdPfQXHrenDai+gyLARulZjZowCOj6fjT4pA=="],
 
     "@egjs/hammerjs": ["@egjs/hammerjs@2.0.17", "", { "dependencies": { "@types/hammerjs": "^2.0.36" } }, "sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A=="],
+
+    "@expo-google-fonts/caveat": ["@expo-google-fonts/caveat@0.4.2", "", {}, "sha512-kCG35tRUX8Wi+u0Jh5ck3K1u7vZkdLnwRTuKMrEnlVmikvxQFXN1KjF5cL2vqRG7Hwm7648Zl8xe1BWAoIsPCA=="],
 
     "@expo-google-fonts/inter": ["@expo-google-fonts/inter@0.4.2", "", {}, "sha512-syfiImMaDmq7cFi0of+waE2M4uSCyd16zgyWxdPOY7fN2VBmSLKEzkfbZgeOjJq61kSqPBNNtXjggiQiSD6gMQ=="],
 

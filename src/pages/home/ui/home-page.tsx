@@ -1,5 +1,5 @@
 import { useIsFocused, useRouter } from 'expo-router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -18,18 +18,20 @@ import {
 } from '@/entities/program';
 
 import { weekFacts } from '../model/week-facts';
+import { HomeTour } from '@/features/home-tour';
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { useProgram } from '@/shared/lib/program';
+import { usePlanOver, useProgram } from '@/shared/lib/program';
+import { useSpotlightAnchor, useSpotlightScroller } from '@/shared/lib/spotlight';
 import { useDockHeight } from '@/shared/ui/action-dock';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
 import { Glow } from '@/shared/ui/glow';
 import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
-import { IntroReveal } from '@/shared/ui/splash';
+import { IntroReveal, useSplashRevealed } from '@/shared/ui/splash';
 
 import { briefTokens } from '../model/brief';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
@@ -124,6 +126,12 @@ export function HomePage() {
   const t = useT();
   const dockHeight = useDockHeight();
   const program = useProgram();
+  const planOver = usePlanOver();
+  const revealed = useSplashRevealed();
+  /** The scroller, lent to the tour so a stop below the fold comes up. */
+  const scroll = useRef<Animated.ScrollView>(null);
+  useSpotlightScroller((y) => scroll.current?.scrollTo({ y, animated: true }));
+  const overviewAnchor = useSpotlightAnchor('home.overview');
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
@@ -181,6 +189,7 @@ export function HomePage() {
           screenshot. */}
       <Glow animated paused={!focused} />
       <Animated.ScrollView
+        ref={scroll}
         onScroll={onScroll}
         scrollEventThrottle={16}
         style={{ flex: 1 }}
@@ -213,6 +222,9 @@ export function HomePage() {
 
         {/* The week, right under the header: it is what tells the user which
             day this screen is about now that the date has gone. */}
+        {/* The week and the morning line are the tour's first stop: what
+            Home says about the feet. One view around both, for it to light. */}
+        <View ref={overviewAnchor} collapsable={false}>
         <IntroReveal order={1} style={styles.week}>
           <StreakWeek done={stripWeek(Date.now())} />
         </IntroReveal>
@@ -278,6 +290,8 @@ export function HomePage() {
             answered. It asks how the body took yesterday, and that answer is
             what changes today — so until it is given it outranks the work, and
             the moment it is given it stops outranking anything. */}
+        </View>
+
         <IntroReveal order={3} fade={false} style={styles.check}>
           <DailyStack
             swapped={checkedIn}
@@ -323,6 +337,10 @@ export function HomePage() {
           }}
         />
       )}
+
+      {/* The tour to the first test, after the purchase or the skip: over Home
+          while it is in front and nothing else is over it. */}
+      <HomeTour visible={focused && revealed && !planOver && !milestoneOpen && !streakOpen && !checkSheet} />
 
       <StreakSheet
         visible={streakOpen}
