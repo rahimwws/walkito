@@ -8,7 +8,8 @@
  * so it is part of the deploy rather than a note in the README.
  *
  * It runs last on purpose: IndexNow fetches the key file and the sitemap from
- * the live host, so the upload has to have landed first.
+ * the live host, so the upload has to have landed first, and Cloudflare's copy
+ * of the site has to have been emptied (see purgeCloudflare below).
  *
  *   bun run deploy
  */
@@ -90,4 +91,40 @@ run('rsync', ['-rlpz', '--checksum', '--delete', ...(SSH ? ['-e', SSH] : []), 'o
 if (TARGET.startsWith('root@')) {
   run('ssh', [TARGET.split(':')[0], 'chown -R deploy:deploy /var/www/walkito']);
 }
+await purgeCloudflare();
 if (changedEnglish && existsSync(CHANGED)) run('node', ['scripts/indexnow.mjs', CHANGED]);
+
+/**
+ * Empties Cloudflare's cache of the site, so a deploy shows at once.
+ *
+ * walkito.site is behind Cloudflare (since 2026-10-13), which keeps pages for
+ * 10 minutes and unhashed images for an hour (the origin's
+ * Cloudflare-CDN-Cache-Control headers). Without this a deploy still shows,
+ * only within those times; so a missing token or a failed purge is reported
+ * and never fails the deploy.
+ *
+ * Needs CLOUDFLARE_API_TOKEN: a token with only Zone > Cache Purge > Purge on
+ * walkito.site (the GitHub secret of that name, or the environment on a
+ * laptop). Purge everything rather than a list of changed files: the site is
+ * small, and the edges refill it on the next visits.
+ */
+async function purgeCloudflare() {
+  const ZONE = process.env.CLOUDFLARE_ZONE_ID || 'a1069e77fad2cf52f5bd746a9c6dd79d';
+  const token = process.env.CLOUDFLARE_API_TOKEN;
+  if (!token) {
+    console.log('deploy: no CLOUDFLARE_API_TOKEN, Cloudflare cache not purged (pages refresh within 10 minutes)');
+    return;
+  }
+  try {
+    const res = await fetch(`https://api.cloudflare.com/client/v4/zones/${ZONE}/purge_cache`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ purge_everything: true }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok && body.success) console.log('deploy: Cloudflare cache purged');
+    else console.log(`deploy: Cloudflare purge failed (${res.status}): ${JSON.stringify(body.errors ?? body)}`);
+  } catch (e) {
+    console.log(`deploy: Cloudflare purge failed: ${e.message}`);
+  }
+}
