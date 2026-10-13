@@ -15,9 +15,10 @@ import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FaqRows, Prose, typeset } from '@/components/Prose';
-import { guideCards, guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { guideCards, guidePath, languagesOf, libraryPageFor, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { isExercisePage } from '@/lib/nav';
 import { isTranslatedPage } from '@/lib/i18n';
-import type { GuideBlock, GuideTable } from '@/lib/guides/types';
+import type { GuideBlock, GuideExercise, GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { mainClip, videoSchema, imageSchema } from '@/lib/video';
@@ -60,6 +61,16 @@ const LIBRARY_CRUMB = {
   fr: "Bibliothèque d'exercices",
   it: 'Libreria di esercizi',
   de: 'Übungsbibliothek',
+} as const;
+/** Before the link from an exercise card to that exercise's own page. */
+const LIBRARY_LEAD = {
+  en: 'In the exercise library:',
+  ru: 'В библиотеке упражнений:',
+  es: 'En la biblioteca de ejercicios:',
+  pt: 'Na biblioteca de exercícios:',
+  fr: 'Dans la bibliothèque d’exercices :',
+  it: 'Nella libreria di esercizi:',
+  de: 'In der Übungsbibliothek:',
 } as const;
 
 /**
@@ -213,7 +224,7 @@ export function Guide({ guide }: { guide: GuideData }) {
   // cards, so it can never disagree with them. Only on guides with three or
   // more different exercises; not on single-exercise pages or the test page.
   const exerciseList = (() => {
-    if (guide.page.startsWith('ex') || guide.page === 'calfRaiseTest') return [];
+    if (isExercisePage(guide.page) || guide.page === 'calfRaiseTest') return [];
     const seen = new Set<string>();
     return guide.sections
       .flatMap((s) => s.exercises ?? [])
@@ -224,12 +235,29 @@ export function Guide({ guide }: { guide: GuideData }) {
   // those pages show the names alone.
   const listDoses = exerciseList.every((e) => (e.dose ?? '').length > 0 && e.dose.length <= 48);
   const firstExerciseId = new Set<string>();
+  // A card links its exercise's own page in the library, named as that page's
+  // breadcrumb names it: on the first card that shows the exercise, never on
+  // that page itself, never for a clip that only stands in for the block, and
+  // not where the card's own text already links it.
+  const linkedLibrary = new Set<string>();
+  const libraryLink = (e: GuideExercise) => {
+    const target = e.media && !e.mediaIsStandIn ? libraryPageFor(e.media, guide.lang) : undefined;
+    if (!target || target.page === guide.page || linkedLibrary.has(target.page)) return null;
+    linkedLibrary.add(target.page);
+    const href = guidePath(target);
+    if ([e.how, e.stop].some((t) => t?.includes(`](${href})`))) return null;
+    return (
+      <p className="ex-library">
+        {LIBRARY_LEAD[guide.lang]} <a href={href}>{target.crumb}</a>
+      </p>
+    );
+  };
   // English only: the sheets are in English.
   const printable = guide.lang === 'en' ? printableForGuide(guidePath(guide)) : undefined;
 
   // Exercise pages sit under the exercise library, so their trail has the
   // library in the middle: Home > Exercise library > Calf raises.
-  const inLibrary = guide.page.startsWith('ex');
+  const inLibrary = isExercisePage(guide.page);
   const trail = [
     { name: HOME_CRUMB[guide.lang], item: `${SITE_URL}${TRANSLATED.home[guide.lang]}` },
     ...(inLibrary ? [{ name: LIBRARY_CRUMB[guide.lang], item: `${SITE_URL}${customHref('exercises', guide.lang)}` }] : []),
@@ -378,6 +406,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                   {e.media && <ExerciseMedia id={e.media} alt={e.alt ? `${e.name}. ${e.alt}` : e.name} caption={e.caption} />}
                   <div>
                     <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
+                    {libraryLink(e)}
                     <p>
                       <Inline text={e.how} />
                     </p>
@@ -399,6 +428,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                 {section.exercises.map((e) => (
                   <li key={e.name}>
                     <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
+                    {libraryLink(e)}
                     <p className="dose">{e.dose}</p>
                     <p>
                       <Inline text={e.how} />

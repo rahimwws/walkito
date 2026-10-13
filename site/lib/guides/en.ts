@@ -308,6 +308,7 @@ export const FLAT_FEET_EN: Guide = {
   },
   crumb: 'Flat feet exercises',
   campaign: 'guide-flat-feet',
+  related: ['hubFlatFeet'],
 };
 
 /*
@@ -631,4 +632,5 @@ export const HEEL_PAIN_EN: Guide = {
   },
   crumb: 'Plantar fasciitis exercises',
   campaign: 'guide-plantar-fasciitis',
+  related: ['hubPlantarFasciitis'],
 };

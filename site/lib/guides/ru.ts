@@ -294,6 +294,7 @@ export const FLAT_FEET_RU: Guide = {
   },
   crumb: 'Упражнения при плоскостопии',
   campaign: 'guide-flat-feet-ru',
+  related: ['hubFlatFeet'],
 };
 
 export const HEEL_PAIN_RU: Guide = {
@@ -597,4 +598,5 @@ export const HEEL_PAIN_RU: Guide = {
   },
   crumb: 'Упражнения при плантарном фасциите',
   campaign: 'guide-plantar-fasciitis-ru',
+  related: ['hubPlantarFasciitis'],
 };

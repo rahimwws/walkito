@@ -152,4 +152,10 @@ export type Guide = {
   /** Breadcrumb label for the guide itself. */
   crumb: string;
   campaign: string;
+  /** Pages to offer first under "Related guides", in this order, before the
+   * ones picked by topic (`relatedGuides`). The two main guides name their
+   * condition's overview this way, which the topic's order would otherwise
+   * offer last. A page this language does not have is skipped; left out, the
+   * cards are picked by topic alone. */
+  related?: readonly (TranslatedPage | EnglishPage)[];
 };

@@ -6,6 +6,7 @@ import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 import { guidePath } from '@/lib/guides';
 import { INDEXED_LANGS, indexedLanguages, isIndexedLang, langOfPath } from '@/lib/i18n';
 import { clipSeconds, isoDateTime, mainClip } from '@/lib/video';
+import { isExercisePage } from '@/lib/nav';
 
 /**
  * Only the pages that exist, each with the date its content last changed.
@@ -163,7 +164,7 @@ export function videoEntries(): VideoEntry[] {
     ...Object.values(ARTICLES_EN),
     ...(INDEXED_LANGS.includes('es') ? Object.values(ARTICLES_ES) : []),
     ...(INDEXED_LANGS.includes('ru') ? Object.values(ARTICLES_RU) : []),
-  ].filter((g) => g != null && g.page.startsWith('ex'));
+  ].filter((g) => g != null && isExercisePage(g.page));
   return guides.flatMap((g) => {
     const clip = mainClip(g!.sections.flatMap((s) => s.exercises ?? []));
     if (!clip) return [];

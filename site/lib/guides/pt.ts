@@ -308,6 +308,7 @@ export const FLAT_FEET_PT: Guide = {
   },
   crumb: 'Exercícios para pé chato',
   campaign: 'guide-flat-feet-pt',
+  related: ['hubFlatFeet'],
 };
 
 export const HEEL_PAIN_PT: Guide = {
@@ -612,4 +613,5 @@ export const HEEL_PAIN_PT: Guide = {
   },
   crumb: 'Exercícios para fascite plantar',
   campaign: 'guide-plantar-fasciitis-pt',
+  related: ['hubPlantarFasciitis'],
 };
