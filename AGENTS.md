@@ -192,8 +192,8 @@ Which ad, campaign or link brought an install, and what it went on to pay. Throu
 
 1.0.1 (26) installed at 102.6 MB, about 45 MB to download. Install size only shrinks through a store build; OTA cannot touch it. The levers, and what keeps them working:
 
-- **Embedded frameworks are stripped** in Release device builds (-7.2 MB): `plugins/strip-embedded-frameworks.sh`, run by a phase that `plugins/with-strip-frameworks.js` puts after `[CP] Embed Pods Frameworks`. It uses `strip -x -S` only where the build holds a dSYM with the framework's UUID (the Expo frameworks) and `strip -S` elsewhere: React, ReactNativeDependencies and hermesvm ship without dSYMs, so their local symbols are the only function names a crash has. Put React Native's published dSYMs in the build and they move to `-x -S` by themselves (about 5.9 MB more). The plugin stays **first** in app.json, since Xcode mods run in reverse order and it has to run last. The EAS Xcode log prints a before/after line per framework.
-- **Hermes debug info goes to a source map, not the app** (-1.5 to -1.8 MB): `plugins/with-hermes-sourcemap.js` sets `SOURCEMAP_FILE` in the bundle phase. Production sets `uploadSourceMaps`, so EAS Observe symbolicates reported errors, and keeps the map as a build artifact (`ios/build/sourcemaps/main.jsbundle.map`). For any other JS stack from a store build, download that build's artifacts from its EAS page and run `npx metro-symbolicate main.jsbundle.map < stack.txt`; Hermes frames read `address at main.jsbundle:1:<offset>`. A map fits one build only, and a stack from an OTA update needs that update's map.
+- **Embedded frameworks are stripped** in Release device builds (-7.2 MB): `plugins/strip-embedded-frameworks.sh`, run by a phase that `plugins/with-strip-frameworks.js` puts after `[CP] Embed Pods Frameworks`. It uses `strip -x -S` only where the build holds a dSYM with the framework's UUID (the Expo frameworks) and `strip -S` elsewhere: React, ReactNativeDependencies and hermesvm ship without dSYMs, so their local symbols are the only function names a crash has. Put React Native's published dSYMs in the build and they move to `-x -S` by themselves (about 5.9 MB more). The plugin stays **first** in app.json, since Xcode mods run in reverse order and it has to run last. The Xcode log of the build prints a before/after line per framework.
+- **Hermes debug info goes to a source map, not the app** (-1.5 to -1.8 MB): `plugins/with-hermes-sourcemap.js` sets `SOURCEMAP_FILE` in the bundle phase. Production sets `uploadSourceMaps`, so EAS Observe symbolicates reported errors, and keeps the map as a build artifact (`ios/build/sourcemaps/main.jsbundle.map`). For any other JS stack from a store build, take that build's map (kept next to its `.ipa` from `.builds/`, see Builds and releases; builds made on EAS before that have it on their EAS page) and run `npx metro-symbolicate main.jsbundle.map < stack.txt`; Hermes frames read `address at main.jsbundle:1:<offset>`. A map fits one build only, and a stack from an OTA update needs that update's map.
 - **Android-only native modules stay out of iOS** via `expo.autolinking.ios.exclude` in package.json (Google Sign-In, -0.58 MB). It drops the RN pod and the Expo adapter together; `react-native.config.js` would only drop the first. JS must guard the missing module (`TurboModuleRegistry.get`, a platform check), as `google-auth.ts` does.
 - **A native package costs its full size whether or not anything imports it.** Rive sat unimported in the binary at 5.9 MB. Remove the dependency when its last import goes.
 - **JSON is source.** Metro inlines a required `.json` into the bytecode, so bulk data ships as an asset. The two raster Lottie flipbooks are the exception, on purpose: as `.lottie` assets they loaded off the main thread on iOS and decoded mid-animation, so the splash reveal, the update sheet and the contract step hitched. They stay JSON, and cost only the frames they play: `assets/lottie/contract.json` is the 61 frames of the ceremony the step shows, trimmed from `assets-src/lottie/contract.json` by `bun run build:lottie` (`verify:lottie` fails if it is stale, and skips on EAS, whose upload leaves the source out). Metro and `.easignore` both keep `assets-src/` out.
@@ -202,6 +202,51 @@ Which ad, campaign or link brought an install, and what it went on to pay. Throu
 - **A face the system has is not bundled.** SF Pro Rounded comes from iOS (see Typography): five `.otf` files, embedded twice, were 4.4 MB. Inter ships only the three weights the note sheet sets.
 - **The app icon is as small as it gets without loss.** actool re-encodes the 1024 icon's pixels (1.4 MB), so recompressing the PNG changes nothing, and it is already opaque. Quantizing to 256 colours saves about 1 MB and bands the gradients visibly.
 - **Watch each store build.** Compare `Payload/Walkito.app` and `main.jsbundle` with the previous IPA and look into anything that grew by more than 1-2 MB: 7 MB of Lottie frames once got in unnoticed.
+
+# Builds and releases: on this Mac, never on EAS's builders
+
+**Every store build (App Store, TestFlight, Google Play) is built on the Mac with `eas build --local` and uploaded from the Mac.** EAS's cloud builders and EAS Submit are not used. EAS is kept for three things only: over-the-air updates (`eas update`), the signing credentials and the `production` environment variables a local build downloads, and the remote build number (`appVersionSource: remote`, `autoIncrement`).
+
+- **Never run** `eas build` without `--local`, `eas submit` or `--auto-submit`. The EAS workflow `release.yml` publishes updates only and stops when a build is needed; no workflow builds or submits. If a task seems to need a cloud build, stop and ask.
+- **Update or build?** `bun run ship` answers it by the fingerprint (`scripts/can-update.mjs`): a JS-only change goes out as an EAS Update; a native change builds locally into `.builds/` and prints the upload command. `bun run ship --dry-run` only says which.
+
+**OTA (JS and assets only, fingerprint unchanged):**
+
+```bash
+bun run ship                                   # checks, decides, publishes the update
+eas update --channel production --platform ios --message "…"     # by hand
+eas update --channel production --platform android --message "…"
+eas update:rollback                            # undo
+```
+
+**iOS → TestFlight / App Store:**
+
+```bash
+bun run build:ios      # .builds/build-<time>.ipa (eas build --local, profile production)
+bun run submit:ios     # xcrun altool uploads the newest .ipa to App Store Connect
+```
+
+Then in App Store Connect: TestFlight, or attach the build to a version and send it to review.
+
+**Android → Google Play:**
+
+```bash
+bun run build:android                  # .builds/build-<time>.aab, with JDK 17
+bun run submit:android                 # fastlane supply → internal track
+TRACK=production bun run submit:android
+```
+
+Managed publishing is on, so a production upload still waits for "Publish" in the Play Console.
+
+**What a local build needs:**
+
+- Xcode, CocoaPods and fastlane (`brew install fastlane`; eas-cli calls it for the iOS archive), the Android SDK and NDK, and **JDK 17**: the Mac's default Java is 27, which Gradle for React Native does not take, so `build:android` sets `JAVA_HOME` itself.
+- `eas login` (or `EXPO_TOKEN`). The build downloads the `production` environment from EAS; none of its variables is "Secret", so nothing has to be copied by hand. A Secret one would not come down and would have to be exported locally.
+- `APP_VARIANT=production` set before the CLI reads `app.config.ts` (the scripts do), or EAS resolves the `.dev` app.
+- A committed tree: `ship` refuses a dirty one, and a store build that matches no commit cannot be reproduced.
+- `~/.walkito/release.env`, outside the repository, for the uploads: `ASC_KEY_ID`, `ASC_ISSUER_ID` (an App Store Connect API key with the App Manager role; `altool` reads `AuthKey_<ASC_KEY_ID>.p8` from `~/.appstoreconnect/private_keys/`) and `PLAY_JSON_KEY` (path to a JSON key of the `eas-submit@walkito.iam.gserviceaccount.com` service account). The keys EAS holds cannot be downloaded, so these are new keys made for the Mac. Never put one in the repository.
+
+**Source maps.** The production profile's `uploadSourceMaps` and `buildArtifactPaths` were made for the cloud. On a local build the map is written by `plugins/with-hermes-sourcemap.js` inside the build's working copy; keep `main.jsbundle.map` from `.builds/` (or build with `EAS_LOCAL_BUILD_SKIP_CLEANUP=1` and take it from `ios/build/sourcemaps/`) next to the `.ipa`, and check on the first local build whether EAS Observe still symbolicates its errors.
 
 # Updates
 
