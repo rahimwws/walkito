@@ -25,7 +25,7 @@ import { purchases } from './store';
  * Whether paid access was held at some point and is not held now.
  *
  * Both halves are required. `hadAccess` is what tells a subscription that
- * ended, or a legacy pass that ran out, from an account that never bought
+ * ended, or a 3-month pass that ran out, from an account that never bought
  * anything — which correctly falls through to the ordinary paywall.
  *
  * Reads `entitled` first, so subscribing again — from the expiry screen or

@@ -21,7 +21,13 @@ export type PaywallPlacement =
   /** The invite price, earned with a friend's code. */
   | 'paywall_invite'
   /** The expiry screen: somebody whose access ended. */
-  | 'paywall_expired';
+  | 'paywall_expired'
+  /** The limited offer: the comeback stage of the offer screen, with the
+   * 3-month pass as its third card. */
+  | 'limited_offer'
+  /** The cancel flow's answer to "It doesn't fit my budget": the 3-month pass
+   * at the retention price. */
+  | 'cancel_budget';
 
 export type PaywallApi = {
   /** Asks Superwall to present whatever its dashboard has for this placement. */

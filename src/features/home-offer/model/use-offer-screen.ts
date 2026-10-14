@@ -25,6 +25,7 @@ import {
   type Offering,
 } from '@/entities/purchase';
 import { track } from '@/shared/lib/analytics';
+import { usePaywall } from '@/shared/lib/paywall';
 import { useSplashRevealed } from '@/shared/ui/splash';
 
 import { contentFor, type OfferContent, type OfferShelf } from './content';
@@ -39,6 +40,9 @@ export type OfferGuard = { busy: boolean; linkAt: number };
 
 /** A trip to the browser from the legal line starts within this of the tap. */
 const LINK_GRACE_MS = 5000;
+/** The limited offer's Superwall placement is asked for this long after it
+ * shows, as the paywall's own placements are. */
+const PLACEMENT_AFTER_MS = 600;
 
 /**
  * When the trial was last left. Two offer screens can be mounted at once (an
@@ -88,8 +92,13 @@ function useInFront(): boolean {
  * trial, then the comeback against its real deadline, then the standard plans.
  * Leaving the app with the trial on screen turns it down: the comeback's push
  * goes on the spot (readied while the trial is up) and its 15 minutes start.
+ *
+ * The comeback is the limited offer: with `sellsPass` (a pass checkout is
+ * mounted beside the screen) it carries the 3-month pass as its third card.
+ * It registers the Superwall placement `limited_offer` as it shows; with no
+ * campaign there, this screen is the offer.
  */
-export function useOfferScreen(): {
+export function useOfferScreen(sellsPass: boolean = false): {
   content: OfferContent | null;
   status: OfferScreenStatus;
   retry: () => void;
@@ -155,7 +164,7 @@ export function useOfferScreen(): {
     setAttempt((n) => n + 1);
   };
 
-  const content = shelf != null ? contentFor(stage, shelf, endsAt) : null;
+  const content = shelf != null ? contentFor(stage, shelf, endsAt, Date.now(), sellsPass) : null;
   // `up`: the offer has been shown, and stays on screen from then on. Still
   // drawn once access arrives, so the screen does not empty under the setup
   // screens fading in over it; `kind`, which everything below hangs on, stops
@@ -174,6 +183,22 @@ export function useOfferScreen(): {
     // it go, and so does the listener below).
     if (kind === 'trial') markTrialOfferShown();
   }, [kind]);
+
+  // The limited offer: its Superwall placement, once per showing, and the
+  // pass on it counted where it is one of the cards. The API is held in a ref,
+  // never an effect's dependency (AGENTS.md, Paywalls).
+  const paywall = usePaywall();
+  const paywallRef = useRef(paywall);
+  paywallRef.current = paywall;
+  const passOnCard = content?.kind === 'comeback' && content.plans.some((p) => p.slot === 'pass');
+  useEffect(() => {
+    if (kind !== 'comeback') return undefined;
+    const timer = setTimeout(() => paywallRef.current.register('limited_offer'), PLACEMENT_AFTER_MS);
+    return () => clearTimeout(timer);
+  }, [kind]);
+  useEffect(() => {
+    if (kind === 'comeback' && passOnCard) track('pass_offer_view', { placement: 'limited_offer' });
+  }, [kind, passOnCard]);
 
   // The deals the comeback really holds, for the words of its push.
   const year = shelf?.offer?.annual != null;

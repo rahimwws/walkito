@@ -8,10 +8,10 @@
  * guilts or promises a result. An offer is said once, plainly, with its terms
  * under it.
  *
- * **No price is written here.** Every figure arrives as `{price}`,
- * `{regular}` or `{perMonth}`, the store's own string for this storefront;
- * `{percent}` compares two store prices. `{date}` is a whole date, written
- * out in the language ("14 October 2027"). `{count}` is minutes.
+ * **No price is written here.** The budget answer's offer, the 3-month pass,
+ * has its own lines (`pass.ts`), where every figure is the store's `{price}`.
+ * `{date}` is a whole date, written out in the language ("14 October 2027").
+ * `{count}` is minutes.
  *
  * **"Walkito Plus" is the product's name** and stays as it is in every
  * language. "App Store" and "Google Play" too.
@@ -51,23 +51,6 @@ export const CANCEL_EN = {
 
   // ── "It doesn't fit my budget" ───────────────────────────────────────────
   'cancel.budget.title': 'Let’s make it easier on your budget',
-  /** The yearly plan's next year at a lower price. */
-  'cancel.budget.nextYearTitle': '{percent}% off your next year',
-  'cancel.budget.nextYearBody':
-    'Your next year costs {price} instead of {regular}. Your plan and everything you’ve logged stay just as they are.',
-  'cancel.budget.nextYearCta': 'Take {percent}% off',
-  'cancel.budget.nextYearTerms':
-    'The lower price starts at your next renewal and covers one year. After that, the usual price applies. You can still cancel any time in your subscription settings.',
-  /** For somebody paying by the month or the week. */
-  'cancel.budget.yearlyTitle': 'Switch to yearly',
-  /** `{perMonth}` is the store's own division of the yearly price. */
-  'cancel.budget.yearlyBody': 'A year of Walkito Plus is {price}, about {perMonth} a month.',
-  'cancel.budget.yearlyBodyPlain': 'A year of Walkito Plus is {price}.',
-  'cancel.budget.savingMonthly': 'That’s {percent}% less than paying month by month.',
-  'cancel.budget.savingWeekly': 'That’s {percent}% less than paying week by week.',
-  'cancel.budget.yearlyCta': 'Switch to yearly',
-  'cancel.budget.yearlyTerms':
-    'The store shows the price and when it starts before you confirm. Your plan and everything you’ve logged stay as they are.',
   /** Nothing to offer. */
   'cancel.budget.noneTitle': 'We understand',
   'cancel.budget.none': 'Everything you’ve logged stays in Walkito, and your plan will be here if you come back.',
@@ -132,8 +115,6 @@ export const CANCEL_EN = {
 
   // ── All set ──────────────────────────────────────────────────────────────
   'cancel.done.title': 'All set',
-  'cancel.done.nextYear': 'Your next year of Walkito Plus is {percent}% off. Thank you for staying.',
-  'cancel.done.yearly': 'You’re moving to the yearly plan. Thank you for staying.',
   'cancel.done.freeMonth': 'Your next month is free. Thank you for staying.',
   'cancel.done.lighter': 'Your plan is lighter from today. You can change it any time in Settings.',
   'cancel.done.short': {

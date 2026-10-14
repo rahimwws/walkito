@@ -126,6 +126,6 @@ export const NOTIFICATIONS_FR = {
   'notifications.offerWaitBody': 'L’abonnement annuel t’attend à prix réduit. Touche pour le voir.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Ton accès au programme se termine dans une semaine',
+  'notifications.expiryTitle': 'Ton Pass 3 mois se termine dans une semaine',
   'notifications.expiryBody': 'Tes progrès restent, quoi qu’il arrive.',
 };

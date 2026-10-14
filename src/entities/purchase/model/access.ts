@@ -1,4 +1,4 @@
-import { ENTITLEMENT, LEGACY_PASS_IDS, PASS_ACCESS_DAYS } from './purchase';
+import { ENTITLEMENT, PASS_ACCESS_DAYS, isPassProduct } from './purchase';
 
 /**
  * Who has access, as arithmetic on plain data.
@@ -18,8 +18,11 @@ import { ENTITLEMENT, LEGACY_PASS_IDS, PASS_ACCESS_DAYS } from './purchase';
  * it with no expiry, which is what lifetime means), is access. A lifetime
  * purchase counts only through that entitlement — RevenueCat revokes it on a
  * refund, while the purchase stays in the transaction list. The only
- * arithmetic left is for the legacy one-time pass, which Apple never expires
- * and which is no longer sold.
+ * arithmetic left is for the 3-month pass, which Apple never expires and which
+ * grants no entitlement: its 90 days are dated here from the store's record,
+ * so access arrives the moment a purchase completes. The server's grant
+ * (`pass.ts`), which can queue the days behind a subscription, is the other
+ * half, joined in `store.ts`.
  */
 
 /** The fields of `PurchasesEntitlementInfo` this calculation reads. */
@@ -51,7 +54,7 @@ export type CustomerFacts = {
 };
 
 function isPass(productId: string): boolean {
-  return LEGACY_PASS_IDS.includes(productId);
+  return isPassProduct(productId);
 }
 
 /**
@@ -68,20 +71,25 @@ export function subscriptionActive(info: CustomerFacts): boolean {
 }
 
 /**
- * When a legacy pass runs out, from the latest purchase of one.
+ * When a pass runs out, from the latest purchase of one, by the store's own
+ * record.
  *
  * RevenueCat cannot expire a non-renewing product: a non-renewing purchase
- * attached to an entitlement unlocks it "forever", with `expirationDate` null.
- * So the end is computed here, from the most recent pass purchase. Latest, not
- * first, because a second purchase extended access rather than being ignored.
+ * attached to an entitlement unlocks it "forever", with `expirationDate` null,
+ * and one attached to none (the 3-month pass) grants nothing at all. So the
+ * end is computed here, from the most recent pass purchase. Latest, not first,
+ * because a second purchase extended access rather than being ignored. The
+ * server counts a second pass on from the end of the first, which this does
+ * not: `passEndsAt` in `store.ts` takes whichever of the two ends later.
  *
  * Two sources, deliberately. `nonSubscriptionTransactions` is the documented
- * home for these purchases and is the usual answer. The active entitlement is
- * the belt to that brace: if the transaction list is ever empty while the
- * entitlement is present — a restore whose receipts have not finished syncing,
- * say — reading only the list would return null, and a permanently granted
- * entitlement would be left undated. That is the precise shape of "an expired
- * pass unlocks the app for ever".
+ * home for these purchases and is the usual answer (Google Play's consumable
+ * passes are there too, consumed or not). The active entitlement is the belt
+ * to that brace, for the old 12-week pass, which did grant one: if the
+ * transaction list is ever empty while the entitlement is present — a restore
+ * whose receipts have not finished syncing, say — reading only the list would
+ * return null, and a permanently granted entitlement would be left undated.
+ * That is the precise shape of "an expired pass unlocks the app for ever".
  */
 export function passEnd(info: CustomerFacts, bonusDays = 0): Date | null {
   const stamps: number[] = [];
@@ -107,7 +115,8 @@ export function passEnd(info: CustomerFacts, bonusDays = 0): Date | null {
 }
 
 /**
- * Whether an active entitlement was granted by a legacy pass.
+ * Whether an active entitlement was granted by a pass (the old 12-week one
+ * did grant one; the 3-month pass grants none).
  *
  * Those products grant `premium` with no expiry, so "some entitlement is
  * active" stops being evidence of current access the moment one of them is
@@ -141,9 +150,9 @@ export type AccessVerdict = {
  *    entitlement, or access granted from the RevenueCat dashboard. This app sells one level of access,
  *    so an active entitlement under any name means somebody paid; the name is
  *    only checked to tell a drifted dashboard apart in the diagnostics.
- * 3. A legacy pass, against the clock — the entitlement it grants never
- *    lapses, so trusting it would turn a one-time purchase into the app for
- *    ever.
+ * 3. A pass, against the clock — nothing in the store ever ends it, so
+ *    trusting the store's "bought" would turn a one-time purchase into the
+ *    app for ever.
  * 4. A pass entitlement nothing dates is refused rather than honoured.
  */
 export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): AccessVerdict {

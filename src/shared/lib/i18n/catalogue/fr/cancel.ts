@@ -25,20 +25,6 @@ export const CANCEL_FR = {
   'cancel.anywayHintAndroid': 'Ouvre tes abonnements dans Google Play',
 
   'cancel.budget.title': 'Rendons ça plus doux pour ton budget',
-  'cancel.budget.nextYearTitle': '{percent} % de réduction sur ton année suivante',
-  'cancel.budget.nextYearBody':
-    'Ton année suivante coûte {price} au lieu de {regular}. Ton plan et tout ce que tu as noté restent tels quels.',
-  'cancel.budget.nextYearCta': 'Profiter de {percent} % de réduction',
-  'cancel.budget.nextYearTerms':
-    'Le prix réduit commence à ton prochain renouvellement et couvre une année. Ensuite, le prix habituel s’applique. Tu peux toujours résilier à tout moment dans les réglages de tes abonnements.',
-  'cancel.budget.yearlyTitle': 'Passer à l’annuel',
-  'cancel.budget.yearlyBody': 'Une année de Walkito Plus coûte {price}, soit environ {perMonth} par mois.',
-  'cancel.budget.yearlyBodyPlain': 'Une année de Walkito Plus coûte {price}.',
-  'cancel.budget.savingMonthly': 'C’est {percent} % de moins que payer mois par mois.',
-  'cancel.budget.savingWeekly': 'C’est {percent} % de moins que payer semaine par semaine.',
-  'cancel.budget.yearlyCta': 'Passer à l’annuel',
-  'cancel.budget.yearlyTerms':
-    'Le store t’indique le prix et sa date de début avant que tu confirmes. Ton plan et tout ce que tu as noté restent tels quels.',
   'cancel.budget.noneTitle': 'On comprend',
   'cancel.budget.none': 'Tout ce que tu as noté reste dans Walkito, et ton plan t’attend si tu reviens.',
 
@@ -96,8 +82,6 @@ export const CANCEL_FR = {
   'cancel.noTime.reminderCaption': 'Ton rappel du jour, quand ça t’arrange',
 
   'cancel.done.title': 'C’est fait',
-  'cancel.done.nextYear': 'Ton année suivante de Walkito Plus est à {percent} % de réduction. Merci de rester.',
-  'cancel.done.yearly': 'Tu passes à l’abonnement annuel. Merci de rester.',
   'cancel.done.freeMonth': 'Ton prochain mois est offert. Merci de rester.',
   'cancel.done.lighter': 'Ton plan est plus léger dès aujourd’hui. Tu peux le changer à tout moment dans les Réglages.',
   'cancel.done.short': {

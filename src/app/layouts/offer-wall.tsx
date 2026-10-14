@@ -3,8 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Modal, Platform, StyleSheet, View } from 'react-native';
 import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
-import { OfferScreen } from '@/features/home-offer';
+import { OfferScreen, type PassSale } from '@/features/home-offer';
 import { useColorScheme } from '@/shared/lib/theme';
+import { usePassCheckout } from '@/widgets/pass-checkout';
 
 const BLUR = 36;
 const IN_MS = 520;
@@ -25,9 +26,18 @@ const PRESENT_AFTER_MS = 360;
  * Home is theirs; leaving the app is the other way out, and it comes back on
  * the next launch. A modal rather than a route, so the blurred page under it
  * is their own Home, the thing the offer is for.
+ *
+ * The limited offer's 3-month pass is bought through the pass checkout, whose
+ * sheets are mounted here, inside this modal, so they rise over the offer.
  */
 export function OfferWall({ visible }: { visible: boolean }) {
   const scheme = useColorScheme();
+  const checkout = usePassCheckout();
+  const pass: PassSale = {
+    buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
+    busy: checkout.busy,
+    notice: checkout.notice,
+  };
   const [mounted, setMounted] = useState(visible);
   const progress = useSharedValue(0);
   /** Up from the first frame: a launch onto the wall, not the tour's end. */
@@ -80,8 +90,9 @@ export function OfferWall({ visible }: { visible: boolean }) {
             { backgroundColor: scheme === 'dark' ? 'rgba(10,10,12,0.62)' : 'rgba(250,250,252,0.7)' },
           ]}
         />
-        <OfferScreen />
+        <OfferScreen pass={pass} />
       </Animated.View>
+      {checkout.sheet}
     </Modal>
   );
 }

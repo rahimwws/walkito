@@ -2,7 +2,8 @@ import { router } from 'expo-router';
 import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
-import { devPreviewCancel } from '@/pages/settings';
+import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
+import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { previewNotification } from '@/entities/notifications';
 import { currentDay, devClearCheckIn } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
@@ -11,6 +12,7 @@ import {
   devPreviewHomeOffer,
   devPreviewOfferEnded,
   devPreviewPaywall,
+  devSetReviewMode,
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
@@ -58,25 +60,50 @@ const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
 const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
 /** `walkito.dev://?previewCancel` opens Settings with the cancel flow over it,
  * as a yearly subscriber with an improvement to show; `?previewCancel=monthly`
- * as a monthly one. Pretend subscription, sample prices, nothing recorded
+ * as a monthly one; `?previewCancel=budget` straight on the budget answer's
+ * 3-month pass. Pretend subscription, sample prices, nothing recorded
  * (`pages/settings/model/cancel-preview.ts`). */
 const CANCEL_PARAM = /[?&]previewCancel(?:=(\w+))?/;
+/** `walkito.dev://?previewLimitedOffer` opens Settings with the review
+ * account's "Special offers" sheet over it: the limited offer's three cards,
+ * with the sample prices turned on. */
+const LIMITED_OFFER_PARAM = /[?&]previewLimitedOffer\b/;
+/** `walkito.dev://?previewPassSet` raises the pass checkout's "Your 3 months
+ * are set", as a yearly subscriber would see it after buying a pass. */
+const PASS_SET_PARAM = /[?&]previewPassSet\b/;
+/** `walkito.dev://?previewReviewMode` turns review mode on on this phone, as
+ * the server sets it on the App Review account (`=off` to stop): "Manage
+ * subscription" over a stand-in, and "Special offers", in Settings. */
+const REVIEW_MODE_PARAM = /[?&]previewReviewMode(?:=(\w+))?/;
 /** Settings is pushed once the router has acted on the link itself, which
  * sends it to Home: pushed sooner, Home would land on top of it. */
 const CANCEL_PUSH_MS = 400;
 
-function previewCancel(url: string): void {
-  const match = CANCEL_PARAM.exec(url);
-  if (match == null) return;
-  devPreviewCancel(match[1] === 'monthly' ? 'monthly' : 'annual');
+/** Settings, pushed once the router has acted on the link (see above). */
+function pushSettings(): void {
   setTimeout(() => {
     try {
       router.push('/settings');
     } catch {
       // The navigator is not up yet (a cold start from the link): open
-      // Settings by hand and the flow comes up over it.
+      // Settings by hand and the sheet comes up over it.
     }
   }, CANCEL_PUSH_MS);
+}
+
+function previewCancel(url: string): void {
+  const match = CANCEL_PARAM.exec(url);
+  if (match == null) return;
+  const budget = match[1] === 'budget';
+  devPreviewCancel(match[1] === 'monthly' ? 'monthly' : 'annual', budget ? 'budget' : null);
+  pushSettings();
+}
+
+function previewLimitedOffer(url: string): void {
+  if (!LIMITED_OFFER_PARAM.test(url)) return;
+  setSamplePrices(true);
+  devPreviewLimitedOffer();
+  pushSettings();
 }
 
 function previewPush(url: string): void {
@@ -104,8 +131,9 @@ function previewPush(url: string): void {
  * `?previewPush=<kind>` sends a notification with its picture, to be looked at
  * from the home or lock screen; `?samplePrices[=off]`, `?previewPaywall`,
  * `?previewHomeOffer`, `?previewComeback` and `?previewOfferEnded` set up the
- * paywall and the offers after its "Not now" (see each above); `?previewCancel[=monthly]`
- * opens the cancel flow in Settings. The onboarding page answers
+ * paywall and the offers after its "Not now" (see each above); `?previewCancel[=monthly|budget]`
+ * opens the cancel flow in Settings; `?previewLimitedOffer`, `?previewPassSet`
+ * and `?previewReviewMode[=off]` the 3-month pass's screens. The onboarding page answers
  * `?onboardingStep=<key>`, the setup page `?authPreview=<state>`.
  * The whole body folds away in a release bundle.
  */
@@ -136,6 +164,10 @@ export function useDevLinks(): void {
           if (tour[1] === 'done') finishHomeTour();
           else devRestartHomeTour(tour[1] === 'tour' ? 'tour' : 'day1');
         }
+        const review = REVIEW_MODE_PARAM.exec(url);
+        if (review != null) devSetReviewMode(review[1] !== 'off');
+        if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
+        previewLimitedOffer(url);
         previewCancel(url);
         previewPush(url);
       };

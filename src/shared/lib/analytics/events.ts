@@ -31,24 +31,34 @@ export type AcquisitionSource =
   | 'other';
 
 /** Which plan a paywall or purchase event is about: the annual, monthly and
- * lifetime plans on sale, and the weekly one Android still sells. The one-time
- * pass and the first monthly plan are not sold. */
-export type PlanTier = 'annual' | 'monthly' | 'weekly' | 'lifetime';
+ * lifetime plans on sale, the weekly one Android still sells, and the 3-month
+ * pass (`pass`, one payment for 90 days, sold only on the limited offer and in
+ * the cancel flow). The first monthly plan is not sold. */
+export type PlanTier = 'annual' | 'monthly' | 'weekly' | 'lifetime' | 'pass';
+
+/** Where the 3-month pass is sold: the third card of the limited offer (the
+ * comeback stage of the offer screen, and the review account's "Special
+ * offers" sheet), or the answer to "It doesn't fit my budget" in the cancel
+ * flow, at the retention price. Also the Superwall placement each registers. */
+export type PassPlacement = 'limited_offer' | 'cancel_budget';
 
 /** Why somebody is leaving, as the cancel flow's five answers put it. The
  * answer's id, never anything they wrote: there is no free text. */
 export type CancelReason = 'budget' | 'better' | 'pause' | 'notHelping' | 'noTime';
 
 /**
- * What the cancel flow put in the place of cancelling. The three that touch
- * the price (`next_year`, `yearly`, `free_month`) are the retention offers;
- * the rest change the plan, open a store page or reach a person. The
- * "when to see a doctor" check is deliberately not one of them: that somebody
- * looked for it says something about their body.
+ * What the cancel flow put in the place of cancelling. The two that touch the
+ * price (`pass`, the 3-month pass at the retention price, and `free_month`)
+ * are the retention offers; the rest change the plan, open a store page or
+ * reach a person. The "when to see a doctor" check is deliberately not one of
+ * them: that somebody looked for it says something about their body.
+ *
+ * `next_year` (the yearly plan's next year at 40% off) and `yearly` (the
+ * switch to the yearly plan) were the budget answer's offers before the pass
+ * took their place; they are no longer sent.
  */
 export type CancelOffer =
-  | 'next_year'
-  | 'yearly'
+  | 'pass'
   | 'free_month'
   | 'pause'
   | 'lighter'
@@ -164,6 +174,23 @@ export type AnalyticsEvents = {
    * reasons (`none`) or after one. Whether they then cancelled is the store's
    * to say; RevenueCat reports it server-side. */
   cancel_anyway: { reason: CancelReason | 'none' };
+
+  // ── The 3-month pass ─────────────────────────────────────────────────────
+  /** A pass was on screen to buy: the limited offer's third card, or the
+   * budget answer's offer in the cancel flow. */
+  pass_offer_view: { placement: PassPlacement };
+  /** The store said a pass was bought. Also tracked as `purchase_*` like any
+   * purchase; this one says where it was sold. Never revenue: RevenueCat
+   * reports the money. */
+  pass_purchase: { product: string; placement: PassPlacement };
+  /** "Your 3 months are set", for somebody whose subscription still renews:
+   * the screen that asks them to turn auto-renewal off. */
+  pass_autorenew_prompt: { placement: PassPlacement };
+  /** Home's card for a pass ending within 7 days, with no subscription
+   * running. Once per day it is seen. */
+  pass_expiring_view: Record<string, never>;
+  /** A pass window was seen to have ended. Once per window. */
+  pass_expired: Record<string, never>;
 
   // ── After the first purchase ─────────────────────────────────────────────
   setup_step_viewed: { step: string };

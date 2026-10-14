@@ -1,10 +1,10 @@
 /**
- * Where a subscription is managed, and the retention offers the cancel flow
+ * Where a subscription is managed, and the promotional offer the cancel flow
  * may make in its place (`pages/settings`, Settings → Manage subscription).
  *
  * Here rather than in the purchase entity because they are written-down
  * contracts with the stores, like the legal links: a URL Google documents and
- * two identifiers typed by hand into App Store Connect. A typo in either is a
+ * an identifier typed by hand into App Store Connect. A typo in either is a
  * button that opens nothing or an offer that never appears, so each lives in
  * one place.
  */
@@ -35,21 +35,20 @@ export function playSubscriptionUrl(sku: string): string {
 }
 
 /**
- * The App Store promotional offers the cancel flow may make, by the
- * identifier each has in App Store Connect (Subscriptions → the subscription
- * → Promotional Offers). RevenueCat signs them with the In-App Purchase key it
- * holds, and the store says per customer whether one can be had.
+ * The App Store promotional offer the cancel flow may make, by the identifier
+ * it has in App Store Connect (Subscriptions → the subscription → Promotional
+ * Offers). RevenueCat signs it with the In-App Purchase key it holds, and the
+ * store says per customer whether one can be had.
  *
- * Each must exist on every subscription it should be offered on: the next
- * year at 40% off on the yearly products, the free month on the yearly and
+ * It must exist on every subscription it should be offered on: the yearly and
  * monthly ones. An offer missing from a product is simply not shown there.
- * The figures on screen come from the store's answer, never from these names:
- * `nextYear40` says what the offer was set up as, and the screen prints the
- * percentage the store's two prices give.
+ * What the screen says comes from the store's answer, never from this name.
+ *
+ * The budget answer used to be a promotional offer too (the next year at 40%
+ * off); it is the 3-month pass at the retention price now, a product of its
+ * own (`OFFERINGS.retentionBudget` in the purchase entity).
  */
 export const RETENTION_OFFERS = {
-  /** Pay up front, one year, 40% under the product's price. */
-  nextYear40: 'walkito_annual_retention_40',
   /** Free, one month. */
   freeMonth: 'walkito_retention_free_month',
 } as const;

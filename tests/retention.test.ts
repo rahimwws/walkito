@@ -3,12 +3,12 @@ import { describe, expect, test } from 'bun:test';
 import {
   RETENTION_GAP_DAYS,
   breakOffer,
-  budgetOffer,
+  budgetPassAllowed,
   isFreeMonth,
   markRetentionTaken,
-  nextYearPercent,
   retentionAllowed,
   retentionTakenAt,
+  type PassHistory,
   type RetentionFacts,
 } from '../src/entities/purchase/model/retention';
 import { FIRST_PRODUCTS, PRODUCTS, type RetentionOffer, type Subscription } from '../src/entities/purchase/model/purchase';
@@ -92,20 +92,30 @@ describe('retentionAllowed', () => {
   });
 });
 
-describe('budgetOffer', () => {
-  test('the next year on the yearly plan, on the App Store only', () => {
-    expect(budgetOffer(yearly, true, 'ios')).toBe('next_year');
-    expect(budgetOffer({ ...yearly, store: 'play_store' }, true, 'android')).toBeNull();
+describe('budgetPassAllowed', () => {
+  const fresh: PassHistory = { retentionOfferUsedAt: null, boughtAt: null };
+
+  test('the 3-month pass for a subscription that still renews', () => {
+    expect(budgetPassAllowed(yearly, fresh, NOW, false)).toBe(true);
+    expect(budgetPassAllowed({ ...yearly, period: 'monthly' }, fresh, NOW, false)).toBe(true);
   });
 
-  test('the yearly plan for somebody paying by the month or the week', () => {
-    expect(budgetOffer({ ...yearly, period: 'monthly' }, true, 'ios')).toBe('yearly');
-    expect(budgetOffer({ ...yearly, period: 'weekly', store: 'play_store' }, true, 'android')).toBe('yearly');
+  test('nothing to stand in for when nothing renews', () => {
+    expect(budgetPassAllowed(null, fresh, NOW, false)).toBe(false);
+    expect(budgetPassAllowed({ ...yearly, willRenew: false }, fresh, NOW, false)).toBe(false);
+    expect(budgetPassAllowed({ ...yearly, kind: 'lifetime', willRenew: false }, fresh, NOW, false)).toBe(false);
   });
 
-  test('nothing when nothing may be offered', () => {
-    expect(budgetOffer(yearly, false, 'ios')).toBeNull();
-    expect(budgetOffer({ ...yearly, period: 'monthly' }, false, 'ios')).toBeNull();
+  test('not twice in a year: the retention price used, or any pass bought', () => {
+    const lately = NOW - 200 * DAY;
+    expect(budgetPassAllowed(yearly, { ...fresh, retentionOfferUsedAt: lately }, NOW, false)).toBe(false);
+    expect(budgetPassAllowed(yearly, { ...fresh, boughtAt: lately }, NOW, false)).toBe(false);
+    const longAgo = NOW - RETENTION_GAP_DAYS * DAY;
+    expect(budgetPassAllowed(yearly, { retentionOfferUsedAt: longAgo, boughtAt: longAgo }, NOW, false)).toBe(true);
+  });
+
+  test('always in review mode, which holds no subscription', () => {
+    expect(budgetPassAllowed(null, { retentionOfferUsedAt: NOW, boughtAt: NOW }, NOW, true)).toBe(true);
   });
 });
 
@@ -124,18 +134,6 @@ describe('breakOffer', () => {
 });
 
 describe('offers as the store returns them', () => {
-  test('the percentage off the next year is the store prices’ own', () => {
-    expect(nextYearPercent(offer({}))).toBe(40);
-    expect(nextYearPercent(offer({ price: 29.99 }))).toBe(50);
-  });
-
-  test('an offer set up as anything but one paid year is not "off your next year"', () => {
-    expect(nextYearPercent(offer({ period: { unit: 'month', count: 1 }, cycles: 12 }))).toBe(40);
-    expect(nextYearPercent(offer({ period: { unit: 'month', count: 6 } }))).toBeNull();
-    expect(nextYearPercent(offer({ price: 0 }))).toBeNull();
-    expect(nextYearPercent(offer({ price: 59.99 }))).toBeNull();
-  });
-
   test('a free month is free and one month long', () => {
     expect(isFreeMonth(offer({ price: 0, period: { unit: 'month', count: 1 } }))).toBe(true);
     expect(isFreeMonth(offer({ price: 0, period: { unit: 'week', count: 1 } }))).toBe(false);

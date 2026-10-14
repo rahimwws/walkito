@@ -25,20 +25,6 @@ export const CANCEL_RU = {
   'cancel.anywayHintAndroid': 'Открывает ваши подписки в Google Play',
 
   'cancel.budget.title': 'Давайте сделаем это легче для бюджета',
-  'cancel.budget.nextYearTitle': 'Скидка {percent}% на следующий год',
-  'cancel.budget.nextYearBody':
-    'Следующий год будет стоить {price} вместо {regular}. План и всё, что вы записали, останутся как есть.',
-  'cancel.budget.nextYearCta': 'Взять скидку {percent}%',
-  'cancel.budget.nextYearTerms':
-    'Сниженная цена начнёт действовать со следующего продления и покроет один год. Затем действует обычная цена. Отменить подписку можно в любой момент в настройках подписок.',
-  'cancel.budget.yearlyTitle': 'Перейти на годовой план',
-  'cancel.budget.yearlyBody': 'Год Walkito Plus стоит {price}, это около {perMonth} в месяц.',
-  'cancel.budget.yearlyBodyPlain': 'Год Walkito Plus стоит {price}.',
-  'cancel.budget.savingMonthly': 'Это на {percent}% меньше, чем платить каждый месяц.',
-  'cancel.budget.savingWeekly': 'Это на {percent}% меньше, чем платить каждую неделю.',
-  'cancel.budget.yearlyCta': 'Перейти на годовой',
-  'cancel.budget.yearlyTerms':
-    'Перед подтверждением магазин покажет цену и когда она начнёт действовать. План и всё, что вы записали, останутся как есть.',
   'cancel.budget.noneTitle': 'Мы понимаем',
   'cancel.budget.none': 'Всё, что вы записали, останется в Walkito, а план будет ждать, если вы вернётесь.',
 
@@ -97,8 +83,6 @@ export const CANCEL_RU = {
   'cancel.noTime.reminderCaption': 'Ежедневное напоминание, когда вам удобно',
 
   'cancel.done.title': 'Готово',
-  'cancel.done.nextYear': 'Следующий год Walkito Plus со скидкой {percent}%. Спасибо, что остаётесь.',
-  'cancel.done.yearly': 'Вы переходите на годовой план. Спасибо, что остаётесь.',
   'cancel.done.freeMonth': 'Следующий месяц бесплатный. Спасибо, что остаётесь.',
   'cancel.done.lighter': 'С сегодняшнего дня план легче. Изменить это можно в любой момент в настройках.',
   'cancel.done.short': {

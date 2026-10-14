@@ -25,20 +25,6 @@ export const CANCEL_ES = {
   'cancel.anywayHintAndroid': 'Abre tus suscripciones en Google Play',
 
   'cancel.budget.title': 'Hagámoslo más fácil para tu bolsillo',
-  'cancel.budget.nextYearTitle': '{percent}% de descuento en tu próximo año',
-  'cancel.budget.nextYearBody':
-    'Tu próximo año cuesta {price} en lugar de {regular}. Tu plan y todo lo que has registrado se quedan tal cual.',
-  'cancel.budget.nextYearCta': 'Quiero el {percent}% de descuento',
-  'cancel.budget.nextYearTerms':
-    'El precio rebajado empieza en tu próxima renovación y cubre un año. Después se aplica el precio habitual. Puedes cancelar cuando quieras en los ajustes de suscripciones.',
-  'cancel.budget.yearlyTitle': 'Cambiar al plan anual',
-  'cancel.budget.yearlyBody': 'Un año de Walkito Plus cuesta {price}, unos {perMonth} al mes.',
-  'cancel.budget.yearlyBodyPlain': 'Un año de Walkito Plus cuesta {price}.',
-  'cancel.budget.savingMonthly': 'Es un {percent}% menos que pagar mes a mes.',
-  'cancel.budget.savingWeekly': 'Es un {percent}% menos que pagar semana a semana.',
-  'cancel.budget.yearlyCta': 'Cambiar al anual',
-  'cancel.budget.yearlyTerms':
-    'La tienda te muestra el precio y cuándo empieza antes de confirmar. Tu plan y todo lo que has registrado se quedan tal cual.',
   'cancel.budget.noneTitle': 'Lo entendemos',
   'cancel.budget.none': 'Todo lo que has registrado se queda en Walkito, y tu plan te espera si vuelves.',
 
@@ -96,8 +82,6 @@ export const CANCEL_ES = {
   'cancel.noTime.reminderCaption': 'Tu aviso diario, cuando mejor te venga',
 
   'cancel.done.title': 'Listo',
-  'cancel.done.nextYear': 'Tu próximo año de Walkito Plus tiene un {percent}% de descuento. Gracias por quedarte.',
-  'cancel.done.yearly': 'Te pasas al plan anual. Gracias por quedarte.',
   'cancel.done.freeMonth': 'Tu próximo mes es gratis. Gracias por quedarte.',
   'cancel.done.lighter': 'Tu plan es más ligero desde hoy. Puedes cambiarlo cuando quieras en Ajustes.',
   'cancel.done.short': {

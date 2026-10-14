@@ -18,6 +18,31 @@ import type { OfferGuard } from './use-offer-screen';
 export const TRIAL_REMINDER_DAYS = 3;
 
 /**
+ * How the offer sells the 3-month pass: through the pass checkout
+ * (`widgets/pass-checkout`, which asks for an account first and waits for the
+ * server's days), owned by whoever hosts the offer. A feature cannot reach a
+ * widget, so the host hands it in; where none is handed in, the pass card is
+ * not offered at all.
+ */
+export type PassSale = {
+  /** Starts the checkout for this pass. `onPurchased` runs once the store
+   * says it went through. */
+  buy: (plan: Plan, onPurchased: () => void) => void;
+  /** The checkout is in flight. */
+  busy: boolean;
+  /** What the checkout has to say: a failure, a purchase waiting on Ask to Buy. */
+  notice: string | null;
+};
+
+export type OfferPurchaseOptions = {
+  /** A first purchase arms the setup screens after it (the offer screen's
+   * case). Off for a sheet opened from inside the app. */
+  armsSetup?: boolean;
+  /** Bought or restored: a sheet closes itself. */
+  onPurchased?: () => void;
+};
+
+/**
  * Buying and restoring from the offer screen after the paywall's "Not now".
  *
  * The store's own results, said the paywall's way: a cancel says nothing, a
@@ -31,8 +56,13 @@ export const TRIAL_REMINDER_DAYS = 3;
  * product's own trial length and price. Permission is asked for then if it
  * never was; refused, there is no reminder, and the screen did not promise
  * one (`notificationsPossible`).
+ *
+ * The 3-month pass is bought through `buyPass`, which hands it to the host's
+ * pass checkout (`PassSale`) and does the same afterwards: the setup armed for
+ * a first purchase, the comeback's pushes taken back.
  */
-export function useOfferPurchase(guard: MutableRefObject<OfferGuard>) {
+export function useOfferPurchase(guard: MutableRefObject<OfferGuard>, options: OfferPurchaseOptions = {}) {
+  const { armsSetup = true, onPurchased } = options;
   const t = useT();
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -64,7 +94,7 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>) {
 
   const buy = async (plan: Plan, trial: FreeTrial | null): Promise<void> => {
     if (busy) return;
-    const firstPurchase = !purchases.hadAccess();
+    const firstPurchase = armsSetup && !purchases.hadAccess();
     const result: PurchaseResult = await hold(() => purchases.buy(plan));
     switch (result.status) {
       case 'purchased':
@@ -72,6 +102,7 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>) {
         if (firstPurchase) armSetup();
         void cancelComebackPushes();
         if (trial != null) void remindBeforeTrialEnds(trial, priceOf(plan));
+        onPurchased?.();
         return;
       // Backed out of the store's own sheet: they know what they did.
       case 'cancelled':
@@ -88,12 +119,26 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>) {
     }
   };
 
+  /** The 3-month pass, through the host's checkout. What follows the purchase
+   * beyond this (closing a sheet) is the host's, once its checkout is done:
+   * the checkout may still have "Your 3 months are set" to show. */
+  const buyPass = (plan: Plan, sale: PassSale): void => {
+    if (busy || sale.busy) return;
+    setNotice(null);
+    const firstPurchase = armsSetup && !purchases.hadAccess();
+    sale.buy(plan, () => {
+      if (firstPurchase) armSetup();
+      void cancelComebackPushes();
+    });
+  };
+
   const restore = async (): Promise<void> => {
     if (busy) return;
     const result = await hold(() => purchases.restore());
     if (result.status === 'restored') {
       void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       void cancelComebackPushes();
+      onPurchased?.();
       return;
     }
     if (result.status === 'nothing-found') say(t('offer.nothingRestored'), null);
@@ -101,7 +146,7 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>) {
     // `unavailable`: there was no store to ask.
   };
 
-  return { busy, notice, buy, restore };
+  return { busy, notice, buy, buyPass, restore };
 }
 
 /** The reminder the trial offer promised, `TRIAL_REMINDER_DAYS` before the

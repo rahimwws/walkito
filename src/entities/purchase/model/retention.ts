@@ -1,31 +1,33 @@
 import { kv } from '@/shared/lib/storage';
 
-import { discountPercent, samePeriod } from './pricing';
+import { samePeriod } from './pricing';
 import { OFFER_PRODUCT_IDS, type RetentionOffer, type StorePeriod, type Subscription } from './purchase';
 
 /**
  * What a subscriber who is about to cancel may be offered to stay, decided on
  * plain data so it can be tested (`tests/retention.test.ts`).
  *
- * Three retention offers, and the rules that keep them honest:
+ * Two retention offers, and the rules that keep them honest:
  *
- * - **the next year at a lower price**, an App Store promotional offer on the
- *   yearly plan (`RETENTION_OFFERS.nextYear40`);
- * - **the yearly plan**, for somebody paying by the month or the week: the
- *   standard price, not a discount, but still a change made to keep them;
+ * - **the 3-month pass at the retention price**, for "It doesn't fit my
+ *   budget" (`budgetPassAllowed`): one payment, nothing renews, the days
+ *   queued after the period already paid for. Decided by the server's record
+ *   of the account, since a pass belongs to the account;
  * - **a free month**, an App Store promotional offer for "I'm taking a break".
  *   Google Play's answer to a break is its own pause, which is not ours to
  *   give or limit: it is offered to anyone Play bills at the full price.
  *
- * At most one of the three a year (`RETENTION_GAP_DAYS`), and none on top of
- * another discount: not during a free trial or an introductory price, not on
- * a product already sold at the comeback price (`OFFER_PRODUCT_IDS`), not to
- * somebody whose access is granted by account. Never to a family member, who
- * did not buy it, and never across stores: an App Store subscription viewed on
- * an Android phone can only be changed in the App Store.
+ * The free month at most once a year on this phone (`RETENTION_GAP_DAYS`),
+ * and none on top of another discount: not during a free trial or an
+ * introductory price, not on a product already sold at the comeback price
+ * (`OFFER_PRODUCT_IDS`), not to somebody whose access is granted by account.
+ * Never to a family member, who did not buy it, and never across stores: an
+ * App Store subscription viewed on an Android phone can only be changed in the
+ * App Store.
  *
- * The "per person" is this phone, as the purchase itself is: RevenueCat's
- * customer is the device (AGENTS.md, Access by account).
+ * The free month's "per person" is this phone, as the purchase itself is:
+ * RevenueCat's customer is the device (AGENTS.md, Access by account). The
+ * pass's is the account.
  */
 
 const TAKEN_KEY = 'purchase/retention-taken-at';
@@ -48,7 +50,7 @@ function sameProduct(a: string, b: string): boolean {
   return a.split(':')[0] === b.split(':')[0];
 }
 
-/** Whether any of the three retention offers may be made to this subscriber. */
+/** Whether the free month may be offered to this subscriber. */
 export function retentionAllowed(held: Subscription, facts: RetentionFacts): boolean {
   if (held.kind !== 'subscription') return false;
   if (facts.comp || held.familyShared) return false;
@@ -60,17 +62,38 @@ export function retentionAllowed(held: Subscription, facts: RetentionFacts): boo
   return true;
 }
 
+/** What the server knows about the account's passes, for the budget offer. */
+export type PassHistory = {
+  /** When the retention price was last used (`retention_offer_used_at`). */
+  readonly retentionOfferUsedAt: number | null;
+  /** When a pass was last bought, at either price (`pass_bought_at`). */
+  readonly boughtAt: number | null;
+};
+
 /**
- * What "It doesn't fit my budget" may offer: the next year at a lower price on
- * the yearly plan (the App Store only: promotional offers are Apple's), or the
- * yearly plan to somebody paying by the month or the week. Null when nothing
- * may be offered; the screen then says something kind and nothing else.
+ * Whether "It doesn't fit my budget" may offer the 3-month pass at the
+ * retention price, in the place of cancelling.
+ *
+ * Only to somebody with a subscription that still renews (there is a
+ * cancellation to stand in for), who has not used the retention price in the
+ * last year, and has not bought a pass at all in the last year: the cheaper
+ * pass is not a way to keep buying 90 days at a discount. Anybody else picking
+ * that answer goes straight to the store's own page.
+ *
+ * In review mode (the App Review account, whose access is granted by account
+ * and who holds no store subscription) it is always offered, so the screen can
+ * be found.
  */
-export function budgetOffer(held: Subscription, allowed: boolean, os: string): 'next_year' | 'yearly' | null {
-  if (!allowed) return null;
-  if (held.period === 'annual') return os === 'ios' ? 'next_year' : null;
-  if (held.period === 'monthly' || held.period === 'weekly') return 'yearly';
-  return null;
+export function budgetPassAllowed(
+  held: Subscription | null,
+  history: PassHistory,
+  now: number,
+  reviewMode: boolean,
+): boolean {
+  if (reviewMode) return true;
+  if (held == null || held.kind !== 'subscription' || !held.willRenew) return false;
+  const lately = (at: number | null) => at != null && now - at < RETENTION_GAP_DAYS * DAY_MS;
+  return !lately(history.retentionOfferUsedAt) && !lately(history.boughtAt);
 }
 
 /**
@@ -90,18 +113,6 @@ function lengthOf(offer: RetentionOffer): StorePeriod {
   return { unit: offer.period.unit, count: offer.period.count * offer.cycles };
 }
 
-/**
- * The percentage off the next year an offer gives, as two store prices put
- * it, when it is that offer: one year, paid for, under the regular price.
- * Null otherwise, so an offer set up differently in App Store Connect is never
- * shown as "off your next year".
- */
-export function nextYearPercent(offer: RetentionOffer): number | null {
-  if (!samePeriod(lengthOf(offer), { unit: 'year', count: 1 })) return null;
-  if (!(offer.price > 0)) return null;
-  return discountPercent(offer.price, offer.regularPrice);
-}
-
 /** Whether an offer is a free month: nothing to pay, for one month. */
 export function isFreeMonth(offer: RetentionOffer): boolean {
   return offer.price === 0 && samePeriod(lengthOf(offer), { unit: 'month', count: 1 });
@@ -114,7 +125,7 @@ export function retentionTakenAt(): number | null {
 }
 
 /** A retention offer was taken (or is waiting on the store's confirmation):
- * no other for `RETENTION_GAP_DAYS`. */
+ * no free month for `RETENTION_GAP_DAYS`. */
 export function markRetentionTaken(now: number = Date.now()): void {
   kv.set(TAKEN_KEY, now);
 }

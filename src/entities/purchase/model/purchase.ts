@@ -24,6 +24,15 @@
  * three out of it).
  * The plan itself never ends, so nothing here has a length beyond its billing
  * period.
+ *
+ * **And the 3-month pass**, which is not a subscription and grants no
+ * entitlement on purpose: one payment for 90 days of access, counted on our
+ * server (`pass.ts`, `supabase/migrations/0017_three_month_pass.sql`) because
+ * RevenueCat would hold a one-time product as owned for ever. It sits in the
+ * `pass` slot, and only on the offerings that sell it: the comeback's `offer`
+ * (the limited offer's third card) and `retention_budget` (the cancel flow's
+ * budget answer, cheaper). The standard, trial and paywall shelves never carry
+ * one.
  */
 
 /** What a purchase attempt can come back as. */
@@ -73,9 +82,19 @@ export type Product = {
 
 /**
  * How a plan bills: one slot per kind on `Offering`. `lifetime` is a one-time
- * purchase, not a subscription. Also the `plan` of every purchase event.
+ * purchase, not a subscription; `pass` is the 3-month pass, a one-time
+ * purchase that opens the app for 90 days and is never a lifetime plan. Also
+ * the `plan` of every purchase event.
  */
-export type PlanPeriod = 'annual' | 'monthly' | 'weekly' | 'lifetime';
+export type PlanPeriod = 'annual' | 'monthly' | 'weekly' | 'lifetime' | 'pass';
+
+/**
+ * The kinds of plan the paywall and the expiry screen sell: every one but the
+ * pass, which only the limited offer and the cancel flow sell. Those screens
+ * keep a record of plans by kind, and a pass slot there would be a plan they
+ * have no words for.
+ */
+export type PaywallPeriod = Exclude<PlanPeriod, 'pass'>;
 
 /** A stretch of time as the store states it: "1 week", "1 year". */
 export type StorePeriod = {
@@ -139,16 +158,24 @@ export type Plan = {
    * The same string as `product.display`. */
   readonly priceString: string;
   /** The regular price over a month ("$4.99" for $59.99 a year), the store's
-   * own division. Null for lifetime. Always secondary on screen: Apple wants
-   * the billed amount to be the most prominent price. */
+   * own division. Null for lifetime and the pass. Always secondary on screen:
+   * Apple wants the billed amount to be the most prominent price. */
   readonly pricePerMonthString: string | null;
-  /** The same over a week. Null for lifetime. */
+  /** The same over a week. Null for lifetime and the pass. */
   readonly pricePerWeekString: string | null;
   /** How long one billing period is (1 year, 1 month, 1 week). Null for
-   * lifetime. */
+   * lifetime and the pass, which bill once. */
   readonly billingPeriod: StorePeriod | null;
   /** A one-time purchase that never renews and never expires. */
   readonly isLifetime: boolean;
+  /**
+   * The 3-month pass: one payment, 90 days of access, nothing renews. Never
+   * also `isLifetime`, though both are one-time purchases: a pass sold as
+   * "Lifetime" would be a promise the server's 90 days break. Buying one goes
+   * through the pass checkout (`widgets/pass-checkout`), which asks for an
+   * account first.
+   */
+  readonly isPass: boolean;
   /** The introductory offer this customer would get, or null. Trial or
    * "first year" wording belongs only on a plan where this is set. */
   readonly intro: IntroOffer | null;
@@ -183,6 +210,10 @@ export type Offering = {
   /** One payment, access for good. RevenueCat's `$rc_lifetime` package
    * (in `v2`, the comeback's is `lifetime_offer`). */
   readonly lifetime: Plan | null;
+  /** The 3-month pass, one payment for 90 days. A custom package, read by its
+   * identifier only (`PASS_PACKAGES`), and only on the offerings that sell it:
+   * null on every other. */
+  readonly pass: Plan | null;
 };
 
 /**
@@ -205,10 +236,16 @@ export const OFFERINGS = {
    * trial. The one-time Home offer after the paywall is skipped. */
   trial: 'trial',
   /** `$rc_annual` walkito_annual_offer (the first year paid up front, cheaper)
-   * and `$rc_lifetime` walkito_lifetime_offer. The comeback offer: the 15-minute
+   * and `$rc_lifetime` walkito_lifetime_offer, and in `v2` the 3-month pass
+   * (`three_month_pass`). The comeback offer, the limited offer: the 15-minute
    * one on Home, the win-back push and the offer emails. The id is fixed —
    * email links (`paywall?offering=offer`) and older builds ask for it. */
   offer: 'offer',
+  /** `three_month_pass_offer`: the 3-month pass at the retention price
+   * (pass_12wk_1499 on the App Store, pass_3mo_offer on Google Play), and
+   * nothing else. The cancel flow's answer to "It doesn't fit my budget". Read
+   * by its own name: it is not in `v2`. */
+  retentionBudget: 'retention_budget',
 } as const;
 
 /**
@@ -230,8 +267,10 @@ export const PACKAGES = {
 
 /**
  * The one RevenueCat offering the App Store line-up lives in: all six
- * `PRODUCTS`, attached to `premium`. `default` stays as it was, for the builds
- * already out and for Android, whose products are not in `v2`.
+ * `PRODUCTS`, attached to `premium`, and the 3-month pass beside them
+ * (`three_month_pass`, attached to nothing). `default` stays as it was, for
+ * the builds already out and for Android, whose only product in `v2` is its
+ * pass (`pass_3mo`): its plans are read by name, the pass kept beside them.
  *
  * Read by this name, never as RevenueCat's "current" offering, so making `v2`
  * current after the release changes nothing here. Renaming it would.
@@ -250,7 +289,22 @@ export const V2_PACKAGES = {
   annualOffer: 'annual_offer',
   /** walkito_lifetime_offer: the cheaper lifetime. */
   lifetimeOffer: 'lifetime_offer',
+  /** The 3-month pass at its own price: pass_12wk_4999 on the App Store,
+   * pass_3mo on Google Play. The limited offer's third card. */
+  threeMonthPass: 'three_month_pass',
 } as const;
+
+/**
+ * Which package carries the 3-month pass in each offering that sells one, by
+ * the offering's name: the comeback's (in `v2`, or in a by-name `offer`) and
+ * the retention offering. An offering not named here never has a pass,
+ * whatever its dashboard holds: the standard plans, the trial and the paywall
+ * do not sell it.
+ */
+export const PASS_PACKAGES: Readonly<Record<string, string>> = {
+  [OFFERINGS.offer]: V2_PACKAGES.threeMonthPass,
+  [OFFERINGS.retentionBudget]: 'three_month_pass_offer',
+};
 
 /**
  * Which of `v2`'s packages fill each slot of each offering the app asks for. A
@@ -259,7 +313,11 @@ export const V2_PACKAGES = {
 export const V2_SHELVES: Readonly<Record<string, Readonly<Partial<Record<PlanPeriod, string>>>>> = {
   [OFFERINGS.standard]: { annual: PACKAGES.annual, monthly: PACKAGES.monthly, lifetime: PACKAGES.lifetime },
   [OFFERINGS.trial]: { annual: V2_PACKAGES.annualTrial },
-  [OFFERINGS.offer]: { annual: V2_PACKAGES.annualOffer, lifetime: V2_PACKAGES.lifetimeOffer },
+  [OFFERINGS.offer]: {
+    annual: V2_PACKAGES.annualOffer,
+    lifetime: V2_PACKAGES.lifetimeOffer,
+    pass: V2_PACKAGES.threeMonthPass,
+  },
 };
 
 /**
@@ -319,28 +377,66 @@ export const OFFER_PRODUCT_IDS: readonly string[] = [
 ];
 
 /**
+ * The 3-month pass, per store: non-renewing on the App Store, one-time
+ * products (purchase option `buy`, consumable in RevenueCat) on Google Play.
+ * Attached to no entitlement, on purpose: RevenueCat would treat a one-time
+ * product as owned for ever, so the 90 days are counted on our server.
+ */
+export const PASS_PRODUCTS = {
+  /** The App Store's pass, $39.99. The same id as the old 12-week pass, so a
+   * sandbox purchase of that one reads as a pass too. */
+  ios: 'pass_12wk_4999',
+  /** The App Store's retention price, $24.99: the cancel flow's budget offer. */
+  iosOffer: 'pass_12wk_1499',
+  /** Google Play's pass, $39.99. */
+  android: 'pass_3mo',
+  /** Google Play's retention price, $24.99. */
+  androidOffer: 'pass_3mo_offer',
+} as const;
+
+/** Every pass product, both stores, both prices. A purchase of any grants the
+ * same 90 days. */
+export const PASS_PRODUCT_IDS: readonly string[] = [
+  PASS_PRODUCTS.ios,
+  PASS_PRODUCTS.iosOffer,
+  PASS_PRODUCTS.android,
+  PASS_PRODUCTS.androidOffer,
+];
+
+/**
+ * Whether a store product is a 3-month pass. Google Play may name a one-time
+ * product with its purchase option (`pass_3mo:buy`), so the part before a
+ * colon is what is compared, as the server does (`_shared/pass.ts`).
+ */
+export function isPassProduct(id: string | null | undefined): boolean {
+  if (id == null) return false;
+  return PASS_PRODUCT_IDS.includes(id.split(':')[0]);
+}
+
+/**
  * What used to be sold, kept only so the people who bought it keep access.
  *
- * The one-time pass and the first monthly subscription (not `walkito_monthly`)
- * are no longer on sale and no screen mentions them. The pass needs its ids for one reason: Apple puts no
- * expiry on a non-renewing purchase and RevenueCat therefore never ends the
- * entitlement it grants, so the app dates that access itself — see `passEnd`
- * in `access.ts`. Only sandbox and TestFlight buyers ever held one.
+ * The first monthly subscription (not `walkito_monthly`) is no longer on sale
+ * and no screen mentions it. The pass ids are the 3-month pass's again
+ * (`PASS_PRODUCTS`): the old 12-week pass shared them, and is read the same
+ * way.
  */
 export const LEGACY_PRODUCTS = {
   monthly: 'sub_monthly_2499',
-  pass: 'pass_12wk_4999',
-  passOffer: 'pass_12wk_1499',
+  pass: PASS_PRODUCTS.ios,
+  passOffer: PASS_PRODUCTS.iosOffer,
 } as const;
 
-/** Both pass products — a purchase of either granted the same access for the
- * same length of time. */
-export const LEGACY_PASS_IDS: readonly string[] = [LEGACY_PRODUCTS.pass, LEGACY_PRODUCTS.passOffer];
+/** Every pass product, under its old name: what `access.ts` dates a pass by
+ * from the store's own record. */
+export const LEGACY_PASS_IDS: readonly string[] = PASS_PRODUCT_IDS;
 
 /**
- * How long a legacy pass granted access for, from its purchase date.
+ * How long a pass grants access for: from its purchase date when the app
+ * dates it from the store's record (`passEnd` in `access.ts`), and on the
+ * server's grant (`grant_pass`, 0017).
  *
- * Fixed at what was sold, so nobody who bought one loses a day of it.
+ * Fixed at what is sold, so nobody who bought one loses a day of it.
  */
 export const PASS_ACCESS_DAYS = 90;
 
@@ -349,7 +445,7 @@ export const PASS_ACCESS_DAYS = 90;
  * whether it renews. What Settings → Manage subscription is drawn from.
  *
  * Only what a store bills. Access granted by account (`comp.ts`), a grant
- * made in RevenueCat's dashboard and a legacy pass are not here: there is
+ * made in RevenueCat's dashboard and a 3-month pass are not here: there is
  * nothing of theirs a store could cancel.
  */
 export type Subscription = {
@@ -358,7 +454,8 @@ export type Subscription = {
   readonly kind: 'subscription' | 'lifetime';
   /** The store's product id. On Google Play, the subscription id. */
   readonly productId: string;
-  readonly period: PlanPeriod;
+  /** Never `pass`: a pass is not a subscription. */
+  readonly period: PaywallPeriod;
   /** False once renewal was turned off in the store: access runs to
    * `expiresAt`, then ends. Always false for lifetime. */
   readonly willRenew: boolean;
@@ -488,13 +585,6 @@ export type Purchases = {
   /** Take a promotional offer from `retentionOffer`. On the subscription
    * already held, so Apple applies it from the next renewal. */
   buyRetentionOffer(offer: RetentionOffer): Promise<PurchaseResult>;
-  /**
-   * Move the subscription held to another plan: a monthly or weekly
-   * subscriber to the yearly plan. On the App Store a plan in the same
-   * subscription group replaces the one held by itself; Google Play is told
-   * which subscription this one replaces, or it would bill both.
-   */
-  changePlan(plan: Plan, fromProductId: string): Promise<PurchaseResult>;
 
   /**
    * Whether the subscription is live, right now, synchronously.
@@ -507,7 +597,7 @@ export type Purchases = {
   entitled(): boolean;
   /** Fires whenever `entitled()`, `hadAccess()` or `passEndsAt()` would return
    * something new. The store pushes these: a subscription can lapse, or renew,
-   * while the app is open. */
+   * while the app is open, and a pass window can start or end. */
   subscribe(listener: () => void): () => void;
   /** Re-ask the store. Resolves once `entitled()` is current. */
   refresh(): Promise<void>;
@@ -524,12 +614,14 @@ export type Purchases = {
   hadAccess(): boolean;
 
   /**
-   * When a legacy pass runs out, or null if none was bought.
+   * When a 3-month pass runs out, or null if none was bought.
    *
-   * Computed from the purchase date rather than read from an entitlement,
-   * because RevenueCat cannot expire a non-renewing purchase on its own. Null
-   * for every subscriber: a subscription has no fixed end — it renews, and
-   * RevenueCat ends it when it stops.
+   * The later of two answers: the store's own record, dated from the purchase
+   * (RevenueCat cannot expire a non-renewing purchase on its own), and the
+   * server's grant, which queues a pass behind a subscription still running
+   * (`pass.ts`). Null for a subscriber with no pass: a subscription has no
+   * fixed end — it renews, and RevenueCat ends it when it stops. The 7-day
+   * expiry push is laid from this.
    */
   passEndsAt(): Date | null;
 
@@ -568,7 +660,6 @@ export const unconfigured: Purchases = {
   manageSubscriptions: async () => false,
   retentionOffer: async () => null,
   buyRetentionOffer: async () => ({ status: 'unavailable' }),
-  changePlan: async () => ({ status: 'unavailable' }),
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one
   // that does not hand out the paid product to everybody.
@@ -585,7 +676,8 @@ export const unconfigured: Purchases = {
  *
  * One entitlement for the whole app: there are no tiers of access here, only
  * tiers of billing. Every product in `PRODUCTS` and `FIRST_PRODUCTS` is
- * attached to it, the lifetime purchases included — a non-consumable attached
+ * attached to it (the 3-month pass is not: its days are the server's), the
+ * lifetime purchases included — a non-consumable attached
  * to an entitlement unlocks it with no expiry, which is what lifetime means. That is also why the adapter treats *any* active entitlement not
  * granted by a legacy pass as access — with a single tier there is nothing to
  * confuse it with, and a name that drifts out of step with the dashboard should

@@ -20,8 +20,10 @@ import {
   OFFERINGS,
   PACKAGES,
   PASS_ACCESS_DAYS,
+  PASS_PRODUCT_IDS,
   PRINTED_PRICES,
   PRODUCTS,
+  isPassProduct,
   type IntroOffer,
   type Plan,
   type PlanPeriod,
@@ -90,8 +92,12 @@ function plan(period: PlanPeriod, price: number, intro: IntroOffer | null = null
     priceString: display,
     pricePerMonthString: null,
     pricePerWeekString: null,
-    billingPeriod: period === 'lifetime' ? null : { unit: period === 'annual' ? 'year' : period === 'monthly' ? 'month' : 'week', count: 1 },
+    billingPeriod:
+      period === 'lifetime' || period === 'pass'
+        ? null
+        : { unit: period === 'annual' ? 'year' : period === 'monthly' ? 'month' : 'week', count: 1 },
     isLifetime: period === 'lifetime',
+    isPass: period === 'pass',
     intro,
   };
 }
@@ -189,13 +195,23 @@ describe('the store contract', () => {
     expect(Object.keys(PRINTED_PRICES).sort()).toEqual(['annual', 'weekly']);
   });
 
-  test('the legacy pass is still dated, for the people who hold one', () => {
-    expect([...LEGACY_PASS_IDS].sort()).toEqual(
-      [LEGACY_PRODUCTS.pass, LEGACY_PRODUCTS.passOffer].sort(),
-    );
+  test('every 3-month pass is dated, on both stores, for 90 days', () => {
+    expect([...PASS_PRODUCT_IDS].sort()).toEqual(['pass_12wk_1499', 'pass_12wk_4999', 'pass_3mo', 'pass_3mo_offer']);
+    expect([...LEGACY_PASS_IDS].sort()).toEqual([...PASS_PRODUCT_IDS].sort());
+    // The old 12-week pass shares the App Store ids.
+    expect(LEGACY_PASS_IDS).toContain(LEGACY_PRODUCTS.pass);
+    expect(LEGACY_PASS_IDS).toContain(LEGACY_PRODUCTS.passOffer);
     expect(PASS_ACCESS_DAYS).toBe(90);
     // The old monthly plan is a subscription, which RevenueCat expires itself.
     expect(LEGACY_PASS_IDS).not.toContain(LEGACY_PRODUCTS.monthly);
+  });
+
+  test('a pass is known with or without a Google Play purchase option', () => {
+    expect(isPassProduct('pass_3mo')).toBe(true);
+    expect(isPassProduct('pass_3mo:buy')).toBe(true);
+    expect(isPassProduct('pass_12wk_1499')).toBe(true);
+    expect(isPassProduct(PRODUCTS.lifetime)).toBe(false);
+    expect(isPassProduct(null)).toBe(false);
   });
 });
 
@@ -231,7 +247,7 @@ describe('the paywall and the expiry screen', () => {
 
   test('both sell the annual plan selected first', () => {
     for (const page of [offer, expired]) {
-      expect(page).toContain("useState<PlanPeriod>('annual')");
+      expect(page).toContain("useState<PaywallPeriod>('annual')");
     }
   });
 
@@ -243,7 +259,9 @@ describe('the paywall and the expiry screen', () => {
     expect(size('price')).toBeGreaterThan(size('note') * 1.5);
   });
 
-  test('nothing sells or mentions the one-time pass', () => {
+  // The 3-month pass is sold by the limited offer and the cancel flow, never
+  // by the paywall's plans or the expiry screen's.
+  test('nothing sells or mentions the old 12-week program', () => {
     for (const page of [offer, expired]) {
       expect(page).not.toMatch(/program(Plan|Title|Price|Note)|monthlyPlan|PROGRAM_/);
       expect(page).not.toMatch(/12[- ]week|twelve weeks/i);

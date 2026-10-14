@@ -15,7 +15,6 @@ import Purchases, {
   PACKAGE_TYPE,
   PRODUCT_CATEGORY,
   PURCHASES_ERROR_CODE,
-  STORE_REPLACEMENT_MODE,
   type CustomerInfo,
   type MakePurchaseResult,
   type PurchasesError,
@@ -23,18 +22,19 @@ import Purchases, {
   type PurchasesPackage,
   type PurchasesPromotionalOffer,
   type PurchasesStoreProduct,
-  type StoreProductChangeInfo,
 } from 'react-native-purchases';
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import { campaignAttributes } from './attribution';
 import {
   ENTITLEMENT,
-  LEGACY_PASS_IDS,
   LIFETIME_PRODUCT_IDS,
+  OFFERINGS,
   OFFERING_V2,
   PACKAGES,
+  PASS_PACKAGES,
   V2_SHELVES,
+  isPassProduct,
   type IntroOffer,
   type Offering,
   type Plan,
@@ -378,7 +378,13 @@ function isOneTime(product: PurchasesStoreProduct): boolean {
   );
 }
 
-/** A package as the app sees it: a price to print and a token to buy with. */
+/**
+ * A package as the app sees it: a price to print and a token to buy with.
+ *
+ * A pass is a one-time purchase like lifetime, and is never read as one: it
+ * is `isPass`, with no per-month figure, no billing period and no intro, and
+ * `isLifetime` false, so no screen can sell 90 days as "yours for good".
+ */
 function toPlan(
   offeringId: string,
   pkg: PurchasesPackage | null,
@@ -397,24 +403,31 @@ function toPlan(
     // wrong side in half of Europe and the separator wrong in the other half.
     display: store.priceString,
   };
-  const lifetime = period === 'lifetime' || isOneTime(store);
+  const pass = period === 'pass' || isPassProduct(store.identifier);
+  const lifetime = !pass && (period === 'lifetime' || isOneTime(store));
+  const once = pass || lifetime;
   return {
     token,
     period,
     product,
     priceString: store.priceString,
-    pricePerMonthString: lifetime ? null : (store.pricePerMonthString ?? null),
-    pricePerWeekString: lifetime ? null : (store.pricePerWeekString ?? null),
-    billingPeriod: lifetime ? null : isoPeriod(store.subscriptionPeriod),
+    pricePerMonthString: once ? null : (store.pricePerMonthString ?? null),
+    pricePerWeekString: once ? null : (store.pricePerWeekString ?? null),
+    billingPeriod: once ? null : isoPeriod(store.subscriptionPeriod),
     isLifetime: lifetime,
-    intro: lifetime ? null : introOf(store, eligibility),
+    isPass: pass,
+    intro: once ? null : introOf(store, eligibility),
   };
 }
+
+/** The slots RevenueCat has a predefined package for. The pass has none: it
+ * is a custom package, read by identifier alone (`passOf`). */
+type BilledPeriod = Exclude<PlanPeriod, 'pass'>;
 
 /** Where each plan sits in an offering: RevenueCat's own slot, its package
  * type, and the period a product in it bills over (null: one-time). */
 const SLOTS: Readonly<
-  Record<PlanPeriod, { named: (o: PurchasesOffering) => PurchasesPackage | null; type: PACKAGE_TYPE; iso: string | null }>
+  Record<BilledPeriod, { named: (o: PurchasesOffering) => PurchasesPackage | null; type: PACKAGE_TYPE; iso: string | null }>
 > = {
   annual: { named: (o) => o.annual, type: PACKAGE_TYPE.ANNUAL, iso: 'P1Y' },
   monthly: { named: (o) => o.monthly, type: PACKAGE_TYPE.MONTHLY, iso: 'P1M' },
@@ -432,33 +445,56 @@ const SLOTS: Readonly<
  * bills over that period (or, for lifetime, is a one-time purchase). Without
  * them a dashboard typo shows as a plan that is simply not there, which is the
  * hardest version of the mistake to notice.
+ *
+ * **Never a pass.** A pass is a one-time purchase too, and the lifetime
+ * fallback would otherwise find one in an offering with no lifetime package
+ * (`retention_budget`, Google Play's consumable passes) and sell 90 days as
+ * "Lifetime". Passes are left out of every fallback here.
  */
-function slot(found: PurchasesOffering, period: PlanPeriod): PurchasesPackage | null {
+function slot(found: PurchasesOffering, period: BilledPeriod): PurchasesPackage | null {
   const { named, type, iso } = SLOTS[period];
   const direct = named(found);
-  if (direct != null) return direct;
+  if (direct != null && !isPassProduct(direct.product.identifier)) return direct;
   const id = PACKAGES[period];
+  const candidates = found.availablePackages.filter((pkg) => !isPassProduct(pkg.product.identifier));
   return (
-    found.availablePackages.find((pkg) => pkg.identifier === id || pkg.packageType === type) ??
-    found.availablePackages.find((pkg) =>
+    candidates.find((pkg) => pkg.identifier === id || pkg.packageType === type) ??
+    candidates.find((pkg) =>
       iso == null ? isOneTime(pkg.product) : !isOneTime(pkg.product) && pkg.product.subscriptionPeriod === iso,
     ) ??
     null
   );
 }
 
+/**
+ * The pass in an offering read by its own name: the package `PASS_PACKAGES`
+ * names for that offering, by identifier only, and only if its product is a
+ * pass. Null for every offering that does not sell one (the standard plans,
+ * the trial), whatever their dashboard holds.
+ */
+function passOf(found: PurchasesOffering, identifier: string): PurchasesPackage | null {
+  const id = PASS_PACKAGES[identifier];
+  if (id == null) return null;
+  return found.availablePackages.find((pkg) => pkg.identifier === id && isPassProduct(pkg.product.identifier)) ?? null;
+}
+
 /** The package in each slot of one offering, null where it has none. */
 type Slots = Readonly<Record<PlanPeriod, PurchasesPackage | null>>;
 
-const PERIODS: readonly PlanPeriod[] = ['annual', 'monthly', 'weekly', 'lifetime'];
+const PERIODS: readonly PlanPeriod[] = ['annual', 'monthly', 'weekly', 'lifetime', 'pass'];
 
-/** The slots of an offering read by its own name (`slot`). */
-function slotsOf(found: PurchasesOffering): Slots {
+/** The slots other than the pass: what a shelf of plans is made of. */
+const BILLED: readonly BilledPeriod[] = ['annual', 'monthly', 'weekly', 'lifetime'];
+
+/** The slots of an offering read by its own name (`slot`, `passOf`).
+ * `identifier` is the name the app asked for. */
+function slotsOf(found: PurchasesOffering, identifier: string): Slots {
   return {
     annual: slot(found, 'annual'),
     monthly: slot(found, 'monthly'),
     weekly: slot(found, 'weekly'),
     lifetime: slot(found, 'lifetime'),
+    pass: passOf(found, identifier),
   };
 }
 
@@ -474,22 +510,28 @@ const reportedV2 = new Set<string>();
  * By package identifier only, never by type or billing period as `slot` falls
  * back to: `v2` holds three yearly subscriptions and two lifetimes, and "the
  * package that bills yearly" could sell the trial as the standard annual.
+ *
+ * On Google Play `v2` holds the pass alone (its other products are App Store
+ * ones), so a cut can be a pass and nothing else; `offering()` then reads the
+ * plans by name and keeps this pass beside them.
  */
 function v2Slots(v2: PurchasesOffering, identifier: string): Slots | null {
   const wanted = V2_SHELVES[identifier];
   if (wanted == null) return null;
   const byId = (id: string | undefined): PurchasesPackage | null =>
     id == null ? null : (v2.availablePackages.find((pkg) => pkg.identifier === id) ?? null);
+  const pass = byId(wanted.pass);
   const slots: Slots = {
     annual: byId(wanted.annual),
     monthly: byId(wanted.monthly),
     weekly: byId(wanted.weekly),
     lifetime: byId(wanted.lifetime),
+    pass: pass != null && isPassProduct(pass.product.identifier) ? pass : null,
   };
-  if (__DEV__) {
+  if (__DEV__ && Platform.OS === 'ios') {
     // A package typed differently in the dashboard, or a product StoreKit did
     // not return (RevenueCat leaves those packages out), reads as a plan that
-    // is simply not there.
+    // is simply not there. iOS only: Android's `v2` holds the pass alone.
     for (const period of PERIODS) {
       const id = wanted[period];
       if (id == null || slots[period] != null || reportedV2.has(id)) continue;
@@ -541,11 +583,14 @@ async function toOffering(identifier: string, slots: Slots): Promise<Offering> {
     monthly: plan('monthly'),
     weekly: plan('weekly'),
     lifetime: plan('lifetime'),
+    pass: plan('pass'),
   };
 }
 
-/** Which plan a product bought by id is, for a paywall the app did not draw. */
+/** Which plan a product bought by id is, for a paywall the app did not draw.
+ * A pass first: it is a one-time purchase, and never a lifetime one. */
 function tierOf(product: PurchasesStoreProduct): PlanTier {
+  if (isPassProduct(product.identifier)) return 'pass';
   if (isOneTime(product)) return 'lifetime';
   const unit = isoPeriod(product.subscriptionPeriod)?.unit;
   if (unit === 'year') return 'annual';
@@ -559,10 +604,11 @@ function tierOf(product: PurchasesStoreProduct): PlanTier {
 // ── The subscription held, and keeping it ───────────────────────────────────
 
 /**
- * The `offering` of the purchase events the cancel flow causes: a promotional
- * offer taken, a monthly plan moved to the yearly one. Its own name so a
- * paywall funnel built on `purchase_completed` can leave them out; they are
- * somebody staying, not somebody arriving.
+ * The `offering` of the purchase events the cancel flow's promotional offer
+ * causes (the free month). Its own name so a paywall funnel built on
+ * `purchase_completed` can leave them out; they are somebody staying, not
+ * somebody arriving. The budget answer's pass is bought from its own offering,
+ * `retention_budget`, which names its events the same way.
  */
 const RETENTION_SOURCE = 'retention';
 
@@ -573,7 +619,7 @@ const RETENTION_SOURCE = 'retention';
  * year, the reading that offers nothing it should not — a "switch to yearly"
  * shown to a yearly subscriber would be a change to the same plan.
  */
-function periodOfProduct(id: string, plan: string | null): PlanPeriod {
+function periodOfProduct(id: string, plan: string | null): Subscription['period'] {
   const text = `${id} ${plan ?? ''}`;
   if (/annual|year/i.test(text)) return 'annual';
   if (/month/i.test(text)) return 'monthly';
@@ -607,13 +653,13 @@ function storeOf(store: string): Subscription['store'] {
  * Read off the `premium` entitlement (any active one, for the reason
  * `ENTITLEMENT` explains), which names the product behind it, whether it
  * renews and when its period ends. A grant from RevenueCat's dashboard
- * (`PROMOTIONAL`) and a legacy pass are left out: no store bills either, so
- * there is nothing to cancel.
+ * (`PROMOTIONAL`) and a pass are left out: no store bills either, so there is
+ * nothing to cancel.
  */
 function subscriptionOf(info: CustomerInfo): Subscription | null {
   const held = info.entitlements.active[ENTITLEMENT] ?? Object.values(info.entitlements.active)[0];
   if (held == null) return null;
-  if (held.store === 'PROMOTIONAL' || LEGACY_PASS_IDS.includes(held.productIdentifier)) return null;
+  if (held.store === 'PROMOTIONAL' || isPassProduct(held.productIdentifier)) return null;
   const lifetime = held.expirationDate == null || LIFETIME_PRODUCT_IDS.includes(held.productIdentifier);
   return {
     kind: lifetime ? 'lifetime' : 'subscription',
@@ -818,8 +864,8 @@ function recordCampaign(data: Parameters<typeof campaignAttributes>[0]): void {
  *
  * SKAdNetwork conversion values and the networks' own on-device optimisation
  * only see events the SDK logs on the device. `af_start_trial` or
- * `af_subscribe`, with the product and the plan; `af_purchase` for lifetime,
- * a one-time purchase.
+ * `af_subscribe`, with the product and the plan; `af_purchase` for lifetime
+ * and the 3-month pass, one-time purchases.
  *
  * **No `af_revenue`, no `af_currency`.** The money reaches AppsFlyer from
  * RevenueCat's server (`linkAppsFlyer`), with renewals and refunds the phone
@@ -827,8 +873,8 @@ function recordCampaign(data: Parameters<typeof campaignAttributes>[0]): void {
  * twice.
  */
 function logStoreConversion(info: CustomerInfo, productId: string, plan: PlanTier): void {
-  // A lifetime purchase is not a subscription: AppsFlyer's one-time event.
-  if (plan === 'lifetime') {
+  // A lifetime purchase or a pass is not a subscription: AppsFlyer's one-time event.
+  if (plan === 'lifetime' || plan === 'pass') {
     logAppsFlyerEvent('af_purchase', { af_content_id: productId, plan });
     return;
   }
@@ -938,17 +984,24 @@ export const revenueCatStore: Store = {
     // The App Store line-up first: one offering, `v2`, cut into the three the
     // app asks for. Read by name, so it holds whether or not `v2` is current.
     // RevenueCat leaves out an offering none of whose products loaded, so a
-    // `v2` the store cannot serve, or Android's (it has no products there),
-    // is simply absent and everything below runs exactly as it always did.
+    // `v2` the store cannot serve is simply absent and everything below runs
+    // exactly as it always did. Android's `v2` holds the pass alone: a cut
+    // with no plan beside its pass is read by name, the pass kept.
     const v2 = all.all[OFFERING_V2];
     const cut = v2 == null ? null : v2Slots(v2, identifier);
-    if (cut != null) return toOffering(identifier, cut);
+    if (cut != null && BILLED.some((period) => cut[period] != null)) return toOffering(identifier, cut);
+    const v2Pass = cut?.pass ?? null;
     // By name first, then whatever the dashboard marks current. The fallback
     // matters for `default`, which RevenueCat exposes as `current` rather than
     // under that key in some dashboard configurations.
-    const found = all.all[identifier] ?? (identifier === 'default' ? all.current : null);
-    if (found == null) return null;
-    return toOffering(found.identifier, slotsOf(found));
+    const found =
+      all.all[identifier] ?? (identifier === OFFERINGS.standard ? all.current : null);
+    if (found == null) {
+      if (v2Pass == null) return null;
+      return toOffering(identifier, { annual: null, monthly: null, weekly: null, lifetime: null, pass: v2Pass });
+    }
+    const slots = slotsOf(found, identifier);
+    return toOffering(found.identifier, { ...slots, pass: slots.pass ?? v2Pass });
   },
 
   async buy(plan: Plan): Promise<PurchaseResult> {
@@ -964,7 +1017,9 @@ export const revenueCatStore: Store = {
       };
     }
     const { pkg, period } = held;
-    const props = purchaseProps(pkg, period, plan.token.split(':')[0]);
+    const offering = plan.token.split(':')[0];
+    const props = purchaseProps(pkg, period, offering);
+    const pass = period === 'pass' || isPassProduct(pkg.product.identifier);
     track('purchase_started', props);
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);
@@ -973,9 +1028,17 @@ export const revenueCatStore: Store = {
       // returning. A purchase that completes without granting the entitlement
       // is a misconfigured dashboard, and saying "purchased" there would leave
       // the user paid-up and still looking at the paywall.
-      if (entitledIn(customerInfo)) {
+      //
+      // Except a pass, which grants no entitlement by design: the store taking
+      // the payment is the purchase, the server counts its days, and the
+      // store's record opens the app meanwhile (`passEnd`).
+      if (pass || entitledIn(customerInfo)) {
         track('purchase_completed', props);
-        logStoreConversion(customerInfo, pkg.product.identifier, period);
+        // Staying, not arriving: the cancel flow's pass sends AppsFlyer
+        // nothing, like every retention purchase.
+        if (offering !== OFFERINGS.retentionBudget) {
+          logStoreConversion(customerInfo, pkg.product.identifier, pass ? 'pass' : period);
+        }
         return { status: 'purchased' };
       }
       track('purchase_failed', { ...props, reason: 'no-entitlement' });
@@ -1040,7 +1103,7 @@ export const revenueCatStore: Store = {
           : undefined;
       const { customerInfo } = option != null ? await Purchases.purchaseSubscriptionOption(option) : await Purchases.purchaseStoreProduct(product);
       announce(customerInfo);
-      if (entitledIn(customerInfo)) {
+      if (props.plan === 'pass' || entitledIn(customerInfo)) {
         track('purchase_completed', props);
         logStoreConversion(customerInfo, product.identifier, props.plan);
         return { status: 'purchased' };
@@ -1156,25 +1219,6 @@ export const revenueCatStore: Store = {
     return retentionPurchase(props, () => Purchases.purchaseDiscountedProduct(held.product, held.signed));
   },
 
-  async changePlan(plan: Plan, fromProductId: string): Promise<PurchaseResult> {
-    const held = packages.get(plan.token);
-    if (held == null) {
-      return { status: 'failed', message: translatorFor(getLanguage())('purchase.unavailable') };
-    }
-    const { pkg, period } = held;
-    // Google Play bills two subscriptions side by side unless it is told which
-    // one this replaces. With time proration the yearly plan starts now and
-    // what is left of the old period is credited against it. The App Store
-    // needs nothing: a plan in the same subscription group replaces the one
-    // held by itself.
-    const change: StoreProductChangeInfo | null =
-      Platform.OS === 'android'
-        ? { oldProductIdentifier: fromProductId.split(':')[0], replacementMode: STORE_REPLACEMENT_MODE.WITH_TIME_PRORATION }
-        : null;
-    return retentionPurchase(purchaseProps(pkg, period, RETENTION_SOURCE), () =>
-      Purchases.purchasePackage(pkg, null, change),
-    );
-  },
 
   async restore(): Promise<RestoreResult> {
     try {

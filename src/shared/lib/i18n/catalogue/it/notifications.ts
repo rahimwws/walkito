@@ -130,6 +130,6 @@ export const NOTIFICATIONS_IT = {
   'notifications.offerWaitBody': 'L’abbonamento annuale ti aspetta a un prezzo più basso. Tocca per vederlo.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Il tuo accesso al programma finisce tra una settimana',
+  'notifications.expiryTitle': 'Il tuo pass di 3 mesi finisce tra una settimana',
   'notifications.expiryBody': 'I tuoi progressi restano comunque.',
 };

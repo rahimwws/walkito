@@ -6,7 +6,8 @@ import { AppState, BackHandler, ScrollView, StyleSheet, View } from 'react-nativ
 import Animated, { Easing, FadeIn, FadeOut, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { OfferScreen } from '@/features/home-offer';
+import { OfferScreen, type PassSale } from '@/features/home-offer';
+import { usePassCheckout } from '@/widgets/pass-checkout';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { painAreasOf, whereKey } from '@/entities/leg-zone';
@@ -26,8 +27,8 @@ import {
   purchases,
   skipPaywall,
   usePaywallSkipped,
+  type PaywallPeriod,
   type Plan,
-  type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
 import { armHomeTour } from '@/entities/session';
@@ -88,6 +89,13 @@ const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMot
  */
 export function OfferPage() {
   const skipped = usePaywallSkipped();
+  // The limited offer's 3-month pass, bought through the pass checkout.
+  const checkout = usePassCheckout();
+  const pass: PassSale = {
+    buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
+    busy: checkout.busy,
+    notice: checkout.notice,
+  };
   // The plans fade out where they stand (`STEP_OUT`) while the offers fade in
   // over them (`STEP_IN`); the offer's own entrance starts once they are gone.
   // The plans have no entrance of their own here: each step brings its own.
@@ -95,13 +103,14 @@ export function OfferPage() {
     <View style={styles.full}>
       {skipped ? (
         <Animated.View key="offers" entering={STEP_IN} exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
-          <OfferScreen />
+          <OfferScreen pass={pass} />
         </Animated.View>
       ) : (
         <Animated.View key="plans" exiting={STEP_OUT} style={StyleSheet.absoluteFill}>
           <Paywall />
         </Animated.View>
       )}
+      {checkout.sheet}
     </View>
   );
 }
@@ -135,7 +144,7 @@ function Paywall() {
   const { name } = useLocalSearchParams<{ name?: string }>();
   /** Which plan is selected. The annual one, by default — see the note on the
    * component. */
-  const [tier, setTier] = useState<PlanPeriod>('annual');
+  const [tier, setTier] = useState<PaywallPeriod>('annual');
   /** True from the tap until the store answers. Locks the button rather than
    * letting a second tap open a second transaction. */
   const [busy, setBusy] = useState(false);
@@ -402,7 +411,7 @@ function Paywall() {
    * still hold the first line-up, annual and weekly, until its own versions
    * of the new products exist, and the step draws whatever is there.
    */
-  const plans: Readonly<Record<PlanPeriod, Plan | null>> = {
+  const plans: Readonly<Record<PaywallPeriod, Plan | null>> = {
     annual: planOn(shelf, 'annual'),
     monthly: planOn(shelf, 'monthly'),
     weekly: planOn(shelf, 'weekly'),
@@ -620,7 +629,7 @@ function Paywall() {
     // `unavailable` says nothing: there was no store to ask.
   };
 
-  const select = (period: PlanPeriod) => {
+  const select = (period: PaywallPeriod) => {
     if (period === tier) return;
     Haptics.selectionAsync();
     setTier(period);
@@ -699,7 +708,7 @@ function Paywall() {
     );
   } else {
     /** A row for the step: the plan, and whether the store answered without it. */
-    const row = (kind: PlanPeriod): PlansStepRow => ({
+    const row = (kind: PaywallPeriod): PlansStepRow => ({
       kind,
       plan: plans[kind],
       missing: loaded && plans[kind] == null && !devPreview,

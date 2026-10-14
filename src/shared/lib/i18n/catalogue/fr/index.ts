@@ -21,6 +21,7 @@ import { STICKERS_FR } from './stickers';
 import { RECAP_FR } from './recap';
 import { HOME_OFFER_FR } from './home-offer';
 import { CANCEL_FR } from './cancel';
+import { PASS_FR } from './pass';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -52,4 +53,5 @@ export const fr: CatalogueFor<'fr'> = {
   ...RECAP_FR,
   ...HOME_OFFER_FR,
   ...CANCEL_FR,
+  ...PASS_FR,
 };

@@ -34,6 +34,7 @@ import {
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useDevOfferWall, usePlansAsked } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
+import { PassSetPreview } from '@/widgets/pass-checkout';
 import { SessionDonePreview } from '@/widgets/session-player';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import {
@@ -131,7 +132,7 @@ function RootLayoutInner() {
   const entitled = useEntitled();
   /**
    * The fourth state, between paid and never-paid: a subscription that ended
-   * (or a legacy pass that ran out). It gets its own door — the expiry screen —
+   * (or a 3-month pass that ran out). It gets its own door — the expiry screen —
    * because a pitch is the wrong thing to show somebody who already paid and
    * has their own measurements in the app.
    *
@@ -422,6 +423,9 @@ function RootLayoutInner() {
               {/* Development only: the end-of-session sheet without finishing a
                   session (`?previewDone`, `?previewDone=stopped`). */}
               {__DEV__ && (fontsReady || fontError) && <SessionDonePreview />}
+              {/* Development only: the pass checkout's "Your 3 months are set"
+                  (`?previewPassSet`). */}
+              {__DEV__ && (fontsReady || fontError) && <PassSetPreview />}
             </PaywallRoot>
           </NavThemeProvider>
         </IntroRevealProvider>

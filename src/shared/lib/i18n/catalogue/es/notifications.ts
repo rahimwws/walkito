@@ -130,6 +130,6 @@ export const NOTIFICATIONS_ES = {
   'notifications.offerWaitBody': 'La suscripción anual te espera a un precio más bajo. Toca para verla.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Tu acceso al programa termina en una semana',
+  'notifications.expiryTitle': 'Tu pase de 3 meses termina en una semana',
   'notifications.expiryBody': 'Tu progreso se queda de todas formas.',
 };

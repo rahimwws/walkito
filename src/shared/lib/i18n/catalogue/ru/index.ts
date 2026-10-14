@@ -21,6 +21,7 @@ import { STICKERS_RU } from './stickers';
 import { RECAP_RU } from './recap';
 import { HOME_OFFER_RU } from './home-offer';
 import { CANCEL_RU } from './cancel';
+import { PASS_RU } from './pass';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -52,4 +53,5 @@ export const ru: CatalogueFor<'ru'> = {
   ...RECAP_RU,
   ...HOME_OFFER_RU,
   ...CANCEL_RU,
+  ...PASS_RU,
 };

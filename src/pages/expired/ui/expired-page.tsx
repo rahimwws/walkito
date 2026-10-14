@@ -15,7 +15,7 @@ import {
   purchases,
   startBrowsingLapsed,
   type Plan,
-  type PlanPeriod,
+  type PaywallPeriod,
   type Shelf,
 } from '@/entities/purchase';
 import { fonts, meterColors, palette } from '@/shared/config';
@@ -33,7 +33,7 @@ import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/s
  * A subscription that ended.
  *
  * Shown instead of the paywall to somebody who has paid before and no longer
- * does — a subscription cancelled or lapsed, or a legacy pass that ran out —
+ * does — a subscription cancelled or lapsed, or a 3-month pass that ran out —
  * and the distinction is the point: this person is not being pitched, they are
  * being shown what they did. Every number at the top is one they produced —
  * their first retest against their last, their first logged morning against
@@ -52,7 +52,7 @@ import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/s
 const FIGURE = 72;
 
 /** The plans under the annual one, in this order, when the offering has them. */
-const OTHERS: readonly PlanPeriod[] = ['monthly', 'weekly', 'lifetime'];
+const OTHERS: readonly PaywallPeriod[] = ['monthly', 'weekly', 'lifetime'];
 /** He holds the key out once, as the screen settles. */
 const PRESENT_MS = 650;
 
@@ -135,7 +135,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   }, [loaded]);
 
   /** Each plan the standard offering holds, from the store. */
-  const plans: Readonly<Record<PlanPeriod, Plan | null>> = {
+  const plans: Readonly<Record<PaywallPeriod, Plan | null>> = {
     annual: planOn(shelf, 'annual'),
     monthly: planOn(shelf, 'monthly'),
     weekly: planOn(shelf, 'weekly'),
@@ -153,7 +153,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
    */
   const noStore = !purchases.configured;
   /** A plan's billed amount, the store's own string, or null until there is one. */
-  const priceText = (kind: PlanPeriod): string | null => {
+  const priceText = (kind: PaywallPeriod): string | null => {
     const plan = plans[kind];
     if (plan != null) return plan.priceString;
     if (!noStore) return null;
@@ -176,7 +176,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
 
   const annualMissing = loaded && annualPlan == null;
 
-  const [tier, setTier] = useState<PlanPeriod>('annual');
+  const [tier, setTier] = useState<PaywallPeriod>('annual');
   useEffect(() => {
     if (!loaded) return;
     // Never leave the selection on a plan that cannot be bought.
@@ -296,7 +296,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     onDismiss?.();
   };
 
-  const select = (period: PlanPeriod) => {
+  const select = (period: PaywallPeriod) => {
     Haptics.selectionAsync();
     setTier(period);
   };
@@ -328,7 +328,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     }
   })();
   /** One plan under the annual one, as its row says it. */
-  const rowFor = (kind: PlanPeriod, price: string) => {
+  const rowFor = (kind: PaywallPeriod, price: string) => {
     switch (kind) {
       case 'monthly':
         return { title: t('offer.plans.monthly'), price: t('offer.monthlyPrice', { price }), note: t('offer.plans.monthlyNote') };

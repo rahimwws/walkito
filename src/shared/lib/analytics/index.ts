@@ -6,6 +6,7 @@ export type {
   AnalyticsEvents,
   CancelOffer,
   CancelReason,
+  PassPlacement,
   PlanTier,
   PurchaseProps,
   SessionProps,

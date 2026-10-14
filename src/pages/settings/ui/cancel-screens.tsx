@@ -3,10 +3,9 @@ import { ActivityIndicator, StyleSheet, View } from 'react-native';
 
 import { wakeMinutes } from '@/entities/notifications';
 import { planSettings, usualStartMinute } from '@/entities/program';
-import { annualSavingPercent, discountPercent, nextYearPercent, type Plan } from '@/entities/purchase';
 import { meterColors } from '@/shared/config';
 import type { CancelOffer, CancelReason } from '@/shared/lib/analytics';
-import { useT } from '@/shared/lib/i18n';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Button3D } from '@/shared/ui/button-3d';
 import { FluentIcon } from '@/shared/ui/fluent-icon';
@@ -41,13 +40,18 @@ import { ActionCard, ChangesCard, Hero, Line, OfferCard } from './cancel-parts';
  * away.
  */
 
-/** The retention offers bought through the store. */
-export type StoreOffer = 'next_year' | 'yearly' | 'free_month';
+/** The retention offers bought through the store: the free month, and the
+ * 3-month pass (through the pass checkout). */
+export type StoreOffer = 'pass' | 'free_month';
 
 /** What was taken, for the "all set" screen. */
 export type Outcome =
-  | { kind: 'next_year'; percent: number; pending: boolean }
-  | { kind: 'yearly'; pending: boolean }
+  | {
+      kind: 'pass';
+      /** When the 3 months end, as the server granted them; null when it
+       * had not answered in time. */
+      until: number | null;
+    }
   | { kind: 'free_month'; pending: boolean }
   | { kind: 'lighter' }
   | { kind: 'short_sessions'; minutes: number };
@@ -118,73 +122,30 @@ export function ReasonsScreen({
 // ── "It doesn't fit my budget" ───────────────────────────────────────────────
 
 /**
- * What the yearly plan saves against the plan held, from the two store
- * prices: twelve months of the monthly one, or a year of the weekly one.
- * Null when either price is missing, they are in different currencies, or
- * nothing is saved.
+ * One offer, said once and plainly: the 3-month pass at the retention price,
+ * the store's own string, one payment and nothing renewing. Shown only where
+ * `budgetPassAllowed` allows it (the flow sends anybody else straight to the
+ * store's page), so the kind words below it are for the review account when
+ * the store had no pass to sell.
  */
-function savingOf(yearly: Plan, current: Plan | null): { percent: number; weekly: boolean } | null {
-  if (current == null || current.product.currencyCode !== yearly.product.currencyCode) return null;
-  if (current.period === 'monthly') {
-    const percent = discountPercent(yearly.product.price, current.product.price * 12);
-    return percent == null ? null : { percent, weekly: false };
-  }
-  if (current.period === 'weekly') {
-    const percent = annualSavingPercent(yearly.product.price, current.product.price);
-    return percent == null ? null : { percent, weekly: true };
-  }
-  return null;
-}
-
 export function BudgetReply({ options, offers, busy, problem, live, on }: ReplyProps) {
   const t = useT();
 
-  const nextYear = offers.includes('next_year') ? options.nextYear : null;
-  const percent = nextYear != null ? nextYearPercent(nextYear) : null;
-  if (nextYear != null && percent != null) {
-    return (
-      <>
-        <Hero rig={giftRig} shot="present" title={t('cancel.budget.title')} live={live} />
-        <OfferCard
-          art="gift"
-          tone="violet"
-          title={t('cancel.budget.nextYearTitle', { percent })}
-          body={t('cancel.budget.nextYearBody', { price: nextYear.priceString, regular: nextYear.regularPriceString })}
-          cta={t('cancel.budget.nextYearCta', { percent })}
-          busy={busy === 'next_year'}
-          terms={t('cancel.budget.nextYearTerms')}
-          problem={problem}
-          onPress={() => on.take('next_year')}
-        />
-      </>
-    );
-  }
-
-  const yearly = offers.includes('yearly') ? options.yearly : null;
-  if (yearly != null) {
-    const saving = savingOf(yearly, options.current);
+  const pass = offers.includes('pass') ? options.pass : null;
+  if (pass != null) {
     return (
       <>
         <Hero rig={giftRig} shot="present" title={t('cancel.budget.title')} live={live} />
         <OfferCard
           art="calendar"
           tone="violet"
-          title={t('cancel.budget.yearlyTitle')}
-          body={
-            yearly.pricePerMonthString != null
-              ? t('cancel.budget.yearlyBody', { price: yearly.priceString, perMonth: yearly.pricePerMonthString })
-              : t('cancel.budget.yearlyBodyPlain', { price: yearly.priceString })
-          }
-          note={
-            saving == null
-              ? undefined
-              : t(saving.weekly ? 'cancel.budget.savingWeekly' : 'cancel.budget.savingMonthly', { percent: saving.percent })
-          }
-          cta={t('cancel.budget.yearlyCta')}
-          busy={busy === 'yearly'}
-          terms={t('cancel.budget.yearlyTerms')}
+          title={t('pass.budget.title')}
+          body={t('pass.budget.body', { price: pass.priceString })}
+          cta={t('pass.budget.cta', { price: pass.priceString })}
+          busy={busy === 'pass'}
+          terms={t('pass.budget.terms')}
           problem={problem}
-          onPress={() => on.take('yearly')}
+          onPress={() => on.take('pass')}
         />
       </>
     );
@@ -348,12 +309,17 @@ export function NoTimeReply({ offers, live, on }: ReplyProps) {
 
 export function DoneScreen({ outcome, live, onBack }: { outcome: Outcome; live: boolean; onBack: () => void }) {
   const t = useT();
+  const language = useLanguage();
   const body = (() => {
     switch (outcome.kind) {
-      case 'next_year':
-        return t('cancel.done.nextYear', { percent: outcome.percent });
-      case 'yearly':
-        return t('cancel.done.yearly');
+      case 'pass':
+        return outcome.until != null
+          ? t('pass.done.until', {
+              date: new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long', year: 'numeric' }).format(
+                new Date(outcome.until),
+              ),
+            })
+          : t('pass.done.plain');
       case 'free_month':
         return t('cancel.done.freeMonth');
       case 'lighter':

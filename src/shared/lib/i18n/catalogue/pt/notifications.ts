@@ -135,6 +135,6 @@ export const NOTIFICATIONS_PT = {
   'notifications.offerWaitBody': 'A assinatura anual está esperando por um preço menor. Toque para ver.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Seu acesso ao programa termina em uma semana',
+  'notifications.expiryTitle': 'Seu passe de 3 meses termina em uma semana',
   'notifications.expiryBody': 'Seu progresso fica salvo de qualquer jeito.',
 };
