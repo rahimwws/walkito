@@ -97,6 +97,7 @@ const CARD_TITLE = {
   monthly: 'homeOffer.plan.monthly',
   weekly: 'homeOffer.plan.weekly',
   lifetime: 'homeOffer.plan.lifetime',
+  pass: 'pass.plan',
 } as const;
 
 const TAB_TITLE = {
@@ -104,9 +105,11 @@ const TAB_TITLE = {
   monthly: 'homeOffer.tab.month',
   weekly: 'homeOffer.tab.week',
   lifetime: 'homeOffer.tab.lifetime',
+  pass: 'pass.tab',
 } as const;
 
-/** The billed price inside its period: "{price}/yr", "{price} once". */
+/** The billed price inside its period: "{price}/yr", "{price} once". The
+ * pass, like lifetime, is paid once. */
 function perPeriod(slot: Slot, price: string, t: Translate): string {
   switch (slot) {
     case 'annual':
@@ -116,6 +119,7 @@ function perPeriod(slot: Slot, price: string, t: Translate): string {
     case 'weekly':
       return t('homeOffer.price.perWeek', { price });
     case 'lifetime':
+    case 'pass':
       return t('homeOffer.price.once', { price });
   }
 }
@@ -146,6 +150,8 @@ function termsFor({ slot, plan }: SlottedPlan, t: Translate): string[] {
       return [t('offer.termsWeekly', { price }), renewal(t)];
     case 'lifetime':
       return [t('homeOffer.terms.lifetime', { price })];
+    case 'pass':
+      return [t('pass.terms', { price })];
   }
 }
 
@@ -205,12 +211,25 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
  * the cheaper lifetime against the standard lifetime (`savingAgainst`, the
  * paywall's rule). Without one, nothing on the card claims a deal: no
  * percentage, no struck price, no "only this once", only the price.
+ *
+ * The pass has no standard price to stand against, so its card is never a
+ * discount: the time left, the price paid once, and that nothing renews.
  */
 function dealCard(
   { slot, plan }: SlottedPlan,
   standard: { annual: Plan | null; lifetime: Plan | null },
   t: Translate,
 ): DealWords {
+  if (slot === 'pass') {
+    return {
+      kind: 'deal',
+      off: null,
+      promise: null,
+      was: null,
+      pill: perPeriod('pass', priceOf(plan), t),
+      caption: t('pass.card.caption'),
+    };
+  }
   const lifetime = slot === 'lifetime';
   const regular = lifetime ? standard.lifetime : standard.annual;
   const percent = regular != null ? savingAgainst(plan, regular) : null;
@@ -273,6 +292,7 @@ function standardCard({ slot, plan }: SlottedPlan, plans: readonly SlottedPlan[]
     aside = perMonth != null ? t('homeOffer.price.perMonth', { price: perMonth }) : null;
   }
   if (slot === 'lifetime') note = t('homeOffer.price.lifetimeNote');
+  if (slot === 'pass') note = t('pass.card.caption');
   return {
     kind: 'plan',
     title: t(CARD_TITLE[slot]),
@@ -284,6 +304,19 @@ function standardCard({ slot, plan }: SlottedPlan, plans: readonly SlottedPlan[]
   };
 }
 
+/** The line under the comeback's headline, naming the deals it really holds.
+ * `contentFor` never makes a comeback of the pass alone. */
+function comebackBody(year: boolean, lifetime: boolean, pass: boolean, t: Translate): string {
+  if (pass) {
+    if (year && lifetime) return t('pass.offer.bodyAll');
+    if (year) return t('pass.offer.bodyYear');
+    return t('pass.offer.bodyLifetime');
+  }
+  if (year && lifetime) return t('homeOffer.comeback.bodyBoth');
+  if (year) return t('homeOffer.comeback.bodyYear');
+  return t('homeOffer.comeback.bodyLifetime');
+}
+
 /** What the overlay says, for this content with `selected` chosen. */
 export function viewFor(content: OfferContent, selected: Slot, t: Translate): OfferView {
   if (content.kind === 'trial') return trialView(content.plan, content.trial, t);
@@ -293,15 +326,11 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
   if (content.kind === 'comeback') {
     const year = content.plans.some((p) => p.slot === 'annual');
     const lifetime = content.plans.some((p) => p.slot === 'lifetime');
+    const pass = content.plans.some((p) => p.slot === 'pass');
     const standard = { annual: content.standardAnnual, lifetime: content.standardLifetime };
     return {
       title: t('homeOffer.comeback.title'),
-      body:
-        year && lifetime
-          ? t('homeOffer.comeback.bodyBoth')
-          : year
-            ? t('homeOffer.comeback.bodyYear')
-            : t('homeOffer.comeback.bodyLifetime'),
+      body: comebackBody(year, lifetime, pass, t),
       mascot: 'deal',
       endsAt: content.endsAt,
       tabs:

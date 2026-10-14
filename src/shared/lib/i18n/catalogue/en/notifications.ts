@@ -167,9 +167,10 @@ export const NOTIFICATIONS_EN = {
   'notifications.offerWaitBody': 'The annual subscription is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  // The body is the part that matters. Somebody who reads "your access ends"
-  // and nothing else has to assume their logs go with it, and they do not — so
-  // the reassurance travels in the same breath.
-  'notifications.expiryTitle': 'Your program access ends in a week',
+  // A week before a 3-month pass ends: the only access with a fixed end (a
+  // subscription renews). The body is the part that matters. Somebody who
+  // reads "your access ends" and nothing else has to assume their logs go with
+  // it, and they do not — so the reassurance travels in the same breath.
+  'notifications.expiryTitle': 'Your 3-month pass ends in a week',
   'notifications.expiryBody': 'Your progress stays either way.',
 } as const satisfies Record<string, SourceEntry>;

@@ -3,6 +3,7 @@ import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
 import { compAccess, grantDevAccess, subscribeComp } from './comp';
+import { devGrantPass, passAccess, passEverBought, passServerEnd, subscribePass, syncPassFromServer } from './pass';
 import { type Purchases as Store, unconfigured } from './purchase';
 import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn } from './samples';
 import { storeSheetClosed, storeSheetOpened } from './skip';
@@ -173,12 +174,12 @@ function pick(): Store {
  * branches were all written against this contract before there was anything
  * behind it, so none of them needed touching when there was.
  */
-export const purchases: Store = withSamplePrices(withComp(withSheetCount(pick())));
+export const purchases: Store = withSamplePrices(withComp(withPass(withSheetCount(pick()))));
 
 /**
  * The store, counting its own sheets: a purchase, a restore, the offer-code
- * sheet and the cancel flow's (a promotional offer, a change of plan, Apple's
- * subscription management) each hold `skip.ts` from reading the app going to
+ * sheet and the cancel flow's (a promotional offer, Apple's subscription
+ * management) each hold `skip.ts` from reading the app going to
  * the background as the person leaving it — on Android the Play billing sheet
  * is reported that way, and leaving is what ends the one-time trial offer.
  */
@@ -201,7 +202,6 @@ function withSheetCount(store: Store): Store {
     redeemCode: held(store.redeemCode),
     manageSubscriptions: held(store.manageSubscriptions),
     buyRetentionOffer: held(store.buyRetentionOffer),
-    changePlan: held(store.changePlan),
   };
 }
 
@@ -209,9 +209,10 @@ function withSheetCount(store: Store): Store {
  * Development only: sample prices instead of the store (`samples.ts`), while
  * `?samplePrices` is on. `configured` reads true then, so every screen draws
  * as it will against a store; buying a sample plan grants the simulator's
- * pretend purchase. The cancel flow's preview (`?previewCancel`) hands out
- * sample offers and plans whatever the setting, and taking one "goes through"
- * the same way. A release build gets the store untouched.
+ * pretend purchase (a sample pass, a pretend pass window: `devGrantPass`). The
+ * cancel flow's preview (`?previewCancel`) hands out sample offers and plans
+ * whatever the setting, and taking one "goes through" the same way. A release
+ * build gets the store untouched.
  */
 function withSamplePrices(store: Store): Store {
   if (!__DEV__) return store;
@@ -224,16 +225,59 @@ function withSamplePrices(store: Store): Store {
       samplePricesOn() ? Promise.resolve(sampleOffering(identifier)) : store.offering(identifier),
     buy: async (plan) => {
       if (!isSamplePlan(plan)) return store.buy(plan);
-      grantDevAccess();
+      if (plan.isPass) devGrantPass();
+      else grantDevAccess();
       return { status: 'purchased' };
     },
     buyRetentionOffer: async (offer) => {
       if (!isSampleOffer(offer)) return store.buyRetentionOffer(offer);
       return { status: 'purchased' };
     },
-    changePlan: async (plan, from) => {
-      if (!isSamplePlan(plan)) return store.changePlan(plan, from);
-      return { status: 'purchased' };
+  };
+}
+
+/**
+ * The store, with the 3-month pass on top (`pass.ts`): the days the server
+ * counted open the app as well, so access for the whole app is still
+ * `purchases.entitled()` and nothing that gates on it needed to change.
+ *
+ * - `entitled`: the store's access, or a pass window running now.
+ * - `hadAccess`: also true once the server says a pass was ever bought, so a
+ *   pass that ran out meets the expiry screen, not the paywall.
+ * - `passEndsAt`: the later of the store's record and the server's end (a
+ *   pass queued behind a subscription ends later than its purchase says).
+ *   The 7-day expiry push is laid from it.
+ * - `restore`: asks the server too (`pass-sync`), so a pass bought on another
+ *   phone, or one the webhook missed, arrives with the restore.
+ */
+function withPass(store: Store): Store {
+  return {
+    ...store,
+    entitled: () => store.entitled() || passAccess(),
+    hadAccess: () => store.hadAccess() || passEverBought(),
+    passEndsAt: () => {
+      const local = store.passEndsAt();
+      const server = passServerEnd();
+      if (local == null) return server;
+      if (server == null) return local;
+      return server.getTime() > local.getTime() ? server : local;
+    },
+    restore: async () => {
+      const result = await store.restore();
+      const id = await store.appUserId().catch(() => null);
+      await syncPassFromServer(id);
+      // A pass the store's own record did not show (bought on another phone,
+      // granted by the server) is a restore too.
+      if (result.status === 'nothing-found' && passAccess()) return { status: 'restored' };
+      return result;
+    },
+    subscribe: (listener) => {
+      const offStore = store.subscribe(listener);
+      const offPass = subscribePass(listener);
+      return () => {
+        offStore();
+        offPass();
+      };
     },
   };
 }

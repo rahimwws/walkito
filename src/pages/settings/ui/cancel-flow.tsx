@@ -19,9 +19,9 @@ import { SafetySheet } from '@/features/safety-check';
 import { planSettings, setPlanSettings } from '@/entities/program';
 import {
   markRetentionTaken,
-  nextYearPercent,
   openPlayPause,
   purchases,
+  reviewMode,
   type PurchaseResult,
   type Subscription,
 } from '@/entities/purchase';
@@ -29,9 +29,11 @@ import { meterColors, palette } from '@/shared/config';
 import { track, type CancelOffer, type CancelReason } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { SETTLE_EASING } from '@/shared/lib/motion';
+import { usePaywall } from '@/shared/lib/paywall';
 import { reviewNow } from '@/shared/lib/review';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Button3D } from '@/shared/ui/button-3d';
+import { usePassCheckout } from '@/widgets/pass-checkout';
 
 import { writeToUs } from '../lib/write-to-us';
 import { NO_OPTIONS, changesToShow, loadCancelOptions, offersFor, type CancelOptions } from '../model/cancel-data';
@@ -69,6 +71,9 @@ const RISE = 12;
 const PICK_HOLD_MS = 280;
 /** Still waiting on the store this much later: the spinner shows. */
 const WAITING_AFTER_MS = 400;
+/** The budget offer's Superwall placement is asked for once its screen has
+ * settled in, as the paywall's own placements are. */
+const PLACEMENT_AFTER_MS = 600;
 
 const UNAVAILABLE: PurchaseResult = { status: 'unavailable' };
 
@@ -95,9 +100,13 @@ export type CancelFlowProps = {
  * Settings → Manage subscription: "Why are you leaving?", then one screen for
  * the answer, with something real in the place of cancelling.
  *
- * - **It doesn't fit my budget**: the next year at a lower price (an App Store
- *   promotional offer) on the yearly plan, or the yearly plan to somebody
- *   paying by the month or the week, priced from the store's own strings.
+ * - **It doesn't fit my budget**: the 3-month pass at the retention price
+ *   (`retention_budget`), one payment and nothing renewing, through the pass
+ *   checkout, which ends on "Your 3 months are set" and the way to turn
+ *   auto-renewal off. Only for a renewing subscription with no retention
+ *   price used and no pass bought in the last year (`budgetPassAllowed`);
+ *   anybody else picking it goes straight to the store's own page. Always
+ *   shown in review mode. Registers the Superwall placement `cancel_budget`.
  * - **My feet are better**: their own numbers, where the log shows a real
  *   improvement and only then, and a way to leave a review.
  * - **I'm taking a break**: Google Play's pause on Android, a free month on
@@ -110,8 +119,8 @@ export type CancelFlowProps = {
  * dock under each of them, never faded, never disabled, and opens the store's
  * own page (Apple's sheet, Google Play's subscription center). Apple's rule
  * for a cancel flow, and the honest one: an offer is made once, plainly, and
- * nobody has to get past it to leave. At most one retention offer a year, and
- * never on top of another discount (`retention.ts` in the purchase entity).
+ * nobody has to get past it to leave. Never on top of another discount
+ * (`retention.ts` in the purchase entity).
  *
  * A page sheet, like the leg map Settings opens; the screens cross-fade within
  * it, the old one out quickly and the new one settling up into place, a fade
@@ -135,6 +144,12 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
   const [busy, setBusy] = useState<StoreOffer | null>(null);
   const [problem, setProblem] = useState<string | null>(null);
   const [safety, setSafety] = useState(false);
+  /** The budget answer's pass is bought through the pass checkout, whose
+   * sheets are mounted inside this modal. */
+  const checkout = usePassCheckout();
+  const paywall = usePaywall();
+  const paywallRef = useRef(paywall);
+  paywallRef.current = paywall;
 
   /** The store's answer for this opening, for a reason that needs it. */
   const optionsReady = useRef<Promise<CancelOptions>>(Promise.resolve(NO_OPTIONS));
@@ -171,13 +186,18 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
       setOptions(preview.options);
       setChanges(preview.changes);
       optionsReady.current = Promise.resolve(preview.options);
+      if (preview.start != null) {
+        // Straight on one answer, past the question (`?previewCancel=budget`).
+        setSelected(preview.start);
+        setStage({ kind: 'reply', reason: preview.start });
+      }
       return undefined;
     }
     track('cancel_flow_opened', { plan: held.period });
     setOptions(null);
     setChanges(changesToShow());
     let live = true;
-    const ask = loadCancelOptions(held);
+    const ask = loadCancelOptions(held, reviewMode());
     optionsReady.current = ask;
     void ask.then((next) => {
       if (live) setOptions(next);
@@ -219,12 +239,23 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
     opacity.value = withTiming(1, { duration: IN_MS, easing: SETTLE_EASING, reduceMotion: ReduceMotion.Never });
     offset.value = withTiming(0, { duration: IN_MS, easing: SETTLE_EASING, reduceMotion: ReduceMotion.Never });
     if (stage.kind === 'reply' && !quiet) {
-      for (const offer of offersFor(stage.reason, options ?? NO_OPTIONS, planSettings())) {
+      const shown = offersFor(stage.reason, options ?? NO_OPTIONS, planSettings());
+      for (const offer of shown) {
         track('cancel_offer_shown', { reason: stage.reason, offer });
       }
+      if (shown.includes('pass')) track('pass_offer_view', { placement: 'cancel_budget' });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stage]);
+
+  // The budget offer's Superwall placement, once per showing. With no
+  // campaign for it, this screen is the offer.
+  const budgetShown = visible && stage.kind === 'reply' && stage.reason === 'budget' && options?.pass != null;
+  useEffect(() => {
+    if (!budgetShown || quiet) return undefined;
+    const timer = setTimeout(() => paywallRef.current.register('cancel_budget'), PLACEMENT_AFTER_MS);
+    return () => clearTimeout(timer);
+  }, [budgetShown, quiet]);
 
   const pick = (reason: CancelReason) => {
     if (selected != null || moving.current) return;
@@ -234,16 +265,23 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
     // Only the budget and the break wait on the store; the rest need nothing from it.
     const store = reason === 'budget' || reason === 'pause' ? optionsReady.current : Promise.resolve(NO_OPTIONS);
     const slow = setTimeout(() => setWaiting(true), PICK_HOLD_MS + WAITING_AFTER_MS);
-    void Promise.all([store, delay(PICK_HOLD_MS)]).then(() => {
+    void Promise.all([store, delay(PICK_HOLD_MS)]).then(([answered]) => {
       clearTimeout(slow);
       setWaiting(false);
       if (session.current !== opening) return;
+      // The budget with no pass to offer (not allowed, or none in the store)
+      // has nothing to say in the place of cancelling: the store's own page,
+      // at once. The review account always sees the screen.
+      if (reason === 'budget' && answered.pass == null && !quiet && !reviewMode()) {
+        onCancelAnyway();
+        return;
+      }
       go({ kind: 'reply', reason });
     });
   };
 
   const back = () => {
-    if (stage.kind !== 'reply' || busy != null) return;
+    if (stage.kind !== 'reply' || busy != null || checkout.busy) return;
     void Haptics.selectionAsync();
     setSelected(null);
     go(REASONS);
@@ -265,22 +303,45 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
     if (!quiet) track('cancel_offer_accepted', { reason, offer });
   };
 
-  const buy = (offer: StoreOffer, from: CancelOptions): Promise<PurchaseResult> => {
-    if (offer === 'yearly') {
-      return from.yearly == null ? Promise.resolve(UNAVAILABLE) : purchases.changePlan(from.yearly, held.productId);
+  /**
+   * The 3-month pass, through the checkout: an account first if there is
+   * none, the store, the server's days, then "Your 3 months are set" with the
+   * way to turn this subscription's renewal off. "All set" follows here once
+   * the checkout is over.
+   */
+  const takePass = (reason: CancelReason, from: CancelOptions) => {
+    const plan = from.pass;
+    if (plan == null) {
+      setProblem(t('purchase.unavailable'));
+      return;
     }
-    const deal = offer === 'next_year' ? from.nextYear : from.freeMonth;
-    return deal == null ? Promise.resolve(UNAVAILABLE) : purchases.buyRetentionOffer(deal);
+    checkout.start(plan, {
+      placement: 'cancel_budget',
+      onPurchased: () => {
+        // A retention price taken: no free month on this phone for a year.
+        if (!quiet) markRetentionTaken();
+        accepted(reason, 'pass');
+      },
+      onDone: (settled) => {
+        go({ kind: 'done', reason, outcome: { kind: 'pass', until: settled.window?.expiresAt ?? null } });
+      },
+    });
   };
 
   const actions: ReplyActions = {
     take: (offer) => {
-      if (busy != null || stage.kind !== 'reply') return;
+      if (busy != null || checkout.busy || stage.kind !== 'reply') return;
       const reason = stage.reason;
       const from = options ?? NO_OPTIONS;
-      setBusy(offer);
       setProblem(null);
-      void buy(offer, from).then((result) => {
+      if (offer === 'pass') {
+        takePass(reason, from);
+        return;
+      }
+      const deal = from.freeMonth;
+      setBusy(offer);
+      const buying: Promise<PurchaseResult> = deal == null ? Promise.resolve(UNAVAILABLE) : purchases.buyRetentionOffer(deal);
+      void buying.then((result) => {
         setBusy(null);
         if (result.status === 'purchased' || result.status === 'pending') {
           // Waiting on Ask to Buy counts as taken: if it goes through, it is
@@ -288,13 +349,7 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           if (!quiet) markRetentionTaken();
           accepted(reason, offer);
           void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-          const pending = result.status === 'pending';
-          const outcome: Outcome =
-            offer === 'next_year'
-              ? { kind: 'next_year', percent: from.nextYear != null ? (nextYearPercent(from.nextYear) ?? 0) : 0, pending }
-              : offer === 'yearly'
-                ? { kind: 'yearly', pending }
-                : { kind: 'free_month', pending };
+          const outcome: Outcome = { kind: 'free_month', pending: result.status === 'pending' };
           go({ kind: 'done', reason, outcome });
         } else if (result.status === 'failed') {
           setProblem(result.message);
@@ -363,8 +418,8 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           options: from,
           offers: offersFor(stage.reason, from, planSettings()),
           changes,
-          busy,
-          problem,
+          busy: busy ?? (checkout.busy ? 'pass' : null),
+          problem: problem ?? checkout.notice,
           live,
           on: actions,
         };
@@ -424,8 +479,9 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           />
         </View>
       </View>
-      {/* Inside this modal, so it rises over the flow rather than under it. */}
+      {/* Inside this modal, so they rise over the flow rather than under it. */}
       <SafetySheet visible={safety} onClose={() => setSafety(false)} />
+      {checkout.sheet}
     </Modal>
   );
 }

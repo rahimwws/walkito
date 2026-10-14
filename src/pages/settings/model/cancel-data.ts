@@ -4,11 +4,12 @@ import { allLogs, firstStepOn, retestResults, todayDayNumber } from '@/entities/
 import {
   OFFERINGS,
   breakOffer,
-  budgetOffer,
+  budgetPassAllowed,
   compAccess,
   isFreeMonth,
-  nextYearPercent,
+  passWindow,
   purchases,
+  refreshPass,
   retentionAllowed,
   retentionTakenAt,
   type Plan,
@@ -26,57 +27,59 @@ import { SHORTEST_MINUTES, lighterPlan, yourChanges, type Change, type FirstStep
  *
  * Every field is what the store said it would really sell: an offer it signed
  * for this customer, a plan it priced. A field the store did not fill is not
- * drawn, and the screen for that reason says something kind instead. Which of
- * them may be asked for at all is `retention.ts` in the purchase entity.
+ * drawn, and the screen for that reason says something kind instead (or, for
+ * the budget, goes straight to the store's page). Which of them may be asked
+ * for at all is `retention.ts` in the purchase entity.
  */
 export type CancelOptions = {
-  /** The next year at a lower price, on the yearly plan held. */
-  readonly nextYear: RetentionOffer | null;
   /** A free month, on the plan held. */
   readonly freeMonth: RetentionOffer | null;
   /** Google Play's own pause, on Android. Nothing to ask the store for. */
   readonly playPause: boolean;
-  /** The yearly plan, for a monthly or weekly subscriber to move to. */
-  readonly yearly: Plan | null;
-  /** The plan held, as the same offering prices it, for the saving. */
-  readonly current: Plan | null;
+  /** The 3-month pass at the retention price, for "It doesn't fit my
+   * budget": null when it may not be offered (`budgetPassAllowed`) or the
+   * store has none to sell. */
+  readonly pass: Plan | null;
 };
 
-export const NO_OPTIONS: CancelOptions = { nextYear: null, freeMonth: null, playPause: false, yearly: null, current: null };
+export const NO_OPTIONS: CancelOptions = { freeMonth: null, playPause: false, pass: null };
 
 /** Past this the flow stops waiting on the store and offers what needs none. */
 const LOAD_TIMEOUT_MS = 6000;
 
-function sameProduct(a: string, b: string): boolean {
-  return a.split(':')[0] === b.split(':')[0];
-}
-
-/** Asks the store for what may be offered to the subscriber in `held`. Never
- * rejects: an unreachable store answers with nothing to offer. */
-export async function loadCancelOptions(held: Subscription, now: number = Date.now()): Promise<CancelOptions> {
+/**
+ * Asks the store for what may be offered to the subscriber in `held`, and the
+ * server for the account's passes first (the budget offer is decided by
+ * them). Never rejects: an unreachable store answers with nothing to offer.
+ *
+ * `review`: the App Review account, to whom the budget offer is always made
+ * (`budgetPassAllowed`).
+ */
+export async function loadCancelOptions(
+  held: Subscription,
+  review: boolean,
+  now: number = Date.now(),
+): Promise<CancelOptions> {
   const os = Platform.OS;
   const allowed = retentionAllowed(held, { comp: compAccess(now), takenAt: retentionTakenAt(), now, os });
-  const budget = budgetOffer(held, allowed, os);
   const pause = breakOffer(held, allowed, os);
   const fallback: CancelOptions = { ...NO_OPTIONS, playPause: pause === 'play_pause' };
 
   const ask = Promise.all([
-    budget === 'next_year' ? purchases.retentionOffer(RETENTION_OFFERS.nextYear40, held.productId) : Promise.resolve(null),
     pause === 'free_month' ? purchases.retentionOffer(RETENTION_OFFERS.freeMonth, held.productId) : Promise.resolve(null),
-    budget === 'yearly' ? purchases.offering(OFFERINGS.standard).catch(() => null) : Promise.resolve(null),
-  ]).then(([nextYear, freeMonth, standard]): CancelOptions => {
-    const annual = standard?.annual ?? null;
-    return {
-      nextYear: nextYear != null && nextYearPercent(nextYear) != null ? nextYear : null,
+    // The server's word on the account's passes, fresh, before it decides.
+    refreshPass().then(() =>
+      budgetPassAllowed(held, passWindow(), now, review)
+        ? purchases.offering(OFFERINGS.retentionBudget).catch(() => null)
+        : null,
+    ),
+  ]).then(
+    ([freeMonth, budget]): CancelOptions => ({
       freeMonth: freeMonth != null && isFreeMonth(freeMonth) ? freeMonth : null,
       playPause: pause === 'play_pause',
-      yearly: annual != null && !sameProduct(annual.product.id, held.productId) ? annual : null,
-      current:
-        [standard?.monthly, standard?.weekly].find(
-          (plan): plan is Plan => plan != null && sameProduct(plan.product.id, held.productId),
-        ) ?? null,
-    };
-  });
+      pass: budget?.pass ?? null,
+    }),
+  );
 
   let giveUp: (options: CancelOptions) => void = () => {};
   const late = new Promise<CancelOptions>((resolve) => {
@@ -99,8 +102,7 @@ export async function loadCancelOptions(held: Subscription, now: number = Date.n
 export function offersFor(reason: CancelReason, options: CancelOptions, load: Load): CancelOffer[] {
   switch (reason) {
     case 'budget':
-      if (options.nextYear != null) return ['next_year'];
-      return options.yearly != null ? ['yearly'] : [];
+      return options.pass != null ? ['pass'] : [];
     case 'better':
       return ['review'];
     case 'pause':

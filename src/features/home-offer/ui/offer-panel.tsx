@@ -18,7 +18,12 @@ import type { OfferContent } from '../model/content';
 import { firstSlot, viewFor } from '../model/offer-view';
 import type { Slot } from '../model/plan-terms';
 import type { OfferGuard } from '../model/use-offer-screen';
-import { TRIAL_REMINDER_DAYS, useOfferPurchase } from '../model/use-offer-purchase';
+import {
+  TRIAL_REMINDER_DAYS,
+  useOfferPurchase,
+  type OfferPurchaseOptions,
+  type PassSale,
+} from '../model/use-offer-purchase';
 
 import { Reveal } from './arrive';
 import { DealCard } from './deal-card';
@@ -65,11 +70,18 @@ const CONFETTI_FROM: readonly ConfettiOrigin[] = [
  *
  * One mascot at a time: the surprised one peeking over the trial's card, the
  * one gripping the comeback's card, the crown and key beside the plans.
+ *
+ * The comeback's third card, the 3-month pass, is bought through `pass` (the
+ * host's pass checkout), never through the store here: a pass is kept on an
+ * account, and the checkout asks for one first.
  */
 export function OfferPanel({
   content,
   guard,
   openedAt,
+  pass = null,
+  topInset,
+  purchase,
 }: {
   content: OfferContent;
   guard: MutableRefObject<OfferGuard>;
@@ -77,6 +89,12 @@ export function OfferPanel({
    * late, the stage moved on) has its background in place already, and
    * starts at once. */
   openedAt: number;
+  /** The host's pass checkout; null where the pass is not sold. */
+  pass?: PassSale | null;
+  /** The space over the headline, in place of the safe area's: a page sheet
+   * starts below the status bar, with its close button in that space. */
+  topInset?: number;
+  purchase?: OfferPurchaseOptions;
 }) {
   const t = useT();
   const scheme = useColorScheme();
@@ -85,7 +103,7 @@ export function OfferPanel({
   const insets = useSafeAreaInsets();
   const reduced = useReducedMotion();
   const { fontScale } = useWindowDimensions();
-  const { busy, notice, buy, restore } = useOfferPurchase(guard);
+  const { busy, notice, buy, buyPass, restore } = useOfferPurchase(guard, purchase);
   const [selected, setSelected] = useState<Slot>(() => firstSlot(content));
   const view = viewFor(content, selected, t);
 
@@ -117,6 +135,15 @@ export function OfferPanel({
 
   const peek = view.mascot === 'peek';
   const deal = view.card.kind === 'deal' ? view.card : null;
+  const passBusy = pass?.busy ?? false;
+  const shownNotice = notice ?? pass?.notice ?? null;
+  const press = () => {
+    if (view.plan.isPass) {
+      if (pass != null) buyPass(view.plan, pass);
+      return;
+    }
+    void buy(view.plan, view.trial);
+  };
   const choose = (key: string) => {
     const slot = view.tabs?.find((tab) => tab.key === key)?.key;
     if (slot == null) return;
@@ -135,7 +162,7 @@ export function OfferPanel({
         style={styles.fill}
         contentContainerStyle={[
           styles.scroll,
-          { paddingTop: insets.top + 28, paddingBottom: Math.max(insets.bottom, 16) + 8 },
+          { paddingTop: topInset ?? insets.top + 28, paddingBottom: Math.max(insets.bottom, 16) + 8 },
         ]}
         bounces={false}
         showsVerticalScrollIndicator={false}>
@@ -204,7 +231,7 @@ export function OfferPanel({
 
         <View style={styles.cta}>
           <Reveal at={entrance.cta} kind="pop" gate>
-            <PillButton label={view.cta} loading={busy} onPress={() => void buy(view.plan, view.trial)} />
+            <PillButton label={view.cta} loading={busy || passBusy} onPress={press} />
           </Reveal>
           {trialShown && canRemind && (
             <Reveal at={entrance.promise} kind="fade">
@@ -213,12 +240,12 @@ export function OfferPanel({
               </Text>
             </Reveal>
           )}
-          {notice != null && (
+          {shownNotice != null && (
             <Text
               accessibilityLiveRegion="polite"
               style={[styles.notice, { color: colors.foreground }]}
               maxFontSizeMultiplier={1.4}>
-              {notice}
+              {shownNotice}
             </Text>
           )}
         </View>
@@ -237,7 +264,7 @@ export function OfferPanel({
               guard.current.linkAt = Date.now();
               expectReturn();
             }}>
-            <LegalLinks onRestore={() => void restore()} disabled={busy} />
+            <LegalLinks onRestore={() => void restore()} disabled={busy || passBusy} />
           </View>
         </Reveal>
       </ScrollView>

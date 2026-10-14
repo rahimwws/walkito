@@ -21,6 +21,7 @@ import { STICKERS_PT } from './stickers';
 import { RECAP_PT } from './recap';
 import { HOME_OFFER_PT } from './home-offer';
 import { CANCEL_PT } from './cancel';
+import { PASS_PT } from './pass';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -52,4 +53,5 @@ export const pt: CatalogueFor<'pt'> = {
   ...RECAP_PT,
   ...HOME_OFFER_PT,
   ...CANCEL_PT,
+  ...PASS_PT,
 };

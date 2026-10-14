@@ -9,7 +9,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { Glow } from '@/shared/ui/glow';
 import { LegalLinks } from '@/shared/ui/subscription-terms';
 
-import { useOfferPurchase } from '../model/use-offer-purchase';
+import { useOfferPurchase, type PassSale } from '../model/use-offer-purchase';
 import { useOfferScreen, type OfferGuard } from '../model/use-offer-screen';
 
 import { OfferPanel } from './offer-panel';
@@ -42,9 +42,13 @@ const SPINNER_AFTER_MS = 600;
  * Before the store has answered there is nothing to show but the background
  * (a spinner if it takes a while); if it cannot be reached, the screen says so
  * and can ask again, with Restore purchases, Terms and Privacy under it.
+ *
+ * `pass` is the host's pass checkout: with it the comeback, the limited offer,
+ * carries the 3-month pass as its third card. Its sheets belong inside the
+ * host's own modal, which is why the host and not this screen mounts them.
  */
-export function OfferScreen() {
-  const { content, status, retry, guard } = useOfferScreen();
+export function OfferScreen({ pass = null }: { pass?: PassSale | null }) {
+  const { content, status, retry, guard } = useOfferScreen(pass != null);
   const [openedAt] = useState(() => Date.now());
   const spinner = useLate(status === 'loading', SPINNER_AFTER_MS);
   const scheme = useColorScheme();
@@ -58,7 +62,7 @@ export function OfferScreen() {
       {content != null ? (
         // Keyed by what it is, so a change of stage (the trial missed, the
         // comeback's minutes up) arrives afresh rather than swapping words.
-        <OfferPanel key={content.kind} content={content} guard={guard} openedAt={openedAt} />
+        <OfferPanel key={content.kind} content={content} guard={guard} openedAt={openedAt} pass={pass} />
       ) : status === 'unavailable' ? (
         <Unavailable guard={guard} onRetry={retry} />
       ) : spinner ? (

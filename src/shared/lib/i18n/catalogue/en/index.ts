@@ -19,6 +19,7 @@ import { STICKERS_EN } from './stickers';
 import { RECAP_EN } from './recap';
 import { HOME_OFFER_EN } from './home-offer';
 import { CANCEL_EN } from './cancel';
+import { PASS_EN } from './pass';
 
 /**
  * English, assembled from its domain files.
@@ -54,4 +55,5 @@ export const en = {
   ...RECAP_EN,
   ...HOME_OFFER_EN,
   ...CANCEL_EN,
+  ...PASS_EN,
 };

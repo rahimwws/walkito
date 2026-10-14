@@ -46,6 +46,7 @@ import { MilestoneMascot } from './milestone-mascot';
 import { CHECK_IN_GAP, PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
+import { PassEndingCard } from './pass-ending-card';
 import { DailyBrief } from '@/shared/ui/daily-brief';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
@@ -323,6 +324,10 @@ export function HomePage() {
             second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet || dayOne != null} />}
           />
         </IntroReveal>
+
+        {/* A 3-month pass in its last week, with nothing renewing after it:
+            the date it ends, and the plans to keep going with. */}
+        <PassEndingCard seen={focused && revealed} />
 
         {/* Anything outside the plan lives in the Library; the one that fits
             this moment is offered here first. */}

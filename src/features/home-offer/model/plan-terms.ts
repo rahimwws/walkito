@@ -17,8 +17,9 @@ import { formatPrice } from '@/shared/lib/money';
  * screen that reads one here may say "free".
  */
 
-/** Which slot of an offering a plan was taken from. */
-export type Slot = 'annual' | 'monthly' | 'weekly' | 'lifetime';
+/** Which slot of an offering a plan was taken from. `pass` is the 3-month
+ * pass, on the comeback's offering only. */
+export type Slot = 'annual' | 'monthly' | 'weekly' | 'lifetime' | 'pass';
 
 export type SlottedPlan = { readonly slot: Slot; readonly plan: Plan };
 

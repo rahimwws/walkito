@@ -126,6 +126,6 @@ export const NOTIFICATIONS_DE = {
   'notifications.offerWaitBody': 'Das Jahresabo wartet zu einem niedrigeren Preis. Tipp, um es zu sehen.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Dein Zugang zum Programm endet in einer Woche',
+  'notifications.expiryTitle': 'Dein 3-Monats-Pass endet in einer Woche',
   'notifications.expiryBody': 'Dein Fortschritt bleibt so oder so erhalten.',
 };

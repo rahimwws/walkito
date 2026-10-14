@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { syncExpiryNotice } from '@/entities/notifications';
-import { purchases, startCompAccess, startPurchases } from '@/entities/purchase';
+import { purchases, startCompAccess, startPass, startPurchases } from '@/entities/purchase';
 import { startAppsFlyer } from '@/shared/lib/appsflyer';
 
 /**
@@ -27,6 +27,10 @@ export function usePurchases(): void {
     void startPurchases();
     // Access granted by account, read now and after every sign-in.
     startCompAccess();
+    // The 3-month pass's days, as the server counts them: read now, after
+    // every sign-in and on every return to the app (`entities/purchase`,
+    // `pass.ts`). `entitled()` is the store, the account's grant or this.
+    startPass();
   }, []);
 
   useEffect(() => {
@@ -47,15 +51,17 @@ export function usePurchases(): void {
   useEffect(() => {
     /**
      * Keep the week-before warning pointed at the real end date — which only a
-     * legacy one-time pass has.
+     * 3-month pass has.
      *
      * A subscription has no end to warn about: it renews, and the App Store
      * itself tells a subscriber about a price or a cancellation. So for every
-     * subscriber `passEndsAt()` is null and this cancels any warning left over.
-     * For somebody who still holds a pass, the end can move after purchase — a
-     * restore on a new device establishes it, invite days extend it, a refund
-     * removes it — and each arrives as a store change and nothing else, so this
-     * is the only place that sees all of them.
+     * subscriber with no pass `passEndsAt()` is null and this cancels any
+     * warning left over. For somebody who holds a pass, the end can move after
+     * purchase — the server's grant queues it behind a subscription, a second
+     * pass adds 90 days, a restore on a new device establishes it, a refund
+     * removes it — and each arrives as a store or pass change and nothing else,
+     * so this is the only place that sees all of them. `passEndsAt()` is the
+     * later of the store's record and the server's end.
      *
      * Idempotent — `syncExpiryNotice` cancels the pending request before
      * scheduling, and the request has a fixed identifier — so running it again

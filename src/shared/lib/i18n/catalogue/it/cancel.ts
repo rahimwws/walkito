@@ -25,20 +25,6 @@ export const CANCEL_IT = {
   'cancel.anywayHintAndroid': 'Apre i tuoi abbonamenti in Google Play',
 
   'cancel.budget.title': 'Rendiamolo più leggero per il tuo budget',
-  'cancel.budget.nextYearTitle': '{percent}% di sconto sul tuo prossimo anno',
-  'cancel.budget.nextYearBody':
-    'Il tuo prossimo anno costa {price} invece di {regular}. Il tuo piano e tutto ciò che hai registrato restano come sono.',
-  'cancel.budget.nextYearCta': 'Prendi il {percent}% di sconto',
-  'cancel.budget.nextYearTerms':
-    'Il prezzo più basso parte dal tuo prossimo rinnovo e copre un anno. Dopo si applica il prezzo normale. Puoi sempre annullare quando vuoi nelle impostazioni degli abbonamenti.',
-  'cancel.budget.yearlyTitle': 'Passa all’annuale',
-  'cancel.budget.yearlyBody': 'Un anno di Walkito Plus costa {price}, circa {perMonth} al mese.',
-  'cancel.budget.yearlyBodyPlain': 'Un anno di Walkito Plus costa {price}.',
-  'cancel.budget.savingMonthly': 'È il {percent}% in meno che pagare mese per mese.',
-  'cancel.budget.savingWeekly': 'È il {percent}% in meno che pagare settimana per settimana.',
-  'cancel.budget.yearlyCta': 'Passa all’annuale',
-  'cancel.budget.yearlyTerms':
-    'Lo store ti mostra il prezzo e quando inizia prima che tu confermi. Il tuo piano e tutto ciò che hai registrato restano come sono.',
   'cancel.budget.noneTitle': 'Capiamo',
   'cancel.budget.none': 'Tutto ciò che hai registrato resta in Walkito, e il tuo piano ti aspetta se torni.',
 
@@ -96,8 +82,6 @@ export const CANCEL_IT = {
   'cancel.noTime.reminderCaption': 'Il tuo promemoria quotidiano, quando ti va meglio',
 
   'cancel.done.title': 'Fatto',
-  'cancel.done.nextYear': 'Il tuo prossimo anno di Walkito Plus ha il {percent}% di sconto. Grazie di restare.',
-  'cancel.done.yearly': 'Passi all’abbonamento annuale. Grazie di restare.',
   'cancel.done.freeMonth': 'Il tuo prossimo mese è gratis. Grazie di restare.',
   'cancel.done.lighter': 'Il tuo piano è più leggero da oggi. Puoi cambiarlo quando vuoi nelle Impostazioni.',
   'cancel.done.short': {

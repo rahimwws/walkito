@@ -25,20 +25,6 @@ export const CANCEL_PT = {
   'cancel.anywayHintAndroid': 'Abre suas assinaturas no Google Play',
 
   'cancel.budget.title': 'Vamos deixar mais leve para o seu bolso',
-  'cancel.budget.nextYearTitle': '{percent}% de desconto no seu próximo ano',
-  'cancel.budget.nextYearBody':
-    'Seu próximo ano custa {price} em vez de {regular}. Seu plano e tudo o que você registrou continuam como estão.',
-  'cancel.budget.nextYearCta': 'Quero {percent}% de desconto',
-  'cancel.budget.nextYearTerms':
-    'O preço menor começa na sua próxima renovação e vale por um ano. Depois disso, vale o preço normal. Você pode cancelar quando quiser nos ajustes de assinaturas.',
-  'cancel.budget.yearlyTitle': 'Mudar para o plano anual',
-  'cancel.budget.yearlyBody': 'Um ano de Walkito Plus custa {price}, cerca de {perMonth} por mês.',
-  'cancel.budget.yearlyBodyPlain': 'Um ano de Walkito Plus custa {price}.',
-  'cancel.budget.savingMonthly': 'São {percent}% a menos do que pagar mês a mês.',
-  'cancel.budget.savingWeekly': 'São {percent}% a menos do que pagar semana a semana.',
-  'cancel.budget.yearlyCta': 'Mudar para o anual',
-  'cancel.budget.yearlyTerms':
-    'A loja mostra o preço e quando ele começa antes de você confirmar. Seu plano e tudo o que você registrou continuam como estão.',
   'cancel.budget.noneTitle': 'A gente entende',
   'cancel.budget.none': 'Tudo o que você registrou fica no Walkito, e seu plano espera por você se voltar.',
 
@@ -96,8 +82,6 @@ export const CANCEL_PT = {
   'cancel.noTime.reminderCaption': 'Seu lembrete diário, na hora que for melhor',
 
   'cancel.done.title': 'Tudo certo',
-  'cancel.done.nextYear': 'Seu próximo ano de Walkito Plus tem {percent}% de desconto. Obrigado por ficar.',
-  'cancel.done.yearly': 'Você está mudando para o plano anual. Obrigado por ficar.',
   'cancel.done.freeMonth': 'Seu próximo mês é grátis. Obrigado por ficar.',
   'cancel.done.lighter': 'Seu plano fica mais leve a partir de hoje. Você pode mudar isso quando quiser nos Ajustes.',
   'cancel.done.short': {

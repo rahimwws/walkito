@@ -27,7 +27,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import type { Plan, PlanPeriod } from '@/entities/purchase';
+import type { PaywallPeriod, Plan } from '@/entities/purchase';
 import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { RaisedScheme, Raised } from '@/shared/ui/raised';
@@ -52,7 +52,7 @@ const OPEN_MS = 420;
 const ROW_STAGGER = 0.18;
 
 export type PlansStepRow = {
-  kind: PlanPeriod;
+  kind: PaywallPeriod;
   /** Null until the store answers, and null for good when the store answered
    * without it (then `missing`). */
   plan: Plan | null;
@@ -67,8 +67,8 @@ export type PlansStepProps = {
    * the store answered without are left out by the caller, the lead aside. */
   lead: PlansStepRow;
   extras: readonly PlansStepRow[];
-  selected: PlanPeriod;
-  onSelect: (kind: PlanPeriod) => void;
+  selected: PaywallPeriod;
+  onSelect: (kind: PaywallPeriod) => void;
   /** The pill on the lead plan. */
   leadBadge: string;
   /** The comeback view: its own headline. */

@@ -149,6 +149,6 @@ export const NOTIFICATIONS_RU = {
   'notifications.offerWaitBody': 'Годовая подписка ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
-  'notifications.expiryTitle': 'Доступ к программе закончится через неделю',
+  'notifications.expiryTitle': 'Пропуск на 3 месяца закончится через неделю',
   'notifications.expiryBody': 'Ваш прогресс останется в любом случае.',
 };

@@ -25,20 +25,6 @@ export const CANCEL_DE = {
   'cancel.anywayHintAndroid': 'Öffnet deine Abos in Google Play',
 
   'cancel.budget.title': 'Machen wir es leichter für dein Budget',
-  'cancel.budget.nextYearTitle': '{percent} % Rabatt auf dein nächstes Jahr',
-  'cancel.budget.nextYearBody':
-    'Dein nächstes Jahr kostet {price} statt {regular}. Dein Plan und alles, was du eingetragen hast, bleiben, wie sie sind.',
-  'cancel.budget.nextYearCta': '{percent} % Rabatt nehmen',
-  'cancel.budget.nextYearTerms':
-    'Der niedrigere Preis gilt ab deiner nächsten Verlängerung für ein Jahr. Danach gilt wieder der normale Preis. Du kannst jederzeit in deinen Abo-Einstellungen kündigen.',
-  'cancel.budget.yearlyTitle': 'Zum Jahresabo wechseln',
-  'cancel.budget.yearlyBody': 'Ein Jahr Walkito Plus kostet {price}, etwa {perMonth} pro Monat.',
-  'cancel.budget.yearlyBodyPlain': 'Ein Jahr Walkito Plus kostet {price}.',
-  'cancel.budget.savingMonthly': 'Das sind {percent} % weniger als bei monatlicher Zahlung.',
-  'cancel.budget.savingWeekly': 'Das sind {percent} % weniger als bei wöchentlicher Zahlung.',
-  'cancel.budget.yearlyCta': 'Zum Jahresabo wechseln',
-  'cancel.budget.yearlyTerms':
-    'Der Store zeigt dir den Preis und den Beginn, bevor du bestätigst. Dein Plan und alles, was du eingetragen hast, bleiben, wie sie sind.',
   'cancel.budget.noneTitle': 'Wir verstehen das',
   'cancel.budget.none': 'Alles, was du eingetragen hast, bleibt in Walkito, und dein Plan wartet auf dich, wenn du zurückkommst.',
 
@@ -96,8 +82,6 @@ export const CANCEL_DE = {
   'cancel.noTime.reminderCaption': 'Dein täglicher Anstoß, wann es dir passt',
 
   'cancel.done.title': 'Alles erledigt',
-  'cancel.done.nextYear': 'Dein nächstes Jahr Walkito Plus kostet {percent} % weniger. Danke, dass du bleibst.',
-  'cancel.done.yearly': 'Du wechselst zum Jahresabo. Danke, dass du bleibst.',
   'cancel.done.freeMonth': 'Dein nächster Monat ist gratis. Danke, dass du bleibst.',
   'cancel.done.lighter': 'Dein Plan ist ab heute leichter. Du kannst das jederzeit in den Einstellungen ändern.',
   'cancel.done.short': {

@@ -5,6 +5,7 @@ import { kv } from '@/shared/lib/storage';
 
 import {
   OFFERINGS,
+  PASS_PRODUCTS,
   PRODUCTS,
   type IntroOffer,
   type Offering,
@@ -27,9 +28,9 @@ import {
  * reaching a store. Never read in a release build: `__DEV__` is false there and
  * every branch below folds away.
  *
- * The figures are the US prices of the products being set up (see `PRODUCTS`),
- * in dollars. They are samples, not prices: a release build only ever shows
- * the store's own.
+ * The figures are the US prices of the products being set up (see `PRODUCTS`
+ * and `PASS_PRODUCTS`), in dollars. They are samples, not prices: a release
+ * build only ever shows the store's own.
  */
 
 const KEY = 'dev/samplePrices';
@@ -65,15 +66,25 @@ const BILLING: Readonly<Record<PlanPeriod, StorePeriod | null>> = {
   monthly: { unit: 'month', count: 1 },
   weekly: { unit: 'week', count: 1 },
   lifetime: null,
+  pass: null,
 };
 
-/** How many months and weeks one billing period holds. */
+/** How many months and weeks one billing period holds. Nothing for a
+ * one-time purchase: the store divides no price it bills once. */
 const PARTS: Readonly<Record<PlanPeriod, { months: number; weeks: number } | null>> = {
   annual: { months: 12, weeks: 52 },
   monthly: { months: 1, weeks: 52 / 12 },
   weekly: { months: 12 / 52, weeks: 1 },
   lifetime: null,
+  pass: null,
 };
+
+/** The pass products of this platform: the store's own ids, as the samples
+ * stand in for them. */
+const PASS_IDS =
+  Platform.OS === 'android'
+    ? { full: PASS_PRODUCTS.android, offer: PASS_PRODUCTS.androidOffer }
+    : { full: PASS_PRODUCTS.ios, offer: PASS_PRODUCTS.iosOffer };
 
 function plan(offering: string, period: PlanPeriod, id: string, price: number, intro: IntroOffer | null = null): Plan {
   const display = usd(price);
@@ -87,6 +98,7 @@ function plan(offering: string, period: PlanPeriod, id: string, price: number, i
     pricePerWeekString: parts == null ? null : per(price, parts.weeks),
     billingPeriod: BILLING[period],
     isLifetime: period === 'lifetime',
+    isPass: period === 'pass',
     intro,
   };
 }
@@ -102,6 +114,7 @@ export function sampleOffering(identifier: string): Offering | null {
         monthly: plan(identifier, 'monthly', PRODUCTS.monthly, 14.99),
         weekly: null,
         lifetime: plan(identifier, 'lifetime', PRODUCTS.lifetime, 99.99),
+        pass: null,
       };
     case OFFERINGS.trial:
       return {
@@ -113,6 +126,7 @@ export function sampleOffering(identifier: string): Offering | null {
         monthly: null,
         weekly: null,
         lifetime: null,
+        pass: null,
       };
     case OFFERINGS.offer:
       return {
@@ -126,6 +140,16 @@ export function sampleOffering(identifier: string): Offering | null {
         monthly: null,
         weekly: null,
         lifetime: plan(identifier, 'lifetime', PRODUCTS.lifetimeOffer, 59.99),
+        pass: plan(identifier, 'pass', PASS_IDS.full, 39.99),
+      };
+    case OFFERINGS.retentionBudget:
+      return {
+        identifier,
+        annual: null,
+        monthly: null,
+        weekly: null,
+        lifetime: null,
+        pass: plan(identifier, 'pass', PASS_IDS.offer, 24.99),
       };
     default:
       return null;
@@ -158,21 +182,19 @@ function sampleOffer(offerId: string, productId: string, regular: number, price:
  * pretends is held, and what the store would offer on it. */
 export type SampleRetention = {
   subscription: Subscription;
-  nextYear: RetentionOffer | null;
   freeMonth: RetentionOffer | null;
-  yearly: Plan | null;
-  current: Plan | null;
+  /** The budget answer's 3-month pass, at the retention price. */
+  pass: Plan | null;
 };
 
 /**
  * Development only: a pretend subscription and the store's answers for it,
  * for the cancel flow's preview on a simulator, which holds no subscription
  * and can sign no promotional offer (`walkito.dev://?previewCancel`, and
- * `=monthly`). Shaped as the store's answers will be, with the products' US
- * prices: the yearly plan with its next year at 40% off and a free month, or
- * the monthly plan with the yearly one to switch to. On Android, as there, no
- * promotional offers: the yearly plan has nothing for the budget, and the
- * break is Play's pause.
+ * `=monthly`, `=budget`). Shaped as the store's answers will be, with the
+ * products' US prices: the 3-month pass at its retention price for the
+ * budget, and a free month for a break. On Android, as there, no promotional
+ * offers: the break is Play's pause.
  */
 export function sampleRetention(period: 'annual' | 'monthly', now: number = Date.now()): SampleRetention | null {
   if (!__DEV__) return null;
@@ -193,17 +215,9 @@ export function sampleRetention(period: 'annual' | 'monthly', now: number = Date
     managementUrl: null,
   };
   const price = held.product.price;
-  // The next year as the offer is set up in App Store Connect: 40% under the
-  // year's price, down to the cent as the store rounds.
-  const nextYearPrice = Math.floor(price * 0.6 * 100) / 100;
   return {
     subscription,
-    nextYear:
-      ios && period === 'annual'
-        ? sampleOffer(RETENTION_OFFERS.nextYear40, held.product.id, price, nextYearPrice, { unit: 'year', count: 1 })
-        : null,
     freeMonth: ios ? sampleOffer(RETENTION_OFFERS.freeMonth, held.product.id, price, 0, { unit: 'month', count: 1 }) : null,
-    yearly: period === 'monthly' ? standard.annual : null,
-    current: period === 'monthly' ? held : null,
+    pass: sampleOffering(OFFERINGS.retentionBudget)?.pass ?? null,
   };
 }

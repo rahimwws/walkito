@@ -1,4 +1,4 @@
-import { samePeriod, type Plan, type PlanPeriod, type StorePeriod } from '@/entities/purchase';
+import { samePeriod, type PaywallPeriod, type Plan, type StorePeriod } from '@/entities/purchase';
 import type { Translate } from '@/shared/lib/i18n';
 
 /**
@@ -18,7 +18,7 @@ import type { Translate } from '@/shared/lib/i18n';
 
 /** The extra plans "Show all plans" opens, in this order, under the lead one.
  * Weekly is only in Android's offerings, until its new products exist. */
-export const EXTRA_PLANS: readonly PlanPeriod[] = ['monthly', 'weekly', 'lifetime'];
+export const EXTRA_PLANS: readonly PaywallPeriod[] = ['monthly', 'weekly', 'lifetime'];
 
 /** A plan as one card says it. */
 export type PlanCopy = {
@@ -60,7 +60,7 @@ export function periodText(period: StorePeriod, t: Translate): string {
  * annual plan. "First year" only when the offer covers exactly one billing
  * period, the same test `firstCharge` uses to charge it.
  */
-function offerOn(kind: PlanPeriod, plan: Plan | null) {
+function offerOn(kind: PaywallPeriod, plan: Plan | null) {
   const intro = plan?.intro ?? null;
   if (kind !== 'annual' || plan == null || intro == null) return null;
   if (intro.kind === 'free-trial') return intro;
@@ -70,7 +70,7 @@ function offerOn(kind: PlanPeriod, plan: Plan | null) {
   return null;
 }
 
-export function describePlan(kind: PlanPeriod, plan: Plan | null, t: Translate): PlanCopy {
+export function describePlan(kind: PaywallPeriod, plan: Plan | null, t: Translate): PlanCopy {
   const price = plan?.priceString ?? null;
   switch (kind) {
     case 'annual': {
@@ -117,7 +117,7 @@ export function describePlan(kind: PlanPeriod, plan: Plan | null, t: Translate):
  * at and where to cancel (two whole sentences, side by side); a lifetime
  * plan's says it is one payment.
  */
-export function describeCta(kind: PlanPeriod, plan: Plan | null, t: Translate, android: boolean): CtaCopy {
+export function describeCta(kind: PaywallPeriod, plan: Plan | null, t: Translate, android: boolean): CtaCopy {
   if (kind === 'lifetime') return { label: t('offer.plans.ctaLifetime'), terms: t('offer.plans.oneTime') };
   const cancel = android ? t('offer.plans.cancelAndroid') : t('offer.plans.cancel');
   if (plan == null) return { label: t('offer.continue'), terms: null };
