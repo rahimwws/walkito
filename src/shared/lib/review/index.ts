@@ -1,6 +1,6 @@
 import { requireOptionalNativeModule } from 'expo';
 import { useSyncExternalStore } from 'react';
-import { Linking, Platform } from 'react-native';
+import { AppState, Linking, Platform } from 'react-native';
 
 import { APP_STORE_REVIEW_URL, PLAY_STORE_URL } from '@/shared/config';
 import { kv } from '@/shared/lib/storage';
@@ -19,7 +19,10 @@ import { kv } from '@/shared/lib/storage';
 const LAST_KEY = 'review/last-asked';
 const GAP_MS = 120 * 24 * 60 * 60 * 1000;
 
-export type ReviewWin = 'test-improved' | 'pain-down' | 'streak-7';
+/** What the prompt is asked at. `third-open` is not a win in the plan's
+ * sense: the third time the app is opened, by which point somebody has come
+ * back to it twice of their own accord (see `countAppOpens`). */
+export type ReviewWin = 'test-improved' | 'pain-down' | 'streak-7' | 'third-open';
 
 export async function askForReview(_win: ReviewWin, now: number = Date.now()): Promise<boolean> {
   const last = Number(kv.getString(LAST_KEY) ?? 0);
@@ -36,6 +39,90 @@ export async function askForReview(_win: ReviewWin, now: number = Date.now()): P
   } catch {
     return false;
   }
+}
+
+// ── Opens ────────────────────────────────────────────────────────────────────
+
+/**
+ * How many times the app has been opened, for the prompt at the third.
+ *
+ * An open is a cold start, or coming back to the app after at least half an
+ * hour away from it. A return from a glance at a message is the same visit
+ * and is not counted; half an hour gone is a visit of its own, whether or not
+ * iOS kept the process alive in between. Counted from the first launch of a
+ * build that has this, onboarding's included, and kept in MMKV so a relaunch
+ * carries the count on.
+ */
+const OPENS_KEY = 'review/app-opens';
+const THIRD_OPEN_KEY = 'review/third-open-asked';
+/** Away at least this long and the return counts as an open. */
+const AWAY_MS = 30 * 60 * 1000;
+export const THIRD_OPEN = 3;
+
+let opens = kv.getNumber(OPENS_KEY) ?? 0;
+/** This process has counted its own cold start. Module scope, so a remount of
+ * whatever calls `countAppOpens` (a fast refresh in development) does not
+ * count the same launch twice. */
+let launchCounted = false;
+const openListeners = new Set<() => void>();
+
+function opened(): void {
+  opens += 1;
+  kv.set(OPENS_KEY, opens);
+  for (const listener of openListeners) listener();
+}
+
+/**
+ * Starts counting: this launch, then every return after `AWAY_MS` in the
+ * background. `inactive` (Control Centre, the app switcher held open) is not
+ * leaving. Returns the unsubscribe.
+ */
+export function countAppOpens(): () => void {
+  if (!launchCounted) {
+    launchCounted = true;
+    opened();
+  }
+  let awaySince: number | null = null;
+  const subscription = AppState.addEventListener('change', (next) => {
+    if (next === 'background') {
+      if (awaySince == null) awaySince = Date.now();
+      return;
+    }
+    if (next !== 'active' || awaySince == null) return;
+    if (Date.now() - awaySince >= AWAY_MS) opened();
+    awaySince = null;
+  });
+  return () => subscription.remove();
+}
+
+function subscribeOpens(listener: () => void): () => void {
+  openListeners.add(listener);
+  return () => {
+    openListeners.delete(listener);
+  };
+}
+
+const openCount = () => opens;
+
+export function useAppOpens(): number {
+  return useSyncExternalStore(subscribeOpens, openCount, openCount);
+}
+
+/** The prompt at the third open has been asked for, ever. */
+export function thirdOpenAsked(): boolean {
+  return kv.getBoolean(THIRD_OPEN_KEY) === true;
+}
+
+/**
+ * The prompt at the third open, once in the life of the install. Marked
+ * before it is asked, so it is never asked twice, and passed through
+ * `askForReview`, whose 120-day gap still stands: a rating given from the
+ * founders' note a day earlier is not followed by this one.
+ */
+export async function askAtThirdOpen(now: number = Date.now()): Promise<boolean> {
+  if (thirdOpenAsked() || opens < THIRD_OPEN) return false;
+  kv.set(THIRD_OPEN_KEY, true);
+  return askForReview('third-open', now);
 }
 
 // ── Asked for by the user ───────────────────────────────────────────────────

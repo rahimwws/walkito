@@ -1,4 +1,4 @@
-import type { LegZone } from '@/entities/leg-zone';
+import type { LegZone } from './leg-zones';
 
 /**
  * What to show someone who has just pointed at the place that hurts.
@@ -15,6 +15,10 @@ import type { LegZone } from '@/entities/leg-zone';
  *
  * Ordered by how directly each targets the zone, because the list is truncated
  * and the first entry is the one most people will actually do.
+ *
+ * Two readers, which is why it moved here from Home's page: the check-in's
+ * relief session, and the day-one session over Home (`features/home-tour`),
+ * which starts from where onboarding's leg map said it hurts.
  */
 
 /**

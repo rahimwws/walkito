@@ -53,7 +53,7 @@ export function finishSetup(): void {
   if (!pending) return;
   pending = false;
   kv.set(KEY, false);
-  // Home opens on its tour, which ends at the first test.
+  // Home opens on the day-one session, and its short tour after it.
   armHomeTour();
   emit();
 }

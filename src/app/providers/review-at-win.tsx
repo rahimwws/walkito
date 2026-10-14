@@ -1,7 +1,18 @@
 import { useEffect } from 'react';
 
 import { goals, retestResults, useStreak, type Goal } from '@/entities/program';
-import { askForReview, reviewNow, takeQueuedReview, useReviewQueued, type ReviewWin } from '@/shared/lib/review';
+import {
+  THIRD_OPEN,
+  askAtThirdOpen,
+  askForReview,
+  countAppOpens,
+  reviewNow,
+  takeQueuedReview,
+  thirdOpenAsked,
+  useAppOpens,
+  useReviewQueued,
+  type ReviewWin,
+} from '@/shared/lib/review';
 
 /**
  * The first win worth asking about, or null — section 6 of the plan spec:
@@ -31,6 +42,32 @@ export function useReviewAtWin(onboarded: boolean): void {
     const win = reviewWin(streak.current, goals(), retestResults());
     if (win != null) void askForReview(win);
   }, [onboarded, streak.current]);
+}
+
+/** How long the app is in front, ready, before the prompt at the third open:
+ * long enough for the screen to have arrived and been looked at, short
+ * enough to still be the moment they came back. */
+const THIRD_OPEN_DELAY_MS = 2500;
+
+/**
+ * Apple's review prompt at the third time the app is opened, once ever.
+ *
+ * Counts the opens wherever the app is (`countAppOpens`: a cold start, or a
+ * return after half an hour away), and asks only when `ready`: Home and the
+ * tabs are theirs, with nothing of the first run over them. Never during
+ * onboarding, the setup after the purchase, the "Day 1" card or the tour, or
+ * the offer over Home; an open that lands on one of those waits for the
+ * first moment after it that is ready. Asked 2.5 s in, and not at all if
+ * `ready` drops before then. The 120-day gap in `askForReview` still holds.
+ */
+export function useReviewOnThirdOpen(ready: boolean): void {
+  const opens = useAppOpens();
+  useEffect(() => countAppOpens(), []);
+  useEffect(() => {
+    if (!ready || opens < THIRD_OPEN || thirdOpenAsked()) return undefined;
+    const timer = setTimeout(() => void askAtThirdOpen(), THIRD_OPEN_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [ready, opens]);
 }
 
 /** How long after the note closes the sheet rises: the next screen's arrival, settled. */

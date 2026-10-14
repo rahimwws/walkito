@@ -7,7 +7,7 @@ import {
   RELIEF_DEFAULT,
   RELIEF_LIMIT,
   reliefIdsFor,
-} from '../src/pages/home/model/zone-relief';
+} from '../src/entities/leg-zone/model/zone-relief';
 
 /**
  * What a user is shown after pointing at the place that hurts.

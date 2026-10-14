@@ -627,9 +627,9 @@ function Paywall() {
   };
 
   /**
-   * "Not now", and the close over the sky: on to Home, for the tour and the
-   * first test, which are free; the one-time trial offer follows the test
-   * (`OfferWall` in the root layout).
+   * "Not now", and the close over the sky: on to Home, for the "Day 1"
+   * card's two-minute session and the tour after it, which are free; the
+   * one-time trial offer follows the tour (`OfferWall` in the root layout).
    *
    * `skipPaywall` records it (and tracks `paywall_skipped`, once per person);
    * the root guards then take this route away and open the tabs, so this

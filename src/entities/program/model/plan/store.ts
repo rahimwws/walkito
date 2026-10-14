@@ -642,6 +642,29 @@ export function postponeTest(now: number = Date.now()): string {
   return tomorrow;
 }
 
+/**
+ * The test kept off today, with nobody having put it off: the first day is
+ * the two-minute day-one session over Home (`features/home-tour`), and the
+ * first test is the day after it.
+ *
+ * Called just before that session is recorded, never after. The same record
+ * as "Test tomorrow" (a day the test may not come before), so every rebuild
+ * from here on places it the same way, and the rebuild runs while today is
+ * still open: today is planned again from the week's shape and the test goes
+ * on tomorrow. Recorded first, today would be a finished day, which every
+ * rebuild keeps as it was (`build`), and the week would carry a "Test · Done"
+ * nobody took. Only ever moves the day later, so a test put off further is
+ * left where it is. No `retest_postponed`: nobody postponed anything, and the
+ * chart of people who put a test off would fill with everyone's first day.
+ */
+export function keepTestOffToday(now: number = Date.now()): string {
+  const tomorrow = addDays(toDateKey(new Date(now)), 1);
+  const putOff = kv.getString(TEST_NOT_BEFORE_KEY);
+  if (putOff == null || putOff < tomorrow) kv.set(TEST_NOT_BEFORE_KEY, tomorrow);
+  rebuildRestOfWeek(now);
+  return tomorrow;
+}
+
 // ── Weeks ────────────────────────────────────────────────────────────────────
 
 type WeekStore = Record<string, WeekPlan>;

@@ -12,7 +12,7 @@ import {
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
-import { devPretendUntested, devPreviewOfferWall } from '@/features/home-tour';
+import { devPreviewOfferWall } from '@/features/home-tour';
 import { armSetup, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
 
 /** `walkito.dev://?resetOnboarding` puts onboarding back in front. */
@@ -45,13 +45,13 @@ const COMEBACK_PARAM = /[?&]previewComeback\b/;
 /** `?previewOfferEnded`: skipped, the comeback's minutes up, the standard
  * plans on the offer screen. */
 const OFFER_ENDED_PARAM = /[?&]previewOfferEnded\b/;
-/** `walkito.dev://?previewTour` starts the Home tour from its first stop;
- * `?previewTour=untested` as somebody with no test on record meets it;
+/** `walkito.dev://?previewTour` arms the first run again from the "Day 1"
+ * card; `?previewTour=tour` from the tour's first stop, past the session;
  * `?previewTour=done` ends it. */
 const TOUR_PARAM = /[?&]previewTour(?:=(\w+))?/;
 /** `walkito.dev://?resetCheckIn` leaves today's check-in unanswered again. */
 const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
-/** `walkito.dev://?previewOfferWall` raises the offer after the first test
+/** `walkito.dev://?previewOfferWall` raises the offer that follows the tour
  * over Home (`=off` to drop it); add `previewHomeOffer` for the trial stage. */
 const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
 
@@ -108,9 +108,8 @@ export function useDevLinks(): void {
         if (wall != null) devPreviewOfferWall(wall[1] !== 'off');
         const tour = TOUR_PARAM.exec(url);
         if (tour != null) {
-          devPretendUntested(tour[1] === 'untested');
           if (tour[1] === 'done') finishHomeTour();
-          else devRestartHomeTour();
+          else devRestartHomeTour(tour[1] === 'tour' ? 'tour' : 'day1');
         }
         previewPush(url);
       };

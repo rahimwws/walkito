@@ -10,7 +10,7 @@ import {
   zoneAt,
   type LegZone,
 } from '../src/entities/leg-zone/model/leg-zones';
-import { RELIEF_LIMIT } from '../src/pages/home/model/zone-relief';
+import { RELIEF_LIMIT } from '../src/entities/leg-zone/model/zone-relief';
 
 /**
  * Which zone a tap on the leg means.
