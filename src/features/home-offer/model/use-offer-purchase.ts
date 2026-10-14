@@ -19,8 +19,8 @@ export const TRIAL_REMINDER_DAYS = 3;
 
 /**
  * How the offer sells the 3-month pass: through the pass checkout
- * (`widgets/pass-checkout`, which asks for an account first and waits for the
- * server's days), owned by whoever hosts the offer. A feature cannot reach a
+ * (`widgets/pass-checkout`: the store's sheet, then the server's days; the
+ * account is asked for afterwards, by the setup screens), owned by whoever hosts the offer. A feature cannot reach a
  * widget, so the host hands it in; where none is handed in, the pass card is
  * not offered at all.
  */

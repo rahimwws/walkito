@@ -99,8 +99,6 @@ export function SubscriptionSettings() {
         placement: 'limited_offer',
         onPurchased,
         onDone: () => setOffers(false),
-        // The account signed in to inside the checkout already had access.
-        onAborted: () => setOffers(false),
       }),
     busy: checkout.busy,
     notice: checkout.notice,

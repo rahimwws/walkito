@@ -113,13 +113,19 @@ export function premiumUntilFor(purchase: PassPurchase, subscriber: Subscriber, 
 
 export type PassWindow = { startsAt: string | null; expiresAt: string | null; granted: boolean };
 
-/** Grants one purchase to one user, once. */
+/**
+ * Grants one purchase to one user, once. `allowMove` lets a pass already
+ * granted to an anonymous account move here with the days it has left
+ * (0019): only `pass-sync`, the phone holding the store customer, asks for
+ * that; the webhook never moves a pass.
+ */
 export async function grantPass(
   db: Db,
   userId: string,
   rcAppUserId: string,
   purchase: PassPurchase,
   premiumUntil: string | null,
+  allowMove = false,
 ): Promise<PassWindow | null> {
   const { data, error } = await db.rpc('grant_pass', {
     p_user_id: userId,
@@ -130,6 +136,7 @@ export async function grantPass(
     p_premium_until: premiumUntil,
     p_retention: isRetention(purchase.productId),
     p_days: PASS_DAYS,
+    p_allow_move: allowMove,
   });
   if (error != null) {
     console.warn('[pass] grant failed', error.message);
@@ -142,14 +149,15 @@ export async function grantPass(
 /**
  * Every pass this RevenueCat customer bought, granted to this user where it
  * has not been yet, oldest first, so stacked passes queue in the order they
- * were bought.
+ * were bought. Called by `pass-sync` only, so a pass on an anonymous account
+ * this phone left behind moves here (`allowMove`).
  */
 export async function reconcilePasses(db: Db, rcKey: string, userId: string, rcAppUserId: string): Promise<number | null> {
   const subscriber = await subscriberOf(rcKey, rcAppUserId);
   if (subscriber == null) return null;
   let granted = 0;
   for (const purchase of subscriber.passes) {
-    const window = await grantPass(db, userId, rcAppUserId, purchase, premiumUntilFor(purchase, subscriber));
+    const window = await grantPass(db, userId, rcAppUserId, purchase, premiumUntilFor(purchase, subscriber), true);
     if (window?.granted) granted += 1;
   }
   return granted;

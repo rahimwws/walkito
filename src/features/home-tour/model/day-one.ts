@@ -1,13 +1,9 @@
-import { reliefIdsFor, type LegZone } from '@/entities/leg-zone';
 import {
   PROGRAM,
   TODAY_INDEX,
-  checkInOn,
   completePlanSession,
-  currentDay,
   exerciseById,
   keepTestOffToday,
-  planMeta,
   planSessionDone,
   retestResults,
   planSettings,
@@ -20,56 +16,49 @@ import { track } from '@/shared/lib/analytics';
 
 /**
  * The first session somebody does in the app: two easy minutes, over before
- * they have had time to wonder whether this is for them.
+ * they have had time to wonder whether this is for them, and the best footage
+ * the app has.
  *
  * It used to be the test (calves, arch and balance, four minutes of being
  * measured), which is the right second day and the wrong first one: the
  * first thing the app asked of a person who had just paid, or had just said
  * "Not now" and come in anyway, was to find out how weak their foot was. Now
- * it is three gentle moves picked for where they said it hurts, and the
- * test is tomorrow.
+ * it is two gentle moves anybody can do, and the test is tomorrow.
  */
 
-/** Three moves of forty seconds: two minutes, the figure on the card. A move
- * done one foot at a time switches feet halfway, as the player does for any
- * held move marked per side. */
+/** Two moves of a minute: two minutes, the figure on the card. A move done
+ * one foot at a time switches feet halfway, as the player does for any held
+ * move marked per side. */
 export const DAY_ONE_MINUTES = 2;
-const MOVES = 3;
+const MOVES = 2;
 const MOVE_SECONDS = (DAY_ONE_MINUTES * 60) / MOVES;
 
 /**
- * What it falls back to, and tops up from: the stretch for the sole, the one
- * for the calf, and the toes, then the arch held seated. Nothing loaded,
- * nothing that needs a thing from the cupboard.
+ * The first thing the app shows in motion, so both moves are clips filmed
+ * with a person: a few others are a grey anatomical mannequin (the plantar
+ * stretch, ankle rocks, the towel scrunch, knee to wall, the heel drop),
+ * right in the plan and the wrong first impression. And both are easy for
+ * anybody: nothing to hand, no load through the fascia, nothing on one leg or
+ * with the eyes shut, nothing a foot may not manage (toe spreads were tried
+ * here, and plenty of feet cannot spread their toes yet).
+ *
+ * Two rather than three: a first session short enough to be finished is the
+ * one that gets finished. A whole person at a wall in a stretch everybody
+ * knows, then hands on the sole, the one that feels best, to end on.
  */
-const GENTLE_DEFAULT: readonly string[] = ['fascia_stretch', 'calf_stretch_straight', 'toe_spread', 'short_foot_seated'];
+const OPENER = 'calf_stretch_straight';
+/** For somebody whose week one starts sitting down (`seatedStart`). */
+const OPENER_SEATED = 'heel_raise_seated';
+const CLOSER = 'sole_massage';
 
-/**
- * Whether a move belongs on a first day. Off the relief table, which also
- * holds a towel heel raise for the Achilles, a band and a ball: the first two
- * minutes need nothing to hand and put no load through the fascia. Seated
- * only for somebody whose safety answers start week one sitting down
- * (`PlanSettings.seatedStart`), the same rule the plan follows that week.
- */
-function gentle(id: string, seatedOnly: boolean): boolean {
-  const meta = planMeta(id);
-  if (meta == null || meta.equipment.length > 0 || meta.fascia) return false;
-  return !seatedOnly || meta.position === 'seated';
-}
+/** Every clip a day-one session can play, for the prefetch to fetch first. */
+export const DAY_ONE_CLIPS: readonly string[] = [OPENER, OPENER_SEATED, CLOSER];
 
-/**
- * The moves, as ids: the relief table's picks for the zones marked on the
- * leg map (round-robin, the most direct first), kept only if they are gentle,
- * then the default until there are three.
- */
-export function dayOneIds(zones: readonly LegZone[], seatedOnly: boolean): string[] {
-  const matched = zones.length > 0 ? reliefIdsFor(zones) : [];
-  const picked: string[] = [];
-  for (const id of [...matched, ...GENTLE_DEFAULT]) {
-    if (picked.length >= MOVES) break;
-    if (!picked.includes(id) && gentle(id, seatedOnly)) picked.push(id);
-  }
-  return picked;
+/** The moves, as ids: the opener (seated for a `seatedStart`), then the
+ * closer. Not picked by where it hurts: the first two minutes are for
+ * everybody, and the plan from tomorrow is the part fitted to them. */
+export function dayOneIds(seatedOnly: boolean): string[] {
+  return [seatedOnly ? OPENER_SEATED : OPENER, CLOSER];
 }
 
 /**
@@ -87,13 +76,11 @@ export type DayOneRun = {
 };
 
 /**
- * The session as it opens: today's zones, read now, since the day's check-in
- * (onboarding's leg map, for nearly everyone) can be edited until the moment
- * Start is pressed. Fixed for the run once it is handed over.
+ * The session as it opens: whether week one starts seated is read now, and the
+ * run is fixed once it is handed over.
  */
 export function dayOneRun(): DayOneRun {
-  const zones = (checkInOn(currentDay())?.zones ?? []) as LegZone[];
-  const ids = dayOneIds(zones, planSettings().seatedStart === true);
+  const ids = dayOneIds(planSettings().seatedStart === true);
   const n = todayDayNumber();
   return {
     day: {

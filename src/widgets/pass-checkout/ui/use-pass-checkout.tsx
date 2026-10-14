@@ -8,14 +8,13 @@ import {
   passWindow,
   purchases,
   refreshCompAccess,
-  refreshPass,
   settlePass,
   syncPassFromServer,
   type PassSettled,
   type Plan,
   type Subscription,
 } from '@/entities/purchase';
-import { accountSaved, settleAccount } from '@/entities/session';
+import { settleAccount } from '@/entities/session';
 import { track, type PassPlacement } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 
@@ -37,19 +36,6 @@ export type PassCheckoutStart = {
    */
   onDone?: (settled: PassSettled) => void;
   /**
-   * Over without buying, after a sign-in inside the checkout: the account
-   * signed in to brought access with it (the limited offer only: a pass
-   * bought on another phone, access granted by account), or `recheck` said
-   * this pass may no longer be sold to it. Nothing was bought.
-   */
-  onAborted?: () => void;
-  /**
-   * Asked after a sign-in inside the checkout, before the store's sheet, with
-   * the new account's passes read afresh: whether this pass may still be sold
-   * to it. False ends the checkout there (`onAborted`).
-   */
-  recheck?: () => boolean;
-  /**
    * Stands in for the store's answer on what still renews beside the pass,
    * for "Your 3 months are set": the review account, whose access is granted
    * by account and which no store bills, so the screen can still be reached.
@@ -59,7 +45,7 @@ export type PassCheckoutStart = {
 };
 
 export type PassCheckout = {
-  /** Buys this pass: an account first if there is none, then the store. */
+  /** Buys this pass: the store's sheet straight away, no account asked for. */
   start: (plan: Plan, options: PassCheckoutStart) => void;
   /**
    * The sign-in alone, for a Restore Purchases that found nothing in this
@@ -79,11 +65,7 @@ export type PassCheckout = {
 /** A pass being bought, from the tap to the end. */
 type Buying = {
   readonly kind: 'buy';
-  readonly plan: Plan;
   readonly options: PassCheckoutStart;
-  /** Whether access was open at the tap: a sign-in that opens it is the
-   * account's own access arriving, not a reason to buy. */
-  readonly entitledBefore: boolean;
 };
 
 /** A restore that needs an account signed in to first. */
@@ -98,8 +80,8 @@ const IDLE: CheckoutStage = { kind: 'idle' };
 /** Past a sheet's slide away: if iOS has not said it is gone by then, it is
  * taken as gone. Android's modal says nothing, and slides faster. */
 const HIDE_FALLBACK_MS = Platform.OS === 'ios' ? 900 : 380;
-/** The longest a sign-in waits for the account's passes and access before it
- * goes on with what is known. */
+/** The longest a sign-in to restore waits for the account's passes and access
+ * before it goes on with what is known. */
 const READ_AFTER_SIGN_IN_MS = 8000;
 
 const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
@@ -110,19 +92,17 @@ const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, 
  * offer page), the cancel flow's budget answer and the review account's
  * offers sheet (`pages/settings`).
  *
- * 1. **An account first.** A pass is kept on the account (the server counts
- *    its days there), so it follows the person to every phone. With only the
- *    anonymous account of first launch, the sign-in comes up first (Apple on
- *    iOS, Google on Android, or an emailed code), and the purchase only
- *    after a sign-in that worked; closed, nothing is bought. The account
- *    signed in to is read afresh before the store's sheet: if it brought
- *    access with it (the limited offer), or the host's `recheck` says no,
- *    nothing is bought (`onAborted`).
- * 2. **The store's sheet** (`buyPass`, which tracks `pass_purchase`).
- * 3. **The server's days**: "Setting up your 3 months" while `settlePass`
+ * 1. **The store's sheet** (`buyPass`, which tracks `pass_purchase`), with no
+ *    account asked for first, as for a subscription. A first purchase is
+ *    followed by the setup screens (`armSetup`), whose first one asks for an
+ *    account. The days are kept on whatever account is signed in, the
+ *    anonymous one of first launch included, and move with the store
+ *    customer if it then signs in to an account that already existed, or
+ *    restores after a reinstall (`grant_pass`, 0018).
+ * 2. **The server's days**: "Setting up your 3 months" while `settlePass`
  *    asks for them, 10 s at most. A timeout is no failure: the store's
  *    record already opens the app, and the next refresh catches up.
- * 4. **"Your 3 months are set"**, only when a subscription still renews
+ * 3. **"Your 3 months are set"**, only when a subscription still renews
  *    beside the pass: when the 3 months start, "Turn off auto-renewal" (the
  *    store's own page: Apple's sheet, Google Play's subscription center on
  *    that subscription) and "Done". `pass_autorenew_prompt`. The checkout
@@ -194,15 +174,6 @@ export function usePassCheckout(): PassCheckout {
     if (task?.kind === 'buy' && outcome != null) task.options.onDone?.(outcome);
   }, []);
 
-  /** Over without buying: nothing was bought, and the host is told. */
-  const abort = useCallback(() => {
-    const task = current.current;
-    current.current = null;
-    settled.current = null;
-    if (live.current) setBusy(false);
-    if (task?.kind === 'buy') task.options.onAborted?.();
-  }, []);
-
   const purchase = useCallback(
     async (plan: Plan, options: PassCheckoutStart) => {
       const before = passWindow().expiresAt;
@@ -248,30 +219,6 @@ export function usePassCheckout(): PassCheckout {
   );
 
   /**
-   * Signed in for a purchase: the account may be somebody's who already has
-   * access (a pass bought on another phone, access granted by account) or has
-   * used this price already. Its passes and its access are read afresh, a
-   * bounded wait, before the store's sheet may rise.
-   */
-  const buyAfterSignIn = useCallback(
-    async (task: Buying) => {
-      await Promise.race([
-        Promise.all([refreshPass(), refreshCompAccess()]).catch(() => undefined),
-        wait(READ_AFTER_SIGN_IN_MS),
-      ]);
-      if (!live.current || current.current !== task) return;
-      const opened = task.options.placement === 'limited_offer' && !task.entitledBefore && purchases.entitled();
-      const allowed = task.options.recheck?.() ?? true;
-      if (opened || !allowed) {
-        abort();
-        return;
-      }
-      void purchase(task.plan, task.options);
-    },
-    [abort, purchase],
-  );
-
-  /**
    * Signed in to restore: the server is asked for any pass of this account's
    * (with this phone's store id, which it links first), then the store, so
    * `entitled()` is current. A bounded wait; a late answer still opens the
@@ -297,16 +244,11 @@ export function usePassCheckout(): PassCheckout {
   const start = useCallback(
     (plan: Plan, options: PassCheckoutStart) => {
       if (current.current != null) return;
-      const task: Buying = { kind: 'buy', plan, options, entitledBefore: purchases.entitled() };
-      current.current = task;
+      current.current = { kind: 'buy', options } satisfies Buying;
       settled.current = null;
       setBusy(true);
       setNotice(null);
-      void accountSaved().then((saved) => {
-        if (!live.current || current.current !== task) return;
-        if (saved) void purchase(plan, options);
-        else setStage({ kind: 'sign-in' });
-      });
+      void purchase(plan, options);
     },
     [purchase],
   );
@@ -332,7 +274,6 @@ export function usePassCheckout(): PassCheckout {
     // Signed in here satisfies an account still owed from the setup screens.
     settleAccount();
     if (task.kind === 'restore') hide(true, () => void restoreAfterSignIn(task));
-    else hide(true, () => void buyAfterSignIn(task));
   };
 
   /**

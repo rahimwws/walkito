@@ -39,9 +39,10 @@ export const PASS_EN = {
   'pass.terms': 'One payment of {price} for 3 months of Walkito Plus. Nothing renews.',
 
   // ── Buying it ────────────────────────────────────────────────────────────
-  /** Before the store, for somebody with no account yet. */
-  'pass.signIn.title': 'Keep your pass on your account',
-  'pass.signIn.body': 'Your 3-month pass is kept on your account, so it works on every phone you sign in on.',
+  /** A restore that found nothing on this phone while no account is signed in. */
+  'pass.signIn.title': 'Bought it on another phone?',
+  'pass.signIn.body':
+    'Sign in to the account you used there, and your 3-month pass comes with you.',
   /** The store said yes; the days are on their way. A few seconds at most. */
   'pass.setup.title': 'Setting up your 3 months',
   'pass.setup.body': 'This takes a few seconds.',

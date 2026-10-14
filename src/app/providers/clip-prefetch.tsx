@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { todayKey, weekPlan } from '@/entities/program';
+import { homeTourState } from '@/entities/session';
+import { DAY_ONE_CLIPS } from '@/features/home-tour';
 import { getLanguage } from '@/shared/lib/i18n';
 import { prefetchClips, prefetchVoice, surveyClips, surveyVoice } from '@/widgets/session-player';
 
@@ -33,8 +35,10 @@ export function useClipPrefetch(): void {
      * day in front of the user. Fetching alphabetically would leave those until
      * last for no reason.
      */
-    // Today's and tomorrow's days from this week's plan, first.
-    const soon: string[] = [];
+    // The day-one session's clips first while the first run is ahead: it is
+    // the first thing anybody new plays, before any plan exists to read.
+    // Then today's and tomorrow's days from this week's plan.
+    const soon: string[] = homeTourState() === 'done' ? [] : [...DAY_ONE_CLIPS];
     const today = todayKey();
     const days = weekPlan().days;
     const at = Math.max(0, days.findIndex((day) => day.date === today));

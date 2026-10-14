@@ -74,8 +74,9 @@ const CONFETTI_FROM: readonly ConfettiOrigin[] = [
  * one gripping the comeback's card, the crown and key beside the plans.
  *
  * The comeback's third card, the 3-month pass, is bought through `pass` (the
- * host's pass checkout), never through the store here: a pass is kept on an
- * account, and the checkout asks for one first.
+ * host's pass checkout), never through the store here: the checkout waits for
+ * the server's days and says "Your 3 months are set" where a subscription
+ * still renews.
  */
 export function OfferPanel({
   content,

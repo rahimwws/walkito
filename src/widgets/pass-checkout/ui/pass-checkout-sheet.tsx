@@ -12,9 +12,11 @@ import { FluentIcon } from '@/shared/ui/fluent-icon';
 /**
  * Where the pass checkout is, as its sheet shows it.
  *
- * - `sign-in`: an account first. A pass is kept on the account, so it works
- *   on every phone signed in to it; the anonymous account of first launch is
- *   kept and given the sign-in (`emailMode: 'create'`), so nothing is lost.
+ * - `sign-in`: for a restore only (`signInToRestore`), when the phone's store
+ *   found nothing and only the anonymous account of first launch is signed
+ *   in: a pass is kept on an account, so one bought on another phone is found
+ *   by signing in to it. The anonymous account is kept and given the sign-in
+ *   (`emailMode: 'create'`), so nothing is lost. A purchase never asks first.
  * - `setting-up`: the store said yes and the server's days are on their way
  *   (`settlePass`, 10 s at most). Calm, and not to be closed: it is brief.
  * - `set`: a subscription still renews beside the pass, which is queued after

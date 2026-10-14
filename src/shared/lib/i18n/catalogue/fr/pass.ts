@@ -14,9 +14,9 @@ export const PASS_FR = {
   'pass.offer.bodyLifetime': 'Garde **Walkito Plus** comme tu veux : **pour toujours** ou **3 mois en un seul paiement**.',
   'pass.terms': 'Un seul paiement de {price} pour 3 mois de Walkito Plus. Rien ne se renouvelle.',
 
-  'pass.signIn.title': 'Garde ton pass sur ton compte',
+  'pass.signIn.title': 'Acheté sur un autre téléphone ?',
   'pass.signIn.body':
-    'Ton Pass 3 mois est gardé sur ton compte, il marche donc sur chaque téléphone où tu te connectes.',
+    'Connecte-toi au compte que tu utilisais là-bas, et ton Pass 3 mois te suit.',
   'pass.setup.title': 'On prépare tes 3 mois',
   'pass.setup.body': 'Ça prend quelques secondes.',
   'pass.set.title': 'Tes 3 mois sont prêts',

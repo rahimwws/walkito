@@ -172,8 +172,8 @@ export type Plan = {
    * The 3-month pass: one payment, 90 days of access, nothing renews. Never
    * also `isLifetime`, though both are one-time purchases: a pass sold as
    * "Lifetime" would be a promise the server's 90 days break. Buying one goes
-   * through the pass checkout (`widgets/pass-checkout`), which asks for an
-   * account first.
+   * through the pass checkout (`widgets/pass-checkout`), store first, account
+   * after.
    */
   readonly isPass: boolean;
   /** The introductory offer this customer would get, or null. Trial or

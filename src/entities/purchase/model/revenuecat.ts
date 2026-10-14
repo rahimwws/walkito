@@ -26,6 +26,7 @@ import Purchases, {
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import { campaignAttributes } from './attribution';
+import { syncPassFromServer } from './pass';
 import {
   ENTITLEMENT,
   LIFETIME_PRODUCT_IDS,
@@ -804,6 +805,10 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
  * Otherwise the purchase webhook keeps naming the abandoned anonymous id until
  * the next launch. A code that only confirms an address keeps the same id and
  * changes nothing here.
+ *
+ * Then the server is asked for this customer's passes: one paid for before
+ * signing in sits on the anonymous account left behind, and moves to this one
+ * (`grant_pass`, 0018).
  */
 function relinkOnSignIn(): void {
   const client = supabase;
@@ -822,7 +827,13 @@ function relinkOnSignIn(): void {
     // user until the caller has called `forgetIdentity()`.
     setTimeout(() => {
       void Purchases.getAppUserID()
-        .then((rcId) => linkBackend(rcId, uid))
+        .then(async (rcId) => {
+          await linkBackend(rcId, uid);
+          // Owed until the server has answered: a sign-in on a train would
+          // otherwise leave the pass on the account left behind.
+          kv.set(PASS_CLAIM_KEY, uid);
+          if ((await syncPassFromServer(rcId)) != null) kv.remove(PASS_CLAIM_KEY);
+        })
         .catch(() => undefined);
     }, 0);
   });
@@ -956,10 +967,27 @@ async function linkAnalytics(): Promise<void> {
     const id = await Purchases.getAppUserID();
     identify(id);
     await Purchases.setAttributes({ $posthogUserId: id });
-    void linkBackend(id);
+    void linkBackend(id).then(() => claimOwedPass(id));
   } catch {
     // Analytics is never worth failing a store start over.
   }
+}
+
+/** The account a pass claim is owed to after a sign-in (`relinkOnSignIn`),
+ * until `pass-sync` has answered once. */
+const PASS_CLAIM_KEY = 'purchase/pass-claim-owed';
+
+/** At launch: a claim a sign-in could not finish, finished now, for the
+ * account still signed in. */
+async function claimOwedPass(rcId: string): Promise<void> {
+  const owed = kv.getString(PASS_CLAIM_KEY);
+  if (owed == null) return;
+  const uid = await currentUserId().catch(() => null);
+  if (uid !== owed) {
+    kv.remove(PASS_CLAIM_KEY);
+    return;
+  }
+  if ((await syncPassFromServer(rcId)) != null) kv.remove(PASS_CLAIM_KEY);
 }
 
 /**
