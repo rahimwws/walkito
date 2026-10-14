@@ -28,6 +28,8 @@ export const PASS_EN = {
   'pass.tab': '3 months',
   /** The smallest line on its card, under the price paid once. */
   'pass.card.caption': 'One payment, no auto-renewal',
+  'pass.card.promise': 'Nothing renews',
+  'pass.card.access': 'Walkito Plus for 90 days',
   /** Under the headline, naming the deals on the cards. */
   'pass.offer.bodyAll':
     'Keep **Walkito Plus** your way: **a year for less**, **yours for good**, or **3 months with one payment**.',

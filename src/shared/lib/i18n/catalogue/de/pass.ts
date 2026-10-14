@@ -6,6 +6,8 @@ export const PASS_DE = {
   'pass.plan': '3-Monats-Pass',
   'pass.tab': '3 Monate',
   'pass.card.caption': 'Eine Zahlung, keine automatische Verlängerung',
+  'pass.card.promise': 'Nichts verlängert sich',
+  'pass.card.access': 'Walkito Plus für 90 Tage',
   'pass.offer.bodyAll':
     'Behalte **Walkito Plus**, wie es dir passt: **ein Jahr günstiger**, **für immer** oder **3 Monate mit einer Zahlung**.',
   'pass.offer.bodyYear':

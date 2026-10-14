@@ -6,6 +6,8 @@ export const PASS_RU = {
   'pass.plan': 'Пропуск на 3 месяца',
   'pass.tab': '3 месяца',
   'pass.card.caption': 'Один платёж, без автопродления',
+  'pass.card.promise': 'Ничего не продлевается',
+  'pass.card.access': 'Walkito Plus на 90 дней',
   'pass.offer.bodyAll':
     'Оставьте **Walkito Plus** себе как удобно: **год дешевле**, **навсегда** или **3 месяца одним платежом**.',
   'pass.offer.bodyYear': 'Оставьте **Walkito Plus** себе как удобно: **год дешевле** или **3 месяца одним платежом**.',

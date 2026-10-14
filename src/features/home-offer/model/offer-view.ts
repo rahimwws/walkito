@@ -222,7 +222,8 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
  * percentage, no struck price, no "only this once", only the price.
  *
  * The pass has no standard price to stand against, so its card is never a
- * discount: the time left, the price paid once, and that nothing renews.
+ * discount: what it buys (3 months), the price paid once, and that nothing
+ * renews.
  */
 function dealCard(
   { slot, plan }: SlottedPlan,
@@ -230,13 +231,16 @@ function dealCard(
   t: Translate,
 ): DealWords {
   if (slot === 'pass') {
+    // The card's big line is what it buys, not a percentage: there is no
+    // standard price to take one from. The promise row says the true thing a
+    // pass has that the others do not.
     return {
       kind: 'deal',
-      off: null,
-      promise: null,
+      off: t('pass.tab'),
+      promise: t('pass.card.promise'),
       was: null,
       pill: perPeriod('pass', priceOf(plan), t),
-      caption: t('pass.card.caption'),
+      caption: t('pass.card.access'),
     };
   }
   const lifetime = slot === 'lifetime';
