@@ -1,6 +1,19 @@
+import { Platform } from 'react-native';
+
+import { RETENTION_OFFERS } from '@/shared/config';
 import { kv } from '@/shared/lib/storage';
 
-import { OFFERINGS, PRODUCTS, type IntroOffer, type Offering, type Plan, type PlanPeriod, type StorePeriod } from './purchase';
+import {
+  OFFERINGS,
+  PRODUCTS,
+  type IntroOffer,
+  type Offering,
+  type Plan,
+  type PlanPeriod,
+  type RetentionOffer,
+  type StorePeriod,
+  type Subscription,
+} from './purchase';
 
 /**
  * Development only: every offering with sample prices, so a simulator can draw
@@ -117,4 +130,80 @@ export function sampleOffering(identifier: string): Offering | null {
     default:
       return null;
   }
+}
+
+// ── The cancel flow's preview ────────────────────────────────────────────────
+
+/** Whether a retention offer came from here rather than from a store. */
+export function isSampleOffer(offer: RetentionOffer): boolean {
+  return offer.token.startsWith(TOKEN);
+}
+
+function sampleOffer(offerId: string, productId: string, regular: number, price: number, period: StorePeriod): RetentionOffer {
+  return {
+    token: `${TOKEN}retention:${offerId}`,
+    offerId,
+    productId,
+    price,
+    priceString: usd(price),
+    period,
+    cycles: 1,
+    regularPrice: regular,
+    regularPriceString: usd(regular),
+    currencyCode: 'USD',
+  };
+}
+
+/** What `sampleRetention` hands the cancel flow: the subscription it
+ * pretends is held, and what the store would offer on it. */
+export type SampleRetention = {
+  subscription: Subscription;
+  nextYear: RetentionOffer | null;
+  freeMonth: RetentionOffer | null;
+  yearly: Plan | null;
+  current: Plan | null;
+};
+
+/**
+ * Development only: a pretend subscription and the store's answers for it,
+ * for the cancel flow's preview on a simulator, which holds no subscription
+ * and can sign no promotional offer (`walkito.dev://?previewCancel`, and
+ * `=monthly`). Shaped as the store's answers will be, with the products' US
+ * prices: the yearly plan with its next year at 40% off and a free month, or
+ * the monthly plan with the yearly one to switch to. On Android, as there, no
+ * promotional offers: the yearly plan has nothing for the budget, and the
+ * break is Play's pause.
+ */
+export function sampleRetention(period: 'annual' | 'monthly', now: number = Date.now()): SampleRetention | null {
+  if (!__DEV__) return null;
+  const ios = Platform.OS === 'ios';
+  const standard = sampleOffering(OFFERINGS.standard);
+  const held = period === 'annual' ? standard?.annual : standard?.monthly;
+  if (standard == null || held == null) return null;
+  const days = period === 'annual' ? 214 : 19;
+  const subscription: Subscription = {
+    kind: 'subscription',
+    productId: held.product.id,
+    period,
+    willRenew: true,
+    expiresAt: now + days * 24 * 60 * 60 * 1000,
+    periodType: 'normal',
+    store: ios ? 'app_store' : 'play_store',
+    familyShared: false,
+    managementUrl: null,
+  };
+  const price = held.product.price;
+  // The next year as the offer is set up in App Store Connect: 40% under the
+  // year's price, down to the cent as the store rounds.
+  const nextYearPrice = Math.floor(price * 0.6 * 100) / 100;
+  return {
+    subscription,
+    nextYear:
+      ios && period === 'annual'
+        ? sampleOffer(RETENTION_OFFERS.nextYear40, held.product.id, price, nextYearPrice, { unit: 'year', count: 1 })
+        : null,
+    freeMonth: ios ? sampleOffer(RETENTION_OFFERS.freeMonth, held.product.id, price, 0, { unit: 'month', count: 1 }) : null,
+    yearly: period === 'monthly' ? standard.annual : null,
+    current: period === 'monthly' ? held : null,
+  };
 }

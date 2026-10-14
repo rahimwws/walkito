@@ -15,17 +15,22 @@ import Purchases, {
   PACKAGE_TYPE,
   PRODUCT_CATEGORY,
   PURCHASES_ERROR_CODE,
+  STORE_REPLACEMENT_MODE,
   type CustomerInfo,
+  type MakePurchaseResult,
   type PurchasesError,
   type PurchasesOffering,
   type PurchasesPackage,
+  type PurchasesPromotionalOffer,
   type PurchasesStoreProduct,
+  type StoreProductChangeInfo,
 } from 'react-native-purchases';
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import { campaignAttributes } from './attribution';
 import {
   ENTITLEMENT,
+  LEGACY_PASS_IDS,
   LIFETIME_PRODUCT_IDS,
   OFFERING_V2,
   PACKAGES,
@@ -38,7 +43,9 @@ import {
   type Purchases as Store,
   type PurchaseResult,
   type RestoreResult,
+  type RetentionOffer,
   type StorePeriod,
+  type Subscription,
 } from './purchase';
 
 /**
@@ -549,6 +556,117 @@ function tierOf(product: PurchasesStoreProduct): PlanTier {
   return 'weekly';
 }
 
+// ── The subscription held, and keeping it ───────────────────────────────────
+
+/**
+ * The `offering` of the purchase events the cancel flow causes: a promotional
+ * offer taken, a monthly plan moved to the yearly one. Its own name so a
+ * paywall funnel built on `purchase_completed` can leave them out; they are
+ * somebody staying, not somebody arriving.
+ */
+const RETENTION_SOURCE = 'retention';
+
+/**
+ * Which billing period a product held is, from its id (and on Google Play its
+ * base plan). Every id this app has sold says it (`walkito_annual`,
+ * `sub_weekly_799`, base plan `annual`); an id that says nothing reads as a
+ * year, the reading that offers nothing it should not — a "switch to yearly"
+ * shown to a yearly subscriber would be a change to the same plan.
+ */
+function periodOfProduct(id: string, plan: string | null): PlanPeriod {
+  const text = `${id} ${plan ?? ''}`;
+  if (/annual|year/i.test(text)) return 'annual';
+  if (/month/i.test(text)) return 'monthly';
+  if (/week/i.test(text)) return 'weekly';
+  return 'annual';
+}
+
+function periodTypeOf(type: string | null | undefined): Subscription['periodType'] {
+  switch (type?.toUpperCase()) {
+    case 'TRIAL':
+      return 'trial';
+    case 'INTRO':
+      return 'intro';
+    case 'PREPAID':
+      return 'prepaid';
+    default:
+      return 'normal';
+  }
+}
+
+function storeOf(store: string): Subscription['store'] {
+  if (store === 'APP_STORE' || store === 'MAC_APP_STORE') return 'app_store';
+  if (store === 'PLAY_STORE') return 'play_store';
+  return 'other';
+}
+
+/**
+ * The subscription in a customer's info, as the contract describes it, or
+ * null when nothing a store bills is held.
+ *
+ * Read off the `premium` entitlement (any active one, for the reason
+ * `ENTITLEMENT` explains), which names the product behind it, whether it
+ * renews and when its period ends. A grant from RevenueCat's dashboard
+ * (`PROMOTIONAL`) and a legacy pass are left out: no store bills either, so
+ * there is nothing to cancel.
+ */
+function subscriptionOf(info: CustomerInfo): Subscription | null {
+  const held = info.entitlements.active[ENTITLEMENT] ?? Object.values(info.entitlements.active)[0];
+  if (held == null) return null;
+  if (held.store === 'PROMOTIONAL' || LEGACY_PASS_IDS.includes(held.productIdentifier)) return null;
+  const lifetime = held.expirationDate == null || LIFETIME_PRODUCT_IDS.includes(held.productIdentifier);
+  return {
+    kind: lifetime ? 'lifetime' : 'subscription',
+    productId: held.productIdentifier,
+    period: lifetime ? 'lifetime' : periodOfProduct(held.productIdentifier, held.productPlanIdentifier),
+    willRenew: !lifetime && held.willRenew,
+    expiresAt: lifetime ? null : held.expirationDateMillis,
+    periodType: periodTypeOf(held.periodType),
+    store: storeOf(held.store),
+    familyShared: held.ownershipType === 'FAMILY_SHARED',
+    managementUrl: info.managementURL ?? null,
+  };
+}
+
+/**
+ * The signed promotional offers behind the tokens `retentionOffer` hands out,
+ * with the product each is on: the same exchange `packages` makes for plans.
+ */
+const retentionOffers = new Map<string, { product: PurchasesStoreProduct; signed: PurchasesPromotionalOffer }>();
+
+/**
+ * A purchase the cancel flow started, from the store's sheet to an answer:
+ * the same tracking, entitlement check and errors as `buy`, under
+ * `RETENTION_SOURCE`, and no AppsFlyer event — keeping a subscriber is not a
+ * conversion an ad network should count, and RevenueCat already tells
+ * AppsFlyer about the money from its server.
+ */
+async function retentionPurchase(props: PurchaseProps, run: () => Promise<MakePurchaseResult>): Promise<PurchaseResult> {
+  track('purchase_started', props);
+  try {
+    const { customerInfo } = await run();
+    announce(customerInfo);
+    if (entitledIn(customerInfo)) {
+      track('purchase_completed', props);
+      return { status: 'purchased' };
+    }
+    track('purchase_failed', { ...props, reason: 'no-entitlement' });
+    explainMissingEntitlement(customerInfo);
+    return { status: 'failed', message: translatorFor(getLanguage())('offer.notUnlocked') };
+  } catch (error) {
+    if (wasCancelled(error)) {
+      track('purchase_cancelled', props);
+      return { status: 'cancelled' };
+    }
+    if (wasPending(error)) {
+      track('purchase_pending', props);
+      return { status: 'pending' };
+    }
+    track('purchase_failed', { ...props, reason: String((error as PurchasesError | undefined)?.code ?? 'unknown') });
+    return { status: 'failed', message: messageFor(error) };
+  }
+}
+
 /**
  * Start the SDK and begin tracking entitlement.
  *
@@ -962,6 +1080,100 @@ export const revenueCatStore: Store = {
     } catch {
       return null;
     }
+  },
+
+  async subscription(fresh = false): Promise<Subscription | null> {
+    try {
+      if (fresh) await Purchases.invalidateCustomerInfoCache();
+      const info = await Purchases.getCustomerInfo();
+      announce(info);
+      return subscriptionOf(info);
+    } catch {
+      // Unreachable: what the store said last is still the best answer, and
+      // an empty row would read as nothing held.
+      return lastInfo == null ? null : subscriptionOf(lastInfo);
+    }
+  },
+
+  async manageSubscriptions(): Promise<boolean> {
+    // RevenueCat's sheet is Apple's own; Google Play has no sheet inside an
+    // app, so the caller opens Play's subscription center instead.
+    if (Platform.OS !== 'ios') return false;
+    try {
+      await Purchases.showManageSubscriptions();
+      return true;
+    } catch {
+      return false;
+    }
+  },
+
+  async retentionOffer(offerId: string, productId: string): Promise<RetentionOffer | null> {
+    // Promotional offers are the App Store's. Google Play's retention tools
+    // (pausing, its own offers) live in the Play Store.
+    if (Platform.OS !== 'ios') return null;
+    try {
+      const products = await Purchases.getProducts([productId], PRODUCT_CATEGORY.SUBSCRIPTION);
+      const product = products.find((p) => p.identifier === productId);
+      const discount = product?.discounts?.find((d) => d.identifier === offerId);
+      if (product == null || discount == null) return null;
+      // Signed by RevenueCat with the In-App Purchase key it holds; undefined
+      // when it cannot be (no key, or this customer is not eligible).
+      const signed = await Purchases.getPromotionalOffer(product, discount);
+      if (signed == null) return null;
+      const period = storePeriod(discount.periodUnit, discount.periodNumberOfUnits) ?? isoPeriod(discount.period);
+      if (period == null) return null;
+      const token = `retention:${offerId}:${productId}`;
+      retentionOffers.set(token, { product, signed });
+      return {
+        token,
+        offerId,
+        productId,
+        price: discount.price,
+        priceString: discount.priceString,
+        period,
+        cycles: Number.isFinite(discount.cycles) && discount.cycles >= 1 ? Math.round(discount.cycles) : 1,
+        regularPrice: product.price,
+        regularPriceString: product.priceString,
+        currencyCode: product.currencyCode,
+      };
+    } catch {
+      return null;
+    }
+  },
+
+  async buyRetentionOffer(offer: RetentionOffer): Promise<PurchaseResult> {
+    const held = retentionOffers.get(offer.token);
+    if (held == null) {
+      return { status: 'failed', message: translatorFor(getLanguage())('purchase.unavailable') };
+    }
+    const props: PurchaseProps = {
+      plan: tierOf(held.product),
+      product_id: held.product.identifier,
+      offering: RETENTION_SOURCE,
+      price: offer.price,
+      currency: offer.currencyCode,
+    };
+    return retentionPurchase(props, () => Purchases.purchaseDiscountedProduct(held.product, held.signed));
+  },
+
+  async changePlan(plan: Plan, fromProductId: string): Promise<PurchaseResult> {
+    const held = packages.get(plan.token);
+    if (held == null) {
+      return { status: 'failed', message: translatorFor(getLanguage())('purchase.unavailable') };
+    }
+    const { pkg, period } = held;
+    // Google Play bills two subscriptions side by side unless it is told which
+    // one this replaces. With time proration the yearly plan starts now and
+    // what is left of the old period is credited against it. The App Store
+    // needs nothing: a plan in the same subscription group replaces the one
+    // held by itself.
+    const change: StoreProductChangeInfo | null =
+      Platform.OS === 'android'
+        ? { oldProductIdentifier: fromProductId.split(':')[0], replacementMode: STORE_REPLACEMENT_MODE.WITH_TIME_PRORATION }
+        : null;
+    return retentionPurchase(purchaseProps(pkg, period, RETENTION_SOURCE), () =>
+      Purchases.purchasePackage(pkg, null, change),
+    );
   },
 
   async restore(): Promise<RestoreResult> {

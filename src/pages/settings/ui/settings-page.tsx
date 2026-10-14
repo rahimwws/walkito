@@ -1,20 +1,21 @@
 import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Application from 'expo-application';
 import * as Haptics from 'expo-haptics';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LanguageOptions } from '@/features/language-switch';
-import { LEGAL, SUPPORT_EMAIL, fonts, meterColors, palette } from '@/shared/config';
+import { LEGAL, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
-import { currentUserId } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
+
+import { writeToUs } from '../lib/write-to-us';
 
 import { EmailSettings } from './email-settings';
 import { PlanSettings } from './plan-settings';
 import { OfferSettings } from './offer-settings';
 import { SoundSettings } from './sound-settings';
+import { SubscriptionSettings } from './subscription-settings';
 
 /**
  * Language, then what App Review asks to be findable.
@@ -55,19 +56,11 @@ export function SettingsPage() {
     Linking.openURL(url).catch(() => {});
   };
 
-  /**
-   * A new email to the founders, with the two facts every support reply needs
-   * written into it already: which build, and which user. The id is the
-   * anonymous Supabase one — enough to find the plan, nothing that names them.
-   */
+  /** A new email to the founders, with the build and the user written in
+   * (`writeToUs`). */
   const write = () => {
     Haptics.selectionAsync();
-    void currentUserId().then((id) => {
-      const version = `${Application.nativeApplicationVersion ?? '?'} (${Application.nativeBuildVersion ?? '?'})`;
-      const body = t('settings.writeBody', { version, platform: Platform.OS, id: id ?? '-' });
-      const url = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(t('settings.writeSubject'))}&body=${encodeURIComponent(body)}`;
-      Linking.openURL(url).catch(() => {});
-    });
+    writeToUs(t);
   };
 
   return (
@@ -79,6 +72,8 @@ export function SettingsPage() {
       <LanguageOptions />
 
       <PlanSettings />
+
+      <SubscriptionSettings />
 
       <SoundSettings />
       <OfferSettings />

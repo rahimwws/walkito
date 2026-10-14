@@ -4,6 +4,8 @@ export type {
   AppUpdateKind,
   AnalyticsEvent,
   AnalyticsEvents,
+  CancelOffer,
+  CancelReason,
   PlanTier,
   PurchaseProps,
   SessionProps,

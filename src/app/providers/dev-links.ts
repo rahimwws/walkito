@@ -1,6 +1,8 @@
+import { router } from 'expo-router';
 import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
+import { devPreviewCancel } from '@/pages/settings';
 import { previewNotification } from '@/entities/notifications';
 import { currentDay, devClearCheckIn } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
@@ -54,6 +56,28 @@ const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
 /** `walkito.dev://?previewOfferWall` raises the offer that follows the tour
  * over Home (`=off` to drop it); add `previewHomeOffer` for the trial stage. */
 const WALL_PARAM = /[?&]previewOfferWall(?:=(\w+))?/;
+/** `walkito.dev://?previewCancel` opens Settings with the cancel flow over it,
+ * as a yearly subscriber with an improvement to show; `?previewCancel=monthly`
+ * as a monthly one. Pretend subscription, sample prices, nothing recorded
+ * (`pages/settings/model/cancel-preview.ts`). */
+const CANCEL_PARAM = /[?&]previewCancel(?:=(\w+))?/;
+/** Settings is pushed once the router has acted on the link itself, which
+ * sends it to Home: pushed sooner, Home would land on top of it. */
+const CANCEL_PUSH_MS = 400;
+
+function previewCancel(url: string): void {
+  const match = CANCEL_PARAM.exec(url);
+  if (match == null) return;
+  devPreviewCancel(match[1] === 'monthly' ? 'monthly' : 'annual');
+  setTimeout(() => {
+    try {
+      router.push('/settings');
+    } catch {
+      // The navigator is not up yet (a cold start from the link): open
+      // Settings by hand and the flow comes up over it.
+    }
+  }, CANCEL_PUSH_MS);
+}
 
 function previewPush(url: string): void {
   const kind = PUSH_PARAM.exec(url)?.[1];
@@ -80,7 +104,8 @@ function previewPush(url: string): void {
  * `?previewPush=<kind>` sends a notification with its picture, to be looked at
  * from the home or lock screen; `?samplePrices[=off]`, `?previewPaywall`,
  * `?previewHomeOffer`, `?previewComeback` and `?previewOfferEnded` set up the
- * paywall and the offers after its "Not now" (see each above). The onboarding page answers
+ * paywall and the offers after its "Not now" (see each above); `?previewCancel[=monthly]`
+ * opens the cancel flow in Settings. The onboarding page answers
  * `?onboardingStep=<key>`, the setup page `?authPreview=<state>`.
  * The whole body folds away in a release bundle.
  */
@@ -111,6 +136,7 @@ export function useDevLinks(): void {
           if (tour[1] === 'done') finishHomeTour();
           else devRestartHomeTour(tour[1] === 'tour' ? 'tour' : 'day1');
         }
+        previewCancel(url);
         previewPush(url);
       };
       void Linking.getInitialURL()

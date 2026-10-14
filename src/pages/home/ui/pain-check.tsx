@@ -50,10 +50,11 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
+import { SafetySheet } from '@/features/safety-check';
+
 import { LegMap, MAX_ZONES, ZONE_LABEL_KEYS, reliefIdsFor, toggleZone, type LegZone } from '@/entities/leg-zone';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
-import { SafetySheet } from './safety-sheet';
 
 /** Between the question (or the answer) and the "Something new?" row. */
 export const CHECK_IN_GAP = 12;

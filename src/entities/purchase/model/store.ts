@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 
 import { compAccess, grantDevAccess, subscribeComp } from './comp';
 import { type Purchases as Store, unconfigured } from './purchase';
-import { isSamplePlan, sampleOffering, samplePricesOn } from './samples';
+import { isSampleOffer, isSamplePlan, sampleOffering, samplePricesOn } from './samples';
 import { storeSheetClosed, storeSheetOpened } from './skip';
 
 /**
@@ -176,10 +176,11 @@ function pick(): Store {
 export const purchases: Store = withSamplePrices(withComp(withSheetCount(pick())));
 
 /**
- * The store, counting its own sheets: a purchase, a restore and the offer-code
- * sheet each hold `skip.ts` from reading the app going to the background as
- * the person leaving it — on Android the Play billing sheet is reported that
- * way, and leaving is what ends the one-time trial offer.
+ * The store, counting its own sheets: a purchase, a restore, the offer-code
+ * sheet and the cancel flow's (a promotional offer, a change of plan, Apple's
+ * subscription management) each hold `skip.ts` from reading the app going to
+ * the background as the person leaving it — on Android the Play billing sheet
+ * is reported that way, and leaving is what ends the one-time trial offer.
  */
 function withSheetCount(store: Store): Store {
   const held =
@@ -198,6 +199,9 @@ function withSheetCount(store: Store): Store {
     buyProduct: held(store.buyProduct),
     restore: held(store.restore),
     redeemCode: held(store.redeemCode),
+    manageSubscriptions: held(store.manageSubscriptions),
+    buyRetentionOffer: held(store.buyRetentionOffer),
+    changePlan: held(store.changePlan),
   };
 }
 
@@ -205,7 +209,9 @@ function withSheetCount(store: Store): Store {
  * Development only: sample prices instead of the store (`samples.ts`), while
  * `?samplePrices` is on. `configured` reads true then, so every screen draws
  * as it will against a store; buying a sample plan grants the simulator's
- * pretend purchase. A release build gets the store untouched.
+ * pretend purchase. The cancel flow's preview (`?previewCancel`) hands out
+ * sample offers and plans whatever the setting, and taking one "goes through"
+ * the same way. A release build gets the store untouched.
  */
 function withSamplePrices(store: Store): Store {
   if (!__DEV__) return store;
@@ -219,6 +225,14 @@ function withSamplePrices(store: Store): Store {
     buy: async (plan) => {
       if (!isSamplePlan(plan)) return store.buy(plan);
       grantDevAccess();
+      return { status: 'purchased' };
+    },
+    buyRetentionOffer: async (offer) => {
+      if (!isSampleOffer(offer)) return store.buyRetentionOffer(offer);
+      return { status: 'purchased' };
+    },
+    changePlan: async (plan, from) => {
+      if (!isSamplePlan(plan)) return store.changePlan(plan, from);
       return { status: 'purchased' };
     },
   };
