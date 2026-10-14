@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { AppState } from 'react-native';
 
 import { goals, retestResults, useStreak, type Goal } from '@/entities/program';
 import {
@@ -13,6 +14,7 @@ import {
   useReviewQueued,
   type ReviewWin,
 } from '@/shared/lib/review';
+import { useSplashRevealed } from '@/shared/ui/splash';
 
 /**
  * The first win worth asking about, or null — section 6 of the plan spec:
@@ -62,12 +64,20 @@ const THIRD_OPEN_DELAY_MS = 2500;
  */
 export function useReviewOnThirdOpen(ready: boolean): void {
   const opens = useAppOpens();
+  const revealed = useSplashRevealed();
+  // In front, not merely mounted: the root also mounts for HealthKit's
+  // background relaunches.
+  const [front, setFront] = useState(AppState.currentState === 'active');
   useEffect(() => countAppOpens(), []);
   useEffect(() => {
-    if (!ready || opens < THIRD_OPEN || thirdOpenAsked()) return undefined;
+    const subscription = AppState.addEventListener('change', (next) => setFront(next === 'active'));
+    return () => subscription.remove();
+  }, []);
+  useEffect(() => {
+    if (!ready || !front || !revealed || opens < THIRD_OPEN || thirdOpenAsked()) return undefined;
     const timer = setTimeout(() => void askAtThirdOpen(), THIRD_OPEN_DELAY_MS);
     return () => clearTimeout(timer);
-  }, [ready, opens]);
+  }, [ready, front, revealed, opens]);
 }
 
 /** How long after the note closes the sheet rises: the next screen's arrival, settled. */

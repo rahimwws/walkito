@@ -10,3 +10,4 @@
 export { HomeTour, type HomeTourProps } from './ui/home-tour';
 export { DAY_ONE_MINUTES, finishDayOne, type DayOneRun, type DayOneStep } from './model/day-one';
 export { devPreviewOfferWall, useDevOfferWall } from './model/dev-offer-wall';
+export { askForPlans, usePlansAsked } from './model/plans-asked';

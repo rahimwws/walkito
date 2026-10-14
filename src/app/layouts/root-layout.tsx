@@ -32,7 +32,7 @@ import {
   usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
-import { useDevOfferWall } from '@/features/home-tour';
+import { useDevOfferWall, usePlansAsked } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { SessionDonePreview } from '@/widgets/session-player';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
@@ -197,7 +197,8 @@ function RootLayoutInner() {
   const tourState = useHomeTourState();
   const tryingOut = onboarded && !entitled && !lapsed && skipped;
   const devWall = useDevOfferWall();
-  const offerWall = (tryingOut && tourState === 'done') || devWall;
+  const plansAsked = usePlansAsked();
+  const offerWall = (tryingOut && (tourState === 'done' || plansAsked)) || devWall;
   // A skip from before the tour existed has no tour armed: it gets one, or
   // Home would be open with nothing in front of it and no offer after.
   useEffect(() => {

@@ -78,11 +78,14 @@ function opened(): void {
  * leaving. Returns the unsubscribe.
  */
 export function countAppOpens(): () => void {
+  let awaySince: number | null = null;
   if (!launchCounted) {
     launchCounted = true;
-    opened();
+    // HealthKit relaunches the app in the background every hour or so: that is
+    // not an open. Such a launch counts when it is first brought to the front.
+    if (AppState.currentState === 'background') awaySince = 0;
+    else opened();
   }
-  let awaySince: number | null = null;
   const subscription = AppState.addEventListener('change', (next) => {
     if (next === 'background') {
       if (awaySince == null) awaySince = Date.now();
@@ -114,15 +117,27 @@ export function thirdOpenAsked(): boolean {
 }
 
 /**
- * The prompt at the third open, once in the life of the install. Marked
- * before it is asked, so it is never asked twice, and passed through
- * `askForReview`, whose 120-day gap still stands: a rating given from the
- * founders' note a day earlier is not followed by this one.
+ * The prompt at the third open, once in the life of the install, passed
+ * through `askForReview`, whose 120-day gap still stands: a rating given from
+ * the founders' note a day earlier is not followed by this one.
+ *
+ * Marked as asked only when the system took the request, or when the gap
+ * turned it down (it was asked recently enough). A phone that cannot show the
+ * sheet (an old dev client, Android before the listing is live) keeps its ask
+ * for a later open, and only an app in front asks at all: a request from the
+ * background shows nothing and would spend it.
  */
 export async function askAtThirdOpen(now: number = Date.now()): Promise<boolean> {
   if (thirdOpenAsked() || opens < THIRD_OPEN) return false;
-  kv.set(THIRD_OPEN_KEY, true);
-  return askForReview('third-open', now);
+  if (AppState.currentState !== 'active') return false;
+  const last = Number(kv.getString(LAST_KEY) ?? 0);
+  if (now - last < GAP_MS) {
+    kv.set(THIRD_OPEN_KEY, true);
+    return false;
+  }
+  const shown = await askForReview('third-open', now);
+  if (shown) kv.set(THIRD_OPEN_KEY, true);
+  return shown;
 }
 
 // ── Asked for by the user ───────────────────────────────────────────────────

@@ -458,6 +458,13 @@ export type SessionViewProps = {
    * is not finishing. */
   onFinish?: () => void;
   /**
+   * The last move ran out, at that instant: before the closing sheet, so a
+   * host can tell a session that was finished from one that was left, when
+   * its sheet is swiped away over the closing sheet and `onFinish` never
+   * comes. Fires once.
+   */
+  onComplete?: () => void;
+  /**
    * Ask "Could you have done 2 more good reps?" in the closing sheet. On for
    * every session — Plan, Home's tasks, the Library — and never after a session
    * stopped on pain, which already said how it went.
@@ -567,6 +574,7 @@ function SessionRun({
   cue,
   title,
   onFinish,
+  onComplete,
   feedback = true,
 }: SessionViewProps) {
   // A fresh record for this run: nothing the last session said carries over.
@@ -1193,6 +1201,9 @@ function SessionRun({
    * day is marked done by whoever opened the player. Stopping early is not
    * failing; the only difference is what the closing sheet says.
    */
+  // Read through a ref: the callback is a fresh closure on every host render.
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
   const complete = useCallback((early: boolean) => {
     setEndedEarly(early);
     // Over, in either sense: there is no place left to come back to.
@@ -1239,6 +1250,7 @@ function SessionRun({
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
+    onCompleteRef.current?.();
   }, [progress, deadline, endActivity, activitySnapshot, day, moves, resumeId]);
 
   /** On to the next move, or the end. No haptic of its own: the count-in's

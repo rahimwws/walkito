@@ -15,8 +15,10 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
-import { planSessionDone, todayKey } from '@/entities/program';
+import { planSessionDone, retestResults, todayKey } from '@/entities/program';
+import { useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import {
+  homeTourState,
   finishHomeTour,
   setHomeTourStage,
   setHomeTourStep,
@@ -37,6 +39,8 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { useDockHeight } from '@/shared/ui/action-dock';
 
 import type { DayOneRun } from '../model/day-one';
+
+import { askForPlans } from '../model/plans-asked';
 
 import { DayOneCard } from './day-one-card';
 import { HandNote, type Point } from './hand-note';
@@ -108,13 +112,20 @@ export type HomeTourProps = {
 export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps) {
   const state = useHomeTourState();
   const stage = useHomeTourStage();
+  /** Skipped the paywall and has not bought since: the card offers the plans. */
+  const skipper = usePaywallSkipped() && !useEntitled();
   const armed = state === 'armed';
 
   // A tour armed by the build before the day-one session stored no stage.
   // Somebody whose session today is already on record goes on to the tour;
   // anybody else gets the two minutes first.
   useEffect(() => {
-    if (armed && stage == null) setHomeTourStage(planSessionDone(todayKey()) ? 'tour' : 'day1');
+    if (!armed) return;
+    // Somebody with history (an account signed into on a new phone, its plan
+    // restored) skips the first session: it would push their due test off
+    // today and file two minutes over their real day.
+    const returning = retestResults().length > 0 || planSessionDone(todayKey());
+    if (stage == null || (stage === 'day1' && returning)) setHomeTourStage(returning ? 'tour' : 'day1');
   }, [armed, stage]);
 
   const gone = useGoneAfter(sessionOpen, SHEET_GONE_MS);
@@ -122,7 +133,12 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
 
   return (
     <>
-      <DayOneCard visible={clear && stage === 'day1'} sessionOpen={sessionOpen} onStart={onStartDayOne} />
+      <DayOneCard
+        visible={clear && stage === 'day1'}
+        sessionOpen={sessionOpen}
+        onStart={onStartDayOne}
+        onSeePlans={skipper ? askForPlans : undefined}
+      />
       <TourStops visible={clear && stage === 'tour'} />
     </>
   );
@@ -378,6 +394,9 @@ function TourStops({ visible: shown }: { visible: boolean }) {
 
 /** The tour is over: Home is theirs, or the offer rises over it. */
 function endTour(): void {
+  // The last stop stays pressable through its fade: a second tap must not
+  // count the tour twice.
+  if (homeTourState() !== 'armed') return;
   finishHomeTour();
   track('home_tour_completed');
 }

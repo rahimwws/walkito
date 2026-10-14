@@ -63,8 +63,9 @@ const DURATION: Readonly<Record<string, Key>> = {
   longer: 'onboarding.duration.longer',
 };
 
-/** A first progress check is the second test, a fortnight after today's. */
-const FIRST_CHECK_DAYS = 14;
+/** A first progress check is the second test: the first is tomorrow (today is
+ * the two-minute first session), the next a fortnight after it. */
+const FIRST_CHECK_DAYS = 1 + 14;
 
 /** A step arriving: a slow fade over the one leaving, so the two overlap. */
 const STEP_IN = FadeIn.duration(460)

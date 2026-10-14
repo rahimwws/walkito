@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Modal, StyleSheet, View } from 'react-native';
 
 import { finishDayOne, type DayOneRun } from '@/features/home-tour';
@@ -30,8 +31,22 @@ export type DayOneSessionProps = {
 export function DayOneSession({ run, onClose }: DayOneSessionProps) {
   const scheme = useColorScheme();
   const t = useT();
+  /** The last move ran out. A sheet swiped away over the closing sheet after
+   * that still files the session: the two minutes were done. */
+  const completed = useRef(false);
+  useEffect(() => {
+    completed.current = false;
+  }, [run]);
+  const finish = () => {
+    if (run != null) finishDayOne(run);
+    onClose();
+  };
+  const dismiss = () => {
+    if (completed.current) finish();
+    else onClose();
+  };
   return (
-    <Modal animationType="slide" presentationStyle="pageSheet" visible={run != null} onRequestClose={onClose}>
+    <Modal animationType="slide" presentationStyle="pageSheet" visible={run != null} onRequestClose={dismiss}>
       <View style={[styles.player, { backgroundColor: palette[scheme].background }]}>
         {run != null && (
           <SessionView
@@ -40,11 +55,11 @@ export function DayOneSession({ run, onClose }: DayOneSessionProps) {
             title={t('home.day1.title')}
             free
             feedback={false}
-            onBack={onClose}
-            onFinish={() => {
-              finishDayOne(run);
-              onClose();
+            onBack={dismiss}
+            onComplete={() => {
+              completed.current = true;
             }}
+            onFinish={finish}
           />
         )}
       </View>

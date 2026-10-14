@@ -63,7 +63,7 @@ describe('paywall personalisation', () => {
     expect(out.sport_label).toBe('Running');
     expect(out.days_per_week).toBe('5');
     expect(out.minutes).toBe('5');
-    expect(out.progress_check_date).toBe('October 20');
+    expect(out.progress_check_date).toBe('October 21');
   });
 
   test('never carries the body, and no plan length or end', () => {

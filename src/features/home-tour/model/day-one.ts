@@ -9,6 +9,7 @@ import {
   keepTestOffToday,
   planMeta,
   planSessionDone,
+  retestResults,
   planSettings,
   todayDayNumber,
   todayKey,
@@ -125,7 +126,9 @@ export function dayOneRun(): DayOneRun {
 export function finishDayOne(run: DayOneRun, now: number = Date.now()): void {
   const today = todayKey(now);
   if (!planSessionDone(today)) {
-    keepTestOffToday(now);
+    // Only the very first test moves to tomorrow: a returning user's due
+    // retest stays where the plan put it.
+    if (retestResults().length === 0) keepTestOffToday(now);
     completePlanSession({
       date: today,
       source: 'plan',

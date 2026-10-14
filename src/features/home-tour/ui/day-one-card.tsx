@@ -1,6 +1,7 @@
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import { useEffect, useRef, useState } from 'react';
-import { Modal, StyleSheet, Text, View } from 'react-native';
+import * as Haptics from 'expo-haptics';
+import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -59,6 +60,9 @@ export type DayOneCardProps = {
   /** The session's sheet is up: the card stays down until it has gone. */
   sessionOpen: boolean;
   onStart: (run: DayOneRun) => void;
+  /** Somebody who skipped the paywall: a quiet way to the plans under Start,
+   * so the card is never the only way on. */
+  onSeePlans?: () => void;
 };
 
 /**
@@ -73,7 +77,7 @@ export type DayOneCardProps = {
  * with Reduce Motion), and goes down before the session's sheet comes up.
  * Comes back if the session is closed before its end.
  */
-export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
+export function DayOneCard({ visible, sessionOpen, onStart, onSeePlans }: DayOneCardProps) {
   const t = useT();
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -173,8 +177,20 @@ export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
               {t('home.day1.title')}
             </Text>
             <Text style={[styles.body, { color: meter.caption }]}>{t('home.day1.body')}</Text>
-            <Chip3D icon={Clock01Icon} accent="teal" label={t('home.day1.minutes', { count: DAY_ONE_MINUTES })} style={styles.chip} />
+            <Chip3D icon={Clock01Icon} accent="blue" label={t('session.minutes', { count: DAY_ONE_MINUTES })} style={styles.chip} />
             <PrimaryButton label={t('home.day1.start')} onPress={start} disabled={launching} style={styles.cta} />
+            {onSeePlans != null && (
+              <Pressable
+                accessibilityRole="button"
+                hitSlop={8}
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  onSeePlans();
+                }}
+                style={({ pressed }) => [styles.plans, pressed && { opacity: 0.6 }]}>
+                <Text style={[styles.plansText, { color: meter.caption }]}>{t('home.day1.seePlans')}</Text>
+              </Pressable>
+            )}
           </View>
         </Animated.View>
       </View>
@@ -184,7 +200,7 @@ export function DayOneCard({ visible, sessionOpen, onStart }: DayOneCardProps) {
 
 const styles = StyleSheet.create({
   centre: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     justifyContent: 'center',
     paddingHorizontal: 20,
   },
@@ -215,4 +231,6 @@ const styles = StyleSheet.create({
   },
   chip: { marginTop: 14 },
   cta: { alignSelf: 'stretch', marginTop: 20 },
+  plans: { alignSelf: 'center', paddingTop: 14, paddingBottom: 2 },
+  plansText: fonts.semibold(15, -0.2),
 });
