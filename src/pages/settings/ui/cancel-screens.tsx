@@ -19,6 +19,7 @@ import {
   trophyRig,
 } from '@/shared/ui/mascot';
 import { OptionCard3D } from '@/shared/ui/option-card-3d';
+import { LegalLinks } from '@/shared/ui/subscription-terms';
 import { TimePicker } from '@/shared/ui/time-picker';
 
 import { CANCEL_REASONS } from '../config/cancel-reasons';
@@ -51,6 +52,9 @@ export type Outcome =
       /** When the 3 months end, as the server granted them; null when it
        * had not answered in time. */
       until: number | null;
+      /** The subscription still renews beside the pass: "Done" was chosen
+       * over "Turn off auto-renewal". */
+      renews: boolean;
     }
   | { kind: 'free_month'; pending: boolean }
   | { kind: 'lighter' }
@@ -59,6 +63,8 @@ export type Outcome =
 /** What a screen can do: the flow's handlers. */
 export type ReplyActions = {
   take: (offer: StoreOffer) => void;
+  /** Restore purchases, beside Terms and Privacy under a store offer. */
+  restore: () => void;
   playPause: () => void;
   review: () => void;
   lighter: () => void;
@@ -123,10 +129,11 @@ export function ReasonsScreen({
 
 /**
  * One offer, said once and plainly: the 3-month pass at the retention price,
- * the store's own string, one payment and nothing renewing. Shown only where
- * `budgetPassAllowed` allows it (the flow sends anybody else straight to the
- * store's page), so the kind words below it are for the review account when
- * the store had no pass to sell.
+ * the store's own string, one payment and nothing renewing, with Terms of
+ * Use and the Privacy Policy under it, as under every purchase. Shown only
+ * where `budgetPassAllowed` allows it (the flow sends anybody else straight
+ * to the store's page), so the kind words below it are for the review account
+ * when the store had no pass to sell.
  */
 export function BudgetReply({ options, offers, busy, problem, live, on }: ReplyProps) {
   const t = useT();
@@ -147,6 +154,7 @@ export function BudgetReply({ options, offers, busy, problem, live, on }: ReplyP
           problem={problem}
           onPress={() => on.take('pass')}
         />
+        <LegalLinks onRestore={on.restore} disabled={busy != null} />
       </>
     );
   }
@@ -329,10 +337,13 @@ export function DoneScreen({ outcome, live, onBack }: { outcome: Outcome; live: 
     }
   })();
   const pending = 'pending' in outcome && outcome.pending;
+  // Both would be paid for: said plainly, with the way to stop it in the dock.
+  const stillRenews = outcome.kind === 'pass' && outcome.renews;
   return (
     <>
       <Hero rig={thumbsUpRig} shot="happy" title={t('cancel.done.title')} body={body} live={live} />
       {pending && <Line>{t('cancel.done.pending')}</Line>}
+      {stillRenews && <Line>{t('pass.done.stillRenews')}</Line>}
       <Button3D label={t('cancel.done.back')} onPress={onBack} />
     </>
   );

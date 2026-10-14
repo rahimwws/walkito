@@ -140,8 +140,12 @@ function merge(): PassState {
 
 let snapshot: PassState = merge();
 const listeners = new Set<() => void>();
+/** `passAccess()` as the readers were last told it, so a return to the app
+ * tells them only when it has changed. */
+let emittedAccess = passAccess();
 
 function emit(): void {
+  emittedAccess = passAccess();
   for (const listener of listeners) listener();
 }
 
@@ -271,23 +275,30 @@ function fromAnswer(answer: Record<string, unknown>): PassState {
  * Reads this account's pass from its `profiles` row. With no session (a
  * launch offline, before the token has refreshed) the cache stands; signing
  * out clears it (`startPass`). An error keeps the cache too.
+ *
+ * Resolves true once the row was read (an account with no row yet included),
+ * which tells the readers if the window changed; false with no session or on
+ * any error, when what `passWindow()` holds is the last answer, not this one.
+ * Never rejects.
  */
-export async function refreshPass(): Promise<void> {
+export async function refreshPass(): Promise<boolean> {
   const client = supabase;
-  if (client == null) return;
+  if (client == null) return false;
   try {
     const { data: session } = await client.auth.getSession();
     const user = session.session?.user;
-    if (user == null) return;
+    if (user == null) return false;
     const { data, error } = await client
       .from('profiles')
       .select('pass_starts_at, pass_expires_at, pass_bought_at, retention_offer_used_at, review_mode')
       .eq('user_id', user.id)
       .maybeSingle();
-    if (error != null) return;
+    if (error != null) return false;
     store(fromRow(data as Record<string, unknown> | null));
+    return true;
   } catch {
     // Offline: the cached answer stands.
+    return false;
   }
 }
 
@@ -375,10 +386,13 @@ export function startPass(): void {
   });
   AppState.addEventListener('change', (next) => {
     if (next !== 'active') return;
-    // A start or an end that passed while the app was away.
+    // A start or an end that passed while the app was away. The readers are
+    // told only if that changed access: every listener (the gate, the expiry
+    // reminder) runs on each emit, and most returns change nothing. A new
+    // window from the server is told by `refreshPass` itself.
     scheduleBoundary();
     noteEnded();
-    emit();
+    if (passAccess() !== emittedAccess) emit();
     void refreshPass();
   });
 }

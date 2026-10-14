@@ -98,6 +98,7 @@ export const PAGES_PT = {
 
   // ── Expired ──────────────────────────────────────────────────────────────
   'pages.expired.title': 'Sua assinatura terminou',
+  'pages.expired.titlePass': 'Seus 3 meses terminaram',
   'pages.expired.lede': {
     one: '{count} sessão. Veja o que mudou.',
     other: '{count} sessões. Veja o que mudou.',
@@ -111,6 +112,7 @@ export const PAGES_PT = {
   'pages.expired.busy': 'Um momento…',
   'pages.expired.plansTitle': 'Continue de onde parou',
   'pages.expired.renew': 'Renovar assinatura',
+  'pages.expired.keepGoing': 'Continuar',
   'pages.expired.notNow': 'Agora não',
   // ── The weekly plan ──────────────────────────────────────────────────────
   'pages.week.headerMeta': '{date} · Semana {n}',

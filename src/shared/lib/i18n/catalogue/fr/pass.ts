@@ -33,7 +33,9 @@ export const PASS_FR = {
     'Tes 3 mois commencent à la fin de la période déjà payée. Après l’achat, désactive le renouvellement automatique pour que ton abonnement ne soit pas facturé en plus. Tu peux toujours l’annuler quand tu veux.',
   'pass.done.until': 'Tes 3 mois de Walkito Plus sont prêts : ils durent jusqu’au {date}. Merci de rester.',
   'pass.done.plain': 'Tes 3 mois de Walkito Plus sont prêts. Merci de rester.',
+  'pass.done.stillRenews': 'Ton abonnement se renouvelle encore. Touche « Résilier quand même » ci-dessous pour désactiver le renouvellement automatique.',
 
+  'pass.settings.section': 'Walkito Plus',
   'pass.settings.row': 'Pass 3 mois · jusqu’au {date}',
   'pass.settings.queued': 'Pass 3 mois · à partir du {date}',
   'pass.settings.hint': 'Un seul paiement. Rien ne se renouvelle.',

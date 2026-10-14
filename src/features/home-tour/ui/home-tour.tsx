@@ -16,7 +16,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path } from 'react-native-svg';
 
 import { planSessionDone, retestResults, todayKey } from '@/entities/program';
-import { useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import { useReviewMode, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import {
   homeTourState,
   finishHomeTour,
@@ -119,14 +119,21 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
   // A tour armed by the build before the day-one session stored no stage.
   // Somebody whose session today is already on record goes on to the tour;
   // anybody else gets the two minutes first.
+  // The App Review account goes straight to the app: the reviewer is there to
+  // find the purchases (Settings), and a two-minute session and a tour in front
+  // of them is in the way.
+  const reviewMode = useReviewMode();
   useEffect(() => {
-    if (!armed) return;
+    if (armed && reviewMode) finishHomeTour();
+  }, [armed, reviewMode]);
+  useEffect(() => {
+    if (!armed || reviewMode) return;
     // Somebody with history (an account signed into on a new phone, its plan
     // restored) skips the first session: it would push their due test off
     // today and file two minutes over their real day.
     const returning = retestResults().length > 0 || planSessionDone(todayKey());
     if (stage == null || (stage === 'day1' && returning)) setHomeTourStage(returning ? 'tour' : 'day1');
-  }, [armed, stage]);
+  }, [armed, stage, reviewMode]);
 
   const gone = useGoneAfter(sessionOpen, SHEET_GONE_MS);
   const clear = visible && armed && gone;

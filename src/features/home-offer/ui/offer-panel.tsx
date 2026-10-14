@@ -26,7 +26,7 @@ import {
 } from '../model/use-offer-purchase';
 
 import { Reveal } from './arrive';
-import { DealCard } from './deal-card';
+import { DealCard, Steady } from './deal-card';
 import { BODY_MAX_MS, CONTENT_LEAD_MS, RETURN_LEAD_MS, TITLE_MAX_MS, entranceOf } from './entrance';
 import { PEEK_SHOWN, PeekingMascot, PresentingMascot } from './mascots';
 import { PillButton } from './pill-button';
@@ -63,7 +63,9 @@ const CONFETTI_FROM: readonly ConfettiOrigin[] = [
  * Arrives as one score (`entrance.ts`): the headline types itself, then the
  * line under it, then the card rises with the mascot, the button arrives, and
  * the small print fades in last. Everything is laid out from the first frame,
- * so nothing moves as the parts appear.
+ * so nothing moves as the parts appear; and the card and the small print are
+ * held at the tallest plan's (`Steady`), so nothing moves as the plans are
+ * switched either.
  *
  * No close button, by the founder's rule: the way on is buying or restoring.
  * Leaving the app ends the one-time trial and starts the comeback.
@@ -82,6 +84,7 @@ export function OfferPanel({
   pass = null,
   topInset,
   purchase,
+  analytics = true,
 }: {
   content: OfferContent;
   guard: MutableRefObject<OfferGuard>;
@@ -95,6 +98,10 @@ export function OfferPanel({
    * starts below the status bar, with its close button in that space. */
   topInset?: number;
   purchase?: OfferPurchaseOptions;
+  /** Whether a plan chosen here is counted as `home_offer_plan_selected`.
+   * False in the sheet opened from inside the app (`OfferSheet`), which is
+   * not the offer screen that event measures. */
+  analytics?: boolean;
 }) {
   const t = useT();
   const scheme = useColorScheme();
@@ -148,7 +155,7 @@ export function OfferPanel({
     const slot = view.tabs?.find((tab) => tab.key === key)?.key;
     if (slot == null) return;
     setSelected(slot);
-    track('home_offer_plan_selected', { plan: slot });
+    if (analytics) track('home_offer_plan_selected', { plan: slot });
   };
   const titleStyle = [styles.title, { color: colors.foreground }];
   const bodyStyle = [styles.body, { color: meter.label }];
@@ -220,7 +227,13 @@ export function OfferPanel({
             him below the chin (the trial) or the rim (the comeback). */}
         {deal != null ? (
           <Reveal at={entrance.card} style={styles.dealRoom}>
-            <DealCard words={deal} endsAt={view.endsAt} mascotAt={entrance.mascot} boingAt={entrance.present} />
+            <DealCard
+              words={deal}
+              deals={view.deals}
+              endsAt={view.endsAt}
+              mascotAt={entrance.mascot}
+              boingAt={entrance.present}
+            />
           </Reveal>
         ) : (
           <Reveal at={entrance.card} style={peek ? styles.peekRoom : undefined}>
@@ -251,11 +264,16 @@ export function OfferPanel({
         </View>
 
         <Reveal at={entrance.legal} kind="fade" gate style={styles.legal}>
-          {view.terms.map((line, index) => (
-            <Text key={index} style={[styles.terms, { color: meter.label }]} maxFontSizeMultiplier={1.4}>
-              {line}
-            </Text>
-          ))}
+          {/* Held at the longest plan's disclosure, as the card is at its
+              tallest: a plan with fewer lines leaves room under them rather
+              than letting the offer re-centre. */}
+          <Steady
+            variants={view.termsByPlan.map((lines, index) => (
+              <TermsLines key={index} lines={lines} color={meter.label} />
+            ))}
+            style={styles.termsBlock}>
+            <TermsLines lines={view.terms} color={meter.label} />
+          </Steady>
           {/* A touch here may open Terms or Privacy in the browser, which puts
               the app in the background: that is reading, not leaving, for this
               screen's listener and for `skip.ts`'s alike. */}
@@ -269,6 +287,19 @@ export function OfferPanel({
         </Reveal>
       </ScrollView>
     </View>
+  );
+}
+
+/** The disclosure under the button, one sentence (or two) a line. */
+function TermsLines({ lines, color }: { lines: readonly string[]; color: string }) {
+  return (
+    <>
+      {lines.map((line, index) => (
+        <Text key={index} style={[styles.terms, { color }]} maxFontSizeMultiplier={1.4}>
+          {line}
+        </Text>
+      ))}
+    </>
   );
 }
 
@@ -293,5 +324,6 @@ const styles = StyleSheet.create({
   promise: { ...fonts.medium(14), lineHeight: 19, textAlign: 'center' },
   notice: { ...fonts.semibold(14), lineHeight: 19, textAlign: 'center' },
   legal: { gap: 6 },
+  termsBlock: { gap: 6 },
   terms: { ...fonts.regular(11), lineHeight: 15, textAlign: 'center' },
 });

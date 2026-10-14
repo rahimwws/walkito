@@ -56,12 +56,15 @@ export function usePurchases(): void {
      * A subscription has no end to warn about: it renews, and the App Store
      * itself tells a subscriber about a price or a cancellation. So for every
      * subscriber with no pass `passEndsAt()` is null and this cancels any
-     * warning left over. For somebody who holds a pass, the end can move after
-     * purchase — the server's grant queues it behind a subscription, a second
-     * pass adds 90 days, a restore on a new device establishes it, a refund
-     * removes it — and each arrives as a store or pass change and nothing else,
-     * so this is the only place that sees all of them. `passEndsAt()` is the
-     * later of the store's record and the server's end.
+     * warning left over. It is null too for somebody whose access goes on past
+     * their pass (a subscription that renews, lifetime, access granted by
+     * account): nothing of theirs ends. For somebody who holds a pass, the end
+     * can move after purchase — the server's grant queues it behind a
+     * subscription, a second pass adds 90 days, a restore on a new device
+     * establishes it, a refund removes it — and each arrives as a store, pass
+     * or comp change and nothing else, so this is the only place that sees all
+     * of them. `passEndsAt()` is the later of the store's record and the
+     * server's end.
      *
      * Idempotent — `syncExpiryNotice` cancels the pending request before
      * scheduling, and the request has a fixed identifier — so running it again

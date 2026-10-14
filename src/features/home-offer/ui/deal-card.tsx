@@ -2,8 +2,8 @@ import ArrowRight02Icon from '@hugeicons/core-free-icons/ArrowRight02Icon';
 import PercentIcon from '@hugeicons/core-free-icons/PercentIcon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { memo } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { memo, useState, type ReactNode } from 'react';
+import { StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
 
 import { fonts } from '@/shared/config';
@@ -36,14 +36,23 @@ const LIP = 4;
  *
  * The space over the card is the mascot's (`LEDGE_SHOWN`); he is drawn first,
  * so the card covers all of him below its rim.
+ *
+ * One size whichever plan is chosen: the figures under the time left are held
+ * at the tallest of `deals` (`Steady`), and a shorter set (the 3-month pass,
+ * which has no discount to show) sits in the middle of that space. The card
+ * once grew and shrank by a third as the switch moved, and the whole offer
+ * re-centred with it.
  */
 export function DealCard({
   words,
+  deals = [],
   endsAt,
   mascotAt,
   boingAt,
 }: {
   words: DealWords;
+  /** The card for every plan on the switch (`OfferView.deals`). */
+  deals?: readonly DealWords[];
   endsAt: number | null;
   /** When the mascot starts up from behind the card (the card is solid). */
   mascotAt: number;
@@ -63,58 +72,133 @@ export function DealCard({
         contentStyle={styles.face}>
         <PercentField />
         {endsAt != null && <CountdownLine endsAt={endsAt} color={DEAL.label} />}
-        {words.off != null && (
-          <Text
-            style={[styles.off, { color: DEAL.green }]}
-            numberOfLines={1}
-            adjustsFontSizeToFit
-            minimumFontScale={0.5}
-            maxFontSizeMultiplier={1}>
-            {words.off}
-          </Text>
-        )}
-        <View style={[styles.pill, { backgroundColor: DEAL.pill }, words.off == null && styles.pillAlone]}>
-          <Text
-            style={[styles.pillText, { color: DEAL.pillInk }]}
-            numberOfLines={1}
-            adjustsFontSizeToFit
-            minimumFontScale={0.7}
-            maxFontSizeMultiplier={1.2}>
-            {words.pill}
-          </Text>
-        </View>
-        {words.promise != null && (
-          <View style={styles.promise}>
-            <HugeiconsIcon icon={Tick02Icon} size={18} color={DEAL.green} strokeWidth={2.4} />
-            <Text style={[styles.promiseText, { color: DEAL.green }]} maxFontSizeMultiplier={1.3}>
-              {words.promise}
-            </Text>
-          </View>
-        )}
-        {(words.was != null || words.caption != null) && (
-          <View style={styles.foot}>
-            {words.was != null && (
-              <View accessible accessibilityLabel={words.was.label} style={styles.was}>
-                <Text style={[styles.from, { color: DEAL.label }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-                  {words.was.from}
-                </Text>
-                <HugeiconsIcon icon={ArrowRight02Icon} size={17} color={DEAL.label} strokeWidth={2.2} />
-                <Text style={[styles.to, { color: DEAL.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
-                  {words.was.to}
-                </Text>
-              </View>
-            )}
-            {words.caption != null && (
-              <Text style={[styles.caption, { color: DEAL.caption }]} maxFontSizeMultiplier={1.4}>
-                {words.caption}
-              </Text>
-            )}
-          </View>
-        )}
+        <Steady variants={deals.map((each, index) => <Figures key={index} words={each} />)} style={styles.figures}>
+          <Figures words={words} />
+        </Steady>
       </Raised>
     </View>
   );
 }
+
+/** What the card says under the time left: the discount, the pill, the
+ * promise, the struck price and the smallest line, each only when it is true. */
+function Figures({ words }: { words: DealWords }) {
+  return (
+    <>
+      {words.off != null && (
+        <Text
+          style={[styles.off, { color: DEAL.green }]}
+          numberOfLines={1}
+          adjustsFontSizeToFit
+          minimumFontScale={0.5}
+          maxFontSizeMultiplier={1}>
+          {words.off}
+        </Text>
+      )}
+      <View style={[styles.pill, { backgroundColor: DEAL.pill }, words.off == null && styles.pillAlone]}>
+        <Text
+          style={[styles.pillText, { color: DEAL.pillInk }]}
+          numberOfLines={1}
+          adjustsFontSizeToFit
+          minimumFontScale={0.7}
+          maxFontSizeMultiplier={1.2}>
+          {words.pill}
+        </Text>
+      </View>
+      {words.promise != null && (
+        <View style={styles.promise}>
+          <HugeiconsIcon icon={Tick02Icon} size={18} color={DEAL.green} strokeWidth={2.4} />
+          <Text style={[styles.promiseText, { color: DEAL.green }]} maxFontSizeMultiplier={1.3}>
+            {words.promise}
+          </Text>
+        </View>
+      )}
+      {(words.was != null || words.caption != null) && (
+        <View style={styles.foot}>
+          {words.was != null && (
+            <View accessible accessibilityLabel={words.was.label} style={styles.was}>
+              <Text style={[styles.from, { color: DEAL.label }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+                {words.was.from}
+              </Text>
+              <HugeiconsIcon icon={ArrowRight02Icon} size={17} color={DEAL.label} strokeWidth={2.2} />
+              <Text style={[styles.to, { color: DEAL.ink }]} numberOfLines={1} maxFontSizeMultiplier={1.3}>
+                {words.was.to}
+              </Text>
+            </View>
+          )}
+          {words.caption != null && (
+            <Text style={[styles.caption, { color: DEAL.caption }]} maxFontSizeMultiplier={1.4}>
+              {words.caption}
+            </Text>
+          )}
+        </View>
+      )}
+    </>
+  );
+}
+
+/**
+ * A block of the offer that changes with the plan chosen, held at least as
+ * tall as the tallest thing it can show: its children, at a `minHeight` of
+ * the tallest of `variants` (what the same place says for each plan on the
+ * switch).
+ *
+ * Each variant is laid out once more, out of sight and out of the
+ * accessibility tree, in the same style and at the same width, and measured.
+ * So switching plans changes what is in the block and never its height:
+ * nothing under it moves, and the offer's centred scroll never re-centres.
+ * Layout only, no animation: it holds still because nothing moves. Under two
+ * variants it is a plain view.
+ *
+ * `style` is the block's own layout (alignment, gap) and is given to every
+ * copy, so it must carry no margin.
+ */
+export function Steady({
+  variants,
+  style,
+  children,
+}: {
+  variants: readonly ReactNode[];
+  style?: StyleProp<ViewStyle>;
+  children: ReactNode;
+}) {
+  /** Each variant's height, by its place in `variants`; a hole until measured. */
+  const [heights, setHeights] = useState<readonly number[]>([]);
+  const measured = variants.length > 1;
+  const tallest = measured
+    ? heights.slice(0, variants.length).reduce((max, height) => (height > max ? height : max), 0)
+    : 0;
+  return (
+    <View style={[style, tallest > 0 && { minHeight: tallest }]}>
+      {measured &&
+        variants.map((variant, index) => (
+          <View
+            key={index}
+            pointerEvents="none"
+            accessibilityElementsHidden
+            importantForAccessibility="no-hide-descendants"
+            style={[style, steadyStyles.copy]}
+            onLayout={(event) => {
+              const height = event.nativeEvent.layout.height;
+              setHeights((prev) => {
+                if (prev[index] === height) return prev;
+                const next = prev.slice();
+                next[index] = height;
+                return next;
+              });
+            }}>
+            {variant}
+          </View>
+        ))}
+      {children}
+    </View>
+  );
+}
+
+const steadyStyles = StyleSheet.create({
+  /** Laid out where the block is, at its width, and never seen. */
+  copy: { position: 'absolute', top: 0, left: 0, right: 0, opacity: 0 },
+});
 
 /** Hugeicons' own "%" (stroke-rounded, as every icon in the app), as paths. */
 const PERCENT_ENTRIES: readonly (readonly [string, Readonly<Record<string, string | number>>])[] = PercentIcon;
@@ -183,6 +267,9 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     paddingHorizontal: 20,
   },
+  /** The figures under the time left, across the card, a shorter set in the
+   * middle of the space the tallest takes (`Steady`). */
+  figures: { alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center' },
   /** The card's full width, so a long figure shrinks to fit rather than
    * running out of it. */
   off: { ...fonts.heavy(60, -1.8), lineHeight: 68, marginTop: 2, alignSelf: 'stretch', textAlign: 'center' },

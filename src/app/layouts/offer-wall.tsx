@@ -29,22 +29,28 @@ const PRESENT_AFTER_MS = 360;
  *
  * The limited offer's 3-month pass is bought through the pass checkout, whose
  * sheets are mounted here, inside this modal, so they rise over the offer.
+ * The wall stays up while its checkout is busy: a pass bought opens the app
+ * at once (the store's own record), which takes `visible` away in the middle
+ * of "Setting up your 3 months", "Your 3 months are set" and the store's page
+ * over them, all of which this modal holds.
  */
 export function OfferWall({ visible }: { visible: boolean }) {
   const scheme = useColorScheme();
   const checkout = usePassCheckout();
   const pass: PassSale = {
     buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
+    signInToRestore: checkout.signInToRestore,
     busy: checkout.busy,
     notice: checkout.notice,
   };
-  const [mounted, setMounted] = useState(visible);
+  const shown = visible || checkout.busy;
+  const [mounted, setMounted] = useState(shown);
   const progress = useSharedValue(0);
   /** Up from the first frame: a launch onto the wall, not the tour's end. */
-  const atLaunch = useRef(visible);
+  const atLaunch = useRef(shown);
 
   useEffect(() => {
-    if (!visible) {
+    if (!shown) {
       atLaunch.current = false;
       setMounted(false);
       progress.value = 0;
@@ -72,7 +78,7 @@ export function OfferWall({ visible }: { visible: boolean }) {
       clearTimeout(timer);
       cancelAnimationFrame(frame);
     };
-  }, [visible, progress]);
+  }, [shown, progress]);
 
   const fade = useAnimatedStyle(() => ({ opacity: progress.value }));
 

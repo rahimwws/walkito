@@ -44,16 +44,38 @@ export type CancelOptions = {
 
 export const NO_OPTIONS: CancelOptions = { freeMonth: null, playPause: false, pass: null };
 
-/** Past this the flow stops waiting on the store and offers what needs none. */
+/** Past this an ask is given up on and offers nothing. Each ask has its own,
+ * so a slow one (Apple signing the free month) cannot take the other with it. */
 const LOAD_TIMEOUT_MS = 6000;
+
+/** `work`'s answer, or `fallback` once `ms` have gone by or it rejected. */
+function within<T>(work: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return new Promise<T>((resolve) => {
+    const timer = setTimeout(() => resolve(fallback), ms);
+    work.then(
+      (value) => {
+        clearTimeout(timer);
+        resolve(value);
+      },
+      () => {
+        clearTimeout(timer);
+        resolve(fallback);
+      },
+    );
+  });
+}
 
 /**
  * Asks the store for what may be offered to the subscriber in `held`, and the
  * server for the account's passes first (the budget offer is decided by
  * them). Never rejects: an unreachable store answers with nothing to offer.
  *
- * `review`: the App Review account, to whom the budget offer is always made
- * (`budgetPassAllowed`).
+ * The budget offer is made only on the server's fresh word: a read that did
+ * not reach it leaves the last answer cached, which may be another account's
+ * or a year out of date, and the cheaper pass is not to be sold on that.
+ * `review`, the App Review account, gets it regardless (`budgetPassAllowed`).
+ * The free month and the budget pass are asked for side by side, each with
+ * its own `LOAD_TIMEOUT_MS`.
  */
 export async function loadCancelOptions(
   held: Subscription,
@@ -63,34 +85,29 @@ export async function loadCancelOptions(
   const os = Platform.OS;
   const allowed = retentionAllowed(held, { comp: compAccess(now), takenAt: retentionTakenAt(), now, os });
   const pause = breakOffer(held, allowed, os);
-  const fallback: CancelOptions = { ...NO_OPTIONS, playPause: pause === 'play_pause' };
 
-  const ask = Promise.all([
-    pause === 'free_month' ? purchases.retentionOffer(RETENTION_OFFERS.freeMonth, held.productId) : Promise.resolve(null),
-    // The server's word on the account's passes, fresh, before it decides.
-    refreshPass().then(() =>
-      budgetPassAllowed(held, passWindow(), now, review)
-        ? purchases.offering(OFFERINGS.retentionBudget).catch(() => null)
-        : null,
-    ),
-  ]).then(
-    ([freeMonth, budget]): CancelOptions => ({
-      freeMonth: freeMonth != null && isFreeMonth(freeMonth) ? freeMonth : null,
-      playPause: pause === 'play_pause',
-      pass: budget?.pass ?? null,
+  const freeMonthAsk: Promise<RetentionOffer | null> =
+    pause === 'free_month'
+      ? within(purchases.retentionOffer(RETENTION_OFFERS.freeMonth, held.productId), LOAD_TIMEOUT_MS, null)
+      : Promise.resolve(null);
+
+  // The server's word on the account's passes, fresh, before it decides.
+  const budgetAsk: Promise<Plan | null> = within(
+    refreshPass().then(async (ok) => {
+      if (!(ok || review) || !budgetPassAllowed(held, passWindow(), now, review)) return null;
+      const budget = await purchases.offering(OFFERINGS.retentionBudget).catch(() => null);
+      return budget?.pass ?? null;
     }),
+    LOAD_TIMEOUT_MS,
+    null,
   );
 
-  let giveUp: (options: CancelOptions) => void = () => {};
-  const late = new Promise<CancelOptions>((resolve) => {
-    giveUp = resolve;
-  });
-  const timer = setTimeout(() => giveUp(fallback), LOAD_TIMEOUT_MS);
-  try {
-    return await Promise.race([ask.catch(() => fallback), late]);
-  } finally {
-    clearTimeout(timer);
-  }
+  const [freeMonth, pass] = await Promise.all([freeMonthAsk, budgetAsk]);
+  return {
+    freeMonth: freeMonth != null && isFreeMonth(freeMonth) ? freeMonth : null,
+    playPause: pause === 'play_pause',
+    pass,
+  };
 }
 
 /**

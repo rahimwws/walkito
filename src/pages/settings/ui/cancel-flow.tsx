@@ -18,8 +18,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SafetySheet } from '@/features/safety-check';
 import { planSettings, setPlanSettings } from '@/entities/program';
 import {
+  budgetPassAllowed,
   markRetentionTaken,
   openPlayPause,
+  passWindow,
   purchases,
   reviewMode,
   type PurchaseResult,
@@ -273,6 +275,7 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
       // has nothing to say in the place of cancelling: the store's own page,
       // at once. The review account always sees the screen.
       if (reason === 'budget' && answered.pass == null && !quiet && !reviewMode()) {
+        track('cancel_anyway', { reason });
         onCancelAnyway();
         return;
       }
@@ -307,7 +310,16 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
    * The 3-month pass, through the checkout: an account first if there is
    * none, the store, the server's days, then "Your 3 months are set" with the
    * way to turn this subscription's renewal off. "All set" follows here once
-   * the checkout is over.
+   * the checkout is over, and says so if the subscription was left renewing.
+   *
+   * An account signed in to inside the checkout is asked again before the
+   * store's sheet (its passes read afresh): one that has used the retention
+   * price, or bought a pass, in the last year is not sold it, and goes to the
+   * store's own page, as the budget answer does for anybody it is not for.
+   *
+   * The review account holds no store subscription, so the stand-in it
+   * manages here is what "Your 3 months are set" speaks of, and the screen
+   * can be reached.
    */
   const takePass = (reason: CancelReason, from: CancelOptions) => {
     const plan = from.pass;
@@ -317,13 +329,23 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
     }
     checkout.start(plan, {
       placement: 'cancel_budget',
+      renewing: reviewMode() ? held : undefined,
+      recheck: quiet ? undefined : () => budgetPassAllowed(held, passWindow(), Date.now(), reviewMode()),
       onPurchased: () => {
         // A retention price taken: no free month on this phone for a year.
         if (!quiet) markRetentionTaken();
         accepted(reason, 'pass');
       },
+      onAborted: () => {
+        if (!quiet) track('cancel_anyway', { reason });
+        onCancelAnyway();
+      },
       onDone: (settled) => {
-        go({ kind: 'done', reason, outcome: { kind: 'pass', until: settled.window?.expiresAt ?? null } });
+        go({
+          kind: 'done',
+          reason,
+          outcome: { kind: 'pass', until: settled.window?.expiresAt ?? null, renews: settled.renewing != null },
+        });
       },
     });
   };
@@ -357,6 +379,15 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           setProblem(t('purchase.unavailable'));
         }
         // Cancelled: Apple's sheet was closed, and the person knows.
+      });
+    },
+    restore: () => {
+      if (busy != null || checkout.busy) return;
+      setProblem(null);
+      void purchases.restore().then((result) => {
+        if (result.status === 'failed') setProblem(t('offer.restoreFailed'));
+        else if (result.status === 'nothing-found') setProblem(t('offer.nothingRestored'));
+        // Restored, or no store to ask: nothing to say over the offer.
       });
     },
     playPause: () => {

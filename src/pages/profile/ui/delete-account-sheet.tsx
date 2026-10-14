@@ -12,7 +12,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useEntitled } from '@/entities/purchase';
+import { usePassWindow, useSubscription } from '@/entities/purchase';
 import { deleteAccount, resetOnboarding } from '@/entities/session';
 import { clearClips } from '@/widgets/session-player';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
@@ -56,10 +56,17 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
-  /** A subscriber is told that deleting the account leaves the subscription
-   * billing, and where to cancel it — Apple's guidance for apps that sell
-   * auto-renewing subscriptions. Somebody with nothing active is not. */
-  const subscribed = useEntitled();
+  /** Somebody whose subscription renews is told that deleting the account
+   * leaves it billing, and where to cancel it: Apple's guidance for apps that
+   * sell auto-renewing subscriptions. Not for a lifetime purchase, a
+   * subscription already set not to renew, or a 3-month pass, none of which
+   * will charge again; and not while the store is still being asked. */
+  const held = useSubscription();
+  const renewing = held?.kind === 'subscription' && held.willRenew;
+  /** A pass running, or queued behind a subscription: its days are counted on
+   * the account, so they go with it, and the sheet says so. */
+  const pass = usePassWindow();
+  const passKept = pass.expiresAt != null && pass.expiresAt > Date.now();
 
   const [mounted, setMounted] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -151,7 +158,11 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
 
           <Text style={[styles.blurb, { color: meter.caption }]}>{t('profile.deleteBlurb')}</Text>
 
-          {subscribed && (
+          {passKept && (
+            <Text style={[styles.blurb, { color: meter.caption }]}>{t('profile.deletePass')}</Text>
+          )}
+
+          {renewing && (
             <>
               <Text style={[styles.blurb, { color: meter.caption }]}>
                 {Platform.OS === 'android'

@@ -90,8 +90,12 @@ export function subscriptionActive(info: CustomerFacts): boolean {
  * whose receipts have not finished syncing, say — reading only the list would
  * return null, and a permanently granted entitlement would be left undated.
  * That is the precise shape of "an expired pass unlocks the app for ever".
+ *
+ * Always `PASS_ACCESS_DAYS`, and nothing lengthens it: invite days once did,
+ * and no code or invite may unlock or extend access (AGENTS.md, "Codes: only
+ * Apple's").
  */
-export function passEnd(info: CustomerFacts, bonusDays = 0): Date | null {
+export function passEnd(info: CustomerFacts): Date | null {
   const stamps: number[] = [];
 
   for (const t of info.nonSubscriptionTransactions) {
@@ -108,10 +112,7 @@ export function passEnd(info: CustomerFacts, bonusDays = 0): Date | null {
   }
 
   if (stamps.length === 0) return null;
-  // Bonus days — free days from invites — extend a pass and never create one:
-  // with no purchase above, this has already returned null.
-  const days = PASS_ACCESS_DAYS + Math.max(0, bonusDays);
-  return new Date(Math.max(...stamps) + days * 86_400_000);
+  return new Date(Math.max(...stamps) + PASS_ACCESS_DAYS * 86_400_000);
 }
 
 /**
@@ -155,7 +156,7 @@ export type AccessVerdict = {
  *    app for ever.
  * 4. A pass entitlement nothing dates is refused rather than honoured.
  */
-export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): AccessVerdict {
+export function decideAccess(info: CustomerFacts, now: number): AccessVerdict {
   if (subscriptionActive(info)) return { entitled: true, reason: 'subscription' };
 
   const granting = Object.entries(info.entitlements.active).filter(
@@ -166,7 +167,7 @@ export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): A
     return { entitled: true, reason: named ? 'entitlement' : 'other-entitlement' };
   }
 
-  const ends = passEnd(info, bonusDays);
+  const ends = passEnd(info);
   if (ends != null) {
     return now < ends.getTime()
       ? { entitled: true, reason: 'pass-active' }
@@ -195,10 +196,10 @@ export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): A
  * app can date. A refund leaves the trace too, which is right — the expiry
  * screen is about the history they have in the app, not about the money.
  */
-export function hadAccess(info: CustomerFacts, bonusDays = 0): boolean {
+export function hadAccess(info: CustomerFacts): boolean {
   if (Object.keys(info.entitlements.all).length > 0) return true;
   if (info.allPurchasedProductIdentifiers.length > 0) return true;
-  return passEnd(info, bonusDays) != null;
+  return passEnd(info) != null;
 }
 
 /** The entitlement identifier the dashboard is expected to use, re-exported so

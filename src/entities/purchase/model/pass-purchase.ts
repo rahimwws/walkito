@@ -16,6 +16,44 @@ import { purchases } from './store';
  * without them: the store's record already opens the app. */
 export const PASS_GRANT_TIMEOUT_MS = 10_000;
 
+/** How long the store is given to say afresh whether a subscription still
+ * renews, before its last answer is taken instead. */
+const FRESH_SUBSCRIPTION_MS = 3_000;
+/** How long that last answer is waited for. With both, "Setting up" never
+ * outlives the grant's wait by more than 3.5 s. */
+const LAST_SUBSCRIPTION_MS = 500;
+
+const TIMED_OUT = 'timed-out';
+
+/** A store answer, or `TIMED_OUT` after `ms`. A rejection reads as nothing held. */
+async function within(
+  ask: Promise<Subscription | null>,
+  ms: number,
+): Promise<Subscription | null | typeof TIMED_OUT> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const late = new Promise<typeof TIMED_OUT>((resolve) => {
+    timer = setTimeout(() => resolve(TIMED_OUT), ms);
+  });
+  try {
+    return await Promise.race([ask.catch(() => null), late]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * The subscription held, asked afresh for `FRESH_SUBSCRIPTION_MS`, then the
+ * store's last answer, then nothing: a store that does not answer must not
+ * hold the checkout on "Setting up". Nothing means no renewal warning, the
+ * reading that asks nothing of the person.
+ */
+async function heldSubscription(): Promise<Subscription | null> {
+  const fresh = await within(purchases.subscription(true), FRESH_SUBSCRIPTION_MS);
+  if (fresh !== TIMED_OUT) return fresh;
+  const last = await within(purchases.subscription(false), LAST_SUBSCRIPTION_MS);
+  return last === TIMED_OUT ? null : last;
+}
+
 /** What `settlePass` found once the purchase had gone through. */
 export type PassSettled = {
   /** The server's window, or null when it had not answered in time. */
@@ -42,12 +80,13 @@ export async function buyPass(plan: Plan, placement: PassPlacement): Promise<Pur
 /**
  * After the store said yes: waits for the server's days (until the window
  * ends later than `previousExpiresAt`, `PASS_GRANT_TIMEOUT_MS` at most), then
- * asks the store afresh whether a subscription still renews. Never rejects.
+ * asks the store whether a subscription still renews (`heldSubscription`, a
+ * few seconds at most). Never rejects.
  */
 export async function settlePass(previousExpiresAt: number | null): Promise<PassSettled> {
   const rcAppUserId = await purchases.appUserId().catch(() => null);
   const window = await awaitPassGrant(previousExpiresAt, PASS_GRANT_TIMEOUT_MS, rcAppUserId).catch(() => null);
-  const held = await purchases.subscription(true).catch(() => null);
+  const held = await heldSubscription();
   return {
     window,
     renewing: held != null && held.kind === 'subscription' && held.willRenew ? held : null,

@@ -14,6 +14,7 @@ import {
   planOn,
   purchases,
   startBrowsingLapsed,
+  usePassWindow,
   type Plan,
   type PaywallPeriod,
   type Shelf,
@@ -87,6 +88,17 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   // them while this screen is open, and re-deriving them on every render would
   // re-scan the whole log for nothing.
   const [summary] = useState<ProgramSummary>(() => programSummary());
+
+  /**
+   * What ended was a 3-month pass, which never was a subscription: the title
+   * and the button say "3 months" and "Keep going", never "subscription" or
+   * "renew". The pass's end is the evidence, since its days end last: a pass
+   * bought beside a subscription is queued behind it (`pass.ts`). The entity
+   * keeps no record of a subscription that has lapsed, so somebody who
+   * subscribed after a pass ran out reads the pass's words too.
+   */
+  const pass = usePassWindow();
+  const passEnded = pass.expiresAt != null && pass.expiresAt <= Date.now();
 
   // Never the win-back offering: that belongs to somebody who walked away
   // from a first purchase, and quoting it to a customer who has paid and
@@ -348,7 +360,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
         contentContainerStyle={[styles.scroll, { paddingTop: insets.top + 32, paddingBottom: 24 }]}
         showsVerticalScrollIndicator={false}>
         <View style={styles.head}>
-          <Text style={[styles.title, styles.headTitle, { color: meter.ink }]}>{t('pages.expired.title')}</Text>
+          <Text style={[styles.title, styles.headTitle, { color: meter.ink }]}>
+            {passEnded ? t('pages.expired.titlePass') : t('pages.expired.title')}
+          </Text>
           {/* Decoration: hidden from anyone listening. */}
           <View accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={styles.figure}>
             <Mascot
@@ -438,7 +452,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
         {ctaLine != null ? <Text style={[styles.ctaTerms, { color: meter.label }]}>{ctaLine}</Text> : null}
 
         <PrimaryButton
-          label={busy ? t('pages.expired.busy') : t('pages.expired.renew')}
+          label={
+            busy ? t('pages.expired.busy') : passEnded ? t('pages.expired.keepGoing') : t('pages.expired.renew')
+          }
           onPress={() => void buy()}
           disabled={busy}
         />

@@ -59,9 +59,6 @@ import {
 
 /** The last verdict, on this device. */
 const ENTITLED_KEY = 'purchase/entitled';
-/** The last invite bonus handed in, so a cold start dates a legacy pass
- * correctly before the invite server has been asked again. */
-const BONUS_KEY = 'purchase/bonus-days';
 /** Whether this customer has ever held access, so the first frame can tell a
  * lapsed subscriber from a new one — see `hadAccess` on the contract. */
 const HAD_ACCESS_KEY = 'purchase/had-access';
@@ -105,10 +102,11 @@ let had = kv.getBoolean(HAD_ACCESS_KEY) ?? false;
 /** Mirrors `passEnd` from the last customer info, so the contract's
  * synchronous getter has an answer without a round trip. */
 let lastEnd: Date | null = null;
-/** Free days from invites — see `setBonusDays` on the contract. */
-let bonusDays = kv.getNumber(BONUS_KEY) ?? 0;
-/** The last customer info, so a change in the bonus can be re-judged without
- * a round trip to the store. */
+/** Mirrors `storeUntilOf` from the last customer info, for
+ * `storeAccessOutlasts`. Null until the store has answered. */
+let storeUntil: number | null = null;
+/** The last customer info, so `subscription()` has an answer when the store
+ * cannot be reached. */
 let lastInfo: CustomerInfo | null = null;
 const listeners = new Set<() => void>();
 
@@ -128,20 +126,28 @@ function announce(info: CustomerInfo) {
   lastInfo = info;
   flagSandbox(info);
   void relinkAppsFlyer();
-  const end = passEndOf(info, bonusDays);
+  // Dated from the store's record alone. No code, invite or bonus lengthens a
+  // pass (AGENTS.md, "Codes: only Apple's").
+  const end = passEndOf(info);
   // A moved end date is news even when access did not flip: the pass expiry
-  // reminder is scheduled from it, and a friend's free days have to push that
-  // reminder back rather than leave it firing on the old date.
+  // reminder is scheduled from it.
   const endMoved = end?.getTime() !== lastEnd?.getTime();
   lastEnd = end;
+  // So is a change in how long the store's own access runs: the reminder is
+  // not laid for somebody whose subscription goes on past the pass
+  // (`storeAccessOutlasts`). For a subscriber the first answer of a launch is
+  // news here too: until it came, nothing said their access outlasts a pass.
+  const until = storeUntilOf(info);
+  const untilMoved = until !== storeUntil;
+  storeUntil = until;
   const next = entitledIn(info);
-  const nextHad = hadAccessOf(info, bonusDays);
+  const nextHad = hadAccessOf(info);
   // Written on every answer, including one that agrees with the cache: the
   // early return below skips the notify, not the persistence, and a verdict
   // that never changed still has to survive the next cold start.
   kv.set(ENTITLED_KEY, next);
   kv.set(HAD_ACCESS_KEY, nextHad);
-  if (next === active && nextHad === had && !endMoved) return;
+  if (next === active && nextHad === had && !endMoved && !untilMoved) return;
   active = next;
   had = nextHad;
   listeners.forEach((fire) => fire());
@@ -175,7 +181,7 @@ function flagSandbox(info: CustomerInfo): void {
  * satisfies `CustomerFacts`, so it passes straight through.
  */
 function entitledIn(info: CustomerInfo): boolean {
-  const verdict = decideAccess(info, Date.now(), bonusDays);
+  const verdict = decideAccess(info, Date.now());
 
   if (__DEV__ && verdict.reason === 'other-entitlement') {
     console.warn(
@@ -221,6 +227,51 @@ function entitledIn(info: CustomerInfo): boolean {
   }
 
   return verdict.entitled;
+}
+
+/**
+ * When the store's own access ends, a pass aside, in epoch ms: `Infinity` for
+ * access that goes on by itself (a subscription that renews, a lifetime
+ * purchase, a grant from the dashboard with no end), the latest end of what is
+ * held otherwise (a subscription whose renewal was turned off, a grant that
+ * ends), and null when the store grants nothing but a pass.
+ *
+ * Only for access `decideAccess` grants on a subscription or an entitlement.
+ * Anything live whose end cannot be read (a subscription the store reports
+ * with no entitlement and no record of its own) is taken to go on: the
+ * reminder this guards would otherwise tell a subscriber their access ends.
+ */
+function storeUntilOf(info: CustomerInfo): number | null {
+  const { reason } = decideAccess(info, Date.now());
+  if (reason !== 'subscription' && reason !== 'entitlement' && reason !== 'other-entitlement') return null;
+  const ends: number[] = [];
+  for (const ent of Object.values(info.entitlements.active)) {
+    if (isPassProduct(ent.productIdentifier)) continue;
+    if (ent.willRenew || ent.expirationDateMillis == null) return Infinity;
+    ends.push(ent.expirationDateMillis);
+  }
+  for (const id of info.activeSubscriptions) {
+    if (isPassProduct(id)) continue;
+    const held = info.subscriptionsByProductIdentifier?.[id];
+    const ms = held?.expiresDate == null ? Number.NaN : Date.parse(held.expiresDate);
+    if (held == null || held.willRenew || !Number.isFinite(ms)) return Infinity;
+    ends.push(ms);
+  }
+  return ends.length > 0 ? Math.max(...ends) : Infinity;
+}
+
+/**
+ * Whether the store's own access, a pass aside, goes on past `end`: a
+ * subscription that renews, a lifetime purchase, or a grant that outlasts it.
+ * Synchronous, from the last customer info. False until the store has
+ * answered, and the first answer notifies (`announce`), so a reminder laid
+ * before it is taken back.
+ *
+ * Read by `withPass` in `store.ts`: the 7-day pass expiry reminder is not laid
+ * for somebody whose access does not end with the pass.
+ */
+export function storeAccessOutlasts(end: Date): boolean {
+  return storeUntil != null && storeUntil > end.getTime();
 }
 
 /**
@@ -513,19 +564,27 @@ const reportedV2 = new Set<string>();
  *
  * On Google Play `v2` holds the pass alone (its other products are App Store
  * ones), so a cut can be a pass and nothing else; `offering()` then reads the
- * plans by name and keeps this pass beside them.
+ * plans by name and keeps this pass beside them, or answers null when there
+ * is no offering by that name.
+ *
+ * **A pass only ever in the pass slot**, as in `slot`: a package typed into
+ * the wrong place in the dashboard must not sell 90 days as a plan.
  */
 function v2Slots(v2: PurchasesOffering, identifier: string): Slots | null {
   const wanted = V2_SHELVES[identifier];
   if (wanted == null) return null;
   const byId = (id: string | undefined): PurchasesPackage | null =>
     id == null ? null : (v2.availablePackages.find((pkg) => pkg.identifier === id) ?? null);
+  const billed = (id: string | undefined): PurchasesPackage | null => {
+    const pkg = byId(id);
+    return pkg != null && !isPassProduct(pkg.product.identifier) ? pkg : null;
+  };
   const pass = byId(wanted.pass);
   const slots: Slots = {
-    annual: byId(wanted.annual),
-    monthly: byId(wanted.monthly),
-    weekly: byId(wanted.weekly),
-    lifetime: byId(wanted.lifetime),
+    annual: billed(wanted.annual),
+    monthly: billed(wanted.monthly),
+    weekly: billed(wanted.weekly),
+    lifetime: billed(wanted.lifetime),
     pass: pass != null && isPassProduct(pass.product.identifier) ? pass : null,
   };
   if (__DEV__ && Platform.OS === 'ios') {
@@ -993,13 +1052,15 @@ export const revenueCatStore: Store = {
     const v2Pass = cut?.pass ?? null;
     // By name first, then whatever the dashboard marks current. The fallback
     // matters for `default`, which RevenueCat exposes as `current` rather than
-    // under that key in some dashboard configurations.
-    const found =
-      all.all[identifier] ?? (identifier === OFFERINGS.standard ? all.current : null);
-    if (found == null) {
-      if (v2Pass == null) return null;
-      return toOffering(identifier, { annual: null, monthly: null, weekly: null, lifetime: null, pass: v2Pass });
-    }
+    // under that key in some dashboard configurations. Never `v2` itself: read
+    // whole, its yearly trial, offer and standard annual would be one shelf,
+    // and `slot` could sell any of them as the standard plan.
+    const current = all.current?.identifier === OFFERING_V2 ? null : all.current;
+    const found = all.all[identifier] ?? (identifier === OFFERINGS.standard ? current : null);
+    // No offering by that name is null, whatever `v2`'s pass holds: the
+    // caller falls back to the standard plans on null, and a pass alone is
+    // not an offering.
+    if (found == null) return null;
     const slots = slotsOf(found, identifier);
     return toOffering(found.identifier, { ...slots, pass: slots.pass ?? v2Pass });
   },
@@ -1246,15 +1307,9 @@ export const revenueCatStore: Store = {
 
   passEndsAt: () => lastEnd,
 
-  setBonusDays(days) {
-    const next = Math.max(0, Math.floor(days));
-    if (!Number.isFinite(next) || next === bonusDays) return;
-    bonusDays = next;
-    kv.set(BONUS_KEY, next);
-    // Re-judged on the spot against what the store last said: for a legacy
-    // pass, a friend joining can bring back access that had just run out. For a
-    // subscriber nothing moves — the days only ever date a pass — so this is a
-    // cheap no-op there.
-    if (lastInfo != null) announce(lastInfo);
-  },
+  // Kept for the contract, and does nothing. Invite days once lengthened a
+  // pass on this phone; no code or invite may unlock or lengthen access
+  // (AGENTS.md, "Codes: only Apple's"), so a pass is dated from the store's
+  // record and the server's grant alone.
+  setBonusDays() {},
 };

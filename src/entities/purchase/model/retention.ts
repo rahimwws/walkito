@@ -77,8 +77,10 @@ export type PassHistory = {
  * Only to somebody with a subscription that still renews (there is a
  * cancellation to stand in for), who has not used the retention price in the
  * last year, and has not bought a pass at all in the last year: the cheaper
- * pass is not a way to keep buying 90 days at a discount. Anybody else picking
- * that answer goes straight to the store's own page.
+ * pass is not a way to keep buying 90 days at a discount. Never to a family
+ * member, as with the free month: they did not buy the subscription and
+ * cannot cancel it. Anybody else picking that answer goes straight to the
+ * store's own page.
  *
  * In review mode (the App Review account, whose access is granted by account
  * and who holds no store subscription) it is always offered, so the screen can
@@ -92,6 +94,7 @@ export function budgetPassAllowed(
 ): boolean {
   if (reviewMode) return true;
   if (held == null || held.kind !== 'subscription' || !held.willRenew) return false;
+  if (held.familyShared) return false;
   const lately = (at: number | null) => at != null && now - at < RETENTION_GAP_DAYS * DAY_MS;
   return !lately(history.retentionOfferUsedAt) && !lately(history.boughtAt);
 }

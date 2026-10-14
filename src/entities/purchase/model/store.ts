@@ -134,6 +134,13 @@ const simulator: Store = {
   entitled: () => true,
 };
 
+/**
+ * Whether the store's own access, a pass aside, goes on past a date: the
+ * RevenueCat adapter's `storeAccessOutlasts`, set by `pick` when that adapter
+ * is the store. Never true without it.
+ */
+let storeOutlasts: (end: Date) => boolean = () => false;
+
 function pick(): Store {
   // The real store first, even on the simulator. With a Test Store key the
   // whole flow works there — sheet, purchase, entitlement — and exercising the
@@ -148,7 +155,8 @@ function pick(): Store {
     // store" rather than crash on launch — the difference between a broken
     // paywall and a broken app.
     try {
-      const { revenueCatStore } = require('./revenuecat') as typeof import('./revenuecat');
+      const { revenueCatStore, storeAccessOutlasts } = require('./revenuecat') as typeof import('./revenuecat');
+      storeOutlasts = storeAccessOutlasts;
       // The real store, on a simulator too.
       //
       // This used to hand the simulator an unlocked copy, so the paywall could
@@ -246,7 +254,11 @@ function withSamplePrices(store: Store): Store {
  *   pass that ran out meets the expiry screen, not the paywall.
  * - `passEndsAt`: the later of the store's record and the server's end (a
  *   pass queued behind a subscription ends later than its purchase says).
- *   The 7-day expiry push is laid from it.
+ *   The 7-day expiry push is laid from it, so it is null when access does not
+ *   end with the pass: a subscription that renews past it, a lifetime
+ *   purchase or a grant that outlasts it (`storeAccessOutlasts`), or access
+ *   granted by account (`compAccess`). A subscription whose renewal is off and
+ *   that ends first leaves the end standing: the pass is then what is left.
  * - `restore`: asks the server too (`pass-sync`), so a pass bought on another
  *   phone, or one the webhook missed, arrives with the restore.
  */
@@ -258,9 +270,12 @@ function withPass(store: Store): Store {
     passEndsAt: () => {
       const local = store.passEndsAt();
       const server = passServerEnd();
-      if (local == null) return server;
-      if (server == null) return local;
-      return server.getTime() > local.getTime() ? server : local;
+      const end = local == null || (server != null && server.getTime() > local.getTime()) ? server : local;
+      if (end == null) return null;
+      // Comp is read here rather than in `withComp`, which sits outside this
+      // one; its changes reach the reminder through `withComp`'s `subscribe`.
+      if (compAccess() || storeOutlasts(end)) return null;
+      return end;
     },
     restore: async () => {
       const result = await store.restore();

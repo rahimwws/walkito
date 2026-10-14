@@ -102,6 +102,7 @@ export const PAGES_FR = {
 
   // ── Expired ──────────────────────────────────────────────────────────────
   'pages.expired.title': 'Ton abonnement a pris fin',
+  'pages.expired.titlePass': 'Tes 3 mois ont pris fin',
   'pages.expired.lede': {
     one: '{count} séance. Voici ce qui a changé.',
     other: '{count} séances. Voici ce qui a changé.',
@@ -115,6 +116,7 @@ export const PAGES_FR = {
   'pages.expired.busy': 'Un instant…',
   'pages.expired.plansTitle': 'Reprends là où tu en étais',
   'pages.expired.renew': 'Renouveler l’abonnement',
+  'pages.expired.keepGoing': 'Continuer',
   'pages.expired.notNow': 'Pas maintenant',
   'pages.week.headerMeta': '{date} · Semaine {n}',
   'pages.week.seam': 'Cette semaine · {goal}',

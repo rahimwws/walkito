@@ -89,10 +89,18 @@ const STEP_OUT = FadeOut.duration(300).easing(Easing.out(Easing.quad)).reduceMot
  */
 export function OfferPage() {
   const skipped = usePaywallSkipped();
-  // The limited offer's 3-month pass, bought through the pass checkout.
+  // The limited offer's 3-month pass, bought through the pass checkout. Its
+  // sheets cannot outlive this route, and need not: the root guards take the
+  // route away the moment the paywall is skipped (the offers then stand over
+  // Home, in `OfferWall`, which keeps itself up while its checkout is busy),
+  // so the offers drawn here are only ever a route on its way out. A pass
+  // bought here anyway opens the app and takes the route with it; the
+  // server's days are still asked for, and nobody this gate is for holds a
+  // renewing subscription to be told about (that would be access).
   const checkout = usePassCheckout();
   const pass: PassSale = {
     buy: (plan, onPurchased) => checkout.start(plan, { placement: 'limited_offer', onPurchased }),
+    signInToRestore: checkout.signInToRestore,
     busy: checkout.busy,
     notice: checkout.notice,
   };

@@ -34,7 +34,9 @@ export const PASS_DE = {
     'Deine 3 Monate beginnen, wenn der bereits bezahlte Zeitraum endet. Schalte nach dem Kauf die automatische Verlängerung aus, damit dein Abo nicht zusätzlich abgebucht wird. Kündigen kannst du trotzdem jederzeit.',
   'pass.done.until': 'Deine 3 Monate Walkito Plus sind bereit: Sie laufen bis zum {date}. Danke, dass du bleibst.',
   'pass.done.plain': 'Deine 3 Monate Walkito Plus sind bereit. Danke, dass du bleibst.',
+  'pass.done.stillRenews': 'Dein Abo verlängert sich noch. Tippe unten auf „Trotzdem kündigen“, um die automatische Verlängerung auszuschalten.',
 
+  'pass.settings.section': 'Walkito Plus',
   'pass.settings.row': '3-Monats-Pass · bis {date}',
   'pass.settings.queued': '3-Monats-Pass · ab {date}',
   'pass.settings.hint': 'Eine Zahlung. Nichts verlängert sich.',

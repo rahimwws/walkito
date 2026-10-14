@@ -98,6 +98,7 @@ export const PAGES_IT = {
 
   // ── Expired ──────────────────────────────────────────────────────────────
   'pages.expired.title': 'Il tuo abbonamento è terminato',
+  'pages.expired.titlePass': 'I tuoi 3 mesi sono finiti',
   'pages.expired.lede': {
     one: '{count} sessione. Ecco cosa è cambiato.',
     other: '{count} sessioni. Ecco cosa è cambiato.',
@@ -110,6 +111,7 @@ export const PAGES_IT = {
   'pages.expired.busy': 'Un momento…',
   'pages.expired.plansTitle': 'Riprendi da dove avevi lasciato',
   'pages.expired.renew': 'Rinnova l’abbonamento',
+  'pages.expired.keepGoing': 'Continua',
   'pages.expired.notNow': 'Non ora',
   // ── The weekly plan ──────────────────────────────────────────────────────
   'pages.week.headerMeta': '{date} · Settimana {n}',

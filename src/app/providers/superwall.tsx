@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 
 import { getIntake, useIntake, useProfileName } from '@/entities/profile';
 import { outcome, planSettings } from '@/entities/program';
-import { ENTITLEMENT, grantDevAccess, onSimulator, purchases, useEntitled } from '@/entities/purchase';
+import { ENTITLEMENT, grantDevAccess, isPassProduct, onSimulator, purchases, useEntitled } from '@/entities/purchase';
 import { SUPERWALL_KEYS } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, useLanguage } from '@/shared/lib/i18n';
@@ -92,6 +92,12 @@ export function PaywallRoot({ children }: { children: ReactNode }) {
 /** Superwall's purchase and restore, handed to our store. */
 const controller: import('expo-superwall').CustomPurchaseControllerContext = {
   async onPurchase(params) {
+    // The 3-month pass is sold only through the pass checkout
+    // (`widgets/pass-checkout`), which signs the person in first and waits for
+    // the server's days. A dashboard paywall that listed one would skip both.
+    if (isPassProduct(params.productId)) {
+      return { type: 'failed', error: 'pass products are sold only through the pass checkout' };
+    }
     // Development on a simulator: no StoreKit purchase exists, so the paywall's
     // button stands in for one and the flow carries on into the setup screens.
     if (__DEV__ && onSimulator) {

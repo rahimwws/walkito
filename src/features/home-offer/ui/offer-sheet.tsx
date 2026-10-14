@@ -89,6 +89,7 @@ export function OfferSheet({
             pass={pass}
             topInset={TOP_INSET}
             purchase={{ armsSetup: false, onPurchased: onClose }}
+            analytics={false}
           />
         ) : status === 'unavailable' ? (
           <View style={[styles.centre, styles.unavailable]}>

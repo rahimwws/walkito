@@ -1,5 +1,13 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState, type ReactNode } from 'react';
+import { StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
+import Animated, {
+  Easing,
+  FadeIn,
+  ReduceMotion,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
 import { OfferSheet } from '@/features/home-offer';
 import { usePassWindow, useSubscription, type PassWindow } from '@/entities/purchase';
@@ -17,6 +25,11 @@ const WARN_DAYS = 7;
 const DAY_MS = 24 * 60 * 60 * 1000;
 /** The local day `pass_expiring_view` was last sent, so it goes once a day. */
 const SEEN_KEY = 'home/pass-ending-seen';
+/** The card fades in as the room for it opens, on the curve Home's
+ * `GlideHeight` eases its heights with. */
+const FADE_MS = 240;
+const ROOM_MS = 320;
+const ROOM_EASING = Easing.bezier(0.33, 1, 0.68, 1);
 
 /** Today, on this phone's calendar. */
 function dayKey(now: number): string {
@@ -43,6 +56,9 @@ function endingSoon(pass: PassWindow, now: number): boolean {
  * same thing from outside the app (`syncExpiryNotice`).
  *
  * `pass_expiring_view` once per day the card is seen.
+ *
+ * It fades in as the room for it opens (`Arrive`), so Home below it moves
+ * down smoothly rather than being pushed.
  */
 export function PassEndingCard({ seen }: { seen: boolean }) {
   const pass = usePassWindow();
@@ -76,23 +92,56 @@ function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
   return (
     <>
       {shown && (
-        <Card3D material="solid" size="lg" padding={18} style={styles.card} contentStyle={styles.content}>
-          <View style={styles.head}>
-            <FluentIcon name="calendar" size={36} />
-            <View style={styles.text}>
-              <Text style={[styles.title, { color: colors.foreground }]}>{t('pass.ending.title', { date })}</Text>
-              <Text style={[styles.body, { color: meter.caption }]}>{t('pass.ending.body')}</Text>
+        <Arrive>
+          <Card3D material="solid" size="lg" padding={18} style={styles.card} contentStyle={styles.content}>
+            <View style={styles.head}>
+              <FluentIcon name="calendar" size={36} />
+              <View style={styles.text}>
+                <Text style={[styles.title, { color: colors.foreground }]}>{t('pass.ending.title', { date })}</Text>
+                <Text style={[styles.body, { color: meter.caption }]}>{t('pass.ending.body')}</Text>
+              </View>
             </View>
-          </View>
-          <Button3D size="md" label={t('pass.ending.cta')} onPress={() => setOpen(true)} />
-        </Card3D>
+            <Button3D size="md" label={t('pass.ending.cta')} onPress={() => setOpen(true)} />
+          </Card3D>
+        </Arrive>
       )}
       <OfferSheet visible={open} kind="standard" onClose={() => setOpen(false)} />
     </>
   );
 }
 
+/**
+ * The card arriving on Home: it fades in while the room for it opens from
+ * nothing to its height, so the Library row below slides down instead of
+ * jumping. The card is shown only once the store has answered, well after Home
+ * has laid out, which is why it cannot simply appear.
+ *
+ * The room is a height on the UI thread, eased to whatever the card measures
+ * (and eased again if that changes, a language switched), and clips while it
+ * opens. It is the card's own, so nothing else on Home has to know it arrived.
+ * With Reduce Motion the room opens and the card shows at once.
+ */
+function Arrive({ children }: { children: ReactNode }) {
+  const height = useSharedValue(0);
+  const onLayout = (event: LayoutChangeEvent) => {
+    height.value = withTiming(event.nativeEvent.layout.height, {
+      duration: ROOM_MS,
+      easing: ROOM_EASING,
+      reduceMotion: ReduceMotion.System,
+    });
+  };
+  const room = useAnimatedStyle(() => ({ height: height.value }));
+  return (
+    <Animated.View style={[styles.room, room]}>
+      <Animated.View entering={FadeIn.duration(FADE_MS).reduceMotion(ReduceMotion.System)} onLayout={onLayout}>
+        {children}
+      </Animated.View>
+    </Animated.View>
+  );
+}
+
 const styles = StyleSheet.create({
+  room: { overflow: 'hidden' },
   card: { marginTop: 28 },
   content: { gap: 14 },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },

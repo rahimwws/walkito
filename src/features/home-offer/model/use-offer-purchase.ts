@@ -7,7 +7,7 @@ import {
   scheduleTrialReminder,
 } from '@/entities/notifications';
 import { purchases, type Plan, type PurchaseResult } from '@/entities/purchase';
-import { armSetup } from '@/entities/session';
+import { accountSaved, armSetup } from '@/entities/session';
 import { useT } from '@/shared/lib/i18n';
 
 import { priceOf, trialEndsAt, type FreeTrial } from './plan-terms';
@@ -28,6 +28,13 @@ export type PassSale = {
   /** Starts the checkout for this pass. `onPurchased` runs once the store
    * says it went through. */
   buy: (plan: Plan, onPurchased: () => void) => void;
+  /**
+   * The checkout's sign-in, for a Restore Purchases that found nothing in this
+   * phone's store on the anonymous account of first launch: a pass is kept on
+   * an account, so one bought on another phone is found by signing in to it.
+   * `onRestored` once access has arrived.
+   */
+  signInToRestore?: (onRestored: () => void) => void;
   /** The checkout is in flight. */
   busy: boolean;
   /** What the checkout has to say: a failure, a purchase waiting on Ask to Buy. */
@@ -40,6 +47,9 @@ export type OfferPurchaseOptions = {
   armsSetup?: boolean;
   /** Bought or restored: a sheet closes itself. */
   onPurchased?: () => void;
+  /** The host's pass checkout's sign-in (`PassSale.signInToRestore`), offered
+   * when a restore finds nothing and no account is signed in. */
+  signInToRestore?: (onRestored: () => void) => void;
 };
 
 /**
@@ -62,7 +72,7 @@ export type OfferPurchaseOptions = {
  * a first purchase, the comeback's pushes taken back.
  */
 export function useOfferPurchase(guard: MutableRefObject<OfferGuard>, options: OfferPurchaseOptions = {}) {
-  const { armsSetup = true, onPurchased } = options;
+  const { armsSetup = true, onPurchased, signInToRestore } = options;
   const t = useT();
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -132,17 +142,34 @@ export function useOfferPurchase(guard: MutableRefObject<OfferGuard>, options: O
     });
   };
 
+  const restored = () => {
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    void cancelComebackPushes();
+    onPurchased?.();
+  };
+
+  /**
+   * The store's restore (which asks the server for this account's passes
+   * too). Nothing found on the anonymous account of first launch: a 3-month
+   * pass is kept on an account, not in the store, so a pass bought on
+   * another phone is found by signing in, and the checkout's sign-in rises
+   * over the offer to do it.
+   */
   const restore = async (): Promise<void> => {
     if (busy) return;
-    const result = await hold(() => purchases.restore());
+    const { result, signedOut } = await hold(async () => {
+      const found = await purchases.restore();
+      const anonymous = found.status === 'nothing-found' && signInToRestore != null && !(await accountSaved());
+      return { result: found, signedOut: anonymous };
+    });
     if (result.status === 'restored') {
-      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      void cancelComebackPushes();
-      onPurchased?.();
+      restored();
       return;
     }
-    if (result.status === 'nothing-found') say(t('offer.nothingRestored'), null);
-    else if (result.status === 'failed') say(t('offer.restoreFailed'), Haptics.NotificationFeedbackType.Error);
+    if (result.status === 'nothing-found') {
+      say(t('offer.nothingRestored'), null);
+      if (signedOut) signInToRestore?.(restored);
+    } else if (result.status === 'failed') say(t('offer.restoreFailed'), Haptics.NotificationFeedbackType.Error);
     // `unavailable`: there was no store to ask.
   };
 

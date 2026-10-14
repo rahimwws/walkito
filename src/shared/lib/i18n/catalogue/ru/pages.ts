@@ -117,6 +117,7 @@ export const PAGES_RU = {
 
   // ── Expired ──────────────────────────────────────────────────────────────
   'pages.expired.title': 'Ваша подписка закончилась',
+  'pages.expired.titlePass': 'Ваши 3 месяца закончились',
   'pages.expired.lede': {
     one: '{count} сессия. Вот что изменилось.',
     few: '{count} сессии. Вот что изменилось.',
@@ -131,6 +132,7 @@ export const PAGES_RU = {
   'pages.expired.busy': 'Секунду…',
   'pages.expired.plansTitle': 'Продолжите с того же места',
   'pages.expired.renew': 'Возобновить подписку',
+  'pages.expired.keepGoing': 'Продолжить',
   'pages.expired.notNow': 'Не сейчас',
   'pages.week.headerMeta': '{date} · Неделя {n}',
   'pages.week.seam': 'Эта неделя · {goal}',

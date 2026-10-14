@@ -20,6 +20,13 @@ import { DEAL } from './deal-tone';
 export type PlanTab = { key: string; title: string; caption: string };
 
 const RADIUS = 16;
+/**
+ * A caption may take a second line, then shrink to 70 % before it is cut: a
+ * price with a long currency, or a long word in another language, in a third
+ * of a phone's width. One line where it fits, at full size.
+ */
+const CAPTION_LINES = 2;
+const CAPTION_MIN_SCALE = 0.7;
 
 /**
  * The plans as a 3D switch: one raised segment each, the chosen one leaning
@@ -71,9 +78,9 @@ export function PlanTabs({
             </Text>
             <Text
               style={[styles.caption, { color: on ? tokens.selectedInk : meter.label }]}
-              numberOfLines={1}
+              numberOfLines={CAPTION_LINES}
               adjustsFontSizeToFit
-              minimumFontScale={0.8}
+              minimumFontScale={CAPTION_MIN_SCALE}
               maxFontSizeMultiplier={1.3}>
               {tab.caption}
             </Text>
@@ -186,9 +193,9 @@ function DealTab({
       </Animated.Text>
       <Animated.Text
         style={[styles.caption, caption]}
-        numberOfLines={1}
+        numberOfLines={CAPTION_LINES}
         adjustsFontSizeToFit
-        minimumFontScale={0.8}
+        minimumFontScale={CAPTION_MIN_SCALE}
         maxFontSizeMultiplier={1.3}>
         {tab.caption}
       </Animated.Text>
@@ -208,7 +215,7 @@ const styles = StyleSheet.create({
     gap: 2,
   },
   title: fonts.heavy(16, -0.2),
-  caption: fonts.semibold(13),
+  caption: { ...fonts.semibold(13), textAlign: 'center' },
   track: {
     flexDirection: 'row',
     padding: TRACK_PAD,

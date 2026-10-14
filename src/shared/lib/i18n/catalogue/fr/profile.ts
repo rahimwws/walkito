@@ -29,6 +29,7 @@ export const PROFILE_FR = {
   'profile.deleteSubscriptionAndroid':
     'Supprimer ton compte n’annule pas ton abonnement. Il est facturé par Google Play et se renouvelle jusqu’à ce que tu l’annules là-bas.',
   'profile.manageSubscription': 'Gérer l’abonnement',
+  'profile.deletePass': 'Ton Pass 3 mois est gardé sur ce compte et prend fin quand tu supprimes le compte.',
   'profile.deleteLocalOnly':
     'Tes données ont été supprimées de cet appareil, mais le serveur n’a pas pu être joint. Rouvre l’app avec une connexion pour terminer, ou écris au support.',
   'profile.deleteConfirm': 'Tout supprimer',

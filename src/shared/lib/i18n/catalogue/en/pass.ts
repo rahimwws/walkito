@@ -62,8 +62,14 @@ export const PASS_EN = {
   /** "All set", after it was bought. `{date}` is when the 3 months end. */
   'pass.done.until': 'Your 3 months of Walkito Plus are set: they run until {date}. Thank you for staying.',
   'pass.done.plain': 'Your 3 months of Walkito Plus are set. Thank you for staying.',
+  /** Under "All set" while the subscription beside the pass still renews:
+   * the cancel flow's own button is right below. */
+  'pass.done.stillRenews': 'Your subscription still renews. Tap Cancel anyway below to turn auto-renewal off.',
 
   // ── Settings → Subscription ──────────────────────────────────────────────
+  /** The section's heading in Settings: the product's name, the same in
+   * every language. */
+  'pass.settings.section': 'Walkito Plus',
   /** While it runs. `{date}` is when it ends. */
   'pass.settings.row': '3-month pass · until {date}',
   /** Bought on top of a subscription, before it starts. `{date}` is when it starts. */

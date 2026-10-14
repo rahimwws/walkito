@@ -106,6 +106,10 @@ describe('budgetPassAllowed', () => {
     expect(budgetPassAllowed({ ...yearly, kind: 'lifetime', willRenew: false }, fresh, NOW, false)).toBe(false);
   });
 
+  test('nothing for a family member, who did not buy the subscription', () => {
+    expect(budgetPassAllowed({ ...yearly, familyShared: true }, fresh, NOW, false)).toBe(false);
+  });
+
   test('not twice in a year: the retention price used, or any pass bought', () => {
     const lately = NOW - 200 * DAY;
     expect(budgetPassAllowed(yearly, { ...fresh, retentionOfferUsedAt: lately }, NOW, false)).toBe(false);

@@ -46,6 +46,9 @@ export const PROFILE_EN = {
   'profile.deleteSubscriptionAndroid':
     'Deleting your account doesn’t cancel your subscription. It’s billed by Google Play and renews until you cancel it there.',
   'profile.manageSubscription': 'Manage subscription',
+  /** While a 3-month pass runs, or waits its turn: its days are counted on
+   * the account, so they go with it. */
+  'profile.deletePass': 'Your 3-month pass is kept on this account and ends when you delete it.',
   /** Local storage is already gone by the time this shows, so it says which
    * half failed rather than pretending nothing happened. */
   'profile.deleteLocalOnly':

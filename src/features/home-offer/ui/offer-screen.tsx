@@ -44,8 +44,10 @@ const SPINNER_AFTER_MS = 600;
  * and can ask again, with Restore purchases, Terms and Privacy under it.
  *
  * `pass` is the host's pass checkout: with it the comeback, the limited offer,
- * carries the 3-month pass as its third card. Its sheets belong inside the
- * host's own modal, which is why the host and not this screen mounts them.
+ * carries the 3-month pass as its third card, and a Restore purchases that
+ * finds nothing on the anonymous account of first launch offers its sign-in
+ * (a pass is kept on an account). Its sheets belong inside the host's own
+ * modal, which is why the host and not this screen mounts them.
  */
 export function OfferScreen({ pass = null }: { pass?: PassSale | null }) {
   const { content, status, retry, guard } = useOfferScreen(pass != null);
@@ -53,6 +55,7 @@ export function OfferScreen({ pass = null }: { pass?: PassSale | null }) {
   const spinner = useLate(status === 'loading', SPINNER_AFTER_MS);
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
+  const signInToRestore = pass?.signInToRestore;
 
   return (
     <View style={styles.fill}>
@@ -62,9 +65,16 @@ export function OfferScreen({ pass = null }: { pass?: PassSale | null }) {
       {content != null ? (
         // Keyed by what it is, so a change of stage (the trial missed, the
         // comeback's minutes up) arrives afresh rather than swapping words.
-        <OfferPanel key={content.kind} content={content} guard={guard} openedAt={openedAt} pass={pass} />
+        <OfferPanel
+          key={content.kind}
+          content={content}
+          guard={guard}
+          openedAt={openedAt}
+          pass={pass}
+          purchase={{ signInToRestore }}
+        />
       ) : status === 'unavailable' ? (
-        <Unavailable guard={guard} onRetry={retry} />
+        <Unavailable guard={guard} onRetry={retry} signInToRestore={signInToRestore} />
       ) : spinner ? (
         <View style={styles.centre}>
           <ActivityIndicator color={meter.caption} />
@@ -95,13 +105,21 @@ function useLate(on: boolean, ms: number): boolean {
  * the app comes back to the foreground), and keeps Restore purchases within
  * reach for somebody who already paid on another phone.
  */
-function Unavailable({ guard, onRetry }: { guard: MutableRefObject<OfferGuard>; onRetry: () => void }) {
+function Unavailable({
+  guard,
+  onRetry,
+  signInToRestore,
+}: {
+  guard: MutableRefObject<OfferGuard>;
+  onRetry: () => void;
+  signInToRestore?: (onRestored: () => void) => void;
+}) {
   const t = useT();
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
-  const { busy, notice, restore } = useOfferPurchase(guard);
+  const { busy, notice, restore } = useOfferPurchase(guard, { signInToRestore });
 
   return (
     <View

@@ -77,6 +77,10 @@ export type OfferView = {
   endsAt: number | null;
   /** Null with a single plan: nothing to switch between. */
   tabs: TabWords[] | null;
+  /** The comeback's card for every plan on its switch, in the switch's
+   * order: the card is held at the tallest of them, so switching plans never
+   * moves what is around it. Empty for the other offers. */
+  deals: readonly DealWords[];
   card: CardWords | DealWords;
   cta: string;
   /** What the button buys, and the trial it starts if any. */
@@ -84,6 +88,9 @@ export type OfferView = {
   trial: FreeTrial | null;
   /** The disclosure under the button, one whole sentence (or two) a line. */
   terms: string[];
+  /** The disclosure for every plan on the switch, in its order, held at the
+   * longest for the same reason as `deals`. Empty with no switch. */
+  termsByPlan: readonly (readonly string[])[];
 };
 
 /** The plan a screen opens on: the first it offers (the year, where there is one). */
@@ -179,6 +186,7 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
     mascot: 'peek',
     endsAt: null,
     tabs: null,
+    deals: [],
     card: {
       kind: 'plan',
       title: t(CARD_TITLE.annual),
@@ -200,6 +208,7 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
         : t('homeOffer.terms.trialMonths', { count: trial.count, price }),
       Platform.OS === 'android' ? t('homeOffer.terms.trialCancelAndroid') : t('homeOffer.terms.trialCancel'),
     ],
+    termsByPlan: [],
   };
 }
 
@@ -304,6 +313,20 @@ function standardCard({ slot, plan }: SlottedPlan, plans: readonly SlottedPlan[]
   };
 }
 
+/**
+ * The caption under a comeback tab's name: what the first payment is.
+ *
+ * Two tabs have room for it in its period ("$29.99 first year", "$59.99
+ * once"). Three share a phone's width, where that was cut off mid-word, so
+ * each says the price alone: the card under the switch, and the disclosure
+ * under the button, say what it buys and what it renews at.
+ */
+function dealTabCaption({ slot, plan }: SlottedPlan, crowded: boolean, t: Translate): string {
+  if (crowded) return firstChargeOf(plan);
+  const first = slot === 'annual' ? firstYearPriceOf(plan) : null;
+  return first != null ? t('homeOffer.price.firstYear', { price: first.display }) : perPeriod(slot, priceOf(plan), t);
+}
+
 /** The line under the comeback's headline, naming the deals it really holds.
  * `contentFor` never makes a comeback of the pass alone. */
 function comebackBody(year: boolean, lifetime: boolean, pass: boolean, t: Translate): string {
@@ -335,23 +358,19 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
       endsAt: content.endsAt,
       tabs:
         content.plans.length > 1
-          ? content.plans.map((p) => {
-              const first = p.slot === 'annual' ? firstYearPriceOf(p.plan) : null;
-              return {
-                key: p.slot,
-                title: t(TAB_TITLE[p.slot]),
-                caption:
-                  first != null
-                    ? t('homeOffer.price.firstYear', { price: first.display })
-                    : perPeriod(p.slot, priceOf(p.plan), t),
-              };
-            })
+          ? content.plans.map((p) => ({
+              key: p.slot,
+              title: t(TAB_TITLE[p.slot]),
+              caption: dealTabCaption(p, content.plans.length > 2, t),
+            }))
           : null,
+      deals: content.plans.length > 1 ? content.plans.map((p) => dealCard(p, standard, t)) : [],
       card: dealCard(chosen, standard, t),
       cta: t('homeOffer.comeback.cta'),
       plan: chosen.plan,
       trial: null,
       terms: termsFor(chosen, t),
+      termsByPlan: content.plans.length > 1 ? content.plans.map((p) => termsFor(p, t)) : [],
     };
   }
 
@@ -368,10 +387,12 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
             caption: perPeriod(p.slot, priceOf(p.plan), t),
           }))
         : null,
+    deals: [],
     card: standardCard(chosen, content.plans, t),
     cta: t('homeOffer.standard.cta'),
     plan: chosen.plan,
     trial: null,
     terms: termsFor(chosen, t),
+    termsByPlan: content.plans.length > 1 ? content.plans.map((p) => termsFor(p, t)) : [],
   };
 }

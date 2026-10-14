@@ -149,6 +149,9 @@ export const PAGES_EN = {
   // the recap may not read as a pitch; the plans below it are the same two the
   // paywall sells, in the paywall's own words (`offer.*`).
   'pages.expired.title': 'Your subscription has ended',
+  /** For somebody whose access was a 3-month pass, which was never a
+   * subscription: the title, and the button under the plans. */
+  'pages.expired.titlePass': 'Your 3 months have ended',
   'pages.expired.lede': {
     one: '{count} session. Here’s what changed.',
     other: '{count} sessions. Here’s what changed.',
@@ -165,6 +168,7 @@ export const PAGES_EN = {
   /** Above the two plans. */
   'pages.expired.plansTitle': 'Pick up where you left off',
   'pages.expired.renew': 'Renew subscription',
+  'pages.expired.keepGoing': 'Keep going',
   'pages.expired.notNow': 'Not now',
   // ── The weekly plan ──────────────────────────────────────────────────────
   // The Workout page as a week: which week it is, what it is for, and why it

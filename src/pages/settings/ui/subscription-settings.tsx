@@ -95,7 +95,13 @@ export function SubscriptionSettings() {
   const checkout = usePassCheckout();
   const sale: PassSale = {
     buy: (plan, onPurchased) =>
-      checkout.start(plan, { placement: 'limited_offer', onPurchased, onDone: () => setOffers(false) }),
+      checkout.start(plan, {
+        placement: 'limited_offer',
+        onPurchased,
+        onDone: () => setOffers(false),
+        // The account signed in to inside the checkout already had access.
+        onAborted: () => setOffers(false),
+      }),
     busy: checkout.busy,
     notice: checkout.notice,
   };
@@ -253,9 +259,15 @@ export function SubscriptionSettings() {
     );
   }
 
+  // A pass alone is not a subscription: with no store billing them, the
+  // section is named for what they have.
+  const passOnly = held == null && passRunning && !offersRow;
+
   return (
     <View style={styles.root}>
-      <Text style={[styles.sectionTitle, { color: meter.caption }]}>{t('cancel.row.section')}</Text>
+      <Text style={[styles.sectionTitle, { color: meter.caption }]}>
+        {t(passOnly ? 'pass.settings.section' : 'cancel.row.section')}
+      </Text>
       <View style={[styles.group, { backgroundColor: meter.track }]}>{rows}</View>
 
       {held != null && held.kind === 'subscription' && (
