@@ -35,6 +35,28 @@ export type AcquisitionSource =
  * pass and the first monthly plan are not sold. */
 export type PlanTier = 'annual' | 'monthly' | 'weekly' | 'lifetime';
 
+/** Why somebody is leaving, as the cancel flow's five answers put it. The
+ * answer's id, never anything they wrote: there is no free text. */
+export type CancelReason = 'budget' | 'better' | 'pause' | 'notHelping' | 'noTime';
+
+/**
+ * What the cancel flow put in the place of cancelling. The three that touch
+ * the price (`next_year`, `yearly`, `free_month`) are the retention offers;
+ * the rest change the plan, open a store page or reach a person. The
+ * "when to see a doctor" check is deliberately not one of them: that somebody
+ * looked for it says something about their body.
+ */
+export type CancelOffer =
+  | 'next_year'
+  | 'yearly'
+  | 'free_month'
+  | 'pause'
+  | 'lighter'
+  | 'short_sessions'
+  | 'reminder'
+  | 'review'
+  | 'write';
+
 export type AnalyticsEvents = {
   // ── Onboarding ───────────────────────────────────────────────────────────
   /** The first screen of the flow appeared. The top of every funnel. */
@@ -125,6 +147,23 @@ export type AnalyticsEvents = {
    * `last_chance` as the app is left, `ends_soon` laid for before the
    * deadline. Sent only with notification permission. */
   comeback_push_sent: { push: 'last_chance' | 'ends_soon' };
+
+  // ── Cancelling ───────────────────────────────────────────────────────────
+  /** Settings → Manage subscription opened the cancel flow. The plan held,
+   * by its billing period. */
+  cancel_flow_opened: { plan: PlanTier };
+  /** One of the five answers to "Why are you leaving?". */
+  cancel_reason: { reason: CancelReason };
+  /** Something put in the place of cancelling came on screen. Never the
+   * person's own numbers, which the "my feet are better" answer shows. */
+  cancel_offer_shown: { reason: CancelReason; offer: CancelOffer };
+  /** It was taken: an offer bought, the plan changed, the store's pause or
+   * review page opened, an email to us started. */
+  cancel_offer_accepted: { reason: CancelReason; offer: CancelOffer };
+  /** "Cancel anyway": the store's own subscription page opened, from the
+   * reasons (`none`) or after one. Whether they then cancelled is the store's
+   * to say; RevenueCat reports it server-side. */
+  cancel_anyway: { reason: CancelReason | 'none' };
 
   // ── After the first purchase ─────────────────────────────────────────────
   setup_step_viewed: { step: string };

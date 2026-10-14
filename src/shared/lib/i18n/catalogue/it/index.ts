@@ -20,6 +20,7 @@ import { STREAKS_IT } from './streaks';
 import { STICKERS_IT } from './stickers';
 import { RECAP_IT } from './recap';
 import { HOME_OFFER_IT } from './home-offer';
+import { CANCEL_IT } from './cancel';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -50,4 +51,5 @@ export const it: CatalogueFor<'it'> = {
   ...STICKERS_IT,
   ...RECAP_IT,
   ...HOME_OFFER_IT,
+  ...CANCEL_IT,
 };

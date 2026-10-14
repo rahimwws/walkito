@@ -14,7 +14,9 @@ import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 /**
  * "Something new? (swelling, numbness, a pop)" — the red-flag check, reachable
- * from the morning check-in at any time.
+ * from the morning check-in at any time, and from the cancel flow's "When to
+ * see a doctor" (Settings → Manage subscription), which is why it is a feature
+ * rather than part of Home.
  *
  * Three tiers, the same as the onboarding safety screen: A needs a doctor now,
  * B1 soon, B2 when convenient. Nothing here is recorded or sent anywhere; it is

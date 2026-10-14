@@ -18,6 +18,7 @@ import { STREAKS_EN } from './streaks';
 import { STICKERS_EN } from './stickers';
 import { RECAP_EN } from './recap';
 import { HOME_OFFER_EN } from './home-offer';
+import { CANCEL_EN } from './cancel';
 
 /**
  * English, assembled from its domain files.
@@ -52,4 +53,5 @@ export const en = {
   ...STICKERS_EN,
   ...RECAP_EN,
   ...HOME_OFFER_EN,
+  ...CANCEL_EN,
 };

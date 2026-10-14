@@ -308,6 +308,17 @@ export const FIRST_PRODUCTS = {
 } as const;
 
 /**
+ * The products already sold at a discount: the comeback's annual and lifetime,
+ * and the first line-up's comeback annual. The cancel flow makes no retention
+ * offer to somebody on one of these, so a discount never lands on another.
+ */
+export const OFFER_PRODUCT_IDS: readonly string[] = [
+  PRODUCTS.annualOffer,
+  PRODUCTS.lifetimeOffer,
+  FIRST_PRODUCTS.annualOffer,
+];
+
+/**
  * What used to be sold, kept only so the people who bought it keep access.
  *
  * The one-time pass and the first monthly subscription (not `walkito_monthly`)
@@ -332,6 +343,71 @@ export const LEGACY_PASS_IDS: readonly string[] = [LEGACY_PRODUCTS.pass, LEGACY_
  * Fixed at what was sold, so nobody who bought one loses a day of it.
  */
 export const PASS_ACCESS_DAYS = 90;
+
+/**
+ * What this customer holds in a store, as the store last said: the plan, and
+ * whether it renews. What Settings → Manage subscription is drawn from.
+ *
+ * Only what a store bills. Access granted by account (`comp.ts`), a grant
+ * made in RevenueCat's dashboard and a legacy pass are not here: there is
+ * nothing of theirs a store could cancel.
+ */
+export type Subscription = {
+  /** `subscription` renews until it is cancelled in its store. `lifetime` was
+   * one payment: there is nothing to renew or cancel. */
+  readonly kind: 'subscription' | 'lifetime';
+  /** The store's product id. On Google Play, the subscription id. */
+  readonly productId: string;
+  readonly period: PlanPeriod;
+  /** False once renewal was turned off in the store: access runs to
+   * `expiresAt`, then ends. Always false for lifetime. */
+  readonly willRenew: boolean;
+  /** When the period paid for (or the free trial) ends, epoch ms. Null for
+   * lifetime. */
+  readonly expiresAt: number | null;
+  /**
+   * The kind of period it is in: the full price (`normal`), a free trial, an
+   * introductory price, or a Google Play prepaid plan that does not renew by
+   * itself. Only `normal` may be offered anything to stay: a discount on top of
+   * a trial or an introductory price is two discounts.
+   */
+  readonly periodType: 'normal' | 'trial' | 'intro' | 'prepaid';
+  /** Which store bills it. Only that store can change it. */
+  readonly store: 'app_store' | 'play_store' | 'other';
+  /** Shared by a family organiser rather than bought by this person, who
+   * can neither cancel it nor take an offer on it. */
+  readonly familyShared: boolean;
+  /** The store's page for it, as RevenueCat reports it, or null. */
+  readonly managementUrl: string | null;
+};
+
+/**
+ * An App Store promotional offer on the subscription held, signed for this
+ * customer: what the cancel flow may offer in the place of cancelling
+ * (`RETENTION_OFFERS` in `shared/config`).
+ *
+ * Every figure is the store's: the offer's own price for each of its periods,
+ * and the product's regular price beside it in the same currency, so a
+ * percentage on screen compares two prices the store will really charge. Like
+ * `Plan`, it carries a token rather than the SDK's objects; the adapter keeps
+ * the signed offer behind it.
+ */
+export type RetentionOffer = {
+  readonly token: string;
+  /** Its identifier in App Store Connect. */
+  readonly offerId: string;
+  readonly productId: string;
+  /** What each period of the offer costs: 0 is free. */
+  readonly price: number;
+  readonly priceString: string;
+  /** One period of the offer, and how many of them it lasts. */
+  readonly period: StorePeriod;
+  readonly cycles: number;
+  /** The product's regular price, as billed each period after the offer. */
+  readonly regularPrice: number;
+  readonly regularPriceString: string;
+  readonly currencyCode: string;
+};
 
 export type Purchases = {
   /** Whether a real store is wired up. Everything below is a no-op when false. */
@@ -383,6 +459,42 @@ export type Purchases = {
    * server lands on the same person in both. Null with no store.
    */
   appUserId(): Promise<string | null>;
+
+  /**
+   * What this customer holds, asked of the store. Null with no store, or when
+   * nothing a store bills is held. `fresh` drops the store's cached answer
+   * first: after the person comes back from the store's own subscription page,
+   * where a cancellation is made, the cache would still say it renews.
+   *
+   * Never rejects: with the store unreachable it answers from the last thing
+   * the store said.
+   */
+  subscription(fresh?: boolean): Promise<Subscription | null>;
+  /**
+   * The store's own subscription management, over the app: Apple's sheet.
+   * Resolves true once the store has shown it and it was closed, false when
+   * the caller should open the store's page itself — on Google Play, which
+   * manages subscriptions in its own app; with no store; when the sheet would
+   * not present.
+   */
+  manageSubscriptions(): Promise<boolean>;
+  /**
+   * An App Store promotional offer on a subscription held, signed for this
+   * customer, or null: no such offer on that product, not eligible, Google
+   * Play (promotional offers are Apple's), no store, or the store unreachable.
+   * Never rejects. A screen shows an offer only when this returns one.
+   */
+  retentionOffer(offerId: string, productId: string): Promise<RetentionOffer | null>;
+  /** Take a promotional offer from `retentionOffer`. On the subscription
+   * already held, so Apple applies it from the next renewal. */
+  buyRetentionOffer(offer: RetentionOffer): Promise<PurchaseResult>;
+  /**
+   * Move the subscription held to another plan: a monthly or weekly
+   * subscriber to the yearly plan. On the App Store a plan in the same
+   * subscription group replaces the one held by itself; Google Play is told
+   * which subscription this one replaces, or it would bill both.
+   */
+  changePlan(plan: Plan, fromProductId: string): Promise<PurchaseResult>;
 
   /**
    * Whether the subscription is live, right now, synchronously.
@@ -452,6 +564,11 @@ export const unconfigured: Purchases = {
   canRedeemCode: false,
   redeemCode: async () => {},
   appUserId: async () => null,
+  subscription: async () => null,
+  manageSubscriptions: async () => false,
+  retentionOffer: async () => null,
+  buyRetentionOffer: async () => ({ status: 'unavailable' }),
+  changePlan: async () => ({ status: 'unavailable' }),
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one
   // that does not hand out the paid product to everybody.

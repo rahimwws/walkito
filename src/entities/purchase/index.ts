@@ -4,6 +4,7 @@ export {
   LEGACY_PRODUCTS,
   LIFETIME_PRODUCT_IDS,
   OFFERINGS,
+  OFFER_PRODUCT_IDS,
   PACKAGES,
   PRODUCTS,
   PRINTED_PRICES,
@@ -15,8 +16,22 @@ export {
   type Purchases,
   type PurchaseResult,
   type RestoreResult,
+  type RetentionOffer,
   type StorePeriod,
+  type Subscription,
 } from './model/purchase';
+export { openPlayPause, openStoreSubscriptions, useSubscription } from './model/subscription';
+export {
+  RETENTION_GAP_DAYS,
+  breakOffer,
+  budgetOffer,
+  isFreeMonth,
+  markRetentionTaken,
+  nextYearPercent,
+  retentionAllowed,
+  retentionTakenAt,
+  type RetentionFacts,
+} from './model/retention';
 export {
   annualSavingPercent,
   discountPercent,
@@ -65,4 +80,10 @@ export {
   usePaywallSkipped,
   type OfferStage,
 } from './model/skip';
-export { isSamplePlan, samplePricesOn, setSamplePrices } from './model/samples';
+export {
+  isSamplePlan,
+  samplePricesOn,
+  sampleRetention,
+  setSamplePrices,
+  type SampleRetention,
+} from './model/samples';

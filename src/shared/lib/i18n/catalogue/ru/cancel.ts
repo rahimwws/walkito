@@ -1,0 +1,111 @@
+/** Cancelling: Settings → Subscription and the flow behind "Manage subscription". Filled per domain; see
+ * `../en/cancel.ts` for the rules (no prices, "Cancel anyway" means the store's own page, "Walkito Plus" stays as it is). */
+
+export const CANCEL_RU = {
+  'cancel.row.section': 'Подписка',
+  'cancel.row.manage': 'Управление подпиской',
+  'cancel.row.manageHint': 'Walkito Plus',
+  'cancel.row.renewsAnnual': 'Годовой план, следующее продление {date}',
+  'cancel.row.renewsMonthly': 'Месячный план, следующее продление {date}',
+  'cancel.row.renewsWeekly': 'Недельный план, следующее продление {date}',
+  'cancel.row.trial': 'Бесплатный период до {date}, затем план продлится',
+  'cancel.row.ends': 'Продление выключено. Walkito Plus работает до {date}.',
+  'cancel.row.lifetime': 'Навсегда',
+  'cancel.row.lifetimeHint': 'Walkito Plus ваш навсегда. Ничего не продлевается.',
+
+  'cancel.title': 'Почему вы уходите?',
+  'cancel.sub': 'Выберите самый близкий ответ. Так мы сможем сделать Walkito лучше.',
+  'cancel.reason.budget': 'Не вписывается в мой бюджет',
+  'cancel.reason.better': 'Ногам уже лучше',
+  'cancel.reason.pause': 'Я делаю перерыв',
+  'cancel.reason.notHelping': 'Не помогает или больно',
+  'cancel.reason.noTime': 'У меня нет времени',
+  'cancel.anyway': 'Всё равно отменить',
+  'cancel.anywayHintIos': 'Открывает ваши подписки в App Store',
+  'cancel.anywayHintAndroid': 'Открывает ваши подписки в Google Play',
+
+  'cancel.budget.title': 'Давайте сделаем это легче для бюджета',
+  'cancel.budget.nextYearTitle': 'Скидка {percent}% на следующий год',
+  'cancel.budget.nextYearBody':
+    'Следующий год будет стоить {price} вместо {regular}. План и всё, что вы записали, останутся как есть.',
+  'cancel.budget.nextYearCta': 'Взять скидку {percent}%',
+  'cancel.budget.nextYearTerms':
+    'Сниженная цена начнёт действовать со следующего продления и покроет один год. Затем действует обычная цена. Отменить подписку можно в любой момент в настройках подписок.',
+  'cancel.budget.yearlyTitle': 'Перейти на годовой план',
+  'cancel.budget.yearlyBody': 'Год Walkito Plus стоит {price}, это около {perMonth} в месяц.',
+  'cancel.budget.yearlyBodyPlain': 'Год Walkito Plus стоит {price}.',
+  'cancel.budget.savingMonthly': 'Это на {percent}% меньше, чем платить каждый месяц.',
+  'cancel.budget.savingWeekly': 'Это на {percent}% меньше, чем платить каждую неделю.',
+  'cancel.budget.yearlyCta': 'Перейти на годовой',
+  'cancel.budget.yearlyTerms':
+    'Перед подтверждением магазин покажет цену и когда она начнёт действовать. План и всё, что вы записали, останутся как есть.',
+  'cancel.budget.noneTitle': 'Мы понимаем',
+  'cancel.budget.none': 'Всё, что вы записали, останется в Walkito, а план будет ждать, если вы вернётесь.',
+
+  'cancel.better.title': 'Как здорово это слышать',
+  'cancel.better.body': 'Вот какой путь вы прошли.',
+  'cancel.better.plain': 'Мы очень рады, что ногам лучше. Спасибо, что прошли часть пути вместе с нами.',
+  'cancel.better.pain': 'Боль на первых шагах, из 10',
+  'cancel.better.calf': 'Подъёмы на носок',
+  'cancel.better.arch': 'Удержание свода, секунды',
+  'cancel.better.balance': 'Баланс, секунды',
+  'cancel.better.firstWeek': 'Первая неделя',
+  'cancel.better.lastWeek': 'Последние 7 дней',
+  'cancel.better.firstTest': 'Первый тест',
+  'cancel.better.latestTest': 'Последний тест',
+  'cancel.better.changeA11y': '{label}: тогда {from}, сейчас {to}',
+  'cancel.better.reviewAsk': 'Если Walkito помог, пара слов в отзыве поможет кому-то ещё его найти.',
+  'cancel.better.review': 'Оставить отзыв',
+
+  'cancel.pause.title': 'Иногда нужен перерыв',
+  'cancel.pause.freeMonthTitle': 'Бесплатный месяц',
+  'cancel.pause.freeMonthBody':
+    'План остаётся с вами, а следующий месяц ничего не стоит. Потом Walkito Plus продлится так же, как сейчас.',
+  'cancel.pause.freeMonthCta': 'Взять бесплатный месяц',
+  'cancel.pause.freeMonthTerms':
+    'Бесплатный месяц начнётся со следующего продления. Отменить подписку можно в любой момент в настройках подписок.',
+  'cancel.pause.playTitle': 'Пауза до 3 месяцев',
+  'cancel.pause.playBody':
+    'Google Play может поставить подписку на паузу, а не завершить её. Пока она на паузе, ничего не списывается, а план будет ждать, когда она возобновится.',
+  'cancel.pause.playCta': 'Пауза в Google Play',
+  'cancel.pause.none': 'План будет ждать вас вместе со всем, что вы записали.',
+
+  'cancel.notHelping.title': 'Жаль, что пока не так, как хотелось',
+  'cancel.notHelping.body': 'Вот что мы можем сделать прямо сейчас.',
+  'cancel.notHelping.lighter': 'Сделать план легче',
+  'cancel.notHelping.lighterCaption': 'Занятия короче или реже, с сегодняшнего дня',
+  'cancel.notHelping.lightest': 'План уже настолько лёгкий, насколько возможно.',
+  'cancel.notHelping.doctor': 'Когда идти к врачу',
+  'cancel.notHelping.doctorCaption': 'Короткая проверка признаков, с которыми стоит сходить к врачу',
+  'cancel.notHelping.write': 'Написать нам',
+  'cancel.notHelping.writeCaption': 'Каждое письмо читает человек',
+
+  'cancel.noTime.title': 'Давайте впишем это в ваш день',
+  'cancel.noTime.body': {
+    one: 'Занятие может длиться всего {count} минуту, а напоминание можно перенести на удобное время.',
+    few: 'Занятие может длиться всего {count} минуты, а напоминание можно перенести на удобное время.',
+    many: 'Занятие может длиться всего {count} минут, а напоминание можно перенести на удобное время.',
+  },
+  'cancel.noTime.short': {
+    one: 'Перейти на занятия по {count} минуте',
+    few: 'Перейти на занятия по {count} минуты',
+    many: 'Перейти на занятия по {count} минут',
+  },
+  'cancel.noTime.shortCaption': 'Каждое занятие, с сегодняшнего дня. Вернуть можно в настройках.',
+  'cancel.noTime.already': 'Занятия уже настолько короткие, насколько возможно.',
+  'cancel.noTime.reminder': 'Изменить время напоминания',
+  'cancel.noTime.reminderCaption': 'Ежедневное напоминание, когда вам удобно',
+
+  'cancel.done.title': 'Готово',
+  'cancel.done.nextYear': 'Следующий год Walkito Plus со скидкой {percent}%. Спасибо, что остаётесь.',
+  'cancel.done.yearly': 'Вы переходите на годовой план. Спасибо, что остаётесь.',
+  'cancel.done.freeMonth': 'Следующий месяц бесплатный. Спасибо, что остаётесь.',
+  'cancel.done.lighter': 'С сегодняшнего дня план легче. Изменить это можно в любой момент в настройках.',
+  'cancel.done.short': {
+    one: 'С сегодняшнего дня занятия по {count} минуте. Изменить это можно в любой момент в настройках.',
+    few: 'С сегодняшнего дня занятия по {count} минуты. Изменить это можно в любой момент в настройках.',
+    many: 'С сегодняшнего дня занятия по {count} минут. Изменить это можно в любой момент в настройках.',
+  },
+  'cancel.done.pending': 'Магазин ещё подтверждает покупку. Она появится здесь, как только пройдёт.',
+  'cancel.done.back': 'Вернуться в Walkito',
+};

@@ -20,6 +20,7 @@ import { STREAKS_DE } from './streaks';
 import { STICKERS_DE } from './stickers';
 import { RECAP_DE } from './recap';
 import { HOME_OFFER_DE } from './home-offer';
+import { CANCEL_DE } from './cancel';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -50,4 +51,5 @@ export const de: CatalogueFor<'de'> = {
   ...STICKERS_DE,
   ...RECAP_DE,
   ...HOME_OFFER_DE,
+  ...CANCEL_DE,
 };
