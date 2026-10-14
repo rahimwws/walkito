@@ -378,3 +378,40 @@ export function milestoneFor(current: number): (typeof STREAK_MILESTONES)[number
     ? (current as (typeof STREAK_MILESTONES)[number])
     : null;
 }
+
+/** The milestones whose moment Home has shown: each one once, ever. */
+const MILESTONES_KEY = 'streak/milestones-seen';
+
+function milestonesSeen(): number[] {
+  try {
+    const seen: unknown = JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]');
+    return Array.isArray(seen) ? seen.filter((n): n is number => typeof n === 'number') : [];
+  } catch {
+    return [];
+  }
+}
+
+export function milestoneSeen(days: number): boolean {
+  return milestonesSeen().includes(days);
+}
+
+export function markMilestoneSeen(days: number): void {
+  kv.set(MILESTONES_KEY, JSON.stringify([...new Set([...milestonesSeen(), days])]));
+}
+
+/** Development only (`?previewMilestone`): every milestone unseen again, so
+ * the one the streak stands on rises on Home. Read at Home's next render. */
+export function devForgetMilestones(): void {
+  if (!__DEV__) return;
+  kv.remove(MILESTONES_KEY);
+}
+
+/**
+ * Whether the streak stands on a milestone whose moment has not been shown.
+ * Read outside Home too: Apple's review prompt waits for the milestone, and
+ * at a cold start it is asked before Home has mounted.
+ */
+export function milestoneOwed(current: number): boolean {
+  const milestone = milestoneFor(current);
+  return milestone != null && !milestoneSeen(milestone);
+}

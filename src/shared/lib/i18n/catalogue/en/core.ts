@@ -115,7 +115,7 @@ export const CORE_EN = {
   // `streak.title` is the clearest example of why fragments had to go: English
   // puts the count first and the noun last, Russian puts "подряд" (in a row)
   // after both, and Spanish needs "de" between them.
-  'streak.title': { one: '{count} Day Streak', other: '{count} Days Streak' },
+  'streak.title': { one: '{count}-day streak', other: '{count}-day streak' },
   /** The milestone moment: 3, 7, 10, 30 and 100 days. Ten is the big one. */
   'streak.milestoneBlurb': 'Every one of those days counted.',
   'streak.milestoneBigBlurb': 'Ten days. This is where a habit starts to hold.',

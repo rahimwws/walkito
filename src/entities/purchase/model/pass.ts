@@ -5,6 +5,8 @@ import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 import { supabase } from '@/shared/lib/supabase';
 
+import { grantDevAccess, revokeDevAccess } from './comp';
+
 /**
  * The 3-month pass, as the server counts it.
  *
@@ -118,6 +120,9 @@ function readDevPass(): { startsAt: number; expiresAt: number } | null {
 /** What the server last said. */
 let server: PassState = readCache();
 let devPass = readDevPass();
+/** Development only: the pretend pass is a preview (`devPreviewPass`) and
+ * stands over the server's window even when that one ends later. */
+let devForced = false;
 let devReview = __DEV__ && kv.getBoolean(DEV_REVIEW_KEY) === true;
 
 /** The server's answer with the development overrides on top: what every
@@ -126,7 +131,7 @@ let devReview = __DEV__ && kv.getBoolean(DEV_REVIEW_KEY) === true;
 function merge(): PassState {
   if (!__DEV__) return server;
   let next = server;
-  if (devPass != null && devPass.expiresAt > (server.expiresAt ?? 0)) {
+  if (devPass != null && (devForced || devPass.expiresAt > (server.expiresAt ?? 0))) {
     next = {
       ...next,
       startsAt: devPass.startsAt,
@@ -420,5 +425,29 @@ export function devGrantPass(now: number = Date.now()): void {
   const startsAt = Math.max(now, snapshot.expiresAt ?? 0);
   devPass = { startsAt: passAccess(now) ? (snapshot.startsAt ?? now) : startsAt, expiresAt: startsAt + PASS_DAYS * DAY_MS };
   kv.set(DEV_PASS_KEY, JSON.stringify(devPass));
+  changed();
+}
+
+/**
+ * Development only (`?previewPass=ending|ended|off`): a pretend pass that ends
+ * in five days (Home's card), one that ended yesterday (the expiry screen), or
+ * none. The first two take the pretend purchase away, as the pass is then the
+ * only access (it would outlast the pass and hide the card); `off` gives it
+ * back. The pretend window stands over the server's, whatever that holds.
+ */
+export function devPreviewPass(stage: 'ending' | 'ended' | 'off', now: number = Date.now()): void {
+  if (!__DEV__) return;
+  if (stage === 'off') {
+    devPass = null;
+    devForced = false;
+    kv.remove(DEV_PASS_KEY);
+    grantDevAccess();
+  } else {
+    const expiresAt = stage === 'ending' ? now + 5 * DAY_MS : now - DAY_MS;
+    devPass = { startsAt: expiresAt - PASS_DAYS * DAY_MS, expiresAt };
+    devForced = true;
+    kv.set(DEV_PASS_KEY, JSON.stringify(devPass));
+    revokeDevAccess();
+  }
   changed();
 }

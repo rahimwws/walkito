@@ -1,14 +1,16 @@
 import { useIsFocused, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Animated, { useDerivedValue, useSharedValue } from 'react-native-reanimated';
+import Animated, { runOnJS, useAnimatedReaction, useDerivedValue, useSharedValue } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
   BIG_MILESTONE,
   TODAY_INDEX,
   currentDay,
+  markMilestoneSeen,
   milestoneFor,
+  milestoneSeen,
   painOn,
   planSessionDone,
   toDateKey,
@@ -19,6 +21,8 @@ import {
 
 import { weekFacts } from '../model/week-facts';
 import { HomeTour, type DayOneRun } from '@/features/home-tour';
+import { useAccessLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
+import { useHomeTourState } from '@/entities/session';
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
@@ -36,9 +40,10 @@ import { IntroReveal, useSplashRevealed } from '@/shared/ui/splash';
 import { briefTokens } from '../model/brief';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
-import { kv } from '@/shared/lib/storage';
+import { holdReview } from '@/shared/lib/review';
 import { StreakWeek } from '@/shared/ui/streak-week';
 import { Confetti, type ConfettiOrigin } from '@/shared/ui/confetti';
+import { OverlayPortal } from '@/shared/ui/overlay-host';
 import { DailyStack } from './daily-stack';
 import { DayOneSession } from './day-one-session';
 import { GlideHeight } from './glide-height';
@@ -96,29 +101,13 @@ function todayLines(): { title: string; subtitle: string } {
  * the day the engine resolves — so the four things this screen says cannot
  * disagree with each other, which is the failure they were hard-coded into.
  */
-const MILESTONES_KEY = 'streak/milestones-seen';
-
-function milestoneSeen(days: number): boolean {
-  try {
-    return (JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]') as number[]).includes(days);
-  } catch {
-    return false;
-  }
-}
-
-function markMilestone(days: number): void {
-  let seen: number[] = [];
-  try {
-    seen = JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]') as number[];
-  } catch {
-    seen = [];
-  }
-  kv.set(MILESTONES_KEY, JSON.stringify([...new Set([...seen, days])]));
-}
-
 /** How long after the streak reaches a milestone its sheet rises: past the
  * check-in's own fold. */
 const MILESTONE_AFTER_MS = 1100;
+/** The milestone's sheet stays in the overlay this long after it is closed:
+ * its leaving (220 ms) and a margin, so the tour's modal does not present
+ * over it while it still shows. */
+const MILESTONE_GONE_MS = 320;
 
 export function HomePage() {
   const router = useRouter();
@@ -151,18 +140,80 @@ export function HomePage() {
    * spec. Each is shown once, ever; ten gets the confetti.
    */
   const milestone = milestoneFor(streak.current);
-  const [milestoneOpen, setMilestoneOpen] = useState(false);
-  useEffect(() => {
-    if (milestone == null || milestoneSeen(milestone)) return undefined;
-    // A beat late: the answer that reaches a milestone is still folding in,
-    // and the sheet rising in the same frame was one motion too many.
-    const timer = setTimeout(() => setMilestoneOpen(true), MILESTONE_AFTER_MS);
-    return () => clearTimeout(timer);
-  }, [milestone]);
+  /** The milestone whose sheet is up, held as its own number: a streak that
+   * moves while it is open cannot take the sheet away half shown. */
+  const [shownMilestone, setShownMilestone] = useState<ReturnType<typeof milestoneFor>>(null);
+  const milestoneOpen = shownMilestone != null;
+  /** The last one shown, for the sheet's words while it leaves. */
+  const [sheetMilestone, setSheetMilestone] = useState<ReturnType<typeof milestoneFor>>(null);
   /** The check-in's own sheet is up over Home: the list's mascot holds still. */
   const [checkSheet, setCheckSheet] = useState(false);
+  /** A session from the list, playing in its sheet. */
+  const [tasksSheet, setTasksSheet] = useState(false);
   /** The day-one session the "Day 1" card started, playing in its sheet. */
   const [dayOne, setDayOne] = useState<DayOneRun | null>(null);
+  /** The program pulled up over Home (the plan, a session in it). */
+  const [programUp, setProgramUp] = useState(false);
+  useAnimatedReaction(
+    () => (program?.progress.value ?? 0) > 0,
+    (up, was) => {
+      if (up !== was) runOnJS(setProgramUp)(up);
+    },
+    [program],
+  );
+  const tourState = useHomeTourState();
+  /** Skipped the paywall and not bought since: the offer wall stands over Home
+   * once the tour is done (the root's `tryingOut`). */
+  const skipped = usePaywallSkipped();
+  const entitled = useEntitled();
+  const lapsed = useAccessLapsed();
+  const walled = skipped && !entitled && !lapsed;
+  /** Home in front with nothing over it. The milestone's sheet is drawn over
+   * the tab bar and the dock (below), so over the program too, where it would
+   * cover the session's own celebration; it waits for that, for a session's
+   * sheet, the first run's card and tour and the offer wall, and rises a beat
+   * after they have gone. */
+  const homeClear =
+    focused &&
+    revealed &&
+    !planOver &&
+    !walled &&
+    tourState !== 'armed' &&
+    !programUp &&
+    !tasksSheet &&
+    !checkSheet &&
+    dayOne == null &&
+    !streakOpen;
+  useEffect(() => {
+    if (milestone == null || milestoneSeen(milestone) || !homeClear || milestoneOpen) return undefined;
+    // A beat late: the answer that reaches a milestone is still folding in,
+    // and the sheet rising in the same frame was one motion too many. It also
+    // lets a sheet that has just closed finish leaving.
+    const timer = setTimeout(() => {
+      setShownMilestone(milestone);
+      setSheetMilestone(milestone);
+    }, MILESTONE_AFTER_MS);
+    return () => clearTimeout(timer);
+  }, [milestone, homeClear, milestoneOpen]);
+  const closeMilestone = () => {
+    if (shownMilestone != null) markMilestoneSeen(shownMilestone);
+    setShownMilestone(null);
+  };
+  /** The sheet in the overlay: there while it is up, and while it leaves. */
+  const [milestoneUp, setMilestoneUp] = useState(false);
+  useEffect(() => {
+    if (milestoneOpen) {
+      setMilestoneUp(true);
+      return undefined;
+    }
+    const timer = setTimeout(() => setMilestoneUp(false), MILESTONE_GONE_MS);
+    return () => clearTimeout(timer);
+  }, [milestoneOpen]);
+  /** Apple's review prompt waits while a milestone is owed or on screen: the
+   * third open and a streak of seven both ask for it, and either would land
+   * on the sheet. */
+  const milestoneOwed = (milestone != null && !milestoneSeen(milestone)) || milestoneUp;
+  useEffect(() => (milestoneOwed ? holdReview() : undefined), [milestoneOwed]);
   /** A counter, not a flag: remounting on a new value is what re-runs every
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
@@ -321,7 +372,12 @@ export function HomePage() {
                 heights={{ views: checkInViews, row: checkInRow }}
               />
             }
-            second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet || dayOne != null} />}
+            second={
+              <TodayTasks
+                covered={milestoneOpen || streakOpen || checkSheet || dayOne != null}
+                onSheet={setTasksSheet}
+              />
+            }
           />
         </IntroReveal>
 
@@ -337,30 +393,32 @@ export function HomePage() {
       {/* Over everything, outside the scroller, and untouchable. */}
       {burst > 0 && <Confetti key={burst} origins={burstFrom != null ? [burstFrom] : undefined} delay={120} />}
 
-      {milestone != null && (
-        <CelebrationSheet
-          visible={milestoneOpen}
-          title={t('streak.title', { count: milestone })}
-          headlineColor={accents[scheme].orange.fill}
-          blurb={milestone === BIG_MILESTONE ? t('streak.milestoneBigBlurb') : t('streak.milestoneBlurb')}
-          confetti={milestone === BIG_MILESTONE}
-          emblem={milestone >= BIG_MILESTONE}
-          // Stands where the emblem was (the sheet drops the badge for him):
-          // thumbs up for three and seven, the jump for ten, the trophy for a
-          // month and a hundred. Paused while the sheet leaves.
-          mascot={<MilestoneMascot days={milestone} paused={!milestoneOpen} />}
-          onClose={() => {
-            markMilestone(milestone);
-            setMilestoneOpen(false);
-          }}
-        />
+      {/* Over the tab bar and the dock, which sit above Home's own views and
+          covered its button: drawn in the tabs' overlay, still in the tree,
+          so every sheet still presents over it. */}
+      {milestoneUp && sheetMilestone != null && (
+        <OverlayPortal>
+          <CelebrationSheet
+            visible={milestoneOpen}
+            title={t('streak.title', { count: sheetMilestone })}
+            headlineColor={accents[scheme].orange.fill}
+            blurb={sheetMilestone === BIG_MILESTONE ? t('streak.milestoneBigBlurb') : t('streak.milestoneBlurb')}
+            confetti={sheetMilestone === BIG_MILESTONE}
+            emblem={sheetMilestone >= BIG_MILESTONE}
+            // Stands where the emblem was (the sheet drops the badge for him):
+            // thumbs up for three and seven, the jump for ten, the trophy for a
+            // month and a hundred. Paused while the sheet leaves.
+            mascot={<MilestoneMascot days={sheetMilestone} paused={!milestoneOpen} />}
+            onClose={closeMilestone}
+          />
+        </OverlayPortal>
       )}
 
       {/* The first run, after the purchase or the skip: the "Day 1" card and
           then the tour, over Home while it is in front and nothing else is
           over it. The card's session plays in Home's own sheet below. */}
       <HomeTour
-        visible={focused && revealed && !planOver && !milestoneOpen && !streakOpen && !checkSheet}
+        visible={focused && revealed && !planOver && !milestoneUp && !streakOpen && !checkSheet}
         sessionOpen={dayOne != null}
         onStartDayOne={setDayOne}
       />

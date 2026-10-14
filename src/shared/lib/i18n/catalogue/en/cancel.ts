@@ -80,6 +80,8 @@ export const CANCEL_EN = {
   'cancel.pause.freeMonthTitle': 'Take a free month',
   'cancel.pause.freeMonthBody':
     'Keep your plan, and your next month costs nothing. After it, Walkito Plus renews as it does now.',
+  'cancel.pause.freeMonthBodyYear':
+    'Keep your plan, and when the year you paid for is up, the next month costs nothing. After it, Walkito Plus renews as it does now.',
   'cancel.pause.freeMonthCta': 'Take a free month',
   'cancel.pause.freeMonthTerms':
     'The free month starts at your next renewal. You can still cancel any time in your subscription settings.',
@@ -116,6 +118,7 @@ export const CANCEL_EN = {
   // ── All set ──────────────────────────────────────────────────────────────
   'cancel.done.title': 'All set',
   'cancel.done.freeMonth': 'Your next month is free. Thank you for staying.',
+  'cancel.done.freeMonthYear': 'When the year you paid for is up, the next month is free. Thank you for staying.',
   'cancel.done.lighter': 'Your plan is lighter from today. You can change it any time in Settings.',
   'cancel.done.short': {
     one: 'Your sessions are {count} minute from today. You can change it any time in Settings.',

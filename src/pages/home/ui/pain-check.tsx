@@ -173,6 +173,7 @@ export type PainCheckProps = {
  * other tips away — and one primary underneath commits it.
  */
 export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainCheckProps) {
+  const cardsAnchor = useSpotlightAnchor('home.pain');
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
@@ -529,7 +530,9 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
         </Text>
       </View>
 
-      <View style={glass.stage} accessibilityRole="radiogroup">
+      {/* The Home tour's second stop lights the pair: lit alone, "It hurts"
+          was half under "No pain today", whose edge the light cut through. */}
+      <View ref={cardsAnchor} collapsable={false} style={glass.stage} accessibilityRole="radiogroup">
         {CARDS.map((card) => (
           <PainCard
             key={card.key}
@@ -1181,7 +1184,6 @@ function PainCard({
   const hasGlass = isLiquidGlassAvailable();
   const t = useT();
   const title = t(card.title);
-  const tourAnchor = useSpotlightAnchor('home.pain');
 
   const left = card.side === 'left';
   const pressed = useSharedValue(0);
@@ -1255,8 +1257,6 @@ function PainCard({
 
   return (
     <Animated.View
-      // "It hurts" is the Home tour's second stop.
-      ref={card.key === 'pain' ? tourAnchor : undefined}
       collapsable={false}
       style={[
         glass.slot,

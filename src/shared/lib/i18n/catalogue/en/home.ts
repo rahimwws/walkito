@@ -112,7 +112,7 @@ export const HOME_EN = {
   'home.duration': '{hours}h {minutes}m',
 
   // ── Today's list ─────────────────────────────────────────────────────────
-  'home.tasksTitle': 'Today’s Tasks',
+  'home.tasksTitle': 'Today’s tasks',
   'home.libraryTitle': 'For right now',
   'home.allDoneTitle': 'Done for today',
   /** Under the title when there is no next session to count down to - three

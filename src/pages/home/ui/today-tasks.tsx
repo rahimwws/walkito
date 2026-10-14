@@ -4,7 +4,7 @@ import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
@@ -264,9 +264,12 @@ function chipFor(seconds: number, t: Translate): string | undefined {
  */
 export function TodayTasks({
   covered = false,
+  onSheet,
 }: {
   /** A sheet is over Home (the streak, a milestone): the mascots hold still under it. */
   covered?: boolean;
+  /** A session's sheet opened or closed: Home holds what would rise over it. */
+  onSheet?: (open: boolean) => void;
 } = {}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -283,6 +286,12 @@ export function TodayTasks({
   const [testing, setTesting] = useState<'take' | 'review' | null>(null);
   /** The 2-minute version, playing. */
   const [short, setShort] = useState<ProgramDay | null>(null);
+  const sheetOpen = open != null || testing != null || short != null;
+  const sheetRef = useRef(onSheet);
+  sheetRef.current = onSheet;
+  useEffect(() => {
+    sheetRef.current?.(sheetOpen);
+  }, [sheetOpen]);
 
   /**
    * Today's work, recomputed whenever the record behind it moves.
@@ -545,7 +554,7 @@ export function TodayTasks({
       <Modal
         animationType="slide"
         presentationStyle="pageSheet"
-        visible={open != null || testing != null || short != null}
+        visible={sheetOpen}
         onRequestClose={() => {
           setOpen(null);
           setTesting(null);

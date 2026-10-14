@@ -56,7 +56,7 @@ export type Outcome =
        * over "Turn off auto-renewal". */
       renews: boolean;
     }
-  | { kind: 'free_month'; pending: boolean }
+  | { kind: 'free_month'; pending: boolean; yearly: boolean }
   | { kind: 'lighter' }
   | { kind: 'short_sessions'; minutes: number };
 
@@ -197,7 +197,7 @@ export function PauseReply({ options, offers, busy, problem, live, on }: ReplyPr
           art="hotBeverage"
           tone="teal"
           title={t('cancel.pause.freeMonthTitle')}
-          body={t('cancel.pause.freeMonthBody')}
+          body={t(options.yearly ? 'cancel.pause.freeMonthBodyYear' : 'cancel.pause.freeMonthBody')}
           cta={t('cancel.pause.freeMonthCta')}
           busy={busy === 'free_month'}
           terms={t('cancel.pause.freeMonthTerms')}
@@ -329,7 +329,7 @@ export function DoneScreen({ outcome, live, onBack }: { outcome: Outcome; live: 
             })
           : t('pass.done.plain');
       case 'free_month':
-        return t('cancel.done.freeMonth');
+        return t(outcome.yearly ? 'cancel.done.freeMonthYear' : 'cancel.done.freeMonth');
       case 'lighter':
         return t('cancel.done.lighter');
       case 'short_sessions':

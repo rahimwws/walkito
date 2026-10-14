@@ -10,7 +10,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { OfferSheet } from '@/features/home-offer';
-import { usePassWindow, useSubscription, type PassWindow } from '@/entities/purchase';
+import { usePassEndsAt, usePassWindow, useSubscription, type PassWindow } from '@/entities/purchase';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT } from '@/shared/lib/i18n';
@@ -37,11 +37,11 @@ function dayKey(now: number): string {
   return `${day.getFullYear()}-${day.getMonth() + 1}-${day.getDate()}`;
 }
 
-/** Whether a pass runs now and ends within `WARN_DAYS`. */
-function endingSoon(pass: PassWindow, now: number): boolean {
-  const { startsAt, expiresAt } = pass;
-  if (startsAt == null || expiresAt == null) return false;
-  return startsAt <= now && now < expiresAt && expiresAt - now <= WARN_DAYS * DAY_MS;
+/** Whether a pass runs now and access ends, at `endsAt`, within `WARN_DAYS`. */
+function endingSoon(pass: PassWindow, endsAt: number, now: number): boolean {
+  const { startsAt } = pass;
+  if (startsAt == null) return false;
+  return startsAt <= now && now < endsAt && endsAt - now <= WARN_DAYS * DAY_MS;
 }
 
 /**
@@ -62,9 +62,11 @@ function endingSoon(pass: PassWindow, now: number): boolean {
  */
 export function PassEndingCard({ seen }: { seen: boolean }) {
   const pass = usePassWindow();
+  // Null under access by account or a lifetime purchase, as for the push.
+  const endsAt = usePassEndsAt();
   const now = Date.now();
-  if (!endingSoon(pass, now) || pass.expiresAt == null) return null;
-  return <Ending endsAt={pass.expiresAt} seen={seen} />;
+  if (endsAt == null || !endingSoon(pass, endsAt, now)) return null;
+  return <Ending endsAt={endsAt} seen={seen} />;
 }
 
 function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
@@ -87,7 +89,10 @@ function Ending({ endsAt, seen }: { endsAt: number; seen: boolean }) {
     track('pass_expiring_view');
   }, [shown, seen]);
 
-  const date = new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long' }).format(new Date(endsAt));
+  // Non-breaking, so the day never wraps away from its month.
+  const date = new Intl.DateTimeFormat(language, { day: 'numeric', month: 'long' })
+    .format(new Date(endsAt))
+    .replace(/ /g, '\u00a0');
 
   return (
     <>
@@ -133,15 +138,19 @@ function Arrive({ children }: { children: ReactNode }) {
   const room = useAnimatedStyle(() => ({ height: height.value }));
   return (
     <Animated.View style={[styles.room, room]}>
-      <Animated.View entering={FadeIn.duration(FADE_MS).reduceMotion(ReduceMotion.System)} onLayout={onLayout}>
-        {children}
-      </Animated.View>
+      {/* Measured out of the flow: laid out in the room, the card took the
+          room's own height, nothing, so the room never opened and the card
+          was never seen. */}
+      <View style={styles.measure} onLayout={onLayout}>
+        <Animated.View entering={FadeIn.duration(FADE_MS).reduceMotion(ReduceMotion.System)}>{children}</Animated.View>
+      </View>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
   room: { overflow: 'hidden' },
+  measure: { position: 'absolute', top: 0, left: 0, right: 0 },
   card: { marginTop: 28 },
   content: { gap: 14 },
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },

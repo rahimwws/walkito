@@ -345,4 +345,12 @@ export {
 } from './model/plan/finish';
 export { NEXT_SESSION_HORIZON_DAYS, nextSession, useNextSession, type NextSession } from './model/plan/next-session';
 export { requestPlanPush } from './model/plan/push-request';
-export { BIG_MILESTONE, STREAK_MILESTONES, milestoneFor } from './model/streak';
+export {
+  BIG_MILESTONE,
+  STREAK_MILESTONES,
+  devForgetMilestones,
+  markMilestoneSeen,
+  milestoneFor,
+  milestoneOwed,
+  milestoneSeen,
+} from './model/streak';

@@ -42,7 +42,7 @@ export const PASS_RU = {
   'pass.settings.queued': 'Пропуск на 3 месяца · с {date}',
   'pass.settings.hint': 'Один платёж. Ничего не продлевается.',
   'pass.settings.specialOffers': 'Специальные предложения',
-  'pass.settings.specialOffersHint': 'Ограниченное предложение с пропуском на 3 месяца',
+  'pass.settings.specialOffersHint': 'Год, навсегда и пропуск на 3 месяца',
 
   'pass.ending.title': 'Ваши 3 месяца закончатся {date}',
   'pass.ending.body': 'План и всё, что вы записали, останутся. Выберите план, чтобы продолжить.',

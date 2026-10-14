@@ -228,6 +228,8 @@ function trialView(plan: Plan, trial: FreeTrial, t: Translate): OfferView {
 function dealCard(
   { slot, plan }: SlottedPlan,
   standard: { annual: Plan | null; lifetime: Plan | null },
+  /** A deadline stands behind it: "only this once" is true only then. */
+  timed: boolean,
   t: Translate,
 ): DealWords {
   if (slot === 'pass') {
@@ -252,7 +254,7 @@ function dealCard(
       ? {
           kind: 'deal',
           off: t('homeOffer.card.off', { percent }),
-          promise: t('homeOffer.card.onlyOnce'),
+          promise: timed ? t('homeOffer.card.onlyOnce') : null,
           was: {
             from: priceOf(regular),
             to: paid,
@@ -355,8 +357,11 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
     const lifetime = content.plans.some((p) => p.slot === 'lifetime');
     const pass = content.plans.some((p) => p.slot === 'pass');
     const standard = { annual: content.standardAnnual, lifetime: content.standardLifetime };
+    // Without a deadline (the App Review account's sheet in Settings) nothing
+    // about it is limited, so it is not called so.
+    const timed = content.endsAt != null;
     return {
-      title: t('homeOffer.comeback.title'),
+      title: timed ? t('homeOffer.comeback.title') : t('pass.settings.specialOffers'),
       body: comebackBody(year, lifetime, pass, t),
       mascot: 'deal',
       endsAt: content.endsAt,
@@ -368,8 +373,8 @@ export function viewFor(content: OfferContent, selected: Slot, t: Translate): Of
               caption: dealTabCaption(p, content.plans.length > 2, t),
             }))
           : null,
-      deals: content.plans.length > 1 ? content.plans.map((p) => dealCard(p, standard, t)) : [],
-      card: dealCard(chosen, standard, t),
+      deals: content.plans.length > 1 ? content.plans.map((p) => dealCard(p, standard, timed, t)) : [],
+      card: dealCard(chosen, standard, timed, t),
       cta: t('homeOffer.comeback.cta'),
       plan: chosen.plan,
       trial: null,

@@ -43,7 +43,7 @@ export const PASS_DE = {
   'pass.settings.queued': '3-Monats-Pass · ab {date}',
   'pass.settings.hint': 'Eine Zahlung. Nichts verlängert sich.',
   'pass.settings.specialOffers': 'Sonderangebote',
-  'pass.settings.specialOffersHint': 'Das begrenzte Angebot mit dem 3-Monats-Pass',
+  'pass.settings.specialOffersHint': 'Ein Jahr, lebenslang und der 3-Monats-Pass',
 
   'pass.ending.title': 'Deine 3 Monate enden am {date}',
   'pass.ending.body': 'Dein Plan und alles, was du eingetragen hast, bleiben. Wähle einen Plan, um weiterzumachen.',

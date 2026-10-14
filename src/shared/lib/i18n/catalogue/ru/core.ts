@@ -7,7 +7,7 @@
  * covers 2, 3, 4, 22, 23, 24, and without it the app renders "2 дней".
  *
  * Sentences are rewritten rather than transposed. `streak.title` is the
- * clearest case: English's "3 Days Streak" has no Russian word order, so the
+ * clearest case: English's "3-day streak" has no Russian word order, so the
  * idiom Russians actually use for a streak — "{count} дней подряд", days in a
  * row — is what is written, and the fact that it shares no structure with the
  * English is the point of holding whole templates per language.

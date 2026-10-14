@@ -41,6 +41,50 @@ export async function askForReview(_win: ReviewWin, now: number = Date.now()): P
   }
 }
 
+// ── Held ─────────────────────────────────────────────────────────────────────
+
+/**
+ * Whether the app is saying well done itself right now (a streak milestone's
+ * sheet, or one about to rise), so Apple's prompt waits until it is over: the
+ * system's card over ours is two celebrations at once, and the milestone of
+ * seven is also the review's `streak-7`. Counted, so one holder cannot
+ * release another's hold.
+ */
+let holds = 0;
+const heldListeners = new Set<() => void>();
+
+function heldChanged(): void {
+  for (const listener of heldListeners) listener();
+}
+
+/** Holds the prompt until the function it returns is called. */
+export function holdReview(): () => void {
+  holds += 1;
+  heldChanged();
+  let released = false;
+  return () => {
+    if (released) return;
+    released = true;
+    holds -= 1;
+    heldChanged();
+  };
+}
+
+export function reviewHeld(): boolean {
+  return holds > 0;
+}
+
+export function useReviewHeld(): boolean {
+  return useSyncExternalStore(
+    (listener) => {
+      heldListeners.add(listener);
+      return () => heldListeners.delete(listener);
+    },
+    reviewHeld,
+    reviewHeld,
+  );
+}
+
 // ── Opens ────────────────────────────────────────────────────────────────────
 
 /**

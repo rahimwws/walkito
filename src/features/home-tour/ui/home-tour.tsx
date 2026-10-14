@@ -55,7 +55,8 @@ type Stop = { anchor: string; note: Key; padX: number; padY: number; radius: num
  * button, where every session after the first one begins. */
 const STOPS: readonly Stop[] = [
   { anchor: 'home.overview', note: 'home.tour.overview', padX: 14, padY: 4, radius: 28 },
-  { anchor: 'home.pain', note: 'home.tour.pain', padX: 8, padY: 8, radius: 34 },
+  // Both check-in cards, tilted: room for their corners.
+  { anchor: 'home.pain', note: 'home.tour.pain', padX: 8, padY: 14, radius: 34 },
   { anchor: 'dock.start', note: 'home.tour.session', padX: 4, padY: 4, radius: 30 },
 ];
 const LAST = STOPS.length - 1;
@@ -113,7 +114,9 @@ export function HomeTour({ visible, sessionOpen, onStartDayOne }: HomeTourProps)
   const state = useHomeTourState();
   const stage = useHomeTourStage();
   /** Skipped the paywall and has not bought since: the card offers the plans. */
-  const skipper = usePaywallSkipped() && !useEntitled();
+  const skipped = usePaywallSkipped();
+  const entitled = useEntitled();
+  const skipper = skipped && !entitled;
   const armed = state === 'armed';
 
   // A tour armed by the build before the day-one session stored no stage.

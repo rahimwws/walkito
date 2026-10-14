@@ -51,6 +51,7 @@ export function devPreviewCancel(period: 'annual' | 'monthly', start: CancelReas
     subscription: sample.subscription,
     options: {
       freeMonth: sample.freeMonth,
+      yearly: sample.subscription.period === 'annual',
       playPause: sample.subscription.store === 'play_store',
       pass: sample.pass,
     },

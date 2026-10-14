@@ -48,6 +48,8 @@ export const CANCEL_ES = {
   'cancel.pause.freeMonthTitle': 'Un mes gratis',
   'cancel.pause.freeMonthBody':
     'Conserva tu plan y tu próximo mes no cuesta nada. Después, Walkito Plus se renueva como ahora.',
+  'cancel.pause.freeMonthBodyYear':
+    'Conserva tu plan y, cuando termine el año que pagaste, el mes siguiente no cuesta nada. Después, Walkito Plus se renueva como ahora.',
   'cancel.pause.freeMonthCta': 'Quiero un mes gratis',
   'cancel.pause.freeMonthTerms':
     'El mes gratis empieza en tu próxima renovación. Puedes cancelar cuando quieras en los ajustes de suscripciones.',
@@ -83,6 +85,7 @@ export const CANCEL_ES = {
 
   'cancel.done.title': 'Listo',
   'cancel.done.freeMonth': 'Tu próximo mes es gratis. Gracias por quedarte.',
+  'cancel.done.freeMonthYear': 'Cuando termine el año que pagaste, el mes siguiente es gratis. Gracias por quedarte.',
   'cancel.done.lighter': 'Tu plan es más ligero desde hoy. Puedes cambiarlo cuando quieras en Ajustes.',
   'cancel.done.short': {
     one: 'Tus sesiones duran {count} minuto desde hoy. Puedes cambiarlo cuando quieras en Ajustes.',

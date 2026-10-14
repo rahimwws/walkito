@@ -5,12 +5,13 @@ import { Linking } from 'react-native';
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { previewNotification } from '@/entities/notifications';
-import { currentDay, devClearCheckIn } from '@/entities/program';
+import { currentDay, devClearCheckIn, devForgetMilestones } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
 import {
   devPreviewComeback,
   devPreviewHomeOffer,
   devPreviewOfferEnded,
+  devPreviewPass,
   devPreviewPaywall,
   devSetReviewMode,
   grantDevAccess,
@@ -53,6 +54,10 @@ const OFFER_ENDED_PARAM = /[?&]previewOfferEnded\b/;
  * card; `?previewTour=tour` from the tour's first stop, past the session;
  * `?previewTour=done` ends it. */
 const TOUR_PARAM = /[?&]previewTour(?:=(\w+))?/;
+/** `walkito.dev://?previewMilestone` forgets the streak milestones already
+ * shown, so the one the streak stands on rises on Home again (with a streak of
+ * 3, 7, 10, 30 or 100). */
+const MILESTONE_PARAM = /[?&]previewMilestone\b/;
 /** `walkito.dev://?resetCheckIn` leaves today's check-in unanswered again. */
 const RESET_CHECKIN_PARAM = /[?&]resetCheckIn\b/;
 /** `walkito.dev://?previewOfferWall` raises the offer that follows the tour
@@ -75,6 +80,10 @@ const PASS_SET_PARAM = /[?&]previewPassSet\b/;
  * the server sets it on the App Review account (`=off` to stop): "Manage
  * subscription" over a stand-in, and "Special offers", in Settings. */
 const REVIEW_MODE_PARAM = /[?&]previewReviewMode(?:=(\w+))?/;
+/** `walkito.dev://?previewPass=ending` a pretend 3-month pass ending in five
+ * days (Home's card); `=ended` one that ended yesterday, with the pretend
+ * purchase taken away (the expiry screen); `=off` none. */
+const PASS_PARAM = /[?&]previewPass=(ending|ended|off)\b/;
 /** Settings is pushed once the router has acted on the link itself, which
  * sends it to Home: pushed sooner, Home would land on top of it. */
 const CANCEL_PUSH_MS = 400;
@@ -132,8 +141,9 @@ function previewPush(url: string): void {
  * from the home or lock screen; `?samplePrices[=off]`, `?previewPaywall`,
  * `?previewHomeOffer`, `?previewComeback` and `?previewOfferEnded` set up the
  * paywall and the offers after its "Not now" (see each above); `?previewCancel[=monthly|budget]`
- * opens the cancel flow in Settings; `?previewLimitedOffer`, `?previewPassSet`
- * and `?previewReviewMode[=off]` the 3-month pass's screens. The onboarding page answers
+ * opens the cancel flow in Settings; `?previewLimitedOffer`, `?previewPassSet`,
+ * `?previewPass=ending|ended|off` and `?previewReviewMode[=off]` the 3-month
+ * pass's screens. The onboarding page answers
  * `?onboardingStep=<key>`, the setup page `?authPreview=<state>`.
  * The whole body folds away in a release bundle.
  */
@@ -157,6 +167,7 @@ export function useDevLinks(): void {
         if (COMEBACK_PARAM.test(url)) devPreviewComeback();
         if (OFFER_ENDED_PARAM.test(url)) devPreviewOfferEnded();
         if (RESET_CHECKIN_PARAM.test(url)) devClearCheckIn(currentDay());
+        if (MILESTONE_PARAM.test(url)) devForgetMilestones();
         const wall = WALL_PARAM.exec(url);
         if (wall != null) devPreviewOfferWall(wall[1] !== 'off');
         const tour = TOUR_PARAM.exec(url);
@@ -167,6 +178,8 @@ export function useDevLinks(): void {
         const review = REVIEW_MODE_PARAM.exec(url);
         if (review != null) devSetReviewMode(review[1] !== 'off');
         if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
+        const pass = PASS_PARAM.exec(url);
+        if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
         previewLimitedOffer(url);
         previewCancel(url);
         previewPush(url);

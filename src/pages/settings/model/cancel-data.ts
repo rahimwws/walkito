@@ -34,6 +34,9 @@ import { SHORTEST_MINUTES, lighterPlan, yourChanges, type Change, type FirstStep
 export type CancelOptions = {
   /** A free month, on the plan held. */
   readonly freeMonth: RetentionOffer | null;
+  /** The plan held is billed by the year: its free month comes once the year
+   * paid for is up, not next month, and the words say so. */
+  readonly yearly: boolean;
   /** Google Play's own pause, on Android. Nothing to ask the store for. */
   readonly playPause: boolean;
   /** The 3-month pass at the retention price, for "It doesn't fit my
@@ -42,7 +45,7 @@ export type CancelOptions = {
   readonly pass: Plan | null;
 };
 
-export const NO_OPTIONS: CancelOptions = { freeMonth: null, playPause: false, pass: null };
+export const NO_OPTIONS: CancelOptions = { freeMonth: null, yearly: false, playPause: false, pass: null };
 
 /** Past this an ask is given up on and offers nothing. Each ask has its own,
  * so a slow one (Apple signing the free month) cannot take the other with it. */
@@ -105,6 +108,7 @@ export async function loadCancelOptions(
   const [freeMonth, pass] = await Promise.all([freeMonthAsk, budgetAsk]);
   return {
     freeMonth: freeMonth != null && isFreeMonth(freeMonth) ? freeMonth : null,
+    yearly: held.period === 'annual',
     playPause: pause === 'play_pause',
     pass,
   };

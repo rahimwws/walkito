@@ -39,6 +39,7 @@ export {
 export {
   awaitPassGrant,
   devGrantPass,
+  devPreviewPass,
   devSetReviewMode,
   passAccess,
   passEverBought,
@@ -68,7 +69,7 @@ export {
   startPurchases,
   storeDiagnosis,
 } from './model/store';
-export { useEntitled } from './model/entitlement';
+export { useEntitled, usePassEndsAt } from './model/entitlement';
 export { compAccess, grantDevAccess, refreshCompAccess, startCompAccess } from './model/comp';
 export {
   accessLapsed,

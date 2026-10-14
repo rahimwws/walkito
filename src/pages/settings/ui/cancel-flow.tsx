@@ -371,7 +371,7 @@ export function CancelFlow({ visible, held, preview, onClose, onCancelAnyway, on
           if (!quiet) markRetentionTaken();
           accepted(reason, offer);
           void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-          const outcome: Outcome = { kind: 'free_month', pending: result.status === 'pending' };
+          const outcome: Outcome = { kind: 'free_month', pending: result.status === 'pending', yearly: from.yearly };
           go({ kind: 'done', reason, outcome });
         } else if (result.status === 'failed') {
           setProblem(result.message);

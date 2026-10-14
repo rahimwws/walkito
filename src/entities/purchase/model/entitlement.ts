@@ -24,3 +24,18 @@ export function useEntitled(): boolean {
     () => false,
   );
 }
+
+/**
+ * When a 3-month pass ends with nothing after it to keep the app open, as a
+ * hook, in epoch ms: null while a subscription that renews past it, a lifetime
+ * purchase or access by account outlasts it (`purchases.passEndsAt`). The
+ * value the 7-day push is laid from, so Home's card and the push agree. A
+ * number rather than the Date, so the snapshot holds still between changes.
+ */
+export function usePassEndsAt(): number | null {
+  return useSyncExternalStore(
+    (listener) => purchases.subscribe(listener),
+    () => purchases.passEndsAt()?.getTime() ?? null,
+    () => null,
+  );
+}
