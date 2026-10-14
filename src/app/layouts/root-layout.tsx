@@ -19,6 +19,7 @@ import {
   useAppUsage,
   useQueuedReview,
   useReviewAtWin,
+  useReviewOnThirdOpen,
   useProgramClock,
   useClipPrefetch,
   useLiveActivityCleanup,
@@ -34,7 +35,6 @@ import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useDevOfferWall } from '@/features/home-tour';
 import { HomeWidgetSync } from '@/features/home-widget';
 import { SessionDonePreview } from '@/widgets/session-player';
-import { useFirstTestDone } from '@/entities/program';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import {
   armHomeTour,
@@ -189,23 +189,26 @@ function RootLayoutInner() {
   // onboarding was done open through the second hook too.
   //
   // Somebody who skipped the paywall gets the tabs too, for what is free: the
-  // Home tour and the first test (`tryingOut`). Once the test is on record the
-  // offer wall stands over Home (`OfferWall`) until a purchase, so the rest of
-  // the app stays behind it, as it stayed behind the paywall.
+  // "Day 1" card's two-minute session and the Home tour after it
+  // (`tryingOut`). Once the tour is done the offer wall stands over Home
+  // (`OfferWall`) until a purchase, so the rest of the app stays behind it, as
+  // it stayed behind the paywall.
   const skipped = usePaywallSkipped();
-  const firstTested = useFirstTestDone();
   const tourState = useHomeTourState();
   const tryingOut = onboarded && !entitled && !lapsed && skipped;
   const devWall = useDevOfferWall();
-  const offerWall = (tryingOut && firstTested) || devWall;
+  const offerWall = (tryingOut && tourState === 'done') || devWall;
   // A skip from before the tour existed has no tour armed: it gets one, or
-  // Home would be open with nothing leading to the test.
+  // Home would be open with nothing in front of it and no offer after.
   useEffect(() => {
     if (tryingOut && tourState === 'off') armHomeTour();
   }, [tryingOut, tourState]);
   const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing) || tryingOut);
   useOneLinks(tabsReachable);
   usePendingLink(tabsReachable);
+  // Apple's review prompt at the third open, once Home is theirs: bought, past
+  // the setup, the "Day 1" card and the tour, and no offer over it.
+  useReviewOnThirdOpen(tabsReachable && entitled && tourState !== 'armed' && !offerWall);
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
   // root because the earliest moment is the point — the player swept these too,
   // but only when a new session began.
@@ -412,7 +415,8 @@ function RootLayoutInner() {
                   than this whole layout. */}
               <HomeWidgetSync enabled={onboarded} />
               {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
-              {/* The offer after the free first test, over a blurred Home. */}
+              {/* The offer after the free first run (the day-one session and the
+                  tour), over a blurred Home. */}
               {(fontsReady || fontError) && <OfferWall visible={offerWall} />}
               {/* Development only: the end-of-session sheet without finishing a
                   session (`?previewDone`, `?previewDone=stopped`). */}

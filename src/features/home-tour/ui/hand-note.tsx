@@ -36,7 +36,8 @@ export type HandNoteProps = {
   /** The arrow, from under (or over) the words to the edge of the place. */
   from: Point;
   to: Point;
-  /** Under the words, appearing with them: the "Next" pill on the first stops. */
+  /** Under the words, appearing with them: the stop's pill, "Next", or "Done"
+   * on the last. */
   children?: ReactNode;
 };
 

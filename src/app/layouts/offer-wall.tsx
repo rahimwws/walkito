@@ -1,5 +1,5 @@
 import { BlurView } from 'expo-blur';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Modal, Platform, StyleSheet, View } from 'react-native';
 import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
@@ -8,11 +8,17 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 const BLUR = 36;
 const IN_MS = 520;
+/** Raised by the tour's last tap, it waits for the tour: the last stop fades
+ * out (220 ms) and only then takes its modal down, and one modal presenting
+ * while another is still up does not show on iOS. A launch onto the wall has
+ * nothing to wait for and presents at once, as it always did. */
+const PRESENT_AFTER_MS = 360;
 
 /**
- * The offer after the free first test, for somebody who skipped the paywall:
- * Home stays where it was, blurred, and the one-time trial offer (and the
- * offers after it, `OfferScreen`) stands over it.
+ * The offer after the free first run (the "Day 1" session and the Home tour),
+ * for somebody who skipped the paywall: Home stays where it was, blurred, and
+ * the one-time trial offer (and the offers after it, `OfferScreen`) stands
+ * over it.
  *
  * A hard wall, as the paywall is: no close, and Android's back does nothing.
  * Buying or restoring makes `entitled` true, the root stops rendering this and
@@ -24,22 +30,38 @@ export function OfferWall({ visible }: { visible: boolean }) {
   const scheme = useColorScheme();
   const [mounted, setMounted] = useState(visible);
   const progress = useSharedValue(0);
+  /** Up from the first frame: a launch onto the wall, not the tour's end. */
+  const atLaunch = useRef(visible);
 
   useEffect(() => {
     if (!visible) {
+      atLaunch.current = false;
       setMounted(false);
       progress.value = 0;
       return undefined;
     }
-    setMounted(true);
-    const frame = requestAnimationFrame(() => {
-      progress.value = withTiming(1, {
-        duration: IN_MS,
-        easing: Easing.out(Easing.cubic),
-        reduceMotion: ReduceMotion.System,
+    let frame = 0;
+    const present = () => {
+      setMounted(true);
+      frame = requestAnimationFrame(() => {
+        progress.value = withTiming(1, {
+          duration: IN_MS,
+          easing: Easing.out(Easing.cubic),
+          reduceMotion: ReduceMotion.System,
+        });
       });
-    });
-    return () => cancelAnimationFrame(frame);
+    };
+    const wait = atLaunch.current ? 0 : PRESENT_AFTER_MS;
+    atLaunch.current = false;
+    if (wait === 0) {
+      present();
+      return () => cancelAnimationFrame(frame);
+    }
+    const timer = setTimeout(present, wait);
+    return () => {
+      clearTimeout(timer);
+      cancelAnimationFrame(frame);
+    };
   }, [visible, progress]);
 
   const fade = useAnimatedStyle(() => ({ opacity: progress.value }));

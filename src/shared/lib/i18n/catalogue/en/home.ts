@@ -152,11 +152,16 @@ export const HOME_EN = {
   /** The Home tour's handwritten notes (Caveat), one per stop, and its controls. */
   'home.tour.overview': 'Your feet at a glance, every morning',
   'home.tour.pain': 'Something hurts? Tap here and note it',
-  'home.tour.test': 'Start here: a short test sets your starting point',
   'home.tour.session': 'Your sessions start here',
   'home.tour.next': 'Next',
-  'home.tour.startTest': 'Start the test',
   'home.tour.stepOf': 'Step {n} of {total}',
+  /** The "Day 1" card over Home before the tour: the first session, two easy
+   * minutes. The line is written for two (`DAY_ONE_MINUTES`); the chip
+   * counts them. */
+  'home.day1.title': 'Day 1',
+  'home.day1.body': 'Two easy minutes to wake your feet up.',
+  'home.day1.minutes': { one: '{count} minute', other: '{count} minutes' },
+  'home.day1.start': 'Start',
   'home.noPain': 'No pain today',
   'home.logCheckIn': 'Log today’s check-in',
   'home.checkInAgain': 'Check in again',

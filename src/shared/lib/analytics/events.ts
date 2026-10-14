@@ -156,14 +156,19 @@ export type AnalyticsEvents = {
   widget_removed: { count: number };
 
   // ── Home tour ────────────────────────────────────────────────────────────
-  /** The tour over Home after the purchase or the skip: its stops, 0 the
-   * overview, 1 "It hurts", 2 the start button that opens the first test. */
+  /** "Start" on the "Day 1" card over Home, after the purchase or the skip:
+   * the two-minute first session opened. Which moves it held is left out,
+   * since they follow where it hurts. */
+  day1_session_started: Record<string, never>;
+  /** That session's last move ran out and its closing sheet was closed: it is
+   * on record as the day's session, and the tour comes next. */
+  day1_session_completed: Record<string, never>;
+  /** The tour over Home after the day-one session: its stops, 0 the
+   * overview, 1 "It hurts", 2 the start button. */
   home_tour_step_viewed: { step: number };
-  /** The last stop tapped: the first test opened from it. */
-  home_tour_test_opened: Record<string, never>;
-  /** The tour ended: the first test is on record (`tested`), or it was
-   * already there and the start button was tapped. */
-  home_tour_completed: { tested: boolean };
+  /** The tour's last stop tapped, the end of the first-run flow: Home for a
+   * buyer, the offer over it for somebody who skipped the paywall. */
+  home_tour_completed: Record<string, never>;
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;

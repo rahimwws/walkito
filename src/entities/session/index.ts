@@ -30,9 +30,13 @@ export {
   armHomeTour,
   devRestartHomeTour,
   finishHomeTour,
+  homeTourStage,
   homeTourState,
+  setHomeTourStage,
   setHomeTourStep,
+  useHomeTourStage,
   useHomeTourState,
   useHomeTourStep,
+  type HomeTourStage,
   type HomeTourState,
 } from './model/home-tour';

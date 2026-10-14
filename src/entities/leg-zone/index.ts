@@ -13,4 +13,5 @@ export {
   type LegZone,
   type PainArea,
 } from './model/leg-zones';
+export { RELIEF_DEFAULT, RELIEF_LIMIT, reliefIdsFor } from './model/zone-relief';
 export { LEG_ASPECT, LegMap, type LegMapProps } from './ui/leg-map';

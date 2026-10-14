@@ -18,7 +18,7 @@ import {
 } from '@/entities/program';
 
 import { weekFacts } from '../model/week-facts';
-import { HomeTour } from '@/features/home-tour';
+import { HomeTour, type DayOneRun } from '@/features/home-tour';
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
@@ -40,6 +40,7 @@ import { kv } from '@/shared/lib/storage';
 import { StreakWeek } from '@/shared/ui/streak-week';
 import { Confetti, type ConfettiOrigin } from '@/shared/ui/confetti';
 import { DailyStack } from './daily-stack';
+import { DayOneSession } from './day-one-session';
 import { GlideHeight } from './glide-height';
 import { MilestoneMascot } from './milestone-mascot';
 import { CHECK_IN_GAP, PainCheck } from './pain-check';
@@ -159,6 +160,8 @@ export function HomePage() {
   }, [milestone]);
   /** The check-in's own sheet is up over Home: the list's mascot holds still. */
   const [checkSheet, setCheckSheet] = useState(false);
+  /** The day-one session the "Day 1" card started, playing in its sheet. */
+  const [dayOne, setDayOne] = useState<DayOneRun | null>(null);
   /** A counter, not a flag: remounting on a new value is what re-runs every
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
@@ -312,12 +315,12 @@ export function HomePage() {
                   setBurstFrom(origin ?? null);
                   setBurst((n) => n + 1);
                 }}
-                covered={milestoneOpen || streakOpen}
+                covered={milestoneOpen || streakOpen || dayOne != null}
                 onSheet={setCheckSheet}
                 heights={{ views: checkInViews, row: checkInRow }}
               />
             }
-            second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet} />}
+            second={<TodayTasks covered={milestoneOpen || streakOpen || checkSheet || dayOne != null} />}
           />
         </IntroReveal>
 
@@ -348,9 +351,15 @@ export function HomePage() {
         />
       )}
 
-      {/* The tour to the first test, after the purchase or the skip: over Home
-          while it is in front and nothing else is over it. */}
-      <HomeTour visible={focused && revealed && !planOver && !milestoneOpen && !streakOpen && !checkSheet} />
+      {/* The first run, after the purchase or the skip: the "Day 1" card and
+          then the tour, over Home while it is in front and nothing else is
+          over it. The card's session plays in Home's own sheet below. */}
+      <HomeTour
+        visible={focused && revealed && !planOver && !milestoneOpen && !streakOpen && !checkSheet}
+        sessionOpen={dayOne != null}
+        onStartDayOne={setDayOne}
+      />
+      <DayOneSession run={dayOne} onClose={() => setDayOne(null)} />
 
       <StreakSheet
         visible={streakOpen}
