@@ -37,19 +37,19 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-10-13',
+  updated: '2026-10-16',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
   h1: 'Flat feet exercises for fallen arches and arch pain',
-  lede: 'For flexible [flat feet](/flat-feet/), the exercise program with trial evidence combines short-foot exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of it changed arch shape more than in a control group. By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.',
+  lede: 'When you stand, your feet seem to roll in and the arches sink toward the floor. By evening your feet feel tired, and the arches ache. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch. For flexible [flat feet](/flat-feet/), the exercise program with trial evidence combines arch-building (short-foot) exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of these exercises changed arch shape more than in a control group.',
   intro: [
-    'Start with one check: whether your flat feet are flexible, meaning the arch comes back when you lift the foot. That trial, and the exercises below, are about flexible flat feet.',
-    'The evidence for short-foot training on its own is thinner. A 2024 review found no clear change overall, and a change in one arch measure only in programs that ran longer than six weeks. Both measured the shape of the arch, not pain. If your pain is near the heel, the heel pain research is the better guide.',
+    'Start with one check to see whether your flat feet are flexible, meaning your arch is visible when you’re not standing but drops when you stand. That trial, and the exercises below, are about flexible flat feet.',
+    'The evidence for arch-building exercises on their own is thinner. A 2024 review found no clear change overall, and a change in one arch measure only in programs that ran longer than six weeks. Both measured the shape of the arch, not pain. If your pain is near the heel, the heel pain research is the better guide.',
   ],
   takeaways: [
     'The randomized trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).',
-    'In that trial of 52 people, six weeks of short-foot, ankle, hip and stretching work changed arch shape more than in the control group (Brijwasi and Borkar, 2023).',
+    'In that trial of 52 people, six weeks of arch-building, ankle, hip and stretching exercises changed arch shape more than in the control group (Brijwasi and Borkar, 2023).',
     'A 2024 review of short-foot training found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks (Cheng and colleagues, 2024).',
     'A rigid flat foot, one that stays flat even off the ground, is structural, and exercise will not change its shape.',
     'These studies measured arch shape, not pain. For heel pain, the 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A, and strength training a B.',
@@ -124,7 +124,7 @@ export const FLAT_FEET_EN: Guide = {
           dose: '3 sets of 8, hold 5 seconds, each foot',
           often: 'Every session, while it is your level',
           feel: 'The arch lifting',
-          how: 'Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Don’t curl the toes. Curling them is the most common way to get this exercise wrong.',
+          how: 'Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Keep the outside of the foot on the ground and lift the arch to make a small cave under the foot. Don’t curl the toes. Curling them is the most common way to get this exercise wrong.',
           image: 'Exercise: short foot, seated',
           media: 'short_foot_seated',
           caption: 'Short foot, seated: pull the ball of the foot toward the heel so the arch lifts',
@@ -184,7 +184,7 @@ export const FLAT_FEET_EN: Guide = {
           dose: '3 holds of 20 seconds, each leg',
           often: 'Balance days',
           feel: 'Small corrections in the foot and ankle',
-          how: 'Stand on one foot and look at one fixed spot. Let the foot wobble. It’s meant to, because that wobble is the foot doing the balancing.',
+          how: 'Stand on one foot and look at one fixed spot. Let the foot wobble. It’s meant to, because that wobble is the foot doing the balancing. If you need to, lightly touch a counter or wall with your fingertips, so you keep building ankle endurance instead of giving up.',
           image: 'Exercise: single-leg hold',
           media: 'single_leg_hold',
           caption: 'Single-leg hold: stand on one foot and let it make small corrections',
@@ -208,7 +208,7 @@ export const FLAT_FEET_EN: Guide = {
           dose: '2 holds of 30 seconds for each stretch, each leg',
           often: 'Most sessions',
           feel: 'A stretch in the calf, then near the heel',
-          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward, and feel the stretch in the calf. Then bend the back knee until you feel it lower, near the heel. That is the soleus, the deeper calf muscle.',
+          how: 'Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward, and feel the stretch in the calf. Then keep the heel flat and bend the back knee until you feel it lower, near the heel. That is the soleus, the deeper calf muscle.',
           image: 'Exercise: calf and soleus stretch',
           media: 'calf_stretch_straight',
           caption: 'Calf stretch: hands on the wall, back leg straight, heel down',
@@ -218,10 +218,10 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       h2: 'How long before flat feet exercises change the arch?',
-      keyFact: 'In a trial of 52 people with flexible flat feet, six weeks of short-foot, ankle, hip and stretching work improved navicular drop by 0.4 cm and arch angle by 16 degrees more than a control group (Brijwasi and Borkar, 2023).',
+      keyFact: 'In a trial of 52 people with flexible flat feet, six weeks of arch-building (short-foot), ankle, hip and stretching work improved navicular drop by 0.4 cm and arch angle by 16 degrees more than a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'Flat feet exercises changed the arch after six weeks or more in the research so far, and only in flexible flat feet. In a trial of 52 people with **flexible** flat feet, a six-week program of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in the control group.',
-        'The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.',
+        'The evidence for arch-building exercises on their own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.',
         `That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for ${PROGRAM.goals.archHoldSeconds} seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}, so you can see whether it is moving. The trials are summarized on [the evidence page](/science/).`,
       ],
       sourceNote:
@@ -322,13 +322,13 @@ export const HEEL_PAIN_EN: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-13',
+  updated: '2026-10-16',
   title: '8 Plantar Fasciitis Exercises & Stretches (Guideline Doses)',
   description:
     'Eight plantar fasciitis exercises and stretches with doses, what to avoid, best time to stretch, and evidence grades from the 2023 guideline.',
   // Non-breaking space in «stretches for»: on a phone the balanced break otherwise leaves «stretches» alone on a line.
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
-  lede: 'The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
+  lede: 'The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight exercises, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
   intro: [
     'It’s also confusing to look up, because [everyone says something different](/plantar-fasciitis-youtube-study/). The evidence keeps pointing to the same two things: stretching the plantar fascia and calf, and strength work for the calf.',
     'In one trial of 48 people, all wearing [shoe inserts](/insoles-vs-exercises/), slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
@@ -362,7 +362,7 @@ export const HEEL_PAIN_EN: Guide = {
           ['Plantar fascia stretch', '2 holds of 30 seconds, each foot', 'Most sessions, in turn with the calf stretches', 'A stretch along the arch, not the calf', 'Pain reaches 6/10'],
           ['Calf stretch', '2 holds of 30 seconds, each leg', 'Most sessions, in turn with the other stretches', 'A stretch in the calf of the straight back leg', 'Pain reaches 6/10'],
           ['Soleus stretch', '2 holds of 30 seconds, each leg', 'Most sessions, in turn with the other stretches', 'A stretch low in the calf, near the heel', 'Pain reaches 6/10'],
-          ['Seated heel raises', '3 sets of 10, both feet', 'Strength days, 3 a week, never two in a row', 'Easy work in the calves, with almost no load on the heel', 'Pain reaches 6/10'],
+          ['Seated heel raises', '3 sets of 10, both feet', 'Strength days, 3 a week, never two in a row', 'Work low in the calf (the soleus), with almost no load on the heel', 'Pain reaches 6/10'],
           ['Heel raises on both feet', '3 sets of 10, both feet', 'Strength days, once the seated raises feel easy', 'The calves working, with both feet sharing the load', 'Pain reaches 6/10'],
           ['Heel raise hold', '3 holds of 20 seconds, both feet', 'Strength days, the next step up', 'The calves working to stay still at the top', 'Pain reaches 6/10'],
           ['Heel raises with a towel', '4 sets of 10, each leg, with added weight', 'Strength days, once the goal moves on to calf strength', 'Hard work in the calf and a pull under the arch', 'Pain reaches 6/10'],
@@ -388,10 +388,10 @@ export const HEEL_PAIN_EN: Guide = {
           dose: '2 holds of 30 seconds, each leg',
           often: 'Most sessions',
           feel: 'A stretch in the calf',
-          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.',
+          how: 'Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.',
           image: 'Exercise: calf stretch',
           media: 'calf_stretch_straight',
-          caption: 'Calf stretch: back leg straight, heel down, hips forward',
+          caption: 'Calf stretch: back leg straight, back heel flat, hips forward',
           alt: 'A figure leaning on a wall with the back leg straight, the calf highlighted',
         },
         {
@@ -400,10 +400,10 @@ export const HEEL_PAIN_EN: Guide = {
           dose: '2 holds of 30 seconds, each leg',
           often: 'Most sessions',
           feel: 'A stretch near the heel',
-          how: 'Take the same position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.',
+          how: 'Take the same position, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.',
           image: 'Exercise: soleus stretch',
           media: 'calf_stretch_bent',
-          caption: 'Soleus stretch: bend the back knee until you feel it near the heel',
+          caption: 'Soleus stretch: back heel flat, bend the back knee until you feel it near the heel',
           alt: 'A figure in a split stance with the knees bent, the lower calves highlighted',
         },
         {
@@ -411,8 +411,8 @@ export const HEEL_PAIN_EN: Guide = {
           evidence: { level: 'moderate', why: 'The 2023 guideline grades strength work B. This step was not tested on its own.' },
           dose: '3 sets of 10, both feet',
           often: 'Strength days',
-          feel: 'Easy work in the calves',
-          how: 'Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. Seated heel raises work the calf with almost no load on the heel.',
+          feel: 'Work low in the calf',
+          how: 'Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. With the knee bent, this mainly works the soleus, the deeper calf muscle, not the gastrocnemius you work in standing heel raises. So it is not just an easier standing raise. It trains a different muscle, with almost no load on the heel.',
           image: 'Exercise: seated heel raises',
           media: 'heel_raise_seated',
           caption: 'Seated heel raises: press up through the balls of the feet',
@@ -472,8 +472,8 @@ export const HEEL_PAIN_EN: Guide = {
       h2: 'What exercises should you avoid with plantar fasciitis?',
       paragraphs: [
         'Avoid high-impact activity that spikes the load on your heel while the pain is flared, and avoid walking barefoot on hard floors first thing in the morning.',
-        'Jumping, sprinting and plyometrics land a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. **The question is whether the load is more than the tissue can recover from overnight.**',
-        'Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion.',
+        'Jumping, sprinting and plyometrics put a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. **The question is whether the load is more than the tissue can recover from overnight.**',
+        'Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion. Until symptoms settle, wear a well-cushioned shoe at all times of day, even in the house.',
         'Two more things to watch:',
         {
           list: [
@@ -499,7 +499,7 @@ export const HEEL_PAIN_EN: Guide = {
       h2: 'What helps morning heel pain?',
       paragraphs: [
         'Morning heel pain on the first steps is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and it comes back after you sit for a while.',
-        'Two things on this page aim at it:',
+        'Two things help address this:',
         {
           list: [
             'The plantar fascia stretch is done **before you stand up**, on the edge of the bed with the toes pulled back, so your first steps are not your first stretch.',
@@ -513,7 +513,7 @@ export const HEEL_PAIN_EN: Guide = {
     {
       h2: 'Should you rest or keep running with heel pain?',
       paragraphs: [
-        'If heel pain from plantar fasciitis flares when you run, **change the load instead of stopping everything.** The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse.',
+        'If heel pain from plantar fasciitis flares when you run, **change the load instead of stopping everything.** The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse. To keep your fitness without flaring the heel, you can switch some runs to low-impact cardio such as swimming or a stationary bike.',
         'On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take.',
         'Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without canceling it.',
         'Stop and see a clinician if running hurts sharply or the pain gets worse week after week. The same goes for pain that builds during runs after you added mileage, or pain when you squeeze the sides of the heel. Both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.',
@@ -522,7 +522,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'Is strength work or stretching better for plantar fasciitis?',
-      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points lower on the Foot Function Index at three months, but by twelve months the two groups were about even (Rathleff and colleagues, 2015).',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points lower on the Foot Function Index at three months (on this scale a lower score means less pain and better function), but by twelve months the two groups were about even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Strength work and stretching both help plantar fasciitis, and **strength work helps sooner.**',
         'In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day.',
@@ -530,7 +530,7 @@ export const HEEL_PAIN_EN: Guide = {
         'The guideline supports doing both. The study-by-study reasoning is on [the evidence page](/science/).',
       ],
       sourceNote:
-        'Scored on the Foot Function Index: 29 points lower in the heel-raise group at three months (95% CI 6-52, p = 0.016), and 22 against 16 at twelve months, not a significant difference.',
+        'Scored on the Foot Function Index, where a lower score means less pain and better function: 29 points lower in the heel-raise group at three months (95% CI 6-52, p = 0.016), and 22 against 16 at twelve months, not a significant difference.',
       cites: [CITE.rathleff],
     },
     {
@@ -558,7 +558,7 @@ export const HEEL_PAIN_EN: Guide = {
       h2: 'Do shoes and insoles help plantar fasciitis?',
       paragraphs: [
         'Supportive shoes help, but [insoles](/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.',
-        'Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask a clinician whether they are worth trying.',
+        'Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask your clinician if they are right for you.',
         'The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](/nurses-foot-pain/).',
       ],
       cites: [CITE.guideline],

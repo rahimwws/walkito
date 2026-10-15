@@ -1,14 +1,15 @@
 # Walkito: full text, Portuguese, Brazil (Português)
 
-> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.
 
 Source: https://walkito.site/pt/
-Last updated: 2026-10-12
+Last updated: 2026-10-16
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -9204,7 +9205,7 @@ Nenhum ensaio acompanhou o tempo de recuperação da tendinite dos extensores es
 
 ## Walkito vs Exakt Health: qual combina com você?
 
-Language: Portuguese, Brazil (Português) · https://walkito.site/pt/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-13
 
 O Walkito e o Exakt Health oferecem planos de exercícios para fascite plantar, mas foram feitos para pessoas diferentes. O Exakt é um app para corredores, com mais de 15 planos de reabilitação de lesões e um programa de volta à corrida. O Walkito é um app mais focado, em dor no calcanhar, pé chato e adaptação à dor de cada manhã. Esta página compara os dois com honestidade, diz onde o Exakt é a melhor escolha e explica o que o Walkito faz de diferente.
 
@@ -9287,7 +9288,7 @@ Se você precisa só de exercícios para dor no calcanhar ou no pé, o Walkito �
 
 Os dois apps estão no iOS e no Android, então a plataforma não decide mais entre eles. No iPhone, o Walkito lê o app Saúde da Apple. No Android, ele lê o Health Connect (passos, sessões de exercício, distância e sono); a assimetria da marcha e a velocidade da caminhada só são lidas no iPhone.
 
-O Exakt está disponível em inglês, francês, alemão e espanhol. O Walkito está disponível em inglês, russo e espanhol. Os dois têm em comum o inglês e o espanhol. Se você precisa de francês ou alemão, o Exakt é a única opção. Se você precisa de russo, o Walkito é a única opção.
+O Exakt está disponível em inglês, francês, alemão e espanhol. O Walkito está disponível em inglês, russo, espanhol, português, francês, italiano e alemão. Os dois têm em comum o inglês, o espanhol, o francês e o alemão. Se você precisa de russo, português ou italiano, o Walkito é a única opção entre os dois.
 
 ### Privacidade
 
@@ -9327,7 +9328,6 @@ Escolha o Exakt Health se qualquer um destes pontos for verdade:
 - A sua lesão não é fascite plantar nem pé chato. O Exakt cobre mais de 15 condições; o Walkito cobre três.
 - Você quer 7 dias grátis para testar o app antes de pagar.
 - A certificação de dispositivo médico na União Europeia é importante para você.
-- Você precisa do app em francês ou alemão.
 
 ### Quando o Walkito é a melhor escolha?
 
@@ -9337,7 +9337,7 @@ Escolha o Walkito se qualquer um destes pontos for verdade:
 - Você quer sessões de 3 a 10 minutos em vez de 15 a 30.
 - A adaptação de cada sessão à dor a partir de um check-in pela manhã importa mais para você do que uma progressão por níveis.
 - Você quer testes de progresso a cada 14 dias que comparem a esquerda com a direita.
-- Você precisa do app em russo.
+- Você precisa do app em russo, português ou italiano.
 - Você passa o dia todo em pé no trabalho, não corre, e quer um app feito para isso.
 
 ### Quando um app não basta, procure um profissional de saúde
@@ -9394,7 +9394,7 @@ Você escolhe 3, 5 ou 7 dias de treino por semana e sessões de 3, 5 ou 10 minut
 
 O plano não tem duração fixa. Quando você alcança uma meta, ela passa para manutenção com uma dose menor, e a próxima meta entra no lugar. Isso continua enquanto você usar o Walkito. [Como o plano funciona](https://walkito.site/program/) (em inglês).
 
-O Walkito está em inglês, russo e espanhol.
+O Walkito está em inglês, russo, espanhol, português, francês, italiano e alemão.
 
 ### Como pesquisamos
 

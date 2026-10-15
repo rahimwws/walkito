@@ -1,14 +1,15 @@
 # Walkito: full text, Spanish (Español)
 
-> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.
 
 Source: https://walkito.site/es/
-Last updated: 2026-10-12
+Last updated: 2026-10-16
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -24,7 +25,7 @@ should be seen by a clinician.
 
 ## Ejercicios y estiramientos para la fascitis plantar y el dolor de talón
 
-Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-10-10
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-10-16
 
 Los ejercicios para la fascitis plantar con mejor evidencia son los estiramientos de la fascia plantar y de la pantorrilla, con grado A, el más alto de la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado B. Abajo tienes ocho, con sus dosis, y todos se hacen en casa. Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.
 
@@ -46,9 +47,9 @@ El orden importa. Mientras el dolor sea tu meta, Walkito mantiene suave el traba
 Subes un paso cuando las dos últimas sesiones con él se sintieron fáciles. La elevación de talones con toalla es la que más carga la fascia plantar, así que solo entra cuando el dolor de la mañana ya bajó y la meta pasa a la fuerza de la pantorrilla. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy. Es el punto en el que Walkito termina una sesión.
 
 - **Estiramiento plantar** (2 series de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Haz el primero en la orilla de la cama, antes de que el pie toque el piso.
-- **Estiramiento de pantorrilla** (2 series de 30 segundos, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento importa aunque lo sientas más arriba.
-- **Estiramiento de sóleo** (2 series de 30 segundos, cada pierna): Ponte en la misma posición y dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
-- **Elevaciones de talón sentado** (3 series de 10, los dos pies): Siéntate con los pies apoyados y empuja hacia arriba con la parte delantera del pie. Las manos en las rodillas añaden resistencia. Las elevaciones sentado trabajan la pantorrilla casi sin carga en el talón.
+- **Estiramiento de pantorrilla** (2 series de 30 segundos, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón de atrás bien apoyado en el piso y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento importa aunque lo sientas más arriba.
+- **Estiramiento de sóleo** (2 series de 30 segundos, cada pierna): Ponte en la misma posición, con el talón de atrás bien apoyado en el piso, y dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.
+- **Elevaciones de talón sentado** (3 series de 10, los dos pies): Siéntate con los pies apoyados y empuja hacia arriba con la parte delantera del pie. Las manos en las rodillas añaden resistencia. Con la rodilla doblada trabajas sobre todo el sóleo, el músculo más profundo de la pantorrilla, no el gemelo que trabajas de pie. No es solo una versión más fácil de la elevación de pie: entrena otro músculo, casi sin carga en el talón.
 - **Elevaciones de talón con dos pies** (3 series de 10, los dos pies): Párate en los dos pies, sube recto sobre los dedos gordos y baja despacio. Los dos pies comparten la carga mientras la pantorrilla despierta.
 - **Elevación de talón sostenida** (3 series de 20 segundos, los dos pies): Sube en puntas con los dos pies y quédate quieto arriba. No te dejes caer. Sostener arriba carga el tendón sin rebote.
 - **Elevación de talones con toalla** (4 series de 10, cada pierna, con peso extra): Párate en un pie sobre un escalón, con una toalla enrollada bajo los dedos. Tarda tres segundos en subir, mantén dos arriba y tarda tres en bajar. En este nivel Walkito añade peso, por ejemplo una mochila. La toalla es lo que hace que este ejercicio trabaje la fascia plantar y no solo la pantorrilla.
@@ -60,7 +61,7 @@ Evita la actividad de alto impacto que dispare la carga sobre el talón mientras
 
 Saltar, esprintar y los pliométricos ponen una fuerza pico repentina sobre la fascia plantar. Cuando el tejido está irritado, ese pico puede hacerlo retroceder. La guía de 2023 recomienda ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día, un consejo con grado E. No prohíbe ejercicios específicos. **La pregunta es si la carga es más de lo que el tejido puede recuperar de un día para otro.**
 
-Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación.
+Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación. Hasta que los síntomas se calmen, usa un zapato bien acolchado a todas horas, incluso dentro de casa.
 
 Dos cosas más a tener en cuenta:
 
@@ -104,7 +105,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### ¿Descansar o seguir corriendo con dolor de talón?
 
-Si el dolor de talón por fascitis plantar empeora al correr, **cambia la carga en lugar de dejarlo todo.** La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día. Ese consejo tiene grado E, lo que significa que se basa en teoría y no en ensayos. Así que sigue con los estiramientos todos los días, y reduce lo que empeore el talón.
+Si el dolor de talón por fascitis plantar empeora al correr, **cambia la carga en lugar de dejarlo todo.** La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día. Ese consejo tiene grado E, lo que significa que se basa en teoría y no en ensayos. Así que sigue con los estiramientos todos los días, y reduce lo que empeore el talón. Para mantener tu condición física sin irritar el talón, puedes cambiar algunas carreras por cardio de bajo impacto, como nadar o la bicicleta estática.
 
 En una mala mañana, mantén los estiramientos y quita las elevaciones de talón por ese día. La mañana siguiente te dice cómo te fue. Si tus primeros pasos son claramente peores después de correr, esa carrera fue más de lo que el talón podía aguantar.
 
@@ -180,7 +181,7 @@ Las dos cosas ayudan, y fortalecer funciona más rápido. En un ensayo con 48 pe
 
 #### ¿El espolón calcáneo es lo mismo que la fascitis plantar?
 
-No exactamente. Mucha gente dice «espolón calcáneo» cuando habla de fascitis plantar, pero en sentido estricto un espolón es un crecimiento de hueso que se ve en una radiografía. La fascitis plantar es dolor de la banda de tejido bajo el pie. Los ejercicios de esta página son los que la guía de 2023 califica para el dolor de talón bajo el pie. Solo un profesional de la salud puede decir qué hay detrás del tuyo.
+No exactamente. Mucha gente dice «[espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/)» cuando habla de fascitis plantar, pero en sentido estricto un espolón es un crecimiento de hueso que se ve en una radiografía. La fascitis plantar es dolor de la banda de tejido bajo el pie. Los ejercicios de esta página son los que la guía de 2023 califica para el dolor de talón bajo el pie. [Ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/) explica la misma rutina cuando una radiografía muestra un espolón. Solo un profesional de la salud puede decir qué hay detrás del tuyo.
 
 #### ¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?
 
@@ -216,7 +217,7 @@ Ninguna sesión de masaje quita la fascitis plantar, pero un automasaje suave pu
 
 ## Ejercicios para el pie plano y el dolor en el arco
 
-Language: Spanish (Español) · https://walkito.site/es/ejercicios-pie-plano/ · published 2026-09-24 · updated 2026-09-28
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-pie-plano/ · published 2026-09-24 · updated 2026-10-16
 
 En la tarde sientes los pies cansados y te duelen los arcos. Cuando te paras, los pies parecen irse hacia adentro y los arcos se hunden hacia el piso. Quizá te han dicho que el pie plano es tu forma de ser y que no vale la pena pensarlo dos veces. Tiene sentido querer hacer algo, y hay investigación real sobre cómo entrenar el arco.
 
@@ -253,9 +254,9 @@ Algunos ejercicios necesitan una toalla o una banda elástica. Walkito te pregun
 - **Pie corto, una pierna** (3 series de 10, mantén 5 segundos, cada pie): Párate en un pie y sube el arco. Mantén el dedo gordo abajo. Si se levanta, el arco está haciendo trampa. Trabajar un pie a la vez es donde se nota el lado más débil.
 - **Separación de dedos** (3 series de 10, cada pie): Separa los dedos todo lo que puedas y mantén. Unos dedos que se separan comparten la carga con el arco. Levantarlos no es el objetivo.
 - **Inversión con banda** (3 series de 12, cada pie): Siéntate con una banda elástica alrededor del pie y gira el pie hacia adentro contra la banda. Mueve el pie, no la pierna. La rodilla no se mueve. Walkito añade la inversión con banda solo después de seis sesiones de pie corto de pie, para que primero trabajen los músculos propios del arco.
-- **Equilibrio a una pierna** (3 series de 20 segundos, cada pierna): Párate en un pie y mira un punto fijo. Deja que el pie se tambalee. Tiene que hacerlo, porque ese tambaleo es el pie haciendo el trabajo de equilibrio.
+- **Equilibrio a una pierna** (3 series de 20 segundos, cada pierna): Párate en un pie y mira un punto fijo. Deja que el pie se tambalee. Tiene que hacerlo, porque ese tambaleo es el pie haciendo el trabajo de equilibrio. Si lo necesitas, toca ligeramente una barra o la pared con la punta de los dedos, así sigues ganando resistencia en el tobillo en lugar de rendirte.
 - **Abducción de cadera** (3 series de 10, cada pierna): Párate con una banda elástica y lleva una pierna hacia el lado contra la banda. Empuja con el talón, no con los dedos. Una cadera que cede deja caer la carga sobre el arco.
-- **Estiramiento de pantorrilla y sóleo** (2 series de 30 segundos en cada estiramiento, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante, y siente el estiramiento en la pantorrilla. Después dobla la rodilla de atrás hasta que lo sientas más abajo, cerca del talón. Ese es el sóleo, el músculo más profundo de la pantorrilla.
+- **Estiramiento de pantorrilla y sóleo** (2 series de 30 segundos en cada estiramiento, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón de atrás bien apoyado en el piso y la cadera hacia adelante, y siente el estiramiento en la pantorrilla. Después, con el talón todavía apoyado, dobla la rodilla de atrás hasta que lo sientas más abajo, cerca del talón. Ese es el sóleo, el músculo más profundo de la pantorrilla.
 
 ### ¿Cuánto tardan los ejercicios para pie plano en cambiar el arco?
 
@@ -4272,7 +4273,7 @@ Ninguno es claramente mejor. Un pie plano reparte la carga en un área más ampl
 
 ## Pie plano: qué es, qué lo causa y cuándo prestarle atención
 
-Language: Spanish (Español) · https://walkito.site/es/pie-plano/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/pie-plano/ · published 2026-10-07 · updated 2026-10-13
 
 Tener pie plano significa que el arco del pie queda más bajo de lo normal o toca el piso cuando te paras. La mayoría de los pies planos son flexibles, es decir, el arco aparece cuando el pie no toca el piso, y la mayoría no causan ningún dolor. Unos pocos son rígidos o aparecen en la edad adulta porque un tendón se debilita, y esos son los casos a los que vale la pena prestar más atención.
 
@@ -4405,6 +4406,11 @@ El pie plano puede coincidir con otros problemas del pie, sobre todo si pasas mu
 - [Dolor en la planta del pie](https://walkito.site/es/metatarsalgia-dolor-planta-del-pie/) explica el dolor en la parte delantera del pie, que se cruza con el pie plano cuando la carga se va hacia adelante.
 - [Dolor de pies por estar de pie](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/) explica los ejercicios y el calzado para los días largos de pie.
 - [Dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/) habla del dolor de pies propio del personal de salud.
+- Fuerza y movilidad: [fortalecer los pies](https://walkito.site/es/ejercicios-para-fortalecer-los-pies/), [fortalecer los dedos de los pies](https://walkito.site/es/ejercicios-para-fortalecer-los-dedos-del-pie/), [fortalecer el tobillo](https://walkito.site/es/ejercicios-para-fortalecer-el-tobillo/), [movilidad de tobillo](https://walkito.site/es/ejercicios-de-movilidad-de-tobillo/) y [pantorrillas tensas](https://walkito.site/es/pantorrillas-tensas/).
+- Pie plano y dolor: [dolor en el arco del pie](https://walkito.site/es/dolor-en-el-arco-del-pie/), [disfunción del tendón tibial posterior](https://walkito.site/es/ejercicios-tendon-tibial-posterior/), [dolor de rodilla](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/) y [dolor de espalda](https://walkito.site/es/pie-plano-y-dolor-de-espalda/).
+- Niños y edad: [pie plano en niños](https://walkito.site/es/pie-plano-en-ninos/) y [si el pie plano empeora con la edad](https://walkito.site/es/pie-plano-con-la-edad/).
+- Otros problemas del pie: [pie cavo](https://walkito.site/es/ejercicios-pie-cavo/) y [juanetes](https://walkito.site/es/ejercicios-juanetes/).
+- Calzado y apps: [zapatos barefoot](https://walkito.site/es/zapatos-barefoot/), [plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/) y la [mejor app para el pie plano](https://walkito.site/es/mejor-app-pie-plano/).
 
 ### Consulta primero a un profesional de la salud si
 
@@ -4460,7 +4466,7 @@ El pie plano (pes planus) aparece con más frecuencia en algunos grupos, aunque 
 
 ## Fascitis plantar: síntomas, causas y qué ayuda según la evidencia
 
-Language: Spanish (Español) · https://walkito.site/es/fascitis-plantar/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/fascitis-plantar/ · published 2026-10-07 · updated 2026-10-13
 
 La fascitis plantar es dolor bajo el talón por una sobrecarga de la fascia plantar, la banda gruesa de tejido que va del hueso del talón a los dedos. Es la causa más común de dolor de talón bajo el pie. La guía clínica de 2023 para el dolor de talón le da al estiramiento su grado más alto y al entrenamiento de fuerza el segundo más alto, y cerca del 90 % de las personas mejora sin cirugía.
 
@@ -4601,7 +4607,7 @@ Varias afecciones duelen en el mismo lugar o siguen el mismo patrón de la maña
 
 - **Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. La rigidez en los primeros pasos es común, pero el dolor está más arriba. Mira [ejercicios para la tendinitis de Aquiles](https://walkito.site/es/ejercicios-tendinitis-aquiles/).
 - **Síndrome de la almohadilla grasa del talón.** Un dolor profundo en el centro del talón, peor sobre superficies duras y descalzo. Una revisión exploratoria de 2022 señaló que puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen. El dolor de la almohadilla grasa está justo en el centro, y el de la fascitis en la parte interna y delantera.
-- **Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174 pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor.
+- **Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174 pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor. Mira [fascitis plantar vs espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/) y [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/).
 - **Fractura por estrés del calcáneo.** Un dolor que aumenta con la actividad en lugar de calmarse cuando entras en calor. Puede doler en reposo o de noche. Apretar los lados del talón suele provocar el dolor. Consulta a un profesional de la salud antes de ejercitar el pie.
 - **Artritis inflamatoria.** Cuando duelen los dos talones, la rigidez de la mañana dura más de 30 minutos y otras articulaciones están rígidas o hinchadas, el patrón apunta a algo que afecta a todo el cuerpo. Debe revisarlo un profesional de la salud.
 
@@ -4627,6 +4633,10 @@ Varias apps incluyen ejercicios para la fascitis plantar. Se diferencian en si s
 - [Dolor de pies con escritorio de pie](https://walkito.site/es/escritorio-de-pie-dolor-de-pies/) explica cómo pasar de estar sentado a estar de pie.
 - [La mejor app para la fascitis plantar](https://walkito.site/es/mejor-app-fascitis-plantar/) compara siete apps para la fascitis plantar.
 - Páginas de ejercicios: [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/), [estiramiento de pantorrilla](https://walkito.site/es/ejercicios/estiramiento-de-pantorrilla/), [elevación de talones con toalla](https://walkito.site/es/ejercicios/elevacion-de-talones-con-toalla/), [automasaje plantar](https://walkito.site/es/ejercicios/masaje-plantar-con-pelota/).
+- Ejercicios y pruebas: [ejercicios para el espolón calcáneo](https://walkito.site/es/ejercicios-espolon-calcaneo/), [pantorrillas tensas](https://walkito.site/es/pantorrillas-tensas/) y el [test de elevación de talón](https://walkito.site/es/test-de-elevacion-de-talon/).
+- Tratamientos y herramientas: [vendaje](https://walkito.site/es/vendaje-fascitis-plantar/), [hielo o calor](https://walkito.site/es/hielo-o-calor-fascitis-plantar/), [pelota de masaje o botella congelada](https://walkito.site/es/pelota-de-masaje-fascitis-plantar/), [férula nocturna](https://walkito.site/es/ferula-nocturna-fascitis-plantar/) y [plantillas o ejercicios](https://walkito.site/es/plantillas-o-ejercicios/).
+- Otros dolores de talón: [fascitis plantar vs espolón calcáneo](https://walkito.site/es/fascitis-plantar-vs-espolon-calcaneo/), [dolor de talón al caminar](https://walkito.site/es/dolor-de-talon-al-caminar/), [dolor de talón por la noche](https://walkito.site/es/dolor-de-talon-por-la-noche/), [síndrome de la almohadilla grasa del talón](https://walkito.site/es/sindrome-almohadilla-grasa-talon/), [deformidad de Haglund](https://walkito.site/es/deformidad-de-haglund/) y [enfermedad de Sever](https://walkito.site/es/enfermedad-de-sever/) en niños.
+- El [identificador de dolor de pie](https://walkito.site/es/donde-me-duele-el-pie/) muestra las afecciones que con más frecuencia causan dolor en cada zona del pie.
 
 ### Consulta primero a un profesional de la salud si
 
@@ -6561,7 +6571,7 @@ Ningún ensayo ha dado seguimiento al tiempo de recuperación de la tendinitis d
 
 ## Walkito vs Exakt Health: ¿cuál te conviene?
 
-Language: Spanish (Español) · https://walkito.site/es/walkito-vs-exakt-health/ · published 2026-10-07 · updated 2026-10-09
+Language: Spanish (Español) · https://walkito.site/es/walkito-vs-exakt-health/ · published 2026-10-07 · updated 2026-10-13
 
 Walkito y Exakt Health ofrecen planes de ejercicio para la fascitis plantar, pero están hechas para personas distintas. Exakt es una app para corredores, con más de 15 planes de rehabilitación de lesiones y un programa para volver a correr. Walkito es una app más limitada, enfocada en el dolor de talón, el pie plano y la adaptación al dolor de la mañana. Esta página las compara con honestidad, dice cuándo Exakt es la mejor opción y explica qué hace distinto Walkito.
 
@@ -6644,7 +6654,7 @@ Si solo necesitas ejercicios para el dolor de talón o de pies, Walkito es la op
 
 Las dos apps están en iOS y Android, así que la plataforma ya no decide entre ellas. En iPhone, Walkito lee Apple Health. En Android lee Health Connect (pasos, sesiones de ejercicio, distancia y sueño); la asimetría y la velocidad al caminar solo se leen en iPhone.
 
-Exakt está en inglés, francés, alemán y español. Walkito está en inglés, ruso y español. Las dos comparten inglés y español. Si necesitas francés o alemán, Exakt es la única opción. Si necesitas ruso, Walkito es la única opción.
+Exakt está en inglés, francés, alemán y español. Walkito está en inglés, ruso, español, portugués, francés, italiano y alemán. Las dos comparten inglés, español, francés y alemán. Si necesitas ruso, portugués o italiano, Walkito es la única opción de las dos.
 
 ### Privacidad
 
@@ -6684,7 +6694,6 @@ Elige Exakt Health si se cumple cualquiera de estas:
 - Tu lesión no es fascitis plantar ni pie plano. Exakt cubre más de 15 problemas; Walkito cubre tres.
 - Quieres una prueba gratis de 7 días para probar la app antes de pagar.
 - Te importa la certificación de dispositivo médico en la UE.
-- Necesitas la app en francés o alemán.
 
 ### ¿Cuándo conviene elegir Walkito en vez de Exakt Health?
 
@@ -6694,7 +6703,7 @@ Elige Walkito si se cumple cualquiera de estas:
 - Quieres sesiones de 3 a 10 minutos en vez de 15 a 30.
 - Te importa más que el plan se adapte a tu dolor con un chequeo en la mañana que avanzar por niveles.
 - Quieres pruebas de progreso cada 14 días que comparen izquierda y derecha.
-- Necesitas la app en ruso.
+- Necesitas la app en ruso, portugués o italiano.
 - Pasas todo el día de pie por trabajo, no corres, y quieres una app hecha para eso.
 
 ### Cuando una app no basta, consulta a un profesional de la salud
@@ -9653,7 +9662,7 @@ Eliges 3, 5 o 7 días de entrenamiento por semana y sesiones de 3, 5 o 10 minuto
 
 El plan no tiene una duración fija. Cuando alcanzas una meta, pasa a mantenimiento con una dosis menor y la siguiente ocupa su lugar. Y así sigue mientras uses Walkito. [Cómo funciona el plan](https://walkito.site/es/programa/).
 
-Walkito está en inglés, ruso y español.
+Walkito está en inglés, ruso, español, portugués, francés, italiano y alemán.
 
 Walkito (walkito.site) es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano. No tiene relación con walkito.com, un servicio de paseo de perros de Uruguay.
 

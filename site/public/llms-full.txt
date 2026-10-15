@@ -1,14 +1,15 @@
 # Walkito: full text
 
-> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-12
+Last updated: 2026-10-16
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -32,7 +33,7 @@ should be seen by a clinician.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
 - Not related to walkito.com, a dog-walking service with a similar name.
-- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
+- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in seven languages: English, Russian, Spanish, Portuguese (Brazil), French, Italian and German. This site is in the same seven.
 - Contact: hello@walkito.site
 
 ## The evidence
@@ -307,9 +308,9 @@ Sources:
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
-Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-10
+Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-16
 
-The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](https://walkito.site/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
+The plantar fasciitis exercises with the best evidence are plantar fascia and calf stretches, which the 2023 heel pain guideline grades A, its top grade, and calf strength work, graded B. Below are eight exercises, with doses. Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](https://walkito.site/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
 
 - The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.
 - In a trial of 48 people, heavy heel raises eased pain and improved daily function faster than stretching, and by twelve months both groups were even (Rathleff and colleagues, 2015).
@@ -329,9 +330,9 @@ Order matters. While pain is your goal, Walkito keeps the calf work gentle, one 
 You move up a step once the last two sessions with it felt easy. The [towel heel raise](https://walkito.site/exercises/towel-heel-raise/) loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.
 
 - **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. Do the first one on the edge of the bed, before your foot touches the floor.
-- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.
-- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
-- **Seated heel raises** (3 sets of 10, both feet): Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. Seated heel raises work the calf with almost no load on the heel.
+- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.
+- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same position, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Seated heel raises** (3 sets of 10, both feet): Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. With the knee bent, this mainly works the soleus, the deeper calf muscle, not the gastrocnemius you work in standing heel raises. So it is not just an easier standing raise. It trains a different muscle, with almost no load on the heel.
 - **Heel raises on both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. Both feet share the load while the calf wakes up.
 - **Heel raise hold** (3 holds of 20 seconds, both feet): Rise onto your toes on both feet, then stay still at the top. Don’t sink back down. Holding at the top loads the tendon without the bounce.
 - **Heel raises with a towel** (4 sets of 10, each leg, with added weight): Stand on one foot on a step, with a rolled towel under your toes. Take three seconds to rise, hold for two at the top, and take three seconds to lower. At this level Walkito adds weight, such as a backpack. The towel is what makes this exercise work the plantar fascia and not just the calf.
@@ -341,9 +342,9 @@ You move up a step once the last two sessions with it felt easy. The [towel heel
 
 Avoid high-impact activity that spikes the load on your heel while the pain is flared, and avoid walking barefoot on hard floors first thing in the morning.
 
-Jumping, sprinting and plyometrics land a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. **The question is whether the load is more than the tissue can recover from overnight.**
+Jumping, sprinting and plyometrics put a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. **The question is whether the load is more than the tissue can recover from overnight.**
 
-Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion.
+Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion. Until symptoms settle, wear a well-cushioned shoe at all times of day, even in the house.
 
 Two more things to watch:
 
@@ -368,7 +369,7 @@ Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar
 
 Morning heel pain on the first steps is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and it comes back after you sit for a while.
 
-Two things on this page aim at it:
+Two things help address this:
 
 - The plantar fascia stretch is done **before you stand up**, on the edge of the bed with the toes pulled back, so your first steps are not your first stretch.
 - The 2023 guideline gives [night splints](https://walkito.site/night-splints-plantar-fasciitis/), worn for 1 to 3 months, an **A** for people who keep getting pain on their first steps in the morning. Night splints are something to talk over with a clinician. Walkito doesn’t provide them.
@@ -379,7 +380,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Should you rest or keep running with heel pain?
 
-If heel pain from plantar fasciitis flares when you run, **change the load instead of stopping everything.** The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse.
+If heel pain from plantar fasciitis flares when you run, **change the load instead of stopping everything.** The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse. To keep your fitness without flaring the heel, you can switch some runs to low-impact cardio such as swimming or a stationary bike.
 
 On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take.
 
@@ -409,9 +410,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Do shoes and insoles help plantar fasciitis?
 
-Supportive shoes help, but insoles on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.
+Supportive shoes help, but [insoles](https://walkito.site/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.
 
-Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask a clinician whether they are worth trying.
+Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask your clinician if they are right for you.
 
 The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](https://walkito.site/nurses-foot-pain/).
 
@@ -459,7 +460,7 @@ Both help, and strengthening works faster. In a trial of 48 people, heavy heel r
 
 #### Is a heel spur the same as plantar fasciitis?
 
-Not exactly. People often say “[heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/)” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. Only a clinician can say what is behind yours.
+Not exactly. People often say “[heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/)” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. [Heel spur exercises](https://walkito.site/heel-spur-exercises/) covers the same routine when an X-ray shows a spur. Only a clinician can say what is behind yours.
 
 #### How often should I do plantar fasciitis exercises?
 
@@ -483,16 +484,16 @@ Walking barefoot on hard floors right after waking, and jumping straight back in
 
 #### Can plantar fasciitis be massaged out?
 
-No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. Rolling your own sole is comfort care, not a replacement for stretching and calf strength work.
+No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. [Rolling your own sole](https://walkito.site/massage-ball-plantar-fasciitis/) is comfort care, not a replacement for stretching and calf strength work.
 
 ## Flat feet exercises for fallen arches and arch pain
 
-Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-12
+Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-16
 
-For flexible [flat feet](https://walkito.site/flat-feet/), the exercise program with trial evidence combines short-foot exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of it changed arch shape more than in a control group. By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.
+When you stand, your feet seem to roll in and the arches sink toward the floor. By evening your feet feel tired, and the arches ache. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch. For flexible [flat feet](https://walkito.site/flat-feet/), the exercise program with trial evidence combines arch-building (short-foot) exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of these exercises changed arch shape more than in a control group.
 
 - The randomized trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).
-- In that trial of 52 people, six weeks of short-foot, ankle, hip and stretching work changed arch shape more than in the control group (Brijwasi and Borkar, 2023).
+- In that trial of 52 people, six weeks of arch-building, ankle, hip and stretching exercises changed arch shape more than in the control group (Brijwasi and Borkar, 2023).
 - A 2024 review of short-foot training found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks (Cheng and colleagues, 2024).
 - A rigid flat foot, one that stays flat even off the ground, is structural, and exercise will not change its shape.
 - These studies measured arch shape, not pain. For heel pain, the 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A, and strength training a B.
@@ -519,20 +520,20 @@ Some exercises need a towel or a resistance band. Walkito asks what you have and
 
 - **Towel scrunch** (3 sets of 8, hold 5 seconds, each foot): Sit with a towel flat on the floor under your foot. Pull the towel in with your toes, and keep the heel down. The towel scrunch wakes up the small muscles under the arch.
 - **Big toe lift** (3 sets of 8, hold 5 seconds, each foot): Sit with your feet flat. Lift only the big toe and hold. The other four toes stay flat on the floor. The big toe lift teaches the big toe to move on its own, which is the arch’s first switch.
-- **Short foot, seated** (3 sets of 8, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Don’t curl the toes. Curling them is the most common way to get this exercise wrong.
+- **Short foot, seated** (3 sets of 8, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Keep the outside of the foot on the ground and lift the arch to make a small cave under the foot. Don’t curl the toes. Curling them is the most common way to get this exercise wrong.
 - **Short foot, standing** (3 sets of 8, hold 5 seconds, both feet): Stand with your weight on both feet and do the same movement. The toes stay flat and long. Only the arch lifts. It is the same muscle as the seated version, now holding your weight.
 - **Short foot, one leg** (3 sets of 10, hold 5 seconds, each foot): Stand on one foot and lift the arch. Keep the big toe down. If it lifts, the arch is cheating. Working one foot at a time is where the weaker side shows.
 - **Toe spread** (3 sets of 10, each foot): Spread your toes as wide as they go, then hold. Toes that can spread share the load with the arch. Lifting them is not the point.
 - **Band turn-in** (3 sets of 12, each foot): Sit with a resistance band around the foot and turn the foot in against it. Move the foot, not the leg. The knee stays still. Walkito adds the band turn-in only after six sessions of the standing short foot, so the arch’s own muscles come first.
-- **Single-leg hold** (3 holds of 20 seconds, each leg): Stand on one foot and look at one fixed spot. Let the foot wobble. It’s meant to, because that wobble is the foot doing the balancing.
+- **Single-leg hold** (3 holds of 20 seconds, each leg): Stand on one foot and look at one fixed spot. Let the foot wobble. It’s meant to, because that wobble is the foot doing the balancing. If you need to, lightly touch a counter or wall with your fingertips, so you keep building ankle endurance instead of giving up.
 - **Hip abduction** (3 sets of 10, each leg): Stand with a resistance band and lift one leg out to the side against it. Push through the heel, not the toes. A hip that gives way lands the load on the arch.
-- **Calf and soleus stretch** (2 holds of 30 seconds for each stretch, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward, and feel the stretch in the calf. Then bend the back knee until you feel it lower, near the heel. That is the soleus, the deeper calf muscle.
+- **Calf and soleus stretch** (2 holds of 30 seconds for each stretch, each leg): Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward, and feel the stretch in the calf. Then keep the heel flat and bend the back knee until you feel it lower, near the heel. That is the soleus, the deeper calf muscle.
 
 ### How long before flat feet exercises change the arch?
 
 Flat feet exercises changed the arch after six weeks or more in the research so far, and only in flexible flat feet. In a trial of 52 people with **flexible** flat feet, a six-week program of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in the control group.
 
-The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.
+The evidence for arch-building exercises on their own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.
 
 That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for 60 seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every 14 days until your first goal is reached, then every 28, so you can see whether it is moving. The trials are summarized on [the evidence page](https://walkito.site/science/).
 
@@ -541,7 +542,7 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 ### Do flat feet exercises help arch pain?
 
-No study on this page shows that flat feet exercises ease arch pain, because none of them measured it. The trial and the review measured the shape of the arch. They show the arch can be trained. They are not evidence that the same exercises relieve an aching arch.
+No study on this page shows that flat feet exercises ease [arch pain](https://walkito.site/arch-pain/), because none of them measured it. The trial and the review measured the shape of the arch. They show the arch can be trained. They are not evidence that the same exercises relieve an aching arch.
 
 Pain at the heel, and sometimes along the arch, can come from the plantar fascia, the band of tissue that runs along the sole. If yours is near the heel, the 2023 heel pain guideline is the better guide. For heel pain under the foot, it gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B**. Those exercises are in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/).
 
@@ -555,7 +556,7 @@ When you reach the arch goal, holding the arch for 60 seconds, **Walkito keeps t
 
 The tests carry on too, every 28 days once your first goal is reached. If the arch hold starts to slide, you see it in the numbers instead of guessing.
 
-If your heel hurts as well, the heel has its own exercises and its own goal: see [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/). Questions about the app itself are answered in [the FAQ](https://walkito.site/faq/).
+If your heel hurts as well, the heel has its own exercises and its own goal: see [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/). Questions about the app itself are answered in [the FAQ](https://walkito.site/faq/), and [the best app for flat feet](https://walkito.site/best-app-for-flat-feet/) compares it with other apps.
 
 ### See a clinician first if
 
@@ -594,7 +595,7 @@ The evidence is weak and mixed, not a clear yes. The largest study on it, the [F
 
 #### What is the difference between fallen arches and flat feet?
 
-Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.
+Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening [posterior tibial tendon](https://walkito.site/posterior-tibial-tendon-dysfunction-exercises/), the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.
 
 #### What exercises help a collapsed arch?
 
@@ -602,7 +603,7 @@ Usually none: “fallen arches” is a common name for flat feet. Most flat feet
 
 #### What exercises strengthen the arches of the feet?
 
-The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train the small muscles around the arch. All of it is for flexible flat feet. Step by step: [short foot exercise](https://walkito.site/exercises/short-foot-exercise/).
+The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train [the small muscles around the arch](https://walkito.site/foot-strengthening-exercises/). All of it is for flexible flat feet. Step by step: [short foot exercise](https://walkito.site/exercises/short-foot-exercise/).
 
 #### How often should I do flat feet exercises?
 
@@ -743,7 +744,7 @@ No single trick removes pain from a 10-hour shift, but combining approaches help
 
 ## Calf raises for plantar fasciitis: how to do them and how many
 
-Language: English · https://walkito.site/calf-raises-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-10
+Language: English · https://walkito.site/calf-raises-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-13
 
 For [plantar fasciitis](https://walkito.site/plantar-fasciitis/), the tested way to do calf raises is slowly on one leg with a towel under your toes: 3 sets of 12, every other day, 3 seconds up, 2 seconds at the top and 3 seconds down, adding a backpack when 12 gets easy. Calf raises are one of the exercises in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/), and it is the exercise behind the one randomized trial built specifically to test strength training against stretching for plantar fasciitis. In a study of 48 people, heavy heel raises eased pain faster than stretching alone over three months. This page is the deep dive on that exercise: the exact protocol, the towel, the progression, and where it sits next to stretching.
 
@@ -794,7 +795,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### What does Walkito start you on?
 
-Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to double-leg standing raises, then a heel raise hold, and only then the towel-loaded single-leg raise. Each step opens once two sessions at the current level felt easy.
+Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to [double-leg standing raises](https://walkito.site/exercises/calf-raises/), then a heel raise hold, and only then the [towel-loaded single-leg raise](https://walkito.site/exercises/towel-heel-raise/). Each step opens once two sessions at the current level felt easy.
 
 That ladder is the app's own pacing, not a published protocol, and it exists because most people starting an exercise plan for heel pain are not ready for a weighted single-leg raise on the first session.
 
@@ -840,7 +841,7 @@ Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric ca
 
 ### How many single-leg calf raises should you be able to do?
 
-A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is **whether the number goes up week to week, and whether the two sides are roughly even.**
+A common adult benchmark for the [single-leg heel-raise endurance test](https://walkito.site/calf-raise-test/) is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is **whether the number goes up week to week, and whether the two sides are roughly even.**
 
 The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.
 
@@ -1257,7 +1258,7 @@ Usually yes. Walking is lower-impact than running, and many people with medial t
 
 ## Heel pain in the morning: why it happens and what to do before your first step
 
-Language: English · https://walkito.site/heel-pain-in-the-morning/ · published 2026-10-04 · updated 2026-10-10
+Language: English · https://walkito.site/heel-pain-in-the-morning/ · published 2026-10-04 · updated 2026-10-13
 
 Heel pain on the first steps in the morning is the classic sign of [plantar fasciitis](https://walkito.site/plantar-fasciitis/), and the 2023 heel pain guideline gives its top grade, A, to stretching the plantar fascia before you stand up. Your first steps out of bed are the worst part of the day. That sharp pull at the heel, before you have even stood up straight, is the pattern most people describe when they look up heel pain. The most common cause is plantar fasciitis, but it is not the only one, and the morning is the most useful moment to do something about it.
 
@@ -1281,9 +1282,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart:
 
-- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then worsens again with prolonged activity. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then [worsens again with prolonged activity](https://walkito.site/heel-pain-after-walking/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
 - **Heel fat pad thinning.** The fat pad under your heel bone acts as a cushion. When it thins or shifts, the bone takes more impact directly. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, feels worse on hard surfaces and with barefoot walking, and can be difficult to tell apart from plantar fasciitis without imaging (Chang and colleagues, 2022). The key difference: plantar fasciitis pain is usually sharpest at the inside front of the heel, while fat pad pain sits right under the center.
-- **Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can hurt at rest or at night. If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how sudden load changes affect the heel.
+- **Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can [hurt at rest or at night](https://walkito.site/heel-pain-at-night/). If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how sudden load changes affect the heel.
 - **Inflammatory arthritis (a red flag).** When both heels hurt in the morning, the stiffness lasts more than 30 minutes, and other joints are also stiff or swollen, the pattern moves away from plantar fasciitis and toward something a clinician should check. Conditions like psoriatic arthritis or ankylosing spondylitis can cause pain where tendons attach to bone, including the heel.
 
 In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain was a significant predictor of worse long-term prognosis, and the authors noted that some unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018). **If both heels hurt and other joints are involved, see a clinician first.**
@@ -2047,7 +2048,7 @@ It can. Standing keeps the plantar fascia and calf under sustained load without 
 
 ## Best app for plantar fasciitis: a buyer's guide for 2026
 
-Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-09
+Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-13
 
 This page compares seven apps that include exercises for [plantar fasciitis](https://walkito.site/plantar-fasciitis/), [flat feet](https://walkito.site/flat-feet/) or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.
 
@@ -2144,7 +2145,7 @@ PlantarCare is a reasonable starting point if you want to track your pain for fr
 
 Arch is the only app in this comparison focused entirely on flat feet and arch strengthening. It has 40+ foot exercises, progress tracking and a clean design. At $39.99 a year or $9.99 a month, with a 7-day free trial, the price is moderate.
 
-A reviewer noted that the app lacks exercise videos, using illustrations instead. The app claims its routines are "backed by science" and "proven physiotherapy principles" but does not cite specific studies. With only 6 ratings on the App Store, it is early in its life.
+A reviewer noted that the app lacks exercise videos, using illustrations instead. The app claims its routines are "backed by science" and "proven physiotherapy principles" but [does not cite specific studies](https://walkito.site/heel-pain-apps-study/). With only 6 ratings on the App Store, it is early in its life.
 
 If your primary concern is flat feet without significant pain, Arch is worth trying. For plantar fasciitis, it is not the right fit since it does not include heel-specific rehab exercises or pain tracking.
 
@@ -2154,7 +2155,7 @@ This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stre
 
 The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.
 
-If you want a free reference for what stretches to try, check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.
+If you want a [free reference for what stretches to try](https://walkito.site/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.
 
 ### Walkito: what it does and what it does not
 
@@ -2246,7 +2247,7 @@ Most plantar fasciitis exercise programs, including the ones graded highest in t
 
 ## We checked the 50 most-watched plantar fasciitis videos on YouTube against the 2023 guideline
 
-Language: English · https://walkito.site/plantar-fasciitis-youtube-study/ · published 2026-10-11 · updated 2026-10-11
+Language: English · https://walkito.site/plantar-fasciitis-youtube-study/ · published 2026-10-11 · updated 2026-10-13
 
 Only 9 of the 50 most-watched plantar fasciitis videos on YouTube teach all three kinds of home exercise the 2023 heel pain guideline supports: a plantar fascia stretch, a calf stretch and calf or foot strengthening. Together the 50 videos have 75 million views. Only 9 say when to see a doctor, none of them in the top 10, and 17 titles promise a fast or permanent result.
 
@@ -2586,7 +2587,7 @@ Yes. The data file is free to download and reuse. Please cite it as: Walkito, 20
 
 ## Walkito vs Hinge Health for heel pain and plantar fasciitis
 
-Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-11 · updated 2026-10-11
+Language: English · https://walkito.site/walkito-vs-hinge-health/ · published 2026-10-11 · updated 2026-10-13
 
 If your employer or health plan offers Hinge Health, start there: it costs you nothing and comes with your own physical therapist. If it does not, you cannot buy Hinge Health on your own, and Walkito is a heel and foot focused alternative you can download on iPhone or Android. Walkito makes this page, so we say plainly where Hinge Health is stronger.
 
@@ -2610,7 +2611,7 @@ Hinge Health says it "works with either your employer group or plan to obtain re
 
 Not as far as we could find. Hinge Health is offered through employers and health plans, and its [eligibility check](https://www.hingehealth.com/check-eligibility/) starts with your employer or insurance details. Spouses and adult dependents can often join if the plan includes them. If you leave the job or the plan stops offering it, access ends.
 
-If you have no access, the options are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer’s guide to plantar fasciitis apps](https://walkito.site/best-app-for-plantar-fasciitis/) compares the self-guided apps.
+If you have no access, the [Hinge Health alternatives](https://walkito.site/hinge-health-alternatives/) are an in-person or virtual physical therapist you pay for, a self-guided app such as Walkito, or a free routine you follow yourself. Our [buyer’s guide to plantar fasciitis apps](https://walkito.site/best-app-for-plantar-fasciitis/) compares the self-guided apps.
 
 ### Does Hinge Health have a plantar fasciitis program?
 
@@ -2794,7 +2795,7 @@ There is no standard number. Trials vary; in one, the supervised group had sessi
 
 ## How much does plantar fasciitis care cost?
 
-Language: English · https://walkito.site/plantar-fasciitis-treatment-cost/ · published 2026-10-11 · updated 2026-10-11
+Language: English · https://walkito.site/plantar-fasciitis-treatment-cost/ · published 2026-10-11 · updated 2026-10-13
 
 Home exercise costs the least: the stretches and strengthening the 2023 guideline recommends need no equipment, and the exercise apps we checked range from free to about $300 a year. Store-bought insoles cost about $40 to $60 a pair. Of the first-line options, physical therapy costs the most: in a study of US private insurance claims from 2007 to 2011, an average course of 5 to 6 visits for plantar fasciitis cost about $1,000 to $1,400. Custom orthotics, often $300 to $800, did no better than store-bought insoles in trials.
 
@@ -3611,7 +3612,7 @@ They can be. In a 1999 trial, 95% of people with a silicone heel pad improved, b
 
 ## Walkito vs Exakt Health: which one fits you?
 
-Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-09
+Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-13
 
 Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis](https://walkito.site/plantar-fasciitis/), but they are built for different people. Exakt is a runner's app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, [flat feet](https://walkito.site/flat-feet/) and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.
 
@@ -3675,7 +3676,7 @@ The main difference: Exakt follows a structured level-based progression. Walkito
 
 **This is where Exakt is clearly stronger.** Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner's knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.
 
-Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.
+Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a [broader app like Prehab](https://walkito.site/exakt-health-alternatives/) is the right choice.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -3694,7 +3695,7 @@ If you need only heel or foot pain exercises, Walkito is the narrower, focused o
 
 Both apps are on iOS and Android, so the platform no longer decides between them. On iPhone, Walkito reads Apple Health. On Android it reads Health Connect (steps, exercise sessions, distance and sleep); walking asymmetry and walking speed are read on iPhone only.
 
-Exakt supports English, French, German and Spanish. Walkito supports English, Russian and Spanish. The overlap is English and Spanish. If you need French or German, Exakt is the only option. If you need Russian, Walkito is the only option.
+Exakt supports English, French, German and Spanish. Walkito supports English, Russian, Spanish, Portuguese, French, Italian and German. Both cover English, Spanish, French and German. If you need Russian, Portuguese or Italian, Walkito is the only option of the two.
 
 ### Privacy
 
@@ -3734,17 +3735,16 @@ Pick Exakt Health if any of the following is true:
 - Your injury is not plantar fasciitis or flat feet. Exakt covers 15+ conditions; Walkito covers three.
 - You want a 7-day free trial to test the app before paying.
 - EU medical device certification matters to you.
-- You need the app in French or German.
 
 ### When is Walkito the better choice?
 
 Pick Walkito if any of the following is true:
 
-- Your pain is specifically heel pain, plantar fasciitis or flat feet, and you want a focused program for that.
+- Your pain is specifically heel pain, plantar fasciitis or [flat feet](https://walkito.site/best-app-for-flat-feet/), and you want a focused program for that.
 - You want sessions of 3 to 10 minutes rather than 15 to 30.
 - Daily pain adaptation from a morning check-in matters more to you than level-based progression.
 - You want progress tests every 14 days that compare left to right.
-- You need the app in Russian.
+- You need the app in Russian, Portuguese or Italian.
 - You are on your feet all day for work, not running, and want an app built for that.
 
 ### When an app is not enough, see a clinician
@@ -5626,7 +5626,7 @@ You should feel the work in the calf, both the bulkier gastrocnemius higher up a
 
 ## Plantar fasciitis: symptoms, causes, and what the evidence says helps
 
-Language: English · https://walkito.site/plantar-fasciitis/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/plantar-fasciitis/ · published 2026-10-05 · updated 2026-10-13
 
 Plantar fasciitis is pain under the heel caused by overload on the plantar fascia, the thick band of tissue that runs from the heel bone to the toes. It is the most common cause of heel pain under the foot. The 2023 clinical guideline for heel pain gives stretching its top grade and strength training its second-highest, and about 90 percent of people improve with non-surgical care.
 
@@ -5703,7 +5703,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### What helps plantar fasciitis?
 
-The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and [night splints](https://walkito.site/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.
+The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, [taping](https://walkito.site/plantar-fasciitis-taping/), manual therapy from a clinician, and [night splints](https://walkito.site/night-splints-plantar-fasciitis/) for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.
 
 **No single option works for everyone.** Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. When we checked the 50 most-watched plantar fasciitis videos on YouTube, [only 9 included all three home exercises](https://walkito.site/plantar-fasciitis-youtube-study/) the guideline supports.
 
@@ -5766,8 +5766,8 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 Several conditions share the same location or the same morning pattern. Where the pain sits and how it behaves help tell them apart:
 
 - **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
-- **Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front.
-- **Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain.
+- **Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front. See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
+- **Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain. See [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) and [heel spur exercises](https://walkito.site/heel-spur-exercises/).
 - **Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.
 - **Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.
 
@@ -5793,6 +5793,11 @@ Several apps include exercises for plantar fasciitis. They differ in whether the
 - [Standing desk foot pain](https://walkito.site/standing-desk-foot-pain/) covers the sit-stand transition.
 - [Best app for plantar fasciitis](https://walkito.site/best-app-for-plantar-fasciitis/) compares seven plantar fasciitis apps.
 - Exercise pages: [plantar fascia stretch](https://walkito.site/exercises/plantar-fascia-stretch/), [calf stretch](https://walkito.site/exercises/calf-stretch/), [towel heel raise](https://walkito.site/exercises/towel-heel-raise/), [foot roll](https://walkito.site/exercises/foot-roll/).
+- Exercises and tests: [heel spur exercises](https://walkito.site/heel-spur-exercises/), [tight calves](https://walkito.site/tight-calves/) and the [calf raise test](https://walkito.site/calf-raise-test/).
+- Treatments and tools: [taping](https://walkito.site/plantar-fasciitis-taping/), [ice or heat](https://walkito.site/ice-or-heat-for-plantar-fasciitis/), a [massage ball or frozen bottle](https://walkito.site/massage-ball-plantar-fasciitis/), [night splints](https://walkito.site/night-splints-plantar-fasciitis/) and [insoles](https://walkito.site/best-insoles-for-plantar-fasciitis/).
+- Other heel pain: [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/), [heel pain after walking](https://walkito.site/heel-pain-after-walking/), [heel pain at night](https://walkito.site/heel-pain-at-night/), [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/), [Haglund's deformity](https://walkito.site/haglunds-deformity/) and [Sever's disease](https://walkito.site/severs-disease/) in children.
+- The [foot pain identifier](https://walkito.site/foot-pain-identifier/) shows the conditions that most often cause pain in each spot.
+- Apps and costs: [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/), [an exercise app vs physical therapy](https://walkito.site/app-vs-physical-therapy-plantar-fasciitis/) and [free YouTube videos vs an app](https://walkito.site/youtube-vs-app-plantar-fasciitis/).
 
 ### See a clinician first if
 
@@ -5848,7 +5853,7 @@ Sudden plantar fasciitis usually follows a sudden change in load, not a sudden i
 
 ## Flat feet: what they are, what causes them, and when they need attention
 
-Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-13
 
 Flat feet mean the arch of the foot sits lower than usual or touches the ground when you stand. Most flat feet are flexible, meaning the arch appears when the foot is off the ground, and most cause no pain at all. A smaller number are rigid or develop in adulthood from a weakening tendon, and those are the cases worth paying closer attention to.
 
@@ -5949,7 +5954,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Which exercises help flat feet?
 
-Exercise for flat feet focuses on the muscles that support the arch from below (the intrinsic foot muscles) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, ankle exercises, hip strengthening and stretching, done together.
+Exercise for flat feet focuses on the muscles that support the arch from below ([the intrinsic foot muscles](https://walkito.site/foot-strengthening-exercises/)) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, [ankle exercises](https://walkito.site/ankle-strengthening-exercises/), hip strengthening and stretching, done together.
 
 A 2024 review of short-foot training on its own was less encouraging: it found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks. The takeaway is that **a combined program works better than one exercise in isolation, and patience matters.**
 
@@ -5957,7 +5962,7 @@ A 2024 review of short-foot training on its own was less encouraging: it found n
 
 - [Short foot exercise](https://walkito.site/exercises/short-foot-exercise/) trains the arch to lift without curling the toes.
 - [Towel scrunch](https://walkito.site/exercises/towel-scrunch/) wakes up the small muscles under the arch.
-- [Toe spread](https://walkito.site/exercises/toe-spread/) works the muscles between the toes that share load with the arch.
+- [Toe spread](https://walkito.site/exercises/toe-spread/) works [the muscles between the toes](https://walkito.site/toe-strengthening-exercises/) that share load with the arch.
 - [Ankle inversion with a band](https://walkito.site/exercises/ankle-inversion-band/) strengthens the posterior tibial muscle, the same one involved in adult-acquired flatfoot.
 
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
@@ -5981,6 +5986,11 @@ Flat feet can overlap with other foot problems, especially when standing or walk
 - [Ball of foot pain](https://walkito.site/ball-of-foot-pain/) covers forefoot pain, which overlaps with flat feet when load shifts forward.
 - [Feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the exercises and footwear for long days on your feet.
 - [Nurses and foot pain](https://walkito.site/nurses-foot-pain/) addresses foot pain specific to healthcare workers.
+- Strength and mobility: [foot strengthening](https://walkito.site/foot-strengthening-exercises/), [toe strengthening](https://walkito.site/toe-strengthening-exercises/), [ankle strengthening](https://walkito.site/ankle-strengthening-exercises/), [ankle mobility](https://walkito.site/ankle-mobility-exercises/) and [tight calves](https://walkito.site/tight-calves/).
+- Flat feet and pain: [arch pain](https://walkito.site/arch-pain/), [posterior tibial tendon dysfunction](https://walkito.site/posterior-tibial-tendon-dysfunction-exercises/), [knee pain](https://walkito.site/flat-feet-knee-pain/) and [back pain](https://walkito.site/flat-feet-back-pain/).
+- Kids and age: [flat feet in kids](https://walkito.site/flat-feet-in-kids/) and [whether flat feet get worse with age](https://walkito.site/do-flat-feet-get-worse-with-age/).
+- Other foot problems: [high arches](https://walkito.site/high-arches-exercises/) and [bunions](https://walkito.site/bunion-exercises/).
+- Shoes and apps: [barefoot shoes](https://walkito.site/barefoot-shoes/), [insoles vs exercises](https://walkito.site/insoles-vs-exercises/) and the [best app for flat feet](https://walkito.site/best-app-for-flat-feet/).
 
 ### See a clinician first if
 
@@ -10716,7 +10726,7 @@ The 2023 heel pain guideline gives manual therapy grade A, its top grade, but it
 
 ## Insoles vs exercises: do you need orthotics for foot pain?
 
-Language: English · https://walkito.site/insoles-vs-exercises/ · published 2026-10-09 · updated 2026-10-09
+Language: English · https://walkito.site/insoles-vs-exercises/ · published 2026-10-09 · updated 2026-10-13
 
 Most people with heel pain or flat feet do not need custom orthotics. In trials, insoles give a small, short-lived drop in pain, and store-bought ones do about as well as custom ones. Exercise builds the capacity of the foot and calf, and the heel pain guideline grades it higher. Insoles are a reasonable add-on, not a replacement.
 
@@ -10757,7 +10767,7 @@ The Dutch STAP trial randomised 185 adults with heel pain (Rasenberg and colleag
 
 **Every group also got a booklet with exercises.** At three months, custom insoles did no better than sham. The GP care group did better than the custom group: about 1 point less pain during activity and 1.5 points less first-step pain, on a 0 to 10 scale. A cost analysis of the same trial over about six months found custom insoles "not cost-effective" compared with GP care.
 
-Custom orthotics can still help some people (see below). But if you want an insole for heel pain, a well-fitting off-the-shelf arch support is the reasonable first try.
+Custom orthotics can still help some people (see below). But if you want an insole for heel pain, a [well-fitting off-the-shelf arch support](https://walkito.site/best-insoles-for-plantar-fasciitis/) is the reasonable first try.
 
 Source: Whittaker GA, Munteanu SE, Menz HB, Tan JM, Rabusin CL, Landorf KB. Foot orthoses for plantar heel pain: a systematic review and meta-analysis. British Journal of Sports Medicine. 2018;52(5):322–328.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -11083,7 +11093,9 @@ You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. Each
 
 The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](https://walkito.site/program/).
 
-Walkito is in English, Russian and Spanish.
+Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
+
+Walkito can also be used inside ChatGPT and Claude, where it answers with short exercise videos and a starter plan. [Walkito in ChatGPT and Claude](https://walkito.site/ai/).
 
 ### How we research
 
@@ -11138,7 +11150,7 @@ Walkito’s [privacy policy](https://walkito.site/privacy/) explains what Walkit
 
 ### Is Walkito available on Android?
 
-Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.
+Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.
 
 ### Do I need an Apple Watch?
 
@@ -11262,7 +11274,7 @@ Delete your account in Walkito under Profile, then Delete account. That removes 
 
 ### How much does Walkito cost?
 
-Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the store shows is the one that applies.
+Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. The price the store shows is the one that applies.
 
 ### How do I cancel my Walkito subscription?
 

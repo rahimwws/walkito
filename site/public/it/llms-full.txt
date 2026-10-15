@@ -1,14 +1,15 @@
 # Walkito: full text, Italian (Italiano)
 
-> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.
 
 Source: https://walkito.site/it/
-Last updated: 2026-10-12
+Last updated: 2026-10-16
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -9204,7 +9205,7 @@ Nessuno studio ha seguito i tempi di recupero specificamente per la tendinite de
 
 ## Walkito vs Exakt Health: quale fa per te?
 
-Language: Italian (Italiano) · https://walkito.site/it/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
+Language: Italian (Italiano) · https://walkito.site/it/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-13
 
 Walkito ed Exakt Health offrono entrambe piani di esercizi per la fascite plantare, ma sono fatte per persone diverse. Exakt è un’app per chi corre, con oltre 15 piani di riabilitazione per infortuni e un programma di ritorno alla corsa. Walkito è un’app più ristretta, concentrata su dolore al tallone, piede piatto e adattamento al dolore di ogni mattina. Questa pagina le confronta con onestà, dice dove Exakt è la scelta migliore e spiega cosa fa di diverso Walkito.
 
@@ -9287,7 +9288,7 @@ Se ti servono solo esercizi per il dolore al tallone o al piede, Walkito è l’
 
 Exakt Health e Walkito sono entrambe sia su iOS sia su Android, quindi la piattaforma non fa la differenza tra le due.
 
-Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo e spagnolo. In comune ci sono inglese e spagnolo. Se ti serve il francese o il tedesco, Exakt è l’unica opzione. Se ti serve il russo, Walkito è l’unica opzione.
+Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo, spagnolo, portoghese, francese, italiano e tedesco. In comune ci sono inglese, spagnolo, francese e tedesco. Se ti serve il russo, il portoghese o l’italiano, tra le due solo Walkito è un’opzione.
 
 ### Privacy
 
@@ -9327,7 +9328,6 @@ Scegli Exakt Health se vale almeno una di queste cose:
 - Il tuo infortunio non è fascite plantare né piede piatto. Exakt copre oltre 15 problemi; Walkito ne copre tre.
 - Vuoi una prova gratuita di 7 giorni per testare l’app prima di pagare.
 - Per te conta la certificazione come dispositivo medico nell’UE.
-- Ti serve l’app in francese o in tedesco.
 
 ### Quando Walkito è la scelta migliore?
 
@@ -9337,7 +9337,7 @@ Scegli Walkito se vale almeno una di queste cose:
 - Vuoi sessioni da 3 a 10 minuti invece che da 15 a 30.
 - Per te conta più l’adattamento di ogni sessione al dolore con un check-in al mattino che la progressione a livelli.
 - Vuoi test dei progressi ogni 14 giorni che confrontino sinistra e destra.
-- Ti serve l’app in russo.
+- Ti serve l’app in russo, portoghese o italiano.
 - Stai in piedi tutto il giorno per lavoro, non corri, e vuoi un’app fatta per questo.
 
 ### Quando un’app non basta, rivolgiti a un professionista sanitario
@@ -9392,7 +9392,7 @@ Scegli 3, 5 o 7 giorni di allenamento a settimana e sessioni da 3, 5 o 10 minuti
 
 Il piano non ha una durata fissa. Quando raggiungi un obiettivo, quell’obiettivo passa al mantenimento con una dose più bassa e il successivo prende il suo posto. E va avanti così finché usi Walkito. [Come funziona il piano](https://walkito.site/program/) (in inglese).
 
-Walkito è disponibile in inglese, russo e spagnolo.
+Walkito è disponibile in inglese, russo, spagnolo, portoghese, francese, italiano e tedesco.
 
 ### Come facciamo ricerca
 

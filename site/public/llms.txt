@@ -1,9 +1,10 @@
 # Walkito
 
-> An exercise plan on iPhone and Android for runners with heel pain (often linked to
-> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
-> one week at a time around a goal that can be measured, adapts each day to
-> the morning's pain, and checks progress with physical tests. It has no fixed
+> An exercise plan on iPhone and Android for heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain and flexible flat feet, for
+> runners and for people on their feet all day at work. It is built one week
+> at a time around a goal that can be measured, adapts each day to the
+> morning's pain, and checks progress with physical tests. It has no fixed
 > length: a goal that is reached moves to maintaining, and the next takes its
 > place.
 
@@ -12,7 +13,26 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-12
+Last updated: 2026-10-16
+
+## Key facts
+- No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
+- Five measured goals: easier mornings (morning pain at or under 1/10 for 14 days running); an arch hold of 60 seconds; 25 single-leg calf raises; single-leg balance for 30 seconds; a left/right difference under 10%.
+- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomized trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
+- Training days: 3, 5 or 7 a week. Sessions: 3, 5 or 10 minutes (default 5), each 2 to 4 exercises; the focus exercise is never cut.
+- Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.
+- Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
+- Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
+- Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
+- Not related to walkito.com, a dog-walking service with a similar name.
+- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in seven languages: English, Russian, Spanish, Portuguese (Brazil), French, Italian and German. This site is in the same seven.
+- Contact: hello@walkito.site
+
+## Key findings the plan follows
+- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomized trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
+- In people with *flexible* flat feet, a six-week exercise program in a randomized trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
+- In a 2024 meta-analysis, only short-foot programs longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
+- The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.
 
 ## Who writes this
 - The guides on this site are written by Rahim Hudaykulyyev (https://www.linkedin.com/in/rhdklv/, https://x.com/rahimwws, https://github.com/rahimwws) and Rahman Bazarov (https://www.linkedin.com/in/rahman-bazarov/), the two co-founders of Walkito. About them: https://walkito.site/about/#founders
@@ -43,7 +63,7 @@ Last updated: 2026-10-12
 - [Hinge Health alternatives if your employer doesn’t offer it](https://walkito.site/hinge-health-alternatives/): Can’t get Hinge Health? Which alternatives you can get through your plan, which you can book yourself, what they cost and what fits foot and heel pain.
 - [Exakt Health alternatives: which app fits you instead?](https://walkito.site/exakt-health-alternatives/): Looking for an Exakt Health alternative? Prehab, Injurymap, Sports Injury Rehabilitation, GaitLab Coach, Hinge Health and Walkito compared on price and fit.
 - [Best app for flat feet: 5 apps compared](https://walkito.site/best-app-for-flat-feet/): Best app for flat feet in 2026: Arch, ArchFix, Injurymap, How to Do Foot Exercises and Walkito compared on price, platforms, what they offer and the research.
-- [Best insoles for plantar fasciitis: what the trials show](https://walkito.site/best-insoles-for-plantar-fasciitis/): Which insoles help plantar fasciitis? What trials found on custom vs store-bought, heel cups vs arch supports and firm vs soft, plus 12 insoles and their claims.
+- [Best insoles for plantar fasciitis: what the trials show](https://walkito.site/best-insoles-for-plantar-fasciitis/): Which insoles help plantar fasciitis? What trials found on custom vs store-bought, heel cups vs arch supports, firm vs soft, plus 12 insoles and their claims.
 - [Walkito vs Exakt Health: which one fits you?](https://walkito.site/walkito-vs-exakt-health/): Walkito vs Exakt Health compared: conditions, pricing, platforms, how each builds your plan, evidence base, languages and privacy. Checked October 2026.
 - [Plantar fascia stretch: how to do it, sets and reps](https://walkito.site/exercises/plantar-fascia-stretch/): How to do the plantar fascia stretch for plantar fasciitis: technique, when to stretch, how long to hold, and what the research says.
 - [Calf stretch for plantar fasciitis: technique, sets and hold time](https://walkito.site/exercises/calf-stretch/): How to do the calf stretch (straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, and what the evidence says.
@@ -104,6 +124,9 @@ Last updated: 2026-10-12
 - [Questions](https://walkito.site/faq/): sessions, goals, tests, Apple Health,
   notifications, the streak, and the clinical questions people ask
 - [About Walkito](https://walkito.site/about/): What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.
+- [Walkito in ChatGPT and Claude](https://walkito.site/ai/): the Walkito tools inside
+  ChatGPT and Claude (exercises with short videos, a starter plan, when to see
+  a doctor), example prompts, and privacy: nothing typed in the chat is stored
 
 ## Support and legal
 - [Support](https://walkito.site/support/): notifications, Apple Health permissions,
@@ -112,11 +135,26 @@ Last updated: 2026-10-12
 - [Terms of use](https://walkito.site/terms/): the license, App Store billing and
   cancellation, health and safety, and what the app does not promise
 
-## Other languages
-The site is in seven languages. Russian and Spanish have the plan, the
-evidence and the questions pages as well; every language has the home page,
-both main guides, its translated articles, the About page and the support,
-privacy and terms pages. Each language has its own full-text file.
+## Full text
+The English text of every guide, the plan, the evidence, the About page and
+the FAQ is at https://walkito.site/llms-full.txt. The other languages:
+- Russian (Русский): https://walkito.site/ru/llms-full.txt
+- Spanish (Español): https://walkito.site/es/llms-full.txt
+- Portuguese, Brazil (Português): https://walkito.site/pt/llms-full.txt
+- French (Français): https://walkito.site/fr/llms-full.txt
+- Italian (Italiano): https://walkito.site/it/llms-full.txt
+- German (Deutsch): https://walkito.site/de/llms-full.txt
+
+## Not published
+There is no aggregate user-outcome data on this site. It does not exist
+rather than being withheld.
+
+## Optional
+The pages in the other six languages. The site is in seven languages. Russian
+and Spanish have the plan, the evidence and the questions pages as well; every
+language has the home page, both main guides, its translated articles, the
+About page and the support, privacy and terms pages. Each language has its
+own full-text file.
 
 ### Russian (Русский)
 - [Главная](https://walkito.site/ru/)
@@ -244,7 +282,7 @@ privacy and terms pages. Each language has its own full-text file.
 - [Dolor en el empeine del pie: qué lo causa y cuándo consultar a un profesional de la salud](https://walkito.site/es/dolor-en-el-empeine/): Dolor en el empeine del pie: tendinitis de los extensores por cordones apretados, fractura por estrés, espolones óseos, gota y nervios. Cuándo consultar.
 - [Walkito vs Exakt Health: ¿cuál te conviene?](https://walkito.site/es/walkito-vs-exakt-health/): ¿Buscas una alternativa a Exakt Health? Walkito vs Exakt comparadas: lesiones que cubren, precio, plataformas, cómo arman tu plan, evidencia y privacidad.
 - [Alternativas a Exakt Health: ¿qué app te conviene?](https://walkito.site/es/alternativas-a-exakt-health/): ¿Buscas una alternativa a Exakt Health? Prehab, Injurymap, Sports Injury Rehabilitation, GaitLab Coach, Hinge Health y Walkito comparadas en precio y uso.
-- [Mejor app para el pie plano: 5 apps comparadas](https://walkito.site/es/mejor-app-pie-plano/): Mejor app para el pie plano en 2026: Arch, ArchFix, Injurymap, How to Do Foot Exercises y Walkito comparadas en precio, plataformas, lo que ofrecen y la evidencia.
+- [Mejor app para el pie plano: 5 apps comparadas](https://walkito.site/es/mejor-app-pie-plano/): Mejor app para el pie plano en 2026: Arch, ArchFix, Injurymap, How to Do Foot Exercises y Walkito comparadas en precio, plataformas, funciones y evidencia.
 - [Vendaje para la fascitis plantar: qué hace, cómo ponerlo y cuándo dejarlo](https://walkito.site/es/vendaje-fascitis-plantar/): Vendaje para fascitis plantar: qué dice la investigación del vendaje low-Dye y el kinesiotape, cómo ponerlos, cuánto tiempo usarlos y cuándo parar.
 - [Pie plano y dolor de rodilla: ¿hay relación y qué ayuda?](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/): Pie plano y dolor de rodilla: qué muestran los estudios, qué revisa un profesional, si sirven las plantillas y por qué priorizar cadera y rodilla.
 - [Pelota de masaje, rodillo o botella congelada para la fascitis plantar: qué dice la investigación](https://walkito.site/es/pelota-de-masaje-fascitis-plantar/): ¿Sirve una pelota de masaje para la fascitis plantar? Qué dicen los ensayos sobre pelotas, rodillos y botella congelada, cuánta presión y cuánto tiempo.
@@ -535,36 +573,3 @@ privacy and terms pages. Each language has its own full-text file.
 - [Über Walkito](https://walkito.site/de/ueber-walkito/)
 - [Support](https://walkito.site/de/support/) · [Privacy](https://walkito.site/de/datenschutz/) · [Terms of use](https://walkito.site/de/nutzungsbedingungen/)
 - Full text in German: https://walkito.site/de/llms-full.txt
-
-## Key facts
-- No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
-- Five measured goals: easier mornings (morning pain at or under 1/10 for 14 days running); an arch hold of 60 seconds; 25 single-leg calf raises; single-leg balance for 30 seconds; a left/right difference under 10%.
-- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomized trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
-- Training days: 3, 5 or 7 a week. Sessions: 3, 5 or 10 minutes (default 5), each 2 to 4 exercises; the focus exercise is never cut.
-- Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.
-- Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
-- Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
-- Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
-- Not related to walkito.com, a dog-walking service with a similar name.
-- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
-- Contact: hello@walkito.site
-
-## Key findings the plan follows
-- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomized trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
-- In people with *flexible* flat feet, a six-week exercise program in a randomized trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
-- In a 2024 meta-analysis, only short-foot programs longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
-- The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.
-
-## Full text
-The English text of every guide, the plan, the evidence, the About page and
-the FAQ is at https://walkito.site/llms-full.txt. The other languages:
-- Russian (Русский): https://walkito.site/ru/llms-full.txt
-- Spanish (Español): https://walkito.site/es/llms-full.txt
-- Portuguese, Brazil (Português): https://walkito.site/pt/llms-full.txt
-- French (Français): https://walkito.site/fr/llms-full.txt
-- Italian (Italiano): https://walkito.site/it/llms-full.txt
-- German (Deutsch): https://walkito.site/de/llms-full.txt
-
-## Not published
-There is no aggregate user-outcome data on this site. It does not exist
-rather than being withheld.
