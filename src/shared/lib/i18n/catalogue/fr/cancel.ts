@@ -13,7 +13,7 @@ export const CANCEL_FR = {
   'cancel.row.lifetime': 'À vie',
   'cancel.row.lifetimeHint': 'Walkito Plus est à toi pour de bon. Rien ne se renouvelle.',
 
-  'cancel.title': 'Pourquoi tu pars ?',
+  'cancel.title': 'Pourquoi tu pars ?',
   'cancel.sub': 'Choisis la réponse la plus proche. Ça nous aide à améliorer Walkito.',
   'cancel.reason.budget': 'Ça ne rentre pas dans mon budget',
   'cancel.reason.better': 'Mes pieds vont mieux',
@@ -40,7 +40,7 @@ export const CANCEL_FR = {
   'cancel.better.lastWeek': '7 derniers jours',
   'cancel.better.firstTest': 'Premier test',
   'cancel.better.latestTest': 'Dernier test',
-  'cancel.better.changeA11y': '{label} : {from} avant, {to} maintenant',
+  'cancel.better.changeA11y': '{label} : {from} avant, {to} maintenant',
   'cancel.better.reviewAsk': 'Si Walkito t’a aidé, quelques mots dans un avis aident quelqu’un d’autre à le trouver.',
   'cancel.better.review': 'Laisser un avis',
 

@@ -11,7 +11,7 @@ export const PAGES_IT = {
   // ── Day sheet ────────────────────────────────────────────────────────────
   'pages.day.notInPlan': 'Questo giorno non fa parte del tuo piano.',
 
-  'pages.day.retestEyebrow': 'Retest · Giorno {day}',
+  'pages.day.retestEyebrow': 'Verifica · Giorno {day}',
   'pages.day.blockTitle': 'Blocco {block} · {name}',
   'pages.day.retestResultSubtitle': 'Dove eri alla fine del blocco',
   'pages.day.share': 'Condividi',
@@ -21,9 +21,9 @@ export const PAGES_IT = {
   'pages.day.retestMeta': '{tests} · {minutes}',
   'pages.day.retestTodayNote':
     'Oggi niente allenamento. I test misurano dove ti ha lasciato il blocco, e sono l’unica cosa che fa cambiare livello.',
-  'pages.day.startRetest': 'Inizia il retest',
-  'pages.day.retestMissed': 'Questo retest non è stato completato. I livelli restano quelli dell’ultimo.',
-  'pages.day.retestClosesBlock': 'Retest · chiude il blocco {block}',
+  'pages.day.startRetest': 'Inizia la verifica',
+  'pages.day.retestMissed': 'Questa verifica non è stata completata. I livelli restano quelli dell’ultima.',
+  'pages.day.retestClosesBlock': 'Verifica · chiude il blocco {block}',
   'pages.day.retestOpensOn': 'Si apre il {date}. Fino ad allora i livelli restano fermi.',
 
   'pages.day.sessionTitle': '{kind} · {minutes}',
@@ -43,7 +43,7 @@ export const PAGES_IT = {
   'pages.program.kindMobility': 'Mobilità',
   'pages.program.kindBalance': 'Equilibrio',
   'pages.program.kindRecovery': 'Recupero',
-  'pages.program.retest': 'Retest',
+  'pages.program.retest': 'Verifica',
 
   'pages.program.testCount': { one: '{count} test', other: '{count} test' },
   'pages.program.minuteCount': { one: '{count} minuto', other: '{count} minuti' },
@@ -67,15 +67,15 @@ export const PAGES_IT = {
   'pages.program.blockAbout1':
     'Calmare il piede. Allungamenti e movimento dolce - ancora nessun carico.',
   'pages.program.blockAbout2':
-    'Inizia il lavoro di forza. I sollevamenti sui talloni con l’asciugamano sono ciò che smuove il dolore; il piede corto da seduto è ciò che rimodella l’arco. Molte persone sentono il primo vero sollievo intorno al giorno 20.',
+    'Inizia il lavoro di forza. I sollevamenti dei talloni con l’asciugamano sono l’esercizio che aiuta di più con il dolore; il piede corto da seduti rinforza l’arco. Molte persone sentono un primo vero sollievo intorno al giorno 20.',
   'pages.program.blockAbout3':
-    'Il carico sale: sollevamenti 4 × 10 con lo zaino, e il piede corto si fa in piedi - ora l’arco lavora sotto il peso del corpo. I primi cambiamenti nell’arco di solito si vedono dalla sesta settimana.',
+    'Il carico sale: sollevamenti 4 × 10 con lo zaino, e il piede corto si fa in piedi - ora l’arco lavora sotto il peso del corpo. I primi cambiamenti nell’arco spesso si vedono dalla sesta settimana.',
   'pages.program.blockAbout4':
     'I sollevamenti arrivano a 5 × 8, il carico più alto del programma. Il piede corto passa su una gamba, ed entra l’elastico - solo ora, quando i piccoli muscoli dentro il piede riescono a tenere.',
   'pages.program.blockAbout5':
     'Entra in gioco l’anca. Un gluteo debole lascia cedere l’arco, quindi il controllo sale lungo la catena mentre il carico sul piede resta dove l’ha lasciato il blocco 4.',
   'pages.program.blockAbout6':
-    'Questo non è più un trattamento - è manutenzione. Via l’asciugamano, i sollevamenti si alleggeriscono a 3 × 15 e si aggiunge tempo a piedi nudi in casa. Questa è la routine che tieni.',
+    'Da qui in poi è mantenimento. Via l’asciugamano, i sollevamenti dei talloni si alleggeriscono a 3 × 15 e si aggiunge tempo a piedi nudi in casa. Questa è la routine da tenere.',
   'pages.program.finishDay': 'Giorno {day}',
   'pages.program.finishCaption': 'Programma completato',
 
@@ -103,10 +103,10 @@ export const PAGES_IT = {
     one: '{count} sessione. Ecco cosa è cambiato.',
     other: '{count} sessioni. Ecco cosa è cambiato.',
   },
-  'pages.expired.ledeNoSessions': 'Ecco dove eri rimasto.',
-  'pages.expired.calfRaises': 'Sollevamenti sui talloni',
+  'pages.expired.ledeNoSessions': 'Ecco dove avevi lasciato.',
+  'pages.expired.calfRaises': 'Sollevamenti dei talloni',
   'pages.expired.morningPain': 'Dolore al mattino',
-  'pages.expired.nothingMeasured': 'I tuoi registri e i tuoi retest sono ancora tutti qui.',
+  'pages.expired.nothingMeasured': 'Le tue registrazioni e le verifiche sono ancora tutte qui.',
   'pages.expired.keeps': 'La tua cronologia resta comunque.',
   'pages.expired.busy': 'Un momento…',
   'pages.expired.plansTitle': 'Riprendi da dove avevi lasciato',
@@ -120,10 +120,10 @@ export const PAGES_IT = {
   'pages.week.goal.arch_hold': 'Arco più forte',
   'pages.week.goal.calf_raises': 'Polpacci più forti',
   'pages.week.goal.balance': 'Equilibrio migliore',
-  'pages.week.goal.symmetry': 'Piedi alla pari',
+  'pages.week.goal.symmetry': 'Piedi più simmetrici',
   'pages.week.line.pain_free_mornings': 'Dolore al mattino {current} → {target}',
   'pages.week.line.arch_hold': 'Tenuta dell’arco {current} s → {target} s',
-  'pages.week.line.calf_raises': 'Sollevamenti sui talloni {current} → {target}',
+  'pages.week.line.calf_raises': 'Sollevamenti dei talloni {current} → {target}',
   'pages.week.line.balance': 'Equilibrio {current} s → {target} s',
   'pages.week.line.symmetry': 'Differenza sinistra-destra {current}% → sotto il {target}%',
   'pages.week.lineUnmeasured': '{goal} - si misura al tuo prossimo test',
@@ -159,7 +159,7 @@ export const PAGES_IT = {
   'pages.plan.short.symmetry': 'entrambi i piedi',
   'pages.plan.todayEyebrow': 'Oggi',
   'pages.plan.todayTitle': '{kind} · {goal}',
-  'pages.plan.easyDay': 'Giornata leggera · da seduto',
+  'pages.plan.easyDay': 'Giornata leggera · da seduti',
   'pages.plan.start': 'Inizia',
   'pages.plan.testTitle': 'Giorno di test',
   'pages.plan.testBody': {
@@ -170,7 +170,7 @@ export const PAGES_IT = {
   'pages.plan.nextSessionOn': 'Prossima sessione: {day}, {kind}.',
   'pages.plan.seeResults': 'Vedi i risultati',
   'pages.plan.upcoming': 'In arrivo',
-  'pages.plan.upcomingEnd': 'Questa è la settimana. Il piano della prossima arriva domenica.',
+  'pages.plan.upcomingEnd': 'Per questa settimana è tutto. Il piano della prossima arriva domenica.',
   'pages.plan.row': '{day} · {kind}',
   'pages.plan.rowGoal': '{day} · {kind} · {goal}',
   'pages.plan.stripToday': 'oggi',
@@ -195,7 +195,7 @@ export const PAGES_IT = {
   'pages.plan.outcome.sportFor.cycling': 'il ciclismo',
   'pages.plan.outcome.sportFor.hiking': 'le escursioni',
   'pages.plan.outcome.sportFor.none': 'ogni giorno',
-  'pages.plan.outcome.painfree': '{sport} [senza dolore]',
+  'pages.plan.outcome.painfree': '{sport} [con meno dolore]',
   'pages.plan.outcome.injury_free': 'Gambe [solide] per {sport}',
   'pages.plan.outcome.flat_feet': 'Allena i muscoli che [sostengono] il tuo arco',
   'pages.plan.outcome.stronger': 'Gambe [più forti] per {sport}',

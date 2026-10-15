@@ -17,14 +17,14 @@ export const OFFER_DE = {
   'offer.featureAdaptiveTitle': 'Einheiten, die sich anpassen',
   'offer.featureAdaptiveBlurb': 'Jede Einheit richtet sich danach, wie die letzte wirklich lief.',
   'offer.featureProgressTitle': 'Fortschritt, den du siehst',
-  'offer.featureProgressBlurb': 'Sieh zu, wie deine Bereitschaft Woche für Woche steigt.',
+  'offer.featureProgressBlurb': 'Sieh zu, wie deine Werte Woche für Woche steigen.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Rückkehrpreis',
+  'offer.comebackBadge': 'Comeback-Angebot',
   'offer.inviteBadge': 'Dein Einladungspreis',
   'offer.headline': 'Walkito Premium freischalten',
   'offer.headlineInvite': 'Dein Einladungspreis für ein Jahr Walkito Premium',
-  'offer.headlineComeback': 'Dein Rückkehrpreis für ein Jahr Walkito Premium',
+  'offer.headlineComeback': 'Dein Comeback-Angebot: ein Jahr Walkito Premium',
   'offer.sub': 'Dein Plan und alles drumherum.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -87,7 +87,7 @@ export const OFFER_DE = {
   'offer.introWhy': '„{why}.“',
   'offer.introTodayWhen': 'Heute',
   'offer.introTodayTitle': { one: 'Ein Test von {count} Minute', other: 'Ein Test von {count} Minuten' },
-  'offer.introTodayBody': 'Waden, Fußgewölbe und Gleichgewicht. Dein Plan startet bei diesen Werten.',
+  'offer.introTodayBody': 'Waden, Fußgewölbe und Balance. Dein Plan startet bei diesen Werten.',
   'offer.introWeekWhen': 'Diese Woche',
   'offer.introWeekTitle': 'Erst mal zur Ruhe kommen',
   'offer.introWeekBody': {
@@ -105,15 +105,15 @@ export const OFFER_DE = {
   'offer.howSessionTitle': 'Die heutige Einheit machen',
   'offer.howSessionBody': '3 bis 10 Minuten. Schwerer wird es nur, wenn die letzte leicht war.',
   'offer.howTestTitle': 'Alle zwei Wochen testen',
-  'offer.howTestBody': 'Waden, Fußgewölbe und Gleichgewicht, gemessen. Sieh zu, wie sich die Werte bewegen.',
+  'offer.howTestBody': 'Waden, Fußgewölbe und Balance, gemessen. Sieh zu, wie sich die Werte bewegen.',
   'offer.howQuote': '„Die Übungen, die helfen, sind bekannt. Nur sagt dir niemand, welche und wie viele. Genau das haben wir gebaut.“',
-  'offer.howQuoteBy': 'Rahim, der Walkito mit seinem Freund Rahman macht',
+  'offer.howQuoteBy': 'Rahim, der Walkito mit seinem guten Freund Rahman entwickelt',
   'offer.startTitle': 'Starte deinen Plan heute',
   'offer.startSub': 'Deine erste Woche steht. Sie beginnt mit einem kurzen Test.',
   'offer.chipWeekly': 'Dein Wochenplan',
   'offer.chipSessions': 'Kurze Einheiten',
   'offer.chipTests': 'Alle zwei Wochen ein Test',
-  'offer.chipRoutines': 'Routinen für Schübe und Läufe',
+  'offer.chipRoutines': 'Routinen für Schmerztage und Läufe',
   'offer.chipReminders': 'Erinnerungen',
 
   // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
@@ -171,7 +171,7 @@ export const OFFER_DE = {
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Dein Ziel',
-  'widgets.retestGoal.painfree': 'Du bist wegen Morgen ohne Fersenschmerz hier. Diese Werte zeigen, wie dein Fuß dorthin kommt.',
+  'widgets.retestGoal.painfree': 'Du bist hier, damit deine Morgen mit weniger Fersenschmerz beginnen. Diese Werte zeigen, wie dein Fuß dorthin kommt.',
   'widgets.retestGoal.race': 'Du trainierst auf einen Wettkampf hin. Eine stärkere Wade und ein stabilerer Fuß bringen dich an die Startlinie.',
   'widgets.retestGoal.consistent': 'Dein Ziel war Beständigkeit. Das ist es, was Dranbleiben ausmacht.',
   'widgets.retestGoal.stronger': 'Du wolltest stärker werden. Hier zeigt es sich zuerst.',
@@ -216,14 +216,14 @@ export const OFFER_DE = {
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Gut gemacht.',
   'widgets.sessionStoppedTitle': 'Wir hören hier auf.',
-  'widgets.sessionStoppedBlurb': 'Sie zählt trotzdem als heutige Einheit. Morgen geht es eine Stufe leichter weiter.',
+  'widgets.sessionStoppedBlurb': 'Das zählt trotzdem als heutige Einheit. Morgen geht es eine Stufe leichter weiter.',
 
   // ── Session player: "it hurts" ───────────────────────────────────────────
   'widgets.painButton': 'Tut weh',
   'widgets.painTitle': 'Wie stark, gerade jetzt?',
   'widgets.painCarryOn': 'Mach sanft weiter. Hör auf, wenn es stärker wird.',
   'widgets.painPick': 'Tippe auf eine Zahl, um zu sehen, wie es weitergeht.',
-  'widgets.painLowHint': 'Leichtes Unbehagen ist bei dieser Arbeit in Ordnung. Die Einheit geht da weiter, wo du pausiert hast - mach einfach sanft weiter und tippe wieder aufs Pflaster, wenn es stärker wird.',
+  'widgets.painLowHint': 'Leichte Beschwerden sind bei diesem Training in Ordnung. Die Einheit geht da weiter, wo du pausiert hast - mach einfach sanft weiter und tippe wieder aufs Pflaster, wenn es stärker wird.',
   'widgets.painHighHint': 'Das ist zu viel, um weiterzutrainieren. Wir beenden die Einheit hier - sie zählt trotzdem für heute - und der Plan für morgen wird eine Stufe leichter.',
   'widgets.painResume': 'Sanft weitermachen',
   'widgets.painEnd': 'Einheit beenden',

@@ -32,7 +32,7 @@ export const CANCEL_RU = {
   'cancel.better.body': 'Вот какой путь вы прошли.',
   'cancel.better.plain': 'Мы очень рады, что ногам лучше. Спасибо, что прошли часть пути вместе с нами.',
   'cancel.better.pain': 'Боль на первых шагах, из 10',
-  'cancel.better.calf': 'Подъёмы на носок',
+  'cancel.better.calf': 'Подъёмы на носки',
   'cancel.better.arch': 'Удержание свода, секунды',
   'cancel.better.balance': 'Баланс, секунды',
   'cancel.better.firstWeek': 'Первая неделя',

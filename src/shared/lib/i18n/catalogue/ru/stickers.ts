@@ -10,13 +10,13 @@ export const STICKERS_RU = {
 
   'stickers.albumTitle': 'Ваши наклейки',
   'stickers.albumBlurb':
-    'Каждая - за то, что вы пришли: отметка, сессия, день отдыха. Тяжёлый день считается так же, как лёгкий.',
+    'Каждая - за то, что вы пришли: отметка, занятие, день отдыха. Тяжёлый день считается так же, как лёгкий.',
   'stickers.earnedA11y': '{name}, получена',
   'stickers.newA11y': '{name}, новая',
   'stickers.lockedA11y': '{name}, пока нет',
 
   'stickers.firstCheckin': 'Первая отметка',
-  'stickers.firstSession': 'Первая сессия',
+  'stickers.firstSession': 'Первое занятие',
   'stickers.firstRest': 'Первый день отдыха',
   'stickers.firstTest': 'Первый тест',
   'stickers.firstWeek': 'Первая неделя',
@@ -28,9 +28,9 @@ export const STICKERS_RU = {
     many: '{count} дней подряд',
   },
   'stickers.sessions': {
-    one: '{count} сессия',
-    few: '{count} сессии',
-    many: '{count} сессий',
+    one: '{count} занятие',
+    few: '{count} занятия',
+    many: '{count} занятий',
   },
   'stickers.checkins': {
     one: '{count} отметка',

@@ -74,8 +74,8 @@ export const HOME_ES = {
   'home.doneStreak': 'Día {count} de racha',
   'home.doneStreakStart': 'Tu racha empieza hoy',
   'home.weekDoneA11y': { one: '{count} día hecho esta semana', other: '{count} días hechos esta semana' },
-  'home.retestTask': 'Pruebas de control',
-  'home.retestTaskSub': 'Control · {tests}',
+  'home.retestTask': 'Reevaluación',
+  'home.retestTaskSub': 'Día de pruebas · {tests}',
   'home.seeResults': 'Ver resultados',
   'home.nothingScheduled': 'Hoy no hay nada programado. El descanso cuenta.',
   'home.markDone': 'Marcar como hecho',
@@ -125,20 +125,20 @@ export const HOME_ES = {
   'safety.a1': 'Tengo la pantorrilla hinchada, caliente o roja de un lado, o me falta el aire o me duele el pecho',
   'safety.a2': 'Noté un chasquido repentino detrás del tobillo y no puedo ponerme de puntillas con esa pierna',
   'safety.a3': 'Tengo diabetes y el pie está caliente, rojo, hinchado o tiene una herida abierta',
-  'safety.b1': 'Empezó tras una caída, una torcedura o un golpe y no puedo apoyar todo el peso',
+  'safety.b1': 'Empezó tras una caída, una torcedura o una lesión y no puedo apoyar todo el peso',
   'safety.b2': 'Puedo señalar con un dedo un punto doloroso en el hueso, o me duele al apretar los lados del talón',
-  'safety.b3': 'Me despierta por la noche o sigue igual en reposo',
-  'safety.b4': 'Tengo fiebre o me encuentro mal',
+  'safety.b3': 'Me despierta por la noche o sigue doliendo mucho en reposo',
+  'safety.b4': 'Tengo fiebre o me siento mal además del dolor',
   'safety.c1': 'Ardor, hormigueo o entumecimiento en el pie',
   'safety.c2': 'Me duelen los dos talones y otras articulaciones están hinchadas o rígidas por la mañana',
-  'safety.c3': 'Un arco se ha aplanado solo siendo ya adulto',
+  'safety.c3': 'Un arco se ha aplanado solo en la edad adulta',
   'safety.c4': 'Tengo diabetes o menos sensibilidad en los pies',
   'safety.c5': 'Me pusieron una inyección de corticoides en el talón o el Aquiles en las últimas 3 semanas',
   'safety.common': '¿Dolor o cojera después de un día largo? Es habitual con el dolor de talón - puedes seguir.',
   'safety.none': 'Nada de esto',
   'safety.check': 'Listo',
   'safety.resultA': 'Por favor, no entrenes hoy. Necesitas un médico ya - llama a emergencias o ve a urgencias.',
-  'safety.resultB1': 'Por favor, que te lo revisen pronto. Mientras tanto, con suavidad.',
+  'safety.resultB1': 'Por favor, que te lo revisen pronto. Mientras tanto, tómatelo con calma.',
   'safety.resultB2': 'Vale la pena comentárselo a un médico cuando puedas.',
   'safety.resultNone': 'Nada de esto necesita un médico ahora. Sigue con tu plan.',
   'safety.close': 'Cerrar',
@@ -174,7 +174,7 @@ export const HOME_ES = {
   'home.zone.heel': 'Talón',
   'home.zone.dorsum': 'Empeine',
   'home.zone.arch': 'Arco del pie',
-  'home.zone.ball': 'Almohadilla del pie',
+  'home.zone.ball': 'Base de los dedos',
   'home.zone.toes': 'Dedos del pie',
   'home.zone.innerAnkle': 'Tobillo interno',
 
@@ -192,7 +192,7 @@ export const HOME_ES = {
   'home.rangeAboveChip': 'Por encima',
   'home.rangeBelowChip': 'Por debajo',
   'home.rangeWithinChip': 'Lo habitual',
-  'home.usualRangeLegend': 'Habitual {low}–{high}',
+  'home.usualRangeLegend': 'Habitual {low}-{high}',
   'home.usualRangeA11y': 'Rango habitual, de {low} a {high}',
 
   /**
@@ -225,7 +225,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'sentado. Nada más.' },
     ],
     [
-      { k: 'frame', text: 'mañana dura. Hoy solo' },
+      { k: 'frame', text: 'una mañana difícil. Hoy solo' },
       { k: 'metric', icon: 'rest', text: '{restMinutes}', tail: '.' },
       { k: 'frame', text: 'Nada más.' },
     ],
@@ -280,7 +280,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'Toca ver qué se movió.' },
     ],
     [
-      { k: 'frame', text: 'día de control -' },
+      { k: 'frame', text: 'día de reevaluación -' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
       { k: 'value', text: '{testMinutes}', tail: '.' },
     ],
@@ -298,12 +298,12 @@ export const BRIEF_ES = {
     ],
     // El matiz del original se mantiene: «la mayoría» y «suele».
     [
-      { k: 'frame', text: 'semana nueva hoy. La mayoría nota las mañanas más llevaderas en' },
+      { k: 'frame', text: 'semana nueva hoy. Mucha gente nota las mañanas más llevaderas en' },
       { k: 'metric', icon: 'level', text: '4-6 semanas', tail: '.' },
-      { k: 'frame', text: 'El cambio mayor suele llegar hacia los 3 meses.' },
+      { k: 'frame', text: 'El cambio mayor a menudo llega hacia los 3 meses.' },
     ],
     [
-      { k: 'frame', text: 'esta semana trabaja en' },
+      { k: 'frame', text: 'el enfoque de esta semana:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'El plan gira en torno a eso.' },
     ],
@@ -326,7 +326,7 @@ export const BRIEF_ES = {
     [
       { k: 'frame', text: 'faltan' },
       { k: 'metric', icon: 'retest', text: '{testIn}' },
-      { k: 'frame', text: 'para tu próximo test.' },
+      { k: 'frame', text: 'para tu próxima reevaluación.' },
     ],
   ],
   'new-this-week': [
@@ -354,7 +354,7 @@ export const BRIEF_ES = {
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: '.' },
       {
         k: 'frame',
-        text: 'hoy toca {work}. La primera semana va de aparecer, no de esforzarse.',
+        text: 'hoy toca {work}. La primera semana se trata de ser constante, no de esforzarte.',
       },
     ],
   ],
@@ -447,7 +447,7 @@ export const BRIEF_ES = {
     [
       { k: 'frame', text: 'has dormido de media' },
       { k: 'metric', icon: 'sleep', text: '{sleep}' },
-      { k: 'frame', text: 'esta semana. Los tendones se reparan de noche - hoy vamos' },
+      { k: 'frame', text: 'esta semana. Los tendones se recuperan de noche - hoy vamos' },
       { k: 'metric', icon: 'rest', text: 'más suave', tail: '.' },
     ],
     [
@@ -466,16 +466,16 @@ export const BRIEF_ES = {
     [
       { k: 'frame', text: 'tu pulso en reposo está' },
       { k: 'metric', icon: 'level', text: 'algo por encima de tu media', tail: '.' },
-      { k: 'frame', text: 'Hoy tiramos hacia recuperación.' },
+      { k: 'frame', text: 'Hoy toca más recuperación.' },
     ],
     [
       { k: 'frame', text: 'el pulso en reposo está' },
-      { k: 'metric', icon: 'level', text: 'por encima de tu normal', tail: '.' },
+      { k: 'metric', icon: 'level', text: 'por encima de lo habitual', tail: '.' },
       { k: 'frame', text: 'Vamos con calma.' },
     ],
     [
       { k: 'frame', text: 'tu cuerpo todavía se está poniendo al día -' },
-      { k: 'metric', icon: 'level', text: 'pulso en reposo más alto de lo tuyo', tail: '.' },
+      { k: 'metric', icon: 'level', text: 'pulso en reposo más alto de lo habitual', tail: '.' },
       { k: 'frame', text: 'Hoy más suave.' },
     ],
   ],
@@ -484,7 +484,7 @@ export const BRIEF_ES = {
   'slower-walk': [
     [
       { k: 'frame', text: 'llevas toda la semana caminando' },
-      { k: 'metric', icon: 'gait', text: 'más lento de lo tuyo', tail: '.' },
+      { k: 'metric', icon: 'gait', text: 'más lento de lo habitual', tail: '.' },
       { k: 'frame', text: 'Suele pasar cuando el pie molesta.' },
     ],
     [
@@ -493,7 +493,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'Para tenerlo en cuenta, no para preocuparse.' },
     ],
     [
-      { k: 'frame', text: 'pasos más lentos que tu normal esta semana.' },
+      { k: 'frame', text: 'pasos más lentos que de costumbre esta semana.' },
       { k: 'metric', icon: 'gait', text: 'Nada alarmante' },
       { k: 'frame', text: '- pero hoy lo dejamos suave.' },
     ],
@@ -509,7 +509,7 @@ export const BRIEF_ES = {
       { k: 'value', text: '{usual}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'menos parejos que tu normal esta semana -' },
+      { k: 'frame', text: 'menos parejos que de costumbre esta semana -' },
       { k: 'metric', icon: 'gait', text: '{today}', tone: 'warn' },
       { k: 'frame', text: 'frente a tu habitual' },
       { k: 'value', text: '{usual}', tail: '.' },
@@ -569,7 +569,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'menos este mes.' },
     ],
     [
-      { k: 'frame', text: 'este mes has bajado' },
+      { k: 'frame', text: 'este mes el dolor bajó' },
       { k: 'metric', icon: 'up', text: '{drop}', tail: '.', tone: 'good' },
       { k: 'frame', text: 'Es un cambio real, no ruido.' },
     ],
@@ -583,7 +583,7 @@ export const BRIEF_ES = {
   'walk-back': [
     [
       { k: 'frame', text: 'tu ritmo al caminar' },
-      { k: 'metric', icon: 'done', text: 'ha vuelto a lo tuyo', tail: '.', tone: 'good' },
+      { k: 'metric', icon: 'done', text: 'ha vuelto a lo normal', tail: '.', tone: 'good' },
       { k: 'frame', text: 'Buena señal.' },
     ],
     [
@@ -621,7 +621,7 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'con el teléfono en el bolsillo.' },
     ],
     [
-      { k: 'frame', text: 'aún estoy formando la imagen de tu normal -' },
+      { k: 'frame', text: 'aún me estoy haciendo una idea de lo que es normal para ti -' },
       { k: 'metric', icon: 'window', text: 'unos días más' },
       { k: 'frame', text: 'bastarán.' },
     ],
@@ -685,23 +685,23 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'Cuanto más a menudo, más fuerte.' },
     ],
     [
-      { k: 'frame', text: 'más fuerte es poco, pero a menudo. Hoy:' },
+      { k: 'frame', text: 'ganar fuerza es poco, pero a menudo. Hoy:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'la mejor protección contra lesiones es un poco cada día. Hoy:' },
+      { k: 'frame', text: 'un poco cada día es lo que fortalece el pie. Hoy:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'un pie fuerte se lesiona menos. Hoy le tocan' },
+      { k: 'frame', text: 'un pie fuerte aguanta mejor la carga. Hoy le tocan' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'al día bastan para ir por delante de las lesiones.' },
+      { k: 'frame', text: 'al día bastan para cuidar tus pies.' },
     ],
   ],
 

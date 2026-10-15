@@ -4,7 +4,7 @@
 export const UPDATE_FR = {
   'update.readyTitle': 'Walkito s’est amélioré',
   'update.readyBlurb':
-    'La mise à jour est déjà téléchargée, ça ne prend qu’une seconde. Pas maintenant ? Elle s’installera toute seule au prochain lancement de Walkito.',
+    'La mise à jour est déjà téléchargée, ça ne prend qu’une seconde. Pas maintenant ? Elle s’installera toute seule au prochain lancement de Walkito.',
   'update.updateNow': 'Mettre à jour',
   'update.updating': 'Mise à jour…',
   'update.failedBlurb': 'Ça n’a pas abouti. Vérifie ta connexion et réessaie.',

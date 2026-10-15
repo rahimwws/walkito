@@ -4,12 +4,12 @@
 export const STICKERS_FR = {
   'stickers.ribbon': 'Autocollants',
   'stickers.sign': '{count} / {total}',
-  'stickers.collected': 'Autocollants : {count} sur {total}',
+  'stickers.collected': 'Autocollants : {count} sur {total}',
   'stickers.cardHint': 'Ouvre ton album d’autocollants',
 
   'stickers.albumTitle': 'Tes autocollants',
   'stickers.albumBlurb':
-    'Chacun récompense ta présence : un bilan, une séance, un jour de repos. Un jour difficile compte autant qu’un jour facile.',
+    'Chacun récompense ta présence : un bilan, une séance, un jour de repos. Un jour difficile compte autant qu’un jour facile.',
   'stickers.earnedA11y': '{name}, obtenu',
   'stickers.newA11y': '{name}, nouveau',
   'stickers.lockedA11y': '{name}, pas encore',

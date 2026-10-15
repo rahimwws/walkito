@@ -63,7 +63,7 @@ export const NOTIFICATIONS_IT = {
 
   // ── The morning after a bad day ──────────────────────────────────────────
   // No exclamation mark, no encouragement, no praise.
-  'notifications.flareCheckIn': 'Ieri è stata dura. Registra come stai quando ti alzi - se va ancora male, oggi resta breve e da seduti.',
+  'notifications.flareCheckIn': 'Ieri è stata dura. Fai il check-in quando ti alzi - se fa ancora male, la sessione di oggi sarà breve e da seduti.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {
@@ -97,7 +97,7 @@ export const NOTIFICATIONS_IT = {
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'Oggi inizia una nuova settimana. Obiettivo: {block}.',
   'notifications.blockLoadUp': 'Questa settimana si lavora su «{block}».',
-  'notifications.blockOpens': 'Nuova settimana, stesso piede. Questa è dedicata a {block}.',
+  'notifications.blockOpens': 'Nuova settimana, stesso piede. Il tema è «{block}».',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'Il dolore è salito questa settimana, quindi oggi si scende di un livello.',

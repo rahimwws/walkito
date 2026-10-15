@@ -50,7 +50,7 @@ export const HOME_OFFER_RU = {
   'homeOffer.card.lifetime': 'Один платёж, и доступ ваш навсегда',
 
   'homeOffer.standard.title': 'Продолжайте с Walkito Plus',
-  'homeOffer.standard.body': 'Ваш план, все сессии и все ретесты. **Выберите, как вам удобнее.**',
+  'homeOffer.standard.body': 'Ваш план, все занятия и все замеры. **Выберите, как вам удобнее.**',
   'homeOffer.standard.cta': 'Продолжить',
 
   'homeOffer.plan.yearly': 'На год',

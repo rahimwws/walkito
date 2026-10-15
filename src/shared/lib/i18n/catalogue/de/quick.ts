@@ -3,7 +3,7 @@
 export const QUICK_DE = {
   'quick.tab': 'Schnell',
   'quick.title': 'Schnell',
-  'quick.subtitle': 'Für wenn du es jetzt brauchst',
+  'quick.subtitle': 'Wenn du es gerade brauchst',
   'quick.featured': 'Gerade jetzt',
 
   'quick.flare.title': 'Tut gerade weh',

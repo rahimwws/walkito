@@ -109,7 +109,7 @@ export const EXERCISES_RU = {
   'exercises.barefootHome.cue': 'Только дома, на ровном полу, и увеличивайте время постепенно.',
 
   'exercises.breathingReset.title': 'Дыхательная пауза',
-  'exercises.breathingReset.rationale': 'Минута медленного дыхания правильно завершает сессию.',
+  'exercises.breathingReset.rationale': 'Минута медленного дыхания правильно завершает занятие.',
   'exercises.breathingReset.cue': 'Выдох длиннее вдоха. Вот и всё.',
 
   // ── The weekly plan's additions ──────────────────────────────────────────

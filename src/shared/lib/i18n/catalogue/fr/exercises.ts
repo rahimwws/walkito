@@ -33,14 +33,14 @@ export const EXERCISES_FR = {
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Montées sur pointes',
   'exercises.heelRaiseTowel.rationale':
-    'Dans une étude, des montées lentes et lourdes ont soulagé la douleur plus vite que les étirements seuls.',
+    'Dans une étude, des montées lentes et chargées ont soulagé la douleur plus vite que les étirements seuls.',
   'exercises.heelRaiseTowel.cue':
     'Serviette sous les orteils. Sans elle, tu ne travailles que le mollet.',
 
   'exercises.heelRaisePlain.title': 'Montées sur une jambe',
   'exercises.heelRaisePlain.rationale': 'La version simple qui garde la force que tu as construite.',
   'exercises.heelRaisePlain.cue':
-    'Trois secondes pour monter, trois pour descendre. C’est la vitesse qui le rend inutile.',
+    'Trois secondes pour monter, trois pour descendre. Si tu vas vite, ça ne sert à rien.',
 
   // ── Intrinsic foot work ──────────────────────────────────────────────────
   'exercises.shortFootSeated.title': 'Pied court',
@@ -107,7 +107,7 @@ export const EXERCISES_FR = {
   'exercises.heelRaiseDouble.rationale': 'Les deux pieds partagent la charge pendant que le mollet se réveille.',
   'exercises.heelRaiseDouble.cue': 'Monte bien droit au-dessus des gros orteils, puis redescends lentement.',
 
-  'exercises.heelRaiseSeated.title': 'Montées sur pointes, en position assise',
+  'exercises.heelRaiseSeated.title': 'Montées sur pointes assises',
   'exercises.heelRaiseSeated.rationale': 'Du travail de mollet presque sans charge sur le talon.',
   'exercises.heelRaiseSeated.cue':
     'Pousse sur l’avant des pieds. Les mains sur les genoux ajoutent de la résistance.',
@@ -137,7 +137,7 @@ export const EXERCISES_FR = {
   'exercises.heelDropStraight.cue':
     'Monte sur les deux pieds, descends lentement sur un seul. Laisse le talon passer sous le niveau de la marche.',
 
-  'exercises.tibialisRaise.title': 'Relevés de pointes',
+  'exercises.tibialisRaise.title': 'Relevés d’avant-pied',
   'exercises.tibialisRaise.rationale': 'Renforce le muscle du tibia qui stabilise chaque pas.',
   'exercises.tibialisRaise.cue': 'Dos contre le mur. Lève les pointes de pied, garde les talons au sol.',
 
@@ -148,7 +148,7 @@ export const EXERCISES_FR = {
   'exercises.soleMassage.title': 'Massage de la plante',
   'exercises.soleMassage.rationale': 'Détend les tissus après une longue journée.',
   'exercises.soleMassage.cue':
-    'Passages fermes du pouce, du talon vers les orteils. Relâche sur tout point qui pique.',
+    'Passages fermes du pouce, du talon vers les orteils. Relâche la pression dès que ça fait mal.',
 
   'exercises.pogoHops.title': 'Sauts pogo',
   'exercises.pogoHops.rationale': 'Réapprend au pied à rebondir - seulement une fois la douleur partie.',
@@ -156,12 +156,12 @@ export const EXERCISES_FR = {
 
   // ── The morning stretch ──────────────────────────────────────────────────
   'exercises.morningStretch.copy':
-    'Avant de te lever : tire tes orteils vers toi, 10 secondes, 10 fois.',
+    'Avant de te lever : tire tes orteils vers toi, 10 secondes, 10 fois.',
 
   // ── Load notes ───────────────────────────────────────────────────────────
   'exercises.loadNote.backpack':
     'Ajoute un sac à dos. Assez lourd pour que la dernière répétition soit vraiment la dernière.',
-  'exercises.loadNote.heavier': 'Ajoute du poids. Huit répétitions devraient être tout ce que tu as.',
+  'exercises.loadNote.heavier': 'Ajoute du poids. Tu ne dois pas pouvoir en faire plus de huit.',
   'exercises.loadNote.towelOff':
     'Sans serviette. Au poids du corps. C’est la version que tu vas garder.',
 

@@ -21,7 +21,7 @@ export const PLAYER_IT = {
   'player.afterPain.lowHint':
     'Segnato. Un po’ di indolenzimento dopo questo lavoro è normale. Se c’è ancora domattina, il check-in alleggerisce il piano.',
   'player.afterPain.highHint':
-    'È più di quanto questo lavoro dovrebbe causare. La prossima sessione riparte un passo indietro.',
+    'È più di quanto questo lavoro dovrebbe causare. La prossima sessione riparte da un livello più leggero.',
   'player.afterPain.save': 'Salva',
   'player.cantDo.button': 'Non riesco a farlo',
   'player.cantDo.title': 'Cosa te lo impedisce?',

@@ -62,20 +62,20 @@ export const NOTIFICATIONS_FR = {
   'notifications.maintenanceFourWeeks': 'Quatre semaines stables. C’est tout l’intérêt.',
 
   // ── The morning after a bad day ──────────────────────────────────────────
-  'notifications.flareCheckIn': 'Journée difficile hier. Fais ton bilan au lever - si ça va toujours mal, aujourd’hui reste court et assis.',
+  'notifications.flareCheckIn': 'Journée difficile hier. Fais ton bilan au lever - si ça fait encore mal, la séance du jour reste courte, sur une chaise.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {
-    one: '{steps} pas hier - {percent} % de plus que d’habitude. Aujourd’hui, récupération.',
-    other: '{steps} pas hier - {percent} % de plus que d’habitude. Aujourd’hui, récupération.',
+    one: '{steps} pas hier - {percent} % de plus que d’habitude. Aujourd’hui, récupération.',
+    other: '{steps} pas hier - {percent} % de plus que d’habitude. Aujourd’hui, récupération.',
   },
   'notifications.loadBigDay': 'Grosse journée debout. Le plan s’est ajusté.',
   'notifications.loadBackOff': 'Longue journée hier. Aujourd’hui, le plan lève le pied.',
 
   // ── The step check-in ────────────────────────────────────────────────────
   'notifications.stepsCheck': {
-    one: '{steps} pas aujourd’hui - une longue journée debout. Comment va le talon ?',
-    other: '{steps} pas aujourd’hui - une longue journée debout. Comment va le talon ?',
+    one: '{steps} pas aujourd’hui - une longue journée debout. Comment va le talon ?',
+    other: '{steps} pas aujourd’hui - une longue journée debout. Comment va le talon ?',
   },
 
   // ── Something changed in how they walk ───────────────────────────────────
@@ -92,28 +92,28 @@ export const NOTIFICATIONS_FR = {
   'notifications.retestFollowUp': 'Les tests t’attendent encore. Quatre minutes.',
 
   // ── A new block opens ────────────────────────────────────────────────────
-  'notifications.blockNew': 'Une nouvelle semaine commence. Objectif : {block}.',
-  'notifications.blockLoadUp': 'Cette semaine travaille sur « {block} ».',
-  'notifications.blockOpens': 'Nouvelle semaine, même pied. Celle-ci porte sur {block}.',
+  'notifications.blockNew': 'Une nouvelle semaine commence. Objectif : {block}.',
+  'notifications.blockLoadUp': 'Au programme cette semaine : {block}.',
+  'notifications.blockOpens': 'Nouvelle semaine, même pied. Objectif de la semaine : {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
-  'notifications.planFlare': 'La douleur a augmenté cette semaine, donc aujourd’hui descend d’un niveau.',
-  'notifications.planSpike': 'Grosse journée hier. Aujourd’hui reprend plus léger.',
-  'notifications.planHeavyDay': 'Longue journée debout hier. Aujourd’hui passe en récupération.',
-  'notifications.planReturn': 'Cinq jours de pause. Aujourd’hui reprend un cran plus facile.',
+  'notifications.planFlare': 'La douleur a augmenté cette semaine, donc la séance du jour baisse d’un niveau.',
+  'notifications.planSpike': 'Grosse journée hier. Aujourd’hui, on reprend plus léger.',
+  'notifications.planHeavyDay': 'Longue journée debout hier. Aujourd’hui, place à la récupération.',
+  'notifications.planReturn': 'Cinq jours de pause. Aujourd’hui, on reprend un cran plus facile.',
   'notifications.planBackUp': 'Plus de gêne - aujourd’hui la charge remonte.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
-  'notifications.checkinHow': 'Comment était le pied aujourd’hui ?',
-  'notifications.checkinOneTap': 'Une touche avant de dormir - comment ça s’est passé ?',
+  'notifications.checkinHow': 'Comment était le pied aujourd’hui ?',
+  'notifications.checkinOneTap': 'Un geste avant de dormir - comment ça s’est passé ?',
   'notifications.checkinLog': 'Note ta journée et le plan saura quoi faire demain.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'notifications.streakKeep': {
-    one: 'Une touche garde {count} jour d’affilée.',
-    other: 'Une touche garde {count} jours d’affilée.',
+    one: 'Un geste et ta série de {count} jour continue.',
+    other: 'Un geste et ta série de {count} jours continue.',
   },
-  'notifications.streakTap': { one: '{count} jour. Une touche.', other: '{count} jours. Une touche.' },
+  'notifications.streakTap': { one: '{count} jour. Un geste.', other: '{count} jours. Un geste.' },
 
   // ── Win-back ─────────────────────────────────────────────────────────────
   'notifications.winbackDay3': 'Le jour {day} est toujours là quand tu veux.',
@@ -121,8 +121,8 @@ export const NOTIFICATIONS_FR = {
   'notifications.winbackDay30': 'Toujours là si le pied se remet à parler.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, avant de partir - {percent} % de réduction la première année',
-  'notifications.offerWait': 'Avant de partir - {percent} % de réduction la première année',
+  'notifications.offerWaitNamed': '{name}, avant de partir - {percent} % de réduction la première année',
+  'notifications.offerWait': 'Avant de partir - {percent} % de réduction la première année',
   'notifications.offerWaitBody': 'L’abonnement annuel t’attend à prix réduit. Touche pour le voir.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

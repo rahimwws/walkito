@@ -16,17 +16,17 @@ export const OFFER_RU = {
   // ── Paywall: what the app is ─────────────────────────────────────────────
   'offer.featurePlanTitle': 'План под вас, а не шаблон',
   'offer.featurePlanBlurb': 'Собран по вашим ответам и пересобирается, когда они меняются.',
-  'offer.featureAdaptiveTitle': 'Сессии, которые подстраиваются',
-  'offer.featureAdaptiveBlurb': 'Каждая сессия учитывает, как прошла предыдущая.',
+  'offer.featureAdaptiveTitle': 'Занятия под вас',
+  'offer.featureAdaptiveBlurb': 'Каждое занятие учитывает, как прошло предыдущее.',
   'offer.featureProgressTitle': 'Прогресс, который видно',
   'offer.featureProgressBlurb': 'Смотрите, как готовность растёт неделя за неделей.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Цена за возвращение',
+  'offer.comebackBadge': 'Цена для вернувшихся',
   'offer.inviteBadge': 'Цена по приглашению',
   'offer.headline': 'Откройте Walkito Premium',
   'offer.headlineInvite': 'Ваша цена по приглашению на год Walkito Premium',
-  'offer.headlineComeback': 'Ваша цена за возвращение на год Walkito Premium',
+  'offer.headlineComeback': 'С возвращением: ваша цена на год Walkito Premium',
   'offer.sub': 'Ваш план и всё, что вокруг него.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -75,7 +75,7 @@ export const OFFER_RU = {
   // ── Paywall: the celebration ─────────────────────────────────────────────
   'offer.purchasedTitle': 'Вы в деле.',
   'offer.premium': 'Walkito Premium',
-  'offer.purchasedBlurb': 'План открыт и начнёт подстраиваться уже со следующей сессии.',
+  'offer.purchasedBlurb': 'План открыт и начнёт подстраиваться уже со следующего занятия.',
   'offer.restoredTitle': 'С возвращением.',
   'offer.restoredBlurb': 'Подписка снова активна. Всё осталось на своих местах.',
   'offer.start': 'Начать',
@@ -104,18 +104,18 @@ export const OFFER_RU = {
   'offer.howTitle': 'Несколько минут в день. Вот как это работает.',
   'offer.howCheckinTitle': 'Отмечайтесь каждое утро',
   'offer.howCheckinBody': 'Десять секунд о том, как чувствуют себя стопы. По этому строится день.',
-  'offer.howSessionTitle': 'Сделайте сессию дня',
+  'offer.howSessionTitle': 'Пройдите занятие дня',
   'offer.howSessionBody': 'От 3 до 10 минут. Сложнее становится, только когда прошлая далась легко.',
   'offer.howTestTitle': 'Тест каждые две недели',
   'offer.howTestBody': 'Икры, свод и баланс, в цифрах. Смотрите, как они меняются.',
   'offer.howQuote': '«Упражнения, которые помогают, известны давно. Просто никто не говорит, какие и сколько. Вот это мы и сделали.»',
-  'offer.howQuoteBy': 'Рахим, делает Walkito вместе с другом Рахманом',
+  'offer.howQuoteBy': 'Рахим, который делает Walkito вместе с другом Рахманом',
   'offer.startTitle': 'Начните план сегодня',
   'offer.startSub': 'Первая неделя готова. Она начинается с короткого теста.',
   'offer.chipWeekly': 'План на неделю',
-  'offer.chipSessions': 'Короткие сессии',
+  'offer.chipSessions': 'Короткие занятия',
   'offer.chipTests': 'Тест раз в две недели',
-  'offer.chipRoutines': 'Комплексы при обострении и для бега',
+  'offer.chipRoutines': 'Комплексы для бега и когда болит',
   'offer.chipReminders': 'Напоминания',
 
   // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
@@ -148,7 +148,7 @@ export const OFFER_RU = {
   'offer.plans.showAll': 'Показать все планы',
   'offer.plans.tableTitle': 'Что вы получаете',
   'offer.plans.rowPlan': 'План на каждый день, который подстраивается под вас',
-  'offer.plans.rowSessions': 'Все сессии с видео и подсказками',
+  'offer.plans.rowSessions': 'Все занятия с видео и подсказками',
   'offer.plans.rowTests': 'Тест прогресса раз в две недели',
   'offer.plans.rowStreaks': 'Серии дней и наклейки',
   'offer.plans.rowMorning': 'Утренняя растяжка',
@@ -168,19 +168,19 @@ export const OFFER_RU = {
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Ваша подписка закончилась',
   'widgets.sessionLockedBody':
-    'Всё, что вы записали, осталось здесь - читать можно по-прежнему. Чтобы снова проводить сессии, продолжите с того места, где остановились.',
+    'Всё, что вы записали, осталось здесь - читать можно по-прежнему. Чтобы снова заниматься, продолжите с того места, где остановились.',
   'widgets.sessionLockedCta': 'Посмотреть варианты',
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Ваша цель',
-  'widgets.retestGoal.painfree': 'Вы хотели утро без боли в пятке. Эти цифры - шаг к нему.',
-  'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа - это то, что вам нужно.',
+  'widgets.retestGoal.painfree': 'Вы хотели, чтобы утро начиналось с меньшей болью в пятке. Эти цифры - шаг к этому.',
+  'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа доведут вас до старта.',
   'widgets.retestGoal.consistent': 'Вы хотели заниматься регулярно. Вот что это даёт.',
   'widgets.retestGoal.stronger': 'Вы хотели стать сильнее. Здесь это видно первым делом.',
-  'widgets.retestGoal.injuryfree': 'Вы хотели без травм. Крепкую стопу травмировать труднее.',
+  'widgets.retestGoal.injuryfree': 'Вы хотели обойтись без травм. Крепкую стопу травмировать труднее.',
 
   'widgets.retestGoal.flatfeet': 'Вы пришли из-за плоскостопия. Удержание свода и устойчивый баланс - вот где видна работа.',
-  'widgets.retestGoal.ankles': 'Вы хотели устойчивые лодыжки. Баланс - первое, где это видно.',
+  'widgets.retestGoal.ankles': 'Вы хотели устойчивый голеностоп. Баланс - первое, где это видно.',
   'widgets.retestGoal.jump': 'Вы хотели прыгать выше. Сильная икра - это пружина прыжка.',
   'widgets.retestGoal.allday': 'Вы хотели выдерживать день на ногах. Здесь тренируются мышцы, которые держат свод.',
   'widgets.retestGoal.comeback': 'Вы возвращаетесь после травмы. Главная цифра - разница между ногами.',
@@ -220,16 +220,16 @@ export const OFFER_RU = {
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Хорошая работа.',
   'widgets.sessionStoppedTitle': 'Остановимся здесь.',
-  'widgets.sessionStoppedBlurb': 'Сегодняшняя сессия всё равно засчитана. Завтра начнём на ступень легче.',
+  'widgets.sessionStoppedBlurb': 'Сегодняшнее занятие всё равно засчитано. Завтра начнём на ступень легче.',
 
   'widgets.painButton': 'Болит',
   'widgets.painTitle': 'Насколько сильно сейчас?',
   'widgets.painCarryOn': 'Продолжайте аккуратно. Остановитесь, если станет сильнее.',
   'widgets.painPick': 'Выберите число - и мы скажем, что будет дальше.',
-  'widgets.painLowHint': 'Лёгкий дискомфорт в этих упражнениях нормален. Сессия продолжится с того же места - двигайтесь мягче и нажмите на пластырь снова, если станет сильнее.',
-  'widgets.painHighHint': 'Через такую боль тренироваться не стоит. Завершим сессию здесь - она засчитается за сегодня, а завтра план станет на шаг легче.',
+  'widgets.painLowHint': 'Лёгкий дискомфорт в этих упражнениях нормален. Занятие продолжится с того же места - двигайтесь мягче и нажмите на пластырь снова, если станет сильнее.',
+  'widgets.painHighHint': 'Через такую боль тренироваться не стоит. Завершим занятие здесь - оно засчитается за сегодня, а завтра план станет на ступень легче.',
   'widgets.painResume': 'Продолжить аккуратно',
-  'widgets.painEnd': 'Завершить сессию',
+  'widgets.painEnd': 'Завершить занятие',
   'widgets.painCancel': 'Отмена',
   'widgets.painClose': 'Закрыть',
   'widgets.sessionDoneStreak': {

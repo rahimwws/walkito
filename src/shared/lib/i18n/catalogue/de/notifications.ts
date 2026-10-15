@@ -23,7 +23,7 @@ export const NOTIFICATIONS_DE = {
   'notifications.channelName': 'Erinnerungen',
   'notifications.kindStrength': 'Krafttraining',
   'notifications.kindMobility': 'Mobilitätstraining',
-  'notifications.kindBalance': 'Gleichgewichtstraining',
+  'notifications.kindBalance': 'Balancetraining',
   'notifications.kindRecovery': 'Regeneration',
   'notifications.kindFoot': 'Training für den Fuß',
 
@@ -61,7 +61,7 @@ export const NOTIFICATIONS_DE = {
   'notifications.maintenanceFourWeeks': 'Vier Wochen stabil. Genau darum geht es.',
 
   // ── The morning after a bad day ──────────────────────────────────────────
-  'notifications.flareCheckIn': 'Gestern war hart. Trag dich nach dem Aufstehen ein - ist es noch schlimm, bleibt heute kurz und im Sitzen.',
+  'notifications.flareCheckIn': 'Gestern war hart. Mach nach dem Aufstehen deinen Check-in - tut es noch weh, bleibt die Einheit heute kurz und im Sitzen.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {
@@ -86,34 +86,34 @@ export const NOTIFICATIONS_DE = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Zwei Wochen. Zeit zu sehen, was sich getan hat. 3 Tests, 4 Minuten.',
-  'notifications.retestCheckpoint': 'Heute ist Check. Kein Training - nur drei Messungen.',
-  'notifications.retestDay': 'Tag {day}. Schauen wir, ob es wirkt.',
+  'notifications.retestCheckpoint': 'Heute ist Testtag. Kein Training - nur drei Messungen.',
+  'notifications.retestDay': 'Tag {day}. Schauen wir, was es bringt.',
   'notifications.retestFollowUp': 'Die Tests sind noch offen. Vier Minuten.',
 
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'Heute beginnt eine neue Woche. Fokus: {block}.',
   'notifications.blockLoadUp': 'Diese Woche geht es um „{block}“.',
-  'notifications.blockOpens': 'Neue Woche, derselbe Fuß. Diesmal: {block}.',
+  'notifications.blockOpens': 'Neue Woche, derselbe Fuß. Fokus dieser Woche: {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'Der Schmerz ist diese Woche gestiegen, deshalb geht es heute eine Stufe zurück.',
   'notifications.planSpike': 'Gestern war viel los. Heute geht es leichter weiter.',
   'notifications.planHeavyDay': 'Gestern ein langer Tag auf den Beinen. Heute gibt es Regeneration.',
   'notifications.planReturn': 'Fünf Tage Pause. Heute geht es eine Stufe leichter weiter.',
-  'notifications.planBackUp': 'Kein Muskelkater mehr - heute geht die Belastung wieder hoch.',
+  'notifications.planBackUp': 'Dein Fuß hat sich beruhigt - heute geht die Belastung wieder hoch.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
   'notifications.checkinHow': 'Wie war der Fuß heute?',
-  'notifications.checkinOneTap': 'Ein Tipp vor dem Schlafen - wie hat es sich angefühlt?',
+  'notifications.checkinOneTap': 'Einmal tippen vor dem Schlafen - wie war’s?',
   'notifications.checkinLog': 'Trag den Tag ein, dann weiß der Plan, was morgen dran ist.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   // Both lines say what one tap keeps, never what is about to be lost.
   'notifications.streakKeep': {
-    one: 'Ein Tipp hält {count} Tag am Laufen.',
-    other: 'Ein Tipp hält {count} Tage am Laufen.',
+    one: 'Einmal tippen, und deine Serie von {count} Tag läuft weiter.',
+    other: 'Einmal tippen, und deine Serie von {count} Tagen läuft weiter.',
   },
-  'notifications.streakTap': { one: '{count} Tag. Ein Tipp.', other: '{count} Tage. Ein Tipp.' },
+  'notifications.streakTap': { one: '{count} Tag. Einmal tippen.', other: '{count} Tage. Einmal tippen.' },
 
   // ── Win-back ─────────────────────────────────────────────────────────────
   'notifications.winbackDay3': 'Tag {day} wartet noch auf dich, wann immer du willst.',
@@ -123,7 +123,7 @@ export const NOTIFICATIONS_DE = {
   // ── Leaving the offer ────────────────────────────────────────────────────
   'notifications.offerWaitNamed': '{name}, bevor du gehst - {percent}% Rabatt im ersten Jahr',
   'notifications.offerWait': 'Bevor du gehst - {percent}% Rabatt im ersten Jahr',
-  'notifications.offerWaitBody': 'Das Jahresabo wartet zu einem niedrigeren Preis. Tipp, um es zu sehen.',
+  'notifications.offerWaitBody': 'Das Jahresabo wartet zu einem niedrigeren Preis. Tippe, um es anzusehen.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Dein 3-Monats-Pass endet in einer Woche',

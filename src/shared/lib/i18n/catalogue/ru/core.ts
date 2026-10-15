@@ -46,11 +46,11 @@ export const CORE_RU = {
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Ваш план',
   'settings.outcome': 'Ваша цель',
-  'settings.outcome.painfree': 'Без боли',
-  'settings.outcome.flat_feet': 'Плоскостопие',
+  'settings.outcome.painfree': 'Меньше боли',
+  'settings.outcome.flat_feet': 'Крепкие своды стоп',
   'settings.outcome.stronger': 'Сильные ноги',
   'settings.outcome.injury_free': 'Крепкие ноги',
-  'settings.outcome.stable_ankles': 'Устойчивые лодыжки',
+  'settings.outcome.stable_ankles': 'Устойчивый голеностоп',
   'settings.outcome.jump_higher': 'Прыгать выше',
   'settings.outcome.race_ready': 'К забегу',
   'settings.outcome.all_day': 'Весь день на ногах',
@@ -96,7 +96,7 @@ export const CORE_RU = {
   'streak.milestoneBlurb': 'Каждый из этих дней засчитан.',
   'streak.milestoneBigBlurb': 'Десять дней. Здесь привычка начинает держаться.',
   'streak.rule':
-    'День засчитан, если вы отметили боль, провели сессию, прошли комплекс из библиотеки или план сам назначил отдых.',
+    'День засчитан, если вы отметили боль, провели занятие, прошли комплекс из библиотеки или план сам назначил отдых.',
   'streak.total': {
     one: 'Всего {count} день.',
     few: 'Всего {count} дня.',
@@ -159,9 +159,9 @@ export const CORE_RU = {
   'card.getStarted': 'Начать',
   'card.last7Days': 'Последние 7 дней',
   'band.excellent': 'Отлично',
-  'band.strong': 'Сильно',
-  'band.steady': 'Ровно',
-  'band.building': 'Набираете',
+  'band.strong': 'Хорошо',
+  'band.steady': 'Стабильно',
+  'band.building': 'Набираем форму',
 
   // ── Quick actions (long-press the app icon) ────────────────────────────────
   'purchase.unavailable': 'Этот план сейчас недоступен.',
@@ -199,10 +199,10 @@ export const CORE_RU = {
   // ── Maintenance and regression ───────────────────────────────────────────
   'maintenance.throughNamed': '{name}, вы прошли программу.',
   'maintenance.through': 'Вы прошли программу.',
-  'maintenance.calfGain': '{opening} Икра выросла ↗ с {before} до {after}.',
-  'maintenance.relapse': 'Примерно половина людей теряет результат в течение пяти лет.',
-  'maintenance.staying': 'Две сессии в неделю - то, что оставляет вас во второй половине.',
-  'maintenance.regression': 'Показатели просели. Пройти блок «{block}» ещё раз?',
+  'maintenance.calfGain': '{opening} Подъёмы на носки: ↗ с {before} до {after}.',
+  'maintenance.relapse': 'Боль в пятке часто держится или возвращается: примерно у половины людей симптомы есть и через пять лет.',
+  'maintenance.staying': 'Два занятия в неделю помогают сохранить результат.',
+  'maintenance.regression': 'Показатели просели. Повторить неделю с фокусом «{block}»?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   // Отглагольные существительные, а не императивы: это названия этапов плана,

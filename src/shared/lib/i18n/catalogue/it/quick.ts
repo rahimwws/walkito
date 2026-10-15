@@ -20,7 +20,7 @@ export const QUICK_IT = {
 
   // Invariable where Italian allows: «da seduti» would pick a number, so the
   // positions are written as places rather than participles.
-  'quick.seated': 'da seduto',
+  'quick.seated': 'da seduti',
   'quick.standing': 'in piedi',
   'quick.inBed': 'a letto',
 

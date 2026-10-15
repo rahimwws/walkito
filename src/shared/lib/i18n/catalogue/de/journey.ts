@@ -12,7 +12,7 @@ export const JOURNEY_DE = {
   'onboarding.intro.haveAccount': 'Schon ein Konto? Anmelden',
   'onboarding.signIn.title': 'Schön, dass du wieder da bist',
   'onboarding.signIn.blurb': 'Melde dich bei dem Konto an, in dem dein Plan gespeichert ist.',
-  'onboarding.signIn.apple': 'Weiter mit Apple',
+  'onboarding.signIn.apple': 'Mit Apple fortfahren',
   'onboarding.signIn.google': 'Weiter mit Google',
   'onboarding.signIn.email': 'Lieber per E-Mail',
 
@@ -28,10 +28,10 @@ export const JOURNEY_DE = {
   'onboarding.role.walking': 'Gehen im Alltag',
   'onboarding.runner.titleRunning': 'Wie läufst du, {name}?',
 
-  'onboarding.react.runningTitle': 'Läufer, du bist in guter Gesellschaft.',
+  'onboarding.react.runningTitle': 'Du läufst? Dann bist du in guter Gesellschaft.',
   'onboarding.react.runningBody': 'Dein Plan passt sich deinen Läufen an.',
   'onboarding.react.feetTitle': 'Lange Schichten sind hart für die Füße.',
-  'onboarding.react.feetBody': 'Dein Plan passt vor oder nach die Arbeit.',
+  'onboarding.react.feetBody': 'Dein Plan passt vor oder nach der Arbeit.',
   'onboarding.react.bothTitle': 'Laufen zusätzlich zu einem vollen Tag.',
   'onboarding.react.bothBody': 'Dein Plan rechnet mit beidem.',
   'onboarding.react.walkingTitle': 'Jeder Schritt zählt.',
@@ -75,7 +75,7 @@ export const JOURNEY_DE = {
   'onboarding.react.monthsBody': 'Wir starten mit dem, was zuerst hilft.',
   'onboarding.react.yearTitle': 'Das ist eine lange Zeit.',
   'onboarding.react.yearBody': 'Meist hat sich die Belastung nie geändert. Das ändern wir.',
-  'onboarding.react.longerTitle': 'Über ein Jahr. Das ist echt.',
+  'onboarding.react.longerTitle': 'Über ein Jahr. Das nehmen wir ernst.',
   'onboarding.react.longerBody': 'Es braucht eine andere Belastung, nicht mehr Ruhe.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
@@ -96,11 +96,12 @@ export const JOURNEY_DE = {
   'onboarding.safety.blurb': 'Ein kurzer Sicherheitscheck.',
   'onboarding.safety.calf': 'Wade auf einer Seite geschwollen, warm oder gerötet',
   'onboarding.safety.pop': 'Ein plötzlicher Knall hinten am Knöchel',
-  'onboarding.safety.diabetes': 'Diabetes mit heißem, rotem Fuß oder offener Wunde',
+  'onboarding.safety.diabetes': 'Diabetes und ein Fuß, der heiß oder rot ist oder eine offene Wunde hat',
   'onboarding.safety.fall': 'Bei einem Sturz verletzt, kein Auftreten möglich',
-  'onboarding.safety.numb': 'Taubheit, Kribbeln oder Brennen',
+  'onboarding.safety.numb': 'Taubheitsgefühl, Kribbeln oder Brennen',
   'onboarding.safety.none': 'Nichts davon',
   'onboarding.react.safetySeated': 'Woche eins startet im Sitzen.',
+  'onboarding.react.safetyDoctor': 'Woche eins startet im Sitzen. Lass das bitte zuerst ärztlich abklären. Wenn es plötzlich oder stark ist, ruf den Notruf.',
   'onboarding.react.safetyNumb': 'Notiert. Wir behalten es im Blick.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -110,7 +111,7 @@ export const JOURNEY_DE = {
   'onboarding.tried.stretching': 'Dehnen',
   'onboarding.tried.shoes': 'Neue Schuhe',
   'onboarding.tried.rest': 'Ruhe',
-  'onboarding.tried.physio': 'Physiotherapie',
+  'onboarding.tried.physio': 'Physio',
   'onboarding.tried.none': 'Noch nichts',
 
   'onboarding.react.insolesTitle': 'Einlagen nehmen Last ab.',
@@ -131,7 +132,7 @@ export const JOURNEY_DE = {
   'onboarding.goal.titleShort': 'Was ist dir am wichtigsten?',
   'onboarding.goal.mornings': 'Leichtere Morgen',
   'onboarding.goal.backToRunning': 'Zurück zum Laufen',
-  'onboarding.goal.shift': 'Eine Schicht ohne Schmerzen schaffen',
+  'onboarding.goal.shift': 'Eine Schicht mit weniger Schmerzen schaffen',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Wie viele Stunden am Tag auf den Beinen?',
@@ -258,7 +259,7 @@ export const JOURNEY_DE = {
   'setup.email.note': 'Freiwillig. Ein paar kurze E-Mails in den ersten zwei Wochen.',
   'setup.email.send': 'Schicken',
   'setup.widget.title': 'Dein Check-in auf dem Home-Bildschirm',
-  'setup.widget.blurb': 'Ein Tipp, bevor du aufstehst.',
+  'setup.widget.blurb': 'Einmal tippen, bevor du aufstehst.',
   'setup.widget.add': 'Widget hinzufügen',
   'setup.widget.later': 'Nicht jetzt',
   'setup.widget.stepOf': 'Schritt {n} von {total}',

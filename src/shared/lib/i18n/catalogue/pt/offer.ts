@@ -24,11 +24,11 @@ export const OFFER_PT = {
   'offer.featureProgressBlurb': 'Veja seu preparo subir semana a semana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Preço de retorno',
+  'offer.comebackBadge': 'Preço especial',
   'offer.inviteBadge': 'Seu preço de convite',
   'offer.headline': 'Desbloqueie o Walkito Premium',
   'offer.headlineInvite': 'Seu preço de convite em um ano de Walkito Premium',
-  'offer.headlineComeback': 'Seu preço de retorno em um ano de Walkito Premium',
+  'offer.headlineComeback': 'Seu preço especial para voltar: um ano de Walkito Premium',
   'offer.sub': 'Seu plano, e tudo em volta dele.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -68,9 +68,9 @@ export const OFFER_PT = {
   'offer.restoreFailed': 'Não deu certo. Nada foi cobrado.',
   'offer.purchaseFailed': 'Não deu certo. Nada foi cobrado.',
   'offer.purchaseNotAllowed': 'As compras estão desativadas neste aparelho.',
-  'offer.alreadyOwned': 'Você já tem isso. Toque em "Restaurar compras".',
+  'offer.alreadyOwned': 'Você já tem isso. Toque em “Restaurar compras”.',
   'offer.pending': 'Aguardando aprovação. Você terá acesso assim que for concluído.',
-  'offer.notUnlocked': 'A compra foi concluída, mas o acesso não foi liberado. Toque em "Restaurar compras".',
+  'offer.notUnlocked': 'A compra foi concluída, mas o acesso não foi liberado. Toque em “Restaurar compras”.',
   'offer.continue': 'Continuar',
   'offer.processing': 'Processando…',
 
@@ -112,7 +112,7 @@ export const OFFER_PT = {
   'offer.howTestTitle': 'Reavaliação a cada duas semanas',
   'offer.howTestBody': 'Panturrilhas, arco e equilíbrio, medidos. Veja os números mudarem.',
   'offer.howQuote': '“Os exercícios que ajudam são bem conhecidos. Ninguém diz quais, nem quantos. Então foi isso que fizemos.”',
-  'offer.howQuoteBy': 'Rahim, que faz o Walkito com seu amigo Rahman',
+  'offer.howQuoteBy': 'Rahim, que faz o Walkito com o amigo Rahman',
   'offer.startTitle': 'Comece seu plano hoje',
   'offer.startSub': 'Sua primeira semana está pronta. Ela começa com um teste curto.',
   'offer.chipWeekly': 'Seu plano semanal',
@@ -176,18 +176,18 @@ export const OFFER_PT = {
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Sua meta',
-  'widgets.retestGoal.painfree': 'Você veio aqui por manhãs que não começam com dor no calcanhar. Esses números são o pé caminhando para isso.',
+  'widgets.retestGoal.painfree': 'Você veio aqui por manhãs com menos dor no calcanhar. Esses números mostram seu pé no caminho certo.',
   'widgets.retestGoal.race': 'Você está se preparando para uma prova. Uma panturrilha mais forte e um pé mais firme são o que te levam até a largada.',
   'widgets.retestGoal.consistent': 'Você disse que a meta era constância. É nisso que aparecer todo dia vai somando.',
   'widgets.retestGoal.stronger': 'Você queria ficar mais forte. É aqui que isso aparece primeiro.',
   'widgets.retestGoal.injuryfree': 'Você queria evitar lesões. Um pé que se mostra mais forte nos testes se machuca com menos facilidade.',
 
-  'widgets.retestGoal.flatfeet': 'Você veio aqui por causa do pé chato. A sustentação do arco e um equilíbrio mais firme são onde o treino aparece.',
+  'widgets.retestGoal.flatfeet': 'Você veio aqui por causa do pé chato. O treino aparece na sustentação do arco e num equilíbrio mais firme.',
   'widgets.retestGoal.ankles': 'Você queria tornozelos mais firmes. O equilíbrio é onde isso aparece primeiro.',
   'widgets.retestGoal.jump': 'Você queria pular mais alto. Uma panturrilha mais forte é a mola por trás disso.',
   'widgets.retestGoal.allday': 'Você queria aguentar o dia em pé. Os músculos que sustentam seu arco são o que isso treina.',
   'widgets.retestGoal.comeback': 'Você está voltando de uma lesão. A diferença entre as suas pernas é o número a acompanhar.',
-  'widgets.retestGoal.steady': 'Você queria andar com confiança. Equilíbrio e um pé forte são como isso se sente.',
+  'widgets.retestGoal.steady': 'Você queria andar com confiança. Na prática, isso é equilíbrio e um pé forte.',
   // ── Session player: the counter line ─────────────────────────────────────
   // One word per phase: read at two metres, and it changes every three seconds.
   'widgets.phaseUp': 'Sobe',

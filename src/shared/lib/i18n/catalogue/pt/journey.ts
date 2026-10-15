@@ -45,9 +45,9 @@ export const JOURNEY_PT = {
   // ── Where it hurts ───────────────────────────────────────────────────────
   'onboarding.react.areaHeel': 'O mais comum por aqui.',
   'onboarding.react.areaFoot': 'É por aí que o plano começa.',
-  'onboarding.react.areaAchilles': 'Ele responde bem a carga lenta.',
+  'onboarding.react.areaAchilles': 'Ele responde bem à carga lenta.',
   'onboarding.react.areaCalf': 'Ela puxa tudo o que está abaixo.',
-  'onboarding.react.areaShin': 'A carga subiu mais rápido que as pernas.',
+  'onboarding.react.areaShin': 'A carga subiu mais rápido do que as pernas se adaptaram.',
   'onboarding.react.areaNone': 'Boa hora para ganhar força.',
 
   'onboarding.where.heelLeft': 'Calcanhar esquerdo',
@@ -80,7 +80,7 @@ export const JOURNEY_PT = {
   'onboarding.react.monthsBody': 'A gente começa pelo que ajuda primeiro.',
   'onboarding.react.yearTitle': 'É bastante tempo.',
   'onboarding.react.yearBody': 'Em geral a carga nunca mudou. A gente vai mudar.',
-  'onboarding.react.longerTitle': 'Mais de um ano. É real.',
+  'onboarding.react.longerTitle': 'Mais de um ano. Isso pesa.',
   'onboarding.react.longerBody': 'Precisa de outra carga, não de mais descanso.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
@@ -101,11 +101,12 @@ export const JOURNEY_PT = {
   'onboarding.safety.blurb': 'Uma checagem rápida de segurança.',
   'onboarding.safety.calf': 'Panturrilha inchada, quente ou vermelha de um lado',
   'onboarding.safety.pop': 'Um estalo repentino atrás do tornozelo',
-  'onboarding.safety.diabetes': 'Diabetes com o pé quente e vermelho ou uma ferida aberta',
-  'onboarding.safety.fall': 'Machuquei numa queda e não consigo apoiar o peso',
+  'onboarding.safety.diabetes': 'Diabetes e o pé quente, vermelho ou com uma ferida aberta',
+  'onboarding.safety.fall': 'Me machuquei numa queda e não consigo apoiar o pé no chão',
   'onboarding.safety.numb': 'Dormência, formigamento ou queimação',
   'onboarding.safety.none': 'Nada disso',
   'onboarding.react.safetySeated': 'A primeira semana é feita na cadeira.',
+  'onboarding.react.safetyDoctor': 'A primeira semana é feita na cadeira. Antes, procure um médico por isso; se for súbito ou forte, ligue para a emergência.',
   'onboarding.react.safetyNumb': 'Anotado. Vamos ficar de olho.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -136,14 +137,14 @@ export const JOURNEY_PT = {
   'onboarding.goal.titleShort': 'O que importa mais?',
   'onboarding.goal.mornings': 'Manhãs mais leves',
   'onboarding.goal.backToRunning': 'Voltar a correr',
-  'onboarding.goal.shift': 'Aguentar um turno sem dor',
+  'onboarding.goal.shift': 'Aguentar o turno com menos dor',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Quantas horas em pé por dia?',
   'onboarding.load.blurbFeet': 'Seu dia comum, não o mais longo.',
   'onboarding.load.feet0': 'Menos de 4 horas',
-  'onboarding.load.feet1': '4–8 horas',
-  'onboarding.load.feet2': '8–12 horas',
+  'onboarding.load.feet1': '4-8 horas',
+  'onboarding.load.feet2': '8-12 horas',
   'onboarding.load.feet3': '12+ horas',
   'onboarding.reflection.feetDaily': '{band} em pé por dia',
 
@@ -159,7 +160,7 @@ export const JOURNEY_PT = {
   'onboarding.why.patternFoot': 'Os músculos do arco cansam antes do fim do dia.',
   'onboarding.why.patternAchilles': 'A carga subiu mais rápido do que o tendão se adaptou.',
   'onboarding.why.patternCalf': 'Uma panturrilha tensa puxa o calcanhar e o pé.',
-  'onboarding.why.patternShin': 'A carga subiu mais rápido que as pernas.',
+  'onboarding.why.patternShin': 'A carga subiu mais rápido do que as pernas se adaptaram.',
   'onboarding.why.lingersWeeks': 'Só algumas semanas. Mais fácil de virar o jogo.',
   'onboarding.why.lingersMonths': 'Já são meses. Aqui o que mais ajuda é constância.',
   'onboarding.why.lingersYear': 'Já são meses. A carga nunca mudou.',
@@ -179,7 +180,7 @@ export const JOURNEY_PT = {
 
   // ── When ─────────────────────────────────────────────────────────────────
   'onboarding.habit.title': 'Quando você vai fazer?',
-  'onboarding.habit.blurb': 'Ligue a algo que você já faz todo dia.',
+  'onboarding.habit.blurb': 'Associe a algo que você já faz todo dia.',
   'onboarding.habit.wake': 'Ao acordar, antes de levantar',
   'onboarding.habit.coffee': 'Com o café da manhã',
   'onboarding.habit.shift': 'Depois do meu turno',
@@ -294,7 +295,7 @@ export const JOURNEY_PT = {
   'offer.introTomorrowBody': 'Alguns minutos, antes de o pé tocar o chão.',
   'offer.howTitleShort': 'É assim que funciona',
   'offer.howCheckinShort': 'Check-in de 10 segundos pela manhã',
-  'offer.howSessionShort': 'Sessão de 3–10 minutos, ajustada todo dia',
+  'offer.howSessionShort': 'Sessão de 3-10 minutos, ajustada todo dia',
   'offer.howRetestShort': 'O mesmo teste a cada duas semanas',
   'offer.goldPlan': 'Como funciona o seu plano',
   'offer.goldHow': 'O que você ganha todo dia',

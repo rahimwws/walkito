@@ -13,15 +13,15 @@ export const PROFILE_FR = {
   'profile.sectionDanger': 'Zone sensible',
 
   // ── Rows ─────────────────────────────────────────────────────────────────
-  'profile.referFriend': 'Invite un ami',
+  'profile.referFriend': 'Invite un proche',
   'profile.invitesJoined': { one: '{count} inscription', other: '{count} inscriptions' },
-  'profile.inviteHint': 'Tes amis ont {percent} % de réduction sur l’abonnement annuel',
+  'profile.inviteHint': 'Tes proches ont {percent} % de réduction sur l’abonnement annuel',
   'profile.rate': 'Noter Walkito',
   'profile.contactSupport': 'Contacter le support',
   'profile.deleteAccount': 'Supprimer le compte',
 
   // ── Delete account sheet ─────────────────────────────────────────────────
-  'profile.deleteTitle': 'Supprimer le compte ?',
+  'profile.deleteTitle': 'Supprimer le compte ?',
   'profile.deleteBlurb':
     'Ça supprime ton programme, ton suivi de la douleur, ta série de jours et ton code d’invitation, de cet appareil et de nos serveurs. C’est irréversible.',
   'profile.deleteSubscription':
@@ -40,7 +40,7 @@ export const PROFILE_FR = {
   'profile.resetLabel': 'Revenir au premier écran',
   'profile.resetHint': 'Version de développement uniquement',
   'profile.resetA11y': 'Revenir au premier écran',
-  'profile.resetAlertTitle': 'Recommencer depuis le premier écran ?',
+  'profile.resetAlertTitle': 'Recommencer depuis le premier écran ?',
   'profile.resetAlertBody':
     'Efface l’onboarding, le programme, le suivi de la douleur et les clips en cache sur cet appareil. Ton compte et ton code d’invitation restent. Développement uniquement.',
   'profile.resetCancel': 'Annuler',

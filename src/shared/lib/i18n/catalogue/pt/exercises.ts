@@ -40,7 +40,7 @@ export const EXERCISES_PT = {
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Elevação de calcanhar',
   'exercises.heelRaiseTowel.rationale':
-    'Em um estudo, elevações lentas e pesadas aliviaram a dor mais cedo do que só alongar.',
+    'Em um estudo clínico, elevações lentas e pesadas aliviaram a dor mais cedo do que só alongar.',
   'exercises.heelRaiseTowel.cue':
     'Toalha embaixo dos dedos. Sem ela, você só está treinando panturrilha.',
 
@@ -157,7 +157,7 @@ export const EXERCISES_PT = {
   'exercises.soleMassage.title': 'Massagem na sola',
   'exercises.soleMassage.rationale': 'Solta o tecido depois de um dia longo.',
   'exercises.soleMassage.cue':
-    'Passadas firmes com o polegar, do calcanhar aos dedos. Alivie onde for pontiagudo.',
+    'Passadas firmes com o polegar, do calcanhar aos dedos. Se sentir dor aguda, alivie a pressão.',
 
   'exercises.pogoHops.title': 'Saltinhos pogo',
   'exercises.pogoHops.rationale': 'Ensina o pé a impulsionar de novo, só quando a dor já passou.',

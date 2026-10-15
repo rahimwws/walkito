@@ -2,15 +2,15 @@
  * `../en/core.ts` for the rules. */
 
 export const DONE_RU = {
-  'sessionDone.tileSession': 'Сессия',
+  'sessionDone.tileSession': 'Занятие',
   'sessionDone.tileMoves': 'Упражнения',
   'sessionDone.tileShowedUp': 'Дни заботы',
   'sessionDone.minutes': '{count} мин',
 
   'sessionDone.tileSessionA11y': {
-    one: 'Сессия, {count} минута',
-    few: 'Сессия, {count} минуты',
-    many: 'Сессия, {count} минут',
+    one: 'Занятие, {count} минута',
+    few: 'Занятие, {count} минуты',
+    many: 'Занятие, {count} минут',
   },
   'sessionDone.tileMovesA11y': {
     one: '{count} упражнение сделано',

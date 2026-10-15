@@ -122,7 +122,7 @@ export const ONBOARDING_RU = {
   'onboarding.bunion.note': 'Картинка для сравнения, а не диагноз.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
-  'onboarding.runner.title': 'Какой вы спортсмен, {name}?',
+  'onboarding.runner.title': 'Как вы тренируетесь, {name}?',
   'onboarding.runner.blurb':
     'Отсюда стартует ваш план. Если приуменьшить, первая неделя выйдет слишком лёгкой.',
   'onboarding.runner.new': 'Только начинаю',
@@ -138,22 +138,22 @@ export const ONBOARDING_RU = {
   'onboarding.body.lb': 'фнт',
 
   // ── Shoe size ────────────────────────────────────────────────────────────
-  'onboarding.size.title': 'Какой у вас размер, {name}?',
+  'onboarding.size.title': 'Какой у вас размер обуви, {name}?',
   'onboarding.size.blurb':
     'Размер обуви говорит о длине рычага, который приходится двигать вашей икре.',
 
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.title': '{name}, к чему вы идёте?',
   'onboarding.goal.blurb': 'Выберите то, что важнее всего сейчас. Потом можно поменять.',
-  'onboarding.goal.painfree': 'Бегать без боли',
+  'onboarding.goal.painfree': 'Бегать с меньшей болью',
   'onboarding.goal.race': 'Готовиться к старту',
   'onboarding.goal.consistent': 'Бегать регулярнее',
   'onboarding.goal.stronger': 'Укрепить ноги',
   'onboarding.goal.injuryfree': 'Обойтись без травм',
   'onboarding.goal.flatfeet': 'Укрепить своды стоп',
-  'onboarding.goal.ankles': 'Устойчивые лодыжки',
+  'onboarding.goal.ankles': 'Устойчивый голеностоп',
   'onboarding.goal.jump': 'Прыгать выше',
-  'onboarding.goal.allday': 'Весь день на ногах без усталости',
+  'onboarding.goal.allday': 'Выдерживать весь день на ногах',
   'onboarding.goal.comeback': 'Вернуться после травмы',
   'onboarding.goal.steady': 'Уверенно ходить',
   // Days, minutes and what is at home: a screen each, the cards under a
@@ -221,16 +221,16 @@ export const ONBOARDING_RU = {
   'onboarding.load.blurbBasketball': 'Игры и тренировки вместе - честная неделя.',
   'onboarding.load.titleCycling': 'Сколько вы сейчас катаетесь, {name}?',
   'onboarding.load.titleHiking': 'Сколько вы сейчас ходите в походы, {name}?',
-  'onboarding.load.km0': '0–5 {unit}',
-  'onboarding.load.km1': '5–15 {unit}',
-  'onboarding.load.km2': '15–30 {unit}',
-  'onboarding.load.km3': '30–50 {unit}',
+  'onboarding.load.km0': '0-5 {unit}',
+  'onboarding.load.km1': '5-15 {unit}',
+  'onboarding.load.km2': '15-30 {unit}',
+  'onboarding.load.km3': '30-50 {unit}',
   'onboarding.load.km4': '50+ {unit}',
   'onboarding.load.unitKm': 'км',
   'onboarding.load.hours0': 'Меньше 1 часа',
-  'onboarding.load.hours1': '1–3 часа',
-  'onboarding.load.hours2': '3–5 часов',
-  'onboarding.load.hours3': '5–8 часов',
+  'onboarding.load.hours1': '1-3 часа',
+  'onboarding.load.hours2': '3-5 часов',
+  'onboarding.load.hours3': '5-8 часов',
   'onboarding.load.hours4': '8+ часов',
   'onboarding.load.perWeek': 'в неделю',
   'onboarding.load.runsPerWeek': 'Пробежек в неделю',
@@ -240,8 +240,8 @@ export const ONBOARDING_RU = {
 
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': 'Что сейчас даётся тяжелее всего, {name}?',
-  'onboarding.challenge.blurb': 'Не больше двух. План склонится к тому, что выберете.',
-  'onboarding.challenge.painfree': 'Обходиться без боли',
+  'onboarding.challenge.blurb': 'Не больше двух. План сделает упор на то, что вы выберете.',
+  'onboarding.challenge.painfree': 'Меньше боли',
   'onboarding.challenge.back': 'Вернуться к бегу',
   'onboarding.challenge.distance': 'Увеличить дистанцию',
   'onboarding.challenge.recovery': 'Быстрее восстанавливаться',
@@ -280,7 +280,7 @@ export const ONBOARDING_RU = {
   'onboarding.health.opening': 'Открываем Здоровье…',
   'onboarding.health.connectAndroid': 'Подключить Health Connect',
   'onboarding.health.openingAndroid': 'Открываю Health Connect…',
-  'onboarding.health.promise': 'Данные о здоровье не покидают это устройство.',
+  'onboarding.health.promise': 'Шаги, сон и пробежки остаются на этом телефоне.',
   'onboarding.health.unavailable': 'Здесь Здоровье недоступно - можно продолжить без него.',
   'onboarding.health.declined': 'Доступ к Здоровью отклонён. План будет работать и без него.',
   'onboarding.health.empty':
@@ -303,12 +303,12 @@ export const ONBOARDING_RU = {
   'onboarding.watchSync.open': 'Открыть {app}',
   'onboarding.watchSync.garminApp': 'Garmin Connect',
   'onboarding.watchSync.garmin1': 'Откройте Garmin Connect и перейдите в «Ещё».',
-  'onboarding.watchSync.garmin2': 'Нажмите «Настройки», затем «Apple Здоровье».',
+  'onboarding.watchSync.garmin2': 'Нажмите «Настройки», затем «Apple Health».',
   'onboarding.watchSync.garmin3': 'Включите категории, которыми хотите делиться.',
   'onboarding.watchSync.whoopApp': 'Whoop',
-  'onboarding.watchSync.whoop1': 'Откройте Whoop и нажмите More.',
-  'onboarding.watchSync.whoop2': 'Откройте App Settings, затем Integrations.',
-  'onboarding.watchSync.whoop3': 'Нажмите Apple Health и включите его.',
+  'onboarding.watchSync.whoop1': 'Откройте Whoop и нажмите «More».',
+  'onboarding.watchSync.whoop2': 'Откройте «App Settings», затем «Integrations».',
+  'onboarding.watchSync.whoop3': 'Нажмите «Apple Health» и включите.',
 
   // ── Notifications ────────────────────────────────────────────────────────
   'onboarding.notify.title': 'Включите уведомления',
@@ -333,10 +333,10 @@ export const ONBOARDING_RU = {
   'onboarding.building.reflectionBoth': '{pain}, {volume}.',
   'onboarding.building.reflectionPain': '{pain}.',
   'onboarding.building.reflectionVolume': '{volume}.',
-  'onboarding.pattern.heel': 'Самый частый сценарий из всех. И отзывается он быстрее остальных.',
+  'onboarding.pattern.heel': 'Самый частый сценарий из всех. И обычно он хорошо поддаётся тренировкам.',
   'onboarding.pattern.foot': 'Слаб не сам свод. Слабо то, что его держит.',
   'onboarding.pattern.achilles':
-    'Нагрузка росла быстрее, чем успевало адаптироваться сухожилие. Это поправимо.',
+    'Нагрузка росла быстрее, чем успевало адаптироваться сухожилие. С этим можно работать.',
   'onboarding.pattern.shin': 'Объём обогнал ваши ноги. План отматывает назад, а потом наращивает.',
   'onboarding.pattern.calf': 'Икра тянет за собой всё, что ниже. Отпустите её - и остальное пойдёт следом.',
   'onboarding.pattern.none': 'Вы здесь до того, как заболело. Это самый дешёвый путь.',
@@ -365,10 +365,10 @@ export const ONBOARDING_RU = {
     many: '{count} тренировок в неделю',
   },
   'onboarding.plan.week': 'Неделя {n}',
-  'onboarding.plan.weeks': 'Недели {from}–{to}',
+  'onboarding.plan.weeks': 'Недели {from}-{to}',
   'onboarding.plan.weeksOn': 'Недели {from}+',
   'onboarding.plan.phaseSettle': 'успокаиваем раздражение',
-  'onboarding.plan.phaseBuild': 'строим свод',
+  'onboarding.plan.phaseBuild': 'укрепляем свод',
   'onboarding.plan.phaseLoad': 'возвращаем полную нагрузку',
   'onboarding.plan.reflectionBoth':
     '{pain} и {volume}. Первые две недели всё успокаиваем - до любой нагрузки.',
@@ -400,7 +400,7 @@ export const ONBOARDING_RU = {
   'onboarding.testimonial2.lead': 'дома или на работе',
   'onboarding.testimonial2.after': ': хватит пола и стены.',
   'onboarding.testimonial2.name': 'Каждая тренировка',
-  'onboarding.testimonial3.before': 'Минутный ретест',
+  'onboarding.testimonial3.before': 'Замеры за минуту',
   'onboarding.testimonial3.lead': 'покажет, что изменилось',
   'onboarding.testimonial3.after': ' - в цифрах, а не в ощущениях.',
   'onboarding.testimonial3.name': 'Каждые две недели',
@@ -438,7 +438,7 @@ export const ONBOARDING_RU = {
   'onboarding.note.body1':
     'Привет, я Рахим. Мы с другом делаем Walkito вдвоём. У кучи людей болит пятка: стельки, третьи кроссовки - а по утрам всё равно хромают. Упражнения, которые помогают, известны давно. Просто никто не говорит, какие и сколько. Вот это мы и сделали.',
   'onboarding.note.body2':
-    'Было бы круто, если бы ты написал отзыв. Нам правда важно. Спасибо, что ты здесь.',
+    'Будем очень рады вашему отзыву - для нас это правда важно. Спасибо, что вы с нами.',
   'onboarding.note.signature': 'Рахим и Рахман',
   'onboarding.note.cta': 'Оценить Walkito',
   'onboarding.note.later': 'Не сейчас',

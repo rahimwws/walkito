@@ -37,7 +37,7 @@ export const PLAYER_PT = {
   'player.cantDo.skipped': 'Hoje nada serve no lugar, então este fica de fora.',
   'player.load.backpack': 'Coloque uma mochila com cerca de 5-10% do seu peso corporal. Se 12 repetições lentas ficarem fáceis, coloque um pouco mais.',
   'player.painRule.title': 'Quanta dor é aceitável?',
-  'player.painRule.body': '0-3 tudo bem. 4-5 tudo bem se passar até a manhã seguinte. 6 ou mais - pare.',
+  'player.painRule.body': '0-3 tudo bem. 4-5 é aceitável se a dor diminuir até a manhã seguinte. 6 ou mais - pare.',
   'player.painRule.ok': 'Entendi',
   'player.painRule.a11y': 'Quanta dor é aceitável',
   'player.tempo.on': 'Som ligado',

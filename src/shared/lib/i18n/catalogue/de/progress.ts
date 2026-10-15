@@ -37,9 +37,9 @@ export const PROGRESS_DE = {
   'progress.longestStreak': 'Beste Serie',
 
   // ── The path ─────────────────────────────────────────────────────────────
-  'progress.retestToday': 'Retest heute',
+  'progress.retestToday': 'Heute Testtag',
   'progress.todayMinutes': 'Heute · {minutes} Min.',
-  'progress.retest': 'Retest',
+  'progress.retest': 'Test',
   'progress.blockDivider': 'Block {block} · {name}',
   'progress.weekDivider': 'Woche {week}',
 

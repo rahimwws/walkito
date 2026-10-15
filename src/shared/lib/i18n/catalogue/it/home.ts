@@ -39,7 +39,7 @@ export const HOME_IT = {
   'home.workMobility': 'stretching',
   'home.workBalance': 'lavoro di equilibrio',
   'home.workRecovery': 'recupero leggero',
-  'home.fallbackMove': 'sollevamenti sui talloni',
+  'home.fallbackMove': 'sollevamenti dei talloni',
 
   // ── Counted phrases ──────────────────────────────────────────────────────
   'home.minutes': { one: '{count} minuto', other: '{count} minuti' },
@@ -73,7 +73,7 @@ export const HOME_IT = {
 
   // ── Today's list ─────────────────────────────────────────────────────────
   'home.tasksTitle': 'Attività di oggi',
-  'home.libraryTitle': 'Per adesso',
+  'home.libraryTitle': 'Quando ti serve',
   'home.allDoneTitle': 'Fatto per oggi',
   'home.allDoneBlurb': 'Oggi non serve nient’altro.',
   'home.doneSummary': '{minutes} · {work}',
@@ -129,24 +129,24 @@ export const HOME_IT = {
   'home.somethingNewTitle': 'Qualcosa di nuovo?',
   'home.somethingNewSub': 'Gonfiore, intorpidimento, uno schiocco',
   'safety.title': 'Qualcosa di nuovo?',
-  'safety.sub': 'Tocca quello che vale per te adesso.',
+  'safety.sub': 'Tocca tutte le voci che valgono per te adesso.',
   'safety.a1': 'Il polpaccio è gonfio, caldo o arrossato da un lato, oppure mi manca il fiato o ho dolore al petto',
   'safety.a2': 'Ho sentito uno schiocco improvviso dietro la caviglia e non riesco a stare in punta di piedi su quella gamba',
   'safety.a3': 'Ho il diabete e il piede è caldo, arrossato, gonfio o ha una ferita aperta',
-  'safety.b1': 'È iniziato dopo una caduta, una storta o un colpo e non riesco a caricarci tutto il peso',
+  'safety.b1': 'È iniziato dopo una caduta, una storta o un infortunio e non riesco a caricarci tutto il peso',
   'safety.b2': 'Riesco a indicare con un dito un punto dolente su un osso, oppure fa male se stringo i lati del tallone',
   'safety.b3': 'Mi sveglia di notte o resta forte anche a riposo',
-  'safety.b4': 'Ho la febbre o non mi sento bene',
+  'safety.b4': 'Ho la febbre o non mi sento bene insieme al dolore',
   'safety.c1': 'Bruciore, formicolio o intorpidimento al piede',
   'safety.c2': 'Mi fanno male entrambi i talloni e altre articolazioni sono gonfie o rigide al mattino',
   'safety.c3': 'Un arco si è abbassato da solo in età adulta',
   'safety.c4': 'Ho il diabete o una sensibilità ridotta ai piedi',
   'safety.c5': 'Ho fatto un’infiltrazione di cortisone nel tallone o nell’Achille nelle ultime 3 settimane',
-  'safety.common': 'Dolore o andatura rigida dopo una giornata lunga? È comune con il dolore al tallone - puoi continuare.',
+  'safety.common': 'Ti fa male o zoppichi dopo una lunga giornata? Con il dolore al tallone è comune - puoi continuare.',
   'safety.none': 'Nessuno di questi',
   'safety.check': 'Fatto',
   'safety.resultA': 'Per favore, oggi non allenarti. Serve subito un medico - chiama i soccorsi o vai al pronto soccorso.',
-  'safety.resultB1': 'Per favore, fallo controllare presto. Nel frattempo, vai con delicatezza.',
+  'safety.resultB1': 'Per favore, fallo controllare presto. Nel frattempo, vacci piano.',
   'safety.resultB2': 'Vale la pena parlarne con un medico quando puoi.',
   'safety.resultNone': 'Niente di tutto questo richiede un medico adesso. Continua come previsto.',
   'safety.close': 'Chiudi',
@@ -198,14 +198,14 @@ export const HOME_IT = {
    * describe, they do not grade. */
   'home.bandNothing': 'Niente',
   'home.bandNothingBlurb': 'Oggi nessun dolore da segnalare.',
-  'home.bandBarely': 'Appena',
+  'home.bandBarely': 'Quasi niente',
   'home.bandBarelyBlurb': 'Te ne dimenticheresti se nessuno te lo chiedesse.',
   'home.bandNoticeable': 'Si sente',
   'home.bandNoticeableBlurb': 'Lo senti, ma non cambia niente di quello che fai.',
   'home.bandSore': 'Dà fastidio',
-  'home.bandSoreBlurb': 'Lo aggiri senza pensarci.',
+  'home.bandSoreBlurb': 'Ti adatti senza nemmeno pensarci.',
   'home.bandHurts': 'Fa male',
-  'home.bandHurtsBlurb': 'Adesso decide lui al posto tuo.',
+  'home.bandHurtsBlurb': 'Adesso è il dolore a decidere per te.',
   'home.bandSevere': 'Forte',
   'home.bandSevereBlurb': 'Il problema è stare in piedi, non correre.',
 };
@@ -292,12 +292,12 @@ export const BRIEF_IT = {
     ],
     // The hedge stays: «la maggior parte» and «di solito».
     [
-      { k: 'frame', text: 'nuova settimana oggi. La maggior parte delle persone sente le mattine più leggere in' },
+      { k: 'frame', text: 'nuova settimana oggi. Molte persone sentono le mattine più leggere in' },
       { k: 'metric', icon: 'level', text: '4-6 settimane', tail: '.' },
-      { k: 'frame', text: 'Il cambiamento più grande di solito arriva verso i 3 mesi.' },
+      { k: 'frame', text: 'Il cambiamento più grande spesso arriva verso i 3 mesi.' },
     ],
     [
-      { k: 'frame', text: 'questa settimana si lavora su' },
+      { k: 'frame', text: 'il lavoro di questa settimana:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'Il piano è costruito intorno a questo.' },
     ],
@@ -690,16 +690,16 @@ export const BRIEF_IT = {
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'la protezione migliore dagli infortuni è un po’ ogni giorno. Oggi:' },
+      { k: 'frame', text: 'un po’ ogni giorno è il modo migliore per prenderti cura dei piedi. Oggi:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'un piede forte si fa male meno spesso. Oggi gli dedichi' },
+      { k: 'frame', text: 'un piede forte regge meglio i carichi. Oggi gli dedichi' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'al giorno bastano per giocare d’anticipo sugli infortuni.' },
+      { k: 'frame', text: 'al giorno bastano per tenere i piedi in forma.' },
     ],
   ],
 
@@ -749,7 +749,7 @@ export const BRIEF_IT = {
     [
       { k: 'frame', text: 'ieri è stata una' },
       { k: 'metric', icon: 'feet', text: 'giornata più leggera' },
-      { k: 'frame', text: 'in piedi. Buon giorno per caricare un po’.' },
+      { k: 'frame', text: 'in piedi. Oggi è il giorno giusto per caricare un po’.' },
     ],
   ],
 

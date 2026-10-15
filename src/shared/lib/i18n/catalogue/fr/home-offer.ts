@@ -31,12 +31,12 @@ export const HOME_OFFER_FR = {
 
   'homeOffer.comeback.title': 'Offre limitée',
   'homeOffer.comeback.endsIn': 'Se termine dans {time}',
-  'homeOffer.comeback.bodyBoth': 'Garde **Walkito Plus** comme tu veux : **un an moins cher** ou **pour toujours**.',
+  'homeOffer.comeback.bodyBoth': 'Garde **Walkito Plus** comme tu veux : **un an moins cher** ou **pour toujours**.',
   'homeOffer.comeback.bodyYear': '**Un an de Walkito Plus** à prix réduit, pour peu de temps.',
   'homeOffer.comeback.bodyLifetime': '**Walkito Plus pour toujours** en un seul paiement, pour peu de temps.',
   'homeOffer.comeback.cta': 'Profiter de l’offre',
 
-  'homeOffer.card.off': '-{percent} %',
+  'homeOffer.card.off': '-{percent} %',
   'homeOffer.card.onlyOnce': 'Cette fois seulement',
   'homeOffer.card.wasNow': 'Avant {was}, maintenant {now}',
   'homeOffer.card.perMonthFirstYear': 'Soit {price} par mois la première année',
@@ -44,7 +44,7 @@ export const HOME_OFFER_FR = {
   'homeOffer.card.lifetime': 'Un seul paiement, à toi pour toujours',
 
   'homeOffer.standard.title': 'Continue avec Walkito Plus',
-  'homeOffer.standard.body': 'Ton plan, toutes les séances et tous les retests. **Choisis la formule qui te convient.**',
+  'homeOffer.standard.body': 'Ton plan, toutes les séances et toutes les réévaluations. **Choisis la formule qui te convient.**',
   'homeOffer.standard.cta': 'Continuer',
 
   'homeOffer.plan.yearly': 'Annuel',
@@ -66,7 +66,7 @@ export const HOME_OFFER_FR = {
   'homeOffer.badge.freeDays': { one: '{count} jour offert', other: '{count} jours offerts' },
   'homeOffer.badge.freeWeeks': { one: '{count} semaine offerte', other: '{count} semaines offertes' },
   'homeOffer.badge.freeMonths': { one: '{count} mois offert', other: '{count} mois offerts' },
-  'homeOffer.badge.save': 'Économise {percent} %',
+  'homeOffer.badge.save': 'Économise {percent} %',
 
   'homeOffer.terms.trialDays': {
     one: 'Gratuit pendant {count} jour, puis {price} par an. Rien n’est débité aujourd’hui.',
@@ -78,8 +78,8 @@ export const HOME_OFFER_FR = {
   },
   'homeOffer.terms.trialCancel': 'Annule dans Réglages avant la fin de l’essai et tu ne paies rien.',
   'homeOffer.terms.trialCancelAndroid': 'Annule dans Google Play avant la fin de l’essai et tu ne paies rien.',
-  'homeOffer.terms.introYear': 'Abonnement annuel : {introPrice} la première année, puis {price} par an.',
-  'homeOffer.terms.monthly': 'Abonnement mensuel : {price} par mois.',
+  'homeOffer.terms.introYear': 'Abonnement annuel : {introPrice} la première année, puis {price} par an.',
+  'homeOffer.terms.monthly': 'Abonnement mensuel : {price} par mois.',
   'homeOffer.terms.lifetime': 'Un seul paiement de {price}. Rien ne se renouvelle.',
 
   'homeOffer.push.lastChanceTitle': 'Pas de panique, voici une dernière chance',

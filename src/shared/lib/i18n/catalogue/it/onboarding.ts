@@ -109,7 +109,7 @@ export const ONBOARDING_IT = {
   'onboarding.bunion.no': 'No',
   'onboarding.bunion.little': 'Leggero',
   'onboarding.bunion.yes': 'Sì',
-  'onboarding.bunion.unsure': 'Non sono sicuro',
+  'onboarding.bunion.unsure': 'Non saprei',
   'onboarding.bunion.note': 'Un’immagine per confrontare, non una diagnosi.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
@@ -134,9 +134,9 @@ export const ONBOARDING_IT = {
     'Il numero di scarpe sta per la lunghezza della leva che il tuo polpaccio deve muovere.',
 
   // ── Goal ─────────────────────────────────────────────────────────────────
-  'onboarding.goal.title': '{name}, a cosa stai lavorando?',
+  'onboarding.goal.title': '{name}, qual è il tuo obiettivo?',
   'onboarding.goal.blurb': 'Scegli quello che conta di più adesso. Puoi cambiarlo più avanti.',
-  'onboarding.goal.painfree': 'Correre senza dolore',
+  'onboarding.goal.painfree': 'Correre con meno dolore',
   'onboarding.goal.race': 'Prepararmi per una gara',
   'onboarding.goal.consistent': 'Correre con più costanza',
   'onboarding.goal.stronger': 'Rinforzare le gambe',
@@ -178,7 +178,7 @@ export const ONBOARDING_IT = {
   'onboarding.pain.full': 'Fino a {count} alla volta. Toccane uno per cambiarlo.',
   'onboarding.pain.none': 'Ora non mi fa male niente',
   'onboarding.pain.disclaimer':
-    'Non è un consiglio medico. Se il dolore è acuto, peggiora o arriva con gonfiore o intorpidimento, consulta un medico.',
+    'Non è un consiglio medico. Se il dolore è acuto, peggiora o è accompagnato da gonfiore o intorpidimento, consulta un medico.',
 
   'onboarding.side.title': 'Quale lato, {name}?',
   'onboarding.side.blurb': 'I test confrontano una gamba con l’altra, quindi dobbiamo sapere su quale lavoriamo.',
@@ -232,7 +232,7 @@ export const ONBOARDING_IT = {
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': 'Cosa ti pesa di più adesso, {name}?',
   'onboarding.challenge.blurb': 'Fino a due. Il piano si orienta su quello che scegli.',
-  'onboarding.challenge.painfree': 'Restare senza dolore',
+  'onboarding.challenge.painfree': 'Avere meno dolore',
   'onboarding.challenge.back': 'Tornare a correre',
   'onboarding.challenge.distance': 'Aumentare la distanza',
   'onboarding.challenge.recovery': 'Recuperare più in fretta',
@@ -271,7 +271,7 @@ export const ONBOARDING_IT = {
   'onboarding.health.opening': 'Apertura di Salute…',
   'onboarding.health.connectAndroid': 'Collega Health Connect',
   'onboarding.health.openingAndroid': 'Apertura di Health Connect…',
-  'onboarding.health.promise': 'I tuoi dati di salute non lasciano mai questo dispositivo.',
+  'onboarding.health.promise': 'Passi, sonno e corse restano su questo telefono.',
   'onboarding.health.unavailable': 'Salute non è disponibile qui - puoi andare avanti senza.',
   'onboarding.health.declined': 'L’accesso a Salute è stato negato. Il tuo piano funziona anche senza.',
   'onboarding.health.empty': 'Collegato - ancora nessun dato. Si riempirà man mano che ti muovi.',
@@ -294,13 +294,13 @@ export const ONBOARDING_IT = {
   'onboarding.watchSync.blurb': 'Un interruttore dentro l’app che usi già.',
   'onboarding.watchSync.open': 'Apri {app}',
   'onboarding.watchSync.garminApp': 'Garmin Connect',
-  'onboarding.watchSync.garmin1': 'Apri Garmin Connect e vai su Altro.',
-  'onboarding.watchSync.garmin2': 'Tocca Impostazioni, poi Apple Salute.',
+  'onboarding.watchSync.garmin1': 'Apri Garmin Connect e vai su «Altro».',
+  'onboarding.watchSync.garmin2': 'Tocca «Impostazioni», poi «Salute Apple».',
   'onboarding.watchSync.garmin3': 'Attiva le categorie che vuoi condividere.',
   'onboarding.watchSync.whoopApp': 'Whoop',
-  'onboarding.watchSync.whoop1': 'Apri Whoop e tocca More.',
-  'onboarding.watchSync.whoop2': 'Apri App Settings, poi Integrations.',
-  'onboarding.watchSync.whoop3': 'Tocca Apple Health e attivalo.',
+  'onboarding.watchSync.whoop1': 'Apri Whoop e tocca «Altro».',
+  'onboarding.watchSync.whoop2': 'Apri «Impostazioni app», poi «Integrazioni».',
+  'onboarding.watchSync.whoop3': 'Tocca «Salute di Apple» e collegalo.',
 
   // ── Notifications ────────────────────────────────────────────────────────
   'onboarding.notify.title': 'Attiva le notifiche',
@@ -325,13 +325,13 @@ export const ONBOARDING_IT = {
   'onboarding.building.reflectionBoth': '{pain}, {volume}.',
   'onboarding.building.reflectionPain': '{pain}.',
   'onboarding.building.reflectionVolume': '{volume}.',
-  'onboarding.pattern.heel': 'È lo schema più comune che ci sia. Ed è anche quello che risponde più in fretta.',
+  'onboarding.pattern.heel': 'È lo schema più comune che ci sia. E spesso risponde bene all’allenamento.',
   'onboarding.pattern.foot': 'L’arco non è debole di per sé. È debole ciò che lo sostiene.',
   'onboarding.pattern.achilles':
-    'Il carico è cresciuto più in fretta di quanto il tendine si sia adattato. Si può sistemare.',
+    'Il carico è cresciuto più in fretta di quanto il tendine si sia adattato. Ci si può lavorare.',
   'onboarding.pattern.shin':
     'Il volume ha superato le tue gambe. Il piano fa un passo indietro, poi costruisce.',
-  'onboarding.pattern.calf': 'Il polpaccio tira tutto ciò che sta sotto. Scioglilo e il resto segue.',
+  'onboarding.pattern.calf': 'Il polpaccio mette in tensione tutto ciò che sta sotto. Scioglilo e il resto segue.',
   'onboarding.pattern.none': 'Sei qui prima che faccia male. È il modo più economico di farlo.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
@@ -360,7 +360,7 @@ export const ONBOARDING_IT = {
   'onboarding.plan.weeks': 'Settimane {from}-{to}',
   'onboarding.plan.weeksOn': 'Settimane {from}+',
   'onboarding.plan.phaseSettle': 'calmare l’irritazione',
-  'onboarding.plan.phaseBuild': 'costruire l’arco',
+  'onboarding.plan.phaseBuild': 'rinforzare l’arco',
   'onboarding.plan.phaseLoad': 'tornare al carico pieno',
   'onboarding.plan.reflectionBoth':
     '{pain} e {volume}. Le prime due settimane calmano le cose prima di qualsiasi carico.',
@@ -392,7 +392,7 @@ export const ONBOARDING_IT = {
   'onboarding.testimonial2.lead': 'a casa o al lavoro',
   'onboarding.testimonial2.after': ' - bastano un pavimento e un muro.',
   'onboarding.testimonial2.name': 'Ogni sessione',
-  'onboarding.testimonial3.before': 'Un retest di un minuto',
+  'onboarding.testimonial3.before': 'Una verifica di un minuto',
   'onboarding.testimonial3.lead': 'mostra cosa è cambiato davvero',
   'onboarding.testimonial3.after': ', con i numeri invece che con le sensazioni.',
   'onboarding.testimonial3.name': 'Ogni due settimane',

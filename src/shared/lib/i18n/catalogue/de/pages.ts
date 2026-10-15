@@ -15,7 +15,7 @@ export const PAGES_DE = {
   // ── Day sheet ────────────────────────────────────────────────────────────
   'pages.day.notInPlan': 'Dieser Tag gehört nicht zu deinem Plan.',
 
-  'pages.day.retestEyebrow': 'Retest · Tag {day}',
+  'pages.day.retestEyebrow': 'Testtag · Tag {day}',
   'pages.day.blockTitle': 'Block {block} · {name}',
   'pages.day.retestResultSubtitle': 'Wo du am Ende des Blocks standest',
   'pages.day.share': 'Teilen',
@@ -24,10 +24,10 @@ export const PAGES_DE = {
   'pages.day.retestTodayTitle': 'Zeit, deinen Fortschritt zu prüfen',
   'pages.day.retestMeta': '{tests} · {minutes}',
   'pages.day.retestTodayNote':
-    'Heute kein Training. Die Tests messen, wo der Block dich hingebracht hat, und nur sie bewegen ein Level.',
-  'pages.day.startRetest': 'Retest starten',
-  'pages.day.retestMissed': 'Dieser Retest wurde nicht gemacht. Die Level bleiben vom letzten.',
-  'pages.day.retestClosesBlock': 'Retest · schließt Block {block} ab',
+    'Heute kein Training. Die Tests messen, wo der Block dich hingebracht hat - und nur sie entscheiden, ob sich ein Level ändert.',
+  'pages.day.startRetest': 'Test starten',
+  'pages.day.retestMissed': 'Dieser Test wurde nicht gemacht. Die Level vom letzten Test bleiben.',
+  'pages.day.retestClosesBlock': 'Testtag · schließt Block {block} ab',
   'pages.day.retestOpensOn': 'Öffnet am {date}. Bis dahin bleiben die Level, wie sie sind.',
 
   'pages.day.sessionTitle': '{kind} · {minutes}',
@@ -46,7 +46,7 @@ export const PAGES_DE = {
   'pages.program.kindMobility': 'Beweglichkeit',
   'pages.program.kindBalance': 'Balance',
   'pages.program.kindRecovery': 'Erholung',
-  'pages.program.retest': 'Retest',
+  'pages.program.retest': 'Test',
 
   'pages.program.testCount': { one: '{count} Test', other: '{count} Tests' },
   'pages.program.minuteCount': { one: '{count} Minute', other: '{count} Minuten' },
@@ -66,24 +66,24 @@ export const PAGES_DE = {
   'pages.program.blockSeam': 'Block {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} Tag geschafft', other: '{count} Tage geschafft' },
   'pages.program.blockProgress': '{done} von {length} geschafft',
-  'pages.program.blockDays': 'Tage {start}–{end}',
+  'pages.program.blockDays': 'Tage {start}-{end}',
   'pages.program.blockAbout1':
     'Den Fuß beruhigen. Dehnungen und sanfte Bewegung - noch keine Last.',
   'pages.program.blockAbout2':
-    'Das Krafttraining beginnt. Fersenheben mit Handtuch ist, was den Schmerz bewegt; der kurze Fuß im Sitzen formt das Gewölbe. Die meisten spüren um Tag 20 die erste echte Erleichterung.',
+    'Das Krafttraining beginnt. Fersenheben mit Handtuch hilft am meisten gegen den Schmerz; der kurze Fuß im Sitzen kräftigt das Gewölbe. Viele spüren um Tag 20 eine erste echte Erleichterung.',
   'pages.program.blockAbout3':
-    'Die Last steigt: Fersenheben 4 × 10 mit Rucksack, und der kurze Fuß kommt vom Stuhl - das Gewölbe arbeitet jetzt unter deinem Körpergewicht. Erste Veränderungen am Gewölbe zeigen sich meist ab Woche sechs.',
+    'Die Last steigt: Fersenheben 4 × 10 mit Rucksack, und der kurze Fuß kommt vom Stuhl - das Gewölbe arbeitet jetzt unter deinem Körpergewicht. Erste Veränderungen am Gewölbe zeigen sich oft ab Woche sechs.',
   'pages.program.blockAbout4':
     'Fersenheben erreicht 5 × 8, das Schwerste im Programm. Der kurze Fuß wechselt auf ein Bein, und das Band kommt dazu - erst jetzt, wenn die kleinen Muskeln im Fuß halten können.',
   'pages.program.blockAbout5':
     'Die Hüfte kommt dazu. Ein schwacher Gesäßmuskel lässt das Gewölbe absinken, also wandert die Kontrolle die Kette hinauf, während die Last am Fuß bleibt, wo Block 4 sie gelassen hat.',
   'pages.program.blockAbout6':
-    'Das ist keine Behandlung mehr - das ist Pflege. Das Handtuch fällt weg, Fersenheben wird leichter mit 3 × 15, und Zeit barfuß zu Hause kommt dazu. Das ist die Routine, die du behältst.',
+    'Ab jetzt geht es ums Dranbleiben. Das Handtuch fällt weg, Fersenheben wird mit 3 × 15 leichter, und Barfußzeit zu Hause kommt dazu. Diese Routine behältst du bei.',
   'pages.program.finishDay': 'Tag {day}',
   'pages.program.finishCaption': 'Programm abgeschlossen',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
-  'pages.welcome.hint': 'Nach oben wischen zum Eintreten',
+  'pages.welcome.hint': 'Nach oben wischen',
   'pages.welcome.a11yHint': 'Nach oben wischen öffnet den Bildschirm, nach unten wischen schließt ihn',
 
   // «Trainiere ~~stütze~~ deine Füße» - the struck verb is what the insole
@@ -109,7 +109,7 @@ export const PAGES_DE = {
   'pages.expired.ledeNoSessions': 'Hier hast du aufgehört.',
   'pages.expired.calfRaises': 'Fersenheben',
   'pages.expired.morningPain': 'Morgenschmerz',
-  'pages.expired.nothingMeasured': 'Deine Einträge und Retests sind alle noch da.',
+  'pages.expired.nothingMeasured': 'Deine Einträge und Tests sind alle noch da.',
   'pages.expired.keeps': 'Dein Verlauf bleibt so oder so.',
   'pages.expired.busy': 'Einen Moment…',
   'pages.expired.plansTitle': 'Mach weiter, wo du aufgehört hast',
@@ -198,7 +198,7 @@ export const PAGES_DE = {
   'pages.plan.outcome.sportFor.cycling': 'fürs Radfahren',
   'pages.plan.outcome.sportFor.hiking': 'fürs Wandern',
   'pages.plan.outcome.sportFor.none': 'für jeden Tag',
-  'pages.plan.outcome.painfree': '[Schmerzfrei] {sport}',
+  'pages.plan.outcome.painfree': '[Mit weniger Schmerzen] {sport}',
   'pages.plan.outcome.injury_free': '[Robuste] Beine {sport}',
   'pages.plan.outcome.flat_feet': 'Muskeln, die dein Gewölbe [stützen]',
   'pages.plan.outcome.stronger': '[Kräftigere] Beine {sport}',

@@ -19,7 +19,7 @@ export const QUICK_FR = {
   'quick.morning.cue': 'Avant que ton pied touche le sol. Tiens 10 secondes, relâche, 10 fois par pied.',
 
   // Position names, gender-neutral rather than «assis/debout».
-  'quick.seated': 'en position assise',
+  'quick.seated': 'sur une chaise',
   'quick.standing': 'debout',
   'quick.inBed': 'au lit',
 
@@ -39,7 +39,7 @@ export const QUICK_FR = {
   },
   'quick.close': 'Fermer',
 
-  'quick.flare.ask': 'À quel point ça fait mal, là ?',
+  'quick.flare.ask': 'À quel point ça fait mal, là ?',
   'quick.flare.skip': 'Pas maintenant',
 
   'quick.locked': 'Verrouillé',

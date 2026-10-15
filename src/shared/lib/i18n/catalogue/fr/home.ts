@@ -62,7 +62,7 @@ export const HOME_FR = {
 
   // ── Units ────────────────────────────────────────────────────────────────
   'home.km': '{value} km',
-  'home.percent': '{value} %',
+  'home.percent': '{value} %',
   'home.duration': '{hours} h {minutes} min',
 
   // ── Today's list ─────────────────────────────────────────────────────────
@@ -90,7 +90,7 @@ export const HOME_FR = {
   // ── The check-in ─────────────────────────────────────────────────────────
   'home.itHurts': 'J’ai mal aujourd’hui',
   'home.tour.overview': 'Tes pieds en un coup d’œil, chaque matin',
-  'home.tour.pain': 'Quelque chose fait mal ? Touche ici et note-le',
+  'home.tour.pain': 'Quelque chose fait mal ? Touche ici et note-le',
   'home.tour.session': 'Tes séances commencent ici',
   'home.tour.next': 'Suivant',
   'home.tour.stepOf': 'Étape {n} sur {total}',
@@ -101,42 +101,42 @@ export const HOME_FR = {
   'home.noPain': 'Pas de douleur aujourd’hui',
   'home.logCheckIn': 'Faire le bilan du jour',
   'home.checkInAgain': 'Refaire le bilan',
-  'home.todayNoPain': 'Aujourd’hui : pas de douleur',
-  'home.todayPain': 'Aujourd’hui : {score} sur 10',
-  'home.todayWhere': 'Où : {zones}',
+  'home.todayNoPain': 'Aujourd’hui : pas de douleur',
+  'home.todayPain': 'Aujourd’hui : {score} sur 10',
+  'home.todayWhere': 'Où : {zones}',
   'home.checkInEdit': 'Modifier',
   'home.checkInUpdate': 'Enregistrer la modification',
   'home.ackUpdated': 'C’est mis à jour.',
-  'home.flareTitle': 'Ça fait mal en ce moment ?',
+  'home.flareTitle': 'Ça fait mal en ce moment ?',
   'home.flareBody': 'Montre-moi où, et je te donne 3 minutes de soulagement',
-  'home.flareLast': 'Plus tôt aujourd’hui : {score} sur 10',
-  'home.flareSheetTitle': 'Où as-tu mal en ce moment ?',
+  'home.flareLast': 'Plus tôt aujourd’hui : {score} sur 10',
+  'home.flareSheetTitle': 'Où as-tu mal en ce moment ?',
   'home.flareSheetSub': 'Marque l’endroit et l’intensité. Le soulagement vient ensuite.',
   'home.flareSave': 'Aide-moi maintenant',
   'home.checkInTitle': 'Bilan du jour',
-  'home.checkInSub': 'Comment va le pied ?',
-  'home.checkInSubMorning': 'À quel point tes premiers pas au lever ont-ils fait mal ce matin ?',
-  'home.checkInSubDay': 'Comment va ton pied aujourd’hui ?',
-  'home.somethingNew': 'Du nouveau ? (gonflement, engourdissement, claquement)',
+  'home.checkInSub': 'Comment va le pied ?',
+  'home.checkInSubMorning': 'À quel point tes premiers pas au lever ont-ils fait mal ce matin ?',
+  'home.checkInSubDay': 'Comment va ton pied aujourd’hui ?',
+  'home.somethingNew': 'Du nouveau ? (gonflement, engourdissement, claquement)',
   'home.checkInKickerMorning': 'Bilan du matin · 10 s',
   'home.checkInKickerDay': 'Bilan du jour · 10 s',
-  'home.somethingNewTitle': 'Du nouveau ?',
+  'home.somethingNewTitle': 'Du nouveau ?',
   'home.somethingNewSub': 'Gonflement, engourdissement, claquement',
-  'safety.title': 'Du nouveau ?',
+  'safety.title': 'Du nouveau ?',
   'safety.sub': 'Touche tout ce qui s’applique en ce moment.',
   'safety.a1': 'Mon mollet est gonflé, chaud ou rouge d’un côté, ou j’ai du mal à respirer ou mal à la poitrine',
   'safety.a2': 'J’ai senti un claquement soudain à l’arrière de la cheville et je ne peux pas me mettre sur la pointe du pied de ce côté',
   'safety.a3': 'J’ai du diabète et mon pied est chaud, rouge, gonflé ou a une plaie ouverte',
-  'safety.b1': 'Ça a commencé après une chute, une torsion ou un choc, et je ne peux pas mettre tout mon poids dessus',
+  'safety.b1': 'Ça a commencé après une chute, une torsion ou une blessure, et je ne peux pas mettre tout mon poids dessus',
   'safety.b2': 'Je peux montrer du doigt un point douloureux sur un os, ou serrer les côtés de mon talon fait mal',
-  'safety.b3': 'Ça me réveille la nuit ou ça reste fort au repos',
-  'safety.b4': 'J’ai de la fièvre ou je ne me sens pas bien',
+  'safety.b3': 'Ça me réveille la nuit ou ça fait toujours mal au repos',
+  'safety.b4': 'J’ai de la fièvre ou je me sens mal en même temps',
   'safety.c1': 'Brûlure, fourmillements ou engourdissement dans le pied',
   'safety.c2': 'Les deux talons me font mal et d’autres articulations sont gonflées ou raides le matin',
   'safety.c3': 'Une voûte s’est affaissée d’elle-même à l’âge adulte',
   'safety.c4': 'J’ai du diabète ou moins de sensations dans les pieds',
   'safety.c5': 'J’ai eu une infiltration de corticoïdes dans le talon ou le tendon d’Achille ces 3 dernières semaines',
-  'safety.common': 'Douleur ou démarche gênée après une longue journée ? C’est courant avec une douleur au talon - tu peux continuer.',
+  'safety.common': 'Mal aux pieds ou tu boites un peu après une longue journée ? C’est courant avec une douleur au talon - tu peux continuer.',
   'safety.none': 'Rien de tout ça',
   'safety.check': 'OK',
   'safety.resultA': 'Ne t’entraîne pas aujourd’hui. Il faut voir un médecin maintenant - appelle les secours ou va aux urgences.',
@@ -199,9 +199,9 @@ export const HOME_FR = {
   'home.bandNoticeable': 'Perceptible',
   'home.bandNoticeableBlurb': 'Tu le sens, mais ça ne change rien à ce que tu fais.',
   'home.bandSore': 'Gênant',
-  'home.bandSoreBlurb': 'Tu fais avec, sans même y penser.',
+  'home.bandSoreBlurb': 'Tu t’adaptes sans même y penser.',
   'home.bandHurts': 'Ça fait mal',
-  'home.bandHurtsBlurb': 'C’est lui qui décide pour toi maintenant.',
+  'home.bandHurtsBlurb': 'C’est la douleur qui décide pour toi maintenant.',
   'home.bandSevere': 'Intense',
   'home.bandSevereBlurb': 'Le problème, c’est de tenir debout, pas de courir.',
 };
@@ -215,7 +215,7 @@ export const BRIEF_FR = {
       { k: 'frame', text: 'sur une chaise. C’est tout.' },
     ],
     [
-      { k: 'frame', text: 'matin difficile. Aujourd’hui :' },
+      { k: 'frame', text: 'matin difficile. Aujourd’hui :' },
       { k: 'metric', icon: 'rest', text: '{restMinutes}', tail: '.' },
       { k: 'frame', text: 'Rien de plus.' },
     ],
@@ -228,12 +228,12 @@ export const BRIEF_FR = {
 
   'pain-spike': [
     [
-      { k: 'frame', text: 'tes matins ont pris' },
+      { k: 'frame', text: 'tes matins sont plus douloureux de' },
       { k: 'metric', icon: 'warn', text: '{jump}', tone: 'warn' },
       { k: 'frame', text: 'de plus que la semaine dernière. Aujourd’hui, on allège.' },
     ],
     [
-      { k: 'frame', text: 'cette semaine compte' },
+      { k: 'frame', text: 'cette semaine, la douleur est plus forte de' },
       { k: 'metric', icon: 'warn', text: '{jump}', tone: 'warn' },
       { k: 'frame', text: 'de plus que la précédente. Journée plus légère.' },
     ],
@@ -275,7 +275,7 @@ export const BRIEF_FR = {
       { k: 'value', text: '{testMinutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'on mesure :' },
+      { k: 'frame', text: 'on mesure :' },
       { k: 'metric', icon: 'retest', text: '{testMinutes}', tail: ',' },
       { k: 'frame', text: 'et on saura où tu en es.' },
     ],
@@ -283,19 +283,19 @@ export const BRIEF_FR = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'une nouvelle semaine commence aujourd’hui. Objectif :' },
+      { k: 'frame', text: 'une nouvelle semaine commence aujourd’hui. Objectif :' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
     ],
     // La nuance de l'original reste : « la plupart » et « en général ».
     [
-      { k: 'frame', text: 'nouvelle semaine aujourd’hui. La plupart des gens sentent leurs matins s’adoucir en' },
+      { k: 'frame', text: 'nouvelle semaine aujourd’hui. Beaucoup de gens sentent leurs matins s’adoucir en' },
       { k: 'metric', icon: 'level', text: '4-6 semaines', tail: '.' },
-      { k: 'frame', text: 'Le plus grand changement arrive en général vers 3 mois.' },
+      { k: 'frame', text: 'Le plus grand changement arrive souvent vers 3 mois.' },
     ],
     [
-      { k: 'frame', text: 'cette semaine travaille sur' },
+      { k: 'frame', text: 'objectif de la semaine :' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'Le plan est construit autour.' },
+      { k: 'frame', text: 'Tout le plan tourne autour.' },
     ],
   ],
 
@@ -303,14 +303,14 @@ export const BRIEF_FR = {
   'goal-reached': [
     [
       { k: 'metric', icon: 'up', text: '{goalDone}' },
-      { k: 'frame', text: ': fait. Ensuite :' },
+      { k: 'frame', text: ': fait. Ensuite :' },
       { k: 'metric', icon: 'level', text: '{nextGoal}', tail: '.' },
     ],
   ],
   'missed-yesterday': [
     [
       { k: 'frame', text: 'hier n’a pas pu se faire. On évite d’en sauter deux -' },
-      { k: 'metric', icon: 'session', text: '2 minutes', tail: ' aujourd’hui ?' },
+      { k: 'metric', icon: 'session', text: '2 minutes', tail: ' aujourd’hui ?' },
     ],
   ],
   'test-soon': [
@@ -322,7 +322,7 @@ export const BRIEF_FR = {
   ],
   'new-this-week': [
     [
-      { k: 'frame', text: 'nouveau cette semaine :' },
+      { k: 'frame', text: 'nouveau cette semaine :' },
       { k: 'metric', icon: 'session', text: '{newMove}', tail: '.' },
     ],
   ],
@@ -330,14 +330,14 @@ export const BRIEF_FR = {
   'first-week': [
     [
       { k: 'metric', icon: 'streak', text: '{dayOfPlan}', tail: '.' },
-      { k: 'frame', text: 'Aujourd’hui :' },
+      { k: 'frame', text: 'Aujourd’hui :' },
       { k: 'metric', icon: 'tasks', text: '{moves}' },
       { k: 'frame', text: 'de {work} -' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'frame', text: 'les débuts -' },
-      { k: 'metric', icon: 'streak', text: '{planDay}', tail: ' :' },
+      { k: 'metric', icon: 'streak', text: '{planDay}', tail: ' :' },
       { k: 'value', text: '{minutes}' },
       { k: 'frame', text: 'de {work}. Court et souvent vaut mieux que long et rare.' },
     ],
@@ -345,7 +345,7 @@ export const BRIEF_FR = {
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: '.' },
       {
         k: 'frame',
-        text: 'Aujourd’hui : {work}. La première semaine, c’est venir, pas forcer.',
+        text: 'Aujourd’hui : {work}. La première semaine, l’important c’est d’être au rendez-vous, pas de forcer.',
       },
     ],
   ],
@@ -365,7 +365,7 @@ export const BRIEF_FR = {
       { k: 'frame', text: 'plus que tout en quatre semaines. Aujourd’hui, on récupère.' },
     ],
     [
-      { k: 'frame', text: 'hier, la plus longue sortie du mois. Aujourd’hui :' },
+      { k: 'frame', text: 'hier, la plus longue sortie du mois. Aujourd’hui :' },
       { k: 'metric', icon: 'rest', text: 'récupération', tail: '.' },
     ],
   ],
@@ -383,7 +383,7 @@ export const BRIEF_FR = {
     [
       { k: 'frame', text: 'hier, la journée a été chargée en' },
       { k: 'metric', icon: 'level', text: 'escaliers', tail: '.' },
-      { k: 'frame', text: 'Aujourd’hui penche vers le plus facile.' },
+      { k: 'frame', text: 'Aujourd’hui, on y va plus doucement.' },
     ],
   ],
 
@@ -416,7 +416,7 @@ export const BRIEF_FR = {
     [
       { k: 'frame', text: 'déjà' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: 'aujourd’hui. Comment va le talon ?' },
+      { k: 'frame', text: 'aujourd’hui. Comment va le talon ?' },
     ],
     [
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
@@ -450,7 +450,7 @@ export const BRIEF_FR = {
     [
       { k: 'frame', text: 'ton sommeil est' },
       { k: 'metric', icon: 'sleep', text: 'sous les sept heures', tail: '.' },
-      { k: 'frame', text: 'Aujourd’hui est plus facile, exprès.' },
+      { k: 'frame', text: 'Aujourd’hui, c’est plus facile, et c’est voulu.' },
     ],
   ],
 
@@ -458,11 +458,11 @@ export const BRIEF_FR = {
     [
       { k: 'frame', text: 'ton pouls au repos est' },
       { k: 'metric', icon: 'level', text: 'un peu plus haut', tail: '.' },
-      { k: 'frame', text: 'Aujourd’hui penche vers la récupération.' },
+      { k: 'frame', text: 'Aujourd’hui, place à la récupération.' },
     ],
     [
       { k: 'frame', text: 'le pouls au repos est' },
-      { k: 'metric', icon: 'level', text: 'au-dessus de ton habitude', tail: '.' },
+      { k: 'metric', icon: 'level', text: 'au-dessus de ta moyenne', tail: '.' },
       { k: 'frame', text: 'On y va doucement.' },
     ],
     [
@@ -575,7 +575,7 @@ export const BRIEF_FR = {
   'walk-back': [
     [
       { k: 'frame', text: 'ton rythme de marche est' },
-      { k: 'metric', icon: 'done', text: 'revenu à ton habitude', tail: '.', tone: 'good' },
+      { k: 'metric', icon: 'done', text: 'revenu à ton niveau habituel', tail: '.', tone: 'good' },
       { k: 'frame', text: 'Bon signe.' },
     ],
     [
@@ -603,7 +603,7 @@ export const BRIEF_FR = {
     ],
     [
       { k: 'frame', text: 'ça s’est égalisé.' },
-      { k: 'metric', icon: 'done', text: 'Retour à ton habitude', tail: '.', tone: 'good' },
+      { k: 'metric', icon: 'done', text: 'Retour à ton niveau habituel', tail: '.', tone: 'good' },
     ],
   ],
 
@@ -615,7 +615,7 @@ export const BRIEF_FR = {
       { k: 'frame', text: 'avec ton téléphone en poche.' },
     ],
     [
-      { k: 'frame', text: 'je me fais encore une idée de ton habitude -' },
+      { k: 'frame', text: 'je me fais encore une idée de ce qui est normal pour toi -' },
       { k: 'metric', icon: 'window', text: 'quelques jours de plus' },
       { k: 'frame', text: 'devraient suffire.' },
     ],
@@ -633,13 +633,13 @@ export const BRIEF_FR = {
     [
       { k: 'frame', text: 'chaque séance est un pas de plus' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
-      { k: 'frame', text: 'Aujourd’hui :' },
+      { k: 'frame', text: 'Aujourd’hui :' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'frame', text: 'le retour' },
       { k: 'metric', icon: 'session', text: '{backTo}' },
-      { k: 'frame', text: 'passe par des journées comme celle-ci. Aujourd’hui :' },
+      { k: 'frame', text: 'passe par des journées comme celle-ci. Aujourd’hui :' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
@@ -661,7 +661,7 @@ export const BRIEF_FR = {
       { k: 'frame', text: 'Continue comme ça.' },
     ],
     [
-      { k: 'frame', text: 'tu voulais de la régularité - la voilà :' },
+      { k: 'frame', text: 'tu voulais de la régularité - la voilà :' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
     ],
     [
@@ -673,32 +673,32 @@ export const BRIEF_FR = {
 
   'goal-stronger': [
     [
-      { k: 'frame', text: 'la force vient de la répétition. Aujourd’hui :' },
+      { k: 'frame', text: 'la force vient de la répétition. Aujourd’hui :' },
       { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'aujourd’hui :' },
+      { k: 'frame', text: 'aujourd’hui :' },
       { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
       { k: 'frame', text: 'Plus c’est fréquent, plus on gagne en force.' },
     ],
     [
-      { k: 'frame', text: 'gagner en force, c’est peu mais souvent. Aujourd’hui :' },
+      { k: 'frame', text: 'gagner en force, c’est peu mais souvent. Aujourd’hui :' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'la meilleure protection contre les blessures, c’est un peu chaque jour. Aujourd’hui :' },
+      { k: 'frame', text: 'un peu chaque jour, c’est ce qui rend le pied plus fort. Aujourd’hui :' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'un pied fort se blesse moins. Aujourd’hui, il a droit à' },
+      { k: 'frame', text: 'un pied fort encaisse mieux la charge. Aujourd’hui, il a droit à' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'par jour suffisent pour garder une longueur d’avance sur les blessures.' },
+      { k: 'frame', text: 'par jour suffisent pour prendre soin de tes pieds.' },
     ],
   ],
 
@@ -723,7 +723,7 @@ export const BRIEF_FR = {
   // ── La plupart des jours ─────────────────────────────────────────────────
   'quiet-session': [
     [
-      { k: 'frame', text: 'aujourd’hui :' },
+      { k: 'frame', text: 'aujourd’hui :' },
       { k: 'metric', icon: 'session', text: '{move}' },
       { k: 'frame', text: '- l’exercice qui porte ce plan.' },
     ],
@@ -754,7 +754,7 @@ export const BRIEF_FR = {
 
   'quiet-shoes': [
     [
-      { k: 'frame', text: 'une idée pour les chaussures : un' },
+      { k: 'frame', text: 'une idée pour les chaussures : un' },
       { k: 'metric', icon: 'level', text: 'contrefort plus ferme' },
       { k: 'frame', text: 'et un peu plus de drop soulagent la voûte.' },
     ],
@@ -763,7 +763,7 @@ export const BRIEF_FR = {
   'quiet-cadence': [
     [
       { k: 'frame', text: 'si tu cours aujourd’hui, garde ta cadence environ' },
-      { k: 'metric', icon: 'up', text: '{cadence} au-dessus de ton habitude', tail: '.' },
+      { k: 'metric', icon: 'up', text: '{cadence} au-dessus de ta moyenne', tail: '.' },
       { k: 'frame', text: 'Des pas plus courts, moins de charge sur le talon.' },
     ],
   ],

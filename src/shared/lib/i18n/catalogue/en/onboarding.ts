@@ -162,7 +162,7 @@ export const ONBOARDING_EN = {
   // ── Goal ─────────────────────────────────────────────────────────────────
   'onboarding.goal.title': '{name}, what are you working toward?',
   'onboarding.goal.blurb': 'Pick the one that matters most right now. You can change it later.',
-  'onboarding.goal.painfree': 'Run pain-free',
+  'onboarding.goal.painfree': 'Run with less pain',
   'onboarding.goal.race': 'Train for a race',
   'onboarding.goal.consistent': 'Run more consistently',
   'onboarding.goal.stronger': 'Build stronger legs',
@@ -246,16 +246,16 @@ export const ONBOARDING_EN = {
   /** Distance bands. `{unit}` so the scale can change without the five labels
    * being rewritten — every language keeps the number range and moves only the
    * unit. */
-  'onboarding.load.km0': '0–5 {unit}',
-  'onboarding.load.km1': '5–15 {unit}',
-  'onboarding.load.km2': '15–30 {unit}',
-  'onboarding.load.km3': '30–50 {unit}',
+  'onboarding.load.km0': '0-5 {unit}',
+  'onboarding.load.km1': '5-15 {unit}',
+  'onboarding.load.km2': '15-30 {unit}',
+  'onboarding.load.km3': '30-50 {unit}',
   'onboarding.load.km4': '50+ {unit}',
   'onboarding.load.unitKm': 'km',
   'onboarding.load.hours0': 'Under 1 hour',
-  'onboarding.load.hours1': '1–3 hours',
-  'onboarding.load.hours2': '3–5 hours',
-  'onboarding.load.hours3': '5–8 hours',
+  'onboarding.load.hours1': '1-3 hours',
+  'onboarding.load.hours2': '3-5 hours',
+  'onboarding.load.hours3': '5-8 hours',
   'onboarding.load.hours4': '8+ hours',
   'onboarding.load.perWeek': 'per week',
   'onboarding.load.runsPerWeek': 'Runs per week',
@@ -266,7 +266,7 @@ export const ONBOARDING_EN = {
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': 'What’s hardest right now, {name}?',
   'onboarding.challenge.blurb': 'Up to two. The plan leans toward whatever you pick.',
-  'onboarding.challenge.painfree': 'Staying pain-free',
+  'onboarding.challenge.painfree': 'Keeping pain down',
   'onboarding.challenge.back': 'Getting back to running',
   'onboarding.challenge.distance': 'Increasing distance',
   'onboarding.challenge.recovery': 'Recovering faster',
@@ -312,7 +312,7 @@ export const ONBOARDING_EN = {
   'onboarding.health.openingAndroid': 'Opening Health Connect…',
   /** The objection every user has at this exact moment, answered before they
    * can voice it. */
-  'onboarding.health.promise': 'Your health data never leaves this device.',
+  'onboarding.health.promise': 'Your steps, sleep and runs stay on this phone.',
   'onboarding.health.unavailable': 'Health isn’t available here - you can carry on without it.',
   'onboarding.health.declined': 'Health access was declined. Your plan will work without it.',
   'onboarding.health.empty': 'Connected - no data yet. It will fill in as you move.',
@@ -376,9 +376,9 @@ export const ONBOARDING_EN = {
   'onboarding.building.reflectionVolume': '{volume}.',
   /** What the programme knows about each complaint, in one sentence. Each names
    * the mechanism rather than the symptom. */
-  'onboarding.pattern.heel': 'This is the most common pattern there is. It also responds fastest.',
+  'onboarding.pattern.heel': 'This is the most common pattern there is. It often responds well to training.',
   'onboarding.pattern.foot': 'The arch isn’t weak on its own. What holds it up is.',
-  'onboarding.pattern.achilles': 'Load built faster than the tendon adapted. That’s fixable.',
+  'onboarding.pattern.achilles': 'Load built faster than the tendon adapted. That can change.',
   'onboarding.pattern.shin': 'Volume outran your legs. The plan walks that back, then builds.',
   'onboarding.pattern.calf': 'The calf pulls on everything below it. Loosen it and the rest follows.',
   'onboarding.pattern.none': 'You’re here before it hurts. That’s the cheap way to do this.',
@@ -418,7 +418,7 @@ export const ONBOARDING_EN = {
     other: '{count} sessions a week',
   },
   'onboarding.plan.week': 'Week {n}',
-  'onboarding.plan.weeks': 'Weeks {from}–{to}',
+  'onboarding.plan.weeks': 'Weeks {from}-{to}',
   /** The last row, left open: the plan carries on past it. "Weeks 9+". */
   'onboarding.plan.weeksOn': 'Weeks {from}+',
   'onboarding.plan.phaseSettle': 'settle the irritation',

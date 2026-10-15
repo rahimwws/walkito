@@ -11,7 +11,7 @@ export const WIDGET_RU = {
 
   'widget.goalTitle': 'Цель дня',
   'widget.goalValue': '{done}/{total}',
-  'widget.goalUnknown': '–',
+  'widget.goalUnknown': '-',
   'widget.goalRest': 'Отдых',
   'widget.goalTest': 'Замеры',
   'widget.checkin': 'Отметка',

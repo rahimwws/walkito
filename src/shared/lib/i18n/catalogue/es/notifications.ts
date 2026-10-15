@@ -57,7 +57,7 @@ export const NOTIFICATIONS_ES = {
     one: 'Día de mantenimiento. {count} minuto.',
     other: 'Día de mantenimiento. {count} minutos.',
   },
-  'notifications.maintenanceCheckpoint': 'Control mensual. Vamos a ver que nada haya retrocedido.',
+  'notifications.maintenanceCheckpoint': 'Reevaluación mensual. Comprobemos que nada ha retrocedido.',
   'notifications.maintenanceFourWeeks': 'Cuatro semanas estables. De eso se trata.',
 
   // ── The morning after a bad day ──────────────────────────────────────────
@@ -90,14 +90,14 @@ export const NOTIFICATIONS_ES = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Dos semanas. Toca ver qué se movió. 3 pruebas, 4 minutos.',
-  'notifications.retestCheckpoint': 'Hoy hay control. Sin entrenamiento: solo tres mediciones.',
+  'notifications.retestCheckpoint': 'Hoy toca reevaluación. Sin entrenamiento: solo tres mediciones.',
   'notifications.retestDay': 'Día {day}. Vamos a ver si está funcionando.',
   'notifications.retestFollowUp': 'Las pruebas siguen abiertas. Cuatro minutos.',
 
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'Hoy empieza una semana nueva. Objetivo: {block}.',
   'notifications.blockLoadUp': 'Esta semana trabaja en «{block}».',
-  'notifications.blockOpens': 'Semana nueva. Esta va de {block}.',
+  'notifications.blockOpens': 'Semana nueva. El enfoque de esta semana: {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'El dolor subió esta semana, así que hoy se baja un nivel.',
@@ -107,15 +107,15 @@ export const NOTIFICATIONS_ES = {
   'notifications.planBackUp': 'Ya no hay molestias: hoy la carga vuelve a subir.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
-  'notifications.checkinHow': '¿Cómo fue el pie hoy?',
+  'notifications.checkinHow': '¿Qué tal el pie hoy?',
   'notifications.checkinOneTap': 'Un toque antes de dormir: ¿cómo se sintió?',
   'notifications.checkinLog': 'Registra hoy y el plan sabrá qué hacer mañana.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   // Las dos líneas dicen lo que un toque mantiene, nunca lo que está por caerse.
   'notifications.streakKeep': {
-    one: 'Un toque mantiene {count} día.',
-    other: 'Un toque mantiene {count} días.',
+    one: 'Un toque y mantienes tu racha de {count} día.',
+    other: 'Un toque y mantienes tu racha de {count} días.',
   },
   'notifications.streakTap': { one: '{count} día. Un toque.', other: '{count} días. Un toque.' },
 
@@ -131,5 +131,5 @@ export const NOTIFICATIONS_ES = {
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Tu pase de 3 meses termina en una semana',
-  'notifications.expiryBody': 'Tu progreso se queda de todas formas.',
+  'notifications.expiryBody': 'Tu progreso se conserva pase lo que pase.',
 };

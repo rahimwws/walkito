@@ -36,7 +36,7 @@ export const PLAYER_ES = {
   'player.cantDo.skipped': 'Hoy no hay con qué cambiarlo, así que lo saltamos.',
   'player.load.backpack': 'Ponte una mochila con un 5-10% de tu peso corporal. Si 12 repeticiones lentas te resultan fáciles, añade un poco más.',
   'player.painRule.title': '¿Cuánto dolor es aceptable?',
-  'player.painRule.body': '0-3 está bien. 4-5 vale si se calma a la mañana siguiente. 6 o más: para.',
+  'player.painRule.body': '0-3 está bien. 4-5 es aceptable si a la mañana siguiente ya se ha calmado. 6 o más: detente.',
   'player.painRule.ok': 'Entendido',
   'player.painRule.a11y': 'Cuánto dolor es aceptable',
   'player.tempo.on': 'Sonido activado',

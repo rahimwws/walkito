@@ -19,7 +19,7 @@ export const PLAYER_DE = {
 
   // ── "It hurt", after the session ──────────────────────────────────────────
   'player.afterPain.lowHint':
-    'Notiert. Etwas Muskelkater nach dieser Arbeit ist normal. Ist er morgen früh noch da, macht der Check-in den Plan leichter.',
+    'Notiert. Leichte Beschwerden nach diesem Training sind normal. Sind sie morgen früh noch da, macht der Check-in den Plan leichter.',
   'player.afterPain.highHint':
     'Das ist mehr, als diese Arbeit auslösen sollte. Deine nächste Einheit startet eine Stufe leichter.',
   'player.afterPain.save': 'Speichern',

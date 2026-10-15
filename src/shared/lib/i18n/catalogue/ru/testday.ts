@@ -45,7 +45,7 @@ export const TESTDAY_RU = {
 
   // ── The three tests ───────────────────────────────────────────────────────
   'testday.test.eyebrow': 'Тест {current} из {total}',
-  'testday.test.calf.name': 'Подъёмы на носок',
+  'testday.test.calf.name': 'Подъёмы на носки',
   'testday.test.arch.name': 'Удержание свода',
   'testday.test.balance.name': 'Баланс',
 
@@ -109,16 +109,16 @@ export const TESTDAY_RU = {
   // ── Results ───────────────────────────────────────────────────────────────
   'testday.results.firstBlurb': 'Следующий тест покажет, насколько вы продвинулись.',
   'testday.results.name.arch_hold': 'Удержание свода',
-  'testday.results.name.calf_raises': 'Подъёмы на носок',
+  'testday.results.name.calf_raises': 'Подъёмы на носки',
   'testday.results.name.balance': 'Баланс',
   'testday.results.name.symmetry': 'Симметрия',
   'testday.results.unitSeconds': { one: 'секунда', few: 'секунды', many: 'секунд' },
   'testday.results.unitRaises': { one: 'подъём', few: 'подъёма', many: 'подъёмов' },
-  'testday.results.percent': '{n} %',
+  'testday.results.percent': '{n}%',
   // Genitive: it follows the figure, «17 % разницы между ногами».
   'testday.results.gapUnit': 'разницы между ногами',
   'testday.results.legs': 'Левая {left} · правая {right}',
-  'testday.results.goalGap': 'Цель - меньше {n} %',
+  'testday.results.goalGap': 'Цель - меньше {n}%',
   'testday.results.toGoSeconds': { one: 'Ещё {count} с', few: 'Ещё {count} с', many: 'Ещё {count} с' },
   'testday.results.toGoRaises': {
     one: 'Ещё {count} подъём',
@@ -178,7 +178,7 @@ export const TESTDAY_RU = {
   'testday.results.heroEyebrowUp': 'Новый рекорд',
   'testday.results.heroEyebrowFirst': 'Ваша точка отсчёта',
   'testday.results.heroEyebrowSteady': 'Тесты пройдены',
-  'testday.results.verdictGoal.calf_raises': 'Цель по подъёмам на носок достигнута',
+  'testday.results.verdictGoal.calf_raises': 'Цель по подъёмам на носки достигнута',
   'testday.results.verdictGoal.arch_hold': 'Цель по удержанию свода достигнута',
   'testday.results.verdictGoal.balance': 'Цель по балансу достигнута',
   // A test's row opened: every test so far, and the share card.
@@ -188,7 +188,7 @@ export const TESTDAY_RU = {
   'testday.results.share': 'Поделиться',
   'testday.results.shareTitle': 'Мой тест стопы',
   'testday.results.shareBrand': 'Walkito',
-  'testday.results.shareMessage': 'Мой тест стопы в Walkito: подъёмы на носок {calf} · свод {arch} с · баланс {balance} с',
+  'testday.results.shareMessage': 'Мой тест стопы в Walkito: подъёмы на носки {calf} · свод {arch} с · баланс {balance} с',
   // A figure in seconds on its own: the unit beside the big number, and the share card.
   'testday.results.secondsShort': 'с',
   'testday.results.valueSeconds': '{n} с',
@@ -202,9 +202,9 @@ export const TESTDAY_RU = {
   'testday.results.chipSame': 'Без изменений',
   'testday.results.chipSeconds': '{delta} с',
   'testday.results.chipRaises': { one: '{delta} подъём', few: '{delta} подъёма', many: '{delta} подъёмов' },
-  'testday.results.gapBetween': 'Разница между ногами {n} %',
+  'testday.results.gapBetween': 'Разница между ногами {n}%',
   'testday.results.explain.calf_raises':
-    'Подъёмы на носок показывают, сколько работы икра и ахиллово сухожилие выдерживают, пока не устанут. Больше подъёмов - значит, икра берёт на себя больше каждого шага на долгой прогулке или пробежке.',
+    'Подъёмы на носки показывают, сколько работы икра и ахиллово сухожилие выдерживают, пока не устанут. Больше подъёмов - значит, икра берёт на себя больше каждого шага на долгой прогулке или пробежке.',
   'testday.results.explain.arch_hold':
     'Удержание свода показывает, как долго маленькие мышцы стопы держат свод поднятым. Чем дольше удержание, тем дольше стопа остаётся опорой в течение дня.',
   'testday.results.explain.balance':

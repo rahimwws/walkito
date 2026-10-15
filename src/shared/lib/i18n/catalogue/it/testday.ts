@@ -35,14 +35,14 @@ export const TESTDAY_IT = {
   'testday.intro.painWorst': 'Il peggiore',
   'testday.intro.painA11y': '{score} su 10',
   'testday.intro.sore':
-    'In un giorno di dolore i numeri escono più bassi di quanto valga davvero il tuo piede, e le prossime due settimane verrebbero pianificate su quelli. Il test può aspettare domani.',
+    'In un giorno di dolore i numeri risultano più bassi di quello che il tuo piede sa fare davvero, e le prossime due settimane verrebbero pianificate su quei numeri. Il test può aspettare fino a domani.',
   'testday.intro.start': 'Inizia',
   'testday.intro.anyway': 'Fai il test comunque',
   'testday.intro.tomorrow': 'Fai il test domani',
 
   // ── The three tests ───────────────────────────────────────────────────────
   'testday.test.eyebrow': 'Test {current} di {total}',
-  'testday.test.calf.name': 'Sollevamenti sui talloni',
+  'testday.test.calf.name': 'Sollevamenti dei talloni',
   'testday.test.arch.name': 'Tenuta dell’arco',
   'testday.test.balance.name': 'Equilibrio',
 
@@ -104,7 +104,7 @@ export const TESTDAY_IT = {
   // ── Results ───────────────────────────────────────────────────────────────
   'testday.results.firstBlurb': 'Il prossimo test mostrerà quanta strada hai fatto.',
   'testday.results.name.arch_hold': 'Tenuta dell’arco',
-  'testday.results.name.calf_raises': 'Sollevamenti sui talloni',
+  'testday.results.name.calf_raises': 'Sollevamenti dei talloni',
   'testday.results.name.balance': 'Equilibrio',
   'testday.results.name.symmetry': 'Simmetria',
   'testday.results.unitSeconds': { one: 'secondo', other: 'secondi' },
@@ -183,10 +183,10 @@ export const TESTDAY_IT = {
   'testday.results.chipRaises': { one: '{delta} sollevamento', other: '{delta} sollevamenti' },
   'testday.results.gapBetween': 'Differenza tra le gambe {n}%',
   'testday.results.explain.calf_raises':
-    'I sollevamenti sui talloni mostrano quanto lavoro polpaccio e tendine d’Achille reggono prima di stancarsi. Più sollevamenti significa che il polpaccio porta una parte maggiore di ogni passo nelle camminate e nelle corse lunghe.',
+    'I sollevamenti dei talloni mostrano quanto lavoro polpaccio e tendine d’Achille reggono prima di stancarsi. Più sollevamenti significa che il polpaccio porta una parte maggiore di ogni passo nelle camminate e nelle corse lunghe.',
   'testday.results.explain.arch_hold':
-    'La tenuta dell’arco mostra per quanto tempo i piccoli muscoli sotto il piede tengono l’arco sollevato. Una tenuta più lunga significa che il piede resta sostenuto per più parte della giornata.',
+    'La tenuta dell’arco mostra per quanto tempo i piccoli muscoli sotto il piede tengono l’arco sollevato. Una tenuta più lunga significa che il piede resta sostenuto per una parte più lunga della giornata.',
   'testday.results.explain.balance':
-    'Stare su una gamba a occhi chiusi mostra quanto bene piede e caviglia sentono il terreno. Più secondi significa passi più sicuri su terreno irregolare e quando sei stanco.',
+    'Stare su una gamba a occhi chiusi mostra quanto bene piede e caviglia sentono il terreno. Più secondi significa passi più sicuri su terreno irregolare e quando arriva la stanchezza.',
   'testday.results.explainA11y': 'Cosa mostra',
 };

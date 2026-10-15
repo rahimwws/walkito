@@ -74,7 +74,7 @@ export const HOME_PT = {
   'home.doneStreakStart': 'Sua sequência começa hoje',
   'home.weekDoneA11y': { one: '{count} dia feito nesta semana', other: '{count} dias feitos nesta semana' },
   'home.retestTask': 'Reavaliação',
-  'home.retestTaskSub': 'Checkpoint · {tests}',
+  'home.retestTaskSub': 'Reavaliação · {tests}',
   'home.seeResults': 'Ver resultados',
   'home.nothingScheduled': 'Nada programado para hoje. Descanso também conta.',
   'home.markDone': 'Marcar como feito',
@@ -124,16 +124,16 @@ export const HOME_PT = {
   'safety.a1': 'Minha panturrilha está inchada, quente ou vermelha de um lado, ou estou com falta de ar ou dor no peito',
   'safety.a2': 'Senti um estalo repentino atrás do tornozelo e não consigo ficar na ponta do pé com essa perna',
   'safety.a3': 'Tenho diabetes e meu pé está quente, vermelho, inchado ou com uma ferida aberta',
-  'safety.b1': 'Começou depois de uma queda, uma torção ou uma pancada e não consigo apoiar todo o peso',
+  'safety.b1': 'Começou depois de uma queda, uma torção ou uma lesão e não consigo apoiar todo o peso',
   'safety.b2': 'Consigo apontar com um dedo um ponto dolorido no osso, ou dói ao apertar as laterais do calcanhar',
   'safety.b3': 'A dor me acorda à noite ou continua forte quando estou em repouso',
-  'safety.b4': 'Estou com febre ou me sentindo mal',
+  'safety.b4': 'Estou com febre ou me sentindo mal junto com a dor',
   'safety.c1': 'Queimação, formigamento ou dormência no pé',
   'safety.c2': 'Os dois calcanhares doem e outras articulações ficam inchadas ou rígidas de manhã',
   'safety.c3': 'Um dos arcos ficou plano sozinho já na vida adulta',
   'safety.c4': 'Tenho diabetes ou menos sensibilidade nos pés',
   'safety.c5': 'Tomei uma injeção de corticoide no calcanhar ou no tendão de Aquiles nas últimas 3 semanas',
-  'safety.common': 'Dolorido ou mancando depois de um dia longo? Isso é comum com dor no calcanhar - pode continuar.',
+  'safety.common': 'Com dor ou mancando depois de um dia longo? Isso é comum com dor no calcanhar - pode continuar.',
   'safety.none': 'Nada disso',
   'safety.check': 'Pronto',
   'safety.resultA': 'Por favor, não treine hoje. Isso precisa de um médico agora - ligue para a emergência ou vá ao pronto-socorro.',
@@ -166,7 +166,7 @@ export const HOME_PT = {
   'home.zone.heel': 'Calcanhar',
   'home.zone.dorsum': 'Peito do pé',
   'home.zone.arch': 'Arco do pé',
-  'home.zone.ball': 'Planta do pé',
+  'home.zone.ball': 'Base dos dedos',
   'home.zone.toes': 'Dedos do pé',
   'home.zone.innerAnkle': 'Parte interna do tornozelo',
 
@@ -183,7 +183,7 @@ export const HOME_PT = {
   'home.rangeAboveChip': 'Acima do habitual',
   'home.rangeBelowChip': 'Abaixo do habitual',
   'home.rangeWithinChip': 'Dentro do habitual',
-  'home.usualRangeLegend': 'Faixa habitual {low}–{high}',
+  'home.usualRangeLegend': 'Faixa habitual {low}-{high}',
   'home.usualRangeA11y': 'Faixa habitual, de {low} a {high}',
 
   /**
@@ -269,7 +269,7 @@ export const BRIEF_PT = {
       { k: 'frame', text: 'Hora de ver o que mudou.' },
     ],
     [
-      { k: 'frame', text: 'dia de checkpoint -' },
+      { k: 'frame', text: 'dia de reavaliação -' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
       { k: 'value', text: '{testMinutes}', tail: '.' },
     ],
@@ -287,9 +287,9 @@ export const BRIEF_PT = {
     ],
     // The hedge stays: "a maioria" and "costuma".
     [
-      { k: 'frame', text: 'semana nova hoje. A maioria das pessoas sente as manhãs mais leves em' },
+      { k: 'frame', text: 'semana nova hoje. Muita gente sente as manhãs mais leves em' },
       { k: 'metric', icon: 'level', text: '4-6 semanas', tail: '.' },
-      { k: 'frame', text: 'A maior mudança costuma vir por volta dos 3 meses.' },
+      { k: 'frame', text: 'A maior mudança muitas vezes vem por volta dos 3 meses.' },
     ],
     [
       { k: 'frame', text: 'o foco desta semana é' },
@@ -344,7 +344,7 @@ export const BRIEF_PT = {
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: '.' },
       {
         k: 'frame',
-        text: 'hoje é {work}. A primeira semana é sobre aparecer, não sobre esforço.',
+        text: 'hoje é {work}. Na primeira semana, o que conta é aparecer, não o esforço.',
       },
     ],
   ],
@@ -559,7 +559,7 @@ export const BRIEF_PT = {
       { k: 'frame', text: 'a menos este mês.' },
     ],
     [
-      { k: 'frame', text: 'este mês caiu' },
+      { k: 'frame', text: 'este mês a dor caiu' },
       { k: 'metric', icon: 'up', text: '{drop}', tail: '.', tone: 'good' },
       { k: 'frame', text: 'É uma mudança de verdade, não ruído.' },
     ],
@@ -679,23 +679,23 @@ export const BRIEF_PT = {
       { k: 'frame', text: 'Quanto mais vezes, mais força.' },
     ],
     [
-      { k: 'frame', text: 'ficar mais forte é um pouco, mas sempre. Hoje:' },
+      { k: 'frame', text: 'ganhar força é fazer um pouco, mas sempre. Hoje:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'a melhor proteção contra lesões é um pouco todo dia. Hoje:' },
+      { k: 'frame', text: 'um pouco todo dia é o que deixa o pé mais forte. Hoje:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'um pé forte se machuca menos. Hoje ele ganha' },
+      { k: 'frame', text: 'um pé forte aguenta mais. Hoje ele ganha' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'por dia bastam para ficar à frente das lesões.' },
+      { k: 'frame', text: 'por dia bastam para cuidar dos seus pés.' },
     ],
   ],
 
@@ -751,9 +751,9 @@ export const BRIEF_PT = {
 
   'quiet-shoes': [
     [
-      { k: 'frame', text: 'uma ideia sobre tênis: um' },
+      { k: 'frame', text: 'uma ideia sobre tênis: um tênis com o' },
       { k: 'metric', icon: 'level', text: 'calcanhar mais firme' },
-      { k: 'frame', text: 'e um pouco mais de drop tiram carga do arco.' },
+      { k: 'frame', text: 'e um pouco mais de drop tira carga do arco.' },
     ],
   ],
 

@@ -110,11 +110,13 @@ export const JOURNEY_EN = {
   'onboarding.safety.blurb': 'A quick safety check.',
   'onboarding.safety.calf': 'Calf swollen, warm or red on one side',
   'onboarding.safety.pop': 'A sudden pop at the back of the ankle',
-  'onboarding.safety.diabetes': 'Diabetes with a hot, red foot or an open sore',
+  'onboarding.safety.diabetes': 'Diabetes and a foot that is hot, red or has an open sore',
   'onboarding.safety.fall': 'Hurt it in a fall and can’t put weight on it',
   'onboarding.safety.numb': 'Numbness, tingling or burning',
   'onboarding.safety.none': 'None of these',
   'onboarding.react.safetySeated': 'Week one starts seated.',
+  /** A calf, a pop or a diabetic foot: the plan still starts seated, and the doctor's advice is said with it, as Home's safety sheet does. */
+  'onboarding.react.safetyDoctor': 'Week one starts seated. Please see a doctor about this first - if it’s sudden or severe, call emergency services.',
   'onboarding.react.safetyNumb': 'Noted. We’ll watch it.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -145,14 +147,14 @@ export const JOURNEY_EN = {
   'onboarding.goal.titleShort': 'What matters most?',
   'onboarding.goal.mornings': 'Easier mornings',
   'onboarding.goal.backToRunning': 'Back to running',
-  'onboarding.goal.shift': 'Get through a shift without aching',
+  'onboarding.goal.shift': 'Get through a shift with less aching',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Hours on your feet a day?',
   'onboarding.load.blurbFeet': 'Your usual day, not your longest.',
   'onboarding.load.feet0': 'Under 4 hours',
-  'onboarding.load.feet1': '4–8 hours',
-  'onboarding.load.feet2': '8–12 hours',
+  'onboarding.load.feet1': '4-8 hours',
+  'onboarding.load.feet2': '8-12 hours',
   'onboarding.load.feet3': '12+ hours',
   /** `{band}` is the label they picked on the load step. */
   'onboarding.reflection.feetDaily': '{band} a day on your feet',
@@ -316,7 +318,7 @@ export const JOURNEY_EN = {
   'offer.introTomorrowBody': 'A few minutes, before your foot touches the floor.',
   'offer.howTitleShort': 'Here is how it works',
   'offer.howCheckinShort': '10-second morning check-in',
-  'offer.howSessionShort': '3–10 minute session, adjusted every day',
+  'offer.howSessionShort': '3-10 minute session, adjusted every day',
   'offer.howRetestShort': 'The same test every two weeks',
   'offer.goldPlan': 'How your plan works',
   'offer.goldHow': 'What you get every day',

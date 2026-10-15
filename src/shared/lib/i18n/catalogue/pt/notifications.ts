@@ -61,7 +61,7 @@ export const NOTIFICATIONS_PT = {
     one: 'Dia de manutenção. {count} minuto.',
     other: 'Dia de manutenção. {count} minutos.',
   },
-  'notifications.maintenanceCheckpoint': 'Checkpoint do mês. Vamos ver se nada voltou atrás.',
+  'notifications.maintenanceCheckpoint': 'Reavaliação do mês. Vamos ver se nada voltou atrás.',
   'notifications.maintenanceFourWeeks': 'Quatro semanas estáveis. É exatamente essa a ideia.',
 
   // ── The morning after a bad day ──────────────────────────────────────────
@@ -95,14 +95,14 @@ export const NOTIFICATIONS_PT = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Duas semanas. Hora de ver o que mudou. 3 testes, 4 minutos.',
-  'notifications.retestCheckpoint': 'Checkpoint hoje. Sem treino - só três medições.',
+  'notifications.retestCheckpoint': 'Reavaliação hoje. Sem treino - só três medições.',
   'notifications.retestDay': 'Dia {day}. Vamos descobrir se está funcionando.',
   'notifications.retestFollowUp': 'Os testes continuam abertos. Quatro minutos.',
 
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'Uma semana nova começa hoje. Foco: {block}.',
   'notifications.blockLoadUp': 'O foco desta semana é {block}.',
-  'notifications.blockOpens': 'Semana nova, mesmo pé. Esta é sobre {block}.',
+  'notifications.blockOpens': 'Semana nova, mesmo pé. Foco da semana: {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'A dor subiu esta semana, então hoje desce um nível.',
@@ -119,8 +119,8 @@ export const NOTIFICATIONS_PT = {
   // ── Streak ───────────────────────────────────────────────────────────────
   // Both lines say what one tap keeps, never what is about to be lost.
   'notifications.streakKeep': {
-    one: 'Um toque mantém {count} dia.',
-    other: 'Um toque mantém {count} dias.',
+    one: 'Um toque e sua sequência de {count} dia continua.',
+    other: 'Um toque e sua sequência de {count} dias continua.',
   },
   'notifications.streakTap': { one: '{count} dia. Um toque.', other: '{count} dias. Um toque.' },
 
@@ -132,7 +132,7 @@ export const NOTIFICATIONS_PT = {
   // ── Leaving the offer ────────────────────────────────────────────────────
   'notifications.offerWaitNamed': '{name}, antes de ir - {percent}% de desconto no primeiro ano',
   'notifications.offerWait': 'Antes de ir - {percent}% de desconto no primeiro ano',
-  'notifications.offerWaitBody': 'A assinatura anual está esperando por um preço menor. Toque para ver.',
+  'notifications.offerWaitBody': 'A assinatura anual está com um preço menor para você. Toque para ver.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Seu passe de 3 meses termina em uma semana',

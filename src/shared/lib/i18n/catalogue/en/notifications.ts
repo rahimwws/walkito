@@ -126,7 +126,7 @@ export const NOTIFICATIONS_EN = {
   // ── A new block opens ────────────────────────────────────────────────────
   'notifications.blockNew': 'A new week starts today. Focus: {block}.',
   'notifications.blockLoadUp': 'This week works on {block}.',
-  'notifications.blockOpens': 'New week, same foot. This one is about {block}.',
+  'notifications.blockOpens': 'New week, same foot. This week’s focus: {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   // One line per reason, because the whole value of this row is that it explains

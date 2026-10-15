@@ -33,7 +33,7 @@ export const CANCEL_IT = {
   'cancel.better.plain':
     'Siamo davvero contenti che i tuoi piedi stiano meglio. Grazie per aver fatto un pezzo di strada con noi.',
   'cancel.better.pain': 'Dolore nei primi passi, su 10',
-  'cancel.better.calf': 'Sollevamenti sui talloni',
+  'cancel.better.calf': 'Sollevamenti dei talloni',
   'cancel.better.arch': 'Tenuta dell’arco, secondi',
   'cancel.better.balance': 'Equilibrio, secondi',
   'cancel.better.firstWeek': 'Prima settimana',

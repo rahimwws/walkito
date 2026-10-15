@@ -37,9 +37,9 @@ export const PROGRESS_IT = {
   'progress.longestStreak': 'Serie migliore',
 
   // ── The path ─────────────────────────────────────────────────────────────
-  'progress.retestToday': 'Retest oggi',
+  'progress.retestToday': 'Verifica oggi',
   'progress.todayMinutes': 'Oggi · {minutes} min',
-  'progress.retest': 'Retest',
+  'progress.retest': 'Verifica',
   'progress.blockDivider': 'Blocco {block} · {name}',
   'progress.weekDivider': 'Settimana {week}',
 
@@ -53,10 +53,10 @@ export const PROGRESS_IT = {
   'progress.strengthEmpty': 'Il tuo primo test fissa questi numeri.',
   'progress.strengthSince': 'Il tuo primo test confrontato con l’ultimo.',
   'progress.strengthOnce': 'Dal tuo primo test. Il prossimo mostra il cambiamento.',
-  'progress.calfChange': 'Sollevamenti sui talloni {from} → {to}',
+  'progress.calfChange': 'Sollevamenti dei talloni {from} → {to}',
   'progress.balanceChange': 'Equilibrio {from} s → {to} s',
   'progress.archChange': 'Tenuta dell’arco {from} s → {to} s',
-  'progress.calfOnce': 'Sollevamenti sui talloni: {value}',
+  'progress.calfOnce': 'Sollevamenti dei talloni: {value}',
   'progress.balanceOnce': 'Equilibrio: {value} s',
   'progress.archOnce': 'Tenuta dell’arco: {value} s',
   'progress.painTitle': 'Dolore al mattino',
@@ -84,7 +84,7 @@ export const PROGRESS_IT = {
   'progress.painNoneInRange': 'Ancora nessuna registrazione del mattino in questo periodo.',
   'progress.painToGo': { one: 'Ancora {count} registrazione del mattino e il tuo grafico parte.', other: 'Ancora {count} registrazioni del mattino e il tuo grafico parte.' },
   'progress.painToGoSteps': '{done} di {total} registrazioni',
-  'progress.calfName': 'Sollevamenti sui talloni',
+  'progress.calfName': 'Sollevamenti dei talloni',
   'progress.balanceName': 'Equilibrio',
   'progress.archName': 'Tenuta dell’arco',
   'progress.repsUnit': { one: 'rip.', other: 'rip.' },
@@ -106,7 +106,7 @@ export const PROGRESS_IT = {
   'progress.goalA11y': '{goal}, al {pct}%',
   'progress.consistencyTitle': 'Costanza',
   'progress.last4Weeks': 'Ultime 4 settimane',
-  'progress.heatDone': 'Allenato',
+  'progress.heatDone': 'Fatto',
   'progress.heatRest': 'Riposo',
   'progress.heatA11y': '{done} giorni su {total} nelle ultime 4 settimane',
 };

@@ -6,7 +6,7 @@ export const PROFILE_RU = {
   // Both tiles are captions under a figure, so they are written as the figure
   // would be read out: "12 — дней подряд", "12 — сессий пройдено".
   'profile.dayStreak': 'Дней подряд',
-  'profile.sessionsDone': 'Сессий пройдено',
+  'profile.sessionsDone': 'Занятий пройдено',
 
   // ── Sections ─────────────────────────────────────────────────────────────
   'profile.sectionInvite': 'Приглашения',
@@ -31,7 +31,7 @@ export const PROFILE_RU = {
   'profile.deleteBlurb':
     'Будут удалены ваша программа, дневник боли, серия и код приглашения - и с устройства, и с наших серверов. Отменить это будет нельзя.',
   'profile.deleteSubscription':
-    'Удаление аккаунта не отменяет подписку. Её оплачивают через Apple, и она продлевается, пока вы не отмените её в Настройках.',
+    'Удаление аккаунта не отменяет подписку. Её оплачивают через Apple, и она продлевается, пока вы не отмените её в «Настройках».',
   'profile.deleteSubscriptionAndroid':
     'Удаление аккаунта не отменяет подписку. Её оплачивают через Google Play, и она продлевается, пока вы не отмените её там.',
   'profile.manageSubscription': 'Управление подпиской',

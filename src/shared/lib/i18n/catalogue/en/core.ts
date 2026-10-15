@@ -70,7 +70,7 @@ export const CORE_EN = {
   // ── Your plan: what onboarding asked, changeable ─────────────────────────
   'settings.planSection': 'Your plan',
   'settings.outcome': 'Your goal',
-  'settings.outcome.painfree': 'Pain-free',
+  'settings.outcome.painfree': 'Less pain',
   'settings.outcome.flat_feet': 'Stronger arches',
   'settings.outcome.stronger': 'Stronger legs',
   'settings.outcome.injury_free': 'Sturdy legs',
@@ -234,9 +234,9 @@ export const CORE_EN = {
   'maintenance.throughNamed': '{name}, you’re through.',
   'maintenance.through': 'You’re through.',
   'maintenance.calfGain': '{opening} Your calf went ↗ from {before} to {after}.',
-  'maintenance.relapse': 'About half of people lose this again within five years.',
-  'maintenance.staying': 'Two sessions a week is how you stay in the other half.',
-  'maintenance.regression': 'Your numbers slipped. Want to run {block} again?',
+  'maintenance.relapse': 'Heel pain often lingers or comes back: about half of people still have symptoms five years on.',
+  'maintenance.staying': 'Two sessions a week help you keep what you’ve built.',
+  'maintenance.regression': 'Your numbers slipped. Want to repeat this focus: {block}?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   // The six phases of the plan, in order; the six-week plan uses the first

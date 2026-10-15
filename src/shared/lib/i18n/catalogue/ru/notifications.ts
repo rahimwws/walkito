@@ -26,7 +26,7 @@ export const NOTIFICATIONS_RU = {
   /** Android's name for the app's notification channel, shown in system settings. */
   'notifications.channelName': 'Напоминания',
   'notifications.kindStrength': 'Силовая работа',
-  'notifications.kindMobility': 'Работа на мобильность',
+  'notifications.kindMobility': 'Работа на подвижность',
   'notifications.kindBalance': 'Работа на баланс',
   'notifications.kindRecovery': 'Восстановление',
   'notifications.kindFoot': 'Работа со стопой',
@@ -45,9 +45,9 @@ export const NOTIFICATIONS_RU = {
     many: 'День {day}. {kind}. {count} минут.',
   },
   'notifications.sessionShort': {
-    one: 'Сегодня короткая сессия - {count} минута, сидя.',
-    few: 'Сегодня короткая сессия - {count} минуты, сидя.',
-    many: 'Сегодня короткая сессия - {count} минут, сидя.',
+    one: 'Сегодня короткое занятие - {count} минута, сидя.',
+    few: 'Сегодня короткое занятие - {count} минуты, сидя.',
+    many: 'Сегодня короткое занятие - {count} минут, сидя.',
   },
   'notifications.sessionBackTo': {
     one: 'Сегодня {count} минута - ещё шаг {backTo}.',
@@ -59,7 +59,7 @@ export const NOTIFICATIONS_RU = {
     few: '{count} минуты. Сегодня всё про икры.',
     many: '{count} минут. Сегодня всё про икры.',
   },
-  'notifications.sessionMobility': 'Сегодня мобильность. Ничего тяжёлого.',
+  'notifications.sessionMobility': 'Сегодня подвижность. Ничего тяжёлого.',
 
   // ── Maintenance ──────────────────────────────────────────────────────────
   'notifications.maintenanceDay': {
@@ -69,7 +69,7 @@ export const NOTIFICATIONS_RU = {
   },
   'notifications.maintenanceCheckpoint':
     'Ежемесячная проверка. Посмотрим, что ничего не откатилось.',
-  'notifications.maintenanceFourWeeks': 'Ровно четыре недели. В этом и смысл.',
+  'notifications.maintenanceFourWeeks': 'Уже четыре недели держим уровень. В этом и смысл.',
 
   // ── The morning after a bad day ──────────────────────────────────────────
   // Ни одного восклицательного знака и ни одной похвалы: вчера человеку было
@@ -104,7 +104,7 @@ export const NOTIFICATIONS_RU = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Две недели. Пора посмотреть, что сдвинулось. 3 теста, 4 минуты.',
-  'notifications.retestCheckpoint': 'Сегодня контрольная точка. Без тренировки - только три замера.',
+  'notifications.retestCheckpoint': 'Сегодня замеры. Тренироваться не нужно - только три теста.',
   'notifications.retestDay': 'День {day}. Посмотрим, работает ли это.',
   'notifications.retestFollowUp': 'Тесты всё ещё ждут. Четыре минуты.',
 
@@ -118,7 +118,7 @@ export const NOTIFICATIONS_RU = {
   'notifications.planSpike': 'Вчера был большой день. Сегодня начинаем полегче.',
   'notifications.planHeavyDay': 'Вчера вы долго были на ногах. Сегодня меняем на восстановление.',
   'notifications.planReturn': 'Пять дней перерыва. Сегодня начинаем на ступень легче.',
-  'notifications.planBackUp': 'Болезненности больше нет - сегодня нагрузка возвращается.',
+  'notifications.planBackUp': 'Больше не болит - сегодня нагрузка возвращается.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
   'notifications.checkinHow': 'Как стопа сегодня?',

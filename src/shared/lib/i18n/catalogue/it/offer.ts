@@ -22,11 +22,11 @@ export const OFFER_IT = {
   'offer.featureProgressBlurb': 'Guarda la tua preparazione crescere settimana dopo settimana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.comebackBadge': 'Prezzo di ritorno',
+  'offer.comebackBadge': 'Offerta per chi torna',
   'offer.inviteBadge': 'Il tuo prezzo su invito',
   'offer.headline': 'Sblocca Walkito Premium',
   'offer.headlineInvite': 'Il tuo prezzo su invito per un anno di Walkito Premium',
-  'offer.headlineComeback': 'Il tuo prezzo di ritorno per un anno di Walkito Premium',
+  'offer.headlineComeback': 'La tua offerta per il ritorno: un anno di Walkito Premium',
   'offer.sub': 'Il tuo piano, e tutto quello che gli sta intorno.',
 
   // ── Paywall: the two plans ───────────────────────────────────────────────
@@ -115,7 +115,7 @@ export const OFFER_IT = {
   'offer.chipWeekly': 'Il tuo piano settimanale',
   'offer.chipSessions': 'Sessioni brevi',
   'offer.chipTests': 'Un test ogni due settimane',
-  'offer.chipRoutines': 'Routine per le riacutizzazioni e per la corsa',
+  'offer.chipRoutines': 'Routine per quando fa male e per la corsa',
   'offer.chipReminders': 'Promemoria',
 
   // ── Paywall: the plans (Walkito Plus) ───────────────────────────────────
@@ -173,11 +173,11 @@ export const OFFER_IT = {
 
   // ── Test day: the results ────────────────────────────────────────────────
   'widgets.retestYourGoal': 'Il tuo obiettivo',
-  'widgets.retestGoal.painfree': 'Sei qui per mattine che non iniziano con il dolore al tallone. Questi numeri sono il piede che ci si avvicina.',
+  'widgets.retestGoal.painfree': 'Sei qui per mattine con meno dolore al tallone. Questi numeri mostrano che il piede è sulla buona strada.',
   'widgets.retestGoal.race': 'Ti stai preparando per una gara. Polpacci più forti e un piede più stabile sono ciò che ti porta alla partenza.',
   'widgets.retestGoal.consistent': 'Hai detto che l’obiettivo era la costanza. Ecco a cosa porta esserci.',
   'widgets.retestGoal.stronger': 'Volevi diventare più forte. È qui che si vede per primo.',
-  'widgets.retestGoal.injuryfree': 'Volevi evitare infortuni. Un piede che risulta più forte è più difficile da ferire.',
+  'widgets.retestGoal.injuryfree': 'Volevi evitare infortuni. Un piede che nei test risulta più forte regge meglio i carichi.',
 
   'widgets.retestGoal.flatfeet': 'Sei qui per i tuoi piedi piatti. La tenuta dell’arco e un equilibrio più stabile sono dove si vede il lavoro.',
   'widgets.retestGoal.ankles': 'Volevi caviglie più stabili. È nell’equilibrio che si vede per primo.',
@@ -219,7 +219,7 @@ export const OFFER_IT = {
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Ottimo lavoro.',
   'widgets.sessionStoppedTitle': 'Ci fermiamo qui.',
-  'widgets.sessionStoppedBlurb': 'Conta comunque come sessione di oggi. Domani si riparte un passo indietro.',
+  'widgets.sessionStoppedBlurb': 'Conta comunque come sessione di oggi. Domani si riparte con un livello più leggero.',
 
   'widgets.painButton': 'Fa male',
   'widgets.painTitle': 'Quanto, in questo momento?',

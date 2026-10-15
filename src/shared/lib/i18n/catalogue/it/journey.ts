@@ -43,8 +43,8 @@ export const JOURNEY_IT = {
   'onboarding.react.areaHeel': 'Il più comune qui.',
   'onboarding.react.areaFoot': 'È da lì che parte il piano.',
   'onboarding.react.areaAchilles': 'Risponde bene al carico lento.',
-  'onboarding.react.areaCalf': 'Tira su tutto quello che sta sotto.',
-  'onboarding.react.areaShin': 'Il carico è salito più in fretta delle gambe.',
+  'onboarding.react.areaCalf': 'Mette in tensione tutto quello che sta sotto.',
+  'onboarding.react.areaShin': 'Il carico è cresciuto troppo in fretta per le gambe.',
   'onboarding.react.areaNone': 'Buon momento per rinforzare.',
 
   'onboarding.where.heelLeft': 'Tallone sinistro',
@@ -77,7 +77,7 @@ export const JOURNEY_IT = {
   'onboarding.react.monthsBody': 'Partiamo da ciò che aiuta per primo.',
   'onboarding.react.yearTitle': 'È tanto tempo.',
   'onboarding.react.yearBody': 'Di solito il carico non è mai cambiato. Lo cambieremo.',
-  'onboarding.react.longerTitle': 'Più di un anno. È reale.',
+  'onboarding.react.longerTitle': 'Più di un anno. Lo prendiamo sul serio.',
   'onboarding.react.longerBody': 'Serve un carico diverso, non più riposo.',
 
   // ── Morning pain ─────────────────────────────────────────────────────────
@@ -98,11 +98,12 @@ export const JOURNEY_IT = {
   'onboarding.safety.blurb': 'Un rapido controllo di sicurezza.',
   'onboarding.safety.calf': 'Polpaccio gonfio, caldo o arrossato da un lato',
   'onboarding.safety.pop': 'Uno schiocco improvviso dietro la caviglia',
-  'onboarding.safety.diabetes': 'Diabete con il piede caldo e arrossato o una ferita aperta',
-  'onboarding.safety.fall': 'Me lo sono fatto cadendo e non riesco ad appoggiarlo',
+  'onboarding.safety.diabetes': 'Diabete e piede caldo, arrossato o con una ferita aperta',
+  'onboarding.safety.fall': 'Dolore dopo una caduta e non riesco a caricarci il peso',
   'onboarding.safety.numb': 'Intorpidimento, formicolio o bruciore',
   'onboarding.safety.none': 'Nessuno di questi',
   'onboarding.react.safetySeated': 'La prima settimana si parte da seduti.',
+  'onboarding.react.safetyDoctor': 'La prima settimana si parte da seduti. Prima di iniziare, fatti vedere da un medico. Se è improvviso o forte, chiama i soccorsi o vai al pronto soccorso.',
   'onboarding.react.safetyNumb': 'Segnato. Lo terremo d’occhio.',
 
   // ── What they tried ──────────────────────────────────────────────────────
@@ -133,7 +134,7 @@ export const JOURNEY_IT = {
   'onboarding.goal.titleShort': 'Cosa conta di più?',
   'onboarding.goal.mornings': 'Mattine più facili',
   'onboarding.goal.backToRunning': 'Tornare a correre',
-  'onboarding.goal.shift': 'Arrivare a fine turno senza dolori',
+  'onboarding.goal.shift': 'Arrivare a fine turno con meno dolori',
 
   // ── Load ─────────────────────────────────────────────────────────────────
   'onboarding.load.titleFeet': 'Quante ore in piedi al giorno?',
@@ -156,7 +157,7 @@ export const JOURNEY_IT = {
   'onboarding.why.patternFoot': 'I muscoli dell’arco si stancano prima della fine della giornata.',
   'onboarding.why.patternAchilles': 'Il carico è salito più in fretta di quanto il tendine si sia adattato.',
   'onboarding.why.patternCalf': 'Un polpaccio rigido tira sul tallone e sul piede.',
-  'onboarding.why.patternShin': 'Il carico è salito più in fretta delle gambe.',
+  'onboarding.why.patternShin': 'Il carico è cresciuto troppo in fretta per le gambe.',
   'onboarding.why.lingersWeeks': 'Solo qualche settimana. Il momento più facile per invertire la rotta.',
   'onboarding.why.lingersMonths': 'Ormai da mesi. Qui aiuta soprattutto la costanza.',
   'onboarding.why.lingersYear': 'Ormai da mesi. Il carico non è mai cambiato.',

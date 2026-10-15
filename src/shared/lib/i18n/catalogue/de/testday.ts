@@ -35,7 +35,7 @@ export const TESTDAY_DE = {
   'testday.intro.painWorst': 'Am stärksten',
   'testday.intro.painA11y': '{score} von 10',
   'testday.intro.sore':
-    'An einem gereizten Tag fallen die Zahlen niedriger aus, als dein Fuß wirklich ist, und die nächsten zwei Wochen würden danach geplant. Der Test kann bis morgen warten.',
+    'An einem Tag mit Schmerzen fallen die Werte niedriger aus, als dein Fuß eigentlich kann - und die nächsten zwei Wochen würden danach geplant. Der Test kann bis morgen warten.',
   'testday.intro.start': 'Starten',
   'testday.intro.anyway': 'Trotzdem testen',
   'testday.intro.tomorrow': 'Morgen testen',

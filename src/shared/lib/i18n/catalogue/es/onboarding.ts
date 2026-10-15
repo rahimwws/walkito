@@ -88,9 +88,9 @@ export const ONBOARDING_ES = {
   'onboarding.passport.heading': 'Tu pasaporte del pie, {name}',
   // Who they are, in the passport's words: the role question's own
   // answers ("Both") mean nothing out of it.
-  'onboarding.passport.role.running': 'Corredor',
+  'onboarding.passport.role.running': 'Corro',
   'onboarding.passport.role.feet': 'De pie en el trabajo',
-  'onboarding.passport.role.both': 'Corredor, de pie en el trabajo',
+  'onboarding.passport.role.both': 'Corro y trabajo de pie',
   'onboarding.passport.role.walking': 'Caminar a diario',
   'onboarding.passport.who': 'Quién',
   'onboarding.passport.toe': 'Levantar el dedo gordo',
@@ -117,16 +117,16 @@ export const ONBOARDING_ES = {
   'onboarding.bunion.no': 'No',
   'onboarding.bunion.little': 'Uno leve',
   'onboarding.bunion.yes': 'Sí',
-  'onboarding.bunion.unsure': 'No estoy seguro',
+  'onboarding.bunion.unsure': 'No lo sé',
   'onboarding.bunion.note': 'Una imagen para comparar, no un diagnóstico.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
-  'onboarding.runner.title': '¿Qué tipo de atleta eres, {name}?',
+  'onboarding.runner.title': '¿Qué tipo de deportista eres, {name}?',
   'onboarding.runner.blurb':
     'De aquí parte tu plan. Quedarte corto solo hace que la semana uno sea demasiado fácil.',
   'onboarding.runner.new': 'Estoy empezando',
   'onboarding.runner.casual': 'Ocasional',
-  'onboarding.runner.regular': 'Regular',
+  'onboarding.runner.regular': 'Habitual',
   'onboarding.runner.racing': 'Preparo una carrera',
   'onboarding.runner.serious': 'Me lo tomo en serio',
 
@@ -139,12 +139,12 @@ export const ONBOARDING_ES = {
   // ── Shoe size ────────────────────────────────────────────────────────────
   'onboarding.size.title': '¿Con qué talla corres, {name}?',
   'onboarding.size.blurb':
-    'La talla del calzado equivale a la longitud de la palanca que mueve tu gemelo.',
+    'La talla del calzado equivale a la longitud de la palanca que mueve tu pantorrilla.',
 
   // ── Goal ─────────────────────────────────────────────────────────────────
-  'onboarding.goal.title': '{name}, ¿hacia dónde trabajas?',
+  'onboarding.goal.title': '{name}, ¿cuál es tu objetivo?',
   'onboarding.goal.blurb': 'Elige lo que más importa ahora mismo. Puedes cambiarlo después.',
-  'onboarding.goal.painfree': 'Correr sin dolor',
+  'onboarding.goal.painfree': 'Correr con menos dolor',
   'onboarding.goal.race': 'Preparar una carrera',
   'onboarding.goal.consistent': 'Correr con más constancia',
   'onboarding.goal.stronger': 'Fortalecer las piernas',
@@ -210,7 +210,7 @@ export const ONBOARDING_ES = {
   'onboarding.load.blurb': 'Tu semana real de ahora, no la mejor que has tenido.',
   'onboarding.load.blurbMonth': 'Tu mes real de ahora, no el mejor que has tenido.',
   'onboarding.load.titleRunning': '¿Cuánto corres a la semana?',
-  'onboarding.load.titleTennis': '¿Cuánto tiempo pasas en pista, {name}?',
+  'onboarding.load.titleTennis': '¿Cuánto juegas al tenis, {name}?',
   'onboarding.load.blurbTennis': 'Partidos y entrenamientos juntos: la semana real.',
   'onboarding.load.titleGym': '¿Cuánto entrenas ahora, {name}?',
   'onboarding.load.blurbGym': 'Tiempo bajo carga, no tiempo en el gimnasio.',
@@ -219,28 +219,28 @@ export const ONBOARDING_ES = {
   'onboarding.load.titleBasketball': '¿Cuánto juegas ahora, {name}?',
   'onboarding.load.blurbBasketball': 'Partidos y sesiones juntos: la semana real.',
   'onboarding.load.titleCycling': '¿Cuánto sales en bici, {name}?',
-  'onboarding.load.titleHiking': '¿Cuánto sales a caminar, {name}?',
-  'onboarding.load.km0': '0–5 {unit}',
-  'onboarding.load.km1': '5–15 {unit}',
-  'onboarding.load.km2': '15–30 {unit}',
-  'onboarding.load.km3': '30–50 {unit}',
+  'onboarding.load.titleHiking': '¿Cuánto senderismo haces, {name}?',
+  'onboarding.load.km0': '0-5 {unit}',
+  'onboarding.load.km1': '5-15 {unit}',
+  'onboarding.load.km2': '15-30 {unit}',
+  'onboarding.load.km3': '30-50 {unit}',
   'onboarding.load.km4': '50+ {unit}',
   'onboarding.load.unitKm': 'km',
   'onboarding.load.hours0': 'Menos de 1 hora',
-  'onboarding.load.hours1': '1–3 horas',
-  'onboarding.load.hours2': '3–5 horas',
-  'onboarding.load.hours3': '5–8 horas',
+  'onboarding.load.hours1': '1-3 horas',
+  'onboarding.load.hours2': '3-5 horas',
+  'onboarding.load.hours3': '5-8 horas',
   'onboarding.load.hours4': '8+ horas',
   'onboarding.load.perWeek': 'por semana',
   'onboarding.load.runsPerWeek': 'Salidas por semana',
   'onboarding.load.sessionsPerWeek': 'Sesiones por semana',
   'onboarding.load.ridesPerWeek': 'Salidas en bici por semana',
-  'onboarding.load.hikesPerMonth': 'Caminatas al mes',
+  'onboarding.load.hikesPerMonth': 'Excursiones al mes',
 
   // ── Challenge ────────────────────────────────────────────────────────────
   'onboarding.challenge.title': '¿Qué te cuesta más ahora, {name}?',
   'onboarding.challenge.blurb': 'Hasta dos. El plan se inclina hacia lo que elijas.',
-  'onboarding.challenge.painfree': 'Mantenerme sin dolor',
+  'onboarding.challenge.painfree': 'Mantener el dolor a raya',
   'onboarding.challenge.back': 'Volver a correr',
   'onboarding.challenge.distance': 'Aumentar la distancia',
   'onboarding.challenge.recovery': 'Recuperarme más rápido',
@@ -279,7 +279,7 @@ export const ONBOARDING_ES = {
   'onboarding.health.opening': 'Abriendo Salud…',
   'onboarding.health.connectAndroid': 'Conectar Health Connect',
   'onboarding.health.openingAndroid': 'Abriendo Health Connect…',
-  'onboarding.health.promise': 'Tus datos de salud nunca salen de este dispositivo.',
+  'onboarding.health.promise': 'Tus pasos, tu sueño y tus carreras se quedan en este teléfono.',
   'onboarding.health.unavailable': 'Salud no está disponible aquí: puedes seguir sin ello.',
   'onboarding.health.declined': 'Se denegó el acceso a Salud. Tu plan funcionará igual.',
   'onboarding.health.empty': 'Conectado, todavía sin datos. Se irán llenando según te muevas.',
@@ -325,25 +325,25 @@ export const ONBOARDING_ES = {
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Construyendo tu plan',
-  'onboarding.building.blurb': 'Plegando todo lo que me has contado en la semana uno.',
+  'onboarding.building.blurb': 'Juntando todo lo que me contaste en tu primera semana.',
   'onboarding.building.line1': 'Conociéndote',
   'onboarding.building.line3': 'Tu plan está listo',
   'onboarding.building.cta': 'Empezar a entrenar',
   'onboarding.building.reflectionBoth': '{pain}, {volume}.',
   'onboarding.building.reflectionPain': '{pain}.',
   'onboarding.building.reflectionVolume': '{volume}.',
-  'onboarding.pattern.heel': 'Es el patrón más común que existe. También el que responde más rápido.',
+  'onboarding.pattern.heel': 'Es el patrón más común que existe. Y suele responder bien al entrenamiento.',
   'onboarding.pattern.foot': 'El arco no es débil por sí solo. Lo que lo sostiene, sí.',
   'onboarding.pattern.achilles':
-    'La carga subió más rápido de lo que el tendón se adaptó. Eso tiene arreglo.',
+    'La carga subió más rápido de lo que el tendón se adaptó. Eso se puede cambiar.',
   'onboarding.pattern.shin':
     'El volumen adelantó a tus piernas. El plan da un paso atrás y luego construye.',
   'onboarding.pattern.calf': 'La pantorrilla tira de todo lo que hay debajo. Suéltala y lo demás la sigue.',
-  'onboarding.pattern.none': 'Estás aquí antes de que duela. Esta es la forma barata de hacerlo.',
+  'onboarding.pattern.none': 'Estás aquí antes de que duela. Es la forma más fácil de hacerlo.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   'onboarding.reflection.painHeel': 'Dolor de talón',
-  'onboarding.reflection.painFoot': 'Dolor de pie',
+  'onboarding.reflection.painFoot': 'Dolor en el pie',
   'onboarding.reflection.painAchilles': 'Dolor de Aquiles',
   'onboarding.reflection.painShin': 'Dolor de espinilla',
   'onboarding.reflection.painCalf': 'Dolor de pantorrilla',
@@ -364,10 +364,10 @@ export const ONBOARDING_ES = {
     other: '{count} sesiones por semana',
   },
   'onboarding.plan.week': 'Semana {n}',
-  'onboarding.plan.weeks': 'Semanas {from}–{to}',
+  'onboarding.plan.weeks': 'Semanas {from}-{to}',
   'onboarding.plan.weeksOn': 'Semanas {from}+',
   'onboarding.plan.phaseSettle': 'calmar la irritación',
-  'onboarding.plan.phaseBuild': 'construir el arco',
+  'onboarding.plan.phaseBuild': 'fortalecer el arco',
   'onboarding.plan.phaseLoad': 'volver a carga completa',
   'onboarding.plan.reflectionBoth':
     '{pain} y {volume}. Las dos primeras semanas calman las cosas antes de cargar nada.',
@@ -399,7 +399,7 @@ export const ONBOARDING_ES = {
   'onboarding.testimonial2.lead': 'en casa o en el trabajo',
   'onboarding.testimonial2.after': ': basta con el suelo y una pared.',
   'onboarding.testimonial2.name': 'Cada sesión',
-  'onboarding.testimonial3.before': 'Un retest de un minuto',
+  'onboarding.testimonial3.before': 'Una reevaluación de un minuto',
   'onboarding.testimonial3.lead': 'muestra lo que cambió',
   'onboarding.testimonial3.after': ', con números y no con sensaciones.',
   'onboarding.testimonial3.name': 'Cada dos semanas',
@@ -412,8 +412,8 @@ export const ONBOARDING_ES = {
   'onboarding.outlook.month': 'Mes {n}',
   'onboarding.outlook.pain0': 'Molesta',
   'onboarding.outlook.pain1': 'Se calma',
-  'onboarding.outlook.pain2': 'Mejor',
-  'onboarding.outlook.pain3': 'Más tranquilo',
+  'onboarding.outlook.pain2': 'Mejora',
+  'onboarding.outlook.pain3': 'Más en calma',
   'onboarding.outlook.strength0': 'Inicio',
   'onboarding.outlook.strength1': 'Despierta',
   'onboarding.outlook.strength2': 'Crece',
@@ -433,7 +433,7 @@ export const ONBOARDING_ES = {
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Черновик — см. комментарий в en/onboarding.ts.
-  'onboarding.note.title': 'Unas palabras de nosotros',
+  'onboarding.note.title': 'Unas palabras nuestras',
   'onboarding.note.body1':
     'Hola, soy Rahim. Mi amigo y yo hacemos Walkito entre los dos. A mucha gente le duele el talón: plantillas, unas terceras zapatillas - y por las mañanas siguen cojeando. Los ejercicios que ayudan se conocen de sobra. Nadie te dice cuáles ni cuántos. Eso es lo que hicimos.',
   'onboarding.note.body2':

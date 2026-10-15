@@ -248,7 +248,7 @@ export const OFFER_EN = {
   // the results screen took them over from the retest sheet it replaced.
   'widgets.retestYourGoal': 'Your goal',
   /** The goal they picked in onboarding, said back on the result screen. */
-  'widgets.retestGoal.painfree': 'You came here for mornings that don’t start with heel pain. These numbers are the foot getting there.',
+  'widgets.retestGoal.painfree': 'You came here for mornings with less heel pain. These numbers show your foot on the way there.',
   'widgets.retestGoal.race': 'You’re working towards a race. A stronger calf and a steadier foot are what carry you to the start line.',
   'widgets.retestGoal.consistent': 'You said consistency was the goal. This is what showing up adds up to.',
   'widgets.retestGoal.stronger': 'You wanted to get stronger. This is where it shows first.',

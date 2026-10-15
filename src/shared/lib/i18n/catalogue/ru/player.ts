@@ -9,7 +9,7 @@ export const PLAYER_RU = {
 
   // ── How hard was that ─────────────────────────────────────────────────────
   'player.feedback.question': 'Смогли бы сделать ещё 2 хороших повтора?',
-  'player.feedback.purpose': 'По ответу мы настроим следующие сессии.',
+  'player.feedback.purpose': 'По ответу мы настроим следующие занятия.',
   'player.feedback.easy': 'Да, легко',
   'player.feedback.right': 'Примерно так',
   'player.feedback.hard': 'Нет',
@@ -21,7 +21,7 @@ export const PLAYER_RU = {
   'player.afterPain.lowHint':
     'Записали. Лёгкая болезненность после таких упражнений нормальна. Если к утру не пройдёт, утренняя отметка облегчит план.',
   'player.afterPain.highHint':
-    'Это больше, чем должны давать такие упражнения. Следующая сессия начнётся на шаг легче.',
+    'Это больше, чем должны давать такие упражнения. Следующее занятие начнётся на ступень легче.',
   'player.afterPain.save': 'Сохранить',
   'player.cantDo.button': 'Не могу это сделать',
   'player.cantDo.title': 'Что мешает?',

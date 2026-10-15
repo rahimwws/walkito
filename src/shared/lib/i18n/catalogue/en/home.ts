@@ -274,7 +274,7 @@ export const HOME_EN = {
   'home.rangeAboveChip': 'Above usual range',
   'home.rangeBelowChip': 'Below usual range',
   'home.rangeWithinChip': 'Within usual range',
-  'home.usualRangeLegend': 'Usual range {low}–{high}',
+  'home.usualRangeLegend': 'Usual range {low}-{high}',
   'home.usualRangeA11y': 'Usual range, {low} to {high}',
 
   /**
@@ -393,12 +393,12 @@ export const BRIEF_EN = {
     // The one line in the file about how long this takes. "Most people" and
     // "usually" are both doing work — translations keep the hedge.
     [
-      { k: 'frame', text: 'new week today. Most people notice mornings easing in' },
+      { k: 'frame', text: 'new week today. Many people notice mornings easing in' },
       { k: 'metric', icon: 'level', text: '4-6 weeks', tail: '.' },
-      { k: 'frame', text: 'The biggest change usually comes by 3 months.' },
+      { k: 'frame', text: 'The biggest change often comes by 3 months.' },
     ],
     [
-      { k: 'frame', text: 'this week works on' },
+      { k: 'frame', text: 'this week’s focus:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'The plan is built around it.' },
     ],
@@ -791,16 +791,16 @@ export const BRIEF_EN = {
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'the best protection from injury is a little every day. Today:' },
+      { k: 'frame', text: 'a little every day is what makes a foot stronger. Today:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'a strong foot gets hurt less. Today it gets' },
+      { k: 'frame', text: 'a strong foot handles load better. Today it gets' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'a day is enough to stay ahead of injuries.' },
+      { k: 'frame', text: 'a day is enough to look after your feet.' },
     ],
   ],
 

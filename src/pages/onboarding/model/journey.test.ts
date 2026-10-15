@@ -38,8 +38,8 @@ describe('the safety check only changes the plan', () => {
   test('a fall or a red flag starts seated, numbness does not', () => {
     expect(safetyPlan({ safety: ['fall'] }).seated).toBe(true);
     expect(safetyPlan({ safety: ['pop'] }).seated).toBe(true);
-    expect(safetyPlan({ safety: ['numb'] })).toEqual({ seated: false, numb: true, protectFeet: true });
-    expect(safetyPlan({ safety: ['none'] })).toEqual({ seated: false, numb: false, protectFeet: false });
+    expect(safetyPlan({ safety: ['numb'] })).toEqual({ seated: false, numb: true, protectFeet: true, doctor: false });
+    expect(safetyPlan({ safety: ['none'] })).toEqual({ seated: false, numb: false, protectFeet: false, doctor: false });
   });
 
   test('numb feet or diabetes keep hops and eyes-closed balance out, for good', () => {
@@ -51,6 +51,9 @@ describe('the safety check only changes the plan', () => {
     expect(safetyReaction({ safety: ['none'] })).toBeNull();
     expect(safetyReaction({ safety: ['fall', 'numb'] })?.key).toBe('safety_seated');
     expect(safetyReaction({ safety: ['numb'] })?.key).toBe('safety_numb');
+    expect(safetyReaction({ safety: ['calf'] })?.key).toBe('safety_doctor');
+    expect(safetyReaction({ safety: ['diabetes', 'fall'] })?.key).toBe('safety_doctor');
+    expect(safetyPlan({ safety: ['pop'] }).seated).toBe(true);
   });
 });
 

@@ -43,15 +43,15 @@ export const CORE_ES = {
   'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   'settings.planSection': 'Tu plan',
   'settings.outcome': 'Tu objetivo',
-  'settings.outcome.painfree': 'Sin dolor',
-  'settings.outcome.flat_feet': 'Pies planos',
-  'settings.outcome.stronger': 'Piernas fuertes',
+  'settings.outcome.painfree': 'Con menos dolor',
+  'settings.outcome.flat_feet': 'Arcos más fuertes',
+  'settings.outcome.stronger': 'Piernas más fuertes',
   'settings.outcome.injury_free': 'Piernas firmes',
   'settings.outcome.stable_ankles': 'Tobillos estables',
   'settings.outcome.jump_higher': 'Saltar más alto',
-  'settings.outcome.race_ready': 'Para la carrera',
+  'settings.outcome.race_ready': 'Preparar una carrera',
   'settings.outcome.all_day': 'Todo el día de pie',
-  'settings.outcome.comeback': 'Tras una lesión',
+  'settings.outcome.comeback': 'Volver tras una lesión',
   'settings.outcome.steady': 'Pasos seguros',
   'settings.daysPerWeek': 'Días por semana',
   'settings.minutesPerDay': 'Minutos al día',
@@ -82,7 +82,7 @@ export const CORE_ES = {
   'settings.lastSync': 'Última sincronización: {time}',
   'settings.lastSyncNever': 'Aún sin sincronizar',
   'settings.reminder': 'Hora del recordatorio',
-  'settings.disclaimer': 'Walkito no es un producto sanitario y no diagnostica, trata, cura ni previene ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, para y consulta a un médico.',
+  'settings.disclaimer': 'Walkito no es un dispositivo médico y no diagnostica, trata, cura ni previene ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, para y consulta a un médico.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: 'Racha de {count} día', other: 'Racha de {count} días' },
@@ -106,17 +106,17 @@ export const CORE_ES = {
 
   // ── Referral / gift sheet ────────────────────────────────────────────────
   'gift.title': 'Invita a un amigo',
-  'gift.blurb': 'Comparte tu código. Un amigo que se una con él obtiene un {percent}% de descuento en la suscripción anual.',
+  'gift.blurb': 'Comparte tu código. Quien se registre con tu código obtiene un {percent}% de descuento en la suscripción anual.',
   'gift.unavailable': 'Las invitaciones no están disponibles en esta versión.',
   'gift.shareMessage':
     'Usa mi código {code} en Walkito y consigue un {percent}% de descuento en la suscripción anual.',
   'gift.share': 'Compartir código',
   'gift.shared': 'Copiado',
-  'gift.copy': 'Copiar en su lugar',
+  'gift.copy': 'O cópialo',
   'gift.copied': 'Copiado al portapapeles',
   'gift.copyA11y': 'Copiar el código {code}',
   'gift.dismiss': 'Quizá más tarde',
-  'gift.openA11y': 'Recoge tu regalo',
+  'gift.openA11y': 'Abre tu regalo',
   'gift.capsule': 'Regalo',
 
   // ── Waits ──────────────────────────────────────────────────────────────────
@@ -142,7 +142,7 @@ export const CORE_ES = {
   'purchase.unavailable': 'Ese plan no está disponible ahora mismo.',
 
   'quick.deleteTitle': '{name}, espera.',
-  'quick.deleteBody': 'Voy a borrar la aplicación.\n\nLo que me echó:\n\n',
+  'quick.deleteBody': 'Voy a borrar la aplicación.\n\nPor qué me voy:\n\n',
   'quick.deleteSubject': 'Antes de borrar Walkito',
   'quick.talkSubject': 'Algo no va bien en Walkito',
   'quick.talkBody': 'Hola -\n\nQué está pasando:\n\n',
@@ -175,9 +175,9 @@ export const CORE_ES = {
   'maintenance.throughNamed': '{name}, lo has completado.',
   'maintenance.through': 'Lo has completado.',
   'maintenance.calfGain': '{opening} Tu pantorrilla subió ↗ de {before} a {after}.',
-  'maintenance.relapse': 'Cerca de la mitad de las personas lo pierden en cinco años.',
-  'maintenance.staying': 'Dos sesiones por semana es como te quedas en la otra mitad.',
-  'maintenance.regression': 'Tus cifras bajaron. ¿Quieres repetir {block}?',
+  'maintenance.relapse': 'El dolor de talón a menudo se queda o vuelve: cerca de la mitad de las personas aún tiene síntomas a los cinco años.',
+  'maintenance.staying': 'Con dos sesiones por semana te quedas en la otra mitad.',
+  'maintenance.regression': 'Tus cifras bajaron. ¿Quieres repetir este enfoque: {block}?',
 
   // ── Block names ──────────────────────────────────────────────────────────
   'block.settle': 'Calma',

@@ -29,7 +29,7 @@ export const EXERCISES_IT = {
   'exercises.ankleRocks.cue': 'Il ginocchio va oltre le dita, il tallone resta a terra.',
 
   // ── The loaded work ──────────────────────────────────────────────────────
-  'exercises.heelRaiseTowel.title': 'Sollevamenti sui talloni',
+  'exercises.heelRaiseTowel.title': 'Sollevamenti dei talloni',
   'exercises.heelRaiseTowel.rationale': 'In uno studio, sollevamenti lenti e con carico hanno alleviato il dolore prima del solo stretching.',
   'exercises.heelRaiseTowel.cue': 'Asciugamano sotto le dita. Senza, stai allenando solo il polpaccio.',
 
@@ -91,15 +91,15 @@ export const EXERCISES_IT = {
   'exercises.breathingReset.cue': 'Espira più a lungo di quanto inspiri. Tutto qui.',
 
   // ── The weekly plan's additions ──────────────────────────────────────────
-  'exercises.heelRaiseDouble.title': 'Sollevamenti sui talloni a due piedi',
+  'exercises.heelRaiseDouble.title': 'Sollevamenti dei talloni a due piedi',
   'exercises.heelRaiseDouble.rationale': 'I due piedi si dividono il carico mentre il polpaccio si risveglia.',
   'exercises.heelRaiseDouble.cue': 'Sali in verticale sopra gli alluci, poi scendi piano.',
 
-  'exercises.heelRaiseSeated.title': 'Sollevamenti sui talloni da seduto',
+  'exercises.heelRaiseSeated.title': 'Sollevamenti dei talloni da seduti',
   'exercises.heelRaiseSeated.rationale': 'Lavoro per il polpaccio quasi senza carico sul tallone.',
   'exercises.heelRaiseSeated.cue': 'Spingi con l’avampiede. Le mani sulle ginocchia aggiungono resistenza.',
 
-  'exercises.heelRaiseHold.title': 'Tenuta sui talloni sollevati',
+  'exercises.heelRaiseHold.title': 'Tenuta a talloni sollevati',
   'exercises.heelRaiseHold.rationale': 'Restare in alto carica il tendine senza rimbalzo.',
   'exercises.heelRaiseHold.cue': 'Sali, poi tieni la posizione in alto - non lasciarti ricadere.',
 

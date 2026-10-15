@@ -525,6 +525,7 @@ describe('reactionAnalyticsId', () => {
       'area_heel',
       'area_none',
       'safety_seated',
+      'safety_doctor',
       'safety_numb',
       'duration_weeks',
       'duration_year',
