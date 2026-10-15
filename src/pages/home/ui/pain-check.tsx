@@ -526,7 +526,7 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
           {morning ? t('home.checkInKickerMorning') : t('home.checkInKickerDay')}
         </Text>
         <Text accessibilityRole="header" style={[styles.question, { color: palette[scheme].foreground }]}>
-          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+          {morning ? t('home.checkInQuestionMorning') : t('home.checkInSubDay')}
         </Text>
       </View>
 

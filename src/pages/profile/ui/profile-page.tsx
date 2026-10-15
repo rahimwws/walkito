@@ -13,6 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
+import { FollowSheet, INSTAGRAM } from '@/features/follow';
 import { APP_STORE_REVIEW_URL, PLAY_STORE_URL, SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
@@ -47,6 +48,7 @@ export function ProfilePage() {
   const rateUrl = Platform.OS === 'ios' ? APP_STORE_REVIEW_URL : PLAY_STORE_URL;
 
   const [deleteOpen, setDeleteOpen] = useState(false);
+  const [followOpen, setFollowOpen] = useState(false);
 
   const greeting = firstName(name);
 
@@ -91,6 +93,21 @@ export function ProfilePage() {
           />
           <Stat label={t('profile.sessionsDone')} value={String(streak.total)} tint={meter.ink} />
         </View>
+
+        {/* Instagram, above the app's own rows: the one thing on this
+            screen that is about other people. */}
+        <Section title={t('follow.section')}>
+          <Row
+            icon={INSTAGRAM.icon}
+            label={t('follow.title')}
+            hint={t('follow.rowHint')}
+            onPress={() => {
+              Haptics.selectionAsync();
+              track('instagram_offer_viewed', { from: 'profile' });
+              setFollowOpen(true);
+            }}
+          />
+        </Section>
 
         <Section title={t('profile.sectionApp')}>
           <Row
@@ -163,6 +180,7 @@ export function ProfilePage() {
       </ScrollView>
 
       <DeleteAccountSheet visible={deleteOpen} onClose={() => setDeleteOpen(false)} />
+      <FollowSheet visible={followOpen} from="profile" onClose={() => setFollowOpen(false)} />
     </View>
   );
 }

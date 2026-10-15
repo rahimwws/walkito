@@ -22,6 +22,7 @@ import { RECAP_FR } from './recap';
 import { HOME_OFFER_FR } from './home-offer';
 import { CANCEL_FR } from './cancel';
 import { PASS_FR } from './pass';
+import { COMMUNITY_FR } from './community';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -54,4 +55,5 @@ export const fr: CatalogueFor<'fr'> = {
   ...HOME_OFFER_FR,
   ...CANCEL_FR,
   ...PASS_FR,
+  ...COMMUNITY_FR,
 };

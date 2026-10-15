@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
-import { devSetLegState, devSetReadinessScore } from '@/pages/home';
+import { devOpenReadinessInfo, devSetLegState, devSetReadinessScore } from '@/pages/home';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { previewNotification } from '@/entities/notifications';
 import { currentDay, devClearCheckIn, devForgetMilestones, devSetStreak, devSetWeekGoal } from '@/entities/program';
@@ -18,6 +18,7 @@ import {
   grantDevAccess,
   setSamplePrices,
 } from '@/entities/purchase';
+import { devResetFollowOffer } from '@/features/follow';
 import { devPreviewOfferWall } from '@/features/home-tour';
 import { armSetup, completeOnboarding, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
 
@@ -87,12 +88,19 @@ const REVIEW_MODE_PARAM = /[?&]previewReviewMode(?:=(\w+))?/;
  * days (Home's card); `=ended` one that ended yesterday, with the pretend
  * purchase taken away (the expiry screen); `=off` none. */
 const PASS_PARAM = /[?&]previewPass=(ending|ended|off)\b/;
+/** `walkito.dev://?previewFollow` counts three days of use and forgets that
+ * the Instagram sheet was offered: Home raises it 2.5 s later. */
+const FOLLOW_PARAM = /[?&]previewFollow\b/;
 /** `walkito.dev://?readinessScore=NN` forces Home's readiness value for
  * screenshots, `=off` lets the real one through. `?legState=<id>` forces what
  * Walkito says about the legs (an id from `LEG_STATES`, e.g. `sore`,
  * `worked`, `fresh`), `=off` back to the real one. */
 const READINESS_SCORE_PARAM = /[?&]readinessScore=(\d{1,3}|off)\b/;
 const LEG_STATE_PARAM = /[?&]legState=([a-z]+)/;
+/** `walkito.dev://?readinessInfo=pain|sleep|steps|score` opens the small
+ * sheet for that part of Home's readiness score, or for the score, for
+ * screenshots. */
+const READINESS_INFO_PARAM = /[?&]readinessInfo=(pain|sleep|steps|score)\b/;
 /** Streak and weekly goal screenshots, in memory only (`=off` for each):
  * `?streakPreview=<n>` a streak of n with this week's days up to today a mix
  * of check-in and full days; `?freezes=<n>` the banked freezes (the header
@@ -227,12 +235,15 @@ export function useDevLinks(): void {
         const review = REVIEW_MODE_PARAM.exec(url);
         if (review != null) devSetReviewMode(review[1] !== 'off');
         if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
+        if (FOLLOW_PARAM.test(url)) devResetFollowOffer();
         const pass = PASS_PARAM.exec(url);
         if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
         const forced = READINESS_SCORE_PARAM.exec(url);
         if (forced != null) devSetReadinessScore(forced[1] === 'off' ? null : Number(forced[1]));
         const leg = LEG_STATE_PARAM.exec(url);
         if (leg != null) devSetLegState(leg[1] === 'off' ? null : leg[1]);
+        const info = READINESS_INFO_PARAM.exec(url);
+        if (info != null) devOpenReadinessInfo(info[1]);
         previewStreak(url);
         previewLimitedOffer(url);
         previewCancel(url);

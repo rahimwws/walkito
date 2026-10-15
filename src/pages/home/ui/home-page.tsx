@@ -17,6 +17,7 @@ import {
   useWeeklyGoal,
 } from '@/entities/program';
 
+import { FollowSheet, useFollowOffer } from '@/features/follow';
 import { HomeTour, type DayOneRun } from '@/features/home-tour';
 import { useAccessLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import { useHomeTourState } from '@/entities/session';
@@ -206,6 +207,10 @@ export function HomePage() {
    * on the sheet. */
   const milestoneOwed = (milestone != null && !milestoneSeen(milestone)) || milestoneUp;
   useEffect(() => (milestoneOwed ? holdReview() : undefined), [milestoneOwed]);
+  /** Walkito's Instagram, once, on the third day of use: only for somebody
+   * whose app this is (not over the offer wall or the first run) and with
+   * nothing else rising or up. */
+  const follow = useFollowOffer(homeClear && !milestoneOwed && !lapsed);
   /** A counter, not a flag: remounting on a new value is what re-runs every
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
@@ -266,18 +271,15 @@ export function HomePage() {
             streak={streak.current}
             onStreakPress={() => setStreakOpen(true)}
             streakGlyph={<FluentIcon name="fire" size={22} />}
-            // Banked freezes, beside the count, only while there is one.
+            // Banked freezes, beside the count, always: a zero says freezes
+            // exist and can be earned, which an empty capsule never did.
             streakAccessory={
-              streak.freezes > 0 ? (
-                <View style={styles.freezes}>
-                  <HugeiconsIcon icon={SnowIcon} size={16} color={accents[scheme].blue.fill} strokeWidth={2.2} />
-                  <Text style={[styles.freezeCount, { color: palette[scheme].foreground }]}>{streak.freezes}</Text>
-                </View>
-              ) : undefined
+              <View style={styles.freezes}>
+                <HugeiconsIcon icon={SnowIcon} size={16} color={accents[scheme].blue.fill} strokeWidth={2.2} />
+                <Text style={[styles.freezeCount, { color: palette[scheme].foreground }]}>{streak.freezes}</Text>
+              </View>
             }
-            streakAccessoryLabel={
-              streak.freezes > 0 ? t('streakSheet.freezes', { count: streak.freezes }) : undefined
-            }
+            streakAccessoryLabel={t('streakSheet.freezes', { count: streak.freezes })}
             swapProgress={program?.progress}
             centre={todayLines()}
             onProfile={() => router.push('/profile')}
@@ -304,6 +306,12 @@ export function HomePage() {
             <ReadinessGauge
               score={readiness}
               parts={readinessPieces}
+              details={{
+                pain: readinessInput.pain,
+                sleepMinutes: signals.sleepLastNightMin,
+                stepsYesterday: signals.stepsYesterday,
+                stepsUsual: signals.stepsBaseline,
+              }}
               leg={leg}
               accessories={accessories}
               stageRef={overviewAnchor}
@@ -390,6 +398,8 @@ export function HomePage() {
         onStartDayOne={setDayOne}
       />
       <DayOneSession run={dayOne} onClose={() => setDayOne(null)} />
+
+      <FollowSheet visible={follow.visible} from="auto" onClose={follow.close} />
 
       <StreakSheet
         visible={streakOpen}

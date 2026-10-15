@@ -123,7 +123,7 @@ const DECIMAL: Readonly<Record<Language, string>> = {
 };
 
 /** Thousands separated the way this language separates them. */
-function grouped(value: number, language: Language): string {
+export function grouped(value: number, language: Language): string {
   const digits = String(Math.abs(Math.round(value)));
   let out = '';
   for (let i = 0; i < digits.length; i += 1) {

@@ -22,6 +22,7 @@ import { RECAP_IT } from './recap';
 import { HOME_OFFER_IT } from './home-offer';
 import { CANCEL_IT } from './cancel';
 import { PASS_IT } from './pass';
+import { COMMUNITY_IT } from './community';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -54,4 +55,5 @@ export const it: CatalogueFor<'it'> = {
   ...HOME_OFFER_IT,
   ...CANCEL_IT,
   ...PASS_IT,
+  ...COMMUNITY_IT,
 };

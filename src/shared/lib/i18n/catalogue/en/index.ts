@@ -20,6 +20,7 @@ import { RECAP_EN } from './recap';
 import { HOME_OFFER_EN } from './home-offer';
 import { CANCEL_EN } from './cancel';
 import { PASS_EN } from './pass';
+import { COMMUNITY_EN } from './community';
 
 /**
  * English, assembled from its domain files.
@@ -56,4 +57,5 @@ export const en = {
   ...HOME_OFFER_EN,
   ...CANCEL_EN,
   ...PASS_EN,
+  ...COMMUNITY_EN,
 };

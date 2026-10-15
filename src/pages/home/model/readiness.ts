@@ -50,6 +50,29 @@ export function stepsPart(yesterday: number, usual: number): number {
  * the score is made of, for a screen that shows the pieces. */
 export type ReadinessParts = { pain: number | null; sleep: number | null; steps: number | null };
 
+export const READINESS_PART_KEYS = ['pain', 'sleep', 'steps'] as const;
+export type ReadinessPartKey = (typeof READINESS_PART_KEYS)[number];
+
+export const isReadinessPartKey = (id: string): id is ReadinessPartKey =>
+  (READINESS_PART_KEYS as readonly string[]).includes(id);
+
+/** What a sheet over the gauge is about: one part, or the score itself. */
+export type ReadinessFocus = ReadinessPartKey | 'score';
+
+export const isReadinessFocus = (id: string): id is ReadinessFocus => id === 'score' || isReadinessPartKey(id);
+
+/**
+ * What each part was made from, in the units a person reads: the check-in,
+ * last night's sleep in minutes, yesterday's steps and their usual day. For
+ * the sheet that explains the score; never sent anywhere.
+ */
+export type ReadinessDetails = {
+  pain: number | null;
+  sleepMinutes: number | null;
+  stepsYesterday: number | null;
+  stepsUsual: number | null;
+};
+
 export function readinessParts(input: ReadinessInput): ReadinessParts {
   return {
     pain: input.pain != null && Number.isFinite(input.pain) ? Math.round(painPart(input.pain)) : null,

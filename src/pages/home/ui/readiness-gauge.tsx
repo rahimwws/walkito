@@ -2,7 +2,7 @@ import { BlurMask, Canvas, Circle } from '@shopify/react-native-skia';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -14,8 +14,21 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { ACCESSORY_ART, type AccessoryId } from '../model/accessories';
-import { BAND_KEYS, LEG_KEYS, readinessBand, type LegState, type LegStateId, type ReadinessParts } from '../model/readiness';
+import {
+  BAND_KEYS,
+  LEG_KEYS,
+  readinessBand,
+  type LegState,
+  type LegStateId,
+  type ReadinessDetails,
+  type ReadinessFocus,
+  type ReadinessPartKey,
+  type ReadinessParts,
+} from '../model/readiness';
+import { devOpenReadinessInfo, useDevReadiness } from '../model/readiness-dev';
+import { PartSheet } from './part-sheet';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
@@ -36,7 +49,9 @@ import {
  * "Legs ready today", told by Walkito: he stands on a soft aura and says how
  * the legs and feet are this morning in his speech bubble (`legState`: only
  * the body, never the plan or a test), with the score, the band word and the
- * three parts under him.
+ * three parts under him. Each part opens its own small sheet (`PartSheet`):
+ * the real value, where it sits in its range, the last seven days. The score
+ * opens a tinier one with the three parts and their weights.
  *
  * His pose and move follow what the bubble says. A tap is a little
  * reaction with a haptic and a "hi" line. Colour says which band or which part,
@@ -50,6 +65,8 @@ const TAP_LINE_MS = 2600;
 export type ReadinessGaugeProps = {
   score: number | null;
   parts: ReadinessParts;
+  /** What the parts were made from, for the sheet that explains them. */
+  details: ReadinessDetails;
   /** How the legs are this morning, for the bubble and his pose. */
   leg: LegState;
   /** What he wears, earned by the longest streak (`accessoriesFor`). */
@@ -217,7 +234,7 @@ function EmptyAsk({ centred = false }: { centred?: boolean }) {
 // ── The three parts ────────────────────────────────────────────────────────
 
 type Part = {
-  key: 'pain' | 'sleep' | 'steps';
+  key: ReadinessPartKey;
   icon: FluentName;
   accent: 'orange' | 'violet' | 'teal';
   value: number | null;
@@ -257,23 +274,57 @@ function PartValue({ part, size }: { part: Part; size: number }) {
 }
 
 /** The three parts as small round pills under the score: an icon and its
- * value, nothing else, centred. The labels are read out, not printed. */
-function PartPills({ parts }: { parts: Part[] }) {
+ * value, nothing else, centred. The labels are read out, not printed. Each
+ * opens the sheet on its own part. */
+function PartPills({ parts, onOpen }: { parts: Part[]; onOpen: (part: ReadinessPartKey) => void }) {
+  const t = useT();
   const scheme = useColorScheme();
   return (
     <View style={styles.pills}>
       {parts.map((part) => (
-        <View key={part.key} accessible accessibilityLabel={part.a11y} style={[styles.pill, { backgroundColor: palette[scheme].card }]}>
+        <Pressable
+          key={part.key}
+          accessibilityRole="button"
+          accessibilityLabel={part.a11y}
+          accessibilityHint={t('home.readiness.partHint')}
+          hitSlop={6}
+          onPress={() => onOpen(part.key)}
+          style={({ pressed }) => [styles.pill, { backgroundColor: palette[scheme].card }, pressed && styles.pressed]}>
           <FluentIcon name={part.icon} size={16} />
           {part.value == null ? (
             <Text style={[fonts.heavy(15), { color: meterColors[scheme].caption }]}>–</Text>
           ) : (
             <PartValue part={part} size={15} />
           )}
-        </View>
+        </Pressable>
       ))}
     </View>
   );
+}
+
+/**
+ * Which part the sheet is open on, or null. Opening says so to analytics by
+ * the part's name only. A dev link (`?readinessInfo=`) opens it untracked.
+ */
+function useInfoSheet() {
+  const dev = useDevReadiness();
+  const [focus, setFocus] = useState<ReadinessFocus | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (!__DEV__ || dev.info == null) return;
+    setFocus(dev.info);
+    setVisible(true);
+    devOpenReadinessInfo(null);
+  }, [dev.info]);
+
+  const open = (part: ReadinessFocus) => {
+    void Haptics.selectionAsync();
+    track('readiness_info_opened', { part });
+    setFocus(part);
+    setVisible(true);
+  };
+  return { focus, visible, open, close: () => setVisible(false) };
 }
 
 /** A speech bubble with a small tail at the bottom, towards Walkito. */
@@ -321,12 +372,13 @@ function Accessories({ ids }: { ids: readonly AccessoryId[] }) {
   );
 }
 
-function Stage({ score, parts, leg, accessories = [], stageRef }: ReadinessGaugeProps) {
+function Stage({ score, parts, details, leg, accessories = [], stageRef }: ReadinessGaugeProps) {
   const t = useT();
   const scheme = useColorScheme();
   const ink = meterColors[scheme];
   const walkito = useWalkito(leg.id, STAGE_MASCOT, palette[scheme].background);
   const items = useParts(parts);
+  const info = useInfoSheet();
   return (
     <View>
       <View ref={stageRef} collapsable={false} style={styles.stage}>
@@ -343,7 +395,16 @@ function Stage({ score, parts, leg, accessories = [], stageRef }: ReadinessGauge
           {accessories.length > 0 && <Accessories ids={accessories} />}
         </View>
       </View>
-      <View style={styles.centred}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={
+          score == null
+            ? t('home.readiness.empty')
+            : t('home.readiness.scoreA11y', { score, band: t(BAND_KEYS[readinessBand(score)]) })
+        }
+        accessibilityHint={t('home.readiness.partHint')}
+        onPress={() => info.open('score')}
+        style={({ pressed }) => [styles.centred, pressed && styles.pressed]}>
         {score == null ? (
           <EmptyAsk centred />
         ) : (
@@ -352,10 +413,17 @@ function Stage({ score, parts, leg, accessories = [], stageRef }: ReadinessGauge
             <BandWord score={score} centred />
           </>
         )}
-      </View>
+      </Pressable>
       <Rise delay={150}>
-        <PartPills parts={items} />
+        <PartPills parts={items} onOpen={info.open} />
       </Rise>
+      <PartSheet
+        visible={info.visible}
+        focus={info.focus}
+        onClose={info.close}
+        score={score}
+        details={details}
+      />
     </View>
   );
 }
@@ -429,6 +497,7 @@ const styles = StyleSheet.create({
   accessory: {
     position: 'absolute',
   },
+  pressed: { opacity: 0.6 },
   pills: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginTop: 14 },
   pill: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 12, height: 34, borderRadius: 17 },
 });

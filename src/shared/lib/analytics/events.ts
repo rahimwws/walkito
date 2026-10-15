@@ -221,6 +221,12 @@ export type AnalyticsEvents = {
   widget_installed: { count: number; sizes: string };
   widget_removed: { count: number };
 
+  // ── Home readiness ───────────────────────────────────────────────────────
+  /** A small sheet over "Legs ready today" opened: a part's own, from its
+   * pill, or the score's. Which one only, never a value or the score: they
+   * are made of pain, sleep and steps. */
+  readiness_info_opened: { part: 'pain' | 'sleep' | 'steps' | 'score' };
+
   // ── Home tour ────────────────────────────────────────────────────────────
   /** "Start" on the "Day 1" card over Home, after the purchase or the skip:
    * the two-minute first session opened. Which moves it held is left out,
@@ -301,6 +307,15 @@ export type AnalyticsEvents = {
 
   /** "Rate Walkito" opened the store's review page. Where it was tapped from. */
   rate_app_tapped: { from: 'profile' };
+
+  // ── Instagram ────────────────────────────────────────────────────────────
+  /** The "follow Walkito on Instagram" sheet came up: by itself on the third
+   * day of use, or from its row in Profile. */
+  instagram_offer_viewed: { from: 'auto' | 'profile' };
+  /** "Follow on Instagram" opened the profile. */
+  instagram_follow_tapped: { from: 'auto' | 'profile' };
+  /** "Not now", or a tap outside the card. */
+  instagram_offer_dismissed: { from: 'auto' | 'profile' };
 
   // ── Superwall ────────────────────────────────────────────────────────────
   /** A Superwall paywall event: shown, closed, declined, transaction steps,

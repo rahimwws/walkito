@@ -41,6 +41,13 @@ export async function askForReview(_win: ReviewWin, now: number = Date.now()): P
   }
 }
 
+/** Apple's prompt was asked for within `ms`: whatever else would rise at the
+ * same moment (the club's sheet) waits for a later open rather than landing
+ * on top of it. */
+export function reviewAskedWithin(ms: number, now: number = Date.now()): boolean {
+  return now - Number(kv.getString(LAST_KEY) ?? 0) < ms;
+}
+
 // ── Held ─────────────────────────────────────────────────────────────────────
 
 /**

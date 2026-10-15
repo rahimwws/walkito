@@ -15,11 +15,13 @@ import {
   stepBackAfterSession,
   useStreak,
 } from '@/entities/program';
+import { PULSE_MIN_OTHERS, useCommunityPulse } from '@/entities/community';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
+import { PulseFaces } from '@/shared/ui/community-pulse';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 
 import { DoneMascot, DoneTiles, StreakChip } from './session-done-hero';
@@ -209,6 +211,7 @@ export function SessionDoneSheet({
                 relief session on an empty day files nothing to count. */}
             {run > 0 && <StreakChip count={run} />}
             <DoneTiles minutes={minutes} moves={moves} care={care} />
+            <TogetherLine />
           </>
         )}
         {/* Skipped after a pain stop — that session already said how it went. */}
@@ -236,6 +239,30 @@ export function SessionDoneSheet({
         onCancel={() => setAskingPain(false)}
       />
     </>
+  );
+}
+
+/**
+ * The others who moved today, in one line under the tiles: the win is theirs
+ * too. Only on a finished session; a session stopped on pain is not the moment
+ * to point at a crowd.
+ */
+function TogetherLine() {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+  const { othersToday } = useCommunityPulse();
+  // Nothing until the server has answered, and nothing on a quiet night: a
+  // handful of others reads as being alone.
+  if (othersToday == null || othersToday < PULSE_MIN_OTHERS) return null;
+  return (
+    <View style={styles.together} accessible accessibilityRole="text">
+      <PulseFaces count={3} size={24} surface={colors.card} />
+      <Text style={[styles.togetherText, { color: meter.label }]}>
+        {t('community.alongside', { count: othersToday })}
+      </Text>
+    </View>
   );
 }
 
@@ -326,6 +353,15 @@ function FeelCard({ onAnswer }: { onAnswer: (feel: Feel) => void }) {
 }
 
 const styles = StyleSheet.create({
+  together: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    marginTop: 14,
+    paddingHorizontal: 8,
+  },
+  togetherText: { ...fonts.medium(14), flexShrink: 1 },
   card: {
     alignSelf: 'stretch',
     borderRadius: 24,
