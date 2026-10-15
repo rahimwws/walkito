@@ -193,7 +193,10 @@ export function ProgressPage() {
           total={streak.total}
           week={streak.strip}
           longest={streak.longest}
-          rest={weekAttendance(now, 0).map((day) => day.rest)}
+          rest={streak.rest}
+          levels={streak.levels}
+          freezes={streak.freezes}
+          freezeSpentThisWeek={streak.freezeSpentThisWeek}
         />
       </Animated.ScrollView>
     </View>

@@ -41,6 +41,10 @@ export type HeaderActionsProps = {
   /** Opens whatever explains the streak. Omitted, the capsule stays a readout
    * and is announced as text rather than as a control. */
   onStreakPress?: () => void;
+  /** Drawn inside the streak capsule after the count: Home's banked freezes. */
+  streakAccessory?: ReactNode;
+  /** Said after the capsule's own label, for what `streakAccessory` shows. */
+  streakAccessoryLabel?: string;
   /** Pushes the streak to one edge and the trailing group to the other, for a
    * header with nothing between them. */
   spread?: boolean;
@@ -103,6 +107,8 @@ export function HeaderActions({
   onStreakPress,
   streakTint,
   streakGlyph,
+  streakAccessory,
+  streakAccessoryLabel,
   spread = false,
   gift = false,
   onGift = () => {},
@@ -132,6 +138,8 @@ export function HeaderActions({
             glyph={streakGlyph}
             icon={streakIcon}
             tint={streakTint}
+            accessory={streakAccessory}
+            accessoryLabel={streakAccessoryLabel}
           />
         )}
 
@@ -164,6 +172,9 @@ export type StreakCapsuleProps = {
   glyph?: ReactNode;
   icon?: IconSvgElement;
   tint?: string;
+  /** After the count, inside the same capsule, behind a hairline gap. */
+  accessory?: ReactNode;
+  accessoryLabel?: string;
 };
 
 /**
@@ -183,14 +194,23 @@ export type StreakCapsuleProps = {
  * the capsule is the text it looks like. The count alone read as a bare "7", so
  * the label spells the noun out either way.
  */
-export function StreakCapsule({ streak, onPress, glyph, icon = DropletIcon, tint }: StreakCapsuleProps) {
+export function StreakCapsule({
+  streak,
+  onPress,
+  glyph,
+  icon = DropletIcon,
+  tint,
+  accessory,
+  accessoryLabel,
+}: StreakCapsuleProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
+  const base = onPress != null ? `${streak} day streak, see what counts` : `${streak} day streak`;
   return (
     <Pressable
       accessible
       accessibilityRole={onPress != null ? 'button' : 'text'}
-      accessibilityLabel={onPress != null ? `${streak} day streak, see what counts` : `${streak} day streak`}
+      accessibilityLabel={accessoryLabel != null ? `${base}. ${accessoryLabel}` : base}
       disabled={onPress == null}
       onPress={onPress}
       style={({ pressed }) => pressed && { opacity: 0.6 }}>
@@ -199,6 +219,12 @@ export function StreakCapsule({ streak, onPress, glyph, icon = DropletIcon, tint
           <HugeiconsIcon icon={icon} size={22} color={tint ?? colors.foreground} strokeWidth={tint != null ? 2.3 : 1.9} />
         )}
         <Text style={[styles.streakCount, { color: colors.foreground }]}>{streak}</Text>
+        {accessory != null && (
+          <>
+            <View style={[styles.streakDivider, { backgroundColor: meterColors[scheme].unit }]} />
+            {accessory}
+          </>
+        )}
       </GlassView>
     </Pressable>
   );
@@ -365,6 +391,12 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
   },
   streakCount: fonts.semibold(16),
+  streakDivider: {
+    width: StyleSheet.hairlineWidth * 2,
+    height: 16,
+    opacity: 0.5,
+    marginHorizontal: 1,
+  },
   trailing: {
     flexDirection: 'row',
     alignItems: 'center',

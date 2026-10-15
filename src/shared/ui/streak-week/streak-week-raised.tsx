@@ -8,7 +8,7 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { IconCircle3D, type IconCircleSize } from '@/shared/ui/icon-circle-3d';
 import { useRaisedScheme } from '@/shared/ui/raised';
 
-import { weekdayNames } from './streak-week';
+import { weekdayNames, type StreakWeekLevel } from './streak-week';
 
 /** The nodes a week row can stand on. `sm` wants about 330pt for seven with a
  * breath between them; anything narrower takes `xs`. */
@@ -31,26 +31,39 @@ export type StreakWeekRaisedProps = {
    * as rest rather than as a flame. Omitted, every counted day is a flame.
    */
   rest?: readonly boolean[];
+  /**
+   * How each day counted, Sunday-first: a check-in alone stands up in amber,
+   * a session or a routine in orange. Omitted, every counted day is orange.
+   */
+  levels?: readonly StreakWeekLevel[];
   /** Index of today, Sunday-first. Defaults to the real day. */
   today?: number;
   /** Default `sm`. Pick with `streakWeekNodeSize` when the row may be narrow. */
   size?: StreakWeekRaisedSize;
 };
 
-type Cell = 'earned' | 'rest' | 'open' | 'blank';
+type Cell = 'earned' | 'checkin' | 'rest' | 'open' | 'blank';
 
 /**
  * The week as raised path nodes, Sunday-first: the streak sheet's row.
  *
- * A day that counted stands up in orange with the flame; a rest day the plan
- * gave is violet with the moon, because it counted just as much. Today, while
+ * A day that counted stands up with the flame: orange for a session or a
+ * routine, amber for a check-in alone, which counted just as much (the tone
+ * says how, never how well). A rest day kept by the old rule is violet with
+ * the moon. Today, while
  * it is still open, is a plain node with a grey flame. Every other day, gone
  * by without anything on it or still to come, is the same empty node, so a
  * day missed is never drawn as one.
  *
  * Static: nothing here loops, so it costs nothing on a sheet left open.
  */
-export function StreakWeekRaised({ done, rest, today = new Date().getDay(), size = 'sm' }: StreakWeekRaisedProps) {
+export function StreakWeekRaised({
+  done,
+  rest,
+  levels,
+  today = new Date().getDay(),
+  size = 'sm',
+}: StreakWeekRaisedProps) {
   const t = useT();
   const language = useLanguage();
   const scheme = useRaisedScheme();
@@ -60,7 +73,10 @@ export function StreakWeekRaised({ done, rest, today = new Date().getDay(), size
   const long = weekdayNames(language, 'long');
 
   const cellOf = (index: number): Cell => {
-    if (done[index] === true) return rest?.[index] === true ? 'rest' : 'earned';
+    if (done[index] === true) {
+      if (rest?.[index] === true) return 'rest';
+      return levels?.[index] === 'checkin' ? 'checkin' : 'earned';
+    }
     return index === today ? 'open' : 'blank';
   };
 
@@ -70,6 +86,8 @@ export function StreakWeekRaised({ done, rest, today = new Date().getDay(), size
     switch (cell) {
       case 'earned':
         return isToday ? t('streakSheet.dayTodayDone', { day }) : t('streakSheet.dayDone', { day });
+      case 'checkin':
+        return isToday ? t('streakSheet.dayTodayCheckin', { day }) : t('streakSheet.dayCheckin', { day });
       case 'rest':
         return t('streakSheet.dayRest', { day });
       case 'open':
@@ -122,6 +140,8 @@ function Node({
   switch (cell) {
     case 'earned':
       return <IconCircle3D icon={FireIcon} size={size} tone="orange" accessibilityLabel={label} />;
+    case 'checkin':
+      return <IconCircle3D icon={FireIcon} size={size} tone="amber" accessibilityLabel={label} />;
     case 'rest':
       return <IconCircle3D icon={Moon02Icon} size={size} tone="violet" accessibilityLabel={label} />;
     case 'open':

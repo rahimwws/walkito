@@ -66,7 +66,7 @@ export const PROGRESS_IT = {
   'progress.goalsTitle': 'Obiettivi',
   'progress.goalsEmpty': 'I tuoi obiettivi compaiono dopo il primo test.',
   'progress.goalReached': 'Raggiunto',
-  'progress.streakCaption': 'I giorni di riposo, quelli difficili e quelli da 2 minuti contano tutti.',
+  'progress.streakCaption': 'I giorni difficili e quelli da 2 minuti contano tutti.',
   // ── The redesigned screen ────────────────────────────────────────────────
   'progress.avgWeek': 'Media degli ultimi 7 giorni',
   'progress.avgMonth': 'Media dell’ultimo mese',

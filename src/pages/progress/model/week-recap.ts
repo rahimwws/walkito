@@ -1,8 +1,9 @@
 import { logFor, planSessionDone, type DayAttendance } from '@/entities/program';
 
 export type WeekRecap = {
-  /** Days that counted: a check-in, a finished session or routine, or the
-   * plan's own rest. The streak's rule, so the two never disagree. */
+  /** Days that counted: a check-in, a finished session or routine (and, before
+   * the streak's cutover, the plan's own rest). The streak's rule, so the two
+   * never disagree. */
   showedUp: number;
   /** Days with a session finished: the plan's, a test day's, or a Library
    * routine. One a day at most, so doing more never makes the number bigger. */

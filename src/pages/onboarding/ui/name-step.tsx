@@ -1,26 +1,37 @@
 import { useEffect, useRef } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { StyleSheet, TextInput } from 'react-native';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { waveRig } from '@/shared/ui/mascot';
+
+import { SpeakingQuestion } from './speaking-question';
 
 export type NameStepProps = {
+  /** The question, said by Walkito from his speech bubble. */
+  question: string;
   value: string;
   placeholder: string;
   onChange: (next: string) => void;
   /** Advances the flow from the keyboard's return key. */
   onSubmit: () => void;
+  /** The flow is covered (a sheet over it): he holds still. */
+  paused?: boolean;
 };
 
+const MASCOT = 132;
+
 /**
- * The name question: an oversized, chromeless text field.
+ * The name question, asked by Walkito himself: he stands in the middle and
+ * waves, the question comes out of his speech bubble, and the answer is
+ * typed right under it. The first thing the flow asks, so it reads as being
+ * greeted rather than as a form; the step draws its own heading for that, and
+ * the corner coach stays away from it.
  *
- * No box, no underline, no label. The placeholder *is* the label — at 40pt it
- * reads as the answer's shape rather than as a hint, so the field needs no
- * decoration to explain itself, and what the user types lands exactly where
- * the prompt was.
+ * The field is chromeless, as before: the placeholder is the label, and what
+ * the user types lands exactly where the prompt was.
  */
-export function NameStep({ value, placeholder, onChange, onSubmit }: NameStepProps) {
+export function NameStep({ question, value, placeholder, onChange, onSubmit, paused = false }: NameStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -36,7 +47,7 @@ export function NameStep({ value, placeholder, onChange, onSubmit }: NameStepPro
   }, []);
 
   return (
-    <View style={styles.wrap}>
+    <SpeakingQuestion question={question} rig={waveRig} state="wave" size={MASCOT} paused={paused}>
       <TextInput
         ref={input}
         value={value}
@@ -51,23 +62,23 @@ export function NameStep({ value, placeholder, onChange, onSubmit }: NameStepPro
         textContentType="givenName"
         returnKeyType="next"
         maxLength={24}
+        textAlign="center"
         style={[styles.input, { color: colors.foreground }]}
       />
-    </View>
+    </SpeakingQuestion>
   );
 }
 
 const styles = StyleSheet.create({
-  wrap: {
-    paddingTop: 44,
-  },
   input: {
-    ...fonts.bold(40, -1),
-    lineHeight: 48,
+    ...fonts.bold(36, -0.8),
+    lineHeight: 44,
     // Height is pinned rather than left to the line box: an empty field and a
     // filled one must occupy the same space, or the layout jumps on the first
     // keystroke.
-    height: 56,
+    height: 52,
     padding: 0,
+    marginTop: 26,
+    alignSelf: 'stretch',
   },
 });

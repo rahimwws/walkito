@@ -12,7 +12,7 @@ export const STREAKS_ES = {
   'streakSheet.showedUpA11y': { one: '{count} día en total', other: '{count} días en total' },
   'streakSheet.longestA11y': { one: 'Mejor racha: {count} día', other: 'Mejor racha: {count} días' },
 
-  'streakSheet.allCount': 'Los días de descanso, los días malos y los de 2 minutos también cuentan.',
+  'streakSheet.allCount': 'Los días malos y los de 2 minutos también cuentan.',
 
   'streakSheet.dayDone': '{day}: día contado',
   'streakSheet.dayRest': '{day}: descanso',
@@ -28,4 +28,21 @@ export const STREAKS_ES = {
     one: '{count} día seguido: por delante',
     other: '{count} días seguidos: por delante',
   },
+  'streakSheet.levelsTitle': 'Dos formas de que un día cuente',
+  'streakSheet.levelFull': 'Una sesión o una rutina de la biblioteca enciende la zapatilla.',
+  'streakSheet.levelCheckin': 'Registrar solo tu dolor enciende la llama. Tu racha sigue igual.',
+  'streakSheet.dayCheckin': '{day}: dolor registrado',
+  'streakSheet.dayTodayCheckin': 'Hoy, {day}: dolor registrado',
+
+  'streakSheet.freezes': { one: '{count} protector de racha guardado', other: '{count} protectores de racha guardados' },
+  'streakSheet.freezesRule': 'Ganas uno cada semana, dos como máximo. Un día sin nada usa uno, y tu racha se mantiene.',
+  'streakSheet.freezeSpent': 'Esta semana un protector cubrió un día tranquilo, así que tu racha siguió.',
+
+  'weekGoal.progress': { one: '{done} de {count} sesión esta semana', other: '{done} de {count} sesiones esta semana' },
+  'weekGoal.inARow': { one: '{count} semana seguida', other: '{count} semanas seguidas' },
+
+  'accessory.shoe': 'Desde hoy, Walkito lleva una insignia de zapatilla.',
+  'accessory.medal': 'Desde hoy, Walkito lleva una medalla.',
+  'accessory.trophy': 'Desde hoy, Walkito tiene un trofeo a su lado.',
+  'accessory.crown': 'Desde hoy, Walkito lleva una corona.',
 };

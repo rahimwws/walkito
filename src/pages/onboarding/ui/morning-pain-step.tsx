@@ -14,12 +14,18 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { settle } from '@/shared/lib/motion';
 
-import { Mascot, painRig, playMascotSound, preloadMascotSounds, type MascotHandle } from '@/shared/ui/mascot';
+import { Mascot, MascotStill, idleRig, painRig, playMascotSound, preloadMascotSounds, type MascotHandle } from '@/shared/ui/mascot';
 
 import { mascotCue, mascotRest } from '../model/mascot-reaction';
 
 const MAX = 10;
-const KNOB = 32;
+/** The thumb: large, round, with Walkito's little face in it. */
+const KNOB = 56;
+/** The rounded track the thumb rides, and its evenly spaced point marks. */
+const TRACK = 32;
+const DOT = 5;
+/** Walkito inside the thumb. */
+const THUMB_MASCOT = 40;
 const PAD = KNOB / 2;
 /** The numbers under the slider: a tap lands exactly where a thumb on a
  * slider lands only roughly, which matters most to the people over 35 this
@@ -82,7 +88,6 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
     });
 
   const knob = useAnimatedStyle(() => ({ transform: [{ translateX: at.value * span }] }));
-  const fill = useAnimatedStyle(() => ({ width: PAD + at.value * span }));
 
   const nudge = (by: number) => {
     const next = Math.min(Math.max(score + by, 0), MAX);
@@ -152,10 +157,21 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
           onAccessibilityAction={(event) => nudge(event.nativeEvent.actionName === 'increment' ? 1 : -1)}
           onLayout={(event) => setWidth(event.nativeEvent.layout.width)}
           style={styles.hit}>
-          <View style={[styles.track, { backgroundColor: meter.track }]}>
-            <Animated.View style={[styles.fill, { backgroundColor: PRIMARY }, fill]} />
+          <View style={[styles.track, { backgroundColor: scheme === 'dark' ? colors.card : meter.track }]}>
+            {width > 0 &&
+              Array.from({ length: MAX + 1 }, (_, n) => (
+                <View
+                  key={n}
+                  style={[styles.dot, { left: PAD + (n / MAX) * span - DOT / 2, backgroundColor: meter.unit }]}
+                />
+              ))}
           </View>
-          <Animated.View style={[styles.knob, knob]} />
+          <Animated.View style={[styles.knob, { backgroundColor: colors.foreground }, knob]}>
+            {/* His face on the thumb, in the page's colour: dark on the light
+                thumb in the dark, light on the dark one in the light. Still, so
+                nothing loops here. */}
+            <MascotStill rig={idleRig} size={THUMB_MASCOT} paper={colors.foreground} ink={colors.background} />
+          </Animated.View>
         </View>
       </GestureDetector>
 
@@ -199,17 +215,20 @@ const styles = StyleSheet.create({
     marginBottom: 18,
   },
   hit: {
-    height: KNOB + 16,
+    height: KNOB + 12,
     justifyContent: 'center',
   },
   track: {
-    height: 10,
-    borderRadius: 5,
-    overflow: 'hidden',
+    height: TRACK,
+    borderRadius: TRACK / 2,
+    justifyContent: 'center',
   },
-  fill: {
-    height: '100%',
-    borderRadius: 5,
+  dot: {
+    position: 'absolute',
+    top: (TRACK - DOT) / 2,
+    width: DOT,
+    height: DOT,
+    borderRadius: DOT / 2,
   },
   knob: {
     position: 'absolute',
@@ -217,7 +236,8 @@ const styles = StyleSheet.create({
     width: KNOB,
     height: KNOB,
     borderRadius: KNOB / 2,
-    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
     shadowColor: '#000000',
     shadowOpacity: 0.22,
     shadowRadius: 6,

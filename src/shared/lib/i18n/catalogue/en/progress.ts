@@ -76,7 +76,7 @@ export const PROGRESS_EN = {
   'progress.goalsTitle': 'Goals',
   'progress.goalsEmpty': 'Your goals appear after your first test.',
   'progress.goalReached': 'Reached',
-  'progress.streakCaption': 'Rest days, rough days and 2-minute days all count.',
+  'progress.streakCaption': 'Rough days and 2-minute days all count.',
 
   // ── The redesigned screen ────────────────────────────────────────────────
   // Morning pain card. `{delta}` arrives signed and formatted ("-1.2"), so the

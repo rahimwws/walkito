@@ -166,18 +166,35 @@ export {
 } from './model/state';
 
 export {
+  attendanceLevel,
   attended,
+  attendedLevel,
+  devSetStreak,
   freezeUsedThisWeek,
   freezesLeft,
   resetFreezes,
+  setStreakCutover,
   spendFreeze,
+  streakCutover,
   streakThrough,
   useStreak,
   weekAttendance,
   type DayAttendance,
+  type DevStreak,
+  type LevelInput,
   type Streak,
+  type StreakLevel,
   type StreakView,
 } from './model/streak';
+export {
+  devSetWeekGoal,
+  goalOfWeek,
+  sessionsDoneIn,
+  useWeeklyGoal,
+  weeksInARow,
+  type WeekGoalRecord,
+  type WeeklyGoal,
+} from './model/weekly-goal';
 
 export {
   FIRST_MORNING_STRETCH_BLOCK,

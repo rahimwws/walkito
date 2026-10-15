@@ -12,7 +12,7 @@ export const STREAKS_PT = {
   'streakSheet.showedUpA11y': { one: '{count} dia no total', other: '{count} dias no total' },
   'streakSheet.longestA11y': { one: 'Melhor sequência: {count} dia', other: 'Melhor sequência: {count} dias' },
 
-  'streakSheet.allCount': 'Dias de descanso, dias difíceis e dias de 2 minutos contam todos.',
+  'streakSheet.allCount': 'Dias difíceis e dias de 2 minutos contam todos.',
 
   'streakSheet.dayDone': '{day}: dia contado',
   'streakSheet.dayRest': '{day}: descanso',
@@ -28,4 +28,21 @@ export const STREAKS_PT = {
     one: '{count} dia seguido: pela frente',
     other: '{count} dias seguidos: pela frente',
   },
+  'streakSheet.levelsTitle': 'Duas formas de um dia contar',
+  'streakSheet.levelFull': 'Uma sessão ou uma rotina da biblioteca acende o tênis.',
+  'streakSheet.levelCheckin': 'Só o check-in acende a chama. Sua sequência continua do mesmo jeito.',
+  'streakSheet.dayCheckin': '{day}: check-in feito',
+  'streakSheet.dayTodayCheckin': 'Hoje, {day}: check-in feito',
+
+  'streakSheet.freezes': { one: '{count} proteção guardada', other: '{count} proteções guardadas' },
+  'streakSheet.freezesRule': 'Você ganha uma por semana, no máximo duas. Um dia sem nada usa uma, e sua sequência continua.',
+  'streakSheet.freezeSpent': 'Nesta semana uma proteção cobriu um dia tranquilo, e sua sequência continuou.',
+
+  'weekGoal.progress': { one: '{done} de {count} sessão nesta semana', other: '{done} de {count} sessões nesta semana' },
+  'weekGoal.inARow': { one: '{count} semana seguida', other: '{count} semanas seguidas' },
+
+  'accessory.shoe': 'A partir de hoje, o Walkito usa um distintivo de tênis.',
+  'accessory.medal': 'A partir de hoje, o Walkito usa uma medalha.',
+  'accessory.trophy': 'A partir de hoje, o Walkito tem um troféu ao lado dele.',
+  'accessory.crown': 'A partir de hoje, o Walkito usa uma coroa.',
 };

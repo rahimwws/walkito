@@ -89,7 +89,7 @@ export const CORE_IT = {
   'streak.milestoneBlurb': 'Ognuno di quei giorni è contato.',
   'streak.milestoneBigBlurb': 'Dieci giorni. È qui che un’abitudine comincia a tenere.',
   'streak.rule':
-    'Un giorno conta quando fai il check-in, ti alleni, finisci una routine della libreria o il piano ti dà un giorno di riposo.',
+    'Un giorno conta quando fai il check-in, ti alleni o finisci una routine della libreria. In un giorno di riposo basta il check-in.',
   'streak.total': { one: '{count} giorno finora.', other: '{count} giorni finora.' },
   'streak.dismiss': 'Ho capito',
   'streak.dayCount': { one: '{count} giorno', other: '{count} giorni' },

@@ -273,6 +273,17 @@ export type AnalyticsEvents = {
   /** The sticker album was opened. Nothing else: which stickers are in it follows check-ins and tests. */
   sticker_book_opened: Record<string, never>;
 
+  // ── Streak and the weekly goal ───────────────────────────────────────────
+  /** This week's plan sessions reached the week's planned days. Once per week
+   * (`weekly-goal.ts`). Counts of sessions, never what was in them. */
+  weekly_goal_met: { week_sessions: number; goal: number };
+  /** A banked freeze covered a day with nothing on it, so the streak held.
+   * Once per covered day (the ledger in `streak.ts`). */
+  freeze_spent: Record<string, never>;
+  /** Walkito's accessory for a longest streak (7 shoe, 14 medal, 30 trophy,
+   * 100 crown) was first shown on Home. Once per accessory. */
+  accessory_unlocked: { accessory: 'shoe' | 'medal' | 'trophy' | 'crown' };
+
   // ── Email ────────────────────────────────────────────────────────────────
   /** The app was opened from an email button. `email_key` names the email
    * (`welcome`, `day10_keep`…), `path` the screen it asked for. The metric that

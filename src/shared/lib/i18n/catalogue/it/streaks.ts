@@ -11,7 +11,7 @@ export const STREAKS_IT = {
   'streakSheet.showedUpA11y': { one: '{count} giorno in tutto', other: '{count} giorni in tutto' },
   'streakSheet.longestA11y': { one: 'Serie migliore: {count} giorno', other: 'Serie migliore: {count} giorni' },
 
-  'streakSheet.allCount': 'I giorni di riposo, quelli difficili e quelli da 2 minuti contano tutti.',
+  'streakSheet.allCount': 'I giorni difficili e quelli da 2 minuti contano tutti.',
 
   'streakSheet.dayDone': '{day}: giorno contato',
   'streakSheet.dayRest': '{day}: riposo',
@@ -27,4 +27,21 @@ export const STREAKS_IT = {
     one: '{count} giorno di fila: più avanti',
     other: '{count} giorni di fila: più avanti',
   },
+  'streakSheet.levelsTitle': 'Due modi in cui un giorno conta',
+  'streakSheet.levelFull': 'Una sessione o una routine della libreria accende la scarpa.',
+  'streakSheet.levelCheckin': 'Il solo check-in accende la fiamma. La tua serie continua allo stesso modo.',
+  'streakSheet.dayCheckin': '{day}: check-in fatto',
+  'streakSheet.dayTodayCheckin': 'Oggi, {day}: check-in fatto',
+
+  'streakSheet.freezes': { one: '{count} protezione da parte', other: '{count} protezioni da parte' },
+  'streakSheet.freezesRule': 'Ne guadagni una a settimana, al massimo due. Un giorno senza niente ne usa una, e la tua serie regge.',
+  'streakSheet.freezeSpent': 'Questa settimana una protezione ha coperto un giorno tranquillo, e la tua serie è andata avanti.',
+
+  'weekGoal.progress': { one: '{done} di {count} sessione questa settimana', other: '{done} di {count} sessioni questa settimana' },
+  'weekGoal.inARow': { one: '{count} settimana di fila', other: '{count} settimane di fila' },
+
+  'accessory.shoe': 'Da oggi Walkito porta un distintivo con la scarpa.',
+  'accessory.medal': 'Da oggi Walkito porta una medaglia.',
+  'accessory.trophy': 'Da oggi Walkito ha un trofeo accanto a sé.',
+  'accessory.crown': 'Da oggi Walkito porta una corona.',
 };

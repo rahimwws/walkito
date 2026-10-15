@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
+import { devSetLegState, devSetReadinessScore } from '@/pages/home';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
 import { previewNotification } from '@/entities/notifications';
-import { currentDay, devClearCheckIn, devForgetMilestones } from '@/entities/program';
+import { currentDay, devClearCheckIn, devForgetMilestones, devSetStreak, devSetWeekGoal } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
 import {
   devPreviewComeback,
@@ -18,10 +19,12 @@ import {
   setSamplePrices,
 } from '@/entities/purchase';
 import { devPreviewOfferWall } from '@/features/home-tour';
-import { armSetup, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
+import { armSetup, completeOnboarding, devRestartHomeTour, finishHomeTour, resetOnboarding } from '@/entities/session';
 
-/** `walkito.dev://?resetOnboarding` puts onboarding back in front. */
+/** `walkito.dev://?resetOnboarding` puts onboarding back in front;
+ * `?finishOnboarding` takes it away again, answers as they are. */
 const RESET_PARAM = /[?&]resetOnboarding\b/;
+const FINISH_PARAM = /[?&]finishOnboarding\b/;
 /** `walkito.dev://?previewSetup` opens the screens after the first purchase,
  * with the simulator's pretend purchase. The setup page answers
  * `?authPreview=<state>` from there. */
@@ -84,6 +87,22 @@ const REVIEW_MODE_PARAM = /[?&]previewReviewMode(?:=(\w+))?/;
  * days (Home's card); `=ended` one that ended yesterday, with the pretend
  * purchase taken away (the expiry screen); `=off` none. */
 const PASS_PARAM = /[?&]previewPass=(ending|ended|off)\b/;
+/** `walkito.dev://?readinessScore=NN` forces Home's readiness value for
+ * screenshots, `=off` lets the real one through. `?legState=<id>` forces what
+ * Walkito says about the legs (an id from `LEG_STATES`, e.g. `sore`,
+ * `worked`, `fresh`), `=off` back to the real one. */
+const READINESS_SCORE_PARAM = /[?&]readinessScore=(\d{1,3}|off)\b/;
+const LEG_STATE_PARAM = /[?&]legState=([a-z]+)/;
+/** Streak and weekly goal screenshots, in memory only (`=off` for each):
+ * `?streakPreview=<n>` a streak of n with this week's days up to today a mix
+ * of check-in and full days; `?freezes=<n>` the banked freezes (the header
+ * chip and the sheet); `?longestStreak=<n>` the longest run, which picks
+ * Walkito's accessories (7 shoe, 14 medal, 30 trophy, 100 crown);
+ * `?weekGoal=<done>/<goal>[/<weeks in a row>]` the line under the week. */
+const STREAK_PREVIEW_PARAM = /[?&]streakPreview=(\d{1,4}|off)\b/;
+const FREEZES_PARAM = /[?&]freezes=(\d{1,2}|off)\b/;
+const LONGEST_PARAM = /[?&]longestStreak=(\d{1,4}|off)\b/;
+const WEEK_GOAL_PARAM = /[?&]weekGoal=(?:(\d{1,2})\/(\d{1,2})(?:\/(\d{1,3}))?|(off)\b)/;
 /** Settings is pushed once the router has acted on the link itself, which
  * sends it to Home: pushed sooner, Home would land on top of it. */
 const CANCEL_PUSH_MS = 400;
@@ -132,6 +151,34 @@ function previewPush(url: string): void {
   });
 }
 
+/** `?streakPreview`, `?freezes`, `?longestStreak` and `?weekGoal` (see above). */
+function previewStreak(url: string): void {
+  const count = (match: RegExpExecArray | null) =>
+    match == null ? undefined : match[1] === 'off' ? null : Number(match[1]);
+  const current = count(STREAK_PREVIEW_PARAM.exec(url));
+  const freezes = count(FREEZES_PARAM.exec(url));
+  const longest = count(LONGEST_PARAM.exec(url));
+  if (current !== undefined || freezes !== undefined || longest !== undefined) {
+    devSetStreak({
+      ...(current !== undefined ? { current } : {}),
+      ...(freezes !== undefined ? { freezes } : {}),
+      ...(longest !== undefined ? { longest } : {}),
+    });
+  }
+  const goal = WEEK_GOAL_PARAM.exec(url);
+  if (goal != null) {
+    devSetWeekGoal(
+      goal[4] === 'off'
+        ? null
+        : {
+            done: Number(goal[1]),
+            goal: Number(goal[2]),
+            ...(goal[3] != null ? { weeksInARow: Number(goal[3]) } : {}),
+          },
+    );
+  }
+}
+
 /**
  * Development links for `xcrun simctl openurl`, so a screen can be reached on
  * the simulator without tapping through to it. `?resetOnboarding` brings the
@@ -143,7 +190,8 @@ function previewPush(url: string): void {
  * paywall and the offers after its "Not now" (see each above); `?previewCancel[=monthly|budget]`
  * opens the cancel flow in Settings; `?previewLimitedOffer`, `?previewPassSet`,
  * `?previewPass=ending|ended|off` and `?previewReviewMode[=off]` the 3-month
- * pass's screens. The onboarding page answers
+ * pass's screens; `?streakPreview=<n>`, `?freezes=<n>`, `?longestStreak=<n>`
+ * and `?weekGoal=<done>/<goal>[/<weeks>]` the streak and the weekly goal. The onboarding page answers
  * `?onboardingStep=<key>`, the setup page `?authPreview=<state>`.
  * The whole body folds away in a release bundle.
  */
@@ -153,6 +201,7 @@ export function useDevLinks(): void {
       const onUrl = (url: string | null) => {
         if (url == null) return;
         if (RESET_PARAM.test(url)) resetOnboarding();
+        if (FINISH_PARAM.test(url)) completeOnboarding();
         if (SETUP_PARAM.test(url)) {
           grantDevAccess();
           armSetup();
@@ -180,6 +229,11 @@ export function useDevLinks(): void {
         if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
         const pass = PASS_PARAM.exec(url);
         if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
+        const forced = READINESS_SCORE_PARAM.exec(url);
+        if (forced != null) devSetReadinessScore(forced[1] === 'off' ? null : Number(forced[1]));
+        const leg = LEG_STATE_PARAM.exec(url);
+        if (leg != null) devSetLegState(leg[1] === 'off' ? null : leg[1]);
+        previewStreak(url);
         previewLimitedOffer(url);
         previewCancel(url);
         previewPush(url);

@@ -194,10 +194,41 @@ function roleArrival(answers: Answers): CoachMoment {
  * coming back to it from an edit is a nod, in silence.
  */
 export function coachEnter(stepKey: string, answers: Answers, again = false): CoachMoment {
+  const moment = tableEnter(stepKey, answers, again);
+  // A question he speaks himself draws him centred, above its bubble, so the
+  // corner stays empty: the same pose and move, as a hero.
+  return SPEAKING_STEPS.has(stepKey) && moment.where === 'speaker' ? hero(moment.pose, moment.enter) : moment;
+}
+
+/**
+ * The plain choice questions Walkito asks himself (`SpeakingQuestion`): he
+ * stands centred, the question comes out of his bubble, and his answers to
+ * the picks play on him there rather than in the corner. Left out: the photo
+ * questions (the picture is the hero), who they are and the goal (Walkito
+ * already peeks over every answer card), the pain map, the habit, and every
+ * step that draws its own.
+ */
+export const SPEAKING_STEPS: ReadonlySet<string> = new Set([
+  'runner',
+  'side',
+  'duration',
+  'safety',
+  'tried',
+  'load',
+  'source',
+  'planDays',
+  'planMinutes',
+  'equipment',
+]);
+
+function tableEnter(stepKey: string, answers: Answers, again: boolean): CoachMoment {
   switch (stepKey) {
     case 'intro':
       return hero('idle', 'wave');
     case 'name':
+      // The name step draws him itself, waving, with the question in his
+      // speech bubble (`NameStep`).
+      return hero('idle', 'wave');
     case 'side':
     case 'planDays':
     case 'equipment':

@@ -135,7 +135,7 @@ export const HOME_EN = {
   'home.retestTaskSub': 'Checkpoint · {tests}',
   /** On the retest row once today's tests are saved: opens them again, read-only. */
   'home.seeResults': 'See results',
-  'home.nothingScheduled': 'Nothing scheduled today. Rest counts.',
+  'home.nothingScheduled': 'Nothing scheduled today. A check-in keeps your streak.',
   'home.markDone': 'Mark done',
   'home.markNotDone': 'Mark not done',
   /** A row's second line: what kind of thing it is, and how much of it. The
@@ -301,6 +301,29 @@ export const HOME_EN = {
   'home.bandHurtsBlurb': 'It is deciding things for you now.',
   'home.bandSevere': 'Severe',
   'home.bandSevereBlurb': 'Standing on it is the problem, not running.',
+  // ── Legs ready today: the readiness gauge ──
+  'home.readiness.empty': 'Check in to see today’s score',
+  'home.readiness.bandEasy': 'Easy day',
+  'home.readiness.bandSteady': 'Steady',
+  'home.readiness.bandReady': 'Ready',
+  'home.readiness.bandPush': 'Ready to push',
+  'home.readiness.partPain': 'Morning feet: {value} of 100',
+  'home.readiness.partPainMissing': 'Morning feet: not checked in yet',
+  'home.readiness.partSleep': 'Sleep: {value} of 100',
+  'home.readiness.partSleepMissing': 'Sleep: not known yet',
+  'home.readiness.partSteps': 'Steps: {value} of 100',
+  'home.readiness.partStepsMissing': 'Steps: not known yet',
+  'home.legState.unknown': 'How do your feet feel this morning?',
+  'home.legState.sore': 'Your feet are sore today. Let’s keep it gentle.',
+  'home.legState.calmer': 'Your feet feel calmer than yesterday.',
+  'home.legState.tender': 'Your feet are a bit more tender than yesterday.',
+  'home.legState.worked': 'Your legs worked hard yesterday.',
+  'home.legState.tired': 'Short night. Your legs may feel heavy.',
+  'home.legState.achy': 'Your feet are a little achy this morning.',
+  'home.legState.fine': 'Your feet feel pretty good today.',
+  'home.legState.fresh': 'Your feet feel fresh today.',
+  'home.readiness.sayTap': 'Hi! Glad you’re here.',
+  'home.readiness.mascotHint': 'Tap Walkito to say hi',
 } as const satisfies Record<string, SourceEntry>;
 
 /**

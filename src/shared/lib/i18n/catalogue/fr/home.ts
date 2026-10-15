@@ -79,7 +79,7 @@ export const HOME_FR = {
   'home.retestTask': 'Réévaluation',
   'home.retestTaskSub': 'Point d’étape · {tests}',
   'home.seeResults': 'Voir les résultats',
-  'home.nothingScheduled': 'Rien de prévu aujourd’hui. Le repos compte aussi.',
+  'home.nothingScheduled': 'Rien de prévu aujourd’hui. Ton bilan suffit pour garder ta série.',
   'home.markDone': 'Marquer comme fait',
   'home.markNotDone': 'Marquer comme non fait',
   'home.taskSubtitle': '{category} · {dose}',
@@ -204,6 +204,29 @@ export const HOME_FR = {
   'home.bandHurtsBlurb': 'C’est la douleur qui décide pour toi maintenant.',
   'home.bandSevere': 'Intense',
   'home.bandSevereBlurb': 'Le problème, c’est de tenir debout, pas de courir.',
+  // ── Legs ready today: the readiness gauge ──
+  'home.readiness.empty': 'Fais le point pour voir ton score du jour',
+  'home.readiness.bandEasy': 'Journée douce',
+  'home.readiness.bandSteady': 'Stable',
+  'home.readiness.bandReady': 'En forme',
+  'home.readiness.bandPush': 'On peut pousser',
+  'home.readiness.partPain': 'Pieds au réveil : {value} sur 100',
+  'home.readiness.partPainMissing': 'Pieds au réveil : pas encore noté',
+  'home.readiness.partSleep': 'Sommeil : {value} sur 100',
+  'home.readiness.partSleepMissing': 'Sommeil : pas encore connu',
+  'home.readiness.partSteps': 'Pas : {value} sur 100',
+  'home.readiness.partStepsMissing': 'Pas : pas encore connus',
+  'home.legState.unknown': 'Comment vont tes pieds ce matin ?',
+  'home.legState.sore': 'Tes pieds sont douloureux aujourd’hui. On y va en douceur.',
+  'home.legState.calmer': 'Tes pieds sont plus calmes qu’hier.',
+  'home.legState.tender': 'Tes pieds sont un peu plus sensibles qu’hier.',
+  'home.legState.worked': 'Tes jambes ont beaucoup travaillé hier.',
+  'home.legState.tired': 'Nuit courte. Tes jambes risquent d’être lourdes.',
+  'home.legState.achy': 'Tes pieds sont un peu endoloris ce matin.',
+  'home.legState.fine': 'Tes pieds vont plutôt bien aujourd’hui.',
+  'home.legState.fresh': 'Tes pieds sont en forme aujourd’hui.',
+  'home.readiness.sayTap': 'Coucou ! Content de te voir.',
+  'home.readiness.mascotHint': 'Touche Walkito pour lui dire bonjour',
 };
 
 export const BRIEF_FR = {
@@ -377,7 +400,7 @@ export const BRIEF_FR = {
     ],
     [
       { k: 'frame', text: 'hier, tu as pris les' },
-      { k: 'metric', icon: 'level', text: 'escaliers' },
+      { k: 'metric', icon: 'level', text: 'marches' },
       { k: 'frame', text: 'plus que d’habitude. Les escaliers tirent beaucoup sur la voûte.' },
     ],
     [

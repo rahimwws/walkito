@@ -379,18 +379,18 @@ describe('the steps with an answer of their own', () => {
   });
 
   test('the minutes arrive with the clock ringing, and every pick rings it again', () => {
-    expect(coachEnter('planMinutes', {})).toMatchObject({ where: 'speaker', pose: 'reminder', enter: RING });
+    expect(coachEnter('planMinutes', {})).toMatchObject({ where: 'hero', pose: 'reminder', enter: RING });
     expect(coachAnswer('planMinutes', { planMinutes: ['min3'] }, { planMinutes: ['min5'] })).toEqual({ shot: RING });
     expect(coachAnswer('planMinutes', { planMinutes: ['min10'] }, { planMinutes: ['min3'] })).toEqual({ shot: RING });
   });
 
-  test('the days point at their week, and a pick is a nod', () => {
-    expect(coachEnter('planDays', {})).toMatchObject({ where: 'speaker', pose: 'pointing', mirrored: true });
+  test('the days point at their week, as drawn above their bubble, and a pick is a nod', () => {
+    expect(coachEnter('planDays', {})).toMatchObject({ where: 'hero', pose: 'pointing', mirrored: false });
     expect(coachAnswer('planDays', { planDays: ['days3'] }, { planDays: ['days5'] })).toEqual({ shot: 'nod' });
   });
 
   test('nothing at home is the thumbs up; some kit is pointing with a nod', () => {
-    expect(coachEnter('equipment', {})).toMatchObject({ where: 'speaker', pose: 'pointing' });
+    expect(coachEnter('equipment', {})).toMatchObject({ where: 'hero', pose: 'pointing' });
     expect(coachAnswer('equipment', { equipment: ['none'] }, {})).toEqual({ pose: 'thumbsUp', shot: 'happy' });
     expect(coachAnswer('equipment', { equipment: ['towel'] }, { equipment: ['none'] })).toEqual({
       pose: 'pointing',

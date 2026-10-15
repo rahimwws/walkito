@@ -1,4 +1,5 @@
 import FireIcon from '@hugeicons/core-free-icons/FireIcon';
+import SnowIcon from '@hugeicons/core-free-icons/SnowIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import { BlurView } from 'expo-blur';
 import { useEffect, useState } from 'react';
@@ -22,7 +23,7 @@ import { Mascot, thumbsUpRig } from '@/shared/ui/mascot';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { Raised, faceFor, useRaisedScheme } from '@/shared/ui/raised';
 import { STAT_TILE_STAGGER_MS, StatTile } from '@/shared/ui/stat-tile';
-import { StreakWeekRaised, streakWeekNodeSize } from '@/shared/ui/streak-week';
+import { StreakGlyph, StreakWeekRaised, streakWeekNodeSize, type StreakWeekLevel } from '@/shared/ui/streak-week';
 
 /** The card's corner. Generous, because a sheet this short with a small radius
  * reads as a bar stuck to the bottom of the screen rather than as a card. */
@@ -85,6 +86,13 @@ export type StreakSheetProps = {
    * week. Without it, every counted day is a flame and the line is plain.
    */
   rest?: readonly boolean[];
+  /** Sunday-first: how each day counted (`StreakView.levels`), for the week's
+   * two tones. */
+  levels?: readonly StreakWeekLevel[];
+  /** Freezes banked (`Streak.freezes`). Omitted, the freezes block is left out. */
+  freezes?: number;
+  /** A freeze covered a day in the last seven: said kindly, once. */
+  freezeSpentThisWeek?: boolean;
 };
 
 /**
@@ -102,7 +110,18 @@ export type StreakSheetProps = {
  * a number the user can check is one they will still trust on the morning it
  * says something they did not expect.
  */
-export function StreakSheet({ visible, onClose, current, total, week, longest, rest }: StreakSheetProps) {
+export function StreakSheet({
+  visible,
+  onClose,
+  current,
+  total,
+  week,
+  longest,
+  rest,
+  levels,
+  freezes,
+  freezeSpentThisWeek = false,
+}: StreakSheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -278,7 +297,7 @@ export function StreakSheet({ visible, onClose, current, total, week, longest, r
               </View>
 
               <View style={styles.block}>
-                <StreakWeekRaised done={week} rest={rest} size={nodeSize} />
+                <StreakWeekRaised done={week} rest={rest} levels={levels} size={nodeSize} />
               </View>
 
               {/* Showing up and runs only: never a pain figure, never a test. */}
@@ -311,8 +330,9 @@ export function StreakSheet({ visible, onClose, current, total, week, longest, r
               </View>
 
               {/* What counts, said calmly. The rule is the thing the number
-                  cannot say on its own, and "a check-in or a session or a rest
-                  day" is a far kinder rule than the one a user assumes. No
+                  cannot say on its own, and "a check-in is enough, rest
+                  days included" is a far kinder rule than the one a user
+                  assumes. No
                   figure of its own: the thumbs up above is the sheet's one
                   mascot, and the moon on the row already marks a rest day. */}
               <View style={[styles.block, styles.calm, { backgroundColor: colors.background }]}>
@@ -323,6 +343,45 @@ export function StreakSheet({ visible, onClose, current, total, week, longest, r
                   <Text style={[styles.calmRule, { color: meter.caption }]}>{t('streak.rule')}</Text>
                 </View>
               </View>
+
+              {/* The two levels, drawn with the strip's own glyphs so the
+                  sheet explains what Home shows. Both lit the same: a check-in
+                  is not a lesser day. */}
+              <View style={[styles.block, styles.calm, styles.column, { backgroundColor: colors.background }]}>
+                <Text style={[styles.calmTitle, { color: colors.foreground }]}>{t('streakSheet.levelsTitle')}</Text>
+                <View style={styles.levelRow}>
+                  <StreakGlyph level="full" size={26} color={accents[scheme].orange.fill} />
+                  <Text style={[styles.calmRule, styles.levelText, { color: meter.caption }]}>
+                    {t('streakSheet.levelFull')}
+                  </Text>
+                </View>
+                <View style={styles.levelRow}>
+                  <StreakGlyph level="checkin" size={26} color={accents[scheme].orange.fill} />
+                  <Text style={[styles.calmRule, styles.levelText, { color: meter.caption }]}>
+                    {t('streakSheet.levelCheckin')}
+                  </Text>
+                </View>
+              </View>
+
+              {/* Freezes: how many are banked, how they come and go, and, when
+                  one was used this week, that it kept the run going. Never a
+                  word about the day it covered. */}
+              {freezes != null && (
+                <View style={[styles.block, styles.calm, { backgroundColor: colors.background }]}>
+                  <View style={[styles.freezeBadge, { backgroundColor: accents[scheme].blue.track }]}>
+                    <HugeiconsIcon icon={SnowIcon} size={20} color={accents[scheme].blue.fill} strokeWidth={2.2} />
+                  </View>
+                  <View style={styles.calmText}>
+                    <Text style={[styles.calmTitle, { color: colors.foreground }]}>
+                      {t('streakSheet.freezes', { count: freezes })}
+                    </Text>
+                    <Text style={[styles.calmRule, { color: meter.caption }]}>{t('streakSheet.freezesRule')}</Text>
+                    {freezeSpentThisWeek && (
+                      <Text style={[styles.calmRule, { color: colors.foreground }]}>{t('streakSheet.freezeSpent')}</Text>
+                    )}
+                  </View>
+                </View>
+              )}
 
               {/* The ladder. Reached rungs stand up in orange and stay reached
                   whatever the run does next, so it counts from the best run;
@@ -467,6 +526,26 @@ const styles = StyleSheet.create({
   calmText: {
     flex: 1,
     gap: 4,
+  },
+  column: {
+    flexDirection: 'column',
+    alignItems: 'stretch',
+  },
+  levelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  levelText: {
+    flex: 1,
+  },
+  freezeBadge: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'flex-start',
   },
   calmTitle: fonts.semibold(15, -0.1),
   calmRule: { ...fonts.medium(13), lineHeight: 18 },

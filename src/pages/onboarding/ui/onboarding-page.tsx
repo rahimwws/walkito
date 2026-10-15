@@ -74,6 +74,7 @@ import {
   coachLine,
   coachMirrored,
   reactionAnalyticsId,
+  SPEAKING_STEPS,
   type CoachMoment,
   type CoachReply,
 } from "../model/coach";
@@ -150,6 +151,7 @@ import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
 import { OutlookStep } from "./outlook-step";
 import { PainMapStep } from "./pain-map-step";
+import { SpeakingQuestion } from "./speaking-question";
 import { TimerGauge, WeekGauge } from "./plan-gauges";
 import { QuestionNote, QuestionPhoto } from "./question-photo";
 import { ReactionStep } from "./reaction-step";
@@ -302,6 +304,9 @@ function list(answer: Answer | undefined): string[] {
   return Array.isArray(answer) ? answer : [];
 }
 
+/** Walkito asking a choice question himself: small enough for the answers to fit. */
+const SPEAKING_MASCOT = 96;
+
 /**
  * The onboarding flow: one surface whose contents change.
  *
@@ -317,6 +322,7 @@ function list(answer: Answer | undefined): string[] {
  * first week, and the contract; then Home, where the paywall rises. Signing
  * in, Health and the watch come after the first purchase (`pages/setup`).
  */
+
 export function OnboardingPage() {
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
@@ -629,6 +635,10 @@ export function OnboardingPage() {
   const lastNod = useRef(0);
   /** The name question's thumbs up: once a visit. */
   const namedThisVisit = useRef(false);
+  /** He asks this question himself, centred (`SPEAKING_STEPS`): the corner
+   * stays empty, and his moves play on him there. */
+  const speaking = SPEAKING_STEPS.has(step.key);
+  const speakingNow = useRef(speaking);
 
   /** A move for the coach in the corner, if he is there. */
   const playCoach = (
@@ -636,7 +646,8 @@ export function OnboardingPage() {
     delay = 0,
     sound?: CoachReply["sound"],
   ) => {
-    if (coachNow.current.moment.where !== "speaker") return;
+    if (coachNow.current.moment.where !== "speaker" && !speakingNow.current)
+      return;
     shotSerial.current += 1;
     setCoachShot({ move: shot, key: shotSerial.current, delay, sound });
   };
@@ -650,7 +661,11 @@ export function OnboardingPage() {
    */
   const applyCoach = (reply: CoachReply | null) => {
     const now = coachNow.current;
-    if (reply == null || now.moment.where !== "speaker") return;
+    if (
+      reply == null ||
+      (now.moment.where !== "speaker" && !speakingNow.current)
+    )
+      return;
     if (reply.pose != null && reply.pose !== now.moment.pose) {
       const next = {
         ...now,
@@ -682,6 +697,7 @@ export function OnboardingPage() {
       size: sizeFor(key),
     };
     coachNow.current = placed;
+    speakingNow.current = SPEAKING_STEPS.has(key);
     setCoach(placed);
     lastNod.current = 0;
     namedThisVisit.current = false;
@@ -690,7 +706,10 @@ export function OnboardingPage() {
     // Made before halfway, so the run's first cheer is not the sound that
     // waits for its file. Kept once made, so asking again costs nothing.
     if (STEPS[next].act >= 2) preloadMascotSounds(["cheer", "boing"]);
-    if (moment.where === "speaker" && moment.enter != null)
+    if (
+      (moment.where === "speaker" || speakingNow.current) &&
+      moment.enter != null
+    )
       playCoach(moment.enter, ENTER_SHOT_MS);
   };
   const arriveRef = useRef(arrive);
@@ -712,12 +731,6 @@ export function OnboardingPage() {
 
   /** The line under the question, for the questions that get one. */
   const inline = (() => {
-    if (step.kind === "name" && settledName.length > 1) {
-      return {
-        id: "name",
-        text: t("onboarding.react.nameNamed", { name: settledName }),
-      };
-    }
     if (step.kind === "pain-map" && list(answer).length > 0) {
       const found = areaReaction(painless ? "none" : area);
       return found != null ? { id: found.key, text: t(found.text) } : null;
@@ -734,7 +747,8 @@ export function OnboardingPage() {
   })();
   /** In the coach's bubble: the answer said back, or else his own line (a
    * beat as a part of the flow begins, "try it now"). */
-  const coachSays = speakerHere ? coachLine(step.key, answers) : null;
+  const coachSays =
+    speakerHere || speaking ? coachLine(step.key, answers) : null;
   const bubble =
     inline ??
     (coachSays != null ? { id: `coach_${step.key}`, text: say(coachSays) } : null);
@@ -772,6 +786,8 @@ export function OnboardingPage() {
     step.kind === "reaction";
   /** Screens that set their own heading rather than the shared question block. */
   const ownHeading =
+    step.kind === "name" ||
+    speaking ||
     step.kind === "notify" ||
     step.kind === "building" ||
     step.kind === "reaction" ||
@@ -1201,7 +1217,7 @@ export function OnboardingPage() {
 
               {/* What the coach says, above the answers: the answer said back,
                   or his own line. Keyed on the step, so each one arrives. */}
-              {bubble != null && (
+              {bubble != null && !speaking && (
                 <CoachBubble
                   key={step.key}
                   id={bubble.id}
@@ -1215,6 +1231,8 @@ export function OnboardingPage() {
               {step.kind === "name" && (
                 <Animated.View layout={MAKE_ROOM} style={styles.scroll}>
                   <NameStep
+                    question={heading}
+                    paused={signIn}
                     value={typeof answer === "string" ? answer : ""}
                     placeholder={step.placeholder(t)}
                     onChange={(next) => {
@@ -1233,6 +1251,18 @@ export function OnboardingPage() {
                   contentContainerStyle={styles.scrollContent}
                   showsVerticalScrollIndicator={false}
                 >
+                  {speaking && (
+                    <SpeakingQuestion
+                      question={heading}
+                      rig={rigFor(coach.moment.pose)}
+                      rigKey={coach.moment.pose}
+                      size={SPEAKING_MASCOT}
+                      shot={coachShot}
+                      caption={bubble?.text ?? null}
+                      paused={signIn || habitPicking || clipViewerOpen}
+                      style={styles.speaking}
+                    />
+                  )}
                   {step.hero != null && QUESTION_PHOTOS[step.key] != null && (
                     <QuestionPhoto
                       image={QUESTION_PHOTOS[step.key]}
@@ -1519,6 +1549,7 @@ const styles = StyleSheet.create({
   },
   /** Under the question, over the answers; the tail rises into the gap. */
   reaction: { marginTop: 12 },
+  speaking: { marginBottom: 16 },
   /** With the passport folded under it, which brings its own gap. */
   /** The body and the coach beside it. */
   stage: {

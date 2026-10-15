@@ -76,7 +76,7 @@ export const PROGRESS_RU = {
   'progress.goalsTitle': 'Цели',
   'progress.goalsEmpty': 'Цели появятся после первого теста.',
   'progress.goalReached': 'Достигнута',
-  'progress.streakCaption': 'Дни отдыха, тяжёлые дни и дни по 2 минуты тоже считаются.',
+  'progress.streakCaption': 'Тяжёлые дни и дни по 2 минуты тоже считаются.',
   // ── The redesigned screen ────────────────────────────────────────────────
   'progress.avgWeek': 'В среднем за последние 7 дней',
   'progress.avgMonth': 'В среднем за последний месяц',

@@ -1,32 +1,28 @@
+import SnowIcon from '@hugeicons/core-free-icons/SnowIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import { useIsFocused, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Animated, { runOnJS, useAnimatedReaction, useDerivedValue, useSharedValue } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
   BIG_MILESTONE,
-  TODAY_INDEX,
   currentDay,
   markMilestoneSeen,
   milestoneFor,
   milestoneSeen,
   painOn,
-  planSessionDone,
-  toDateKey,
-  todayKey,
   useStreak,
-  weekAttendance,
+  useWeeklyGoal,
 } from '@/entities/program';
 
-import { weekFacts } from '../model/week-facts';
 import { HomeTour, type DayOneRun } from '@/features/home-tour';
 import { useAccessLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import { useHomeTourState } from '@/entities/session';
 import { useHealthSignals } from '@/entities/health';
-import { firstName, useIntake, useProfileName } from '@/entities/profile';
-import { accents } from '@/shared/config';
-import { useLanguage, useT } from '@/shared/lib/i18n';
+import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { usePlanOver, useProgram } from '@/shared/lib/program';
 import { useSpotlightAnchor, useSpotlightScroller } from '@/shared/lib/spotlight';
@@ -37,7 +33,6 @@ import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
 import { IntroReveal, useSplashRevealed } from '@/shared/ui/splash';
 
-import { briefTokens } from '../model/brief';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { holdReview } from '@/shared/lib/review';
@@ -46,36 +41,25 @@ import { Confetti, type ConfettiOrigin } from '@/shared/ui/confetti';
 import { OverlayPortal } from '@/shared/ui/overlay-host';
 import { DailyStack } from './daily-stack';
 import { DayOneSession } from './day-one-session';
-import { GlideHeight } from './glide-height';
 import { MilestoneMascot } from './milestone-mascot';
 import { CHECK_IN_GAP, PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
 import { PassEndingCard } from './pass-ending-card';
-import { DailyBrief } from '@/shared/ui/daily-brief';
-import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+import { legState, readinessParts, readinessScore } from '../model/readiness';
+import { useDevReadiness } from '../model/readiness-dev';
+import { ReadinessGauge } from './readiness-gauge';
+import { WeekGoalLine } from './week-goal-line';
+import {
+  ACCESSORY_ART,
+  ACCESSORY_KEYS,
+  accessoriesFor,
+  accessoryAt,
+  useAccessoryUnlocks,
+  type AccessoryId,
+} from '../model/accessories';
 
-/**
- * Attendance re-ordered for `StreakWeek`, which counts from Sunday.
- *
- * The model hands back a Monday-first week, because that is how the sheet and
- * the rest of the app read one. Rotating here rather than teaching the model
- * two conventions keeps the reordering visible at the one place it happens —
- * an off-by-one in a week strip is the kind of bug that looks like correct
- * output right up until the weekend.
- */
-/**
- * The week the strip below the header draws.
- *
- * Asked for Sunday-first rather than rotated out of the Monday-first one the
- * model keeps. A rotation looks right and is not: the Sunday sitting at the end
- * of a Monday-first week is the Sunday still to come, so moving it to the front
- * put a future day in the slot that belongs to the Sunday just gone — which
- * then rendered as a day the user had missed.
- */
-function stripWeek(now: number): boolean[] {
-  return weekAttendance(now, 0).map((day) => day.attended);
-}
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 /**
  * The title the header takes on while the program is up: the weekday over the
@@ -135,6 +119,12 @@ export function HomePage() {
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
+  /** This week's plan sessions against the plan's days, under the week. */
+  const weekGoal = useWeeklyGoal();
+  /** What Walkito wears, by the longest run: tracked the first time each is
+   * shown, never for a pretend streak from a dev link. */
+  const accessories = accessoriesFor(streak.longest);
+  useAccessoryUnlocks(accessories, streak.preview !== true);
   /**
    * A streak milestone reached and not yet marked — section 6 of the plan
    * spec. Each is shown once, ever; ten gets the confetti.
@@ -195,6 +185,8 @@ export function HomePage() {
     }, MILESTONE_AFTER_MS);
     return () => clearTimeout(timer);
   }, [milestone, homeClear, milestoneOpen]);
+  /** What the milestone on the sheet earns him, if anything (7, 30, 100). */
+  const milestoneAccessory = sheetMilestone != null ? accessoryAt(sheetMilestone) : null;
   const closeMilestone = () => {
     if (shownMilestone != null) markMilestoneSeen(shownMilestone);
     setShownMilestone(null);
@@ -218,26 +210,28 @@ export function HomePage() {
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
   const [burstFrom, setBurstFrom] = useState<ConfettiOrigin | null>(null);
-  const name = useProfileName();
   const signals = useHealthSignals();
-  /** What they told us in onboarding — the goal and sport the brief can speak
-   * to. Null for anyone who installed before the answers were kept. */
-  const intake = useIntake();
-  /** The cache outlives midnight. Until the first refresh of the day lands,
-   * its "today" figures are yesterday's, and quoting them as today's would be
-   * wrong by a whole day of walking. */
-  const signalsAreToday = signals.asOf === toDateKey(new Date());
-  /** Subscribed to, not read once: the sentence is rebuilt in the same commit
-   * as the switch is flipped, rather than on next launch. */
-  const language = useLanguage();
-  /** What this week's plan has to say to the morning line. */
-  const planHealth = useHealthSignals();
-  const plan = weekFacts(language, {
-    stepsYesterday: planHealth.stepsYesterday,
-    steps28Avg: planHealth.stepsBaseline,
-    sleepHours: planHealth.sleepLastNightMin == null ? null : planHealth.sleepLastNightMin / 60,
+  /** "Legs ready today": this morning's pain, last night's sleep and
+   * yesterday's steps against their usual. Shown, never sent anywhere. */
+  const devReadiness = useDevReadiness();
+  const readinessInput = {
+    pain: painOn(currentDay()),
+    sleepHours: signals.sleepLastNightMin == null ? null : signals.sleepLastNightMin / 60,
+    stepsYesterday: signals.stepsYesterday,
+    stepsUsual: signals.stepsBaseline,
+  };
+  const devForced = __DEV__ && devReadiness.score != null;
+  const readiness = devForced ? devReadiness.score : readinessScore(readinessInput);
+  const readinessPieces = readinessParts(readinessInput);
+  /** What Walkito says: the legs right now, against yesterday's morning. */
+  const realLeg = legState({
+    pain: readinessInput.pain,
+    painYesterday: painOn(currentDay() - 1),
+    stepsYesterday: signals.stepsYesterday,
+    stepsUsual: signals.stepsBaseline,
+    sleepMinutes: signals.sleepLastNightMin,
   });
-
+  const leg = __DEV__ && devReadiness.leg != null ? { ...realLeg, id: devReadiness.leg } : realLeg;
   return (
     <View style={styles.screen}>
       {/* Outside the scroller on purpose. Inside, it would scroll away with
@@ -272,6 +266,18 @@ export function HomePage() {
             streak={streak.current}
             onStreakPress={() => setStreakOpen(true)}
             streakGlyph={<FluentIcon name="fire" size={22} />}
+            // Banked freezes, beside the count, only while there is one.
+            streakAccessory={
+              streak.freezes > 0 ? (
+                <View style={styles.freezes}>
+                  <HugeiconsIcon icon={SnowIcon} size={16} color={accents[scheme].blue.fill} strokeWidth={2.2} />
+                  <Text style={[styles.freezeCount, { color: palette[scheme].foreground }]}>{streak.freezes}</Text>
+                </View>
+              ) : undefined
+            }
+            streakAccessoryLabel={
+              streak.freezes > 0 ? t('streakSheet.freezes', { count: streak.freezes }) : undefined
+            }
             swapProgress={program?.progress}
             centre={todayLines()}
             onProfile={() => router.push('/profile')}
@@ -280,72 +286,28 @@ export function HomePage() {
 
         {/* The week, right under the header: it is what tells the user which
             day this screen is about now that the date has gone. */}
-        {/* The week and the morning line are the tour's first stop: what
-            Home says about the feet. One view around both, for it to light. */}
-        <View ref={overviewAnchor} collapsable={false}>
+        <View>
           <IntroReveal order={1} style={styles.week}>
-            <StreakWeek done={stripWeek(Date.now())} />
+            <StreakWeek done={streak.strip} levels={streak.levels} />
+            {/* The week's plan sessions, a count and never a verdict. */}
+            <View style={styles.weekGoal}>
+              <WeekGoalLine goal={weekGoal} />
+            </View>
           </IntroReveal>
 
-          {/* Under the week: one says which day, the other says how that day is
-            going. */}
-          {/* Masked in session recordings: it says the user's name, their pain
-            and their Apple Health numbers. */}
-          <IntroReveal order={2} style={styles.brief} {...REPLAY_MASK}>
-            {/* Its sentence can change with the answer below it (two lines become
-                three): the change of height eases rather than jumping the page. */}
-            <GlideHeight>
-            <DailyBrief
-              tokens={briefTokens(
-                {
-                  name: firstName(name),
-                  // Read at render: Home re-renders on focus and on every log
-                  // write, which is often enough for the greeting to keep up.
-                  hour: new Date().getHours(),
-                  cursor: TODAY_INDEX,
-                  // Null until they have actually answered, and never zero. The
-                  // ladder reads null as "not asked yet" and falls through to the
-                  // day's own state; a zero would be the app deciding on their
-                  // behalf that nothing hurts this morning. Read on every render
-                  // rather than held — the check-in writes the log, and this
-                  // component is already re-rendered by `useStreak` when it does.
-                  todayPain: painOn(currentDay()),
-                  // Today's session, not today's check-in. This was the check-in,
-                  // so answering it switched the line to "done for today" before
-                  // any work was done - and, once a test day's line learned to
-                  // stop asking for tests that are done, it would have stopped
-                  // asking the moment the question below was answered. The same
-                  // answer Plan and the list underneath read.
-                  doneToday: planSessionDone(todayKey()),
-                  // The same figure the header shows. Two hand-written sevens is
-                  // what this replaces: a streak that disagreed with itself
-                  // between the capsule and the sentence directly under it.
-                  streak: streak.current,
-                  // Read from the local cache, never from HealthKit. The pipeline
-                  // fills that cache in the background; a morning line that
-                  // awaited a Health query would leave the screen blank on every
-                  // cold start, and would be blank forever for the users who
-                  // granted nothing.
-                  health: signals,
-                  // Both learned from the person's own history rather than set:
-                  // the hours are derived from when their steps actually
-                  // happened, and the limit is the hour past which their own next
-                  // mornings got worse. Null until there is enough history to
-                  // say, which is the honest answer and the one that keeps the
-                  // line silent.
-                  hoursOnFeet: signalsAreToday ? signals.hoursOnFeetToday : null,
-                  // Only past the mark does this say anything, and then it asks
-                  // how the heel is — the check-in card sits right below.
-                  stepsToday: signalsAreToday ? signals.stepsToday : null,
-                  onFeetThreshold: signals.onFeetThreshold,
-                  goal: intake?.goal ?? null,
-                  sport: intake?.sport ?? null,
-                  ...plan,
-                },
-                language,
-              )}
+          {/* Under the week, the morning's readiness with Walkito, who says
+            how the legs are this morning in his speech bubble. Masked: it is made of pain,
+            sleep, steps and Apple Health numbers. */}
+          {/* Walkito and his bubble are the tour's first stop: how the
+              feet are this morning, said by him. */}
+          <IntroReveal order={2} style={styles.gauge} {...REPLAY_MASK}>
+            <ReadinessGauge
+              score={readiness}
+              parts={readinessPieces}
+              leg={leg}
+              accessories={accessories}
+              stageRef={overviewAnchor}
             />
-            </GlideHeight>
           </IntroReveal>
 
           {/* The check-in above the list. Until it is answered it is the big
@@ -409,8 +371,13 @@ export function HomePage() {
             // thumbs up for three and seven, the jump for ten, the trophy for a
             // month and a hundred. Paused while the sheet leaves.
             mascot={<MilestoneMascot days={sheetMilestone} paused={!milestoneOpen} />}
-            onClose={closeMilestone}
-          />
+            onClose={closeMilestone}>
+            {/* The accessory this milestone earns, when it earns one: what he
+                will wear beside the gauge from now on. */}
+            {milestoneAccessory != null && (
+              <MilestoneAccessory id={milestoneAccessory} label={t(ACCESSORY_KEYS[milestoneAccessory])} />
+            )}
+          </CelebrationSheet>
         </OverlayPortal>
       )}
 
@@ -431,8 +398,22 @@ export function HomePage() {
         total={streak.total}
         longest={streak.longest}
         week={streak.strip}
-        rest={weekAttendance(Date.now(), 0).map((day) => day.rest)}
+        rest={streak.rest}
+        levels={streak.levels}
+        freezes={streak.freezes}
+        freezeSpentThisWeek={streak.freezeSpentThisWeek}
       />
+    </View>
+  );
+}
+
+/** The accessory a milestone earns, on its sheet: the drawing and one line. */
+function MilestoneAccessory({ id, label }: { id: AccessoryId; label: string }) {
+  const scheme = useColorScheme();
+  return (
+    <View style={[styles.accessoryRow, { backgroundColor: palette[scheme].background }]} accessible accessibilityRole="text">
+      <FluentIcon name={ACCESSORY_ART[id]} size={28} />
+      <Text style={[styles.accessoryText, { color: meterColors[scheme].ink }]}>{label}</Text>
     </View>
   );
 }
@@ -444,12 +425,27 @@ const styles = StyleSheet.create({
   week: {
     marginTop: 20,
   },
-  /** Close under the week. With no card around the sentence the only thing
-   * separating it from its neighbours is space — but it is the first thing the
-   * screen has to say, and pushed down it started reading as a footnote to the
-   * strip above rather than as the opening line. */
-  brief: {
-    marginTop: 18,
+  weekGoal: {
+    marginTop: 12,
+  },
+  freezes: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 3,
+  },
+  freezeCount: fonts.semibold(16),
+  accessoryRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    padding: 12,
+    borderRadius: 18,
+    borderCurve: 'continuous',
+    marginTop: 12,
+  },
+  accessoryText: { ...fonts.semibold(15, -0.1), flex: 1 },
+  gauge: {
+    marginTop: 20,
   },
   check: {
     marginTop: 40,

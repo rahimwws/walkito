@@ -88,7 +88,7 @@ export const CORE_DE = {
   'streak.milestoneBlurb': 'Jeder einzelne dieser Tage hat gezählt.',
   'streak.milestoneBigBlurb': 'Zehn Tage. Ab hier beginnt eine Gewohnheit zu halten.',
   'streak.rule':
-    'Ein Tag zählt, wenn du eincheckst, trainierst, eine Routine aus der Bibliothek beendest oder der Plan dir einen Ruhetag gibt.',
+    'Ein Tag zählt, wenn du eincheckst, trainierst oder eine Routine aus der Bibliothek beendest. An einem Ruhetag reicht das Einchecken.',
   'streak.total': { one: 'Bisher {count} Tag.', other: 'Bisher {count} Tage.' },
   'streak.dismiss': 'Verstanden',
   'streak.dayCount': { one: '{count} Tag', other: '{count} Tage' },
