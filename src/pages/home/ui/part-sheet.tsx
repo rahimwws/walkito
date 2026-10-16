@@ -1,4 +1,5 @@
 import { BlurView } from 'expo-blur';
+import * as Haptics from 'expo-haptics';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Modal, Platform, Pressable, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -29,6 +30,7 @@ import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/
 import { useLanguage, useT, type Language, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
+import { GradientText } from '@/shared/ui/gradient-text';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { ReplayMask } from '@/shared/ui/replay-mask';
 
@@ -188,7 +190,16 @@ type PartView = {
   history?: History;
   /** What the plan does with this part, in one line. */
   use: string;
+  /** What today's reading means against the person's own recent days, in one
+   * line, or null without enough of them. Said first, in the gradient. */
+  insight: string | null;
 };
+
+/** The mean of the known values among the last `n` before the latest. */
+function priorMean(values: readonly (number | null)[], n: number): number | null {
+  const prior = values.slice(-(n + 1), -1).filter((v): v is number => v != null);
+  return prior.length >= 3 ? prior.reduce((a, b) => a + b, 0) / prior.length : null;
+}
 
 type History = {
   values: (number | null)[];
@@ -198,6 +209,9 @@ type History = {
   guide?: number;
   /** Worded in the part's own unit, for the average and the usual. */
   format: (value: number) => string;
+  /** A single day's value, when it reads better exact than `format` rounds
+   * it (steps). */
+  formatDay?: (value: number) => string;
   usual?: number | null;
 };
 
@@ -288,6 +302,14 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
         ? { values, endsDaysAgo: 0, format: (v) => t('home.readinessInfo.painAvg', { value: decimal(v, language) }) }
         : undefined,
       use: t('home.readinessInfo.usePain'),
+      insight: (() => {
+        const avg = priorMean(values, 7);
+        if (pain == null || avg == null) return null;
+        const shown = decimal(avg, language);
+        if (pain <= avg - 1) return t('home.readinessInfo.painCalmer', { avg: shown });
+        if (pain >= avg + 1) return t('home.readinessInfo.painSorer', { avg: shown });
+        return t('home.readinessInfo.painUsual', { avg: shown });
+      })(),
     };
   }
 
@@ -320,6 +342,14 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
         ? { values, endsDaysAgo: 0, guide: 8 * 60, format: (v) => sleepText(t, v) }
         : undefined,
       use: t('home.readinessInfo.useSleep'),
+      insight: (() => {
+        const avg = priorMean(values, 7);
+        if (minutes == null || avg == null) return null;
+        const shown = sleepText(t, avg);
+        if (minutes <= avg - 30) return t('home.readinessInfo.sleepShorter', { avg: shown });
+        if (minutes >= avg + 30) return t('home.readinessInfo.sleepLonger', { avg: shown });
+        return t('home.readinessInfo.sleepUsualNight', { avg: shown });
+      })(),
     };
   }
 
@@ -361,9 +391,18 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
           guide: usual ?? undefined,
           usual,
           format: (v) => grouped(Math.round(v / 100) * 100, language),
+          formatDay: (v) => grouped(Math.round(v), language),
         }
       : undefined,
     use: t('home.readinessInfo.useSteps'),
+    insight:
+      yesterday == null || usual == null || usualShown == null
+        ? null
+        : yesterday / usual >= 1.4
+          ? t('home.readinessInfo.stepsBigDay', { ratio: decimal(yesterday / usual, language) })
+          : yesterday / usual < 0.7
+            ? t('home.readinessInfo.stepsLightDay', { usual: usualShown })
+            : t('home.readinessInfo.stepsUsualDay', { usual: usualShown }),
   };
 }
 
@@ -408,6 +447,21 @@ function PartBody({ part, details }: { part: ReadinessPartKey; details: Readines
       </Text>
       {view.value != null && (
         <View style={[styles.use, { backgroundColor: meter.iconTile }]}>
+          {/* What today means, first and lit: the one line worth reading. The
+              gradient is the part's own accent; it marks the line, never
+              judges the value. */}
+          {view.insight != null && (
+            <>
+              <Text style={[styles.useLabel, { color: meter.label }]}>{t('home.readinessInfo.insightLabel')}</Text>
+              <GradientText
+                textStyle={styles.insight}
+                colors={[accent.fill, accents[scheme][INSIGHT_TO[view.accent]].fill]}
+                style={styles.insightBox}>
+                {view.insight}
+              </GradientText>
+              <View style={[styles.useRule, { backgroundColor: meter.divider }]} />
+            </>
+          )}
           <Text style={[styles.useLabel, { color: meter.label }]}>{t('home.readinessInfo.useLabel')}</Text>
           <Text style={[styles.useText, { color: meter.ink }]}>{view.use}</Text>
         </View>
@@ -415,6 +469,16 @@ function PartBody({ part, details }: { part: ReadinessPartKey; details: Readines
     </View>
   );
 }
+
+/** Where each part's insight gradient runs to, from its own accent. */
+const INSIGHT_TO: Record<AccentName, AccentName> = {
+  orange: 'violet',
+  violet: 'blue',
+  teal: 'violet',
+  amber: 'violet',
+  blue: 'violet',
+  red: 'violet',
+};
 
 function zoneAt(zones: Zone[], at: number): Zone {
   return zones.find((zone) => at < zone.to) ?? zones[zones.length - 1];
@@ -544,6 +608,17 @@ function HistoryChart({ history, accent }: { history: History; accent: AccentNam
   const top = Math.max(1, ...known, history.guide ?? 0);
   /** Every fifth label on the month, so the numbers do not crowd. */
   const labelled = (i: number) => range === 7 || (values.length - 1 - i) % 5 === 0;
+  /** The day tapped, as an index into `values`; the latest until one is. */
+  const [picked, setPicked] = useState<number | null>(null);
+  const selected = picked != null && picked < values.length ? picked : values.length - 1;
+  const daysAgo = (i: number) => history.endsDaysAgo + values.length - 1 - i;
+  const pickedValue = values[selected];
+  const pickedDate = (() => {
+    const date = new Date();
+    date.setHours(12, 0, 0, 0);
+    date.setTime(date.getTime() - daysAgo(selected) * DAY_MS);
+    return date.toLocaleDateString(language, { weekday: 'short', day: 'numeric', month: 'short' });
+  })();
 
   return (
     <View style={styles.week}>
@@ -557,7 +632,10 @@ function HistoryChart({ history, accent }: { history: History; accent: AccentNam
               key={r}
               accessibilityRole="radio"
               accessibilityState={{ selected: range === r }}
-              onPress={() => setRange(r)}
+              onPress={() => {
+                setRange(r);
+                setPicked(null);
+              }}
               style={[styles.range, range === r && { backgroundColor: palette[scheme].card }]}>
               <Text style={[styles.rangeText, { color: range === r ? meter.ink : meter.caption }]}>
                 {r === 7 ? t('home.readinessInfo.range7') : t('home.readinessInfo.range30')}
@@ -567,14 +645,31 @@ function HistoryChart({ history, accent }: { history: History; accent: AccentNam
         </View>
       </View>
 
-      <View style={styles.weekBars} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+      {/* The day under the finger: its date and its value, in words. */}
+      <View style={styles.callout} accessibilityLiveRegion="polite">
+        <Text style={[styles.calloutDate, { color: meter.label }]}>{pickedDate}</Text>
+        <Text style={[styles.calloutValue, { color: pickedValue == null ? meter.caption : meter.ink }]}>
+          {pickedValue == null ? t('home.readinessInfo.noReading') : (history.formatDay ?? history.format)(pickedValue)}
+        </Text>
+      </View>
+
+      <View style={styles.weekBars}>
         {history.guide != null && history.guide > 0 && (
           <View style={[styles.guide, { bottom: (Math.min(history.guide, top) / top) * CHART_H, backgroundColor: meter.track }]} />
         )}
         {values.map((value, i) => {
-          const last = i === values.length - 1;
+          const last = i === selected;
           return (
-            <View key={i} style={[styles.weekColumn, { gap: range === 7 ? 8 : 2 }]}>
+            <Pressable
+              key={i}
+              accessibilityRole="button"
+              accessibilityLabel={value == null ? t('home.readinessInfo.noReading') : (history.formatDay ?? history.format)(value)}
+              accessibilityState={{ selected: last }}
+              onPress={() => {
+                void Haptics.selectionAsync();
+                setPicked(i);
+              }}
+              style={[styles.weekColumn, styles.barHit, { gap: range === 7 ? 8 : 2 }]}>
               {value == null ? (
                 <View style={[styles.stub, { backgroundColor: meter.track, width: range === 7 ? 6 : 3 }]} />
               ) : (
@@ -590,7 +685,7 @@ function HistoryChart({ history, accent }: { history: History; accent: AccentNam
                   ]}
                 />
               )}
-            </View>
+            </Pressable>
           );
         })}
       </View>
@@ -855,6 +950,10 @@ const styles = StyleSheet.create({
     height: CHART_H,
   },
   dayLabels: { flexDirection: 'row', marginTop: -2 },
+  callout: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 },
+  calloutDate: fonts.semibold(13),
+  calloutValue: fonts.bold(15),
+  barHit: { height: '100%' },
   dayLabelSlot: { flex: 1, alignItems: 'center', overflow: 'visible' },
   dayLabel: { ...fonts.medium(10), width: 24, textAlign: 'center' },
   stats: { flexDirection: 'row', justifyContent: 'space-between', gap: 8 },
@@ -862,6 +961,9 @@ const styles = StyleSheet.create({
   use: { borderRadius: 16, borderCurve: 'continuous', padding: 12, marginTop: -6 },
   useLabel: fonts.semibold(12),
   useText: { ...fonts.medium(14), lineHeight: 19, marginTop: 2 },
+  insight: { ...fonts.bold(18, -0.3), lineHeight: 23 },
+  insightBox: { marginTop: 3 },
+  useRule: { height: StyleSheet.hairlineWidth, marginVertical: 10 },
   weekColumn: {
     flex: 1,
     alignItems: 'center',
