@@ -32,13 +32,17 @@ export {
   BIG_RUN_RATIO,
   SLEEP_MEAN_MIN,
   RHR_ELEVATED_BPM,
+  BIG_SPORT_MIN,
   baselineFor,
   onFeetThresholdFrom,
   signalsFrom,
+  todayHealthInputs,
+  withOnFeetHours,
   type Baseline,
   type DailyMetric,
   type DataAvailability,
   type HealthSignals,
+  type StrideTrend,
   type WalkingTrend,
   type SignalOptions,
 } from './model/metrics';
@@ -50,6 +54,7 @@ export {
   recomputeSignals,
   resetHealthCache,
   setBilateral,
+  strideWasShorter,
   useHealthSignals,
   type HealthCache,
 } from './model/cache';
@@ -59,3 +64,5 @@ export {
   startHealthPipeline,
   type RefreshOptions,
 } from './model/pipeline';
+export { devSeedHealth } from './model/dev-seed';
+export { motionReadable, requestMotionAccess, todayOnFeetHours, type OnFeetHour } from './model/hourly';

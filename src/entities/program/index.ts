@@ -289,6 +289,7 @@ export {
   type AdjustedDay,
   type TodayReason,
 } from './model/plan/today';
+export { planReasonLine } from './model/plan/reason-line';
 export {
   WEEK_SHAPES,
   addDays,

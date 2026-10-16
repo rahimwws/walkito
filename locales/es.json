@@ -3,6 +3,7 @@
     "CFBundleDisplayName": "Walkito",
     "NSHealthShareUsageDescription": "walkito lee tus pasos, tu forma de caminar y tu sueño para que tu plan empiece desde lo que de verdad has estado haciendo.",
     "NSHealthUpdateUsageDescription": "walkito guarda tus sesiones en Salud para que cuenten en tu actividad.",
+    "NSMotionUsageDescription": "walkito cuenta las horas que pasas de pie para recordarte, tras un rato largo, darles un minuto a tus pies.",
     "\"SOMETHING OFF?\"": "¿ALGO NO VA BIEN?",
     "\"Tell us. A person replies.\"": "Cuéntanoslo. Te responde una persona."
   },

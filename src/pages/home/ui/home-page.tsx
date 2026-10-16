@@ -13,6 +13,8 @@ import {
   milestoneFor,
   milestoneSeen,
   painOn,
+  todayKey,
+  todayPlan,
   useStreak,
   useWeeklyGoal,
 } from '@/entities/program';
@@ -21,7 +23,7 @@ import { FollowSheet, useFollowOffer } from '@/features/follow';
 import { HomeTour, type DayOneRun } from '@/features/home-tour';
 import { useAccessLapsed, useEntitled, usePaywallSkipped } from '@/entities/purchase';
 import { useHomeTourState } from '@/entities/session';
-import { useHealthSignals } from '@/entities/health';
+import { strideWasShorter, todayHealthInputs, useHealthSignals } from '@/entities/health';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -47,6 +49,7 @@ import { CHECK_IN_GAP, PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
 import { PassEndingCard } from './pass-ending-card';
+import { dayStory } from '../model/day-story';
 import { legState, readinessParts, readinessScore } from '../model/readiness';
 import { useDevReadiness } from '../model/readiness-dev';
 import { ReadinessGauge } from './readiness-gauge';
@@ -313,6 +316,8 @@ export function HomePage() {
                 stepsUsual: signals.stepsBaseline,
               }}
               leg={leg}
+              story={dayStory(signals, todayKey(), strideWasShorter())}
+              planReason={todayPlan(todayHealthInputs(signals), null).reason}
               accessories={accessories}
               stageRef={overviewAnchor}
             />

@@ -43,6 +43,7 @@ import {
 } from '../model/progress-data';
 import { useSeedDemoTrigger } from '../model/seed-demo';
 import { weekRecap } from '../model/week-recap';
+import { GaitCard, PatternsCard, ShoesCard, hasGaitData } from './body-cards';
 import { ConsistencyCard } from './consistency-card';
 import { GoalsCard } from './goals-card';
 import { PainCard } from './pain-card';
@@ -170,6 +171,12 @@ export function ProgressPage() {
           <PainCard range={range} bars={bars} summary={summary} start={start} total={total} paused={covered} />
         </IntroReveal>
 
+        {/* What their own days say about their mornings, under the chart
+            of those mornings. */}
+        <IntroReveal order={3} style={styles.next}>
+          <PatternsCard />
+        </IntroReveal>
+
         <IntroReveal order={4} style={styles.next}>
           <StrengthCard trends={trends} nextTest={nextTest} today={today} mascot={!painWaiting} paused={covered} />
         </IntroReveal>
@@ -180,6 +187,16 @@ export function ProgressPage() {
 
         <IntroReveal order={6} style={styles.next}>
           <ConsistencyCard weeks={weeks} current={streak.current} longest={streak.longest} />
+        </IntroReveal>
+
+        {hasGaitData() && (
+          <IntroReveal order={6} style={styles.next}>
+            <GaitCard />
+          </IntroReveal>
+        )}
+
+        <IntroReveal order={6} style={styles.next}>
+          <ShoesCard />
         </IntroReveal>
 
         <IntroReveal order={7} style={styles.next}>

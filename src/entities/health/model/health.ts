@@ -32,6 +32,17 @@ export const READ_TYPES = [
   // affect this feature at all.
   'HKQuantityTypeIdentifierWalkingAsymmetryPercentage',
   'HKQuantityTypeIdentifierWalkingSpeed',
+  // Back with the signals that use them: step length and double support say
+  // a foot is being spared (the stride trend, the Progress gait card), and
+  // distance is the day's load in kilometres (the "why" sheet, the shoes).
+  'HKQuantityTypeIdentifierWalkingStepLength',
+  'HKQuantityTypeIdentifierWalkingDoubleSupportPercentage',
+  'HKQuantityTypeIdentifierDistanceWalkingRunning',
+  // Running form, for runners with a watch (the Progress gait card).
+  'HKQuantityTypeIdentifierRunningGroundContactTime',
+  'HKQuantityTypeIdentifierRunningStrideLength',
+  // Stand hours: standing still at work, which no step count sees.
+  'HKCategoryTypeIdentifierAppleStandHour',
   // Load.
   'HKQuantityTypeIdentifierStepCount',
   // Stairs. The pipeline read this from the start, but it was never asked for —
@@ -51,17 +62,27 @@ export const READ_TYPES = [
   'HKQuantityTypeIdentifierHeartRate',
 ] as const;
 
+/** Types added since the first read list shipped: flights, then the gait,
+ * distance, running form and stand-hour rows. */
+const ADDED_READ_TYPES: ReadonlySet<string> = new Set([
+  'HKQuantityTypeIdentifierFlightsClimbed',
+  'HKQuantityTypeIdentifierWalkingStepLength',
+  'HKQuantityTypeIdentifierWalkingDoubleSupportPercentage',
+  'HKQuantityTypeIdentifierDistanceWalkingRunning',
+  'HKQuantityTypeIdentifierRunningGroundContactTime',
+  'HKQuantityTypeIdentifierRunningStrideLength',
+  'HKCategoryTypeIdentifierAppleStandHour',
+]);
+
 /**
- * The read list as it shipped before flights were added.
+ * The read list as it first shipped.
  *
  * Kept only to answer "has this person been asked before?" for people who
  * connected on an older build: Apple reports `shouldRequest` for the whole set
  * the moment one new type joins it, and the new list alone would make everyone
  * who already answered look like someone who never has.
  */
-const LEGACY_READ_TYPES = READ_TYPES.filter(
-  (type) => type !== 'HKQuantityTypeIdentifierFlightsClimbed',
-);
+const LEGACY_READ_TYPES = READ_TYPES.filter((type) => !ADDED_READ_TYPES.has(type));
 
 export {
   EMPTY_SUMMARY,

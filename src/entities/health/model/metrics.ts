@@ -42,6 +42,25 @@ export type DailyMetric = {
   /** When the day's last run ended, epoch milliseconds. What "after a run"
    * is measured from — the Library card that suits the two hours after one. */
   lastRunEndAt: number | null;
+  /** Average step length on steady flat walking, centimetres. An iPhone in a
+   * pocket measures it. A foot being spared shortens the step before it shows
+   * as asymmetry, and on both sides at once, which asymmetry cannot see. */
+  stepLengthCm?: number | null;
+  /** Share of each stride with both feet on the ground, percent. Read beside
+   * step length; it is noisy (about 3pp is instrument error), so it is shown,
+   * never acted on alone. */
+  doubleSupportPct?: number | null;
+  /** Walking and running distance for the day, kilometres. */
+  distanceKm?: number | null;
+  /** Apple Watch stand hours: hours with at least a minute standing. For a
+   * job on your feet this sees standing still, which steps never do. */
+  standHours?: number | null;
+  /** Minutes of workouts on the feet that are not runs: walks, hikes,
+   * tennis, football, the gym. Load the step count understates. */
+  sportMin?: number | null;
+  /** Running form, averaged over the day's runs (Apple Watch). */
+  runContactMs?: number | null;
+  runStrideM?: number | null;
 };
 
 export type Baseline = {
@@ -68,6 +87,8 @@ export const MIN_DAYS = {
   flights: 14,
   hoursOnFeet: 14,
   restingHR: 7,
+  stepLengthCm: 14,
+  distanceKm: 7,
 } as const;
 
 /** The window every baseline is computed over. */
@@ -148,10 +169,17 @@ export const ON_FEET_MIN_SIDE = 4;
 export const ON_FEET_MIN_GAP = 1;
 export const ON_FEET_RANGE = { from: 4, to: 14 } as const;
 
+/** A single session of sport on the feet this long, or longer than the
+ * longest of the past four weeks by `BIG_RUN_RATIO`, is a big day. */
+export const BIG_SPORT_MIN = 90;
+/** Below this the past four weeks hold no habit of sport to compare with. */
+const SPORT_PRIOR_MIN = 30;
+
 /** Days of gait samples that decide `none` from `learning`. */
 export const AVAILABILITY_WINDOW = 14;
 
 export type WalkingTrend = 'slower' | 'stable' | 'faster';
+export type StrideTrend = 'shorter' | 'stable' | 'longer';
 
 export type DataAvailability = 'none' | 'learning' | 'ready';
 
@@ -217,6 +245,33 @@ export type HealthSignals = {
   restingHRElevated: boolean;
 
   hoursOnFeetToday: number | null;
+  /** Yesterday's hours on foot: the larger of the hours that carried walking
+   * and the watch's stand hours, so standing still at work counts. */
+  hoursOnFeetYesterday: number | null;
+  /** The usual day, same measure, over 28 days (needs 14). */
+  hoursOnFeetBaseline: number | null;
+
+  /** Walking and running distance yesterday, and the usual day. */
+  distanceYesterdayKm: number | null;
+  distanceBaselineKm: number | null;
+
+  /** Minutes of sport on the feet yesterday (runs not included), and whether
+   * that was a big day by `BIG_SPORT_MIN`. */
+  sportMinYesterday: number | null;
+  bigSportYesterday: boolean;
+
+  /** Step length: today, the usual, and this week against the usual. */
+  stepLengthToday: number | null;
+  stepLengthBaseline: number | null;
+  stepLengthWeek: number | null;
+  stepLengthTrend: StrideTrend | null;
+  /** Double support this week minus the usual, in percentage points. */
+  doubleSupportDeltaPP: number | null;
+
+  /** Running form this week (watch only). */
+  runContactMsWeek: number | null;
+  runStrideMWeek: number | null;
+
   /**
    * The hour count past which this person's own next mornings got worse.
    *
@@ -259,6 +314,19 @@ export const NO_SIGNALS: HealthSignals = {
   restingHRDelta: null,
   restingHRElevated: false,
   hoursOnFeetToday: null,
+  hoursOnFeetYesterday: null,
+  hoursOnFeetBaseline: null,
+  distanceYesterdayKm: null,
+  distanceBaselineKm: null,
+  sportMinYesterday: null,
+  bigSportYesterday: false,
+  stepLengthToday: null,
+  stepLengthBaseline: null,
+  stepLengthWeek: null,
+  stepLengthTrend: null,
+  doubleSupportDeltaPP: null,
+  runContactMsWeek: null,
+  runStrideMWeek: null,
   onFeetThreshold: null,
   availability: 'none',
 };
@@ -378,10 +446,24 @@ export type SignalOptions = {
  *
  * `days` is oldest-first and ends with today.
  */
+/**
+ * Hours on foot as the larger of the two measures: hours that carried real
+ * walking, and the watch's stand hours. A cashier stands for hours with few
+ * steps; the watch sees that, the step count does not.
+ */
+export function withOnFeetHours(days: readonly DailyMetric[]): DailyMetric[] {
+  return days.map((day) => {
+    const stand = day.standHours ?? null;
+    if (stand == null) return day;
+    return { ...day, hoursOnFeet: Math.max(day.hoursOnFeet ?? 0, stand) };
+  });
+}
+
 export function signalsFrom(
-  days: readonly DailyMetric[],
+  rawDays: readonly DailyMetric[],
   options: SignalOptions = {},
 ): HealthSignals {
+  const days = withOnFeetHours(rawDays);
   const {
     bilateral = false,
     wasElevated = false,
@@ -395,6 +477,10 @@ export function signalsFrom(
   const flights = baselineFor(days, 'flights', MIN_DAYS.flights);
   const sleep = baselineFor(days, 'sleepMin', MIN_DAYS.sleepMin);
   const hr = baselineFor(days, 'restingHR', MIN_DAYS.restingHR);
+  const onFeet = baselineFor(days, 'hoursOnFeet', MIN_DAYS.hoursOnFeet);
+  const distance = baselineFor(days, 'distanceKm', MIN_DAYS.distanceKm);
+  const stride = baselineFor(days, 'stepLengthCm', MIN_DAYS.stepLengthCm);
+  const doubleSupport = baselineFor(days, 'doubleSupportPct', MIN_DAYS.stepLengthCm);
 
   const today = days[days.length - 1];
   const yesterday = days[days.length - 2];
@@ -446,6 +532,32 @@ export function signalsFrom(
     runMax28Km != null &&
     runMax28Km > 0 &&
     longestRunYesterdayKm > runMax28Km * BIG_RUN_RATIO;
+
+  const sportMinYesterday = yesterday?.sportMin ?? null;
+  const priorSport = values(days.slice(-(BASELINE_DAYS + 2), -2), 'sportMin');
+  const sportMax28 = priorSport.length > 0 ? Math.max(...priorSport) : 0;
+  const bigSportYesterday =
+    sportMinYesterday != null &&
+    (sportMinYesterday >= BIG_SPORT_MIN ||
+      (sportMax28 >= SPORT_PRIOR_MIN && sportMinYesterday > sportMax28 * BIG_RUN_RATIO));
+
+  // --- stride -------------------------------------------------------------
+  // The same test as walking speed: this week's mean a whole spread away from
+  // the usual, on at least four days of samples.
+  const strideWeekValues = values(days.slice(-7), 'stepLengthCm');
+  const stepLengthWeek = strideWeekValues.length >= 4 ? meanOf(strideWeekValues) : null;
+  let stepLengthTrend: StrideTrend | null = null;
+  if (stride != null && stride.stdDev > 0 && stepLengthWeek != null) {
+    if (stepLengthWeek < stride.mean - stride.stdDev) stepLengthTrend = 'shorter';
+    else if (stepLengthWeek > stride.mean + stride.stdDev) stepLengthTrend = 'longer';
+    else stepLengthTrend = 'stable';
+  }
+  const supportWeek = values(days.slice(-7), 'doubleSupportPct');
+  const doubleSupportDeltaPP =
+    doubleSupport != null && supportWeek.length >= 4 ? (meanOf(supportWeek) ?? 0) - doubleSupport.mean : null;
+
+  const contactWeek = values(days.slice(-7), 'runContactMs');
+  const runStrideWeek = values(days.slice(-7), 'runStrideM');
 
   // --- recovery -----------------------------------------------------------
   const recentSleep = values(days.slice(-7), 'sleepMin');
@@ -517,9 +629,48 @@ export function signalsFrom(
     restingHRElevated: restingHRDelta != null && restingHRDelta >= RHR_ELEVATED_BPM,
 
     hoursOnFeetToday: today?.hoursOnFeet ?? null,
+    hoursOnFeetYesterday: yesterday?.hoursOnFeet ?? null,
+    hoursOnFeetBaseline: onFeet?.mean ?? null,
+
+    distanceYesterdayKm: yesterday?.distanceKm ?? null,
+    distanceBaselineKm: distance?.mean ?? null,
+
+    sportMinYesterday,
+    bigSportYesterday,
+
+    stepLengthToday: today?.stepLengthCm ?? null,
+    stepLengthBaseline: stride?.mean ?? null,
+    stepLengthWeek,
+    stepLengthTrend,
+    doubleSupportDeltaPP,
+
+    runContactMsWeek: meanOf(contactWeek),
+    runStrideMWeek: meanOf(runStrideWeek),
+
     onFeetThreshold:
       painNextMorning == null ? null : onFeetThresholdFrom(days, painNextMorning),
 
     availability,
+  };
+}
+
+/**
+ * What today's plan reads from Health, in the shape `adjustToday` takes.
+ *
+ * One place, so the five screens that build today's plan (Home, the program,
+ * the widget, notifications, the store) cannot read the signals five ways.
+ * Structural: the plan engine lives in another entity and is never imported
+ * here.
+ */
+export function todayHealthInputs(signals: HealthSignals) {
+  return {
+    stepsYesterday: signals.stepsYesterday,
+    steps28Avg: signals.stepsBaseline,
+    sleepHours: signals.sleepLastNightMin == null ? null : signals.sleepLastNightMin / 60,
+    sleepShort: signals.sleepShort,
+    onFeetYesterday: signals.hoursOnFeetYesterday,
+    onFeetThreshold: signals.onFeetThreshold,
+    bigWorkoutYesterday: signals.bigRunYesterday || signals.bigSportYesterday,
+    restingHRElevated: signals.restingHRElevated,
   };
 }

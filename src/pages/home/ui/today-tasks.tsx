@@ -8,7 +8,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
-import { useHealthSignals, type HealthSignals } from '@/entities/health';
+import { useHealthSignals, type HealthSignals, todayHealthInputs } from '@/entities/health';
 import {
   PROGRAM,
   RETEST_MINUTES,
@@ -35,6 +35,7 @@ import {
   type PlannedExercise,
   type ProgramDay,
   type TodayReason,
+  planReasonLine,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
@@ -161,11 +162,7 @@ type TodayWork = {
  */
 function tasksForToday(t: Translate, health: HealthSignals): TodayWork {
   const day = todayPlan(
-    {
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.stepsBaseline,
-      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-    },
+    todayHealthInputs(health),
     null,
   );
   if (day.type === 'test') {
@@ -451,10 +448,8 @@ export function TodayTasks({
       </View>
 
       {/* Why today is not the day as planned — said, rather than done silently. */}
-      {!allDone && (reason === 'heavy-day' || reason === 'short-sleep') && (
-        <Text style={[styles.reason, { color: meter.caption }]}>
-          {reason === 'heavy-day' ? t('pages.plan.reasonHeavyDay') : t('pages.plan.reasonShortSleep')}
-        </Text>
+      {!allDone && planReasonLine(t, reason) != null && (
+        <Text style={[styles.reason, { color: meter.caption }]}>{planReasonLine(t, reason)}</Text>
       )}
 
       {/* Above the list, not instead of it. The rows stay readable — somebody

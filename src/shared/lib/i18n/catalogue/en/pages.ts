@@ -203,7 +203,7 @@ export const PAGES_EN = {
   'pages.week.shortVersion': '2-minute version',
   'pages.plan.notUpForIt': 'Not up for it? Do the 2-minute version',
   'pages.plan.reasonHeavyDay': 'Big day yesterday - today is lighter, with no step up.',
-  'pages.plan.reasonShortSleep': 'Short night - today is one step easier.',
+  'pages.plan.reasonShortSleep': 'Short nights this week - today is one step easier.',
   'pages.exerciseSheet.why': 'Why it’s in your plan',
   'pages.week.nextWeek': 'Next week',
   'pages.week.nextWeekFocus': 'Focus: {goal}',

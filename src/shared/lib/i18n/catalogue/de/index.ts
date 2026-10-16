@@ -23,6 +23,7 @@ import { HOME_OFFER_DE } from './home-offer';
 import { CANCEL_DE } from './cancel';
 import { PASS_DE } from './pass';
 import { COMMUNITY_DE } from './community';
+import { INSIGHTS_DE } from './insights';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -56,4 +57,5 @@ export const de: CatalogueFor<'de'> = {
   ...CANCEL_DE,
   ...PASS_DE,
   ...COMMUNITY_DE,
+  ...INSIGHTS_DE,
 };

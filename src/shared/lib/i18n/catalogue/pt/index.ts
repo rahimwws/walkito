@@ -23,6 +23,7 @@ import { HOME_OFFER_PT } from './home-offer';
 import { CANCEL_PT } from './cancel';
 import { PASS_PT } from './pass';
 import { COMMUNITY_PT } from './community';
+import { INSIGHTS_PT } from './insights';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -56,4 +57,5 @@ export const pt: CatalogueFor<'pt'> = {
   ...CANCEL_PT,
   ...PASS_PT,
   ...COMMUNITY_PT,
+  ...INSIGHTS_PT,
 };

@@ -37,7 +37,9 @@ export function usePlanGoals(onboarded: boolean): void {
     const first = retestResults()[0];
     ensureGoals({
       painReported: areas.length > 0,
-      footType: 'unknown',
+      // The 30-second check's arch answer, when it was taken: it picks the
+      // arch goal over the general one.
+      footType: planSettings().footType ?? 'unknown',
       plantarPain: areas.some((area) => PLANTAR.includes(area)),
       loadsFeet: intake?.runner != null && LOADS_FEET.includes(intake.runner),
       firstGapPct: first?.symmetryPct ?? null,

@@ -263,6 +263,46 @@ describe('today', () => {
       (d) => d.type === 'strength',
     )!;
 
+  test('health · a big workout yesterday turns a strength day into recovery', () => {
+    const day = adjustToday(strengthDay(), { ...signals, bigWorkoutYesterday: true }, ctx);
+    expect(day.reason).toBe('big-workout');
+    expect(day.type).toBe('recovery');
+  });
+
+  test('health · past the personal on-feet limit turns a strength day into recovery', () => {
+    const day = adjustToday(strengthDay(), { ...signals, onFeetYesterday: 10, onFeetThreshold: 8 }, ctx);
+    expect(day.reason).toBe('on-feet');
+    expect(day.type).toBe('recovery');
+    const under = adjustToday(strengthDay(), { ...signals, onFeetYesterday: 6, onFeetThreshold: 8 }, ctx);
+    expect(under.reason).toBeNull();
+  });
+
+  test('health · sleep is a week, not a night, when the week is known', () => {
+    const oneNight = adjustToday(strengthDay(), { ...signals, sleepHours: 5, sleepShort: false }, ctx);
+    expect(oneNight.reason).toBeNull();
+    const week = adjustToday(strengthDay(), { ...signals, sleepHours: 7.5, sleepShort: true }, ctx);
+    expect(week.reason).toBe('short-sleep');
+    expect(week.steppedDown).toBe(true);
+    // Without the week, the old one-night rule stands.
+    expect(adjustToday(strengthDay(), { ...signals, sleepHours: 5 }, ctx).reason).toBe('short-sleep');
+  });
+
+  test('health · resting heart rate up steps a strength day down, keeping it strength', () => {
+    const day = adjustToday(strengthDay(), { ...signals, restingHRElevated: true }, ctx);
+    expect(day.reason).toBe('resting-hr');
+    expect(day.type).toBe('strength');
+    expect(day.steppedDown).toBe(true);
+  });
+
+  test('health · pain outranks every Health signal', () => {
+    const day = adjustToday(
+      strengthDay(),
+      { ...signals, painToday: 8, bigWorkoutYesterday: true, restingHRElevated: true },
+      ctx,
+    );
+    expect(day.reason).toBe('flare');
+  });
+
   test('7 · pain 8 → seated only, 3 minutes, nothing that loads the fascia', () => {
     const day = adjustToday(strengthDay(), { ...signals, painToday: 8 }, ctx);
     expect(day.minutes).toBe(3);

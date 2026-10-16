@@ -46,7 +46,12 @@ type QuantitySource = {
     | 'HKQuantityTypeIdentifierFlightsClimbed'
     | 'HKQuantityTypeIdentifierWalkingAsymmetryPercentage'
     | 'HKQuantityTypeIdentifierWalkingSpeed'
-    | 'HKQuantityTypeIdentifierRestingHeartRate';
+    | 'HKQuantityTypeIdentifierRestingHeartRate'
+    | 'HKQuantityTypeIdentifierWalkingStepLength'
+    | 'HKQuantityTypeIdentifierWalkingDoubleSupportPercentage'
+    | 'HKQuantityTypeIdentifierDistanceWalkingRunning'
+    | 'HKQuantityTypeIdentifierRunningGroundContactTime'
+    | 'HKQuantityTypeIdentifierRunningStrideLength';
   field: Field;
   unit: string;
   /** `cumulativeSum` for running totals, `discreteAverage` for estimates taken
@@ -93,7 +98,45 @@ const QUANTITIES: readonly QuantitySource[] = [
     unit: 'count/min',
     statistic: 'discreteAverage',
   },
+  {
+    // A foot being spared shortens the step, on both sides at once: the
+    // gait signal asymmetry cannot see in a third of this population.
+    type: 'HKQuantityTypeIdentifierWalkingStepLength',
+    field: 'stepLengthCm',
+    unit: 'cm',
+    statistic: 'discreteAverage',
+  },
+  {
+    type: 'HKQuantityTypeIdentifierWalkingDoubleSupportPercentage',
+    field: 'doubleSupportPct',
+    unit: '%',
+    statistic: 'discreteAverage',
+    scale: 100,
+  },
+  {
+    type: 'HKQuantityTypeIdentifierDistanceWalkingRunning',
+    field: 'distanceKm',
+    unit: 'km',
+    statistic: 'cumulativeSum',
+  },
+  {
+    // Running form from an Apple Watch: nothing without one.
+    type: 'HKQuantityTypeIdentifierRunningGroundContactTime',
+    field: 'runContactMs',
+    unit: 'ms',
+    statistic: 'discreteAverage',
+  },
+  {
+    type: 'HKQuantityTypeIdentifierRunningStrideLength',
+    field: 'runStrideM',
+    unit: 'm',
+    statistic: 'discreteAverage',
+  },
 ];
+
+const STAND_HOURS = 'HKCategoryTypeIdentifierAppleStandHour' as const;
+/** `HKCategoryValueAppleStandHour.stood`. */
+const STOOD = 0;
 
 const SLEEP = 'HKCategoryTypeIdentifierSleepAnalysis' as const;
 const WORKOUTS = 'HKWorkoutTypeIdentifier' as const;
@@ -211,6 +254,29 @@ async function readHoursOnFeet(from: Date, to: Date): Promise<DailyMetric[]> {
   }
 }
 
+/**
+ * Apple Watch stand hours per day: hours with at least a minute standing.
+ * What a job on your feet looks like when there are few steps in it.
+ */
+async function readStandHours(from: Date, to: Date): Promise<DailyMetric[]> {
+  try {
+    const samples = await queryCategorySamples(STAND_HOURS, {
+      limit: 0,
+      ascending: true,
+      filter: { date: { startDate: from, endDate: to } },
+    });
+    const hours = new Map<string, number>();
+    for (const sample of samples) {
+      if (Number(sample.value) !== STOOD) continue;
+      const key = dayKey(new Date(sample.startDate));
+      hours.set(key, (hours.get(key) ?? 0) + 1);
+    }
+    return days('standHours', hours);
+  } catch {
+    return [];
+  }
+}
+
 async function readSleep(from: Date, to: Date): Promise<DailyMetric[]> {
   try {
     const samples = await queryCategorySamples(SLEEP, {
@@ -229,25 +295,56 @@ async function readSleep(from: Date, to: Date): Promise<DailyMetric[]> {
 }
 
 /**
- * Runs, as sessions rather than as a daily total.
- *
- * Only the longest one per day is kept, because that is what the evidence is
- * about: one outing further than anything in the past month, not accumulated
- * mileage. The same run synced from two apps is still one maximum.
+ * Sport on the feet that is not running: the load a step count understates
+ * (an hour of tennis is a few thousand steps and a lot of landing).
  */
-async function readRuns(from: Date, to: Date): Promise<DailyMetric[]> {
+const ON_FEET_SPORTS: ReadonlySet<number> = new Set([
+  WorkoutActivityType.walking,
+  WorkoutActivityType.hiking,
+  WorkoutActivityType.tennis,
+  WorkoutActivityType.soccer,
+  WorkoutActivityType.basketball,
+  WorkoutActivityType.badminton,
+  WorkoutActivityType.volleyball,
+  WorkoutActivityType.squash,
+  WorkoutActivityType.pickleball,
+  WorkoutActivityType.handball,
+  WorkoutActivityType.rugby,
+  WorkoutActivityType.americanFootball,
+  WorkoutActivityType.dance,
+  WorkoutActivityType.crossTraining,
+  WorkoutActivityType.functionalStrengthTraining,
+  WorkoutActivityType.traditionalStrengthTraining,
+  WorkoutActivityType.stairClimbing,
+  WorkoutActivityType.elliptical,
+  WorkoutActivityType.golf,
+]);
+
+/**
+ * Workouts, as sessions rather than as a daily total.
+ *
+ * Runs keep only the longest one per day, because that is what the evidence
+ * is about: one outing further than anything in the past month, not
+ * accumulated mileage. Every other sport on the feet adds up its minutes.
+ */
+async function readWorkouts(from: Date, to: Date): Promise<DailyMetric[]> {
   try {
     const workouts = await queryWorkoutSamples({
       limit: 0,
-      filter: {
-        workoutActivityType: WorkoutActivityType.running,
-        date: { startDate: from, endDate: to },
-      },
+      filter: { date: { startDate: from, endDate: to } },
     });
     const longest = new Map<string, number>();
     const lastEnd = new Map<string, number>();
+    const sport = new Map<string, number>();
     for (const workout of workouts) {
       const key = dayKey(new Date(workout.startDate));
+      const kind = Number(workout.workoutActivityType);
+      if (kind !== WorkoutActivityType.running) {
+        if (!ON_FEET_SPORTS.has(kind)) continue;
+        const minutes = (new Date(workout.endDate).getTime() - new Date(workout.startDate).getTime()) / 60_000;
+        if (Number.isFinite(minutes) && minutes > 0) sport.set(key, (sport.get(key) ?? 0) + minutes);
+        continue;
+      }
       // When it ended, whatever its distance: "just back from a run" is about
       // the clock, and a run with no distance recorded still happened.
       const ended = new Date(workout.endDate).getTime();
@@ -257,7 +354,11 @@ async function readRuns(from: Date, to: Date): Promise<DailyMetric[]> {
       // The library reports distance in metres whatever was asked for.
       longest.set(key, Math.max(longest.get(key) ?? 0, meters / 1000));
     }
-    return [...days('longestRunKm', longest), ...days('lastRunEndAt', lastEnd)];
+    return [
+      ...days('longestRunKm', longest),
+      ...days('lastRunEndAt', lastEnd),
+      ...days('sportMin', new Map([...sport].map(([date, minutes]) => [date, Math.round(minutes)]))),
+    ];
   } catch {
     return [];
   }
@@ -326,8 +427,9 @@ async function refreshOnce(now: Date, options: RefreshOptions): Promise<void> {
   const results = await Promise.all([
     ...QUANTITIES.map((source) => readQuantity(source, from, now)),
     readSleep(from, now),
-    readRuns(from, now),
+    readWorkouts(from, now),
     readHoursOnFeet(from, now),
+    readStandHours(from, now),
   ]);
   mergeDays(results.flat());
   recomputeSignals(dayKey(now), options.painNextMorning);

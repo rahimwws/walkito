@@ -111,6 +111,13 @@
         }
       ],
       [
+        "expo-sensors",
+        {
+          "motionPermission": "walkito counts the hours you spend on your feet, so it can remind you to give them a minute after a long stretch."
+        }
+      ],
+      "expo-background-task",
+      [
         "expo-quick-actions",
         {
           "iosIcons": {

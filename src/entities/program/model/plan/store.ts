@@ -962,7 +962,17 @@ export function scheduledIds(): string[] {
 
 // ── Today ────────────────────────────────────────────────────────────────────
 
-export type TodayHealth = Pick<TodaySignals, 'stepsYesterday' | 'steps28Avg' | 'sleepHours'>;
+export type TodayHealth = Pick<
+  TodaySignals,
+  | 'stepsYesterday'
+  | 'steps28Avg'
+  | 'sleepHours'
+  | 'sleepShort'
+  | 'onFeetYesterday'
+  | 'onFeetThreshold'
+  | 'bigWorkoutYesterday'
+  | 'restingHRElevated'
+>;
 
 /** Today's day from this week's plan, adjusted to this morning. */
 export function todayPlan(
@@ -980,9 +990,7 @@ export function todayPlan(
     {
       painToday: painForToday(today),
       pain7Avg: mean(pains.slice(0, 7)),
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.steps28Avg,
-      sleepHours: health.sleepHours,
+      ...health,
       stepDownOwed: stepDownOwed(),
       minutesChoice,
       defaultMinutes: settings.defaultMinutes,

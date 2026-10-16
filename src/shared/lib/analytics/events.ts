@@ -308,6 +308,10 @@ export type AnalyticsEvents = {
   /** "Rate Walkito" opened the store's review page. Where it was tapped from. */
   rate_app_tapped: { from: 'profile' };
 
+  /** "Why today's plan?" under Home's readiness was opened. Nothing about
+   * what it showed: it is steps, sleep and heart rate. */
+  why_plan_opened: Record<string, never>;
+
   // ── Instagram ────────────────────────────────────────────────────────────
   /** The "follow Walkito on Instagram" sheet came up: by itself on the third
    * day of use, or from its row in Profile. */

@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import { DevSettings, Linking } from 'react-native';
 
+import { devSeedHealth } from '@/entities/health';
 import {
   addDays,
   dayNumberFor,
+  painOn,
   ensureGoals,
   fromDateKey,
   goals,
@@ -97,6 +99,9 @@ export function seedDemoProgress(now: number = Date.now()): void {
     );
   }
   refreshGoals(now);
+  // Thirty days of Health beside it, so the cards and sheets that read Health
+  // have something to show on a simulator.
+  devSeedHealth(new Date(now), (date) => painOn(dayNumberFor(programState(), date) + 1));
 }
 
 const MENU_TITLE = 'Seed demo progress';

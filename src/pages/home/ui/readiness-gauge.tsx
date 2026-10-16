@@ -26,10 +26,14 @@ import {
   type ReadinessParts,
 } from '../model/readiness';
 import { devOpenReadinessInfo, useDevReadiness } from '../model/readiness-dev';
+import type { TodayReason } from '@/entities/program';
+import type { DayStory } from '../model/day-story';
+import { storyLine } from './day-story-text';
 import { PartSheet } from './part-sheet';
+import { WhySheet } from './why-sheet';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
-import { useT } from '@/shared/lib/i18n';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import {
@@ -69,6 +73,12 @@ export type ReadinessGaugeProps = {
   details: ReadinessDetails;
   /** How the legs are this morning, for the bubble and his pose. */
   leg: LegState;
+  /** What Health says about yesterday (`dayStory`), said in the bubble when
+   * the morning's pain has nothing stronger to say. */
+  story?: DayStory | null;
+  /** What today's plan did about it (`AdjustedDay.reason`), for the line's
+   * second sentence. */
+  planReason?: TodayReason;
   /** What he wears, earned by the longest streak (`accessoriesFor`). */
   accessories?: readonly AccessoryId[];
   /** Marks Walkito and his bubble for the Home tour's first stop. */
@@ -372,8 +382,16 @@ function Accessories({ ids }: { ids: readonly AccessoryId[] }) {
   );
 }
 
-function Stage({ score, parts, details, leg, accessories = [], stageRef }: ReadinessGaugeProps) {
+/** Pain states that outrank anything Health says: what the person told us
+ * this morning is always the first thing he answers. */
+const PAIN_SAYS: readonly LegStateId[] = ['sore', 'calmer', 'tender'];
+
+function Stage({ score, parts, details, leg, story = null, planReason = null, accessories = [], stageRef }: ReadinessGaugeProps) {
   const t = useT();
+  const language = useLanguage();
+  const [whyOpen, setWhyOpen] = useState(false);
+  const say =
+    story != null && !PAIN_SAYS.includes(leg.id) ? storyLine(t, story, language, planReason) : t(LEG_KEYS[leg.id]);
   const scheme = useColorScheme();
   const ink = meterColors[scheme];
   const walkito = useWalkito(leg.id, STAGE_MASCOT, palette[scheme].background);
@@ -386,7 +404,7 @@ function Stage({ score, parts, details, leg, accessories = [], stageRef }: Readi
         <Rise delay={500}>
           <Bubble style={styles.stageBubble}>
             <Text style={[styles.say, styles.centredText, { color: ink.ink }]}>
-              {walkito.tapped ? t('home.readiness.sayTap') : t(LEG_KEYS[leg.id])}
+              {walkito.tapped ? t('home.readiness.sayTap') : say}
             </Text>
           </Bubble>
         </Rise>
@@ -417,6 +435,19 @@ function Stage({ score, parts, details, leg, accessories = [], stageRef }: Readi
       <Rise delay={150}>
         <PartPills parts={items} onOpen={info.open} />
       </Rise>
+      {/* What today's plan was built from, shown rather than claimed. */}
+      <Pressable
+        accessibilityRole="button"
+        onPress={() => {
+          void Haptics.selectionAsync();
+          track('why_plan_opened');
+          setWhyOpen(true);
+        }}
+        hitSlop={8}
+        style={({ pressed }) => [styles.whyLink, pressed && styles.pressed]}>
+        <Text style={[styles.whyText, { color: accents[scheme].violet.fill }]}>{t('home.why.link')}</Text>
+      </Pressable>
+      <WhySheet visible={whyOpen} onClose={() => setWhyOpen(false)} />
       <PartSheet
         visible={info.visible}
         focus={info.focus}
@@ -432,6 +463,12 @@ const styles = StyleSheet.create({
   centred: {
     alignItems: 'center',
   },
+  whyLink: {
+    alignSelf: 'center',
+    marginTop: 14,
+    paddingVertical: 4,
+  },
+  whyText: fonts.semibold(15, -0.1),
   centredText: {
     textAlign: 'center',
   },

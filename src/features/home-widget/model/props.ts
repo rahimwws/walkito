@@ -1,4 +1,4 @@
-import { healthSignals } from '@/entities/health';
+import { healthSignals, todayHealthInputs } from '@/entities/health';
 import {
   attended,
   currentDay,
@@ -49,11 +49,7 @@ function weekdayLabels(language: string): string[] {
 function todayGoal(now: number): Goal {
   const health = healthSignals();
   const day = todayPlan(
-    {
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.stepsBaseline,
-      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-    },
+    todayHealthInputs(health),
     null,
     now,
   );

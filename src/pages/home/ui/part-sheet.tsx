@@ -14,6 +14,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { grouped } from '../model/brief';
+import { decimal } from './day-story-text';
 import {
   BAND_KEYS,
   READINESS_WEIGHTS,
@@ -25,7 +26,7 @@ import {
 import { healthCache } from '@/entities/health';
 import { currentDay, painOn } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
-import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
+import { useLanguage, useT, type Language, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FluentIcon, type FluentName } from '@/shared/ui/fluent-icon';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -182,7 +183,22 @@ type PartView = {
   /** Where today sits, in the zones' units. */
   at?: number;
   tick?: { at: number; label: string };
-  week?: { values: (number | null)[]; max: number; guide?: number };
+  /** The last 30 days, oldest first, the latest last; the chart shows the
+   * last 7 or all of them. */
+  history?: History;
+  /** What the plan does with this part, in one line. */
+  use: string;
+};
+
+type History = {
+  values: (number | null)[];
+  /** The first value's days back from today. */
+  endsDaysAgo: number;
+  /** A faint line at the full mark (8 h) or the usual day. */
+  guide?: number;
+  /** Worded in the part's own unit, for the average and the usual. */
+  format: (value: number) => string;
+  usual?: number | null;
 };
 
 const askHealth = (ios: string, android: string) => (Platform.OS === 'android' ? android : ios);
@@ -196,10 +212,12 @@ function dayKey(date: Date): string {
   return `${date.getFullYear()}-${month}-${day}`;
 }
 
-/** Seven values, oldest first, the last one `endsDaysAgo` days back. */
-function lastSeven<T>(endsDaysAgo: number, read: (daysAgo: number) => T): T[] {
-  return Array.from({ length: 7 }, (_, i) => read(endsDaysAgo + 6 - i));
+/** `n` values, oldest first, the last one `endsDaysAgo` days back. */
+function lastDays<T>(n: number, endsDaysAgo: number, read: (daysAgo: number) => T): T[] {
+  return Array.from({ length: n }, (_, i) => read(endsDaysAgo + n - 1 - i));
 }
+
+const HISTORY_DAYS = 30;
 
 function healthByDay(): Map<string, { steps: number | null; sleepMin: number | null }> {
   return new Map(healthCache().days.map((day) => [day.date, day]));
@@ -242,7 +260,7 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
 
   if (part === 'pain') {
     const pain = details.pain == null ? null : Math.round(details.pain);
-    const values = lastSeven(0, (ago) => painOn(currentDay() - ago));
+    const values = lastDays(HISTORY_DAYS, 0, (ago) => painOn(currentDay() - ago));
     const zones: Zone[] = [
       { from: 0, to: 3.5, label: t('home.readinessInfo.painCalm'), accent: 'teal' },
       { from: 3.5, to: 6.5, label: t('home.readinessInfo.painAchy'), accent: 'amber' },
@@ -266,15 +284,17 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
       line: pain == null ? t('home.readinessInfo.painAsk') : t('home.readinessInfo.painLine'),
       zones: pain == null ? undefined : zones,
       at: pain ?? undefined,
-      week: worthAChart(values) ? { values, max: 10 } : undefined,
+      history: worthAChart(values)
+        ? { values, endsDaysAgo: 0, format: (v) => t('home.readinessInfo.painAvg', { value: decimal(v, language) }) }
+        : undefined,
+      use: t('home.readinessInfo.usePain'),
     };
   }
 
   if (part === 'sleep') {
     const minutes = details.sleepMinutes != null && details.sleepMinutes > 0 ? details.sleepMinutes : null;
     const days = healthByDay();
-    const values = lastSeven(0, (ago) => healthOn(days, ago)?.sleepMin ?? null);
-    const most = Math.max(0, ...values.map((v) => v ?? 0));
+    const values = lastDays(HISTORY_DAYS, 0, (ago) => healthOn(days, ago)?.sleepMin ?? null);
     return {
       icon: 'moon',
       accent: 'violet',
@@ -296,15 +316,17 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
               { from: 8, to: 10, label: t('home.readinessInfo.sleepFull'), accent: 'violet' },
             ],
       at: minutes == null ? undefined : minutes / 60,
-      week: worthAChart(values) ? { values, max: Math.max(most, 8 * 60), guide: 8 * 60 } : undefined,
+      history: worthAChart(values)
+        ? { values, endsDaysAgo: 0, guide: 8 * 60, format: (v) => sleepText(t, v) }
+        : undefined,
+      use: t('home.readinessInfo.useSleep'),
     };
   }
 
   const yesterday = details.stepsYesterday == null ? null : Math.round(details.stepsYesterday);
   const usual = details.stepsUsual != null && details.stepsUsual > 0 ? details.stepsUsual : null;
   const days = healthByDay();
-  const values = lastSeven(1, (ago) => healthOn(days, ago)?.steps ?? null);
-  const most = Math.max(0, ...values.map((v) => v ?? 0));
+  const values = lastDays(HISTORY_DAYS, 1, (ago) => healthOn(days, ago)?.steps ?? null);
   // The usual to the nearest hundred: a mean of 28 days to the step is a
   // precision it does not have.
   const usualShown = usual == null ? null : grouped(Math.round(usual / 100) * 100, language);
@@ -332,7 +354,16 @@ function usePartView(part: ReadinessPartKey, details: ReadinessDetails): PartVie
           ],
     at: yesterday == null || usual == null ? undefined : yesterday / usual,
     tick: usualShown == null ? undefined : { at: 1, label: t('home.readinessInfo.stepsUsual', { usual: usualShown }) },
-    week: worthAChart(values) ? { values, max: Math.max(most, usual ?? 0), guide: usual ?? undefined } : undefined,
+    history: worthAChart(values)
+      ? {
+          values,
+          endsDaysAgo: 1,
+          guide: usual ?? undefined,
+          usual,
+          format: (v) => grouped(Math.round(v / 100) * 100, language),
+        }
+      : undefined,
+    use: t('home.readinessInfo.useSteps'),
   };
 }
 
@@ -370,11 +401,17 @@ function PartBody({ part, details }: { part: ReadinessPartKey; details: Readines
         <ZoneBar zones={view.zones} at={view.at} tick={view.tick} />
       )}
 
-      {view.week != null && <WeekBars {...view.week} accent={view.accent} />}
+      {view.history != null && <HistoryChart history={view.history} accent={view.accent} />}
 
       <Text style={[styles.line, { color: meter.label }]} importantForAccessibility={view.value == null ? 'no' : 'auto'}>
         {view.line}
       </Text>
+      {view.value != null && (
+        <View style={[styles.use, { backgroundColor: meter.iconTile }]}>
+          <Text style={[styles.useLabel, { color: meter.label }]}>{t('home.readinessInfo.useLabel')}</Text>
+          <Text style={[styles.useText, { color: meter.ink }]}>{view.use}</Text>
+        </View>
+      )}
     </View>
   );
 }
@@ -471,48 +508,83 @@ function ZoneBar({ zones, at, tick }: { zones: Zone[]; at: number; tick?: { at: 
   );
 }
 
-// ── The last seven days ───────────────────────────────────────────────────
+// ── The history ───────────────────────────────────────────────────────────
 
-const WEEK_H = 40;
+const CHART_H = 64;
+type Range = 7 | 30;
 
-/** Seven tiny bars, oldest first, the latest in the part's accent and the
- * rest softer; a day with nothing logged is a stub. A faint line marks the
- * full mark (8 h) or their usual day. */
-function WeekBars({
-  values,
-  max,
-  guide,
-  accent,
-}: {
-  values: (number | null)[];
-  max: number;
-  guide?: number;
-  accent: AccentName;
-}) {
+/** The day a value belongs to, as a short label: a weekday letter for the
+ * week, a day of the month for the month. */
+function dayLabel(daysAgo: number, range: Range, language: Language): string {
+  const date = new Date();
+  date.setHours(12, 0, 0, 0);
+  date.setTime(date.getTime() - daysAgo * DAY_MS);
+  return range === 7
+    ? date.toLocaleDateString(language, { weekday: 'narrow' })
+    : String(date.getDate());
+}
+
+/**
+ * The last 7 or 30 days as bars, with the average over the days that carry a
+ * reading, the usual (steps), and how many days were recorded at all. The
+ * point is to show what the readiness is made of: real days, not a guess.
+ * The latest bar in the part's accent, the rest softer; a day with nothing is
+ * a stub.
+ */
+function HistoryChart({ history, accent }: { history: History; accent: AccentName }) {
   const t = useT();
+  const language = useLanguage();
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const tint = accents[scheme][accent];
-  const top = max > 0 ? max : 1;
+  const [range, setRange] = useState<Range>(7);
+  const values = history.values.slice(-range);
+  const known = values.filter((v): v is number => v != null);
+  const average = known.length > 0 ? known.reduce((a, b) => a + b, 0) / known.length : null;
+  const top = Math.max(1, ...known, history.guide ?? 0);
+  /** Every fifth label on the month, so the numbers do not crowd. */
+  const labelled = (i: number) => range === 7 || (values.length - 1 - i) % 5 === 0;
+
   return (
-    <View accessible accessibilityLabel={t('home.readinessInfo.week')} style={styles.week}>
-      <Text style={[styles.weekLabel, { color: meter.label }]}>{t('home.readinessInfo.week')}</Text>
-      <View style={styles.weekBars}>
-        {guide != null && guide > 0 && (
-          <View style={[styles.guide, { bottom: (Math.min(guide, top) / top) * WEEK_H, backgroundColor: meter.track }]} />
+    <View style={styles.week}>
+      <View style={styles.historyHead}>
+        <Text style={[styles.weekLabel, { color: meter.label }]}>
+          {t('home.readinessInfo.recorded', { count: known.length, days: range })}
+        </Text>
+        <View style={[styles.ranges, { backgroundColor: meter.iconTile }]} accessibilityRole="radiogroup">
+          {([7, 30] as const).map((r) => (
+            <Pressable
+              key={r}
+              accessibilityRole="radio"
+              accessibilityState={{ selected: range === r }}
+              onPress={() => setRange(r)}
+              style={[styles.range, range === r && { backgroundColor: palette[scheme].card }]}>
+              <Text style={[styles.rangeText, { color: range === r ? meter.ink : meter.caption }]}>
+                {r === 7 ? t('home.readinessInfo.range7') : t('home.readinessInfo.range30')}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+      </View>
+
+      <View style={styles.weekBars} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        {history.guide != null && history.guide > 0 && (
+          <View style={[styles.guide, { bottom: (Math.min(history.guide, top) / top) * CHART_H, backgroundColor: meter.track }]} />
         )}
         {values.map((value, i) => {
           const last = i === values.length - 1;
           return (
-            <View key={i} style={styles.weekColumn}>
+            <View key={i} style={[styles.weekColumn, { gap: range === 7 ? 8 : 2 }]}>
               {value == null ? (
-                <View style={[styles.stub, { backgroundColor: meter.track }]} />
+                <View style={[styles.stub, { backgroundColor: meter.track, width: range === 7 ? 6 : 3 }]} />
               ) : (
                 <View
                   style={[
                     styles.weekBar,
                     {
-                      height: Math.max(4, (Math.min(value, top) / top) * WEEK_H),
+                      height: Math.max(4, (Math.min(value, top) / top) * CHART_H),
+                      maxWidth: range === 7 ? 22 : 7,
+                      borderRadius: range === 7 ? 5 : 2,
                       backgroundColor: last ? tint.fill : tint.track,
                     },
                   ]}
@@ -522,6 +594,32 @@ function WeekBars({
           );
         })}
       </View>
+      <View style={styles.dayLabels} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+        {values.map((_, i) => (
+          // A label may be wider than its column on the month (two digits over
+          // a bar a few points wide), so it overhangs, centred, rather than wrap.
+          <View key={i} style={styles.dayLabelSlot}>
+            {labelled(i) && (
+              <Text style={[styles.dayLabel, { color: meter.caption }]} numberOfLines={1}>
+                {dayLabel(history.endsDaysAgo + values.length - 1 - i, range, language)}
+              </Text>
+            )}
+          </View>
+        ))}
+      </View>
+
+      {average != null && (
+        <View style={styles.stats}>
+          <Text style={[styles.stat, { color: meter.label }]}>
+            {t('home.readinessInfo.average', { value: history.format(average) })}
+          </Text>
+          {history.usual != null && history.usual > 0 && (
+            <Text style={[styles.stat, { color: meter.label }]}>
+              {t('home.readinessInfo.usualIs', { value: history.format(history.usual) })}
+            </Text>
+          )}
+        </View>
+      )}
     </View>
   );
 }
@@ -746,13 +844,24 @@ const styles = StyleSheet.create({
   week: {
     gap: 8,
   },
-  weekLabel: fonts.semibold(12),
+  weekLabel: { ...fonts.semibold(12), flexShrink: 1 },
+  historyHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
+  ranges: { flexDirection: 'row', borderRadius: 12, padding: 2 },
+  range: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10 },
+  rangeText: fonts.semibold(12),
   weekBars: {
     flexDirection: 'row',
     alignItems: 'flex-end',
-    height: WEEK_H,
-    gap: 8,
+    height: CHART_H,
   },
+  dayLabels: { flexDirection: 'row', marginTop: -2 },
+  dayLabelSlot: { flex: 1, alignItems: 'center', overflow: 'visible' },
+  dayLabel: { ...fonts.medium(10), width: 24, textAlign: 'center' },
+  stats: { flexDirection: 'row', justifyContent: 'space-between', gap: 8 },
+  stat: fonts.semibold(13),
+  use: { borderRadius: 16, borderCurve: 'continuous', padding: 12, marginTop: -6 },
+  useLabel: fonts.semibold(12),
+  useText: { ...fonts.medium(14), lineHeight: 19, marginTop: 2 },
   weekColumn: {
     flex: 1,
     alignItems: 'center',

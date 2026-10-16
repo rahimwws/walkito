@@ -54,8 +54,9 @@ import {
   type GoalType,
   type ProgramDay,
   type SessionMinutes,
+  planReasonLine,
 } from '@/entities/program';
-import { useHealthSignals } from '@/entities/health';
+import { useHealthSignals, todayHealthInputs } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
 import { fonts, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
@@ -207,11 +208,7 @@ export function ProgramPage() {
 
   const [minutes, setMinutes] = useState<SessionMinutes>(() => planSettings().defaultMinutes);
   const adjusted = todayPlan(
-    {
-      stepsYesterday: health.stepsYesterday,
-      steps28Avg: health.stepsBaseline,
-      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-    },
+    todayHealthInputs(health),
     minutes,
     now,
   );
@@ -590,13 +587,7 @@ export function ProgramPage() {
               onMinutes={setMinutes}
               onStart={() => startToday()}
               onShort={() => startToday(true)}
-              note={
-                adjusted.reason === 'heavy-day'
-                  ? t('pages.plan.reasonHeavyDay')
-                  : adjusted.reason === 'short-sleep'
-                    ? t('pages.plan.reasonShortSleep')
-                    : null
-              }
+              note={planReasonLine(t, adjusted.reason)}
               covered={sheetOver}
               tests={{
                 chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],

@@ -163,7 +163,7 @@ export const PAGES_RU = {
   'pages.week.shortVersion': 'Версия на 2 минуты',
   'pages.plan.notUpForIt': 'Нет сил? Сделайте версию на 2 минуты',
   'pages.plan.reasonHeavyDay': 'Вчера был большой день - сегодня полегче, без шага вперёд.',
-  'pages.plan.reasonShortSleep': 'Мало спали - сегодня на ступень легче.',
+  'pages.plan.reasonShortSleep': 'Короткие ночи на этой неделе - сегодня на ступень легче.',
   'pages.exerciseSheet.why': 'Зачем это в плане',
   'pages.week.nextWeek': 'Следующая неделя',
   'pages.week.nextWeekFocus': 'Цель: {goal}',

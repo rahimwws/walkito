@@ -5,7 +5,7 @@ import { Linking } from 'react-native';
 import { devPreviewCancel, devPreviewLimitedOffer } from '@/pages/settings';
 import { devOpenReadinessInfo, devSetLegState, devSetReadinessScore } from '@/pages/home';
 import { devPreviewPassSet } from '@/widgets/pass-checkout';
-import { previewNotification } from '@/entities/notifications';
+import { devPreviewOnFeet, previewNotification } from '@/entities/notifications';
 import { currentDay, devClearCheckIn, devForgetMilestones, devSetStreak, devSetWeekGoal } from '@/entities/program';
 import { lockBoost } from '@/entities/offer';
 import {
@@ -91,6 +91,9 @@ const PASS_PARAM = /[?&]previewPass=(ending|ended|off)\b/;
 /** `walkito.dev://?previewFollow` counts three days of use and forgets that
  * the Instagram sheet was offered: Home raises it 2.5 s later. */
 const FOLLOW_PARAM = /[?&]previewFollow\b/;
+/** `walkito.dev://?previewOnFeet` sends the four-hours-on-your-feet push in
+ * five seconds; leave the app to see it arrive, tap it to open the routine. */
+const ON_FEET_PARAM = /[?&]previewOnFeet\b/;
 /** `walkito.dev://?readinessScore=NN` forces Home's readiness value for
  * screenshots, `=off` lets the real one through. `?legState=<id>` forces what
  * Walkito says about the legs (an id from `LEG_STATES`, e.g. `sore`,
@@ -236,6 +239,7 @@ export function useDevLinks(): void {
         if (review != null) devSetReviewMode(review[1] !== 'off');
         if (PASS_SET_PARAM.test(url)) devPreviewPassSet();
         if (FOLLOW_PARAM.test(url)) devResetFollowOffer();
+        if (ON_FEET_PARAM.test(url)) void devPreviewOnFeet();
         const pass = PASS_PARAM.exec(url);
         if (pass != null) devPreviewPass(pass[1] as 'ending' | 'ended' | 'off');
         const forced = READINESS_SCORE_PARAM.exec(url);

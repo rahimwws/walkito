@@ -14,6 +14,9 @@ export {
 export {
   PLAN_KIND,
   STEP_CHECK_KIND,
+  ON_FEET_KIND,
+  devPreviewOnFeet,
+  maybeSendOnFeetCheck,
   WINDOW_DAYS,
   clearAll,
   deliveryState,

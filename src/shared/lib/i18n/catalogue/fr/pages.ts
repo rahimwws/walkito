@@ -147,7 +147,7 @@ export const PAGES_FR = {
   'pages.week.shortVersion': 'Version de 2 minutes',
   'pages.plan.notUpForIt': 'Pas le courage ? Fais la version de 2 minutes',
   'pages.plan.reasonHeavyDay': 'Grosse journée hier - aujourd’hui c’est plus léger, sans monter d’un cran.',
-  'pages.plan.reasonShortSleep': 'Nuit courte - aujourd’hui, un cran plus facile.',
+  'pages.plan.reasonShortSleep': 'Nuits courtes cette semaine - aujourd’hui, un cran plus facile.',
   'pages.exerciseSheet.why': 'Pourquoi c’est dans ton plan',
   'pages.week.nextWeek': 'La semaine prochaine',
   'pages.week.nextWeekFocus': 'Objectif : {goal}',

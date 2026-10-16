@@ -11,7 +11,15 @@ import type { PlanDay, PlannedExercise, SessionMinutes } from './week';
  * session, then the user's own choice of minutes.
  */
 
-export type TodayReason = 'flare' | 'spike' | 'heavy-day' | 'short-sleep' | null;
+export type TodayReason =
+  | 'flare'
+  | 'spike'
+  | 'heavy-day'
+  | 'on-feet'
+  | 'big-workout'
+  | 'short-sleep'
+  | 'resting-hr'
+  | null;
 
 export type TodaySignals = {
   painToday: number | null;
@@ -22,6 +30,22 @@ export type TodaySignals = {
   steps28Avg: number | null;
   /** Hours slept last night, when Health has it. */
   sleepHours: number | null;
+  /**
+   * The seven-night mean under seven hours (`HealthSignals.sleepShort`).
+   * When given, this decides `short-sleep` instead of one night: the evidence
+   * is about sustained short sleep, not about Tuesday. Absent, the old
+   * one-night rule stands.
+   */
+  sleepShort?: boolean;
+  /** Hours on foot yesterday, and the person's own learned limit past which
+   * their next mornings get worse. Both from Health; null while unknown. */
+  onFeetYesterday?: number | null;
+  onFeetThreshold?: number | null;
+  /** A run or a session of sport on the feet bigger than anything in the past
+   * four weeks, yesterday. */
+  bigWorkoutYesterday?: boolean;
+  /** Resting heart rate 3+ bpm over the person's own usual this morning. */
+  restingHRElevated?: boolean;
   /** Sessions still owed a step back after in-session pain ≥ 6. */
   stepDownOwed: number;
   /** The user's pick on the today card; null keeps the plan's minutes. */
@@ -82,6 +106,21 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
     signals.steps28Avg != null &&
     signals.steps28Avg > 0 &&
     signals.stepsYesterday > HEAVY_DAY_RATIO * signals.steps28Avg;
+  /** Yesterday was more than the foot is used to, by the first measure that
+   * says so: a session bigger than the past month's, the person's own limit
+   * of hours on foot, then the step count. Each turns a strength day into
+   * recovery, the same way. */
+  const overLimit =
+    signals.onFeetYesterday != null &&
+    signals.onFeetThreshold != null &&
+    signals.onFeetYesterday >= signals.onFeetThreshold;
+  const recoveryDay: TodayReason = signals.bigWorkoutYesterday === true
+    ? 'big-workout'
+    : overLimit
+      ? 'on-feet'
+      : heavy
+        ? 'heavy-day'
+        : null;
 
   if (pain != null && pain >= FLARE_PAIN) {
     reason = 'flare';
@@ -106,8 +145,8 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
     reason = 'spike';
     exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
     steppedDown = true;
-  } else if (heavy && type === 'strength') {
-    reason = 'heavy-day';
+  } else if (recoveryDay !== null && type === 'strength') {
+    reason = recoveryDay;
     type = 'recovery';
     const focus = exercises.find((e) => e.focus);
     const recovery = CHAINS.recovery.filter((id) => allowed(id, ctx)).slice(0, 1);
@@ -116,8 +155,17 @@ export function adjustToday(day: PlanDay, signals: TodaySignals, ctx: Eligibilit
       ...(focus != null ? [stepDown(focus, ctx, hasStep)] : []),
       ...[...recovery, ...stretch].map((id) => ({ id, level: 1, dose: doseFor(id, 1, hasStep), focus: false })),
     ];
-  } else if (signals.sleepHours != null && signals.sleepHours < SHORT_SLEEP_HOURS) {
+  } else if (
+    signals.sleepShort != null
+      ? signals.sleepShort
+      : signals.sleepHours != null && signals.sleepHours < SHORT_SLEEP_HOURS
+  ) {
     reason = 'short-sleep';
+    exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
+    steppedDown = true;
+  } else if (signals.restingHRElevated === true && type === 'strength') {
+    // A nudge, not a verdict: the strength day stays, one level lighter.
+    reason = 'resting-hr';
     exercises = exercises.map((e) => stepDown(e, ctx, hasStep));
     steppedDown = true;
   }
