@@ -1,5 +1,5 @@
-import { useRef, type ReactNode } from 'react';
-import { StyleSheet, type LayoutChangeEvent } from 'react-native';
+import { useEffect, useRef, type ReactNode } from 'react';
+import { AppState, StyleSheet, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -56,9 +56,18 @@ export function DailyStack({ first, second, firstHeight }: DailyStackProps) {
   const lastFirst = useRef(0);
   const lastSecond = useRef(0);
 
-  /** A measured height: taken as is the first time, glided to after. */
+  /**
+   * A measured height: taken as is the first time, glided to after.
+   *
+   * Never zero. Neither block is ever empty, and a zero is what a layout made
+   * while Home was not on screen reports (the app launched in the background
+   * by a Health wake or the on-feet task, a frozen tab): taken, it collapsed
+   * the column and the blocks and the Library row drew over each other until
+   * the next cold start.
+   */
   const follow = (value: SharedValue<number>, last: { current: number }) => (event: LayoutChangeEvent) => {
     const height = event.nativeEvent.layout.height;
+    if (height < 1) return;
     if (Math.abs(height - last.current) < 0.5) return;
     const initial = last.current === 0;
     last.current = height;
@@ -66,6 +75,17 @@ export function DailyStack({ first, second, firstHeight }: DailyStackProps) {
       ? height
       : withTiming(height, { duration: HEIGHT_MS, easing: HEIGHT_EASING, reduceMotion: ReduceMotion.System });
   };
+
+  // Back in front: the last good heights, set again, in case anything moved
+  // the values while the app was away.
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (state) => {
+      if (state !== 'active') return;
+      if (firstHeight == null && lastFirst.current > 0) measuredFirst.value = lastFirst.current;
+      if (lastSecond.current > 0) secondHeight.value = lastSecond.current;
+    });
+    return () => sub.remove();
+  }, [firstHeight, measuredFirst, secondHeight]);
 
   const below = useAnimatedStyle(() => {
     const height = firstHeight != null ? firstHeight.value : measuredFirst.value;

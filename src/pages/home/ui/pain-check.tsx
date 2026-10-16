@@ -5,7 +5,7 @@ import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused, useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, useWindowDimensions, View, type LayoutChangeEvent } from 'react-native';
+import { AppState, Modal, Pressable, StyleSheet, Text, useWindowDimensions, View, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -303,6 +303,9 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
   const lastHeight = useRef(0);
   const onViews = (event: LayoutChangeEvent) => {
     const next = event.nativeEvent.layout.height;
+    // Never zero: see `DailyStack`'s `follow`. A layout made off screen
+    // reports it, and taken it collapsed Home's column.
+    if (next < 1) return;
     if (Math.abs(next - lastHeight.current) < 0.5) return;
     const initial = lastHeight.current === 0;
     lastHeight.current = next;
@@ -315,9 +318,22 @@ export function PainCheck({ onLogged, covered = false, onSheet, heights }: PainC
       : withTiming(next, { duration: HEIGHT_MS, easing: HEIGHT_EASING, reduceMotion: ReduceMotion.System });
     if (initial) setMeasured(true);
   };
+  const lastRow = useRef(0);
   const onRow = (event: LayoutChangeEvent) => {
-    rowHeight.value = event.nativeEvent.layout.height;
+    const next = event.nativeEvent.layout.height;
+    if (next < 1) return;
+    lastRow.current = next;
+    rowHeight.value = next;
   };
+  // Back in front: the last good heights, set again (see `DailyStack`).
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (state) => {
+      if (state !== 'active' || swapping.current) return;
+      if (lastHeight.current > 0) viewsHeight.value = lastHeight.current;
+      if (lastRow.current > 0) rowHeight.value = lastRow.current;
+    });
+    return () => sub.remove();
+  }, [viewsHeight, rowHeight]);
   // The clip reaches past the views on every side by its bleed (the tipped
   // cards, his hop), so its own box is their height plus that.
   const heightStyle = useAnimatedStyle(() => ({ height: viewsHeight.value + CLIP_BLEED_Y * 2 }));
