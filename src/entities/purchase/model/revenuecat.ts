@@ -719,7 +719,11 @@ function storeOf(store: string): Subscription['store'] {
 function subscriptionOf(info: CustomerInfo): Subscription | null {
   const held = info.entitlements.active[ENTITLEMENT] ?? Object.values(info.entitlements.active)[0];
   if (held == null) return null;
-  if (held.store === 'PROMOTIONAL' || isPassProduct(held.productIdentifier)) return null;
+  // A dashboard grant (or a pass) can sit beside a real store subscription:
+  // a founder's grant to 2226 and an offer code's year, say. The entitlement
+  // names whichever lasts longer, the grant, and the store subscription would
+  // vanish from Settings with nothing to cancel it from. So it is looked for.
+  if (held.store === 'PROMOTIONAL' || isPassProduct(held.productIdentifier)) return storeSubscriptionOf(info);
   const lifetime = held.expirationDate == null || LIFETIME_PRODUCT_IDS.includes(held.productIdentifier);
   return {
     kind: lifetime ? 'lifetime' : 'subscription',
@@ -730,6 +734,33 @@ function subscriptionOf(info: CustomerInfo): Subscription | null {
     periodType: periodTypeOf(held.periodType),
     store: storeOf(held.store),
     familyShared: held.ownershipType === 'FAMILY_SHARED',
+    managementUrl: info.managementURL ?? null,
+  };
+}
+
+/**
+ * An active subscription a store bills, read from the customer's own list
+ * rather than from the entitlement: what `subscriptionOf` falls back to when
+ * the entitlement is a dashboard grant or a pass. The one that runs longest,
+ * or null when every store subscription has ended.
+ */
+function storeSubscriptionOf(info: CustomerInfo): Subscription | null {
+  const all = Object.values(info.subscriptionsByProductIdentifier ?? {});
+  const billed = all
+    .filter((sub) => sub.isActive && storeOf(sub.store) !== 'other' && !isPassProduct(sub.productIdentifier))
+    .sort((a, b) => Date.parse(b.expiresDate ?? '') - Date.parse(a.expiresDate ?? ''));
+  const sub = billed[0];
+  if (sub == null) return null;
+  const expiresAt = sub.expiresDate == null ? null : Date.parse(sub.expiresDate);
+  return {
+    kind: 'subscription',
+    productId: sub.productIdentifier,
+    period: periodOfProduct(sub.productIdentifier, null),
+    willRenew: sub.willRenew,
+    expiresAt: expiresAt != null && Number.isFinite(expiresAt) ? expiresAt : null,
+    periodType: periodTypeOf(sub.periodType),
+    store: storeOf(sub.store),
+    familyShared: sub.ownershipType === 'FAMILY_SHARED',
     managementUrl: info.managementURL ?? null,
   };
 }
