@@ -124,7 +124,7 @@ export const FLAT_FEET_AGE_EN: Guide = {
         '**Pregnancy can lower the arch a little, and the change can last after birth.** In a 2013 study, 49 women had their feet measured in the first trimester and again about four and a half months after giving birth. Arch height and arch stiffness went down, and foot length and arch drop went up.',
         'The first pregnancy drove most of the change. In first-time mothers, foot length grew by about 1.4 millimetres and arch drop by about 1.0 millimetre on average.',
         'Two things keep this in proportion. The authors said the average changes were small, and the study found no change in one measure of how the foot rolled during walking. "Lasting" in this study means still there at the follow-up visit a few months after birth. Nobody was followed for years.',
-        'If your shoe size went up after a pregnancy and your feet feel fine, that change is common. If one arch keeps dropping, or the inner ankle starts to hurt, get it checked.',
+        'If your shoe size went up after a pregnancy and your feet feel fine, that change is common. If your heels hurt during pregnancy, see [plantar fasciitis in pregnancy](/plantar-fasciitis-pregnancy/). If one arch keeps dropping, or the inner ankle starts to hurt, get it checked.',
       ],
       cites: [CITE.segalPregnancy],
     },
