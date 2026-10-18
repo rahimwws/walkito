@@ -219,7 +219,7 @@ export const HAMMER_TOE_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text:
       'Walkito incluye [recoger la toalla](/es/ejercicios/recoger-toalla-con-los-dedos/), [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para dedos en martillo, pero los ejercicios se traslapan. Si tienes un dedo en martillo flexible y quieres una forma estructurada de hacer trabajo de dedos, las sesiones de 3 o 5\u00A0minutos, en los días que tú elijas, mantienen los ejercicios constantes sin necesidad de recordar una rutina aparte.',
     more: [

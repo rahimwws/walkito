@@ -108,7 +108,7 @@ export const BAREFOOT_ES: Guide = {
         'La loseta o la madera no le dan amortiguación al talón, y los primeros pasos después de reposar son cuando la fascitis plantar suele doler más. Nuestra página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) sugiere un estiramiento antes de pararte y algo en los pies para esos primeros pasos.',
         'La amortiguación bajo el talón puede importar. En un estudio de 2023, Landorf y colegas compararon a 50\u00A0personas con dolor en la planta del talón con 25\u00A0personas emparejadas sin ese dolor. Las que tenían dolor de talón pasaban 3,4\u00A0horas más al día de pie y usaban zapatos con talones más duros. Eso muestra una relación, no una causa.',
         'Un dolor profundo en el centro del talón que empeora descalzo sobre piso duro también puede venir de la almohadilla grasa del talón (el cojín de grasa bajo el hueso del talón). Mira [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/) para ese patrón.',
-        'Los ratos cortos descalzo sobre pasto o arena son más suaves. Si aumentan tu dolor de talón a la mañana siguiente, fue demasiado.',
+        'Los ratos cortos descalzo sobre pasto o arena son más suaves. Si aumentan tu dolor de talón a la mañana siguiente, fue demasiado. La misma revisión de la mañana siguiente sirve para cualquier caminata: mira [caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/).',
       ],
       cites: [CITE.landorfFootwear],
     },
@@ -274,7 +274,7 @@ export const BAREFOOT_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es un programa de ejercicios para el dolor de talón, de pie y de pierna. Incluye el ejercicio de pie corto, la separación de dedos, las elevaciones de talón y el trabajo de equilibrio de esta página, y los va subiendo de nivel conforme se vuelven más fáciles. No elige tus zapatos y no diagnostica. Un pie y una pantorrilla más fuertes son una base sensata, sean cuales sean los zapatos que termines usando.',
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días al principio (cada 28 una vez que alcanzas una meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es para adultos y no reemplaza a un profesional de la salud.',

@@ -28,7 +28,7 @@ export const SESAMOIDITIS_PT: Guide = {
       h2: 'O que são os ossos sesamoides e por que eles doem?',
       paragraphs: [
         'Os dois ossos sesamoides ficam embaixo da cabeça do primeiro metatarso, o osso longo atrás do dedão. O sesamoide medial, mais perto do centro do pé, é o que se machuca com mais frequência. Juntos, eles ajudam o dedão a empurrar o chão e absorvem força na fase de impulso da caminhada.',
-        'A sesamoidite aparece quando esses ossos ou os tecidos em volta inflamam. Atividades que carregam a parte da frente do pé de forma repetida, como corrida, dança ou saltos, são gatilhos comuns. Um aumento repentino no volume de treino também. Pessoas com pé cavo ou com a cabeça do primeiro metatarso mais saliente têm mais tendência ao problema, porque mais pressão cai naquele ponto.',
+        'A sesamoidite aparece quando esses ossos ou os tecidos em volta inflamam. Atividades que carregam a parte da frente do pé de forma repetida, como corrida, dança ou saltos, são gatilhos comuns. Um aumento repentino no volume de treino também. Pessoas com [pé cavo](/pt/pe-cavo-exercicios/) ou com a cabeça do primeiro metatarso mais saliente têm mais tendência ao problema, porque mais pressão cai naquele ponto.',
         'O termo sesamoidite é usado de forma ampla na prática e não tem uma definição rígida. Ele pode descrever a inflamação dos próprios ossos, dos tecidos moles em volta ou dos dois. Uma revisão sistemática de 2025 observou que ainda não existem diretrizes padronizadas para o tratamento conservador.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -50,7 +50,7 @@ export const SESAMOIDITIS_PT: Guide = {
         'A revisão sistemática de 2025 de Biz e colegas reuniu dados individuais de 11\u00A0estudos com 59\u00A0pacientes. Os tratamentos mais comuns foram:',
         {
           list: [
-            'Palmilhas.',
+            '[Palmilhas](/pt/palmilhas-ou-exercicios/).',
             'Ajuste de atividade.',
             'Infiltrações de corticoide.',
           ],
@@ -91,7 +91,7 @@ export const SESAMOIDITIS_PT: Guide = {
       h2: 'Qual o papel do exercício?',
       paragraphs: [
         'A resposta honesta é que o exercício tem um papel limitado no tratamento da sesamoidite em si. Diferente da [fascite plantar](/pt/exercicios-fascite-plantar/) ou da [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/), em que programas de carga têm bom apoio de ensaios, não existem ensaios de exercício para sesamoidite. A revisão sistemática de 2025 não encontrou nenhum estudo que testasse um protocolo de exercícios específico.',
-        'O que o exercício pode ajudar é o quadro em volta. Uma panturrilha tensa joga o peso para a parte da frente do pé durante a caminhada. Alongar o gastrocnêmio e o sóleo pode reduzir essa carga para a frente. Músculos pequenos do pé fracos também podem contribuir para uma distribuição desigual da pressão na parte da frente do pé. Abrir os dedos e o pé curto podem ajudar a dividir a carga de forma mais equilibrada entre as cabeças dos metatarsos, embora isso não tenha sido testado especificamente para sesamoidite.',
+        'O que o exercício pode ajudar é o quadro em volta. Uma [panturrilha tensa](/pt/panturrilha-tensa/) joga o peso para a parte da frente do pé durante a caminhada. Alongar o gastrocnêmio e o sóleo pode reduzir essa carga para a frente. Músculos pequenos do pé fracos também podem contribuir para uma distribuição desigual da pressão na parte da frente do pé. Abrir os dedos e o pé curto podem ajudar a dividir a carga de forma mais equilibrada entre as cabeças dos metatarsos, embora isso não tenha sido testado especificamente para sesamoidite.',
         'Se você está se recuperando de uma sesamoidite e perdeu força nos dedos ou flexibilidade na panturrilha durante o período de descanso, exercícios leves para a região da [planta da parte da frente do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) podem fazer parte de um plano de volta à atividade. Mas **alívio de carga e ajuste de atividade são as ferramentas principais, não o exercício.**',
       ],
     },
@@ -154,9 +154,9 @@ export const SESAMOIDITIS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
-      'A sesamoidite é controlada principalmente com alívio de carga e calçado, não com um programa de exercícios. O Walkito foi feito para problemas como fascite plantar e pé chato, em que programas de carga estruturados têm apoio de ensaios. Se a sua sesamoidite passou e você quer reconstruir a força do pé e da panturrilha como parte da volta à atividade, o trabalho para os músculos pequenos do pé e os alongamentos de panturrilha do app podem ser um complemento útil.',
+      'A sesamoidite é controlada principalmente com alívio de carga e calçado, não com um programa de exercícios. O Walkito foi feito para problemas como [fascite plantar](/pt/fascite-plantar/) e [pé chato](/pt/pe-chato/), em que programas de carga estruturados têm apoio de ensaios. Se a sua sesamoidite passou e você quer reconstruir a força do pé e da panturrilha como parte da volta à atividade, o trabalho para os músculos pequenos do pé e os alongamentos de panturrilha do app podem ser um complemento útil.',
     more: [
       'Se a dor na parte da frente do pé é mais ampla e envolve a segunda ou a terceira cabeça dos metatarsos, veja a página de [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) para exercícios com mais evidência por trás.',
     ],

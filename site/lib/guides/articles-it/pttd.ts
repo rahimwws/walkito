@@ -23,7 +23,7 @@ export const PTTD_IT: Guide = {
     'La disfunzione del tendine tibiale posteriore, spesso chiamata PTTD, si verifica quando il tendine che sostiene l’arco sul lato interno della caviglia si indebolisce o si infiamma. È la causa più comune di piede piatto acquisito dell’adulto. L’esercizio può aiutare negli stadi iniziali, ma non tutti gli stadi rispondono allo stesso modo, e le prove sono ancora limitate. Questa pagina spiega gli stadi, gli esercizi con il sostegno migliore e quando entrano in gioco un tutore o la chirurgia.',
   intro: [
     'Il tendine tibiale posteriore passa dietro il malleolo interno e si attacca sotto il piede. Tiene su l’arco mentre cammini. Quando degenera, l’arco si abbassa, il tallone si inclina verso l’esterno e il dolore si concentra lungo l’interno della caviglia o l’interno del mesopiede.',
-    'Una revisione sistematica del 2018 ha trovato solo tre studi randomizzati o controllati, per un totale di 93\u00A0persone, quindi le prove sull’esercizio qui sono molto più scarse che per problemi come la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille.',
+    'Una revisione sistematica del 2018 ha trovato solo tre studi randomizzati o controllati, per un totale di 93\u00A0persone, quindi le prove sull’esercizio qui sono molto più scarse che per problemi come la [fascite plantare](/it/esercizi-fascite-plantare/) o la [tendinite d’Achille](/it/tendinite-achille-esercizi/).',
   ],
   toc: true,
   takeaways: [
@@ -158,8 +158,8 @@ export const PTTD_IT: Guide = {
     {
       h2: 'Che legame c’è tra PTTD e piede piatto?',
       paragraphs: [
-        'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, cioè un piede piatto che compare da adulti invece di esserci fin dall’infanzia. **Se avevi archi normali e da un lato hanno iniziato ad abbassarsi, con dolore dietro il malleolo interno, la PTTD è la spiegazione più probabile.**',
-        'Il piede piatto flessibile congenito, quello presente fin dall’infanzia, è una situazione diversa. Può non dare mai sintomi. Gli esercizi si sovrappongono: piede corto, inversione con elastico e sollevamenti sulle punte compaiono sia negli [esercizi per il piede piatto](/it/esercizi-piede-piatto/) sia nei programmi per la PTTD. Ma il contesto clinico è diverso, e la PTTD di solito richiede plantari e un controllo più attento, perché il tendine sta degenerando, non è semplicemente lasso.',
+        'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, cioè un piede piatto che compare da adulti invece di esserci fin dall’infanzia. **Se avevi un arco plantare normale e da un lato ha iniziato ad abbassarsi, con dolore dietro il malleolo interno, la PTTD è la spiegazione più probabile.**',
+        'Il [piede piatto](/it/piede-piatto/) flessibile congenito, quello presente fin dall’infanzia, è una situazione diversa. Può non dare mai sintomi. Gli esercizi si sovrappongono: piede corto, inversione con elastico e sollevamenti sulle punte compaiono sia negli [esercizi per il piede piatto](/it/esercizi-piede-piatto/) sia nei programmi per la PTTD. Ma il contesto clinico è diverso, e la PTTD di solito richiede [plantari](/it/plantari-o-esercizi/) e un controllo più attento, perché il tendine sta degenerando, non è semplicemente lasso.',
         'Se non sai se il tuo piede piatto c’è da sempre o è nuovo, un professionista sanitario può confrontare i due piedi, controllare il tendine e guardare l’allineamento del tallone quando stai in piedi.',
       ],
       cites: [CITE.ling, CITE.zarali],
@@ -192,7 +192,7 @@ export const PTTD_IT: Guide = {
     {
       q: 'Che sensazione dà il dolore al tendine tibiale posteriore?',
       cites: [CITE.ling],
-      a: 'Il dolore di solito si trova dietro o sotto il malleolo interno. Può estendersi lungo l’interno dell’arco. Peggiora con l’attività, soprattutto camminando in salita, su terreni irregolari o stando in equilibrio su una gamba. La zona può gonfiarsi. Un segno precoce comune è la difficoltà a fare un sollevamento sulle punte su una gamba dal lato colpito.',
+      a: 'Il dolore di solito si trova dietro o sotto il malleolo interno. Può estendersi lungo l’interno dell’arco. Peggiora con l’attività, soprattutto camminando in salita, su terreni irregolari o stando in [equilibrio su una gamba](/it/esercizi/equilibrio-su-una-gamba/). La zona può gonfiarsi. Un segno precoce comune è la difficoltà a fare un sollevamento sulle punte su una gamba dal lato colpito.',
     },
     {
       q: 'Servono i plantari per la PTTD?',
@@ -231,8 +231,8 @@ export const PTTD_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
-    text: 'Walkito include inversione con elastico, piede corto e sollevamenti sulle punte nella sua libreria di esercizi, e li mette nei giorni di forza come parte di un programma per arco ed equilibrio. Quando nel check-in segni l’interno della caviglia o l’arco sulla mappa del dolore, la sessione si adatta a quella risposta. L’app è pensata per fascite plantare e piede piatto. La PTTD si sovrappone a entrambi, ma l’app non fa diagnosi di PTTD e non sostituisce i plantari né la stadiazione clinica.',
+    h2: 'Come trasformarlo in un piano',
+    text: 'Walkito include inversione con elastico, piede corto e sollevamenti sulle punte nella sua libreria di esercizi, e li mette nei giorni di forza come parte di un programma per arco ed equilibrio. Quando nel check-in segni l’interno della caviglia o l’arco sulla mappa del dolore, la sessione si adatta a quella risposta. L’app è pensata per [fascite plantare](/it/fascite-plantare/) e piede piatto. La PTTD si sovrappone a entrambi, ma l’app non fa diagnosi di PTTD e non sostituisce i plantari né la stadiazione clinica.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Se ti è stata diagnosticata una PTTD, usa l’app insieme ai plantari e chiedi al professionista sanitario che ti segue se lo stadio è adatto all’esercizio.',
     ],

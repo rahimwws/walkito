@@ -18,7 +18,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     'Come fare l’allungamento del polpaccio a ginocchio teso per la fascite plantare e i polpacci rigidi: tecnica, serie, tempi e cosa dicono gli studi.',
   h1: 'Allungamento del polpaccio per la fascite plantare: tecnica, serie e tempi',
   lede:
-    'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio. Un gastrocnemio rigido limita quanto si piega la caviglia, e in uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte. La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio il grado più alto, A.',
+    'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio. Un gastrocnemio rigido limita quanto si piega la caviglia, e in uno studio caso-controllo su 50\u00A0persone con [fascite plantare](/it/fascite-plantare/) e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte. La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio il grado più alto, A.',
   takeaways: [
     'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con un odds ratio di 23,3 (Riddle e colleghi, 2003).',
     'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio (Patel e DiGiovanni, 2011).',
@@ -88,7 +88,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     {
       h2: 'Chi dovrebbe fare questo allungamento e chi dovrebbe saltarlo?',
       paragraphs: [
-        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, polpacci rigidi per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. Fa parte delle pagine [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) e [dolore al tallone quando corri](/heel-pain-runners/) (in inglese).',
+        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, [polpacci rigidi](/it/polpacci-rigidi/) per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. Fa parte delle pagine [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) e [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
         'Saltalo o modificalo se hai un problema al tendine d’Achille che fa male durante l’allungamento. In quel caso il dolore viene da un’altra struttura, e caricare l’Achille con un allungamento al muro potrebbe non essere il punto di partenza giusto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per l’approccio specifico per l’Achille.',
         'Se non riesci ad arrivare al muro o a stare in piedi comodamente, un allungamento da seduto con un asciugamano dà una tensione simile sul polpaccio. Passa un asciugamano intorno all’avampiede, tieni il ginocchio teso e tira le dita verso di te.',
       ],
@@ -137,7 +137,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’allungamento del polpaccio insieme all’allungamento del soleo e a quello della fascia plantare in quasi tutte le sessioni. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. L’app passa dagli allungamenti al lavoro di forza al tuo ritmo.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

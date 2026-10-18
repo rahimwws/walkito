@@ -19,7 +19,7 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
     'Come fare la raccolta dell’asciugamano con le dita dei piedi per piedi più forti: tecnica, serie, cosa allena, errori e confronto con il piede corto.',
   h1: 'Raccolta dell’asciugamano: come farla per la forza del piede',
   lede:
-    'La raccolta dell’asciugamano è un esercizio in cui tiri un asciugamano verso di te usando solo le dita dei piedi. Lavora sui piccoli muscoli sotto l’arco e sui flessori delle dita. È uno degli esercizi di rinforzo del piede più vecchi e semplici della riabilitazione, e compare nei programmi per piede piatto, fascite plantare e dolore sotto l’avampiede.',
+    'La raccolta dell’asciugamano è un esercizio in cui tiri un asciugamano verso di te usando solo le dita dei piedi. Lavora sui piccoli muscoli sotto l’arco e sui flessori delle dita. È uno degli esercizi di rinforzo del piede più vecchi e semplici della riabilitazione, e compare nei programmi per [piede piatto](/it/piede-piatto/), [fascite plantare](/it/fascite-plantare/) e dolore sotto l’avampiede.',
   takeaways: [
     'La raccolta dell’asciugamano attiva i muscoli intrinseci del piede, ma la ricerca elettromiografica mostra che recluta anche i flessori lunghi delle dita (muscoli estrinseci) più dell’esercizio del piede corto (Jung e colleghi, 2011).',
     'In uno studio randomizzato del 2012 su adulti sani, il gruppo che ha fatto quattro settimane di raccolta dell’asciugamano ha migliorato l’equilibrio meno del gruppo che ha fatto il piede corto, anche se entrambi sono migliorati rispetto all’inizio (Lynn e colleghi, 2012).',
@@ -138,7 +138,7 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito usa la raccolta dell’asciugamano come esercizio iniziale di rinforzo del piede. Quando ti sembra facile per due sessioni di fila, il piano ti porta all’esercizio del piede corto e alla sua progressione da seduto a in piedi. Scegli sessioni da 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue il tempo di tenuta dell’arco e la resistenza del polpaccio.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

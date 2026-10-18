@@ -77,8 +77,8 @@ export default function NutzungsbedingungenDe() {
         <p>
           <b>Es ist kein Medizinprodukt, keine Diagnose und keine Behandlung.</b>{' '}
           Es kann dir nicht sagen, was mit deinem Fuß los ist, und nichts darin
-          ersetzt den Rat einer medizinischen Fachperson, die dich untersucht
-          hat.
+          ersetzt ärztlichen oder physiotherapeutischen Rat nach einer
+          Untersuchung.
         </p>
 
         <h2>Gesundheit und Sicherheit</h2>
@@ -89,7 +89,7 @@ export default function NutzungsbedingungenDe() {
           eine Weise wehtut, von der die App nichts wissen kann.
         </p>
         <p className="notice">
-          Geh vor dem Start zu einer medizinischen Fachperson, und hör auf und
+          Geh vor dem Start zum Arzt oder zur Ärztin, und hör auf und
           hol dir Rat, wenn dein Schmerz nach einer Verletzung oder einem Sturz
           begann, mit Taubheit, Kribbeln, Brennen, Schwellung oder Wärme
           einhergeht, dich nachts weckt oder wenn sich ein Fußgewölbe im

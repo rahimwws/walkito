@@ -22,7 +22,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
     'Dor no calcanhar à noite ou em repouso pode indicar fratura por estresse, nervo comprimido ou artrite. Sinais de alerta e quando procurar um profissional.',
   h1: 'Dor no calcanhar à noite: o que causa e quando é sinal de alerta',
   lede:
-    'A dor no calcanhar que aparece à noite, na cama ou em repouso é um padrão diferente da fisgada clássica dos primeiros passos da manhã na fascite plantar. Dor à noite e em repouso pode indicar uma fratura por estresse do calcâneo, um nervo comprimido, artrite inflamatória ou outra condição que precisa de um profissional de saúde. Esta página passa pelas causas comuns e pelas que você não deve deixar para depois.',
+    'A dor no calcanhar que aparece à noite, na cama ou em repouso é um padrão diferente da fisgada clássica dos primeiros passos da manhã na [fascite plantar](/pt/fascite-plantar/). Dor à noite e em repouso pode indicar uma fratura por estresse do calcâneo, um nervo comprimido, artrite inflamatória ou outra condição que precisa de um profissional de saúde. Esta página passa pelas causas comuns e pelas que você não deve deixar para depois.',
   intro: [
     'Se o seu calcanhar dói principalmente nos primeiros passos da manhã e depois melhora, o ponto de partida mais provável é [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/). Esta página é para a dor que continua em repouso, acorda você ou aparece depois de um tempo sem apoiar o pé e não combina com o padrão típico da fascite plantar.',
   ],
@@ -40,7 +40,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       paragraphs: [
         'A fascite plantar dói porque a fáscia enrijece enquanto você dorme e depois estica de uma vez quando você fica em pé. Essa dor é máxima no primeiro passo e melhora conforme você se movimenta. **Se o seu calcanhar dói enquanto você está deitado na cama, sem nenhum peso no pé, normalmente o mecanismo é outro.**',
         'Uma revisão de 2018 na American Family Physician lista várias causas de dor no calcanhar que se comportam de um jeito diferente da fascite plantar. A diferença principal: a dor da fascite plantar melhora com a atividade, enquanto a dor de fraturas por estresse, nervos comprimidos, tumores e condições inflamatórias não segue esse padrão.',
-        'O pé também fica apontado para baixo (flexão plantar) durante o sono. Essa posição pode encurtar o tendão de Aquiles e a panturrilha, o que às vezes contribui para o desconforto no calcanhar. As talas noturnas agem sobre isso segurando o tornozelo num ângulo neutro. Mas a tala noturna é uma ferramenta para fascite plantar, não um substituto para investigar uma dor que realmente piora em repouso.',
+        'O pé também fica apontado para baixo (flexão plantar) durante o sono. Essa posição pode encurtar o tendão de Aquiles e a panturrilha, o que às vezes contribui para o desconforto no calcanhar. As [talas noturnas](/pt/tala-noturna-fascite-plantar/) agem sobre isso segurando o tornozelo num ângulo neutro. Mas a tala noturna é uma ferramenta para fascite plantar, não um substituto para investigar uma dor que realmente piora em repouso.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },

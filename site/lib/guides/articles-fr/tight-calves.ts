@@ -55,7 +55,7 @@ export const TIGHT_CALVES_FR: Guide = {
       h2: 'Des mollets tendus causent-ils des douleurs au pied et au talon\u00A0?',
       keyFact: 'Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une cheville incapable de se plier au-delà de 0\u00A0degré allait de pair avec une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire (Riddle et coll., 2003).',
       paragraphs: [
-        'Des mollets tendus sont associés à la fasciite plantaire, la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).',
+        'Des mollets tendus sont associés à la [fasciite plantaire](/fr/fasciite-plantaire/), la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).',
         'Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50\u00A0personnes atteintes de fasciite plantaire à 100\u00A0personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire que celles qui pouvaient dépasser 10\u00A0degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.',
         'Dans une étude ultérieure sur 254\u00A0personnes atteintes de fasciite plantaire, 83\u00A0% avaient une flexion de la cheville limitée, et 57\u00A0% de l’ensemble des patients avaient un gastrocnémien raide isolé (Patel et DiGiovanni, 2011).',
         '**Les deux études montrent un lien, pas que des mollets tendus causent la fasciite plantaire.** La large fourchette autour du chiffre de 23,3 signifie aussi que la vraie valeur pourrait être bien plus faible. C’est tout de même une des raisons pour lesquelles la recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet la note A, sa meilleure note, pour la douleur sous le talon.',
@@ -194,7 +194,6 @@ export const TIGHT_CALVES_FR: Guide = {
             'Laissez du temps à une nouvelle paire de chaussures à faible drop avant les sorties longues.',
           ],
         },
-        'La page sur la [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la gestion de la charge.',
         'Si vous êtes debout toute la journée\u00A0:',
         {
           list: [

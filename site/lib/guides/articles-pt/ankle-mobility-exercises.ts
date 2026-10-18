@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
         'Pouca dobra do tornozelo está ligada a vários problemas, embora estar ligado não seja o mesmo que causar:',
         {
           list: [
-            '**Fascite plantar:** Num estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003).',
+            '**Fascite plantar:** Num estudo de caso-controle pareado com 50\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/) e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003).',
             '**Lesões em recrutas:** Em 1.093\u00A0recrutas homens do exército acompanhados ao longo de três meses de treinamento pesado, a amplitude do tornozelo medida no início foi um forte preditor de quem se lesionou, num total de 48\u00A0lesões (Pope e colegas, 1998).',
           ],
         },
@@ -246,7 +246,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano uma semana de cada vez em torno de uma meta, para dor no calcanhar, no pé e na perna. A mobilidade do tornozelo faz parte dele: alongamentos de panturrilha, uma sustentação do joelho na parede e o balanço do tornozelo se revezam nas suas sessões, a maioria nos dias de mobilidade, junto com trabalho de força da panturrilha e de equilíbrio. O Walkito começa os alongamentos e o balanço do tornozelo com 2\u00A0séries de 30\u00A0segundos, cada perna.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

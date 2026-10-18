@@ -29,7 +29,7 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'A bolinha de massagem ajuda na fascite plantar?',
       keyFact: 'Em um ensaio pequeno com 14\u00A0pessoas orientadas a rolar uma bolinha de massagem pelo menos três vezes por dia, as pontuações do pé não melhoraram de forma significativa em três meses (Ryu e colegas, 2024).',
       paragraphs: [
-        'A bolinha de massagem ajuda algumas pessoas com fascite plantar a sentir o pé mais solto e menos dolorido por um tempo curto, mas **há pouca prova de que rolar sozinho mude a dor ao longo dos meses.** A fascite plantar é uma irritação da fáscia plantar, a faixa grossa embaixo da sola que vai do calcanhar até os dedos. Rolar o pé pressiona essa faixa e os pequenos músculos em volta dela.',
+        'A bolinha de massagem ajuda algumas pessoas com [fascite plantar](/pt/fascite-plantar/) a sentir o pé mais solto e menos dolorido por um tempo curto, mas **há pouca prova de que rolar sozinho mude a dor ao longo dos meses.** A fascite plantar é uma irritação da fáscia plantar, a faixa grossa embaixo da sola que vai do calcanhar até os dedos. Rolar o pé pressiona essa faixa e os pequenos músculos em volta dela.',
         'A evidência direta é pouca. Em um ensaio de 2024 da Coreia, 14\u00A0pessoas com dor no calcanhar havia pelo menos seis meses foram orientadas a rolar uma bolinha de massagem embaixo da sola pelo menos três vezes por dia, por mais de cinco minutos cada vez. Em três meses, o grupo como um todo não melhorou de forma significativa num questionário de dor no pé.',
         'O ensaio era minúsculo e não tinha um grupo sem bolinha, então não prova que a bolinha não faz nada, só que ninguém mostrou que ela faz muito.',
         'É por isso que rolar o pé fica no espaço da recuperação neste site, ao lado dos exercícios com apoio mais forte: o alongamento da fáscia plantar e da panturrilha (grau A na diretriz) e o fortalecimento da panturrilha (grau B).',
@@ -272,7 +272,7 @@ export const MASSAGE_BALL_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa decidir quando rolar o pé e quando alongar. O Walkito monta um plano uma semana de cada vez, com o exercício de rolar o pé na bolinha como um passo curto de recuperação e os alongamentos e o trabalho de panturrilha como a base. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando uma meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

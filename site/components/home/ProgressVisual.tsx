@@ -278,8 +278,8 @@ const COPY: Record<Lang, VisualCopy> = {
     balance: (from, to) => `Equilibrio ${from} s → ${to} s`,
     arch: (from, to) => `Tenuta dell’arco ${from} s → ${to} s`,
     strengthSince: 'Il tuo primo test confrontato con l’ultimo.',
-    currentStreak: 'Serie attuale',
-    longestStreak: 'Serie migliore',
+    currentStreak: 'Giorni di fila',
+    longestStreak: 'Record personale',
     dayCount: { one: '{count} giorno', other: '{count} giorni' },
     title: { one: '{count} giorno di fila', other: '{count} giorni di fila' },
     rule: 'Un giorno conta quando fai il check-in, ti alleni, finisci una routine della libreria o il piano ti dà un giorno di riposo.',
@@ -289,7 +289,7 @@ const COPY: Record<Lang, VisualCopy> = {
   de: {
     painTitle: 'Morgenschmerz',
     painNow: (value) => `${value} / 10 diese Woche`,
-    painCaption: 'Auf und Ab von Tag zu Tag ist normal. Achte auf die Linie.',
+    painCaption: 'Auf und Ab von Tag zu Tag ist normal. Achte auf den Trend.',
     goalsTitle: 'Ziele',
     goalName: { arch_hold: 'Kräftigeres Gewölbe', calf_raises: 'Kräftigere Waden', balance: 'Bessere Balance' },
     goalLine: {

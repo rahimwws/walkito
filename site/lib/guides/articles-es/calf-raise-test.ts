@@ -151,7 +151,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
         'La pantorrilla y la fascia plantar están conectadas a través del hueso del talón. El tendón de Aquiles tira por detrás; la fascia tira por debajo. **Una pantorrilla débil o que se cansa rápido pone más tensión en los dos con cada paso.**',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. El ensayo de Rathleff, que probó elevaciones de talón con carga para la fascitis plantar, usó una elevación de talón como ejercicio principal, y los participantes mejoraron su dolor más rápido que solo con estiramientos durante tres meses. Mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) para el protocolo completo.',
         'Para la tendinitis de Aquiles, el test de elevación de talón es una de las medidas de resultado habituales. Las personas con tendinopatía de Aquiles en la parte media (dolor en el medio del tendón, no donde se une al hueso del talón) suelen tener menos resistencia en la pantorrilla del lado afectado. Mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) para el trabajo excéntrico.',
-        'Al correr, la pantorrilla absorbe de dos a tres veces tu peso corporal en cada zancada. Una pantorrilla que se cansa pronto pasa la carga a la rodilla, la tibia y el pie. Subir tu número puede ser parte de un plan para volver a correr. Mira [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) para ver el panorama completo.',
+        'Al correr, la pantorrilla absorbe de dos a tres veces tu peso corporal en cada zancada. Una pantorrilla que se cansa pronto pasa la carga a la rodilla, la tibia y el pie. Subir tu número puede ser parte de un plan para volver a correr, y en [ejercicios de pies para corredores](/es/ejercicios-de-pies-para-corredores/) ves cómo entrenarlo. Mira [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) para ver el panorama completo.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -246,7 +246,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito hace el test de elevación de talón a una pierna cada 14\u00A0días y registra las dos piernas. La meta de pantorrilla es de 25 elevaciones a una pierna. La meta de simetría es una diferencia entre izquierda y derecha de menos del 10\u00A0%. La app calcula la diferencia como la resta entre el lado más fuerte y el más débil, dividida entre el lado más fuerte. Cuando cumples las dos metas, el test pasa a ser cada 28\u00A0días y el plan se mueve a la siguiente meta activa.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. El trabajo de pantorrilla empieza con elevaciones sentado y avanza, a tu ritmo, por elevaciones con dos pies, elevación sostenida, elevación con toalla, excéntricos de talón y saltos cortos. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

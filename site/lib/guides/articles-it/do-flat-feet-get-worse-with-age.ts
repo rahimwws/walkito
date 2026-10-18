@@ -12,9 +12,9 @@ export const FLAT_FEET_AGE_IT: Guide = {
     'Il piede piatto peggiora con l’età? Cosa cambia invecchiando, perché un arco può cedere da adulti, gravidanza, peso, diabete e segnali da controllare.',
   h1: 'Il piede piatto peggiora con l’età?',
   lede:
-    'Con l’età il piede piatto spesso diventa un po’ più piatto, ma lentamente e di solito senza dolore. In media i piedi più anziani sono più piatti di quelli giovani. Quello che merita attenzione è un’altra cosa: un arco che si abbassa nel giro di mesi, con dolore o gonfiore nuovi all’interno della caviglia. Questo schema di solito è un problema di tendine, ed è meglio farlo controllare presto.',
+    'Con l’età il piede piatto spesso diventa un po’ più piatto, ma lentamente e di solito senza dolore. In media i piedi più anziani sono più piatti di quelli giovani. Quello che merita attenzione è un’altra cosa: un arco che si abbassa nel giro di mesi, con dolore o gonfiore nuovi all’interno della caviglia. Questo quadro di solito è un problema di tendine, ed è meglio farlo controllare presto.',
   intro: [
-    'Forse le scarpe ti sembrano più lunghe di una volta, o i tuoi archi sembrano più bassi di quando avevi 30\u00A0anni. È comune e, da solo, non è un segno di problemi. Per le basi sul piede piatto flessibile e rigido, vedi la [guida sul piede piatto](/it/piede-piatto/).',
+    'Forse le scarpe ti sembrano più lunghe di una volta, o il tuo arco plantare sembra più basso di quando avevi 30\u00A0anni. È comune e, da solo, non è un segno di problemi. Per le basi sul piede piatto flessibile e rigido, vedi la [guida sul piede piatto](/it/piede-piatto/).',
   ],
   takeaways: [
     'In un confronto del 2007 tra 50\u00A0adulti con un’età media di 20,9\u00A0anni e 50 con un’età media di 80,2, nessuno con problemi ai piedi, il gruppo più anziano aveva piedi più piatti e più ceduti verso l’interno, muscoli delle dita più deboli e caviglie più rigide (Scott e colleghi, 2007).',
@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
             'Piedi più piatti e più pronati (pronato vuol dire che il piede cede verso l’interno).',
             'Caviglie e articolazioni dell’alluce più rigide.',
             'Muscoli delle dita più deboli.',
-            'Più alluce valgo.',
+            'Più [alluce valgo](/it/alluce-valgo-esercizi/).',
             'Meno sensibilità sotto la pianta.',
           ],
         },
@@ -110,14 +110,14 @@ export const FLAT_FEET_AGE_IT: Guide = {
         '**La gravidanza può abbassare un po’ l’arco, e il cambiamento può restare dopo il parto.** In uno studio del 2013, a 49\u00A0donne sono stati misurati i piedi nel primo trimestre e di nuovo circa quattro mesi e mezzo dopo il parto. Altezza e rigidità dell’arco sono diminuite, mentre lunghezza del piede e abbassamento dell’arco sono aumentati.',
         'La prima gravidanza spiegava la maggior parte del cambiamento. Nelle mamme al primo figlio, la lunghezza del piede è aumentata in media di circa 1,4\u00A0millimetri e l’abbassamento dell’arco di circa 1,0\u00A0millimetro.',
         'Due cose aiutano a ridimensionare il dato. Gli autori hanno detto che i cambiamenti medi erano piccoli, e lo studio non ha trovato cambiamenti in una misura di come il piede cedeva camminando. «Duraturo» in questo studio vuol dire ancora presente alla visita di controllo qualche mese dopo il parto. Nessuna è stata seguita per anni.',
-        'Se dopo una gravidanza il tuo numero di scarpe è aumentato e i piedi stanno bene, è un cambiamento comune. Se un arco continua ad abbassarsi, o l’interno della caviglia inizia a fare male, fallo controllare.',
+        'Se dopo una gravidanza il tuo numero di scarpe è aumentato e i piedi stanno bene, è un cambiamento comune. Se ti fanno male i talloni in gravidanza, leggi [fascite plantare in gravidanza](/it/fascite-plantare-gravidanza/). Se un arco continua ad abbassarsi, o l’interno della caviglia inizia a fare male, fallo controllare.',
       ],
       cites: [CITE.segalPregnancy],
     },
     {
       h2: 'Quando un piede che si appiattisce è un problema?',
       paragraphs: [
-        '**Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore.** Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine gli schemi più comuni.',
+        '**Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore.** Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine i quadri più comuni.',
       ],
       table: {
         caption: 'Come cambia l’arco negli adulti e cosa vuol dire di solito',
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
       h2: 'Esercizio o plantari possono impedire al piede piatto di peggiorare?',
       keyFact: 'Una revisione del 2018 ha trovato solo tre studi, 93\u00A0persone in tutto, sull’esercizio per la disfunzione del tendine tibiale posteriore, con effetti moderati per il rinforzo in discesa lenta (eccentrico) aggiunto a ortesi e allungamenti (Ross e colleghi, 2018).',
       paragraphs: [
-        'Nessuno studio ha verificato se esercizio o plantari impediscano al piede piatto di cambiare con l’età. Ci sono prove su due domande vicine, e sono poche.',
+        'Nessuno studio ha verificato se esercizio o [plantari](/it/plantari-o-esercizi/) impediscano al piede piatto di cambiare con l’età. Ci sono prove su due domande vicine, e sono poche.',
         'Per il problema al tendine che sta dietro il cedimento dell’arco da adulti, una revisione del 2018 ha trovato tre studi con 93\u00A0persone in tutto. Il rinforzo in discesa lenta (eccentrico) aggiunto alle ortesi (plantari che sostengono l’arco) e agli allungamenti riduceva dolore e disabilità un po’ di più, in misura moderata, rispetto alle sole ortesi con allungamenti.',
         'In uno studio, 36\u00A0adulti negli stadi iniziali hanno seguito il loro programma per tre mesi. Tutti i gruppi sono migliorati, e il gruppo del rinforzo eccentrico è migliorato di più. In un altro studio su 39\u00A0persone, aggiungere il rinforzo ha fatto solo una piccola differenza. Gli autori della revisione hanno definito la ricerca scarsa.',
         'Per il piede piatto flessibile di una vita, uno studio su 52\u00A0persone ha trovato che un breve programma di esercizi per piede, caviglia e anca cambiava la forma dell’arco più che in un gruppo di controllo. Ha misurato la forma, non il dolore, e per un periodo breve. Non si sa se questo tipo di allenamento rallenti il cambiamento legato all’età nel corso dei decenni.',
@@ -257,7 +257,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il piede piatto, un obiettivo è la tenuta dell’arco: tenere la posizione del piede corto per 60\u00A0secondi. Il piano può includere il lavoro con l’elastico per il tibiale posteriore, i sollevamenti sulle punte, il piede corto e l’allungamento del polpaccio, ognuno partendo da una dose bassa e aumentando solo quando diventa facile.',
     more: [
       'Scegli 3, 5 o 7\u00A0sessioni a settimana da 3, 5 o 10\u00A0minuti. Ogni due settimane, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario. Se un arco si sta abbassando o ti fa male l’interno della caviglia, rivolgiti prima a un professionista sanitario.',

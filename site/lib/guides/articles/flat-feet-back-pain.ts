@@ -215,7 +215,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
         },
         'An international framework for clinicians lists the warning signs they screen for, and they are in the list at the end of this page.',
         'For the back, expect questions about how the pain started, what eases it and whether it spreads down a leg. The exam usually checks how the back moves, plus strength, reflexes and feeling in the legs and feet. Scans are not usually needed unless something points to a serious cause.',
-        'For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat).',
+        'For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat). You can do the same [checks at home](/flat-feet-test/).',
         'A rigid flat foot, or one arch that has dropped in adulthood with pain on the inside of the ankle, needs its own assessment. The second pattern is often a weakening tendon, covered in [posterior tibial tendon dysfunction exercises](/posterior-tibial-tendon-dysfunction-exercises/). A clinician may also watch you walk to see how much your feet roll in.',
         'Back problems can cause foot symptoms too. A pinched nerve in the lower back can bring numbness, tingling or weakness in the foot, and a weak foot can look like a foot problem when the cause is higher up.',
       ],

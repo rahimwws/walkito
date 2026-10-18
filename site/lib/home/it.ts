@@ -42,7 +42,7 @@ export const HOME_IT: HomeCopy = {
     },
     flat: {
       title: 'Piede piatto',
-      text: 'Archi stanchi e doloranti, e piedi che cedono verso l’interno.',
+      text: 'Arco plantare stanco e dolorante, e piedi che cedono verso l’interno.',
       goal: `Obiettivo: tenere l’arco per ${archHoldSeconds}\u00A0secondi`,
     },
     allday: {
@@ -62,17 +62,17 @@ export const HOME_IT: HomeCopy = {
     {
       title: 'Una settimana alla volta, intorno a un obiettivo',
       text: `Ogni settimana ruota intorno a un obiettivo che puoi misurare: dolore al tallone al mattino a ${PAIN_GOAL_MAX}/10 o meno per ${painFreeDays}\u00A0giorni di fila, tenere l’arco per ${archHoldSeconds}\u00A0secondi, ${calfRaises} sollevamenti sulle punte su una gamba, ${balanceSeconds}\u00A0secondi di equilibrio su una gamba, oppure sinistra e destra entro il ${gapPercent}% l’una dall’altra. Quando ne raggiungi uno, quell’obiettivo passa al mantenimento e il successivo prende il suo posto.`,
-      link: 'Come funziona il piano (in inglese)',
+      link: 'Come funziona Walkito',
     },
     {
       title: `Un test ogni ${testEveryDays}\u00A0giorni, poi ogni ${testEveryDaysAfterGoal}`,
       text: `${retestTests} test fisici in circa ${retestMinutes}\u00A0minuti: sollevamenti sulle punte fino all’esaurimento, tenuta dell’arco ed equilibrio su una gamba, da entrambi i lati. Ogni ${testEveryDays}\u00A0giorni finché non raggiungi il primo obiettivo, poi ogni ${testEveryDaysAfterGoal}. I progressi si misurano, non si indovinano da come è andata la settimana.`,
-      link: 'Cosa misurano i test (in inglese)',
+      link: 'Scopri di più su Walkito',
     },
     {
       title: 'Scelti in base alla ricerca pubblicata',
       text: 'Esercizi scelti in base a ricerche e linee guida pubblicate. Walkito in sé non è stato testato in uno studio clinico.',
-      link: 'Leggi le evidenze (in inglese)',
+      link: 'Come facciamo ricerca',
     },
   ],
   faq: [

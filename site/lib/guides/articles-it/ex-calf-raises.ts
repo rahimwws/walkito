@@ -116,7 +116,7 @@ export const EX_CALF_RAISES_IT: Guide = {
       h2: 'Quanti sollevamenti sulle punte bisogna fare?',
       keyFact: 'Uno studio normativo su 566\u00A0adulti sani tra 20 e 81\u00A0anni ha trovato che il numero di sollevamenti su una gamba variava con età, sesso e livello di attività, con una mediana di 21\u00A0ripetizioni per le donne (Hebert-Losier e colleghi, 2017).',
       paragraphs: [
-        'Dipende da dove sei nella progressione e su cosa stai lavorando. Per la forza generale del polpaccio, **3\u00A0serie da 10-15\u00A0ripetizioni a ritmo lento sono una dose di partenza comune.** Nel protocollo per la fascite plantare testato negli studi, il sollevamento con asciugamano parte da 3\u00A0serie a 12RM e arriva a 5\u00A0serie a 8RM in circa cinque settimane.',
+        'Dipende da dove sei nella progressione e su cosa stai lavorando. Per la forza generale del polpaccio, **3\u00A0serie da 10-15\u00A0ripetizioni a ritmo lento sono una dose di partenza comune.** Nel protocollo per la [fascite plantare](/it/fascite-plantare/) testato negli studi, il sollevamento con asciugamano parte da 3\u00A0serie a 12RM e arriva a 5\u00A0serie a 8RM in circa cinque settimane.',
         'Un riferimento utile è il test di resistenza dei sollevamenti su una gamba. Uno studio normativo su 566\u00A0adulti sani ha trovato una mediana di 24\u00A0ripetizioni per gli uomini e 21 per le donne, con variazioni per età, sesso e attività. L’obiettivo per il polpaccio nell’app Walkito è di 25\u00A0sollevamenti su una gamba. Raggiungerlo non chiude il lavoro. Si passa al mantenimento.',
         'Per il protocollo specifico per la fascite plantare, vedi il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/). Per la versione per il tendine d’Achille, vedi le [discese eccentriche del tallone](/it/esercizi/discese-eccentriche-tallone/).',
       ],
@@ -176,7 +176,7 @@ export const EX_CALF_RAISES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano che parte dal tuo livello e sale quando sei pronto. La progressione per il polpaccio va dai sollevamenti da seduto a quelli in piedi su due piedi, poi alla tenuta, al sollevamento con asciugamano, alle discese eccentriche del tallone e ai saltelli sulle punte. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. L’obiettivo per il polpaccio è di 25\u00A0sollevamenti su una gamba. Raggiungerlo non chiude il lavoro: al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',

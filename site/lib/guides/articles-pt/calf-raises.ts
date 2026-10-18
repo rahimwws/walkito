@@ -17,7 +17,7 @@ export const CALF_RAISES_PT: Guide = {
     'Elevação de calcanhar para fascite plantar: a dose do protocolo de Rathleff, a técnica com toalha, quantas repetições, quando progredir e por onde começar.',
   h1: 'Elevação de calcanhar para fascite plantar: como fazer e quantas',
   lede:
-    'A elevação de calcanhar é um dos [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/), e é o exercício por trás do único ensaio randomizado feito especificamente para comparar treino de força com alongamento na fascite plantar. Em um estudo com 48\u00A0pessoas, elevações de calcanhar com carga alta aliviaram a dor mais rápido do que só alongar ao longo de três meses. Esta página aprofunda esse exercício: o protocolo exato, a toalha, a progressão e onde ele fica ao lado do alongamento.',
+    'A elevação de calcanhar é um dos [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/), e é o exercício por trás do único ensaio randomizado feito especificamente para comparar treino de força com alongamento na [fascite plantar](/pt/fascite-plantar/). Em um estudo com 48\u00A0pessoas, elevações de calcanhar com carga alta aliviaram a dor mais rápido do que só alongar ao longo de três meses. Esta página aprofunda esse exercício: o protocolo exato, a toalha, a progressão e onde ele fica ao lado do alongamento.',
   intro: [
     'A diretriz de 2023 para dor no calcanhar dá ao treino de força o grau **B**, um degrau abaixo do alongamento, com **A**. Os dois são recomendados. A elevação de calcanhar é o lado da força dessa dupla. Se a sua dor é recente e você procura a lista completa de exercícios, comece em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Esta página parte do princípio de que você quer os detalhes da elevação em si.',
   ],
@@ -35,7 +35,7 @@ export const CALF_RAISES_PT: Guide = {
       keyFact: 'Em um ensaio com 48\u00A0pessoas, o grupo da elevação de calcanhar teve 29\u00A0pontos a mais de melhora no Foot Function Index aos três meses, embora os dois grupos tenham se igualado aos doze meses (Rathleff e colegas, 2015).',
       paragraphs: [
         'A elevação de calcanhar ajuda na fascite plantar porque fortalece a cadeia panturrilha-Aquiles-fáscia, que absorve a carga toda vez que o calcanhar toca o chão.',
-        'O único ensaio randomizado que testou esse exercício diretamente na fascite plantar é o de Rathleff, de 2015. Nesse ensaio, 48\u00A0pessoas com fascite plantar confirmada por ultrassom foram divididas em dois grupos. Os dois usaram palmilhas. Um grupo fez uma elevação de calcanhar lenta, com carga, com uma toalha enrolada embaixo dos dedos. O outro alongou a fáscia plantar.',
+        'O único ensaio randomizado que testou esse exercício diretamente na fascite plantar é o de Rathleff, de 2015. Nesse ensaio, 48\u00A0pessoas com fascite plantar confirmada por ultrassom foram divididas em dois grupos. Os dois usaram [palmilhas](/pt/palmilhas-ou-exercicios/). Um grupo fez uma elevação de calcanhar lenta, com carga, com uma toalha enrolada embaixo dos dedos. O outro alongou a fáscia plantar.',
         'Aos três meses, o grupo da elevação teve 29\u00A0pontos a mais de melhora no Foot Function Index. Aos doze meses, os dois grupos tinham se igualado.',
         '**Ou seja, a elevação de calcanhar adiantou a melhora.** Ela não produziu uma melhora maior a longo prazo. A diretriz clínica de 2023 dá ao treino de força o grau B e ao alongamento o grau A. Ela recomenda os dois. Nada na evidência sugere que você deva escolher um e pular o outro.',
       ],
@@ -89,7 +89,7 @@ export const CALF_RAISES_PT: Guide = {
           alt: 'Uma figura com uma perna à frente da outra e os joelhos dobrados, com a parte baixa da panturrilha destacada',
         },
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: { level: 'moderate', why: 'O grau B da diretriz cobre o treino de força em geral. Este degrau mais leve não foi testado sozinho.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.',
@@ -97,7 +97,7 @@ export const CALF_RAISES_PT: Guide = {
           feel: 'Trabalho na parte baixa da panturrilha (o sóleo), quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',
+          caption: 'Elevação de calcanhar sentada: suba empurrando pela parte da frente dos pés',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
         {
@@ -105,7 +105,7 @@ export const CALF_RAISES_PT: Guide = {
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Um degrau antes do trabalho com carga em uma perna.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga.',
-          often: 'Dias de força, quando a elevação sentado parecer fácil por duas sessões',
+          often: 'Dias de força, quando a elevação sentada parecer fácil por duas sessões',
           feel: 'As panturrilhas trabalhando juntas',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_double',
@@ -116,7 +116,7 @@ export const CALF_RAISES_PT: Guide = {
           name: 'Elevação de calcanhar sustentada',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Sustentação isométrica no fim do movimento; não foi testada sozinha em um ensaio de fascite plantar.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o impulso de uma repetição completa.',
           often: 'Dias de força, o degrau depois da elevação com os dois pés',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
@@ -146,12 +146,12 @@ export const CALF_RAISES_PT: Guide = {
     {
       h2: 'Por onde o Walkito começa?',
       paragraphs: [
-        'O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentado (3\u00A0séries de 10, os dois pés), depois passa para a elevação em pé com os dois pés, depois a elevação de calcanhar sustentada, e só então a elevação em uma perna com toalha e carga. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
+        'O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentada (3\u00A0séries de 10, os dois pés), depois passa para a [elevação em pé com os dois pés](/pt/exercicios/elevacao-de-calcanhar/), depois a elevação de calcanhar sustentada, e só então a [elevação em uma perna com toalha e carga](/pt/exercicios/elevacao-calcanhar-toalha/). Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
         'Essa escada é o ritmo do próprio app, não um protocolo publicado, e existe porque a maioria das pessoas que começa um plano de exercícios para dor no calcanhar não está pronta para uma elevação em uma perna com peso na primeira sessão.',
         'A cadeia da panturrilha no app é:',
         {
           list: [
-            'Elevação de calcanhar sentado.',
+            'Elevação de calcanhar sentada.',
             'Elevação de calcanhar com os dois pés.',
             'Elevação de calcanhar sustentada.',
             'Elevação de calcanhar com toalha.',
@@ -168,7 +168,7 @@ export const CALF_RAISES_PT: Guide = {
       figure: { id: 'calf', caption: 'Os dois músculos da panturrilha, o gastrocnêmio e o sóleo, se unem no tendão de Aquiles, que se prende ao osso do calcanhar.', alt: 'Vistas lateral e de trás de uma perna mostrando os músculos gastrocnêmio e sóleo afinando até o tendão de Aquiles, acima do calcanhar.' },
       keyFact: 'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60% tinham uma contratura limitada ao gastrocnêmio, e outros 23 a 30% tinham uma contratura combinada de gastrocnêmio e sóleo (Patel e colegas, 2011).',
       paragraphs: [
-        'Uma panturrilha tensa puxa o calcanhar pelo tendão de Aquiles, e a fáscia plantar divide a carga na outra ponta. **Quando o tornozelo não consegue dobrar o suficiente, cada passo coloca mais tensão na fáscia.**',
+        'Uma [panturrilha tensa](/pt/panturrilha-tensa/) puxa o calcanhar pelo tendão de Aquiles, e a fáscia plantar divide a carga na outra ponta. **Quando o tornozelo não consegue dobrar o suficiente, cada passo coloca mais tensão na fáscia.**',
         'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio, o músculo mais superficial da panturrilha, e outros 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo.',
         'Em outro estudo, um caso-controle pareado com 50\u00A0casos e 100\u00A0controles encontrou que a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, era o fator de risco independente mais forte para fascite plantar.',
         'É por isso que o alongamento e o fortalecimento da panturrilha aparecem os dois na lista. O alongamento dá mais amplitude ao tornozelo. O fortalecimento dá à panturrilha capacidade suficiente para não ficar tensa com a carga normal do dia a dia. A diretriz recomenda os dois. O mesmo mecanismo da panturrilha tensa aparece em outras dores na parte de baixo da perna: veja [exercícios para canelite](/pt/canelite-exercicios/) e [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) se o seu padrão de dor se parece mais com um desses.',
@@ -179,7 +179,7 @@ export const CALF_RAISES_PT: Guide = {
       h2: 'Qual a diferença entre a elevação de calcanhar para fascite plantar e para tendinite de Aquiles?',
       paragraphs: [
         '**O movimento é quase o mesmo, mas a intenção, a toalha e a regra da dor mudam.** Na fascite plantar, a toalha embaixo dos dedos põe carga na fáscia pelo mecanismo de molinete. O ritmo é 3\u00A0segundos para subir, 2\u00A0segundos parado, 3 para descer, dia sim, dia não. A regra da dor nesta página é: pare se a dor chegar a 6/10 ou mais.',
-        'Na tendinite de Aquiles, o protocolo clássico é a descida excêntrica do calcanhar (só a descida, com a subida feita com os dois pés), feita originalmente duas vezes por dia, sete dias por semana, aceitando dor de até cerca de 5/10 desde que ela passe até a manhã seguinte.',
+        'Na tendinite de Aquiles, o protocolo clássico é a [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) (só a descida, com a subida feita com os dois pés), feita originalmente duas vezes por dia, sete dias por semana, aceitando dor de até cerca de 5/10 desde que ela passe até a manhã seguinte.',
         'A toalha não é usada porque colocar carga na fáscia não é o objetivo. E na dor de Aquiles insercional, bem na parte de trás do osso do calcanhar, as descidas devem ficar no nível do chão em vez de passar da beira do degrau, porque a dorsiflexão profunda comprime o tendão contra o osso.',
         'Os dois exercícios são parentes próximos. Se a sua dor é na parte de trás do calcanhar ou no tendão acima dele, e não embaixo do pé, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
@@ -189,7 +189,7 @@ export const CALF_RAISES_PT: Guide = {
       h2: 'Quantas elevações de calcanhar em uma perna você deveria conseguir fazer?',
       keyFact: 'Um estudo normativo com 566\u00A0adultos saudáveis encontrou uma contagem de elevações de calcanhar em uma perna na faixa dos 20 e poucos, cerca de 23 a 24\u00A0repetições em média (Hebert-Losier e colegas, 2017).',
       paragraphs: [
-        'Uma referência comum para adultos no teste de resistência de elevação de calcanhar em uma perna fica na faixa dos 20 e poucos, cerca de 23-24\u00A0repetições em média, com base em dados normativos de 566\u00A0adultos saudáveis. Esse número muda com idade, sexo, IMC e nível de atividade, então é um ponto de referência e não uma linha de aprovado ou reprovado. O que importa mais para acompanhar a fascite plantar é **se o número sobe de semana em semana, e se os dois lados estão mais ou menos iguais.**',
+        'Uma referência comum para adultos no [teste de resistência de elevação de calcanhar em uma perna](/pt/teste-elevacao-calcanhar/) fica na faixa dos 20 e poucos, cerca de 23-24\u00A0repetições em média, com base em dados normativos de 566\u00A0adultos saudáveis. Esse número muda com idade, sexo, IMC e nível de atividade, então é um ponto de referência e não uma linha de aprovado ou reprovado. O que importa mais para acompanhar a fascite plantar é **se o número sobe de semana em semana, e se os dois lados estão mais ou menos iguais.**',
         'A meta da panturrilha no app é 25 elevações de calcanhar em uma perna. O teste é repetido a cada 14\u00A0dias enquanto a meta da panturrilha está ativa, e depois a cada 28\u00A0dias quando ela é alcançada, para você ver a tendência sem adivinhar.',
       ],
       cites: [CITE.hebertLosier],
@@ -207,7 +207,7 @@ export const CALF_RAISES_PT: Guide = {
       h2: 'Alongar ou fortalecer primeiro na fascite plantar?',
       paragraphs: [
         'A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau **A** e ao treino de força o grau **B**. Isso quer dizer que os dois são recomendados, e a evidência do alongamento é um pouco mais ampla. No ensaio de Rathleff, o grupo da força melhorou mais rápido nos três primeiros meses, mas aos doze meses os dois grupos estavam iguais.',
-        'Nada na evidência diz que você precisa terminar um antes de começar o outro. O app começa o alongamento no primeiro dia e acrescenta o primeiro exercício de força para a panturrilha quando a meta passa de acalmar a dor para construir capacidade. Fazer o alongamento da fáscia plantar antes dos primeiros passos de toda manhã é o conselho mais repetido da diretriz.',
+        'Nada na evidência diz que você precisa terminar um antes de começar o outro. O app começa o alongamento no primeiro dia e acrescenta o primeiro exercício de força para a panturrilha quando a meta passa de acalmar a dor para construir capacidade. Fazer o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) antes dos primeiros passos de toda manhã é o conselho mais repetido da diretriz.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -245,7 +245,7 @@ export const CALF_RAISES_PT: Guide = {
     },
     {
       q: 'É normal sentir o exercício na panturrilha e não no calcanhar?',
-      a: 'Sim. A elevação de calcanhar sentado e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.',
+      a: 'Sim. A elevação de calcanhar sentada e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.',
     },
     {
       q: 'Panturrilha fraca causa fascite plantar?',
@@ -273,7 +273,7 @@ export const CALF_RAISES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa descobrir as séries, o peso nem quando passar para o próximo degrau. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14\u00A0dias seguidos. A escada da elevação de calcanhar (sentado, com os dois pés, sustentada, com toalha, descidas de calcanhar) anda no seu ritmo, não em um calendário fixo.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando essa meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

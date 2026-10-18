@@ -137,7 +137,7 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito abbina i sollevamenti dell’avampiede ai sollevamenti sulle punte, al lavoro di equilibrio e agli esercizi per il piede in un piano costruito sul tuo livello attuale. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, equilibrio e tenuta dell’arco. I sollevamenti dell’avampiede fanno parte dei giorni di forza. Walkito è un programma di esercizi. Non fa diagnosi.',

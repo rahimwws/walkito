@@ -21,7 +21,7 @@ export const ICE_HEAT_DE: Guide = {
     'In Gewebe aus 50\u00A0Operationen an der Ferse bei lang bestehender Plantarfasziitis fanden Forschende abgenutzte, degenerierte Faszie ohne Anzeichen einer Entzündung (Lemont und Kollegen, 2003).',
     'Eine Übersichtsarbeit über 22\u00A0Studien zu Kälte bei akuten Verletzungen bewertete deren Qualität im Schnitt mit 3,4 von 10 und fand keine Belege für eine beste Methode oder beste Dauer des Kühlens (Bleakley und Kollegen, 2004).',
     'Eine Übersichtsarbeit über 36\u00A0Studien an Menschen ohne Verletzung fand, dass Wärme plus Dehnen die Beweglichkeit stärker verbesserte als Dehnen allein, allerdings hatte jede Studie ein hohes Verzerrungsrisiko (Bleakley und Costello, 2013).',
-    'Dehnen bekommt die beste Bewertung der Leitlinie, **A**, und Krafttraining ein **B**. Kälte und Wärme sind Hilfsmittel fürs Wohlbefinden, die du zusätzlich nutzt.',
+    'Dehnen bekommt den höchsten Empfehlungsgrad der Leitlinie, **A**, und Krafttraining Grad **B**. Kälte und Wärme sind Hilfsmittel fürs Wohlbefinden, die du zusätzlich nutzt.',
   ],
   toc: true,
   sections: [
@@ -39,8 +39,8 @@ export const ICE_HEAT_DE: Guide = {
           ['Die Ferse pocht nach einem langen Spaziergang oder einer Schicht', 'Kälte', 'Kälte dämpft die Schmerzsignale für eine Weile'],
           ['Der Fuß fühlt sich steif und verspannt an, bevor du dehnst', 'Wärme', 'Warmes Gewebe lässt sich meist leichter dehnen'],
           ['Die ersten Schritte am Morgen', 'Wärme oder nichts, dann dehnen', 'Das Ziel ist, locker zu werden, bevor du den Fuß belastest'],
-          ['Der Schmerz kam plötzlich nach einer Verletzung, mit Schwellung oder Bluterguss', 'Kälte, und geh zu einer medizinischen Fachperson', 'Das ist möglicherweise keine Plantarfasziitis'],
-          ['Du hast Diabetes, taube Füße oder eine schlechte Durchblutung', 'Frag zuerst eine medizinische Fachperson', 'Du spürst eine Verbrennung oder Kälteschädigung vielleicht nicht'],
+          ['Der Schmerz kam plötzlich nach einer Verletzung, mit Schwellung oder Bluterguss', 'Kälte, und geh zum Arzt oder zur Ärztin', 'Das ist möglicherweise keine Plantarfasziitis'],
+          ['Du hast Diabetes, taube Füße oder eine schlechte Durchblutung', 'Frag zuerst deine Ärztin oder deinen Arzt', 'Du spürst eine Verbrennung oder Kälteschädigung vielleicht nicht'],
         ],
       },
       cites: [CITE.guideline],
@@ -93,7 +93,7 @@ export const ICE_HEAT_DE: Guide = {
       keyFact: 'In 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung verbesserte Wärme plus Dehnen die Beweglichkeit stärker als Dehnen allein (Bleakley und Costello, 2013).',
       paragraphs: [
         '**Den Fuß vor dem Dehnen zu wärmen ist eine vernünftige Wahl**, und dafür gibt es mehr Rückhalt als für Kühlen vor dem Dehnen. Eine Übersichtsarbeit von 2013 über 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung fand, dass Wärme die Beweglichkeit erhöhte und dass Wärme plus Dehnen besser wirkte als Dehnen allein. Die Daten zu Kälte waren widersprüchlich. Jede Studie hatte ein hohes Verzerrungsrisiko, und keine schloss Menschen mit Fersenschmerzen ein. Sieh das also als sinnvolle Idee, nicht als getesteten Plan für Plantarfasziitis.',
-        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der Plantarfaszien-Dehnung und der Wadendehnung.',
+        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und der Wadendehnung.',
         'Am Morgen solltest du mit dem Dehnen aber nicht auf ein Aufwärmen warten. Die Dehnung vor dem ersten Schritt ist dafür gedacht, auf der Bettkante zu passieren, bevor dein Fuß Gewicht trägt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) führt dich durch diese Routine.',
       ],
       cites: [CITE.bleakleyThermal],
@@ -125,8 +125,8 @@ export const ICE_HEAT_DE: Guide = {
         'Nimm das Eis ab, wenn die Haut weiß, hart oder taub wird oder stark kribbelt.',
         'Bei Wärme gilt: warm, nicht heiß. Eine Wärmepackung oder warmes Wasser soll sich angenehm anfühlen, nie brennen.',
         'Schlaf nie auf einem Heizkissen oder mit einer Kältepackung am Fuß ein.',
-        'Lass Wärme weg, wenn die Ferse gerötet, heiß und geschwollen ist, vor allem bei Fieber. Das gehört zu einer medizinischen Fachperson, nicht unter eine Wärmepackung.',
-        'Wenn du Diabetes, Taubheit in den Füßen, eine schlechte Durchblutung oder Raynaud hast (Finger oder Zehen, die in der Kälte weiß werden), frag eine medizinische Fachperson, bevor du eins von beiden nutzt.',
+        'Lass Wärme weg, wenn die Ferse gerötet, heiß und geschwollen ist, vor allem bei Fieber. Das gehört in ärztliche Hände, nicht unter eine Wärmepackung.',
+        'Wenn du Diabetes, Taubheit in den Füßen, eine schlechte Durchblutung oder Raynaud hast (Finger oder Zehen, die in der Kälte weiß werden), frag deine Ärztin oder deinen Arzt, bevor du eins von beiden nutzt.',
       ],
       after: [
         'Der letzte Punkt ist wichtig. In einer Fallserie mit fünf Menschen mit Diabetes und Nervenschäden in den Füßen führte Wärme an den Füßen zu Verbrennungen und Infektionen, bei denen die Wunden in allen Fällen operativ gesäubert werden mussten (Thng und Kollegen, 1999). Ein Fuß, der Wärme nicht richtig spürt, kann dich nicht warnen.',
@@ -138,7 +138,7 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Was hilft bei Plantarfasziitis wirklich auf lange Sicht?',
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Der Teil der Versorgung bei Plantarfasziitis mit den stärksten Belegen sind Übungen, nicht Temperatur. Die Leitlinie von 2023 gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining für Fuß und Sprunggelenk ein **B**.',
+        'Der Teil der Versorgung bei Plantarfasziitis mit den stärksten Belegen sind Übungen, nicht Temperatur. Die Leitlinie von 2023 gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** und Krafttraining für Fuß und Sprunggelenk Grad **B**.',
         'In einer Studie von 2003 mit 101\u00A0Personen half eine Plantarfaszien-Dehnung nach etwa zwei Monaten mehr als eine Wadendehnung allein (DiGiovanni und Kollegen). In einer Studie von 2015 mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber etwa gleichauf (Rathleff und Kollegen).',
         'Nutz Kälte oder Wärme rund um diese Übungen: Wärme vor dem Dehnen, Kälte nach einem langen Tag, wenn dir eins davon hilft. Walkito funktioniert genauso: Dehnungen und Wadentraining sind der Plan, und das Fußrollen ist ein Erholungsschritt von 60\u00A0Sekunden, nicht die Hauptsache. Die komplette Liste findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
@@ -153,7 +153,7 @@ export const ICE_HEAT_DE: Guide = {
           media: 'fascia_stretch',
           caption: 'Plantarfaszien-Dehnung: Zieh die Zehen sanft zurück, bevor du aufstehst',
           alt: 'Eine sitzende Figur zieht die Zehen zurück, um das Gewölbe zu dehnen',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen sprach für sie gegenüber einer Wadendehnung allein.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen sprach für sie gegenüber einer Wadendehnung allein.' },
         },
         {
           name: 'Wadendehnung (gestrecktes Knie)',
@@ -165,7 +165,7 @@ export const ICE_HEAT_DE: Guide = {
           media: 'calf_stretch_straight',
           caption: 'Wadendehnung: hinteres Bein gestreckt, Ferse unten, nach vorn lehnen',
           alt: 'Eine Figur lehnt sich an eine Wand, das hintere Bein gestreckt',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie für Waden- und Plantarfaszien-Dehnung.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie für Waden- und Plantarfaszien-Dehnung.' },
         },
         {
           name: 'Fersenheben beidbeinig',
@@ -173,11 +173,11 @@ export const ICE_HEAT_DE: Guide = {
           often: 'Krafttage, nie zwei hintereinander',
           feel: 'Arbeit in beiden Waden',
           stop: 'Der Schmerz 6/10 erreicht oder der nächste Morgen deutlich schlimmer ist',
-          how: 'Stell dich hin, halt dich an einer Wand fest, komm in etwa drei Sekunden auf die Zehen und senk dich in etwa drei Sekunden ab. Das ist der erste Schritt zum Fersenheben mit Handtuch aus der Studie mit 48\u00A0Personen, beschrieben unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+          how: 'Stell dich hin, halt dich an einer Wand fest, komm in etwa drei Sekunden auf die Zehen und senk dich in etwa drei Sekunden ab. Das ist der erste Schritt zum Fersenheben mit Handtuch aus der Studie mit 48\u00A0Personen, beschrieben unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
           media: 'heel_raise_double',
           caption: 'Fersenheben: langsam hoch, langsam runter',
           alt: 'Eine stehende Figur kommt auf die Zehen beider Füße',
-          evidence: { level: 'moderate', why: 'Bewertung B in der Leitlinie für Krafttraining. Diese beidbeinige Variante wurde nicht einzeln getestet.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B in der Leitlinie für Krafttraining. Diese beidbeinige Variante wurde nicht einzeln getestet.' },
         },
         {
           name: 'Fußrollen',
@@ -214,7 +214,7 @@ export const ICE_HEAT_DE: Guide = {
     {
       q: 'Ist es okay, die Plantarfasziitis morgens zu kühlen?',
       cites: [CITE.guideline],
-      a: 'Kannst du, aber morgens ist der Fuß am steifsten, und Kälte lockert ihn nicht. Der nützlichere Schritt am Morgen ist eine Plantarfaszien-Dehnung vor dem ersten Schritt. Die Leitlinie von 2023 bewertet Dehnen mit A, ihrer besten Bewertung. Eine warme Dusche oder warme Socken vor dem Dehnen fühlen sich vielleicht besser an als Eis. Heb dir das Kühlen für später auf, nach der Zeit auf den Beinen.',
+      a: 'Kannst du, aber morgens ist der Fuß am steifsten, und Kälte lockert ihn nicht. Der nützlichere Schritt am Morgen ist eine Plantarfaszien-Dehnung vor dem ersten Schritt. Die Leitlinie von 2023 bewertet Dehnen mit A, dem höchsten Empfehlungsgrad. Eine warme Dusche oder warme Socken vor dem Dehnen fühlen sich vielleicht besser an als Eis. Heb dir das Kühlen für später auf, nach der Zeit auf den Beinen.',
     },
     {
       q: 'Hilft es, eine gefrorene Wasserflasche unter dem Fuß zu rollen?',
@@ -224,11 +224,11 @@ export const ICE_HEAT_DE: Guide = {
     {
       q: 'Darf ich mit Diabetes kühlen oder wärmen?',
       cites: [CITE.thngBurns],
-      a: 'Frag zuerst eine medizinische Fachperson. Diabetes kann das Gefühl in den Füßen verringern, sodass du vielleicht erst merkst, dass die Haut zu heiß oder zu kalt wird, wenn sie schon geschädigt ist. In einer Fallserie mit fünf Menschen mit diabetischen Nervenschäden, die Wärme an den Füßen nutzten, bekamen alle Verbrennungen, die operativ gesäubert werden mussten. Dieselbe Vorsicht gilt bei schlechter Durchblutung oder Taubheit.',
+      a: 'Frag zuerst deine Ärztin oder deinen Arzt. Diabetes kann das Gefühl in den Füßen verringern, sodass du vielleicht erst merkst, dass die Haut zu heiß oder zu kalt wird, wenn sie schon geschädigt ist. In einer Fallserie mit fünf Menschen mit diabetischen Nervenschäden, die Wärme an den Füßen nutzten, bekamen alle Verbrennungen, die operativ gesäubert werden mussten. Dieselbe Vorsicht gilt bei schlechter Durchblutung oder Taubheit.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat oder mit plötzlicher Schwellung oder einem Bluterguss kam',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -245,7 +245,7 @@ export const ICE_HEAT_DE: Guide = {
     text: 'Kälte und Wärme können einem schlechten Tag die Spitze nehmen. Der Übungsplan ist der Teil, hinter dem die Leitlinie steht. Walkito baut diesen Plan Woche für Woche rund um ein Fokusziel. Bei Fersenschmerzen ist das erste Ziel ein besserer Morgen: Schmerz bei oder unter 1 von 10 an 14\u00A0Tagen am Stück. Dehnungen sind ab der ersten Woche im Plan, und das Fußrollen taucht als kurzer Erholungsschritt auf.',
     more: [
       'Jede Woche kann sich nur die Übung für dein Fokusziel ändern. Sie geht eine Stufe höher, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist, und eine Stufe zurück, wenn sich eine Einheit schwer angefühlt hat oder der Morgenschmerz um 2 oder mehr gestiegen ist.',
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Ein kurzer Test prüft anfangs alle 14\u00A0Tage Wadenausdauer, Gewölbehalten und Gleichgewicht, dann alle 28, sobald du ein Ziel erreicht hast, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Ein kurzer Test prüft anfangs alle 14\u00A0Tage Wadenausdauer, Gewölbehalten und Gleichgewicht, dann alle 28, sobald du ein Ziel erreicht hast, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

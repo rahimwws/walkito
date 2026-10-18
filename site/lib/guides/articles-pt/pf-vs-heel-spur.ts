@@ -30,7 +30,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
   takeaways: [
     'Em um estudo com 216\u00A0idosos de 62 a 94\u00A0anos, 55% tinham pelo menos um esporão plantar no calcâneo no raio-X, e ter esporão estava ligado a obesidade e artrose, mas não à postura do pé (Menz e colegas, 2008). É uma amostra de idosos, não um número da população em geral.',
     'Em um estudo com 530\u00A0pessoas de 50\u00A0anos ou mais com dor no pé, o esporão e a fáscia plantar espessada normalmente apareciam juntos, e o esporão sozinho era raro (6% dos pés). A dor no calcanhar estava ligada a ter os dois achados juntos (Menz e colegas, 2019).',
-    'A diretriz de 2023 para dor no calcanhar trata a fascite plantar como a causa mais comum de dor no calcanhar embaixo do pé e observa que exame de imagem normalmente não é necessário quando o exame clínico já aponta para fascite plantar (Koc e colegas, 2023).',
+    'A diretriz de 2023 para dor no calcanhar trata a fascite plantar como a causa mais comum de dor na sola do calcanhar e observa que exame de imagem normalmente não é necessário quando o exame clínico já aponta para fascite plantar (Koc e colegas, 2023).',
     'O próprio estudo de Menz de 2008 observa que pesquisas anteriores na população em geral tinham estimado a prevalência de esporão em 11 a 16%, bem abaixo dos 55% encontrados na amostra de idosos deles (Menz e colegas, 2008).',
     'Os exercícios que ajudam na dor da fascite plantar também trabalham o tecido mole em volta de um esporão. Exercício não dissolve o esporão, mas raramente é o esporão que precisa de atenção.',
   ],
@@ -84,7 +84,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
         'A diretriz de prática clínica de 2023 para dor no calcanhar, publicada no Journal of Orthopaedic and Sports Physical Therapy, trata a fascite plantar como a causa mais comum de dor embaixo do calcanhar. Ela cita a “síndrome do esporão do calcâneo” como um dos vários diagnósticos diferenciais, junto com:',
         {
           list: [
-            'A síndrome do coxim gorduroso.',
+            'A [síndrome do coxim gorduroso](/pt/sindrome-coxim-gorduroso-calcanhar/).',
             'A irritação de nervo.',
             'A fratura por estresse do calcâneo.',
           ],
@@ -114,7 +114,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     {
       h2: 'Se o problema não é o esporão, o que é?',
       paragraphs: [
-        'A dor normalmente vem da fáscia plantar e dos tecidos em volta dela, não do osso. A fáscia plantar se prende embaixo do osso do calcanhar. Quando ela é sobrecarregada, principalmente em quem tem a panturrilha tensa, IMC alto ou passa muitas horas em pé, esse ponto de ligação fica irritado. Essa irritação é a fascite plantar.',
+        'A dor normalmente vem da fáscia plantar e dos tecidos em volta dela, não do osso. A fáscia plantar se prende embaixo do osso do calcanhar. Quando ela é sobrecarregada, principalmente em quem tem a [panturrilha tensa](/pt/panturrilha-tensa/), IMC alto ou passa muitas horas em pé, esse ponto de ligação fica irritado. Essa irritação é a fascite plantar.',
         'Uma panturrilha tensa é um dos fatores de risco mais fortes. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles:',
         {
           list: [
@@ -244,7 +244,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Com ou sem esporão no raio-X, a abordagem de exercícios é a mesma. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos. O alongamento começa no primeiro dia. O treino de força da panturrilha entra quando a primeira meta deixa de ser acalmar a dor e passa a ser ganhar capacidade.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você acompanhar a evolução em vez de adivinhar.',

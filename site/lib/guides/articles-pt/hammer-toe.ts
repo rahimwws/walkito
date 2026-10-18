@@ -69,7 +69,7 @@ export const HAMMER_TOE_PT: Guide = {
       paragraphs: [
         'A resposta honesta é que **não existem ensaios controlados randomizados testando exercícios especificamente para dedo em martelo.** Os exercícios mais recomendados, como puxar a toalha com os dedos, abrir os dedos e o alongamento com a mão, se baseiam na ideia de que fortalecer os músculos pequenos do pé e manter a flexibilidade da articulação pode ajudar a evitar que uma deformidade flexível fique rígida.',
         'Essa lógica é razoável. A deformidade vem de um desequilíbrio muscular: intrínsecos fracos e extrínsecos relativamente mais fortes. Exercícios que trabalham os intrínsecos podem recuperar parte desse equilíbrio. Mas sem ensaios diretos, não sabemos quanta diferença eles fazem nem se conseguem de fato evitar a progressão.',
-        'O que sabemos, a partir de estudos sobre outros problemas da parte da frente do pé, é que exercícios para os músculos pequenos do pé, como o pé curto, abrir os dedos e puxar a toalha, ativam os músculos certos. Um estudo de ressonância de Gooding e colegas (2016) confirmou que o exercício do pé curto e o exercício de abrir os dedos ativam de forma seletiva os músculos intrínsecos do pé. Se essa ativação se traduz em resultados melhores especificamente no dedo em martelo ainda não foi testado.',
+        'O que sabemos, a partir de estudos sobre outros problemas da parte da frente do pé, é que exercícios para os músculos pequenos do pé, como o pé curto, abrir os dedos e puxar a toalha, ativam os músculos certos. Um estudo de ressonância de Gooding e colegas (2016) confirmou que o [exercício do pé curto](/pt/exercicios/pe-curto/) e o exercício de abrir os dedos ativam de forma seletiva os músculos intrínsecos do pé. Se essa ativação se traduz em resultados melhores especificamente no dedo em martelo ainda não foi testado.',
       ],
       cites: [CITE.gooding],
     },
@@ -108,7 +108,7 @@ export const HAMMER_TOE_PT: Guide = {
           alt: 'Um pé com os cinco dedos bem afastados',
         },
         {
-          name: 'Elevação do dedão (ioga dos dedos)',
+          name: 'Elevação do dedão',
           dose: 'O Walkito começa com 3\u00A0séries de 8, segurando 5\u00A0segundos, cada pé',
           how: 'Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Depois inverta: pressione o dedão para baixo e levante os outros quatro. Isso treina o controle independente dos dedos, que muitas vezes se perde em quem tem dedo em martelo.',
           feel: 'Dificuldade de coordenar no começo, depois controle aos poucos',
@@ -219,9 +219,9 @@ export const HAMMER_TOE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
-      'O Walkito inclui [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de trabalhar os dedos, as sessões de 3 ou 5\u00A0minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.',
+      'O Walkito inclui [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e [pé chato](/pt/pe-chato/), não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de trabalhar os dedos, as sessões de 3 ou 5\u00A0minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.',
     more: [
       'Para problemas parecidos na parte da frente do pé, veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) e [exercícios para joanete](/pt/joanete-exercicios/).',
     ],

@@ -33,7 +33,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
         alt: 'Vista lateral de um pé com a fáscia plantar em destaque, do osso do calcanhar até os dedos',
       },
       paragraphs: [
-        'A tala noturna para fascite plantar é uma órtese que você usa na cama e que **impede o pé de apontar para baixo enquanto você dorme.** Quando você fica parado deitado, o pé normalmente cai em flexão plantar (dedos apontando para longe de você). Nessa posição, a fáscia plantar, a faixa grossa de tecido embaixo do pé, e a panturrilha descansam encurtadas por horas.',
+        'A tala noturna para [fascite plantar](/pt/fascite-plantar/) é uma órtese que você usa na cama e que **impede o pé de apontar para baixo enquanto você dorme.** Quando você fica parado deitado, o pé normalmente cai em flexão plantar (dedos apontando para longe de você). Nessa posição, a fáscia plantar, a faixa grossa de tecido embaixo do pé, e a panturrilha descansam encurtadas por horas.',
         'A tala mantém o tornozelo em posição neutra ou em leve dorsiflexão (dedos puxados um pouco em direção à canela). A ideia é que o tecido fique num comprimento suave durante a noite, para que os primeiros passos não sejam um alongamento repentino de uma fáscia rígida e encurtada. Esse alongamento repentino é a explicação mais comum para a dor aguda dos primeiros passos, que torna a fascite plantar tão fácil de reconhecer.',
         'A diretriz de 2023 para dor no calcanhar define as talas noturnas como “órteses pré-fabricadas de plástico usadas para impedir a flexão plantar do tornozelo durante o sono”. Versões mais macias, como faixas e meias, buscam a mesma posição com menos estrutura.',
       ],
@@ -151,7 +151,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
       h2: 'Tala noturna, palmilhas ou alongamento: o que tentar primeiro?',
       keyFact: 'Em um ensaio com 43\u00A0pessoas, a dor caiu 62% em um ano nos grupos com palmilha e 48% só com a tala noturna (Roos e colegas, 2006).',
       paragraphs: [
-        '**O alongamento da manhã normalmente vem primeiro**, porque tem o mesmo grau **A** das talas noturnas, não custa nada e não atrapalha o sono. A diretriz de 2023 dá grau **A** ao alongamento da fáscia plantar e da panturrilha, e grau **B** ao fortalecimento dos músculos do pé e do tornozelo. Uma metanálise de 2020 com oito ensaios viu que o alongamento aliviou a dor, com evidência de qualidade moderada de que o alongamento da fáscia plantar aliviou mais que o alongamento da panturrilha.',
+        '**O alongamento da manhã normalmente vem primeiro**, porque tem o mesmo grau **A** das talas noturnas, não custa nada e não atrapalha o sono. A diretriz de 2023 dá grau **A** ao alongamento da fáscia plantar e da panturrilha, e grau **B** ao fortalecimento dos músculos do pé e do tornozelo. Uma metanálise de 2020 com oito ensaios viu que o alongamento aliviou a dor, com evidência de qualidade moderada de que o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) aliviou mais que o alongamento da panturrilha.',
         'Talas noturnas e palmilhas parecem funcionar melhor juntas do que separadas:',
         {
           list: [
@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
     {
       h2: 'Para quem a tala noturna pode servir, e quem deve pular?',
       paragraphs: [
-        '**A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico**: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um esporão no raio-X.',
+        '**A tala noturna combina melhor com uma fascite plantar que segue o padrão clássico**: os primeiros passos ao sair da cama são os piores do dia, e isso continua acontecendo apesar do alongamento regular. É exatamente o grupo que a diretriz cita. No ensaio de Powell, a resposta à tala não dependeu do tipo de pé, do peso corporal nem de aparecer ou não um [esporão](/pt/fascite-plantar-ou-esporao/) no raio-X.',
         'A tala faz menos sentido se o seu calcanhar dói principalmente enquanto você está deitado na cama, ou se a dor acorda você. Esse é outro padrão, e [dor no calcanhar à noite](/pt/dor-no-calcanhar-a-noite/) explica as causas que vale descartar. A tala também não é uma boa escolha se você tem pouca sensibilidade ou má circulação nos pés, porque as tiras e as estruturas podem machucar uma pele que você não sente.',
         'A fascite plantar muitas vezes melhora ao longo de meses, seja lá o que você use, e esse é um dos motivos pelos quais os ensaios com tala são difíceis de interpretar. Para prazos realistas, veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
       ],
@@ -254,7 +254,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'A tala trabalha durante a noite. O exercício acontece durante o dia. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor nos primeiros passos de no máximo 1 em 10 por 14\u00A0dias seguidos. Alongamentos como estes estão no plano desde a primeira semana, e o fortalecimento da panturrilha avança no seu ritmo.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da manhã for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico, não fornece talas e não substitui um profissional de saúde.',

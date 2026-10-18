@@ -18,7 +18,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     'Come fare le oscillazioni della caviglia, l’esercizio con il ginocchio oltre le dita per la mobilità: tecnica, serie, perché conta e come misurarla.',
   h1: 'Oscillazioni della caviglia: come farle e perché la mobilità conta',
   lede:
-    'Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con odds di fascite plantare 23,3\u00A0volte più alte.',
+    'Le oscillazioni della caviglia sono un esercizio in piedi in cui il ginocchio va in avanti oltre le dita mentre il tallone resta appoggiato a terra. Allenano la dorsiflessione della caviglia, cioè quanto si piega la caviglia quando il piede è a terra. In uno studio caso-controllo su 50\u00A0persone con [fascite plantare](/it/fascite-plantare/) e 100\u00A0controlli, una dorsiflessione ridotta era il fattore di rischio più forte in assoluto, con odds di fascite plantare 23,3\u00A0volte più alte.',
   takeaways: [
     'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con odds 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
     'Le oscillazioni della caviglia allenano la dorsiflessione caricando la fine del movimento con il peso del corpo, a differenza di un allungamento passivo al muro.',
@@ -65,7 +65,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
             'La fascia plantare assorbe forze per cui non è fatta.',
           ],
         },
-        'Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con odds di sviluppare la fascite plantare 23,3\u00A0volte più alte. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
+        'Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con odds di sviluppare la fascite plantare 23,3\u00A0volte più alte. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un [polpaccio rigido](/it/polpacci-rigidi/), in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
         'Allungare il polpaccio in modo passivo (come nell’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e nell’[allungamento del soleo](/it/esercizi/allungamento-soleo/)) affronta un lato del problema: la lunghezza del muscolo. Le oscillazioni della caviglia affrontano l’altro lato: il controllo attivo a fine movimento. Portare il ginocchio oltre le dita con il peso del corpo insegna alla caviglia a usare il movimento che ha, non solo a raggiungerlo in modo passivo.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -75,7 +75,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
       paragraphs: [
         'L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) è una tenuta passiva. Ti appoggi al muro e aspetti che il muscolo si allunghi. La gamba dietro è tesa, così lavori sul gastrocnemio. L’[allungamento del soleo](/it/esercizi/allungamento-soleo/) fa lo stesso con il ginocchio piegato.',
         'Le oscillazioni della caviglia sono un movimento attivo e ripetuto. Spingi il ginocchio in avanti, torni indietro, spingi di nuovo. Carichi la caviglia lungo tutto il movimento invece di stare fermo a fine corsa. Le oscillazioni allenano la capacità di usare la dorsiflessione sotto carico, che è proprio ciò che richiedono camminata e corsa.',
-        'Sono utili tutti e due. **L’allungamento apre il movimento. Le oscillazioni ti allenano a usarlo.** La linea guida dà all’allungamento del polpaccio una A. Le oscillazioni della caviglia fanno parte del lavoro di mobilità che Walkito mette insieme a quegli allungamenti.',
+        'Sono utili tutti e due. **L’allungamento apre il movimento. Le oscillazioni ti allenano a usarlo.** La linea guida dà all’allungamento del polpaccio una A. Le oscillazioni della caviglia fanno parte del [lavoro di mobilità](/it/esercizi-mobilita-caviglia/) che Walkito mette insieme a quegli allungamenti.',
       ],
       cites: [CITE.guideline],
     },
@@ -145,7 +145,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette le oscillazioni della caviglia nei giorni di mobilità, insieme all’allungamento del polpaccio e del soleo. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Un centimetro di miglioramento nel test ginocchio-muro in qualche settimana è significativo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

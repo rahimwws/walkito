@@ -21,7 +21,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
     'Come fare il massaggio con la pallina o con la bottiglia ghiacciata per la fascite plantare: tecnica, per quanto tempo, cosa fa e cosa non fa.',
   h1: 'Massaggio con la pallina per la fascite plantare: pallina, bottiglia e tecnica',
   lede:
-    'Far rotolare la pianta del piede su una pallina o una bottiglia è una delle cose più comuni che si fanno da soli per la fascite plantare. È piacevole, e i professionisti lo consigliano per calmare il tessuto tra una sessione e l’altra. Però nessuno studio randomizzato ha testato il massaggio con la pallina da solo per la fascite plantare. Questa pagina spiega cosa fa, cosa non fa e dove si colloca onestamente la bottiglia ghiacciata.',
+    'Far rotolare la pianta del piede su una pallina o una bottiglia è una delle cose più comuni che si fanno da soli per la [fascite plantare](/it/fascite-plantare/). È piacevole, e i professionisti lo consigliano per calmare il tessuto tra una sessione e l’altra. Però nessuno studio randomizzato ha testato il massaggio con la pallina da solo per la fascite plantare. Questa pagina spiega cosa fa, cosa non fa e dove si colloca onestamente la bottiglia ghiacciata.',
   takeaways: [
     'Nessuno studio randomizzato ha testato il massaggio con la pallina come intervento a sé per la fascite plantare. È molto consigliato come gesto di sollievo e recupero, non come intervento principale.',
     'La linea guida del 2023 sul dolore al tallone indica allungamenti (grado A) e allenamento di forza (grado B) come pilastri dell’esercizio. Il massaggio con la pallina non ha un grado a parte.',
@@ -143,7 +143,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette il massaggio con la pallina a fine sessione e nei giorni di recupero. L’app gestisce tempi e ordine, così non devi ricordarti in quali giorni fare il massaggio e in quali allungare o rinforzare.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

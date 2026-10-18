@@ -93,7 +93,7 @@ export const ICE_HEAT_FR: Guide = {
       keyFact: 'Sur 36\u00A0études et 1\u00A0301\u00A0personnes non blessées, la chaleur associée aux étirements a amélioré l’amplitude de mouvement plus que les étirements seuls (Bleakley et Costello, 2013).',
       paragraphs: [
         '**Réchauffer le pied avant de vous étirer est un choix raisonnable**, mieux étayé que la glace avant les étirements. Une revue de 2013 portant sur 36\u00A0études et 1\u00A0301\u00A0personnes non blessées a montré que la chaleur augmentait l’amplitude de mouvement, et que la chaleur plus les étirements donnaient de meilleurs résultats que les étirements seuls. Les données sur le froid étaient contradictoires. Toutes les études avaient un risque de biais élevé, et aucune ne portait sur des personnes ayant mal au talon\u00A0: voyez-y une idée sensée, pas un plan testé pour la fasciite plantaire.',
-        'Se réchauffer peut être simple. Une douche chaude, ou quelques minutes les pieds dans l’eau chaude, avant l’étirement du fascia plantaire et l’étirement du mollet.',
+        'Se réchauffer peut être simple. Une douche chaude, ou quelques minutes les pieds dans l’eau chaude, avant l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et l’étirement du mollet.',
         'Le matin, en revanche, n’attendez pas d’être réchauffé pour vous étirer. L’étirement des premiers pas se fait avant que le pied ne porte du poids, assis au bord du lit. [Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille cette routine.',
       ],
       cites: [CITE.bleakleyThermal],
@@ -125,7 +125,7 @@ export const ICE_HEAT_FR: Guide = {
         'Retirez la glace si la peau devient blanche, dure ou engourdie, ou si elle picote fortement.',
         'Pour la chaleur, choisissez tiède, pas brûlant. Une bouillotte ou de l’eau chaude doit être agréable, jamais piquante.',
         'Ne dormez jamais sur un coussin chauffant ni avec une poche de glace sur le pied.',
-        'Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela demande un professionnel de santé, pas une bouillotte.',
+        'Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela relève d’un professionnel de santé, pas d’une bouillotte.',
         'Si vous avez du diabète, des pieds engourdis, une mauvaise circulation ou un syndrome de Raynaud (doigts ou orteils qui blanchissent au froid), demandez l’avis d’un professionnel de santé avant d’utiliser l’un ou l’autre.',
       ],
       after: [

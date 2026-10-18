@@ -33,7 +33,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Was sind die Sesambeine, und warum tun sie weh?',
       paragraphs: [
         'Die zwei Sesambeine liegen unter dem Kopf des ersten Mittelfußknochens, des langen Knochens hinter der großen Zehe. Das innere (mediale) Sesambein, das näher zur Mitte des Fußes liegt, wird häufiger verletzt. Zusammen helfen sie der großen Zehe, sich vom Boden abzudrücken, und fangen in der Abdruckphase beim Gehen Kraft ab.',
-        'Eine Sesamoiditis entsteht, wenn sich diese Knochen oder das umliegende Gewebe entzünden. Aktivitäten, die den Vorfuß wiederholt belasten, etwa Laufen, Tanzen oder Springen, sind häufige Auslöser. Ebenso eine plötzliche Steigerung des Trainingsumfangs. Menschen mit Hohlfuß oder einem vorstehenden ersten Mittelfußköpfchen sind anfälliger, weil mehr Druck auf diese Stelle fällt.',
+        'Eine Sesamoiditis entsteht, wenn sich diese Knochen oder das umliegende Gewebe entzünden. Aktivitäten, die den Vorfuß wiederholt belasten, etwa Laufen, Tanzen oder Springen, sind häufige Auslöser. Ebenso eine plötzliche Steigerung des Trainingsumfangs. Menschen mit [Hohlfuß](/de/hohlfuss-uebungen/) oder einem vorstehenden ersten Mittelfußköpfchen sind anfälliger, weil mehr Druck auf diese Stelle fällt.',
         'Der Begriff Sesamoiditis wird in der Praxis weit gefasst und hat keine einheitliche, strenge Definition. Er kann eine Entzündung der Knochen selbst, des umliegenden Weichgewebes oder von beidem beschreiben. Eine systematische Übersichtsarbeit von 2025 hielt fest, dass es noch keine einheitlichen Leitlinien für die konservative Behandlung gibt.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -43,7 +43,7 @@ export const SESAMOIDITIS_DE: Guide = {
       keyFact: 'Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, eine normale Variante, die auf dem Röntgenbild wie ein Bruch aussehen kann, aber glatte, abgerundete Kanten hat statt gezackter (Yammine, 2015).',
       paragraphs: [
         'Die Sesamoiditis ist eine Überlastungsbeschwerde. Der Schmerz kommt langsam und tut bei Belastung weh. Ein Bruch des Sesambeins ist ein Riss im Knochen, meist durch ein einzelnes akutes Ereignis oder durch dauerhafte Überlastung. Der Schmerz bei einem Bruch ist eher stechend und kann auch in Ruhe da sein.',
-        'Eine Schwierigkeit: Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, das innere Sesambein besteht also von Natur aus aus zwei Teilen. Auf dem Röntgenbild sieht ein zweigeteiltes Sesambein wie ein Bruch aus. Der Unterschied liegt in den Kanten: **Beim zweigeteilten Sesambein sind sie glatt und abgerundet, bei einem Bruch gezackt und unregelmäßig.** Deine Fachperson röntgt vielleicht auch den anderen Fuß zum Vergleich.',
+        'Eine Schwierigkeit: Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, das innere Sesambein besteht also von Natur aus aus zwei Teilen. Auf dem Röntgenbild sieht ein zweigeteiltes Sesambein wie ein Bruch aus. Der Unterschied liegt in den Kanten: **Beim zweigeteilten Sesambein sind sie glatt und abgerundet, bei einem Bruch gezackt und unregelmäßig.** Deine Ärztin oder dein Arzt röntgt vielleicht auch den anderen Fuß zum Vergleich.',
         'Wenn das Röntgenbild unklar ist, können eine Knochenszintigrafie oder ein MRT die Diagnose bestätigen. Ein MRT zeigt ein Knochenmarködem, also eine Schwellung im Inneren des Knochens, die in den meisten Fällen von Sesamoiditis vorliegt. Ein MRT bleibt meist Fällen vorbehalten, in denen die Beschwerden trotz erster Behandlung anhalten.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -55,7 +55,7 @@ export const SESAMOIDITIS_DE: Guide = {
         'Die systematische Übersichtsarbeit von Biz und Kollegen von 2025 fasste Einzeldaten aus 11\u00A0Studien mit 59\u00A0Patienten zusammen. Die häufigsten Behandlungen waren:',
         {
           list: [
-            'Einlagen.',
+            '[Einlagen](/de/einlagen-oder-uebungen/).',
             'Angepasste Aktivität.',
             'Kortisonspritzen.',
           ],
@@ -72,7 +72,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Was ist ein Tänzerpolster, und wie wirkt es?',
       paragraphs: [
         'Ein Tänzerpolster (englisch „dancer\'s pad“) ist ein flaches Polster aus Filz oder Schaumstoff mit einer U-förmigen Aussparung unter dem ersten Mittelfußköpfchen. Die Aussparung sitzt genau über dem Bereich der Sesambeine, sodass das Polster den umliegenden Vorfuß anhebt und den direkten Druck von der schmerzenden Stelle nimmt. Der Name kommt aus dem Ballett, wo der Vorfuß extrem belastet wird.',
-        'Du kannst fertig zugeschnittene Tänzerpolster kaufen oder dir eines von einer Fachperson passend für deinen Fuß zuschneiden lassen. Die Position zählt: **Die Aussparung muss direkt unter den Sesambeinen sitzen**, nicht zu weit vorn oder hinten. Manche nutzen das Polster lose im Schuh, andere lassen es in eine Maßeinlage einarbeiten.',
+        'Du kannst fertig zugeschnittene Tänzerpolster kaufen oder dir eines in der Podologie oder Orthopädietechnik passend für deinen Fuß zuschneiden lassen. Die Position zählt: **Die Aussparung muss direkt unter den Sesambeinen sitzen**, nicht zu weit vorn oder hinten. Manche nutzen das Polster lose im Schuh, andere lassen es in eine Maßeinlage einarbeiten.',
         'Ein Schuh mit steifer Sohle oder Abrollsohle verringert, wie stark sich das Großzehengrundgelenk beim Abdrücken beugt, und begrenzt so die Last auf die Sesambeine. Aus demselben Grund hilft es, in der Phase mit Beschwerden weiche Schuhe mit dünner Sohle und hohe Absätze zu meiden.',
       ],
     },
@@ -96,7 +96,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Welche Rolle spielen Übungen?',
       paragraphs: [
         'Die ehrliche Antwort: Übungen spielen bei der Behandlung der Sesamoiditis selbst eine begrenzte Rolle. Anders als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wo Belastungsprogramme gut durch Studien gestützt sind, gibt es keine Übungsstudien zur Sesamoiditis. Die systematische Übersichtsarbeit von 2025 fand keine Studie, die ein bestimmtes Übungsprotokoll getestet hat.',
-        'Wobei Übungen helfen können, ist das Drumherum. Eine verkürzte Wade verlagert beim Gehen Gewicht auf den Vorfuß. Den Gastrocnemius und den Soleus zu dehnen, kann diese Last nach vorn verringern. Schwache innere Fußmuskeln können ebenfalls zu einer ungleichmäßigen Druckverteilung im Vorfuß beitragen. Zehenspreizen und die Kurzer-Fuß-Übung können helfen, die Last gleichmäßiger auf die Mittelfußköpfchen zu verteilen, auch wenn das nicht speziell bei Sesamoiditis getestet wurde.',
+        'Wobei Übungen helfen können, ist das Drumherum. Eine [verkürzte Wade](/de/verspannte-waden/) verlagert beim Gehen Gewicht auf den Vorfuß. Den Gastrocnemius und den Soleus zu dehnen, kann diese Last nach vorn verringern. Schwache innere Fußmuskeln können ebenfalls zu einer ungleichmäßigen Druckverteilung im Vorfuß beitragen. Zehenspreizen und die Kurzer-Fuß-Übung können helfen, die Last gleichmäßiger auf die Mittelfußköpfchen zu verteilen, auch wenn das nicht speziell bei Sesamoiditis getestet wurde.',
         'Wenn du dich von einer Sesamoiditis erholst und in der Ruhephase Kraft in den Zehen oder Beweglichkeit in der Wade verloren hast, können sanfte Übungen für den [Fußballen](/de/metatarsalgie-vorfussschmerzen/) Teil eines Plans für die Rückkehr zur Aktivität sein. Aber **Entlastung und angepasste Aktivität sind die wichtigsten Werkzeuge, nicht Übungen.**',
       ],
     },
@@ -104,7 +104,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Wie hängt die Sesamoiditis mit anderen Vorfußbeschwerden zusammen?',
       paragraphs: [
         'Der Schmerz bei Sesamoiditis sitzt unter der großen Zehe. Das unterscheidet ihn von allgemeineren [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) (Metatarsalgie), bei denen der Schmerz meist unter dem zweiten und dritten Mittelfußköpfchen sitzt. Ein [Morton-Neurom](/de/morton-neurom/) verursacht Kribbeln oder Brennen zwischen der dritten und vierten Zehe, nicht unter der großen Zehe.',
-        'Auch Gicht kann das Großzehengrundgelenk betreffen und fühlt sich anfangs ähnlich an, aber Gicht kommt plötzlich, oft über Nacht, mit Rötung, Schwellung und Wärme. Eine Sesamoiditis entwickelt sich langsam. **Wenn der Beginn plötzlich war und das Gelenk rot und warm ist, geh zu einer Fachperson, um Gicht oder eine Infektion auszuschließen.**',
+        'Auch Gicht kann das Großzehengrundgelenk betreffen und fühlt sich anfangs ähnlich an, aber Gicht kommt plötzlich, oft über Nacht, mit Rötung, Schwellung und Wärme. Eine Sesamoiditis entwickelt sich langsam. **Wenn der Beginn plötzlich war und das Gelenk rot und warm ist, lass das zuerst ärztlich abklären, um Gicht oder eine Infektion auszuschließen.**',
         'Ein Hallux rigidus, also Steifigkeit und Arthrose im Großzehengrundgelenk, kann ebenfalls an einer ähnlichen Stelle Schmerzen verursachen, betrifft aber das Gelenk selbst und nicht die Sesambeine darunter.',
       ],
     },
@@ -121,7 +121,7 @@ export const SESAMOIDITIS_DE: Guide = {
     },
     {
       q: 'Brauche ich ein MRT bei Sesamoiditis?',
-      a: 'Nicht immer. Ein Röntgenbild ist meist der erste Schritt und kann einen Bruch von einem zweigeteilten Sesambein unterscheiden. Ein MRT ist hilfreich, wenn das Röntgenbild normal ist, die Beschwerden aber anhalten, oder wenn die Fachperson nach einem Knochenmarködem oder einer Verletzung des Weichgewebes suchen will.',
+      a: 'Nicht immer. Ein Röntgenbild ist meist der erste Schritt und kann einen Bruch von einem zweigeteilten Sesambein unterscheiden. Ein MRT ist hilfreich, wenn das Röntgenbild normal ist, die Beschwerden aber anhalten, oder wenn die Ärztin oder der Arzt nach einem Knochenmarködem oder einer Verletzung des Weichgewebes suchen will.',
       cites: [CITE.yammineSesamoid],
     },
     {
@@ -148,7 +148,7 @@ export const SESAMOIDITIS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz plötzlich nach einem Sturz, einem Sprung oder einem direkten Schlag auf den Vorfuß angefangen hat, was auf einen Bruch hindeuten kann',
       'das Großzehengrundgelenk rot, warm und geschwollen ist, vor allem wenn das über Nacht kam, was Gicht oder eine Infektion sein könnte',
@@ -161,7 +161,7 @@ export const SESAMOIDITIS_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Die Sesamoiditis wird vor allem mit Entlastung und Schuhen behandelt, nicht mit einem Übungsprogramm. Walkito ist für Beschwerden wie Plantarfasziitis und Plattfüße gebaut, bei denen strukturierte Belastungsprogramme durch Studien gestützt sind. Wenn deine Sesamoiditis abgeklungen ist und du als Teil der Rückkehr zur Aktivität wieder Kraft in Fuß und Wade aufbauen willst, können die Übungen für die inneren Fußmuskeln und die Wadendehnungen der App eine sinnvolle Ergänzung sein.',
+      'Die Sesamoiditis wird vor allem mit Entlastung und Schuhen behandelt, nicht mit einem Übungsprogramm. Walkito ist für Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis/) und [Plattfüße](/de/plattfuss/) gebaut, bei denen strukturierte Belastungsprogramme durch Studien gestützt sind. Wenn deine Sesamoiditis abgeklungen ist und du als Teil der Rückkehr zur Aktivität wieder Kraft in Fuß und Wade aufbauen willst, können die Übungen für die inneren Fußmuskeln und die Wadendehnungen der App eine sinnvolle Ergänzung sein.',
     more: [
       'Wenn der Vorfußschmerz breiter ist und das zweite oder dritte Mittelfußköpfchen betrifft, findest du auf der Seite zu [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) Übungen mit mehr Belegen.',
     ],

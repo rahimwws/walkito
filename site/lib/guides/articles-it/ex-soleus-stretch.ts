@@ -18,7 +18,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
     'Come fare l’allungamento del soleo a ginocchio piegato per la fascite plantare e i polpacci rigidi: tecnica, perché serve a parte, serie e tempi.',
   h1: 'Allungamento del soleo (ginocchio piegato): tecnica, serie e perché conta',
   lede:
-    'Il soleo è il muscolo più profondo del polpaccio, che sta sotto il gastrocnemio. Si allunga solo con il ginocchio piegato, perché piegare il ginocchio toglie di mezzo il gastrocnemio. In un’analisi su 254\u00A0persone con fascite plantare, tra il 23 e il 30% aveva una contrattura combinata di gastrocnemio e soleo. Se fai solo l’allungamento a ginocchio teso, questo muscolo lo salti del tutto.',
+    'Il soleo è il muscolo più profondo del polpaccio, che sta sotto il gastrocnemio. Si allunga solo con il ginocchio piegato, perché piegare il ginocchio toglie di mezzo il gastrocnemio. In un’analisi su 254\u00A0persone con [fascite plantare](/it/fascite-plantare/), tra il 23 e il 30% aveva una contrattura combinata di gastrocnemio e soleo. Se fai solo l’allungamento a ginocchio teso, questo muscolo lo salti del tutto.',
   takeaways: [
     'Il soleo passa solo sulla caviglia. Il gastrocnemio passa sul ginocchio e sulla caviglia. Piegando il ginocchio il gastrocnemio si rilassa e l’allungamento va sul soleo.',
     'Su 254\u00A0persone con fascite plantare, tra il 23 e il 30% aveva una contrattura sia del gastrocnemio sia del soleo (Patel e DiGiovanni, 2011).',
@@ -124,7 +124,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’allungamento del soleo insieme all’allungamento del polpaccio e a quello della fascia plantare in quasi tutte le sessioni. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. L’app passa dagli allungamenti alla forza al tuo ritmo, non secondo un calendario fisso.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Un movimento della caviglia che migliora nel giro di settimane mostra che gli allungamenti stanno servendo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

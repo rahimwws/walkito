@@ -124,7 +124,7 @@ export default function PrivacidadePt() {
             quando registrou e onde doía, e se você fez o alongamento da manhã.
           </li>
           <li>
-            <b>Os resultados dos seus testes:</b> elevações de panturrilha,
+            <b>Os resultados dos seus testes:</b> elevações de calcanhar,
             sustentação do arco e equilíbrio, esquerda e direita.
           </li>
           <li>

@@ -143,9 +143,9 @@ export const BUNIONS_DE: Guide = {
     {
       h2: 'Wann wird über eine Operation nachgedacht?',
       paragraphs: [
-        'Über eine Operation wird nachgedacht, wenn Schmerz und Einschränkungen trotz konservativer Maßnahmen wie anderer Schuhe, Übungen, Zehenspreizer und Einlagen bleiben. **Die Entscheidung hängt davon ab, wie stark der Hallux valgus den Alltag beeinträchtigt, nicht vom Winkel allein.**',
+        'Über eine Operation wird nachgedacht, wenn Schmerz und Einschränkungen trotz konservativer Maßnahmen wie anderer Schuhe, Übungen, Zehenspreizer und [Einlagen](/de/einlagen-oder-uebungen/) bleiben. **Die Entscheidung hängt davon ab, wie stark der Hallux valgus den Alltag beeinträchtigt, nicht vom Winkel allein.**',
         'Es gibt mehr als 150 Operationsverfahren bei Hallux valgus, von der Korrektur der Weichteile bis zur Osteotomie (der Knochen wird durchtrennt und neu ausgerichtet). Die Wahl hängt vom Schweregrad und von der genauen Anatomie ab. Die Erholung dauert Wochen bis Monate.',
-        'Übungen und konservative Behandlung werden meist zuerst über mehrere Monate versucht. Wenn du deine Beschwerden mit den Ansätzen auf dieser Seite gut im Griff hast, ist eine Operation nicht dringend. Wenn der Schmerz trotz dieser Maßnahmen das Gehen, die Schuhwahl oder deine Aktivität einschränkt, kann eine Fachperson für Fuß und Sprunggelenk mit dir die Möglichkeiten besprechen.',
+        'Übungen und konservative Behandlung werden meist zuerst über mehrere Monate versucht. Wenn du deine Beschwerden mit den Ansätzen auf dieser Seite gut im Griff hast, ist eine Operation nicht dringend. Wenn der Schmerz trotz dieser Maßnahmen das Gehen, die Schuhwahl oder deine Aktivität einschränkt, kann eine Fachärztin oder ein Facharzt für Fuß und Sprunggelenk mit dir die Möglichkeiten besprechen.',
       ],
     },
   ],
@@ -171,7 +171,7 @@ export const BUNIONS_DE: Guide = {
     },
     {
       q: 'Kann man mit Hallux valgus joggen?',
-      a: 'Viele laufen mit einem Ballenzeh ohne Probleme. Ein Laufschuh mit breiter Zehenbox und ein Zehenspreizer beim Laufen können helfen. Wenn der Ballenzeh während oder nach dem Laufen Schmerzen macht, lohnt es sich, kürzerzutreten und zu einer Fachperson zu gehen, statt weiterzumachen.',
+      a: 'Viele laufen mit einem Ballenzeh ohne Probleme. Ein Laufschuh mit breiter Zehenbox und ein Zehenspreizer beim Laufen können helfen. Wenn der Ballenzeh während oder nach dem Laufen Schmerzen macht, lohnt es sich, kürzerzutreten und zum Arzt oder zur Ärztin zu gehen, statt weiterzumachen.',
     },
     {
       q: 'Wie entsteht ein Hallux valgus überhaupt?',
@@ -187,7 +187,7 @@ export const BUNIONS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'das Großzehengrundgelenk rot, warm und geschwollen ist, was eher auf Gicht, eine Infektion oder eine Schleimbeutelentzündung hindeuten kann als auf einen einfachen Ballenzeh',
       'der Schmerz so stark ist, dass er trotz breiterer Schuhe das tägliche Gehen einschränkt',
@@ -200,7 +200,7 @@ export const BUNIONS_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die Einheiten von 3 oder 5\u00A0Minuten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, die Übungen regelmäßig.',
+      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und [Plattfüße](/de/plattfuss/) gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die Einheiten von 3 oder 5\u00A0Minuten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, die Übungen regelmäßig.',
     more: [
       'Bei breiteren Vorfußschmerzen am zweiten und dritten Mittelfußköpfchen lies [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/). Bei Schmerzen direkt unter dem Großzehengrundgelenk lies [Sesamoiditis](/de/sesamoiditis/).',
     ],

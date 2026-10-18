@@ -219,7 +219,7 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
       h2: 'Et les exercices de renforcement de la cheville pour les coureurs\u00A0?',
       paragraphs: [
         'Les coureurs ont besoin de la même progression, poussée plus loin. Quand les montées sur pointes sur deux pieds sont faciles, passez aux montées sur pointes sur une jambe, puisque chaque foulée charge une jambe à la fois. Le [test de montée sur pointes](/fr/test-montee-sur-pointes/) montre combien de montées sur une jambe vous pouvez faire par rapport aux valeurs habituelles.',
-        'Les preuves sur l’équilibre viennent surtout de populations sportives\u00A0: elles s’appliquent donc directement aux coureurs. Si vous avez mal le long du tibia plutôt qu’à la cheville, voir les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/). Si c’est au talon ou au tendon d’Achille, voir [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
+        'Les preuves sur l’équilibre viennent surtout de populations sportives\u00A0: elles s’appliquent donc directement aux coureurs. Si vous avez mal le long du tibia plutôt qu’à la cheville, voir les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
       ],
       cites: [CITE.schiftan],
     },

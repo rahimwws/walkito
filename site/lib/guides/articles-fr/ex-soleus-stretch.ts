@@ -17,7 +17,7 @@ export const EX_SOLEUS_STRETCH_FR: Guide = {
     'Comment faire l’étirement du soléaire genou plié contre la fasciite plantaire et les mollets raides\u00A0: technique, pourquoi il est utile, séries, maintien.',
   h1: 'Étirement du soléaire (genou plié)\u00A0: technique, séries et pourquoi il est utile',
   lede:
-    'Le soléaire est le muscle profond du mollet, situé sous le gastrocnémien. Il ne s’étire que genou plié, car plier le genou met le gastrocnémien hors jeu. Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 23 à 30\u00A0% avaient une rétraction combinée du gastrocnémien et du soléaire. Si vous ne faites que l’étirement genou tendu, vous passez complètement à côté de ce muscle.',
+    'Le soléaire est le muscle profond du mollet, situé sous le gastrocnémien. Il ne s’étire que genou plié, car plier le genou met le gastrocnémien hors jeu. Dans une série de 254\u00A0personnes atteintes de [fasciite plantaire](/fr/fasciite-plantaire/), 23 à 30\u00A0% avaient une rétraction combinée du gastrocnémien et du soléaire. Si vous ne faites que l’étirement genou tendu, vous passez complètement à côté de ce muscle.',
   takeaways: [
     'Le soléaire ne passe que par la cheville. Le gastrocnémien passe par le genou et par la cheville. Plier le genou détend le gastrocnémien, et c’est le soléaire qui prend l’étirement.',
     'Chez 254\u00A0personnes atteintes de fasciite plantaire, 23 à 30\u00A0% avaient une rétraction à la fois du gastrocnémien et du soléaire (Patel et DiGiovanni, 2011).',

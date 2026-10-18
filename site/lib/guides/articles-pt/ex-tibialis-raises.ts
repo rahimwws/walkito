@@ -136,7 +136,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito junta a elevação dos dedos com a elevação de calcanhar, o trabalho de equilíbrio e os exercícios para o pé em um plano montado no seu nível atual. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos.',
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, o equilíbrio e a sustentação do arco. A elevação dos dedos faz parte dos dias de força. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',

@@ -97,8 +97,8 @@ export default function SupportDe() {
         <p>
           Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und kann dir
           nicht sagen, was los ist. Wenn der Schmerz stechend ist, schlimmer
-          wird oder dich nicht schlafen lässt, geh zu einer medizinischen
-          Fachperson.
+          wird oder dich nicht schlafen lässt, geh zum Arzt oder zur
+          Ärztin.
         </p>
 
         <h2>Käufe</h2>

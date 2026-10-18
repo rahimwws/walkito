@@ -42,12 +42,12 @@ export const BALL_OF_FOOT_PT: Guide = {
     {
       h2: 'O que causa dor na planta do pé?',
       paragraphs: [
-        '**Metatarsalgia** é o nome mais comum. Descreve dor e inflamação em volta de uma ou mais cabeças dos metatarsos, normalmente a segunda e a terceira. Excesso de uso, um segundo metatarso longo, arco alto e panturrilhas tensas podem contribuir.',
+        '**Metatarsalgia** é o nome mais comum. Descreve dor e inflamação em volta de uma ou mais cabeças dos metatarsos, normalmente a segunda e a terceira. Excesso de uso, um segundo metatarso longo, [arco alto](/pt/pe-cavo-exercicios/) e [panturrilhas tensas](/pt/panturrilha-tensa/) podem contribuir.',
         '**Neuroma de Morton** é um espessamento do nervo entre as cabeças dos metatarsos, na maioria das vezes entre o terceiro e o quarto dedos. Ele causa queimação, formigamento ou dormência, e não só uma dor. Sapatos apertados ou de salto alto comprimem o nervo e pioram o quadro.',
         '**Sesamoidite** é a inflamação dos dois ossinhos que ficam dentro do tendão embaixo da articulação do dedão. A dor fica bem embaixo do dedão, e não embaixo do meio da parte da frente do pé.',
         '**Fratura por estresse do metatarso** é uma pequena trinca em um dos metatarsos, normalmente o segundo ou o terceiro. A dor é localizada, muitas vezes piora ao longo do dia e pode doer à noite. Inchaço no peito do pé é comum. Esta precisa de exame de imagem e repouso.',
         '**Dedos em garra e dedos em martelo** dobram as articulações dos dedos para baixo, o que tira o dedo do chão e passa a carga do impulso de volta para a cabeça do metatarso atrás dele.',
-        '**Saltos altos e sapatos apertados** jogam o peso para a frente do pé e apertam as cabeças dos metatarsos umas contra as outras, e é por isso que o neuroma de Morton é mais comum em quem usa esse tipo de calçado.',
+        '**Saltos altos e sapatos apertados** jogam o peso para a frente do pé e apertam as cabeças dos metatarsos umas contra as outras, e é por isso que o [neuroma de Morton](/pt/neuroma-de-morton/) é mais comum em quem usa esse tipo de calçado.',
         '**Arco alto** (pé cavo, um pé com arco alto e rígido) reduz a área de contato da sola, concentrando a pressão no calcanhar e na parte da frente do pé. No outro extremo, o [pé chato](/pt/exercicios-pe-chato/) também pode contribuir para a dor na parte da frente do pé, porque muda o jeito como o pé rola quando empurra o chão.',
         '**Panturrilhas tensas** são uma causa subestimada. Quando o gastrocnêmio, o músculo maior e mais superficial da panturrilha, está tenso, o tornozelo não consegue dobrar o suficiente durante a caminhada. O corpo compensa tirando o calcanhar do chão mais cedo, o que passa mais carga para a parte da frente do pé. É o mesmo mecanismo por trás da [fascite plantar](/pt/exercicios-fascite-plantar/) e da [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
@@ -61,7 +61,7 @@ export const BALL_OF_FOOT_PT: Guide = {
           list: [
             'Dor espalhada embaixo da segunda e da terceira cabeças dos metatarsos aponta para metatarsalgia.',
             'Dor entre o terceiro e o quarto dedos, com formigamento, sugere neuroma de Morton.',
-            'Dor bem embaixo da articulação do dedão combina mais com sesamoidite.',
+            'Dor bem embaixo da articulação do dedão combina mais com [sesamoidite](/pt/sesamoidite/).',
             'Um ponto localizado no peito do pé, com inchaço, levanta a suspeita de fratura por estresse.',
           ],
         },
@@ -191,7 +191,7 @@ export const BALL_OF_FOOT_PT: Guide = {
       paragraphs: [
         'A evidência de exercício na dor na planta do pé é mais fraca do que para [fascite plantar](/pt/exercicios-fascite-plantar/) ou tendinite de Aquiles, em que existem ensaios randomizados. Para metatarsalgia, há um estudo antes e depois com 41\u00A0pessoas e sem grupo de controle. O raciocínio biomecânico faz sentido, e o risco de exercícios leves para os dedos e alongamentos da panturrilha é baixo, mas falta a prova direta de um ensaio controlado.',
         '**Só o exercício pode não bastar.** Almofadas metatarsais, calçados com bico largo e menos tempo de salto têm um consenso clínico mais amplo.',
-        'No neuroma de Morton, trocar de calçado e usar almofadas muitas vezes funciona melhor do que exercício. Numa fratura por estresse do metatarso, exercício é o caminho errado até o osso se recuperar. Se a dor dura mais de algumas semanas, ou vem com dormência ou inchaço, faça uma avaliação primeiro. [Dor no calcanhar na corrida](/heel-pain-runners/) (em inglês) fala do controle de carga para quem corre.',
+        'No neuroma de Morton, trocar de calçado e usar almofadas muitas vezes funciona melhor do que exercício. Numa fratura por estresse do metatarso, exercício é o caminho errado até o osso se recuperar. Se a dor dura mais de algumas semanas, ou vem com dormência ou inchaço, faça uma avaliação primeiro.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -235,7 +235,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     },
     {
       q: 'Quais as complicações da metatarsalgia não tratada?',
-      a: 'Sem cuidado, a metatarsalgia pode mudar o seu jeito de andar, porque as pessoas naturalmente tiram o peso do ponto dolorido e passam para outras partes do pé, o que pode criar novos pontos de dor. A pressão contínua nas cabeças dos metatarsos também pode contribuir para calos ou, menos vezes, para deformidades dos dedos, como dedos em martelo. Trocar de calçado cedo e usar almofadas metatarsais reduz esse risco.',
+      a: 'Sem cuidado, a metatarsalgia pode mudar o seu jeito de andar, porque as pessoas naturalmente tiram o peso do ponto dolorido e passam para outras partes do pé, o que pode criar novos pontos de dor. A pressão contínua nas cabeças dos metatarsos também pode contribuir para calos ou, menos vezes, para deformidades dos dedos, como [dedos em martelo](/pt/dedo-em-martelo-exercicios/). Trocar de calçado cedo e usar almofadas metatarsais reduz esse risco.',
     },
   ],
   redFlags: {
@@ -253,7 +253,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você pode fazer os exercícios desta página por conta própria, ou deixar o Walkito organizar tudo para você. O app monta um plano uma semana de cada vez. Quando você marca a planta do pé, perto dos dedos, no mapa de dor, a sessão do check-in se concentra em abrir os dedos e no alongamento da fáscia plantar. O programa mais amplo acrescenta alongamento e fortalecimento da panturrilha com o passar das semanas.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando essa meta for alcançada), um teste curto mede o progresso para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a sua dor na parte da frente do pé vem com dormência, inchaço ou um caroço, procure primeiro um profissional de saúde.',

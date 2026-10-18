@@ -219,7 +219,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       h2: 'E os exercícios para fortalecer o tornozelo para quem corre?',
       paragraphs: [
         'Quem corre precisa da mesma progressão, levada mais longe. Quando a elevação de calcanhar com os dois pés ficar fácil, passe para a elevação de calcanhar em uma perna, já que cada passada de corrida põe carga numa perna de cada vez. O [teste de elevação de calcanhar](/pt/teste-elevacao-calcanhar/) mostra quantas elevações em uma perna você consegue fazer em comparação com os números típicos.',
-        'A evidência sobre equilíbrio vem principalmente de populações esportivas, então vale diretamente para quem corre. Se a dor é ao longo da canela e não no tornozelo, veja [exercícios para canelite](/pt/canelite-exercicios/). Se é no calcanhar ou no Aquiles, veja [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
+        'A evidência sobre equilíbrio vem principalmente de populações esportivas, então vale diretamente para quem corre. Se a dor é ao longo da canela e não no tornozelo, veja [exercícios para canelite](/pt/canelite-exercicios/).',
       ],
       cites: [CITE.schiftan],
     },
@@ -272,7 +272,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano uma semana de cada vez em torno de metas para dor no pé e na perna. Ele inclui equilíbrio, inversão com faixa, elevação dos dedos, elevação de calcanhar e trabalho de quadril. A cada semana, ele pode deixar o exercício da sua meta principal um passo mais difícil (no equilíbrio: equilíbrio em uma perna, depois de olhos fechados, depois em cima de um travesseiro), mas só quando as suas duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou. Se uma sessão pareceu difícil ou a dor aumentou, ele volta um passo. A inversão com faixa e a elevação dos dedos não sobem de nível desse jeito. O Walkito não tem um programa para entorse de tornozelo e não verifica se um tornozelo está fraturado ou com ligamento rompido.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada duas semanas no início (a cada quatro quando você alcança uma meta), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

@@ -32,7 +32,7 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
       h2: 'Palmilha ajuda na fascite plantar?',
       keyFact: 'Em uma revisão de 19\u00A0ensaios com 1.660\u00A0pessoas, as palmilhas aliviaram a dor no calcanhar mais que palmilhas falsas só no médio prazo, e as sob medida e as pré-fabricadas não diferiram em nenhum momento (Whittaker e colegas, 2018).',
       paragraphs: [
-        'Um pouco, por um tempo. A fascite plantar é uma irritação da fáscia plantar, a faixa de tecido embaixo do arco. O teste justo compara uma palmilha de verdade com uma **palmilha falsa**: uma palmilha lisa e macia que parece real, mas não dá nenhum suporte.',
+        'Um pouco, por um tempo. A [fascite plantar](/pt/fascite-plantar/) é uma irritação da fáscia plantar, a faixa de tecido embaixo do arco. O teste justo compara uma palmilha de verdade com uma **palmilha falsa**: uma palmilha lisa e macia que parece real, mas não dá nenhum suporte.',
         'Em um ensaio com 135\u00A0pessoas, tanto uma palmilha pré-fabricada quanto uma sob medida melhoraram a função em cerca de 8\u00A0pontos numa escala de 0 a 100 em relação à palmilha falsa aos três meses (Landorf e colegas, 2006). A diferença na dor teve tamanho parecido, mas não foi estatisticamente clara. Aos doze meses, nenhum grupo se diferenciou.',
         'Uma revisão sistemática juntou 19\u00A0ensaios randomizados com 1.660\u00A0pessoas (Whittaker e colegas, 2018). No médio prazo, mais ou menos o segundo e o terceiro mês, as palmilhas aliviaram a dor mais que uma palmilha falsa, com evidência de qualidade moderada. O efeito foi pequeno, e os autores disseram que é “incerto se essa é uma mudança clinicamente importante”. No curto e no longo prazo, não houve benefício claro.',
         'A diretriz de 2023 para dor no calcanhar vai na mesma linha: palmilhas ortopédicas **não** devem ser usadas sozinhas para alívio de curto prazo (grau B contra), mas **podem** ser usadas junto com outros cuidados (grau C).',
@@ -126,7 +126,7 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
       h2: 'Palmilha ortopédica enfraquece o pé?',
       paragraphs: [
         '**Talvez um pouco.** Em um estudo com 18\u00A0jovens adultos com pé chato, três pequenos músculos de dentro do pé diminuíram de 9,6 a 17,4% depois de três meses usando palmilhas ortopédicas sob medida (Protopapas e Perry, 2020). Os grupos não foram randomizados e o estudo era pequeno, então veja isso como um sinal, não como um fato estabelecido.',
-        'O exercício parece compensar. Em um ensaio randomizado com 28\u00A0pessoas com pé chato, todos usaram palmilhas ortopédicas por dois meses e metade também fez o exercício de pé curto (Jung e colegas, 2011). O músculo ao longo do arco interno cresceu nos dois grupos, mas mais com o exercício, e a força do dedão também aumentou mais. Se você usa palmilha o dia todo, mantenha o pé trabalhando com alguns minutos de [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
+        'O exercício parece compensar. Em um ensaio randomizado com 28\u00A0pessoas com pé chato, todos usaram palmilhas ortopédicas por dois meses e metade também fez o [exercício de pé curto](/pt/exercicios/pe-curto/) (Jung e colegas, 2011). O músculo ao longo do arco interno cresceu nos dois grupos, mas mais com o exercício, e a força do dedão também aumentou mais. Se você usa palmilha o dia todo, mantenha o pé trabalhando com alguns minutos de [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
     },
@@ -210,7 +210,7 @@ export const INSOLES_VS_EXERCISES_PT: Guide = {
   },
   program: {
     h2: 'Fazendo os exercícios como um plano',
-    text: 'A palmilha vai para dentro do calçado uma vez só. O exercício só funciona se você continuar fazendo. O Walkito monta um plano uma semana de cada vez para dor no calcanhar ou pé chato, começando com alongamentos como o alongamento da fáscia plantar (2\u00A0vezes de 30\u00A0segundos) e trabalho de arco como o pé curto (3\u00A0séries de 8 segurando 5\u00A0segundos), e depois sobe o seu exercício principal um degrau quando você o avalia como fácil duas vezes seguidas e a dor da manhã se mantém estável.',
+    text: 'A palmilha vai para dentro do calçado uma vez só. O exercício só funciona se você continuar fazendo. O Walkito monta um plano uma semana de cada vez para dor no calcanhar ou pé chato, começando com alongamentos como o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) (2\u00A0vezes de 30\u00A0segundos) e trabalho de arco como o pé curto (3\u00A0séries de 8 segurando 5\u00A0segundos), e depois sobe o seu exercício principal um degrau quando você o avalia como fácil duas vezes seguidas e a dor da manhã se mantém estável.',
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no início (a cada 28 quando você alcança uma meta), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico, não substitui um profissional de saúde e funciona bem junto com uma palmilha.',
     ],

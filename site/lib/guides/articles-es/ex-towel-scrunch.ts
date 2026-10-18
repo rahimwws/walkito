@@ -136,7 +136,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito usa recoger la toalla como un ejercicio inicial para fortalecer el pie. Cuando se siente fácil dos sesiones seguidas, el plan te pasa al ejercicio de pie corto y a su progresión de sentado a de pie. Eliges sesiones de 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días mide cuánto mantienes el arco y la resistencia de la pantorrilla.',
     cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },

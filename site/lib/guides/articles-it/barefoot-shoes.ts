@@ -12,7 +12,7 @@ export const BAREFOOT_IT: Guide = {
     'Le scarpe barefoot fanno bene ai piedi? Cosa dicono gli studi su forza del piede, rischi del passaggio, fascite plantare, piede piatto e chi deve evitarle.',
   h1: 'Le scarpe barefoot fanno bene ai piedi? Forza, rischi e dolore al piede',
   lede:
-    'Le scarpe barefoot, dette anche scarpe minimaliste, possono rendere più forti i muscoli del piede. Negli studi, gli adulti che ci camminavano hanno guadagnato forza nel piede in pochi mesi. Ma passarci troppo in fretta aumenta il rischio di stress osseo e dolore, nessuno studio mostra che da sole allevino la fascite plantare, e chi ha il diabete o i piedi insensibili ha bisogno di scarpe protettive.',
+    'Le scarpe barefoot, dette anche scarpe minimaliste, possono rendere più forti i muscoli del piede. Negli studi, gli adulti che ci camminavano hanno guadagnato forza nel piede in pochi mesi. Ma passarci troppo in fretta aumenta il rischio di stress osseo e dolore, nessuno studio mostra che da sole allevino la [fascite plantare](/it/fascite-plantare/), e chi ha il diabete o i piedi insensibili ha bisogno di scarpe protettive.',
   takeaways: [
     'In uno studio del 2019 su 57\u00A0runner, camminare con scarpe minimaliste per circa due mesi ha reso i muscoli del piede più grandi e più forti, quanto fare esercizi per il piede (Ridge e colleghi).',
     'Gli adulti che hanno portato scarpe minimaliste nella vita di tutti i giorni per sei mesi hanno guadagnato in media il 57,4% di forza delle dita, in uno studio controllato su 22\u00A0persone che hanno cambiato scarpe (Curtis e colleghi, 2021).',
@@ -73,7 +73,7 @@ export const BAREFOOT_IT: Guide = {
             'Nello studio di sei mesi di Fuller e colleghi su 61\u00A0runner, il dolore durante la corsa era più alto con le scarpe minimaliste, in modo netto sopra circa 35\u00A0km a settimana, e il rischio di infortunio saliva con il peso corporeo. La differenza complessiva negli infortuni (16 su 31 contro 11 su 30) poteva essere dovuta al caso.',
           ],
         },
-        'Questi erano runner. Camminare carica il piede molto meno, ed è uno dei motivi per cui gli studi sulla forza hanno usato la camminata. Se corri e hai [dolore al tallone](/heel-pain-runners/) (in inglese), un cambio improvviso di scarpe è un cambio di carico in più di cui il tuo piede non ha bisogno.',
+        'Questi erano runner. Camminare carica il piede molto meno, ed è uno dei motivi per cui gli studi sulla forza hanno usato la camminata. Se corri e hai dolore al tallone, un cambio improvviso di scarpe è un cambio di carico in più di cui il tuo piede non ha bisogno.',
       ],
       sourceNote:
         'Ridge 2013: edema osseo valutato da 0 a 4 alla risonanza magnetica, P = 0,009 per la differenza tra i gruppi. Fuller 2017: hazard ratio 1,64 (IC al 95%: da 0,63 a 4,27, P = 0,31); per i runner di 85,7\u00A0kg l’hazard ratio era 2,00 (IC al 95%: da 1,10 a 3,66). Ryan 2014: 99\u00A0runner analizzati, 23\u00A0infortuni.',
@@ -107,7 +107,7 @@ export const BAREFOOT_IT: Guide = {
         '**Attenzione ai pavimenti duri, soprattutto appena ti alzi al mattino.** Nessuno studio ha testato il camminare scalzi in casa con il dolore al tallone, quindi questo è un consiglio prudente, non una regola testata.',
         'Piastrelle o parquet non danno ammortizzazione al tallone, e i primi passi dopo il riposo sono il momento in cui di solito la fascite plantare fa più male. La nostra pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) suggerisce un allungamento prima di alzarti e qualcosa ai piedi per quei primi passi.',
         'L’ammortizzazione sotto il tallone può contare. In uno studio del 2023, Landorf e colleghi hanno confrontato 50\u00A0persone con dolore sotto il tallone con 25\u00A0persone simili senza dolore. Chi aveva dolore al tallone stava in piedi 3,4\u00A0ore in più al giorno e portava scarpe con talloni più duri. Questo mostra un legame, non una causa.',
-        'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo schema.',
+        'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo tipo di dolore.',
         'Brevi momenti a piedi nudi su erba o sabbia sono più delicati. Se la mattina dopo il dolore al tallone è aumentato, era troppo.',
       ],
       cites: [CITE.landorfFootwear],
@@ -121,7 +121,7 @@ export const BAREFOOT_IT: Guide = {
         alt: 'Tre piedi visti dal lato interno: un piede piatto con l’arco a terra, un arco tipico con un piccolo spazio e un arco alto con un grande spazio.',
       },
       paragraphs: [
-        '**Ci sono indizi, ma nessuno studio sperimentale.** Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva archi più alti e più rigidi e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
+        '**Ci sono indizi, ma nessuno studio sperimentale.** Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva l’arco plantare più alto e più rigido e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
         'Un’indagine più vecchia su 2.300\u00A0bambini in India, di Rao e Joseph nel 1992, ha trovato il piede piatto nell’8,6% dei bambini che portavano scarpe e nel 2,8% di quelli che non le portavano. Il piede piatto era più comune nei bambini che portavano scarpe chiuse.',
         'Entrambi gli studi confrontano gruppi diversi sotto molti aspetti, quindi non possono dimostrare che le scarpe causino il piede piatto, o che scarpe nuove alzino l’arco di un adulto. Nessuno studio lo ha testato.',
         'Conta di più il tipo di piede piatto:',
@@ -161,7 +161,7 @@ export const BAREFOOT_IT: Guide = {
         'Cammina prima di correre. Inizia con brevi momenti di camminata quotidiana, con le scarpe di sempre per il resto della giornata.',
         'Aumenta il tempo solo quando piedi e polpacci stanno normalmente la mattina dopo.',
         'All’inizio aspettati piedi e polpacci stanchi. Un dolore acuto è un’altra cosa.',
-        'Fermati e fatti controllare se il dolore sta in un punto preciso di un osso, spesso sul dorso del piede, e peggiora camminando. È lo schema di una frattura da stress.',
+        'Fermati e fatti controllare se il dolore sta in un punto preciso di un osso, spesso sul dorso del piede, e peggiora camminando. È il quadro tipico di una frattura da stress.',
         'Continua a correre con le scarpe di sempre finché camminare con quelle nuove non ti sembra normale, poi aggiungi la corsa a piccole dosi.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.curtisMinimal, CITE.ridgeEdema],
@@ -274,7 +274,7 @@ export const BAREFOOT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è un programma di esercizi per il dolore a tallone, piede e gamba. Comprende il piede corto, l’apertura delle dita, i sollevamenti sulle punte e il lavoro di equilibrio di questa pagina, e li fa progredire man mano che diventano più facili. Non sceglie le tue scarpe e non fa diagnosi. Un piede e un polpaccio più forti sono una base sensata, qualunque scarpa tu finisca per portare.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni (poi ogni 28 quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è pensato per gli adulti e non sostituisce un professionista sanitario.',

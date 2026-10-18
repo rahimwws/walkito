@@ -49,12 +49,12 @@ export const SEVERS_IT: Guide = {
       h2: 'A che età compare e chi colpisce?',
       paragraphs: [
         'La malattia di Sever colpisce i bambini tra circa 8 e 15\u00A0anni. L’apofisi calcaneare compare intorno ai 7-9\u00A0anni e di solito si salda tra i 15 e i 17. I maschi sono colpiti da due a tre volte più spesso delle femmine, con un esordio tipico intorno ai 12\u00A0anni nei maschi e agli 11 nelle femmine. Circa il 60% dei casi interessa entrambi i talloni.',
-        'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. Lo schema è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
+        'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. L’andamento è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
         'I fattori di rischio comprendono:',
         {
           list: [
             'Molta attività di corsa e salti.',
-            'Polpacci rigidi.',
+            '[Polpacci rigidi](/it/polpacci-rigidi/).',
             'Una caviglia poco flessibile.',
             'Un IMC alto.',
             'Superfici di gioco dure.',
@@ -68,7 +68,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Che sensazione dà la malattia di Sever?',
       paragraphs: [
         'Il sintomo principale è un dolore nella parte posteriore o ai lati del tallone, di solito durante o dopo l’attività e soprattutto dopo corse o salti. Il dolore viene spesso descritto come un livido. Raramente c’è gonfiore o un livido visibile. **Premere o stringere i lati del tallone di solito riproduce il dolore.** Questo test della compressione è il controllo clinico standard.',
-        'A differenza della fascite plantare negli adulti, che è peggiore ai primi passi dopo il riposo, il dolore della malattia di Sever tende a peggiorare con l’attività e non migliora camminando. Alcuni bambini iniziano a zoppicare o a camminare sulle punte per non caricare il peso sul tallone.',
+        'A differenza della [fascite plantare](/it/fascite-plantare/) negli adulti, che è peggiore ai primi passi dopo il riposo, il dolore della malattia di Sever tende a peggiorare con l’attività e non migliora camminando. Alcuni bambini iniziano a zoppicare o a camminare sulle punte per non caricare il peso sul tallone.',
         'Il dolore può andare da lieve, che si nota solo durante lo sport, a così forte da impedire del tutto al bambino di giocare.',
       ],
     },
@@ -76,7 +76,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Cosa aiuta la malattia di Sever? Le prove',
       keyFact: 'In uno studio su 101\u00A0bambini, tutti e tre gli approcci hanno migliorato il dolore, e il gruppo con il rialzo per il tallone era più soddisfatto a sei settimane, anche se la differenza è sparita a tre mesi (Wiegerinck e colleghi, 2016).',
       paragraphs: [
-        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o solette per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e **nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.**',
+        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o [solette](/it/plantari-o-esercizi/) per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e **nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.**',
         'In uno studio del 2016 su 101\u00A0bambini tra 8 e 15\u00A0anni, Wiegerinck e colleghi hanno confrontato tre approcci:',
         {
           list: [
@@ -186,7 +186,7 @@ export const SEVERS_IT: Guide = {
     },
     {
       q: 'Come si mette il kinesio tape per la malattia di Sever?',
-      a: 'Non ci sono studi che abbiano testato il kinesio tape per la malattia di Sever, quindi nessuno schema è dimostrato migliore delle coppette per il tallone o della gestione del carico. Alcuni professionisti applicano il tape lungo l’Achille e sotto il tallone per ridurre la trazione sulla cartilagine di accrescimento. Se vuoi provarlo, fallo applicare da un fisioterapista o da un preparatore atletico e fatti mostrare lo schema.',
+      a: 'Non ci sono studi che abbiano testato il kinesio tape per la malattia di Sever, quindi nessuna tecnica di applicazione è dimostrata migliore delle coppette per il tallone o della gestione del carico. Alcuni professionisti applicano il tape lungo l’Achille e sotto il tallone per ridurre la trazione sulla cartilagine di accrescimento. Se vuoi provarlo, fallo applicare da un fisioterapista o da un preparatore atletico e fatti mostrare come si applica.',
     },
   ],
   redFlags: {

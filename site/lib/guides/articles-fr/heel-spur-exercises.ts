@@ -22,7 +22,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
     'Exercices et étirements pour l’épine calcanéenne\u00A0: fascia plantaire et mollet, routine, doses et progression contre la douleur, sans dissoudre l’épine.',
   h1: 'Épine calcanéenne\u00A0: étirements et renforcement pour la douleur autour de l’épine',
   lede:
-    'L’exercice ne dissout pas une épine calcanéenne (aussi appelée épine de Lenoir). L’épine est de l’os, et l’os ne rétrécit pas avec les étirements. Mais la douleur ressentie quand on a une épine calcanéenne vient presque toujours du fascia plantaire et du mollet autour d’elle, pas de l’os lui-même. Les exercices ci-dessous visent ces tissus mous. Ce sont les mêmes que ceux que la recommandation de 2023 sur la douleur au talon conseille pour la fasciite plantaire.',
+    'L’exercice ne dissout pas une épine calcanéenne (aussi appelée épine de Lenoir). L’épine est de l’os, et l’os ne rétrécit pas avec les étirements. Mais la douleur ressentie quand on a une épine calcanéenne vient presque toujours du fascia plantaire et du mollet autour d’elle, pas de l’os lui-même. Les exercices ci-dessous visent ces tissus mous. Ce sont les mêmes que ceux que la recommandation de 2023 sur la douleur au talon conseille pour la [fasciite plantaire](/fr/fasciite-plantaire/).',
   intro: [
     'Si vous voulez d’abord comprendre la différence entre une épine calcanéenne et une fasciite plantaire, voir [fasciite plantaire ou épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/). Cette page est la routine pratique\u00A0: quels exercices, combien, comment progresser et quand arrêter.',
   ],
@@ -168,7 +168,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
         ],
       },
       after: [
-        'Gardez l’étirement du fascia plantaire et les étirements du mollet à chaque niveau. Les étirements ne s’arrêtent pas quand vous commencez le renforcement. La recommandation note les deux séparément.',
+        'Gardez l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et les étirements du mollet à chaque niveau. Les étirements ne s’arrêtent pas quand vous commencez le renforcement. La recommandation note les deux séparément.',
         'Pour plus de détails sur le protocole des montées sur pointes avec serviette et la recherche derrière, voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -232,7 +232,7 @@ export const HEEL_SPUR_EXERCISES_FR: Guide = {
       h2: 'Combien de temps avant que la douleur de l’épine calcanéenne s’améliore avec les exercices\u00A0?',
       paragraphs: [
         'Aucun essai ne mesure les résultats de l’exercice spécifiquement chez les personnes qui ont une épine calcanéenne. Les délais ci-dessous viennent d’études sur la fasciite plantaire, le problème qui cause la douleur autour de l’épine dans la plupart des cas.',
-        'Une revue des données cliniques indique qu’environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements et les semelles, souvent en quelques mois (Latt et coll., 2020). Dans l’essai de Rathleff 2015, le groupe des montées sur pointes avec charge était nettement devant le groupe des étirements seuls à trois mois.',
+        'Une revue des données cliniques indique qu’environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements et les [semelles](/fr/semelles-ou-exercices/), souvent en quelques mois (Latt et coll., 2020). Dans l’essai de Rathleff 2015, le groupe des montées sur pointes avec charge était nettement devant le groupe des étirements seuls à trois mois.',
         'Aucun programme d’exercices ne peut promettre un délai à une personne en particulier. **Ce que vous pouvez mesurer, c’est si les choses bougent**\u00A0:',
         {
           list: [

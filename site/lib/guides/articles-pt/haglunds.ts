@@ -58,7 +58,7 @@ export const HAGLUNDS_PT: Guide = {
       paragraphs: [
         'A bursa retrocalcânea fica no espaço entre o calcâneo e o tendão de Aquiles. A função dela é reduzir o atrito. Quando o calombo de Haglund é saliente, a bursa é espremida durante a dorsiflexão (dobrar o tornozelo para o pé subir). O resultado é inchaço, dor e às vezes vermelhidão atrás do calcanhar.',
         'A bursite retrocalcânea pode acontecer sem deformidade de Haglund, por exemplo depois de um aumento repentino de corrida ou de treino em subida. Mas a proeminência óssea a torna mais provável. Calçados com contraforte rígido que aperta o calombo são um irritante mecânico direto.',
-        'A dor da bursite retrocalcânea fica atrás do calcanhar, funda, entre o tendão e o osso. Ela é diferente da bursite superficial (um inchaço mole e sensível na superfície da pele) e da dor na parte de dentro do calcanhar da fascite plantar.',
+        'A dor da bursite retrocalcânea fica atrás do calcanhar, funda, entre o tendão e o osso. Ela é diferente da bursite superficial (um inchaço mole e sensível na superfície da pele) e da dor na parte de dentro do calcanhar da [fascite plantar](/pt/fascite-plantar/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },
@@ -237,8 +237,8 @@ export const HAGLUNDS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.',
+    h2: 'Como transformar isso em um plano',
+    text: 'A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.',
     more: [
       'As sessões são de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se você tem um calombo visível atrás do calcanhar e não tem certeza do que está causando a dor, peça para um profissional de saúde avaliar antes de começar a pôr carga.',
     ],

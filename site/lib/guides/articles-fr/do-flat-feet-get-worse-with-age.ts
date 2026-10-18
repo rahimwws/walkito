@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
             'Des pieds plus plats et en plus forte pronation (la pronation veut dire que le pied s’affaisse vers l’intérieur).',
             'Des chevilles et des articulations du gros orteil plus raides.',
             'Des muscles des orteils plus faibles.',
-            'Plus d’hallux valgus.',
+            'Plus d’[hallux valgus](/fr/hallux-valgus-exercices/).',
             'Moins de sensibilité sous la plante.',
           ],
         },
@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
         '**La grossesse peut abaisser un peu la voûte, et ce changement peut persister après l’accouchement.** Dans une étude de 2013, les pieds de 49\u00A0femmes ont été mesurés au premier trimestre puis environ quatre mois et demi après l’accouchement. La hauteur et la rigidité de la voûte ont diminué, et la longueur du pied et l’affaissement de la voûte ont augmenté.',
         'La première grossesse expliquait l’essentiel du changement. Chez les femmes qui avaient leur premier enfant, la longueur du pied a augmenté d’environ 1,4\u00A0millimètre et l’affaissement de la voûte d’environ 1,0\u00A0millimètre en moyenne.',
         'Deux éléments remettent cela en perspective. Les auteurs ont jugé les changements moyens faibles, et l’étude n’a trouvé aucun changement d’une mesure de la façon dont le pied s’affaissait à la marche. «\u00A0Durable\u00A0», dans cette étude, veut dire encore présent à la visite de suivi quelques mois après l’accouchement. Personne n’a été suivi pendant des années.',
-        'Si votre pointure a augmenté après une grossesse et que vos pieds vont bien, ce changement est fréquent. Si une voûte continue de s’affaisser, ou si l’intérieur de la cheville commence à faire mal, faites-le examiner.',
+        'Si votre pointure a augmenté après une grossesse et que vos pieds vont bien, ce changement est fréquent. Si vos talons font mal pendant la grossesse, consultez [fasciite plantaire et grossesse](/fr/fasciite-plantaire-grossesse/). Si une voûte continue de s’affaisser, ou si l’intérieur de la cheville commence à faire mal, faites-le examiner.',
       ],
       cites: [CITE.segalPregnancy],
     },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
       h2: 'L’exercice ou les semelles peuvent-ils empêcher les pieds plats de s’aggraver\u00A0?',
       keyFact: 'Une revue de 2018 n’a constaté que trois essais, 93\u00A0personnes au total, testant l’exercice contre la dysfonction du tendon tibial postérieur, avec des effets modérés pour un renforcement en descente lente (excentrique) ajouté aux orthèses et aux étirements (Ross et coll., 2018).',
       paragraphs: [
-        'Aucun essai n’a vérifié si l’exercice ou les semelles empêchent les pieds plats de changer avec l’âge. Il existe des preuves sur deux questions voisines, et elles sont minces.',
+        'Aucun essai n’a vérifié si l’exercice ou les [semelles](/fr/semelles-ou-exercices/) empêchent les pieds plats de changer avec l’âge. Il existe des preuves sur deux questions voisines, et elles sont minces.',
         'Pour le problème de tendon à l’origine de l’affaissement de la voûte chez l’adulte, une revue de 2018 a trouvé trois essais portant sur 93\u00A0personnes au total. Un renforcement en descente lente (excentrique) ajouté aux orthèses (semelles qui soutiennent la voûte) et aux étirements a réduit la douleur et l’incapacité davantage que les orthèses et les étirements seuls, avec un effet d’ampleur modérée.',
         'Dans un essai, 36\u00A0adultes à un stade précoce ont suivi leur programme pendant trois mois. Tous les groupes se sont améliorés, et le groupe du renforcement excentrique le plus. Dans un autre essai sur 39\u00A0personnes, ajouter du renforcement n’a fait qu’une petite différence. Les auteurs de la revue ont jugé la recherche mince.',
         'Pour les pieds plats souples présents depuis toujours, un essai sur 52\u00A0personnes a trouvé qu’un court programme d’exercices du pied, de la cheville et de la hanche modifiait la forme de la voûte davantage que dans un groupe témoin. Il a mesuré la forme, pas la douleur, et sur une courte période. On ne sait pas si ce type d’entraînement ralentit le changement lié à l’âge sur des décennies.',
@@ -197,7 +197,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
         },
       ],
       sourceNote:
-        'Ross 2018\u00A0: 3\u00A0essais randomisés, n = 93, différences moyennes standardisées de 0,6 à 1,2 pour le renforcement excentrique avec orthèses et étirements. Kulig 2009\u00A0: n = 36, stade I ou II, trois bras, trois mois, Foot Function Index. Houck 2015\u00A0: n = 39, stade II, le renforcement ajouté a fait une différence minime. Brijwasi 2023\u00A0: n = 52, affaissement du naviculaire et Foot Posture Index, pas de critère de douleur.',
+        'Ross 2018\u00A0: 3\u00A0essais randomisés, n = 93, différences moyennes standardisées de 0,6 à 1,2 pour le renforcement excentrique avec orthèses et étirements. Kulig 2009\u00A0: n = 36, stade I ou II, trois bras, trois mois, Foot Function Index. Houck 2015\u00A0: n = 39, stade II, le renforcement ajouté a fait une différence minime. Brijwasi 2023\u00A0: n = 52, chute du naviculaire et Foot Posture Index, pas de critère de douleur.',
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD, CITE.brijwasi],
     },
     {

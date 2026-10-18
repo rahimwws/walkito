@@ -147,7 +147,7 @@ export const BUNIONS_IT: Guide = {
     {
       h2: 'Quando si considera la chirurgia?',
       paragraphs: [
-        'Si considera la chirurgia quando dolore e limitazioni nelle attività continuano nonostante le misure conservative come cambio di scarpe, esercizi, separatori e plantari. **La decisione dipende da quanto l’alluce valgo pesa sulla vita di tutti i giorni, non solo dall’angolo.**',
+        'Si considera la chirurgia quando dolore e limitazioni nelle attività continuano nonostante le misure conservative come cambio di scarpe, esercizi, separatori e [plantari](/it/plantari-o-esercizi/). **La decisione dipende da quanto l’alluce valgo pesa sulla vita di tutti i giorni, non solo dall’angolo.**',
         'Per l’alluce valgo esistono più di 150\u00A0procedure chirurgiche, dal riallineamento dei tessuti molli all’osteotomia (tagliare e riposizionare l’osso). La scelta dipende dalla gravità e dall’anatomia specifica. Il recupero va da settimane a mesi.',
         'Di solito si provano prima per diversi mesi esercizi e gestione conservativa. Se stai gestendo bene i sintomi con gli approcci di questa pagina, la chirurgia non è urgente. Se il dolore limita le camminate, la scelta delle scarpe o le attività nonostante queste misure, uno specialista di piede e caviglia può parlarti delle opzioni.',
       ],
@@ -202,9 +202,9 @@ export const BUNIONS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
-      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni da 3 o 5\u00A0minuti, 3, 5 o 7 giorni a settimana a tua scelta, ti aiutano a fare gli esercizi con costanza.',
+      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e [piede piatto](/it/piede-piatto/), non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni da 3 o 5\u00A0minuti, 3, 5 o 7 giorni a settimana a tua scelta, ti aiutano a fare gli esercizi con costanza.',
     more: [
       'Per un dolore all’avampiede più ampio che coinvolge la seconda e la terza testa metatarsale, vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Per un dolore proprio sotto l’articolazione dell’alluce, vedi [sesamoidite](/it/sesamoidite/).',
     ],

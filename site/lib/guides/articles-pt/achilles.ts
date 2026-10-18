@@ -19,7 +19,7 @@ export const ACHILLES_PT: Guide = {
   lede:
     'Os exercícios para tendinite de Aquiles funcionam melhor quando você entende a descida do calcanhar como treino de força, não como alongamento. A diretriz clínica de 2024 dá ao exercício o grau máximo, **A**, e uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou nenhum protocolo claramente melhor que outro. O que importa é colocar carga no tendão com constância por semanas.',
   intro: [
-    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) resume os dois casos. Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
     'A maioria das pessoas usa “tendinite” e “tendinopatia” como sinônimos. As diretrizes atuais usam “tendinopatia” porque o problema costuma ser de carga, não uma inflamação pura. Esta página usa “tendinite” nos títulos e “tendinopatia” onde a diretriz usa.',
   ],
   takeaways: [
@@ -42,7 +42,7 @@ export const ACHILLES_PT: Guide = {
     {
       h2: 'O que é a descida excêntrica do calcanhar, e por que não é um alongamento?',
       paragraphs: [
-        'A descida excêntrica do calcanhar é um exercício de força, não um alongamento de flexibilidade. Você sobe com os dois pés, passa o peso para o lado dolorido e desce devagar em um pé só, deixando o calcanhar afundar abaixo da beira do degrau. A fase de descida é a contração excêntrica: o músculo da panturrilha se alongando sob carga. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas.',
+        'A [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) é um exercício de força, não um alongamento de flexibilidade. Você sobe com os dois pés, passa o peso para o lado dolorido e desce devagar em um pé só, deixando o calcanhar afundar abaixo da beira do degrau. A fase de descida é a contração excêntrica: o músculo da panturrilha se alongando sob carga. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas.',
         'O erro mais comum é ficar parado embaixo como em um alongamento de panturrilha. Isso transforma o exercício em um alongamento estático, que é outro estímulo. **O que importa é a descida lenta e com carga.** Três segundos para descer, com o músculo trabalhando o tempo todo.',
         'No ensaio de Alfredson de 1998, 15\u00A0atletas com dor antiga no meio do tendão de Aquiles fizeram descidas excêntricas do calcanhar duas vezes por dia, 7\u00A0dias por semana, por três meses, com o joelho esticado e dobrado. Os 15 voltaram ao nível de corrida que tinham antes. Foi um ensaio pequeno, sem grupo controle, mas abriu toda uma linha de pesquisa.',
       ],
@@ -68,21 +68,21 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'Sim, pela evidência atual. Um ensaio de 2015 com 58\u00A0pessoas comparou a resistência pesada e lenta (HSR, de heavy slow resistance), feita 3\u00A0dias por semana, com o protocolo excêntrico clássico de duas vezes por dia. A conclusão: “Tanto o excêntrico tradicional quanto a HSR dão resultados clínicos positivos, igualmente bons e duradouros em pacientes com tendinopatia de Aquiles.”',
         'Uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou diferença clinicamente relevante entre nenhuma das abordagens de exercício ativo aos 3 ou aos 12\u00A0meses. Todas foram melhores do que não fazer nada. Nenhum ensaio tinha baixo risco de viés. Os autores recomendaram começar com um programa de exercícios para a panturrilha porque é barato e tem poucos riscos.',
-        '**O formato do protocolo importa menos do que colocar carga no tendão com constância.** As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na fascite plantar, veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
+        '**O formato do protocolo importa menos do que colocar carga no tendão com constância.** As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na [fascite plantar](/pt/fascite-plantar/), veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
       h2: 'Quais exercícios ajudam na tendinite de Aquiles, e quanto fazer?',
       paragraphs: [
-        'Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentado e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](/pt/sobre-walkito/).',
+        'Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentada e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](/pt/sobre-walkito/).',
         'Na dor de Aquiles insercional, todo exercício que usa degrau deve ser feito no nível do chão. Essa adaptação está explicada na seção sobre dor insercional, mais abaixo.',
       ],
       table: {
         caption: 'Exercícios para tendinite de Aquiles: doses da pesquisa e doses iniciais do Walkito',
         head: ['Exercício', 'Dose do protocolo da pesquisa', 'Dose inicial do Walkito', 'Evidência'],
         rows: [
-          ['Elevação de calcanhar sentado', 'Silbernagel, fase 1: 3 x 10, sentado', '3 x 10, os dois pés', '**Forte**: igual ao protocolo publicado da fase 1'],
+          ['Elevação de calcanhar sentada', 'Silbernagel, fase 1: 3 x 10, sentado', '3 x 10, os dois pés', '**Forte**: igual ao protocolo publicado da fase 1'],
           ['Elevação de calcanhar com os dois pés', 'Silbernagel, fase 1: 3 x 10-15, em pé', '3 x 10, os dois pés', '**Forte**: correspondência direta com a fase 1'],
           ['Elevação de calcanhar sustentada (isométrica)', 'A diretriz de 2024 cita o isométrico como eficaz; na prática se sugere 3-5 x 30-45\u00A0s', '3 x 20\u00A0s, os dois pés', '**Moderada**: a diretriz inclui a carga isométrica; não há ensaio randomizado só de isométrico no Aquiles'],
           ['Descida excêntrica do calcanhar (joelho esticado)', 'Alfredson: 3 x 15, 2x/dia, 7\u00A0dias/semana, três meses', '3 x 10, cada perna', '**Forte**: o protocolo original; grau A na diretriz'],
@@ -92,7 +92,7 @@ export const ACHILLES_PT: Guide = {
       },
       exercises: [
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: { level: 'strong', why: 'Igual à dose da fase 1 de Silbernagel 2007. O grau A da diretriz cobre todos os tipos de carga no tendão.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. Um jeito de começar com pouca carga quando o trabalho em pé dói demais.',
@@ -100,7 +100,7 @@ export const ACHILLES_PT: Guide = {
           feel: 'Trabalho nas panturrilhas, quase sem alongar o tendão',
           stop: 'Dor acima de 5/10 que não passa até a manhã seguinte',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba pela parte da frente dos pés, as mãos dão carga',
+          caption: 'Elevação de calcanhar sentada: suba pela parte da frente dos pés, as mãos dão carga',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
         {
@@ -108,7 +108,7 @@ export const ACHILLES_PT: Guide = {
           evidence: { level: 'strong', why: 'Correspondência direta com a fase 1 de Silbernagel 2007. Grau A na diretriz.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar em três segundos. Os dois pés dividem a carga.',
-          often: 'Dias de força, quando a elevação sentado parecer fácil',
+          often: 'Dias de força, quando a elevação sentada parecer fácil',
           feel: 'As panturrilhas trabalhando juntas, com um leve puxão no tendão',
           stop: 'Dor acima de 5/10 que não passa até a manhã seguinte',
           media: 'heel_raise_double',
@@ -207,7 +207,6 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'No estudo de Silbernagel de 2007, os pacientes que continuaram correndo durante a reabilitação, seguindo o modelo de monitorar a dor, não se saíram pior do que os que descansaram primeiro. Os dois grupos melhoraram aos 12\u00A0meses. O ensaio concluiu que a atividade contínua, com a dor monitorada, “pode, portanto, representar uma opção valiosa” durante a reabilitação.',
         'Isso não quer dizer que correr é inofensivo em todos os casos. **Se a dor não passa durante a noite, ou se cada semana é pior, diminua.** Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde.',
-        'A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) trata do controle de carga específico da corrida com mais detalhes.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -274,7 +273,7 @@ export const ACHILLES_PT: Guide = {
     {
       q: 'O que pode ser confundido com tendinite de Aquiles?',
       cites: [CITE.chooRearfoot],
-      a: 'Bursite retrocalcânea, deformidade de Haglund e uma ruptura parcial do Aquiles podem causar uma dor parecida na parte de trás do calcanhar. Uma saliência óssea visível aponta para a deformidade de Haglund, enquanto um inchaço bem na altura da borda de trás do calçado sugere bursite. Qualquer dor aguda e repentina com um estalo, ou não conseguir subir na ponta dos pés, precisa de avaliação urgente para ruptura do tendão.',
+      a: 'Bursite retrocalcânea, [deformidade de Haglund](/pt/deformidade-de-haglund/) e uma ruptura parcial do Aquiles podem causar uma dor parecida na parte de trás do calcanhar. Uma saliência óssea visível aponta para a deformidade de Haglund, enquanto um inchaço bem na altura da borda de trás do calçado sugere bursite. Qualquer dor aguda e repentina com um estalo, ou não conseguir subir na ponta dos pés, precisa de avaliação urgente para ruptura do tendão.',
     },
   ],
   redFlags: {
@@ -291,8 +290,8 @@ export const ACHILLES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
+    h2: 'Como transformar isso em um plano',
+    text: 'Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da panturrilha for alcançada), um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se a dor é bem no ponto onde o tendão se prende no osso do calcanhar, peça para um profissional de saúde avaliar antes de aumentar muito a carga.',
     ],

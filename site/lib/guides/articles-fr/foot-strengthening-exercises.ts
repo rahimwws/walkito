@@ -14,7 +14,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
   lede:
     'Les exercices de renforcement du pied entraînent les petits muscles situés dans le pied et les muscles plus grands qui descendent du mollet. Commencez assis avec l’exercice du pied court, l’écartement des orteils et le lever du gros orteil, puis passez debout, puis sur une jambe. Dans les essais, les muscles du pied sont devenus plus gros et plus forts en environ deux mois.',
   intro: [
-    'Cette page est le guide général pour tout le pied. Pour les pieds plats, les orteils ou les chaussures minimalistes, les pages plus spécifiques sont indiquées plus bas.',
+    'Cette page est le guide général pour tout le pied. Pour les [pieds plats](/fr/pieds-plats/), les orteils ou les chaussures minimalistes, les pages plus spécifiques sont indiquées plus bas.',
   ],
   takeaways: [
     'Dans un essai de 2020 sur 118\u00A0coureurs amateurs, le groupe sans entraînement du pied était 2,42\u00A0fois plus susceptible de se blesser en courant sur 12\u00A0mois que le groupe qui suivait un programme de «\u00A0foot core\u00A0» (gainage du pied) (Taddei et coll.). Il s’agit d’un seul essai.',
@@ -53,7 +53,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       keyFact: 'Une revue de 2023 portant sur quatre essais a constaté que la plupart des programmes pour le pied utilisaient des maintiens de 5\u00A0secondes et passaient de la position assise à la position debout (de Souza et coll.).',
       paragraphs: [
         'Commencez par les exercices qui isolent les petits muscles du pied, faits assis, puis ajoutez le travail debout et l’équilibre quand ils deviennent faciles. Une revue de 2023 de de Souza et coll. a examiné quatre essais randomisés sur le renforcement des muscles intrinsèques du pied. La plupart utilisaient l’exercice du pied court et le ramassage de serviette avec les orteils, avec des contractions tenues environ 5\u00A0secondes et une progression de la position assise à la position debout.',
-        'Les doses ci-dessous sont des doses de départ. Faites les exercices pieds nus. Si un exercice fait monter la douleur à **6/10 ou plus**, arrêtez pour la journée. Chaque exercice a sa propre page plus détaillée, accessible depuis la [bibliothèque d’exercices](/exercises/) (en anglais).',
+        'Les doses ci-dessous sont des doses de départ. Faites les exercices pieds nus. Si un exercice fait monter la douleur à **6/10 ou plus**, arrêtez pour la journée. Chaque exercice a sa propre page plus détaillée.',
       ],
       exercises: [
         {
@@ -126,7 +126,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
         'Walkito utilise les trois mêmes étapes pour l’exercice du pied court\u00A0: assis, puis debout sur deux pieds, puis sur une jambe. Quand la voûte est la priorité de votre plan, le plan de la semaine suivante vous fait monter d’une étape si vous avez noté faciles vos deux dernières séances avec cet exercice et que votre douleur du matin n’a pas augmenté. Une séance notée difficile, ou une douleur du matin en hausse de 2\u00A0points, vous fait redescendre d’une étape. Les deux étapes suivantes sont présentées ci-dessous.',
       ],
       bullets: [
-        '**Étape 1, assis.** Pied court, écarter les orteils, lever le gros orteil et ramasser la serviette, tous en position assise.',
+        '**Étape 1, assis.** Pied court, écarter les orteils, lever le gros orteil et [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/), tous en position assise.',
         '**Étape 2, debout sur deux pieds.** Le maintien du pied court debout, et les montées sur pointes sur deux pieds.',
         '**Étape 3, sur une jambe.** Le maintien du pied court sur une jambe, puis l’équilibre sur une jambe en gardant la voûte soulevée.',
         '**Plus tard.** Les montées sur pointes sur une jambe et, pour les coureurs, de petits sauts. Ce sont des charges plus importantes. Ne les ajoutez que quand l’étape 3 est facile.',
@@ -178,7 +178,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
         'Les exercices de renforcement du pied **ont réduit les blessures de course dans un essai de bonne qualité, mais un seul.** En 2020, Taddei et coll. ont réparti au hasard 118\u00A0coureurs amateurs de longue distance entre un groupe gainage du pied (57\u00A0coureurs) et un groupe témoin (61\u00A0coureurs). Le groupe gainage du pied a suivi un cycle supervisé d’environ deux mois sur les muscles du pied et de la cheville, puis a continué l’entraînement avec une supervision à distance.',
         'Sur 12\u00A0mois, le groupe témoin était 2,42\u00A0fois plus susceptible de se blesser en courant. Les auteurs ont vu l’effet apparaître après environ quatre à huit mois d’entraînement.',
         'Un essai antérieur plus petit de la même équipe, sur 28\u00A0coureurs, a trouvé qu’environ deux mois d’entraînement du pied augmentaient la taille de chaque muscle du pied mesuré, par rapport au groupe témoin. Les coureurs poussaient aussi plus fort sur le sol.',
-        'Les deux essais viennent d’un même groupe de recherche au Brésil, chez des coureurs amateurs qui n’étaient pas blessés au départ. On ne sait pas encore si le programme aide les débutants ou les personnes qui ont déjà mal. Pour les coureurs qui ont actuellement mal au talon, commencez par [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
+        'Les deux essais viennent d’un même groupe de recherche au Brésil, chez des coureurs amateurs qui n’étaient pas blessés au départ. On ne sait pas encore si le programme aide les débutants ou les personnes qui ont déjà mal.',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med)\u00A0: groupe témoin 2,42\u00A0fois plus susceptible de se blesser (IC à 95\u00A0% 1,98 à 3,62), p\u00A0=\u00A00,035, essai randomisé en simple aveugle, suivi de 12\u00A0mois. Taddei 2020 (Phys Ther Sport)\u00A0: essai randomisé de preuve de concept en simple aveugle, 28\u00A0coureurs, volume musculaire mesuré par IRM.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -223,7 +223,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
     {
       h2: 'Le renforcement du pied aide-t-il en cas de fasciite plantaire ou de pieds plats\u00A0?',
       paragraphs: [
-        'Pour la fasciite plantaire, le renforcement du pied ajouté aux étirements n’a pas fait mieux que les étirements seuls dans un essai qui les comparait. En 2016, Kamonseki et coll. ont réparti 83\u00A0personnes atteintes de fasciite plantaire en trois groupes pendant deux mois\u00A0:',
+        'Pour la [fasciite plantaire](/fr/fasciite-plantaire/), le renforcement du pied ajouté aux étirements n’a pas fait mieux que les étirements seuls dans un essai qui les comparait. En 2016, Kamonseki et coll. ont réparti 83\u00A0personnes atteintes de fasciite plantaire en trois groupes pendant deux mois\u00A0:',
         {
           list: [
             'Renforcement du pied plus étirements.',
@@ -240,7 +240,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       h2: 'Quel est le niveau de preuve du renforcement du pied\u00A0?',
       paragraphs: [
         'Les preuves que les exercices du pied rendent les muscles du pied plus forts vont dans le même sens, mais les études sont petites. Une revue de 2025 de Peters-Dickie et coll. a inclus 28\u00A0essais randomisés et 1\u00A0399\u00A0personnes. Elle a soutenu les exercices du pied pour augmenter la force du pied, mais a jugé la certitude faible à très faible, surtout parce qu’il y avait peu d’études par question et que beaucoup présentaient un risque de biais élevé. Les résultats sur la taille des muscles étaient partagés.',
-        'Les preuves que des pieds plus forts signifient moins de blessures sont encore plus minces et reposent surtout sur l’unique essai chez des coureurs présenté plus haut. **Le renforcement du pied présente peu de risque, coûte peu et développe bien la force.** Savoir s’il préviendra votre prochaine blessure reste une question ouverte. La façon dont ces guides évaluent la recherche est expliquée sur la page [science](/science/) (en anglais).',
+        'Les preuves que des pieds plus forts signifient moins de blessures sont encore plus minces et reposent surtout sur l’unique essai chez des coureurs présenté plus haut. **Le renforcement du pied présente peu de risque, coûte peu et développe bien la force.** Savoir s’il préviendra votre prochaine blessure reste une question ouverte.',
       ],
       sourceNote: 'Peters-Dickie 2025\u00A0: les méta-analyses ont montré que les chaussures minimalistes augmentaient la force des orteils 2 à 5, et que les exercices du pied réduisaient le mouvement de la voûte pendant la course\u00A0; certitude faible à très faible.',
       cites: [CITE.petersDickie],

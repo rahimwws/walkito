@@ -180,7 +180,7 @@ export const STANDING_ES: Guide = {
       h2: '¿Las plantillas o los zapatos con soporte ayudan si te duelen los pies por estar de pie?',
       paragraphs: [
         'Los zapatos con soporte y las plantillas se recomiendan mucho para el dolor de pies por estar de pie, y tiene algo de base, pero la evidencia es más débil que para los estiramientos y el trabajo de fuerza. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una **B en contra** para aliviar el dolor a corto plazo, es decir, la evidencia se inclina a no usarlas como única opción. Las plantillas combinadas con otros cuidados reciben una **C**.',
-        'Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el piso, el calzado con soporte y la opción de alternar entre sentarse y pararse aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu piso es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos.',
+        'Lo que respalda la revisión de salud laboral es más amplio: los tapetes para el piso, el calzado con soporte y la opción de alternar entre sentarse y pararse aparecen en la lista de medidas con algo de evidencia para reducir las molestias en trabajos de pie. Ninguna tiene detrás un ensayo grande como el estiramiento de pantorrilla. Algo razonable es usar zapatos con soporte y un tapete si tu piso es duro, y hacer los estiramientos y el trabajo de fuerza para los tejidos. Páginas para trabajos concretos: [maestros](/es/dolor-de-pies-docentes/), [tiendas y almacenes](/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](/es/dolor-de-pies-cocineros/) y [estilistas](/es/dolor-de-pies-peluqueros/).',
       ],
       cites: [CITE.guideline, CITE.waters],
     },
@@ -267,7 +267,7 @@ export const STANDING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies por estar de pie es peor en la mañana, la primera meta es la misma que para el dolor de talón: dolor de 1/10 o menos por la mañana durante ${PROGRAM.painFreeDays}\u00A0días seguidos. Si además tienes los arcos planos, el arco tiene su propia meta y sus propios ejercicios.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver si el trabajo está sirviendo de algo.`,

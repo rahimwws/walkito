@@ -228,7 +228,7 @@ export const MORTONS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito está construido alrededor de la fascitis plantar y el pie plano, no del neuroma de Morton. Pero los ejercicios de la parte delantera del pie en la app, incluyendo separación de dedos y estiramiento de pantorrilla, abordan el mismo reparto de carga que contribuye a los síntomas del neuroma. Marcar la planta delantera del pie en el mapa de dolor durante un check-in le dice a la app que incluya separación de dedos y estiramiento plantar en tu sesión.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio. Walkito no diagnostica el neuroma de Morton. Los ejercicios que incluye son medidas de comodidad y de manejo de la carga. Los zapatos más anchos, las almohadillas metatarsales y la evaluación de un profesional de la salud deben ir primero.',

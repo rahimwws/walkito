@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
         'Una flessione della caviglia ridotta è legata a diversi problemi, anche se legata non vuol dire che li causi:',
         {
           list: [
-            '**Fascite plantare:** In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003).',
+            '**Fascite plantare:** In uno studio caso-controllo appaiato su 50\u00A0persone con [fascite plantare](/it/fascite-plantare/) e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003).',
             '**Infortuni nelle reclute:** In 1.093\u00A0reclute maschi dell’esercito seguite durante tre mesi di addestramento duro, il movimento della caviglia misurato all’inizio era un forte fattore predittivo di chi si sarebbe infortunato, su 48\u00A0infortuni in totale (Pope e colleghi, 1998).',
           ],
         },
@@ -101,7 +101,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
             'Poche prove valide per la maggior parte degli altri metodi (Young e colleghi).',
           ],
         },
-        'Il risultato più forte per il solo lavoro di forza viene da un altro studio sulle discese del tallone (più sotto). Le oscillazioni della caviglia non hanno uno studio proprio, ma caricano lo stesso movimento.',
+        'Il risultato più forte per il solo lavoro di forza viene da un altro studio sulle discese eccentriche (più sotto). Le oscillazioni della caviglia non hanno uno studio proprio, ma caricano lo stesso movimento.',
         'Qui sotto, «Walkito parte da» indica la dose di partenza dell’app. Le dosi degli studi sono indicate come tali. Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno.',
       ],
       exercises: [
@@ -144,7 +144,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
         {
           name: 'Discese eccentriche del tallone',
           evidence: { level: 'moderate', why: 'Uno studio randomizzato su 74\u00A0persone sane ha trovato più flessione della caviglia dopo un programma di discese eccentriche del tallone. Non testato in persone con caviglie rigide o doloranti.' },
-          dose: 'Nello studio: un programma di discese del tallone per circa un mese e mezzo. In Walkito, le discese del tallone arrivano più avanti nella progressione per il polpaccio.',
+          dose: 'Nello studio: un programma di discese eccentriche per circa un mese e mezzo. In Walkito, le discese eccentriche arrivano più avanti nella progressione per il polpaccio.',
           how: 'Stai su un gradino con i talloni fuori dal bordo, sali su entrambi i piedi, sposta il peso su uno, poi abbassa lentamente quel tallone sotto il gradino in circa tre secondi. Usa entrambi i piedi per risalire. Vedi [discese eccentriche del tallone](/it/esercizi/discese-eccentriche-tallone/).',
           often: 'Giorni di forza',
           feel: 'Un lavoro intenso nel polpaccio e un allungamento in fondo',
@@ -171,8 +171,8 @@ export const ANKLE_MOBILITY_IT: Guide = {
     {
       h2: 'Il lavoro di forza migliora la mobilità della caviglia?',
       paragraphs: [
-        '**Il lavoro di forza su tutta l’escursione può migliorare la mobilità della caviglia, non solo lo stretching.** In uno studio randomizzato su 74\u00A0persone sane, un gruppo ha fatto un programma di discese eccentriche del tallone (abbassare lentamente il tallone sotto carico) per circa un mese e mezzo e l’altro gruppo no. La dorsiflessione è aumentata solo nel gruppo delle discese del tallone, e il polpaccio opponeva meno resistenza all’allungamento di prima (Mahieu e colleghi, 2008).',
-        'La revisione del 2013 di 23\u00A0studi includeva anche uno studio in cui i sollevamenti sulle punte fatti insieme allo stretching statico aumentavano la flessione della caviglia rispetto a nessun esercizio (Young e colleghi). Sia la revisione sia lo studio sulle discese del tallone riguardavano persone sane, non persone con caviglie rigide o doloranti.',
+        '**Il lavoro di forza su tutta l’escursione può migliorare la mobilità della caviglia, non solo lo stretching.** In uno studio randomizzato su 74\u00A0persone sane, un gruppo ha fatto un programma di discese eccentriche del tallone (abbassare lentamente il tallone sotto carico) per circa un mese e mezzo e l’altro gruppo no. La dorsiflessione è aumentata solo nel gruppo delle discese eccentriche, e il polpaccio opponeva meno resistenza all’allungamento di prima (Mahieu e colleghi, 2008).',
+        'La revisione del 2013 di 23\u00A0studi includeva anche uno studio in cui i sollevamenti sulle punte fatti insieme allo stretching statico aumentavano la flessione della caviglia rispetto a nessun esercizio (Young e colleghi). Sia la revisione sia lo studio sulle discese eccentriche riguardavano persone sane, non persone con caviglie rigide o doloranti.',
         'Il lavoro di forza ha un secondo vantaggio: rinforza il polpaccio nello stesso tempo. Se hai anche dolore al tallone o all’Achille, il lavoro sul polpaccio dei [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) e degli [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) fa entrambe le cose.',
       ],
       cites: [CITE.mahieuEccentric, CITE.youngDorsiflexion],
@@ -246,7 +246,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano una settimana alla volta intorno a un obiettivo, per il dolore a tallone, piede e gamba. La mobilità della caviglia ne fa parte: gli allungamenti del polpaccio, una tenuta del ginocchio al muro e le oscillazioni della caviglia si alternano nelle tue sessioni, soprattutto nei giorni di mobilità, accanto al lavoro di forza del polpaccio e di equilibrio. Walkito fa partire allungamenti e oscillazioni della caviglia da 2\u00A0serie da 30\u00A0secondi per gamba.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

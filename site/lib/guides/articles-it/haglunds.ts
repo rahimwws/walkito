@@ -60,7 +60,7 @@ export const HAGLUNDS_IT: Guide = {
       paragraphs: [
         'La borsa retrocalcaneare si trova nello spazio tra il calcagno e il tendine d’Achille. Il suo compito è ridurre l’attrito. Quando la sporgenza di Haglund è pronunciata, la borsa viene schiacciata durante la dorsiflessione (quando pieghi la caviglia e il piede sale). Il risultato è gonfiore, dolore e a volte arrossamento dietro il tallone.',
         'La borsite retrocalcaneare può esserci anche senza morbo di Haglund, per esempio dopo un aumento improvviso della corsa o del lavoro in salita. Ma la sporgenza ossea la rende più probabile. Le scarpe con un contrafforte del tallone rigido che preme sulla sporgenza sono un irritante meccanico diretto.',
-        'Il dolore della borsite retrocalcaneare è dietro il tallone, in profondità tra tendine e osso. È diverso dalla borsite superficiale (un gonfiore morbido e dolente sulla pelle) e dal dolore nella parte interna del tallone tipico della fascite plantare.',
+        'Il dolore della borsite retrocalcaneare è dietro il tallone, in profondità tra tendine e osso. È diverso dalla borsite superficiale (un gonfiore morbido e dolente sulla pelle) e dal dolore nella parte interna del tallone tipico della [fascite plantare](/it/fascite-plantare/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },
@@ -87,7 +87,7 @@ export const HAGLUNDS_IT: Guide = {
       keyFact: 'In uno studio pilota su 27\u00A0persone con dolore inserzionale all’Achille, un carico eccentrico a terra in piano che evitava la dorsiflessione profonda ha dato buoni risultati nel 67% dei casi (Jonsson e colleghi, 2008).',
       paragraphs: [
         'L’esercizio per il morbo di Haglund ha due obiettivi: ridurre la rigidità del polpaccio che tira sul tallone e costruire la forza del polpaccio che aiuta il tendine a reggere il carico. Entrambi vengono dagli studi sulla tendinopatia achillea. Nessuno studio li ha testati proprio per il morbo di Haglund.',
-        'La modifica chiave è: solo a terra in piano. Per il dolore inserzionale all’Achille, uno studio pilota del 2008 su 27\u00A0persone ha testato un carico eccentrico senza dorsiflessione oltre la posizione neutra, cioè il tallone non scendeva mai sotto il livello del pavimento. Sono stati riportati buoni risultati nel 67% dei casi. Le discese del tallone standard dal bordo di un gradino, che lasciano scendere il tallone sotto il bordo e portano la caviglia in dorsiflessione profonda, possono schiacciare il tendine contro la sporgenza e peggiorare i sintomi.',
+        'La modifica chiave è: solo a terra in piano. Per il dolore inserzionale all’Achille, uno studio pilota del 2008 su 27\u00A0persone ha testato un carico eccentrico senza dorsiflessione oltre la posizione neutra, cioè il tallone non scendeva mai sotto il livello del pavimento. Sono stati riportati buoni risultati nel 67% dei casi. Le discese eccentriche standard dal bordo di un gradino, che lasciano scendere il tallone sotto il bordo e portano la caviglia in dorsiflessione profonda, possono schiacciare il tendine contro la sporgenza e peggiorare i sintomi.',
         'La pagina sulle [discese eccentriche del tallone](/it/esercizi/discese-eccentriche-tallone/) spiega il movimento nel dettaglio. Con il morbo di Haglund e il dolore inserzionale, fai ogni sollevamento e ogni discesa a terra in piano. Non scendere sotto il bordo del gradino. Anche lo stretching del polpaccio deve essere delicato, fermandoti prima che la dorsiflessione profonda irriti la parte posteriore del tallone.',
       ],
       exercises: [
@@ -198,7 +198,7 @@ export const HAGLUNDS_IT: Guide = {
     {
       q: 'Quali esercizi evitare con il morbo di Haglund?',
       cites: [CITE.jonsson],
-      a: 'Evita gli esercizi che portano la caviglia in dorsiflessione profonda, cioè il piede che si piega verso lo stinco oltre la posizione neutra. Le discese eccentriche del tallone standard dal bordo di un gradino, in cui il tallone scende sotto il gradino, schiacciano il tendine contro la sporgenza. Fai sollevamenti e discese del tallone solo a terra in piano. Evita allungamenti del polpaccio aggressivi che irritano la parte posteriore del tallone.',
+      a: 'Evita gli esercizi che portano la caviglia in dorsiflessione profonda, cioè il piede che si piega verso lo stinco oltre la posizione neutra. Le discese eccentriche del tallone standard dal bordo di un gradino, in cui il tallone scende sotto il gradino, schiacciano il tendine contro la sporgenza. Fai sollevamenti sulle punte e discese eccentriche solo a terra in piano. Evita allungamenti del polpaccio aggressivi che irritano la parte posteriore del tallone.',
     },
     {
       q: 'Il morbo di Haglund va operato?',
@@ -239,7 +239,7 @@ export const HAGLUNDS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'La progressione di carico del polpaccio di Walkito va dai sollevamenti da seduto ai sollevamenti su due piedi, a una tenuta, alle discese eccentriche del tallone e oltre. Con il morbo di Haglund e il dolore inserzionale all’Achille, ogni passaggio resta a terra in piano invece di scendere sotto il bordo di un gradino. Walkito ti fa salire di livello quando due sessioni a quel livello sono risultate facili, non secondo un calendario fisso.',
     more: [
       'Le sessioni durano 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi. Se hai una sporgenza visibile dietro il tallone e non sei sicuro di cosa causi il dolore, fatti controllare da un professionista sanitario prima di iniziare a caricare.',

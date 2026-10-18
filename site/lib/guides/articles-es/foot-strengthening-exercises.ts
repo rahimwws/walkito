@@ -178,7 +178,7 @@ export const FOOT_STRENGTHENING_ES: Guide = {
         'Los ejercicios para fortalecer los pies **redujeron las lesiones al correr en un buen ensayo, pero solo en uno.** En 2020, Taddei y colegas dividieron al azar a 118\u00A0corredores recreativos de larga distancia en un grupo de core del pie (57\u00A0corredores) y un grupo control (61\u00A0corredores). El grupo de core del pie hizo un curso supervisado de unos dos meses para los músculos del pie y el tobillo, y luego siguió entrenando con supervisión a distancia.',
         'En 12\u00A0meses, el grupo control tuvo 2,42\u00A0veces más probabilidades de sufrir una lesión por correr. Los autores vieron que el efecto aparecía después de unos cuatro a ocho meses de entrenamiento.',
         'Un ensayo anterior y más pequeño del mismo equipo, con 28\u00A0corredores, encontró que unos dos meses de entrenamiento del pie aumentaron el tamaño de cada músculo del pie que midieron, en comparación con el grupo control. Los corredores además se impulsaban del piso con más fuerza.',
-        'Los dos ensayos vienen de un solo grupo de investigación en Brasil, con corredores recreativos que no estaban lesionados al inicio. Todavía no sabemos si el programa ayuda a principiantes o a personas que ya tienen dolor. Si eres corredor y ya tienes dolor de talón, empieza con [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
+        'Los dos ensayos vienen de un solo grupo de investigación en Brasil, con corredores recreativos que no estaban lesionados al inicio. Una rutina para corredores con una semana de ejemplo está en [ejercicios de pies para corredores](/es/ejercicios-de-pies-para-corredores/). Todavía no sabemos si el programa ayuda a principiantes o a personas que ya tienen dolor. Si eres corredor y ya tienes dolor de talón, empieza con [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med): el grupo control tuvo 2,42\u00A0veces más probabilidades de lesionarse (IC 95\u00A0% 1,98 a 3,62), p = 0,035, ensayo aleatorizado simple ciego, seguimiento de 12\u00A0meses. Taddei 2020 (Phys Ther Sport): ensayo aleatorizado simple ciego de prueba de concepto, 28\u00A0corredores, volumen muscular por resonancia magnética.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -289,7 +289,7 @@ export const FOOT_STRENGTHENING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan semanal en torno a una meta e incluye los ejercicios para el pie de esta página: el ejercicio de pie corto de sentado a una pierna, la separación de dedos, la elevación del dedo gordo, recoger la toalla, las elevaciones de talón y el trabajo de equilibrio. Empieza los ejercicios de arco con 3\u00A0series de 8 sosteniendo 5\u00A0segundos y el equilibrio con 3\u00A0series de 20\u00A0segundos, y en cada nuevo plan semanal sube un paso tu ejercicio principal cuando calificaste como fáciles tus dos últimas sesiones con él y tu dolor de la mañana no ha subido.',
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

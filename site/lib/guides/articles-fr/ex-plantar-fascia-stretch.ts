@@ -18,7 +18,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     'Comment faire l’étirement du fascia plantaire contre la fasciite plantaire\u00A0: technique, quand étirer, combien de temps tenir, ce que dit la recherche.',
   h1: 'Étirement du fascia plantaire\u00A0: comment le faire, séries et répétitions',
   lede:
-    'L’étirement du fascia plantaire est le seul étirement comparé directement à l’étirement du tendon d’Achille dans la fasciite plantaire. Dans un essai sur 82\u00A0personnes avec une douleur au talon chronique, celles qui faisaient l’étirement du fascia plantaire avaient de meilleurs scores de douleur et de fonction à huit semaines que celles qui étiraient le tendon d’Achille. Cette page couvre la technique, la dose et les moments où l’étirement compte le plus.',
+    'L’étirement du fascia plantaire est le seul étirement comparé directement à l’étirement du tendon d’Achille dans la [fasciite plantaire](/fr/fasciite-plantaire/). Dans un essai sur 82\u00A0personnes avec une douleur au talon chronique, celles qui faisaient l’étirement du fascia plantaire avaient de meilleurs scores de douleur et de fonction à huit semaines que celles qui étiraient le tendon d’Achille. Cette page couvre la technique, la dose et les moments où l’étirement compte le plus.',
   takeaways: [
     'Dans un essai sur 82\u00A0personnes atteintes de fasciite plantaire chronique, l’étirement du fascia plantaire a donné de meilleurs scores de douleur et de fonction à huit semaines qu’un étirement du tendon d’Achille (DiGiovanni et coll., 2003).',
     'Au suivi à deux ans, après que tous les participants sont passés à l’étirement du fascia plantaire, 92\u00A0% se disaient satisfaits du résultat (DiGiovanni et coll., 2006).',
@@ -57,7 +57,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'Quand étirer le fascia plantaire\u00A0?',
       paragraphs: [
-        '**Avant votre premier pas le matin.** C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la douleur au talon le matin est le signe typique de la fasciite plantaire.',
+        '**Avant votre premier pas le matin.** C’est la consigne la plus répétée, dans l’essai comme dans la recommandation de 2023. Le fascia plantaire se raccourcit pendant la nuit, quand le pied est relâché. Les premiers pas de la journée le tirent d’un coup et fort, et c’est pourquoi la [douleur au talon le matin](/fr/douleur-talon-au-reveil/) est le signe typique de la fasciite plantaire.',
         'Le deuxième moment le plus important est avant de vous lever après être resté longtemps assis. Le même raccourcissement se produit au repos. Étirer le fascia avant de le charger réduit ce choc.',
         'Dans l’essai, on demandait aux participants de faire 10\u00A0maintiens de 10\u00A0secondes, trois fois par jour, pendant au moins huit semaines. Les séances les plus importantes étaient celle du matin et celle après une longue période assise. Plus de séances dans la journée étaient encouragées si possible.',
       ],
@@ -79,7 +79,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       h2: 'En quoi l’étirement du fascia plantaire diffère-t-il d’un étirement du mollet\u00A0?',
       paragraphs: [
         'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle superficiel du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
-        'Un mollet raide est à lui seul un facteur de risque de fasciite plantaire. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant. C’est pourquoi la recommandation conseille les deux étirements, pas l’un ou l’autre.',
+        'Un [mollet raide](/fr/mollets-tendus/) est à lui seul un facteur de risque de fasciite plantaire. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant. C’est pourquoi la recommandation conseille les deux étirements, pas l’un ou l’autre.',
         'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/).',
       ],
       cites: [CITE.riddle, CITE.guideline],

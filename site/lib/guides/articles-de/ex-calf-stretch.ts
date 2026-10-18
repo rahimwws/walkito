@@ -16,11 +16,11 @@ export const EX_CALF_STRETCH_DE: Guide = {
     'Wade dehnen mit gestrecktem Knie bei Plantarfasziitis, Fersenschmerzen und verkürzter Wade: Technik, Sätze, wie lange halten und was die Studien sagen.',
   h1: 'Wadendehnung bei Plantarfasziitis: Technik, Sätze und Haltedauer',
   lede:
-    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen ihre beste Bewertung, A.',
+    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/) und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen den höchsten Empfehlungsgrad A.',
   takeaways: [
     'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).',
     'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius (Patel und DiGiovanni, 2011).',
-    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, ihrer besten Bewertung (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, dem höchsten Empfehlungsgrad (Koc und Kollegen, 2023).',
     'Eine Metaanalyse von 2020 fand einen großen Behandlungseffekt für Waden- und Plantarfaszien-Dehnung, die Qualität der Belege reichte aber von mittel bis sehr niedrig (Siriphorn und Eksakulkla, 2020).',
     'Walkito beginnt mit 3-mal 30\u00A0Sekunden halten, jedes Bein.',
   ],
@@ -64,7 +64,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       h2: 'Hilft die Wadendehnung bei Plantarfasziitis?',
       paragraphs: [
-        'Die Leitlinie von 2023 zu Fersenschmerzen hat die verfügbaren Studien zum Dehnen geprüft und dem Dehnen von Plantarfaszie und Wade die Bewertung **A** gegeben, ihre höchste. Diese Bewertung gilt für Plantarfaszien-Dehnung und Wadendehnung zusammen, weil die meisten Protokolle beides enthalten.',
+        'Die Leitlinie von 2023 zu Fersenschmerzen hat die verfügbaren Studien zum Dehnen geprüft und dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** gegeben. Dieser Empfehlungsgrad gilt für Plantarfaszien-Dehnung und Wadendehnung zusammen, weil die meisten Protokolle beides enthalten.',
         'Eine systematische Übersichtsarbeit mit Metaanalyse von 2020 fasste die Studien zum Dehnen zusammen und fand einen großen Behandlungseffekt für Wadendehnung und Plantarfaszien-Dehnung. Die Autoren bewerteten die Qualität der Belege als mittel bis sehr niedrig und forderten bessere Studien. Trotzdem war die Effektstärke groß und mit anderen Maßnahmen vergleichbar.',
         'Keine einzelne Studie testet die Wadendehnung mit gestrecktem Knie allein bei Plantarfasziitis. Sie wird immer als Teil eines Programms getestet. Die Leitlinie empfiehlt sie zusammen mit der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und Krafttraining wie [Fersenheben](/de/uebungen/fersenheben/).',
       ],
@@ -86,7 +86,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       h2: 'Wer sollte diese Dehnung machen und wer sie lassen?',
       paragraphs: [
-        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder verkürzten Waden vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), zu [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) und zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder [verkürzten Waden](/de/verspannte-waden/) vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) und zu [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
         'Lass sie weg oder pass sie an, wenn du ein Problem mit der Achillessehne hast, das beim Dehnen akut wehtut. Dann kommt der Schmerz von einer anderen Struktur, und die Achillessehne über eine Dehnung an der Wand zu belasten, ist vielleicht nicht der richtige Anfang. Den Ansatz speziell für die Achillessehne findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         'Wenn du die Wand nicht erreichst oder nicht bequem stehen kannst, gibt eine Dehnung im Sitzen mit Handtuch einen ähnlichen Zug an der Wade. Leg ein Handtuch um den Fußballen, halte das Knie gestreckt und zieh die Zehen zu dir.',
       ],
@@ -124,7 +124,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Hör auf und geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Hör auf und geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz in der Achillessehne selbst sitzt, nicht im Wadenmuskel',
       'du beim Dehnen ein plötzliches Knallen oder ein reißendes Gefühl spürst',
@@ -138,7 +138,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant die Wadendehnung zusammen mit der Soleusdehnung und der Plantarfaszien-Dehnung in die meisten Einheiten ein. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die App geht in deinem Tempo vom Dehnen zum Krafttraining über.',
     more: [
-      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

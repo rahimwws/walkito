@@ -58,7 +58,7 @@ export const HAGLUNDS_FR: Guide = {
       paragraphs: [
         'La bourse rétrocalcanéenne se trouve dans l’espace entre le calcanéum et le tendon d’Achille. Son rôle est de réduire les frottements. Quand la bosse de Haglund est saillante, la bourse est comprimée pendant la flexion dorsale (quand la cheville plie pour remonter le pied). Résultat\u00A0: un gonflement, une douleur et parfois une rougeur à l’arrière du talon.',
         'La bursite rétrocalcanéenne peut survenir sans déformation de Haglund, par exemple après une hausse brusque de la course ou du travail en montée. Mais la saillie osseuse la rend plus probable. Les chaussures à contrefort rigide qui appuient sur la bosse sont un irritant mécanique direct.',
-        'La douleur de la bursite rétrocalcanéenne se situe à l’arrière du talon, en profondeur entre le tendon et l’os. Elle diffère de la bursite superficielle (un gonflement mou et sensible sous la peau) et de la douleur à l’intérieur du talon de la fasciite plantaire.',
+        'La douleur de la bursite rétrocalcanéenne se situe à l’arrière du talon, en profondeur entre le tendon et l’os. Elle diffère de la bursite superficielle (un gonflement mou et sensible sous la peau) et de la douleur à l’intérieur du talon de la [fasciite plantaire](/fr/fasciite-plantaire/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },

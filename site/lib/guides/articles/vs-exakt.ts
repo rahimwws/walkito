@@ -6,9 +6,9 @@ export const VS_EXAKT_EN: Guide = {
   page: 'vsExakt',
   published: '2026-10-04',
   updated: '2026-10-13',
-  title: 'Walkito vs Exakt Health: Side-by-Side Comparison (2026)',
+  title: 'Walkito vs Exakt Health (2026): Which Heel Pain App Fits?',
   description:
-    'Walkito vs Exakt Health compared: conditions, pricing, platforms, how each builds your plan, evidence base, languages and privacy. Checked October 2026.',
+    'Walkito vs Exakt Health side by side: conditions covered, how each builds your plan, evidence, platforms, languages and privacy. Checked October 2026.',
   h1: 'Walkito vs Exakt Health: which one fits you?',
   lede:
     'Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis](/plantar-fasciitis/), but they are built for different people. Exakt is a runner\'s app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, [flat feet](/flat-feet/) and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.',

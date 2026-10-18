@@ -19,7 +19,7 @@ export const VS_EXAKT_PT: Guide = {
     'Walkito ou Exakt Health: condições, preço, plataformas, como cada um monta o seu plano, evidências, idiomas e privacidade. Conferido em outubro de 2026.',
   h1: 'Walkito vs Exakt Health: qual combina com você?',
   lede:
-    'O Walkito e o Exakt Health oferecem planos de exercícios para fascite plantar, mas foram feitos para pessoas diferentes. O Exakt é um app para corredores, com mais de 15 planos de reabilitação de lesões e um programa de volta à corrida. O Walkito é um app mais focado, em dor no calcanhar, pé chato e adaptação à dor de cada manhã. Esta página compara os dois com honestidade, diz onde o Exakt é a melhor escolha e explica o que o Walkito faz de diferente.',
+    'O Walkito e o Exakt Health oferecem planos de exercícios para [fascite plantar](/pt/fascite-plantar/), mas foram feitos para pessoas diferentes. O Exakt é um app para corredores, com mais de 15 planos de reabilitação de lesões e um programa de volta à corrida. O Walkito é um app mais focado, em dor no calcanhar, [pé chato](/pt/pe-chato/) e adaptação à dor de cada manhã. Esta página compara os dois com honestidade, diz onde o Exakt é a melhor escolha e explica o que o Walkito faz de diferente.',
   intro: [
     'É o Walkito que faz esta página. Por isso, leia as informações sobre o Exakt (tiradas da página dele na App Store, da página no Google Play e do site oficial, tudo conferido em outubro de 2026) e decida por conta própria. Os links para todas as fontes estão embaixo da tabela de comparação.',
   ],
@@ -124,7 +124,7 @@ export const VS_EXAKT_PT: Guide = {
     {
       h2: 'Para quem o Exakt Health foi feito?',
       paragraphs: [
-        'O Exakt Health foi feito para corredores. Essa é a identidade central dele, e tudo no app reflete isso. Se você corre e está se recuperando de fascite plantar, tendinopatia de Aquiles, entorse de tornozelo, lesão no posterior da coxa ou lesão de menisco, o Exakt tem um plano de reabilitação específico para a sua lesão. Ele cobre mais de 15 condições diferentes.',
+        'O Exakt Health foi feito para corredores. Essa é a identidade central dele, e tudo no app reflete isso. Se você corre e está se recuperando de fascite plantar, [tendinopatia de Aquiles](/pt/tendinite-de-aquiles-exercicios/), entorse de tornozelo, lesão no posterior da coxa ou lesão de menisco, o Exakt tem um plano de reabilitação específico para a sua lesão. Ele cobre mais de 15 condições diferentes.',
         'Cada plano de reabilitação termina com um programa de caminhada e corrida para voltar a correr, uma das partes da recuperação mais difíceis de acertar sozinho. O app também tem planos de treino de corrida para todas as distâncias, do sedentário aos 5\u00A0km até a maratona.',
         'O Exakt foi fundado em 2021 por Philip Billaudelle, Lucia Payo e Maryke Louw. Ele é feito por fisioterapeutas esportivos habilitados e treinadores de corrida, e captou cerca de 2,2\u00A0milhões de euros em investimento seed em setembro de 2024. A equipe fica em Berlim.',
         'O app é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória para o uso pretendido.',
@@ -145,7 +145,7 @@ export const VS_EXAKT_PT: Guide = {
         'Ele também foi feito para quem passa o dia todo em pé: enfermagem, comércio, estoque e armazém.',
         'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar cada sessão a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
         'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple no iPhone ou do Health Connect no Android) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
-        'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e equilíbrio em uma perna, e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
+        'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e [equilíbrio em uma perna](/pt/exercicios/equilibrio-uma-perna/), e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
         'O Walkito foi lançado em 2 de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
       ],
     },
@@ -291,7 +291,7 @@ export const VS_EXAKT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Se o Walkito parece combinar com a sua situação, é assim que ele funciona. Você responde perguntas sobre onde dói, de que lado, o seu nível de atividade e o seu objetivo. O Walkito monta um plano semanal em torno de metas medidas, começando por manhãs sem dor. Toda manhã, um check-in ajusta o dia.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, e mostra a diferença entre o seu lado esquerdo e o direito. Os exercícios seguem a diretriz clínica de 2023 e o ensaio de Rathleff de 2015. O Walkito é um programa de exercícios, não um diagnóstico nem um substituto para um profissional de saúde.',

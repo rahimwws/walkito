@@ -506,7 +506,7 @@ export default function HeelPainRunnersEs() {
           </section>
 
           <section id="plan">
-            <h2>Hacerlo como un plan</h2>
+            <h2>Cómo convertirlo en un plan</h2>
             <p>
               No tienes que decidir el orden, las dosis ni cuándo pasar al siguiente. Walkito arma
               un plan una semana a la vez en torno a una meta que puedes medir. Para el dolor de

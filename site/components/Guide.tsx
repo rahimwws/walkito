@@ -58,7 +58,7 @@ const LIBRARY_CRUMB = {
   ru: 'Библиотека упражнений',
   es: 'Biblioteca de ejercicios',
   pt: 'Biblioteca de exercícios',
-  fr: "Bibliothèque d'exercices",
+  fr: "Bibliothèque d’exercices",
   it: 'Libreria di esercizi',
   de: 'Übungsbibliothek',
 } as const;

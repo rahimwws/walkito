@@ -19,7 +19,7 @@ export const ACHILLES_ES: Guide = {
   lede:
     'Los ejercicios para la tendinitis de Aquiles funcionan mejor cuando entiendes el descenso de talón como trabajo de fuerza, no como un estiramiento. La guía clínica de 2024 le da al ejercicio su grado más alto, **A**, y un metaanálisis en red de 2021 con 29\u00A0ensayos no encontró ningún protocolo claramente mejor que otro. Lo que importa es cargar el tendón de forma constante durante semanas.',
   intro: [
-    'Esta página explica esos ejercicios a fondo. Si te duele bajo el pie y no en la parte de atrás del talón, lo que buscas son [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) resume los dos. Si el dolor está a lo largo de la tibia y no en el talón, mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/); si solo aparece después de un día largo de pie y no al correr, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/).',
+    'Esta página explica esos ejercicios a fondo. Si te duele bajo el pie y no en la parte de atrás del talón, lo que buscas son [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). ¿No sabes cuál de los dos es? Mira [fascitis plantar o tendinitis de Aquiles](/es/fascitis-plantar-o-tendinitis-de-aquiles/). La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) resume los dos. Si el dolor está a lo largo de la tibia y no en el talón, mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/); si solo aparece después de un día largo de pie y no al correr, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/).',
     'La mayoría de la gente usa «tendinitis» y «tendinopatía» como si fueran lo mismo. Las guías actuales usan «tendinopatía» porque el problema suele ser de carga, no pura inflamación. Esta página usa «tendinitis» en los títulos y «tendinopatía» donde la guía lo hace.',
   ],
   takeaways: [
@@ -207,7 +207,7 @@ export const ACHILLES_ES: Guide = {
       paragraphs: [
         'En Silbernagel 2007, los pacientes que siguieron corriendo durante la rehabilitación con el modelo de control del dolor no estuvieron peor que los que primero descansaron. Los dos grupos mejoraron a los 12\u00A0meses. El ensayo concluyó que seguir activo, vigilando el dolor, «podría ser una opción valiosa» durante la rehabilitación.',
         'Eso no significa que correr sea inofensivo en todos los casos. **Si el dolor no se calma en la noche, o si cada semana va peor, bájale.** El dolor donde el tendón se une al hueso del talón pide más cuidado que el dolor en la mitad del tendón. Cualquier chasquido o tronido repentino es una razón para parar y consultar a un profesional de la salud.',
-        'La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) explica con más detalle cómo manejar la carga al correr.',
+        'La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) explica con más detalle cómo manejar la carga al correr. [Ejercicios de pies para corredores](/es/ejercicios-de-pies-para-corredores/) propone una rutina de fuerza, y [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/) habla de subidas, bajadas y el peso de la mochila.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -286,7 +286,7 @@ export const ACHILLES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que adivinar el orden, las dosis ni cuándo añadir carga. Walkito arma un plan una semana a la vez en torno a una meta. La cadena de pantorrilla va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, elevaciones con toalla, descensos excéntricos de talón y saltos pogo. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas la meta de pantorrilla), una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si el dolor está justo donde el tendón se une al hueso del talón, pide a un profesional de la salud que lo revise antes de cargarlo fuerte.',

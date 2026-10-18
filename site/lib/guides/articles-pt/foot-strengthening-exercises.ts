@@ -14,7 +14,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
   lede:
     'Os exercícios para fortalecer os pés treinam os pequenos músculos de dentro do pé e os maiores, que descem da panturrilha. Comece sentado com o exercício de pé curto, o abrir os dedos e a elevação do dedão, depois passe para em pé e depois para uma perna só. Nos ensaios, os músculos do pé ficaram maiores e mais fortes em cerca de dois meses.',
   intro: [
-    'Esta página é o guia geral para o pé inteiro. Para pé chato, dedos ou calçados barefoot, as páginas mais específicas estão com link mais abaixo.',
+    'Esta página é o guia geral para o pé inteiro. Para [pé chato](/pt/pe-chato/), dedos ou calçados barefoot, as páginas mais específicas estão com link mais abaixo.',
   ],
   takeaways: [
     'Num ensaio de 2020 com 118\u00A0corredores amadores, o grupo sem treino dos pés teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida ao longo de 12\u00A0meses do que o grupo que fez um programa de core do pé (Taddei e colegas). É um ensaio só.',
@@ -53,7 +53,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       keyFact: 'Uma revisão de 2023 com quatro ensaios concluiu que a maioria dos programas para os pés usava contrações sustentadas por 5\u00A0segundos e passava de sentado para em pé (de Souza e colegas).',
       paragraphs: [
         'Comece pelos exercícios que isolam os pequenos músculos do pé, feitos sentado, e depois acrescente o trabalho em pé e de equilíbrio conforme eles ficam fáceis. Uma revisão de 2023 de de Souza e colegas analisou quatro ensaios randomizados de fortalecimento intrínseco do pé. A maioria usou o exercício de pé curto e puxar a toalha com os dedos, com contrações sustentadas por cerca de 5\u00A0segundos e uma progressão de sentado para em pé.',
-        'As doses abaixo são doses iniciais. Faça descalço. Se algum exercício levar a dor a **6/10 ou mais**, pare por hoje. Cada exercício tem a própria página com mais detalhes, com link a partir da [biblioteca de exercícios](/exercises/) (em inglês).',
+        'As doses abaixo são doses iniciais. Faça descalço. Se algum exercício levar a dor a **6/10 ou mais**, pare por hoje. Cada exercício tem a própria página com mais detalhes.',
       ],
       exercises: [
         {
@@ -126,7 +126,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
         'O Walkito usa os mesmos três passos para o exercício de pé curto: sentado, depois em pé com os dois pés, depois em uma perna. Quando o arco é o foco do seu plano, no plano da semana seguinte você sobe um passo se marcou as suas duas últimas sessões com esse exercício como fáceis e a sua dor da manhã não aumentou. Uma sessão marcada como difícil, ou a dor da manhã 2\u00A0pontos mais alta, faz você voltar um passo. Os dois passos seguintes estão mais abaixo.',
       ],
       bullets: [
-        '**Passo 1, sentado.** Pé curto, abrir os dedos, elevação do dedão e puxar a toalha com os dedos, tudo sentado.',
+        '**Passo 1, sentado.** Pé curto, abrir os dedos, elevação do dedão e [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), tudo sentado.',
         '**Passo 2, em pé com os dois pés.** O pé curto sustentado em pé e a elevação de calcanhar com os dois pés.',
         '**Passo 3, uma perna.** O pé curto sustentado em uma perna, depois equilíbrio em uma perna com o arco levantado.',
         '**Depois.** Elevação de calcanhar em uma perna e, para quem corre, pequenos saltos. São cargas maiores. Só acrescente quando o passo 3 estiver fácil.',
@@ -178,7 +178,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
         'Os exercícios para fortalecer os pés **reduziram as lesões de corrida num bom ensaio, mas só num.** Em 2020, Taddei e colegas dividiram por sorteio 118\u00A0corredores amadores de longa distância num grupo de core do pé (57\u00A0corredores) e num grupo de controle (61\u00A0corredores). O grupo de core do pé fez um curso supervisionado de cerca de dois meses para os músculos do pé e do tornozelo e depois continuou treinando com supervisão a distância.',
         'Ao longo de 12\u00A0meses, o grupo de controle teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida. Os autores viram o efeito aparecer depois de cerca de quatro a oito meses de treino.',
         'Um ensaio anterior e menor da mesma equipe, com 28\u00A0corredores, concluiu que cerca de dois meses de treino dos pés aumentaram o tamanho de cada músculo do pé medido, em comparação com o grupo de controle. Os corredores também passaram a empurrar o chão com mais força.',
-        'Os dois ensaios vêm de um único grupo de pesquisa no Brasil, com corredores amadores que não estavam lesionados no início. Ainda não sabemos se o programa ajuda iniciantes ou pessoas que já têm dor. Para corredores que estão com dor no calcanhar agora, comece por [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
+        'Os dois ensaios vêm de um único grupo de pesquisa no Brasil, com corredores amadores que não estavam lesionados no início. Ainda não sabemos se o programa ajuda iniciantes ou pessoas que já têm dor.',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med): grupo de controle com 2,42\u00A0vezes mais chance de se lesionar (IC 95% 1,98 a 3,62), p = 0,035, ensaio randomizado simples-cego, acompanhamento de 12\u00A0meses. Taddei 2020 (Phys Ther Sport): ensaio randomizado simples-cego de prova de conceito, 28\u00A0corredores, volume muscular por ressonância magnética.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -223,7 +223,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
     {
       h2: 'Fortalecer os pés ajuda na fascite plantar ou no pé chato?',
       paragraphs: [
-        'Na fascite plantar, o fortalecimento do pé somado ao alongamento não foi melhor que o alongamento sozinho num ensaio que comparou os dois. Em 2016, Kamonseki e colegas dividiram 83\u00A0pessoas com fascite plantar em três grupos por dois meses:',
+        'Na [fascite plantar](/pt/fascite-plantar/), o fortalecimento do pé somado ao alongamento não foi melhor que o alongamento sozinho num ensaio que comparou os dois. Em 2016, Kamonseki e colegas dividiram 83\u00A0pessoas com fascite plantar em três grupos por dois meses:',
         {
           list: [
             'Fortalecimento do pé mais alongamento.',
@@ -240,7 +240,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       h2: 'Qual é a força da evidência sobre o fortalecimento dos pés?',
       paragraphs: [
         'A evidência de que os exercícios para os pés deixam os músculos do pé mais fortes aponta na mesma direção, mas os estudos são pequenos. Uma revisão de 2025 de Peters-Dickie e colegas incluiu 28\u00A0ensaios randomizados com 1.399\u00A0pessoas. Ela apoiou os exercícios para os pés como forma de aumentar a força do pé, mas classificou a certeza como baixa a muito baixa, principalmente porque havia poucos estudos por pergunta e muitos tinham alto risco de viés. Os resultados sobre o tamanho dos músculos foram mistos.',
-        'A evidência de que pés mais fortes significam menos lesões é ainda mais fraca e se apoia principalmente no único ensaio com corredores citado acima. **O fortalecimento dos pés é barato e de baixo risco, e de fato aumenta a força.** Se ele previne a sua próxima lesão ainda é uma questão em aberto. Mais sobre como estes guias classificam a pesquisa está na página de [evidência científica](/science/) (em inglês).',
+        'A evidência de que pés mais fortes significam menos lesões é ainda mais fraca e se apoia principalmente no único ensaio com corredores citado acima. **O fortalecimento dos pés é barato e de baixo risco, e de fato aumenta a força.** Se ele previne a sua próxima lesão ainda é uma questão em aberto.',
       ],
       sourceNote: 'Peters-Dickie 2025: as metanálises mostraram que calçados minimalistas aumentaram a força dos dedos 2 a 5, e que os exercícios para os pés reduziram o movimento do arco durante a corrida; certeza baixa a muito baixa.',
       cites: [CITE.petersDickie],
@@ -289,7 +289,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano semanal em torno de uma meta e inclui os exercícios para os pés desta página: o exercício de pé curto de sentado até em uma perna, o abrir os dedos, a elevação do dedão, o puxar a toalha com os dedos, a elevação de calcanhar e o trabalho de equilíbrio. Ele começa os exercícios de arco com 3\u00A0séries de 8 e 5\u00A0segundos parado e o equilíbrio com 3\u00A0vezes de 20\u00A0segundos, e a cada novo plano semanal sobe o seu exercício de foco um passo quando você marcou as suas duas últimas sessões com ele como fáceis e a sua dor da manhã não aumentou.',
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. Um teste curto, a cada 14\u00A0dias no início, mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

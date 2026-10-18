@@ -36,7 +36,7 @@ export const SESAMOIDITIS_IT: Guide = {
       h2: 'Cosa sono le ossa sesamoidi e perché fanno male?',
       paragraphs: [
         'Le due ossa sesamoidi stanno sotto la testa del primo metatarso, l’osso lungo dietro l’alluce. Il sesamoide mediale, più vicino al centro del piede, è quello che si lesiona più spesso. Insieme aiutano l’alluce a spingere da terra e assorbono la forza nella fase di spinta del passo.',
-        'La sesamoidite compare quando queste ossa o i tessuti intorno si infiammano. Le attività che caricano ripetutamente l’avampiede, come corsa, danza o salti, sono fattori scatenanti comuni. Lo è anche un aumento improvviso del volume di allenamento. Chi ha un piede cavo o una testa del primo metatarso prominente è più predisposto, perché più pressione cade proprio su quel punto.',
+        'La sesamoidite compare quando queste ossa o i tessuti intorno si infiammano. Le attività che caricano ripetutamente l’avampiede, come corsa, danza o salti, sono fattori scatenanti comuni. Lo è anche un aumento improvviso del volume di allenamento. Chi ha un [piede cavo](/it/piede-cavo-esercizi/) o una testa del primo metatarso prominente è più predisposto, perché più pressione cade proprio su quel punto.',
         'Nella pratica il termine sesamoidite si usa in senso ampio e non ha una definizione rigida. Può indicare un’infiammazione delle ossa stesse, dei tessuti molli intorno, o di entrambi. Una revisione sistematica del 2025 ha notato che non ci sono ancora linee guida standard per la sua gestione conservativa.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -58,7 +58,7 @@ export const SESAMOIDITIS_IT: Guide = {
         'La revisione sistematica del 2025 di Biz e colleghi ha riunito i dati dei singoli pazienti di 11\u00A0studi, per un totale di 59\u00A0pazienti. I trattamenti più comuni erano:',
         {
           list: [
-            'Plantari.',
+            '[Plantari](/it/plantari-o-esercizi/).',
             'Modifica delle attività.',
             'Infiltrazioni di cortisone.',
           ],
@@ -99,7 +99,7 @@ export const SESAMOIDITIS_IT: Guide = {
       h2: 'Che ruolo ha l’esercizio?',
       paragraphs: [
         'La risposta onesta è che l’esercizio ha un ruolo limitato nella gestione della sesamoidite in sé. A differenza della [fascite plantare](/it/esercizi-fascite-plantare/) o della [tendinite d’Achille](/it/tendinite-achille-esercizi/), dove i programmi di carico hanno un buon sostegno dagli studi, per la sesamoidite non ci sono studi sull’esercizio. La revisione sistematica del 2025 non ha individuato nessuno studio che testasse un protocollo di esercizi specifico.',
-        'Quello su cui l’esercizio può aiutare è il quadro intorno. Un polpaccio rigido sposta il peso sull’avampiede mentre cammini. Allungare gastrocnemio e soleo può ridurre quel carico in avanti. Anche dei muscoli intrinseci del piede deboli possono contribuire a una distribuzione irregolare della pressione sull’avampiede. Apertura delle dita e piede corto possono aiutare a dividere il carico in modo più uniforme tra le teste metatarsali, anche se non è stato testato specificamente per la sesamoidite.',
+        'Quello su cui l’esercizio può aiutare è il quadro intorno. Un [polpaccio rigido](/it/polpacci-rigidi/) sposta il peso sull’avampiede mentre cammini. Allungare gastrocnemio e soleo può ridurre quel carico in avanti. Anche dei muscoli intrinseci del piede deboli possono contribuire a una distribuzione irregolare della pressione sull’avampiede. Apertura delle dita e piede corto possono aiutare a dividere il carico in modo più uniforme tra le teste metatarsali, anche se non è stato testato specificamente per la sesamoidite.',
         'Se stai recuperando da una sesamoidite e nel periodo di riposo hai perso forza nelle dita o flessibilità nel polpaccio, esercizi delicati per la [parte anteriore della pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) possono far parte di un piano di ritorno all’attività. Ma **gli strumenti principali sono lo scarico e la modifica delle attività, non l’esercizio.**',
       ],
     },
@@ -162,9 +162,9 @@ export const SESAMOIDITIS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
-      'La sesamoidite si gestisce soprattutto con scarico e scarpe, non con un programma di esercizi. Walkito è pensato per problemi come fascite plantare e piede piatto, dove i programmi di carico strutturati hanno il sostegno degli studi. Se la tua sesamoidite passa e vuoi ricostruire la forza di piede e polpaccio per tornare all’attività, il lavoro sui muscoli intrinseci del piede e gli allungamenti del polpaccio dell’app possono essere un’aggiunta utile.',
+      'La sesamoidite si gestisce soprattutto con scarico e scarpe, non con un programma di esercizi. Walkito è pensato per problemi come [fascite plantare](/it/fascite-plantare/) e [piede piatto](/it/piede-piatto/), dove i programmi di carico strutturati hanno il sostegno degli studi. Se la tua sesamoidite passa e vuoi ricostruire la forza di piede e polpaccio per tornare all’attività, il lavoro sui muscoli intrinseci del piede e gli allungamenti del polpaccio dell’app possono essere un’aggiunta utile.',
     more: [
       'Se il dolore all’avampiede è più ampio e coinvolge la seconda o la terza testa metatarsale, vedi la pagina su [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) per esercizi con più prove alle spalle.',
     ],

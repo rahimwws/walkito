@@ -31,7 +31,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
       h2: 'O que é o exercício de inversão do tornozelo com faixa?',
       paragraphs: [
         'A inversão do tornozelo com faixa é um exercício sentado em que uma faixa elástica passa em volta da parte da frente do pé e fica presa no outro pé ou em um ponto fixo. Você vira a sola do pé para dentro (inversão) contra a puxada da faixa. O joelho fica parado. Só o pé e o tornozelo se mexem.',
-        'O exercício trabalha o tibial posterior, um músculo profundo na parte de trás da perna cujo tendão contorna por trás o osso de dentro do tornozelo e se abre em leque pela sola do pé. É o músculo extrínseco mais importante para sustentar o arco ao andar. Quando ele enfraquece ou o tendão se desgasta, o arco cai e o pé gira para dentro. Esse problema se chama disfunção do tendão tibial posterior, ou pé chato adquirido do adulto.',
+        'O exercício trabalha o tibial posterior, um músculo profundo na parte de trás da perna cujo tendão contorna por trás o osso de dentro do tornozelo e se abre em leque pela sola do pé. É o músculo extrínseco mais importante para sustentar o arco ao andar. Quando ele enfraquece ou o tendão se desgasta, o arco cai e o pé gira para dentro. Esse problema se chama [disfunção do tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/), ou pé chato adquirido do adulto.',
       ],
       cites: [CITE.ling],
     },
@@ -101,7 +101,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
       h2: 'O que a pesquisa diz sobre o fortalecimento do tibial posterior?',
       paragraphs: [
         'A evidência mais direta sobre o movimento vem do estudo de ressonância magnética de 2004 de Kulig e colegas. Ele confirmou que a adução do pé ativa o tibial posterior de forma seletiva, com ativação mínima dos músculos em volta. Isso faz da inversão contra uma faixa o exercício de escolha quando o objetivo é fortalecer esse músculo específico.',
-        'Para resultados clínicos, uma revisão sistemática de 2018 de Ross e colegas analisou programas de exercício para a disfunção do tendão tibial posterior. A maioria dos estudos era pequena, mas a revisão concluiu que programas com exercícios excêntricos e concêntricos do tibial posterior, muitas vezes junto com fortalecimento da panturrilha e palmilhas, melhoraram a dor e a função.',
+        'Para resultados clínicos, uma revisão sistemática de 2018 de Ross e colegas analisou programas de exercício para a disfunção do tendão tibial posterior. A maioria dos estudos era pequena, mas a revisão concluiu que programas com exercícios excêntricos e concêntricos do tibial posterior, muitas vezes junto com fortalecimento da panturrilha e [palmilhas](/pt/palmilhas-ou-exercicios/), melhoraram a dor e a função.',
         '**O exercício não foi testado sozinho em um ensaio grande de fascite plantar.** O papel dele no programa do Walkito é apoiar o arco fortalecendo o estabilizador extrínseco que trabalha junto com os músculos intrínsecos. Páginas relacionadas: [exercícios para pé chato](/pt/exercicios-pe-chato/), [exercício do pé curto](/pt/exercicios/pe-curto/), [abdução de quadril](/pt/exercicios/abducao-quadril/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito acrescenta a inversão do tornozelo com faixa depois de seis sessões de pé curto em pé. A progressão garante que os músculos intrínsecos do pé estejam ativos antes de o estabilizador extrínseco receber carga. As sessões são de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o tempo de sustentação do arco e a resistência da panturrilha.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

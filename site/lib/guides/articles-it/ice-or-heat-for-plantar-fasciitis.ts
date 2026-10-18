@@ -93,7 +93,7 @@ export const ICE_HEAT_IT: Guide = {
       keyFact: 'In 36\u00A0studi su 1.301\u00A0persone senza lesioni, caldo più stretching ha migliorato l’ampiezza di movimento più del solo stretching (Bleakley e Costello, 2013).',
       paragraphs: [
         '**Scaldare il piede prima dello stretching è una scelta ragionevole**, ed è più sostenuta che mettere il ghiaccio prima dello stretching. Una revisione del 2013 di 36\u00A0studi su 1.301\u00A0persone senza lesioni ha trovato che il caldo aumentava l’ampiezza di movimento, e che caldo più stretching funzionava meglio del solo stretching. I dati sul freddo erano contrastanti. Ogni studio aveva un alto rischio di bias, e nessuno riguardava persone con dolore al tallone, quindi prendilo come un’idea sensata, non come un piano testato per la fascite plantare.',
-        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’allungamento della fascia plantare e del polpaccio.',
+        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e del polpaccio.',
         'Al mattino, però, non aspettare di esserti scaldato per fare stretching. L’allungamento dei primi passi va fatto prima che il piede prenda carico, sul bordo del letto. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questa routine passo per passo.',
       ],
       cites: [CITE.bleakleyThermal],
@@ -241,7 +241,7 @@ export const ICE_HEAT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Ghiaccio e caldo possono smussare una brutta giornata. Il piano di esercizi è la parte che la linea guida sostiene. Walkito costruisce quel piano una settimana alla volta intorno a un obiettivo principale. Per il dolore al tallone, il primo obiettivo è un mattino migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Gli allungamenti sono nel piano dalla prima settimana, e il massaggio con la pallina compare come breve passo di recupero.',
     more: [
       'Ogni settimana, solo l’esercizio del tuo obiettivo principale può cambiare. Sale di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato, e scende di un gradino se una sessione è stata pesante o il dolore del mattino è salito di 2 o più punti.',

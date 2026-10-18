@@ -14,7 +14,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
   lede:
     'Für die meisten Rückenschmerzen sind Plattfüße eine schwache Erklärung. Eine große, sorgfältig gemessene Studie, die Framingham Foot Study mit 1.930\u00A0Erwachsenen, fand keinen Zusammenhang zwischen flacher Fußhaltung und Schmerzen im unteren Rücken. Einen kleinen Zusammenhang fand sie bei Frauen, deren Füße beim Gehen nach innen rollten. Das ist ein Zusammenhang, kein Beweis, dass die Füße die Rückenschmerzen auslösen.',
   intro: [
-    'Wenn dein Rücken wehtut und jemand deine Plattfüße dafür verantwortlich gemacht hat, klingt das erst einmal logisch: Die Füße tragen dich, also muss ein tieferes Gewölbe weiter oben etwas aus dem Lot bringen. Die Forschung ist weniger eindeutig. Diese Seite zeigt, was die Studien gefunden haben, was Einlagen und Bewegung für den Rücken leisten können und welche Rückenbeschwerden zuerst eine medizinische Fachperson sehen sollte. Für die Fußseite gehen der [Ratgeber zum Plattfuß](/de/plattfuss/) und die [Plattfuß-Übungen](/de/plattfuss-uebungen/) ausführlich auf das Gewölbe ein.',
+    'Wenn dein Rücken wehtut und jemand deine Plattfüße dafür verantwortlich gemacht hat, klingt das erst einmal logisch: Die Füße tragen dich, also muss ein tieferes Gewölbe weiter oben etwas aus dem Lot bringen. Die Forschung ist weniger eindeutig. Diese Seite zeigt, was die Studien gefunden haben, was Einlagen und Bewegung für den Rücken leisten können und welche Rückenbeschwerden zuerst eine Ärztin oder ein Arzt sehen sollte. Für die Fußseite gehen der [Ratgeber zum Plattfuß](/de/plattfuss/) und die [Plattfuß-Übungen](/de/plattfuss-uebungen/) ausführlich auf das Gewölbe ein.',
   ],
   takeaways: [
     'In der Framingham Foot Study mit 1.930\u00A0Erwachsenen hing eine flache Fußhaltung im Stehen nicht mit Schmerzen im unteren Rücken zusammen. Nur ein Fuß, der beim Gehen nach innen rollte, war bei Frauen damit verbunden, mit etwa 1,5-facher Chance (Menz und Kollegen, 2013).',
@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       paragraphs: [
         'Die übliche Erklärung ist die kinetische Kette: die Vorstellung, dass sich die Gelenke vom Fuß bis zur Wirbelsäule als verbundenes System bewegen. Ein Fuß, der nach innen rollt, dreht demnach Schienbein und Oberschenkel nach innen, kippt das Becken und belastet den unteren Rücken anders. **Die Mechanik gibt es wirklich, aber der Effekt scheint klein zu sein.**',
         'In einer Laborstudie von 2021 gingen 20\u00A0Personen mit keilförmigen Einlagen, die ihre Füße nach innen rollen ließen. Ihr Becken kippte etwas stärker zu einer Seite (im Schnitt um etwa ein halbes Grad), und die Hüfte drehte sich um etwa 1,4\u00A0Grad nach innen. Das zeigt, dass der Fuß das Becken ein wenig verschieben kann. Es zeigt nicht, dass ein halbes Grad Schmerzen auslöst, und die Studie hat Schmerzen gar nicht gemessen.',
-        'Die kinetische Kette ist eine vernünftige Idee, die eine Fachperson bei einem einzelnen Menschen prüfen kann. Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.',
+        'Die kinetische Kette ist eine vernünftige Idee, die eine Ärztin oder ein Arzt bei einem einzelnen Menschen prüfen kann. Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.',
       ],
       cites: [CITE.hornestam],
     },
@@ -137,7 +137,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'In einer Studie mit 52\u00A0Personen mit flexiblem Plattfuß veränderte ein Programm aus Kurzer-Fuß-Übung, Sprunggelenk- und Hüftübungen und Dehnen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023).',
       paragraphs: [
         'An deinen Plattfüßen zu arbeiten ist sinnvoll, wenn deine Füße selbst wehtun, schnell ermüden oder sich instabil anfühlen. Ein Rückenprogramm ist das nicht, und keine Studie hat gezeigt, dass Fußübungen allein Rückenschmerzen lindern.',
-        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass Kurzer-Fuß-Übungen, Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung.',
+        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass [Kurzer-Fuß-Übungen](/de/uebungen/kurzer-fuss/), Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung.',
         'Das vollständige Programm mit Dosis und Steigerungen findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/). Drei der Kernübungen stehen unten.',
         'Walkito baut sie in einen Wochenplan für die Füße ein und beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten. Für den Rücken direkt tut es nichts, und es behauptet das auch nicht.',
         'Wenn eine Übung deinen Fußschmerz auf **6/10 oder mehr** bringt oder Rückenschmerzen oder Schmerzen ins Bein auslöst, hör für heute auf.',
@@ -183,10 +183,10 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       cites: [CITE.brijwasi, CITE.cheng],
     },
     {
-      h2: 'Was muss eine medizinische Fachperson prüfen?',
+      h2: 'Was muss eine Ärztin oder ein Arzt prüfen?',
       keyFact: 'Ernsthafte Probleme an der Wirbelsäule sind selten, und ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen zuerst gesucht werden sollte (Finucane und Kollegen, 2020).',
       paragraphs: [
-        'Eine Fachperson betrachtet Rücken und Füße als zwei getrennte Fragen und **fängt mit dem Rücken an**. Zuerst geht es darum, die seltenen ernsten Ursachen von Rückenschmerzen auszuschließen:',
+        'Eine Ärztin oder ein Arzt betrachtet Rücken und Füße als zwei getrennte Fragen und **fängt mit dem Rücken an**. Zuerst geht es darum, die seltenen ernsten Ursachen von Rückenschmerzen auszuschließen:',
         {
           list: [
             'Einen eingeklemmten Nerv.',
@@ -197,8 +197,8 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
         },
         'Ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen sie suchen, und du findest sie in der Liste am Ende dieser Seite.',
         'Zum Rücken kannst du Fragen erwarten, wie der Schmerz angefangen hat, was ihn lindert und ob er ins Bein ausstrahlt. Die Untersuchung prüft meist, wie sich der Rücken bewegt, dazu Kraft, Reflexe und Gefühl in Beinen und Füßen. Bildgebung ist meist nicht nötig, außer wenn etwas auf eine ernste Ursache hindeutet.',
-        'Bei den Füßen prüft die Fachperson, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach).',
-        'Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/). Die Fachperson schaut dir vielleicht auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.',
+        'Bei den Füßen wird geprüft, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach).',
+        'Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/). Vielleicht schaut man dir in der Praxis auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.',
         'Rückenprobleme können auch Beschwerden am Fuß auslösen. Ein eingeklemmter Nerv im unteren Rücken kann Taubheit, Kribbeln oder Schwäche im Fuß bringen, und ein schwacher Fuß kann wie ein Fußproblem aussehen, obwohl die Ursache weiter oben liegt.',
       ],
       cites: [CITE.finucaneRedFlags, CITE.hartvigsen],
@@ -235,7 +235,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du die Kontrolle über Blase oder Darm verloren hast oder kein Wasser lassen kannst (such sofort die Notaufnahme auf)',
       'du Taubheit im Bereich von Leiste, Gesäß oder Innenseite der Oberschenkel hast, der sogenannten Reithose (such sofort die Notaufnahme auf)',
@@ -253,10 +253,10 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito ist ein Übungsprogramm für Füße und Unterschenkel. Bei Plattfüßen baut es Woche für Woche einen Plan rund um Fußziele, etwa das Gewölbe 60\u00A0Sekunden halten und 30\u00A0Sekunden Einbeinstand. Es beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten, die Hüftübungen mit 3\u00A0Sätzen à 10 und die Wadendehnung mit 2-mal 30\u00A0Sekunden halten.',
+    text: 'Walkito ist ein Übungsprogramm für Füße und Unterschenkel. Bei Plattfüßen baut es Woche für Woche einen Plan rund um Fußziele, etwa das Gewölbe 60\u00A0Sekunden halten und 30\u00A0Sekunden [Einbeinstand](/de/uebungen/einbeinstand/). Es beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten, die Hüftübungen mit 3\u00A0Sätzen à 10 und die Wadendehnung mit 2-mal 30\u00A0Sekunden halten.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich an deinen Füßen verändert.',
-      'Walkito kümmert sich nicht um Rückenschmerzen, stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du Rückenschmerzen hast, lass sie abklären, vor allem wenn eines der Zeichen oben auf dich zutrifft.',
+      'Walkito kümmert sich nicht um Rückenschmerzen, stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn du Rückenschmerzen hast, lass sie abklären, vor allem wenn eines der Zeichen oben auf dich zutrifft.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten für deine Füße an',
   },

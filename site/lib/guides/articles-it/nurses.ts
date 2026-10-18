@@ -21,7 +21,7 @@ export const NURSES_IT: Guide = {
   lede:
     'Gli infermieri camminano in un solo turno più di quanto molte persone camminino in un giorno, e lo fanno su pavimenti duri con scarpe che magari non calzano bene. I problemi a piede e caviglia sono tra i disturbi muscoloscheletrici più comuni nell’infermieristica: in un sondaggio li ha riferiti più della metà degli infermieri ospedalieri nell’arco di 12\u00A0mesi. Quasi tutto quello che aiuta, cioè allungamenti del polpaccio, esercizi per l’arco e calze a compressione, si fa in pochi minuti prima o dopo il turno.',
   intro: [
-    'Questa pagina parla del dolore ai piedi che nasce dalle richieste del lavoro infermieristico: stare a lungo in piedi, camminare tanto e turni a rotazione. Se il dolore è acuto e peggiore ai primi passi dopo il riposo, quello schema fa pensare alla fascite plantare, e gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa.',
+    'Questa pagina parla del dolore ai piedi che nasce dalle richieste del lavoro infermieristico: stare a lungo in piedi, camminare tanto e turni a rotazione. Se il dolore è acuto e peggiore ai primi passi dopo il riposo, quel quadro fa pensare alla [fascite plantare](/it/fascite-plantare/), e gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa.',
     'Se non sei sicuro, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore generico da stazione eretta e i problemi con un nome preciso.',
   ],
   toc: true,
@@ -48,7 +48,7 @@ export const NURSES_IT: Guide = {
       paragraphs: [
         'In un turno infermieristico si sommano tre cose: tanto tempo in piedi, lunghe distanze a piedi e pavimenti duri. Stare fermi in piedi carica la fascia plantare, i muscoli del polpaccio e il cuscinetto del tallone senza la pompa che dà la camminata. Camminare aiuta il sangue a risalire dalle gambe, ma gli infermieri passano in modo imprevedibile dallo stare fermi accanto a un letto al camminare per lunghi corridoi, quindi la pompa del polpaccio non trova mai un ritmo regolare.',
         'Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe in molti lavori in piedi, citando gli infermieri tra i gruppi a rischio più alto. La revisione ha notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi.',
-        'A livello dei tessuti, un polpaccio rigido è un pezzo chiave. Uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6\u00A0volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**',
+        'A livello dei tessuti, un [polpaccio rigido](/it/polpacci-rigidi/) è un pezzo chiave. Uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli appaiati ha trovato che una flessibilità della caviglia ridotta, cioè una caviglia che non si piega verso l’alto quanto dovrebbe perché il polpaccio è rigido, era il singolo fattore di rischio indipendente più forte per la fascite plantare, con odds 23,3\u00A0volte più alte. Stare in piedi per la maggior parte della giornata lavorativa aumentava le odds di 3,6\u00A0volte. **Gli infermieri hanno entrambi i fattori di rischio insieme.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -56,7 +56,7 @@ export const NURSES_IT: Guide = {
       h2: 'Quali esercizi aiutano gli infermieri con il dolore ai piedi?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio e della fascia plantare una A, il suo grado più alto, e al lavoro di forza una B (Koc e colleghi, 2023).',
       paragraphs: [
-        'Gli esercizi che aiutano sono gli stessi della fascite plantare e del dolore ai piedi da stazione eretta: allungamenti del polpaccio, un allungamento della fascia plantare, sollevamenti sulle punte per la forza del polpaccio e un esercizio per l’arco chiamato piede corto. Per gli infermieri la differenza è farli rientrare tra i turni a rotazione, non durante il turno. **Pochi minuti prima o dopo il turno bastano per coprire i più importanti.**',
+        'Gli esercizi che aiutano sono gli stessi della fascite plantare e del dolore ai piedi da stazione eretta: allungamenti del polpaccio, un [allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/), sollevamenti sulle punte per la forza del polpaccio e un esercizio per l’arco chiamato piede corto. Per gli infermieri la differenza è farli rientrare tra i turni a rotazione, non durante il turno. **Pochi minuti prima o dopo il turno bastano per coprire i più importanti.**',
         'La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio e della fascia plantare il suo grado più alto, A, e al lavoro di forza una B. Entrambi i gradi riguardano la fascite plantare in particolare, ma i tessuti coinvolti sono gli stessi che prendono il carico durante un turno infermieristico. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
       ],
       exercises: [
@@ -159,7 +159,7 @@ export const NURSES_IT: Guide = {
       h2: 'Le scarpe per infermieri fanno la differenza: zoccoli, sneaker o altro?',
       paragraphs: [
         'Le calzature sono uno degli argomenti più discussi tra gli infermieri, ma le prove a favore di un tipo rispetto a un altro sono limitate. Una valutazione del 2007 di tre marche di scarpe professionali per infermieri ha trovato che la scarpa con un plantare interno più ammortizzato e un miglior sostegno dell’arco riduceva lo sforzo muscolare degli arti inferiori rispetto alle altre due, ma lo studio era piccolo e legato a marche specifiche.',
-        'Quello che la ricerca sostiene in modo più ampio è che il comfort delle scarpe conta. In un sondaggio su 125\u00A0infermieri di pronto soccorso e ambulatori, il 72% di chi riferiva scarpe poco comode riferiva anche dolore al piede e al tallone, contro il 28% di chi riferiva scarpe molto comode. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una B contro per il sollievo a breve termine dalla fascite plantare, cioè le prove fanno propendere per non usarli come unica soluzione.',
+        'Quello che la ricerca sostiene in modo più ampio è che il comfort delle scarpe conta. In un sondaggio su 125\u00A0infermieri di pronto soccorso e ambulatori, il 72% di chi riferiva scarpe poco comode riferiva anche dolore al piede e al tallone, contro il 28% di chi riferiva scarpe molto comode. La linea guida del 2023 sul dolore al tallone dà ai [plantari](/it/plantari-o-esercizi/) da soli una B a sfavore per il sollievo a breve termine dalla fascite plantare, cioè le prove fanno propendere per non usarli come unica soluzione.',
         'Un approccio pratico: scegli una scarpa che calzi bene, abbia un po’ di ammortizzazione e non stringa le dita. Se hai già dolore al tallone o all’arco, gli esercizi di questa pagina lavorano direttamente sui tessuti. **Scarpe e plantari possono aiutare il comfort durante il turno, ma non sostituiscono lo stretching e il lavoro di forza.**',
       ],
       cites: [CITE.guideline],
@@ -194,8 +194,8 @@ export const NURSES_IT: Guide = {
     {
       h2: 'Il dolore ai piedi dopo un turno può essere fascite plantare o altro?',
       paragraphs: [
-        'Dolore e stanchezza generici dopo un turno lungo sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso: dolore acuto vicino al tallone, peggiore ai primi passi dopo il riposo (alzarsi dal letto, alzarsi dopo essere stati seduti a lungo). Se il tuo dolore segue questo schema, gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa, e i dettagli sui sollevamenti sulle punte sono in [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
-        'Se a fine turno senti gli archi piatti o ceduti verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un dolore lungo lo stinco potrebbe essere periostite tibiale. Un dolore nel tendine d’Achille dietro il tallone è un problema diverso.',
+        'Dolore e stanchezza generici dopo un turno lungo sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso: dolore acuto vicino al tallone, peggiore ai primi passi dopo il riposo (alzarsi dal letto, alzarsi dopo essere stati seduti a lungo). Se il tuo dolore ha questo andamento, gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa, e i dettagli sui sollevamenti sulle punte sono in [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
+        'Se a fine turno senti l’arco plantare piatto o ceduto verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un dolore lungo lo stinco potrebbe essere [periostite tibiale](/it/periostite-tibiale-esercizi/). Un dolore nel tendine d’Achille dietro il tallone è un problema diverso.',
         'Se la tua domanda principale è il dolore da stazione eretta e non sei infermiere, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre gli stessi esercizi per un pubblico più ampio. Per la versione di questo problema legata alla scrivania in piedi, vedi [dolore ai piedi con la scrivania in piedi](/it/scrivania-in-piedi-dolore-piedi/). **Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricare il piede con gli esercizi.**',
       ],
     },
@@ -245,16 +245,16 @@ export const NURSES_IT: Guide = {
       'il tallone o il piede è arrossato, o hai la febbre o non ti senti bene',
       'il dolore ti sveglia di notte',
       'il dolore è acuto, o peggiora anche se hai ridotto il carico',
-      'il dolore è in un solo punto preciso e peggiora con l’attività, che può essere lo schema di una frattura da stress e non di stanchezza da stazione eretta',
+      'il dolore è in un solo punto preciso e peggiora con l’attività, che può essere il segno di una frattura da stress e non di stanchezza da stazione eretta',
       'una gamba o un piede si è gonfiato all’improvviso ed è dolorante, arrossato o caldo',
       'hai il diabete, meno sensibilità ai piedi o una cattiva circolazione',
       'il dolore non si è calmato dopo diverse settimane di turni più leggeri, scarpe migliori e gli esercizi di questa pagina',
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
-      'Non devi capire da solo l’ordine, le dosi o quando passare a una versione più dura. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il dolore ai piedi segue lo schema del dolore mattutino tipico della fascite plantare, il primo obiettivo è un dolore mattutino a 1 su 10 o meno per 14\u00A0giorni di fila.',
+      'Non devi capire da solo l’ordine, le dosi o quando passare a una versione più dura. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il dolore ai piedi ha l’andamento del dolore mattutino tipico della fascite plantare, il primo obiettivo è un dolore mattutino a 1 su 10 o meno per 14\u00A0giorni di fila.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta dando risultati. Con i turni a rotazione, l’ora del giorno non conta. Conta fare le sessioni con costanza.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore è acuto, peggiora o ti tiene sveglio di notte, rivolgiti prima a un professionista sanitario.',

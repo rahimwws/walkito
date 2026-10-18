@@ -235,7 +235,7 @@ export const FLAT_FEET_IT: Guide = {
       paragraphs: [
         'Finora, nella ricerca, gli esercizi per il piede piatto hanno cambiato l’arco dopo sei settimane o più, e solo nel piede piatto flessibile. In uno studio su 52\u00A0persone con piede piatto **flessibile**, un programma di sei settimane con esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti ha cambiato due misure della forma dell’arco più che nel gruppo di controllo.',
         'Le prove sugli esercizi per costruire l’arco, da soli, sono più deboli. Una revisione del 2024 ha messo insieme studi sull’allenamento del piede corto nel piede piatto in generale. Nel complesso non ha trovato una differenza chiara rispetto ai gruppi di controllo nella forma dell’arco o nella postura del piede. Solo i programmi più lunghi di sei settimane hanno migliorato quanto l’arco si abbassa sotto il tuo peso, e gli autori dicono che servono studi più grandi. Quindi metti in conto almeno sei settimane, e di più se fai solo il piede corto.',
-        `Anche per questo il piano di Walkito non ha una data di fine. L’obiettivo dell’arco, tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, resta nel piano finché non lo raggiungi, per quante settimane servano. La tenuta dell’arco viene testata ogni ${PROGRAM.testEveryDays}\u00A0giorni finché non raggiungi il primo obiettivo, poi ogni ${PROGRAM.testEveryDaysAfterGoal}, così vedi se sta cambiando. Gli studi sono riassunti nella [pagina delle evidenze](/science/) (in inglese).`,
+        `Anche per questo il piano di Walkito non ha una data di fine. L’obiettivo dell’arco, tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, resta nel piano finché non lo raggiungi, per quante settimane servano. La tenuta dell’arco viene testata ogni ${PROGRAM.testEveryDays}\u00A0giorni finché non raggiungi il primo obiettivo, poi ogni ${PROGRAM.testEveryDaysAfterGoal}, così vedi se sta cambiando.`,
       ],
       sourceNote:
         'Brijwasi e Borkar: il navicular drop (quanto scende l’osso navicolare, all’interno dell’arco, quando stai in piedi) è migliorato di 0,4\u00A0cm, e l’angolo dell’arco di 16\u00A0gradi, più che nel gruppo di controllo. Cheng e colleghi: nessuna differenza significativa nel complesso nel navicular drop o nel Foot Posture Index; il navicular drop è migliorato in modo significativo solo nel sottogruppo dei programmi più lunghi di sei settimane.',
@@ -246,7 +246,7 @@ export const FLAT_FEET_IT: Guide = {
       paragraphs: [
         'Nessuno studio di questa pagina mostra che gli esercizi per il piede piatto riducano il [dolore all’arco](/it/dolore-arco-plantare/), perché nessuno lo ha misurato. Lo studio e la revisione hanno misurato la forma dell’arco. Mostrano che l’arco si può allenare. Non sono una prova che gli stessi esercizi diano sollievo a un arco dolorante.',
         'Il dolore al tallone, e a volte lungo l’arco, può venire dalla fascia plantare, la banda di tessuto che corre sotto la pianta del piede. Se il tuo è vicino al tallone, la linea guida del 2023 sul dolore al tallone è la guida migliore. Per il dolore sotto il tallone, dà all’allungamento della fascia plantare e del polpaccio il grado più alto, **A**, e al lavoro di forza una **B**. Quegli esercizi sono in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/).',
-        'Walkito può lavorare su entrambi insieme, come obiettivi separati: mattine senza dolore per il dolore, e la tenuta dell’arco per l’arco. Come si dividono la settimana è spiegato nella [pagina del piano](/program/) (in inglese).',
+        'Walkito può lavorare su entrambi insieme, come obiettivi separati: mattine senza dolore per il dolore, e la tenuta dell’arco per l’arco.',
       ],
       cites: [CITE.guideline],
     },
@@ -255,7 +255,7 @@ export const FLAT_FEET_IT: Guide = {
       paragraphs: [
         `Quando raggiungi l’obiettivo dell’arco, cioè tenerlo per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi, **Walkito tiene il lavoro sull’arco nel piano a una dose più bassa.** L’obiettivo passa al mantenimento e il successivo prende il suo posto. Raggiungerlo non vuol dire che il lavoro sull’arco si ferma.`,
         `Anche i test continuano, ogni ${PROGRAM.testEveryDaysAfterGoal}\u00A0giorni dopo il primo obiettivo raggiunto. Se la tenuta dell’arco inizia a calare, lo vedi nei numeri invece di tirare a indovinare.`,
-        'Se ti fa male anche il tallone, il tallone ha i suoi esercizi e il suo obiettivo: vedi [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/). Le domande sull’app hanno risposta nelle [domande frequenti](/faq/) (in inglese).',
+        'Se ti fa male anche il tallone, il tallone ha i suoi esercizi e il suo obiettivo: vedi [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
     },
   ],
@@ -312,7 +312,7 @@ export const FLAT_FEET_IT: Guide = {
     bullets: [...RED_FLAGS.bullets, 'l’arco resta piatto quando il piede è sollevato da terra'],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per un piede piatto flessibile, quell’obiettivo è la tenuta dell’arco: tenere l’arco alzato per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi. Se hai anche dolore, prima vengono le mattine senza dolore.`,
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla tenuta dell’arco, resistenza del polpaccio ed equilibrio, così vedi se il lavoro sull’arco sta servendo.`,
@@ -351,7 +351,7 @@ export const HEEL_PAIN_IT: Guide = {
       h2: 'Quali esercizi aiutano la fascite plantare, e quanto farne?',
       figure: { id: 'plantar-fascia', caption: 'La fascia plantare va dall’osso del tallone alle dita. Il dolore della fascite plantare di solito inizia dove si attacca al tallone.', alt: 'Pianta di un piede con la fascia plantare come fasce bianche che si aprono a ventaglio dall’osso del tallone alla base delle dita, e una macchia rossa sul tallone dove di solito inizia il dolore.' },
       paragraphs: [
-        'Gli esercizi per la fascite plantare in Walkito sono allungamenti per la fascia plantare e il polpaccio, lavoro di forza per il polpaccio che sale a piccoli passi, e un massaggio con la pallina. Sono le dosi di partenza di Walkito, non una prescrizione. Un riassunto di una pagina è nelle [schede di esercizi da stampare](/printable-exercise-sheets/) (in inglese). [Come scriviamo queste guide](/it/chi-siamo/).',
+        'Gli esercizi per la fascite plantare in Walkito sono allungamenti per la fascia plantare e il polpaccio, lavoro di forza per il polpaccio che sale a piccoli passi, e un massaggio con la pallina. Sono le dosi di partenza di Walkito, non una prescrizione. [Come scriviamo queste guide](/it/chi-siamo/).',
         'L’ordine conta. Finché il dolore è il tuo obiettivo, Walkito tiene leggero il lavoro sul polpaccio, un gradino alla volta:',
         {
           list: [
@@ -533,7 +533,7 @@ export const HEEL_PAIN_IT: Guide = {
         'Il lavoro di forza e lo stretching aiutano entrambi la fascite plantare, e **il lavoro di forza aiuta prima.**',
         'In uno studio su 48\u00A0persone con fascite plantare confermata da ecografia, tutti portavano plantari. Un gruppo aggiungeva sollevamenti sulle punte ad alto carico a giorni alterni. L’altro allungava la fascia plantare ogni giorno.',
         'A tre mesi, il gruppo dei sollevamenti era chiaramente avanti su dolore e attività quotidiane. A dodici mesi, i due gruppi erano pari. Il lavoro di forza ha anticipato il miglioramento. Non lo ha reso più grande.',
-        'La linea guida sostiene di fare entrambe le cose. Il ragionamento studio per studio è nella [pagina delle evidenze](/science/) (in inglese).',
+        'La linea guida sostiene di fare entrambe le cose.',
       ],
       sourceNote:
         'Misurato con il Foot Function Index, dove un punteggio più basso vuol dire meno dolore e una funzionalità migliore: 29\u00A0punti in meno nel gruppo dei sollevamenti a tre mesi (IC al 95%: 6-52, p = 0,016), e 22 contro 16 a dodici mesi, una differenza non significativa.',
@@ -573,7 +573,7 @@ export const HEEL_PAIN_IT: Guide = {
       h2: 'Cosa succede quando il tallone smette di fare male?',
       paragraphs: [
         `Quando il dolore al tallone passa, Walkito continua a una dose più bassa, perché il dolore al tallone può tornare. Quando raggiungi l’obiettivo delle mattine senza dolore (dolore del mattino a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila), quell’obiettivo passa al mantenimento e il successivo prende il suo posto.`,
-        'Se hai anche il piede piatto, l’arco ha i suoi esercizi e i suoi tempi: vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Le domande sull’app hanno risposta nelle [domande frequenti](/faq/) (in inglese).',
+        'Se hai anche il piede piatto, l’arco ha i suoi esercizi e i suoi tempi: vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/).',
       ],
     },
   ],
@@ -592,8 +592,8 @@ export const HEEL_PAIN_IT: Guide = {
       cites: [CITE.latt],
     },
     {
-      q: 'Meglio lo stretching o il rinforzo per la fascite plantare?',
-      a: 'Aiutano entrambi, e il rinforzo funziona più in fretta. In uno studio su 48\u00A0persone, i sollevamenti sulle punte ad alto carico erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B. La [pagina delle evidenze](/science/) (in inglese) ha i dettagli.',
+      q: 'Meglio lo stretching o il lavoro di forza per la fascite plantare?',
+      a: 'Aiutano entrambi; nello studio citato, con il lavoro di forza il miglioramento è arrivato prima. In uno studio su 48\u00A0persone, i sollevamenti sulle punte ad alto carico erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B.',
     },
     {
       q: 'Lo sperone calcaneare è la stessa cosa della fascite plantare?',
@@ -629,7 +629,7 @@ export const HEEL_PAIN_IT: Guide = {
   ],
   redFlags: RED_FLAGS,
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Non devi capire da solo l’ordine, le dosi o per quanto restare su ogni esercizio. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila.`,
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/it/test-sollevamento-punte/), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,

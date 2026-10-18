@@ -36,7 +36,7 @@ export const SHIN_SPLINTS_FR: Guide = {
     'Une revue systématique de 2013 portant sur 11\u00A0essais de traitement a montré que les étirements et le renforcement n’ont pas fait la preuve qu’ils accélèrent la récupération du syndrome de stress tibial médial (Winters et coll., 2013).',
     'Dans le seul essai randomisé sur l’exercice dans la périostite tibiale, ajouter étirements et renforcement du mollet à un programme de course progressif n’a pas raccourci la récupération par rapport au programme de course seul, dans une étude sur 74\u00A0sportifs (Moen et coll., 2012).',
     'Les coureurs avec une périostite tibiale faisaient moins de montées sur pointes jusqu’à l’épuisement que des témoins appariés, ce qui suggère un déficit d’endurance du mollet (Madeley et coll., 2007).',
-    'Une sensibilité localisée, en un seul petit point, plutôt qu’une douleur diffuse sur plusieurs centimètres d’os, peut être une fracture de fatigue et demande un professionnel de santé, pas plus d’exercice.',
+    'Une sensibilité localisée, en un seul petit point, plutôt qu’une douleur diffuse sur plusieurs centimètres d’os, peut être une fracture de fatigue et justifie de consulter un professionnel de santé, et non d’augmenter l’exercice.',
   ],
   sections: [
     {
@@ -74,7 +74,7 @@ export const SHIN_SPLINTS_FR: Guide = {
           ['Abduction de hanche', '3\u00A0séries de 15, chaque jambe', 'Jours de renforcement', 'Un travail à l’extérieur de la hanche', 'La douleur atteint 6/10'],
           ['Équilibre sur une jambe', '3\u00A0maintiens de 30\u00A0secondes, chaque jambe', 'Jours d’équilibre', 'Le pied et la cheville qui font de petites corrections', 'La douleur atteint 6/10'],
           ['Bascules de cheville', '2\u00A0séries de 15, chaque jambe', 'La plupart des séances', 'La cheville qui se plie davantage, le talon reste au sol', 'La douleur atteint 6/10'],
-          ['Massage avec une balle', '2\u00A0minutes', 'Jours de récupération', 'Une pression ferme sous le pied, jamais une grimace', 'La douleur atteint 6/10'],
+          ['Massage avec une balle', '2\u00A0minutes', 'Jours de récupération', 'Une pression ferme sous le pied, sans jamais grimacer', 'La douleur atteint 6/10'],
         ],
       },
       exercises: [
@@ -226,7 +226,7 @@ export const SHIN_SPLINTS_FR: Guide = {
         },
         'Si la douleur diminue à l’échauffement et reste supportable, une sortie plus courte ou plus facile, moins souvent, est un juste milieu raisonnable le temps que le tibia s’adapte. Les jours de repos entre les sorties laissent à l’os le temps de répondre à la charge.',
         'La règle des 10\u00A0%, ne pas augmenter son kilométrage hebdomadaire de plus de 10\u00A0%, est un repère souvent cité, mais pas prouvé. Un essai de 2008 sur 532\u00A0coureurs débutants n’a trouvé aucune différence de taux de blessure entre un programme fondé sur cette règle et un programme plus rapide.',
-        'Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. **Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai.** La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la même logique de gestion de la charge.',
+        'Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. **Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
@@ -237,7 +237,7 @@ export const SHIN_SPLINTS_FR: Guide = {
         {
           list: [
             'Un IMC plus élevé.',
-            'Un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge).',
+            'Une chute du naviculaire (navicular drop) plus importante (à quel point la voûte s’aplatit sous la charge).',
             'Le sexe féminin.',
             'Moins d’années de pratique de la course.',
             'Des antécédents de périostite tibiale.',
@@ -288,7 +288,7 @@ export const SHIN_SPLINTS_FR: Guide = {
     },
     {
       q: 'Qu’est-ce qui cause la périostite tibiale chez le coureur\u00A0?',
-      a: 'Deux méta-analyses indépendantes ont trouvé un ensemble cohérent de facteurs de risque\u00A0: un IMC plus élevé, un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge), le sexe féminin, moins d’années de pratique de la course et des antécédents de périostite tibiale. Une étude cas-témoins séparée a montré que les coureurs atteints avaient une endurance du mollet plus faible, ce qui suggère qu’un déficit des fléchisseurs plantaires peut jouer un rôle.',
+      a: 'Deux méta-analyses indépendantes ont trouvé un ensemble cohérent de facteurs de risque\u00A0: un IMC plus élevé, une chute du naviculaire plus importante (à quel point la voûte s’aplatit sous la charge), le sexe féminin, moins d’années de pratique de la course et des antécédents de périostite tibiale. Une étude cas-témoins séparée a montré que les coureurs atteints avaient une endurance du mollet plus faible, ce qui suggère qu’un déficit des fléchisseurs plantaires peut jouer un rôle.',
       cites: [CITE.newman, CITE.hamstraWright, CITE.madeley],
     },
     {
@@ -299,7 +299,7 @@ export const SHIN_SPLINTS_FR: Guide = {
     {
       q: 'Avec quoi confond-on souvent la périostite tibiale\u00A0?',
       cites: [CITE.mtssReview],
-      a: 'Une fracture de fatigue du tibia, un syndrome des loges chronique d’effort et une tendinopathie du tibial postérieur peuvent tous causer une douleur au tibia et être pris pour une périostite tibiale. Une fracture de fatigue fait plutôt mal en un point précis de l’os, tandis que le syndrome des loges donne une tension et des engourdissements qui montent pendant la course et passent peu après l’arrêt. Les deux demandent un professionnel de santé plutôt que plus de charge.',
+      a: 'Une fracture de fatigue du tibia, un syndrome des loges chronique d’effort et une tendinopathie du tibial postérieur peuvent tous causer une douleur au tibia et être pris pour une périostite tibiale. Une fracture de fatigue fait plutôt mal en un point précis de l’os, tandis que le syndrome des loges donne une tension et des engourdissements qui montent pendant la course et passent peu après l’arrêt. Les deux relèvent d’un professionnel de santé, pas d’une charge plus importante.',
     },
     {
       q: 'Peut-on marcher avec une périostite tibiale\u00A0?',

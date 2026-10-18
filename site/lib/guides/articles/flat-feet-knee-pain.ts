@@ -101,7 +101,7 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
         'Whether the knee has swollen, locked, given way, or was hurt in a twist or fall.',
         'How the knee, hip and foot move in a squat or a step-down.',
         'Strength of the hip muscles on the outside and back of the hip, and of the thigh.',
-        'If your flat feet are flexible (the arch comes back when you sit or stand on your toes) or rigid. See [flat feet](/flat-feet/) for the quick check.',
+        'If your flat feet are flexible (the arch comes back when you sit or stand on your toes) or rigid. See [flat feet](/flat-feet/) for the quick check, or the [flat feet test](/flat-feet-test/) for all four home checks.',
         'In older adults, signs of knee osteoarthritis, which may need an X-ray.',
       ],
       cites: [CITE.willyPfpGuideline],

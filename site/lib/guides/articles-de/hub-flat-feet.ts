@@ -26,7 +26,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
   takeaways: [
     'Eine systematische Übersichtsarbeit von 2023 über 12\u00A0Bevölkerungsstudien schätzte die Häufigkeit von Plattfüßen insgesamt auf etwa 15,6\u00A0%, wobei der Wert je nach Altersgruppe, Messmethode und Bevölkerung stark schwankt (Salinas-Torres und Kollegen, 2023).',
     'Die meisten Plattfüße sind flexibel und bestehen ein Leben lang. Ein starrer Plattfuß, der auch angehoben flach bleibt, ist strukturell und verändert sich durch Übungen nicht.',
-    'Die Framingham Foot Study mit rund 1.900 Erwachsenen fand keinen Zusammenhang zwischen flacher Fußhaltung und Schmerzen im unteren Rücken. Sie fand bei Frauen einen kleinen Zusammenhang zwischen einem Fuß, der beim Gehen nach innen rollt, und Rückenschmerzen, bei Männern keinen (Menz und Kollegen, 2013).',
+    'Die Framingham Foot Study mit rund 1.900 Erwachsenen fand keinen Zusammenhang zwischen flacher Fußhaltung und Schmerzen im unteren Rücken. Sie fand bei Frauen einen kleinen Zusammenhang zwischen einem Fuß, der beim Gehen nach innen rollt, und [Rückenschmerzen](/de/plattfuss-rueckenschmerzen/), bei Männern keinen (Menz und Kollegen, 2013).',
     'Ein erworbener Plattfuß im Erwachsenenalter, meist durch eine schwächer werdende Tibialis-posterior-Sehne, kann Schmerzen und eine Schwellung an der Innenseite des Sprunggelenks und ein fortschreitendes Absinken des Gewölbes bringen (Ling und Lui, 2017).',
     'In einer Studie mit 52\u00A0Personen mit flexiblen Plattfüßen veränderten sechs Wochen kombinierter Übungen die Form des Gewölbes stärker als in einer Kontrollgruppe. Die Studie hat die Form des Gewölbes gemessen, nicht Schmerzen (Brijwasi und Borkar, 2023).',
   ],
@@ -51,7 +51,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
         'Bei einem flexiblen Plattfuß flacht das Gewölbe unter deinem Gewicht ab, kommt aber zurück, wenn der Fuß nicht auf dem Boden steht. Die meisten Plattfüße sind von dieser Art. Ein starrer Plattfuß bleibt flach, ob du darauf stehst oder nicht.',
         'Ein schneller Check: Setz dich hin und schau dir die Innenseite deines Fußes an. Wenn du ein Gewölbe siehst, stell dich auf beide Füße. Verschwindet das Gewölbe im Stehen, war aber im Sitzen da, ist der Plattfuß flexibel. Eine andere Möglichkeit: Stell dich auf die Zehenspitzen. Zeigt sich das Gewölbe, wenn du hochkommst, ist er flexibel.',
         '**Der Unterschied ist wichtig, weil Übungen ein flexibles Gewölbe beeinflussen können.** In einer Studie mit 52\u00A0Personen mit flexiblen Plattfüßen veränderten sechs Wochen Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe.',
-        'Ein starrer Plattfuß ist strukturell (oft durch eine tarsale Koalition, eine knöcherne Brücke zwischen Fußknochen), und Übungen verändern seine Form nicht. Ein starrer Plattfuß, der Schmerzen macht, braucht meist die Einschätzung einer medizinischen Fachperson.',
+        'Ein starrer Plattfuß ist strukturell (oft durch eine tarsale Koalition, eine knöcherne Brücke zwischen Fußknochen), und Übungen verändern seine Form nicht. Ein starrer Plattfuß, der Schmerzen macht, braucht meist eine ärztliche Einschätzung.',
       ],
       cites: [CITE.brijwasi],
     },
@@ -89,15 +89,15 @@ export const HUB_FLAT_FEET_DE: Guide = {
             '**Stadium IV:** zusätzliche Veränderungen am Sprunggelenk.',
           ],
         },
-        'Eine systematische Übersichtsarbeit zu Übungen bei Tibialis-posterior-Dysfunktion fand nur begrenzte randomisierte Belege. Sie stellte fest, dass klinische Leitlinien für frühe Stadien (Stadium I und II) eine nicht-operative Behandlung mit Übungen, Orthesen und angepasster Aktivität empfehlen, die Zahl hochwertiger Studien aber klein ist. Spätere Stadien brauchen oft die Einschätzung einer medizinischen Fachperson und können eine Orthese oder eine Operation erfordern.',
-        'Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, mit Schmerzen oder Schwellung an der Innenseite des Sprunggelenks, **geh zu einer medizinischen Fachperson, bevor du ein Übungsprogramm anfängst.** Das ist nicht dasselbe wie ein lebenslanger flexibler Plattfuß.',
+        'Eine systematische Übersichtsarbeit zu Übungen bei Tibialis-posterior-Dysfunktion fand nur begrenzte randomisierte Belege. Sie stellte fest, dass klinische Leitlinien für frühe Stadien (Stadium I und II) eine konservative Behandlung mit Übungen, Orthesen und angepasster Aktivität empfehlen, die Zahl hochwertiger Studien aber klein ist. Spätere Stadien brauchen oft eine ärztliche Einschätzung und können eine Orthese oder eine Operation erfordern.',
+        'Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, mit Schmerzen oder Schwellung an der Innenseite des Sprunggelenks, **lass das zuerst ärztlich abklären, bevor du ein Übungsprogramm anfängst.** Das ist nicht dasselbe wie ein lebenslanger flexibler Plattfuß.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
     {
       h2: 'Welche Beschwerden heißen, dass Plattfüße Beachtung brauchen?',
       paragraphs: [
-        'Die meisten Plattfüße machen keine Beschwerden und brauchen keine medizinische Abklärung. Ein flexibler Plattfuß, der seit der Kindheit besteht und nicht wehtut, ist eine normale Variante der Fußform. Diese Muster solltest du von einer medizinischen Fachperson abklären lassen:',
+        'Die meisten Plattfüße machen keine Beschwerden und brauchen keine medizinische Abklärung. Ein flexibler Plattfuß, der seit der Kindheit besteht und nicht wehtut, ist eine normale Variante der Fußform. Diese Muster solltest du ärztlich abklären lassen:',
       ],
       bullets: [
         'Schmerzen an der Innenseite des Sprunggelenks oder unter dem Gewölbe, die in Ruhe nicht abklingen.',
@@ -114,7 +114,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
       paragraphs: [
         'Stützende Schuhe mit fester Zwischensohle und etwas Gewölbestütze können Stehen und Gehen mit Plattfüßen angenehmer machen. Sie verändern das Gewölbe auf Dauer nicht, aber sie nehmen den Gewölbemuskeln im Laufe des Tages Arbeit ab.',
         'Einlagen von der Stange gibt es überall, und sie sind günstig. Maßeinlagen, nach einem Abdruck deines Fußes gefertigt, kosten mehr und werden manchmal bei Tibialis-posterior-Dysfunktion empfohlen.',
-        'Die Belege für Einlagen speziell bei Plattfüßen sind dünner, als die meisten denken. Bei Plantarfasziitis rät die Leitlinie von 2023 zu Fersenschmerzen davon ab, Einlagen allein als kurzfristige Lösung einzusetzen (B dagegen), gibt einer kombinierten Behandlung mit Einlagen aber ein C.',
+        'Die Belege für Einlagen speziell bei Plattfüßen sind dünner, als die meisten denken. Bei Plantarfasziitis rät die Leitlinie von 2023 zu Fersenschmerzen davon ab, Einlagen allein als kurzfristige Lösung einzusetzen (Empfehlungsgrad B gegen die Anwendung), gibt einer kombinierten Behandlung mit Einlagen aber Grad C.',
         '**Wenn deine Plattfüße nicht wehtun, brauchst du keine besonderen Schuhe.** Wenn Stehen oder Gehen das Gewölbe oder das Sprunggelenk schmerzen lässt, ist ein Schuh mit fester Sohle und leichter Gewölbestütze ein vernünftiger erster Schritt, den du ausprobieren kannst, bevor du mehr Geld für Maßeinlagen ausgibst. Schuhe mit sehr flacher Sohle ohne Halt (dünne Sandalen, ausgetretene Turnschuhe) machen die Ermüdung im Gewölbe an langen Tagen meist schlimmer.',
       ],
       cites: [CITE.guideline],
@@ -122,14 +122,14 @@ export const HUB_FLAT_FEET_DE: Guide = {
     {
       h2: 'Welche Übungen helfen bei Plattfüßen?',
       paragraphs: [
-        'Übungen bei Plattfüßen zielen auf die Muskeln, die das Gewölbe von unten stützen (die kleinen Fußmuskeln), und auf die Muskeln weiter oben, die steuern, wie der Fuß aufsetzt (Wade, Hüfte). Die besten Belege bisher kommen aus einer Studie mit 52\u00A0Personen mit flexiblen Plattfüßen, in der sechs Wochen kombinierter Übungen die Form des Gewölbes stärker veränderten als in einer Kontrollgruppe. Diese Studie umfasste Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen, zusammen gemacht.',
+        'Übungen bei Plattfüßen zielen auf die Muskeln, die das Gewölbe von unten stützen (die [kleinen Fußmuskeln](/de/fuss-kraeftigen-uebungen/)), und auf die Muskeln weiter oben, die steuern, wie der Fuß aufsetzt (Wade, Hüfte). Die besten Belege bisher kommen aus einer Studie mit 52\u00A0Personen mit flexiblen Plattfüßen, in der sechs Wochen kombinierter Übungen die Form des Gewölbes stärker veränderten als in einer Kontrollgruppe. Diese Studie umfasste Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen, zusammen gemacht.',
         'Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein war weniger ermutigend: Sie fand insgesamt keine klare Veränderung, und eine Verbesserung bei einem Gewölbemaß nur in Programmen über sechs Wochen. Die Schlussfolgerung: **Ein kombiniertes Programm funktioniert besser als eine einzelne Übung, und Geduld zählt.**',
         '[Plattfuß-Übungen](/de/plattfuss-uebungen/) hat die vollständige Übungsliste, die Dosis, was du jeweils spüren solltest und die Belege hinter jeder Übung. Walkito baut einen Wochenplan rund um das Ziel Gewölbehalten, vom kurzen Fuß im Sitzen über die Varianten im Stehen und auf einem Bein, dann kommen Widerstandsband und Hüftkräftigung dazu. Eigene Übungsseiten gehen tiefer:',
       ],
       bullets: [
         'Die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) trainiert das Gewölbe, sich zu heben, ohne die Zehen einzukrallen.',
         'Das [Handtuchgreifen](/de/uebungen/handtuchgreifen/) weckt die kleinen Muskeln unter dem Gewölbe.',
-        'Das [Zehenspreizen](/de/uebungen/zehen-spreizen/) trainiert die Muskeln zwischen den Zehen, die sich die Last mit dem Gewölbe teilen.',
+        'Das [Zehenspreizen](/de/uebungen/zehen-spreizen/) trainiert die [Muskeln zwischen den Zehen](/de/zehen-kraeftigen-uebungen/), die sich die Last mit dem Gewölbe teilen.',
         'Das [Einwärtsdrehen mit Band](/de/uebungen/einwaertsdrehen-mit-band/) kräftigt den Tibialis posterior, denselben Muskel, der beim erworbenen Plattfuß im Erwachsenenalter betroffen ist.',
       ],
       cites: [CITE.brijwasi, CITE.cheng],
@@ -140,7 +140,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
         'Plattfüße können sich mit anderen Fußproblemen überschneiden, vor allem bei langem Stehen oder Gehen. Wenn der Schmerz nahe der Ferse sitzt und dem Morgenmuster folgt (stechend bei den ersten Schritten, nach ein paar Minuten besser), passt das eher zu einer Plantarfasziitis. Einen vollständigen Überblick gibt [Plantarfasziitis](/de/plantarfasziitis/).',
       ],
       bullets: [
-        '[Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) können von zu viel Last auf dem Vorfuß kommen, wenn das Gewölbe tief liegt. Eine verkürzte Wade verlagert das Gewicht nach vorn.',
+        '[Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) können von zu viel Last auf dem Vorfuß kommen, wenn das Gewölbe tief liegt. Eine [verkürzte Wade](/de/verspannte-waden/) verlagert das Gewicht nach vorn.',
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe, die helfen, wenn nach einem langen Tag auf hartem Boden das Gewölbe schmerzt.',
         '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf die Belastung von 12-Stunden-Schichten ein.',
       ],
@@ -168,11 +168,11 @@ export const HUB_FLAT_FEET_DE: Guide = {
     {
       q: 'Was verursacht Plattfüße bei Erwachsenen?',
       cites: [CITE.ling],
-      a: 'Die meisten Plattfüße bei Erwachsenen bestehen ein Leben lang und sind einfach so gewachsen. Wenn ein zuvor normales Gewölbe im Erwachsenenalter absinkt, ist die häufigste Ursache eine Tibialis-posterior-Dysfunktion: Die Sehne an der Innenseite des Sprunggelenks wird schwächer, das Gewölbe sinkt ab, und Schmerzen oder Schwellung können folgen (Ling und Lui, 2017). Weitere Ursachen sind Verletzungen, entzündliche Gelenkerkrankungen und Nervenerkrankungen.',
+      a: 'Die meisten Plattfüße bei Erwachsenen bestehen ein Leben lang und sind einfach so gewachsen. Wenn ein zuvor normales Gewölbe im Erwachsenenalter absinkt, ist die häufigste Ursache eine [Tibialis-posterior-Dysfunktion](/de/tibialis-posterior-insuffizienz/): Die Sehne an der Innenseite des Sprunggelenks wird schwächer, das Gewölbe sinkt ab, und Schmerzen oder Schwellung können folgen (Ling und Lui, 2017). Weitere Ursachen sind Verletzungen, entzündliche Gelenkerkrankungen und Nervenerkrankungen.',
     },
     {
       q: 'Können Plattfüße Knie- oder Hüftschmerzen verursachen?',
-      a: 'Ein tiefes Gewölbe verändert, wie die Kraft durch das Bein nach oben läuft, und manche Menschen mit stark pronierten Füßen bekommen Überlastungsbeschwerden an Knie, Schienbein oder Hüfte. Der Zusammenhang ist aber schwächer, als oft angenommen wird. Viele Menschen mit Plattfüßen haben keine Knie- oder Hüftprobleme. Wenn du beides hast, kann eine medizinische Fachperson prüfen, ob es bei dir zusammenhängt.',
+      a: 'Ein tiefes Gewölbe verändert, wie die Kraft durch das Bein nach oben läuft, und manche Menschen mit stark pronierten Füßen bekommen Überlastungsbeschwerden an Knie, Schienbein oder Hüfte. Der Zusammenhang ist aber schwächer, als oft angenommen wird. Viele Menschen mit Plattfüßen haben keine Knie- oder Hüftprobleme. Wenn du beides hast, kann eine Ärztin oder ein Arzt prüfen, ob es bei dir zusammenhängt.',
     },
     {
       q: 'Wachsen sich Plattfüße bei Kindern aus?',
@@ -182,16 +182,16 @@ export const HUB_FLAT_FEET_DE: Guide = {
     {
       q: 'Sollte ich bei Plattfüßen Einlagen tragen?',
       cites: [CITE.guideline],
-      a: 'Wenn deine Plattfüße nicht wehtun, sind Einlagen freiwillig. Wenn Stehen oder Gehen das Gewölbe schmerzen lässt, ist ein Schuh mit fester Sohle und leichter Gewölbestütze ein vernünftiger erster Schritt. Maßeinlagen werden manchmal bei Tibialis-posterior-Dysfunktion eingesetzt, aber die Belege für Einlagen bei Plattfüßen allein sind begrenzt. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen als alleinige Option mit B dagegen.',
+      a: 'Wenn deine Plattfüße nicht wehtun, sind Einlagen freiwillig. Wenn Stehen oder Gehen das Gewölbe schmerzen lässt, ist ein Schuh mit fester Sohle und leichter Gewölbestütze ein vernünftiger erster Schritt. Maßeinlagen werden manchmal bei Tibialis-posterior-Dysfunktion eingesetzt, aber die Belege für [Einlagen](/de/einlagen-oder-uebungen/) bei Plattfüßen allein sind begrenzt. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen als alleinige Option mit Empfehlungsgrad B gegen die Anwendung.',
     },
     {
       q: 'Was ist ein erworbener Plattfuß im Erwachsenenalter?',
       cites: [CITE.ling, CITE.posteriorTibialReview],
-      a: 'Ein erworbener Plattfuß im Erwachsenenalter ist ein fortschreitendes Absinken des Gewölbes, meist weil die Tibialis-posterior-Sehne schwächer wird (Ling und Lui, 2017). Er bringt Schmerzen und Schwellung an der Innenseite des Sprunggelenks, Schwierigkeiten, auf einem Fuß auf die Zehen hochzukommen, und eine nach außen kippende Ferse. Klinische Leitlinien empfehlen für frühe Stadien eine nicht-operative Behandlung, hochwertige Studien sind aber rar (Ross und Kollegen, 2018).',
+      a: 'Ein erworbener Plattfuß im Erwachsenenalter ist ein fortschreitendes Absinken des Gewölbes, meist weil die Tibialis-posterior-Sehne schwächer wird (Ling und Lui, 2017). Er bringt Schmerzen und Schwellung an der Innenseite des Sprunggelenks, Schwierigkeiten, auf einem Fuß auf die Zehen hochzukommen, und eine nach außen kippende Ferse. Klinische Leitlinien empfehlen für frühe Stadien eine konservative Behandlung, hochwertige Studien sind aber rar (Ross und Kollegen, 2018).',
     },
     {
       q: 'Kann ich mit Plattfüßen joggen?',
-      a: 'Viele Läuferinnen und Läufer haben Plattfüße und laufen ohne Probleme. Ein tiefes Gewölbe kann die Pronation verstärken, was manche mit Stabilitätsschuhen ausgleichen. Wenn Laufen Schmerzen im Gewölbe, im Sprunggelenk oder im Knie macht, die zwischen den Läufen nicht abklingen, kann eine medizinische Fachperson prüfen, ob der Plattfuß mitspielt. Gewölbe- und Hüftmuskeln zu kräftigen ist ein vernünftiger Ansatz, ob du die Schuhe wechselst oder nicht.',
+      a: 'Viele Läuferinnen und Läufer haben Plattfüße und laufen ohne Probleme. Ein tiefes Gewölbe kann die Pronation verstärken, was manche mit Stabilitätsschuhen ausgleichen. Wenn Laufen Schmerzen im Gewölbe, im Sprunggelenk oder im Knie macht, die zwischen den Läufen nicht abklingen, kann eine Ärztin oder ein Arzt prüfen, ob der Plattfuß mitspielt. Gewölbe- und Hüftmuskeln zu kräftigen ist ein vernünftiger Ansatz, ob du die Schuhe wechselst oder nicht.',
     },
     {
       q: 'Gilt ein Plattfuß als Behinderung?',
@@ -204,7 +204,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'sich ein Gewölbe im Erwachsenenalter plötzlich abgeflacht hat',
       'du Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks hast',
@@ -222,7 +222,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
     text: 'Du musst nicht selbst entscheiden, welche Gewölbeübungen du machst oder wann du zur schwereren Variante wechselst. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei einem flexiblen Plattfuß ist dieses Ziel das Gewölbehalten: dein Gewölbe 60\u00A0Sekunden oben halten. Wenn du auch Fersenschmerzen hast, kommen schmerzfreie Morgen zuerst.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das erste Ziel erreicht ist) prüft ein kurzer Test Gewölbehalten, Wadenausdauer und Gleichgewicht. Das Gewölbeziel bleibt im Plan, bis du es erreichst, egal wie viele Wochen das dauert.',
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn ein Gewölbe im Erwachsenenalter mit Schmerzen oder Schwellung abgesunken ist, geh zu einer medizinischen Fachperson, bevor du anfängst.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn ein Gewölbe im Erwachsenenalter mit Schmerzen oder Schwellung abgesunken ist, lass das zuerst ärztlich abklären, bevor du anfängst.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

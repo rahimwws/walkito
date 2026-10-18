@@ -119,7 +119,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
     {
       q: 'Hilft Großzehenheben bei Plantarfasziitis?',
       cites: [CITE.guideline],
-      a: 'Das Großzehenheben gehört nicht zur wichtigsten Leitlinie bei Plantarfasziitis, die sich auf Dehnen und Fersenheben mit Last konzentriert. Als Teil eines umfassenderen Programms kann es helfen, indem es die Kontrolle über den Windlass-Mechanismus verbessert. Die wichtigsten Übungen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+      a: 'Das Großzehenheben gehört nicht zur wichtigsten Leitlinie bei [Plantarfasziitis](/de/plantarfasziitis/), die sich auf Dehnen und Fersenheben mit Last konzentriert. Als Teil eines umfassenderen Programms kann es helfen, indem es die Kontrolle über den Windlass-Mechanismus verbessert. Die wichtigsten Übungen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
     },
     {
       q: 'Sollte ich Großzehenheben oder die Kurzer-Fuß-Übung machen?',
@@ -128,7 +128,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'das Großzehengrundgelenk steif ist und beim Beugen schmerzt, was auf einen Hallux rigidus hindeuten kann',
       'du Taubheit oder Gefühlsverlust im großen Zeh hast',

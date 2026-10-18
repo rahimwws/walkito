@@ -58,7 +58,7 @@ export const FLAT_FEET_ES: Guide = {
   h1: 'Ejercicios para el pie plano y el dolor en el arco',
   lede: 'En la tarde sientes los pies cansados y te duelen los arcos. Cuando te paras, los pies parecen irse hacia adentro y los arcos se hunden hacia el piso. Quizá te han dicho que el pie plano es tu forma de ser y que no vale la pena pensarlo dos veces. Tiene sentido querer hacer algo, y hay investigación real sobre cómo entrenar el arco.',
   intro: [
-    'Empieza con una prueba: fíjate si tu pie plano es flexible, es decir, si el arco vuelve cuando levantas el pie. En pie plano flexible, un ensayo con 52\u00A0personas encontró que seis semanas de ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos, cambiaron la forma del arco más que en un grupo de control.',
+    'Empieza con [una prueba](/es/test-pie-plano/): fíjate si tu pie plano es flexible, es decir, si el arco vuelve cuando levantas el pie. En pie plano flexible, un ensayo con 52\u00A0personas encontró que seis semanas de ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos, cambiaron la forma del arco más que en un grupo de control.',
     'La evidencia sobre el pie corto por sí solo es más escasa. Una revisión de 2024 no encontró un cambio claro en general, y solo vio un cambio en una medida del arco en programas de más de seis semanas. Los dos estudios midieron la forma del arco, no el dolor. Si el dolor está cerca del talón, la investigación sobre el dolor de talón es la mejor guía.',
   ],
   takeaways: [
@@ -289,7 +289,7 @@ export const FLAT_FEET_ES: Guide = {
     bullets: [...RED_FLAGS.bullets, 'el arco sigue plano cuando el pie no toca el piso'],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba ${PROGRAM.goals.archHoldSeconds}\u00A0segundos. Si además tienes dolor, primero van las mañanas más fáciles.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio, así puedes ver si el trabajo del arco está sirviendo de algo.`,
@@ -307,9 +307,9 @@ export const HEEL_PAIN_ES: Guide = {
   mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-10-16',
-  title: '8 ejercicios para fascitis plantar y dolor de talón',
+  title: 'Ejercicios para la fascitis plantar en casa, con dosis',
   description:
-    'Ocho ejercicios y estiramientos para la fascitis plantar que puedes hacer en casa, con dosis, qué evitar, cuándo estirar y grados de la guía de 2023.',
+    'Ocho ejercicios y estiramientos para la fascitis plantar y el dolor de talón que puedes hacer en casa: dosis, qué evitar y los grados de la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',
   lede: 'Los ejercicios para la fascitis plantar con mejor evidencia son los estiramientos de la fascia plantar y de la pantorrilla, con grado A, el más alto de la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado B. Abajo tienes ocho, con sus dosis, y todos se hacen en casa. Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.',
   intro: [
@@ -521,7 +521,7 @@ export const HEEL_PAIN_ES: Guide = {
       paragraphs: [
         'Los zapatos con soporte ayudan, pero las plantillas por sí solas no alcanzan para la mayoría de las personas. La guía de 2023 califica las ortesis (plantillas y soportes de arco) como opción independiente con **B en contra**, lo que significa que la evidencia dice que no debes depender solo de ellas. Combinadas con estiramiento y trabajo de fuerza, las ortesis reciben una **C**.',
         'Las férulas nocturnas, usadas mientras duermes de 1 a 3\u00A0meses, reciben el grado más alto de la guía, **A**, en personas que siguen con dolor en los primeros pasos de cada mañana. Mantienen el tobillo en ángulo recto para que la fascia plantar no se acorte durante la noche. Pregúntale a un profesional de la salud si vale la pena probarlas.',
-        'La guía no califica tipos específicos de zapatos, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Los zapatos con soporte de arco y contrafuerte firme comparten parte de la carga que la fascia plantar cargaría sola. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Quienes trabajan por turnos pueden empezar en [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/).',
+        'La guía no califica tipos específicos de zapatos, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Los zapatos con soporte de arco y contrafuerte firme comparten parte de la carga que la fascia plantar cargaría sola. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Quienes trabajan por turnos pueden empezar en [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/), y también hay páginas para [maestros](/es/dolor-de-pies-docentes/), [tiendas y almacenes](/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](/es/dolor-de-pies-cocineros/) y [estilistas](/es/dolor-de-pies-peluqueros/).',
       ],
       cites: [CITE.guideline],
     },
@@ -611,7 +611,7 @@ export const HEEL_PAIN_ES: Guide = {
   ],
   redFlags: RED_FLAGS,
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuánto tiempo quedarte en cada ejercicio. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante ${PROGRAM.painFreeDays}\u00A0días seguidos.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas esa meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver qué está cambiando.`,

@@ -196,7 +196,7 @@ export const STANDING_DESK_ES: Guide = {
         },
         'Escucha a tus pies y a tu espalda baja. Si la molestia va creciendo, siéntate antes en lugar de aguantar.',
         'Pon un tapete desde el principio si tienes uno. Usa zapatos con algo de amortiguación, incluso en casa. Haz los estiramientos de pantorrilla de la tabla de arriba al menos una vez al día.',
-        'Si ya te duelen los pies por estar de pie y quieres la guía más amplia, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explica en qué se cruzan el dolor por escritorio de pie y problemas como la fascitis plantar. Para la versión para enfermeras, mira [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/).',
+        'Si ya te duelen los pies por estar de pie y quieres la guía más amplia, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explica en qué se cruzan el dolor por escritorio de pie y problemas como la fascitis plantar. Para la versión para enfermeras, mira [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/). También hay páginas para [maestros](/es/dolor-de-pies-docentes/), [tiendas y almacenes](/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](/es/dolor-de-pies-cocineros/) y [estilistas](/es/dolor-de-pies-peluqueros/).',
       ],
       cites: [CITE.buckley],
     },
@@ -266,7 +266,7 @@ export const STANDING_DESK_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text:
       'No tienes que decidir el orden, las dosis ni cuándo avanzar. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor por escritorio de pie sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14\u00A0días seguidos.',
     more: [

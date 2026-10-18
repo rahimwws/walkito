@@ -53,7 +53,7 @@ export const PTTD_ES: Guide = {
         '**Etapa IV** agrega la afectación de la articulación del tobillo. El tobillo se inclina en valgo, es decir, se va hacia afuera. Es la etapa más avanzada y normalmente requiere intervención quirúrgica.',
           ],
         },
-        '**La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II.** Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una herramienta rápida: si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
+        '**La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II.** Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una [herramienta rápida](/es/test-pie-plano/): si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -230,7 +230,7 @@ export const PTTD_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito incluye inversión con banda, pie corto y elevaciones de talón en su biblioteca de ejercicios, y los programa en días de fuerza como parte de un plan de arco y equilibrio. Cuando marcas la cara interna del tobillo o el arco en el mapa de dolor durante un check-in, la sesión se ajusta en torno a esa información. La app está construida para la fascitis plantar y el pie plano. La DTTP se superpone con los dos, pero la app no diagnostica DTTP y no reemplaza las ortesis ni la clasificación clínica.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio, para que veas qué está cambiando. Si te han diagnosticado DTTP, usa la app junto con ortesis y confirma con tu profesional de la salud que la etapa es adecuada para el ejercicio.',

@@ -17,7 +17,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     'Fersenheben mit Handtuch nach dem Rathleff-Protokoll bei Plantarfasziitis: Sätze, Wiederholungen, Tempo, das Handtuch unter den Zehen und typische Fehler.',
   h1: 'Fersenheben mit Handtuch: das Rathleff-Protokoll mit hoher Last, Schritt für Schritt',
   lede:
-    'Das Fersenheben mit Handtuch ist ein einbeiniges Fersenheben auf einer Stufe mit einem zusammengerollten Handtuch unter den Zehen. Es stammt aus einer Studie von 2015 mit 48\u00A0Personen mit Plantarfasziitis, in der diese Übung Fersenschmerzen über drei Monate schneller linderte als Dehnen allein. Das Handtuch macht den Unterschied zum normalen Wadenheben: Es bezieht die Plantarfaszie über den Windlass-Mechanismus mit ein.',
+    'Das Fersenheben mit Handtuch ist ein einbeiniges Fersenheben auf einer Stufe mit einem zusammengerollten Handtuch unter den Zehen. Es stammt aus einer Studie von 2015 mit 48\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/), in der diese Übung Fersenschmerzen über drei Monate schneller linderte als Dehnen allein. Das Handtuch macht den Unterschied zum normalen Fersenheben: Es bezieht die Plantarfaszie über den Windlass-Mechanismus mit ein.',
   takeaways: [
     'In einer Studie mit 48\u00A0Personen schnitt Fersenheben mit Handtuch und Zusatzgewicht nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
     'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Krafttraining mit B, eine Stufe unter dem Dehnen mit A, und empfiehlt beides (Koc und Kollegen, 2023).',
@@ -54,7 +54,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
           name: 'Fersenheben mit Handtuch',
           evidence: {
             level: 'strong',
-            why: 'Die Übung aus der einzigen randomisierten Studie zu Fersenheben bei Plantarfasziitis (Rathleff 2015). Bewertung B der Leitlinie.',
+            why: 'Die Übung aus der einzigen randomisierten Studie zu Fersenheben bei Plantarfasziitis (Rathleff 2015). Empfehlungsgrad B der Leitlinie.',
           },
           dose: 'Walkito beginnt mit 3 x 12, jedes Bein. Studienprotokoll: 3 x 12RM, gesteigert auf 5 x 8RM',
           how: 'Stell dich mit einem Fuß auf eine Stufe, ein zusammengerolltes Handtuch liegt unter den Zehen. Drei Sekunden hoch, zwei Sekunden halten, drei Sekunden runter. Nimm Gewicht dazu, wenn die letzte Wiederholung nicht mehr schwer ist.',
@@ -95,7 +95,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     {
       h2: 'Leichtere und schwerere Varianten',
       paragraphs: [
-        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Wadenkette zurück:',
+        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Stufenfolge zurück:',
         {
           list: [
             '[Fersenheben im Sitzen](/de/uebungen/fersenheben/) hat die geringste Last.',
@@ -113,7 +113,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen mit bestätigter Plantarfasziitis schnitt das Fersenheben mit Handtuch nach drei Monaten im Foot Function Index besser ab, nach zwölf Monaten waren die Ergebnisse aber ähnlich wie bei Dehnen allein (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Die Rathleff-Studie von 2015 ist die einzige randomisierte Studie, die das Fersenheben mit Handtuch gezielt bei Plantarfasziitis getestet hat. Bei 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte. Nach zwölf Monaten lagen beide Gruppen gleichauf.',
-        'Die Leitlinie von 2023 zu Fersenschmerzen hat diese und andere Belege geprüft und Krafttraining die Bewertung **B** gegeben, Dehnen die Bewertung **A**. Beides wird empfohlen. Die Leitlinie hebt die Variante mit Handtuch nicht eigens hervor, aber sie ist die einzige Kraftübung, die in einer eigenen Studie zur Plantarfasziitis getestet wurde.',
+        'Die Leitlinie von 2023 zu Fersenschmerzen hat diese und andere Belege geprüft und Krafttraining den Empfehlungsgrad **B** gegeben, Dehnen den Empfehlungsgrad **A**. Beides wird empfohlen. Die Leitlinie hebt die Variante mit Handtuch nicht eigens hervor, aber sie ist die einzige Kraftübung, die in einer eigenen Studie zur Plantarfasziitis getestet wurde.',
         'Nichts in der Studienlage sagt, dass diese Übung das Dehnen ersetzen sollte. **Am stärksten ist beides:** eine [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) gegen die Steifigkeit am Morgen und das Fersenheben mit Last, um Kapazität aufzubauen. Die ganze Liste der Übungen und wie sie zusammenpassen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       sourceNote:
@@ -124,7 +124,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       h2: 'Für wen ist das Fersenheben mit Handtuch?',
       paragraphs: [
         'Für alle mit Plantarfasziitis, die genug Wadenkraft für ein einbeiniges Fersenheben auf einer Stufe haben. Die Studie nahm Erwachsene auf, deren Schmerz seit mindestens drei Monaten bestand und die Belastung vertrugen.',
-        'Wenn dein Schmerz frisch ist und du nicht bequem auf einem Bein stehen kannst, fang weiter unten auf der Leiter an: zuerst Fersenheben im Sitzen oder beidbeinig. Wenn dein Schmerz in der Achillessehne sitzt und nicht in der Plantarfaszie, ist der Ansatz mit Belastung ähnlich, aber das Handtuch wird nicht benutzt und das Protokoll ist anders. Für diesen Weg lies [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) oder [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+        'Wenn dein Schmerz frisch ist und du nicht bequem auf einem Bein stehen kannst, fang weiter unten in der Stufenfolge an: zuerst Fersenheben im Sitzen oder beidbeinig. Wenn dein Schmerz in der Achillessehne sitzt und nicht in der Plantarfaszie, ist der Ansatz mit Belastung ähnlich, aber das Handtuch wird nicht benutzt und das Protokoll ist anders. Für diesen Weg lies [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) oder [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
       cites: [CITE.rathleff],
     },
@@ -156,7 +156,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einem plötzlichen Knall oder einer Verletzung angefangen hat, statt sich nach und nach aufzubauen',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -167,7 +167,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Das Fersenheben mit Handtuch ist eine Stufe in einer Wadenkette, die Walkito in einen Wochenplan einbaut. Die Kette reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und schließlich zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
+    text: 'Das Fersenheben mit Handtuch ist eine Stufe in einer Stufenfolge, die Walkito in einen Wochenplan einbaut. Die Kette reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und schließlich zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm, kein Werkzeug für Diagnosen.',
     ],

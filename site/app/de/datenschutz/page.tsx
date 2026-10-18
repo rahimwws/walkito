@@ -127,7 +127,7 @@ export default function DatenschutzDe() {
             Morgendehnung gemacht hast.
           </li>
           <li>
-            <b>Deine Testergebnisse:</b> Wadenheben, Gewölbehalten und
+            <b>Deine Testergebnisse:</b> Fersenheben, Gewölbehalten und
             Gleichgewicht, links und rechts.
           </li>
           <li>
@@ -463,7 +463,7 @@ export default function DatenschutzDe() {
         <h2>Keine medizinische Beratung</h2>
         <p>
           Walkito ist ein Übungsprogramm bei Fersen- und Fußschmerzen. Es stellt
-          keine Diagnose und ersetzt keine medizinische Fachperson.
+          keine Diagnose und ersetzt keinen Arztbesuch.
         </p>
 
         <h2>Änderungen</h2>

@@ -177,7 +177,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan que incluye el pie corto en una progresión de tres pasos: sentado, de pie y a una pierna. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles. Eliges sesiones de 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días mide si el tiempo que mantienes el arco está mejorando.',
     cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },

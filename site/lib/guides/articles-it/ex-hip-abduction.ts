@@ -69,7 +69,7 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
             'Questa rotazione costringe il piede a pronare, ruotando la caviglia verso l’interno e appiattendo l’arco.',
           ],
         },
-        'Per questo molte persone con piede piatto o dolore all’arco hanno anche le anche deboli. L’arco non sta cedendo da solo. **Viene sovraccaricato dall’alto.** Rinforzare l’anca riduce questo carico che arriva dall’alto.',
+        'Per questo molte persone con [piede piatto](/it/piede-piatto/) o dolore all’arco hanno anche le anche deboli. L’arco non sta cedendo da solo. **Viene sovraccaricato dall’alto.** Rinforzare l’anca riduce questo carico che arriva dall’alto.',
         'Uno studio trasversale del 2013 del Framingham Foot Study ha esaminato circa 1.900\u00A0adulti della popolazione generale. La postura a piede piatto in sé non era legata al mal di schiena, ma un piede che ruotava verso l’interno durante il cammino mostrava un piccolo legame con il mal di schiena nelle donne, segno che la catena piede-anca-schiena può funzionare in entrambe le direzioni.',
         'Lo studio sul piede piatto di Brijwasi e colleghi (2023) includeva il rinforzo dell’anca insieme agli esercizi del piede corto, al lavoro sulla caviglia e agli allungamenti. Il programma combinato ha migliorato la forma dell’arco in sei settimane. Lo studio non ha separato quanto abbia contribuito da solo il rinforzo dell’anca, ma la sua inclusione riflette il ragionamento biomeccanico.',
       ],
@@ -79,7 +79,7 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
       h2: 'A chi serve l’abduzione dell’anca per il dolore al piede?',
       paragraphs: [
         'Chi ha il piede piatto o una pronazione eccessiva ne trae beneficio, perché l’esercizio affronta una causa comune, a monte, del cedimento dell’arco. Se le ginocchia tendono a cadere verso l’interno quando ti accovacci o cammini, è probabile che gli abduttori dell’anca deboli contribuiscano.',
-        'Chi corre ne trae beneficio perché la corsa si fa sempre in appoggio su una gamba. Ogni falcata atterra su un piede. Un medio gluteo debole da quel lato lascia ruotare verso l’interno ginocchio e piede, e questo può contribuire a periostite tibiale, fascite plantare e dolore al ginocchio del corridore. Per approfondire, vedi [dolore al tallone quando corri](/heel-pain-runners/) (in inglese) e [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
+        'Chi corre ne trae beneficio perché la corsa si fa sempre in appoggio su una gamba. Ogni falcata atterra su un piede. Un medio gluteo debole da quel lato lascia ruotare verso l’interno ginocchio e piede, e questo può contribuire a periostite tibiale, [fascite plantare](/it/fascite-plantare/) e dolore al ginocchio del corridore. Per approfondire, vedi gli [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
         'Anche chi sta in piedi per tante ore, soprattutto infermieri e commessi, può trarne beneficio. Stare a lungo in piedi affatica il medio gluteo, e a fine turno il controllo dell’anca si indebolisce. Vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) per gli esercizi da abbinare all’abduzione dell’anca.',
       ],
     },
@@ -149,7 +149,7 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito aggiunge l’abduzione dell’anca nei giorni di forza quando nel tuo piano entra un obiettivo di equilibrio tra sinistra e destra. Sta insieme agli esercizi per i muscoli intrinseci del piede e al lavoro sul polpaccio, così l’arco riceve sostegno dall’alto e dal basso. Le sessioni durano 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue i progressi.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

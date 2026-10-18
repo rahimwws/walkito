@@ -32,10 +32,10 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
       h2: 'I plantari aiutano la fascite plantare?',
       keyFact: 'In una revisione di 19\u00A0studi con 1.660\u00A0persone, i plantari alleviavano il dolore al tallone più dei finti plantari solo nel medio termine, e plantari su misura e prefabbricati non differivano in nessun momento (Whittaker e colleghi, 2018).',
       paragraphs: [
-        'Un po’, per un certo periodo. La fascite plantare è un’irritazione della fascia plantare, la banda di tessuto sotto l’arco. Il test equo confronta un plantare vero con uno **finto**: una soletta piatta e morbida che sembra vera ma non dà alcun sostegno.',
+        'Un po’, per un certo periodo. La [fascite plantare](/it/fascite-plantare/) è un’irritazione della fascia plantare, la banda di tessuto sotto l’arco. Il test equo confronta un plantare vero con uno **finto**: una soletta piatta e morbida che sembra vera ma non dà alcun sostegno.',
         'In uno studio su 135\u00A0persone, sia un plantare prefabbricato sia uno su misura hanno migliorato la funzione di circa 8\u00A0punti su una scala da 0 a 100 rispetto a un finto plantare a tre mesi (Landorf e colleghi, 2006). La differenza sul dolore era di dimensioni simili ma non statisticamente chiara. A dodici mesi, nessun gruppo era diverso dagli altri.',
         'Una revisione sistematica ha messo insieme 19\u00A0studi randomizzati con 1.660\u00A0persone (Whittaker e colleghi, 2018). Nel medio termine, più o meno il secondo e il terzo mese, i plantari alleviavano il dolore più di un finto plantare, con prove di qualità moderata. L’effetto era piccolo, e gli autori hanno scritto che è «incerto che sia un cambiamento importante dal punto di vista clinico». Nel breve e nel lungo termine non c’era un beneficio chiaro.',
-        'La linea guida del 2023 sul dolore al tallone la legge allo stesso modo: **non** i plantari da soli per un sollievo a breve termine (grado B contro), ma **si possono** usare insieme ad altre terapie (grado C).',
+        'La linea guida del 2023 sul dolore al tallone la legge allo stesso modo: **non** i plantari da soli per un sollievo a breve termine (grado B a sfavore), ma **si possono** usare insieme ad altre terapie (grado C).',
       ],
       figure: {
         id: 'plantar-fascia',
@@ -126,7 +126,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
       h2: 'I plantari indeboliscono i piedi?',
       paragraphs: [
         '**Forse un po’.** In uno studio su 18\u00A0giovani adulti con piede piatto, tre piccoli muscoli interni del piede si sono ridotti tra il 9,6 e il 17,4% dopo tre mesi di plantari su misura (Protopapas e Perry, 2020). I gruppi non erano randomizzati e lo studio era piccolo, quindi leggilo come un segnale, non come un fatto assodato.',
-        'L’esercizio sembra compensarlo. In uno studio randomizzato su 28\u00A0persone con piede piatto, tutti hanno portato plantari per due mesi e metà ha fatto anche l’esercizio del piede corto (Jung e colleghi, 2011). Il muscolo lungo l’arco interno è cresciuto in entrambi i gruppi, ma di più con l’esercizio, e anche la forza dell’alluce è aumentata di più. Se porti i plantari tutto il giorno, fai lavorare il piede con qualche minuto di [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
+        'L’esercizio sembra compensarlo. In uno studio randomizzato su 28\u00A0persone con piede piatto, tutti hanno portato plantari per due mesi e metà ha fatto anche l’[esercizio del piede corto](/it/esercizi/piede-corto/) (Jung e colleghi, 2011). Il muscolo lungo l’arco interno è cresciuto in entrambi i gruppi, ma di più con l’esercizio, e anche la forza dell’alluce è aumentata di più. Se porti i plantari tutto il giorno, fai lavorare il piede con qualche minuto di [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
     },
@@ -138,7 +138,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
         rows: [
           ['Come funzionano', 'Cambiano il carico sul piede finché li indossi', 'Cambiano il tessuto, così regge più carico'],
           ['Prove per il dolore al tallone', 'Piccolo beneficio nel medio termine rispetto al finto plantare; nessuno a dodici mesi', 'Stretching grado **A**, rinforzo grado **B**'],
-          ['Grado della linea guida per il dolore al tallone', '**B contro** da soli; **C** con altre terapie', 'Base della gestione di prima scelta'],
+          ['Grado della linea guida per il dolore al tallone', '**B a sfavore** da soli; **C** con altre terapie', 'Base della gestione di prima scelta'],
           ['Su misura o da banco', 'Nessuna differenza negli studi', 'Nessuna attrezzatura necessaria'],
           ['Prove per il piede piatto', 'Prove di basso livello per il dolore', 'Piccoli studi mostrano cambiamenti dell’arco; pochi dati sul dolore'],
           ['Costo', 'Basso per i prefabbricati, molto più alto per quelli su misura', 'Gratis'],
@@ -210,7 +210,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
   },
   program: {
     h2: 'Fare gli esercizi come un piano',
-    text: 'Un plantare lo metti nella scarpa una volta. L’esercizio funziona solo se lo continui. Walkito costruisce un piano una settimana alla volta per il dolore al tallone o il piede piatto, partendo da allungamenti come quello della fascia plantare (2\u00A0tenute da 30\u00A0secondi) e lavoro sull’arco come il piede corto (3\u00A0serie da 8 tenendo 5\u00A0secondi), poi fa salire il tuo esercizio principale quando lo giudichi facile due volte di fila e il dolore del mattino resta stabile.',
+    text: 'Un plantare lo metti nella scarpa una volta. L’esercizio funziona solo se lo continui. Walkito costruisce un piano una settimana alla volta per il dolore al tallone o il piede piatto, partendo da allungamenti come [quello della fascia plantare](/it/esercizi/stretching-fascia-plantare/) (2\u00A0tenute da 30\u00A0secondi) e lavoro sull’arco come il piede corto (3\u00A0serie da 8 tenendo 5\u00A0secondi), poi fa salire il tuo esercizio principale quando lo giudichi facile due volte di fila e il dolore del mattino resta stabile.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni (poi ogni 28 quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi per adulti. Non fa diagnosi, non sostituisce un professionista sanitario e si può usare senza problemi insieme a un plantare.',
     ],

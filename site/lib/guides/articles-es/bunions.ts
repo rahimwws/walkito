@@ -193,7 +193,7 @@ export const BUNIONS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text:
       'Walkito incluye [separación de dedos](/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para juanetes, pero el ejercicio de separación de dedos es el mismo movimiento probado en el ensayo de Kim de 2015 para hallux valgus. Si quieres una forma estructurada de crear el hábito, las sesiones de 3 o 5\u00A0minutos, en los días de la semana que tú elijas, mantienen los ejercicios constantes.',
     more: [

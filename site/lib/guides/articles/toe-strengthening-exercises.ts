@@ -201,7 +201,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
     {
       h2: 'Do toe strengthening exercises actually work?',
       keyFact:
-        'In a trial of 118 recreational runners, those who did not do the foot program were 2.42 times as likely to be injured over a year (Taddei and colleagues, 2020).',
+        'In a trial of 118 recreational runners, those who did not do the foot program were 2.42 times as likely to be injured over a year (Taddei and colleagues, 2020). The routine for runners is in [foot exercises for runners](/foot-exercises-for-runners/).',
       paragraphs: [
         'Toe strengthening exercises can build toe strength, but **only when the work gets harder over time.**',
         'In a 2016 trial, 85 adults aged 60 to 90 were split between a supervised program with resistance that grew over three months and a home exercise program. The supervised group gained up to 36 percent in toe strength and stood longer on one leg. The home group, and a separate control group of 32 people, showed no change in toe strength. The authors said a trial counting falls was still needed.',

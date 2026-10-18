@@ -37,11 +37,11 @@ export const CALF_RAISE_TEST_DE: Guide = {
       paragraphs: [
         'Der Test misst die Ausdauer der Plantarflexoren, der Muskeln, die den Fuß nach unten drücken und die Ferse vom Boden heben. Die wichtigsten sind der Gastrocnemius (der größere, oberflächlichere Wadenmuskel) und der Soleus (der tiefere darunter). Zusammen setzen sie über die Achillessehne am Fersenbein an.',
         'Ausdauer heißt hier, wie viele Wiederholungen du schaffst, bevor die Wade ermüdet und die Ferse nicht mehr hoch genug kommt oder den Takt nicht mehr halten kann. Die Zahl erfasst die Fähigkeit, Arbeit über Dutzende Zyklen durchzuhalten, und das liegt näher an dem, was die Wade beim Gehen und Laufen tut, als ein einzelner schwerer Stoß.',
-        'Medizinische Fachpersonen nutzen den Test:',
+        'Ärztinnen, Ärzte und Physiotherapeuten nutzen den Test:',
         {
           list: [
             'Um die Erholung nach einem Achillessehnenriss zu verfolgen.',
-            'Um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen.',
+            'Um bei Menschen mit Fersenschmerzen oder [Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/) nach einer schwachen Wade zu suchen.',
             'Um ein Bein mit dem anderen zu vergleichen.',
           ],
         },
@@ -124,7 +124,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
         'Ungefähr gleich, ja. In der Studie von Hebert-Losier lag der mittlere Unterschied zwischen rechts und links bei einer Wiederholung, und der typische Messfehler bei etwa zwei. Ein so kleiner Unterschied ist Rauschen.',
         'In der Reha der unteren Extremität ist ein Limb Symmetry Index (LSI) von 90\u00A0% oder mehr der übliche Richtwert für normale Funktion. Der LSI ist die schwächere Seite geteilt durch die stärkere Seite, mal 100. Unter 90\u00A0% heißt, dass eine Seite mehr als 10\u00A0% schwächer ist.',
         'Silbernagel und Kollegen nutzten diese Schwelle bei 78\u00A0Patientinnen und Patienten nach einem Achillessehnenriss: Nach 6\u00A0Monaten lag der LSI im Schnitt bei 84\u00A0% nach Wiederholungen und nur bei 61\u00A0% nach Gesamtarbeit, was zeigt, dass Wiederholungen zu zählen allein ein Defizit unterschätzen kann.',
-        'Ohne Verletzung **lohnt es sich, einen Unterschied von mehr als 10\u00A0% festzuhalten und zu verfolgen.** Das heißt nicht, dass etwas nicht stimmt. Aber wenn der Unterschied über mehrere Tests bestehen bleibt und du auf der schwächeren Seite auch Schmerzen hast, ist das für eine medizinische Fachperson ein nützlicher Hinweis.',
+        'Ohne Verletzung **lohnt es sich, einen Unterschied von mehr als 10\u00A0% festzuhalten und zu verfolgen.** Das heißt nicht, dass etwas nicht stimmt. Aber wenn der Unterschied über mehrere Tests bestehen bleibt und du auf der schwächeren Seite auch Schmerzen hast, ist das für deine Ärztin oder deinen Arzt ein nützlicher Hinweis.',
       ],
       cites: [CITE.hebertLosier, CITE.silbernagelHeelRise],
     },
@@ -141,8 +141,8 @@ export const CALF_RAISE_TEST_DE: Guide = {
             'Fehlende Übung mit dem Test.',
           ],
         },
-        '**Der Test ist keine Diagnose.** Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine Plantarfasziitis oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt.',
-        'Eine medizinische Fachperson kombiniert die Zahl mit anderen Befunden, um zu entscheiden, ob sie ein Symptom erklärt. Als Trend sagt der Test mehr als ein einzelner Messwert: Von 14 auf 22 in zwei Monaten ist ein klareres Signal als jede einzelne Zahl im Vergleich mit einer Tabelle.',
+        '**Der Test ist keine Diagnose.** Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine [Plantarfasziitis](/de/plantarfasziitis/) oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt.',
+        'Eine Ärztin oder ein Arzt kombiniert die Zahl mit anderen Befunden, um zu entscheiden, ob sie ein Symptom erklärt. Als Trend sagt der Test mehr als ein einzelner Messwert: Von 14 auf 22 in zwei Monaten ist ein klareres Signal als jede einzelne Zahl im Vergleich mit einer Tabelle.',
       ],
       cites: [CITE.hebertLosier],
     },
@@ -150,9 +150,9 @@ export const CALF_RAISE_TEST_DE: Guide = {
       h2: 'Wie hängt die Wadenausdauer mit Fersenschmerzen, Problemen an der Achillessehne und Laufen zusammen?',
       paragraphs: [
         'Wade und Plantarfaszie sind über das Fersenbein verbunden. Die Achillessehne zieht von hinten, die Faszie von unten. **Schwache oder schnell ermüdende Waden bringen bei jedem Schritt mehr Spannung auf beide.**',
-        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie ihre beste Bewertung, A, und Krafttraining die Bewertung B. Die Rathleff-Studie, die Fersenheben mit Zusatzgewicht bei Plantarfasziitis getestet hat, nutzte Wadenheben als Hauptübung, und die Teilnehmenden verbesserten ihre Schmerzwerte über drei Monate schneller als mit Dehnen allein. Das ganze Protokoll findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie den höchsten Empfehlungsgrad A und Krafttraining den Empfehlungsgrad B. Die Rathleff-Studie, die Fersenheben mit Zusatzgewicht bei Plantarfasziitis getestet hat, nutzte Fersenheben als Hauptübung, und die Teilnehmenden verbesserten ihre Schmerzwerte über drei Monate schneller als mit Dehnen allein. Das ganze Protokoll findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Bei Achillessehnenentzündung ist der Fersenheben-Test eines der üblichen Messinstrumente. Menschen mit Achillessehnen-Tendinopathie im mittleren Abschnitt (Schmerz in der Mitte der Sehne, nicht am Fersenbein) zeigen typischerweise eine geringere Wadenausdauer auf der betroffenen Seite. Zur exzentrischen Arbeit lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-        'Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein. Das größere Bild zeigt [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -166,7 +166,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
       exercises: [
         {
           name: 'Fersenheben beidbeinig',
-          evidence: { level: 'moderate', why: 'Bewertung B der Leitlinie für Krafttraining. Eine Zwischenstufe auf dem Weg zum einbeinigen Training mit Zusatzgewicht.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B der Leitlinie für Krafttraining. Eine Zwischenstufe auf dem Weg zum einbeinigen Training mit Zusatzgewicht.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
           how: 'Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last.',
           feel: 'Die Waden arbeiten zusammen',
@@ -177,7 +177,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
         },
         {
           name: 'Fersenheben mit Halten',
-          evidence: { level: 'moderate', why: 'Bewertung B der Leitlinie. Isometrisches Halten baut Zeit unter Spannung in der Endposition auf.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B der Leitlinie. Isometrisches Halten baut Zeit unter Spannung in der Endposition auf.' },
           dose: '3-mal 20\u00A0Sekunden halten, beide Füße',
           how: 'Komm auf beiden Füßen auf die Zehen und bleib oben ruhig. Sink nicht wieder ab. Das Halten belastet die Wade ohne das Federn einer ganzen Wiederholung.',
           feel: 'Die Waden arbeiten, um ruhig zu bleiben',
@@ -213,7 +213,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
     {
       q: 'Was bedeutet es, wenn ein Bein viel schwächer ist als das andere?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Ein Unterschied von mehr als 10\u00A0% gilt in der Reha häufig als mögliches Defizit. Bei gesunden Erwachsenen liegt der typische Unterschied bei ein bis zwei Wiederholungen. Ein anhaltender Unterschied mit Schmerzen auf der schwächeren Seite ist ein Grund, zu einer medizinischen Fachperson zu gehen. Ohne Schmerzen: verfolgen und trainieren (Silbernagel 2010).',
+      a: 'Ein Unterschied von mehr als 10\u00A0% gilt in der Reha häufig als mögliches Defizit. Bei gesunden Erwachsenen liegt der typische Unterschied bei ein bis zwei Wiederholungen. Ein anhaltender Unterschied mit Schmerzen auf der schwächeren Seite ist ein Grund, zum Arzt oder zur Ärztin zu gehen. Ohne Schmerzen: verfolgen und trainieren (Silbernagel 2010).',
     },
     {
       q: 'Brauche ich für den Test ein Metronom?',
@@ -221,20 +221,20 @@ export const CALF_RAISE_TEST_DE: Guide = {
     },
     {
       q: 'Kann ein Fersenheben-Test eine Plantarfasziitis oder Achillessehnenentzündung diagnostizieren?',
-      a: 'Nein. Ein niedriges Ergebnis sagt dir, dass die Wade früh ermüdet, nicht warum. Plantarfasziitis, Achillessehnenentzündung, mangelndes Training und eine frische Verletzung können alle zu einer niedrigen Zahl führen. Medizinische Fachpersonen kombinieren das Ergebnis mit einer körperlichen Untersuchung und der Vorgeschichte. Der Test misst die Wadenausdauer, keine bestimmte Erkrankung.',
+      a: 'Nein. Ein niedriges Ergebnis sagt dir, dass die Wade früh ermüdet, nicht warum. Plantarfasziitis, Achillessehnenentzündung, mangelndes Training und eine frische Verletzung können alle zu einer niedrigen Zahl führen. Ärztinnen, Ärzte und Physiotherapeuten kombinieren das Ergebnis mit einer körperlichen Untersuchung und der Vorgeschichte. Der Test misst die Wadenausdauer, keine bestimmte Erkrankung.',
     },
     {
       q: 'Woran erkennt man schwache Waden?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Schwache Waden zeigen sich oft durch schnelle Ermüdung auf Treppen oder am Berg, einen schwächeren Abdruck beim Gehen oder Laufen oder Wackeln im Einbeinstand. Das klarste objektive Zeichen ist der einbeinige Fersenheben-Test: Einem deutlichen Unterschied zwischen linkem und rechtem Bein kannst du eher trauen als dem, wie die Wade aussieht oder sich anfühlt.',
+      a: 'Schwache Waden zeigen sich oft durch schnelle Ermüdung auf Treppen oder am Berg, einen schwächeren Abdruck beim Gehen oder Laufen oder Wackeln im [Einbeinstand](/de/uebungen/einbeinstand/). Das klarste objektive Zeichen ist der einbeinige Fersenheben-Test: Einem deutlichen Unterschied zwischen linkem und rechtem Bein kannst du eher trauen als dem, wie die Wade aussieht oder sich anfühlt.',
     },
     {
-      q: 'Wo sollte man Wadenheben spüren?',
+      q: 'Wo sollte man Fersenheben spüren?',
       a: 'Du solltest die Arbeit in der Wade spüren, sowohl im kräftigeren Gastrocnemius weiter oben als auch im Soleus weiter unten nahe der Achillessehne, nicht am Fersenbein, im Gewölbe oder im Knie. Wenn du statt Ermüdung in der Wade einen stechenden Schmerz an der Ferse oder Achillessehne spürst, musst du Technik oder Last anpassen, bevor du weiter Wiederholungen zählst.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'die Wade oder Achillessehne geschwollen, warm oder druckempfindlich ist, was auf einen frischen Riss oder ein Problem mit der Sehne hindeuten kann',
       'du bei einer Aktivität ein plötzliches Knallen oder Reißen in der Wade gespürt hast',
@@ -243,14 +243,14 @@ export const CALF_RAISE_TEST_DE: Guide = {
       'Taubheit, Kribbeln oder Brennen im Fuß oder Unterschenkel auftreten',
       'der Test genau den Schmerz auslöst, den du abklären willst, und zwar stärker als leicht',
       'du einen bekannten Achillessehnenriss hast oder vor Kurzem operiert wurdest',
-      'eine Wade sichtbar dünner ist als die andere und du deswegen noch bei keiner medizinischen Fachperson warst',
+      'eine Wade sichtbar dünner ist als die andere und du deswegen noch nicht beim Arzt oder bei der Ärztin warst',
     ],
   },
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito macht den einbeinigen Fersenheben-Test alle 14\u00A0Tage und verfolgt beide Beine. Das Wadenziel ist 25-mal einbeiniges Fersenheben. Das Symmetrieziel ist ein Unterschied zwischen links und rechts unter 10\u00A0%. Die App berechnet den Unterschied als Differenz zwischen stärkerer und schwächerer Seite, geteilt durch die stärkere Seite. Sobald beide Ziele erreicht sind, wird der Test auf alle 28\u00A0Tage ausgeweitet, und der Plan wechselt zum nächsten aktiven Ziel.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Wadenarbeit beginnt mit Fersenheben im Sitzen und steigt in deinem Tempo über beidbeiniges Fersenheben, Halten und Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen auf. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Wadenarbeit beginnt mit Fersenheben im Sitzen und steigt in deinem Tempo über beidbeiniges Fersenheben, Halten und Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen auf. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

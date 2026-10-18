@@ -17,13 +17,13 @@ export const ACHILLES_DE: Guide = {
     'Übungen bei Achillessehnenentzündung mit Dosis: exzentrisches Fersenabsenken, Heavy Slow Resistance, Ansatz oder Mittelteil der Sehne und wann du aufhörst.',
   h1: 'Übungen bei Achillessehnenentzündung: exzentrisches Fersenabsenken, Dosis und was die Forschung sagt',
   lede:
-    'Übungen bei Achillessehnenentzündung wirken am besten, wenn du das Fersenabsenken als Krafttraining verstehst, nicht als Dehnung. Die klinische Leitlinie von 2024 gibt Übungen ihre beste Bewertung, **A**, und eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand kein Protokoll, das klar besser war als ein anderes. Entscheidend ist, die Sehne über Wochen gleichmäßig zu belasten.',
+    'Übungen bei Achillessehnenentzündung wirken am besten, wenn du das Fersenabsenken als Krafttraining verstehst, nicht als Dehnung. Die klinische Leitlinie von 2024 gibt Übungen den höchsten Empfehlungsgrad **A** und eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand kein Protokoll, das klar besser war als ein anderes. Entscheidend ist, die Sehne über Wochen gleichmäßig zu belasten.',
   intro: [
-    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) fasst beides zusammen. Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
+    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
     'Die meisten verwenden „Achillessehnenentzündung“ und „Tendinopathie“ gleichbedeutend. Aktuelle Leitlinien sprechen von „Tendinopathie“, weil das Problem meist eine Frage der Belastung ist und keine reine Entzündung. Diese Seite sagt „Achillessehnenentzündung“ in den Überschriften und „Tendinopathie“ dort, wo die Leitlinie es tut.',
   ],
   takeaways: [
-    'Die klinische Leitlinie von 2024 bewertet Übungen (jede Art, die die Sehne belastet) bei Tendinopathie im Mittelteil der Achillessehne mit **A**, ihrer besten Bewertung (Chimenti und Kollegen, 2024).',
+    'Die klinische Leitlinie von 2024 bewertet Übungen (jede Art, die die Sehne belastet) bei Tendinopathie im Mittelteil der Achillessehne mit **A**, dem höchsten Empfehlungsgrad (Chimenti und Kollegen, 2024).',
     'Eine Netzwerk-Metaanalyse von 29\u00A0randomisierten Studien fand nach 3 oder 12\u00A0Monaten keinen klinisch relevanten Unterschied zwischen den Übungsansätzen (van der Vlist und Kollegen, 2021).',
     'In einer Studie mit 58\u00A0Personen brachte Heavy Slow Resistance an 3\u00A0Tagen pro Woche genauso gute Ergebnisse wie exzentrisches Training zweimal am Tag (Beyer und Kollegen, 2015).',
     'Bei Schmerzen am Ansatz der Achillessehne (direkt am Fersenbein) sollte das Fersenabsenken auf Bodenhöhe bleiben und nicht unter die Stufenkante gehen, weil eine tiefe Dorsalflexion, also das Beugen des Sprunggelenks, bei dem die Zehen Richtung Schienbein kommen, die Sehne gegen den Knochen drückt (Jonsson und Kollegen, 2008).',
@@ -42,7 +42,7 @@ export const ACHILLES_DE: Guide = {
     {
       h2: 'Was ist exzentrisches Fersenabsenken, und warum ist es keine Dehnung?',
       paragraphs: [
-        'Exzentrisches Fersenabsenken ist eine Kraftübung, keine Dehnung für die Beweglichkeit. Du kommst auf beiden Füßen hoch, verlagerst das Gewicht auf die schmerzende Seite und senkst dich langsam auf einem Fuß ab, wobei die Ferse unter die Stufenkante sinkt. Die Absenkphase ist die exzentrische Kontraktion: Der Wadenmuskel wird unter Last länger. Dieses kontrollierte Absenken baut über Wochen die Belastbarkeit der Sehne auf.',
+        '[Exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) ist eine Kraftübung, keine Dehnung für die Beweglichkeit. Du kommst auf beiden Füßen hoch, verlagerst das Gewicht auf die schmerzende Seite und senkst dich langsam auf einem Fuß ab, wobei die Ferse unter die Stufenkante sinkt. Die Absenkphase ist die exzentrische Kontraktion: Der Wadenmuskel wird unter Last länger. Dieses kontrollierte Absenken baut über Wochen die Belastbarkeit der Sehne auf.',
         'Der häufigste Fehler ist, unten zu verharren wie bei einer Wadendehnung. Dann wird daraus eine statische Dehnung, und das ist ein anderer Reiz. **Es geht um das langsame Absenken unter Last.** Drei Sekunden nach unten, und der Muskel arbeitet die ganze Zeit.',
         'In der Alfredson-Studie von 1998 machten 15\u00A0Sportler mit lange bestehenden Schmerzen im Mittelteil der Achillessehne drei Monate lang zweimal am Tag, 7\u00A0Tage pro Woche, exzentrisches Fersenabsenken, mit gestrecktem und gebeugtem Knie. Alle 15 kehrten auf ihr früheres Laufniveau zurück. Eine kleine Studie ohne Kontrollgruppe, aber sie hat eine ganze Forschungsrichtung angestoßen.',
       ],
@@ -68,7 +68,7 @@ export const ACHILLES_DE: Guide = {
       paragraphs: [
         'Ja, nach heutiger Studienlage. Eine Studie von 2015 mit 58\u00A0Personen verglich Heavy Slow Resistance (HSR, schweres, langsames Krafttraining) an 3\u00A0Tagen pro Woche mit dem klassischen exzentrischen Protokoll zweimal am Tag. Das Fazit: „Sowohl klassisches exzentrisches Training als auch HSR führen bei Patienten mit Achillessehnen-Tendinopathie zu positiven, gleich guten, anhaltenden klinischen Ergebnissen.“',
         'Eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand nach 3 oder 12\u00A0Monaten keinen klinisch relevanten Unterschied zwischen den aktiven Übungsansätzen. Alle waren besser, als nichts zu tun. Keine Studie hatte ein geringes Risiko für Verzerrung. Die Autoren empfahlen, mit einem Übungsprogramm für die Wadenmuskeln zu beginnen, weil es wenig kostet und kaum schadet.',
-        '**Die Form des Protokolls zählt weniger als die gleichmäßige Belastung der Sehne.** Exzentrisches Absenken ist am besten untersucht, HSR wirkt genauso und braucht weniger Einheiten pro Woche, und beides ist ein guter Startpunkt. Dieselbe Logik der Wadenkräftigung bei Plantarfasziitis findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        '**Die Form des Protokolls zählt weniger als die gleichmäßige Belastung der Sehne.** Exzentrisches Absenken ist am besten untersucht, HSR wirkt genauso und braucht weniger Einheiten pro Woche, und beides ist ein guter Startpunkt. Dieselbe Logik der Wadenkräftigung bei [Plantarfasziitis](/de/plantarfasziitis/) findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -85,7 +85,7 @@ export const ACHILLES_DE: Guide = {
           ['Fersenheben im Sitzen', 'Silbernagel Phase 1: 3 x 10, im Sitzen', '3 x 10, beide Füße', '**Stark**: entspricht dem veröffentlichten Protokoll für Phase 1'],
           ['Fersenheben beidbeinig', 'Silbernagel Phase 1: 3 x 10-15, im Stehen', '3 x 10, beide Füße', '**Stark**: entspricht direkt Phase 1'],
           ['Fersenheben mit Halten (isometrisch)', 'Die Leitlinie von 2024 nennt isometrisches Training als wirksam; in der Praxis werden 3-5 x 30-45\u00A0s vorgeschlagen', '3 x 20\u00A0s, beide Füße', '**Mittel**: Die Leitlinie schließt isometrische Belastung ein; keine randomisierte Studie nur mit isometrischem Training an der Achillessehne'],
-          ['Exzentrisches Fersenabsenken (gestrecktes Knie)', 'Alfredson: 3 x 15, 2-mal am Tag, 7\u00A0Tage pro Woche, drei Monate', '3 x 10, jedes Bein', '**Stark**: das ursprüngliche Protokoll; Bewertung A der Leitlinie'],
+          ['Exzentrisches Fersenabsenken (gestrecktes Knie)', 'Alfredson: 3 x 15, 2-mal am Tag, 7\u00A0Tage pro Woche, drei Monate', '3 x 10, jedes Bein', '**Stark**: das ursprüngliche Protokoll; Empfehlungsgrad A der Leitlinie'],
           ['Wadendehnung (gestrecktes Knie)', 'Nicht Teil der Belastungsstudien; eine Ergänzung für die Beweglichkeit', '3 x 30\u00A0s halten, jedes Bein', '**Vorläufig**: als Beweglichkeit gedacht, nicht als Belastungsübung für die Achillessehne'],
           ['Soleusdehnung (gebeugtes Knie)', 'Nicht Teil der Belastungsstudien; eine Ergänzung für die Beweglichkeit', '3 x 30\u00A0s halten, jedes Bein', '**Vorläufig**: derselbe Vorbehalt; bei Schmerzen am Ansatz kein tiefes Dehnen'],
         ],
@@ -93,7 +93,7 @@ export const ACHILLES_DE: Guide = {
       exercises: [
         {
           name: 'Fersenheben im Sitzen',
-          evidence: { level: 'strong', why: 'Entspricht der Dosis von Phase 1 in Silbernagel 2007. Die Bewertung A der Leitlinie gilt für alle Arten der Sehnenbelastung.' },
+          evidence: { level: 'strong', why: 'Entspricht der Dosis von Phase 1 in Silbernagel 2007. Der Empfehlungsgrad A der Leitlinie gilt für alle Arten der Sehnenbelastung.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
           how: 'Setz dich hin, die Füße stehen flach. Drück dich über die Ballen beider Füße nach oben. Hände auf den Knien geben zusätzlichen Widerstand. Ein Einstieg mit wenig Last, wenn Übungen im Stehen zu schmerzhaft sind.',
           often: 'Krafttage, solange es dein Level ist',
@@ -105,7 +105,7 @@ export const ACHILLES_DE: Guide = {
         },
         {
           name: 'Fersenheben beidbeinig',
-          evidence: { level: 'strong', why: 'Entspricht direkt Phase 1 in Silbernagel 2007. Bewertung A der Leitlinie.' },
+          evidence: { level: 'strong', why: 'Entspricht direkt Phase 1 in Silbernagel 2007. Empfehlungsgrad A der Leitlinie.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
           how: 'Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich über drei Sekunden langsam ab. Beide Füße teilen sich die Last.',
           often: 'Krafttage, sobald sich das Fersenheben im Sitzen leicht anfühlt',
@@ -129,7 +129,7 @@ export const ACHILLES_DE: Guide = {
         },
         {
           name: 'Exzentrisches Fersenabsenken (gestrecktes Knie)',
-          evidence: { level: 'strong', why: 'Das ursprüngliche Alfredson-Protokoll von 1998. Bewertung A der Leitlinie von 2024.' },
+          evidence: { level: 'strong', why: 'Das ursprüngliche Alfredson-Protokoll von 1998. Empfehlungsgrad A der Leitlinie von 2024.' },
           dose: 'Alfredson: 3 x 15, zweimal täglich. Walkito: 3 x 10, jedes Bein',
           how: 'Stell dich auf eine Stufenkante. Komm auf beiden Füßen hoch, verlagere das Gewicht auf das schmerzende Bein und senk dich mit gestrecktem Knie langsam ab. Die Ferse sinkt unter die Stufe. Mit beiden Füßen zurück nach oben.',
           often: 'Im ursprünglichen Protokoll zweimal täglich. Walkito: Krafttage.',
@@ -155,7 +155,7 @@ export const ACHILLES_DE: Guide = {
           name: 'Soleusdehnung (gebeugtes Knie)',
           evidence: { level: 'early', why: 'Nicht Teil der Belastungsstudien zur Achillessehne. Eine Ergänzung für die Beweglichkeit. Bei Schmerzen am Ansatz keine tiefe Dorsalflexion.' },
           dose: '3-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis die Dehnung tiefer wandert, nahe der Ferse. Der Soleus lässt nur mit gebeugtem Knie los.',
+          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis die Dehnung tiefer wandert, nahe der Ferse. Den Soleus erreichst du nur mit gebeugtem Knie.',
           often: 'Nach Einheiten mit Belastung',
           feel: 'Eine Dehnung nahe der Ferse',
           stop: 'Jeder stechende Zug am Ansatz der Achillessehne',
@@ -206,8 +206,7 @@ export const ACHILLES_DE: Guide = {
       h2: 'Kannst du während der Reha der Achillessehne weiterlaufen?',
       paragraphs: [
         'In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12\u00A0Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzüberwachung während der Reha „daher eine wertvolle Option sein könnte“.',
-        'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zu einer medizinischen Fachperson zu gehen.',
-        'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastungssteuerung beim Laufen ein.',
+        'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -264,7 +263,7 @@ export const ACHILLES_DE: Guide = {
     {
       q: 'Was sollte man bei Achillessehnenentzündung nicht machen?',
       cites: [CITE.jonsson, CITE.silbernagel],
-      a: 'Meide plötzliche Steigerungen beim Laufumfang oder bei Sprints, tiefes Wadendehnen, wenn dein Schmerz am Ansatz am Fersenbein sitzt, und das Weitermachen trotz Schmerz, der am nächsten Morgen erhöht bleibt oder von Woche zu Woche schlimmer wird. Ein plötzliches Knallen oder Schnappen braucht sofort eine medizinische Fachperson. Komplette Ruhe ist aber auch nicht nötig; Aktivität mit Schmerzüberwachung ist meist besser, als ganz aufzuhören.',
+      a: 'Meide plötzliche Steigerungen beim Laufumfang oder bei Sprints, tiefes Wadendehnen, wenn dein Schmerz am Ansatz am Fersenbein sitzt, und das Weitermachen trotz Schmerz, der am nächsten Morgen erhöht bleibt oder von Woche zu Woche schlimmer wird. Ein plötzliches Knallen oder Schnappen braucht sofort ärztliche Abklärung. Komplette Ruhe ist aber auch nicht nötig; Aktivität mit Schmerzüberwachung ist meist besser, als ganz aufzuhören.',
     },
     {
       q: 'Verschlimmert Gehen eine Achillessehnenentzündung?',
@@ -274,17 +273,17 @@ export const ACHILLES_DE: Guide = {
     {
       q: 'Was wird mit einer Achillessehnenentzündung verwechselt?',
       cites: [CITE.chooRearfoot],
-      a: 'Eine Bursitis retrocalcanea (Schleimbeutelentzündung hinter der Ferse), eine Haglund-Ferse und ein Teilriss der Achillessehne können ähnliche Schmerzen hinten an der Ferse verursachen. Ein sichtbarer knöcherner Höcker deutet eher auf eine Haglund-Ferse hin, eine Schwellung direkt hinten auf Höhe des Schuhrands eher auf eine Bursitis. Jeder plötzliche stechende Schmerz mit einem Knall, oder wenn du nicht mehr auf die Zehen kommst, muss dringend auf einen Sehnenriss untersucht werden.',
+      a: 'Eine Bursitis retrocalcanea (Schleimbeutelentzündung hinter der Ferse), eine [Haglund-Ferse](/de/haglundferse/) und ein Teilriss der Achillessehne können ähnliche Schmerzen hinten an der Ferse verursachen. Ein sichtbarer knöcherner Höcker deutet eher auf eine Haglund-Ferse hin, eine Schwellung direkt hinten auf Höhe des Schuhrands eher auf eine Bursitis. Jeder plötzliche stechende Schmerz mit einem Knall, oder wenn du nicht mehr auf die Zehen kommst, muss dringend auf einen Sehnenriss untersucht werden.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du ein plötzliches Knallen oder Schnappen gespürt hast oder ein Gefühl, als hätte dich jemand hinten ans Bein getreten, vor allem wenn du dich danach sofort schwer abdrücken oder auf den Zehen gehen kannst. Das kann auf einen Riss der Achillessehne hindeuten',
       'du gerade ein Fluorchinolon-Antibiotikum nimmst oder vor Kurzem genommen hast (etwa Ciprofloxacin oder Levofloxacin) und neue oder zunehmende Sehnenschmerzen hast. Für diese Medikamente gibt es einen Warnhinweis der FDA im schwarzen Kasten (Boxed Warning) zu Sehnenentzündung und Sehnenriss',
       'Schmerz und Schwellung plötzlich mit Fieber, Rötung oder Wärme über der Sehne aufgetreten sind',
       'die Sehne deutlich geschwollen ist, ein Bluterguss da ist oder du eine Lücke in der Sehne tasten kannst',
-      'der Schmerz direkt am Ansatz am Fersenbein sitzt und mit Dehnen oder tiefem Fersenabsenken schlimmer wird, nicht besser. Das deutet auf eine insertionale Tendinopathie hin, die einen angepassten Ansatz oder den Rat einer Fachperson braucht',
+      'der Schmerz direkt am Ansatz am Fersenbein sitzt und mit Dehnen oder tiefem Fersenabsenken schlimmer wird, nicht besser. Das deutet auf eine insertionale Tendinopathie hin, die einen angepassten Ansatz oder ärztlichen oder physiotherapeutischen Rat braucht',
       'Schmerz oder Steifigkeit über Wochen stetig schlimmer werden, obwohl du gleichmäßig trainierst',
       'der Schmerz in Ruhe da ist oder dich nachts weckt',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -292,9 +291,9 @@ export const ACHILLES_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Du musst Reihenfolge, Dosis und den Zeitpunkt für mehr Last nicht erraten. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Die Wadenkette reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
+    text: 'Du musst Reihenfolge, Dosis und den Zeitpunkt für mehr Last nicht erraten. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Die Stufenfolge für die Wade reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Wadenziel erreicht ist) prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass ihn von einer medizinischen Fachperson prüfen, bevor du ihn stark belastest.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Wadenziel erreicht ist) prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass ihn ärztlich abklären, bevor du ihn stark belastest.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

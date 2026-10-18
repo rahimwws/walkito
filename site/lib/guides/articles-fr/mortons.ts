@@ -184,7 +184,7 @@ export const MORTONS_FR: Guide = {
     },
     {
       q: 'Les exercices aident-ils le névrome de Morton\u00A0?',
-      a: 'Aucun essai n’a testé l’exercice dans le névrome de Morton. L’exercice n’agit pas directement sur le nerf. Écarter les orteils et renforcer les muscles propres au pied peut aider à répartir plus uniformément la charge de l’avant-pied, et l’étirement du mollet réduit la surcharge de l’avant-pied due à un mollet raide. Ce sont des mesures de confort, pas des interventions propres au névrome. Le changement de chaussures et les coussinets passent en premier.',
+      a: 'Aucun essai n’a testé l’exercice dans le névrome de Morton. L’exercice n’agit pas directement sur le nerf. Écarter les orteils et renforcer les muscles propres au pied peut aider à répartir plus uniformément la charge de l’avant-pied, et l’étirement du mollet réduit la surcharge de l’avant-pied due à un [mollet raide](/fr/mollets-tendus/). Ce sont des mesures de confort, pas des interventions propres au névrome. Le changement de chaussures et les coussinets passent en premier.',
     },
     {
       q: 'Le névrome de Morton peut-il partir tout seul\u00A0?',
@@ -202,7 +202,7 @@ export const MORTONS_FR: Guide = {
     },
     {
       q: 'Qu’est-ce qui déclenche un névrome de Morton\u00A0?',
-      a: 'Le névrome de Morton est déclenché par tout ce qui comprime le nerf entre les métatarsiens. Les déclencheurs fréquents sont les chaussures étroites ou pointues, les talons hauts, les activités à impacts répétés comme la course, et des formes de pied comme les pieds plats ou les pieds creux, qui reportent plus de pression vers l’avant. Il est plus fréquent chez les femmes et à l’âge moyen.',
+      a: 'Le névrome de Morton est déclenché par tout ce qui comprime le nerf entre les métatarsiens. Les déclencheurs fréquents sont les chaussures étroites ou pointues, les talons hauts, les activités à impacts répétés comme la course, et des formes de pied comme les [pieds plats](/fr/pieds-plats/) ou les [pieds creux](/fr/pied-creux-exercices/), qui reportent plus de pression vers l’avant. Il est plus fréquent chez les femmes et à l’âge moyen.',
     },
     {
       q: 'Qu’est-ce que le test de Mulder pour le névrome de Morton\u00A0?',
@@ -228,7 +228,7 @@ export const MORTONS_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Walkito est conçu autour de la fasciite plantaire et des pieds plats, pas du névrome de Morton. Mais les exercices de l’avant-pied de l’application, dont écarter les orteils et les étirements du mollet, visent la même répartition de la charge de l’avant-pied qui contribue aux symptômes du névrome. Signaler l’avant-pied comme douloureux sur la carte de la douleur lors du bilan permet à l’application d’inclure l’écartement des orteils et l’étirement du fascia plantaire dans votre séance.',
+    text: 'Walkito est conçu autour de la [fasciite plantaire](/fr/fasciite-plantaire/) et des pieds plats, pas du névrome de Morton. Mais les exercices de l’avant-pied de l’application, dont écarter les orteils et les étirements du mollet, visent la même répartition de la charge de l’avant-pied qui contribue aux symptômes du névrome. Signaler l’avant-pied comme douloureux sur la carte de la douleur lors du bilan permet à l’application d’inclure l’écartement des orteils et l’étirement du fascia plantaire dans votre séance.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito ne diagnostique pas le névrome de Morton. Les exercices qu’il propose sont des mesures de confort et de charge. Des chaussures plus larges, des coussinets métatarsiens et un avis clinique passent en premier.',
     ],

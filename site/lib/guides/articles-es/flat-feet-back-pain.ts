@@ -197,7 +197,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
         },
         'Un marco internacional para profesionales de la salud enumera las señales de alarma que buscan, y están en la lista al final de esta página.',
         'Para la espalda, espera preguntas sobre cómo empezó el dolor, qué lo calma y si se extiende hacia una pierna. La exploración suele revisar cómo se mueve la espalda, además de la fuerza, los reflejos y la sensibilidad en las piernas y los pies. Por lo general no hacen falta estudios de imagen, a menos que algo apunte a una causa grave.',
-        'Para los pies, el profesional revisa si el pie plano es flexible (el arco vuelve cuando subes en puntas o levantas el pie) o rígido (sigue plano).',
+        'Para los pies, el profesional revisa si el pie plano es flexible (el arco vuelve cuando subes en puntas o levantas el pie) o rígido (sigue plano). Puedes hacer las mismas [pruebas en casa](/es/test-pie-plano/).',
         'Un pie plano rígido, o un arco que bajó en la edad adulta con dolor en la parte interna del tobillo, necesita su propia evaluación. El segundo caso muchas veces es un tendón que se debilita, como se explica en [ejercicios para el tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/). El profesional también puede verte caminar para ver cuánto se van tus pies hacia adentro.',
         'Los problemas de espalda también pueden causar síntomas en el pie. Un nervio pinzado en la espalda baja puede traer entumecimiento, hormigueo o debilidad en el pie, y un pie débil puede parecer un problema del pie cuando la causa está más arriba.',
       ],
@@ -252,7 +252,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es un programa de ejercicios para los pies y la parte baja de las piernas. Para el pie plano, arma un plan una semana a la vez en torno a metas para los pies, como sostener el arco 60\u00A0segundos y 30\u00A0segundos de equilibrio a una pierna. Empieza el ejercicio de pie corto con 3\u00A0series de 8 sosteniendo 5\u00A0segundos, el trabajo de cadera con 3\u00A0series de 10 y los estiramientos de pantorrilla con 2\u00A0repeticiones de 30\u00A0segundos.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando en tus pies.',

@@ -213,7 +213,7 @@ export const TIMELINE_COPY: Partial<Record<Lang, TimelineCopy>> = {
     year: (y) => (y === 1 ? '1\u00A0an' : `${y}\u00A0ans`),
     pct: (n) => `${n.toFixed(1).replace('.', ',')}${NBSP}%`,
     chartNote:
-      'Un groupe de cas difficiles\u00A0: 93\u00A0% avaient reçu une infiltration de cortisone. Ceux qui avaient encore des symptômes au suivi décrivaient en moyenne une douleur légère, environ 2 à 3 sur 10 à la marche.',
+      'Un groupe de cas difficiles\u00A0: 93\u00A0% avaient reçu une infiltration de corticoïdes. Ceux qui avaient encore des symptômes au suivi décrivaient en moyenne une douleur légère, environ 2 à 3 sur 10 à la marche.',
     latt: 'Environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux, le plus souvent en trois à six mois (revue de Latt 2020).',
     text: {
       early: [

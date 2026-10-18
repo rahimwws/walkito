@@ -29,14 +29,14 @@ export const SHIN_SPLINTS_DE: Guide = {
   intro: [
     'Das heißt nicht, dass Übungen nutzlos sind. Die Übungen unten zielen auf Wadenausdauer, Kraft am Schienbein und Hüftkontrolle, die Bereiche, in denen Forschende Unterschiede zwischen Menschen mit und ohne Schienbeinkantensyndrom gefunden haben. Eine Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben schafften als passende Kontrollpersonen ohne.',
     'Ob es die Erholung verkürzt, diese Ausdauer wieder aufzubauen, ist noch offen. Der sicherste Hebel ist in jeder bisherigen Studie, die Laufbelastung zu reduzieren, die die Beschwerden ausgelöst hat.',
-    'Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst, statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
+    'Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst, statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
   ],
   toc: true,
   takeaways: [
     'Eine systematische Übersichtsarbeit von 2013 über 11\u00A0Behandlungsstudien fand, dass für Dehn- und Kraftübungen nicht bewiesen ist, dass sie die Erholung vom medialen tibialen Stresssyndrom beschleunigen (Winters und Kollegen, 2013).',
     'In der einzigen randomisierten Studie zu Übungen beim Schienbeinkantensyndrom verkürzte es die Erholung nicht, Wadendehnen und Wadenkräftigung zu einem gestuften Laufprogramm hinzuzufügen, verglichen mit dem Laufprogramm allein, in einer Studie mit 74\u00A0Sportlern (Moen und Kollegen, 2012).',
     'Läufer mit Schienbeinkantensyndrom schafften bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben als passende Kontrollpersonen, was auf eine Lücke bei der Wadenausdauer hindeutet (Madeley und Kollegen, 2007).',
-    'Punktgenauer Druckschmerz an einer kleinen Stelle, statt eines Schmerzes, der sich über mehrere Zentimeter Knochen verteilt, kann ein Ermüdungsbruch sein und braucht eine medizinische Fachperson, keine weiteren Übungen.',
+    'Punktgenauer Druckschmerz an einer kleinen Stelle, statt eines Schmerzes, der sich über mehrere Zentimeter Knochen verteilt, kann ein Ermüdungsbruch sein und braucht ärztliche Abklärung, keine weiteren Übungen.',
   ],
   sections: [
     {
@@ -102,7 +102,7 @@ export const SHIN_SPLINTS_DE: Guide = {
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           often: 'Die meisten Einheiten',
           feel: 'Eine Dehnung nahe der Ferse',
-          how: 'Geh in dieselbe Position an der Wand und beug dann das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt nur mit gebeugtem Knie los.',
+          how: 'Geh in dieselbe Position an der Wand und beug dann das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Den Soleus, den tieferen Wadenmuskel, erreichst du nur mit gebeugtem Knie.',
           image: 'Übung: Soleusdehnung',
           media: 'calf_stretch_bent',
           caption: 'Soleusdehnung: Beug das hintere Knie, bis du es nahe der Ferse spürst',
@@ -207,7 +207,7 @@ export const SHIN_SPLINTS_DE: Guide = {
         'Das Schienbeinkantensyndrom von einem Ermüdungsbruch zu unterscheiden ist wichtig, weil beide eine andere Reaktion brauchen. Das mediale tibiale Stresssyndrom und Ermüdungsbrüche der Tibia liegen auf demselben Kontinuum von Stressverletzungen des Knochens. Unter weiterer Belastung kann sich ein Schienbeinkantensyndrom in Richtung Ermüdungsbruch entwickeln. Das ist der Hauptgrund, die Trainingsbelastung früh zu ändern, statt trotz flächiger Schienbeinschmerzen weiterzulaufen.',
         'Das Schienbeinkantensyndrom macht meist einen flächigen Druckschmerz, verteilt über mehrere Zentimeter an der Innenseite des Schienbeins. Ein Ermüdungsbruch macht einen punktgenauen Druckschmerz an einer kleinen Stelle, oft mit Schwellung. Schmerz, der beim Aufwärmen nachlässt, spricht eher für ein Schienbeinkantensyndrom. Schmerz, der beim Laufen immer weiter zunimmt oder in Ruhe oder nachts auftritt, spricht eher für einen Ermüdungsbruch.',
         'Schmerz hinten an der Ferse statt am Schienbein ist ein anderes Problem, meist die Achillessehne; lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wenn deiner dort sitzt.',
-        'Ein häufig genannter Test für zu Hause ist ein Hüpfer auf einem Bein, der einen stechenden, punktgenauen Schmerz auslöst und so auf einen Bruch hindeuten soll. Eine Übersichtsarbeit von 2011 in American Family Physician fand aber keine neueren Belege für seine Genauigkeit, und ein positiver Hüpftest kam auch bei fast der Hälfte der Patienten mit bestätigtem Schienbeinkantensyndrom vor. **Ein positiver Hüpftest ist also ein Grund, zu einer medizinischen Fachperson zu gehen, kein verlässlicher Weg, einen Bruch selbst festzustellen oder auszuschließen.**',
+        'Ein häufig genannter Test für zu Hause ist ein Hüpfer auf einem Bein, der einen stechenden, punktgenauen Schmerz auslöst und so auf einen Bruch hindeuten soll. Eine Übersichtsarbeit von 2011 in American Family Physician fand aber keine neueren Belege für seine Genauigkeit, und ein positiver Hüpftest kam auch bei fast der Hälfte der Patienten mit bestätigtem Schienbeinkantensyndrom vor. **Ein positiver Hüpftest ist also ein Grund, zum Arzt oder zur Ärztin zu gehen, kein verlässlicher Weg, einen Bruch selbst festzustellen oder auszuschließen.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -226,7 +226,7 @@ export const SHIN_SPLINTS_DE: Guide = {
         },
         'Wenn der Schmerz beim Aufwärmen nachlässt und erträglich bleibt, ist ein kürzerer oder leichterer Lauf seltener pro Woche ein vernünftiger Mittelweg, während sich das Schienbein anpasst. Ruhetage zwischen den Läufen geben dem Knochen Zeit, auf die Belastung zu reagieren.',
         'Die 10-%-Regel, also den Wochenumfang um höchstens 10\u00A0% zu steigern, ist eine oft genannte Faustregel, aber keine bewiesene. Eine Studie von 2008 mit 532\u00A0Laufanfängern fand keinen Unterschied bei den Verletzungsraten zwischen einem Programm nach der 10-%-Regel und einem schnelleren.',
-        'Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. **Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt.** [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf dieselbe Belastungssteuerung ein.',
+        'Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. **Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
@@ -299,7 +299,7 @@ export const SHIN_SPLINTS_DE: Guide = {
     {
       q: 'Was wird oft mit einem Schienbeinkantensyndrom verwechselt?',
       cites: [CITE.mtssReview],
-      a: 'Ein Ermüdungsbruch der Tibia, ein chronisches belastungsabhängiges Kompartmentsyndrom und eine Tendinopathie der Tibialis-posterior-Sehne können alle Schienbeinschmerzen verursachen und als Schienbeinkantensyndrom bezeichnet werden. Ein Ermüdungsbruch tut meist an einer bestimmten Stelle am Knochen weh, während ein Kompartmentsyndrom ein Engegefühl und Taubheit macht, die beim Laufen zunehmen und kurz nach dem Aufhören nachlassen. Beides braucht eine medizinische Fachperson statt mehr Belastung.',
+      a: 'Ein Ermüdungsbruch der Tibia, ein chronisches belastungsabhängiges Kompartmentsyndrom und eine Tendinopathie der Tibialis-posterior-Sehne können alle Schienbeinschmerzen verursachen und als Schienbeinkantensyndrom bezeichnet werden. Ein Ermüdungsbruch tut meist an einer bestimmten Stelle am Knochen weh, während ein Kompartmentsyndrom ein Engegefühl und Taubheit macht, die beim Laufen zunehmen und kurz nach dem Aufhören nachlassen. Beides braucht ärztliche Abklärung statt mehr Belastung.',
     },
     {
       q: 'Darf man mit Schienbeinkantensyndrom gehen?',
@@ -308,7 +308,7 @@ export const SHIN_SPLINTS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz punktgenau ist, auf eine kleine Stelle am Knochen begrenzt, statt über mehrere Zentimeter verteilt',
       'der Schmerz beim Laufen zunimmt, statt beim Aufwärmen nachzulassen',
@@ -326,7 +326,7 @@ export const SHIN_SPLINTS_DE: Guide = {
     text: `Walkito hat kein eigenes Programm für das Schienbeinkantensyndrom, und diese Seite erklärt, warum: Für kein Übungsprogramm wurde in einer Studie gezeigt, dass es die Erholung vom Schienbeinkantensyndrom beschleunigt. Was Walkito hat, ist Arbeit für Wade, Sprunggelenk und Gleichgewicht, die auf dieselben Muskeln zielt, die Forschende untersucht haben, und einen Plan, der sich danach richtet, wie sich jeder Morgen anfühlt.`,
     more: [
       `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, ob die Arbeit am Unterschenkel etwas bringt.`,
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn dein Schienbeinschmerz punktgenau ist, schlimmer wird oder in Ruhe auftritt, geh zu einer medizinischen Fachperson, bevor du ihn weiter belastest.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn dein Schienbeinschmerz punktgenau ist, schlimmer wird oder in Ruhe auftritt, lass das zuerst ärztlich abklären, bevor du ihn weiter belastest.',
     ],
     cta: `Fang mit einer Einheit von ${PROGRAM.sessionMinutes[0]}\u00A0Minuten an.`,
   },

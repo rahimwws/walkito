@@ -73,7 +73,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     {
       h2: 'Los ejercicios para fortalecer el tobillo, en orden',
       paragraphs: [
-        'Empieza en la etapa 1 si te torciste el tobillo hace poco o si se siente débil al caminar en terreno irregular. Si las elevaciones de talón con dos pies ya te resultan fáciles, puedes empezar en la etapa 2 o 3. Deja cualquier ejercicio por el día si el dolor llega a **6/10**, o si el tobillo amanece más hinchado o adolorido.',
+        'Empieza en la etapa 1 si te torciste el tobillo hace poco o si se siente débil al caminar en terreno irregular. Si lo que te duele son los pies en caminatas por el monte, mira [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/). Si las elevaciones de talón con dos pies ya te resultan fáciles, puedes empezar en la etapa 2 o 3. Deja cualquier ejercicio por el día si el dolor llega a **6/10**, o si el tobillo amanece más hinchado o adolorido.',
         'Las dosis de abajo son puntos de partida modestos. Los ensayos de esta página usaron sus propios programas, que se describen en cada sección.',
       ],
       exercises: [
@@ -272,7 +272,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan semana a semana en torno a metas de dolor de pie y pierna. Incluye equilibrio, inversión con banda, elevaciones de tibial anterior, elevaciones de talón y trabajo de cadera. Cada semana puede subir un paso de dificultad el ejercicio de tu meta principal (en equilibrio: a una pierna, luego con los ojos cerrados, luego de pie sobre una almohada), pero solo cuando tus dos últimas sesiones con él se sintieron fáciles y el dolor de la mañana no aumentó. Si una sesión se sintió difícil o el dolor subió, en cambio baja un paso. La inversión con banda y las elevaciones de tibial anterior no suben de nivel de esta forma. No tiene un programa para esguinces de tobillo y no revisa si un tobillo está fracturado o tiene una ruptura.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Al principio cada dos semanas (cada cuatro una vez que alcanzas una meta), una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

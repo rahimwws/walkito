@@ -22,7 +22,7 @@ export const SEVERS_DE: Guide = {
   lede:
     'Morbus Sever, auch Apophysitis calcanei genannt, ist die häufigste Ursache für Fersenschmerzen bei Kindern. Er entsteht, wenn die Wachstumsfuge hinten am Fersenbein durch wiederholten Zug der Achillessehne gereizt wird, meist während eines Wachstumsschubs und bei einem Sport mit viel Laufen oder Springen. Er ist keine Krankheit im üblichen Sinn. Er verschwindet von selbst, sobald sich die Wachstumsfuge schließt.',
   intro: [
-    'Diese Seite ist für Eltern geschrieben. Sie erklärt, was in der Ferse passiert, was die Forschung zu Fersenschalen, Dehnen und Belastungssteuerung sagt und wann der Schmerz eine medizinische Fachperson braucht statt Ruhe.',
+    'Diese Seite ist für Eltern geschrieben. Sie erklärt, was in der Ferse passiert, was die Forschung zu Fersenschalen, Dehnen und Belastungssteuerung sagt und wann der Schmerz ärztlich abgeklärt werden muss statt Ruhe.',
     'Walkito ist eine Übungs-App für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Sie ist nicht für Kinder gemacht, und nichts auf dieser Seite ist eine Empfehlung, sie mit einem Kind zu nutzen. Wenn die Fersenschmerzen deines Kindes mit den Schritten unten nicht besser werden, ist eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe der richtige nächste Schritt.',
   ],
   takeaways: [
@@ -52,7 +52,7 @@ export const SEVERS_DE: Guide = {
         {
           list: [
             'Viel Laufen und Springen.',
-            'Verkürzte Wadenmuskeln.',
+            '[Verkürzte Wadenmuskeln](/de/verspannte-waden/).',
             'Eingeschränkte Beweglichkeit im Sprunggelenk.',
             'Ein hoher BMI.',
             'Harte Spielflächen.',
@@ -66,7 +66,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Wie fühlt sich Morbus Sever an?',
       paragraphs: [
         'Das Hauptsymptom ist Schmerz hinten oder an den Seiten der Ferse, meist bei oder nach Aktivität und vor allem nach Laufen oder Springen. Der Schmerz wird oft wie ein blauer Fleck beschrieben. Sichtbare Schwellungen oder Blutergüsse gibt es selten. **Druck auf die Seiten der Ferse oder Zusammendrücken löst den Schmerz meist aus.** Dieser Squeeze-Test ist die übliche klinische Prüfung.',
-        'Anders als die Plantarfasziitis bei Erwachsenen, die bei den ersten Schritten nach einer Ruhephase am schlimmsten ist, wird der Schmerz bei Morbus Sever eher mit Aktivität schlimmer und beim Gehen nicht besser. Manche Kinder fangen an zu hinken oder auf den Zehen zu gehen, um die Ferse nicht zu belasten.',
+        'Anders als die [Plantarfasziitis](/de/plantarfasziitis/) bei Erwachsenen, die bei den ersten Schritten nach einer Ruhephase am schlimmsten ist, wird der Schmerz bei Morbus Sever eher mit Aktivität schlimmer und beim Gehen nicht besser. Manche Kinder fangen an zu hinken oder auf den Zehen zu gehen, um die Ferse nicht zu belasten.',
         'Der Schmerz kann von leicht, nur beim Sport spürbar, bis so stark reichen, dass das Kind gar nicht mehr spielen kann.',
       ],
     },
@@ -74,7 +74,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Was hilft bei Morbus Sever? Die Belege',
       keyFact: 'In einer Studie mit 101\u00A0Kindern verbesserten alle drei Ansätze den Schmerz, und die Gruppe mit Fersenerhöhung war nach sechs Wochen zufriedener, wobei der Unterschied nach drei Monaten verschwunden war (Wiegerinck und Kollegen, 2016).',
       paragraphs: [
-        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder Einlagen sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und **für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.**',
+        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder [Einlagen](/de/einlagen-oder-uebungen/) sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und **für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.**',
         'In einer Studie von 2016 mit 101\u00A0Kindern im Alter von 8 bis 15\u00A0Jahren verglichen Wiegerinck und Kollegen drei Ansätze:',
         {
           list: [
@@ -115,7 +115,7 @@ export const SEVERS_DE: Guide = {
       paragraphs: [
         'Fersenschalen gehören zu den praktischsten Maßnahmen bei Morbus Sever. Sie dämpfen die Ferse, fangen Stöße ab und verringern die Spitzenkräfte, die an der Wachstumsfuge ankommen. Die Crossover-Studie von Perhamre fand, dass eine Fersenschale den Schmerz bei 51\u00A0Jungen im Vergleich zu einem Fersenkeil um etwa 80\u00A0% verringerte, was darauf hindeutet, dass Stoßabsorption an der Ferse wichtiger ist als eine bloße Änderung des Fersenwinkels.',
         'In der faktoriellen Studie von James zeigten Fersenerhöhungen (eine Art Einlage, die die Ferse anhebt) nach 2\u00A0Monaten einen kleinen kurzfristigen Vorteil gegenüber vorgefertigten Einlagen, nach 12\u00A0Monaten aber keinen. Maßgefertigte Einlagen wurden in keiner der beiden Studien getestet.',
-        '**Ein vernünftiger Anfang ist eine günstige Fersenschale aus dem Handel, in beiden Schuhen und beim Sport getragen.** Wenn das nicht hilft, kann eine medizinische Fachperson beurteilen, ob sich eine maßgefertigte Einlage lohnt.',
+        '**Ein vernünftiger Anfang ist eine günstige Fersenschale aus dem Handel, in beiden Schuhen und beim Sport getragen.** Wenn das nicht hilft, kann eine Ärztin oder ein Arzt beurteilen, ob sich eine maßgefertigte Einlage lohnt.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -124,7 +124,7 @@ export const SEVERS_DE: Guide = {
       paragraphs: [
         'Verkürzte Wadenmuskeln verstärken den Zug an der Wachstumsfuge, und verkürzte Waden sind einer der bekannten Risikofaktoren für eine Apophysitis calcanei. Das Dehnen des Gastrocnemius (der oberflächlichere Wadenmuskel, gedehnt mit gestrecktem Knie) und des Soleus (der tiefere Wadenmuskel, gedehnt mit gebeugtem Knie) ist eine übliche Empfehlung.',
         'In der Studie von Wiegerinck machte die Übungsgruppe unter Anleitung einer Physiotherapeutin oder eines Physiotherapeuten ein exzentrisches Krafttraining für die Wade. Diese Gruppe verbesserte sich genauso stark wie die Gruppen mit Fersenerhöhung und mit Abwarten. Dehnen und sanftes Krafttraining sind sicher und helfen möglicherweise, weil sie den Zug an der Wachstumsfuge verringern, aber **die Belege zeigen nicht, dass sie Fersenschalen oder Belastungssteuerung allein überlegen sind.**',
-        'Übungen für Kinder mit Apophysitis calcanei sollten von einer medizinischen Fachperson oder in der Physiotherapie angeleitet oder gezeigt werden. Dosis und Steigerung hängen vom Alter des Kindes, der Schmerzstärke und den Anforderungen des Sports ab. Ein Kind mit akuten Schmerzen, das hinkt, braucht zuerst Ruhe, keine Übungen.',
+        'Übungen für Kinder mit Apophysitis calcanei sollten von einer Ärztin oder einem Arzt oder in der Physiotherapie angeleitet oder gezeigt werden. Dosis und Steigerung hängen vom Alter des Kindes, der Schmerzstärke und den Anforderungen des Sports ab. Ein Kind mit akuten Schmerzen, das hinkt, braucht zuerst Ruhe, keine Übungen.',
       ],
       cites: [CITE.wiegerinck],
     },
@@ -132,7 +132,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Ist Walkito für ein Kind mit Morbus Sever geeignet?',
       paragraphs: [
         'Nein. Walkito ist eine Übungs-App für Erwachsene mit Schmerzen unter der Ferse und im Fußgewölbe. Ihre Übungsdosen, Schmerzgrenzen und Regeln zur Steigerung sind für erwachsene Körper gemacht. Die Wachstumsfuge eines Kindes ist eine grundlegend andere Struktur als das verschmolzene Fersenbein eines Erwachsenen, und die Regeln für die Belastung sind andere.',
-        'Wenn eine medizinische Fachperson dein Kind freigegeben hat und du eine Anleitung für Übungen suchst, kann eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe ein Programm passend zu Alter und Sport des Kindes geben. Die Ratgeber für Erwachsene auf dieser Website, etwa [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) und [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), behandeln dieselben Muskeln, aber mit Dosen und Grenzen für Erwachsene.',
+        'Wenn eine Ärztin oder ein Arzt dein Kind freigegeben hat und du eine Anleitung für Übungen suchst, kann eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe ein Programm passend zu Alter und Sport des Kindes geben. Die Ratgeber für Erwachsene auf dieser Website, etwa [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) und [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), behandeln dieselben Muskeln, aber mit Dosen und Grenzen für Erwachsene.',
       ],
     },
     {
@@ -180,7 +180,7 @@ export const SEVERS_DE: Guide = {
     {
       q: 'Was kann mit Morbus Sever verwechselt werden?',
       cites: [CITE.wiegerinck],
-      a: 'Eine Reizung der Achillessehne, ein Ermüdungsbruch des Fersenbeins und eine Bursitis retrocalcanea können bei einem Kind im Wachstum ähnlich aussehen. Ein positiver Squeeze-Test (Schmerz, wenn die Seiten der Ferse zusammengedrückt werden), ein Alter von 8 bis 15\u00A0Jahren und eine kürzliche Steigerung beim Training sprechen eher für Morbus Sever. Eine einzelne Verletzung, Schwellung oder Schmerz, der an einer bestimmten Stelle schlimmer wird, sollte eine medizinische Fachperson abklären, um einen Bruch auszuschließen.',
+      a: 'Eine Reizung der Achillessehne, ein Ermüdungsbruch des Fersenbeins und eine Bursitis retrocalcanea können bei einem Kind im Wachstum ähnlich aussehen. Ein positiver Squeeze-Test (Schmerz, wenn die Seiten der Ferse zusammengedrückt werden), ein Alter von 8 bis 15\u00A0Jahren und eine kürzliche Steigerung beim Training sprechen eher für Morbus Sever. Eine einzelne Verletzung, Schwellung oder Schmerz, der an einer bestimmten Stelle schlimmer wird, sollte eine Ärztin oder ein Arzt abklären, um einen Bruch auszuschließen.',
     },
     {
       q: 'Wie tapet man Morbus Sever mit Kinesio-Tape?',
@@ -188,7 +188,7 @@ export const SEVERS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh mit deinem Kind zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh mit deinem Kind zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz so stark ist, dass das Kind hinkt oder die Ferse nicht belasten will',
       'der Schmerz nach einer einzelnen Verletzung oder einem Sturz begann, was eher auf einen Bruch als auf eine Apophysitis hindeuten kann',
@@ -202,7 +202,7 @@ export const SEVERS_DE: Guide = {
   },
   program: {
     h2: 'Ein Hinweis für Eltern, die eine App suchen',
-    text: 'Walkito ist ein Übungsprogramm für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Es ist nicht für Kinder gemacht, und seine Dosen und Regeln zur Steigerung setzen ein vollständig verschmolzenes Fersenbein voraus. Wenn du als Erwachsene oder Erwachsener diese Seite liest, weil deine eigene Ferse wehtut, helfen dir vielleicht die Ratgeber für Erwachsene: [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) oder [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/). Für ein Kind ist eine medizinische Fachperson der richtige Anfang.',
+    text: 'Walkito ist ein Übungsprogramm für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Es ist nicht für Kinder gemacht, und seine Dosen und Regeln zur Steigerung setzen ein vollständig verschmolzenes Fersenbein voraus. Wenn du als Erwachsene oder Erwachsener diese Seite liest, weil deine eigene Ferse wehtut, helfen dir vielleicht die Ratgeber für Erwachsene: [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) oder [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/). Für ein Kind ist eine ärztliche Abklärung der richtige Anfang.',
   },
   crumb: 'Morbus Sever',
   campaign: 'guide-severs-de',

@@ -44,7 +44,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Hängen schwache Zehen mit Fersenschmerzen zusammen?',
       paragraphs: [
-        'Schwache Zehen kommen bei Menschen mit Plantarfasziitis tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen.',
+        'Schwache Zehen kommen bei Menschen mit [Plantarfasziitis](/de/plantarfasziitis/) tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen.',
         'Eine größere Studie von 2015 verglich 202\u00A0Menschen mit Schmerzen unter der Ferse und 70 ohne. Die Gruppe mit Fersenschmerzen hatte im Durchschnitt:',
         {
           list: [
@@ -83,7 +83,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
         '**Papier-Greiftest.** Leg eine Visitenkarte oder einen Streifen festes Papier unter deine Großzehe. Drück mit der Großzehe nach unten, während jemand versucht, die Karte herauszuziehen. Dann dasselbe mit der Karte unter den vier kleineren Zehen. Wenn du die Karte festhältst, hast du bestanden. Der Papier-Greiftest ist eine der Methoden, die Forschende verwendet haben, aber er kennt nur bestanden oder nicht bestanden und beansprucht beide Muskelgruppen.',
         '**Zehen-Yoga-Test.** Heb nur die Großzehe, während die vier kleineren Zehen flach bleiben, dann umgekehrt. Wenn sich alle Zehen zusammen bewegen, fang mit Kontrollübungen an, bevor du Last dazunimmst.',
         '**Zehenspreiz-Test.** Spreiz alle fünf Zehen auseinander, ohne sie anzuheben. Achte auf eine deutliche Lücke zwischen den Zehen und vergleich beide Füße.',
-        '**Einbeinstand.** Stell dich nahe an einer Wand bis zu 30\u00A0Sekunden auf einen Fuß und beobachte deine Zehen. Kräftige Zehen drücken und greifen, um kleine Wackler auszugleichen. Wenn eine Seite viel schlechter ist als die andere oder du dich unsicher fühlst, sprich mit einer medizinischen Fachperson darüber.',
+        '**Einbeinstand.** Stell dich nahe an einer Wand bis zu 30\u00A0Sekunden auf einen Fuß und beobachte deine Zehen. Kräftige Zehen drücken und greifen, um kleine Wackler auszugleichen. Wenn eine Seite viel schlechter ist als die andere oder du dich unsicher fühlst, sprich mit einer Ärztin oder einem Arzt darüber.',
       ],
       cites: [CITE.soysaFootStrength],
     },
@@ -92,7 +92,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
       keyFact:
         'Ältere Erwachsene in einem betreuten Programm, das über drei Monate schwerer wurde, gewannen bis zu 36\u00A0% Zehenkraft, während ein Heimprogramm sie nicht veränderte (Mickle und Kollegen, 2016).',
       paragraphs: [
-        'Das Kräftigen der Zehen funktioniert am besten wie eine Leiter: zuerst Kontrolle, dann Greifen, dann Last, dann Gleichgewicht. Fang dort an, wo dich die Tests oben einordnen, und geh eine Stufe höher, wenn sich die aktuelle in zwei Einheiten hintereinander leicht anfühlt. Mach die Übungen barfuß. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.',
+        'Das Kräftigen der Zehen funktioniert am besten in Stufen: zuerst Kontrolle, dann Greifen, dann Last, dann Gleichgewicht. Fang dort an, wo dich die Tests oben einordnen, und geh eine Stufe höher, wenn sich die aktuelle in zwei Einheiten hintereinander leicht anfühlt. Mach die Übungen barfuß. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.',
         'Walkito startet die Zehen- und Gewölbeübungen (kurzer Fuß, Großzehenheben, Handtuchgreifen) mit 3\u00A0Sätzen à 8 mit 5\u00A0Sekunden Halten und das Zehenspreizen mit 3\u00A0Sätzen à 10. Das sind Startdosen. Am meisten zählt wahrscheinlich, die Übungen mit der Zeit schwerer zu machen.',
       ],
       table: {
@@ -186,7 +186,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
         'Übungen zum Zehenkräftigen können Zehenkraft aufbauen, aber **nur, wenn sie mit der Zeit schwerer werden.**',
         'In einer Studie von 2016 wurden 85\u00A0Erwachsene im Alter von 60 bis 90\u00A0Jahren auf ein betreutes Programm mit einem Widerstand, der über drei Monate wuchs, und ein Übungsprogramm für zu Hause aufgeteilt. Die betreute Gruppe gewann bis zu 36\u00A0% Zehenkraft und konnte länger auf einem Bein stehen. Die Heimgruppe und eine separate Kontrollgruppe mit 32\u00A0Personen zeigten keine Veränderung der Zehenkraft. Die Autorinnen und Autoren schrieben, dass noch eine Studie nötig sei, die Stürze zählt.',
         'Auch Läuferinnen und Läufer sprechen darauf an. In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern vergrößerten sowohl ein Fußkräftigungsprogramm an mindestens fünf Tagen pro Woche als auch der Wechsel zum Gehen in Minimalschuhen (dünne, flache, flexible Schuhe) über zwei Monate Größe und Kraft der Fußmuskeln, während die Kontrollgruppe gleich blieb. Manche Muskeln waren schon innerhalb eines Monats größer. Wenn dich der Weg über die Schuhe interessiert, lies [Barfußschuhe](/de/barfussschuhe/).',
-        'Bei Verletzungen kommt das stärkste einzelne Ergebnis aus einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern. Wer das Fuß- und Sprunggelenkprogramm nicht bekam, hatte innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit Programm. Es ist eine einzelne Studie, und das Programm trainierte den ganzen Fuß und das Sprunggelenk, nicht nur die Zehen. Wenn du läufst, findest du mehr unter [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Bei Verletzungen kommt das stärkste einzelne Ergebnis aus einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern. Wer das Fuß- und Sprunggelenkprogramm nicht bekam, hatte innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit Programm. Es ist eine einzelne Studie, und das Programm trainierte den ganzen Fuß und das Sprunggelenk, nicht nur die Zehen.',
         'Das Gesamtbild ist weniger sicher:',
         {
           list: [
@@ -213,7 +213,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
           ],
         },
         'Sie hatten über 12\u00A0Monate 36\u00A0% weniger Stürze als Menschen mit der üblichen podologischen Versorgung. Der Anteil der Menschen, die mindestens einmal stürzten, unterschied sich nicht klar. Weil die Übungen nur ein Teil des Pakets waren, kann die Studie nicht sagen, wie viel die Übungen selbst bewirkt haben.',
-        'Wenn du schon einmal gestürzt bist oder dich unsicher fühlst, sind Zehenübungen eine sinnvolle Ergänzung, aber zuerst sollte eine medizinische Fachperson dein Sturzrisiko einschätzen. Die Übungen auf dieser Seite sind kein Programm zur Sturzprävention.',
+        'Wenn du schon einmal gestürzt bist oder dich unsicher fühlst, sind Zehenübungen eine sinnvolle Ergänzung, aber zuerst sollte eine Ärztin oder ein Arzt dein Sturzrisiko einschätzen. Die Übungen auf dieser Seite sind kein Programm zur Sturzprävention.',
       ],
       sourceNote: 'Spink 2011: Inzidenzratenverhältnis 0,64 (95-%-KI 0,45 bis 0,91); Anteil der Gestürzten RR 0,85 (0,66 bis 1,08).',
       cites: [CITE.spinkFalls, CITE.mickleFalls, CITE.menzFalls],
@@ -261,7 +261,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'ein Fuß oder die Zehen eines Fußes schnell schwach geworden sind, die Schwäche zunimmt oder mit Rückenschmerzen oder Schmerzen, die ins Bein ausstrahlen, einhergeht',
       'du mit den Zehen hängen bleibst oder stolperst, weil sich der Vorfuß nicht anheben lässt (Fußheberschwäche)',
@@ -277,7 +277,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito enthält Großzehenheben, Zehenspreizen, Handtuchgreifen und die Kurzer-Fuß-Übung und hebt eine Übung eine Stufe höher, sobald sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Schmerz nicht gestiegen ist. Die Zehen- und Gewölbeübungen starten mit 3\u00A0Sätzen à 8 mit 5\u00A0Sekunden Halten, in Einheiten von 3, 5 oder 10\u00A0Minuten, an 3, 5 oder 7\u00A0Tagen pro Woche.',
     more: [
-      'Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Er misst die Zehenkraft nicht direkt, die Tests für zu Hause auf dieser Seite lohnen sich also trotzdem. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Er misst die Zehenkraft nicht direkt, die Tests für zu Hause auf dieser Seite lohnen sich also trotzdem. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

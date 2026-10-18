@@ -20,9 +20,9 @@ export const HIGH_ARCHES_DE: Guide = {
     'Übungen bei Hohlfuß (Pes cavus) mit Fußschmerzen: Waden- und Faszien-Dehnen, Stabilität im Sprunggelenk, Belege zu Einlagen und neurologische Warnzeichen.',
   h1: 'Übungen bei Hohlfuß: was hilft und was ärztlich abgeklärt werden sollte',
   lede:
-    'Ein Hohlfuß, medizinisch Pes cavus, ist steif und gibt nicht genug nach, um Stöße abzufangen. Die Kraft konzentriert sich an der Ferse und am Fußballen, und die Plantarfaszie ist oft verkürzt. Etwa 60\u00A0% der Menschen mit Hohlfuß berichten von Fußschmerzen. Die stärksten Belege gibt es für gedämpfte oder maßgefertigte Einlagen. Die Übungen setzen auf das Dehnen von Wade und Plantarfaszie, mehr Beweglichkeit im Sprunggelenk und den Aufbau von Stabilität.',
+    'Ein Hohlfuß, medizinisch Pes cavus, ist steif und gibt nicht genug nach, um Stöße abzufangen. Die Kraft konzentriert sich an der Ferse und am Fußballen, und die Plantarfaszie ist oft verkürzt. Etwa 60\u00A0% der Menschen mit Hohlfuß berichten von Fußschmerzen. Die stärksten Belege gibt es für gedämpfte oder maßgefertigte Einlagen. Die Übungen setzen auf das Dehnen von Wade und Plantarfaszie, mehr [Beweglichkeit im Sprunggelenk](/de/sprunggelenk-mobilisieren-uebungen/) und den Aufbau von Stabilität.',
   intro: [
-    'Ein Hohlfuß betrifft ungefähr 1 von 10\u00A0Menschen (Burns und Kollegen, 2007). Viele Menschen mit Hohlfuß haben nie Fußschmerzen. Wer sie hat, spürt sie meist unter der Ferse, unter dem Fußballen oder entlang der verkürzten Plantarfaszie. Die Ursache ist wichtig: Die meisten Hohlfüße sind idiopathisch (ohne bekannte Ursache), aber ein Teil wird durch neurologische Erkrankungen wie die Charcot-Marie-Tooth-Krankheit verursacht. Ein Hohlfuß, der zunimmt oder nur auf einer Seite auftritt, gehört immer zu einer medizinischen Fachperson.',
+    'Ein Hohlfuß betrifft ungefähr 1 von 10\u00A0Menschen (Burns und Kollegen, 2007). Viele Menschen mit Hohlfuß haben nie Fußschmerzen. Wer sie hat, spürt sie meist unter der Ferse, unter dem Fußballen oder entlang der verkürzten Plantarfaszie. Die Ursache ist wichtig: Die meisten Hohlfüße sind idiopathisch (ohne bekannte Ursache), aber ein Teil wird durch neurologische Erkrankungen wie die Charcot-Marie-Tooth-Krankheit verursacht. Ein Hohlfuß, der zunimmt oder nur auf einer Seite auftritt, gehört immer zum Arzt oder zur Ärztin.',
   ],
   takeaways: [
     'In einer Studie mit 154\u00A0Erwachsenen mit schmerzhaftem Hohlfuß verbesserten maßgefertigte Einlagen den Fußschmerz nach drei Monaten um 8,3\u00A0Punkte mehr als eine Schein-Einlage und die Funktion um 9,5\u00A0Punkte mehr (Burns und Kollegen, 2006).',
@@ -42,7 +42,7 @@ export const HIGH_ARCHES_DE: Guide = {
         'Fußschmerzen bei Hohlfuß zeigen sich häufig als:',
         {
           list: [
-            'Metatarsalgie (Schmerz unter dem Fußballen).',
+            '[Metatarsalgie](/de/metatarsalgie-vorfussschmerzen/) (Schmerz unter dem Fußballen).',
             'Schmerz unter der Ferse.',
             'Schmerz entlang der verkürzten Plantarfaszie.',
           ],
@@ -67,7 +67,7 @@ export const HIGH_ARCHES_DE: Guide = {
           ],
         },
         'Ein Hohlfuß kann auch nach einem Schlaganfall oder einer Rückenmarksverletzung entstehen.',
-        'Der Unterschied ist für die Übungen wichtig. Ein idiopathischer Hohlfuß ist meist stabil: Der Fuß hat diese Form und behält sie. **Ein neurologisch bedingter Hohlfuß kann fortschreiten**: Das Gewölbe wird höher, die Schwäche nimmt zu und der Fuß wird mit der Zeit instabiler. Übungen können bei einem neurologischen Hohlfuß Beweglichkeit und Stabilität erhalten, aber die zugrunde liegende Erkrankung nicht rückgängig machen, und eine medizinische Fachperson muss eingebunden sein.',
+        'Der Unterschied ist für die Übungen wichtig. Ein idiopathischer Hohlfuß ist meist stabil: Der Fuß hat diese Form und behält sie. **Ein neurologisch bedingter Hohlfuß kann fortschreiten**: Das Gewölbe wird höher, die Schwäche nimmt zu und der Fuß wird mit der Zeit instabiler. Übungen können bei einem neurologischen Hohlfuß Beweglichkeit und Stabilität erhalten, aber die zugrunde liegende Erkrankung nicht rückgängig machen, und eine Ärztin oder ein Arzt muss eingebunden sein.',
       ],
     },
     {
@@ -94,7 +94,7 @@ export const HIGH_ARCHES_DE: Guide = {
         '**Maßgefertigte Einlagen haben die stärksten Belege bei Fußschmerzen durch Hohlfuß.** In der einzigen randomisierten Studie teilten Burns und Kollegen 154\u00A0Erwachsene mit chronischen Fußschmerzen und Hohlfuß auf beiden Seiten entweder maßgefertigten Einlagen aus Polypropylen oder einer flachen Schein-Einlage zu.',
         'Nach drei Monaten berichtete die Gruppe mit maßgefertigten Einlagen im Foot Health Status Questionnaire eine um 8,3\u00A0Punkte stärkere Verbesserung des Fußschmerzes als die Schein-Gruppe. Die Funktionswerte verbesserten sich um 9,5\u00A0Punkte mehr. Der Druck unter der Fußsohle sank mit den maßgefertigten Einlagen um 26\u00A0%, mit der Schein-Einlage um 9\u00A0%.',
         'Die Studie umfasste Menschen mit idiopathischem und mit neuromuskulärem Hohlfuß (133 idiopathisch, 21 neuromuskulär, davon 16 mit Charcot-Marie-Tooth-Krankheit). Die Einlagen waren der Form des Fußes angepasst und hatten eine gedämpfte Deckschicht über die ganze Länge.',
-        'Gedämpfte Einlagen aus dem Handel sind ein vernünftiger erster Schritt, bevor du dich für die teureren maßgefertigten Einlagen entscheidest. Das Merkmal, das sich in der Studie als wirksam erwies, war eine Schale, die genau an die Form des Fußes angepasst war, nicht nur eine flache Dämpfung.',
+        'Gedämpfte [Einlagen](/de/einlagen-oder-uebungen/) aus dem Handel sind ein vernünftiger erster Schritt, bevor du dich für die teureren maßgefertigten Einlagen entscheidest. Das Merkmal, das sich in der Studie als wirksam erwies, war eine Schale, die genau an die Form des Fußes angepasst war, nicht nur eine flache Dämpfung.',
       ],
       sourceNote:
         'Burns 2006: 154\u00A0Erwachsene, Nachbeobachtung nach 3\u00A0Monaten, Unterschied beim Schmerz im Foot Health Status Questionnaire 8,3\u00A0Punkte (95-%-KI 1,2 bis 15,3, p=0,022), Unterschied bei der Funktion 9,5\u00A0Punkte (95-%-KI 2,9 bis 16,1, p=0,005).',
@@ -104,14 +104,14 @@ export const HIGH_ARCHES_DE: Guide = {
       h2: 'Welche Übungen helfen bei Hohlfuß?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie bei Schmerzen unter der Ferse, der häufigsten Schmerzstelle bei Hohlfuß, mit A und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Keine Studie hat ein Übungsprogramm speziell für Fußschmerzen durch Hohlfuß getestet. Die Übungen unten zielen auf die Strukturen, die bei einem Hohlfuß häufig verkürzt oder instabil sind: Wade, Plantarfaszie, Sprunggelenk und die kleinen Fußmuskeln. Sie sind aus den Belegen zu Plantarfasziitis, Instabilität im Sprunggelenk und allgemeinem Fußtraining übernommen und entsprechend gekennzeichnet.',
+        'Keine Studie hat ein Übungsprogramm speziell für Fußschmerzen durch Hohlfuß getestet. Die Übungen unten zielen auf die Strukturen, die bei einem Hohlfuß häufig verkürzt oder instabil sind: Wade, Plantarfaszie, Sprunggelenk und die kleinen Fußmuskeln. Sie sind aus den Belegen zu [Plantarfasziitis](/de/plantarfasziitis/), Instabilität im Sprunggelenk und allgemeinem Fußtraining übernommen und entsprechend gekennzeichnet.',
         'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie bei Schmerzen unter der Ferse, einer der häufigsten Schmerzstellen bei Hohlfuß, mit A und Krafttraining mit B. Eine vergleichbare Leitlinie speziell zum Hohlfuß gibt es nicht.',
         'Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.',
       ],
       exercises: [
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'moderate', why: 'Bewertung A der Leitlinie bei Schmerzen unter der Ferse. Eine verkürzte Wade ist bei Hohlfuß häufig und erhöht die Belastung der Ferse.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad A der Leitlinie bei Schmerzen unter der Ferse. Eine verkürzte Wade ist bei Hohlfuß häufig und erhöht die Belastung der Ferse.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand, das hintere Bein gestreckt, die Ferse unten, die Hüfte nach vorn. Ein verkürzter Gastrocnemius ist bei Hohlfuß häufig und belastet das steife Gewölbe zusätzlich.',
           often: 'Die meisten Einheiten',
@@ -125,7 +125,7 @@ export const HIGH_ARCHES_DE: Guide = {
           name: 'Soleusdehnung (Knie gebeugt)',
           evidence: { level: 'moderate', why: 'Derselbe Mechanismus. Zielt auf den tieferen Wadenmuskel.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus lässt nur mit gebeugtem Knie los.',
+          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Den Soleus erreichst du nur mit gebeugtem Knie.',
           often: 'Die meisten Einheiten',
           feel: 'Eine Dehnung nahe der Ferse',
           stop: 'Der Schmerz 6/10 erreicht',
@@ -135,7 +135,7 @@ export const HIGH_ARCHES_DE: Guide = {
         },
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'moderate', why: 'Bewertung A der Leitlinie bei Schmerzen unter der Ferse. Die Plantarfaszie ist bei Hohlfuß meist verkürzt.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad A der Leitlinie bei Schmerzen unter der Ferse. Die Plantarfaszie ist bei Hohlfuß meist verkürzt.' },
           dose: '2-mal 30\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg den betroffenen Fuß über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Die Plantarfaszie ist bei einem Hohlfuß oft kurz und straff.',
           often: 'Die meisten Einheiten',
@@ -187,7 +187,7 @@ export const HIGH_ARCHES_DE: Guide = {
     {
       h2: 'Welche Schuhe passen bei Hohlfuß?',
       paragraphs: [
-        '**Schuhe bei Hohlfuß sollten dämpfen statt führen.** Anders als beim Plattfuß, wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
+        '**Schuhe bei Hohlfuß sollten dämpfen statt führen.** Anders als beim [Plattfuß](/de/plattfuss/), wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
         'Achte auf:',
         {
           list: [
@@ -206,7 +206,7 @@ export const HIGH_ARCHES_DE: Guide = {
       paragraphs: [
         'Walkito ist rund um Schmerzen unter der Ferse und im Gewölbe bei Erwachsenen aufgebaut. Die App enthält Wadendehnen, Plantarfaszien-Dehnen, Fußrollen und Stabilitätstraining für das Sprunggelenk, die alle für einen Hohlfuß relevant sind. Wenn du in der Körperkarte der App auf das Gewölbe zeigst, bietet die Entlastungseinheit den kurzen Fuß, die Plantarfaszien-Dehnung und das Fußrollen an.',
         'Was die App nicht hat, ist ein eigenes Ziel für Hohlfuß oder ein Hohlfuß-Programm. Die Übungen, die erscheinen, sind dieselben wie bei Plantarfasziitis und Plattfuß.',
-        'Für jemanden mit Hohlfuß und Schmerzen unter der Ferse überschneiden sich diese Übungen mit dem, was diese Seite empfiehlt. Für jemanden, dessen Schmerzen durch den Hohlfuß vor allem unter dem Fußballen sitzen oder eine neurologische Ursache haben, passt die App nicht gut, und eine medizinische Fachperson sollte den Übungsplan bestimmen.',
+        'Für jemanden mit Hohlfuß und Schmerzen unter der Ferse überschneiden sich diese Übungen mit dem, was diese Seite empfiehlt. Für jemanden, dessen Schmerzen durch den Hohlfuß vor allem unter dem Fußballen sitzen oder eine neurologische Ursache haben, passt die App nicht gut, und eine Ärztin oder ein Arzt sollte den Übungsplan bestimmen.',
       ],
     },
   ],
@@ -246,7 +246,7 @@ export const HIGH_ARCHES_DE: Guide = {
     },
     {
       q: 'Wie erkenne ich, ob ich einen Hohlfuß habe?',
-      a: 'Probier den Fußabdruck-Test: Mach die Fußsohle nass und stell dich auf eine flache, trockene Fläche. Ein hohes Gewölbe hinterlässt entlang der Außenkante wenig oder gar keinen Abdruck, oft nur Ferse und Fußballen, ein Plattfuß dagegen fast die ganze Sohle. Ein großer Unterschied zwischen deinen beiden Füßen ist es wert, ihn einer medizinischen Fachperson zu zeigen.',
+      a: 'Probier den Fußabdruck-Test: Mach die Fußsohle nass und stell dich auf eine flache, trockene Fläche. Ein hohes Gewölbe hinterlässt entlang der Außenkante wenig oder gar keinen Abdruck, oft nur Ferse und Fußballen, ein Plattfuß dagegen fast die ganze Sohle. Ein großer Unterschied zwischen deinen beiden Füßen ist es wert, ihn ärztlich ansehen zu lassen.',
     },
     {
       q: 'Ist ein Plattfuß oder ein Hohlfuß besser?',
@@ -255,7 +255,7 @@ export const HIGH_ARCHES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'deine Gewölbe mit der Zeit höher werden, was auf eine neurologische Ursache hindeuten kann',
       'ein Fuß ein deutlich höheres Gewölbe hat als der andere',
@@ -270,9 +270,9 @@ export const HIGH_ARCHES_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito enthält Wadendehnen, Plantarfaszien-Dehnen, Stabilitätstraining für das Sprunggelenk und Fußrollen, die alle für einen Hohlfuß relevant sind. Wenn du in der Körperkarte auf das Gewölbe zeigst, bietet die App Übungen für diesen Bereich an. Aber die App hat kein eigenes Ziel und kein Programm für Hohlfuß. Wenn dein Hohlfuß Schmerzen unter der Ferse macht, passen vielleicht die Ziele der App für Fersenschmerzen. Wenn dein Schmerz vor allem unter dem Fußballen sitzt oder mit einer neurologischen Erkrankung zusammenhängt, sollte eine medizinische Fachperson deinen Übungsplan bestimmen.',
+    text: 'Walkito enthält Wadendehnen, Plantarfaszien-Dehnen, Stabilitätstraining für das Sprunggelenk und Fußrollen, die alle für einen Hohlfuß relevant sind. Wenn du in der Körperkarte auf das Gewölbe zeigst, bietet die App Übungen für diesen Bereich an. Aber die App hat kein eigenes Ziel und kein Programm für Hohlfuß. Wenn dein Hohlfuß Schmerzen unter der Ferse macht, passen vielleicht die Ziele der App für Fersenschmerzen. Wenn dein Schmerz vor allem unter dem Fußballen sitzt oder mit einer neurologischen Erkrankung zusammenhängt, sollte eine Ärztin oder ein Arzt deinen Übungsplan bestimmen.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
   },
   crumb: 'Übungen bei Hohlfuß',

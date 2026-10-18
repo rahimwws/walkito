@@ -14,7 +14,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
   lede:
     'Übungen zum Kräftigen der Füße trainieren die kleinen Muskeln im Fuß und die größeren, die von der Wade herunterlaufen. Fang im Sitzen an, mit der Kurzer-Fuß-Übung, Zehenspreizen und Großzehenheben, geh dann zum Stehen über und dann auf ein Bein. In Studien wurden die Fußmuskeln innerhalb von etwa zwei Monaten größer und kräftiger.',
   intro: [
-    'Diese Seite ist der allgemeine Ratgeber für den ganzen Fuß. Für Plattfuß, Zehen oder Barfußschuhe sind die genaueren Seiten unten verlinkt.',
+    'Diese Seite ist der allgemeine Ratgeber für den ganzen Fuß. Für [Plattfuß](/de/plattfuss/), Zehen oder Barfußschuhe sind die genaueren Seiten unten verlinkt.',
   ],
   takeaways: [
     'In einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern hatte die Gruppe ohne Fußtraining innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit einem Fuß-Core-Programm (Taddei und Kollegen). Das ist eine einzelne Studie.',
@@ -53,7 +53,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       keyFact: 'Eine Übersichtsarbeit von 2023 über vier Studien fand, dass die meisten Fußprogramme 5\u00A0Sekunden Halten nutzten und vom Sitzen zum Stehen übergingen (de Souza und Kollegen).',
       paragraphs: [
         'Fang mit den Übungen an, die die kleinen Fußmuskeln gezielt ansprechen, im Sitzen, und nimm Übungen im Stehen und für das Gleichgewicht dazu, wenn sie leicht werden. Eine Übersichtsarbeit von 2023 von de Souza und Kollegen untersuchte vier randomisierte Studien zur Kräftigung der inneren Fußmuskeln. Die meisten nutzten die Kurzer-Fuß-Übung und Handtuchgreifen, mit Anspannungen von etwa 5\u00A0Sekunden und einer Steigerung vom Sitzen zum Stehen.',
-        'Die Dosen unten sind Startdosen. Mach die Übungen barfuß. Wenn eine Übung den Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. Jede Übung hat eine eigene Seite mit mehr Details, verlinkt in der [Übungsbibliothek](/exercises/) (auf Englisch).',
+        'Die Dosen unten sind Startdosen. Mach die Übungen barfuß. Wenn eine Übung den Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. Jede Übung hat eine eigene Seite mit mehr Details.',
       ],
       exercises: [
         {
@@ -126,7 +126,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
         'Walkito nutzt bei der Kurzer-Fuß-Übung dieselben drei Stufen: im Sitzen, dann im Stehen auf beiden Füßen, dann auf einem Bein. Wenn das Gewölbe der Schwerpunkt deines Plans ist, hebt dich der nächste Wochenplan eine Stufe höher, wenn du deine letzten zwei Einheiten mit dieser Übung als leicht bewertet hast und dein Morgenschmerz nicht gestiegen ist. Eine Einheit, die du als schwer bewertest, oder ein Morgenschmerz, der um 2\u00A0Punkte steigt, bringt dich eine Stufe zurück. Die zwei späteren Stufen siehst du unten.',
       ],
       bullets: [
-        '**Stufe 1, im Sitzen.** Kurzer Fuß, Zehenspreizen, Großzehenheben und Handtuchgreifen, alles im Sitzen.',
+        '**Stufe 1, im Sitzen.** Kurzer Fuß, Zehenspreizen, Großzehenheben und [Handtuchgreifen](/de/uebungen/handtuchgreifen/), alles im Sitzen.',
         '**Stufe 2, im Stehen auf beiden Füßen.** Kurzer Fuß halten im Stehen und beidbeiniges Fersenheben.',
         '**Stufe 3, auf einem Bein.** Kurzer Fuß halten auf einem Bein, dann Einbeinstand mit gehaltenem Gewölbe.',
         '**Später.** Einbeiniges Fersenheben und, wenn du läufst, kleine Hüpfer. Das sind größere Belastungen. Nimm sie erst dazu, wenn Stufe 3 leicht geht.',
@@ -178,7 +178,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
         'Übungen zum Fußkräftigen **senkten Laufverletzungen in einer guten Studie, aber eben nur in einer.** 2020 teilten Taddei und Kollegen 118\u00A0Freizeitläuferinnen und -läufer auf Langstrecken zufällig in eine Fuß-Core-Gruppe (57) und eine Kontrollgruppe (61) auf. Die Fuß-Core-Gruppe machte einen betreuten Kurs von etwa zwei Monaten für die Fuß- und Sprunggelenkmuskeln und trainierte danach mit Betreuung aus der Ferne weiter.',
         'Innerhalb von 12\u00A0Monaten hatte die Kontrollgruppe eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung. Die Autorinnen und Autoren sahen den Effekt nach etwa vier bis acht Monaten Training auftreten.',
         'Eine frühere, kleinere Studie desselben Teams mit 28\u00A0Läuferinnen und Läufern fand, dass etwa zwei Monate Fußtraining jeden gemessenen Fußmuskel im Vergleich zur Kontrollgruppe vergrößerten. Die Läuferinnen und Läufer drückten sich außerdem mit mehr Kraft vom Boden ab.',
-        'Beide Studien stammen von einer Forschungsgruppe in Brasilien, mit Freizeitläuferinnen und -läufern, die zu Beginn nicht verletzt waren. Wir wissen noch nicht, ob das Programm Anfängerinnen und Anfängern hilft oder Menschen, die schon Schmerzen haben. Wenn du läufst und jetzt Fersenschmerzen hast, fang mit [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) an.',
+        'Beide Studien stammen von einer Forschungsgruppe in Brasilien, mit Freizeitläuferinnen und -läufern, die zu Beginn nicht verletzt waren. Wir wissen noch nicht, ob das Programm Anfängerinnen und Anfängern hilft oder Menschen, die schon Schmerzen haben.',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med): Kontrollgruppe mit 2,42-fach höherer Verletzungswahrscheinlichkeit (95-%-KI 1,98 bis 3,62), p = 0,035, einfach verblindete RCT, Nachbeobachtung über 12\u00A0Monate. Taddei 2020 (Phys Ther Sport): einfach verblindete Machbarkeits-RCT, 28\u00A0Läuferinnen und Läufer, Muskelvolumen per MRT.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -223,7 +223,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     {
       h2: 'Hilft Fußkräftigung bei Plantarfasziitis oder Plattfuß?',
       paragraphs: [
-        'Bei Plantarfasziitis war Fußkräftigung zusätzlich zum Dehnen in einer Studie, die beides verglich, nicht besser als Dehnen allein. 2016 teilten Kamonseki und Kollegen 83\u00A0Menschen mit Plantarfasziitis für zwei Monate auf drei Gruppen auf:',
+        'Bei [Plantarfasziitis](/de/plantarfasziitis/) war Fußkräftigung zusätzlich zum Dehnen in einer Studie, die beides verglich, nicht besser als Dehnen allein. 2016 teilten Kamonseki und Kollegen 83\u00A0Menschen mit Plantarfasziitis für zwei Monate auf drei Gruppen auf:',
         {
           list: [
             'Fußkräftigung plus Dehnen.',
@@ -240,7 +240,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
       h2: 'Wie stark sind die Belege für Fußkräftigung?',
       paragraphs: [
         'Die Belege dafür, dass Fußübungen die Fußmuskeln kräftigen, zeigen in dieselbe Richtung, aber die Studien sind klein. Eine Übersichtsarbeit von 2025 von Peters-Dickie und Kollegen schloss 28 randomisierte Studien mit 1.399\u00A0Personen ein. Sie stützte Fußübungen für mehr Fußkraft, bewertete die Sicherheit aber als niedrig bis sehr niedrig, vor allem weil es pro Fragestellung wenige Studien gab und viele ein hohes Verzerrungsrisiko hatten. Die Ergebnisse zur Muskelgröße waren gemischt.',
-        'Die Belege dafür, dass kräftigere Füße weniger Verletzungen bedeuten, sind noch dünner und stützen sich vor allem auf die eine Läuferstudie oben. **Fußkräftigung ist risikoarm und günstig, und sie baut Kraft auf.** Ob sie deiner nächsten Verletzung vorbeugt, ist noch offen. Mehr dazu, wie diese Ratgeber Forschung bewerten, steht auf der Seite [Wissenschaft](/science/) (auf Englisch).',
+        'Die Belege dafür, dass kräftigere Füße weniger Verletzungen bedeuten, sind noch dünner und stützen sich vor allem auf die eine Läuferstudie oben. **Fußkräftigung ist risikoarm und günstig, und sie baut Kraft auf.** Ob sie deiner nächsten Verletzung vorbeugt, ist noch offen.',
       ],
       sourceNote: 'Peters-Dickie 2025: Metaanalysen zeigten, dass Minimalschuhe die Kraft der Zehen 2 bis 5 steigerten und Fußübungen die Bewegung des Gewölbes beim Laufen verringerten; Sicherheit niedrig bis sehr niedrig.',
       cites: [CITE.petersDickie],
@@ -259,7 +259,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     },
     {
       q: 'Sollen Übungen zum Fußkräftigen wehtun?',
-      a: 'Nein. Du solltest Anstrengung spüren und am Anfang vielleicht einen leichten Krampf unter dem Gewölbe, der nachlässt, wenn du entspannst. Stechender Schmerz oder ein Schmerz von 6/10 oder mehr heißt: Hör für heute auf. Wenn jedes Mal dieselbe Stelle wehtut oder dich der Schmerz nachts wach hält, geh zu einer medizinischen Fachperson, bevor du weitermachst.',
+      a: 'Nein. Du solltest Anstrengung spüren und am Anfang vielleicht einen leichten Krampf unter dem Gewölbe, der nachlässt, wenn du entspannst. Stechender Schmerz oder ein Schmerz von 6/10 oder mehr heißt: Hör für heute auf. Wenn jedes Mal dieselbe Stelle wehtut oder dich der Schmerz nachts wach hält, lass das zuerst ärztlich abklären, bevor du weitermachst.',
     },
     {
       q: 'Reicht Barfußgehen, um die Füße zu kräftigen?',
@@ -277,7 +277,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du Taubheit, Kribbeln oder Brennen in den Füßen hast oder Diabetes und offene Stellen oder Wunden an der Haut',
       'ein Fuß schwächer wird oder der Vorfuß beim Gehen schleift oder auf den Boden klatscht',
@@ -292,7 +292,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut einen Wochenplan rund um ein Ziel auf und enthält die Fußübungen auf dieser Seite: die Kurzer-Fuß-Übung vom Sitzen bis auf ein Bein, Zehenspreizen, Großzehenheben, Handtuchgreifen, Fersenheben und Gleichgewichtsübungen. Die Gewölbeübungen starten mit 3\u00A0Sätzen à 8 mit 5\u00A0Sekunden Halten und das Gleichgewicht mit 3-mal 20\u00A0Sekunden Halten. Mit jedem neuen Wochenplan hebt die App deine Schwerpunktübung eine Stufe höher, wenn du deine letzten zwei Einheiten damit als leicht bewertet hast und dein Morgenschmerz nicht gestiegen ist.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

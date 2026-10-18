@@ -23,7 +23,7 @@ export const SEVERS_FR: Guide = {
   lede:
     'La maladie de Sever, aussi appelée apophysite calcanéenne, est la cause la plus fréquente de douleur au talon chez l’enfant. Elle survient quand le cartilage de croissance à l’arrière de l’os du talon est irrité par la traction répétée du tendon d’Achille, en général pendant une poussée de croissance et un sport avec de la course ou des sauts. Ce n’est pas une maladie au sens habituel. Elle disparaît d’elle-même une fois le cartilage de croissance fermé.',
   intro: [
-    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur demande un professionnel de santé plutôt que du repos.',
+    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur relève d’un professionnel de santé plutôt que du repos.',
     'Walkito est une application d’exercices conçue pour les adultes souffrant du talon et de la voûte plantaire. Elle n’est pas conçue pour les enfants, et rien sur cette page ne recommande de l’utiliser avec un enfant. Si la douleur au talon de votre enfant ne s’améliore pas avec les mesures ci-dessous, un médecin du sport pédiatrique ou un podologue est la bonne prochaine étape.',
   ],
   takeaways: [
@@ -53,7 +53,7 @@ export const SEVERS_FR: Guide = {
         {
           list: [
             'Beaucoup de course et de sauts.',
-            'Des mollets raides.',
+            'Des [mollets raides](/fr/mollets-tendus/).',
             'Une cheville peu souple.',
             'Un IMC élevé.',
             'Des surfaces de jeu dures.',
@@ -67,7 +67,7 @@ export const SEVERS_FR: Guide = {
       h2: 'Quels sont les symptômes de la maladie de Sever\u00A0?',
       paragraphs: [
         'Le symptôme principal est une douleur à l’arrière ou sur les côtés du talon, en général pendant ou après l’activité, surtout après la course ou les sauts. La douleur est souvent décrite comme un bleu. Il y a rarement un gonflement ou un hématome visible. **Presser ou serrer les côtés du talon reproduit en général la douleur.** Ce test de compression est la vérification clinique habituelle.',
-        'Contrairement à la fasciite plantaire de l’adulte, pire aux premiers pas après le repos, la douleur de la maladie de Sever a tendance à s’aggraver avec l’activité et ne s’améliore pas à la marche. Certains enfants se mettent à boiter ou à marcher sur la pointe des pieds pour éviter de mettre du poids sur le talon.',
+        'Contrairement à la [fasciite plantaire](/fr/fasciite-plantaire/) de l’adulte, pire aux premiers pas après le repos, la douleur de la maladie de Sever a tendance à s’aggraver avec l’activité et ne s’améliore pas à la marche. Certains enfants se mettent à boiter ou à marcher sur la pointe des pieds pour éviter de mettre du poids sur le talon.',
         'La douleur peut aller de légère, seulement remarquée pendant le sport, à assez forte pour empêcher complètement l’enfant de jouer.',
       ],
     },
@@ -75,7 +75,7 @@ export const SEVERS_FR: Guide = {
       h2: 'Qu’est-ce qui aide la maladie de Sever\u00A0? Les preuves',
       keyFact: 'Dans un essai sur 101\u00A0enfants, les trois approches ont amélioré la douleur, et le groupe talonnette était plus satisfait à six semaines, même si la différence avait disparu à trois mois (Wiegerinck et coll., 2016).',
       paragraphs: [
-        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou semelles, et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et **aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.**',
+        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou [semelles](/fr/semelles-ou-exercices/), et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et **aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.**',
         'Dans un essai de 2016 sur 101\u00A0enfants de 8 à 15\u00A0ans, Wiegerinck et coll. ont comparé trois approches\u00A0:',
         {
           list: [
@@ -181,7 +181,7 @@ export const SEVERS_FR: Guide = {
     {
       q: 'Avec quoi peut-on confondre la maladie de Sever\u00A0?',
       cites: [CITE.wiegerinck],
-      a: 'Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15\u00A0ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis demandent un professionnel de santé pour écarter une fracture.',
+      a: 'Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15\u00A0ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis relèvent d’un professionnel de santé, qui pourra écarter une fracture.',
     },
     {
       q: 'Comment poser un strap (kinésio) pour la maladie de Sever\u00A0?',

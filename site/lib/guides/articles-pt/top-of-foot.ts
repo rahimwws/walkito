@@ -74,8 +74,8 @@ export const TOP_OF_FOOT_PT: Guide = {
         'Nenhum ensaio randomizado testou exercício especificamente para dor no peito do pé ou para tendinite dos extensores. A evidência aqui é honesta: **não sabemos se o exercício acelera a recuperação da tendinite dos extensores** em comparação só com a mudança no cadarço e o repouso.',
         'O que o exercício pode trabalhar são os fatores que contribuem. O tibial anterior, o músculo da frente da canela que levanta o pé, também é um extensor. Quando ele está fraco em relação à panturrilha, os tendões extensores menores do peito do pé recebem mais carga durante a caminhada.',
         'Fortalecer o tibial anterior com a elevação dos dedos (levantar a parte da frente do pé em pé, encostado na parede) é um jeito de reduzir esse desequilíbrio. Veja [exercícios para canelite](/pt/canelite-exercicios/) para saber mais sobre o tibial anterior.',
-        'O alongamento de panturrilha importa se o tornozelo dobra pouco para cima. Quando o tornozelo não consegue dobrar o suficiente, o pé compensa de jeitos que podem aumentar o estresse nas estruturas do peito do pé. Uma panturrilha tensa também é um fator de risco em comum com a [fascite plantar](/pt/exercicios-fascite-plantar/) e com a sobrecarga na parte da frente do pé.',
-        'Nos esporões ósseos dorsais e na artrose do meio do pé, o exercício não muda a anatomia do osso. O trabalho de mobilidade do tornozelo pode ajudar a manter a amplitude, e o fortalecimento pode reduzir os sintomas, mas o esporão ou o desgaste da articulação continuam lá. Nas fraturas por estresse, exercício é a abordagem errada até o osso se recuperar.',
+        'O alongamento de panturrilha importa se o tornozelo dobra pouco para cima. Quando o tornozelo não consegue dobrar o suficiente, o pé compensa de jeitos que podem aumentar o estresse nas estruturas do peito do pé. Uma [panturrilha tensa](/pt/panturrilha-tensa/) também é um fator de risco em comum com a [fascite plantar](/pt/exercicios-fascite-plantar/) e com a sobrecarga na parte da frente do pé.',
+        'Nos esporões ósseos dorsais e na artrose do meio do pé, o exercício não muda a anatomia do osso. O trabalho de [mobilidade do tornozelo](/pt/exercicios-mobilidade-tornozelo/) pode ajudar a manter a amplitude, e o fortalecimento pode reduzir os sintomas, mas o esporão ou o desgaste da articulação continuam lá. Nas fraturas por estresse, exercício é a abordagem errada até o osso se recuperar.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
     },
@@ -204,8 +204,8 @@ export const TOP_OF_FOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'O Walkito foi feito para dor no calcanhar e pé chato, não especificamente para dor no peito do pé. Mas se a sobrecarga dos tendões extensores faz parte do seu quadro, o fortalecimento do tibial anterior (elevação dos dedos) e o alongamento de panturrilha do app trabalham os desequilíbrios musculares que contribuem. Marcar o peito do pé no mapa de dor durante um check-in deixa o app acompanhar se a dor está mudando junto com os exercícios.',
+    h2: 'Como transformar isso em um plano',
+    text: 'O Walkito foi feito para dor no calcanhar e [pé chato](/pt/pe-chato/), não especificamente para dor no peito do pé. Mas se a sobrecarga dos tendões extensores faz parte do seu quadro, o fortalecimento do tibial anterior (elevação dos dedos) e o alongamento de panturrilha do app trabalham os desequilíbrios musculares que contribuem. Marcar o peito do pé no mapa de dor durante um check-in deixa o app acompanhar se a dor está mudando junto com os exercícios.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito não faz diagnóstico de dor no peito do pé. Se você suspeita de fratura por estresse, gota ou problema de nervo, procure um profissional de saúde antes de começar qualquer programa de exercícios.',
     ],

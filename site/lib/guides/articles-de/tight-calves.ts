@@ -55,7 +55,7 @@ export const TIGHT_CALVES_DE: Guide = {
       h2: 'Verursachen verspannte Waden Fuß- und Fersenschmerzen?',
       keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100 ohne ging ein Sprunggelenk, das sich nicht über 0\u00A0Grad hinaus beugen ließ, mit einer 23,3-fachen Chance auf eine Plantarfasziitis einher (Riddle und Kollegen, 2003).',
       paragraphs: [
-        'Verspannte Waden hängen mit Plantarfasziitis zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).',
+        'Verspannte Waden hängen mit [Plantarfasziitis](/de/plantarfasziitis/) zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).',
         'In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50\u00A0Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0\u00A0Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10\u00A0Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor Körpergewicht und Stehen bei der Arbeit.',
         'In einer späteren Studie mit 254\u00A0Personen mit Plantarfasziitis hatten 83\u00A0% eine eingeschränkte Beugung im Sprunggelenk, und 57\u00A0% aller Patientinnen und Patienten hatten allein einen verkürzten Gastrocnemius (Patel und DiGiovanni, 2011).',
         '**Beide Studien zeigen einen Zusammenhang, nicht, dass verspannte Waden eine Plantarfasziitis verursachen.** Die große Spanne um den Wert von 23,3 bedeutet auch, dass die wahre Zahl viel kleiner sein könnte. Trotzdem ist das ein Grund, warum die Leitlinie von 2023 zu Fersenschmerzen das Wadendehnen bei Schmerzen unter der Ferse mit A bewertet, ihrer besten Note.',
@@ -115,7 +115,7 @@ export const TIGHT_CALVES_DE: Guide = {
       exercises: [
         {
           name: 'Wadendehnung (gestrecktes Knie)',
-          evidence: { level: 'moderate', why: 'Bewertung A in der Leitlinie von 2023 zu Fersenschmerzen bei Schmerzen unter der Ferse. Eine Übersicht über fünf Studien fand einen kleinen Zuwachs bei der Beugung im Sprunggelenk.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad A in der Leitlinie von 2023 zu Fersenschmerzen bei Schmerzen unter der Ferse. Eine Übersicht über fünf Studien fand einen kleinen Zuwachs bei der Beugung im Sprunggelenk.' },
           dose: 'Walkito startet mit 2-mal 30\u00A0Sekunden Halten, jedes Bein',
           how: 'Hände an die Wand, ein Fuß nach hinten, das hintere Knie gestreckt, die Ferse unten, die Zehen zeigen nach vorn. Schieb die Hüfte Richtung Wand, bis du einen Zug hoch in der Wade spürst. Alle Schritte unter [Wade dehnen](/de/uebungen/wade-dehnen/).',
           often: 'An den meisten Tagen',
@@ -194,7 +194,6 @@ export const TIGHT_CALVES_DE: Guide = {
             'Gib einem neuen Paar Schuhe mit geringerer Sprengung Zeit, bevor du lange Läufe darin machst.',
           ],
         },
-        'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastung ein.',
         'Wenn du den ganzen Tag stehst:',
         {
           list: [
@@ -245,7 +244,7 @@ export const TIGHT_CALVES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'eine Wade geschwollen, warm, gerötet oder druckempfindlich ist, besonders nach einem langen Flug, einer Operation, Bettruhe oder in der Schwangerschaft. Das kann eine tiefe Venenthrombose sein (ein Blutgerinnsel in einer tiefen Beinvene) und braucht dringend, noch am selben Tag, ärztliche Versorgung',
       'du zusätzlich Brustschmerzen oder plötzliche Atemnot hast: Ruf den Notruf',
@@ -260,7 +259,7 @@ export const TIGHT_CALVES_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito ist eine App für iPhone und Android mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test die Wadenausdauer, damit du siehst, ob deine Waden kräftiger werden. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson, wenn eines der Warnzeichen oben auf dich zutrifft.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test die Wadenausdauer, damit du siehst, ob deine Waden kräftiger werden. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch, wenn eines der Warnzeichen oben auf dich zutrifft.',
     ],
     cta: 'Probier die Wadenroutine in Walkito aus.',
   },

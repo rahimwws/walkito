@@ -235,7 +235,7 @@ export const FLAT_FEET_PT: Guide = {
       paragraphs: [
         'Na pesquisa até agora, os exercícios para pé chato mudaram o arco depois de seis semanas ou mais, e só no pé chato flexível. Em um ensaio com 52\u00A0pessoas com pé chato **flexível**, um programa de seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudou duas medidas do formato do arco mais do que no grupo controle.',
         'A evidência sobre os exercícios para formar o arco sozinhos é mais fraca. Uma revisão de 2024 juntou estudos de treino de pé curto em pé chato em geral. No geral, não encontrou diferença clara em relação aos grupos controle no formato do arco ou na postura do pé. Só os programas com mais de seis semanas melhoraram o quanto o arco afunda com o seu peso, e os autores dizem que são necessários estudos maiores. Então conte com pelo menos seis semanas, e mais se você fizer o pé curto sozinho.',
-        `Esse é um dos motivos pelos quais o plano do Walkito não tem data para acabar. A meta do arco, sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, fica no plano até você alcançá-la, leve as semanas que levar. A sustentação do arco é testada a cada ${PROGRAM.testEveryDays}\u00A0dias até você alcançar a primeira meta, e depois a cada ${PROGRAM.testEveryDaysAfterGoal}, para você ver se ela está mudando. Os ensaios estão resumidos na [página de evidências](/science/) (em inglês).`,
+        `Esse é um dos motivos pelos quais o plano do Walkito não tem data para acabar. A meta do arco, sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, fica no plano até você alcançá-la, leve as semanas que levar. A sustentação do arco é testada a cada ${PROGRAM.testEveryDays}\u00A0dias até você alcançar a primeira meta, e depois a cada ${PROGRAM.testEveryDaysAfterGoal}, para você ver se ela está mudando.`,
       ],
       sourceNote:
         'Brijwasi e Borkar: a queda do navicular (o quanto o osso navicular, na parte de dentro do arco, desce quando você fica em pé) melhorou 0,4\u00A0cm, e o ângulo do arco 16\u00A0graus, mais do que no grupo controle. Cheng e colegas: sem diferença significativa no geral na queda do navicular nem no Foot Posture Index; a queda do navicular melhorou de forma significativa só no subgrupo de programas com mais de seis semanas.',
@@ -246,7 +246,7 @@ export const FLAT_FEET_PT: Guide = {
       paragraphs: [
         'Nenhum estudo desta página mostra que os exercícios para pé chato aliviem a [dor no arco](/pt/dor-no-arco-do-pe/), porque nenhum deles mediu isso. O ensaio e a revisão mediram o formato do arco. Eles mostram que o arco pode ser treinado. Não são evidência de que os mesmos exercícios aliviem um arco dolorido.',
         'A dor no calcanhar, e às vezes ao longo do arco, pode vir da fáscia plantar, a faixa de tecido que corre pela sola do pé. Se a sua dor é perto do calcanhar, a diretriz de 2023 para dor no calcanhar é o melhor guia. Para dor na sola do calcanhar, ela dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força um **B**. Esses exercícios estão em [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/).',
-        'O Walkito pode trabalhar as duas coisas ao mesmo tempo, como metas separadas: manhãs sem dor para a dor, e sustentar o arco para o arco. Como as duas dividem a semana está na [página do plano](/program/) (em inglês).',
+        'O Walkito pode trabalhar as duas coisas ao mesmo tempo, como metas separadas: manhãs sem dor para a dor, e sustentar o arco para o arco.',
       ],
       cites: [CITE.guideline],
     },
@@ -255,7 +255,7 @@ export const FLAT_FEET_PT: Guide = {
       paragraphs: [
         `Quando você alcança a meta do arco, sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, **o Walkito mantém o trabalho do arco no plano com uma dose menor.** A meta passa para manutenção, e a próxima meta entra no lugar. Alcançar a meta não significa que o trabalho do arco acaba.`,
         `Os testes também continuam, a cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0dias depois que você alcança a primeira meta. Se a sustentação do arco começar a cair, você vê nos números em vez de adivinhar.`,
-        'Se o seu calcanhar também dói, o calcanhar tem os próprios exercícios e a própria meta: veja [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/). Dúvidas sobre o app estão respondidas nas [perguntas frequentes](/faq/) (em inglês).',
+        'Se o seu calcanhar também dói, o calcanhar tem os próprios exercícios e a própria meta: veja [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
     },
   ],
@@ -351,7 +351,7 @@ export const HEEL_PAIN_PT: Guide = {
       h2: 'Quais exercícios ajudam na fascite plantar, e quanto você deve fazer?',
       figure: { id: 'plantar-fascia', caption: 'A fáscia plantar vai do osso do calcanhar até os dedos. A dor da fascite plantar costuma começar onde ela se prende ao calcanhar.', alt: 'Sola de um pé com a fáscia plantar em faixas brancas que se abrem do osso do calcanhar até a base dos dedos, e uma mancha vermelha no calcanhar onde a dor costuma começar.' },
       paragraphs: [
-        'Os exercícios para fascite plantar no Walkito são alongamentos da fáscia plantar e da panturrilha, treino de força para a panturrilha que sobe aos poucos, e rolar o pé na bolinha. Essas são as doses iniciais do Walkito, não uma prescrição. Um resumo de uma página está nas [fichas de exercícios para imprimir](/printable-exercise-sheets/) (em inglês). [Como estes guias são escritos](/pt/sobre-walkito/).',
+        'Os exercícios para fascite plantar no Walkito são alongamentos da fáscia plantar e da panturrilha, treino de força para a panturrilha que sobe aos poucos, e rolar o pé na bolinha. Essas são as doses iniciais do Walkito, não uma prescrição. [Como estes guias são escritos](/pt/sobre-walkito/).',
         'A ordem importa. Enquanto a dor for a sua meta, o Walkito mantém o trabalho de panturrilha leve, um degrau de cada vez:',
         {
           list: [
@@ -533,7 +533,7 @@ export const HEEL_PAIN_PT: Guide = {
         'Treino de força e alongamento ajudam na fascite plantar, e **o treino de força ajuda mais cedo.**',
         'Em um ensaio com 48\u00A0pessoas com fascite plantar confirmada por ultrassom, todos usaram palmilhas. Um grupo acrescentou elevações de calcanhar com carga alta dia sim, dia não. O outro alongou a fáscia plantar todo dia.',
         'Aos três meses, o grupo das elevações estava claramente à frente em dor e em função no dia a dia. Aos doze meses, os dois grupos estavam iguais. O treino de força adiantou a melhora. Não a deixou maior.',
-        'A diretriz apoia fazer os dois. O raciocínio estudo por estudo está na [página de evidências](/science/) (em inglês).',
+        'A diretriz apoia fazer os dois.',
       ],
       sourceNote:
         'Medido pelo Foot Function Index, em que uma pontuação menor significa menos dor e melhor função: 29\u00A0pontos a menos no grupo das elevações aos três meses (IC 95%: 6-52, p = 0,016), e 22 contra 16 aos doze meses, uma diferença não significativa.',
@@ -573,7 +573,7 @@ export const HEEL_PAIN_PT: Guide = {
       h2: 'O que acontece quando o calcanhar para de doer?',
       paragraphs: [
         `Quando a dor no calcanhar passa, o Walkito continua com uma dose menor, porque a dor no calcanhar pode voltar. Quando você alcança a meta de manhãs sem dor (dor da manhã em 1/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos), essa meta passa para manutenção e a próxima meta entra no lugar.`,
-        'Se os seus arcos também são baixos, o arco tem os próprios exercícios e o próprio tempo: veja [exercícios para pé chato](/pt/exercicios-pe-chato/). Dúvidas sobre o app estão respondidas nas [perguntas frequentes](/faq/) (em inglês).',
+        'Se os seus arcos também são baixos, o arco tem os próprios exercícios e o próprio tempo: veja [exercícios para pé chato](/pt/exercicios-pe-chato/).',
       ],
     },
   ],
@@ -593,7 +593,7 @@ export const HEEL_PAIN_PT: Guide = {
     },
     {
       q: 'Alongar ou fortalecer: o que é melhor para fascite plantar?',
-      a: 'Os dois ajudam, e fortalecer funciona mais rápido. Em um ensaio com 48\u00A0pessoas, as elevações de calcanhar com carga alta estavam claramente à frente do alongamento aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz de 2023 dá ao alongamento um A e ao treino de força um B. A [página de evidências](/science/) (em inglês) tem os detalhes.',
+      a: 'Os dois ajudam, e fortalecer funciona mais rápido. Em um ensaio com 48\u00A0pessoas, as elevações de calcanhar com carga alta estavam claramente à frente do alongamento aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz de 2023 dá ao alongamento um A e ao treino de força um B.',
     },
     {
       q: 'Esporão no calcanhar é a mesma coisa que fascite plantar?',

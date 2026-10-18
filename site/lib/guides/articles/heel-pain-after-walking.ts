@@ -27,7 +27,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   ],
   takeaways: [
     'The 2023 heel pain guideline describes plantar fasciitis pain as "most noticeable with weight bearing first thing in the morning or after a period of rest," but it also lists pain that worsens with prolonged weight-bearing activity as a key feature (Koc and colleagues, 2023).',
-    'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a body mass index over 30 and standing for most of the working day (Riddle and colleagues, 2003).',
+    'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a [body mass index over 30](/weight-and-plantar-fasciitis/) and standing for most of the working day (Riddle and colleagues, 2003).',
     'The guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).',
     'About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf work and load management (Latt and colleagues, 2020).',
     'Heel pain after walking that builds with every session and does not ease with rest can point to a stress fracture rather than plantar fasciitis. Squeezing the sides of the heel is one clinical sign.',
@@ -50,8 +50,8 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
         {
           list: [
             '**Heel fat pad thinning.** The fat pad under the heel bone cushions every step. When it thins or shifts, the bone takes more direct impact. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, worse on hard surfaces and with barefoot walking (Chang and colleagues, 2022). Plantar fasciitis pain usually sits at the inside front of the heel. Fat pad pain sits right under the center. If barefoot walking on tile or concrete is clearly worse than walking in cushioned shoes, fat pad thinning is worth considering. See [heel fat pad syndrome](/heel-fat-pad-syndrome/) for more.',
-            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-            '**Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot.',
+            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. For hikes with long climbs and descents, see [foot pain after hiking](/hiking-foot-pain/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+            '**Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot. [Plantar fasciitis vs a stress fracture](/plantar-fasciitis-vs-stress-fracture/) compares the two side by side.',
             '**Referred pain from the lower back or nerve entrapment.** Heel pain that comes with numbness, tingling or burning can point to a nerve issue, not a tissue-loading problem. This is a reason to see a clinician first.',
           ],
         },
@@ -156,7 +156,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
     {
       h2: 'How far should you walk when your heel hurts?',
       paragraphs: [
-        'The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.',
+        'The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there. [How much walking is OK with plantar fasciitis](/walking-with-plantar-fasciitis/) gives a simple pain rule and a way back up.',
         'A practical approach:',
         {
           list: [

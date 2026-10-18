@@ -20,7 +20,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
     'Como rolar o pé na bolinha ou na garrafa congelada para fascite plantar: técnica, quanto tempo rolar, e o que isso faz e o que não faz.',
   h1: 'Rolar o pé na bolinha para fascite plantar: bolinha, garrafa e técnica',
   lede:
-    'Rolar a sola do pé sobre uma bolinha ou uma garrafa é um dos cuidados caseiros mais comuns para fascite plantar. É gostoso, e profissionais de saúde recomendam como forma de acalmar o tecido entre as sessões. Mas nenhum ensaio randomizado testou o rolamento sozinho na fascite plantar. Esta página explica o que rolar o pé faz, o que não faz, e onde a garrafa congelada entra, com honestidade.',
+    'Rolar a sola do pé sobre uma bolinha ou uma garrafa é um dos cuidados caseiros mais comuns para [fascite plantar](/pt/fascite-plantar/). É gostoso, e profissionais de saúde recomendam como forma de acalmar o tecido entre as sessões. Mas nenhum ensaio randomizado testou o rolamento sozinho na fascite plantar. Esta página explica o que rolar o pé faz, o que não faz, e onde a garrafa congelada entra, com honestidade.',
   takeaways: [
     'Nenhum ensaio randomizado testou rolar o pé como intervenção isolada para fascite plantar. É muito recomendado como medida de conforto e recuperação, não como intervenção principal.',
     'A diretriz de 2023 para dor no calcanhar recomenda alongamento (grau A) e treino de força (grau B) como os pilares de exercício. Rolar o pé não recebe um grau próprio.',
@@ -142,7 +142,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o rolamento do pé no fim das sessões e nos dias de recuperação. O app cuida do horário e da ordem, para você não ter que lembrar em quais dias rolar o pé e em quais alongar ou fortalecer.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

@@ -19,7 +19,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
   lede:
     'Beim exzentrischen Fersenabsenken kommst du auf beiden Füßen hoch und senkst dich langsam auf einem ab, wobei die Ferse unter die Stufenkante sinkt. Die Absenkphase, eine exzentrische Muskelarbeit, ist der eigentliche Zweck. Die Übung wurde für die Achillessehnen-Tendinopathie entwickelt und zuerst 1998 in einer Studie von Alfredson getestet, in der 15\u00A0Sportler wieder laufen konnten, nachdem sie sie drei Monate lang zweimal am Tag gemacht hatten.',
   takeaways: [
-    'Die Leitlinie von 2024 zur Achillessehne bewertet Übungen (jede Art der Sehnenbelastung) bei Tendinopathie im Mittelteil der Achillessehne mit **A**, ihrer besten Bewertung (Chimenti und Kollegen, 2024).',
+    'Die Leitlinie von 2024 zur Achillessehne bewertet Übungen (jede Art der Sehnenbelastung) bei Tendinopathie im Mittelteil der Achillessehne mit **A**, dem höchsten Empfehlungsgrad (Chimenti und Kollegen, 2024).',
     'Eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0randomisierten Studien fand kein Übungsprotokoll, das klar besser war als ein anderes. Alle waren besser als keine Übungen (van der Vlist und Kollegen, 2021).',
     'Bei Schmerzen am Ansatz der Achillessehne (direkt am Fersenbein) sollte das Fersenabsenken auf Bodenhöhe bleiben und nicht unter die Stufenkante gehen, weil eine tiefe Dorsalflexion die Sehne gegen den Knochen drückt (Jonsson und Kollegen, 2008).',
     'Das Alfredson-Protokoll sieht 3 x 15 zweimal am Tag vor, 7\u00A0Tage pro Woche, etwa drei Monate lang. Walkito beginnt mit 3 x 10, jedes Bein, an Krafttagen.',
@@ -148,11 +148,11 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     {
       q: 'Hilft exzentrisches Fersenabsenken bei Plantarfasziitis?',
       cites: [CITE.rathleff],
-      a: 'Exzentrisches Absenken wurde für die Achillessehne entwickelt, nicht für die Plantarfaszie. Bei Plantarfasziitis ist die getestete Übung das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem ein Handtuch unter den Zehen die Faszie einbezieht. Das Fersenabsenken kommt in der Wadenkette von Walkito später, nach dem Fersenheben mit Handtuch.',
+      a: 'Exzentrisches Absenken wurde für die Achillessehne entwickelt, nicht für die Plantarfaszie. Bei [Plantarfasziitis](/de/plantarfasziitis/) ist die getestete Übung das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem ein Handtuch unter den Zehen die Faszie einbezieht. Das Fersenabsenken kommt in der Stufenfolge von Walkito später, nach dem Fersenheben mit Handtuch.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du ein plötzliches Knallen oder Schnappen gespürt hast oder ein Gefühl, als hätte dich jemand hinten ans Bein getreten',
       'die Sehne geschwollen, gerötet, warm ist oder eine sichtbare Lücke hat',
@@ -164,9 +164,9 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Exzentrisches Fersenabsenken ist eine Stufe in der Wadenkette, die Walkito in einen Wochenplan einbaut. Die Kette beginnt mit Fersenheben im Sitzen und geht über das Fersenheben beidbeinig, das Halten, das Fersenheben mit Handtuch und das Fersenabsenken bis zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
+    text: 'Exzentrisches Fersenabsenken ist eine Stufe in der Stufenfolge, die Walkito in einen Wochenplan einbaut. Die Kette beginnt mit Fersenheben im Sitzen und geht über das Fersenheben beidbeinig, das Halten, das Fersenheben mit Handtuch und das Fersenabsenken bis zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass die Stelle von einer medizinischen Fachperson ansehen, bevor du sie stark belastest. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass die Stelle von einer Ärztin oder einem Arzt ansehen, bevor du sie stark belastest. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

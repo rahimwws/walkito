@@ -18,7 +18,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
     'Como fazer o exercício de pé curto para pé chato: dicas de técnica, séries e repetições, de sentado a em pé, erros comuns e o que a pesquisa mostra.',
   h1: 'Exercício de pé curto: como fazer, séries e progressão',
   lede:
-    'O exercício de pé curto treina os músculos pequenos de dentro do pé para sustentar o arco sem dobrar os dedos. Você puxa a parte da frente do pé em direção ao calcanhar para o arco encurtar e subir. É o exercício que uma revisão narrativa de 2015 chamou de base do treino do “core do pé” (foot core), e ele aparece na maioria dos programas para pé chato e fascite plantar que trabalham os músculos intrínsecos do pé.',
+    'O exercício de pé curto treina os músculos pequenos de dentro do pé para sustentar o arco sem dobrar os dedos. Você puxa a parte da frente do pé em direção ao calcanhar para o arco encurtar e subir. É o exercício que uma revisão narrativa de 2015 chamou de base do treino do “core do pé” (foot core), e ele aparece na maioria dos programas para pé chato e [fascite plantar](/pt/fascite-plantar/) que trabalham os músculos intrínsecos do pé.',
   takeaways: [
     'Um estudo de ressonância magnética de 2016 com 8\u00A0atletas mostrou que o pé curto produziu a maior ativação média (até 34,9%) em três dos quatro músculos plantares intrínsecos testados, em comparação com abrir os dedos, estender o dedão e estender do segundo ao quinto dedo (Gooding e colegas, 2016).',
     'Uma pesquisa com eletromiografia mostrou que o abdutor do hálux, o músculo que sustenta a parte de dentro do arco, ficou claramente mais ativo no pé curto do que ao puxar a toalha com os dedos (Jung e colegas, 2011).',
@@ -31,7 +31,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'O que é o exercício de pé curto?',
       paragraphs: [
         'O exercício de pé curto é uma contração isométrica dos músculos intrínsecos do pé. Você diminui a distância entre a parte da frente do pé e o calcanhar puxando um em direção ao outro, o que levanta o arco. Os dedos ficam esticados e relaxados o tempo todo. Uma revisão de 2015 de McKeon e colegas o chamou de exercício central do seu modelo de “core do pé”, comparando os músculos intrínsecos do pé aos músculos profundos do core do tronco.',
-        'Ele também é chamado de doming do arco, doming do pé ou exercício de encurtar o pé. É diferente de puxar a toalha com os dedos ou de dobrar os dedos, porque esses exercícios usam a flexão dos dedos, que recruta os músculos flexores longos dos dedos, que descem da canela. O exercício de pé curto busca isolar os músculos que ficam inteiramente dentro do pé.',
+        'Ele também é chamado de doming do arco, doming do pé ou exercício de encurtar o pé. É diferente de [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/) ou de dobrar os dedos, porque esses exercícios usam a flexão dos dedos, que recruta os músculos flexores longos dos dedos, que descem da canela. O exercício de pé curto busca isolar os músculos que ficam inteiramente dentro do pé.',
       ],
       cites: [CITE.mcKeon],
     },
@@ -125,7 +125,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'O que a pesquisa diz sobre os exercícios de pé curto?',
       keyFact: 'Em um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível, um programa de seis semanas que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudou o formato do arco mais do que em um grupo controle (Brijwasi e Borkar, 2023).',
       paragraphs: [
-        'A evidência mais forte vem de programas que juntam o exercício de pé curto com outros exercícios, não do pé curto sozinho. Em um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível, Brijwasi e Borkar testaram um programa de seis semanas com:',
+        'A evidência mais forte vem de programas que juntam o exercício de pé curto com outros exercícios, não do pé curto sozinho. Em um ensaio de 2023 com 52\u00A0pessoas com [pé chato](/pt/pe-chato/) flexível, Brijwasi e Borkar testaram um programa de seis semanas com:',
         {
           list: [
             'Exercícios de pé curto.',
@@ -178,7 +178,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano que inclui o exercício de pé curto em uma progressão de três degraus: sentado, em pé e depois em uma perna. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis. Você escolhe sessões de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias mostra se o tempo de sustentação do arco está melhorando.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

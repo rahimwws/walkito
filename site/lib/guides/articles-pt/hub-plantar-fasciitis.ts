@@ -21,7 +21,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     'O que é a fascite plantar, sintomas e causas, o que a diretriz clínica de 2023 recomenda, quanto tempo dura a recuperação e quais exercícios ajudam.',
   h1: 'Fascite plantar: sintomas, causas e o que ajuda segundo a evidência',
   lede:
-    'A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor no calcanhar embaixo do pé. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.',
+    'A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor na sola do calcanhar. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.',
   takeaways: [
     'A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B (Koc e colegas, 2023).',
     'Cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento, treino de força e calçados com bom suporte, muitas vezes em alguns meses (Latt e colegas, 2020).',
@@ -37,7 +37,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       paragraphs: [
         'A fascite plantar é uma condição de sobrecarga da fáscia plantar. A fáscia plantar é uma faixa resistente de tecido conjuntivo que corre pela sola do pé, do osso do calcanhar (o calcâneo) até a base dos dedos. Ela sustenta o arco e absorve impacto a cada passo.',
         'Quando a fáscia recebe mais carga do que consegue recuperar, o tecido fica irritado perto de onde se prende no calcanhar. O nome termina em “-ite”, o que sugere inflamação, mas o entendimento atual aponta mais para um processo degenerativo no tecido do que para uma inflamação contínua. Alguns profissionais preferem dizer “fasciopatia plantar”. O nome não muda os sintomas nem a abordagem recomendada.',
-        'A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor no calcanhar embaixo do pé.',
+        'A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor na sola do calcanhar.',
       ],
       cites: [CITE.guideline, CITE.latt],
     },
@@ -55,7 +55,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       keyFact: 'Em um estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, a dorsiflexão do tornozelo reduzida teve razão de chances de 23,3 para fascite plantar, o fator de risco mais forte medido (Riddle e colegas, 2003).',
       paragraphs: [
         'A fascite plantar aparece quando a fáscia recebe mais carga do que consegue aguentar e recuperar. A carga pode ser demais de uma vez (um salto repentino na quilometragem de corrida) ou constante ao longo do tempo (ficar em pé num piso duro o dia todo).',
-        'Um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles encontrou que a dorsiflexão do tornozelo reduzida era o fator de risco independente mais forte, com razão de chances de 23,3. Em outra série, com 254\u00A0pessoas com fascite plantar, 52 a 60% tinham um encurtamento só do gastrocnêmio, o músculo maior e mais superficial da panturrilha. Ficar muito tempo em pé no trabalho aumentou as chances 3,6\u00A0vezes. Um índice de massa corporal mais alto também aumentou.',
+        'Um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles encontrou que a dorsiflexão do tornozelo reduzida era o fator de risco independente mais forte, com razão de chances de 23,3. Em outra série, com 254\u00A0pessoas com fascite plantar, 52 a 60% tinham um encurtamento só do gastrocnêmio, o músculo maior e mais superficial da panturrilha. Ficar muito tempo em pé no trabalho aumentou as chances 3,6\u00A0vezes. Um índice de massa corporal mais alto também aumentou. Se o seu calcanhar dói na gravidez, o guia de [fascite plantar na gravidez](/pt/fascite-plantar-gravidez/) explica o que muda nessa fase.',
         'A diretriz cita outros fatores de risco:',
         {
           list: [
@@ -64,7 +64,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
             'Profissões em que se passa muito tempo em pé.',
           ],
         },
-        'Pé chato ou arco alto podem mudar o caminho da carga pela fáscia, mas nenhum dos dois garante que a condição vai aparecer.',
+        '[Pé chato](/pt/pe-chato/) ou [arco alto](/pt/pe-cavo-exercicios/) podem mudar o caminho da carga pela fáscia, mas nenhum dos dois garante que a condição vai aparecer.',
         '**A fascite plantar costuma vir de uma combinação**:',
         {
           list: [
@@ -104,12 +104,12 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       h2: 'O que ajuda na fascite plantar?',
       keyFact: 'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais (Rathleff e colegas, 2015).',
       paragraphs: [
-        'A diretriz clínica de 2023 dá a cada abordagem um grau conforme a força da evidência por trás dela. As recomendações mais fortes são alongamento, bandagem, terapia manual feita por um profissional e talas noturnas para dor da manhã que não passa. O treino de força vem em seguida. A tabela abaixo lista as principais opções com os graus da diretriz.',
+        'A diretriz clínica de 2023 dá a cada abordagem um grau conforme a força da evidência por trás dela. As recomendações mais fortes são alongamento, [bandagem](/pt/bandagem-fascite-plantar/), terapia manual feita por um profissional e [talas noturnas](/pt/tala-noturna-fascite-plantar/) para dor da manhã que não passa. O treino de força vem em seguida. A tabela abaixo lista as principais opções com os graus da diretriz.',
         '**Nenhuma opção funciona para todo mundo.** A maioria das pessoas começa com alongamento e calçados com bom suporte, acrescenta treino de força quando a dor inicial diminui, e procura um profissional de saúde para as outras opções se a evolução travar.',
-        'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz recomenda não usar palmilhas sozinhas como abordagem isolada de curto prazo e não somar ultrassom terapêutico ao alongamento.',
+        'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz recomenda não usar [palmilhas](/pt/palmilhas-ou-exercicios/) sozinhas como abordagem isolada de curto prazo e não somar ultrassom terapêutico ao alongamento.',
       ],
       table: {
-        caption: 'Graus da diretriz de 2023 para dor no calcanhar embaixo do pé',
+        caption: 'Graus da diretriz de 2023 para dor na sola do calcanhar',
         head: ['Abordagem', 'Grau', 'Observações'],
         rows: [
           ['Alongamento da fáscia plantar e da panturrilha', '**A**', 'Grau máximo. A base do tratamento conservador.'],
@@ -133,7 +133,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       keyFact: 'Em um grupo de 174\u00A0pessoas, cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor aos dez anos, a maioria só leve (Hansen e colegas, 2018).',
       paragraphs: [
         'Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento sem cirurgia, muitas vezes em alguns meses. Um acompanhamento mais longo de 174\u00A0pacientes dá um quadro mais detalhado: cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor depois de dez anos em média, embora a maioria deles relatasse só sintomas leves.',
-        'A recuperação depende de há quanto tempo você tem a dor, do que você faz a respeito, e de alguns fatores que você não controla. O grupo de Hansen 2018 encontrou que ser mulher e ter dor nos dois calcanhares eram preditores significativos de recuperação mais lenta. IMC, idade, espessura da fáscia e presença de esporão não eram.',
+        'A recuperação depende de há quanto tempo você tem a dor, do que você faz a respeito, e de alguns fatores que você não controla. O grupo de Hansen 2018 encontrou que ser mulher e ter dor nos dois calcanhares eram preditores significativos de recuperação mais lenta. IMC, idade, espessura da fáscia e presença de [esporão](/pt/fascite-plantar-ou-esporao/) não eram.',
         'A pergunta útil não é “quantas semanas até acabar”, e sim “a minha dor da manhã está menor este mês do que no mês passado?”. **Essa tendência é o marco de verdade.** [Quanto tempo dura a fascite plantar?](/pt/quanto-tempo-dura-fascite-plantar/) traz toda a evidência sobre o tempo de recuperação.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -146,7 +146,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       ],
       bullets: [
         'O [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) puxa os dedos para trás para tensionar a fáscia de leve antes de você ficar em pé.',
-        'O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e o [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) trabalham a panturrilha tensa que puxa o calcanhar.',
+        'O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e o [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) trabalham a [panturrilha tensa](/pt/panturrilha-tensa/) que puxa o calcanhar.',
         'A [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) é a elevação de calcanhar com carga do ensaio de Rathleff.',
         '[Rolar o pé na bolinha](/pt/exercicios/massagem-pe-bolinha/) acalma o tecido entre as sessões.',
       ],
@@ -171,7 +171,6 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         '[Pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala dos exercícios e dos calçados para quem passa o trabalho em pé.',
         '[Enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/) trata do peso de turnos longos em piso duro.',
         '[Mesa para trabalhar em pé e dor nos pés](/pt/mesa-em-pe-dor-nos-pes/) fala da transição entre sentado e em pé.',
-        '[Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) explica como ajustar o treino quando o calcanhar dói.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -182,9 +181,9 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         {
           list: [
             '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. Rigidez nos primeiros passos é comum, mas a dor fica mais em cima. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
-            '**Síndrome do coxim gorduroso do calcanhar.** Uma dor funda no centro do calcanhar, pior em superfícies duras e descalço. Uma revisão de escopo de 2022 observou que pode ser difícil diferenciá-la da fascite plantar sem exame de imagem. A dor do coxim gorduroso fica bem embaixo, no centro, enquanto a dor da fascite fica na parte de dentro e da frente.',
+            '**Síndrome do coxim gorduroso do calcanhar.** Uma dor funda no centro do calcanhar, pior em superfícies duras e descalço. Uma revisão de escopo de 2022 observou que pode ser difícil diferenciá-la da fascite plantar sem exame de imagem. A dor do [coxim gorduroso](/pt/sindrome-coxim-gorduroso-calcanhar/) fica bem embaixo, no centro, enquanto a dor da fascite fica na parte de dentro e da frente.',
             '**Esporão no calcanhar.** Um crescimento de osso na parte de baixo do osso do calcanhar. Muita gente tem um sem sentir dor nenhuma. No grupo de Hansen 2018, com 174\u00A0pacientes, ter esporão no início não teve efeito significativo em quanto tempo os sintomas duraram. O esporão muitas vezes está lá, mas não é ele que causa a dor.',
-            '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. Pode doer em repouso ou à noite. Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
+            '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. Pode [doer em repouso ou à noite](/pt/dor-no-calcanhar-a-noite/). Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
             '**Artrite inflamatória.** Quando os dois calcanhares doem, a rigidez da manhã dura mais de 30\u00A0minutos e outras articulações estão rígidas ou inchadas, o padrão aponta para algo sistêmico. Um profissional de saúde deve avaliar.',
           ],
         },
@@ -205,7 +204,6 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         '[Elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) explica o protocolo de elevação de calcanhar do ensaio de Rathleff.',
         '[Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) fala da dor da manhã, das talas noturnas e de outras condições com dor nos primeiros passos.',
         '[Quanto tempo dura a fascite plantar?](/pt/quanto-tempo-dura-fascite-plantar/) traz o tempo de recuperação, os preditores e o que fazer se a evolução travar.',
-        '[Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) fala do controle de carga e de mudanças no treino.',
         '[Pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala dos exercícios e dos calçados para quem fica muito tempo em pé.',
         '[Enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/) trata de turnos longos em piso duro.',
         '[Mesa para trabalhar em pé e dor nos pés](/pt/mesa-em-pe-dor-nos-pes/) fala da transição entre sentado e em pé.',
@@ -274,7 +272,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa descobrir quais exercícios fazer, em que ordem, nem quando avançar. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para fascite plantar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar.',

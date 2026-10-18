@@ -226,7 +226,7 @@ export const TOP_OF_FOOT_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito está construido alrededor del dolor de talón y el pie plano, no del dolor en el empeine específicamente. Pero si la sobrecarga de los tendones extensores es parte de tu panorama, el fortalecimiento del tibial anterior (elevaciones de la punta del pie) y el estiramiento de pantorrilla en la app abordan los desequilibrios musculares que contribuyen. Marcar el empeine en el mapa de dolor durante un check-in le permite a la app rastrear si el dolor está cambiando junto con tus ejercicios.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio. Walkito no diagnostica el dolor en el empeine. Si sospechas una fractura por estrés, gota o un problema de nervio, consulta a un profesional de la salud antes de empezar cualquier programa de ejercicio.',

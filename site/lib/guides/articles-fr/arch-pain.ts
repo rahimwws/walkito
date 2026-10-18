@@ -27,7 +27,7 @@ export const ARCH_PAIN_FR: Guide = {
     'La dysfonction du tendon tibial postérieur, un affaiblissement du tendon qui soutient la voûte, est la cause la plus fréquente du pied plat acquis de l’adulte (Ross et coll., 2018).',
     'Les pieds plats comme le pied creux modifient la façon dont la force traverse la voûte à la marche, mais les schémas de douleur et les exercices diffèrent.',
     'Une flexion dorsale de cheville réduite, c’est-à-dire un mollet raide, était le facteur de risque indépendant le plus fort de la fasciite plantaire dans une étude cas-témoins de 50\u00A0cas et 100\u00A0témoins (Riddle et coll., 2003).',
-    'Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse demande un professionnel de santé pour écarter une compression nerveuse ou une cause neurologique avant l’exercice.',
+    'Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse relève d’un professionnel de santé, qui pourra écarter une compression nerveuse ou une cause neurologique avant l’exercice.',
   ],
   toc: true,
   sections: [
@@ -42,7 +42,7 @@ export const ARCH_PAIN_FR: Guide = {
             '**La dysfonction du tendon tibial postérieur** est la cause la plus fréquente du pied plat acquis de l’adulte. Le tendon tibial postérieur passe derrière la malléole interne et sous la voûte, qu’il maintient. Quand ce tendon s’affaiblit ou se déchire, la voûte s’affaisse progressivement. La douleur se ressent le long de l’intérieur de la cheville et dans la voûte, et s’aggrave avec l’activité. Une revue systématique de 2018 sur l’exercice dans cette dysfonction a trouvé des preuves limitées mais prometteuses pour le renforcement et les étirements. Voir [dysfonction du tendon tibial postérieur\u00A0: exercices](/fr/dysfonction-tendon-tibial-posterieur/).',
             '**Le pied creux (pes cavus)** fait mal à la voûte d’une autre façon. Une voûte haute et rigide ne fléchit pas assez pour amortir les chocs, donc la force se concentre sous le talon et l’avant-pied au lieu de se répartir sur le médio-pied. Dans un pied creux, la douleur sous la voûte vient souvent d’un fascia plantaire raide. Voir [pied creux\u00A0: exercices](/fr/pied-creux-exercices/).',
             '**La surcharge**, sans problème identifié, est fréquente chez les personnes qui augmentent brusquement leur charge de marche, de course ou de station debout. Les muscles de la voûte et le fascia plantaire ne sont pas encore assez forts pour cette nouvelle demande, et ils protestent. Cela s’améliore en général avec un retour progressif à la charge précédente, plus un renforcement du mollet et de la voûte.',
-            '**Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela demande un professionnel de santé.',
+            '**Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela relève d’un professionnel de santé.',
           ],
         },
       ],
@@ -75,7 +75,7 @@ export const ARCH_PAIN_FR: Guide = {
       keyFact: 'Dans la recommandation de 2023 sur la douleur au talon, les étirements du fascia plantaire et du mollet obtiennent la meilleure note de preuve, A, et le renforcement une note en dessous, B (Koc et coll., 2023).',
       paragraphs: [
         'Les exercices ci-dessous visent la voûte elle-même et les muscles du mollet qui tirent dessus. Ils conviennent le mieux quand la douleur à la voûte est liée à une fasciite plantaire, à des pieds plats ou à une surcharge générale. En cas de dysfonction du tendon tibial postérieur ou de douleur d’origine nerveuse, c’est un professionnel de santé qui doit orienter le plan d’exercices. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour la journée.',
-        'Ce sont les doses de départ de Walkito, pas celles des protocoles de recherche. La recommandation de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet A, et le renforcement B. L’exercice du pied court et le massage avec une balle ont, seuls, des preuves plus minces. [Comment ces guides sont rédigés](/fr/a-propos/).',
+        'Ce sont les doses de départ de Walkito, pas celles des protocoles de recherche. La recommandation de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet A, et le renforcement B. L’[exercice du pied court](/fr/exercices/pied-court/) et le massage avec une balle ont, seuls, des preuves plus minces. [Comment ces guides sont rédigés](/fr/a-propos/).',
       ],
       exercises: [
         {
@@ -156,7 +156,7 @@ export const ARCH_PAIN_FR: Guide = {
     {
       h2: 'Quand une douleur à la voûte signale-t-elle autre chose\u00A0?',
       paragraphs: [
-        'La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui demandent un professionnel de santé avant l’exercice\u00A0:',
+        'La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui relèvent d’un professionnel de santé avant l’exercice\u00A0:',
         {
           list: [
             '**Symptômes nerveux\u00A0:** Une douleur avec engourdissements, fourmillements ou brûlures peut venir d’un syndrome du canal tarsien, où le nerf tibial postérieur est comprimé derrière la malléole interne. Cela demande un diagnostic clinique, pas seulement de l’exercice.',
@@ -181,7 +181,7 @@ export const ARCH_PAIN_FR: Guide = {
     {
       h2: 'Et les semelles orthopédiques et les chaussures\u00A0?',
       paragraphs: [
-        'La recommandation de 2023 sur la douleur au talon donne une note B contre l’utilisation des semelles orthopédiques seules pour la douleur à court terme de la fasciite plantaire. Les semelles associées à d’autres soins, comme les étirements, obtiennent un C en leur faveur. Les chaussures qui soutiennent le pied sont souvent conseillées et peuvent réduire l’inconfort, mais aucun grand essai n’a montré qu’elles soient meilleures que les étirements et le renforcement.',
+        'La recommandation de 2023 sur la douleur au talon donne une note B contre l’utilisation des [semelles orthopédiques](/fr/semelles-ou-exercices/) seules pour la douleur à court terme de la fasciite plantaire. Les semelles associées à d’autres soins, comme les étirements, obtiennent un C en leur faveur. Les chaussures qui soutiennent le pied sont souvent conseillées et peuvent réduire l’inconfort, mais aucun grand essai n’a montré qu’elles soient meilleures que les étirements et le renforcement.',
         'Pour les pieds plats, un soutien de voûte interne peut réduire l’affaissement de la voûte debout et à la marche, ce qui laisse moins de travail au tendon tibial postérieur et au fascia plantaire. Pour le pied creux, une semelle amortissante absorbe les chocs que la voûte rigide n’absorbe pas. Dans un essai de 2006 sur 154\u00A0personnes souffrant d’un pied creux douloureux, des orthèses plantaires sur mesure ont amélioré la douleur et la fonction davantage qu’une fausse semelle à trois mois (Burns et coll., 2006).',
         '**Les chaussures et les semelles aident à gérer les symptômes pendant que l’exercice construit la capacité dont le pied a besoin.** L’un ne remplace pas l’autre.',
       ],
@@ -196,7 +196,7 @@ export const ARCH_PAIN_FR: Guide = {
     },
     {
       q: 'Pourquoi j’ai mal à la voûte plantaire quand je marche\u00A0?',
-      a: 'Une douleur à la voûte à la marche vient en général de quelques sources\u00A0: une fasciite plantaire, des pieds plats qui laissent la voûte s’affaisser sous la charge, une dysfonction du tendon tibial postérieur, un mollet raide qui reporte la contrainte sur la voûte, ou simplement plus de marche que votre pied n’y est habitué. Le schéma de la douleur, surtout si elle est pire le matin ou après l’activité, aide à trouver laquelle.',
+      a: 'Une douleur à la voûte à la marche vient en général de quelques sources\u00A0: une fasciite plantaire, des pieds plats qui laissent la voûte s’affaisser sous la charge, une dysfonction du tendon tibial postérieur, un [mollet raide](/fr/mollets-tendus/) qui reporte la contrainte sur la voûte, ou simplement plus de marche que votre pied n’y est habitué. Le schéma de la douleur, surtout si elle est pire le matin ou après l’activité, aide à trouver laquelle.',
     },
     {
       q: 'Les pieds plats peuvent-ils donner mal à la voûte plantaire\u00A0?',

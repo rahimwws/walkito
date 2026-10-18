@@ -18,7 +18,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
     'Como fazer o alongamento do sóleo (joelho dobrado) para fascite plantar e panturrilha tensa: técnica, por que é um alongamento à parte, séries e tempo.',
   h1: 'Alongamento do sóleo (joelho dobrado): técnica, séries e por que importa',
   lede:
-    'O sóleo é o músculo mais profundo da panturrilha, que fica embaixo do gastrocnêmio. Ele só alonga com o joelho dobrado, porque dobrar o joelho tira o gastrocnêmio da jogada. Em uma série de 254\u00A0pessoas com fascite plantar, 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Se você só faz o alongamento com o joelho esticado, está deixando esse músculo totalmente de fora.',
+    'O sóleo é o músculo mais profundo da panturrilha, que fica embaixo do gastrocnêmio. Ele só alonga com o joelho dobrado, porque dobrar o joelho tira o gastrocnêmio da jogada. Em uma série de 254\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/), 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Se você só faz o alongamento com o joelho esticado, está deixando esse músculo totalmente de fora.',
   takeaways: [
     'O sóleo cruza só o tornozelo. O gastrocnêmio cruza o joelho e o tornozelo. Dobrar o joelho deixa o gastrocnêmio frouxo, e o sóleo recebe o alongamento.',
     'Em 254\u00A0pessoas com fascite plantar, 23 a 30\u00A0por cento tinham uma contratura no gastrocnêmio e no sóleo ao mesmo tempo (Patel e DiGiovanni, 2011).',
@@ -124,7 +124,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o alongamento do sóleo junto com o alongamento de panturrilha e o alongamento da fáscia plantar na maioria das sessões. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. O app passa do alongamento para o trabalho de força no seu ritmo, não em um calendário fixo.',
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Uma amplitude do tornozelo que melhora ao longo das semanas mostra que o alongamento está fazendo efeito. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

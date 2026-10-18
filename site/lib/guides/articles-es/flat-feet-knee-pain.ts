@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
         'Si la rodilla se hinchó, se trabó, falló, o se lastimó en un giro o una caída.',
         'Cómo se mueven la rodilla, la cadera y el pie en una sentadilla o al bajar de un escalón.',
         'La fuerza de los músculos de la parte externa y trasera de la cadera, y del muslo.',
-        'Si tu pie plano es flexible (el arco vuelve cuando te sientas o subes en puntas) o rígido. Mira [pie plano](/es/pie-plano/) para la prueba rápida.',
+        'Si tu pie plano es flexible (el arco vuelve cuando te sientas o subes en puntas) o rígido. Mira [pie plano](/es/pie-plano/) para la prueba rápida, o el [test de pie plano](/es/test-pie-plano/) para las cuatro pruebas en casa.',
         'En adultos mayores, señales de osteoartritis de rodilla, que pueden requerir una radiografía.',
       ],
       cites: [CITE.willyPfpGuideline],
@@ -233,7 +233,7 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito está hecho para el dolor de talón, de pie y de la parte baja de la pierna en adultos, no para el dolor de rodilla. Si tienes pie plano con dolor de arco o de talón además de una rodilla adolorida, puede encargarse del lado del pie: pie corto, equilibrio y abducción de cadera, organizados una semana a la vez. Los ejercicios de rodilla deben venir de un fisioterapeuta.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Al principio, cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios. No diagnostica, no ayuda directamente con el dolor de rodilla y no reemplaza a un profesional de la salud. Para el dolor de espalda con pie plano, mira [pie plano y dolor de espalda](/es/pie-plano-y-dolor-de-espalda/).',

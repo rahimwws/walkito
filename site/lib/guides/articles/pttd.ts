@@ -46,7 +46,7 @@ export const PTTD_EN: Guide = {
             '**Stage IV** adds ankle joint involvement. The ankle tilts into a valgus position, meaning it leans outward. This is the most advanced stage and typically requires surgical intervention.',
           ],
         },
-        '**Most people who search for PTTD exercises are in stage I or II.** If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a quick screening tool: difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.',
+        '**Most people who search for PTTD exercises are in stage I or II.** If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a [quick screening tool](/flat-feet-test/): difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

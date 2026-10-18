@@ -12,7 +12,7 @@ export const BAREFOOT_DE: Guide = {
     'Sind Barfußschuhe gut für die Füße? Was Studien zu Fußkraft, Verletzungen beim Umstieg, Plantarfasziitis und Plattfuß zeigen und wer sie meiden sollte.',
   h1: 'Sind Barfußschuhe gut für die Füße? Kraft, Risiken und Fußschmerzen',
   lede:
-    'Barfußschuhe, auch Minimalschuhe genannt, können deine Fußmuskeln kräftigen. In Studien gewannen Erwachsene, die darin gingen, innerhalb weniger Monate an Fußkraft. Aber ein zu schneller Umstieg erhöht das Risiko für Knochenstress und Schmerzen, keine Studie zeigt, dass sie allein eine Plantarfasziitis lindern, und Menschen mit Diabetes oder tauben Füßen brauchen schützende Schuhe.',
+    'Barfußschuhe, auch Minimalschuhe genannt, können deine Fußmuskeln kräftigen. In Studien gewannen Erwachsene, die darin gingen, innerhalb weniger Monate an Fußkraft. Aber ein zu schneller Umstieg erhöht das Risiko für Knochenstress und Schmerzen, keine Studie zeigt, dass sie allein eine [Plantarfasziitis](/de/plantarfasziitis/) lindern, und Menschen mit Diabetes oder tauben Füßen brauchen schützende Schuhe.',
   takeaways: [
     'In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern machte Gehen in Minimalschuhen über etwa zwei Monate die Fußmuskeln größer und kräftiger, genauso wie Fußübungen (Ridge und Kollegen).',
     'Erwachsene, die sechs Monate lang im Alltag Minimalschuhe trugen, gewannen im Schnitt 57,4\u00A0% an Zehenkraft, in einer kontrollierten Studie mit 22\u00A0Personen, die umgestiegen sind (Curtis und Kollegen, 2021).',
@@ -73,7 +73,7 @@ export const BAREFOOT_DE: Guide = {
             'In der sechsmonatigen Studie von Fuller und Kollegen mit 61\u00A0Läuferinnen und Läufern waren die Laufschmerzen in Minimalschuhen höher, deutlich ab etwa 35\u00A0km pro Woche, und das Verletzungsrisiko stieg mit dem Körpergewicht. Der Unterschied bei den Verletzungen insgesamt (16 von 31 gegenüber 11 von 30) könnte Zufall gewesen sein.',
           ],
         },
-        'Das waren Läuferinnen und Läufer. Gehen belastet den Fuß viel weniger, und das ist ein Grund, warum die Kraftstudien Gehen genutzt haben. Wenn du läufst und [Fersenschmerzen](/heel-pain-runners/) (auf Englisch) hast, ist ein plötzlicher Schuhwechsel eine weitere Belastungsänderung, die dein Fuß nicht braucht.',
+        'Das waren Läuferinnen und Läufer. Gehen belastet den Fuß viel weniger, und das ist ein Grund, warum die Kraftstudien Gehen genutzt haben. Wenn du läufst und Fersenschmerzen hast, ist ein plötzlicher Schuhwechsel eine weitere Belastungsänderung, die dein Fuß nicht braucht.',
       ],
       sourceNote:
         'Ridge 2013: Knochenmarködem im MRT von 0 bis 4 eingestuft, P = 0,009 für den Gruppenunterschied. Fuller 2017: Hazard Ratio 1,64 (95-%-KI 0,63 bis 4,27, P = 0,31); bei Läuferinnen und Läufern mit 85,7\u00A0kg lag die Hazard Ratio bei 2,00 (95-%-KI 1,10 bis 3,66). Ryan 2014: 99\u00A0Läuferinnen und Läufer ausgewertet, 23\u00A0Verletzungen.',
@@ -97,7 +97,7 @@ export const BAREFOOT_DE: Guide = {
             'Eine Fallserie von 2022 mit 20\u00A0Läuferinnen und Läufern berichtete weniger Schmerz nach etwa anderthalb Monaten Barfußlaufen auf Gras, hatte aber keine Vergleichsgruppe, und ein Autor wird von einer Barfußschuh-Marke finanziert.',
           ],
         },
-        'Die US-Leitlinie von 2023 zu Fersenschmerzen empfiehlt Dehnen von Wade und Plantarfaszie (Bewertung A) und Krafttraining (Bewertung B). Minimalschuhe empfiehlt sie nicht, und sie nennt Schuhwerk, das die Belastung senkt, als Teil der Beratung für Betroffene. Wenn deine Ferse jetzt wehtut, fang mit den [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) an, und unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) liest du, was eine Stütze unter dem Fuß kann und was nicht.',
+        'Die US-Leitlinie von 2023 zu Fersenschmerzen empfiehlt Dehnen von Wade und Plantarfaszie (Empfehlungsgrad A) und Krafttraining (Empfehlungsgrad B). Minimalschuhe empfiehlt sie nicht, und sie nennt Schuhwerk, das die Belastung senkt, als Teil der Beratung für Betroffene. Wenn deine Ferse jetzt wehtut, fang mit den [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) an, und unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) liest du, was eine Stütze unter dem Fuß kann und was nicht.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
     },
@@ -128,7 +128,7 @@ export const BAREFOOT_DE: Guide = {
         {
           list: [
             'Ein flexibler Plattfuß (das Gewölbe kommt zurück, wenn du sitzt oder auf die Zehen gehst) lässt sich meist gut belasten und kräftigen, und ein schrittweiser Umstieg auf flachere Schuhe ist vernünftig, wenn sich deine Füße gut anfühlen.',
-            'Ein steifer Plattfuß oder einer, der schmerzt, flacher wird oder auf einer Seite schlimmer ist, gehört zuerst zu einer medizinischen Fachperson.',
+            'Ein steifer Plattfuß oder einer, der schmerzt, flacher wird oder auf einer Seite schlimmer ist, gehört zuerst zum Arzt oder zur Ärztin.',
           ],
         },
         'Unsere Seite zum [Plattfuß](/de/plattfuss/) erklärt den Unterschied.',
@@ -145,7 +145,7 @@ export const BAREFOOT_DE: Guide = {
         '**Schlechte Durchblutung oder Haut, an der Wunden nur langsam zugehen.** Aus demselben Grund: Kleine Schnitte und Blasen wiegen schwerer.',
         '**Gerade schmerzende Ferse oder schmerzender Fuß.** Bring erst den Schmerz zur Ruhe, dann entscheide.',
         '**Hohlfuß.** Ein steifer Fuß mit hohem Gewölbe fängt Stöße schlecht ab, Dämpfung passt deshalb womöglich besser. Siehe [Übungen bei Hohlfuß](/de/hohlfuss-uebungen/).',
-        '**Schwerere Läuferinnen und Läufer oder solche mit hohem Wochenumfang.** Eine sechsmonatige Studie fand bei ihnen in Minimalschuhen mehr Schmerzen und ein höheres Verletzungsrisiko. Auch ein früherer Ermüdungsbruch am Fuß ist ein Grund, zuerst eine medizinische Fachperson zu fragen.',
+        '**Schwerere Läuferinnen und Läufer oder solche mit hohem Wochenumfang.** Eine sechsmonatige Studie fand bei ihnen in Minimalschuhen mehr Schmerzen und ein höheres Verletzungsrisiko. Auch ein früherer Ermüdungsbruch am Fuß ist ein Grund, zuerst ärztlichen Rat einzuholen.',
       ],
       after: [
         'Hallux valgus ist ein gemischter Fall. Eine breite Zehenbox nimmt Druck vom Großzehengrundgelenk, aber keine Studie hat Barfußschuhe bei Hallux valgus getestet. Siehe [Übungen bei Hallux valgus](/de/hallux-valgus-uebungen/).',
@@ -240,7 +240,7 @@ export const BAREFOOT_DE: Guide = {
     {
       q: 'Sind Barfußschuhe gut bei Plattfuß?',
       cites: [CITE.holowkaShod, CITE.raoFootwear],
-      a: 'Es gibt keine Studie dazu. Studien, die Gruppen vergleichen, fanden weniger Plattfüße bei Menschen, die barfuß oder in dünnen Sandalen aufgewachsen sind, zum Beispiel 2,8\u00A0% gegenüber 8,6\u00A0% in einer Erhebung an 2.300\u00A0Kindern in Indien. Das zeigt nicht, dass ein Schuhwechsel im Erwachsenenalter das Gewölbe anhebt. Mit einem schmerzfreien, flexiblen Plattfuß kannst du sie meist langsam ausprobieren. Ein steifer oder schmerzhafter Plattfuß gehört zuerst zu einer medizinischen Fachperson.',
+      a: 'Es gibt keine Studie dazu. Studien, die Gruppen vergleichen, fanden weniger Plattfüße bei Menschen, die barfuß oder in dünnen Sandalen aufgewachsen sind, zum Beispiel 2,8\u00A0% gegenüber 8,6\u00A0% in einer Erhebung an 2.300\u00A0Kindern in Indien. Das zeigt nicht, dass ein Schuhwechsel im Erwachsenenalter das Gewölbe anhebt. Mit einem schmerzfreien, flexiblen Plattfuß kannst du sie meist langsam ausprobieren. Ein steifer oder schmerzhafter Plattfuß gehört zuerst zum Arzt oder zur Ärztin.',
     },
     {
       q: 'Sind Barfußschuhe gut bei Neuropathie?',
@@ -263,7 +263,7 @@ export const BAREFOOT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du Diabetes, Taubheit, Kribbeln oder Brennen in den Füßen oder eine schlechte Durchblutung hast',
       'du einen Schnitt, eine Blase oder eine wunde Stelle am Fuß hast, die nicht besser wird',
@@ -277,7 +277,7 @@ export const BAREFOOT_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito ist ein Übungsprogramm bei Schmerzen an Ferse, Fuß und Bein. Es enthält den Kurzen Fuß, Zehenspreizen, Fersenheben und Gleichgewichtsarbeit von dieser Seite und steigert sie, wenn sie leichter werden. Es sucht dir keine Schuhe aus und stellt keine Diagnose. Ein kräftigerer Fuß und eine kräftigere Wade sind eine sinnvolle Grundlage, egal in welchen Schuhen du am Ende landest.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist für Erwachsene und ersetzt keine medizinische Fachperson.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist für Erwachsene und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer kurzen Einheit an und schau, wie deine Füße reagieren.',
   },

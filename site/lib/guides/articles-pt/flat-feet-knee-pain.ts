@@ -233,7 +233,7 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito foi feito para dor no calcanhar, no pé e na parte de baixo das pernas em adultos, não para dor no joelho. Se você tem pé chato com dor no arco ou no calcanhar, além do joelho dolorido, ele pode cuidar da parte do pé: pé curto, equilíbrio e abdução de quadril, organizados uma semana de cada vez. Os exercícios para o joelho devem vir de um fisioterapeuta.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no começo, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico, não ajuda diretamente na dor no joelho e não substitui um profissional de saúde. Para dor nas costas com pé chato, veja [pé chato e dor nas costas](/pt/pe-chato-dor-nas-costas/).',

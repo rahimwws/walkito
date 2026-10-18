@@ -16,7 +16,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
     'Handtuchgreifen für kräftigere Füße: Handtuch mit den Zehen heranziehen, Technik, Sätze, was es trainiert, Fehler und Vergleich mit dem kurzen Fuß.',
   h1: 'Handtuchgreifen: wie du mit den Zehen ein Handtuch heranziehst, für mehr Kraft im Fuß',
   lede:
-    'Beim Handtuchgreifen ziehst du ein Handtuch nur mit den Zehen zu dir heran. Die Übung zielt auf die kleinen Muskeln unter dem Gewölbe und die Zehenbeuger. Sie ist eine der ältesten und einfachsten Übungen zur Fußkräftigung in der Reha und steht in Programmen bei Plattfüßen, Plantarfasziitis und Schmerzen am Fußballen.',
+    'Beim Handtuchgreifen ziehst du ein Handtuch nur mit den Zehen zu dir heran. Die Übung zielt auf die kleinen Muskeln unter dem Gewölbe und die Zehenbeuger. Sie ist eine der ältesten und einfachsten Übungen zur Fußkräftigung in der Reha und steht in Programmen bei [Plattfüßen](/de/plattfuss/), [Plantarfasziitis](/de/plantarfasziitis/) und Schmerzen am Fußballen.',
   takeaways: [
     'Handtuchgreifen aktiviert die kurzen Fußmuskeln, aber EMG-Messungen zeigen, dass es auch die langen Zehenbeuger (extrinsische Muskeln) stärker einbezieht als die Kurzer-Fuß-Übung (Jung und Kollegen, 2011).',
     'In einer randomisierten Studie von 2012 mit gesunden Erwachsenen verbesserte eine Gruppe mit vier Wochen Handtuchgreifen ihr Gleichgewicht weniger als eine Gruppe mit der Kurzer-Fuß-Übung, auch wenn sich beide gegenüber dem Ausgangswert verbesserten (Lynn und Kollegen, 2012).',
@@ -126,7 +126,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'deine Zehen- oder Fußschmerzen nach einer Verletzung oder einem plötzlichen Schnappen angefangen haben',
       'du Taubheit, Kribbeln oder Brennen in den Zehen oder am Fußballen hast',

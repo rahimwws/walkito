@@ -18,7 +18,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     'Como fazer a elevação de calcanhar com toalha do protocolo de Rathleff para fascite plantar: séries, repetições, ritmo, a toalha, erros e versões.',
   h1: 'Elevação de calcanhar com toalha: o protocolo de carga alta de Rathleff, passo a passo',
   lede:
-    'A elevação de calcanhar com toalha é uma elevação de panturrilha em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48\u00A0pessoas com fascite plantar, em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de panturrilha comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).',
+    'A elevação de calcanhar com toalha é uma elevação em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/), em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de calcanhar comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).',
   takeaways: [
     'Em um ensaio com 48\u00A0pessoas, as elevações de calcanhar com toalha e carga tiveram 29\u00A0pontos a mais de melhora no Foot Function Index do que só alongar aos três meses, embora os dois grupos tenham se igualado aos doze meses (Rathleff e colegas, 2015).',
     'A diretriz de 2023 para dor no calcanhar dá ao treino de força o grau B, um degrau abaixo do alongamento, com A, e recomenda os dois (Koc e colegas, 2023).',
@@ -99,7 +99,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
         'Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha:',
         {
           list: [
-            'A [elevação de calcanhar sentado](/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga.',
+            'A [elevação de calcanhar sentada](/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga.',
             'A elevação em pé com os dois pés vem depois.',
             'Depois, a elevação de calcanhar sustentada lá em cima.',
             'Depois, a elevação em uma perna com toalha no degrau.',
@@ -125,7 +125,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       h2: 'Para quem é a elevação de calcanhar com toalha?',
       paragraphs: [
         'Para qualquer pessoa com fascite plantar que tenha força de panturrilha suficiente para fazer uma elevação em uma perna em um degrau. O ensaio incluiu adultos com dor havia pelo menos três meses e que toleravam carga.',
-        'Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentado ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](/pt/exercicios/excentrico-calcanhar/) ou [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para esse caminho.',
+        'Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentada ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](/pt/exercicios/excentrico-calcanhar/) ou [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para esse caminho.',
       ],
       cites: [CITE.rathleff],
     },
@@ -167,8 +167,8 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'A elevação de calcanhar com toalha é um degrau de uma cadeia da panturrilha que o Walkito coloca em um plano semanal. A cadeia vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até chegar aos saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
+    h2: 'Como transformar isso em um plano',
+    text: 'A elevação de calcanhar com toalha é um degrau de uma cadeia da panturrilha que o Walkito coloca em um plano semanal. A cadeia vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até chegar aos saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios, não uma ferramenta de diagnóstico.',
     ],

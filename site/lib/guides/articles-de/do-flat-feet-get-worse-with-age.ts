@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
             'Flachere, stärker pronierte Füße (proniert heißt, dass der Fuß nach innen kippt).',
             'Steifere Sprunggelenke und Großzehengelenke.',
             'Schwächere Zehenmuskeln.',
-            'Mehr Ballenzehen (Hallux valgus).',
+            'Mehr [Ballenzehen](/de/hallux-valgus-uebungen/) (Hallux valgus).',
             'Weniger Gefühl in den Fußsohlen.',
           ],
         },
@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
         '**Eine Schwangerschaft kann das Gewölbe etwas absenken, und die Veränderung kann nach der Geburt bleiben.** In einer Studie von 2013 wurden die Füße von 49\u00A0Frauen im ersten Schwangerschaftsdrittel und erneut etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Steifigkeit des Gewölbes nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu.',
         'Den größten Teil der Veränderung brachte die erste Schwangerschaft. Bei Erstgebärenden wuchs die Fußlänge im Schnitt um etwa 1,4\u00A0Millimeter und das Absinken des Gewölbes um etwa 1,0\u00A0Millimeter.',
         'Zwei Dinge rücken das ins richtige Verhältnis. Die Autorinnen und Autoren nannten die durchschnittlichen Veränderungen klein, und die Studie fand keine Veränderung bei einem Maß dafür, wie der Fuß beim Gehen abrollte. „Bleibend“ heißt in dieser Studie: beim Nachuntersuchungstermin ein paar Monate nach der Geburt noch vorhanden. Niemand wurde über Jahre begleitet.',
-        'Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.',
+        'Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn deine Fersen in der Schwangerschaft schmerzen, lies [Fersenschmerzen in der Schwangerschaft](/de/fersenschmerzen-schwangerschaft/). Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.',
       ],
       cites: [CITE.segalPregnancy],
     },
@@ -125,10 +125,10 @@ export const FLAT_FEET_AGE_DE: Guide = {
         rows: [
           ['Beide Füße über Jahre etwas flacher, keine Schmerzen', 'Häufige altersbedingte Veränderung', 'Nichts Dringendes. Halte Füße und Waden kräftig'],
           ['Lebenslange Plattfüße, die nach langen Schichten im Stehen schmerzen', 'Belastung eines tiefen Gewölbes, kein neues Problem', 'Übungen, stützende Schuhe, siehe [Plattfuß-Übungen](/de/plattfuss-uebungen/)'],
-          ['Ein Gewölbe sinkt über Monate ab, Schmerzen oder Schwellung am Innenknöchel', 'Mögliche Tibialis-posterior-Insuffizienz', 'Bald zu einer Fachperson. Übungen und Einlagen kommen vor allem in frühen Stadien zum Einsatz'],
-          ['Kann auf einem Fuß nicht auf die Zehen gehen', 'Schwache oder geschädigte Tibialis-posterior-Sehne', 'Zu einer Fachperson'],
+          ['Ein Gewölbe sinkt über Monate ab, Schmerzen oder Schwellung am Innenknöchel', 'Mögliche Tibialis-posterior-Insuffizienz', 'Bald zum Arzt oder zur Ärztin. Übungen und Einlagen kommen vor allem in frühen Stadien zum Einsatz'],
+          ['Kann auf einem Fuß nicht auf die Zehen gehen', 'Schwache oder geschädigte Tibialis-posterior-Sehne', 'Zum Arzt oder zur Ärztin'],
           ['Diabetes, Fuß plötzlich warm, geschwollen oder gerötet', 'Möglicher Charcot-Fuß', 'Noch am selben Tag ärztlich abklären lassen'],
-          ['Plattfuß, der auch angehoben flach bleibt und schmerzt', 'Starrer Plattfuß, oft mit Ursache in Gelenk oder Knochen', 'Vor den Übungen zu einer Fachperson'],
+          ['Plattfuß, der auch angehoben flach bleibt und schmerzt', 'Starrer Plattfuß, oft mit Ursache in Gelenk oder Knochen', 'Vor den Übungen zum Arzt oder zur Ärztin'],
         ],
       },
       after: [
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
       h2: 'Können Übungen oder Einlagen verhindern, dass Plattfüße schlimmer werden?',
       keyFact: 'Eine Übersichtsarbeit von 2018 fand nur drei Studien mit insgesamt 93\u00A0Personen, die Übungen bei Tibialis-posterior-Insuffizienz testeten, mit mäßigen Effekten für langsames Absenken (exzentrisches Krafttraining) zusätzlich zu Einlagen und Dehnen (Ross und Kollegen, 2018).',
       paragraphs: [
-        'Keine Studie hat geprüft, ob Übungen oder Einlagen verhindern, dass sich Plattfüße mit dem Alter verändern. Es gibt Belege zu zwei benachbarten Fragen, und sie sind dünn.',
+        'Keine Studie hat geprüft, ob Übungen oder [Einlagen](/de/einlagen-oder-uebungen/) verhindern, dass sich Plattfüße mit dem Alter verändern. Es gibt Belege zu zwei benachbarten Fragen, und sie sind dünn.',
         'Zum Sehnenproblem hinter dem Einsinken des Gewölbes im Erwachsenenalter fand eine Übersichtsarbeit von 2018 drei Studien mit insgesamt 93\u00A0Personen. Langsames Absenken (exzentrisches Krafttraining) zusätzlich zu orthopädischen Einlagen, die das Gewölbe stützen, und Dehnen linderte Schmerzen und Einschränkungen mäßig stärker als Einlagen und Dehnen allein.',
         'In einer Studie machten 36\u00A0Erwachsene in frühen Stadien drei Monate lang ihr Programm. Alle Gruppen verbesserten sich, die Gruppe mit exzentrischem Krafttraining am meisten. In einer anderen Studie mit 39\u00A0Personen machte zusätzliches Krafttraining nur einen kleinen Unterschied. Die Autorinnen und Autoren der Übersicht nannten die Forschungslage dünn.',
         'Bei lebenslangen flexiblen Plattfüßen fand eine Studie mit 52\u00A0Personen, dass ein kurzes Programm aus Fuß-, Sprunggelenk- und Hüftübungen die Gewölbeform stärker veränderte als in einer Kontrollgruppe. Sie hat die Form gemessen, nicht Schmerzen, und das über kurze Zeit. Ob solches Training die altersbedingte Veränderung über Jahrzehnte bremst, ist unbekannt.',
@@ -203,7 +203,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
     {
       h2: 'Woran merkst du, ob sich deine Plattfüße verändern?',
       paragraphs: [
-        'Du kannst einen Plattfuß zu Hause mit drei einfachen Checks im Blick behalten, alle paar Monate. Keiner davon stellt eine Diagnose. Sie zeigen dir, wann es sich lohnt, eine Fachperson zu fragen.',
+        'Du kannst einen Plattfuß zu Hause mit drei einfachen Checks im Blick behalten, alle paar Monate. Keiner davon stellt eine Diagnose. Sie zeigen dir, wann es sich lohnt, ärztlichen Rat einzuholen.',
       ],
       bullets: [
         '**Einbeiniges Fersenheben.** Halte dich an einer Arbeitsplatte fest, stell dich auf einen Fuß und geh mehrmals auf die Zehen. Vergleich die Seiten. Wenn du auf einer Seite nicht hochkommst oder die Ferse oben nicht leicht nach innen dreht, ist die Tibialis-posterior-Sehne vielleicht schwach. Der [Fersenheben-Test](/de/fersenheben-test/) zeigt, wie du zählst und vergleichst.',
@@ -211,7 +211,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
         '**Schuhe.** Ein neuer Unterschied darin, wie sich die beiden Schuhe abnutzen, oder ein Schuh, der sich plötzlich lang oder locker anfühlt, ist eine Notiz wert.',
       ],
       after: [
-        'Wenn beide Füße gleich aussehen und du auf jedem Fuß ohne Schmerzen hochkommst, ist eine langsame Veränderung wahrscheinlich nichts Neues. Wenn sich eine Seite verändert, geh zu einer Fachperson. Übungen und Einlagen sind der Hauptansatz in frühen Stadien von Sehnenproblemen, solange der Fuß noch flexibel ist.',
+        'Wenn beide Füße gleich aussehen und du auf jedem Fuß ohne Schmerzen hochkommst, ist eine langsame Veränderung wahrscheinlich nichts Neues. Wenn sich eine Seite verändert, geh zum Arzt oder zur Ärztin. Übungen und Einlagen sind der Hauptansatz in frühen Stadien von Sehnenproblemen, solange der Fuß noch flexibel ist.',
       ],
       cites: [CITE.ling],
     },
@@ -244,7 +244,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'ein Fuß innerhalb weniger Monate flacher geworden ist, der andere aber nicht',
       'du neue Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks hast, hinter oder unter dem Knöchel',
@@ -260,7 +260,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Plattfüßen ist ein Ziel das Gewölbehalten: die Position des kurzen Fußes 60\u00A0Sekunden halten. Der Plan kann Bandübungen für den Tibialis posterior, Fersenheben, den kurzen Fuß und Wadendehnung enthalten, jeweils mit niedriger Dosis zu Beginn und erst gesteigert, wenn es sich leicht anfühlt.',
     more: [
-      'Du wählst 3, 5 oder 7 Einheiten pro Woche von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn ein Gewölbe absinkt oder dein Innenknöchel wehtut, geh zuerst zu einer Fachperson.',
+      'Du wählst 3, 5 oder 7 Einheiten pro Woche von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn ein Gewölbe absinkt oder dein Innenknöchel wehtut, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

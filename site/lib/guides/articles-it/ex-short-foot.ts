@@ -18,7 +18,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
     'Come fare l’esercizio del piede corto per piede piatto e arco plantare: tecnica, serie, da seduto a in piedi, errori da evitare e cosa dicono gli studi.',
   h1: 'Esercizio del piede corto: come farlo, serie e progressione',
   lede:
-    'L’esercizio del piede corto allena i piccoli muscoli dentro il piede a tenere alto l’arco senza arricciare le dita. Tiri l’avampiede verso il tallone così il piede si accorcia e l’arco si alza. Una revisione narrativa del 2015 lo ha chiamato la base dell’allenamento del «foot core», il «core» del piede, e compare nella maggior parte dei programmi per piede piatto e fascite plantare che lavorano sui muscoli intrinseci del piede.',
+    'L’esercizio del piede corto allena i piccoli muscoli dentro il piede a tenere alto l’arco senza arricciare le dita. Tiri l’avampiede verso il tallone così il piede si accorcia e l’arco si alza. Una revisione narrativa del 2015 lo ha chiamato la base dell’allenamento del «foot core», il «core» del piede, e compare nella maggior parte dei programmi per piede piatto e [fascite plantare](/it/fascite-plantare/) che lavorano sui muscoli intrinseci del piede.',
   takeaways: [
     'Uno studio del 2016 con risonanza magnetica su 8\u00A0atleti ha visto che il piede corto dava l’attivazione media più alta (fino al 34,9%) in tre dei quattro muscoli plantari intrinseci studiati, rispetto all’apertura delle dita, all’estensione dell’alluce e all’estensione delle dita dalla seconda alla quinta (Gooding e colleghi, 2016).',
     'Uno studio elettromiografico ha trovato che l’abduttore dell’alluce, il muscolo che sostiene l’interno dell’arco, era nettamente più attivo durante il piede corto che durante la raccolta dell’asciugamano (Jung e colleghi, 2011).',
@@ -31,7 +31,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Cos’è l’esercizio del piede corto?',
       paragraphs: [
         'L’esercizio del piede corto è una contrazione isometrica dei muscoli intrinseci del piede. Accorci la distanza tra avampiede e tallone tirandoli l’uno verso l’altro, e così l’arco si alza. Le dita restano piatte e rilassate per tutto il tempo. Una revisione del 2015 di McKeon e colleghi lo ha indicato come l’esercizio centrale del loro modello del «foot core», che paragona i muscoli intrinseci del piede ai muscoli profondi del core del tronco.',
-        'Si chiama anche «doming» dell’arco o esercizio di accorciamento del piede. È diverso dalla raccolta dell’asciugamano o dalla flessione delle dita, perché quegli esercizi usano la flessione delle dita, che recluta i muscoli flessori lunghi delle dita che scendono dallo stinco. L’esercizio del piede corto serve a isolare i muscoli che stanno interamente dentro il piede.',
+        'Si chiama anche «doming» dell’arco o esercizio di accorciamento del piede. È diverso dalla [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/) o dalla flessione delle dita, perché quegli esercizi usano la flessione delle dita, che recluta i muscoli flessori lunghi delle dita che scendono dallo stinco. L’esercizio del piede corto serve a isolare i muscoli che stanno interamente dentro il piede.',
       ],
       cites: [CITE.mcKeon],
     },
@@ -85,13 +85,13 @@ export const EX_SHORT_FOOT_IT: Guide = {
           name: 'Piede corto, in piedi',
           evidence: { level: 'moderate', why: 'Parte del programma testato in uno studio randomizzato del 2023 sul piede piatto (Brijwasi 2023). Non testato da solo.' },
           dose: 'Walkito parte da 3\u00A0serie da 10, tieni 5\u00A0secondi, entrambi i piedi',
-          how: 'Stai in piedi con entrambi i piedi a terra. Tira l’avampiede di ogni piede verso il tallone così entrambi gli archi si alzano. Le dita restano piatte e lunghe. Si muove solo l’arco.',
+          how: 'Stai in piedi con entrambi i piedi a terra. Tira l’avampiede di ogni piede verso il tallone così l’arco plantare si alza in entrambi i piedi. Le dita restano piatte e lunghe. Si muove solo l’arco.',
           often: 'Ogni sessione, quando il piede corto da seduto ti sembra facile',
           feel: 'L’arco che lavora mentre porta il tuo peso',
           stop: 'Il dolore arriva a 6/10',
           media: 'short_foot_double',
           caption: 'Piede corto, in piedi: dita piatte e lunghe, si alza solo l’arco',
-          alt: 'Una figura in piedi con entrambi gli archi ben alzati e le dita piatte',
+          alt: 'Una figura in piedi con l’arco plantare ben alzato in entrambi i piedi e le dita piatte',
         },
         {
           name: 'Piede corto, su una gamba',
@@ -125,7 +125,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
       h2: 'Cosa dicono gli studi sull’esercizio del piede corto?',
       keyFact: 'In uno studio del 2023 su 52\u00A0persone con piede piatto flessibile, un programma di sei settimane con piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti ha cambiato la forma dell’arco più che in un gruppo di controllo (Brijwasi e colleghi, 2023).',
       paragraphs: [
-        'Le prove più forti vengono da programmi che uniscono il piede corto ad altri esercizi, non dal piede corto da solo. In uno studio del 2023 su 52\u00A0persone con piede piatto flessibile, Brijwasi e colleghi hanno testato un programma di sei settimane con:',
+        'Le prove più forti vengono da programmi che uniscono il piede corto ad altri esercizi, non dal piede corto da solo. In uno studio del 2023 su 52\u00A0persone con [piede piatto](/it/piede-piatto/) flessibile, Brijwasi e colleghi hanno testato un programma di sei settimane con:',
         {
           list: [
             'Piede corto.',
@@ -178,7 +178,7 @@ export const EX_SHORT_FOOT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano che include l’esercizio del piede corto in una progressione a tre gradini: da seduto, in piedi, poi su una gamba. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili. Scegli sessioni da 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni controlla se il tempo di tenuta dell’arco sta migliorando.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

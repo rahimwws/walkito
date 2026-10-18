@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
             'Pés mais planos e mais pronados (pronado quer dizer que o pé vira para dentro).',
             'Tornozelos e articulações do dedão mais rígidos.',
             'Músculos dos dedos mais fracos.',
-            'Mais joanetes.',
+            'Mais [joanetes](/pt/joanete-exercicios/).',
             'Menos sensibilidade na sola.',
           ],
         },
@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
         '**A gravidez pode baixar um pouco o arco, e a mudança pode continuar depois do parto.** Em um estudo de 2013, 49\u00A0mulheres tiveram os pés medidos no primeiro trimestre e de novo cerca de quatro meses e meio depois de dar à luz. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram.',
         'A primeira gravidez respondeu pela maior parte da mudança. Nas mães de primeira viagem, o comprimento do pé aumentou cerca de 1,4\u00A0milímetro e a queda do arco cerca de 1,0\u00A0milímetro, em média.',
         'Duas coisas colocam isso em proporção. Os autores disseram que as mudanças médias foram pequenas, e o estudo não encontrou mudança em uma medida de como o pé virava durante a caminhada. “Duradoura”, nesse estudo, quer dizer que ainda estava lá na consulta de acompanhamento alguns meses depois do parto. Ninguém foi acompanhado por anos.',
-        'Se o seu número de calçado aumentou depois de uma gravidez e os seus pés estão bem, essa mudança é comum. Se um arco continua caindo, ou a parte de dentro do tornozelo começa a doer, faça uma avaliação.',
+        'Se o seu número de calçado aumentou depois de uma gravidez e os seus pés estão bem, essa mudança é comum. Se os seus calcanhares doem durante a gravidez, veja [fascite plantar na gravidez](/pt/fascite-plantar-gravidez/). Se um arco continua caindo, ou a parte de dentro do tornozelo começa a doer, faça uma avaliação.',
       ],
       cites: [CITE.segalPregnancy],
     },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
       h2: 'Exercícios ou palmilhas impedem o pé chato de piorar?',
       keyFact: 'Uma revisão de 2018 encontrou só três ensaios, com 93\u00A0pessoas no total, testando exercício para disfunção do tendão tibial posterior, com efeitos moderados para o fortalecimento com descida lenta (excêntrico) somado a órteses e alongamento (Ross e colegas, 2018).',
       paragraphs: [
-        'Nenhum ensaio testou se exercícios ou palmilhas impedem o pé chato de mudar com a idade. O que existe é evidência sobre duas perguntas próximas, e ela é pequena.',
+        'Nenhum ensaio testou se exercícios ou [palmilhas](/pt/palmilhas-ou-exercicios/) impedem o pé chato de mudar com a idade. O que existe é evidência sobre duas perguntas próximas, e ela é pequena.',
         'Para o problema de tendão por trás da queda do arco no adulto, uma revisão de 2018 encontrou três ensaios com 93\u00A0pessoas no total. O fortalecimento com descida lenta (excêntrico) somado a órteses (palmilhas que sustentam o arco) e alongamento aliviou a dor e a incapacidade moderadamente mais que órteses e alongamento sozinhos.',
         'Em um ensaio, 36\u00A0adultos em estágios iniciais fizeram três meses de programa. Todos os grupos melhoraram, e o grupo do fortalecimento excêntrico foi o que mais melhorou. Em outro ensaio, com 39\u00A0pessoas, somar o fortalecimento fez só uma pequena diferença. Os autores da revisão disseram que a pesquisa é escassa.',
         'Para o pé chato flexível de toda a vida, um ensaio com 52\u00A0pessoas viu que um programa curto de exercícios para pé, tornozelo e quadril mudou o formato do arco mais do que em um grupo controle. Ele mediu o formato, não a dor, e por pouco tempo. Não se sabe se esse tipo de treino desacelera a mudança da idade ao longo de décadas.',
@@ -257,7 +257,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para pé chato, uma das metas é sustentar o arco: manter a posição de pé curto por 60\u00A0segundos. O plano pode incluir exercícios com faixa para o tibial posterior, elevação de calcanhar, pé curto e alongamento de panturrilha, cada um começando com uma dose baixa e só subindo quando ficar fácil.',
     more: [
       'Você escolhe 3, 5 ou 7 sessões por semana, de 3, 5 ou 10\u00A0minutos. A cada duas semanas, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde. Se um arco está caindo ou a parte de dentro do tornozelo dói, procure primeiro um profissional de saúde.',

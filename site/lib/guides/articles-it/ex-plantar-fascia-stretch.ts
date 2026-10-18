@@ -20,7 +20,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     'Come fare l’allungamento della fascia plantare per la fascite plantare: tecnica, quando farlo, quanto tenerlo e cosa dicono gli studi.',
   h1: 'Allungamento della fascia plantare: come farlo, serie e ripetizioni',
   lede:
-    'L’allungamento della fascia plantare è l’unico allungamento messo a confronto diretto con l’allungamento del tendine d’Achille per la fascite plantare. In uno studio su 82\u00A0persone con dolore al tallone cronico, chi faceva l’allungamento della fascia plantare aveva punteggi di dolore e funzionalità migliori a otto settimane rispetto a chi allungava il tendine d’Achille. Questa pagina spiega la tecnica, la dose e quando l’allungamento conta di più.',
+    'L’allungamento della fascia plantare è l’unico allungamento messo a confronto diretto con l’allungamento del tendine d’Achille per la [fascite plantare](/it/fascite-plantare/). In uno studio su 82\u00A0persone con dolore al tallone cronico, chi faceva l’allungamento della fascia plantare aveva punteggi di dolore e funzionalità migliori a otto settimane rispetto a chi allungava il tendine d’Achille. Questa pagina spiega la tecnica, la dose e quando l’allungamento conta di più.',
   takeaways: [
     'In uno studio su 82\u00A0persone con fascite plantare cronica, l’allungamento della fascia plantare ha dato punteggi di dolore e funzionalità migliori a otto settimane rispetto a un allungamento del tendine d’Achille (DiGiovanni e colleghi, 2003).',
     'Al controllo a due anni, dopo che tutti i partecipanti erano passati all’allungamento della fascia plantare, il 92% si diceva soddisfatto del risultato (DiGiovanni e colleghi, 2006).',
@@ -59,7 +59,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     {
       h2: 'Quando fare l’allungamento della fascia plantare?',
       paragraphs: [
-        '**Prima del primo passo del mattino.** È l’indicazione più ripetuta sia nello studio sia nella linea guida del 2023. La fascia plantare si accorcia durante la notte mentre il piede è rilassato. I primi passi della giornata la tirano di colpo e con forza, ed è per questo che il dolore al tallone del mattino è il segno tipico della fascite plantare.',
+        '**Prima del primo passo del mattino.** È l’indicazione più ripetuta sia nello studio sia nella linea guida del 2023. La fascia plantare si accorcia durante la notte mentre il piede è rilassato. I primi passi della giornata la tirano di colpo e con forza, ed è per questo che il [dolore al tallone del mattino](/it/dolore-tallone-al-mattino/) è il segno tipico della fascite plantare.',
         'Il secondo momento più importante è prima di alzarti dopo essere stato seduto a lungo. Lo stesso accorciamento avviene a riposo. Allungare la fascia prima di caricarla riduce quello strappo.',
         'Nello studio, ai partecipanti si chiedeva di fare 10\u00A0tenute da 10\u00A0secondi, tre volte al giorno, per almeno otto settimane. Le sessioni più importanti erano quella del mattino e quella dopo essere stati seduti a lungo. Se possibile, si incoraggiavano altre sessioni durante la giornata.',
       ],
@@ -81,7 +81,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
       h2: 'Che differenza c’è tra allungamento della fascia plantare e del polpaccio?',
       paragraphs: [
         'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il muscolo più grande e superficiale del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
-        'Un polpaccio rigido è di per sé un fattore di rischio per la fascite plantare. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte. Per questo la linea guida consiglia entrambi gli allungamenti, non uno o l’altro.',
+        'Un [polpaccio rigido](/it/polpacci-rigidi/) è di per sé un fattore di rischio per la fascite plantare. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte. Per questo la linea guida consiglia entrambi gli allungamenti, non uno o l’altro.',
         'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
@@ -148,7 +148,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’allungamento della fascia plantare in quasi tutte le sessioni e te lo ricorda prima del primo passo ogni mattina. Non devi ricordarti i tempi né contare. L’app costruisce un piano una settimana alla volta, partendo dagli allungamenti e aggiungendo il lavoro di forza quando il dolore si calma.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

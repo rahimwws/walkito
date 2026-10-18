@@ -31,7 +31,7 @@ export const EX_CALF_RAISES_PT: Guide = {
       h2: 'Quais músculos a elevação de calcanhar trabalha?',
       paragraphs: [
         'A elevação de calcanhar em pé, com o joelho esticado, trabalha principalmente o gastrocnêmio, o músculo de duas cabeças que dá à panturrilha o formato visível. O gastrocnêmio cruza o joelho e o tornozelo, então ele trabalha mais com o joelho esticado.',
-        'A elevação sentado passa a carga para o sóleo, o músculo mais profundo da panturrilha, que fica embaixo. O sóleo cruza só o tornozelo, então dobrar o joelho a uns 90\u00A0graus tira quase todo o gastrocnêmio do movimento e faz o sóleo trabalhar.',
+        'A elevação sentada passa a carga para o sóleo, o músculo mais profundo da panturrilha, que fica embaixo. O sóleo cruza só o tornozelo, então dobrar o joelho a uns 90\u00A0graus tira quase todo o gastrocnêmio do movimento e faz o sóleo trabalhar.',
         'Os dois músculos se ligam ao calcanhar pelo tendão de Aquiles. Toda elevação de calcanhar também coloca alguma carga na fáscia plantar, porque o calcanhar é o ponto de apoio que eles dividem. A [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) aumenta ainda mais a carga na fáscia ao dobrar os dedos para cima.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -62,14 +62,14 @@ export const EX_CALF_RAISES_PT: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Como fazer a elevação de calcanhar sentado',
+      h2: 'Como fazer a elevação de calcanhar sentada',
       paragraphs: [
         'Sente-se em uma cadeira com os pés apoiados no chão e os joelhos dobrados a uns 90\u00A0graus. Empurre pela parte da frente dos dois pés, tirando os dois calcanhares do chão. Desça devagar. Colocar as mãos nos joelhos e empurrar para baixo acrescenta resistência.',
-        'A elevação sentado é a porta de entrada com menos carga na sequência da panturrilha. Ela quase não põe esforço no calcanhar comparada ao trabalho em pé, o que a torna um bom ponto de partida quando a elevação em pé dói demais.',
+        'A elevação sentada é a porta de entrada com menos carga na sequência da panturrilha. Ela quase não põe esforço no calcanhar comparada ao trabalho em pé, o que a torna um bom ponto de partida quando a elevação em pé dói demais.',
       ],
       exercises: [
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: {
             level: 'moderate',
             why: 'Faz parte de progressões de reabilitação publicadas (fase 1 de Silbernagel). Não foi testada sozinha em um ensaio randomizado.',
@@ -80,7 +80,7 @@ export const EX_CALF_RAISES_PT: Guide = {
           feel: 'Trabalho nas panturrilhas, quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',
+          caption: 'Elevação de calcanhar sentada: suba empurrando pela parte da frente dos pés',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
       ],
@@ -115,7 +115,7 @@ export const EX_CALF_RAISES_PT: Guide = {
       h2: 'Quantas elevações de calcanhar fazer?',
       keyFact: 'Um estudo normativo com 566\u00A0adultos saudáveis de 20 a 81\u00A0anos mostrou que a contagem de elevações de calcanhar em uma perna variava com idade, sexo e nível de atividade, e as mulheres chegavam a uma mediana de 21\u00A0repetições (Hebert-Losier e colegas, 2017).',
       paragraphs: [
-        'Depende de onde você está na sequência e do que está trabalhando. Para força geral da panturrilha, **3\u00A0séries de 10 a 15\u00A0repetições em ritmo lento é uma dose inicial comum.** No protocolo testado para fascite plantar, a elevação de calcanhar com toalha começa com 12\u00A0repetições máximas (12RM) em 3\u00A0séries e avança para 8RM em 5\u00A0séries ao longo de umas cinco semanas.',
+        'Depende de onde você está na sequência e do que está trabalhando. Para força geral da panturrilha, **3\u00A0séries de 10 a 15\u00A0repetições em ritmo lento é uma dose inicial comum.** No protocolo testado para [fascite plantar](/pt/fascite-plantar/), a elevação de calcanhar com toalha começa com 12\u00A0repetições máximas (12RM) em 3\u00A0séries e avança para 8RM em 5\u00A0séries ao longo de umas cinco semanas.',
         'Uma referência útil é o teste de resistência de elevação de calcanhar em uma perna. Um estudo normativo com 566\u00A0adultos saudáveis encontrou uma mediana de 24\u00A0repetições para homens e 21 para mulheres, variando com idade, sexo e atividade. A meta de panturrilha no app Walkito é 25\u00A0elevações de calcanhar em uma perna. Chegar lá não encerra o trabalho. Ele passa para a manutenção.',
         'Para saber mais do protocolo específico para fascite plantar, veja a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/). Para a versão do tendão de Aquiles, veja a [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/).',
       ],
@@ -138,7 +138,7 @@ export const EX_CALF_RAISES_PT: Guide = {
       paragraphs: [
         'Na fascite plantar, a evidência aponta para a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/), em que a toalha embaixo dos dedos coloca carga na fáscia junto com a panturrilha. O limite de dor é 6/10. A página completa sobre o problema está em [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
         'Na tendinite de Aquiles, o foco passa para a [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/), em que a fase de descida é o objetivo e a toalha não é usada. O modelo de dor de um ensaio permite carga até cerca de 5/10, desde que a dor passe até a manhã seguinte. A página completa está em [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
-        'A elevação com os dois pés, a elevação sentado e a elevação sustentada aparecem nos dois caminhos como primeiros degraus. Elas constroem a força de base que torna possível o exercício específico com carga.',
+        'A elevação com os dois pés, a elevação sentada e a elevação sustentada aparecem nos dois caminhos como primeiros degraus. Elas constroem a força de base que torna possível o exercício específico com carga.',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
     },
@@ -149,7 +149,7 @@ export const EX_CALF_RAISES_PT: Guide = {
       a: 'Não. A elevação de calcanhar trabalha o gastrocnêmio e o sóleo, na perna. Os glúteos estabilizam o quadril nas variações em uma perna, mas não são o músculo principal. Para força de quadril e glúteo, veja a [abdução de quadril](/pt/exercicios/abducao-quadril/).',
     },
     {
-      q: 'Elevação de calcanhar sentado ou em pé: qual é melhor?',
+      q: 'Elevação de calcanhar sentada ou em pé: qual é melhor?',
       cites: [CITE.patelGastrocnemius],
       a: 'Elas trabalham músculos diferentes. A elevação em pé trabalha principalmente o gastrocnêmio, o músculo maior da panturrilha. A sentada passa a carga para o sóleo, o mais profundo, porque o joelho dobrado tira boa parte do gastrocnêmio do movimento. As duas têm seu papel, e fazer as duas cobre a panturrilha inteira.',
     },
@@ -175,8 +175,8 @@ export const EX_CALF_RAISES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'O Walkito monta um plano que começa no seu nível e sobe quando você está pronto. A sequência da panturrilha vai da elevação sentado para a elevação em pé com os dois pés, a sustentada, a elevação com toalha, a descida excêntrica do calcanhar e os saltitos curtos na ponta dos pés. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos.',
+    h2: 'Como transformar isso em um plano',
+    text: 'O Walkito monta um plano que começa no seu nível e sobe quando você está pronto. A sequência da panturrilha vai da elevação sentada para a elevação em pé com os dois pés, a sustentada, a elevação com toalha, a descida excêntrica do calcanhar e os saltitos curtos na ponta dos pés. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos.',
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha e o equilíbrio. A meta de panturrilha é 25\u00A0elevações em uma perna. Chegar lá não encerra o trabalho; uma nova meta entra no lugar. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',
     ],

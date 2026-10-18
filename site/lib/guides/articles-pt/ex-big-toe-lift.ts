@@ -121,7 +121,7 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
     {
       q: 'A elevação do dedão ajuda na fascite plantar?',
       cites: [CITE.guideline],
-      a: 'A elevação do dedão não faz parte da diretriz principal para fascite plantar, que foca em alongamento e elevação de calcanhar com carga. Ela pode ajudar como parte de um programa mais amplo, melhorando o controle do mecanismo de molinete. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) para os exercícios principais.',
+      a: 'A elevação do dedão não faz parte da diretriz principal para [fascite plantar](/pt/fascite-plantar/), que foca em alongamento e elevação de calcanhar com carga. Ela pode ajudar como parte de um programa mais amplo, melhorando o controle do mecanismo de molinete. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) para os exercícios principais.',
     },
     {
       q: 'Devo fazer elevação do dedão ou o exercício do pé curto?',
@@ -139,10 +139,10 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito usa a elevação do dedão no começo da sequência de fortalecimento do pé, junto com puxar a toalha com os dedos. Quando você consegue isolar o dedão bem por duas sessões, o plano passa o foco para o exercício do pé curto e a progressão dele, de sentado para em pé. As sessões são de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o progresso.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
-  crumb: 'Elevação do dedão (toe yoga)',
+  crumb: 'Elevação do dedão',
   campaign: 'ex-big-toe-lift-pt',
 };

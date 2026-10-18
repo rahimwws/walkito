@@ -36,6 +36,7 @@ import { HAMMER_TOE_PT } from './articles-pt/hammer-toe';
 import { HEEL_FAT_PAD_PT } from './articles-pt/heel-fat-pad';
 import { HEEL_PAIN_AFTER_WALKING_PT } from './articles-pt/heel-pain-after-walking';
 import { HEEL_PAIN_AT_NIGHT_PT } from './articles-pt/heel-pain-at-night';
+import { PF_PREGNANCY_PT } from './articles-pt/pf-pregnancy';
 import { HEEL_SPUR_EXERCISES_PT } from './articles-pt/heel-spur-exercises';
 import { HIGH_ARCHES_PT } from './articles-pt/high-arches';
 import { HUB_FLAT_FEET_PT } from './articles-pt/hub-flat-feet';
@@ -96,6 +97,7 @@ import { HAMMER_TOE_FR } from './articles-fr/hammer-toe';
 import { HEEL_FAT_PAD_FR } from './articles-fr/heel-fat-pad';
 import { HEEL_PAIN_AFTER_WALKING_FR } from './articles-fr/heel-pain-after-walking';
 import { HEEL_PAIN_AT_NIGHT_FR } from './articles-fr/heel-pain-at-night';
+import { PF_PREGNANCY_FR } from './articles-fr/pf-pregnancy';
 import { HEEL_SPUR_EXERCISES_FR } from './articles-fr/heel-spur-exercises';
 import { HIGH_ARCHES_FR } from './articles-fr/high-arches';
 import { HUB_FLAT_FEET_FR } from './articles-fr/hub-flat-feet';
@@ -156,6 +158,7 @@ import { HAMMER_TOE_IT } from './articles-it/hammer-toe';
 import { HEEL_FAT_PAD_IT } from './articles-it/heel-fat-pad';
 import { HEEL_PAIN_AFTER_WALKING_IT } from './articles-it/heel-pain-after-walking';
 import { HEEL_PAIN_AT_NIGHT_IT } from './articles-it/heel-pain-at-night';
+import { PF_PREGNANCY_IT } from './articles-it/pf-pregnancy';
 import { HEEL_SPUR_EXERCISES_IT } from './articles-it/heel-spur-exercises';
 import { HIGH_ARCHES_IT } from './articles-it/high-arches';
 import { HUB_FLAT_FEET_IT } from './articles-it/hub-flat-feet';
@@ -216,6 +219,7 @@ import { HAMMER_TOE_DE } from './articles-de/hammer-toe';
 import { HEEL_FAT_PAD_DE } from './articles-de/heel-fat-pad';
 import { HEEL_PAIN_AFTER_WALKING_DE } from './articles-de/heel-pain-after-walking';
 import { HEEL_PAIN_AT_NIGHT_DE } from './articles-de/heel-pain-at-night';
+import { PF_PREGNANCY_DE } from './articles-de/pf-pregnancy';
 import { HEEL_SPUR_EXERCISES_DE } from './articles-de/heel-spur-exercises';
 import { HIGH_ARCHES_DE } from './articles-de/high-arches';
 import { HUB_FLAT_FEET_DE } from './articles-de/hub-flat-feet';
@@ -282,6 +286,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     heelFatPad: HEEL_FAT_PAD_PT,
     heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_PT,
     heelPainAtNight: HEEL_PAIN_AT_NIGHT_PT,
+    pfPregnancy: PF_PREGNANCY_PT,
     heelSpurExercises: HEEL_SPUR_EXERCISES_PT,
     highArches: HIGH_ARCHES_PT,
     hubFlatFeet: HUB_FLAT_FEET_PT,
@@ -344,6 +349,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     heelFatPad: HEEL_FAT_PAD_FR,
     heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_FR,
     heelPainAtNight: HEEL_PAIN_AT_NIGHT_FR,
+    pfPregnancy: PF_PREGNANCY_FR,
     heelSpurExercises: HEEL_SPUR_EXERCISES_FR,
     highArches: HIGH_ARCHES_FR,
     hubFlatFeet: HUB_FLAT_FEET_FR,
@@ -406,6 +412,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     heelFatPad: HEEL_FAT_PAD_IT,
     heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_IT,
     heelPainAtNight: HEEL_PAIN_AT_NIGHT_IT,
+    pfPregnancy: PF_PREGNANCY_IT,
     heelSpurExercises: HEEL_SPUR_EXERCISES_IT,
     highArches: HIGH_ARCHES_IT,
     hubFlatFeet: HUB_FLAT_FEET_IT,
@@ -468,6 +475,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     heelFatPad: HEEL_FAT_PAD_DE,
     heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_DE,
     heelPainAtNight: HEEL_PAIN_AT_NIGHT_DE,
+    pfPregnancy: PF_PREGNANCY_DE,
     heelSpurExercises: HEEL_SPUR_EXERCISES_DE,
     highArches: HIGH_ARCHES_DE,
     hubFlatFeet: HUB_FLAT_FEET_DE,

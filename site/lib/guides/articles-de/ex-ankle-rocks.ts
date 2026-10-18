@@ -16,7 +16,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     'Sprunggelenk mobilisieren mit Sprunggelenk-Wippen, Knie über die Zehen: Technik, Sätze und Wiederholungen, warum die Beugung zählt und wie du sie testest.',
   h1: 'Sprunggelenk-Wippen: so geht es und warum die Beweglichkeit zählt',
   lede:
-    'Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit einer 23,3-fachen Chance.',
+    'Beim Sprunggelenk-Wippen wanderst du im Stehen mit dem Knie über die Zehen nach vorn, während die Ferse flach auf dem Boden bleibt. Die Übung baut Dorsalflexion im Sprunggelenk auf, also wie weit sich das Sprunggelenk beugt, wenn der Fuß am Boden steht. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/) und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion der stärkste einzelne Risikofaktor, mit einer 23,3-fachen Chance.',
   takeaways: [
     'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).',
     'Sprunggelenk-Wippen baut Dorsalflexion auf, indem es das Ende des Bewegungsumfangs unter Körpergewicht belastet, anders als eine passive Dehnung an der Wand.',
@@ -63,7 +63,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
             'Die Plantarfaszie fängt Kräfte ab, für die sie nicht gemacht ist.',
           ],
         },
-        'In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit einer 23,3-fachen Chance, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine verkürzte Wade, genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
+        'In der Fall-Kontroll-Studie von Riddle 2003 war **eine eingeschränkte Dorsalflexion im Sprunggelenk die Variable mit dem größten unabhängigen Effekt**, mit einer 23,3-fachen Chance, eine Plantarfasziitis zu entwickeln. Das war stärker als BMI, Zeit im Stehen oder Laufstrecke. Eine [verkürzte Wade](/de/verspannte-waden/), genauer der Gastrocnemius, fand sich in einer anderen Fallserie bei 52 bis 60\u00A0% von 254\u00A0Personen mit Plantarfasziitis.',
         'Die Wade passiv zu dehnen (wie bei der [Wadendehnung](/de/uebungen/wade-dehnen/) und der [Soleusdehnung](/de/uebungen/soleus-dehnen/)) geht eine Seite des Problems an: die Länge des Muskels. Sprunggelenk-Wippen geht die andere Seite an: aktive Kontrolle am Ende des Bewegungsumfangs. Wenn du das Knie unter Körpergewicht über die Zehen wippst, lernt das Sprunggelenk, den Umfang zu nutzen, den es hat, statt ihn nur passiv zu erreichen.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -73,7 +73,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
       paragraphs: [
         'Die [Wadendehnung](/de/uebungen/wade-dehnen/) ist ein passives Halten. Du lehnst dich an die Wand und wartest, bis der Muskel länger wird. Das hintere Bein ist gestreckt, das zielt auf den Gastrocnemius. Die [Soleusdehnung](/de/uebungen/soleus-dehnen/) macht dasselbe mit gebeugtem Knie.',
         'Sprunggelenk-Wippen ist eine aktive, wiederholte Bewegung. Du schiebst das Knie nach vorn, kommst zurück, schiebst wieder. Du belastest das Sprunggelenk durch seinen Bewegungsumfang, statt am Ende still zu halten. Das Wippen baut die Fähigkeit auf, Dorsalflexion unter Last zu nutzen, und genau das brauchen Gehen und Laufen.',
-        'Beides ist nützlich. **Dehnen öffnet den Bewegungsumfang. Sprunggelenk-Wippen trainiert dich, ihn zu nutzen.** Die Leitlinie bewertet Wadendehnen mit A. Sprunggelenk-Wippen gehört zur Mobilitätsarbeit für das Sprunggelenk, die Walkito zusammen mit diesen Dehnungen einplant.',
+        'Beides ist nützlich. **Dehnen öffnet den Bewegungsumfang. Sprunggelenk-Wippen trainiert dich, ihn zu nutzen.** Die Leitlinie bewertet Wadendehnen mit A. Sprunggelenk-Wippen gehört zur [Mobilitätsarbeit für das Sprunggelenk](/de/sprunggelenk-mobilisieren-uebungen/), die Walkito zusammen mit diesen Dehnungen einplant.',
       ],
       cites: [CITE.guideline],
     },
@@ -132,7 +132,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Hör auf und geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Hör auf und geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du vorn am Sprunggelenk ein scharfes Zwicken spürst, das zwischen den Wiederholungen nicht weggeht',
       'das Sprunggelenk bei der Bewegung blockiert oder hängen bleibt',
@@ -146,7 +146,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant das Sprunggelenk-Wippen an Mobilitätstagen ein, zusammen mit der Waden- und der Soleusdehnung. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten.',
     more: [
-      'Ein Zentimeter mehr beim Knie-Wand-Test in ein paar Wochen ist bedeutsam. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Ein Zentimeter mehr beim Knie-Wand-Test in ein paar Wochen ist bedeutsam. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

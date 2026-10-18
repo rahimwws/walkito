@@ -67,7 +67,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
             'Diese Drehung zwingt den Fuß in die Pronation, das Sprunggelenk kippt nach innen, und das Gewölbe flacht ab.',
           ],
         },
-        'Deshalb haben viele Menschen mit Plattfüßen oder Schmerzen im Gewölbe auch schwache Hüften. Das Gewölbe versagt nicht von allein. **Es wird von oben überlastet.** Eine kräftigere Hüfte verringert diese Last von oben.',
+        'Deshalb haben viele Menschen mit [Plattfüßen](/de/plattfuss/) oder Schmerzen im Gewölbe auch schwache Hüften. Das Gewölbe versagt nicht von allein. **Es wird von oben überlastet.** Eine kräftigere Hüfte verringert diese Last von oben.',
         'Eine Querschnittsstudie von 2013 aus der Framingham Foot Study untersuchte etwa 1.900\u00A0Erwachsene aus der Allgemeinbevölkerung. Die Plattfußhaltung selbst hing nicht mit Kreuzschmerzen zusammen, aber ein Fuß, der beim Gehen nach innen kippte, zeigte bei Frauen einen kleinen Zusammenhang mit Kreuzschmerzen. Das deutet an, dass die Kette Fuß, Hüfte, Rücken in beide Richtungen laufen kann.',
         'Die Plattfuß-Studie von Brijwasi und Kollegen (2023) nahm Hüftkräftigung neben Kurzer-Fuß-Übungen, Arbeit am Sprunggelenk und Dehnen auf. Das kombinierte Programm verbesserte die Form des Gewölbes über sechs Wochen. Die Studie trennte nicht, wie viel die Hüftkräftigung allein beitrug, aber dass sie dabei war, spiegelt die biomechanische Begründung wider.',
       ],
@@ -77,7 +77,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
       h2: 'Wem hilft Hüftabduktion bei Fußschmerzen?',
       paragraphs: [
         'Menschen mit Plattfüßen oder starker Pronation profitieren, weil die Übung eine häufige Ursache für das Absinken des Gewölbes weiter oben angeht. Wenn deine Knie bei der Kniebeuge oder beim Gehen nach innen einknicken, sind schwache Hüftabduktoren wahrscheinlich mit dabei.',
-        'Läufer profitieren, weil der Einbeinstand die Grundhaltung beim Laufen ist. Jeder Schritt landet auf einem Fuß. Ein schwacher Gluteus medius auf dieser Seite lässt Knie und Fuß nach innen kippen, was zu Schienbeinkantensyndrom, Plantarfasziitis und Läuferknie beitragen kann. Mehr dazu unter [Fersenschmerzen bei Läufern](/heel-pain-runners/) (auf Englisch) und [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
+        'Läufer profitieren, weil der Einbeinstand die Grundhaltung beim Laufen ist. Jeder Schritt landet auf einem Fuß. Ein schwacher Gluteus medius auf dieser Seite lässt Knie und Fuß nach innen kippen, was zu Schienbeinkantensyndrom, [Plantarfasziitis](/de/plantarfasziitis/) und Läuferknie beitragen kann. Mehr dazu unter [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
         'Menschen, die viele Stunden stehen, vor allem in der Pflege und im Einzelhandel, können ebenfalls profitieren. Langes Stehen ermüdet den Gluteus medius, und am Ende einer Schicht lässt die Kontrolle über die Hüfte nach. Übungen, die gut zur Hüftabduktion passen, findest du unter [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
       ],
     },
@@ -138,7 +138,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du scharfe Hüftschmerzen hast, die das Belasten einschränken',
       'das Knie nach innen einknickt und du es trotz Übung nicht kontrollieren kannst',

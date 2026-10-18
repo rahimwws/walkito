@@ -79,7 +79,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
       h2: 'Perché il tibiale posteriore conta per l’arco?',
       paragraphs: [
         'Il tibiale posteriore è **il principale stabilizzatore dinamico dell’arco longitudinale mediale.** A ogni passo si contrae per tenere su l’arco nella fase di appoggio intermedio, quando tutto il tuo peso è su un piede. I muscoli intrinseci del piede (allenati dall’[esercizio del piede corto](/it/esercizi/piede-corto/) e dall’[apertura delle dita](/it/esercizi/apertura-dita-piede/)) danno un sostegno locale all’arco, ma il tibiale posteriore dà la forza estrinseca più grande, dall’alto.',
-        'Quando il tendine del tibiale posteriore si indebolisce o degenera, l’arco cede progressivamente e il piede va in pronazione. Una revisione del 2017 di Ling e Lui l’ha descritta come la causa più comune di piede piatto acquisito dell’adulto. Una revisione sistematica del 2018 di Ross e colleghi ha trovato che i programmi di esercizi con rinforzo del tibiale posteriore miglioravano dolore e funzione nella disfunzione del tendine tibiale posteriore in fase iniziale.',
+        'Quando il tendine del tibiale posteriore si indebolisce o degenera, l’arco cede progressivamente e il piede va in pronazione. Una revisione del 2017 di Ling e Lui l’ha descritta come la causa più comune di piede piatto acquisito dell’adulto. Una revisione sistematica del 2018 di Ross e colleghi ha trovato che i programmi di esercizi con rinforzo del tibiale posteriore miglioravano dolore e funzione nella [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/) in fase iniziale.',
         'Per questo i [programmi di esercizi per il piede piatto](/it/esercizi-piede-piatto/) includono sia esercizi per i muscoli intrinseci del piede sia lavoro sul tibiale posteriore. I muscoli intrinseci sono gli stabilizzatori locali. Il tibiale posteriore è il principale stabilizzatore estrinseco. Contano entrambi.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
@@ -101,7 +101,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
       h2: 'Cosa dicono gli studi sul rinforzo del tibiale posteriore?',
       paragraphs: [
         'La prova più diretta sul movimento viene dallo studio del 2004 con risonanza magnetica di Kulig e colleghi. Ha confermato che l’adduzione del piede attiva in modo selettivo il tibiale posteriore, con un’attivazione minima dei muscoli intorno. Per questo l’inversione contro un elastico è l’esercizio da scegliere quando l’obiettivo è rinforzare proprio quel muscolo.',
-        'Per gli esiti clinici, una revisione sistematica del 2018 di Ross e colleghi ha esaminato i programmi di esercizi per la disfunzione del tendine tibiale posteriore. La maggior parte degli studi era piccola, ma la revisione ha concluso che i programmi con esercizi eccentrici e concentrici per il tibiale posteriore, spesso uniti al rinforzo del polpaccio e a plantari, miglioravano dolore e funzione.',
+        'Per gli esiti clinici, una revisione sistematica del 2018 di Ross e colleghi ha esaminato i programmi di esercizi per la disfunzione del tendine tibiale posteriore. La maggior parte degli studi era piccola, ma la revisione ha concluso che i programmi con esercizi eccentrici e concentrici per il tibiale posteriore, spesso uniti al rinforzo del polpaccio e a [plantari](/it/plantari-o-esercizi/), miglioravano dolore e funzione.',
         '**L’esercizio non è stato testato da solo in un grande studio sulla fascite plantare.** Il suo ruolo nel programma Walkito è sostenere l’arco rinforzando lo stabilizzatore estrinseco che lavora insieme ai muscoli intrinseci. Pagine collegate: [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [esercizio del piede corto](/it/esercizi/piede-corto/), [abduzione dell’anca](/it/esercizi/abduzione-anca/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito aggiunge l’inversione della caviglia con elastico dopo sei sessioni di piede corto in piedi. La progressione fa sì che i muscoli intrinseci del piede siano attivi prima di caricare lo stabilizzatore estrinseco. Le sessioni durano 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue il tempo di tenuta dell’arco e la resistenza del polpaccio.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

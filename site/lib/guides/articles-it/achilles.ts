@@ -21,14 +21,14 @@ export const ACHILLES_IT: Guide = {
   lede:
     'Gli esercizi per la tendinite d’Achille funzionano meglio quando la discesa del tallone è intesa come lavoro di forza, non come allungamento. La linea guida clinica del 2024 dà all’esercizio il grado più alto, **A**, e una meta-analisi a rete del 2021 su 29\u00A0studi non ha trovato un protocollo chiaramente migliore di un altro. Quello che conta è caricare il tendine con costanza per settimane.',
   intro: [
-    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). La pagina sul [dolore al tallone per chi corre](/heel-pain-runners/) (in inglese) riassume entrambi. Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
+    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
     'La maggior parte delle persone usa «tendinite» e «tendinopatia» come sinonimi. Le linee guida attuali usano «tendinopatia» perché di solito il problema è di carico, non un’infiammazione pura. Questa pagina usa «tendinite» nei titoli e «tendinopatia» dove la usa la linea guida.',
   ],
   takeaways: [
     'La linea guida clinica del 2024 dà all’esercizio (qualsiasi tipo che carichi il tendine) una **A**, il suo grado più alto, per la tendinopatia achillea della porzione media (Chimenti e colleghi, 2024).',
     'Una meta-analisi a rete di 29\u00A0studi randomizzati non ha trovato differenze clinicamente rilevanti tra i diversi tipi di esercizio a 3 o 12\u00A0mesi (van der Vlist e colleghi, 2021).',
     'In uno studio su 58\u00A0persone, il carico pesante e lento 3\u00A0giorni a settimana ha dato risultati altrettanto buoni degli esercizi eccentrici due volte al giorno (Beyer e colleghi, 2015).',
-    'Per il dolore all’inserzione dell’Achille (proprio sull’osso del tallone), le discese del tallone vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda, cioè piegare la caviglia portando le dita verso lo stinco, schiaccia il tendine contro l’osso (Jonsson e colleghi, 2008).',
+    'Per il dolore all’inserzione dell’Achille (proprio sull’osso del tallone), le discese eccentriche vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda, cioè piegare la caviglia portando le dita verso lo stinco, schiaccia il tendine contro l’osso (Jonsson e colleghi, 2008).',
     'Un dolore durante il carico fino a circa 5/10, che passa entro la mattina dopo e non peggiora di settimana in settimana, era la regola testata in uno studio randomizzato che permetteva di continuare lo sport durante la riabilitazione (Silbernagel e colleghi, 2007).',
   ],
   toc: true,
@@ -44,7 +44,7 @@ export const ACHILLES_IT: Guide = {
     {
       h2: 'Cos’è la discesa eccentrica del tallone, e perché non è un allungamento?',
       paragraphs: [
-        'La discesa eccentrica del tallone è un esercizio di forza, non un allungamento per la flessibilità. Sali su entrambi i piedi, sposti il peso sul lato dolorante e scendi piano su un piede solo, lasciando il tallone scendere sotto il bordo del gradino. La fase di discesa è la contrazione eccentrica: il muscolo del polpaccio che si allunga sotto carico. È quella discesa controllata che costruisce la capacità del tendine nel giro di settimane.',
+        'La [discesa eccentrica del tallone](/it/esercizi/discese-eccentriche-tallone/) è un esercizio di forza, non un allungamento per la flessibilità. Sali su entrambi i piedi, sposti il peso sul lato dolorante e scendi piano su un piede solo, lasciando il tallone scendere sotto il bordo del gradino. La fase di discesa è la contrazione eccentrica: il muscolo del polpaccio che si allunga sotto carico. È quella discesa controllata che costruisce la capacità del tendine nel giro di settimane.',
         'L’errore più comune è restare fermi in basso come in un allungamento del polpaccio. Così diventa un allungamento statico, che è uno stimolo diverso. **Il punto è la discesa lenta e con carico.** Tre secondi giù, con il muscolo che lavora per tutto il tempo.',
         'Nello studio di Alfredson del 1998, 15\u00A0atleti con dolore di lunga data nella parte media del tendine d’Achille hanno fatto discese eccentriche del tallone due volte al giorno, 7\u00A0giorni su 7, per tre mesi, a ginocchio teso e piegato. Tutti e 15 sono tornati al livello di corsa di prima. Era uno studio piccolo, senza gruppo di controllo, ma ha dato il via a un intero filone di ricerca.',
       ],
@@ -70,7 +70,7 @@ export const ACHILLES_IT: Guide = {
       paragraphs: [
         'Sì, secondo le prove attuali. Uno studio del 2015 su 58\u00A0persone ha confrontato il carico pesante e lento (heavy slow resistance, HSR), fatto 3\u00A0giorni a settimana, con il classico protocollo eccentrico due volte al giorno. La conclusione: «Sia l’ECC tradizionale sia l’HSR danno risultati clinici positivi, ugualmente buoni e duraturi nei pazienti con tendinopatia achillea».',
         'Una meta-analisi a rete del 2021 su 29\u00A0studi non ha trovato differenze clinicamente rilevanti tra nessuno degli approcci di esercizio attivo a 3 o 12\u00A0mesi. Erano tutti meglio del non fare nulla. Nessuno studio aveva un basso rischio di bias. Gli autori consigliavano di iniziare con un programma di esercizi per il polpaccio perché costa poco e ha pochi effetti negativi.',
-        '**La forma del protocollo conta meno del caricare il tendine con costanza.** Le discese eccentriche sono le più studiate, l’HSR è altrettanto efficace e richiede meno sessioni a settimana, ed entrambi sono punti di partenza validi. Per la versione per la fascite plantare della stessa logica di rinforzo del polpaccio, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
+        '**La forma del protocollo conta meno del caricare il tendine con costanza.** Le discese eccentriche sono le più studiate, l’HSR è altrettanto efficace e richiede meno sessioni a settimana, ed entrambi sono punti di partenza validi. Per la versione per la [fascite plantare](/it/fascite-plantare/) della stessa logica di rinforzo del polpaccio, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -190,16 +190,16 @@ export const ACHILLES_IT: Guide = {
       figure: { id: 'achilles', caption: 'Il dolore al tendine d’Achille di solito è in uno di due punti: nella parte media del tendine o dove si attacca all’osso del tallone.', alt: 'Vista laterale di un piede e una caviglia con il tendine d’Achille dal polpaccio alla parte posteriore dell’osso del tallone, e una zona rossa nella parte media del tendine.' },
       keyFact: 'In uno studio pilota su 27\u00A0persone con dolore inserzionale all’Achille, un carico eccentrico solo a terra in piano, senza dorsiflessione profonda, ha dato buoni risultati nel 67% dei casi (Jonsson e colleghi, 2008).',
       paragraphs: [
-        'La tendinopatia achillea della porzione media si trova nel corpo del tendine, di solito da 2 a 6\u00A0centimetri sopra l’osso del tallone. Le discese eccentriche standard e il carico pesante e lento hanno qui le prove migliori. Le discese del tallone oltre il bordo del gradino vanno bene per il dolore nella porzione media.',
+        'La tendinopatia achillea della porzione media si trova nel corpo del tendine, di solito da 2 a 6\u00A0centimetri sopra l’osso del tallone. Le discese eccentriche standard e il carico pesante e lento hanno qui le prove migliori. Le discese eccentriche oltre il bordo del gradino vanno bene per il dolore nella porzione media.',
         'La tendinopatia achillea inserzionale è un dolore proprio nel punto in cui il tendine si attacca all’osso. In uno studio pilota del 2008 su 27\u00A0persone (34\u00A0tendini) con dolore inserzionale cronico, un protocollo modificato con carico eccentrico solo a terra in piano, senza dorsiflessione oltre la posizione neutra, ha riportato buoni risultati nel 67% dei casi. Una dorsiflessione profonda schiaccia il tendine contro l’osso del tallone, e questo irrita l’inserzione.',
-        'Se il dolore è dietro l’osso del tallone e non più in alto nel tendine, **fai tutti i sollevamenti sulle punte e le discese del tallone a terra in piano.** Non scendere sotto il bordo del gradino. Evita allungamenti aggressivi per lo stesso motivo. È la modifica più importante nei programmi per l’Achille, e quella che si dimentica più spesso.',
+        'Se il dolore è dietro l’osso del tallone e non più in alto nel tendine, **fai tutti i sollevamenti sulle punte e le discese eccentriche a terra in piano.** Non scendere sotto il bordo del gradino. Evita allungamenti aggressivi per lo stesso motivo. È la modifica più importante nei programmi per l’Achille, e quella che si dimentica più spesso.',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'Quanti sollevamenti sulle punte su una gamba dovresti riuscire a fare?',
       paragraphs: [
-        'La linea guida del 2024 indica il test di resistenza dei sollevamenti del tallone su una gamba come parte del modo consigliato per misurare la forza del polpaccio e seguire il recupero. Uno studio con dati di riferimento su 566\u00A0adulti sani indica un valore tipico tra 23 e 24\u00A0ripetizioni, da adattare a età, sesso e livello di attività. Quello che conta è l’andamento nel tempo e la differenza tra i due lati.',
+        'La linea guida del 2024 indica il test di resistenza dei sollevamenti sulle punte su una gamba come parte del modo consigliato per misurare la forza del polpaccio e seguire il recupero. Uno studio con dati di riferimento su 566\u00A0adulti sani indica un valore tipico tra 23 e 24\u00A0ripetizioni, da adattare a età, sesso e livello di attività. Quello che conta è l’andamento nel tempo e la differenza tra i due lati.',
         'L’obiettivo del polpaccio nell’app è 25\u00A0sollevamenti sulle punte su una gamba. Il test si fa ogni 14\u00A0giorni finché l’obiettivo del polpaccio è attivo, poi ogni 28\u00A0giorni. Viene seguita anche la differenza tra le gambe, perché una differenza tra i lati che non se ne va può indicare un recupero incompleto.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],
@@ -209,7 +209,6 @@ export const ACHILLES_IT: Guide = {
       paragraphs: [
         'In Silbernagel 2007, i pazienti che hanno continuato a correre durante la riabilitazione seguendo il modello di controllo del dolore non sono andati peggio di quelli che si erano prima fermati a riposo. Entrambi i gruppi sono migliorati a 12\u00A0mesi. Lo studio concludeva che un’attività continuata e guidata dal dolore «potrebbe quindi rappresentare un’opzione valida» durante la riabilitazione.',
         'Questo non vuol dire che correre sia innocuo in ogni caso. **Se il dolore non passa durante la notte, o se ogni settimana va peggio, riduci.** Il dolore all’attaccatura sull’osso del tallone richiede più cautela di quello nella parte media del tendine. Qualsiasi schiocco o scatto improvviso è un motivo per fermarti e rivolgerti a un professionista sanitario.',
-        'La pagina sul [dolore al tallone per chi corre](/heel-pain-runners/) (in inglese) spiega più nel dettaglio come gestire il carico nella corsa.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -256,7 +255,7 @@ export const ACHILLES_IT: Guide = {
     {
       q: 'Bisogna allungare un tendine d’Achille dolorante?',
       cites: [CITE.alfredson, CITE.silbernagel, CITE.beyer],
-      a: 'L’allungamento non è l’esercizio principale per la tendinopatia achillea. Gli studi di questa pagina sono tutti protocolli di carico (sollevamenti e discese del tallone), non programmi di stretching. Un lavoro delicato di mobilità del polpaccio può seguire le sessioni con carico, ma gli allungamenti aggressivi possono riaccendere i sintomi, soprattutto con il dolore inserzionale, dove la dorsiflessione schiaccia l’attaccatura.',
+      a: 'L’allungamento non è l’esercizio principale per la tendinopatia achillea. Gli studi di questa pagina sono tutti protocolli di carico (sollevamenti sulle punte e discese eccentriche), non programmi di stretching. Un lavoro delicato di mobilità del polpaccio può seguire le sessioni con carico, ma gli allungamenti aggressivi possono riaccendere i sintomi, soprattutto con il dolore inserzionale, dove la dorsiflessione schiaccia l’attaccatura.',
     },
     {
       q: 'Quanto ci mettono a funzionare gli esercizi per la tendinite d’Achille?',
@@ -276,7 +275,7 @@ export const ACHILLES_IT: Guide = {
     {
       q: 'Cosa si può scambiare per tendinite d’Achille?',
       cites: [CITE.chooRearfoot],
-      a: 'La borsite retrocalcaneare, la deformità di Haglund e una rottura parziale dell’Achille possono dare tutte un dolore simile dietro il tallone. Una sporgenza ossea visibile fa pensare alla deformità di Haglund, mentre un gonfiore proprio all’altezza del bordo posteriore della scarpa fa pensare a una borsite. Un dolore acuto improvviso con uno schiocco, o non riuscire a salire sulle punte, richiede una valutazione urgente per una rottura del tendine.',
+      a: 'La borsite retrocalcaneare, la [deformità di Haglund](/it/morbo-di-haglund/) e una rottura parziale dell’Achille possono dare tutte un dolore simile dietro il tallone. Una sporgenza ossea visibile fa pensare alla deformità di Haglund, mentre un gonfiore proprio all’altezza del bordo posteriore della scarpa fa pensare a una borsite. Un dolore acuto improvviso con uno schiocco, o non riuscire a salire sulle punte, richiede una valutazione urgente per una rottura del tendine.',
     },
   ],
   redFlags: {
@@ -293,7 +292,7 @@ export const ACHILLES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi indovinare l’ordine, le dosi o quando aggiungere carico. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. La catena del polpaccio va dai sollevamenti sulle punte da seduto ai sollevamenti su due piedi, una tenuta, i sollevamenti con asciugamano, le discese eccentriche del tallone e i saltelli sulle punte. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del polpaccio), un test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi. Se il dolore è proprio all’attaccatura sull’osso del tallone, fallo controllare da un professionista sanitario prima di caricarlo forte.',

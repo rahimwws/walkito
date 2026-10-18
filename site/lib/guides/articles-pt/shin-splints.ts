@@ -228,7 +228,7 @@ export const SHIN_SPLINTS_PT: Guide = {
         },
         'Se a dor melhora com o aquecimento e continua tolerável, uma corrida mais curta ou mais leve, com menos frequência, é um meio-termo razoável enquanto a canela se adapta. Dias de descanso entre as corridas dão tempo para o osso responder à carga.',
         'A regra dos 10%, não aumentar mais de 10% na quilometragem semanal, é uma regra prática muito citada, mas não comprovada. Um ensaio de 2008 com 532\u00A0corredores iniciantes não encontrou diferença na taxa de lesões entre um programa baseado na regra dos 10% e um mais rápido.',
-        'O que um estudo de 2014 com 874\u00A0corredores mostrou é que saltos grandes e repentinos na distância vêm com mais lesões. **Gradual é melhor do que repentino, mas nenhuma porcentagem específica tem apoio de ensaios.** [Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) traz o mesmo raciocínio de controle de carga com mais detalhes.',
+        'O que um estudo de 2014 com 874\u00A0corredores mostrou é que saltos grandes e repentinos na distância vêm com mais lesões. **Gradual é melhor do que repentino, mas nenhuma porcentagem específica tem apoio de ensaios.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
@@ -324,7 +324,7 @@ export const SHIN_SPLINTS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: `O Walkito não tem um programa específico para canelite, e esta página explica por quê: nenhum programa de exercícios mostrou acelerar a recuperação da canelite em um ensaio. O que o Walkito tem é trabalho de panturrilha, tornozelo e equilíbrio que mira os mesmos músculos que os pesquisadores estudaram, e um plano que se adapta a como cada manhã está.`,
     more: [
       `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando a sua primeira meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho na perna está fazendo efeito.`,

@@ -42,12 +42,12 @@ export const BALL_OF_FOOT_FR: Guide = {
     {
       h2: 'Qu’est-ce qui cause une douleur à l’avant-pied\u00A0?',
       paragraphs: [
-        'La **métatarsalgie** est le terme le plus courant. Elle désigne une douleur et une inflammation autour d’une ou plusieurs têtes métatarsiennes, en général la deuxième et la troisième. La surutilisation, un deuxième métatarsien long, des voûtes hautes et des mollets raides peuvent tous y contribuer.',
+        'La **métatarsalgie** est le terme le plus courant. Elle désigne une douleur et une inflammation autour d’une ou plusieurs têtes métatarsiennes, en général la deuxième et la troisième. La surutilisation, un deuxième métatarsien long, des [voûtes hautes](/fr/pied-creux-exercices/) et des [mollets raides](/fr/mollets-tendus/) peuvent tous y contribuer.',
         'Le **névrome de Morton** est un épaississement du nerf entre les têtes métatarsiennes, le plus souvent entre le troisième et le quatrième orteil. Il donne des brûlures, des fourmillements ou un engourdissement plutôt qu’une simple douleur. Les chaussures étroites ou à talons hauts compriment le nerf et l’aggravent.',
         'La **sésamoïdite** est une inflammation des deux petits os logés dans le tendon sous l’articulation du gros orteil. La douleur se situe juste sous le gros orteil plutôt que sous le milieu de l’avant-pied.',
         'La **fracture de fatigue d’un métatarsien** est une petite fissure dans l’un des métatarsiens, en général le deuxième ou le troisième. La douleur est localisée, s’aggrave souvent au fil de la journée et peut faire mal la nuit. Un gonflement sur le dessus du pied est fréquent. Celle-ci demande une imagerie et du repos.',
         'Les **orteils en griffe et les orteils en marteau** plient les articulations des orteils vers le bas, ce qui décolle l’orteil du sol et reporte sa part de la poussée sur la tête métatarsienne derrière lui.',
-        'Les **talons hauts et les chaussures étroites** basculent le poids vers l’avant-pied et serrent les têtes métatarsiennes les unes contre les autres. C’est pourquoi le névrome de Morton est plus fréquent chez les personnes qui en portent.',
+        'Les **talons hauts et les chaussures étroites** basculent le poids vers l’avant-pied et serrent les têtes métatarsiennes les unes contre les autres. C’est pourquoi le [névrome de Morton](/fr/nevrome-de-morton/) est plus fréquent chez les personnes qui en portent.',
         'Les **voûtes hautes** (pied creux, c’est-à-dire un pied à la voûte haute et rigide) réduisent la surface d’appui de la plante et concentrent la pression sur le talon et l’avant-pied. À l’opposé, les [pieds plats](/fr/exercices-pieds-plats/) peuvent aussi contribuer à la douleur de l’avant-pied en modifiant la façon dont le pied se déroule pendant la poussée.',
         'Les **mollets raides** sont une cause sous-estimée. Quand le gastrocnémien, le plus gros et le plus superficiel des deux muscles du mollet, est raide, la cheville ne peut pas assez se plier pendant la marche. Le corps compense en levant le talon plus tôt, ce qui reporte plus de charge sur l’avant-pied. C’est le même mécanisme que derrière la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) et la [tendinite d’Achille](/fr/tendinite-achille-exercices/).',
       ],
@@ -61,7 +61,7 @@ export const BALL_OF_FOOT_FR: Guide = {
           list: [
             'Une douleur étendue sous les deuxième et troisième têtes métatarsiennes oriente vers une métatarsalgie.',
             'Une douleur entre le troisième et le quatrième orteil, avec des fourmillements, évoque un névrome de Morton.',
-            'Une douleur juste sous l’articulation du gros orteil correspond plutôt à une sésamoïdite.',
+            'Une douleur juste sous l’articulation du gros orteil correspond plutôt à une [sésamoïdite](/fr/sesamoidite/).',
             'Un point localisé sur le dessus du pied avec un gonflement pose la question d’une fracture de fatigue.',
           ],
         },
@@ -191,7 +191,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       paragraphs: [
         'Les données sur l’exercice dans la douleur à l’avant-pied sont plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille, où il existe des essais randomisés. Pour la métatarsalgie, il y a une seule étude avant-après sur 41\u00A0personnes, sans groupe témoin. Le raisonnement mécanique tient, et le risque d’exercices doux des orteils et d’étirements du mollet est faible, mais la preuve directe d’un essai contrôlé manque.',
         '**L’exercice seul peut ne pas suffire.** Les coussinets métatarsiens, les chaussures à l’avant large et moins de temps en talons font l’objet d’un consensus clinique plus large.',
-        'Pour le névrome de Morton, changer de chaussures et ajouter un coussinet est souvent plus efficace que l’exercice. Pour une fracture de fatigue d’un métatarsien, l’exercice n’est pas la bonne approche tant que l’os n’a pas récupéré. Si la douleur dure depuis plus de quelques semaines, ou s’accompagne d’un engourdissement ou d’un gonflement, faites-la d’abord examiner. [Douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) traite de la gestion de la charge chez les coureurs.',
+        'Pour le névrome de Morton, changer de chaussures et ajouter un coussinet est souvent plus efficace que l’exercice. Pour une fracture de fatigue d’un métatarsien, l’exercice n’est pas la bonne approche tant que l’os n’a pas récupéré. Si la douleur dure depuis plus de quelques semaines, ou s’accompagne d’un engourdissement ou d’un gonflement, faites-la d’abord examiner.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -235,7 +235,7 @@ export const BALL_OF_FOOT_FR: Guide = {
     },
     {
       q: 'Quelles sont les complications d’une métatarsalgie non soignée\u00A0?',
-      a: 'Sans prise en charge, la métatarsalgie peut changer votre façon de marcher, car on déplace naturellement le poids loin du point douloureux vers d’autres parties du pied, ce qui peut créer de nouvelles zones de douleur. Une pression continue sur les têtes métatarsiennes peut aussi favoriser des callosités ou, plus rarement, des déformations des orteils comme les orteils en marteau. Changer tôt de chaussures et utiliser des coussinets métatarsiens réduit ce risque.',
+      a: 'Sans prise en charge, la métatarsalgie peut changer votre façon de marcher, car on déplace naturellement le poids loin du point douloureux vers d’autres parties du pied, ce qui peut créer de nouvelles zones de douleur. Une pression continue sur les têtes métatarsiennes peut aussi favoriser des callosités ou, plus rarement, des déformations des orteils comme les [orteils en marteau](/fr/orteil-en-marteau-exercices/). Changer tôt de chaussures et utiliser des coussinets métatarsiens réduit ce risque.',
     },
   ],
   redFlags: {

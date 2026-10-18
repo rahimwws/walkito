@@ -20,13 +20,13 @@ export const CALF_RAISE_TEST_FR: Guide = {
     'Le test de montée sur pointes sur une jambe mesure l’endurance du mollet\u00A0: protocole, normes par âge et sexe, sens du score, comment progresser.',
   h1: 'Test de montée sur pointes\u00A0: combien devriez-vous en faire, et que veut dire votre score\u00A0?',
   lede:
-    'Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu indique la force résistante à la fatigue du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.',
+    'Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu reflète l’endurance musculaire du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.',
   intro: [
     'Une étude de 2017 sur 566\u00A0adultes en bonne santé a trouvé une médiane globale d’environ 23 à 24\u00A0répétitions par jambe, qui varie selon l’âge, le sexe et le niveau d’activité. Cette page présente le protocole de recherche, une version à faire chez soi, les valeurs de référence par âge, le sens d’un écart gauche-droite et le lien entre ce test, la douleur au talon et la course.',
   ],
   takeaways: [
     'La médiane globale chez l’adulte en bonne santé est de 24\u00A0répétitions sur la jambe droite et 23 sur la gauche, d’après une étude sur 566\u00A0personnes de 20 à 81\u00A0ans (Hébert-Losier et coll., 2017).',
-    'Les hommes faisaient plus de répétitions que les femmes au total (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).',
+    'Dans l’ensemble, les hommes faisaient plus de répétitions que les femmes (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).',
     'Une différence gauche-droite de plus de 10\u00A0% est le seuil habituel d’une asymétrie notable en rééducation du membre inférieur (Silbernagel et coll., 2010).',
     'Le test a une excellente fiabilité\u00A0: ICC de 0,96, avec une erreur de mesure typique d’environ deux répétitions (Hébert-Losier et coll., 2017).',
   ],
@@ -42,7 +42,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
         {
           list: [
             'Pour suivre la récupération après une rupture du tendon d’Achille.',
-            'Pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une périostite tibiale.',
+            'Pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une [périostite tibiale](/fr/periostite-tibiale-exercices/).',
             'Pour comparer une jambe à l’autre.',
           ],
         },
@@ -142,7 +142,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
             'Le manque d’habitude du test.',
           ],
         },
-        '**Le test n’est pas un diagnostic.** Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une fasciite plantaire ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe.',
+        '**Le test n’est pas un diagnostic.** Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une [fasciite plantaire](/fr/fasciite-plantaire/) ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe.',
         'Un professionnel de santé combine ce nombre avec d’autres éléments pour décider s’il explique un symptôme. Le test est plus parlant comme tendance que comme mesure isolée\u00A0: passer de 14 à 22 en deux mois est un signal plus clair que n’importe quel chiffre comparé à un tableau.',
       ],
       cites: [CITE.hebertLosier],
@@ -153,7 +153,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
         'Le mollet et le fascia plantaire sont reliés par l’os du talon. Le tendon d’Achille tire à l’arrière\u00A0; le fascia tire par en dessous. **Des mollets faibles ou qui se fatiguent vite mettent plus de tension sur les deux à chaque pas.**',
         'La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet et du fascia plantaire sa meilleure note, A, et au renforcement musculaire la note B. L’essai de Rathleff, qui a testé les montées sur pointes avec charge dans la fasciite plantaire, utilisait une montée sur pointes comme exercice principal, et les participants ont vu leur douleur baisser plus vite qu’avec les étirements seuls sur trois mois. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) pour le protocole complet.',
         'Pour la tendinite d’Achille, le heel-rise test est l’une des mesures de résultat habituelles. Les personnes qui ont une tendinopathie d’Achille du corps du tendon (une douleur au milieu du tendon, pas à l’os du talon) ont en général une endurance du mollet réduite du côté atteint. Voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour le travail excentrique.',
-        'En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course. Voir [douleur au talon et course](/heel-pain-runners/) (en anglais) pour une vue d’ensemble.',
+        'En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -200,7 +200,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     },
     {
       q: 'Le test de montée sur pointes, c’est la même chose que le heel-rise test\u00A0?',
-      a: 'Oui. «\u00A0Heel-rise test\u00A0» est le nom utilisé dans la littérature scientifique. «\u00A0Test de montée sur pointes\u00A0» est plus courant en dehors des cabinets. Le mouvement est le même\u00A0: des montées sur la pointe d’un seul pied jusqu’à la fatigue, à un rythme fixe.',
+      a: 'Oui. «\u00A0Heel-rise test\u00A0» est le nom utilisé dans la littérature scientifique. «\u00A0Test de montée sur pointes\u00A0» est plus courant en dehors des cabinets. Le mouvement est le même\u00A0: des montées sur pointes sur un seul pied jusqu’à la fatigue, à un rythme fixe.',
     },
     {
       q: 'Quel est un bon score au test de montée sur pointes selon l’âge\u00A0?',
@@ -227,7 +227,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       q: 'Quels sont les signes de mollets faibles\u00A0?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Des mollets faibles se voient souvent par une fatigue rapide dans les escaliers ou les montées, une poussée plus faible en marchant ou en courant, ou des oscillations en équilibre sur une jambe. Le signe objectif le plus clair est le test de montée sur pointes sur une jambe\u00A0: un écart net entre la jambe gauche et la droite est plus fiable que l’aspect ou la sensation du mollet.',
+      a: 'Des mollets faibles se voient souvent par une fatigue rapide dans les escaliers ou les montées, une poussée plus faible en marchant ou en courant, ou des oscillations en [équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/). Le signe objectif le plus clair est le test de montée sur pointes sur une jambe\u00A0: un écart net entre la jambe gauche et la droite est plus fiable que l’aspect ou la sensation du mollet.',
     },
     {
       q: 'Où doit-on sentir une montée sur pointes\u00A0?',

@@ -174,7 +174,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan que empieza en tu nivel y sube cuando estás listo. La cadena de pantorrilla va de las elevaciones sentado a las elevaciones de pie con dos pies, la elevación sostenida, la elevación de talones con toalla, los excéntricos de talón y los saltos pogo. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos.',
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla y el equilibrio. La meta de pantorrilla son 25\u00A0elevaciones a una pierna. Alcanzarla no termina el trabajo: una nueva meta ocupa su lugar. Walkito es un programa de ejercicio. No diagnostica.',

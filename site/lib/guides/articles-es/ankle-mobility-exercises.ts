@@ -246,7 +246,7 @@ export const ANKLE_MOBILITY_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan semana a semana en torno a una meta, para el dolor de talón, pie y pierna. La movilidad de tobillo es parte de él: los estiramientos de pantorrilla, una posición sostenida de rodilla a la pared y el balanceo de rodilla rotan por tus sesiones, sobre todo en los días de movilidad, junto con trabajo de fuerza de pantorrilla y de equilibrio. Walkito empieza los estiramientos y la movilidad de tobillo con 2\u00A0series de 30\u00A0segundos, cada pierna.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

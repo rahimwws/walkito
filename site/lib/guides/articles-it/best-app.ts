@@ -24,7 +24,7 @@ export const BEST_APP_IT: Guide = {
     'La migliore app per la fascite plantare nel 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch e Walkito a confronto su prezzo e piattaforme.',
   h1: 'La migliore app per la fascite plantare: guida alla scelta per il 2026',
   lede:
-    'Questa pagina confronta sette app che includono esercizi per la fascite plantare, il piede piatto o il dolore al piede in generale. Walkito è una di queste, e questa pagina la fa Walkito, quindi è giusto che tu lo sappia subito. L’obiettivo è essere onesti, dire dove le altre sono più forti e darti abbastanza dettagli per scegliere quella che fa per te.',
+    'Questa pagina confronta sette app che includono esercizi per la [fascite plantare](/it/fascite-plantare/), il [piede piatto](/it/piede-piatto/) o il dolore al piede in generale. Walkito è una di queste, e questa pagina la fa Walkito, quindi è giusto che tu lo sappia subito. L’obiettivo è essere onesti, dire dove le altre sono più forti e darti abbastanza dettagli per scegliere quella che fa per te.',
   intro: [
     'Non esiste un’unica app migliore per tutti. La scelta giusta dipende da cosa ti serve: un runner che torna a correre dopo la fascite plantare ha esigenze diverse da chi ha il piede piatto e sta in piedi al lavoro tutto il giorno, ed entrambi hanno esigenze diverse da chi ha Hinge Health pagato dal datore di lavoro. I criteri qui sotto spiegano cosa cercare, e la tabella dopo mostra dove si colloca ogni app.',
   ],
@@ -121,7 +121,7 @@ export const BEST_APP_IT: Guide = {
     {
       h2: 'Exakt Health: l’app di riabilitazione per chi corre',
       paragraphs: [
-        'Exakt Health è fatta per chi corre, e si vede. L’app ha oltre 15 piani di riabilitazione per infortuni, dalla fascite plantare alla tendinopatia d’Achille alle lesioni del menisco, più piani di allenamento di corsa dal divano alla maratona. Ogni piano di riabilitazione finisce con una fase strutturata di ritorno alla corsa, cosa che la maggior parte delle app per il dolore al piede non offre.',
+        '[Exakt Health](/it/walkito-vs-exakt-health/) è fatta per chi corre, e si vede. L’app ha oltre 15 piani di riabilitazione per infortuni, dalla fascite plantare alla [tendinopatia d’Achille](/it/tendinite-achille-esercizi/) alle lesioni del menisco, più piani di allenamento di corsa dal divano alla maratona. Ogni piano di riabilitazione finisce con una fase strutturata di ritorno alla corsa, cosa che la maggior parte delle app per il dolore al piede non offre.',
         'È certificata come dispositivo medico nell’UE, cioè ha superato una revisione normativa su sicurezza e uso previsto. È stata creata da fisioterapisti sportivi abilitati e allenatori di corsa. L’app ha oltre 600 video di esercizi e adatta il piano man mano che sali di livello.',
         'A 19,99\u00A0$ al mese o 59,99\u00A0$ per sei mesi, Exakt non è economica, ma la varietà di problemi coperti e la qualità dei piani di riabilitazione sono difficili da eguagliare tra le app da usare in autonomia. La prova gratuita di 7\u00A0giorni ti fa vedere l’app completa prima di pagare. È disponibile in inglese, francese, tedesco e spagnolo, sia su iOS sia su Android.',
         'Dove Exakt è più forte di Walkito:',
@@ -211,7 +211,7 @@ export const BEST_APP_IT: Guide = {
           list: [
             'Costruisce un piano settimanale dalle tue risposte su dolore, obiettivi e orari.',
             'Ogni mattina, un check-in adatta la sessione del giorno a come sta il tuo piede.',
-            'Ogni 14\u00A0giorni, dei test misurano sollevamenti sulle punte, tenuta dell’arco ed equilibrio su una gamba, e confrontano sinistra e destra.',
+            'Ogni 14\u00A0giorni, dei test misurano sollevamenti sulle punte, tenuta dell’arco ed [equilibrio su una gamba](/it/esercizi/equilibrio-su-una-gamba/), e confrontano sinistra e destra.',
             'Le sessioni durano 3, 5 o 10\u00A0minuti.',
             'Gli esercizi seguono la linea guida del 2023 sul dolore al tallone e lo studio di Rathleff del 2015.',
             'Si collega ad Apple Salute su iPhone o a Health Connect su Android per passi, sonno e dati di camminata, che restano sul tuo telefono. Asimmetria e velocità di camminata ci sono solo su iPhone.',
@@ -261,7 +261,7 @@ export const BEST_APP_IT: Guide = {
     },
     {
       q: 'Un’app può sostituire il fisioterapista per la fascite plantare?',
-      a: 'Nessuna app sostituisce un professionista che può visitare il tuo piede, escludere altre cause e adattare un piano in tempo reale. Un’app è utile per gli esercizi guidati di ogni giorno tra una visita e l’altra, o come punto di partenza quando il dolore è lieve e segue lo schema tipico della fascite plantare. Se il dolore è iniziato dopo un infortunio, si accompagna a gonfiore o intorpidimento, o sta peggiorando, rivolgiti prima a un professionista sanitario.',
+      a: 'Nessuna app sostituisce un professionista che può visitare il tuo piede, escludere altre cause e adattare un piano in tempo reale. Un’app è utile per gli esercizi guidati di ogni giorno tra una visita e l’altra, o come punto di partenza quando il dolore è lieve e ha l’andamento tipico della fascite plantare. Se il dolore è iniziato dopo un infortunio, si accompagna a gonfiore o intorpidimento, o sta peggiorando, rivolgiti prima a un professionista sanitario.',
     },
     {
       q: 'Hinge Health è gratuita?',
@@ -300,7 +300,7 @@ export const BEST_APP_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Se sei arrivato fin qui e Walkito ti sembra adatta, ecco come funziona. Rispondi a qualche domanda su dove ti fa male, da che lato, quanto sei attivo e qual è il tuo obiettivo. Walkito costruisce un piano settimanale intorno a quelle risposte. Ogni mattina, un check-in adatta la giornata. Ogni 14\u00A0giorni, un breve test misura resistenza del polpaccio, tenuta dell’arco ed equilibrio su una gamba.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Gli esercizi seguono la linea guida clinica del 2023 sul dolore al tallone. Il piano non ha una data di fine fissa: quando raggiungi un obiettivo, passa al mantenimento e il successivo prende il suo posto. Walkito è un programma di esercizi, non una diagnosi né un sostituto di un professionista sanitario.',

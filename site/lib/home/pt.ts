@@ -61,17 +61,17 @@ export const HOME_PT: HomeCopy = {
     {
       title: 'Uma semana de cada vez, em torno de uma meta',
       text: `Cada semana gira em torno de uma meta que dá para medir: dor no calcanhar pela manhã de ${PAIN_GOAL_MAX}/10 ou menos por ${painFreeDays} dias seguidos, sustentar o arco por ${archHoldSeconds} segundos, ${calfRaises} elevações de calcanhar em uma perna só, ${balanceSeconds} segundos de equilíbrio em uma perna, ou uma diferença de até ${gapPercent}% entre o lado esquerdo e o direito. Quando você alcança uma, ela passa para manutenção e a próxima entra no lugar.`,
-      link: 'Como o plano funciona (em inglês)',
+      link: 'Como o Walkito funciona',
     },
     {
       title: `Um teste a cada ${testEveryDays} dias, depois a cada ${testEveryDaysAfterGoal}`,
       text: `${retestTests} testes físicos em cerca de ${retestMinutes} minutos: elevações de calcanhar até a falha, sustentação do arco e equilíbrio em uma perna dos dois lados. A cada ${testEveryDays} dias até você alcançar a primeira meta, depois a cada ${testEveryDaysAfterGoal}. O progresso é medido, não adivinhado pela sensação da semana.`,
-      link: 'O que os testes medem (em inglês)',
+      link: 'Saiba mais sobre o Walkito',
     },
     {
       title: 'Escolhidos a partir de pesquisas publicadas',
       text: 'Exercícios escolhidos a partir de pesquisas e diretrizes publicadas. O Walkito em si não foi testado em um ensaio clínico.',
-      link: 'Ver as evidências (em inglês)',
+      link: 'Como pesquisamos',
     },
   ],
   faq: [

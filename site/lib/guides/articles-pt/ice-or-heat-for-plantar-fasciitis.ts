@@ -93,7 +93,7 @@ export const ICE_HEAT_PT: Guide = {
       keyFact: 'Em 36\u00A0estudos com 1.301\u00A0pessoas sem lesão, calor mais alongamento melhorou a amplitude de movimento mais que só alongar (Bleakley e Costello, 2013).',
       paragraphs: [
         '**Aquecer o pé antes de alongar é uma escolha razoável**, e tem mais apoio que pôr gelo antes de alongar. Uma revisão de 2013 com 36\u00A0estudos em 1.301\u00A0pessoas sem lesão encontrou que o calor aumentou a amplitude de movimento, e que calor mais alongamento funcionou melhor que só alongar. Os dados sobre o frio foram conflitantes. Todos os estudos tinham alto risco de viés, e nenhum incluiu pessoas com dor no calcanhar, então veja isso como uma ideia sensata, não como um plano testado para fascite plantar.',
-        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do alongamento da fáscia plantar e do alongamento de panturrilha.',
+        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e do alongamento de panturrilha.',
         'De manhã, porém, não espere aquecer para alongar. O alongamento dos primeiros passos é para ser feito antes de o pé receber peso, na beira da cama. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) mostra essa rotina passo a passo.',
       ],
       cites: [CITE.bleakleyThermal],
@@ -241,7 +241,7 @@ export const ICE_HEAT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Gelo e calor podem aliviar um dia ruim. O plano de exercícios é a parte que a diretriz apoia. O Walkito monta esse plano uma semana de cada vez em torno de uma meta principal. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos. Os alongamentos estão no plano desde a primeira semana, e rolar o pé na bolinha aparece como um passo curto de recuperação.',
     more: [
       'A cada semana, só o exercício da sua meta principal pode mudar. Ele sobe um degrau quando as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou, e desce um degrau se uma sessão pareceu difícil ou a dor da manhã subiu 2\u00A0pontos ou mais.',

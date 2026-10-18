@@ -170,6 +170,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       bullets: [
         '[Dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explica los ejercicios y el calzado para quienes trabajan de pie.',
         '[Dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/) habla de los turnos largos sobre pisos duros.',
+        'Otros trabajos en pisos duros tienen su propia página: [maestros](/es/dolor-de-pies-docentes/), [tiendas y almacenes](/es/dolor-de-pies-comercio-y-almacen/), [chefs y personal de cocina](/es/dolor-de-pies-cocineros/) y [estilistas](/es/dolor-de-pies-peluqueros/).',
         '[Dolor de pies con escritorio de pie](/es/escritorio-de-pie-dolor-de-pies/) explica cómo pasar de estar sentado a estar de pie.',
         '[Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica cómo ajustar el entrenamiento cuando duele el talón.',
       ],
@@ -181,10 +182,10 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
         'Varias afecciones duelen en el mismo lugar o siguen el mismo patrón de la mañana. Dónde está el dolor y cómo se comporta ayudan a distinguirlas:',
         {
           list: [
-        '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. La rigidez en los primeros pasos es común, pero el dolor está más arriba. Mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+        '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. La rigidez en los primeros pasos es común, pero el dolor está más arriba. [Cómo distinguir las dos](/es/fascitis-plantar-o-tendinitis-de-aquiles/). Mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
         '**Síndrome de la almohadilla grasa del talón.** Un dolor profundo en el centro del talón, peor sobre superficies duras y descalzo. Una revisión exploratoria de 2022 señaló que puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen. El dolor de la almohadilla grasa está justo en el centro, y el de la fascitis en la parte interna y delantera.',
         '**Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174\u00A0pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor. Mira [fascitis plantar vs espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/) y [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/).',
-        '**Fractura por estrés del calcáneo.** Un dolor que aumenta con la actividad en lugar de calmarse cuando entras en calor. Puede doler en reposo o de noche. Apretar los lados del talón suele provocar el dolor. Consulta a un profesional de la salud antes de ejercitar el pie.',
+        '**Fractura por estrés del calcáneo.** Un dolor que aumenta con la actividad en lugar de calmarse cuando entras en calor. [Cómo diferenciarla de la fascitis plantar](/es/fascitis-plantar-o-fractura-por-estres/). Puede doler en reposo o de noche. Apretar los lados del talón suele provocar el dolor. Consulta a un profesional de la salud antes de ejercitar el pie.',
         '**Artritis inflamatoria.** Cuando duelen los dos talones, la rigidez de la mañana dura más de 30\u00A0minutos y otras articulaciones están rígidas o hinchadas, el patrón apunta a algo que afecta a todo el cuerpo. Debe revisarlo un profesional de la salud.',
           ],
         },
@@ -232,7 +233,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     {
       q: '¿Caminar es bueno o malo para la fascitis plantar?',
       cites: [CITE.guideline],
-      a: 'Caminar con zapatos de buen soporte a un ritmo cómodo suele estar bien. La guía no dice que dejes de moverte. La prueba es cómo se siente tu talón a la mañana siguiente. Si el dolor de los primeros pasos después de una caminata es claramente más alto de lo normal, esa caminata fue demasiado. Acorta la distancia antes de dejarlo del todo.',
+      a: 'Caminar con zapatos de buen soporte a un ritmo cómodo suele estar bien. La guía no dice que dejes de moverte. La prueba es cómo se siente tu talón a la mañana siguiente. Si el dolor de los primeros pasos después de una caminata es claramente más alto de lo normal, esa caminata fue demasiado. Acorta la distancia antes de dejarlo del todo. Más en [caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/).',
     },
     {
       q: '¿El espolón calcáneo causa la fascitis plantar?',
@@ -260,7 +261,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     {
       q: '¿Por qué me dio fascitis plantar de repente?',
       cites: [CITE.guideline],
-      a: 'La fascitis plantar repentina suele seguir a un cambio brusco de carga, no a una lesión súbita. Un aumento rápido en el kilometraje de carrera, zapatos nuevos, un trabajo nuevo que te mantiene de pie, o subir de peso pueden sobrecargar la fascia más rápido de lo que puede adaptarse. Estar de pie por tiempo prolongado en el trabajo es uno de los factores de riesgo reconocidos en la guía de 2023.',
+      a: 'La fascitis plantar repentina suele seguir a un cambio brusco de carga, no a una lesión súbita. Un aumento rápido en el kilometraje de carrera, zapatos nuevos, un trabajo nuevo que te mantiene de pie, o [subir de peso](/es/peso-y-fascitis-plantar/) pueden sobrecargar la fascia más rápido de lo que puede adaptarse. Estar de pie por tiempo prolongado en el trabajo es uno de los factores de riesgo reconocidos en la guía de 2023.',
     },
   ],
   redFlags: {
@@ -278,7 +279,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que decidir qué ejercicios hacer, en qué orden ni cuándo subir de nivel. Walkito arma un plan una semana a la vez en torno a una meta. Para la fascitis plantar, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14\u00A0días seguidos.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Cuando alcanzas la meta de la mañana, pasa a mantenimiento y la siguiente meta ocupa su lugar.',

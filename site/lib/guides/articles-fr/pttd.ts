@@ -21,7 +21,7 @@ export const PTTD_FR: Guide = {
     'La dysfonction du tendon tibial postérieur (souvent abrégée PTTD en anglais) survient quand le tendon qui soutient la voûte, à l’intérieur de la cheville, s’affaiblit ou s’enflamme. C’est la cause la plus fréquente de pied plat acquis de l’adulte. L’exercice peut aider aux premiers stades, mais tous les stades ne répondent pas de la même façon, et les preuves restent limitées. Cette page présente les stades, les exercices les mieux appuyés, et le moment où une botte ou la chirurgie entrent en jeu.',
   intro: [
     'Le tendon tibial postérieur passe derrière l’os saillant à l’intérieur de la cheville et s’attache sous le pied. Il maintient la voûte pendant la marche. Quand il dégénère, la voûte s’aplatit, le talon bascule vers l’extérieur et la douleur s’installe le long de l’intérieur de la cheville ou du milieu du pied.',
-    'Une revue systématique de 2018 n’a trouvé que trois essais randomisés ou contrôlés, avec 93\u00A0personnes au total, donc les preuves sur l’exercice sont ici bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille.',
+    'Une revue systématique de 2018 n’a trouvé que trois essais randomisés ou contrôlés, avec 93\u00A0personnes au total, donc les preuves sur l’exercice sont ici bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la [tendinite d’Achille](/fr/tendinite-achille-exercices/).',
   ],
   toc: true,
   takeaways: [
@@ -157,7 +157,7 @@ export const PTTD_FR: Guide = {
       h2: 'Quel est le lien avec les pieds plats\u00A0?',
       paragraphs: [
         'Cette dysfonction est la cause la plus fréquente de pied plat acquis de l’adulte, c’est-à-dire un pied plat qui apparaît à l’âge adulte au lieu d’être présent depuis l’enfance. **Si vous aviez des voûtes normales et que l’une d’elles a commencé à s’affaisser, avec une douleur derrière la malléole interne, le tendon tibial postérieur est l’explication la plus probable.**',
-        'Les pieds plats souples congénitaux, présents depuis l’enfance, sont une autre situation. Ils peuvent ne jamais donner de symptômes. Les exercices se recoupent\u00A0: pied court, inversion avec élastique et montées sur pointes figurent à la fois dans les [exercices pour pieds plats](/fr/exercices-pieds-plats/) et dans les programmes pour ce tendon. Mais le contexte clinique diffère, et cette dysfonction demande en général des orthèses et un suivi plus étroit, car le tendon dégénère au lieu d’être simplement lâche.',
+        'Les [pieds plats](/fr/pieds-plats/) souples congénitaux, présents depuis l’enfance, sont une autre situation. Ils peuvent ne jamais donner de symptômes. Les exercices se recoupent\u00A0: pied court, inversion avec élastique et montées sur pointes figurent à la fois dans les [exercices pour pieds plats](/fr/exercices-pieds-plats/) et dans les programmes pour ce tendon. Mais le contexte clinique diffère, et cette dysfonction demande en général des [orthèses](/fr/semelles-ou-exercices/) et un suivi plus étroit, car le tendon dégénère au lieu d’être simplement lâche.',
         'Si vous ne savez pas si votre pied plat est ancien ou récent, un professionnel de santé peut comparer les deux pieds, examiner le tendon et regarder l’alignement du talon quand vous êtes debout.',
       ],
       cites: [CITE.ling, CITE.zarali],
@@ -190,7 +190,7 @@ export const PTTD_FR: Guide = {
     {
       q: 'À quoi ressemble une douleur du tendon tibial postérieur\u00A0?',
       cites: [CITE.ling],
-      a: 'La douleur se situe en général derrière ou sous la malléole interne. Elle peut s’étendre le long de l’intérieur de la voûte. Elle s’aggrave avec l’activité, surtout en montée, sur un terrain irrégulier ou en équilibre sur une jambe. La zone peut gonfler. Un signe précoce fréquent est la difficulté à faire une montée sur pointes sur une jambe du côté atteint.',
+      a: 'La douleur se situe en général derrière ou sous la malléole interne. Elle peut s’étendre le long de l’intérieur de la voûte. Elle s’aggrave avec l’activité, surtout en montée, sur un terrain irrégulier ou en [équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/). La zone peut gonfler. Un signe précoce fréquent est la difficulté à faire une montée sur pointes sur une jambe du côté atteint.',
     },
     {
       q: 'Faut-il des semelles orthopédiques pour le tendon tibial postérieur\u00A0?',
@@ -230,7 +230,7 @@ export const PTTD_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Walkito inclut l’inversion avec élastique, le pied court et les montées sur pointes dans sa bibliothèque d’exercices, et les programme les jours de renforcement dans un travail de la voûte et de l’équilibre. Quand vous signalez l’intérieur de la cheville ou la voûte comme douloureux sur la carte de la douleur lors du bilan, la séance s’adapte à cette information. L’application est conçue pour la fasciite plantaire et les pieds plats. La dysfonction du tendon tibial postérieur recoupe les deux, mais l’application ne la diagnostique pas et ne remplace ni les orthèses ni la détermination du stade par un professionnel de santé.',
+    text: 'Walkito inclut l’inversion avec élastique, le pied court et les montées sur pointes dans sa bibliothèque d’exercices, et les programme les jours de renforcement dans un travail de la voûte et de l’équilibre. Quand vous signalez l’intérieur de la cheville ou la voûte comme douloureux sur la carte de la douleur lors du bilan, la séance s’adapte à cette information. L’application est conçue pour la [fasciite plantaire](/fr/fasciite-plantaire/) et les pieds plats. La dysfonction du tendon tibial postérieur recoupe les deux, mais l’application ne la diagnostique pas et ne remplace ni les orthèses ni la détermination du stade par un professionnel de santé.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change. Si l’on vous a diagnostiqué cette dysfonction, utilisez l’application en plus des orthèses et vérifiez avec votre professionnel de santé que votre stade se prête à l’exercice.',
     ],

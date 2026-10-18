@@ -21,36 +21,36 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Esercizi per la spina calcaneare: allungamenti e forza',
+  title: 'Esercizi per lo sperone calcaneare: allungamenti e forza',
   description:
-    'Esercizi e allungamenti per la spina calcaneare su fascia plantare e polpaccio: routine, dosi e progressione. Lavorano sul dolore, non sciolgono la spina.',
-  h1: 'Esercizi per la spina calcaneare: allungamenti e rinforzo per il dolore intorno alla spina',
+    'Esercizi e allungamenti per lo sperone calcaneare su fascia plantare e polpaccio: routine, dosi e progressione. Lavorano sul dolore, non sciolgono lo sperone.',
+  h1: 'Esercizi per lo sperone calcaneare: allungamenti e rinforzo per il dolore intorno allo sperone',
   lede:
-    'L’esercizio non scioglie una spina calcaneare. La spina è osso, e l’osso non si riduce con lo stretching. Ma il dolore che si sente quando si ha una spina calcaneare viene quasi sempre dalla fascia plantare e dal polpaccio intorno, non dall’osso in sé. Gli esercizi qui sotto lavorano su quei tessuti molli. Sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la fascite plantare.',
+    'L’esercizio non scioglie uno sperone calcaneare (o spina calcaneare). Lo sperone è osso, e l’osso non si riduce con lo stretching. Ma il dolore che si sente quando si ha uno sperone calcaneare viene quasi sempre dalla fascia plantare e dal polpaccio intorno, non dall’osso in sé. Gli esercizi qui sotto lavorano su quei tessuti molli. Sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la [fascite plantare](/it/fascite-plantare/).',
   intro: [
-    'Se prima vuoi capire la differenza tra spina calcaneare e fascite plantare, vedi [fascite plantare o spina calcaneare](/it/fascite-plantare-o-spina-calcaneare/). Questa pagina è la routine pratica: quali esercizi, quanti, come progredire e quando fermarti.',
+    'Se prima vuoi capire la differenza tra sperone calcaneare e fascite plantare, vedi [fascite plantare o sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/). Questa pagina è la routine pratica: quali esercizi, quanti, come progredire e quando fermarti.',
   ],
   takeaways: [
-    'Gli esercizi per la spina calcaneare funzionano perché lavorano sulla fascia plantare e sui muscoli del polpaccio intorno alla spina, non perché cambiano la spina.',
+    'Gli esercizi per lo sperone calcaneare funzionano perché lavorano sulla fascia plantare e sui muscoli del polpaccio intorno allo sperone, non perché cambiano lo sperone.',
     'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio il grado più alto, **A**, e al lavoro di forza una **B** (Koc e colleghi, 2023).',
-    'In uno studio su 48\u00A0persone con fascite plantare, i sollevamenti sulle punte con carico alto e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
+    'In uno studio su 48\u00A0persone con fascite plantare, i sollevamenti sulle punte ad alto carico e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
     'Un polpaccio rigido, misurato come dorsiflessione ridotta della caviglia, è stato il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli (Riddle e colleghi, 2003).',
     'Una revisione sistematica con meta-analisi ha trovato che sia l’allungamento del polpaccio sia quello della fascia plantare riducevano il dolore rispetto a nessuno stretching (Siriphorn ed Eksakulkla, 2020).',
   ],
   toc: true,
   sections: [
     {
-      h2: 'Perché gli esercizi aiutano la spina calcaneare?',
-      keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, la spina calcaneare compariva da sola solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
+      h2: 'Perché gli esercizi aiutano lo sperone calcaneare?',
+      keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, lo sperone calcaneare compariva isolato solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
       paragraphs: [
-        'La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, una spina calcaneare da sola era rara (6% dei piedi), e il dolore al tallone era legato a una spina insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). **Di solito il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.**',
-        'Allungare la fascia plantare e il polpaccio riduce la tensione sul punto in cui si attaccano al tallone. Rinforzare il polpaccio aumenta la capacità della catena che assorbe il carico ogni volta che il tallone tocca terra. Insieme, riducono lo stress quotidiano sul tessuto intorno alla spina.',
-        'Nessun programma di esercizi farà sparire una spina dalla radiografia. Ma la maggior parte delle persone con una spina calcaneare non ha bisogno che la spina sparisca. Ha bisogno che il dolore si calmi, e questo viene da una fascia e un polpaccio più forti e più flessibili.',
+        'Lo sperone calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, uno sperone calcaneare da solo era raro (6% dei piedi), e il dolore al tallone era legato a uno sperone insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). **Di solito il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.**',
+        'Allungare la fascia plantare e il polpaccio riduce la tensione sul punto in cui si attaccano al tallone. Rinforzare il polpaccio aumenta la capacità della catena che assorbe il carico ogni volta che il tallone tocca terra. Insieme, riducono lo stress quotidiano sul tessuto intorno allo sperone.',
+        'Nessun programma di esercizi farà sparire uno sperone dalla radiografia. Ma la maggior parte delle persone con uno sperone calcaneare non ha bisogno che lo sperone sparisca. Ha bisogno che il dolore si calmi, e questo viene da una fascia e un polpaccio più forti e più flessibili.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'Quali allungamenti aiutano il dolore da spina calcaneare?',
+      h2: 'Quali allungamenti aiutano il dolore da sperone calcaneare?',
       keyFact: 'Una revisione sistematica ha trovato che sia l’allungamento del polpaccio sia quello della fascia plantare riducevano il dolore da fascite plantare rispetto a nessuno stretching (Siriphorn ed Eksakulkla, 2020).',
       paragraphs: [
         'Lo stretching è il punto di partenza. La linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio una **A**, il suo grado più alto. Una revisione sistematica con meta-analisi sullo stretching per la fascite plantare ha trovato che sia l’allungamento del polpaccio sia quello della fascia plantare riducevano il dolore rispetto a nessuno stretching (Siriphorn ed Eksakulkla, 2020). Inizia da questi tre.',
@@ -96,7 +96,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'Quali esercizi di rinforzo aiutano il dolore da spina calcaneare?',
+      h2: 'Quali esercizi di rinforzo aiutano il dolore da sperone calcaneare?',
       keyFact: 'In uno studio su 48\u00A0persone, il gruppo dei sollevamenti sulle punte aveva 29\u00A0punti in meno sul Foot Function Index rispetto al gruppo del solo stretching a tre mesi (Rathleff e colleghi, 2015).',
       paragraphs: [
         'Nelle prime settimane spesso basta lo stretching. Quando il dolore del mattino inizia a calmarsi, aggiungere il rinforzo del polpaccio aumenta la capacità di cui ha bisogno la catena del tallone. La linea guida dà al lavoro di forza una **B**, il suo secondo grado più alto.',
@@ -156,12 +156,12 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Come progredire con gli esercizi per la spina calcaneare?',
+      h2: 'Come progredire con gli esercizi per lo sperone calcaneare?',
       paragraphs: [
         'Progredisci in base alle sensazioni, non al calendario. La regola è: se il livello attuale ti è sembrato facile per due sessioni di fila, sali di un gradino. Se dopo una sessione il dolore del mattino è peggiore, resta al livello attuale o torna indietro di uno.',
       ],
       table: {
-        caption: 'Progressione degli esercizi per la spina calcaneare',
+        caption: 'Progressione degli esercizi per lo sperone calcaneare',
         head: ['Livello', 'Esercizio', 'Quando salire'],
         rows: [
           ['1', 'Solo allungamento della fascia plantare + allungamenti del polpaccio', 'Il dolore del mattino si sta calmando e vuoi aggiungere lavoro di forza'],
@@ -172,7 +172,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
         ],
       },
       after: [
-        'Aggiungi l’allungamento della fascia plantare e gli allungamenti del polpaccio a ogni livello. Lo stretching non si toglie quando inizi il rinforzo. La linea guida valuta i due in modo indipendente.',
+        'Aggiungi l’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e gli allungamenti del polpaccio a ogni livello. Lo stretching non si toglie quando inizi il rinforzo. La linea guida valuta i due in modo indipendente.',
         'Per altri dettagli sul protocollo dei sollevamenti sulle punte con asciugamano e sulla ricerca dietro, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -180,7 +180,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     {
       h2: 'Esercizi di supporto facoltativi',
       paragraphs: [
-        'Gli allungamenti e i sollevamenti sulle punte qui sopra sono la base. Gli esercizi che seguono non sono specifici per la spina calcaneare, ma lavorano sui muscoli del piede e della caviglia che sostengono l’arco e assorbono gli urti. Le prove dietro ciascuno sono più deboli.',
+        'Gli allungamenti e i sollevamenti sulle punte qui sopra sono la base. Gli esercizi che seguono non sono specifici per lo sperone calcaneare, ma lavorano sui muscoli del piede e della caviglia che sostengono l’arco e assorbono gli urti. Le prove dietro ciascuno sono più deboli.',
       ],
       exercises: [
         {
@@ -209,7 +209,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
         },
         {
           name: 'Equilibrio su una gamba',
-          evidence: { level: 'early', why: 'Nessuno studio specifico sulla spina calcaneare. Lavoro di equilibrio generale per piede e caviglia.' },
+          evidence: { level: 'early', why: 'Nessuno studio specifico sullo sperone calcaneare. Lavoro di equilibrio generale per piede e caviglia.' },
           dose: '3\u00A0tenute da 30\u00A0secondi, ogni gamba',
           how: 'Stai su un piede e guarda un punto fisso. Lascia che il piede oscilli. Quell’oscillazione è il piede che tiene l’equilibrio. Mettiti vicino a un muro per sicurezza.',
           often: 'Giorni di equilibrio',
@@ -233,10 +233,10 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Quanto ci vuole perché il dolore da spina calcaneare migliori con gli esercizi?',
+      h2: 'Quanto ci vuole perché il dolore da sperone calcaneare migliori con gli esercizi?',
       paragraphs: [
-        'Non esiste uno studio che misuri i risultati degli esercizi proprio nelle persone con spina calcaneare. I tempi qui sotto vengono dagli studi sulla fascite plantare, che nella maggior parte dei casi è il problema che dà il dolore intorno alla spina.',
-        'Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching e plantari, spesso nel giro di alcuni mesi (Latt e colleghi, 2020). Nello studio di Rathleff del 2015, il gruppo dei sollevamenti sulle punte con carico era nettamente avanti rispetto al gruppo del solo stretching a tre mesi.',
+        'Non esiste uno studio che misuri i risultati degli esercizi proprio nelle persone con sperone calcaneare. I tempi qui sotto vengono dagli studi sulla fascite plantare, che nella maggior parte dei casi è il problema che dà il dolore intorno allo sperone.',
+        'Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching e [plantari](/it/plantari-o-esercizi/), spesso nel giro di alcuni mesi (Latt e colleghi, 2020). Nello studio di Rathleff del 2015, il gruppo dei sollevamenti sulle punte con carico era nettamente avanti rispetto al gruppo del solo stretching a tre mesi.',
         'Nessun programma di esercizi può promettere dei tempi a una singola persona. **Quello che puoi misurare è se le cose stanno cambiando**:',
         {
           list: [
@@ -249,54 +249,54 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       cites: [CITE.latt, CITE.rathleff],
     },
     {
-      h2: 'Si può eliminare la spina calcaneare in modo naturale?',
+      h2: 'Si può eliminare lo sperone calcaneare in modo naturale?',
       paragraphs: [
-        '**Esercizi, stretching e cambi nella dieta non sciolgono una spina calcaneare.** La spina è tessuto osseo. Resta nella radiografia che tu faccia stretching o no.',
-        'Ma «eliminare la spina» è raramente l’obiettivo giusto. Nello studio del 2019, la spina c’era quasi sempre insieme a una fascia plantare ispessita, e il tessuto molle è la parte che l’esercizio può cambiare. Di solito il dolore viene dal tessuto molle. Gli esercizi di questa pagina lavorano sul tessuto molle. Se il dolore si calma, la spina non è un problema da risolvere.',
-        'Se qualcuno ti ha promesso un integratore, una crema o un dispositivo che scioglie le spine calcaneari, sii scettico. Nessuna prova pubblicata sostiene questa affermazione. L’approccio raccomandato dalla linea guida è stretching, rinforzo del polpaccio e gestione del carico.',
+        '**Esercizi, stretching e cambi nella dieta non sciolgono uno sperone calcaneare.** Lo sperone è tessuto osseo. Resta nella radiografia che tu faccia stretching o no.',
+        'Ma «eliminare lo sperone» è raramente l’obiettivo giusto. Nello studio del 2019, lo sperone c’era quasi sempre insieme a una fascia plantare ispessita, e il tessuto molle è la parte che l’esercizio può cambiare. Di solito il dolore viene dal tessuto molle. Gli esercizi di questa pagina lavorano sul tessuto molle. Se il dolore si calma, lo sperone non è un problema da risolvere.',
+        'Se qualcuno ti ha promesso un integratore, una crema o un dispositivo che scioglie gli speroni calcaneari, sii scettico. Nessuna prova pubblicata sostiene questa affermazione. L’approccio raccomandato dalla linea guida è stretching, rinforzo del polpaccio e gestione del carico.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
   ],
   faq: [
     {
-      q: 'Quali esercizi aiutano il dolore da spina calcaneare?',
+      q: 'Quali esercizi aiutano il dolore da sperone calcaneare?',
       cites: [CITE.guideline],
-      a: 'Gli esercizi che aiutano il dolore da spina calcaneare sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la fascite plantare: l’allungamento della fascia plantare (grado A nella linea guida), l’allungamento del polpaccio (grado A) e il rinforzo graduale del polpaccio con i sollevamenti sulle punte (grado B). Lavorano sulla fascia plantare e sui muscoli del polpaccio intorno alla spina, che di solito sono ciò che fa male.',
+      a: 'Gli esercizi che aiutano il dolore da sperone calcaneare sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la fascite plantare: l’allungamento della fascia plantare (grado A nella linea guida), l’allungamento del polpaccio (grado A) e il rinforzo graduale del polpaccio con i sollevamenti sulle punte (grado B). Lavorano sulla fascia plantare e sui muscoli del polpaccio intorno allo sperone, che di solito sono ciò che fa male.',
     },
     {
-      q: 'Gli esercizi sciolgono la spina calcaneare?',
-      a: 'No. La spina calcaneare è tessuto osseo e l’esercizio non la scioglie. Gli esercizi lavorano sulla fascia plantare e sul polpaccio, i tessuti molli intorno alla spina che sono quasi sempre l’origine del dolore. Se con gli esercizi il dolore si calma, la spina nella radiografia non è un problema da risolvere.',
+      q: 'Gli esercizi sciolgono lo sperone calcaneare?',
+      a: 'No. Lo sperone calcaneare è tessuto osseo e l’esercizio non lo scioglie. Gli esercizi lavorano sulla fascia plantare e sul polpaccio, i tessuti molli intorno allo sperone che sono quasi sempre l’origine del dolore. Se con gli esercizi il dolore si calma, lo sperone nella radiografia non è un problema da risolvere.',
     },
     {
-      q: 'Quanto spesso fare gli allungamenti per la spina calcaneare?',
+      q: 'Quanto spesso fare gli allungamenti per lo sperone calcaneare?',
       cites: [CITE.guideline, CITE.digiovanni2003],
       a: 'L’allungamento della fascia plantare funziona meglio ogni mattina prima di alzarti e dopo essere stato seduto a lungo. Gli allungamenti del polpaccio vanno in quasi tutte le sessioni. In uno studio su 101\u00A0persone con dolore cronico al tallone, il gruppo che faceva l’allungamento della fascia plantare ha riferito risultati migliori a 8\u00A0settimane rispetto al gruppo che faceva solo l’allungamento del polpaccio (DiGiovanni e colleghi, 2003).',
     },
     {
-      q: 'Quanto ci mette a passare il dolore da spina calcaneare?',
+      q: 'Quanto ci mette a passare il dolore da sperone calcaneare?',
       cites: [CITE.latt, CITE.rathleff],
       a: 'La maggior parte dei tempi viene dagli studi sulla fascite plantare, perché di solito è l’irritazione della fascia a fare male. Una revisione riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche, spesso nel giro di alcuni mesi (Latt 2020). In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico hanno dato un vantaggio sul solo stretching entro tre mesi (Rathleff 2015). Nessun programma può promettere dei tempi a una singola persona.',
     },
     {
-      q: 'Devo smettere di allenarmi se ho la spina calcaneare?',
+      q: 'Devo smettere di allenarmi se ho lo sperone calcaneare?',
       cites: [CITE.guideline],
       a: 'Non per forza. La linea guida raccomanda l’esercizio come parte dell’approccio, non il solo riposo. Ferma un esercizio per quel giorno se il dolore arriva a 6 su 10 o più, o se la mattina dopo va chiaramente peggio. Torna indietro di un livello invece di fermarti del tutto. Se il dolore peggiora di settimana in settimana anche dopo gli aggiustamenti, rivolgiti a un professionista sanitario.',
     },
     {
-      q: 'Camminare fa bene con la spina calcaneare?',
+      q: 'Camminare fa bene con lo sperone calcaneare?',
       cites: [CITE.guideline],
-      a: 'Camminare in sé non è il problema. Camminare con scarpe che sostengono il piede, a un ritmo comodo, di solito va bene ed è meglio del riposo completo. Di solito il dolore viene dalla fascia plantare e dal polpaccio intorno alla spina, e camminare in modo moderato tiene attiva la pompa del polpaccio. Se camminare ti peggiora il dolore del mattino dopo, accorcia la distanza e riaumentala piano piano.',
+      a: 'Camminare in sé non è il problema. Camminare con scarpe che sostengono il piede, a un ritmo comodo, di solito va bene ed è meglio del riposo completo. Di solito il dolore viene dalla fascia plantare e dal polpaccio intorno allo sperone, e camminare in modo moderato tiene attiva la pompa del polpaccio. Se camminare ti peggiora il dolore del mattino dopo, accorcia la distanza e riaumentala piano piano.',
     },
     {
-      q: 'Quali esercizi evitare con la spina calcaneare?',
+      q: 'Quali esercizi evitare con lo sperone calcaneare?',
       cites: [CITE.guideline],
-      a: 'Evita i movimenti ad alto impatto come corsa, salti e pliometria nelle fasi in cui il dolore al tallone è più forte; colpi ripetuti su una superficie dura sforzano il tessuto vicino alla spina. Anche le discese profonde del tallone dal bordo di un gradino possono sovraccaricare una fascia irritata. La linea guida del 2023 sostiene di regolare il carico invece di vietare esercizi; il test è se il tallone va peggio la mattina dopo.',
+      a: 'Evita i movimenti ad alto impatto come corsa, salti e pliometria nelle fasi in cui il dolore al tallone è più forte; colpi ripetuti su una superficie dura sforzano il tessuto vicino allo sperone. Anche le discese profonde del tallone dal bordo di un gradino possono sovraccaricare una fascia irritata. La linea guida del 2023 sostiene di regolare il carico invece di vietare esercizi; il test è se il tallone va peggio la mattina dopo.',
     },
     {
-      q: 'Cosa fa riacutizzare il dolore da spina calcaneare?',
+      q: 'Cosa fa riacutizzare il dolore da sperone calcaneare?',
       cites: [CITE.guideline, CITE.riddle],
-      a: 'Il fattore scatenante più comune sono i colpi ripetuti su una superficie dura: correre, saltare o stare in piedi per ore irrita il tessuto molle vicino alla spina nello stesso modo in cui irrita la semplice fascite plantare. Anche un aumento improvviso dell’attività, scarpe consumate e camminare scalzo sulle piastrelle possono scatenarlo. A calmare una riacutizzazione è regolare il carico, non l’osso.',
+      a: 'Il fattore scatenante più comune sono i colpi ripetuti su una superficie dura: correre, saltare o stare in piedi per ore irrita il tessuto molle vicino allo sperone nello stesso modo in cui irrita la semplice fascite plantare. Anche un aumento improvviso dell’attività, scarpe consumate e camminare scalzo sulle piastrelle possono scatenarlo. A calmare una riacutizzazione è regolare il carico, non l’osso.',
     },
   ],
   redFlags: {
@@ -314,13 +314,13 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi tenere il conto dei livelli, delle serie o di quando progredire. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. Lo stretching inizia dal primo giorno. La sequenza per il polpaccio, dai sollevamenti da seduto fino a quelli con asciugamano e carico, va al tuo ritmo.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del mattino), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },
-  crumb: 'Esercizi per la spina calcaneare',
+  crumb: 'Esercizi per lo sperone calcaneare',
   campaign: 'guide-heel-spur-exercises-it',
 };

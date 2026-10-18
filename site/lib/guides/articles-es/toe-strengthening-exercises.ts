@@ -181,7 +181,7 @@ export const TOE_STRENGTHENING_ES: Guide = {
     {
       h2: '¿De verdad funcionan los ejercicios para fortalecer los dedos?',
       keyFact:
-        'En un ensayo con 118\u00A0corredores recreativos, quienes no hicieron el programa para el pie tuvieron 2,42\u00A0veces más probabilidades de lesionarse en un año (Taddei y colegas, 2020).',
+        'En un ensayo con 118\u00A0corredores recreativos, quienes no hicieron el programa para el pie tuvieron 2,42\u00A0veces más probabilidades de lesionarse en un año (Taddei y colegas, 2020). La rutina para corredores está en [ejercicios de pies para corredores](/es/ejercicios-de-pies-para-corredores/).',
       paragraphs: [
         'Los ejercicios para fortalecer los dedos pueden aumentar su fuerza, pero **solo cuando el trabajo se vuelve más difícil con el tiempo.**',
         'En un ensayo de 2016, 85\u00A0adultos de 60 a 90\u00A0años se dividieron entre un programa supervisado con resistencia que aumentaba a lo largo de tres meses y un programa de ejercicio en casa. El grupo supervisado ganó hasta un 36\u00A0por ciento de fuerza en los dedos y aguantó más tiempo parado en una pierna. El grupo en casa, y un grupo control aparte de 32\u00A0personas, no mostraron cambios en la fuerza de los dedos. Los autores señalaron que todavía hacía falta un ensayo que contara caídas.',
@@ -274,7 +274,7 @@ export const TOE_STRENGTHENING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito incluye la elevación del dedo gordo, la separación de dedos, recoger la toalla y el ejercicio de pie corto, y sube un ejercicio de nivel cuando tus dos últimas sesiones con él se sintieron fáciles y el dolor no aumentó. El trabajo de dedos y arco empieza con 3\u00A0series de 8 sosteniendo 5\u00A0segundos, dentro de sesiones de 3, 5 o 10\u00A0minutos, 3, 5 o 7\u00A0días a la semana.',
     more: [
       'Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. No mide directamente la fuerza de los dedos, así que vale la pena seguir haciendo las pruebas caseras de esta página. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

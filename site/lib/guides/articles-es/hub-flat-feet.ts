@@ -46,7 +46,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       paragraphs: [
         '**No hay una línea clara entre un pie plano y un pie normal.** Un arco normal también baja un poco cuando te pones de pie. En datos combinados de 619 adultos sanos evaluados con el Foot Posture Index, una revisión de seis puntos que hace un profesional mientras estás de pie, la puntuación promedio fue +4 en una escala de -12 (arco alto) a +12 (pie plano). Los autores llaman a eso una postura un poco pronada, la posición normal en reposo, y consideran claramente fuera de lo normal las puntuaciones por debajo de -3 o por encima de +10.',
         'Otra medida común es la caída del navicular: cuánto baja el hueso del lado interno del arco al ponerte de pie. En los estudios, los adultos sanos tienen en promedio entre 3,6 y 8,1\u00A0milímetros. Algunos investigadores han propuesto 10, 13 o 15\u00A0milímetros como límite de lo normal, pero ninguno de esos límites se ha confirmado (Nielsen y colegas, 2009).',
-        'La huella mojada es una prueba casera aproximada, no un diagnóstico. Una huella ancha, sin curva en el lado interno, sugiere un arco bajo, pero los estudios no se ponen de acuerdo sobre qué tan bien la huella muestra el arco real. Un estudio de 1992 con 115 hombres encontró que las medidas de la huella no predecían la altura del arco (Hawes y colegas, 1992). Un estudio de 2009 con 91 adultos jóvenes, comparado con radiografías, encontró que el índice del arco de la huella coincidía de forma moderada con las medidas del arco en las radiografías (Murley y colegas, 2009).',
+        'La huella mojada es una [prueba casera aproximada](/es/test-pie-plano/), no un diagnóstico. Una huella ancha, sin curva en el lado interno, sugiere un arco bajo, pero los estudios no se ponen de acuerdo sobre qué tan bien la huella muestra el arco real. Un estudio de 1992 con 115 hombres encontró que las medidas de la huella no predecían la altura del arco (Hawes y colegas, 1992). Un estudio de 2009 con 91 adultos jóvenes, comparado con radiografías, encontró que el índice del arco de la huella coincidía de forma moderada con las medidas del arco en las radiografías (Murley y colegas, 2009).',
         'Para ti, la etiqueta importa menos que dos preguntas: ¿el arco vuelve cuando el pie no toca el piso?, y ¿te duele? Las dos se explican a continuación.',
       ],
       cites: [CITE.redmondFpi, CITE.nielsenNavicular, CITE.hawesFootprint, CITE.murleyArch],
@@ -230,7 +230,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que decidir qué ejercicios de arco hacer ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba 60\u00A0segundos. Si además te duele el talón, primero van las mañanas más fáciles.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio. La meta de mantener el arco sigue en el plan hasta que la alcanzas, tome las semanas que tome.',

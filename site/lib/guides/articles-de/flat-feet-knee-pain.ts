@@ -9,7 +9,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
   updated: '2026-10-09',
   title: 'Plattfuß und Knieschmerzen: Hängt das zusammen?',
   description:
-    'Plattfuß und Knieschmerzen: was Studien zum Zusammenhang zeigen, was eine Fachperson prüft, ob Einlagen helfen und warum Hüft- und Knieübungen vorgehen.',
+    'Plattfuß und Knieschmerzen: was Studien zum Zusammenhang zeigen, was ärztlich geprüft wird, ob Einlagen helfen und warum Hüft- und Knieübungen vorgehen.',
   h1: 'Plattfuß und Knieschmerzen: gibt es einen Zusammenhang, und was hilft?',
   lede:
     'Plattfüße hängen mit Knieschmerzen zusammen, aber der Zusammenhang ist klein und nicht als Ursache belegt. Bei 1.903 älteren Erwachsenen hatten die flachsten Füße eine 1,3-fache Chance auf häufige Knieschmerzen. Bei Schmerzen vorn am Knie sprechen die besten Belege für Kräftigung von Hüfte und Knie, mit Einlagen als kurzfristiger Ergänzung.',
@@ -21,7 +21,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     'Bei 97.279 jungen Rekrutinnen und Rekruten hatten 7\u00A0% mit mittlerem oder starkem Plattfuß Schmerzen vorn am Knie, gegenüber 4\u00A0% mit leichtem oder ohne Plattfuß (Kosashvili und Kollegen, 2008).',
     'Eine Übersichtsarbeit von 2014 über 21 prospektive Studien fand nur sehr begrenzte Belege mit kleinen Effekten, dass eine nach innen gekippte Fußhaltung das Risiko für Schmerzen rund um die Kniescheibe erhöht (Neal und Kollegen).',
     'In einer Studie mit 179\u00A0Erwachsenen mit Schmerzen an der Kniescheibe schnitten geformte Einlagen kurzfristig besser ab als flache Einlagen, waren aber nicht besser als Physiotherapie und brachten zusätzlich zu ihr nichts (Collins und Kollegen, 2008).',
-    'Die US-Leitlinie der Physiotherapie von 2019 gibt kombinierten Hüft- und Knieübungen bei Schmerzen rund um die Kniescheibe ihre beste Bewertung, A. Einlagen empfiehlt sie nur kurzfristig, für Menschen, deren Füße stärker als üblich nach innen kippen, und nur zusammen mit Übungen.',
+    'Die US-Leitlinie der Physiotherapie von 2019 gibt kombinierten Hüft- und Knieübungen bei Schmerzen rund um die Kniescheibe den höchsten Empfehlungsgrad A. Einlagen empfiehlt sie nur kurzfristig, für Menschen, deren Füße stärker als üblich nach innen kippen, und nur zusammen mit Übungen.',
   ],
   toc: true,
   sections: [
@@ -56,7 +56,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
             '**An der Innenseite des Knies, bei älteren Erwachsenen.** Das hängt häufiger mit Arthrose zusammen, also verschleißbedingten Veränderungen im Gelenk. Die Framingham-Studie fand Knorpelschäden an der Innenseite des Knies häufiger bei den flachsten Füßen, was zu diesem Bild passt. Aber mehr als einen Zusammenhang zu einem Zeitpunkt zeigt die Studie nicht.',
           ],
         },
-        'Ein Knie, das nach einer Verdrehung anschwillt, blockiert oder wegknickt, ist etwas anderes. Das deutet auf den Meniskus (das Knorpelpolster im Knie) oder ein Band hin und gehört zu einer medizinischen Fachperson.',
+        'Ein Knie, das nach einer Verdrehung anschwillt, blockiert oder wegknickt, ist etwas anderes. Das deutet auf den Meniskus (das Knorpelpolster im Knie) oder ein Band hin und gehört zum Arzt oder zur Ärztin.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
     },
@@ -78,9 +78,9 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
       cites: [CITE.bartonPfpGait, CITE.nealFootPosture],
     },
     {
-      h2: 'Was sollte eine Fachperson bei Knieschmerzen und Plattfüßen prüfen?',
+      h2: 'Was sollte eine Ärztin oder ein Arzt bei Knieschmerzen und Plattfüßen prüfen?',
       paragraphs: [
-        'Eine Fachperson schaut sich meist zuerst das Knie an und dann den Fuß. Ziel ist herauszufinden, was im Knie schmerzt, und dann, ob Fuß, Hüfte oder Trainingsbelastung dazu beitragen. Die US-Leitlinie der Physiotherapie von 2019 für Schmerzen an der Kniescheibe nennt einfache Bewegungstests wie eine Kniebeuge, einen Schritt von einer Stufe nach unten und eine einbeinige Kniebeuge, um zu sehen, was den Schmerz auslöst und wie sich das Bein bewegt.',
+        'Eine Ärztin oder ein Arzt schaut sich meist zuerst das Knie an und dann den Fuß. Ziel ist herauszufinden, was im Knie schmerzt, und dann, ob Fuß, Hüfte oder Trainingsbelastung dazu beitragen. Die US-Leitlinie der Physiotherapie von 2019 für Schmerzen an der Kniescheibe nennt einfache Bewegungstests wie eine Kniebeuge, einen Schritt von einer Stufe nach unten und eine einbeinige Kniebeuge, um zu sehen, was den Schmerz auslöst und wie sich das Bein bewegt.',
         'Was eine Physiotherapeutin, ein Sportmediziner oder eine Podologin wahrscheinlich prüft:',
       ],
       bullets: [
@@ -117,9 +117,9 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     },
     {
       h2: 'Welche Übungen helfen bei Knieschmerzen, wenn du Plattfüße hast?',
-      keyFact: 'Die US-Leitlinie der Physiotherapie von 2019 bewertet kombinierte Hüft- und Knieübungen bei Schmerzen rund um die Kniescheibe mit A, ihrer besten Bewertung (Willy und Kollegen).',
+      keyFact: 'Die US-Leitlinie der Physiotherapie von 2019 bewertet kombinierte Hüft- und Knieübungen bei Schmerzen rund um die Kniescheibe mit A, dem höchsten Empfehlungsgrad (Willy und Kollegen).',
       paragraphs: [
-        'Bei Schmerzen rund um die Kniescheibe trainieren die Übungen mit den besten Belegen die Hüfte und den Oberschenkel, nicht das Gewölbe. Die US-Leitlinie der Physiotherapie von 2019 gibt kombinierten Hüft- und Knieübungen ihre beste Bewertung, A. Ein internationaler Konsens von 2016 sagt dasselbe und ergänzt, dass Hüft- plus Knieübungen Knieübungen allein vorzuziehen sind.',
+        'Bei Schmerzen rund um die Kniescheibe trainieren die Übungen mit den besten Belegen die Hüfte und den Oberschenkel, nicht das Gewölbe. Die US-Leitlinie der Physiotherapie von 2019 gibt kombinierten Hüft- und Knieübungen den höchsten Empfehlungsgrad A. Ein internationaler Konsens von 2016 sagt dasselbe und ergänzt, dass Hüft- plus Knieübungen Knieübungen allein vorzuziehen sind.',
         'Hüftübungen zielen auf die Muskeln an der Außenseite und Rückseite der Hüfte. Knieübungen kräftigen die Vorderseite des Oberschenkels, mit Kniebeugen oder indem du das Knie gegen Widerstand streckst. Plattfüße ändern an dieser Empfehlung nichts, und keine Studie hat Fußübungen allein bei Knieschmerzen von Menschen mit Plattfüßen getestet.',
         'Wenn auch dein Gewölbe schmerzt, sind Kurzer-Fuß-Übungen und Gleichgewichtstraining eine vernünftige Ergänzung, auch wenn die Belege für das Knie noch früh sind. Das vollständige Fußprogramm findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/).',
         'Walkito ist eine App für Füße und Unterschenkel, ohne Knieziel und ohne Knieübungen. Der Plan enthält aber eine Hüftabduktion (das Bein zur Seite heben), beginnend mit 3\u00A0Sätzen à 10 auf jeder Seite. Den Knieteil kann eine Physiotherapeutin oder ein Physiotherapeut aufbauen.',
@@ -140,9 +140,9 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
         },
         {
           name: 'Halbe Kniebeuge oder Aufstehen vom Stuhl',
-          evidence: { level: 'moderate', why: 'Kraftübungen für das Knie sind die andere Hälfte der Kombination mit Bewertung A in der Leitlinie von 2019. Nicht Teil von Walkito.' },
+          evidence: { level: 'moderate', why: 'Kraftübungen für das Knie sind die andere Hälfte der Kombination mit Empfehlungsgrad A in der Leitlinie von 2019. Nicht Teil von Walkito.' },
           dose: 'Die Dosis legt deine Physiotherapeutin oder dein Physiotherapeut fest; 2 bis 3\u00A0Sätze à 10 sind ein üblicher Anfang',
-          often: 'An den meisten Tagen, wenn deine Fachperson einverstanden ist',
+          often: 'An den meisten Tagen, wenn deine Ärztin oder dein Arzt einverstanden ist',
           feel: 'Arbeit in der Vorderseite des Oberschenkels',
           stop: 'Der Knieschmerz 6/10 erreicht',
           how: 'Stell dich vor einen Stuhl, die Füße hüftbreit. Beug Hüfte und Knie, als wolltest du dich setzen, und halte die Knie in einer Linie mit dem zweiten Zeh. Hör bei einer Tiefe auf, die sich machbar anfühlt, dann steh auf. Den Stuhl leicht zu berühren ist in Ordnung.',
@@ -180,7 +180,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
       h2: 'Kannst du mit Plattfüßen und Knieschmerzen weiterlaufen?',
       paragraphs: [
         'Viele Läuferinnen und Läufer mit Plattfüßen und Schmerzen an der Kniescheibe laufen mit geringerer Belastung weiter, während sie Kraft aufbauen. Üblich ist eine langsame Rückkehr, bei der du Häufigkeit, Intensität und Dauer deiner Läufe Schritt für Schritt steigerst.',
-        'Die Leitlinie nennt auch ein Lauftraining zur Umstellung des Laufstils, mit schwächeren Belegen (Bewertung C): Eine Fachperson leitet dich an, kürzere, schnellere Schritte zu machen oder den Oberschenkel nicht nach innen wandern zu lassen. Stabilitätsschuhe und Einlagen werden Läuferinnen und Läufern mit Plattfüßen oft empfohlen. Für Einlagen zeigen die Studien oben bestenfalls eine kurzfristige Linderung, probier sie also aus, wenn sie sich gut anfühlen.',
+        'Die Leitlinie nennt auch ein Lauftraining zur Umstellung des Laufstils, mit schwächeren Belegen (Empfehlungsgrad C): Eine Physiotherapeutin oder ein Physiotherapeut leitet dich an, kürzere, schnellere Schritte zu machen oder den Oberschenkel nicht nach innen wandern zu lassen. Stabilitätsschuhe und Einlagen werden Läuferinnen und Läufern mit Plattfüßen oft empfohlen. Für Einlagen zeigen die Studien oben bestenfalls eine kurzfristige Linderung, probier sie also aus, wenn sie sich gut anfühlen.',
         'Wenn das Laufen stechende Schmerzen, ein Hinken oder eine Schwellung auslöst, hör auf und lass es abklären. Schmerzen an der Innenkante des Schienbeins sind ein eigenes Problem, mehr unter [Schienbeinkantensyndrom: Übungen](/de/schienbeinkantensyndrom-uebungen/).',
       ],
       cites: [CITE.willyPfpGuideline],
@@ -195,7 +195,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     {
       q: 'Können Plattfüße Schmerzen an der Knieinnenseite verursachen?',
       cites: [CITE.grossFlatFeetKnee],
-      a: 'Bei älteren Erwachsenen gibt es einen Zusammenhang. In der Framingham-Studie von 2011 hatten die flachsten Füße eine 1,4-fache Chance auf Knorpelschäden an der Innenseite des Knies und keinen Zusammenhang mit Schäden an anderen Stellen im Knie. Dieses Muster passt zur Kniearthrose. Die Studie hat die Menschen nur einmal gemessen und kann deshalb nicht zeigen, dass die Füße die Ursache waren. Eine Fachperson kann prüfen, ob eine Arthrose dahintersteckt.',
+      a: 'Bei älteren Erwachsenen gibt es einen Zusammenhang. In der Framingham-Studie von 2011 hatten die flachsten Füße eine 1,4-fache Chance auf Knorpelschäden an der Innenseite des Knies und keinen Zusammenhang mit Schäden an anderen Stellen im Knie. Dieses Muster passt zur Kniearthrose. Die Studie hat die Menschen nur einmal gemessen und kann deshalb nicht zeigen, dass die Füße die Ursache waren. Eine Ärztin oder ein Arzt kann prüfen, ob eine Arthrose dahintersteckt.',
     },
     {
       q: 'Helfen Einlagen bei Knieschmerzen durch Plattfüße?',
@@ -210,7 +210,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     {
       q: 'Sollte ich bei Knieschmerzen mit Plattfüßen eine Kniebandage tragen?',
       cites: [CITE.willyPfpGuideline],
-      a: 'Bei Schmerzen rund um die Kniescheibe rät die US-Leitlinie der Physiotherapie von 2019 von Kniebandagen, Kniestrümpfen und Kniebändern ab (Bewertung B), weil ein Cochrane-Review zusätzlich zu Übungen keinen nennenswerten Effekt auf den Schmerz fand. Kurzzeitiges Tapen durch eine Fachperson ist etwas anderes und kann zusammen mit Übungen den Schmerz kurzfristig lindern.',
+      a: 'Bei Schmerzen rund um die Kniescheibe rät die US-Leitlinie der Physiotherapie von 2019 von Kniebandagen, Kniestrümpfen und Kniebändern ab (Empfehlungsgrad B), weil ein Cochrane-Review zusätzlich zu Übungen keinen nennenswerten Effekt auf den Schmerz fand. Kurzzeitiges Tapen in der Physiotherapie ist etwas anderes und kann zusammen mit Übungen den Schmerz kurzfristig lindern.',
     },
     {
       q: 'Bekommen Kinder mit Plattfüßen Knieschmerzen?',
@@ -219,7 +219,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'dein Knie blockiert, so hängen bleibt, dass du es nicht strecken kannst, oder unter dir wegknickt',
       'das Knie nach einer Verdrehung, einem Sturz oder einem Knacken schnell, innerhalb von Stunden, angeschwollen ist',
@@ -236,7 +236,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito ist für Schmerzen an Ferse, Fuß und Unterschenkel bei Erwachsenen gemacht, nicht für Knieschmerzen. Wenn du Plattfüße mit Schmerzen im Gewölbe oder an der Ferse und dazu ein schmerzendes Knie hast, kann es sich um die Fußseite kümmern: Kurzer-Fuß-Übungen, Gleichgewicht und Hüftabduktion, Woche für Woche geplant. Die Knieübungen sollten von einer Physiotherapeutin oder einem Physiotherapeuten kommen.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Am Anfang prüft alle 14\u00A0Tage ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose, hilft nicht direkt gegen Knieschmerzen und ersetzt keine medizinische Fachperson. Zu Rückenschmerzen bei Plattfüßen lies [Plattfuß und Rückenschmerzen](/de/plattfuss-rueckenschmerzen/).',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Am Anfang prüft alle 14\u00A0Tage ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose, hilft nicht direkt gegen Knieschmerzen und ersetzt keinen Arztbesuch. Zu Rückenschmerzen bei Plattfüßen lies [Plattfuß und Rückenschmerzen](/de/plattfuss-rueckenschmerzen/).',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

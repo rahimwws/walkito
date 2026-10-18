@@ -25,14 +25,14 @@ export const PF_DURATION_IT: Guide = {
     'Quanto dura la fascite plantare, cosa rallenta il recupero, cosa fare se non migliora e come capire se la tua sta migliorando.',
   h1: 'Quanto dura la fascite plantare? Cosa dicono davvero gli studi',
   lede:
-    'La risposta onesta è: dipende, e la maggior parte delle fonti sottovaluta quanto cambia da persona a persona. Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e plantari. Un follow-up più lungo su 174\u00A0persone racconta una storia più sfumata: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
+    'La risposta onesta è: dipende, e la maggior parte delle fonti sottovaluta quanto cambia da persona a persona. Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e [plantari](/it/plantari-o-esercizi/). Un follow-up più lungo su 174\u00A0persone racconta una storia più sfumata: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
   intro: [
     'La pagina degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) spiega gli esercizi, le prove e i gradi della linea guida. Questa pagina risponde alla domanda che viene dopo: quanto ci vuole, cosa allunga i tempi, e quali sono le opzioni se le cose non migliorano?',
   ],
   takeaways: [
     'Una revisione del 2020 riporta che circa il 90% dei casi di fascite plantare risponde a cure non chirurgiche, spesso nel giro di alcuni mesi (Latt e colleghi, 2020).',
     'Una coorte a lungo termine di 174\u00A0pazienti ha trovato che il rischio di avere ancora la fascite plantare era dell’80,5% a un anno, del 50,0% a cinque anni e del 45,6% a dieci anni dall’inizio dei sintomi (Hansen e colleghi, 2018).',
-    'In quella coorte, i predittori significativi di un recupero più lento erano essere donna e avere dolore a entrambi i talloni. Indice di massa corporea, età, spessore della fascia e spina calcaneare non avevano un effetto significativo sulla prognosi (Hansen e colleghi, 2018).',
+    'In quella coorte, i predittori significativi di un recupero più lento erano essere donna e avere dolore a entrambi i talloni. Indice di massa corporea, età, spessore della fascia e sperone calcaneare non avevano un effetto significativo sulla prognosi (Hansen e colleghi, 2018).',
     'La linea guida del 2023 sul dolore al tallone dà allo stretching un grado **A** e al lavoro di forza una **B**. I tutori notturni per il dolore del mattino che non passa ricevono una **A**, e la laserterapia a bassa intensità o il dry needling da un professionista una **B** (Koc e colleghi, 2023).',
     'Il dolore del mattino su una scala da 0 a 10, segnato ogni giorno, è il modo più pratico per vedere se il recupero va nella direzione giusta.',
   ],
@@ -51,7 +51,7 @@ export const PF_DURATION_IT: Guide = {
             'Da alcuni fattori che non puoi controllare.',
           ],
         },
-        'Una revisione della letteratura del 2020 riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
+        'Una revisione della letteratura del 2020 riporta che circa il 90% delle persone con [fascite plantare](/it/fascite-plantare/) migliora con cure non chirurgiche, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
         'Uno studio di coorte del 2018 dà la visione più lunga. Hansen e colleghi hanno seguito 174\u00A0pazienti con fascite plantare diagnosticata con ecografia per in media 9,7\u00A0anni dall’inizio dei sintomi. Al follow-up, il 54% non aveva più sintomi e il 46% aveva ancora un po’ di dolore.',
         'L’analisi di Kaplan-Meier ha mostrato che il rischio di avere ancora la fascite plantare era dell’80,5% a un anno, del 50,0% a cinque anni e del 45,6% a dieci anni. Tra chi non aveva più sintomi, la durata media dei sintomi era di 725\u00A0giorni, circa due anni (Hansen e colleghi, 2018).',
         'Questi numeri sembrano peggiori del solito «passa in qualche mese». Due cose spiegano la differenza:',
@@ -93,18 +93,18 @@ export const PF_DURATION_IT: Guide = {
         '**Dolore a entrambi i talloni.** Chi all’inizio aveva dolore a entrambi i talloni arrivava a non avere più sintomi a circa un terzo della velocità annua di chi aveva dolore da un lato solo (hazard rate ratio 0,33, P minore di 0,01). Gli autori hanno notato che il dolore a entrambi i lati potrebbe riflettere un problema infiammatorio non riconosciuto, perché il dolore nei punti di attacco tra tendine e osso su entrambi i lati è una caratteristica di alcune forme di artrite. Nessuno nella loro coorte aveva una diagnosi infiammatoria nota, ma non sono stati fatti esami del sangue specifici (Hansen e colleghi, 2018).',
           ],
         },
-        'Indice di massa corporea, età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di una spina calcaneare non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: la spina calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra spina calcaneare e sintomi.',
+        'Indice di massa corporea, età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.',
         'Se ti fanno male entrambi i talloni e la rigidità del mattino dura a lungo o sono coinvolte altre articolazioni, vale la pena dirlo a un professionista sanitario anche se gli esercizi stanno aiutando. Vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per sapere quando il dolore a entrambi i talloni è un campanello d’allarme.',
       ],
       sourceNote:
-        'Hansen 2018, regressione di Cox: sesso femminile HRR 0,49 (IC al 95%: 0,30-0,80, P < 0,01), dolore bilaterale HRR 0,33 (0,15-0,72, P < 0,01). Indice di massa corporea (>25 contro ≤25): HRR 0,65 (0,40-1,06, P = 0,09). Età (>40 contro ≤40): HRR 1,93 (0,99-3,73, P = 0,05). Spina calcaneare: HRR 0,96 (0,56-1,63, P = 0,88).',
+        'Hansen 2018, regressione di Cox: sesso femminile HRR 0,49 (IC al 95%: 0,30-0,80, P < 0,01), dolore bilaterale HRR 0,33 (0,15-0,72, P < 0,01). Indice di massa corporea (>25 contro ≤25): HRR 0,65 (0,40-1,06, P = 0,09). Età (>40 contro ≤40): HRR 1,93 (0,99-3,73, P = 0,05). Sperone calcaneare: HRR 0,96 (0,56-1,63, P = 0,88).',
       cites: [CITE.hansen],
     },
     {
       h2: 'Cosa vuol dire fascite plantare «cronica»?',
       paragraphs: [
         'Non c’è una definizione unica condivisa. Alcune fonti chiamano cronica la fascite plantare che dura da più di tre mesi, altre usano sei mesi. La linea guida del 2023 non fissa un limite. Una revisione del 2020 definisce la fascite plantare cronica come «la causa più comune di dolore cronico al tallone negli adulti» senza indicare un limite in mesi (Latt e colleghi, 2020).',
-        '**Più dell’etichetta conta lo schema.** Di solito fascite plantare cronica vuol dire che la fitta ai primi passi del mattino è diventata un dolore più sordo e più costante.',
+        '**Più dell’etichetta conta l’andamento.** Di solito fascite plantare cronica vuol dire che la fitta ai primi passi del mattino è diventata un dolore più sordo e più costante.',
         'Anche il tessuto cambia nel tempo: la parola «fascite» fa pensare a un’infiammazione, ma i casi cronici di solito vengono descritti come un processo degenerativo più che infiammatorio. Per questo le infiltrazioni di cortisone, che agiscono sull’infiammazione, spesso aiutano nel breve periodo ma non nel lungo.',
         'Se hai la fascite plantare da più di alcuni mesi e non sta chiaramente migliorando, la sezione più sotto spiega cosa raccomanda la linea guida.',
       ],
@@ -142,9 +142,9 @@ export const PF_DURATION_IT: Guide = {
           ['Tutori notturni per 1-3\u00A0mesi (dolore del mattino che non passa)', '**A**', 'Grado più alto per chi continua ad avere dolore ai primi passi. Vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).'],
           ['Esercizi contro resistenza e di forza (es. sollevamenti sulle punte con carico)', '**B**', 'Secondo grado più alto. Ha anticipato il miglioramento in uno studio su 48\u00A0persone. Vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).'],
           ['Laserterapia a bassa intensità e dry needling (da un professionista)', '**B**', 'Secondo grado più alto. Si fanno entrambi in ambulatorio.'],
-          ['Plantari da soli per ridurre il dolore nel breve periodo', '**B contro**', 'La linea guida **sconsiglia** i plantari come approccio a sé nel breve periodo.'],
+          ['Plantari da soli per ridurre il dolore nel breve periodo', '**B a sfavore**', 'La linea guida **sconsiglia** i plantari come approccio a sé nel breve periodo.'],
           ['Plantari insieme ad altre cure', '**C**', 'Prove deboli. Possono aiutare come parte di un programma più ampio.'],
-          ['Ultrasuoni terapeutici aggiunti allo stretching', '**A contro**', 'La linea guida li **sconsiglia**. Le prove non sostengono di aggiungerli allo stretching.'],
+          ['Ultrasuoni terapeutici aggiunti allo stretching', '**A a sfavore**', 'La linea guida li **sconsiglia**. Le prove non sostengono di aggiungerli allo stretching.'],
           ['Infiltrazione di corticosteroidi', 'Non valutata nella linea guida del 2023 per l’uso a lungo termine', 'Può ridurre il dolore nel breve periodo. La coorte di Hansen non ha mostrato benefici sulla prognosi a lungo termine dalle infiltrazioni, e la linea guida non le raccomanda come approccio a sé.'],
           ['Onde d’urto', 'Discusse, prove contrastanti', 'Alcuni studi riportano benefici nei casi che non passano. Le prove non sono abbastanza forti per un grado chiaro nella linea guida.'],
         ],
@@ -154,9 +154,9 @@ export const PF_DURATION_IT: Guide = {
     {
       h2: 'Quando andare da un professionista se la fascite plantare non migliora?',
       paragraphs: [
-        'Lo schema della tabella qui sopra è chiaro: **stretching e lavoro di forza hanno il sostegno più ampio.** Le opzioni in ambulatorio (laser, dry needling, onde d’urto) hanno qualche prova ma vengono dopo l’esercizio nella classifica della linea guida. La chirurgia è riservata alla piccola percentuale di casi che non risponde a nient’altro, e la linea guida non le dà un ruolo di primo piano.',
-        'Se fai gli esercizi con costanza da diversi mesi e il dolore del mattino non migliora, è un buon momento per rivolgerti a un professionista sanitario e parlare delle opzioni qui sopra. È anche un buon momento per verificare che la diagnosi sia giusta: vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per gli altri problemi con lo stesso schema.',
-        'Per chi corre, i cambi di carico spesso fanno parte del quadro: [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) e [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) affrontano questo aspetto.',
+        'Il quadro della tabella qui sopra è chiaro: **stretching e lavoro di forza hanno il sostegno più ampio.** Le opzioni in ambulatorio (laser, dry needling, onde d’urto) hanno qualche prova ma vengono dopo l’esercizio nella classifica della linea guida. La chirurgia è riservata alla piccola percentuale di casi che non risponde a nient’altro, e la linea guida non le dà un ruolo di primo piano.',
+        'Se fai gli esercizi con costanza da diversi mesi e il dolore del mattino non migliora, è un buon momento per rivolgerti a un professionista sanitario e parlare delle opzioni qui sopra. È anche un buon momento per verificare che la diagnosi sia giusta: vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per gli altri problemi con lo stesso andamento.',
+        'Anche i cambi di carico spesso fanno parte del quadro: per chi sta in piedi a lungo, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) affronta questo aspetto.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -164,7 +164,7 @@ export const PF_DURATION_IT: Guide = {
       h2: 'Come fa il dolore del mattino a mostrarti i progressi?',
       paragraphs: [
         '**Il dolore del mattino è il segnale quotidiano più affidabile di come sta il piede.** Misura la stessa cosa (la rigidità ai primi passi), nelle stesse condizioni (appena sveglio, piede senza carico), più o meno alla stessa ora ogni giorno. Questo lo rende una linea di tendenza molto migliore di «come sentivo il piede durante il giorno», che cambia con l’attività, le scarpe e le superfici.',
-        'Un punteggio quotidiano da 0 a 10 ai primi passi, seguito per settimane, mostra schemi che altrimenti non noteresti. Un punteggio che scende piano da 5 a 3 in un mese è un progresso vero, anche se qualche mattina fa ancora male. Un punteggio che sale di colpo la mattina dopo una lunga corsa o una giornata in piedi ti dice quale carico è stato eccessivo.',
+        'Un punteggio quotidiano da 0 a 10 ai primi passi, seguito per settimane, mostra andamenti che altrimenti non noteresti. Un punteggio che scende piano da 5 a 3 in un mese è un progresso vero, anche se qualche mattina fa ancora male. Un punteggio che sale di colpo la mattina dopo una lunga corsa o una giornata in piedi ti dice quale carico è stato eccessivo.',
         'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione e lo usa per adattare gli esercizi del giorno. Il primo obiettivo per il dolore al tallone è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. Quando lo raggiungi, quell’obiettivo passa al mantenimento e il successivo (di solito forza del polpaccio o equilibrio) prende il suo posto. Quel passaggio, da «rendere più facili le mattine» a «costruire capacità», è il vero traguardo.',
       ],
       cites: [CITE.guideline],
@@ -184,12 +184,12 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'Perché la mia fascite plantare non migliora?',
       cites: [CITE.guideline],
-      a: 'Ci sono diverse possibilità. Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come tutori notturni, laserterapia o dry needling.',
+      a: 'Ci sono diverse possibilità. Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come [tutori notturni](/it/tutore-notturno-fascite-plantare/), laserterapia o dry needling.',
     },
     {
-      q: 'La spina calcaneare fa durare di più la fascite plantare?',
+      q: 'Lo sperone calcaneare fa durare di più la fascite plantare?',
       cites: [CITE.hansen],
-      a: 'Non secondo lo studio di Hansen del 2018. Avere una spina calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi (P = 0,88). Molte persone hanno una spina calcaneare senza dolore, e molte con dolore non hanno la spina. La spina spesso c’è, ma di solito non è lei a causare i sintomi.',
+      a: 'Non secondo lo studio di Hansen del 2018. Avere uno sperone calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi (P = 0,88). Molte persone hanno uno sperone calcaneare senza dolore, e molte con dolore non hanno lo sperone. Lo sperone spesso c’è, ma di solito non è lui a causare i sintomi.',
     },
     {
       q: 'Camminare fa bene alla fascite plantare?',
@@ -198,12 +198,12 @@ export const PF_DURATION_IT: Guide = {
     },
     {
       q: 'Quando andare dal medico se la fascite plantare non migliora?',
-      a: 'Rivolgiti a un professionista sanitario se il dolore non migliora chiaramente dopo diversi mesi di stretching quotidiano e lavoro sul polpaccio, se peggiora invece di restare stabile, se ti fanno male entrambi i talloni e altre articolazioni sono rigide o gonfie, se c’è intorpidimento o formicolio, o se il dolore ti sveglia di notte. Questi schemi possono indicare un altro problema o richiedere opzioni oltre al solo esercizio.',
+      a: 'Rivolgiti a un professionista sanitario se il dolore non migliora chiaramente dopo diversi mesi di stretching quotidiano e lavoro sul polpaccio, se peggiora invece di restare stabile, se ti fanno male entrambi i talloni e altre articolazioni sono rigide o gonfie, se c’è intorpidimento o formicolio, o se il dolore ti sveglia di notte. Questi quadri possono indicare un altro problema o richiedere opzioni oltre al solo esercizio.',
     },
     {
       q: 'La fascite plantare può tornare dopo essere passata?',
       cites: [CITE.hansen],
-      a: 'Sì. Nella coorte di Hansen del 2018, il 32% del gruppo senza più sintomi aveva avuto almeno una ricaduta prima di arrivare a non avere sintomi in modo stabile. Lo schema miglioramento, ricaduta e nuovo miglioramento è comune. Continuare con una dose di mantenimento di lavoro sul polpaccio e stretching dopo che il dolore è passato è un modo per ridurre la probabilità che torni.',
+      a: 'Sì. Nella coorte di Hansen del 2018, il 32% del gruppo senza più sintomi aveva avuto almeno una ricaduta prima di arrivare a non avere sintomi in modo stabile. L’alternanza di miglioramento, ricaduta e nuovo miglioramento è comune. Continuare con una dose di mantenimento di lavoro sul polpaccio e stretching dopo che il dolore è passato è un modo per ridurre la probabilità che torni.',
     },
     {
       q: 'Quali sono i segnali che la fascite plantare sta guarendo?',
@@ -232,7 +232,7 @@ export const PF_DURATION_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Il recupero richiede tempo, e la parte più difficile è capire se quel tempo sta servendo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Ogni mattina segni il dolore, e ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se i numeri cambiano.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Quando hai raggiunto l’obiettivo del mattino, quell’obiettivo passa al mantenimento e il successivo prende il suo posto. Non c’è una data di fine fissa, perché il ritmo lo decide il piede.',

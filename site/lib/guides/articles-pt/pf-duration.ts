@@ -21,7 +21,7 @@ export const PF_DURATION_PT: Guide = {
     'Quanto tempo dura a fascite plantar, o que faz a recuperação demorar mais, o que fazer se não está melhorando e como saber se a sua está melhorando.',
   h1: 'Quanto tempo dura a fascite plantar? O que a evidência realmente diz',
   lede:
-    'A resposta honesta é: depende, e a maioria das fontes subestima o quanto isso varia. Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento sem cirurgia, como alongamento e palmilhas. Um acompanhamento mais longo de 174\u00A0pessoas conta uma história com mais nuances: cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor depois de dez anos em média, embora a maioria deles relatasse só sintomas leves.',
+    'A resposta honesta é: depende, e a maioria das fontes subestima o quanto isso varia. Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento sem cirurgia, como alongamento e [palmilhas](/pt/palmilhas-ou-exercicios/). Um acompanhamento mais longo de 174\u00A0pessoas conta uma história com mais nuances: cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor depois de dez anos em média, embora a maioria deles relatasse só sintomas leves.',
   intro: [
     'A página de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) traz os exercícios, a evidência e os graus da diretriz. Esta página responde à pergunta que vem depois: quanto tempo tudo isso leva, o que faz levar mais tempo, e quais são as opções se as coisas não estão melhorando?',
   ],
@@ -47,7 +47,7 @@ export const PF_DURATION_PT: Guide = {
             'De alguns fatores que você não controla.',
           ],
         },
-        'Uma revisão da literatura de 2020 diz que as abordagens sem cirurgia funcionam para cerca de 90% das pessoas com fascite plantar, normalmente em três a seis meses (Latt e colegas, 2020).',
+        'Uma revisão da literatura de 2020 diz que as abordagens sem cirurgia funcionam para cerca de 90% das pessoas com [fascite plantar](/pt/fascite-plantar/), normalmente em três a seis meses (Latt e colegas, 2020).',
         'Um estudo de coorte de 2018 dá a visão mais longa. Hansen e colegas acompanharam 174\u00A0pacientes com fascite plantar diagnosticada por ultrassom por 9,7\u00A0anos em média desde o início dos sintomas. No acompanhamento, 54% estavam sem sintomas e 46% ainda tinham alguma dor.',
         'A análise de Kaplan-Meier mostrou que o risco de ainda ter fascite plantar era de 80,5% com um ano, 50,0% com cinco anos e 45,6% com dez anos. Entre os que ficaram sem sintomas, a duração média dos sintomas foi de 725\u00A0dias, cerca de dois anos (Hansen e colegas, 2018).',
         'Esses números parecem piores que o habitual “passa em alguns meses”. Duas coisas explicam a diferença:',
@@ -89,7 +89,7 @@ export const PF_DURATION_PT: Guide = {
             '**Dor nos dois calcanhares.** Quem tinha dor nos dois calcanhares no início tinha cerca de um terço da taxa anual de ficar sem sintomas em comparação com quem tinha dor de um lado só (razão de taxas de risco de 0,33, P menor que 0,01). Os autores observaram que a dor nos dois lados pode refletir uma condição inflamatória não reconhecida, já que dor nos pontos onde os tendões se prendem ao osso, dos dois lados, é uma característica de algumas formas de artrite. Ninguém no grupo tinha um diagnóstico inflamatório conhecido, mas não foi feito nenhum exame de sangue para rastrear isso (Hansen e colegas, 2018).',
           ],
         },
-        'IMC, idade, tabagismo, trabalho fisicamente pesado, espessura da fáscia no ultrassom e presença de esporão não tiveram efeito significativo no prognóstico nesse estudo. Esse último achado surpreende muita gente: o esporão não fez a dor durar mais nem menos (P = 0,88). Estudos anteriores também não encontraram relação entre esporão e sintomas.',
+        'IMC, idade, tabagismo, trabalho fisicamente pesado, espessura da fáscia no ultrassom e presença de [esporão](/pt/fascite-plantar-ou-esporao/) não tiveram efeito significativo no prognóstico nesse estudo. Esse último achado surpreende muita gente: o esporão não fez a dor durar mais nem menos (P = 0,88). Estudos anteriores também não encontraram relação entre esporão e sintomas.',
         'Se os dois calcanhares doem e a rigidez da manhã dura muito ou outras articulações estão envolvidas, vale contar isso a um profissional de saúde, mesmo que os exercícios estejam ajudando. Veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) para saber mais sobre quando a dor nos dois lados é um sinal de alerta.',
       ],
       sourceNote:
@@ -152,7 +152,7 @@ export const PF_DURATION_PT: Guide = {
       paragraphs: [
         'O padrão na tabela acima é claro: **alongamento e treino de força têm o apoio mais amplo.** As opções feitas em consultório (laser, agulhamento seco, ondas de choque) têm alguma evidência, mas ficam atrás do exercício na classificação da diretriz. A cirurgia fica reservada para a pequena porcentagem de casos que não respondem a mais nada, e a diretriz não dá a ela um papel de destaque.',
         'Se você está fazendo os exercícios com constância há vários meses e a dor da manhã não está melhorando, esse é um momento razoável para procurar um profissional de saúde e conversar sobre as opções acima. Também é um momento razoável para confirmar se o diagnóstico está certo: veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) para outras condições com o mesmo padrão.',
-        'Para quem corre, mudanças na carga muitas vezes fazem parte do quadro: [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) tratam desse lado.',
+        'Para quem corre, mudanças na carga muitas vezes fazem parte do quadro. Para quem passa o dia em pé, [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) trata desse lado.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -180,7 +180,7 @@ export const PF_DURATION_PT: Guide = {
     {
       q: 'Por que minha fascite plantar não melhora?',
       cites: [CITE.guideline],
-      a: 'Há várias possibilidades. Os exercícios podem não estar sendo feitos com constância suficiente, o calçado pode não ter bom suporte, ou a carga diária no pé (passos, horas em pé, quilometragem de corrida) pode ser maior do que o tecido consegue acompanhar. Também é possível que o diagnóstico não seja fascite plantar. Se alongamento e fortalecimento não ajudaram depois de vários meses, a diretriz de 2023 recomenda conversar com um profissional de saúde sobre opções como talas noturnas, laser ou agulhamento seco.',
+      a: 'Há várias possibilidades. Os exercícios podem não estar sendo feitos com constância suficiente, o calçado pode não ter bom suporte, ou a carga diária no pé (passos, horas em pé, quilometragem de corrida) pode ser maior do que o tecido consegue acompanhar. Também é possível que o diagnóstico não seja fascite plantar. Se alongamento e fortalecimento não ajudaram depois de vários meses, a diretriz de 2023 recomenda conversar com um profissional de saúde sobre opções como [talas noturnas](/pt/tala-noturna-fascite-plantar/), laser ou agulhamento seco.',
     },
     {
       q: 'Esporão faz a fascite plantar durar mais?',
@@ -228,7 +228,7 @@ export const PF_DURATION_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'A recuperação leva tempo, e a parte mais difícil é saber se esse tempo está servindo para alguma coisa. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos. Toda manhã você anota a sua dor, e a cada 14\u00A0dias um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver os números mudando.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar. Não há data fixa para acabar, porque quem dita o ritmo é o pé.',

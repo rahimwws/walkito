@@ -73,7 +73,7 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Che scarpe mettere alla scrivania in piedi?',
       paragraphs: [
-        'Se lavori da casa, magari stai alla scrivania in calzini o in pantofole. Sono tante ore senza ammortizzazione né sostegno dell’arco. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una B contro per la fascite plantare, cioè le prove fanno propendere per non usarli come unica soluzione, ma questo riguarda i plantari da soli, non se una scarpa qualsiasi sia meglio di nessuna scarpa.',
+        'Se lavori da casa, magari stai alla scrivania in calzini o in pantofole. Sono tante ore senza ammortizzazione né sostegno dell’arco. La linea guida del 2023 sul dolore al tallone dà ai [plantari](/it/plantari-o-esercizi/) da soli una B a sfavore per la [fascite plantare](/it/fascite-plantare/), cioè le prove fanno propendere per non usarli come unica soluzione, ma questo riguarda i plantari da soli, non se una scarpa qualsiasi sia meglio di nessuna scarpa.',
         'Un approccio ragionevole: **metti una scarpa con un po’ di ammortizzazione e un plantare interno di sostegno quando stai in piedi, anche a casa.** Non ti serve una scarpa speciale per la scrivania in piedi. Se alterni in piedi e seduto, puoi toglierti le scarpe nei periodi seduti.',
         'Gli esercizi di questa pagina lavorano direttamente sui tessuti. Scarpe e tappetini aiutano il comfort in piedi, ma non sostituiscono lo stretching e il lavoro di forza.',
       ],
@@ -203,8 +203,8 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Il dolore ai piedi con la scrivania in piedi può essere fascite plantare o altro?',
       paragraphs: [
-        'Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quello schema fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.',
-        'Gli esercizi che aiutano i due problemi si sovrappongono molto. Se il tuo dolore segue lo schema della fascite plantare, [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) è la guida più completa. Se senti gli archi piatti, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se non sei sicuro, senti un professionista sanitario prima di caricare il piede con gli esercizi.',
+        'Il dolore ai piedi con la scrivania in piedi di solito è un fastidio generico da stazione eretta statica prolungata. Ma se il dolore è acuto, concentrato vicino al tallone e peggiore ai primi passi dopo che sei stato seduto per un po’, quel quadro fa pensare alla fascite plantare. Stare in piedi per la maggior parte della giornata lavorativa aumentava di 3,6\u00A0volte le odds di fascite plantare in uno studio caso-controllo, quindi la scrivania in piedi può plausibilmente contribuire.',
+        'Gli esercizi che aiutano i due problemi si sovrappongono molto. Se il tuo dolore ha l’andamento tipico della fascite plantare, [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) è la guida più completa. Se senti l’arco plantare piatto, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se non sei sicuro, senti un professionista sanitario prima di caricare il piede con gli esercizi.',
       ],
       cites: [CITE.riddle],
     },
@@ -232,7 +232,7 @@ export const STANDING_DESK_IT: Guide = {
     },
     {
       q: 'Che esercizi fare alla scrivania in piedi?',
-      a: 'In piedi: allungamenti del polpaccio contro il bordo della scrivania (2\u00A0tenute da 30\u00A0secondi per lato) e sollevamenti sulle punte in piedi (3\u00A0serie da 10). Nelle pause da seduto: sollevamenti sulle punte da seduto (3\u00A0serie da 15), apertura delle dita e l’esercizio del piede corto. Lavorano su polpaccio, fascia plantare e muscoli intrinseci del piede, che reggono il carico in piedi. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
+      a: 'In piedi: allungamenti del polpaccio contro il bordo della scrivania (2\u00A0tenute da 30\u00A0secondi per lato) e sollevamenti sulle punte in piedi (3\u00A0serie da 10). Nelle pause da seduto: sollevamenti sulle punte da seduto (3\u00A0serie da 15), apertura delle dita e l’[esercizio del piede corto](/it/esercizi/piede-corto/). Lavorano su polpaccio, fascia plantare e muscoli intrinseci del piede, che reggono il carico in piedi. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
       cites: [CITE.guideline],
     },
     {
@@ -259,16 +259,16 @@ export const STANDING_DESK_IT: Guide = {
       'il tallone o il piede è arrossato, o hai la febbre o non ti senti bene',
       'il dolore ti sveglia di notte',
       'il dolore è acuto, o peggiora anche se stai più seduto',
-      'il dolore è in un solo punto preciso e peggiora con l’attività, che può essere lo schema di una frattura da stress e non di fastidio da stazione eretta',
+      'il dolore è in un solo punto preciso e peggiora con l’attività, che può essere il segno di una frattura da stress e non di fastidio da stazione eretta',
       'una gamba o un piede si è gonfiato all’improvviso ed è dolorante, arrossato o caldo',
       'hai il diabete, meno sensibilità ai piedi o una cattiva circolazione',
       'il dolore non si è calmato dopo diverse settimane di periodi in piedi più brevi, un tappetino e gli esercizi di questa pagina',
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
-      'Non devi capire da solo l’ordine, le dosi o quando progredire. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il dolore da scrivania in piedi segue lo schema del dolore mattutino tipico della fascite plantare, il primo obiettivo è un dolore mattutino a 1 su 10 o meno per 14\u00A0giorni di fila.',
+      'Non devi capire da solo l’ordine, le dosi o quando progredire. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il dolore da scrivania in piedi ha l’andamento del dolore mattutino tipico della fascite plantare, il primo obiettivo è un dolore mattutino a 1 su 10 o meno per 14\u00A0giorni di fila.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta dando risultati.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore è acuto, peggiora o ti tiene sveglio di notte, rivolgiti prima a un professionista sanitario.',

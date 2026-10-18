@@ -23,7 +23,7 @@ export const HAGLUNDS_ES: Guide = {
   lede:
     'La deformidad de Haglund es un agrandamiento óseo en la parte superior trasera del hueso del talón. Está justo donde se inserta el tendón de Aquiles, y cuando los zapatos presionan ahí, la bursa entre el hueso y el tendón se irrita. El resultado es dolor en la parte de atrás del talón, hinchazón y a veces un bulto visible que algunas personas llaman pump bump. El manejo conservador es el enfoque de primera línea, pero la evidencia detrás es mayormente opinión de expertos, no ensayos.',
   intro: [
-    'Esta página cubre la anatomía, la relación con la tendinopatía insercional del Aquiles y la bursitis retrocalcánea, qué pasos conservadores existen y cuándo entra la cirugía en la conversación. Si tu dolor está más arriba en el tendón y no en el hueso, la página de [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) es el mejor punto de partida. Si el dolor está debajo del talón, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/).',
+    'Esta página cubre la anatomía, la relación con la tendinopatía insercional del Aquiles y la bursitis retrocalcánea, qué pasos conservadores existen y cuándo entra la cirugía en la conversación. Si tu dolor está más arriba en el tendón y no en el hueso, la página de [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) es el mejor punto de partida. Si el dolor está debajo del talón, mira primero [fascitis plantar o tendinitis de Aquiles](/es/fascitis-plantar-o-tendinitis-de-aquiles/) y después [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/).',
   ],
   takeaways: [
     'La deformidad de Haglund es una prominencia ósea anormal en la parte posterosuperior del calcáneo, descrita por primera vez por Patrick Haglund en 1927. Puede llevar a bursitis retrocalcánea y tendinopatía insercional del Aquiles (Yuen y colegas, 2022).',
@@ -237,7 +237,7 @@ export const HAGLUNDS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'La progresión de carga de pantorrilla de Walkito va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, descensos excéntricos de talón y más. Para la deformidad de Haglund y el dolor insercional del Aquiles, cada paso se queda a nivel del piso en lugar de bajar por debajo de la orilla de un escalón. Walkito te sube de nivel una vez que dos sesiones en el nivel actual se sintieron fáciles, en lugar de seguir un calendario fijo.',
     more: [
       'Las sesiones son de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si tienes un bulto visible en la parte de atrás del talón y no estás seguro de qué está causando el dolor, pide a un profesional de la salud que lo revise antes de empezar a cargarlo.',

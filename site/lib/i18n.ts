@@ -246,15 +246,15 @@ const pt: Chrome = {
 };
 
 const fr: Chrome = {
-  headerButton: "Télécharger l'app",
-  getBadge: "Télécharger dans l'App Store",
-  getBadgeLabel: "Télécharger Walkito dans l'App Store",
+  headerButton: "Télécharger l’app",
+  getBadge: "Télécharger dans l’App Store",
+  getBadgeLabel: "Télécharger Walkito dans l’App Store",
   navHome: 'Accueil',
   menuOpen: 'Menu',
   menuClose: 'Fermer le menu',
   getTitle: 'Scannez pour télécharger Walkito',
   getScan:
-    "Pointez l'appareil photo de votre téléphone vers le code. Il ouvre la boutique d'applications de votre téléphone.",
+    "Pointez l’appareil photo de votre téléphone vers le code. Il ouvre la boutique d’applications de votre téléphone.",
   getAppStore: 'App Store',
   getPlay: 'Google Play',
   getPlaySoon: 'Google Play, bientôt disponible',
@@ -273,13 +273,13 @@ const fr: Chrome = {
   sourcesHeading: 'Sources',
   guidesHeading: 'Guides',
   updated: 'Mis à jour le',
-  keyPoints: "L'essentiel",
+  keyPoints: "L’essentiel",
   contents: 'Sur cette page',
   faqHeading: 'Questions fréquentes',
   relatedHeading: 'Guides associés',
   navAbout: 'À propos',
   notice:
-    "Walkito est un programme d'exercices. Il ne pose pas de diagnostic et ne soigne pas. Si la douleur est vive, s'aggrave ou vous empêche de dormir, consultez un professionnel de santé.",
+    "Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne soigne pas. Si la douleur est vive, s’aggrave ou vous empêche de dormir, consultez un professionnel de santé.",
 };
 
 const it: Chrome = {
@@ -351,7 +351,7 @@ const de: Chrome = {
   relatedHeading: 'Weitere Ratgeber',
   navAbout: 'Über Walkito',
   notice:
-    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ist keine Behandlung. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, geh zu einer medizinischen Fachperson.',
+    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ist keine Behandlung. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, lass ihn ärztlich abklären.',
 };
 
 export const CHROME: Record<Lang, Chrome> = { en, ru, es, pt, fr, it, de };
@@ -477,6 +477,17 @@ export const EN_ONLY = {
   massageBall: '/massage-ball-plantar-fasciitis/',
   insolesVsExercises: '/insoles-vs-exercises/',
   barefoot: '/barefoot-shoes/',
+  pfVsAchilles: '/plantar-fasciitis-vs-achilles-tendonitis/',
+  pfVsStressFracture: '/plantar-fasciitis-vs-stress-fracture/',
+  walkingPf: '/walking-with-plantar-fasciitis/',
+  flatFeetTest: '/flat-feet-test/',
+  runnersFootExercises: '/foot-exercises-for-runners/',
+  teachers: '/teachers-foot-pain/',
+  retailWarehouse: '/retail-warehouse-foot-pain/',
+  chefs: '/chefs-foot-pain/',
+  hairdressers: '/hairdressers-foot-pain/',
+  weightPf: '/weight-and-plantar-fasciitis/',
+  hikers: '/hiking-foot-pain/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -561,6 +572,17 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   exaktAlt: '/es/alternativas-a-exakt-health/',
   bestFlatApp: '/es/mejor-app-pie-plano/',
   bestInsoles: '/es/mejores-plantillas-fascitis-plantar/',
+  pfVsAchilles: '/es/fascitis-plantar-o-tendinitis-de-aquiles/',
+  pfVsStressFracture: '/es/fascitis-plantar-o-fractura-por-estres/',
+  walkingPf: '/es/caminar-con-fascitis-plantar/',
+  flatFeetTest: '/es/test-pie-plano/',
+  runnersFootExercises: '/es/ejercicios-de-pies-para-corredores/',
+  teachers: '/es/dolor-de-pies-docentes/',
+  retailWarehouse: '/es/dolor-de-pies-comercio-y-almacen/',
+  chefs: '/es/dolor-de-pies-cocineros/',
+  hairdressers: '/es/dolor-de-pies-peluqueros/',
+  weightPf: '/es/peso-y-fascitis-plantar/',
+  hikers: '/es/dolor-de-pies-senderismo/',
 };
 
 /**
@@ -642,6 +664,17 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   exaktAlt: '/ru/alternativy-exakt-health/',
   bestFlatApp: '/ru/prilozhenie-pri-ploskostopii/',
   bestInsoles: '/ru/luchshie-stelki-pri-plantarnom-fastsiite/',
+  pfVsAchilles: '/ru/plantarnyy-fastsiit-ili-akhillovo-sukhozhilie/',
+  pfVsStressFracture: '/ru/plantarnyy-fastsiit-ili-stressovyy-perelom/',
+  walkingPf: '/ru/khodba-pri-plantarnom-fastsiite/',
+  flatFeetTest: '/ru/test-na-ploskostopie/',
+  runnersFootExercises: '/ru/uprazhneniya-dlya-stop-begunam/',
+  teachers: '/ru/bol-v-stopakh-u-uchiteley/',
+  retailWarehouse: '/ru/bol-v-stopakh-prodavtsy-i-sklad/',
+  chefs: '/ru/bol-v-stopakh-u-povarov/',
+  hairdressers: '/ru/bol-v-stopakh-u-parikmakherov/',
+  weightPf: '/ru/ves-i-plantarnyy-fastsiit/',
+  hikers: '/ru/bol-v-stopakh-posle-pokhoda/',
 };
 
 /**
@@ -680,6 +713,7 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     calfRaiseTest: '/pt/teste-elevacao-calcanhar/',
     heelPainAfterWalking: '/pt/dor-no-calcanhar-depois-de-andar/',
     heelPainAtNight: '/pt/dor-no-calcanhar-a-noite/',
+    pfPregnancy: '/pt/fascite-plantar-gravidez/',
     heelFatPad: '/pt/sindrome-coxim-gorduroso-calcanhar/',
     haglunds: '/pt/deformidade-de-haglund/',
     severs: '/pt/doenca-de-sever/',
@@ -742,6 +776,7 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     calfRaiseTest: '/fr/test-montee-sur-pointes/',
     heelPainAfterWalking: '/fr/douleur-talon-apres-marche/',
     heelPainAtNight: '/fr/douleur-talon-la-nuit/',
+    pfPregnancy: '/fr/fasciite-plantaire-grossesse/',
     heelFatPad: '/fr/syndrome-coussinet-graisseux-talon/',
     haglunds: '/fr/maladie-de-haglund/',
     severs: '/fr/maladie-de-sever/',
@@ -804,6 +839,7 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     calfRaiseTest: '/it/test-sollevamento-punte/',
     heelPainAfterWalking: '/it/dolore-tallone-dopo-camminata/',
     heelPainAtNight: '/it/dolore-tallone-di-notte/',
+    pfPregnancy: '/it/fascite-plantare-gravidanza/',
     heelFatPad: '/it/sindrome-cuscinetto-adiposo-tallone/',
     haglunds: '/it/morbo-di-haglund/',
     severs: '/it/malattia-di-sever/',
@@ -866,6 +902,7 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     calfRaiseTest: '/de/fersenheben-test/',
     heelPainAfterWalking: '/de/fersenschmerzen-nach-dem-gehen/',
     heelPainAtNight: '/de/fersenschmerzen-nachts/',
+    pfPregnancy: '/de/fersenschmerzen-schwangerschaft/',
     heelFatPad: '/de/fersenfettpolster-syndrom/',
     haglunds: '/de/haglundferse/',
     severs: '/de/morbus-sever/',

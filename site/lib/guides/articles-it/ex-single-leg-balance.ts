@@ -97,7 +97,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
           ],
         },
         'Un deficit in un punto qualsiasi di questa catena costringe il piede a compensare.',
-        'Per la fascite plantare e il piede piatto, l’allenamento dell’equilibrio compare nei programmi di esercizi insieme ad allungamenti e rinforzo, perché allena tutta la catena in una volta. Uno studio del 2023 su 52\u00A0persone con piede piatto flessibile ha trovato che un programma che univa esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca, allungamenti ed equilibrio cambiava la forma dell’arco più di un gruppo di controllo. L’equilibrio non era isolato in quello studio, ma faceva parte del programma che ha funzionato.',
+        'Per la [fascite plantare](/it/fascite-plantare/) e il [piede piatto](/it/piede-piatto/), l’allenamento dell’equilibrio compare nei programmi di esercizi insieme ad allungamenti e rinforzo, perché allena tutta la catena in una volta. Uno studio del 2023 su 52\u00A0persone con piede piatto flessibile ha trovato che un programma che univa esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca, allungamenti ed equilibrio cambiava la forma dell’arco più di un gruppo di controllo. L’equilibrio non era isolato in quello studio, ma faceva parte del programma che ha funzionato.',
         'Per le distorsioni alla caviglia in particolare, una meta-analisi del 2018 su 8\u00A0studi e 3.577\u00A0atleti ha trovato che l’allenamento dell’equilibrio riduceva del 46% il rischio di distorsione alla caviglia rispetto a nessun intervento. È il risultato singolo più forte a favore dell’equilibrio in un programma per il piede.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],
@@ -161,7 +161,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito include l’equilibrio su una gamba e l’equilibrio a occhi chiusi in un piano insieme a sollevamenti sulle punte, allungamenti ed esercizi per il piede. L’obiettivo di equilibrio è di 30\u00A0secondi su ogni gamba. Ogni 14\u00A0giorni, un breve test controlla quanto riesci a tenere, e viene seguita anche la differenza tra i due lati.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Quando raggiungi l’obiettivo di equilibrio, il test passa a ogni 28\u00A0giorni e al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',

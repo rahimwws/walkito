@@ -55,7 +55,7 @@ export const TIGHT_CALVES_IT: Guide = {
       h2: 'I polpacci rigidi causano dolore al piede e al tallone?',
       keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100 senza, una caviglia che non si piegava oltre 0\u00A0gradi si associava a odds di fascite plantare 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
       paragraphs: [
-        'I polpacci rigidi sono legati alla fascite plantare, la causa più comune di dolore sotto il tallone. Quando la caviglia non si piega abbastanza, il piede deve compensare a ogni passo, e la trazione aumenta su tendine d’Achille, tallone e fascia plantare (la banda spessa sotto l’arco).',
+        'I polpacci rigidi sono legati alla [fascite plantare](/it/fascite-plantare/), la causa più comune di dolore sotto il tallone. Quando la caviglia non si piega abbastanza, il piede deve compensare a ogni passo, e la trazione aumenta su tendine d’Achille, tallone e fascia plantare (la banda spessa sotto l’arco).',
         'In uno studio caso-controllo del 2003, Riddle e colleghi hanno confrontato 50\u00A0persone con fascite plantare e 100\u00A0persone simili senza. Chi aveva una caviglia che non si piegava oltre 0\u00A0gradi aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi si piegava oltre 10\u00A0gradi. La flessione ridotta della caviglia era il fattore di rischio più forte tra quelli misurati, davanti al peso corporeo e allo stare in piedi al lavoro.',
         'In uno studio successivo su 254\u00A0persone con fascite plantare, l’83% aveva una flessione della caviglia limitata, e il 57% di tutti i pazienti aveva solo il gastrocnemio rigido (Patel e DiGiovanni, 2011).',
         '**Entrambi gli studi mostrano un legame, non che i polpacci rigidi causino la fascite plantare.** L’ampio intervallo intorno al valore di 23,3 vuol dire anche che il numero reale potrebbe essere molto più piccolo. Resta comunque uno dei motivi per cui la linea guida del 2023 sul dolore al tallone dà allo stretching del polpaccio una A, il suo grado più alto, per il dolore sotto il tallone.',
@@ -194,7 +194,6 @@ export const TIGHT_CALVES_IT: Guide = {
             'Dai a un nuovo paio di scarpe con un drop più basso un po’ di tempo prima delle corse lunghe.',
           ],
         },
-        'La pagina sul [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio come gestire il carico.',
         'Se stai in piedi tutto il giorno:',
         {
           list: [
@@ -257,7 +256,7 @@ export const TIGHT_CALVES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è un’app per iPhone e Android con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. Ogni due settimane un breve test controlla la resistenza del polpaccio, così vedi se i polpacci si stanno rinforzando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario se vale uno dei segnali d’allarme qui sopra.',

@@ -273,7 +273,7 @@ export const CALF_RAISES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que calcular las series, el peso ni cuándo pasar al siguiente paso. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mañana mejor: dolor de 1/10 o menos durante 14\u00A0días seguidos. La escalera de elevaciones de talón (sentado, con dos pies, sostenida, con toalla, descensos de talón) avanza a tu ritmo, no con un calendario fijo.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas esa meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver qué está cambiando. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

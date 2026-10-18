@@ -80,7 +80,7 @@ export const PF_DURATION_EN: Guide = {
             '**Bilateral heel pain.** People who had pain in both heels at baseline had about a third the rate of becoming symptom-free per year compared to those with one-sided pain (hazard rate ratio 0.33, P less than 0.01). The authors noted that bilateral pain could reflect an unrecognized inflammatory condition, since pain at tendon-bone attachments on both sides is a feature of some forms of arthritis. Nobody in their cohort had a known inflammatory diagnosis, but no serological screening was done (Hansen and colleagues, 2018).',
           ],
         },
-        'BMI, age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.',
+        '[BMI](/weight-and-plantar-fasciitis/), age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.',
         'If both heels hurt and morning stiffness lasts a long time or other joints are involved, that is worth mentioning to a clinician even if the exercises are helping. See [heel pain in the morning](/heel-pain-in-the-morning/) for more on when bilateral pain is a red flag.',
       ],
       sourceNote:
@@ -181,7 +181,7 @@ export const PF_DURATION_EN: Guide = {
     {
       q: 'Is walking good for plantar fasciitis?',
       cites: [CITE.guideline],
-      a: 'Moderate walking in supportive shoes is generally fine and the guideline does not say to stop moving. What matters is whether the next morning is worse. If first-step pain the morning after a walk is clearly higher than usual, that walk was more than the foot could handle. Cut the distance or the time instead of stopping altogether.',
+      a: 'Moderate walking in supportive shoes is generally fine and the guideline does not say to stop moving. What matters is whether the next morning is worse. If first-step pain the morning after a walk is clearly higher than usual, that walk was more than the foot could handle. Cut the distance or the time instead of stopping altogether. See [how much walking is OK](/walking-with-plantar-fasciitis/).',
     },
     {
       q: 'When should I see a doctor about plantar fasciitis that is not improving?',

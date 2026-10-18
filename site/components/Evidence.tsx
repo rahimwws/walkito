@@ -19,10 +19,10 @@ const LABEL: Record<Lang, Record<EvidenceLevel, string>> = {
   pt: { strong: 'Forte', moderate: 'Moderada', early: 'Inicial', unsupported: 'Sem respaldo' },
   // French: lower case after the colon, masculine to agree with « niveau ».
   fr: { strong: 'solide', moderate: 'modéré', early: 'préliminaire', unsupported: 'non étayé' },
-  it: { strong: 'Solida', moderate: 'Moderata', early: 'Preliminare', unsupported: 'Non supportato' },
+  it: { strong: 'alto', moderate: 'moderato', early: 'preliminare', unsupported: 'non confermato' },
   de: { strong: 'Stark', moderate: 'Mittel', early: 'Vorläufig', unsupported: 'Nicht belegt' },
 };
-const WORD: Record<Lang, string> = { en: 'Evidence', ru: 'Доказательства', es: 'Evidencia', pt: 'Evidência', fr: 'Niveau de preuve', it: 'Evidenza', de: 'Evidenz' };
+const WORD: Record<Lang, string> = { en: 'Evidence', ru: 'Доказательства', es: 'Evidencia', pt: 'Evidência', fr: 'Niveau de preuve', it: 'Livello di evidenza', de: 'Evidenz' };
 
 /** How many of the three ticks are inked. */
 const TICKS: Record<EvidenceLevel, number> = { strong: 3, moderate: 2, early: 1, unsupported: 0 };

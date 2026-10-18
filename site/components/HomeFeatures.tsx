@@ -235,7 +235,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       {
         tag: 'Sessão guiada',
         title: 'Aperte o play e acompanhe.',
-        text: 'Cada exercício tem um vídeo, um timer e uma orientação. Bloqueie o celular; o timer continua.',
+        text: 'Cada exercício tem um vídeo, um cronômetro e uma orientação. Bloqueie o celular; o cronômetro continua.',
       },
       {
         tag: 'Sua semana',
@@ -250,7 +250,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
     ],
     visualAlt: [
       'O check-in da manhã no Walkito: a dor de 0 a 10 e o mapa da perna',
-      'Uma sessão do Walkito: o vídeo do exercício, um timer e o nome do exercício',
+      'Uma sessão do Walkito: o vídeo do exercício, um cronômetro e o nome do exercício',
       'A semana no Walkito: dias de mobilidade, força e equilíbrio em ordem',
       'O progresso no Walkito: a dor de manhã como uma linha, cada objetivo com sua barra, o primeiro teste comparado com o mais recente e a janela da sequência com os dias desta semana',
     ],
@@ -280,7 +280,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       {
         tag: 'Bilan du matin',
         title: 'Dites-lui comment vont vos pieds.',
-        text: 'Un chiffre et un geste sur la carte de la jambe. Après un mauvais matin, la séance du jour devient plus légère.',
+        text: 'Une note et une touche sur le schéma de la jambe. Après un mauvais matin, la séance du jour devient plus légère.',
       },
       {
         tag: 'Séance guidée',
@@ -345,14 +345,14 @@ const COPY: Record<Lang, FeaturesCopy> = {
       {
         tag: 'Progressi',
         title: 'Guarda cosa sta cambiando.',
-        text: `Un breve test ogni ${testEveryDays} giorni mostra cosa sta cambiando. Check-in, sessioni, routine della libreria e giorni di riposo previsti contano tutti per la tua serie.`,
+        text: `Un breve test ogni ${testEveryDays} giorni mostra cosa sta cambiando. Check-in, sessioni, routine della libreria e giorni di riposo previsti contano tutti per i tuoi giorni di fila.`,
       },
     ],
     visualAlt: [
       'Il check-in del mattino in Walkito: il dolore da 0 a 10 e la mappa della gamba',
       'Una sessione di Walkito: il video dell’esercizio, un timer e il suo nome',
       'La settimana in Walkito: giorni di mobilità, forza ed equilibrio in ordine',
-      'I progressi in Walkito: il dolore al mattino come una linea, ogni obiettivo con la sua barra, il primo test confrontato con l’ultimo e la finestra della serie con i giorni di questa settimana',
+      'I progressi in Walkito: il dolore al mattino come una linea, ogni obiettivo con la sua barra, il primo test confrontato con l’ultimo e la finestra dei giorni di fila con i giorni di questa settimana',
     ],
     extras: {
       itHurts: 'Oggi fa male',
@@ -375,7 +375,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
   de: {
     kicker: 'So funktioniert’s',
     h2: 'Ein Plan. Jeden Morgen.',
-    lead: 'Ein kurzer Check-in, eine Einheit, die zum Tag passt, eine Woche, die auf ein Ziel hinarbeitet, und ein Test, der zeigt, was sich bewegt.',
+    lead: 'Ein kurzer Check-in, eine Einheit, die zum Tag passt, eine Woche, die auf ein Ziel hinarbeitet, und ein Test, der zeigt, was sich verändert.',
     features: [
       {
         tag: 'Check-in am Morgen',
@@ -395,7 +395,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       {
         tag: 'Fortschritt',
         title: 'Sieh, was sich verändert.',
-        text: `Ein kurzer Test alle ${testEveryDays} Tage zeigt, was sich bewegt. Check-ins, Einheiten, Routinen aus der Bibliothek und geplante Ruhetage zählen alle für deine Serie.`,
+        text: `Ein kurzer Test alle ${testEveryDays} Tage zeigt, was sich verändert. Check-ins, Einheiten, Routinen aus der Bibliothek und geplante Ruhetage zählen alle für deine Serie.`,
       },
     ],
     visualAlt: [

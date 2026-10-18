@@ -12,7 +12,7 @@ export const MASSAGE_BALL_IT: Guide = {
     'La pallina per fascite plantare aiuta? Cosa dicono gli studi su palline, rulli e bottiglia congelata, quanto premere, quanto a lungo e quando evitarla.',
   h1: 'Pallina da massaggio, rullo o bottiglia congelata per la fascite plantare: cosa dice la ricerca',
   lede:
-    'Una pallina da massaggio può alleviare per un po’ il dolore da fascite plantare, ma è un passo di sollievo, non lo strumento principale. Il lavoro manuale sui tessuti molli fatto da un professionista ha il grado più alto della linea guida. Far rotolare da soli una pallina o una bottiglia congelata è stato testato pochissimo. Fallo con delicatezza e per poco tempo, e tieni stretching e rinforzo come base.',
+    'Una pallina da massaggio può alleviare per un po’ il dolore da [fascite plantare](/it/fascite-plantare/), ma è un passo di sollievo, non lo strumento principale. Il lavoro manuale sui tessuti molli fatto da un professionista ha il grado più alto della linea guida. Far rotolare da soli una pallina o una bottiglia congelata è stato testato pochissimo. Fallo con delicatezza e per poco tempo, e tieni stretching e rinforzo come base.',
   intro: [
     'Questa pagina confronta gli strumenti e le prove. Per il singolo esercizio, passo per passo, vedi il [massaggio con la pallina](/it/esercizi/massaggio-pallina-piede/). Per la routine completa con le dosi, vedi gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
   ],
@@ -191,7 +191,7 @@ export const MASSAGE_BALL_IT: Guide = {
             'Stai lontano dal tallone.',
           ],
         },
-        'Se vanno ancora peggio, smetti per un po’: gli allungamenti e il rinforzo contano di più. Di più su questo schema in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
+        'Se vanno ancora peggio, smetti per un po’: gli allungamenti e il rinforzo contano di più. Di più su questo andamento in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
         'Gli strumenti duri sono i più rischiosi. Le palline da golf e i rulli con rilievi concentrano la forza su una zona piccola, e stare in piedi su una pallina ci mette sopra tutto il peso del corpo. Meglio stare seduti. Se il dolore è al centro del cuscinetto del tallone e sembra un livido, potrebbe essere la [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/), e premerci sopra di solito non aiuta.',
       ],
       cites: [],
@@ -272,7 +272,7 @@ export const MASSAGE_BALL_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi decidere tu quando usare la pallina e quando fare stretching. Walkito costruisce un piano una settimana alla volta, con il massaggio con la pallina come breve passo di recupero e allungamenti e lavoro sul polpaccio come base. Per il dolore al tallone, il primo obiettivo è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

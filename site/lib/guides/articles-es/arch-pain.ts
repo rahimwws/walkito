@@ -246,7 +246,7 @@ export const ARCH_PAIN_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Si tu dolor de arco sigue el patrón de la fascitis plantar, Walkito arma un plan en torno a una meta a la vez. La primera meta es una mejor mañana: dolor de 1/10 o menos durante 14\u00A0días seguidos. El arco tiene su propia meta y sus ejercicios. Si tu dolor de arco viene del pie plano, la app puede trabajar el dolor y el arco como metas separadas.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si no estás seguro de qué causa tu dolor de arco, consulta a un profesional de la salud antes de cargarlo con ejercicio.',

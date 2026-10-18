@@ -75,7 +75,7 @@ export const ARCH_PAIN_PT: Guide = {
       keyFact: 'Na diretriz de 2023 para dor no calcanhar, o alongamento da fáscia plantar e da panturrilha recebe o grau de evidência mais alto, A, enquanto o treino de força fica um nível abaixo, com B (Koc e colegas, 2023).',
       paragraphs: [
         'Os exercícios abaixo trabalham o próprio arco e os músculos da panturrilha que o puxam. Eles servem melhor quando a dor no arco está ligada a fascite plantar, pé chato ou sobrecarga geral. Na disfunção do tendão tibial posterior ou na dor no arco ligada a nervo, quem deve orientar o plano de exercícios é um profissional de saúde. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje.',
-        'Estas são as doses iniciais do Walkito, não as doses dos protocolos de pesquisa. A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau A, e ao treino de força o grau B. O pé curto e o rolar o pé na bolinha têm evidência mais fraca por conta própria. [Como estes guias são escritos](/pt/sobre-walkito/).',
+        'Estas são as doses iniciais do Walkito, não as doses dos protocolos de pesquisa. A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau A, e ao treino de força o grau B. O [pé curto](/pt/exercicios/pe-curto/) e o rolar o pé na bolinha têm evidência mais fraca por conta própria. [Como estes guias são escritos](/pt/sobre-walkito/).',
       ],
       exercises: [
         {
@@ -181,7 +181,7 @@ export const ARCH_PAIN_PT: Guide = {
     {
       h2: 'E as palmilhas e os calçados para dor no arco?',
       paragraphs: [
-        'A diretriz de 2023 para dor no calcanhar dá grau B contra usar palmilhas sozinhas para a dor da fascite plantar no curto prazo. Palmilhas combinadas com outros cuidados, como alongamento, recebem um C a favor. Calçados com bom suporte são muito recomendados e podem reduzir o desconforto, mas nenhum ensaio grande mostrou que eles sejam melhores que alongamento e trabalho de força.',
+        'A diretriz de 2023 para dor no calcanhar dá grau B contra usar [palmilhas](/pt/palmilhas-ou-exercicios/) sozinhas para a dor da fascite plantar no curto prazo. Palmilhas combinadas com outros cuidados, como alongamento, recebem um C a favor. Calçados com bom suporte são muito recomendados e podem reduzir o desconforto, mas nenhum ensaio grande mostrou que eles sejam melhores que alongamento e trabalho de força.',
         'No pé chato, um suporte para o arco medial pode reduzir o desabamento do arco ao ficar em pé e ao andar, dando menos trabalho ao tendão tibial posterior e à fáscia plantar. No pé cavo, uma palmilha amortecida absorve o impacto que o arco rígido não absorve. Em um ensaio de 2006 com 154\u00A0pessoas com dor de pé cavo, palmilhas sob medida melhoraram a dor e a função mais que uma palmilha placebo aos três meses (Burns e colegas, 2006).',
         '**Calçados e palmilhas ajudam a controlar os sintomas enquanto o exercício constrói a capacidade de que o pé precisa.** Um não substitui o outro.',
       ],
@@ -196,7 +196,7 @@ export const ARCH_PAIN_PT: Guide = {
     },
     {
       q: 'Por que o arco do meu pé dói quando eu ando?',
-      a: 'A dor no arco ao andar normalmente vem de uma entre poucas fontes: fascite plantar, pé chato que deixa o arco desabar sob carga, disfunção do tendão tibial posterior, uma panturrilha tensa que transfere estresse para o arco, ou simplesmente andar mais do que o seu pé está preparado para aguentar. O padrão da dor, principalmente se é pior de manhã ou depois da atividade, ajuda a afunilar qual delas é.',
+      a: 'A dor no arco ao andar normalmente vem de uma entre poucas fontes: fascite plantar, pé chato que deixa o arco desabar sob carga, disfunção do tendão tibial posterior, uma [panturrilha tensa](/pt/panturrilha-tensa/) que transfere estresse para o arco, ou simplesmente andar mais do que o seu pé está preparado para aguentar. O padrão da dor, principalmente se é pior de manhã ou depois da atividade, ajuda a afunilar qual delas é.',
     },
     {
       q: 'Pé chato causa dor no arco?',
@@ -248,7 +248,7 @@ export const ARCH_PAIN_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Se a sua dor no arco segue o padrão da fascite plantar, o Walkito monta um plano em torno de uma meta de cada vez. A primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14\u00A0dias seguidos. O arco ganha a sua própria meta e os seus próprios exercícios. Se a sua dor no arco vem do pé chato, o app pode trabalhar a dor e o arco como metas separadas.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se você não tem certeza do que está causando a sua dor no arco, procure um profissional de saúde antes de pôr carga nele com exercícios.',

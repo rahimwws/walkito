@@ -84,13 +84,13 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         'Die klinische Leitlinie von 2023 zu Fersenschmerzen, veröffentlicht im Journal of Orthopaedic and Sports Physical Therapy, stellt die Plantarfasziitis als häufigste Ursache für Fersenschmerzen unter dem Fuß in den Mittelpunkt. Das „Fersenspornsyndrom“ nennt sie als eine von mehreren Differenzialdiagnosen, neben:',
         {
           list: [
-            'Dem Fersenpolster-Syndrom.',
+            'Dem [Fersenpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
             'Nervenreizungen.',
             'Dem Ermüdungsbruch des Fersenbeins.',
           ],
         },
         'Die Leitlinie empfiehlt Bildgebung nicht als ersten Schritt, wenn die klinische Untersuchung schon auf eine Plantarfasziitis hindeutet. Sie hält fest, dass Bildgebung „bei Patienten, die die klinischen Untersuchungskriterien für eine Plantarfasziitis erfüllen, meist nicht angezeigt ist, solange konservative Maßnahmen nicht gescheitert sind“. Wenn Bildgebung in Frage kommt, ist ein Röntgenbild im Stehen die erste Wahl, danach bei Bedarf Ultraschall oder MRT.',
-        'In der Praxis heißt das: Eine medizinische Fachperson, die das typische Muster sieht, Schmerz bei den ersten Schritten am Morgen, Druckschmerz an der Innenseite der Ferse und eingeschränkte Beweglichkeit im Sprunggelenk, kann mit Dehnen und Krafttraining anfangen, ohne auf ein Röntgenbild zu warten. **Ob ein späteres Röntgenbild einen Sporn zeigt oder nicht, ändert den Übungsplan nicht.**',
+        'In der Praxis heißt das: Wer als Ärztin, Arzt oder in der Physiotherapie das typische Muster sieht, Schmerz bei den ersten Schritten am Morgen, Druckschmerz an der Innenseite der Ferse und eingeschränkte Beweglichkeit im Sprunggelenk, kann mit Dehnen und Krafttraining anfangen, ohne auf ein Röntgenbild zu warten. **Ob ein späteres Röntgenbild einen Sporn zeigt oder nicht, ändert den Übungsplan nicht.**',
       ],
       cites: [CITE.guideline],
     },
@@ -103,7 +103,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
           list: [
             'Wenn der Schmerz nicht dem typischen Muster der Plantarfasziitis folgt.',
             'Wenn er nach mehreren Wochen konservativer Behandlung nicht besser geworden ist.',
-            'Wenn eine medizinische Fachperson etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie.',
+            'Wenn eine Ärztin oder ein Arzt etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie.',
           ],
         },
         'Ultraschall kann die Dicke der Plantarfaszie messen (über 4\u00A0mm gilt allgemein als verdickt), und ein MRT zeigt Details im Weichgewebe, die ein Röntgenbild nicht zeigt.',
@@ -114,7 +114,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       h2: 'Wenn der Sporn nicht das Problem ist, was dann?',
       paragraphs: [
-        'Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vom Knochen. Die Plantarfaszie setzt unten am Fersenbein an. Wenn sie überlastet wird, vor allem bei einer verkürzten Wade, einem hohen BMI oder vielen Stunden auf den Beinen, wird dieser Ansatzpunkt gereizt. Diese Reizung ist die Plantarfasziitis.',
+        'Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vom Knochen. Die Plantarfaszie setzt unten am Fersenbein an. Wenn sie überlastet wird, vor allem bei einer [verkürzten Wade](/de/verspannte-waden/), einem hohen BMI oder vielen Stunden auf den Beinen, wird dieser Ansatzpunkt gereizt. Diese Reizung ist die Plantarfasziitis.',
         'Eine verkürzte Wade gehört zu den stärksten Risikofaktoren. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen:',
         {
           list: [
@@ -140,12 +140,12 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       h2: 'Welche Übungen helfen, wenn du einen Fersensporn hast?',
       paragraphs: [
         'Die Übungen bei Fersensporn-Schmerzen sind dieselben, die die Leitlinie bei Plantarfasziitis empfiehlt: Plantarfaszien-Dehnung, Wadendehnung und schrittweises Wadenkrafttraining. Übungen lösen keinen Sporn auf. Sie setzen am Weichgewebe an, das den Schmerz tatsächlich verursacht.',
-        'Die Leitlinie gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining ein **B**. Diese Bewertungen gelten unabhängig davon, ob ein Sporn da ist. [Übungen bei Fersensporn](/de/fersensporn-uebungen/) zeigt die ganze Routine mit Sätzen, Haltezeiten und Steigerung. Unten stehen drei Übungen für den Anfang.',
+        'Die Leitlinie gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** und Krafttraining Grad **B**. Diese Empfehlungsgrade gelten unabhängig davon, ob ein Sporn da ist. [Übungen bei Fersensporn](/de/fersensporn-uebungen/) zeigt die ganze Routine mit Sätzen, Haltezeiten und Steigerung. Unten stehen drei Übungen für den Anfang.',
       ],
       exercises: [
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'strong', why: 'Die Leitlinie von 2023 bewertet die Plantarfaszien-Dehnung mit A, ihrer besten Bewertung.' },
+          evidence: { level: 'strong', why: 'Die Leitlinie von 2023 bewertet die Plantarfaszien-Dehnung mit A, dem höchsten Empfehlungsgrad.' },
           dose: '10-mal 10\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg einen Knöchel über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Mach das morgens vor dem Aufstehen und nach langem Sitzen.',
           often: 'Jeden Morgen und nach dem Sitzen',
@@ -157,7 +157,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.' },
+          evidence: { level: 'strong', why: 'Derselbe Empfehlungsgrad A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse unten, die Hüfte nach vorn. Eine verkürzte Wade zieht über die Achillessehne an der Ferse und belastet so zusätzlich die Faszie.',
           often: 'Die meisten Einheiten',
@@ -206,7 +206,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       q: 'Sollte ich ein Röntgenbild machen lassen, wenn ich einen Fersensporn vermute?',
       cites: [CITE.guideline],
-      a: 'Laut der Leitlinie von 2023 ist Bildgebung meist nicht nötig, wenn die klinische Untersuchung auf eine Plantarfasziitis hindeutet. Ein Röntgenbild kann einen Sporn zeigen, aber einen zu finden ändert den Übungsplan nicht, und keinen zu finden schließt eine Plantarfasziitis nicht aus. Bildgebung wird sinnvoll, wenn der Schmerz nach mehreren Wochen nicht besser wird oder eine medizinische Fachperson einen Ermüdungsbruch oder ein Nervenproblem vermutet.',
+      a: 'Laut der Leitlinie von 2023 ist Bildgebung meist nicht nötig, wenn die klinische Untersuchung auf eine Plantarfasziitis hindeutet. Ein Röntgenbild kann einen Sporn zeigen, aber einen zu finden ändert den Übungsplan nicht, und keinen zu finden schließt eine Plantarfasziitis nicht aus. Bildgebung wird sinnvoll, wenn der Schmerz nach mehreren Wochen nicht besser wird oder eine Ärztin oder ein Arzt einen Ermüdungsbruch oder ein Nervenproblem vermutet.',
     },
     {
       q: 'Wie häufig ist ein Fersensporn?',
@@ -216,7 +216,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       q: 'Wann muss ein Fersensporn operiert werden?',
       cites: [CITE.latt],
-      a: 'Fast nie. Die Leitlinie empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen. Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit nicht-operativer Behandlung wie Dehnen, Wadenkrafttraining und Belastungssteuerung besser (Latt und Kollegen, 2020). Wenn nach Monaten erfolgloser konservativer Behandlung eine Operation erwogen wird, wird meist die Plantarfaszie teilweise durchtrennt, nicht der Sporn entfernt.',
+      a: 'Fast nie. Die Leitlinie empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen. Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit konservativer Behandlung wie Dehnen, Wadenkrafttraining und Belastungssteuerung besser (Latt und Kollegen, 2020). Wenn nach Monaten erfolgloser konservativer Behandlung eine Operation erwogen wird, wird meist die Plantarfaszie teilweise durchtrennt, nicht der Sporn entfernt.',
     },
     {
       q: 'Was passiert, wenn man mit Fersensporn weiterläuft?',
@@ -226,11 +226,11 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       q: 'Ist Massage bei Fersensporn gut?',
       cites: [CITE.guideline],
-      a: 'Sanfte Massage rund um einen Fersensporn kann Verspannungen im Weichgewebe lösen, verändert aber nicht den Knochen selbst. Die Fußsohle mit festem, nicht stechendem Druck zu rollen kann Faszie und Wade lockern, also das Gewebe, das meist den Schmerz verursacht. Die Leitlinie bewertet manuelle Therapie durch eine Fachperson mit A; Selbstmassage dient dem Wohlgefühl und ersetzt das Dehnen nicht.',
+      a: 'Sanfte Massage rund um einen Fersensporn kann Verspannungen im Weichgewebe lösen, verändert aber nicht den Knochen selbst. Die Fußsohle mit festem, nicht stechendem Druck zu rollen kann Faszie und Wade lockern, also das Gewebe, das meist den Schmerz verursacht. Die Leitlinie bewertet manuelle Therapie in der Physiotherapie mit A; Selbstmassage dient dem Wohlgefühl und ersetzt das Dehnen nicht.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat, was eher auf einen Riss der Plantarfaszie als auf eine Fasziitis hindeuten kann',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -248,7 +248,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     text: 'Ob dein Röntgenbild einen Sporn zeigt oder nicht, die Übungen sind dieselben. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Fersenschmerzen ist das erste Ziel ein Morgenschmerz bei oder unter 1/10 an 14\u00A0Tagen am Stück. Das Dehnen beginnt am ersten Tag. Wadenkrafttraining kommt dazu, sobald es beim ersten Ziel nicht mehr nur darum geht, den Schmerz zu beruhigen, sondern Belastbarkeit aufzubauen.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du deinen Fortschritt verfolgen kannst, statt zu raten.',
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis, einem Fersensporn oder etwas anderem kommen, geh zuerst zu einer medizinischen Fachperson.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis, einem Fersensporn oder etwas anderem kommen, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },
