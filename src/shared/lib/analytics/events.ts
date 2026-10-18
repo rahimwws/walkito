@@ -312,6 +312,10 @@ export type AnalyticsEvents = {
    * what it showed: it is steps, sleep and heart rate. */
   why_plan_opened: Record<string, never>;
 
+  /** App Tracking Transparency answered, once, in the onboarding. Only
+   * whether it was allowed. */
+  att_answered: { granted: boolean };
+
   // ── Instagram ────────────────────────────────────────────────────────────
   /** The "follow Walkito on Instagram" sheet came up: by itself on the third
    * day of use, or from its row in Profile. */

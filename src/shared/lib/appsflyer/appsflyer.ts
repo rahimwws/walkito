@@ -1,4 +1,5 @@
 import { APPSFLYER } from '@/shared/config';
+import { trackingGate } from '@/shared/lib/tracking';
 
 import { deepLinkFrom, type ConversionData, type IncomingDeepLink } from './payload';
 
@@ -18,9 +19,14 @@ import { deepLinkFrom, type ConversionData, type IncomingDeepLink } from './payl
  *   built before it was linked keeps running instead of throwing while the
  *   module graph evaluates. Every call is caught, and the one value other code
  *   waits for (the AppsFlyer id) gives up after a few seconds.
- * - **No ATT.** The app never asks to track, so the IDFA is all zeros and
- *   AppsFlyer attributes through Apple Ads (AdServices), SKAdNetwork and, on
- *   Android, the Play Install Referrer. Nothing here requests authorization.
+ * - **After the tracking answer.** iOS asks App Tracking Transparency once,
+ *   early in the first onboarding (`@/shared/lib/tracking`). On that launch
+ *   the SDK does not start until the answer (or a two-minute cap), so the
+ *   install goes with the IDFA when it was allowed: v7 has no wait-for-ATT
+ *   option, and the SDK's own docs say to ask before `init()`. Without
+ *   permission the IDFA is zeros and attribution runs, as before, through
+ *   Apple Ads (AdServices), SKAdNetwork and, on Android, the Play Install
+ *   Referrer.
  *
  * `react-native-appsflyer` 7 replaced 6.x's `initSdk(options)`: listeners are
  * registered around `init()`, and `start()` runs only once the native session
@@ -172,7 +178,15 @@ export function startAppsFlyer(): Promise<boolean> {
     ready = Promise.resolve(false);
     return ready;
   }
-  ready = new Promise<boolean>((resolve) => {
+  // The tracking answer first, when this launch is waiting for one; the
+  // start's own time limit runs from after it.
+  ready = trackingGate().then(() => within(session(af), false, WAIT_MS * 2));
+  return ready;
+}
+
+/** Listeners, `init()` and `start()`, in the order 7.x asks for. */
+function session(af: Sdk): Promise<boolean> {
+  return new Promise<boolean>((resolve) => {
     try {
       const { Platform } = require('react-native') as typeof import('react-native');
       void af
@@ -206,8 +220,6 @@ export function startAppsFlyer(): Promise<boolean> {
       resolve(false);
     }
   });
-  ready = within(ready, false, WAIT_MS * 2);
-  return ready;
 }
 
 /**

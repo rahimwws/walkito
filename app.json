@@ -118,6 +118,12 @@
       ],
       "expo-background-task",
       [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "walkito uses this to learn which ads bring people to the app. Your health data is never shared."
+        }
+      ],
+      [
         "expo-quick-actions",
         {
           "iosIcons": {

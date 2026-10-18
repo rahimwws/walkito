@@ -3,7 +3,9 @@ import { AppState } from 'react-native';
 
 import { syncExpiryNotice } from '@/entities/notifications';
 import { purchases, startCompAccess, startPass, startPurchases } from '@/entities/purchase';
+import { onboardingDone } from '@/entities/session';
 import { startAppsFlyer } from '@/shared/lib/appsflyer';
+import { holdForTracking } from '@/shared/lib/tracking';
 
 /**
  * Starts the store once, and re-checks the subscription on the way back in.
@@ -23,6 +25,12 @@ export function usePurchases(): void {
     // AppsFlyer first, alongside rather than before: RevenueCat's start asks
     // it for the install's AppsFlyer id (`linkAppsFlyer`) and waits a few
     // seconds at most. Production builds only; a no-op everywhere else.
+    //
+    // On a first launch that will ask App Tracking Transparency (iOS, the
+    // onboarding still ahead), AppsFlyer waits for the answer before it
+    // starts, so the install carries the IDFA when it was allowed. The
+    // question itself is asked by the onboarding, a couple of screens in.
+    holdForTracking(!onboardingDone());
     void startAppsFlyer();
     void startPurchases();
     // Access granted by account, read now and after every sign-in.

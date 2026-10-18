@@ -65,6 +65,7 @@ export { fetchShelf, planOn, type Shelf } from './model/shelf';
 export {
   onSimulator,
   purchases,
+  collectAdIdentifiers,
   recordAcquisitionSource,
   startPurchases,
   storeDiagnosis,

@@ -900,6 +900,17 @@ async function collectAdAttribution(): Promise<void> {
 /** The RevenueCat id last handed to AppsFlyer, so a relink only runs when it changed. */
 let linkedId: string | null = null;
 
+/** `collectAdIdentifiers`: the identifiers again, IDFA included, then the
+ * AppsFlyer link (which collects them too, on its way). */
+export async function collectAdIdentifiersNow(): Promise<void> {
+  try {
+    await Purchases.collectDeviceIdentifiers();
+  } catch {
+    // The next launch collects them again.
+  }
+  await linkAppsFlyer();
+}
+
 /**
  * RevenueCat and AppsFlyer, told about each other.
  *

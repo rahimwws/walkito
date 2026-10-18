@@ -36,13 +36,14 @@ import {
   track,
   type AcquisitionSource,
 } from "@/shared/lib/analytics";
+import { requestTracking } from "@/shared/lib/tracking";
 import { useT, type Key, type Translate } from "@/shared/lib/i18n";
 import { useColorScheme } from "@/shared/lib/theme";
 import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
 import { setBilateral } from "@/entities/health";
 import { whereKey } from "@/entities/leg-zone";
 import { armOffer } from "@/entities/offer";
-import { recordAcquisitionSource } from "@/entities/purchase";
+import { collectAdIdentifiers, recordAcquisitionSource } from "@/entities/purchase";
 import {
   saveIntake,
   setProfileEmail,
@@ -367,6 +368,25 @@ export function OnboardingPage() {
   const stamp = useSharedValue(0);
 
   const step = STEPS[index];
+
+  /**
+   * App Tracking Transparency, asked once: a couple of screens in (the name
+   * and the role answered), as the next screen arrives, never on the first.
+   * The system sheet alone, with nothing of ours in front of it and nothing
+   * offered for the answer; AppsFlyer's start waits for it
+   * (`@/shared/lib/tracking`). Allowed, RevenueCat gets the IDFA too.
+   */
+  const lastKey = useRef(step.key);
+  useEffect(() => {
+    const was = lastKey.current;
+    lastKey.current = step.key;
+    if (was !== "role" || step.key === "role") return;
+    void requestTracking().then((status) => {
+      if (status === "unavailable") return;
+      track("att_answered", { granted: status === "granted" });
+      if (status === "granted") collectAdIdentifiers();
+    });
+  }, [step.key]);
   const answer = answers[step.key];
 
   const name = typeof answers.name === "string" ? answers.name : "";

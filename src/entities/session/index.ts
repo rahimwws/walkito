@@ -1,5 +1,6 @@
 export {
   completeOnboarding,
+  onboardingDone,
   resetOnboarding,
   useOnboarded,
 } from './model/onboarding';

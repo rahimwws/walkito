@@ -46,6 +46,7 @@
         "expo-superwall": "^1.5.0",
         "expo-system-ui": "~57.0.4",
         "expo-task-manager": "~57.0.21",
+        "expo-tracking-transparency": "~57.0.2",
         "expo-updates": "~57.0.23",
         "expo-video": "~57.0.4",
         "expo-widgets": "~57.0.20",
@@ -782,6 +783,8 @@
     "expo-system-ui": ["expo-system-ui@57.0.4", "", { "dependencies": { "@react-native/normalize-colors": "0.86.3", "debug": "^4.3.2" }, "peerDependencies": { "expo": "*", "react-native": "*", "react-native-web": "*" }, "optionalPeers": ["react-native-web"] }, "sha512-z//rxQJzhTNA1PcKrUtWmrd21jAS3nEDu1b0n8B/7LTTR933OcsZYP1HnbaZifuo2ZH/h7nce2Ow61WZ1Ig2bg=="],
 
     "expo-task-manager": ["expo-task-manager@57.0.21", "", { "dependencies": { "unimodules-app-loader": "~57.0.2" }, "peerDependencies": { "expo": "*", "react-native": "*" } }, "sha512-uZ6pHgwCOTZCUlcfIoRGa/SdQJDNm5Hwly7NFuWNscZT8/NgF1geJfXOyuC7V8j9T/mlzfB5h5ZpRP/Hl6X14g=="],
+
+    "expo-tracking-transparency": ["expo-tracking-transparency@57.0.2", "", { "peerDependencies": { "expo": "*", "react-native": "*" } }, "sha512-y/36riXMU3ZmhftPUooPGInUldH6gSmsCFQQ8e39T9+g4PsICSI3pd7Pn4mLRFkhHF11bcTqXVa2o/kH5/CTVw=="],
 
     "expo-updates": ["expo-updates@57.0.23", "", { "dependencies": { "@expo/code-signing-certificates": "^0.0.6", "@expo/plist": "^0.8.1", "@expo/spawn-async": "^1.8.0", "arg": "^4.1.0", "chalk": "^4.1.2", "debug": "^4.3.4", "expo-eas-client": "~57.0.4", "expo-manifests": "~57.0.2", "expo-structured-headers": "~57.0.1", "expo-updates-interface": "~57.0.2", "getenv": "^2.0.0", "glob": "^13.0.0", "ignore": "^5.3.1", "nullthrows": "^1.1.1", "resolve-from": "^5.0.0" }, "peerDependencies": { "expo": "*", "expo-dev-client": "*", "react": "*", "react-native": "*" }, "optionalPeers": ["expo-dev-client"], "bin": { "expo-updates": "bin/cli.js" } }, "sha512-try1ndXkEH1qpMqs2Nf1fXxN/0GShZad9dWp8pbQpXAngyRk8k/MxJ5gJuVabkPJ2vEW3IgNvTkq54aOELkpZA=="],
 

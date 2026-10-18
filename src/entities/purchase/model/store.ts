@@ -342,6 +342,17 @@ export function recordAcquisitionSource(source: string): void {
 }
 
 /**
+ * After "Allow" on App Tracking Transparency: hands RevenueCat the device's
+ * identifiers again, the IDFA now among them, and links AppsFlyer, so the
+ * install and every later purchase carry the advertising id.
+ */
+export function collectAdIdentifiers(): void {
+  if (!purchases.configured || !keyIsUsable) return;
+  const { collectAdIdentifiersNow } = require('./revenuecat') as typeof import('./revenuecat');
+  void collectAdIdentifiersNow();
+}
+
+/**
  * Why the store is not selling, in one line, or null when it is.
  *
  * For the developer, not the user — a paywall that silently cannot charge is
