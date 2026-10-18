@@ -18,7 +18,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
   updated: '2026-10-18',
   title: 'Ejercicios de pies para corredores: rutina, dosis y datos',
   description:
-    'Ejercicios de pies para corredores: una rutina corta para el core del pie, pantorrillas, dedos y equilibrio, con dosis, normas y datos de los ensayos.',
+    'Ejercicios de pies para corredores: rutina corta para el core del pie, pantorrillas, dedos y equilibrio, con dosis, valores normales y datos de ensayos.',
   h1: 'Ejercicios de pies para corredores: una rutina corta y lo que muestra la investigación',
   lede:
     'Una buena rutina de pies para corredores entrena cuatro cosas: los músculos pequeños del arco (el ejercicio de pie corto), la resistencia de la pantorrilla y del sóleo (elevaciones de talón), la fuerza de los dedos y el equilibrio a una pierna. Toma unos 10\u00A0minutos, de dos a cinco veces por semana, después de una carrera suave o en un día de descanso. En un ensayo con 118\u00A0corredores recreativos, quienes no hicieron un programa de core del pie tuvieron 2,42\u00A0veces más probabilidades de sufrir una lesión por correr en 12\u00A0meses (Taddei y colegas, 2020). Es un solo ensayo, así que tómalo como algo prometedor, no como algo resuelto.',
@@ -38,7 +38,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
       h2: '¿Los ejercicios de pie ayudan a los corredores a evitar lesiones?',
       keyFact: 'En un ensayo de 2020 con 118\u00A0corredores recreativos, quienes no hicieron entrenamiento del core del pie tuvieron 2,42\u00A0veces más probabilidades de lesionarse en 12\u00A0meses (Taddei y colegas).',
       paragraphs: [
-        '**Un buen ensayo dice que sí, y sigue siendo un solo ensayo.** En 2020, Taddei y colegas, en Brasil, dividieron al azar a 118\u00A0corredores recreativos de larga distancia en un grupo de core del pie (57\u00A0corredores) y un grupo control (61\u00A0corredores). El grupo de core del pie hizo unos dos meses de entrenamiento supervisado de los músculos del pie y del tobillo, y después siguió con supervisión a distancia. Todos reportaron cada semana lo que corrían y cualquier lesión, durante un año.',
+        '**Un buen ensayo dice que sí, pero sigue siendo un solo ensayo.** En 2020, Taddei y colegas, en Brasil, dividieron al azar a 118\u00A0corredores recreativos de larga distancia en un grupo de core del pie (57\u00A0corredores) y un grupo control (61\u00A0corredores). El grupo de core del pie hizo unos dos meses de entrenamiento supervisado de los músculos del pie y del tobillo, y después siguió con supervisión a distancia. Todos reportaron cada semana lo que corrían y cualquier lesión, durante un año.',
         'En 12\u00A0meses, el grupo control tuvo 2,42\u00A0veces más probabilidades de sufrir una lesión por correr. La diferencia apareció después de cuatro a ocho meses de entrenamiento, no en las primeras semanas. Los corredores cuya fuerza del pie aumentó más tardaron más en lesionarse.',
         'Un ensayo anterior y más pequeño del mismo equipo, con 28\u00A0corredores, encontró que unos dos meses de entrenamiento del pie hicieron más grandes los músculos pequeños del pie y aumentaron la fuerza de impulso al correr (Taddei y colegas, 2020).',
         'Lo que esto no nos dice: los dos ensayos vienen de un mismo grupo de investigación, con corredores recreativos con experiencia que no estaban lesionados al empezar. No incluyeron a principiantes ni a corredores que ya tenían dolor, así que no sabemos si los resultados aplican a ellos.',
@@ -124,7 +124,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
         {
           name: 'Equilibrio a una pierna',
           evidence: { level: 'early', why: 'Parte de la mayoría de los programas para el pie. No se probó por sí solo como prevención de lesiones en corredores.' },
-          dose: '3\u00A0apoyos de 30\u00A0segundos, cada lado',
+          dose: '3\u00A0series de 30\u00A0segundos, cada lado',
           often: 'De 2 a 5\u00A0días a la semana',
           feel: 'Pequeñas correcciones en el pie y el tobillo',
           how: 'Párate en un pie, con la rodilla suelta, cerca de una pared. Cuando 30\u00A0segundos te resulten fáciles, cierra los ojos o párate sobre una almohada. Más en la página de [equilibrio a una pierna](/es/ejercicios/equilibrio-a-una-pierna/).',
@@ -150,7 +150,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
       h2: '¿Cuántas elevaciones de talón debería poder hacer un corredor?',
       keyFact: 'En 566\u00A0adultos de 20 a 81\u00A0años, la mediana fue de 24\u00A0elevaciones de talón a una pierna con la derecha y 23 con la izquierda (Hebert-Losier y colegas, 2017).',
       paragraphs: [
-        'No hay una norma específica para corredores, así que usa las cifras generales de adultos como mínimo. En un estudio con 566\u00A0adultos, la mediana fue de 24\u00A0elevaciones de talón a una pierna con la pierna derecha y 23 con la izquierda, a un ritmo de un tiempo arriba y un tiempo abajo a 60\u00A0pulsaciones por minuto. Las cifras bajan con la edad, y las personas más activas hicieron más (Hebert-Losier y colegas, 2017). Un estudio más antiguo propuso 25 como referencia de lo normal (Lunsford y Perry, 1995).',
+        'No hay una norma específica para corredores, así que usa las cifras generales de adultos como mínimo. En un estudio con 566\u00A0adultos, la mediana fue de 24\u00A0elevaciones de talón a una pierna con la pierna derecha y 23 con la izquierda, a un ritmo de un tiempo para subir y otro para bajar, con un metrónomo a 60\u00A0tiempos por minuto. Las cifras bajan con la edad, y las personas más activas hicieron más (Hebert-Losier y colegas, 2017). Un estudio más antiguo propuso 25 como referencia de lo normal (Lunsford y Perry, 1995).',
         'Compara también tus dos piernas. Una diferencia de más del 10\u00A0% entre lados es el umbral habitual de una diferencia importante en la rehabilitación de la pierna (Silbernagel y colegas, 2010). El protocolo completo, una versión para casa y una calculadora están en la página del [test de elevación de talón](/es/test-de-elevacion-de-talon/).',
       ],
       table: {
@@ -182,7 +182,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
             '**Core del pie, dedos y equilibrio de 2 a 5\u00A0días a la semana.** En el ensayo de 2019, los corredores hicieron ejercicios de pie al menos cinco veces por semana y ganaron fuerza en unos dos meses (Ridge y colegas, 2019).',
           ],
         },
-        'Date tiempo. El tamaño muscular cambió en unos dos meses en los ensayos, pero la baja en lesiones del ensayo de Taddei solo apareció después de cuatro a ocho meses. Una rutina que mantienes durante meses importa más que una dura que dejas a las tres semanas.',
+        'Date tiempo. El tamaño muscular cambió en unos dos meses en los ensayos, pero la reducción de lesiones del ensayo de Taddei solo apareció después de cuatro a ocho meses. Una rutina que mantienes durante meses importa más que una dura que dejas a las tres semanas.',
       ],
       table: {
         caption: 'Una semana de ejemplo para un corredor',
@@ -253,7 +253,7 @@ export const RUNNERS_FOOT_EXERCISES_ES: Guide = {
     {
       q: '¿Cuánto tardan los ejercicios de pie en notarse?',
       cites: [CITE.ridgeMinimalist, CITE.taddeiRRI],
-      a: 'En los ensayos, los músculos del pie se hicieron más grandes y más fuertes en unos dos meses. La baja en lesiones del ensayo con corredores tardó más y apareció después de cuatro a ocho meses. Planea mantener una rutina corta durante meses, no semanas.',
+      a: 'En los ensayos, los músculos del pie se hicieron más grandes y más fuertes en unos dos meses. La reducción de lesiones del ensayo con corredores tardó más y apareció después de cuatro a ocho meses. Planea mantener una rutina corta durante meses, no semanas.',
     },
     {
       q: '¿Puedo seguir corriendo mientras hago ejercicios de pie?',

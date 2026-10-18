@@ -18,7 +18,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
   updated: '2026-10-18',
   title: 'Test de pie plano en casa: 4 pruebas sencillas',
   description:
-    '¿Cómo saber si tienes pie plano? 4 pruebas en casa: huella mojada, sentado y de pie, puntillas y dedo gordo, elevación de talón, y lo que muestra cada una.',
+    '¿Cómo saber si tienes pie plano? 4 pruebas: huella mojada, sentado y de pie, puntillas y dedo gordo, elevación de talón, y qué muestra y qué no cada una.',
   h1: 'Test de pie plano en casa: 4 pruebas sencillas, y lo que pueden y no pueden decirte',
   lede:
     'Puedes revisar si tienes pie plano en casa en unos cinco minutos: mira una huella mojada, compara tu arco sentado y de pie, ponte de puntillas o levanta el dedo gordo para ver si el arco vuelve, y prueba una elevación de talón sobre un pie. La huella es la menos exacta de las cuatro: en 95\u00A0adultos mayores comparados con radiografías, la puntuación de la huella coincidió con la altura real del arco solo de forma moderada (Menz y Munteanu, 2005). Lo que más importa es si el arco vuelve y si un lado se comporta distinto al otro.',
@@ -26,7 +26,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
     'Ninguna de estas pruebas es un diagnóstico, y un arco bajo por sí solo normalmente no es un problema. Esta página explica cómo hacer cada prueba, qué dice la investigación sobre cuánto puedes confiar en ella, qué mide un profesional de la salud en su lugar y qué resultados significan que conviene que te revisen el pie. Para saber qué es el pie plano y cuándo importa, empieza por [pie plano](/es/pie-plano/).',
   ],
   takeaways: [
-    'Una huella mojada es una guía aproximada. En 95\u00A0personas de 62 a 94\u00A0años, el índice del arco de la huella coincidió con la altura del arco en la radiografía solo de forma moderada, mientras que medir con una regla la altura del hueso del arco coincidió bastante (Menz y Munteanu, 2005).',
+    'Una huella mojada es una guía aproximada. En 95\u00A0personas de 62 a 94\u00A0años, el índice del arco de la huella coincidió con la altura del arco en la radiografía solo de forma moderada, mientras que medir con una regla la altura del hueso del arco coincidió estrechamente (Menz y Munteanu, 2005).',
     'La grasa bajo la planta puede rellenar la huella: en 24\u00A0adultos con sobrepeso u obesidad, el índice del arco de la huella subió con el porcentaje de grasa corporal (Wearing y colegas, 2004).',
     'Si el arco vuelve cuando te sientas, te pones de puntillas o levantas el dedo gordo, el pie plano es flexible, el tipo común que estudiaron los ensayos de ejercicio (Brijwasi y Borkar, 2023).',
     'Dificultad para subir sobre un pie, dolor detrás del tobillo interno y un arco que se va aplanando de un solo lado son señales de disfunción del tendón tibial posterior. En 582\u00A0mujeres mayores de 40\u00A0años, el 3,3\u00A0% tenía síntomas de etapa temprana (etapa I o II) y ninguna había sido diagnosticada (Kohls-Gatzoulis y colegas, 2009).',
@@ -95,7 +95,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
         },
         '**Si el arco vuelve, el pie plano es flexible.** Es el tipo común y el que se estudió en los ensayos de ejercicio: en 52\u00A0personas con pie plano flexible, seis semanas de ejercicios de pie corto, tobillo, cadera y estiramiento mejoraron dos medidas de la forma del arco más que en un grupo control (Brijwasi y Borkar, 2023).',
         '**Si el arco sigue plano y el pie se siente rígido**, el pie plano podría ser rígido. Una causa es la coalición tarsal, un puente de hueso, cartílago o tejido fibroso entre dos huesos del pie, que se encuentra a menudo en adultos jóvenes con un pie plano rígido y doloroso (Mehdi y colegas, 2024). Un pie plano rígido necesita que un profesional de la salud encuentre la causa antes de que empieces cualquier programa de ejercicio.',
-        'Seamos honestos sobre lo que son estas pruebas. No encontramos ningún estudio que haya medido qué tan confiable es la prueba de puntillas o la prueba de Jack en adultos cuando las hacen en casa. Son fáciles de hacer y el resultado suele ser claro, pero toma un resultado rígido como motivo para que te revisen, no como un diagnóstico.',
+        'Seamos honestos sobre lo que son estas pruebas. No encontramos ningún estudio que haya medido qué tan confiable es la prueba de puntillas o la prueba de Jack en adultos cuando las hacen en casa. Son fáciles de hacer y el resultado suele ser claro, pero si el pie resulta rígido, tómalo como motivo para que te revisen, no como un diagnóstico.',
       ],
       cites: [CITE.jack1953, CITE.brijwasi, CITE.mehdiCoalition],
     },
@@ -113,7 +113,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
           ],
         },
         'Que te cueste subir de un lado, un talón que no gira hacia adentro o dolor en el tobillo interno son las señales que apuntan al tendón. Un profesional de la salud usa el mismo movimiento como prueba de detección, y el panorama completo está en [ejercicios para la disfunción del tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/).',
-        'Esta prueba se trata de la forma y de cómo se siente una sola subida de cada lado, no de cuántas puedes hacer. Si quieres un número para la resistencia de la pantorrilla, con el ritmo de la investigación y las cifras que alcanzan los adultos sanos, usa el [test de elevación de talón](/es/test-de-elevacion-de-talon/).',
+        'Esta prueba se centra en la forma y de cómo se siente una sola subida de cada lado, no de cuántas puedes hacer. Si quieres un número para la resistencia de la pantorrilla, con el ritmo de la investigación y las cifras que alcanzan los adultos sanos, usa el [test de elevación de talón](/es/test-de-elevacion-de-talon/).',
       ],
       cites: [CITE.deuTendinopathies, CITE.kohlsGatzoulisPrevalence, CITE.posteriorTibialReview],
     },
@@ -124,11 +124,11 @@ export const FLAT_FEET_TEST_ES: Guide = {
         'Un profesional de la salud mira lo mismo que miraste tú, pero lo puntúa de una forma establecida. Las dos medidas más comunes:',
         {
           list: [
-            '**Índice de Postura del Pie (FPI).** Seis revisiones del pie de pie, cada una puntuada de -2 a +2, que incluyen el ángulo del talón, el abultamiento del tobillo interno y la forma del arco. El total va de -12 (arco alto) a +12 (plano). En datos combinados de 619\u00A0adultos sanos, el promedio fue +4, y los autores consideran que las puntuaciones por debajo de -3 o por encima de +10 están claramente fuera del rango normal (Redmond y colegas, 2008).',
+            '**Índice de Postura del Pie (FPI).** Seis observaciones del pie con la persona de pie, cada una puntuada de -2 a +2, que incluyen el ángulo del talón, el abultamiento del tobillo interno y la forma del arco. El total va de -12 (arco alto) a +12 (plano). En datos combinados de 619\u00A0adultos sanos, el promedio fue +4, y los autores consideran que las puntuaciones por debajo de -3 o por encima de +10 están claramente fuera del rango normal (Redmond y colegas, 2008).',
             '**Caída del navicular.** El profesional marca el hueso del lado interno del arco, mide su altura sentado con el pie en una posición fija, luego de pie, y registra cuánto baja. Los adultos sanos promedian de 3,6 a 8,1\u00A0milímetros en los estudios, y no se ha confirmado ningún punto de corte para «demasiado» (Nielsen y colegas, 2009).',
           ],
         },
-        '**Estas medidas son mejores que una huella, pero no son perfectas.** En adultos mayores, medir con una regla la altura del hueso del arco coincidió bastante con las radiografías (r = 0,79), mientras que el FPI coincidió menos (r = 0,36 a 0,59), porque puntúa todo el pie y no solo el arco (Menz y Munteanu, 2005). El total del FPI mostró una confiabilidad moderada en general, la altura del navicular fue la medida individual más confiable en adultos, y ninguna de las medidas evaluadas fue lo bastante confiable en niños pequeños (Evans y colegas, 2003).',
+        '**Estas medidas son mejores que una huella, pero no son perfectas.** En adultos mayores, medir con una regla la altura del hueso del arco coincidió estrechamente con las radiografías (r = 0,79), mientras que el FPI coincidió menos (r = 0,36 a 0,59), porque puntúa todo el pie y no solo el arco (Menz y Munteanu, 2005). El total del FPI mostró una confiabilidad moderada en general, la altura del navicular fue la medida individual más confiable en adultos, y ninguna de las medidas evaluadas fue lo bastante confiable en niños pequeños (Evans y colegas, 2003).',
         'La práctica importa. Cuando dos evaluadores sin experiencia midieron la caída del navicular en 15\u00A0personas, sus resultados coincidieron poco (Picciano y colegas, 1993). En 86\u00A0adultos jóvenes de un estudio posterior, la caída del navicular y las puntuaciones de la huella fueron muy repetibles (Zuil-Escobar y colegas, 2018). Si te están siguiendo el arco con el tiempo, ayuda que mida siempre la misma persona.',
         'Si un profesional sospecha un pie rígido, una coalición o un daño del tendón, puede pedir una radiografía de pie, una tomografía o una resonancia magnética, algo que ninguna prueba en casa puede reemplazar (Mehdi y colegas, 2024).',
       ],
@@ -152,17 +152,17 @@ export const FLAT_FEET_TEST_ES: Guide = {
       ],
       exercises: [
         {
-          name: 'Pie corto',
+          name: 'Pie corto, sentado',
           evidence: { level: 'moderate', why: 'Parte del programa que mejoró la forma del arco en un ensayo de 2023. Por sí solo, el trabajo de pie corto tiene resultados más débiles.' },
           dose: '3\u00A0series de 8, mantén 5\u00A0segundos, cada pie',
           often: 'Cada sesión, mientras sea tu nivel',
           feel: 'El arco subiendo',
           how: 'Siéntate con el pie apoyado en el piso. Lleva la parte delantera del pie hacia el talón para que el arco suba, y mantén. Deja el borde externo del pie en el suelo y sube el arco para formar una pequeña cueva bajo el pie. No encojas los dedos. Encogerlos es el error más común en este ejercicio.',
           stop: 'Un calambre en el arco que no se calma, o dolor en el tobillo interno',
-          image: 'Ejercicio: pie corto',
+          image: 'Ejercicio: pie corto, sentado',
           media: 'short_foot_seated',
-          caption: 'Pie corto: lleva la parte delantera del pie hacia el talón para que el arco suba',
-          alt: 'Una pierna sentada con el pie apoyado en el piso y los músculos del arco resaltados mientras el arco sube',
+          caption: 'Pie corto, sentado: lleva la parte delantera del pie hacia el talón para que el arco suba',
+          alt: 'La pierna de una persona sentada, con el pie apoyado en el piso y los músculos del arco resaltados mientras el arco sube',
         },
         {
           name: 'Elevación del dedo gordo',
@@ -221,12 +221,12 @@ export const FLAT_FEET_TEST_ES: Guide = {
     {
       q: '¿Qué es la prueba del pie plano flexible?',
       cites: [CITE.jack1953],
-      a: 'Revisa si el arco vuelve. Ponte de puntillas, o levanta el dedo gordo mientras el talón sigue abajo (la prueba de Jack, descrita en 1953). Si aparece un arco, el pie plano es flexible. Si sigue plano y rígido, un profesional de la salud debería buscar la causa. No encontramos ningún estudio sobre qué tan confiable es cualquiera de las dos pruebas en casa.',
+      a: 'Sirve para ver si el arco vuelve. Ponte de puntillas, o levanta el dedo gordo mientras el talón sigue abajo (la prueba de Jack, descrita en 1953). Si aparece un arco, el pie plano es flexible. Si sigue plano y rígido, un profesional de la salud debería buscar la causa. No encontramos ningún estudio sobre qué tan confiable es cualquiera de las dos pruebas en casa.',
     },
     {
       q: '¿Cómo saber si mi pie plano es rígido?',
       cites: [CITE.mehdiCoalition],
-      a: 'Un pie plano rígido no tiene arco cuando te sientas, te pones de puntillas o levantas el dedo gordo, y a menudo se siente rígido. Una causa es la coalición tarsal, un puente entre huesos del pie que se reporta en un 1 a 13\u00A0% de las personas. Un pie plano rígido que duele necesita un profesional de la salud y normalmente estudios de imagen.',
+      a: 'Un pie plano rígido no tiene arco cuando te sientas, te pones de puntillas o levantas el dedo gordo, y a menudo se siente duro y poco móvil. Una causa es la coalición tarsal, un puente entre huesos del pie que se reporta en un 1 a 13\u00A0% de las personas. Un pie plano rígido que duele necesita un profesional de la salud y normalmente estudios de imagen.',
     },
     {
       q: '¿Se puede tener un solo pie plano?',
@@ -241,7 +241,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
     {
       q: '¿Qué es el Índice de Postura del Pie?',
       cites: [CITE.redmondFpi, CITE.evansFpiReliability],
-      a: 'Es una revisión de seis partes que hace un profesional de la salud mientras estás de pie, y que puntúa el talón, el tobillo y el arco de -2 a +2 cada uno, para un total de -12 (arco alto) a +12 (plano). En 619\u00A0adultos sanos el promedio fue +4, que es normal. Mostró una confiabilidad moderada en general, y ninguna medida de postura del pie evaluada fue lo bastante confiable en niños pequeños.',
+      a: 'Es una evaluación en seis apartados que hace un profesional de la salud mientras estás de pie, y que puntúa el talón, el tobillo y el arco de -2 a +2 cada uno, para un total de -12 (arco alto) a +12 (plano). En 619\u00A0adultos sanos el promedio fue +4, que es normal. Mostró una confiabilidad moderada en general, y ninguna medida de postura del pie evaluada fue lo bastante confiable en niños pequeños.',
     },
     {
       q: '¿El pie plano necesita tratamiento si no duele?',
@@ -264,7 +264,7 @@ export const FLAT_FEET_TEST_ES: Guide = {
       'el pie plano empezó después de una caída, una torcedura o una lesión',
       'tienes diabetes y el pie está caliente, rojo o hinchado, o su forma está cambiando',
       'sientes entumecimiento, ardor u hormigueo en el pie',
-      'el pie plano de un niño es rígido, le duele o viene con cojera',
+      'el pie plano de un niño es rígido o le duele, o el niño cojea',
     ],
   },
   program: {

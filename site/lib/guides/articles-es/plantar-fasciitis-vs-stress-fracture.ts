@@ -19,7 +19,7 @@ export const PF_VS_STRESS_FRACTURE_ES: Guide = {
   updated: '2026-10-18',
   title: 'Fascitis plantar o fractura por estrés: cómo diferenciarlas',
   description:
-    '¿Fascitis plantar o fractura por estrés del calcáneo? Compara el dolor, la prueba de compresión, quién tiene más riesgo y por qué la radiografía falla.',
+    '¿Fascitis plantar o fractura por estrés del calcáneo? Compara el dolor, la prueba de compresión, el riesgo, por qué falla la radiografía y qué hacer.',
   h1: 'Fascitis plantar o fractura por estrés del talón: cómo diferenciarlas',
   lede:
     'La [fascitis plantar](/es/fascitis-plantar/) duele más en los primeros pasos después del reposo y suele calmarse cuando caminas unos minutos. Una fractura por estrés del talón hace lo contrario: el dolor aumenta cuanto más caminas o corres, muchas veces después de un salto en la actividad, y apretar los lados del talón suele doler (Tu, 2018). Una radiografía temprana puede verse normal: en 30\u00A0reclutas militares con una lesión por estrés del talón en la resonancia magnética, la radiografía simple solo la mostró en el 15\u00A0% (Sormaala y colegas, 2006).',
@@ -49,7 +49,7 @@ export const PF_VS_STRESS_FRACTURE_ES: Guide = {
         rows: [
           ['Peor momento', 'Primeros pasos después del reposo', 'Durante y después de la actividad'],
           ['Después de unos minutos caminando', 'Suele calmarse', 'Aumenta'],
-          ['Dónde duele', 'Debajo del talón, lado interno', 'En todo el hueso del talón, a menudo la mitad de atrás'],
+          ['Dónde duele', 'Debajo del talón, lado interno', 'A lo ancho del hueso del talón, a menudo en la mitad de atrás'],
           ['Al apretar los lados del talón', 'Normalmente no duele', 'A menudo duele'],
           ['Hinchazón', 'No es un signo habitual', 'A veces'],
           ['Desencadenante habitual', 'Muchas horas de pie, pantorrillas tensas', 'Un salto en el entrenamiento o una superficie más dura'],
@@ -86,7 +86,7 @@ export const PF_VS_STRESS_FRACTURE_ES: Guide = {
         {
           list: [
             '**Un aumento repentino del entrenamiento.** Un salto grande en lo que caminas, corres, marchas o estás de pie, o sesiones intensas repetidas con poco descanso, es la historia clásica (Patel y colegas, 2011). Cambiar a una superficie más dura para caminar es un desencadenante común en el talón (Tu, 2018).',
-            '**Mucho volumen de carrera.** Los corredores recreativos que promedian más de 25\u00A0millas (unos 40\u00A0km) por semana tienen más riesgo, igual que los atletas de pista y campo, básquetbol, fútbol y danza (Patel y colegas, 2011). Más para corredores en [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
+            '**Mucho volumen de carrera.** Los corredores recreativos que promedian más de 25\u00A0millas (unos 40\u00A0km) por semana tienen más riesgo, igual que quienes practican atletismo, básquetbol, fútbol o danza (Patel y colegas, 2011). Hay más información para corredores en [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
             '**Baja disponibilidad de energía.** Comer demasiado poco para lo que entrenas puede afectar las hormonas y el hueso. El Comité Olímpico Internacional incluye la mala salud ósea, con las lesiones óseas por estrés, entre los efectos de este patrón, llamado deficiencia relativa de energía en el deporte (REDs), tanto en mujeres como en hombres (Mountjoy y colegas, 2023).',
             '**Salud ósea.** Las mujeres con la tríada de la atleta femenina (alimentación alterada, falta de menstruación y baja densidad ósea) tienen más riesgo, y un estudio encontró niveles más bajos de vitamina D en reclutas con fracturas por estrés (Patel y colegas, 2011). El hueso debilitado por osteoporosis puede romperse con cargas normales, lo que se llama fractura por insuficiencia.',
             '**Ser mujer.** Las mujeres tienen más riesgo que los hombres, sobre todo en el entrenamiento militar, aunque los datos en atletas mujeres son mixtos (Patel y colegas, 2011).',
@@ -100,7 +100,7 @@ export const PF_VS_STRESS_FRACTURE_ES: Guide = {
       h2: '¿Por qué una radiografía puede verse normal con una fractura por estrés?',
       keyFact: 'En 30\u00A0reclutas militares cuya resonancia mostró una lesión por estrés del talón, la lesión se veía en la radiografía simple solo en el 15\u00A0% (Sormaala y colegas, 2006).',
       paragraphs: [
-        '**Una fractura por estrés temprana suele ser demasiado pequeña para verse en una radiografía.** El hueso primero reacciona con una inflamación en su interior que la radiografía no puede ver. Los signos de reparación aparecen después. Una revisión calculó la sensibilidad de la radiografía en la primera consulta en alrededor del 10\u00A0%, y de 30 a 70\u00A0% después de tres semanas (Patel y colegas, 2011).',
+        '**Una fractura por estrés temprana suele ser demasiado pequeña para verse en una radiografía.** El hueso primero reacciona con un edema (hinchazón) en su interior que la radiografía no puede ver. Los signos de reparación aparecen después. Una revisión calculó la sensibilidad de la radiografía en la primera consulta en alrededor del 10\u00A0%, y de 30 a 70\u00A0% después de tres semanas (Patel y colegas, 2011).',
         'En el caso concreto del talón, un estudio finlandés analizó a reclutas militares con dolor de talón o tobillo relacionado con el ejercicio a quienes se les hizo una resonancia. De 30\u00A0reclutas con lesiones por estrés del talón, solo el 15\u00A0% tenía una lesión visible en la radiografía simple. En 22 de los 34 talones lesionados también estaban afectados huesos cercanos del pie (Sormaala y colegas, 2006).',
         'Una revisión sistemática de 2016 sobre fracturas por estrés en la pierna y el pie encontró una sensibilidad de la radiografía del 12\u00A0% al 56\u00A0%, frente al 68\u00A0% al 99\u00A0% de la resonancia. Los autores señalaron la resonancia como la prueba más sensible y específica y advirtieron que la radiografía probablemente da falsos negativos al principio (Wright y colegas, 2016).',
         'Por eso, un profesional de la salud que sospecha una fractura puede repetir la radiografía después de dos o tres semanas o pedir directamente una resonancia si importa tener una respuesta rápida (Patel y colegas, 2011). Para la fascitis plantar, la guía de 2023 dice que la imagen «normalmente no está indicada en pacientes que cumplen los criterios de la exploración clínica para fascitis plantar hasta que fallan las intervenciones conservadoras» (Koc y colegas, 2023). La [página sobre el espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/) explica por qué un espolón en la radiografía tampoco resuelve la duda.',
@@ -254,7 +254,7 @@ export const PF_VS_STRESS_FRACTURE_ES: Guide = {
       'el talón está hinchado o con un moretón, o un punto del hueso duele mucho al tocarlo',
       'el dolor empezó después de un salto repentino en el entrenamiento o de un cambio a una superficie más dura',
       'duele en reposo o te despierta por la noche',
-      'ya tuviste una fractura por estrés, faltas de menstruación, un trastorno alimentario o baja densidad ósea',
+      'ya tuviste una fractura por estrés, o tienes o tuviste ausencia de menstruación, un trastorno alimentario o baja densidad ósea',
       'no puedes apoyar todo el peso en el pie, o el dolor empezó después de una caída o una torcedura',
       'sientes ardor, hormigueo o entumecimiento en el talón o la planta',
     ],

@@ -18,12 +18,12 @@ export const WALKING_PF_ES: Guide = {
   updated: '2026-10-18',
   title: 'Caminar con fascitis plantar: ¿cuánto se puede?',
   description:
-    'Caminar con fascitis plantar: una regla de dolor para durante y la mañana siguiente, la verdad sobre los pasos, zapatos, superficies y cómo volver a subir.',
+    'Caminar con fascitis plantar: una regla de dolor para durante y la mañana siguiente, la verdad sobre los pasos, zapatos, superficies y cómo ir aumentando.',
   h1: '¿Cuánto puedes caminar con fascitis plantar?',
   lede:
     'Por lo general puedes seguir caminando con [fascitis plantar](/es/fascitis-plantar/), siempre que el dolor se mantenga moderado mientras caminas y se calme para la mañana siguiente. La guía de 2023 para el dolor de talón recomienda dar consejos para ajustar la carga sobre el pie y no les dice a las personas que dejen de caminar, aunque califica ese consejo con **E**, lo que significa que se basa en teoría, no en ensayos (Koc y colegas, 2023). Ningún estudio da un número seguro de pasos, así que revisar cómo amanece el talón es mejor guía que una meta de pasos.',
   intro: [
-    'Esta página trata de cuánto caminar mientras te duele el talón y de cómo volver a subir. Si tu pregunta principal es por qué te duele el talón después de caminar, mira [dolor de talón al caminar](/es/dolor-de-talon-al-caminar/). Si te duelen los pies por estar de pie en un mismo lugar, mira [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/).',
+    'Esta página trata de cuánto caminar mientras te duele el talón y de cómo ir aumentando poco a poco. Si tu pregunta principal es por qué te duele el talón después de caminar, mira [dolor de talón al caminar](/es/dolor-de-talon-al-caminar/). Si te duelen los pies por estar de pie en un mismo lugar, mira [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/).',
   ],
   takeaways: [
     'La guía de 2023 para el dolor de talón incluye consejos para cambiar la carga sobre el pie en el trabajo, en el tiempo libre y en la vida diaria, además de consejos sobre calzado, con grado **E**: basados en teoría, no en ensayos (Koc y colegas, 2023).',
@@ -60,7 +60,7 @@ export const WALKING_PF_ES: Guide = {
           ['De 0 a 2 al caminar, mañana siguiente normal', 'Bien dentro del límite', 'Mantenla o añade un poco'],
           ['De 3 a 5 al caminar, se calma para la mañana siguiente', 'Carga aceptable', 'Repite la misma caminata'],
           ['Más de 5 durante la caminata', 'Demasiado para hoy', 'Acórtala o baja el ritmo'],
-          ['Primeros pasos de la mañana siguiente peores que de costumbre', 'Demasiado ayer', 'Reduce y luego vuelve a subir'],
+          ['Primeros pasos de la mañana siguiente peores que de costumbre', 'Demasiado ayer', 'Reduce y luego vuelve a aumentar poco a poco'],
           ['Peor cada semana', 'La carga va subiendo sin que lo notes', 'Da un paso atrás y consulta a un profesional de la salud si sigue'],
         ],
       },
@@ -106,7 +106,7 @@ export const WALKING_PF_ES: Guide = {
         '**Los zapatos cómodos y amortiguados con poca diferencia de altura entre el talón y la punta son el consejo de los expertos, pero ningún ensayo ha probado un zapato concreto para caminar.** La guía de buenas prácticas de 2021 dice que los zapatos deben dar soporte y ser cómodos, tener una pequeña caída del talón a la punta (el talón queda un poco más alto que los dedos) y ser algo que de verdad te vayas a poner. También aconseja evitar caminar descalzo y los zapatos planos y sin soporte hasta que los síntomas hayan desaparecido por completo (Morrissey y colegas, 2021).',
         'La guía de 2023 incluye el consejo sobre calzado en su recomendación de educación con grado **E**. Sobre las plantillas es más concreta: no las uses como único tratamiento (**B** en contra), pero pueden ayudar combinadas con otros tratamientos (**C**). Eso incluye una talonera de farmacia o zapatos que amortigüen el talón (Koc y colegas, 2023).',
         'La dureza del zapato puede importar. En el estudio de 2023 con 50\u00A0personas con dolor de talón y 25 sin él, el grupo con dolor de talón usaba zapatos con el talón más duro y decía tener más problemas para encontrar zapatos adecuados (Landorf y colegas, 2023). De nuevo, es una relación, no una prueba de que los zapatos blandos ayuden.',
-        'Para productos concretos y lo que muestran los ensayos sobre las mejores plantillas para la fascitis plantar, mira [¿plantillas o ejercicios?](/es/plantillas-o-ejercicios/). ¿Estás pensando en zapatos minimalistas? [Zapatos barefoot](/es/zapatos-barefoot/) explica por qué no encajan bien mientras el talón está adolorido.',
+        'Para ver qué muestran los ensayos sobre las plantillas para la fascitis plantar, mira [¿plantillas o ejercicios?](/es/plantillas-o-ejercicios/). ¿Estás pensando en zapatos minimalistas? [Zapatos barefoot](/es/zapatos-barefoot/) explica por qué no encajan bien mientras el talón está adolorido.',
       ],
       cites: [CITE.morrisseyBestPractice, CITE.guideline, CITE.landorfFootwear],
     },
@@ -120,7 +120,7 @@ export const WALKING_PF_ES: Guide = {
           list: [
             'Elige pasto, un camino de parque o una pista en lugar de concreto para las caminatas largas, si así te sientes mejor.',
             'No te quites los zapatos en casa sobre loseta o madera, sobre todo en los primeros pasos del día.',
-            'Ve con calma en las bajadas largas y en las cuestas empinadas hasta que la caminata en plano pase la regla de dolor.',
+            'Ve con calma en las bajadas largas y en las cuestas empinadas hasta que la caminata en plano pase la regla de dolor. Más sobre bajadas, mochilas y bastones en [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/).',
           ],
         },
         'Un dolor profundo justo en el centro del talón que empeora claramente sobre suelo duro puede venir de la almohadilla de grasa del talón y no de la fascia plantar. Mira [síndrome de la almohadilla de grasa del talón](/es/sindrome-almohadilla-grasa-talon/).',
@@ -222,7 +222,7 @@ export const WALKING_PF_ES: Guide = {
     {
       q: '¿Debo caminar si tengo fascitis plantar?',
       cites: [CITE.guideline, CITE.rielHeelRaiseAdd],
-      a: 'Por lo general sí, en la cantidad que tu talón aguante. La guía de 2023 para el dolor de talón recomienda ajustar la carga sobre el pie y no aconseja dejar de caminar, aunque ese consejo se basa en teoría (grado E). En un ensayo con 180\u00A0adultos, el consejo de mantenerse activo pero reducir las actividades que aumentan el dolor, más una talonera, fue de la mano de una mejora relevante en unos tres meses.',
+      a: 'Por lo general sí, en la cantidad que tu talón aguante. La guía de 2023 para el dolor de talón recomienda ajustar la carga sobre el pie y no aconseja dejar de caminar, aunque ese consejo se basa en teoría (grado E). En un ensayo con 180\u00A0adultos, el consejo de mantenerse activo pero reducir las actividades que aumentan el dolor, más una talonera, se acompañó de una mejora relevante en unos tres meses.',
     },
     {
       q: '¿Caminar es bueno para la fascitis plantar?',

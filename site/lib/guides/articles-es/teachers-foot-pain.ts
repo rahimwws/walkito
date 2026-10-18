@@ -108,7 +108,7 @@ export const TEACHERS_ES: Guide = {
           dose: '3\u00A0series de 10, los dos pies',
           often: 'Días de fuerza, 3 a la semana, nunca dos seguidos',
           feel: 'Trabajo en la parte baja de la pantorrilla',
-          how: 'Siéntate en tu escritorio con los pies apoyados y empuja hacia arriba con la parte delantera del pie. Las manos sobre las rodillas agregan resistencia. Con la rodilla doblada trabaja sobre todo el sóleo, casi sin carga en el talón. Lo puedes hacer debajo del escritorio mientras los alumnos trabajan en silencio.',
+          how: 'Siéntate frente a tu escritorio con los pies apoyados y empuja hacia arriba con la parte delantera del pie. Las manos sobre las rodillas agregan resistencia. Con la rodilla doblada trabaja sobre todo el sóleo, casi sin carga en el talón. Lo puedes hacer debajo del escritorio mientras los alumnos trabajan en silencio.',
           stop: 'El dolor llega a 6/10',
           image: 'Ejercicio: elevaciones de talón sentado',
           media: 'heel_raise_seated',
@@ -147,7 +147,7 @@ export const TEACHERS_ES: Guide = {
     {
       h2: '¿Cómo acomodar los ejercicios de pies en un día de clases?',
       paragraphs: [
-        'No necesitas una rutina aparte. Amarra cada ejercicio a un momento del día que ya existe. Las dosis son las mismas de arriba; la tabla solo dice cuándo caben.',
+        'No necesitas una rutina aparte. Asocia cada ejercicio a un momento que ya forma parte de tu día. Las dosis son las mismas de arriba; la tabla solo dice cuándo caben.',
       ],
       table: {
         caption: 'Una forma de repartir los ejercicios en un día de clases',
@@ -180,13 +180,13 @@ export const TEACHERS_ES: Guide = {
             'un segundo par para alternar, así no usas el mismo par gastado todos los días',
           ],
         },
-        '**Las plantillas pueden hacer el día más cómodo, pero no dependas solo de ellas.** La guía de 2023 les da a las plantillas por sí solas una **B en contra**, y combinadas con estiramientos y trabajo de fuerza una **C** (Koc y colegas, 2023). [Plantillas o ejercicios](/es/plantillas-o-ejercicios/) compara las dos opciones y explica qué buscar en unas plantillas para la fascitis plantar.',
+        '**Las plantillas pueden hacer el día más cómodo, pero no dependas solo de ellas.** La guía de 2023 les da a las plantillas por sí solas una **B en contra**, y combinadas con estiramientos y trabajo de fuerza una **C** (Koc y colegas, 2023). [Plantillas o ejercicios](/es/plantillas-o-ejercicios/) compara las dos opciones.',
         'Las medias de compresión son otra opción si al final del día sientes las piernas pesadas o hinchadas. En un ensayo con 40 guardias de seguridad en turnos largos de pie, tanto las medias de 15 a 20\u00A0mmHg como las de 20 a 30\u00A0mmHg evitaron el aumento de molestias e hinchazón en las piernas que se vio con calcetines normales (Garcia y colegas, 2023). No fue un estudio con maestros.',
       ],
       cites: [CITE.landorfFootwear, CITE.guideline, CITE.garcia],
     },
     {
-      h2: '¿Los pisos del salón y los tapetes hacen diferencia?',
+      h2: '¿Los pisos del salón y los tapetes marcan la diferencia?',
       paragraphs: [
         'La mayoría de los salones tienen pisos duros: loseta, vinil sobre concreto o una alfombra delgada. Ningún estudio ha medido los pisos de los salones y los pies de los maestros. La revisión de 2015 sobre el trabajo de pie incluye los tapetes para el piso entre las medidas con algo de evidencia para reducir las molestias, junto con el calzado y la opción de alternar entre sentarse y estar de pie (Waters y Dick, 2015).',
         'Un tapete solo ayuda donde de verdad estás parado. Si das la clase desde un solo lugar, como el pizarrón, el proyector o una mesa de laboratorio, vale la pena probar ahí un tapete antifatiga. Si caminas por el salón, tu tapete es el zapato.',
@@ -210,7 +210,7 @@ export const TEACHERS_ES: Guide = {
             'dolor en la parte de atrás del talón, en el tendón: [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/)',
           ],
         },
-        '¿No sabes cuál es? El [identificador de dolor de pie](/es/donde-me-duele-el-pie/) te hace unas preguntas sobre dónde y cuándo te duele. **Si sigues sin estar seguro, consulta a un profesional de la salud antes de cargarlo con ejercicio.**',
+        '¿No sabes cuál es? El [identificador de dolor de pie](/es/donde-me-duele-el-pie/) te hace unas preguntas sobre dónde y cuándo te duele. **Si sigues sin estar seguro, consulta a un profesional de la salud antes de exigirle al pie con ejercicios.**',
       ],
       cites: [CITE.alqahtaniTeachers, CITE.latt],
     },
@@ -234,7 +234,7 @@ export const TEACHERS_ES: Guide = {
     {
       q: '¿Qué estiramientos pueden hacer los maestros entre clases?',
       cites: [CITE.guideline],
-      a: 'Un estiramiento de pantorrilla y uno de sóleo contra una pared toman alrededor de un minuto por lado: 2\u00A0series de 30\u00A0segundos por pierna. El estiramiento plantar se puede hacer sentado en tu escritorio, 2\u00A0series de 30\u00A0segundos por pie. La guía de 2023 para el dolor de talón les da a estos estiramientos una A, aunque se escribió para la fascitis plantar, no para maestros.',
+      a: 'Un estiramiento de pantorrilla y uno de sóleo contra una pared toman alrededor de un minuto por lado: 2\u00A0series de 30\u00A0segundos por pierna. El estiramiento plantar se puede hacer sentado frente a tu escritorio, 2\u00A0series de 30\u00A0segundos por pie. La guía de 2023 para el dolor de talón les da a estos estiramientos una A, aunque se escribió para la fascitis plantar, no para maestros.',
     },
     {
       q: '¿Estar de pie todo el día como maestro puede causar fascitis plantar?',
@@ -262,7 +262,7 @@ export const TEACHERS_ES: Guide = {
     bullets: [
       'el dolor empezó después de una caída, una torcedura o un golpe, por ejemplo en la guardia del patio o en las escaleras',
       'no puedes apoyar el pie, o cojeas',
-      'el pie está entumido, con hormigueo, ardor, hinchado o caliente',
+      'sientes el pie entumecido, con hormigueo o ardor, o está hinchado o caliente',
       'el talón o el pie está rojo, o tienes fiebre o te sientes mal',
       'el dolor te despierta por la noche o está presente en reposo',
       'el dolor está en un solo punto y empeora con la actividad, lo que puede ser el patrón de una fractura por estrés',

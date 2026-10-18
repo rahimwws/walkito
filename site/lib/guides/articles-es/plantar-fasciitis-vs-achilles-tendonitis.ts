@@ -21,13 +21,13 @@ export const PF_VS_ACHILLES_ES: Guide = {
   lede:
     'La forma más rápida de distinguirlas es fijarte en dónde duele. La [fascitis plantar](/es/fascitis-plantar/) duele debajo del talón, sobre todo con los primeros pasos de la mañana (Koc y colegas, 2023). La tendinitis de Aquiles duele en la parte de atrás del talón o en el tendón que está encima, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón (Chimenti y colegas, 2024). Las dos responden al ejercicio, pero los ejercicios no son los mismos.',
   intro: [
-    'Esta página es la comparación lado a lado. No te da un diagnóstico, y hay dolores de talón que no son ninguna de las dos. Para los programas completos de ejercicios, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) y [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/). Si además tienes un bulto óseo en la parte de atrás del talón, mira [deformidad de Haglund](/es/deformidad-de-haglund/).',
+    'Esta página compara las dos directamente. No te da un diagnóstico, y hay dolores de talón que no son ninguna de las dos. Para los programas completos de ejercicios, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) y [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/). Si además tienes un bulto óseo en la parte de atrás del talón, mira [deformidad de Haglund](/es/deformidad-de-haglund/).',
   ],
   takeaways: [
     'El dolor de la fascitis plantar está debajo del talón, hacia el lado interno, y suele ser peor con los primeros pasos después de dormir o de estar sentado (Koc y colegas, 2023).',
     'La tendinopatía de Aquiles de la porción media duele en el propio tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. El dolor justo donde el tendón se une al hueso corresponde al tipo insercional (Chimenti y colegas, 2024).',
-    'La guía de 2023 para el dolor de talón le da a los estiramientos de la fascia plantar y de la pantorrilla un grado **A**, y al trabajo de fuerza un grado **B**. La guía de 2024 para el tendón de Aquiles le da al ejercicio que carga el tendón un grado **A** (Koc y colegas, 2023; Chimenti y colegas, 2024).',
-    'En un ensayo con 101\u00A0personas con dolor crónico de talón, el estiramiento de la fascia plantar superó al estiramiento de pantorrilla solo a las 8\u00A0semanas (DiGiovanni y colegas, 2003). Para el tendón de Aquiles, el grado más alto de la guía es para cargar el tendón, no para estirar (Chimenti y colegas, 2024).',
+    'La guía de 2023 para el dolor de talón les da a los estiramientos de la fascia plantar y de la pantorrilla un grado **A**, y al trabajo de fuerza un grado **B**. La guía de 2024 para el tendón de Aquiles le da al ejercicio que carga el tendón un grado **A** (Koc y colegas, 2023; Chimenti y colegas, 2024).',
+    'En un ensayo con 101\u00A0personas con dolor crónico de talón, el estiramiento de la fascia plantar superó al estiramiento de pantorrilla por sí solo a las 8\u00A0semanas (DiGiovanni y colegas, 2003). Para el tendón de Aquiles, el grado más alto de la guía es para cargar el tendón, no para estirar (Chimenti y colegas, 2024).',
     'Las dos están conectadas: en 52\u00A0resonancias magnéticas, las personas con cambios en el tendón de Aquiles tenían una fascia plantar más gruesa, y 5 de 27 superaban el umbral habitual de la fascitis plantar (Stecco y colegas, 2013).',
   ],
   toc: true,
@@ -53,7 +53,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
       h2: '¿Cuándo duele: con los primeros pasos o durante la actividad?',
       paragraphs: [
         '**La fascitis plantar es un dolor de primeros pasos.** La guía describe un dolor de talón que se nota más con los primeros pasos de la mañana o después de estar sentado, que muchas veces se calma al caminar y vuelve después de mucho tiempo de pie (Koc y colegas, 2023). La página de [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) explica ese patrón.',
-        '**La tendinopatía de Aquiles es un dolor de carga.** El tendón también puede estar rígido en la mañana, y por eso se confunden las dos. La diferencia está en lo que lo empeora durante el día: actividades de carga como correr y saltar, y el dolor suele ir de acuerdo con cuánto hiciste (Chimenti y colegas, 2024). Las subidas y los impulsos rápidos cargan todavía más el tendón.',
+        '**La tendinopatía de Aquiles es un dolor de carga.** El tendón también puede estar rígido en la mañana, y por eso se confunden las dos. La diferencia está en lo que lo empeora durante el día: actividades de carga como correr y saltar, y el dolor suele ir en proporción a lo que hiciste (Chimenti y colegas, 2024). Las subidas y los impulsos rápidos cargan todavía más el tendón.',
         'Así que las dos pueden doler en la mañana. Pregúntate dónde, no solo cuándo: una banda rígida y adolorida en la parte de atrás del tobillo apunta al tendón de Aquiles; una punzada debajo del talón apunta a la fascia plantar.',
       ],
       cites: [CITE.guideline, CITE.achillesGuideline],
@@ -85,7 +85,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
       h2: '¿Qué ejercicios van con la fascitis plantar?',
       keyFact: 'En un ensayo con 101\u00A0personas con dolor crónico de talón, el estiramiento de la fascia plantar dio mejores resultados a las 8\u00A0semanas que el estiramiento de pantorrilla solo (DiGiovanni y colegas, 2003).',
       paragraphs: [
-        '**En la fascitis plantar, el estiramiento va primero.** La guía de 2023 le da a los estiramientos de la fascia plantar y de la pantorrilla un grado **A**, su grado más alto, y al trabajo de fuerza un grado **B** (Koc y colegas, 2023).',
+        '**En la fascitis plantar, el estiramiento va primero.** La guía de 2023 les da a los estiramientos de la fascia plantar y de la pantorrilla un grado **A**, su grado más alto, y al trabajo de fuerza un grado **B** (Koc y colegas, 2023).',
         'Importa el estiramiento que trabaja el arco. En un ensayo con 101\u00A0personas, el grupo que hizo el estiramiento de la fascia plantar reportó mejores resultados a las 8\u00A0semanas que el grupo que solo estiró la pantorrilla (DiGiovanni y colegas, 2003). Para la fuerza, un ensayo de 2015 con 48\u00A0personas usó elevaciones de talón lentas con una toalla debajo de los dedos, que bajaron el dolor más rápido que el estiramiento solo a los tres meses, aunque a los doce meses los dos grupos estaban más o menos igual (Rathleff y colegas, 2015).',
         'Estas son las dosis iniciales de la guía de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
@@ -93,7 +93,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
         {
           name: 'Estiramiento plantar',
           evidence: { level: 'strong', why: 'La guía de 2023 para el dolor de talón le da al estiramiento un grado A, su grado más alto.' },
-          dose: '2 sostenidos de 30\u00A0segundos, cada pie',
+          dose: '2 series de 30\u00A0segundos, cada pie',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento a lo largo del arco',
           how: 'Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Haz el primero en la orilla de la cama, antes de que el pie toque el piso.',
@@ -106,7 +106,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
         {
           name: 'Estiramiento de pantorrilla',
           evidence: { level: 'strong', why: 'La guía de 2023 para el dolor de talón le da al estiramiento un grado A, su grado más alto.' },
-          dose: '2 sostenidos de 30\u00A0segundos, cada pierna',
+          dose: '2 series de 30\u00A0segundos, cada pierna',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la pantorrilla',
           how: 'Apoya las manos en una pared. Mantén la pierna de atrás estirada, el talón de atrás plano en el piso y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento importa aunque lo sientas más arriba.',
@@ -144,7 +144,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
         {
           name: 'Elevación de talón sostenida',
           evidence: { level: 'moderate', why: 'La guía de 2024 para el tendón de Aquiles incluye la carga isométrica. Ningún ensayo aleatorizado ha probado los sostenidos solos como programa completo.' },
-          dose: '3 sostenidos de 20\u00A0segundos, con los dos pies',
+          dose: '3 series de 20\u00A0segundos, los dos pies',
           often: 'Días de fuerza, o la mayoría de los días mientras el tendón está irritable',
           feel: 'Las pantorrillas trabajando para quedarse quietas',
           how: 'Sube de puntas con los dos pies y quédate quieto arriba. No vuelvas a bajar. Sostener arriba carga el tendón sin el rebote.',
@@ -189,7 +189,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
             'Un bulto óseo en la parte de atrás del talón con una zona adolorida e inflamada a la altura del zapato: [deformidad de Haglund](/es/deformidad-de-haglund/) o bursitis retrocalcánea, muchas veces junto con dolor de Aquiles insercional.',
             'Un espolón en el talón en una radiografía: es común y normalmente no es la causa del dolor. Mira [fascitis plantar vs espolón calcáneo](/es/fascitis-plantar-vs-espolon-calcaneo/).',
             'Un dolor profundo, como de moretón, en el centro de la almohadilla del talón, peor en pisos duros: [síndrome de la almohadilla de grasa del talón](/es/sindrome-almohadilla-grasa-talon/).',
-            'Dolor en los dos lados del talón al apretarlo, después de un aumento brusco de caminata o carrera: posible fractura por estrés, que necesita a un profesional de la salud.',
+            'Dolor en los dos lados del talón al apretarlo, después de un aumento brusco de caminata o carrera: posible fractura por estrés, que debe valorar un profesional de la salud.',
             'Ardor, hormigueo o entumecimiento: posiblemente un nervio atrapado.',
           ],
         },
@@ -200,7 +200,7 @@ export const PF_VS_ACHILLES_ES: Guide = {
       h2: '¿Cuánto tarda en mejorar cada una?',
       paragraphs: [
         'En la fascitis plantar, alrededor del 90\u00A0% de las personas mejora con tratamiento sin cirugía, aunque muchas veces tarda meses (Latt y colegas, 2020). La página [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) tiene los detalles.',
-        'En la tendinopatía de Aquiles, los ensayos principales de carga duraron unos tres meses y siguieron a las personas hasta los doce meses. La guía de 2024 señala que la función puede empezar a mejorar en 2\u00A0semanas, pero la recuperación más completa tarda más (Chimenti y colegas, 2024). El dolor insercional ha sido más difícil de ayudar con los descensos de talón clásicos por debajo de un escalón: solo el 32\u00A0% tuvo buenos resultados en un estudio anterior, y por eso se usan los descensos a nivel del piso (Jonsson y colegas, 2008).',
+        'En la tendinopatía de Aquiles, los ensayos principales de carga duraron unos tres meses y siguieron a las personas hasta los doce meses. La guía de 2024 señala que la función puede empezar a mejorar en 2\u00A0semanas, pero la recuperación más completa tarda más (Chimenti y colegas, 2024). El dolor insercional ha respondido peor a los descensos de talón clásicos por debajo de un escalón: solo el 32\u00A0% tuvo buenos resultados en un estudio anterior, y por eso se usan los descensos a nivel del piso (Jonsson y colegas, 2008).',
         'Ningún estudio ha comparado directamente el tiempo de recuperación de las dos.',
       ],
       cites: [CITE.latt, CITE.achillesGuideline, CITE.jonsson],
@@ -240,12 +240,12 @@ export const PF_VS_ACHILLES_ES: Guide = {
     {
       q: '¿El dolor en la parte de atrás del talón es fascitis plantar?',
       cites: [CITE.guideline, CITE.chooRearfoot],
-      a: 'Normalmente no. La fascitis plantar duele debajo del talón. El dolor en la parte de atrás del talón suele ser tendinopatía de Aquiles, bursitis retrocalcánea o deformidad de Haglund, un bulto óseo donde se inserta el tendón. Un chasquido repentino en la parte de atrás del talón necesita a un profesional de la salud el mismo día.',
+      a: 'Normalmente no. La fascitis plantar duele debajo del talón. El dolor en la parte de atrás del talón suele ser tendinopatía de Aquiles, bursitis retrocalcánea o deformidad de Haglund, un bulto óseo donde se inserta el tendón. Ante un chasquido repentino en la parte de atrás del talón, consulta a un profesional de la salud el mismo día.',
     },
     {
       q: '¿Un espolón calcáneo significa fascitis plantar o tendinitis de Aquiles?',
       cites: [CITE.chooRearfoot],
-      a: 'Ninguna de las dos por sí solo. Un espolón debajo del talón está cerca de la fascia plantar, y uno en la parte de atrás está donde se inserta el tendón de Aquiles, pero los espolones son comunes en personas sin dolor. Lo que decide qué causa el dolor es la exploración, no la radiografía sola.',
+      a: 'Por sí solo, no indica ninguna de las dos. Un espolón debajo del talón está cerca de la fascia plantar, y uno en la parte de atrás está donde se inserta el tendón de Aquiles, pero los espolones son comunes en personas sin dolor. Lo que decide qué causa el dolor es la exploración, no la radiografía sola.',
     },
   ],
   redFlags: {
