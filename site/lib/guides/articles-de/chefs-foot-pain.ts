@@ -21,7 +21,7 @@ export const CHEFS_DE: Guide = {
     'Warum Füße auf harten, nassen Küchenböden wehtun: was Studien zu rutschfesten Schuhen zeigen, Clogs oder Sneaker, Matten und kurze Übungen für die Schicht.',
   h1: 'Fußschmerzen als Koch oder Köchin: was bei langen Schichten in der Küche hilft',
   lede:
-    'Fußschmerzen in der Küche kommen oft von langen Stunden im Stehen und Gehen auf harten Küchenböden. Bei Fersenschmerzen haben Dehnungen für Wade und Plantarfaszie die besten Belege, die die Leitlinie von 2023 zu Fersenschmerzen mit Empfehlungsgrad **A** bewertet, und Krafttraining für die Wade mit **B** (Koc und Kollegen, 2023). Rutschfeste Schuhe dienen der Sicherheit, nicht dem Schmerz: In einer randomisierten Studie in 226\u00A0Schulbezirken senkten kostenlose rutschfeste Schuhe für Beschäftigte der Schulverpflegung die gemeldeten Verletzungen durch Ausrutschen von 3,54 auf 1,18 pro 10.000\u00A0Beschäftigtenmonate (Bell und Kollegen, 2019). Keine Studie hat getestet, ob Clogs oder irgendein Küchenschuh die Fußschmerzen selbst verringern.',
+    'Fußschmerzen in der Küche kommen oft von langen Stunden im Stehen und Gehen auf harten Küchenböden. Bei Fersenschmerzen haben Dehnungen für Wade und Plantarfaszie die besten Belege, mit Empfehlungsgrad **A** in der Leitlinie von 2023 zu Fersenschmerzen, dazu Krafttraining für die Wade mit **B** (Koc und Kollegen, 2023). Rutschfeste Schuhe sind eine Frage der Sicherheit, nicht der Schmerzen: In einer randomisierten Studie in 226\u00A0Schulbezirken senkten kostenlose rutschfeste Schuhe für Beschäftigte der Schulverpflegung die gemeldeten Verletzungen durch Ausrutschen von 3,54 auf 1,18 pro 10.000\u00A0Beschäftigtenmonate (Bell und Kollegen, 2019). Keine Studie hat getestet, ob Clogs oder irgendein Küchenschuh die Fußschmerzen selbst verringern.',
   intro: [
     'Diese Seite handelt von der Küchenseite des Problems: harte, nasse und fettige Böden, Hektik im Service und Schuhe, die nach Rutschfestigkeit ausgesucht werden. Für Fußschmerzen vom Stehen in jedem Beruf lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Für Schichten im Krankenhaus gibt es [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/). Wenn deine Ferse bei den ersten Schritten nach einer Pause am stärksten wehtut, deutet dieses Muster auf eine [Plantarfasziitis](/de/plantarfasziitis/) hin.',
   ],
@@ -39,7 +39,7 @@ export const CHEFS_DE: Guide = {
       keyFact: 'Bei 128\u00A0Küchenbeschäftigten berichteten 46,1\u00A0% über Fußschmerzen in den letzten 12\u00A0Monaten, hinter dem unteren Rücken (64,8\u00A0%) und dem Knie (46,9\u00A0%) (Abdelsalam und Kollegen, 2023).',
       paragraphs: [
         '**Küchenarbeit häuft genau das an, womit Füße am schlechtesten zurechtkommen: stundenlanges Stehen, kurze schnelle Wege, harte Böden und wenig Pausen.** In einer Umfrage unter 128\u00A0Küchenbeschäftigten in zwei großen Studentenwohnheimen in Kairo berichteten 90,6\u00A0% über Beschwerden des Bewegungsapparats in den letzten 12\u00A0Monaten. Der Fuß war mit 46,1\u00A0% die am dritthäufigsten betroffene Region, knapp hinter dem Knie mit 46,9\u00A0%.',
-        'Die Zahlen schwanken stark zwischen den Studien. Bei 307\u00A0Köchen und Köchinnen in Restaurants in Pakistan, die meisten mit 9 bis 12\u00A0Stunden am Tag, berichteten 26 über Schmerzen in Sprunggelenk oder Fuß, deutlich weniger als die 101, die Schmerzen im unteren Rücken und im Knie angaben (Iqbal und Kollegen, 2023). Die Umfragen haben unterschiedliche Gruppen mit unterschiedlichen Fragen befragt. Lies sie also als grobes Bild, nicht als genaue Rate.',
+        'Die Zahlen schwanken stark zwischen den Studien. Bei 307\u00A0Köchen und Köchinnen in Restaurants in Pakistan, die meisten arbeiteten 9 bis 12\u00A0Stunden am Tag, berichteten 26 über Schmerzen in Sprunggelenk oder Fuß, deutlich weniger als die 101, die Schmerzen im unteren Rücken und im Knie angaben (Iqbal und Kollegen, 2023). Die Umfragen haben unterschiedliche Gruppen mit unterschiedlichen Fragen befragt. Lies sie also als grobes Bild, nicht als genaue Rate.',
         'Ein Zusammenhang zeigt sich deutlich. Bei 415\u00A0Küchenbeschäftigten in Hotels und Restaurants in Äthiopien ging langes Stehen mit einer 3,81-fachen Chance auf arbeitsbedingte Beschwerden des Bewegungsapparats einher (Abebaw und Kollegen, 2024). Diese Studie zählte Schmerzen im ganzen Körper, nicht nur in den Füßen.',
       ],
       sourceNote:
@@ -102,7 +102,7 @@ export const CHEFS_DE: Guide = {
       h2: 'Helfen Anti-Ermüdungsmatten und Kompressionsstrümpfe in der Küche?',
       paragraphs: [
         'Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten, Kompressionsstrümpfe und stützende Schuhe zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden und weniger Ermüdung (Waters und Dick, 2015). Keine dieser Studien fand in Küchen statt. Eine Matte an einem Platz, an dem du lange stehst, etwa am Pass oder an einem Vorbereitungstisch, ist einen Versuch wert. Nimm eine, die flach liegt und auf einem nassen Boden nicht verrutscht, damit sie nicht selbst zur Stolperfalle wird.',
-        'Kompressionsstrümpfe wurden in Küchen nicht getestet. In einer kleinen randomisierten Studie mit 40\u00A0Sicherheitskräften in Schichten von etwa 12\u00A0Stunden im Stehen verhinderten Strümpfe mit 15 bis 20\u00A0mmHg und mit 20 bis 30\u00A0mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat (Garcia und Kollegen, 2023). Die Sicherheitskräfte waren alle Männer und keiner arbeitete in einer Küche. Lies das also als wahrscheinlich passend, nicht als Beweis für die Küche.',
+        'Kompressionsstrümpfe wurden in Küchen nicht getestet. In einer kleinen randomisierten Studie mit 40\u00A0Sicherheitskräften in Schichten von etwa 12\u00A0Stunden im Stehen verhinderten Strümpfe mit 15 bis 20\u00A0mmHg und mit 20 bis 30\u00A0mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat (Garcia und Kollegen, 2023). Die Sicherheitskräfte waren alle Männer und keiner arbeitete in einer Küche. Lies das also als Hinweis, dass es wahrscheinlich auch in der Küche hilft, nicht als Beweis.',
         '**Matten und Strümpfe machen eine Schicht angenehmer. Sie ersetzen nicht die Dehnungen und das Krafttraining**, die die Leitlinie zu Fersenschmerzen am höchsten bewertet.',
       ],
       cites: [CITE.waters, CITE.garcia, CITE.guideline],
@@ -111,7 +111,7 @@ export const CHEFS_DE: Guide = {
       h2: 'Welche Übungen helfen Köchen und Köchinnen bei Fußschmerzen?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Dehnung von Wade und Plantarfaszie mit A, ihrem höchsten Empfehlungsgrad, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Die Übungen stammen aus dem [Ratgeber zu Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), mit denselben Anfangsdosen. Für die Dehnungen brauchst du nur eine Wand oder einen Stuhl. Sie passen also in eine Pause, vor den Service oder in den Moment, in dem du deine Arbeitsschuhe ausziehst. Heb dir das Krafttraining für freie Tage oder die Zeit nach der Schicht auf.',
+        'Die Übungen stammen aus dem [Ratgeber zu Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), mit denselben Startdosen. Für die Dehnungen brauchst du nur eine Wand oder einen Stuhl. Sie passen also in eine Pause, vor den Service oder in den Moment, in dem du deine Arbeitsschuhe ausziehst. Heb dir das Krafttraining für freie Tage oder die Zeit nach der Schicht auf.',
         'Die Empfehlungsgrade der Leitlinie gelten für Plantarfasziitis und wurden nicht bei Küchenbeschäftigten getestet, aber es sind dieselben Gewebe, die eine Küchenschicht den ganzen Tag belastet. Wenn eine Übung deinen Schmerz auf 6 von 10 oder höher bringt, hör für diesen Tag auf.',
       ],
       exercises: [
@@ -237,7 +237,7 @@ export const CHEFS_DE: Guide = {
     {
       q: 'Helfen Anti-Ermüdungsmatten in der Küche?',
       cites: [CITE.waters],
-      a: 'Wahrscheinlich, für das Wohlgefühl. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden und weniger Ermüdung, aber keine dieser Studien fand in Küchen statt. Leg eine Matte dorthin, wo du lange an einer Stelle stehst, und nimm eine, die flach liegt und auf einem nassen Boden nicht rutscht.',
+      a: 'Wahrscheinlich, für den Komfort. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden und weniger Ermüdung, aber keine dieser Studien fand in Küchen statt. Leg eine Matte dorthin, wo du lange an einer Stelle stehst, und nimm eine, die flach liegt und auf einem nassen Boden nicht rutscht.',
     },
     {
       q: 'Helfen Kompressionsstrümpfe bei langen Schichten in der Küche?',

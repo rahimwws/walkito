@@ -32,7 +32,7 @@ export const RUNNERS_FOOT_EXERCISES_DE: Guide = {
     'In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern wurden durch etwa zwei Monate Fußübungen, mindestens fünfmal pro Woche, alle gemessenen Fußmuskeln größer und kräftiger (Ridge und Kollegen, 2019).',
     'Gesunde Erwachsene schaffen im Median etwa 23 bis 24\u00A0einbeinige Fersenheber pro Bein, und 25 wurde als Richtwert für normal vorgeschlagen (Hebert-Losier und Kollegen, 2017; Lunsford und Perry, 1995).',
     'Ein selbst angeleitetes Kraftprogramm für Hüfte, Oberschenkel und Rumpf bei 720\u00A0Erstmarathonläuferinnen und -läufern senkte die Überlastungsverletzungen, die das Finish verhinderten, nicht: 7,1\u00A0% gegenüber 7,3\u00A0% (Toresdahl und Kollegen, 2020). Krafttraining allein hat dort keine Verletzungen verhindert.',
-    'Über Studien mit Langstreckenläuferinnen und -läufern hinweg verletzten sich zwischen 19,4\u00A0% und 79,3\u00A0% am Bein, und eine frühere Verletzung war einer der klarsten Risikofaktoren (van Gent und Kollegen, 2007).',
+    'In Studien mit Langstreckenläuferinnen und -läufern verletzten sich je nach Studie zwischen 19,4\u00A0% und 79,3\u00A0% am Bein, und eine frühere Verletzung war einer der klarsten Risikofaktoren (van Gent und Kollegen, 2007).',
   ],
   sections: [
     {
@@ -50,7 +50,7 @@ export const RUNNERS_FOOT_EXERCISES_DE: Guide = {
     {
       h2: 'Was gehört in die Fußroutine für Läufer?',
       paragraphs: [
-        'Vier Teile mit je ein oder zwei Übungen. Die Dosierungen unten sind die Startdosierungen von Walkito. Mach die Übungen barfuß und hör für den Tag auf, wenn der Schmerz über 6 von 10 steigt.',
+        'Vier Teile mit je ein oder zwei Übungen. Die Dosierungen unten sind die Startdosen von Walkito. Mach die Übungen barfuß und hör für den Tag auf, wenn der Schmerz über 6 von 10 steigt.',
         {
           list: [
             '**Fuß-Core:** die Übung [Kurzer Fuß](/de/uebungen/kurzer-fuss/), erst im Stehen, dann auf einem Bein. Sie trainiert die kleinen Muskeln, die das Gewölbe halten.',
@@ -148,7 +148,7 @@ export const RUNNERS_FOOT_EXERCISES_DE: Guide = {
       cites: [CITE.schache, CITE.madeley],
     },
     {
-      h2: 'Wie oft sollte ein Läufer einbeiniges Fersenheben schaffen?',
+      h2: 'Wie viele einbeinige Fersenheber sollte ein Läufer schaffen?',
       keyFact: 'Bei 566\u00A0Erwachsenen im Alter von 20 bis 81\u00A0Jahren lag der Median bei 24\u00A0einbeinigen Fersenhebern rechts und 23 links (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
         'Es gibt keinen eigenen Normwert für Läufer. Nimm deshalb die allgemeinen Werte für Erwachsene als Untergrenze. In einer Studie mit 566\u00A0Erwachsenen lag der Median bei 24\u00A0einbeinigen Fersenhebern mit dem rechten Bein und 23 mit dem linken, im Takt von einem Schlag hoch und einem Schlag runter bei 60\u00A0Schlägen pro Minute. Die Zahl sinkt mit dem Alter, und aktivere Menschen schafften mehr (Hebert-Losier und Kollegen, 2017). Eine ältere Studie schlug 25 als Richtwert für normal vor (Lunsford und Perry, 1995).',
@@ -218,7 +218,7 @@ export const RUNNERS_FOOT_EXERCISES_DE: Guide = {
     {
       h2: 'Was Fußübungen nicht leisten',
       paragraphs: [
-        '**Sie ersetzen kein vernünftiges Training.** Über Studien mit Langstreckenläuferinnen und -läufern hinweg verletzten sich zwischen 19,4\u00A0% und 79,3\u00A0% am Bein, und eine lange Wochenstrecke bei Männern sowie eine frühere Verletzung gehörten zu den klarsten Risikofaktoren (van Gent und Kollegen, 2007). In einer dänischen Studie mit 874\u00A0Laufanfängerinnen und -anfängern schienen diejenigen, die ihre Wochenstrecke um mehr als 30\u00A0% steigerten, anfälliger für einige Überlastungsverletzungen zu sein, auch wenn das Ergebnis die statistische Signifikanz knapp verfehlte (Nielsen und Kollegen, 2014).',
+        '**Sie ersetzen kein vernünftiges Training.** In Studien mit Langstreckenläuferinnen und -läufern verletzten sich je nach Studie zwischen 19,4\u00A0% und 79,3\u00A0% am Bein, und eine lange Wochenstrecke bei Männern sowie eine frühere Verletzung gehörten zu den klarsten Risikofaktoren (van Gent und Kollegen, 2007). In einer dänischen Studie mit 874\u00A0Laufanfängerinnen und -anfängern schienen diejenigen, die ihre Wochenstrecke um mehr als 30\u00A0% steigerten, anfälliger für einige Überlastungsverletzungen zu sein, auch wenn das Ergebnis die statistische Signifikanz knapp verfehlte (Nielsen und Kollegen, 2014).',
         '**Krafttraining ist kein automatischer Schutz.** In einer Studie mit 720\u00A0Erstmarathonläuferinnen und -läufern beim New-York-City-Marathon senkte ein selbst angeleitetes 10-Minuten-Programm für Hüfte, Oberschenkel und Rumpf, dreimal pro Woche über etwa drei Monate, die Überlastungsverletzungen nicht, die das Finish verhinderten: 7,1\u00A0% in der Kraftgruppe gegenüber 7,3\u00A0% bei den anderen (Toresdahl und Kollegen, 2020). Dieses Programm trainierte die Füße nicht, aber es erinnert daran, dass eine Routine auf dem Papier noch kein Ergebnis ist.',
         '**Die Form des Gewölbes ändern sie nur wenig.** In einer kleinen Studie mit 21\u00A0Personen ohne Kontrollgruppe sank das Gewölbe nach einem Monat Training mit dem Kurzen Fuß um 1,8\u00A0mm weniger ab (Mulligan und Cook, 2013). Rechne mit einem kräftigeren, stabileren Fuß, nicht mit einem neuen Gewölbe. Schuhe und Barfußlaufen sind eine eigene Frage, die unter [Barfußschuhe](/de/barfussschuhe/) behandelt wird.',
       ],
@@ -244,12 +244,12 @@ export const RUNNERS_FOOT_EXERCISES_DE: Guide = {
     },
     {
       q: 'Sollte ich Fußübungen vor oder nach dem Laufen machen?',
-      a: 'Nach einem lockeren Lauf oder an einem Ruhetag ist die praktische Wahl, weil die Übungen die kleinen Fußmuskeln ermüden. Keine Studie hat den Zeitpunkt verglichen. Mach keine ganze Routine direkt vor Tempotraining, einem langen Lauf oder einem Wettkampf, wenn du frische Füße und Waden willst.',
+      a: 'Nach einem lockeren Lauf oder an einem Ruhetag ist die praktische Wahl, weil die Übungen die kleinen Fußmuskeln ermüden. Keine Studie hat den Zeitpunkt verglichen. Mach keine ganze Routine direkt vor Tempotraining, einem langen Lauf oder einem Wettkampf, denn dafür willst du frische Füße und Waden.',
     },
     {
       q: 'Wie viele einbeinige Fersenheber sollte ein Läufer schaffen?',
       cites: [CITE.hebertLosier, CITE.lunsfordPerry],
-      a: 'Es gibt keine eigene Zahl für Läufer. Gesunde Erwachsene schaffen im Median etwa 23 bis 24 pro Bein in einem festen Takt, und 25 wurde als normal vorgeschlagen. Viele aktive Läuferinnen und Läufer schaffen mehr. Ein Unterschied von mehr als 10\u00A0Prozent zwischen den Beinen lohnt sich zu beobachten. Auf der Seite zum Fersenheben-Test findest du das vollständige Protokoll.',
+      a: 'Es gibt keine eigene Zahl für Läufer. Gesunde Erwachsene schaffen im Median etwa 23 bis 24 pro Bein in einem festen Takt, und 25 wurde als normal vorgeschlagen. Viele aktive Läuferinnen und Läufer schaffen mehr. Einen Unterschied von mehr als 10\u00A0Prozent zwischen den Beinen solltest du im Blick behalten. Auf der Seite zum Fersenheben-Test findest du das vollständige Protokoll.',
     },
     {
       q: 'Wie lange dauert es, bis Fußübungen etwas bringen?',

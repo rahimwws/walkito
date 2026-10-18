@@ -43,10 +43,10 @@ export const PF_VS_STRESS_FRACTURE_FR: Guide = {
       paragraphs: [
         '**L’indice le plus net, c’est l’effet de la marche sur la douleur.** La fasciite plantaire est pire aux premiers pas après le sommeil ou la position assise, se calme après quelques minutes et peut revenir après une longue journée debout (Tu, 2018). La recommandation de 2023 sur la douleur au talon la décrit comme une douleur «\u00A0surtout marquée lors de la mise en charge au lever ou après une période de repos\u00A0» (Koc et coll., 2023).',
         'Une fracture de fatigue du calcanéum est une fine fissure de l’os du talon due à une charge répétée. Sa douleur commence en général quand vous augmentez la marche, la course ou la station debout, ou quand vous passez à un sol plus dur. Au début, elle n’apparaît que pendant l’activité et augmente au fil de l’effort. Plus tard, elle peut être présente au repos (Tu, 2018). Dans une revue sur les fractures de fatigue en général, 81\u00A0% des patients signalaient une douleur à la marche, 65,9 à 100\u00A0% un point douloureux sur l’os et 18 à 44\u00A0% un gonflement (Patel et coll., 2011).',
-        'Le tableau résume les schémas habituels. Aucune ligne ne tranche à elle seule, et certaines personnes ne rentrent bien dans aucune des deux colonnes.',
+        'Le tableau résume les profils habituels. Aucune ligne ne tranche à elle seule, et certaines personnes ne rentrent bien dans aucune des deux colonnes.',
       ],
       table: {
-        caption: 'Schémas typiques, pas un diagnostic',
+        caption: 'Profils typiques, pas un diagnostic',
         head: ['', 'Fasciite plantaire', 'Fracture de fatigue du talon'],
         rows: [
           ['Moment le plus douloureux', 'Premiers pas après le repos', 'Pendant et après l’activité'],
@@ -94,7 +94,7 @@ export const PF_VS_STRESS_FRACTURE_FR: Guide = {
             '**Être une femme.** Les femmes ont plus de risque que les hommes, surtout pendant la formation militaire, même si les données chez les sportives sont contrastées (Patel et coll., 2011).',
           ],
         },
-        'La fasciite plantaire a un autre profil de risque. Dans une étude portant sur 50\u00A0personnes atteintes et 100 non atteintes, les personnes avec une flexion de la cheville vers le haut (dorsiflexion) de 0\u00A0degré ou moins avaient un risque (odds) 23,3\u00A0fois plus élevé que celles qui dépassaient 10\u00A0degrés, et rester debout la majeure partie de la journée de travail multipliait ce risque par 3,6 (Riddle et coll., 2003).',
+        'La fasciite plantaire a un autre profil de risque. Dans une étude portant sur 50\u00A0personnes atteintes et 100 non atteintes, les personnes avec une flexion de la cheville vers le haut (dorsiflexion) de 0\u00A0degré ou moins avaient une cote (odds) 23,3\u00A0fois plus élevée que celles qui dépassaient 10\u00A0degrés, et rester debout la majeure partie de la journée de travail multipliait cette cote par 3,6 (Riddle et coll., 2003).',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain, CITE.wardenBSI, CITE.mountjoyREDs, CITE.riddle],
     },
@@ -133,8 +133,8 @@ export const PF_VS_STRESS_FRACTURE_FR: Guide = {
       paragraphs: [
         '**Les étirements et la mise en charge aident la fasciite plantaire parce que le tissu s’adapte à la charge. Un os fissuré a d’abord besoin qu’on lui retire de la charge.** Les lésions de stress osseux s’inscrivent sur un continuum\u00A0: une réaction de stress peut évoluer vers une fracture de fatigue puis, si la charge continue, vers une fracture complète (Warden et coll., 2014).',
         'Les preuves en faveur de l’exercice sont propres à la fasciite plantaire. La recommandation de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet **A** et le renforcement **B** dans ce cadre (Koc et coll., 2023). Le programme de montées sur pointes de l’essai le plus connu a été testé chez 48\u00A0personnes atteintes de fasciite plantaire, pas chez des personnes ayant une fracture (Rathleff et coll., 2015).',
-        'Pour les fractures de fatigue, les preuves vont dans l’autre sens. Deux essais randomisés en grappes ont montré que les étirements des jambes pendant l’échauffement ne prévenaient pas les fractures de fatigue (Patel et coll., 2011). Ce qui compte, c’est de réduire la charge, puis de reprendre progressivement sous l’œil d’un professionnel de santé. Une fois la fracture remise, renforcer les muscles autour de l’os fait partie de la prévention de la suivante (Warden et coll., 2014).',
-        'C’est pourquoi les exercices de cette page concernent uniquement la fasciite plantaire. Si l’on vous a dit que vous aviez une fracture de fatigue, suivez plutôt le plan de reprise de votre médecin.',
+        'Pour les fractures de fatigue, les preuves vont dans l’autre sens. Deux essais randomisés en grappes ont montré que les étirements des jambes pendant l’échauffement ne prévenaient pas les fractures de fatigue (Patel et coll., 2011). Ce qui compte, c’est de réduire la charge, puis de reprendre progressivement sous l’œil d’un professionnel de santé. Une fois la fracture consolidée, renforcer les muscles autour de l’os fait partie de la prévention de la suivante (Warden et coll., 2014).',
+        'C’est pourquoi les exercices de cette page concernent uniquement la fasciite plantaire. Si l’on vous a dit que vous aviez une fracture de fatigue, suivez plutôt le plan de reprise du professionnel de santé qui vous suit.',
       ],
       cites: [CITE.wardenBSI, CITE.guideline, CITE.rathleff, CITE.patelStressFracture],
     },

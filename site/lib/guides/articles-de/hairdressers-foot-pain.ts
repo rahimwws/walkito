@@ -22,7 +22,7 @@ export const HAIRDRESSERS_DE: Guide = {
     'Warum Friseurinnen und Friseuren vom Stehen am Platz die Füße wehtun, was Studien zeigen, welche Schuhe, Matten und Hocker helfen, plus kurze Übungen.',
   h1: 'Fußschmerzen im Friseurberuf: was hilft, wenn du den ganzen Tag an einer Stelle stehst',
   lede:
-    'Fußschmerzen im Friseurberuf kommen vor allem vom stundenlangen Stillstehen am Stuhl, nicht vom Gehen. Die Möglichkeiten mit etwas Belegen zielen deshalb auf das Stehen an einer Stelle: ein gedämpfter Boden oder Schuh, leichte Kompressionsstrümpfe und eine Minute Wadenübungen zwischen zwei Kundinnen oder Kunden. In einer Studie mit 384\u00A0Friseurinnen und Friseuren und 384\u00A0Menschen in anderen Berufen berichteten 49,5\u00A0% der Friseure über Knie- oder Fußschmerzen, gegenüber 38,3\u00A0% der Vergleichsgruppe (Mishra und Sarkar, 2021).',
+    'Fußschmerzen im Friseurberuf kommen vor allem vom stundenlangen Stillstehen am Stuhl, nicht vom Gehen. Die Maßnahmen, für die es zumindest einige Belege gibt, setzen deshalb beim Stehen an einer Stelle an: ein gedämpfter Boden oder Schuh, leichte Kompressionsstrümpfe und eine Minute Wadenübungen zwischen zwei Kundinnen oder Kunden. In einer Studie mit 384\u00A0Friseurinnen und Friseuren und 384\u00A0Menschen in anderen Berufen berichteten 49,5\u00A0% der Friseure über Knie- oder Fußschmerzen, gegenüber 38,3\u00A0% der Vergleichsgruppe (Mishra und Sarkar, 2021).',
   intro: [
     'Die Forschung zum Friseurberuf schaut vor allem auf Schultern, Nacken, Handgelenke und Rücken. Die Füße bekommen viel weniger Aufmerksamkeit, und diese Seite sagt, wo die Daten dünn sind. Sie behandelt, was über Füße und Beine im Friseurberuf bekannt ist, die Belege zum Stehen, die auf die Arbeit im Salon passen, und wie du Übungen in die Lücken zwischen den Terminen einbaust. Für Schmerzen vom Stehen im Allgemeinen lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Für Schichtarbeit mit viel Gehen lies [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/).',
   ],
@@ -32,7 +32,7 @@ export const HAIRDRESSERS_DE: Guide = {
     'Ein Scoping-Review von 2019 mit 44\u00A0Studien fand nur 5, die Fußschmerzen im Friseurberuf erfassten, mit Werten von 10 bis 44\u00A0%. Die meisten Studien betrachteten Rücken, Nacken, Schultern und Hände, und Stehen war einer der häufigen Risikofaktoren (Kozak und Kollegen, 2019).',
     'In einer randomisierten Crossover-Studie mit 108\u00A0Friseurinnen und Friseuren senkten Kompressionsstrümpfe mit 15 bis 20\u00A0mmHg den Wert für Beinschmerzen und Schwellungsgefühl um 12\u00A0% und das Volumen des Unterschenkels im Schnitt um 19\u00A0ml (Blazek und Kollegen, 2013).',
     'Eine Übersichtsarbeit von 2018 mit 10\u00A0Studien fand mäßige Belege, dass weichere Böden und gedämpfte Einlagen Beschwerden und Ermüdung bei Menschen verringern, die im Stehen arbeiten (Speed und Kollegen, 2018).',
-    'Eine verkürzte Wade war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).',
+    'Eine verkürzte Wade war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis, mit einer um das 23,3-Fache erhöhten Chance, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).',
   ],
   sections: [
     {
@@ -44,7 +44,7 @@ export const HAIRDRESSERS_DE: Guide = {
         'Eine britische Studie mit 147\u00A0Friseurinnen und Friseuren und 67\u00A0Menschen in anderen Berufen fand arbeitsbedingte Bein- oder Fußschmerzen bei den Friseuren deutlich häufiger. Die Chance war 31-mal höher, aber der statistische Bereich war sehr breit, von etwa dem 4- bis zum 267-Fachen. Wie groß der Unterschied wirklich ist, bleibt also unsicher. In einer türkischen Studie von 2023 waren nach dem unteren Rücken die Unterschenkel die schmerzhaftesten Bereiche: 36,9\u00A0% rechts und 32,5\u00A0% links.',
       ],
       sourceNote:
-        'Mishra und Sarkar (2021): Querschnittstudie, 384\u00A0Friseurinnen und Friseure und 384\u00A0Kontrollen, 12-Monats-Prävalenz, Knie und Fuß in einer Kategorie. Bradshaw und Kollegen (2011): Fragebogen im Interview, adjustiertes Odds Ratio 31,0 (95-%-KI 3,8 bis 267,4). Ince Parpucu und Kollegen (2023): Cornell Musculoskeletal Discomfort Questionnaire, letzte Woche.',
+        'Mishra und Sarkar (2021): Querschnittstudie, 384\u00A0Friseurinnen und Friseure und 384\u00A0Kontrollen, 12-Monats-Prävalenz, Knie und Fuß in einer Kategorie. Bradshaw und Kollegen (2011): interviewergeführter Fragebogen, adjustiertes Odds Ratio 31,0 (95-%-KI 3,8 bis 267,4). Ince Parpucu und Kollegen (2023): Cornell Musculoskeletal Discomfort Questionnaire, vergangene Woche.',
       cites: [CITE.kozakHairdressing, CITE.mishraHairdressers, CITE.bradshawHairdressers, CITE.inceParpucuHairdressers],
     },
     {
@@ -58,7 +58,7 @@ export const HAIRDRESSERS_DE: Guide = {
             'Das Fersenpolster und die Plantarfaszie, das Band unter dem Gewölbe, tragen eine gleichbleibende Last ohne Pause.',
           ],
         },
-        'Laborstudien zeigen, wie schnell sich das aufbaut. Eine Übersichtsarbeit von 2017 mit 25\u00A0Laborstudien fand, dass Beschwerden im unteren Rücken im Schnitt nach etwa 71\u00A0Minuten Stehen klinisch relevant wurden, bei Menschen, die zu Schmerzen beim Stehen neigen, nach 42\u00A0Minuten. Eine einzige Farbe oder ein Schnitt kann länger dauern. Eine Übersichtsarbeit von 2015 zum Stehen bei der Arbeit brachte langes Stehen in vielen Berufen mit Schmerzen im unteren Rücken und in den Beinen, Beschwerden und Ermüdung in Verbindung.',
+        'Laborstudien zeigen, wie schnell sich das aufbaut. Eine Übersichtsarbeit von 2017 mit 25\u00A0Laborstudien fand, dass Beschwerden im unteren Rücken im Schnitt nach etwa 71\u00A0Minuten Stehen klinisch relevant wurden, bei Menschen, die zu Schmerzen beim Stehen neigen, nach 42\u00A0Minuten. Eine einzelne Färbung oder ein Haarschnitt kann länger dauern. Eine Übersichtsarbeit von 2015 zum Stehen bei der Arbeit brachte langes Stehen in vielen Berufen mit Schmerzen im unteren Rücken und in den Beinen, Beschwerden und Ermüdung in Verbindung.',
         'In einer Studie von 2023 mit türkischen Friseurinnen und Friseuren hatten diejenigen, die über Ermüdung in den Unterschenkeln berichteten, auch mehr Schmerzen in Knien und Unterschenkeln und schlechtere Werte für Energie und Beweglichkeit. **Auch die Schwellung lässt sich messen:** Bei 38\u00A0Friseurinnen und Friseuren nahm der Knöchelumfang an einem Tag ohne Kompression von 21,1\u00A0cm am Morgen auf 22,1\u00A0cm am Abend zu.',
       ],
       cites: [CITE.coenen, CITE.waters, CITE.inceParpucuHairdressers, CITE.agleHosiery],
@@ -66,7 +66,7 @@ export const HAIRDRESSERS_DE: Guide = {
     {
       h2: 'Wirkt sich die Haltung am Stuhl auf deine Füße aus?',
       paragraphs: [
-        'Studien zur Haltung im Friseurberuf konzentrieren sich auf Rücken und Arme, nicht auf die Füße. Ein Scoping-Review berichtete, dass Friseurinnen und Friseure sich beim Schneiden und Waschen oft vorbeugen oder verdrehen, und dass die Wirbelsäule beim Schneiden in einer Messstudie 66\u00A0% der Zeit nach vorn gebeugt war. Wer sich lange vorbeugt, verlagert das Gewicht meist zum Vorfuß.',
+        'Studien zur Haltung im Friseurberuf konzentrieren sich auf Rücken und Arme, nicht auf die Füße. Ein Scoping-Review berichtete, dass Friseurinnen und Friseure sich beim Schneiden und Waschen oft vorbeugen oder den Oberkörper verdrehen, und dass die Wirbelsäule beim Schneiden in einer Messstudie 66\u00A0% der Zeit nach vorn gebeugt war. Wer sich lange vorbeugt, verlagert das Gewicht meist zum Vorfuß.',
         'Keine Studie hat gemessen, wie die Haltung im Salon die Last auf den Füßen verändert. Was du steuern kannst, ist einfach: Stell den Stuhl der Kundin oder des Kunden höher oder tiefer, damit du dich nicht vorbeugen musst, verteil dein Gewicht auf beide Füße und wechsel alle paar Minuten deinen Stand. In einer Laborstudie über vier Stunden Stehen berichteten Menschen, die ihr Gewicht häufiger verlagerten, auch über mehr Beschwerden. Häufiges Verlagern kann also ein Zeichen sein, dass sich Beschwerden aufbauen, und ein guter Anlass für eine kurze Pause (Wiggermann und Keyserling, 2013).',
         'Wenn dir mit den Füßen auch der Rücken wehtut, wirkt der Zusammenhang in beide Richtungen. [Plattfuß und Rückenschmerzen](/de/plattfuss-rueckenschmerzen/) zeigt, was die Forschung dazu sagt.',
       ],
@@ -76,7 +76,7 @@ export const HAIRDRESSERS_DE: Guide = {
       h2: 'Welche Schuhe sind die besten für Friseurinnen und Friseure?',
       paragraphs: [
         '**Keine Studie hat Schuharten im Friseurberuf verglichen.** Die Schuhtipps im Netz stammen von Schuhmarken oder Praxen, nicht aus Studien in Salons. Was die breitere Forschung zum Stehen stützt, ist Dämpfung: Eine Übersichtsarbeit von 2018 mit 10\u00A0Studien fand mäßige Belege, dass gedämpfte Einlagen und weichere Böden Beschwerden und Ermüdung bei Menschen verringern, die im Stehen arbeiten, und begrenzte Belege, dass Einlagen mehr bringen als Matten.',
-        'In der Praxis achte auf:',
+        'In der Praxis solltest du auf Folgendes achten:',
         {
           list: [
             'Eine gedämpfte Sohle und etwas Unterstützung fürs Gewölbe, damit Ferse und Gewölbe nicht die volle Last eines harten Bodens tragen.',
@@ -113,7 +113,7 @@ export const HAIRDRESSERS_DE: Guide = {
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Wadendehnung und Plantarfaszien-Dehnung mit A, ihrem höchsten Empfehlungsgrad, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
         'Es sind dieselben Übungen wie bei [Plantarfasziitis](/de/plantarfasziitis/) und Schmerzen vom Stehen im Allgemeinen: Wadendehnungen, Fersenheben und eine Plantarfaszien-Dehnung. Anders ist im Friseurberuf das Timing. **Zwischen den Kundinnen und Kunden hast du kurze Lücken, also nimm eine oder zwei Übungen pro Lücke statt einer ganzen Routine.** Keine Studie hat Übungspausen für die Füße im Friseurberuf getestet. Die Dosierungen hier stammen deshalb aus dem Hauptratgeber zu Fersenschmerzen.',
-        'Die Wade zählt am meisten. In einer Fall-Kontroll-Studie erhöhte eine verkürzte Wade die Chance auf Plantarfasziitis um das 23,3-Fache, mehr als jeder andere Faktor. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
+        'Am wichtigsten ist die Wade. In einer Fall-Kontroll-Studie erhöhte eine verkürzte Wade die Chance auf Plantarfasziitis um das 23,3-Fache, mehr als jeder andere Faktor. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
       ],
       exercises: [
         {
@@ -147,7 +147,7 @@ export const HAIRDRESSERS_DE: Guide = {
           name: 'Fersenheben im Sitzen',
           evidence: { level: 'moderate', why: 'Die Leitlinie von 2023 bewertet Krafttraining mit B. Diese Stufe wurde nicht für sich allein getestet.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
-          how: 'Setz dich auf deinen Hocker, die Füße flach, und drück dich über die Fußballen nach oben. Die Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, fast ohne Last auf der Ferse. Eine gute Wahl, wenn deine Fersen schon wund sind.',
+          how: 'Setz dich auf deinen Hocker, die Füße flach, und drück dich über die Fußballen nach oben. Die Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, fast ohne Last auf der Ferse. Eine gute Wahl, wenn deine Fersen schon schmerzen.',
           media: 'heel_raise_seated',
           caption: 'Fersenheben im Sitzen: über die Fußballen nach oben drücken',
           alt: 'Eine sitzende Figur hebt beide Fersen, die Waden sind hervorgehoben',
@@ -194,7 +194,7 @@ export const HAIRDRESSERS_DE: Guide = {
       paragraphs: [
         '**Kompressionsstrümpfe gehören zu den wenigen Dingen, die direkt im Friseurberuf getestet wurden.** In einer randomisierten Crossover-Studie aus der Schweiz trugen 108\u00A0Friseurinnen und Friseure in einem Zeitraum leichte Kompressionsstrümpfe (15 bis 20\u00A0mmHg) und in einem anderen keine. Mit Strümpfen sank der Wert für Beinschmerzen und Schwellungsgefühl im Schnitt um 12\u00A0%, und das Volumen des Unterschenkels nahm um 19\u00A0ml ab. Auch die Werte für Schlaf und Stimmung wurden besser.',
         'Eine kleinere brasilianische Studie mit 38\u00A0Friseurinnen und Friseuren maß den Knöchel. Ohne Strümpfe nahm der Umfang von 21,1\u00A0cm am Morgen auf 22,1\u00A0cm am Abend zu. Mit Strümpfen lag er am Abend bei 21,2\u00A0cm, also etwa so wie am Morgen.',
-        'Die Effekte waren mäßig, und die Studien maßen Schwellung und Beschwerden in den Beinen, nicht Fußerkrankungen wie die Plantarfasziitis. Eine Studie von 2023 mit Sicherheitskräften fand ähnliche Ergebnisse bei langen Schichten im Stehen. **Strümpfe helfen gegen Schwellung und schwere Beine, Wade und Gewölbe brauchen trotzdem ihre eigenen Übungen.** Wenn du Diabetes, eine schlechte Durchblutung oder taube Füße hast, lass vor dem Tragen von Kompressionsstrümpfen ärztlich abklären, ob sie für dich passen.',
+        'Die Effekte waren eher klein, und die Studien maßen Schwellung und Beschwerden in den Beinen, nicht Fußerkrankungen wie die Plantarfasziitis. Eine Studie von 2023 mit Sicherheitskräften fand ähnliche Ergebnisse bei langen Schichten im Stehen. **Strümpfe helfen gegen Schwellung und schwere Beine, Wade und Gewölbe brauchen trotzdem ihre eigenen Übungen.** Wenn du Diabetes, eine schlechte Durchblutung oder taube Füße hast, lass vor dem Tragen von Kompressionsstrümpfen ärztlich abklären, ob sie für dich passen.',
       ],
       sourceNote:
         'Blazek und Kollegen (2013): randomisierte Crossover-Studie, 108\u00A0Friseurinnen und Friseure, medizinische Kompressionsstrümpfe mit 15 bis 20\u00A0mmHg gegen keine, Symptomwert auf einer Skala von 0 bis 4 (mittlere Abnahme 0,22). Agle und Kollegen (2020): 38\u00A0Friseurinnen und Friseure ohne Venenerkrankung, Knöchelumfang an Messpunkt B, morgens und abends, mit und ohne Strümpfe.',
@@ -235,7 +235,7 @@ export const HAIRDRESSERS_DE: Guide = {
     },
     {
       q: 'Sollten Friseurinnen und Friseure Kompressionsstrümpfe tragen?',
-      a: 'Leichte Kompression gehört zu den wenigen Möglichkeiten, die im Friseurberuf getestet wurden. In einer Crossover-Studie mit 108\u00A0Friseurinnen und Friseuren senkten Strümpfe mit 15 bis 20\u00A0mmHg den Wert für Beinschmerzen und Schwellungsgefühl um 12\u00A0% und das Volumen des Unterschenkels um 19\u00A0ml. Der Effekt war mäßig. Wenn du Diabetes oder eine schlechte Durchblutung hast, lass es vorher ärztlich abklären.',
+      a: 'Leichte Kompression gehört zu den wenigen Möglichkeiten, die im Friseurberuf getestet wurden. In einer Crossover-Studie mit 108\u00A0Friseurinnen und Friseuren senkten Strümpfe mit 15 bis 20\u00A0mmHg den Wert für Beinschmerzen und Schwellungsgefühl um 12\u00A0% und das Volumen des Unterschenkels um 19\u00A0ml. Der Effekt war eher klein. Wenn du Diabetes oder eine schlechte Durchblutung hast, lass es vorher ärztlich abklären.',
       cites: [CITE.blazekHosiery],
     },
     {

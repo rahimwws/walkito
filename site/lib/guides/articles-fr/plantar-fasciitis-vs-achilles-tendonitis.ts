@@ -78,7 +78,7 @@ export const PF_VS_ACHILLES_FR: Guide = {
         ],
       },
       after: [
-        'Les facteurs de risque viennent d’études différentes. Pour la fasciite plantaire, les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient un risque 23,3\u00A0fois plus élevé, et un indice de masse corporelle supérieur à 30 ainsi que le fait de rester debout la plus grande partie de la journée de travail augmentaient aussi le risque (Riddle et coll., 2003). Dans une étude néerlandaise portant sur 57\u00A0725\u00A0personnes inscrites chez un médecin généraliste, une tendinopathie d’Achille du corps du tendon a été diagnostiquée en un an chez 2,35 adultes de 21 à 60\u00A0ans sur 1\u00A0000, et 35\u00A0% des cas étaient liés au sport (de Jonge et coll., 2011).',
+        'Les facteurs de risque viennent d’études différentes. Pour la fasciite plantaire, les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire, et un indice de masse corporelle supérieur à 30 ainsi que le fait de rester debout la plus grande partie de la journée de travail augmentaient aussi cette cote (Riddle et coll., 2003). Dans une étude néerlandaise portant sur 57\u00A0725\u00A0personnes inscrites chez un médecin généraliste, une tendinopathie d’Achille du corps du tendon a été diagnostiquée en un an chez 2,35 adultes de 21 à 60\u00A0ans sur 1\u00A0000, et 35\u00A0% des cas étaient liés au sport (de Jonge et coll., 2011).',
       ],
       cites: [CITE.guideline, CITE.achillesGuideline, CITE.riddle, CITE.deJongeIncidence],
     },

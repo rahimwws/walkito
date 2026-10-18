@@ -32,7 +32,7 @@ export const TEACHERS_FR: Guide = {
     'Dans une enquête auprès de 1\u00A0439\u00A0enseignants d’une seule région d’Arabie saoudite, 85,5\u00A0% rapportaient une douleur au pied au cours des 12\u00A0derniers mois, plus fréquente chez ceux qui donnaient 16\u00A0cours ou plus par semaine (Alqahtani, 2020). D’autres enquêtes ont trouvé des chiffres bien plus bas\u00A0: lisez-le comme le résultat d’une région.',
     'Nous n’avons trouvé aucune étude ayant mesuré combien d’heures un enseignant type passe debout. Dans une étude de 50\u00A0cas et 100\u00A0témoins, rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire, et une cheville très peu souple, le plus souvent à cause d’un mollet raide, la multipliait par 23,3 (Riddle et coll., 2003).',
     'La recommandation de 2023 sur la douleur au talon donne aux étirements du fascia plantaire et du mollet la **note A** et au renforcement la **note B**. Les semelles seules reçoivent une **note B contre** (Koc et coll., 2023).',
-    'Sur 50\u00A0personnes souffrant du talon et 25 sans douleur, celles qui avaient mal restaient debout 3,4\u00A0heures de plus par jour et portaient des chaussures au talon plus dur. C’est un lien, pas la preuve d’une cause (Landorf et coll., 2023).',
+    'Sur 50\u00A0personnes ayant mal au talon et 25 sans douleur, celles qui avaient mal restaient debout 3,4\u00A0heures de plus par jour et portaient des chaussures au talon plus dur. C’est un lien, pas la preuve d’une cause (Landorf et coll., 2023).',
   ],
   sections: [
     {
@@ -181,7 +181,7 @@ export const TEACHERS_FR: Guide = {
             'une deuxième paire pour alterner, afin de ne pas porter chaque jour la même paire usée',
           ],
         },
-        '**Les semelles peuvent rendre la journée plus confortable, mais ne comptez pas sur elles seules.** La recommandation de 2023 donne aux semelles seules une **note B contre**, et associées aux étirements et au renforcement une **note C** (Koc et coll., 2023). [Semelles ou exercices](/fr/semelles-ou-exercices/) compare les deux et explique quoi regarder dans des semelles pour la fasciite plantaire.',
+        '**Les semelles peuvent rendre la journée plus confortable, mais ne comptez pas sur elles seules.** La recommandation de 2023 donne aux semelles seules une **note B contre**, et associées aux étirements et au renforcement une **note C** (Koc et coll., 2023). [Semelles ou exercices](/fr/semelles-ou-exercices/) compare les deux.',
         'Les bas de compression sont une autre option si vos jambes sont lourdes et gonflées en fin de journée. Dans un essai auprès de 40\u00A0agents de sécurité en longues vacations debout, des bas de 15 à 20\u00A0mmHg et de 20 à 30\u00A0mmHg évitaient tous deux la hausse de l’inconfort et du gonflement des jambes observée avec des chaussettes ordinaires (Garcia et coll., 2023). Ce n’était pas une étude sur des enseignants.',
       ],
       cites: [CITE.landorfFootwear, CITE.guideline, CITE.garcia],
@@ -264,7 +264,7 @@ export const TEACHERS_FR: Guide = {
       'la douleur a commencé après une chute, une torsion ou un choc, par exemple pendant la surveillance de la cour ou dans les escaliers',
       'vous ne pouvez pas poser le pied, ou vous boitez',
       'le pied est engourdi, fourmille, brûle, est gonflé ou chaud',
-      'le talon ou le pied est rouge, ou vous avez de la fièvre ou vous sentez mal',
+      'le talon ou le pied est rouge, ou vous avez de la fièvre ou ne vous sentez pas bien',
       'la douleur vous réveille la nuit ou est présente au repos',
       'la douleur se situe en un point précis et s’aggrave à l’effort, ce qui peut évoquer une fracture de fatigue',
       'un mollet ou une jambe a gonflé soudainement et est douloureux, rouge ou chaud',

@@ -67,7 +67,7 @@ export const WALKING_PF_FR: Guide = {
       },
       after: [
         'Le contrôle du matin est le plus important. La douleur aux premiers pas est le symptôme classique de la fasciite plantaire, et c’est le signe le plus clair de la façon dont votre pied a encaissé la veille. [Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) traite de ce schéma et des étirements à faire avant de vous lever.',
-        'Une douleur vive qui vous fait boiter, une douleur qui augmente à chaque marche et ne se calme pas au repos, ou une douleur la nuit sortent du cadre de cette règle. Consultez la liste en fin de page.',
+        'Une douleur vive qui vous fait boiter, une douleur qui augmente à chaque marche et ne se calme pas au repos, ou une douleur la nuit sortent du cadre de cette règle. Une boiterie peut aussi charger différemment le genou, la hanche et le dos. Consultez la liste en fin de page.',
       ],
       sourceNote: 'Silbernagel 2007\u00A0: 19\u00A0personnes par groupe. Le score VISA-A-S est passé de 57 à 85 dans le groupe actif et de 57 à 91 dans le groupe au repos à douze mois, sans différence significative dans la vitesse d’amélioration.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -76,7 +76,7 @@ export const WALKING_PF_FR: Guide = {
       h2: 'Combien de pas par jour avec une fasciite plantaire\u00A0?',
       keyFact: 'Aucune étude ne donne un nombre de pas quotidien pour la fasciite plantaire. Dans une analyse groupée de 47\u00A0471\u00A0adultes, la baisse du risque de décès se stabilisait entre 6\u00A0000 et 8\u00A0000\u00A0pas par jour chez les 60\u00A0ans et plus (Paluch et coll., 2022).',
       paragraphs: [
-        '**Il n’existe pas de nombre de pas fondé sur des preuves pour la fasciite plantaire.** Nous n’avons trouvé aucun essai qui ait fixé un nombre de pas ou une distance de marche à des personnes souffrant du talon et mesuré le résultat. Tout site qui vous donne un chiffre précis pour la douleur au talon le devine.',
+        '**Il n’existe pas de nombre de pas fondé sur des preuves pour la fasciite plantaire.** Nous n’avons trouvé aucun essai qui ait fixé un nombre de pas ou une distance de marche à des personnes souffrant du talon et mesuré le résultat. Tout site qui vous donne un chiffre précis pour la douleur au talon ne fait que deviner.',
         'Les fameux 10\u00A0000\u00A0pas sont un objectif de santé générale, pas un chiffre issu de la recherche sur le pied, et même là, les preuves sont minces. Une analyse de 2022 portant sur 15\u00A0études et 47\u00A0471\u00A0adultes a montré que plus de pas par jour allaient de pair avec un risque de décès plus faible, mais le bénéfice se stabilisait vers 6\u00A0000 à 8\u00A0000\u00A0pas par jour chez les adultes de 60\u00A0ans et plus, et vers 8\u00A0000 à 10\u00A0000 chez les adultes plus jeunes (Paluch et coll., 2022). Il s’agit de santé à long terme, pas de ce qu’un talon irrité peut supporter cette semaine.',
         'Le chiffre le plus utile, c’est le vôtre. La plupart des téléphones comptent les pas. Regardez une semaine normale avant que le talon ne se manifeste et une semaine normale maintenant. Cela vous donne un point de départ, et la règle de douleur ci-dessus vous dit s’il faut maintenir, ajouter ou réduire.',
         'Fractionner la marche aide peut-être plus que le total. Le guide de bonnes pratiques de 2021 conseille d’interrompre les longues périodes de charge statique, comme la station debout (Morrissey et coll., 2021). Plusieurs petites marches réparties dans la journée imposent au talon une charge moins continue qu’une longue marche, même si aucune étude n’a comparé les deux pour la fasciite plantaire.',
@@ -133,7 +133,7 @@ export const WALKING_PF_FR: Guide = {
       keyFact: 'La recommandation de 2023 donne aux étirements du fascia plantaire et du mollet la note A et au renforcement musculaire la note B (Koc et coll., 2023).',
       paragraphs: [
         'Les exercices peuvent aider le talon à tolérer plus de charge, de sorte que la même marche respecte plus facilement la règle de douleur avec le temps, même si aucune étude ne l’a testé pour la marche. La recommandation de 2023 donne aux étirements du fascia plantaire et du mollet la note **A**, sa meilleure note, et au renforcement musculaire la note **B**.',
-        'Un mollet raide fait partie du tableau. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une flexion limitée de la cheville était le facteur de risque le plus fort, et rester debout la majeure partie de la journée de travail augmentait aussi le risque (Riddle et coll., 2003). Voyez [mollets tendus](/fr/mollets-tendus/).',
+        'Un mollet raide fait partie du tableau. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, une flexion limitée de la cheville était le facteur de risque le plus fort, et rester debout la majeure partie de la journée de travail augmentait aussi la cote (odds) de fasciite plantaire (Riddle et coll., 2003). Voyez [mollets tendus](/fr/mollets-tendus/).',
         'Dans un essai sur 48\u00A0personnes, des montées sur pointes lourdes ont soulagé la douleur et amélioré la fonction au quotidien plus vite que les étirements, et à douze mois les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). Les fiches ci-dessous sont les doses de départ de Walkito, pas une prescription. Le programme complet se trouve dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
       exercises: [
@@ -223,7 +223,7 @@ export const WALKING_PF_FR: Guide = {
     {
       q: 'Faut-il marcher avec une fasciite plantaire\u00A0?',
       cites: [CITE.guideline, CITE.rielHeelRaiseAdd],
-      a: 'En général oui, dans des quantités que votre talon supporte. La recommandation de 2023 sur la douleur au talon préconise d’adapter la charge en appui et ne conseille pas d’arrêter, même si ce conseil repose sur la théorie (note E). Dans un essai sur 180\u00A0adultes, le conseil de rester actif tout en réduisant les activités qui aggravent la douleur, plus une talonnette, s’est accompagné d’une amélioration significative à environ trois mois.',
+      a: 'En général oui, dans des quantités que votre talon supporte. La recommandation de 2023 sur la douleur au talon préconise d’adapter la charge en appui et ne conseille pas d’arrêter, même si ce conseil repose sur la théorie (note E). Dans un essai sur 180\u00A0adultes, le conseil de rester actif tout en réduisant les activités qui aggravent la douleur, plus une talonnette, s’est accompagné d’une amélioration cliniquement significative à environ trois mois.',
     },
     {
       q: 'La marche est-elle bonne pour la fasciite plantaire\u00A0?',

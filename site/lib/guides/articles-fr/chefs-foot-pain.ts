@@ -23,11 +23,11 @@ export const CHEFS_FR: Guide = {
   lede:
     'Le mal aux pieds en cuisine vient souvent des longues heures debout et à marcher sur des sols durs. Pour la douleur au talon, les options les mieux étayées sont les étirements du mollet et du fascia plantaire, auxquels la recommandation de 2023 sur la douleur au talon donne la **note A**, et le renforcement du mollet, **note B** (Koc et coll., 2023). Les chaussures antidérapantes relèvent de la sécurité, pas de la douleur\u00A0: dans un essai randomisé mené dans 226\u00A0districts scolaires, fournir gratuitement des chaussures antidérapantes au personnel de restauration scolaire a fait baisser les déclarations de blessures par glissade de 3,54 à 1,18 pour 10\u00A0000\u00A0mois-travailleur (Bell et coll., 2019). Aucune étude n’a vérifié si les sabots ou une autre chaussure de cuisine réduisent la douleur aux pieds elle-même.',
   intro: [
-    'Cette page porte sur le versant cuisine du problème\u00A0: des sols durs, mouillés et gras, le rush du service et des chaussures choisies pour leur adhérence. Pour le mal aux pieds lié à la station debout dans n’importe quel métier, voyez [pourquoi j’ai mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/). Pour les gardes à l’hôpital, voyez [mal aux pieds des infirmières](/fr/mal-aux-pieds-infirmieres/). Si votre talon fait surtout mal aux premiers pas après le repos, ce schéma oriente vers une [fasciite plantaire](/fr/fasciite-plantaire/).',
+    'Cette page porte sur le versant cuisine du problème\u00A0: des sols durs, mouillés et gras, le coup de feu du service et des chaussures choisies pour leur adhérence. Pour le mal aux pieds lié à la station debout dans n’importe quel métier, voyez [pourquoi j’ai mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/). Pour les gardes à l’hôpital, voyez [mal aux pieds des infirmières](/fr/mal-aux-pieds-infirmieres/). Si votre talon fait surtout mal aux premiers pas après le repos, ce schéma oriente vers une [fasciite plantaire](/fr/fasciite-plantaire/).',
   ],
   toc: true,
   takeaways: [
-    'Dans une enquête auprès de 128\u00A0employés de cuisine au Caire, 46,1\u00A0% rapportaient une douleur au pied au cours des 12\u00A0derniers mois, derrière seulement le bas du dos et le genou (Abdelsalam et coll., 2023).',
+    'Dans une enquête auprès de 128\u00A0employés de cuisine au Caire, 46,1\u00A0% rapportaient une douleur au pied au cours des 12\u00A0derniers mois, devancée seulement par le bas du dos et le genou (Abdelsalam et coll., 2023).',
     'Chez 475\u00A0employés de 36\u00A0restaurants de restauration rapide aux États-Unis, porter des chaussures antidérapantes était associé à un taux de glissades inférieur de 54\u00A0% (Verma et coll., 2011).',
     'Dans un essai randomisé en restauration scolaire, les déclarations de blessures par glissade sont passées de 3,54 à 1,18 pour 10\u00A0000\u00A0mois-travailleur là où le personnel recevait des chaussures antidérapantes gratuites, alors qu’elles passaient de 2,01 à 2,30 dans le groupe témoin (Bell et coll., 2019).',
     'Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire dans une étude de 50\u00A0cas et 100\u00A0témoins, et un mollet tendu la multipliait par 23,3 (Riddle et coll., 2003).',
@@ -69,7 +69,7 @@ export const CHEFS_FR: Guide = {
       paragraphs: [
         '**Les données les plus solides sur les chaussures de cuisine portent sur les glissades, pas sur les pieds douloureux.** Une étude américaine a suivi 475\u00A0employés de 36\u00A0restaurants de restauration rapide pendant trois mois. Ceux dont les chaussures portaient un marquage antidérapant sur la semelle rapportaient un taux de glissades inférieur de 54\u00A0% à celui des employés sans ce type de chaussures, après prise en compte de l’âge, du sexe, du poids et d’autres facteurs (Verma et coll., 2011).',
         'Un essai randomisé l’a ensuite testé comme programme. Des districts scolaires ont été tirés au sort pour fournir gratuitement des chaussures antidérapantes à leur personnel de restauration. Les déclarations de blessures par glissade sont passées de 3,54 à 1,18 pour 10\u00A0000\u00A0mois-travailleur dans ces districts, et de 2,01 à 2,30 dans les autres (Bell et coll., 2019).',
-        'Les chaussures s’usent. Chez les mêmes employés de restaurant, ceux qui portaient déjà des chaussures antidérapantes et sont passés à une paire neuve avaient ensuite un taux de glissades inférieur de 55\u00A0%, et les chaussures portées depuis moins de six mois faisaient un peu mieux que les plus anciennes (Verma et coll., 2014). L’étude n’a pas pu dire exactement quand les remplacer.',
+        'Les chaussures s’usent. Chez les mêmes employés de restaurant, ceux qui portaient déjà des chaussures antidérapantes et sont passés à une paire neuve avaient ensuite un taux de glissades inférieur de 55\u00A0%, et les chaussures portées depuis moins de six mois faisaient modérément mieux que les plus anciennes (Verma et coll., 2014). L’étude n’a pas pu dire exactement quand les remplacer.',
         '**Aucune étude que nous ayons trouvée ne compare les sabots aux baskets, ni une chaussure de cuisine à une autre, pour la douleur aux pieds.** Pour la douleur au talon en général, la recommandation de 2023 donne aux [semelles](/fr/semelles-ou-exercices/) seules une **note B contre**\u00A0: les données disent de ne pas compter uniquement sur elles. Un ordre raisonnable\u00A0: choisissez une chaussure à semelle antidérapante qui va à votre pied tel qu’il est aujourd’hui et ne serre pas les orteils, remplacez-la quand les crampons sont usés, et faites les étirements et le renforcement ci-dessous pour la douleur elle-même.',
       ],
       table: {
@@ -199,7 +199,7 @@ export const CHEFS_FR: Guide = {
     {
       h2: 'Comment caser les exercices dans un service en cuisine\u00A0?',
       paragraphs: [
-        'Une coupure ou un double service laisse peu de place pour une routine\u00A0: associez donc les exercices à quelque chose que vous faites déjà\u00A0:',
+        'Une coupure ou un double service laisse peu de place pour une routine. Associez donc les exercices à quelque chose que vous faites déjà\u00A0:',
         {
           list: [
             '**Si vous avez 3\u00A0minutes\u00A0:** l’étirement du mollet et l’étirement du soléaire, 30\u00A0secondes de chaque côté, avant le service ou quand vous changez de chaussures. Cela cible le mollet tendu, le facteur de risque le plus fort de l’étude cas-témoins.',
@@ -232,7 +232,7 @@ export const CHEFS_FR: Guide = {
     {
       q: 'Tous les combien faut-il remplacer ses chaussures de cuisine\u00A0?',
       cites: [CITE.vermaShoeAge],
-      a: 'Il n’existe pas de règle testée. Dans une étude auprès de 475\u00A0employés de restaurant, les chaussures antidérapantes portées depuis moins de six mois protégeaient un peu mieux des glissades que les plus anciennes, et ceux qui en portaient déjà et sont passés à une paire neuve glissaient 55\u00A0% moins souvent. Vérifiez les crampons et remplacez les chaussures quand le motif de la semelle est lisse.',
+      a: 'Il n’existe pas de règle testée. Dans une étude auprès de 475\u00A0employés de restaurant, les chaussures antidérapantes portées depuis moins de six mois protégeaient modérément mieux des glissades que les plus anciennes, et ceux qui en portaient déjà et sont passés à une paire neuve glissaient 55\u00A0% moins souvent. Vérifiez les crampons et remplacez les chaussures quand le motif de la semelle est lisse.',
     },
     {
       q: 'Les tapis anti-fatigue aident-ils le personnel de cuisine\u00A0?',

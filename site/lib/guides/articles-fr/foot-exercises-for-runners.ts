@@ -114,7 +114,7 @@ export const RUNNERS_FOOT_EXERCISES_FR: Guide = {
         },
         {
           name: 'Lever le gros orteil',
-          evidence: { level: 'early', why: 'Une étude en IRM montre qu’il active les petits muscles du pied (Gooding 2016). Pas testé seul dans un essai sur les résultats.' },
+          evidence: { level: 'early', why: 'Une étude en IRM montre qu’il active les petits muscles du pied (Gooding 2016). Pas testé seul dans un essai clinique.' },
           dose: '3\u00A0séries de 8, tenir 5\u00A0secondes, chaque pied',
           often: '2 à 5\u00A0jours par semaine',
           feel: 'Un effort sur le dessus du pied et sous la voûte',
@@ -153,8 +153,8 @@ export const RUNNERS_FOOT_EXERCISES_FR: Guide = {
       h2: 'Combien de montées sur pointes un coureur devrait-il réussir\u00A0?',
       keyFact: 'Chez 566\u00A0adultes de 20 à 81\u00A0ans, la médiane était de 24\u00A0montées sur pointes sur une jambe à droite et de 23 à gauche (Hebert-Losier et coll., 2017).',
       paragraphs: [
-        'Il n’existe pas de norme propre aux coureurs\u00A0: utilisez les chiffres généraux des adultes comme plancher. Dans une étude portant sur 566\u00A0adultes, la médiane était de 24\u00A0montées sur pointes sur une jambe à droite et de 23 à gauche, au rythme d’un temps pour monter et d’un temps pour descendre à 60\u00A0battements par minute. Le nombre baisse avec l’âge, et les personnes plus actives en faisaient davantage (Hebert-Losier et coll., 2017). Une étude plus ancienne a proposé 25 comme référence de la normale (Lunsford et Perry, 1995).',
-        'Comparez aussi vos deux jambes. Un écart de plus de 10\u00A0% entre les côtés est le seuil habituel d’une différence significative en rééducation de la jambe (Silbernagel et coll., 2010). Le protocole complet, une version à faire chez soi et un calculateur se trouvent sur la page [test de montée sur pointes](/fr/test-montee-sur-pointes/).',
+        'Il n’existe pas de norme propre aux coureurs\u00A0: servez-vous des chiffres généraux des adultes comme seuil minimal. Dans une étude portant sur 566\u00A0adultes, la médiane était de 24\u00A0montées sur pointes sur une jambe à droite et de 23 à gauche, au rythme d’un temps pour monter et d’un temps pour descendre à 60\u00A0battements par minute. Le nombre baisse avec l’âge, et les personnes plus actives en faisaient davantage (Hebert-Losier et coll., 2017). Une étude plus ancienne a proposé 25 comme référence de la normale (Lunsford et Perry, 1995).',
+        'Comparez aussi vos deux jambes. Un écart de plus de 10\u00A0% entre les côtés est le seuil habituel d’une différence cliniquement pertinente en rééducation de la jambe (Silbernagel et coll., 2010). Le protocole complet, une version à faire chez soi et un calculateur se trouvent sur la page [test de montée sur pointes](/fr/test-montee-sur-pointes/).',
       ],
       table: {
         caption: 'Médiane des montées sur pointes sur une jambe selon l’âge, activité modérée (Hebert-Losier 2017)',

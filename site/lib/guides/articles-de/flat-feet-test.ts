@@ -17,7 +17,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
   updated: '2026-10-18',
   title: 'Plattfuß-Test zu Hause: 4 einfache Checks',
   description:
-    'Plattfuß erkennen zu Hause: nasser Fußabdruck, Sitzen gegen Stehen, Zehenstand und Großzehen-Test, einbeiniges Fersenheben, und was jeder Test zeigt.',
+    'Plattfuß erkennen zu Hause: nasser Fußabdruck, Sitzen und Stehen, Zehenstand und Großzehen-Test, einbeiniges Fersenheben, und was jeder Test zeigt.',
   h1: 'Plattfuß-Test zu Hause: 4 einfache Checks und was sie zeigen können und was nicht',
   lede:
     'Ob du Plattfüße hast, kannst du zu Hause in etwa fünf Minuten prüfen: Schau dir einen nassen Fußabdruck an, vergleich dein Gewölbe im Sitzen und im Stehen, stell dich auf die Zehenspitzen oder heb deinen großen Zeh an, um zu sehen, ob das Gewölbe zurückkommt, und probier einbeiniges Fersenheben. Der Fußabdruck ist der ungenaueste der vier Tests: Bei 95\u00A0älteren Erwachsenen, die mit Röntgenbildern verglichen wurden, passte ein Fußabdruck-Wert nur mäßig zur tatsächlichen Gewölbehöhe (Menz und Munteanu, 2005). Am wichtigsten ist, ob das Gewölbe zurückkommt und ob sich eine Seite anders verhält.',
@@ -28,8 +28,8 @@ export const FLAT_FEET_TEST_DE: Guide = {
     'Ein nasser Fußabdruck ist nur ein grober Anhaltspunkt. Bei 95\u00A0Menschen im Alter von 62 bis 94\u00A0Jahren passte der Gewölbeindex aus dem Fußabdruck nur mäßig zur Gewölbehöhe im Röntgenbild, während ein Lineal-Maß für den Gewölbeknochen gut dazu passte (Menz und Munteanu, 2005).',
     'Fettgewebe unter der Sohle kann einen Fußabdruck auffüllen: Bei 24\u00A0Erwachsenen mit Übergewicht oder Adipositas stieg der Gewölbeindex aus dem Fußabdruck mit dem Körperfettanteil (Wearing und Kollegen, 2004).',
     'Wenn das Gewölbe zurückkommt, sobald du sitzt, dich auf die Zehenspitzen stellst oder den großen Zeh anhebst, ist der Plattfuß flexibel. Das ist die häufige Form, die in den Übungsstudien untersucht wurde (Brijwasi und Borkar, 2023).',
-    'Probleme, auf einem Fuß hochzukommen, Schmerzen hinter dem Innenknöchel und ein Gewölbe, das immer flacher wird, sind Zeichen einer Tibialis-posterior-Insuffizienz. Von 582\u00A0Frauen über 40 hatten 3,3\u00A0% Beschwerden im frühen Stadium (Stadium I oder II), und bei keiner war sie diagnostiziert (Kohls-Gatzoulis und Kollegen, 2009).',
-    'Auch die Messungen von Fachleuten schwanken: Als zwei unerfahrene Untersucher den Navicular Drop maßen, stimmten sie schlecht überein (Picciano und Kollegen, 1993). In einer späteren Studie mit 86\u00A0jungen Erwachsenen war dieselbe Messung gut wiederholbar (Zuil-Escobar und Kollegen, 2018).',
+    'Probleme, auf einem Fuß hochzukommen, Schmerzen hinter dem Innenknöchel und ein Gewölbe, das immer flacher wird, sind Zeichen einer Tibialis-posterior-Insuffizienz. Von 582\u00A0Frauen über 40 hatten 3,3\u00A0% Beschwerden im frühen Stadium (Stadium I oder II), und bei keiner war sie diagnostiziert worden (Kohls-Gatzoulis und Kollegen, 2009).',
+    'Auch die Messungen von Fachleuten schwanken: Als zwei unerfahrene Untersucher den Navicular Drop maßen, stimmten sie schlecht überein (Picciano und Kollegen, 1993). In einer späteren Studie mit 86\u00A0jungen Erwachsenen war dieselbe Messung sehr gut wiederholbar (Zuil-Escobar und Kollegen, 2018).',
   ],
   toc: true,
   sections: [
@@ -44,7 +44,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
         head: ['Test', 'Worauf du schaust', 'Was er zeigen kann', 'Was er nicht zeigen kann'],
         rows: [
           ['Nasser Fußabdruck', 'Wie viel von der Sohle sich abdrückt', 'Grob ein niedriges Gewölbe', 'Die genaue Gewölbehöhe oder Schmerz'],
-          ['Sitzen gegen Stehen', 'Gewölbe mit und ohne Gewicht', 'Wie stark das Gewölbe absinkt', 'Warum es absinkt'],
+          ['Sitzen und Stehen', 'Gewölbe mit und ohne Gewicht', 'Wie stark das Gewölbe absinkt', 'Warum es absinkt'],
           ['Zehenstand und großer Zeh', 'Ob das Gewölbe zurückkommt', 'Flexibel oder steif', 'Die Ursache eines steifen Fußes'],
           ['Einbeiniges Fersenheben', 'Hochkommen auf einem Fuß', 'Schwäche auf einer Seite', 'Welche Sehne betroffen ist'],
         ],
@@ -66,7 +66,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
           ],
         },
         '**Was er zeigen kann:** grob, wie viel von deiner Sohle den Boden berührt. Forschende machen aus demselben Abdruck eine Zahl, den Gewölbeindex (Arch Index), indem sie das mittlere Drittel des Abdrucks mit dem ganzen Abdruck vergleichen (Cavanagh und Rodgers, 1987).',
-        '**Was er nicht zeigen kann:** deine tatsächliche Gewölbehöhe. Bei 95\u00A0Menschen im Alter von 62 bis 94\u00A0Jahren, die mit Röntgenbildern verglichen wurden, passte der Fußabdruck-Index nur mäßig zur Höhe des Gewölbeknochens (Menz und Munteanu, 2005). Eine Studie von 1992 mit 115\u00A0Männern fand, dass Fußabdrücke die Gewölbehöhe nicht vorhersagen konnten (Hawes und Kollegen, 1992), während eine Studie von 2009 mit 91\u00A0jungen Erwachsenen eine schwache bis mäßige Übereinstimmung mit Röntgenbildern fand (Murley und Kollegen, 2009). Bei 198\u00A0Patientinnen und Patienten einer Klinik erkannten drei Fußabdruck-Werte einen Plattfuß im Röntgenbild mit einer Genauigkeit, die die Autoren als mäßig (fair) bezeichneten (Paecharoen und Kollegen, 2023).',
+        '**Was er nicht zeigen kann:** deine tatsächliche Gewölbehöhe. Bei 95\u00A0Menschen im Alter von 62 bis 94\u00A0Jahren, die mit Röntgenbildern verglichen wurden, passte der Fußabdruck-Index nur mäßig zur Höhe des Gewölbeknochens (Menz und Munteanu, 2005). Eine Studie von 1992 mit 115\u00A0Männern fand, dass Fußabdrücke die Gewölbehöhe nicht vorhersagen konnten (Hawes und Kollegen, 1992), während eine Studie von 2009 mit 91\u00A0jungen Erwachsenen eine schwache bis mäßige Übereinstimmung mit Röntgenbildern fand (Murley und Kollegen, 2009). Bei 198\u00A0Patientinnen und Patienten einer Klinik erkannten drei Fußabdruck-Werte einen Plattfuß im Röntgenbild mit einer Genauigkeit, die die Autoren als ausreichend (fair) bezeichneten (Paecharoen und Kollegen, 2023).',
         'Ein Grund ist das Weichgewebe. In einer kleinen Pilotstudie mit 24\u00A0Erwachsenen mit Übergewicht oder Adipositas stieg der Fußabdruck-Index beim Gehen mit dem Körperfettanteil. Ein vollerer Abdruck kann also mehr Polster unter dem Gewölbe bedeuten und kein niedrigeres Gewölbe (Wearing und Kollegen, 2004). Ein Abdruck sagt außerdem nichts über Schmerzen, und genau die entscheiden, ob ein Plattfuß überhaupt Aufmerksamkeit braucht.',
       ],
       cites: [CITE.menzMunteanu, CITE.cavanaghArchIndex, CITE.hawesFootprint, CITE.murleyArch, CITE.paecharoen, CITE.wearing],
@@ -94,7 +94,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
         },
         '**Wenn das Gewölbe zurückkommt, ist der Plattfuß flexibel.** Das ist die häufige Form und die, die in den Übungsstudien untersucht wurde: Bei 52\u00A0Menschen mit flexiblen Plattfüßen verbesserten sechs Wochen Kurzer-Fuß-Übungen, Übungen für Sprunggelenk und Hüfte und Dehnungen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023).',
         '**Wenn das Gewölbe flach bleibt und sich der Fuß steif anfühlt**, ist der Plattfuß vielleicht rigide. Eine Ursache ist die tarsale Koalition, eine Brücke aus Knochen, Knorpel oder Bindegewebe zwischen zwei Fußknochen, die oft bei jungen Erwachsenen mit einem steifen, schmerzhaften Plattfuß gefunden wird (Mehdi und Kollegen, 2024). Bei einem rigiden Plattfuß muss eine Ärztin oder ein Arzt die Ursache finden, bevor du mit einem Übungsprogramm anfängst.',
-        'Sei ehrlich, was diese Tests sind. Wir haben keine Studie gefunden, die gemessen hat, wie zuverlässig der Zehenstand-Test oder der Jack-Test bei Erwachsenen ist, wenn man sie zu Hause macht. Sie sind einfach, und das Ergebnis ist meist klar, aber nimm ein steifes Ergebnis als Grund, es ärztlich abklären zu lassen, nicht als Diagnose.',
+        'Wichtig ist, diese Tests richtig einzuordnen. Wir haben keine Studie gefunden, die gemessen hat, wie zuverlässig der Zehenstand-Test oder der Jack-Test bei Erwachsenen ist, wenn man sie zu Hause macht. Sie sind einfach, und das Ergebnis ist meist klar, aber nimm ein steifes Ergebnis als Grund, es ärztlich abklären zu lassen, nicht als Diagnose.',
       ],
       cites: [CITE.jack1953, CITE.brijwasi, CITE.mehdiCoalition],
     },
@@ -128,7 +128,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
           ],
         },
         '**Diese Messungen sind besser als ein Fußabdruck, aber nicht perfekt.** Bei älteren Erwachsenen passte ein Lineal-Maß für die Höhe des Gewölbeknochens gut zu den Röntgenbildern (r = 0,79), der FPI weniger gut (r = 0,36 bis 0,59), weil er den ganzen Fuß bewertet und nicht nur das Gewölbe (Menz und Munteanu, 2005). Die FPI-Summe zeigte insgesamt eine mäßige Zuverlässigkeit, die Höhe des Kahnbeins war bei Erwachsenen die zuverlässigste Einzelmessung, und keine der getesteten Messungen war bei kleinen Kindern zuverlässig genug (Evans und Kollegen, 2003).',
-        'Übung macht einen Unterschied. Als zwei unerfahrene Untersucher bei 15\u00A0Menschen den Navicular Drop maßen, stimmten ihre Ergebnisse schlecht überein (Picciano und Kollegen, 1993). Bei 86\u00A0jungen Erwachsenen in einer späteren Studie waren Navicular Drop und Fußabdruck-Werte gut wiederholbar (Zuil-Escobar und Kollegen, 2018). Wenn dein Gewölbe über längere Zeit beobachtet wird, hilft es, wenn immer dieselbe Person misst.',
+        'Übung macht einen Unterschied. Als zwei unerfahrene Untersucher bei 15\u00A0Menschen den Navicular Drop maßen, stimmten ihre Ergebnisse schlecht überein (Picciano und Kollegen, 1993). Bei 86\u00A0jungen Erwachsenen in einer späteren Studie waren Navicular Drop und Fußabdruck-Werte sehr gut wiederholbar (Zuil-Escobar und Kollegen, 2018). Wenn dein Gewölbe über längere Zeit beobachtet wird, hilft es, wenn immer dieselbe Person misst.',
         'Wenn eine Ärztin oder ein Arzt einen rigiden Fuß, eine Koalition oder einen Sehnenschaden vermutet, kann sie oder er ein Röntgenbild im Stehen, eine CT oder eine MRT veranlassen. Das kann kein Test zu Hause ersetzen (Mehdi und Kollegen, 2024).',
       ],
       sourceNote:
@@ -141,7 +141,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
         'Nimm die vier Tests zusammen:',
         {
           list: [
-            '**Niedriges Gewölbe, das im Zehenstand zurückkommt, keine Schmerzen, beide Füße gleich:** ein flexibler Plattfuß, eine normale Variante. Du musst nichts tun. Übungen sind freiwillig.',
+            '**Niedriges Gewölbe, das im Zehenstand zurückkommt, keine Schmerzen, beide Füße gleich:** ein flexibler Plattfuß, eine normale Variante. Du musst nichts tun. Übungen sind optional.',
             '**Niedriges Gewölbe, das zurückkommt, mit müden oder schmerzenden Gewölben nach langen Tagen:** Übungen für Fuß und Sprunggelenk sind ein sinnvoller Anfang. Das ganze Programm findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/).',
             '**Ein Gewölbe, das flach bleibt, ein Fuß flacher als der andere oder Schmerzen am Innenknöchel:** Lass das zuerst ärztlich abklären, bevor du mit Übungen anfängst. Die Liste unten nennt die Einzelheiten.',
           ],
@@ -195,7 +195,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
           dose: '3\u00A0Sätze à 12, jeder Fuß',
           often: 'Krafttage',
           feel: 'Arbeit an der Innenseite von Fuß und Sprunggelenk',
-          how: 'Setz dich hin, ein Widerstandsband liegt um den Fuß, und dreh den Fuß gegen das Band nach innen. Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig. Walkito nimmt diese Übung erst nach sechs Einheiten kurzer Fuß im Stehen dazu, damit zuerst die eigenen Muskeln des Gewölbes drankommen.',
+          how: 'Setz dich hin, ein Widerstandsband liegt um den Fuß, und dreh den Fuß gegen das Band nach innen. Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig. Walkito nimmt diese Übung erst nach sechs Einheiten „Kurzer Fuß im Stehen“ dazu, damit zuerst die eigenen Muskeln des Gewölbes drankommen.',
           stop: 'Schmerzen hinter dem Innenknöchel, die nach dem Satz bleiben',
           image: 'Übung: Einwärtsdrehen mit Band',
           media: 'band_inversion',
@@ -230,7 +230,7 @@ export const FLAT_FEET_TEST_DE: Guide = {
     {
       q: 'Kann man nur auf einer Seite einen Plattfuß haben?',
       cites: [CITE.deuTendinopathies, CITE.kohlsGatzoulisPrevalence],
-      a: 'Ja, und es lohnt sich, das prüfen zu lassen. Ein Gewölbe, das auf einer Seite immer flacher wird, vor allem mit Schmerzen hinter dem Innenknöchel oder Problemen, auf diesem Fuß hochzukommen, ist ein typisches Zeichen einer Tibialis-posterior-Insuffizienz. Von 582\u00A0Frauen über 40 hatten 3,3\u00A0% frühe Zeichen davon, und bei keiner war sie diagnostiziert. Lass es ärztlich abklären.',
+      a: 'Ja, und es lohnt sich, das prüfen zu lassen. Ein Gewölbe, das auf einer Seite immer flacher wird, vor allem mit Schmerzen hinter dem Innenknöchel oder Problemen, auf diesem Fuß hochzukommen, ist ein typisches Zeichen einer Tibialis-posterior-Insuffizienz. Von 582\u00A0Frauen über 40 hatten 3,3\u00A0% frühe Zeichen davon, und bei keiner war sie diagnostiziert worden. Lass es ärztlich abklären.',
     },
     {
       q: 'Was ist ein normaler Navicular Drop?',

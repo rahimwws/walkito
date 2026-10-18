@@ -18,7 +18,7 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
   mainSource: CITE.patelStressFracture,
   published: '2026-10-18',
   updated: '2026-10-18',
-  title: 'Plantarfasziitis oder Ermüdungsbruch: so unterscheidest du',
+  title: 'Plantarfasziitis oder Ermüdungsbruch: der Unterschied',
   description:
     'Plantarfasziitis oder Ermüdungsbruch der Ferse? Schmerzmuster, Squeeze-Test, Risiko, warum frühe Röntgenbilder Brüche übersehen und was du tun kannst.',
   h1: 'Plantarfasziitis oder Ermüdungsbruch der Ferse: so unterscheidest du beides',
@@ -67,7 +67,7 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
       h2: 'Was ist der Squeeze-Test, und wie viel sagt er aus?',
       paragraphs: [
         '**Beim Squeeze-Test werden Innen- und Außenseite des Fersenbeins zusammengedrückt, zwischen den Handflächen oder zwischen Daumen und Fingern.** Eine Ärztin oder ein Arzt macht das bei entspanntem Fuß. Schmerz beim Zusammendrücken „spricht für die Diagnose“ eines Ermüdungsbruchs des Fersenbeins, so eine Übersichtsarbeit von 2018 in American Family Physician (Tu, 2018). Eine Plantarfasziitis ist dagegen druckempfindlich, wenn du unten an der vorderen Innenseite der Ferse drückst, dort, wo die Faszie ansetzt.',
-        'Seine Grenzen sind real:',
+        'Der Test hat aber klare Grenzen:',
         {
           list: [
             '**Niemand hat gemessen, wie zuverlässig er an der Ferse ist.** Wir haben keine Studie gefunden, die angibt, wie oft der Squeeze-Test bei Menschen mit einem bestätigten Ermüdungsbruch des Fersenbeins positiv ist oder wie oft er ohne Bruch positiv ist. Dieselbe Übersichtsarbeit zu Ermüdungsbrüchen merkt an, dass auch der Hüpftest, ein anderer häufiger Test in der Praxis, nicht validiert ist (Patel und Kollegen, 2011).',
@@ -88,9 +88,9 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
           list: [
             '**Eine plötzliche Steigerung des Trainings.** Deutlich mehr Gehen, Laufen, Marschieren oder Stehen oder wiederholt harte Einheiten mit wenig Pause sind die klassische Vorgeschichte (Patel und Kollegen, 2011). Ein Wechsel auf einen härteren Untergrund ist an der Ferse ein häufiger Auslöser (Tu, 2018).',
             '**Viele Laufkilometer.** Freizeitläuferinnen und Freizeitläufer mit durchschnittlich mehr als 25\u00A0Meilen (rund 40\u00A0km) pro Woche haben ein höheres Risiko, ebenso Sportlerinnen und Sportler in Leichtathletik, Basketball, Fußball und Tanz (Patel und Kollegen, 2011).',
-            '**Geringe Energieverfügbarkeit.** Wer für sein Trainingspensum zu wenig isst, kann Hormone und Knochen beeinträchtigen. Das Internationale Olympische Komitee zählt eine schlechte Knochengesundheit, einschließlich Knochenstressverletzungen, zu den Folgen dieses Musters, das relatives Energiedefizit im Sport (REDs) heißt, bei Frauen wie bei Männern (Mountjoy und Kollegen, 2023).',
+            '**Geringe Energieverfügbarkeit.** Zu wenig zu essen für das eigene Trainingspensum kann Hormone und Knochen beeinträchtigen. Das Internationale Olympische Komitee zählt eine schlechte Knochengesundheit, einschließlich Knochenstressverletzungen, zu den Folgen dieses Musters, das relatives Energiedefizit im Sport (REDs) heißt, bei Frauen wie bei Männern (Mountjoy und Kollegen, 2023).',
             '**Knochengesundheit.** Frauen mit der Triade der Sportlerin (gestörtes Essverhalten, ausbleibende Periode und geringe Knochendichte) haben ein höheres Risiko, und eine Studie fand niedrigere Vitamin-D-Werte bei Rekruten mit Ermüdungsbrüchen (Patel und Kollegen, 2011). Ein durch Osteoporose geschwächter Knochen kann schon bei normaler Belastung brechen. Das nennt man Insuffizienzfraktur.',
-            '**Frau sein.** Frauen haben ein höheres Risiko als Männer, vor allem in der militärischen Ausbildung, auch wenn die Daten bei Sportlerinnen uneinheitlich sind (Patel und Kollegen, 2011).',
+            '**Weibliches Geschlecht.** Frauen haben ein höheres Risiko als Männer, vor allem in der militärischen Ausbildung, auch wenn die Daten bei Sportlerinnen uneinheitlich sind (Patel und Kollegen, 2011).',
           ],
         },
         'Die Plantarfasziitis hat ein anderes Risikoprofil. In einer Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne hatten Menschen mit 0\u00A0Grad Beweglichkeit im Sprunggelenk nach oben (Dorsalflexion) oder weniger eine 23,3-fache Chance gegenüber Menschen mit mehr als 10\u00A0Grad, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).',
@@ -133,7 +133,7 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
         '**Dehnen und Belasten helfen bei Plantarfasziitis, weil sich das Gewebe an Belastung anpasst. Ein angebrochener Knochen braucht zuerst weniger Belastung.** Knochenstressverletzungen liegen auf einer Skala: Eine Stressreaktion kann zu einem Ermüdungsbruch fortschreiten und bei weiterer Belastung zu einem vollständigen Bruch (Warden und Kollegen, 2014).',
         'Die Belege für Übungen gelten speziell für die Plantarfasziitis. Die Leitlinie von 2023 zu Fersenschmerzen gibt dort der Dehnung von Plantarfaszie und Wade **Empfehlungsgrad A** und dem Krafttraining **B** (Koc und Kollegen, 2023). Das Programm mit Fersenheben aus der bekanntesten Studie wurde an 48\u00A0Menschen mit Plantarfasziitis getestet, nicht an Menschen mit einem Bruch (Rathleff und Kollegen, 2015).',
         'Bei Ermüdungsbrüchen zeigen die Belege in die andere Richtung. Zwei cluster-randomisierte Studien fanden, dass Dehnungen der Beine beim Aufwärmen Ermüdungsbrüche nicht verhinderten (Patel und Kollegen, 2011). Was zählt, ist weniger Belastung und danach eine schrittweise Rückkehr unter ärztlicher Begleitung. Wenn sich ein Bruch erholt hat, wird die Kräftigung der Muskeln um den Knochen ein Teil davon, den nächsten zu verhindern (Warden und Kollegen, 2014).',
-        'Deshalb sind die Übungen auf dieser Seite nur für Plantarfasziitis gedacht. Wenn man dir gesagt hat, dass du einen Ermüdungsbruch hast, folge stattdessen dem Plan deiner Ärztin oder deines Arztes für die Rückkehr zur Aktivität.',
+        'Deshalb sind die Übungen auf dieser Seite nur für Plantarfasziitis gedacht. Wenn bei dir ein Ermüdungsbruch festgestellt wurde, folge stattdessen dem Plan deiner Ärztin oder deines Arztes für die Rückkehr zur Aktivität.',
       ],
       cites: [CITE.wardenBSI, CITE.guideline, CITE.rathleff, CITE.patelStressFracture],
     },
@@ -163,7 +163,7 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           often: 'In den meisten Einheiten',
           feel: 'Eine Dehnung in der Wade',
-          how: 'Leg die Hände an eine Wand. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht den ganzen Tag an der Ferse. Deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.',
+          how: 'Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht den ganzen Tag an der Ferse. Deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.',
           stop: 'Schmerz im Fersenbein selbst oder Schmerz, der 6 von 10 erreicht',
           image: 'Übung: Wadendehnung',
           media: 'calf_stretch_straight',
@@ -227,7 +227,7 @@ export const PF_VS_STRESS_FRACTURE_DE: Guide = {
       a: 'Vielleicht kannst du es, aber du solltest den Fuß meist nicht weiter belasten. Die Behandlung heißt, die Aktivität auf das zu reduzieren, was schmerzfrei geht, und bei starken Schmerzen den Fuß bis zu sechs Wochen wenig bis gar nicht zu belasten, manchmal mit Unterarmgehstützen oder einem Walker-Stiefel. Wie viel Gehen sicher ist, sollte deine Ärztin oder dein Arzt festlegen.',
     },
     {
-      q: 'Wie lange braucht ein Ermüdungsbruch der Ferse, bis es besser wird?',
+      q: 'Wie lange dauert es, bis ein Ermüdungsbruch der Ferse besser wird?',
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
       a: 'Bei Ermüdungsbrüchen allgemein dauert die Erholung vier Wochen bis drei Monate oder länger, gerechnet ab dem Zeitpunkt, an dem die Aktivität reduziert wird. Ermüdungsbrüche der Ferse erholen sich bei sonst gesunden Menschen meist gut. Danach wird die Aktivität schrittweise wieder aufgebaut, sobald du schmerzfrei bist. Zum Zeitverlauf bei Plantarfasziitis siehe [wie lange eine Plantarfasziitis dauert](/de/wie-lange-dauert-plantarfasziitis/).',
     },

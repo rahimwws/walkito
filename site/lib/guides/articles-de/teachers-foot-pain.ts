@@ -19,7 +19,7 @@ export const TEACHERS_DE: Guide = {
   updated: '2026-10-18',
   title: 'Fußschmerzen als Lehrer oder Lehrerin: Übungen und Schuhe',
   description:
-    'Warum ein Schultag die Füße belastet, Übungen von 3 Minuten für zwischen den Stunden, was bei Schuhen und Böden hilft und wann es Plantarfasziitis ist.',
+    'Warum ein Schultag die Füße belastet, 3-Minuten-Übungen für die Pause, was bei Schuhen und Böden hilft und wann es Plantarfasziitis ist.',
   h1: 'Fußschmerzen bei Lehrkräften: was ein Schultag mit deinen Füßen macht und was hilft',
   lede:
     'Fußschmerzen bei Lehrkräften kommen vor allem von stundenlangem Stehen und Gehen durch die Klasse auf harten Böden. Die Maßnahmen mit den besten Belegen, Dehnungen für Wade und Plantarfaszie und Krafttraining für die Wade, dauern 3 bis 5\u00A0Minuten und passen zwischen zwei Stunden. Die Leitlinie von 2023 zu Fersenschmerzen bewertet diese Dehnungen mit **A**, ihrem höchsten Empfehlungsgrad, und Krafttraining mit **B** (Koc und Kollegen, 2023). Zu den Füßen von Lehrkräften gibt es wenig Forschung: In einer Übersichtsarbeit von 2024 berichteten 27\u00A0Studien über Schmerzen in der Sprunggelenksregion, meist zusammen mit dem Fuß gezählt, und der zusammengefasste Wert lag bei 30\u00A0% der Lehrkräfte (Tahernejad und Kollegen, 2024).',
@@ -40,7 +40,7 @@ export const TEACHERS_DE: Guide = {
       keyFact: 'Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis um das 3,6-Fache und eine eingeschränkte Beweglichkeit im Sprunggelenk um das 23,3-Fache, in einer Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen (Riddle und Kollegen, 2003).',
       paragraphs: [
         '**Ein Schultag mischt ruhiges Stehen mit kurzen Wegen, meist auf harten Böden.** Du stehst an der Tafel oder am Pult, gehst durch die Reihen, während die Klasse arbeitet, und stehst dann wieder bei der Pausenaufsicht auf dem Flur oder im Hof. Ruhiges Stehen belastet Ferse, Plantarfaszie (das Band unter dem Fuß, das das Gewölbe trägt) und Wade über lange Zeit ohne die Pumpwirkung, die das Gehen bringt.',
-        'Wir haben keine Studie gefunden, die gemessen hat, wie viele Stunden eine typische Lehrkraft steht, deshalb nennt diese Seite keine Zahl. Gemessen ist langes Stehen im Allgemeinen. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen brachte es mit Beschwerden in Beinen und Füßen, Ermüdung und geschwollenen Beinen in Verbindung und zählte Bodenmatten, stützende Schuhe, Kompressionsstrümpfe und Möglichkeiten zum Wechsel zwischen Sitzen und Stehen zu den Maßnahmen mit gewissen Belegen (Waters und Dick, 2015).',
+        'Wir haben keine Studie gefunden, die gemessen hat, wie viele Stunden eine typische Lehrkraft steht, deshalb nennt diese Seite keine Zahl. Untersucht wurde langes Stehen im Allgemeinen. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen brachte es mit Beschwerden in Beinen und Füßen, Ermüdung und geschwollenen Beinen in Verbindung und zählte Bodenmatten, stützende Schuhe, Kompressionsstrümpfe und Möglichkeiten zum Wechsel zwischen Sitzen und Stehen zu den Maßnahmen mit gewissen Belegen (Waters und Dick, 2015).',
         'In einer Übersichtsarbeit von 2017 mit 25\u00A0Laborstudien nahmen Beschwerden im unteren Rücken und in den Beinen zu, je länger die Menschen ohne Pause standen. Die Autoren schlugen vor, nicht länger als etwa 40\u00A0Minuten am Stück zu stehen (Coenen und Kollegen, 2017). Das ist ungefähr eine Unterrichtsstunde.',
         'Auch die Wade zählt. In einer Studie von 2003 war eine [verkürzte Wade](/de/verspannte-waden/) der stärkste Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003). Eine Lehrkraft, die den ganzen Tag auf den Beinen ist und verkürzte Waden hat, hat beides.',
       ],
@@ -122,7 +122,7 @@ export const TEACHERS_DE: Guide = {
           dose: '3\u00A0Sätze à 10, beide Füße',
           often: 'Krafttage, sobald das Fersenheben im Sitzen leicht fällt',
           feel: 'Die Waden arbeiten zusammen',
-          how: 'Stell dich auf beide Füße, eine Hand am Tisch, steig gerade über die großen Zehen nach oben und senk dich langsam ab. Beide Füße teilen sich die Last. Mehr dazu, wie du steigerst: [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+          how: 'Stell dich auf beide Füße, eine Hand am Tisch, steig gerade über die großen Zehen nach oben und senk dich langsam ab. Beide Füße teilen sich die Last. Mehr dazu, wie du steigerst: [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
           stop: 'Der Schmerz 6/10 erreicht',
           image: 'Übung: Fersenheben beidbeinig',
           media: 'heel_raise_double',
@@ -148,7 +148,7 @@ export const TEACHERS_DE: Guide = {
     {
       h2: 'Wie baust du Fußübungen in einen Schultag ein?',
       paragraphs: [
-        'Du brauchst kein eigenes Training. Häng jede Übung an einen Moment, den der Tag sowieso hat. Die Dosen sind dieselben wie oben, die Tabelle sagt nur, wann sie passen.',
+        'Du brauchst kein eigenes Training. Knüpf jede Übung an einen Moment, den es im Schultag sowieso gibt. Die Dosen sind dieselben wie oben, die Tabelle sagt nur, wann sie passen.',
       ],
       table: {
         caption: 'Eine Möglichkeit, die Übungen über einen Schultag zu verteilen',
@@ -163,7 +163,7 @@ export const TEACHERS_DE: Guide = {
       },
       after: [
         'Mach das Krafttraining (das Fersenheben) an 3\u00A0Tagen pro Woche, nie an zwei Tagen hintereinander. Die Dehnungen gehen an den meisten Tagen. Wenn du nur eine Sache schaffst, nimm die Wadendehnung: Sie setzt am stärksten Risikofaktor aus der Studie von 2003 an.',
-        'Die 40\u00A0Minuten aus den Studien zum Stehen sind ein gutes Signal. Wenn die Klasse mit der Stillarbeit beginnt, setz dich ein paar Minuten hin, auch auf einen Hocker vorn im Raum. So unterbrichst du das Stehen, ohne die Klasse zu verlassen (Coenen und Kollegen, 2017).',
+        'Die 40\u00A0Minuten aus den Studien zum Stehen sind ein guter Anhaltspunkt. Wenn die Klasse mit der Stillarbeit beginnt, setz dich ein paar Minuten hin, auch auf einen Hocker vorn im Raum. So unterbrichst du das Stehen, ohne die Klasse zu verlassen (Coenen und Kollegen, 2017).',
       ],
       cites: [CITE.coenen, CITE.riddle],
     },

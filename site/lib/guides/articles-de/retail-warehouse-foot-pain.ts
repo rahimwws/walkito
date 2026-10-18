@@ -25,12 +25,12 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
   lede:
     'Im Lager und im Einzelhandel tun die Füße weh, weil stundenlanges Stehen und Gehen auf harten Böden Ferse, Gewölbe und Wade belastet, ohne dass der Untergrund nachgibt. Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine [Plantarfasziitis](/de/plantarfasziitis/) in einer Studie um das 3,6-Fache (Riddle und Kollegen, 2003). Wadendehnung und Plantarfaszien-Dehnung bekommen in der Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad, **A**, und eine kurze Version passt in etwa 3\u00A0Minuten Pause. Matten und gedämpfte Einlagen verbessern den Komfort, aber die Belege dafür sind dünner (Speed und Kollegen, 2018).',
   intro: [
-    'Diese Seite geht um die Arbeit selbst: Beton- und Fliesenböden, Sicherheitsschuhe, lange Schichten und kurze Pausen. Für Schmerzen vom Stehen im Allgemeinen lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Wenn du im Krankenhaus arbeitest, behandelt [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) 12-Stunden-Schichten und wechselnde Dienste.',
+    'In diesem Ratgeber geht es um die Arbeit selbst: Beton- und Fliesenböden, Sicherheitsschuhe, lange Schichten und kurze Pausen. Für Schmerzen vom Stehen im Allgemeinen lies [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/). Wenn du im Krankenhaus arbeitest, behandelt [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) 12-Stunden-Schichten und wechselnde Dienste.',
   ],
   toc: true,
   takeaways: [
     'Wer den größten Teil des Arbeitstags auf den Beinen war, hatte in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen eine 3,6-fache Chance auf Plantarfasziitis. Eine stark eingeschränkte Beweglichkeit im Sprunggelenk, meist durch eine verkürzte Wade, erhöhte sie um das 23,3-Fache (Riddle und Kollegen, 2003).',
-    'Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen gewichttragende Tätigkeiten bei der Arbeit, besonders auf Böden mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen prüfen (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen Tätigkeiten im Stehen und Gehen bei der Arbeit, besonders auf Böden mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen prüfen (Koc und Kollegen, 2023).',
     'Eine Übersichtsarbeit mit 10\u00A0Studien fand mäßige Belege, dass Matten und gedämpfte Einlagen Beschwerden und Ermüdung bei Arbeit im Stehen verringern, und nur begrenzte Belege, dass Einlagen besser sind als Matten (Speed und Kollegen, 2018).',
     'In einer Übersichtsarbeit mit 7\u00A0Studien zu Beschäftigten in Sicherheitsschuhen fanden die 4, die Schmerzen gemessen haben, Fußschmerzen bei 42,3 bis 60,8\u00A0% der Beschäftigten. Die Hauptbeschwerden waren Hitze, Schwitzen, Gewicht und Steifigkeit (Arceri und Kollegen, 2024).',
     'Wadendehnung und Plantarfaszien-Dehnung bekommen den höchsten Empfehlungsgrad der Leitlinie, **A**, Krafttraining ein **B**. Einlagen allein bekommen bei Fersenschmerzen **Empfehlungsgrad B gegen die Anwendung** (Koc und Kollegen, 2023).',
@@ -38,20 +38,20 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
   sections: [
     {
       h2: 'Warum tun die Füße nach einer Schicht im Lager oder im Laden weh?',
-      keyFact: 'Wer den größten Teil des Arbeitstags gewichttragend verbrachte, hatte in einer Fall-Kontroll-Studie mit passenden Kontrollen eine 3,6-fache Chance auf Plantarfasziitis (Riddle und Kollegen, 2003).',
+      keyFact: 'Wer den größten Teil des Arbeitstags auf den Beinen verbrachte, hatte in einer Fall-Kontroll-Studie mit passenden Kontrollen eine 3,6-fache Chance auf Plantarfasziitis (Riddle und Kollegen, 2003).',
       paragraphs: [
         'Arbeit im Einzelhandel und im Lager verbindet zwei Belastungen. An der Kasse oder am Packtisch stehst du lange still. Im Verkaufsraum oder beim Kommissionieren gehst du, trägst, schiebst Wagen und drehst dich. Beides hält das Gewicht über den größten Teil der Schicht auf Ferse und Gewölbe, und wann Pause ist, bestimmt der Dienstplan, nicht deine Füße.',
-        'Eine Fall-Kontroll-Studie von 2003 mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand: Wer den größten Teil des Arbeitstags gewichttragend verbrachte, hatte eine 3,6-fache Chance auf Plantarfasziitis. Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine [verkürzte Wade](/de/verspannte-waden/), war der stärkste Faktor, mit einer 23,3-fachen Chance. **An einer verkürzten Wade kannst du arbeiten. An der Arbeit meist nicht.**',
+        'Eine Fall-Kontroll-Studie von 2003 mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand: Wer den größten Teil des Arbeitstags auf den Beinen verbrachte, hatte eine 3,6-fache Chance auf Plantarfasziitis. Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine [verkürzte Wade](/de/verspannte-waden/), war der stärkste Faktor, mit einer 23,3-fachen Chance. **An einer verkürzten Wade kannst du arbeiten. An der Arbeit meist nicht.**',
         'Eine systematische Übersichtsarbeit mit 16\u00A0Studien zu chronischen Fersenschmerzen fand gewisse Belege für einen Zusammenhang mit langem Stehen, neben höherem Körpergewicht, Alter und eingeschränkter Beweglichkeit im Sprunggelenk. Die Autoren forderten Studien, die Menschen über die Zeit begleiten. Das zeigt also einen Zusammenhang, keinen Beweis, dass Stehen Fersenschmerzen verursacht (Irving und Kollegen, 2006).',
-        'Wie weit gehst du? Wir haben keine veröffentlichte Studie gefunden, die Schritte pro Schicht bei Beschäftigten in Lager oder Einzelhandel zählt. Zahlen wie „12\u00A0Meilen pro Schicht“ (rund 19\u00A0Kilometer) stehen auf Branchenblogs, ohne Studie dahinter. Die nächste gemessene Zahl stammt aus der Pflege: im Schnitt 9.360\u00A0Schritte pro Schicht in einer Studie mit Schrittzählern (Chang und Cho, 2022).',
+        'Wie weit gehst du? Wir haben keine veröffentlichte Studie gefunden, die Schritte pro Schicht bei Beschäftigten in Lager oder Einzelhandel zählt. Zahlen wie „12\u00A0Meilen pro Schicht“ (rund 19\u00A0Kilometer) stehen auf Branchenblogs, ohne Studie dahinter. Am ehesten vergleichbar ist eine gemessene Zahl aus der Pflege: im Schnitt 9.360\u00A0Schritte pro Schicht in einer Studie mit Schrittzählern (Chang und Cho, 2022).',
       ],
       cites: [CITE.riddle, CITE.irvingHeelPain, CITE.changCho],
     },
     {
       h2: 'Ist Betonboden wirklich schlechter für die Füße?',
-      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen nennt gewichttragende Tätigkeiten bei der Arbeit, besonders unter Bedingungen mit schlechter Stoßdämpfung, als Risikofaktor (Empfehlungsgrad B, Koc und Kollegen, 2023).',
+      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen nennt Tätigkeiten im Stehen und Gehen bei der Arbeit, besonders unter Bedingungen mit schlechter Stoßdämpfung, als Risikofaktor (Empfehlungsgrad B, Koc und Kollegen, 2023).',
       paragraphs: [
-        'Wahrscheinlich, aber niemand hat Beton für sich allein gemessen. Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung von 2014 mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen gewichttragende Tätigkeiten bei der Arbeit, besonders unter Bedingungen mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen und Plantarfasziitis prüfen. Ein blanker Betonboden dämpft so wenig wie kaum ein anderer Arbeitsboden.',
+        'Wahrscheinlich, aber niemand hat Beton für sich allein gemessen. Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung von 2014 mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen Tätigkeiten im Stehen und Gehen bei der Arbeit, besonders unter Bedingungen mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen und Plantarfasziitis prüfen. Ein blanker Betonboden dämpft so wenig wie kaum ein anderer Arbeitsboden.',
         'Getestet wurde das Gegenteil: etwas Weiches dazuzunehmen. In Labor- und Arbeitsplatzstudien verringerten eine Matte oder gedämpfte Einlagen die Beschwerden im Vergleich zu einem harten Boden (Speed und Kollegen, 2018). Das passt zu der Vorstellung, dass der harte Untergrund die Belastung erhöht, ohne zu beweisen, dass Beton eine bestimmte Erkrankung verursacht.',
         'Manche Fersenschmerzen sind auf harten Böden aus einem anderen Grund schlimmer. Wenn der Schmerz tief in der Mitte der Ferse sitzt und barfuß auf Fliesen oder Beton deutlich schlimmer ist, lohnt sich ein Blick auf das [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
       ],
@@ -128,7 +128,7 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
           often: 'In der Pause',
           feel: 'Eine Dehnung vorn am Sprunggelenk und ein Ziehen in der unteren Wade',
           how: 'Schrittstellung, Hände an der Wand. Schieb das vordere Knie über die Zehen nach vorn, während die Ferse flach bleibt. Langsam, etwa zwei Sekunden in jede Richtung. Mehr unter [Sprunggelenk-Wippen](/de/uebungen/sprunggelenk-mobilisation/).',
-          stop: 'Schmerz erreicht 6 von 10',
+          stop: 'Der Schmerz 6 von 10 erreicht',
           image: 'Übung: Sprunggelenk-Wippen',
           media: 'ankle_rocks',
           caption: 'Sprunggelenk-Wippen: Das Knie wandert über die Zehen nach vorn, die Ferse bleibt flach',
@@ -184,7 +184,7 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
           list: [
             '**3\u00A0Minuten, in der Pause:** die Wadendehnung, 2-mal 30\u00A0Sekunden pro Bein, plus einmal 30\u00A0Sekunden Soleusdehnung pro Bein. Das zielt auf die verkürzte Wade, den stärksten Risikofaktor in der Studie von 2003.',
             '**5\u00A0Minuten, in einer längeren Pause oder am Schichtende:** Nimm das Sprunggelenk-Wippen dazu oder die Plantarfaszien-Dehnung, sobald die Schuhe aus sind.',
-            '**10\u00A0Minuten, an einem freien Tag:** Nimm das Fersenheben (3\u00A0Sätze à 10) und das Fußrollen dazu. Das deckt die Kraftseite ab, mit Empfehlungsgrad **B** bewertet.',
+            '**10\u00A0Minuten, an einem freien Tag:** Nimm das Fersenheben (3\u00A0Sätze à 10) und das Fußrollen dazu. Damit ist auch das Krafttraining abgedeckt, das mit Empfehlungsgrad **B** bewertet ist.',
           ],
         },
         '**Eine kurze Routine an den meisten Schichttagen bringt mehr als eine lange, die du ausfallen lässt.** Häng sie an etwas, das du ohnehin tust, etwa die erste Pause oder das Ausziehen der Arbeitsschuhe.',
@@ -217,9 +217,9 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
     {
       h2: 'Könnte es eine Plantarfasziitis oder etwas anderes sein?',
       paragraphs: [
-        'Allgemeine Schmerzen und müde Füße nach einer langen Schicht vergehen meist mit einer Nacht Ruhe. Plantarfasziitis hat ein klareres Muster: ein stechender Schmerz nahe der Innenseite der Ferse, am schlimmsten bei den ersten Schritten am Morgen oder nach dem Sitzen. Wenn das nach dir klingt, lies [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) und [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, auch wenn das drei bis sechs Monate dauern kann (Latt und Kollegen, 2020).',
-        'Andere Muster deuten auf etwas anderes. Ein brennender Schmerz unter dem Fußballen spricht für [Vorfußschmerzen](/de/metatarsalgie-vorfussschmerzen/). Ein Schmerz entlang des Gewölbes, der im Lauf der Schicht schlimmer wird, ist unter [Schmerzen im Fußgewölbe](/de/schmerzen-im-fussgewoelbe/) beschrieben. Schmerzen oben auf dem Fuß können von zu fest geschnürten oder drückenden Schuhen kommen, siehe [Schmerzen am Fußrücken](/de/schmerzen-am-fussruecken/).',
-        'Schmerz an einer kleinen Stelle auf einem Knochen, der schlimmer wird, je mehr du gehst, kann ein Ermüdungsbruch sein, besonders nach einem Sprung bei den Arbeitsstunden oder einem neuen Job mit mehr Gehen. **Lass das ärztlich abklären, statt mehr zu üben.**',
+        'Allgemeine Schmerzen und müde Füße nach einer langen Schicht vergehen meist mit einer Nacht Ruhe. Plantarfasziitis hat ein klareres Muster: ein stechender Schmerz nahe der Innenseite der Ferse, am schlimmsten bei den ersten Schritten am Morgen oder nach dem Sitzen. Wenn du dich darin wiedererkennst, lies [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) und [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, auch wenn das drei bis sechs Monate dauern kann (Latt und Kollegen, 2020).',
+        'Andere Muster deuten auf etwas anderes hin. Ein brennender Schmerz unter dem Fußballen spricht für [Vorfußschmerzen](/de/metatarsalgie-vorfussschmerzen/). Ein Schmerz entlang des Gewölbes, der im Lauf der Schicht schlimmer wird, ist unter [Schmerzen im Fußgewölbe](/de/schmerzen-im-fussgewoelbe/) beschrieben. Schmerzen oben auf dem Fuß können von zu fest geschnürten oder drückenden Schuhen kommen, siehe [Schmerzen am Fußrücken](/de/schmerzen-am-fussruecken/).',
+        'Schmerz an einer kleinen Stelle auf einem Knochen, der schlimmer wird, je mehr du gehst, kann ein Ermüdungsbruch sein, besonders nach einer plötzlichen Erhöhung der Arbeitsstunden oder einem neuen Job mit mehr Gehen. **Lass das ärztlich abklären, statt mehr zu üben.**',
       ],
       cites: [CITE.latt, CITE.patelStressFracture],
     },
@@ -228,12 +228,12 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
     {
       q: 'Warum tun mir die Füße bei der Arbeit im Lager so weh?',
       cites: [CITE.riddle, CITE.guideline],
-      a: 'Lange Stunden Stehen und Gehen auf harten Böden halten die Last über den größten Teil der Schicht auf Ferse, Gewölbe und Wade. Wer den größten Teil des Arbeitstags auf den Beinen war, hatte in einer Studie eine 3,6-fache Chance auf Plantarfasziitis, und die Leitlinie von 2023 zu Fersenschmerzen nennt gewichttragende Tätigkeiten bei der Arbeit auf schlecht gedämpften Böden als Risikofaktor.',
+      a: 'Lange Stunden Stehen und Gehen auf harten Böden halten die Last über den größten Teil der Schicht auf Ferse, Gewölbe und Wade. Wer den größten Teil des Arbeitstags auf den Beinen war, hatte in einer Studie eine 3,6-fache Chance auf Plantarfasziitis, und die Leitlinie von 2023 zu Fersenschmerzen nennt Stehen und Gehen bei der Arbeit auf schlecht gedämpften Böden als Risikofaktor.',
     },
     {
       q: 'Wie viele Schritte geht man in einer Schicht im Lager?',
       cites: [CITE.changCho],
-      a: 'Wir haben keine veröffentlichte Studie gefunden, die Schritte in Schichten im Lager oder im Einzelhandel zählt. Zahlen wie 12\u00A0Meilen (rund 19\u00A0Kilometer) pro Schicht kommen von Branchenblogs, ohne Studie dahinter. Die nächste gemessene Zahl stammt von Pflegekräften im Krankenhaus, die in einer Studie mit Schrittzählern im Schnitt 9.360\u00A0Schritte pro Schicht gingen. Dein eigenes Handy oder deine Uhr sagt dir am besten, wie viel es in deinem Job ist.',
+      a: 'Wir haben keine veröffentlichte Studie gefunden, die Schritte in Schichten im Lager oder im Einzelhandel zählt. Zahlen wie 12\u00A0Meilen (rund 19\u00A0Kilometer) pro Schicht kommen von Branchenblogs, ohne Studie dahinter. Am ehesten vergleichbar ist eine gemessene Zahl von Pflegekräften im Krankenhaus, die in einer Studie mit Schrittzählern im Schnitt 9.360\u00A0Schritte pro Schicht gingen. Dein eigenes Handy oder deine Uhr sagt dir am besten, wie viel es in deinem Job ist.',
     },
     {
       q: 'Bringen Anti-Ermüdungsmatten wirklich etwas?',
@@ -281,7 +281,7 @@ export const RETAIL_WAREHOUSE_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito baut den Plan aus deinen Antworten und passt ihn jeden Tag daran an, wie sich deine Füße anfühlen. Ein schlechter Morgen nach einer langen Schicht heißt also eine leichtere Einheit.',
+    text: 'Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito baut den Plan aus deinen Antworten und passt ihn jeden Tag daran an, wie sich deine Füße anfühlen. Ein schlechter Morgen nach einer langen Schicht bedeutet also eine leichtere Einheit.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten, sodass es um Schichten und freie Tage herum passt. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],

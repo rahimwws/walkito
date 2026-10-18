@@ -16,7 +16,7 @@ export const FLAT_FEET_TEST_FR: Guide = {
   mainSource: CITE.menzMunteanu,
   published: '2026-10-18',
   updated: '2026-10-18',
-  title: 'Test pied plat\u00A0: 4 vérifications simples à la maison',
+  title: 'Test du pied plat\u00A0: 4 vérifications simples à la maison',
   description:
     'Quatre tests du pied plat à faire chez soi\u00A0: empreinte mouillée, assis ou debout, pointes et gros orteil, montée sur une jambe, et ce que chacun montre.',
   h1: 'Test du pied plat à la maison\u00A0: 4 vérifications simples, ce qu’elles peuvent montrer et ce qu’elles ne montrent pas',
@@ -35,7 +35,7 @@ export const FLAT_FEET_TEST_FR: Guide = {
   toc: true,
   sections: [
     {
-      h2: 'Comment savoir si l’on a les pieds plats à la maison\u00A0?',
+      h2: 'Comment vérifier chez vous si vous avez les pieds plats\u00A0?',
       paragraphs: [
         '**Faites quatre vérifications, dans cet ordre, pieds nus sur un sol dur.** Les deux premières vous disent à quelle hauteur se trouve votre voûte. Les deux dernières vous disent si elle est souple et si le tendon qui la soutient fait son travail. Il vous faut une serviette, un peu d’eau, une feuille de papier kraft ou de carton, et un mur pour vous tenir.',
         'Testez les deux pieds à chaque fois. Une différence entre le pied gauche et le pied droit en dit plus que chaque pied pris seul, car chez la plupart des gens les deux pieds se ressemblent à peu près, et un seul pied plat fait partie des signes d’alerte en bas de cette page.',
@@ -234,7 +234,7 @@ export const FLAT_FEET_TEST_FR: Guide = {
       a: 'Oui, et cela vaut la peine de le faire vérifier. Une voûte qui s’affaisse de plus en plus d’un côté, surtout avec une douleur derrière la malléole interne ou du mal à monter sur ce pied, est un signe typique de dysfonction du tendon tibial postérieur. Chez 582\u00A0femmes de plus de 40\u00A0ans, 3,3\u00A0% en avaient des signes précoces et aucune n’avait été diagnostiquée. Consultez un professionnel de santé.',
     },
     {
-      q: 'Quelle est la chute du naviculaire normale\u00A0?',
+      q: 'Quelle chute du naviculaire est normale\u00A0?',
       cites: [CITE.nielsenNavicular, CITE.picciano],
       a: 'Dans les études, les adultes en bonne santé ont en moyenne une chute du naviculaire de 3,6 à 8,1\u00A0millimètres environ, c’est-à-dire la distance dont l’os de la voûte descend quand vous vous levez. Des seuils de 10, 13 ou 15\u00A0millimètres ont été proposés pour «\u00A0trop\u00A0», mais aucun n’est confirmé, et les résultats varient d’un examinateur à l’autre, surtout chez les moins expérimentés. Il est difficile de la mesurer précisément sur soi-même.',
     },

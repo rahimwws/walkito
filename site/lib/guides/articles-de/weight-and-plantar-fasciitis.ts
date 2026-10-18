@@ -20,30 +20,30 @@ export const WEIGHT_PF_DE: Guide = {
   updated: '2026-10-18',
   title: 'Übergewicht und Plantarfasziitis: was die Studien zeigen',
   description:
-    'Kann Übergewicht eine Plantarfasziitis auslösen, und hilft Abnehmen? Was Studien zeigen, warum die Last zählt, und Übungen im Sitzen für jedes Gewicht.',
+    'Kann Übergewicht eine Plantarfasziitis auslösen, und hilft Abnehmen? Was Studien zeigen, warum Belastung wichtig ist, und Sitzübungen für jedes Gewicht.',
   h1: 'Gewicht und Plantarfasziitis: was die Forschung zeigt und was jetzt hilft',
   lede:
-    'Ein höheres Körpergewicht gehört bei Menschen, die keinen Leistungssport treiben, zu den klarsten Risikofaktoren für eine [Plantarfasziitis](/de/plantarfasziitis/). In einer Übersichtsarbeit über 51\u00A0Studien ging ein Body-Mass-Index (BMI) über 27 mit einer 3,7-fach höheren Chance auf eine Plantarfasziitis einher (van Leeuwen und Kollegen, 2016). Ob Abnehmen die Fersenschmerzen lindert, ist weniger klar: Keine randomisierte Studie hat das bei Menschen mit Fersenschmerzen getestet. Fang deshalb mit den Dehnungen und dem Krafttraining an, die in der Leitlinie von 2023 den höchsten Empfehlungsgrad haben, egal, was du wiegst.',
+    'Ein höheres Körpergewicht gehört bei Menschen, die nicht sportlich aktiv sind, zu den klarsten Risikofaktoren für eine [Plantarfasziitis](/de/plantarfasziitis/). In einer Übersichtsarbeit über 51\u00A0Studien ging ein Body-Mass-Index (BMI) über 27 mit einer 3,7-fach höheren Chance auf eine Plantarfasziitis einher (van Leeuwen und Kollegen, 2016). Ob Abnehmen die Fersenschmerzen lindert, ist weniger klar: Keine randomisierte Studie hat das bei Menschen mit Fersenschmerzen getestet. Fang deshalb mit den Dehnungen und dem Krafttraining an, die in der Leitlinie von 2023 den höchsten Empfehlungsgrad haben, egal, was du wiegst.',
   intro: [
-    'Das Gewicht ist ein Faktor unter mehreren, kein Urteil. In derselben Fall-Kontroll-Studie, die einen BMI über 30 mit Plantarfasziitis in Verbindung brachte, war ein steifes Sprunggelenk ein viel stärkerer Faktor (Riddle und Kollegen, 2003). Menschen jeder Statur bekommen Fersenschmerzen, und bei Menschen jeder Statur werden sie wieder besser. Diese Seite fasst zusammen, was die Studien gefunden haben, was über das Abnehmen bekannt ist, warum die Last zählt und welche Übungen du im Sitzen oder mit Halt machen kannst.',
+    'Das Gewicht ist ein Faktor unter mehreren, kein Urteil. In derselben Fall-Kontroll-Studie, die einen BMI über 30 mit Plantarfasziitis in Verbindung brachte, war ein steifes Sprunggelenk ein viel stärkerer Faktor (Riddle und Kollegen, 2003). Menschen jeder Statur bekommen Fersenschmerzen, und bei Menschen jeder Statur werden sie wieder besser. Diese Seite fasst zusammen, was die Studien gefunden haben, was über das Abnehmen bekannt ist, warum die Belastung eine Rolle spielt und welche Übungen du im Sitzen oder mit Halt machen kannst.',
   ],
   takeaways: [
-    'In einer Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne ging ein BMI über 30 mit einer 5,6-fach höheren Chance auf eine Plantarfasziitis einher, verglichen mit einem BMI von 25 oder weniger. Ein steifes Sprunggelenk war der stärkste Faktor, mit dem 23,3-Fachen (Riddle und Kollegen, 2003).',
-    'Eine Übersichtsarbeit über 51\u00A0Studien fand, dass ein BMI über 27 unter den klinischen Faktoren, die sich zusammenfassen ließen, der einzige war, der klar mit Plantarfasziitis zusammenhing, mit einer 3,7-fach höheren Chance. Am stärksten war der Zusammenhang bei Menschen, die keinen Leistungssport treiben (van Leeuwen und Kollegen, 2016).',
+    'In einer Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne ging ein BMI über 30 mit einer 5,6-fach höheren Chance auf eine Plantarfasziitis einher, verglichen mit einem BMI von 25 oder weniger. Ein steifes Sprunggelenk war der stärkste Faktor, mit einer 23,3-fach höheren Chance (Riddle und Kollegen, 2003).',
+    'Eine Übersichtsarbeit über 51\u00A0Studien fand, dass ein BMI über 27 unter den klinischen Faktoren, die sich zusammenfassen ließen, der einzige war, der klar mit Plantarfasziitis zusammenhing, mit einer 3,7-fach höheren Chance. Am stärksten war der Zusammenhang bei Menschen, die nicht sportlich aktiv sind (van Leeuwen und Kollegen, 2016).',
     'Keine randomisierte Studie hat das Abnehmen bei Fersenschmerzen getestet. Eine Übersichtsarbeit von 2012 fand nur zwei Studien zu Gewichtsabnahme und Fußschmerzen, beide nach einer Operation zur Gewichtsabnahme, und nannte die Belege begrenzt (Butterworth und Kollegen, 2012).',
     'Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Dehnung von Plantarfaszie und Wade mit Empfehlungsgrad **A** und Krafttraining mit **B**. Die Beratung dazu, eine gesunde fettfreie Körpermasse zu erhalten, bekommt **Empfehlungsgrad E**: Sie stützt sich auf Theorie, nicht auf Studien (Koc und Kollegen, 2023).',
-    'In einer Nachbeobachtung von 174\u00A0Menschen sagte der BMI nicht voraus, wer Jahre später noch Fersenschmerzen hatte. Weibliches Geschlecht und Schmerzen in beiden Fersen taten es (Hansen und Kollegen, 2018).',
+    'In einer Nachbeobachtung von 174\u00A0Menschen sagte der BMI nicht voraus, wer Jahre später noch Fersenschmerzen hatte. Vorhersagekraft hatten dagegen weibliches Geschlecht und Schmerzen in beiden Fersen (Hansen und Kollegen, 2018).',
   ],
   toc: true,
   sections: [
     {
       h2: 'Beeinflusst das Gewicht eine Plantarfasziitis?',
-      keyFact: 'In einer Übersichtsarbeit über 51\u00A0Studien ging ein BMI über 27 mit einer 3,7-fach höheren Chance auf eine Plantarfasziitis einher, und am stärksten war der Zusammenhang bei Menschen, die keinen Leistungssport treiben (van Leeuwen und Kollegen, 2016).',
+      keyFact: 'In einer Übersichtsarbeit über 51\u00A0Studien ging ein BMI über 27 mit einer 3,7-fach höheren Chance auf eine Plantarfasziitis einher, und am stärksten war der Zusammenhang bei Menschen, die nicht sportlich aktiv sind (van Leeuwen und Kollegen, 2016).',
       paragraphs: [
-        '**Ja, bei Menschen, die keinen Leistungssport treiben, hängt ein höherer BMI in Studie um Studie mit Plantarfasziitis zusammen.** Der BMI ist das Gewicht geteilt durch die Körpergröße zum Quadrat. Er ist ein grobes Maß, aber es ist das Maß, das diese Studien verwendet haben.',
+        '**Ja, bei Menschen, die nicht sportlich aktiv sind, hängt ein höherer BMI in Studie um Studie mit Plantarfasziitis zusammen.** Der BMI ist das Gewicht geteilt durch die Körpergröße zum Quadrat. Er ist ein grobes Maß, aber es ist das Maß, das diese Studien verwendet haben.',
         'Die bekannteste Studie verglich 50\u00A0Menschen mit Plantarfasziitis an einer Ferse mit 100\u00A0Menschen gleichen Alters und Geschlechts ohne Plantarfasziitis. Ein BMI über 30 ging mit einer 5,6-fach höheren Chance auf eine Plantarfasziitis einher, verglichen mit einem BMI von 25 oder weniger (Riddle und Kollegen, 2003).',
-        'Eine Übersichtsarbeit von 2016 fasste 51\u00A0Studien zusammen. Von allen klinischen Faktoren, die die Autoren zusammenfassen konnten, war ein BMI über 27 der einzige, der klar mit Plantarfasziitis zusammenhing, mit einer 3,7-fach höheren Chance, und am stärksten war der Zusammenhang bei Menschen, die keinen Leistungssport treiben (van Leeuwen und Kollegen, 2016). Zwei frühere Übersichtsarbeiten kamen zum selben Schluss, und beide fanden bei Sportlerinnen und Sportlern keinen Zusammenhang zwischen BMI und Fersenschmerzen (Irving und Kollegen, 2006; Butterworth und Kollegen, 2012).',
-        'Die Leitlinie von 2023 zu Fersenschmerzen nennt einen hohen BMI bei Menschen, die keinen Leistungssport treiben, als Risikofaktor, neben einem steifen Sprunggelenk, Laufen und langen Stunden auf den Beinen, besonders auf harten Böden (Koc und Kollegen, 2023).',
+        'Eine Übersichtsarbeit von 2016 fasste 51\u00A0Studien zusammen. Von allen klinischen Faktoren, die die Autoren zusammenfassen konnten, war ein BMI über 27 der einzige, der klar mit Plantarfasziitis zusammenhing, mit einer 3,7-fach höheren Chance, und am stärksten war der Zusammenhang bei Menschen, die nicht sportlich aktiv sind (van Leeuwen und Kollegen, 2016). Zwei frühere Übersichtsarbeiten kamen zum selben Schluss, und beide fanden bei Sportlerinnen und Sportlern keinen Zusammenhang zwischen BMI und Fersenschmerzen (Irving und Kollegen, 2006; Butterworth und Kollegen, 2012).',
+        'Die Leitlinie von 2023 zu Fersenschmerzen nennt einen hohen BMI bei Menschen, die nicht sportlich aktiv sind, als Risikofaktor, neben einem steifen Sprunggelenk, Laufen und vielen Stunden auf den Beinen, besonders auf harten Böden (Koc und Kollegen, 2023).',
       ],
       sourceNote:
         'Riddle 2003: BMI über 30 gegenüber 25 oder weniger, Odds Ratio 5,6 (95-%-KI 1,9 bis 16,6). van Leeuwen 2016: BMI über 27, Odds Ratio 3,7 (95-%-KI 2,93 bis 5,62). 46 der 51\u00A0Studien waren Fall-Kontroll-Studien.',
@@ -51,9 +51,9 @@ export const WEIGHT_PF_DE: Guide = {
     },
     {
       h2: 'Ist das Gewicht die Ursache oder nur ein Faktor?',
-      keyFact: 'In derselben Studie ging ein steifes Sprunggelenk mit einer 23,3-fach höheren Chance auf eine Plantarfasziitis einher und der größte Teil des Arbeitstags auf den Beinen mit einer 3,6-fach höheren, gegenüber dem 5,6-Fachen für einen BMI über 30 (Riddle und Kollegen, 2003).',
+      keyFact: 'In derselben Studie ging ein steifes Sprunggelenk mit einer 23,3-fach höheren Chance auf eine Plantarfasziitis einher und den größten Teil des Arbeitstags auf den Beinen zu verbringen mit einer 3,6-fach höheren, ein BMI über 30 dagegen mit einer 5,6-fach höheren (Riddle und Kollegen, 2003).',
       paragraphs: [
-        '**Ein Faktor unter mehreren, und nicht der stärkste.** In der Fall-Kontroll-Studie von 2003 zählten drei Faktoren jeweils für sich:',
+        '**Ein Faktor unter mehreren, und nicht der stärkste.** In der Fall-Kontroll-Studie von 2003 hingen drei Faktoren jeweils unabhängig voneinander mit Plantarfasziitis zusammen:',
         {
           list: [
             'Ein steifes Sprunggelenk (der Fuß lässt sich kaum zum Schienbein hin beugen): 23,3-fach höhere Chance.',
@@ -61,13 +61,13 @@ export const WEIGHT_PF_DE: Guide = {
             'Der größte Teil des Arbeitstags auf den Beinen: 3,6-fach höhere Chance.',
           ],
         },
-        'Die Autoren nannten das steife Sprunggelenk den wichtigsten der drei Faktoren (Riddle und Kollegen, 2003). Das ist wichtig, denn ein steifes Sprunggelenk kommt oft von [verspannten Waden](/de/verspannte-waden/), und die Wadendehnung kannst du noch heute beginnen.',
-        'Die meisten dieser Studien sind Fall-Kontroll- oder Querschnittsstudien: Sie vergleichen Menschen, die schon Fersenschmerzen haben, mit Menschen ohne. Sie zeigen einen Zusammenhang, keinen Beweis, dass das Gewicht die Plantarfasziitis verursacht (van Leeuwen und Kollegen, 2016). Wenn du auch bei der Arbeit stehst, geht es unter [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) um diese Seite der Last.',
+        'Die Autoren nannten das steife Sprunggelenk den wichtigsten der drei Faktoren (Riddle und Kollegen, 2003). Das ist relevant, denn ein steifes Sprunggelenk kommt oft von [verspannten Waden](/de/verspannte-waden/), und die Wadendehnung kannst du noch heute beginnen.',
+        'Die meisten dieser Studien sind Fall-Kontroll- oder Querschnittsstudien: Sie vergleichen Menschen, die schon Fersenschmerzen haben, mit Menschen ohne. Sie zeigen einen Zusammenhang, keinen Beweis, dass das Gewicht die Plantarfasziitis verursacht (van Leeuwen und Kollegen, 2016). Wenn du auch bei der Arbeit stehst, findest du unter [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) mehr zu dieser Seite der Belastung.',
       ],
       cites: [CITE.riddle, CITE.vanLeeuwenBmi],
     },
     {
-      h2: 'Warum zählt die Last für die Ferse?',
+      h2: 'Warum spielt die Belastung für die Ferse eine Rolle?',
       paragraphs: [
         '**Die Plantarfaszie ist das Band unter dem Fuß, das das Gewölbe trägt, und sie nimmt bei jedem Schritt Last auf.** Mehr Körpergewicht bedeutet mehr Last pro Schritt, also verlangt derselbe Spaziergang oder dieselbe Schicht dem Gewebe mehr ab. Die Empfehlung der Leitlinie bei Fersenschmerzen baut auf diesem Gedanken auf: die Last auf den Füßen bei der Arbeit, in der Freizeit und im Alltag anpassen. Sie gibt dieser Empfehlung **Empfehlungsgrad E**, weil sie sich auf Theorie stützt, nicht auf Studien (Koc und Kollegen, 2023).',
         'Abnehmen senkt den Druck unter dem Fuß. In einer Studie mit 41\u00A0Erwachsenen mit einem durchschnittlichen BMI von fast 36 nahm die Gruppe mit Ernährungsplan in drei Monaten 5,9\u00A0kg ab, gegenüber 1,9\u00A0kg in der Vergleichsgruppe, und hatte unter Teilen des Fußes einen niedrigeren Spitzendruck. Fußform und Gangbild änderten sich nicht (Song und Kollegen, 2015). Fersenschmerzen hat diese Studie nicht gemessen.',
@@ -198,8 +198,8 @@ export const WEIGHT_PF_DE: Guide = {
             '**Kürzere Spaziergänge, dafür öfter.** Mehrere kurze Spaziergänge können für eine schmerzende Ferse leichter sein als ein langer.',
           ],
         },
-        'Ein einfacher Check passt zu jeder Aktivität: Wenn deine ersten Schritte am nächsten Morgen deutlich schlimmer sind, war der Tag mehr, als die Ferse verkraften konnte. Mach beim nächsten Mal etwas weniger. [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/) erklärt, wie du das Gehen Schritt für Schritt wieder aufbaust.',
-        'Wenn du mit Bewegung anfängst, um dich besser zu fühlen oder abzunehmen, kannst du mit gelenkschonenden Aktivitäten dranbleiben, während sich die Ferse beruhigt. Die Leitlinie nennt Laufen und lange Stunden auf den Beinen, besonders auf harten Böden, als Risikofaktoren für Fersenschmerzen (Koc und Kollegen, 2023).',
+        'Ein einfacher Test funktioniert bei jeder Aktivität: Wenn deine ersten Schritte am nächsten Morgen deutlich schlimmer sind, war der Tag mehr, als die Ferse verkraften konnte. Mach beim nächsten Mal etwas weniger. [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/) erklärt, wie du das Gehen Schritt für Schritt wieder aufbaust.',
+        'Wenn du mit Bewegung anfängst, um dich besser zu fühlen oder abzunehmen, kannst du mit gelenkschonenden Aktivitäten dranbleiben, während sich die Ferse beruhigt. Die Leitlinie nennt Laufen und viele Stunden auf den Beinen, besonders auf harten Böden, als Risikofaktoren für Fersenschmerzen (Koc und Kollegen, 2023).',
       ],
       cites: [CITE.guideline],
     },
@@ -207,7 +207,7 @@ export const WEIGHT_PF_DE: Guide = {
       h2: 'Sind Schuhe und Einlagen bei höherem Gewicht wichtiger?',
       paragraphs: [
         'Keine Studie hat Schuhe oder Einlagen bei Fersenschmerzen speziell bei Menschen mit höherem Gewicht getestet. Bei Fersenschmerzen im Allgemeinen bewertet die Leitlinie von 2023 Einlagen allein mit **Empfehlungsgrad B gegen die Anwendung**: Die Belege sprechen dagegen, sich nur auf sie zu verlassen. Kombiniert mit Dehnen und Krafttraining bekommen sie ein **C** (Koc und Kollegen, 2023). [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) vergleicht beides.',
-        'Die Leitlinie empfiehlt eine Beratung zu Schuhen als Teil davon, die Last zu steuern, und sie nennt Arbeit im Stehen auf harten Böden mit schlechter Dämpfung als Risikofaktor (Koc und Kollegen, 2023). Eine praktische Möglichkeit, die in Studien nicht getestet wurde, sind stützende, gedämpfte Schuhe auf harten Böden, auch zu Hause.',
+        'Die Leitlinie empfiehlt eine Beratung zu Schuhen als Teil der Laststeuerung, und sie nennt Arbeit im Stehen auf harten Böden mit schlechter Dämpfung als Risikofaktor (Koc und Kollegen, 2023). Eine praktische Möglichkeit, die in Studien nicht getestet wurde, sind stützende, gedämpfte Schuhe auf harten Böden, auch zu Hause.',
         'Nach einer großen Gewichtsabnahme können sich die Füße verändern. In der Studie zur Operation vermuteten die Autoren, dass der Verlust von Fettgewebe unter dem Mittelfuß verändern kann, wie Schuhe und Einlagen passen, und dass es sich lohnt, das nach einer großen Gewichtsabnahme zu prüfen (Walsh und Kollegen, 2018).',
       ],
       cites: [CITE.guideline, CITE.walshBariatric],
@@ -216,7 +216,7 @@ export const WEIGHT_PF_DE: Guide = {
       h2: 'Geht eine Plantarfasziitis weg, wenn ich nicht abnehme?',
       paragraphs: [
         '**Bei den meisten Menschen ja, sie lässt mit der Zeit und mit Behandlung ohne Operation nach.** Bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, etwa mit Dehnungen und Einlagen, oft innerhalb von 3 bis 6\u00A0Monaten (Latt und Kollegen, 2020).',
-        'In einer langen Nachbeobachtung von 174\u00A0Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Nur weibliches Geschlecht und Schmerzen in beiden Fersen taten es. Der BMI nicht (Hansen und Kollegen, 2018).',
+        'In einer langen Nachbeobachtung von 174\u00A0Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Das galt nur für weibliches Geschlecht und Schmerzen in beiden Fersen, nicht für den BMI (Hansen und Kollegen, 2018).',
         'Ein höheres Gewicht macht es also vielleicht wahrscheinlicher, dass eine Plantarfasziitis beginnt, aber es heißt nicht, dass du sie behalten musst. Die Dehnungen und das Wadentraining oben sind dieselben, die Menschen jeder Statur helfen. [Wie lange eine Plantarfasziitis dauert](/de/wie-lange-dauert-plantarfasziitis/) zeigt den ganzen Verlauf.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -226,7 +226,7 @@ export const WEIGHT_PF_DE: Guide = {
     {
       q: 'Kann Übergewicht eine Plantarfasziitis auslösen?',
       cites: [CITE.riddle, CITE.vanLeeuwenBmi],
-      a: 'Ein höheres Gewicht hängt mit Plantarfasziitis zusammen, aber keine Studie beweist, dass es sie verursacht. Ein BMI über 30 ging in einer Studie mit einer 5,6-fach höheren Chance einher, und eine Übersichtsarbeit über 51\u00A0Studien fand eine 3,7-fach höhere Chance ab einem BMI über 27, am stärksten bei Menschen, die keinen Leistungssport treiben. Ein steifes Sprunggelenk war ein noch stärkerer Faktor.',
+      a: 'Ein höheres Gewicht hängt mit Plantarfasziitis zusammen, aber keine Studie beweist, dass es sie verursacht. Ein BMI über 30 ging in einer Studie mit einer 5,6-fach höheren Chance einher, und eine Übersichtsarbeit über 51\u00A0Studien fand eine 3,7-fach höhere Chance bei einem BMI über 27, am stärksten bei Menschen, die nicht sportlich aktiv sind. Ein steifes Sprunggelenk war ein noch stärkerer Faktor.',
     },
     {
       q: 'Hilft Abnehmen bei Plantarfasziitis?',
@@ -241,7 +241,7 @@ export const WEIGHT_PF_DE: Guide = {
     {
       q: 'Ist der BMI bei Läuferinnen und Läufern ein Risikofaktor für Plantarfasziitis?',
       cites: [CITE.irvingHeelPain, CITE.butterworthBmi],
-      a: 'Meist nicht. Zwei systematische Übersichtsarbeiten fanden, dass der BMI bei Menschen, die keinen Leistungssport treiben, mit chronischen Fersenschmerzen zusammenhing, bei Sportlerinnen und Sportlern aber nicht. Beim Laufen spielen andere Faktoren eine größere Rolle.',
+      a: 'Meist nicht. Zwei systematische Übersichtsarbeiten fanden, dass der BMI bei Menschen, die nicht sportlich aktiv sind, mit chronischen Fersenschmerzen zusammenhing, bei Sportlerinnen und Sportlern aber nicht. Beim Laufen spielen andere Faktoren eine größere Rolle.',
     },
     {
       q: 'Welche Übungen kann ich bei Plantarfasziitis und Übergewicht machen?',
@@ -261,7 +261,7 @@ export const WEIGHT_PF_DE: Guide = {
     {
       q: 'Geht eine Plantarfasziitis auch ohne Abnehmen weg?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'Bei den meisten Menschen ja. Bei etwa 90\u00A0% wird es mit Behandlung ohne Operation besser, etwa mit Dehnungen und Einlagen, oft innerhalb von 3 bis 6\u00A0Monaten. In einer langen Nachbeobachtung von 174\u00A0Menschen sagte der BMI nicht voraus, wer Jahre später noch Fersenschmerzen hatte. Weibliches Geschlecht und Schmerzen in beiden Fersen taten es.',
+      a: 'Bei den meisten Menschen ja. Bei etwa 90\u00A0% wird es mit Behandlung ohne Operation besser, etwa mit Dehnungen und Einlagen, oft innerhalb von 3 bis 6\u00A0Monaten. In einer langen Nachbeobachtung von 174\u00A0Menschen sagte der BMI nicht voraus, wer Jahre später noch Fersenschmerzen hatte. Vorhersagekraft hatten dagegen weibliches Geschlecht und Schmerzen in beiden Fersen.',
     },
     {
       q: 'Sind Einlagen wichtiger, wenn ich schwerer bin?',

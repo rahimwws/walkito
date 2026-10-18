@@ -25,12 +25,12 @@ export const HIKERS_DE: Guide = {
   lede:
     'Schmerzende Füße nach einer langen Wanderung sind häufig, und meist steckt Überlastung dahinter: mehr Strecke, mehr Abstieg oder ein schwererer Rucksack, als deine Füße gewohnt sind. In einer Umfrage unter 1295 Fernwanderern auf dem Appalachian Trail gaben 29\u00A0% Verletzungen oder Schmerzen am Fuß an und 12\u00A0% Schmerzen an der Achillessehne (Chrusch und Kavin, 2021). Schmerzt die Ferse bei den ersten Schritten am nächsten Morgen, spricht das für eine [Plantarfasziitis](/de/plantarfasziitis/). Schmerz an einer Stelle eines Knochens, der mit jeder Wanderung zunimmt, kann ein Ermüdungsbruch sein: Lass ihn ärztlich abklären.',
   intro: [
-    'Diese Seite geht um Wandern und lange Gehstrecken im Gelände: was typischerweise wehtut, was die Umfragen unter Wanderern zu Rucksack, Schuhen und Training gefunden haben, und eine kurze Routine für vor und nach der Tour. Wenn deine Ferse nach alltäglichen Spaziergängen wehtut, fang mit [Fersenschmerzen nach dem Gehen](/de/fersenschmerzen-nach-dem-gehen/) an. Wie viel du mit schmerzender Ferse gehen kannst, steht unter [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
+    'In diesem Ratgeber geht es um Wandern und lange Gehstrecken im Gelände: was typischerweise wehtut, was die Umfragen unter Wanderern zu Rucksack, Schuhen und Training gefunden haben, und eine kurze Routine für vor und nach der Tour. Wenn deine Ferse nach alltäglichen Spaziergängen wehtut, fang mit [Fersenschmerzen nach dem Gehen](/de/fersenschmerzen-nach-dem-gehen/) an. Wie viel du mit schmerzender Ferse gehen kannst, steht unter [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
   ],
   toc: true,
   takeaways: [
     'Von 1295 Fernwanderern auf dem Appalachian Trail gaben 61\u00A0% Beschwerden an Muskeln, Gelenken oder Knochen an, 37\u00A0% Knieschmerzen, 29\u00A0% Fußschmerzen und 12\u00A0% Schmerzen an der Achillessehne. 11\u00A0% brachen ihre Wanderung deswegen ab (Chrusch und Kavin, 2021).',
-    'Wanderer, die vor dem Trail gar nicht trainiert hatten, gaben häufiger Fußschmerzen an, 38\u00A0% gegenüber 28\u00A0%, und häufiger irgendeine solche Verletzung, 80\u00A0% gegenüber 58\u00A0%. Das ist ein Zusammenhang aus einer Umfrage, kein Beweis, dass Training Verletzungen verhindert (Chrusch und Kavin, 2021).',
+    'Wanderer, die vor dem Trail gar nicht trainiert hatten, gaben häufiger Fußschmerzen an, 38\u00A0% gegenüber 28\u00A0%, und häufiger irgendeine Verletzung an Muskeln, Gelenken oder Knochen, 80\u00A0% gegenüber 58\u00A0%. Das ist ein Zusammenhang aus einer Umfrage, kein Beweis, dass Training Verletzungen verhindert (Chrusch und Kavin, 2021).',
     'Blasen an den Füßen waren bei 280\u00A0Wanderern auf dem Appalachian Trail die häufigste Beschwerde, 64\u00A0% gaben sie an (Boulware und Kollegen, 2003).',
     'Taubheit oder Kribbeln nahm bei 128\u00A0Fernwanderern mit dem Rucksackgewicht zu, von 35\u00A0% bei Rucksäcken mit 10 bis 20\u00A0Pfund (etwa 4,5 bis 9\u00A0kg) auf 69\u00A0% über 31\u00A0Pfund (etwa 14\u00A0kg). Schuhtyp und Rucksackgewicht hingen nicht mit anderen Muskel- und Gelenkverletzungen zusammen (Anderson und Kollegen, 2009).',
     'Wanderstöcke verringerten die Belastung von Sprunggelenk, Knie und Hüfte, als 15\u00A0erfahrene Wanderer bergab gingen, mit und ohne Rucksack (Bohne und Abendroth-Smith, 2007).',
@@ -40,10 +40,10 @@ export const HIKERS_DE: Guide = {
       h2: 'Warum tun die Füße nach einer Wanderung weh?',
       keyFact: 'In einer Umfrage unter 1295 Fernwanderern auf dem Appalachian Trail gaben 29\u00A0% Verletzungen oder Schmerzen am Fuß an und 37\u00A0% Knieschmerzen (Chrusch und Kavin, 2021).',
       paragraphs: [
-        '**Vor allem, weil Wandern die Füße stärker und länger belastet als normales Gehen.** Du gehst stundenlang, auf unebenem Boden, bergauf und bergab, oft mit Rucksack. Jedes davon bedeutet mehr Arbeit für Ferse, Fußgewölbe, Wade und Achillessehne.',
-        'Die besten Zahlen stammen von Fernwanderern. In einer Umfrage aus den Jahren 2018 bis 2019 unter 1295 Wanderern auf dem Appalachian Trail gaben 61\u00A0% Beschwerden an Muskeln, Gelenken oder Knochen an. Am häufigsten waren Knieschmerzen mit 37\u00A0%, dann Fußschmerzen mit 29\u00A0%, Umknicken des Sprunggelenks mit 13\u00A0%, Schmerzen an der Achillessehne mit 12\u00A0% und Schienbeinschmerzen mit 11\u00A0%. Wegen dieser Beschwerden brachen 11\u00A0% ihre Wanderung ab (Chrusch und Kavin, 2021).',
-        'Überlastungsbeschwerden, die sich über Tage wiederholter Belastung aufbauen, waren häufiger als plötzliche Verletzungen: 28\u00A0% gegenüber 18\u00A0% in derselben Umfrage. Das betrifft auch Tageswanderer. Eine lange erste Tour der Saison oder ein Wochenende mit zwei großen Tagen hintereinander folgt demselben Muster, nur kleiner.',
-        'Das sind Umfragen mit Selbstangaben von Menschen, die Hunderte Meilen gegangen sind. Keine Studie hat Fußschmerzen bei gewöhnlichen Tageswanderern gezählt, die genauen Zahlen gelten also nicht für jemanden, der am Wochenende wandert. Nützlich ist das Muster, was wehtut.',
+        '**Vor allem, weil Wandern die Füße stärker und länger belastet als normales Gehen.** Du gehst stundenlang, auf unebenem Boden, bergauf und bergab, oft mit Rucksack. All das bedeutet mehr Arbeit für Ferse, Fußgewölbe, Wade und Achillessehne.',
+        'Die besten Zahlen stammen von Fernwanderern. In einer Umfrage aus den Jahren 2018 bis 2019 unter 1295 Wanderern auf dem Appalachian Trail gaben 61\u00A0% Beschwerden an Muskeln, Gelenken oder Knochen an. Am häufigsten waren Knieschmerzen mit 37\u00A0%, dann Fußschmerzen mit 29\u00A0%, Verstauchungen des Sprunggelenks mit 13\u00A0%, Schmerzen an der Achillessehne mit 12\u00A0% und Schienbeinschmerzen mit 11\u00A0%. Wegen dieser Beschwerden brachen 11\u00A0% ihre Wanderung ab (Chrusch und Kavin, 2021).',
+        'Überlastungsbeschwerden, die sich über Tage wiederholter Belastung aufbauen, waren häufiger als plötzliche Verletzungen: 28\u00A0% gegenüber 18\u00A0% in derselben Umfrage. Das betrifft auch Tageswanderer. Eine lange erste Tour der Saison oder ein Wochenende mit zwei langen Touren hintereinander folgt demselben Muster, nur in kleinerem Maßstab.',
+        'Das sind Umfragen mit Selbstangaben von Menschen, die Hunderte Meilen gegangen sind. Keine Studie hat Fußschmerzen bei gewöhnlichen Tageswanderern gezählt, die genauen Zahlen gelten also nicht für jemanden, der am Wochenende wandert. Nützlich ist vor allem das Muster: was typischerweise wehtut.',
       ],
       sourceNote: 'Chrusch und Kavin 2021: elektronische Querschnittsumfrage, angehängt an die Saisonabschlussumfrage der Appalachian Trail Conservancy, Rücklaufquote 52\u00A0%. Überlastung/chronisch 28\u00A0% (n=363), akut 18\u00A0% (n=238).',
       cites: [CITE.chruschHikers],
@@ -66,7 +66,7 @@ export const HIKERS_DE: Guide = {
         ],
       },
       after: [
-        '**Unter der Ferse.** Eine Plantarfasziitis tut typischerweise bei den ersten Schritten nach einer Pause am meisten weh. Die Leitlinie von 2023 zu Fersenschmerzen nennt Schmerz, der nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen begonnen hat, als typisches Merkmal (Koc und Kollegen, 2023), und genau das ist eine größere Wanderung. Eine verkürzte Wade ist der stärkste bekannte Risikofaktor: In einer Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne hatten die Menschen mit der geringsten Beugung im Sprunggelenk ein 23,3-fach höheres Risiko (Riddle und Kollegen, 2003).',
+        '**Unter der Ferse.** Eine Plantarfasziitis tut typischerweise bei den ersten Schritten nach einer Pause am meisten weh. Die Leitlinie von 2023 zu Fersenschmerzen nennt Schmerz, der nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen begonnen hat, als typisches Merkmal (Koc und Kollegen, 2023), und genau das ist eine größere Wanderung. Eine verkürzte Wade ist der stärkste bekannte Risikofaktor: In einer Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne hatten die Menschen mit der geringsten Beugung im Sprunggelenk eine 23,3-fach höhere Chance auf eine Plantarfasziitis (Riddle und Kollegen, 2003).',
         '**Hinten an der Ferse.** Schmerzen an der Achillessehne können bei langen Anstiegen aufflammen, wo Wade und Sehne dich bei jedem Schritt nach oben drücken. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         '**Fußballen.** Lange Abstiege und eine verkürzte Wade können beide die Last auf den Vorfuß verlagern. Siehe [Metatarsalgie](/de/metatarsalgie-vorfussschmerzen/).',
         '**Blasen und Zehennägel.** Blasen gaben 64\u00A0% von 280\u00A0Wanderern auf dem Appalachian Trail an, mehr als jede andere Beschwerde (Boulware und Kollegen, 2003). Dunkle oder schmerzende Zehennägel nach einem Tag mit vielen Abstiegen bedeuten meist, dass die Zehen vorn im Schuh anstoßen. Beides sind Probleme mit Haut und Passform, an denen Übungen nichts ändern.',
@@ -104,7 +104,7 @@ export const HIKERS_DE: Guide = {
             'In der Umfrage auf dem Appalachian Trail aus den Jahren 2018 bis 2019 trugen 58\u00A0% Lauf- oder Trailrunning-Schuhe und 24\u00A0% Wanderstiefel. Beide gingen mit weniger Beschwerden einher als anderes Schuhwerk wie Sandalen (Chrusch und Kavin, 2021).',
           ],
         },
-        'Nimm also den Schuh, der passt, in dem du schon gegangen bist und der zum Gelände passt. Bei Fersenschmerzen im Allgemeinen bewertet die Leitlinie von 2023 Einlagen allein zur kurzfristigen Linderung mit **Empfehlungsgrad B gegen die Anwendung** und lässt sie zusätzlich zu anderer Behandlung mit **Empfehlungsgrad C** zu (Koc und Kollegen, 2023). Mehr unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/). Wenn du auf leichtere oder flachere Schuhe umsteigen willst, tu das über Wochen, nicht bei der ersten langen Tour. Warum, erklärt [Barfußschuhe](/de/barfussschuhe/).',
+        'Nimm also den Schuh, der gut sitzt, in dem du schon gelaufen bist und der zum Gelände passt. Bei Fersenschmerzen im Allgemeinen bewertet die Leitlinie von 2023 Einlagen allein zur kurzfristigen Linderung mit **Empfehlungsgrad B gegen die Anwendung** und lässt sie zusätzlich zu anderer Behandlung mit **Empfehlungsgrad C** zu (Koc und Kollegen, 2023). Mehr unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/). Wenn du auf leichtere oder flachere Schuhe umsteigen willst, tu das schrittweise über mehrere Wochen, nicht bei der ersten langen Tour. Warum, erklärt [Barfußschuhe](/de/barfussschuhe/).',
       ],
       cites: [CITE.andersonPack, CITE.chruschHikers, CITE.guideline],
     },
@@ -118,10 +118,10 @@ export const HIKERS_DE: Guide = {
           list: [
             'Ändere immer nur eine Sache: mehr Strecke, mehr Auf- und Abstieg oder einen schwereren Rucksack, nicht alle drei am selben Tag.',
             'Nimm den nächsten Morgen als Kontrolle. Schmerz, der bis zum nächsten Morgen abklingt und nicht von Woche zu Woche zunimmt, ist ein vernünftiges Zeichen, dass die Belastung passt. Diese Regel stammt aus einer Studie zur Achillessehne, nicht von Wanderern (Silbernagel und Kollegen, 2007).',
-            'Plan nach einem großen Tag einen leichten ein. Die [Appalachian Trail Conservancy](https://appalachiantrail.org/experience/hike-the-trail/essential-skills/health-hygiene/common-injuries/) (auf Englisch) gibt Fernwanderern einen ähnlichen Rat: für den Tag aufhören, wenn die Füße anfangen wehzutun, anschwellen oder sich eng anfühlen, nachdem du weiter gegangen bist als sonst.',
+            'Plan nach einem anstrengenden Tag einen leichten ein. Die [Appalachian Trail Conservancy](https://appalachiantrail.org/experience/hike-the-trail/essential-skills/health-hygiene/common-injuries/) (auf Englisch) gibt Fernwanderern einen ähnlichen Rat: für den Tag aufhören, wenn die Füße anfangen wehzutun, anschwellen oder sich eng anfühlen, nachdem du weiter gegangen bist als sonst.',
           ],
         },
-        'Wadenkraft lohnt sich zwischen den Touren, weil die Wade bei Auf- und Abstiegen einen großen Teil der Arbeit macht. Das Fersenheben unten ist dasselbe wie in der Anleitung zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Zwischen den Touren lohnt es sich, Wadenkraft aufzubauen, weil die Wade bei Auf- und Abstiegen einen großen Teil der Arbeit macht. Das Fersenheben unten ist dasselbe wie in der Anleitung zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       cites: [CITE.chruschHikers, CITE.silbernagel],
     },
@@ -129,7 +129,7 @@ export const HIKERS_DE: Guide = {
       h2: 'Was ist eine gute Routine vor und nach einer Wanderung?',
       paragraphs: [
         'Halte sie kurz. Vor der Tour ein bis zwei Minuten, um die Sprunggelenke in Bewegung zu bringen. Danach die Dehnungen für Ferse und Wade. An Tagen zwischen den Touren Fersenheben für die Kraft. Die Dosierungen sind die Startdosierungen von Walkito aus den Hauptanleitungen. Hör für den Tag mit einer Übung auf, wenn der Schmerz über 6 von 10 steigt.',
-        'Sei ehrlich, was Dehnen vor einer Wanderung bringt. In einer Studie mit 1538\u00A0Rekruten über drei Monate Grundausbildung senkte das Dehnen von sechs Muskelgruppen der Beine vor jeder Einheit die Verletzungen nicht nennenswert (Pope und Kollegen, 2000). Die Dehnungen hier sind für Fersen- und Wadenschmerzen gedacht, wo die Leitlinie von 2023 Dehnen mit **Empfehlungsgrad A** bewertet und Krafttraining für die Wade mit **B** (Koc und Kollegen, 2023).',
+        'Erwarte vom Dehnen vor einer Wanderung nicht zu viel. In einer Studie mit 1538\u00A0Rekruten über drei Monate Grundausbildung senkte das Dehnen von sechs Muskelgruppen der Beine vor jeder Einheit die Verletzungen nicht nennenswert (Pope und Kollegen, 2000). Die Dehnungen hier sind für Fersen- und Wadenschmerzen gedacht, wo die Leitlinie von 2023 Dehnen mit **Empfehlungsgrad A** bewertet und Krafttraining für die Wade mit **B** (Koc und Kollegen, 2023).',
       ],
       exercises: [
         {
@@ -150,7 +150,7 @@ export const HIKERS_DE: Guide = {
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           often: 'Nach der Tour',
           feel: 'Eine Dehnung in der Wade',
-          how: 'Leg die Hände an eine Wand. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht an der Ferse, deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.',
+          how: 'Leg die Hände an eine Wand. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht an der Ferse, deshalb ist diese Dehnung wichtig, auch wenn du sie weiter oben spürst.',
           stop: 'Stechender Schmerz an der Ferse oder der Achillessehne',
           media: 'calf_stretch_straight',
           caption: 'Wadendehnung: hinteres Bein gestreckt, hintere Ferse flach, Hüfte nach vorn',
@@ -198,7 +198,7 @@ export const HIKERS_DE: Guide = {
           dose: '3\u00A0Sätze à 10, beide Füße',
           often: '2 bis 3\u00A0Tage pro Woche, nicht am Tag nach einer großen Tour',
           feel: 'Beide Waden arbeiten zusammen',
-          how: 'Stell dich auf beide Füße, drück dich gerade über die großen Zehen nach oben und senk dich langsam ab. Wenn es leicht wird, wechsle auf ein Bein oder zum [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/). Bei Schmerzen an der Achillessehne ist langsames Absenken auf einer Stufe die Hauptübung: siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+          how: 'Stell dich auf beide Füße, drück dich gerade über die großen Zehen nach oben und senk dich langsam ab. Wenn das leichtfällt, wechsle auf ein Bein oder zum [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/). Bei Schmerzen an der Achillessehne ist langsames Absenken auf einer Stufe die Hauptübung: siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
           stop: 'Schmerz an Ferse oder Achillessehne über 6 von 10 oder am nächsten Morgen schlimmer',
           media: 'heel_raise_double',
           caption: 'Fersenheben beidbeinig: gerade über die großen Zehen nach oben, dann langsam absenken',
@@ -257,7 +257,7 @@ export const HIKERS_DE: Guide = {
     },
     {
       q: 'Wie lange dürfen die Füße nach einer langen Wanderung wehtun?',
-      a: 'Normale Beschwerden nach einem großen Tag lassen bei leichter Aktivität oft innerhalb von ein bis zwei Tagen nach. Wenn der Fersenschmerz bei den ersten Schritten jeden Morgen wiederkommt oder der Schmerz nach einer Woche mit kürzeren Strecken noch da ist, ist eher eine Überlastung wie eine Plantarfasziitis oder Achillessehnenschmerzen der Grund, und du solltest es richtig abklären lassen.',
+      a: 'Normale Beschwerden nach einem anstrengenden Tag lassen bei leichter Aktivität oft innerhalb von ein bis zwei Tagen nach. Wenn der Fersenschmerz bei den ersten Schritten jeden Morgen wiederkommt oder der Schmerz nach einer Woche mit kürzeren Strecken noch da ist, ist eher eine Überlastung wie eine Plantarfasziitis oder Achillessehnenschmerzen der Grund, und du solltest es richtig abklären lassen.',
     },
     {
       q: 'Sollte ich vor einer Wanderung dehnen?',
@@ -268,7 +268,7 @@ export const HIKERS_DE: Guide = {
   redFlags: {
     h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
-      'der Schmerz an einer Stelle eines Knochens sitzt und mit jeder Tour schlimmer wird, das kann ein Ermüdungsbruch sein',
+      'der Schmerz an einer Stelle eines Knochens sitzt und mit jeder Tour schlimmer wird (möglicher Ermüdungsbruch)',
       'du den Fuß nicht belasten kannst oder hinkst',
       'der Schmerz mit einem Umknicken, einem Sturz oder einem Knall begann, vor allem hinten an der Ferse',
       'Fuß oder Sprunggelenk gerötet, warm oder geschwollen sind oder du Fieber hast',
@@ -280,7 +280,7 @@ export const HIKERS_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito ist eine Übungs-App für Ferse und Fuß mit den Dehnungen und dem Fersenheben von dieser Seite. Sie plant keine Wanderungen. Mach deine Tourenplanung also selbst und leg die Einheiten drumherum, mit leichteren Einheiten nach einem großen Tag.',
+    text: 'Walkito ist eine Übungs-App für Ferse und Fuß mit den Dehnungen und dem Fersenheben von dieser Seite. Sie plant keine Wanderungen. Plane deine Touren also selbst und leg die Einheiten darum herum, mit leichteren Einheiten nach einem anstrengenden Tag.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Vor jeder Einheit bewertest du, wie sich deine Füße anfühlen, und der Plan passt sich daran an. Walkito stellt keine Diagnose.',
     ],
