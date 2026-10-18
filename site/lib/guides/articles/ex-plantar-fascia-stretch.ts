@@ -25,7 +25,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
   page: 'exPlantarFasciaStretch',
   mainSource: CITE.digiovanni2003,
   published: '2026-10-05',
-  updated: '2026-10-05',
+  updated: '2026-10-17',
   title: 'Plantar Fascia Stretch: How to Do It, Sets & Reps',
   description:
     'How to do the plantar fascia stretch for plantar fasciitis: technique, when to stretch, how long to hold, and what the research says.',
@@ -87,6 +87,22 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
       sourceNote:
         'DiGiovanni 2003: Foot Function Index pain subscale significantly better in the PF stretch group at 8 weeks for worst pain (p = 0.02) and first steps in the morning (p = 0.006). DiGiovanni 2006: at 2 years, 92% overall satisfaction; the original Achilles-stretch group improved markedly after crossing over.',
       cites: [CITE.digiovanni2003, CITE.digiovanni2006, CITE.guideline],
+    },
+    {
+      h2: 'Which stretches help plantar fasciitis?',
+      keyFact: 'The 2023 heel pain guideline grades stretching of the plantar fascia and the calf A, its top grade (Koc and colleagues, 2023).',
+      paragraphs: [
+        'Three stretches cover the stretching the 2023 heel pain guideline grades **A**: one for the plantar fascia and two for the calf. Walkito starts each at these doses:',
+        {
+          list: [
+            'Plantar fascia stretch (this page): sit, cross the foot over the other knee and pull the toes back until you feel it in the arch. 10 holds of 10 seconds, each foot.',
+            '[Calf stretch](/exercises/calf-stretch/): hands on a wall, back leg straight, back heel flat on the floor. 3 holds of 30 seconds, each leg.',
+            '[Soleus stretch](/exercises/soleus-stretch/): the same position with the back knee bent, so the stretch moves lower, toward the heel. 3 holds of 30 seconds, each leg.',
+          ],
+        },
+        'Do them together rather than picking one. Limited ankle bend, usually from a tight calf, is a risk factor for plantar fasciitis on its own (Riddle and colleagues, 2003), and the plantar fascia stretch works on the tissue under the arch directly. Stretching is one part of the routine: foot and ankle strength work gets a **B** from the same guideline. The full routine is in [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+      ],
+      cites: [CITE.guideline, CITE.riddle, CITE.digiovanni2003],
     },
     {
       h2: 'How is the plantar fascia stretch different from a calf stretch?',

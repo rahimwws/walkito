@@ -4420,7 +4420,7 @@ Ninguno es claramente mejor. Un pie plano reparte la carga en un área más ampl
 
 ## Pie plano: qué es, qué lo causa y cuándo prestarle atención
 
-Language: Spanish (Español) · https://walkito.site/es/pie-plano/ · published 2026-10-07 · updated 2026-10-13
+Language: Spanish (Español) · https://walkito.site/es/pie-plano/ · published 2026-10-07 · updated 2026-10-17
 
 Tener pie plano significa que el arco del pie queda más bajo de lo normal o toca el piso cuando te paras. La mayoría de los pies planos son flexibles, es decir, el arco aparece cuando el pie no toca el piso, y la mayoría no causan ningún dolor. Unos pocos son rígidos o aparecen en la edad adulta porque un tendón se debilita, y esos son los casos a los que vale la pena prestar más atención.
 
@@ -4441,6 +4441,21 @@ El pie plano es común. Una revisión sistemática de 2023 juntó 12 estudios de
 **Tener pie plano no significa que algo esté mal.** Mucha gente con arcos bajos camina, corre y pasa horas de pie sin ningún síntoma. Las preguntas que importan son si el pie plano es flexible o rígido, y si te causa dolor.
 
 Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
+
+### ¿En qué se diferencia el pie plano de un pie normal?
+
+**No hay una línea clara entre un pie plano y un pie normal.** Un arco normal también baja un poco cuando te pones de pie. En datos combinados de 619 adultos sanos evaluados con el Foot Posture Index, una revisión de seis puntos que hace un profesional mientras estás de pie, la puntuación promedio fue +4 en una escala de -12 (arco alto) a +12 (pie plano). Los autores llaman a eso una postura un poco pronada, la posición normal en reposo, y consideran claramente fuera de lo normal las puntuaciones por debajo de -3 o por encima de +10.
+
+Otra medida común es la caída del navicular: cuánto baja el hueso del lado interno del arco al ponerte de pie. En los estudios, los adultos sanos tienen en promedio entre 3,6 y 8,1 milímetros. Algunos investigadores han propuesto 10, 13 o 15 milímetros como límite de lo normal, pero ninguno de esos límites se ha confirmado (Nielsen y colegas, 2009).
+
+La huella mojada es una prueba casera aproximada, no un diagnóstico. Una huella ancha, sin curva en el lado interno, sugiere un arco bajo, pero los estudios no se ponen de acuerdo sobre qué tan bien la huella muestra el arco real. Un estudio de 1992 con 115 hombres encontró que las medidas de la huella no predecían la altura del arco (Hawes y colegas, 1992). Un estudio de 2009 con 91 adultos jóvenes, comparado con radiografías, encontró que el índice del arco de la huella coincidía de forma moderada con las medidas del arco en las radiografías (Murley y colegas, 2009).
+
+Para ti, la etiqueta importa menos que dos preguntas: ¿el arco vuelve cuando el pie no toca el piso?, y ¿te duele? Las dos se explican a continuación.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
 
 ### ¿Cómo saber si el pie plano es flexible o rígido?
 
@@ -4839,7 +4854,7 @@ La fascitis plantar repentina suele seguir a un cambio brusco de carga, no a una
 
 ## Dolor de talón al levantarse: por qué pasa y qué hacer antes del primer paso
 
-Language: Spanish (Español) · https://walkito.site/es/dolor-de-talon-al-levantarse/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/dolor-de-talon-al-levantarse/ · published 2026-10-07 · updated 2026-10-17
 
 Los primeros pasos al salir de la cama son lo peor del día. Ese tirón agudo en el talón, antes de que termines de pararte derecho, es lo que describe la mayoría de la gente cuando busca dolor de talón. La causa más común es la fascitis plantar, pero no es la única, y la mañana es el momento más útil para hacer algo al respecto.
 
@@ -4849,7 +4864,7 @@ Los primeros pasos al salir de la cama son lo peor del día. Ese tirón agudo en
 - En una cohorte de 174 personas con fascitis plantar, tener dolor en los dos talones predecía de forma significativa que los síntomas duraran más, y los autores señalaron que una enfermedad inflamatoria no detectada podría explicar en parte ese resultado (Hansen y colegas, 2018).
 - El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara de si el pie está mejorando o no.
 
-### ¿Por qué me duele el talón al levantarme?
+### ¿Por qué me duele el talón al despertar y al levantarme?
 
 La fascia plantar, la banda gruesa de tejido que va del hueso del talón a los dedos, se pone rígida mientras duermes. En reposo, el pie suele quedar apuntando hacia abajo, y eso deja que la fascia se acorte. Cuando te paras y el pie se aplana bajo todo tu peso, ese tejido acortado se estira de golpe. El resultado es un tirón agudo en la parte interna del talón.
 
@@ -6562,7 +6577,7 @@ Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar
 
 ## Dolor en el empeine del pie: qué lo causa y cuándo consultar a un profesional de la salud
 
-Language: Spanish (Español) · https://walkito.site/es/dolor-en-el-empeine/ · published 2026-10-07 · updated 2026-10-07
+Language: Spanish (Español) · https://walkito.site/es/dolor-en-el-empeine/ · published 2026-10-07 · updated 2026-10-17
 
 El dolor en el empeine del pie es menos común que el dolor de talón o de arco, pero puede hacer que cada paso moleste, sobre todo con zapatos. La causa más frecuente es la tendinitis de los extensores, una irritación de los tendones que levantan los dedos, muchas veces por cordones apretados o un aumento repentino de actividad. Otras causas incluyen la fractura por estrés, los espolones óseos, la gota y la compresión de un nervio. La mayoría responde a cambios sencillos, pero algunas necesitan estudios de imagen o una visita a un profesional de la salud.
 
@@ -6570,6 +6585,23 @@ El dolor en el empeine del pie es menos común que el dolor de talón o de arco,
 - La fractura por estrés de un metatarsiano es la causa más importante que hay que descartar. El dolor está en un solo punto, empeora a lo largo del día y puede no verse en una radiografía durante las primeras dos o tres semanas.
 - Cambiar la forma de atar los cordones, saltándote el ojal justo sobre el punto que duele, suele ser el primer paso más rápido para la tendinitis de los extensores.
 - Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine. El ejercicio aborda factores que contribuyen, como la rigidez de pantorrilla y la debilidad del tibial anterior, no el dolor del empeine directamente.
+
+### ¿Dónde está el empeine?
+
+El empeine es la parte de arriba del pie, entre el tobillo y el comienzo de los dedos. El [Diccionario de la lengua española](https://dle.rae.es/empeine) lo define como la «parte superior del pie, que está entre la caña de la pierna y el principio de los dedos». En medicina se llama dorso del pie. El mismo diccionario usa «empeine» también para la parte baja del vientre, entre las ingles, pero esta página trata solo del pie.
+
+Debajo de la piel del empeine hay varias estructuras:
+
+- **Huesos.** Los huesos del medio del pie (el navicular, los tres cuneiformes y el cuboides) y la parte de arriba de los cinco metatarsianos, los huesos largos que llegan hasta los dedos.
+- **Tendones.** Los tendones extensores bajan por delante del tobillo y cruzan el empeine: el del tibial anterior, que levanta el pie, y los de los músculos que levantan el dedo gordo y los demás dedos.
+- **Arteria y nervio.** La arteria dorsal del pie y el nervio peroneo profundo recorren el empeine. Ese nervio da la sensibilidad de la piel entre el dedo gordo y el segundo dedo.
+
+Por eso un cordón apretado o una lengüeta rígida se notan tanto en esta zona. Las causas más comunes del dolor en el empeine están en la siguiente sección.
+
+Source: MacGregor R, Byerly DW. Anatomy, Bony Pelvis and Lower Limb: Foot Bones. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+Source: Card RK, Bordoni B. Anatomy, Bony Pelvis and Lower Limb, Foot Muscles. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+Source: Guillot C, Smith T. Anatomy, Bony Pelvis and Lower Limb: Foot Arteries. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+Source: Palmisano LL, Launico MV. Anatomy, Bony Pelvis and Lower Limb: Calf Deep Peroneal Nerve (Deep Fibular Nerve). In: StatPearls. Treasure Island (FL): StatPearls Publishing.
 
 ### ¿Qué causa el dolor en el empeine del pie?
 

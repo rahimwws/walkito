@@ -311,6 +311,14 @@ Sources:
 - ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
 - Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.
 - Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.
+- Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+- Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+- Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
+- Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+- MacGregor R, Byerly DW. Anatomy, Bony Pelvis and Lower Limb: Foot Bones. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Card RK, Bordoni B. Anatomy, Bony Pelvis and Lower Limb, Foot Muscles. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Palmisano LL, Launico MV. Anatomy, Bony Pelvis and Lower Limb: Calf Deep Peroneal Nerve (Deep Fibular Nerve). In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Guillot C, Smith T. Anatomy, Bony Pelvis and Lower Limb: Foot Arteries. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -3793,7 +3801,7 @@ Walkito adjusts each session from a morning pain check-in before you start. A sc
 
 ## Plantar fascia stretch: how to do it, sets and reps
 
-Language: English · https://walkito.site/exercises/plantar-fascia-stretch/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/exercises/plantar-fascia-stretch/ · published 2026-10-05 · updated 2026-10-17
 
 The plantar fascia stretch is the single stretch tested head-to-head against Achilles tendon stretching for [plantar fasciitis](https://walkito.site/plantar-fasciitis/). In a trial of 82 people with chronic heel pain, those who did the plantar fascia stretch had better pain and function scores at eight weeks than those who stretched the Achilles tendon. This page covers the technique, the dose and when the stretch matters most.
 
@@ -3838,6 +3846,20 @@ The 2023 heel pain guideline reviewed the stretching evidence and gave plantar f
 Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 Source: DiGiovanni BF, Nawoczenski DA, Malay DP, et al. Plantar fascia-specific stretching exercise improves outcomes in patients with chronic plantar fasciitis: a prospective clinical trial with two-year follow-up. Journal of Bone and Joint Surgery (American). 2006;88(8):1775–1781.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Which stretches help plantar fasciitis?
+
+Three stretches cover the stretching the 2023 heel pain guideline grades **A**: one for the plantar fascia and two for the calf. Walkito starts each at these doses:
+
+- Plantar fascia stretch (this page): sit, cross the foot over the other knee and pull the toes back until you feel it in the arch. 10 holds of 10 seconds, each foot.
+- [Calf stretch](https://walkito.site/exercises/calf-stretch/): hands on a wall, back leg straight, back heel flat on the floor. 3 holds of 30 seconds, each leg.
+- [Soleus stretch](https://walkito.site/exercises/soleus-stretch/): the same position with the back knee bent, so the stretch moves lower, toward the heel. 3 holds of 30 seconds, each leg.
+
+Do them together rather than picking one. Limited ankle bend, usually from a tight calf, is a risk factor for plantar fasciitis on its own (Riddle and colleagues, 2003), and the plantar fascia stretch works on the tissue under the arch directly. Stretching is one part of the routine: foot and ankle strength work gets a **B** from the same guideline. The full routine is in [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 
 ### How is the plantar fascia stretch different from a calf stretch?
 
@@ -4818,7 +4840,7 @@ Daily practice is fine because the load is low. Walkito schedules it on most ses
 
 ## Short foot exercise: how to do it, sets, and progression
 
-Language: English · https://walkito.site/exercises/short-foot-exercise/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/exercises/short-foot-exercise/ · published 2026-10-05 · updated 2026-10-17
 
 The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and [plantar fasciitis](https://walkito.site/plantar-fasciitis/) programs that target the intrinsic foot muscles.
 
@@ -4913,6 +4935,10 @@ Source: Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balanc
 ### Doing it as a plan
 
 [Walkito](https://walkito.site/program/) builds a plan that includes the short foot exercise in a three-step progression: seated, standing, then single-leg. Each step opens once two sessions at the current level felt easy. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks whether your arch hold time is improving.
+
+#### Is the short foot exercise good for flat feet?
+
+For flexible flat feet it is one of the most studied arch exercises, mostly as part of a program. In a 2023 trial of 52 people with flexible flat feet, six weeks of short foot work plus ankle, hip and stretching exercises changed arch shape more than a control group. A 2024 meta-analysis found that short foot training on its own improved navicular drop only in programs longer than six weeks. These studies measured arch shape, not pain. A rigid flat foot that stays flat even off the ground needs a clinician. The full routine is in [flat feet exercises](https://walkito.site/flat-feet-exercises/).
 
 #### How long does it take for short foot exercises to work?
 
@@ -5859,7 +5885,7 @@ Sudden plantar fasciitis usually follows a sudden change in load, not a sudden i
 
 ## Flat feet: what they are, what causes them, and when they need attention
 
-Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-13
+Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-17
 
 Flat feet mean the arch of the foot sits lower than usual or touches the ground when you stand. Most flat feet are flexible, meaning the arch appears when the foot is off the ground, and most cause no pain at all. A smaller number are rigid or develop in adulthood from a weakening tendon, and those are the cases worth paying closer attention to.
 
@@ -5880,6 +5906,21 @@ Flat feet are common. A 2023 systematic review pooled 12 population-based studie
 **Having flat feet does not automatically mean something is wrong.** Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.
 
 Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
+
+### How is a flat foot different from a normal foot?
+
+**There is no sharp line between a flat foot and a normal one.** A normal arch also lowers a little when you stand. In pooled data from 619 healthy adults scored with the Foot Posture Index, a six-part check a clinician does while you stand, the average score was +4 on a scale from -12 (high-arched) to +12 (flat). The authors call that slightly pronated, the normal position at rest, and consider scores below -3 or above +10 clearly outside the normal range.
+
+Another common measure is navicular drop: how far the bone on the inner side of the arch sinks when you stand up. In studies, healthy adults average about 3.6 to 8.1 millimetres. Researchers have suggested 10, 13 or 15 millimetres as the upper limit of normal, but none of these cut-offs has been confirmed (Nielsen and colleagues, 2009).
+
+A wet footprint is a rough home check, not a diagnosis. A wide print with no curve on the inner side suggests a low arch, but studies disagree on how well a footprint shows the real arch. A 1992 study of 115 men found footprint measures could not predict arch height (Hawes and colleagues, 1992). A 2009 study of 91 young adults, checked against X-rays, found that the footprint arch index moderately matched X-ray measures of the arch (Murley and colleagues, 2009).
+
+For you, the label matters less than two questions: does the arch come back when the foot is off the ground, and does it hurt? Both are covered next.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
 
 ### How do you tell if flat feet are flexible or rigid?
 

@@ -1342,6 +1342,42 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1007/s00256-023-04320-9',
     pmid: '36917270',
   },
+  {
+    text: 'Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.',
+    doi: '10.1186/1757-1146-1-6',
+    pmid: '18822155',
+  },
+  {
+    text: 'Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.',
+    doi: '10.1177/107110079201300104',
+    pmid: '1577337',
+  },
+  {
+    text: 'Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.',
+    doi: '10.1186/1757-1146-2-22',
+    pmid: '19575811',
+  },
+  {
+    text: 'Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.',
+    doi: '10.1186/1757-1146-2-12',
+    pmid: '19422696',
+  },
+  {
+    text: 'MacGregor R, Byerly DW. Anatomy, Bony Pelvis and Lower Limb: Foot Bones. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '32491379',
+  },
+  {
+    text: 'Card RK, Bordoni B. Anatomy, Bony Pelvis and Lower Limb, Foot Muscles. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '30969527',
+  },
+  {
+    text: 'Palmisano LL, Launico MV. Anatomy, Bony Pelvis and Lower Limb: Calf Deep Peroneal Nerve (Deep Fibular Nerve). In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '30252289',
+  },
+  {
+    text: 'Guillot C, Smith T. Anatomy, Bony Pelvis and Lower Limb: Foot Arteries. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '32809747',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1613,6 +1649,14 @@ export const CITE = {
   acogExercise: 264,
   dunningFalls: 265,
   filippiniInjections: 266,
+  redmondFpi: 267,
+  hawesFootprint: 268,
+  murleyArch: 269,
+  nielsenNavicular: 270,
+  statpearlsFootBones: 271,
+  statpearlsFootMuscles: 272,
+  statpearlsDeepPeroneal: 273,
+  statpearlsFootArteries: 274,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

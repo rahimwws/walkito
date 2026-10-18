@@ -17,7 +17,7 @@ export const EX_SHORT_FOOT: Guide = {
   lang: 'en',
   page: 'exShortFoot',
   published: '2026-10-05',
-  updated: '2026-10-05',
+  updated: '2026-10-17',
   title: 'Short Foot Exercise: How to Do It and Progress',
   description:
     'How to do the short foot exercise: technique cues, sets and reps, seated to standing progression, mistakes to avoid, and what research shows.',
@@ -148,6 +148,11 @@ export const EX_SHORT_FOOT: Guide = {
     },
   ],
   faq: [
+    {
+      q: 'Is the short foot exercise good for flat feet?',
+      cites: [CITE.brijwasi, CITE.cheng],
+      a: 'For flexible flat feet it is one of the most studied arch exercises, mostly as part of a program. In a 2023 trial of 52 people with flexible flat feet, six weeks of short foot work plus ankle, hip and stretching exercises changed arch shape more than a control group. A 2024 meta-analysis found that short foot training on its own improved navicular drop only in programs longer than six weeks. These studies measured arch shape, not pain. A rigid flat foot that stays flat even off the ground needs a clinician. The full routine is in [flat feet exercises](/flat-feet-exercises/).',
+    },
     {
       q: 'How long does it take for short foot exercises to work?',
       cites: [CITE.cheng],

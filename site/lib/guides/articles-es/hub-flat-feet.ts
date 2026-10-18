@@ -12,7 +12,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
   page: 'hubFlatFeet' as any,
   mainSource: CITE.ling,
   published: '2026-10-07',
-  updated: '2026-10-13',
+  updated: '2026-10-17',
   title: 'Pie plano: causas, tipos y cuándo prestarle atención',
   description:
     'Qué es el pie plano, flexible o rígido, si causa problemas, pie plano adquirido del adulto, arcos caídos, ejercicios y cuándo ver a un profesional.',
@@ -39,6 +39,17 @@ export const HUB_FLAT_FEET_ES: Guide = {
         '**Tener pie plano no significa que algo esté mal.** Mucha gente con arcos bajos camina, corre y pasa horas de pie sin ningún síntoma. Las preguntas que importan son si el pie plano es flexible o rígido, y si te causa dolor.',
       ],
       cites: [CITE.salinasTorres],
+    },
+    {
+      h2: '¿En qué se diferencia el pie plano de un pie normal?',
+      keyFact: 'En datos combinados de 619 adultos sanos, el pie promedio en reposo estaba un poco aplanado, así que es normal que el arco baje un poco al ponerte de pie (Redmond y colegas, 2008).',
+      paragraphs: [
+        '**No hay una línea clara entre un pie plano y un pie normal.** Un arco normal también baja un poco cuando te pones de pie. En datos combinados de 619 adultos sanos evaluados con el Foot Posture Index, una revisión de seis puntos que hace un profesional mientras estás de pie, la puntuación promedio fue +4 en una escala de -12 (arco alto) a +12 (pie plano). Los autores llaman a eso una postura un poco pronada, la posición normal en reposo, y consideran claramente fuera de lo normal las puntuaciones por debajo de -3 o por encima de +10.',
+        'Otra medida común es la caída del navicular: cuánto baja el hueso del lado interno del arco al ponerte de pie. En los estudios, los adultos sanos tienen en promedio entre 3,6 y 8,1\u00A0milímetros. Algunos investigadores han propuesto 10, 13 o 15\u00A0milímetros como límite de lo normal, pero ninguno de esos límites se ha confirmado (Nielsen y colegas, 2009).',
+        'La huella mojada es una prueba casera aproximada, no un diagnóstico. Una huella ancha, sin curva en el lado interno, sugiere un arco bajo, pero los estudios no se ponen de acuerdo sobre qué tan bien la huella muestra el arco real. Un estudio de 1992 con 115 hombres encontró que las medidas de la huella no predecían la altura del arco (Hawes y colegas, 1992). Un estudio de 2009 con 91 adultos jóvenes, comparado con radiografías, encontró que el índice del arco de la huella coincidía de forma moderada con las medidas del arco en las radiografías (Murley y colegas, 2009).',
+        'Para ti, la etiqueta importa menos que dos preguntas: ¿el arco vuelve cuando el pie no toca el piso?, y ¿te duele? Las dos se explican a continuación.',
+      ],
+      cites: [CITE.redmondFpi, CITE.nielsenNavicular, CITE.hawesFootprint, CITE.murleyArch],
     },
     {
       h2: '¿Cómo saber si el pie plano es flexible o rígido?',
