@@ -14,9 +14,9 @@ import { authorFor } from '@/lib/schema';
 import { SITE_NAME, SITE_URL, pageTitle, PAGE_PUBLISHED, PAGE_UPDATED, isoDateTime } from '@/lib/site';
 
 const PATH = '/es/hojas-de-ejercicios-imprimibles/';
-const TITLE = 'Hojas de ejercicios para pies imprimibles (PDF gratis)';
+const TITLE = 'Ejercicios para fascitis plantar y pie plano en PDF gratis';
 const DESCRIPTION =
-  'Hojas PDF gratis para imprimir: ejercicios para fascitis plantar, pie plano y pies cansados de estar de pie, con dosis, imágenes y un registro semanal.';
+  'Hojas PDF gratis para imprimir con ejercicios para fascitis plantar, pie plano y pies cansados de estar de pie: dosis, imágenes y un registro semanal.';
 
 export const metadata: Metadata = {
   title: pageTitle(TITLE),

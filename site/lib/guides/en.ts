@@ -38,9 +38,9 @@ export const FLAT_FEET_EN: Guide = {
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
   updated: '2026-10-16',
-  title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
+  title: 'Flat Feet Exercises to Strengthen Fallen Arches',
   description:
-    'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
+    'Flat feet exercises for fallen or collapsed arches: how to strengthen your arch, doses, how often, what trials found and when to see a clinician.',
   h1: 'Flat feet exercises for fallen arches and arch pain',
   lede: 'When you stand, your feet seem to roll in and the arches sink toward the floor. By evening your feet feel tired, and the arches ache. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch. For flexible [flat feet](/flat-feet/), the exercise program with trial evidence combines arch-building (short-foot) exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of these exercises changed arch shape more than in a control group.',
   intro: [

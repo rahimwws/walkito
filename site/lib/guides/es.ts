@@ -307,9 +307,9 @@ export const HEEL_PAIN_ES: Guide = {
   mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-10-16',
-  title: '8 ejercicios para fascitis plantar y dolor de talón',
+  title: 'Ejercicios para la fascitis plantar en casa, con dosis',
   description:
-    'Ocho ejercicios y estiramientos para la fascitis plantar que puedes hacer en casa, con dosis, qué evitar, cuándo estirar y grados de la guía de 2023.',
+    'Ocho ejercicios y estiramientos para la fascitis plantar y el dolor de talón que puedes hacer en casa: dosis, qué evitar y los grados de la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',
   lede: 'Los ejercicios para la fascitis plantar con mejor evidencia son los estiramientos de la fascia plantar y de la pantorrilla, con grado A, el más alto de la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado B. Abajo tienes ocho, con sus dosis, y todos se hacen en casa. Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.',
   intro: [
