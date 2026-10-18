@@ -6,7 +6,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-17',
   title: 'Tutore notturno per fascite plantare: funziona?',
   description:
     'Tutore notturno per fascite plantare: cosa dicono la linea guida 2023 e gli studi, stivaletto o calza, per quanto portarlo e perché in tanti smettono.',
@@ -96,6 +96,24 @@ export const NIGHT_SPLINTS_IT: Guide = {
         'Se scegli da solo, **quello giusto è probabilmente quello che riuscirai davvero a tenere tutta la notte.** Un professionista sanitario o un fisioterapista può aiutarti con la misura.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: 'Cosa controllare prima di comprare un tutore notturno?',
+      paragraphs: [
+        'Nessuno studio mostra che una marca o un tipo funzioni meglio di un altro, quindi scegli in base a comodità e vestibilità, non alle promesse sulla confezione. Controlla questi punti prima di pagare:',
+        {
+          list: [
+            '**Il tipo adatto a come dormi.** Lo stivaletto va meglio se dormi sulla schiena. Se dormi su un fianco o a pancia in giù, un modello a calza o un piccolo tutore dorsale di solito è più comodo.',
+            '**Un angolo regolabile.** Conviene partire più o meno ad angolo retto e poterlo cambiare se serve, invece di avere un allungamento fisso.',
+            '**La taglia giusta.** Usa la tabella taglie del produttore per il tuo numero di scarpe e il polpaccio. Un tutore che scivola o preme sulle dita non resta su tutta la notte.',
+            '**Imbottitura morbida e fodera lavabile.** Lo porterai ogni notte per un periodo da uno a tre mesi.',
+            '**Cinghie che puoi slacciare al buio.** Devi toglierlo prima di camminare, per esempio se ti alzi di notte.',
+            '**La possibilità di reso.** In uno studio, dopo un anno solo 1 persona su 28 tra quelle che avevano ricevuto un tutore lo usava ancora. Compra dove puoi restituirlo se ti rovina il sonno.',
+          ],
+        },
+        'Diffida dei tutori venduti con grandi promesse. Gli studi danno risultati contrastanti, e lo stretching del mattino ha lo stesso grado nella linea guida, senza costi.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: 'Per quanto tempo portare un tutore notturno per la fascite plantare?',

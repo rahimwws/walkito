@@ -11,7 +11,7 @@ export const ACHILLES_PT: Guide = {
   page: 'achilles',
   mainSource: CITE.achillesGuideline,
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-17',
   title: 'Tendinite de Aquiles: exercícios excêntricos e mais',
   description:
     'Exercícios para tendinite de Aquiles com doses: descida excêntrica, resistência pesada e lenta, dor insercional ou no meio do tendão, e quando parar.',
@@ -230,6 +230,11 @@ export const ACHILLES_PT: Guide = {
       q: 'O que é a descida excêntrica do calcanhar para tendinite de Aquiles?',
       cites: [CITE.alfredson],
       a: 'A descida excêntrica do calcanhar é um exercício de força: suba com os dois pés, desça devagar com um, com o calcanhar afundando abaixo da beira de um degrau. O foco é a descida. Em um ensaio de 1998, 15\u00A0atletas que fizeram isso duas vezes por dia por três meses voltaram todos ao nível de corrida de antes. Pesquisas posteriores mostram que outros tipos de carga funcionam igualmente bem.',
+    },
+    {
+      q: 'Quais são os melhores exercícios excêntricos para dor no tendão de Aquiles?',
+      cites: [CITE.alfredson, CITE.beyer],
+      a: 'A descida excêntrica do calcanhar é o exercício mais estudado para dor no tendão de Aquiles: suba na ponta dos dois pés, passe o peso para a perna dolorida e desça devagar em três segundos, com o calcanhar afundando abaixo da beira do degrau. Em um ensaio de 1998, 15\u00A0atletas que fizeram isso duas vezes por dia por três meses voltaram todos ao nível de corrida de antes. A resistência pesada e lenta deu resultados igualmente bons em um ensaio posterior.',
     },
     {
       q: 'Resistência pesada e lenta é tão boa quanto a descida excêntrica?',

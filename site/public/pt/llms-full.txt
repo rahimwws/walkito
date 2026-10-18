@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/pt/
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -25,33 +25,33 @@ should be seen by a clinician.
 
 ## Exercícios e alongamentos para fascite plantar e dor no calcanhar
 
-Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios-fascite-plantar/ · published 2026-10-08 · updated 2026-10-08
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios-fascite-plantar/ · published 2026-10-08 · updated 2026-10-17
 
-Os primeiros passos ao sair da cama são a pior parte do dia. Uma fisgada forte bem no calcanhar, antes mesmo do café. Melhora quando você começa a se mexer, e volta depois que você fica um tempo sentado. Esse padrão tem nome, [fascite plantar](https://walkito.site/pt/fascite-plantar/), e a diretriz clínica de 2023 para dor no calcanhar diz que ela é a causa mais reconhecida de dor no calcanhar embaixo do pé.
+Os exercícios para fascite plantar com a melhor evidência são os alongamentos da fáscia plantar e da panturrilha, que a diretriz de 2023 para dor no calcanhar classifica com A, o seu grau mais alto, e o treino de força da panturrilha, com grau B. Abaixo estão oito exercícios, com doses. Os primeiros passos ao sair da cama são a pior parte do dia. Uma fisgada forte bem no calcanhar, antes mesmo do café. Melhora quando você começa a se mexer, e volta depois que você fica um tempo sentado. Esse padrão tem nome, [fascite plantar](https://walkito.site/pt/fascite-plantar/), e a diretriz clínica de 2023 para dor no calcanhar diz que ela é a causa mais reconhecida de dor na sola do calcanhar.
 
 - A diretriz de 2023 para dor no calcanhar do Journal of Orthopaedic & Sports Physical Therapy dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B.
 - Em um ensaio com 48 pessoas, elevações de calcanhar com carga alta aliviaram a dor e melhoraram a função no dia a dia mais rápido que o alongamento, e aos doze meses os dois grupos estavam iguais (Rathleff e colegas, 2015).
 - Para dor no calcanhar ao correr, a mesma diretriz recomenda mudar a carga em vez de parar tudo, uma recomendação com grau E porque se baseia em teoria, não em ensaios.
 - Procure primeiro um profissional de saúde se a dor começou depois de uma lesão, vem com dormência ou inchaço, acorda você à noite ou dói quando você aperta o calcanhar.
 
-### Os exercícios para fascite plantar, com doses iniciais
+### Quais exercícios ajudam na fascite plantar, e quanto você deve fazer?
 
 Os exercícios para fascite plantar no Walkito são alongamentos da fáscia plantar e da panturrilha, treino de força para a panturrilha que sobe aos poucos, e rolar o pé na bolinha. Essas são as doses iniciais do Walkito, não uma prescrição. Um resumo de uma página está nas [fichas de exercícios para imprimir](https://walkito.site/printable-exercise-sheets/) (em inglês). [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
 
 A ordem importa. Enquanto a dor for a sua meta, o Walkito mantém o trabalho de panturrilha leve, um degrau de cada vez:
 
-- Primeiro elevação de calcanhar sentado.
+- Primeiro a elevação de calcanhar sentada.
 - Depois elevação de calcanhar com os dois pés.
 - Depois uma elevação de calcanhar sustentada.
 
 Você sobe um degrau quando as duas últimas sessões com ele pareceram fáceis. A [elevação de calcanhar com toalha](https://walkito.site/pt/exercicios/elevacao-calcanhar-toalha/) é a que mais põe carga na fáscia plantar, então ela só entra quando a dor da manhã já diminuiu e a meta passa para a força da panturrilha. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.
 
 - **Alongamento da fáscia plantar** (2 vezes de 30 segundos, cada pé): Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão.
-- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar no chão e o quadril para a frente. Uma panturrilha tensa puxa o calcanhar o dia todo, então esse alongamento importa mesmo que você sinta mais em cima.
-- **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
-- **Elevação de calcanhar sentado** (3 séries de 10, os dois pés): Sente-se com os pés apoiados e suba os calcanhares empurrando pela parte da frente dos pés. As mãos nos joelhos dão resistência. A elevação sentado trabalha a panturrilha quase sem carga no calcanhar.
+- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás bem apoiado no chão e o quadril para a frente. Uma panturrilha tensa puxa o calcanhar o dia todo, então esse alongamento importa mesmo que você sinta mais em cima.
+- **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás bem apoiado no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só é alongado de verdade com o joelho dobrado.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados e suba os calcanhares empurrando pela parte da frente dos pés. As mãos nos joelhos dão resistência. Com o joelho dobrado, ela trabalha principalmente o sóleo, o músculo mais profundo da panturrilha, e não o gastrocnêmio que você trabalha na elevação de calcanhar em pé. Então não é só uma versão mais fácil da elevação em pé. Ela treina outro músculo, quase sem carga no calcanhar.
 - **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga enquanto a panturrilha acorda.
-- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o quique.
+- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o impulso.
 - **Elevação de calcanhar com toalha** (4 séries de 10, cada perna, com peso extra): Fique em um pé só em um degrau, com uma toalha enrolada embaixo dos dedos. Leve três segundos para subir, segure dois lá em cima e leve três segundos para descer. Nesse nível o Walkito acrescenta peso, como uma mochila. É a toalha que faz esse exercício trabalhar a fáscia plantar, e não só a panturrilha.
 - **Rolar o pé na bolinha** (1 minuto): Sente-se e role a sola do pé devagar sobre uma bolinha de massagem, com pressão firme. Se estiver fazendo careta, alivie. Rolar acalma o tecido depois que ele trabalhou. Sem bolinha? A massagem na sola usa movimentos firmes com o polegar, do calcanhar até os dedos.
 
@@ -59,9 +59,9 @@ Você sobe um degrau quando as duas últimas sessões com ele pareceram fáceis.
 
 Evite atividades de alto impacto que aumentam de repente a carga no calcanhar enquanto a dor está em crise, e evite andar descalço em piso duro logo cedo.
 
-Saltos, tiros de corrida e pliometria jogam um pico de força repentino na fáscia plantar. Quando o tecido está irritado, esse pico pode fazer você voltar atrás. A diretriz de 2023 recomenda ajustar a carga nos pés no trabalho, no esporte e no dia a dia, uma recomendação com grau E. Ela não proíbe exercícios específicos. **A questão é se a carga é maior do que o tecido consegue recuperar de um dia para o outro.**
+Saltos, tiros de corrida e pliometria colocam um pico de força repentino na fáscia plantar. Quando o tecido está irritado, esse pico pode atrasar a recuperação. A diretriz de 2023 recomenda ajustar a carga nos pés no trabalho, no esporte e no dia a dia, uma recomendação com grau E. Ela não proíbe exercícios específicos. **A questão é se o tecido consegue se recuperar dessa carga de um dia para o outro.**
 
-Andar descalço em piso duro é um gatilho comum porque a fáscia está mais rígida depois do repouso e uma superfície dura não amortece nada.
+Andar descalço em piso duro é um gatilho comum porque a fáscia está mais rígida depois do repouso e uma superfície dura não amortece nada. Até os sintomas melhorarem, use um calçado bem amortecido o dia todo, inclusive dentro de casa.
 
 Mais duas coisas para observar:
 
@@ -86,10 +86,10 @@ Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar
 
 A dor no calcanhar nos primeiros passos da manhã é o padrão mais ligado à fascite plantar. Muitas vezes ela melhora quando você começa a se mexer, e volta depois que você fica um tempo sentado.
 
-Duas coisas desta página miram nela:
+Duas coisas ajudam com isso:
 
 - O alongamento da fáscia plantar é feito **antes de você levantar**, na beira da cama, com os dedos puxados para trás, para que os primeiros passos não sejam o seu primeiro alongamento.
-- A diretriz de 2023 dá às talas noturnas, usadas por 1 a 3 meses, um **A** para quem continua tendo dor nos primeiros passos da manhã. Talas noturnas são algo para conversar com um profissional de saúde. O Walkito não fornece talas.
+- A diretriz de 2023 dá às [talas noturnas](https://walkito.site/pt/tala-noturna-fascite-plantar/), usadas por 1 a 3 meses, um **A** para quem continua tendo dor nos primeiros passos da manhã. Talas noturnas são algo para conversar com um profissional de saúde. O Walkito não fornece talas.
 
 O Walkito pergunta todo dia sobre a sua dor da manhã pelo mesmo motivo. A dor da manhã é o sinal mais claro de como o seu pé lidou com o dia anterior, e ela decide o quanto a sessão de hoje vai pedir de você. Mais sobre o que causa essa dor está em [dor no calcanhar pela manhã](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/).
 
@@ -97,7 +97,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Descansar ou continuar correndo com dor no calcanhar?
 
-Se a dor no calcanhar da fascite plantar piora quando você corre, **mude a carga em vez de parar tudo.** A diretriz de 2023 recomenda aprender a ajustar a carga nos pés no trabalho, no esporte e no dia a dia. Essa recomendação tem grau E, o que significa que se baseia em teoria e não em ensaios. Então mantenha os alongamentos todo dia, e diminua o que deixa o calcanhar pior.
+Se a dor no calcanhar da fascite plantar piora quando você corre, **mude a carga em vez de parar tudo.** A diretriz de 2023 recomenda aprender a ajustar a carga nos pés no trabalho, no esporte e no dia a dia. Essa recomendação tem grau E, o que significa que se baseia em teoria e não em ensaios. Então mantenha os alongamentos todo dia, e diminua o que deixa o calcanhar pior. Para manter o condicionamento sem irritar o calcanhar, você pode trocar algumas corridas por um cardio de baixo impacto, como natação ou bicicleta ergométrica.
 
 Numa manhã ruim, mantenha os alongamentos e tire as elevações de calcanhar naquele dia. A manhã seguinte mostra como foi. Se os seus primeiros passos estão claramente piores depois de uma corrida, essa corrida foi mais do que o calcanhar aguentava.
 
@@ -129,7 +129,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Calçados com bom suporte ajudam, mas palmilhas sozinhas não bastam para a maioria das pessoas. A diretriz de 2023 dá às órteses (palmilhas e suportes de arco) como opção isolada um **B contra**, o que significa que a evidência diz para não depender só delas. Junto com alongamento e treino de força, as órteses recebem um **C**.
 
-As talas noturnas, usadas durante o sono por 1 a 3 meses, recebem o grau máximo da diretriz, **A**, para quem continua tendo dor nos primeiros passos de toda manhã. Elas seguram o tornozelo para que a fáscia plantar não encurte durante a noite. Pergunte a um profissional de saúde se vale a pena tentar.
+As talas noturnas, usadas durante o sono por 1 a 3 meses, recebem o grau máximo da diretriz, **A**, para quem continua tendo dor nos primeiros passos de toda manhã. Elas seguram o tornozelo para que a fáscia plantar não encurte durante a noite. Pergunte ao seu profissional de saúde se elas são indicadas para você.
 
 A diretriz não avalia tipos específicos de calçado, mas calçado sem suporte é um fator de risco bem reconhecido. Calçados com suporte para o arco e um contraforte firme no calcanhar dividem parte da carga que a fáscia plantar carregaria sozinha. Se seus pés doem depois de um dia longo em pé, veja [pés doendo de ficar em pé o dia todo](https://walkito.site/pt/dor-nos-pes-ficar-em-pe/). Quem trabalha em turnos pode começar por [enfermagem e dor nos pés](https://walkito.site/pt/dor-nos-pes-enfermagem/).
 
@@ -155,7 +155,7 @@ Se os seus arcos também são baixos, o arco tem os próprios exercícios e o pr
 - não melhorou depois de várias semanas de exercício e menos carga
 - um arco caiu de repente na vida adulta
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir a ordem, as doses nem quanto tempo ficar em cada exercício. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14 dias seguidos.
 
@@ -177,7 +177,7 @@ Os dois ajudam, e fortalecer funciona mais rápido. Em um ensaio com 48 pessoas,
 
 #### Esporão no calcanhar é a mesma coisa que fascite plantar?
 
-Não exatamente. Muita gente fala “esporão” quando quer dizer fascite plantar, mas, a rigor, o esporão é um crescimento de osso que aparece no raio-X. A fascite plantar é dor na faixa de tecido embaixo do pé. Os exercícios desta página são os que a diretriz de 2023 avalia para dor no calcanhar embaixo do pé. Só um profissional de saúde pode dizer o que está por trás da sua.
+Não exatamente. Muita gente fala “[esporão](https://walkito.site/pt/fascite-plantar-ou-esporao/)” quando quer dizer fascite plantar, mas, a rigor, o esporão é um crescimento de osso que aparece no raio-X. A fascite plantar é dor na faixa de tecido embaixo do pé. Os exercícios desta página são os que a diretriz de 2023 avalia para dor na sola do calcanhar. Os [exercícios para esporão](https://walkito.site/pt/esporao-calcaneo-exercicios/) mostram a mesma rotina quando o raio-X mostra um esporão. Só um profissional de saúde pode dizer o que está por trás da sua.
 
 #### Com que frequência devo fazer exercícios para fascite plantar?
 
@@ -195,14 +195,22 @@ Procure primeiro um profissional de saúde se a dor começou depois de uma lesã
 
 Caminhar normalmente não tem problema, mas sozinho não é um exercício para fascite plantar. A diretriz de 2023 recomenda ajustar a carga em vez de parar a atividade. Se uma caminhada deixa os seus primeiros passos na manhã seguinte claramente piores, a distância ou o ritmo foram demais. Alongar antes de caminhar, principalmente o [alongamento da fáscia plantar](https://walkito.site/pt/exercicios/alongamento-fascia-plantar/) antes dos primeiros passos, deixa os primeiros minutos mais fáceis.
 
+#### Qual é a pior coisa que você pode fazer com fascite plantar?
+
+Andar descalço em piso duro logo depois de acordar, e voltar direto a correr ou saltar enquanto o calcanhar ainda está em crise, são os erros mais claros. Os dois aplicam uma força repentina na fáscia justamente quando ela está mais rígida e menos recuperada. A diretriz de 2023 para dor no calcanhar recomenda ajustar a carga em vez de insistir apesar da dor.
+
+#### Dá para resolver a fascite plantar com massagem?
+
+Nenhuma sessão de massagem, sozinha, faz a fascite plantar ir embora, mas uma automassagem suave pode aliviar a rigidez entre as sessões. A diretriz de 2023 dá à terapia manual feita por um profissional, o trabalho com as mãos na articulação e nos tecidos moles, o grau A, o mais alto, quando combinada com alongamento. [Rolar a sola do pé na bolinha](https://walkito.site/pt/bolinha-de-massagem-fascite-plantar/) é um cuidado de conforto, não substitui o alongamento e o treino de força da panturrilha.
+
 ## Exercícios para pé chato, arco caído e dor no arco do pé
 
-Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios-pe-chato/ · published 2026-10-08 · updated 2026-10-08
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios-pe-chato/ · published 2026-10-08 · updated 2026-10-17
 
-No fim do dia seus pés estão cansados e os arcos doem. Quando você fica em pé, os pés parecem virar para dentro e os arcos afundam em direção ao chão. Talvez já tenham dito que pé chato é só o jeito que você é e que não vale a pena pensar nisso. Querer fazer alguma coisa faz sentido, e existe pesquisa de verdade sobre treinar o arco.
+Quando você fica em pé, os pés parecem virar para dentro e os arcos afundam em direção ao chão. No fim do dia seus pés estão cansados e os arcos doem. Talvez já tenham dito que pé chato é só o jeito que você é e que não vale a pena pensar nisso. Querer fazer alguma coisa faz sentido, e existe pesquisa de verdade sobre treinar o arco. No [pé chato](https://walkito.site/pt/pe-chato/) flexível, o programa de exercícios com evidência de ensaio clínico combina exercícios para formar o arco (pé curto), trabalho de tornozelo, fortalecimento de quadril e alongamentos: em um ensaio com 52 pessoas, seis semanas desses exercícios mudaram o formato do arco mais do que em um grupo controle.
 
 - O ensaio randomizado desta página foi feito com pé chato flexível, em que o arco volta quando o pé sai do chão (Brijwasi e Borkar, 2023).
-- Nesse ensaio com 52 pessoas, seis semanas de pé curto, tornozelo, quadril e alongamentos mudaram o formato do arco mais do que no grupo controle (Brijwasi e Borkar, 2023).
+- Nesse ensaio com 52 pessoas, seis semanas de exercícios para formar o arco, tornozelo, quadril e alongamentos mudaram o formato do arco mais do que no grupo controle (Brijwasi e Borkar, 2023).
 - Uma revisão de 2024 sobre o treino de pé curto não encontrou mudança clara no geral, e encontrou melhora em uma medida do arco só em programas com mais de seis semanas (Cheng e colegas, 2024).
 - Um pé chato rígido, que continua plano mesmo fora do chão, é estrutural, e o exercício não vai mudar o formato dele.
 - Esses estudos mediram o formato do arco, não a dor. Para dor no calcanhar, a diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B.
@@ -217,32 +225,32 @@ Dá para saber se o seu pé chato é flexível ou rígido com um teste de poucos
 - Se o arco continua plano mesmo fora do chão, o pé é **rígido**. É uma questão estrutural que o exercício não vai mudar. Deixe de lado a meta de sustentar o arco e procure um profissional de saúde antes de começar um programa.
 - “Arco caído” costuma ser só outro nome para pé chato. Mas se um arco caiu **de repente**, de um lado só, na vida adulta, procure um profissional de saúde antes de exercitá-lo, seja qual for o resultado do teste.
 
-### Os exercícios para pé chato, com doses iniciais
+### Quais exercícios ajudam no pé chato, e quanto você deve fazer?
 
-Os exercícios para pé chato no Walkito começam com puxar a toalha com os dedos e a elevação do dedão, e depois sobem por três versões do pé curto. Abrir os dedos, a inversão com faixa, o equilíbrio em uma perna, a abdução de quadril e os alongamentos de panturrilha completam o resto. Essas são as doses iniciais do Walkito, não uma prescrição. Faça descalço. [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
+Os exercícios para pé chato no Walkito começam com [puxar a toalha com os dedos](https://walkito.site/pt/exercicios/puxar-toalha-dedos/) e a elevação do dedão, e depois sobem por três versões do pé curto. Abrir os dedos, a inversão com faixa, o equilíbrio em uma perna, a abdução de quadril e os alongamentos de panturrilha completam o resto. Essas são as doses iniciais do Walkito, não uma prescrição. Faça descalço. [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
 
 O pé curto é a base do trabalho do arco. Você encurta o pé puxando a parte da frente do pé em direção ao calcanhar, para o arco subir, sem dobrar os dedos. Pé curto, fortalecimento de quadril e alongamentos são o que o ensaio testou. Puxar a toalha, a elevação do dedão, abrir os dedos, a inversão com faixa e o equilíbrio em uma perna são acréscimos do próprio Walkito.
 
-Você faz um exercício de arco por vez, o do seu nível. O Walkito sobe você um degrau quando as duas últimas sessões com ele pareceram fáceis. Enquanto o arco for a sua meta, toda sessão tem um exercício de arco, e os outros se revezam.
+Você faz um exercício de arco por vez, o do seu nível. O Walkito passa você para o próximo nível quando as duas últimas sessões com ele pareceram fáceis. Enquanto o arco for a sua meta, toda sessão tem um exercício de arco, e os outros se revezam.
 
 Alguns exercícios precisam de uma toalha ou de uma faixa elástica. O Walkito pergunta o que você tem e deixa de fora o que você não tem. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.
 
 - **Puxar a toalha com os dedos** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com uma toalha esticada no chão embaixo do pé. Puxe a toalha com os dedos e mantenha o calcanhar no chão. Esse exercício acorda os músculos pequenos embaixo do arco.
 - **Elevação do dedão** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com os pés apoiados. Levante só o dedão e segure. Os outros quatro dedos ficam apoiados no chão. A elevação do dedão ensina o dedão a se mover sozinho, que é o primeiro passo para ativar o arco.
-- **Pé curto, sentado** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com o pé apoiado no chão. Puxe a parte da frente do pé em direção ao calcanhar para o arco subir, e segure. Não dobre os dedos. Dobrar os dedos é o erro mais comum neste exercício.
+- **Pé curto, sentado** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com o pé apoiado no chão. Puxe a parte da frente do pé em direção ao calcanhar para o arco subir, e segure. Mantenha a parte de fora do pé no chão e suba o arco para formar um pequeno túnel embaixo do pé. Não dobre os dedos. Dobrar os dedos é o erro mais comum neste exercício.
 - **Pé curto, em pé** (3 séries de 8, segure 5 segundos, os dois pés): Fique em pé com o peso nos dois pés e faça o mesmo movimento. Os dedos ficam esticados e apoiados. Só o arco sobe. É o mesmo músculo da versão sentada, agora sustentando o seu peso.
 - **Pé curto, em uma perna** (3 séries de 10, segure 5 segundos, cada pé): Fique em pé em um pé só e suba o arco. Mantenha o dedão no chão. Se ele levantar, o pé está compensando. Trabalhar um pé de cada vez é onde o lado mais fraco aparece.
 - **Abrir os dedos** (3 séries de 10, cada pé): Abra os dedos o máximo que conseguir e segure. Dedos que conseguem se abrir dividem a carga com o arco. Levantar os dedos não é o objetivo.
 - **Inversão com faixa** (3 séries de 12, cada pé): Sente-se com uma faixa elástica em volta do pé e vire o pé para dentro contra a faixa. Mexa o pé, não a perna. O joelho fica parado. O Walkito só coloca a inversão com faixa depois de seis sessões de pé curto em pé, para que os músculos do próprio arco venham primeiro.
-- **Equilíbrio em uma perna** (3 vezes de 20 segundos, cada perna): Fique em pé em um pé só e olhe para um ponto fixo. Deixe o pé balançar. É para balançar mesmo, porque esse balanço é o pé fazendo o equilíbrio.
+- **Equilíbrio em uma perna** (3 vezes de 20 segundos, cada perna): Fique em pé em um pé só e olhe para um ponto fixo. Deixe o pé balançar. É para balançar mesmo, porque esse balanço é o pé fazendo o equilíbrio. Se precisar, encoste de leve as pontas dos dedos em uma bancada ou na parede, para continuar ganhando resistência no tornozelo em vez de desistir.
 - **Abdução de quadril** (3 séries de 10, cada perna): Fique em pé com uma faixa elástica e levante uma perna para o lado contra ela. Empurre pelo calcanhar, não pelos dedos. Um quadril que cede joga a carga no arco.
-- **Alongamento de panturrilha e sóleo** (2 vezes de 30 segundos em cada alongamento, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar no chão e o quadril para a frente, e sinta o alongamento na panturrilha. Depois dobre o joelho de trás até sentir mais embaixo, perto do calcanhar. Esse é o sóleo, o músculo mais profundo da panturrilha.
+- **Alongamento de panturrilha e sóleo** (2 vezes de 30 segundos em cada alongamento, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás bem apoiado no chão e o quadril para a frente, e sinta o alongamento na panturrilha. Depois, ainda com o calcanhar apoiado, dobre o joelho de trás até sentir mais embaixo, perto do calcanhar. Esse é o sóleo, o músculo mais profundo da panturrilha.
 
 ### Em quanto tempo os exercícios para pé chato mudam o arco?
 
 Na pesquisa até agora, os exercícios para pé chato mudaram o arco depois de seis semanas ou mais, e só no pé chato flexível. Em um ensaio com 52 pessoas com pé chato **flexível**, um programa de seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudou duas medidas do formato do arco mais do que no grupo controle.
 
-A evidência sobre o treino de pé curto sozinho é mais fraca. Uma revisão de 2024 juntou estudos de treino de pé curto em pé chato em geral. No geral, não encontrou diferença clara em relação aos grupos controle no formato do arco ou na postura do pé. Só os programas com mais de seis semanas melhoraram o quanto o arco afunda com o seu peso, e os autores dizem que são necessários estudos maiores. Então conte com pelo menos seis semanas, e mais se você fizer o pé curto sozinho.
+A evidência sobre os exercícios para formar o arco sozinhos é mais fraca. Uma revisão de 2024 juntou estudos de treino de pé curto em pé chato em geral. No geral, não encontrou diferença clara em relação aos grupos controle no formato do arco ou na postura do pé. Só os programas com mais de seis semanas melhoraram o quanto o arco afunda com o seu peso, e os autores dizem que são necessários estudos maiores. Então conte com pelo menos seis semanas, e mais se você fizer o pé curto sozinho.
 
 Esse é um dos motivos pelos quais o plano do Walkito não tem data para acabar. A meta do arco, sustentar o arco por 60 segundos, fica no plano até você alcançá-la, leve as semanas que levar. A sustentação do arco é testada a cada 14 dias até você alcançar a primeira meta, e depois a cada 28, para você ver se ela está mudando. Os ensaios estão resumidos na [página de evidências](https://walkito.site/science/) (em inglês).
 
@@ -251,9 +259,9 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 ### Exercícios para pé chato ajudam na dor no arco?
 
-Nenhum estudo desta página mostra que os exercícios para pé chato aliviam a dor no arco, porque nenhum deles mediu isso. O ensaio e a revisão mediram o formato do arco. Eles mostram que o arco pode ser treinado. Não são evidência de que os mesmos exercícios aliviam um arco dolorido.
+Nenhum estudo desta página mostra que os exercícios para pé chato aliviem a [dor no arco](https://walkito.site/pt/dor-no-arco-do-pe/), porque nenhum deles mediu isso. O ensaio e a revisão mediram o formato do arco. Eles mostram que o arco pode ser treinado. Não são evidência de que os mesmos exercícios aliviem um arco dolorido.
 
-A dor no calcanhar, e às vezes ao longo do arco, pode vir da fáscia plantar, a faixa de tecido que corre pela sola do pé. Se a sua dor é perto do calcanhar, a diretriz de 2023 para dor no calcanhar é o melhor guia. Para dor no calcanhar embaixo do pé, ela dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força um **B**. Esses exercícios estão em [exercícios e alongamentos para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+A dor no calcanhar, e às vezes ao longo do arco, pode vir da fáscia plantar, a faixa de tecido que corre pela sola do pé. Se a sua dor é perto do calcanhar, a diretriz de 2023 para dor no calcanhar é o melhor guia. Para dor na sola do calcanhar, ela dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força um **B**. Esses exercícios estão em [exercícios e alongamentos para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
 
 O Walkito pode trabalhar as duas coisas ao mesmo tempo, como metas separadas: manhãs sem dor para a dor, e sustentar o arco para o arco. Como as duas dividem a semana está na [página do plano](https://walkito.site/program/) (em inglês).
 
@@ -282,11 +290,11 @@ Se o seu calcanhar também dói, o calcanhar tem os próprios exercícios e a pr
 - um arco caiu de repente na vida adulta
 - o arco continua plano quando o pé está fora do chão
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para um pé chato flexível, essa meta é sustentar o arco: manter o arco erguido por 60 segundos. Se você também tem dor, as manhãs sem dor vêm primeiro.
 
-#### Exercício pode mudar o pé chato?
+#### Exercício pode formar um arco no pé chato?
 
 O exercício pode mudar o formato do arco no pé chato flexível, mas não no rígido. Em um ensaio com 52 pessoas cujo arco voltava fora do chão, seis semanas de pé curto, tornozelo, quadril e alongamentos mudaram as medidas do arco mais do que em um grupo controle. Um pé que continua plano mesmo quando levantado é estrutural, e o exercício não vai mudar o formato dele.
 
@@ -300,27 +308,39 @@ Não há evidência direta aqui, porque nenhum estudo citado nesta página mediu
 
 #### Pé chato pode causar dor nas costas?
 
-A evidência é fraca e mista, não um sim claro. O maior estudo sobre isso, o [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298), com cerca de 1.900 adultos, não encontrou relação entre a postura de pé chato e dor lombar. Encontrou uma pequena relação, em mulheres, entre um pé que vira para dentro ao caminhar e dor lombar, e nenhuma em homens. Então o pé chato sozinho explica mal a dor nas costas. Se você tem os dois, trate como dois problemas separados, e procure um profissional de saúde por causa das costas.
+A evidência é fraca e mista, não um sim claro. O maior estudo sobre isso, o [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298), com cerca de 1.900 adultos, não encontrou relação entre a postura de pé chato e [dor lombar](https://walkito.site/pt/pe-chato-dor-nas-costas/). Encontrou uma pequena relação, em mulheres, entre um pé que vira para dentro ao caminhar e dor lombar, e nenhuma em homens. Então o pé chato sozinho explica mal a dor nas costas. Se você tem os dois, trate como dois problemas separados, e procure um profissional de saúde por causa das costas.
 
 #### Qual a diferença entre arco caído e pé chato?
 
-Normalmente nenhuma: “arco caído” é um nome comum para pé chato. A maioria dos pés chatos é flexível e acompanha a pessoa a vida toda, e o arco volta quando o pé sai do chão. Às vezes a expressão quer dizer outra coisa: o [pé plano adquirido do adulto](https://doi.org/10.2174/1874325001711010714), muitas vezes por enfraquecimento do tendão tibial posterior, o tendão que sustenta o arco. Ele costuma aparecer na vida adulta e pode trazer dor ou inchaço na parte de dentro do tornozelo. Se um arco caiu na vida adulta, procure um profissional de saúde antes de exercitá-lo.
+Normalmente nenhuma: “arco caído” é um nome comum para pé chato. A maioria dos pés chatos é flexível e acompanha a pessoa a vida toda, e o arco volta quando o pé sai do chão. Às vezes a expressão quer dizer outra coisa: o [pé plano adquirido do adulto](https://doi.org/10.2174/1874325001711010714), muitas vezes por enfraquecimento do [tendão tibial posterior](https://walkito.site/pt/disfuncao-tendao-tibial-posterior/), o tendão que sustenta o arco. Ele costuma aparecer na vida adulta e pode trazer dor ou inchaço na parte de dentro do tornozelo. Se um arco caiu na vida adulta, procure um profissional de saúde antes de exercitá-lo.
+
+#### Quais exercícios ajudam um arco desabado?
+
+“Arco desabado” normalmente quer dizer o mesmo que pé chato ou arco caído. Para um arco flexível, que volta quando o pé sai do chão, o exercício de pé curto é o que tem evidência de ensaio: feito sentado, depois em pé, depois em uma perna, junto com trabalho de quadril e de panturrilha. Um arco rígido, que continua plano mesmo com o pé levantado, precisa de um profissional de saúde, não de mais exercício.
 
 #### Quais exercícios fortalecem o arco do pé?
 
-O exercício de pé curto é o principal: você sobe o arco puxando a parte da frente do pé em direção ao calcanhar, sem dobrar os dedos. O Walkito começa com ele sentado, em 3 séries de 8 segurando 5 segundos, depois em pé, depois em uma perna. Puxar a toalha, a elevação do dedão, abrir os dedos e a inversão com faixa treinam os músculos pequenos em volta do arco. Tudo isso é para pé chato flexível. Passo a passo: [exercício de pé curto](https://walkito.site/pt/exercicios/pe-curto/).
+O exercício de pé curto é o principal: você sobe o arco puxando a parte da frente do pé em direção ao calcanhar, sem dobrar os dedos. O Walkito começa com ele sentado, em 3 séries de 8 segurando 5 segundos, depois em pé, depois em uma perna. Puxar a toalha, a elevação do dedão, abrir os dedos e a inversão com faixa treinam [os músculos pequenos em volta do arco](https://walkito.site/pt/exercicios-para-fortalecer-os-pes/). Tudo isso é para pé chato flexível. Passo a passo: [exercício de pé curto](https://walkito.site/pt/exercicios/pe-curto/).
 
 #### Com que frequência devo fazer exercícios para pé chato?
 
-Faça o pé curto em todo dia de treino enquanto o arco for a sua meta. No Walkito você escolhe 3, 5 ou 7 dias de treino por semana, e enquanto o arco for o foco da semana, toda sessão inclui um exercício de arco, um nível mais difícil de cada vez. A sustentação do arco é testada de novo a cada 14 dias, e depois a cada 28 após a sua primeira meta.
+Faça o pé curto em todos os dias de treino enquanto o arco for a sua meta. No Walkito você escolhe 3, 5 ou 7 dias de treino por semana, e enquanto o arco for o foco da semana, toda sessão inclui um exercício de arco, um nível mais difícil de cada vez. A sustentação do arco é testada de novo a cada 14 dias, e depois a cada 28 após a sua primeira meta.
 
 #### Quando devo ir ao médico por causa do pé chato?
 
 Procure um profissional de saúde antes de começar se o arco continua plano quando o pé está fora do chão, ou se um arco caiu de repente na vida adulta. Vale o mesmo para dor que começou depois de uma lesão, que acorda você à noite, ou que vem com dormência, formigamento, inchaço ou calor. Dor aguda ou que está piorando precisa de um profissional de saúde, não de mais exercício.
 
+#### Andar descalço é bom para pé chato?
+
+Nenhum ensaio comparou andar descalço com andar calçado no pé chato, então nenhum estudo desta página responde a essa pergunta. Andar descalço trabalha os músculos pequenos que sustentam o arco, e é por isso que exercícios de arco como o pé curto e puxar a toalha com os dedos são feitos sem calçado. Se andar descalço trouxer uma dor nova, diminua e experimente primeiro em chão macio.
+
+#### O que piora o pé chato?
+
+Ficar muito tempo em pé ou andando, calçados gastos ou sem suporte, excesso de peso e deixar de lado o trabalho de arco e de panturrilha que mantém fortes os músculos de sustentação. Nada disso muda o formato do arco, mas pode deixar um pé chato flexível mais cansado ou dolorido no fim do dia. Um pé chato rígido que continua doendo precisa de um profissional de saúde, não só de descanso.
+
 ## Exercícios para tendinite de Aquiles: descida excêntrica do calcanhar, doses e o que a pesquisa diz
 
-Language: Portuguese, Brazil (Português) · https://walkito.site/pt/tendinite-de-aquiles-exercicios/ · published 2026-10-08 · updated 2026-10-08
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/tendinite-de-aquiles-exercicios/ · published 2026-10-08 · updated 2026-10-17
 
 Os exercícios para tendinite de Aquiles funcionam melhor quando você entende a descida do calcanhar como treino de força, não como alongamento. A diretriz clínica de 2024 dá ao exercício o grau máximo, **A**, e uma metanálise em rede de 2021 com 29 ensaios não encontrou nenhum protocolo claramente melhor que outro. O que importa é colocar carga no tendão com constância por semanas.
 
@@ -457,6 +477,10 @@ Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O W
 #### O que é a descida excêntrica do calcanhar para tendinite de Aquiles?
 
 A descida excêntrica do calcanhar é um exercício de força: suba com os dois pés, desça devagar com um, com o calcanhar afundando abaixo da beira de um degrau. O foco é a descida. Em um ensaio de 1998, 15 atletas que fizeram isso duas vezes por dia por três meses voltaram todos ao nível de corrida de antes. Pesquisas posteriores mostram que outros tipos de carga funcionam igualmente bem.
+
+#### Quais são os melhores exercícios excêntricos para dor no tendão de Aquiles?
+
+A descida excêntrica do calcanhar é o exercício mais estudado para dor no tendão de Aquiles: suba na ponta dos dois pés, passe o peso para a perna dolorida e desça devagar em três segundos, com o calcanhar afundando abaixo da beira do degrau. Em um ensaio de 1998, 15 atletas que fizeram isso duas vezes por dia por três meses voltaram todos ao nível de corrida de antes. A resistência pesada e lenta deu resultados igualmente bons em um ensaio posterior.
 
 #### Resistência pesada e lenta é tão boa quanto a descida excêntrica?
 
@@ -6903,7 +6927,7 @@ Caminhar em si não machuca o nervo, mas um calçado apertado ou de sola fina du
 
 ## Tala noturna para fascite plantar: o que ela faz, o que os ensaios mostram e como usar
 
-Language: Portuguese, Brazil (Português) · https://walkito.site/pt/tala-noturna-fascite-plantar/ · published 2026-10-09 · updated 2026-10-09
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/tala-noturna-fascite-plantar/ · published 2026-10-09 · updated 2026-10-17
 
 A tala noturna para fascite plantar mantém o tornozelo em mais ou menos um ângulo reto enquanto você dorme, para que a fáscia plantar e a panturrilha não encurtem durante a noite. A diretriz de 2023 para dor no calcanhar dá a ela o grau **A** por um a três meses quando os primeiros passos continuam doendo. Os ensaios são pequenos e com resultados mistos, e muita gente acha difícil dormir com a tala.
 
@@ -6960,6 +6984,23 @@ Existem três tipos comuns de tala noturna para fascite plantar, e nenhum bom en
 - **Tipo meia, como a meia Strassburg.** Uma meia longa com uma tira dos dedos até a canela que impede o pé de apontar para baixo. É leve e fácil para dormir. Não encontramos nenhum ensaio randomizado que a tenha testado para fascite plantar.
 
 Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### O que verificar antes de comprar uma tala noturna?
+
+Nenhum estudo mostra que uma marca ou um tipo funcione melhor que outro, então escolha pelo conforto e pelo ajuste, não pelas promessas da embalagem. Confira estes pontos antes de pagar:
+
+- **O tipo certo para o jeito como você dorme.** A bota é melhor para quem dorme de barriga para cima. Se você dorme de lado ou de bruços, um modelo de meia ou uma tala dorsal pequena costuma ser mais fácil.
+- **Ângulo ajustável.** O ideal é começar com o pé mais ou menos em ângulo reto e poder mudar se precisar, em vez de depender de um alongamento fixo.
+- **O tamanho certo.** Use a tabela de medidas do fabricante para o seu número de calçado e a sua panturrilha. Uma tala que escorrega ou aperta os dedos não fica no lugar a noite toda.
+- **Acolchoamento macio e forro lavável.** Você vai usá-la todas as noites por um a três meses.
+- **Tiras que você consegue soltar no escuro.** Você precisa tirá-la antes de andar, por exemplo para levantar à noite.
+- **Prazo de devolução.** Em um estudo, só 1 de 28 pessoas que receberam uma tala noturna ainda a usava depois de um ano. Compre onde dá para devolver se ela atrapalhar o seu sono.
+
+Desconfie de talas vendidas com grandes promessas. Os estudos são divergentes, e o alongamento da manhã tem o mesmo grau na diretriz, sem custo.
+
+Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Roos E, Engström M, Söderberg B. Foot orthoses for the treatment of plantar fasciitis. Foot & Ankle International. 2006;27(8):606–611.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Por quanto tempo usar a tala noturna para fascite plantar?
@@ -9386,9 +9427,9 @@ O Walkito é um plano de exercícios para dor no calcanhar, fascite plantar e p�
 
 ### O que é o Walkito?
 
-O Walkito é um app para iPhone e Android que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir.
+O Walkito é um app para iPhone e Android que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir. Ele não tem relação com o walkito.com, um serviço de passeio com cães.
 
-São cinco metas: manhãs sem dor (dor da manhã em 1/10 ou menos por 14 dias seguidos), sustentar o arco por 60 segundos, 25 elevações de panturrilha em uma perna só, 30 segundos de equilíbrio em uma perna, e uma diferença menor que 10% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.
+São cinco metas: manhãs sem dor (dor da manhã em 1/10 ou menos por 14 dias seguidos), sustentar o arco por 60 segundos, 25 elevações de calcanhar em uma perna só, 30 segundos de equilíbrio em uma perna, e uma diferença menor que 10% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.
 
 Você escolhe 3, 5 ou 7 dias de treino por semana e sessões de 3, 5 ou 10 minutos. A sessão de cada dia se adapta a como foi a sua manhã. A cada 14 dias, um teste curto mostra se os seus números estão mudando. Depois que você alcança a primeira meta, o teste passa a ser a cada 28 dias.
 
@@ -9396,11 +9437,13 @@ O plano não tem duração fixa. Quando você alcança uma meta, ela passa para 
 
 O Walkito está em inglês, russo, espanhol, português, francês, italiano e alemão.
 
+O Walkito também pode ser usado dentro do ChatGPT e do Claude, onde responde com vídeos curtos de exercícios e um plano inicial. [Walkito no ChatGPT e no Claude](https://walkito.site/ai/) (em inglês).
+
 ### Como pesquisamos
 
-Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site: [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/), [exercícios para pé chato](https://walkito.site/pt/exercicios-pe-chato/), [dor no calcanhar de quem corre](https://walkito.site/heel-pain-runners/) (em inglês) e a [página de evidências](https://walkito.site/science/) (em inglês). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.
+Os guias do Walkito são feitos a partir de mais de 250 estudos publicados e diretrizes clínicas. Lemos o artigo completo, não só o resumo, antes de um número entrar numa página, e cada grau e número tem link para o estudo por trás dele, para você abrir e conferir. Nenhum profissional de saúde habilitado revisou os guias ainda.
 
-Lemos o artigo completo, não só o resumo, antes de um número dele entrar numa página. Cada dose, grau e número tem link para o estudo por trás dele, para você abrir e conferir.
+Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site: [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/), [exercícios para pé chato](https://walkito.site/pt/exercicios-pe-chato/), [dor no calcanhar de quem corre](https://walkito.site/heel-pain-runners/) (em inglês) e a [página de evidências](https://walkito.site/science/) (em inglês). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.
 
 Exercícios e afirmações recebem um de três selos de evidência. **Forte** quer dizer que uma diretriz clínica dá um grau alto, ou que vários bons ensaios concordam. **Moderada** quer dizer que pelo menos um ensaio bem desenhado apoia. **Inicial** quer dizer que a pesquisa é pequena ou está começando: vale tentar, e o selo pode mudar conforme sair mais pesquisa. Uma regra popular que um ensaio testou e não confirmou é marcada como **Sem respaldo**.
 

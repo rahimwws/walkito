@@ -13,7 +13,7 @@ export const ACHILLES_IT: Guide = {
   page: 'achilles',
   mainSource: CITE.achillesGuideline,
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-17',
   title: 'Esercizi per la tendinite d’Achille: discese eccentriche',
   description:
     'Esercizi per la tendinite d’Achille con le dosi: discese eccentriche, carico pesante e lento, dolore inserzionale o medio e quando fermarsi.',
@@ -232,6 +232,11 @@ export const ACHILLES_IT: Guide = {
       q: 'Cosa sono le discese eccentriche del tallone per la tendinite d’Achille?',
       cites: [CITE.alfredson],
       a: 'Le discese eccentriche del tallone sono un esercizio di forza: sali su entrambi i piedi, scendi piano su uno, con il tallone che scende sotto il bordo di un gradino. Il punto è la fase di discesa. In uno studio del 1998, 15\u00A0atleti che lo facevano due volte al giorno per tre mesi sono tornati tutti al livello di corsa di prima. Ricerche successive mostrano che altri tipi di carico funzionano altrettanto bene.',
+    },
+    {
+      q: 'Quali sono i migliori esercizi eccentrici per il dolore al tendine d’Achille?',
+      cites: [CITE.alfredson, CITE.beyer],
+      a: 'Le discese eccentriche del tallone sono l’esercizio più studiato per il dolore al tendine d’Achille: sali sulle punte con entrambi i piedi, sposta il peso sulla gamba dolorante e scendi piano in tre secondi, portando il tallone sotto il bordo del gradino. In uno studio del 1998, 15\u00A0atleti che lo facevano due volte al giorno per tre mesi sono tornati tutti al livello di corsa di prima. Il carico pesante e lento ha dato risultati altrettanto buoni in uno studio successivo.',
     },
     {
       q: 'Il carico pesante e lento è buono quanto le discese eccentriche?',

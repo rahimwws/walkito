@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/de/
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -25,33 +25,33 @@ should be seen by a clinician.
 
 ## Übungen und Dehnungen bei Plantarfasziitis und Fersenschmerzen
 
-Language: German (Deutsch) · https://walkito.site/de/plantarfasziitis-uebungen/ · published 2026-10-08 · updated 2026-10-08
+Language: German (Deutsch) · https://walkito.site/de/plantarfasziitis-uebungen/ · published 2026-10-08 · updated 2026-10-17
 
-Die ersten Schritte nach dem Aufstehen sind das Schlimmste am Tag. Ein stechendes Ziehen direkt an der Ferse, noch vor dem ersten Kaffee. Es wird besser, sobald du in Bewegung bist, und kommt zurück, wenn du eine Weile gesessen hast. Dieses Muster hat einen Namen, Plantarfasziitis, und die klinische Leitlinie von 2023 zu Fersenschmerzen nennt sie die am häufigsten erkannte Ursache für Fersenschmerzen unter dem Fuß.
+Die Übungen bei Plantarfasziitis mit der besten Studienlage sind Dehnungen für Plantarfaszie und Wade, für die die Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad A vergibt, und Krafttraining für die Wade mit Grad B. Unten findest du acht Übungen mit Dosierung. Die ersten Schritte nach dem Aufstehen sind das Schlimmste am Tag. Ein stechendes Ziehen direkt an der Ferse, noch vor dem ersten Kaffee. Es wird besser, sobald du in Bewegung bist, und kommt zurück, wenn du eine Weile gesessen hast. Dieses Muster hat einen Namen, [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/), und die klinische Leitlinie von 2023 zu Fersenschmerzen nennt sie die am häufigsten erkannte Ursache für Fersenschmerzen unter dem Fuß.
 
-- Die Leitlinie von 2023 zu Fersenschmerzen aus dem Journal of Orthopaedic & Sports Physical Therapy gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, A, und Krafttraining ein B.
+- Die Leitlinie von 2023 zu Fersenschmerzen aus dem Journal of Orthopaedic & Sports Physical Therapy vergibt für das Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad A und für Krafttraining Grad B.
 - In einer Studie mit 48 Personen linderte schweres Fersenheben Schmerzen und verbesserte die Alltagsfunktion schneller als Dehnen, und nach zwölf Monaten lagen beide Gruppen gleichauf (Rathleff und Kollegen, 2015).
-- Bei Fersenschmerzen beim Laufen rät dieselbe Leitlinie, die Belastung anzupassen, statt alles zu stoppen. Diese Empfehlung hat die Bewertung E, weil sie auf Theorie beruht, nicht auf Studien.
-- Geh zuerst zu einer medizinischen Fachperson, wenn der Schmerz nach einer Verletzung begann, mit Taubheit oder Schwellung einhergeht, dich nachts weckt oder wehtut, wenn du die Ferse zusammendrückst.
+- Bei Fersenschmerzen beim Laufen rät dieselbe Leitlinie, die Belastung anzupassen, statt alles zu stoppen. Diese Empfehlung hat den Empfehlungsgrad E, weil sie auf Theorie beruht, nicht auf Studien.
+- Lass es zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, mit Taubheit oder Schwellung einhergeht, dich nachts weckt oder wehtut, wenn du die Ferse zusammendrückst.
 
-### Die Übungen bei Plantarfasziitis, mit Startdosis
+### Welche Übungen helfen bei Plantarfasziitis, und wie viel solltest du machen?
 
 Die Übungen bei Plantarfasziitis in Walkito sind Dehnungen für Plantarfaszie und Wade, Krafttraining für die Wade, das sich in kleinen Schritten steigert, und Fußrollen. Das sind die Startdosen von Walkito, keine Verordnung. Eine einseitige Zusammenfassung gibt es unter [Übungsblätter zum Ausdrucken](https://walkito.site/printable-exercise-sheets/) (auf Englisch). [Wie diese Ratgeber entstehen](https://walkito.site/de/ueber-walkito/).
 
-Die Reihenfolge zählt. Solange Schmerz dein Ziel ist, hält Walkito die Wadenarbeit sanft, eine Stufe nach der anderen:
+Die Reihenfolge ist wichtig. Solange Schmerzlinderung dein Ziel ist, hält Walkito das Wadentraining sanft, eine Stufe nach der anderen:
 
 - Zuerst Fersenheben im Sitzen.
 - Dann Fersenheben beidbeinig.
 - Dann Fersenheben mit Halten.
 
-Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Das [Fersenheben mit Handtuch](https://walkito.site/de/uebungen/fersenheben-mit-handtuch/) belastet die Plantarfaszie am stärksten, deshalb kommt es erst dazu, wenn der Morgenschmerz zurückgegangen ist und das Ziel zur Wadenkraft wechselt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.
+Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Das [Fersenheben mit Handtuch](https://walkito.site/de/uebungen/fersenheben-mit-handtuch/) belastet die Plantarfaszie am stärksten, deshalb kommt es erst dazu, wenn der Morgenschmerz zurückgegangen ist und dein Ziel zum Aufbau von Wadenkraft wechselt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.
 
 - **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
-- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die Ferse unten und die Hüfte nach vorn. Eine verspannte Wade zieht den ganzen Tag an der Ferse, deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.
-- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position und beug dann das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt nur mit gebeugtem Knie los.
-- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich hin, die Füße stehen flach, und drück dich über die Fußballen nach oben. Hände auf den Knien geben zusätzlichen Widerstand. Fersenheben im Sitzen trainiert die Wade fast ohne Last auf der Ferse.
-- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last, während die Wade wach wird.
-- **Fersenheben mit Halten** (3-mal 20 Sekunden halten, beide Füße): Komm auf beiden Füßen auf die Zehen und bleib oben ruhig. Sink nicht wieder ab. Das Halten oben belastet die Sehne ohne Federn.
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden und die Hüfte nach vorn. Eine verspannte Wade zieht den ganzen Tag an der Ferse, deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Den Schollenmuskel (Musculus soleus), den tiefer liegenden Wadenmuskel, erreichst du nur mit gebeugtem Knie.
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich hin, die Füße stehen flach, und drück dich über die Fußballen nach oben. Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Schollenmuskel, der tiefere Wadenmuskel, und nicht der Zwillingswadenmuskel (Musculus gastrocnemius), den du beim Fersenheben im Stehen trainierst. Es ist also nicht einfach eine leichtere Version des Fersenhebens im Stehen. Es trainiert einen anderen Muskel, fast ohne Last auf der Ferse.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last, und die Wade wird langsam aktiviert.
+- **Fersenheben mit Halten** (3-mal 20 Sekunden halten, beide Füße): Komm auf beiden Füßen auf die Zehen und bleib oben ruhig. Sink nicht wieder ab. Durch das Halten wird die Sehne belastet, ohne dass du nachfederst.
 - **Fersenheben mit Handtuch** (4 Sätze à 10, jedes Bein, mit Zusatzgewicht): Stell dich mit einem Fuß auf eine Stufe, ein zusammengerolltes Handtuch liegt unter deinen Zehen. Nimm dir drei Sekunden zum Hochkommen, halte oben zwei und nimm dir drei zum Absenken. Auf dieser Stufe nimmt Walkito Gewicht dazu, zum Beispiel einen Rucksack. Durch das Handtuch trainiert diese Übung die Plantarfaszie und nicht nur die Wade.
 - **Fußrollen** (1 Minute): Setz dich hin und roll die Fußsohle langsam mit festem Druck über einen Massageball. Wenn du zusammenzuckst, nimm Druck raus. Das Rollen beruhigt das Gewebe, nachdem es gearbeitet hat. Kein Ball? Bei der Fußsohlenmassage streichst du stattdessen mit festem Daumendruck von der Ferse zu den Zehen.
 
@@ -59,14 +59,14 @@ Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht 
 
 Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, solange der Schmerz akut ist, und geh morgens als Erstes nicht barfuß auf harten Böden.
 
-Springen, Sprinten und Sprungtraining bringen eine plötzliche Spitzenkraft auf die Plantarfaszie. Wenn das Gewebe gereizt ist, kann diese Spitze dich zurückwerfen. Die Leitlinie von 2023 empfiehlt, die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anzupassen, eine Empfehlung mit der Bewertung E. Sie verbietet keine bestimmten Übungen. **Die Frage ist, ob die Last größer ist, als sich das Gewebe über Nacht erholen kann.**
+Springen, Sprinten und Sprungtraining bringen eine plötzliche Spitzenkraft auf die Plantarfaszie. Wenn das Gewebe gereizt ist, kann diese Spitze dich zurückwerfen. Die Leitlinie von 2023 empfiehlt, die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anzupassen, eine Empfehlung mit Empfehlungsgrad E. Sie verbietet keine bestimmten Übungen. **Die Frage ist, ob die Last größer ist, als sich das Gewebe über Nacht erholen kann.**
 
-Barfuß auf harten Böden zu gehen ist ein häufiger Auslöser, weil die Faszie nach dem Ausruhen am steifsten ist und ein harter Boden nicht dämpft.
+Barfuß auf harten Böden zu gehen ist ein häufiger Auslöser, weil die Faszie nach dem Ausruhen am steifsten ist und ein harter Boden nicht dämpft. Bis die Beschwerden abklingen, trag den ganzen Tag gut gedämpfte Schuhe, auch zu Hause.
 
 Zwei weitere Dinge solltest du beachten:
 
 - **Einen Ball unter dem Fuß zu rollen** sollte sich fest anfühlen, nicht stechend. Wenn es wehtut, nimm Druck raus oder lass es weg.
-- Wenn du zusätzlich **Schmerzen an der Achillessehne** hinten an der Ferse hast, meide tiefes Absenken der Ferse über eine Stufenkante, weil das den Ansatz der Achillessehne belasten kann. Mach das [Fersenheben mit Handtuch](https://walkito.site/de/uebungen/fersenheben-mit-handtuch/) auf flachem Boden, bis eine medizinische Fachperson die Achillessehne freigibt.
+- Wenn du zusätzlich **Schmerzen an der Achillessehne** hinten an der Ferse hast, meide tiefes Absenken der Ferse über eine Stufenkante, weil das den Ansatz der Achillessehne belasten kann. Mach das [Fersenheben mit Handtuch](https://walkito.site/de/uebungen/fersenheben-mit-handtuch/) auf flachem Boden, bis die Achillessehne ärztlich oder physiotherapeutisch abgeklärt ist.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -86,10 +86,10 @@ Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar
 
 Fersenschmerzen bei den ersten Schritten am Morgen sind das Muster, das am häufigsten mit Plantarfasziitis in Verbindung gebracht wird. Oft lassen sie nach, sobald du in Bewegung bist, und kommen zurück, wenn du eine Weile gesessen hast.
 
-Zwei Dinge auf dieser Seite zielen darauf:
+Dabei helfen zwei Dinge:
 
 - Die Plantarfaszien-Dehnung machst du, **bevor du aufstehst**, auf der Bettkante mit zurückgezogenen Zehen, damit deine ersten Schritte nicht deine erste Dehnung sind.
-- Die Leitlinie von 2023 gibt Nachtschienen, 1 bis 3 Monate getragen, ein **A** für Menschen, die bei den ersten Schritten am Morgen immer wieder Schmerzen haben. Über Nachtschienen sprichst du am besten mit einer medizinischen Fachperson. Walkito stellt keine bereit.
+- Die Leitlinie von 2023 gibt Nachtschienen, 1 bis 3 Monate getragen, ein **A** für Menschen, die bei den ersten Schritten am Morgen immer wieder Schmerzen haben. Über [Nachtschienen](https://walkito.site/de/nachtschiene-plantarfasziitis/) sprichst du am besten in deiner Arztpraxis oder Physiotherapie. Walkito stellt keine bereit.
 
 Walkito fragt aus demselben Grund jeden Tag nach deinem Morgenschmerz. Der Morgenschmerz ist das klarste Zeichen dafür, wie dein Fuß den Vortag verkraftet hat, und er entscheidet, wie viel die heutige Einheit von dir verlangt. Mehr dazu, was ihn auslöst, steht unter [Fersenschmerzen am Morgen](https://walkito.site/de/fersenschmerzen-morgens/).
 
@@ -97,13 +97,13 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Pausieren oder weiterlaufen bei Fersenschmerzen?
 
-Wenn Fersenschmerzen durch Plantarfasziitis beim Laufen aufflammen, **passe die Belastung an, statt alles zu stoppen.** Die Leitlinie von 2023 empfiehlt, zu lernen, wie du die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anpasst. Diese Empfehlung hat die Bewertung E, das heißt, sie beruht auf Theorie statt auf Studien. Bleib also jeden Tag bei den Dehnungen und reduziere, was die Ferse schlimmer macht.
+Wenn Fersenschmerzen durch Plantarfasziitis beim Laufen aufflammen, **passe die Belastung an, statt alles zu stoppen.** Die Leitlinie von 2023 empfiehlt, zu lernen, wie du die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anpasst. Diese Empfehlung hat den Empfehlungsgrad E, das heißt, sie beruht auf Theorie statt auf Studien. Bleib also jeden Tag bei den Dehnungen und reduziere, was die Ferse schlimmer macht. Damit du fit bleibst, ohne die Ferse zu reizen, kannst du einige Läufe durch Ausdauertraining mit wenig Stoßbelastung ersetzen, etwa Schwimmen oder Radfahren auf dem Ergometer.
 
 An einem schlechten Morgen behältst du die Dehnungen und lässt das Fersenheben für den Tag weg. Der nächste Morgen zeigt dir, wie es gelaufen ist. Wenn deine ersten Schritte nach einem Lauf deutlich schlimmer sind, war dieser Lauf mehr, als die Ferse verkraften konnte.
 
 Walkito liest es genauso. Ein langer Tag auf den Beinen macht aus der nächsten Krafteinheit eine leichtere Erholungseinheit, und ein schmerzhafter Morgen macht die Einheit kürzer, ohne sie abzusagen.
 
-Hör auf und geh zu einer medizinischen Fachperson, wenn Laufen stechend wehtut oder der Schmerz von Woche zu Woche schlimmer wird. Dasselbe gilt für Schmerzen, die beim Laufen zunehmen, nachdem du Kilometer draufgepackt hast, oder Schmerzen, wenn du die Seiten der Ferse zusammendrückst. Beides kann auf einen Ermüdungsbruch hindeuten, eine der anderen Ursachen für Fersenschmerzen, die die Leitlinie nennt.
+Hör auf und lass es ärztlich abklären, wenn Laufen stechend wehtut oder der Schmerz von Woche zu Woche schlimmer wird. Dasselbe gilt für Schmerzen, die beim Laufen zunehmen, nachdem du Kilometer draufgepackt hast, oder Schmerzen, wenn du die Seiten der Ferse zusammendrückst. Beides kann auf einen Ermüdungsbruch hindeuten, eine der anderen Ursachen für Fersenschmerzen, die die Leitlinie nennt.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -121,15 +121,15 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Was empfiehlt die Leitlinie von 2023 bei Plantarfasziitis?
 
-Die Leitlinie von 2023 zur Plantarfasziitis bewertet jede Option nach der Stärke ihrer Belege. A ist die beste Bewertung. Eine Bewertung mit „dagegen“ heißt, dass die Leitlinie von dieser Option abrät.
+Die Leitlinie von 2023 zur Plantarfasziitis vergibt für jede Option einen Empfehlungsgrad, je nachdem, wie stark die Studienlage ist. A ist der höchste Grad. „Empfehlung dagegen“ heißt, dass die Leitlinie von dieser Option abrät.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Helfen Schuhe und Einlagen bei Plantarfasziitis?
 
-Stützende Schuhe helfen, aber Einlagen allein reichen für die meisten Menschen nicht. Die Leitlinie von 2023 bewertet Orthesen (Einlagen und Gewölbestützen) als alleinige Option mit **B dagegen**, das heißt, die Belege sprechen dagegen, sich allein auf sie zu verlassen. In Kombination mit Dehnen und Krafttraining bekommen Orthesen ein **C**.
+Stützende Schuhe helfen, aber Einlagen allein reichen für die meisten Menschen nicht. Die Leitlinie von 2023 spricht sich mit Empfehlungsgrad **B** gegen Orthesen (Einlagen und Gewölbestützen) als alleinige Maßnahme aus, das heißt, die Studienlage spricht dagegen, sich allein auf sie zu verlassen. In Kombination mit Dehnen und Krafttraining bekommen Orthesen Grad **C**.
 
-Nachtschienen, 1 bis 3 Monate im Schlaf getragen, bekommen die beste Bewertung der Leitlinie, **A**, für Menschen, die bei den ersten Schritten jeden Morgen immer wieder Schmerzen haben. Sie halten das Sprunggelenk so, dass sich die Plantarfaszie über Nacht nicht verkürzt. Frag eine medizinische Fachperson, ob sie für dich einen Versuch wert sind.
+Nachtschienen, 1 bis 3 Monate im Schlaf getragen, bekommen den höchsten Empfehlungsgrad der Leitlinie, **A**, für Menschen, die bei den ersten Schritten jeden Morgen immer wieder Schmerzen haben. Sie halten das Sprunggelenk so, dass sich die Plantarfaszie über Nacht nicht verkürzt. Frag in deiner Arztpraxis oder Physiotherapie, ob Nachtschienen für dich geeignet sind.
 
 Die Leitlinie bewertet keine bestimmten Schuhtypen, aber Schuhe ohne Halt gelten allgemein als Risikofaktor. Schuhe mit Gewölbestütze und fester Fersenkappe übernehmen einen Teil der Last, die die Plantarfaszie sonst allein tragen würde. Wenn deine Füße nach einem langen Tag auf den Beinen wehtun, lies [Fußschmerzen vom langen Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/). Wer im Schichtdienst arbeitet, kann mit [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/) anfangen.
 
@@ -161,23 +161,23 @@ Du musst dir Reihenfolge, Dosis und die Dauer jeder Übung nicht selbst überleg
 
 #### Kann ich mit Plantarfasziitis weiterlaufen?
 
-Du musst nicht alles stoppen. Passe stattdessen die Belastung an. Die klinische Leitlinie von 2023 empfiehlt, zu lernen, die Belastung deiner Füße anzupassen, mit der Bewertung E, das heißt, die Empfehlung beruht auf Theorie, nicht auf Studien. Reduziere, was die Ferse schlimmer macht, und dehne weiter jeden Tag. Wenn deine ersten Schritte am nächsten Morgen deutlich schlimmer sind, war der Lauf zu viel. Stechende oder zunehmende Schmerzen brauchen eine medizinische Fachperson.
+Du musst nicht alles stoppen. Passe stattdessen die Belastung an. Die klinische Leitlinie von 2023 empfiehlt, zu lernen, die Belastung deiner Füße anzupassen, mit Empfehlungsgrad E, das heißt, die Empfehlung beruht auf Theorie, nicht auf Studien. Reduziere, was die Ferse schlimmer macht, und dehne weiter jeden Tag. Wenn deine ersten Schritte am nächsten Morgen deutlich schlimmer sind, war der Lauf zu viel. Stechende oder zunehmende Schmerzen solltest du ärztlich abklären lassen.
 
 #### Warum sind Fersenschmerzen morgens schlimmer?
 
-Fersenschmerzen bei den ersten Schritten nach dem Schlafen oder Sitzen sind das Muster, das am häufigsten mit Plantarfasziitis in Verbindung gebracht wird. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt sie als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Die übliche Erklärung: Das Gewebe unter dem Fuß wird in Ruhe steif und dann von den ersten Schritten plötzlich belastet. Deshalb machst du die Plantarfaszien-Dehnung, bevor du aufstehst, und deshalb gibt die Leitlinie von 2023 Nachtschienen dafür ein A.
+Fersenschmerzen bei den ersten Schritten nach dem Schlafen oder Sitzen sind das Muster, das am häufigsten mit Plantarfasziitis in Verbindung gebracht wird. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt sie als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Die übliche Erklärung: Das Gewebe unter dem Fuß wird in Ruhe steif und dann von den ersten Schritten plötzlich belastet. Deshalb machst du die Plantarfaszien-Dehnung, bevor du aufstehst, und deshalb vergibt die Leitlinie von 2023 für Nachtschienen dabei Empfehlungsgrad A.
 
 #### Wie lange dauert eine Plantarfasziitis?
 
-Bei den meisten Menschen bessert sie sich innerhalb von Monaten, nicht Wochen. Den ganzen Zeitverlauf findest du unter [wie lange dauert Plantarfasziitis](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/). Eine [Übersichtsarbeit von 2020](https://doi.org/10.1177/2473011419896763) berichtet, dass es etwa 90 % der Menschen mit nicht-operativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb von 3 bis 6 Monaten. Bei manchen dauert es länger, und eine kleinere Gruppe hat nach einem Jahr noch Schmerzen. Kein Übungsprogramm kann einen Zeitrahmen versprechen. Die Leitlinie von 2023 zu Fersenschmerzen gibt Dehnen ein A und Krafttraining ein B, deshalb stehen beide auf dieser Seite an erster Stelle.
+Bei den meisten Menschen bessert sie sich innerhalb von Monaten, nicht Wochen. Den ganzen Zeitverlauf findest du unter [wie lange dauert Plantarfasziitis](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/). Eine [Übersichtsarbeit von 2020](https://doi.org/10.1177/2473011419896763) berichtet, dass es etwa 90 % der Menschen mit konservativer (nicht operativer) Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb von 3 bis 6 Monaten. Bei manchen dauert es länger, und eine kleinere Gruppe hat nach einem Jahr noch Schmerzen. Kein Übungsprogramm kann einen Zeitrahmen versprechen. Die Leitlinie von 2023 zu Fersenschmerzen vergibt für Dehnen Empfehlungsgrad A und für Krafttraining Grad B, deshalb stehen beide auf dieser Seite an erster Stelle.
 
 #### Ist Dehnen oder Kräftigen besser bei Plantarfasziitis?
 
-Beides hilft, und Kräftigen wirkt schneller. In einer Studie mit 48 Personen lag schweres Fersenheben nach drei Monaten klar vor dem Dehnen, aber nach zwölf Monaten lagen beide Gruppen gleichauf. Die Leitlinie von 2023 gibt dem Dehnen ein A und Krafttraining ein B. [Die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch) hat die Details.
+Beides hilft, und Kräftigen wirkt schneller. In einer Studie mit 48 Personen lag schweres Fersenheben nach drei Monaten klar vor dem Dehnen, aber nach zwölf Monaten lagen beide Gruppen gleichauf. Die Leitlinie von 2023 vergibt für Dehnen Empfehlungsgrad A und für Krafttraining Grad B. [Die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch) hat die Details.
 
 #### Ist ein Fersensporn dasselbe wie Plantarfasziitis?
 
-Nicht ganz. Viele sagen „Fersensporn“, wenn sie Plantarfasziitis meinen, aber genau genommen ist ein Fersensporn ein knöcherner Auswuchs, der auf dem Röntgenbild zu sehen ist. Plantarfasziitis ist Schmerz im Gewebeband unter dem Fuß. Die Übungen auf dieser Seite sind die, die die Leitlinie von 2023 für Fersenschmerzen unter dem Fuß bewertet. Nur eine medizinische Fachperson kann sagen, was hinter deinen steckt.
+Nicht ganz. Viele sagen „[Fersensporn](https://walkito.site/de/plantarfasziitis-oder-fersensporn/)“, wenn sie Plantarfasziitis meinen, aber genau genommen ist ein Fersensporn ein knöcherner Auswuchs, der auf dem Röntgenbild zu sehen ist. Plantarfasziitis ist ein Schmerz in der Plantarfaszie, der Sehnenplatte an der Fußsohle. Die Übungen auf dieser Seite sind die, die die Leitlinie von 2023 für Fersenschmerzen unter dem Fuß bewertet. Wenn ein Röntgenbild einen Sporn zeigt, findest du dieselbe Routine unter [Übungen bei Fersensporn](https://walkito.site/de/fersensporn-uebungen/). Was hinter deinen Fersenschmerzen steckt, kann nur eine Ärztin oder ein Arzt klären.
 
 #### Wie oft sollte ich Übungen bei Plantarfasziitis machen?
 
@@ -185,27 +185,35 @@ Dehne an den meisten Tagen und mach das Wadenkrafttraining an Krafttagen. In Wal
 
 #### Was sind die besten Dehnungen bei Fersenschmerzen?
 
-Die Plantarfaszien-Dehnung und die Waden- und Soleusdehnungen sind die, die die Leitlinie von 2023 zu Fersenschmerzen mit A bewertet, ihrer besten Bewertung. Leg den Fuß über dein Knie und zieh die Zehen 30 Sekunden zurück, das erste Mal, bevor du morgens aufstehst. Dann dehn die Wade an einer Wand, das hintere Knie erst gestreckt, dann gebeugt. Walkito beginnt mit 2-mal 30 Sekunden pro Dehnung. Technik: [Plantarfaszien-Dehnung](https://walkito.site/de/uebungen/plantarfaszie-dehnen/).
+Die Plantarfaszien-Dehnung und die Waden- und Soleusdehnungen sind die, die die Leitlinie von 2023 zu Fersenschmerzen mit dem höchsten Empfehlungsgrad A bewertet. Leg den Fuß über dein Knie und zieh die Zehen 30 Sekunden zurück, das erste Mal, bevor du morgens aufstehst. Dann dehn die Wade an einer Wand, das hintere Knie erst gestreckt, dann gebeugt. Walkito beginnt mit 2-mal 30 Sekunden pro Dehnung. Technik: [Plantarfaszien-Dehnung](https://walkito.site/de/uebungen/plantarfaszie-dehnen/).
 
 #### Wann sollte ich mit Fersenschmerzen zum Arzt?
 
-Geh zuerst zu einer medizinischen Fachperson, wenn der Schmerz nach einer Verletzung oder einem Sturz begann, du den Fuß nicht belasten kannst oder Taubheit, Kribbeln, Schwellung, Wärme oder Fieber dazukommen. Dasselbe gilt, wenn er dich nachts weckt, stechend ist oder schlimmer wird oder wehtut, wenn du die Ferse zusammendrückst, was auf einen Ermüdungsbruch hindeuten kann. Walkito stellt keine Diagnose.
+Lass es zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung oder einem Sturz begann, du den Fuß nicht belasten kannst oder Taubheit, Kribbeln, Schwellung, Wärme oder Fieber dazukommen. Dasselbe gilt, wenn er dich nachts weckt, stechend ist oder schlimmer wird oder wehtut, wenn du die Ferse zusammendrückst, was auf einen Ermüdungsbruch hindeuten kann. Walkito stellt keine Diagnose.
 
 #### Hilft Gehen bei Plantarfasziitis?
 
 Gehen ist meist in Ordnung, aber für sich allein keine Übung bei Plantarfasziitis. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, statt mit Aktivität aufzuhören. Wenn deine ersten Schritte am Morgen nach einem Spaziergang deutlich schlimmer sind, war die Strecke oder das Tempo zu viel. Dehnen vor dem Gehen, vor allem die [Plantarfaszien-Dehnung](https://walkito.site/de/uebungen/plantarfaszie-dehnen/) vor den ersten Schritten, macht die ersten Minuten leichter.
 
+#### Was ist das Schlimmste, was du bei Plantarfasziitis tun kannst?
+
+Die deutlichsten Fehler sind, direkt nach dem Aufwachen barfuß auf harten Böden zu gehen und sofort wieder mit Laufen oder Springen anzufangen, solange die Ferse noch gereizt ist. Beides belastet die Plantarfaszie mit plötzlicher Kraft, wenn sie am steifsten und am wenigsten erholt ist. Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt, die Belastung anzupassen, statt gegen den Schmerz anzutrainieren.
+
+#### Kann man Plantarfasziitis wegmassieren?
+
+Eine einzelne Massage beseitigt keine Plantarfasziitis, aber sanfte Selbstmassage kann die Steifigkeit zwischen den Einheiten lindern. Manuelle Therapie in ärztlicher oder physiotherapeutischer Behandlung, also Behandlung mit den Händen an Gelenken und Weichteilen, bewertet die Leitlinie von 2023 in Kombination mit Dehnen mit dem höchsten Empfehlungsgrad A. [Die eigene Fußsohle über einen Ball zu rollen](https://walkito.site/de/massageball-plantarfasziitis/) tut gut, ersetzt aber weder Dehnen noch Wadenkrafttraining.
+
 ## Plattfuß-Übungen bei Senkfuß und Schmerzen im Fußgewölbe
 
-Language: German (Deutsch) · https://walkito.site/de/plattfuss-uebungen/ · published 2026-10-08 · updated 2026-10-08
+Language: German (Deutsch) · https://walkito.site/de/plattfuss-uebungen/ · published 2026-10-08 · updated 2026-10-17
 
-Abends fühlen sich deine Füße müde an, und das Gewölbe schmerzt. Im Stehen scheinen die Füße nach innen zu kippen, und das Gewölbe sinkt Richtung Boden. Vielleicht hat man dir gesagt, Plattfüße seien eben so gebaut und nicht der Rede wert. Trotzdem etwas tun zu wollen, ist verständlich, und es gibt echte Forschung zum Training des Fußgewölbes.
+Im Stehen scheinen deine Füße nach innen zu kippen, und das Fußgewölbe sinkt Richtung Boden. Abends fühlen sich deine Füße müde an, und das Gewölbe schmerzt. Vielleicht hat man dir gesagt, Plattfüße seien eben so gebaut und nicht der Rede wert. Trotzdem etwas tun zu wollen, ist verständlich, und es gibt echte Forschung zum Training des Fußgewölbes. Für flexible [Plattfüße](https://walkito.site/de/plattfuss/) gibt es Studiendaten zu einem Programm aus Übungen zum Aufbau des Fußgewölbes (Kurzer-Fuß-Übungen), Sprunggelenkstraining, Hüftkräftigung und Dehnen: In einer Studie mit 52 Personen veränderten sechs Wochen dieser Übungen die Form des Fußgewölbes stärker als in einer Kontrollgruppe.
 
 - Die randomisierte Studie auf dieser Seite wurde mit flexiblen Plattfüßen gemacht, bei denen das Gewölbe zurückkommt, wenn der Fuß nicht auf dem Boden steht (Brijwasi und Borkar, 2023).
-- In dieser Studie mit 52 Personen veränderten sechs Wochen Kurzer-Fuß-, Sprunggelenk-, Hüft- und Dehnübungen die Form des Gewölbes stärker als in der Kontrollgruppe (Brijwasi und Borkar, 2023).
+- In dieser Studie mit 52 Personen veränderten sechs Wochen Gewölbe-, Sprunggelenk-, Hüft- und Dehnübungen die Form des Gewölbes stärker als in der Kontrollgruppe (Brijwasi und Borkar, 2023).
 - Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training fand insgesamt keine klare Veränderung, und eine Verbesserung bei einem Gewölbemaß nur in Programmen über sechs Wochen (Cheng und Kollegen, 2024).
 - Ein starrer Plattfuß, der auch ohne Bodenkontakt flach bleibt, ist strukturell, und Übungen werden seine Form nicht verändern.
-- Diese Studien haben die Form des Gewölbes gemessen, nicht Schmerzen. Bei Fersenschmerzen gibt die Leitlinie von 2023 dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, A, und Krafttraining ein B.
+- Diese Studien haben die Form des Gewölbes gemessen, nicht Schmerzen. Bei Fersenschmerzen vergibt die Leitlinie von 2023 für das Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad A und für Krafttraining Grad B.
 
 ### Woran erkennst du, ob ein Plattfuß flexibel oder starr ist?
 
@@ -214,12 +222,12 @@ Ob dein Plattfuß flexibel oder starr ist, zeigt ein Check, der nur ein paar Sek
 - Stell dich barfuß hin und schau dir die Innenseite deines Fußes an. Bei einem Plattfuß liegt das Gewölbe tief oder berührt den Boden.
 - Heb den Fuß vom Boden ab oder stell dich auf die Zehenspitzen und schau noch einmal hin.
 - Kommt das Gewölbe zurück, ist der Plattfuß **flexibel**. Die Übungen unten sind für diese Art.
-- Bleibt das Gewölbe auch ohne Bodenkontakt flach, ist der Fuß **starr**. Das ist ein strukturelles Problem, das Übungen nicht ändern. Lass das Ziel „Gewölbe halten“ weg und geh zu einer medizinischen Fachperson, bevor du ein Programm anfängst.
-- „Senkfuß“ ist die mildere Form des Plattfußes: Das Gewölbe ist abgesenkt, aber nicht ganz flach. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Wenn sich ein Gewölbe aber **plötzlich**, auf einer Seite, im Erwachsenenalter abgeflacht hat, geh zu einer medizinischen Fachperson, bevor du es trainierst, egal was der Check zeigt.
+- Bleibt das Gewölbe auch ohne Bodenkontakt flach, ist der Fuß **starr**. Das ist ein strukturelles Problem, das Übungen nicht ändern. Lass das Ziel „Gewölbe halten“ weg und lass den Fuß ärztlich abklären, bevor du ein Programm anfängst.
+- „Senkfuß“ ist die mildere Form des Plattfußes: Das Gewölbe ist abgesenkt, aber nicht ganz flach. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Wenn sich ein Gewölbe aber **plötzlich**, auf einer Seite, im Erwachsenenalter abgeflacht hat, lass das ärztlich abklären, bevor du es trainierst, egal was der Check zeigt.
 
-### Die Übungen bei Plattfuß, mit Startdosis
+### Welche Übungen helfen bei Plattfuß, und wie viel solltest du machen?
 
-Die Übungen bei Plattfuß in Walkito beginnen mit Handtuchgreifen und Großzehenheben und steigern sich dann über drei Varianten des kurzen Fußes. Zehenspreizen, Einwärtsdrehen mit Band, Einbeinstand, Hüftabduktion und Wadendehnungen kommen dazu. Das sind die Startdosen von Walkito, keine Verordnung. Mach die Übungen barfuß. [Wie diese Ratgeber entstehen](https://walkito.site/de/ueber-walkito/).
+Die Übungen bei Plattfuß in Walkito beginnen mit [Handtuchgreifen](https://walkito.site/de/uebungen/handtuchgreifen/) und Großzehenheben und steigern sich dann über drei Varianten des kurzen Fußes. Zehenspreizen, Einwärtsdrehen mit Band, Einbeinstand, Hüftabduktion und Wadendehnungen kommen dazu. Das sind die Startdosen von Walkito, keine Verordnung. Mach die Übungen barfuß. [Wie diese Ratgeber entstehen](https://walkito.site/de/ueber-walkito/).
 
 Der kurze Fuß ist der Kern der Gewölbearbeit. Du verkürzt den Fuß, indem du den Fußballen Richtung Ferse ziehst, sodass sich das Gewölbe hebt, ohne die Zehen einzukrallen. Kurzer-Fuß-Training, Hüftkräftigung und Dehnen sind das, was die Studie getestet hat. Handtuchgreifen, Großzehenheben, Zehenspreizen, Einwärtsdrehen mit Band und Einbeinstand hat Walkito selbst ergänzt.
 
@@ -229,20 +237,20 @@ Für manche Übungen brauchst du ein Handtuch oder ein Widerstandsband. Walkito 
 
 - **Handtuchgreifen** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, ein Handtuch liegt flach unter deinem Fuß. Zieh das Handtuch mit den Zehen zu dir, die Ferse bleibt unten. Das Handtuchgreifen weckt die kleinen Muskeln unter dem Gewölbe.
 - **Großzehenheben** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, die Füße stehen flach. Heb nur den großen Zeh an und halte. Die anderen vier Zehen bleiben flach am Boden. So lernt der große Zeh, sich allein zu bewegen, und das ist der erste Schalter für das Gewölbe.
-- **Kurzer Fuß im Sitzen** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, der Fuß steht flach auf dem Boden. Zieh den Fußballen Richtung Ferse, sodass sich das Gewölbe hebt, und halte. Krall die Zehen nicht ein. Das Einkrallen ist der häufigste Fehler bei dieser Übung.
+- **Kurzer Fuß im Sitzen** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, der Fuß steht flach auf dem Boden. Zieh den Fußballen Richtung Ferse, sodass sich das Gewölbe hebt, und halte. Die Außenkante des Fußes bleibt am Boden, und das Gewölbe hebt sich so weit, dass darunter ein kleiner Hohlraum entsteht. Krall die Zehen nicht ein. Das Einkrallen ist der häufigste Fehler bei dieser Übung.
 - **Kurzer Fuß im Stehen** (3 Sätze à 8, 5 Sekunden halten, beide Füße): Stell dich mit dem Gewicht auf beide Füße und mach dieselbe Bewegung. Die Zehen bleiben flach und lang. Nur das Gewölbe hebt sich. Es ist derselbe Muskel wie im Sitzen, nur trägt er jetzt dein Gewicht.
 - **Kurzer Fuß auf einem Bein** (3 Sätze à 10, 5 Sekunden halten, jeder Fuß): Stell dich auf einen Fuß und heb das Gewölbe. Lass den großen Zeh unten. Hebt er sich, schummelt das Gewölbe. Wenn du einen Fuß nach dem anderen trainierst, zeigt sich die schwächere Seite.
 - **Zehenspreizen** (3 Sätze à 10, jeder Fuß): Spreiz deine Zehen, so weit es geht, und halte. Zehen, die sich spreizen können, teilen sich die Last mit dem Gewölbe. Sie anzuheben ist nicht das Ziel.
 - **Einwärtsdrehen mit Band** (3 Sätze à 12, jeder Fuß): Setz dich hin, ein Widerstandsband liegt um den Fuß, und dreh den Fuß gegen das Band nach innen. Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig. Walkito nimmt diese Übung erst nach sechs Einheiten kurzer Fuß im Stehen dazu, damit zuerst die eigenen Muskeln des Gewölbes drankommen.
-- **Einbeinstand** (3-mal 20 Sekunden halten, jedes Bein): Stell dich auf einen Fuß und schau auf einen festen Punkt. Lass den Fuß wackeln. Das soll so sein, denn dieses Wackeln ist der Fuß, der das Gleichgewicht hält.
+- **Einbeinstand** (3-mal 20 Sekunden halten, jedes Bein): Stell dich auf einen Fuß und schau auf einen festen Punkt. Lass den Fuß wackeln. Das soll so sein, denn dieses Wackeln ist der Fuß, der das Gleichgewicht hält. Wenn nötig, berühr eine Arbeitsplatte oder Wand leicht mit den Fingerspitzen, damit du weiter Ausdauer im Sprunggelenk aufbaust, statt aufzugeben.
 - **Hüftabduktion** (3 Sätze à 10, jedes Bein): Stell dich mit einem Widerstandsband hin und heb ein Bein gegen das Band zur Seite. Drück über die Ferse, nicht über die Zehen. Gibt die Hüfte nach, landet die Last auf dem Gewölbe.
-- **Waden- und Soleusdehnung** (2-mal 30 Sekunden pro Dehnung, jedes Bein): Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die Ferse unten und die Hüfte nach vorn, und du spürst die Dehnung in der Wade. Dann beug das hintere Knie, bis du sie tiefer spürst, nahe der Ferse. Das ist der Soleus, der tiefere Wadenmuskel.
+- **Waden- und Soleusdehnung** (2-mal 30 Sekunden pro Dehnung, jedes Bein): Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden und die Hüfte nach vorn, und du spürst die Dehnung in der Wade. Dann lass die Ferse flach am Boden und beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Das ist der Schollenmuskel (Musculus soleus), der tiefere Wadenmuskel.
 
 ### Wie lange dauert es, bis Plattfuß-Übungen das Gewölbe verändern?
 
 In der bisherigen Forschung haben Plattfuß-Übungen das Gewölbe nach sechs Wochen oder mehr verändert, und nur bei flexiblen Plattfüßen. In einer Studie mit 52 Personen mit **flexiblen** Plattfüßen veränderte ein sechswöchiges Programm aus Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen zwei Maße der Gewölbeform stärker als in der Kontrollgruppe.
 
-Für das Kurzer-Fuß-Training allein ist die Studienlage dünner. Eine Übersichtsarbeit von 2024 hat Studien zum Kurzer-Fuß-Training bei Plattfüßen allgemein zusammengefasst. Insgesamt fand sie keinen klaren Unterschied zu Kontrollgruppen bei der Gewölbeform oder der Fußhaltung. Nur Programme über sechs Wochen verbesserten, wie weit das Gewölbe unter deinem Gewicht absinkt, und die Autoren sagen, dass größere Studien nötig sind. Plane also mindestens sechs Wochen ein, und länger, wenn du das Kurzer-Fuß-Training allein machst.
+Für Übungen zum Aufbau des Fußgewölbes allein ist die Studienlage dünner. Eine Übersichtsarbeit von 2024 hat Studien zum Kurzer-Fuß-Training bei Plattfüßen allgemein zusammengefasst. Insgesamt fand sie keinen klaren Unterschied zu Kontrollgruppen bei der Gewölbeform oder der Fußhaltung. Nur Programme über sechs Wochen verbesserten, wie weit das Gewölbe unter deinem Gewicht absinkt, und die Autoren sagen, dass größere Studien nötig sind. Plane also mindestens sechs Wochen ein, und länger, wenn du das Kurzer-Fuß-Training allein machst.
 
 Das ist ein Grund, warum der Plan von Walkito kein Enddatum hat. Das Gewölbeziel, das Gewölbe 60 Sekunden zu halten, bleibt im Plan, bis du es erreichst, egal wie viele Wochen das dauert. Das Gewölbehalten wird alle 14 Tage getestet, bis du dein erstes Ziel erreichst, danach alle 28, sodass du siehst, ob sich etwas tut. Die Studien sind auf [der Seite zur Studienlage](https://walkito.site/science/) (auf Englisch) zusammengefasst.
 
@@ -251,9 +259,9 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 ### Helfen Plattfuß-Übungen bei Schmerzen im Fußgewölbe?
 
-Keine Studie auf dieser Seite zeigt, dass Plattfuß-Übungen Schmerzen im Fußgewölbe lindern, weil keine davon Schmerzen gemessen hat. Die Studie und die Übersichtsarbeit haben die Form des Gewölbes gemessen. Sie zeigen, dass sich das Gewölbe trainieren lässt. Sie sind kein Beleg dafür, dass dieselben Übungen ein schmerzendes Gewölbe lindern.
+Keine Studie auf dieser Seite zeigt, dass Plattfuß-Übungen [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/) lindern, weil keine davon Schmerzen gemessen hat. Die Studie und die Übersichtsarbeit haben die Form des Gewölbes gemessen. Sie zeigen, dass sich das Gewölbe trainieren lässt. Sie sind kein Beleg dafür, dass dieselben Übungen ein schmerzendes Gewölbe lindern.
 
-Schmerzen an der Ferse, und manchmal entlang des Gewölbes, können von der Plantarfaszie kommen, dem Gewebeband, das an der Fußsohle entlangläuft. Sitzt dein Schmerz nahe der Ferse, ist die Leitlinie von 2023 zu Fersenschmerzen der bessere Wegweiser. Bei Fersenschmerzen unter dem Fuß gibt sie dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining ein **B**. Diese Übungen findest du unter [Übungen und Dehnungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
+Schmerzen an der Ferse, und manchmal entlang des Gewölbes, können von der Plantarfaszie kommen, der kräftigen Sehnenplatte an der Fußsohle. Sitzt dein Schmerz nahe der Ferse, ist die Leitlinie von 2023 zu Fersenschmerzen der bessere Wegweiser. Bei Fersenschmerzen unter dem Fuß vergibt sie für das Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad, **A**, und für Krafttraining Grad **B**. Diese Übungen findest du unter [Übungen und Dehnungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
 
 Walkito kann an beidem gleichzeitig arbeiten, als getrennte Ziele: schmerzfreie Morgen für den Schmerz und Gewölbehalten für das Gewölbe. Wie sich die beiden eine Woche teilen, steht auf [der Seite zum Plan](https://walkito.site/program/) (auf Englisch).
 
@@ -286,7 +294,7 @@ Wenn dir auch die Ferse wehtut, hat die Ferse eigene Übungen und ein eigenes Zi
 
 Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei einem flexiblen Plattfuß ist dieses Ziel das Gewölbehalten: dein Gewölbe 60 Sekunden oben halten. Wenn du auch Schmerzen hast, kommen schmerzfreie Morgen zuerst.
 
-#### Können Übungen Plattfüße verändern?
+#### Kann man mit Übungen bei Plattfüßen ein Fußgewölbe aufbauen?
 
 Übungen können die Gewölbeform flexibler Plattfüße verändern, aber nicht die starrer. In einer Studie mit 52 Personen, deren Gewölbe ohne Bodenkontakt zurückkam, veränderten sechs Wochen Kurzer-Fuß-, Sprunggelenk-, Hüft- und Dehnübungen die Gewölbemaße stärker als in einer Kontrollgruppe. Ein Fuß, der auch angehoben flach bleibt, ist strukturell, und Übungen werden seine Form nicht verändern.
 
@@ -296,19 +304,23 @@ Rechne mit sechs Wochen oder mehr. In einer Studie zu flexiblen Plattfüßen ver
 
 #### Was hilft bei Schmerzen unter dem Fußgewölbe?
 
-Direkte Belege gibt es hier nicht, weil keine der zitierten Studien auf dieser Seite Schmerzen im Gewölbe gemessen hat. Sitzt der Schmerz nahe der Ferse und hängt mit der Plantarfaszie zusammen, bewertet die Leitlinie von 2023 zu Fersenschmerzen das Dehnen von Plantarfaszie und Wade mit A und Krafttraining mit B. Die Gewölbeübungen auf dieser Seite trainieren die Gewölbeform, nicht den Schmerz. Siehe [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
+Direkte Belege gibt es hier nicht, weil keine der zitierten Studien auf dieser Seite Schmerzen im Gewölbe gemessen hat. Sitzt der Schmerz nahe der Ferse und hängt mit der Plantarfaszie zusammen, vergibt die Leitlinie von 2023 zu Fersenschmerzen für das Dehnen von Plantarfaszie und Wade Empfehlungsgrad A und für Krafttraining Grad B. Die Gewölbeübungen auf dieser Seite trainieren die Gewölbeform, nicht den Schmerz. Siehe [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
 
 #### Können Plattfüße Rückenschmerzen verursachen?
 
-Die Belege sind schwach und uneinheitlich, kein klares Ja. Die größte Studie dazu, die [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) mit rund 1.900 Erwachsenen, fand keinen Zusammenhang zwischen flacher Fußhaltung und Schmerzen im unteren Rücken. Sie fand bei Frauen einen kleinen Zusammenhang zwischen einem Fuß, der beim Gehen nach innen rollt, und Schmerzen im unteren Rücken, bei Männern keinen. Plattfüße allein sind also eine schwache Erklärung für Rückenschmerzen. Wenn du beides hast, betrachte es als zwei getrennte Probleme und geh wegen des Rückens zu einer medizinischen Fachperson.
+Die Belege sind schwach und uneinheitlich, kein klares Ja. Die größte Studie dazu, die [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) mit rund 1.900 Erwachsenen, fand keinen Zusammenhang zwischen flacher Fußhaltung und [Schmerzen im unteren Rücken](https://walkito.site/de/plattfuss-rueckenschmerzen/). Sie fand bei Frauen einen kleinen Zusammenhang zwischen einem Fuß, der beim Gehen nach innen rollt, und Schmerzen im unteren Rücken, bei Männern keinen. Plattfüße allein sind also eine schwache Erklärung für Rückenschmerzen. Wenn du beides hast, betrachte es als zwei getrennte Probleme und lass den Rücken ärztlich abklären.
 
 #### Was ist der Unterschied zwischen Senkfuß und Plattfuß?
 
-Vor allem der Grad: Beim Senkfuß ist das Längsgewölbe abgesenkt, beim Plattfuß ist es weitgehend abgeflacht. Der Senkfuß ist also die mildere Form. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Im Alltag werden die Begriffe aber oft gemischt. Die meisten Plattfüße bestehen ein Leben lang und sind flexibel, das Gewölbe kommt also zurück, wenn der Fuß nicht auf dem Boden steht. Manchmal ist aber etwas anderes gemeint: ein [erworbener Plattfuß im Erwachsenenalter](https://doi.org/10.2174/1874325001711010714), oft durch eine schwächer werdende Tibialis-posterior-Sehne, die Sehne, die das Gewölbe hält. Er entsteht meist im Erwachsenenalter und kann Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks bringen. Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, geh zu einer medizinischen Fachperson, bevor du es trainierst.
+Vor allem der Grad: Beim Senkfuß ist das Längsgewölbe abgesenkt, beim Plattfuß ist es weitgehend abgeflacht. Der Senkfuß ist also die mildere Form. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Im Alltag werden die Begriffe aber oft gemischt. Die meisten Plattfüße bestehen ein Leben lang und sind flexibel, das Gewölbe kommt also zurück, wenn der Fuß nicht auf dem Boden steht. Manchmal ist aber etwas anderes gemeint: ein [erworbener Plattfuß im Erwachsenenalter](https://doi.org/10.2174/1874325001711010714), oft durch eine schwächer werdende [Tibialis-posterior-Sehne](https://walkito.site/de/tibialis-posterior-insuffizienz/), die Sehne, die das Gewölbe hält. Er entsteht meist im Erwachsenenalter und kann Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks bringen. Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, lass das ärztlich abklären, bevor du es trainierst.
+
+#### Welche Übungen helfen bei einem eingesunkenen Fußgewölbe?
+
+Ein „eingesunkenes Fußgewölbe“ meint meist dasselbe wie Plattfuß oder Senkfuß. Bei einem flexiblen Gewölbe, das zurückkommt, sobald der Fuß nicht auf dem Boden steht, hat die Kurzer-Fuß-Übung die Studiendaten auf ihrer Seite: erst im Sitzen, dann im Stehen, dann auf einem Bein, zusammen mit Übungen für Hüfte und Wade. Ein starres Gewölbe, das auch angehoben flach bleibt, solltest du ärztlich abklären lassen, statt mehr zu üben.
 
 #### Welche Übungen stärken das Fußgewölbe?
 
-Die wichtigste ist die Kurzer-Fuß-Übung: Du hebst das Gewölbe, indem du den Fußballen Richtung Ferse ziehst, ohne die Zehen einzukrallen. Walkito beginnt sie im Sitzen, mit 3 Sätzen à 8 und 5 Sekunden Halten, dann im Stehen, dann auf einem Bein. Handtuchgreifen, Großzehenheben, Zehenspreizen und Einwärtsdrehen mit Band trainieren die kleinen Muskeln rund um das Gewölbe. Das alles ist für flexible Plattfüße. Schritt für Schritt: [Kurzer-Fuß-Übung](https://walkito.site/de/uebungen/kurzer-fuss/).
+Die wichtigste ist die Kurzer-Fuß-Übung: Du hebst das Gewölbe, indem du den Fußballen Richtung Ferse ziehst, ohne die Zehen einzukrallen. Walkito beginnt sie im Sitzen, mit 3 Sätzen à 8 und 5 Sekunden Halten, dann im Stehen, dann auf einem Bein. Handtuchgreifen, Großzehenheben, Zehenspreizen und Einwärtsdrehen mit Band trainieren [die kleinen Muskeln rund um das Gewölbe](https://walkito.site/de/fuss-kraeftigen-uebungen/). Das alles ist für flexible Plattfüße. Schritt für Schritt: [Kurzer-Fuß-Übung](https://walkito.site/de/uebungen/kurzer-fuss/).
 
 #### Wie oft sollte ich Plattfuß-Übungen machen?
 
@@ -316,11 +328,19 @@ Mach das Kurzer-Fuß-Training an jedem Trainingstag, solange das Gewölbe dein Z
 
 #### Wann sollte ich mit Plattfüßen zum Arzt?
 
-Geh zu einer medizinischen Fachperson, bevor du anfängst, wenn das Gewölbe flach bleibt, auch wenn der Fuß nicht auf dem Boden steht, oder wenn sich ein Gewölbe im Erwachsenenalter plötzlich abgeflacht hat. Dasselbe gilt für Schmerzen nach einer Verletzung, Schmerzen, die dich nachts wecken, oder Schmerzen mit Taubheit, Kribbeln, Schwellung oder Wärme. Stechende oder zunehmende Schmerzen brauchen eine medizinische Fachperson, nicht mehr Übungen.
+Lass es ärztlich abklären, bevor du anfängst, wenn das Gewölbe flach bleibt, auch wenn der Fuß nicht auf dem Boden steht, oder wenn sich ein Gewölbe im Erwachsenenalter plötzlich abgeflacht hat. Dasselbe gilt für Schmerzen nach einer Verletzung, Schmerzen, die dich nachts wecken, oder Schmerzen mit Taubheit, Kribbeln, Schwellung oder Wärme. Stechende oder zunehmende Schmerzen gehören in ärztliche Abklärung, nicht in mehr Übungen.
+
+#### Ist Barfußgehen gut bei Plattfüßen?
+
+Keine Studie hat bei Plattfüßen Barfußgehen mit Gehen in Schuhen verglichen, die Frage ist also offen. Barfuß zu gehen fordert aber die kleinen Muskeln, die das Fußgewölbe stützen. Deshalb macht man Gewölbeübungen wie die Kurzer-Fuß-Übung und das Handtuchgreifen ohne Schuhe. Wenn Barfußgehen neue Schmerzen auslöst, mach weniger und probier es zuerst auf weichem Untergrund.
+
+#### Was verschlimmert Plattfüße?
+
+Langes Stehen oder Gehen, abgenutzte Schuhe oder Schuhe ohne Halt, zusätzliches Körpergewicht und das Auslassen der Gewölbe- und Wadenübungen, die die stützenden Muskeln kräftig halten. Nichts davon verändert die Form des Fußgewölbes, aber ein flexibler Plattfuß kann sich dadurch abends müder oder schmerzhafter anfühlen. Ein starrer Plattfuß, der weiter schmerzt, gehört ärztlich abgeklärt, Ruhe allein reicht nicht.
 
 ## Übungen bei Achillessehnenentzündung: exzentrisches Fersenabsenken, Dosis und was die Forschung sagt
 
-Language: German (Deutsch) · https://walkito.site/de/achillessehnenentzuendung-uebungen/ · published 2026-10-08 · updated 2026-10-08
+Language: German (Deutsch) · https://walkito.site/de/achillessehnenentzuendung-uebungen/ · published 2026-10-08 · updated 2026-10-17
 
 Übungen bei Achillessehnenentzündung wirken am besten, wenn du das Fersenabsenken als Krafttraining verstehst, nicht als Dehnung. Die klinische Leitlinie von 2024 gibt Übungen ihre beste Bewertung, **A**, und eine Netzwerk-Metaanalyse von 2021 mit 29 Studien fand kein Protokoll, das klar besser war als ein anderes. Entscheidend ist, die Sehne über Wochen gleichmäßig zu belasten.
 
@@ -456,7 +476,11 @@ Du musst Reihenfolge, Dosis und den Zeitpunkt für mehr Last nicht erraten. Walk
 
 #### Was ist exzentrisches Fersenabsenken bei Achillessehnenentzündung?
 
-Exzentrisches Fersenabsenken ist eine Kraftübung: auf beiden Füßen hoch, auf einem langsam absenken, die Ferse sinkt unter eine Stufenkante. Im Mittelpunkt steht das Absenken. In einer Studie von 1998 kehrten 15 Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Spätere Forschung zeigt, dass andere Arten der Belastung genauso gut wirken.
+Exzentrisches Fersenabsenken ist eine Kraftübung: mit beiden Füßen auf die Zehenspitzen, auf einem langsam absenken, die Ferse sinkt unter eine Stufenkante. Im Mittelpunkt steht das Absenken. In einer Studie von 1998 kehrten 15 Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Spätere Forschung zeigt, dass andere Arten der Belastung genauso gut wirken.
+
+#### Welche exzentrischen Übungen helfen am besten bei Schmerzen an der Achillessehne?
+
+Exzentrisches Fersenabsenken ist die am besten untersuchte Übung bei Schmerzen an der Achillessehne: Stell dich mit beiden Füßen auf die Zehenspitzen, verlagere das Gewicht auf das schmerzende Bein und senk dich über drei Sekunden langsam ab, bis die Ferse unter die Stufenkante sinkt. In einer Studie von 1998 kehrten 15 Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Heavy Slow Resistance, also langsames, schweres Krafttraining, brachte in einer späteren Studie gleich gute Ergebnisse.
 
 #### Ist Heavy Slow Resistance so gut wie exzentrisches Fersenabsenken?
 
@@ -1684,10 +1708,10 @@ Die Person steht barfuß oder in flachen Schuhen auf einem um 10 Grad geneigten 
 
 Der Test endet, wenn:
 
-- Sich die Ferse nicht mehr vom Brett hebt.
-- Der Takt des Metronoms nicht mehr gehalten werden kann.
-- Das Knie sich beugt oder der Oberkörper sich neigt.
-- Die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren.
+- die Ferse sich nicht mehr vom Brett hebt,
+- der Takt des Metronoms nicht mehr gehalten werden kann,
+- das Knie sich beugt oder der Oberkörper sich neigt,
+- die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren.
 
 Vor dem Abbruch gibt es eine mündliche Erinnerung. Zum Aufwärmen gibt es 10 Minuten zügiges Gehen und danach 10-mal Fersenheben beidbeinig. Zwischen den Beinen liegen zwei Minuten Pause.
 
@@ -6903,7 +6927,7 @@ Gehen selbst schadet dem Nerv nicht, aber enge Schuhe oder dünne Sohlen beim Ge
 
 ## Nachtschiene bei Plantarfasziitis: was sie bewirkt, was die Studien zeigen und wie du sie trägst
 
-Language: German (Deutsch) · https://walkito.site/de/nachtschiene-plantarfasziitis/ · published 2026-10-09 · updated 2026-10-09
+Language: German (Deutsch) · https://walkito.site/de/nachtschiene-plantarfasziitis/ · published 2026-10-09 · updated 2026-10-17
 
 Eine Nachtschiene bei Plantarfasziitis hält dein Sprunggelenk im Schlaf etwa im rechten Winkel, damit sich Plantarfaszie und Wade über Nacht nicht verkürzen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet sie mit **A** für ein bis drei Monate, wenn die ersten Schritte weiter wehtun. Die Studien sind klein und uneinheitlich, und viele finden, dass man mit einer Schiene schlecht schläft.
 
@@ -6960,6 +6984,23 @@ Es gibt drei gängige Arten von Nachtschienen bei Plantarfasziitis, und keine gu
 - **Strumpfvariante, etwa der Strassburg-Strumpf.** Ein langer Strumpf mit einem Band von den Zehen zum Schienbein, das verhindert, dass der Fuß nach unten zeigt. Er ist leicht, und man schläft gut darin. Eine randomisierte Studie, die ihn bei Plantarfasziitis getestet hat, haben wir nicht gefunden.
 
 Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Worauf solltest du vor dem Kauf einer Nachtschiene achten?
+
+Für keine Marke und keinen Typ zeigen Studien, dass sie besser wirken als andere. Kauf deshalb nach Komfort und Passform, nicht nach den Versprechen auf der Packung. Prüf vor dem Bezahlen diese Punkte:
+
+- **Ein Typ, der zu deiner Schlafposition passt.** Ein Stiefel eignet sich am besten, wenn du auf dem Rücken schläfst. Schläfst du auf der Seite oder auf dem Bauch, ist ein Strumpfmodell oder eine kleine dorsale Schiene meist angenehmer.
+- **Ein verstellbarer Winkel.** Du willst ungefähr im rechten Winkel anfangen und ihn bei Bedarf ändern können, statt an eine feste Dehnung gebunden zu sein.
+- **Die richtige Größe.** Nimm die Größentabelle des Herstellers für deine Schuhgröße und deine Wade. Eine Schiene, die verrutscht oder auf die Zehen drückt, bleibt nicht die ganze Nacht dran.
+- **Weiche Polsterung und ein waschbarer Bezug.** Du trägst sie ein bis drei Monate lang jede Nacht.
+- **Verschlüsse, die du im Dunkeln öffnen kannst.** Du musst sie abnehmen, bevor du gehst, zum Beispiel wenn du nachts aufstehst.
+- **Ein Rückgaberecht.** In einer Studie trug nach einem Jahr nur noch 1 von 28 Personen die Nachtschiene, die sie bekommen hatte. Kauf dort, wo du sie zurückgeben kannst, falls sie dir den Schlaf raubt.
+
+Sei vorsichtig bei Schienen, die mit großen Versprechen verkauft werden. Die Studien sind uneinheitlich, und Dehnungen am Morgen haben in der Leitlinie denselben Empfehlungsgrad und kosten nichts.
+
+Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Roos E, Engström M, Söderberg B. Foot orthoses for the treatment of plantar fasciitis. Foot & Ankle International. 2006;27(8):606–611.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Wie lange solltest du eine Nachtschiene bei Plantarfasziitis tragen?
@@ -9386,7 +9427,7 @@ Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüß
 
 ### Was ist Walkito?
 
-Walkito ist eine App für iPhone und Android, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei 1/10 oder weniger an 14 Tagen am Stück), das Gewölbe 60 Sekunden halten, 25-mal einbeiniges Fersenheben, 30 Sekunden Gleichgewicht auf einem Bein und weniger als 10 % Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.
+Walkito ist eine App für iPhone und Android, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Sie hat nichts mit walkito.com zu tun, einem Gassi-Service für Hunde. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei 1/10 oder weniger an 14 Tagen am Stück), das Gewölbe 60 Sekunden halten, 25-mal einbeiniges Fersenheben, 30 Sekunden Gleichgewicht auf einem Bein und weniger als 10 % Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.
 
 Du wählst 3, 5 oder 7 Trainingstage pro Woche und Einheiten von 3, 5 oder 10 Minuten. Die Einheit jedes Tages passt sich daran an, wie dein Morgen war. Alle 14 Tage zeigt ein kurzer Test, ob sich deine Zahlen bewegen. Sobald du dein erstes Ziel erreichst, kommt der Test alle 28 Tage.
 
@@ -9394,11 +9435,13 @@ Der Plan hat keine feste Dauer. Wenn du ein Ziel erreichst, geht es in geringere
 
 Walkito gibt es auf Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch.
 
+Du kannst Walkito auch in ChatGPT und Claude nutzen. Dort antwortet es mit kurzen Übungsvideos und einem Plan für den Einstieg. [Walkito in ChatGPT und Claude](https://walkito.site/ai/) (auf Englisch).
+
 ### Wie wir recherchieren
 
-Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](https://walkito.site/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](https://walkito.site/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.
+Die Ratgeber von Walkito stützen sich auf mehr als 250 veröffentlichte Studien und klinische Leitlinien. Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl auf eine Seite kommt, und jeder Empfehlungsgrad und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst. Bisher hat niemand mit ärztlicher oder physiotherapeutischer Zulassung die Ratgeber geprüft.
 
-Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl daraus auf eine Seite kommt. Jede Dosis, jede Bewertung und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst.
+Rahim Hudaykulyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](https://walkito.site/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](https://walkito.site/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](https://walkito.site/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.
 
 Übungen und Aussagen tragen eines von drei Labels zur Studienlage. **Stark** heißt, dass eine klinische Leitlinie sie hoch bewertet oder mehrere gute Studien übereinstimmen. **Mittel** heißt, dass mindestens eine gut angelegte Studie sie stützt. **Vorläufig** heißt, dass die Forschung klein ist oder gerade erst anfängt: einen Versuch wert, und das Label kann sich ändern, wenn mehr dazu erscheint. Eine verbreitete Regel, die eine Studie getestet und nicht bestätigt hat, ist als **Nicht belegt** markiert.
 

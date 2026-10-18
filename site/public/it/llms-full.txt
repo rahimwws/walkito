@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/it/
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not
@@ -25,16 +25,16 @@ should be seen by a clinician.
 
 ## Esercizi e allungamenti per la fascite plantare e il dolore al tallone
 
-Language: Italian (Italiano) · https://walkito.site/it/esercizi-fascite-plantare/ · published 2026-10-08 · updated 2026-10-08
+Language: Italian (Italiano) · https://walkito.site/it/esercizi-fascite-plantare/ · published 2026-10-08 · updated 2026-10-17
 
-I primi passi appena sceso dal letto sono il momento peggiore della giornata. Una fitta proprio sul tallone, prima ancora del caffè. Si calma quando ti muovi, poi torna dopo che sei stato seduto un po’. Quello schema ha un nome, [fascite plantare](https://walkito.site/it/fascite-plantare/), e la linea guida clinica del 2023 sul dolore al tallone la indica come la causa più riconosciuta del dolore sotto il tallone.
+Gli esercizi per la fascite plantare con le prove migliori sono gli allungamenti della fascia plantare e del polpaccio, a cui la linea guida del 2023 sul dolore al tallone dà una A, il suo grado più alto, e il lavoro di forza per il polpaccio, con una B. Qui sotto trovi otto esercizi, con le dosi. I primi passi appena sceso dal letto sono il momento peggiore della giornata. Una fitta proprio sul tallone, prima ancora del caffè. Si calma quando ti muovi, poi torna dopo che sei stato seduto un po’. Questo quadro ha un nome, [fascite plantare](https://walkito.site/it/fascite-plantare/), e la linea guida clinica del 2023 sul dolore al tallone la indica come la causa più riconosciuta del dolore sotto il tallone.
 
 - La linea guida del 2023 sul dolore al tallone del Journal of Orthopaedic & Sports Physical Therapy dà all’allungamento della fascia plantare e del polpaccio il grado più alto, A, e al lavoro di forza una B.
-- In uno studio su 48 persone, sollevamenti sulle punte con carico alto hanno ridotto il dolore e migliorato le attività quotidiane più in fretta dello stretching, e a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).
+- In uno studio su 48 persone, sollevamenti sulle punte ad alto carico hanno ridotto il dolore e migliorato le attività quotidiane più in fretta dello stretching, e a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).
 - Per il dolore al tallone quando corri, la stessa linea guida consiglia di cambiare il carico invece di fermare tutto, un consiglio di grado E perché si basa sulla teoria, non su studi.
 - Rivolgiti prima a un professionista sanitario se il dolore è iniziato dopo un infortunio, si accompagna a intorpidimento o gonfiore, ti sveglia di notte o fa male quando stringi il tallone.
 
-### Gli esercizi per la fascite plantare, con le dosi di partenza
+### Quali esercizi aiutano la fascite plantare, e quanto farne?
 
 Gli esercizi per la fascite plantare in Walkito sono allungamenti per la fascia plantare e il polpaccio, lavoro di forza per il polpaccio che sale a piccoli passi, e un massaggio con la pallina. Sono le dosi di partenza di Walkito, non una prescrizione. Un riassunto di una pagina è nelle [schede di esercizi da stampare](https://walkito.site/printable-exercise-sheets/) (in inglese). [Come scriviamo queste guide](https://walkito.site/it/chi-siamo/).
 
@@ -47,10 +47,10 @@ L’ordine conta. Finché il dolore è il tuo obiettivo, Walkito tiene leggero i
 Sali di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Il [sollevamento sulle punte con asciugamano](https://walkito.site/it/esercizi/sollevamento-tallone-asciugamano/) carica di più la fascia plantare, quindi arriva solo quando il dolore del mattino è sceso e l’obiettivo passa alla forza del polpaccio. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.
 
 - **Allungamento della fascia plantare** (2 tenute da 30 secondi, ogni piede): Siediti e accavalla il piede sull’altro ginocchio. Tira indietro le dita finché senti l’allungamento nell’arco, non nel polpaccio. Fai il primo sul bordo del letto, prima che il piede tocchi terra.
-- **Allungamento del polpaccio** (2 tenute da 30 secondi, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone giù e i fianchi in avanti. Un polpaccio rigido tira il tallone tutto il giorno, quindi questo allungamento conta anche se lo senti più in alto.
-- **Allungamento del soleo** (2 tenute da 30 secondi, ogni gamba): Mettiti nella stessa posizione, poi piega il ginocchio dietro finché senti l’allungamento più in basso, vicino al tallone. Il soleo, il muscolo più profondo del polpaccio, si allunga solo con il ginocchio piegato.
-- **Sollevamenti sulle punte da seduto** (3 serie da 10, entrambi i piedi): Siediti con i piedi appoggiati e spingi verso l’alto sugli avampiedi. Le mani sulle ginocchia aggiungono resistenza. Da seduto lavori il polpaccio quasi senza carico sul tallone.
-- **Sollevamenti sulle punte su due piedi** (3 serie da 10, entrambi i piedi): Stai su entrambi i piedi, sali dritto sopra gli alluci, poi scendi piano. I due piedi si dividono il carico mentre il polpaccio si sveglia.
+- **Allungamento del polpaccio** (2 tenute da 30 secondi, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone dietro ben appoggiato a terra e i fianchi in avanti. Un polpaccio rigido tira il tallone tutto il giorno, quindi questo allungamento conta anche se lo senti più in alto.
+- **Allungamento del soleo** (2 tenute da 30 secondi, ogni gamba): Mettiti nella stessa posizione, tieni il tallone dietro ben appoggiato a terra, poi piega il ginocchio dietro finché senti l’allungamento più in basso, vicino al tallone. Il soleo, il muscolo più profondo del polpaccio, si allunga solo con il ginocchio piegato.
+- **Sollevamenti sulle punte da seduto** (3 serie da 10, entrambi i piedi): Siediti con i piedi appoggiati e spingi verso l’alto sugli avampiedi. Le mani sulle ginocchia aggiungono resistenza. Con il ginocchio piegato lavora soprattutto il soleo, il muscolo più profondo del polpaccio, non il gastrocnemio che alleni nei sollevamenti in piedi. Quindi non è solo una versione più facile del sollevamento in piedi. Allena un muscolo diverso, quasi senza carico sul tallone.
+- **Sollevamenti sulle punte su due piedi** (3 serie da 10, entrambi i piedi): Stai su entrambi i piedi, sali dritto sopra gli alluci, poi scendi piano. I due piedi si dividono il carico mentre il polpaccio si scalda.
 - **Tenuta sulle punte** (3 tenute da 20 secondi, entrambi i piedi): Sali sulle punte con entrambi i piedi, poi resta fermo in alto. Non riabbassarti. Restare fermo in alto carica il tendine senza rimbalzi.
 - **Sollevamenti sulle punte con asciugamano** (4 serie da 10, ogni gamba, con peso aggiunto): Stai su un piede su un gradino, con un asciugamano arrotolato sotto le dita. Prendi tre secondi per salire, tieni due secondi in alto e prendi tre secondi per scendere. A questo livello Walkito aggiunge peso, per esempio uno zaino. È l’asciugamano che fa lavorare la fascia plantare e non solo il polpaccio.
 - **Massaggio con la pallina** (1 minuto): Siediti e fai rotolare lentamente la pianta del piede su una pallina da massaggio, con una pressione decisa. Se fai smorfie, alleggerisci. Far rotolare il piede può dare sollievo al tessuto dopo che ha lavorato. Niente pallina? In alternativa, massaggia la pianta con passate decise del pollice, dal tallone alle dita.
@@ -59,9 +59,9 @@ Sali di un gradino quando le ultime due sessioni con quell’esercizio ti sono s
 
 Evita le attività ad alto impatto che fanno impennare il carico sul tallone nelle fasi in cui il dolore è più forte, ed evita di camminare scalzo su pavimenti duri appena alzato.
 
-Salti, scatti e pliometria scaricano sulla fascia plantare un picco di forza improvviso. Quando il tessuto è irritato, quel picco può farti tornare indietro. La linea guida del 2023 consiglia di regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni, un consiglio di grado E. Non vieta esercizi specifici. **La domanda è se il carico supera quello da cui il tessuto riesce a riprendersi durante la notte.**
+Salti, scatti e pliometria impongono alla fascia plantare un picco di forza improvviso. Quando il tessuto è irritato, quel picco può farti tornare indietro. La linea guida del 2023 consiglia di regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni, un consiglio di grado E. Non vieta esercizi specifici. **La domanda è se il carico supera quello da cui il tessuto riesce a riprendersi durante la notte.**
 
-Camminare scalzo su pavimenti duri è un fattore scatenante comune, perché la fascia è più rigida dopo il riposo e una superficie dura non ammortizza.
+Camminare scalzo su pavimenti duri è un fattore scatenante comune, perché la fascia è più rigida dopo il riposo e una superficie dura non ammortizza. Finché i sintomi non si calmano, porta sempre una scarpa ben ammortizzata, a qualsiasi ora del giorno, anche in casa.
 
 Altre due cose a cui fare attenzione:
 
@@ -76,7 +76,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Uno studio del 2003 su 82 persone con fascite plantare cronica ha testato un allungamento specifico della fascia plantare fatto prima di caricare il peso. I pazienti tenevano l’allungamento 10 secondi, lo ripetevano 10 volte, tre volte al giorno, con la prima serie prima del primo passo del mattino.
 
-A otto settimane, il gruppo che faceva questo allungamento aveva molto meno dolore ai primi passi del mattino del gruppo che faceva solo un allungamento del polpaccio. A due anni, dopo che tutti i pazienti avevano ricevuto lo stesso allungamento, entrambi i gruppi erano migliorati.
+A otto settimane, il gruppo che faceva questo allungamento aveva un dolore significativamente minore ai primi passi del mattino del gruppo che faceva solo un allungamento del polpaccio. A due anni, dopo che tutti i pazienti avevano ricevuto lo stesso allungamento, entrambi i gruppi erano migliorati.
 
 In questa pagina, l’[allungamento della fascia plantare](https://walkito.site/it/esercizi/stretching-fascia-plantare/) inizia sul bordo del letto, prima che il piede tocchi terra. Poi viene l’[allungamento del polpaccio](https://walkito.site/it/esercizi/stretching-polpaccio/). Walkito mette il primo allungamento prima di alzarti per lo stesso motivo dello studio: allungare prima che il tessuto prenda carico è più delicato che farlo dopo.
 
@@ -84,12 +84,12 @@ Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar
 
 ### Cosa aiuta il dolore al tallone del mattino?
 
-Il dolore al tallone ai primi passi del mattino è lo schema più spesso legato alla fascite plantare. Di solito si calma quando inizi a muoverti, e torna dopo che sei stato seduto un po’.
+Il dolore al tallone ai primi passi del mattino è il quadro più spesso legato alla fascite plantare. Di solito si calma quando inizi a muoverti, e torna dopo che sei stato seduto un po’.
 
-Due cose in questa pagina puntano a questo:
+Due cose aiutano ad affrontarlo:
 
 - L’allungamento della fascia plantare si fa **prima di alzarti**, sul bordo del letto con le dita tirate indietro, così i tuoi primi passi non sono il tuo primo allungamento.
-- La linea guida del 2023 dà una **A** ai tutori notturni, portati per 1-3 mesi, per chi continua ad avere dolore ai primi passi del mattino. I tutori notturni sono da valutare con un professionista sanitario. Walkito non li fornisce.
+- La linea guida del 2023 dà una **A** ai [tutori notturni](https://walkito.site/it/tutore-notturno-fascite-plantare/), portati per 1-3 mesi, per chi continua ad avere dolore ai primi passi del mattino. I tutori notturni sono da valutare con un professionista sanitario. Walkito non li fornisce.
 
 Walkito ti chiede del dolore del mattino ogni giorno per lo stesso motivo. Il dolore del mattino è il segnale più chiaro di come il piede ha retto il giorno prima, e decide quanto ti chiede la sessione di oggi. Altro su cosa lo provoca è in [dolore al tallone al mattino](https://walkito.site/it/dolore-tallone-al-mattino/).
 
@@ -97,7 +97,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Riposare o continuare a correre con il dolore al tallone?
 
-Se il dolore al tallone da fascite plantare peggiora quando corri, **cambia il carico invece di fermare tutto.** La linea guida del 2023 consiglia di imparare a regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni. Quel consiglio è di grado E, cioè si basa sulla teoria più che su studi. Quindi continua con gli allungamenti ogni giorno, e riduci quello che peggiora il tallone.
+Se il dolore al tallone da fascite plantare peggiora quando corri, **cambia il carico invece di fermare tutto.** La linea guida del 2023 consiglia di imparare a regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni. Quel consiglio è di grado E, cioè si basa sulla teoria più che su studi. Quindi continua con gli allungamenti ogni giorno, e riduci quello che peggiora il tallone. Per mantenere la forma senza irritare il tallone, puoi sostituire alcune corse con attività cardio a basso impatto, come il nuoto o la cyclette.
 
 In una brutta mattina, tieni gli allungamenti e togli i sollevamenti sulle punte per quel giorno. La mattina dopo ti dice com’è andata. Se dopo una corsa i primi passi sono chiaramente peggiori, quella corsa era più di quanto il tallone potesse reggere.
 
@@ -111,7 +111,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Il lavoro di forza e lo stretching aiutano entrambi la fascite plantare, e **il lavoro di forza aiuta prima.**
 
-In uno studio su 48 persone con fascite plantare confermata da ecografia, tutti portavano plantari. Un gruppo aggiungeva sollevamenti sulle punte con carico alto a giorni alterni. L’altro allungava la fascia plantare ogni giorno.
+In uno studio su 48 persone con fascite plantare confermata da ecografia, tutti portavano plantari. Un gruppo aggiungeva sollevamenti sulle punte ad alto carico a giorni alterni. L’altro allungava la fascia plantare ogni giorno.
 
 A tre mesi, il gruppo dei sollevamenti era chiaramente avanti su dolore e attività quotidiane. A dodici mesi, i due gruppi erano pari. Il lavoro di forza ha anticipato il miglioramento. Non lo ha reso più grande.
 
@@ -121,15 +121,15 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Cosa raccomanda la linea guida del 2023 per la fascite plantare?
 
-La linea guida del 2023 sul dolore al tallone dà a ogni opzione un grado in base alla forza delle prove. A è il grado più alto. Un grado segnato «contro» vuol dire che la linea guida consiglia di non usare quell’opzione.
+La linea guida del 2023 sul dolore al tallone dà a ogni opzione un grado in base alla forza delle prove. A è il grado più alto. Una raccomandazione contraria, segnata «sconsigliato», vuol dire che la linea guida consiglia di non usare quell’opzione.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Scarpe e plantari aiutano la fascite plantare?
 
-Le scarpe con un buon sostegno aiutano, ma i plantari da soli non bastano per la maggior parte delle persone. La linea guida del 2023 dà alle ortesi (plantari e supporti per l’arco) come opzione a sé un **B contro**, cioè le prove dicono di non contare solo su di loro. Insieme a stretching e lavoro di forza, le ortesi prendono una **C**.
+Le scarpe con un buon sostegno aiutano, ma i plantari da soli non bastano per la maggior parte delle persone. La linea guida del 2023 sconsiglia le ortesi (plantari e supporti per l’arco) come opzione a sé, con una **raccomandazione contraria di grado B**: le prove dicono di non contare solo su di loro. Insieme a stretching e lavoro di forza, le ortesi prendono una **C**.
 
-I tutori notturni, portati mentre dormi per 1-3 mesi, ricevono il grado più alto della linea guida, **A**, per chi continua ad avere dolore ai primi passi di ogni mattina. Tengono ferma la caviglia così la fascia plantare non si accorcia durante la notte. Chiedi a un professionista sanitario se vale la pena provarli.
+I tutori notturni, portati mentre dormi per 1-3 mesi, ricevono il grado più alto della linea guida, **A**, per chi continua ad avere dolore ai primi passi di ogni mattina. Tengono ferma la caviglia così la fascia plantare non si accorcia durante la notte. Chiedi al tuo professionista sanitario se fanno al caso tuo.
 
 La linea guida non valuta tipi specifici di scarpe, ma le calzature senza sostegno sono un fattore di rischio comunemente riconosciuto. Scarpe con supporto per l’arco e un contrafforte del tallone rigido si prendono una parte del carico che la fascia plantare porterebbe da sola. Se ti fanno male i piedi dopo una lunga giornata in piedi, vedi [piedi doloranti dopo una giornata in piedi](https://walkito.site/it/dolore-piedi-stare-in-piedi/). Chi lavora a turni può iniziare da [infermieri e dolore ai piedi](https://walkito.site/it/dolore-piedi-infermieri/).
 
@@ -165,7 +165,7 @@ Non devi fermare tutto. Cambia il carico. La linea guida clinica del 2023 consig
 
 #### Perché il dolore al tallone è peggio al mattino?
 
-Il dolore al tallone ai primi passi dopo il sonno o dopo essere stato seduto è lo schema più spesso legato alla fascite plantare. La linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». La spiegazione più comune è che il tessuto sotto il piede si irrigidisce a riposo, poi viene caricato all’improvviso dai primi passi. Per questo l’allungamento della fascia plantare si fa prima di alzarsi, e per questo la linea guida del 2023 dà ai tutori notturni una A.
+Il dolore al tallone ai primi passi dopo il sonno o dopo essere stato seduto è il quadro più spesso legato alla fascite plantare. La linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». La spiegazione più comune è che il tessuto sotto il piede si irrigidisce a riposo, poi viene caricato all’improvviso dai primi passi. Per questo l’allungamento della fascia plantare si fa prima di alzarsi, e per questo la linea guida del 2023 dà ai tutori notturni una A.
 
 #### Quanto dura la fascite plantare?
 
@@ -173,11 +173,11 @@ Per la maggior parte delle persone si calma nel giro di mesi, non di settimane. 
 
 #### Meglio lo stretching o il rinforzo per la fascite plantare?
 
-Aiutano entrambi, e il rinforzo funziona più in fretta. In uno studio su 48 persone, i sollevamenti sulle punte con carico alto erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B. La [pagina delle evidenze](https://walkito.site/science/) (in inglese) ha i dettagli.
+Aiutano entrambi, e il rinforzo funziona più in fretta. In uno studio su 48 persone, i sollevamenti sulle punte ad alto carico erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B. La [pagina delle evidenze](https://walkito.site/science/) (in inglese) ha i dettagli.
 
-#### La spina calcaneare è la stessa cosa della fascite plantare?
+#### Lo sperone calcaneare è la stessa cosa della fascite plantare?
 
-Non proprio. Spesso si dice «spina calcaneare» intendendo la fascite plantare, ma a rigore la spina calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.
+Non proprio. Spesso si dice «[sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/)» (o spina calcaneare) intendendo la fascite plantare, ma a rigore lo sperone calcaneare è una crescita ossea che si vede ai raggi X. La fascite plantare è un dolore che viene dalla banda di tessuto sotto il piede. Gli esercizi di questa pagina sono quelli che la linea guida del 2023 valuta per il dolore sotto il tallone. Gli [esercizi per lo sperone calcaneare](https://walkito.site/it/spina-calcaneare-esercizi/) spiegano la stessa routine quando una radiografia mostra uno sperone. Solo un professionista sanitario può dire cosa c’è dietro il tuo.
 
 #### Quanto spesso devo fare gli esercizi per la fascite plantare?
 
@@ -195,14 +195,22 @@ Rivolgiti prima a un professionista sanitario se il dolore è iniziato dopo un i
 
 Camminare di solito va bene, ma da solo non è un esercizio per la fascite plantare. La linea guida del 2023 consiglia di regolare il carico invece di fermare l’attività. Se una camminata ti lascia i primi passi della mattina dopo chiaramente peggiori, la distanza o il ritmo erano eccessivi. Allungarsi prima di camminare, soprattutto con l’[allungamento della fascia plantare](https://walkito.site/it/esercizi/stretching-fascia-plantare/) prima dei primi passi, rende più facili i primi minuti.
 
+#### Qual è la cosa peggiore da fare con la fascite plantare?
+
+Camminare scalzo su pavimenti duri appena sveglio, e tornare subito a correre o saltare quando il tallone è ancora irritato, sono gli errori più chiari. Entrambi caricano con una forza improvvisa la fascia nel momento in cui è più rigida e meno recuperata. La linea guida del 2023 sul dolore al tallone consiglia di regolare il carico invece di stringere i denti e andare avanti nonostante il dolore.
+
+#### Il massaggio può far passare la fascite plantare?
+
+Nessuna singola seduta di massaggio fa passare la fascite plantare, ma un automassaggio delicato può ridurre la rigidità tra una sessione e l’altra. La linea guida del 2023 dà una A, il suo grado più alto, alla terapia manuale fatta da un professionista, cioè il lavoro con le mani su articolazioni e tessuti molli, se abbinata allo stretching. [Massaggiarti la pianta da solo](https://walkito.site/it/pallina-massaggio-fascite-plantare/) serve a dare sollievo, non sostituisce lo stretching e il lavoro di forza per il polpaccio.
+
 ## Esercizi per il piede piatto e il dolore all’arco
 
-Language: Italian (Italiano) · https://walkito.site/it/esercizi-piede-piatto/ · published 2026-10-08 · updated 2026-10-08
+Language: Italian (Italiano) · https://walkito.site/it/esercizi-piede-piatto/ · published 2026-10-08 · updated 2026-10-17
 
-La sera hai i piedi stanchi e ti fanno male gli archi. Quando sei in piedi, i piedi sembrano cedere verso l’interno e gli archi scendono verso il pavimento. Magari ti hanno detto che il piede piatto è fatto così e non serve pensarci. Voler fare qualcosa ha senso, e c’è ricerca vera su come allenare l’arco.
+Quando sei in piedi, i piedi sembrano cedere verso l’interno e l’arco plantare si abbassa verso il pavimento. La sera hai i piedi stanchi e ti fa male l’arco. Magari ti hanno detto che il piede piatto è fatto così e non serve pensarci. È normale voler fare qualcosa, e ci sono studi seri su come allenare l’arco. Per il [piede piatto](https://walkito.site/it/piede-piatto/) flessibile, il programma di esercizi con prove da studi clinici unisce esercizi per costruire l’arco (piede corto), lavoro sulla caviglia, rinforzo dell’anca e allungamenti: in uno studio su 52 persone, sei settimane di questi esercizi hanno cambiato la forma dell’arco più che in un gruppo di controllo.
 
 - Lo studio randomizzato di questa pagina riguardava il piede piatto flessibile, quello in cui l’arco torna quando il piede è sollevato da terra (Brijwasi e Borkar, 2023).
-- In quello studio su 52 persone, sei settimane di piede corto, caviglia, anca e allungamenti hanno cambiato la forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).
+- In quello studio su 52 persone, sei settimane di esercizi per l’arco, la caviglia e l’anca, più gli allungamenti hanno cambiato la forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).
 - Una revisione del 2024 sull’allenamento del piede corto non ha trovato un cambiamento chiaro nel complesso, e un miglioramento in una misura dell’arco solo nei programmi più lunghi di sei settimane (Cheng e colleghi, 2024).
 - Un piede piatto rigido, che resta piatto anche sollevato da terra, è strutturale, e l’esercizio non ne cambierà la forma.
 - Questi studi hanno misurato la forma dell’arco, non il dolore. Per il dolore al tallone, la linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio il grado più alto, A, e al lavoro di forza una B.
@@ -217,9 +225,9 @@ Puoi capire se il tuo piede piatto è flessibile o rigido con una verifica di po
 - Se l’arco resta piatto anche sollevato da terra, il piede è **rigido**. È un problema strutturale che l’esercizio non cambierà. Lascia da parte l’obiettivo della tenuta dell’arco e rivolgiti a un professionista sanitario prima di iniziare un programma.
 - «Arco caduto» di solito è solo un altro nome per il piede piatto. Ma se da adulto un arco si è abbassato **all’improvviso**, da un lato solo, rivolgiti a un professionista sanitario prima di allenarlo, qualunque sia il risultato della verifica.
 
-### Gli esercizi per il piede piatto, con le dosi di partenza
+### Quali esercizi aiutano il piede piatto, e quanto farne?
 
-Gli esercizi per il piede piatto in Walkito iniziano con la raccolta dell’asciugamano e il sollevamento dell’alluce, poi salgono attraverso tre versioni del piede corto. L’apertura delle dita, l’inversione con elastico, l’equilibrio su una gamba, l’abduzione dell’anca e gli allungamenti del polpaccio completano il resto. Sono le dosi di partenza di Walkito, non una prescrizione. Falli a piedi nudi. [Come scriviamo queste guide](https://walkito.site/it/chi-siamo/).
+Gli esercizi per il piede piatto in Walkito iniziano con la [raccolta dell’asciugamano](https://walkito.site/it/esercizi/raccolta-asciugamano-dita/) e il sollevamento dell’alluce, poi salgono attraverso tre versioni del piede corto. L’apertura delle dita, l’inversione con elastico, l’equilibrio su una gamba, l’abduzione dell’anca e gli allungamenti del polpaccio completano il resto. Sono le dosi di partenza di Walkito, non una prescrizione. Falli a piedi nudi. [Come scriviamo queste guide](https://walkito.site/it/chi-siamo/).
 
 Il piede corto è il cuore del lavoro sull’arco. Accorci il piede tirando l’avampiede verso il tallone, così l’arco si alza, senza arricciare le dita. Il piede corto, il rinforzo dell’anca e gli allungamenti sono ciò che lo studio ha testato. La raccolta dell’asciugamano, il sollevamento dell’alluce, l’apertura delle dita, l’inversione con elastico e l’equilibrio su una gamba sono aggiunte di Walkito.
 
@@ -229,20 +237,20 @@ Alcuni esercizi richiedono un asciugamano o un elastico. Walkito ti chiede cosa 
 
 - **Raccolta dell’asciugamano** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con un asciugamano steso a terra sotto il piede. Tira verso di te l’asciugamano con le dita, tenendo il tallone giù. La raccolta dell’asciugamano sveglia i piccoli muscoli sotto l’arco.
 - **Sollevamento dell’alluce** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con i piedi appoggiati. Solleva solo l’alluce e tieni. Le altre quattro dita restano ferme a terra. Questo esercizio insegna all’alluce a muoversi da solo, il primo interruttore dell’arco.
-- **Piede corto, da seduto** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con il piede appoggiato a terra. Tira l’avampiede verso il tallone così l’arco si alza, e tieni. Non arricciare le dita. Arricciarle è l’errore più comune in questo esercizio.
+- **Piede corto, da seduto** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con il piede appoggiato a terra. Tira l’avampiede verso il tallone così l’arco si alza, e tieni. Tieni il bordo esterno del piede a terra e alza l’arco, come a formare una piccola cupola sotto il piede. Non arricciare le dita. Arricciarle è l’errore più comune in questo esercizio.
 - **Piede corto, in piedi** (3 serie da 8, tieni 5 secondi, entrambi i piedi): Stai in piedi con il peso su entrambi i piedi e fai lo stesso movimento. Le dita restano piatte e lunghe. Si alza solo l’arco. È lo stesso muscolo della versione da seduto, che ora regge il tuo peso.
 - **Piede corto, su una gamba** (3 serie da 10, tieni 5 secondi, ogni piede): Stai su un piede e alza l’arco. Tieni l’alluce giù. Se si alza, stai compensando con le dita invece che con l’arco. Lavorando un piede alla volta si vede qual è il lato più debole.
 - **Apertura delle dita** (3 serie da 10, ogni piede): Apri le dita il più possibile, poi tieni. Dita che si aprono condividono il carico con l’arco. Lo scopo non è sollevarle.
 - **Inversione con elastico** (3 serie da 12, ogni piede): Siediti con un elastico intorno al piede e ruota il piede verso l’interno contro l’elastico. Muovi il piede, non la gamba. Il ginocchio resta fermo. Walkito aggiunge questo esercizio solo dopo sei sessioni di piede corto in piedi, così prima lavorano i muscoli dell’arco.
-- **Equilibrio su una gamba** (3 tenute da 20 secondi, ogni gamba): Stai su un piede e guarda un punto fisso. Lascia che il piede oscilli. Deve farlo, perché quell’oscillazione è il piede che tiene l’equilibrio.
+- **Equilibrio su una gamba** (3 tenute da 20 secondi, ogni gamba): Stai su un piede e guarda un punto fisso. Lascia che il piede oscilli. Deve farlo, perché quell’oscillazione è il piede che tiene l’equilibrio. Se ti serve, sfiora un mobile o il muro con la punta delle dita, così continui ad allenare la resistenza della caviglia invece di mollare.
 - **Abduzione dell’anca** (3 serie da 10, ogni gamba): Stai in piedi con un elastico e porta una gamba di lato contro l’elastico. Spingi con il tallone, non con le dita. Un’anca che cede scarica il peso sull’arco.
-- **Allungamento di polpaccio e soleo** (2 tenute da 30 secondi per ogni allungamento, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone giù e i fianchi in avanti, e senti l’allungamento nel polpaccio. Poi piega il ginocchio dietro finché lo senti più in basso, vicino al tallone. Quello è il soleo, il muscolo più profondo del polpaccio.
+- **Allungamento di polpaccio e soleo** (2 tenute da 30 secondi per ogni allungamento, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone dietro ben appoggiato a terra e i fianchi in avanti, e senti l’allungamento nel polpaccio. Poi, sempre con il tallone a terra, piega il ginocchio dietro finché lo senti più in basso, vicino al tallone. Quello è il soleo, il muscolo più profondo del polpaccio.
 
 ### Quanto ci vuole perché gli esercizi cambino l’arco?
 
 Finora, nella ricerca, gli esercizi per il piede piatto hanno cambiato l’arco dopo sei settimane o più, e solo nel piede piatto flessibile. In uno studio su 52 persone con piede piatto **flessibile**, un programma di sei settimane con esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti ha cambiato due misure della forma dell’arco più che nel gruppo di controllo.
 
-Le prove sul piede corto da solo sono più deboli. Una revisione del 2024 ha messo insieme studi sull’allenamento del piede corto nel piede piatto in generale. Nel complesso non ha trovato una differenza chiara rispetto ai gruppi di controllo nella forma dell’arco o nella postura del piede. Solo i programmi più lunghi di sei settimane hanno migliorato quanto l’arco si abbassa sotto il tuo peso, e gli autori dicono che servono studi più grandi. Quindi metti in conto almeno sei settimane, e di più se fai solo il piede corto.
+Le prove sugli esercizi per costruire l’arco, da soli, sono più deboli. Una revisione del 2024 ha messo insieme studi sull’allenamento del piede corto nel piede piatto in generale. Nel complesso non ha trovato una differenza chiara rispetto ai gruppi di controllo nella forma dell’arco o nella postura del piede. Solo i programmi più lunghi di sei settimane hanno migliorato quanto l’arco si abbassa sotto il tuo peso, e gli autori dicono che servono studi più grandi. Quindi metti in conto almeno sei settimane, e di più se fai solo il piede corto.
 
 Anche per questo il piano di Walkito non ha una data di fine. L’obiettivo dell’arco, tenerlo per 60 secondi, resta nel piano finché non lo raggiungi, per quante settimane servano. La tenuta dell’arco viene testata ogni 14 giorni finché non raggiungi il primo obiettivo, poi ogni 28, così vedi se sta cambiando. Gli studi sono riassunti nella [pagina delle evidenze](https://walkito.site/science/) (in inglese).
 
@@ -251,7 +259,7 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 ### Gli esercizi per il piede piatto aiutano il dolore all’arco?
 
-Nessuno studio di questa pagina mostra che gli esercizi per il piede piatto riducano il dolore all’arco, perché nessuno lo ha misurato. Lo studio e la revisione hanno misurato la forma dell’arco. Mostrano che l’arco si può allenare. Non sono una prova che gli stessi esercizi diano sollievo a un arco dolorante.
+Nessuno studio di questa pagina mostra che gli esercizi per il piede piatto riducano il [dolore all’arco](https://walkito.site/it/dolore-arco-plantare/), perché nessuno lo ha misurato. Lo studio e la revisione hanno misurato la forma dell’arco. Mostrano che l’arco si può allenare. Non sono una prova che gli stessi esercizi diano sollievo a un arco dolorante.
 
 Il dolore al tallone, e a volte lungo l’arco, può venire dalla fascia plantare, la banda di tessuto che corre sotto la pianta del piede. Se il tuo è vicino al tallone, la linea guida del 2023 sul dolore al tallone è la guida migliore. Per il dolore sotto il tallone, dà all’allungamento della fascia plantare e del polpaccio il grado più alto, **A**, e al lavoro di forza una **B**. Quegli esercizi sono in [esercizi e allungamenti per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/).
 
@@ -286,7 +294,7 @@ Se ti fa male anche il tallone, il tallone ha i suoi esercizi e il suo obiettivo
 
 Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per un piede piatto flessibile, quell’obiettivo è la tenuta dell’arco: tenere l’arco alzato per 60 secondi. Se hai anche dolore, prima vengono le mattine senza dolore.
 
-#### Gli esercizi possono cambiare il piede piatto?
+#### Gli esercizi possono costruire l’arco plantare nel piede piatto?
 
 L’esercizio può cambiare la forma dell’arco nel piede piatto flessibile, ma non in quello rigido. In uno studio su 52 persone il cui arco tornava con il piede sollevato, sei settimane di piede corto, caviglia, anca e allungamenti hanno cambiato le misure dell’arco più che in un gruppo di controllo. Un piede che resta piatto anche sollevato è strutturale, e l’esercizio non ne cambierà la forma.
 
@@ -300,15 +308,19 @@ Qui non ci sono prove dirette, perché nessuno studio citato in questa pagina ha
 
 #### Il piede piatto può causare mal di schiena?
 
-Le prove sono deboli e contrastanti, non un sì chiaro. Lo studio più grande sul tema, il [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) su circa 1.900 adulti, non ha trovato un legame tra piede piatto e mal di schiena lombare. Ha trovato un piccolo legame nelle donne tra un piede che cede verso l’interno camminando e il mal di schiena lombare, e nessuno negli uomini. Quindi il piede piatto da solo spiega poco il mal di schiena. Se hai entrambi, considerali due problemi separati, e per la schiena rivolgiti a un professionista sanitario.
+Le prove sono deboli e contrastanti, non un sì chiaro. Lo studio più grande sul tema, il [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) su circa 1.900 adulti, non ha trovato un legame tra piede piatto e [mal di schiena lombare](https://walkito.site/it/piede-piatto-mal-di-schiena/). Ha trovato un piccolo legame nelle donne tra un piede che cede verso l’interno camminando e il mal di schiena lombare, e nessuno negli uomini. Quindi il piede piatto da solo spiega poco il mal di schiena. Se hai entrambi, considerali due problemi separati, e per la schiena rivolgiti a un professionista sanitario.
 
 #### Che differenza c’è tra arco caduto e piede piatto?
 
-Di solito nessuna: «arco caduto» è un nome comune per il piede piatto. La maggior parte dei piedi piatti c’è da sempre ed è flessibile, e l’arco torna quando il piede è sollevato da terra. A volte però l’espressione indica altro: il [piede piatto acquisito dell’adulto](https://doi.org/10.2174/1874325001711010714), spesso per un indebolimento del tendine tibiale posteriore, il tendine che sostiene l’arco. Tende a comparire da adulti e può dare dolore o gonfiore all’interno della caviglia. Se da adulto un arco si è abbassato, rivolgiti a un professionista sanitario prima di allenarlo.
+Di solito nessuna: «arco caduto» è un nome comune per il piede piatto. La maggior parte dei piedi piatti c’è da sempre ed è flessibile, e l’arco torna quando il piede è sollevato da terra. A volte però l’espressione indica altro: il [piede piatto acquisito dell’adulto](https://doi.org/10.2174/1874325001711010714), spesso per un indebolimento del [tendine tibiale posteriore](https://walkito.site/it/disfunzione-tendine-tibiale-posteriore/), il tendine che sostiene l’arco. Tende a comparire da adulti e può dare dolore o gonfiore all’interno della caviglia. Se da adulto un arco si è abbassato, rivolgiti a un professionista sanitario prima di allenarlo.
 
-#### Quali esercizi rinforzano gli archi dei piedi?
+#### Quali esercizi aiutano un arco plantare «crollato»?
 
-Il principale è l’esercizio del piede corto: alzi l’arco avvicinando l’avampiede al tallone, senza arricciare le dita. Walkito lo inizia da seduto, con 3 serie da 8 e 5 secondi di tenuta, poi in piedi, poi su una gamba. Raccolta dell’asciugamano, sollevamento dell’alluce, apertura delle dita e inversione con elastico allenano i piccoli muscoli intorno all’arco. Tutto questo è per il piede piatto flessibile. Passo passo: [esercizio del piede corto](https://walkito.site/it/esercizi/piede-corto/).
+«Arco crollato» di solito vuol dire la stessa cosa di piede piatto o arco caduto. Per un arco flessibile, cioè che torna quando il piede è sollevato da terra, le prove da studi clinici riguardano l’esercizio del piede corto: da seduto, poi in piedi, poi su una gamba, insieme al lavoro su anca e polpaccio. Un arco rigido, che resta piatto anche con il piede sollevato, richiede un professionista sanitario, non più esercizio.
+
+#### Quali esercizi rinforzano l’arco plantare?
+
+Il principale è l’esercizio del piede corto: alzi l’arco avvicinando l’avampiede al tallone, senza arricciare le dita. Walkito lo inizia da seduto, con 3 serie da 8 e 5 secondi di tenuta, poi in piedi, poi su una gamba. Raccolta dell’asciugamano, sollevamento dell’alluce, apertura delle dita e inversione con elastico allenano [i piccoli muscoli intorno all’arco](https://walkito.site/it/esercizi-rinforzo-piede/). Tutto questo è per il piede piatto flessibile. Passo passo: [esercizio del piede corto](https://walkito.site/it/esercizi/piede-corto/).
 
 #### Quanto spesso devo fare gli esercizi per il piede piatto?
 
@@ -318,9 +330,17 @@ Fai il lavoro del piede corto in ogni giorno di allenamento finché l’arco è 
 
 Rivolgiti a un professionista sanitario prima di iniziare se l’arco resta piatto con il piede sollevato da terra, o se da adulto un arco si è abbassato all’improvviso. Vale lo stesso per un dolore iniziato dopo un infortunio, che ti sveglia di notte, o che si accompagna a intorpidimento, formicolio, gonfiore o calore. Un dolore acuto o in peggioramento richiede un professionista, non più esercizio.
 
+#### Camminare scalzo fa bene al piede piatto?
+
+Non c’è uno studio che metta a confronto camminare scalzo e camminare con le scarpe nel piede piatto, quindi nessuno studio di questa pagina risponde in modo definitivo. Camminare scalzo fa lavorare i piccoli muscoli che sostengono l’arco, ed è per questo che esercizi per l’arco come il piede corto e la raccolta dell’asciugamano si fanno senza scarpe. Se camminare scalzo ti dà un dolore nuovo, riduci e prova prima su un terreno morbido.
+
+#### Cosa peggiora il piede piatto?
+
+Stare a lungo in piedi o camminare molto, scarpe consumate o senza sostegno, il peso in eccesso, e saltare il lavoro su arco e polpaccio che mantiene forti i muscoli di sostegno. Niente di tutto questo cambia la forma dell’arco, ma può rendere un piede piatto flessibile più stanco o dolorante a fine giornata. Un piede piatto rigido che continua a fare male richiede un professionista sanitario, non solo riposo.
+
 ## Esercizi per la tendinite d’Achille: discese eccentriche del tallone, dosi e cosa dicono gli studi
 
-Language: Italian (Italiano) · https://walkito.site/it/tendinite-achille-esercizi/ · published 2026-10-08 · updated 2026-10-08
+Language: Italian (Italiano) · https://walkito.site/it/tendinite-achille-esercizi/ · published 2026-10-08 · updated 2026-10-17
 
 Gli esercizi per la tendinite d’Achille funzionano meglio quando la discesa del tallone è intesa come lavoro di forza, non come allungamento. La linea guida clinica del 2024 dà all’esercizio il grado più alto, **A**, e una meta-analisi a rete del 2021 su 29 studi non ha trovato un protocollo chiaramente migliore di un altro. Quello che conta è caricare il tendine con costanza per settimane.
 
@@ -457,6 +477,10 @@ Non devi indovinare l’ordine, le dosi o quando aggiungere carico. Walkito cost
 #### Cosa sono le discese eccentriche del tallone per la tendinite d’Achille?
 
 Le discese eccentriche del tallone sono un esercizio di forza: sali su entrambi i piedi, scendi piano su uno, con il tallone che scende sotto il bordo di un gradino. Il punto è la fase di discesa. In uno studio del 1998, 15 atleti che lo facevano due volte al giorno per tre mesi sono tornati tutti al livello di corsa di prima. Ricerche successive mostrano che altri tipi di carico funzionano altrettanto bene.
+
+#### Quali sono i migliori esercizi eccentrici per il dolore al tendine d’Achille?
+
+Le discese eccentriche del tallone sono l’esercizio più studiato per il dolore al tendine d’Achille: sali sulle punte con entrambi i piedi, sposta il peso sulla gamba dolorante e scendi piano in tre secondi, portando il tallone sotto il bordo del gradino. In uno studio del 1998, 15 atleti che lo facevano due volte al giorno per tre mesi sono tornati tutti al livello di corsa di prima. Il carico pesante e lento ha dato risultati altrettanto buoni in uno studio successivo.
 
 #### Il carico pesante e lento è buono quanto le discese eccentriche?
 
@@ -6903,7 +6927,7 @@ Camminare in sé non danneggia il nervo, ma scarpe strette o con la suola sottil
 
 ## Tutore notturno per la fascite plantare: a cosa serve, cosa dicono gli studi e come portarlo
 
-Language: Italian (Italiano) · https://walkito.site/it/tutore-notturno-fascite-plantare/ · published 2026-10-09 · updated 2026-10-09
+Language: Italian (Italiano) · https://walkito.site/it/tutore-notturno-fascite-plantare/ · published 2026-10-09 · updated 2026-10-17
 
 Un tutore notturno per la fascite plantare tiene la caviglia a circa un angolo retto mentre dormi, così la fascia plantare e il polpaccio non si accorciano durante la notte. La linea guida del 2023 sul dolore al tallone gli dà una **A** per un periodo da uno a tre mesi quando i primi passi continuano a fare male. Gli studi sono piccoli e con risultati contrastanti, e molte persone fanno fatica a dormirci.
 
@@ -6960,6 +6984,23 @@ Ci sono tre tipi comuni di tutore notturno per la fascite plantare, e nessuno st
 - **Tipo calza, come la calza Strassburg.** Una calza lunga con una cinghia dalle dita allo stinco che impedisce al piede di puntare verso il basso. È leggera e ci si dorme facilmente. Non abbiamo trovato uno studio randomizzato che la provi per la fascite plantare.
 
 Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Cosa controllare prima di comprare un tutore notturno?
+
+Nessuno studio mostra che una marca o un tipo funzioni meglio di un altro, quindi scegli in base a comodità e vestibilità, non alle promesse sulla confezione. Controlla questi punti prima di pagare:
+
+- **Il tipo adatto a come dormi.** Lo stivaletto va meglio se dormi sulla schiena. Se dormi su un fianco o a pancia in giù, un modello a calza o un piccolo tutore dorsale di solito è più comodo.
+- **Un angolo regolabile.** Conviene partire più o meno ad angolo retto e poterlo cambiare se serve, invece di avere un allungamento fisso.
+- **La taglia giusta.** Usa la tabella taglie del produttore per il tuo numero di scarpe e il polpaccio. Un tutore che scivola o preme sulle dita non resta su tutta la notte.
+- **Imbottitura morbida e fodera lavabile.** Lo porterai ogni notte per un periodo da uno a tre mesi.
+- **Cinghie che puoi slacciare al buio.** Devi toglierlo prima di camminare, per esempio se ti alzi di notte.
+- **La possibilità di reso.** In uno studio, dopo un anno solo 1 persona su 28 tra quelle che avevano ricevuto un tutore lo usava ancora. Compra dove puoi restituirlo se ti rovina il sonno.
+
+Diffida dei tutori venduti con grandi promesse. Gli studi danno risultati contrastanti, e lo stretching del mattino ha lo stesso grado nella linea guida, senza costi.
+
+Source: Attard J, Singh D. A comparison of two night ankle-foot orthoses used in the treatment of inferior heel pain: a preliminary investigation. Foot and Ankle Surgery. 2012;18(2):108–110.
+Source: Roos E, Engström M, Söderberg B. Foot orthoses for the treatment of plantar fasciitis. Foot & Ankle International. 2006;27(8):606–611.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Per quanto tempo portare un tutore notturno per la fascite plantare?
@@ -9386,7 +9427,7 @@ Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e 
 
 ### Cos’è Walkito?
 
-Walkito è un’app per iPhone e Android che costruisce il tuo piano di esercizi una settimana alla volta intorno a obiettivi che puoi misurare. Gli obiettivi sono cinque: mattine senza dolore (dolore del mattino a 1/10 o meno per 14 giorni di fila), tenere l’arco per 60 secondi, 25 sollevamenti sulle punte su una gamba, 30 secondi di equilibrio su una gamba, e una differenza di meno del 10% tra lato sinistro e destro. Inizi con al massimo tre. Se qualcosa fa male, prima viene il dolore.
+Walkito è un’app per iPhone e Android che costruisce il tuo piano di esercizi una settimana alla volta intorno a obiettivi che puoi misurare. Non ha niente a che fare con walkito.com, un servizio di passeggiate per cani. Gli obiettivi sono cinque: mattine senza dolore (dolore del mattino a 1/10 o meno per 14 giorni di fila), tenere l’arco per 60 secondi, 25 sollevamenti sulle punte su una gamba, 30 secondi di equilibrio su una gamba, e una differenza di meno del 10% tra lato sinistro e destro. Inizi con al massimo tre. Se qualcosa fa male, prima viene il dolore.
 
 Scegli 3, 5 o 7 giorni di allenamento a settimana e sessioni da 3, 5 o 10 minuti. La sessione di ogni giorno si adatta a com’è andata la tua mattina. Ogni 14 giorni, un breve test mostra se i tuoi numeri cambiano. Quando raggiungi il primo obiettivo, il test arriva ogni 28 giorni.
 
@@ -9394,17 +9435,19 @@ Il piano non ha una durata fissa. Quando raggiungi un obiettivo, quell’obietti
 
 Walkito è disponibile in inglese, russo, spagnolo, portoghese, francese, italiano e tedesco.
 
+Puoi usare Walkito anche dentro ChatGPT e Claude, dove risponde con brevi video degli esercizi e un piano per iniziare. [Walkito in ChatGPT e Claude](https://walkito.site/ai/) (in inglese).
+
 ### Come facciamo ricerca
 
-Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](https://walkito.site/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](https://walkito.site/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.
+Le guide di Walkito si basano su più di 250 studi pubblicati e linee guida cliniche. Leggiamo l’articolo completo, non solo l’abstract, prima che un numero finisca su una pagina, e ogni grado e ogni cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare. Nessun professionista sanitario abilitato ha ancora rivisto le guide.
 
-Leggiamo l’articolo completo, non solo l’abstract, prima che un suo numero finisca su una pagina. Ogni dose, grado e cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare.
+Le guide di questo sito le scrivono Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](https://walkito.site/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](https://walkito.site/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.
 
 Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica gli dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto lo sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando escono nuovi studi. Una regola popolare che uno studio ha testato senza trovarle conferma è segnata **Non supportato**.
 
 Walkito non ha sponsor, link di affiliazione o contenuti a pagamento. Niente è su una pagina perché qualcuno ha pagato. Ricontrolliamo una pagina quando esce nuova ricerca sul suo argomento. Ogni guida segue cinque regole:
 
-- **Ogni cifra risale a una fonte primaria.** Cioè uno studio randomizzato, una meta-analisi o una linea guida clinica. La fonte è indicata e linkata sulla pagina che la usa. Se non riusciamo a far risalire un numero a una fonte del genere, non va sul sito. Abbiamo tolto frasi per questo motivo.
+- **Ogni cifra risale a una fonte primaria.** Cioè uno studio randomizzato, una meta-analisi o una linea guida clinica. La fonte è indicata con un link sulla pagina che la usa. Se non riusciamo a far risalire un numero a una fonte del genere, non va sul sito. Abbiamo tolto frasi per questo motivo.
 - **Il riferimento è la linea guida di pratica clinica del 2023 sul dolore al tallone.** Viene dal Journal of Orthopaedic & Sports Physical Therapy. Dà a ogni intervento un grado in base alla forza delle sue prove, compresi quelli che sconsiglia.
 - **Le precisazioni viaggiano con le cifre.** Un risultato a tre mesi è sempre riportato insieme a quello che è successo a dodici mesi. Ogni affermazione sulla forma dell’arco dice su quali piedi è stata misurata.
 - **Le dosi sono le dosi di partenza di Walkito.** Mostrano da dove partono gli esercizi di Walkito. Non sono una prescrizione per te.

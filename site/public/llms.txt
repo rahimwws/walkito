@@ -13,7 +13,7 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 
 ## Key facts
 - No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
@@ -508,7 +508,7 @@ own full-text file.
 
 ### German (Deutsch)
 - [Startseite](https://walkito.site/de/)
-- [Übungen und Dehnungen bei Plantarfasziitis und Fersenschmerzen](https://walkito.site/de/plantarfasziitis-uebungen/): Acht Übungen und Dehnungen bei Plantarfasziitis mit Dosierung, was du meiden solltest, wann Dehnen am besten ist und Bewertungen der Leitlinie von 2023.
+- [Übungen und Dehnungen bei Plantarfasziitis und Fersenschmerzen](https://walkito.site/de/plantarfasziitis-uebungen/): Acht Übungen und Dehnungen bei Plantarfasziitis mit Dosierung, was du meiden solltest, wann Dehnen am besten ist und Empfehlungsgrade der Leitlinie von 2023.
 - [Plattfuß-Übungen bei Senkfuß und Schmerzen im Fußgewölbe](https://walkito.site/de/plattfuss-uebungen/): Übungen bei flexiblem Plattfuß und Senkfuß: Dosierung, wie oft, was du spüren solltest, was Studien zeigen und was bei Schmerzen im Fußgewölbe gilt.
 - [Übungen bei Achillessehnenentzündung: exzentrisches Fersenabsenken, Dosis und was die Forschung sagt](https://walkito.site/de/achillessehnenentzuendung-uebungen/): Übungen bei Achillessehnenentzündung mit Dosis: exzentrisches Fersenabsenken, Heavy Slow Resistance, Ansatz oder Mittelteil der Sehne und wann du aufhörst.
 - [Sprunggelenk mobilisieren: wie du die Beweglichkeit im Sprunggelenk testest und verbesserst](https://walkito.site/de/sprunggelenk-mobilisieren-uebungen/): Sprunggelenk mobilisieren: Übungen mit Dosis, der Knie-zur-Wand-Test, ab wann eine Änderung echt ist und was Studien zu Dehnen, Kraft und Umknicken zeigen.
