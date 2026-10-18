@@ -11,7 +11,7 @@ export const ACHILLES_DE: Guide = {
   page: 'achilles',
   mainSource: CITE.achillesGuideline,
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-17',
   title: 'Achillessehnenentzündung: Übungen, exzentrisch und mehr',
   description:
     'Übungen bei Achillessehnenentzündung mit Dosis: exzentrisches Fersenabsenken, Heavy Slow Resistance, Ansatz oder Mittelteil der Sehne und wann du aufhörst.',
@@ -229,7 +229,12 @@ export const ACHILLES_DE: Guide = {
     {
       q: 'Was ist exzentrisches Fersenabsenken bei Achillessehnenentzündung?',
       cites: [CITE.alfredson],
-      a: 'Exzentrisches Fersenabsenken ist eine Kraftübung: auf beiden Füßen hoch, auf einem langsam absenken, die Ferse sinkt unter eine Stufenkante. Im Mittelpunkt steht das Absenken. In einer Studie von 1998 kehrten 15\u00A0Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Spätere Forschung zeigt, dass andere Arten der Belastung genauso gut wirken.',
+      a: 'Exzentrisches Fersenabsenken ist eine Kraftübung: mit beiden Füßen auf die Zehenspitzen, auf einem langsam absenken, die Ferse sinkt unter eine Stufenkante. Im Mittelpunkt steht das Absenken. In einer Studie von 1998 kehrten 15\u00A0Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Spätere Forschung zeigt, dass andere Arten der Belastung genauso gut wirken.',
+    },
+    {
+      q: 'Welche exzentrischen Übungen helfen am besten bei Schmerzen an der Achillessehne?',
+      cites: [CITE.alfredson, CITE.beyer],
+      a: 'Exzentrisches Fersenabsenken ist die am besten untersuchte Übung bei Schmerzen an der Achillessehne: Stell dich mit beiden Füßen auf die Zehenspitzen, verlagere das Gewicht auf das schmerzende Bein und senk dich über drei Sekunden langsam ab, bis die Ferse unter die Stufenkante sinkt. In einer Studie von 1998 kehrten 15\u00A0Sportler, die das drei Monate lang zweimal täglich machten, alle auf ihr früheres Laufniveau zurück. Heavy Slow Resistance, also langsames, schweres Krafttraining, brachte in einer späteren Studie gleich gute Ergebnisse.',
     },
     {
       q: 'Ist Heavy Slow Resistance so gut wie exzentrisches Fersenabsenken?',

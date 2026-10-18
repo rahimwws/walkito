@@ -57,10 +57,10 @@ export const CALF_RAISE_TEST_DE: Guide = {
         'Der Test endet, wenn:',
         {
           list: [
-            'Sich die Ferse nicht mehr vom Brett hebt.',
-            'Der Takt des Metronoms nicht mehr gehalten werden kann.',
-            'Das Knie sich beugt oder der Oberkörper sich neigt.',
-            'Die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren.',
+            'die Ferse sich nicht mehr vom Brett hebt,',
+            'der Takt des Metronoms nicht mehr gehalten werden kann,',
+            'das Knie sich beugt oder der Oberkörper sich neigt,',
+            'die Person sich gegen die Wand drückt, statt sie nur mit den Fingerspitzen zu berühren.',
           ],
         },
         'Vor dem Abbruch gibt es eine mündliche Erinnerung. Zum Aufwärmen gibt es 10\u00A0Minuten zügiges Gehen und danach 10-mal Fersenheben beidbeinig. Zwischen den Beinen liegen zwei Minuten Pause.',
@@ -83,7 +83,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
           dose: 'Maximale Wiederholungen bei 60\u00A0Schlägen pro Minute, ein Satz pro Bein',
           how: 'Stell dich auf einen Fuß nah an eine Wand, die Fingerspitzen berühren sie fürs Gleichgewicht. Komm in einer Sekunde auf die Zehen, senk dich in einer Sekunde ab, im Takt eines Metronoms mit 60\u00A0Schlägen pro Minute. Mach weiter, bis du den Takt nicht mehr halten kannst oder die Ferse kaum noch hochkommt. Zähl die Wiederholungen. 2\u00A0Minuten Pause, dann das andere Bein.',
           feel: 'Ein zunehmendes Brennen in der Wade, je mehr Wiederholungen du machst',
-          stop: 'Du die Ferse nicht mehr heben kannst, den Takt des Metronoms nicht mehr hältst oder dein Knie sich beugt',
+          stop: 'Aufhören, wenn du die Ferse nicht mehr heben kannst, den Takt des Metronoms nicht mehr hältst oder dein Knie sich beugt.',
           media: 'heel_raise_double',
           mediaIsStandIn: true,
           caption: 'Fersenheben-Test: Komm bei jedem Schlag so hoch wie möglich, Fingerspitzen fürs Gleichgewicht',

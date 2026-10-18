@@ -6,7 +6,7 @@ export const NIGHT_SPLINTS_FR: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-17',
   title: 'Attelle de nuit pour fasciite plantaire\u00A0: efficace\u00A0?',
   description:
     'Attelle de nuit pour fasciite plantaire\u00A0: ce que disent la recommandation de 2023 et les essais, botte ou chaussette, durée de port, et pourquoi on arrête.',
@@ -96,6 +96,24 @@ export const NIGHT_SPLINTS_FR: Guide = {
         'Si vous choisissez vous-même, **celle que vous garderez vraiment toute la nuit est probablement la bonne.** Un professionnel de santé ou un kinésithérapeute peut vous aider pour le réglage.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: 'Que vérifier avant d’acheter une attelle de nuit\u00A0?',
+      paragraphs: [
+        'Aucun essai ne montre qu’une marque ou un type fonctionne mieux qu’un autre. Choisissez donc pour le confort et l’ajustement, pas pour les promesses de l’emballage. Vérifiez ces points avant de payer\u00A0:',
+        {
+          list: [
+            '**Un type adapté à votre façon de dormir.** Une attelle botte convient mieux si vous dormez sur le dos. Si vous dormez sur le côté ou sur le ventre, un modèle chaussette ou une petite attelle dorsale est en général plus facile à supporter.',
+            '**Un angle réglable.** Vous devez pouvoir commencer à peu près à angle droit et le modifier si besoin, plutôt que de subir un étirement fixe.',
+            '**La bonne taille.** Suivez le guide des tailles du fabricant pour votre pointure et votre mollet. Une attelle qui glisse ou appuie sur les orteils ne restera pas en place toute la nuit.',
+            '**Un rembourrage doux et une housse lavable.** Vous la porterez toutes les nuits pendant un à trois mois.',
+            '**Des sangles faciles à défaire dans le noir.** Vous devez l’enlever avant de marcher, par exemple pour vous lever la nuit.',
+            '**Un délai de retour.** Dans un essai, seule 1\u00A0personne sur 28 ayant reçu une attelle la portait encore au bout d’un an. Achetez-la chez un vendeur qui accepte les retours, au cas où elle gâcherait votre sommeil.',
+          ],
+        },
+        'Méfiez-vous des attelles vendues avec de grandes promesses. Les résultats des essais sont contradictoires, et les étirements du matin ont la même note dans la recommandation, sans rien coûter.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: 'Combien de temps porter une attelle de nuit pour la fasciite plantaire\u00A0?',

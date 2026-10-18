@@ -23,7 +23,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
   page: 'hubFlatFeet' as any,
   mainSource: CITE.ling,
   published: '2026-10-05',
-  updated: '2026-10-13',
+  updated: '2026-10-17',
   title: 'Flat Feet: Causes, Types and When They Need Attention',
   description:
     'What flat feet are, flexible vs rigid, whether they cause problems, adult-acquired flatfoot, fallen arches, exercises, and when to see a clinician.',
@@ -50,6 +50,17 @@ export const HUB_FLAT_FEET_EN: Guide = {
         '**Having flat feet does not automatically mean something is wrong.** Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.',
       ],
       cites: [CITE.salinasTorres],
+    },
+    {
+      h2: 'How is a flat foot different from a normal foot?',
+      keyFact: 'In pooled data from 619 healthy adults, the average foot rested slightly flattened, so a little arch drop when you stand is normal (Redmond and colleagues, 2008).',
+      paragraphs: [
+        '**There is no sharp line between a flat foot and a normal one.** A normal arch also lowers a little when you stand. In pooled data from 619 healthy adults scored with the Foot Posture Index, a six-part check a clinician does while you stand, the average score was +4 on a scale from -12 (high-arched) to +12 (flat). The authors call that slightly pronated, the normal position at rest, and consider scores below -3 or above +10 clearly outside the normal range.',
+        'Another common measure is navicular drop: how far the bone on the inner side of the arch sinks when you stand up. In studies, healthy adults average about 3.6 to 8.1 millimetres. Researchers have suggested 10, 13 or 15 millimetres as the upper limit of normal, but none of these cut-offs has been confirmed (Nielsen and colleagues, 2009).',
+        'A wet footprint is a rough home check, not a diagnosis. A wide print with no curve on the inner side suggests a low arch, but studies disagree on how well a footprint shows the real arch. A 1992 study of 115 men found footprint measures could not predict arch height (Hawes and colleagues, 1992). A 2009 study of 91 young adults, checked against X-rays, found that the footprint arch index moderately matched X-ray measures of the arch (Murley and colleagues, 2009).',
+        'For you, the label matters less than two questions: does the arch come back when the foot is off the ground, and does it hurt? Both are covered next.',
+      ],
+      cites: [CITE.redmondFpi, CITE.nielsenNavicular, CITE.hawesFootprint, CITE.murleyArch],
     },
     {
       h2: 'How do you tell if flat feet are flexible or rigid?',

@@ -17,7 +17,8 @@ const LABEL: Record<Lang, Record<EvidenceLevel, string>> = {
   ru: { strong: 'Сильные', moderate: 'Умеренные', early: 'Ранние', unsupported: 'Не подтверждено' },
   es: { strong: 'Sólida', moderate: 'Moderada', early: 'Inicial', unsupported: 'Sin respaldo' },
   pt: { strong: 'Forte', moderate: 'Moderada', early: 'Inicial', unsupported: 'Sem respaldo' },
-  fr: { strong: 'Solide', moderate: 'Modérée', early: 'Préliminaire', unsupported: 'Non étayé' },
+  // French: lower case after the colon, masculine to agree with « niveau ».
+  fr: { strong: 'solide', moderate: 'modéré', early: 'préliminaire', unsupported: 'non étayé' },
   it: { strong: 'Solida', moderate: 'Moderata', early: 'Preliminare', unsupported: 'Non supportato' },
   de: { strong: 'Stark', moderate: 'Mittel', early: 'Vorläufig', unsupported: 'Nicht belegt' },
 };
@@ -41,7 +42,8 @@ export function Evidence({ level, lang = 'en', children }: { level: EvidenceLeve
             <span key={k} className={k < TICKS[level] ? 'evidence-tick evidence-tick-on' : 'evidence-tick'} />
           ))}
         </span>
-        {WORD[lang]}: {LABEL[lang][level]}.
+        {WORD[lang]}
+        {lang === 'fr' ? '\u00A0:' : ':'} {LABEL[lang][level]}.
       </strong>
       {children ? <> {children}</> : null}
     </p>

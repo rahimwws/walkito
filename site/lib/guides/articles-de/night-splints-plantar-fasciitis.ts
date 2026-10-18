@@ -6,7 +6,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-17',
   title: 'Nachtschiene bei Plantarfasziitis: Hilft sie?',
   description:
     'Nachtschiene bei Plantarfasziitis: was die Leitlinie von 2023 und Studien zeigen, Schiene oder Strumpf, wie lange du sie trägst und warum viele aufhören.',
@@ -96,6 +96,24 @@ export const NIGHT_SPLINTS_DE: Guide = {
         'Wenn du selbst wählst, **ist wahrscheinlich die richtige, die du tatsächlich die ganze Nacht anbehältst.** Eine Fachperson oder Physiotherapeutin kann dir bei der Anpassung helfen.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: 'Worauf solltest du vor dem Kauf einer Nachtschiene achten?',
+      paragraphs: [
+        'Für keine Marke und keinen Typ zeigen Studien, dass sie besser wirken als andere. Kauf deshalb nach Komfort und Passform, nicht nach den Versprechen auf der Packung. Prüf vor dem Bezahlen diese Punkte:',
+        {
+          list: [
+            '**Ein Typ, der zu deiner Schlafposition passt.** Ein Stiefel eignet sich am besten, wenn du auf dem Rücken schläfst. Schläfst du auf der Seite oder auf dem Bauch, ist ein Strumpfmodell oder eine kleine dorsale Schiene meist angenehmer.',
+            '**Ein verstellbarer Winkel.** Du willst ungefähr im rechten Winkel anfangen und ihn bei Bedarf ändern können, statt an eine feste Dehnung gebunden zu sein.',
+            '**Die richtige Größe.** Nimm die Größentabelle des Herstellers für deine Schuhgröße und deine Wade. Eine Schiene, die verrutscht oder auf die Zehen drückt, bleibt nicht die ganze Nacht dran.',
+            '**Weiche Polsterung und ein waschbarer Bezug.** Du trägst sie ein bis drei Monate lang jede Nacht.',
+            '**Verschlüsse, die du im Dunkeln öffnen kannst.** Du musst sie abnehmen, bevor du gehst, zum Beispiel wenn du nachts aufstehst.',
+            '**Ein Rückgaberecht.** In einer Studie trug nach einem Jahr nur noch 1 von 28\u00A0Personen die Nachtschiene, die sie bekommen hatte. Kauf dort, wo du sie zurückgeben kannst, falls sie dir den Schlaf raubt.',
+          ],
+        },
+        'Sei vorsichtig bei Schienen, die mit großen Versprechen verkauft werden. Die Studien sind uneinheitlich, und Dehnungen am Morgen haben in der Leitlinie denselben Empfehlungsgrad und kosten nichts.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: 'Wie lange solltest du eine Nachtschiene bei Plantarfasziitis tragen?',

@@ -11,7 +11,7 @@ export const TOP_OF_FOOT_ES: Guide = {
   lang: 'es',
   page: 'topOfFoot',
   published: '2026-10-07',
-  updated: '2026-10-07',
+  updated: '2026-10-17',
   title: 'Dolor en el empeine del pie: causas y cuándo preocuparse',
   description:
     'Dolor en el empeine del pie: tendinitis de los extensores por cordones apretados, fractura por estrés, espolones óseos, gota y nervios. Cuándo consultar.',
@@ -29,6 +29,22 @@ export const TOP_OF_FOOT_ES: Guide = {
     'Ningún ensayo aleatorizado ha probado el ejercicio específicamente para el dolor en el empeine. El ejercicio aborda factores que contribuyen, como la rigidez de pantorrilla y la debilidad del tibial anterior, no el dolor del empeine directamente.',
   ],
   sections: [
+    {
+      h2: '¿Dónde está el empeine?',
+      paragraphs: [
+        'El empeine es la parte de arriba del pie, entre el tobillo y el comienzo de los dedos. El [Diccionario de la lengua española](https://dle.rae.es/empeine) lo define como la «parte superior del pie, que está entre la caña de la pierna y el principio de los dedos». En medicina se llama dorso del pie. El mismo diccionario usa «empeine» también para la parte baja del vientre, entre las ingles, pero esta página trata solo del pie.',
+        'Debajo de la piel del empeine hay varias estructuras:',
+        {
+          list: [
+            '**Huesos.** Los huesos del medio del pie (el navicular, los tres cuneiformes y el cuboides) y la parte de arriba de los cinco metatarsianos, los huesos largos que llegan hasta los dedos.',
+            '**Tendones.** Los tendones extensores bajan por delante del tobillo y cruzan el empeine: el del tibial anterior, que levanta el pie, y los de los músculos que levantan el dedo gordo y los demás dedos.',
+            '**Arteria y nervio.** La arteria dorsal del pie y el nervio peroneo profundo recorren el empeine. Ese nervio da la sensibilidad de la piel entre el dedo gordo y el segundo dedo.',
+          ],
+        },
+        'Por eso un cordón apretado o una lengüeta rígida se notan tanto en esta zona. Las causas más comunes del dolor en el empeine están en la siguiente sección.',
+      ],
+      cites: [CITE.statpearlsFootBones, CITE.statpearlsFootMuscles, CITE.statpearlsFootArteries, CITE.statpearlsDeepPeroneal],
+    },
     {
       h2: '¿Qué causa el dolor en el empeine del pie?',
       keyFact: 'Una fractura por estrés de un metatarsiano puede no aparecer en una radiografía simple hasta dos o tres semanas después de empezar los síntomas, por lo que una resonancia magnética puede confirmarla antes (Patel y colegas, 2011).',

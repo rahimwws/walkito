@@ -1313,6 +1313,71 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1001/jama.290.11.1474',
     pmid: '13129987',
   },
+  {
+    text: 'Vullo VJ, Richardson JK, Hurvitz EA. Hip, knee, and foot pain during pregnancy and the postpartum period. Journal of Family Practice. 1996;43(1):63–68.',
+    pmid: '8691182',
+  },
+  {
+    text: 'Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.',
+    doi: '10.1053/j.jfas.2010.06.018',
+    pmid: '20797587',
+  },
+  {
+    text: 'Segal NA, Neuman LN, Hochstedler MC, Hillstrom HJ. Static and dynamic effects of customized insoles on attenuating arch collapse with pregnancy: a randomized controlled trial. The Foot. 2018;37:16–22.',
+    doi: '10.1016/j.foot.2018.07.007',
+    pmid: '30321854',
+  },
+  {
+    text: 'ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.',
+    doi: '10.1097/AOG.0000000000003772',
+    pmid: '32217980',
+  },
+  {
+    text: 'Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.',
+    doi: '10.1002/ajim.10318',
+    pmid: '14635243',
+  },
+  {
+    text: 'Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.',
+    doi: '10.1007/s00256-023-04320-9',
+    pmid: '36917270',
+  },
+  {
+    text: 'Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.',
+    doi: '10.1186/1757-1146-1-6',
+    pmid: '18822155',
+  },
+  {
+    text: 'Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.',
+    doi: '10.1177/107110079201300104',
+    pmid: '1577337',
+  },
+  {
+    text: 'Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.',
+    doi: '10.1186/1757-1146-2-22',
+    pmid: '19575811',
+  },
+  {
+    text: 'Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.',
+    doi: '10.1186/1757-1146-2-12',
+    pmid: '19422696',
+  },
+  {
+    text: 'MacGregor R, Byerly DW. Anatomy, Bony Pelvis and Lower Limb: Foot Bones. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '32491379',
+  },
+  {
+    text: 'Card RK, Bordoni B. Anatomy, Bony Pelvis and Lower Limb, Foot Muscles. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '30969527',
+  },
+  {
+    text: 'Palmisano LL, Launico MV. Anatomy, Bony Pelvis and Lower Limb: Calf Deep Peroneal Nerve (Deep Fibular Nerve). In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '30252289',
+  },
+  {
+    text: 'Guillot C, Smith T. Anatomy, Bony Pelvis and Lower Limb: Foot Arteries. In: StatPearls. Treasure Island (FL): StatPearls Publishing.',
+    pmid: '32809747',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1578,6 +1643,20 @@ export const CITE = {
   whittakerSoothe: 258,
   rasenbergReview2018: 259,
   winemillerMagnets: 260,
+  vulloPregnancy: 261,
+  ponnapulaPregnancy: 262,
+  segalInsolesPregnancy: 263,
+  acogExercise: 264,
+  dunningFalls: 265,
+  filippiniInjections: 266,
+  redmondFpi: 267,
+  hawesFootprint: 268,
+  murleyArch: 269,
+  nielsenNavicular: 270,
+  statpearlsFootBones: 271,
+  statpearlsFootMuscles: 272,
+  statpearlsDeepPeroneal: 273,
+  statpearlsFootArteries: 274,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

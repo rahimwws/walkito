@@ -25,19 +25,20 @@ export const ABOUT_PT: About = {
     {
       h2: 'O que é o Walkito?',
       paragraphs: [
-        `O Walkito é um app para iPhone e Android que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir.`,
-        `São cinco metas: manhãs sem dor (dor da manhã em ${PAIN_GOAL_MAX}/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos), sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, ${PROGRAM.goals.calfRaises} elevações de panturrilha em uma perna só, ${PROGRAM.goals.balanceSeconds}\u00A0segundos de equilíbrio em uma perna, e uma diferença menor que ${PROGRAM.goals.gapPercent}% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.`,
+        `O Walkito é um app para iPhone e Android que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir. Ele não tem relação com o walkito.com, um serviço de passeio com cães.`,
+        `São cinco metas: manhãs sem dor (dor da manhã em ${PAIN_GOAL_MAX}/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos), sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, ${PROGRAM.goals.calfRaises} elevações de calcanhar em uma perna só, ${PROGRAM.goals.balanceSeconds}\u00A0segundos de equilíbrio em uma perna, e uma diferença menor que ${PROGRAM.goals.gapPercent}% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.`,
         `Você escolhe ${either(PROGRAM.daysPerWeek)} dias de treino por semana e sessões de ${either(PROGRAM.sessionMinutes)}\u00A0minutos. A sessão de cada dia se adapta a como foi a sua manhã. A cada ${PROGRAM.testEveryDays}\u00A0dias, um teste curto mostra se os seus números estão mudando. Depois que você alcança a primeira meta, o teste passa a ser a cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0dias.`,
         'O plano não tem duração fixa. Quando você alcança uma meta, ela passa para manutenção com uma dose menor, e a próxima meta entra no lugar. Isso continua enquanto você usar o Walkito. [Como o plano funciona](/program/) (em inglês).',
         'O Walkito está em inglês, russo, espanhol, português, francês, italiano e alemão.',
+        'O Walkito também pode ser usado dentro do ChatGPT e do Claude, onde responde com vídeos curtos de exercícios e um plano inicial. [Walkito no ChatGPT e no Claude](/ai/) (em inglês).',
       ],
     },
     {
       h2: 'Como pesquisamos',
       id: 'how-we-research',
       paragraphs: [
+        'Os guias do Walkito são feitos a partir de mais de 250 estudos publicados e diretrizes clínicas. Lemos o artigo completo, não só o resumo, antes de um número entrar numa página, e cada grau e número tem link para o estudo por trás dele, para você abrir e conferir. Nenhum profissional de saúde habilitado revisou os guias ainda.',
         'Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito, escrevem os guias deste site: [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [exercícios para pé chato](/pt/exercicios-pe-chato/), [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e a [página de evidências](/science/) (em inglês). Nós os montamos a partir de diretrizes de prática clínica, ensaios randomizados e revisões sistemáticas. Não usamos posts de blog, fóruns ou resumos de outros sites como fonte. Quando um resumo cita um estudo, vamos até o estudo.',
-        'Lemos o artigo completo, não só o resumo, antes de um número dele entrar numa página. Cada dose, grau e número tem link para o estudo por trás dele, para você abrir e conferir.',
         'Exercícios e afirmações recebem um de três selos de evidência. **Forte** quer dizer que uma diretriz clínica dá um grau alto, ou que vários bons ensaios concordam. **Moderada** quer dizer que pelo menos um ensaio bem desenhado apoia. **Inicial** quer dizer que a pesquisa é pequena ou está começando: vale tentar, e o selo pode mudar conforme sair mais pesquisa. Uma regra popular que um ensaio testou e não confirmou é marcada como **Sem respaldo**.',
         'O Walkito não tem patrocinadores, links de afiliado nem conteúdo pago. Nada está numa página porque alguém pagou por isso. Revisamos uma página quando sai pesquisa nova sobre o tema dela. Todo guia segue cinco regras:',
       ],

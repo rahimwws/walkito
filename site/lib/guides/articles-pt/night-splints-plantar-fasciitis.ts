@@ -6,7 +6,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
   page: 'nightSplints',
   mainSource: CITE.guideline,
   published: '2026-10-09',
-  updated: '2026-10-09',
+  updated: '2026-10-17',
   title: 'Tala noturna para fascite plantar: funciona?',
   description:
     'Tala noturna para fascite plantar: o que dizem a diretriz de 2023 e os ensaios, bota ou meia, por quanto tempo usar e por que tanta gente desiste.',
@@ -96,6 +96,24 @@ export const NIGHT_SPLINTS_PT: Guide = {
         'Se você vai escolher por conta própria, **a certa provavelmente é aquela que você vai conseguir manter a noite inteira.** Um profissional de saúde ou um fisioterapeuta pode ajudar com o ajuste.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
+    },
+    {
+      h2: 'O que verificar antes de comprar uma tala noturna?',
+      paragraphs: [
+        'Nenhum estudo mostra que uma marca ou um tipo funcione melhor que outro, então escolha pelo conforto e pelo ajuste, não pelas promessas da embalagem. Confira estes pontos antes de pagar:',
+        {
+          list: [
+            '**O tipo certo para o jeito como você dorme.** A bota é melhor para quem dorme de barriga para cima. Se você dorme de lado ou de bruços, um modelo de meia ou uma tala dorsal pequena costuma ser mais fácil.',
+            '**Ângulo ajustável.** O ideal é começar com o pé mais ou menos em ângulo reto e poder mudar se precisar, em vez de depender de um alongamento fixo.',
+            '**O tamanho certo.** Use a tabela de medidas do fabricante para o seu número de calçado e a sua panturrilha. Uma tala que escorrega ou aperta os dedos não fica no lugar a noite toda.',
+            '**Acolchoamento macio e forro lavável.** Você vai usá-la todas as noites por um a três meses.',
+            '**Tiras que você consegue soltar no escuro.** Você precisa tirá-la antes de andar, por exemplo para levantar à noite.',
+            '**Prazo de devolução.** Em um estudo, só 1 de 28\u00A0pessoas que receberam uma tala noturna ainda a usava depois de um ano. Compre onde dá para devolver se ela atrapalhar o seu sono.',
+          ],
+        },
+        'Desconfie de talas vendidas com grandes promessas. Os estudos são divergentes, e o alongamento da manhã tem o mesmo grau na diretriz, sem custo.',
+      ],
+      cites: [CITE.attardSplint, CITE.roosOrthoses, CITE.guideline],
     },
     {
       h2: 'Por quanto tempo usar a tala noturna para fascite plantar?',

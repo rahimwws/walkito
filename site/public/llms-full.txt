@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-16
+Last updated: 2026-10-17
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -305,6 +305,20 @@ Sources:
 - Whittaker GA, Munteanu SE, Menz HB, et al. Effectiveness of Foot Orthoses Versus Corticosteroid Injection for Plantar Heel Pain: The SOOTHE Randomized Clinical Trial. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(7):491–500.
 - Rasenberg N, Riel H, Rathleff MS, et al. Efficacy of foot orthoses for the treatment of plantar heel pain: a systematic review and meta-analysis. British Journal of Sports Medicine. 2018;52(16):1040–1046.
 - Winemiller MH, Billow RG, Laskowski ER, et al. Effect of magnetic vs sham-magnetic insoles on plantar heel pain: a randomized controlled trial. JAMA. 2003;290(11):1474–8.
+- Vullo VJ, Richardson JK, Hurvitz EA. Hip, knee, and foot pain during pregnancy and the postpartum period. Journal of Family Practice. 1996;43(1):63–68.
+- Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.
+- Segal NA, Neuman LN, Hochstedler MC, Hillstrom HJ. Static and dynamic effects of customized insoles on attenuating arch collapse with pregnancy: a randomized controlled trial. The Foot. 2018;37:16–22.
+- ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
+- Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.
+- Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.
+- Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+- Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+- Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
+- Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+- MacGregor R, Byerly DW. Anatomy, Bony Pelvis and Lower Limb: Foot Bones. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Card RK, Bordoni B. Anatomy, Bony Pelvis and Lower Limb, Foot Muscles. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Palmisano LL, Launico MV. Anatomy, Bony Pelvis and Lower Limb: Calf Deep Peroneal Nerve (Deep Fibular Nerve). In: StatPearls. Treasure Island (FL): StatPearls Publishing.
+- Guillot C, Smith T. Anatomy, Bony Pelvis and Lower Limb: Foot Arteries. In: StatPearls. Treasure Island (FL): StatPearls Publishing.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -3787,7 +3801,7 @@ Walkito adjusts each session from a morning pain check-in before you start. A sc
 
 ## Plantar fascia stretch: how to do it, sets and reps
 
-Language: English · https://walkito.site/exercises/plantar-fascia-stretch/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/exercises/plantar-fascia-stretch/ · published 2026-10-05 · updated 2026-10-17
 
 The plantar fascia stretch is the single stretch tested head-to-head against Achilles tendon stretching for [plantar fasciitis](https://walkito.site/plantar-fasciitis/). In a trial of 82 people with chronic heel pain, those who did the plantar fascia stretch had better pain and function scores at eight weeks than those who stretched the Achilles tendon. This page covers the technique, the dose and when the stretch matters most.
 
@@ -3832,6 +3846,20 @@ The 2023 heel pain guideline reviewed the stretching evidence and gave plantar f
 Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 Source: DiGiovanni BF, Nawoczenski DA, Malay DP, et al. Plantar fascia-specific stretching exercise improves outcomes in patients with chronic plantar fasciitis: a prospective clinical trial with two-year follow-up. Journal of Bone and Joint Surgery (American). 2006;88(8):1775–1781.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Which stretches help plantar fasciitis?
+
+Three stretches cover the stretching the 2023 heel pain guideline grades **A**: one for the plantar fascia and two for the calf. Walkito starts each at these doses:
+
+- Plantar fascia stretch (this page): sit, cross the foot over the other knee and pull the toes back until you feel it in the arch. 10 holds of 10 seconds, each foot.
+- [Calf stretch](https://walkito.site/exercises/calf-stretch/): hands on a wall, back leg straight, back heel flat on the floor. 3 holds of 30 seconds, each leg.
+- [Soleus stretch](https://walkito.site/exercises/soleus-stretch/): the same position with the back knee bent, so the stretch moves lower, toward the heel. 3 holds of 30 seconds, each leg.
+
+Do them together rather than picking one. Limited ankle bend, usually from a tight calf, is a risk factor for plantar fasciitis on its own (Riddle and colleagues, 2003), and the plantar fascia stretch works on the tissue under the arch directly. Stretching is one part of the routine: foot and ankle strength work gets a **B** from the same guideline. The full routine is in [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 
 ### How is the plantar fascia stretch different from a calf stretch?
 
@@ -4812,7 +4840,7 @@ Daily practice is fine because the load is low. Walkito schedules it on most ses
 
 ## Short foot exercise: how to do it, sets, and progression
 
-Language: English · https://walkito.site/exercises/short-foot-exercise/ · published 2026-10-05 · updated 2026-10-05
+Language: English · https://walkito.site/exercises/short-foot-exercise/ · published 2026-10-05 · updated 2026-10-17
 
 The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and [plantar fasciitis](https://walkito.site/plantar-fasciitis/) programs that target the intrinsic foot muscles.
 
@@ -4907,6 +4935,10 @@ Source: Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balanc
 ### Doing it as a plan
 
 [Walkito](https://walkito.site/program/) builds a plan that includes the short foot exercise in a three-step progression: seated, standing, then single-leg. Each step opens once two sessions at the current level felt easy. You pick sessions of 3, 5 or 10 minutes, and a test every 14 days tracks whether your arch hold time is improving.
+
+#### Is the short foot exercise good for flat feet?
+
+For flexible flat feet it is one of the most studied arch exercises, mostly as part of a program. In a 2023 trial of 52 people with flexible flat feet, six weeks of short foot work plus ankle, hip and stretching exercises changed arch shape more than a control group. A 2024 meta-analysis found that short foot training on its own improved navicular drop only in programs longer than six weeks. These studies measured arch shape, not pain. A rigid flat foot that stays flat even off the ground needs a clinician. The full routine is in [flat feet exercises](https://walkito.site/flat-feet-exercises/).
 
 #### How long does it take for short foot exercises to work?
 
@@ -5853,7 +5885,7 @@ Sudden plantar fasciitis usually follows a sudden change in load, not a sudden i
 
 ## Flat feet: what they are, what causes them, and when they need attention
 
-Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-13
+Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-17
 
 Flat feet mean the arch of the foot sits lower than usual or touches the ground when you stand. Most flat feet are flexible, meaning the arch appears when the foot is off the ground, and most cause no pain at all. A smaller number are rigid or develop in adulthood from a weakening tendon, and those are the cases worth paying closer attention to.
 
@@ -5874,6 +5906,21 @@ Flat feet are common. A 2023 systematic review pooled 12 population-based studie
 **Having flat feet does not automatically mean something is wrong.** Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.
 
 Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
+
+### How is a flat foot different from a normal foot?
+
+**There is no sharp line between a flat foot and a normal one.** A normal arch also lowers a little when you stand. In pooled data from 619 healthy adults scored with the Foot Posture Index, a six-part check a clinician does while you stand, the average score was +4 on a scale from -12 (high-arched) to +12 (flat). The authors call that slightly pronated, the normal position at rest, and consider scores below -3 or above +10 clearly outside the normal range.
+
+Another common measure is navicular drop: how far the bone on the inner side of the arch sinks when you stand up. In studies, healthy adults average about 3.6 to 8.1 millimetres. Researchers have suggested 10, 13 or 15 millimetres as the upper limit of normal, but none of these cut-offs has been confirmed (Nielsen and colleagues, 2009).
+
+A wet footprint is a rough home check, not a diagnosis. A wide print with no curve on the inner side suggests a low arch, but studies disagree on how well a footprint shows the real arch. A 1992 study of 115 men found footprint measures could not predict arch height (Hawes and colleagues, 1992). A 2009 study of 91 young adults, checked against X-rays, found that the footprint arch index moderately matched X-ray measures of the arch (Murley and colleagues, 2009).
+
+For you, the label matters less than two questions: does the arch come back when the foot is off the ground, and does it hurt? Both are covered next.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
 
 ### How do you tell if flat feet are flexible or rigid?
 
@@ -6692,6 +6739,153 @@ Ice is the most common first step: an ice pack or a frozen water bottle applied 
 #### What should you not do if your heel hurts at night?
 
 Do not assume it is plantar fasciitis and push through activity if the pain does not fit the first-step-then-better pattern. Do not ignore pain that wakes you, worsens with continued walking, or comes with burning, tingling, or swelling. Self-treating rest pain with stretches or night splints can delay diagnosis of a stress fracture, nerve entrapment, or inflammatory arthritis.
+
+## Plantar fasciitis in pregnancy: why your heels hurt and what is safe to do
+
+Language: English · https://walkito.site/plantar-fasciitis-pregnancy/ · published 2026-10-17 · updated 2026-10-17
+
+Heel and foot pain are common in pregnancy, and stretches, among the top-graded options for [plantar fasciitis](https://walkito.site/plantar-fasciitis/), can be done sitting down or holding a wall. In one study, 31% of women who had given birth reported foot pain, against 22% of women who had never been pregnant (Vullo and colleagues, 1996). The 2023 heel pain guideline gives plantar fascia and calf stretches its top grade, **A**, but it does not cover pregnancy, so check with your doctor or midwife before you start.
+
+- Foot pain was more common in women who had given birth than in women who had never been pregnant, 31% against 22%, and most leg and foot pain started in the second or third trimester (Vullo and colleagues, 1996).
+- In 49 women measured in the first trimester and about four and a half months after birth, arch height fell and foot length grew. The first pregnancy drove most of the change (Segal and colleagues, 2013).
+- The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**, but it does not mention pregnancy (Koc and colleagues, 2023).
+- After 20 weeks, avoid long periods lying flat on your back during exercise, and stop if you notice warning signs such as bleeding, dizziness or calf pain or swelling (ACOG, 2020).
+- The US FDA advises avoiding NSAIDs such as ibuprofen from 20 weeks of pregnancy unless your doctor advises them (FDA, 2020).
+
+### Is heel pain common in pregnancy?
+
+**Foot pain is common in pregnancy, but nobody has counted plantar fasciitis on its own.** In a 1996 questionnaire study, 31% of 107 women who had recently given birth reported foot pain, against 22% of 91 women who had never been pregnant. Leg and foot pain overall was reported by 56% against 37%.
+
+Most of that pain started later in pregnancy: 82% began in the second or third trimester. The authors suggested this timing points more to the mechanics of a heavier, changing body than to hormones alone.
+
+In a 2010 study of 100 women interviewed after giving birth, more than half reported swelling of the feet, ankles and legs, an unsteady walk and wider feet (Ponnapula and Boberg, 2010).
+
+If your heel hurts most with your first steps in the morning or after sitting, that is the typical plantar fasciitis pattern. Pain that is worse at night or at rest is a different pattern, covered in [heel pain at night](https://walkito.site/heel-pain-at-night/).
+
+Source: Vullo VJ, Richardson JK, Hurvitz EA. Hip, knee, and foot pain during pregnancy and the postpartum period. Journal of Family Practice. 1996;43(1):63–68.
+Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.
+
+### Why can pregnancy make your heels hurt?
+
+**The clearest finding is that the arch gets lower and the foot gets longer.** A 2013 study measured 49 women in the first trimester and again about four and a half months after birth. Arch height and arch stiffness went down, and foot length and arch drop went up. 35 of the 49 had an arch drop, and 30 had longer feet, most by 2 to 10 millimetres.
+
+The cause is less clear than many websites say. In that study, joint looseness and weight gain during pregnancy were not linked to how much the feet changed. Weight and long hours on your feet are known risk factors for plantar fasciitis in general (Koc and colleagues, 2023), but no study has tested them in pregnancy.
+
+Swelling, a heavier body and a different way of walking all change how load spreads across the foot. The plantar fascia is the band under the foot that holds up the arch, so a lower arch and more load can strain it. More on how a lower arch can last after birth: [do flat feet get worse with age](https://walkito.site/do-flat-feet-get-worse-with-age/).
+
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.
+
+### Which exercises for heel pain are safe in pregnancy?
+
+The exercises below come from the plantar fasciitis guideline, which was written for adults in general, not for pregnancy. All of them are done sitting or standing with a hand on a wall, and none needs you to lie on your back or jump. **Ask your doctor or midwife first**, especially if you have been told to limit activity.
+
+Stretching is among the 2023 guideline’s top-graded options for heel pain: plantar fascia and calf stretches get an **A**. Strength work for the calf gets a **B**. The heel raise trial on this site tested a standing version (Rathleff and colleagues, 2015); seated heel raises are a lighter starting point.
+
+If you are unsteady, keep a hand on a wall or the back of a chair. In a survey of 2,847 working women, 26.6% fell at least once during pregnancy (Dunning and colleagues, 2003). That is why this page leaves out single-leg balance and hopping until your doctor or midwife says they are fine.
+
+- **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. Do the first one on the edge of the bed, before your foot touches the floor. If your bump makes crossing the leg hard, loop a towel around the ball of the foot and pull gently instead.
+- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward. Take a shorter step back than usual if your balance feels different.
+- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same position at the wall, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Seated heel raises** (3 sets of 10, both feet): Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. With the knee bent, this mainly works the soleus, the deeper calf muscle. It is a lighter starting point than the standing heel raises tested in the trial.
+- **Towel scrunch** (3 sets of 8, hold 5 seconds, each foot): Sit with a towel flat on the floor under your foot. Pull the towel in with your toes, and keep the heel down.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.
+
+### What should you avoid with heel pain in pregnancy?
+
+**After 20 weeks, avoid long periods lying flat on your back while you exercise.** The American College of Obstetricians and Gynecologists (ACOG) explains that the weight of the womb can press on a large vein and lower blood pressure. ACOG also advises against activities with a high risk of falling.
+
+**Ask before you take a painkiller.** The US Food and Drug Administration [advises avoiding NSAIDs](https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic) such as ibuprofen and naproxen from 20 weeks of pregnancy, because in rare cases they can cause serious kidney problems in the baby and lower the amniotic fluid. The warning does not cover low-dose aspirin your doctor has prescribed.
+
+**Ask before shockwave therapy or an injection.** The International Society for Medical Shockwave Treatment rules it out only when a [fetus is in the treated area](https://shockwavetherapy.org/indications/), not because of pregnancy itself. We found no studies of shockwave therapy for heel pain in pregnancy. For steroid injections there is no pregnancy guidance specific to heel pain. One review says a single local injection is not ruled out by pregnancy itself, so it is a decision for your doctor (Filippini and colleagues, 2023).
+
+Stop exercising and call your doctor or midwife if you notice any of the warning signs ACOG lists, including vaginal bleeding, regular painful contractions, fluid leaking, dizziness, chest pain, or calf pain or swelling.
+
+Source: ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
+Source: Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.
+
+### Do shoes or insoles help heel pain in pregnancy?
+
+No trial has tested insoles or shoes for heel pain in pregnancy. The closest study gave 72 pregnant women custom arch insoles or their usual shoes. It measured arch shape, not pain, and found no difference between the groups (Segal and colleagues, 2018).
+
+For heel pain in general, the 2023 guideline grades insoles on their own **B against**: the evidence says not to rely on them alone. Combined with stretching and strength work, they get a **C** (Koc and colleagues, 2023). [Insoles or exercises](https://walkito.site/insoles-vs-exercises/) compares the two.
+
+One practical point is backed by the foot measurements: many women’s feet got longer, most by 2 to 10 millimetres (Segal and colleagues, 2013). If your shoes now feel tight or press on the heel, a pair that fits your feet as they are now is worth checking first.
+
+Source: Segal NA, Neuman LN, Hochstedler MC, Hillstrom HJ. Static and dynamic effects of customized insoles on attenuating arch collapse with pregnancy: a randomized controlled trial. The Foot. 2018;37:16–22.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+
+### Does heel pain go away after pregnancy?
+
+We found no study that follows heel pain or plantar fasciitis after birth, so there is no figure for how many women recover and how fast.
+
+The foot shape changes did last: about four and a half months after birth, arches were still lower and feet still longer than in the first trimester, mostly after a first pregnancy (Segal and colleagues, 2013). For plantar fasciitis in general, about 90% of people get better with non-surgical care, though it can take three to six months; see [how long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/).
+
+After birth, ACOG advises building activity back up gradually once your doctor or midwife says it is safe (ACOG, 2020). The same stretches and strength work on this page apply.
+
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+Source: ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### When is foot or leg pain in pregnancy an emergency?
+
+Two conditions can look like ordinary sore, swollen feet and need urgent care:
+
+- **A blood clot in the leg (DVT).** Throbbing pain and swelling in one leg, usually the calf or thigh, sometimes with red, blue or darker skin around the painful area, or swollen veins. The risk is higher in pregnancy and for six weeks after birth. Call an ambulance if you are also short of breath or have chest pain. [NHS: DVT](https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/).
+- **Pre-eclampsia.** Sudden swelling of the face, hands or feet, a severe headache, blurred vision or flashing lights, or pain just below the ribs. It is most likely after 20 weeks, and symptoms can also continue or start in the first weeks after birth. [NHS: pre-eclampsia](https://www.nhs.uk/conditions/pre-eclampsia/).
+
+Gradual swelling of both feet at the end of the day is common in pregnancy. Swelling that is sudden, in one leg only, or comes with the symptoms above is not.
+
+### See a doctor or midwife the same day if
+
+- one calf or leg is painful and swollen, or the skin there looks red or darker (possible blood clot)
+- your face, hands or feet swell suddenly, or you have a severe headache, blurred vision or pain below the ribs (possible pre-eclampsia)
+- you are short of breath or have chest pain: call an ambulance
+- you have vaginal bleeding, regular painful contractions or fluid leaking
+- heel pain started after a fall or a twist, or you cannot put weight on the foot
+- the heel hurts at night or at rest, or you feel burning, tingling or numbness
+
+### Doing it as a plan
+
+Walkito is a heel and foot exercise app. It is not designed around pregnancy and does not know your trimester, so check with your doctor or midwife before you start, and skip anything that needs hopping, jumping or lying on your back.
+
+#### Can pregnancy cause plantar fasciitis?
+
+It may make it more likely, but no study has proven it. Foot pain was more common in women who had given birth (31%) than in women who had never been pregnant (22%), and pregnancy lowers the arch and lengthens the foot. No study has counted plantar fasciitis on its own in pregnancy.
+
+#### Is heel pain a sign of early pregnancy?
+
+No study links heel pain to early pregnancy. In the 1996 study, 82% of leg and foot pain in pregnancy started in the second or third trimester, not the first. Heel pain in the first weeks is more likely to have the same causes as at any other time.
+
+#### Is it safe to stretch for plantar fasciitis while pregnant?
+
+Gentle plantar fascia and calf stretches, done seated or with a hand on a wall, fit ACOG’s advice for exercise in pregnancy, and the 2023 heel pain guideline grades them A. That guideline does not cover pregnancy, so ask your doctor or midwife first, and avoid long periods lying flat on your back after 20 weeks.
+
+#### Can I take ibuprofen for heel pain while pregnant?
+
+Ask your doctor or midwife first. The US FDA advises avoiding NSAIDs, which include ibuprofen and naproxen, from 20 weeks of pregnancy unless a doctor advises them, because in rare cases they can cause serious kidney problems in the baby and lower the amniotic fluid.
+
+#### Do feet stay bigger after pregnancy?
+
+For many women, yes, at least for months. In 49 women, foot length and arch drop were still higher about four and a half months after birth than in the first trimester. The changes were mostly small, and the first pregnancy drove most of them.
+
+#### Do night splints help plantar fasciitis in pregnancy?
+
+Night splints have not been studied in pregnancy. For plantar fasciitis in general, the 2023 guideline grades them A, worn for one to three months, for people who consistently have pain with their first steps in the morning. Ask your doctor or midwife before you buy one. More in [night splints for plantar fasciitis](https://walkito.site/night-splints-plantar-fasciitis/).
+
+#### Is walking bad for plantar fasciitis in pregnancy?
+
+Walking is one of the activities ACOG suggests in pregnancy, as part of at least 150 minutes of moderate activity a week. No study has looked at walking with plantar fasciitis in pregnancy, so ask your doctor or midwife how much suits you.
+
+#### Can I get shockwave therapy or a steroid injection while pregnant?
+
+Ask your doctor. The International Society for Medical Shockwave Treatment rules shockwave out only when a fetus is in the treated area, not because of pregnancy itself, but we found no studies of it for heel pain in pregnancy. For steroid injections there is no heel pain guidance specific to pregnancy, and one review says a single local injection is not ruled out by pregnancy itself.
 
 ## Heel fat pad syndrome: what it is, how it differs from plantar fasciitis, and what the evidence says
 

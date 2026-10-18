@@ -94,7 +94,7 @@ export const CALF_RAISES_PT: Guide = {
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.',
           often: 'Dias de força, enquanto for o seu nível',
-          feel: 'Trabalho leve nas panturrilhas, quase sem carga no calcanhar',
+          feel: 'Trabalho na parte baixa da panturrilha (o sóleo), quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
           caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',

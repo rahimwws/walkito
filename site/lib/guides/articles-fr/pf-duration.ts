@@ -36,6 +36,7 @@ export const PF_DURATION_FR: Guide = {
   sections: [
     {
       h2: 'Combien de temps dure en général une fasciite plantaire\u00A0?',
+      tool: 'pf-timeline',
       keyFact: 'Dans une cohorte de 174\u00A0personnes, le risque d’avoir encore des symptômes de fasciite plantaire était de 80,5\u00A0% à un an, et descendait à 45,6\u00A0% à dix ans (Hansen et coll., 2018).',
       paragraphs: [
         '**Il n’y a pas de chiffre unique.** La récupération dépend\u00A0:',
@@ -118,7 +119,7 @@ export const PF_DURATION_FR: Guide = {
             '**Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà\u00A0: la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration ralentit. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.',
           ],
         },
-        '**Le chiffre utile n’est pas «\u00A0dans combien de semaines j’en aurai fini\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?».** Cette tendance est le vrai repère.',
+        '**Le chiffre utile n’est pas «\u00A0dans combien de semaines j’en aurai fini\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?\u00A0».** Cette tendance est le vrai repère.',
       ],
       cites: [CITE.rathleff, CITE.latt, CITE.hansen],
     },

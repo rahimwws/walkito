@@ -60,6 +60,7 @@ import { HUB_FLAT_FEET_EN } from './articles/hub-flat-feet';
 import { PF_VS_HEEL_SPUR_EN } from './articles/pf-vs-heel-spur';
 import { HEEL_SPUR_EXERCISES_EN } from './articles/heel-spur-exercises';
 import { HEEL_PAIN_AFTER_WALKING_EN } from './articles/heel-pain-after-walking';
+import { PF_PREGNANCY_EN } from './articles/pf-pregnancy';
 import { HEEL_PAIN_AT_NIGHT_EN } from './articles/heel-pain-at-night';
 import { HEEL_FAT_PAD_EN } from './articles/heel-fat-pad';
 import { HAGLUNDS_EN } from './articles/haglunds';
@@ -126,6 +127,7 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   heelSpurExercises: HEEL_SPUR_EXERCISES_EN,
   heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_EN,
   heelPainAtNight: HEEL_PAIN_AT_NIGHT_EN,
+  pfPregnancy: PF_PREGNANCY_EN,
   heelFatPad: HEEL_FAT_PAD_EN,
   haglunds: HAGLUNDS_EN,
   severs: SEVERS_EN,

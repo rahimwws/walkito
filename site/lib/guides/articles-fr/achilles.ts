@@ -11,7 +11,7 @@ export const ACHILLES_FR: Guide = {
   page: 'achilles',
   mainSource: CITE.achillesGuideline,
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-17',
   title: 'Tendinite d’Achille\u00A0: exercices excentriques et doses',
   description:
     'Tendinite d’Achille, exercices et doses\u00A0: descentes excentriques du talon, résistance lourde et lente, insertion ou corps du tendon, quand arrêter.',
@@ -229,7 +229,12 @@ export const ACHILLES_FR: Guide = {
     {
       q: 'Que sont les descentes excentriques du talon pour la tendinite d’Achille\u00A0?',
       cites: [CITE.alfredson],
-      a: 'Les descentes excentriques du talon sont un exercice de renforcement\u00A0: montez sur les deux pieds, redescendez lentement sur un, le talon descendant sous le bord d’une marche. La phase de descente est l’essentiel. Dans un essai de 1998, 15\u00A0sportifs qui le faisaient deux fois par jour pendant trois mois ont tous retrouvé leur niveau de course d’avant. Des recherches plus récentes montrent que d’autres types de mise en charge marchent aussi bien.',
+      a: 'Les descentes excentriques du talon sont un exercice de renforcement\u00A0: montez sur la pointe des deux pieds, redescendez lentement sur un, le talon descendant sous le bord d’une marche. La phase de descente est l’essentiel. Dans un essai de 1998, 15\u00A0sportifs qui le faisaient deux fois par jour pendant trois mois ont tous retrouvé leur niveau de course d’avant. Des recherches plus récentes montrent que d’autres types de mise en charge marchent aussi bien.',
+    },
+    {
+      q: 'Quels sont les meilleurs exercices excentriques pour la douleur au tendon d’Achille\u00A0?',
+      cites: [CITE.alfredson, CITE.beyer],
+      a: 'Les descentes excentriques du talon sont l’exercice le plus étudié pour la douleur au tendon d’Achille\u00A0: montez sur la pointe des deux pieds, transférez le poids sur la jambe douloureuse, puis redescendez lentement en trois secondes, le talon passant sous le bord de la marche. Dans un essai de 1998, 15\u00A0sportifs qui le faisaient deux fois par jour pendant trois mois ont tous retrouvé leur niveau de course antérieur. La résistance lourde et lente a donné d’aussi bons résultats dans un essai plus récent.',
     },
     {
       q: 'La résistance lourde et lente vaut-elle les descentes excentriques du talon\u00A0?',

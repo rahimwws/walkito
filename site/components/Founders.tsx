@@ -66,12 +66,12 @@ const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [
   fr: {
     h2: 'Fait par Rahman et Rahim',
     paragraphs: [
-      "Nous faisons Walkito à deux, rien que nous. Tout est parti de nos proches : de la famille aux pieds plats, des amis avec une douleur au talon.",
+      "Nous faisons Walkito à deux, rien que nous. Tout est parti de nos proches\u00A0: de la famille aux pieds plats, des amis avec une douleur au talon.",
       "Semelles, nouvelles chaussures, cinquante vidéos qui disent des choses différentes, et ça faisait toujours mal chaque matin. Ce qui manquait, c'était un plan.",
       'Maintenant, vous en avez un.',
-      "Les guides de ce site, nous les écrivons nous-mêmes. Aucun de nous n'est professionnel de santé : chaque dose vient du catalogue d'exercices de l'app et chaque affirmation d'une étude publiée, en lien sur la page.",
+      "Les guides de ce site, nous les écrivons nous-mêmes. Aucun de nous n'est professionnel de santé\u00A0: chaque dose vient du catalogue d'exercices de l'app et chaque affirmation d'une étude publiée, en lien sur la page.",
     ],
-    contact: ['Une question ? Écrivez à ', '. Une vraie personne répond, en général en moins de 12 heures.'],
+    contact: ['Une question\u00A0? Écrivez à ', '. Une vraie personne répond, en général en moins de 12 heures.'],
   },
   it: {
     h2: 'Fatto da Rahman e Rahim',
