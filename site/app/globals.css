@@ -1353,6 +1353,22 @@ figure figcaption b {
   height: 56px;
 }
 
+/* Google Play beside Apple's badge: our own dark pill at the badge's height.
+   The rule above strips the background from every link in .store-official,
+   which left this one white on white in every language but English. */
+.store-official a.store-play,
+.prose .store-official a.store-play {
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 @media (max-width: 420px) {
   .store-official a {
     padding: 0;
@@ -1360,6 +1376,12 @@ figure figcaption b {
 
   .store-official img {
     height: 48px;
+  }
+
+  .store-official a.store-play {
+    height: 48px;
+    padding: 0 16px;
+    font-size: 15px;
   }
 }
 
