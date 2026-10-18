@@ -62,7 +62,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       h2: 'Could it be a calcaneal stress fracture?',
       paragraphs: [
         'A calcaneal stress fracture, a hairline crack in the heel bone from repetitive loading, can produce a deep ache that throbs at night. Unlike plantar fasciitis, the pain usually gets worse with activity and does not warm up. It often follows a sudden increase in running, walking, or standing on hard surfaces.',
-        'The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. **Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures.** Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.',
+        'The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. [Plantar fasciitis vs stress fracture](/plantar-fasciitis-vs-stress-fracture/) explains what it can and cannot tell you. **Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures.** Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.',
         'A 2011 review in American Family Physician noted that calcaneal stress fractures cause progressively worsening pain after an increase in activity or a change to harder walking surfaces. Night pain and pain at rest were listed among features that distinguish stress fractures from fasciitis.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],

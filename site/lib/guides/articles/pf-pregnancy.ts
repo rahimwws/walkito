@@ -55,7 +55,7 @@ export const PF_PREGNANCY_EN: Guide = {
       keyFact: 'In 49 women, 35 had an arch drop and 30 had longer feet by about four and a half months after birth (Segal and colleagues, 2013).',
       paragraphs: [
         '**The clearest finding is that the arch gets lower and the foot gets longer.** A 2013 study measured 49 women in the first trimester and again about four and a half months after birth. Arch height and arch stiffness went down, and foot length and arch drop went up. 35 of the 49 had an arch drop, and 30 had longer feet, most by 2 to 10 millimetres.',
-        'The cause is less clear than many websites say. In that study, joint looseness and weight gain during pregnancy were not linked to how much the feet changed. Weight and long hours on your feet are known risk factors for plantar fasciitis in general (Koc and colleagues, 2023), but no study has tested them in pregnancy.',
+        'The cause is less clear than many websites say. In that study, joint looseness and weight gain during pregnancy were not linked to how much the feet changed. [Weight](/weight-and-plantar-fasciitis/) and long hours on your feet are known risk factors for plantar fasciitis in general (Koc and colleagues, 2023), but no study has tested them in pregnancy.',
         'Swelling, a heavier body and a different way of walking all change how load spreads across the foot. The plantar fascia is the band under the foot that holds up the arch, so a lower arch and more load can strain it. More on how a lower arch can last after birth: [do flat feet get worse with age](/do-flat-feet-get-worse-with-age/).',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -213,7 +213,7 @@ export const PF_PREGNANCY_EN: Guide = {
     {
       q: 'Is walking bad for plantar fasciitis in pregnancy?',
       cites: [CITE.acogExercise],
-      a: 'Walking is one of the activities ACOG suggests in pregnancy, as part of at least 150 minutes of moderate activity a week. No study has looked at walking with plantar fasciitis in pregnancy, so ask your doctor or midwife how much suits you.',
+      a: 'Walking is one of the activities ACOG suggests in pregnancy, as part of at least 150 minutes of moderate activity a week. No study has looked at [walking with plantar fasciitis](/walking-with-plantar-fasciitis/) in pregnancy, so ask your doctor or midwife how much suits you.',
     },
     {
       q: 'Can I get shockwave therapy or a steroid injection while pregnant?',

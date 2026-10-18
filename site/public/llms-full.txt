@@ -486,7 +486,7 @@ Supportive shoes help, but [insoles](https://walkito.site/best-insoles-for-plant
 
 Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask your clinician if they are right for you.
 
-The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](https://walkito.site/nurses-foot-pain/).
+The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](https://walkito.site/nurses-foot-pain/), and there are pages for [teachers](https://walkito.site/teachers-foot-pain/), [retail and warehouse workers](https://walkito.site/retail-warehouse-foot-pain/), [chefs and kitchen staff](https://walkito.site/chefs-foot-pain/) and [hairdressers](https://walkito.site/hairdressers-foot-pain/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -736,7 +736,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Supportive shoes and [shoe inserts](https://walkito.site/insoles-vs-exercises/) are commonly recommended for foot pain from standing, and there is some basis for it, but the evidence is thinner than for stretching and strength work. The 2023 heel pain guideline grades orthotics on their own **B against** for short-term pain relief, meaning the evidence leans toward not using them as a standalone option. Orthotics combined with other care get a **C**.
 
-What the occupational health review supports is broader: floor mats, supportive footwear and sit-stand options all appear in the list of interventions with some evidence for reducing discomfort during standing work. None of them has a single large trial behind it in the same way calf stretching does. A reasonable approach is to use supportive shoes and a mat if your floor is hard, and do the stretching and strength work for the tissues themselves.
+What the occupational health review supports is broader: floor mats, supportive footwear and sit-stand options all appear in the list of interventions with some evidence for reducing discomfort during standing work. None of them has a single large trial behind it in the same way calf stretching does. A reasonable approach is to use supportive shoes and a mat if your floor is hard, and do the stretching and strength work for the tissues themselves. Pages for specific jobs: [teachers](https://walkito.site/teachers-foot-pain/), [retail and warehouse workers](https://walkito.site/retail-warehouse-foot-pain/), [chefs and kitchen staff](https://walkito.site/chefs-foot-pain/) and [hairdressers](https://walkito.site/hairdressers-foot-pain/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -1092,7 +1092,7 @@ In Silbernagel 2007, patients who continued running during rehab under the pain-
 
 This does not mean running is harmless in every case. **If pain does not settle overnight, or if each week is worse, back off.** Pain at the heel-bone attachment needs more caution than mid-tendon pain. Any sudden pop or snap is a reason to stop and see a clinician.
 
-The [heel pain for runners](https://walkito.site/heel-pain-runners/) page covers running-specific load management in more detail.
+The [heel pain for runners](https://walkito.site/heel-pain-runners/) page covers running-specific load management in more detail. [Foot exercises for runners](https://walkito.site/foot-exercises-for-runners/) covers a strength routine, and [foot pain after hiking](https://walkito.site/hiking-foot-pain/) covers climbs, descents and pack weight.
 
 Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
 
@@ -1354,9 +1354,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart:
 
-- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then [worsens again with prolonged activity](https://walkito.site/heel-pain-after-walking/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so [first-step stiffness is common](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/). It usually improves with walking and then [worsens again with prolonged activity](https://walkito.site/heel-pain-after-walking/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
 - **Heel fat pad thinning.** The fat pad under your heel bone acts as a cushion. When it thins or shifts, the bone takes more impact directly. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, feels worse on hard surfaces and with barefoot walking, and can be difficult to tell apart from plantar fasciitis without imaging (Chang and colleagues, 2022). The key difference: plantar fasciitis pain is usually sharpest at the inside front of the heel, while fat pad pain sits right under the center.
-- **Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can [hurt at rest or at night](https://walkito.site/heel-pain-at-night/). If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how sudden load changes affect the heel.
+- **Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. [How to tell it from plantar fasciitis](https://walkito.site/plantar-fasciitis-vs-stress-fracture/). Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can [hurt at rest or at night](https://walkito.site/heel-pain-at-night/). If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how sudden load changes affect the heel.
 - **Inflammatory arthritis (a red flag).** When both heels hurt in the morning, the stiffness lasts more than 30 minutes, and other joints are also stiff or swollen, the pattern moves away from plantar fasciitis and toward something a clinician should check. Conditions like psoriatic arthritis or ankylosing spondylitis can cause pain where tendons attach to bone, including the heel.
 
 In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain was a significant predictor of worse long-term prognosis, and the authors noted that some unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018). **If both heels hurt and other joints are involved, see a clinician first.**
@@ -1533,7 +1533,7 @@ The Hansen 2018 cohort tested several baseline factors against how long symptoms
 - **Being female.** For every 100 men who became symptom-free per year, only 49 women did (hazard rate ratio 0.49, P less than 0.01). The reason is not established. The authors listed hormonal differences, footwear patterns, and physical factors as possibilities without evidence to pick among them (Hansen and colleagues, 2018).
 - **Bilateral heel pain.** People who had pain in both heels at baseline had about a third the rate of becoming symptom-free per year compared to those with one-sided pain (hazard rate ratio 0.33, P less than 0.01). The authors noted that bilateral pain could reflect an unrecognized inflammatory condition, since pain at tendon-bone attachments on both sides is a feature of some forms of arthritis. Nobody in their cohort had a known inflammatory diagnosis, but no serological screening was done (Hansen and colleagues, 2018).
 
-BMI, age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.
+[BMI](https://walkito.site/weight-and-plantar-fasciitis/), age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a [heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.
 
 If both heels hurt and morning stiffness lasts a long time or other joints are involved, that is worth mentioning to a clinician even if the exercises are helping. See [heel pain in the morning](https://walkito.site/heel-pain-in-the-morning/) for more on when bilateral pain is a red flag.
 
@@ -1632,7 +1632,7 @@ Not according to the Hansen 2018 study. A heel spur at baseline had no significa
 
 #### Is walking good for plantar fasciitis?
 
-Moderate walking in supportive shoes is generally fine and the guideline does not say to stop moving. What matters is whether the next morning is worse. If first-step pain the morning after a walk is clearly higher than usual, that walk was more than the foot could handle. Cut the distance or the time instead of stopping altogether.
+Moderate walking in supportive shoes is generally fine and the guideline does not say to stop moving. What matters is whether the next morning is worse. If first-step pain the morning after a walk is clearly higher than usual, that walk was more than the foot could handle. Cut the distance or the time instead of stopping altogether. See [how much walking is OK](https://walkito.site/walking-with-plantar-fasciitis/).
 
 #### When should I see a doctor about plantar fasciitis that is not improving?
 
@@ -1669,7 +1669,7 @@ The muscles that curl and spread your toes are called the intrinsic foot muscles
 
 ### What causes ball of foot pain?
 
-**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, [high arches](https://walkito.site/high-arches-exercises/), and [tight calf](https://walkito.site/tight-calves/) muscles can all contribute.
+**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, [high arches](https://walkito.site/high-arches-exercises/), and [tight calf](https://walkito.site/tight-calves/) muscles can all contribute. If it starts on long hikes, see [foot pain after hiking](https://walkito.site/hiking-foot-pain/).
 
 **Morton's neuroma** is a thickening of the nerve between the metatarsal heads, most often between the third and fourth toes. It produces burning, tingling, or numbness rather than a pure ache. Narrow or high-heeled shoes compress the nerve and make it worse.
 
@@ -1912,7 +1912,7 @@ General ache and tiredness from a long shift is common and usually goes away wit
 
 If your arches feel flat or rolled in by the end of a shift, the arch exercises in [flat feet exercises for fallen arches](https://walkito.site/flat-feet-exercises/) target the muscles that hold the arch up. Pain along the shin could be [shin splints](https://walkito.site/shin-splints-exercises/). Pain in the Achilles tendon at the back of the heel is a different problem.
 
-If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. For the standing-desk version of this problem, see [standing desk foot pain](https://walkito.site/standing-desk-foot-pain/). **If you are not sure what is causing the pain, see a clinician before loading it with exercise.**
+If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. Other jobs have their own pages: [teachers](https://walkito.site/teachers-foot-pain/), [retail and warehouse workers](https://walkito.site/retail-warehouse-foot-pain/), [chefs and kitchen staff](https://walkito.site/chefs-foot-pain/) and [hairdressers](https://walkito.site/hairdressers-foot-pain/). For the standing-desk version of this problem, see [standing desk foot pain](https://walkito.site/standing-desk-foot-pain/). **If you are not sure what is causing the pain, see a clinician before loading it with exercise.**
 
 ### See a clinician first if
 
@@ -2057,7 +2057,7 @@ Listen to your feet and lower back. If discomfort is building, sit down sooner i
 
 Add a mat from the start if you have one. Wear shoes with some cushioning, even at home. Do the calf stretches from the table above at least once a day.
 
-If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](https://walkito.site/nurses-foot-pain/).
+If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](https://walkito.site/nurses-foot-pain/). There are also pages for [teachers](https://walkito.site/teachers-foot-pain/), [retail and warehouse workers](https://walkito.site/retail-warehouse-foot-pain/), [chefs and kitchen staff](https://walkito.site/chefs-foot-pain/) and [hairdressers](https://walkito.site/hairdressers-foot-pain/).
 
 Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
 
@@ -5642,7 +5642,7 @@ The 2023 heel pain guideline gives calf and plantar fascia stretching its top gr
 
 For Achilles tendonitis, the heel-rise test is one of the standard outcome measures. Patients with mid-portion Achilles tendinopathy (pain in the middle of the tendon, not at the heel bone) typically show reduced calf endurance on the affected side. See [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/) for eccentric work.
 
-For running, the calf absorbs two to three times body weight on every stride. A calf that fatigues early shifts load to the knee, shin and foot. Building the score up can be part of a return-to-running plan. See [heel pain and running](https://walkito.site/heel-pain-runners/) for the bigger picture.
+For running, the calf absorbs two to three times body weight on every stride. A calf that fatigues early shifts load to the knee, shin and foot. Building the score up can be part of a return-to-running plan, and [foot exercises for runners](https://walkito.site/foot-exercises-for-runners/) shows how to train it. See [heel pain and running](https://walkito.site/heel-pain-runners/) for the bigger picture.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -5844,6 +5844,7 @@ For runners, the 2023 guideline advises changing the load instead of stopping al
 
 - [Feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the exercises and footwear for people on their feet at work.
 - [Nurses and foot pain](https://walkito.site/nurses-foot-pain/) addresses the demands of long shifts on hard floors.
+- Other jobs on hard floors have their own pages: [teachers](https://walkito.site/teachers-foot-pain/), [retail and warehouse workers](https://walkito.site/retail-warehouse-foot-pain/), [chefs and kitchen staff](https://walkito.site/chefs-foot-pain/) and [hairdressers](https://walkito.site/hairdressers-foot-pain/).
 - [Standing desk foot pain](https://walkito.site/standing-desk-foot-pain/) covers the sit-stand transition.
 - [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how to adjust training when the heel hurts.
 
@@ -5855,10 +5856,10 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Several conditions share the same location or the same morning pattern. Where the pain sits and how it behaves help tell them apart:
 
-- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. [How to tell the two apart](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/). See [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
 - **Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front. See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
 - **Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain. See [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/) and [heel spur exercises](https://walkito.site/heel-spur-exercises/).
-- **Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.
+- **Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. [How to tell them apart](https://walkito.site/plantar-fasciitis-vs-stress-fracture/). It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.
 - **Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.
 
 If you are unsure, a clinician can tell these apart based on location, behavior, and imaging if needed.
@@ -5915,7 +5916,7 @@ It can, but it usually takes a long time. A 2020 review reports about 90 percent
 
 #### Is walking good or bad for plantar fasciitis?
 
-Walking in supportive shoes at a comfortable pace is generally fine. The guideline does not say to stop moving. The test is how your heel feels the next morning. If first-step pain the morning after a walk is clearly higher than usual, that walk was too much. Shorten the distance before stopping altogether.
+Walking in supportive shoes at a comfortable pace is generally fine. The guideline does not say to stop moving. The test is how your heel feels the next morning. If first-step pain the morning after a walk is clearly higher than usual, that walk was too much. Shorten the distance before stopping altogether. More in [walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/).
 
 #### Does a heel spur cause plantar fasciitis?
 
@@ -5939,7 +5940,7 @@ Plantar fasciitis often shows up in one foot first because load rarely splits ev
 
 #### Why did I suddenly get plantar fasciitis?
 
-Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or weight gain can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.
+Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or [weight gain](https://walkito.site/weight-and-plantar-fasciitis/) can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.
 
 ## Flat feet: what they are, what causes them, and when they need attention
 
@@ -5971,7 +5972,7 @@ Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozc
 
 Another common measure is navicular drop: how far the bone on the inner side of the arch sinks when you stand up. In studies, healthy adults average about 3.6 to 8.1 millimetres. Researchers have suggested 10, 13 or 15 millimetres as the upper limit of normal, but none of these cut-offs has been confirmed (Nielsen and colleagues, 2009).
 
-A wet footprint is a rough home check, not a diagnosis. A wide print with no curve on the inner side suggests a low arch, but studies disagree on how well a footprint shows the real arch. A 1992 study of 115 men found footprint measures could not predict arch height (Hawes and colleagues, 1992). A 2009 study of 91 young adults, checked against X-rays, found that the footprint arch index moderately matched X-ray measures of the arch (Murley and colleagues, 2009).
+A wet footprint is a [rough home check](https://walkito.site/flat-feet-test/), not a diagnosis. A wide print with no curve on the inner side suggests a low arch, but studies disagree on how well a footprint shows the real arch. A 1992 study of 115 men found footprint measures could not predict arch height (Hawes and colleagues, 1992). A 2009 study of 91 young adults, checked against X-rays, found that the footprint arch index moderately matched X-ray measures of the arch (Murley and colleagues, 2009).
 
 For you, the label matters less than two questions: does the arch come back when the foot is off the ground, and does it hurt? Both are covered next.
 
@@ -6165,7 +6166,7 @@ A heel spur is a bony growth on the bottom of the heel bone. Plantar fasciitis i
 
 **A heel spur and plantar fasciitis are not the same thing.** Plantar fasciitis is a soft tissue problem: the plantar fascia, the thick band running from the heel bone to the toes, becomes irritated, usually where it attaches to the bone. A heel spur is a bony outgrowth on the underside of the heel bone (the calcaneus). The two often coexist, but they can each appear without the other.
 
-Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.
+Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. Pain at the back of the heel is a different problem: see [plantar fasciitis vs Achilles tendonitis](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/). The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.
 
 The confusion is understandable. For decades, heel spurs were thought to be the cause of plantar heel pain. That view has largely been replaced by evidence showing that spurs are common in people without pain, and that many people with plantar fasciitis have no spur at all.
 
@@ -6225,7 +6226,7 @@ Imaging becomes useful:
 
 - When the pain does not follow the typical plantar fasciitis pattern.
 - When it has not improved after several weeks of conservative care.
-- When a clinician suspects something else, such as a stress fracture, a nerve problem or a plantar fascia tear.
+- When a clinician suspects something else, such as a [stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/), a nerve problem or a plantar fascia tear.
 
 Ultrasound can measure plantar fascia thickness (a reading above 4 mm is generally considered thickened), and MRI can show soft tissue detail that X-rays miss.
 
@@ -6489,7 +6490,7 @@ Language: English · https://walkito.site/heel-pain-after-walking/ · published 
 Heel pain after walking usually means the tissues under your heel were loaded past what they could handle that day. The most common cause is [plantar fasciitis](https://walkito.site/plantar-fasciitis/), and the most useful response is stretching and gradual calf strengthening. Your heel felt fine while you were walking, but now that you have stopped it aches. Or it started partway through a long walk and got worse with each step. Both patterns point to the same overload.
 
 - The 2023 heel pain guideline describes plantar fasciitis pain as "most noticeable with weight bearing first thing in the morning or after a period of rest," but it also lists pain that worsens with prolonged weight-bearing activity as a key feature (Koc and colleagues, 2023).
-- In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a body mass index over 30 and standing for most of the working day (Riddle and colleagues, 2003).
+- In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a [body mass index over 30](https://walkito.site/weight-and-plantar-fasciitis/) and standing for most of the working day (Riddle and colleagues, 2003).
 - The guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).
 - About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf work and load management (Latt and colleagues, 2020).
 - Heel pain after walking that builds with every session and does not ease with rest can point to a stress fracture rather than plantar fasciitis. Squeezing the sides of the heel is one clinical sign.
@@ -6510,8 +6511,8 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 Plantar fasciitis is the most common cause, but it is not the only one. The location and timing of the pain help tell them apart:
 
 - **Heel fat pad thinning.** The fat pad under the heel bone cushions every step. When it thins or shifts, the bone takes more direct impact. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, worse on hard surfaces and with barefoot walking (Chang and colleagues, 2022). Plantar fasciitis pain usually sits at the inside front of the heel. Fat pad pain sits right under the center. If barefoot walking on tile or concrete is clearly worse than walking in cushioned shoes, fat pad thinning is worth considering. See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/) for more.
-- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
-- **Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot.
+- **Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. For hikes with long climbs and descents, see [foot pain after hiking](https://walkito.site/hiking-foot-pain/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+- **Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot. [Plantar fasciitis vs a stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/) compares the two side by side.
 - **Referred pain from the lower back or nerve entrapment.** Heel pain that comes with numbness, tingling or burning can point to a nerve issue, not a tissue-loading problem. This is a reason to see a clinician first.
 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
@@ -6559,7 +6560,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 ### How far should you walk when your heel hurts?
 
-The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.
+The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there. [How much walking is OK with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) gives a simple pain rule and a way back up.
 
 A practical approach:
 
@@ -6668,7 +6669,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 A calcaneal stress fracture, a hairline crack in the heel bone from repetitive loading, can produce a deep ache that throbs at night. Unlike plantar fasciitis, the pain usually gets worse with activity and does not warm up. It often follows a sudden increase in running, walking, or standing on hard surfaces.
 
-The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. **Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures.** Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.
+The "squeeze test," pressing both sides of the heel bone together, is the classic clinical sign. [Plantar fasciitis vs stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/) explains what it can and cannot tell you. **Positive squeeze pain is unusual in plantar fasciitis and common in stress fractures.** Plain X-rays often miss early stress fractures. MRI or bone scan is usually needed to confirm one.
 
 A 2011 review in American Family Physician noted that calcaneal stress fractures cause progressively worsening pain after an increase in activity or a change to harder walking surfaces. Night pain and pain at rest were listed among features that distinguish stress fractures from fasciitis.
 
@@ -6827,7 +6828,7 @@ Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregn
 
 **The clearest finding is that the arch gets lower and the foot gets longer.** A 2013 study measured 49 women in the first trimester and again about four and a half months after birth. Arch height and arch stiffness went down, and foot length and arch drop went up. 35 of the 49 had an arch drop, and 30 had longer feet, most by 2 to 10 millimetres.
 
-The cause is less clear than many websites say. In that study, joint looseness and weight gain during pregnancy were not linked to how much the feet changed. Weight and long hours on your feet are known risk factors for plantar fasciitis in general (Koc and colleagues, 2023), but no study has tested them in pregnancy.
+The cause is less clear than many websites say. In that study, joint looseness and weight gain during pregnancy were not linked to how much the feet changed. [Weight](https://walkito.site/weight-and-plantar-fasciitis/) and long hours on your feet are known risk factors for plantar fasciitis in general (Koc and colleagues, 2023), but no study has tested them in pregnancy.
 
 Swelling, a heavier body and a different way of walking all change how load spreads across the foot. The plantar fascia is the band under the foot that holds up the arch, so a lower arch and more load can strain it. More on how a lower arch can last after birth: [do flat feet get worse with age](https://walkito.site/do-flat-feet-get-worse-with-age/).
 
@@ -6939,7 +6940,7 @@ Night splints have not been studied in pregnancy. For plantar fasciitis in gener
 
 #### Is walking bad for plantar fasciitis in pregnancy?
 
-Walking is one of the activities ACOG suggests in pregnancy, as part of at least 150 minutes of moderate activity a week. No study has looked at walking with plantar fasciitis in pregnancy, so ask your doctor or midwife how much suits you.
+Walking is one of the activities ACOG suggests in pregnancy, as part of at least 150 minutes of moderate activity a week. No study has looked at [walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) in pregnancy, so ask your doctor or midwife how much suits you.
 
 #### Can I get shockwave therapy or a steroid injection while pregnant?
 
@@ -7782,7 +7783,7 @@ Clinicians grade PTTD in four stages. The stage determines whether exercise and 
 - **Stage III** means the deformity has become rigid. The foot cannot be pushed back into a corrected position, and there are often arthritic changes in the joints below the ankle. Exercise alone is unlikely to change the shape of the foot at this stage. Surgical assessment is usually discussed.
 - **Stage IV** adds ankle joint involvement. The ankle tilts into a valgus position, meaning it leans outward. This is the most advanced stage and typically requires surgical intervention.
 
-**Most people who search for PTTD exercises are in stage I or II.** If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a quick screening tool: difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.
+**Most people who search for PTTD exercises are in stage I or II.** If you are not sure which stage applies to you, a clinician can tell you with a physical exam and, if needed, imaging. The single-heel-raise test, where you try to rise onto one foot, is a [quick screening tool](https://walkito.site/flat-feet-test/): difficulty rising, pain during the rise, or the heel not tilting inward at the top all suggest posterior tibial weakness.
 
 Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
@@ -8876,7 +8877,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 Tight calves are linked with [plantar fasciitis](https://walkito.site/plantar-fasciitis/), the most common cause of heel pain under the foot. When the ankle cannot bend far enough, the foot has to make up for it with each step, and more pull goes through the Achilles tendon, the heel and the plantar fascia (the thick band under the arch).
 
-In a 2003 case-control study, Riddle and colleagues compared 50 people with plantar fasciitis to 100 matched people without it. People whose ankle could not bend past 0 degrees had 23.3 times the odds of plantar fasciitis compared with people who could bend past 10 degrees. Reduced ankle bend was the strongest risk factor they measured, ahead of body weight and standing at work.
+In a 2003 case-control study, Riddle and colleagues compared 50 people with plantar fasciitis to 100 matched people without it. People whose ankle could not bend past 0 degrees had 23.3 times the odds of plantar fasciitis compared with people who could bend past 10 degrees. Reduced ankle bend was the strongest risk factor they measured, ahead of [body weight](https://walkito.site/weight-and-plantar-fasciitis/) and standing at work.
 
 In a later study of 254 people with plantar fasciitis, 83 percent had limited ankle bend, and 57 percent of all the patients had a tight gastrocnemius alone (Patel and DiGiovanni, 2011).
 
@@ -9431,7 +9432,7 @@ Over 12 months, the control group was 2.42 times more likely to get a running in
 
 An earlier, smaller trial from the same team, with 28 runners, found that about two months of foot training increased the size of every foot muscle they measured, compared with the control group. Runners also pushed off the ground with more force.
 
-Both trials come from one research group in Brazil, in recreational runners who were not injured at the start. We do not know yet whether the program helps beginners or people who already have pain. For runners with heel pain now, start with [heel pain in runners](https://walkito.site/heel-pain-runners/).
+Both trials come from one research group in Brazil, in recreational runners who were not injured at the start. A runner-specific routine with a sample week is in [foot exercises for runners](https://walkito.site/foot-exercises-for-runners/). We do not know yet whether the program helps beginners or people who already have pain. For runners with heel pain now, start with [heel pain in runners](https://walkito.site/heel-pain-runners/).
 
 Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
 Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
@@ -9676,7 +9677,7 @@ An international framework for clinicians lists the warning signs they screen fo
 
 For the back, expect questions about how the pain started, what eases it and whether it spreads down a leg. The exam usually checks how the back moves, plus strength, reflexes and feeling in the legs and feet. Scans are not usually needed unless something points to a serious cause.
 
-For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat).
+For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat). You can do the same [checks at home](https://walkito.site/flat-feet-test/).
 
 A rigid flat foot, or one arch that has dropped in adulthood with pain on the inside of the ankle, needs its own assessment. The second pattern is often a weakening tendon, covered in [posterior tibial tendon dysfunction exercises](https://walkito.site/posterior-tibial-tendon-dysfunction-exercises/). A clinician may also watch you walk to see how much your feet roll in.
 
@@ -9793,7 +9794,7 @@ Things a physical therapist, sports doctor or podiatrist is likely to check:
 - Whether the knee has swollen, locked, given way, or was hurt in a twist or fall.
 - How the knee, hip and foot move in a squat or a step-down.
 - Strength of the hip muscles on the outside and back of the hip, and of the thigh.
-- If your flat feet are flexible (the arch comes back when you sit or stand on your toes) or rigid. See [flat feet](https://walkito.site/flat-feet/) for the quick check.
+- If your flat feet are flexible (the arch comes back when you sit or stand on your toes) or rigid. See [flat feet](https://walkito.site/flat-feet/) for the quick check, or the [flat feet test](https://walkito.site/flat-feet-test/) for all four home checks.
 - In older adults, signs of knee osteoarthritis, which may need an X-ray.
 
 Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health From the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(9):CPG1–CPG95.
@@ -11223,7 +11224,7 @@ Cushioning under the heel may matter. In a 2023 study, Landorf and colleagues co
 
 A deep, central heel ache that is worse barefoot on hard ground can also come from the heel fat pad (the cushion of fat under the heel bone). See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/) for that pattern.
 
-Short spells barefoot on grass or sand are gentler. If they raise your heel pain the next morning, it was too much.
+Short spells barefoot on grass or sand are gentler. If they raise your heel pain the next morning, it was too much. The same next-morning check works for any walk: see [walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/).
 
 Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
 
@@ -11350,7 +11351,7 @@ The Achilles tendon joins the calf muscles to the back of the heel bone. There a
 - **Midportion:** pain and often a thicker, tender tendon 2 to 6 centimetres above the heel bone. You can usually pinch the sore spot between finger and thumb.
 - **Insertional:** pain right where the tendon meets the back of the heel bone, often worse when shoes press there.
 
-Pain under the heel that spreads to the sides, burns or tingles, or comes with numbness points to other causes, such as a nerve, a stress fracture or the heel fat pad (Tu, 2018). [Heel pain at night](https://walkito.site/heel-pain-at-night/) covers those.
+Pain under the heel that hurts when the sides of the heel are squeezed, burns or tingles, or comes with numbness points to other causes, such as a nerve, a stress fracture or the heel fat pad (Tu, 2018). [Heel pain at night](https://walkito.site/heel-pain-at-night/) covers those.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
@@ -11395,7 +11396,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Which exercises suit Achilles tendonitis?
 
-**For the Achilles, loading comes first, not stretching.** The 2024 guideline grades tendon-loading exercise **A**: heel raises, holds and slow lowering that make the tendon work (Chimenti and colleagues, 2024). Stretching was not the core of any of the tested programs.
+**For the Achilles, loading comes first, not stretching.** The 2024 guideline grades tendon-loading exercise **A**: heel raises, holds and slow lowering that make the tendon work (Chimenti and colleagues, 2024). The guideline gives calf stretching a lower grade, **C**, and only for people whose ankle does not bend well (Chimenti and colleagues, 2024).
 
 Some pain is allowed. In a trial of 38 people, pain up to about 5 out of 10 during loading was fine as long as it settled by the next morning and did not build week to week, and that group did as well at twelve months as the group that rested first (Silbernagel and colleagues, 2007).
 
@@ -11438,12 +11439,13 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 For plantar fasciitis, about 90% of people get better with non-surgical care, though it often takes months (Latt and colleagues, 2020). [How long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/) has the detail.
 
-For Achilles tendinopathy, the core loading trials ran for about three months and followed people to twelve months. The 2024 guideline notes function can start to improve within 2 weeks, but fuller recovery takes longer (Chimenti and colleagues, 2024). Insertional pain tends to take longer than midportion pain.
+For Achilles tendinopathy, the core loading trials ran for about three months and followed people to twelve months. The 2024 guideline notes function can start to improve within 2 weeks, but fuller recovery takes longer (Chimenti and colleagues, 2024). Insertional pain has been harder to help with the classic heel drops below a step: only 32% had good results in an earlier study, which is why floor-level drops are used (Jonsson and colleagues, 2008).
 
 No study has compared recovery time for the two head to head.
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
 
 ### See a clinician first if
 
@@ -11474,7 +11476,7 @@ It can be. Both can feel stiff and sore with the first steps of the day, which i
 
 #### Should I stretch my calf for Achilles tendonitis?
 
-Gently, if at all. The 2024 Achilles guideline puts tendon-loading exercise first, graded A, and stretching was not the core of the tested programs. If your pain is right at the heel bone, deep calf stretches and heel drops below a step press the tendon against the bone, so keep them gentle and at floor level.
+It is optional. The 2024 Achilles guideline puts tendon-loading exercise first, graded A, and gives calf stretching a C, for people whose ankle does not bend well. If your pain is right at the heel bone, deep calf stretches and heel drops below a step press the tendon against the bone, so keep them gentle and at floor level.
 
 #### Are the exercises for plantar fasciitis and Achilles tendonitis the same?
 
@@ -11525,7 +11527,7 @@ Its limits are real:
 
 - **Nobody has measured how accurate it is for the heel.** We found no study that reports how often the squeeze test is positive in people with a confirmed calcaneal stress fracture, or how often it is positive without one. The same review that covers stress fractures notes that the hop test, another common bedside test, has not been validated either (Patel and colleagues, 2011).
 - **A negative squeeze does not rule out a fracture.** Some heel stress injuries sit toward the front or the middle of the bone: in one MRI study, 15 of 34 were not in the back part (Sormaala and colleagues, 2006).
-- **Other things hurt on squeezing too.** In children and young teens, a painful squeeze is the usual sign of [Sever’s disease](https://walkito.site/severs-disease/), an irritated growth plate (Tu, 2018). Bone cysts and other heel bone problems can also hurt.
+- **Other things hurt on squeezing too.** In children and young teens, a painful squeeze is a common sign of [Sever’s disease](https://walkito.site/severs-disease/), an irritated growth plate (Tu, 2018). Other heel bone problems can also hurt, so a clinician needs to check.
 
 If you press the sides of your own heel and it hurts, take that as a reason to get it checked, not as a diagnosis. Do not hop on the foot to test it.
 
@@ -11543,7 +11545,7 @@ A stress fracture happens when bone takes more repeated load than it can repair.
 - **Bone health.** Women with the female athlete triad (disordered eating, missed periods and low bone density) are at higher risk, and one study found lower vitamin D levels in recruits with stress fractures (Patel and colleagues, 2011). Bone weakened by osteoporosis can crack under normal loads, which is called an insufficiency fracture.
 - **Being a woman.** Women are at higher risk than men, especially in military training, though data in female athletes are mixed (Patel and colleagues, 2011).
 
-Plantar fasciitis has a different risk profile. In a study of 50 people with it and 100 without, reduced ankle bend (dorsiflexion) raised the odds 23.3 times, and standing for most of the working day 3.6 times (Riddle and colleagues, 2003).
+Plantar fasciitis has a different risk profile. In a study of 50 people with it and 100 without, people with 0 degrees of ankle bend (dorsiflexion) or less had 23.3 times the odds of those with more than 10 degrees, and standing for most of the working day raised the odds 3.6 times (Riddle and colleagues, 2003).
 
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
@@ -11555,9 +11557,9 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 **An early stress fracture is often too small to show on an X-ray.** The bone first reacts with swelling inside it, which an X-ray cannot see. Signs of repair show up later. One review put the sensitivity of X-rays at the first visit at about 10%, rising to 30 to 70% after three weeks (Patel and colleagues, 2011).
 
-For the heel specifically, a Finnish study looked at military recruits with exercise-related heel or ankle pain who had an MRI. Of 30 recruits with heel stress injuries, only 15% had a visible injury on plain X-rays. In 22 of the 30, other foot bones next to the heel were also affected (Sormaala and colleagues, 2006).
+For the heel specifically, a Finnish study looked at military recruits with exercise-related heel or ankle pain who had an MRI. Of 30 recruits with heel stress injuries, only 15% had a visible injury on plain X-rays. In 22 of the 34 injured heels, nearby foot bones were also affected (Sormaala and colleagues, 2006).
 
-A 2016 systematic review of lower-leg and foot stress fractures found X-ray sensitivity ranging from 12% to 56%, against 68% to 99% for MRI. The authors named MRI the most sensitive and specific test and warned that X-rays are likely to give false negatives early on (Wright and colleagues, 2016).
+A 2016 systematic review of stress fractures in the lower limb found X-ray sensitivity ranging from 12% to 56%, against 68% to 99% for MRI. The authors named MRI the most sensitive and specific test and warned that X-rays are likely to give false negatives early on (Wright and colleagues, 2016).
 
 So a clinician who suspects a fracture may repeat the X-ray after two to three weeks or go straight to an MRI if a quick answer matters (Patel and colleagues, 2011). For plantar fasciitis, the 2023 guideline says imaging is "usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions" (Koc and colleagues, 2023). The [heel spur page](https://walkito.site/plantar-fasciitis-vs-heel-spur/) explains why a spur on an X-ray does not settle it either.
 
@@ -11662,7 +11664,7 @@ No study shows plantar fasciitis turning into a fracture. They are different inj
 
 #### Who gets heel stress fractures?
 
-Mostly people who suddenly train more: runners, military recruits and athletes. Runners averaging more than 25 miles a week are at higher risk, and women more than men. Low energy availability, missed periods, low bone density and low vitamin D raise the risk because the bone is less able to take load.
+Mostly people who suddenly train more: runners, military recruits and athletes. Runners averaging more than 25 miles a week are at higher risk, and women more than men. Low energy availability, missed periods and low bone density raise the risk, and one study found lower vitamin D levels in recruits with stress fractures.
 
 ## How much walking is OK with plantar fasciitis?
 
@@ -11755,7 +11757,7 @@ Practical options while the heel is sore:
 
 - Choose grass, a park path or a track over concrete for longer walks, if it feels better.
 - Keep shoes on at home on tile or wood, especially for the first steps of the day.
-- Go easy on long downhill stretches and steep hills until the flat walk passes the pain rule.
+- Go easy on long downhill stretches and steep hills until the flat walk passes the pain rule. More on descents, packs and poles in [foot pain after hiking](https://walkito.site/hiking-foot-pain/).
 
 A deep ache right in the center of the heel that is clearly worse on hard ground can come from the heel fat pad rather than the plantar fascia. See [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
 
@@ -12833,9 +12835,9 @@ Language: English · https://walkito.site/weight-and-plantar-fasciitis/ · publi
 A higher body weight is one of the clearest risk factors for [plantar fasciitis](https://walkito.site/plantar-fasciitis/) in people who are not athletes. In a review of 51 studies, a body mass index (BMI) over 27 came with 3.7 times the odds of plantar fasciitis (van Leeuwen and colleagues, 2016). Whether losing weight eases heel pain is less clear: no randomized trial has tested it in people with heel pain, so the stretches and strength work the 2023 guideline grades highest are the place to start, at any weight.
 
 - In a case-control study of 50 people with plantar fasciitis and 100 without, a BMI over 30 came with 5.6 times the odds of plantar fasciitis, compared with a BMI of 25 or under. A stiff ankle was the strongest factor, at 23.3 times (Riddle and colleagues, 2003).
-- A review of 51 studies found that a BMI over 27 was the only clinical factor clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016).
-- No randomized trial has tested weight loss for heel pain. A 2012 review found only two studies, both after weight loss surgery, and called the evidence limited (Butterworth and colleagues, 2012).
-- The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Advice on keeping a healthy lean body mass is graded **E**, meaning it rests on expert opinion (Koc and colleagues, 2023).
+- A review of 51 studies found that a BMI over 27 was the only clinical factor, among those that could be pooled, clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016).
+- No randomized trial has tested weight loss for heel pain. A 2012 review found only two studies of weight loss and foot pain, both after weight loss surgery, and called the evidence limited (Butterworth and colleagues, 2012).
+- The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Advice on keeping a healthy lean body mass is graded **E**, meaning it rests on theory, not trials (Koc and colleagues, 2023).
 - In a follow-up of 174 people, BMI did not predict who still had heel pain years later. Being a woman and having pain in both heels did (Hansen and colleagues, 2018).
 
 ### Does weight affect plantar fasciitis?
@@ -12897,7 +12899,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 The exercises with the best grades in the 2023 guideline, stretching (**A**) and calf strength work (**B**), do not depend on your weight (Koc and colleagues, 2023). What changes is how you start. Seated and supported versions put less load through the heel and are easier on knees and balance, so they come first here.
 
-These are the same starting doses as the main [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) guide. Do the first plantar fascia stretch sitting on the edge of the bed, before you stand: in a trial of 82 people, stretching before the first steps eased morning pain more than calf stretching alone (DiGiovanni and colleagues, 2003). If any exercise takes your heel pain to 6 out of 10, stop for the day.
+These are the same starting doses as the main [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) guide. Do the first plantar fascia stretch sitting on the edge of the bed, before you stand: in a trial of 82 people, a plantar fascia stretch done before standing eased first-step morning pain more than calf stretching alone (DiGiovanni and colleagues, 2003). If any exercise takes your heel pain to 6 out of 10, stop for the day.
 
 - **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. If crossing the leg is hard, keep the foot on the floor, loop a towel around the ball of the foot and pull gently instead.
 - **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall or a kitchen counter. Keep the back leg straight, the back heel flat on the floor and the hips forward. The wall takes some of your weight, so you can lean only as far as feels steady.
@@ -12921,7 +12923,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 A simple check works for any activity: if your first steps the next morning are clearly worse, that day was more than the heel could take, so do a little less next time. [Walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.
 
-If you are starting to exercise to feel better or to lose weight, starting with low-impact activity lets you keep going while the heel settles. Jumping, running and long days on hard floors put the biggest peaks of load through the plantar fascia.
+If you are starting to exercise to feel better or to lose weight, starting with low-impact activity lets you keep going while the heel settles. The guideline lists running and long hours on your feet, especially on hard surfaces, as risk factors for heel pain (Koc and colleagues, 2023).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -12929,7 +12931,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 No study has tested shoes or insoles for heel pain in people with a higher weight specifically. For heel pain in general, the 2023 guideline grades insoles on their own **B against**: the evidence says not to rely on them alone. Combined with stretching and strength work, they get a **C** (Koc and colleagues, 2023). [Insoles or exercises](https://walkito.site/insoles-vs-exercises/) compares the two.
 
-The guideline does recommend footwear advice as part of managing load, and it lists weight-bearing work on hard surfaces with poor shock absorption as a risk factor (Koc and colleagues, 2023). In practice, that points to cushioned shoes with a firm heel, worn in the house too, instead of bare feet or thin slippers on hard floors.
+The guideline does recommend footwear advice as part of managing load, and it lists weight-bearing work on hard surfaces with poor shock absorption as a risk factor (Koc and colleagues, 2023). One practical option, not tested in trials, is supportive, cushioned shoes on hard floors, including at home.
 
 After a lot of weight loss, feet can change. In the surgery study, the authors suggested that losing fat under the midfoot may change how shoes and insoles fit, and that this is worth checking after a large weight loss (Walsh and colleagues, 2018).
 
@@ -12964,11 +12966,11 @@ Walkito is a heel and foot exercise app. It does not track your weight or give d
 
 #### Can being overweight cause plantar fasciitis?
 
-A higher weight is linked to plantar fasciitis, but no study proves it causes it. In people who are not athletes, a BMI over 30 came with 5.6 times the odds in one study, and a review of 51 studies found 3.7 times the odds above a BMI of 27. A stiff ankle was an even stronger factor.
+A higher weight is linked to plantar fasciitis, but no study proves it causes it. A BMI over 30 came with 5.6 times the odds in one study, and a review of 51 studies found 3.7 times the odds above a BMI of 27, with the link strongest in people who are not athletes. A stiff ankle was an even stronger factor.
 
 #### Does losing weight help plantar fasciitis?
 
-It may, but no randomized trial has tested it in people with heel pain. In a records study of 163 people with plantar fasciitis who had weight loss surgery, 90% had their heel symptoms resolve, but there was no comparison group, and most people with plantar fasciitis get better with time anyway. A 2012 review called the evidence limited.
+It may, but no randomized trial has tested it in people with heel pain. In a records study of 163 people with plantar fasciitis who had weight loss surgery, 90% had their heel symptoms resolve, but there was no comparison group, and most people with plantar fasciitis get better with non-surgical care anyway (Latt and colleagues, 2020). A 2012 review called the evidence limited.
 
 #### How much weight do I need to lose to help plantar fasciitis?
 
@@ -12976,7 +12978,7 @@ No study has worked out an amount. There is no trial of weight loss for heel pai
 
 #### Is BMI a risk factor for plantar fasciitis in runners?
 
-Mostly not. Two systematic reviews found that BMI was linked to chronic heel pain in people who are not athletes, but not in athletes. In runners, training load, such as a sudden jump in distance, matters more. See [heel pain in runners](https://walkito.site/heel-pain-runners/).
+Mostly not. Two systematic reviews found that BMI was linked to chronic heel pain in people who are not athletes, but not in athletes. See [heel pain in runners](https://walkito.site/heel-pain-runners/) for the factors that matter more in runners.
 
 #### What exercise can I do with plantar fasciitis if I am overweight?
 
@@ -12996,18 +12998,18 @@ For most people, yes. About 90% get better with non-surgical care such as stretc
 
 #### Are insoles more important if I am heavier?
 
-No study has tested that. For heel pain in general, the 2023 guideline advises against relying on insoles alone (grade B against) and gives them a C when combined with stretching and strength work. Cushioned shoes with a firm heel, worn indoors too, are a sensible start. See [insoles or exercises](https://walkito.site/insoles-vs-exercises/).
+No study has tested that. For heel pain in general, the 2023 guideline advises against relying on insoles alone (grade B against) and gives them a C when combined with stretching and strength work. Cushioned shoes on hard floors are a practical option, though trials have not tested them. See [insoles or exercises](https://walkito.site/insoles-vs-exercises/).
 
 ## Foot pain after hiking: why your feet hurt and what to do about it
 
 Language: English · https://walkito.site/hiking-foot-pain/ · published 2026-10-18 · updated 2026-10-18
 
-Sore feet after a long hike are common, and most of it is overload: more distance, more descent or a heavier pack than your feet are used to. In a survey of 1,295 long-distance hikers on the Appalachian Trail, 29% reported foot injury or pain, and 12% reported Achilles pain (Chrusch and Kavin, 2021). Heel pain on the first steps the next morning points to [plantar fasciitis](https://walkito.site/plantar-fasciitis/); pain on one spot of a bone that grows with each hike can be a stress fracture and needs a clinician.
+Sore feet after a long hike are common, and much of it is overload: more distance, more descent or a heavier pack than your feet are used to. In a survey of 1,295 long-distance hikers on the Appalachian Trail, 29% reported foot injury or pain, and 12% reported Achilles pain (Chrusch and Kavin, 2021). Heel pain on the first steps the next morning points to [plantar fasciitis](https://walkito.site/plantar-fasciitis/); pain on one spot of a bone that grows with each hike can be a stress fracture and needs a clinician.
 
 - Of 1,295 Appalachian Trail long-distance hikers, 61% reported a muscle, joint or bone complaint, 37% knee pain, 29% foot pain and 12% Achilles pain, and 11% stopped their hike because of it (Chrusch and Kavin, 2021).
 - Hikers who did no training before the trail reported foot pain more often, 38% against 28%, and any such injury more often, 80% against 58%. That is a link in a survey, not proof that training prevents injury (Chrusch and Kavin, 2021).
 - Foot blisters were the most common complaint among 280 Appalachian Trail hikers, reported by 64% (Boulware and colleagues, 2003).
-- Numbness or tingling rose with pack weight in 128 long-distance hikers, from 35% with 10 to 20 pound packs to 69% above 31 pounds. Shoe type and pack weight were not linked to other injuries (Anderson and colleagues, 2009).
+- Numbness or tingling rose with pack weight in 128 long-distance hikers, from 35% with 10 to 20 pound packs to 69% above 31 pounds. Shoe type and pack weight were not linked to other muscle and joint injuries (Anderson and colleagues, 2009).
 - Trekking poles reduced the load on the ankle, knee and hip when 15 experienced hikers walked downhill, with and without a pack (Bohne and Abendroth-Smith, 2007).
 
 ### Why do your feet hurt after a hike?
@@ -13058,7 +13060,7 @@ Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman
 - In the 2006 survey of 128 long-distance hikers, numbness or tingling was reported by 29% in sandals, 36% in running shoes, 42% in hiking shoes and 68% in boots. After allowing for pack weight, the shoe type no longer mattered, which suggests the hikers in boots also carried heavier packs (Anderson and colleagues, 2009).
 - In the 2018 to 2019 Appalachian Trail survey, 58% wore running or trail shoes and 24% wore boots. Both went with fewer complaints than other footwear such as sandals (Chrusch and Kavin, 2021).
 
-So pick the shoe that fits, that you have already walked in, and that suits the ground. For heel pain in general, the 2023 guideline does not back insoles on their own and gives them a **C** when combined with exercise (Koc and colleagues, 2023). More in [insoles or exercises](https://walkito.site/insoles-vs-exercises/). If you want to change to lighter or flatter shoes, do it over weeks, not on the first long hike; [barefoot shoes](https://walkito.site/barefoot-shoes/) explains why.
+So pick the shoe that fits, that you have already walked in, and that suits the ground. For heel pain in general, the 2023 guideline recommends against insoles used alone for short-term relief, grade B, and allows them alongside other care, grade C (Koc and colleagues, 2023). More in [insoles or exercises](https://walkito.site/insoles-vs-exercises/). If you want to change to lighter or flatter shoes, do it over weeks, not on the first long hike; [barefoot shoes](https://walkito.site/barefoot-shoes/) explains why.
 
 Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
 Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
@@ -13124,7 +13126,7 @@ Walkito is a heel and foot exercise app with the stretches and heel raises on th
 
 #### Is it normal for your feet to hurt after hiking?
 
-Some soreness after a long or steep hike is common and usually settles within a day or two. In a survey of 1,295 Appalachian Trail hikers, 29% reported foot pain. Pain that is sharp, sits on one spot of a bone, or is still there after a few easy days is worth getting checked.
+Some soreness after a long or steep hike is common and often settles within a day or two. In a survey of 1,295 Appalachian Trail hikers, 29% reported foot pain. Pain that is sharp, sits on one spot of a bone, or is still there after a few easy days is worth getting checked.
 
 #### Why does my heel hurt after hiking?
 
@@ -13132,7 +13134,7 @@ The most common cause is plantar fasciitis, which hurts under the heel and is us
 
 #### Can I keep hiking with plantar fasciitis?
 
-Often yes, on shorter and flatter routes, if the pain stays moderate during the hike and settles by the next morning. That next-morning rule comes from an Achilles trial, not a hiking study. If the heel is worse each morning, cut distance and descent first. Our walking with plantar fasciitis guide explains how to build back up.
+Many people can, on shorter and flatter routes, if the pain stays moderate during the hike and settles by the next morning. That next-morning rule comes from an Achilles trial, not a hiking study. If the heel is worse each morning, cut distance and descent first. Our walking with plantar fasciitis guide explains how to build back up.
 
 #### Are boots or trail runners better for foot pain?
 
@@ -13152,7 +13154,7 @@ They reduce load on the legs. In 15 experienced hikers walking downhill, poles r
 
 #### How long should feet hurt after a long hike?
 
-Ordinary soreness from a big day usually fades within a day or two of easy activity. If heel pain on the first steps keeps coming back every morning, or pain is still there after a week of shorter walks, it is more likely an overuse problem such as plantar fasciitis or Achilles pain, and worth a proper check.
+Ordinary soreness from a big day often fades within a day or two of easy activity. If heel pain on the first steps keeps coming back every morning, or pain is still there after a week of shorter walks, it is more likely an overuse problem such as plantar fasciitis or Achilles pain, and worth a proper check.
 
 #### Should I stretch before a hike?
 

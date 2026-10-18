@@ -19,7 +19,7 @@ export const ACHILLES_EN: Guide = {
   lede:
     'Achilles tendonitis exercises work best when the heel drop is understood as strength training, not a stretch. The 2024 clinical guideline gives exercise its top grade, **A**, and a 2021 network meta-analysis of 29 trials found no single protocol clearly better than another. What matters is loading the tendon steadily for weeks.',
   intro: [
-    'This page is the deep dive on those exercises. If your pain is under the foot rather than at the back of the heel, you are looking for [plantar fasciitis exercises](/plantar-fasciitis-exercises/) instead. The [heel pain for runners](/heel-pain-runners/) page covers both at a summary level. If the pain is along the shin instead of the heel, see [shin splints exercises](/shin-splints-exercises/); if it only shows up after a long day on your feet rather than running, see [feet hurt from standing all day](/feet-hurt-standing-all-day/).',
+    'This page is the deep dive on those exercises. If your pain is under the foot rather than at the back of the heel, you are looking for [plantar fasciitis exercises](/plantar-fasciitis-exercises/) instead. Not sure which it is? See [plantar fasciitis vs Achilles tendonitis](/plantar-fasciitis-vs-achilles-tendonitis/). The [heel pain for runners](/heel-pain-runners/) page covers both at a summary level. If the pain is along the shin instead of the heel, see [shin splints exercises](/shin-splints-exercises/); if it only shows up after a long day on your feet rather than running, see [feet hurt from standing all day](/feet-hurt-standing-all-day/).',
     '"Tendonitis" and "tendinopathy" are used interchangeably by most people. Current guidelines use "tendinopathy" because the problem is usually a loading issue, not pure inflammation. This page uses "tendonitis" in headings and "tendinopathy" where the guideline does.',
   ],
   takeaways: [
@@ -207,7 +207,7 @@ export const ACHILLES_EN: Guide = {
       paragraphs: [
         'In Silbernagel 2007, patients who continued running during rehab under the pain-monitoring model did not do worse than those who rested first. Both groups improved at 12 months. The trial concluded that continued, pain-monitored activity "might therefore represent a valuable option" during rehab.',
         'This does not mean running is harmless in every case. **If pain does not settle overnight, or if each week is worse, back off.** Pain at the heel-bone attachment needs more caution than mid-tendon pain. Any sudden pop or snap is a reason to stop and see a clinician.',
-        'The [heel pain for runners](/heel-pain-runners/) page covers running-specific load management in more detail.',
+        'The [heel pain for runners](/heel-pain-runners/) page covers running-specific load management in more detail. [Foot exercises for runners](/foot-exercises-for-runners/) covers a strength routine, and [foot pain after hiking](/hiking-foot-pain/) covers climbs, descents and pack weight.',
       ],
       cites: [CITE.silbernagel],
     },

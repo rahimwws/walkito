@@ -173,6 +173,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       bullets: [
         '[Feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the exercises and footwear for people on their feet at work.',
         '[Nurses and foot pain](/nurses-foot-pain/) addresses the demands of long shifts on hard floors.',
+        'Other jobs on hard floors have their own pages: [teachers](/teachers-foot-pain/), [retail and warehouse workers](/retail-warehouse-foot-pain/), [chefs and kitchen staff](/chefs-foot-pain/) and [hairdressers](/hairdressers-foot-pain/).',
         '[Standing desk foot pain](/standing-desk-foot-pain/) covers the sit-stand transition.',
         '[Heel pain from running](/heel-pain-runners/) covers how to adjust training when the heel hurts.',
       ],
@@ -184,10 +185,10 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
         'Several conditions share the same location or the same morning pattern. Where the pain sits and how it behaves help tell them apart:',
         {
           list: [
-            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. First-step stiffness is common, but the pain is higher. [How to tell the two apart](/plantar-fasciitis-vs-achilles-tendonitis/). See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
             '**Heel fat pad syndrome.** A deep ache in the center of the heel, worse on hard surfaces and barefoot. A 2022 scoping review noted it can be hard to distinguish from plantar fasciitis without imaging. Fat pad pain sits right under the center, while fasciitis pain is at the inside front. See [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
             '**Heel spur.** A bony growth on the underside of the heel bone. Many people have one with no pain at all. In the Hansen 2018 cohort of 174 patients, a heel spur at baseline had no significant effect on how long symptoms lasted. The spur is often there, but it is not what drives the pain. See [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/) and [heel spur exercises](/heel-spur-exercises/).',
-            '**Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.',
+            '**Calcaneal stress fracture.** Pain that builds with activity instead of easing once you warm up. [How to tell them apart](/plantar-fasciitis-vs-stress-fracture/). It can hurt at rest or at night. Squeezing the sides of the heel often reproduces it. See a clinician before exercising the foot.',
             '**Inflammatory arthritis.** When both heels hurt, morning stiffness lasts more than 30 minutes, and other joints are stiff or swollen, the pattern moves toward something systemic. A clinician should check.',
           ],
         },
@@ -236,7 +237,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       q: 'Is walking good or bad for plantar fasciitis?',
       cites: [CITE.guideline],
-      a: 'Walking in supportive shoes at a comfortable pace is generally fine. The guideline does not say to stop moving. The test is how your heel feels the next morning. If first-step pain the morning after a walk is clearly higher than usual, that walk was too much. Shorten the distance before stopping altogether.',
+      a: 'Walking in supportive shoes at a comfortable pace is generally fine. The guideline does not say to stop moving. The test is how your heel feels the next morning. If first-step pain the morning after a walk is clearly higher than usual, that walk was too much. Shorten the distance before stopping altogether. More in [walking with plantar fasciitis](/walking-with-plantar-fasciitis/).',
     },
     {
       q: 'Does a heel spur cause plantar fasciitis?',
@@ -264,7 +265,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       q: 'Why did I suddenly get plantar fasciitis?',
       cites: [CITE.guideline],
-      a: 'Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or weight gain can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.',
+      a: 'Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or [weight gain](/weight-and-plantar-fasciitis/) can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.',
     },
   ],
   redFlags: {

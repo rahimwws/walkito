@@ -37,7 +37,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     {
       h2: 'What causes ball of foot pain?',
       paragraphs: [
-        '**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, [high arches](/high-arches-exercises/), and [tight calf](/tight-calves/) muscles can all contribute.',
+        '**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, [high arches](/high-arches-exercises/), and [tight calf](/tight-calves/) muscles can all contribute. If it starts on long hikes, see [foot pain after hiking](/hiking-foot-pain/).',
         '**Morton\'s neuroma** is a thickening of the nerve between the metatarsal heads, most often between the third and fourth toes. It produces burning, tingling, or numbness rather than a pure ache. Narrow or high-heeled shoes compress the nerve and make it worse.',
         '**Sesamoiditis** is inflammation of the two small bones embedded in the tendon under the big toe joint. The pain sits directly under the big toe rather than under the middle of the forefoot.',
         '**Metatarsal stress fracture** is a small crack in one of the metatarsal bones, usually the second or third. The pain is localized, often gets worse through the day, and may hurt at night. Swelling on the top of the foot is common. This one needs imaging and rest.',

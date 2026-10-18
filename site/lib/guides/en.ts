@@ -44,7 +44,7 @@ export const FLAT_FEET_EN: Guide = {
   h1: 'Flat feet exercises for fallen arches and arch pain',
   lede: 'When you stand, your feet seem to roll in and the arches sink toward the floor. By evening your feet feel tired, and the arches ache. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch. For flexible [flat feet](/flat-feet/), the exercise program with trial evidence combines arch-building (short-foot) exercises, ankle work, hip strengthening and stretching: in a trial of 52 people, six weeks of these exercises changed arch shape more than in a control group.',
   intro: [
-    'Start with one check to see whether your flat feet are flexible, meaning your arch is visible when you’re not standing but drops when you stand. That trial, and the exercises below, are about flexible flat feet.',
+    'Start with [one check](/flat-feet-test/) to see whether your flat feet are flexible, meaning your arch is visible when you’re not standing but drops when you stand. That trial, and the exercises below, are about flexible flat feet.',
     'The evidence for arch-building exercises on their own is thinner. A 2024 review found no clear change overall, and a change in one arch measure only in programs that ran longer than six weeks. Both measured the shape of the arch, not pain. If your pain is near the heel, the heel pain research is the better guide.',
   ],
   takeaways: [
@@ -559,7 +559,7 @@ export const HEEL_PAIN_EN: Guide = {
       paragraphs: [
         'Supportive shoes help, but [insoles](/best-insoles-for-plantar-fasciitis/) on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.',
         'Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask your clinician if they are right for you.',
-        'The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](/nurses-foot-pain/).',
+        'The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](/nurses-foot-pain/), and there are pages for [teachers](/teachers-foot-pain/), [retail and warehouse workers](/retail-warehouse-foot-pain/), [chefs and kitchen staff](/chefs-foot-pain/) and [hairdressers](/hairdressers-foot-pain/).',
       ],
       cites: [CITE.guideline],
     },

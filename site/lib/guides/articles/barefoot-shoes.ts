@@ -127,7 +127,7 @@ export const BAREFOOT_EN: Guide = {
         'Tile or wood gives the heel no cushion, and the first steps after rest are when plantar fasciitis usually hurts most. Our [morning heel pain](/heel-pain-in-the-morning/) page suggests a stretch before you stand and something on your feet for those first steps.',
         'Cushioning under the heel may matter. In a 2023 study, Landorf and colleagues compared 50 people with plantar heel pain to 25 matched people without it. Those with heel pain stood for 3.4 hours a day longer and wore shoes with harder heels. That shows a link, not a cause.',
         'A deep, central heel ache that is worse barefoot on hard ground can also come from the heel fat pad (the cushion of fat under the heel bone). See [heel fat pad syndrome](/heel-fat-pad-syndrome/) for that pattern.',
-        'Short spells barefoot on grass or sand are gentler. If they raise your heel pain the next morning, it was too much.',
+        'Short spells barefoot on grass or sand are gentler. If they raise your heel pain the next morning, it was too much. The same next-morning check works for any walk: see [walking with plantar fasciitis](/walking-with-plantar-fasciitis/).',
       ],
       cites: [CITE.landorfFootwear],
     },

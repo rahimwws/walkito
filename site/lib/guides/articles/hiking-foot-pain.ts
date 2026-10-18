@@ -35,7 +35,7 @@ export const HIKERS_EN: Guide = {
     'Foot pain after hiking: what trail surveys found, heel, Achilles and forefoot causes, pack weight, boots or trail runners, and a short routine with doses.',
   h1: 'Foot pain after hiking: why your feet hurt and what to do about it',
   lede:
-    'Sore feet after a long hike are common, and most of it is overload: more distance, more descent or a heavier pack than your feet are used to. In a survey of 1,295 long-distance hikers on the Appalachian Trail, 29% reported foot injury or pain, and 12% reported Achilles pain (Chrusch and Kavin, 2021). Heel pain on the first steps the next morning points to [plantar fasciitis](/plantar-fasciitis/); pain on one spot of a bone that grows with each hike can be a stress fracture and needs a clinician.',
+    'Sore feet after a long hike are common, and much of it is overload: more distance, more descent or a heavier pack than your feet are used to. In a survey of 1,295 long-distance hikers on the Appalachian Trail, 29% reported foot injury or pain, and 12% reported Achilles pain (Chrusch and Kavin, 2021). Heel pain on the first steps the next morning points to [plantar fasciitis](/plantar-fasciitis/); pain on one spot of a bone that grows with each hike can be a stress fracture and needs a clinician.',
   intro: [
     'This page is about hiking and long walks on trails: what tends to hurt, what the hiker surveys found about packs, shoes and training, and a short routine for before and after a hike. If your heel hurts after everyday walks, start with [heel pain after walking](/heel-pain-after-walking/), and for how much to walk with a sore heel, see [walking with plantar fasciitis](/walking-with-plantar-fasciitis/).',
   ],
@@ -44,7 +44,7 @@ export const HIKERS_EN: Guide = {
     'Of 1,295 Appalachian Trail long-distance hikers, 61% reported a muscle, joint or bone complaint, 37% knee pain, 29% foot pain and 12% Achilles pain, and 11% stopped their hike because of it (Chrusch and Kavin, 2021).',
     'Hikers who did no training before the trail reported foot pain more often, 38% against 28%, and any such injury more often, 80% against 58%. That is a link in a survey, not proof that training prevents injury (Chrusch and Kavin, 2021).',
     'Foot blisters were the most common complaint among 280 Appalachian Trail hikers, reported by 64% (Boulware and colleagues, 2003).',
-    'Numbness or tingling rose with pack weight in 128 long-distance hikers, from 35% with 10 to 20 pound packs to 69% above 31 pounds. Shoe type and pack weight were not linked to other injuries (Anderson and colleagues, 2009).',
+    'Numbness or tingling rose with pack weight in 128 long-distance hikers, from 35% with 10 to 20 pound packs to 69% above 31 pounds. Shoe type and pack weight were not linked to other muscle and joint injuries (Anderson and colleagues, 2009).',
     'Trekking poles reduced the load on the ankle, knee and hip when 15 experienced hikers walked downhill, with and without a pack (Bohne and Abendroth-Smith, 2007).',
   ],
   sections: [
@@ -79,8 +79,8 @@ export const HIKERS_EN: Guide = {
       },
       after: [
         '**Under the heel.** Plantar fasciitis typically hurts most with the first steps after rest. The 2023 heel pain guideline lists pain that started after a recent increase in weight-bearing activity as a typical feature (Koc and colleagues, 2023), which is exactly what a bigger hike is. A tight calf is the strongest known risk factor: in a study of 50 people with plantar fasciitis and 100 without, people with the least ankle bend had 23.3 times the odds (Riddle and colleagues, 2003).',
-        '**Back of the heel.** Achilles pain is more likely on long climbs, where the calf and tendon push you up every step. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-        '**Ball of the foot.** Long descents and a tight calf both shift load onto the front of the foot. See [ball of foot pain](/ball-of-foot-pain/).',
+        '**Back of the heel.** Achilles pain can flare on long climbs, where the calf and tendon push you up every step. See [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+        '**Ball of the foot.** Long descents and a tight calf can both shift load onto the front of the foot. See [ball of foot pain](/ball-of-foot-pain/).',
         '**Blisters and toenails.** Blisters were reported by 64% of 280 Appalachian Trail hikers, more than any other complaint (Boulware and colleagues, 2003). Dark or sore toenails after a day of descents usually mean the toes are hitting the front of the shoe. Both are skin and fit problems, not something exercise changes.',
       ],
       cites: [CITE.guideline, CITE.riddle, CITE.boulwareHikers],
@@ -116,7 +116,7 @@ export const HIKERS_EN: Guide = {
             'In the 2018 to 2019 Appalachian Trail survey, 58% wore running or trail shoes and 24% wore boots. Both went with fewer complaints than other footwear such as sandals (Chrusch and Kavin, 2021).',
           ],
         },
-        'So pick the shoe that fits, that you have already walked in, and that suits the ground. For heel pain in general, the 2023 guideline does not back insoles on their own and gives them a **C** when combined with exercise (Koc and colleagues, 2023). More in [insoles or exercises](/insoles-vs-exercises/). If you want to change to lighter or flatter shoes, do it over weeks, not on the first long hike; [barefoot shoes](/barefoot-shoes/) explains why.',
+        'So pick the shoe that fits, that you have already walked in, and that suits the ground. For heel pain in general, the 2023 guideline recommends against insoles used alone for short-term relief, grade B, and allows them alongside other care, grade C (Koc and colleagues, 2023). More in [insoles or exercises](/insoles-vs-exercises/). If you want to change to lighter or flatter shoes, do it over weeks, not on the first long hike; [barefoot shoes](/barefoot-shoes/) explains why.',
       ],
       cites: [CITE.andersonPack, CITE.chruschHikers, CITE.guideline],
     },
@@ -235,7 +235,7 @@ export const HIKERS_EN: Guide = {
     {
       q: 'Is it normal for your feet to hurt after hiking?',
       cites: [CITE.chruschHikers],
-      a: 'Some soreness after a long or steep hike is common and usually settles within a day or two. In a survey of 1,295 Appalachian Trail hikers, 29% reported foot pain. Pain that is sharp, sits on one spot of a bone, or is still there after a few easy days is worth getting checked.',
+      a: 'Some soreness after a long or steep hike is common and often settles within a day or two. In a survey of 1,295 Appalachian Trail hikers, 29% reported foot pain. Pain that is sharp, sits on one spot of a bone, or is still there after a few easy days is worth getting checked.',
     },
     {
       q: 'Why does my heel hurt after hiking?',
@@ -245,7 +245,7 @@ export const HIKERS_EN: Guide = {
     {
       q: 'Can I keep hiking with plantar fasciitis?',
       cites: [CITE.silbernagel],
-      a: 'Often yes, on shorter and flatter routes, if the pain stays moderate during the hike and settles by the next morning. That next-morning rule comes from an Achilles trial, not a hiking study. If the heel is worse each morning, cut distance and descent first. Our walking with plantar fasciitis guide explains how to build back up.',
+      a: 'Many people can, on shorter and flatter routes, if the pain stays moderate during the hike and settles by the next morning. That next-morning rule comes from an Achilles trial, not a hiking study. If the heel is worse each morning, cut distance and descent first. Our walking with plantar fasciitis guide explains how to build back up.',
     },
     {
       q: 'Are boots or trail runners better for foot pain?',
@@ -269,7 +269,7 @@ export const HIKERS_EN: Guide = {
     },
     {
       q: 'How long should feet hurt after a long hike?',
-      a: 'Ordinary soreness from a big day usually fades within a day or two of easy activity. If heel pain on the first steps keeps coming back every morning, or pain is still there after a week of shorter walks, it is more likely an overuse problem such as plantar fasciitis or Achilles pain, and worth a proper check.',
+      a: 'Ordinary soreness from a big day often fades within a day or two of easy activity. If heel pain on the first steps keeps coming back every morning, or pain is still there after a week of shorter walks, it is more likely an overuse problem such as plantar fasciitis or Achilles pain, and worth a proper check.',
     },
     {
       q: 'Should I stretch before a hike?',

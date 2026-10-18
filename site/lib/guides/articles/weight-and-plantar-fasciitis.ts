@@ -40,9 +40,9 @@ export const WEIGHT_PF_EN: Guide = {
   ],
   takeaways: [
     'In a case-control study of 50 people with plantar fasciitis and 100 without, a BMI over 30 came with 5.6 times the odds of plantar fasciitis, compared with a BMI of 25 or under. A stiff ankle was the strongest factor, at 23.3 times (Riddle and colleagues, 2003).',
-    'A review of 51 studies found that a BMI over 27 was the only clinical factor clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016).',
-    'No randomized trial has tested weight loss for heel pain. A 2012 review found only two studies, both after weight loss surgery, and called the evidence limited (Butterworth and colleagues, 2012).',
-    'The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Advice on keeping a healthy lean body mass is graded **E**, meaning it rests on expert opinion (Koc and colleagues, 2023).',
+    'A review of 51 studies found that a BMI over 27 was the only clinical factor, among those that could be pooled, clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016).',
+    'No randomized trial has tested weight loss for heel pain. A 2012 review found only two studies of weight loss and foot pain, both after weight loss surgery, and called the evidence limited (Butterworth and colleagues, 2012).',
+    'The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Advice on keeping a healthy lean body mass is graded **E**, meaning it rests on theory, not trials (Koc and colleagues, 2023).',
     'In a follow-up of 174 people, BMI did not predict who still had heel pain years later. Being a woman and having pain in both heels did (Hansen and colleagues, 2018).',
   ],
   toc: true,
@@ -99,7 +99,7 @@ export const WEIGHT_PF_EN: Guide = {
           ['Boules, 2018', '163 people with plantar fasciitis, after weight loss surgery', '90% had their heel symptoms resolve, per records'],
           ['Walsh, 2018', '45 people with foot pain: 29 had surgery, 16 waited', 'Foot pain fell after surgery'],
           ['Song, 2015', '41 adults, meal plan or wait', 'Lower foot pressure; pain not measured'],
-          ['Yang, 2025', '92 people taking semaglutide, among 2,902 with heel pain', 'Better pain scores than non-users'],
+          ['Yang, 2025', '92 people taking semaglutide, among 2,902 with heel pain', 'More pain improvement than non-users, not randomized'],
         ],
       },
       after: [
@@ -113,7 +113,7 @@ export const WEIGHT_PF_EN: Guide = {
       h2: 'Which exercises suit a higher body weight?',
       paragraphs: [
         'The exercises with the best grades in the 2023 guideline, stretching (**A**) and calf strength work (**B**), do not depend on your weight (Koc and colleagues, 2023). What changes is how you start. Seated and supported versions put less load through the heel and are easier on knees and balance, so they come first here.',
-        'These are the same starting doses as the main [plantar fasciitis exercises](/plantar-fasciitis-exercises/) guide. Do the first plantar fascia stretch sitting on the edge of the bed, before you stand: in a trial of 82 people, stretching before the first steps eased morning pain more than calf stretching alone (DiGiovanni and colleagues, 2003). If any exercise takes your heel pain to 6 out of 10, stop for the day.',
+        'These are the same starting doses as the main [plantar fasciitis exercises](/plantar-fasciitis-exercises/) guide. Do the first plantar fascia stretch sitting on the edge of the bed, before you stand: in a trial of 82 people, a plantar fascia stretch done before standing eased first-step morning pain more than calf stretching alone (DiGiovanni and colleagues, 2003). If any exercise takes your heel pain to 6 out of 10, stop for the day.',
       ],
       exercises: [
         {
@@ -210,7 +210,7 @@ export const WEIGHT_PF_EN: Guide = {
           ],
         },
         'A simple check works for any activity: if your first steps the next morning are clearly worse, that day was more than the heel could take, so do a little less next time. [Walking with plantar fasciitis](/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.',
-        'If you are starting to exercise to feel better or to lose weight, starting with low-impact activity lets you keep going while the heel settles. Jumping, running and long days on hard floors put the biggest peaks of load through the plantar fascia.',
+        'If you are starting to exercise to feel better or to lose weight, starting with low-impact activity lets you keep going while the heel settles. The guideline lists running and long hours on your feet, especially on hard surfaces, as risk factors for heel pain (Koc and colleagues, 2023).',
       ],
       cites: [CITE.guideline],
     },
@@ -218,7 +218,7 @@ export const WEIGHT_PF_EN: Guide = {
       h2: 'Do shoes and insoles matter more at a higher weight?',
       paragraphs: [
         'No study has tested shoes or insoles for heel pain in people with a higher weight specifically. For heel pain in general, the 2023 guideline grades insoles on their own **B against**: the evidence says not to rely on them alone. Combined with stretching and strength work, they get a **C** (Koc and colleagues, 2023). [Insoles or exercises](/insoles-vs-exercises/) compares the two.',
-        'The guideline does recommend footwear advice as part of managing load, and it lists weight-bearing work on hard surfaces with poor shock absorption as a risk factor (Koc and colleagues, 2023). In practice, that points to cushioned shoes with a firm heel, worn in the house too, instead of bare feet or thin slippers on hard floors.',
+        'The guideline does recommend footwear advice as part of managing load, and it lists weight-bearing work on hard surfaces with poor shock absorption as a risk factor (Koc and colleagues, 2023). One practical option, not tested in trials, is supportive, cushioned shoes on hard floors, including at home.',
         'After a lot of weight loss, feet can change. In the surgery study, the authors suggested that losing fat under the midfoot may change how shoes and insoles fit, and that this is worth checking after a large weight loss (Walsh and colleagues, 2018).',
       ],
       cites: [CITE.guideline, CITE.walshBariatric],
@@ -237,12 +237,12 @@ export const WEIGHT_PF_EN: Guide = {
     {
       q: 'Can being overweight cause plantar fasciitis?',
       cites: [CITE.riddle, CITE.vanLeeuwenBmi],
-      a: 'A higher weight is linked to plantar fasciitis, but no study proves it causes it. In people who are not athletes, a BMI over 30 came with 5.6 times the odds in one study, and a review of 51 studies found 3.7 times the odds above a BMI of 27. A stiff ankle was an even stronger factor.',
+      a: 'A higher weight is linked to plantar fasciitis, but no study proves it causes it. A BMI over 30 came with 5.6 times the odds in one study, and a review of 51 studies found 3.7 times the odds above a BMI of 27, with the link strongest in people who are not athletes. A stiff ankle was an even stronger factor.',
     },
     {
       q: 'Does losing weight help plantar fasciitis?',
-      cites: [CITE.butterworthBmi, CITE.boulesBariatric],
-      a: 'It may, but no randomized trial has tested it in people with heel pain. In a records study of 163 people with plantar fasciitis who had weight loss surgery, 90% had their heel symptoms resolve, but there was no comparison group, and most people with plantar fasciitis get better with time anyway. A 2012 review called the evidence limited.',
+      cites: [CITE.butterworthBmi, CITE.boulesBariatric, CITE.latt],
+      a: 'It may, but no randomized trial has tested it in people with heel pain. In a records study of 163 people with plantar fasciitis who had weight loss surgery, 90% had their heel symptoms resolve, but there was no comparison group, and most people with plantar fasciitis get better with non-surgical care anyway (Latt and colleagues, 2020). A 2012 review called the evidence limited.',
     },
     {
       q: 'How much weight do I need to lose to help plantar fasciitis?',
@@ -252,7 +252,7 @@ export const WEIGHT_PF_EN: Guide = {
     {
       q: 'Is BMI a risk factor for plantar fasciitis in runners?',
       cites: [CITE.irvingHeelPain, CITE.butterworthBmi],
-      a: 'Mostly not. Two systematic reviews found that BMI was linked to chronic heel pain in people who are not athletes, but not in athletes. In runners, training load, such as a sudden jump in distance, matters more. See [heel pain in runners](/heel-pain-runners/).',
+      a: 'Mostly not. Two systematic reviews found that BMI was linked to chronic heel pain in people who are not athletes, but not in athletes. See [heel pain in runners](/heel-pain-runners/) for the factors that matter more in runners.',
     },
     {
       q: 'What exercise can I do with plantar fasciitis if I am overweight?',
@@ -277,7 +277,7 @@ export const WEIGHT_PF_EN: Guide = {
     {
       q: 'Are insoles more important if I am heavier?',
       cites: [CITE.guideline],
-      a: 'No study has tested that. For heel pain in general, the 2023 guideline advises against relying on insoles alone (grade B against) and gives them a C when combined with stretching and strength work. Cushioned shoes with a firm heel, worn indoors too, are a sensible start. See [insoles or exercises](/insoles-vs-exercises/).',
+      a: 'No study has tested that. For heel pain in general, the 2023 guideline advises against relying on insoles alone (grade B against) and gives them a C when combined with stretching and strength work. Cushioned shoes on hard floors are a practical option, though trials have not tested them. See [insoles or exercises](/insoles-vs-exercises/).',
     },
   ],
   redFlags: {

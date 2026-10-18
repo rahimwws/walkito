@@ -129,7 +129,7 @@ export const WALKING_PF_EN: Guide = {
           list: [
             'Choose grass, a park path or a track over concrete for longer walks, if it feels better.',
             'Keep shoes on at home on tile or wood, especially for the first steps of the day.',
-            'Go easy on long downhill stretches and steep hills until the flat walk passes the pain rule.',
+            'Go easy on long downhill stretches and steep hills until the flat walk passes the pain rule. More on descents, packs and poles in [foot pain after hiking](/hiking-foot-pain/).',
           ],
         },
         'A deep ache right in the center of the heel that is clearly worse on hard ground can come from the heel fat pad rather than the plantar fascia. See [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
