@@ -73,7 +73,7 @@ export const ANKLE_STRENGTHENING_ES: Guide = {
     {
       h2: 'Los ejercicios para fortalecer el tobillo, en orden',
       paragraphs: [
-        'Empieza en la etapa 1 si te torciste el tobillo hace poco o si se siente débil al caminar en terreno irregular. Si las elevaciones de talón con dos pies ya te resultan fáciles, puedes empezar en la etapa 2 o 3. Deja cualquier ejercicio por el día si el dolor llega a **6/10**, o si el tobillo amanece más hinchado o adolorido.',
+        'Empieza en la etapa 1 si te torciste el tobillo hace poco o si se siente débil al caminar en terreno irregular. Si lo que te duele son los pies en caminatas por el monte, mira [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/). Si las elevaciones de talón con dos pies ya te resultan fáciles, puedes empezar en la etapa 2 o 3. Deja cualquier ejercicio por el día si el dolor llega a **6/10**, o si el tobillo amanece más hinchado o adolorido.',
         'Las dosis de abajo son puntos de partida modestos. Los ensayos de esta página usaron sus propios programas, que se describen en cada sección.',
       ],
       exercises: [

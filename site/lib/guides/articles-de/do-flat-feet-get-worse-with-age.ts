@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
         '**Eine Schwangerschaft kann das Gewölbe etwas absenken, und die Veränderung kann nach der Geburt bleiben.** In einer Studie von 2013 wurden die Füße von 49\u00A0Frauen im ersten Schwangerschaftsdrittel und erneut etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Steifigkeit des Gewölbes nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu.',
         'Den größten Teil der Veränderung brachte die erste Schwangerschaft. Bei Erstgebärenden wuchs die Fußlänge im Schnitt um etwa 1,4\u00A0Millimeter und das Absinken des Gewölbes um etwa 1,0\u00A0Millimeter.',
         'Zwei Dinge rücken das ins richtige Verhältnis. Die Autorinnen und Autoren nannten die durchschnittlichen Veränderungen klein, und die Studie fand keine Veränderung bei einem Maß dafür, wie der Fuß beim Gehen abrollte. „Bleibend“ heißt in dieser Studie: beim Nachuntersuchungstermin ein paar Monate nach der Geburt noch vorhanden. Niemand wurde über Jahre begleitet.',
-        'Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.',
+        'Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn deine Fersen in der Schwangerschaft schmerzen, lies [Fersenschmerzen in der Schwangerschaft](/de/fersenschmerzen-schwangerschaft/). Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.',
       ],
       cites: [CITE.segalPregnancy],
     },

@@ -27,7 +27,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
   ],
   takeaways: [
     'La guía de 2023 para el dolor de talón describe el dolor de la fascitis plantar como «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo», pero también menciona que el dolor empeora con la actividad prolongada que implica apoyar el peso como un rasgo clave (Koc y colegas, 2023).',
-    'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida (cuánto puede subir el pie hacia la tibia) fue el factor de riesgo independiente más fuerte, por delante de un índice de masa corporal mayor de 30 y de estar de pie la mayor parte de la jornada laboral (Riddle y colegas, 2003).',
+    'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida (cuánto puede subir el pie hacia la tibia) fue el factor de riesgo independiente más fuerte, por delante de un [índice de masa corporal mayor de 30](/es/peso-y-fascitis-plantar/) y de estar de pie la mayor parte de la jornada laboral (Riddle y colegas, 2003).',
     'La guía le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza una **B** (Koc y colegas, 2023).',
     'Cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, como estiramientos, trabajo de pantorrilla y manejo de la carga (Latt y colegas, 2020).',
     'Un dolor de talón después de caminar que aumenta con cada sesión y no se calma con el descanso puede apuntar a una fractura por estrés en lugar de fascitis plantar. Apretar los lados del talón es una señal clínica.',
@@ -50,8 +50,8 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
         {
           list: [
             '**Atrofia de la almohadilla grasa del talón.** La almohadilla grasa bajo el hueso del talón amortigua cada paso. Cuando se adelgaza o se desplaza, el hueso recibe más impacto directo. Una revisión exploratoria de 2022 señaló que el dolor de la almohadilla grasa tiende a ser un dolor profundo y sordo en el centro del talón, peor sobre superficies duras y al caminar descalzo (Chang y colegas, 2022). El dolor de la fascitis plantar suele estar en la parte interna y delantera del talón. El dolor de la almohadilla grasa está justo en el centro. Si caminar descalzo sobre azulejo o concreto es claramente peor que caminar con zapatos amortiguados, la atrofia de la almohadilla grasa vale la pena considerarla. Mira [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/) para más información.',
-            '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles puede doler después de una caminata larga, sobre todo cuesta arriba. Si tu dolor está en la parte de atrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
-            '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco después de un salto en la distancia o intensidad de las caminatas. A diferencia de la fascitis plantar, el dolor de la fractura por estrés tiende a aumentar con la actividad y no aliviarse mucho con el descanso. Apretar los lados del talón puede reproducir el dolor. Si eso encaja con tu patrón, consulta a un profesional de la salud antes de ejercitar el pie.',
+            '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles puede doler después de una caminata larga, sobre todo cuesta arriba. Para caminatas con subidas y bajadas largas, mira [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/). Si tu dolor está en la parte de atrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+            '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco después de un salto en la distancia o intensidad de las caminatas. A diferencia de la fascitis plantar, el dolor de la fractura por estrés tiende a aumentar con la actividad y no aliviarse mucho con el descanso. Apretar los lados del talón puede reproducir el dolor. Si eso encaja con tu patrón, consulta a un profesional de la salud antes de ejercitar el pie. [Fascitis plantar o fractura por estrés](/es/fascitis-plantar-o-fractura-por-estres/) compara las dos lado a lado.',
             '**Dolor referido de la espalda baja o atrapamiento nervioso.** Un dolor de talón que viene con entumecimiento, hormigueo o ardor puede apuntar a un problema nervioso, no a un problema de carga del tejido. Esta es una razón para consultar a un profesional de la salud primero.',
           ],
         },
@@ -156,7 +156,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     {
       h2: '¿Cuánto deberías caminar si te duele el talón?',
       paragraphs: [
-        'La meta no es dejar de caminar. Es encontrar la distancia que tu talón puede aguantar sin que empeore a la mañana siguiente, y después construir desde ahí.',
+        'La meta no es dejar de caminar. Es encontrar la distancia que tu talón puede aguantar sin que empeore a la mañana siguiente, y después construir desde ahí. En [cuánto puedes caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/) tienes una regla de dolor sencilla y una forma de ir subiendo.',
         'Un enfoque práctico:',
         {
           list: [

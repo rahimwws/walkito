@@ -39,7 +39,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       figure: { id: 'heel-side', caption: 'Un espolón, cuando existe, se forma en la parte inferior del hueso del talón, cerca de donde se une la fascia plantar.', alt: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.' },
       paragraphs: [
         '**Un espolón calcáneo y la fascitis plantar no son lo mismo.** La fascitis plantar es un problema de tejido blando: la fascia plantar, la banda gruesa que va del hueso del talón a los dedos, se irrita, generalmente donde se une al hueso. Un espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón (el calcáneo). Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.',
-        'La fascitis plantar provoca el dolor agudo y punzante que la gente describe en la parte de abajo del talón, sobre todo en los primeros pasos de la mañana o después de estar sentado un rato. La guía de 2023 la define como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Un espolón calcáneo, en cambio, es un hallazgo estructural en una radiografía. Puede o no producir síntomas por sí solo.',
+        'La fascitis plantar provoca el dolor agudo y punzante que la gente describe en la parte de abajo del talón, sobre todo en los primeros pasos de la mañana o después de estar sentado un rato. El dolor en la parte de atrás del talón es otro problema: mira [fascitis plantar o tendinitis de Aquiles](/es/fascitis-plantar-o-tendinitis-de-aquiles/). La guía de 2023 la define como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Un espolón calcáneo, en cambio, es un hallazgo estructural en una radiografía. Puede o no producir síntomas por sí solo.',
         'La confusión es comprensible. Durante décadas se pensó que los espolones eran la causa del dolor plantar del talón. Esa visión ha sido reemplazada en gran medida por evidencia que muestra que los espolones son comunes en personas sin dolor, y que muchas personas con fascitis plantar no tienen ningún espolón.',
       ],
       cites: [CITE.ehrmannSpur, CITE.guideline],
@@ -101,7 +101,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
           list: [
             'Cuando el dolor no sigue el patrón típico de la fascitis plantar.',
             'Cuando no ha mejorado después de varias semanas de cuidados conservadores.',
-            'Cuando el profesional sospecha algo distinto, como una fractura por estrés, un problema nervioso o un desgarro de la fascia plantar.',
+            'Cuando el profesional sospecha algo distinto, como una [fractura por estrés](/es/fascitis-plantar-o-fractura-por-estres/), un problema nervioso o un desgarro de la fascia plantar.',
           ],
         },
         'El ultrasonido puede medir el grosor de la fascia plantar (una lectura por encima de 4\u00A0mm generalmente se considera engrosada), y la resonancia magnética puede mostrar detalles de tejido blando que la radiografía no capta.',

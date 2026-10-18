@@ -197,7 +197,7 @@ export const CHEFS_ES: Guide = {
     {
       h2: '¿Cómo meter los ejercicios en un turno de cocina?',
       paragraphs: [
-        'Un turno partido o un doble turno deja poco espacio para una rutina, así que amarra los ejercicios a algo que ya haces:',
+        'Un turno partido o un doble turno deja poco espacio para una rutina, así que asocia los ejercicios a algo que ya haces:',
         {
           list: [
             '**Si tienes 3\u00A0minutos:** el estiramiento de pantorrilla y el estiramiento de sóleo, 30\u00A0segundos por lado, antes del servicio o cuando te cambias de zapatos. Eso cubre la pantorrilla tensa, el factor de riesgo más fuerte en el estudio de casos y controles.',
@@ -205,7 +205,7 @@ export const CHEFS_ES: Guide = {
             '**Si tienes 10\u00A0minutos:** en un día libre o después del turno, agrega las elevaciones de talón y un minuto de automasaje plantar. El trabajo de fuerza tiene grado **B**.',
           ],
         },
-        'Los descansos en sí parecen importar. En 1909 trabajadores de cocina en Corea, las mujeres que reportaron descansos insuficientes tuvieron 1,68 veces las probabilidades de problemas musculoesqueléticos (Park y colegas, 2021). El vínculo se reportó para las mujeres, y una encuesta así no puede demostrar causa y efecto. Aun así, vale la pena defender unos minutos sentado entre rachas de trabajo.',
+        'Los descansos en sí parecen importar. En un estudio con 1909 trabajadores de cocina en Corea, las mujeres que reportaron descansos insuficientes tuvieron 1,68 veces las probabilidades de problemas musculoesqueléticos (Park y colegas, 2021). El vínculo se reportó para las mujeres, y una encuesta así no puede demostrar causa y efecto. Aun así, vale la pena defender unos minutos sentado entre rachas de trabajo.',
         'Para la fascitis plantar en general, cerca del 90\u00A0% de las personas mejora con tratamiento sin cirugía, aunque puede tardar meses; ve [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/). La guía de 2023 también sugiere ajustar la carga sobre los pies en el trabajo, un consejo con grado **E** porque se basa en la teoría, no en ensayos.',
       ],
       cites: [CITE.riddle, CITE.guideline, CITE.parkRestBreaks, CITE.latt],

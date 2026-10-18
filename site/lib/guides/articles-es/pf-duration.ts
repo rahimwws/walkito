@@ -80,7 +80,7 @@ export const PF_DURATION_ES: Guide = {
         '**Dolor en los dos talones.** Las personas con dolor en los dos talones al inicio tenían más o menos un tercio de la tasa anual de quedarse sin síntomas que las que tenían dolor de un solo lado (razón de tasas de riesgo 0,33, p menor que 0,01). Los autores señalaron que el dolor en los dos lados podría reflejar una afección inflamatoria no detectada, ya que el dolor en las uniones de tendón y hueso de los dos lados es típico de algunas formas de artritis. Nadie en su cohorte tenía un diagnóstico inflamatorio conocido, pero no se hicieron análisis de sangre para buscarlo (Hansen y colegas, 2018).',
           ],
         },
-        'El IMC, la edad, fumar, tener un trabajo físicamente exigente, el grosor de la fascia en el ultrasonido y tener un espolón calcáneo no tuvieron un efecto significativo en el pronóstico en ese estudio. Lo último sorprende a mucha gente: tener un espolón no hizo que los síntomas duraran más ni menos (p = 0,88). Estudios anteriores tampoco encontraron relación entre los espolones calcáneos y los síntomas.',
+        'El [IMC](/es/peso-y-fascitis-plantar/), la edad, fumar, tener un trabajo físicamente exigente, el grosor de la fascia en el ultrasonido y tener un espolón calcáneo no tuvieron un efecto significativo en el pronóstico en ese estudio. Lo último sorprende a mucha gente: tener un espolón no hizo que los síntomas duraran más ni menos (p = 0,88). Estudios anteriores tampoco encontraron relación entre los espolones calcáneos y los síntomas.',
         'Si te duelen los dos talones y la rigidez de la mañana dura mucho, o hay otras articulaciones afectadas, vale la pena comentarlo con un profesional de la salud aunque los ejercicios te estén ayudando. En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) está cuándo el dolor en los dos talones es una señal de alerta.',
       ],
       sourceNote:
@@ -181,7 +181,7 @@ export const PF_DURATION_ES: Guide = {
     {
       q: '¿Caminar es bueno para la fascitis plantar?',
       cites: [CITE.guideline],
-      a: 'Caminar con moderación y con zapatos de buen soporte suele estar bien, y la guía no dice que dejes de moverte. Lo que importa es si la mañana siguiente es peor. Si el dolor de los primeros pasos después de una caminata es claramente más alto de lo normal, esa caminata fue más de lo que el pie podía aguantar. Acorta la distancia o el tiempo en lugar de dejarlo del todo.',
+      a: 'Caminar con moderación y con zapatos de buen soporte suele estar bien, y la guía no dice que dejes de moverte. Lo que importa es si la mañana siguiente es peor. Si el dolor de los primeros pasos después de una caminata es claramente más alto de lo normal, esa caminata fue más de lo que el pie podía aguantar. Acorta la distancia o el tiempo en lugar de dejarlo del todo. Mira [cuánto puedes caminar](/es/caminar-con-fascitis-plantar/).',
     },
     {
       q: '¿Cuándo debo ir al médico si la fascitis plantar no mejora?',

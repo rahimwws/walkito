@@ -91,7 +91,7 @@ export const RETAIL_WAREHOUSE_ES: Guide = {
       keyFact: 'La guía de 2023 para el dolor de talón les da a los estiramientos de pantorrilla y de fascia plantar un grado A, su grado más alto, y al entrenamiento de fuerza un grado B (Koc y colegas, 2023).',
       paragraphs: [
         'Los ejercicios de abajo no necesitan equipo ni más espacio que una pared, un rack o la orilla de un mostrador. Los tres primeros se hacen de pie en la sala de descanso o en un pasillo de bodega. Los demás son para después del turno, sentado.',
-        'La guía califica los estiramientos de pantorrilla y de fascia plantar con **A** y el trabajo de fuerza con **B**. Esos grados son para la fascitis plantar, pero son los mismos tejidos que carga un turno en pisos duros. Para por ese día si algún ejercicio sube tu dolor a 6 de 10 o más.',
+        'La guía califica los estiramientos de pantorrilla y de fascia plantar con **A** y el trabajo de fuerza con **B**. Esos grados son para la fascitis plantar, pero son los mismos tejidos que carga un turno en pisos duros. Detente por hoy si algún ejercicio sube tu dolor a 6 de 10 o más.',
       ],
       exercises: [
         {
@@ -217,7 +217,7 @@ export const RETAIL_WAREHOUSE_ES: Guide = {
       h2: '¿Podría ser fascitis plantar u otra cosa?',
       paragraphs: [
         'Un dolor general y los pies cansados después de un turno largo suelen calmarse con una noche de descanso. La fascitis plantar tiene un patrón más claro: dolor agudo cerca de la parte interna del talón, peor en los primeros pasos de la mañana o después de estar sentado. Si eso te suena, consulta [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) y [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Cerca del 90\u00A0% de las personas con fascitis plantar mejoran con tratamiento sin cirugía, aunque puede tardar de tres a seis meses (Latt y colegas, 2020).',
-        'Otros patrones apuntan a otra parte. Un dolor ardiente bajo la planta, en la parte delantera del pie, apunta a [metatarsalgia](/es/metatarsalgia-dolor-planta-del-pie/). Un dolor a lo largo del arco que empeora durante el turno se trata en [dolor en el arco del pie](/es/dolor-en-el-arco-del-pie/). El dolor en la parte de arriba del pie puede venir de botas con las agujetas o la presión demasiado apretadas; consulta [dolor en el empeine](/es/dolor-en-el-empeine/).',
+        'Otros patrones apuntan a otra parte. Un dolor ardiente bajo la planta, en la parte delantera del pie, apunta a [metatarsalgia](/es/metatarsalgia-dolor-planta-del-pie/). Un dolor a lo largo del arco que empeora durante el turno se trata en [dolor en el arco del pie](/es/dolor-en-el-arco-del-pie/). El dolor en la parte de arriba del pie puede venir de botas que aprietan demasiado o con las agujetas muy apretadas; consulta [dolor en el empeine](/es/dolor-en-el-empeine/).',
         'Un dolor en un punto pequeño de un hueso que empeora cuanto más caminas puede ser una fractura por estrés, sobre todo después de un aumento de horas o de un trabajo nuevo con más caminata. **Eso necesita un profesional de la salud, no más ejercicio.**',
       ],
       cites: [CITE.latt, CITE.patelStressFracture],

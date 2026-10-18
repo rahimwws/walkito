@@ -19,7 +19,7 @@ export const WEIGHT_PF_ES: Guide = {
   updated: '2026-10-18',
   title: 'Fascitis plantar y sobrepeso: qué dice la evidencia',
   description:
-    '¿El peso causa fascitis plantar y bajar de peso ayuda? Lo que muestran los estudios, por qué importa la carga y ejercicios sentado para un peso más alto.',
+    '¿El peso causa fascitis plantar y bajar de peso ayuda? Lo que muestran los estudios, por qué importa la carga y ejercicios en silla para un peso más alto.',
   h1: 'Peso y fascitis plantar: qué muestra la investigación y qué ayuda desde hoy',
   lede:
     'Un peso corporal más alto es uno de los factores de riesgo más claros de la [fascitis plantar](/es/fascitis-plantar/) en personas que no son deportistas. En una revisión de 51\u00A0estudios, un índice de masa corporal (IMC) mayor de 27 se asoció con 3,7\u00A0veces más probabilidades de fascitis plantar (van Leeuwen y colegas, 2016). Si bajar de peso alivia el dolor de talón está menos claro: ningún ensayo aleatorizado lo ha probado en personas con dolor de talón, así que los estiramientos y el trabajo de fuerza que la guía de 2023 califica más alto son el punto de partida, con cualquier peso.',
@@ -87,7 +87,7 @@ export const WEIGHT_PF_ES: Guide = {
           ['Boules, 2018', '163\u00A0personas con fascitis plantar, después de una cirugía para bajar de peso', 'Los síntomas de talón desaparecieron en el 90\u00A0%, según los expedientes'],
           ['Walsh, 2018', '45\u00A0personas con dolor de pie: 29 se operaron, 16 esperaron', 'El dolor de pie bajó después de la cirugía'],
           ['Song, 2015', '41\u00A0adultos, plan de alimentación o espera', 'Menos presión en el pie; el dolor no se midió'],
-          ['Yang, 2025', '92\u00A0personas que usaban semaglutida, entre 2902 con dolor de talón', 'Mejoraron más del dolor que quienes no la usaban; no aleatorizado'],
+          ['Yang, 2025', '92\u00A0personas que usaban semaglutida, entre 2902 con dolor de talón', 'Mayor mejoría del dolor que quienes no la usaban; no aleatorizado'],
         ],
       },
       after: [
@@ -100,7 +100,7 @@ export const WEIGHT_PF_ES: Guide = {
     {
       h2: '¿Qué ejercicios son adecuados con un peso corporal más alto?',
       paragraphs: [
-        'Los ejercicios con las mejores calificaciones en la guía de 2023, los estiramientos (**A**) y el trabajo de fuerza de pantorrilla (**B**), no dependen de tu peso (Koc y colegas, 2023). Lo que cambia es cómo empiezas. Las versiones sentado y con apoyo ponen menos carga sobre el talón y son más amables con las rodillas y el equilibrio, así que aquí van primero.',
+        'Los ejercicios con las mejores calificaciones en la guía de 2023, los estiramientos (**A**) y el trabajo de fuerza de pantorrilla (**B**), no dependen de tu peso (Koc y colegas, 2023). Lo que cambia es cómo empiezas. Las versiones sentado y con apoyo ponen menos carga sobre el talón y exigen menos a las rodillas y al equilibrio, así que aquí van primero.',
         'Son las mismas dosis iniciales de la guía principal de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Haz el primer estiramiento de la fascia plantar sentado en la orilla de la cama, antes de pararte: en un ensayo con 82\u00A0personas, un estiramiento de la fascia plantar hecho antes de pararse alivió el dolor del primer paso de la mañana más que el estiramiento de pantorrilla solo (DiGiovanni y colegas, 2003). Si algún ejercicio lleva tu dolor de talón a 6 de 10, para por ese día.',
       ],
       exercises: [
@@ -149,7 +149,7 @@ export const WEIGHT_PF_ES: Guide = {
           dose: '3\u00A0series de 10, los dos pies',
           often: '3\u00A0días a la semana, nunca dos seguidos',
           feel: 'Trabajo en la parte baja de la pantorrilla',
-          how: 'Siéntate con los pies apoyados y empuja hacia arriba con la parte delantera de la planta. Las manos sobre las rodillas añaden resistencia. Con la rodilla doblada trabaja sobre todo el sóleo, el músculo más profundo de la pantorrilla, casi sin carga en el talón. Es el primer paso del trabajo de pantorrilla, pese lo que pese.',
+          how: 'Siéntate con los pies apoyados y empuja hacia arriba con la parte delantera de la planta. Las manos sobre las rodillas añaden resistencia. Con la rodilla doblada trabaja sobre todo el sóleo, el músculo más profundo de la pantorrilla, casi sin carga en el talón. Es el primer paso del trabajo de pantorrilla, sea cual sea tu peso.',
           stop: 'Dolor de talón que llega a 6 de 10, o que está peor a la mañana siguiente',
           image: 'Ejercicio: elevaciones de talón sentado',
           media: 'heel_raise_seated',
@@ -186,7 +186,7 @@ export const WEIGHT_PF_ES: Guide = {
       cites: [CITE.guideline, CITE.digiovanni2003, CITE.rathleff],
     },
     {
-      h2: '¿Qué actividades son más amables con el talón?',
+      h2: '¿Qué actividades cargan menos el talón?',
       paragraphs: [
         '**Las actividades en las que tus pies no reciben todo tu peso en cada paso.** La guía aconseja cambiar la carga sobre los pies en lugar de dejar la actividad (Koc y colegas, 2023). Ningún estudio ha comparado actividades en personas con dolor de talón y un peso más alto, así que estas son opciones prácticas, no probadas:',
         {
@@ -197,7 +197,7 @@ export const WEIGHT_PF_ES: Guide = {
             '**Caminatas más cortas y más frecuentes.** Varias caminatas cortas pueden ser más fáciles para un talón adolorido que una larga.',
           ],
         },
-        'Una revisión sencilla sirve para cualquier actividad: si tus primeros pasos de la mañana siguiente están claramente peor, ese día fue más de lo que el talón podía aguantar, así que la próxima vez haz un poco menos. [Caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/) explica cómo volver a subir las caminatas paso a paso.',
+        'Una comprobación sencilla sirve para cualquier actividad: si tus primeros pasos de la mañana siguiente están claramente peor, ese día fue más de lo que el talón podía aguantar, así que la próxima vez haz un poco menos. [Caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/) explica cómo volver a aumentar las caminatas paso a paso.',
         'Si estás empezando a hacer ejercicio para sentirte mejor o para bajar de peso, comenzar con actividades de bajo impacto te permite seguir mientras el talón se calma. La guía incluye correr y pasar muchas horas de pie, sobre todo en superficies duras, como factores de riesgo del dolor de talón (Koc y colegas, 2023).',
       ],
       cites: [CITE.guideline],

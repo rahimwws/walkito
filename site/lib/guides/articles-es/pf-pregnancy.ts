@@ -48,7 +48,7 @@ export const PF_PREGNANCY_ES: Guide = {
       keyFact: 'De 49\u00A0mujeres, 35 tenían el arco más bajo y 30 el pie más largo unos cuatro meses y medio después del parto (Segal y colegas, 2013).',
       paragraphs: [
         '**El hallazgo más claro es que el arco baja y el pie se alarga.** Un estudio de 2013 midió a 49\u00A0mujeres en el primer trimestre y otra vez unos cuatro meses y medio después del parto. La altura y la rigidez del arco bajaron, y la longitud del pie y el descenso del arco aumentaron. 35 de las 49 tenían el arco más bajo, y 30 tenían el pie más largo, la mayoría entre 2 y 10\u00A0milímetros.',
-        'La causa es menos clara de lo que dicen muchas páginas. En ese estudio, la laxitud de las articulaciones y el aumento de peso durante el embarazo no se relacionaron con cuánto cambió el pie. El peso y las muchas horas de pie son factores de riesgo conocidos de la fascitis plantar en general (Koc y colegas, 2023), pero ningún estudio los ha probado en el embarazo.',
+        'La causa es menos clara de lo que dicen muchas páginas. En ese estudio, la laxitud de las articulaciones y el aumento de peso durante el embarazo no se relacionaron con cuánto cambió el pie. El [peso](/es/peso-y-fascitis-plantar/) y las muchas horas de pie son factores de riesgo conocidos de la fascitis plantar en general (Koc y colegas, 2023), pero ningún estudio los ha probado en el embarazo.',
         'La hinchazón, un cuerpo que pesa más y una forma distinta de caminar cambian cómo se reparte la carga en el pie. La fascia plantar es la banda bajo el pie que sostiene el arco, así que un arco más bajo y más carga pueden tensarla. Más sobre cómo un arco más bajo puede durar después del parto: [pie plano con la edad](/es/pie-plano-con-la-edad/).',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -206,7 +206,7 @@ export const PF_PREGNANCY_ES: Guide = {
     {
       q: '¿Caminar empeora la fascitis plantar en el embarazo?',
       cites: [CITE.acogExercise],
-      a: 'Caminar es una de las actividades que sugiere el ACOG en el embarazo, dentro de al menos 150\u00A0minutos de actividad moderada a la semana. Ningún estudio ha analizado caminar con fascitis plantar durante el embarazo, así que pregunta a tu médico o a tu ginecólogo cuánto te conviene.',
+      a: 'Caminar es una de las actividades que sugiere el ACOG en el embarazo, dentro de al menos 150\u00A0minutos de actividad moderada a la semana. Ningún estudio ha analizado [caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/) durante el embarazo, así que pregunta a tu médico o a tu ginecólogo cuánto te conviene.',
     },
     {
       q: '¿Me pueden hacer ondas de choque o una infiltración con corticoides si estoy embarazada?',

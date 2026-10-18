@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
         'Si la rodilla se hinchó, se trabó, falló, o se lastimó en un giro o una caída.',
         'Cómo se mueven la rodilla, la cadera y el pie en una sentadilla o al bajar de un escalón.',
         'La fuerza de los músculos de la parte externa y trasera de la cadera, y del muslo.',
-        'Si tu pie plano es flexible (el arco vuelve cuando te sientas o subes en puntas) o rígido. Mira [pie plano](/es/pie-plano/) para la prueba rápida.',
+        'Si tu pie plano es flexible (el arco vuelve cuando te sientas o subes en puntas) o rígido. Mira [pie plano](/es/pie-plano/) para la prueba rápida, o el [test de pie plano](/es/test-pie-plano/) para las cuatro pruebas en casa.',
         'En adultos mayores, señales de osteoartritis de rodilla, que pueden requerir una radiografía.',
       ],
       cites: [CITE.willyPfpGuideline],

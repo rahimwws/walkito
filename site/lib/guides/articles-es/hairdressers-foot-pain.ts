@@ -27,7 +27,7 @@ export const HAIRDRESSERS_ES: Guide = {
   toc: true,
   takeaways: [
     'De 384 estilistas en la India, el 49,5\u00A0% reportó dolor de rodilla o de pie en los últimos 12\u00A0meses, frente al 38,3\u00A0% de 384 personas de otros trabajos. El estudio contó rodilla y pie juntos (Mishra y Sarkar, 2021).',
-    'Una revisión exploratoria de 2019 con 44 estudios encontró solo 5 que reportaron dolor de pies en estilistas, con cifras de 10 a 44\u00A0%. La mayoría de los estudios se fijó en la espalda, el cuello, los hombros y las manos, y estar de pie fue uno de los factores de riesgo más comunes (Kozak y colegas, 2019).',
+    'Una revisión exploratoria de 2019 con 44 estudios encontró solo 5 que reportaron dolor de pies en estilistas, con cifras de 10 a 44\u00A0%. La mayoría de los estudios se fijó en la espalda, el cuello, los hombros y las manos, y estar de pie fue uno de los factores de riesgo frecuentes (Kozak y colegas, 2019).',
     'En un ensayo cruzado aleatorizado con 108 estilistas, las medias de compresión de 15 a 20\u00A0mmHg bajaron en un 12\u00A0% la puntuación de dolor e hinchazón de piernas y en 19\u00A0mL el volumen de la parte baja de la pierna, en promedio (Blazek y colegas, 2013).',
     'Una revisión de 2018 con 10 estudios encontró evidencia moderada de que los pisos más blandos y las plantillas acolchadas reducen las molestias y el cansancio en personas que trabajan de pie (Speed y colegas, 2018).',
     'Una pantorrilla tensa fue el factor de riesgo más fuerte de fascitis plantar en un estudio de casos y controles de 2003, al multiplicar por 23,3 las probabilidades, y estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003).',
@@ -57,7 +57,7 @@ export const HAIRDRESSERS_ES: Guide = {
           ],
         },
         'Los estudios de laboratorio muestran qué tan rápido se acumula esto. Una revisión de 2017 con 25 estudios de laboratorio encontró que los síntomas lumbares se volvían clínicamente relevantes después de unos 71\u00A0minutos de pie en promedio, y después de 42\u00A0minutos en personas propensas al dolor por estar de pie. Un solo tinte o corte puede durar más que eso. Una revisión de 2015 sobre el trabajo de pie relacionó estar de pie mucho tiempo con dolor lumbar y de piernas, molestias y cansancio en muchos trabajos.',
-        'En un estudio de 2023 con estilistas turcos, quienes reportaron cansancio en las piernas también tenían más dolor en las rodillas y en la parte baja de las piernas, y peores puntuaciones de energía y movilidad. **La hinchazón también se puede medir:** en 38 estilistas, el contorno del tobillo pasó de 21,1\u00A0cm en la mañana a 22,1\u00A0cm al final de un día sin compresión.',
+        'En un estudio de 2023 con estilistas turcos, quienes reportaron cansancio en la parte baja de las piernas también tenían más dolor en las rodillas y en la parte baja de las piernas, y peores puntuaciones de energía y movilidad. **La hinchazón también se puede medir:** en 38 estilistas, el contorno del tobillo pasó de 21,1\u00A0cm en la mañana a 22,1\u00A0cm al final de un día sin compresión.',
       ],
       cites: [CITE.coenen, CITE.waters, CITE.inceParpucuHairdressers, CITE.agleHosiery],
     },

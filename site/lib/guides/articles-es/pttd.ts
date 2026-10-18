@@ -53,7 +53,7 @@ export const PTTD_ES: Guide = {
         '**Etapa IV** agrega la afectación de la articulación del tobillo. El tobillo se inclina en valgo, es decir, se va hacia afuera. Es la etapa más avanzada y normalmente requiere intervención quirúrgica.',
           ],
         },
-        '**La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II.** Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una herramienta rápida: si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
+        '**La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II.** Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una [herramienta rápida](/es/test-pie-plano/): si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

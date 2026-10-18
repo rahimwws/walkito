@@ -41,7 +41,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     {
       h2: '¿Qué causa el dolor en la planta del pie?',
       paragraphs: [
-        '**Metatarsalgia** es el nombre más común. Describe dolor e inflamación alrededor de una o más cabezas de los metatarsianos, casi siempre la segunda y la tercera. El sobreuso, un segundo metatarsiano largo, el arco alto y la pantorrilla rígida pueden contribuir.',
+        '**Metatarsalgia** es el nombre más común. Describe dolor e inflamación alrededor de una o más cabezas de los metatarsianos, casi siempre la segunda y la tercera. El sobreuso, un segundo metatarsiano largo, el arco alto y la pantorrilla rígida pueden contribuir. Si empieza en caminatas largas por el monte, mira [dolor de pies después del senderismo](/es/dolor-de-pies-senderismo/).',
         '**Neuroma de Morton** es un engrosamiento del nervio que pasa entre las cabezas de los metatarsianos, casi siempre entre el tercer y el cuarto dedo. Produce ardor, hormigueo o entumecimiento más que un dolor sordo. Los zapatos angostos o de tacón aprietan el nervio y lo empeoran.',
         '**Sesamoiditis** es la inflamación de los dos huesitos que están dentro del tendón, debajo de la articulación del dedo gordo. El dolor está justo debajo del dedo gordo, no en el centro de la parte delantera del pie.',
         '**Fractura por estrés de un metatarsiano** es una pequeña fisura en uno de los metatarsianos, casi siempre el segundo o el tercero. El dolor está en un punto concreto, suele empeorar a lo largo del día y puede doler de noche. Es común que se hinche la parte de arriba del pie. Este caso necesita estudios de imagen y reposo.',

@@ -21,7 +21,7 @@ export const HIKERS_ES: Guide = {
     'Dolor de pies después del senderismo: qué hallaron las encuestas, talón, Aquiles y antepié, peso de la mochila, botas o zapatillas y una rutina breve.',
   h1: 'Dolor de pies después del senderismo: por qué te duelen y qué hacer',
   lede:
-    'Terminar una caminata larga con los pies adoloridos es común, y en gran parte se debe a la sobrecarga: más distancia, más bajada o una mochila más pesada de lo que tus pies están acostumbrados a soportar. En una encuesta a 1295 senderistas de larga distancia del sendero de los Apalaches, el 29\u00A0% reportó lesión o dolor en el pie y el 12\u00A0% dolor en el Aquiles (Chrusch y Kavin, 2021). Si el talón te duele con los primeros pasos a la mañana siguiente, apunta a [fascitis plantar](/es/fascitis-plantar/); un dolor en un punto concreto de un hueso que aumenta con cada caminata puede ser una fractura por estrés y necesita un profesional de la salud.',
+    'Terminar una caminata larga con los pies adoloridos es común, y en gran parte se debe a la sobrecarga: más distancia, más bajada o una mochila más pesada de lo que tus pies están acostumbrados a soportar. En una encuesta a 1295 senderistas de larga distancia del sendero de los Apalaches, el 29\u00A0% reportó lesión o dolor en el pie y el 12\u00A0% dolor en el Aquiles (Chrusch y Kavin, 2021). El dolor de talón con los primeros pasos a la mañana siguiente apunta a una [fascitis plantar](/es/fascitis-plantar/); un dolor en un punto concreto de un hueso que aumenta con cada caminata puede ser una fractura por estrés y necesita un profesional de la salud.',
   intro: [
     'Esta página trata del senderismo y las caminatas largas por senderos: qué suele doler, qué encontraron las encuestas a senderistas sobre mochilas, calzado y entrenamiento, y una rutina breve para antes y después de caminar. Si el talón te duele después de tus caminatas de todos los días, empieza por [dolor de talón al caminar](/es/dolor-de-talon-al-caminar/), y para saber cuánto caminar con el talón adolorido, consulta [caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/).',
   ],
@@ -40,8 +40,8 @@ export const HIKERS_ES: Guide = {
       paragraphs: [
         '**Sobre todo porque el senderismo carga los pies más, y durante más tiempo, que caminar en el día a día.** Caminas durante horas, por terreno irregular, subiendo y bajando, a menudo con mochila. Cada una de esas cosas suma trabajo para el talón, el arco, la pantorrilla y el tendón de Aquiles.',
         'Los mejores datos vienen de senderistas de larga distancia. En una encuesta de 2018 a 2019 a 1295 senderistas del sendero de los Apalaches, el 61\u00A0% reportó una molestia muscular, articular u ósea. El dolor de rodilla fue el más común, con un 37\u00A0%, seguido del dolor de pie con un 29\u00A0%, los esguinces de tobillo con un 13\u00A0%, el dolor en el Aquiles con un 12\u00A0% y el dolor de espinilla con un 11\u00A0%. Estas molestias hicieron que el 11\u00A0% abandonara el sendero (Chrusch y Kavin, 2021).',
-        'Los problemas por sobreuso, que se acumulan a lo largo de días de carga repetida, fueron más comunes que las lesiones repentinas: 28\u00A0% frente a 18\u00A0% en la misma encuesta. Eso también importa para quien sale a caminar un solo día. Una primera caminata larga de la temporada, o un fin de semana con dos días intensos seguidos, sigue el mismo patrón a menor escala.',
-        'Son encuestas autorreportadas a personas que caminan cientos de kilómetros. Ningún estudio ha medido el dolor de pie en senderistas de un día, así que las cifras exactas no se aplican a quien camina el fin de semana. Lo útil es el patrón de qué duele.',
+        'Los problemas por sobreuso, que se acumulan a lo largo de días de carga repetida, fueron más comunes que las lesiones repentinas: 28\u00A0% frente a 18\u00A0% en la misma encuesta. Eso también importa para quienes hacen caminatas de un día. Una primera caminata larga de la temporada, o un fin de semana con dos días intensos seguidos, sigue el mismo patrón a menor escala.',
+        'Son encuestas basadas en lo que reportan personas que caminan cientos de kilómetros. Ningún estudio ha medido el dolor de pie en senderistas de un día, así que las cifras exactas no se aplican a quien camina el fin de semana. Lo útil es el patrón de qué duele.',
       ],
       sourceNote: 'Chrusch y Kavin 2021: encuesta electrónica transversal añadida a la encuesta de fin de temporada de la Appalachian Trail Conservancy, tasa de respuesta del 52\u00A0%. Sobreuso o crónico 28\u00A0% (n=363), agudo 18\u00A0% (n=238).',
       cites: [CITE.chruschHikers],
@@ -110,7 +110,7 @@ export const HIKERS_ES: Guide = {
       h2: '¿Qué tan rápido puedes aumentar la distancia?',
       keyFact: 'Los senderistas que no entrenaron antes del sendero de los Apalaches reportaron cualquier lesión muscular, articular u ósea con más frecuencia, 80\u00A0% frente a 58\u00A0% (Chrusch y Kavin, 2021).',
       paragraphs: [
-        '**Ningún estudio da un aumento semanal seguro para senderistas.** La evidencia más cercana es la encuesta del sendero de los Apalaches: el 13\u00A0% de senderistas que no entrenó antes del sendero reportó más lesiones en general (80\u00A0% frente a 58\u00A0%), más dolor de pie (38\u00A0% frente a 28\u00A0%), más dolor en el Aquiles (18\u00A0% frente a 11\u00A0%) y más fracturas por estrés en la parte baja de la pierna (5\u00A0% frente a 2\u00A0%). El entrenamiento de fuerza, los estiramientos o el yoga, y el entrenamiento de resistencia se asociaron cada uno con menos lesiones (Chrusch y Kavin, 2021). Es una encuesta, así que puede que las personas más en forma o más cuidadosas simplemente entrenaran más.',
+        '**Ningún estudio da un aumento semanal seguro para senderistas.** La evidencia más cercana es la encuesta del sendero de los Apalaches: el 13\u00A0% de los senderistas que no entrenaron antes del sendero reportó más lesiones en general (80\u00A0% frente a 58\u00A0%), más dolor de pie (38\u00A0% frente a 28\u00A0%), más dolor en el Aquiles (18\u00A0% frente a 11\u00A0%) y más fracturas por estrés en la parte baja de la pierna (5\u00A0% frente a 2\u00A0%). El entrenamiento de fuerza, los estiramientos o el yoga, y el entrenamiento de resistencia se asociaron cada uno con menos lesiones (Chrusch y Kavin, 2021). Es una encuesta, así que puede que las personas más en forma o más cuidadosas simplemente entrenaran más.',
         'Una forma práctica de progresar, no una forma probada:',
         {
           list: [
@@ -126,7 +126,7 @@ export const HIKERS_ES: Guide = {
     {
       h2: '¿Qué rutina conviene antes y después de una caminata?',
       paragraphs: [
-        'Que sea breve. Antes de la caminata, uno o dos minutos para mover los tobillos. Después, los estiramientos para el talón y la pantorrilla. Los días entre caminatas, elevaciones de talón para ganar fuerza. Las dosis son las dosis iniciales de Walkito de las guías principales. Deja un ejercicio por ese día si el dolor pasa de 6 sobre 10.',
+        'Que sea breve. Antes de la caminata, uno o dos minutos para mover los tobillos. Después, los estiramientos para el talón y la pantorrilla. Los días entre caminatas, elevaciones de talón para ganar fuerza. Son las dosis iniciales de Walkito, tomadas de las guías principales. Suspende el ejercicio por ese día si el dolor pasa de 6 sobre 10.',
         'Seamos claros sobre lo que hace estirar antes de caminar. En un ensayo con 1538 reclutas del ejército durante tres meses de entrenamiento, estirar seis grupos musculares de las piernas antes de cada sesión no redujo las lesiones de forma relevante (Pope y colegas, 2000). Los estiramientos de aquí son para el dolor de talón y de pantorrilla, donde la guía de 2023 califica los estiramientos con **A**, y el trabajo de fuerza para la pantorrilla recibe una **B** (Koc y colegas, 2023).',
       ],
       exercises: [
@@ -136,16 +136,16 @@ export const HIKERS_ES: Guide = {
           dose: '2 series de 15, cada pierna',
           often: 'Antes de la caminata',
           feel: 'Un estiramiento en la parte delantera del tobillo y un tirón en la parte baja de la pantorrilla',
-          how: 'Ponte con un pie adelantado y las manos en una pared, un árbol o tus bastones. Lleva la rodilla de delante hacia delante por encima de los dedos, con el talón apoyado. Despacio, unos dos segundos en cada sentido. Cambia de pierna después de cada serie.',
+          how: 'Ponte con un pie adelantado y las manos en una pared, un árbol o tus bastones. Lleva la rodilla delantera hacia delante por encima de los dedos, con el talón apoyado. Despacio, unos dos segundos en cada sentido. Cambia de pierna después de cada serie.',
           stop: 'El dolor llega a 6 sobre 10',
           media: 'ankle_rocks',
           caption: 'Movilidad de tobillo: la rodilla avanza por encima de los dedos, el talón se queda apoyado',
-          alt: 'Una figura con un pie adelantado que lleva la rodilla de delante por encima de los dedos, con el tobillo resaltado',
+          alt: 'Una figura con un pie adelantado que lleva la rodilla delantera hacia delante por encima de los dedos, con el tobillo resaltado',
         },
         {
           name: 'Estiramiento de pantorrilla (después)',
           evidence: { level: 'strong', why: 'La guía de 2023 para el dolor de talón califica los estiramientos con A, su grado más alto. No se estudió en senderistas.' },
-          dose: '2 mantenimientos de 30\u00A0segundos, cada pierna',
+          dose: '2 repeticiones de 30\u00A0segundos, cada pierna',
           often: 'Después de la caminata',
           feel: 'Un estiramiento en la pantorrilla',
           how: 'Apoya las manos en una pared. Mantén la pierna de atrás recta, el talón de atrás apoyado en el suelo y la cadera hacia delante. Una pantorrilla rígida tira del talón, así que este estiramiento importa aunque lo sientas más arriba.',
@@ -157,7 +157,7 @@ export const HIKERS_ES: Guide = {
         {
           name: 'Estiramiento de sóleo (después)',
           evidence: { level: 'strong', why: 'La guía de 2023 para el dolor de talón califica los estiramientos con A, su grado más alto. No se estudió en senderistas.' },
-          dose: '2 mantenimientos de 30\u00A0segundos, cada pierna',
+          dose: '2 repeticiones de 30\u00A0segundos, cada pierna',
           often: 'Después de la caminata',
           feel: 'Un estiramiento cerca del talón',
           how: 'Toma la misma posición, mantén el talón de atrás apoyado en el suelo y luego dobla la rodilla de atrás hasta sentir el estiramiento más abajo, cerca del talón. El sóleo, el músculo más profundo de la pantorrilla, solo se suelta con la rodilla doblada.',
@@ -169,7 +169,7 @@ export const HIKERS_ES: Guide = {
         {
           name: 'Estiramiento plantar (después y a la mañana siguiente)',
           evidence: { level: 'strong', why: 'La guía de 2023 para el dolor de talón califica los estiramientos con A, su grado más alto. No se estudió en senderistas.' },
-          dose: '2 mantenimientos de 30\u00A0segundos, cada pie',
+          dose: '2 repeticiones de 30\u00A0segundos, cada pie',
           often: 'Después de la caminata y antes de tus primeros pasos a la mañana siguiente',
           feel: 'Un estiramiento a lo largo del arco',
           how: 'Siéntate y cruza el pie sobre la otra rodilla. Tira de los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. A la mañana siguiente, haz el primero sentado en el borde de la cama, antes de que el pie toque el suelo.',
@@ -255,7 +255,7 @@ export const HIKERS_ES: Guide = {
     },
     {
       q: '¿Cuánto tiempo pueden dolerte los pies después de una caminata larga?',
-      a: 'El dolor normal de un día intenso suele desaparecer en uno o dos días de actividad tranquila. Si el dolor de talón con los primeros pasos vuelve cada mañana, o el dolor sigue ahí después de una semana de caminatas más cortas, es más probable que se trate de un problema por sobreuso, como la fascitis plantar o el dolor en el Aquiles, y vale la pena una revisión en serio.',
+      a: 'El dolor normal de un día intenso suele desaparecer en uno o dos días de actividad tranquila. Si el dolor de talón con los primeros pasos vuelve cada mañana, o el dolor sigue ahí después de una semana de caminatas más cortas, es más probable que se trate de un problema por sobreuso, como la fascitis plantar o el dolor en el Aquiles, y vale la pena que lo revise un profesional de la salud.',
     },
     {
       q: '¿Debo estirar antes de una caminata?',
