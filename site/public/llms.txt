@@ -254,6 +254,8 @@ own full-text file.
 - [Боль в стопах у парикмахеров: что помогает, если весь день стоять на одном месте](https://walkito.site/ru/bol-v-stopakh-u-parikmakherov/): Почему у парикмахеров болят стопы, что нашли исследования, какая обувь, коврики и стулья помогают и короткие упражнения между клиентами.
 - [Вес и плантарный фасциит: что показывают исследования и что помогает уже сейчас](https://walkito.site/ru/ves-i-plantarnyy-fastsiit/): Вызывает ли вес плантарный фасциит и помогает ли похудение? Что показывают исследования, почему важна нагрузка и упражнения сидя при большем весе.
 - [Боль в стопах после похода: почему болят ноги и что делать](https://walkito.site/ru/bol-v-stopakh-posle-pokhoda/): Почему болят стопы после похода: данные опросов, пятка, ахиллово сухожилие и передний отдел стопы, вес рюкзака, ботинки или кроссовки и короткий комплекс.
+- [Боль в пятке, но не плантарный фасциит: похожие состояния и чем они отличаются](https://walkito.site/ru/bol-v-pyatke-ne-fastsiit/): Боль в пятке, но не плантарный фасциит: жировая подушка, нервы, стрессовый перелом, ахиллово сухожилие, Хаглунд, Север, артрит и спина в одной таблице.
+- [Обострение плантарного фасциита: что его вызывает и что делать в первые 48 часов](https://walkito.site/ru/obostrenie-plantarnogo-fastsiita/): Обострение плантарного фасциита: частые причины, что делать в первые 48 часов, как вернуться к упражнениям и когда боль не связана с обострением.
 - [О Walkito](https://walkito.site/ru/o-proekte/)
 - [Support](https://walkito.site/ru/podderzhka/) · [Privacy](https://walkito.site/ru/konfidentsialnost/) · [Terms of use](https://walkito.site/ru/usloviya/)
 - Full text in Russian: https://walkito.site/ru/llms-full.txt
@@ -340,6 +342,8 @@ own full-text file.
 - [Peso y fascitis plantar: qué muestra la investigación y qué ayuda desde hoy](https://walkito.site/es/peso-y-fascitis-plantar/): ¿El peso causa fascitis plantar y bajar de peso ayuda? Lo que muestran los estudios, por qué importa la carga y ejercicios en silla para un peso más alto.
 - [Dolor de pies después del senderismo: por qué te duelen y qué hacer](https://walkito.site/es/dolor-de-pies-senderismo/): Dolor de pies después del senderismo: qué hallaron las encuestas, talón, Aquiles y antepié, peso de la mochila, botas o zapatillas y una rutina breve.
 - [¿La fascitis plantar puede causar dolor de rodilla, cadera o espalda?](https://walkito.site/es/fascitis-plantar-dolor-de-rodilla/): ¿La fascitis plantar puede causar dolor de rodilla, cadera o espalda? Qué muestran los estudios de la marcha, qué falta probar, ejercicios y alertas.
+- [Dolor de talón que no es fascitis plantar: causas parecidas y cómo se distinguen](https://walkito.site/es/dolor-de-talon-que-no-es-fascitis/): Dolor de talón que no es fascitis plantar: almohadilla grasa, nervios, fractura por estrés, Aquiles, Haglund, Sever, artritis y la espalda, en una tabla.
+- [Brote de fascitis plantar: qué lo desencadena y qué hacer en las primeras 48 horas](https://walkito.site/es/brote-de-fascitis-plantar/): Brote o recaída de fascitis plantar: qué lo desencadena, qué hacer en las primeras 48 horas, cómo retomar los ejercicios y cuándo no es un brote.
 - [Sobre Walkito](https://walkito.site/es/sobre-walkito/)
 - [Support](https://walkito.site/es/soporte/) · [Privacy](https://walkito.site/es/privacidad/) · [Terms of use](https://walkito.site/es/terminos/)
 - Full text in Spanish: https://walkito.site/es/llms-full.txt

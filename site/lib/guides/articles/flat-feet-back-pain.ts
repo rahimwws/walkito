@@ -100,7 +100,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       paragraphs: [
         'The usual explanation is the kinetic chain: the idea that the joints from foot to spine move as a linked system, so a foot that rolls inward turns the shin and thigh inward, tilts the pelvis and loads the lower back differently. **The mechanics are real, but the size of the effect looks small.**',
         'In a 2021 lab study, 20 people walked with wedged insoles that made their feet roll inward. Their pelvis tilted a little more to one side (about half a degree on average) and the hip turned in by about 1.4 degrees. That shows the foot can nudge the pelvis. It does not show that half a degree causes pain, and the study did not measure pain.',
-        'The kinetic chain is a reasonable idea for a clinician to check in one person. It is not a reason to assume your arches are behind your back pain.',
+        'The kinetic chain is a reasonable idea for a clinician to check in one person. The same question for heel pain is on [can plantar fasciitis cause back pain](/can-plantar-fasciitis-cause-knee-pain/). It is not a reason to assume your arches are behind your back pain.',
       ],
       cites: [CITE.hornestam],
     },

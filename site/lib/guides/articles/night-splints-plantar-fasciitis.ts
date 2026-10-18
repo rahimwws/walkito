@@ -177,7 +177,7 @@ export const NIGHT_SPLINTS_EN: Guide = {
           ],
         },
         'The guideline also advises against insoles as the only thing you do for short-term pain relief. For more on that question, see [insoles vs exercises](/insoles-vs-exercises/).',
-        'A common order is stretching and calf work first. If your first steps are still bad after a month or so of that, add a splint for one to three months. Many people use insoles alongside. That order is a reasonable reading of the guideline, not something a trial has tested.',
+        'A common order is stretching and calf work first. If your first steps are still bad after a month or so of that, add a splint for one to three months. If they are still bad after the splint too, see [plantar fasciitis not getting better](/plantar-fasciitis-not-getting-better/). Many people use insoles alongside. That order is a reasonable reading of the guideline, not something a trial has tested.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

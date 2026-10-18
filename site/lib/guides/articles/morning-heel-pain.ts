@@ -39,7 +39,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       h2: 'What else causes heel pain in the morning?',
       keyFact: 'In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain predicted a worse long-term outcome, which the authors said might reflect unrecognized systemic inflammatory disease (Hansen and colleagues, 2018).',
       paragraphs: [
-        'Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart:',
+        'Plantar fasciitis is the most common cause of morning heel pain, but it is [not the only one](/heel-pain-not-plantar-fasciitis/). The location and behavior of the pain help tell them apart:',
         {
           list: [
             '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so [first-step stiffness is common](/plantar-fasciitis-vs-achilles-tendonitis/). It usually improves with walking and then [worsens again with prolonged activity](/heel-pain-after-walking/). If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
@@ -124,7 +124,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
     {
       h2: 'How does morning pain show whether things are getting better?',
       paragraphs: [
-        'Morning pain is the clearest day-to-day signal of how a foot is doing. A run might feel fine but leave the fascia overloaded, and you will not know until the next morning. A long shift on your feet may feel tolerable, but the next morning tells you whether it was too much. The pattern is simple: if your first steps the next morning are worse than usual, yesterday asked more of the foot than it could handle.',
+        'Morning pain is the clearest day-to-day signal of how a foot is doing. A run might feel fine but leave the fascia overloaded, and you will not know until the next morning. A long shift on your feet may feel tolerable, but the next morning tells you whether it was too much. The pattern is simple: if your first steps the next morning are [worse than usual](/plantar-fasciitis-flare-up/), yesterday asked more of the foot than it could handle.',
         'That is why a daily morning pain score, 0 to 10, is more useful than checking pain during the day. Daytime pain rises and falls with activity, posture, and shoes. Morning pain measures the same thing, in the same way, at roughly the same time every day. When the number drops over weeks, the foot is gaining ground. When it spikes, something in the past day or two pushed too far.',
         'Walkito asks for a morning pain score before every session:',
         {

@@ -75,7 +75,7 @@ export const WALKING_PF_EN: Guide = {
       },
       after: [
         'The morning check matters most. First-step pain is the classic plantar fasciitis symptom, and it is the clearest sign of how your foot coped with yesterday. [Heel pain in the morning](/heel-pain-in-the-morning/) covers that pattern and the stretches to do before you stand.',
-        'Sharp pain that makes you limp, pain that is building with every walk and not easing with rest, or pain at night is outside this rule. Check the list at the end of this page.',
+        'Sharp pain that makes you limp, pain that is building with every walk and not easing with rest, or pain at night is outside this rule. A limp can also load the knee, hip and back differently: see [can plantar fasciitis cause knee, hip or back pain](/can-plantar-fasciitis-cause-knee-pain/). Check the list at the end of this page.',
       ],
       sourceNote: 'Silbernagel 2007: 19 people per group; VISA-A-S score went from 57 to 85 in the activity group and from 57 to 91 in the rest group at twelve months, with no significant difference in the rate of improvement.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -251,7 +251,7 @@ export const WALKING_PF_EN: Guide = {
     {
       q: 'Can walking make plantar fasciitis worse?',
       cites: [CITE.guideline],
-      a: 'Yes, if you do much more than your heel is used to. The 2023 guideline lists heel pain after a recent increase in weight-bearing activity as a typical feature of plantar fasciitis. A sudden long walk, a new hilly route or a day on hard floors can flare it. Smaller, steady increases are easier on the heel.',
+      a: 'Yes, if you do much more than your heel is used to. The 2023 guideline lists heel pain after a recent increase in weight-bearing activity as a typical feature of plantar fasciitis. A sudden long walk, a new hilly route or a day on hard floors can [flare it](/plantar-fasciitis-flare-up/). Smaller, steady increases are easier on the heel.',
     },
     {
       q: 'Should I stop walking completely to let plantar fasciitis settle?',

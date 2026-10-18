@@ -111,7 +111,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       paragraphs: [
         'If your pain fits the plantar fasciitis pattern, gentle calf and plantar fascia stretching before bed may reduce next-morning stiffness. The same plantar-fascia-specific stretch the guideline grades **A** for first-step pain can be done before sleep: pull the toes back with your hand until you feel the arch, hold for 10 seconds, repeat 10 times.',
         'Loading exercises such as calf raises are better suited to earlier in the day. The full exercise list is on the [plantar fasciitis exercises](/plantar-fasciitis-exercises/) page.',
-        'If your pain is not plantar fasciitis or you are not sure, stretching at night is not the first step. Getting the right diagnosis is.',
+        'If [your pain is not plantar fasciitis](/heel-pain-not-plantar-fasciitis/) or you are not sure, stretching at night is not the first step. Getting the right diagnosis is.',
       ],
       exercises: [
         {

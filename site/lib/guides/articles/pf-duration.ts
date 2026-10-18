@@ -171,7 +171,7 @@ export const PF_DURATION_EN: Guide = {
     {
       q: 'Why is my plantar fasciitis not getting better?',
       cites: [CITE.guideline],
-      a: 'Several possibilities. The exercises may not be consistent enough, the footwear may not be supportive, or the daily load on the foot (steps, standing hours, running mileage) may be more than the tissue can keep up with. It is also possible the diagnosis is not plantar fasciitis. If stretching and strengthening have not helped after several months, the 2023 guideline recommends discussing options like [night splints](/night-splints-plantar-fasciitis/), laser therapy, or dry needling with a clinician.',
+      a: 'Several possibilities, covered in detail in [plantar fasciitis not getting better](/plantar-fasciitis-not-getting-better/). The exercises may not be consistent enough, the footwear may not be supportive, or the daily load on the foot (steps, standing hours, running mileage) may be more than the tissue can keep up with. It is also possible the diagnosis is not plantar fasciitis. If stretching and strengthening have not helped after several months, the 2023 guideline recommends discussing options like [night splints](/night-splints-plantar-fasciitis/), laser therapy, or dry needling with a clinician.',
     },
     {
       q: 'Does a heel spur make plantar fasciitis last longer?',
@@ -190,7 +190,7 @@ export const PF_DURATION_EN: Guide = {
     {
       q: 'Can plantar fasciitis come back after it goes away?',
       cites: [CITE.hansen],
-      a: 'Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, relapse, and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.',
+      a: 'Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, [relapse](/plantar-fasciitis-flare-up/), and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.',
     },
     {
       q: 'What are signs that plantar fasciitis is healing?',
