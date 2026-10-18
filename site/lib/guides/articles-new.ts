@@ -256,6 +256,22 @@ import { FLAT_FEET_TEST_DE } from './articles-de/flat-feet-test';
 import { FLAT_FEET_TEST_FR } from './articles-fr/flat-feet-test';
 import { FLAT_FEET_TEST_IT } from './articles-it/flat-feet-test';
 import { FLAT_FEET_TEST_PT } from './articles-pt/flat-feet-test';
+import { WALKING_PF_DE } from './articles-de/walking-with-plantar-fasciitis';
+import { WALKING_PF_FR } from './articles-fr/walking-with-plantar-fasciitis';
+import { WALKING_PF_IT } from './articles-it/walking-with-plantar-fasciitis';
+import { WALKING_PF_PT } from './articles-pt/walking-with-plantar-fasciitis';
+import { RUNNERS_FOOT_EXERCISES_DE } from './articles-de/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_FR } from './articles-fr/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_IT } from './articles-it/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_PT } from './articles-pt/foot-exercises-for-runners';
+import { TEACHERS_DE } from './articles-de/teachers-foot-pain';
+import { TEACHERS_FR } from './articles-fr/teachers-foot-pain';
+import { TEACHERS_IT } from './articles-it/teachers-foot-pain';
+import { TEACHERS_PT } from './articles-pt/teachers-foot-pain';
+import { RETAIL_WAREHOUSE_DE } from './articles-de/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_FR } from './articles-fr/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_IT } from './articles-it/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_PT } from './articles-pt/retail-warehouse-foot-pain';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -326,6 +342,10 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     pfVsAchilles: PF_VS_ACHILLES_PT,
     pfVsStressFracture: PF_VS_STRESS_FRACTURE_PT,
     flatFeetTest: FLAT_FEET_TEST_PT,
+    walkingPf: WALKING_PF_PT,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_PT,
+    teachers: TEACHERS_PT,
+    retailWarehouse: RETAIL_WAREHOUSE_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -392,6 +412,10 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     pfVsAchilles: PF_VS_ACHILLES_FR,
     pfVsStressFracture: PF_VS_STRESS_FRACTURE_FR,
     flatFeetTest: FLAT_FEET_TEST_FR,
+    walkingPf: WALKING_PF_FR,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_FR,
+    teachers: TEACHERS_FR,
+    retailWarehouse: RETAIL_WAREHOUSE_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -458,6 +482,10 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     pfVsAchilles: PF_VS_ACHILLES_IT,
     pfVsStressFracture: PF_VS_STRESS_FRACTURE_IT,
     flatFeetTest: FLAT_FEET_TEST_IT,
+    walkingPf: WALKING_PF_IT,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_IT,
+    teachers: TEACHERS_IT,
+    retailWarehouse: RETAIL_WAREHOUSE_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -524,5 +552,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     pfVsAchilles: PF_VS_ACHILLES_DE,
     pfVsStressFracture: PF_VS_STRESS_FRACTURE_DE,
     flatFeetTest: FLAT_FEET_TEST_DE,
+    walkingPf: WALKING_PF_DE,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_DE,
+    teachers: TEACHERS_DE,
+    retailWarehouse: RETAIL_WAREHOUSE_DE,
   },
 };

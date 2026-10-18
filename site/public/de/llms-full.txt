@@ -10075,6 +10075,654 @@ Meist nicht. Ein flexibler Plattfuß, der keine Schmerzen macht und dich in nich
 
 Der Zehenstand-Test und der Großzehen-Test funktionieren auch bei Kindern, aber die meisten kleinen Kinder haben ein niedriges Gewölbe, das sich mit dem Alter bildet, und in einer Studie waren Messungen der Fußhaltung bei kleinen Kindern nicht zuverlässig genug. Ein steifer Fuß, Schmerzen oder Hinken sind Gründe, zur Ärztin oder zum Arzt zu gehen. Mehr unter [Plattfuß bei Kindern](https://walkito.site/de/plattfuss-bei-kindern/).
 
+## Wie viel Gehen ist bei Plantarfasziitis in Ordnung?
+
+Language: German (Deutsch) · https://walkito.site/de/gehen-bei-plantarfasziitis/ · published 2026-10-18 · updated 2026-10-18
+
+Mit einer [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) kannst du meistens weiter gehen, solange der Schmerz beim Gehen mäßig bleibt und bis zum nächsten Morgen abklingt. Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt eine Beratung dazu, wie du die Belastung im Stehen und Gehen anpasst, und rät nicht dazu, mit dem Gehen aufzuhören. Sie bewertet diese Beratung allerdings mit **E**, das heißt, sie beruht auf Theorie, nicht auf Studien (Koc und Kollegen, 2023). Keine Studie nennt eine sichere Zahl an Schritten. Der Blick auf den nächsten Morgen ist deshalb ein besserer Maßstab als ein Schrittziel.
+
+- Die Leitlinie von 2023 zu Fersenschmerzen führt die Beratung zur Anpassung der Belastung bei der Arbeit, in der Freizeit und im Alltag sowie die Beratung zu Schuhen mit Empfehlungsgrad **E**: Sie beruht auf Theorie, nicht auf Studien (Koc und Kollegen, 2023).
+- In einer Studie mit 180 Erwachsenen mit Plantarfasziopathie wurde die Gruppe, die nur den Rat bekam, aktiv zu bleiben, schmerzverstärkende Aktivitäten zu reduzieren und ein Fersenkissen zu tragen, nach etwa drei Monaten klinisch bedeutsam besser (Riel und Kollegen, 2023).
+- Eine Regel zur Schmerzkontrolle erlaubt bei Belastung Schmerz bis etwa 5 von 10, solange er bis zum nächsten Morgen abklingt und nicht von Woche zu Woche zunimmt. Getestet wurde sie bei 38 Personen mit Achillessehnenschmerzen, nicht bei Plantarfasziitis (Silbernagel und Kollegen, 2007).
+- Keine Studie nennt eine tägliche Schrittzahl für Plantarfasziitis. Bei 50 Personen mit Fersenschmerzen und 25 ohne unterschied sich die körperliche Aktivität nicht, aber die Gruppe mit Fersenschmerzen stand täglich 3,4 Stunden länger (Landorf und Kollegen, 2023).
+- Ein Best-Practice-Leitfaden von 2021 zu Fersenschmerzen rät zu Schuhen mit geringer Sprengung und dazu, Barfußgehen und flache Schuhe ohne Halt zu meiden, bis die Beschwerden weg sind (Morrissey und Kollegen, 2021).
+
+### Ist Gehen bei Plantarfasziitis gut oder schlecht?
+
+**Gehen ist nicht der Feind, aber zu viel auf einmal kann die Ferse reizen.** Die Leitlinie von 2023 zu Fersenschmerzen rät nicht dazu, mit dem Gehen aufzuhören. In ihrer Übersicht steht eine Aufklärung darüber, wie du die Belastung bei der Arbeit, in der Freizeit und im Alltag verändern kannst, und über Schuhe. Sie bewertet diese Beratung mit **E**: Theorie und Grundlagenforschung stützen sie, aber keine Studie hat sie getestet (Koc und Kollegen, 2023).
+
+Die Leitlinie nennt außerdem Fersenschmerz, der nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen begonnen hat, als typisches Merkmal der Plantarfasziitis. Die Frage ist also selten, ob du gehen solltest, sondern wie viel und wie schnell du steigerst.
+
+Eine dänische Studie hat einfache Beratung mit zusätzlichen Behandlungen verglichen. 180 Erwachsene mit Plantarfasziopathie (ein anderer Name für Plantarfasziitis) wurden in drei Gruppen eingeteilt. Eine bekam nur Beratung und ein Fersenkissen, die beiden anderen zusätzlich ein Training mit Fersenheben, und eine davon außerdem eine Kortisonspritze. Der Rat lautete, Aktivitäten zu reduzieren, die die Beschwerden auslösen, und dann langsam, nach den Beschwerden gerichtet, zum früheren Aktivitätsniveau zurückzukehren. Alle drei Gruppen wurden nach etwa drei Monaten klinisch bedeutsam besser (Riel und Kollegen, 2023).
+
+Möglicherweise hängt gar nicht das Gehen selbst mit Fersenschmerzen zusammen. In einer Studie von 2023 gaben 50 Personen mit Fersenschmerzen und 25 passende Personen ohne Fersenschmerzen eine ähnliche körperliche Aktivität an. Der Unterschied lag im Stehen: Die Gruppe mit Fersenschmerzen stand täglich 3,4 Stunden länger (Landorf und Kollegen, 2023). Die Studie zeigt einen Zusammenhang, keine Ursache. Wenn du den Tag vor allem im Stehen verbringst, geht es unter [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/) um diese Seite.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### Wie viel Gehen ist in Ordnung? Eine einfache Schmerzregel
+
+**Nimm deinen Schmerz als Dosierhilfe und prüf ihn zweimal: beim Gehen und am nächsten Morgen.** Keine Studie hat eine Gehregel für Plantarfasziitis getestet. Die am nächsten liegende getestete Regel stammt aus der Sehnen-Reha. Nutze sie also als geliehene Orientierung, nicht als belegte Grenze für die Ferse.
+
+In einer Studie von 2007 wurden 38 Personen mit Achillessehnenschmerzen in zwei Gruppen eingeteilt. Eine Gruppe lief und sprang weiter und folgte dabei einem Modell zur Schmerzkontrolle: Schmerz bis etwa 5 von 10 war bei Belastung erlaubt, solange er bis zum nächsten Morgen abklang und nicht von Woche zu Woche zunahm. Die andere Gruppe verzichtete in den ersten sechs Wochen auf diese Aktivitäten. Beide Gruppen wurden besser, und aktiv zu bleiben führte nach zwölf Monaten nicht zu schlechteren Ergebnissen (Silbernagel und Kollegen, 2007). Mehr zu dieser Studie unter [Achillessehnenentzündung: Übungen](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+
+Für Fersenschmerzen sagt ein Best-Practice-Leitfaden von 2021, der auf einer Auswertung von 51 Studien, Interviews mit 14 Fachleuten und einer Befragung von Betroffenen beruht, dass Schmerzkontrolle dringend empfohlen wurde und dass Betroffene lernen sollten, ihre Schmerzreaktion auf Belastung zu lesen (Morrissey und Kollegen, 2021). Eine Zahl nennt er nicht. Die Tabelle unten überträgt die getestete Regel aufs Gehen, bewertet von 0 (kein Schmerz) bis 10 (stärkster Schmerz). Die Spalte zum nächsten Spaziergang ist eine praktische Auslegung dieser Regel, kein getestetes Protokoll.
+
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Wie viele Schritte am Tag sind bei Plantarfasziitis in Ordnung?
+
+**Für Plantarfasziitis gibt es keine belegte Schrittzahl.** Wir haben keine Studie gefunden, die Menschen mit Fersenschmerzen eine Schrittzahl oder Gehstrecke vorgegeben und das Ergebnis gemessen hat. Jede Seite, die dir für Fersenschmerzen eine feste Zahl nennt, rät.
+
+Die bekannten 10.000 Schritte sind ein allgemeines Gesundheitsziel, keine Zahl aus der Fußforschung, und selbst dafür sind die Belege dünn. Eine Auswertung von 2022 mit 15 Studien und 47.471 Erwachsenen fand, dass mehr Schritte am Tag mit einem geringeren Sterberisiko einhergingen. Der Nutzen flachte aber bei Erwachsenen ab 60 bei etwa 6.000 bis 8.000 Schritten am Tag ab und bei jüngeren Erwachsenen bei 8.000 bis 10.000 (Paluch und Kollegen, 2022). Dabei geht es um die langfristige Gesundheit, nicht darum, was eine gereizte Ferse diese Woche verträgt.
+
+Nützlicher ist deine eigene Zahl. Die meisten Handys zählen Schritte. Schau dir eine normale Woche an, bevor die Ferse angefangen hat, und eine normale Woche jetzt. Das ist dein Ausgangspunkt, und die Schmerzregel oben sagt dir, ob du dabei bleibst, steigerst oder reduzierst.
+
+Das Gehen aufzuteilen hilft vielleicht mehr als die Gesamtmenge. Der Best-Practice-Leitfaden von 2021 rät, lange Phasen statischer Belastung, etwa langes Stehen, zu unterbrechen (Morrissey und Kollegen, 2021). Mehrere kurze Spaziergänge über den Tag verteilt belasten die Ferse weniger am Stück als ein langer, auch wenn keine Studie die beiden Varianten bei Plantarfasziitis verglichen hat.
+
+Source: Paluch AE, Bajpai S, Bassett DR, et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health. 2022;7(3):e219–e228.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Wie baust du das Gehen wieder auf?
+
+Der Rat, der in der dänischen Studie getestet wurde, lautete: Aktivitäten reduzieren, die die Beschwerden auslösen, und dann langsam, nach den Beschwerden gerichtet, zum früheren Aktivitätsniveau zurückkehren (Riel und Kollegen, 2020). Einen wöchentlichen Prozentsatz hat er nicht festgelegt, und keine Studie hat einen solchen bei Plantarfasziitis getestet. So kannst du diesen Rat zum Beispiel umsetzen:
+
+- Such dir einen Spaziergang, der die Schmerzregel besteht: höchstens mäßiger Schmerz dabei und ein normaler nächster Morgen. Wenn schon ein kurzer Spaziergang nicht besteht, fang mit weniger an.
+- Wiederhol diesen Spaziergang ein paar Tage lang. Ein guter Tag reicht nicht, um es zu beurteilen.
+- Nimm ein kleines Stück dazu, etwa fünf Minuten mehr, und lass den Rest gleich. Ändere immer nur eine Sache: Strecke, Tempo, Steigungen oder Untergrund.
+- Wenn der nächste Morgen schlimmer ist, geh zurück zum letzten Spaziergang, der bestanden hat, und bleib länger dabei.
+
+Die fünf Minuten sind ein praktischer Vorschlag, keine getestete Zahl. Wichtig ist, dass jede Steigerung klein genug ist, damit dir der nächste Morgen klar zeigt, ob sie funktioniert hat.
+
+Die Erholung von einer Plantarfasziitis verläuft meist langsam. Bei etwa 90 % der Menschen wird es mit Behandlung ohne Operation besser, etwa mit Dehnen, Wadentraining und angepasster Belastung (Latt und Kollegen, 2020), aber es kann Monate dauern. Mehr unter [wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/). Wenn du auch läufst, spielen bei Fersenschmerzen zusätzlich der Laufumfang und Änderungen der Belastung eine Rolle.
+
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Welche Schuhe helfen beim Gehen mit Plantarfasziitis?
+
+**Bequeme, gedämpfte Schuhe mit geringer Sprengung sind der Rat der Fachleute, aber keine Studie hat einen bestimmten Schuh fürs Gehen getestet.** Der Best-Practice-Leitfaden von 2021 sagt, Schuhe sollten Halt geben und bequem sein, eine geringe Sprengung haben (die Ferse sitzt etwas höher als die Zehen) und so sein, dass du sie auch wirklich trägst. Er rät außerdem, Barfußgehen und flache Schuhe ohne Halt zu meiden, bis die Beschwerden ganz weg sind (Morrissey und Kollegen, 2021).
+
+Die Leitlinie von 2023 nimmt die Beratung zu Schuhen in ihre Empfehlung zur Aufklärung mit Empfehlungsgrad **E** auf. Bei Einlagen ist sie genauer: nicht als einzige Maßnahme verwenden (**B** gegen die Anwendung), aber in Kombination mit anderen Maßnahmen können sie helfen (**C**). Dazu gehören ein rezeptfreies Fersenkissen oder Schuhe mit Fersendämpfung (Koc und Kollegen, 2023).
+
+Die Härte des Schuhs könnte eine Rolle spielen. In der Studie von 2023 mit 50 Personen mit Fersenschmerzen und 25 ohne trug die Gruppe mit Fersenschmerzen Schuhe mit härteren Fersen und hatte nach eigenen Angaben mehr Mühe, passende Schuhe zu finden (Landorf und Kollegen, 2023). Auch hier gilt: ein Zusammenhang, kein Beweis, dass weiche Schuhe helfen.
+
+Was die Studien zu Einlagen zeigen, liest du unter [Einlagen oder Übungen](https://walkito.site/de/einlagen-oder-uebungen/). Du denkst über Minimalschuhe nach? Unter [Barfußschuhe](https://walkito.site/de/barfussschuhe/) steht, warum sie nicht gut passen, solange die Ferse wehtut.
+
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### Spielt der Untergrund beim Gehen eine Rolle?
+
+**Wahrscheinlich, aber die Belege sind indirekt.** Die Leitlinie nennt Belastung im Stehen und Gehen bei der Arbeit, besonders auf Untergründen mit schlechter Stoßdämpfung, als Risikofaktor für Plantarfasziitis (Koc und Kollegen, 2023). Das deutet darauf hin, dass harter Boden und harte Schuhe die Ferse belasten.
+
+Direkte Belege gibt es kaum. In der passend zusammengestellten Studie von 2023 unterschieden sich Menschen mit und ohne Fersenschmerzen nicht darin, ob sie auf harten Böden standen (Landorf und Kollegen, 2023). Eine Fallserie mit 20 Läuferinnen und Läufern berichtete nach etwa anderthalb Monaten Barfußlaufen auf Gras von weniger Schmerz, hatte aber keine Vergleichsgruppe (MacGabhann und Kollegen, 2022). Keine Studie hat Untergründe fürs Gehen bei Plantarfasziitis verglichen.
+
+Praktische Möglichkeiten, solange die Ferse wehtut:
+
+- Nimm für längere Spaziergänge lieber Gras, einen Parkweg oder eine Laufbahn statt Beton, wenn es sich besser anfühlt.
+- Lass zu Hause auf Fliesen oder Holz die Schuhe an, vor allem bei den ersten Schritten des Tages.
+- Geh lange Abstiege und steile Hügel vorsichtig an, bis der Spaziergang in der Ebene die Schmerzregel besteht. Mehr zu Abstiegen, Rucksack und Stöcken unter [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/).
+
+Ein tiefer, dumpfer Schmerz genau in der Mitte der Ferse, der auf hartem Boden deutlich schlimmer ist, kann eher vom Fettpolster der Ferse kommen als von der Plantarfaszie. Lies dazu [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass as a potential treatment for plantar fasciitis: a prospective case series. International Journal of Environmental Research and Public Health. 2022;19(23):15466.
+
+### Welche Übungen machen das Gehen leichter?
+
+Übungen helfen der Ferse vielleicht, mehr Belastung zu vertragen, sodass derselbe Spaziergang die Schmerzregel mit der Zeit leichter besteht, auch wenn keine Studie das fürs Gehen getestet hat. Die Leitlinie von 2023 bewertet die Dehnung von Plantarfaszie und Wade mit **A**, ihrem höchsten Empfehlungsgrad, und Krafttraining mit **B**.
+
+Eine verspannte Wade gehört mit zum Bild. In einer Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100 ohne war eine eingeschränkte Beugung im Sprunggelenk der stärkste Risikofaktor, und auch langes Stehen während des größten Teils des Arbeitstags erhöhte das Risiko (Riddle und Kollegen, 2003). Lies dazu [verspannte Waden](https://walkito.site/de/verspannte-waden/).
+
+In einer Studie mit 48 Personen linderte schweres Fersenheben den Schmerz und verbesserte die Alltagsfunktion schneller als Dehnen, und nach zwölf Monaten lagen beide Gruppen etwa gleichauf (Rathleff und Kollegen, 2015). Die Karten unten zeigen die Startdosen von Walkito, keine Verordnung. Das vollständige Programm findest du unter [Plantarfasziitis: Übungen](https://walkito.site/de/plantarfasziitis-uebungen/).
+
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Stütz die Hände an einer Wand ab. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden und die Hüfte nach vorn. Eine verspannte Wade zieht den ganzen Tag an der Ferse, deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Den Schollenmuskel (Musculus soleus), den tiefer liegenden Wadenmuskel, erreichst du nur mit gebeugtem Knie.
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich hin, die Füße stehen flach, und drück dich über die Fußballen nach oben. Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Schollenmuskel, fast ohne Last auf der Ferse. Das passt zu Tagen, an denen das Gehen schon nah an deiner Grenze liegt.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last. Halt dich zum Ausbalancieren an einer Wand fest.
+- **Fersenheben mit Handtuch** (4 Sätze à 10, jedes Bein, mit Zusatzgewicht): Stell dich mit einem Fuß auf eine Stufe, ein zusammengerolltes Handtuch liegt unter deinen Zehen. Nimm dir drei Sekunden zum Hochkommen, halte oben zwei und nimm dir drei zum Absenken. Auf dieser Stufe nimmt Walkito Gewicht dazu, zum Beispiel einen Rucksack. Durch das Handtuch trainiert diese Übung die Plantarfaszie und nicht nur die Wade. Mehr zum [Fersenheben mit Handtuch](https://walkito.site/de/uebungen/fersenheben-mit-handtuch/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Fersenschmerz nach einem Sturz, einem Sprung oder einem Umknicken begann oder du den Fuß nicht belasten kannst
+- der Schmerz mit jedem Spaziergang zunimmt und in Ruhe nicht nachlässt oder es wehtut, wenn du die Ferse seitlich zusammendrückst (möglicher Ermüdungsbruch)
+- die Ferse nachts oder in Ruhe wehtut, nicht nur beim Gehen
+- du Taubheit, Kribbeln oder Brennen im Fuß spürst
+- die Ferse gerötet, heiß oder geschwollen ist oder du dich krank fühlst oder Fieber hast
+- beide Fersen zusammen mit anderen Gelenken wehtun oder du auch anderswo Morgensteifigkeit hast
+- du Diabetes oder eine schlechte Durchblutung hast und dein Fuß wehtut oder anders aussieht
+- der Schmerz trotz Reduzieren von Woche zu Woche schlimmer wird
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App für Ferse und Fuß. Sie gibt kein Schrittziel vor und plant deine Spaziergänge nicht, aber sie liest deine Ferse genauso wie diese Seite: daran, wie sich dein Fuß am nächsten Morgen anfühlt.
+
+#### Sollte ich mit Plantarfasziitis gehen?
+
+Meistens ja, in Mengen, die deine Ferse verträgt. Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt, die Belastung anzupassen, und rät nicht dazu aufzuhören, auch wenn dieser Rat auf Theorie beruht (Empfehlungsgrad E). In einer Studie mit 180 Erwachsenen ging der Rat, aktiv zu bleiben, aber schmerzverstärkende Aktivitäten zu reduzieren, plus ein Fersenkissen, nach etwa drei Monaten mit einer bedeutsamen Besserung einher.
+
+#### Ist Gehen gut bei Plantarfasziitis?
+
+Gehen in mäßigen Mengen ist im Allgemeinen in Ordnung, auch wenn keine Studie getestet hat, wie viel Gehen am besten ist. In einer Studie waren Menschen mit Fersenschmerzen genauso aktiv wie Menschen ohne, standen aber täglich 3,4 Stunden länger. Ein Best-Practice-Leitfaden rät, zu lernen, wie du deine Schmerzreaktion auf Belastung beobachtest.
+
+#### Wie viele Schritte am Tag sind bei Plantarfasziitis in Ordnung?
+
+Keine Studie nennt eine Schrittzahl für Plantarfasziitis. Die 10.000 sind ein allgemeines Gesundheitsziel, und in der Forschung zur Sterblichkeit flachte der Nutzen bei Erwachsenen ab 60 bei 6.000 bis 8.000 Schritten am Tag ab. Bei einer gereizten Ferse gehst du von deiner eigenen üblichen Zahl aus und lässt den Schmerz am nächsten Morgen entscheiden, ob du steigerst oder reduzierst.
+
+#### Wie viel Schmerz ist beim Gehen mit Plantarfasziitis in Ordnung?
+
+Eine getestete Regel erlaubt bei Belastung Schmerz bis etwa 5 von 10, solange er bis zum nächsten Morgen abklingt und nicht von Woche zu Woche zunimmt. Sie stammt aus einer Studie mit 38 Personen mit Achillessehnenschmerzen, nicht mit Plantarfasziitis. Nutze sie also als Orientierung. Mehr Schmerz oder ein schlimmerer Morgen heißt: reduzieren.
+
+#### Kann Gehen eine Plantarfasziitis verschlimmern?
+
+Ja, wenn du deutlich mehr machst, als deine Ferse gewohnt ist. Die Leitlinie von 2023 nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis. Ein plötzlicher langer Spaziergang, eine neue hügelige Strecke oder ein Tag auf harten Böden kann die Beschwerden verstärken. Kleinere, gleichmäßige Steigerungen sind schonender für die Ferse.
+
+#### Sollte ich ganz aufhören zu gehen, damit sich die Plantarfasziitis beruhigt?
+
+Keine Studie zeigt, dass völlige Ruhe nötig ist. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, und rät nicht dazu aufzuhören. In einer Studie zu Achillessehnenschmerzen schnitten Menschen, die innerhalb einer Schmerzgrenze aktiv blieben, nach zwölf Monaten genauso gut ab wie Menschen, die sechs Wochen lang aufs Laufen und Springen verzichteten. Wenn schon kurze Spaziergänge stechend wehtun oder du hinkst, lass es ärztlich abklären.
+
+#### Welche Schuhe sind am besten zum Gehen mit Plantarfasziitis?
+
+Bequeme, gedämpfte Schuhe, bei denen die Ferse etwas höher sitzt als die Zehen, sind der Rat der Fachleute. Ein Best-Practice-Leitfaden von 2021 rät, Barfußgehen und flache Schuhe ohne Halt zu meiden, bis die Beschwerden weg sind. Die Leitlinie von 2023 sagt, dass Einlagen oder Fersenkissen in Kombination mit anderen Maßnahmen helfen können, aber nicht allein.
+
+#### Ist es bei Plantarfasziitis besser, auf Gras oder auf Beton zu gehen?
+
+Weicherer Boden ist vielleicht angenehmer, aber keine Studie hat Untergründe fürs Gehen mit Plantarfasziitis verglichen. Die Leitlinie von 2023 bringt Belastung bei der Arbeit auf Untergründen mit schlechter Stoßdämpfung mit dem Risiko für Plantarfasziitis in Verbindung. Eine kleine Fallserie mit Läuferinnen und Läufern auf Gras berichtete von weniger Schmerz, hatte aber keine Vergleichsgruppe. Richte dich danach, wie sich deine Ferse am nächsten Morgen anfühlt.
+
+#### Ist Barfußgehen zu Hause bei Plantarfasziitis in Ordnung?
+
+Solange deine Ferse wehtut, meidest du es besser, vor allem morgens als Erstes auf Fliesen oder Holz. Ein Best-Practice-Leitfaden von 2021 zu Fersenschmerzen rät von Barfußgehen und flachen Schuhen ohne Halt ab, bis die Beschwerden ganz weg sind. Der übliche Rat sind Schuhe mit Halt oder feste Hausschuhe für die ersten Schritte des Tages.
+
+## Fußübungen für Läuferinnen und Läufer: eine kurze Routine und was die Forschung zeigt
+
+Language: German (Deutsch) · https://walkito.site/de/fussuebungen-fuer-laeufer/ · published 2026-10-18 · updated 2026-10-18
+
+Eine gute Fußroutine fürs Laufen trainiert vier Dinge: die kleinen Muskeln des Fußgewölbes (die Übung Kurzer Fuß), die Ausdauer von Wade und Soleus (Fersenheben), die Kraft der Zehen und das Gleichgewicht auf einem Bein. Sie dauert etwa 10 Minuten, zwei- bis fünfmal pro Woche, nach einem lockeren Lauf oder an einem Ruhetag. In einer Studie mit 118 Freizeitläuferinnen und -läufern hatten diejenigen ohne Fuß-Core-Programm eine 2,42-mal so hohe Wahrscheinlichkeit, sich innerhalb von 12 Monaten beim Laufen zu verletzen (Taddei und Kollegen, 2020). Das ist eine einzige Studie, also vielversprechend, aber noch nicht gesichert.
+
+- In einer Studie von 2020 mit 118 Freizeitläuferinnen und -läufern auf langen Strecken hatte die Gruppe ohne Fuß-Core-Training eine 2,42-mal so hohe Wahrscheinlichkeit, sich innerhalb von 12 Monaten beim Laufen zu verletzen. Der Effekt zeigte sich nach etwa vier bis acht Monaten Training (Taddei und Kollegen, 2020).
+- In einer Studie von 2019 mit 57 Läuferinnen und Läufern wurden durch etwa zwei Monate Fußübungen, mindestens fünfmal pro Woche, alle gemessenen Fußmuskeln größer und kräftiger (Ridge und Kollegen, 2019).
+- Gesunde Erwachsene schaffen im Median etwa 23 bis 24 einbeinige Fersenheber pro Bein, und 25 wurde als Richtwert für normal vorgeschlagen (Hebert-Losier und Kollegen, 2017; Lunsford und Perry, 1995).
+- Ein selbst angeleitetes Kraftprogramm für Hüfte, Oberschenkel und Rumpf bei 720 Erstmarathonläuferinnen und -läufern senkte die Überlastungsverletzungen, die das Finish verhinderten, nicht: 7,1 % gegenüber 7,3 % (Toresdahl und Kollegen, 2020). Krafttraining allein hat dort keine Verletzungen verhindert.
+- Über Studien mit Langstreckenläuferinnen und -läufern hinweg verletzten sich zwischen 19,4 % und 79,3 % am Bein, und eine frühere Verletzung war einer der klarsten Risikofaktoren (van Gent und Kollegen, 2007).
+
+### Helfen Fußübungen Läufern, Verletzungen zu vermeiden?
+
+**Eine gute Studie sagt ja, und es ist trotzdem nur eine Studie.** 2020 teilten Taddei und Kollegen in Brasilien 118 Freizeitläuferinnen und -läufer auf langen Strecken per Zufall in eine Fuß-Core-Gruppe (57 Personen) und eine Kontrollgruppe (61 Personen) ein. Die Fuß-Core-Gruppe trainierte etwa zwei Monate lang unter Anleitung die Fuß- und Sprunggelenkmuskeln und machte dann mit Betreuung aus der Ferne weiter. Alle meldeten ein Jahr lang jede Woche ihr Lauftraining und jede Verletzung.
+
+Über 12 Monate hatte die Kontrollgruppe eine 2,42-mal so hohe Wahrscheinlichkeit, sich beim Laufen zu verletzen. Der Unterschied zeigte sich nach vier bis acht Monaten Training, nicht in den ersten Wochen. Wessen Fußkraft am stärksten zunahm, der lief länger ohne Verletzung.
+
+Eine frühere, kleinere Studie desselben Teams mit 28 Läuferinnen und Läufern fand, dass etwa zwei Monate Fußtraining die kleinen Fußmuskeln vergrößerten und die Abdruckkraft beim Laufen steigerten (Taddei und Kollegen, 2020).
+
+Was das nicht zeigt: Beide Studien stammen von einer Forschungsgruppe und wurden mit erfahrenen Freizeitläuferinnen und -läufern gemacht, die zu Beginn nicht verletzt waren. Anfänger und Menschen, die schon Schmerzen hatten, waren nicht dabei. Ob die Ergebnisse für sie gelten, wissen wir also nicht.
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
+
+### Was gehört in die Fußroutine für Läufer?
+
+Vier Teile mit je ein oder zwei Übungen. Die Dosierungen unten sind die Startdosierungen von Walkito. Mach die Übungen barfuß und hör für den Tag auf, wenn der Schmerz über 6 von 10 steigt.
+
+- **Fuß-Core:** die Übung [Kurzer Fuß](https://walkito.site/de/uebungen/kurzer-fuss/), erst im Stehen, dann auf einem Bein. Sie trainiert die kleinen Muskeln, die das Gewölbe halten.
+- **Wade und Soleus:** Fersenheben mit gestrecktem Knie für die Wade und mit gebeugtem Knie für den Soleus, den tieferen Wadenmuskel.
+- **Zehen:** Großzehenheben. Der große Zeh verlässt beim Abdruck als letzter Teil des Fußes den Boden.
+- **Gleichgewicht:** Stand auf einem Bein, denn Laufen ist eine Folge von Landungen auf einem Bein.
+
+Das folgt dem Gedanken hinter dem Programm von Taddei, das zuerst die kleinen Fußmuskeln trainierte und sie dann im Stehen und unter Last einsetzte. Eine Kopie dieses Programms ist es nicht. Mehr Übungen für die Zehen findest du unter [Zehen kräftigen: Übungen](https://walkito.site/de/zehen-kraeftigen-uebungen/).
+
+- **Kurzer Fuß im Stehen** (3 Sätze à 10, 5 Sekunden halten, beide Füße): Stell dich mit dem Gewicht auf beide Füße. Zieh den Fußballen in Richtung Ferse, ohne die Zehen einzukrallen, sodass sich das Gewölbe ein wenig hebt. Halten, dann lösen. Wenn sich die Zehen in den Boden krallen, nimm etwas zurück.
+- **Kurzer Fuß auf einem Bein** (3 Sätze à 10, 5 Sekunden halten, jeder Fuß): Stell dich auf einen Fuß, eine Hand nah an der Wand. Heb das Gewölbe wie oben an und halte es, während du balancierst. Das kommt dem näher, was der Fuß bei der Landung tut.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Halt dich an einer Wand fest. Geh in etwa 3 Sekunden auf die Fußballen beider Füße hoch, das Gewicht eher über dem großen Zeh, und senk dich in 3 Sekunden wieder ab. Wenn das leicht geht, wechsel auf ein Bein. Mehr auf der Seite [Fersenheben](https://walkito.site/de/uebungen/fersenheben/).
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich mit den Füßen flach auf den Boden und drück dich über die Fußballen nach oben. Mit gebeugtem Knie leistet der Soleus den Großteil der Arbeit. Ein Rucksack oder Gewichte auf den Knien machen es schwerer, sobald es leicht geht.
+- **Großzehenheben** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Lass die vier kleinen Zehen auf dem Boden und heb nur den großen Zeh an. Dann probier es umgekehrt: großer Zeh unten, kleine Zehen oben. Am Anfang reicht eine kleine Bewegung.
+- **Einbeinstand** (3-mal 30 Sekunden halten, jede Seite): Stell dich auf einen Fuß, das Knie leicht gebeugt, nah an einer Wand. Wenn 30 Sekunden leicht gehen, schließ die Augen oder stell dich auf ein Kissen. Mehr auf der Seite [Einbeinstand](https://walkito.site/de/uebungen/einbeinstand/).
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
+
+### Warum brauchen Läufer Kraft in Wade und Soleus?
+
+**Die Wadenmuskeln leisten beim Laufen einen großen Teil des Abdrucks.** Eine Übersichtsarbeit von 2014 dazu, wie die Beinmuskeln beim Laufen arbeiten, fand: Bei Geschwindigkeiten bis etwa 7 Meter pro Sekunde, was fast jedes Laufen in der Freizeit abdeckt, werden Läuferinnen und Läufer vor allem schneller, indem sie sich kräftiger vom Boden abdrücken und so einen längeren Schritt machen. Die beiden Wadenmuskeln, Soleus und Gastrocnemius, spielen bei diesem Abdruck eine besonders wichtige Rolle (Schache und Kollegen, 2014).
+
+Der Soleus liegt unter dem Gastrocnemius und arbeitet am meisten bei gebeugtem Knie. Deshalb enthält die Routine neben dem Fersenheben im Stehen auch eines im Sitzen mit gebeugtem Knie. Wenn sich deine Waden nach dem Laufen oft fest anfühlen, findest du unter [verspannte Waden](https://walkito.site/de/verspannte-waden/) Dehnungen und das [Soleus-Dehnen](https://walkito.site/de/uebungen/soleus-dehnen/).
+
+Die Wadenausdauer spielt auch bei Schienbeinschmerzen eine Rolle. In einer Fall-Kontroll-Studie schafften Sportler mit Schienbeinkantensyndrom bis zur Ermüdung weniger Fersenheber als Sportler ohne (Madeley und Kollegen, 2007). Das zeigt einen Zusammenhang, nicht, dass schwache Waden ein Schienbeinkantensyndrom verursachen. Mehr unter [Schienbeinkantensyndrom: Übungen](https://walkito.site/de/schienbeinkantensyndrom-uebungen/).
+
+Source: Schache AG, Dorn TW, Williams GP, Brown NA, Pandy MG. Lower-limb muscular strategies for increasing running speed. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):813-824.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+
+### Wie oft sollte ein Läufer einbeiniges Fersenheben schaffen?
+
+Es gibt keinen eigenen Normwert für Läufer. Nimm deshalb die allgemeinen Werte für Erwachsene als Untergrenze. In einer Studie mit 566 Erwachsenen lag der Median bei 24 einbeinigen Fersenhebern mit dem rechten Bein und 23 mit dem linken, im Takt von einem Schlag hoch und einem Schlag runter bei 60 Schlägen pro Minute. Die Zahl sinkt mit dem Alter, und aktivere Menschen schafften mehr (Hebert-Losier und Kollegen, 2017). Eine ältere Studie schlug 25 als Richtwert für normal vor (Lunsford und Perry, 1995).
+
+Vergleich auch deine Beine. Ein Unterschied von mehr als 10 Prozent zwischen den Seiten ist die übliche Schwelle für einen bedeutsamen Unterschied in der Reha der Beine (Silbernagel und Kollegen, 2010). Das vollständige Protokoll, eine Version für zu Hause und einen Rechner findest du auf der Seite [Fersenheben-Test](https://walkito.site/de/fersenheben-test/).
+
+Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+Source: Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
+Source: Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. A new measurement of heel-rise endurance with the ability to detect functional deficits in patients with Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.
+
+### Wann und wie oft solltest du als Läufer Fußübungen machen?
+
+**Keine Studie hat verglichen, ob Fußübungen nach einem Lauf oder an einem Ruhetag besser sind.** Der Zeitplan unten ist also praktisch gedacht, nicht getestet.
+
+- **Nach einem lockeren Lauf oder an einem Ruhetag.** Die Übungen ermüden die kleinen Fußmuskeln. Sie passen deshalb besser nach einem kurzen, lockeren Lauf als vor einer harten Einheit oder einem langen Lauf.
+- **Nicht direkt vor Tempotraining oder einem Wettkampf.** Dafür willst du frische Waden.
+- **Fersenheben an 2 bis 3 Tagen pro Woche,** mit einem freien Tag dazwischen, wie bei jedem Krafttraining.
+- **Fuß-Core, Zehen und Gleichgewicht an 2 bis 5 Tagen pro Woche.** In der Studie von 2019 machten die Läuferinnen und Läufer mindestens fünfmal pro Woche Fußübungen und wurden in etwa zwei Monaten kräftiger (Ridge und Kollegen, 2019).
+
+Gib dir Zeit. Die Muskelgröße veränderte sich in den Studien innerhalb von etwa zwei Monaten, aber weniger Verletzungen zeigten sich in der Studie von Taddei erst nach vier bis acht Monaten. Eine Routine, die du monatelang durchhältst, bringt mehr als eine harte, die du nach drei Wochen aufgibst.
+
+Source: Ridge ST, Olsen MT, Bruening DA, et al. Walking in minimalist shoes is effective for strengthening foot muscles. Medicine & Science in Sports & Exercise. 2019;51(1):104–113.
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+
+### Kannst du Fußübungen machen, wenn es irgendwo zwickt?
+
+Meist ja, wenn das Zwicken leicht und stabil ist und du die Übungen anpasst. Es gilt dieselbe Regel wie überall auf dieser Website: Etwas Unbehagen ist in Ordnung, aber hör für den Tag auf, wenn der Schmerz über 6 von 10 steigt, und mach es leichter, wenn es am nächsten Morgen schlimmer ist.
+
+Einige Beschwerden ändern den Plan:
+
+- **Fersenschmerz bei den ersten Schritten am Morgen** deutet auf eine Plantarfasziitis hin. Fersenheben und Dehnungen sind dann wichtiger: siehe [Plantarfasziitis: Übungen](https://walkito.site/de/plantarfasziitis-uebungen/).
+- **Schmerz hinten an der Ferse oder in der Achillessehne** braucht einen langsameren Aufbau für die Wade, oft mit langsamem Fersenabsenken: siehe [Achillessehnenentzündung: Übungen](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+- **Schmerz entlang der Innenseite des Schienbeins** kann ein Schienbeinkantensyndrom sein: siehe [Schienbeinkantensyndrom: Übungen](https://walkito.site/de/schienbeinkantensyndrom-uebungen/).
+- **Schmerz an einer Stelle eines Knochens**, der mit jedem Lauf zunimmt, ist ein Warnzeichen für einen Ermüdungsbruch. Hör mit dem Laufen auf und lass es ärztlich abklären.
+
+### Was Fußübungen nicht leisten
+
+**Sie ersetzen kein vernünftiges Training.** Über Studien mit Langstreckenläuferinnen und -läufern hinweg verletzten sich zwischen 19,4 % und 79,3 % am Bein, und eine lange Wochenstrecke bei Männern sowie eine frühere Verletzung gehörten zu den klarsten Risikofaktoren (van Gent und Kollegen, 2007). In einer dänischen Studie mit 874 Laufanfängerinnen und -anfängern schienen diejenigen, die ihre Wochenstrecke um mehr als 30 % steigerten, anfälliger für einige Überlastungsverletzungen zu sein, auch wenn das Ergebnis die statistische Signifikanz knapp verfehlte (Nielsen und Kollegen, 2014).
+
+**Krafttraining ist kein automatischer Schutz.** In einer Studie mit 720 Erstmarathonläuferinnen und -läufern beim New-York-City-Marathon senkte ein selbst angeleitetes 10-Minuten-Programm für Hüfte, Oberschenkel und Rumpf, dreimal pro Woche über etwa drei Monate, die Überlastungsverletzungen nicht, die das Finish verhinderten: 7,1 % in der Kraftgruppe gegenüber 7,3 % bei den anderen (Toresdahl und Kollegen, 2020). Dieses Programm trainierte die Füße nicht, aber es erinnert daran, dass eine Routine auf dem Papier noch kein Ergebnis ist.
+
+**Die Form des Gewölbes ändern sie nur wenig.** In einer kleinen Studie mit 21 Personen ohne Kontrollgruppe sank das Gewölbe nach einem Monat Training mit dem Kurzen Fuß um 1,8 mm weniger ab (Mulligan und Cook, 2013). Rechne mit einem kräftigeren, stabileren Fuß, nicht mit einem neuen Gewölbe. Schuhe und Barfußlaufen sind eine eigene Frage, die unter [Barfußschuhe](https://walkito.site/de/barfussschuhe/) behandelt wird.
+
+Source: van Gent RN, Siem D, van Middelkoop M, van Os AG, Bierma-Zeinstra SM, Koes BW. Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review. British Journal of Sports Medicine. 2007;41(8):469-480.
+Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
+Source: Toresdahl BG, McElheny K, Metzl J, Ammerman B, Chang B, Kinderknecht J. A randomized study of a strength training program to prevent injuries in runners of the New York City Marathon. Sports Health. 2020;12(1):74-79.
+Source: Mulligan EP, Cook PG. Effect of plantar intrinsic muscle training on medial longitudinal arch morphology and dynamic function. Manual Therapy. 2013;18(5):425–430.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Schmerz an einer Stelle eines Knochens in Fuß oder Schienbein sitzt und mit jedem Lauf schlimmer wird, denn das kann ein Ermüdungsbruch sein
+- du den Fuß nicht belasten kannst oder beim Gehen hinkst
+- der Schmerz mit einem Knall, einem Sturz oder einem Umknicken begann
+- Fuß oder Sprunggelenk geschwollen, gerötet oder warm sind oder du Fieber hast
+- du Taubheit, Kribbeln oder Brennen im Fuß spürst
+- Ferse oder Fuß nachts oder in Ruhe wehtun
+- der Schmerz über zwei bis drei Wochen immer schlimmer wird, obwohl du lockerer läufst
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App für Ferse und Fuß mit den Übungen von dieser Seite: Kurzer Fuß vom Sitzen bis auf einem Bein, Fersenheben, Großzehenheben, Zehenspreizen und Einbeinstand. Sie plant dein Lauftraining nicht. Behalte also deinen eigenen Trainingsplan und leg die Einheiten auf lockere Tage.
+
+#### Welche Fußübungen sind für Läufer am besten?
+
+Eine kurze Auswahl, die vier Dinge abdeckt: Kurzer Fuß für das Gewölbe, Fersenheben mit gestrecktem und mit gebeugtem Knie für Wade und Soleus, Großzehenheben für den Abdruck und Einbeinstand. Ein Fuß-Core-Programm, das auf derselben Idee aufbaut, senkte in einer Studie mit 118 Läuferinnen und Läufern die Laufverletzungen.
+
+#### Beugen Übungen zur Fußkräftigung Laufverletzungen vor?
+
+Vielleicht. In einer Studie von 2020 mit 118 Freizeitläuferinnen und -läufern hatte die Gruppe ohne Fuß-Core-Training eine 2,42-mal so hohe Wahrscheinlichkeit, sich innerhalb von 12 Monaten zu verletzen, und der Effekt zeigte sich nach vier bis acht Monaten. Es ist eine einzige Studie von einer Forschungsgruppe. Die Belege sind also vielversprechend, aber noch nicht gesichert.
+
+#### Wie oft sollten Läufer Fußübungen machen?
+
+An 2 bis 5 Tagen pro Woche für Fuß-Core, Zehen und Gleichgewicht und an 2 bis 3 Tagen pro Woche für Fersenheben, mit einem freien Tag dazwischen. In einer Studie von 2019 wurden Läuferinnen und Läufer, die mindestens fünfmal pro Woche Fußübungen machten, in etwa zwei Monaten kräftiger.
+
+#### Sollte ich Fußübungen vor oder nach dem Laufen machen?
+
+Nach einem lockeren Lauf oder an einem Ruhetag ist die praktische Wahl, weil die Übungen die kleinen Fußmuskeln ermüden. Keine Studie hat den Zeitpunkt verglichen. Mach keine ganze Routine direkt vor Tempotraining, einem langen Lauf oder einem Wettkampf, wenn du frische Füße und Waden willst.
+
+#### Wie viele einbeinige Fersenheber sollte ein Läufer schaffen?
+
+Es gibt keine eigene Zahl für Läufer. Gesunde Erwachsene schaffen im Median etwa 23 bis 24 pro Bein in einem festen Takt, und 25 wurde als normal vorgeschlagen. Viele aktive Läuferinnen und Läufer schaffen mehr. Ein Unterschied von mehr als 10 Prozent zwischen den Beinen lohnt sich zu beobachten. Auf der Seite zum Fersenheben-Test findest du das vollständige Protokoll.
+
+#### Wie lange dauert es, bis Fußübungen etwas bringen?
+
+Die Fußmuskeln wurden in den Studien in etwa zwei Monaten größer und kräftiger. Weniger Verletzungen zeigten sich in der Läuferstudie später, nach vier bis acht Monaten. Plane, eine kurze Routine über Monate beizubehalten, nicht über Wochen.
+
+#### Kann ich weiterlaufen, während ich Fußübungen mache?
+
+Ja. Die Routine ist als Ergänzung zu deinem Lauftraining gedacht. Wenn es irgendwo zwickt, hör mit einer Übung für den Tag auf, sobald der Schmerz über 6 von 10 steigt, und lauf locker, wenn der Schmerz am nächsten Morgen schlimmer ist. Schmerz, der mit jedem Lauf zunimmt oder an einer Stelle eines Knochens sitzt, solltest du ärztlich abklären lassen.
+
+#### Kräftigen Barfußlaufen oder Minimalschuhe die Füße?
+
+Gehen in Minimalschuhen baute in einer Studie von 2019 mit Läuferinnen und Läufern die Fußkraft etwa so gut auf wie Übungen, bei langsamer, schrittweiser Steigerung. Die Laufschuhe schnell zu wechseln ist etwas anderes und hat eigene Risiken. Steigere dich also langsam, wenn du es ausprobierst.
+
+## Fußschmerzen bei Lehrkräften: was ein Schultag mit deinen Füßen macht und was hilft
+
+Language: German (Deutsch) · https://walkito.site/de/fussschmerzen-lehrer/ · published 2026-10-18 · updated 2026-10-18
+
+Fußschmerzen bei Lehrkräften kommen vor allem von stundenlangem Stehen und Gehen durch die Klasse auf harten Böden. Die Maßnahmen mit den besten Belegen, Dehnungen für Wade und Plantarfaszie und Krafttraining für die Wade, dauern 3 bis 5 Minuten und passen zwischen zwei Stunden. Die Leitlinie von 2023 zu Fersenschmerzen bewertet diese Dehnungen mit **A**, ihrem höchsten Empfehlungsgrad, und Krafttraining mit **B** (Koc und Kollegen, 2023). Zu den Füßen von Lehrkräften gibt es wenig Forschung: In einer Übersichtsarbeit von 2024 berichteten 27 Studien über Schmerzen in der Sprunggelenksregion, meist zusammen mit dem Fuß gezählt, und der zusammengefasste Wert lag bei 30 % der Lehrkräfte (Tahernejad und Kollegen, 2024).
+
+- In einer Übersichtsarbeit von 2024 mit 44 Studien und 15.972 Lehrkräften lag der zusammengefasste Wert für Schmerzen in der Sprunggelenksregion (meist zusammen mit dem Fuß gezählt) bei 30 % in 27 Studien, unter Nacken und unterem Rücken mit je 47 %. Die Ergebnisse unterschieden sich stark zwischen den Studien (Tahernejad und Kollegen, 2024).
+- In einer Umfrage unter 1.439 Lehrkräften in einer einzigen Region Saudi-Arabiens berichteten 85,5 % über Fußschmerzen in den letzten 12 Monaten, und sie waren häufiger bei Lehrkräften mit 16 oder mehr Stunden pro Woche (Alqahtani, 2020). Andere Umfragen fanden deutlich niedrigere Werte, lies das also als Ergebnis aus einer Region.
+- Wir haben keine Studie gefunden, die gemessen hat, wie viele Stunden eine typische Lehrkraft steht. In einer Studie mit 50 Fällen und 100 Kontrollen erhöhte Stehen über den größten Teil des Arbeitstags die Chance auf eine Plantarfasziitis um das 3,6-Fache, und eine stark eingeschränkte Beweglichkeit im Sprunggelenk, meist durch eine verkürzte Wade, um das 23,3-Fache (Riddle und Kollegen, 2003).
+- Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Dehnung von Plantarfaszie und Wade mit Empfehlungsgrad **A** und Krafttraining mit **B**. Einlagen allein bekommen **Empfehlungsgrad B gegen die Anwendung** (Koc und Kollegen, 2023).
+- Bei 50 Menschen mit Fersenschmerzen und 25 ohne standen die mit Fersenschmerzen 3,4 Stunden am Tag länger und trugen Schuhe mit härteren Fersen. Das ist ein Zusammenhang, kein Beweis für eine Ursache (Landorf und Kollegen, 2023).
+
+### Was macht ein Schultag mit deinen Füßen?
+
+**Ein Schultag mischt ruhiges Stehen mit kurzen Wegen, meist auf harten Böden.** Du stehst an der Tafel oder am Pult, gehst durch die Reihen, während die Klasse arbeitet, und stehst dann wieder bei der Pausenaufsicht auf dem Flur oder im Hof. Ruhiges Stehen belastet Ferse, Plantarfaszie (das Band unter dem Fuß, das das Gewölbe trägt) und Wade über lange Zeit ohne die Pumpwirkung, die das Gehen bringt.
+
+Wir haben keine Studie gefunden, die gemessen hat, wie viele Stunden eine typische Lehrkraft steht, deshalb nennt diese Seite keine Zahl. Gemessen ist langes Stehen im Allgemeinen. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen brachte es mit Beschwerden in Beinen und Füßen, Ermüdung und geschwollenen Beinen in Verbindung und zählte Bodenmatten, stützende Schuhe, Kompressionsstrümpfe und Möglichkeiten zum Wechsel zwischen Sitzen und Stehen zu den Maßnahmen mit gewissen Belegen (Waters und Dick, 2015).
+
+In einer Übersichtsarbeit von 2017 mit 25 Laborstudien nahmen Beschwerden im unteren Rücken und in den Beinen zu, je länger die Menschen ohne Pause standen. Die Autoren schlugen vor, nicht länger als etwa 40 Minuten am Stück zu stehen (Coenen und Kollegen, 2017). Das ist ungefähr eine Unterrichtsstunde.
+
+Auch die Wade zählt. In einer Studie von 2003 war eine [verkürzte Wade](https://walkito.site/de/verspannte-waden/) der stärkste Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003). Eine Lehrkraft, die den ganzen Tag auf den Beinen ist und verkürzte Waden hat, hat beides.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Wie häufig sind Fußschmerzen bei Lehrkräften?
+
+**Häufig, aber weniger untersucht als Rücken und Nacken von Lehrkräften.** Eine Übersichtsarbeit von 2024 fasste 44 Studien mit 15.972 Lehrkräften zusammen. Nacken- und Kreuzschmerzen lagen vorn, mit je 47 %. Schmerzen in der Sprunggelenksregion, die die meisten Studien zusammen mit dem Fuß zählten, lagen zusammengefasst bei 30 % in 27 Studien mit 8.634 Lehrkräften. Die Studien unterschieden sich stark voneinander, und die Autoren fanden für den Wert zum Sprunggelenk Hinweise auf einen Publikationsbias. Lies 30 % also als grobe Mitte, nicht als genaue Rate.
+
+Eine frühere Übersichtsarbeit fand, dass nur wenige Studien überhaupt Beine und Füße von Lehrkräften untersucht hatten und dass Bein- und Fußschmerzen seltener angegeben wurden als Schmerzen in Rücken, Nacken und Armen (Erick und Smith, 2011).
+
+Die größte Umfrage speziell zum Fuß, die wir gefunden haben, befragte 1.439 Lehrkräfte in einer Region Saudi-Arabiens. 85,5 % berichteten über Fußschmerzen in den letzten 12 Monaten. Sie waren häufiger bei Lehrkräften mit 16 oder mehr Stunden pro Woche (88 %) als bei denen mit weniger (81,4 %) und bei denen mit mehr als 10 Jahren im Beruf (86,8 % gegenüber 82,6 %). Es war ein Fragebogen mit Selbstauskunft in einer einzigen Region, und die meisten Befragten waren Frauen. Das Ergebnis passt also vielleicht nicht zu deiner Schule (Alqahtani, 2020).
+
+Source: Tahernejad S, Hejazi A, Rezaei E, Makki F, Sahebi A, Zangiabadi Z. Musculoskeletal disorders among teachers: a systematic review and meta-analysis. Frontiers in Public Health. 2024;12:1399552.
+Source: Erick PN, Smith DR. A systematic review of musculoskeletal disorders among school teachers. BMC Musculoskeletal Disorders. 2011;12:260.
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+
+### Welche Übungen passen zwischen zwei Stunden?
+
+Die Übungen unten stammen aus der Leitlinie zur Plantarfasziitis. Sie wurden nicht bei Lehrkräften getestet, aber sie setzen an den Geweben an, die ein Tag im Stehen belastet: Wade, Plantarfaszie und Ferse. Für die meisten brauchst du nur eine Wand oder einen Tisch, sie passen also in die Pause zwischen zwei Stunden oder in eine Freistunde. Das sind die Startdosen von Walkito, keine Verordnung. [Wie diese Ratgeber entstehen](https://walkito.site/de/ueber-walkito/).
+
+Dehnungen bekommen den höchsten Empfehlungsgrad der Leitlinie, **A**. Krafttraining für die Wade bekommt ein **B**. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.
+
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an die Wand oder an den Rahmen der Tafel. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht den ganzen Tag an der Ferse, deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position an der Wand, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung weiter unten spürst, nah an der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt sich nur mit gebeugtem Knie dehnen.
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt, und eine weitere am Schreibtisch, bevor du nach einer Freistunde aufstehst.
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich an dein Pult, die Füße flach am Boden, und drück dich über die Fußballen nach oben. Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, und die Ferse wird kaum belastet. Das geht unter dem Tisch, während die Klasse still arbeitet.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, eine Hand am Tisch, steig gerade über die großen Zehen nach oben und senk dich langsam ab. Beide Füße teilen sich die Last. Mehr dazu, wie du steigerst: [Wadenheben bei Plantarfasziitis](https://walkito.site/de/wadenheben-plantarfasziitis/).
+- **Fußrollen** (1 Minute): Setz dich hin und roll die Fußsohle langsam und mit festem Druck über einen Massageball. Wenn du das Gesicht verziehst, nimm Druck weg. Mit einem Ball in der Schreibtischschublade wird das zur Gewohnheit nach dem Unterricht. Mehr unter [Massageball bei Plantarfasziitis](https://walkito.site/de/massageball-plantarfasziitis/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Wie baust du Fußübungen in einen Schultag ein?
+
+Du brauchst kein eigenes Training. Häng jede Übung an einen Moment, den der Tag sowieso hat. Die Dosen sind dieselben wie oben, die Tabelle sagt nur, wann sie passen.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Welche Schuhe sind die besten für Lehrkräfte, die den ganzen Tag stehen?
+
+**Keine Studie hat Schuhe für Lehrkräfte verglichen, und keine Studie spricht für eine bestimmte Marke oder Form.** Die Leitlinie von 2023 zu Fersenschmerzen bewertet keine Schuharten. Die vorhandenen Belege sprechen für Dämpfung unter der Ferse und für eine gute Passform.
+
+In einer Studie von 2023 wurden 50 Menschen mit Fersenschmerzen unter der Ferse mit 25 passenden Menschen ohne diese Schmerzen verglichen. Die mit Fersenschmerzen standen 3,4 Stunden am Tag länger und trugen Schuhe mit härteren Fersen. Schuhform, Absatzhöhe und Stehen auf harten Böden unterschieden sich zwischen den Gruppen nicht (Landorf und Kollegen, 2023). Das zeigt einen Zusammenhang, nicht dass weiche Fersen Schmerzen verhindern, aber es spricht für einen Schuh mit gedämpfter Ferse für lange Tage an der Tafel.
+
+Eine praktische Checkliste, die auf Passform und Komfort beruht, nicht auf einer Studie:
+
+- eine gedämpfte Ferse und eine feste Fersenkappe (die Rückseite des Schuhs knickt nicht ein, wenn du sie zusammendrückst)
+- Platz, damit sich die Zehen ausbreiten können, ohne Drücken am Ende des Tages
+- ein niedriger, stabiler Absatz statt eines hohen oder sehr dünnen
+- ein zweites Paar zum Wechseln, damit du nicht jeden Tag dasselbe abgetragene Paar trägst
+
+**Einlagen können einen Tag angenehmer machen, aber verlass dich nicht nur auf sie.** Die Leitlinie von 2023 bewertet Einlagen allein mit **Empfehlungsgrad B gegen die Anwendung** und in Kombination mit Dehnen und Krafttraining mit **C** (Koc und Kollegen, 2023). [Einlagen oder Übungen](https://walkito.site/de/einlagen-oder-uebungen/) vergleicht beides und erklärt, worauf du bei Einlagen für Plantarfasziitis achten solltest.
+
+Kompressionsstrümpfe sind eine weitere Möglichkeit, wenn sich deine Beine am Ende des Tages schwer und geschwollen anfühlen. In einer Studie mit 40 Sicherheitskräften in langen Schichten im Stehen verhinderten Strümpfe mit 15 bis 20 mmHg und mit 20 bis 30 mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat (Garcia und Kollegen, 2023). Lehrkräfte wurden darin nicht untersucht.
+
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+
+### Machen Böden und Matten im Klassenzimmer einen Unterschied?
+
+Die meisten Klassenzimmer haben harte Böden: Fliesen, Vinyl auf Beton oder dünnen Teppich. Keine Studie hat Böden im Klassenzimmer und die Füße von Lehrkräften untersucht. Die Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden, neben Schuhen und Möglichkeiten zum Wechsel zwischen Sitzen und Stehen (Waters und Dick, 2015).
+
+Eine Matte hilft nur dort, wo du wirklich stehst. Wenn du von einem festen Platz aus unterrichtest, etwa an der Tafel, am Beamer oder an einem Labortisch, lohnt sich dort ein Versuch mit einer Anti-Ermüdungsmatte. Wenn du durch die Klasse gehst, ist der Schuh deine Matte.
+
+Bewegung ist die andere Hälfte. Die Studien zum Stehen fanden, dass Beschwerden mit der Zeit im ruhigen Stehen zunehmen (Coenen und Kollegen, 2017). Gehen zwischen den Tischen, Sitzen während der Stillarbeit und das Gewicht verlagern unterbrechen die gleichbleibende Belastung.
+
+Geh zu Hause morgens als Erstes nicht barfuß auf harten Böden, wenn deine Ferse wehtut. [Fersenschmerzen morgens](https://walkito.site/de/fersenschmerzen-morgens/) erklärt, warum die ersten Schritte zählen.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+
+### Wann ist der Fersenschmerz einer Lehrkraft eine Plantarfasziitis?
+
+Allgemeine Schmerzen am Ende eines Schultags, die am nächsten Morgen weg sind, sind Ermüdung vom Stehen. **Die Plantarfasziitis hat ein typisches Muster: stechender Schmerz unter der Ferse bei den ersten Schritten am Morgen oder nach dem Sitzen, der beim Gehen nachlässt und nach einem langen Tag auf den Beinen zurückkommt.** In der Umfrage aus Saudi-Arabien sagten 25,8 % der Lehrkräfte mit Fußschmerzen, der Schmerz komme früh am Morgen und nach einer Pause (Alqahtani, 2020). In dieser Umfrage wurde niemand diagnostiziert. Das ist also ein Muster, keine Zahl von Plantarfasziitis-Fällen.
+
+Wenn du dich darin wiedererkennst, fang mit [Übungen und Dehnungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/) an. Etwa 90 % der Menschen mit Plantarfasziitis werden mit nichtoperativer Behandlung besser, auch wenn das drei bis sechs Monate dauern kann (Latt und Kollegen, 2020). [Wie lange dauert eine Plantarfasziitis](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/) hat die Einzelheiten.
+
+Andere Muster deuten auf etwas anderes hin:
+
+- ein tiefer Schmerz in der Mitte der Ferse, schlimmer barfuß auf harten Böden: [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/)
+- Schmerz entlang des Gewölbes, der im Lauf des Tages zunimmt: [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/)
+- Schmerz unter dem Fußballen: [Vorfußschmerzen](https://walkito.site/de/metatarsalgie-vorfussschmerzen/)
+- Schmerz an der Rückseite der Ferse, in der Sehne: [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/)
+
+Nicht sicher, welches Muster es ist? Achte darauf, wo und wann es wehtut. **Wenn du dann noch unsicher bist, lass es ärztlich abklären, bevor du den Fuß mit Übungen belastest.**
+
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Schmerz nach einem Sturz, einem Umknicken oder einem Stoß begann, zum Beispiel bei der Pausenaufsicht oder auf der Treppe
+- du den Fuß nicht belasten kannst oder humpelst
+- der Fuß taub ist, kribbelt, brennt, geschwollen oder warm ist
+- die Ferse oder der Fuß gerötet ist oder du Fieber hast oder dich krank fühlst
+- der Schmerz dich nachts weckt oder in Ruhe da ist
+- der Schmerz an einer punktgenauen Stelle sitzt und bei Belastung schlimmer wird, was auf einen Ermüdungsbruch hindeuten kann
+- eine Wade oder ein Bein plötzlich angeschwollen ist und schmerzt, gerötet oder warm ist
+- du Diabetes, ein vermindertes Gefühl in den Füßen oder eine schlechte Durchblutung hast
+
+### Als Plan umsetzen
+
+Du musst die Reihenfolge, die Dosen und den Zeitpunkt für eine schwerere Variante nicht selbst herausfinden. Walkito baut Woche für Woche einen Plan rund um ein Ziel. Wenn deine Ferse dem morgendlichen Muster der Plantarfasziitis folgt, ist das erste Ziel ein Morgenschmerz von 1 von 10 oder weniger an 14 Tagen hintereinander.
+
+#### Warum tun meine Füße nach einem ganzen Schultag so weh?
+
+Im Unterricht stehst und gehst du den größten Teil des Tages auf harten Böden, und das belastet Ferse, Gewölbe und Wade fast ohne Pause. Übersichtsarbeiten zur Arbeit im Stehen bringen langes Stehen mit Beschwerden in Beinen und Füßen und mit Ermüdung in Verbindung, und Laborstudien fanden, dass die Beschwerden zunehmen, je länger Menschen ruhig stehen. Pausen im Sitzen, Wadendehnungen und gedämpfte Schuhe helfen.
+
+#### Wie häufig sind Fußschmerzen bei Lehrkräften?
+
+Eine Übersichtsarbeit von 2024 kam für Schmerzen in der Sprunggelenksregion, meist zusammen mit dem Fuß gezählt, auf zusammengefasst 30 % der Lehrkräfte in 27 Studien, mit sehr unterschiedlichen Ergebnissen zwischen den Studien. Eine Umfrage unter 1.439 Lehrkräften in einer einzigen Region Saudi-Arabiens fand bei 85,5 % Fußschmerzen im letzten Jahr. Nacken- und Kreuzschmerzen werden häufiger angegeben als Fußschmerzen.
+
+#### Welche Schuhe sind die besten für Lehrkräfte, die den ganzen Tag stehen?
+
+Keine Studie hat Schuhe für Lehrkräfte getestet. Achte auf eine gedämpfte Ferse, eine feste Fersenkappe, Platz für die Zehen und einen niedrigen, stabilen Absatz. In einer Studie trugen Menschen mit Fersenschmerzen Schuhe mit härteren Fersen und standen jeden Tag länger. Einlagen allein bekommen in der Leitlinie von 2023 zu Fersenschmerzen Empfehlungsgrad B gegen die Anwendung, kombiniere sie also mit Dehnen.
+
+#### Welche Dehnungen können Lehrkräfte zwischen den Stunden machen?
+
+Eine Wadendehnung und eine Soleusdehnung an der Wand dauern etwa eine Minute pro Seite: 2-mal 30 Sekunden halten pro Bein. Die Plantarfaszien-Dehnung geht im Sitzen am Pult, 2-mal 30 Sekunden halten pro Fuß. Die Leitlinie von 2023 zu Fersenschmerzen bewertet diese Dehnungen mit A, sie wurde aber für Plantarfasziitis geschrieben, nicht für Lehrkräfte.
+
+#### Kann ständiges Stehen im Lehrerberuf eine Plantarfasziitis auslösen?
+
+Es kann das Risiko erhöhen. In einer Studie von 2003 mit 50 Menschen mit Plantarfasziitis und 100 ohne erhöhte Stehen über den größten Teil des Arbeitstags die Chance um das 3,6-Fache und eine stark eingeschränkte Beweglichkeit im Sprunggelenk, meist durch eine verkürzte Wade, um das 23,3-Fache. Die Studie hat keine Lehrkräfte untersucht, und keine Studie hat Plantarfasziitis speziell bei Lehrkräften gezählt.
+
+#### Helfen Anti-Ermüdungsmatten Lehrkräften?
+
+Vielleicht, wenn du an einem festen Platz stehst. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden. Keine Studie hat Matten im Klassenzimmer getestet. Wenn du die meiste Zeit der Stunde durch die Klasse gehst, sind deine Schuhe wichtiger als eine Matte.
+
+#### Sollten Lehrkräfte Kompressionsstrümpfe tragen?
+
+Ein Versuch lohnt sich, wenn sich deine Beine am Ende des Tages schwer oder geschwollen anfühlen. In einer Studie mit 40 Sicherheitskräften in langen Schichten im Stehen verhinderten Strümpfe mit 15 bis 20 mmHg und mit 20 bis 30 mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat. Lehrkräfte waren nicht dabei.
+
+#### Wie lange sollte eine Lehrkraft stehen, bevor sie sich hinsetzt?
+
+Für Lehrkräfte gibt es keine getestete Grenze. Eine Übersichtsarbeit von 2017 zu Laborstudien über das Stehen fand, dass die Beschwerden mit der Zeit zunehmen, und schlug vor, nicht länger als etwa 40 Minuten am Stück zu stehen. Praktisch heißt das: Setz dich ein paar Minuten hin, wenn die Klasse mit der Stillarbeit beginnt, und geh durch die Klasse, statt an einer Stelle ruhig zu stehen.
+
+## Fußschmerzen in Einzelhandel und Lager: was auf harten Böden hilft
+
+Language: German (Deutsch) · https://walkito.site/de/fussschmerzen-einzelhandel-lager/ · published 2026-10-18 · updated 2026-10-18
+
+Im Lager und im Einzelhandel tun die Füße weh, weil stundenlanges Stehen und Gehen auf harten Böden Ferse, Gewölbe und Wade belastet, ohne dass der Untergrund nachgibt. Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) in einer Studie um das 3,6-Fache (Riddle und Kollegen, 2003). Wadendehnung und Plantarfaszien-Dehnung bekommen in der Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad, **A**, und eine kurze Version passt in etwa 3 Minuten Pause. Matten und gedämpfte Einlagen verbessern den Komfort, aber die Belege dafür sind dünner (Speed und Kollegen, 2018).
+
+- Wer den größten Teil des Arbeitstags auf den Beinen war, hatte in einer Fall-Kontroll-Studie mit 50 Fällen und 100 Kontrollen eine 3,6-fache Chance auf Plantarfasziitis. Eine stark eingeschränkte Beweglichkeit im Sprunggelenk, meist durch eine verkürzte Wade, erhöhte sie um das 23,3-Fache (Riddle und Kollegen, 2003).
+- Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen gewichttragende Tätigkeiten bei der Arbeit, besonders auf Böden mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen prüfen (Koc und Kollegen, 2023).
+- Eine Übersichtsarbeit mit 10 Studien fand mäßige Belege, dass Matten und gedämpfte Einlagen Beschwerden und Ermüdung bei Arbeit im Stehen verringern, und nur begrenzte Belege, dass Einlagen besser sind als Matten (Speed und Kollegen, 2018).
+- In einer Übersichtsarbeit mit 7 Studien zu Beschäftigten in Sicherheitsschuhen fanden die 4, die Schmerzen gemessen haben, Fußschmerzen bei 42,3 bis 60,8 % der Beschäftigten. Die Hauptbeschwerden waren Hitze, Schwitzen, Gewicht und Steifigkeit (Arceri und Kollegen, 2024).
+- Wadendehnung und Plantarfaszien-Dehnung bekommen den höchsten Empfehlungsgrad der Leitlinie, **A**, Krafttraining ein **B**. Einlagen allein bekommen bei Fersenschmerzen **Empfehlungsgrad B gegen die Anwendung** (Koc und Kollegen, 2023).
+
+### Warum tun die Füße nach einer Schicht im Lager oder im Laden weh?
+
+Arbeit im Einzelhandel und im Lager verbindet zwei Belastungen. An der Kasse oder am Packtisch stehst du lange still. Im Verkaufsraum oder beim Kommissionieren gehst du, trägst, schiebst Wagen und drehst dich. Beides hält das Gewicht über den größten Teil der Schicht auf Ferse und Gewölbe, und wann Pause ist, bestimmt der Dienstplan, nicht deine Füße.
+
+Eine Fall-Kontroll-Studie von 2003 mit 50 Menschen mit Plantarfasziitis und 100 passenden Kontrollen fand: Wer den größten Teil des Arbeitstags gewichttragend verbrachte, hatte eine 3,6-fache Chance auf Plantarfasziitis. Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine [verkürzte Wade](https://walkito.site/de/verspannte-waden/), war der stärkste Faktor, mit einer 23,3-fachen Chance. **An einer verkürzten Wade kannst du arbeiten. An der Arbeit meist nicht.**
+
+Eine systematische Übersichtsarbeit mit 16 Studien zu chronischen Fersenschmerzen fand gewisse Belege für einen Zusammenhang mit langem Stehen, neben höherem Körpergewicht, Alter und eingeschränkter Beweglichkeit im Sprunggelenk. Die Autoren forderten Studien, die Menschen über die Zeit begleiten. Das zeigt also einen Zusammenhang, keinen Beweis, dass Stehen Fersenschmerzen verursacht (Irving und Kollegen, 2006).
+
+Wie weit gehst du? Wir haben keine veröffentlichte Studie gefunden, die Schritte pro Schicht bei Beschäftigten in Lager oder Einzelhandel zählt. Zahlen wie „12 Meilen pro Schicht“ (rund 19 Kilometer) stehen auf Branchenblogs, ohne Studie dahinter. Die nächste gemessene Zahl stammt aus der Pflege: im Schnitt 9.360 Schritte pro Schicht in einer Studie mit Schrittzählern (Chang und Cho, 2022).
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
+Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
+
+### Ist Betonboden wirklich schlechter für die Füße?
+
+Wahrscheinlich, aber niemand hat Beton für sich allein gemessen. Die Leitlinie von 2023 zu Fersenschmerzen behält eine Empfehlung von 2014 mit Empfehlungsgrad **B**: Ärztinnen, Ärzte und Therapeuten sollen gewichttragende Tätigkeiten bei der Arbeit, besonders unter Bedingungen mit schlechter Stoßdämpfung, als Risikofaktor für Fersenschmerzen und Plantarfasziitis prüfen. Ein blanker Betonboden dämpft so wenig wie kaum ein anderer Arbeitsboden.
+
+Getestet wurde das Gegenteil: etwas Weiches dazuzunehmen. In Labor- und Arbeitsplatzstudien verringerten eine Matte oder gedämpfte Einlagen die Beschwerden im Vergleich zu einem harten Boden (Speed und Kollegen, 2018). Das passt zu der Vorstellung, dass der harte Untergrund die Belastung erhöht, ohne zu beweisen, dass Beton eine bestimmte Erkrankung verursacht.
+
+Manche Fersenschmerzen sind auf harten Böden aus einem anderen Grund schlimmer. Wenn der Schmerz tief in der Mitte der Ferse sitzt und barfuß auf Fliesen oder Beton deutlich schlimmer ist, lohnt sich ein Blick auf das [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+
+### Helfen Anti-Ermüdungsmatten oder Einlagen mehr?
+
+**Beides verbessert den Komfort, ohne klaren Sieger, und für keins gibt es starke Belege.** Eine systematische Übersichtsarbeit von 2018 fand 10 Studien zu Matten und gedämpften Einlagen bei Menschen, die im Stehen arbeiten. Sie bewertete die Belege als mäßig, dass Dämpfung Beschwerden und Ermüdung verringert, und als begrenzt, dass Einlagen besser abschneiden als Matten. Die Studien unterschieden sich stark im Aufbau, und die Autoren forderten größere Studien an echten Arbeitsplätzen.
+
+In einer Arbeitsplatzstudie verbrachten Beschäftigte in der Montage je eine Woche mit 8-Stunden-Tagen unter vier Bedingungen: harter Boden, Matte, Einlagen sowie Einlagen auf einer Matte. Matte, Einlagen und die Kombination waren alle bequemer als der harte Boden, und es gab keinen klaren Unterschied zwischen ihnen (King, 2002).
+
+In einem Labortest über 4 Stunden verringerten drei von vier handelsüblichen Anti-Ermüdungsmatten die Beschwerden im Vergleich zu einem harten Boden, aber keine Matte war besser als die anderen (Wiggermann und Keyserling, 2013). Für keine einzelne Matte ist also gezeigt, dass sie besser ist als die anderen.
+
+Die praktische Aufteilung: **Eine Matte hilft nur dort, wo du stillstehst**, etwa an der Kasse, am Packtisch oder an einem festen Arbeitsplatz. Wenn du durch den Laden gehst oder kommissionierst, muss die Dämpfung mitgehen, also im Schuh stecken. Speziell bei Fersenschmerzen bewertet die Leitlinie von 2023 Einlagen allein mit **Empfehlungsgrad B gegen die Anwendung**. Verlass dich also nicht nur auf sie. [Einlagen oder Übungen](https://walkito.site/de/einlagen-oder-uebungen/) vergleicht beides.
+
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: King PM. A comparison of the effects of floor mats and shoe in-soles on standing fatigue. Applied Ergonomics. 2002;33(5):477–484.
+Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Machen Sicherheitsschuhe Fußschmerzen?
+
+Sicherheitsschuhe schützen deine Füße, und sie bringen auch Beschwerden mit. Eine systematische Übersichtsarbeit von 2024 fand 7 Studien zu Beschäftigten in Sicherheitsschuhen. Jede Studie berichtete über Unbehagen und Schmerzen, und die 4 Studien, die Schmerzen gemessen haben, fanden Fußschmerzen bei 42,3 bis 60,8 % der Beschäftigten. Die Hauptbeschwerden waren Hitze, Schwitzen, Gewicht und eine steife Sohle, meist im Bereich der Zehen und der Schutzkappe.
+
+In einer Studie mit 509 Beschäftigten in 12 Metallbetrieben, die alle jeden Tag Sicherheitsschuhe trugen, hatten 81 % mindestens ein Fußproblem. Die häufigsten Klagen über die Schuhe waren Hitze und Nässe im Schuh (42 %), das Gewicht (27,5 %) und die Passform (22,9 %) (Mancuso und Kollegen, 2017).
+
+Das sind Befragungen. Sie können also nicht zeigen, dass die Schuhe den Schmerz verursachen: Lange Stunden auf harten Böden würden in jedem Schuh wehtun. Die Vorschläge der Übersichtsarbeit sind praktisch:
+
+- Achte auf die richtige Größe und Weite und frag nach, ob die Modelle, die dein Arbeitgeber zulässt, auch in weiter Passform zu haben sind.
+- Wähl den leichtesten Schuh, der die Schutzklasse für deinen Arbeitsplatz erfüllt.
+- Achte auf atmungsaktive Materialien, wenn deine Füße heiß und nass werden.
+- Die meisten Sicherheitsschuhe haben eine herausnehmbare Innensohle. Eine gedämpfte Einlage passt also hinein, solange der Schuh dadurch nicht zu eng wird.
+
+Tausch einen vorgeschriebenen Sicherheitsschuh nie gegen einen Sneaker, weil dir die Füße wehtun. Sprich mit deiner Vorgesetzten, deinem Vorgesetzten oder der Fachkraft für Arbeitssicherheit über andere zugelassene Modelle.
+
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+Source: Mancuso G, Cavrini G, Berdondini RM, Mancuso M. Skin lesions and other foot problems associated with safety footwear [in Italian]. Giornale Italiano di Medicina del Lavoro ed Ergonomia. 2017;38(4):261–264.
+
+### Welche Übungen kannst du in der Pause machen?
+
+Für die Übungen unten brauchst du keine Ausrüstung und nicht mehr Platz als eine Wand, ein Regal oder eine Tischkante. Die ersten drei gehen im Stehen, im Pausenraum oder im Regalgang. Die übrigen sind für nach der Schicht, im Sitzen.
+
+Die Leitlinie bewertet Wadendehnung und Plantarfaszien-Dehnung mit **A** und Krafttraining mit **B**. Diese Empfehlungsgrade gelten für Plantarfasziitis, aber es sind dieselben Gewebe, die eine Schicht auf harten Böden belastet. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.
+
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an eine Wand, einen Regalpfosten oder eine Theke. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Geht auch in Sicherheitsschuhen.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung weiter unten spürst, nah an der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt sich nur mit gebeugtem Knie dehnen.
+- **Sprunggelenk-Wippen** (2 Sätze à 15, jedes Bein): Schrittstellung, Hände an der Wand. Schieb das vordere Knie über die Zehen nach vorn, während die Ferse flach bleibt. Langsam, etwa zwei Sekunden in jede Richtung. Mehr unter [Sprunggelenk-Wippen](https://walkito.site/de/uebungen/sprunggelenk-mobilisation/).
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin, zieh die Schuhe aus und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Wenn dir die ersten Schritte nach dem Aufstehen wehtun, mach eine Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, halt dich an einer Wand fest, drück dich gerade über die großen Zehen nach oben und senk dich langsam ab. Krafttraining passt am besten an freien Tagen, damit die Wade sich vor der nächsten Schicht erholen kann. Mehr unter [Fersenheben bei Plantarfasziitis](https://walkito.site/de/wadenheben-plantarfasziitis/).
+- **Fußrollen** (1 Minute): Setz dich hin und roll die Fußsohle langsam mit festem Druck über einen Massageball. Wenn du das Gesicht verziehst, nimm den Druck zurück.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Wie passt das in eine Schicht: 3, 5 oder 10 Minuten?
+
+Die meisten Pausen in Einzelhandel und Lager sind kurz und durch den Dienstplan festgelegt. Eine Übersichtsarbeit zu Laborstudien fand, dass Beschwerden durch ununterbrochenes Stehen bei Menschen, die zu Schmerzen beim Stehen neigen, nach etwa 42 Minuten klinisch relevant wurden, und die Autoren schlugen vor, nicht länger als etwa 40 Minuten am Stück stillzustehen (Coenen und Kollegen, 2017). Wann du dich setzen kannst, kannst du oft nicht wählen, aber die Haltung kannst du wechseln: bis zum Ende des Gangs gehen, das Gewicht verlagern oder eine Wadendehnung am Regal machen.
+
+- **3 Minuten, in der Pause:** die Wadendehnung, 2-mal 30 Sekunden pro Bein, plus einmal 30 Sekunden Soleusdehnung pro Bein. Das zielt auf die verkürzte Wade, den stärksten Risikofaktor in der Studie von 2003.
+- **5 Minuten, in einer längeren Pause oder am Schichtende:** Nimm das Sprunggelenk-Wippen dazu oder die Plantarfaszien-Dehnung, sobald die Schuhe aus sind.
+- **10 Minuten, an einem freien Tag:** Nimm das Fersenheben (3 Sätze à 10) und das Fußrollen dazu. Das deckt die Kraftseite ab, mit Empfehlungsgrad **B** bewertet.
+
+**Eine kurze Routine an den meisten Schichttagen bringt mehr als eine lange, die du ausfallen lässt.** Häng sie an etwas, das du ohnehin tust, etwa die erste Pause oder das Ausziehen der Arbeitsschuhe.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Was die Belege zu den einzelnen Möglichkeiten sagen
+
+Die meisten Ratschläge für den Arbeitsplatz mischen starke und schwache Belege. Diese Tabelle stellt die wichtigsten Möglichkeiten nebeneinander, jeweils mit der besten Studie, die wir gefunden haben.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+
+### Könnte es eine Plantarfasziitis oder etwas anderes sein?
+
+Allgemeine Schmerzen und müde Füße nach einer langen Schicht vergehen meist mit einer Nacht Ruhe. Plantarfasziitis hat ein klareres Muster: ein stechender Schmerz nahe der Innenseite der Ferse, am schlimmsten bei den ersten Schritten am Morgen oder nach dem Sitzen. Wenn das nach dir klingt, lies [Fersenschmerzen am Morgen](https://walkito.site/de/fersenschmerzen-morgens/) und [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/). Bei etwa 90 % der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, auch wenn das drei bis sechs Monate dauern kann (Latt und Kollegen, 2020).
+
+Andere Muster deuten auf etwas anderes. Ein brennender Schmerz unter dem Fußballen spricht für [Vorfußschmerzen](https://walkito.site/de/metatarsalgie-vorfussschmerzen/). Ein Schmerz entlang des Gewölbes, der im Lauf der Schicht schlimmer wird, ist unter [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/) beschrieben. Schmerzen oben auf dem Fuß können von zu fest geschnürten oder drückenden Schuhen kommen, siehe [Schmerzen am Fußrücken](https://walkito.site/de/schmerzen-am-fussruecken/).
+
+Schmerz an einer kleinen Stelle auf einem Knochen, der schlimmer wird, je mehr du gehst, kann ein Ermüdungsbruch sein, besonders nach einem Sprung bei den Arbeitsstunden oder einem neuen Job mit mehr Gehen. **Lass das ärztlich abklären, statt mehr zu üben.**
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Schmerz mit einem Sturz, einer heruntergefallenen Last oder einem Umknicken bei der Arbeit angefangen hat
+- du den Fuß nicht belasten kannst oder hinkst
+- der Schmerz an einer kleinen Stelle auf einem Knochen sitzt und beim Gehen schlimmer wird, was ein Ermüdungsbruch sein kann
+- der Fuß taub ist, kribbelt, brennt oder sich kalt anfühlt
+- der Fuß oder die Ferse gerötet, warm oder geschwollen ist oder du Fieber hast
+- eine Wade oder ein Bein plötzlich schmerzt und geschwollen ist
+- du Diabetes oder weniger Gefühl in den Füßen hast und ein Schuh eine wunde Stelle oder eine Blase gescheuert hat
+- der Schmerz dich nachts weckt oder nach mehreren Wochen mit den Anpassungen auf dieser Seite immer schlimmer wird
+
+### Als Plan umsetzen
+
+Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito baut den Plan aus deinen Antworten und passt ihn jeden Tag daran an, wie sich deine Füße anfühlen. Ein schlechter Morgen nach einer langen Schicht heißt also eine leichtere Einheit.
+
+#### Warum tun mir die Füße bei der Arbeit im Lager so weh?
+
+Lange Stunden Stehen und Gehen auf harten Böden halten die Last über den größten Teil der Schicht auf Ferse, Gewölbe und Wade. Wer den größten Teil des Arbeitstags auf den Beinen war, hatte in einer Studie eine 3,6-fache Chance auf Plantarfasziitis, und die Leitlinie von 2023 zu Fersenschmerzen nennt gewichttragende Tätigkeiten bei der Arbeit auf schlecht gedämpften Böden als Risikofaktor.
+
+#### Wie viele Schritte geht man in einer Schicht im Lager?
+
+Wir haben keine veröffentlichte Studie gefunden, die Schritte in Schichten im Lager oder im Einzelhandel zählt. Zahlen wie 12 Meilen (rund 19 Kilometer) pro Schicht kommen von Branchenblogs, ohne Studie dahinter. Die nächste gemessene Zahl stammt von Pflegekräften im Krankenhaus, die in einer Studie mit Schrittzählern im Schnitt 9.360 Schritte pro Schicht gingen. Dein eigenes Handy oder deine Uhr sagt dir am besten, wie viel es in deinem Job ist.
+
+#### Bringen Anti-Ermüdungsmatten wirklich etwas?
+
+Sie verringern die Beschwerden bei Menschen, die an einer Stelle stehen, aber die Belege sind mäßig, nicht stark. Eine Übersichtsarbeit mit 10 Studien fand, dass Dämpfung bei Arbeit im Stehen hilft. In einem Labortest über 4 Stunden schnitten drei von vier Matten besser ab als ein harter Boden, und keine Matte war besser als die anderen. Eine Matte hilft nur dort, wo du stillstehst.
+
+#### Sind Einlagen oder eine Matte besser zum Stehen auf Beton?
+
+Für den Komfort etwa gleich. In einer Arbeitsplatzstudie fanden Beschäftigte in der Montage eine Matte, Einlagen und beides zusammen bequemer als einen harten Boden, ohne klaren Unterschied zwischen ihnen. Eine Übersichtsarbeit bewertete die Belege, dass Einlagen besser sind als Matten, als begrenzt. Wenn du viel gehst, gehen Einlagen mit, eine Matte nicht.
+
+#### Können Sicherheitsschuhe eine Plantarfasziitis auslösen?
+
+Keine Studie zeigt, dass Sicherheitsschuhe eine Plantarfasziitis verursachen. Eine Übersichtsarbeit mit 7 Studien zu Beschäftigten in Sicherheitsschuhen fand in den 4, die es gemessen haben, Fußschmerzen bei 42,3 bis 60,8 % der Beschäftigten. Die Hauptbeschwerden waren Hitze, Gewicht und Steifigkeit. Die Stunden auf harten Böden zählen auch, egal welcher Schuh. Eine gute Passform und der leichteste zugelassene Schuh sind vernünftige erste Schritte.
+
+#### Welche Dehnungen kann ich in der Pause bei der Arbeit machen?
+
+Die Wadendehnung und die Soleusdehnung gehen im Stehen an einer Wand oder einem Regal, auch in Arbeitsschuhen: je 2-mal 30 Sekunden halten, jedes Bein, etwa 4 Minuten für beide Dehnungen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Wadendehnung mit A. Heb dir die Plantarfaszien-Dehnung und das Fersenheben für nach der Schicht oder für freie Tage auf.
+
+#### Ist es normal, dass mir nach einer Schicht im Laden die Füße wehtun?
+
+Müde, schmerzende Füße nach einer langen Schicht im Stehen sind häufig, und eine Übersichtsarbeit von 2015 brachte langes Stehen bei der Arbeit in vielen Berufen mit Beschwerden, Ermüdung und Beinschmerzen in Verbindung. Häufig heißt aber nicht, dass du es ignorieren solltest. Schmerz, der stechend ist, bis in die freien Tage anhält oder bei den ersten Schritten am Morgen am schlimmsten ist, ist ein Grund, etwas zu tun.
+
+#### Kann ich mit Plantarfasziitis in einem Job im Stehen weiterarbeiten?
+
+Viele tun das, mit Anpassungen. Kurze Dehnungen in den Pausen, besser passende Schuhe und Dämpfung dort, wo du stehst, verringern die Belastung, und bei etwa 90 % der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, auch wenn das drei bis sechs Monate dauern kann. Wenn der Schmerz trotzdem schlimmer wird, lass ihn ärztlich abklären.
+
 ## Über Walkito
 
 https://walkito.site/de/ueber-walkito/

@@ -10075,6 +10075,654 @@ Normalmente não. Um pé chato flexível que não causa dor e não limita o que 
 
 As verificações na ponta dos pés e do dedão também funcionam em crianças, mas a maioria das crianças pequenas tem o arco baixo, que se forma com a idade, e em um estudo as medidas de postura do pé não foram confiáveis o suficiente em crianças pequenas. Um pé rígido, dor ou mancar são motivos para ir ao médico. Mais em [pé chato infantil](https://walkito.site/pt/pe-chato-infantil/).
 
+## Quanto você pode caminhar com fascite plantar?
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/caminhar-com-fascite-plantar/ · published 2026-10-18 · updated 2026-10-18
+
+Normalmente dá para continuar caminhando com [fascite plantar](https://walkito.site/pt/fascite-plantar/), desde que a dor fique moderada durante a caminhada e passe até a manhã seguinte. A diretriz de 2023 para dor no calcanhar recomenda orientação sobre como ajustar a carga em pé e não manda parar de andar, mas dá a essa orientação um **E**, ou seja, ela se apoia em teoria, não em ensaios clínicos (Koc e colegas, 2023). Nenhum estudo dá um número seguro de passos, então o teste da manhã seguinte é um guia melhor do que uma meta de passos.
+
+- A diretriz de 2023 para dor no calcanhar dá grau **E** à orientação sobre como mudar a carga em pé no trabalho, no lazer e no dia a dia, além da orientação sobre calçados: ela se apoia em teoria, não em ensaios clínicos (Koc e colegas, 2023).
+- Em um ensaio com 180 adultos com fasciopatia plantar, o grupo que recebeu só a orientação de continuar ativo, reduzir as atividades que pioram a dor e usar uma calcanheira melhorou de forma clinicamente relevante em cerca de três meses (Riel e colegas, 2023).
+- Uma regra de monitoramento da dor aceita dor de até cerca de 5 de 10 durante a atividade, desde que passe até a manhã seguinte e não aumente de uma semana para outra. Ela foi testada em 38 pessoas com dor no tendão de Aquiles, não com fascite plantar (Silbernagel e colegas, 2007).
+- Nenhum estudo dá um número de passos por dia para fascite plantar. Em 50 pessoas com dor no calcanhar e 25 sem, o nível de atividade não foi diferente, mas o grupo com dor no calcanhar ficava 3,4 horas a mais por dia em pé (Landorf e colegas, 2023).
+- Um guia de boas práticas de 2021 para dor no calcanhar recomenda calçados com um pequeno desnível entre calcanhar e ponta e evitar andar descalço e usar calçados planos e sem suporte até os sintomas passarem (Morrissey e colegas, 2021).
+
+### Caminhar faz bem ou mal para a fascite plantar?
+
+**Caminhar não é o inimigo, mas muito de uma vez pode fazer o calcanhar piorar.** A diretriz de 2023 para dor no calcanhar não manda parar de andar. O resumo dela inclui orientação sobre formas de mudar a carga em pé no trabalho, no lazer e no dia a dia, e sobre calçados. Ela dá a essa orientação grau **E**, o que quer dizer que a teoria e a ciência básica a apoiam, mas nenhum ensaio clínico a testou (Koc e colegas, 2023).
+
+A diretriz também cita a dor no calcanhar que começou depois de um aumento recente da atividade em pé como uma característica típica da fascite plantar. Então a pergunta quase nunca é se você deve andar. É quanto, e com que rapidez aumentar.
+
+Um ensaio dinamarquês comparou uma orientação simples com tratamentos a mais. 180 adultos com fasciopatia plantar (outro nome para fascite plantar) foram divididos em três grupos. Um recebeu só orientação e uma calcanheira; os outros dois fizeram também treino de elevação de calcanhar, e um deles recebeu ainda uma infiltração de corticoide. A orientação era reduzir as atividades que causam as crises e depois voltar aos poucos ao nível de atividade de antes, guiando-se pelos sintomas. Os três grupos melhoraram de forma clinicamente relevante em cerca de três meses (Riel e colegas, 2023).
+
+Talvez não seja a caminhada em si que está ligada à dor no calcanhar. Em um estudo de 2023, 50 pessoas com dor no calcanhar e 25 pessoas parecidas sem dor relataram atividade física semelhante. A diferença estava no tempo em pé: o grupo com dor no calcanhar ficava 3,4 horas a mais por dia em pé (Landorf e colegas, 2023). Esse estudo mostra uma associação, não uma causa. Se o seu dia é quase todo em pé, [dor nos pés de ficar em pé o dia todo](https://walkito.site/pt/dor-nos-pes-ficar-em-pe/) trata desse lado.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### Quanto andar é aceitável? Uma regra simples de dor
+
+**Use a dor como medidor da dose, e confira duas vezes: durante a caminhada e na manhã seguinte.** Nenhum estudo testou uma regra de caminhada para fascite plantar. A regra testada mais próxima vem da reabilitação de tendões, então use como um guia emprestado, não como um limite comprovado para o calcanhar.
+
+Em um ensaio de 2007, 38 pessoas com dor no tendão de Aquiles foram divididas em dois grupos. Um grupo continuou correndo e saltando, usando um modelo de monitoramento da dor: era aceita dor de até cerca de 5 de 10 durante a atividade, desde que passasse até a manhã seguinte e não aumentasse de uma semana para outra. O outro grupo parou essas atividades nas primeiras seis semanas. Os dois grupos melhoraram, e continuar ativo não levou a resultados piores em doze meses (Silbernagel e colegas, 2007). Mais sobre esse ensaio em [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
+
+Para a dor no calcanhar, um guia de boas práticas de 2021, montado a partir de uma revisão de 51 ensaios, entrevistas com 14 especialistas e uma pesquisa com pacientes, diz que o monitoramento da dor foi fortemente recomendado e que as pessoas deveriam aprender a ler a resposta da dor à atividade (Morrissey e colegas, 2021). Ele não dá um número. A tabela abaixo aplica a regra testada à caminhada, com nota de 0 (sem dor) a 10 (a pior dor). A coluna da próxima caminhada é uma leitura prática dessa regra, não um protocolo testado.
+
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Quantos passos por dia são aceitáveis com fascite plantar?
+
+**Não existe um número de passos baseado em evidência para fascite plantar.** Não encontramos nenhum ensaio que tenha definido um número de passos ou uma distância de caminhada para pessoas com dor no calcanhar e medido o resultado. Qualquer página que dê um número fixo para dor no calcanhar está chutando.
+
+Os famosos 10.000 passos são uma meta de saúde geral, não um número da pesquisa sobre o pé, e mesmo ali a evidência é fraca. Uma análise de 2022 com 15 estudos e 47.471 adultos concluiu que mais passos por dia andavam junto com um risco de morte menor, mas o benefício se estabilizava em cerca de 6.000 a 8.000 passos por dia em adultos com 60 anos ou mais, e em 8.000 a 10.000 em adultos mais jovens (Paluch e colegas, 2022). Isso é sobre saúde a longo prazo, não sobre o que um calcanhar irritado aguenta nesta semana.
+
+Um número mais útil é o seu. Quase todo celular conta passos. Olhe uma semana normal antes de o calcanhar piorar e uma semana normal de agora. Isso dá um ponto de partida, e a regra de dor acima diz se você deve manter, aumentar ou reduzir.
+
+Dividir a caminhada pode ajudar mais do que o total. O guia de boas práticas de 2021 recomenda quebrar longos períodos de carga estática, como ficar em pé (Morrissey e colegas, 2021). Várias caminhadas curtas espalhadas pelo dia dão ao calcanhar uma carga menos contínua do que uma longa, embora nenhum estudo tenha comparado as duas coisas na fascite plantar.
+
+Source: Paluch AE, Bajpai S, Bassett DR, et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health. 2022;7(3):e219–e228.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Como voltar a caminhar mais?
+
+A orientação testada no ensaio dinamarquês era reduzir as atividades que causam as crises e depois voltar aos poucos ao nível de atividade de antes, guiando-se pelos sintomas (Riel e colegas, 2020). Ela não definia uma porcentagem por semana, e nenhum estudo testou uma para fascite plantar. Aqui vai um jeito de colocar essa orientação em prática:
+
+- Encontre uma caminhada que passe na regra de dor: no máximo dor moderada durante, e uma manhã seguinte normal. Se nem uma caminhada curta passar, comece com menos.
+- Repita essa caminhada por alguns dias. Um dia bom só não basta para avaliar.
+- Aumente pouco, por exemplo mais cinco minutos, e mantenha o resto igual. Mude uma coisa de cada vez: distância, ritmo, subidas ou tipo de piso.
+- Se a manhã seguinte for pior, volte para a última caminhada que passou e fique nela por mais tempo.
+
+Os cinco minutos são uma sugestão prática, não um número testado. O que importa é que cada aumento seja pequeno o bastante para a manhã seguinte mostrar com clareza se deu certo.
+
+A recuperação da fascite plantar costuma ser lenta. Cerca de 90% das pessoas melhoram com cuidados sem cirurgia, como alongamento, trabalho de panturrilha e controle da carga (Latt e colegas, 2020), mas isso pode levar meses. Veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/). Se você também corre, os mesmos princípios valem para a quilometragem e as mudanças de carga na corrida.
+
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Quais calçados ajudam a caminhar com fascite plantar?
+
+**Calçados confortáveis e amortecidos, com um pequeno desnível entre calcanhar e ponta, são a recomendação dos especialistas, mas nenhum ensaio testou um calçado específico para caminhar.** O guia de boas práticas de 2021 diz que o calçado deve ter suporte e ser confortável, ter um pequeno desnível entre retropé e antepé (o calcanhar fica um pouco mais alto que os dedos) e ser algo que você vai usar de verdade. Ele também recomenda evitar andar descalço e usar calçados planos e sem suporte até os sintomas passarem por completo (Morrissey e colegas, 2021).
+
+A diretriz de 2023 inclui a orientação sobre calçados na sua recomendação de educação de grau **E**. Sobre palmilhas ela é mais específica: não use como única abordagem (**B contra**), mas elas podem ajudar junto com outros cuidados (**C**). Isso inclui uma calcanheira de farmácia ou calçados que amortecem o calcanhar (Koc e colegas, 2023).
+
+A dureza do calçado pode importar. No estudo de 2023 com 50 pessoas com dor no calcanhar e 25 sem, o grupo com dor no calcanhar usava calçados com o calcanhar mais duro e relatava mais dificuldade para encontrar calçados adequados (Landorf e colegas, 2023). De novo, uma associação, não a prova de que calçados macios ajudam.
+
+Para ver o que os ensaios mostram sobre palmilhas, veja [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/). Pensando em calçados minimalistas? [Calçados barefoot](https://walkito.site/pt/calcados-barefoot/) explica por que eles não são uma boa escolha enquanto o calcanhar está dolorido.
+
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### O tipo de piso onde você caminha importa?
+
+**Provavelmente sim, mas a evidência é indireta.** A diretriz cita a atividade em pé ligada ao trabalho, principalmente em condições com pouca absorção de impacto, como um fator de risco para fascite plantar (Koc e colegas, 2023). Isso aponta para chão duro e calçado duro como uma carga para o calcanhar.
+
+A evidência direta é pouca. No estudo pareado de 2023, pessoas com e sem dor no calcanhar não eram diferentes quanto a ficar em pé em pisos duros (Landorf e colegas, 2023). Uma série de casos com 20 corredores relatou menos dor depois de cerca de um mês e meio de corrida descalça na grama, mas não tinha grupo de comparação (MacGabhann e colegas, 2022). Nenhum ensaio comparou tipos de piso para caminhar com fascite plantar.
+
+Opções práticas enquanto o calcanhar está dolorido:
+
+- Escolha grama, uma trilha de parque ou uma pista em vez de concreto para as caminhadas mais longas, se for mais confortável.
+- Fique de calçado em casa em piso frio ou de madeira, principalmente nos primeiros passos do dia.
+- Vá com calma nas descidas longas e nas subidas íngremes até a caminhada no plano passar na regra de dor. Mais sobre descidas, mochilas e bastões em [dor nos pés depois de trilha](https://walkito.site/pt/dor-nos-pes-trilha/).
+
+Uma dor funda bem no centro do calcanhar, claramente pior em chão duro, pode vir do coxim gorduroso do calcanhar e não da fáscia plantar. Veja [síndrome do coxim gorduroso do calcanhar](https://walkito.site/pt/sindrome-coxim-gorduroso-calcanhar/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass as a potential treatment for plantar fasciitis: a prospective case series. International Journal of Environmental Research and Public Health. 2022;19(23):15466.
+
+### Quais exercícios deixam a caminhada mais fácil?
+
+Os exercícios podem ajudar o calcanhar a aguentar mais carga, para que com o tempo a mesma caminhada passe mais fácil na regra de dor, embora nenhum estudo tenha testado isso para caminhada. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha um **A**, o grau máximo, e ao treino de força um **B**.
+
+Uma panturrilha tensa faz parte do quadro. Em um estudo de caso-controle com 50 pessoas com fascite plantar e 100 sem, a menor dobra do tornozelo foi o fator de risco mais forte, e ficar em pé a maior parte do dia de trabalho também aumentava as chances (Riddle e colegas, 2003). Veja [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/).
+
+Em um ensaio com 48 pessoas, a elevação de calcanhar com carga aliviou a dor e melhorou a função no dia a dia mais rápido do que o alongamento, e em doze meses os dois grupos estavam mais ou menos empatados (Rathleff e colegas, 2015). Os cartões abaixo são as doses iniciais do Walkito, não uma prescrição. O conjunto completo está em [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+
+- **Alongamento da fáscia plantar** (2 vezes de 30 segundos, cada pé): Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão.
+- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Uma panturrilha tensa puxa o calcanhar o dia todo, então esse alongamento importa mesmo que você sinta mais para cima.
+- **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão e suba empurrando pela parte da frente dos pés. As mãos sobre os joelhos aumentam a resistência. Com o joelho dobrado, o trabalho fica principalmente no sóleo, quase sem carga no calcanhar, o que combina com os dias em que a caminhada já está perto do seu limite.
+- **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto sobre os dedões e depois desça devagar. Os dois pés dividem a carga. Segure numa parede para se equilibrar.
+- **Elevação de calcanhar com toalha** (4 séries de 10, cada perna, com carga extra): Fique em um pé só num degrau, com uma toalha enrolada embaixo dos dedos. Leve três segundos para subir, segure dois lá em cima e leve três segundos para descer. Neste nível o Walkito acrescenta carga, como uma mochila. É a toalha que faz o exercício trabalhar a fáscia plantar e não só a panturrilha. Mais sobre a [elevação de calcanhar com toalha](https://walkito.site/pt/exercicios/elevacao-calcanhar-toalha/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Procure primeiro um profissional de saúde se
+
+- a dor no calcanhar começou depois de uma queda, um salto ou uma torção, ou você não consegue apoiar o pé
+- a dor aumenta a cada caminhada e não alivia com repouso, ou apertar as laterais do calcanhar dói (possível fratura por estresse)
+- o calcanhar dói à noite ou em repouso, não só quando você anda
+- você sente dormência, formigamento ou queimação no pé
+- o calcanhar está vermelho, quente ou inchado, ou você se sente mal ou tem febre
+- os dois calcanhares doem junto com outras articulações, ou você tem rigidez pela manhã em outros lugares
+- você tem diabetes ou má circulação e o pé dói ou está com aparência diferente
+- a dor piora semana após semana mesmo depois de reduzir
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para o calcanhar e o pé. Ele não define uma meta de passos nem planeja suas caminhadas, mas lê o calcanhar do mesmo jeito que esta página: pelo jeito que o pé está na manhã seguinte.
+
+#### Devo caminhar com fascite plantar?
+
+Normalmente sim, na quantidade que o seu calcanhar aguenta. A diretriz de 2023 para dor no calcanhar recomenda ajustar a carga em pé e não orienta parar, mas essa orientação se apoia em teoria (grau E). Em um ensaio com 180 adultos, a orientação de continuar ativo mas reduzir as atividades que pioram a dor, mais uma calcanheira, veio junto com uma melhora relevante em cerca de três meses.
+
+#### Caminhar faz bem para a fascite plantar?
+
+Caminhar em quantidade moderada costuma ir bem, embora nenhum estudo tenha testado qual a melhor quantidade. Em um estudo, pessoas com dor no calcanhar eram tão ativas quanto pessoas sem dor, mas ficavam 3,4 horas a mais por dia em pé. Um guia de boas práticas recomenda aprender a monitorar a resposta da dor à atividade.
+
+#### Quantos passos por dia são aceitáveis com fascite plantar?
+
+Nenhum estudo dá um número de passos para fascite plantar. Os 10.000 são uma meta de saúde geral, e nas pesquisas sobre mortalidade o benefício se estabilizava entre 6.000 e 8.000 passos por dia em adultos com 60 anos ou mais. Para um calcanhar irritado, parta da sua contagem de sempre e deixe a dor da manhã seguinte decidir se é para aumentar ou reduzir.
+
+#### Quanta dor é aceitável ao caminhar com fascite plantar?
+
+Uma regra testada aceita dor de até cerca de 5 de 10 durante a atividade, desde que passe até a manhã seguinte e não aumente de uma semana para outra. Ela vem de um ensaio com 38 pessoas com dor no tendão de Aquiles, não com fascite plantar, então use como guia. Dor acima disso, ou uma manhã pior, quer dizer que é hora de reduzir.
+
+#### Caminhar pode piorar a fascite plantar?
+
+Sim, se você fizer muito mais do que o seu calcanhar está acostumado. A diretriz de 2023 cita a dor no calcanhar depois de um aumento recente da atividade em pé como uma característica típica da fascite plantar. Uma caminhada longa de repente, um percurso novo com subidas ou um dia em pisos duros podem fazer a dor piorar. Aumentos menores e constantes são mais leves para o calcanhar.
+
+#### Devo parar de caminhar por completo para a fascite plantar acalmar?
+
+Nenhum estudo mostra que o repouso total seja necessário. A diretriz de 2023 recomenda ajustar a carga e não orienta parar. Em um ensaio sobre dor no tendão de Aquiles, quem continuou ativo dentro de um limite de dor estava tão bem em doze meses quanto quem parou de correr e saltar por seis semanas. Se até caminhadas curtas doem muito ou fazem você mancar, procure um profissional de saúde.
+
+#### Qual o melhor calçado para caminhar com fascite plantar?
+
+Calçados confortáveis e amortecidos, com o calcanhar um pouco mais alto que os dedos, são a recomendação dos especialistas. Um guia de boas práticas de 2021 recomenda evitar andar descalço e usar calçados planos e sem suporte até os sintomas passarem. A diretriz de 2023 diz que palmilhas ou calcanheiras podem ajudar junto com outros cuidados, mas não sozinhas.
+
+#### É melhor caminhar na grama ou no concreto com fascite plantar?
+
+Um piso mais macio pode ser mais fácil, mas nenhum ensaio comparou tipos de piso para caminhar com fascite plantar. A diretriz de 2023 liga o trabalho em pé em superfícies que absorvem pouco impacto ao risco de fascite plantar. Uma pequena série de casos com corredores na grama relatou menos dor, mas não tinha grupo de comparação. Guie-se por como o calcanhar está na manhã seguinte.
+
+#### Posso andar descalço em casa com fascite plantar?
+
+É melhor evitar enquanto o calcanhar está dolorido, principalmente em piso frio ou de madeira logo cedo. Um guia de boas práticas de 2021 para dor no calcanhar desaconselha andar descalço e usar calçados planos e sem suporte até os sintomas passarem por completo. A orientação de costume é usar um calçado com suporte ou um chinelo firme nos primeiros passos do dia.
+
+## Exercícios para os pés de corredores: uma rotina curta e o que a pesquisa mostra
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios-para-os-pes-corredores/ · published 2026-10-18 · updated 2026-10-18
+
+Uma boa rotina para os pés de quem corre treina quatro coisas: os pequenos músculos do arco (o exercício do pé curto), a resistência da panturrilha e do sóleo (elevação de calcanhar), a força dos dedos e o equilíbrio em uma perna. Leva cerca de 10 minutos, de duas a cinco vezes por semana, depois de uma corrida leve ou em um dia de descanso. Em um ensaio com 118 corredores amadores, quem não fez um programa para os músculos do pé teve 2,42 vezes mais chance de se lesionar correndo em 12 meses (Taddei e colegas, 2020). É um único ensaio, então leia como um resultado promissor, não como algo definido.
+
+- Em um ensaio de 2020 com 118 corredores amadores de longa distância, o grupo sem treino dos músculos do pé teve 2,42 vezes mais chance de uma lesão de corrida em 12 meses. O efeito apareceu depois de cerca de quatro a oito meses de treino (Taddei e colegas, 2020).
+- Em um ensaio de 2019 com 57 corredores, cerca de dois meses de exercícios para os pés feitos pelo menos cinco vezes por semana deixaram maiores e mais fortes todos os músculos do pé que foram medidos (Ridge e colegas, 2019).
+- Adultos saudáveis fazem uma mediana de cerca de 23 a 24 elevações de calcanhar em uma perna para cada lado, e 25 já foi proposto como referência de normal (Hebert-Losier e colegas, 2017; Lunsford e Perry, 1995).
+- Um programa de força feito por conta própria para quadril, coxas e core, em 720 pessoas correndo a primeira maratona, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a prova: 7,1% contra 7,3% (Toresdahl e colegas, 2020). Ali, o trabalho de força sozinho não preveniu lesões.
+- Nos estudos com corredores de longa distância, entre 19,4% e 79,3% tiveram uma lesão na perna, e uma lesão anterior foi um dos fatores de risco mais claros (van Gent e colegas, 2007).
+
+### Exercícios para os pés ajudam corredores a evitar lesões?
+
+**Um bom ensaio diz que sim, e ainda é só um ensaio.** Em 2020, Taddei e colegas, no Brasil, dividiram por sorteio 118 corredores amadores de longa distância em um grupo com treino dos músculos do pé (57 corredores) e um grupo controle (61 corredores). O grupo do pé fez cerca de dois meses de treino supervisionado dos músculos do pé e do tornozelo e depois continuou com supervisão a distância. Todos registraram toda semana as corridas e qualquer lesão, durante um ano.
+
+Em 12 meses, o grupo controle teve 2,42 vezes mais chance de uma lesão de corrida. A diferença apareceu depois de quatro a oito meses de treino, não nas primeiras semanas. Os corredores cuja força do pé mais aumentou demoraram mais para ter uma lesão.
+
+Um ensaio anterior e menor da mesma equipe, com 28 corredores, encontrou que cerca de dois meses de treino dos pés aumentaram os pequenos músculos do pé e a força de impulsão durante a corrida (Taddei e colegas, 2020).
+
+O que isso não mostra: os dois ensaios vêm de um único grupo de pesquisa, com corredores amadores experientes que não estavam lesionados no início. Os ensaios não incluíram iniciantes nem corredores que já tinham dor, então não sabemos se os resultados valem para eles.
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
+
+### O que deve ter na rotina para os pés de um corredor?
+
+Quatro partes, cada uma com um ou dois exercícios. As doses abaixo são as doses iniciais do Walkito. Faça descalço, e pare naquele dia se a dor passar de 6 em 10.
+
+- **Músculos do pé:** o [pé curto](https://walkito.site/pt/exercicios/pe-curto/), primeiro em pé e depois em uma perna. Ele treina os pequenos músculos que sustentam o arco.
+- **Panturrilha e sóleo:** elevação de calcanhar com o joelho esticado para a panturrilha, e com o joelho dobrado para o sóleo, o músculo mais profundo da panturrilha.
+- **Dedos:** elevação do dedão. O dedão é a última parte do pé a sair do chão quando você dá impulso.
+- **Equilíbrio:** equilíbrio em uma perna, porque correr é uma sequência de aterrissagens em uma perna só.
+
+Isso segue a ideia do programa de Taddei, que treinava primeiro os pequenos músculos do pé e depois os usava em pé e com carga. Não é uma cópia desse programa. Para mais trabalho com os dedos, veja [exercícios para fortalecer os dedos do pé](https://walkito.site/pt/exercicios-para-fortalecer-os-dedos-do-pe/).
+
+- **Pé curto, em pé** (3 séries de 10, segure 5 segundos, os dois pés): Fique em pé com o peso nos dois pés. Sem dobrar os dedos, puxe a parte da frente do pé em direção ao calcanhar para o arco subir um pouco. Segure e depois relaxe. Se os dedos agarrarem o chão, diminua o esforço.
+- **Pé curto, em uma perna** (3 séries de 10, segure 5 segundos, cada pé): Fique em um pé só, com uma mão perto da parede. Suba o arco como acima e mantenha enquanto se equilibra. Isso fica mais perto do que o pé faz quando você aterrissa.
+- **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Apoie-se na parede. Suba na ponta dos pés em cerca de 3 segundos, com o peso mais para o lado do dedão, e desça em 3 segundos. Quando ficar fácil, passe para uma perna. Mais na página de [elevação de calcanhar](https://walkito.site/pt/exercicios/elevacao-de-calcanhar/).
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados e empurre para cima com a parte da frente dos pés. Com o joelho dobrado, o sóleo faz a maior parte do trabalho. Uma mochila ou pesos sobre os joelhos aumentam a carga quando ficar fácil.
+- **Elevação do dedão** (3 séries de 8, segure 5 segundos, cada pé): Mantenha os quatro dedos menores no chão e levante só o dedão. Depois tente o contrário: dedão no chão, dedos menores para cima. No começo, um movimento pequeno já basta.
+- **Equilíbrio em uma perna** (3 vezes de 30 segundos, cada lado): Fique em um pé só, joelho levemente dobrado, perto de uma parede. Quando 30 segundos ficarem fáceis, feche os olhos ou fique em cima de uma almofada. Mais na página de [equilíbrio em uma perna](https://walkito.site/pt/exercicios/equilibrio-uma-perna/).
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
+
+### Por que corredores precisam de força na panturrilha e no sóleo?
+
+**Os músculos da panturrilha fazem boa parte do impulso na corrida.** Uma revisão de 2014 sobre como os músculos da perna trabalham na corrida encontrou que, em velocidades de até cerca de 7 metros por segundo, o que cobre quase toda a corrida amadora, os corredores ficam mais rápidos principalmente empurrando o chão com mais força para dar uma passada mais longa. Os dois músculos da panturrilha, o sóleo e o gastrocnêmio, têm um papel especialmente importante nesse impulso (Schache e colegas, 2014).
+
+O sóleo fica embaixo do gastrocnêmio e trabalha mais quando o joelho está dobrado, por isso a rotina tem uma elevação de calcanhar sentada, com o joelho dobrado, além da versão em pé. Se as suas panturrilhas costumam ficar tensas depois das corridas, [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/) fala de alongamento e do [alongamento do sóleo](https://walkito.site/pt/exercicios/alongamento-soleo/).
+
+A resistência da panturrilha também aparece na dor na canela. Em um estudo de caso-controle, atletas com canelite fizeram menos elevações de calcanhar até a fadiga do que atletas sem canelite (Madeley e colegas, 2007). Isso mostra uma associação, não que panturrilhas fracas causem canelite. Mais em [canelite: exercícios](https://walkito.site/pt/canelite-exercicios/).
+
+Source: Schache AG, Dorn TW, Williams GP, Brown NA, Pandy MG. Lower-limb muscular strategies for increasing running speed. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):813-824.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+
+### Quantas elevações de calcanhar um corredor deve conseguir fazer?
+
+Não existe uma referência específica para corredores, então use os números gerais de adultos como piso. Em um estudo com 566 adultos, a mediana foi de 24 elevações de calcanhar em uma perna na perna direita e 23 na esquerda, no ritmo de uma batida para subir e uma para descer a 60 batidas por minuto. Os números caem com a idade, e as pessoas mais ativas fizeram mais (Hebert-Losier e colegas, 2017). Um estudo mais antigo propôs 25 como referência de normal (Lunsford e Perry, 1995).
+
+Compare também as duas pernas. Uma diferença de mais de 10% entre os lados é o limite usual para uma diferença relevante na reabilitação dos membros inferiores (Silbernagel e colegas, 2010). O protocolo completo, uma versão para fazer em casa e uma calculadora estão na página do [teste de elevação de calcanhar](https://walkito.site/pt/teste-elevacao-calcanhar/).
+
+Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+Source: Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
+Source: Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. A new measurement of heel-rise endurance with the ability to detect functional deficits in patients with Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.
+
+### Quando e com que frequência corredores devem fazer exercícios para os pés?
+
+**Nenhum estudo comparou fazer exercícios para os pés depois de uma corrida com fazer em um dia de descanso,** então os horários abaixo são práticos, não testados.
+
+- **Depois de uma corrida leve ou em um dia de descanso.** Os exercícios cansam os pequenos músculos do pé, então combinam mais com depois de uma corrida curta e leve do que com antes de um treino forte ou de um longão.
+- **Não logo antes de um treino de velocidade ou de uma prova.** Nesses casos você quer as panturrilhas descansadas.
+- **Elevação de calcanhar de 2 a 3 dias por semana,** com um dia de folga entre elas, como qualquer trabalho de força.
+- **Músculos do pé, dedos e equilíbrio de 2 a 5 dias por semana.** No ensaio de 2019, os corredores fizeram exercícios para os pés pelo menos cinco vezes por semana e ganharam força em cerca de dois meses (Ridge e colegas, 2019).
+
+Dê tempo ao tempo. O tamanho dos músculos mudou em cerca de dois meses nos ensaios, mas a queda nas lesões no ensaio de Taddei só apareceu depois de quatro a oito meses. Uma rotina que você mantém por meses vale mais do que uma rotina pesada que você abandona depois de três semanas.
+
+Source: Ridge ST, Olsen MT, Bruening DA, et al. Walking in minimalist shoes is effective for strengthening foot muscles. Medicine & Science in Sports & Exercise. 2019;51(1):104–113.
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+
+### Dá para fazer exercícios para os pés com um incômodo?
+
+Normalmente sim, se o incômodo for leve e estável, e se você fizer ajustes. Use a mesma regra do resto do site: algum desconforto não tem problema, mas pare naquele dia se a dor passar de 6 em 10, e pegue mais leve se estiver pior na manhã seguinte.
+
+Alguns incômodos mudam o plano:
+
+- **Dor no calcanhar nos primeiros passos da manhã** sugere fascite plantar. Ali a elevação de calcanhar e os alongamentos contam mais: veja [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+- **Dor na parte de trás do calcanhar ou no tendão de Aquiles** pede um plano de panturrilha mais gradual, muitas vezes com descidas lentas do calcanhar: veja [tendinite de Aquiles: exercícios](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
+- **Dor ao longo da parte interna da canela** pode ser canelite: veja [canelite: exercícios](https://walkito.site/pt/canelite-exercicios/).
+- **Dor em um ponto específico de um osso** que aumenta a cada corrida é um sinal de alerta de fratura por estresse. Pare de correr e procure avaliação.
+
+### O que os exercícios para os pés não fazem
+
+**Eles não substituem um treino bem planejado.** Nos estudos com corredores de longa distância, entre 19,4% e 79,3% tiveram uma lesão na perna, e uma quilometragem semanal alta nos homens e uma lesão anterior estavam entre os fatores de risco mais claros (van Gent e colegas, 2007). Em um estudo dinamarquês com 874 corredores iniciantes, quem aumentou a quilometragem semanal em mais de 30% pareceu mais propenso a algumas lesões por sobrecarga, embora o resultado tenha ficado um pouco abaixo da significância estatística (Nielsen e colegas, 2014).
+
+**Trabalho de força não é proteção automática.** Em um ensaio com 720 pessoas que iam correr a Maratona de Nova York pela primeira vez, um programa de 10 minutos feito por conta própria para quadril, coxas e core, três vezes por semana durante cerca de três meses, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a maratona: 7,1% no grupo de força contra 7,3% nos demais (Toresdahl e colegas, 2020). Esse programa não treinava os pés, mas lembra que uma rotina no papel não é o mesmo que um resultado.
+
+**Eles mudam o formato do arco só um pouco.** Em um estudo pequeno com 21 pessoas e sem grupo controle, o arco afundou 1,8 mm a menos depois de um mês de treino do pé curto (Mulligan e Cook, 2013). Espere um pé mais forte e mais firme, não um arco novo. Tênis e corrida descalço são outra questão, tratada em [calçados barefoot](https://walkito.site/pt/calcados-barefoot/).
+
+Source: van Gent RN, Siem D, van Middelkoop M, van Os AG, Bierma-Zeinstra SM, Koes BW. Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review. British Journal of Sports Medicine. 2007;41(8):469-480.
+Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
+Source: Toresdahl BG, McElheny K, Metzl J, Ammerman B, Chang B, Kinderknecht J. A randomized study of a strength training program to prevent injuries in runners of the New York City Marathon. Sports Health. 2020;12(1):74-79.
+Source: Mulligan EP, Cook PG. Effect of plantar intrinsic muscle training on medial longitudinal arch morphology and dynamic function. Manual Therapy. 2013;18(5):425–430.
+
+### Procure primeiro um profissional de saúde se
+
+- a dor fica em um ponto específico de um osso do pé ou da canela e piora a cada corrida, o que pode ser uma fratura por estresse
+- você não consegue apoiar o peso no pé, ou manca ao andar
+- a dor começou com um estalo, uma queda ou uma torção no tornozelo
+- o pé ou o tornozelo está inchado, vermelho ou quente, ou você tem febre
+- você sente dormência, formigamento ou queimação no pé
+- o calcanhar ou o pé dói à noite ou em repouso
+- a dor continua piorando por duas a três semanas mesmo com corridas mais leves
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para calcanhar e pés com os exercícios desta página: o pé curto de sentado até em uma perna, elevação de calcanhar, elevação do dedão, abrir os dedos e equilíbrio em uma perna. Ele não planeja as suas corridas, então mantenha o seu próprio plano de treino e encaixe as sessões nos dias leves.
+
+#### Quais são os melhores exercícios para os pés de corredores?
+
+Uma série curta que cubra quatro coisas: o pé curto para o arco, elevação de calcanhar com o joelho esticado e dobrado para a panturrilha e o sóleo, elevação do dedão para o impulso e equilíbrio em uma perna. Um programa para os músculos do pé baseado na mesma ideia reduziu as lesões de corrida em um ensaio com 118 corredores.
+
+#### Exercícios para fortalecer os pés previnem lesões de corrida?
+
+Podem prevenir. Em um ensaio de 2020 com 118 corredores amadores, o grupo sem treino dos músculos do pé teve 2,42 vezes mais chance de se lesionar em 12 meses, com o efeito aparecendo depois de quatro a oito meses. É um único ensaio de um único grupo de pesquisa, então a evidência é promissora, mas não definitiva.
+
+#### Com que frequência corredores devem fazer exercícios para os pés?
+
+De dois a cinco dias por semana para o trabalho de músculos do pé, dedos e equilíbrio, e de dois a três dias por semana para a elevação de calcanhar, com um dia de folga entre eles. Em um ensaio de 2019, corredores que fizeram exercícios para os pés pelo menos cinco vezes por semana ganharam força em cerca de dois meses.
+
+#### É melhor fazer exercícios para os pés antes ou depois de correr?
+
+Depois de uma corrida leve ou em um dia de descanso é a escolha prática, porque os exercícios cansam os pequenos músculos do pé. Nenhum estudo comparou os horários. Evite a rotina completa logo antes de um treino de velocidade, de um longão ou de uma prova, quando você quer pés e panturrilhas descansados.
+
+#### Quantas elevações de calcanhar em uma perna um corredor deve fazer?
+
+Não existe um número específico para corredores. Adultos saudáveis fazem uma mediana de cerca de 23 a 24 por perna em um ritmo fixo, e 25 já foi proposto como normal. Muitos corredores ativos fazem mais. Uma diferença de mais de 10% entre as pernas vale a pena acompanhar. A página do teste de elevação de calcanhar tem o protocolo completo.
+
+#### Quanto tempo leva para os exercícios para os pés fazerem diferença?
+
+Os músculos do pé ficaram maiores e mais fortes em cerca de dois meses nos ensaios. A queda nas lesões no ensaio com corredores demorou mais, aparecendo depois de quatro a oito meses. Planeje manter uma rotina curta por meses, não por semanas.
+
+#### Posso continuar correndo enquanto faço os exercícios para os pés?
+
+Sim. A rotina foi pensada para andar junto com a sua corrida. Se você tem um incômodo, pare um exercício naquele dia se a dor passar de 6 em 10, e faça só corridas leves se a dor estiver pior na manhã seguinte. Dor que aumenta a cada corrida, ou que fica em um ponto específico de um osso, precisa de avaliação de um profissional de saúde.
+
+#### Correr descalço ou com tênis minimalista fortalece os pés?
+
+Em um ensaio de 2019 com corredores, caminhar com calçados minimalistas, com um aumento lento e gradual, fortaleceu os pés mais ou menos tanto quanto os exercícios. Trocar o tênis de corrida de uma vez é outra história e tem seus próprios riscos, então, se for tentar, aumente aos poucos.
+
+## Dor nos pés de professores: o que um dia de aula faz com os seus pés, e o que ajuda
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/dor-nos-pes-professores/ · published 2026-10-18 · updated 2026-10-18
+
+A dor nos pés de professores vem principalmente das horas em pé e andando pela sala em piso duro, e as opções com a melhor evidência, alongamentos da panturrilha e da fáscia plantar mais exercícios de força para a panturrilha, levam de 3 a 5 minutos e cabem entre uma aula e outra. A diretriz de 2023 para dor no calcanhar dá a esses alongamentos o grau **A**, o mais alto, e aos exercícios de força o grau **B** (Koc e colegas, 2023). A pesquisa sobre os pés de professores é limitada: em uma revisão de 2024, 27 estudos relataram dor na região do tornozelo, quase sempre contada junto com o pé, e o número combinado foi de 30% dos professores (Tahernejad e colegas, 2024).
+
+- Em uma revisão de 2024 com 44 estudos e 15.972 professores, a dor na região do tornozelo (quase sempre contada junto com o pé) ficou em 30% no número combinado de 27 estudos, abaixo do pescoço e da lombar, com 47% cada. Os resultados variaram muito entre os estudos (Tahernejad e colegas, 2024).
+- Em uma pesquisa com 1.439 professores de uma única região da Arábia Saudita, 85,5% relataram dor nos pés nos últimos 12 meses, e ela era mais comum em quem dava 16 ou mais aulas por semana (Alqahtani, 2020). Outras pesquisas encontraram números bem mais baixos, então leia isso como o resultado de uma região.
+- Não encontramos nenhum estudo que tenha medido quantas horas um professor típico passa em pé. Em um estudo com 50 casos e 100 controles, ficar em pé durante a maior parte do dia de trabalho aumentou 3,6 vezes a chance de fascite plantar, e uma flexibilidade muito limitada do tornozelo, geralmente por panturrilha encurtada, aumentou 23,3 vezes (Riddle e colegas, 2003).
+- A diretriz de 2023 para dor no calcanhar dá **A** ao alongamento da fáscia plantar e da panturrilha e **B** aos exercícios de força. Palmilhas sozinhas recebem **B contra** (Koc e colegas, 2023).
+- Em 50 pessoas com dor no calcanhar e 25 sem, quem tinha dor ficava 3,4 horas a mais por dia em pé e usava calçados com o calcanhar mais duro. Isso é uma associação, não prova de causa (Landorf e colegas, 2023).
+
+### O que um dia de aula faz com os seus pés?
+
+**Um dia de aula mistura ficar parado em pé com caminhadas curtas, quase sempre em piso duro.** Você fica em pé no quadro ou na frente da mesa, anda pelas fileiras enquanto os alunos fazem as atividades e depois fica em pé de novo cuidando do corredor ou do pátio. Ficar parado em pé carrega por muito tempo o calcanhar, a fáscia plantar (a faixa embaixo do pé que sustenta o arco) e a panturrilha, sem o efeito de bombeamento da caminhada.
+
+Não encontramos nenhum estudo que tenha medido quantas horas um professor típico passa em pé, então esta página não dá um número. O que foi medido é ficar muito tempo em pé em geral. Uma revisão de 2015 sobre trabalho em pé associou isso a desconforto nas pernas e nos pés, cansaço e inchaço nas pernas, e colocou tapetes, calçados com bom suporte, meias de compressão e a opção de alternar entre sentado e em pé entre as medidas com alguma evidência (Waters e Dick, 2015).
+
+Em uma revisão de 2017 com 25 estudos de laboratório, o desconforto na lombar e nas pernas aumentava quanto mais tempo as pessoas ficavam em pé sem pausa. Os autores sugeriram não ficar em pé por mais de cerca de 40 minutos seguidos (Coenen e colegas, 2017). Isso é mais ou menos uma aula.
+
+A panturrilha também importa. Em um estudo de 2003, a [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/) foi o fator de risco mais forte para fascite plantar, com chance 23,3 vezes maior, e ficar em pé durante a maior parte do dia de trabalho aumentou a chance 3,6 vezes (Riddle e colegas, 2003). Quem dá aula em pé o dia todo e tem a panturrilha tensa tem as duas coisas.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Dor nos pés é comum em professores?
+
+**É comum, mas é menos estudada do que a dor nas costas e no pescoço dos professores.** Uma revisão de 2024 combinou 44 estudos com 15.972 professores. A dor no pescoço e na lombar veio primeiro, com 47% cada. A dor na região do tornozelo, que a maioria dos estudos contava junto com o pé, ficou em 30% no número combinado de 27 estudos com 8.634 professores. Os estudos eram muito diferentes entre si, e os autores encontraram sinais de viés de publicação no número do tornozelo, então leia esses 30% como um meio-termo aproximado, não como uma taxa exata.
+
+Uma revisão anterior mostrou que poucos estudos tinham olhado para as pernas e os pés dos professores, e que a dor nas pernas e nos pés era relatada com menos frequência do que a dor nas costas, no pescoço e nos braços (Erick e Smith, 2011).
+
+A maior pesquisa específica sobre os pés que encontramos ouviu 1.439 professores de uma região da Arábia Saudita. 85,5% relataram dor nos pés nos últimos 12 meses. Ela era mais comum em quem dava 16 ou mais aulas por semana (88%) do que em quem dava menos (81,4%), e em quem lecionava havia mais de 10 anos (86,8% contra 82,6%). Foi um questionário respondido pelos próprios professores, em uma única região, e a maioria era de mulheres, então pode não corresponder à sua escola (Alqahtani, 2020).
+
+Source: Tahernejad S, Hejazi A, Rezaei E, Makki F, Sahebi A, Zangiabadi Z. Musculoskeletal disorders among teachers: a systematic review and meta-analysis. Frontiers in Public Health. 2024;12:1399552.
+Source: Erick PN, Smith DR. A systematic review of musculoskeletal disorders among school teachers. BMC Musculoskeletal Disorders. 2011;12:260.
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+
+### Quais exercícios cabem entre uma aula e outra?
+
+Os exercícios abaixo vêm da diretriz para fascite plantar. Eles não foram testados em professores, mas trabalham os tecidos que um dia em pé sobrecarrega: a panturrilha, a fáscia plantar e o calcanhar. A maioria precisa só de uma parede ou de uma mesa, então cabe na troca de aula ou no horário de planejamento. Estas são as doses iniciais do Walkito, não uma prescrição. [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
+
+Os alongamentos recebem o grau mais alto da diretriz, **A**. Os exercícios de força para a panturrilha recebem **B**. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje.
+
+- **Alongamento de panturrilha (joelho esticado)** (2 sustentações de 30 segundos, cada perna): Apoie as mãos na parede ou na moldura do quadro. Mantenha a perna de trás esticada, o calcanhar de trás apoiado no chão e o quadril para a frente. Uma panturrilha tensa puxa o calcanhar o dia inteiro, então este alongamento importa mesmo que você o sinta mais para cima.
+- **Alongamento do sóleo (joelho dobrado)** (2 sustentações de 30 segundos, cada perna): Fique na mesma posição na parede, mantenha o calcanhar de trás apoiado no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só alonga com o joelho dobrado.
+- **Alongamento da fáscia plantar** (2 sustentações de 30 segundos, cada pé): Sente-se e cruze o pé sobre o joelho do outro lado. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão, e outro na sua mesa antes de se levantar depois do horário de planejamento.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se à mesa com os pés apoiados e empurre para cima pela parte da frente dos pés. As mãos sobre os joelhos aumentam a resistência. Com o joelho dobrado, o trabalho fica principalmente no sóleo, quase sem carga no calcanhar. Dá para fazer embaixo da mesa enquanto os alunos fazem uma atividade em silêncio.
+- **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés com uma mão na mesa, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga. Mais sobre como progredir: [elevação de calcanhar para fascite plantar](https://walkito.site/pt/elevacao-de-calcanhar-fascite-plantar/).
+- **Rolar o pé na bolinha** (1 minuto): Sente-se e role a sola do pé devagar sobre uma bolinha de massagem, com pressão firme. Se você estiver fazendo careta, alivie. Uma bolinha na gaveta da mesa transforma isso em um hábito do fim do dia. Mais em [bolinha de massagem para fascite plantar](https://walkito.site/pt/bolinha-de-massagem-fascite-plantar/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Como encaixar exercícios para os pés em um dia de aula?
+
+Você não precisa de um treino separado. Ligue cada exercício a um momento do dia que já existe. As doses são as mesmas de cima; a tabela só mostra quando elas cabem.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Quais são os melhores calçados para professores que ficam em pé o dia todo?
+
+**Nenhum estudo comparou calçados para professores, e nenhum ensaio aponta uma marca ou um modelo.** A diretriz de 2023 para dor no calcanhar não dá grau a tipos de calçado. A evidência que existe aponta para amortecimento embaixo do calcanhar e para o ajuste ao pé.
+
+Em um estudo de 2023, 50 pessoas com dor plantar no calcanhar foram comparadas com 25 pessoas parecidas sem dor. Quem tinha dor no calcanhar ficava 3,4 horas a mais por dia em pé e usava calçados com o calcanhar mais duro. O modelo do calçado, a altura do salto e ficar em pé em piso duro não foram diferentes entre os grupos (Landorf e colegas, 2023). Isso mostra uma associação, não que um calcanhar macio previna a dor, mas reforça a escolha de um calçado com o calcanhar amortecido para os dias longos no quadro.
+
+Uma lista prática, baseada em ajuste e conforto, não em um ensaio:
+
+- calcanhar amortecido e contraforte firme (a parte de trás do calçado não dobra quando você aperta)
+- espaço para os dedos se abrirem, sem apertar no fim do dia
+- salto baixo e estável, em vez de alto ou muito fino
+- um segundo par para revezar, para você não usar o mesmo par gasto todos os dias
+
+**Palmilhas podem deixar o dia mais confortável, mas não dependa só delas.** A diretriz de 2023 dá às palmilhas sozinhas **B contra**, e combinadas com alongamento e exercícios de força **C** (Koc e colegas, 2023). [Palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/) compara as duas opções.
+
+Meias de compressão são outra opção para pernas pesadas e inchadas no fim do dia. Em um ensaio com 40 seguranças em turnos longos em pé, as meias de 15 a 20 mmHg e as de 20 a 30 mmHg evitaram o aumento de desconforto e inchaço nas pernas visto com meias comuns (Garcia e colegas, 2023). Não foi um estudo com professores.
+
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+
+### O piso da sala e os tapetes fazem diferença?
+
+A maioria das salas de aula tem piso duro: cerâmica, piso vinílico sobre concreto ou carpete fino. Nenhum estudo mediu o piso das salas de aula e os pés dos professores. A revisão de 2015 sobre trabalho em pé coloca os tapetes entre as medidas com alguma evidência de menos desconforto, ao lado dos calçados e da opção de alternar entre sentado e em pé (Waters e Dick, 2015).
+
+Um tapete só ajuda onde você realmente fica em pé. Se você dá aula de um ponto fixo, como o quadro, o projetor ou uma bancada de laboratório, vale a pena experimentar um tapete antifadiga ali. Se você anda pela sala, o seu tapete é o calçado.
+
+Se movimentar é a outra metade. Os estudos sobre ficar em pé mostraram o desconforto aumentando com o tempo parado em pé (Coenen e colegas, 2017). Andar entre as carteiras, sentar durante as atividades em silêncio e passar o peso de um pé para o outro quebram a carga estática.
+
+Em casa, se o seu calcanhar dói, evite andar descalço em piso duro logo cedo. [Dor no calcanhar ao acordar](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/) explica por que os primeiros passos importam.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+
+### Quando a dor no calcanhar de um professor é fascite plantar?
+
+Uma dor geral no fim do dia de aula que já passou na manhã seguinte é cansaço de ficar em pé. **A fascite plantar tem um padrão típico: dor aguda embaixo do calcanhar nos primeiros passos da manhã ou depois de ficar sentado, que melhora conforme você anda e volta depois de um dia longo em pé.** Na pesquisa saudita, 25,8% dos professores com dor nos pés disseram que ela aparecia de manhã cedo e depois do repouso (Alqahtani, 2020). Essa pesquisa não diagnosticou ninguém, então é um padrão, não uma contagem de casos de fascite plantar.
+
+Se isso parece com você, comece por [exercícios e alongamentos para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020). [Quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) traz os detalhes.
+
+Outros padrões apontam para outras causas:
+
+- uma dor profunda no meio do calcanhar, pior descalço em piso duro: [síndrome do coxim gorduroso do calcanhar](https://walkito.site/pt/sindrome-coxim-gorduroso-calcanhar/)
+- dor ao longo do arco que aumenta ao longo do dia: [dor no arco do pé](https://walkito.site/pt/dor-no-arco-do-pe/)
+- dor embaixo da parte da frente do pé: [metatarsalgia](https://walkito.site/pt/metatarsalgia-dor-na-planta-do-pe/)
+- dor atrás do calcanhar, no tendão: [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/)
+
+Não sabe qual é? Comece por onde e quando dói: é isso que separa um padrão do outro. **Se ainda tiver dúvida, procure um profissional de saúde antes de colocar carga no pé com exercícios.**
+
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Procure primeiro um profissional de saúde se
+
+- a dor começou depois de uma queda, uma torção ou uma pancada, por exemplo cuidando do pátio ou na escada
+- você não consegue apoiar o peso no pé, ou está mancando
+- o pé está dormente, formigando, queimando, inchado ou quente
+- o calcanhar ou o pé está vermelho, ou você tem febre ou se sente mal
+- a dor acorda você à noite ou aparece em repouso
+- a dor fica em um ponto exato e piora com a atividade, o que pode ser um padrão de fratura por estresse
+- uma panturrilha ou perna inchou de repente e está dolorida, vermelha ou quente
+- você tem diabetes, sensibilidade reduzida nos pés ou má circulação
+
+### Como transformar isso em um plano
+
+Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de um objetivo. Se o seu calcanhar segue o padrão matinal da fascite plantar, o primeiro objetivo é dor de manhã em 1 de 10 ou menos por 14 dias seguidos.
+
+#### Por que os meus pés doem tanto depois de um dia inteiro dando aula?
+
+Dar aula mantém você em pé e andando em piso duro durante a maior parte do dia, o que carrega o calcanhar, o arco e a panturrilha com pouco descanso. Revisões sobre trabalho em pé associam ficar muito tempo em pé a desconforto e cansaço nas pernas e nos pés, e estudos de laboratório mostraram o desconforto aumentando quanto mais tempo as pessoas ficavam paradas em pé. Pausas para sentar, alongamentos de panturrilha e calçados com amortecimento ajudam.
+
+#### Dor nos pés é comum em professores?
+
+Uma revisão de 2024 chegou a 30% dos professores com dor na região do tornozelo, quase sempre contada junto com o pé, no número combinado de 27 estudos, com resultados muito diferentes entre eles. Uma pesquisa com 1.439 professores de uma única região da Arábia Saudita encontrou 85,5% com dor nos pés no último ano. A dor no pescoço e na lombar é relatada com mais frequência do que a dor nos pés.
+
+#### Quais são os melhores calçados para professores que ficam em pé o dia todo?
+
+Nenhum estudo testou calçados para professores. Procure calcanhar amortecido, contraforte firme, espaço para os dedos e salto baixo e estável. Em um estudo, pessoas com dor no calcanhar usavam calçados com o calcanhar mais duro e ficavam mais horas em pé por dia. Palmilhas sozinhas recebem B contra na diretriz de 2023 para dor no calcanhar, então combine com alongamentos.
+
+#### Quais alongamentos um professor pode fazer entre as aulas?
+
+O alongamento de panturrilha e o do sóleo na parede levam cerca de um minuto de cada lado: 2 sustentações de 30 segundos por perna. O alongamento da fáscia plantar pode ser feito sentado à mesa, 2 sustentações de 30 segundos por pé. A diretriz de 2023 para dor no calcanhar dá grau A a esses alongamentos, embora tenha sido escrita para fascite plantar, não para professores.
+
+#### Ficar em pé o dia todo dando aula pode causar fascite plantar?
+
+Pode aumentar o risco. Em um estudo de 2003 com 50 pessoas com fascite plantar e 100 sem, ficar em pé durante a maior parte do dia de trabalho aumentou a chance 3,6 vezes, e uma flexibilidade muito limitada do tornozelo, geralmente por panturrilha encurtada, aumentou 23,3 vezes. O estudo não avaliou professores, e nenhum estudo contou a fascite plantar especificamente em professores.
+
+#### Tapetes antifadiga ajudam professores?
+
+Podem ajudar, se você fica em pé em um ponto fixo. Uma revisão de 2015 sobre trabalho em pé coloca os tapetes entre as medidas com alguma evidência de menos desconforto. Nenhum estudo testou tapetes em sala de aula. Se você anda pela sala durante a maior parte da aula, o calçado importa mais do que um tapete.
+
+#### Professores devem usar meias de compressão?
+
+Vale a pena experimentar se as suas pernas ficam pesadas ou inchadas no fim do dia. Em um ensaio com 40 seguranças em turnos longos em pé, as meias de 15 a 20 mmHg e as de 20 a 30 mmHg evitaram o aumento de desconforto e inchaço nas pernas visto com meias comuns. O ensaio não incluiu professores.
+
+#### Quanto tempo um professor deve ficar em pé antes de sentar?
+
+Não existe um limite testado para professores. Uma revisão de 2017 de estudos de laboratório sobre ficar em pé mostrou o desconforto aumentando com o tempo e sugeriu não ficar em pé por mais de cerca de 40 minutos seguidos. Na prática, sente-se por alguns minutos quando os alunos começarem uma atividade individual, e ande pela sala em vez de ficar parado em um só lugar.
+
+## Dor nos pés para quem trabalha em loja ou depósito: o que ajuda no chão duro
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/dor-nos-pes-comercio-e-deposito/ · published 2026-10-18 · updated 2026-10-18
+
+No depósito e na loja os pés doem porque horas em pé e andando em chão duro carregam o calcanhar, o arco e a panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de [fascite plantar](https://walkito.site/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3 minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).
+
+- Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de fascite plantar em um estudo de caso-controle com 50 casos e 100 controles. Uma flexibilidade do tornozelo muito reduzida, em geral por uma panturrilha tensa, aumentou essa chance em 23,3 vezes (Riddle e colegas, 2003).
+- A diretriz de 2023 para dor no calcanhar mantém uma recomendação de grau **B**: os profissionais de saúde devem avaliar a carga sobre os pés no trabalho, principalmente em superfícies que amortecem pouco, como fator de risco para dor no calcanhar (Koc e colegas, 2023).
+- Uma revisão de 10 estudos encontrou evidência moderada de que tapetes e palmilhas com amortecimento reduzem o desconforto e o cansaço de quem trabalha em pé, e só evidência limitada de que as palmilhas sejam melhores que os tapetes (Speed e colegas, 2018).
+- Em uma revisão de 7 estudos com trabalhadores que usam calçado de segurança, os 4 que mediram dor encontraram dor nos pés em uma parcela de 42,3% a 60,8% dos trabalhadores, e as principais queixas eram calor, suor, peso e rigidez (Arceri e colegas, 2024).
+- Os alongamentos da panturrilha e da fáscia plantar recebem o grau mais alto da diretriz, **A**, e o trabalho de força recebe **B**. As palmilhas sozinhas recebem **B contra** para dor no calcanhar (Koc e colegas, 2023).
+
+### Por que os pés doem depois de um turno no depósito ou na loja?
+
+O trabalho em loja e em depósito junta dois tipos de carga. No caixa ou numa bancada de embalagem você fica parado em pé por muito tempo. No salão de vendas ou separando pedidos você anda, carrega peso, empurra carrinhos e gira o corpo. Nos dois casos o peso fica no calcanhar e no arco durante a maior parte do turno, e quem define os intervalos é a escala, não os seus pés.
+
+Um estudo de caso-controle de 2003 com 50 pessoas com fascite plantar e 100 controles pareados encontrou que passar a maior parte do dia de trabalho com o peso sobre os pés aumentava em 3,6 vezes a chance de fascite plantar. A flexibilidade reduzida do tornozelo, ou seja, uma [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/), foi o fator mais forte, com uma chance 23,3 vezes maior. **A panturrilha tensa é algo em que você pode trabalhar. O emprego, em geral, não.**
+
+Uma revisão sistemática de 16 estudos sobre dor crônica no calcanhar encontrou alguma evidência de relação com ficar muito tempo em pé, junto com peso corporal mais alto, idade e flexibilidade reduzida do tornozelo. Os autores pediram estudos que acompanhem as pessoas ao longo do tempo, então isso mostra uma associação, não a prova de que ficar em pé causa dor no calcanhar (Irving e colegas, 2006).
+
+Quanto você anda? Não encontramos nenhum estudo publicado que conte os passos por turno de quem trabalha em depósito ou loja. Números como «19 km (12 milhas) por turno» aparecem em blogs do setor sem um estudo por trás. O número medido mais próximo vem da enfermagem: uma média de 9.360 passos por plantão em um estudo com rastreadores (Chang e Cho, 2022).
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
+Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
+
+### O chão de concreto faz mesmo mais mal para os pés?
+
+Provavelmente sim, mas ninguém mediu o concreto sozinho. A diretriz de 2023 para dor no calcanhar mantém uma recomendação de 2014, de grau **B**: os profissionais de saúde devem avaliar as atividades de trabalho com o peso sobre os pés, principalmente em condições de pouco amortecimento, como fator de risco para dor no calcanhar e fascite plantar. Um chão de concreto sem revestimento está entre as superfícies de trabalho que menos amortecem.
+
+O que foi testado é o contrário: colocar algo macio. Em estudos de laboratório e no local de trabalho, ficar em pé sobre um tapete ou usar palmilhas com amortecimento reduziu o desconforto em comparação com um chão duro (Speed e colegas, 2018). Isso combina com a ideia de que a superfície dura aumenta a carga, sem provar que o concreto causa alguma condição específica.
+
+Algumas dores no calcanhar pioram no chão duro por outro motivo. Se a dor fica bem no fundo, no centro do calcanhar, e é claramente pior descalço em piso frio ou concreto, vale a pena ler sobre a [síndrome do coxim gorduroso do calcanhar](https://walkito.site/pt/sindrome-coxim-gorduroso-calcanhar/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+
+### Tapete antifadiga ou palmilha: o que ajuda mais?
+
+**Os dois ajudam no conforto, sem um vencedor claro, e nenhum tem evidência forte.** Uma revisão sistemática de 2018 encontrou 10 estudos sobre tapetes e palmilhas com amortecimento em pessoas que trabalham em pé. Ela considerou moderada a evidência de que o amortecimento reduz o desconforto e o cansaço, e limitada a de que as palmilhas funcionam melhor que os tapetes. Os estudos eram muito diferentes entre si, e os autores pediram estudos maiores em locais de trabalho reais.
+
+Em um estudo no local de trabalho, trabalhadores de uma linha de montagem passaram uma semana de jornadas de 8 horas em cada uma de quatro condições: chão duro, tapete, palmilhas e palmilhas sobre o tapete. O tapete, as palmilhas e a combinação foram todos mais confortáveis que o chão duro, sem diferença clara entre eles (King, 2002).
+
+Em um teste de laboratório de 4 horas, três de quatro tapetes antifadiga comerciais reduziram o desconforto em comparação com um chão duro, mas nenhum tapete foi melhor que os outros (Wiggermann e Keyserling, 2013). Então nenhum tapete se mostrou melhor que os demais.
+
+A divisão prática: **um tapete só ajuda onde você fica parado**, como no caixa, na bancada de embalagem ou num posto de trabalho. Se você anda pelo salão ou separa pedidos, o amortecimento precisa ir com você, dentro do calçado. Para dor no calcanhar especificamente, a diretriz de 2023 dá às palmilhas sozinhas grau **B contra**, então não conte só com elas. A página [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/) compara as duas opções.
+
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: King PM. A comparison of the effects of floor mats and shoe in-soles on standing fatigue. Applied Ergonomics. 2002;33(5):477–484.
+Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Botina de segurança causa dor nos pés?
+
+A botina de segurança protege os seus pés, e também traz queixas. Uma revisão sistemática de 2024 encontrou 7 estudos com trabalhadores que usam calçado de segurança. Todos os estudos relataram desconforto e dor, e os 4 que mediram dor encontraram dor nos pés em uma parcela de 42,3% a 60,8% dos trabalhadores. As principais queixas eram calor, suor, peso e solado rígido, principalmente em volta dos dedos e da biqueira.
+
+Em um estudo com 509 trabalhadores de 12 fábricas metalúrgicas, todos usando calçado de segurança todos os dias, 81% tinham pelo menos um problema nos pés. As queixas mais comuns sobre o calçado eram calor e umidade por dentro (42%), peso (27,5%) e ajuste ao pé (22,9%) (Mancuso e colegas, 2017).
+
+São pesquisas por questionário, então não conseguem dizer que a botina causa a dor: horas em chão duro doeriam com qualquer calçado. As sugestões da revisão são práticas:
+
+- Use o tamanho e a largura certos, e veja se os modelos aprovados pela empresa existem em forma mais larga.
+- Escolha a botina mais leve que atenda à exigência de segurança do seu local de trabalho.
+- Procure materiais que respiram se os seus pés esquentam e suam.
+- A maioria das botinas de segurança tem palmilha removível, então dá para colocar uma palmilha com amortecimento se ela não deixar a botina apertada demais.
+
+Nunca troque uma botina de segurança obrigatória por um tênis porque os pés estão doendo. Converse com seu supervisor ou com o técnico de segurança do trabalho sobre outros modelos aprovados.
+
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+Source: Mancuso G, Cavrini G, Berdondini RM, Mancuso M. Skin lesions and other foot problems associated with safety footwear [in Italian]. Giornale Italiano di Medicina del Lavoro ed Ergonomia. 2017;38(4):261–264.
+
+### Que exercícios dá para fazer no intervalo?
+
+Os exercícios abaixo não precisam de equipamento nem de espaço no chão, só de uma parede, uma coluna da prateleira ou a borda de um balcão. Os três primeiros são feitos em pé, na sala de descanso ou num corredor do estoque. Os outros são para depois do turno, sentado.
+
+A diretriz dá grau **A** aos alongamentos da panturrilha e da fáscia plantar e grau **B** ao trabalho de força. Esses graus são para a fascite plantar, mas são os mesmos tecidos que um turno em chão duro sobrecarrega. Pare por aquele dia se algum exercício levar a dor a 6 de 10 ou mais.
+
+- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos numa parede, numa coluna da prateleira ou num balcão. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Dá para fazer de botina de segurança também.
+- **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
+- **Balanço do tornozelo** (2 séries de 15, cada perna): Um pé à frente do outro, mãos na parede. Leve o joelho da frente para a frente, por cima dos dedos, com o calcanhar no chão. Devagar, cerca de dois segundos para cada lado. Mais em [balanço do tornozelo](https://walkito.site/pt/exercicios/mobilidade-tornozelo/).
+- **Alongamento da fáscia plantar** (2 vezes de 30 segundos, cada pé): Sente-se, tire a botina e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Se os primeiros passos ao sair da cama doem, faça um na beira da cama antes de o pé tocar o chão.
+- **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, segure na parede, suba reto por cima dos dedões e desça devagar. O trabalho de força funciona melhor nas folgas, para a panturrilha ter tempo de se recuperar antes do próximo turno. Mais em [elevação de calcanhar para fascite plantar](https://walkito.site/pt/elevacao-de-calcanhar-fascite-plantar/).
+- **Rolar o pé na bolinha** (1 minuto): Sentado, role a sola do pé devagar sobre uma bolinha de massagem, com pressão firme. Se estiver fazendo careta, alivie.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Como encaixar no turno: 3, 5 ou 10 minutos?
+
+A maioria dos intervalos em loja e depósito é curta e definida pela escala. Uma revisão de estudos de laboratório encontrou que os sintomas de ficar em pé sem interrupção ficavam clinicamente relevantes depois de cerca de 42 minutos em pessoas com tendência a dor em pé, e os autores sugeriram não ficar parado em pé por mais de cerca de 40 minutos (Coenen e colegas, 2017). Muitas vezes você não escolhe quando sentar, mas pode mudar de posição: ande até o fim do corredor, troque o peso de perna ou faça um alongamento de panturrilha numa prateleira.
+
+- **3 minutos, no intervalo:** o alongamento de panturrilha, 2 vezes de 30 segundos em cada perna, mais uma vez de 30 segundos do alongamento do sóleo em cada perna. Isso trabalha a panturrilha tensa, o fator de risco mais forte no estudo de 2003.
+- **5 minutos, num intervalo maior ou no fim do turno:** acrescente o balanço do tornozelo, ou o alongamento da fáscia plantar depois de tirar a botina.
+- **10 minutos, na folga:** acrescente a elevação de calcanhar (3 séries de 10) e rolar o pé na bolinha. Isso cobre a parte de força, com grau **B**.
+
+**Fazer uma rotina curta na maioria dos turnos importa mais do que uma longa que você pula.** Ligue a rotina a algo que você já faz, como o primeiro intervalo ou a hora de tirar a botina.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### O que a evidência diz sobre cada opção
+
+A maioria dos conselhos para o trabalho mistura evidência forte e fraca. Esta tabela coloca as principais opções lado a lado, com o melhor estudo que encontramos para cada uma.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+
+### Pode ser fascite plantar ou outra coisa?
+
+Uma dor geral e os pés cansados depois de um turno longo costumam passar com uma noite de descanso. A fascite plantar tem um padrão mais claro: dor aguda perto da parte de dentro do calcanhar, pior nos primeiros passos da manhã ou depois de ficar sentado. Se isso parece com o seu caso, veja [dor no calcanhar ao acordar](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/) e [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020).
+
+Outros padrões apontam para outras causas. Uma dor em queimação embaixo da parte da frente do pé aponta para [dor na planta do pé](https://walkito.site/pt/metatarsalgia-dor-na-planta-do-pe/). Uma dor ao longo do arco que piora durante o turno é explicada em [dor no arco do pé](https://walkito.site/pt/dor-no-arco-do-pe/). A dor em cima do pé pode vir de botinas amarradas apertado demais ou que pressionam; veja [dor no peito do pé](https://walkito.site/pt/dor-no-peito-do-pe/).
+
+Uma dor num ponto pequeno de um osso, que piora quanto mais você anda, pode ser uma fratura por estresse, principalmente depois de um aumento das horas ou de um emprego novo com mais caminhada. **Isso precisa de um profissional de saúde, não de mais exercício.**
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Procure primeiro um profissional de saúde se
+
+- a dor começou com uma queda, uma carga que caiu no pé ou uma torção no trabalho
+- você não consegue apoiar o pé no chão, ou está mancando
+- a dor fica num ponto pequeno de um osso e piora ao andar, o que pode ser uma fratura por estresse
+- o pé está dormente, formigando ou queimando, ou parece frio
+- o pé ou o calcanhar está vermelho, quente ou inchado, ou você tem febre
+- uma panturrilha ou perna fica de repente dolorida e inchada
+- você tem diabetes ou menos sensibilidade nos pés, e a botina causou uma ferida ou bolha
+- a dor acorda você à noite ou continua piorando depois de várias semanas com as mudanças desta página
+
+### Como transformar isso em um plano
+
+Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta o plano a partir das suas respostas e o ajusta a como seus pés estão a cada dia, então uma manhã ruim depois de um turno longo significa uma sessão mais leve.
+
+#### Por que meus pés doem tanto trabalhando em depósito?
+
+Muitas horas em pé e andando em chão duro mantêm a carga no calcanhar, no arco e na panturrilha durante a maior parte do turno. Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de fascite plantar em um estudo, e a diretriz de 2023 para dor no calcanhar aponta a carga sobre os pés no trabalho em superfícies com pouco amortecimento como fator de risco.
+
+#### Quantos passos um trabalhador de depósito dá por turno?
+
+Não encontramos nenhum estudo publicado que conte os passos em turnos de depósito ou de loja. Números como 19 km (12 milhas) por turno vêm de blogs do setor sem um estudo por trás. O número medido mais próximo vem da enfermagem hospitalar, com média de 9.360 passos por plantão em um estudo com rastreadores. O seu celular ou relógio é o melhor guia para o seu trabalho.
+
+#### Tapete antifadiga funciona mesmo?
+
+Reduz o desconforto de quem fica em pé no mesmo lugar, mas a evidência é moderada, não forte. Uma revisão de 10 estudos encontrou que o amortecimento ajuda quem trabalha em pé. Em um teste de laboratório de 4 horas, três de quatro tapetes foram melhores que o chão duro, e nenhum tapete foi melhor que os outros. Um tapete só ajuda onde você fica parado.
+
+#### Palmilha ou tapete: o que é melhor para ficar em pé no concreto?
+
+Mais ou menos a mesma coisa para o conforto. Em um estudo no local de trabalho, trabalhadores de montagem acharam o tapete, as palmilhas e os dois juntos mais confortáveis que o chão duro, sem diferença clara entre eles. Uma revisão considerou limitada a evidência de que as palmilhas sejam melhores que os tapetes. Se você anda bastante, a palmilha vai com você e o tapete não.
+
+#### Botina de segurança pode causar fascite plantar?
+
+Nenhum estudo mostra que botinas de segurança causam fascite plantar. Uma revisão de 7 estudos com trabalhadores que usam calçado de segurança encontrou dor nos pés em uma parcela de 42,3% a 60,8% dos trabalhadores nos 4 estudos que mediram isso, e as principais queixas eram calor, peso e rigidez. As horas em chão duro também contam, seja qual for a botina. Um bom ajuste e a botina aprovada mais leve são primeiros passos razoáveis.
+
+#### Que alongamentos posso fazer no intervalo do trabalho?
+
+O alongamento de panturrilha e o alongamento do sóleo são feitos em pé, apoiado numa parede ou prateleira, de botina mesmo: duas vezes de 30 segundos cada, em cada perna, cerca de 4 minutos para os dois alongamentos. A diretriz de 2023 para dor no calcanhar dá grau A ao alongamento da panturrilha. Deixe o alongamento da fáscia plantar e a elevação de calcanhar para depois do turno ou para as folgas.
+
+#### É normal os pés doerem depois de um turno na loja?
+
+Pés cansados e doloridos depois de um turno longo em pé são comuns, e uma revisão de 2015 associou ficar muito tempo em pé no trabalho a desconforto, cansaço e dor nas pernas em muitas profissões. Comum não quer dizer que você deva ignorar. Uma dor aguda, que continua nas folgas ou que é pior nos primeiros passos da manhã merece atenção.
+
+#### Dá para continuar trabalhando em pé com fascite plantar?
+
+Muita gente continua, com algumas mudanças. Alongamentos curtos nos intervalos, botinas com melhor ajuste e amortecimento onde você fica em pé diminuem a carga, e cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses. Se a dor estiver piorando mesmo assim, procure um profissional de saúde.
+
 ## Sobre o Walkito
 
 https://walkito.site/pt/sobre-walkito/

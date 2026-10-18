@@ -10075,6 +10075,654 @@ En général, non. Un pied plat souple qui ne fait pas mal et ne vous limite en 
 
 Les tests sur la pointe des pieds et du gros orteil fonctionnent aussi chez l’enfant, mais la plupart des jeunes enfants ont une voûte basse qui se forme avec l’âge, et dans une étude, les mesures de la posture du pied n’étaient pas assez fiables chez le jeune enfant. Un pied raide, une douleur ou une boiterie sont des raisons de consulter un médecin. Plus d’informations dans [pieds plats chez l’enfant](https://walkito.site/fr/pieds-plats-enfant/).
 
+## Combien peut-on marcher avec une fasciite plantaire ?
+
+Language: French (Français) · https://walkito.site/fr/marcher-avec-fasciite-plantaire/ · published 2026-10-18 · updated 2026-10-18
+
+Vous pouvez en général continuer à marcher avec une [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/), tant que la douleur reste modérée pendant la marche et qu’elle s’est calmée le lendemain matin. La recommandation de 2023 sur la douleur au talon préconise des conseils pour adapter la charge en appui et ne dit pas d’arrêter de marcher, mais elle donne à ces conseils la note **E**, ce qui veut dire qu’ils reposent sur la théorie, pas sur des essais (Koc et coll., 2023). Aucune étude ne donne un nombre de pas sans risque : le contrôle du lendemain matin est un meilleur repère qu’un objectif de pas.
+
+- La recommandation de 2023 sur la douleur au talon classe les conseils pour modifier la charge en appui au travail, pendant les loisirs et dans la vie quotidienne, ainsi que les conseils sur les chaussures, en note **E** : fondés sur la théorie, pas sur des essais (Koc et coll., 2023).
+- Dans un essai sur 180 adultes atteints de fasciopathie plantaire, le groupe qui a seulement reçu le conseil de rester actif, de réduire les activités qui aggravent la douleur et de porter une talonnette s’est amélioré de façon cliniquement significative à environ trois mois (Riel et coll., 2023).
+- Une règle de suivi de la douleur autorise jusqu’à environ 5 sur 10 pendant l’effort, à condition que la douleur se calme le lendemain matin et n’augmente pas de semaine en semaine. Elle a été testée chez 38 personnes souffrant du tendon d’Achille, pas de fasciite plantaire (Silbernagel et coll., 2007).
+- Aucune étude ne donne un nombre de pas quotidien pour la fasciite plantaire. Chez 50 personnes avec une douleur au talon et 25 sans, le niveau d’activité ne différait pas, mais le groupe avec douleur restait debout 3,4 heures de plus par jour (Landorf et coll., 2023).
+- Un guide de bonnes pratiques de 2021 sur la douleur au talon conseille des chaussures avec un faible drop et d’éviter de marcher pieds nus ou en chaussures plates sans maintien jusqu’à la disparition des symptômes (Morrissey et coll., 2021).
+
+### La marche est-elle bonne ou mauvaise pour la fasciite plantaire ?
+
+**La marche n’est pas l’ennemie, mais trop d’un coup peut réveiller le talon.** La recommandation de 2023 sur la douleur au talon ne dit pas d’arrêter de marcher. Son résumé cite l’information sur les façons de modifier la charge en appui au travail, pendant les loisirs et dans la vie quotidienne, ainsi que sur les chaussures. Elle donne à ces conseils la note **E** : la théorie et la recherche fondamentale les soutiennent, mais aucun essai ne les a testés (Koc et coll., 2023).
+
+La recommandation cite aussi, parmi les signes typiques de la fasciite plantaire, une douleur au talon apparue après une augmentation récente des activités en appui. La question est donc rarement de savoir s’il faut marcher, mais plutôt combien, et à quel rythme augmenter.
+
+Un essai danois a comparé de simples conseils à des traitements ajoutés. 180 adultes atteints de fasciopathie plantaire (un autre nom de la fasciite plantaire) ont été répartis en trois groupes. Le premier a reçu uniquement des conseils et une talonnette, les deux autres y ont ajouté un entraînement en montées sur pointes, et l’un d’eux aussi une infiltration de corticoïdes. Le conseil était de réduire les activités qui déclenchent les poussées, puis de revenir lentement au niveau d’activité antérieur en se guidant sur les symptômes. Les trois groupes se sont améliorés de façon cliniquement significative à environ trois mois (Riel et coll., 2023).
+
+Ce n’est peut-être pas la marche elle-même qui est liée à la douleur au talon. Dans une étude de 2023, 50 personnes avec une douleur au talon et 25 personnes comparables sans douleur déclaraient une activité physique similaire. La différence tenait à la station debout : le groupe avec douleur restait debout 3,4 heures de plus par jour (Landorf et coll., 2023). Cette étude montre un lien, pas une cause. Si vous passez surtout vos journées debout, [mal aux pieds debout toute la journée](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) traite de cet aspect.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### Combien de marche est acceptable ? Une règle de douleur simple
+
+**Servez-vous de votre douleur pour doser, et vérifiez-la deux fois : pendant la marche et le lendemain matin.** Aucune étude n’a testé de règle de marche pour la fasciite plantaire. La règle testée la plus proche vient de la rééducation des tendons : prenez-la comme un repère emprunté, pas comme une limite prouvée pour le talon.
+
+Dans un essai de 2007, 38 personnes souffrant du tendon d’Achille ont été réparties en deux groupes. Le premier a continué à courir et à sauter en suivant un modèle de suivi de la douleur : une douleur jusqu’à environ 5 sur 10 était autorisée pendant l’effort, à condition qu’elle se calme le lendemain matin et n’augmente pas de semaine en semaine. Le second a arrêté ces activités pendant les six premières semaines. Les deux groupes se sont améliorés, et rester actif n’a pas donné de moins bons résultats à douze mois (Silbernagel et coll., 2007). Plus de détails sur cet essai dans [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
+
+Pour la douleur au talon, un guide de bonnes pratiques de 2021, construit à partir d’une revue de 51 essais, d’entretiens avec 14 experts et d’une enquête auprès de patients, indique que le suivi de la douleur était fortement recommandé et qu’il faut apprendre aux personnes à lire la réaction de leur douleur à l’effort (Morrissey et coll., 2021). Il ne donne pas de chiffre. Le tableau ci-dessous applique la règle testée à la marche, sur une échelle de 0 (aucune douleur) à 10 (pire douleur). La colonne sur la marche suivante est une lecture pratique de cette règle, pas un protocole testé.
+
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Combien de pas par jour avec une fasciite plantaire ?
+
+**Il n’existe pas de nombre de pas fondé sur des preuves pour la fasciite plantaire.** Nous n’avons trouvé aucun essai qui ait fixé un nombre de pas ou une distance de marche à des personnes souffrant du talon et mesuré le résultat. Tout site qui vous donne un chiffre précis pour la douleur au talon le devine.
+
+Les fameux 10 000 pas sont un objectif de santé générale, pas un chiffre issu de la recherche sur le pied, et même là, les preuves sont minces. Une analyse de 2022 portant sur 15 études et 47 471 adultes a montré que plus de pas par jour allaient de pair avec un risque de décès plus faible, mais le bénéfice se stabilisait vers 6 000 à 8 000 pas par jour chez les adultes de 60 ans et plus, et vers 8 000 à 10 000 chez les adultes plus jeunes (Paluch et coll., 2022). Il s’agit de santé à long terme, pas de ce qu’un talon irrité peut supporter cette semaine.
+
+Le chiffre le plus utile, c’est le vôtre. La plupart des téléphones comptent les pas. Regardez une semaine normale avant que le talon ne se manifeste et une semaine normale maintenant. Cela vous donne un point de départ, et la règle de douleur ci-dessus vous dit s’il faut maintenir, ajouter ou réduire.
+
+Fractionner la marche aide peut-être plus que le total. Le guide de bonnes pratiques de 2021 conseille d’interrompre les longues périodes de charge statique, comme la station debout (Morrissey et coll., 2021). Plusieurs petites marches réparties dans la journée imposent au talon une charge moins continue qu’une longue marche, même si aucune étude n’a comparé les deux pour la fasciite plantaire.
+
+Source: Paluch AE, Bajpai S, Bassett DR, et al. Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. Lancet Public Health. 2022;7(3):e219–e228.
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+
+### Comment reprendre la marche progressivement ?
+
+Le conseil testé dans l’essai danois était de réduire les activités qui déclenchent les poussées, puis de revenir lentement au niveau d’activité antérieur en se guidant sur les symptômes (Riel et coll., 2020). Il ne fixait pas de pourcentage par semaine, et aucune étude n’en a testé pour la fasciite plantaire. Voici une façon de mettre ce conseil en pratique :
+
+- Trouvez une marche qui respecte la règle de douleur : une douleur au plus modérée pendant, et un lendemain matin normal. Si même une courte marche ne passe pas, commencez par moins.
+- Refaites cette marche pendant quelques jours. Une seule bonne journée ne suffit pas pour juger.
+- Ajoutez un petit peu, par exemple cinq minutes de plus, et gardez le reste identique. Ne changez qu’une chose à la fois : la distance, l’allure, les côtes ou le sol.
+- Si le lendemain matin est pire, revenez à la dernière marche qui passait et restez-y plus longtemps.
+
+Les cinq minutes sont une suggestion pratique, pas un chiffre testé. L’important est que chaque palier soit assez petit pour que le lendemain matin vous dise clairement s’il a fonctionné.
+
+La récupération d’une fasciite plantaire est en général lente. Environ 90 % des personnes s’améliorent avec un traitement sans chirurgie, comme les étirements, le travail du mollet et la gestion de la charge (Latt et coll., 2020), mais cela peut prendre des mois. Voyez [combien de temps dure une fasciite plantaire](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/). Si vous courez aussi, le kilométrage et les changements de charge entrent également en jeu.
+
+Source: Riel H, Vicenzino B, Olesen JL, Jensen MB, Ehlers LH, Rathleff MS. Corticosteroid injection plus exercise versus exercise, beyond advice and a heel cup for patients with plantar fasciopathy: protocol for a randomised clinical superiority trial (the FIX-Heel trial). Trials. 2020;21(1):5.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Quelles chaussures aident à marcher avec une fasciite plantaire ?
+
+**Des chaussures confortables et amorties, avec un faible drop, c’est le conseil des experts, mais aucun essai n’a testé une chaussure précise pour la marche.** Le guide de bonnes pratiques de 2021 indique que les chaussures doivent être confortables et offrir un bon maintien, avoir un faible drop entre l’arrière et l’avant du pied (le talon est un peu plus haut que les orteils), et être des chaussures que vous porterez vraiment. Il conseille aussi d’éviter de marcher pieds nus et de porter des chaussures plates sans maintien jusqu’à la disparition complète des symptômes (Morrissey et coll., 2021).
+
+La recommandation de 2023 inclut les conseils sur les chaussures dans sa recommandation d’information notée **E**. Pour les semelles, elle est plus précise : ne pas les utiliser comme seule approche (**B** contre), mais elles peuvent aider associées à d’autres soins (**C**). Cela comprend une talonnette amortissante vendue sans ordonnance ou des chaussures qui amortissent le talon (Koc et coll., 2023).
+
+La dureté de la chaussure pourrait compter. Dans l’étude de 2023 sur 50 personnes avec une douleur au talon et 25 sans, le groupe avec douleur portait des chaussures au talon plus dur et déclarait avoir plus de mal à trouver des chaussures adaptées (Landorf et coll., 2023). Là encore, c’est un lien, pas la preuve que des chaussures souples aident.
+
+Pour savoir ce que montrent les essais sur les semelles, voyez [semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/). Vous pensez aux chaussures minimalistes ? [Chaussures minimalistes](https://walkito.site/fr/chaussures-minimalistes/) explique pourquoi elles conviennent mal tant que le talon est douloureux.
+
+Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+
+### Le sol sur lequel vous marchez compte-t-il ?
+
+**Probablement, mais les preuves sont indirectes.** La recommandation cite les activités en appui liées au travail, en particulier sur des surfaces qui amortissent mal les chocs, comme facteur de risque de la fasciite plantaire (Koc et coll., 2023). Cela désigne le sol dur et les chaussures dures comme une charge pour le talon.
+
+Les preuves directes sont minces. Dans l’étude appariée de 2023, les personnes avec et sans douleur au talon ne différaient pas selon qu’elles se tenaient debout sur des sols durs ou non (Landorf et coll., 2023). Une série de cas sur 20 coureurs a signalé moins de douleur après environ un mois et demi de course pieds nus sur l’herbe, mais sans groupe de comparaison (MacGabhann et coll., 2022). Aucun essai n’a comparé les surfaces de marche pour la fasciite plantaire.
+
+Options pratiques tant que le talon est douloureux :
+
+- Pour les marches plus longues, préférez l’herbe, une allée de parc ou une piste au béton, si c’est plus confortable.
+- Gardez vos chaussures à la maison sur le carrelage ou le parquet, surtout pour les premiers pas de la journée.
+- Allez-y doucement dans les longues descentes et les côtes raides tant que la marche sur le plat ne respecte pas la règle de douleur. Plus d’informations sur les descentes, le sac et les bâtons dans [mal aux pieds en randonnée](https://walkito.site/fr/mal-aux-pieds-randonnee/).
+
+Une douleur sourde et profonde en plein centre du talon, nettement pire sur sol dur, peut venir du coussinet graisseux du talon plutôt que du fascia plantaire. Voyez [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass as a potential treatment for plantar fasciitis: a prospective case series. International Journal of Environmental Research and Public Health. 2022;19(23):15466.
+
+### Quels exercices facilitent la marche ?
+
+Les exercices peuvent aider le talon à tolérer plus de charge, de sorte que la même marche respecte plus facilement la règle de douleur avec le temps, même si aucune étude ne l’a testé pour la marche. La recommandation de 2023 donne aux étirements du fascia plantaire et du mollet la note **A**, sa meilleure note, et au renforcement musculaire la note **B**.
+
+Un mollet raide fait partie du tableau. Dans une étude cas-témoins sur 50 personnes atteintes de fasciite plantaire et 100 sans, une flexion limitée de la cheville était le facteur de risque le plus fort, et rester debout la majeure partie de la journée de travail augmentait aussi le risque (Riddle et coll., 2003). Voyez [mollets tendus](https://walkito.site/fr/mollets-tendus/).
+
+Dans un essai sur 48 personnes, des montées sur pointes lourdes ont soulagé la douleur et amélioré la fonction au quotidien plus vite que les étirements, et à douze mois les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). Les fiches ci-dessous sont les doses de départ de Walkito, pas une prescription. Le programme complet se trouve dans [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/).
+
+- **Étirement du fascia plantaire** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Faites le premier assis au bord du lit, avant que votre pied touche le sol.
+- **Étirement du mollet** (2 maintiens de 30 secondes, chaque jambe): Posez les mains contre un mur. Gardez la jambe arrière tendue, le talon arrière à plat au sol et les hanches vers l’avant. Un mollet raide tire sur le talon toute la journée, cet étirement compte donc même si vous le sentez plus haut.
+- **Étirement du soléaire** (2 maintiens de 30 secondes, chaque jambe): Prenez la même position, gardez le talon arrière à plat au sol, puis pliez le genou arrière jusqu’à sentir l’étirement plus bas, près du talon. Le soléaire, le muscle profond du mollet, ne se relâche que genou plié.
+- **Montées sur pointes assis** (3 séries de 10, deux pieds): Asseyez-vous, pieds à plat, et poussez sur l’avant des pieds pour lever les talons. Les mains sur les genoux ajoutent de la résistance. Genou plié, cet exercice sollicite surtout le soléaire, presque sans charge sur le talon, ce qui convient aux jours où la marche est déjà proche de votre limite.
+- **Montées sur pointes, deux pieds** (3 séries de 10, deux pieds): Debout sur les deux pieds, montez bien droit au-dessus des gros orteils, puis redescendez lentement. Les deux pieds se partagent la charge. Tenez-vous à un mur pour l’équilibre.
+- **Montées sur pointes avec serviette** (4 séries de 10, chaque jambe, avec une charge en plus): Tenez-vous sur un pied sur une marche, une serviette roulée sous les orteils. Prenez trois secondes pour monter, tenez deux secondes en haut, et prenez trois secondes pour redescendre. À ce niveau, Walkito ajoute une charge, par exemple un sac à dos. C’est la serviette qui fait travailler le fascia plantaire, et pas seulement le mollet. Plus de détails sur la [montée sur pointes avec serviette](https://walkito.site/fr/exercices/montee-sur-pointes-serviette/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Consultez d’abord un professionnel de santé si
+
+- la douleur au talon a commencé après une chute, un saut ou une torsion, ou vous ne pouvez pas poser le pied
+- la douleur augmente à chaque marche et ne se calme pas au repos, ou presser les côtés du talon fait mal (possible fracture de fatigue)
+- le talon fait mal la nuit ou au repos, pas seulement à la marche
+- vous ressentez un engourdissement, des fourmillements ou des brûlures dans le pied
+- le talon est rouge, chaud ou gonflé, ou vous vous sentez mal ou avez de la fièvre
+- les deux talons font mal en même temps que d’autres articulations, ou vous avez une raideur matinale ailleurs
+- vous avez du diabète ou une mauvaise circulation et votre pied fait mal ou a changé d’aspect
+- la douleur s’aggrave de semaine en semaine malgré une réduction de la marche
+
+### En faire un plan
+
+Walkito est une application d’exercices pour le talon et le pied. Elle ne fixe pas d’objectif de pas et ne planifie pas vos marches, mais elle lit votre talon de la même façon que cette page : d’après ce que ressent votre pied le lendemain matin.
+
+#### Faut-il marcher avec une fasciite plantaire ?
+
+En général oui, dans des quantités que votre talon supporte. La recommandation de 2023 sur la douleur au talon préconise d’adapter la charge en appui et ne conseille pas d’arrêter, même si ce conseil repose sur la théorie (note E). Dans un essai sur 180 adultes, le conseil de rester actif tout en réduisant les activités qui aggravent la douleur, plus une talonnette, s’est accompagné d’une amélioration significative à environ trois mois.
+
+#### La marche est-elle bonne pour la fasciite plantaire ?
+
+Marcher en quantité modérée ne pose en général pas de problème, même si aucune étude n’a testé la quantité de marche idéale. Dans une étude, les personnes avec une douleur au talon étaient aussi actives que celles sans douleur, mais restaient debout 3,4 heures de plus par jour. Un guide de bonnes pratiques conseille d’apprendre à suivre la réaction de votre douleur à l’effort.
+
+#### Combien de pas par jour peut-on faire avec une fasciite plantaire ?
+
+Aucune étude ne donne un nombre de pas pour la fasciite plantaire. Le chiffre de 10 000 est un objectif de santé générale, et dans les études sur la mortalité, le bénéfice se stabilisait entre 6 000 et 8 000 pas par jour chez les adultes de 60 ans et plus. Pour un talon irrité, partez de votre nombre de pas habituel et laissez la douleur du lendemain matin décider s’il faut ajouter ou réduire.
+
+#### Quelle douleur est acceptable en marchant avec une fasciite plantaire ?
+
+Une règle testée autorise une douleur jusqu’à environ 5 sur 10 pendant l’effort, à condition qu’elle se calme le lendemain matin et n’augmente pas de semaine en semaine. Elle vient d’un essai sur 38 personnes souffrant du tendon d’Achille, pas de fasciite plantaire : prenez-la comme un repère. Une douleur plus forte, ou un matin pire, veut dire qu’il faut réduire.
+
+#### La marche peut-elle aggraver une fasciite plantaire ?
+
+Oui, si vous en faites beaucoup plus que ce dont votre talon a l’habitude. La recommandation de 2023 cite une douleur au talon après une augmentation récente des activités en appui parmi les signes typiques de la fasciite plantaire. Une longue marche soudaine, un nouveau parcours vallonné ou une journée sur des sols durs peuvent provoquer une poussée. Des augmentations plus petites et régulières ménagent davantage le talon.
+
+#### Faut-il arrêter complètement de marcher pour que la fasciite plantaire se calme ?
+
+Aucune étude ne montre qu’un repos complet soit nécessaire. La recommandation de 2023 préconise d’adapter la charge et ne conseille pas d’arrêter. Dans un essai sur la douleur du tendon d’Achille, les personnes restées actives dans une limite de douleur s’en sont aussi bien sorties à douze mois que celles qui avaient arrêté la course et les sauts pendant six semaines. Si même de courtes marches font très mal ou vous font boiter, consultez un professionnel de santé.
+
+#### Quelles chaussures choisir pour marcher avec une fasciite plantaire ?
+
+Des chaussures confortables et amorties, avec le talon un peu plus haut que les orteils, c’est le conseil des experts. Un guide de bonnes pratiques de 2021 conseille d’éviter de marcher pieds nus et de porter des chaussures plates sans maintien jusqu’à la disparition des symptômes. La recommandation de 2023 indique que les semelles ou les talonnettes peuvent aider associées à d’autres soins, mais pas seules.
+
+#### Vaut-il mieux marcher sur l’herbe ou sur le béton avec une fasciite plantaire ?
+
+Un sol plus souple est peut-être plus confortable, mais aucun essai n’a comparé les surfaces pour la marche avec une fasciite plantaire. La recommandation de 2023 relie le travail en appui sur des surfaces qui amortissent mal les chocs au risque de fasciite plantaire. Une petite série de cas chez des coureurs sur l’herbe a signalé moins de douleur, mais sans groupe de comparaison. Fiez-vous à l’état de votre talon le lendemain matin.
+
+#### Peut-on marcher pieds nus à la maison avec une fasciite plantaire ?
+
+Mieux vaut l’éviter tant que le talon est douloureux, surtout sur le carrelage ou le parquet au réveil. Un guide de bonnes pratiques de 2021 sur la douleur au talon déconseille de marcher pieds nus et de porter des chaussures plates sans maintien jusqu’à la disparition complète des symptômes. Le conseil habituel : des chaussures avec du maintien ou des chaussons fermes pour les premiers pas de la journée.
+
+## Exercices pour les pieds des coureurs : une routine courte et ce que montre la recherche
+
+Language: French (Français) · https://walkito.site/fr/exercices-pieds-coureurs/ · published 2026-10-18 · updated 2026-10-18
+
+Une bonne routine pour les pieds du coureur travaille quatre choses : les petits muscles de la voûte (l’exercice du pied court), l’endurance du mollet et du soléaire (montées sur pointes), la force des orteils et l’équilibre sur une jambe. Elle prend environ 10 minutes, deux à cinq fois par semaine, après une sortie facile ou un jour de repos. Dans un essai portant sur 118 coureurs amateurs, ceux qui ne suivaient pas de programme de renforcement des muscles du pied étaient 2,42 fois plus susceptibles de se blesser en courant sur 12 mois (Taddei et coll., 2020). C’est un seul essai : le résultat est prometteur, pas acquis.
+
+- Dans un essai de 2020 portant sur 118 coureurs amateurs de fond, le groupe sans renforcement des muscles du pied était 2,42 fois plus susceptible de se blesser en courant sur 12 mois. L’effet est apparu après environ quatre à huit mois d’entraînement (Taddei et coll., 2020).
+- Dans un essai de 2019 portant sur 57 coureurs, environ deux mois d’exercices pour le pied, au moins cinq fois par semaine, ont rendu tous les muscles du pied mesurés plus gros et plus forts (Ridge et coll., 2019).
+- Les adultes en bonne santé font une médiane d’environ 23 à 24 montées sur pointes sur une jambe, par jambe, et le chiffre de 25 a été proposé comme référence de la normale (Hebert-Losier et coll., 2017 ; Lunsford et Perry, 1995).
+- Un programme de renforcement des hanches, des cuisses et du tronc, suivi en autonomie par 720 coureurs de leur premier marathon, n’a pas réduit les blessures de surmenage qui les empêchaient de terminer la course : 7,1 % contre 7,3 % (Toresdahl et coll., 2020). Le renforcement seul n’a pas évité les blessures dans cet essai.
+- Dans l’ensemble des études sur les coureurs de fond, entre 19,4 % et 79,3 % se sont blessés à la jambe, et une blessure antérieure faisait partie des facteurs de risque les plus nets (van Gent et coll., 2007).
+
+### Les exercices pour les pieds aident-ils les coureurs à éviter les blessures ?
+
+**Un bon essai dit oui, mais ce n’est qu’un essai.** En 2020, Taddei et ses collègues, au Brésil, ont réparti au hasard 118 coureurs amateurs de fond entre un groupe de renforcement du pied (57 coureurs) et un groupe témoin (61 coureurs). Le groupe de renforcement a suivi environ deux mois d’entraînement encadré des muscles du pied et de la cheville, puis a continué avec un suivi à distance. Tous les participants ont signalé chaque semaine, pendant un an, leurs sorties et leurs éventuelles blessures.
+
+Sur 12 mois, le groupe témoin était 2,42 fois plus susceptible de se blesser en courant. La différence est apparue après quatre à huit mois d’entraînement, pas dans les premières semaines. Les coureurs dont la force du pied avait le plus augmenté sont restés plus longtemps sans blessure.
+
+Un essai antérieur, plus petit, de la même équipe, portant sur 28 coureurs, a montré qu’environ deux mois d’entraînement du pied augmentaient le volume des petits muscles du pied et la force de poussée pendant la course (Taddei et coll., 2020).
+
+Ce que ces essais ne disent pas : ils viennent tous deux d’un même groupe de recherche et portent sur des coureurs amateurs expérimentés qui n’étaient pas blessés au départ. Ils n’incluaient ni débutants ni coureurs ayant déjà mal, et l’on ne sait donc pas si les résultats s’appliquent à eux.
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
+
+### Que doit contenir la routine des pieds d’un coureur ?
+
+Quatre parties, avec un ou deux exercices chacune. Les doses ci-dessous sont les doses de départ de Walkito. Faites-les pieds nus, et arrêtez pour la journée si la douleur dépasse 6 sur 10.
+
+- **Muscles du pied :** l’exercice du [pied court](https://walkito.site/fr/exercices/pied-court/), debout puis sur une jambe. Il travaille les petits muscles qui soutiennent la voûte.
+- **Mollet et soléaire :** des montées sur pointes genou tendu pour le mollet, et genou fléchi pour le soléaire, le muscle profond du mollet.
+- **Orteils :** lever le gros orteil. Le gros orteil est la dernière partie du pied à quitter le sol à la poussée.
+- **Équilibre :** tenir sur une jambe, car la course est une succession de réceptions sur une jambe.
+
+Cette routine reprend l’idée du programme de Taddei, qui travaillait d’abord les petits muscles du pied, puis les sollicitait debout et en charge. Ce n’est pas une copie de ce programme. Pour davantage de travail des orteils, voyez les [exercices de renforcement des orteils](https://walkito.site/fr/exercices-renforcement-orteils/).
+
+- **Pied court, debout** (3 séries de 10, tenir 5 secondes, deux pieds): Tenez-vous debout, le poids sur les deux pieds. Sans recroqueviller les orteils, rapprochez l’avant du pied du talon pour que la voûte se soulève un peu. Tenez, puis relâchez. Si les orteils s’agrippent au sol, relâchez un peu l’effort.
+- **Pied court, sur une jambe** (3 séries de 10, tenir 5 secondes, chaque pied): Tenez-vous sur un pied, une main près d’un mur. Soulevez la voûte comme ci-dessus et maintenez-la pendant que vous tenez l’équilibre. C’est plus proche de ce que fait le pied à la réception.
+- **Montées sur pointes, deux pieds** (3 séries de 10, deux pieds): Tenez-vous à un mur. Montez sur l’avant des deux pieds en environ 3 secondes, le poids plutôt vers le gros orteil, puis redescendez en 3 secondes. Quand c’est facile, passez sur une jambe. Plus de détails sur la page [montées sur pointes](https://walkito.site/fr/exercices/montees-sur-pointes/).
+- **Montées sur pointes assis** (3 séries de 10, deux pieds): Asseyez-vous, les pieds à plat, et poussez sur l’avant des pieds pour lever les talons. Genou fléchi, c’est le soléaire qui fait l’essentiel du travail. Un sac à dos ou des poids sur les genoux ajoutent de la charge quand l’exercice devient facile.
+- **Lever le gros orteil** (3 séries de 8, tenir 5 secondes, chaque pied): Gardez les quatre petits orteils au sol et levez seulement le gros orteil. Essayez ensuite l’inverse : gros orteil au sol, petits orteils levés. Un petit mouvement suffit au début.
+- **Équilibre sur une jambe** (3 maintiens de 30 secondes, chaque côté): Tenez-vous sur un pied, le genou souple, près d’un mur. Quand 30 secondes deviennent faciles, fermez les yeux ou tenez-vous sur un coussin. Plus de détails sur la page [équilibre sur une jambe](https://walkito.site/fr/exercices/equilibre-une-jambe/).
+
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
+
+### Pourquoi les coureurs ont-ils besoin de mollets et de soléaires forts ?
+
+**Les muscles du mollet assurent une grande partie de la poussée quand vous courez.** Une revue de 2014 sur le travail des muscles de la jambe pendant la course a montré que, jusqu’à environ 7 mètres par seconde, ce qui couvre presque toute la course loisir, les coureurs vont plus vite surtout en poussant plus fort dans le sol pour allonger la foulée. Les deux muscles du mollet, le soléaire et le gastrocnémien, jouent un rôle particulièrement important dans cette poussée (Schache et coll., 2014).
+
+Le soléaire se trouve sous le gastrocnémien et travaille surtout quand le genou est fléchi. C’est pourquoi la routine comprend des montées sur pointes assis, genou fléchi, en plus de la version debout. Si vos mollets sont souvent tendus après vos sorties, la page [mollets tendus](https://walkito.site/fr/mollets-tendus/) présente les étirements, dont l’[étirement du soléaire](https://walkito.site/fr/exercices/etirement-soleaire/).
+
+L’endurance du mollet intervient aussi dans les douleurs du tibia. Dans une étude cas-témoins, les sportifs atteints de périostite tibiale faisaient moins de montées sur pointes jusqu’à la fatigue que ceux qui n’en souffraient pas (Madeley et coll., 2007). Cela montre un lien, pas que des mollets faibles causent la périostite tibiale. Plus de détails dans [périostite tibiale : exercices](https://walkito.site/fr/periostite-tibiale-exercices/).
+
+Source: Schache AG, Dorn TW, Williams GP, Brown NA, Pandy MG. Lower-limb muscular strategies for increasing running speed. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):813-824.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+
+### Combien de montées sur pointes un coureur devrait-il réussir ?
+
+Il n’existe pas de norme propre aux coureurs : utilisez les chiffres généraux des adultes comme plancher. Dans une étude portant sur 566 adultes, la médiane était de 24 montées sur pointes sur une jambe à droite et de 23 à gauche, au rythme d’un temps pour monter et d’un temps pour descendre à 60 battements par minute. Le nombre baisse avec l’âge, et les personnes plus actives en faisaient davantage (Hebert-Losier et coll., 2017). Une étude plus ancienne a proposé 25 comme référence de la normale (Lunsford et Perry, 1995).
+
+Comparez aussi vos deux jambes. Un écart de plus de 10 % entre les côtés est le seuil habituel d’une différence significative en rééducation de la jambe (Silbernagel et coll., 2010). Le protocole complet, une version à faire chez soi et un calculateur se trouvent sur la page [test de montée sur pointes](https://walkito.site/fr/test-montee-sur-pointes/).
+
+Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+Source: Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
+Source: Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. A new measurement of heel-rise endurance with the ability to detect functional deficits in patients with Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.
+
+### Quand et à quelle fréquence les coureurs doivent-ils faire ces exercices ?
+
+**Aucune étude n’a comparé les exercices pour les pieds faits après une sortie avec ceux faits un jour de repos** : le calendrier ci-dessous est pratique, pas testé.
+
+- **Après une sortie facile ou un jour de repos.** Les exercices fatiguent les petits muscles du pied : ils trouvent mieux leur place après une sortie courte et facile qu’avant une séance difficile ou une sortie longue.
+- **Pas juste avant une séance de fractionné ou une course.** Pour celles-ci, vous voulez des mollets frais.
+- **Montées sur pointes 2 à 3 jours par semaine,** avec un jour de pause entre deux séances, comme pour tout renforcement.
+- **Muscles du pied, orteils et équilibre 2 à 5 jours par semaine.** Dans l’essai de 2019, les coureurs faisaient des exercices pour les pieds au moins cinq fois par semaine et ont gagné en force en environ deux mois (Ridge et coll., 2019).
+
+Laissez-vous du temps. Le volume musculaire a changé en environ deux mois dans les essais, mais la baisse des blessures dans l’essai de Taddei n’est apparue qu’après quatre à huit mois. Une routine que vous gardez pendant des mois compte plus qu’une routine difficile abandonnée au bout de trois semaines.
+
+Source: Ridge ST, Olsen MT, Bruening DA, et al. Walking in minimalist shoes is effective for strengthening foot muscles. Medicine & Science in Sports & Exercise. 2019;51(1):104–113.
+Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
+
+### Peut-on faire ces exercices avec une petite gêne ?
+
+En général oui, si la gêne est légère et stable et si vous adaptez les exercices. La règle est la même que sur le reste du site : un peu d’inconfort est acceptable, mais arrêtez pour la journée si la douleur dépasse 6 sur 10, et allégez si c’est pire le lendemain matin.
+
+Certaines gênes changent le plan :
+
+- **Une douleur au talon aux premiers pas du matin** évoque une fasciite plantaire. Les montées sur pointes et les étirements comptent alors davantage : voyez les [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/).
+- **Une douleur à l’arrière du talon ou dans le tendon d’Achille** demande une progression plus douce pour le mollet, souvent avec des descentes lentes du talon : voyez [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
+- **Une douleur le long du bord interne du tibia** peut être une périostite tibiale : voyez [périostite tibiale : exercices](https://walkito.site/fr/periostite-tibiale-exercices/).
+- **Une douleur à un point précis d’un os** qui augmente à chaque sortie est un signe d’alerte de fracture de fatigue. Arrêtez de courir et faites-la examiner.
+
+### Ce que les exercices pour les pieds ne font pas
+
+**Ils ne remplacent pas un entraînement raisonnable.** Dans l’ensemble des études sur les coureurs de fond, entre 19,4 % et 79,3 % se sont blessés à la jambe, et un kilométrage hebdomadaire élevé chez les hommes ainsi qu’une blessure antérieure faisaient partie des facteurs de risque les plus nets (van Gent et coll., 2007). Dans une étude danoise portant sur 874 coureurs débutants, ceux qui augmentaient leur kilométrage hebdomadaire de plus de 30 % semblaient plus exposés à certaines blessures de surmenage, même si le résultat n’atteignait pas tout à fait le seuil de significativité statistique (Nielsen et coll., 2014).
+
+**Le renforcement n’est pas une protection automatique.** Dans un essai portant sur 720 coureurs de leur premier marathon de New York, un programme de 10 minutes pour les hanches, les cuisses et le tronc, suivi en autonomie trois fois par semaine pendant environ trois mois, n’a pas réduit les blessures de surmenage qui empêchaient de terminer le marathon : 7,1 % dans le groupe renforcement contre 7,3 % chez les autres (Toresdahl et coll., 2020). Ce programme ne travaillait pas les pieds, mais il rappelle qu’une routine sur le papier n’est pas la même chose qu’un résultat.
+
+**Ils ne modifient que peu la forme de la voûte.** Dans une petite étude portant sur 21 personnes, sans groupe témoin, la voûte s’affaissait de 1,8 mm de moins après un mois d’entraînement au pied court (Mulligan et Cook, 2013). Attendez-vous à un pied plus fort et plus stable, pas à une nouvelle voûte. Les chaussures et la course pieds nus sont une autre question, traitée dans [chaussures minimalistes](https://walkito.site/fr/chaussures-minimalistes/).
+
+Source: van Gent RN, Siem D, van Middelkoop M, van Os AG, Bierma-Zeinstra SM, Koes BW. Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review. British Journal of Sports Medicine. 2007;41(8):469-480.
+Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
+Source: Toresdahl BG, McElheny K, Metzl J, Ammerman B, Chang B, Kinderknecht J. A randomized study of a strength training program to prevent injuries in runners of the New York City Marathon. Sports Health. 2020;12(1):74-79.
+Source: Mulligan EP, Cook PG. Effect of plantar intrinsic muscle training on medial longitudinal arch morphology and dynamic function. Manual Therapy. 2013;18(5):425–430.
+
+### Consultez d’abord un professionnel de santé si
+
+- la douleur se situe à un point précis d’un os du pied ou du tibia et s’aggrave à chaque sortie, ce qui peut être une fracture de fatigue
+- vous ne pouvez pas vous appuyer sur le pied, ou vous boitez en marchant
+- la douleur a commencé par un claquement, une chute ou une entorse de la cheville
+- le pied ou la cheville est gonflé, rouge ou chaud, ou vous avez de la fièvre
+- vous ressentez un engourdissement, des fourmillements ou une brûlure dans le pied
+- le talon ou le pied fait mal la nuit ou au repos
+- la douleur continue de s’aggraver pendant deux à trois semaines malgré des sorties plus faciles
+
+### En faire un plan
+
+Walkito est une application d’exercices pour le talon et le pied qui reprend les exercices de cette page : le pied court de la position assise à l’appui sur une jambe, les montées sur pointes, lever le gros orteil, écarter les orteils et l’équilibre sur une jambe. Elle ne planifie pas votre course : gardez votre propre plan d’entraînement et placez les séances les jours faciles.
+
+#### Quels sont les meilleurs exercices pour les pieds des coureurs ?
+
+Une courte série qui couvre quatre choses : le pied court pour la voûte, des montées sur pointes genou tendu et genou fléchi pour le mollet et le soléaire, lever le gros orteil pour la poussée, et l’équilibre sur une jambe. Un programme de renforcement du pied construit sur la même idée a réduit les blessures de course dans un essai portant sur 118 coureurs.
+
+#### Le renforcement du pied prévient-il les blessures en course à pied ?
+
+C’est possible. Dans un essai de 2020 portant sur 118 coureurs amateurs, le groupe sans renforcement des muscles du pied était 2,42 fois plus susceptible de se blesser sur 12 mois, et l’effet est apparu après quatre à huit mois. C’est un seul essai, mené par un seul groupe de recherche : les données sont prometteuses, mais pas encore acquises.
+
+#### À quelle fréquence les coureurs doivent-ils faire des exercices pour les pieds ?
+
+De 2 à 5 jours par semaine pour les muscles du pied, les orteils et l’équilibre, et de 2 à 3 jours par semaine pour les montées sur pointes, avec un jour de pause entre deux séances. Dans un essai de 2019, les coureurs qui faisaient des exercices pour les pieds au moins cinq fois par semaine ont gagné en force en environ deux mois.
+
+#### Faut-il faire les exercices pour les pieds avant ou après la course ?
+
+Après une sortie facile ou un jour de repos, c’est le choix pratique, car les exercices fatiguent les petits muscles du pied. Aucune étude n’a comparé les moments. Évitez une routine complète juste avant une séance de fractionné, une sortie longue ou une course, quand vous voulez des pieds et des mollets frais.
+
+#### Combien de montées sur pointes sur une jambe un coureur doit-il faire ?
+
+Il n’existe pas de chiffre propre aux coureurs. Les adultes en bonne santé en font une médiane d’environ 23 à 24 par jambe à un rythme imposé, et 25 a été proposé comme normal. Beaucoup de coureurs actifs en font davantage. Un écart de plus de 10 % entre les jambes mérite d’être suivi. La page du test de montée sur pointes présente le protocole complet.
+
+#### Combien de temps faut-il pour que les exercices pour les pieds fassent effet ?
+
+Dans les essais, les muscles du pied sont devenus plus gros et plus forts en environ deux mois. La baisse des blessures dans l’essai chez les coureurs a pris plus de temps et n’est apparue qu’après quatre à huit mois. Prévoyez de garder une routine courte pendant des mois, pas des semaines.
+
+#### Puis-je continuer à courir pendant que je fais ces exercices ?
+
+Oui. La routine est faite pour accompagner votre course. Si vous avez une petite gêne, arrêtez un exercice pour la journée si la douleur dépasse 6 sur 10, et gardez des sorties faciles si la douleur est pire le lendemain matin. Une douleur qui augmente à chaque sortie, ou qui se situe à un point précis d’un os, doit être examinée par un professionnel de santé.
+
+#### La course pieds nus ou les chaussures minimalistes renforcent-elles les pieds ?
+
+Dans un essai de 2019 chez des coureurs, marcher en chaussures minimalistes, avec une augmentation lente et progressive, a renforcé le pied à peu près autant que les exercices. Changer rapidement de chaussures de course est une autre affaire et comporte ses propres risques : si vous essayez, progressez lentement.
+
+## Mal aux pieds des enseignants : ce qu’une journée de classe fait à vos pieds, et ce qui aide
+
+Language: French (Français) · https://walkito.site/fr/mal-aux-pieds-enseignants/ · published 2026-10-18 · updated 2026-10-18
+
+Le mal aux pieds des enseignants vient surtout des heures passées debout et à circuler dans la classe sur des sols durs. Les options les mieux étayées, les étirements du mollet et du fascia plantaire et le renforcement du mollet, prennent de 3 à 5 minutes et tiennent entre deux cours. La recommandation de 2023 sur la douleur au talon donne à ces étirements la **note A**, sa meilleure note, et au renforcement la **note B** (Koc et coll., 2023). La recherche sur les pieds des enseignants est limitée : dans une revue de 2024, 27 études rapportaient une douleur dans la région de la cheville, le plus souvent comptée avec le pied, et le chiffre combiné était de 30 % des enseignants (Tahernejad et coll., 2024).
+
+- Dans une revue de 2024 portant sur 44 études et 15 972 enseignants, la douleur dans la région de la cheville (le plus souvent comptée avec le pied) atteignait 30 % en chiffre combiné sur 27 études, derrière la nuque et le bas du dos à 47 % chacun. Les résultats variaient beaucoup d’une étude à l’autre (Tahernejad et coll., 2024).
+- Dans une enquête auprès de 1 439 enseignants d’une seule région d’Arabie saoudite, 85,5 % rapportaient une douleur au pied au cours des 12 derniers mois, plus fréquente chez ceux qui donnaient 16 cours ou plus par semaine (Alqahtani, 2020). D’autres enquêtes ont trouvé des chiffres bien plus bas : lisez-le comme le résultat d’une région.
+- Nous n’avons trouvé aucune étude ayant mesuré combien d’heures un enseignant type passe debout. Dans une étude de 50 cas et 100 témoins, rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire, et une cheville très peu souple, le plus souvent à cause d’un mollet raide, la multipliait par 23,3 (Riddle et coll., 2003).
+- La recommandation de 2023 sur la douleur au talon donne aux étirements du fascia plantaire et du mollet la **note A** et au renforcement la **note B**. Les semelles seules reçoivent une **note B contre** (Koc et coll., 2023).
+- Sur 50 personnes souffrant du talon et 25 sans douleur, celles qui avaient mal restaient debout 3,4 heures de plus par jour et portaient des chaussures au talon plus dur. C’est un lien, pas la preuve d’une cause (Landorf et coll., 2023).
+
+### Que fait une journée de classe à vos pieds ?
+
+**Une journée de classe alterne station debout immobile et petits trajets, le plus souvent sur des sols durs.** Vous êtes debout au tableau ou au bureau, vous passez dans les rangs pendant que les élèves travaillent, puis vous restez debout en surveillance dans le couloir ou dans la cour. La station debout immobile charge le talon, le fascia plantaire (la bande sous le pied qui soutient la voûte) et le mollet pendant de longues périodes, sans l’effet de pompe de la marche.
+
+Nous n’avons trouvé aucune étude ayant mesuré combien d’heures un enseignant type passe debout, donc cette page ne donne pas de chiffre. Ce qui est mesuré, c’est la station debout prolongée en général. Une revue de 2015 sur le travail debout l’associait à de l’inconfort dans les jambes et les pieds, à de la fatigue et à des jambes gonflées, et citait les tapis de sol, les chaussures de maintien, les bas de compression et l’alternance assis-debout parmi les mesures ayant un certain niveau de preuve (Waters et Dick, 2015).
+
+Dans une revue de 2017 portant sur 25 études en laboratoire, l’inconfort dans le bas du dos et les jambes augmentait à mesure que les personnes restaient debout sans pause. Les auteurs suggéraient de ne pas rester debout plus de 40 minutes environ d’affilée (Coenen et coll., 2017). C’est à peu près un cours.
+
+Le mollet compte aussi. Dans une étude de 2003, un [mollet tendu](https://walkito.site/fr/mollets-tendus/) était le facteur de risque de fasciite plantaire le plus fort, avec une cote multipliée par 23,3, et rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003). Un enseignant debout toute la journée avec des mollets raides cumule les deux.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Le mal aux pieds est-il fréquent chez les enseignants ?
+
+**Fréquent, mais moins étudié que le dos et la nuque des enseignants.** Une revue de 2024 a regroupé 44 études portant sur 15 972 enseignants. Les douleurs de la nuque et du bas du dos arrivaient en tête, à 47 % chacune. La douleur dans la région de la cheville, que la plupart des études comptaient avec le pied, atteignait 30 % en chiffre combiné sur 27 études et 8 634 enseignants. Les études étaient très différentes les unes des autres, et les auteurs ont relevé des signes de biais de publication pour le chiffre de la cheville : lisez donc 30 % comme un ordre de grandeur, pas comme un taux exact.
+
+Une revue plus ancienne constatait que peu d’études s’étaient intéressées aux jambes et aux pieds des enseignants, et que les douleurs des jambes et des pieds étaient moins souvent rapportées que celles du dos, de la nuque et des bras (Erick et Smith, 2011).
+
+La plus grande enquête consacrée au pied que nous ayons trouvée a interrogé 1 439 enseignants d’une région d’Arabie saoudite. 85,5 % rapportaient une douleur au pied au cours des 12 derniers mois. Elle était plus fréquente chez ceux qui donnaient 16 cours ou plus par semaine (88 %) que chez les autres (81,4 %), et chez ceux qui enseignaient depuis plus de 10 ans (86,8 % contre 82,6 %). C’était un questionnaire déclaratif dans une seule région, et la plupart des enseignants étaient des femmes, donc le résultat peut ne pas correspondre à votre établissement (Alqahtani, 2020).
+
+Source: Tahernejad S, Hejazi A, Rezaei E, Makki F, Sahebi A, Zangiabadi Z. Musculoskeletal disorders among teachers: a systematic review and meta-analysis. Frontiers in Public Health. 2024;12:1399552.
+Source: Erick PN, Smith DR. A systematic review of musculoskeletal disorders among school teachers. BMC Musculoskeletal Disorders. 2011;12:260.
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+
+### Quels exercices tiennent entre deux cours ?
+
+Les exercices ci-dessous viennent de la recommandation sur la fasciite plantaire. Ils n’ont pas été testés chez les enseignants, mais ils ciblent les tissus qu’une journée debout sollicite : le mollet, le fascia plantaire et le talon. La plupart ne demandent qu’un mur ou une table, ils tiennent donc dans une interclasse ou une heure de battement. Ce sont les doses de départ de Walkito, pas une prescription. [Comment ces guides sont rédigés](https://walkito.site/fr/a-propos/).
+
+Les étirements reçoivent la meilleure note de la recommandation, **A**. Le renforcement du mollet reçoit un **B**. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour la journée.
+
+- **Étirement du mollet** (2 maintiens de 30 secondes, chaque jambe): Posez les mains contre le mur ou le cadre du tableau. Gardez la jambe arrière tendue, le talon arrière à plat au sol et les hanches vers l’avant. Un mollet raide tire sur le talon toute la journée : cet étirement compte, même si vous le sentez plus haut.
+- **Étirement du soléaire** (2 maintiens de 30 secondes, chaque jambe): Prenez la même position contre le mur, gardez le talon arrière à plat au sol, puis pliez le genou arrière jusqu’à sentir l’étirement plus bas, près du talon. Le soléaire, le muscle profond du mollet, ne se relâche que genou plié.
+- **Étirement du fascia plantaire** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Faites le premier au bord du lit, avant que votre pied ne touche le sol, et un autre à votre bureau avant de vous lever après une heure de battement.
+- **Montées sur pointes assis** (3 séries de 10, deux pieds): Asseyez-vous à votre bureau, les pieds à plat, et montez en poussant sur l’avant des pieds. Les mains sur les genoux ajoutent de la résistance. Genou plié, l’exercice travaille surtout le soléaire et ne charge presque pas le talon. Il se fait sous le bureau pendant que les élèves travaillent en silence.
+- **Montées sur pointes, deux pieds** (3 séries de 10, deux pieds): Tenez-vous sur les deux pieds, une main sur la table, montez bien droit au-dessus des gros orteils, puis redescendez lentement. Les deux pieds se partagent la charge. Pour savoir comment progresser : [montées sur pointes et fasciite plantaire](https://walkito.site/fr/montees-sur-pointes-fasciite-plantaire/).
+- **Massage avec une balle** (1 minute): Asseyez-vous et faites rouler lentement la plante du pied sur une balle de massage, avec une pression ferme. Si vous grimacez, relâchez. Une balle dans le tiroir de votre bureau en fait une habitude d’après les cours. Plus de détails dans [balle de massage et fasciite plantaire](https://walkito.site/fr/balle-de-massage-fasciite-plantaire/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Comment caser les exercices dans une journée de classe ?
+
+Pas besoin d’une séance à part. Associez chaque exercice à un moment qui existe déjà dans la journée. Les doses sont les mêmes que ci-dessus ; le tableau indique seulement quand elles s’insèrent.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Quelles chaussures pour un enseignant debout toute la journée ?
+
+**Aucune étude n’a comparé des chaussures pour enseignants, et aucun essai ne désigne une marque ou un modèle.** La recommandation de 2023 sur la douleur au talon ne note pas les types de chaussures. Les données disponibles vont dans le sens d’un amorti sous le talon et d’un bon chaussant.
+
+Dans une étude de 2023, 50 personnes souffrant d’une douleur sous le talon ont été comparées à 25 personnes appariées sans douleur. Celles qui avaient mal restaient debout 3,4 heures de plus par jour et portaient des chaussures au talon plus dur. Le style de chaussure, la hauteur du talon et la station debout sur sol dur ne différaient pas entre les groupes (Landorf et coll., 2023). Cela montre un lien, pas qu’un talon souple prévient la douleur, mais cela plaide pour une chaussure au talon amorti pour les longues journées au tableau.
+
+Une liste pratique, fondée sur le chaussant et le confort plutôt que sur un essai :
+
+- un talon amorti et un contrefort ferme (l’arrière de la chaussure ne s’écrase pas quand vous le pincez)
+- de la place pour que les orteils s’étalent, sans pincement en fin de journée
+- un talon bas et stable plutôt qu’un talon haut ou très fin
+- une deuxième paire pour alterner, afin de ne pas porter chaque jour la même paire usée
+
+**Les semelles peuvent rendre la journée plus confortable, mais ne comptez pas sur elles seules.** La recommandation de 2023 donne aux semelles seules une **note B contre**, et associées aux étirements et au renforcement une **note C** (Koc et coll., 2023). [Semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/) compare les deux et explique quoi regarder dans des semelles pour la fasciite plantaire.
+
+Les bas de compression sont une autre option si vos jambes sont lourdes et gonflées en fin de journée. Dans un essai auprès de 40 agents de sécurité en longues vacations debout, des bas de 15 à 20 mmHg et de 20 à 30 mmHg évitaient tous deux la hausse de l’inconfort et du gonflement des jambes observée avec des chaussettes ordinaires (Garcia et coll., 2023). Ce n’était pas une étude sur des enseignants.
+
+Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+
+### Le sol de la classe et les tapis font-ils une différence ?
+
+La plupart des salles de classe ont des sols durs : carrelage, revêtement vinyle sur béton ou moquette fine. Aucune étude n’a mesuré l’effet des sols de classe sur les pieds des enseignants. La revue de 2015 sur le travail debout cite les tapis de sol parmi les mesures ayant un certain niveau de preuve pour réduire l’inconfort, avec les chaussures et l’alternance assis-debout (Waters et Dick, 2015).
+
+Un tapis n’aide que là où vous vous tenez vraiment. Si vous enseignez depuis un endroit fixe, comme le tableau, le vidéoprojecteur ou une paillasse de laboratoire, un tapis anti-fatigue à cet endroit vaut la peine d’être essayé. Si vous circulez dans la classe, c’est la chaussure qui fait office de tapis.
+
+Bouger est l’autre moitié. Les études sur la station debout ont trouvé un inconfort qui s’accumule avec le temps passé debout sans bouger (Coenen et coll., 2017). Circuler entre les tables, s’asseoir pendant le travail silencieux et changer d’appui coupent la charge statique.
+
+À la maison, évitez de marcher pieds nus sur un sol dur au saut du lit si votre talon fait mal. [Douleur au talon au réveil](https://walkito.site/fr/douleur-talon-au-reveil/) explique pourquoi les premiers pas comptent.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+
+### Quand la douleur au talon d’un enseignant est-elle une fasciite plantaire ?
+
+Une douleur diffuse en fin de journée de classe, disparue le lendemain matin, c’est de la fatigue liée à la station debout. **La fasciite plantaire a un schéma typique : une douleur vive sous le talon aux premiers pas du matin ou après être resté assis, qui se calme en marchant, puis revient après une longue journée debout.** Dans l’enquête saoudienne, 25,8 % des enseignants ayant mal au pied disaient que la douleur venait tôt le matin et après le repos (Alqahtani, 2020). Cette enquête n’a diagnostiqué personne : c’est un schéma, pas un décompte de fasciites plantaires.
+
+Si cela vous ressemble, commencez par les [exercices et étirements pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/). Environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec un traitement non chirurgical, même si cela peut prendre de trois à six mois (Latt et coll., 2020). [Combien de temps dure une fasciite plantaire](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/) donne les détails.
+
+D’autres schémas orientent ailleurs :
+
+- une douleur profonde au centre du talon, pire pieds nus sur sol dur : [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/)
+- une douleur le long de la voûte qui augmente au fil de la journée : [douleur de la voûte plantaire](https://walkito.site/fr/douleur-voute-plantaire/)
+- une douleur sous l’avant du pied : [métatarsalgie](https://walkito.site/fr/metatarsalgie-douleur-avant-pied/)
+- une douleur à l’arrière du talon, dans le tendon : [exercices pour la tendinite d’Achille](https://walkito.site/fr/tendinite-achille-exercices/)
+
+Vous ne savez pas lequel ? Notez où et quand ça fait mal. **Si vous avez encore un doute, consultez un professionnel de santé avant de charger le pied avec des exercices.**
+
+Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Consultez d’abord un professionnel de santé si
+
+- la douleur a commencé après une chute, une torsion ou un choc, par exemple pendant la surveillance de la cour ou dans les escaliers
+- vous ne pouvez pas poser le pied, ou vous boitez
+- le pied est engourdi, fourmille, brûle, est gonflé ou chaud
+- le talon ou le pied est rouge, ou vous avez de la fièvre ou vous sentez mal
+- la douleur vous réveille la nuit ou est présente au repos
+- la douleur se situe en un point précis et s’aggrave à l’effort, ce qui peut évoquer une fracture de fatigue
+- un mollet ou une jambe a gonflé soudainement et est douloureux, rouge ou chaud
+- vous avez du diabète, une sensibilité réduite des pieds ou une mauvaise circulation
+
+### En faire un plan
+
+Vous n’avez pas à décider de l’ordre, des doses ni du moment où passer à une version plus difficile. Walkito construit un plan semaine après semaine autour d’un objectif. Si votre talon suit le schéma matinal de la fasciite plantaire, le premier objectif est une douleur du matin à 1 sur 10 ou moins pendant 14 jours d’affilée.
+
+#### Pourquoi ai-je si mal aux pieds après une journée de cours ?
+
+En classe, vous êtes debout et vous marchez sur des sols durs la majeure partie de la journée, ce qui charge le talon, la voûte et le mollet presque sans repos. Les revues sur le travail debout associent la station debout prolongée à de l’inconfort et à de la fatigue dans les jambes et les pieds, et des études en laboratoire ont trouvé un inconfort qui augmente à mesure que l’on reste debout sans bouger. Des pauses assises, des étirements du mollet et des chaussures amorties aident.
+
+#### Le mal aux pieds est-il fréquent chez les enseignants ?
+
+Une revue de 2024 a trouvé, pour la douleur dans la région de la cheville, le plus souvent comptée avec le pied, un chiffre combiné de 30 % des enseignants sur 27 études, avec des résultats très différents d’une étude à l’autre. Une enquête auprès de 1 439 enseignants d’une seule région d’Arabie saoudite a trouvé 85,5 % de douleurs au pied sur l’année écoulée. Les douleurs de la nuque et du bas du dos sont plus souvent rapportées que celles du pied.
+
+#### Quelles sont les meilleures chaussures pour un enseignant debout toute la journée ?
+
+Aucune étude n’a testé de chaussures pour enseignants. Cherchez un talon amorti, un contrefort ferme, de la place pour les orteils et un talon bas et stable. Dans une étude, les personnes souffrant du talon portaient des chaussures au talon plus dur et restaient debout plus longtemps chaque jour. Les semelles seules reçoivent une note B contre dans la recommandation de 2023 sur la douleur au talon : associez-les à des étirements.
+
+#### Quels étirements un enseignant peut-il faire entre deux cours ?
+
+Un étirement du mollet et un étirement du soléaire contre un mur prennent environ une minute par côté : 2 maintiens de 30 secondes par jambe. L’étirement du fascia plantaire se fait assis à votre bureau, 2 maintiens de 30 secondes par pied. La recommandation de 2023 sur la douleur au talon donne à ces étirements la note A, mais elle a été écrite pour la fasciite plantaire, pas pour les enseignants.
+
+#### Rester debout toute la journée en classe peut-il provoquer une fasciite plantaire ?
+
+Cela peut augmenter le risque. Dans une étude de 2003 portant sur 50 personnes atteintes de fasciite plantaire et 100 sans, rester debout la majeure partie de la journée de travail multipliait la cote par 3,6, et une cheville très peu souple, le plus souvent à cause d’un mollet raide, la multipliait par 23,3. L’étude ne portait pas sur des enseignants, et aucune étude n’a compté les fasciites plantaires chez les enseignants en particulier.
+
+#### Les tapis anti-fatigue aident-ils les enseignants ?
+
+Peut-être, si vous restez à un endroit fixe. Une revue de 2015 sur le travail debout cite les tapis de sol parmi les mesures ayant un certain niveau de preuve pour réduire l’inconfort. Aucune étude n’a testé de tapis en classe. Si vous circulez dans la salle pendant la majeure partie du cours, vos chaussures comptent plus qu’un tapis.
+
+#### Les enseignants devraient-ils porter des bas de compression ?
+
+Ils valent la peine d’être essayés si vos jambes sont lourdes ou gonflées en fin de journée. Dans un essai auprès de 40 agents de sécurité en longues vacations debout, des bas de 15 à 20 mmHg et de 20 à 30 mmHg évitaient tous deux la hausse de l’inconfort et du gonflement des jambes observée avec des chaussettes ordinaires. L’essai ne comprenait pas d’enseignants.
+
+#### Combien de temps un enseignant devrait-il rester debout avant de s’asseoir ?
+
+Il n’existe pas de limite testée pour les enseignants. Une revue de 2017 des études en laboratoire sur la station debout a trouvé un inconfort qui s’accumule avec le temps et suggérait de ne pas rester debout plus de 40 minutes environ d’affilée. En pratique, asseyez-vous quelques minutes quand les élèves commencent un travail en autonomie, et circulez dans la classe plutôt que de rester immobile au même endroit.
+
+## Mal aux pieds dans le commerce et en entrepôt : ce qui aide sur les sols durs
+
+Language: French (Français) · https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/ · published 2026-10-18 · updated 2026-10-18
+
+En entrepôt et en magasin, les pieds font mal parce que des heures debout et à marcher sur des sols durs chargent le talon, la voûte et le mollet, sans que le sol amortisse grand-chose. Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/) dans une étude (Riddle et coll., 2003). Les étirements du mollet et du fascia plantaire ont la meilleure note, **A**, dans la recommandation de 2023 sur la douleur au talon, et une version courte tient en 3 minutes environ pendant une pause. Les tapis et les semelles amortissantes améliorent le confort, mais les données sont plus minces (Speed et coll., 2018).
+
+- Passer la majeure partie de la journée de travail debout multipliait par 3,6 la cote de fasciite plantaire dans une étude cas-témoins sur 50 cas et 100 témoins. Une cheville très peu souple, le plus souvent à cause d’un mollet raide, la multipliait par 23,3 (Riddle et coll., 2003).
+- La recommandation de 2023 sur la douleur au talon maintient une recommandation de note **B** : les cliniciens doivent rechercher la mise en charge liée au travail, en particulier sur des surfaces qui amortissent mal, comme facteur de risque de douleur au talon (Koc et coll., 2023).
+- Une revue de 10 études a trouvé des données modérées montrant que les tapis et les semelles amortissantes réduisent la gêne et la fatigue chez les personnes qui travaillent debout, et seulement des données limitées montrant que les semelles font mieux que les tapis (Speed et coll., 2018).
+- Dans une revue de 7 études sur des travailleurs en chaussures de sécurité, les 4 qui ont mesuré la douleur ont trouvé une douleur au pied chez 42,3 à 60,8 % des travailleurs, la chaleur, la transpiration, le poids et la rigidité étant les principales plaintes (Arceri et coll., 2024).
+- Les étirements du mollet et du fascia plantaire ont la meilleure note de la recommandation, **A**, et le renforcement un **B**. Les semelles seules ont un **B contre** pour la douleur au talon (Koc et coll., 2023).
+
+### Pourquoi a-t-on mal aux pieds après un poste en entrepôt ou en magasin ?
+
+Le travail en magasin et en entrepôt combine deux charges. En caisse ou à un poste d’emballage, vous restez debout sans bouger pendant de longues périodes. En rayon ou à la préparation de commandes, vous marchez, portez, poussez des chariots et pivotez. Dans les deux cas, le poids reste sur le talon et la voûte la majeure partie du poste, et les pauses sont fixées par le planning, pas par le moment où vos pieds en ont besoin.
+
+Une étude cas-témoins de 2003 sur 50 personnes atteintes de fasciite plantaire et 100 témoins appariés a montré que passer la majeure partie de la journée de travail en appui sur les pieds multipliait par 3,6 la cote de fasciite plantaire. Une cheville moins souple, c’est-à-dire un [mollet tendu](https://walkito.site/fr/mollets-tendus/), était le facteur le plus fort, avec une cote multipliée par 23,3. **Un mollet raide, vous pouvez le travailler. Le poste, en général, non.**
+
+Une revue systématique de 16 études sur la douleur chronique au talon a trouvé quelques arguments en faveur d’un lien avec la station debout prolongée, à côté d’un poids plus élevé, de l’âge et d’une cheville moins souple. Les auteurs demandaient des études qui suivent les personnes dans le temps : cela montre donc une association, pas la preuve que la station debout cause la douleur au talon (Irving et coll., 2006).
+
+Quelle distance parcourez-vous ? Nous n’avons trouvé aucune étude publiée qui compte les pas par poste chez les travailleurs d’entrepôt ou du commerce. Des chiffres comme « 12 miles par poste » (environ 19 km) circulent sur des blogs du secteur sans étude derrière. Le chiffre mesuré le plus proche vient des infirmières : en moyenne 9 360 pas par poste dans une étude avec podomètre (Chang et Cho, 2022).
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
+Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
+
+### Le béton est-il vraiment pire pour les pieds ?
+
+Probablement, mais personne n’a mesuré le béton seul. La recommandation de 2023 sur la douleur au talon maintient une recommandation de 2014, de note **B** : les cliniciens doivent évaluer les activités de mise en charge liées au travail, en particulier dans des conditions de faible amorti, comme facteur de risque de douleur au talon et de fasciite plantaire. Un sol en béton nu est à peu près la surface de travail qui amortit le moins.
+
+Ce qui a été testé, c’est l’inverse : ajouter quelque chose de souple. Dans des études en laboratoire et sur le lieu de travail, se tenir sur un tapis ou porter des semelles amortissantes réduisait la gêne par rapport à un sol dur (Speed et coll., 2018). Cela va dans le sens d’une surface dure qui ajoute à la charge, sans prouver que le béton cause une affection précise.
+
+Certaines douleurs au talon sont pires sur sol dur pour une autre raison. Si la douleur se situe en profondeur au centre du talon et qu’elle est nettement pire pieds nus sur du carrelage ou du béton, lisez la page sur le [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+
+### Tapis anti-fatigue ou semelles : qu’est-ce qui aide le plus ?
+
+**Les deux améliorent le confort, sans gagnant net, et aucun n’a de données solides.** Une revue systématique de 2018 a trouvé 10 études sur les tapis et les semelles amortissantes chez des personnes qui travaillent debout. Elle a jugé modérées les données montrant que l’amorti réduit la gêne et la fatigue, et limitées celles montrant que les semelles font mieux que les tapis. Les études étaient très différentes dans leur conception, et les auteurs demandaient des essais plus grands sur de vrais lieux de travail.
+
+Dans une étude sur le lieu de travail, des ouvriers de montage ont passé une semaine de journées de 8 heures dans chacune de quatre conditions : sol dur, tapis, semelles, et semelles sur un tapis. Le tapis, les semelles et la combinaison étaient tous plus confortables que le sol dur, sans différence nette entre eux (King, 2002).
+
+Dans un test en laboratoire de 4 heures, trois tapis anti-fatigue du commerce sur quatre réduisaient la gêne par rapport à un sol dur, mais aucun tapis ne faisait mieux que les autres (Wiggermann et Keyserling, 2013). Aucun tapis en particulier n’a donc montré qu’il était meilleur que les autres.
+
+La répartition pratique : **un tapis n’aide que là où vous restez immobile**, comme une caisse, un poste d’emballage ou un poste de travail fixe. Si vous parcourez le magasin ou préparez des commandes, l’amorti doit vous suivre, donc dans la chaussure. Pour la douleur au talon en particulier, la recommandation de 2023 donne aux semelles seules un **B contre** : ne comptez donc pas uniquement sur elles. [Semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/) compare les deux.
+
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: King PM. A comparison of the effects of floor mats and shoe in-soles on standing fatigue. Applied Ergonomics. 2002;33(5):477–484.
+Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Les chaussures de sécurité donnent-elles mal aux pieds ?
+
+Les chaussures de sécurité protègent vos pieds, et elles viennent aussi avec des plaintes. Une revue systématique de 2024 a trouvé 7 études sur des travailleurs en chaussures de sécurité. Toutes signalaient de l’inconfort et de la douleur, et les 4 études qui ont mesuré la douleur ont trouvé une douleur au pied chez 42,3 à 60,8 % des travailleurs. Les principales plaintes étaient la chaleur, la transpiration, le poids et une semelle rigide, surtout au niveau des orteils et de l’embout.
+
+Dans une étude sur 509 travailleurs de 12 usines de métallurgie, qui portaient tous des chaussures de sécurité chaque jour, 81 % avaient au moins un problème au pied. Leurs plaintes les plus fréquentes sur les chaussures étaient la chaleur et l’humidité à l’intérieur (42 %), le poids (27,5 %) et l’ajustement (22,9 %) (Mancuso et coll., 2017).
+
+Ce sont des enquêtes : elles ne peuvent donc pas dire que les chaussures causent la douleur, car de longues heures sur des sols durs feraient mal dans n’importe quelle chaussure. Les suggestions de la revue sont pratiques :
+
+- Prenez la bonne pointure et la bonne largeur, et vérifiez si les modèles validés par votre employeur existent en version large.
+- Choisissez la chaussure la plus légère qui respecte le niveau de protection exigé sur votre site.
+- Privilégiez des matériaux respirants si vos pieds ont chaud et transpirent.
+- La plupart des chaussures de sécurité ont une semelle intérieure amovible : une semelle amortissante peut donc la remplacer, si elle ne rend pas la chaussure trop serrée.
+
+Ne remplacez jamais une chaussure de sécurité obligatoire par des baskets parce que vous avez mal aux pieds. Parlez à votre responsable ou à la personne chargée de la sécurité d’autres modèles validés.
+
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+Source: Mancuso G, Cavrini G, Berdondini RM, Mancuso M. Skin lesions and other foot problems associated with safety footwear [in Italian]. Giornale Italiano di Medicina del Lavoro ed Ergonomia. 2017;38(4):261–264.
+
+### Quels exercices faire pendant une pause ?
+
+Les exercices ci-dessous ne demandent aucun matériel et pas plus de place qu’un mur, un rayonnage ou le bord d’un comptoir. Les trois premiers se font debout, en salle de pause ou dans une allée. Les autres sont pour après le poste, assis.
+
+La recommandation donne aux étirements du mollet et du fascia plantaire la note **A** et au renforcement la note **B**. Ces notes concernent la fasciite plantaire, mais ce sont les mêmes tissus qu’un poste sur sol dur met en charge. Arrêtez pour la journée si un exercice fait monter votre douleur à 6 sur 10 ou plus.
+
+- **Étirement du mollet** (2 maintiens de 30 secondes, chaque jambe): Posez les mains sur un mur, un montant de rayonnage ou un comptoir. Gardez la jambe arrière tendue, le talon arrière à plat au sol et les hanches vers l’avant. Fonctionne aussi en chaussures de sécurité.
+- **Étirement du soléaire** (2 maintiens de 30 secondes, chaque jambe): Prenez la même position, gardez le talon arrière à plat au sol, puis pliez le genou arrière jusqu’à sentir l’étirement plus bas, près du talon. Le soléaire, le muscle profond du mollet, ne se relâche que genou plié.
+- **Bascules de cheville** (2 séries de 15, chaque jambe): En fente, mains au mur. Faites avancer le genou avant au-dessus des orteils pendant que le talon reste à plat. Lentement, environ deux secondes dans chaque sens. Plus de détails dans [bascules de cheville](https://walkito.site/fr/exercices/mobilite-cheville/).
+- **Étirement du fascia plantaire** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous, chaussures enlevées, et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Si vos premiers pas au lever font mal, faites-en un au bord du lit avant que votre pied touche le sol.
+- **Montées sur pointes, deux pieds** (3 séries de 10, deux pieds): Debout sur les deux pieds, tenez-vous à un mur, montez bien droit au-dessus des gros orteils, puis redescendez lentement. Le renforcement trouve mieux sa place les jours de repos, pour que le mollet ait le temps de récupérer avant le poste suivant. Plus de détails dans [montées sur pointes et fasciite plantaire](https://walkito.site/fr/montees-sur-pointes-fasciite-plantaire/).
+- **Massage avec une balle** (1 minute): Assis, faites rouler lentement la plante du pied sur une balle de massage, avec une pression ferme. Si vous grimacez, appuyez moins.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Comment le caser dans un poste : 3, 5 ou 10 minutes ?
+
+Dans le commerce et en entrepôt, la plupart des pauses sont courtes et fixées par le planning. Une revue d’études en laboratoire a trouvé que les symptômes dus à la station debout ininterrompue devenaient cliniquement importants après environ 42 minutes chez les personnes sujettes à la douleur en position debout, et ses auteurs proposaient de ne pas rester debout immobile plus de 40 minutes environ (Coenen et coll., 2017). Souvent, vous ne pouvez pas choisir quand vous asseoir, mais vous pouvez changer de position : marcher jusqu’au bout de l’allée, déplacer votre poids, ou faire un étirement du mollet contre un rayonnage.
+
+- **3 minutes, pendant une pause :** l’étirement du mollet, 2 maintiens de 30 secondes par jambe, plus un maintien de 30 secondes en étirement du soléaire par jambe. Cela cible le mollet raide, le plus fort facteur de risque de l’étude de 2003.
+- **5 minutes, pendant une pause plus longue ou en fin de poste :** ajoutez les bascules de cheville, ou l’étirement du fascia plantaire une fois les chaussures enlevées.
+- **10 minutes, un jour de repos :** ajoutez les montées sur pointes (3 séries de 10) et le massage avec une balle. Cela couvre le côté renforcement, noté **B**.
+
+**Une routine courte faite à la plupart des postes compte plus qu’une longue que vous sautez.** Associez-la à quelque chose que vous faites déjà, comme la première pause ou le moment où vous enlevez vos chaussures de travail.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Ce que disent les données sur chaque option
+
+La plupart des conseils pour le travail mélangent des données solides et des données faibles. Ce tableau met les principales options côte à côte, avec la meilleure étude que nous avons trouvée pour chacune.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al. What's the impact of safety footwear on workers concerning foot-related problems? A systematic review. Healthcare (Basel). 2024;12(15):1522.
+
+### Est-ce une fasciite plantaire ou autre chose ?
+
+Une douleur diffuse et des pieds fatigués après un long poste passent en général avec une nuit de repos. La fasciite plantaire a un profil plus net : une douleur vive près de la face interne du talon, pire aux premiers pas du matin ou après être resté assis. Si cela vous ressemble, voir [douleur au talon au réveil](https://walkito.site/fr/douleur-talon-au-reveil/) et [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/). Environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec un traitement sans chirurgie, même si cela peut prendre trois à six mois (Latt et coll., 2020).
+
+D’autres profils orientent ailleurs. Une brûlure sous l’avant du pied oriente vers une [douleur à l’avant du pied](https://walkito.site/fr/metatarsalgie-douleur-avant-pied/). Une douleur le long de la voûte qui augmente au fil du poste est traitée dans [douleur à la voûte plantaire](https://walkito.site/fr/douleur-voute-plantaire/). Une douleur sur le dessus du pied peut venir de chaussures trop serrées ou qui appuient ; voir [douleur sur le dessus du pied](https://walkito.site/fr/douleur-dessus-du-pied/).
+
+Une douleur en un petit point sur un os, qui augmente à mesure que vous marchez, peut être une fracture de fatigue, surtout après une hausse brutale des heures ou un nouveau poste avec plus de marche. **Cela demande l’avis d’un professionnel de santé, pas plus d’exercices.**
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Consultez d’abord un professionnel de santé si
+
+- la douleur a commencé après une chute, une charge tombée sur le pied ou une torsion au travail
+- vous ne pouvez pas poser le pied, ou vous boitez
+- la douleur est concentrée en un petit point sur un os et augmente à la marche, ce qui peut être une fracture de fatigue
+- le pied est engourdi, fourmille, brûle ou est froid
+- le pied ou le talon est rouge, chaud ou gonflé, ou vous avez de la fièvre
+- un mollet ou une jambe est soudain douloureux et gonflé
+- vous avez du diabète ou une sensibilité réduite des pieds, et une chaussure a provoqué une plaie ou une ampoule
+- la douleur vous réveille la nuit ou continue de s’aggraver après plusieurs semaines avec les changements de cette page
+
+### En faire un plan
+
+Vous n’avez pas à trouver l’ordre, les doses ni le moment de passer à une version plus difficile. Walkito construit le plan à partir de vos réponses et l’ajuste chaque jour selon l’état de vos pieds : un mauvais matin après un long poste donne une séance plus légère.
+
+#### Pourquoi ai-je autant mal aux pieds en travaillant en entrepôt ?
+
+De longues heures debout et à marcher sur des sols durs maintiennent la charge sur le talon, la voûte et le mollet la majeure partie du poste. Passer la majeure partie de la journée de travail debout multipliait par 3,6 la cote de fasciite plantaire dans une étude, et la recommandation de 2023 sur la douleur au talon cite la mise en charge liée au travail sur des surfaces qui amortissent mal comme facteur de risque.
+
+#### Combien de pas fait un travailleur d’entrepôt sur un poste ?
+
+Nous n’avons trouvé aucune étude publiée qui compte les pas sur des postes en entrepôt ou dans le commerce. Des chiffres comme 12 miles (environ 19 km) par poste viennent de blogs du secteur sans étude derrière. Le chiffre mesuré le plus proche vient d’infirmières hospitalières, qui faisaient en moyenne 9 360 pas par poste dans une étude avec podomètre. Votre téléphone ou votre montre reste le meilleur repère pour votre propre poste.
+
+#### Les tapis anti-fatigue sont-ils vraiment efficaces ?
+
+Ils réduisent la gêne chez les personnes qui restent debout au même endroit, mais les données sont modérées, pas solides. Une revue de 10 études a trouvé que l’amorti aide les personnes qui travaillent debout. Dans un test en laboratoire de 4 heures, trois tapis sur quatre faisaient mieux qu’un sol dur, et aucun tapis ne faisait mieux que les autres. Un tapis n’aide que là où vous restez immobile.
+
+#### Semelles ou tapis : qu’est-ce qui est mieux pour rester debout sur du béton ?
+
+À peu près pareil pour le confort. Dans une étude sur le lieu de travail, des ouvriers de montage trouvaient un tapis, des semelles et les deux ensemble tous plus confortables qu’un sol dur, sans différence nette entre eux. Une revue a jugé limitées les données montrant que les semelles font mieux que les tapis. Si vous vous déplacez, les semelles vous suivent, pas le tapis.
+
+#### Les chaussures de sécurité peuvent-elles donner une fasciite plantaire ?
+
+Aucune étude ne montre que les chaussures de sécurité causent une fasciite plantaire. Une revue de 7 études sur des travailleurs en chaussures de sécurité a trouvé une douleur au pied chez 42,3 à 60,8 % des travailleurs dans les 4 qui l’ont mesurée, la chaleur, le poids et la rigidité étant les principales plaintes. Les heures sur sol dur comptent aussi, quelle que soit la chaussure. Un bon ajustement et la chaussure validée la plus légère sont de bons premiers pas.
+
+#### Quels étirements faire pendant une pause au travail ?
+
+L’étirement du mollet et l’étirement du soléaire se font debout contre un mur ou un rayonnage, en chaussures de travail : deux maintiens de 30 secondes chacun, chaque jambe, soit environ 4 minutes pour les deux étirements. La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet la note A. Gardez l’étirement du fascia plantaire et les montées sur pointes pour après le poste ou les jours de repos.
+
+#### Est-ce normal d’avoir mal aux pieds après un poste en magasin ?
+
+Des pieds fatigués et douloureux après un long poste debout sont fréquents, et une revue de 2015 a relié la station debout prolongée au travail à la gêne, à la fatigue et aux douleurs dans les jambes dans de nombreux métiers. Fréquent ne veut pas dire qu’il faut l’ignorer. Une douleur vive, qui dure jusque dans vos jours de repos ou qui est pire aux premiers pas du matin, mérite qu’on s’en occupe.
+
+#### Peut-on continuer à travailler debout avec une fasciite plantaire ?
+
+Beaucoup de personnes le font, avec des ajustements. De courts étirements pendant les pauses, des chaussures mieux ajustées et de l’amorti là où vous restez debout allègent la charge, et environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec un traitement sans chirurgie, même si cela peut prendre trois à six mois. Si la douleur s’aggrave malgré tout, consultez un professionnel de santé.
+
 ## À propos de Walkito
 
 https://walkito.site/fr/a-propos/
