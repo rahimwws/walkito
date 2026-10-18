@@ -260,10 +260,10 @@ export default function NutzungsbedingungenDe() {
         <p>
           Walkito wird so bereitgestellt, wie es ist. Wir versprechen nicht, dass
           das Programm deine Schmerzen verringert, dein Gewölbe verändert oder
-          ein bestimmtes Ergebnis bringt. Die{' '}
-          <a href="/science/">Seite zur Studienlage</a> (auf Englisch) zeigt,
-          was die Forschung, der es folgt, gefunden hat, und auch, wo diese
-          Belege aufhören.
+          ein bestimmtes Ergebnis bringt. Der Abschnitt{' '}
+          <a href="/de/ueber-walkito/#how-we-research">Wie wir recherchieren</a>{' '}
+          erklärt, wie wir die Forschung lesen, der das Programm folgt, und wie
+          wir kennzeichnen, wo die Belege aufhören.
         </p>
         <p>
           Wir versprechen nicht, dass die App ohne Unterbrechungen oder Fehler

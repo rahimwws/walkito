@@ -83,7 +83,7 @@ export function Faq({ lang, items }: { lang: Lang; items: { q: string; a: string
 
   return (
     <InView className="hfaq">
-      <div className="hfaq-panel">
+      <div className="hfaq-panel" id="faq" style={{ scrollMarginTop: 96 }}>
         <div className="hfaq-head">
           <Kicker num="06" label={copy.kicker} />
           <h2 className="hfaq-title">

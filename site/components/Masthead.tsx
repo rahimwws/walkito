@@ -6,7 +6,7 @@ import { GetAppButton, GetAppDialog } from '@/components/GetApp';
 import { LangPicker } from '@/components/LangPicker';
 import { MobileMenu } from '@/components/MobileMenu';
 import { ScrollState } from '@/components/ScrollState';
-import { CHROME, LANG_NAMES, LANGS, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
+import { CHROME, LANG_NAMES, LANGS, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
 import { qrPath } from '@/lib/qr';
 import { playHref, SITE_URL, storeHref } from '@/lib/site';
 
@@ -49,9 +49,19 @@ export function Masthead({
   // reviewer is sent to, are in the footer of every page.
   const links = [
     { href: home, label: c.navHome, current: current === 'home' },
-    { href: customHref('program', lang), label: c.navProgram, current: current === 'program' },
-    { href: customHref('science', lang), label: c.navEvidence, current: current === 'science' },
-    { href: customHref('faq', lang), label: c.navQuestions, current: current === 'faq' },
+    // PT/FR/IT/DE have no program, evidence or questions pages: their own About
+    // page explains the plan and how we research, and the home page has the FAQ.
+    ...(isFullLang(lang)
+      ? [
+          { href: customHref('program', lang), label: c.navProgram, current: current === 'program' },
+          { href: customHref('science', lang), label: c.navEvidence, current: current === 'science' },
+          { href: customHref('faq', lang), label: c.navQuestions, current: current === 'faq' },
+        ]
+      : [
+          { href: TRANSLATED.about[lang], label: c.navProgram, current: false },
+          { href: `${TRANSLATED.about[lang]}#how-we-research`, label: c.navEvidence, current: false },
+          { href: `${home}#faq`, label: c.navQuestions, current: false },
+        ]),
   ];
 
   return (
