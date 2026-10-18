@@ -5373,6 +5373,153 @@ Gelo é o primeiro passo mais comum: uma bolsa de gelo ou uma garrafa de água c
 
 Não assuma que é fascite plantar e continue forçando se a dor não segue o padrão de doer no primeiro passo e depois melhorar. Não ignore uma dor que acorda você, piora com a caminhada contínua, ou vem com queimação, formigamento ou inchaço. Cuidar sozinho de uma dor em repouso com alongamentos ou talas noturnas pode atrasar o diagnóstico de uma fratura por estresse, de um nervo comprimido ou de uma artrite inflamatória.
 
+## Fascite plantar na gravidez: por que o calcanhar dói e o que é seguro fazer
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/fascite-plantar-gravidez/ · published 2026-10-17 · updated 2026-10-17
+
+Dor no calcanhar e no pé é comum na gravidez, e os alongamentos, entre as opções com o grau mais alto para a [fascite plantar](https://walkito.site/pt/fascite-plantar/), podem ser feitos sentada ou com a mão apoiada na parede. Em um estudo, 31% das mulheres que já tinham dado à luz relataram dor no pé, contra 22% das que nunca tinham engravidado (Vullo e colegas, 1996). A diretriz de 2023 para dor no calcanhar dá aos alongamentos da fáscia plantar e da panturrilha o seu grau mais alto, **A**, mas ela não trata da gravidez, então converse com seu médico ou obstetra antes de começar.
+
+- A dor no pé foi mais comum em mulheres que já tinham dado à luz do que nas que nunca tinham engravidado, 31% contra 22%, e a maior parte da dor nas pernas e nos pés começou no segundo ou no terceiro trimestre (Vullo e colegas, 1996).
+- Em 49 mulheres medidas no primeiro trimestre e cerca de quatro meses e meio depois do parto, a altura do arco diminuiu e o comprimento do pé aumentou. A primeira gravidez respondeu pela maior parte da mudança (Segal e colegas, 2013).
+- A diretriz de 2023 para dor no calcanhar dá grau **A** aos alongamentos da fáscia plantar e da panturrilha e grau **B** ao trabalho de força, mas não menciona a gravidez (Koc e colegas, 2023).
+- Depois da semana 20, evite ficar muito tempo deitada de barriga para cima durante o exercício, e pare se notar sinais de alerta como sangramento, tontura ou dor ou inchaço na panturrilha (ACOG, 2020).
+- A FDA, agência reguladora dos EUA, recomenda evitar os anti-inflamatórios não esteroides (AINEs), como o ibuprofeno, a partir da semana 20 da gravidez, a menos que o seu médico os indique (FDA, 2020).
+
+### Dor no calcanhar é comum na gravidez?
+
+**A dor no pé é comum na gravidez, mas ninguém contou a fascite plantar separadamente.** Em um estudo de 1996 feito com questionários, 31% de 107 mulheres que tinham acabado de dar à luz relataram dor no pé, contra 22% de 91 mulheres que nunca tinham engravidado. A dor nas pernas e nos pés no total foi relatada por 56% contra 37%.
+
+A maior parte dessa dor começou mais adiante na gravidez: 82% começaram no segundo ou no terceiro trimestre. Os autores sugeriram que esse momento aponta mais para a mecânica de um corpo mais pesado e em mudança do que só para os hormônios.
+
+Em um estudo de 2010 com 100 mulheres entrevistadas depois do parto, mais da metade relatou inchaço nos pés, nos tornozelos e nas pernas, uma marcha instável e pés mais largos (Ponnapula e Boberg, 2010).
+
+Se o calcanhar dói mais nos primeiros passos da manhã ou depois de ficar sentada, esse é o padrão típico da fascite plantar. Uma dor que piora à noite ou em repouso é outro padrão, explicado em [dor no calcanhar à noite](https://walkito.site/pt/dor-no-calcanhar-a-noite/).
+
+Source: Vullo VJ, Richardson JK, Hurvitz EA. Hip, knee, and foot pain during pregnancy and the postpartum period. Journal of Family Practice. 1996;43(1):63–68.
+Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.
+
+### Por que a gravidez pode fazer o calcanhar doer?
+
+**O achado mais claro é que o arco baixa e o pé fica mais comprido.** Um estudo de 2013 mediu 49 mulheres no primeiro trimestre e de novo cerca de quatro meses e meio depois do parto. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram. 35 das 49 tiveram queda do arco, e 30 ficaram com o pé mais comprido, a maioria de 2 a 10 milímetros.
+
+A causa é menos clara do que muitos sites dizem. Nesse estudo, a frouxidão das articulações e o ganho de peso na gravidez não tiveram relação com o quanto o pé mudou. O peso e muitas horas em pé são fatores de risco conhecidos para a fascite plantar em geral (Koc e colegas, 2023), mas nenhum estudo testou esses fatores na gravidez.
+
+O inchaço, um corpo mais pesado e um jeito diferente de andar mudam a forma como a carga se distribui no pé. A fáscia plantar é a faixa embaixo do pé que sustenta o arco, então um arco mais baixo e mais carga podem sobrecarregá-la. Mais sobre como um arco mais baixo pode persistir depois do parto: [pé chato piora com a idade?](https://walkito.site/pt/pe-chato-piora-com-a-idade/)
+
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.
+
+### Quais exercícios para dor no calcanhar são seguros na gravidez?
+
+Os exercícios abaixo vêm da diretriz para fascite plantar, que foi escrita para adultos em geral, não para a gravidez. Todos são feitos sentada ou em pé com uma mão na parede, e nenhum pede que você deite de barriga para cima ou pule. **Pergunte antes ao seu médico ou obstetra**, principalmente se já disseram para você limitar a atividade.
+
+O alongamento está entre as opções com o grau mais alto na diretriz de 2023 para dor no calcanhar: os alongamentos da fáscia plantar e da panturrilha recebem **A**. O trabalho de força para a panturrilha recebe **B**. O ensaio de elevação de calcanhar citado neste site testou uma versão em pé (Rathleff e colegas, 2015); a elevação de calcanhar sentada é um ponto de partida mais leve.
+
+Se você se sentir instável, mantenha uma mão na parede ou no encosto de uma cadeira. Em uma pesquisa com 2.847 mulheres que trabalhavam, 26,6% caíram pelo menos uma vez durante a gravidez (Dunning e colegas, 2003). Por isso esta página deixa de fora o equilíbrio em uma perna e os pulinhos até que seu médico ou obstetra diga que estão liberados.
+
+- **Alongamento da fáscia plantar** (2 vezes de 30 segundos, cada pé): Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão. Se a barriga dificultar cruzar a perna, passe uma toalha pela parte da frente da sola e puxe com cuidado.
+- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Dê um passo para trás mais curto que o normal se o seu equilíbrio estiver diferente.
+- **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição na parede, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão e suba os calcanhares fazendo força com a parte da frente dos pés. As mãos sobre os joelhos aumentam a resistência. Com o joelho dobrado, o exercício trabalha principalmente o sóleo, o músculo mais profundo da panturrilha. É um ponto de partida mais leve do que a elevação de calcanhar em pé testada no ensaio.
+- **Puxar a toalha com os dedos** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com uma toalha esticada no chão embaixo do pé. Puxe a toalha para você com os dedos, mantendo o calcanhar no chão.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.
+
+### O que evitar com dor no calcanhar na gravidez?
+
+**Depois da semana 20, evite ficar muito tempo deitada de barriga para cima enquanto se exercita.** O Colégio Americano de Obstetras e Ginecologistas (ACOG) explica que o peso do útero pode comprimir uma veia grande e baixar a pressão arterial. O ACOG também desaconselha atividades com alto risco de queda.
+
+**Pergunte antes de tomar um analgésico.** A FDA, agência reguladora de alimentos e medicamentos dos EUA, [recomenda evitar os AINEs](https://www.fda.gov/drugs/drug-safety-and-availability/fda-recommends-avoiding-use-nsaids-pregnancy-20-weeks-or-later-because-they-can-result-low-amniotic) (em inglês), como o ibuprofeno e o naproxeno, a partir da semana 20 da gravidez, porque em casos raros eles podem causar problemas graves nos rins do bebê e reduzir o líquido amniótico. O alerta não vale para a aspirina em dose baixa que o seu médico tenha receitado.
+
+**Pergunte antes de fazer terapia por ondas de choque ou uma infiltração.** A Sociedade Internacional de Tratamento Médico por Ondas de Choque contraindica o tratamento só quando [há um feto na área tratada](https://shockwavetherapy.org/indications/) (em inglês), não por causa da gravidez em si. Não encontramos estudos de ondas de choque para dor no calcanhar na gravidez. Para as infiltrações de corticoide, não existe orientação específica sobre gravidez para a dor no calcanhar. Uma revisão afirma que a gravidez em si não impede uma única infiltração local, então essa é uma decisão do seu médico (Filippini e colegas, 2023).
+
+Pare o exercício e ligue para seu médico ou obstetra se notar qualquer um dos sinais de alerta listados pelo ACOG, entre eles sangramento vaginal, contrações regulares e dolorosas, perda de líquido, tontura, dor no peito, ou dor ou inchaço na panturrilha.
+
+Source: ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
+Source: Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.
+
+### Sapatos ou palmilhas ajudam na dor no calcanhar na gravidez?
+
+Nenhum ensaio testou palmilhas ou sapatos para dor no calcanhar na gravidez. O estudo mais próximo dividiu 72 grávidas entre palmilhas sob medida para o arco e os sapatos de sempre. Ele mediu a forma do arco, não a dor, e não encontrou diferença entre os grupos (Segal e colegas, 2018).
+
+Para a dor no calcanhar em geral, a diretriz de 2023 dá às palmilhas sozinhas o grau **B contra**: a evidência diz para não contar só com elas. Combinadas com alongamento e trabalho de força, elas recebem **C** (Koc e colegas, 2023). A página [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/) compara as duas opções.
+
+Há um ponto prático que as medições confirmam: o pé de muitas mulheres ficou mais comprido, a maioria de 2 a 10 milímetros (Segal e colegas, 2013). Se os seus sapatos agora estão apertados ou pressionam o calcanhar, vale primeiro conferir se eles servem no tamanho atual dos seus pés.
+
+Source: Segal NA, Neuman LN, Hochstedler MC, Hillstrom HJ. Static and dynamic effects of customized insoles on attenuating arch collapse with pregnancy: a randomized controlled trial. The Foot. 2018;37:16–22.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+
+### A dor no calcanhar passa depois da gravidez?
+
+Não encontramos nenhum estudo que acompanhe a dor no calcanhar ou a fascite plantar depois do parto, então não existe um número de quantas mulheres melhoram nem em quanto tempo.
+
+As mudanças na forma do pé persistiram: cerca de quatro meses e meio depois do parto, o arco ainda estava mais baixo e o pé ainda mais comprido do que no primeiro trimestre, principalmente depois de uma primeira gravidez (Segal e colegas, 2013). Para a fascite plantar em geral, cerca de 90% das pessoas melhoram com tratamento sem cirurgia, mas isso pode levar de três a seis meses; veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/).
+
+Depois do parto, o ACOG recomenda retomar a atividade aos poucos quando seu médico ou obstetra disser que é seguro (ACOG, 2020). Os mesmos alongamentos e exercícios de força desta página continuam valendo.
+
+Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
+Source: ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Quando a dor no pé ou na perna na gravidez é uma emergência?
+
+Dois problemas podem parecer pés cansados e inchados comuns e precisam de atendimento urgente:
+
+- **Um coágulo na perna (trombose venosa profunda).** Dor latejante e inchaço em uma perna, normalmente na panturrilha ou na coxa, às vezes com a pele vermelha, azulada ou mais escura em volta da área dolorida, ou veias inchadas. O risco é maior na gravidez e nas seis semanas depois do parto. Ligue para o SAMU (192) se também tiver falta de ar ou dor no peito. [NHS: trombose venosa profunda](https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/) (em inglês).
+- **Pré-eclâmpsia.** Inchaço repentino no rosto, nas mãos ou nos pés, dor de cabeça forte, visão embaçada ou pontos de luz piscando, ou dor logo abaixo das costelas. É mais provável depois da semana 20, e os sintomas também podem continuar ou começar nas primeiras semanas depois do parto. [NHS: pré-eclâmpsia](https://www.nhs.uk/conditions/pre-eclampsia/) (em inglês).
+
+Um inchaço gradual nos dois pés no fim do dia é comum na gravidez. Um inchaço repentino, em uma perna só, ou que vem com os sintomas acima, não é.
+
+### Procure seu médico ou obstetra no mesmo dia se
+
+- uma panturrilha ou perna está dolorida e inchada, ou a pele ali está vermelha ou mais escura (possível coágulo)
+- o rosto, as mãos ou os pés incham de repente, ou você tem dor de cabeça forte, visão embaçada ou dor abaixo das costelas (possível pré-eclâmpsia)
+- você tem falta de ar ou dor no peito: ligue para o SAMU (192)
+- você tem sangramento vaginal, contrações regulares e dolorosas ou perda de líquido
+- a dor no calcanhar começou depois de uma queda ou de uma torção, ou você não consegue apoiar o pé no chão
+- o calcanhar dói à noite ou em repouso, ou você sente queimação, formigamento ou dormência
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para o calcanhar e o pé. Ele não foi pensado para a gravidez e não sabe em que trimestre você está, então converse com seu médico ou obstetra antes de começar, e pule qualquer exercício com pulinhos, saltos ou que peça para deitar de barriga para cima.
+
+#### A gravidez pode causar fascite plantar?
+
+Ela pode tornar a fascite mais provável, mas nenhum estudo provou isso. A dor no pé foi mais comum em mulheres que já tinham dado à luz (31%) do que nas que nunca tinham engravidado (22%), e a gravidez baixa o arco e alonga o pé. Nenhum estudo contou a fascite plantar separadamente na gravidez.
+
+#### Dor no calcanhar é sinal de início de gravidez?
+
+Nenhum estudo liga a dor no calcanhar ao início da gravidez. No estudo de 1996, 82% da dor nas pernas e nos pés na gravidez começaram no segundo ou no terceiro trimestre, não no primeiro. Uma dor no calcanhar nas primeiras semanas provavelmente tem as mesmas causas que em qualquer outro momento.
+
+#### É seguro alongar para fascite plantar na gravidez?
+
+Alongamentos leves da fáscia plantar e da panturrilha, feitos sentada ou com uma mão na parede, combinam com as recomendações do ACOG para exercício na gravidez, e a diretriz de 2023 para dor no calcanhar dá a eles grau A. Essa diretriz não trata da gravidez, então pergunte antes ao seu médico ou obstetra, e evite ficar muito tempo deitada de barriga para cima depois da semana 20.
+
+#### Posso tomar ibuprofeno para dor no calcanhar na gravidez?
+
+Pergunte antes ao seu médico ou obstetra. A FDA, agência reguladora dos EUA, recomenda evitar os AINEs, que incluem o ibuprofeno e o naproxeno, a partir da semana 20 da gravidez, a menos que um médico os indique, porque em casos raros eles podem causar problemas graves nos rins do bebê e reduzir o líquido amniótico.
+
+#### O pé fica maior depois da gravidez?
+
+Em muitas mulheres, sim, pelo menos por alguns meses. Em 49 mulheres, o comprimento do pé e a queda do arco ainda estavam maiores cerca de quatro meses e meio depois do parto do que no primeiro trimestre. As mudanças foram em geral pequenas, e a primeira gravidez respondeu pela maior parte delas.
+
+#### Tala noturna ajuda na fascite plantar na gravidez?
+
+As talas noturnas não foram estudadas na gravidez. Para a fascite plantar em geral, a diretriz de 2023 dá a elas grau A, usadas por um a três meses, para pessoas que têm dor constante nos primeiros passos da manhã. Pergunte ao seu médico ou obstetra antes de comprar uma. Mais em [tala noturna para fascite plantar](https://walkito.site/pt/tala-noturna-fascite-plantar/).
+
+#### Caminhar faz mal para a fascite plantar na gravidez?
+
+Caminhar é uma das atividades que o ACOG sugere na gravidez, como parte de pelo menos 150 minutos de atividade moderada por semana. Nenhum estudo analisou a caminhada com fascite plantar na gravidez, então pergunte ao seu médico ou obstetra quanto é adequado para você.
+
+#### Posso fazer ondas de choque ou infiltração de corticoide na gravidez?
+
+Pergunte ao seu médico. A Sociedade Internacional de Tratamento Médico por Ondas de Choque só contraindica as ondas de choque quando há um feto na área tratada, não por causa da gravidez em si, mas não encontramos estudos desse tratamento para dor no calcanhar na gravidez. Para as infiltrações de corticoide, não existe orientação para dor no calcanhar específica para a gravidez, e uma revisão afirma que a gravidez em si não impede uma única infiltração local.
+
 ## Exercícios para esporão no calcanhar: alongamento e fortalecimento para a dor em volta do esporão
 
 Language: Portuguese, Brazil (Português) · https://walkito.site/pt/esporao-calcaneo-exercicios/ · published 2026-10-08 · updated 2026-10-08
