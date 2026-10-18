@@ -82,6 +82,8 @@ import { TEACHERS_EN } from './articles/teachers-foot-pain';
 import { RETAIL_WAREHOUSE_EN } from './articles/retail-warehouse-foot-pain';
 import { CHEFS_EN } from './articles/chefs-foot-pain';
 import { HAIRDRESSERS_EN } from './articles/hairdressers-foot-pain';
+import { WEIGHT_PF_EN } from './articles/weight-and-plantar-fasciitis';
+import { HIKERS_EN } from './articles/hiking-foot-pain';
 import type { Guide } from './types';
 
 /**
@@ -172,4 +174,6 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   retailWarehouse: RETAIL_WAREHOUSE_EN,
   chefs: CHEFS_EN,
   hairdressers: HAIRDRESSERS_EN,
+  weightPf: WEIGHT_PF_EN,
+  hikers: HIKERS_EN,
 };

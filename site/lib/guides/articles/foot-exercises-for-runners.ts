@@ -39,7 +39,7 @@ export const RUNNERS_FOOT_EXERCISES_EN: Guide = {
     'In a 2020 trial of 118 recreational long-distance runners, the group without foot core training was 2.42 times more likely to get a running injury over 12 months. The effect appeared after about four to eight months of training (Taddei and colleagues, 2020).',
     'In a 2019 trial of 57 runners, about two months of foot exercises done at least five times a week made every measured foot muscle bigger and stronger (Ridge and colleagues, 2019).',
     'Healthy adults do a median of about 23 to 24 single-leg calf raises per leg, and 25 has been proposed as a reference for normal (Hebert-Losier and colleagues, 2017; Lunsford and Perry, 1995).',
-    'A self-guided hip, thigh and core strength program for 720 first-time marathon runners did not lower overuse injuries: 7.1% against 7.3% (Toresdahl and colleagues, 2020). Strength work alone did not prevent injuries there.',
+    'A self-guided hip, thigh and core strength program for 720 first-time marathon runners did not lower the overuse injuries that kept runners from finishing the race: 7.1% against 7.3% (Toresdahl and colleagues, 2020). Strength work alone did not prevent injuries there.',
     'Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a previous injury was one of the clearest risk factors (van Gent and colleagues, 2007).',
   ],
   sections: [
@@ -50,7 +50,7 @@ export const RUNNERS_FOOT_EXERCISES_EN: Guide = {
         '**One good trial says yes, and it is still only one trial.** In 2020, Taddei and colleagues in Brazil randomly split 118 recreational long-distance runners into a foot core group (57 runners) and a control group (61 runners). The foot core group did about two months of supervised training on the foot and ankle muscles, then kept going with remote supervision. Everyone reported their running and any injury each week for a year.',
         'Over 12 months, the control group was 2.42 times more likely to get a running injury. The difference showed up after four to eight months of training, not in the first weeks. Runners whose foot strength went up the most went longer before an injury.',
         'An earlier, smaller trial from the same team, with 28 runners, found that about two months of foot training made the small foot muscles bigger and increased push off force while running (Taddei and colleagues, 2020).',
-        'What this does not tell us: both trials come from one research group, in experienced recreational runners who were not injured at the start. Nobody has tested the program in beginners or in runners who already have pain.',
+        'What this does not tell us: both trials come from one research group, in experienced recreational runners who were not injured at the start. The trials did not include beginners or runners who already had pain, so we do not know if the results apply to them.',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med): control group 2.42 times more likely to have a running-related injury (95% CI 1.98 to 3.62), p = 0.035, single-blind RCT, 12-month follow-up. Taddei 2020 (Phys Ther Sport): proof-of-concept single-blind RCT, 28 runners, muscle volume by MRI, after about two months.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -96,7 +96,7 @@ export const RUNNERS_FOOT_EXERCISES_EN: Guide = {
         },
         {
           name: 'Double-leg calf raises',
-          evidence: { level: 'moderate', why: 'Calf endurance was lower in athletes with shin splints (Madeley 2007). Not tested as injury prevention in runners.' },
+          evidence: { level: 'early', why: 'Calf endurance was lower in athletes with shin splints (Madeley 2007). Not tested as injury prevention in runners.' },
           dose: '3 sets of 10, both feet',
           often: '2 to 3 days a week, not two days in a row',
           feel: 'Work in the calves and the balls of the feet',
@@ -226,9 +226,9 @@ export const RUNNERS_FOOT_EXERCISES_EN: Guide = {
     {
       h2: 'What foot exercises do not do',
       paragraphs: [
-        '**They do not replace sensible training.** Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a long weekly distance and a previous injury were among the clearest risk factors (van Gent and colleagues, 2007). In a Danish study of novice runners, increasing weekly distance too fast was linked to some types of injury (Nielsen and colleagues, 2014).',
-        '**Strength work is not automatic protection.** In a trial with 720 first-time New York City Marathon runners, a self-guided 10-minute program for the hips, thighs and core, three times a week for about three months, did not lower overuse injuries: 7.1% in the strength group against 7.3% in the others (Toresdahl and colleagues, 2020). That program did not train the feet, but it is a reminder that a routine on paper is not the same as a result.',
-        '**They change arch shape only a little.** In a small study, the arch sank 1.8 mm less after a month of short foot training (Mulligan and Cook, 2013). Expect a stronger, steadier foot, not a new arch. Shoes and barefoot running are a separate question, covered in [barefoot shoes](/barefoot-shoes/).',
+        '**They do not replace sensible training.** Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a long weekly distance in men and a previous injury were among the clearest risk factors (van Gent and colleagues, 2007). In a Danish study of 874 novice runners, those who raised their weekly distance by more than 30% seemed more prone to some overuse injuries, though the result fell just short of statistical significance (Nielsen and colleagues, 2014).',
+        '**Strength work is not automatic protection.** In a trial with 720 first-time New York City Marathon runners, a self-guided 10-minute program for the hips, thighs and core, three times a week for about three months, did not lower the overuse injuries that stopped runners from finishing the marathon: 7.1% in the strength group against 7.3% in the others (Toresdahl and colleagues, 2020). That program did not train the feet, but it is a reminder that a routine on paper is not the same as a result.',
+        '**They change arch shape only a little.** In a small study of 21 people without a control group, the arch sank 1.8 mm less after a month of short foot training (Mulligan and Cook, 2013). Expect a stronger, steadier foot, not a new arch. Shoes and barefoot running are a separate question, covered in [barefoot shoes](/barefoot-shoes/).',
       ],
       sourceNote: 'Toresdahl 2020: randomized, 720 enrolled, risk ratio 0.97 (95% CI 0.57 to 1.63), p = 0.90. Program targeted quadriceps, hip abductors and core; written and video instruction.',
       cites: [CITE.vanGent, CITE.nielsen, CITE.toresdahl, CITE.mulliganCook],

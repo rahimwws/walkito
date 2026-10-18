@@ -82,6 +82,8 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   retailWarehouse: 'Retail and warehouse',
   chefs: 'Chefs and kitchen staff',
   hairdressers: 'Hairdressers',
+  weightPf: 'Weight and plantar fasciitis',
+  hikers: 'Hiking and long walks',
 };
 
 /** Spanish footer labels, for the articles that exist in Spanish. */
@@ -159,6 +161,8 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   retailWarehouse: 'Comercio y almacén',
   chefs: 'Cocineros',
   hairdressers: 'Peluqueros',
+  weightPf: 'Peso y fascitis plantar',
+  hikers: 'Senderismo y caminatas largas',
 };
 
 /** Russian footer labels, for the articles that exist in Russian. */
@@ -236,17 +240,19 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
   retailWarehouse: 'Продавцы и склад',
   chefs: 'Повара',
   hairdressers: 'Парикмахеры',
+  weightPf: 'Вес и плантарный фасциит',
+  hikers: 'Походы и долгие прогулки',
 };
 
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],
-  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs', 'pfVsAchilles', 'pfVsStressFracture', 'walkingPf'],
+  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs', 'pfVsAchilles', 'pfVsStressFracture', 'walkingPf', 'weightPf'],
   foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening'],
   ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening', 'runnersFootExercises'],
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
-  work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers'],
+  work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers', 'hikers'],
   compare: ['bestApp', 'vsExakt', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
@@ -313,6 +319,8 @@ export const TOPICS: Record<Topic, readonly GuideKey[]> = {
     'retailWarehouse',
     'chefs',
     'hairdressers',
+    'weightPf',
+    'hikers',
   ],
   flat: [
     'hubFlatFeet', 'flatFeet', 'archPain', 'pttd', 'highArches', 'footStrengthening',

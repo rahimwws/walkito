@@ -55,7 +55,7 @@ export const PF_VS_ACHILLES_EN: Guide = {
             '**Insertional:** pain right where the tendon meets the back of the heel bone, often worse when shoes press there.',
           ],
         },
-        'Pain under the heel that spreads to the sides, burns or tingles, or comes with numbness points to other causes, such as a nerve, a stress fracture or the heel fat pad (Tu, 2018). [Heel pain at night](/heel-pain-at-night/) covers those.',
+        'Pain under the heel that hurts when the sides of the heel are squeezed, burns or tingles, or comes with numbness points to other causes, such as a nerve, a stress fracture or the heel fat pad (Tu, 2018). [Heel pain at night](/heel-pain-at-night/) covers those.',
       ],
       cites: [CITE.guideline, CITE.achillesGuideline, CITE.jonsson, CITE.tuHeelPain],
     },
@@ -82,7 +82,7 @@ export const PF_VS_ACHILLES_EN: Guide = {
           ['Sore to press', 'Under the heel', 'Tendon pinched at the back'],
           ['Linked to', 'Stiff ankle, weight, standing', 'Sport in 35% of cases'],
           ['Top-graded exercise', 'Stretching, grade A', 'Tendon loading, grade A'],
-          ['Stretch the calf?', 'Yes', 'Gently, if at all'],
+          ['Stretch the calf?', 'Yes, grade A', 'Optional, grade C'],
           ['Guideline', 'Koc 2023', 'Chimenti 2024'],
         ],
       },
@@ -146,14 +146,14 @@ export const PF_VS_ACHILLES_EN: Guide = {
       h2: 'Which exercises suit Achilles tendonitis?',
       keyFact: 'In a pilot study of 27 people with insertional Achilles pain, heel drops kept at floor level gave good results in 67% (Jonsson and colleagues, 2008).',
       paragraphs: [
-        '**For the Achilles, loading comes first, not stretching.** The 2024 guideline grades tendon-loading exercise **A**: heel raises, holds and slow lowering that make the tendon work (Chimenti and colleagues, 2024). Stretching was not the core of any of the tested programs.',
+        '**For the Achilles, loading comes first, not stretching.** The 2024 guideline grades tendon-loading exercise **A**: heel raises, holds and slow lowering that make the tendon work (Chimenti and colleagues, 2024). The guideline gives calf stretching a lower grade, **C**, and only for people whose ankle does not bend well (Chimenti and colleagues, 2024).',
         'Some pain is allowed. In a trial of 38 people, pain up to about 5 out of 10 during loading was fine as long as it settled by the next morning and did not build week to week, and that group did as well at twelve months as the group that rested first (Silbernagel and colleagues, 2007).',
         'If the pain is right at the heel bone (insertional), keep every heel raise and heel drop at floor level, and go easy on calf stretches. Dropping the heel below a step presses the tendon against the bone. In a pilot study of 27 people, floor-level heel drops gave good results in 67% (Jonsson and colleagues, 2008). More detail in [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
       ],
       exercises: [
         {
           name: 'Heel raise hold',
-          evidence: { level: 'moderate', why: 'The 2024 Achilles guideline includes isometric loading. No Achilles trial has tested holds on their own.' },
+          evidence: { level: 'moderate', why: 'The 2024 Achilles guideline includes isometric loading. No randomised trial has tested holds on their own as a full program.' },
           dose: '3 holds of 20 seconds, both feet',
           often: 'Strength days, or most days while the tendon is irritable',
           feel: 'The calves working to stay still',
@@ -166,7 +166,7 @@ export const PF_VS_ACHILLES_EN: Guide = {
         },
         {
           name: 'Eccentric heel drops (straight knee)',
-          evidence: { level: 'strong', why: 'The original Alfredson protocol for midportion pain; the 2024 guideline grades exercise A.' },
+          evidence: { level: 'strong', why: 'Based on the Alfredson protocol for midportion pain (3 x 15, twice daily); Walkito starts at 3 x 10. The 2024 guideline grades exercise A.' },
           dose: '3 sets of 10, each leg',
           often: 'Strength days',
           feel: 'Hard work in the calf during the lowering, not a stretch at the bottom',
@@ -210,10 +210,10 @@ export const PF_VS_ACHILLES_EN: Guide = {
       h2: 'How long does each take to get better?',
       paragraphs: [
         'For plantar fasciitis, about 90% of people get better with non-surgical care, though it often takes months (Latt and colleagues, 2020). [How long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/) has the detail.',
-        'For Achilles tendinopathy, the core loading trials ran for about three months and followed people to twelve months. The 2024 guideline notes function can start to improve within 2 weeks, but fuller recovery takes longer (Chimenti and colleagues, 2024). Insertional pain tends to take longer than midportion pain.',
+        'For Achilles tendinopathy, the core loading trials ran for about three months and followed people to twelve months. The 2024 guideline notes function can start to improve within 2 weeks, but fuller recovery takes longer (Chimenti and colleagues, 2024). Insertional pain has been harder to help with the classic heel drops below a step: only 32% had good results in an earlier study, which is why floor-level drops are used (Jonsson and colleagues, 2008).',
         'No study has compared recovery time for the two head to head.',
       ],
-      cites: [CITE.latt, CITE.achillesGuideline],
+      cites: [CITE.latt, CITE.achillesGuideline, CITE.jonsson],
     },
   ],
   faq: [
@@ -235,7 +235,7 @@ export const PF_VS_ACHILLES_EN: Guide = {
     {
       q: 'Should I stretch my calf for Achilles tendonitis?',
       cites: [CITE.achillesGuideline, CITE.jonsson],
-      a: 'Gently, if at all. The 2024 Achilles guideline puts tendon-loading exercise first, graded A, and stretching was not the core of the tested programs. If your pain is right at the heel bone, deep calf stretches and heel drops below a step press the tendon against the bone, so keep them gentle and at floor level.',
+      a: 'It is optional. The 2024 Achilles guideline puts tendon-loading exercise first, graded A, and gives calf stretching a C, for people whose ankle does not bend well. If your pain is right at the heel bone, deep calf stretches and heel drops below a step press the tendon against the bone, so keep them gentle and at floor level.',
     },
     {
       q: 'Are the exercises for plantar fasciitis and Achilles tendonitis the same?',

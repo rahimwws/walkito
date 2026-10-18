@@ -24,7 +24,7 @@ export const CHEFS_EN: Guide = {
     'Why chefs’ feet hurt on hard, wet kitchen floors: what slip-resistant shoe studies found, clogs vs sneakers, mats, and short exercises that fit a shift.',
   h1: 'Foot pain for chefs and restaurant workers: what helps on long kitchen shifts',
   lede:
-    'Chef foot pain mostly comes from long hours standing and walking on hard kitchen floors, and the options with the best evidence are calf and plantar fascia stretches, which the 2023 heel pain guideline grades **A**, and calf strength work, graded **B** (Koc and colleagues, 2023). Slip-resistant shoes are about safety, not pain: in a randomized trial across 226 school districts, giving food service workers slip-resistant shoes at no cost lowered slipping injury claims from 3.54 to 1.18 per 10,000 worker-months (Bell and colleagues, 2019). No study has tested whether clogs or any kitchen shoe reduce foot pain itself.',
+    'Chef foot pain often comes from long hours standing and walking on hard kitchen floors, and for heel pain the options with the best evidence are calf and plantar fascia stretches, which the 2023 heel pain guideline grades **A**, and calf strength work, graded **B** (Koc and colleagues, 2023). Slip-resistant shoes are about safety, not pain: in a randomized trial across 226 school districts, giving food service workers slip-resistant shoes at no cost lowered slipping injury claims from 3.54 to 1.18 per 10,000 worker-months (Bell and colleagues, 2019). No study has tested whether clogs or any kitchen shoe reduce foot pain itself.',
   intro: [
     'This page is about the kitchen side of the problem: hard, wet and greasy floors, rushing during service, and shoes chosen for grip. For foot pain from standing in any job, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For hospital shifts, see [foot pain for nurses](/nurses-foot-pain/). If your heel is sharpest on the first steps after rest, that pattern points to [plantar fasciitis](/plantar-fasciitis/).',
   ],
@@ -83,7 +83,7 @@ export const CHEFS_EN: Guide = {
           ['Clogs vs sneakers', 'Not tested for pain', 'None found'],
           ['Insoles alone', 'Heel pain', 'Graded B against'],
           ['Anti-fatigue mats', 'Standing discomfort', 'Some, not in kitchens'],
-          ['Compression socks', 'Leg discomfort, swelling', 'One small trial'],
+          ['Compression socks', 'Leg discomfort, swelling', 'Small trials, not in kitchens'],
           ['Calf and fascia stretches', 'Heel pain', 'Graded A'],
         ],
       },
@@ -97,7 +97,7 @@ export const CHEFS_EN: Guide = {
       paragraphs: [
         'In the US restaurant study, most slips happened by the **sink and the fryer**, the areas workers also rated most slippery, and liquid or grease was on the floor in over 70% of slips (Verma and colleagues, 2010).',
         'A second analysis of the same workers looked at the moment of each slip. The rate of slipping was 14.6 times higher while walking on a contaminated floor, 2.9 times higher while rushing and 1.7 times higher while distracted. Slip-resistant shoes reduced the effect of rushing and of a dirty floor (Verma and colleagues, 2011).',
-        'Who pays for the shoes matters too. Where the employer provided slip-resistant shoes, 91% of workers wore them. Where they were neither provided nor encouraged, 53.5% did (Verma and colleagues, 2010). If your kitchen has a shoe program, it is worth using.',
+        'Whether the employer provides the shoes matters too. Where the employer provided slip-resistant shoes, 91% of workers wore them. Where they were neither provided nor encouraged, 53.5% did (Verma and colleagues, 2010). If your kitchen has a shoe program, it is worth using.',
       ],
       cites: [CITE.vermaSlipExperience, CITE.vermaRushing],
     },
@@ -105,7 +105,7 @@ export const CHEFS_EN: Guide = {
       h2: 'Do anti-fatigue mats and compression socks help in a kitchen?',
       paragraphs: [
         'A 2015 review of research on standing at work lists floor mats, compression stockings and supportive footwear among the options with some evidence for less discomfort and fatigue (Waters and Dick, 2015). None of that research was done in kitchens. A mat at a station where you stand for long periods, like the pass or a prep table, is a reasonable thing to try. Choose one that lies flat and stays put on a wet floor, so it does not become a trip hazard of its own.',
-        'Compression stockings have one small randomized trial behind them. In 40 security guards standing roughly 12-hour shifts, both 15 to 20 mmHg and 20 to 30 mmHg stockings avoided the rise in leg discomfort and swelling seen with regular socks (Garcia and colleagues, 2023). The guards were all men and none were cooks, so read this as a likely fit, not proof for kitchens.',
+        'Compression stockings have not been tested in kitchens. In a small randomized trial of 40 security guards standing roughly 12-hour shifts, both 15 to 20 mmHg and 20 to 30 mmHg stockings avoided the rise in leg discomfort and swelling seen with regular socks (Garcia and colleagues, 2023). The guards were all men and none were cooks, so read this as a likely fit, not proof for kitchens.',
         '**Mats and socks help with comfort during a shift. They do not replace the stretching and strength work** that the heel pain guideline grades highest.',
       ],
       cites: [CITE.waters, CITE.garcia, CITE.guideline],
@@ -115,7 +115,7 @@ export const CHEFS_EN: Guide = {
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises are the ones from the [plantar fasciitis guide](/plantar-fasciitis-exercises/), at the same starting doses. The stretches need only a wall or a chair, so they fit in a break, before service or after you change out of your work shoes. Keep the strength work for days off or after a shift.',
-        'The guideline grades are for plantar fasciitis, but the tissues are the same ones a kitchen shift loads all day. If an exercise takes your pain to 6 out of 10 or higher, stop for the day.',
+        'The guideline grades are for plantar fasciitis and were not tested in kitchen workers, but the tissues are the same ones a kitchen shift loads all day. If an exercise takes your pain to 6 out of 10 or higher, stop for the day.',
       ],
       exercises: [
         {
@@ -235,7 +235,7 @@ export const CHEFS_EN: Guide = {
     {
       q: 'How often should kitchen shoes be replaced?',
       cites: [CITE.vermaShoeAge],
-      a: 'There is no tested rule. In a study of 475 restaurant workers, slip-resistant shoes worn under six months were moderately more effective against slips than older ones, and workers who switched to a new pair slipped 55% less often afterwards. Check the tread, and replace shoes once the pattern on the sole is worn smooth.',
+      a: 'There is no tested rule. In a study of 475 restaurant workers, slip-resistant shoes worn under six months were moderately more effective against slips than older ones, and slip-resistant shoe wearers who switched to a new pair slipped 55% less often. Check the tread, and replace shoes once the pattern on the sole is worn smooth.',
     },
     {
       q: 'Do anti-fatigue mats help kitchen workers?',

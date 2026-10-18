@@ -36,7 +36,7 @@ export const TEACHERS_EN: Guide = {
   takeaways: [
     'In a 2024 review of 44 studies and 15,972 teachers, pain in the ankle region (mostly counted with the foot) was pooled at 30% across 27 studies, below the neck and lower back at 47% each. Results varied widely between studies (Tahernejad and colleagues, 2024).',
     'In one survey of 1,439 teachers in a single Saudi region, 85.5% reported foot pain in the past 12 months, and it was more common in teachers with 16 or more lessons a week (Alqahtani, 2020). Other surveys found much lower figures, so read it as one region’s result.',
-    'We found no study that measured how many hours a typical teacher stands. In a study of 50 cases and 100 controls, standing for most of the working day raised the odds of plantar fasciitis 3.6 times, and a tight calf raised them 23.3 times (Riddle and colleagues, 2003).',
+    'We found no study that measured how many hours a typical teacher stands. In a study of 50 cases and 100 controls, standing for most of the working day raised the odds of plantar fasciitis 3.6 times, and very limited ankle flexibility, usually from a tight calf, raised them 23.3 times (Riddle and colleagues, 2003).',
     'The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Insoles on their own get a **B against** (Koc and colleagues, 2023).',
     'In 50 people with heel pain and 25 without, those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels. That is a link, not proof of cause (Landorf and colleagues, 2023).',
   ],
@@ -160,8 +160,8 @@ export const TEACHERS_EN: Guide = {
         caption: 'One way to spread the exercises over a school day',
         head: ['When', 'What', 'Time'],
         rows: [
-          ['Before you get up', 'Plantar fascia stretch', '1 minute'],
-          ['Before the first bell', 'Calf and soleus stretch at a wall', '2 minutes'],
+          ['Before you get up', 'Plantar fascia stretch', '2 minutes'],
+          ['Before the first bell', 'Calf and soleus stretch at a wall', '4 minutes'],
           ['While students work', 'Sit; seated heel raises', '1 to 2 minutes'],
           ['Passing period', 'Calf stretch, one side each break', '1 minute'],
           ['After school', 'Heel raises on both feet, foot roll', '2 to 3 minutes'],
@@ -177,7 +177,7 @@ export const TEACHERS_EN: Guide = {
       h2: 'What are the best shoes for teachers on their feet all day?',
       paragraphs: [
         '**No study has compared shoes for teachers, and no trial picks one brand or style.** The 2023 heel pain guideline does not grade shoe types. What evidence there is points to cushioning under the heel and to fit.',
-        'In a 2023 study, 50 people with plantar heel pain were compared with 25 matched people without it. Those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels (Landorf and colleagues, 2023). That shows a link, not that soft heels prevent pain, but it supports a shoe with a cushioned heel for long days at the board.',
+        'In a 2023 study, 50 people with plantar heel pain were compared with 25 matched people without it. Those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels. Shoe style, heel height and standing on hard floors did not differ between the groups (Landorf and colleagues, 2023). That shows a link, not that soft heels prevent pain, but it supports a shoe with a cushioned heel for long days at the board.',
         'A practical checklist, based on fit and comfort rather than a trial:',
         {
           list: [
@@ -204,7 +204,7 @@ export const TEACHERS_EN: Guide = {
     },
     {
       h2: 'When is a teacher’s heel pain plantar fasciitis?',
-      keyFact: 'Of the teachers with foot pain in one survey, 25.8% said it came early in the morning and after rest, the typical plantar fasciitis pattern (Alqahtani, 2020).',
+      keyFact: 'Of the teachers with foot pain in one survey, 25.8% said it came early in the morning and after rest, a pattern typical of plantar fasciitis, though the survey diagnosed no one (Alqahtani, 2020).',
       paragraphs: [
         'General aching at the end of a school day that is gone by the next morning is standing fatigue. **Plantar fasciitis has a typical pattern: sharp pain under the heel on the first steps in the morning or after you have been sitting, that eases as you walk, then comes back after a long day on your feet.** In the Saudi survey, 25.8% of teachers with foot pain said it came early in the morning and after rest (Alqahtani, 2020). That survey did not diagnose anyone, so it is a pattern, not a count of plantar fasciitis.',
         'If that sounds like you, start with [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/). About 90% of people with plantar fasciitis get better with non-surgical care, though it can take three to six months (Latt and colleagues, 2020). [How long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/) has the details.',
@@ -246,7 +246,7 @@ export const TEACHERS_EN: Guide = {
     {
       q: 'Can standing all day as a teacher cause plantar fasciitis?',
       cites: [CITE.riddle],
-      a: 'It can raise the risk. In a 2003 study of 50 people with plantar fasciitis and 100 without, standing for most of the working day raised the odds 3.6 times, and a tight calf raised them 23.3 times. The study did not look at teachers, and no study has counted plantar fasciitis in teachers specifically.',
+      a: 'It can raise the risk. In a 2003 study of 50 people with plantar fasciitis and 100 without, standing for most of the working day raised the odds 3.6 times, and very limited ankle flexibility, usually from a tight calf, raised them 23.3 times. The study did not look at teachers, and no study has counted plantar fasciitis in teachers specifically.',
     },
     {
       q: 'Do anti-fatigue mats help teachers?',

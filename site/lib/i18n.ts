@@ -486,6 +486,8 @@ export const EN_ONLY = {
   retailWarehouse: '/retail-warehouse-foot-pain/',
   chefs: '/chefs-foot-pain/',
   hairdressers: '/hairdressers-foot-pain/',
+  weightPf: '/weight-and-plantar-fasciitis/',
+  hikers: '/hiking-foot-pain/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -579,6 +581,8 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   retailWarehouse: '/es/dolor-de-pies-comercio-y-almacen/',
   chefs: '/es/dolor-de-pies-cocineros/',
   hairdressers: '/es/dolor-de-pies-peluqueros/',
+  weightPf: '/es/peso-y-fascitis-plantar/',
+  hikers: '/es/dolor-de-pies-senderismo/',
 };
 
 /**
@@ -669,6 +673,8 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   retailWarehouse: '/ru/bol-v-stopakh-prodavtsy-i-sklad/',
   chefs: '/ru/bol-v-stopakh-u-povarov/',
   hairdressers: '/ru/bol-v-stopakh-u-parikmakherov/',
+  weightPf: '/ru/ves-i-plantarnyy-fastsiit/',
+  hikers: '/ru/bol-v-stopakh-posle-pokhoda/',
 };
 
 /**

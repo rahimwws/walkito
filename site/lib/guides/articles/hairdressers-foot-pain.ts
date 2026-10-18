@@ -25,7 +25,7 @@ export const HAIRDRESSERS_EN: Guide = {
     'Why hairdressers’ feet hurt from standing in one spot, what studies found, which shoes, mats and stools help, and short exercises between clients.',
   h1: 'Hairdresser foot pain: what helps when you stand in one spot all day',
   lede:
-    'Hairdresser foot pain mostly comes from standing still at the chair for hours, not from walking, so the things that help are the ones that break up static standing: a cushioned floor or shoe, low-strength compression stockings, and a minute of calf work between clients. In a study of 384 hairdressers and 384 people in other jobs, 49.5% of hairdressers reported knee or foot pain, against 38.3% of the comparison group (Mishra and Sarkar, 2021).',
+    'Hairdresser foot pain mostly comes from standing still at the chair for hours, not from walking, so the options with some evidence target static standing: a cushioned floor or shoe, low-strength compression stockings, and a minute of calf work between clients. In a study of 384 hairdressers and 384 people in other jobs, 49.5% of hairdressers reported knee or foot pain, against 38.3% of the comparison group (Mishra and Sarkar, 2021).',
   intro: [
     'Research on hairdressers mostly looks at shoulders, neck, wrists and back. Feet get much less attention, and this page says where the data is thin. It covers what is known about hairdressers’ feet and legs, the standing evidence that applies to salon work, and how to fit exercise into the gaps between clients. For general standing pain, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). For shift work with a lot of walking, see [foot pain for nurses](/nurses-foot-pain/).',
   ],
@@ -61,7 +61,7 @@ export const HAIRDRESSERS_EN: Guide = {
             'The heel pad and the plantar fascia, the band under the arch, carry a steady load with no break.',
           ],
         },
-        'Lab studies show how fast this builds. A 2017 review of 25 laboratory studies found low-back symptoms became clinically relevant after about 71 minutes of standing in most people, and after 42 minutes in people prone to standing pain. A single colour or cut can take longer than that. A 2015 review of standing at work linked prolonged standing to leg pain, swelling and fatigue across many jobs.',
+        'Lab studies show how fast this builds. A 2017 review of 25 laboratory studies found low-back symptoms became clinically relevant after about 71 minutes of standing on average, and after 42 minutes in people prone to standing pain. A single colour or cut can take longer than that. A 2015 review of standing at work linked prolonged standing to low back and leg pain, discomfort and fatigue across many jobs.',
         'In a 2023 study of Turkish hairdressers, those who reported lower-leg fatigue also had more pain in the knees and lower legs and worse scores for energy and mobility. **The swelling side is measurable too:** in 38 hairdressers, ankle size grew from 21.1 cm in the morning to 22.1 cm by the end of a day without compression.',
       ],
       cites: [CITE.coenen, CITE.waters, CITE.inceParpucuHairdressers, CITE.agleHosiery],
@@ -69,8 +69,8 @@ export const HAIRDRESSERS_EN: Guide = {
     {
       h2: 'Does posture at the chair affect your feet?',
       paragraphs: [
-        'Studies of hairdressers’ posture focus on the back and arms, not the feet. A scoping review reported that hairdressers often bend forward or twist while cutting and washing, and that cutting kept the spine bent forward for 66% of the task time in one measurement study. Leaning in for a long time moves your weight toward the front of the foot.',
-        'No study has measured how salon posture changes the load on hairdressers’ feet. What you can control is simple: raise or lower the client’s chair so you are not leaning, keep your weight on both feet, and shift your stance every few minutes. In a lab study of four hours of standing, people who shifted their weight more also reported more discomfort, so shifting is a sign of tired feet, and a cue to take a short break (Wiggermann and Keyserling, 2013).',
+        'Studies of hairdressers’ posture focus on the back and arms, not the feet. A scoping review reported that hairdressers often bend forward or twist while cutting and washing, and that cutting kept the spine bent forward for 66% of the task time in one measurement study. Leaning in for a long time tends to shift your weight toward the front of the foot.',
+        'No study has measured how salon posture changes the load on hairdressers’ feet. What you can control is simple: raise or lower the client’s chair so you are not leaning, keep your weight on both feet, and shift your stance every few minutes. In a lab study of four hours of standing, people who shifted their weight more also reported more discomfort, so frequent shifting can be a sign that discomfort is building, and a reasonable cue for a short break (Wiggermann and Keyserling, 2013).',
         'If your feet hurt with your back, the connection runs both ways. [Flat feet and back pain](/flat-feet-back-pain/) covers what the research says.',
       ],
       cites: [CITE.kozakHairdressing, CITE.wiggermannMats],
@@ -88,7 +88,7 @@ export const HAIRDRESSERS_EN: Guide = {
             'A grippy sole. Salon floors get wet and slippery.',
           ],
         },
-        'Changing shoes halfway through a long day can help, because a different shoe spreads the load differently. If you already have heel or arch pain, insoles can make the day more comfortable, but they work on comfort, not on the calf and arch themselves. [Insoles vs exercises](/insoles-vs-exercises/) compares the two.',
+        'Some people change shoes halfway through a long day. No study has tested this, but a different shoe spreads the load differently. If you already have heel or arch pain, insoles can make the day more comfortable, but they work on comfort, not on the calf and arch themselves. [Insoles vs exercises](/insoles-vs-exercises/) compares the two.',
       ],
       cites: [CITE.speedCushioning],
     },
@@ -157,7 +157,7 @@ export const HAIRDRESSERS_EN: Guide = {
         },
         {
           name: 'Ankle rocks',
-          evidence: { level: 'moderate', why: 'Targets ankle flexibility, the strongest risk factor for plantar fasciitis in a 2003 case-control study. Not tested on its own in a trial.' },
+          evidence: { level: 'early', why: 'Targets ankle flexibility, the strongest risk factor for plantar fasciitis in a 2003 case-control study. Not tested on its own in a trial.' },
           dose: '2 sets of 15, each leg',
           how: 'Split stance, hands on a wall. Rock the front knee forward over the toes while the heel stays flat. Go slowly, about two seconds each way. It moves the ankle after a long stretch of standing still.',
           media: 'ankle_rocks',
@@ -258,7 +258,7 @@ export const HAIRDRESSERS_EN: Guide = {
     },
     {
       q: 'How long can a hairdresser stand before taking a break?',
-      a: 'There is no tested limit for hairdressers. In a review of lab studies, low-back symptoms became clinically relevant after about 71 minutes of standing in most people and after 42 minutes in people prone to standing pain. Breaking long services with a short stretch, a few heel raises or a minute on a stool is a reasonable approach.',
+      a: 'There is no tested limit for hairdressers. In a review of lab studies, low-back symptoms became clinically relevant after about 71 minutes of standing on average and after 42 minutes in people prone to standing pain. Breaking long services with a short stretch, a few heel raises or a minute on a stool is a reasonable approach.',
       cites: [CITE.coenen],
     },
   ],

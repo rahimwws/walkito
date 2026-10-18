@@ -33,16 +33,16 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
     'Foot pain in warehouse and retail jobs: what studies say about concrete floors, safety boots, mats and insoles, plus 3-minute exercises for breaks.',
   h1: 'Foot pain for retail and warehouse workers: what helps on hard floors',
   lede:
-    'Warehouse and retail feet hurt because hours of standing and walking on hard floors load the heel, arch and calf with little give underneath. Standing for most of the working day raised the odds of [plantar fasciitis](/plantar-fasciitis/) 3.6 times in one study (Riddle and colleagues, 2003). Calf and plantar fascia stretches carry the top grade, **A**, in the 2023 heel pain guideline, and they take about 3 minutes on a break. Mats and cushioned insoles help comfort, but the evidence for them is thinner (Speed and colleagues, 2018).',
+    'Warehouse and retail feet hurt because hours of standing and walking on hard floors load the heel, arch and calf with little give underneath. Standing for most of the working day raised the odds of [plantar fasciitis](/plantar-fasciitis/) 3.6 times in one study (Riddle and colleagues, 2003). Calf and plantar fascia stretches carry the top grade, **A**, in the 2023 heel pain guideline, and a short version fits in about 3 minutes on a break. Mats and cushioned insoles help comfort, but the evidence for them is thinner (Speed and colleagues, 2018).',
   intro: [
     'This page is about the job itself: concrete and tile floors, safety boots, long shifts and short breaks. For standing pain in general, see [why do my feet hurt after standing all day](/feet-hurt-standing-all-day/). If you work on a hospital floor, [foot pain for nurses](/nurses-foot-pain/) covers 12-hour shifts and rotating schedules.',
   ],
   toc: true,
   takeaways: [
-    'Spending most of the workday on your feet raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. A tight calf raised them 23.3 times (Riddle and colleagues, 2003).',
+    'Spending most of the workday on your feet raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. Very limited ankle flexibility, usually from a tight calf, raised them 23.3 times (Riddle and colleagues, 2003).',
     'The 2023 heel pain guideline keeps a grade **B** recommendation: clinicians should check for work-related weight-bearing, particularly on surfaces with poor shock absorption, as a risk factor for heel pain (Koc and colleagues, 2023).',
     'A review of 10 studies found moderate evidence that mats and cushioned insoles reduce discomfort and fatigue in standing workers, and only limited evidence that insoles beat mats (Speed and colleagues, 2018).',
-    'Across 7 studies of workers in safety footwear, foot pain was reported by 42.3% to 60.8%, with heat, sweating, weight and stiffness the main complaints (Arceri and colleagues, 2024).',
+    'In a review of 7 studies of workers in safety footwear, the 4 that measured pain found foot pain in 42.3% to 60.8% of workers, with heat, sweating, weight and stiffness the main complaints (Arceri and colleagues, 2024).',
     'Calf and plantar fascia stretching get the guideline’s top grade, **A**, and strength work a **B**. Insoles on their own get a **B against** for heel pain (Koc and colleagues, 2023).',
   ],
   sections: [
@@ -52,7 +52,7 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
       paragraphs: [
         'Retail and warehouse work mixes two loads. On a till or a packing station you stand still for long stretches. On the floor or picking orders you walk, carry, push carts and turn. Both keep weight on the heel and arch for most of the shift, and break times are set by the rota, not by when your feet need them.',
         'A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that spending most of the workday weight-bearing raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility, a [tight calf](/tight-calves/), was the strongest factor, at 23.3 times the odds. **A tight calf is something you can work on. The job usually is not.**',
-        'A systematic review of 16 studies on chronic heel pain found some evidence of a link with prolonged standing, alongside higher body weight, age and reduced ankle flexibility. The studies were mostly cross-sectional, so they show an association, not proof that standing causes heel pain (Irving and colleagues, 2006).',
+        'A systematic review of 16 studies on chronic heel pain found some evidence of a link with prolonged standing, alongside higher body weight, age and reduced ankle flexibility. The authors called for studies that follow people over time, so this shows an association, not proof that standing causes heel pain (Irving and colleagues, 2006).',
         'How far do you walk? We found no published study that counts steps per shift for warehouse or retail workers. Figures like "12 miles a shift" appear on industry blogs without a study behind them. The closest measured number is from nurses: an average of 9,360 steps per shift in a tracker study (Chang and Cho, 2022).',
       ],
       cites: [CITE.riddle, CITE.irvingHeelPain, CITE.changCho],
@@ -71,18 +71,18 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
       h2: 'Do anti-fatigue mats or insoles help more?',
       keyFact: 'A 10-study review found moderate evidence that cushioning reduces discomfort in standing workers, and limited evidence that insoles beat mats (Speed and colleagues, 2018).',
       paragraphs: [
-        '**Both help comfort about the same, and neither has strong evidence.** A 2018 systematic review found 10 studies of mats and cushioned insoles in people who stand for work. It rated the evidence moderate that cushioning reduces discomfort and fatigue, and limited that insoles do better than mats. Most studies were small, and the authors called for larger trials in real workplaces.',
+        '**Both help comfort, with no clear winner, and neither has strong evidence.** A 2018 systematic review found 10 studies of mats and cushioned insoles in people who stand for work. It rated the evidence moderate that cushioning reduces discomfort and fatigue, and limited that insoles do better than mats. The studies differed a lot in design, and the authors called for larger trials in real workplaces.',
         'In one workplace study, assembly workers spent one week of 8-hour days in each of four conditions: hard floor, a mat, insoles, and insoles on a mat. The mat, the insoles and the combination were all more comfortable than the hard floor, and there was no clear difference between them (King, 2002).',
-        'In a 4-hour lab test, three of four commercial anti-fatigue mats reduced discomfort compared with a hard floor, but no mat beat the others (Wiggermann and Keyserling, 2013). So a pricier mat is not proven to be better.',
+        'In a 4-hour lab test, three of four commercial anti-fatigue mats reduced discomfort compared with a hard floor, but no mat beat the others (Wiggermann and Keyserling, 2013). So no one mat has been shown to be better than the others.',
         'The practical split: **a mat only helps where you stand still**, such as a till, a pack bench or a workstation. If you walk the floor or pick orders, the cushioning has to travel with you, in the shoe. For heel pain specifically, the 2023 guideline grades insoles on their own **B against**, so do not rely on them alone. [Insoles or exercises](/insoles-vs-exercises/) compares the two, and [best insoles for plantar fasciitis](/best-insoles-for-plantar-fasciitis/) covers the types.',
       ],
       cites: [CITE.speedCushioning, CITE.kingMats, CITE.wiggermannMats, CITE.guideline],
     },
     {
       h2: 'Do safety boots cause foot pain?',
-      keyFact: 'In 7 studies of workers in safety footwear, foot pain prevalence ranged from 42.3% to 60.8% (Arceri and colleagues, 2024).',
+      keyFact: 'In a review of 7 studies of workers in safety footwear, the 4 that measured pain found foot pain in 42.3% to 60.8% of workers (Arceri and colleagues, 2024).',
       paragraphs: [
-        'Safety boots protect your feet, and they also come with complaints. A 2024 systematic review found 7 studies of workers in safety footwear. Every study reported discomfort and pain, with foot pain in 42.3% to 60.8% of workers depending on the area of the foot. The main complaints were heat, sweating, weight and a stiff sole, mostly around the toes and toecap.',
+        'Safety boots protect your feet, and they also come with complaints. A 2024 systematic review found 7 studies of workers in safety footwear. Every study reported discomfort and pain, and the 4 studies that measured pain found foot pain in 42.3% to 60.8% of workers. The main complaints were heat, sweating, weight and a stiff sole, mostly around the toes and toecap.',
         'In a study of 509 workers in 12 metal-working factories, all wearing safety footwear every day, 81% had at least one foot problem. Their most common complaints about the shoes were hot and wet conditions inside (42%), weight (27.5%) and fit (22.9%) (Mancuso and colleagues, 2017).',
         'These are surveys, so they cannot say the boots cause the pain: long hours on hard floors would hurt in any shoe. The review’s suggestions are practical:',
         {
@@ -192,7 +192,7 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
         'Most retail and warehouse breaks are short and set by the rota. A laboratory review found that symptoms from uninterrupted standing became clinically relevant after about 42 minutes in people prone to standing pain, and its authors suggested not standing still for more than about 40 minutes (Coenen and colleagues, 2017). You often cannot choose when to sit, but you can change position: walk to the end of the aisle, shift your weight, or do one calf stretch at a rack.',
         {
           list: [
-            '**3 minutes, on a break:** the calf stretch and the soleus stretch, 30 seconds each, each leg. That targets the tight calf, the strongest risk factor in the 2003 study.',
+            '**3 minutes, on a break:** the calf stretch, 2 holds of 30 seconds each leg, plus one 30-second soleus hold each leg. That targets the tight calf, the strongest risk factor in the 2003 study.',
             '**5 minutes, on a longer break or at the end of the shift:** add ankle rocks, or the plantar fascia stretch once your boots are off.',
             '**10 minutes, on a day off:** add heel raises (3 sets of 10) and the foot roll. That covers the strength side, graded **B**.',
           ],
@@ -213,7 +213,7 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
           ['Calf and fascia stretches', '2023 guideline', 'Grade A for heel pain', 'Strong'],
           ['Calf strength work', '2023 guideline', 'Grade B for heel pain', 'Moderate'],
           ['Anti-fatigue mat', 'Review of 10 studies', 'Less discomfort', 'Moderate, comfort only'],
-          ['Cushioned insoles', 'Same review', 'Similar to a mat', 'Limited'],
+          ['Cushioned insoles', 'Same review', 'Less discomfort, similar to a mat', 'Moderate, comfort only'],
           ['Insoles alone for heel pain', '2023 guideline', 'B against', 'Leans against'],
           ['Compression stockings', 'Trial of 40 guards', 'No rise in discomfort', 'One small trial'],
           ['Better-fitting safety boots', 'Review of 7 studies', 'Fit, weight, heat matter', 'Surveys only'],
@@ -258,12 +258,12 @@ export const RETAIL_WAREHOUSE_EN: Guide = {
     {
       q: 'Can safety boots cause plantar fasciitis?',
       cites: [CITE.arceriSafety, CITE.guideline],
-      a: 'No study shows safety boots cause plantar fasciitis. A review of 7 studies found foot pain in 42.3% to 60.8% of workers in safety footwear, with heat, weight and stiffness the main complaints. Hours on hard floors matter too, whatever the boot. A good fit and the lightest approved boot are reasonable first steps.',
+      a: 'No study shows safety boots cause plantar fasciitis. A review of 7 studies of workers in safety footwear found foot pain in 42.3% to 60.8% of workers in the 4 that measured it, with heat, weight and stiffness the main complaints. Hours on hard floors matter too, whatever the boot. A good fit and the lightest approved boot are reasonable first steps.',
     },
     {
       q: 'What stretches can I do on a break at work?',
       cites: [CITE.guideline],
-      a: 'The calf stretch and the soleus stretch work standing up against a wall or rack, in work boots, in about 2 minutes: two holds of 30 seconds each, each leg. The 2023 heel pain guideline grades calf stretching A. Save the plantar fascia stretch and heel raises for after the shift or days off.',
+      a: 'The calf stretch and the soleus stretch work standing up against a wall or rack, in work boots: two holds of 30 seconds each, each leg, about 4 minutes for both stretches. The 2023 heel pain guideline grades calf stretching A. Save the plantar fascia stretch and heel raises for after the shift or days off.',
     },
     {
       q: 'Is it normal for my feet to hurt after a retail shift?',

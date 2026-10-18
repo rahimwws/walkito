@@ -7,7 +7,7 @@ import type { Guide } from '../types';
  * pain in general, heel-pain-after-walking.ts the after-walking pattern,
  * hub-plantar-fasciitis.ts the condition. This page is the side-by-side.
  * Numbers: Sormaala 2006 (30 recruits, 34 calcaneal stress injuries on MRI,
- * only 15% visible on plain X-ray, 22 of 30 with other tarsal bones involved,
+ * only 15% visible on plain X-ray, 22 of 34 injuries with other tarsal bones involved,
  * 19 of 34 posterior). Wright 2016 systematic review (X-ray sensitivity 12%
  * to 56%, MRI 68% to 99%). Patel 2011 AFP (initial X-ray sensitivity 10%,
  * 30 to 70% after three weeks; runners over 25 miles a week; pain with
@@ -60,7 +60,7 @@ export const PF_VS_STRESS_FRACTURE_EN: Guide = {
         rows: [
           ['Worst time', 'First steps after rest', 'During and after activity'],
           ['After a few minutes of walking', 'Usually eases', 'Builds'],
-          ['Where it hurts', 'Inside front of the heel', 'Across the heel bone, often the back half'],
+          ['Where it hurts', 'Under the heel, inner side', 'Across the heel bone, often the back half'],
           ['Squeezing the sides of the heel', 'Usually not painful', 'Often painful'],
           ['Swelling', 'Not a usual sign', 'Sometimes'],
           ['Usual trigger', 'Long hours standing, tight calves', 'A jump in training or a harder surface'],
@@ -82,7 +82,7 @@ export const PF_VS_STRESS_FRACTURE_EN: Guide = {
           list: [
             '**Nobody has measured how accurate it is for the heel.** We found no study that reports how often the squeeze test is positive in people with a confirmed calcaneal stress fracture, or how often it is positive without one. The same review that covers stress fractures notes that the hop test, another common bedside test, has not been validated either (Patel and colleagues, 2011).',
             '**A negative squeeze does not rule out a fracture.** Some heel stress injuries sit toward the front or the middle of the bone: in one MRI study, 15 of 34 were not in the back part (Sormaala and colleagues, 2006).',
-            '**Other things hurt on squeezing too.** In children and young teens, a painful squeeze is the usual sign of [Sever’s disease](/severs-disease/), an irritated growth plate (Tu, 2018). Bone cysts and other heel bone problems can also hurt.',
+            '**Other things hurt on squeezing too.** In children and young teens, a painful squeeze is a common sign of [Sever’s disease](/severs-disease/), an irritated growth plate (Tu, 2018). Other heel bone problems can also hurt, so a clinician needs to check.',
           ],
         },
         'If you press the sides of your own heel and it hurts, take that as a reason to get it checked, not as a diagnosis. Do not hop on the foot to test it.',
@@ -103,7 +103,7 @@ export const PF_VS_STRESS_FRACTURE_EN: Guide = {
             '**Being a woman.** Women are at higher risk than men, especially in military training, though data in female athletes are mixed (Patel and colleagues, 2011).',
           ],
         },
-        'Plantar fasciitis has a different risk profile. In a study of 50 people with it and 100 without, reduced ankle bend (dorsiflexion) raised the odds 23.3 times, and standing for most of the working day 3.6 times (Riddle and colleagues, 2003).',
+        'Plantar fasciitis has a different risk profile. In a study of 50 people with it and 100 without, people with 0 degrees of ankle bend (dorsiflexion) or less had 23.3 times the odds of those with more than 10 degrees, and standing for most of the working day raised the odds 3.6 times (Riddle and colleagues, 2003).',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain, CITE.wardenBSI, CITE.mountjoyREDs, CITE.riddle],
     },
@@ -112,8 +112,8 @@ export const PF_VS_STRESS_FRACTURE_EN: Guide = {
       keyFact: 'In 30 military recruits whose MRI showed a heel stress injury, the injury was visible on plain X-ray in only 15% (Sormaala and colleagues, 2006).',
       paragraphs: [
         '**An early stress fracture is often too small to show on an X-ray.** The bone first reacts with swelling inside it, which an X-ray cannot see. Signs of repair show up later. One review put the sensitivity of X-rays at the first visit at about 10%, rising to 30 to 70% after three weeks (Patel and colleagues, 2011).',
-        'For the heel specifically, a Finnish study looked at military recruits with exercise-related heel or ankle pain who had an MRI. Of 30 recruits with heel stress injuries, only 15% had a visible injury on plain X-rays. In 22 of the 30, other foot bones next to the heel were also affected (Sormaala and colleagues, 2006).',
-        'A 2016 systematic review of lower-leg and foot stress fractures found X-ray sensitivity ranging from 12% to 56%, against 68% to 99% for MRI. The authors named MRI the most sensitive and specific test and warned that X-rays are likely to give false negatives early on (Wright and colleagues, 2016).',
+        'For the heel specifically, a Finnish study looked at military recruits with exercise-related heel or ankle pain who had an MRI. Of 30 recruits with heel stress injuries, only 15% had a visible injury on plain X-rays. In 22 of the 34 injured heels, nearby foot bones were also affected (Sormaala and colleagues, 2006).',
+        'A 2016 systematic review of stress fractures in the lower limb found X-ray sensitivity ranging from 12% to 56%, against 68% to 99% for MRI. The authors named MRI the most sensitive and specific test and warned that X-rays are likely to give false negatives early on (Wright and colleagues, 2016).',
         'So a clinician who suspects a fracture may repeat the X-ray after two to three weeks or go straight to an MRI if a quick answer matters (Patel and colleagues, 2011). For plantar fasciitis, the 2023 guideline says imaging is "usually not indicated for patients that meet clinical examination criteria for plantar fasciitis until they fail conservative interventions" (Koc and colleagues, 2023). The [heel spur page](/plantar-fasciitis-vs-heel-spur/) explains why a spur on an X-ray does not settle it either.',
       ],
       sourceNote: 'Wright 2016 pooled lower extremity stress fractures, not only the heel. Ranges are the lowest and highest sensitivity reported across the included studies, not pooled estimates.',
@@ -254,7 +254,7 @@ export const PF_VS_STRESS_FRACTURE_EN: Guide = {
     {
       q: 'Who gets heel stress fractures?',
       cites: [CITE.patelStressFracture, CITE.mountjoyREDs],
-      a: 'Mostly people who suddenly train more: runners, military recruits and athletes. Runners averaging more than 25 miles a week are at higher risk, and women more than men. Low energy availability, missed periods, low bone density and low vitamin D raise the risk because the bone is less able to take load.',
+      a: 'Mostly people who suddenly train more: runners, military recruits and athletes. Runners averaging more than 25 miles a week are at higher risk, and women more than men. Low energy availability, missed periods and low bone density raise the risk, and one study found lower vitamin D levels in recruits with stress fractures.',
     },
   ],
   redFlags: {

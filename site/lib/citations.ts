@@ -1616,6 +1616,56 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1186/1471-2458-14-885',
     pmid: '25168336',
   },
+  {
+    text: 'van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/\'plantar fasciitis\': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.',
+    doi: '10.1136/bjsports-2015-094695',
+    pmid: '26644427',
+  },
+  {
+    text: 'Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.',
+    doi: '10.1111/j.1467-789X.2012.00996.x',
+    pmid: '22498495',
+  },
+  {
+    text: 'Boules M, Batayyah E, Froylich D, Zelisko A, O\'Rourke C, Brethauer S, et al. Effect of surgical weight loss on plantar fasciitis and health-care use. Journal of the American Podiatric Medical Association. 2018;108(6):442–448.',
+    doi: '10.7547/15-169',
+    pmid: '29617149',
+  },
+  {
+    text: 'Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.',
+    doi: '10.1186/s13047-018-0277-y',
+    pmid: '29988337',
+  },
+  {
+    text: 'Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.',
+    doi: '10.1016/j.gaitpost.2014.08.013',
+    pmid: '25245307',
+  },
+  {
+    text: 'Yang F, Zhou L, Zhang J, Wang Q, Cai Q, Wang J, et al. Association of semaglutide use with outcomes in chronic plantar heel pain: a prospective observational cohort and a pilot interventional study. International Journal of Surgery. 2025;111(12):9333–9341.',
+    doi: '10.1097/JS9.0000000000003156',
+    pmid: '40788007',
+  },
+  {
+    text: 'Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.',
+    doi: '10.1016/j.wem.2021.04.004',
+    pmid: '34301477',
+  },
+  {
+    text: 'Boulware DR, Forgey WW, Martin WJ 2nd. Medical risks of wilderness hiking. Am J Med. 2003;114(4):288–293.',
+    doi: '10.1016/s0002-9343(02)01494-8',
+    pmid: '12681456',
+  },
+  {
+    text: 'Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.',
+    doi: '10.1580/08-WEME-OR-196R2.1',
+    pmid: '19737037',
+  },
+  {
+    text: 'Bohne M, Abendroth-Smith J. Effects of hiking downhill using trekking poles while carrying external loads. Med Sci Sports Exerc. 2007;39(1):177–183.',
+    doi: '10.1249/01.mss.0000240328.31276.fc',
+    pmid: '17218900',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1943,6 +1993,16 @@ export const CITE = {
   agleHosiery: 320,
   kimMats: 321,
   chenVaricose: 322,
+  vanLeeuwenBmi: 323,
+  butterworthBmi: 324,
+  boulesBariatric: 325,
+  walshBariatric: 326,
+  songWeightLoss: 327,
+  yangSemaglutide: 328,
+  chruschHikers: 329,
+  boulwareHikers: 330,
+  andersonPack: 331,
+  bohnePoles: 332,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

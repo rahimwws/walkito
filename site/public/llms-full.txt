@@ -367,6 +367,16 @@ Sources:
 - Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effectiveness of wearing compression stockings for prevention of occupational edema in hairdressers. Jornal Vascular Brasileiro. 2020;19:e20190028.
 - Kim JY, Stuart-Buttle C, Marras WS. The effects of mats on back and leg fatigue. Applied Ergonomics. 1994;25(1):29-34.
 - Chen CL, Guo HR. Varicose veins in hairdressers and associated risk factors: a cross-sectional study. BMC Public Health. 2014;14:885.
+- van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/'plantar fasciitis': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.
+- Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.
+- Boules M, Batayyah E, Froylich D, Zelisko A, O'Rourke C, Brethauer S, et al. Effect of surgical weight loss on plantar fasciitis and health-care use. Journal of the American Podiatric Medical Association. 2018;108(6):442–448.
+- Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+- Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
+- Yang F, Zhou L, Zhang J, Wang Q, Cai Q, Wang J, et al. Association of semaglutide use with outcomes in chronic plantar heel pain: a prospective observational cohort and a pilot interventional study. International Journal of Surgery. 2025;111(12):9333–9341.
+- Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+- Boulware DR, Forgey WW, Martin WJ 2nd. Medical risks of wilderness hiking. Am J Med. 2003;114(4):288–293.
+- Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
+- Bohne M, Abendroth-Smith J. Effects of hiking downhill using trekking poles while carrying external loads. Med Sci Sports Exerc. 2007;39(1):177–183.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -11658,9 +11668,9 @@ Mostly people who suddenly train more: runners, military recruits and athletes. 
 
 Language: English · https://walkito.site/walking-with-plantar-fasciitis/ · published 2026-10-18 · updated 2026-10-18
 
-You can usually keep walking with [plantar fasciitis](https://walkito.site/plantar-fasciitis/), as long as the pain stays moderate while you walk and settles by the next morning. The 2023 heel pain guideline advises changing your weight-bearing load rather than stopping, though it grades that advice **E**, meaning it rests on theory, not trials (Koc and colleagues, 2023). No study gives a safe number of steps, so the next-morning check is a better guide than a step target.
+You can usually keep walking with [plantar fasciitis](https://walkito.site/plantar-fasciitis/), as long as the pain stays moderate while you walk and settles by the next morning. The 2023 heel pain guideline recommends advice on adjusting your weight-bearing load and does not tell people to stop walking, though it grades that advice **E**, meaning it rests on theory, not trials (Koc and colleagues, 2023). No study gives a safe number of steps, so the next-morning check is a better guide than a step target.
 
-- The 2023 heel pain guideline lists advice on changing weight-bearing loads at work, in sport and in daily life, plus footwear advice, at grade **E**: based on theory, not trials (Koc and colleagues, 2023).
+- The 2023 heel pain guideline lists advice on changing weight-bearing loads at work, in leisure and in daily life, plus footwear advice, at grade **E**: based on theory, not trials (Koc and colleagues, 2023).
 - In a trial of 180 adults with plantar fasciopathy, a group given only advice to stay active, cut back on pain-aggravating activities and wear a heel cup improved by a clinically meaningful amount at about three months (Riel and colleagues, 2023).
 - One pain-monitoring rule allows pain up to about 5 out of 10 during activity, as long as it settles by the next morning and does not build week to week. It was tested in 38 people with Achilles pain, not plantar fasciitis (Silbernagel and colleagues, 2007).
 - No study gives a daily step count for plantar fasciitis. In 50 people with heel pain and 25 without, activity levels did not differ, but the heel pain group stood 3.4 hours a day longer (Landorf and colleagues, 2023).
@@ -11668,11 +11678,11 @@ You can usually keep walking with [plantar fasciitis](https://walkito.site/plant
 
 ### Is walking good or bad for plantar fasciitis?
 
-**Walking is not the enemy, but too much at once can flare the heel.** The 2023 heel pain guideline does not tell people to stop walking. Its summary lists education on ways to change weight-bearing loads at work, in sport and in daily life, and on footwear. It grades that advice **E**, which means theory and basic science support it, but no trial has tested it (Koc and colleagues, 2023).
+**Walking is not the enemy, but too much at once can flare the heel.** The 2023 heel pain guideline does not tell people to stop walking. Its summary lists education on ways to change weight-bearing loads at work, in leisure and in daily life, and on footwear. It grades that advice **E**, which means theory and basic science support it, but no trial has tested it (Koc and colleagues, 2023).
 
 The guideline also lists heel pain that started after a recent increase in weight-bearing activity as a typical feature of plantar fasciitis. So the question is rarely whether to walk. It is how much, and how fast you add more.
 
-A Danish trial tested what simple advice can do. 180 adults with plantar fasciopathy (another name for plantar fasciitis) were split into three groups. One got only advice and a heel cup; the other two added heel raise training, and one of those also got a steroid injection. The advice was to cut back on activities that cause flare-ups and then slowly return to former activity levels, guided by symptoms. All three groups improved by a clinically meaningful amount at about three months (Riel and colleagues, 2023).
+A Danish trial compared simple advice with added treatments. 180 adults with plantar fasciopathy (another name for plantar fasciitis) were split into three groups. One got only advice and a heel cup; the other two added heel raise training, and one of those also got a steroid injection. The advice was to cut back on activities that cause flare-ups and then slowly return to former activity levels, guided by symptoms. All three groups improved by a clinically meaningful amount at about three months (Riel and colleagues, 2023).
 
 Walking itself may not be what links to heel pain. In a 2023 study, 50 people with heel pain and 25 matched people without it reported similar physical activity. The difference was standing: the heel pain group stood 3.4 hours a day longer (Landorf and colleagues, 2023). That study shows a link, not a cause. If your day is mostly standing, [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers that side.
 
@@ -11687,7 +11697,7 @@ Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and f
 
 In a 2007 trial, 38 people with Achilles tendon pain were split into two groups. One group kept running and jumping, using a pain-monitoring model: pain up to about 5 out of 10 was allowed during activity, as long as it settled by the next morning and did not build from week to week. The other group stopped those activities for the first six weeks. Both groups improved, and keeping active did not lead to worse results at twelve months (Silbernagel and colleagues, 2007). More on that trial is in [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
 
-For heel pain, a 2021 best practice guide, built from a review of 51 trials, interviews with 14 experts and a patient survey, says pain-monitoring was strongly recommended and that people should be taught to read their pain response to activity (Morrissey and colleagues, 2021). It does not give a number. The table below applies the tested rule to walking, scored from 0 (no pain) to 10 (worst pain).
+For heel pain, a 2021 best practice guide, built from a review of 51 trials, interviews with 14 experts and a patient survey, says pain-monitoring was strongly recommended and that people should be taught to read their pain response to activity (Morrissey and colleagues, 2021). It does not give a number. The table below applies the tested rule to walking, scored from 0 (no pain) to 10 (worst pain). The next-walk column is a practical reading of that rule, not a tested protocol.
 
 Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
 Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar heel pain: a best practice guide informed by a systematic review, expert clinical reasoning and patient values. British Journal of Sports Medicine. 2021;55(19):1106–1118.
@@ -11696,7 +11706,7 @@ Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar hee
 
 **There is no evidence-based step number for plantar fasciitis.** We found no trial that set a step count or walking distance for people with heel pain and measured the result. Any page that gives you a set figure for heel pain is guessing.
 
-The well-known 10,000 steps comes from general health, not from foot research. A 2022 analysis of 15 studies and 47,471 adults found that more daily steps went with a lower risk of death, but the benefit levelled off at about 6,000 to 8,000 steps a day in adults aged 60 or over, and 8,000 to 10,000 in younger adults (Paluch and colleagues, 2022). That is about long-term health, not about what an irritated heel can handle this week.
+The well-known 10,000 steps is a general health target, not a foot research figure, and even there the evidence behind it is thin. A 2022 analysis of 15 studies and 47,471 adults found that more daily steps went with a lower risk of death, but the benefit levelled off at about 6,000 to 8,000 steps a day in adults aged 60 or over, and 8,000 to 10,000 in younger adults (Paluch and colleagues, 2022). That is about long-term health, not about what an irritated heel can handle this week.
 
 A more useful number is your own. Most phones count steps. Look at a normal week before the heel flared and a normal week now. That gives you a starting point, and the pain rule above tells you whether to hold, add or cut back.
 
@@ -11755,7 +11765,7 @@ Source: MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass 
 
 ### Which exercises make walking easier?
 
-Exercises raise how much load the heel can take, so the same walk passes the pain rule more easily over time. The 2023 guideline grades stretching of the plantar fascia and calf **A**, its top grade, and strength training **B**.
+Exercises may help the heel tolerate more load, so the same walk may pass the pain rule more easily over time, though no study has tested this for walking. The 2023 guideline grades stretching of the plantar fascia and calf **A**, its top grade, and strength training **B**.
 
 A tight calf is part of the picture. In a case-control study of 50 people with plantar fasciitis and 100 without, limited ankle bend was the strongest risk factor, and standing for most of the working day also raised the odds (Riddle and colleagues, 2003). See [tight calves](https://walkito.site/tight-calves/).
 
@@ -11789,15 +11799,15 @@ Walkito is a heel and foot exercise app. It does not set a step target or plan y
 
 #### Should I walk with plantar fasciitis?
 
-Usually yes, in amounts your heel can handle. The 2023 heel pain guideline advises changing weight-bearing load rather than stopping, though that advice rests on theory (grade E). In a trial of 180 adults, advice to stay active but cut back on pain-aggravating activities, plus a heel cup, came with meaningful improvement at about three months.
+Usually yes, in amounts your heel can handle. The 2023 heel pain guideline recommends adjusting weight-bearing load and does not advise stopping, though that advice rests on theory (grade E). In a trial of 180 adults, advice to stay active but cut back on pain-aggravating activities, plus a heel cup, came with meaningful improvement at about three months.
 
 #### Is walking good for plantar fasciitis?
 
-Walking in moderate amounts is generally fine, and no study shows it makes plantar fasciitis worse when the dose is right. In one study, people with heel pain were as active as people without it but stood 3.4 hours a day longer. A best practice guide advises monitoring your pain response rather than avoiding activity.
+Walking in moderate amounts is generally fine, though no study has tested how much walking is best. In one study, people with heel pain were as active as people without it but stood 3.4 hours a day longer. A best practice guide advises learning to monitor your pain response to activity.
 
 #### How many steps a day is OK with plantar fasciitis?
 
-No study gives a step number for plantar fasciitis. The 10,000 figure comes from general health research, where benefits levelled off at 6,000 to 8,000 steps a day in adults over 60. For an irritated heel, start from your own usual count and let next-morning pain decide whether to add or cut back.
+No study gives a step number for plantar fasciitis. The 10,000 figure is a general health target, and in mortality research the benefit levelled off at 6,000 to 8,000 steps a day in adults 60 or over. For an irritated heel, start from your own usual count and let next-morning pain decide whether to add or cut back.
 
 #### How much pain is OK when walking with plantar fasciitis?
 
@@ -11809,7 +11819,7 @@ Yes, if you do much more than your heel is used to. The 2023 guideline lists hee
 
 #### Should I stop walking completely to let plantar fasciitis settle?
 
-Complete rest is rarely needed. The 2023 guideline points to changing load rather than stopping. In an Achilles pain trial, people who stayed active within a pain limit did as well at twelve months as people who rested first. If even short walks hurt sharply or make you limp, see a clinician.
+No study shows complete rest is needed. The 2023 guideline recommends adjusting load and does not advise stopping. In an Achilles pain trial, people who stayed active within a pain limit did as well at twelve months as people who paused running and jumping for six weeks. If even short walks hurt sharply or make you limp, see a clinician.
 
 #### What shoes are best for walking with plantar fasciitis?
 
@@ -12011,7 +12021,7 @@ A good foot routine for runners trains four things: the small muscles of the arc
 - In a 2020 trial of 118 recreational long-distance runners, the group without foot core training was 2.42 times more likely to get a running injury over 12 months. The effect appeared after about four to eight months of training (Taddei and colleagues, 2020).
 - In a 2019 trial of 57 runners, about two months of foot exercises done at least five times a week made every measured foot muscle bigger and stronger (Ridge and colleagues, 2019).
 - Healthy adults do a median of about 23 to 24 single-leg calf raises per leg, and 25 has been proposed as a reference for normal (Hebert-Losier and colleagues, 2017; Lunsford and Perry, 1995).
-- A self-guided hip, thigh and core strength program for 720 first-time marathon runners did not lower overuse injuries: 7.1% against 7.3% (Toresdahl and colleagues, 2020). Strength work alone did not prevent injuries there.
+- A self-guided hip, thigh and core strength program for 720 first-time marathon runners did not lower the overuse injuries that kept runners from finishing the race: 7.1% against 7.3% (Toresdahl and colleagues, 2020). Strength work alone did not prevent injuries there.
 - Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a previous injury was one of the clearest risk factors (van Gent and colleagues, 2007).
 
 ### Do foot exercises help runners avoid injury?
@@ -12022,7 +12032,7 @@ Over 12 months, the control group was 2.42 times more likely to get a running in
 
 An earlier, smaller trial from the same team, with 28 runners, found that about two months of foot training made the small foot muscles bigger and increased push off force while running (Taddei and colleagues, 2020).
 
-What this does not tell us: both trials come from one research group, in experienced recreational runners who were not injured at the start. Nobody has tested the program in beginners or in runners who already have pain.
+What this does not tell us: both trials come from one research group, in experienced recreational runners who were not injured at the start. The trials did not include beginners or runners who already had pain, so we do not know if the results apply to them.
 
 Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
 Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
@@ -12097,11 +12107,11 @@ A few niggles change the plan:
 
 ### What foot exercises do not do
 
-**They do not replace sensible training.** Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a long weekly distance and a previous injury were among the clearest risk factors (van Gent and colleagues, 2007). In a Danish study of novice runners, increasing weekly distance too fast was linked to some types of injury (Nielsen and colleagues, 2014).
+**They do not replace sensible training.** Across studies of long-distance runners, between 19.4% and 79.3% got a leg injury, and a long weekly distance in men and a previous injury were among the clearest risk factors (van Gent and colleagues, 2007). In a Danish study of 874 novice runners, those who raised their weekly distance by more than 30% seemed more prone to some overuse injuries, though the result fell just short of statistical significance (Nielsen and colleagues, 2014).
 
-**Strength work is not automatic protection.** In a trial with 720 first-time New York City Marathon runners, a self-guided 10-minute program for the hips, thighs and core, three times a week for about three months, did not lower overuse injuries: 7.1% in the strength group against 7.3% in the others (Toresdahl and colleagues, 2020). That program did not train the feet, but it is a reminder that a routine on paper is not the same as a result.
+**Strength work is not automatic protection.** In a trial with 720 first-time New York City Marathon runners, a self-guided 10-minute program for the hips, thighs and core, three times a week for about three months, did not lower the overuse injuries that stopped runners from finishing the marathon: 7.1% in the strength group against 7.3% in the others (Toresdahl and colleagues, 2020). That program did not train the feet, but it is a reminder that a routine on paper is not the same as a result.
 
-**They change arch shape only a little.** In a small study, the arch sank 1.8 mm less after a month of short foot training (Mulligan and Cook, 2013). Expect a stronger, steadier foot, not a new arch. Shoes and barefoot running are a separate question, covered in [barefoot shoes](https://walkito.site/barefoot-shoes/).
+**They change arch shape only a little.** In a small study of 21 people without a control group, the arch sank 1.8 mm less after a month of short foot training (Mulligan and Cook, 2013). Expect a stronger, steadier foot, not a new arch. Shoes and barefoot running are a separate question, covered in [barefoot shoes](https://walkito.site/barefoot-shoes/).
 
 Source: van Gent RN, Siem D, van Middelkoop M, van Os AG, Bierma-Zeinstra SM, Koes BW. Incidence and determinants of lower extremity running injuries in long distance runners: a systematic review. British Journal of Sports Medicine. 2007;41(8):469-480.
 Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
@@ -12162,7 +12172,7 @@ Teacher foot pain mostly comes from hours of standing and walking the room on ha
 
 - In a 2024 review of 44 studies and 15,972 teachers, pain in the ankle region (mostly counted with the foot) was pooled at 30% across 27 studies, below the neck and lower back at 47% each. Results varied widely between studies (Tahernejad and colleagues, 2024).
 - In one survey of 1,439 teachers in a single Saudi region, 85.5% reported foot pain in the past 12 months, and it was more common in teachers with 16 or more lessons a week (Alqahtani, 2020). Other surveys found much lower figures, so read it as one region’s result.
-- We found no study that measured how many hours a typical teacher stands. In a study of 50 cases and 100 controls, standing for most of the working day raised the odds of plantar fasciitis 3.6 times, and a tight calf raised them 23.3 times (Riddle and colleagues, 2003).
+- We found no study that measured how many hours a typical teacher stands. In a study of 50 cases and 100 controls, standing for most of the working day raised the odds of plantar fasciitis 3.6 times, and very limited ankle flexibility, usually from a tight calf, raised them 23.3 times (Riddle and colleagues, 2003).
 - The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Insoles on their own get a **B against** (Koc and colleagues, 2023).
 - In 50 people with heel pain and 25 without, those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels. That is a link, not proof of cause (Landorf and colleagues, 2023).
 
@@ -12219,7 +12229,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 **No study has compared shoes for teachers, and no trial picks one brand or style.** The 2023 heel pain guideline does not grade shoe types. What evidence there is points to cushioning under the heel and to fit.
 
-In a 2023 study, 50 people with plantar heel pain were compared with 25 matched people without it. Those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels (Landorf and colleagues, 2023). That shows a link, not that soft heels prevent pain, but it supports a shoe with a cushioned heel for long days at the board.
+In a 2023 study, 50 people with plantar heel pain were compared with 25 matched people without it. Those with heel pain stood 3.4 hours a day longer and wore shoes with harder heels. Shoe style, heel height and standing on hard floors did not differ between the groups (Landorf and colleagues, 2023). That shows a link, not that soft heels prevent pain, but it supports a shoe with a cushioned heel for long days at the board.
 
 A practical checklist, based on fit and comfort rather than a trial:
 
@@ -12300,7 +12310,7 @@ A calf stretch and a soleus stretch at a wall take about a minute each side: 2 h
 
 #### Can standing all day as a teacher cause plantar fasciitis?
 
-It can raise the risk. In a 2003 study of 50 people with plantar fasciitis and 100 without, standing for most of the working day raised the odds 3.6 times, and a tight calf raised them 23.3 times. The study did not look at teachers, and no study has counted plantar fasciitis in teachers specifically.
+It can raise the risk. In a 2003 study of 50 people with plantar fasciitis and 100 without, standing for most of the working day raised the odds 3.6 times, and very limited ankle flexibility, usually from a tight calf, raised them 23.3 times. The study did not look at teachers, and no study has counted plantar fasciitis in teachers specifically.
 
 #### Do anti-fatigue mats help teachers?
 
@@ -12318,12 +12328,12 @@ There is no tested limit for teachers. A 2017 review of laboratory standing stud
 
 Language: English · https://walkito.site/retail-warehouse-foot-pain/ · published 2026-10-18 · updated 2026-10-18
 
-Warehouse and retail feet hurt because hours of standing and walking on hard floors load the heel, arch and calf with little give underneath. Standing for most of the working day raised the odds of [plantar fasciitis](https://walkito.site/plantar-fasciitis/) 3.6 times in one study (Riddle and colleagues, 2003). Calf and plantar fascia stretches carry the top grade, **A**, in the 2023 heel pain guideline, and they take about 3 minutes on a break. Mats and cushioned insoles help comfort, but the evidence for them is thinner (Speed and colleagues, 2018).
+Warehouse and retail feet hurt because hours of standing and walking on hard floors load the heel, arch and calf with little give underneath. Standing for most of the working day raised the odds of [plantar fasciitis](https://walkito.site/plantar-fasciitis/) 3.6 times in one study (Riddle and colleagues, 2003). Calf and plantar fascia stretches carry the top grade, **A**, in the 2023 heel pain guideline, and a short version fits in about 3 minutes on a break. Mats and cushioned insoles help comfort, but the evidence for them is thinner (Speed and colleagues, 2018).
 
-- Spending most of the workday on your feet raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. A tight calf raised them 23.3 times (Riddle and colleagues, 2003).
+- Spending most of the workday on your feet raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. Very limited ankle flexibility, usually from a tight calf, raised them 23.3 times (Riddle and colleagues, 2003).
 - The 2023 heel pain guideline keeps a grade **B** recommendation: clinicians should check for work-related weight-bearing, particularly on surfaces with poor shock absorption, as a risk factor for heel pain (Koc and colleagues, 2023).
 - A review of 10 studies found moderate evidence that mats and cushioned insoles reduce discomfort and fatigue in standing workers, and only limited evidence that insoles beat mats (Speed and colleagues, 2018).
-- Across 7 studies of workers in safety footwear, foot pain was reported by 42.3% to 60.8%, with heat, sweating, weight and stiffness the main complaints (Arceri and colleagues, 2024).
+- In a review of 7 studies of workers in safety footwear, the 4 that measured pain found foot pain in 42.3% to 60.8% of workers, with heat, sweating, weight and stiffness the main complaints (Arceri and colleagues, 2024).
 - Calf and plantar fascia stretching get the guideline’s top grade, **A**, and strength work a **B**. Insoles on their own get a **B against** for heel pain (Koc and colleagues, 2023).
 
 ### Why do your feet hurt after a warehouse or retail shift?
@@ -12332,7 +12342,7 @@ Retail and warehouse work mixes two loads. On a till or a packing station you st
 
 A 2003 case-control study of 50 people with plantar fasciitis and 100 matched controls found that spending most of the workday weight-bearing raised the odds of plantar fasciitis 3.6 times. Reduced ankle flexibility, a [tight calf](https://walkito.site/tight-calves/), was the strongest factor, at 23.3 times the odds. **A tight calf is something you can work on. The job usually is not.**
 
-A systematic review of 16 studies on chronic heel pain found some evidence of a link with prolonged standing, alongside higher body weight, age and reduced ankle flexibility. The studies were mostly cross-sectional, so they show an association, not proof that standing causes heel pain (Irving and colleagues, 2006).
+A systematic review of 16 studies on chronic heel pain found some evidence of a link with prolonged standing, alongside higher body weight, age and reduced ankle flexibility. The authors called for studies that follow people over time, so this shows an association, not proof that standing causes heel pain (Irving and colleagues, 2006).
 
 How far do you walk? We found no published study that counts steps per shift for warehouse or retail workers. Figures like "12 miles a shift" appear on industry blogs without a study behind them. The closest measured number is from nurses: an average of 9,360 steps per shift in a tracker study (Chang and Cho, 2022).
 
@@ -12353,11 +12363,11 @@ Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on muscu
 
 ### Do anti-fatigue mats or insoles help more?
 
-**Both help comfort about the same, and neither has strong evidence.** A 2018 systematic review found 10 studies of mats and cushioned insoles in people who stand for work. It rated the evidence moderate that cushioning reduces discomfort and fatigue, and limited that insoles do better than mats. Most studies were small, and the authors called for larger trials in real workplaces.
+**Both help comfort, with no clear winner, and neither has strong evidence.** A 2018 systematic review found 10 studies of mats and cushioned insoles in people who stand for work. It rated the evidence moderate that cushioning reduces discomfort and fatigue, and limited that insoles do better than mats. The studies differed a lot in design, and the authors called for larger trials in real workplaces.
 
 In one workplace study, assembly workers spent one week of 8-hour days in each of four conditions: hard floor, a mat, insoles, and insoles on a mat. The mat, the insoles and the combination were all more comfortable than the hard floor, and there was no clear difference between them (King, 2002).
 
-In a 4-hour lab test, three of four commercial anti-fatigue mats reduced discomfort compared with a hard floor, but no mat beat the others (Wiggermann and Keyserling, 2013). So a pricier mat is not proven to be better.
+In a 4-hour lab test, three of four commercial anti-fatigue mats reduced discomfort compared with a hard floor, but no mat beat the others (Wiggermann and Keyserling, 2013). So no one mat has been shown to be better than the others.
 
 The practical split: **a mat only helps where you stand still**, such as a till, a pack bench or a workstation. If you walk the floor or pick orders, the cushioning has to travel with you, in the shoe. For heel pain specifically, the 2023 guideline grades insoles on their own **B against**, so do not rely on them alone. [Insoles or exercises](https://walkito.site/insoles-vs-exercises/) compares the two, and [best insoles for plantar fasciitis](https://walkito.site/best-insoles-for-plantar-fasciitis/) covers the types.
 
@@ -12368,7 +12378,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Do safety boots cause foot pain?
 
-Safety boots protect your feet, and they also come with complaints. A 2024 systematic review found 7 studies of workers in safety footwear. Every study reported discomfort and pain, with foot pain in 42.3% to 60.8% of workers depending on the area of the foot. The main complaints were heat, sweating, weight and a stiff sole, mostly around the toes and toecap.
+Safety boots protect your feet, and they also come with complaints. A 2024 systematic review found 7 studies of workers in safety footwear. Every study reported discomfort and pain, and the 4 studies that measured pain found foot pain in 42.3% to 60.8% of workers. The main complaints were heat, sweating, weight and a stiff sole, mostly around the toes and toecap.
 
 In a study of 509 workers in 12 metal-working factories, all wearing safety footwear every day, 81% had at least one foot problem. Their most common complaints about the shoes were hot and wet conditions inside (42%), weight (27.5%) and fit (22.9%) (Mancuso and colleagues, 2017).
 
@@ -12404,7 +12414,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Most retail and warehouse breaks are short and set by the rota. A laboratory review found that symptoms from uninterrupted standing became clinically relevant after about 42 minutes in people prone to standing pain, and its authors suggested not standing still for more than about 40 minutes (Coenen and colleagues, 2017). You often cannot choose when to sit, but you can change position: walk to the end of the aisle, shift your weight, or do one calf stretch at a rack.
 
-- **3 minutes, on a break:** the calf stretch and the soleus stretch, 30 seconds each, each leg. That targets the tight calf, the strongest risk factor in the 2003 study.
+- **3 minutes, on a break:** the calf stretch, 2 holds of 30 seconds each leg, plus one 30-second soleus hold each leg. That targets the tight calf, the strongest risk factor in the 2003 study.
 - **5 minutes, on a longer break or at the end of the shift:** add ankle rocks, or the plantar fascia stretch once your boots are off.
 - **10 minutes, on a day off:** add heel raises (3 sets of 10) and the foot roll. That covers the strength side, graded **B**.
 
@@ -12467,11 +12477,11 @@ About the same for comfort. In a workplace study, assembly workers found a mat, 
 
 #### Can safety boots cause plantar fasciitis?
 
-No study shows safety boots cause plantar fasciitis. A review of 7 studies found foot pain in 42.3% to 60.8% of workers in safety footwear, with heat, weight and stiffness the main complaints. Hours on hard floors matter too, whatever the boot. A good fit and the lightest approved boot are reasonable first steps.
+No study shows safety boots cause plantar fasciitis. A review of 7 studies of workers in safety footwear found foot pain in 42.3% to 60.8% of workers in the 4 that measured it, with heat, weight and stiffness the main complaints. Hours on hard floors matter too, whatever the boot. A good fit and the lightest approved boot are reasonable first steps.
 
 #### What stretches can I do on a break at work?
 
-The calf stretch and the soleus stretch work standing up against a wall or rack, in work boots, in about 2 minutes: two holds of 30 seconds each, each leg. The 2023 heel pain guideline grades calf stretching A. Save the plantar fascia stretch and heel raises for after the shift or days off.
+The calf stretch and the soleus stretch work standing up against a wall or rack, in work boots: two holds of 30 seconds each, each leg, about 4 minutes for both stretches. The 2023 heel pain guideline grades calf stretching A. Save the plantar fascia stretch and heel raises for after the shift or days off.
 
 #### Is it normal for my feet to hurt after a retail shift?
 
@@ -12485,7 +12495,7 @@ Many people do, with changes. Short stretches on breaks, better-fitting boots an
 
 Language: English · https://walkito.site/chefs-foot-pain/ · published 2026-10-18 · updated 2026-10-18
 
-Chef foot pain mostly comes from long hours standing and walking on hard kitchen floors, and the options with the best evidence are calf and plantar fascia stretches, which the 2023 heel pain guideline grades **A**, and calf strength work, graded **B** (Koc and colleagues, 2023). Slip-resistant shoes are about safety, not pain: in a randomized trial across 226 school districts, giving food service workers slip-resistant shoes at no cost lowered slipping injury claims from 3.54 to 1.18 per 10,000 worker-months (Bell and colleagues, 2019). No study has tested whether clogs or any kitchen shoe reduce foot pain itself.
+Chef foot pain often comes from long hours standing and walking on hard kitchen floors, and for heel pain the options with the best evidence are calf and plantar fascia stretches, which the 2023 heel pain guideline grades **A**, and calf strength work, graded **B** (Koc and colleagues, 2023). Slip-resistant shoes are about safety, not pain: in a randomized trial across 226 school districts, giving food service workers slip-resistant shoes at no cost lowered slipping injury claims from 3.54 to 1.18 per 10,000 worker-months (Bell and colleagues, 2019). No study has tested whether clogs or any kitchen shoe reduce foot pain itself.
 
 - In a survey of 128 kitchen workers in Cairo, 46.1% reported foot pain in the past 12 months, behind only the lower back and the knee (Abdelsalam and colleagues, 2023).
 - In 475 workers from 36 US fast-food restaurants, wearing slip-resistant shoes was linked to a 54% lower rate of slipping (Verma and colleagues, 2011).
@@ -12540,7 +12550,7 @@ In the US restaurant study, most slips happened by the **sink and the fryer**, t
 
 A second analysis of the same workers looked at the moment of each slip. The rate of slipping was 14.6 times higher while walking on a contaminated floor, 2.9 times higher while rushing and 1.7 times higher while distracted. Slip-resistant shoes reduced the effect of rushing and of a dirty floor (Verma and colleagues, 2011).
 
-Who pays for the shoes matters too. Where the employer provided slip-resistant shoes, 91% of workers wore them. Where they were neither provided nor encouraged, 53.5% did (Verma and colleagues, 2010). If your kitchen has a shoe program, it is worth using.
+Whether the employer provides the shoes matters too. Where the employer provided slip-resistant shoes, 91% of workers wore them. Where they were neither provided nor encouraged, 53.5% did (Verma and colleagues, 2010). If your kitchen has a shoe program, it is worth using.
 
 Source: Verma SK, Chang WR, Courtney TK, et al. Workers' experience of slipping in U.S. limited-service restaurants. Journal of Occupational and Environmental Hygiene. 2010;7(9):491–500.
 Source: Verma SK, Lombardi DA, Chang WR, et al. Rushing, distraction, walking on contaminated floors and risk of slipping in limited-service restaurants: a case-crossover study. Occupational and Environmental Medicine. 2011;68(8):575–581.
@@ -12549,7 +12559,7 @@ Source: Verma SK, Lombardi DA, Chang WR, et al. Rushing, distraction, walking on
 
 A 2015 review of research on standing at work lists floor mats, compression stockings and supportive footwear among the options with some evidence for less discomfort and fatigue (Waters and Dick, 2015). None of that research was done in kitchens. A mat at a station where you stand for long periods, like the pass or a prep table, is a reasonable thing to try. Choose one that lies flat and stays put on a wet floor, so it does not become a trip hazard of its own.
 
-Compression stockings have one small randomized trial behind them. In 40 security guards standing roughly 12-hour shifts, both 15 to 20 mmHg and 20 to 30 mmHg stockings avoided the rise in leg discomfort and swelling seen with regular socks (Garcia and colleagues, 2023). The guards were all men and none were cooks, so read this as a likely fit, not proof for kitchens.
+Compression stockings have not been tested in kitchens. In a small randomized trial of 40 security guards standing roughly 12-hour shifts, both 15 to 20 mmHg and 20 to 30 mmHg stockings avoided the rise in leg discomfort and swelling seen with regular socks (Garcia and colleagues, 2023). The guards were all men and none were cooks, so read this as a likely fit, not proof for kitchens.
 
 **Mats and socks help with comfort during a shift. They do not replace the stretching and strength work** that the heel pain guideline grades highest.
 
@@ -12561,7 +12571,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 The exercises are the ones from the [plantar fasciitis guide](https://walkito.site/plantar-fasciitis-exercises/), at the same starting doses. The stretches need only a wall or a chair, so they fit in a break, before service or after you change out of your work shoes. Keep the strength work for days off or after a shift.
 
-The guideline grades are for plantar fasciitis, but the tissues are the same ones a kitchen shift loads all day. If an exercise takes your pain to 6 out of 10 or higher, stop for the day.
+The guideline grades are for plantar fasciitis and were not tested in kitchen workers, but the tissues are the same ones a kitchen shift loads all day. If an exercise takes your pain to 6 out of 10 or higher, stop for the day.
 
 - **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall or a steel counter. Keep the back leg straight, the back heel flat on the floor and the hips forward. Do it on a dry patch of floor, not by the sink.
 - **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same position, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
@@ -12619,7 +12629,7 @@ For slips, yes. In 475 workers from 36 US fast-food restaurants, slip-resistant 
 
 #### How often should kitchen shoes be replaced?
 
-There is no tested rule. In a study of 475 restaurant workers, slip-resistant shoes worn under six months were moderately more effective against slips than older ones, and workers who switched to a new pair slipped 55% less often afterwards. Check the tread, and replace shoes once the pattern on the sole is worn smooth.
+There is no tested rule. In a study of 475 restaurant workers, slip-resistant shoes worn under six months were moderately more effective against slips than older ones, and slip-resistant shoe wearers who switched to a new pair slipped 55% less often. Check the tread, and replace shoes once the pattern on the sole is worn smooth.
 
 #### Do anti-fatigue mats help kitchen workers?
 
@@ -12641,7 +12651,7 @@ Shift your weight, sit down in breaks when you can, and do a 30-second calf stre
 
 Language: English · https://walkito.site/hairdressers-foot-pain/ · published 2026-10-18 · updated 2026-10-18
 
-Hairdresser foot pain mostly comes from standing still at the chair for hours, not from walking, so the things that help are the ones that break up static standing: a cushioned floor or shoe, low-strength compression stockings, and a minute of calf work between clients. In a study of 384 hairdressers and 384 people in other jobs, 49.5% of hairdressers reported knee or foot pain, against 38.3% of the comparison group (Mishra and Sarkar, 2021).
+Hairdresser foot pain mostly comes from standing still at the chair for hours, not from walking, so the options with some evidence target static standing: a cushioned floor or shoe, low-strength compression stockings, and a minute of calf work between clients. In a study of 384 hairdressers and 384 people in other jobs, 49.5% of hairdressers reported knee or foot pain, against 38.3% of the comparison group (Mishra and Sarkar, 2021).
 
 - Of 384 hairdressers in India, 49.5% reported knee or foot pain in the past 12 months, against 38.3% of 384 people in other jobs. The study counted knee and foot together (Mishra and Sarkar, 2021).
 - A 2019 scoping review of 44 studies found only 5 that reported foot pain in hairdressers, ranging from 10% to 44%. Most studies looked at the back, neck, shoulders and hands, and standing was one of the common risk factors (Kozak and colleagues, 2019).
@@ -12670,7 +12680,7 @@ A hairdresser’s day is different from a nurse’s. You do not cover long dista
 - Blood and fluid pool in the lower legs and feet, which is why shoes feel tighter by evening.
 - The heel pad and the plantar fascia, the band under the arch, carry a steady load with no break.
 
-Lab studies show how fast this builds. A 2017 review of 25 laboratory studies found low-back symptoms became clinically relevant after about 71 minutes of standing in most people, and after 42 minutes in people prone to standing pain. A single colour or cut can take longer than that. A 2015 review of standing at work linked prolonged standing to leg pain, swelling and fatigue across many jobs.
+Lab studies show how fast this builds. A 2017 review of 25 laboratory studies found low-back symptoms became clinically relevant after about 71 minutes of standing on average, and after 42 minutes in people prone to standing pain. A single colour or cut can take longer than that. A 2015 review of standing at work linked prolonged standing to low back and leg pain, discomfort and fatigue across many jobs.
 
 In a 2023 study of Turkish hairdressers, those who reported lower-leg fatigue also had more pain in the knees and lower legs and worse scores for energy and mobility. **The swelling side is measurable too:** in 38 hairdressers, ankle size grew from 21.1 cm in the morning to 22.1 cm by the end of a day without compression.
 
@@ -12681,9 +12691,9 @@ Source: Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effect
 
 ### Does posture at the chair affect your feet?
 
-Studies of hairdressers’ posture focus on the back and arms, not the feet. A scoping review reported that hairdressers often bend forward or twist while cutting and washing, and that cutting kept the spine bent forward for 66% of the task time in one measurement study. Leaning in for a long time moves your weight toward the front of the foot.
+Studies of hairdressers’ posture focus on the back and arms, not the feet. A scoping review reported that hairdressers often bend forward or twist while cutting and washing, and that cutting kept the spine bent forward for 66% of the task time in one measurement study. Leaning in for a long time tends to shift your weight toward the front of the foot.
 
-No study has measured how salon posture changes the load on hairdressers’ feet. What you can control is simple: raise or lower the client’s chair so you are not leaning, keep your weight on both feet, and shift your stance every few minutes. In a lab study of four hours of standing, people who shifted their weight more also reported more discomfort, so shifting is a sign of tired feet, and a cue to take a short break (Wiggermann and Keyserling, 2013).
+No study has measured how salon posture changes the load on hairdressers’ feet. What you can control is simple: raise or lower the client’s chair so you are not leaning, keep your weight on both feet, and shift your stance every few minutes. In a lab study of four hours of standing, people who shifted their weight more also reported more discomfort, so frequent shifting can be a sign that discomfort is building, and a reasonable cue for a short break (Wiggermann and Keyserling, 2013).
 
 If your feet hurt with your back, the connection runs both ways. [Flat feet and back pain](https://walkito.site/flat-feet-back-pain/) covers what the research says.
 
@@ -12701,7 +12711,7 @@ In practice, look for:
 - A low, stable heel. High heels put more of your weight on the front of the foot.
 - A grippy sole. Salon floors get wet and slippery.
 
-Changing shoes halfway through a long day can help, because a different shoe spreads the load differently. If you already have heel or arch pain, insoles can make the day more comfortable, but they work on comfort, not on the calf and arch themselves. [Insoles vs exercises](https://walkito.site/insoles-vs-exercises/) compares the two.
+Some people change shoes halfway through a long day. No study has tested this, but a different shoe spreads the load differently. If you already have heel or arch pain, insoles can make the day more comfortable, but they work on comfort, not on the calf and arch themselves. [Insoles vs exercises](https://walkito.site/insoles-vs-exercises/) compares the two.
 
 Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
 
@@ -12814,7 +12824,339 @@ Standing for most of the working day raised the odds of plantar fasciitis 3.6 ti
 
 #### How long can a hairdresser stand before taking a break?
 
-There is no tested limit for hairdressers. In a review of lab studies, low-back symptoms became clinically relevant after about 71 minutes of standing in most people and after 42 minutes in people prone to standing pain. Breaking long services with a short stretch, a few heel raises or a minute on a stool is a reasonable approach.
+There is no tested limit for hairdressers. In a review of lab studies, low-back symptoms became clinically relevant after about 71 minutes of standing on average and after 42 minutes in people prone to standing pain. Breaking long services with a short stretch, a few heel raises or a minute on a stool is a reasonable approach.
+
+## Weight and plantar fasciitis: what the research shows, and what helps now
+
+Language: English · https://walkito.site/weight-and-plantar-fasciitis/ · published 2026-10-18 · updated 2026-10-18
+
+A higher body weight is one of the clearest risk factors for [plantar fasciitis](https://walkito.site/plantar-fasciitis/) in people who are not athletes. In a review of 51 studies, a body mass index (BMI) over 27 came with 3.7 times the odds of plantar fasciitis (van Leeuwen and colleagues, 2016). Whether losing weight eases heel pain is less clear: no randomized trial has tested it in people with heel pain, so the stretches and strength work the 2023 guideline grades highest are the place to start, at any weight.
+
+- In a case-control study of 50 people with plantar fasciitis and 100 without, a BMI over 30 came with 5.6 times the odds of plantar fasciitis, compared with a BMI of 25 or under. A stiff ankle was the strongest factor, at 23.3 times (Riddle and colleagues, 2003).
+- A review of 51 studies found that a BMI over 27 was the only clinical factor clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016).
+- No randomized trial has tested weight loss for heel pain. A 2012 review found only two studies, both after weight loss surgery, and called the evidence limited (Butterworth and colleagues, 2012).
+- The 2023 heel pain guideline grades plantar fascia and calf stretching **A** and strength work **B**. Advice on keeping a healthy lean body mass is graded **E**, meaning it rests on expert opinion (Koc and colleagues, 2023).
+- In a follow-up of 174 people, BMI did not predict who still had heel pain years later. Being a woman and having pain in both heels did (Hansen and colleagues, 2018).
+
+### Does weight affect plantar fasciitis?
+
+**Yes, for people who are not athletes, a higher BMI is linked to plantar fasciitis in study after study.** BMI is weight divided by height squared. It is a rough measure, but it is the one these studies used.
+
+The best known study compared 50 people with plantar fasciitis in one heel with 100 people of the same age and sex without it. A BMI over 30 came with 5.6 times the odds of plantar fasciitis, compared with a BMI of 25 or under (Riddle and colleagues, 2003).
+
+A 2016 review pooled 51 studies. Of all the clinical factors the authors could combine, a BMI over 27 was the only one clearly linked to plantar fasciitis, with 3.7 times the odds, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016). Two earlier reviews reached the same conclusion, and both found no link between BMI and heel pain in athletes (Irving and colleagues, 2006; Butterworth and colleagues, 2012).
+
+The 2023 heel pain guideline lists high BMI in people who are not athletes as a risk factor, next to a stiff ankle, running and long hours on your feet, especially on hard surfaces (Koc and colleagues, 2023).
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/'plantar fasciitis': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.
+Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
+Source: Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Is weight the cause, or just one factor?
+
+**One factor among several, and not the strongest.** In the 2003 case-control study, three factors each counted on their own:
+
+- A stiff ankle (the foot barely bending up toward the shin): 23.3 times the odds.
+- A BMI over 30: 5.6 times the odds.
+- Spending most of the workday on your feet: 3.6 times the odds.
+
+The authors called the stiff ankle the most important of the three (Riddle and colleagues, 2003). That matters, because ankle stiffness often comes from [tight calves](https://walkito.site/tight-calves/), and calf stretching is something you can start today.
+
+Most of these studies are case-control or cross-sectional: they compare people who already have heel pain with people who do not. They show a link, not proof that weight causes plantar fasciitis (van Leeuwen and colleagues, 2016). If you also stand for work, [feet that hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers that side of the load.
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/'plantar fasciitis': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.
+
+### Why does load matter for the heel?
+
+**The plantar fascia is the band under your foot that holds up the arch, and it takes load with every step.** More body weight means more load per step, so the same walk or the same shift asks more of the tissue. The guideline’s advice for heel pain is built around this idea: adjust the load on your feet at work, in leisure and in daily life. It grades that advice **E**, because it rests on theory, not trials (Koc and colleagues, 2023).
+
+Weight loss does lower pressure under the foot. In a trial of 41 adults with an average BMI near 36, the group on a meal plan lost 5.9 kg in three months against 1.9 kg in the comparison group, and had lower peak pressure under parts of the foot. Foot shape and walking pattern did not change (Song and colleagues, 2015). That trial did not measure heel pain.
+
+Pressure is not the whole story either. In a study of people with foot pain waiting for weight loss surgery, pain fell after surgery, but the drop in foot pressure was not linked to the drop in pain. Mood was: people with more depressive symptoms reported more foot pain, before and after (Walsh and colleagues, 2018). Pain is shaped by more than mechanics, which is one more reason not to blame yourself for it.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+
+### Does losing weight help plantar fasciitis?
+
+**It may, but no randomized trial has tested it in people with heel pain.** That is the honest answer. Everything we have comes from studies without a fair comparison group, mostly after weight loss surgery. Here is what exists:
+
+Source: Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.
+Source: Boules M, Batayyah E, Froylich D, Zelisko A, O'Rourke C, Brethauer S, et al. Effect of surgical weight loss on plantar fasciitis and health-care use. Journal of the American Podiatric Medical Association. 2018;108(6):442–448.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+Source: Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
+Source: Yang F, Zhou L, Zhang J, Wang Q, Cai Q, Wang J, et al. Association of semaglutide use with outcomes in chronic plantar heel pain: a prospective observational cohort and a pilot interventional study. International Journal of Surgery. 2025;111(12):9333–9341.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Which exercises suit a higher body weight?
+
+The exercises with the best grades in the 2023 guideline, stretching (**A**) and calf strength work (**B**), do not depend on your weight (Koc and colleagues, 2023). What changes is how you start. Seated and supported versions put less load through the heel and are easier on knees and balance, so they come first here.
+
+These are the same starting doses as the main [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) guide. Do the first plantar fascia stretch sitting on the edge of the bed, before you stand: in a trial of 82 people, stretching before the first steps eased morning pain more than calf stretching alone (DiGiovanni and colleagues, 2003). If any exercise takes your heel pain to 6 out of 10, stop for the day.
+
+- **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. If crossing the leg is hard, keep the foot on the floor, loop a towel around the ball of the foot and pull gently instead.
+- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall or a kitchen counter. Keep the back leg straight, the back heel flat on the floor and the hips forward. The wall takes some of your weight, so you can lean only as far as feels steady.
+- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same position at the wall, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Seated heel raises** (3 sets of 10, both feet): Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. With the knee bent, this mainly works the soleus, the deeper calf muscle, with almost no load on the heel. It is the first step of the calf work, whatever you weigh.
+- **Heel raises on both feet, holding a counter** (3 sets of 10, both feet): Stand facing a counter or the back of a sturdy chair, hands resting on it. Rise straight up over the big toes, then lower slowly. Your hands can take some weight on a sore day and less as you get stronger. Both feet share the load.
+- **Short foot, seated** (3 sets of 8, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Keep the outside of the foot on the ground. Don’t curl the toes. Curling them is the most common way to get this exercise wrong.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Which activities are easier on the heel?
+
+**Activities where your feet do not take your full weight with every step.** The guideline advises changing the load on your feet rather than stopping activity (Koc and colleagues, 2023). No study has compared activities for people with heel pain and a higher weight, so these are practical options, not tested ones:
+
+- **A stationary bike or recumbent bike.** You keep moving while a seat carries your weight.
+- **Swimming or walking in water.** The water takes much of your weight off your feet.
+- **Seated or upper body exercise.** Arm cycling, resistance bands or chair workouts keep you active on days the heel is sore.
+- **Shorter walks, more often.** Several short walks can be easier on a sore heel than one long one.
+
+A simple check works for any activity: if your first steps the next morning are clearly worse, that day was more than the heel could take, so do a little less next time. [Walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.
+
+If you are starting to exercise to feel better or to lose weight, starting with low-impact activity lets you keep going while the heel settles. Jumping, running and long days on hard floors put the biggest peaks of load through the plantar fascia.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Do shoes and insoles matter more at a higher weight?
+
+No study has tested shoes or insoles for heel pain in people with a higher weight specifically. For heel pain in general, the 2023 guideline grades insoles on their own **B against**: the evidence says not to rely on them alone. Combined with stretching and strength work, they get a **C** (Koc and colleagues, 2023). [Insoles or exercises](https://walkito.site/insoles-vs-exercises/) compares the two.
+
+The guideline does recommend footwear advice as part of managing load, and it lists weight-bearing work on hard surfaces with poor shock absorption as a risk factor (Koc and colleagues, 2023). In practice, that points to cushioned shoes with a firm heel, worn in the house too, instead of bare feet or thin slippers on hard floors.
+
+After a lot of weight loss, feet can change. In the surgery study, the authors suggested that losing fat under the midfoot may change how shoes and insoles fit, and that this is worth checking after a large weight loss (Walsh and colleagues, 2018).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+
+### Will plantar fasciitis go away if I don’t lose weight?
+
+**For most people, yes, it eases with time and non-surgical care.** About 90% of people with plantar fasciitis get better with non-surgical care such as stretching and insoles, often within 3 to 6 months (Latt and colleagues, 2020).
+
+In a long follow-up of 174 people, the researchers tested whether BMI, age, smoking, physical work and other factors predicted who still had heel pain years later. Only being a woman and having pain in both heels did. BMI did not (Hansen and colleagues, 2018).
+
+So a higher weight may make plantar fasciitis more likely to start, but it does not mean you are stuck with it. The stretches and calf work above are the same ones that help people of any size. [How long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/) has the full timeline.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### See a clinician first if
+
+- you have diabetes and notice numbness, tingling, a wound, or changes in the skin or shape of your foot
+- the pain started after a fall, a jump or a twist, or you cannot put weight on the foot
+- the heel is swollen, red or warm, or you have a fever
+- the pain is worse at night or at rest, or comes with burning or numbness
+- it hurts when you squeeze the sides of the heel, or the pain keeps building with activity (possible stress fracture)
+- one calf is painful and swollen (possible blood clot): get help the same day
+- both heels hurt along with joint pain or stiffness elsewhere
+- you are thinking about weight loss medicines or surgery: that is a conversation for your doctor
+
+### Doing it as a plan
+
+Walkito is a heel and foot exercise app. It does not track your weight or give diet advice. It builds a plan from the stretches and calf strength work on this page and starts with seated and supported versions.
+
+#### Can being overweight cause plantar fasciitis?
+
+A higher weight is linked to plantar fasciitis, but no study proves it causes it. In people who are not athletes, a BMI over 30 came with 5.6 times the odds in one study, and a review of 51 studies found 3.7 times the odds above a BMI of 27. A stiff ankle was an even stronger factor.
+
+#### Does losing weight help plantar fasciitis?
+
+It may, but no randomized trial has tested it in people with heel pain. In a records study of 163 people with plantar fasciitis who had weight loss surgery, 90% had their heel symptoms resolve, but there was no comparison group, and most people with plantar fasciitis get better with time anyway. A 2012 review called the evidence limited.
+
+#### How much weight do I need to lose to help plantar fasciitis?
+
+No study has worked out an amount. There is no trial of weight loss for heel pain, so any number you read is a guess. If you want to lose weight for your health, talk to your doctor. For the heel itself, stretching and calf strength work have the strongest evidence, at any weight.
+
+#### Is BMI a risk factor for plantar fasciitis in runners?
+
+Mostly not. Two systematic reviews found that BMI was linked to chronic heel pain in people who are not athletes, but not in athletes. In runners, training load, such as a sudden jump in distance, matters more. See [heel pain in runners](https://walkito.site/heel-pain-runners/).
+
+#### What exercise can I do with plantar fasciitis if I am overweight?
+
+Seated and supported exercises are a good start: a plantar fascia stretch sitting down, calf stretches at a wall, and seated heel raises. For fitness, a stationary bike, swimming or walking in water keep you moving with less load on the heel. The 2023 guideline advises changing the load on your feet rather than stopping activity.
+
+#### Do weight loss medicines help plantar fasciitis?
+
+There is one observational study. People with long-standing heel pain who took semaglutide reported more improvement than those who did not, but they were not randomly assigned, and the authors call for a randomized trial. It is a decision for you and your doctor, not something to start for heel pain alone.
+
+#### Why do my heels hurt more after I gain weight?
+
+More body weight means more load on the plantar fascia with every step, and heel pain often starts after the load on your feet goes up. In a trial of 41 adults, losing weight lowered pressure under parts of the foot. Heel pain was not measured in that trial, so the link to pain is likely but not proven.
+
+#### Will plantar fasciitis go away without weight loss?
+
+For most people, yes. About 90% get better with non-surgical care such as stretching and insoles, often within 3 to 6 months. In a long follow-up of 174 people, BMI did not predict who still had heel pain years later. Being a woman and having pain in both heels did.
+
+#### Are insoles more important if I am heavier?
+
+No study has tested that. For heel pain in general, the 2023 guideline advises against relying on insoles alone (grade B against) and gives them a C when combined with stretching and strength work. Cushioned shoes with a firm heel, worn indoors too, are a sensible start. See [insoles or exercises](https://walkito.site/insoles-vs-exercises/).
+
+## Foot pain after hiking: why your feet hurt and what to do about it
+
+Language: English · https://walkito.site/hiking-foot-pain/ · published 2026-10-18 · updated 2026-10-18
+
+Sore feet after a long hike are common, and most of it is overload: more distance, more descent or a heavier pack than your feet are used to. In a survey of 1,295 long-distance hikers on the Appalachian Trail, 29% reported foot injury or pain, and 12% reported Achilles pain (Chrusch and Kavin, 2021). Heel pain on the first steps the next morning points to [plantar fasciitis](https://walkito.site/plantar-fasciitis/); pain on one spot of a bone that grows with each hike can be a stress fracture and needs a clinician.
+
+- Of 1,295 Appalachian Trail long-distance hikers, 61% reported a muscle, joint or bone complaint, 37% knee pain, 29% foot pain and 12% Achilles pain, and 11% stopped their hike because of it (Chrusch and Kavin, 2021).
+- Hikers who did no training before the trail reported foot pain more often, 38% against 28%, and any such injury more often, 80% against 58%. That is a link in a survey, not proof that training prevents injury (Chrusch and Kavin, 2021).
+- Foot blisters were the most common complaint among 280 Appalachian Trail hikers, reported by 64% (Boulware and colleagues, 2003).
+- Numbness or tingling rose with pack weight in 128 long-distance hikers, from 35% with 10 to 20 pound packs to 69% above 31 pounds. Shoe type and pack weight were not linked to other injuries (Anderson and colleagues, 2009).
+- Trekking poles reduced the load on the ankle, knee and hip when 15 experienced hikers walked downhill, with and without a pack (Bohne and Abendroth-Smith, 2007).
+
+### Why do your feet hurt after a hike?
+
+**Mostly because hiking loads the feet more, and for longer, than everyday walking.** You walk for hours, on uneven ground, up and down, often with a pack. Each of those adds work for the heel, the arch, the calf and the Achilles tendon.
+
+The best numbers come from long-distance hikers. In a 2018 to 2019 survey of 1,295 Appalachian Trail hikers, 61% reported a muscle, joint or bone complaint. Knee pain was the most common at 37%, then foot pain at 29%, ankle sprains at 13%, Achilles pain at 12% and shin pain at 11%. These complaints made 11% of them stop their hike (Chrusch and Kavin, 2021).
+
+Overuse problems, which build up over days of repeated load, were more common than sudden injuries: 28% against 18% in the same survey. That matters for day hikers too. A long first hike of the season, or a weekend with two big days in a row, is the same pattern on a smaller scale.
+
+These are self-reported surveys of people walking hundreds of miles. No study has counted foot pain in ordinary day hikers, so the exact figures will not apply to a weekend walker. The pattern of what hurts is the useful part.
+
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+
+### Where does it hurt, and what is it likely to be?
+
+Where the pain sits is the quickest clue. The table is a starting point, not a diagnosis. The [foot pain identifier](https://walkito.site/foot-pain-identifier/) asks a few more questions.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Boulware DR, Forgey WW, Martin WJ 2nd. Medical risks of wilderness hiking. Am J Med. 2003;114(4):288–293.
+
+### Why does downhill hiking hurt your feet more?
+
+**Going down, your legs work as brakes.** Each step down, the calf, the front of the shin and the thigh muscles control the drop while they lengthen. The foot also slides forward in the shoe, so the toes and the ball of the foot take more pressure. That is why many people feel fine on the climb and sore after the descent.
+
+In a lab study, 15 experienced male hikers walked downhill with no pack, a day pack of 15% of their body weight and an expedition pack of 30%. Using poles reduced the turning forces at the ankle, knee and hip and the peak braking work at the ankle and knee, with every pack (Bohne and Abendroth-Smith, 2007). In the Appalachian Trail survey, 70% carried poles or a stick, and poles went with fewer complaints (Chrusch and Kavin, 2021). That survey link does not prove that poles prevent injury.
+
+Practical points, none of them tested as foot pain prevention: take shorter steps on steep descents, lace the shoe firmly over the instep so the foot does not slide forward, and keep toenails short.
+
+Source: Bohne M, Abendroth-Smith J. Effects of hiking downhill using trekking poles while carrying external loads. Med Sci Sports Exerc. 2007;39(1):177–183.
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+
+### Does a heavier pack make foot pain worse?
+
+**A heavier pack means more load on every step, but the studies on hikers only show a clear link with numbness and tingling.** In a 2006 survey of 128 hikers who had walked more than 500 miles on the Appalachian or Pacific Crest Trail, numbness or tingling went up with pack weight: 35% with packs of 10 to 20 pounds, 50% with 21 to 30 pounds and 69% above 31 pounds (Anderson and colleagues, 2009).
+
+The same survey found that pack weight and shoe type were not linked to other muscle and joint injuries, such as sprains, long-lasting pain or muscle injuries. So nobody has shown that a lighter pack means less heel or arch pain. It is still a sensible place to start if your feet hurt only on the days you carry a full pack.
+
+If your toes burn or tingle, loosen the laces over the top of the foot and check the hip belt and shoulder straps, and see a clinician if it does not go away after you take the pack off.
+
+Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
+
+### Boots or trail runners: which is better for foot pain?
+
+**No trial has compared boots and trail runners for foot pain, so nobody can say one is better.** What exists are surveys:
+
+- In the 2006 survey of 128 long-distance hikers, numbness or tingling was reported by 29% in sandals, 36% in running shoes, 42% in hiking shoes and 68% in boots. After allowing for pack weight, the shoe type no longer mattered, which suggests the hikers in boots also carried heavier packs (Anderson and colleagues, 2009).
+- In the 2018 to 2019 Appalachian Trail survey, 58% wore running or trail shoes and 24% wore boots. Both went with fewer complaints than other footwear such as sandals (Chrusch and Kavin, 2021).
+
+So pick the shoe that fits, that you have already walked in, and that suits the ground. For heel pain in general, the 2023 guideline does not back insoles on their own and gives them a **C** when combined with exercise (Koc and colleagues, 2023). More in [insoles or exercises](https://walkito.site/insoles-vs-exercises/). If you want to change to lighter or flatter shoes, do it over weeks, not on the first long hike; [barefoot shoes](https://walkito.site/barefoot-shoes/) explains why.
+
+Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How fast can you build up hiking distance?
+
+**No study gives a safe weekly increase for hikers.** The closest evidence is the Appalachian Trail survey: the 13% of hikers who did no training before the trail reported more injuries overall (80% against 58%), more foot pain (38% against 28%), more Achilles pain (18% against 11%) and more lower leg stress fractures (5% against 2%). Strength training, stretching or yoga, and endurance training each went with fewer injuries (Chrusch and Kavin, 2021). It is a survey, so fitter or more careful people may simply have trained more.
+
+A practical way to build up, not a tested one:
+
+- Add one change at a time: more distance, more climb and descent, or a heavier pack, not all three on the same day.
+- Use the next morning as your check. Pain that settles by the next morning and is not creeping up week to week is a reasonable sign the load is fine. That rule comes from an Achilles trial, not from hikers (Silbernagel and colleagues, 2007).
+- After a big day, plan an easy one. The [Appalachian Trail Conservancy](https://appalachiantrail.org/experience/hike-the-trail/essential-skills/health-hygiene/common-injuries/) gives similar advice to long-distance hikers: stop for the day if your feet start to hurt, swell or feel tight after you have hiked further than normal.
+
+Calf strength is worth building between hikes, because the calf does much of the work on climbs and descents. The heel raises below are the same ones in the [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) guide.
+
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+
+### What is a good routine before and after a hike?
+
+Keep it short. Before the hike, a minute or two to get the ankles moving. After, the stretches that target the heel and calf. On days between hikes, heel raises for strength. The doses are Walkito’s starting doses from the main guides. Stop an exercise for the day if pain goes above 6 out of 10.
+
+Be honest about what stretching before a hike does. In a trial of 1,538 army recruits over three months of training, stretching six leg muscle groups before every session did not meaningfully reduce injuries (Pope and colleagues, 2000). The stretches here are for heel and calf pain, where the 2023 guideline grades stretching **A**, and strength work for the calf gets a **B** (Koc and colleagues, 2023).
+
+- **Ankle rocks (before)** (2 sets of 15, each leg): Split stance, hands on a wall, a tree or your poles. Rock the front knee forward over the toes, heel stays flat. Slow, about two seconds each way. Switch legs after each set.
+- **Calf stretch (after)** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the back heel flat on the floor and the hips forward. A tight calf pulls on the heel, so this stretch matters even though you feel it higher up.
+- **Soleus stretch (after)** (2 holds of 30 seconds, each leg): Take the same position, keep the back heel flat on the floor, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Plantar fascia stretch (after, and next morning)** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. The next morning, do the first one on the edge of the bed, before your foot touches the floor.
+- **Foot roll (after)** (1 minute, each foot): Sit and roll the sole of your foot slowly over a massage ball, with firm pressure. If you are wincing, ease off. No ball? Firm thumb strokes from heel to toes work too.
+- **Heel raises on both feet (between hikes)** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. When it is easy, move to one leg or the [towel heel raise](https://walkito.site/exercises/towel-heel-raise/). For Achilles pain, slow lowering on a step is the main exercise: see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+
+Source: Pope RP, Herbert RD, Kirwan JD, Graham BJ. A randomized trial of preexercise stretching for prevention of lower-limb injury. Medicine & Science in Sports & Exercise. 2000;32(2):271–277.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### When should you stop hiking and see a clinician?
+
+**Stop and get checked if the pain sits on one spot of a bone and gets worse with each hike.** That is the classic stress fracture pattern, usually in the metatarsals behind the toes or in the heel bone. In a review of stress fractures, 81% of patients had pain with walking, and a sore spot on the bone was found in 65.9 to 100%. An X-ray at the first visit picked up only about 10% of them, so a normal X-ray does not rule one out (Patel and colleagues, 2011). If you are not sure which it is, stop hiking until a clinician has checked it.
+
+Also stop if you cannot put weight on the foot, if pain started with a twist, a fall or a pop, or if the foot is red, hot and swollen. The full list is below.
+
+Most heel pain is less dramatic. For plantar fasciitis, about 90% of people get better with non-surgical care, though it can take months (Latt and colleagues, 2020). See [how long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/).
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### See a clinician first if
+
+- pain sits on one spot of a bone and gets worse with each hike, which can be a stress fracture
+- you cannot put weight on the foot, or you are limping
+- pain started with a twist, a fall or a pop, especially at the back of the heel
+- the foot or ankle is red, hot or swollen, or you have a fever
+- a blister or toenail looks infected: spreading redness, pus or red streaks
+- numbness, tingling or burning does not go away after you take off your pack and shoes
+- the foot hurts at night or at rest
+- pain keeps getting worse over two to three weeks despite shorter hikes
+
+### Doing it as a plan
+
+Walkito is a heel and foot exercise app with the stretches and heel raises on this page. It does not plan your hikes, so keep your own route plan and fit the sessions around it, with lighter sessions after a big day.
+
+#### Is it normal for your feet to hurt after hiking?
+
+Some soreness after a long or steep hike is common and usually settles within a day or two. In a survey of 1,295 Appalachian Trail hikers, 29% reported foot pain. Pain that is sharp, sits on one spot of a bone, or is still there after a few easy days is worth getting checked.
+
+#### Why does my heel hurt after hiking?
+
+The most common cause is plantar fasciitis, which hurts under the heel and is usually worst on the first steps the next morning. The 2023 guideline lists a recent increase in weight-bearing activity as a typical trigger, and a tight calf is the strongest known risk factor. Pain at the back of the heel points to the Achilles.
+
+#### Can I keep hiking with plantar fasciitis?
+
+Often yes, on shorter and flatter routes, if the pain stays moderate during the hike and settles by the next morning. That next-morning rule comes from an Achilles trial, not a hiking study. If the heel is worse each morning, cut distance and descent first. Our walking with plantar fasciitis guide explains how to build back up.
+
+#### Are boots or trail runners better for foot pain?
+
+Nobody knows for sure, because no trial has compared them. In surveys of long-distance hikers, both boots and trail shoes went with fewer complaints than sandals, and a link between boots and numbness disappeared once pack weight was taken into account. Pick the pair that fits and that you have already walked in.
+
+#### Does a heavy backpack cause foot pain?
+
+It adds load to every step, but the hiker surveys only show a clear link with numbness and tingling. In 128 long-distance hikers, that went from 35% with 10 to 20 pound packs to 69% above 31 pounds. Pack weight was not linked to other muscle and joint injuries in that survey.
+
+#### Why do my feet hurt more going downhill?
+
+On a descent your leg muscles work as brakes while they lengthen, and the foot slides forward in the shoe, loading the toes and the ball of the foot. In a lab study of 15 hikers walking downhill, trekking poles reduced the load at the ankle, knee and hip, with and without a pack.
+
+#### Do trekking poles help foot pain?
+
+They reduce load on the legs. In 15 experienced hikers walking downhill, poles reduced the forces at the ankle, knee and hip, and in a survey of Appalachian Trail hikers poles went with fewer complaints. No trial has tested whether poles prevent foot pain itself, so see them as a sensible extra, not a sure thing.
+
+#### How long should feet hurt after a long hike?
+
+Ordinary soreness from a big day usually fades within a day or two of easy activity. If heel pain on the first steps keeps coming back every morning, or pain is still there after a week of shorter walks, it is more likely an overuse problem such as plantar fasciitis or Achilles pain, and worth a proper check.
+
+#### Should I stretch before a hike?
+
+A short warm-up such as ankle rocks is fine, but do not expect stretching before a hike to prevent injury. In a trial of 1,538 army recruits, stretching before training did not meaningfully reduce injuries. Calf and arch stretches after the hike are more useful if your heel hurts, where the 2023 guideline grades them A.
 
 ## About Walkito
 
