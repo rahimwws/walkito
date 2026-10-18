@@ -1,0 +1,10 @@
+import { Guide } from '@/components/Guide';
+import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+
+const guide = ARTICLES_NEW.pt.chefs!;
+
+export const metadata = guideMetadata(guide);
+
+export default function ChefsPtPage() {
+  return <Guide guide={guide} />;
+}

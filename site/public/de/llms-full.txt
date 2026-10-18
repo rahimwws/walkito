@@ -10723,6 +10723,341 @@ Müde, schmerzende Füße nach einer langen Schicht im Stehen sind häufig, und 
 
 Viele tun das, mit Anpassungen. Kurze Dehnungen in den Pausen, besser passende Schuhe und Dämpfung dort, wo du stehst, verringern die Belastung, und bei etwa 90 % der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, auch wenn das drei bis sechs Monate dauern kann. Wenn der Schmerz trotzdem schlimmer wird, lass ihn ärztlich abklären.
 
+## Fußschmerzen als Koch oder Köchin: was bei langen Schichten in der Küche hilft
+
+Language: German (Deutsch) · https://walkito.site/de/fussschmerzen-koeche/ · published 2026-10-18 · updated 2026-10-18
+
+Fußschmerzen in der Küche kommen oft von langen Stunden im Stehen und Gehen auf harten Küchenböden. Bei Fersenschmerzen haben Dehnungen für Wade und Plantarfaszie die besten Belege, die die Leitlinie von 2023 zu Fersenschmerzen mit Empfehlungsgrad **A** bewertet, und Krafttraining für die Wade mit **B** (Koc und Kollegen, 2023). Rutschfeste Schuhe dienen der Sicherheit, nicht dem Schmerz: In einer randomisierten Studie in 226 Schulbezirken senkten kostenlose rutschfeste Schuhe für Beschäftigte der Schulverpflegung die gemeldeten Verletzungen durch Ausrutschen von 3,54 auf 1,18 pro 10.000 Beschäftigtenmonate (Bell und Kollegen, 2019). Keine Studie hat getestet, ob Clogs oder irgendein Küchenschuh die Fußschmerzen selbst verringern.
+
+- In einer Umfrage unter 128 Küchenbeschäftigten in Kairo berichteten 46,1 % über Fußschmerzen in den letzten 12 Monaten, nur unterer Rücken und Knie lagen davor (Abdelsalam und Kollegen, 2023).
+- Bei 475 Beschäftigten aus 36 US-Schnellrestaurants hing das Tragen rutschfester Schuhe mit einer um 54 % niedrigeren Rate an Ausrutschern zusammen (Verma und Kollegen, 2011).
+- In einer randomisierten Studie in der Schulverpflegung sanken die gemeldeten Verletzungen durch Ausrutschen von 3,54 auf 1,18 pro 10.000 Beschäftigtenmonate, wo die Beschäftigten kostenlose rutschfeste Schuhe bekamen, während sie in der Vergleichsgruppe von 2,01 auf 2,30 stiegen (Bell und Kollegen, 2019).
+- Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis um das 3,6-Fache, in einer Studie mit 50 Fällen und 100 Kontrollen, und eine verkürzte Wade um das 23,3-Fache (Riddle und Kollegen, 2003).
+- Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Dehnung von Wade und Plantarfaszie mit Empfehlungsgrad **A** und Krafttraining mit **B**. Einlagen allein bekommen **Empfehlungsgrad B gegen die Anwendung** (Koc und Kollegen, 2023).
+
+### Warum tun die Füße nach einer Schicht in der Küche so weh?
+
+**Küchenarbeit häuft genau das an, womit Füße am schlechtesten zurechtkommen: stundenlanges Stehen, kurze schnelle Wege, harte Böden und wenig Pausen.** In einer Umfrage unter 128 Küchenbeschäftigten in zwei großen Studentenwohnheimen in Kairo berichteten 90,6 % über Beschwerden des Bewegungsapparats in den letzten 12 Monaten. Der Fuß war mit 46,1 % die am dritthäufigsten betroffene Region, knapp hinter dem Knie mit 46,9 %.
+
+Die Zahlen schwanken stark zwischen den Studien. Bei 307 Köchen und Köchinnen in Restaurants in Pakistan, die meisten mit 9 bis 12 Stunden am Tag, berichteten 26 über Schmerzen in Sprunggelenk oder Fuß, deutlich weniger als die 101, die Schmerzen im unteren Rücken und im Knie angaben (Iqbal und Kollegen, 2023). Die Umfragen haben unterschiedliche Gruppen mit unterschiedlichen Fragen befragt. Lies sie also als grobes Bild, nicht als genaue Rate.
+
+Ein Zusammenhang zeigt sich deutlich. Bei 415 Küchenbeschäftigten in Hotels und Restaurants in Äthiopien ging langes Stehen mit einer 3,81-fachen Chance auf arbeitsbedingte Beschwerden des Bewegungsapparats einher (Abebaw und Kollegen, 2024). Diese Studie zählte Schmerzen im ganzen Körper, nicht nur in den Füßen.
+
+Source: Abdelsalam A, Wassif GO, Eldin WS, Abdel-Hamid MA, Damaty SI. Frequency and risk factors of musculoskeletal disorders among kitchen workers. Journal of the Egyptian Public Health Association. 2023;98(1):3.
+Source: Iqbal MU, Ahmad N, Khan ZSU, et al. Prevalence of musculoskeletal disorders among chefs working in restaurants of twins cities of Pakistan. Work. 2023;74(4):1507–1513.
+Source: Abebaw T, Destaw B, Yenealem DG, et al. Work-related musculoskeletal disorders: prevalence, associated factors, and impact on quality of life among kitchen workers in hospitality industry, Bahir Dar City, Northwest Ethiopia, 2023. Frontiers in Public Health. 2024;12:1358867.
+
+### Sind Fußschmerzen in der Küche eine Plantarfasziitis?
+
+Oft ist es allgemeine Müdigkeit und ein dumpfer Schmerz, der nach einer Nacht Ruhe nachlässt. Aber Küchenarbeit bringt die zwei stärksten Risikofaktoren mit, die eine Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne gefunden hat: Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache, und eine [verkürzte Wade](https://walkito.site/de/verspannte-waden/), die die Beugung im Sprunggelenk einschränkt, um das 23,3-Fache.
+
+Die Plantarfasziitis hat ein typisches Muster: stechender Schmerz unter der Ferse bei den ersten Schritten am Morgen oder nach dem Sitzen, der beim Gehen nachlässt und nach einem langen Tag zurückkommt. Dieses Muster beschreibt [Fersenschmerzen morgens](https://walkito.site/de/fersenschmerzen-morgens/), und den vollständigen Übungsratgeber findest du unter [Übungen und Dehnungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
+
+Andere Muster deuten auf etwas anderes hin:
+
+- Brennen unter dem Fußballen mitten im Service: siehe [Vorfußschmerzen](https://walkito.site/de/metatarsalgie-vorfussschmerzen/)
+- ein tiefer, prellungsartiger Schmerz in der Mitte der Ferse, der schlimmer wird, je länger du auf einem harten Boden stehst: siehe [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/)
+- ein Fußgewölbe, das am Ende der Schicht schmerzt oder sich flach anfühlt: siehe [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/)
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Clogs oder rutschfeste Schuhe: was sagen die Belege?
+
+**Die stärksten Belege zu Küchenschuhen betreffen das Ausrutschen, nicht schmerzende Füße.** Eine US-Studie begleitete 475 Beschäftigte aus 36 Schnellrestaurants über drei Monate. Wer Schuhe mit einer Kennzeichnung für Rutschfestigkeit auf der Sohle trug, berichtete über eine um 54 % niedrigere Rate an Ausrutschern als Beschäftigte ohne solche Schuhe, nach Berücksichtigung von Alter, Geschlecht, Körpergewicht und weiteren Faktoren (Verma und Kollegen, 2011).
+
+Eine randomisierte Studie testete das danach als Programm. Schulbezirke wurden per Zufall ausgewählt, um ihren Beschäftigten in der Schulverpflegung kostenlos rutschfeste Schuhe zu geben. Die gemeldeten Verletzungen durch Ausrutschen sanken in diesen Bezirken von 3,54 auf 1,18 pro 10.000 Beschäftigtenmonate und stiegen in den anderen von 2,01 auf 2,30 (Bell und Kollegen, 2019).
+
+Schuhe nutzen sich ab. Bei denselben Restaurantbeschäftigten hatten diejenigen, die schon rutschfeste Schuhe trugen und auf ein neues Paar wechselten, danach eine um 55 % niedrigere Rate an Ausrutschern, und Schuhe, die weniger als sechs Monate getragen wurden, schnitten etwas besser ab als ältere (Verma und Kollegen, 2014). Wann genau man sie ersetzen sollte, konnte die Studie nicht sagen.
+
+**Keine Studie, die wir gefunden haben, vergleicht Clogs mit Sneakern oder irgendeinen Küchenschuh mit einem anderen, was Fußschmerzen angeht.** Bei Fersenschmerzen im Allgemeinen bewertet die Leitlinie von 2023 [Einlagen](https://walkito.site/de/einlagen-oder-uebungen/) allein mit **Empfehlungsgrad B gegen die Anwendung**: Die Belege sprechen dagegen, sich nur auf sie zu verlassen. Eine sinnvolle Reihenfolge: Such dir einen Schuh mit rutschfester Sohle, der zu deinem Fuß passt, so wie er jetzt ist, und nicht auf die Zehen drückt, ersetze ihn, wenn das Profil abgelaufen ist, und mach gegen den Schmerz selbst die Dehnungen und das Krafttraining unten.
+
+Source: Verma SK, Chang WR, Courtney TK, et al. A prospective study of floor surface, shoes, floor cleaning and slipping in US limited-service restaurant workers. Occupational and Environmental Medicine. 2011;68(4):279–285.
+Source: Bell JL, Collins JW, Chiou S. Effectiveness of a no-cost-to-workers, slip-resistant footwear program for reducing slipping-related injuries in food service workers: a cluster randomized trial. Scandinavian Journal of Work, Environment & Health. 2019;45(2):194–202.
+Source: Verma SK, Zhao Z, Courtney TK, et al. Duration of slip-resistant shoe usage and the rate of slipping in limited-service restaurants: results from a prospective and crossover study. Ergonomics. 2014;57(12):1919–1926.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Wo in der Küche rutscht man am häufigsten aus?
+
+In der US-Studie in Restaurants passierten die meisten Ausrutscher an der **Spüle und an der Fritteuse**, also an den Stellen, die die Beschäftigten auch als am rutschigsten einstuften, und bei über 70 % der Ausrutscher war Flüssigkeit oder Fett auf dem Boden (Verma und Kollegen, 2010).
+
+Eine zweite Auswertung derselben Beschäftigten betrachtete den Moment jedes Ausrutschers. Die Rate an Ausrutschern war beim Gehen auf einem verschmutzten Boden 14,6-mal höher, in Eile 2,9-mal höher und bei Ablenkung 1,7-mal höher. Rutschfeste Schuhe schwächten die Wirkung von Eile und verschmutztem Boden ab (Verma und Kollegen, 2011).
+
+Auch ob der Arbeitgeber die Schuhe stellt, spielt eine Rolle. Wo der Arbeitgeber rutschfeste Schuhe stellte, trugen 91 % der Beschäftigten sie. Wo sie weder gestellt noch empfohlen wurden, waren es 53,5 % (Verma und Kollegen, 2010). Wenn deine Küche ein Schuhprogramm hat, lohnt es sich, es zu nutzen.
+
+Source: Verma SK, Chang WR, Courtney TK, et al. Workers' experience of slipping in U.S. limited-service restaurants. Journal of Occupational and Environmental Hygiene. 2010;7(9):491–500.
+Source: Verma SK, Lombardi DA, Chang WR, et al. Rushing, distraction, walking on contaminated floors and risk of slipping in limited-service restaurants: a case-crossover study. Occupational and Environmental Medicine. 2011;68(8):575–581.
+
+### Helfen Anti-Ermüdungsmatten und Kompressionsstrümpfe in der Küche?
+
+Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten, Kompressionsstrümpfe und stützende Schuhe zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden und weniger Ermüdung (Waters und Dick, 2015). Keine dieser Studien fand in Küchen statt. Eine Matte an einem Platz, an dem du lange stehst, etwa am Pass oder an einem Vorbereitungstisch, ist einen Versuch wert. Nimm eine, die flach liegt und auf einem nassen Boden nicht verrutscht, damit sie nicht selbst zur Stolperfalle wird.
+
+Kompressionsstrümpfe wurden in Küchen nicht getestet. In einer kleinen randomisierten Studie mit 40 Sicherheitskräften in Schichten von etwa 12 Stunden im Stehen verhinderten Strümpfe mit 15 bis 20 mmHg und mit 20 bis 30 mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat (Garcia und Kollegen, 2023). Die Sicherheitskräfte waren alle Männer und keiner arbeitete in einer Küche. Lies das also als wahrscheinlich passend, nicht als Beweis für die Küche.
+
+**Matten und Strümpfe machen eine Schicht angenehmer. Sie ersetzen nicht die Dehnungen und das Krafttraining**, die die Leitlinie zu Fersenschmerzen am höchsten bewertet.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Welche Übungen helfen Köchen und Köchinnen bei Fußschmerzen?
+
+Die Übungen stammen aus dem [Ratgeber zu Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/), mit denselben Anfangsdosen. Für die Dehnungen brauchst du nur eine Wand oder einen Stuhl. Sie passen also in eine Pause, vor den Service oder in den Moment, in dem du deine Arbeitsschuhe ausziehst. Heb dir das Krafttraining für freie Tage oder die Zeit nach der Schicht auf.
+
+Die Empfehlungsgrade der Leitlinie gelten für Plantarfasziitis und wurden nicht bei Küchenbeschäftigten getestet, aber es sind dieselben Gewebe, die eine Küchenschicht den ganzen Tag belastet. Wenn eine Übung deinen Schmerz auf 6 von 10 oder höher bringt, hör für diesen Tag auf.
+
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an eine Wand oder eine Arbeitsfläche aus Edelstahl. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Mach es auf einer trockenen Stelle des Bodens, nicht an der Spüle.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung weiter unten spürst, nah an der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt sich nur mit gebeugtem Knie dehnen.
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich mit den Füßen flach auf den Boden und drück dich über die Fußballen nach oben. Die Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, und die Ferse wird kaum belastet. Das passt in eine Pause auf einer umgedrehten Kiste oder einem Stuhl im Personalraum.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, geh gerade über die großen Zehen nach oben und senk dich dann langsam ab. Halt dich an einer Wand oder einem Geländer fest. Mach das zu Hause oder nach der Schicht, nicht auf einem nassen Küchenboden.
+- **Fußrollen** (1 Minute): Setz dich hin und roll die Fußsohle langsam mit festem Druck über einen Massageball. Wenn du das Gesicht verziehst, nimm Druck weg.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Wie passen die Übungen in eine Küchenschicht?
+
+Bei geteilten Diensten oder Doppelschichten bleibt wenig Raum für eine Routine. Knüpf die Übungen deshalb an etwas, das du sowieso tust:
+
+- **Wenn du 3 Minuten hast:** Wadendehnung und Soleusdehnung, je 30 Sekunden pro Seite, vor dem Service oder beim Schuhwechsel. Damit erreichst du die verkürzte Wade, den stärksten Risikofaktor in der Fall-Kontroll-Studie.
+- **Wenn du 5 Minuten hast:** Nimm die Plantarfaszien-Dehnung dazu. Dehnen ist der Teil, den die Leitlinie von 2023 mit **A** bewertet.
+- **Wenn du 10 Minuten hast:** An einem freien Tag oder nach der Schicht kommen das Fersenheben und eine Minute Fußrollen dazu. Krafttraining bekommt ein **B**.
+
+Pausen selbst scheinen zu zählen. Bei 1.909 Küchenbeschäftigten in Südkorea hatten Frauen, die über zu wenige Ruhepausen berichteten, eine 1,68-fache Chance auf Beschwerden des Bewegungsapparats (Park und Kollegen, 2021). Der Zusammenhang wurde für Frauen berichtet, und eine Umfrage wie diese kann Ursache und Wirkung nicht zeigen. Trotzdem lohnt es sich, die paar Minuten im Sitzen zwischen zwei Stoßzeiten zu verteidigen.
+
+Bei Plantarfasziitis im Allgemeinen wird es bei etwa 90 % der Menschen mit Behandlung ohne Operation besser, auch wenn das Monate dauern kann. Mehr unter [wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/). Die Leitlinie von 2023 schlägt außerdem vor, die Belastung der Füße bei der Arbeit anzupassen, ein Rat mit Empfehlungsgrad **E**, weil er auf Theorie beruht, nicht auf Studien.
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Park S, Lee J, Lee JH. Insufficient rest breaks at workplace and musculoskeletal disorders among Korean kitchen workers. Safety and Health at Work. 2021;12(2):225–229.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Schmerz nach einem Ausrutschen, einem Sturz, einem Umknicken oder nach etwas Schwerem, das auf deinen Fuß gefallen ist, begann
+- du den Fuß nicht belasten kannst oder humpelst
+- der Fuß taub ist, kribbelt oder brennt oder geschwollen, gerötet oder warm ist
+- du am Fuß eine Verbrennung, einen Schnitt oder eine Blase hast, die nicht besser wird, vor allem bei Diabetes oder vermindertem Gefühl in den Füßen
+- eine Wade oder ein Bein plötzlich schmerzt und geschwollen ist
+- der Schmerz dich nachts weckt oder in Ruhe da ist
+- der Schmerz an einer punktgenauen Stelle sitzt und bei Belastung schlimmer wird, was auf einen Ermüdungsbruch hindeuten kann
+- der Schmerz nach mehreren Wochen mit besseren Schuhen, mehr Pausen und den Übungen auf dieser Seite nicht nachgelassen hat
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App für Ferse und Fuß auf iPhone und Android. Sie kennt deinen Dienstplan nicht. Du entscheidest also selbst, wann die Einheiten stattfinden: vor dem Service, zwischen zwei Schichten oder an freien Tagen.
+
+#### Warum tun meine Füße nach der Arbeit in der Küche so weh?
+
+Küchenschichten verbinden stundenlanges Stehen, kurze schnelle Wege und harte Böden. In einer Umfrage unter 128 Küchenbeschäftigten berichteten 46,1 % über Fußschmerzen im letzten Jahr. Stehen über den größten Teil des Arbeitstags erhöhte in einer Fall-Kontroll-Studie außerdem die Chance auf eine Plantarfasziitis um das 3,6-Fache. Tägliche Dehnungen für Wade und Plantarfaszie setzen an den Geweben an, die am stärksten belastet werden.
+
+#### Sind Clogs gut für Köche und Köchinnen mit Fußschmerzen?
+
+Das weiß niemand genau: Keine Studie, die wir gefunden haben, vergleicht Clogs mit Sneakern oder anderen Küchenschuhen, was Fußschmerzen angeht. Für die Sicherheit zählt vor allem eine rutschfeste Sohle. Bei Fersenschmerzen bewertet die Leitlinie von 2023 Einlagen allein mit Empfehlungsgrad B gegen die Anwendung. Kombiniere also den Schuh, der dir am besten passt, mit Dehnungen für Wade und Plantarfaszie, die sie mit A bewertet.
+
+#### Wirken rutschfeste Schuhe in Restaurants wirklich?
+
+Gegen Ausrutschen ja. Bei 475 Beschäftigten aus 36 US-Schnellrestaurants hingen rutschfeste Schuhe mit einer um 54 % niedrigeren Rate an Ausrutschern zusammen. In einer randomisierten Studie in der Schulverpflegung senkten kostenlose rutschfeste Schuhe die gemeldeten Verletzungen durch Ausrutschen von 3,54 auf 1,18 pro 10.000 Beschäftigtenmonate. Diese Studien haben Ausrutscher gemessen, nicht Fußschmerzen.
+
+#### Wie oft sollte man Küchenschuhe ersetzen?
+
+Es gibt keine getestete Regel. In einer Studie mit 475 Restaurantbeschäftigten schützten rutschfeste Schuhe, die weniger als sechs Monate getragen wurden, etwas besser vor Ausrutschern als ältere, und wer schon rutschfeste Schuhe trug und auf ein neues Paar wechselte, rutschte 55 % seltener aus. Prüf das Profil und ersetze die Schuhe, sobald das Muster auf der Sohle glatt abgelaufen ist.
+
+#### Helfen Anti-Ermüdungsmatten in der Küche?
+
+Wahrscheinlich, für das Wohlgefühl. Eine Übersichtsarbeit von 2015 zur Arbeit im Stehen zählt Bodenmatten zu den Maßnahmen mit gewissen Belegen für weniger Beschwerden und weniger Ermüdung, aber keine dieser Studien fand in Küchen statt. Leg eine Matte dorthin, wo du lange an einer Stelle stehst, und nimm eine, die flach liegt und auf einem nassen Boden nicht rutscht.
+
+#### Helfen Kompressionsstrümpfe bei langen Schichten in der Küche?
+
+Vielleicht. In einer Studie mit 40 Sicherheitskräften in Schichten von etwa 12 Stunden im Stehen verhinderten Strümpfe mit 15 bis 20 mmHg und mit 20 bis 30 mmHg beide den Anstieg von Beschwerden und Schwellung in den Beinen, der mit normalen Socken auftrat. Die Studie war klein und fand nicht in Küchen statt, und Strümpfe ersetzen weder Dehnungen noch Krafttraining.
+
+#### Kann man als Koch oder Köchin eine Plantarfasziitis bekommen?
+
+Küchenarbeit bringt bekannte Risikofaktoren mit. In einer Fall-Kontroll-Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne erhöhte Stehen über den größten Teil des Arbeitstags die Chance um das 3,6-Fache und eine verkürzte Wade um das 23,3-Fache. Keine Studie hat Plantarfasziitis speziell bei Köchen und Köchinnen gemessen.
+
+#### Was kann ich mitten im Service gegen schmerzende Füße tun?
+
+Verlagere dein Gewicht, setz dich in Pausen hin, wenn es geht, und mach auf einer trockenen Stelle des Bodens eine Wadendehnung von 30 Sekunden an der Wand. Bei Küchenbeschäftigten in Südkorea hatten Frauen mit zu wenigen Ruhepausen eine 1,68-fache Chance auf Beschwerden des Bewegungsapparats. Heb dir das Fersenheben und längere Einheiten für nach der Schicht oder freie Tage auf.
+
+## Fußschmerzen im Friseurberuf: was hilft, wenn du den ganzen Tag an einer Stelle stehst
+
+Language: German (Deutsch) · https://walkito.site/de/fussschmerzen-friseure/ · published 2026-10-18 · updated 2026-10-18
+
+Fußschmerzen im Friseurberuf kommen vor allem vom stundenlangen Stillstehen am Stuhl, nicht vom Gehen. Die Möglichkeiten mit etwas Belegen zielen deshalb auf das Stehen an einer Stelle: ein gedämpfter Boden oder Schuh, leichte Kompressionsstrümpfe und eine Minute Wadenübungen zwischen zwei Kundinnen oder Kunden. In einer Studie mit 384 Friseurinnen und Friseuren und 384 Menschen in anderen Berufen berichteten 49,5 % der Friseure über Knie- oder Fußschmerzen, gegenüber 38,3 % der Vergleichsgruppe (Mishra und Sarkar, 2021).
+
+- Von 384 Friseurinnen und Friseuren in Indien berichteten 49,5 % über Knie- oder Fußschmerzen in den letzten 12 Monaten, gegenüber 38,3 % von 384 Menschen in anderen Berufen. Die Studie zählte Knie und Fuß zusammen (Mishra und Sarkar, 2021).
+- Ein Scoping-Review von 2019 mit 44 Studien fand nur 5, die Fußschmerzen im Friseurberuf erfassten, mit Werten von 10 bis 44 %. Die meisten Studien betrachteten Rücken, Nacken, Schultern und Hände, und Stehen war einer der häufigen Risikofaktoren (Kozak und Kollegen, 2019).
+- In einer randomisierten Crossover-Studie mit 108 Friseurinnen und Friseuren senkten Kompressionsstrümpfe mit 15 bis 20 mmHg den Wert für Beinschmerzen und Schwellungsgefühl um 12 % und das Volumen des Unterschenkels im Schnitt um 19 ml (Blazek und Kollegen, 2013).
+- Eine Übersichtsarbeit von 2018 mit 10 Studien fand mäßige Belege, dass weichere Böden und gedämpfte Einlagen Beschwerden und Ermüdung bei Menschen verringern, die im Stehen arbeiten (Speed und Kollegen, 2018).
+- Eine verkürzte Wade war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).
+
+### Wie häufig sind Fußschmerzen im Friseurberuf?
+
+**Fuß- und Beinschmerzen sind im Friseurberuf häufig, aber viel weniger erforscht als Schulter- oder Rückenschmerzen.** Ein Scoping-Review von 2019 sammelte 44 Studien zu Muskel- und Skelettbeschwerden im Friseurhandwerk. Nur 5 davon erfassten Fußschmerzen, und die Werte reichten von 10 bis 44 %. Die Spanne ist so groß, weil die Studien unterschiedliche Fragen, Länder und Zeiträume verwendet haben.
+
+Die größte Studie mit Vergleichsgruppe befragte 384 Friseurinnen und Friseure und 384 Menschen in anderen Berufen in zwei indischen Städten. Knie- oder Fußschmerzen waren in beiden Gruppen die häufigste Beschwerde: 49,5 % bei den Friseuren gegenüber 38,3 % bei den anderen. Die Studie zählte Knie und Fuß als eine Kategorie und kann deshalb nicht sagen, wie viel davon allein auf die Füße entfiel.
+
+Eine britische Studie mit 147 Friseurinnen und Friseuren und 67 Menschen in anderen Berufen fand arbeitsbedingte Bein- oder Fußschmerzen bei den Friseuren deutlich häufiger. Die Chance war 31-mal höher, aber der statistische Bereich war sehr breit, von etwa dem 4- bis zum 267-Fachen. Wie groß der Unterschied wirklich ist, bleibt also unsicher. In einer türkischen Studie von 2023 waren nach dem unteren Rücken die Unterschenkel die schmerzhaftesten Bereiche: 36,9 % rechts und 32,5 % links.
+
+Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
+Source: Mishra S, Sarkar K. Work-related musculoskeletal disorders and associated risk factors among urban metropolitan hairdressers in India. Journal of Occupational Health. 2021;63(1):e12200.
+Source: Bradshaw L, Harris-Roberts J, Bowen J, Rahman S, Fishwick D. Self-reported work-related symptoms in hairdressers. Occupational Medicine (London). 2011;61(5):328-334.
+Source: İnce Parpucu T, Ercan S, Başkurt Z, Başkurt F. The impact of lower extremity fatigue on lower quadrant dysfunction and health profile in hairdressers. La Medicina del Lavoro. 2023;114(3):e2023019.
+
+### Warum tut Stehen an einer Stelle mehr weh als Gehen?
+
+Ein Tag im Salon ist anders als ein Tag in der Pflege. Du legst keine langen Strecken zurück. Du stehst am Stuhl, verlagerst dich ein wenig, beugst dich vor und stehst wieder. Wenn du stillstehst:
+
+- Die Wadenmuskeln halten eine Position und pumpen deshalb kein Blut mehr das Bein hinauf.
+- Blut und Flüssigkeit sammeln sich in Unterschenkeln und Füßen. Deshalb fühlen sich die Schuhe abends enger an.
+- Das Fersenpolster und die Plantarfaszie, das Band unter dem Gewölbe, tragen eine gleichbleibende Last ohne Pause.
+
+Laborstudien zeigen, wie schnell sich das aufbaut. Eine Übersichtsarbeit von 2017 mit 25 Laborstudien fand, dass Beschwerden im unteren Rücken im Schnitt nach etwa 71 Minuten Stehen klinisch relevant wurden, bei Menschen, die zu Schmerzen beim Stehen neigen, nach 42 Minuten. Eine einzige Farbe oder ein Schnitt kann länger dauern. Eine Übersichtsarbeit von 2015 zum Stehen bei der Arbeit brachte langes Stehen in vielen Berufen mit Schmerzen im unteren Rücken und in den Beinen, Beschwerden und Ermüdung in Verbindung.
+
+In einer Studie von 2023 mit türkischen Friseurinnen und Friseuren hatten diejenigen, die über Ermüdung in den Unterschenkeln berichteten, auch mehr Schmerzen in Knien und Unterschenkeln und schlechtere Werte für Energie und Beweglichkeit. **Auch die Schwellung lässt sich messen:** Bei 38 Friseurinnen und Friseuren nahm der Knöchelumfang an einem Tag ohne Kompression von 21,1 cm am Morgen auf 22,1 cm am Abend zu.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: İnce Parpucu T, Ercan S, Başkurt Z, Başkurt F. The impact of lower extremity fatigue on lower quadrant dysfunction and health profile in hairdressers. La Medicina del Lavoro. 2023;114(3):e2023019.
+Source: Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effectiveness of wearing compression stockings for prevention of occupational edema in hairdressers. Jornal Vascular Brasileiro. 2020;19:e20190028.
+
+### Wirkt sich die Haltung am Stuhl auf deine Füße aus?
+
+Studien zur Haltung im Friseurberuf konzentrieren sich auf Rücken und Arme, nicht auf die Füße. Ein Scoping-Review berichtete, dass Friseurinnen und Friseure sich beim Schneiden und Waschen oft vorbeugen oder verdrehen, und dass die Wirbelsäule beim Schneiden in einer Messstudie 66 % der Zeit nach vorn gebeugt war. Wer sich lange vorbeugt, verlagert das Gewicht meist zum Vorfuß.
+
+Keine Studie hat gemessen, wie die Haltung im Salon die Last auf den Füßen verändert. Was du steuern kannst, ist einfach: Stell den Stuhl der Kundin oder des Kunden höher oder tiefer, damit du dich nicht vorbeugen musst, verteil dein Gewicht auf beide Füße und wechsel alle paar Minuten deinen Stand. In einer Laborstudie über vier Stunden Stehen berichteten Menschen, die ihr Gewicht häufiger verlagerten, auch über mehr Beschwerden. Häufiges Verlagern kann also ein Zeichen sein, dass sich Beschwerden aufbauen, und ein guter Anlass für eine kurze Pause (Wiggermann und Keyserling, 2013).
+
+Wenn dir mit den Füßen auch der Rücken wehtut, wirkt der Zusammenhang in beide Richtungen. [Plattfuß und Rückenschmerzen](https://walkito.site/de/plattfuss-rueckenschmerzen/) zeigt, was die Forschung dazu sagt.
+
+Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
+Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
+
+### Welche Schuhe sind die besten für Friseurinnen und Friseure?
+
+**Keine Studie hat Schuharten im Friseurberuf verglichen.** Die Schuhtipps im Netz stammen von Schuhmarken oder Praxen, nicht aus Studien in Salons. Was die breitere Forschung zum Stehen stützt, ist Dämpfung: Eine Übersichtsarbeit von 2018 mit 10 Studien fand mäßige Belege, dass gedämpfte Einlagen und weichere Böden Beschwerden und Ermüdung bei Menschen verringern, die im Stehen arbeiten, und begrenzte Belege, dass Einlagen mehr bringen als Matten.
+
+In der Praxis achte auf:
+
+- Eine gedämpfte Sohle und etwas Unterstützung fürs Gewölbe, damit Ferse und Gewölbe nicht die volle Last eines harten Bodens tragen.
+- Eine geschlossene Spitze, die die Zehen nicht einengt. Schmerzen zwischen den Zehen können ein [Morton-Neurom](https://walkito.site/de/morton-neurom/) sein.
+- Einen niedrigen, stabilen Absatz. Hohe Absätze legen mehr Gewicht auf den Vorfuß.
+- Eine rutschfeste Sohle. Böden im Salon werden nass und glatt.
+
+Manche wechseln an einem langen Tag zur Hälfte die Schuhe. Getestet hat das keine Studie, aber ein anderer Schuh verteilt die Last anders. Wenn du schon Schmerzen in Ferse oder Gewölbe hast, können Einlagen den Tag angenehmer machen. Sie wirken aber auf den Komfort, nicht auf Wade und Gewölbe selbst. [Einlagen oder Übungen](https://walkito.site/de/einlagen-oder-uebungen/) vergleicht beides.
+
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+
+### Helfen Anti-Ermüdungsmatten im Friseursalon?
+
+Eine Matte an deinem Platz ist eine der einfachsten Änderungen mit Belegen dahinter. In einer Laborstudie standen Menschen vier Stunden lang auf vier verschiedenen Anti-Ermüdungsmatten und auf einem harten Boden. Drei der vier Matten verringerten die Beschwerden im Vergleich zum harten Boden, aber die Matten unterschieden sich untereinander kaum.
+
+Die Belege sind nicht alle positiv. In einer kleinen Studie von 1994 mit 5 Personen verringerten Matten die Muskelermüdung nur im unteren Rücken, und nur mit der weicheren von zwei Matten. Die Beinmuskeln zeigten keine Veränderung. **Eine Matte hilft also beim Komfort, ersetzt aber nicht Bewegung und Dehnen.**
+
+Leg die Matte im Salon dorthin, wo du wirklich stehst, also hinter den Stuhl, und halt sie flach, damit du nicht über die Kanten stolperst. Haare und Wasser können eine Matte rutschig machen, also feg sie oft.
+
+Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
+Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
+Source: Kim JY, Stuart-Buttle C, Marras WS. The effects of mats on back and leg fatigue. Applied Ergonomics. 1994;25(1):29-34.
+
+### Solltest du einen Hocker oder eine Stehhilfe nutzen?
+
+**Keine Studie hat getestet, ob ein Hocker Fußschmerzen im Friseurberuf verringert.** Sitzen nimmt Last von den Füßen, und in Studien im Büro verringerte der Wechsel zwischen Sitzen und Stehen Beschwerden im unteren Rücken, ohne dass die Arbeitsleistung sank (Karakolis und Callaghan, 2014). Das ist der beste indirekte Beleg dafür, etwas Sitzen einzubauen.
+
+Ein Hocker hat einen Haken. Eine deutsche Haltungsstudie, zusammengefasst im Scoping-Review von 2019, fand, dass Friseurinnen und Friseure auf einem Rollhocker den unteren Rücken stärker beugten und die Hände häufiger über Schulterhöhe hoben. Ein zu niedriger Hocker kann Fußschmerzen gegen Rücken- und Schulterbeschwerden tauschen.
+
+Ein praktischer Weg: Nutz den Hocker für Arbeiten, bei denen du dich nicht strecken musst, etwa Detailarbeit am Hinterkopf oder Strähnen in den unteren Partien, und steh für den Rest. Stell den Hocker so hoch, dass deine Arme unter Schulterhöhe bleiben. Wenn du am Waschbecken arbeitest, setz dich, wenn der Platz es erlaubt.
+
+Source: Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.
+Source: Kozak A, Wirth T, Verhamme M, Nienhaus A. Musculoskeletal health, work-related risk factors and preventive measures in hairdressing: a scoping review. Journal of Occupational Medicine and Toxicology. 2019;14:24.
+
+### Welche Übungen kannst du zwischen zwei Kunden machen?
+
+Es sind dieselben Übungen wie bei [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) und Schmerzen vom Stehen im Allgemeinen: Wadendehnungen, Fersenheben und eine Plantarfaszien-Dehnung. Anders ist im Friseurberuf das Timing. **Zwischen den Kundinnen und Kunden hast du kurze Lücken, also nimm eine oder zwei Übungen pro Lücke statt einer ganzen Routine.** Keine Studie hat Übungspausen für die Füße im Friseurberuf getestet. Die Dosierungen hier stammen deshalb aus dem Hauptratgeber zu Fersenschmerzen.
+
+Die Wade zählt am meisten. In einer Fall-Kontroll-Studie erhöhte eine verkürzte Wade die Chance auf Plantarfasziitis um das 23,3-Fache, mehr als jeder andere Faktor. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.
+
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an eine Wand oder an die Rückseite deines Arbeitsplatzes. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Zweimal halten pro Bein dauert etwa zwei Minuten und passt damit in eine Lücke zwischen zwei Terminen.
+- **Soleusdehnung** (2-mal 30 Sekunden halten, jedes Bein): Dieselbe Position, hintere Ferse flach, dann beug das hintere Knie, bis du die Dehnung weiter unten spürst, nah an der Ferse. Der Soleus, der tiefere Wadenmuskel, hält dich aufrecht, wenn du stillstehst, und er lässt nur mit gebeugtem Knie los.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, drück dich gerade über die großen Zehen nach oben und senk dich langsam ab. Halt dich zum Gleichgewicht am Arbeitsplatz fest. Neben dem Kraftaufbau bringt das die Wadenpumpe in Gang, die Blut das Bein hinaufdrückt. Beim Stillstehen passiert das nicht.
+- **Fersenheben im Sitzen** (3 Sätze à 10, beide Füße): Setz dich auf deinen Hocker, die Füße flach, und drück dich über die Fußballen nach oben. Die Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, fast ohne Last auf der Ferse. Eine gute Wahl, wenn deine Fersen schon wund sind.
+- **Sprunggelenk-Wippen** (2 Sätze à 15, jedes Bein): Schrittstellung, Hände an der Wand. Schieb das vordere Knie über die Zehen nach vorn, während die Ferse flach bleibt. Langsam, etwa zwei Sekunden in jede Richtung. Das bewegt das Sprunggelenk nach einer langen Phase im Stillstand.
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg einen Fuß über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Mach sie in einer Pause, in der du sitzen kannst, und vor deinen ersten Schritten am Morgen, wenn die Ferse dann am meisten wehtut.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Helfen Kompressionsstrümpfe im Friseurberuf?
+
+**Kompressionsstrümpfe gehören zu den wenigen Dingen, die direkt im Friseurberuf getestet wurden.** In einer randomisierten Crossover-Studie aus der Schweiz trugen 108 Friseurinnen und Friseure in einem Zeitraum leichte Kompressionsstrümpfe (15 bis 20 mmHg) und in einem anderen keine. Mit Strümpfen sank der Wert für Beinschmerzen und Schwellungsgefühl im Schnitt um 12 %, und das Volumen des Unterschenkels nahm um 19 ml ab. Auch die Werte für Schlaf und Stimmung wurden besser.
+
+Eine kleinere brasilianische Studie mit 38 Friseurinnen und Friseuren maß den Knöchel. Ohne Strümpfe nahm der Umfang von 21,1 cm am Morgen auf 22,1 cm am Abend zu. Mit Strümpfen lag er am Abend bei 21,2 cm, also etwa so wie am Morgen.
+
+Die Effekte waren mäßig, und die Studien maßen Schwellung und Beschwerden in den Beinen, nicht Fußerkrankungen wie die Plantarfasziitis. Eine Studie von 2023 mit Sicherheitskräften fand ähnliche Ergebnisse bei langen Schichten im Stehen. **Strümpfe helfen gegen Schwellung und schwere Beine, Wade und Gewölbe brauchen trotzdem ihre eigenen Übungen.** Wenn du Diabetes, eine schlechte Durchblutung oder taube Füße hast, lass vor dem Tragen von Kompressionsstrümpfen ärztlich abklären, ob sie für dich passen.
+
+Source: Blazek C, Amsler F, Blaettler W, Keo HH, Baumgartner I, Willenberg T. Compression hosiery for occupational leg symptoms and leg volume: a randomized crossover trial in a cohort of hairdressers. Phlebology. 2013;28(5):239-247.
+Source: Agle CG, de Sá CKC, Amorim DS, Figueiredo MAM. Evaluation of the effectiveness of wearing compression stockings for prevention of occupational edema in hairdressers. Jornal Vascular Brasileiro. 2020;19:e20190028.
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+
+### Könnte es eine Plantarfasziitis, Krampfadern oder etwas anderes sein?
+
+Allgemeine Schmerzen und schwere Beine nach einem Tag im Salon sind häufig und lassen meist über Nacht nach. Manche Muster deuten auf etwas Bestimmteres hin:
+
+- Ein stechender Fersenschmerz bei den ersten Schritten am Morgen oder nach dem Sitzen spricht für eine [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/). Die vollständige Routine steht unter [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
+- Brennen oder Schmerzen unter dem Fußballen passen zu [Vorfußschmerzen](https://walkito.site/de/metatarsalgie-vorfussschmerzen/), häufig bei dünnen Sohlen oder Absätzen.
+- Ein Gewölbe, das abends schmerzt oder flacher aussieht, passt zu [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/).
+- Geschwollene, geschlängelte oder hervortretende Venen an den Beinen können Krampfadern sein. In einer Befragung von 182 Friseurinnen und Friseuren in Taiwan hatten 24,2 % welche, und bei den über 45-Jährigen waren viele Stunden Stehen pro Monat ein Risikofaktor (Chen und Guo, 2014).
+
+Wenn du nicht sicher bist, woher der Schmerz kommt, kann eine Ärztin oder ein Arzt es dir sicher sagen. **Wenn sich der Schmerz verändert, ausbreitet oder in Ruhe nicht mehr nachlässt, lass ihn ärztlich abklären, bevor du ihn mit Übungen belastest.**
+
+Source: Chen CL, Guo HR. Varicose veins in hairdressers and associated risk factors: a cross-sectional study. BMC Public Health. 2014;14:885.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Schmerz nach einem Sturz, einem Umknicken oder etwas, das dir auf den Fuß gefallen ist, angefangen hat
+- du den Fuß nicht belasten kannst oder hinkst
+- der Fuß taub ist, kribbelt oder brennt
+- ein Bein plötzlich angeschwollen ist und schmerzt, gerötet oder warm ist
+- der Fuß gerötet oder heiß ist oder du Fieber hast oder dich krank fühlst
+- der Schmerz dich nachts weckt oder auch in Ruhe da ist
+- du Diabetes, eine schlechte Durchblutung oder weniger Gefühl in den Füßen hast
+- der Schmerz nach mehreren Wochen mit besseren Schuhen, einer Matte, Pausen und den Übungen auf dieser Seite nicht nachgelassen hat
+
+### Als Plan umsetzen
+
+Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito ist eine Übungs-App für Ferse und Fuß, die deinen Plan Woche für Woche aufbaut, und die Einheiten sind kurz genug für vor der Arbeit oder eine Pause.
+
+#### Warum tun Friseurinnen und Friseuren die Füße so weh?
+
+Im Friseurberuf stehst du lange an einer Stelle. Das belastet Ferse und Gewölbe, ohne die Wadenpumpe, die beim Gehen arbeitet. In einer Studie mit 384 Friseurinnen und Friseuren berichteten 49,5 % über Knie- oder Fußschmerzen in 12 Monaten, gegenüber 38,3 % der Menschen in anderen Berufen. Vorbeugen, harte Böden und Schuhe ohne Halt erhöhen die Last zusätzlich.
+
+#### Welche Schuhe sind die besten bei Fußschmerzen im Friseurberuf?
+
+Keine Studie hat Schuharten im Friseurberuf verglichen, einen erwiesen besten Schuh gibt es also nicht. Achte auf eine gedämpfte Sohle, etwas Unterstützung fürs Gewölbe, einen niedrigen Absatz, Platz für die Zehen und eine rutschfeste Sohle. Eine Übersichtsarbeit von 2018 mit 10 Studien fand mäßige Belege, dass gedämpfte Einlagen und weichere Böden Beschwerden bei Arbeit im Stehen verringern.
+
+#### Bringen Anti-Ermüdungsmatten im Friseursalon etwas?
+
+Sie helfen beim Komfort. In einer Laborstudie über vier Stunden Stehen verringerten drei von vier Anti-Ermüdungsmatten die Beschwerden im Vergleich zu einem harten Boden. Eine kleine ältere Studie fand, dass Matten die Ermüdung der Rückenmuskeln verringerten, aber nicht die der Beinmuskeln. Eine Matte an deinem Platz lohnt sich, ersetzt aber nicht Dehnen und Bewegung zwischen den Terminen.
+
+#### Sollten Friseurinnen und Friseure Kompressionsstrümpfe tragen?
+
+Leichte Kompression gehört zu den wenigen Möglichkeiten, die im Friseurberuf getestet wurden. In einer Crossover-Studie mit 108 Friseurinnen und Friseuren senkten Strümpfe mit 15 bis 20 mmHg den Wert für Beinschmerzen und Schwellungsgefühl um 12 % und das Volumen des Unterschenkels um 19 ml. Der Effekt war mäßig. Wenn du Diabetes oder eine schlechte Durchblutung hast, lass es vorher ärztlich abklären.
+
+#### Ist es im Friseurberuf besser, auf einem Hocker zu sitzen?
+
+Sitzen für einen Teil des Tages nimmt Last von den Füßen, aber keine Studie hat Hocker gegen Fußschmerzen im Friseurberuf getestet. Eine Haltungsstudie fand, dass Menschen auf einem Hocker den unteren Rücken stärker beugten und die Hände häufiger über die Schulter hoben. Stell den Hocker so hoch, dass deine Arme unten bleiben, und steh für den Rest.
+
+#### Welche Dehnungen gehen zwischen zwei Kunden?
+
+Die Wadendehnung und die Soleusdehnung, je 2-mal 30 Sekunden pro Bein, passen in eine Lücke zwischen zwei Terminen. Fersenheben, 3 Sätze à 10, bringt die Wadenpumpe nach dem Stillstehen wieder in Gang. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Wadendehnung und Plantarfaszien-Dehnung bei Plantarfasziitis mit A, ihrem höchsten Empfehlungsgrad.
+
+#### Kann die Arbeit als Friseur eine Plantarfasziitis auslösen?
+
+Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf Plantarfasziitis in einer Fall-Kontroll-Studie mit 50 Fällen und 100 Kontrollen um das 3,6-Fache, und eine verkürzte Wade erhöhte sie um das 23,3-Fache. Keine Studie hat Plantarfasziitis gezielt im Friseurberuf gemessen, aber die Arbeit im Salon bedeutet genau diese Art von langem Stehen.
+
+#### Wie lange kann man im Friseurberuf stehen, bevor man eine Pause braucht?
+
+Für den Friseurberuf gibt es keine getestete Grenze. In einer Übersichtsarbeit zu Laborstudien wurden Beschwerden im unteren Rücken im Schnitt nach etwa 71 Minuten Stehen klinisch relevant, bei Menschen, die zu Schmerzen beim Stehen neigen, nach 42 Minuten. Lange Termine mit einer kurzen Dehnung, ein paar Fersenheben oder einer Minute auf dem Hocker zu unterbrechen, ist ein vernünftiger Weg.
+
 ## Über Walkito
 
 https://walkito.site/de/ueber-walkito/

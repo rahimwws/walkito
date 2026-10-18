@@ -272,6 +272,12 @@ import { RETAIL_WAREHOUSE_DE } from './articles-de/retail-warehouse-foot-pain';
 import { RETAIL_WAREHOUSE_FR } from './articles-fr/retail-warehouse-foot-pain';
 import { RETAIL_WAREHOUSE_IT } from './articles-it/retail-warehouse-foot-pain';
 import { RETAIL_WAREHOUSE_PT } from './articles-pt/retail-warehouse-foot-pain';
+import { CHEFS_DE } from './articles-de/chefs-foot-pain';
+import { CHEFS_FR } from './articles-fr/chefs-foot-pain';
+import { CHEFS_IT } from './articles-it/chefs-foot-pain';
+import { CHEFS_PT } from './articles-pt/chefs-foot-pain';
+import { HAIRDRESSERS_DE } from './articles-de/hairdressers-foot-pain';
+import { HAIRDRESSERS_FR } from './articles-fr/hairdressers-foot-pain';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -346,6 +352,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     runnersFootExercises: RUNNERS_FOOT_EXERCISES_PT,
     teachers: TEACHERS_PT,
     retailWarehouse: RETAIL_WAREHOUSE_PT,
+    chefs: CHEFS_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -416,6 +423,8 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     runnersFootExercises: RUNNERS_FOOT_EXERCISES_FR,
     teachers: TEACHERS_FR,
     retailWarehouse: RETAIL_WAREHOUSE_FR,
+    chefs: CHEFS_FR,
+    hairdressers: HAIRDRESSERS_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -486,6 +495,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     runnersFootExercises: RUNNERS_FOOT_EXERCISES_IT,
     teachers: TEACHERS_IT,
     retailWarehouse: RETAIL_WAREHOUSE_IT,
+    chefs: CHEFS_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -556,5 +566,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     runnersFootExercises: RUNNERS_FOOT_EXERCISES_DE,
     teachers: TEACHERS_DE,
     retailWarehouse: RETAIL_WAREHOUSE_DE,
+    chefs: CHEFS_DE,
+    hairdressers: HAIRDRESSERS_DE,
   },
 };

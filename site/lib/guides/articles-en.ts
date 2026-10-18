@@ -84,6 +84,11 @@ import { CHEFS_EN } from './articles/chefs-foot-pain';
 import { HAIRDRESSERS_EN } from './articles/hairdressers-foot-pain';
 import { WEIGHT_PF_EN } from './articles/weight-and-plantar-fasciitis';
 import { HIKERS_EN } from './articles/hiking-foot-pain';
+import { PF_FLARE_UP_EN } from './articles/plantar-fasciitis-flare-up';
+import { PF_KNEE_HIP_BACK_EN } from './articles/can-plantar-fasciitis-cause-knee-pain';
+import { HEEL_NOT_PF_EN } from './articles/heel-pain-not-plantar-fasciitis';
+import { PF_NOT_BETTER_EN } from './articles/plantar-fasciitis-not-getting-better';
+import { PF_MENOPAUSE_EN } from './articles/plantar-fasciitis-menopause';
 import type { Guide } from './types';
 
 /**
@@ -176,4 +181,9 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   hairdressers: HAIRDRESSERS_EN,
   weightPf: WEIGHT_PF_EN,
   hikers: HIKERS_EN,
+  pfFlareUp: PF_FLARE_UP_EN,
+  pfKneeHipBack: PF_KNEE_HIP_BACK_EN,
+  heelNotPf: HEEL_NOT_PF_EN,
+  pfNotBetter: PF_NOT_BETTER_EN,
+  pfMenopause: PF_MENOPAUSE_EN,
 };

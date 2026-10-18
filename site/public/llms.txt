@@ -126,6 +126,11 @@ Last updated: 2026-10-18
 - [Hairdresser foot pain: what helps when you stand in one spot all day](https://walkito.site/hairdressers-foot-pain/): Why hairdressers’ feet hurt from standing in one spot, what studies found, which shoes, mats and stools help, and short exercises between clients.
 - [Weight and plantar fasciitis: what the research shows, and what helps now](https://walkito.site/weight-and-plantar-fasciitis/): Does weight cause plantar fasciitis, and does losing weight help? What the studies show, why load matters, and seated exercises that suit a higher weight.
 - [Foot pain after hiking: why your feet hurt and what to do about it](https://walkito.site/hiking-foot-pain/): Foot pain after hiking: what trail surveys found, heel, Achilles and forefoot causes, pack weight, boots or trail runners, and a short routine with doses.
+- [Plantar fasciitis flare-up: what triggers it and what to do in the first 48 hours](https://walkito.site/plantar-fasciitis-flare-up/): Plantar fasciitis flare-up: the usual triggers, what to do in the first 48 hours, how to rebuild your exercises, and signs that it is not a flare at all.
+- [Can plantar fasciitis cause knee, hip or back pain?](https://walkito.site/can-plantar-fasciitis-cause-knee-pain/): Can plantar fasciitis cause knee, hip or back pain? What gait studies show, what is still unproven, hip and calf exercises with doses, and red flags.
+- [Heel pain that isn’t plantar fasciitis: look-alikes and how they differ](https://walkito.site/heel-pain-not-plantar-fasciitis/): Heel pain that is not plantar fasciitis: fat pad, nerves, stress fracture, Achilles, Haglund, Sever, PTTD, arthritis and the back, compared in one table.
+- [Plantar fasciitis not getting better? Reasons and what to change](https://walkito.site/plantar-fasciitis-not-getting-better/): Heel pain stuck? Six common reasons plantar fasciitis stalls, what each looks like, what to change, and the options when exercise is not enough.
+- [Plantar fasciitis and menopause: why heel pain often starts in your 40s and 50s](https://walkito.site/plantar-fasciitis-menopause/): Plantar fasciitis peaks in women around 50, at about twice the rate in men. What is known about menopause and heel pain, what is not, and what helps.
 
 ## The app and the evidence
 - [Home](https://walkito.site/): what Walkito is and how the plan works, in brief
@@ -410,6 +415,7 @@ own full-text file.
 - [Exercícios para os pés de corredores: uma rotina curta e o que a pesquisa mostra](https://walkito.site/pt/exercicios-para-os-pes-corredores/): Exercícios para os pés de quem corre: rotina curta para arco, panturrilha, dedos e equilíbrio, com doses, referências e o que os estudos mostram.
 - [Dor nos pés de professores: o que um dia de aula faz com os seus pés, e o que ajuda](https://walkito.site/pt/dor-nos-pes-professores/): Por que um dia de aula faz os pés doerem, exercícios de 3 minutos entre uma aula e outra, o que ajuda em calçados e piso, e quando é fascite plantar.
 - [Dor nos pés para quem trabalha em loja ou depósito: o que ajuda no chão duro](https://walkito.site/pt/dor-nos-pes-comercio-e-deposito/): Dor nos pés em depósito e loja: o que os estudos dizem sobre chão de concreto, botinas de segurança, tapetes e palmilhas, e exercícios de 3 minutos.
+- [Dor nos pés para cozinheiros e quem trabalha em cozinha: o que ajuda nos turnos longos](https://walkito.site/pt/dor-nos-pes-cozinheiros/): Por que os pés do cozinheiro doem no chão duro e molhado: o que dizem estudos sobre sapato antiderrapante, babuche ou tênis, tapetes e exercícios curtos.
 - [Sobre o Walkito](https://walkito.site/pt/sobre-walkito/)
 - [Support](https://walkito.site/pt/suporte/) · [Privacy](https://walkito.site/pt/privacidade/) · [Terms of use](https://walkito.site/pt/termos/)
 - Full text in Portuguese, Brazil: https://walkito.site/pt/llms-full.txt
@@ -486,6 +492,8 @@ own full-text file.
 - [Exercices pour les pieds des coureurs : une routine courte et ce que montre la recherche](https://walkito.site/fr/exercices-pieds-coureurs/): Exercices pour les pieds en course à pied : une routine courte pour la voûte, les mollets, les orteils et l’équilibre, avec doses, normes et études.
 - [Mal aux pieds des enseignants : ce qu’une journée de classe fait à vos pieds, et ce qui aide](https://walkito.site/fr/mal-aux-pieds-enseignants/): Pourquoi une journée de classe fait mal aux pieds, des exercices de 3 minutes entre deux cours, chaussures, sols et quand penser à la fasciite plantaire.
 - [Mal aux pieds dans le commerce et en entrepôt : ce qui aide sur les sols durs](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/): Mal aux pieds en entrepôt ou en magasin : ce que disent les études sur le béton, les chaussures de sécurité, tapis et semelles, et 3 minutes d’exercices.
+- [Mal aux pieds des cuisiniers et du personnel de restaurant : ce qui aide pendant les longs services](https://walkito.site/fr/mal-aux-pieds-cuisiniers/): Pourquoi les sols durs et mouillés de la cuisine font mal aux pieds : chaussures antidérapantes, sabots ou baskets, tapis et exercices courts.
+- [Mal aux pieds en coiffure : ce qui aide quand on reste debout au même endroit toute la journée](https://walkito.site/fr/mal-aux-pieds-coiffeurs/): Pourquoi les coiffeurs ont mal aux pieds à force de rester debout au fauteuil, ce que disent les études, chaussures, tapis, tabourets et exercices courts.
 - [À propos de Walkito](https://walkito.site/fr/a-propos/)
 - [Support](https://walkito.site/fr/assistance/) · [Privacy](https://walkito.site/fr/confidentialite/) · [Terms of use](https://walkito.site/fr/conditions/)
 - Full text in French: https://walkito.site/fr/llms-full.txt
@@ -562,6 +570,7 @@ own full-text file.
 - [Esercizi per i piedi per runner: una routine breve e cosa dicono gli studi](https://walkito.site/it/esercizi-piedi-runner/): Esercizi per i piedi per chi corre: una routine breve per arco, polpacci, dita ed equilibrio, con dosi, valori di riferimento e cosa dicono gli studi.
 - [Dolore ai piedi negli insegnanti: cosa fa ai piedi una giornata a scuola, e cosa aiuta](https://walkito.site/it/dolore-piedi-insegnanti/): Perché una giornata a scuola fa male ai piedi, esercizi da 3 minuti tra una lezione e l’altra, scarpe e pavimenti, e quando è fascite plantare.
 - [Dolore ai piedi per chi lavora in negozio o in magazzino: cosa aiuta sui pavimenti duri](https://walkito.site/it/dolore-piedi-commercio-magazzino/): Dolore ai piedi in magazzino e in negozio: cosa dicono gli studi su cemento, scarpe antinfortunistiche, tappetini e plantari, più esercizi da 3 minuti.
+- [Dolore ai piedi per cuochi e personale di cucina: cosa aiuta nei turni lunghi](https://walkito.site/it/dolore-piedi-cuochi/): Perché ai cuochi fanno male i piedi su pavimenti duri e bagnati: cosa dicono gli studi sulle scarpe antiscivolo, zoccoli, tappetini ed esercizi brevi.
 - [Chi siamo](https://walkito.site/it/chi-siamo/)
 - [Support](https://walkito.site/it/supporto/) · [Privacy](https://walkito.site/it/privacy/) · [Terms of use](https://walkito.site/it/termini/)
 - Full text in Italian: https://walkito.site/it/llms-full.txt
@@ -638,6 +647,8 @@ own full-text file.
 - [Fußübungen für Läuferinnen und Läufer: eine kurze Routine und was die Forschung zeigt](https://walkito.site/de/fussuebungen-fuer-laeufer/): Fußübungen für Läufer: eine kurze Routine für Fußmuskeln, Waden, Zehen und Gleichgewicht, mit Dosierung, Normwerten zum Fersenheben und Studienlage.
 - [Fußschmerzen bei Lehrkräften: was ein Schultag mit deinen Füßen macht und was hilft](https://walkito.site/de/fussschmerzen-lehrer/): Warum ein Schultag die Füße belastet, Übungen von 3 Minuten für zwischen den Stunden, was bei Schuhen und Böden hilft und wann es Plantarfasziitis ist.
 - [Fußschmerzen in Einzelhandel und Lager: was auf harten Böden hilft](https://walkito.site/de/fussschmerzen-einzelhandel-lager/): Fußschmerzen in Lager und Einzelhandel: was Studien zu Betonboden, Sicherheitsschuhen, Matten und Einlagen sagen, plus Übungen für 3 Minuten Pause.
+- [Fußschmerzen als Koch oder Köchin: was bei langen Schichten in der Küche hilft](https://walkito.site/de/fussschmerzen-koeche/): Warum Füße auf harten, nassen Küchenböden wehtun: was Studien zu rutschfesten Schuhen zeigen, Clogs oder Sneaker, Matten und kurze Übungen für die Schicht.
+- [Fußschmerzen im Friseurberuf: was hilft, wenn du den ganzen Tag an einer Stelle stehst](https://walkito.site/de/fussschmerzen-friseure/): Warum Friseurinnen und Friseuren vom Stehen am Platz die Füße wehtun, was Studien zeigen, welche Schuhe, Matten und Hocker helfen, plus kurze Übungen.
 - [Über Walkito](https://walkito.site/de/ueber-walkito/)
 - [Support](https://walkito.site/de/support/) · [Privacy](https://walkito.site/de/datenschutz/) · [Terms of use](https://walkito.site/de/nutzungsbedingungen/)
 - Full text in German: https://walkito.site/de/llms-full.txt
