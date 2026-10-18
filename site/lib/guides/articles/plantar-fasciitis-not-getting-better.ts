@@ -37,9 +37,9 @@ export const PF_NOT_BETTER_EN: Guide = {
     'This page is for the stuck phase: you have tried the stretches, maybe insoles, maybe an injection, and your first steps still hurt. How long recovery usually takes is covered in [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/). Here we go through the common reasons it stalls, what each one looks like, what to change, and when to get checked again.',
   ],
   takeaways: [
-    'In 174 people followed for a mean of 9.7 years from the start of symptoms, 54% were symptom-free and 46% still had some symptoms, mostly minor. Most had already had a steroid injection, so these were harder cases (Hansen and colleagues, 2018).',
+    'In 174 people followed for a mean of 9.7 years from the start of symptoms, 54% were symptom-free and 46% still had some symptoms, mostly minor. Almost all (93%) had a steroid injection at some point, so these were harder cases (Hansen and colleagues, 2018).',
     'Ups and downs are normal: 31.9% of the people who got better had at least one relapse first, and 77.5% of those still in pain had had a pain-free period at some point (Hansen and colleagues, 2018).',
-    'In a trial of 48 people, loaded heel raises brought improvement forward compared with stretching alone at three months. By one year both groups were about even (Rathleff and colleagues, 2015).',
+    'In a trial of 48 people, loaded heel raises brought improvement forward compared with stretching at three months. By one year both groups were about even (Rathleff and colleagues, 2015).',
     'The 2023 heel pain guideline grades stretching, manual therapy, taping and night splints **A**, and strength work, dry needling and low-level laser **B**. It recommends against insoles on their own for short-term relief (Koc and colleagues, 2023).',
     'The same guideline says to look for other diagnoses when symptoms are not settling, such as inflammatory arthritis, fat pad atrophy or a lump in the fascia (Koc and colleagues, 2023).',
   ],
@@ -49,9 +49,9 @@ export const PF_NOT_BETTER_EN: Guide = {
       h2: 'Is plantar fasciitis permanent if it is not getting better?',
       keyFact: 'In a group of 174 people followed for a mean of 9.7 years, 54% were symptom-free and 46% still had some symptoms, most of them minor (Hansen and colleagues, 2018).',
       paragraphs: [
-        '**For most people, no.** A 2020 review reports that about 90% of people get better with non-surgical care, though it can take three to six months (Latt and colleagues, 2020). The harder question is what happens to the people who are still stuck after that.',
+        '**For most people, no.** A 2020 review reports that more than 90% of people get better with non-surgical care, though it can take three to six months (Latt and colleagues, 2020). The harder question is what happens to the people who are still stuck after that.',
         'The best long-term data come from a Danish study that followed 174 people with plantar fasciitis confirmed on ultrasound. At a mean of 9.7 years after their symptoms started, 54% had no symptoms at all. The other 46% still had some, but most described them as minor. On average, people had tried 3.8 different treatments (Hansen and colleagues, 2018).',
-        'Two things make this study more hopeful than it first looks. It was a hospital group with hard-to-manage pain: 93% had already had a steroid injection, which is not a first step. And "still has symptoms" meant any score above 0 out of 10, so it includes people with occasional mild aches.',
+        'Two things make this study more hopeful than it first looks. It was a specialist clinic group with hard-to-manage pain: 93% had a steroid injection at some point, which is not a first step. And "still has symptoms" meant any score above 0 out of 10, so it includes people with occasional mild aches.',
         'The study also found the fascia got thinner over time whether people still had pain or not, and only 24% of the pain-free group had a fascia that looked fully normal on ultrasound. So a scan that still looks abnormal does not mean you cannot feel better. For the full timeline, see [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/).',
       ],
       sourceNote:
@@ -82,7 +82,7 @@ export const PF_NOT_BETTER_EN: Guide = {
       keyFact: 'In a trial of 48 people, the heel raise group scored 29 points better on the Foot Function Index than the stretching group at three months (Rathleff and colleagues, 2015).',
       paragraphs: [
         '**Stretching is worth keeping, but on its own it may not be enough.** The 2023 heel pain guideline grades plantar fascia and calf stretching **A**, its top grade. It also grades strength work for the foot and ankle **B** (Koc and colleagues, 2023). Many home plans only include the first.',
-        'In a trial of 48 people, one group did slow, heavy heel raises with a towel under the toes and the other stretched the plantar fascia. At three months, the heel raise group scored 29 points better on the Foot Function Index. By one year the two groups were about even (Rathleff and colleagues, 2015). So adding strength work did not change where people ended up, but it got them there sooner.',
+        'In a trial of 48 people, one group did slow, heavy heel raises with a towel under the toes and the other stretched the plantar fascia. At three months, the heel raise group scored 29 points better on the Foot Function Index. By one year the two groups were about even (Rathleff and colleagues, 2015). So doing heel raises in place of stretching did not change where people ended up at one year, but it got them there sooner.',
         'What it looks like: you have stretched faithfully for a month or more, the stretch feels easier, but the first steps of the day are still sharp. What to change: keep the stretches and add the calf work in the next section. [Calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) explains the trial routine in detail.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -91,7 +91,7 @@ export const PF_NOT_BETTER_EN: Guide = {
       h2: 'Has the load ever gone up?',
       keyFact: 'In a trial of 70 people doing heel raises for three months, only 4 reached a point where they felt they needed no further treatment (Riel and colleagues, 2019).',
       paragraphs: [
-        '**Strength work only helps if it gets harder over time.** Ten easy heel raises on two feet, done for months, is a warm-up, not a load. The trial routine moves from both feet to one foot, adds a slow tempo and a towel under the toes, then adds weight such as a backpack (Rathleff and colleagues, 2015).',
+        '**Strength work only helps if it gets harder over time.** Ten easy heel raises on two feet, done for months, is a warm-up, not a load. The steps below move from both feet to one foot and then add weight. The trial routine itself was one-leg heel raises with a towel under the toes, a slow tempo and a backpack for added weight (Rathleff and colleagues, 2015).',
         'How you set the load matters less than people think. A 2019 trial gave 70 people either a set, step-by-step heel raise plan or told them to choose their own sets and weight, as heavy as they could manage. Both groups improved by a similar amount. Choosing your own dose did not lead people to do more (Riel and colleagues, 2019).',
         'The same trial is a useful reality check: after three months of heel raises, 44 of the 65 people who answered said they were better, but only 4 of 70 felt they needed no further treatment. If you are better but not done at three months, you are in the common group, not the failed one.',
         'What to change: move up one step when the current one feels easy for two sessions in a row and your next morning is no worse. The cards below are the steps, in order.',
@@ -164,7 +164,7 @@ export const PF_NOT_BETTER_EN: Guide = {
         },
       ],
       sourceNote:
-        'Riel 2019: 70 people with plantar fasciopathy on ultrasound, standing heel raises for three months. Foot Health Status Questionnaire pain: adjusted difference 6.9 points, 95% CI 15.5 to 1.7, not significant. Improved on Global Rating of Change: 24 of 33 (self-dosed) and 20 of 32 (set plan). Patient Acceptable Symptom State: 3 of 35 and 1 of 35.',
+        'Riel 2019: 70 people with plantar fasciopathy on ultrasound, standing heel raises for three months. Foot Health Status Questionnaire pain: adjusted mean difference 6.9 points, 95% CI from minus 15.5 to plus 1.7, not significant. Improved on Global Rating of Change: 24 of 33 (self-dosed) and 20 of 32 (set plan). Patient Acceptable Symptom State: 3 of 35 and 1 of 35.',
       cites: [CITE.rathleff, CITE.rielSelfDosed, CITE.guideline],
     },
     {
@@ -186,7 +186,7 @@ export const PF_NOT_BETTER_EN: Guide = {
     },
     {
       h2: 'Is something still setting it off?',
-      keyFact: 'An ankle that bent 0 degrees or less raised the odds of plantar fasciitis about 23 times in a study of 50 cases and 100 controls (Riddle and colleagues, 2003).',
+      keyFact: 'An ankle that bent 0 degrees or less raised the odds of plantar fasciitis about 23 times compared with an ankle that bent more than 10 degrees, in a study of 50 cases and 100 controls (Riddle and colleagues, 2003).',
       paragraphs: [
         '**Exercises can be outpaced by the load you put on the foot the rest of the day.** In a matched study of 50 people with plantar fasciitis and 100 without, a stiff ankle was the strongest risk factor: an ankle that bent 0 degrees or less raised the odds 23.3 times. A body mass index over 30 raised them about 5.6 times, and spending most of the workday on your feet about 3.6 times (Riddle and colleagues, 2003).',
         'The 2023 guideline lists the same factors, plus running, and adds that hard surfaces with poor shock absorption make standing and walking at work more of a risk (Koc and colleagues, 2023). Some of these you can change, some you cannot:',
@@ -295,7 +295,7 @@ export const PF_NOT_BETTER_EN: Guide = {
     {
       q: 'When is surgery considered for plantar fasciitis?',
       cites: [CITE.latt],
-      a: 'Only after a long trial of non-surgical care. A 2020 review says surgery is considered when pain and limits persist despite at least six months of non-surgical treatment, and that minimally invasive options such as injections or shockwave are usually discussed first. A foot and ankle specialist makes that call with you.',
+      a: 'Only after a long trial of non-surgical care. A 2020 review says surgery is considered when pain and limits persist despite at least six months of non-surgical treatment, and that minimally invasive options such as injections or shockwave may be considered at that stage too. A foot and ankle specialist makes that call with you.',
     },
     {
       q: 'Could my heel pain be something other than plantar fasciitis?',

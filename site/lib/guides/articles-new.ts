@@ -278,6 +278,16 @@ import { CHEFS_IT } from './articles-it/chefs-foot-pain';
 import { CHEFS_PT } from './articles-pt/chefs-foot-pain';
 import { HAIRDRESSERS_DE } from './articles-de/hairdressers-foot-pain';
 import { HAIRDRESSERS_FR } from './articles-fr/hairdressers-foot-pain';
+import { WEIGHT_PF_DE } from './articles-de/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_FR } from './articles-fr/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_IT } from './articles-it/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_PT } from './articles-pt/weight-and-plantar-fasciitis';
+import { HAIRDRESSERS_IT } from './articles-it/hairdressers-foot-pain';
+import { HAIRDRESSERS_PT } from './articles-pt/hairdressers-foot-pain';
+import { HIKERS_DE } from './articles-de/hiking-foot-pain';
+import { HIKERS_FR } from './articles-fr/hiking-foot-pain';
+import { HIKERS_IT } from './articles-it/hiking-foot-pain';
+import { HIKERS_PT } from './articles-pt/hiking-foot-pain';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -353,6 +363,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     teachers: TEACHERS_PT,
     retailWarehouse: RETAIL_WAREHOUSE_PT,
     chefs: CHEFS_PT,
+    weightPf: WEIGHT_PF_PT,
+    hairdressers: HAIRDRESSERS_PT,
+    hikers: HIKERS_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -425,6 +438,8 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     retailWarehouse: RETAIL_WAREHOUSE_FR,
     chefs: CHEFS_FR,
     hairdressers: HAIRDRESSERS_FR,
+    weightPf: WEIGHT_PF_FR,
+    hikers: HIKERS_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -496,6 +511,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     teachers: TEACHERS_IT,
     retailWarehouse: RETAIL_WAREHOUSE_IT,
     chefs: CHEFS_IT,
+    weightPf: WEIGHT_PF_IT,
+    hairdressers: HAIRDRESSERS_IT,
+    hikers: HIKERS_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -568,5 +586,7 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     retailWarehouse: RETAIL_WAREHOUSE_DE,
     chefs: CHEFS_DE,
     hairdressers: HAIRDRESSERS_DE,
+    weightPf: WEIGHT_PF_DE,
+    hikers: HIKERS_DE,
   },
 };

@@ -30,14 +30,14 @@ export const HEEL_NOT_PF_EN: Guide = {
     'Heel pain that is not plantar fasciitis: fat pad, nerves, stress fracture, Achilles, Haglund, Sever, PTTD, arthritis and the back, compared in one table.',
   h1: 'Heel pain that isn’t plantar fasciitis: look-alikes and how they differ',
   lede:
-    'If your heel pain does not follow the usual pattern of [plantar fasciitis](/plantar-fasciitis/), worst with the first steps in the morning and easing as you warm up, something else may be going on. The common look-alikes are a bruised or thin heel fat pad, an irritated nerve, a heel stress fracture, problems at the back of the heel, and, less often, arthritis or a nerve pinched in the lower back (Latt and colleagues, 2020). In 250 people with pain under the heel, plantar fasciitis explained 53.2% of cases and fat pad atrophy 14.8% (Yi and colleagues, 2011).',
+    'If your heel pain does not follow the usual pattern of [plantar fasciitis](/plantar-fasciitis/), worst with the first steps in the morning and easing as you warm up, something else may be going on. Under the heel, the common look-alikes are a bruised or thin heel fat pad, an irritated nerve, including one pinched in the lower back, a heel stress fracture and inflammatory arthritis (Latt and colleagues, 2020). Pain at the back of the heel has its own causes, such as the Achilles tendon. In 250 people with pain under the heel, plantar fasciitis explained 53.2% of cases and fat pad atrophy 14.8% (Yi and colleagues, 2011).',
   intro: [
     'This page compares nine look-alikes side by side: where each one hurts, when, what makes it worse and what to do next. It is not a diagnosis. Several of these feel alike, two can be present at once, and only a clinician who examines your foot can tell them apart. If you want a quick sort by where it hurts, the [foot pain identifier](/foot-pain-identifier/) does that; this page explains the differences behind it.',
   ],
   takeaways: [
     'Typical plantar fasciitis pain sits near the inner heel, is worst with the first step in the morning or after sitting, gets better with activity and then worse as activity goes on (Latt and colleagues, 2020).',
     'In 250 people with plantar heel pain, plantar fasciitis accounted for 53.2%, fat pad atrophy for 14.8%, and both together for 9.2% (Yi and colleagues, 2011).',
-    'Burning, electric or tingling heel pain points to a nerve. One review estimates Baxter’s nerve entrapment may explain up to 20% of chronic heel pain (Tedeschi, 2025).',
+    'Burning, electric or tingling heel pain often points to a nerve. One review estimates Baxter’s nerve entrapment may explain up to 20% of chronic heel pain (Tedeschi, 2025).',
     'A heel stress fracture usually aches with activity, not with the first step, and in 30 military recruits it showed on plain X-ray in only 15% (Latt and colleagues, 2020; Sormaala and colleagues, 2006).',
     'Pain in both heels together with other painful or stiff joints, or a stiff back, suggests an inflammatory cause that needs a doctor, not just stretches (Latt and colleagues, 2020).',
   ],
@@ -87,13 +87,13 @@ export const HEEL_NOT_PF_EN: Guide = {
         '**Pain described as burning or like an electric shock is often coming from a nerve** (Latt and colleagues, 2020). Three nerve sources are the usual suspects:',
         {
           list: [
-            '**Baxter’s nerve**, a small branch that runs under the heel. When it is squeezed, it gives a chronic, burning pain across the heel pad (Latt and colleagues, 2020). One review estimates it may explain up to 20% of chronic heel pain and says it is often mistaken for plantar fasciitis (Tedeschi, 2025).',
+            '**Baxter’s nerve**, a small branch that runs under the heel. When it is squeezed, it gives a chronic, burning pain across the heel pad (Latt and colleagues, 2020). One review estimates it may explain up to 20% of chronic heel pain and says it is often mistaken for plantar fasciitis (Tedeschi, 2025), while another calls it uncommon (Latt and colleagues, 2020).',
             '**Tarsal tunnel syndrome**, where the tibial nerve is squeezed behind the inner ankle bone. It usually brings burning or shooting pain along the sole, often with numbness (Latt and colleagues, 2020). More on arch nerve pain in [arch pain](/arch-pain/).',
             '**A pinched nerve in the lower back**, at the L5 or S1 level. It is relatively common and usually comes with back pain, pain down the leg, or numbness in the foot or leg (Latt and colleagues, 2020).',
           ],
         },
         'A review of nerve related heel pain found that nerve entrapment may play a part both early on and in heel pain that does not get better, but that how it works and how best to test for it are still debated (Alshami and colleagues, 2008). Night or rest pain with tingling is covered in [heel pain at night](/heel-pain-at-night/).',
-        'This is one group where self-help exercises are not the first step. A clinician checks sensation and strength in the foot, and may use ultrasound, MRI or nerve tests (Tedeschi, 2025).',
+        'This is one group where self-help exercises are not the first step. A clinician examines the foot, for example by tapping along the tibial nerve, and may use ultrasound, nerve tests or MRI (Latt and colleagues, 2020; Tedeschi, 2025).',
       ],
       cites: [CITE.latt, CITE.tedeschiBaxter, CITE.alshami],
     },
@@ -103,7 +103,7 @@ export const HEEL_NOT_PF_EN: Guide = {
       paragraphs: [
         '**Both tend to ache with activity rather than with the first step of the morning.** A heel stress fracture typically causes aching across the back part of the heel bone that is tied to activity, not to getting out of bed. It is more likely if you have had low bone density or a stress fracture before (Latt and colleagues, 2020). It usually follows a jump in walking, running or a move to a harder surface (Tu, 2018).',
         'A normal X-ray does not rule it out: in 30 recruits with a heel stress injury on MRI, plain X-rays showed it in only 15% (Sormaala and colleagues, 2006). The side by side comparison is in [plantar fasciitis vs stress fracture](/plantar-fasciitis-vs-stress-fracture/).',
-        'Fat pad pain is a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot, and it is also activity related (Latt and colleagues, 2020). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/).',
+        'Fat pad pain is usually described as a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot. Like a stress fracture, it tends to be activity related (Latt and colleagues, 2020), and in one clinic it more often affected both heels and was made worse by standing (Yi and colleagues, 2011). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](/plantar-fasciitis-vs-heel-spur/).',
       ],
       cites: [CITE.latt, CITE.tuHeelPain, CITE.sormaalaCalcaneus, CITE.yiFatPad, CITE.fatPadReview],
     },
@@ -125,7 +125,7 @@ export const HEEL_NOT_PF_EN: Guide = {
     {
       h2: 'What if both heels hurt, or other joints are stiff too?',
       paragraphs: [
-        '**Pain in both heels, heel pain together with several painful or stiff joints, or a stiff back suggest an inflammatory cause** such as psoriatic arthritis, reactive arthritis or spondyloarthritis (Latt and colleagues, 2020). These conditions are most common in young men, while plantar fasciitis is most common in middle age and in women.',
+        '**Pain in both heels, heel pain together with several painful or stiff joints, or a stiff back suggest an inflammatory cause** such as psoriatic arthritis, reactive arthritis or spondyloarthritis (Latt and colleagues, 2020). The spondyloarthritis group is most common in young men, while plantar fasciitis is most common in middle age and more often in women (Latt and colleagues, 2020).',
         'The same review lists the clues that make a doctor order blood tests: symptoms elsewhere in the body, both feet affected, several joints involved, especially small ones, and morning stiffness that lasts more than 30 minutes (Latt and colleagues, 2020).',
         'Both heels can hurt with plantar fasciitis too. In a 5 to 15 year follow-up of 174 people with plantar fasciitis, pain in both heels was linked to symptoms that lasted longer (Hansen and colleagues, 2018). That is why two sore heels are a reason to get checked, not proof of arthritis.',
       ],
@@ -207,7 +207,7 @@ export const HEEL_NOT_PF_EN: Guide = {
     {
       q: 'What is commonly mistaken for plantar fasciitis?',
       cites: [CITE.latt, CITE.yiFatPad],
-      a: 'The most common look-alikes are heel fat pad syndrome, nerve entrapment such as Baxter’s nerve or tarsal tunnel syndrome, a heel stress fracture, and insertional Achilles pain. Less often it is inflammatory arthritis or a nerve pinched in the lower back. In 250 people with pain under the heel, fat pad atrophy explained 14.8% of cases.',
+      a: 'The most common look-alikes are heel fat pad syndrome, nerve entrapment such as Baxter’s nerve or tarsal tunnel syndrome, a heel stress fracture, and insertional Achilles pain. It can also be inflammatory arthritis or a nerve pinched in the lower back. In 250 people with pain under the heel, fat pad atrophy explained 14.8% of cases.',
     },
     {
       q: 'How do I know if my heel pain is not plantar fasciitis?',
@@ -247,7 +247,7 @@ export const HEEL_NOT_PF_EN: Guide = {
     {
       q: 'Can I do plantar fasciitis exercises if I am not sure what it is?',
       cites: [CITE.guideline],
-      a: 'Gentle plantar fascia and calf stretches are low risk, and the 2023 guideline grades them A for plantar fasciitis. But if you have burning or numbness, swelling, pain that builds with activity, or pain after an injury, see a clinician first. Stop any exercise that makes the heel sharply worse.',
+      a: 'The 2023 guideline grades plantar fascia and calf stretches A for plantar fasciitis, and they are gentle. But if you have burning or numbness, swelling, pain that builds with activity, or pain after an injury, see a clinician first. Stop any exercise that makes the heel sharply worse.',
     },
   ],
   redFlags: {

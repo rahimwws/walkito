@@ -38,7 +38,7 @@ export const PF_MENOPAUSE_EN: Guide = {
   ],
   takeaways: [
     'In records of about 1.9 million Dutch patients, new cases of heel pain in women peaked at 11.23 per 1000 patient-years at age 50. In men the peak was 5.54, at age 55. 62% of the 18,004 cases were women (Rasenberg and colleagues, 2019).',
-    'The 2023 heel pain guideline lists age between 40 and 60 as a risk factor, along with running or jumping and jobs with long hours of standing (Koc and colleagues, 2023).',
+    'The 2023 heel pain guideline says plantar fasciitis is most common between ages 40 and 60, and lists running and jobs with a lot of time on your feet as risk factors (Koc and colleagues, 2023).',
     'A link between menopause and heel pain is plausible but unproven: no study has measured the plantar fascia across menopause, and in a 2026 focus group study 76% of the 17 women had not connected the two (Douglas-Harris and colleagues, 2026).',
     'No trial has tested HRT for plantar fasciitis. Whether HRT suits you depends on your menopause symptoms and health history, and that is a decision to make with your doctor.',
     'Plantar fascia and calf stretches (grade **A**) and calf strength work (grade **B**) are the best-graded exercises, whatever your age (Koc and colleagues, 2023).',
@@ -51,7 +51,7 @@ export const PF_MENOPAUSE_EN: Guide = {
       paragraphs: [
         '**Yes, the timing lines up.** A Dutch study searched the family doctor records of about 1.9 million patients from 2013 to 2016 and found 18,004 new cases of plantar heel pain, the umbrella term that includes plantar fasciitis. 62% were women. Overall, women had 4.64 new cases per 1000 patient-years and men 2.98 (Rasenberg and colleagues, 2019).',
         'The age pattern is the striking part. In women, new cases peaked at **11.23 per 1000 patient-years at age 50**. In men, the peak was lower and later: 5.54 at age 55 (Rasenberg and colleagues, 2019). The average age of menopause in the UK is 51, which is why researchers have started to ask whether the two are connected (Douglas-Harris and colleagues, 2026).',
-        'The 2023 heel pain guideline lists age between 40 and 60 as a risk factor (Koc and colleagues, 2023). Women also tend to keep it longer: in a 5 to 15 year follow-up of 174 people, the risk of still having plantar fasciitis was higher in women and in people with pain in both heels (Hansen and colleagues, 2018).',
+        'The 2023 heel pain guideline says plantar fasciitis is most common between ages 40 and 60 (Koc and colleagues, 2023). Women also tend to keep it longer: in a 5 to 15 year follow-up of 174 people, the risk of still having plantar fasciitis was higher in women and in people with pain in both heels (Hansen and colleagues, 2018).',
       ],
       table: {
         caption: 'Peak rate of new plantar heel pain cases, Dutch primary care (Rasenberg and colleagues, 2019)',
@@ -71,7 +71,7 @@ export const PF_MENOPAUSE_EN: Guide = {
       h2: 'Does menopause cause plantar fasciitis?',
       keyFact: 'Of 17 women with heel pain who were perimenopausal or postmenopausal, 76% had not connected it with menopause, and most said it was not raised when they sought help (Douglas-Harris and colleagues, 2026).',
       paragraphs: [
-        '**Nobody knows yet.** The authors of the only study focused on menopause and heel pain write that whether a causal relationship exists is uncertain (Douglas-Harris and colleagues, 2026). That study was a set of focus groups with 17 women, not a measurement of hormones or heel tissue. Many websites state the link as fact. The evidence does not support that yet.',
+        '**Nobody knows yet.** The authors of a 2026 study focused on menopause and heel pain write that whether a causal relationship exists is uncertain (Douglas-Harris and colleagues, 2026). That study was a set of focus groups with 17 women, not a measurement of hormones or heel tissue. Many websites state the link as fact. The evidence does not support that yet.',
         'Here is what is known and what is not:',
       ],
       table: {
@@ -98,7 +98,7 @@ export const PF_MENOPAUSE_EN: Guide = {
         {
           list: [
             '**Weight.** In a review of 51 studies, a BMI over 27 came with 3.7 times the odds of plantar fasciitis, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016). Weight often changes in midlife; [weight and plantar fasciitis](/weight-and-plantar-fasciitis/) covers what is known.',
-            '**Stiffer calves and ankles.** In a study of 50 people with plantar fasciitis and 100 without, a stiff ankle was the strongest factor measured, with 23.3 times the odds (Riddle and colleagues, 2003). In 100 adults without foot problems, older people had stiffer ankles, flatter feet and weaker toe muscles than younger ones (Scott and colleagues, 2007).',
+            '**Stiffer calves and ankles.** In a study of 50 people with plantar fasciitis and 100 without, a stiff ankle was the strongest factor measured, with 23.3 times the odds (Riddle and colleagues, 2003). In 100 adults without foot problems, people around 80 had stiffer ankles, flatter feet and weaker toe muscles than people around 20 (Scott and colleagues, 2007).',
             '**A heel pad that gives less.** In an X-ray study of 70 people with heel pain and 200 without, the heel pad lost elasticity with age, and had lost more in people with heel pain (Prichasuk, 1994). A thinned fat pad causes its own kind of heel pain, covered in [heel fat pad syndrome](/heel-fat-pad-syndrome/).',
             '**A change in activity.** Starting a new walking or running plan, a new job on your feet, or a sudden jump in exercise can all add load quickly. A 2026 review lists rapid increases in physical activity among the things that raise the risk of overuse injuries such as plantar fasciitis in midlife women (Ansari and colleagues, 2026).',
           ],
@@ -201,7 +201,7 @@ export const PF_MENOPAUSE_EN: Guide = {
       keyFact: 'In 85 women after menopause, active women on HRT had thinner Achilles tendons than active women not on HRT, with no clear effect in inactive women (Cook and colleagues, 2007). Neither this nor any other study measured heel pain.',
       paragraphs: [
         '**There is no trial of HRT for plantar fasciitis, so nobody can say whether it helps.** We searched for one and found none. HRT, also called menopausal hormone therapy, is used for menopause symptoms. It is not a recognized treatment for heel pain.',
-        'What exists is indirect. In the 2026 focus groups, some women said they noticed fewer foot pains on HRT (Douglas-Harris and colleagues, 2026). That is a report from a few people, not a measured result. Two small studies of the Achilles tendon found that active women on HRT had smaller tendons than active women not on it: one of 85 women (Cook and colleagues, 2007), and one of 14 pairs of identical twins, where the difference showed up only in the 5 most active pairs (Finni and colleagues, 2009). Tendon size is not pain, and the Achilles is not the plantar fascia.',
+        'What exists is indirect. In the 2026 focus groups, some women said they noticed fewer foot pains on HRT (Douglas-Harris and colleagues, 2026). That is a report from a few people, not a measured result. Two small studies of the Achilles tendon found that active women on HRT had smaller tendons than active women not on it: one of 85 women (Cook and colleagues, 2007), and one of 14 pairs of identical twins, where the difference showed up only in the 5 physically active pairs (Finni and colleagues, 2009). Tendon size is not pain, and the Achilles is not the plantar fascia.',
         'A 2026 review notes that HRT is not right for everyone, because of contraindications and each person’s balance of risks and benefits (Ansari and colleagues, 2026). Whether to take it depends on your menopause symptoms and health history. **That is a decision to make with your doctor.** Whatever you decide, the stretches and strength work on this page still apply.',
       ],
       cites: [CITE.douglasHarrisMenopause, CITE.cookHrtAchilles, CITE.finniHrtTwins, CITE.ansariMenopause],
@@ -211,7 +211,7 @@ export const PF_MENOPAUSE_EN: Guide = {
       paragraphs: [
         'About 90% of people with plantar fasciitis get better with non-surgical care such as stretching and insoles, though it often takes 3 to 6 months (Latt and colleagues, 2020). No study has looked at recovery in women going through menopause specifically.',
         'For some people it lasts longer. In a follow-up of 174 people, 54% had no symptoms at follow-up, about 9 years after diagnosis on average, and the risk of still having it was higher in women and in people with pain in both heels (Hansen and colleagues, 2018). That is a reason to start the exercises early and keep them going, not a reason to expect the worst. [How long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/) has the full timeline.',
-        'If you are building up activity in midlife, for health or for weight, the guideline advises changing the load on your feet rather than stopping activity (Koc and colleagues, 2023). [Walking with plantar fasciitis](/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.',
+        'If you are building up activity in midlife, for health or for weight, build up step by step rather than stopping: the guideline notes that plantar fasciitis usually starts after a change in weight-bearing activity (Koc and colleagues, 2023). [Walking with plantar fasciitis](/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.guideline],
     },
@@ -247,7 +247,7 @@ export const PF_MENOPAUSE_EN: Guide = {
     {
       q: 'Can perimenopause cause heel pain?',
       cites: [CITE.luMenopausePain, CITE.douglasHarrisMenopause],
-      a: 'Possibly, but it has not been shown for heel pain specifically. A review of 16 studies found that 71% of perimenopausal women report musculoskeletal pain, more than before perimenopause. No study has looked at plantar fasciitis in perimenopause on its own, so if your heel hurts, the usual heel pain checks and exercises apply.',
+      a: 'Possibly, but it has not been shown for heel pain specifically. A review of 16 studies found that 71% of perimenopausal women report musculoskeletal pain, more than women who have not reached perimenopause. No study has looked at plantar fasciitis in perimenopause on its own, so if your heel hurts, the usual heel pain checks and exercises apply.',
     },
     {
       q: 'Does HRT help plantar fasciitis?',

@@ -11058,6 +11058,338 @@ Rester debout la plus grande partie de la journée de travail multipliait le ris
 
 Il n’existe pas de limite testée pour les coiffeurs. Dans une revue d’études en laboratoire, les symptômes au bas du dos devenaient cliniquement significatifs après environ 71 minutes debout en moyenne, et après 42 minutes chez les personnes sujettes aux douleurs en position debout. Couper les longues prestations par un court étirement, quelques montées sur pointes ou une minute sur un tabouret est une approche raisonnable.
 
+## Poids et fasciite plantaire : ce que montre la recherche, et ce qui aide dès maintenant
+
+Language: French (Français) · https://walkito.site/fr/poids-et-fasciite-plantaire/ · published 2026-10-18 · updated 2026-10-18
+
+Un poids plus élevé est l’un des facteurs de risque les plus nets de la [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/) chez les personnes qui ne sont pas sportives. Dans une revue de 51 études, un indice de masse corporelle (IMC) supérieur à 27 multipliait par 3,7 la cote (odds) de fasciite plantaire (van Leeuwen et coll., 2016). Savoir si perdre du poids soulage la douleur au talon est moins clair : aucun essai randomisé ne l’a testé chez des personnes souffrant du talon. Les étirements et le renforcement les mieux notés par la recommandation de 2023 sont donc le point de départ, quel que soit votre poids.
+
+- Dans une étude cas-témoins sur 50 personnes atteintes de fasciite plantaire et 100 sans, un IMC supérieur à 30 multipliait par 5,6 la cote (odds) de fasciite plantaire, par rapport à un IMC de 25 ou moins. Une cheville raide était le facteur le plus fort, avec une cote multipliée par 23,3 (Riddle et coll., 2003).
+- Une revue de 51 études a montré qu’un IMC supérieur à 27 était le seul facteur clinique, parmi ceux qui pouvaient être regroupés, nettement lié à la fasciite plantaire, avec une cote multipliée par 3,7, et que ce lien était le plus fort chez les personnes qui ne sont pas sportives (van Leeuwen et coll., 2016).
+- Aucun essai randomisé n’a testé la perte de poids contre la douleur au talon. Une revue de 2012 n’a trouvé que deux études sur la perte de poids et la douleur au pied, toutes deux après une chirurgie de l’obésité, et a jugé les données limitées (Butterworth et coll., 2012).
+- La recommandation de 2023 sur la douleur au talon donne aux étirements du fascia plantaire et du mollet la note **A** et au renforcement la note **B**. Les conseils pour garder une masse maigre saine obtiennent la note **E**, ce qui veut dire qu’ils reposent sur la théorie, pas sur des essais (Koc et coll., 2023).
+- Dans un suivi de 174 personnes, l’IMC ne permettait pas de prévoir qui aurait encore mal au talon des années plus tard. Être une femme et avoir mal aux deux talons le permettaient (Hansen et coll., 2018).
+
+### Le poids influence-t-il la fasciite plantaire ?
+
+**Oui : chez les personnes qui ne sont pas sportives, un IMC plus élevé est lié à la fasciite plantaire, étude après étude.** L’IMC est le poids divisé par la taille au carré. C’est une mesure approximative, mais c’est celle que ces études ont utilisée.
+
+L’étude la plus connue a comparé 50 personnes atteintes de fasciite plantaire à un talon à 100 personnes du même âge et du même sexe qui n’en avaient pas. Un IMC supérieur à 30 multipliait par 5,6 la cote de fasciite plantaire, par rapport à un IMC de 25 ou moins (Riddle et coll., 2003).
+
+Une revue de 2016 a regroupé 51 études. De tous les facteurs cliniques que les auteurs ont pu combiner, un IMC supérieur à 27 était le seul nettement lié à la fasciite plantaire, avec une cote multipliée par 3,7, et ce lien était le plus fort chez les personnes qui ne sont pas sportives (van Leeuwen et coll., 2016). Deux revues plus anciennes sont arrivées à la même conclusion, et toutes deux n’ont trouvé aucun lien entre l’IMC et la douleur au talon chez les sportifs (Irving et coll., 2006 ; Butterworth et coll., 2012).
+
+La recommandation de 2023 sur la douleur au talon cite un IMC élevé chez les personnes qui ne sont pas sportives comme facteur de risque, à côté d’une cheville raide, de la course à pied et des longues heures debout, surtout sur des sols durs (Koc et coll., 2023).
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/'plantar fasciitis': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.
+Source: Irving DB, Cook JL, Menz HB. Factors associated with chronic plantar heel pain: a systematic review. Journal of Science and Medicine in Sport. 2006;9(1-2):11–22.
+Source: Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Le poids est-il la cause, ou un facteur parmi d’autres ?
+
+**Un facteur parmi d’autres, et pas le plus fort.** Dans l’étude cas-témoins de 2003, trois facteurs comptaient chacun de façon indépendante :
+
+- Une cheville raide (le pied se plie à peine vers le tibia) : cote multipliée par 23,3.
+- Un IMC supérieur à 30 : cote multipliée par 5,6.
+- Passer la majeure partie de la journée de travail debout : cote multipliée par 3,6.
+
+Les auteurs ont jugé la cheville raide la plus importante des trois (Riddle et coll., 2003). C’est un point important, car une cheville raide vient souvent de [mollets tendus](https://walkito.site/fr/mollets-tendus/), et l’étirement du mollet est quelque chose que vous pouvez commencer dès aujourd’hui.
+
+La plupart de ces études sont des études cas-témoins ou transversales : elles comparent des personnes qui ont déjà mal au talon à des personnes qui n’ont pas mal. Elles montrent un lien, pas la preuve que le poids cause la fasciite plantaire (van Leeuwen et coll., 2016). Si vous travaillez aussi debout, [mal aux pieds debout toute la journée](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) traite de cet aspect de la charge.
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy/'plantar fasciitis': systematic review and meta-analysis of various clinical and imaging risk factors. British Journal of Sports Medicine. 2016;50(16):972–981.
+
+### Pourquoi la charge compte-t-elle pour le talon ?
+
+**Le fascia plantaire est la bande sous le pied qui soutient la voûte, et il reçoit une charge à chaque pas.** Plus de poids corporel veut dire plus de charge par pas : la même marche ou la même journée de travail demande donc plus au tissu. Le conseil de la recommandation pour la douleur au talon repose sur cette idée : adapter la charge sur vos pieds au travail, pendant les loisirs et dans la vie quotidienne. Elle donne à ce conseil la note **E**, parce qu’il repose sur la théorie, pas sur des essais (Koc et coll., 2023).
+
+Perdre du poids diminue bien la pression sous le pied. Dans un essai sur 41 adultes dont l’IMC moyen était proche de 36, le groupe qui suivait un programme alimentaire a perdu 5,9 kg en trois mois, contre 1,9 kg dans le groupe de comparaison, et avait une pression maximale plus faible sous certaines zones du pied. La forme du pied et la façon de marcher n’ont pas changé (Song et coll., 2015). Cet essai n’a pas mesuré la douleur au talon.
+
+La pression n’explique pas tout non plus. Dans une étude sur des personnes ayant mal aux pieds et en attente d’une chirurgie de l’obésité, la douleur a diminué après l’opération, mais la baisse de pression sous le pied n’était pas liée à la baisse de la douleur. L’humeur, si : les personnes qui avaient plus de symptômes dépressifs déclaraient plus de douleur au pied, avant comme après (Walsh et coll., 2018). La douleur dépend de bien plus que de la mécanique, et c’est une raison de plus de ne pas vous en vouloir.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+
+### Perdre du poids aide-t-il la fasciite plantaire ?
+
+**Peut-être, mais aucun essai randomisé ne l’a testé chez des personnes souffrant du talon.** C’est la réponse honnête. Tout ce que l’on sait vient d’études sans véritable groupe de comparaison, le plus souvent après une chirurgie de l’obésité. Voici ce qui existe :
+
+Source: Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obesity Reviews. 2012;13(7):630–642.
+Source: Boules M, Batayyah E, Froylich D, Zelisko A, O'Rourke C, Brethauer S, et al. Effect of surgical weight loss on plantar fasciitis and health-care use. Journal of the American Podiatric Medical Association. 2018;108(6):442–448.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+Source: Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
+Source: Yang F, Zhou L, Zhang J, Wang Q, Cai Q, Wang J, et al. Association of semaglutide use with outcomes in chronic plantar heel pain: a prospective observational cohort and a pilot interventional study. International Journal of Surgery. 2025;111(12):9333–9341.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Quels exercices conviennent à un poids plus élevé ?
+
+Les exercices les mieux notés par la recommandation de 2023, les étirements (**A**) et le renforcement du mollet (**B**), ne dépendent pas de votre poids (Koc et coll., 2023). Ce qui change, c’est la façon de commencer. Les versions assises ou avec appui mettent moins de charge sur le talon et ménagent les genoux et l’équilibre : elles viennent donc en premier ici.
+
+Ce sont les mêmes doses de départ que dans le guide principal des [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/). Faites le premier étirement du fascia plantaire assis au bord du lit, avant de vous lever : dans un essai sur 82 personnes, un étirement du fascia plantaire fait avant de se lever a davantage soulagé la douleur des premiers pas du matin que l’étirement du mollet seul (DiGiovanni et coll., 2003). Si un exercice fait monter votre douleur au talon à 6 sur 10, arrêtez pour la journée.
+
+- **Étirement du fascia plantaire** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Si croiser la jambe est difficile, laissez le pied au sol, passez une serviette autour de l’avant du pied et tirez doucement dessus.
+- **Étirement du mollet** (2 maintiens de 30 secondes, chaque jambe): Posez les mains contre un mur ou sur un plan de travail de cuisine. Gardez la jambe arrière tendue, le talon arrière à plat au sol et les hanches vers l’avant. Le mur prend une partie de votre poids : ne vous penchez que jusqu’où vous vous sentez stable.
+- **Étirement du soléaire** (2 maintiens de 30 secondes, chaque jambe): Prenez la même position contre le mur, gardez le talon arrière à plat au sol, puis pliez le genou arrière jusqu’à sentir l’étirement plus bas, près du talon. Le soléaire, le muscle profond du mollet, ne se relâche que genou plié.
+- **Montées sur pointes assis** (3 séries de 10, deux pieds): Asseyez-vous, pieds à plat, et poussez sur l’avant des pieds pour lever les talons. Les mains sur les genoux ajoutent de la résistance. Genou plié, cet exercice sollicite surtout le soléaire, le muscle profond du mollet, presque sans charge sur le talon. C’est la première étape du renforcement du mollet, quel que soit votre poids.
+- **Montées sur pointes, deux pieds, en se tenant à un plan de travail** (3 séries de 10, deux pieds): Placez-vous face à un plan de travail ou au dossier d’une chaise stable, les mains posées dessus. Montez bien droit au-dessus des gros orteils, puis redescendez lentement. Vos mains peuvent prendre un peu de poids les jours douloureux, et de moins en moins à mesure que vous gagnez en force. Les deux pieds se partagent la charge.
+- **Pied court, assis** (3 séries de 8, tenir 5 secondes, chaque pied): Asseyez-vous, le pied à plat au sol. Tirez la base des orteils vers le talon pour que la voûte se soulève, et tenez. Gardez le bord extérieur du pied au sol. Ne recroquevillez pas les orteils : c’est l’erreur la plus fréquente sur cet exercice.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Quelles activités ménagent le talon ?
+
+**Les activités où vos pieds ne portent pas tout votre poids à chaque pas.** La recommandation conseille de modifier la charge sur vos pieds plutôt que d’arrêter toute activité (Koc et coll., 2023). Aucune étude n’a comparé les activités chez des personnes ayant mal au talon et un poids plus élevé : ce sont donc des options pratiques, pas des options testées :
+
+- **Un vélo d’appartement ou un vélo couché.** Vous restez en mouvement pendant qu’une selle porte votre poids.
+- **La natation ou la marche dans l’eau.** L’eau soulage vos pieds d’une grande partie de votre poids.
+- **Des exercices assis ou pour le haut du corps.** Pédalier à bras, élastiques ou exercices sur chaise vous gardent actif les jours où le talon fait mal.
+- **Des marches plus courtes, plus souvent.** Plusieurs courtes marches peuvent être plus faciles pour un talon douloureux qu’une seule longue.
+
+Un contrôle simple vaut pour toutes les activités : si vos premiers pas le lendemain matin sont nettement pires, cette journée en a demandé plus que ce que le talon pouvait supporter, alors faites un peu moins la fois suivante. [Marcher avec une fasciite plantaire](https://walkito.site/fr/marcher-avec-fasciite-plantaire/) explique comment reprendre la marche progressivement.
+
+Si vous commencez à bouger pour vous sentir mieux ou pour perdre du poids, démarrer par des activités à faible impact vous permet de continuer pendant que le talon se calme. La recommandation cite la course à pied et les longues heures debout, surtout sur des sols durs, parmi les facteurs de risque de douleur au talon (Koc et coll., 2023).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Les chaussures et les semelles comptent-elles plus avec un poids plus élevé ?
+
+Aucune étude n’a testé les chaussures ou les semelles contre la douleur au talon spécifiquement chez des personnes de poids plus élevé. Pour la douleur au talon en général, la recommandation de 2023 donne aux semelles seules la note **B contre** : les données disent de ne pas compter sur elles seules. Associées aux étirements et au renforcement, elles obtiennent un **C** (Koc et coll., 2023). [Semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/) compare les deux.
+
+La recommandation préconise bien des conseils sur les chaussures dans la gestion de la charge, et elle cite le travail en appui sur des sols durs qui amortissent mal les chocs comme facteur de risque (Koc et coll., 2023). Une option pratique, non testée dans des essais, consiste à porter des chaussures amorties qui maintiennent le pied sur les sols durs, y compris à la maison.
+
+Après une perte de poids importante, les pieds peuvent changer. Dans l’étude sur la chirurgie, les auteurs ont suggéré que la perte de graisse sous le milieu du pied peut modifier la façon dont les chaussures et les semelles s’ajustent, et qu’il vaut la peine de le vérifier après une forte perte de poids (Walsh et coll., 2018).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Changes in foot pain, structure and function following bariatric surgery. Journal of Foot and Ankle Research. 2018;11:35.
+
+### La fasciite plantaire passera-t-elle si je ne perds pas de poids ?
+
+**Pour la plupart des gens, oui : elle s’atténue avec le temps et un traitement non chirurgical.** Environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec un traitement non chirurgical, comme les étirements et les semelles, souvent en 3 à 6 mois (Latt et coll., 2020).
+
+Dans un long suivi de 174 personnes, les chercheurs ont vérifié si l’IMC, l’âge, le tabac, le travail physique et d’autres facteurs permettaient de prévoir qui aurait encore mal au talon des années plus tard. Seuls le fait d’être une femme et d’avoir mal aux deux talons le permettaient. L’IMC, non (Hansen et coll., 2018).
+
+Un poids plus élevé rend donc peut-être l’apparition d’une fasciite plantaire plus probable, mais cela ne veut pas dire que vous la garderez. Les étirements et le renforcement du mollet ci-dessus sont les mêmes qui aident les personnes de toutes les corpulences. [Combien de temps dure une fasciite plantaire](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/) donne l’évolution complète.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### Consultez d’abord un professionnel de santé si
+
+- vous avez du diabète et remarquez un engourdissement, des fourmillements, une plaie, ou un changement de la peau ou de la forme de votre pied
+- la douleur a commencé après une chute, un saut ou une torsion, ou vous ne pouvez pas poser le pied
+- le talon est gonflé, rouge ou chaud, ou vous avez de la fièvre
+- la douleur est pire la nuit ou au repos, ou s’accompagne de brûlures ou d’engourdissement
+- presser les côtés du talon fait mal, ou la douleur ne cesse d’augmenter avec l’activité (possible fracture de fatigue)
+- un mollet est douloureux et gonflé (possible caillot sanguin) : consultez le jour même
+- les deux talons font mal en même temps que d’autres articulations, ou vous avez une raideur ailleurs
+- vous envisagez des médicaments ou une chirurgie pour perdre du poids : c’est une question à voir avec votre médecin
+
+### En faire un plan
+
+Walkito est une application d’exercices pour le talon et le pied. Elle ne suit pas votre poids et ne donne pas de conseils alimentaires. Elle construit un plan à partir des étirements et du renforcement du mollet de cette page, et commence par les versions assises ou avec appui.
+
+#### Le surpoids peut-il causer une fasciite plantaire ?
+
+Un poids plus élevé est lié à la fasciite plantaire, mais aucune étude ne prouve qu’il la cause. Dans une étude, un IMC supérieur à 30 multipliait la cote par 5,6, et une revue de 51 études a trouvé une cote multipliée par 3,7 au-delà d’un IMC de 27, avec un lien plus fort chez les personnes qui ne sont pas sportives. Une cheville raide était un facteur encore plus fort.
+
+#### Perdre du poids aide-t-il la fasciite plantaire ?
+
+Peut-être, mais aucun essai randomisé ne l’a testé chez des personnes souffrant du talon. Dans une étude sur dossiers de 163 personnes atteintes de fasciite plantaire opérées pour leur obésité, les symptômes au talon ont disparu chez 90 %, mais sans groupe de comparaison, et la plupart des personnes atteintes de fasciite plantaire vont mieux de toute façon avec un traitement non chirurgical (Latt et coll., 2020). Une revue de 2012 a jugé les données limitées.
+
+#### Combien de poids faut-il perdre pour soulager une fasciite plantaire ?
+
+Aucune étude n’a établi de quantité. Il n’existe pas d’essai sur la perte de poids contre la douleur au talon, donc tout chiffre que vous lisez est une supposition. Si vous voulez perdre du poids pour votre santé, parlez-en à votre médecin. Pour le talon lui-même, les étirements et le renforcement du mollet ont les preuves les plus solides, quel que soit votre poids.
+
+#### L’IMC est-il un facteur de risque de fasciite plantaire chez les coureurs ?
+
+En général non. Deux revues systématiques ont montré que l’IMC était lié à la douleur chronique au talon chez les personnes qui ne sont pas sportives, mais pas chez les sportifs. Chez les coureurs, d’autres facteurs comptent davantage.
+
+#### Quels exercices faire avec une fasciite plantaire en cas de surpoids ?
+
+Les exercices assis ou avec appui sont un bon début : un étirement du fascia plantaire assis, des étirements du mollet contre un mur et des montées sur pointes assis. Pour l’endurance, le vélo d’appartement, la natation ou la marche dans l’eau vous gardent en mouvement avec moins de charge sur le talon. La recommandation de 2023 conseille de modifier la charge sur vos pieds plutôt que d’arrêter toute activité.
+
+#### Les médicaments pour perdre du poids aident-ils la fasciite plantaire ?
+
+Il existe une étude observationnelle. Les personnes souffrant du talon depuis longtemps qui prenaient du sémaglutide ont déclaré une amélioration plus nette que les autres, mais elles n’avaient pas été réparties au hasard, et les auteurs demandent un essai randomisé. C’est une décision à prendre avec votre médecin, pas quelque chose à commencer pour la seule douleur au talon.
+
+#### Pourquoi mes talons me font-ils plus mal depuis que j’ai pris du poids ?
+
+Plus de poids corporel veut dire plus de charge sur le fascia plantaire à chaque pas, et la douleur au talon commence souvent après une hausse de la charge sur les pieds. Dans un essai sur 41 adultes, la perte de poids a diminué la pression sous certaines zones du pied. Cet essai n’a pas mesuré la douleur au talon : le lien avec la douleur est donc probable, mais pas démontré.
+
+#### La fasciite plantaire peut-elle passer sans perte de poids ?
+
+Pour la plupart des gens, oui. Environ 90 % vont mieux avec un traitement non chirurgical, comme les étirements et les semelles, souvent en 3 à 6 mois. Dans un long suivi de 174 personnes, l’IMC ne permettait pas de prévoir qui aurait encore mal au talon des années plus tard. Être une femme et avoir mal aux deux talons le permettaient.
+
+#### Les semelles sont-elles plus importantes quand on est plus lourd ?
+
+Aucune étude ne l’a testé. Pour la douleur au talon en général, la recommandation de 2023 déconseille de compter sur les semelles seules (note B contre) et leur donne un C quand elles sont associées aux étirements et au renforcement. Des chaussures amorties sur les sols durs sont une option pratique, même si les essais ne les ont pas testées. Voyez [semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/).
+
+## Mal aux pieds après une randonnée : pourquoi et que faire
+
+Language: French (Français) · https://walkito.site/fr/mal-aux-pieds-randonnee/ · published 2026-10-18 · updated 2026-10-18
+
+Avoir mal aux pieds après une longue randonnée est fréquent, et c’est surtout une question de surcharge : plus de distance, plus de descente ou un sac plus lourd que ce dont vos pieds ont l’habitude. Dans une enquête auprès de 1295 randonneurs au long cours sur l’Appalachian Trail, 29 % ont signalé une blessure ou une douleur au pied, et 12 % une douleur au tendon d’Achille (Chrusch et Kavin, 2021). Une douleur sous le talon aux premiers pas le lendemain matin oriente vers une [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/) ; une douleur sur un point précis d’un os, qui augmente à chaque sortie, peut être une fracture de fatigue et doit être examinée par un médecin.
+
+- Sur 1295 randonneurs au long cours de l’Appalachian Trail, 61 % ont signalé un problème musculaire, articulaire ou osseux, 37 % une douleur au genou, 29 % une douleur au pied et 12 % une douleur au tendon d’Achille, et 11 % ont arrêté leur randonnée à cause de cela (Chrusch et Kavin, 2021).
+- Les randonneurs qui ne s’étaient pas du tout entraînés avant le sentier signalaient plus souvent une douleur au pied, 38 % contre 28 %, et plus souvent une blessure de ce type quelle qu’elle soit, 80 % contre 58 %. C’est une association dans une enquête, pas la preuve que l’entraînement prévient les blessures (Chrusch et Kavin, 2021).
+- Les ampoules aux pieds étaient le problème le plus fréquent chez 280 randonneurs de l’Appalachian Trail, signalées par 64 % d’entre eux (Boulware et coll., 2003).
+- Les engourdissements ou fourmillements augmentaient avec le poids du sac chez 128 randonneurs au long cours, de 35 % avec des sacs de 10 à 20 livres (environ 4,5 à 9 kg) à 69 % au-delà de 31 livres (environ 14 kg). Le type de chaussure et le poids du sac n’étaient pas liés aux autres blessures musculaires et articulaires (Anderson et coll., 2009).
+- Les bâtons de randonnée ont réduit la charge sur la cheville, le genou et la hanche chez 15 randonneurs expérimentés en descente, avec et sans sac (Bohne et Abendroth-Smith, 2007).
+
+### Pourquoi a-t-on mal aux pieds après une randonnée ?
+
+**Surtout parce que la randonnée charge les pieds davantage, et plus longtemps, que la marche de tous les jours.** Vous marchez pendant des heures, sur un sol irrégulier, en montée et en descente, souvent avec un sac. Chacun de ces éléments ajoute du travail pour le talon, la voûte plantaire, le mollet et le tendon d’Achille.
+
+Les meilleurs chiffres viennent des randonneurs au long cours. Dans une enquête de 2018 à 2019 auprès de 1295 randonneurs de l’Appalachian Trail, 61 % ont signalé un problème musculaire, articulaire ou osseux. La douleur au genou était la plus fréquente avec 37 %, puis la douleur au pied avec 29 %, les entorses de cheville avec 13 %, la douleur au tendon d’Achille avec 12 % et la douleur au tibia avec 11 %. Ces problèmes ont fait arrêter 11 % d’entre eux (Chrusch et Kavin, 2021).
+
+Les problèmes de surmenage, qui s’installent au fil de jours de charge répétée, étaient plus fréquents que les blessures soudaines : 28 % contre 18 % dans la même enquête. Cela concerne aussi les randonneurs à la journée. Une première longue sortie de la saison, ou un week-end avec deux grosses journées d’affilée, suit le même schéma à plus petite échelle.
+
+Ce sont des enquêtes déclaratives auprès de personnes qui marchent des centaines de miles. Aucune étude n’a compté les douleurs au pied chez les randonneurs à la journée ordinaires, donc les chiffres exacts ne s’appliquent pas à quelqu’un qui randonne le week-end. Ce qui est utile, c’est la répartition de ce qui fait mal.
+
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+
+### Où avez-vous mal, et de quoi s’agit-il probablement ?
+
+L’endroit de la douleur est l’indice le plus rapide. Le tableau est un point de départ, pas un diagnostic.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Boulware DR, Forgey WW, Martin WJ 2nd. Medical risks of wilderness hiking. Am J Med. 2003;114(4):288–293.
+
+### Pourquoi la descente fait-elle plus mal aux pieds ?
+
+**En descente, vos jambes servent de freins.** À chaque pas vers le bas, le mollet, les muscles à l’avant du tibia et ceux de la cuisse contrôlent la descente tout en s’allongeant. Le pied glisse aussi vers l’avant dans la chaussure, si bien que les orteils et l’avant-pied subissent plus de pression. C’est pourquoi beaucoup de gens se sentent bien à la montée et ont mal après la descente.
+
+Dans une étude en laboratoire, 15 randonneurs expérimentés, tous des hommes, ont marché en descente sans sac, avec un sac de journée pesant 15 % de leur poids et avec un sac d’expédition de 30 %. Les bâtons ont réduit les moments articulaires à la cheville, au genou et à la hanche et le pic de travail de freinage à la cheville et au genou, quel que soit le sac (Bohne et Abendroth-Smith, 2007). Dans l’enquête de l’Appalachian Trail, 70 % utilisaient des bâtons ou un bâton de marche, et les bâtons étaient associés à moins de problèmes (Chrusch et Kavin, 2021). Cette association dans une enquête ne prouve pas que les bâtons préviennent les blessures.
+
+Quelques conseils pratiques, dont aucun n’a été testé pour prévenir la douleur au pied : faites des pas plus courts dans les descentes raides, serrez bien les lacets sur le cou-de-pied pour que le pied ne glisse pas vers l’avant, et gardez les ongles des orteils courts.
+
+Source: Bohne M, Abendroth-Smith J. Effects of hiking downhill using trekking poles while carrying external loads. Med Sci Sports Exerc. 2007;39(1):177–183.
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+
+### Un sac plus lourd aggrave-t-il la douleur au pied ?
+
+**Un sac plus lourd veut dire plus de charge à chaque pas, mais les études sur les randonneurs ne montrent un lien clair qu’avec les engourdissements et les fourmillements.** Dans une enquête de 2006 auprès de 128 randonneurs ayant parcouru plus de 500 miles (environ 800 km) sur l’Appalachian Trail ou le Pacific Crest Trail, les engourdissements ou fourmillements augmentaient avec le poids du sac : 35 % avec des sacs de 10 à 20 livres, 50 % de 21 à 30 livres et 69 % au-delà de 31 livres (Anderson et coll., 2009).
+
+La même enquête n’a trouvé aucun lien entre le poids du sac ou le type de chaussure et les autres blessures musculaires et articulaires, comme les entorses, les douleurs durables ou les blessures musculaires. Personne n’a donc montré qu’un sac plus léger signifie moins de douleur au talon ou à la voûte. C’est quand même un bon point de départ si vos pieds ne font mal que les jours où vous portez un sac plein.
+
+Si vos orteils brûlent ou fourmillent, desserrez les lacets sur le dessus du pied et vérifiez la ceinture ventrale et les bretelles, et consultez un médecin si cela ne passe pas une fois le sac retiré.
+
+Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
+
+### Chaussures de randonnée ou de trail : lesquelles pour la douleur au pied ?
+
+**Aucun essai n’a comparé les chaussures de randonnée montantes et les chaussures de trail pour la douleur au pied, donc personne ne peut dire lesquelles sont meilleures.** Il n’existe que des enquêtes :
+
+- Dans l’enquête de 2006 auprès de 128 randonneurs au long cours, les engourdissements ou fourmillements ont été signalés par 29 % des porteurs de sandales, 36 % des porteurs de chaussures de course, 42 % des porteurs de chaussures de randonnée basses et 68 % des porteurs de chaussures montantes. Après prise en compte du poids du sac, le type de chaussure ne comptait plus, ce qui suggère que les randonneurs en chaussures montantes portaient aussi des sacs plus lourds (Anderson et coll., 2009).
+- Dans l’enquête de 2018 à 2019 sur l’Appalachian Trail, 58 % portaient des chaussures de course ou de trail et 24 % des chaussures montantes. Les deux étaient associées à moins de problèmes que les autres chaussures, comme les sandales (Chrusch et Kavin, 2021).
+
+Choisissez donc la chaussure qui vous va, avec laquelle vous avez déjà marché et qui convient au terrain. Pour la douleur au talon en général, la recommandation de 2023 se prononce contre les semelles utilisées seules pour un soulagement à court terme, **note B**, et les admet en complément d’autres soins, **note C** (Koc et coll., 2023). Plus de détails dans [semelles ou exercices](https://walkito.site/fr/semelles-ou-exercices/). Si vous voulez passer à des chaussures plus légères ou plus plates, faites-le sur plusieurs semaines, pas lors de la première longue sortie ; [chaussures minimalistes](https://walkito.site/fr/chaussures-minimalistes/) explique pourquoi.
+
+Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### À quel rythme augmenter la distance de randonnée ?
+
+**Aucune étude ne donne une augmentation hebdomadaire sans risque pour les randonneurs.** Ce qui s’en rapproche le plus est l’enquête de l’Appalachian Trail : les 13 % de randonneurs qui ne s’étaient pas du tout entraînés avant le sentier signalaient plus de blessures au total (80 % contre 58 %), plus de douleurs au pied (38 % contre 28 %), plus de douleurs au tendon d’Achille (18 % contre 11 %) et plus de fractures de fatigue de la jambe (5 % contre 2 %). Le renforcement musculaire, les étirements ou le yoga, et l’entraînement d’endurance étaient chacun associés à moins de blessures (Chrusch et Kavin, 2021). C’est une enquête : les personnes plus en forme ou plus prudentes se sont peut-être simplement davantage entraînées.
+
+Une façon pratique de progresser, mais pas une méthode testée :
+
+- Changez une seule chose à la fois : plus de distance, plus de dénivelé ou un sac plus lourd, pas les trois le même jour.
+- Servez-vous du lendemain matin comme contrôle. Une douleur qui s’est calmée le lendemain matin et qui n’augmente pas de semaine en semaine est un signe raisonnable que la charge convient. Cette règle vient d’un essai sur le tendon d’Achille, pas d’une étude sur des randonneurs (Silbernagel et coll., 2007).
+- Après une grosse journée, prévoyez une journée facile. L’[Appalachian Trail Conservancy](https://appalachiantrail.org/experience/hike-the-trail/essential-skills/health-hygiene/common-injuries/) (en anglais) donne un conseil semblable aux randonneurs au long cours : s’arrêter pour la journée si les pieds commencent à faire mal, à gonfler ou à sembler serrés après avoir marché plus loin que d’habitude.
+
+La force du mollet vaut la peine d’être travaillée entre les sorties, parce que le mollet fait une grande partie du travail en montée et en descente. Les montées sur pointes ci-dessous sont les mêmes que dans le guide des [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/).
+
+Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+
+### Quelle routine faire avant et après une randonnée ?
+
+Faites court. Avant la sortie, une à deux minutes pour mettre les chevilles en mouvement. Après, les étirements qui ciblent le talon et le mollet. Les jours entre les sorties, des montées sur pointes pour la force. Les doses sont les doses de départ de Walkito tirées des guides principaux. Arrêtez un exercice pour la journée si la douleur dépasse 6 sur 10.
+
+Soyons honnêtes sur ce que l’étirement avant une randonnée apporte. Dans un essai sur 1538 recrues de l’armée suivies pendant trois mois d’entraînement, étirer six groupes musculaires des jambes avant chaque séance n’a pas réduit les blessures de façon notable (Pope et coll., 2000). Les étirements proposés ici visent la douleur au talon et au mollet, pour laquelle la recommandation de 2023 donne à l’étirement la **note A** et au renforcement du mollet la **note B** (Koc et coll., 2023).
+
+- **Bascules de cheville (avant)** (2 séries de 15, chaque jambe): En fente, les mains contre un mur, un arbre ou vos bâtons. Avancez le genou avant au-dessus des orteils, le talon reste à plat. Lentement, environ deux secondes dans chaque sens. Changez de jambe après chaque série.
+- **Étirement du mollet (après)** (2 maintiens de 30 secondes, chaque jambe): Posez les mains contre un mur. Gardez la jambe arrière tendue, le talon arrière à plat au sol et les hanches vers l’avant. Un mollet raide tire sur le talon : cet étirement compte, même si vous le sentez plus haut.
+- **Étirement du soléaire (après)** (2 maintiens de 30 secondes, chaque jambe): Prenez la même position, gardez le talon arrière à plat au sol, puis pliez le genou arrière jusqu’à sentir l’étirement plus bas, près du talon. Le soléaire, le muscle profond du mollet, ne se relâche que genou plié.
+- **Étirement du fascia plantaire (après, et le lendemain matin)** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Le lendemain matin, faites le premier au bord du lit, avant que le pied ne touche le sol.
+- **Massage avec une balle (après)** (1 minute, chaque pied): Asseyez-vous et faites rouler lentement la plante du pied sur une balle de massage, avec une pression ferme. Si vous grimacez, appuyez moins. Pas de balle ? Des passages fermes du pouce, du talon vers les orteils, conviennent aussi.
+- **Montées sur pointes, deux pieds (entre les sorties)** (3 séries de 10, deux pieds): Debout sur les deux pieds, montez bien droit au-dessus des gros orteils, puis redescendez lentement. Quand c’est facile, passez à une jambe ou à la [montée sur pointes avec serviette](https://walkito.site/fr/exercices/montee-sur-pointes-serviette/). En cas de douleur au tendon d’Achille, la descente lente sur une marche est l’exercice principal : voyez [exercices pour la tendinite d’Achille](https://walkito.site/fr/tendinite-achille-exercices/).
+
+Source: Pope RP, Herbert RD, Kirwan JD, Graham BJ. A randomized trial of preexercise stretching for prevention of lower-limb injury. Medicine & Science in Sports & Exercise. 2000;32(2):271–277.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Quand arrêter la randonnée et consulter un médecin ?
+
+**Arrêtez et faites-vous examiner si la douleur se situe sur un point précis d’un os et augmente à chaque sortie.** C’est le tableau classique de la fracture de fatigue, en général sur les métatarsiens derrière les orteils ou sur le calcanéum. Dans une revue sur les fractures de fatigue, 81 % des patients avaient mal en marchant, et un point douloureux sur l’os était retrouvé chez 65,9 à 100 % d’entre eux. Une radiographie à la première consultation n’en détectait qu’environ 10 %, donc une radiographie normale n’exclut pas une fracture de fatigue (Patel et coll., 2011). Si vous ne savez pas de quoi il s’agit, arrêtez la randonnée jusqu’à ce qu’un médecin ait examiné le pied.
+
+Arrêtez aussi si vous ne pouvez pas poser le pied, si la douleur a commencé avec une torsion, une chute ou un claquement, ou si le pied est rouge, chaud et gonflé. La liste complète se trouve plus bas.
+
+La plupart des douleurs au talon sont moins graves. Dans la fasciite plantaire, environ 90 % des personnes vont mieux avec un traitement sans chirurgie, même si cela peut prendre des mois (Latt et coll., 2020). Voyez [combien de temps dure une fasciite plantaire](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/).
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### Consultez d’abord un professionnel de santé si
+
+- la douleur se situe sur un point précis d’un os et augmente à chaque sortie, ce qui peut être une fracture de fatigue
+- vous ne pouvez pas poser le pied, ou vous boitez
+- la douleur a commencé avec une torsion, une chute ou un claquement, surtout à l’arrière du talon
+- le pied ou la cheville est rouge, chaud ou gonflé, ou vous avez de la fièvre
+- une ampoule ou un ongle semble infecté : rougeur qui s’étend, pus ou traînées rouges
+- les engourdissements, fourmillements ou brûlures ne passent pas une fois le sac et les chaussures retirés
+- le pied fait mal la nuit ou au repos
+- la douleur continue d’empirer pendant deux à trois semaines malgré des sorties plus courtes
+
+### En faire un plan
+
+Walkito est une application d’exercices pour le talon et le pied, avec les étirements et les montées sur pointes de cette page. Elle ne planifie pas vos randonnées : gardez votre propre plan d’itinéraires et placez les séances autour, avec des séances plus légères après une grosse journée.
+
+#### Est-il normal d’avoir mal aux pieds après une randonnée ?
+
+Un peu de douleur après une sortie longue ou raide est fréquent et passe souvent en un ou deux jours. Dans une enquête auprès de 1295 randonneurs de l’Appalachian Trail, 29 % ont signalé une douleur au pied. Une douleur vive, située sur un point précis d’un os ou encore présente après quelques jours tranquilles mérite d’être examinée.
+
+#### Pourquoi ai-je mal au talon après une randonnée ?
+
+La cause la plus fréquente est la fasciite plantaire, qui fait mal sous le talon et est en général pire aux premiers pas le lendemain matin. La recommandation de 2023 cite une augmentation récente de l’activité en appui comme déclencheur typique, et un mollet raide est le facteur de risque le plus fort connu. Une douleur à l’arrière du talon oriente vers le tendon d’Achille.
+
+#### Peut-on continuer à randonner avec une fasciite plantaire ?
+
+Beaucoup de gens le peuvent, sur des parcours plus courts et plus plats, si la douleur reste modérée pendant la sortie et s’est calmée le lendemain matin. Cette règle du lendemain matin vient d’un essai sur le tendon d’Achille, pas d’une étude sur la randonnée. Si le talon est pire chaque matin, réduisez d’abord la distance et la descente. Notre guide pour marcher avec une fasciite plantaire explique comment reprendre progressivement.
+
+#### Chaussures montantes ou chaussures de trail : lesquelles pour la douleur au pied ?
+
+Personne ne le sait vraiment, car aucun essai ne les a comparées. Dans les enquêtes auprès des randonneurs au long cours, les chaussures montantes comme les chaussures de trail étaient associées à moins de problèmes que les sandales, et le lien entre chaussures montantes et engourdissements disparaissait une fois le poids du sac pris en compte. Choisissez la paire qui vous va et avec laquelle vous avez déjà marché.
+
+#### Un sac à dos lourd donne-t-il mal aux pieds ?
+
+Il ajoute de la charge à chaque pas, mais les enquêtes auprès des randonneurs ne montrent un lien clair qu’avec les engourdissements et les fourmillements. Chez 128 randonneurs au long cours, ils passaient de 35 % avec des sacs de 10 à 20 livres (environ 4,5 à 9 kg) à 69 % au-delà de 31 livres (environ 14 kg). Dans cette enquête, le poids du sac n’était pas lié aux autres blessures musculaires et articulaires.
+
+#### Pourquoi ai-je plus mal aux pieds en descente ?
+
+En descente, les muscles des jambes servent de freins tout en s’allongeant, et le pied glisse vers l’avant dans la chaussure, ce qui charge les orteils et l’avant-pied. Dans une étude en laboratoire sur 15 randonneurs en descente, les bâtons de randonnée ont réduit la charge sur la cheville, le genou et la hanche, avec et sans sac.
+
+#### Les bâtons de randonnée aident-ils contre la douleur au pied ?
+
+Ils réduisent la charge sur les jambes. Chez 15 randonneurs expérimentés en descente, les bâtons ont réduit les forces à la cheville, au genou et à la hanche, et dans une enquête auprès des randonneurs de l’Appalachian Trail, les bâtons étaient associés à moins de problèmes. Aucun essai n’a vérifié si les bâtons préviennent la douleur au pied elle-même : voyez-les comme un complément sensé, pas comme une certitude.
+
+#### Combien de temps les pieds peuvent-ils faire mal après une longue randonnée ?
+
+Les douleurs ordinaires après une grosse journée s’estompent souvent en un ou deux jours d’activité légère. Si la douleur au talon aux premiers pas revient chaque matin, ou si la douleur est toujours là après une semaine de marches plus courtes, il s’agit plus probablement d’un problème de surmenage comme une fasciite plantaire ou une douleur au tendon d’Achille, et cela mérite un vrai examen.
+
+#### Faut-il s’étirer avant une randonnée ?
+
+Un court échauffement comme les bascules de cheville convient, mais n’attendez pas des étirements avant la sortie qu’ils préviennent les blessures. Dans un essai sur 1538 recrues de l’armée, s’étirer avant l’entraînement n’a pas réduit les blessures de façon notable. Les étirements du mollet et de la voûte après la sortie sont plus utiles si votre talon fait mal : la recommandation de 2023 leur donne la note A.
+
 ## À propos de Walkito
 
 https://walkito.site/fr/a-propos/

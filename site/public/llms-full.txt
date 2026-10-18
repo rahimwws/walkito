@@ -13522,11 +13522,11 @@ Pain at the back of the heel or around the Achilles tendon can go with plantar f
 
 Language: English · https://walkito.site/heel-pain-not-plantar-fasciitis/ · published 2026-10-18 · updated 2026-10-18
 
-If your heel pain does not follow the usual pattern of [plantar fasciitis](https://walkito.site/plantar-fasciitis/), worst with the first steps in the morning and easing as you warm up, something else may be going on. The common look-alikes are a bruised or thin heel fat pad, an irritated nerve, a heel stress fracture, problems at the back of the heel, and, less often, arthritis or a nerve pinched in the lower back (Latt and colleagues, 2020). In 250 people with pain under the heel, plantar fasciitis explained 53.2% of cases and fat pad atrophy 14.8% (Yi and colleagues, 2011).
+If your heel pain does not follow the usual pattern of [plantar fasciitis](https://walkito.site/plantar-fasciitis/), worst with the first steps in the morning and easing as you warm up, something else may be going on. Under the heel, the common look-alikes are a bruised or thin heel fat pad, an irritated nerve, including one pinched in the lower back, a heel stress fracture and inflammatory arthritis (Latt and colleagues, 2020). Pain at the back of the heel has its own causes, such as the Achilles tendon. In 250 people with pain under the heel, plantar fasciitis explained 53.2% of cases and fat pad atrophy 14.8% (Yi and colleagues, 2011).
 
 - Typical plantar fasciitis pain sits near the inner heel, is worst with the first step in the morning or after sitting, gets better with activity and then worse as activity goes on (Latt and colleagues, 2020).
 - In 250 people with plantar heel pain, plantar fasciitis accounted for 53.2%, fat pad atrophy for 14.8%, and both together for 9.2% (Yi and colleagues, 2011).
-- Burning, electric or tingling heel pain points to a nerve. One review estimates Baxter’s nerve entrapment may explain up to 20% of chronic heel pain (Tedeschi, 2025).
+- Burning, electric or tingling heel pain often points to a nerve. One review estimates Baxter’s nerve entrapment may explain up to 20% of chronic heel pain (Tedeschi, 2025).
 - A heel stress fracture usually aches with activity, not with the first step, and in 30 military recruits it showed on plain X-ray in only 15% (Latt and colleagues, 2020; Sormaala and colleagues, 2006).
 - Pain in both heels together with other painful or stiff joints, or a stiff back, suggests an inflammatory cause that needs a doctor, not just stretches (Latt and colleagues, 2020).
 
@@ -13555,13 +13555,13 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 **Pain described as burning or like an electric shock is often coming from a nerve** (Latt and colleagues, 2020). Three nerve sources are the usual suspects:
 
-- **Baxter’s nerve**, a small branch that runs under the heel. When it is squeezed, it gives a chronic, burning pain across the heel pad (Latt and colleagues, 2020). One review estimates it may explain up to 20% of chronic heel pain and says it is often mistaken for plantar fasciitis (Tedeschi, 2025).
+- **Baxter’s nerve**, a small branch that runs under the heel. When it is squeezed, it gives a chronic, burning pain across the heel pad (Latt and colleagues, 2020). One review estimates it may explain up to 20% of chronic heel pain and says it is often mistaken for plantar fasciitis (Tedeschi, 2025), while another calls it uncommon (Latt and colleagues, 2020).
 - **Tarsal tunnel syndrome**, where the tibial nerve is squeezed behind the inner ankle bone. It usually brings burning or shooting pain along the sole, often with numbness (Latt and colleagues, 2020). More on arch nerve pain in [arch pain](https://walkito.site/arch-pain/).
 - **A pinched nerve in the lower back**, at the L5 or S1 level. It is relatively common and usually comes with back pain, pain down the leg, or numbness in the foot or leg (Latt and colleagues, 2020).
 
 A review of nerve related heel pain found that nerve entrapment may play a part both early on and in heel pain that does not get better, but that how it works and how best to test for it are still debated (Alshami and colleagues, 2008). Night or rest pain with tingling is covered in [heel pain at night](https://walkito.site/heel-pain-at-night/).
 
-This is one group where self-help exercises are not the first step. A clinician checks sensation and strength in the foot, and may use ultrasound, MRI or nerve tests (Tedeschi, 2025).
+This is one group where self-help exercises are not the first step. A clinician examines the foot, for example by tapping along the tibial nerve, and may use ultrasound, nerve tests or MRI (Latt and colleagues, 2020; Tedeschi, 2025).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.
@@ -13573,7 +13573,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 A normal X-ray does not rule it out: in 30 recruits with a heel stress injury on MRI, plain X-rays showed it in only 15% (Sormaala and colleagues, 2006). The side by side comparison is in [plantar fasciitis vs stress fracture](https://walkito.site/plantar-fasciitis-vs-stress-fracture/).
 
-Fat pad pain is a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot, and it is also activity related (Latt and colleagues, 2020). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/).
+Fat pad pain is usually described as a deep, bruise-like ache in the middle of the heel pad, worse on hard floors and barefoot. Like a stress fracture, it tends to be activity related (Latt and colleagues, 2020), and in one clinic it more often affected both heels and was made worse by standing (Yi and colleagues, 2011). It was the second most common cause in the 250 people above, at 14.8% (Yi and colleagues, 2011). A 2022 review found only seven original studies on it, so much of the advice is based on experience, not trials (Chang and colleagues, 2022). More in [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/), and on how a spur fits in, [plantar fasciitis vs heel spur](https://walkito.site/plantar-fasciitis-vs-heel-spur/).
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
@@ -13597,7 +13597,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### What if both heels hurt, or other joints are stiff too?
 
-**Pain in both heels, heel pain together with several painful or stiff joints, or a stiff back suggest an inflammatory cause** such as psoriatic arthritis, reactive arthritis or spondyloarthritis (Latt and colleagues, 2020). These conditions are most common in young men, while plantar fasciitis is most common in middle age and in women.
+**Pain in both heels, heel pain together with several painful or stiff joints, or a stiff back suggest an inflammatory cause** such as psoriatic arthritis, reactive arthritis or spondyloarthritis (Latt and colleagues, 2020). The spondyloarthritis group is most common in young men, while plantar fasciitis is most common in middle age and more often in women (Latt and colleagues, 2020).
 
 The same review lists the clues that make a doctor order blood tests: symptoms elsewhere in the body, both feet affected, several joints involved, especially small ones, and morning stiffness that lasts more than 30 minutes (Latt and colleagues, 2020).
 
@@ -13651,7 +13651,7 @@ Walkito is an exercise app for heel and foot pain. Its plan is built for plantar
 
 #### What is commonly mistaken for plantar fasciitis?
 
-The most common look-alikes are heel fat pad syndrome, nerve entrapment such as Baxter’s nerve or tarsal tunnel syndrome, a heel stress fracture, and insertional Achilles pain. Less often it is inflammatory arthritis or a nerve pinched in the lower back. In 250 people with pain under the heel, fat pad atrophy explained 14.8% of cases.
+The most common look-alikes are heel fat pad syndrome, nerve entrapment such as Baxter’s nerve or tarsal tunnel syndrome, a heel stress fracture, and insertional Achilles pain. It can also be inflammatory arthritis or a nerve pinched in the lower back. In 250 people with pain under the heel, fat pad atrophy explained 14.8% of cases.
 
 #### How do I know if my heel pain is not plantar fasciitis?
 
@@ -13683,7 +13683,7 @@ In children who are still growing, the most common cause is Sever’s disease, a
 
 #### Can I do plantar fasciitis exercises if I am not sure what it is?
 
-Gentle plantar fascia and calf stretches are low risk, and the 2023 guideline grades them A for plantar fasciitis. But if you have burning or numbness, swelling, pain that builds with activity, or pain after an injury, see a clinician first. Stop any exercise that makes the heel sharply worse.
+The 2023 guideline grades plantar fascia and calf stretches A for plantar fasciitis, and they are gentle. But if you have burning or numbness, swelling, pain that builds with activity, or pain after an injury, see a clinician first. Stop any exercise that makes the heel sharply worse.
 
 ## Plantar fasciitis not getting better? Reasons and what to change
 
@@ -13691,19 +13691,19 @@ Language: English · https://walkito.site/plantar-fasciitis-not-getting-better/ 
 
 When plantar fasciitis is not getting better, the usual reasons are a plan that is only stretching, a load that never goes up, stopping when it eases, or something that keeps setting it off. Sometimes it is not plantar fasciitis at all. It is rarely a sign that nothing can change: in a study that followed 174 people for about ten years, 54% were free of symptoms and most of the rest had only minor pain (Hansen and colleagues, 2018).
 
-- In 174 people followed for a mean of 9.7 years from the start of symptoms, 54% were symptom-free and 46% still had some symptoms, mostly minor. Most had already had a steroid injection, so these were harder cases (Hansen and colleagues, 2018).
+- In 174 people followed for a mean of 9.7 years from the start of symptoms, 54% were symptom-free and 46% still had some symptoms, mostly minor. Almost all (93%) had a steroid injection at some point, so these were harder cases (Hansen and colleagues, 2018).
 - Ups and downs are normal: 31.9% of the people who got better had at least one relapse first, and 77.5% of those still in pain had had a pain-free period at some point (Hansen and colleagues, 2018).
-- In a trial of 48 people, loaded heel raises brought improvement forward compared with stretching alone at three months. By one year both groups were about even (Rathleff and colleagues, 2015).
+- In a trial of 48 people, loaded heel raises brought improvement forward compared with stretching at three months. By one year both groups were about even (Rathleff and colleagues, 2015).
 - The 2023 heel pain guideline grades stretching, manual therapy, taping and night splints **A**, and strength work, dry needling and low-level laser **B**. It recommends against insoles on their own for short-term relief (Koc and colleagues, 2023).
 - The same guideline says to look for other diagnoses when symptoms are not settling, such as inflammatory arthritis, fat pad atrophy or a lump in the fascia (Koc and colleagues, 2023).
 
 ### Is plantar fasciitis permanent if it is not getting better?
 
-**For most people, no.** A 2020 review reports that about 90% of people get better with non-surgical care, though it can take three to six months (Latt and colleagues, 2020). The harder question is what happens to the people who are still stuck after that.
+**For most people, no.** A 2020 review reports that more than 90% of people get better with non-surgical care, though it can take three to six months (Latt and colleagues, 2020). The harder question is what happens to the people who are still stuck after that.
 
 The best long-term data come from a Danish study that followed 174 people with plantar fasciitis confirmed on ultrasound. At a mean of 9.7 years after their symptoms started, 54% had no symptoms at all. The other 46% still had some, but most described them as minor. On average, people had tried 3.8 different treatments (Hansen and colleagues, 2018).
 
-Two things make this study more hopeful than it first looks. It was a hospital group with hard-to-manage pain: 93% had already had a steroid injection, which is not a first step. And "still has symptoms" meant any score above 0 out of 10, so it includes people with occasional mild aches.
+Two things make this study more hopeful than it first looks. It was a specialist clinic group with hard-to-manage pain: 93% had a steroid injection at some point, which is not a first step. And "still has symptoms" meant any score above 0 out of 10, so it includes people with occasional mild aches.
 
 The study also found the fascia got thinner over time whether people still had pain or not, and only 24% of the pain-free group had a fascia that looked fully normal on ultrasound. So a scan that still looks abnormal does not mean you cannot feel better. For the full timeline, see [how long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/).
 
@@ -13721,7 +13721,7 @@ Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognos
 
 **Stretching is worth keeping, but on its own it may not be enough.** The 2023 heel pain guideline grades plantar fascia and calf stretching **A**, its top grade. It also grades strength work for the foot and ankle **B** (Koc and colleagues, 2023). Many home plans only include the first.
 
-In a trial of 48 people, one group did slow, heavy heel raises with a towel under the toes and the other stretched the plantar fascia. At three months, the heel raise group scored 29 points better on the Foot Function Index. By one year the two groups were about even (Rathleff and colleagues, 2015). So adding strength work did not change where people ended up, but it got them there sooner.
+In a trial of 48 people, one group did slow, heavy heel raises with a towel under the toes and the other stretched the plantar fascia. At three months, the heel raise group scored 29 points better on the Foot Function Index. By one year the two groups were about even (Rathleff and colleagues, 2015). So doing heel raises in place of stretching did not change where people ended up at one year, but it got them there sooner.
 
 What it looks like: you have stretched faithfully for a month or more, the stretch feels easier, but the first steps of the day are still sharp. What to change: keep the stretches and add the calf work in the next section. [Calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/) explains the trial routine in detail.
 
@@ -13730,7 +13730,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Has the load ever gone up?
 
-**Strength work only helps if it gets harder over time.** Ten easy heel raises on two feet, done for months, is a warm-up, not a load. The trial routine moves from both feet to one foot, adds a slow tempo and a towel under the toes, then adds weight such as a backpack (Rathleff and colleagues, 2015).
+**Strength work only helps if it gets harder over time.** Ten easy heel raises on two feet, done for months, is a warm-up, not a load. The steps below move from both feet to one foot and then add weight. The trial routine itself was one-leg heel raises with a towel under the toes, a slow tempo and a backpack for added weight (Rathleff and colleagues, 2015).
 
 How you set the load matters less than people think. A 2019 trial gave 70 people either a set, step-by-step heel raise plan or told them to choose their own sets and weight, as heavy as they could manage. Both groups improved by a similar amount. Choosing your own dose did not lead people to do more (Riel and colleagues, 2019).
 
@@ -13876,7 +13876,7 @@ They can ease pain for a while, but the added benefit looks small. In a trial of
 
 #### When is surgery considered for plantar fasciitis?
 
-Only after a long trial of non-surgical care. A 2020 review says surgery is considered when pain and limits persist despite at least six months of non-surgical treatment, and that minimally invasive options such as injections or shockwave are usually discussed first. A foot and ankle specialist makes that call with you.
+Only after a long trial of non-surgical care. A 2020 review says surgery is considered when pain and limits persist despite at least six months of non-surgical treatment, and that minimally invasive options such as injections or shockwave may be considered at that stage too. A foot and ankle specialist makes that call with you.
 
 #### Could my heel pain be something other than plantar fasciitis?
 
@@ -13893,7 +13893,7 @@ Language: English · https://walkito.site/plantar-fasciitis-menopause/ · publis
 Plantar fasciitis is most common in women around the age of menopause: in Dutch family practice records, new cases in women peaked at 11.23 per 1000 patient-years at age 50, against a peak of 5.54 in men at age 55 (Rasenberg and colleagues, 2019). Whether falling hormone levels cause it is not known. The link is plausible, but no study has proven it (Douglas-Harris and colleagues, 2026). What does help is the same as at any age: plantar fascia and calf stretches, graded **A** in the 2023 heel pain guideline, and calf strength work, graded **B** (Koc and colleagues, 2023).
 
 - In records of about 1.9 million Dutch patients, new cases of heel pain in women peaked at 11.23 per 1000 patient-years at age 50. In men the peak was 5.54, at age 55. 62% of the 18,004 cases were women (Rasenberg and colleagues, 2019).
-- The 2023 heel pain guideline lists age between 40 and 60 as a risk factor, along with running or jumping and jobs with long hours of standing (Koc and colleagues, 2023).
+- The 2023 heel pain guideline says plantar fasciitis is most common between ages 40 and 60, and lists running and jobs with a lot of time on your feet as risk factors (Koc and colleagues, 2023).
 - A link between menopause and heel pain is plausible but unproven: no study has measured the plantar fascia across menopause, and in a 2026 focus group study 76% of the 17 women had not connected the two (Douglas-Harris and colleagues, 2026).
 - No trial has tested HRT for plantar fasciitis. Whether HRT suits you depends on your menopause symptoms and health history, and that is a decision to make with your doctor.
 - Plantar fascia and calf stretches (grade **A**) and calf strength work (grade **B**) are the best-graded exercises, whatever your age (Koc and colleagues, 2023).
@@ -13904,7 +13904,7 @@ Plantar fasciitis is most common in women around the age of menopause: in Dutch 
 
 The age pattern is the striking part. In women, new cases peaked at **11.23 per 1000 patient-years at age 50**. In men, the peak was lower and later: 5.54 at age 55 (Rasenberg and colleagues, 2019). The average age of menopause in the UK is 51, which is why researchers have started to ask whether the two are connected (Douglas-Harris and colleagues, 2026).
 
-The 2023 heel pain guideline lists age between 40 and 60 as a risk factor (Koc and colleagues, 2023). Women also tend to keep it longer: in a 5 to 15 year follow-up of 174 people, the risk of still having plantar fasciitis was higher in women and in people with pain in both heels (Hansen and colleagues, 2018).
+The 2023 heel pain guideline says plantar fasciitis is most common between ages 40 and 60 (Koc and colleagues, 2023). Women also tend to keep it longer: in a 5 to 15 year follow-up of 174 people, the risk of still having plantar fasciitis was higher in women and in people with pain in both heels (Hansen and colleagues, 2018).
 
 Source: Rasenberg N, Bierma-Zeinstra SM, Bindels PJ, van der Lei J, van Middelkoop M. Incidence, prevalence, and management of plantar heel pain: a retrospective cohort study in Dutch primary care. British Journal of General Practice. 2019;69(688):e801–e808.
 Source: Douglas-Harris M, Wilkins R, Ramaskandhan J, Mankelow J, Branthwaite H. Menopause and plantar heel pain: findings from a series of focus groups exploring lived experience. Journal of Foot and Ankle Research. 2026;19(2):e70154.
@@ -13913,7 +13913,7 @@ Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognos
 
 ### Does menopause cause plantar fasciitis?
 
-**Nobody knows yet.** The authors of the only study focused on menopause and heel pain write that whether a causal relationship exists is uncertain (Douglas-Harris and colleagues, 2026). That study was a set of focus groups with 17 women, not a measurement of hormones or heel tissue. Many websites state the link as fact. The evidence does not support that yet.
+**Nobody knows yet.** The authors of a 2026 study focused on menopause and heel pain write that whether a causal relationship exists is uncertain (Douglas-Harris and colleagues, 2026). That study was a set of focus groups with 17 women, not a measurement of hormones or heel tissue. Many websites state the link as fact. The evidence does not support that yet.
 
 Here is what is known and what is not:
 
@@ -13928,7 +13928,7 @@ Source: Lu CB, Liu PF, Zhou YS, et al. Musculoskeletal pain during the menopausa
 Plantar fasciitis usually starts when the load on the heel is more than it can handle and recover from. Several things that often change in midlife add to that load:
 
 - **Weight.** In a review of 51 studies, a BMI over 27 came with 3.7 times the odds of plantar fasciitis, and the link was strongest in people who are not athletes (van Leeuwen and colleagues, 2016). Weight often changes in midlife; [weight and plantar fasciitis](https://walkito.site/weight-and-plantar-fasciitis/) covers what is known.
-- **Stiffer calves and ankles.** In a study of 50 people with plantar fasciitis and 100 without, a stiff ankle was the strongest factor measured, with 23.3 times the odds (Riddle and colleagues, 2003). In 100 adults without foot problems, older people had stiffer ankles, flatter feet and weaker toe muscles than younger ones (Scott and colleagues, 2007).
+- **Stiffer calves and ankles.** In a study of 50 people with plantar fasciitis and 100 without, a stiff ankle was the strongest factor measured, with 23.3 times the odds (Riddle and colleagues, 2003). In 100 adults without foot problems, people around 80 had stiffer ankles, flatter feet and weaker toe muscles than people around 20 (Scott and colleagues, 2007).
 - **A heel pad that gives less.** In an X-ray study of 70 people with heel pain and 200 without, the heel pad lost elasticity with age, and had lost more in people with heel pain (Prichasuk, 1994). A thinned fat pad causes its own kind of heel pain, covered in [heel fat pad syndrome](https://walkito.site/heel-fat-pad-syndrome/).
 - **A change in activity.** Starting a new walking or running plan, a new job on your feet, or a sudden jump in exercise can all add load quickly. A 2026 review lists rapid increases in physical activity among the things that raise the risk of overuse injuries such as plantar fasciitis in midlife women (Ansari and colleagues, 2026).
 
@@ -13966,7 +13966,7 @@ Source: Ansari M, Hussain F, Shopon M, Ajmal H, Asif M, David S. Hormonal shifts
 
 **There is no trial of HRT for plantar fasciitis, so nobody can say whether it helps.** We searched for one and found none. HRT, also called menopausal hormone therapy, is used for menopause symptoms. It is not a recognized treatment for heel pain.
 
-What exists is indirect. In the 2026 focus groups, some women said they noticed fewer foot pains on HRT (Douglas-Harris and colleagues, 2026). That is a report from a few people, not a measured result. Two small studies of the Achilles tendon found that active women on HRT had smaller tendons than active women not on it: one of 85 women (Cook and colleagues, 2007), and one of 14 pairs of identical twins, where the difference showed up only in the 5 most active pairs (Finni and colleagues, 2009). Tendon size is not pain, and the Achilles is not the plantar fascia.
+What exists is indirect. In the 2026 focus groups, some women said they noticed fewer foot pains on HRT (Douglas-Harris and colleagues, 2026). That is a report from a few people, not a measured result. Two small studies of the Achilles tendon found that active women on HRT had smaller tendons than active women not on it: one of 85 women (Cook and colleagues, 2007), and one of 14 pairs of identical twins, where the difference showed up only in the 5 physically active pairs (Finni and colleagues, 2009). Tendon size is not pain, and the Achilles is not the plantar fascia.
 
 A 2026 review notes that HRT is not right for everyone, because of contraindications and each person’s balance of risks and benefits (Ansari and colleagues, 2026). Whether to take it depends on your menopause symptoms and health history. **That is a decision to make with your doctor.** Whatever you decide, the stretches and strength work on this page still apply.
 
@@ -13981,7 +13981,7 @@ About 90% of people with plantar fasciitis get better with non-surgical care suc
 
 For some people it lasts longer. In a follow-up of 174 people, 54% had no symptoms at follow-up, about 9 years after diagnosis on average, and the risk of still having it was higher in women and in people with pain in both heels (Hansen and colleagues, 2018). That is a reason to start the exercises early and keep them going, not a reason to expect the worst. [How long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/) has the full timeline.
 
-If you are building up activity in midlife, for health or for weight, the guideline advises changing the load on your feet rather than stopping activity (Koc and colleagues, 2023). [Walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.
+If you are building up activity in midlife, for health or for weight, build up step by step rather than stopping: the guideline notes that plantar fasciitis usually starts after a change in weight-bearing activity (Koc and colleagues, 2023). [Walking with plantar fasciitis](https://walkito.site/walking-with-plantar-fasciitis/) explains how to build walking back up step by step.
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
@@ -14027,7 +14027,7 @@ Nobody knows for sure. In Dutch records, new cases in women peaked at 11.23 per 
 
 #### Can perimenopause cause heel pain?
 
-Possibly, but it has not been shown for heel pain specifically. A review of 16 studies found that 71% of perimenopausal women report musculoskeletal pain, more than before perimenopause. No study has looked at plantar fasciitis in perimenopause on its own, so if your heel hurts, the usual heel pain checks and exercises apply.
+Possibly, but it has not been shown for heel pain specifically. A review of 16 studies found that 71% of perimenopausal women report musculoskeletal pain, more than women who have not reached perimenopause. No study has looked at plantar fasciitis in perimenopause on its own, so if your heel hurts, the usual heel pain checks and exercises apply.
 
 #### Does HRT help plantar fasciitis?
 
