@@ -89,9 +89,10 @@ export function anatomySrc(id: AnatomyId, lang: Lang, small = false) {
 /** The credit line under the image, as parts the component links up. */
 export function anatomyCredit(id: AnatomyId, lang: Lang) {
   const { source } = ANATOMY[id];
-  if (source.by === 'walkito') return { lead: `${ILLUSTRATION[lang]}: Walkito` } as const;
+  const colon = lang === 'fr' ? '\u00A0:' : ':';
+  if (source.by === 'walkito') return { lead: `${ILLUSTRATION[lang]}${colon} Walkito` } as const;
   return {
-    lead: `${ILLUSTRATION[lang]}: `,
+    lead: `${ILLUSTRATION[lang]}${colon} `,
     author: 'InjuryMap',
     authorUrl: `https://commons.wikimedia.org/wiki/File:${source.file}`,
     license: source.license,

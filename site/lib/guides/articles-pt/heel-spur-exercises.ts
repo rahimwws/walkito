@@ -106,7 +106,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados no chão. Suba os calcanhares empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão uma resistência leve. É o jeito com menos carga de começar a trabalhar a panturrilha.',
           often: 'Dias de força',
-          feel: 'Trabalho leve nas panturrilhas, quase sem carga no calcanhar',
+          feel: 'Trabalho na parte baixa da panturrilha (o sóleo), quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
           caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',
