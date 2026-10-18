@@ -73,6 +73,15 @@ import { MORTONS_EN } from './articles/mortons';
 import { SESAMOIDITIS_EN } from './articles/sesamoiditis';
 import { BUNIONS_EN } from './articles/bunions';
 import { HAMMER_TOE_EN } from './articles/hammer-toe';
+import { PF_VS_ACHILLES_EN } from './articles/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_STRESS_FRACTURE_EN } from './articles/plantar-fasciitis-vs-stress-fracture';
+import { WALKING_PF_EN } from './articles/walking-with-plantar-fasciitis';
+import { FLAT_FEET_TEST_EN } from './articles/flat-feet-test';
+import { RUNNERS_FOOT_EXERCISES_EN } from './articles/foot-exercises-for-runners';
+import { TEACHERS_EN } from './articles/teachers-foot-pain';
+import { RETAIL_WAREHOUSE_EN } from './articles/retail-warehouse-foot-pain';
+import { CHEFS_EN } from './articles/chefs-foot-pain';
+import { HAIRDRESSERS_EN } from './articles/hairdressers-foot-pain';
 import type { Guide } from './types';
 
 /**
@@ -154,4 +163,13 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   massageBall: MASSAGE_BALL_EN,
   insolesVsExercises: INSOLES_VS_EXERCISES_EN,
   barefoot: BAREFOOT_EN,
+  pfVsAchilles: PF_VS_ACHILLES_EN,
+  pfVsStressFracture: PF_VS_STRESS_FRACTURE_EN,
+  walkingPf: WALKING_PF_EN,
+  flatFeetTest: FLAT_FEET_TEST_EN,
+  runnersFootExercises: RUNNERS_FOOT_EXERCISES_EN,
+  teachers: TEACHERS_EN,
+  retailWarehouse: RETAIL_WAREHOUSE_EN,
+  chefs: CHEFS_EN,
+  hairdressers: HAIRDRESSERS_EN,
 };

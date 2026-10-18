@@ -73,6 +73,15 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   massageBall: 'Massage ball and frozen bottle',
   insolesVsExercises: 'Insoles vs exercises',
   barefoot: 'Barefoot shoes',
+  pfVsAchilles: 'Plantar fasciitis vs Achilles',
+  pfVsStressFracture: 'Plantar fasciitis vs stress fracture',
+  walkingPf: 'Walking with plantar fasciitis',
+  flatFeetTest: 'Flat feet test',
+  runnersFootExercises: 'Foot exercises for runners',
+  teachers: 'Teachers',
+  retailWarehouse: 'Retail and warehouse',
+  chefs: 'Chefs and kitchen staff',
+  hairdressers: 'Hairdressers',
 };
 
 /** Spanish footer labels, for the articles that exist in Spanish. */
@@ -141,6 +150,15 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   flatFeetBackPain: 'Pie plano y dolor de espalda',
   flatFeetKids: 'Pie plano en niños',
   tightCalves: 'Pantorrillas tensas',
+  pfVsAchilles: 'Fascitis plantar o tendinitis de Aquiles',
+  pfVsStressFracture: 'Fascitis plantar o fractura por estrés',
+  walkingPf: 'Caminar con fascitis plantar',
+  flatFeetTest: 'Test de pie plano',
+  runnersFootExercises: 'Ejercicios de pies para corredores',
+  teachers: 'Docentes',
+  retailWarehouse: 'Comercio y almacén',
+  chefs: 'Cocineros',
+  hairdressers: 'Peluqueros',
 };
 
 /** Russian footer labels, for the articles that exist in Russian. */
@@ -209,17 +227,26 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
   flatFeetBackPain: 'Плоскостопие и боль в спине',
   flatFeetKids: 'Плоскостопие у детей',
   tightCalves: 'Забитые икры',
+  pfVsAchilles: 'Фасциит или ахиллово сухожилие',
+  pfVsStressFracture: 'Фасциит или стрессовый перелом',
+  walkingPf: 'Ходьба при плантарном фасциите',
+  flatFeetTest: 'Тест на плоскостопие',
+  runnersFootExercises: 'Упражнения для стоп бегунам',
+  teachers: 'Учителя',
+  retailWarehouse: 'Продавцы и склад',
+  chefs: 'Повара',
+  hairdressers: 'Парикмахеры',
 };
 
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],
-  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs'],
+  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs', 'pfVsAchilles', 'pfVsStressFracture', 'walkingPf'],
   foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening'],
-  ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening'],
-  flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids'],
+  ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening', 'runnersFootExercises'],
+  flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
-  work: ['standing', 'nurses', 'standingDesk'],
+  work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers'],
   compare: ['bestApp', 'vsExakt', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
@@ -279,16 +306,25 @@ export const TOPICS: Record<Topic, readonly GuideKey[]> = {
     'nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'bestInsoles',
     'bestApp', 'pfCost', 'appVsPt', 'vsHinge', 'hingeAlt', 'vsExakt', 'exaktAlt', 'ytVsApp', 'appStudy', 'ytStudy', 'aiStudy',
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exTowelHeelRaise', 'exFootRoll',
+    'pfVsAchilles',
+    'pfVsStressFracture',
+    'walkingPf',
+    'teachers',
+    'retailWarehouse',
+    'chefs',
+    'hairdressers',
   ],
   flat: [
     'hubFlatFeet', 'flatFeet', 'archPain', 'pttd', 'highArches', 'footStrengthening',
     'flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids',
     'barefoot', 'insolesVsExercises', 'bestFlatApp', 'footApps',
     'exShortFoot', 'exTowelScrunch', 'exBandInversion', 'exHipAbduction',
+    'flatFeetTest',
   ],
   calf: [
     'achilles', 'shinSplints', 'tightCalves', 'ankleMobility', 'ankleStrengthening', 'calfRaiseTest',
     'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exAnkleRocks', 'exSingleLegBalance',
+    'runnersFootExercises',
   ],
   forefoot: [
     'ballOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening', 'topOfFoot',

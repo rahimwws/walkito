@@ -13,7 +13,7 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 
 ## Key facts
 - No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
@@ -115,6 +115,15 @@ Last updated: 2026-10-17
 - [Massage ball, roller or frozen bottle for plantar fasciitis: what the research says](https://walkito.site/massage-ball-plantar-fasciitis/): Does a massage ball help plantar fasciitis? What trials found for balls, rollers and a frozen bottle, how hard and how long to roll, and when to skip it.
 - [Insoles vs exercises: do you need orthotics for foot pain?](https://walkito.site/insoles-vs-exercises/): Do you need orthotics or exercises? What trials found for insoles in heel pain and flat feet, custom vs store-bought, and how to combine both.
 - [Are barefoot shoes good for your feet? Strength, risks and foot pain](https://walkito.site/barefoot-shoes/): Are barefoot shoes good for your feet? What trials show on foot strength, transition injuries, plantar fasciitis, flat feet and who should avoid them.
+- [Plantar fasciitis vs Achilles tendonitis: how to tell them apart](https://walkito.site/plantar-fasciitis-vs-achilles-tendonitis/): Plantar fasciitis or Achilles tendonitis? Where it hurts, when it hurts, a side-by-side table, which exercises suit each, and what to do if you have both.
+- [Plantar fasciitis vs a heel stress fracture: how to tell](https://walkito.site/plantar-fasciitis-vs-stress-fracture/): Plantar fasciitis or a heel stress fracture? Compare the pain pattern, the squeeze test, who is at risk, why early X-rays miss fractures, and what to do.
+- [How much walking is OK with plantar fasciitis?](https://walkito.site/walking-with-plantar-fasciitis/): Walking with plantar fasciitis: a simple pain rule for during and the next morning, the truth about step counts, plus shoes, surfaces and building back up.
+- [Flat feet test at home: 4 simple checks, and what they can and cannot tell you](https://walkito.site/flat-feet-test/): Four flat feet checks for home: wet footprint, sitting vs standing, tiptoe and big toe tests, single-leg heel raise, and what each can and cannot show.
+- [Foot exercises for runners: a short routine and what the research shows](https://walkito.site/foot-exercises-for-runners/): Foot exercises for runners: a short routine for the foot core, calves, toes and balance, with doses, calf raise norms and what the trials found.
+- [Teacher foot pain: what a school day does to your feet, and what helps](https://walkito.site/teachers-foot-pain/): Why teaching days make your feet hurt, 3-minute exercises that fit between classes, what helps in shoes and floors, and when it is plantar fasciitis.
+- [Foot pain for retail and warehouse workers: what helps on hard floors](https://walkito.site/retail-warehouse-foot-pain/): Foot pain in warehouse and retail jobs: what studies say about concrete floors, safety boots, mats and insoles, plus 3-minute exercises for breaks.
+- [Foot pain for chefs and restaurant workers: what helps on long kitchen shifts](https://walkito.site/chefs-foot-pain/): Why chefs’ feet hurt on hard, wet kitchen floors: what slip-resistant shoe studies found, clogs vs sneakers, mats, and short exercises that fit a shift.
+- [Hairdresser foot pain: what helps when you stand in one spot all day](https://walkito.site/hairdressers-foot-pain/): Why hairdressers’ feet hurt from standing in one spot, what studies found, which shoes, mats and stools help, and short exercises between clients.
 
 ## The app and the evidence
 - [Home](https://walkito.site/): what Walkito is and how the plan works, in brief

@@ -9,7 +9,7 @@
 > place.
 
 Source: https://walkito.site/de/
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 The English full text, with the plan, the evidence and the FAQ: https://walkito.site/llms-full.txt
 
 Walkito provides exercise programming. It does not diagnose and does not

@@ -477,6 +477,15 @@ export const EN_ONLY = {
   massageBall: '/massage-ball-plantar-fasciitis/',
   insolesVsExercises: '/insoles-vs-exercises/',
   barefoot: '/barefoot-shoes/',
+  pfVsAchilles: '/plantar-fasciitis-vs-achilles-tendonitis/',
+  pfVsStressFracture: '/plantar-fasciitis-vs-stress-fracture/',
+  walkingPf: '/walking-with-plantar-fasciitis/',
+  flatFeetTest: '/flat-feet-test/',
+  runnersFootExercises: '/foot-exercises-for-runners/',
+  teachers: '/teachers-foot-pain/',
+  retailWarehouse: '/retail-warehouse-foot-pain/',
+  chefs: '/chefs-foot-pain/',
+  hairdressers: '/hairdressers-foot-pain/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -561,6 +570,15 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   exaktAlt: '/es/alternativas-a-exakt-health/',
   bestFlatApp: '/es/mejor-app-pie-plano/',
   bestInsoles: '/es/mejores-plantillas-fascitis-plantar/',
+  pfVsAchilles: '/es/fascitis-plantar-o-tendinitis-de-aquiles/',
+  pfVsStressFracture: '/es/fascitis-plantar-o-fractura-por-estres/',
+  walkingPf: '/es/caminar-con-fascitis-plantar/',
+  flatFeetTest: '/es/test-pie-plano/',
+  runnersFootExercises: '/es/ejercicios-de-pies-para-corredores/',
+  teachers: '/es/dolor-de-pies-docentes/',
+  retailWarehouse: '/es/dolor-de-pies-comercio-y-almacen/',
+  chefs: '/es/dolor-de-pies-cocineros/',
+  hairdressers: '/es/dolor-de-pies-peluqueros/',
 };
 
 /**
@@ -642,6 +660,15 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   exaktAlt: '/ru/alternativy-exakt-health/',
   bestFlatApp: '/ru/prilozhenie-pri-ploskostopii/',
   bestInsoles: '/ru/luchshie-stelki-pri-plantarnom-fastsiite/',
+  pfVsAchilles: '/ru/plantarnyy-fastsiit-ili-akhillovo-sukhozhilie/',
+  pfVsStressFracture: '/ru/plantarnyy-fastsiit-ili-stressovyy-perelom/',
+  walkingPf: '/ru/khodba-pri-plantarnom-fastsiite/',
+  flatFeetTest: '/ru/test-na-ploskostopie/',
+  runnersFootExercises: '/ru/uprazhneniya-dlya-stop-begunam/',
+  teachers: '/ru/bol-v-stopakh-u-uchiteley/',
+  retailWarehouse: '/ru/bol-v-stopakh-prodavtsy-i-sklad/',
+  chefs: '/ru/bol-v-stopakh-u-povarov/',
+  hairdressers: '/ru/bol-v-stopakh-u-parikmakherov/',
 };
 
 /**
