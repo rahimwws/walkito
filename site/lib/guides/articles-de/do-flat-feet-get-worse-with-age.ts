@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
             'Flachere, stärker pronierte Füße (proniert heißt, dass der Fuß nach innen kippt).',
             'Steifere Sprunggelenke und Großzehengelenke.',
             'Schwächere Zehenmuskeln.',
-            'Mehr Ballenzehen (Hallux valgus).',
+            'Mehr [Ballenzehen](/de/hallux-valgus-uebungen/) (Hallux valgus).',
             'Weniger Gefühl in den Fußsohlen.',
           ],
         },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_DE: Guide = {
       h2: 'Können Übungen oder Einlagen verhindern, dass Plattfüße schlimmer werden?',
       keyFact: 'Eine Übersichtsarbeit von 2018 fand nur drei Studien mit insgesamt 93\u00A0Personen, die Übungen bei Tibialis-posterior-Insuffizienz testeten, mit mäßigen Effekten für langsames Absenken (exzentrisches Krafttraining) zusätzlich zu Einlagen und Dehnen (Ross und Kollegen, 2018).',
       paragraphs: [
-        'Keine Studie hat geprüft, ob Übungen oder Einlagen verhindern, dass sich Plattfüße mit dem Alter verändern. Es gibt Belege zu zwei benachbarten Fragen, und sie sind dünn.',
+        'Keine Studie hat geprüft, ob Übungen oder [Einlagen](/de/einlagen-oder-uebungen/) verhindern, dass sich Plattfüße mit dem Alter verändern. Es gibt Belege zu zwei benachbarten Fragen, und sie sind dünn.',
         'Zum Sehnenproblem hinter dem Einsinken des Gewölbes im Erwachsenenalter fand eine Übersichtsarbeit von 2018 drei Studien mit insgesamt 93\u00A0Personen. Langsames Absenken (exzentrisches Krafttraining) zusätzlich zu orthopädischen Einlagen, die das Gewölbe stützen, und Dehnen linderte Schmerzen und Einschränkungen mäßig stärker als Einlagen und Dehnen allein.',
         'In einer Studie machten 36\u00A0Erwachsene in frühen Stadien drei Monate lang ihr Programm. Alle Gruppen verbesserten sich, die Gruppe mit exzentrischem Krafttraining am meisten. In einer anderen Studie mit 39\u00A0Personen machte zusätzliches Krafttraining nur einen kleinen Unterschied. Die Autorinnen und Autoren der Übersicht nannten die Forschungslage dünn.',
         'Bei lebenslangen flexiblen Plattfüßen fand eine Studie mit 52\u00A0Personen, dass ein kurzes Programm aus Fuß-, Sprunggelenk- und Hüftübungen die Gewölbeform stärker veränderte als in einer Kontrollgruppe. Sie hat die Form gemessen, nicht Schmerzen, und das über kurze Zeit. Ob solches Training die altersbedingte Veränderung über Jahrzehnte bremst, ist unbekannt.',

@@ -22,7 +22,7 @@ export const HEEL_FAT_PAD_FR: Guide = {
     'Syndrome du coussinet graisseux du talon\u00A0: douleur profonde au centre du talon quand l’amorti s’amincit. Différence avec la fasciite, ce qui aide.',
   h1: 'Syndrome du coussinet graisseux du talon\u00A0: ce que c’est, en quoi il diffère de la fasciite plantaire et ce que disent les preuves',
   lede:
-    'Le syndrome du coussinet graisseux du talon, c’est l’amincissement ou l’abîmement du coussin graisseux situé sous l’os du talon. Il donne une douleur profonde, comme un bleu, au centre du talon, surtout sur sol dur ou pieds nus. Ce serait peut-être la deuxième cause de douleur sous le talon après la fasciite plantaire, et pourtant la recherche à son sujet est mince. Une revue exploratoire de 2022 n’a trouvé que sept études originales.',
+    'Le syndrome du coussinet graisseux du talon, c’est l’amincissement ou l’abîmement du coussin graisseux situé sous l’os du talon. Il donne une douleur profonde, comme un bleu, au centre du talon, surtout sur sol dur ou pieds nus. Ce serait peut-être la deuxième cause de douleur sous le talon après la [fasciite plantaire](/fr/fasciite-plantaire/), et pourtant la recherche à son sujet est mince. Une revue exploratoire de 2022 n’a trouvé que sept études originales.',
   intro: [
     'Cette page présente ce que l’on sait du syndrome du coussinet graisseux du talon, comment le distinguer de la fasciite plantaire, et quelles mesures conservatrices ont au moins un peu de soutien. Si votre douleur ressemble plutôt à une traction vive à l’intérieur du talon aux premiers pas du matin, [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) est sans doute la meilleure page. Si elle est à l’arrière du talon, près du tendon d’Achille, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/) ou [maladie de Haglund](/fr/maladie-de-haglund/).',
   ],
@@ -99,13 +99,13 @@ export const HEEL_FAT_PAD_FR: Guide = {
         {
           list: [
             'Talonnettes viscoélastiques.',
-            'Semelles amortissantes.',
+            '[Semelles amortissantes](/fr/semelles-ou-exercices/).',
             'Chaussures à semelle épaisse qui absorbe les chocs.',
           ],
         },
         'Elles visent à remplacer l’amorti que le coussinet n’assure plus.',
         'La revue exploratoire de 2022 a relevé un manque gênant\u00A0: aucun essai contrôlé randomisé n’a testé les talonnettes ou le strapping spécifiquement pour le syndrome du coussinet graisseux du talon. Un seul cas clinique a décrit un soulagement de la douleur avec des talonnettes en gel de silicone après un et trois mois.',
-        'Quelques petits essais du strapping low-dye pour la douleur sous le talon en général rapportent une baisse modeste des scores de douleur par rapport à un faux traitement ou à l’absence de traitement, mais aucun ne distingue le syndrome du coussinet graisseux des autres causes de douleur au talon, donc l’ampleur d’un éventuel bénéfice ici n’est pas connue.',
+        'Quelques petits essais du [strapping low-dye](/fr/strapping-fasciite-plantaire/) pour la douleur sous le talon en général rapportent une baisse modeste des scores de douleur par rapport à un faux traitement ou à l’absence de traitement, mais aucun ne distingue le syndrome du coussinet graisseux des autres causes de douleur au talon, donc l’ampleur d’un éventuel bénéfice ici n’est pas connue.',
         'Malgré des preuves faibles, la logique est simple\u00A0: **si le coussin a disparu, en ajouter un de l’extérieur est une démarche raisonnable.** Évitez de marcher pieds nus sur un sol dur. Choisissez des chaussures au talon bien amorti et évitez les chaussures plates à semelle fine. Ce sont des recommandations de consensus, pas des mesures testées par des essais, et cette page le dit clairement.',
       ],
       cites: [CITE.fatPadReview],
@@ -114,7 +114,7 @@ export const HEEL_FAT_PAD_FR: Guide = {
       h2: 'Les exercices aident-ils le syndrome du coussinet graisseux du talon\u00A0?',
       paragraphs: [
         '**Les exercices ne peuvent pas reconstruire un coussinet graisseux aminci.** C’est un changement de structure, pas une faiblesse musculaire. Mais l’exercice peut quand même jouer un rôle pour aider le pied à faire avec le problème.',
-        'La force du mollet compte, car un mollet plus fort absorbe une plus grande part de la force de réception avant qu’elle n’atteigne le talon. C’est la même logique de charge que celle des programmes de montées sur pointes pour la fasciite plantaire, mais pour le syndrome du coussinet graisseux, le but est de mieux répartir la charge, pas de réparer un tissu. Le travail des muscles intrinsèques du pied (exercice du pied court, écarter les orteils) peut aider le pied à gérer le contact avec le sol.',
+        'La force du mollet compte, car un mollet plus fort absorbe une plus grande part de la force de réception avant qu’elle n’atteigne le talon. C’est la même logique de charge que celle des programmes de montées sur pointes pour la fasciite plantaire, mais pour le syndrome du coussinet graisseux, le but est de mieux répartir la charge, pas de réparer un tissu. Le travail des muscles intrinsèques du pied ([exercice du pied court](/fr/exercices/pied-court/), écarter les orteils) peut aider le pied à gérer le contact avec le sol.',
         'Les preuves pour ces exercices dans le syndrome du coussinet graisseux en particulier sont absentes. Aucun essai ne les a testés pour ce problème. Ils sont empruntés à la littérature plus large sur la douleur au talon et la force du pied.',
         'Les exercices de Walkito sont conçus autour de la fasciite plantaire et de la force du pied. Ils sont un complément raisonnable si votre professionnel de santé a confirmé une atrophie du coussinet graisseux, mais ils n’ont pas été testés spécifiquement pour elle, et il vaut mieux le savoir.',
       ],

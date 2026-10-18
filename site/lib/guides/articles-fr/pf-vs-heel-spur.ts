@@ -83,7 +83,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
         'La recommandation de pratique clinique de 2023 sur la douleur au talon, publiée dans le Journal of Orthopaedic and Sports Physical Therapy, fait de la fasciite plantaire la cause la plus fréquente de douleur sous le talon. Elle cite le «\u00A0syndrome de l’épine calcanéenne\u00A0» parmi plusieurs diagnostics différentiels, avec\u00A0:',
         {
           list: [
-            'Le syndrome du coussinet graisseux.',
+            'Le [syndrome du coussinet graisseux](/fr/syndrome-coussinet-graisseux-talon/).',
             'L’irritation nerveuse.',
             'La fracture de fatigue du calcanéum.',
           ],
@@ -113,7 +113,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
     {
       h2: 'Si l’épine n’est pas le problème, qu’est-ce qui l’est\u00A0?',
       paragraphs: [
-        'La douleur vient en général du fascia plantaire et des tissus autour, pas de l’os. Le fascia plantaire s’attache sous l’os du talon. Quand il est surchargé, surtout chez quelqu’un qui a un mollet raide, un IMC élevé ou de longues heures debout, ce point d’attache s’irrite. Cette irritation, c’est la fasciite plantaire.',
+        'La douleur vient en général du fascia plantaire et des tissus autour, pas de l’os. Le fascia plantaire s’attache sous l’os du talon. Quand il est surchargé, surtout chez quelqu’un qui a un [mollet raide](/fr/mollets-tendus/), un IMC élevé ou de longues heures debout, ce point d’attache s’irrite. Cette irritation, c’est la fasciite plantaire.',
         'Un mollet raide est l’un des facteurs de risque les plus forts. Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins\u00A0:',
         {
           list: [

@@ -22,7 +22,7 @@ export const HIGH_ARCHES_IT: Guide = {
     'Esercizi per il piede cavo doloroso: allungamenti di polpaccio e fascia plantare, stabilità della caviglia, prove sui plantari e segnali neurologici.',
   h1: 'Esercizi per il piede cavo: cosa aiuta e cosa richiede un professionista sanitario',
   lede:
-    'Il piede cavo è un piede con l’arco alto, rigido, che non si flette abbastanza per assorbire gli urti. La forza si concentra sul tallone e sull’avampiede, e la fascia plantare è spesso rigida. Circa il 60% delle persone con piede cavo riferisce dolore al piede. Le prove più forti riguardano i plantari ammortizzati o su misura. L’esercizio punta ad allungare polpaccio e fascia plantare, migliorare la mobilità della caviglia e costruire stabilità.',
+    'Il piede cavo è un piede con l’arco alto, rigido, che non si flette abbastanza per assorbire gli urti. La forza si concentra sul tallone e sull’avampiede, e la fascia plantare è spesso rigida. Circa il 60% delle persone con piede cavo riferisce dolore al piede. Le prove più forti riguardano i plantari ammortizzati o su misura. L’esercizio punta ad allungare polpaccio e fascia plantare, migliorare la [mobilità della caviglia](/it/esercizi-mobilita-caviglia/) e costruire stabilità.',
   intro: [
     'Il piede cavo riguarda circa 1\u00A0persona su 10 (Burns e colleghi, 2007). Molte persone con l’arco alto non hanno mai dolore ai piedi. Per chi ce l’ha, il dolore di solito è sotto il tallone, sotto l’avampiede o lungo la fascia plantare rigida. La causa conta: la maggior parte dei piedi cavi è idiopatica (senza una causa nota), ma una parte è causata da problemi neurologici come la malattia di Charcot-Marie-Tooth. Un piede cavo che peggiora o che riguarda un solo lato richiede sempre un professionista sanitario.',
   ],
@@ -44,7 +44,7 @@ export const HIGH_ARCHES_IT: Guide = {
         'Il dolore al piede nel piede cavo si presenta spesso come:',
         {
           list: [
-            'Metatarsalgia (dolore sotto l’avampiede).',
+            '[Metatarsalgia](/it/metatarsalgia-dolore-pianta-piede/) (dolore sotto l’avampiede).',
             'Dolore sotto il tallone.',
             'Dolore lungo la fascia plantare rigida.',
           ],
@@ -96,7 +96,7 @@ export const HIGH_ARCHES_IT: Guide = {
         '**I plantari su misura hanno le prove più forti per il dolore da piede cavo.** Nell’unico studio randomizzato, Burns e colleghi hanno assegnato 154\u00A0adulti con dolore cronico al piede e piede cavo su entrambi i lati a plantari su misura in polipropilene oppure a una soletta piatta finta.',
         'A tre mesi, il gruppo con i plantari su misura ha riportato un miglioramento del dolore al piede di 8,3\u00A0punti in più sul Foot Health Status Questionnaire rispetto al gruppo con la soletta finta. I punteggi di funzionalità sono migliorati di 9,5\u00A0punti in più. La pressione plantare è scesa del 26% con i plantari su misura, contro il 9% con la soletta finta.',
         'Lo studio comprendeva persone con piede cavo sia idiopatico sia neuromuscolare (133 idiopatici, 21 neuromuscolari, di cui 16 con malattia di Charcot-Marie-Tooth). I plantari erano modellati sulla forma del piede, con un rivestimento superiore ammortizzato per tutta la lunghezza.',
-        'Le solette ammortizzate da banco sono un primo passo ragionevole prima di investire in plantari su misura, che costano di più. La caratteristica che lo studio ha trovato efficace era una base modellata sulla forma esatta del piede, non la semplice aggiunta di un’imbottitura piatta.',
+        'Le [solette ammortizzate](/it/plantari-o-esercizi/) da banco sono un primo passo ragionevole prima di investire in plantari su misura, che costano di più. La caratteristica che lo studio ha trovato efficace era una base modellata sulla forma esatta del piede, non la semplice aggiunta di un’imbottitura piatta.',
       ],
       sourceNote:
         'Burns 2006: 154\u00A0adulti, follow-up a 3\u00A0mesi, differenza sul dolore al Foot Health Status Questionnaire 8,3\u00A0punti (IC 95% 1,2-15,3, p=0,022), differenza sulla funzionalità 9,5\u00A0punti (IC 95% 2,9-16,1, p=0,005).',
@@ -106,7 +106,7 @@ export const HIGH_ARCHES_IT: Guide = {
       h2: 'Quali esercizi aiutano il piede cavo?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone dà all’allungamento di polpaccio e fascia plantare una A e al lavoro di forza una B per il dolore sotto il tallone, la sede di dolore più comune nel piede cavo (Koc e colleghi, 2023).',
       paragraphs: [
-        'Nessuno studio ha testato un programma di esercizi pensato proprio per il dolore da piede cavo. Gli esercizi qui sotto lavorano sulle strutture che di solito sono rigide o instabili in un piede con l’arco alto: polpaccio, fascia plantare, caviglia e muscoli intrinseci del piede. Sono presi in prestito dalle prove su fascite plantare, instabilità della caviglia e condizionamento generale del piede, e sono indicati come tali.',
+        'Nessuno studio ha testato un programma di esercizi pensato proprio per il dolore da piede cavo. Gli esercizi qui sotto lavorano sulle strutture che di solito sono rigide o instabili in un piede con l’arco alto: polpaccio, fascia plantare, caviglia e muscoli intrinseci del piede. Sono presi in prestito dalle prove su [fascite plantare](/it/fascite-plantare/), instabilità della caviglia e condizionamento generale del piede, e sono indicati come tali.',
         'La linea guida del 2023 sul dolore al tallone dà all’allungamento di polpaccio e fascia plantare una A e al lavoro di forza una B per il dolore sotto il tallone, che è una delle sedi di dolore più comuni nel piede cavo. Non esiste una linea guida simile proprio per il piede cavo.',
         'Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno.',
       ],
@@ -189,7 +189,7 @@ export const HIGH_ARCHES_IT: Guide = {
     {
       h2: 'E le scarpe per il piede cavo?',
       paragraphs: [
-        '**Le scarpe per il piede cavo devono ammortizzare più che controllare.** A differenza del piede piatto, dove un supporto mediale rigido evita il crollo, un piede con l’arco alto ha bisogno del contrario: una scarpa che assorba l’urto perché il piede da solo non lo fa.',
+        '**Le scarpe per il piede cavo devono ammortizzare più che controllare.** A differenza del [piede piatto](/it/piede-piatto/), dove un supporto mediale rigido evita il crollo, un piede con l’arco alto ha bisogno del contrario: una scarpa che assorba l’urto perché il piede da solo non lo fa.',
         'Cerca:',
         {
           list: [

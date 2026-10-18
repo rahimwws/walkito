@@ -16,7 +16,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     'Wade dehnen mit gestrecktem Knie bei Plantarfasziitis, Fersenschmerzen und verkürzter Wade: Technik, Sätze, wie lange halten und was die Studien sagen.',
   h1: 'Wadendehnung bei Plantarfasziitis: Technik, Sätze und Haltedauer',
   lede:
-    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen den höchsten Empfehlungsgrad A.',
+    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/) und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen den höchsten Empfehlungsgrad A.',
   takeaways: [
     'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003).',
     'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius (Patel und DiGiovanni, 2011).',
@@ -86,7 +86,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       h2: 'Wer sollte diese Dehnung machen und wer sie lassen?',
       paragraphs: [
-        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder verkürzten Waden vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), zu [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) und zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder [verkürzten Waden](/de/verspannte-waden/) vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) und zu [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
         'Lass sie weg oder pass sie an, wenn du ein Problem mit der Achillessehne hast, das beim Dehnen akut wehtut. Dann kommt der Schmerz von einer anderen Struktur, und die Achillessehne über eine Dehnung an der Wand zu belasten, ist vielleicht nicht der richtige Anfang. Den Ansatz speziell für die Achillessehne findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         'Wenn du die Wand nicht erreichst oder nicht bequem stehen kannst, gibt eine Dehnung im Sitzen mit Handtuch einen ähnlichen Zug an der Wade. Leg ein Handtuch um den Fußballen, halte das Knie gestreckt und zieh die Zehen zu dir.',
       ],

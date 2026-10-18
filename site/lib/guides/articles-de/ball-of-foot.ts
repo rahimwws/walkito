@@ -42,12 +42,12 @@ export const BALL_OF_FOOT_DE: Guide = {
     {
       h2: 'Was verursacht Schmerzen im Fußballen?',
       paragraphs: [
-        '**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein Hohlfuß und verkürzte Wadenmuskeln können alle dazu beitragen.',
+        '**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein [Hohlfuß](/de/hohlfuss-uebungen/) und [verkürzte Wadenmuskeln](/de/verspannte-waden/) können alle dazu beitragen.',
         '**Morton-Neurom** ist eine Verdickung des Nervs zwischen den Mittelfußköpfchen, meist zwischen dem dritten und vierten Zeh. Es verursacht eher Brennen, Kribbeln oder Taubheit als einen reinen Schmerz. Enge Schuhe oder hohe Absätze drücken auf den Nerv und machen es schlimmer.',
         '**Sesamoiditis** ist eine Entzündung der zwei kleinen Knochen, die in der Sehne unter dem Großzehengrundgelenk liegen. Der Schmerz sitzt direkt unter dem großen Zeh und nicht unter der Mitte des Vorfußes.',
         '**Ermüdungsbruch eines Mittelfußknochens** ist ein kleiner Riss in einem der Mittelfußknochen, meist im zweiten oder dritten. Der Schmerz ist auf eine Stelle begrenzt, wird oft im Laufe des Tages schlimmer und kann nachts wehtun. Eine Schwellung oben auf dem Fuß ist häufig. Das braucht Bildgebung und Ruhe.',
         '**Krallenzehen und Hammerzehen** beugen die Zehengelenke nach unten, sodass der Zeh vom Boden abhebt und seine Last beim Abdruck auf das Mittelfußköpfchen dahinter verlagert.',
-        '**Hohe Absätze und enge Schuhe** kippen das Gewicht nach vorn auf den Vorfuß und drücken die Mittelfußköpfchen zusammen, deshalb ist das Morton-Neurom bei Menschen, die sie tragen, häufiger.',
+        '**Hohe Absätze und enge Schuhe** kippen das Gewicht nach vorn auf den Vorfuß und drücken die Mittelfußköpfchen zusammen, deshalb ist das [Morton-Neurom](/de/morton-neurom/) bei Menschen, die sie tragen, häufiger.',
         '**Ein Hohlfuß** (Pes cavus, ein Fuß mit hohem, steifem Gewölbe) verkleinert die Auflagefläche der Sohle und bündelt den Druck auf Ferse und Fußballen. Am anderen Ende können auch [Plattfüße](/de/plattfuss-uebungen/) zu Vorfußschmerzen beitragen, weil sie verändern, wie der Fuß beim Abdruck abrollt.',
         '**Verkürzte Wadenmuskeln** sind eine unterschätzte Ursache. Wenn der Gastrocnemius, der größere, oberflächlichere Wadenmuskel, verkürzt ist, kann sich das Sprunggelenk beim Gehen nicht weit genug beugen. Der Körper hebt die Ferse zum Ausgleich früher an, was mehr Last auf den Vorfuß verlagert. Es ist derselbe Mechanismus wie bei der [Plantarfasziitis](/de/plantarfasziitis-uebungen/) und der [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
@@ -61,7 +61,7 @@ export const BALL_OF_FOOT_DE: Guide = {
           list: [
             'Ein breiter Schmerz unter dem zweiten und dritten Mittelfußköpfchen deutet auf eine Metatarsalgie hin.',
             'Schmerz zwischen dem dritten und vierten Zeh mit Kribbeln spricht für ein Morton-Neurom.',
-            'Schmerz direkt unter dem Großzehengrundgelenk passt eher zu einer Sesamoiditis.',
+            'Schmerz direkt unter dem Großzehengrundgelenk passt eher zu einer [Sesamoiditis](/de/sesamoiditis/).',
             'Eine begrenzte Stelle oben auf dem Fuß mit Schwellung wirft die Frage nach einem Ermüdungsbruch auf.',
           ],
         },
@@ -191,7 +191,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       paragraphs: [
         'Die Belege für Übungen bei Schmerzen im Fußballen sind dünner als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung, wo es randomisierte Studien gibt. Für die Metatarsalgie gibt es eine Vorher-nachher-Studie mit 41\u00A0Personen und ohne Kontrollgruppe. Die biomechanische Begründung ist schlüssig, und das Risiko sanfter Zehenübungen und Wadendehnungen ist gering, aber der direkte Beweis aus einer kontrollierten Studie fehlt.',
         '**Übungen allein reichen vielleicht nicht.** Pelotten, Schuhe mit breiter Zehenbox und weniger Zeit in Absätzen haben einen breiteren klinischen Konsens.',
-        'Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt die Belastungssteuerung für Läuferinnen und Läufer.',
+        'Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -235,7 +235,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     },
     {
       q: 'Was passiert, wenn eine Metatarsalgie nicht behandelt wird?',
-      a: 'Wenn du nichts dagegen tust, kann eine Metatarsalgie verändern, wie du gehst, weil man das Gewicht automatisch von der schmerzhaften Stelle auf andere Teile des Fußes verlagert, was neue Schmerzstellen schaffen kann. Anhaltender Druck auf die Mittelfußköpfchen kann auch zu Hornhaut beitragen oder, seltener, zu Fehlstellungen der Zehen wie Hammerzehen. Früh andere Schuhe und Pelotten verringern dieses Risiko.',
+      a: 'Wenn du nichts dagegen tust, kann eine Metatarsalgie verändern, wie du gehst, weil man das Gewicht automatisch von der schmerzhaften Stelle auf andere Teile des Fußes verlagert, was neue Schmerzstellen schaffen kann. Anhaltender Druck auf die Mittelfußköpfchen kann auch zu Hornhaut beitragen oder, seltener, zu Fehlstellungen der Zehen wie [Hammerzehen](/de/hammerzehe-uebungen/). Früh andere Schuhe und Pelotten verringern dieses Risiko.',
     },
   ],
   redFlags: {

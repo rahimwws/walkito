@@ -16,7 +16,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
     'Zehen spreizen üben: Technik, Sätze, welche Muskeln arbeiten, wem es hilft, etwa bei Plattfuß oder Hallux valgus, und was MRT-Studien zeigen.',
   h1: 'Zehenspreizen: wie du die Zehen spreizt, für mehr Kraft im Fuß',
   lede:
-    'Beim Zehenspreizen trainierst du die Muskeln, die die Zehen auseinanderfächern. Du spreizt alle fünf Zehen so weit es geht, hältst und lässt dann locker. Die Übung zielt auf den Abductor hallucis an der Innenseite und den Abductor digiti minimi an der Außenseite, also die Muskeln, die beide Ränder des Gewölbes stützen. Sie steht in Programmen bei Plattfüßen, Hallux valgus und für allgemeine Kraft im Fuß.',
+    'Beim Zehenspreizen trainierst du die Muskeln, die die Zehen auseinanderfächern. Du spreizt alle fünf Zehen so weit es geht, hältst und lässt dann locker. Die Übung zielt auf den Abductor hallucis an der Innenseite und den Abductor digiti minimi an der Außenseite, also die Muskeln, die beide Ränder des Gewölbes stützen. Sie steht in Programmen bei [Plattfüßen](/de/plattfuss/), [Hallux valgus](/de/hallux-valgus-uebungen/) und für allgemeine Kraft im Fuß.',
   takeaways: [
     'Eine MRT-Studie von 2016 fand, dass das Zehenspreizen von vier getesteten Übungen für die kurzen Fußmuskeln die höchste mittlere Aktivierung (35,2\u00A0%) im Abductor digiti minimi erzeugte, dem Muskel, der das äußere Gewölbe stützt (Gooding und Kollegen, 2016).',
     'Eine MRT-Studie von 2016 fand, dass das Zehenspreizen seine zweithöchste mittlere Aktivierung (31,5\u00A0%) im Adductor hallucis obliquus erzeugte, einem Muskel an der Innenseite des Großzehengrundgelenks (Gooding und Kollegen, 2016).',

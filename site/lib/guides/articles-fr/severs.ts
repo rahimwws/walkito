@@ -53,7 +53,7 @@ export const SEVERS_FR: Guide = {
         {
           list: [
             'Beaucoup de course et de sauts.',
-            'Des mollets raides.',
+            'Des [mollets raides](/fr/mollets-tendus/).',
             'Une cheville peu souple.',
             'Un IMC élevé.',
             'Des surfaces de jeu dures.',
@@ -67,7 +67,7 @@ export const SEVERS_FR: Guide = {
       h2: 'Quels sont les symptômes de la maladie de Sever\u00A0?',
       paragraphs: [
         'Le symptôme principal est une douleur à l’arrière ou sur les côtés du talon, en général pendant ou après l’activité, surtout après la course ou les sauts. La douleur est souvent décrite comme un bleu. Il y a rarement un gonflement ou un hématome visible. **Presser ou serrer les côtés du talon reproduit en général la douleur.** Ce test de compression est la vérification clinique habituelle.',
-        'Contrairement à la fasciite plantaire de l’adulte, pire aux premiers pas après le repos, la douleur de la maladie de Sever a tendance à s’aggraver avec l’activité et ne s’améliore pas à la marche. Certains enfants se mettent à boiter ou à marcher sur la pointe des pieds pour éviter de mettre du poids sur le talon.',
+        'Contrairement à la [fasciite plantaire](/fr/fasciite-plantaire/) de l’adulte, pire aux premiers pas après le repos, la douleur de la maladie de Sever a tendance à s’aggraver avec l’activité et ne s’améliore pas à la marche. Certains enfants se mettent à boiter ou à marcher sur la pointe des pieds pour éviter de mettre du poids sur le talon.',
         'La douleur peut aller de légère, seulement remarquée pendant le sport, à assez forte pour empêcher complètement l’enfant de jouer.',
       ],
     },
@@ -75,7 +75,7 @@ export const SEVERS_FR: Guide = {
       h2: 'Qu’est-ce qui aide la maladie de Sever\u00A0? Les preuves',
       keyFact: 'Dans un essai sur 101\u00A0enfants, les trois approches ont amélioré la douleur, et le groupe talonnette était plus satisfait à six semaines, même si la différence avait disparu à trois mois (Wiegerinck et coll., 2016).',
       paragraphs: [
-        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou semelles, et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et **aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.**',
+        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou [semelles](/fr/semelles-ou-exercices/), et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et **aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.**',
         'Dans un essai de 2016 sur 101\u00A0enfants de 8 à 15\u00A0ans, Wiegerinck et coll. ont comparé trois approches\u00A0:',
         {
           list: [

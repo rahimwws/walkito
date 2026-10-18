@@ -226,7 +226,7 @@ export const SHIN_SPLINTS_FR: Guide = {
         },
         'Si la douleur diminue à l’échauffement et reste supportable, une sortie plus courte ou plus facile, moins souvent, est un juste milieu raisonnable le temps que le tibia s’adapte. Les jours de repos entre les sorties laissent à l’os le temps de répondre à la charge.',
         'La règle des 10\u00A0%, ne pas augmenter son kilométrage hebdomadaire de plus de 10\u00A0%, est un repère souvent cité, mais pas prouvé. Un essai de 2008 sur 532\u00A0coureurs débutants n’a trouvé aucune différence de taux de blessure entre un programme fondé sur cette règle et un programme plus rapide.',
-        'Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. **Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai.** La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la même logique de gestion de la charge.',
+        'Ce qu’une étude de 2014 sur 874\u00A0coureurs a montré, c’est que de fortes hausses soudaines de distance s’accompagnent de plus de blessures. **Progressif vaut mieux que soudain, mais aucun pourcentage précis n’est appuyé par un essai.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },

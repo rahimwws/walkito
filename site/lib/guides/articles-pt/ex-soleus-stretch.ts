@@ -18,7 +18,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
     'Como fazer o alongamento do sóleo (joelho dobrado) para fascite plantar e panturrilha tensa: técnica, por que é um alongamento à parte, séries e tempo.',
   h1: 'Alongamento do sóleo (joelho dobrado): técnica, séries e por que importa',
   lede:
-    'O sóleo é o músculo mais profundo da panturrilha, que fica embaixo do gastrocnêmio. Ele só alonga com o joelho dobrado, porque dobrar o joelho tira o gastrocnêmio da jogada. Em uma série de 254\u00A0pessoas com fascite plantar, 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Se você só faz o alongamento com o joelho esticado, está deixando esse músculo totalmente de fora.',
+    'O sóleo é o músculo mais profundo da panturrilha, que fica embaixo do gastrocnêmio. Ele só alonga com o joelho dobrado, porque dobrar o joelho tira o gastrocnêmio da jogada. Em uma série de 254\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/), 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Se você só faz o alongamento com o joelho esticado, está deixando esse músculo totalmente de fora.',
   takeaways: [
     'O sóleo cruza só o tornozelo. O gastrocnêmio cruza o joelho e o tornozelo. Dobrar o joelho deixa o gastrocnêmio frouxo, e o sóleo recebe o alongamento.',
     'Em 254\u00A0pessoas com fascite plantar, 23 a 30\u00A0por cento tinham uma contratura no gastrocnêmio e no sóleo ao mesmo tempo (Patel e DiGiovanni, 2011).',

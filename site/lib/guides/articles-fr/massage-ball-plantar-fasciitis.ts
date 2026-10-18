@@ -12,7 +12,7 @@ export const MASSAGE_BALL_FR: Guide = {
     'Balle de massage et fasciite plantaire\u00A0: les essais sur balles, rouleaux et bouteille congelée, la pression, la durée, et quand s’abstenir.',
   h1: 'Balle de massage, rouleau ou bouteille congelée pour la fasciite plantaire\u00A0: ce que dit la recherche',
   lede:
-    'Une balle de massage peut soulager la douleur de la fasciite plantaire pendant un moment, mais c’est une étape de confort, pas l’outil principal. Le travail manuel des tissus mous par un professionnel de santé a la meilleure note de la recommandation. Faire rouler soi-même une balle ou une bouteille congelée n’a presque pas été testé. Roulez doucement et brièvement, et gardez les étirements et le renforcement comme base.',
+    'Une balle de massage peut soulager la douleur de la [fasciite plantaire](/fr/fasciite-plantaire/) pendant un moment, mais c’est une étape de confort, pas l’outil principal. Le travail manuel des tissus mous par un professionnel de santé a la meilleure note de la recommandation. Faire rouler soi-même une balle ou une bouteille congelée n’a presque pas été testé. Roulez doucement et brièvement, et gardez les étirements et le renforcement comme base.',
   intro: [
     'Cette page compare les outils et les données. Pour le mouvement lui-même, étape par étape, voir l’exercice [massage avec une balle](/fr/exercices/massage-pied-balle/). Pour la routine complète avec les doses, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
   ],

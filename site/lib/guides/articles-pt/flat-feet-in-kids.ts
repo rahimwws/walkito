@@ -186,7 +186,7 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       h2: 'O meu filho vai ter problemas nos pés quando for adulto?',
       paragraphs: [
         '**A maioria das crianças com pé chato flexível e sem dor chega à vida adulta sem problemas nos pés.** A revisão Cochrane de 2022 chegou a dizer que o que se sabe sobre o desenvolvimento do pé infantil põe fim à maioria das preocupações com pé chato, e que o dinheiro de pesquisa deveria ir para crianças com problemas reais nos pés. A pesquisa de 1987 com 441\u00A0pessoas viu que o pé chato dos adultos ainda ficava dentro da faixa normal.',
-        'Aqui existe uma lacuna, e é honesto dizer. Nenhum ensaio acompanhou um grande grupo de crianças com pé chato sem dor até a meia-idade para ver quem depois teve dor. Alguns adultos com pé chato têm dor no arco, no calcanhar ou no joelho, e o [guia de pé chato](/pt/pe-chato/) fala do que ajuda nesses casos.',
+        'Aqui existe uma lacuna, e é honesto dizer. Nenhum ensaio acompanhou um grande grupo de crianças com pé chato sem dor até a meia-idade para ver quem depois teve dor. Alguns adultos com pé chato têm dor no arco, no calcanhar ou no [joelho](/pt/pe-chato-dor-no-joelho/), e o [guia de pé chato](/pt/pe-chato/) fala do que ajuda nesses casos.',
         'Muitos pais e mães que pesquisam isso têm pé chato. Se os seus próprios pés doem no fim do dia, essa é uma questão separada da do seu filho. O Walkito é um app de exercícios para adultos com dor no calcanhar, no arco e nas pernas, e o plano dele para pé chato foi feito para pés adultos, não para pés de criança.',
       ],
       cites: [CITE.evansCochrane2022, CITE.staheliArch],

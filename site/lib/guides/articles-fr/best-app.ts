@@ -22,7 +22,7 @@ export const BEST_APP_FR: Guide = {
     'Meilleure application pour la fasciite plantaire en 2026\u00A0: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch et Walkito comparées (prix, plateformes).',
   h1: 'Meilleure app pour la fasciite plantaire\u00A0: le guide comparatif 2026',
   lede:
-    'Cette page compare sept applications qui proposent des exercices pour la fasciite plantaire, les pieds plats ou les douleurs de pied en général. Walkito en fait partie, et c’est Walkito qui publie cette page\u00A0: mieux vaut que vous le sachiez d’emblée. Le but est d’être juste, de dire où les autres sont meilleures, et de vous donner assez de détails pour choisir celle qui correspond à votre situation.',
+    'Cette page compare sept applications qui proposent des exercices pour la [fasciite plantaire](/fr/fasciite-plantaire/), les [pieds plats](/fr/pieds-plats/) ou les douleurs de pied en général. Walkito en fait partie, et c’est Walkito qui publie cette page\u00A0: mieux vaut que vous le sachiez d’emblée. Le but est d’être juste, de dire où les autres sont meilleures, et de vous donner assez de détails pour choisir celle qui correspond à votre situation.',
   intro: [
     'Il n’y a pas de meilleure application pour tout le monde. Le bon choix dépend de ce dont vous avez besoin\u00A0: un coureur qui revient d’une fasciite plantaire n’a pas les mêmes besoins qu’une personne aux pieds plats qui reste debout toute la journée au travail, et ni l’un ni l’autre n’a les mêmes besoins qu’une personne dont l’employeur prend en charge Hinge Health. Les critères ci-dessous expliquent quoi regarder, et le tableau qui suit montre où se situe chaque application.',
   ],
@@ -119,7 +119,7 @@ export const BEST_APP_FR: Guide = {
     {
       h2: 'Exakt Health\u00A0: l’application de rééducation des coureurs',
       paragraphs: [
-        'Exakt Health est conçue pour les coureurs, et ça se voit. L’application propose plus de 15\u00A0plans de rééducation de blessures, de la fasciite plantaire à la tendinopathie d’Achille en passant par les lésions du ménisque, ainsi que des plans d’entraînement à la course, du canapé au marathon. Chaque plan de rééducation se termine par une phase structurée de reprise de la course, ce que la plupart des applications pour les douleurs de pied ne proposent pas.',
+        '[Exakt Health](/fr/walkito-vs-exakt-health/) est conçue pour les coureurs, et ça se voit. L’application propose plus de 15\u00A0plans de rééducation de blessures, de la fasciite plantaire à la [tendinopathie d’Achille](/fr/tendinite-achille-exercices/) en passant par les lésions du ménisque, ainsi que des plans d’entraînement à la course, du canapé au marathon. Chaque plan de rééducation se termine par une phase structurée de reprise de la course, ce que la plupart des applications pour les douleurs de pied ne proposent pas.',
         'Elle est certifiée comme dispositif médical dans l’UE, ce qui veut dire qu’elle a passé un examen réglementaire sur la sécurité et l’usage prévu. Elle a été conçue par des kinésithérapeutes du sport diplômés et des entraîneurs de course. L’application compte plus de 600\u00A0vidéos d’exercices et adapte son plan à mesure que vous passez les niveaux.',
         'À 19,99\u00A0$ par mois ou 59,99\u00A0$ pour six mois, Exakt n’est pas bon marché, mais l’étendue des problèmes couverts et la qualité de ses plans de rééducation sont difficiles à égaler parmi les applications en libre-service. L’essai gratuit de 7\u00A0jours permet de voir toute l’application avant de payer. Elle est disponible en anglais, en français, en allemand et en espagnol, sur iOS et Android.',
         'Là où Exakt est plus forte que Walkito\u00A0:',
@@ -209,7 +209,7 @@ export const BEST_APP_FR: Guide = {
           list: [
             'Elle construit un plan hebdomadaire à partir de vos réponses sur la douleur, les objectifs et votre emploi du temps.',
             'Chaque matin, un bilan ajuste la séance du jour à l’état de votre pied.',
-            'Des tests tous les 14\u00A0jours mesurent les montées sur pointes, le maintien de la voûte et l’équilibre sur une jambe, et comparent la gauche et la droite.',
+            'Des tests tous les 14\u00A0jours mesurent les montées sur pointes, le maintien de la voûte et l’[équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/), et comparent la gauche et la droite.',
             'Les séances durent 3, 5 ou 10\u00A0minutes.',
             'Les exercices suivent la recommandation de 2023 sur la douleur au talon et l’essai de Rathleff 2015.',
             'Elle se connecte à Apple Santé sur iPhone ou à Health Connect sur Android pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone. L’asymétrie et la vitesse de marche ne sont disponibles que sur iPhone.',

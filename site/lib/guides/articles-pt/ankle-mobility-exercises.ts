@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
         'Pouca dobra do tornozelo está ligada a vários problemas, embora estar ligado não seja o mesmo que causar:',
         {
           list: [
-            '**Fascite plantar:** Num estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003).',
+            '**Fascite plantar:** Num estudo de caso-controle pareado com 50\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/) e 100 sem, quem tinha 0\u00A0grau de dorsiflexão ou menos tinha uma chance 23,3\u00A0vezes maior de fascite plantar em comparação com quem tinha mais de 10\u00A0graus (Riddle e colegas, 2003).',
             '**Lesões em recrutas:** Em 1.093\u00A0recrutas homens do exército acompanhados ao longo de três meses de treinamento pesado, a amplitude do tornozelo medida no início foi um forte preditor de quem se lesionou, num total de 48\u00A0lesões (Pope e colegas, 1998).',
           ],
         },

@@ -145,7 +145,7 @@ export const BUNIONS_FR: Guide = {
     {
       h2: 'Quand la chirurgie est-elle envisagée\u00A0?',
       paragraphs: [
-        'La chirurgie est envisagée quand la douleur et la gêne persistent malgré des mesures conservatrices comme le changement de chaussures, les exercices, les écarteurs et les orthèses. **La décision dépend de l’impact de l’oignon sur la vie quotidienne, pas de l’angle seul.**',
+        'La chirurgie est envisagée quand la douleur et la gêne persistent malgré des mesures conservatrices comme le changement de chaussures, les exercices, les écarteurs et les [orthèses](/fr/semelles-ou-exercices/). **La décision dépend de l’impact de l’oignon sur la vie quotidienne, pas de l’angle seul.**',
         'Il existe plus de 150\u00A0techniques chirurgicales pour l’hallux valgus, du réalignement des tissus mous à l’ostéotomie (couper et repositionner l’os). Le choix dépend de la sévérité et de l’anatomie de chacun. La récupération va de quelques semaines à quelques mois.',
         'L’exercice et la prise en charge conservatrice sont en général essayés pendant plusieurs mois d’abord. Si vous gérez bien vos symptômes avec les approches de cette page, la chirurgie n’est pas urgente. Si la douleur limite la marche, le choix des chaussures ou l’activité malgré ces mesures, un spécialiste du pied et de la cheville peut discuter des options.',
       ],
@@ -202,7 +202,7 @@ export const BUNIONS_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text:
-      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances de 3 ou 5\u00A0minutes, 3, 5 ou 7\u00A0jours par semaine au choix, gardent les exercices réguliers.',
+      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les [pieds plats](/fr/pieds-plats/), pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances de 3 ou 5\u00A0minutes, 3, 5 ou 7\u00A0jours par semaine au choix, gardent les exercices réguliers.',
     more: [
       'Pour une douleur de l’avant-pied plus étendue, qui touche les têtes du deuxième et du troisième métatarsien, voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/). Pour une douleur sous l’articulation du gros orteil en particulier, voir [sésamoïdite](/fr/sesamoidite/).',
     ],

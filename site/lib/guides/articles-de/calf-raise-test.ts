@@ -41,7 +41,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
         {
           list: [
             'Um die Erholung nach einem Achillessehnenriss zu verfolgen.',
-            'Um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen.',
+            'Um bei Menschen mit Fersenschmerzen oder [Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/) nach einer schwachen Wade zu suchen.',
             'Um ein Bein mit dem anderen zu vergleichen.',
           ],
         },
@@ -141,7 +141,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
             'Fehlende Übung mit dem Test.',
           ],
         },
-        '**Der Test ist keine Diagnose.** Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine Plantarfasziitis oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt.',
+        '**Der Test ist keine Diagnose.** Ein Ergebnis von 15 bei einem 30-jährigen Mann heißt nicht, dass er eine [Plantarfasziitis](/de/plantarfasziitis/) oder Achillessehnenentzündung hat. Es heißt, dass seine Wadenausdauer unter dem Median von 33 für diese Gruppe liegt.',
         'Eine Ärztin oder ein Arzt kombiniert die Zahl mit anderen Befunden, um zu entscheiden, ob sie ein Symptom erklärt. Als Trend sagt der Test mehr als ein einzelner Messwert: Von 14 auf 22 in zwei Monaten ist ein klareres Signal als jede einzelne Zahl im Vergleich mit einer Tabelle.',
       ],
       cites: [CITE.hebertLosier],
@@ -152,7 +152,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
         'Wade und Plantarfaszie sind über das Fersenbein verbunden. Die Achillessehne zieht von hinten, die Faszie von unten. **Schwache oder schnell ermüdende Waden bringen bei jedem Schritt mehr Spannung auf beide.**',
         'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie den höchsten Empfehlungsgrad A und Krafttraining den Empfehlungsgrad B. Die Rathleff-Studie, die Fersenheben mit Zusatzgewicht bei Plantarfasziitis getestet hat, nutzte Fersenheben als Hauptübung, und die Teilnehmenden verbesserten ihre Schmerzwerte über drei Monate schneller als mit Dehnen allein. Das ganze Protokoll findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Bei Achillessehnenentzündung ist der Fersenheben-Test eines der üblichen Messinstrumente. Menschen mit Achillessehnen-Tendinopathie im mittleren Abschnitt (Schmerz in der Mitte der Sehne, nicht am Fersenbein) zeigen typischerweise eine geringere Wadenausdauer auf der betroffenen Seite. Zur exzentrischen Arbeit lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-        'Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein. Das größere Bild zeigt [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -226,7 +226,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
     {
       q: 'Woran erkennt man schwache Waden?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Schwache Waden zeigen sich oft durch schnelle Ermüdung auf Treppen oder am Berg, einen schwächeren Abdruck beim Gehen oder Laufen oder Wackeln im Einbeinstand. Das klarste objektive Zeichen ist der einbeinige Fersenheben-Test: Einem deutlichen Unterschied zwischen linkem und rechtem Bein kannst du eher trauen als dem, wie die Wade aussieht oder sich anfühlt.',
+      a: 'Schwache Waden zeigen sich oft durch schnelle Ermüdung auf Treppen oder am Berg, einen schwächeren Abdruck beim Gehen oder Laufen oder Wackeln im [Einbeinstand](/de/uebungen/einbeinstand/). Das klarste objektive Zeichen ist der einbeinige Fersenheben-Test: Einem deutlichen Unterschied zwischen linkem und rechtem Bein kannst du eher trauen als dem, wie die Wade aussieht oder sich anfühlt.',
     },
     {
       q: 'Wo sollte man Fersenheben spüren?',

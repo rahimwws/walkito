@@ -19,7 +19,7 @@ export const VS_EXAKT_IT: Guide = {
     'Walkito o Exakt Health? Confronto su problemi coperti, prezzo, piattaforme, come creano il piano, prove, lingue e privacy. Verificato a ottobre 2026.',
   h1: 'Walkito vs Exakt Health: quale fa per te?',
   lede:
-    'Walkito ed Exakt Health offrono entrambe piani di esercizi per la fascite plantare, ma sono fatte per persone diverse. Exakt è un’app per chi corre, con oltre 15 piani di riabilitazione per infortuni e un programma di ritorno alla corsa. Walkito è un’app più ristretta, concentrata su dolore al tallone, piede piatto e adattamento al dolore di ogni mattina. Questa pagina le confronta con onestà, dice dove Exakt è la scelta migliore e spiega cosa fa di diverso Walkito.',
+    'Walkito ed Exakt Health offrono entrambe piani di esercizi per la [fascite plantare](/it/fascite-plantare/), ma sono fatte per persone diverse. Exakt è un’app per chi corre, con oltre 15 piani di riabilitazione per infortuni e un programma di ritorno alla corsa. Walkito è un’app più ristretta, concentrata su dolore al tallone, [piede piatto](/it/piede-piatto/) e adattamento al dolore di ogni mattina. Questa pagina le confronta con onestà, dice dove Exakt è la scelta migliore e spiega cosa fa di diverso Walkito.',
   intro: [
     'Questa pagina la fa Walkito. Quindi leggi i dati su Exakt (presi dalla sua scheda sull’App Store, dalla scheda su Google Play e dal sito ufficiale, tutti verificati a ottobre 2026) e decidi tu. I link a tutte le fonti sono in fondo alla tabella di confronto.',
   ],
@@ -124,7 +124,7 @@ export const VS_EXAKT_IT: Guide = {
     {
       h2: 'Per chi è fatta Exakt Health?',
       paragraphs: [
-        'Exakt Health è fatta per chi corre. È la sua identità di base, e tutto nell’app lo riflette. Se corri e ti stai riprendendo da fascite plantare, tendinopatia d’Achille, distorsione della caviglia, stiramento del bicipite femorale o lesione del menisco, Exakt ha un piano di riabilitazione specifico per il tuo infortunio. Copre oltre 15 problemi diversi.',
+        'Exakt Health è fatta per chi corre. È la sua identità di base, e tutto nell’app lo riflette. Se corri e ti stai riprendendo da fascite plantare, [tendinopatia d’Achille](/it/tendinite-achille-esercizi/), distorsione della caviglia, stiramento del bicipite femorale o lesione del menisco, Exakt ha un piano di riabilitazione specifico per il tuo infortunio. Copre oltre 15 problemi diversi.',
         'Ogni piano di riabilitazione finisce con un programma cammino-corsa per tornare a correre, una delle parti del recupero più difficili da gestire da soli. L’app ha anche piani di allenamento di corsa per ogni distanza, dal divano ai 5\u00A0km fino alla maratona.',
         'Exakt è stata fondata nel 2021 da Philip Billaudelle, Lucia Payo e Maryke Louw. È creata da fisioterapisti sportivi abilitati e allenatori di corsa, e a settembre 2024 ha raccolto circa 2,2\u00A0milioni di euro in un round seed. Il team ha sede a Berlino.',
         'L’app è certificata come dispositivo medico nell’UE, cioè ha superato una revisione normativa per l’uso previsto.',
@@ -145,7 +145,7 @@ export const VS_EXAKT_IT: Guide = {
         'È fatta anche per chi sta in piedi tutto il giorno: infermieri, commessi, addetti di magazzino.',
         'L’app è più ristretta di Exakt. Non copre infortuni al ginocchio, stiramenti del bicipite femorale né piani di corsa. Quello che fa di diverso è **adattare ogni sessione in base a un check-in del dolore al mattino**, invece che al feedback di fine sessione.',
         'Una mattina a 7/10 o più trasforma la giornata in circa tre minuti di lavoro da seduti. Una giornata con tanti passi (misurati tramite Apple Health o Health Connect) trasforma la sessione di forza successiva in una sessione di recupero più leggera.',
-        'Walkito testa i progressi ogni 14\u00A0giorni con sollevamenti sulle punte, una tenuta dell’arco ed equilibrio su una gamba, e confronta il lato sinistro con il destro. Quel confronto sinistra-destra è qualcosa che la maggior parte delle app di questo tipo non misura.',
+        'Walkito testa i progressi ogni 14\u00A0giorni con sollevamenti sulle punte, una tenuta dell’arco ed [equilibrio su una gamba](/it/esercizi/equilibrio-su-una-gamba/), e confronta il lato sinistro con il destro. Quel confronto sinistra-destra è qualcosa che la maggior parte delle app di questo tipo non misura.',
         'Walkito è uscita il 2 ottobre 2026. È nuova, non ha ancora valutazioni degli utenti ed è sia su iOS sia su Android. Non ha lo storico né l’ampiezza che Exakt ha costruito dal 2021.',
       ],
     },

@@ -84,7 +84,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         'Die klinische Leitlinie von 2023 zu Fersenschmerzen, veröffentlicht im Journal of Orthopaedic and Sports Physical Therapy, stellt die Plantarfasziitis als häufigste Ursache für Fersenschmerzen unter dem Fuß in den Mittelpunkt. Das „Fersenspornsyndrom“ nennt sie als eine von mehreren Differenzialdiagnosen, neben:',
         {
           list: [
-            'Dem Fersenpolster-Syndrom.',
+            'Dem [Fersenpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
             'Nervenreizungen.',
             'Dem Ermüdungsbruch des Fersenbeins.',
           ],
@@ -114,7 +114,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
     {
       h2: 'Wenn der Sporn nicht das Problem ist, was dann?',
       paragraphs: [
-        'Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vom Knochen. Die Plantarfaszie setzt unten am Fersenbein an. Wenn sie überlastet wird, vor allem bei einer verkürzten Wade, einem hohen BMI oder vielen Stunden auf den Beinen, wird dieser Ansatzpunkt gereizt. Diese Reizung ist die Plantarfasziitis.',
+        'Der Schmerz kommt meist von der Plantarfaszie und dem Gewebe drumherum, nicht vom Knochen. Die Plantarfaszie setzt unten am Fersenbein an. Wenn sie überlastet wird, vor allem bei einer [verkürzten Wade](/de/verspannte-waden/), einem hohen BMI oder vielen Stunden auf den Beinen, wird dieser Ansatzpunkt gereizt. Diese Reizung ist die Plantarfasziitis.',
         'Eine verkürzte Wade gehört zu den stärksten Risikofaktoren. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen:',
         {
           list: [

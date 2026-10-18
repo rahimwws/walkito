@@ -19,7 +19,7 @@ export const ACHILLES_FR: Guide = {
   lede:
     'Les exercices pour la tendinite d’Achille sont plus efficaces quand on considère la descente du talon comme un exercice de renforcement, et non comme un étirement. La recommandation clinique de 2024 donne à l’exercice sa meilleure note, **A**, et une méta-analyse en réseau de 2021 portant sur 29\u00A0essais n’a trouvé aucun protocole nettement meilleur qu’un autre. Ce qui compte, c’est de charger le tendon régulièrement pendant des semaines.',
   intro: [
-    'Cette page détaille ces exercices. Si votre douleur est sous le pied plutôt qu’à l’arrière du talon, ce sont plutôt les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) qu’il vous faut. La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) résume les deux. Si la douleur est le long du tibia plutôt qu’au talon, voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/)\u00A0; si elle n’apparaît qu’après une longue journée debout plutôt qu’en courant, voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
+    'Cette page détaille ces exercices. Si votre douleur est sous le pied plutôt qu’à l’arrière du talon, ce sont plutôt les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) qu’il vous faut. Si la douleur est le long du tibia plutôt qu’au talon, voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/)\u00A0; si elle n’apparaît qu’après une longue journée debout plutôt qu’en courant, voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
     'La plupart des gens emploient «\u00A0tendinite\u00A0» et «\u00A0tendinopathie\u00A0» indifféremment. Les recommandations actuelles disent «\u00A0tendinopathie\u00A0», car le problème est en général une question de charge, pas une inflammation pure. Cette page utilise «\u00A0tendinite\u00A0» dans les titres et «\u00A0tendinopathie\u00A0» là où la recommandation le fait.',
   ],
   takeaways: [
@@ -42,7 +42,7 @@ export const ACHILLES_FR: Guide = {
     {
       h2: 'Qu’est-ce que la descente excentrique du talon, et pourquoi ce n’est pas un étirement\u00A0?',
       paragraphs: [
-        'La descente excentrique du talon est un exercice de renforcement, pas un étirement de souplesse. Vous montez sur les deux pieds, passez sur le côté douloureux et redescendez lentement sur un pied, en laissant le talon descendre sous le bord de la marche. La phase de descente est la contraction excentrique\u00A0: le muscle du mollet s’allonge sous la charge. C’est cette descente contrôlée qui construit la capacité du tendon au fil des semaines.',
+        'La [descente excentrique du talon](/fr/exercices/descentes-excentriques-talon/) est un exercice de renforcement, pas un étirement de souplesse. Vous montez sur les deux pieds, passez sur le côté douloureux et redescendez lentement sur un pied, en laissant le talon descendre sous le bord de la marche. La phase de descente est la contraction excentrique\u00A0: le muscle du mollet s’allonge sous la charge. C’est cette descente contrôlée qui construit la capacité du tendon au fil des semaines.',
         'L’erreur la plus fréquente est de tenir la position basse comme un étirement du mollet. Cela en fait un étirement statique, qui est un stimulus différent. **Le but est la descente lente et chargée.** Trois secondes pour descendre, avec le muscle qui travaille tout du long.',
         'Dans l’essai d’Alfredson de 1998, 15\u00A0sportifs avec une douleur ancienne au corps du tendon d’Achille faisaient des descentes excentriques du talon deux fois par jour, 7\u00A0jours sur 7, pendant trois mois, genou tendu et genou plié. Les 15 ont retrouvé leur niveau de course d’avant. Un petit essai sans groupe témoin, mais qui a lancé toute une série de recherches.',
       ],
@@ -68,7 +68,7 @@ export const ACHILLES_FR: Guide = {
       paragraphs: [
         'Oui, d’après les données actuelles. Un essai de 2015 sur 58\u00A0personnes a comparé la résistance lourde et lente (heavy slow resistance, HSR), faite 3\u00A0jours par semaine, au protocole excentrique classique deux fois par jour. Sa conclusion\u00A0: les deux, l’excentrique traditionnel et la HSR, donnent des résultats cliniques positifs, aussi bons l’un que l’autre et durables chez les patients atteints de tendinopathie d’Achille.',
         'Une méta-analyse en réseau de 2021 portant sur 29\u00A0essais n’a trouvé aucune différence cliniquement pertinente entre les approches d’exercice actif à 3 ou 12\u00A0mois. Toutes faisaient mieux que de ne rien faire. Aucun essai n’était à faible risque de biais. Les auteurs conseillaient de commencer par un programme d’exercices du mollet, parce qu’il coûte peu et présente peu de risques.',
-        '**La forme du protocole compte moins que de charger le tendon régulièrement.** Les descentes excentriques sont les plus étudiées, la HSR est aussi efficace et demande moins de séances par semaine, et les deux sont de bons points de départ. Pour la version fasciite plantaire de cette même logique de renforcement du mollet, voir [montées sur pointes pour la fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).',
+        '**La forme du protocole compte moins que de charger le tendon régulièrement.** Les descentes excentriques sont les plus étudiées, la HSR est aussi efficace et demande moins de séances par semaine, et les deux sont de bons points de départ. Pour la version [fasciite plantaire](/fr/fasciite-plantaire/) de cette même logique de renforcement du mollet, voir [montées sur pointes pour la fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -207,7 +207,6 @@ export const ACHILLES_FR: Guide = {
       paragraphs: [
         'Dans Silbernagel 2007, les patients qui ont continué à courir pendant la rééducation, en suivant le modèle de surveillance de la douleur, n’ont pas fait moins bien que ceux qui se sont d’abord reposés. Les deux groupes se sont améliorés à 12\u00A0mois. L’essai concluait qu’une activité poursuivie, avec surveillance de la douleur, pouvait donc représenter une option intéressante pendant la rééducation.',
         'Cela ne veut pas dire que courir est sans risque dans tous les cas. **Si la douleur ne se calme pas pendant la nuit, ou si chaque semaine est pire, réduisez.** Une douleur au point d’attache sur l’os du talon demande plus de prudence qu’une douleur au corps du tendon. Tout claquement ou craquement soudain est une raison d’arrêter et de consulter un professionnel de santé.',
-        'La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la gestion de la charge propre à la course.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -274,7 +273,7 @@ export const ACHILLES_FR: Guide = {
     {
       q: 'Avec quoi peut-on confondre une tendinite d’Achille\u00A0?',
       cites: [CITE.chooRearfoot],
-      a: 'Une bursite rétrocalcanéenne, une maladie de Haglund ou une rupture partielle du tendon d’Achille peuvent toutes causer une douleur semblable à l’arrière du talon. Une bosse osseuse visible évoque une maladie de Haglund, tandis qu’un gonflement juste à l’arrière, au niveau du bord de la chaussure, évoque une bursite. Toute douleur vive et soudaine avec un claquement, ou l’impossibilité de monter sur la pointe des pieds, demande une évaluation urgente pour une rupture du tendon.',
+      a: 'Une bursite rétrocalcanéenne, une [maladie de Haglund](/fr/maladie-de-haglund/) ou une rupture partielle du tendon d’Achille peuvent toutes causer une douleur semblable à l’arrière du talon. Une bosse osseuse visible évoque une maladie de Haglund, tandis qu’un gonflement juste à l’arrière, au niveau du bord de la chaussure, évoque une bursite. Toute douleur vive et soudaine avec un claquement, ou l’impossibilité de monter sur la pointe des pieds, demande une évaluation urgente pour une rupture du tendon.',
     },
   ],
   redFlags: {

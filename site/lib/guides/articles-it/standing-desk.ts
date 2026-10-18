@@ -73,7 +73,7 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Che scarpe mettere alla scrivania in piedi?',
       paragraphs: [
-        'Se lavori da casa, magari stai alla scrivania in calzini o in pantofole. Sono tante ore senza ammortizzazione né sostegno dell’arco. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una B a sfavore per la fascite plantare, cioè le prove fanno propendere per non usarli come unica soluzione, ma questo riguarda i plantari da soli, non se una scarpa qualsiasi sia meglio di nessuna scarpa.',
+        'Se lavori da casa, magari stai alla scrivania in calzini o in pantofole. Sono tante ore senza ammortizzazione né sostegno dell’arco. La linea guida del 2023 sul dolore al tallone dà ai [plantari](/it/plantari-o-esercizi/) da soli una B a sfavore per la [fascite plantare](/it/fascite-plantare/), cioè le prove fanno propendere per non usarli come unica soluzione, ma questo riguarda i plantari da soli, non se una scarpa qualsiasi sia meglio di nessuna scarpa.',
         'Un approccio ragionevole: **metti una scarpa con un po’ di ammortizzazione e un plantare interno di sostegno quando stai in piedi, anche a casa.** Non ti serve una scarpa speciale per la scrivania in piedi. Se alterni in piedi e seduto, puoi toglierti le scarpe nei periodi seduti.',
         'Gli esercizi di questa pagina lavorano direttamente sui tessuti. Scarpe e tappetini aiutano il comfort in piedi, ma non sostituiscono lo stretching e il lavoro di forza.',
       ],
@@ -232,7 +232,7 @@ export const STANDING_DESK_IT: Guide = {
     },
     {
       q: 'Che esercizi fare alla scrivania in piedi?',
-      a: 'In piedi: allungamenti del polpaccio contro il bordo della scrivania (2\u00A0tenute da 30\u00A0secondi per lato) e sollevamenti sulle punte in piedi (3\u00A0serie da 10). Nelle pause da seduto: sollevamenti sulle punte da seduto (3\u00A0serie da 15), apertura delle dita e l’esercizio del piede corto. Lavorano su polpaccio, fascia plantare e muscoli intrinseci del piede, che reggono il carico in piedi. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
+      a: 'In piedi: allungamenti del polpaccio contro il bordo della scrivania (2\u00A0tenute da 30\u00A0secondi per lato) e sollevamenti sulle punte in piedi (3\u00A0serie da 10). Nelle pause da seduto: sollevamenti sulle punte da seduto (3\u00A0serie da 15), apertura delle dita e l’[esercizio del piede corto](/it/esercizi/piede-corto/). Lavorano su polpaccio, fascia plantare e muscoli intrinseci del piede, che reggono il carico in piedi. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
       cites: [CITE.guideline],
     },
     {

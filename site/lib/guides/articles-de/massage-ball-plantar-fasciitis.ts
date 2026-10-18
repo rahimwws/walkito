@@ -12,7 +12,7 @@ export const MASSAGE_BALL_DE: Guide = {
     'Hilft ein Massageball bei Plantarfasziitis? Was Studien zu Ball, Rolle und gefrorener Flasche zeigen, wie fest und lange du rollst und wann du es lässt.',
   h1: 'Massageball, Rolle oder gefrorene Flasche bei Plantarfasziitis: was die Forschung sagt',
   lede:
-    'Ein Massageball kann die Schmerzen bei Plantarfasziitis eine Zeit lang lindern, aber er ist ein Schritt fürs Wohlbefinden, nicht das Hauptwerkzeug. Weichteilarbeit mit den Händen in der Physiotherapie hat in der Leitlinie den höchsten Empfehlungsgrad. Einen Ball oder eine gefrorene Flasche selbst zu rollen, ist kaum untersucht. Roll sanft und kurz, und lass Dehnen und Krafttraining den Kern bleiben.',
+    'Ein Massageball kann die Schmerzen bei [Plantarfasziitis](/de/plantarfasziitis/) eine Zeit lang lindern, aber er ist ein Schritt fürs Wohlbefinden, nicht das Hauptwerkzeug. Weichteilarbeit mit den Händen in der Physiotherapie hat in der Leitlinie den höchsten Empfehlungsgrad. Einen Ball oder eine gefrorene Flasche selbst zu rollen, ist kaum untersucht. Roll sanft und kurz, und lass Dehnen und Krafttraining den Kern bleiben.',
   intro: [
     'Diese Seite vergleicht die Hilfsmittel und die Belege. Die einzelne Übung Schritt für Schritt findest du unter [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/). Die komplette Routine mit Dosierung findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
   ],

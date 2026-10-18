@@ -17,7 +17,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
     'Comment faire les bascules de cheville, l’exercice genou au-dessus des orteils pour la mobilité\u00A0: technique, séries, pourquoi la flexion compte, test.',
   h1: 'Bascules de cheville\u00A0: comment les faire, et pourquoi la mobilité de la cheville compte',
   lede:
-    'Les bascules de cheville sont un exercice debout où le genou avance au-dessus des orteils pendant que le talon reste à plat au sol. Elles travaillent la flexion dorsale de la cheville, c’est-à-dire jusqu’où la cheville se plie quand le pied est au sol. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale réduite était le plus fort facteur de risque à lui seul, avec un odds ratio de 23,3.',
+    'Les bascules de cheville sont un exercice debout où le genou avance au-dessus des orteils pendant que le talon reste à plat au sol. Elles travaillent la flexion dorsale de la cheville, c’est-à-dire jusqu’où la cheville se plie quand le pied est au sol. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de [fasciite plantaire](/fr/fasciite-plantaire/) et 100\u00A0témoins, une flexion dorsale réduite était le plus fort facteur de risque à lui seul, avec un odds ratio de 23,3.',
   takeaways: [
     'Une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins appariée, avec un odds ratio de 23,3 (Riddle et coll., 2003).',
     'Les bascules de cheville travaillent la flexion dorsale en chargeant la fin de l’amplitude sous le poids du corps, contrairement à un étirement passif contre le mur.',
@@ -64,7 +64,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
             'Le fascia plantaire absorbe des forces pour lesquelles il n’est pas fait.',
           ],
         },
-        'Dans l’étude cas-témoins de Riddle 2003, **une flexion dorsale de cheville réduite était la variable avec le plus grand effet indépendant**, avec un odds ratio de 23,3 pour l’apparition d’une fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou la distance de course. Dans une revue distincte, un mollet raide, plus précisément le gastrocnémien, était présent chez 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire.',
+        'Dans l’étude cas-témoins de Riddle 2003, **une flexion dorsale de cheville réduite était la variable avec le plus grand effet indépendant**, avec un odds ratio de 23,3 pour l’apparition d’une fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou la distance de course. Dans une revue distincte, un [mollet raide](/fr/mollets-tendus/), plus précisément le gastrocnémien, était présent chez 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire.',
         'Étirer le mollet de façon passive (comme avec l’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/)) agit sur un côté du problème\u00A0: la longueur du muscle. Les bascules de cheville agissent sur l’autre côté\u00A0: le contrôle actif en fin d’amplitude. Basculer le genou au-dessus des orteils sous le poids du corps apprend à la cheville à utiliser l’amplitude qu’elle a, pas seulement à l’atteindre passivement.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -74,7 +74,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       paragraphs: [
         'L’[étirement du mollet](/fr/exercices/etirement-mollet/) est un maintien passif. Vous vous penchez contre le mur et attendez que le muscle s’allonge. La jambe arrière est tendue, ce qui cible le gastrocnémien. L’[étirement du soléaire](/fr/exercices/etirement-soleaire/) fait la même chose genou plié.',
         'Les bascules de cheville sont un mouvement actif et répété. Vous poussez le genou vers l’avant, revenez, poussez de nouveau. Vous chargez la cheville sur toute son amplitude au lieu de rester immobile en fin d’amplitude. Les bascules de cheville développent la capacité à utiliser la flexion dorsale sous charge, ce que la marche et la course demandent réellement.',
-        'Les deux sont utiles. **L’étirement ouvre l’amplitude. Les bascules de cheville vous apprennent à l’utiliser.** La recommandation donne aux étirements du mollet la note A. Les bascules de cheville font partie du travail de mobilité que Walkito programme avec ces étirements.',
+        'Les deux sont utiles. **L’étirement ouvre l’amplitude. Les bascules de cheville vous apprennent à l’utiliser.** La recommandation donne aux étirements du mollet la note A. Les bascules de cheville font partie du [travail de mobilité](/fr/exercices-mobilite-cheville/) que Walkito programme avec ces étirements.',
       ],
       cites: [CITE.guideline],
     },

@@ -60,7 +60,7 @@ export const HAGLUNDS_IT: Guide = {
       paragraphs: [
         'La borsa retrocalcaneare si trova nello spazio tra il calcagno e il tendine d’Achille. Il suo compito è ridurre l’attrito. Quando la sporgenza di Haglund è pronunciata, la borsa viene schiacciata durante la dorsiflessione (quando pieghi la caviglia e il piede sale). Il risultato è gonfiore, dolore e a volte arrossamento dietro il tallone.',
         'La borsite retrocalcaneare può esserci anche senza morbo di Haglund, per esempio dopo un aumento improvviso della corsa o del lavoro in salita. Ma la sporgenza ossea la rende più probabile. Le scarpe con un contrafforte del tallone rigido che preme sulla sporgenza sono un irritante meccanico diretto.',
-        'Il dolore della borsite retrocalcaneare è dietro il tallone, in profondità tra tendine e osso. È diverso dalla borsite superficiale (un gonfiore morbido e dolente sulla pelle) e dal dolore nella parte interna del tallone tipico della fascite plantare.',
+        'Il dolore della borsite retrocalcaneare è dietro il tallone, in profondità tra tendine e osso. È diverso dalla borsite superficiale (un gonfiore morbido e dolente sulla pelle) e dal dolore nella parte interna del tallone tipico della [fascite plantare](/it/fascite-plantare/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },

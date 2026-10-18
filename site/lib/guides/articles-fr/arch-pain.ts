@@ -75,7 +75,7 @@ export const ARCH_PAIN_FR: Guide = {
       keyFact: 'Dans la recommandation de 2023 sur la douleur au talon, les étirements du fascia plantaire et du mollet obtiennent la meilleure note de preuve, A, et le renforcement une note en dessous, B (Koc et coll., 2023).',
       paragraphs: [
         'Les exercices ci-dessous visent la voûte elle-même et les muscles du mollet qui tirent dessus. Ils conviennent le mieux quand la douleur à la voûte est liée à une fasciite plantaire, à des pieds plats ou à une surcharge générale. En cas de dysfonction du tendon tibial postérieur ou de douleur d’origine nerveuse, c’est un professionnel de santé qui doit orienter le plan d’exercices. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour la journée.',
-        'Ce sont les doses de départ de Walkito, pas celles des protocoles de recherche. La recommandation de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet A, et le renforcement B. L’exercice du pied court et le massage avec une balle ont, seuls, des preuves plus minces. [Comment ces guides sont rédigés](/fr/a-propos/).',
+        'Ce sont les doses de départ de Walkito, pas celles des protocoles de recherche. La recommandation de 2023 sur la douleur au talon note les étirements du fascia plantaire et du mollet A, et le renforcement B. L’[exercice du pied court](/fr/exercices/pied-court/) et le massage avec une balle ont, seuls, des preuves plus minces. [Comment ces guides sont rédigés](/fr/a-propos/).',
       ],
       exercises: [
         {
@@ -181,7 +181,7 @@ export const ARCH_PAIN_FR: Guide = {
     {
       h2: 'Et les semelles orthopédiques et les chaussures\u00A0?',
       paragraphs: [
-        'La recommandation de 2023 sur la douleur au talon donne une note B contre l’utilisation des semelles orthopédiques seules pour la douleur à court terme de la fasciite plantaire. Les semelles associées à d’autres soins, comme les étirements, obtiennent un C en leur faveur. Les chaussures qui soutiennent le pied sont souvent conseillées et peuvent réduire l’inconfort, mais aucun grand essai n’a montré qu’elles soient meilleures que les étirements et le renforcement.',
+        'La recommandation de 2023 sur la douleur au talon donne une note B contre l’utilisation des [semelles orthopédiques](/fr/semelles-ou-exercices/) seules pour la douleur à court terme de la fasciite plantaire. Les semelles associées à d’autres soins, comme les étirements, obtiennent un C en leur faveur. Les chaussures qui soutiennent le pied sont souvent conseillées et peuvent réduire l’inconfort, mais aucun grand essai n’a montré qu’elles soient meilleures que les étirements et le renforcement.',
         'Pour les pieds plats, un soutien de voûte interne peut réduire l’affaissement de la voûte debout et à la marche, ce qui laisse moins de travail au tendon tibial postérieur et au fascia plantaire. Pour le pied creux, une semelle amortissante absorbe les chocs que la voûte rigide n’absorbe pas. Dans un essai de 2006 sur 154\u00A0personnes souffrant d’un pied creux douloureux, des orthèses plantaires sur mesure ont amélioré la douleur et la fonction davantage qu’une fausse semelle à trois mois (Burns et coll., 2006).',
         '**Les chaussures et les semelles aident à gérer les symptômes pendant que l’exercice construit la capacité dont le pied a besoin.** L’un ne remplace pas l’autre.',
       ],
@@ -196,7 +196,7 @@ export const ARCH_PAIN_FR: Guide = {
     },
     {
       q: 'Pourquoi j’ai mal à la voûte plantaire quand je marche\u00A0?',
-      a: 'Une douleur à la voûte à la marche vient en général de quelques sources\u00A0: une fasciite plantaire, des pieds plats qui laissent la voûte s’affaisser sous la charge, une dysfonction du tendon tibial postérieur, un mollet raide qui reporte la contrainte sur la voûte, ou simplement plus de marche que votre pied n’y est habitué. Le schéma de la douleur, surtout si elle est pire le matin ou après l’activité, aide à trouver laquelle.',
+      a: 'Une douleur à la voûte à la marche vient en général de quelques sources\u00A0: une fasciite plantaire, des pieds plats qui laissent la voûte s’affaisser sous la charge, une dysfonction du tendon tibial postérieur, un [mollet raide](/fr/mollets-tendus/) qui reporte la contrainte sur la voûte, ou simplement plus de marche que votre pied n’y est habitué. Le schéma de la douleur, surtout si elle est pire le matin ou après l’activité, aide à trouver laquelle.',
     },
     {
       q: 'Les pieds plats peuvent-ils donner mal à la voûte plantaire\u00A0?',

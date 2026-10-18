@@ -22,7 +22,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
     'Mal au talon après avoir marché ou être resté debout\u00A0: pourquoi, quelles causes, quand s’inquiéter et les exercices qui aident le plus.',
   h1: 'Douleur au talon après la marche\u00A0: pourquoi le talon fait mal et que faire',
   lede:
-    'Votre talon allait bien pendant la marche, mais maintenant que vous êtes arrêté, il fait mal. Ou bien la douleur est apparue au milieu d’une longue marche et a augmenté à chaque pas. Les deux schémas indiquent la même chose\u00A0: les tissus sous le talon ont reçu ce jour-là plus de charge qu’ils ne pouvaient en encaisser. La cause la plus fréquente est la fasciite plantaire, et la réponse la plus utile, ce sont les étirements et un renforcement progressif du mollet.',
+    'Votre talon allait bien pendant la marche, mais maintenant que vous êtes arrêté, il fait mal. Ou bien la douleur est apparue au milieu d’une longue marche et a augmenté à chaque pas. Les deux schémas indiquent la même chose\u00A0: les tissus sous le talon ont reçu ce jour-là plus de charge qu’ils ne pouvaient en encaisser. La cause la plus fréquente est la [fasciite plantaire](/fr/fasciite-plantaire/), et la réponse la plus utile, ce sont les étirements et un renforcement progressif du mollet.',
   intro: [
     'Cette page parle de la douleur au talon qui apparaît pendant ou après la marche. Si votre talon fait surtout mal aux tout premiers pas du matin, ce schéma est traité dans [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Si vos pieds font mal après des heures debout au même endroit, [mal aux pieds debout toute la journée](/fr/mal-aux-pieds-debout-toute-la-journee/) traite la charge statique. Les trois se recoupent, mais chacune a son angle.',
   ],
@@ -40,7 +40,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       paragraphs: [
         'La marche charge le fascia plantaire, l’épaisse bande de tissu sous le pied, à chaque pas. Chaque fois que le talon touche le sol et que le pied se déroule vers l’avant, le fascia s’étire et absorbe la force. Sur un pied en bonne santé, cela ne pose pas de problème. Mais quand le fascia est irrité ou que le mollet est trop raide pour absorber sa part, la charge se concentre à l’attache du talon.',
         'Résultat\u00A0: une douleur qui monte pendant ou après une marche, surtout si elle est plus longue que d’habitude. La recommandation de 2023 sur la douleur au talon cite deux schémas typiques de la fasciite plantaire\u00A0: la douleur aux premiers pas après le repos, et la douleur qui augmente avec une activité prolongée en charge. La marche est l’activité prolongée en charge la plus courante qui soit.',
-        'Un mollet raide joue un grand rôle. Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite avait l’odds ratio le plus élevé de tous les facteurs de risque mesurés. **Quand la cheville ne plie pas assez, chaque pas demande au fascia de compenser.**',
+        'Un [mollet raide](/fr/mollets-tendus/) joue un grand rôle. Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite avait l’odds ratio le plus élevé de tous les facteurs de risque mesurés. **Quand la cheville ne plie pas assez, chaque pas demande au fascia de compenser.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -63,7 +63,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       h2: 'Qu’est-ce qui distingue la douleur après la marche de la douleur au réveil\u00A0?',
       paragraphs: [
         'La douleur au talon du matin et la douleur après la marche sont, dans la plupart des cas, deux faces du même problème. La douleur du matin vient du fascia qui se raidit et se raccourcit pendant la nuit, puis s’étire d’un coup quand vous vous levez. La douleur après la marche vient du fascia chargé de façon répétée pendant la marche\u00A0: le tissu vous dit qu’il en a assez.',
-        'La différence compte pour placer vos exercices. La douleur du matin répond le mieux à un étirement du fascia plantaire fait avant le premier pas. La douleur après la marche répond à la gestion de la charge\u00A0:',
+        'La différence compte pour placer vos exercices. La douleur du matin répond le mieux à un [étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) fait avant le premier pas. La douleur après la marche répond à la gestion de la charge\u00A0:',
         {
           list: [
             'Marcher une distance que le pied supporte.',
@@ -71,7 +71,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
             'Utiliser les étirements et le travail du mollet pour relever le seuil.',
           ],
         },
-        '[Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille les étirements du matin et les attelles de nuit.',
+        '[Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille les étirements du matin et les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/).',
         'Si vous avez à la fois une douleur le matin et une douleur après la marche, c’est le schéma typique de la fasciite plantaire. Les exercices se recoupent. L’étirement du matin et les étirements du mollet aident dans les deux cas. Le renforcement du mollet augmente la capacité de toute la chaîne, pour que votre charge de marche quotidienne reste dans ce que les tissus peuvent encaisser.',
       ],
       cites: [CITE.guideline],
@@ -167,7 +167,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
           ],
         },
         '**C’est de la gestion de la charge, pas du repos.** Le repos complet aide rarement en cas de fasciite plantaire. La recommandation conseille d’adapter l’activité, pas de devenir inactif. Marcher avec des chaussures qui soutiennent le pied sur une surface plus souple ménage davantage le fascia que marcher pieds nus sur du béton.',
-        'Si vous courez aussi, le même principe s’applique à une autre échelle. [Douleur au talon en course à pied](/heel-pain-runners/) (en anglais) détaille les pics de charge et les changements de kilométrage.',
+        'Si vous courez aussi, le même principe s’applique à une autre échelle, avec les pics de charge et les changements de kilométrage.',
       ],
       cites: [CITE.guideline],
     },

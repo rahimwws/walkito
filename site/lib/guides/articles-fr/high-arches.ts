@@ -21,7 +21,7 @@ export const HIGH_ARCHES_FR: Guide = {
     'Pied creux douloureux\u00A0: exercices d’étirement du mollet et du fascia plantaire, stabilité de la cheville, orthèses et signaux d’alerte neurologiques.',
   h1: 'Pied creux\u00A0: les exercices qui aident et ce qui relève d’un professionnel de santé',
   lede:
-    'Un pied à voûte haute, appelé pied creux (pes cavus), est rigide et ne fléchit pas assez pour amortir les chocs. La force se concentre au talon et à l’avant-pied, et le fascia plantaire est souvent raide. Environ 60\u00A0% des personnes ayant un pied creux signalent des douleurs au pied. Les preuves les plus solides concernent les orthèses amortissantes ou sur mesure. L’exercice vise à étirer le mollet et le fascia plantaire, à améliorer la mobilité de la cheville et à développer la stabilité.',
+    'Un pied à voûte haute, appelé pied creux (pes cavus), est rigide et ne fléchit pas assez pour amortir les chocs. La force se concentre au talon et à l’avant-pied, et le fascia plantaire est souvent raide. Environ 60\u00A0% des personnes ayant un pied creux signalent des douleurs au pied. Les preuves les plus solides concernent les orthèses amortissantes ou sur mesure. L’exercice vise à étirer le mollet et le fascia plantaire, à améliorer la [mobilité de la cheville](/fr/exercices-mobilite-cheville/) et à développer la stabilité.',
   intro: [
     'Le pied creux touche environ 1\u00A0personne sur 10 (Burns et coll., 2007). Beaucoup de personnes au pied creux n’ont jamais mal aux pieds. Chez celles qui ont mal, la douleur se situe en général sous le talon, sous l’avant-pied ou le long du fascia plantaire raide. La cause compte\u00A0: la plupart des pieds creux sont idiopathiques (sans cause connue), mais une partie est due à des maladies neurologiques comme la maladie de Charcot-Marie-Tooth. Un pied creux qui s’accentue ou qui ne touche qu’un côté demande toujours un professionnel de santé.',
   ],
@@ -43,7 +43,7 @@ export const HIGH_ARCHES_FR: Guide = {
         'La douleur du pied creux se présente souvent comme\u00A0:',
         {
           list: [
-            'Une métatarsalgie (douleur sous l’avant-pied).',
+            'Une [métatarsalgie](/fr/metatarsalgie-douleur-avant-pied/) (douleur sous l’avant-pied).',
             'Une douleur sous le talon.',
             'Une douleur le long du fascia plantaire raide.',
           ],
@@ -95,7 +95,7 @@ export const HIGH_ARCHES_FR: Guide = {
         '**Les orthèses plantaires sur mesure ont les preuves les plus solides pour la douleur du pied creux.** Dans le seul essai randomisé, Burns et coll. ont réparti 154\u00A0adultes souffrant de douleurs chroniques au pied et d’un pied creux bilatéral entre des orthèses plantaires sur mesure en polypropylène et une fausse semelle plate.',
         'À trois mois, le groupe orthèses sur mesure rapportait une amélioration de la douleur au pied supérieure de 8,3\u00A0points au Foot Health Status Questionnaire par rapport au groupe fausse semelle. Les scores de fonction se sont améliorés de 9,5\u00A0points de plus. La pression plantaire a baissé de 26\u00A0% avec les orthèses sur mesure, contre 9\u00A0% avec la fausse semelle.',
         'L’essai incluait des personnes au pied creux idiopathique comme neuromusculaire (133\u00A0idiopathiques, 21\u00A0neuromusculaires dont 16 atteintes de la maladie de Charcot-Marie-Tooth). Les orthèses étaient moulées sur la forme du pied, avec un recouvrement amortissant sur toute la longueur.',
-        'Des semelles amortissantes vendues sans ordonnance sont une première étape raisonnable avant de passer à des orthèses sur mesure, plus chères. L’élément que l’essai a trouvé efficace était une coque moulée sur la forme exacte du pied, pas seulement un amorti plat ajouté.',
+        'Des [semelles amortissantes](/fr/semelles-ou-exercices/) vendues sans ordonnance sont une première étape raisonnable avant de passer à des orthèses sur mesure, plus chères. L’élément que l’essai a trouvé efficace était une coque moulée sur la forme exacte du pied, pas seulement un amorti plat ajouté.',
       ],
       sourceNote:
         'Burns 2006\u00A0: 154\u00A0adultes, suivi à 3\u00A0mois, différence de douleur au Foot Health Status Questionnaire de 8,3\u00A0points (IC à 95\u00A0% 1,2-15,3, p=0,022), différence de fonction de 9,5\u00A0points (IC à 95\u00A0% 2,9-16,1, p=0,005).',
@@ -105,7 +105,7 @@ export const HIGH_ARCHES_FR: Guide = {
       h2: 'Quels exercices pour le pied creux\u00A0?',
       keyFact: 'La recommandation de 2023 sur la douleur au talon note les étirements du mollet et du fascia plantaire A et le renforcement B pour la douleur sous le talon, l’endroit douloureux le plus fréquent dans le pied creux (Koc et coll., 2023).',
       paragraphs: [
-        'Aucun essai n’a testé un programme d’exercices conçu spécifiquement pour la douleur du pied creux. Les exercices ci-dessous visent les structures souvent raides ou instables dans un pied creux\u00A0: le mollet, le fascia plantaire, la cheville et les muscles intrinsèques du pied. Ils sont empruntés aux preuves sur la fasciite plantaire, l’instabilité de la cheville et le renforcement général du pied, et présentés comme tels.',
+        'Aucun essai n’a testé un programme d’exercices conçu spécifiquement pour la douleur du pied creux. Les exercices ci-dessous visent les structures souvent raides ou instables dans un pied creux\u00A0: le mollet, le fascia plantaire, la cheville et les muscles intrinsèques du pied. Ils sont empruntés aux preuves sur la [fasciite plantaire](/fr/fasciite-plantaire/), l’instabilité de la cheville et le renforcement général du pied, et présentés comme tels.',
         'La recommandation de 2023 sur la douleur au talon note les étirements du mollet et du fascia plantaire A et le renforcement B pour la douleur sous le talon, l’un des endroits douloureux les plus fréquents dans le pied creux. Il n’existe pas de recommandation comparable pour le pied creux en particulier.',
         'Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour la journée.',
       ],
@@ -188,7 +188,7 @@ export const HIGH_ARCHES_FR: Guide = {
     {
       h2: 'Quelles chaussures pour le pied creux\u00A0?',
       paragraphs: [
-        '**Les chaussures pour pied creux doivent amortir plutôt que contrôler.** Contrairement aux pieds plats, où un renfort interne ferme empêche l’affaissement, un pied creux a besoin de l’inverse\u00A0: une chaussure qui absorbe les chocs parce que le pied lui-même ne le fait pas.',
+        '**Les chaussures pour pied creux doivent amortir plutôt que contrôler.** Contrairement aux [pieds plats](/fr/pieds-plats/), où un renfort interne ferme empêche l’affaissement, un pied creux a besoin de l’inverse\u00A0: une chaussure qui absorbe les chocs parce que le pied lui-même ne le fait pas.',
         'Recherchez\u00A0:',
         {
           list: [

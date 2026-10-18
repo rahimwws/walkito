@@ -17,7 +17,7 @@ export const BAREFOOT_PT: Guide = {
     'Em um ensaio de 2019 com 57\u00A0corredores, caminhar com calçados minimalistas por cerca de dois meses deixou os músculos do pé maiores e mais fortes, tanto quanto fazer exercícios para os pés (Ridge e colegas).',
     'Adultos que usaram calçados minimalistas no dia a dia por seis meses ganharam em média 57,4% de força nos dedos, em um estudo controlado com 22\u00A0pessoas que fizeram a troca (Curtis e colegas, 2021).',
     'Em corredores que passaram para tênis de corrida minimalistas ao longo de cerca de dois meses e meio, 10 de 19 mostraram estresse ósseo novo ou pior na ressonância magnética, mais que os corredores que mantiveram o tênis de sempre (Ridge e colegas, 2013).',
-    'Nenhum ensaio mostrou que o calçado barefoot sozinho alivia a dor da fascite plantar. Em um ensaio pequeno com pessoas com fascite plantar, exercícios para os pés aumentaram a força dos dedos, usando ou não calçados minimalistas (Xu e colegas, 2026).',
+    'Nenhum ensaio mostrou que o calçado barefoot sozinho alivia a dor da [fascite plantar](/pt/fascite-plantar/). Em um ensaio pequeno com pessoas com fascite plantar, exercícios para os pés aumentaram a força dos dedos, usando ou não calçados minimalistas (Xu e colegas, 2026).',
     'A diretriz internacional sobre pé diabético orienta pessoas com diabetes com risco de úlcera no pé a não andar sem uma proteção adequada nos pés (IWGDF, 2023).',
   ],
   toc: true,
@@ -73,7 +73,7 @@ export const BAREFOOT_PT: Guide = {
             'No ensaio de seis meses de Fuller e colegas, com 61\u00A0corredores, a dor ao correr foi maior com os tênis minimalistas, claramente acima de cerca de 35\u00A0km por semana, e o risco de lesão aumentou com o peso corporal. A diferença geral de lesões (16 de 31 contra 11 de 30) pode ter sido acaso.',
           ],
         },
-        'Eram corredores. Caminhar põe muito menos carga no pé, e esse é um dos motivos de os estudos de força terem usado a caminhada. Se você corre e tem [dor no calcanhar](/heel-pain-runners/) (em inglês), uma troca repentina de calçado é mais uma mudança de carga de que o seu pé não precisa.',
+        'Eram corredores. Caminhar põe muito menos carga no pé, e esse é um dos motivos de os estudos de força terem usado a caminhada. Se você corre e tem dor no calcanhar, uma troca repentina de calçado é mais uma mudança de carga de que o seu pé não precisa.',
       ],
       sourceNote:
         'Ridge 2013: edema da medula óssea graduado de 0 a 4 na ressonância magnética, P = 0,009 para a diferença entre os grupos. Fuller 2017: hazard ratio de 1,64 (IC 95% 0,63 a 4,27, P = 0,31); para corredores com 85,7\u00A0kg, o hazard ratio foi de 2,00 (IC 95% 1,10 a 3,66). Ryan 2014: 99\u00A0corredores analisados, 23\u00A0lesões.',

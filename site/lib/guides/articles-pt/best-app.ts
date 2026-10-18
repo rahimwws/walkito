@@ -22,7 +22,7 @@ export const BEST_APP_PT: Guide = {
     'Melhor app para fascite plantar em 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch e Walkito comparados em preço, plataformas e perfil.',
   h1: 'Melhor app para fascite plantar: um guia de escolha para 2026',
   lede:
-    'Esta página compara sete apps que trazem exercícios para fascite plantar, pé chato ou dor no pé em geral. O Walkito é um deles, e é o Walkito que faz esta página, então é bom você saber disso desde o início. O objetivo é ser justo, dizer onde os outros são melhores e dar detalhes suficientes para você escolher o que combina com a sua situação.',
+    'Esta página compara sete apps que trazem exercícios para [fascite plantar](/pt/fascite-plantar/), [pé chato](/pt/pe-chato/) ou dor no pé em geral. O Walkito é um deles, e é o Walkito que faz esta página, então é bom você saber disso desde o início. O objetivo é ser justo, dizer onde os outros são melhores e dar detalhes suficientes para você escolher o que combina com a sua situação.',
   intro: [
     'Não existe um app que seja o melhor para todo mundo. A escolha certa depende do que você precisa: quem corre e está voltando de uma fascite plantar tem necessidades diferentes de quem tem pé chato e passa o dia todo em pé no trabalho, e os dois têm necessidades diferentes de quem tem o Hinge Health pago pela empresa. Os critérios abaixo explicam o que observar, e a tabela em seguida mostra onde cada app se encaixa.',
   ],
@@ -119,7 +119,7 @@ export const BEST_APP_PT: Guide = {
     {
       h2: 'Exakt Health: o app de reabilitação para corredores',
       paragraphs: [
-        'O Exakt Health foi feito para corredores, e isso aparece. O app tem mais de 15 planos de reabilitação de lesões, da fascite plantar à tendinopatia de Aquiles e à lesão de menisco, além de planos de treino de corrida que vão do sedentário à maratona. Cada plano de reabilitação termina com uma fase estruturada de volta à corrida, algo que a maioria dos apps para dor no pé não oferece.',
+        'O [Exakt Health](/pt/walkito-vs-exakt-health/) foi feito para corredores, e isso aparece. O app tem mais de 15 planos de reabilitação de lesões, da fascite plantar à [tendinopatia de Aquiles](/pt/tendinite-de-aquiles-exercicios/) e à lesão de menisco, além de planos de treino de corrida que vão do sedentário à maratona. Cada plano de reabilitação termina com uma fase estruturada de volta à corrida, algo que a maioria dos apps para dor no pé não oferece.',
         'Ele é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória de segurança e de uso pretendido. Foi criado por fisioterapeutas esportivos habilitados e treinadores de corrida. O app tem mais de 600 vídeos de exercícios e adapta o plano conforme você avança nos níveis.',
         'Por US$\u00A019,99 por mês ou US$\u00A059,99 por seis meses, o Exakt não é barato, mas a variedade de condições e a qualidade dos planos de reabilitação são difíceis de igualar entre os apps que você usa por conta própria. O teste grátis de 7\u00A0dias deixa você ver o app completo antes de pagar. Ele está disponível em inglês, francês, alemão e espanhol, no iOS e no Android.',
         'Onde o Exakt é melhor que o Walkito:',
@@ -209,7 +209,7 @@ export const BEST_APP_PT: Guide = {
           list: [
             'Monta um plano semanal a partir das suas respostas sobre dor, objetivos e agenda.',
             'Toda manhã, um check-in ajusta a sessão do dia a como o seu pé está.',
-            'Testes a cada 14\u00A0dias medem as elevações de calcanhar, a sustentação do arco e o equilíbrio em uma perna, e comparam esquerda e direita.',
+            'Testes a cada 14\u00A0dias medem as elevações de calcanhar, a sustentação do arco e o [equilíbrio em uma perna](/pt/exercicios/equilibrio-uma-perna/), e comparam esquerda e direita.',
             'As sessões têm 3, 5 ou 10\u00A0minutos.',
             'Os exercícios seguem a diretriz de 2023 para dor no calcanhar e o ensaio de Rathleff de 2015.',
             'No iPhone, ele lê do Apple Saúde dados de passos, sono e caminhada, que ficam no seu celular. No Android, ele lê do Health Connect passos, sessões de exercício, distância e sono.',

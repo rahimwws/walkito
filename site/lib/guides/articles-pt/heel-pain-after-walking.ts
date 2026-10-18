@@ -21,7 +21,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
     'Dor no calcanhar depois de andar ou ficar em pé: por que dói após uma caminhada longa, as causas, quando se preocupar e os exercícios que mais ajudam.',
   h1: 'Dor no calcanhar depois de andar: por que dói e o que fazer',
   lede:
-    'O calcanhar estava bem enquanto você andava, mas agora que parou ele dói. Ou a dor começou no meio de uma caminhada longa e foi piorando a cada passo. Os dois padrões apontam para a mesma coisa: os tecidos embaixo do calcanhar receberam mais carga do que aguentavam naquele dia. A causa mais comum é a fascite plantar, e a resposta mais útil é alongamento e fortalecimento gradual da panturrilha.',
+    'O calcanhar estava bem enquanto você andava, mas agora que parou ele dói. Ou a dor começou no meio de uma caminhada longa e foi piorando a cada passo. Os dois padrões apontam para a mesma coisa: os tecidos embaixo do calcanhar receberam mais carga do que aguentavam naquele dia. A causa mais comum é a [fascite plantar](/pt/fascite-plantar/), e a resposta mais útil é alongamento e fortalecimento gradual da panturrilha.',
   intro: [
     'Esta página trata da dor no calcanhar que aparece durante ou depois de andar. Se o calcanhar dói mais nos primeiros passos da manhã, esse padrão está em [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/). Se os pés doem de ficar horas parado no mesmo lugar, [dor nos pés de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala do lado da carga estática. Os três se sobrepõem, mas cada um tem um foco diferente.',
   ],
@@ -39,7 +39,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       paragraphs: [
         'Andar põe carga na fáscia plantar, a faixa grossa de tecido embaixo do pé, a cada passo. Toda vez que o calcanhar bate no chão e o pé rola para a frente, a fáscia estica e absorve força. Num pé saudável, tudo bem. Mas quando a fáscia está irritada ou a panturrilha está tensa demais para absorver a parte dela, a carga se concentra onde a fáscia se prende no calcanhar.',
         'O resultado é uma dor que aumenta durante ou depois de uma caminhada, principalmente uma mais longa que o normal. A diretriz de 2023 para dor no calcanhar cita dois padrões típicos da fascite plantar: dor nos primeiros passos depois do repouso, e dor que aumenta com atividade prolongada com apoio do peso. Andar é a atividade prolongada com apoio do peso mais comum que existe.',
-        'Uma panturrilha tensa é parte importante do quadro. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo teve a maior razão de chances de todos os fatores de risco medidos. **Quando o tornozelo não dobra o suficiente, cada passo pede que a fáscia compense a diferença.**',
+        'Uma [panturrilha tensa](/pt/panturrilha-tensa/) é parte importante do quadro. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo teve a maior razão de chances de todos os fatores de risco medidos. **Quando o tornozelo não dobra o suficiente, cada passo pede que a fáscia compense a diferença.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -62,7 +62,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
       h2: 'Qual a diferença entre dor depois de andar e dor ao acordar?',
       paragraphs: [
         'Na maioria dos casos, a dor no calcanhar pela manhã e a dor depois de andar são dois lados da mesma condição. A dor da manhã acontece porque a fáscia enrijece e encurta durante a noite e depois é esticada de repente quando você fica em pé. A dor depois de andar acontece porque a fáscia recebeu carga repetida durante a caminhada e o tecido está avisando que já chega.',
-        'A diferença importa na hora de encaixar os exercícios. A dor da manhã responde melhor a um alongamento da fáscia plantar feito antes do primeiro passo. A dor depois de andar responde ao controle da carga:',
+        'A diferença importa na hora de encaixar os exercícios. A dor da manhã responde melhor a um [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) feito antes do primeiro passo. A dor depois de andar responde ao controle da carga:',
         {
           list: [
             'Andar uma distância que o pé aguenta.',
@@ -70,7 +70,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
             'Usar alongamento e trabalho de panturrilha para subir o limite.',
           ],
         },
-        '[Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) traz em detalhes os alongamentos da manhã e as talas noturnas.',
+        '[Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) traz em detalhes os alongamentos da manhã e as [talas noturnas](/pt/tala-noturna-fascite-plantar/).',
         'Se você tem dor de manhã e também depois de andar, esse é o padrão típico da fascite plantar. Os exercícios se sobrepõem. O alongamento da manhã e os alongamentos de panturrilha ajudam nos dois. O fortalecimento da panturrilha aumenta a capacidade de toda a cadeia, para que a carga das suas caminhadas do dia a dia fique dentro do que os tecidos aguentam.',
       ],
       cites: [CITE.guideline],
@@ -166,7 +166,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
           ],
         },
         '**Isso é controle da carga, não repouso.** Repouso total raramente ajuda na fascite plantar. A diretriz recomenda modificar a atividade, não ficar parado. Andar com um calçado com bom suporte numa superfície mais macia é mais leve para a fáscia do que andar descalço no concreto.',
-        'Se você também corre, o mesmo princípio vale em outra escala. [Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) fala em mais detalhes de picos de carga e mudanças na quilometragem.',
+        'Se você também corre, o mesmo princípio vale em outra escala: evite picos de carga e mudanças bruscas na quilometragem.',
       ],
       cites: [CITE.guideline],
     },

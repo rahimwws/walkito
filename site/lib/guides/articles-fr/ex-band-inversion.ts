@@ -30,7 +30,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
       h2: 'Qu’est-ce que l’exercice d’inversion de cheville avec élastique\u00A0?',
       paragraphs: [
         'L’inversion de cheville avec élastique est un exercice assis où un élastique de résistance est passé autour de l’avant du pied et fixé à l’autre pied ou à un point fixe. Vous tournez la plante du pied vers l’intérieur (inversion) contre la traction de l’élastique. Le genou reste immobile. Seuls le pied et la cheville bougent.',
-        'L’exercice cible le tibial postérieur, un muscle profond de l’arrière de la jambe dont le tendon contourne l’arrière de la malléole interne et s’étale le long du dessous du pied. C’est le muscle extrinsèque le plus important pour le soutien de la voûte pendant la marche. Quand il s’affaiblit ou que son tendon dégénère, la voûte s’aplatit et le pied s’affaisse vers l’intérieur. Ce problème s’appelle la dysfonction du tendon tibial postérieur, ou pied plat acquis de l’adulte.',
+        'L’exercice cible le tibial postérieur, un muscle profond de l’arrière de la jambe dont le tendon contourne l’arrière de la malléole interne et s’étale le long du dessous du pied. C’est le muscle extrinsèque le plus important pour le soutien de la voûte pendant la marche. Quand il s’affaiblit ou que son tendon dégénère, la voûte s’aplatit et le pied s’affaisse vers l’intérieur. Ce problème s’appelle la [dysfonction du tendon tibial postérieur](/fr/dysfonction-tendon-tibial-posterieur/), ou pied plat acquis de l’adulte.',
       ],
       cites: [CITE.ling],
     },
@@ -100,7 +100,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
       h2: 'Que dit la recherche sur le renforcement du tibial postérieur\u00A0?',
       paragraphs: [
         'Les données les plus directes sur le mouvement viennent de l’étude IRM de 2004 de Kulig et coll. Elle a confirmé que l’adduction du pied active sélectivement le tibial postérieur, avec une activation minimale des muscles voisins. L’inversion contre un élastique est donc l’exercice de choix quand le but est de renforcer ce muscle en particulier.',
-        'Pour les résultats cliniques, une revue systématique de 2018 de Ross et coll. a étudié les programmes d’exercices pour la dysfonction du tendon tibial postérieur. La plupart des études étaient petites, mais la revue a conclu que les programmes comprenant des exercices excentriques et concentriques du tibial postérieur, souvent associés à un renforcement du mollet et à des orthèses, amélioraient la douleur et la fonction.',
+        'Pour les résultats cliniques, une revue systématique de 2018 de Ross et coll. a étudié les programmes d’exercices pour la dysfonction du tendon tibial postérieur. La plupart des études étaient petites, mais la revue a conclu que les programmes comprenant des exercices excentriques et concentriques du tibial postérieur, souvent associés à un renforcement du mollet et à des [orthèses](/fr/semelles-ou-exercices/), amélioraient la douleur et la fonction.',
         '**L’exercice n’a pas été testé seul dans un grand essai sur la fasciite plantaire.** Son rôle dans le programme Walkito est de soutenir la voûte en renforçant le stabilisateur extrinsèque qui travaille avec les muscles intrinsèques. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [exercice du pied court](/fr/exercices/pied-court/), [abduction de hanche](/fr/exercices/abduction-hanche/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],

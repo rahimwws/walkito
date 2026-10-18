@@ -21,7 +21,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
     'Douleur au talon la nuit ou au repos\u00A0: fracture de fatigue, compression nerveuse ou rhumatisme. Signaux d’alerte et quand consulter.',
   h1: 'Douleur au talon la nuit\u00A0: les causes et quand c’est un signal d’alerte',
   lede:
-    'Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la fasciite plantaire, cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui relève d’un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.',
+    'Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la [fasciite plantaire](/fr/fasciite-plantaire/), cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui relève d’un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.',
   intro: [
     'Si votre talon fait surtout mal aux premiers pas du matin puis se calme, le meilleur point de départ est sans doute [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Cette page concerne la douleur qui persiste au repos, vous réveille, ou arrive après un moment sans être debout et ne correspond pas au schéma typique de la fasciite plantaire.',
   ],
@@ -39,7 +39,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       paragraphs: [
         'La fasciite plantaire fait mal parce que le fascia se raidit pendant le sommeil, puis s’étire brusquement quand vous vous levez. Cette douleur culmine au premier pas et s’améliore avec le mouvement. **Si votre talon fait mal alors que vous êtes allongé, sans aucune charge dessus, c’est en général un autre mécanisme qui est en cause.**',
         'Une revue de 2018 parue dans American Family Physician cite plusieurs causes de douleur au talon qui se comportent autrement que la fasciite plantaire. La distinction clé\u00A0: la douleur de la fasciite plantaire s’améliore avec l’activité, alors que celle des fractures de fatigue, des compressions nerveuses, des tumeurs et des maladies inflammatoires ne suit pas ce schéma.',
-        'Le pied pointe aussi vers le bas (flexion plantaire) pendant le sommeil. Cette position peut raccourcir le tendon d’Achille et le mollet, ce qui contribue parfois à une gêne au talon. Les attelles de nuit agissent là-dessus en maintenant la cheville à angle neutre. Mais une attelle de nuit est un outil pour la fasciite plantaire, pas un substitut à des examens pour une douleur qui s’aggrave vraiment au repos.',
+        'Le pied pointe aussi vers le bas (flexion plantaire) pendant le sommeil. Cette position peut raccourcir le tendon d’Achille et le mollet, ce qui contribue parfois à une gêne au talon. Les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/) agissent là-dessus en maintenant la cheville à angle neutre. Mais une attelle de nuit est un outil pour la fasciite plantaire, pas un substitut à des examens pour une douleur qui s’aggrave vraiment au repos.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },

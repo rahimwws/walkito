@@ -93,7 +93,7 @@ export const ICE_HEAT_IT: Guide = {
       keyFact: 'In 36\u00A0studi su 1.301\u00A0persone senza lesioni, caldo più stretching ha migliorato l’ampiezza di movimento più del solo stretching (Bleakley e Costello, 2013).',
       paragraphs: [
         '**Scaldare il piede prima dello stretching è una scelta ragionevole**, ed è più sostenuta che mettere il ghiaccio prima dello stretching. Una revisione del 2013 di 36\u00A0studi su 1.301\u00A0persone senza lesioni ha trovato che il caldo aumentava l’ampiezza di movimento, e che caldo più stretching funzionava meglio del solo stretching. I dati sul freddo erano contrastanti. Ogni studio aveva un alto rischio di bias, e nessuno riguardava persone con dolore al tallone, quindi prendilo come un’idea sensata, non come un piano testato per la fascite plantare.',
-        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’allungamento della fascia plantare e del polpaccio.',
+        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e del polpaccio.',
         'Al mattino, però, non aspettare di esserti scaldato per fare stretching. L’allungamento dei primi passi va fatto prima che il piede prenda carico, sul bordo del letto. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questa routine passo per passo.',
       ],
       cites: [CITE.bleakleyThermal],

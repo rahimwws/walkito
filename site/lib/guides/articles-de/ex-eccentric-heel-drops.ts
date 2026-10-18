@@ -148,7 +148,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     {
       q: 'Hilft exzentrisches Fersenabsenken bei Plantarfasziitis?',
       cites: [CITE.rathleff],
-      a: 'Exzentrisches Absenken wurde für die Achillessehne entwickelt, nicht für die Plantarfaszie. Bei Plantarfasziitis ist die getestete Übung das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem ein Handtuch unter den Zehen die Faszie einbezieht. Das Fersenabsenken kommt in der Stufenfolge von Walkito später, nach dem Fersenheben mit Handtuch.',
+      a: 'Exzentrisches Absenken wurde für die Achillessehne entwickelt, nicht für die Plantarfaszie. Bei [Plantarfasziitis](/de/plantarfasziitis/) ist die getestete Übung das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem ein Handtuch unter den Zehen die Faszie einbezieht. Das Fersenabsenken kommt in der Stufenfolge von Walkito später, nach dem Fersenheben mit Handtuch.',
     },
   ],
   redFlags: {

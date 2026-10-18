@@ -22,7 +22,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
     'Exercícios e alongamentos para esporão no calcanhar, para a fáscia plantar e a panturrilha: a rotina, as doses e a progressão para aliviar a dor.',
   h1: 'Exercícios para esporão no calcanhar: alongamento e fortalecimento para a dor em volta do esporão',
   lede:
-    'Exercício não dissolve um esporão no calcanhar. O esporão é osso, e osso não diminui com alongamento. Mas a dor que as pessoas sentem quando têm esporão quase sempre vem da fáscia plantar e da panturrilha em volta dele, não do osso em si. Os exercícios abaixo trabalham esses tecidos moles. São os mesmos que a diretriz de 2023 para dor no calcanhar recomenda para fascite plantar.',
+    'Exercício não dissolve um esporão no calcanhar. O esporão é osso, e osso não diminui com alongamento. Mas a dor que as pessoas sentem quando têm esporão quase sempre vem da fáscia plantar e da panturrilha em volta dele, não do osso em si. Os exercícios abaixo trabalham esses tecidos moles. São os mesmos que a diretriz de 2023 para dor no calcanhar recomenda para [fascite plantar](/pt/fascite-plantar/).',
   intro: [
     'Se você quer entender primeiro a diferença entre esporão e fascite plantar, veja [fascite plantar ou esporão](/pt/fascite-plantar-ou-esporao/). Esta página é a rotina prática: quais exercícios, quantas repetições, como progredir e quando parar.',
   ],
@@ -168,7 +168,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
         ],
       },
       after: [
-        'Mantenha o alongamento da fáscia plantar e os alongamentos de panturrilha em todos os níveis. O alongamento não é algo que você abandona quando começa a fortalecer. A diretriz avalia os dois de forma independente.',
+        'Mantenha o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e os alongamentos de panturrilha em todos os níveis. O alongamento não é algo que você abandona quando começa a fortalecer. A diretriz avalia os dois de forma independente.',
         'Para mais detalhes sobre o protocolo da elevação de calcanhar com toalha e a pesquisa por trás dele, veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -232,7 +232,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       h2: 'Em quanto tempo a dor do esporão melhora com exercício?',
       paragraphs: [
         'Não existe ensaio que meça os resultados do exercício especificamente em pessoas com esporão. Os prazos abaixo vêm de estudos sobre fascite plantar, que é a condição que causa a dor em volta do esporão na maioria dos casos.',
-        'Uma revisão da evidência clínica relata que cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento e palmilhas, muitas vezes em alguns meses (Latt e colegas, 2020). No ensaio de Rathleff de 2015, o grupo das elevações de calcanhar com carga estava significativamente à frente do grupo que só alongava aos três meses.',
+        'Uma revisão da evidência clínica relata que cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento e [palmilhas](/pt/palmilhas-ou-exercicios/), muitas vezes em alguns meses (Latt e colegas, 2020). No ensaio de Rathleff de 2015, o grupo das elevações de calcanhar com carga estava significativamente à frente do grupo que só alongava aos três meses.',
         'Nenhum programa de exercícios pode prometer um prazo para uma pessoa específica. **O que você pode medir é se as coisas estão mudando**:',
         {
           list: [

@@ -138,7 +138,7 @@ export const BUNIONS_PT: Guide = {
     {
       h2: 'Quando se pensa em cirurgia?',
       paragraphs: [
-        'A cirurgia é considerada quando a dor e a limitação funcional continuam apesar das medidas conservadoras, como troca de calçado, exercícios, separadores e palmilhas. **A decisão depende do quanto o joanete afeta o dia a dia, não só do ângulo.**',
+        'A cirurgia é considerada quando a dor e a limitação funcional continuam apesar das medidas conservadoras, como troca de calçado, exercícios, separadores e [palmilhas](/pt/palmilhas-ou-exercicios/). **A decisão depende do quanto o joanete afeta o dia a dia, não só do ângulo.**',
         'Existem mais de 150 procedimentos cirúrgicos para hálux valgo, que vão do realinhamento de tecidos moles à osteotomia (cortar e reposicionar o osso). A escolha depende da gravidade e da anatomia específica. A recuperação varia de semanas a meses.',
         'Exercício e tratamento conservador costumam ser tentados primeiro por vários meses. Se você está controlando bem os sintomas com as abordagens desta página, a cirurgia não é urgente. Se a dor limita a caminhada, a escolha de calçados ou a atividade apesar dessas medidas, um especialista em pé e tornozelo pode conversar sobre as opções.',
       ],
@@ -195,7 +195,7 @@ export const BUNIONS_PT: Guide = {
   program: {
     h2: 'Como transformar isso em um plano',
     text:
-      'O Walkito inclui [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões de 3 ou 5\u00A0minutos, 3, 5 ou 7 dias por semana, você escolhe, mantêm os exercícios regulares.',
+      'O Walkito inclui [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e [pé chato](/pt/pe-chato/), não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões de 3 ou 5\u00A0minutos, 3, 5 ou 7 dias por semana, você escolhe, mantêm os exercícios regulares.',
     more: [
       'Para uma dor mais ampla na parte da frente do pé, envolvendo a segunda e a terceira cabeça dos metatarsos, veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/). Para dor especificamente embaixo da articulação do dedão, veja [sesamoidite](/pt/sesamoidite/).',
     ],

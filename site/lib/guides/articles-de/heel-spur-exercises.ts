@@ -22,7 +22,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     'Übungen und Dehnungen bei Fersensporn für Plantarfaszie und Wade: Routine, Dosis und Steigerung, die Schmerzen lindern, ohne den Sporn aufzulösen.',
   h1: 'Übungen bei Fersensporn: Dehnen und Kräftigen gegen den Schmerz rund um den Sporn',
   lede:
-    'Übungen lösen keinen Fersensporn auf. Der Sporn ist Knochen, und Knochen schrumpft nicht durch Dehnen. Aber der Schmerz, den Menschen mit Fersensporn spüren, kommt fast immer von der Plantarfaszie am Sporn und von der Wade, die über die Achillessehne an der Ferse zieht, nicht vom Knochen selbst. Die Übungen unten zielen auf diese Weichteile. Es sind dieselben, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt.',
+    'Übungen lösen keinen Fersensporn auf. Der Sporn ist Knochen, und Knochen schrumpft nicht durch Dehnen. Aber der Schmerz, den Menschen mit Fersensporn spüren, kommt fast immer von der Plantarfaszie am Sporn und von der Wade, die über die Achillessehne an der Ferse zieht, nicht vom Knochen selbst. Die Übungen unten zielen auf diese Weichteile. Es sind dieselben, die die Leitlinie von 2023 zu Fersenschmerzen bei [Plantarfasziitis](/de/plantarfasziitis/) empfiehlt.',
   intro: [
     'Wenn du zuerst den Unterschied zwischen Fersensporn und Plantarfasziitis verstehen willst, lies [Plantarfasziitis oder Fersensporn](/de/plantarfasziitis-oder-fersensporn/). Diese Seite ist die praktische Routine: welche Übungen, wie viele, wie du steigerst und wann du aufhörst.',
   ],
@@ -168,7 +168,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         ],
       },
       after: [
-        'Mach die Plantarfaszien-Dehnung und die Wadendehnungen auf jeder Stufe. Dehnen lässt du nicht weg, wenn du mit dem Kräftigen anfängst. Die Leitlinie bewertet beides unabhängig voneinander.',
+        'Mach die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und die Wadendehnungen auf jeder Stufe. Dehnen lässt du nicht weg, wenn du mit dem Kräftigen anfängst. Die Leitlinie bewertet beides unabhängig voneinander.',
         'Mehr Details zum Fersenheben mit Handtuch und der Forschung dahinter findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -232,7 +232,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Wie lange dauert es, bis Fersensporn-Schmerzen mit Übungen besser werden?',
       paragraphs: [
         'Es gibt keine Studie, die Übungsergebnisse speziell bei Menschen mit Fersensporn misst. Die Zeiträume unten stammen aus Studien zur Plantarfasziitis, der Erkrankung, die in den meisten Fällen den Schmerz rund um den Sporn verursacht.',
-        'Eine Übersicht über die klinischen Belege berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit konservativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In der Studie von Rathleff 2015 lag die Gruppe mit belastetem Fersenheben nach drei Monaten signifikant vor der Gruppe, die nur dehnte.',
+        'Eine Übersicht über die klinischen Belege berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit konservativer Behandlung wie Dehnen und [Schuheinlagen](/de/einlagen-oder-uebungen/) besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In der Studie von Rathleff 2015 lag die Gruppe mit belastetem Fersenheben nach drei Monaten signifikant vor der Gruppe, die nur dehnte.',
         'Kein Übungsprogramm kann einem einzelnen Menschen einen Zeitrahmen versprechen. **Was du messen kannst, ist, ob sich etwas verändert**:',
         {
           list: [

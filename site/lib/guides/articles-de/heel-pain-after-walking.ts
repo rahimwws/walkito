@@ -20,7 +20,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
     'Fersenschmerzen nach dem Gehen oder Stehen: warum die Ferse nach einem langen Spaziergang wehtut, Ursachen, Warnzeichen und die hilfreichsten Übungen.',
   h1: 'Fersenschmerzen nach dem Gehen: warum deine Ferse wehtut und was du tun kannst',
   lede:
-    'Beim Gehen war mit deiner Ferse alles in Ordnung, aber jetzt, wo du stehen geblieben bist, schmerzt sie. Oder der Schmerz kam mitten auf einem langen Spaziergang und wurde mit jedem Schritt schlimmer. Beide Muster deuten auf dasselbe hin: Das Gewebe unter deiner Ferse wurde an diesem Tag stärker belastet, als es verkraften konnte. Die häufigste Ursache ist Plantarfasziitis, und am nützlichsten sind Dehnen und schrittweises Wadentraining.',
+    'Beim Gehen war mit deiner Ferse alles in Ordnung, aber jetzt, wo du stehen geblieben bist, schmerzt sie. Oder der Schmerz kam mitten auf einem langen Spaziergang und wurde mit jedem Schritt schlimmer. Beide Muster deuten auf dasselbe hin: Das Gewebe unter deiner Ferse wurde an diesem Tag stärker belastet, als es verkraften konnte. Die häufigste Ursache ist [Plantarfasziitis](/de/plantarfasziitis/), und am nützlichsten sind Dehnen und schrittweises Wadentraining.',
   intro: [
     'Auf dieser Seite geht es um Fersenschmerzen, die beim oder nach dem Gehen auftreten. Wenn deine Ferse bei den allerersten Schritten am Morgen am meisten wehtut, findest du dieses Muster unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/). Wenn deine Füße schmerzen, weil du stundenlang an einer Stelle stehst, behandelt [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) die statische Belastung. Die drei überschneiden sich, aber jede Seite hat einen anderen Blickwinkel.',
   ],
@@ -38,7 +38,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       paragraphs: [
         'Gehen belastet die Plantarfaszie, das dicke Gewebeband unter dem Fuß, bei jedem Schritt. Jedes Mal, wenn die Ferse aufsetzt und der Fuß nach vorn abrollt, wird die Faszie gedehnt und fängt Kraft ab. Bei einem gesunden Fuß ist das kein Problem. Aber wenn die Faszie gereizt ist oder die Wade zu verkürzt ist, um ihren Anteil abzufangen, konzentriert sich die Last am Ansatz an der Ferse.',
         'Das Ergebnis ist ein Schmerz, der beim oder nach dem Gehen zunimmt, vor allem nach einem längeren Weg als sonst. Die Leitlinie von 2023 zu Fersenschmerzen nennt zwei typische Muster der Plantarfasziitis: Schmerz bei den ersten Schritten nach einer Ruhephase und Schmerz, der bei längerer Belastung zunimmt. Gehen ist die häufigste längere Belastung überhaupt.',
-        'Eine verkürzte Wade spielt dabei eine große Rolle. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen hatte eingeschränkte Dorsalflexion im Sprunggelenk die höchste Odds Ratio aller gemessenen Risikofaktoren. **Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss die Faszie bei jedem Schritt den Unterschied ausgleichen.**',
+        'Eine [verkürzte Wade](/de/verspannte-waden/) spielt dabei eine große Rolle. In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen hatte eingeschränkte Dorsalflexion im Sprunggelenk die höchste Odds Ratio aller gemessenen Risikofaktoren. **Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss die Faszie bei jedem Schritt den Unterschied ausgleichen.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -61,7 +61,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
       h2: 'Was unterscheidet Fersenschmerzen nach dem Gehen von Fersenschmerzen am Morgen?',
       paragraphs: [
         'Fersenschmerzen am Morgen und Fersenschmerzen nach dem Gehen sind in den meisten Fällen zwei Seiten derselben Erkrankung. Der Morgenschmerz entsteht, weil die Faszie über Nacht steif wird und sich verkürzt und dann beim Aufstehen plötzlich gedehnt wird. Der Schmerz nach dem Gehen entsteht, weil die Faszie beim Gehen immer wieder belastet wurde und das Gewebe dir zeigt, dass es genug hat.',
-        'Der Unterschied ist wichtig für den Zeitpunkt deiner Übungen. Morgenschmerz spricht am besten auf eine Plantarfaszien-Dehnung vor dem ersten Schritt an. Schmerz nach dem Gehen spricht auf Belastungssteuerung an:',
+        'Der Unterschied ist wichtig für den Zeitpunkt deiner Übungen. Morgenschmerz spricht am besten auf eine [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) vor dem ersten Schritt an. Schmerz nach dem Gehen spricht auf Belastungssteuerung an:',
         {
           list: [
             'Eine Strecke gehen, die der Fuß verkraftet.',
@@ -69,7 +69,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
             'Mit Dehnen und Wadentraining die Belastungsgrenze anheben.',
           ],
         },
-        '[Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Dehnungen am Morgen und Nachtschienen genauer.',
+        '[Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Dehnungen am Morgen und [Nachtschienen](/de/nachtschiene-plantarfasziitis/) genauer.',
         'Wenn du sowohl Morgenschmerz als auch Schmerz nach dem Gehen hast, ist das das typische Muster der Plantarfasziitis. Die Übungen überschneiden sich. Die Dehnung am Morgen und die Wadendehnungen helfen bei beidem. Das Wadentraining erhöht die Belastbarkeit der ganzen Kette, sodass deine tägliche Gehbelastung innerhalb dessen liegt, was das Gewebe verkraftet.',
       ],
       cites: [CITE.guideline],
@@ -165,7 +165,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
           ],
         },
         '**Das ist Belastungssteuerung, keine Schonung.** Völlige Ruhe hilft bei Plantarfasziitis selten. Die Leitlinie empfiehlt, die Aktivität anzupassen, nicht inaktiv zu sein. In stützenden Schuhen auf weicherem Untergrund zu gehen, schont die Faszie mehr als barfuß auf Beton.',
-        'Wenn du auch läufst, gilt dasselbe Prinzip in einem anderen Maßstab. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt Belastungsspitzen und Änderungen beim Trainingsumfang genauer.',
+        'Wenn du auch läufst, gilt dasselbe Prinzip in einem anderen Maßstab.',
       ],
       cites: [CITE.guideline],
     },

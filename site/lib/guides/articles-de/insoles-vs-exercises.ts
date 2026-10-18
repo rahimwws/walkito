@@ -32,7 +32,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       h2: 'Helfen Einlagen bei Plantarfasziitis?',
       keyFact: 'In einer Übersichtsarbeit über 19\u00A0Studien mit 1.660\u00A0Personen linderten Einlagen Fersenschmerzen nur mittelfristig stärker als Schein-Einlagen, und maßgefertigte und fertige Einlagen unterschieden sich zu keinem Zeitpunkt (Whittaker und Kollegen, 2018).',
       paragraphs: [
-        'Ein wenig, für eine Weile. Plantarfasziitis ist eine Reizung der Plantarfaszie, des Gewebebands unter dem Fußgewölbe. Der faire Test vergleicht eine echte Einlage mit einer **Schein-Einlage**: einer flachen, weichen Einlage, die echt aussieht, aber nicht stützt.',
+        'Ein wenig, für eine Weile. [Plantarfasziitis](/de/plantarfasziitis/) ist eine Reizung der Plantarfaszie, des Gewebebands unter dem Fußgewölbe. Der faire Test vergleicht eine echte Einlage mit einer **Schein-Einlage**: einer flachen, weichen Einlage, die echt aussieht, aber nicht stützt.',
         'In einer Studie mit 135\u00A0Personen verbesserten sowohl eine fertige als auch eine maßgefertigte Einlage die Funktion nach drei Monaten um etwa 8\u00A0Punkte auf einer Skala von 0 bis 100 gegenüber einer Schein-Einlage (Landorf und Kollegen, 2006). Der Unterschied beim Schmerz war ähnlich groß, aber statistisch nicht eindeutig. Nach zwölf Monaten unterschied sich keine Gruppe.',
         'Eine systematische Übersichtsarbeit fasste 19\u00A0randomisierte Studien mit 1.660\u00A0Personen zusammen (Whittaker und Kollegen, 2018). Mittelfristig, also etwa im zweiten und dritten Monat, linderten Einlagen den Schmerz stärker als eine Schein-Einlage, mit Belegen mittlerer Qualität. Der Effekt war klein, und die Autoren nannten es „unsicher, ob das eine klinisch bedeutsame Veränderung ist“. Kurzfristig und längerfristig gab es keinen klaren Nutzen.',
         'Die Leitlinie von 2023 zu Fersenschmerzen sieht es genauso: Einlagen **nicht** allein zur kurzfristigen Linderung (Empfehlungsgrad B gegen die Anwendung), aber sie **können** zusätzlich zu anderen Maßnahmen genutzt werden (Empfehlungsgrad C).',
@@ -126,7 +126,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       h2: 'Machen Einlagen die Füße schwächer?',
       paragraphs: [
         '**Möglicherweise ein wenig.** In einer Studie mit 18\u00A0jungen Erwachsenen mit Plattfuß schrumpften drei kleine Muskeln im Fuß nach drei Monaten mit maßgefertigten Einlagen um 9,6 bis 17,4\u00A0% (Protopapas und Perry, 2020). Die Gruppen waren nicht randomisiert und die Studie war klein. Lies das also als Signal, nicht als gesicherte Tatsache.',
-        'Übungen scheinen das auszugleichen. In einer randomisierten Studie mit 28\u00A0Personen mit Plattfuß trugen alle zwei Monate lang Einlagen, und die Hälfte machte zusätzlich die Kurzer-Fuß-Übung (Jung und Kollegen, 2011). Der Muskel entlang des inneren Gewölbes wuchs in beiden Gruppen, mit der Übung aber stärker, und auch die Kraft der Großzehe nahm stärker zu. Wenn du den ganzen Tag Einlagen trägst, halt den Fuß mit ein paar Minuten [Übungen zum Kräftigen der Füße](/de/fuss-kraeftigen-uebungen/) in Arbeit.',
+        'Übungen scheinen das auszugleichen. In einer randomisierten Studie mit 28\u00A0Personen mit Plattfuß trugen alle zwei Monate lang Einlagen, und die Hälfte machte zusätzlich die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) (Jung und Kollegen, 2011). Der Muskel entlang des inneren Gewölbes wuchs in beiden Gruppen, mit der Übung aber stärker, und auch die Kraft der Großzehe nahm stärker zu. Wenn du den ganzen Tag Einlagen trägst, halt den Fuß mit ein paar Minuten [Übungen zum Kräftigen der Füße](/de/fuss-kraeftigen-uebungen/) in Arbeit.',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
     },
@@ -210,7 +210,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
   },
   program: {
     h2: 'Die Übungen als Plan umsetzen',
-    text: 'Eine Einlage legst du einmal in den Schuh. Übungen wirken nur, wenn du dranbleibst. Walkito baut einen Plan, Woche für Woche, bei Fersenschmerzen oder Plattfuß. Er beginnt mit Dehnungen wie der Plantarfaszien-Dehnung (2-mal 30\u00A0Sekunden halten) und Gewölbearbeit wie dem Kurzen Fuß (3\u00A0Sätze à 8 mit 5\u00A0Sekunden Halten) und setzt deine Hauptübung eine Stufe höher, wenn du sie zweimal hintereinander als leicht bewertest und der Morgenschmerz stabil bleibt.',
+    text: 'Eine Einlage legst du einmal in den Schuh. Übungen wirken nur, wenn du dranbleibst. Walkito baut einen Plan, Woche für Woche, bei Fersenschmerzen oder Plattfuß. Er beginnt mit Dehnungen wie der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) (2-mal 30\u00A0Sekunden halten) und Gewölbearbeit wie dem Kurzen Fuß (3\u00A0Sätze à 8 mit 5\u00A0Sekunden Halten) und setzt deine Hauptübung eine Stufe höher, wenn du sie zweimal hintereinander als leicht bewertest und der Morgenschmerz stabil bleibt.',
     more: [
       'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose, ersetzt keinen Arztbesuch und lässt sich gut mit einer Einlage kombinieren.',
     ],

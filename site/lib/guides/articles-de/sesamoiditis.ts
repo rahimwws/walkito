@@ -33,7 +33,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Was sind die Sesambeine, und warum tun sie weh?',
       paragraphs: [
         'Die zwei Sesambeine liegen unter dem Kopf des ersten Mittelfußknochens, des langen Knochens hinter der großen Zehe. Das innere (mediale) Sesambein, das näher zur Mitte des Fußes liegt, wird häufiger verletzt. Zusammen helfen sie der großen Zehe, sich vom Boden abzudrücken, und fangen in der Abdruckphase beim Gehen Kraft ab.',
-        'Eine Sesamoiditis entsteht, wenn sich diese Knochen oder das umliegende Gewebe entzünden. Aktivitäten, die den Vorfuß wiederholt belasten, etwa Laufen, Tanzen oder Springen, sind häufige Auslöser. Ebenso eine plötzliche Steigerung des Trainingsumfangs. Menschen mit Hohlfuß oder einem vorstehenden ersten Mittelfußköpfchen sind anfälliger, weil mehr Druck auf diese Stelle fällt.',
+        'Eine Sesamoiditis entsteht, wenn sich diese Knochen oder das umliegende Gewebe entzünden. Aktivitäten, die den Vorfuß wiederholt belasten, etwa Laufen, Tanzen oder Springen, sind häufige Auslöser. Ebenso eine plötzliche Steigerung des Trainingsumfangs. Menschen mit [Hohlfuß](/de/hohlfuss-uebungen/) oder einem vorstehenden ersten Mittelfußköpfchen sind anfälliger, weil mehr Druck auf diese Stelle fällt.',
         'Der Begriff Sesamoiditis wird in der Praxis weit gefasst und hat keine einheitliche, strenge Definition. Er kann eine Entzündung der Knochen selbst, des umliegenden Weichgewebes oder von beidem beschreiben. Eine systematische Übersichtsarbeit von 2025 hielt fest, dass es noch keine einheitlichen Leitlinien für die konservative Behandlung gibt.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -55,7 +55,7 @@ export const SESAMOIDITIS_DE: Guide = {
         'Die systematische Übersichtsarbeit von Biz und Kollegen von 2025 fasste Einzeldaten aus 11\u00A0Studien mit 59\u00A0Patienten zusammen. Die häufigsten Behandlungen waren:',
         {
           list: [
-            'Einlagen.',
+            '[Einlagen](/de/einlagen-oder-uebungen/).',
             'Angepasste Aktivität.',
             'Kortisonspritzen.',
           ],
@@ -96,7 +96,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Welche Rolle spielen Übungen?',
       paragraphs: [
         'Die ehrliche Antwort: Übungen spielen bei der Behandlung der Sesamoiditis selbst eine begrenzte Rolle. Anders als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wo Belastungsprogramme gut durch Studien gestützt sind, gibt es keine Übungsstudien zur Sesamoiditis. Die systematische Übersichtsarbeit von 2025 fand keine Studie, die ein bestimmtes Übungsprotokoll getestet hat.',
-        'Wobei Übungen helfen können, ist das Drumherum. Eine verkürzte Wade verlagert beim Gehen Gewicht auf den Vorfuß. Den Gastrocnemius und den Soleus zu dehnen, kann diese Last nach vorn verringern. Schwache innere Fußmuskeln können ebenfalls zu einer ungleichmäßigen Druckverteilung im Vorfuß beitragen. Zehenspreizen und die Kurzer-Fuß-Übung können helfen, die Last gleichmäßiger auf die Mittelfußköpfchen zu verteilen, auch wenn das nicht speziell bei Sesamoiditis getestet wurde.',
+        'Wobei Übungen helfen können, ist das Drumherum. Eine [verkürzte Wade](/de/verspannte-waden/) verlagert beim Gehen Gewicht auf den Vorfuß. Den Gastrocnemius und den Soleus zu dehnen, kann diese Last nach vorn verringern. Schwache innere Fußmuskeln können ebenfalls zu einer ungleichmäßigen Druckverteilung im Vorfuß beitragen. Zehenspreizen und die Kurzer-Fuß-Übung können helfen, die Last gleichmäßiger auf die Mittelfußköpfchen zu verteilen, auch wenn das nicht speziell bei Sesamoiditis getestet wurde.',
         'Wenn du dich von einer Sesamoiditis erholst und in der Ruhephase Kraft in den Zehen oder Beweglichkeit in der Wade verloren hast, können sanfte Übungen für den [Fußballen](/de/metatarsalgie-vorfussschmerzen/) Teil eines Plans für die Rückkehr zur Aktivität sein. Aber **Entlastung und angepasste Aktivität sind die wichtigsten Werkzeuge, nicht Übungen.**',
       ],
     },
@@ -161,7 +161,7 @@ export const SESAMOIDITIS_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Die Sesamoiditis wird vor allem mit Entlastung und Schuhen behandelt, nicht mit einem Übungsprogramm. Walkito ist für Beschwerden wie Plantarfasziitis und Plattfüße gebaut, bei denen strukturierte Belastungsprogramme durch Studien gestützt sind. Wenn deine Sesamoiditis abgeklungen ist und du als Teil der Rückkehr zur Aktivität wieder Kraft in Fuß und Wade aufbauen willst, können die Übungen für die inneren Fußmuskeln und die Wadendehnungen der App eine sinnvolle Ergänzung sein.',
+      'Die Sesamoiditis wird vor allem mit Entlastung und Schuhen behandelt, nicht mit einem Übungsprogramm. Walkito ist für Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis/) und [Plattfüße](/de/plattfuss/) gebaut, bei denen strukturierte Belastungsprogramme durch Studien gestützt sind. Wenn deine Sesamoiditis abgeklungen ist und du als Teil der Rückkehr zur Aktivität wieder Kraft in Fuß und Wade aufbauen willst, können die Übungen für die inneren Fußmuskeln und die Wadendehnungen der App eine sinnvolle Ergänzung sein.',
     more: [
       'Wenn der Vorfußschmerz breiter ist und das zweite oder dritte Mittelfußköpfchen betrifft, findest du auf der Seite zu [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) Übungen mit mehr Belegen.',
     ],

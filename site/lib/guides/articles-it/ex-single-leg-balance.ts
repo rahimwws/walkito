@@ -97,7 +97,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
           ],
         },
         'Un deficit in un punto qualsiasi di questa catena costringe il piede a compensare.',
-        'Per la fascite plantare e il piede piatto, l’allenamento dell’equilibrio compare nei programmi di esercizi insieme ad allungamenti e rinforzo, perché allena tutta la catena in una volta. Uno studio del 2023 su 52\u00A0persone con piede piatto flessibile ha trovato che un programma che univa esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca, allungamenti ed equilibrio cambiava la forma dell’arco più di un gruppo di controllo. L’equilibrio non era isolato in quello studio, ma faceva parte del programma che ha funzionato.',
+        'Per la [fascite plantare](/it/fascite-plantare/) e il [piede piatto](/it/piede-piatto/), l’allenamento dell’equilibrio compare nei programmi di esercizi insieme ad allungamenti e rinforzo, perché allena tutta la catena in una volta. Uno studio del 2023 su 52\u00A0persone con piede piatto flessibile ha trovato che un programma che univa esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca, allungamenti ed equilibrio cambiava la forma dell’arco più di un gruppo di controllo. L’equilibrio non era isolato in quello studio, ma faceva parte del programma che ha funzionato.',
         'Per le distorsioni alla caviglia in particolare, una meta-analisi del 2018 su 8\u00A0studi e 3.577\u00A0atleti ha trovato che l’allenamento dell’equilibrio riduceva del 46% il rischio di distorsione alla caviglia rispetto a nessun intervento. È il risultato singolo più forte a favore dell’equilibrio in un programma per il piede.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],

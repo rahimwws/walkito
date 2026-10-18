@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
             'Piedi più piatti e più pronati (pronato vuol dire che il piede cede verso l’interno).',
             'Caviglie e articolazioni dell’alluce più rigide.',
             'Muscoli delle dita più deboli.',
-            'Più alluce valgo.',
+            'Più [alluce valgo](/it/alluce-valgo-esercizi/).',
             'Meno sensibilità sotto la pianta.',
           ],
         },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
       h2: 'Esercizio o plantari possono impedire al piede piatto di peggiorare?',
       keyFact: 'Una revisione del 2018 ha trovato solo tre studi, 93\u00A0persone in tutto, sull’esercizio per la disfunzione del tendine tibiale posteriore, con effetti moderati per il rinforzo in discesa lenta (eccentrico) aggiunto a ortesi e allungamenti (Ross e colleghi, 2018).',
       paragraphs: [
-        'Nessuno studio ha verificato se esercizio o plantari impediscano al piede piatto di cambiare con l’età. Ci sono prove su due domande vicine, e sono poche.',
+        'Nessuno studio ha verificato se esercizio o [plantari](/it/plantari-o-esercizi/) impediscano al piede piatto di cambiare con l’età. Ci sono prove su due domande vicine, e sono poche.',
         'Per il problema al tendine che sta dietro il cedimento dell’arco da adulti, una revisione del 2018 ha trovato tre studi con 93\u00A0persone in tutto. Il rinforzo in discesa lenta (eccentrico) aggiunto alle ortesi (plantari che sostengono l’arco) e agli allungamenti riduceva dolore e disabilità un po’ di più, in misura moderata, rispetto alle sole ortesi con allungamenti.',
         'In uno studio, 36\u00A0adulti negli stadi iniziali hanno seguito il loro programma per tre mesi. Tutti i gruppi sono migliorati, e il gruppo del rinforzo eccentrico è migliorato di più. In un altro studio su 39\u00A0persone, aggiungere il rinforzo ha fatto solo una piccola differenza. Gli autori della revisione hanno definito la ricerca scarsa.',
         'Per il piede piatto flessibile di una vita, uno studio su 52\u00A0persone ha trovato che un breve programma di esercizi per piede, caviglia e anca cambiava la forma dell’arco più che in un gruppo di controllo. Ha misurato la forma, non il dolore, e per un periodo breve. Non si sa se questo tipo di allenamento rallenti il cambiamento legato all’età nel corso dei decenni.',

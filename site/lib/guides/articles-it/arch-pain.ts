@@ -76,7 +76,7 @@ export const ARCH_PAIN_IT: Guide = {
       keyFact: 'Nella linea guida del 2023 sul dolore al tallone, l’allungamento della fascia plantare e del polpaccio ottiene il grado di evidenza più alto, A, mentre il lavoro di forza ha un grado più basso, B (Koc e colleghi, 2023).',
       paragraphs: [
         'Gli esercizi qui sotto lavorano sull’arco stesso e sui muscoli del polpaccio che tirano su di esso. Funzionano meglio quando il dolore all’arco è legato a fascite plantare, piede piatto o sovraccarico generico. Per la disfunzione del tibiale posteriore o il dolore all’arco legato ai nervi, il piano di esercizi va guidato da un professionista sanitario. Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno.',
-        'Queste sono le dosi di partenza di Walkito, non quelle dei protocolli di ricerca. La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio una A e al lavoro di forza una B. L’esercizio del piede corto e il massaggio con la pallina hanno prove più deboli da soli. [Come sono scritte queste guide](/it/chi-siamo/).',
+        'Queste sono le dosi di partenza di Walkito, non quelle dei protocolli di ricerca. La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio una A e al lavoro di forza una B. L’[esercizio del piede corto](/it/esercizi/piede-corto/) e il massaggio con la pallina hanno prove più deboli da soli. [Come sono scritte queste guide](/it/chi-siamo/).',
       ],
       exercises: [
         {
@@ -182,7 +182,7 @@ export const ARCH_PAIN_IT: Guide = {
     {
       h2: 'E plantari e scarpe per il dolore all’arco?',
       paragraphs: [
-        'La linea guida del 2023 sul dolore al tallone dà un grado B a sfavore dei plantari usati da soli per il dolore a breve termine della fascite plantare. I plantari insieme ad altre cure, come lo stretching, ottengono una C a favore. Le scarpe che sostengono il piede sono consigliate spesso e possono ridurre il fastidio, ma nessuno studio ampio le ha mostrate migliori di stretching e lavoro di forza.',
+        'La linea guida del 2023 sul dolore al tallone dà un grado B a sfavore dei [plantari](/it/plantari-o-esercizi/) usati da soli per il dolore a breve termine della fascite plantare. I plantari insieme ad altre cure, come lo stretching, ottengono una C a favore. Le scarpe che sostengono il piede sono consigliate spesso e possono ridurre il fastidio, ma nessuno studio ampio le ha mostrate migliori di stretching e lavoro di forza.',
         'Per il piede piatto, un supporto per l’arco interno può ridurre il crollo dell’arco stando in piedi e camminando, e lasciare meno lavoro al tendine tibiale posteriore e alla fascia plantare. Per il piede cavo, un plantare ammortizzato assorbe l’urto che l’arco rigido non assorbe. In uno studio del 2006 su 154\u00A0persone con dolore da piede cavo, i plantari su misura hanno migliorato dolore e funzionalità più di una soletta finta a tre mesi (Burns e colleghi, 2006).',
         '**Scarpe e solette aiutano a gestire i sintomi mentre l’esercizio costruisce la capacità di cui il piede ha bisogno.** Non si sostituiscono a vicenda.',
       ],
@@ -197,7 +197,7 @@ export const ARCH_PAIN_IT: Guide = {
     },
     {
       q: 'Perché mi fa male l’arco del piede quando cammino?',
-      a: 'Il dolore all’arco quando cammini di solito viene da poche fonti: fascite plantare, piede piatto che lascia crollare l’arco sotto carico, disfunzione del tendine tibiale posteriore, un polpaccio rigido che scarica lo sforzo sull’arco, o semplicemente camminare più di quanto il piede sia allenato a fare. Il tipo di dolore, soprattutto se è peggio al mattino o dopo l’attività, aiuta a capire quale.',
+      a: 'Il dolore all’arco quando cammini di solito viene da poche fonti: fascite plantare, piede piatto che lascia crollare l’arco sotto carico, disfunzione del tendine tibiale posteriore, un [polpaccio rigido](/it/polpacci-rigidi/) che scarica lo sforzo sull’arco, o semplicemente camminare più di quanto il piede sia allenato a fare. Il tipo di dolore, soprattutto se è peggio al mattino o dopo l’attività, aiuta a capire quale.',
     },
     {
       q: 'Il piede piatto può causare dolore all’arco?',

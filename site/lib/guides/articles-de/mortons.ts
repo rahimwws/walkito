@@ -183,7 +183,7 @@ export const MORTONS_DE: Guide = {
     },
     {
       q: 'Helfen Übungen beim Morton-Neurom?',
-      a: 'Keine Studie hat Übungen beim Morton-Neurom getestet. Übungen wirken nicht direkt auf den Nerv. Zehenspreizen und die Kräftigung der inneren Fußmuskeln können helfen, die Last im Vorfuß gleichmäßiger zu verteilen, und Wadendehnung senkt die Überlastung des Vorfußes durch eine verkürzte Wade. Das sind Maßnahmen für den Komfort, keine Maßnahmen speziell gegen das Neurom. Andere Schuhe und Pelotten sollten zuerst kommen.',
+      a: 'Keine Studie hat Übungen beim Morton-Neurom getestet. Übungen wirken nicht direkt auf den Nerv. Zehenspreizen und die Kräftigung der inneren Fußmuskeln können helfen, die Last im Vorfuß gleichmäßiger zu verteilen, und Wadendehnung senkt die Überlastung des Vorfußes durch eine [verkürzte Wade](/de/verspannte-waden/). Das sind Maßnahmen für den Komfort, keine Maßnahmen speziell gegen das Neurom. Andere Schuhe und Pelotten sollten zuerst kommen.',
     },
     {
       q: 'Geht ein Morton-Neurom von allein weg?',
@@ -201,7 +201,7 @@ export const MORTONS_DE: Guide = {
     },
     {
       q: 'Was löst ein Morton-Neurom aus?',
-      a: 'Ein Morton-Neurom wird durch alles ausgelöst, was den Nerv zwischen den Mittelfußknochen zusammendrückt. Häufige Auslöser sind schmale oder spitze Schuhe, hohe Absätze, Sport mit vielen Stößen wie Laufen und Fußformen wie Plattfüße oder Hohlfüße, die mehr Druck nach vorn verlagern. Es ist bei Frauen und im mittleren Alter häufiger.',
+      a: 'Ein Morton-Neurom wird durch alles ausgelöst, was den Nerv zwischen den Mittelfußknochen zusammendrückt. Häufige Auslöser sind schmale oder spitze Schuhe, hohe Absätze, Sport mit vielen Stößen wie Laufen und Fußformen wie [Plattfüße](/de/plattfuss/) oder [Hohlfüße](/de/hohlfuss-uebungen/), die mehr Druck nach vorn verlagern. Es ist bei Frauen und im mittleren Alter häufiger.',
     },
     {
       q: 'Was ist der Mulder-Test beim Morton-Neurom?',
@@ -227,7 +227,7 @@ export const MORTONS_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito ist für Plantarfasziitis und Plattfüße gebaut, nicht für das Morton-Neurom. Aber die Vorfußübungen in der App, darunter Zehenspreizen und Wadendehnung, setzen an derselben Lastverteilung im Vorfuß an, die zu den Beschwerden eines Neuroms beiträgt. Wenn du beim Check-in den Fußballen als schmerzend markierst, nimmt die App Zehenspreizen und die Plantarfaszien-Dehnung in deine Einheit auf.',
+    text: 'Walkito ist für [Plantarfasziitis](/de/plantarfasziitis/) und Plattfüße gebaut, nicht für das Morton-Neurom. Aber die Vorfußübungen in der App, darunter Zehenspreizen und Wadendehnung, setzen an derselben Lastverteilung im Vorfuß an, die zu den Beschwerden eines Neuroms beiträgt. Wenn du beim Check-in den Fußballen als schmerzend markierst, nimmt die App Zehenspreizen und die Plantarfaszien-Dehnung in deine Einheit auf.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito stellt keine Diagnose beim Morton-Neurom. Die Übungen darin sind Maßnahmen für Komfort und Lastverteilung. Breitere Schuhe, Mittelfußpelotten und eine fachliche Einschätzung sollten zuerst kommen.',
     ],

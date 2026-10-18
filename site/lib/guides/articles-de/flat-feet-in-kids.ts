@@ -186,7 +186,7 @@ export const FLAT_FEET_KIDS_DE: Guide = {
       h2: 'Wird mein Kind als Erwachsener Fußprobleme haben?',
       paragraphs: [
         '**Die meisten Kinder mit flexiblen, schmerzfreien Plattfüßen werden Erwachsene ohne Fußprobleme.** Das Cochrane-Review von 2022 ging so weit zu sagen, dass das Wissen darüber, wie sich Kinderfüße entwickeln, die meisten Sorgen um Plattfüße ausräumt und dass Forschungsgeld besser in Kinder mit echten Fußerkrankungen fließen sollte. Die Erhebung von 1987 mit 441\u00A0Menschen fand die Plattfüße von Erwachsenen weiterhin im Normalbereich.',
-        'Hier gibt es eine ehrliche Lücke. Keine Studie hat eine große Gruppe schmerzfreier Kinder mit Plattfüßen bis ins mittlere Alter begleitet, um zu sehen, wer später Schmerzen bekommt. Manche Erwachsene mit Plattfüßen bekommen tatsächlich Schmerzen im Gewölbe, an der Ferse oder im Knie, und der [Ratgeber zum Plattfuß](/de/plattfuss/) zeigt, was ihnen hilft.',
+        'Hier gibt es eine ehrliche Lücke. Keine Studie hat eine große Gruppe schmerzfreier Kinder mit Plattfüßen bis ins mittlere Alter begleitet, um zu sehen, wer später Schmerzen bekommt. Manche Erwachsene mit Plattfüßen bekommen tatsächlich Schmerzen im Gewölbe, an der Ferse oder [im Knie](/de/plattfuss-knieschmerzen/), und der [Ratgeber zum Plattfuß](/de/plattfuss/) zeigt, was ihnen hilft.',
         'Viele Eltern, die danach suchen, haben selbst Plattfüße. Wenn deine eigenen Füße am Ende des Tages schmerzen, ist das eine andere Frage als die nach deinem Kind. Walkito ist eine Übungs-App für Erwachsene mit Schmerzen an Ferse, Gewölbe und Bein, und der Plattfuß-Plan ist für Füße von Erwachsenen gemacht, nicht für Kinderfüße.',
       ],
       cites: [CITE.evansCochrane2022, CITE.staheliArch],

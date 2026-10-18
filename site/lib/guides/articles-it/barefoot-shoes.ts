@@ -12,7 +12,7 @@ export const BAREFOOT_IT: Guide = {
     'Le scarpe barefoot fanno bene ai piedi? Cosa dicono gli studi su forza del piede, rischi del passaggio, fascite plantare, piede piatto e chi deve evitarle.',
   h1: 'Le scarpe barefoot fanno bene ai piedi? Forza, rischi e dolore al piede',
   lede:
-    'Le scarpe barefoot, dette anche scarpe minimaliste, possono rendere più forti i muscoli del piede. Negli studi, gli adulti che ci camminavano hanno guadagnato forza nel piede in pochi mesi. Ma passarci troppo in fretta aumenta il rischio di stress osseo e dolore, nessuno studio mostra che da sole allevino la fascite plantare, e chi ha il diabete o i piedi insensibili ha bisogno di scarpe protettive.',
+    'Le scarpe barefoot, dette anche scarpe minimaliste, possono rendere più forti i muscoli del piede. Negli studi, gli adulti che ci camminavano hanno guadagnato forza nel piede in pochi mesi. Ma passarci troppo in fretta aumenta il rischio di stress osseo e dolore, nessuno studio mostra che da sole allevino la [fascite plantare](/it/fascite-plantare/), e chi ha il diabete o i piedi insensibili ha bisogno di scarpe protettive.',
   takeaways: [
     'In uno studio del 2019 su 57\u00A0runner, camminare con scarpe minimaliste per circa due mesi ha reso i muscoli del piede più grandi e più forti, quanto fare esercizi per il piede (Ridge e colleghi).',
     'Gli adulti che hanno portato scarpe minimaliste nella vita di tutti i giorni per sei mesi hanno guadagnato in media il 57,4% di forza delle dita, in uno studio controllato su 22\u00A0persone che hanno cambiato scarpe (Curtis e colleghi, 2021).',
@@ -73,7 +73,7 @@ export const BAREFOOT_IT: Guide = {
             'Nello studio di sei mesi di Fuller e colleghi su 61\u00A0runner, il dolore durante la corsa era più alto con le scarpe minimaliste, in modo netto sopra circa 35\u00A0km a settimana, e il rischio di infortunio saliva con il peso corporeo. La differenza complessiva negli infortuni (16 su 31 contro 11 su 30) poteva essere dovuta al caso.',
           ],
         },
-        'Questi erano runner. Camminare carica il piede molto meno, ed è uno dei motivi per cui gli studi sulla forza hanno usato la camminata. Se corri e hai [dolore al tallone](/heel-pain-runners/) (in inglese), un cambio improvviso di scarpe è un cambio di carico in più di cui il tuo piede non ha bisogno.',
+        'Questi erano runner. Camminare carica il piede molto meno, ed è uno dei motivi per cui gli studi sulla forza hanno usato la camminata. Se corri e hai dolore al tallone, un cambio improvviso di scarpe è un cambio di carico in più di cui il tuo piede non ha bisogno.',
       ],
       sourceNote:
         'Ridge 2013: edema osseo valutato da 0 a 4 alla risonanza magnetica, P = 0,009 per la differenza tra i gruppi. Fuller 2017: hazard ratio 1,64 (IC al 95%: da 0,63 a 4,27, P = 0,31); per i runner di 85,7\u00A0kg l’hazard ratio era 2,00 (IC al 95%: da 1,10 a 3,66). Ryan 2014: 99\u00A0runner analizzati, 23\u00A0infortuni.',

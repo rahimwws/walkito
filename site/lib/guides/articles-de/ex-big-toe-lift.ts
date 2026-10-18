@@ -119,7 +119,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
     {
       q: 'Hilft Großzehenheben bei Plantarfasziitis?',
       cites: [CITE.guideline],
-      a: 'Das Großzehenheben gehört nicht zur wichtigsten Leitlinie bei Plantarfasziitis, die sich auf Dehnen und Fersenheben mit Last konzentriert. Als Teil eines umfassenderen Programms kann es helfen, indem es die Kontrolle über den Windlass-Mechanismus verbessert. Die wichtigsten Übungen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+      a: 'Das Großzehenheben gehört nicht zur wichtigsten Leitlinie bei [Plantarfasziitis](/de/plantarfasziitis/), die sich auf Dehnen und Fersenheben mit Last konzentriert. Als Teil eines umfassenderen Programms kann es helfen, indem es die Kontrolle über den Windlass-Mechanismus verbessert. Die wichtigsten Übungen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
     },
     {
       q: 'Sollte ich Großzehenheben oder die Kurzer-Fuß-Übung machen?',

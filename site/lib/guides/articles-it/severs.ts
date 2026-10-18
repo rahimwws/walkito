@@ -54,7 +54,7 @@ export const SEVERS_IT: Guide = {
         {
           list: [
             'Molta attività di corsa e salti.',
-            'Polpacci rigidi.',
+            '[Polpacci rigidi](/it/polpacci-rigidi/).',
             'Una caviglia poco flessibile.',
             'Un IMC alto.',
             'Superfici di gioco dure.',
@@ -68,7 +68,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Che sensazione dà la malattia di Sever?',
       paragraphs: [
         'Il sintomo principale è un dolore nella parte posteriore o ai lati del tallone, di solito durante o dopo l’attività e soprattutto dopo corse o salti. Il dolore viene spesso descritto come un livido. Raramente c’è gonfiore o un livido visibile. **Premere o stringere i lati del tallone di solito riproduce il dolore.** Questo test della compressione è il controllo clinico standard.',
-        'A differenza della fascite plantare negli adulti, che è peggiore ai primi passi dopo il riposo, il dolore della malattia di Sever tende a peggiorare con l’attività e non migliora camminando. Alcuni bambini iniziano a zoppicare o a camminare sulle punte per non caricare il peso sul tallone.',
+        'A differenza della [fascite plantare](/it/fascite-plantare/) negli adulti, che è peggiore ai primi passi dopo il riposo, il dolore della malattia di Sever tende a peggiorare con l’attività e non migliora camminando. Alcuni bambini iniziano a zoppicare o a camminare sulle punte per non caricare il peso sul tallone.',
         'Il dolore può andare da lieve, che si nota solo durante lo sport, a così forte da impedire del tutto al bambino di giocare.',
       ],
     },
@@ -76,7 +76,7 @@ export const SEVERS_IT: Guide = {
       h2: 'Cosa aiuta la malattia di Sever? Le prove',
       keyFact: 'In uno studio su 101\u00A0bambini, tutti e tre gli approcci hanno migliorato il dolore, e il gruppo con il rialzo per il tallone era più soddisfatto a sei settimane, anche se la differenza è sparita a tre mesi (Wiegerinck e colleghi, 2016).',
       paragraphs: [
-        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o solette per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e **nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.**',
+        'Gli studi sulla malattia di Sever sono pochi ma in crescita. Le tre opzioni principali studiate sono la gestione del carico (ridurre l’attività che fa male), coppette o [solette](/it/plantari-o-esercizi/) per il tallone, ed esercizi di allungamento o rinforzo. Tutte e tre hanno mostrato un beneficio, e **nessuna si è dimostrata chiaramente migliore delle altre all’ultimo controllo.**',
         'In uno studio del 2016 su 101\u00A0bambini tra 8 e 15\u00A0anni, Wiegerinck e colleghi hanno confrontato tre approcci:',
         {
           list: [

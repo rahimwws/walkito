@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
             'Des pieds plus plats et en plus forte pronation (la pronation veut dire que le pied s’affaisse vers l’intérieur).',
             'Des chevilles et des articulations du gros orteil plus raides.',
             'Des muscles des orteils plus faibles.',
-            'Plus d’hallux valgus.',
+            'Plus d’[hallux valgus](/fr/hallux-valgus-exercices/).',
             'Moins de sensibilité sous la plante.',
           ],
         },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
       h2: 'L’exercice ou les semelles peuvent-ils empêcher les pieds plats de s’aggraver\u00A0?',
       keyFact: 'Une revue de 2018 n’a constaté que trois essais, 93\u00A0personnes au total, testant l’exercice contre la dysfonction du tendon tibial postérieur, avec des effets modérés pour un renforcement en descente lente (excentrique) ajouté aux orthèses et aux étirements (Ross et coll., 2018).',
       paragraphs: [
-        'Aucun essai n’a vérifié si l’exercice ou les semelles empêchent les pieds plats de changer avec l’âge. Il existe des preuves sur deux questions voisines, et elles sont minces.',
+        'Aucun essai n’a vérifié si l’exercice ou les [semelles](/fr/semelles-ou-exercices/) empêchent les pieds plats de changer avec l’âge. Il existe des preuves sur deux questions voisines, et elles sont minces.',
         'Pour le problème de tendon à l’origine de l’affaissement de la voûte chez l’adulte, une revue de 2018 a trouvé trois essais portant sur 93\u00A0personnes au total. Un renforcement en descente lente (excentrique) ajouté aux orthèses (semelles qui soutiennent la voûte) et aux étirements a réduit la douleur et l’incapacité davantage que les orthèses et les étirements seuls, avec un effet d’ampleur modérée.',
         'Dans un essai, 36\u00A0adultes à un stade précoce ont suivi leur programme pendant trois mois. Tous les groupes se sont améliorés, et le groupe du renforcement excentrique le plus. Dans un autre essai sur 39\u00A0personnes, ajouter du renforcement n’a fait qu’une petite différence. Les auteurs de la revue ont jugé la recherche mince.',
         'Pour les pieds plats souples présents depuis toujours, un essai sur 52\u00A0personnes a trouvé qu’un court programme d’exercices du pied, de la cheville et de la hanche modifiait la forme de la voûte davantage que dans un groupe témoin. Il a mesuré la forme, pas la douleur, et sur une courte période. On ne sait pas si ce type d’entraînement ralentit le changement lié à l’âge sur des décennies.',

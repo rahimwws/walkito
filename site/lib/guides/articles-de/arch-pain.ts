@@ -74,7 +74,7 @@ export const ARCH_PAIN_DE: Guide = {
       keyFact: 'In der Leitlinie von 2023 zu Fersenschmerzen bekommt das Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad A Krafttraining eine Stufe darunter, B (Koc und Kollegen, 2023).',
       paragraphs: [
         'Die Übungen unten zielen auf das Gewölbe selbst und auf die Wadenmuskeln, die daran ziehen. Sie passen am besten, wenn der Schmerz im Gewölbe mit Plantarfasziitis, Plattfuß oder allgemeiner Überlastung zusammenhängt. Bei Tibialis-posterior-Insuffizienz oder nervenbedingten Schmerzen im Gewölbe sollte eine Ärztin oder ein Arzt den Übungsplan bestimmen. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.',
-        'Das sind die Startdosen von Walkito, keine Dosen aus Studienprotokollen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A und Krafttraining mit B. Für den kurzen Fuß und das Fußrollen allein sind die Belege dünner. [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
+        'Das sind die Startdosen von Walkito, keine Dosen aus Studienprotokollen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A und Krafttraining mit B. Für den [kurzen Fuß](/de/uebungen/kurzer-fuss/) und das Fußrollen allein sind die Belege dünner. [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
       ],
       exercises: [
         {
@@ -180,7 +180,7 @@ export const ARCH_PAIN_DE: Guide = {
     {
       h2: 'Und Einlagen und Schuhe bei Schmerzen im Fußgewölbe?',
       paragraphs: [
-        'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen als alleinige Maßnahme bei kurzfristigen Schmerzen durch Plantarfasziitis mit Empfehlungsgrad B gegen die Anwendung. Einlagen in Kombination mit anderer Behandlung, etwa Dehnen, bekommen Grad C dafür. Stützende Schuhe werden häufig empfohlen und können Beschwerden verringern, aber keine große Studie hat gezeigt, dass sie besser sind als Dehnen und Krafttraining.',
+        'Die Leitlinie von 2023 zu Fersenschmerzen bewertet [Einlagen](/de/einlagen-oder-uebungen/) als alleinige Maßnahme bei kurzfristigen Schmerzen durch Plantarfasziitis mit Empfehlungsgrad B gegen die Anwendung. Einlagen in Kombination mit anderer Behandlung, etwa Dehnen, bekommen Grad C dafür. Stützende Schuhe werden häufig empfohlen und können Beschwerden verringern, aber keine große Studie hat gezeigt, dass sie besser sind als Dehnen und Krafttraining.',
         'Bei Plattfuß kann eine Gewölbestütze an der Innenseite das Absinken des Gewölbes beim Stehen und Gehen verringern, sodass Tibialis-posterior-Sehne und Plantarfaszie weniger Arbeit haben. Bei Hohlfuß fängt eine gedämpfte Einlage die Stöße ab, die das steife Gewölbe nicht abfängt. In einer Studie von 2006 mit 154\u00A0Menschen mit Fußschmerzen durch Hohlfuß verbesserten maßgefertigte Einlagen Schmerz und Funktion nach drei Monaten stärker als eine Schein-Einlage (Burns und Kollegen, 2006).',
         '**Schuhe und Einlagen helfen, die Beschwerden in den Griff zu bekommen, während Übungen die Belastbarkeit aufbauen, die der Fuß braucht.** Das eine ersetzt nicht das andere.',
       ],
@@ -195,7 +195,7 @@ export const ARCH_PAIN_DE: Guide = {
     },
     {
       q: 'Warum tut mein Fußgewölbe beim Gehen weh?',
-      a: 'Schmerzen im Gewölbe beim Gehen kommen meist von einer von wenigen Quellen: Plantarfasziitis, ein Plattfuß, bei dem das Gewölbe unter Last absinkt, Tibialis-posterior-Insuffizienz, eine verkürzte Wade, die Belastung auf das Gewölbe überträgt, oder einfach mehr Gehen, als dein Fuß gewohnt ist. Das Schmerzmuster, vor allem ob es morgens oder nach Aktivität am schlimmsten ist, hilft, die Ursache einzugrenzen.',
+      a: 'Schmerzen im Gewölbe beim Gehen kommen meist von einer von wenigen Quellen: Plantarfasziitis, ein Plattfuß, bei dem das Gewölbe unter Last absinkt, Tibialis-posterior-Insuffizienz, eine [verkürzte Wade](/de/verspannte-waden/), die Belastung auf das Gewölbe überträgt, oder einfach mehr Gehen, als dein Fuß gewohnt ist. Das Schmerzmuster, vor allem ob es morgens oder nach Aktivität am schlimmsten ist, hilft, die Ursache einzugrenzen.',
     },
     {
       q: 'Kann ein Plattfuß Schmerzen im Fußgewölbe verursachen?',

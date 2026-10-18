@@ -47,7 +47,7 @@ export const HAGLUNDS_DE: Guide = {
       h2: 'Wie hängt die Haglundferse mit der insertionalen Achillessehnen-Tendinopathie zusammen?',
       paragraphs: [
         'Haglundferse und insertionale Achillessehnen-Tendinopathie treten oft zusammen auf, **sind aber nicht dasselbe.** Die insertionale Tendinopathie ist Schmerz an der Stelle, wo die Achillessehne am Fersenbein ansetzt, meist durch Überlastung. Die Haglundferse ist eine Form des Knochens. Der Höcker kann die Sehne von hinten reizen, und der Sehnenansatz kann durch denselben Druck betroffen sein, der auch den Schleimbeutel entzündet.',
-        'Der praktische Zusammenhang: Wenn du eine Haglundferse und Schmerzen hinten an der Ferse hast, kann der Schmerz vom Schleimbeutel, vom Sehnenansatz oder von beidem kommen. Eine Ärztin oder ein Arzt kann das unterscheiden, indem sie prüft, wo der Druckschmerz am stärksten ist und ob Dehnen oder Belasten den Schmerz auslöst.',
+        'Der praktische Zusammenhang: Wenn du eine Haglundferse und Schmerzen hinten an der Ferse hast, kann der Schmerz vom Schleimbeutel, vom Sehnenansatz oder von beidem kommen. Eine Ärztin oder ein Arzt kann das bei der Untersuchung unterscheiden: Geprüft wird, wo der Druckschmerz am stärksten ist und ob Dehnen oder Belasten den Schmerz auslöst.',
         'Die Leitlinie von 2024 zur Achillessehnen-Tendinopathie trennt klar zwischen Beschwerden im mittleren Sehnenabschnitt und am Ansatz. Bei Problemen am Ansatz, zu denen auch Fälle mit Haglundferse gehören, muss das übliche Protokoll mit exzentrischem Fersenabsenken angepasst werden. Eine tiefe Dorsalflexion, bei der die Ferse unter die Stufenkante sinkt, drückt die Sehne gegen den Knochen und kann die Beschwerden verschlimmern.',
       ],
       cites: [CITE.achillesGuideline, CITE.jonsson],
@@ -57,7 +57,7 @@ export const HAGLUNDS_DE: Guide = {
       paragraphs: [
         'Der Schleimbeutel hinter dem Fersenbein liegt im Raum zwischen Calcaneus und Achillessehne. Seine Aufgabe ist es, Reibung zu verringern. Wenn die Haglundferse ausgeprägt ist, wird der Schleimbeutel bei der Dorsalflexion (wenn sich das Sprunggelenk so beugt, dass der Fuß nach oben kommt) zusammengedrückt. Die Folge sind Schwellung, Schmerzen und manchmal Rötung hinten an der Ferse.',
         'Eine Bursitis retrocalcanea kann auch ohne Haglundferse auftreten, zum Beispiel nach einer plötzlichen Steigerung beim Laufen oder beim Bergauflaufen. Aber der Knochenvorsprung macht sie wahrscheinlicher. Schuhe mit starrer Fersenkappe, die auf den Höcker drücken, sind ein direkter mechanischer Reiz.',
-        'Der Schmerz bei einer Bursitis retrocalcanea sitzt hinten an der Ferse, tief zwischen Sehne und Knochen. Er unterscheidet sich von einer oberflächlichen Bursitis (eine empfindliche, weiche Schwellung direkt unter der Haut) und vom Schmerz an der Innenseite der Ferse bei Plantarfasziitis.',
+        'Der Schmerz bei einer Bursitis retrocalcanea sitzt hinten an der Ferse, tief zwischen Sehne und Knochen. Er unterscheidet sich von einer oberflächlichen Bursitis (eine empfindliche, weiche Schwellung direkt unter der Haut) und vom Schmerz an der Innenseite der Ferse bei [Plantarfasziitis](/de/plantarfasziitis/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },

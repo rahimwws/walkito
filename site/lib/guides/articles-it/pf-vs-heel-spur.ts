@@ -87,7 +87,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
         'La linea guida di pratica clinica del 2023 sul dolore al tallone, pubblicata sul Journal of Orthopaedic and Sports Physical Therapy, si concentra sulla fascite plantare come causa più comune del dolore sotto il tallone. Cita la «heel spur syndrome» (sindrome da sperone calcaneare) come una delle diagnosi da distinguere, insieme a:',
         {
           list: [
-            'La sindrome del cuscinetto adiposo.',
+            'La [sindrome del cuscinetto adiposo](/it/sindrome-cuscinetto-adiposo-tallone/).',
             'L’irritazione dei nervi.',
             'La frattura da stress del calcagno.',
           ],
@@ -117,7 +117,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
     {
       h2: 'Se il problema non è lo sperone, cos’è?',
       paragraphs: [
-        'Il dolore di solito viene dalla fascia plantare e dai tessuti intorno, non dall’osso. La fascia plantare si attacca alla parte inferiore dell’osso del tallone. Quando è sovraccaricata, soprattutto in chi ha un polpaccio rigido, un indice di massa corporea alto o passa molte ore in piedi, quel punto di attacco si irrita. Quell’irritazione è la fascite plantare.',
+        'Il dolore di solito viene dalla fascia plantare e dai tessuti intorno, non dall’osso. La fascia plantare si attacca alla parte inferiore dell’osso del tallone. Quando è sovraccaricata, soprattutto in chi ha un [polpaccio rigido](/it/polpacci-rigidi/), un indice di massa corporea alto o passa molte ore in piedi, quel punto di attacco si irrita. Quell’irritazione è la fascite plantare.',
         'Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli:',
         {
           list: [

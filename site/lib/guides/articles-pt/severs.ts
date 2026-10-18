@@ -53,7 +53,7 @@ export const SEVERS_PT: Guide = {
         {
           list: [
             'Muita atividade de corrida e salto.',
-            'Panturrilha tensa.',
+            '[Panturrilha tensa](/pt/panturrilha-tensa/).',
             'Pouca flexibilidade no tornozelo.',
             'IMC alto.',
             'Superfícies de jogo duras.',
@@ -67,7 +67,7 @@ export const SEVERS_PT: Guide = {
       h2: 'Como é a dor da doença de Sever?',
       paragraphs: [
         'O principal sintoma é dor na parte de trás ou nas laterais do calcanhar, normalmente durante ou depois da atividade e principalmente depois de correr ou pular. A dor muitas vezes é descrita como a de um hematoma. Raramente há inchaço ou mancha roxa visível. **Apertar as laterais do calcanhar normalmente reproduz a dor.** Esse teste de compressão é a verificação clínica padrão.',
-        'Ao contrário da fascite plantar nos adultos, que é pior nos primeiros passos depois do repouso, a dor da doença de Sever costuma piorar com a atividade e não melhora andando. Algumas crianças começam a mancar ou a andar na ponta dos pés para não apoiar o peso no calcanhar.',
+        'Ao contrário da [fascite plantar](/pt/fascite-plantar/) nos adultos, que é pior nos primeiros passos depois do repouso, a dor da doença de Sever costuma piorar com a atividade e não melhora andando. Algumas crianças começam a mancar ou a andar na ponta dos pés para não apoiar o peso no calcanhar.',
         'A dor pode ir de leve, perceptível só durante o esporte, até forte o bastante para impedir a criança de jogar.',
       ],
     },
@@ -75,7 +75,7 @@ export const SEVERS_PT: Guide = {
       h2: 'O que ajuda na doença de Sever? A evidência',
       keyFact: 'Em um ensaio com 101\u00A0crianças, as três abordagens melhoraram a dor, e o grupo da elevação do calcanhar relatou mais satisfação em seis semanas, embora a diferença tenha sumido aos três meses (Wiegerinck e colegas, 2016).',
       paragraphs: [
-        'A evidência sobre a doença de Sever é pequena, mas está crescendo. As três principais opções estudadas são o controle da carga (reduzir a atividade que dói), calcanheiras ou palmilhas, e exercícios de alongamento ou fortalecimento. As três mostraram benefício, e **nenhuma se mostrou claramente melhor que as outras no acompanhamento final.**',
+        'A evidência sobre a doença de Sever é pequena, mas está crescendo. As três principais opções estudadas são o controle da carga (reduzir a atividade que dói), calcanheiras ou [palmilhas](/pt/palmilhas-ou-exercicios/), e exercícios de alongamento ou fortalecimento. As três mostraram benefício, e **nenhuma se mostrou claramente melhor que as outras no acompanhamento final.**',
         'Em um ensaio de 2016 com 101\u00A0crianças de 8 a 15 anos, Wiegerinck e colegas compararam três abordagens:',
         {
           list: [

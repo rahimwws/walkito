@@ -93,7 +93,7 @@ export const ICE_HEAT_PT: Guide = {
       keyFact: 'Em 36\u00A0estudos com 1.301\u00A0pessoas sem lesão, calor mais alongamento melhorou a amplitude de movimento mais que só alongar (Bleakley e Costello, 2013).',
       paragraphs: [
         '**Aquecer o pé antes de alongar é uma escolha razoável**, e tem mais apoio que pôr gelo antes de alongar. Uma revisão de 2013 com 36\u00A0estudos em 1.301\u00A0pessoas sem lesão encontrou que o calor aumentou a amplitude de movimento, e que calor mais alongamento funcionou melhor que só alongar. Os dados sobre o frio foram conflitantes. Todos os estudos tinham alto risco de viés, e nenhum incluiu pessoas com dor no calcanhar, então veja isso como uma ideia sensata, não como um plano testado para fascite plantar.',
-        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do alongamento da fáscia plantar e do alongamento de panturrilha.',
+        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e do alongamento de panturrilha.',
         'De manhã, porém, não espere aquecer para alongar. O alongamento dos primeiros passos é para ser feito antes de o pé receber peso, na beira da cama. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) mostra essa rotina passo a passo.',
       ],
       cites: [CITE.bleakleyThermal],

@@ -63,17 +63,17 @@ export const HOME_DE: HomeCopy = {
     {
       title: 'Woche für Woche, rund um ein Ziel',
       text: `Jede Woche dreht sich um ein Ziel, das du messen kannst: morgendlicher Fersenschmerz bei ${PAIN_GOAL_MAX}/10 oder weniger an ${painFreeDays}\u00A0Tagen am Stück, das Gewölbe ${archHoldSeconds}\u00A0Sekunden halten, ${calfRaises}-mal einbeiniges Fersenheben, ${balanceSeconds}\u00A0Sekunden Gleichgewicht auf einem Bein oder links und rechts weniger als ${gapPercent}\u00A0% auseinander. Erreichst du eins, geht es in die Erhaltung über und das nächste rückt nach.`,
-      link: 'So funktioniert der Plan (auf Englisch)',
+      link: 'So funktioniert Walkito',
     },
     {
       title: `Ein Test alle ${testEveryDays}\u00A0Tage, dann alle ${testEveryDaysAfterGoal}`,
       text: `${retestTests} körperliche Tests in etwa ${retestMinutes}\u00A0Minuten: Fersenheben bis zur Erschöpfung, Gewölbe halten und Gleichgewicht auf einem Bein, beide Seiten. Alle ${testEveryDays}\u00A0Tage, bis du dein erstes Ziel erreichst, danach alle ${testEveryDaysAfterGoal}. Fortschritt wird gemessen, nicht danach geraten, wie sich die Woche angefühlt hat.`,
-      link: 'Was die Tests messen (auf Englisch)',
+      link: 'Mehr über Walkito',
     },
     {
       title: 'Ausgewählt anhand veröffentlichter Forschung',
       text: 'Übungen, ausgewählt anhand veröffentlichter Forschung und Leitlinien. Walkito selbst wurde nicht in einer Studie getestet.',
-      link: 'Zur Studienlage (auf Englisch)',
+      link: 'Wie wir recherchieren',
     },
   ],
   faq: [

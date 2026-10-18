@@ -42,7 +42,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
         {
           list: [
             'Pour suivre la récupération après une rupture du tendon d’Achille.',
-            'Pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une périostite tibiale.',
+            'Pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une [périostite tibiale](/fr/periostite-tibiale-exercices/).',
             'Pour comparer une jambe à l’autre.',
           ],
         },
@@ -142,7 +142,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
             'Le manque d’habitude du test.',
           ],
         },
-        '**Le test n’est pas un diagnostic.** Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une fasciite plantaire ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe.',
+        '**Le test n’est pas un diagnostic.** Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une [fasciite plantaire](/fr/fasciite-plantaire/) ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe.',
         'Un professionnel de santé combine ce nombre avec d’autres éléments pour décider s’il explique un symptôme. Le test est plus parlant comme tendance que comme mesure isolée\u00A0: passer de 14 à 22 en deux mois est un signal plus clair que n’importe quel chiffre comparé à un tableau.',
       ],
       cites: [CITE.hebertLosier],
@@ -153,7 +153,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
         'Le mollet et le fascia plantaire sont reliés par l’os du talon. Le tendon d’Achille tire à l’arrière\u00A0; le fascia tire par en dessous. **Des mollets faibles ou qui se fatiguent vite mettent plus de tension sur les deux à chaque pas.**',
         'La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet et du fascia plantaire sa meilleure note, A, et au renforcement musculaire la note B. L’essai de Rathleff, qui a testé les montées sur pointes avec charge dans la fasciite plantaire, utilisait une montée sur pointes comme exercice principal, et les participants ont vu leur douleur baisser plus vite qu’avec les étirements seuls sur trois mois. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) pour le protocole complet.',
         'Pour la tendinite d’Achille, le heel-rise test est l’une des mesures de résultat habituelles. Les personnes qui ont une tendinopathie d’Achille du corps du tendon (une douleur au milieu du tendon, pas à l’os du talon) ont en général une endurance du mollet réduite du côté atteint. Voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour le travail excentrique.',
-        'En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course. Voir [douleur au talon et course](/heel-pain-runners/) (en anglais) pour une vue d’ensemble.',
+        'En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -227,7 +227,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       q: 'Quels sont les signes de mollets faibles\u00A0?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Des mollets faibles se voient souvent par une fatigue rapide dans les escaliers ou les montées, une poussée plus faible en marchant ou en courant, ou des oscillations en équilibre sur une jambe. Le signe objectif le plus clair est le test de montée sur pointes sur une jambe\u00A0: un écart net entre la jambe gauche et la droite est plus fiable que l’aspect ou la sensation du mollet.',
+      a: 'Des mollets faibles se voient souvent par une fatigue rapide dans les escaliers ou les montées, une poussée plus faible en marchant ou en courant, ou des oscillations en [équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/). Le signe objectif le plus clair est le test de montée sur pointes sur une jambe\u00A0: un écart net entre la jambe gauche et la droite est plus fiable que l’aspect ou la sensation du mollet.',
     },
     {
       q: 'Où doit-on sentir une montée sur pointes\u00A0?',

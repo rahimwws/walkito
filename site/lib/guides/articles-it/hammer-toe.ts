@@ -78,7 +78,7 @@ export const HAMMER_TOE_IT: Guide = {
       paragraphs: [
         'La risposta onesta è che **non ci sono studi randomizzati controllati che testino esercizi specificamente per il dito a martello.** Gli esercizi consigliati di solito, come raccolta dell’asciugamano, apertura delle dita e allungamento manuale, si basano sull’idea che rinforzare i muscoli intrinseci del piede e mantenere flessibile l’articolazione possa aiutare a evitare che una deformità flessibile diventi rigida.',
         'Il ragionamento è sensato. La deformità viene da uno squilibrio muscolare: intrinseci deboli ed estrinseci relativamente più forti. Esercizi che lavorano sugli intrinseci possono ripristinare un po’ di quell’equilibrio. Ma senza studi diretti, non sappiamo quanta differenza facciano né se possano davvero evitare la progressione.',
-        'Quello che sappiamo da studi su altri problemi dell’avampiede è che esercizi per i muscoli intrinseci del piede come piede corto, apertura delle dita e raccolta dell’asciugamano attivano i muscoli giusti. Uno studio con risonanza magnetica di Gooding e colleghi (2016) ha confermato che l’esercizio del piede corto e l’apertura delle dita attivano in modo selettivo i muscoli intrinseci del piede. Se questa attivazione porti a risultati migliori specificamente nel dito a martello non è stato testato.',
+        'Quello che sappiamo da studi su altri problemi dell’avampiede è che esercizi per i muscoli intrinseci del piede come piede corto, apertura delle dita e raccolta dell’asciugamano attivano i muscoli giusti. Uno studio con risonanza magnetica di Gooding e colleghi (2016) ha confermato che l’[esercizio del piede corto](/it/esercizi/piede-corto/) e l’apertura delle dita attivano in modo selettivo i muscoli intrinseci del piede. Se questa attivazione porti a risultati migliori specificamente nel dito a martello non è stato testato.',
       ],
       cites: [CITE.gooding],
     },
@@ -230,7 +230,7 @@ export const HAMMER_TOE_IT: Guide = {
   program: {
     h2: 'Come trasformarlo in un piano',
     text:
-      'Walkito include la [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/), l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per il dito a martello, ma gli esercizi si sovrappongono. Se hai un dito a martello flessibile e vuoi un modo strutturato per lavorare sulle dita con regolarità, le sessioni da 3 o 5\u00A0minuti rendono gli esercizi costanti senza doverti ricordare una routine a parte.',
+      'Walkito include la [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/), l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e [piede piatto](/it/piede-piatto/), non specificamente per il dito a martello, ma gli esercizi si sovrappongono. Se hai un dito a martello flessibile e vuoi un modo strutturato per lavorare sulle dita con regolarità, le sessioni da 3 o 5\u00A0minuti rendono gli esercizi costanti senza doverti ricordare una routine a parte.',
     more: [
       'Per problemi collegati dell’avampiede, vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) ed [esercizi per l’alluce valgo](/it/alluce-valgo-esercizi/).',
     ],

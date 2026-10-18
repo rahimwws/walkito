@@ -64,7 +64,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
             'Les métiers où l’on reste longtemps debout.',
           ],
         },
-        'Les pieds plats ou les pieds creux peuvent modifier la façon dont la charge traverse le fascia, mais aucun des deux ne garantit la fasciite.',
+        'Les [pieds plats](/fr/pieds-plats/) ou les [pieds creux](/fr/pied-creux-exercices/) peuvent modifier la façon dont la charge traverse le fascia, mais aucun des deux ne garantit la fasciite.',
         '**La fasciite plantaire vient en général d’une combinaison**\u00A0:',
         {
           list: [
@@ -104,9 +104,9 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       h2: 'Qu’est-ce qui aide contre la fasciite plantaire\u00A0?',
       keyFact: 'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité (Rathleff et coll., 2015).',
       paragraphs: [
-        'La recommandation clinique de 2023 note chaque approche selon la force des preuves qui la soutiennent. Les recommandations les plus fortes concernent les étirements, le strapping, la thérapie manuelle par un professionnel de santé, et les attelles de nuit pour une douleur du matin qui persiste. Le renforcement musculaire vient ensuite. Le tableau ci-dessous liste les principales options avec leur note.',
+        'La recommandation clinique de 2023 note chaque approche selon la force des preuves qui la soutiennent. Les recommandations les plus fortes concernent les étirements, le [strapping](/fr/strapping-fasciite-plantaire/), la thérapie manuelle par un professionnel de santé, et les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/) pour une douleur du matin qui persiste. Le renforcement musculaire vient ensuite. Le tableau ci-dessous liste les principales options avec leur note.',
         '**Aucune option ne marche pour tout le monde.** La plupart des gens commencent par les étirements et des chaussures qui soutiennent le pied, ajoutent le renforcement une fois la douleur initiale calmée, et voient un professionnel de santé pour les autres options si les progrès stagnent.',
-        'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette sous les orteils ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation déconseille les semelles orthopédiques seules comme approche isolée à court terme, et l’ajout d’ultrasons thérapeutiques aux étirements.',
+        'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette sous les orteils ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation déconseille les [semelles orthopédiques](/fr/semelles-ou-exercices/) seules comme approche isolée à court terme, et l’ajout d’ultrasons thérapeutiques aux étirements.',
       ],
       table: {
         caption: 'Notes de la recommandation de 2023 pour la douleur sous le talon',
@@ -133,7 +133,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       keyFact: 'Dans une cohorte de 174\u00A0personnes, environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal à dix ans, la plupart seulement légèrement (Hansen et coll., 2018).',
       paragraphs: [
         'Une revue de 2020 indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux, souvent en quelques mois. Un suivi plus long de 174\u00A0patients donne une image plus détaillée\u00A0: environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre eux ne signalaient que des symptômes légers.',
-        'La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une épine calcanéenne, non.',
+        'La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une [épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/), non.',
         'La question utile n’est pas «\u00A0dans combien de semaines ce sera fini\u00A0?\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?\u00A0». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -146,7 +146,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       ],
       bullets: [
         'L’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) tire les orteils vers vous pour charger doucement le fascia avant de vous lever.',
-        'L’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/) s’occupent du mollet raide qui tire sur le talon.',
+        'L’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/) s’occupent du [mollet raide](/fr/mollets-tendus/) qui tire sur le talon.',
         'La [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/) est la montée sur pointes avec charge de l’essai de Rathleff.',
         'Le [massage avec une balle](/fr/exercices/massage-pied-balle/) détend le tissu entre les séances.',
       ],
@@ -171,7 +171,6 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
         '[Mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures pour les personnes debout au travail.',
         '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/) traite des longues gardes sur sol dur.',
         '[Bureau debout et douleur aux pieds](/fr/bureau-debout-mal-aux-pieds/) parle de l’alternance assis-debout.',
-        '[Douleur au talon en course à pied](/heel-pain-runners/) (en anglais) explique comment adapter l’entraînement quand le talon fait mal.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -182,9 +181,9 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
         {
           list: [
             '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. Voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
-            '**Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du coussinet est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.',
-            '**Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174\u00A0patients, une épine calcanéenne au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.',
-            '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut faire mal au repos ou la nuit. Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
+            '**Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du [coussinet](/fr/syndrome-coussinet-graisseux-talon/) est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.',
+            '**Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174\u00A0patients, une [épine calcanéenne](/fr/epine-calcaneenne-exercices/) au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.',
+            '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut [faire mal au repos ou la nuit](/fr/douleur-talon-la-nuit/). Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
             '**Rhumatisme inflammatoire.** Quand les deux talons font mal, que la raideur du matin dure plus de 30\u00A0minutes et que d’autres articulations sont raides ou gonflées, le tableau oriente vers une cause générale. Un professionnel de santé doit vérifier.',
           ],
         },
@@ -205,7 +204,6 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
         '[Montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) présente le protocole de montées sur pointes de l’essai de Rathleff.',
         '[La douleur au talon au réveil](/fr/douleur-talon-au-reveil/) parle de la douleur du matin, des attelles de nuit et des autres problèmes qui font mal aux premiers pas.',
         '[Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente les délais de récupération, les facteurs qui les prédisent et que faire si les progrès stagnent.',
-        '[Douleur au talon en course à pied](/heel-pain-runners/) (en anglais) parle de la gestion de la charge et des changements d’entraînement.',
         '[Mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures pour la station debout prolongée.',
         '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/) traite des longues gardes sur sol dur.',
         '[Bureau debout et douleur aux pieds](/fr/bureau-debout-mal-aux-pieds/) parle de l’alternance assis-debout.',
@@ -277,7 +275,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     h2: 'En faire un plan',
     text: 'Vous n’avez pas à trouver quels exercices faire, dans quel ordre, ni quand passer à la suite. Walkito construit un plan une semaine à la fois autour d’un objectif. Pour la fasciite plantaire, le premier objectif est un meilleur matin\u00A0: une douleur à 1/10 ou moins pendant 14\u00A0jours de suite.',
     more: [
-      'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Une fois l’objectif du matin atteint, il passe en entretien et le suivant prend sa place.',
+      'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court [test](/fr/test-montee-sur-pointes/) vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Une fois l’objectif du matin atteint, il passe en entretien et le suivant prend sa place.',
       'Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
     cta: 'Commencez par une séance de 3\u00A0minutes.',

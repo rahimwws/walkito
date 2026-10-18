@@ -234,7 +234,7 @@ export const FLAT_FEET_FR: Guide = {
       paragraphs: [
         'Dans la recherche actuelle, les exercices pour pieds plats ont modifié la voûte au bout de six semaines ou plus, et seulement sur des pieds plats souples. Dans un essai sur 52\u00A0personnes aux pieds plats **souples**, un programme de six semaines d’exercices du pied court, de travail de la cheville, de renforcement de la hanche et d’étirements a modifié deux mesures de la forme de la voûte davantage que dans le groupe témoin.',
         'Les données sur les exercices de renforcement de la voûte pratiqués seuls sont plus minces. Une revue de 2024 a regroupé des études sur l’entraînement du pied court chez des personnes aux pieds plats en général. Dans l’ensemble, elle n’a trouvé aucune différence nette avec les groupes témoins pour la forme de la voûte ou la posture du pied. Seuls les programmes de plus de six semaines ont réduit l’affaissement de la voûte sous votre poids, et les auteurs disent que des études plus grandes sont nécessaires. Prévoyez donc au moins six semaines, et plus si vous faites le pied court seul.',
-        `C’est une des raisons pour lesquelles le plan de Walkito n’a pas de date de fin. L’objectif de voûte, tenir la voûte ${PROGRAM.goals.archHoldSeconds}\u00A0secondes, reste dans le plan jusqu’à ce que vous l’atteigniez, quel que soit le nombre de semaines nécessaire. Le maintien de la voûte est testé tous les ${PROGRAM.testEveryDays}\u00A0jours jusqu’à votre premier objectif atteint, puis tous les ${PROGRAM.testEveryDaysAfterGoal}, pour que vous voyiez si ça bouge. Les essais sont résumés sur [la page des données scientifiques](/science/) (en anglais).`,
+        `C’est une des raisons pour lesquelles le plan de Walkito n’a pas de date de fin. L’objectif de voûte, tenir la voûte ${PROGRAM.goals.archHoldSeconds}\u00A0secondes, reste dans le plan jusqu’à ce que vous l’atteigniez, quel que soit le nombre de semaines nécessaire. Le maintien de la voûte est testé tous les ${PROGRAM.testEveryDays}\u00A0jours jusqu’à votre premier objectif atteint, puis tous les ${PROGRAM.testEveryDaysAfterGoal}, pour que vous voyiez si ça bouge.`,
       ],
       sourceNote:
         'Brijwasi et Borkar\u00A0: la chute du naviculaire (navicular drop, la distance dont descend l’os naviculaire, à l’intérieur de la voûte, quand vous vous mettez debout) s’est améliorée de 0,4\u00A0cm, et l’angle de la voûte de 16\u00A0degrés, davantage que dans le groupe témoin. Cheng et coll.\u00A0: aucune différence significative dans l’ensemble pour la chute du naviculaire ou le Foot Posture Index\u00A0; la chute du naviculaire ne s’est nettement améliorée que dans le sous-groupe des programmes de plus de six semaines.',
@@ -245,7 +245,7 @@ export const FLAT_FEET_FR: Guide = {
       paragraphs: [
         'Aucune étude de cette page ne montre que les exercices pour pieds plats soulagent la [douleur de voûte](/fr/douleur-voute-plantaire/), car aucune ne l’a mesurée. L’essai et la revue ont mesuré la forme de la voûte. Ils montrent que la voûte peut s’entraîner. Ils ne prouvent pas que ces mêmes exercices soulagent une voûte douloureuse.',
         'Une douleur au talon, et parfois le long de la voûte, peut venir de l’aponévrose plantaire (aussi appelée fascia plantaire), la bande de tissu qui longe la plante du pied. Si la vôtre est près du talon, la recommandation de 2023 sur la douleur au talon est un meilleur guide. Pour la douleur sous le talon, elle donne aux étirements du fascia plantaire et du mollet sa meilleure note, **A**, et au renforcement musculaire un **B**. Ces exercices sont dans [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
-        'Walkito peut travailler les deux en même temps, comme deux objectifs séparés\u00A0: des matins sans douleur pour la douleur, et le maintien de la voûte pour la voûte. Comment les deux se partagent une semaine est expliqué sur [la page du plan](/program/) (en anglais).',
+        'Walkito peut travailler les deux en même temps, comme deux objectifs séparés\u00A0: des matins sans douleur pour la douleur, et le maintien de la voûte pour la voûte.',
       ],
       cites: [CITE.guideline],
     },
@@ -254,7 +254,7 @@ export const FLAT_FEET_FR: Guide = {
       paragraphs: [
         `Quand vous atteignez l’objectif de voûte, tenir la voûte ${PROGRAM.goals.archHoldSeconds}\u00A0secondes, **Walkito garde le travail de la voûte dans le plan à une dose plus faible.** L’objectif passe en entretien, et le suivant prend sa place. L’atteindre ne veut pas dire que le travail de la voûte s’arrête.`,
         `Les tests continuent aussi, tous les ${PROGRAM.testEveryDaysAfterGoal}\u00A0jours une fois votre premier objectif atteint. Si le maintien de la voûte commence à baisser, vous le voyez dans les chiffres au lieu de le deviner.`,
-        'Si votre talon fait mal aussi, le talon a ses propres exercices et son propre objectif\u00A0: voir [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Les questions sur l’application elle-même ont leur réponse dans [la FAQ](/faq/) (en anglais).',
+        'Si votre talon fait mal aussi, le talon a ses propres exercices et son propre objectif\u00A0: voir [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
     },
   ],
@@ -350,7 +350,7 @@ export const HEEL_PAIN_FR: Guide = {
       h2: 'Quels exercices aident la fasciite plantaire, et quelle quantité faire\u00A0?',
       figure: { id: 'plantar-fascia', caption: 'Le fascia plantaire va de l’os du talon jusqu’aux orteils. La douleur de la fasciite plantaire commence souvent là où il s’attache au talon.', alt: 'Plante d’un pied montrant le fascia plantaire en bandes blanches qui s’étalent de l’os du talon jusqu’à la base des orteils, avec une tache rouge sur le talon là où la douleur commence souvent.' },
       paragraphs: [
-        'Dans Walkito, les exercices pour la fasciite plantaire sont des étirements du fascia plantaire et du mollet, un renforcement du mollet qui progresse par petites étapes, et un massage du pied avec une balle. Ce sont les doses de départ de Walkito, pas une prescription. Un résumé sur une page est disponible dans les [fiches d’exercices à imprimer](/printable-exercise-sheets/) (en anglais). [Comment ces guides sont écrits](/fr/a-propos/).',
+        'Dans Walkito, les exercices pour la fasciite plantaire sont des étirements du fascia plantaire et du mollet, un renforcement du mollet qui progresse par petites étapes, et un massage du pied avec une balle. Ce sont les doses de départ de Walkito, pas une prescription. [Comment ces guides sont écrits](/fr/a-propos/).',
         'L’ordre compte. Tant que la douleur est votre objectif, Walkito garde le travail du mollet en douceur, une étape à la fois\u00A0:',
         {
           list: [
@@ -532,7 +532,7 @@ export const HEEL_PAIN_FR: Guide = {
         'Le renforcement et les étirements aident tous les deux contre la fasciite plantaire, et **le renforcement aide plus tôt.**',
         'Dans un essai sur 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie, tout le monde portait des semelles. Un groupe a ajouté des montées sur pointes avec charge un jour sur deux. L’autre étirait le fascia plantaire tous les jours.',
         'À trois mois, le groupe des montées sur pointes était nettement devant pour la douleur et la fonction au quotidien. À douze mois, les deux groupes étaient à égalité. Le renforcement a accéléré l’amélioration. Il ne l’a pas amplifiée.',
-        'La recommandation soutient les deux. Le raisonnement étude par étude est sur [la page des données scientifiques](/science/) (en anglais).',
+        'La recommandation soutient les deux.',
       ],
       sourceNote:
         'Score au Foot Function Index, où un score plus bas signifie moins de douleur et une meilleure fonction\u00A0: 29\u00A0points de moins dans le groupe des montées sur pointes à trois mois (IC à 95\u00A0% 6-52, p = 0,016), et 22 contre 16 à douze mois, une différence non significative.',
@@ -572,7 +572,7 @@ export const HEEL_PAIN_FR: Guide = {
       h2: 'Que se passe-t-il quand le talon ne fait plus mal\u00A0?',
       paragraphs: [
         `Quand la douleur au talon s’arrête, Walkito continue à une dose plus faible, car la douleur au talon peut revenir. Une fois l’objectif des matins sans douleur atteint (douleur du matin à 1/10 ou moins pendant ${PROGRAM.painFreeDays}\u00A0jours de suite), cet objectif passe en entretien et le suivant prend sa place.`,
-        'Si vos voûtes sont plates aussi, la voûte a ses propres exercices et son propre calendrier\u00A0: voir [exercices pour pieds plats](/fr/exercices-pieds-plats/). Les questions sur l’application elle-même ont leur réponse dans [la FAQ](/faq/) (en anglais).',
+        'Si vos voûtes sont plates aussi, la voûte a ses propres exercices et son propre calendrier\u00A0: voir [exercices pour pieds plats](/fr/exercices-pieds-plats/).',
       ],
     },
   ],
@@ -592,7 +592,7 @@ export const HEEL_PAIN_FR: Guide = {
     },
     {
       q: 'Étirements ou renforcement\u00A0: quoi de mieux pour la fasciite plantaire\u00A0?',
-      a: 'Les deux aident, et le renforcement agit plus vite. Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge étaient nettement devant les étirements à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation de 2023 donne aux étirements un A et au renforcement musculaire un B. [La page des données scientifiques](/science/) (en anglais) donne les détails.',
+      a: 'Les deux aident, et le renforcement agit plus vite. Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge étaient nettement devant les étirements à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation de 2023 donne aux étirements un A et au renforcement musculaire un B.',
     },
     {
       q: 'Une épine calcanéenne, est-ce la même chose qu’une fasciite plantaire\u00A0?',

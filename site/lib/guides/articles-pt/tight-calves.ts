@@ -55,7 +55,7 @@ export const TIGHT_CALVES_PT: Guide = {
       h2: 'Panturrilha tensa causa dor no pé e no calcanhar?',
       keyFact: 'Num estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, um tornozelo que não dobrava além de 0\u00A0grau tinha uma chance 23,3\u00A0vezes maior de fascite plantar (Riddle e colegas, 2003).',
       paragraphs: [
-        'A panturrilha tensa está ligada à fascite plantar, a causa mais comum de dor embaixo do calcanhar. Quando o tornozelo não dobra o suficiente, o pé precisa compensar a cada passo, e mais tração passa pelo tendão de Aquiles, pelo calcanhar e pela fáscia plantar (a faixa grossa embaixo do arco).',
+        'A panturrilha tensa está ligada à [fascite plantar](/pt/fascite-plantar/), a causa mais comum de dor embaixo do calcanhar. Quando o tornozelo não dobra o suficiente, o pé precisa compensar a cada passo, e mais tração passa pelo tendão de Aquiles, pelo calcanhar e pela fáscia plantar (a faixa grossa embaixo do arco).',
         'Num estudo de caso-controle de 2003, Riddle e colegas compararam 50\u00A0pessoas com fascite plantar com 100\u00A0pessoas parecidas sem a condição. Quem tinha um tornozelo que não dobrava além de 0\u00A0grau tinha uma chance 23,3\u00A0vezes maior de fascite plantar do que quem conseguia dobrar além de 10\u00A0graus. A dobra reduzida do tornozelo foi o fator de risco mais forte que eles mediram, à frente do peso corporal e de trabalhar em pé.',
         'Num estudo posterior com 254\u00A0pessoas com fascite plantar, 83% tinham a dobra do tornozelo limitada, e 57% de todos os pacientes tinham só o gastrocnêmio tenso (Patel e DiGiovanni, 2011).',
         '**Os dois estudos mostram uma ligação, não que a panturrilha tensa cause fascite plantar.** A margem larga em torno do número 23,3 também significa que o valor real pode ser bem menor. Mesmo assim, esse é um dos motivos pelos quais a diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha o grau A, a nota mais alta, para dor plantar no calcanhar.',
@@ -194,7 +194,6 @@ export const TIGHT_CALVES_PT: Guide = {
             'Dê tempo a um tênis novo com drop mais baixo antes de usá-lo em corridas longas.',
           ],
         },
-        'A página sobre [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês) fala da carga com mais detalhes.',
         'Se você fica em pé o dia todo:',
         {
           list: [

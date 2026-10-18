@@ -20,7 +20,7 @@ export const HIGH_ARCHES_DE: Guide = {
     'Übungen bei Hohlfuß (Pes cavus) mit Fußschmerzen: Waden- und Faszien-Dehnen, Stabilität im Sprunggelenk, Belege zu Einlagen und neurologische Warnzeichen.',
   h1: 'Übungen bei Hohlfuß: was hilft und was ärztlich abgeklärt werden sollte',
   lede:
-    'Ein Hohlfuß, medizinisch Pes cavus, ist steif und gibt nicht genug nach, um Stöße abzufangen. Die Kraft konzentriert sich an der Ferse und am Fußballen, und die Plantarfaszie ist oft verkürzt. Etwa 60\u00A0% der Menschen mit Hohlfuß berichten von Fußschmerzen. Die stärksten Belege gibt es für gedämpfte oder maßgefertigte Einlagen. Die Übungen setzen auf das Dehnen von Wade und Plantarfaszie, mehr Beweglichkeit im Sprunggelenk und den Aufbau von Stabilität.',
+    'Ein Hohlfuß, medizinisch Pes cavus, ist steif und gibt nicht genug nach, um Stöße abzufangen. Die Kraft konzentriert sich an der Ferse und am Fußballen, und die Plantarfaszie ist oft verkürzt. Etwa 60\u00A0% der Menschen mit Hohlfuß berichten von Fußschmerzen. Die stärksten Belege gibt es für gedämpfte oder maßgefertigte Einlagen. Die Übungen setzen auf das Dehnen von Wade und Plantarfaszie, mehr [Beweglichkeit im Sprunggelenk](/de/sprunggelenk-mobilisieren-uebungen/) und den Aufbau von Stabilität.',
   intro: [
     'Ein Hohlfuß betrifft ungefähr 1 von 10\u00A0Menschen (Burns und Kollegen, 2007). Viele Menschen mit Hohlfuß haben nie Fußschmerzen. Wer sie hat, spürt sie meist unter der Ferse, unter dem Fußballen oder entlang der verkürzten Plantarfaszie. Die Ursache ist wichtig: Die meisten Hohlfüße sind idiopathisch (ohne bekannte Ursache), aber ein Teil wird durch neurologische Erkrankungen wie die Charcot-Marie-Tooth-Krankheit verursacht. Ein Hohlfuß, der zunimmt oder nur auf einer Seite auftritt, gehört immer zum Arzt oder zur Ärztin.',
   ],
@@ -42,7 +42,7 @@ export const HIGH_ARCHES_DE: Guide = {
         'Fußschmerzen bei Hohlfuß zeigen sich häufig als:',
         {
           list: [
-            'Metatarsalgie (Schmerz unter dem Fußballen).',
+            '[Metatarsalgie](/de/metatarsalgie-vorfussschmerzen/) (Schmerz unter dem Fußballen).',
             'Schmerz unter der Ferse.',
             'Schmerz entlang der verkürzten Plantarfaszie.',
           ],
@@ -94,7 +94,7 @@ export const HIGH_ARCHES_DE: Guide = {
         '**Maßgefertigte Einlagen haben die stärksten Belege bei Fußschmerzen durch Hohlfuß.** In der einzigen randomisierten Studie teilten Burns und Kollegen 154\u00A0Erwachsene mit chronischen Fußschmerzen und Hohlfuß auf beiden Seiten entweder maßgefertigten Einlagen aus Polypropylen oder einer flachen Schein-Einlage zu.',
         'Nach drei Monaten berichtete die Gruppe mit maßgefertigten Einlagen im Foot Health Status Questionnaire eine um 8,3\u00A0Punkte stärkere Verbesserung des Fußschmerzes als die Schein-Gruppe. Die Funktionswerte verbesserten sich um 9,5\u00A0Punkte mehr. Der Druck unter der Fußsohle sank mit den maßgefertigten Einlagen um 26\u00A0%, mit der Schein-Einlage um 9\u00A0%.',
         'Die Studie umfasste Menschen mit idiopathischem und mit neuromuskulärem Hohlfuß (133 idiopathisch, 21 neuromuskulär, davon 16 mit Charcot-Marie-Tooth-Krankheit). Die Einlagen waren der Form des Fußes angepasst und hatten eine gedämpfte Deckschicht über die ganze Länge.',
-        'Gedämpfte Einlagen aus dem Handel sind ein vernünftiger erster Schritt, bevor du dich für die teureren maßgefertigten Einlagen entscheidest. Das Merkmal, das sich in der Studie als wirksam erwies, war eine Schale, die genau an die Form des Fußes angepasst war, nicht nur eine flache Dämpfung.',
+        'Gedämpfte [Einlagen](/de/einlagen-oder-uebungen/) aus dem Handel sind ein vernünftiger erster Schritt, bevor du dich für die teureren maßgefertigten Einlagen entscheidest. Das Merkmal, das sich in der Studie als wirksam erwies, war eine Schale, die genau an die Form des Fußes angepasst war, nicht nur eine flache Dämpfung.',
       ],
       sourceNote:
         'Burns 2006: 154\u00A0Erwachsene, Nachbeobachtung nach 3\u00A0Monaten, Unterschied beim Schmerz im Foot Health Status Questionnaire 8,3\u00A0Punkte (95-%-KI 1,2 bis 15,3, p=0,022), Unterschied bei der Funktion 9,5\u00A0Punkte (95-%-KI 2,9 bis 16,1, p=0,005).',
@@ -104,7 +104,7 @@ export const HIGH_ARCHES_DE: Guide = {
       h2: 'Welche Übungen helfen bei Hohlfuß?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie bei Schmerzen unter der Ferse, der häufigsten Schmerzstelle bei Hohlfuß, mit A und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Keine Studie hat ein Übungsprogramm speziell für Fußschmerzen durch Hohlfuß getestet. Die Übungen unten zielen auf die Strukturen, die bei einem Hohlfuß häufig verkürzt oder instabil sind: Wade, Plantarfaszie, Sprunggelenk und die kleinen Fußmuskeln. Sie sind aus den Belegen zu Plantarfasziitis, Instabilität im Sprunggelenk und allgemeinem Fußtraining übernommen und entsprechend gekennzeichnet.',
+        'Keine Studie hat ein Übungsprogramm speziell für Fußschmerzen durch Hohlfuß getestet. Die Übungen unten zielen auf die Strukturen, die bei einem Hohlfuß häufig verkürzt oder instabil sind: Wade, Plantarfaszie, Sprunggelenk und die kleinen Fußmuskeln. Sie sind aus den Belegen zu [Plantarfasziitis](/de/plantarfasziitis/), Instabilität im Sprunggelenk und allgemeinem Fußtraining übernommen und entsprechend gekennzeichnet.',
         'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie bei Schmerzen unter der Ferse, einer der häufigsten Schmerzstellen bei Hohlfuß, mit A und Krafttraining mit B. Eine vergleichbare Leitlinie speziell zum Hohlfuß gibt es nicht.',
         'Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf.',
       ],
@@ -187,7 +187,7 @@ export const HIGH_ARCHES_DE: Guide = {
     {
       h2: 'Welche Schuhe passen bei Hohlfuß?',
       paragraphs: [
-        '**Schuhe bei Hohlfuß sollten dämpfen statt führen.** Anders als beim Plattfuß, wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
+        '**Schuhe bei Hohlfuß sollten dämpfen statt führen.** Anders als beim [Plattfuß](/de/plattfuss/), wo eine feste Stütze an der Innenseite das Absinken verhindert, braucht ein Hohlfuß das Gegenteil: einen Schuh, der Stöße abfängt, weil der Fuß selbst es nicht tut.',
         'Achte auf:',
         {
           list: [

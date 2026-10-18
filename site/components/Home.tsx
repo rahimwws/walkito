@@ -40,7 +40,7 @@ import { HOME_IT } from '@/lib/home/it';
 import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
-import { CHROME, EN_ONLY, ES_ARTICLES, NEW_ARTICLE_PATHS, RU_ARTICLES, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
+import { CHROME, EN_ONLY, ES_ARTICLES, NEW_ARTICLE_PATHS, RU_ARTICLES, TRANSLATED, customHref, isFullLang, type Lang, type NewLang } from '@/lib/i18n';
 import { APP_STORE_NAME, APP_STORE_URL, ORG_REF, PAIN_GOAL_MAX, PLAY_STORE_URL, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref, WIKIDATA_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
@@ -512,7 +512,8 @@ export function Home({ lang }: { lang: Lang }) {
     { card: copy.who.heel, href: TRANSLATED.heelPain[lang], accent: 'teal', en: false, visual: visuals.heel },
     { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], accent: 'violet', en: false, visual: visuals.flat },
     { card: copy.who.allday, href: standing ?? EN_ONLY.standing, accent: 'amber', en: !standing, visual: visuals.allday },
-    { card: copy.who.run, href: customHref('runners', lang), accent: 'blue', en: customInEnglish, visual: visuals.run },
+    // PT/FR/IT/DE have no runners page: their own Achilles page covers running pain, so no card leads to English.
+    { card: copy.who.run, href: customInEnglish ? NEW_ARTICLE_PATHS[lang as NewLang].achilles! : customHref('runners', lang), accent: 'blue', en: false, visual: visuals.run },
   ] as const;
 
   /**
@@ -521,7 +522,10 @@ export function Home({ lang }: { lang: Lang }) {
    * The evidence card states only what the evidence page says, after the claims
    * there were re-checked against the papers.
    */
-  const howHrefs = [customHref('program', lang), customHref('program', lang), customHref('science', lang)];
+  // PT/FR/IT/DE: the plan, tests and evidence are explained on their own About page, not the English ones.
+  const howHrefs = customInEnglish
+    ? [TRANSLATED.about[lang], TRANSLATED.about[lang], `${TRANSLATED.about[lang]}#how-we-research`]
+    : [customHref('program', lang), customHref('program', lang), customHref('science', lang)];
 
   return (
     <>
@@ -712,7 +716,7 @@ export function Home({ lang }: { lang: Lang }) {
           items={copy.how.map((item, i) => ({
             ...item,
             href: howHrefs[i],
-            hrefLang: customInEnglish ? 'en' : undefined,
+            hrefLang: undefined,
           }))}
         />
 

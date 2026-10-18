@@ -19,7 +19,7 @@ export const ACHILLES_PT: Guide = {
   lede:
     'Os exercícios para tendinite de Aquiles funcionam melhor quando você entende a descida do calcanhar como treino de força, não como alongamento. A diretriz clínica de 2024 dá ao exercício o grau máximo, **A**, e uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou nenhum protocolo claramente melhor que outro. O que importa é colocar carga no tendão com constância por semanas.',
   intro: [
-    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) resume os dois casos. Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
     'A maioria das pessoas usa “tendinite” e “tendinopatia” como sinônimos. As diretrizes atuais usam “tendinopatia” porque o problema costuma ser de carga, não uma inflamação pura. Esta página usa “tendinite” nos títulos e “tendinopatia” onde a diretriz usa.',
   ],
   takeaways: [
@@ -42,7 +42,7 @@ export const ACHILLES_PT: Guide = {
     {
       h2: 'O que é a descida excêntrica do calcanhar, e por que não é um alongamento?',
       paragraphs: [
-        'A descida excêntrica do calcanhar é um exercício de força, não um alongamento de flexibilidade. Você sobe com os dois pés, passa o peso para o lado dolorido e desce devagar em um pé só, deixando o calcanhar afundar abaixo da beira do degrau. A fase de descida é a contração excêntrica: o músculo da panturrilha se alongando sob carga. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas.',
+        'A [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) é um exercício de força, não um alongamento de flexibilidade. Você sobe com os dois pés, passa o peso para o lado dolorido e desce devagar em um pé só, deixando o calcanhar afundar abaixo da beira do degrau. A fase de descida é a contração excêntrica: o músculo da panturrilha se alongando sob carga. Essa descida controlada é o que constrói a capacidade do tendão ao longo das semanas.',
         'O erro mais comum é ficar parado embaixo como em um alongamento de panturrilha. Isso transforma o exercício em um alongamento estático, que é outro estímulo. **O que importa é a descida lenta e com carga.** Três segundos para descer, com o músculo trabalhando o tempo todo.',
         'No ensaio de Alfredson de 1998, 15\u00A0atletas com dor antiga no meio do tendão de Aquiles fizeram descidas excêntricas do calcanhar duas vezes por dia, 7\u00A0dias por semana, por três meses, com o joelho esticado e dobrado. Os 15 voltaram ao nível de corrida que tinham antes. Foi um ensaio pequeno, sem grupo controle, mas abriu toda uma linha de pesquisa.',
       ],
@@ -68,7 +68,7 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'Sim, pela evidência atual. Um ensaio de 2015 com 58\u00A0pessoas comparou a resistência pesada e lenta (HSR, de heavy slow resistance), feita 3\u00A0dias por semana, com o protocolo excêntrico clássico de duas vezes por dia. A conclusão: “Tanto o excêntrico tradicional quanto a HSR dão resultados clínicos positivos, igualmente bons e duradouros em pacientes com tendinopatia de Aquiles.”',
         'Uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou diferença clinicamente relevante entre nenhuma das abordagens de exercício ativo aos 3 ou aos 12\u00A0meses. Todas foram melhores do que não fazer nada. Nenhum ensaio tinha baixo risco de viés. Os autores recomendaram começar com um programa de exercícios para a panturrilha porque é barato e tem poucos riscos.',
-        '**O formato do protocolo importa menos do que colocar carga no tendão com constância.** As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na fascite plantar, veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
+        '**O formato do protocolo importa menos do que colocar carga no tendão com constância.** As descidas excêntricas são as mais estudadas, a HSR é igualmente eficaz e pede menos sessões por semana, e as duas são pontos de partida válidos. Para a versão dessa mesma lógica de fortalecer a panturrilha na [fascite plantar](/pt/fascite-plantar/), veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -207,7 +207,6 @@ export const ACHILLES_PT: Guide = {
       paragraphs: [
         'No estudo de Silbernagel de 2007, os pacientes que continuaram correndo durante a reabilitação, seguindo o modelo de monitorar a dor, não se saíram pior do que os que descansaram primeiro. Os dois grupos melhoraram aos 12\u00A0meses. O ensaio concluiu que a atividade contínua, com a dor monitorada, “pode, portanto, representar uma opção valiosa” durante a reabilitação.',
         'Isso não quer dizer que correr é inofensivo em todos os casos. **Se a dor não passa durante a noite, ou se cada semana é pior, diminua.** Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde.',
-        'A página [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) trata do controle de carga específico da corrida com mais detalhes.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -274,7 +273,7 @@ export const ACHILLES_PT: Guide = {
     {
       q: 'O que pode ser confundido com tendinite de Aquiles?',
       cites: [CITE.chooRearfoot],
-      a: 'Bursite retrocalcânea, deformidade de Haglund e uma ruptura parcial do Aquiles podem causar uma dor parecida na parte de trás do calcanhar. Uma saliência óssea visível aponta para a deformidade de Haglund, enquanto um inchaço bem na altura da borda de trás do calçado sugere bursite. Qualquer dor aguda e repentina com um estalo, ou não conseguir subir na ponta dos pés, precisa de avaliação urgente para ruptura do tendão.',
+      a: 'Bursite retrocalcânea, [deformidade de Haglund](/pt/deformidade-de-haglund/) e uma ruptura parcial do Aquiles podem causar uma dor parecida na parte de trás do calcanhar. Uma saliência óssea visível aponta para a deformidade de Haglund, enquanto um inchaço bem na altura da borda de trás do calçado sugere bursite. Qualquer dor aguda e repentina com um estalo, ou não conseguir subir na ponta dos pés, precisa de avaliação urgente para ruptura do tendão.',
     },
   ],
   redFlags: {

@@ -18,7 +18,7 @@ export const EX_TOE_SPREAD_IT: Guide = {
     'Come fare l’esercizio di apertura delle dita dei piedi: tecnica, serie, muscoli coinvolti, a chi serve e cosa mostrano gli studi con risonanza magnetica.',
   h1: 'Apertura delle dita: come allargare le dita dei piedi per la forza del piede',
   lede:
-    'L’esercizio di apertura delle dita allena i muscoli che allargano le dita a ventaglio. Apri tutte e cinque le dita più che puoi, tieni, poi rilassa. Lavora sull’abduttore dell’alluce sul lato interno e sull’abduttore del quinto dito sul lato esterno, gli stessi muscoli che sostengono i due bordi dell’arco. Compare nei programmi per piede piatto, alluce valgo e forza generale del piede.',
+    'L’esercizio di apertura delle dita allena i muscoli che allargano le dita a ventaglio. Apri tutte e cinque le dita più che puoi, tieni, poi rilassa. Lavora sull’abduttore dell’alluce sul lato interno e sull’abduttore del quinto dito sul lato esterno, gli stessi muscoli che sostengono i due bordi dell’arco. Compare nei programmi per [piede piatto](/it/piede-piatto/), [alluce valgo](/it/alluce-valgo-esercizi/) e forza generale del piede.',
   takeaways: [
     'Uno studio del 2016 con risonanza magnetica ha trovato che l’apertura delle dita dava l’attivazione media più alta (35,2%) nell’abduttore del quinto dito, il muscolo che sostiene l’arco esterno, tra i quattro esercizi per i muscoli intrinseci del piede testati (Gooding e colleghi, 2016).',
     'Uno studio del 2016 con risonanza magnetica ha trovato che l’apertura delle dita dava la sua seconda attivazione media più alta (31,5%) nel capo obliquo dell’adduttore dell’alluce, un muscolo sul lato interno dell’articolazione dell’alluce (Gooding e colleghi, 2016).',

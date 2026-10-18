@@ -34,7 +34,7 @@ export const SESAMOIDITIS_FR: Guide = {
       h2: 'Que sont les os sésamoïdes et pourquoi font-ils mal\u00A0?',
       paragraphs: [
         'Les deux os sésamoïdes se trouvent sous la tête du premier métatarsien, le long os situé derrière le gros orteil. Le sésamoïde médial, le plus proche du centre du pied, est celui qui se blesse le plus souvent. Ensemble, ils aident le gros orteil à pousser sur le sol et absorbent les forces pendant la phase de poussée de la marche.',
-        'La sésamoïdite apparaît quand ces os ou les tissus qui les entourent s’enflamment. Les activités qui chargent l’avant-pied de façon répétée, comme la course, la danse ou les sauts, sont des déclencheurs fréquents. Une hausse brutale du volume d’entraînement aussi. Les personnes avec un pied creux ou une tête du premier métatarsien saillante y sont plus sujettes, car plus de pression tombe à cet endroit.',
+        'La sésamoïdite apparaît quand ces os ou les tissus qui les entourent s’enflamment. Les activités qui chargent l’avant-pied de façon répétée, comme la course, la danse ou les sauts, sont des déclencheurs fréquents. Une hausse brutale du volume d’entraînement aussi. Les personnes avec un [pied creux](/fr/pied-creux-exercices/) ou une tête du premier métatarsien saillante y sont plus sujettes, car plus de pression tombe à cet endroit.',
         'Le terme sésamoïdite est employé au sens large en pratique et n’a pas de définition stricte unique. Il peut désigner une inflammation des os eux-mêmes, des tissus mous autour, ou des deux. Une revue systématique de 2025 a noté qu’il n’existe toujours pas de recommandations standardisées pour sa prise en charge conservatrice.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -56,7 +56,7 @@ export const SESAMOIDITIS_FR: Guide = {
         'La revue systématique de 2025 de Biz et coll. a regroupé les données individuelles de 11\u00A0études portant sur 59\u00A0patients. Les traitements les plus fréquents étaient\u00A0:',
         {
           list: [
-            'Les orthèses.',
+            'Les [orthèses](/fr/semelles-ou-exercices/).',
             'L’adaptation de l’activité.',
             'Les infiltrations de corticoïde.',
           ],
@@ -97,7 +97,7 @@ export const SESAMOIDITIS_FR: Guide = {
       h2: 'Quel rôle joue l’exercice\u00A0?',
       paragraphs: [
         'La réponse honnête est que l’exercice a un rôle limité dans la prise en charge de la sésamoïdite elle-même. Contrairement à la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou à la [tendinite d’Achille](/fr/tendinite-achille-exercices/), où les programmes de mise en charge ont un bon appui dans les essais, il n’existe aucun essai sur l’exercice dans la sésamoïdite. La revue systématique de 2025 n’a identifié aucune étude testant un protocole d’exercices précis.',
-        'Ce que l’exercice peut aider, c’est le contexte. Un mollet raide reporte le poids sur l’avant-pied pendant la marche. Étirer le gastrocnémien et le soléaire peut réduire cette charge vers l’avant. Des muscles propres au pied faibles peuvent aussi contribuer à une répartition inégale de la pression sous l’avant-pied. Écarter les orteils et travailler le pied court peut aider à mieux répartir la charge sur les têtes des métatarsiens, même si cela n’a pas été testé spécifiquement dans la sésamoïdite.',
+        'Ce que l’exercice peut aider, c’est le contexte. Un [mollet raide](/fr/mollets-tendus/) reporte le poids sur l’avant-pied pendant la marche. Étirer le gastrocnémien et le soléaire peut réduire cette charge vers l’avant. Des muscles propres au pied faibles peuvent aussi contribuer à une répartition inégale de la pression sous l’avant-pied. Écarter les orteils et travailler le pied court peut aider à mieux répartir la charge sur les têtes des métatarsiens, même si cela n’a pas été testé spécifiquement dans la sésamoïdite.',
         'Si vous sortez d’une sésamoïdite et avez perdu de la force dans les orteils ou de la souplesse dans le mollet pendant la période de repos, des exercices doux pour l’[avant-pied](/fr/metatarsalgie-douleur-avant-pied/) peuvent faire partie d’un plan de reprise. Mais **la décharge et l’adaptation de l’activité sont les outils principaux, pas l’exercice.**',
       ],
     },
@@ -162,7 +162,7 @@ export const SESAMOIDITIS_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text:
-      'La sésamoïdite se prend en charge surtout par la décharge et les chaussures, pas par un programme d’exercices. Walkito est conçu pour des problèmes comme la fasciite plantaire et les pieds plats, où des programmes de mise en charge structurés ont un appui dans les essais. Si votre sésamoïdite est passée et que vous voulez reconstruire la force du pied et du mollet pour reprendre l’activité, le travail des muscles du pied et les étirements du mollet de l’application peuvent être un complément utile.',
+      'La sésamoïdite se prend en charge surtout par la décharge et les chaussures, pas par un programme d’exercices. Walkito est conçu pour des problèmes comme la [fasciite plantaire](/fr/fasciite-plantaire/) et les [pieds plats](/fr/pieds-plats/), où des programmes de mise en charge structurés ont un appui dans les essais. Si votre sésamoïdite est passée et que vous voulez reconstruire la force du pied et du mollet pour reprendre l’activité, le travail des muscles du pied et les étirements du mollet de l’application peuvent être un complément utile.',
     more: [
       'Si la douleur de l’avant-pied est plus étendue et touche les têtes du deuxième ou du troisième métatarsien, voir la page [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) pour des exercices mieux appuyés par les preuves.',
     ],

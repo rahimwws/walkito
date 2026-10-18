@@ -74,7 +74,7 @@ export const STANDING_DESK_PT: Guide = {
     {
       h2: 'Que calçado usar na mesa em pé?',
       paragraphs: [
-        'Se você trabalha em casa, talvez fique em pé na mesa de meia ou de chinelo. São muitas horas sem nenhum amortecimento ou apoio para o arco. A diretriz de 2023 para dor no calcanhar dá às órteses sozinhas um B contra para fascite plantar, o que significa que a evidência pende para não usá-las como opção isolada, mas isso fala de palmilhas isoladas, não de se qualquer calçado é melhor do que nenhum.',
+        'Se você trabalha em casa, talvez fique em pé na mesa de meia ou de chinelo. São muitas horas sem nenhum amortecimento ou apoio para o arco. A diretriz de 2023 para dor no calcanhar dá às [órteses](/pt/palmilhas-ou-exercicios/) sozinhas um B contra para [fascite plantar](/pt/fascite-plantar/), o que significa que a evidência pende para não usá-las como opção isolada, mas isso fala de palmilhas isoladas, não de se qualquer calçado é melhor do que nenhum.',
         'Um caminho razoável: **use um calçado com algum amortecimento e uma palmilha com suporte enquanto estiver em pé, mesmo em casa.** Você não precisa de um calçado especial para mesa em pé. Se você alterna entre ficar em pé e sentado, pode tirar o calçado nos períodos sentado.',
         'Os exercícios desta página miram os tecidos diretamente. Calçados e tapetes ajudam no conforto em pé, mas não substituem o alongamento e o treino de força.',
       ],
@@ -233,7 +233,7 @@ export const STANDING_DESK_PT: Guide = {
     },
     {
       q: 'Que exercícios dá para fazer na mesa em pé?',
-      a: 'Em pé: alongamentos da panturrilha apoiado na borda da mesa (2\u00A0vezes de 30\u00A0segundos de cada lado) e elevação de calcanhar em pé (3\u00A0séries de 10). Nas pausas sentado: elevação de calcanhar sentada (3\u00A0séries de 15), abrir os dedos e o exercício do pé curto. Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.',
+      a: 'Em pé: alongamentos da panturrilha apoiado na borda da mesa (2\u00A0vezes de 30\u00A0segundos de cada lado) e elevação de calcanhar em pé (3\u00A0séries de 10). Nas pausas sentado: elevação de calcanhar sentada (3\u00A0séries de 15), abrir os dedos e o [exercício do pé curto](/pt/exercicios/pe-curto/). Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.',
       cites: [CITE.guideline],
     },
     {

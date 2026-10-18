@@ -17,7 +17,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
     'Comment ramasser une serviette avec les orteils pour renforcer le pied\u00A0: technique, séries, muscles travaillés, erreurs, comparaison avec le pied court.',
   h1: 'Ramasser la serviette\u00A0: comment renforcer le pied avec une serviette et les orteils',
   lede:
-    'Ramasser la serviette est un exercice où vous ramenez une serviette vers vous uniquement avec les orteils. Il cible les petits muscles sous la voûte et les fléchisseurs des orteils. C’est l’un des exercices de renforcement du pied les plus anciens et les plus simples en rééducation, et il figure dans les programmes d’exercices pour les pieds plats, la fasciite plantaire et la douleur de l’avant du pied.',
+    'Ramasser la serviette est un exercice où vous ramenez une serviette vers vous uniquement avec les orteils. Il cible les petits muscles sous la voûte et les fléchisseurs des orteils. C’est l’un des exercices de renforcement du pied les plus anciens et les plus simples en rééducation, et il figure dans les programmes d’exercices pour les [pieds plats](/fr/pieds-plats/), la [fasciite plantaire](/fr/fasciite-plantaire/) et la douleur de l’avant du pied.',
   takeaways: [
     'Ramasser la serviette active les muscles intrinsèques du pied, mais des mesures EMG montrent que l’exercice sollicite aussi davantage les longs fléchisseurs des orteils (muscles extrinsèques) que l’exercice du pied court (Jung et coll., 2011).',
     'Dans un essai randomisé de 2012 chez des adultes en bonne santé, un groupe qui ramassait une serviette pendant quatre semaines a moins amélioré son équilibre qu’un groupe qui faisait l’exercice du pied court, même si les deux groupes ont progressé par rapport au départ (Lynn et coll., 2012).',

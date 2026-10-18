@@ -44,7 +44,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Hängen schwache Zehen mit Fersenschmerzen zusammen?',
       paragraphs: [
-        'Schwache Zehen kommen bei Menschen mit Plantarfasziitis tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen.',
+        'Schwache Zehen kommen bei Menschen mit [Plantarfasziitis](/de/plantarfasziitis/) tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen.',
         'Eine größere Studie von 2015 verglich 202\u00A0Menschen mit Schmerzen unter der Ferse und 70 ohne. Die Gruppe mit Fersenschmerzen hatte im Durchschnitt:',
         {
           list: [
@@ -186,7 +186,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
         'Übungen zum Zehenkräftigen können Zehenkraft aufbauen, aber **nur, wenn sie mit der Zeit schwerer werden.**',
         'In einer Studie von 2016 wurden 85\u00A0Erwachsene im Alter von 60 bis 90\u00A0Jahren auf ein betreutes Programm mit einem Widerstand, der über drei Monate wuchs, und ein Übungsprogramm für zu Hause aufgeteilt. Die betreute Gruppe gewann bis zu 36\u00A0% Zehenkraft und konnte länger auf einem Bein stehen. Die Heimgruppe und eine separate Kontrollgruppe mit 32\u00A0Personen zeigten keine Veränderung der Zehenkraft. Die Autorinnen und Autoren schrieben, dass noch eine Studie nötig sei, die Stürze zählt.',
         'Auch Läuferinnen und Läufer sprechen darauf an. In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern vergrößerten sowohl ein Fußkräftigungsprogramm an mindestens fünf Tagen pro Woche als auch der Wechsel zum Gehen in Minimalschuhen (dünne, flache, flexible Schuhe) über zwei Monate Größe und Kraft der Fußmuskeln, während die Kontrollgruppe gleich blieb. Manche Muskeln waren schon innerhalb eines Monats größer. Wenn dich der Weg über die Schuhe interessiert, lies [Barfußschuhe](/de/barfussschuhe/).',
-        'Bei Verletzungen kommt das stärkste einzelne Ergebnis aus einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern. Wer das Fuß- und Sprunggelenkprogramm nicht bekam, hatte innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit Programm. Es ist eine einzelne Studie, und das Programm trainierte den ganzen Fuß und das Sprunggelenk, nicht nur die Zehen. Wenn du läufst, findest du mehr unter [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Bei Verletzungen kommt das stärkste einzelne Ergebnis aus einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern. Wer das Fuß- und Sprunggelenkprogramm nicht bekam, hatte innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit Programm. Es ist eine einzelne Studie, und das Programm trainierte den ganzen Fuß und das Sprunggelenk, nicht nur die Zehen.',
         'Das Gesamtbild ist weniger sicher:',
         {
           list: [

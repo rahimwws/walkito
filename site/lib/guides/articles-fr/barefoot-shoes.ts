@@ -12,7 +12,7 @@ export const BAREFOOT_FR: Guide = {
     'Chaussures minimalistes (barefoot)\u00A0: ce que montrent les essais sur la force du pied, les blessures de transition, la fasciite plantaire, les pieds plats.',
   h1: 'Les chaussures minimalistes sont-elles bonnes pour les pieds\u00A0? Force, risques et douleur',
   lede:
-    'Les chaussures minimalistes, aussi appelées chaussures barefoot, peuvent renforcer les muscles du pied. Dans les essais, des adultes qui marchaient avec ont gagné en force du pied en quelques mois. Mais une transition trop rapide augmente le risque de stress osseux et de douleur, aucun essai ne montre qu’elles soulagent à elles seules la fasciite plantaire, et les personnes diabétiques ou aux pieds engourdis ont besoin de chaussures protectrices.',
+    'Les chaussures minimalistes, aussi appelées chaussures barefoot, peuvent renforcer les muscles du pied. Dans les essais, des adultes qui marchaient avec ont gagné en force du pied en quelques mois. Mais une transition trop rapide augmente le risque de stress osseux et de douleur, aucun essai ne montre qu’elles soulagent à elles seules la [fasciite plantaire](/fr/fasciite-plantaire/), et les personnes diabétiques ou aux pieds engourdis ont besoin de chaussures protectrices.',
   takeaways: [
     'Dans un essai de 2019 sur 57\u00A0coureurs, marcher en chaussures minimalistes pendant environ deux mois a rendu les muscles du pied plus gros et plus forts, autant que des exercices du pied (Ridge et coll.).',
     'Des adultes qui ont porté des chaussures minimalistes au quotidien pendant six mois ont gagné en moyenne 57,4\u00A0% de force des orteils, dans une étude contrôlée portant sur 22\u00A0personnes ayant changé de chaussures (Curtis et coll., 2021).',
@@ -73,7 +73,7 @@ export const BAREFOOT_FR: Guide = {
             'Dans l’essai de six mois de Fuller et ses collègues sur 61\u00A0coureurs, la douleur à la course était plus élevée en chaussures minimalistes, nettement au-delà d’environ 35\u00A0km par semaine, et le risque de blessure augmentait avec le poids. La différence globale de blessures (16 sur 31 contre 11 sur 30) pouvait être due au hasard.',
           ],
         },
-        'Il s’agissait de coureurs. La marche charge beaucoup moins le pied, ce qui explique en partie pourquoi les études sur la force utilisaient la marche. Si vous courez et avez [mal au talon](/heel-pain-runners/) (en anglais), un changement brutal de chaussures est un changement de charge de plus dont votre pied n’a pas besoin.',
+        'Il s’agissait de coureurs. La marche charge beaucoup moins le pied, ce qui explique en partie pourquoi les études sur la force utilisaient la marche. Si vous courez et avez mal au talon, un changement brutal de chaussures est un changement de charge de plus dont votre pied n’a pas besoin.',
       ],
       sourceNote:
         'Ridge 2013\u00A0: œdème osseux noté de 0 à 4 à l’IRM, P = 0,009 pour la différence entre les groupes. Fuller 2017\u00A0: rapport de risques instantanés 1,64 (IC à 95\u00A0% 0,63 à 4,27, P = 0,31)\u00A0; pour les coureurs pesant 85,7\u00A0kg, le rapport de risques instantanés était de 2,00 (IC à 95\u00A0% 1,10 à 3,66). Ryan 2014\u00A0: 99\u00A0coureurs analysés, 23\u00A0blessures.',

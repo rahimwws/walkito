@@ -15,7 +15,7 @@ export const PTTD_PT: Guide = {
     'A disfunção do tendão tibial posterior, muitas vezes chamada de DTTP, acontece quando o tendão que sustenta o arco pela parte de dentro do tornozelo enfraquece ou inflama. É a causa mais comum de pé chato adquirido na vida adulta. O exercício pode ajudar nos estágios iniciais, mas nem todo estágio responde do mesmo jeito, e a evidência ainda é limitada. Esta página explica os estágios, os exercícios com mais apoio e quando uma bota ou uma cirurgia entram na conversa.',
   intro: [
     'O tendão tibial posterior passa por trás do osso de dentro do tornozelo e se prende embaixo do pé. Ele segura o arco durante a caminhada. Quando ele se degenera, o arco abaixa, o calcanhar inclina para fora e a dor se instala na parte de dentro do tornozelo ou do meio do pé.',
-    'Uma revisão sistemática de 2018 encontrou só três ensaios randomizados ou controlados, somando 93\u00A0pessoas, então a evidência sobre exercício aqui é bem mais fraca do que para problemas como a [fascite plantar](/pt/exercicios-fascite-plantar/) ou a tendinite de Aquiles.',
+    'Uma revisão sistemática de 2018 encontrou só três ensaios randomizados ou controlados, somando 93\u00A0pessoas, então a evidência sobre exercício aqui é bem mais fraca do que para problemas como a [fascite plantar](/pt/exercicios-fascite-plantar/) ou a [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
   ],
   toc: true,
   takeaways: [
@@ -151,7 +151,7 @@ export const PTTD_PT: Guide = {
       h2: 'Qual a relação entre a DTTP e o pé chato?',
       paragraphs: [
         'A DTTP é a causa mais comum de pé chato adquirido na vida adulta, ou seja, um pé chato que aparece na idade adulta em vez de existir desde a infância. **Se você tinha arcos normais e eles começaram a cair de um lado, com dor atrás da parte de dentro do tornozelo, a DTTP é a explicação mais provável.**',
-        'O pé chato flexível congênito, aquele que existe desde a infância, é outra situação. Ele pode nunca causar sintomas. Os exercícios se sobrepõem: pé curto, inversão com faixa e elevação de calcanhar aparecem tanto nos [exercícios para pé chato](/pt/exercicios-pe-chato/) quanto nos programas para DTTP. Mas o contexto clínico é diferente, e a DTTP costuma precisar de órteses e de um acompanhamento mais de perto, porque o tendão está se degenerando, e não apenas frouxo.',
+        'O [pé chato](/pt/pe-chato/) flexível congênito, aquele que existe desde a infância, é outra situação. Ele pode nunca causar sintomas. Os exercícios se sobrepõem: pé curto, inversão com faixa e elevação de calcanhar aparecem tanto nos [exercícios para pé chato](/pt/exercicios-pe-chato/) quanto nos programas para DTTP. Mas o contexto clínico é diferente, e a DTTP costuma precisar de [órteses](/pt/palmilhas-ou-exercicios/) e de um acompanhamento mais de perto, porque o tendão está se degenerando, e não apenas frouxo.',
         'Se você não tem certeza se o seu pé chato é antigo ou novo, um profissional de saúde pode comparar os dois pés, examinar o tendão e olhar o alinhamento do calcanhar quando você fica em pé.',
       ],
       cites: [CITE.ling, CITE.zarali],
@@ -184,7 +184,7 @@ export const PTTD_PT: Guide = {
     {
       q: 'Como é a dor no tendão tibial posterior?',
       cites: [CITE.ling],
-      a: 'A dor costuma ficar atrás ou abaixo do osso de dentro do tornozelo. Ela pode se estender pela parte de dentro do arco. Piora com a atividade, principalmente ao subir ladeira, em terreno irregular ou ao se equilibrar em uma perna. A região pode inchar. Um sinal inicial comum é a dificuldade de fazer a elevação de calcanhar em uma perna do lado afetado.',
+      a: 'A dor costuma ficar atrás ou abaixo do osso de dentro do tornozelo. Ela pode se estender pela parte de dentro do arco. Piora com a atividade, principalmente ao subir ladeira, em terreno irregular ou ao [se equilibrar em uma perna](/pt/exercicios/equilibrio-uma-perna/). A região pode inchar. Um sinal inicial comum é a dificuldade de fazer a elevação de calcanhar em uma perna do lado afetado.',
     },
     {
       q: 'Preciso de palmilha para DTTP?',
@@ -224,7 +224,7 @@ export const PTTD_PT: Guide = {
   },
   program: {
     h2: 'Como transformar isso em um plano',
-    text: 'O Walkito tem a inversão com faixa, o pé curto e a elevação de calcanhar no catálogo de exercícios, e coloca esses exercícios nos dias de força como parte de um programa de arco e equilíbrio. Quando você marca a parte de dentro do tornozelo ou o arco no mapa de dor durante um check-in, a sessão se ajusta a essa informação. O app foi feito para fascite plantar e pé chato. A DTTP se sobrepõe aos dois, mas o app não faz diagnóstico de DTTP e não substitui as órteses nem a classificação do estágio por um profissional de saúde.',
+    text: 'O Walkito tem a inversão com faixa, o pé curto e a elevação de calcanhar no catálogo de exercícios, e coloca esses exercícios nos dias de força como parte de um programa de arco e equilíbrio. Quando você marca a parte de dentro do tornozelo ou o arco no mapa de dor durante um check-in, a sessão se ajusta a essa informação. O app foi feito para [fascite plantar](/pt/fascite-plantar/) e pé chato. A DTTP se sobrepõe aos dois, mas o app não faz diagnóstico de DTTP e não substitui as órteses nem a classificação do estágio por um profissional de saúde.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. Se você recebeu o diagnóstico de DTTP, use o app junto com as órteses e confirme com o seu profissional de saúde que o seu estágio é adequado para exercício.',
     ],

@@ -19,7 +19,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
   lede:
     'O alongamento de panturrilha com o joelho esticado trabalha o gastrocnêmio, o músculo grande e mais superficial da panturrilha. Um gastrocnêmio tenso limita o quanto o tornozelo dobra, e em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo foi o fator de risco independente mais forte. A diretriz de 2023 para dor no calcanhar dá ao alongamento de panturrilha o grau máximo, A.',
   takeaways: [
-    'A dorsiflexão reduzida do tornozelo foi o fator de risco independente mais forte para fascite plantar em um estudo caso-controle pareado, com razão de chances de 23,3 (Riddle e colegas, 2003).',
+    'A dorsiflexão reduzida do tornozelo foi o fator de risco independente mais forte para [fascite plantar](/pt/fascite-plantar/) em um estudo caso-controle pareado, com razão de chances de 23,3 (Riddle e colegas, 2003).',
     'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio (Patel e DiGiovanni, 2011).',
     'A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau A, o mais alto (Koc e colegas, 2023).',
     'Uma metanálise de 2020 encontrou um efeito grande do alongamento da panturrilha e da fáscia plantar, embora a qualidade da evidência fosse de moderada a muito baixa (Siriphorn e Eksakulkla, 2020).',
@@ -87,7 +87,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
     {
       h2: 'Quem deve fazer este alongamento e quem deve pular?',
       paragraphs: [
-        'Este alongamento serve para quem tem dor no calcanhar, fascite plantar, ou panturrilha tensa de ficar em pé o dia todo ou de um esporte que exige muito da panturrilha, como a corrida. Ele aparece nas listas de exercícios de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [pés doendo de ficar em pé](/pt/dor-nos-pes-ficar-em-pe/) e [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês).',
+        'Este alongamento serve para quem tem dor no calcanhar, fascite plantar, ou [panturrilha tensa](/pt/panturrilha-tensa/) de ficar em pé o dia todo ou de um esporte que exige muito da panturrilha, como a corrida. Ele aparece nas listas de exercícios de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) e [pés doendo de ficar em pé](/pt/dor-nos-pes-ficar-em-pe/), e também nos programas para quem corre com dor no calcanhar.',
         'Pule ou adapte se você tem um problema no tendão de Aquiles que dói durante o alongamento. Nesse caso, a dor vem de outra estrutura, e tensionar o Aquiles com um alongamento na parede pode não ser o melhor ponto de partida. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para a abordagem específica do Aquiles.',
         'Se você não alcança a parede ou não fica em pé com conforto, um alongamento sentado com toalha dá um puxão parecido na panturrilha. Passe uma toalha em volta da parte da frente do pé, mantenha o joelho esticado e puxe os dedos em sua direção.',
       ],

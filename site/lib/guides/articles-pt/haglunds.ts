@@ -58,7 +58,7 @@ export const HAGLUNDS_PT: Guide = {
       paragraphs: [
         'A bursa retrocalcânea fica no espaço entre o calcâneo e o tendão de Aquiles. A função dela é reduzir o atrito. Quando o calombo de Haglund é saliente, a bursa é espremida durante a dorsiflexão (dobrar o tornozelo para o pé subir). O resultado é inchaço, dor e às vezes vermelhidão atrás do calcanhar.',
         'A bursite retrocalcânea pode acontecer sem deformidade de Haglund, por exemplo depois de um aumento repentino de corrida ou de treino em subida. Mas a proeminência óssea a torna mais provável. Calçados com contraforte rígido que aperta o calombo são um irritante mecânico direto.',
-        'A dor da bursite retrocalcânea fica atrás do calcanhar, funda, entre o tendão e o osso. Ela é diferente da bursite superficial (um inchaço mole e sensível na superfície da pele) e da dor na parte de dentro do calcanhar da fascite plantar.',
+        'A dor da bursite retrocalcânea fica atrás do calcanhar, funda, entre o tendão e o osso. Ela é diferente da bursite superficial (um inchaço mole e sensível na superfície da pele) e da dor na parte de dentro do calcanhar da [fascite plantar](/pt/fascite-plantar/).',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
     },

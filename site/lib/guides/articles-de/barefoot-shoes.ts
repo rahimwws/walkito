@@ -12,7 +12,7 @@ export const BAREFOOT_DE: Guide = {
     'Sind Barfußschuhe gut für die Füße? Was Studien zu Fußkraft, Verletzungen beim Umstieg, Plantarfasziitis und Plattfuß zeigen und wer sie meiden sollte.',
   h1: 'Sind Barfußschuhe gut für die Füße? Kraft, Risiken und Fußschmerzen',
   lede:
-    'Barfußschuhe, auch Minimalschuhe genannt, können deine Fußmuskeln kräftigen. In Studien gewannen Erwachsene, die darin gingen, innerhalb weniger Monate an Fußkraft. Aber ein zu schneller Umstieg erhöht das Risiko für Knochenstress und Schmerzen, keine Studie zeigt, dass sie allein eine Plantarfasziitis lindern, und Menschen mit Diabetes oder tauben Füßen brauchen schützende Schuhe.',
+    'Barfußschuhe, auch Minimalschuhe genannt, können deine Fußmuskeln kräftigen. In Studien gewannen Erwachsene, die darin gingen, innerhalb weniger Monate an Fußkraft. Aber ein zu schneller Umstieg erhöht das Risiko für Knochenstress und Schmerzen, keine Studie zeigt, dass sie allein eine [Plantarfasziitis](/de/plantarfasziitis/) lindern, und Menschen mit Diabetes oder tauben Füßen brauchen schützende Schuhe.',
   takeaways: [
     'In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern machte Gehen in Minimalschuhen über etwa zwei Monate die Fußmuskeln größer und kräftiger, genauso wie Fußübungen (Ridge und Kollegen).',
     'Erwachsene, die sechs Monate lang im Alltag Minimalschuhe trugen, gewannen im Schnitt 57,4\u00A0% an Zehenkraft, in einer kontrollierten Studie mit 22\u00A0Personen, die umgestiegen sind (Curtis und Kollegen, 2021).',
@@ -73,7 +73,7 @@ export const BAREFOOT_DE: Guide = {
             'In der sechsmonatigen Studie von Fuller und Kollegen mit 61\u00A0Läuferinnen und Läufern waren die Laufschmerzen in Minimalschuhen höher, deutlich ab etwa 35\u00A0km pro Woche, und das Verletzungsrisiko stieg mit dem Körpergewicht. Der Unterschied bei den Verletzungen insgesamt (16 von 31 gegenüber 11 von 30) könnte Zufall gewesen sein.',
           ],
         },
-        'Das waren Läuferinnen und Läufer. Gehen belastet den Fuß viel weniger, und das ist ein Grund, warum die Kraftstudien Gehen genutzt haben. Wenn du läufst und [Fersenschmerzen](/heel-pain-runners/) (auf Englisch) hast, ist ein plötzlicher Schuhwechsel eine weitere Belastungsänderung, die dein Fuß nicht braucht.',
+        'Das waren Läuferinnen und Läufer. Gehen belastet den Fuß viel weniger, und das ist ein Grund, warum die Kraftstudien Gehen genutzt haben. Wenn du läufst und Fersenschmerzen hast, ist ein plötzlicher Schuhwechsel eine weitere Belastungsänderung, die dein Fuß nicht braucht.',
       ],
       sourceNote:
         'Ridge 2013: Knochenmarködem im MRT von 0 bis 4 eingestuft, P = 0,009 für den Gruppenunterschied. Fuller 2017: Hazard Ratio 1,64 (95-%-KI 0,63 bis 4,27, P = 0,31); bei Läuferinnen und Läufern mit 85,7\u00A0kg lag die Hazard Ratio bei 2,00 (95-%-KI 1,10 bis 3,66). Ryan 2014: 99\u00A0Läuferinnen und Läufer ausgewertet, 23\u00A0Verletzungen.',

@@ -73,7 +73,7 @@ export const STANDING_DESK_DE: Guide = {
     {
       h2: 'Welche Schuhe solltest du am Stehschreibtisch tragen?',
       paragraphs: [
-        'Wenn du von zu Hause arbeitest, stehst du vielleicht in Socken oder Hausschuhen am Schreibtisch. Das sind viele Stunden ohne Dämpfung oder Gewölbestütze. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein bei Plantarfasziitis mit Empfehlungsgrad B gegen die Anwendung, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Das betrifft aber Einlagen für sich genommen, nicht die Frage, ob irgendein Schuh besser ist als gar keiner.',
+        'Wenn du von zu Hause arbeitest, stehst du vielleicht in Socken oder Hausschuhen am Schreibtisch. Das sind viele Stunden ohne Dämpfung oder Gewölbestütze. Die Leitlinie von 2023 zu Fersenschmerzen bewertet [Einlagen](/de/einlagen-oder-uebungen/) allein bei [Plantarfasziitis](/de/plantarfasziitis/) mit Empfehlungsgrad B gegen die Anwendung, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Das betrifft aber Einlagen für sich genommen, nicht die Frage, ob irgendein Schuh besser ist als gar keiner.',
         'Ein vernünftiger Weg: **Trag beim Stehen einen Schuh mit etwas Dämpfung und einer stützenden Innensohle, auch zu Hause.** Du brauchst keinen speziellen Schuh für den Stehschreibtisch. Wenn du zwischen Stehen und Sitzen wechselst, kannst du die Schuhe in den Sitzphasen ausziehen.',
         'Die Übungen auf dieser Seite setzen direkt an den Geweben an. Schuhe und Matten verbessern den Komfort beim Stehen, aber sie ersetzen weder Dehnen noch Krafttraining.',
       ],
@@ -232,7 +232,7 @@ export const STANDING_DESK_DE: Guide = {
     },
     {
       q: 'Welche Übungen kann man am Stehschreibtisch machen?',
-      a: 'Im Stehen: Wadendehnungen an der Tischkante (2-mal 30\u00A0Sekunden halten pro Seite) und Fersenheben im Stehen (3\u00A0Sätze à 10). In Sitzpausen: Fersenheben im Sitzen (3\u00A0Sätze à 15), Zehenspreizen und die Übung kurzer Fuß. Sie zielen auf Wade, Plantarfaszie und kurze Fußmuskeln, die die Last beim Stehen tragen. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
+      a: 'Im Stehen: Wadendehnungen an der Tischkante (2-mal 30\u00A0Sekunden halten pro Seite) und Fersenheben im Stehen (3\u00A0Sätze à 10). In Sitzpausen: Fersenheben im Sitzen (3\u00A0Sätze à 15), Zehenspreizen und die [Übung kurzer Fuß](/de/uebungen/kurzer-fuss/). Sie zielen auf Wade, Plantarfaszie und kurze Fußmuskeln, die die Last beim Stehen tragen. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
       cites: [CITE.guideline],
     },
     {

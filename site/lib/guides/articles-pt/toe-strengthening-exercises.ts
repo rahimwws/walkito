@@ -44,7 +44,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Dedos fracos têm relação com dor no calcanhar?',
       paragraphs: [
-        'Dedos fracos aparecem, sim, em pessoas com fascite plantar (dor embaixo do calcanhar, onde se prende a fáscia plantar, uma faixa grossa ao longo da sola do pé). Num estudo de 2003 com 20\u00A0pessoas com fascite plantar em um pé só, o pé com dor tinha os flexores dos dedos mais fracos que o outro pé e mais fracos que os de 20\u00A0pessoas sem dor com características parecidas.',
+        'Dedos fracos aparecem, sim, em pessoas com [fascite plantar](/pt/fascite-plantar/) (dor embaixo do calcanhar, onde se prende a fáscia plantar, uma faixa grossa ao longo da sola do pé). Num estudo de 2003 com 20\u00A0pessoas com fascite plantar em um pé só, o pé com dor tinha os flexores dos dedos mais fracos que o outro pé e mais fracos que os de 20\u00A0pessoas sem dor com características parecidas.',
         'Um estudo maior, de 2015, comparou 202\u00A0pessoas com dor plantar no calcanhar e 70 sem essa dor. Em média, o grupo com dor no calcanhar tinha:',
         {
           list: [
@@ -186,7 +186,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
         'Os exercícios para os dedos podem aumentar a força dos dedos, mas **só quando o trabalho fica mais difícil com o tempo.**',
         'Num ensaio de 2016, 85\u00A0adultos de 60 a 90\u00A0anos foram divididos entre um programa supervisionado, com resistência que aumentava ao longo de três meses, e um programa de exercícios em casa. O grupo supervisionado ganhou até 36% de força nos dedos e conseguiu ficar mais tempo em uma perna. O grupo de casa, e um grupo de controle separado de 32\u00A0pessoas, não mostraram mudança na força dos dedos. Os autores disseram que ainda faltava um ensaio que contasse as quedas.',
         'Os corredores também respondem. Num ensaio de 2019 com 57\u00A0corredores, tanto um programa de fortalecimento do pé feito pelo menos cinco vezes por semana quanto a troca para andar com calçados minimalistas (finos, planos e flexíveis) aumentaram o tamanho e a força dos músculos do pé ao longo de dois meses, enquanto o grupo de controle continuou igual. Alguns músculos já estavam maiores em um mês. Se você tem curiosidade sobre o caminho do calçado, veja [calçados barefoot](/pt/calcados-barefoot/).',
-        'Para lesões, o resultado isolado mais forte vem de um ensaio de 2020 com 118\u00A0corredores amadores. Quem não recebeu o programa para pé e tornozelo teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida ao longo de 12\u00A0meses do que quem recebeu. É um ensaio só, e o programa treinava o pé e o tornozelo inteiros, não só os dedos. Corredores podem ler mais em [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
+        'Para lesões, o resultado isolado mais forte vem de um ensaio de 2020 com 118\u00A0corredores amadores. Quem não recebeu o programa para pé e tornozelo teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida ao longo de 12\u00A0meses do que quem recebeu. É um ensaio só, e o programa treinava o pé e o tornozelo inteiros, não só os dedos.',
         'O quadro geral é menos certo:',
         {
           list: [

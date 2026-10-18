@@ -69,7 +69,7 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
             'Essa rotação obriga o pé a fazer pronação, virando o tornozelo para dentro e achatando o arco.',
           ],
         },
-        'É por isso que muita gente com pé chato ou dor no arco também tem o quadril fraco. O arco não está falhando sozinho. **Ele está recebendo carga demais de cima.** Fortalecer o quadril diminui essa carga que vem de cima para baixo.',
+        'É por isso que muita gente com [pé chato](/pt/pe-chato/) ou dor no arco também tem o quadril fraco. O arco não está falhando sozinho. **Ele está recebendo carga demais de cima.** Fortalecer o quadril diminui essa carga que vem de cima para baixo.',
         'Um estudo transversal de 2013 do Framingham Foot Study analisou cerca de 1.900\u00A0adultos da comunidade. A postura de pé chato em si não estava ligada a dor lombar, mas um pé que girava para dentro ao andar mostrou uma pequena ligação com dor lombar em mulheres, sugerindo que a cadeia pé, quadril e costas pode funcionar nos dois sentidos.',
         'O ensaio de pé chato de Brijwasi e colegas (2023) incluiu fortalecimento do quadril junto com exercícios de pé curto, trabalho de tornozelo e alongamento. O programa combinado melhorou o formato do arco em seis semanas. O estudo não separou quanto o fortalecimento do quadril contribuiu sozinho, mas a inclusão reflete o raciocínio biomecânico.',
       ],
@@ -79,7 +79,7 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
       h2: 'Quem se beneficia da abdução de quadril para a dor no pé?',
       paragraphs: [
         'Quem tem pé chato ou pronação excessiva se beneficia, porque o exercício atua sobre uma causa comum, mais acima, da queda do arco. Se os seus joelhos costumam cair para dentro quando você agacha ou anda, abdutores do quadril fracos provavelmente contribuem.',
-        'Corredores se beneficiam porque ficar em uma perna é a postura padrão da corrida. Cada passada aterrissa em um pé só. Um glúteo médio fraco desse lado deixa o joelho e o pé girarem para dentro, o que pode contribuir para canelite, fascite plantar e joelho de corredor. Veja [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês) e [exercícios para canelite](/pt/canelite-exercicios/) para saber mais.',
+        'Corredores se beneficiam porque ficar em uma perna é a postura padrão da corrida. Cada passada aterrissa em um pé só. Um glúteo médio fraco desse lado deixa o joelho e o pé girarem para dentro, o que pode contribuir para canelite, [fascite plantar](/pt/fascite-plantar/) e joelho de corredor. Veja [exercícios para canelite](/pt/canelite-exercicios/) para saber mais.',
         'Quem fica em pé por muitas horas, principalmente profissionais de enfermagem e do comércio, também pode se beneficiar. Ficar em pé por muito tempo cansa o glúteo médio, e no fim do turno o controle do quadril enfraquece. Veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) para exercícios que combinam com a abdução de quadril.',
       ],
     },

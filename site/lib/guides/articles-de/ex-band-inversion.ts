@@ -29,7 +29,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
       h2: 'Was ist das Einwärtsdrehen mit Band?',
       paragraphs: [
         'Das Einwärtsdrehen mit Band ist eine Übung im Sitzen: Ein Widerstandsband liegt um den Vorfuß und ist am anderen Fuß oder an einem festen Punkt befestigt. Du drehst die Fußsohle gegen den Zug des Bands nach innen (Inversion). Das Knie bleibt ruhig. Nur Fuß und Sprunggelenk bewegen sich.',
-        'Die Übung zielt auf den Tibialis posterior, einen tiefen Muskel hinten im Unterschenkel, dessen Sehne hinter dem Innenknöchel herumläuft und sich an der Unterseite des Fußes auffächert. Er ist der wichtigste extrinsische Muskel für die Stütze des Gewölbes beim Gehen. Wenn er schwächer wird oder seine Sehne degeneriert, flacht das Gewölbe ab, und der Fuß kippt nach innen. Dieses Beschwerdebild heißt Tibialis-posterior-Dysfunktion oder erworbener Plattfuß im Erwachsenenalter.',
+        'Die Übung zielt auf den Tibialis posterior, einen tiefen Muskel hinten im Unterschenkel, dessen Sehne hinter dem Innenknöchel herumläuft und sich an der Unterseite des Fußes auffächert. Er ist der wichtigste extrinsische Muskel für die Stütze des Gewölbes beim Gehen. Wenn er schwächer wird oder seine Sehne degeneriert, flacht das Gewölbe ab, und der Fuß kippt nach innen. Dieses Beschwerdebild heißt [Tibialis-posterior-Dysfunktion](/de/tibialis-posterior-insuffizienz/) oder erworbener Plattfuß im Erwachsenenalter.',
       ],
       cites: [CITE.ling],
     },
@@ -99,7 +99,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
       h2: 'Was sagt die Forschung zur Kräftigung des Tibialis posterior?',
       paragraphs: [
         'Die direktesten Belege für die Bewegung kommen aus der MRT-Studie von Kulig und Kollegen von 2004. Sie bestätigte, dass die Adduktion des Fußes gezielt den Tibialis posterior aktiviert, bei minimaler Aktivierung der umliegenden Muskeln. Damit ist das Einwärtsdrehen gegen ein Band die Übung der Wahl, wenn du genau diesen Muskel kräftigen willst.',
-        'Für klinische Ergebnisse hat eine systematische Übersichtsarbeit von Ross und Kollegen von 2018 Übungsprogramme bei Tibialis-posterior-Dysfunktion untersucht. Die meisten Studien waren klein, aber die Übersichtsarbeit kam zu dem Schluss, dass Programme mit exzentrischen und konzentrischen Übungen für den Tibialis posterior, oft kombiniert mit Wadenkräftigung und Einlagen, Schmerz und Funktion verbesserten.',
+        'Für klinische Ergebnisse hat eine systematische Übersichtsarbeit von Ross und Kollegen von 2018 Übungsprogramme bei Tibialis-posterior-Dysfunktion untersucht. Die meisten Studien waren klein, aber die Übersichtsarbeit kam zu dem Schluss, dass Programme mit exzentrischen und konzentrischen Übungen für den Tibialis posterior, oft kombiniert mit Wadenkräftigung und [Einlagen](/de/einlagen-oder-uebungen/), Schmerz und Funktion verbesserten.',
         '**Die Übung wurde nicht allein in einer großen Studie zu Plantarfasziitis getestet.** Ihre Rolle im Walkito-Programm ist, das Gewölbe zu stützen, indem sie den extrinsischen Stabilisator kräftigt, der neben den kurzen Fußmuskeln arbeitet. Verwandte Seiten: [Übungen bei Plattfüßen](/de/plattfuss-uebungen/), [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/), [Hüftabduktion](/de/uebungen/hueftabduktion/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],

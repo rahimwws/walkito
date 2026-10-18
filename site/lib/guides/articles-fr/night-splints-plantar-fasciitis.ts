@@ -12,7 +12,7 @@ export const NIGHT_SPLINTS_FR: Guide = {
     'Attelle de nuit pour fasciite plantaire\u00A0: ce que disent la recommandation de 2023 et les essais, botte ou chaussette, durée de port, et pourquoi on arrête.',
   h1: 'Attelle de nuit pour fasciite plantaire\u00A0: à quoi elle sert, ce que montrent les essais et comment la porter',
   lede:
-    'Une attelle de nuit pour fasciite plantaire maintient la cheville à environ angle droit pendant le sommeil, pour que le fascia plantaire et le mollet ne se raccourcissent pas pendant la nuit. La recommandation de 2023 sur la douleur au talon lui donne la note **A** pour un à trois mois quand les premiers pas restent douloureux. Les essais sont petits et leurs résultats contrastés, et beaucoup de gens ont du mal à dormir avec une attelle.',
+    'Une attelle de nuit pour [fasciite plantaire](/fr/fasciite-plantaire/) maintient la cheville à environ angle droit pendant le sommeil, pour que le fascia plantaire et le mollet ne se raccourcissent pas pendant la nuit. La recommandation de 2023 sur la douleur au talon lui donne la note **A** pour un à trois mois quand les premiers pas restent douloureux. Les essais sont petits et leurs résultats contrastés, et beaucoup de gens ont du mal à dormir avec une attelle.',
   intro: [
     'Cette page porte sur l’attelle elle-même\u00A0: ce qu’ont trouvé les études, quel modèle choisir, et comment vivre avec. Pour la routine du matin complète, voir [douleur au talon au réveil](/fr/douleur-talon-au-reveil/).',
   ],
@@ -151,7 +151,7 @@ export const NIGHT_SPLINTS_FR: Guide = {
       h2: 'Attelle de nuit, semelles ou étirements\u00A0: par quoi commencer\u00A0?',
       keyFact: 'Dans un essai sur 43\u00A0personnes, la douleur avait baissé à un an de 62\u00A0% dans les groupes semelles et de 48\u00A0% avec une attelle de nuit seule (Roos et coll., 2006).',
       paragraphs: [
-        '**Les étirements du matin viennent en général en premier**, car ils ont la même note **A** que les attelles de nuit, ne coûtent rien et ne perturbent pas le sommeil. La recommandation de 2023 note **A** les étirements du fascia plantaire et du mollet, et **B** le renforcement des muscles du pied et de la cheville. Une méta-analyse de 2020 portant sur huit essais a constaté que les étirements soulageaient la douleur, avec des preuves de qualité modérée que l’étirement du fascia plantaire la soulageait davantage qu’un étirement du mollet.',
+        '**Les étirements du matin viennent en général en premier**, car ils ont la même note **A** que les attelles de nuit, ne coûtent rien et ne perturbent pas le sommeil. La recommandation de 2023 note **A** les étirements du fascia plantaire et du mollet, et **B** le renforcement des muscles du pied et de la cheville. Une méta-analyse de 2020 portant sur huit essais a constaté que les étirements soulageaient la douleur, avec des preuves de qualité modérée que l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) la soulageait davantage qu’un étirement du mollet.',
         'Les attelles de nuit et les semelles semblent mieux fonctionner ensemble que séparément\u00A0:',
         {
           list: [
@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_FR: Guide = {
     {
       h2: 'À qui une attelle de nuit peut-elle convenir, et qui devrait s’en passer\u00A0?',
       paragraphs: [
-        '**Une attelle de nuit convient le mieux si votre fasciite plantaire suit le schéma classique**\u00A0: les premiers pas au lever sont le pire moment de la journée, et cela continue malgré des étirements réguliers. C’est exactement le groupe que cite la recommandation. Dans l’essai de Powell, la réponse à l’attelle ne dépendait ni du type de pied, ni du poids, ni de la présence d’une épine calcanéenne à la radio.',
+        '**Une attelle de nuit convient le mieux si votre fasciite plantaire suit le schéma classique**\u00A0: les premiers pas au lever sont le pire moment de la journée, et cela continue malgré des étirements réguliers. C’est exactement le groupe que cite la recommandation. Dans l’essai de Powell, la réponse à l’attelle ne dépendait ni du type de pied, ni du poids, ni de la présence d’une [épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/) à la radio.',
         'Une attelle a moins de sens si votre talon fait mal surtout quand vous êtes allongé au lit, ou s’il vous réveille. C’est un autre schéma, et [douleur au talon la nuit](/fr/douleur-talon-la-nuit/) explique les causes à écarter. Une attelle convient mal aussi si vous avez une mauvaise sensibilité ou une mauvaise circulation dans les pieds, car les sangles et les coques peuvent frotter une peau que vous ne sentez pas.',
         'La fasciite plantaire se calme souvent en quelques mois quoi que vous utilisiez, ce qui est l’une des raisons pour lesquelles les essais sur les attelles sont difficiles à interpréter. Pour des durées réalistes, voir [combien de temps dure une fasciite plantaire](/fr/combien-de-temps-dure-fasciite-plantaire/).',
       ],

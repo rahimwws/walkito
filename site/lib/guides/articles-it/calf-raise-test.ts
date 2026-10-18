@@ -42,7 +42,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
         {
           list: [
             'Per seguire il recupero dopo una rottura del tendine d’Achille.',
-            'Per individuare un polpaccio debole in chi ha dolore al tallone o periostite tibiale.',
+            'Per individuare un polpaccio debole in chi ha dolore al tallone o [periostite tibiale](/it/periostite-tibiale-esercizi/).',
             'Per confrontare una gamba con l’altra.',
           ],
         },
@@ -142,7 +142,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
             'Il non conoscere il test.',
           ],
         },
-        '**Il test non è una diagnosi.** Un punteggio di 15 in un uomo di 30\u00A0anni non vuol dire che ha la fascite plantare o la tendinite d’Achille. Vuol dire che la resistenza del suo polpaccio è sotto la mediana di 33 per quel gruppo.',
+        '**Il test non è una diagnosi.** Un punteggio di 15 in un uomo di 30\u00A0anni non vuol dire che ha la [fascite plantare](/it/fascite-plantare/) o la tendinite d’Achille. Vuol dire che la resistenza del suo polpaccio è sotto la mediana di 33 per quel gruppo.',
         'Un professionista sanitario mette insieme il numero con altri dati per capire se spiega un sintomo. Il test dice di più come andamento che come singolo dato: passare da 14 a 22 in due mesi è un segnale più chiaro di qualsiasi numero confrontato con una tabella.',
       ],
       cites: [CITE.hebertLosier],
@@ -153,7 +153,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
         'Il polpaccio e la fascia plantare sono collegati attraverso l’osso del tallone. Il tendine d’Achille tira da dietro; la fascia tira da sotto. **Polpacci deboli o che si stancano presto mettono più tensione su entrambi a ogni passo.**',
         'La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio e della fascia plantare il suo grado più alto, A, e al lavoro di forza una B. Lo studio di Rathleff, che ha testato i sollevamenti sulle punte con carico per la fascite plantare, usava un sollevamento sulle punte come esercizio principale, e i partecipanti hanno migliorato il dolore più in fretta che con il solo stretching nell’arco di tre mesi. Vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) per il protocollo completo.',
         'Per la tendinite d’Achille, l’heel-rise test è una delle misure di risultato standard. Chi ha una tendinopatia d’Achille della porzione media (dolore a metà del tendine, non sull’osso del tallone) di solito mostra una resistenza del polpaccio ridotta sul lato colpito. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per il lavoro eccentrico.',
-        'Nella corsa, il polpaccio assorbe da due a tre volte il peso del corpo a ogni passo. Un polpaccio che si stanca presto sposta il carico su ginocchio, tibia e piede. Far salire il punteggio può essere parte di un piano di ritorno alla corsa. Vedi [dolore al tallone e corsa](/heel-pain-runners/) (in inglese) per il quadro completo.',
+        'Nella corsa, il polpaccio assorbe da due a tre volte il peso del corpo a ogni passo. Un polpaccio che si stanca presto sposta il carico su ginocchio, tibia e piede. Far salire il punteggio può essere parte di un piano di ritorno alla corsa.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -226,7 +226,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
     {
       q: 'Quali sono i segni di polpacci deboli?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'I polpacci deboli spesso si notano con una stanchezza rapida su scale o salite, una spinta più debole camminando o correndo, o oscillazioni nell’equilibrio su una gamba. Il segno oggettivo più chiaro è il test del sollevamento sulle punte su una gamba: una differenza netta tra gamba sinistra e destra è più affidabile di come il polpaccio appare o di come lo senti.',
+      a: 'I polpacci deboli spesso si notano con una stanchezza rapida su scale o salite, una spinta più debole camminando o correndo, o oscillazioni nell’[equilibrio su una gamba](/it/esercizi/equilibrio-su-una-gamba/). Il segno oggettivo più chiaro è il test del sollevamento sulle punte su una gamba: una differenza netta tra gamba sinistra e destra è più affidabile di come il polpaccio appare o di come lo senti.',
     },
     {
       q: 'Dove si deve sentire il sollevamento sulle punte?',

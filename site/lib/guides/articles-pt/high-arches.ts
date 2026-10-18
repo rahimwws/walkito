@@ -21,7 +21,7 @@ export const HIGH_ARCHES_PT: Guide = {
     'Exercícios para pé cavo: alongamento da panturrilha e da fáscia plantar, estabilidade do tornozelo, palmilhas sob medida e sinais de alerta neurológicos.',
   h1: 'Exercícios para pé cavo: o que ajuda e o que precisa de um profissional de saúde',
   lede:
-    'O pé com arco alto, chamado de pé cavo, é rígido e não flexiona o suficiente para absorver o impacto. A força se concentra no calcanhar e na parte da frente do pé, e a fáscia plantar muitas vezes é tensa. Cerca de 60% das pessoas com pé cavo relatam dor no pé. A evidência mais forte é para palmilhas amortecidas ou sob medida. O exercício se concentra em alongar a panturrilha e a fáscia plantar, melhorar a mobilidade do tornozelo e ganhar estabilidade.',
+    'O pé com arco alto, chamado de pé cavo, é rígido e não flexiona o suficiente para absorver o impacto. A força se concentra no calcanhar e na parte da frente do pé, e a fáscia plantar muitas vezes é tensa. Cerca de 60% das pessoas com pé cavo relatam dor no pé. A evidência mais forte é para palmilhas amortecidas ou sob medida. O exercício se concentra em alongar a panturrilha e a fáscia plantar, melhorar a [mobilidade do tornozelo](/pt/exercicios-mobilidade-tornozelo/) e ganhar estabilidade.',
   intro: [
     'O pé cavo afeta mais ou menos 1 em cada 10 pessoas (Burns e colegas, 2007). Muitas pessoas com arco alto nunca têm dor no pé. Para quem tem, a dor normalmente fica embaixo do calcanhar, na parte da frente do pé ou ao longo da fáscia plantar tensa. A causa importa: a maioria dos pés cavos é idiopática (sem causa conhecida), mas uma parte é causada por condições neurológicas, como a doença de Charcot-Marie-Tooth. Um pé cavo progressivo ou de um lado só sempre precisa de um profissional de saúde.',
   ],
@@ -43,7 +43,7 @@ export const HIGH_ARCHES_PT: Guide = {
         'A dor no pé cavo costuma aparecer como:',
         {
           list: [
-            'Metatarsalgia (dor na planta do pé, na parte da frente).',
+            '[Metatarsalgia](/pt/metatarsalgia-dor-na-planta-do-pe/) (dor na planta do pé, na parte da frente).',
             'Dor embaixo do calcanhar.',
             'Dor ao longo da fáscia plantar tensa.',
           ],
@@ -95,7 +95,7 @@ export const HIGH_ARCHES_PT: Guide = {
         '**As palmilhas sob medida têm a evidência mais forte para a dor do pé cavo.** No único ensaio randomizado, Burns e colegas dividiram 154\u00A0adultos com dor crônica no pé e pé cavo nos dois lados entre palmilhas de polipropileno feitas sob medida e uma palmilha placebo plana.',
         'Aos três meses, o grupo das palmilhas sob medida relatou 8,3\u00A0pontos a mais de melhora na dor no pé, no Foot Health Status Questionnaire, que o grupo placebo. As notas de função melhoraram 9,5\u00A0pontos a mais. A pressão plantar caiu 26% com as palmilhas sob medida, contra 9% com a placebo.',
         'O ensaio incluiu pessoas com pé cavo idiopático e neuromuscular (133 idiopáticos, 21 neuromusculares, incluindo 16 com doença de Charcot-Marie-Tooth). As palmilhas eram moldadas ao formato do pé, com uma cobertura amortecida em todo o comprimento.',
-        'Palmilhas amortecidas compradas prontas são um primeiro passo razoável antes de investir em palmilhas sob medida, que são mais caras. O que o ensaio mostrou ser eficaz foi moldar a base da palmilha ao formato exato do pé, e não só acrescentar um amortecimento plano.',
+        '[Palmilhas amortecidas](/pt/palmilhas-ou-exercicios/) compradas prontas são um primeiro passo razoável antes de investir em palmilhas sob medida, que são mais caras. O que o ensaio mostrou ser eficaz foi moldar a base da palmilha ao formato exato do pé, e não só acrescentar um amortecimento plano.',
       ],
       sourceNote:
         'Burns 2006: 154\u00A0adultos, acompanhamento de 3\u00A0meses, diferença na dor do Foot Health Status Questionnaire de 8,3\u00A0pontos (IC 95% 1,2-15,3, p=0,022), diferença na função de 9,5\u00A0pontos (IC 95% 2,9-16,1, p=0,005).',
@@ -105,7 +105,7 @@ export const HIGH_ARCHES_PT: Guide = {
       h2: 'Quais exercícios ajudam no pé cavo?',
       keyFact: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau A e ao treino de força o grau B para a dor embaixo do calcanhar, o local de dor mais comum no pé cavo (Koc e colegas, 2023).',
       paragraphs: [
-        'Nenhum ensaio testou um programa de exercícios feito especificamente para a dor do pé cavo. Os exercícios abaixo trabalham as estruturas que costumam ficar tensas ou instáveis num pé cavo: a panturrilha, a fáscia plantar, o tornozelo e os músculos intrínsecos do pé. Eles vêm da evidência sobre fascite plantar, instabilidade do tornozelo e condicionamento geral do pé, e estão identificados como tal.',
+        'Nenhum ensaio testou um programa de exercícios feito especificamente para a dor do pé cavo. Os exercícios abaixo trabalham as estruturas que costumam ficar tensas ou instáveis num pé cavo: a panturrilha, a fáscia plantar, o tornozelo e os músculos intrínsecos do pé. Eles vêm da evidência sobre [fascite plantar](/pt/fascite-plantar/), instabilidade do tornozelo e condicionamento geral do pé, e estão identificados como tal.',
         'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau A e ao treino de força o grau B para a dor embaixo do calcanhar, um dos locais de dor mais comuns no pé cavo. Não existe uma diretriz equivalente específica para o pé cavo.',
         'Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje.',
       ],
@@ -188,7 +188,7 @@ export const HIGH_ARCHES_PT: Guide = {
     {
       h2: 'E o calçado para pé cavo?',
       paragraphs: [
-        '**O calçado para pé cavo deve amortecer, não controlar.** Ao contrário do pé chato, em que um reforço firme na parte de dentro evita o desabamento, o pé cavo precisa do oposto: um calçado que absorva o impacto, porque o próprio pé não absorve.',
+        '**O calçado para pé cavo deve amortecer, não controlar.** Ao contrário do [pé chato](/pt/pe-chato/), em que um reforço firme na parte de dentro evita o desabamento, o pé cavo precisa do oposto: um calçado que absorva o impacto, porque o próprio pé não absorve.',
         'Procure:',
         {
           list: [

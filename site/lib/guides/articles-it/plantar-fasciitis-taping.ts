@@ -97,7 +97,7 @@ export const PF_TAPING_IT: Guide = {
     {
       h2: 'Come applicare il kinesio tape per la fascite plantare?',
       paragraphs: [
-        'Il kinesio tape per la fascite plantare di solito è una lunga striscia che parte dal tallone e corre lungo la pianta, con l’estremità anteriore divisa in strisce sottili che si aprono a ventaglio verso le dita. Nessuna tecnica di applicazione si è dimostrata migliore di un altro, quindi usa qualsiasi metodo come punto di partenza e osserva come risponde il tuo piede.',
+        'Il kinesio tape per la fascite plantare di solito è una lunga striscia che parte dal tallone e corre lungo la pianta, con l’estremità anteriore divisa in strisce sottili che si aprono a ventaglio verso le dita. Nessuna tecnica di applicazione si è dimostrata migliore di un’altra, quindi usa qualsiasi metodo come punto di partenza e osserva come risponde il tuo piede.',
       ],
       bullets: [
         '**Misura.** Taglia una striscia dal retro del tallone alla base delle dita. Arrotonda gli angoli così si staccano meno.',

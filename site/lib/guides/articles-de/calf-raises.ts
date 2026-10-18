@@ -17,7 +17,7 @@ export const CALF_RAISES_DE: Guide = {
     'Wadenheben bei Plantarfasziitis: Dosis nach dem Rathleff-Protokoll, Fersenheben mit Handtuch, wie viele Wiederholungen, wann steigern, wie Walkito startet.',
   h1: 'Fersenheben (Wadenheben) bei Plantarfasziitis: wie es geht und wie viele Wiederholungen',
   lede:
-    'Fersenheben ist eine der [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), und es ist die Übung hinter der einzigen randomisierten Studie, die gezielt Krafttraining gegen Dehnen bei Plantarfasziitis getestet hat. In einer Studie mit 48\u00A0Personen linderte schweres Fersenheben die Schmerzen über drei Monate schneller als Dehnen allein. Diese Seite geht bei dieser einen Übung in die Tiefe: das genaue Protokoll, das Handtuch, die Steigerung und wo die Übung neben dem Dehnen steht.',
+    'Fersenheben ist eine der [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), und es ist die Übung hinter der einzigen randomisierten Studie, die gezielt Krafttraining gegen Dehnen bei [Plantarfasziitis](/de/plantarfasziitis/) getestet hat. In einer Studie mit 48\u00A0Personen linderte schweres Fersenheben die Schmerzen über drei Monate schneller als Dehnen allein. Diese Seite geht bei dieser einen Übung in die Tiefe: das genaue Protokoll, das Handtuch, die Steigerung und wo die Übung neben dem Dehnen steht.',
   intro: [
     'Die Leitlinie von 2023 zu Fersenschmerzen gibt Krafttraining den Empfehlungsgrad **B**, eine Stufe unter dem Dehnen mit **A**. Beides wird empfohlen. Das Fersenheben ist die Kraftseite dieses Paars. Wenn dein Schmerz frisch ist und du die ganze Liste der Übungen suchst, fang bei den [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) an. Diese Seite geht davon aus, dass du die Details zum Fersenheben selbst willst.',
   ],
@@ -35,7 +35,7 @@ export const CALF_RAISES_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Fersenheben hilft bei Plantarfasziitis, weil es die Kette aus Wade, Achillessehne und Plantarfaszie kräftigt, die bei jedem Fersenaufsatz die Last abfängt.',
-        'Die einzige randomisierte Studie, die diese Übung direkt bei Plantarfasziitis getestet hat, ist Rathleff 2015. In dieser Studie wurden 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis in zwei Gruppen aufgeteilt. Beide trugen Schuheinlagen. Eine Gruppe machte langsames Fersenheben mit Zusatzgewicht und einem zusammengerollten Handtuch unter den Zehen. Die andere dehnte die Plantarfaszie.',
+        'Die einzige randomisierte Studie, die diese Übung direkt bei Plantarfasziitis getestet hat, ist Rathleff 2015. In dieser Studie wurden 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis in zwei Gruppen aufgeteilt. Beide trugen [Schuheinlagen](/de/einlagen-oder-uebungen/). Eine Gruppe machte langsames Fersenheben mit Zusatzgewicht und einem zusammengerollten Handtuch unter den Zehen. Die andere dehnte die Plantarfaszie.',
         'Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index um 29\u00A0Punkte besser ab. Nach zwölf Monaten lagen beide Gruppen gleichauf.',
         '**Fersenheben hat die Besserung also beschleunigt,** aber langfristig nicht verstärkt. Die klinische Leitlinie von 2023 bewertet Krafttraining mit B und Dehnen mit A. Sie empfiehlt beides. Nichts in der Studienlage spricht dafür, dass du dich für eins entscheiden und das andere weglassen solltest.',
       ],
@@ -146,7 +146,7 @@ export const CALF_RAISES_DE: Guide = {
     {
       h2: 'Womit fängst du in Walkito an?',
       paragraphs: [
-        'Walkito wirft dich nicht am ersten Tag ins Rathleff-Protokoll. Die App beginnt mit Fersenheben im Sitzen (3\u00A0Sätze à 10, beide Füße), geht dann zum Fersenheben beidbeinig im Stehen, dann zum Fersenheben mit Halten und erst danach zum einbeinigen Fersenheben mit Handtuch und Zusatzgewicht. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
+        'Walkito wirft dich nicht am ersten Tag ins Rathleff-Protokoll. Die App beginnt mit [Fersenheben](/de/uebungen/fersenheben/) im Sitzen (3\u00A0Sätze à 10, beide Füße), geht dann zum Fersenheben beidbeinig im Stehen, dann zum Fersenheben mit Halten und erst danach zum [einbeinigen Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) und Zusatzgewicht. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
         'Diese Stufenfolge ist das eigene Tempo der App, kein veröffentlichtes Protokoll. Es gibt sie, weil die meisten, die mit einem Übungsplan gegen Fersenschmerzen anfangen, in der ersten Einheit noch nicht für einbeiniges Fersenheben mit Gewicht bereit sind.',
         'Die Stufenfolge für die Wade läuft in der App so:',
         {
@@ -168,7 +168,7 @@ export const CALF_RAISES_DE: Guide = {
       figure: { id: 'calf', caption: 'Die beiden Wadenmuskeln, Gastrocnemius und Soleus, gehen in die Achillessehne über, die am Fersenbein ansetzt.', alt: 'Unterschenkel von der Seite und von hinten: Gastrocnemius und Soleus werden schmaler und gehen über der Ferse in die Achillessehne über.' },
       keyFact: 'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus (Patel und Kollegen, 2011).',
       paragraphs: [
-        'Eine verkürzte Wade zieht über die Achillessehne an der Ferse, und am anderen Ende teilt sich die Plantarfaszie die Last. **Wenn sich das Sprunggelenk nicht weit genug beugen lässt, kommt bei jedem Schritt mehr Spannung auf die Faszie.**',
+        'Eine [verkürzte Wade](/de/verspannte-waden/) zieht über die Achillessehne an der Ferse, und am anderen Ende teilt sich die Plantarfaszie die Last. **Wenn sich das Sprunggelenk nicht weit genug beugen lässt, kommt bei jedem Schritt mehr Spannung auf die Faszie.**',
         'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius, des oberflächlicheren Wadenmuskels, und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus.',
         'Unabhängig davon fand eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0passenden Kontrollen, dass eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor für Plantarfasziitis war.',
         'Deshalb stehen Wadendehnen und Wadenkräftigung beide auf der Liste. Dehnen gibt dem Sprunggelenk mehr Beweglichkeit. Kräftigen gibt der Wade genug Kapazität, damit sie unter der normalen Last des Alltags nicht verspannt. Die Leitlinie empfiehlt beides. Derselbe Mechanismus einer verkürzten Wade taucht auch bei anderen Schmerzen am Unterschenkel auf: Lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/) und [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/), wenn dein Schmerzmuster eher nach einem davon aussieht.',
@@ -179,7 +179,7 @@ export const CALF_RAISES_DE: Guide = {
       h2: 'Was unterscheidet Fersenheben bei Plantarfasziitis von Fersenheben bei Achillessehnenentzündung?',
       paragraphs: [
         '**Die Bewegung ist fast dieselbe, aber das Ziel, das Handtuch und die Schmerzregel unterscheiden sich.** Bei Plantarfasziitis belastet das Handtuch unter den Zehen die Faszie über den Windlass-Mechanismus. Das Tempo ist 3\u00A0Sekunden hoch, 2\u00A0Sekunden halten, 3 runter, jeden zweiten Tag. Die Schmerzregel auf dieser Seite lautet: Hör auf, wenn der Schmerz 6/10 oder mehr erreicht.',
-        'Bei Achillessehnenentzündung ist das klassische Protokoll das exzentrische Fersenabsenken (nur das Absenken, das Hochkommen machst du auf beiden Füßen), ursprünglich zweimal am Tag, sieben Tage die Woche, und in den Schmerz hinein bis etwa 5/10, solange er bis zum nächsten Morgen abklingt.',
+        'Bei Achillessehnenentzündung ist das klassische Protokoll das [exzentrische Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) (nur das Absenken, das Hochkommen machst du auf beiden Füßen), ursprünglich zweimal am Tag, sieben Tage die Woche, und in den Schmerz hinein bis etwa 5/10, solange er bis zum nächsten Morgen abklingt.',
         'Ein Handtuch wird nicht benutzt, weil die Belastung der Faszie nicht das Ziel ist. Und bei Schmerzen am Ansatz der Achillessehne, direkt hinten am Fersenbein, sollte das Fersenabsenken auf Bodenhöhe bleiben und nicht unter die Stufenkante gehen, weil eine tiefe Dorsalflexion die Sehne gegen den Knochen drückt.',
         'Die beiden Übungen sind eng verwandt. Wenn dein Schmerz hinten an der Ferse oder in der Sehne darüber sitzt und nicht unter dem Fuß, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
@@ -189,7 +189,7 @@ export const CALF_RAISES_DE: Guide = {
       h2: 'Wie oft solltest du einbeiniges Fersenheben schaffen?',
       keyFact: 'Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen fand beim einbeinigen Fersenheben eine Zahl im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
-        'Ein häufiger Richtwert für Erwachsene beim einbeinigen Ausdauertest mit Fersenheben liegt im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen, auf Basis von Normwerten aus 566\u00A0gesunden Erwachsenen. Die Zahl verschiebt sich mit Alter, Geschlecht, BMI und Aktivität, sie ist also ein Bezugspunkt, keine Grenze zum Bestehen oder Durchfallen. Wichtiger für den Verlauf bei Plantarfasziitis ist, **ob die Zahl von Woche zu Woche steigt und ob beide Seiten ungefähr gleich sind.**',
+        'Ein häufiger Richtwert für Erwachsene beim [einbeinigen Ausdauertest mit Fersenheben](/de/fersenheben-test/) liegt im unteren bis mittleren 20er-Bereich, im Schnitt etwa 23 bis 24\u00A0Wiederholungen, auf Basis von Normwerten aus 566\u00A0gesunden Erwachsenen. Die Zahl verschiebt sich mit Alter, Geschlecht, BMI und Aktivität, sie ist also ein Bezugspunkt, keine Grenze zum Bestehen oder Durchfallen. Wichtiger für den Verlauf bei Plantarfasziitis ist, **ob die Zahl von Woche zu Woche steigt und ob beide Seiten ungefähr gleich sind.**',
         'Das Wadenziel in der App ist 25-mal einbeiniges Fersenheben. Der Test wird alle 14\u00A0Tage wiederholt, solange das Wadenziel aktiv ist, danach alle 28\u00A0Tage, sobald es erreicht ist, sodass du den Trend siehst, ohne zu raten.',
       ],
       cites: [CITE.hebertLosier],
@@ -207,7 +207,7 @@ export const CALF_RAISES_DE: Guide = {
       h2: 'Erst dehnen oder erst kräftigen bei Plantarfasziitis?',
       paragraphs: [
         'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade den Empfehlungsgrad **A** und Krafttraining den Empfehlungsgrad **B**. Beides wird also empfohlen, und die Belege zum Dehnen sind etwas breiter. In der Rathleff-Studie verbesserte sich die Kraftgruppe in den ersten drei Monaten schneller, aber nach zwölf Monaten lagen beide Gruppen gleichauf.',
-        'Nichts in der Studienlage sagt, dass du das eine abschließen musst, bevor du mit dem anderen anfängst. Die App beginnt am ersten Tag mit Dehnen und nimmt die erste Wadenkräftigung dazu, sobald das Ziel vom Beruhigen des Schmerzes zum Aufbau von Kapazität wechselt. Die Plantarfaszien-Dehnung jeden Morgen vor den ersten Schritten ist der Rat, den die Leitlinie am häufigsten wiederholt.',
+        'Nichts in der Studienlage sagt, dass du das eine abschließen musst, bevor du mit dem anderen anfängst. Die App beginnt am ersten Tag mit Dehnen und nimmt die erste Wadenkräftigung dazu, sobald das Ziel vom Beruhigen des Schmerzes zum Aufbau von Kapazität wechselt. Die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) jeden Morgen vor den ersten Schritten ist der Rat, den die Leitlinie am häufigsten wiederholt.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

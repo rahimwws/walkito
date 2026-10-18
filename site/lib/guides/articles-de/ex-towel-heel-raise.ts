@@ -17,7 +17,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     'Fersenheben mit Handtuch nach dem Rathleff-Protokoll bei Plantarfasziitis: Sätze, Wiederholungen, Tempo, das Handtuch unter den Zehen und typische Fehler.',
   h1: 'Fersenheben mit Handtuch: das Rathleff-Protokoll mit hoher Last, Schritt für Schritt',
   lede:
-    'Das Fersenheben mit Handtuch ist ein einbeiniges Fersenheben auf einer Stufe mit einem zusammengerollten Handtuch unter den Zehen. Es stammt aus einer Studie von 2015 mit 48\u00A0Personen mit Plantarfasziitis, in der diese Übung Fersenschmerzen über drei Monate schneller linderte als Dehnen allein. Das Handtuch macht den Unterschied zum normalen Fersenheben: Es bezieht die Plantarfaszie über den Windlass-Mechanismus mit ein.',
+    'Das Fersenheben mit Handtuch ist ein einbeiniges Fersenheben auf einer Stufe mit einem zusammengerollten Handtuch unter den Zehen. Es stammt aus einer Studie von 2015 mit 48\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/), in der diese Übung Fersenschmerzen über drei Monate schneller linderte als Dehnen allein. Das Handtuch macht den Unterschied zum normalen Fersenheben: Es bezieht die Plantarfaszie über den Windlass-Mechanismus mit ein.',
   takeaways: [
     'In einer Studie mit 48\u00A0Personen schnitt Fersenheben mit Handtuch und Zusatzgewicht nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
     'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Krafttraining mit B, eine Stufe unter dem Dehnen mit A, und empfiehlt beides (Koc und Kollegen, 2023).',

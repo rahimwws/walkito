@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
         'Eine geringe Beugung im Sprunggelenk hängt mit mehreren Problemen zusammen, aber ein Zusammenhang ist nicht dasselbe wie eine Ursache:',
         {
           list: [
-            '**Plantarfasziitis:** In einer Fall-Kontroll-Studie mit passenden Kontrollpersonen, 50 mit Plantarfasziitis und 100 ohne, hatten Menschen mit 0\u00A0Grad Dorsalflexion oder weniger eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen mit über 10\u00A0Grad (Riddle und Kollegen, 2003).',
+            '**Plantarfasziitis:** In einer Fall-Kontroll-Studie mit passenden Kontrollpersonen, 50 mit [Plantarfasziitis](/de/plantarfasziitis/) und 100 ohne, hatten Menschen mit 0\u00A0Grad Dorsalflexion oder weniger eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen mit über 10\u00A0Grad (Riddle und Kollegen, 2003).',
             '**Verletzungen bei Rekruten:** Bei 1.093\u00A0männlichen Rekruten, die über drei Monate harte Ausbildung begleitet wurden, sagte der zu Beginn gemessene Bewegungsumfang im Sprunggelenk stark voraus, wer sich verletzte, bei insgesamt 48\u00A0Verletzungen (Pope und Kollegen, 1998).',
           ],
         },

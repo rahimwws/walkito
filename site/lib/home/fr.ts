@@ -64,17 +64,17 @@ export const HOME_FR: HomeCopy = {
     {
       title: 'Une semaine à la fois, autour d’un objectif',
       text: `Chaque semaine tourne autour d’un objectif mesurable\u00A0: une douleur au talon le matin de ${PAIN_GOAL_MAX}/10 ou moins pendant ${painFreeDays}\u00A0jours de suite, tenir la voûte ${archHoldSeconds}\u00A0secondes, ${calfRaises} montées sur pointes sur une jambe, ${balanceSeconds}\u00A0secondes d’équilibre sur une jambe, ou moins de ${gapPercent}\u00A0% d’écart entre la gauche et la droite. Quand vous en atteignez un, il passe en entretien et le suivant prend sa place.`,
-      link: 'Comment fonctionne le plan (en anglais)',
+      link: 'Comment fonctionne Walkito',
     },
     {
       title: `Un test tous les ${testEveryDays}\u00A0jours, puis tous les ${testEveryDaysAfterGoal}`,
       text: `${retestTests} tests physiques en ${retestMinutes}\u00A0minutes environ\u00A0: montées sur pointes jusqu’à épuisement, maintien de la voûte, équilibre sur une jambe des deux côtés. Tous les ${testEveryDays}\u00A0jours jusqu’à ce que vous atteigniez votre premier objectif, puis tous les ${testEveryDaysAfterGoal}. Les progrès sont mesurés, pas devinés d’après votre ressenti de la semaine.`,
-      link: 'Ce que mesurent les tests (en anglais)',
+      link: 'En savoir plus sur Walkito',
     },
     {
       title: 'Exercices choisis d’après la recherche publiée',
       text: 'Des exercices choisis d’après la recherche et les recommandations publiées. Walkito lui-même n’a pas été testé dans un essai clinique.',
-      link: 'Voir les données scientifiques (en anglais)',
+      link: 'Notre méthode de recherche',
     },
   ],
   faq: [

@@ -226,7 +226,7 @@ export const SHIN_SPLINTS_DE: Guide = {
         },
         'Wenn der Schmerz beim Aufwärmen nachlässt und erträglich bleibt, ist ein kürzerer oder leichterer Lauf seltener pro Woche ein vernünftiger Mittelweg, während sich das Schienbein anpasst. Ruhetage zwischen den Läufen geben dem Knochen Zeit, auf die Belastung zu reagieren.',
         'Die 10-%-Regel, also den Wochenumfang um höchstens 10\u00A0% zu steigern, ist eine oft genannte Faustregel, aber keine bewiesene. Eine Studie von 2008 mit 532\u00A0Laufanfängern fand keinen Unterschied bei den Verletzungsraten zwischen einem Programm nach der 10-%-Regel und einem schnelleren.',
-        'Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. **Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt.** [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf dieselbe Belastungssteuerung ein.',
+        'Was eine Studie von 2014 mit 874\u00A0Läufern zeigte: Große, plötzliche Sprünge in der Distanz gehen mit mehr Verletzungen einher. **Langsam ist besser als plötzlich, aber ein bestimmter Prozentsatz ist nicht durch Studien gestützt.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },

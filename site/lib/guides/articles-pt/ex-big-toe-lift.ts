@@ -121,7 +121,7 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
     {
       q: 'A elevação do dedão ajuda na fascite plantar?',
       cites: [CITE.guideline],
-      a: 'A elevação do dedão não faz parte da diretriz principal para fascite plantar, que foca em alongamento e elevação de calcanhar com carga. Ela pode ajudar como parte de um programa mais amplo, melhorando o controle do mecanismo de molinete. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) para os exercícios principais.',
+      a: 'A elevação do dedão não faz parte da diretriz principal para [fascite plantar](/pt/fascite-plantar/), que foca em alongamento e elevação de calcanhar com carga. Ela pode ajudar como parte de um programa mais amplo, melhorando o controle do mecanismo de molinete. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) para os exercícios principais.',
     },
     {
       q: 'Devo fazer elevação do dedão ou o exercício do pé curto?',

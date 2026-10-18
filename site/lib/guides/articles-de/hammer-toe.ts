@@ -74,7 +74,7 @@ export const HAMMER_TOE_DE: Guide = {
       paragraphs: [
         'Die ehrliche Antwort: **Es gibt keine randomisierten kontrollierten Studien, die Übungen speziell bei Hammerzehen getestet haben.** Die häufig empfohlenen Übungen wie Handtuchgreifen, Zehenspreizen und Dehnen mit der Hand beruhen auf der Idee, dass die Kräftigung der inneren Fußmuskeln und der Erhalt der Gelenkbeweglichkeit helfen können, dass eine flexible Fehlstellung nicht starr wird.',
         'Diese Logik ist nachvollziehbar. Die Fehlstellung entsteht durch ein muskuläres Ungleichgewicht: schwache innere Muskeln und verhältnismäßig stärkere äußere Muskeln. Übungen für die inneren Muskeln können einen Teil dieses Gleichgewichts wiederherstellen. Aber ohne direkte Studien wissen wir nicht, wie viel sie bewirken oder ob sie ein Fortschreiten tatsächlich verhindern können.',
-        'Aus Studien zu anderen Vorfußbeschwerden wissen wir, dass Übungen für die inneren Fußmuskeln wie der kurze Fuß, Zehenspreizen und Handtuchgreifen die richtigen Muskeln aktivieren. Eine MRT-Studie von Gooding und Kollegen (2016) bestätigte, dass die Kurzer-Fuß-Übung und Zehenspreizen (Toe-Spread-Out) gezielt die inneren Fußmuskeln aktivieren. Ob diese Aktivierung speziell bei Hammerzehen zu besseren Ergebnissen führt, wurde nicht getestet.',
+        'Aus Studien zu anderen Vorfußbeschwerden wissen wir, dass Übungen für die inneren Fußmuskeln wie der [kurze Fuß](/de/uebungen/kurzer-fuss/), Zehenspreizen und Handtuchgreifen die richtigen Muskeln aktivieren. Eine MRT-Studie von Gooding und Kollegen (2016) bestätigte, dass die Kurzer-Fuß-Übung und Zehenspreizen (Toe-Spread-Out) gezielt die inneren Fußmuskeln aktivieren. Ob diese Aktivierung speziell bei Hammerzehen zu besseren Ergebnissen führt, wurde nicht getestet.',
       ],
       cites: [CITE.gooding],
     },
@@ -226,7 +226,7 @@ export const HAMMER_TOE_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Walkito enthält [Handtuchgreifen](/de/uebungen/handtuchgreifen/), [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für Zehenübungen suchst, halten die Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.',
+      'Walkito enthält [Handtuchgreifen](/de/uebungen/handtuchgreifen/), [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und [Plattfüße](/de/plattfuss/) gebaut, nicht speziell für Hammerzehen, aber die Übungen überschneiden sich. Wenn du eine flexible Hammerzehe hast und eine feste Struktur für Zehenübungen suchst, halten die Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig, ohne dass du dir eine eigene Routine merken musst.',
     more: [
       'Bei verwandten Vorfußproblemen lies [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) und [Übungen bei Hallux valgus](/de/hallux-valgus-uebungen/).',
     ],

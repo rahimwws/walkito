@@ -14,7 +14,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
   lede:
     'Gli esercizi per rinforzare i piedi allenano i piccoli muscoli dentro il piede e quelli più grandi che scendono dal polpaccio. Comincia da seduto con l’esercizio del piede corto, l’apertura delle dita e il sollevamento dell’alluce, poi passa in piedi, poi su una gamba. Negli studi, i muscoli del piede sono diventati più grandi e più forti in circa due mesi.',
   intro: [
-    'Questa pagina è la guida generale per tutto il piede. Per piede piatto, dita o scarpe barefoot, le pagine più specifiche sono linkate più sotto.',
+    'Questa pagina è la guida generale per tutto il piede. Per [piede piatto](/it/piede-piatto/), dita o scarpe barefoot, le pagine più specifiche sono linkate più sotto.',
   ],
   takeaways: [
     'In uno studio del 2020 su 118\u00A0runner amatoriali, il gruppo senza allenamento del piede aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa nei 12\u00A0mesi rispetto al gruppo che faceva un programma per il «core del piede» (Taddei e colleghi). È un solo studio.',
@@ -53,7 +53,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       keyFact: 'Una revisione del 2023 di quattro studi ha trovato che la maggior parte dei programmi per il piede usava tenute di 5\u00A0secondi e passava da seduti a in piedi (de Souza e colleghi).',
       paragraphs: [
         'Comincia con gli esercizi che isolano i piccoli muscoli del piede, da seduto, poi aggiungi il lavoro in piedi e di equilibrio quando diventano facili. Una revisione del 2023 di de Souza e colleghi ha esaminato quattro studi randomizzati sul rinforzo dei muscoli intrinseci del piede. La maggior parte usava l’esercizio del piede corto e la raccolta dell’asciugamano, con contrazioni tenute per circa 5\u00A0secondi e una progressione da seduti a in piedi.',
-        'Le dosi qui sotto sono dosi di partenza. Falli a piedi nudi. Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno. Ogni esercizio ha la sua pagina con più dettagli, collegata dalla [libreria degli esercizi](/exercises/) (in inglese).',
+        'Le dosi qui sotto sono dosi di partenza. Falli a piedi nudi. Se un esercizio porta il dolore a **6/10 o più**, fermati per quel giorno. Ogni esercizio ha la sua pagina con più dettagli.',
       ],
       exercises: [
         {
@@ -126,7 +126,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
         'Walkito usa gli stessi tre gradini per l’esercizio del piede corto: da seduto, poi in piedi su due piedi, poi su una gamba. Quando il focus del tuo piano è l’arco, il piano della settimana successiva ti fa salire di un gradino se hai valutato facili le ultime due sessioni con quell’esercizio e il dolore del mattino non è aumentato. Una sessione valutata difficile, o il dolore del mattino salito di 2\u00A0punti, ti fa tornare indietro di un gradino. I due gradini successivi sono qui sotto.',
       ],
       bullets: [
-        '**Gradino 1, da seduto.** Piede corto, apertura delle dita, sollevamento dell’alluce e raccolta dell’asciugamano, tutti da seduto.',
+        '**Gradino 1, da seduto.** Piede corto, apertura delle dita, sollevamento dell’alluce e [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/), tutti da seduto.',
         '**Gradino 2, in piedi su due piedi.** La tenuta del piede corto in piedi e i sollevamenti sulle punte su due piedi.',
         '**Gradino 3, su una gamba.** La tenuta del piede corto su una gamba, poi l’equilibrio su una gamba tenendo l’arco alzato.',
         '**Più avanti.** I sollevamenti sulle punte su una gamba e, per chi corre, piccoli saltelli. Sono carichi più grandi. Aggiungili solo quando il gradino 3 è facile.',
@@ -178,7 +178,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
         'Gli esercizi per rinforzare i piedi **hanno ridotto gli infortuni da corsa in un buono studio, ma uno solo.** Nel 2020, Taddei e colleghi hanno diviso a caso 118\u00A0runner amatoriali di lunga distanza tra un gruppo core del piede (57\u00A0runner) e un gruppo di controllo (61\u00A0runner). Il gruppo core del piede ha seguito un corso supervisionato di circa due mesi sui muscoli di piede e caviglia, poi ha continuato ad allenarsi con una supervisione a distanza.',
         'Nei 12\u00A0mesi, il gruppo di controllo aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa. Gli autori hanno visto comparire l’effetto dopo circa quattro-otto mesi di allenamento.',
         'Uno studio precedente e più piccolo dello stesso gruppo, con 28\u00A0runner, ha trovato che circa due mesi di allenamento del piede aumentavano le dimensioni di ogni muscolo del piede misurato, rispetto al gruppo di controllo. I runner spingevano anche da terra con più forza.',
-        'Entrambi gli studi vengono da un solo gruppo di ricerca in Brasile, su runner amatoriali che all’inizio non erano infortunati. Non sappiamo ancora se il programma aiuti chi comincia o chi ha già dolore. Se corri e hai già dolore al tallone, parti da [dolore al tallone nei runner](/heel-pain-runners/) (in inglese).',
+        'Entrambi gli studi vengono da un solo gruppo di ricerca in Brasile, su runner amatoriali che all’inizio non erano infortunati. Non sappiamo ancora se il programma aiuti chi comincia o chi ha già dolore.',
       ],
       sourceNote: 'Taddei 2020 (Am J Sports Med): il gruppo di controllo aveva una probabilità 2,42\u00A0volte più alta di infortunarsi (IC 95% da 1,98 a 3,62), p = 0,035, studio randomizzato in singolo cieco, follow-up a 12\u00A0mesi. Taddei 2020 (Phys Ther Sport): studio randomizzato proof-of-concept in singolo cieco, 28\u00A0runner, volume muscolare con risonanza magnetica.',
       cites: [CITE.taddeiRRI, CITE.taddeiMuscle],
@@ -223,7 +223,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
     {
       h2: 'Il rinforzo del piede aiuta la fascite plantare o il piede piatto?',
       paragraphs: [
-        'Per la fascite plantare, il rinforzo del piede aggiunto allo stretching non ha fatto meglio del solo stretching in uno studio che li confrontava. Nel 2016, Kamonseki e colleghi hanno diviso 83\u00A0persone con fascite plantare in tre gruppi per due mesi:',
+        'Per la [fascite plantare](/it/fascite-plantare/), il rinforzo del piede aggiunto allo stretching non ha fatto meglio del solo stretching in uno studio che li confrontava. Nel 2016, Kamonseki e colleghi hanno diviso 83\u00A0persone con fascite plantare in tre gruppi per due mesi:',
         {
           list: [
             'Rinforzo del piede più stretching.',
@@ -240,7 +240,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
       h2: 'Quanto sono solide le prove sul rinforzo del piede?',
       paragraphs: [
         'Le prove che gli esercizi per il piede rendono più forti i muscoli del piede vanno nella stessa direzione, ma gli studi sono piccoli. Una revisione del 2025 di Peters-Dickie e colleghi ha incluso 28\u00A0studi randomizzati con 1.399\u00A0persone. Ha sostenuto gli esercizi per il piede per aumentarne la forza, ma ha valutato la certezza da bassa a molto bassa, soprattutto perché c’erano pochi studi per ogni domanda e molti avevano un alto rischio di bias. I risultati sulle dimensioni dei muscoli erano contrastanti.',
-        'Le prove che piedi più forti vogliano dire meno infortuni sono ancora più scarse e si basano soprattutto sull’unico studio sui runner visto sopra. **Il rinforzo del piede ha pochi rischi, costa poco e costruisce davvero forza.** Se prevenga il tuo prossimo infortunio è ancora una domanda aperta. Come queste guide valutano gli studi è spiegato nella pagina sulla [scienza](/science/) (in inglese).',
+        'Le prove che piedi più forti vogliano dire meno infortuni sono ancora più scarse e si basano soprattutto sull’unico studio sui runner visto sopra. **Il rinforzo del piede ha pochi rischi, costa poco e costruisce davvero forza.** Se prevenga il tuo prossimo infortunio è ancora una domanda aperta. Come queste guide valutano gli studi è spiegato nella pagina [chi siamo](/it/chi-siamo/).',
       ],
       sourceNote: 'Peters-Dickie 2025: le meta-analisi hanno mostrato che le scarpe minimaliste aumentavano la forza delle dita dalla 2 alla 5, e che gli esercizi per il piede riducevano il movimento dell’arco durante la corsa; certezza da bassa a molto bassa.',
       cites: [CITE.petersDickie],

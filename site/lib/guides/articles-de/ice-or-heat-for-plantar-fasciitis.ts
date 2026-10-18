@@ -93,7 +93,7 @@ export const ICE_HEAT_DE: Guide = {
       keyFact: 'In 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung verbesserte Wärme plus Dehnen die Beweglichkeit stärker als Dehnen allein (Bleakley und Costello, 2013).',
       paragraphs: [
         '**Den Fuß vor dem Dehnen zu wärmen ist eine vernünftige Wahl**, und dafür gibt es mehr Rückhalt als für Kühlen vor dem Dehnen. Eine Übersichtsarbeit von 2013 über 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung fand, dass Wärme die Beweglichkeit erhöhte und dass Wärme plus Dehnen besser wirkte als Dehnen allein. Die Daten zu Kälte waren widersprüchlich. Jede Studie hatte ein hohes Verzerrungsrisiko, und keine schloss Menschen mit Fersenschmerzen ein. Sieh das also als sinnvolle Idee, nicht als getesteten Plan für Plantarfasziitis.',
-        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der Plantarfaszien-Dehnung und der Wadendehnung.',
+        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und der Wadendehnung.',
         'Am Morgen solltest du mit dem Dehnen aber nicht auf ein Aufwärmen warten. Die Dehnung vor dem ersten Schritt ist dafür gedacht, auf der Bettkante zu passieren, bevor dein Fuß Gewicht trägt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) führt dich durch diese Routine.',
       ],
       cites: [CITE.bleakleyThermal],

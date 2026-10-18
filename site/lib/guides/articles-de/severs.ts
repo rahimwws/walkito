@@ -52,7 +52,7 @@ export const SEVERS_DE: Guide = {
         {
           list: [
             'Viel Laufen und Springen.',
-            'Verkürzte Wadenmuskeln.',
+            '[Verkürzte Wadenmuskeln](/de/verspannte-waden/).',
             'Eingeschränkte Beweglichkeit im Sprunggelenk.',
             'Ein hoher BMI.',
             'Harte Spielflächen.',
@@ -66,7 +66,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Wie fühlt sich Morbus Sever an?',
       paragraphs: [
         'Das Hauptsymptom ist Schmerz hinten oder an den Seiten der Ferse, meist bei oder nach Aktivität und vor allem nach Laufen oder Springen. Der Schmerz wird oft wie ein blauer Fleck beschrieben. Sichtbare Schwellungen oder Blutergüsse gibt es selten. **Druck auf die Seiten der Ferse oder Zusammendrücken löst den Schmerz meist aus.** Dieser Squeeze-Test ist die übliche klinische Prüfung.',
-        'Anders als die Plantarfasziitis bei Erwachsenen, die bei den ersten Schritten nach einer Ruhephase am schlimmsten ist, wird der Schmerz bei Morbus Sever eher mit Aktivität schlimmer und beim Gehen nicht besser. Manche Kinder fangen an zu hinken oder auf den Zehen zu gehen, um die Ferse nicht zu belasten.',
+        'Anders als die [Plantarfasziitis](/de/plantarfasziitis/) bei Erwachsenen, die bei den ersten Schritten nach einer Ruhephase am schlimmsten ist, wird der Schmerz bei Morbus Sever eher mit Aktivität schlimmer und beim Gehen nicht besser. Manche Kinder fangen an zu hinken oder auf den Zehen zu gehen, um die Ferse nicht zu belasten.',
         'Der Schmerz kann von leicht, nur beim Sport spürbar, bis so stark reichen, dass das Kind gar nicht mehr spielen kann.',
       ],
     },
@@ -74,7 +74,7 @@ export const SEVERS_DE: Guide = {
       h2: 'Was hilft bei Morbus Sever? Die Belege',
       keyFact: 'In einer Studie mit 101\u00A0Kindern verbesserten alle drei Ansätze den Schmerz, und die Gruppe mit Fersenerhöhung war nach sechs Wochen zufriedener, wobei der Unterschied nach drei Monaten verschwunden war (Wiegerinck und Kollegen, 2016).',
       paragraphs: [
-        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder Einlagen sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und **für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.**',
+        'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder [Einlagen](/de/einlagen-oder-uebungen/) sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und **für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.**',
         'In einer Studie von 2016 mit 101\u00A0Kindern im Alter von 8 bis 15\u00A0Jahren verglichen Wiegerinck und Kollegen drei Ansätze:',
         {
           list: [

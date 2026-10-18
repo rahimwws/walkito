@@ -42,12 +42,12 @@ export const BALL_OF_FOOT_IT: Guide = {
     {
       h2: 'Cosa causa il dolore sotto l’avampiede?',
       paragraphs: [
-        '**Metatarsalgia** è l’etichetta più comune. Descrive dolore e infiammazione intorno a una o più teste metatarsali, di solito la seconda e la terza. Sovraccarico, un secondo metatarso lungo, il piede cavo e polpacci rigidi possono contribuire tutti.',
+        '**Metatarsalgia** è l’etichetta più comune. Descrive dolore e infiammazione intorno a una o più teste metatarsali, di solito la seconda e la terza. Sovraccarico, un secondo metatarso lungo, il [piede cavo](/it/piede-cavo-esercizi/) e [polpacci rigidi](/it/polpacci-rigidi/) possono contribuire tutti.',
         '**Neuroma di Morton** è un ispessimento del nervo tra le teste metatarsali, il più delle volte tra il terzo e il quarto dito. Dà bruciore, formicolio o intorpidimento più che un semplice dolore. Scarpe strette o con il tacco alto schiacciano il nervo e lo peggiorano.',
         '**Sesamoidite** è l’infiammazione dei due piccoli ossicini dentro il tendine sotto l’articolazione dell’alluce. Il dolore è proprio sotto l’alluce, non sotto il centro dell’avampiede.',
         '**Frattura da stress del metatarso** è una piccola crepa in una delle ossa metatarsali, di solito la seconda o la terza. Il dolore è localizzato, spesso peggiora durante la giornata e può far male di notte. Un gonfiore sul dorso del piede è comune. Questa richiede esami di imaging e riposo.',
         '**Dita ad artiglio e dita a martello** piegano verso il basso le articolazioni delle dita, il che solleva il dito da terra e rimanda il suo carico di spinta sulla testa metatarsale dietro.',
-        '**Tacchi alti e scarpe strette** spostano il peso in avanti sull’avampiede e stringono insieme le teste metatarsali, ed è per questo che il neuroma di Morton è più comune in chi li porta.',
+        '**Tacchi alti e scarpe strette** spostano il peso in avanti sull’avampiede e stringono insieme le teste metatarsali, ed è per questo che il [neuroma di Morton](/it/neuroma-di-morton/) è più comune in chi li porta.',
         '**Piede cavo** (un piede con un arco alto e rigido) riduce la superficie d’appoggio della pianta e concentra la pressione su tallone e avampiede. All’opposto, anche il [piede piatto](/it/esercizi-piede-piatto/) può contribuire al dolore all’avampiede, perché cambia il modo in cui il piede rulla durante la spinta.',
         '**Polpacci rigidi** sono una causa sottovalutata. Quando il gastrocnemio, il muscolo più grande e superficiale del polpaccio, è rigido, la caviglia non riesce a piegarsi abbastanza camminando. Il corpo compensa alzando il tallone prima, e così sposta più carico sull’avampiede. È lo stesso meccanismo dietro la [fascite plantare](/it/esercizi-fascite-plantare/) e la [tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
@@ -61,7 +61,7 @@ export const BALL_OF_FOOT_IT: Guide = {
           list: [
             'Un dolore diffuso sotto la seconda e la terza testa metatarsale fa pensare alla metatarsalgia.',
             'Un dolore tra il terzo e il quarto dito, con formicolio, fa pensare al neuroma di Morton.',
-            'Un dolore proprio sotto l’articolazione dell’alluce è più compatibile con la sesamoidite.',
+            'Un dolore proprio sotto l’articolazione dell’alluce è più compatibile con la [sesamoidite](/it/sesamoidite/).',
             'Un punto preciso sul dorso del piede con gonfiore fa sorgere il dubbio di una frattura da stress.',
           ],
         },
@@ -191,7 +191,7 @@ export const BALL_OF_FOOT_IT: Guide = {
       paragraphs: [
         'Le prove sugli esercizi per il dolore all’avampiede sono più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati. Per la metatarsalgia c’è un solo studio pre-post con 41\u00A0persone e nessun gruppo di controllo. Il ragionamento biomeccanico regge, e il rischio legato a esercizi delicati per le dita e allungamenti del polpaccio è basso, ma manca una prova diretta da uno studio controllato.',
         '**Gli esercizi da soli potrebbero non bastare.** Cuscinetti metatarsali, scarpe con la punta larga e meno tempo sui tacchi hanno un consenso clinico più ampio.',
-        'Per il neuroma di Morton, cambiare scarpe e usare imbottiture spesso funziona meglio degli esercizi. Per una frattura da stress del metatarso, gli esercizi sono la strada sbagliata finché l’osso non è guarito. Se il dolore dura da più di qualche settimana, o si accompagna a intorpidimento o gonfiore, fallo controllare prima. [Dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) spiega come gestire il carico per chi corre.',
+        'Per il neuroma di Morton, cambiare scarpe e usare imbottiture spesso funziona meglio degli esercizi. Per una frattura da stress del metatarso, gli esercizi sono la strada sbagliata finché l’osso non è guarito. Se il dolore dura da più di qualche settimana, o si accompagna a intorpidimento o gonfiore, fallo controllare prima.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -235,7 +235,7 @@ export const BALL_OF_FOOT_IT: Guide = {
     },
     {
       q: 'Cosa succede se trascuri la metatarsalgia?',
-      a: 'Se la lasci stare, la metatarsalgia può cambiare il modo in cui cammini, perché viene naturale spostare il peso dal punto dolorante ad altre parti del piede, e questo può creare nuove zone di dolore. Una pressione continua sulle teste metatarsali può anche favorire calli o, più di rado, deformità delle dita come le dita a martello. Cambiare scarpe presto e usare cuscinetti metatarsali riduce questo rischio.',
+      a: 'Se la lasci stare, la metatarsalgia può cambiare il modo in cui cammini, perché viene naturale spostare il peso dal punto dolorante ad altre parti del piede, e questo può creare nuove zone di dolore. Una pressione continua sulle teste metatarsali può anche favorire calli o, più di rado, deformità delle dita come le [dita a martello](/it/dito-a-martello-esercizi/). Cambiare scarpe presto e usare cuscinetti metatarsali riduce questo rischio.',
     },
   ],
   redFlags: {

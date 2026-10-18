@@ -26,7 +26,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
     'Dolore al tallone dopo una camminata o dopo ore in piedi: perché succede, quali problemi lo causano, quando preoccuparsi e gli esercizi che aiutano.',
   h1: 'Dolore al tallone dopo aver camminato: perché il tallone fa male e cosa fare',
   lede:
-    'Mentre camminavi il tallone stava bene, ma ora che ti sei fermato fa male. Oppure il dolore è iniziato a metà di una camminata lunga ed è peggiorato a ogni passo. Entrambi i casi indicano la stessa cosa: quel giorno i tessuti sotto il tallone hanno ricevuto più carico di quanto potessero reggere. La causa più comune è la fascite plantare, e la risposta più utile è lo stretching insieme a un rinforzo graduale del polpaccio.',
+    'Mentre camminavi il tallone stava bene, ma ora che ti sei fermato fa male. Oppure il dolore è iniziato a metà di una camminata lunga ed è peggiorato a ogni passo. Entrambi i casi indicano la stessa cosa: quel giorno i tessuti sotto il tallone hanno ricevuto più carico di quanto potessero reggere. La causa più comune è la [fascite plantare](/it/fascite-plantare/), e la risposta più utile è lo stretching insieme a un rinforzo graduale del polpaccio.',
   intro: [
     'Questa pagina parla del dolore al tallone che arriva durante o dopo una camminata. Se il tallone fa più male ai primissimi passi del mattino, quel tipo di dolore è spiegato in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Se i piedi fanno male dopo ore in piedi fermo nello stesso posto, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre il lato del carico statico. I tre si sovrappongono, ma ognuno ha un punto di vista diverso.',
   ],
@@ -44,7 +44,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       paragraphs: [
         'Camminare carica la fascia plantare, la banda spessa di tessuto sotto il piede, a ogni passo. Ogni volta che il tallone tocca terra e il piede rolla in avanti, la fascia si allunga e assorbe la forza. In un piede sano va bene così. Ma quando la fascia è irritata o il polpaccio è troppo rigido per assorbire la sua parte, il carico si concentra nel punto in cui la fascia si attacca al tallone.',
         'Il risultato è un dolore che cresce durante o dopo una camminata, soprattutto se più lunga del solito. La linea guida del 2023 sul dolore al tallone elenca due andamenti tipici della fascite plantare: il dolore ai primi passi dopo il riposo e il dolore che aumenta con un’attività prolungata in carico. Camminare è l’attività prolungata in carico più comune che ci sia.',
-        'Un polpaccio rigido è una parte importante del quadro. In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia aveva l’odds ratio più alto tra tutti i fattori di rischio misurati. **Quando la caviglia non si piega abbastanza, ogni passo chiede alla fascia di compensare la differenza.**',
+        'Un [polpaccio rigido](/it/polpacci-rigidi/) è una parte importante del quadro. In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia aveva l’odds ratio più alto tra tutti i fattori di rischio misurati. **Quando la caviglia non si piega abbastanza, ogni passo chiede alla fascia di compensare la differenza.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -67,7 +67,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'In cosa è diverso dal dolore al tallone al mattino?',
       paragraphs: [
         'Nella maggior parte dei casi, il dolore al tallone al mattino e quello dopo aver camminato sono due facce dello stesso problema. Il dolore del mattino arriva perché la fascia si irrigidisce e si accorcia durante la notte, poi viene allungata di colpo quando ti alzi. Il dolore dopo la camminata arriva perché la fascia è stata caricata più e più volte durante la camminata e il tessuto ti sta dicendo che ne ha avuto abbastanza.',
-        'La differenza conta per scegliere quando fare gli esercizi. Il dolore del mattino risponde meglio a un allungamento della fascia plantare fatto prima del primo passo. Il dolore dopo la camminata risponde alla gestione del carico:',
+        'La differenza conta per scegliere quando fare gli esercizi. Il dolore del mattino risponde meglio a un [allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) fatto prima del primo passo. Il dolore dopo la camminata risponde alla gestione del carico:',
         {
           list: [
             'Camminare per una distanza che il piede riesce a reggere.',
@@ -75,7 +75,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
             'Usare stretching e lavoro sul polpaccio per alzare la soglia.',
           ],
         },
-        '[Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio gli allungamenti del mattino e i tutori notturni.',
+        '[Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio gli allungamenti del mattino e i [tutori notturni](/it/tutore-notturno-fascite-plantare/).',
         'Se hai sia dolore al mattino sia dolore dopo aver camminato, è il quadro tipico della fascite plantare. Gli esercizi si sovrappongono. L’allungamento del mattino e gli allungamenti del polpaccio aiutano in entrambi i casi. Il rinforzo del polpaccio aumenta la capacità di tutta la catena, così il carico delle tue camminate quotidiane rientra in quello che i tessuti riescono a reggere.',
       ],
       cites: [CITE.guideline],
@@ -171,7 +171,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
           ],
         },
         '**Questa è gestione del carico, non riposo.** Il riposo assoluto raramente aiuta nella fascite plantare. La linea guida raccomanda di modificare l’attività, non di restare inattivi. Camminare con scarpe che sostengono il piede su una superficie più morbida è più facile per la fascia che camminare scalzo sul cemento.',
-        'Se corri anche, vale lo stesso principio su un’altra scala. [Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio i picchi di carico e i cambi di chilometraggio.',
+        'Se corri anche, vale lo stesso principio su un’altra scala: attenzione ai picchi di carico e ai cambi improvvisi di chilometraggio.',
       ],
       cites: [CITE.guideline],
     },

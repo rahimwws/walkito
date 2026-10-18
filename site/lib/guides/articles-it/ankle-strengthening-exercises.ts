@@ -219,7 +219,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
       h2: 'E gli esercizi di rinforzo della caviglia per chi corre?',
       paragraphs: [
         'Chi corre ha bisogno della stessa progressione, portata più avanti. Quando i sollevamenti sulle punte su due piedi sono facili, passa ai sollevamenti su una gamba, perché ogni falcata di corsa carica una gamba alla volta. Il [test del sollevamento sulle punte](/it/test-sollevamento-punte/) mostra quanti sollevamenti su una gamba riesci a fare rispetto ai valori tipici.',
-        'Le prove sull’equilibrio vengono soprattutto da popolazioni sportive, quindi valgono direttamente per chi corre. Se hai dolore lungo lo stinco più che alla caviglia, vedi gli [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/). Se è al tallone o all’Achille, vedi [dolore al tallone nei runner](/heel-pain-runners/) (in inglese).',
+        'Le prove sull’equilibrio vengono soprattutto da popolazioni sportive, quindi valgono direttamente per chi corre. Se hai dolore lungo lo stinco più che alla caviglia, vedi gli [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/). Se è al tallone o all’Achille, vedi la guida sulla [fascite plantare](/it/fascite-plantare/) o gli [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
       cites: [CITE.schiftan],
     },

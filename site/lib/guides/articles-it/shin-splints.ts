@@ -229,7 +229,7 @@ export const SHIN_SPLINTS_IT: Guide = {
         },
         'Se il dolore si calma con il riscaldamento e resta gestibile, una corsa più breve o più facile e meno frequente è una via di mezzo ragionevole mentre la tibia si adatta. I giorni di riposo tra una corsa e l’altra danno all’osso il tempo di rispondere al carico.',
         'La regola del 10%, cioè non aggiungere più del 10% ai chilometri settimanali, è un criterio spesso citato ma non dimostrato. Uno studio del 2008 su 532\u00A0runner principianti non ha trovato differenze nei tassi di infortunio tra un programma basato sulla regola del 10% e uno più rapido.',
-        'Quello che ha mostrato uno studio del 2014 su 874\u00A0runner è che grandi aumenti improvvisi della distanza portano più infortuni. **Graduale è meglio di improvviso, ma una percentuale precisa non ha il sostegno degli studi.** [Dolore al tallone quando corri](/heel-pain-runners/) (in inglese) spiega più nel dettaglio lo stesso modo di gestire il carico.',
+        'Quello che ha mostrato uno studio del 2014 su 874\u00A0runner è che grandi aumenti improvvisi della distanza portano più infortuni. **Graduale è meglio di improvviso, ma una percentuale precisa non ha il sostegno degli studi.**',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },

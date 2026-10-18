@@ -18,7 +18,7 @@ export const VS_EXAKT_FR: Guide = {
     'Walkito ou Exakt Health\u00A0: problèmes couverts, prix, plateformes, plan, données scientifiques, langues, confidentialité. Vérifié en octobre 2026.',
   h1: 'Walkito vs Exakt Health\u00A0: laquelle vous convient\u00A0?',
   lede:
-    'Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15\u00A0plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation à la douleur de chaque matin. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.',
+    'Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la [fasciite plantaire](/fr/fasciite-plantaire/), mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15\u00A0plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les [pieds plats](/fr/pieds-plats/) et l’adaptation à la douleur de chaque matin. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.',
   intro: [
     'C’est Walkito qui publie cette page. Lisez donc les informations sur Exakt (tirées de sa fiche App Store, de sa fiche Google Play et de son site officiel, toutes vérifiées en octobre 2026) et faites-vous votre propre avis. Les liens vers chaque source sont sous le tableau comparatif.',
   ],
@@ -123,7 +123,7 @@ export const VS_EXAKT_FR: Guide = {
     {
       h2: 'Pour qui Exakt Health est-elle conçue\u00A0?',
       paragraphs: [
-        'Exakt Health est conçue pour les coureurs. C’est son identité de base, et tout dans l’application le reflète. Si vous êtes coureur et que vous récupérez d’une fasciite plantaire, d’une tendinopathie d’Achille, d’une entorse de cheville, d’une lésion des ischio-jambiers ou d’une lésion du ménisque, Exakt a un plan de rééducation propre à votre blessure. Elle couvre plus de 15\u00A0problèmes différents.',
+        'Exakt Health est conçue pour les coureurs. C’est son identité de base, et tout dans l’application le reflète. Si vous êtes coureur et que vous récupérez d’une fasciite plantaire, d’une [tendinopathie d’Achille](/fr/tendinite-achille-exercices/), d’une entorse de cheville, d’une lésion des ischio-jambiers ou d’une lésion du ménisque, Exakt a un plan de rééducation propre à votre blessure. Elle couvre plus de 15\u00A0problèmes différents.',
         'Chaque plan de rééducation se termine par un programme marche-course de reprise de la course, l’une des étapes de la récupération les plus difficiles à bien gérer seul. L’application propose aussi des plans d’entraînement à la course pour toutes les distances, du canapé au 5\u00A0km jusqu’au marathon.',
         'Exakt a été fondée en 2021 par Philip Billaudelle, Lucia Payo et Maryke Louw. Elle est conçue par des kinésithérapeutes du sport diplômés et des entraîneurs de course, et a levé environ 2,2\u00A0millions d’euros en amorçage en septembre 2024. L’équipe est basée à Berlin.',
         'L’application est certifiée comme dispositif médical dans l’UE, ce qui veut dire qu’elle a passé un examen réglementaire pour son usage prévu.',
@@ -144,7 +144,7 @@ export const VS_EXAKT_FR: Guide = {
         'Elle est aussi conçue pour les personnes debout toute la journée\u00A0: infirmières, employés de commerce, personnel d’entrepôt.',
         'L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster chaque séance à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.',
         'Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé ou de Health Connect) transforme la séance de renforcement suivante en séance de récupération plus légère.',
-        'Walkito teste vos progrès tous les 14\u00A0jours avec des montées sur pointes, un maintien de la voûte et l’équilibre sur une jambe, et compare votre côté gauche à votre côté droit. Cette comparaison gauche-droite n’est pas suivie par la plupart des applications de ce domaine.',
+        'Walkito teste vos progrès tous les 14\u00A0jours avec des montées sur pointes, un maintien de la voûte et l’[équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/), et compare votre côté gauche à votre côté droit. Cette comparaison gauche-droite n’est pas suivie par la plupart des applications de ce domaine.',
         'Walkito est sortie le 2\u00A0octobre 2026. Elle est nouvelle, n’a pas encore de notes d’utilisateurs et existe sur iOS comme sur Android. Elle n’a ni l’historique ni l’étendue qu’Exakt a construits depuis 2021.',
       ],
     },

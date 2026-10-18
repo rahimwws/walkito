@@ -17,7 +17,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
     'Comment faire l’étirement du mollet genou tendu contre la fasciite plantaire et les mollets raides\u00A0: technique, séries, durée de maintien, données.',
   h1: 'Étirement du mollet pour la fasciite plantaire\u00A0: technique, séries et durée de maintien',
   lede:
-    'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle superficiel du mollet. Un gastrocnémien raide limite la flexion de la cheville, et dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant. La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet sa meilleure note, A.',
+    'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle superficiel du mollet. Un gastrocnémien raide limite la flexion de la cheville, et dans une étude cas-témoins sur 50\u00A0personnes atteintes de [fasciite plantaire](/fr/fasciite-plantaire/) et 100\u00A0témoins, une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant. La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet sa meilleure note, A.',
   takeaways: [
     'Une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins appariée, avec un odds ratio de 23,3 (Riddle et coll., 2003).',
     'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien (Patel et DiGiovanni, 2011).',
@@ -87,7 +87,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
     {
       h2: 'Qui devrait faire cet étirement, et qui devrait s’en passer\u00A0?',
       paragraphs: [
-        'Cet étirement concerne toute personne avec une douleur au talon, une fasciite plantaire, des mollets raides à force d’être debout toute la journée ou à cause d’un sport qui charge le mollet, comme la course. Il figure dans les listes d’exercices des pages [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) et [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
+        'Cet étirement concerne toute personne avec une douleur au talon, une fasciite plantaire, des [mollets raides](/fr/mollets-tendus/) à force d’être debout toute la journée ou à cause d’un sport qui charge le mollet, comme la course. Il figure dans les listes d’exercices des pages [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
         'Passez-vous-en ou adaptez-le si vous avez un problème de tendon d’Achille qui fait mal pendant l’étirement. Dans ce cas, la douleur vient d’une autre structure, et charger le tendon d’Achille avec un étirement contre le mur n’est peut-être pas le bon point de départ. Voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour l’approche propre au tendon d’Achille.',
         'Si vous ne pouvez pas atteindre le mur ou rester debout confortablement, un étirement assis avec une serviette donne une traction semblable sur le mollet. Passez une serviette autour de l’avant du pied, gardez le genou tendu et tirez les orteils vers vous.',
       ],

@@ -20,7 +20,7 @@ export const PTTD_DE: Guide = {
     'Bei einer Tibialis-posterior-Insuffizienz (englisch PTTD) wird die Sehne, die das Gewölbe an der Innenseite des Sprunggelenks stützt, schwächer oder entzündet sich. Sie ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen. Übungen können in den frühen Stadien helfen, aber nicht jedes Stadium spricht gleich an, und die Studienlage ist noch dünn. Diese Seite erklärt die Stadien, die Übungen mit den besten Belegen und wann ein Stiefel oder eine Operation ins Spiel kommt.',
   intro: [
     'Die Tibialis-posterior-Sehne läuft hinter dem Innenknöchel entlang und setzt unter dem Fuß an. Sie hält beim Gehen das Gewölbe oben. Wenn sie degeneriert, flacht das Gewölbe ab, die Ferse kippt nach außen, und der Schmerz sitzt am Innenknöchel oder an der Innenseite des Mittelfußes.',
-    'Eine systematische Übersichtsarbeit von 2018 fand nur drei randomisierte oder kontrollierte Studien mit insgesamt 93\u00A0Personen. Die Belege für Übungen sind hier also viel dünner als bei Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung.',
+    'Eine systematische Übersichtsarbeit von 2018 fand nur drei randomisierte oder kontrollierte Studien mit insgesamt 93\u00A0Personen. Die Belege für Übungen sind hier also viel dünner als bei Beschwerden wie [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
   ],
   toc: true,
   takeaways: [
@@ -156,7 +156,7 @@ export const PTTD_DE: Guide = {
       h2: 'Wie hängt die Tibialis-posterior-Insuffizienz mit Plattfüßen zusammen?',
       paragraphs: [
         'Die Tibialis-posterior-Insuffizienz ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen, also einen Plattfuß, der im Erwachsenenalter entsteht und nicht seit der Kindheit da ist. **Wenn du normale Gewölbe hattest und eines davon einseitig abzusinken beginnt, mit Schmerz hinter dem Innenknöchel, ist eine Tibialis-posterior-Insuffizienz die wahrscheinlichste Erklärung.**',
-        'Angeborene flexible Plattfüße, die seit der Kindheit bestehen, sind eine andere Situation. Sie machen vielleicht nie Beschwerden. Die Übungen überschneiden sich: kurzer Fuß, Einwärtsdrehen mit Band und Fersenheben kommen sowohl bei [Übungen bei Plattfuß](/de/plattfuss-uebungen/) als auch in Programmen bei Tibialis-posterior-Insuffizienz vor. Aber der klinische Zusammenhang ist anders, und eine Tibialis-posterior-Insuffizienz braucht meist Einlagen und engere Kontrolle, weil die Sehne degeneriert und nicht einfach nur nachgiebig ist.',
+        'Angeborene flexible [Plattfüße](/de/plattfuss/), die seit der Kindheit bestehen, sind eine andere Situation. Sie machen vielleicht nie Beschwerden. Die Übungen überschneiden sich: kurzer Fuß, Einwärtsdrehen mit Band und Fersenheben kommen sowohl bei [Übungen bei Plattfuß](/de/plattfuss-uebungen/) als auch in Programmen bei Tibialis-posterior-Insuffizienz vor. Aber der klinische Zusammenhang ist anders, und eine Tibialis-posterior-Insuffizienz braucht meist [Einlagen](/de/einlagen-oder-uebungen/) und engere Kontrolle, weil die Sehne degeneriert und nicht einfach nur nachgiebig ist.',
         'Wenn du nicht sicher bist, ob dein Plattfuß schon lange besteht oder neu ist, kann eine Ärztin oder ein Arzt beide Füße vergleichen, die Sehne prüfen und die Stellung der Ferse im Stand ansehen.',
       ],
       cites: [CITE.ling, CITE.zarali],
@@ -189,7 +189,7 @@ export const PTTD_DE: Guide = {
     {
       q: 'Wie fühlt sich ein Schmerz an der Tibialis-posterior-Sehne an?',
       cites: [CITE.ling],
-      a: 'Der Schmerz sitzt meist hinter oder unter dem Innenknöchel. Er kann sich entlang des inneren Gewölbes ausbreiten. Er wird bei Belastung schlimmer, vor allem bergauf, auf unebenem Boden oder beim Stehen auf einem Bein. Die Stelle kann anschwellen. Ein häufiges frühes Zeichen ist, dass einbeiniges Fersenheben auf der betroffenen Seite schwerfällt.',
+      a: 'Der Schmerz sitzt meist hinter oder unter dem Innenknöchel. Er kann sich entlang des inneren Gewölbes ausbreiten. Er wird bei Belastung schlimmer, vor allem bergauf, auf unebenem Boden oder beim [Stehen auf einem Bein](/de/uebungen/einbeinstand/). Die Stelle kann anschwellen. Ein häufiges frühes Zeichen ist, dass einbeiniges Fersenheben auf der betroffenen Seite schwerfällt.',
     },
     {
       q: 'Brauche ich Einlagen bei Tibialis-posterior-Insuffizienz?',
@@ -229,7 +229,7 @@ export const PTTD_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito hat Einwärtsdrehen mit Band, den kurzen Fuß und Fersenheben in seiner Übungsbibliothek und plant sie an Krafttagen als Teil eines Programms für Gewölbe und Gleichgewicht ein. Wenn du beim Check-in den Innenknöchel oder das Gewölbe als schmerzend markierst, passt sich die Einheit daran an. Die App ist für Plantarfasziitis und Plattfüße gebaut. Die Tibialis-posterior-Insuffizienz überschneidet sich mit beiden, aber die App stellt keine Diagnose und ersetzt weder Einlagen noch die klinische Einteilung in Stadien.',
+    text: 'Walkito hat Einwärtsdrehen mit Band, den kurzen Fuß und Fersenheben in seiner Übungsbibliothek und plant sie an Krafttagen als Teil eines Programms für Gewölbe und Gleichgewicht ein. Wenn du beim Check-in den Innenknöchel oder das Gewölbe als schmerzend markierst, passt sich die Einheit daran an. Die App ist für [Plantarfasziitis](/de/plantarfasziitis/) und Plattfüße gebaut. Die Tibialis-posterior-Insuffizienz überschneidet sich mit beiden, aber die App stellt keine Diagnose und ersetzt weder Einlagen noch die klinische Einteilung in Stadien.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert. Wenn bei dir eine Tibialis-posterior-Insuffizienz festgestellt wurde, nutz die App zusammen mit Einlagen und klär mit deiner Ärztin oder deinem Arzt, ob dein Stadium für Übungen geeignet ist.',
     ],

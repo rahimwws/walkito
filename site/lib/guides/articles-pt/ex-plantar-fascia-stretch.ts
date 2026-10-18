@@ -18,7 +18,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     'Como fazer o alongamento da fáscia plantar para fascite plantar e dor no calcanhar: técnica, quando alongar, quanto tempo segurar e o que a pesquisa diz.',
   h1: 'Alongamento da fáscia plantar: como fazer, séries e repetições',
   lede:
-    'O alongamento da fáscia plantar é o alongamento que foi testado lado a lado contra o alongamento do tendão de Aquiles na fascite plantar. Em um ensaio com 82\u00A0pessoas com dor crônica no calcanhar, quem fez o alongamento da fáscia plantar teve melhores resultados de dor e de função em oito semanas do que quem alongou o tendão de Aquiles. Esta página explica a técnica, a dose e quando o alongamento mais importa.',
+    'O alongamento da fáscia plantar é o alongamento que foi testado lado a lado contra o alongamento do tendão de Aquiles na [fascite plantar](/pt/fascite-plantar/). Em um ensaio com 82\u00A0pessoas com dor crônica no calcanhar, quem fez o alongamento da fáscia plantar teve melhores resultados de dor e de função em oito semanas do que quem alongou o tendão de Aquiles. Esta página explica a técnica, a dose e quando o alongamento mais importa.',
   takeaways: [
     'Em um ensaio com 82\u00A0pessoas com fascite plantar crônica, o alongamento da fáscia plantar deu melhores resultados de dor e de função em oito semanas do que um alongamento do tendão de Aquiles (DiGiovanni e colegas, 2003).',
     'No acompanhamento de dois anos, depois que todos os participantes passaram a fazer o alongamento da fáscia plantar, 92% disseram estar satisfeitos com o resultado (DiGiovanni e colegas, 2006).',
@@ -57,7 +57,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     {
       h2: 'Quando alongar a fáscia plantar?',
       paragraphs: [
-        '**Antes do primeiro passo da manhã.** É a instrução mais repetida, tanto no ensaio quanto na diretriz de 2023. A fáscia plantar encurta durante a noite enquanto o pé está relaxado. Os primeiros passos do dia a puxam de repente e com força, e é por isso que a dor no calcanhar pela manhã é a marca registrada da fascite plantar.',
+        '**Antes do primeiro passo da manhã.** É a instrução mais repetida, tanto no ensaio quanto na diretriz de 2023. A fáscia plantar encurta durante a noite enquanto o pé está relaxado. Os primeiros passos do dia a puxam de repente e com força, e é por isso que a [dor no calcanhar pela manhã](/pt/dor-no-calcanhar-ao-acordar/) é a marca registrada da fascite plantar.',
         'O segundo momento mais importante é antes de levantar depois de ficar muito tempo sentado. O mesmo encurtamento acontece no repouso. Alongar a fáscia antes de colocar carga nela diminui esse tranco.',
         'No ensaio, os participantes deviam fazer 10\u00A0vezes de 10\u00A0segundos, três vezes por dia, por pelo menos oito semanas. As sessões mais importantes eram a da manhã e a depois de ficar muito tempo sentado. Mais sessões ao longo do dia eram incentivadas, quando possível.',
       ],
@@ -79,7 +79,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
       h2: 'Qual a diferença entre o alongamento da fáscia plantar e o de panturrilha?',
       paragraphs: [
         'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais superficial da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para tensionar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
-        'Uma panturrilha tensa é por si só um fator de risco para fascite plantar. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, foi o fator de risco independente mais forte. É por isso que a diretriz recomenda os dois alongamentos, e não um ou outro.',
+        'Uma [panturrilha tensa](/pt/panturrilha-tensa/) é por si só um fator de risco para fascite plantar. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, foi o fator de risco independente mais forte. É por isso que a diretriz recomenda os dois alongamentos, e não um ou outro.',
         'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],

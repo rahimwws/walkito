@@ -95,7 +95,7 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
           ],
         },
         'Eine Lücke irgendwo in dieser Kette zwingt den Fuß auszugleichen.',
-        'Bei Plantarfasziitis und Plattfüßen steht Gleichgewichtstraining in Übungsprogrammen neben Dehnen und Kräftigen, weil es die ganze Kette auf einmal trainiert. Eine Studie von 2023 mit 52\u00A0Personen mit flexiblem Plattfuß fand, dass ein Programm aus Kurzer-Fuß-Übungen, Arbeit am Sprunggelenk, Hüftkräftigung, Dehnen und Gleichgewichtsarbeit die Form des Gewölbes stärker veränderte als bei einer Kontrollgruppe. Das Gleichgewicht wurde in dieser Studie nicht einzeln getestet, war aber Teil des Programms, das gewirkt hat.',
+        'Bei [Plantarfasziitis](/de/plantarfasziitis/) und [Plattfüßen](/de/plattfuss/) steht Gleichgewichtstraining in Übungsprogrammen neben Dehnen und Kräftigen, weil es die ganze Kette auf einmal trainiert. Eine Studie von 2023 mit 52\u00A0Personen mit flexiblem Plattfuß fand, dass ein Programm aus Kurzer-Fuß-Übungen, Arbeit am Sprunggelenk, Hüftkräftigung, Dehnen und Gleichgewichtsarbeit die Form des Gewölbes stärker veränderte als bei einer Kontrollgruppe. Das Gleichgewicht wurde in dieser Studie nicht einzeln getestet, war aber Teil des Programms, das gewirkt hat.',
         'Speziell bei Umknicktraumata fand eine Metaanalyse von 2018 mit 8\u00A0Studien und 3.577\u00A0Sportlern, dass Gleichgewichtstraining das Risiko im Vergleich zu keiner Maßnahme um 46\u00A0% senkte. Das ist der stärkste einzelne Befund dafür, Gleichgewicht in ein Fußprogramm aufzunehmen.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],

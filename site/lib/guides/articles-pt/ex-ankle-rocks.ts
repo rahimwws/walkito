@@ -18,7 +18,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
     'Como fazer o balanço do tornozelo (joelho por cima dos dedos) para mobilidade: técnica, séries, por que a dobra do tornozelo importa e como testar.',
   h1: 'Balanço do tornozelo: como fazer e por que a mobilidade do tornozelo importa',
   lede:
-    'O balanço do tornozelo é um exercício em pé em que o joelho vai para a frente por cima dos dedos enquanto o calcanhar fica apoiado no chão. Ele trabalha a dorsiflexão do tornozelo, o quanto o tornozelo dobra com o pé no chão. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida foi o fator de risco mais forte de todos, com razão de chances de 23,3.',
+    'O balanço do tornozelo é um exercício em pé em que o joelho vai para a frente por cima dos dedos enquanto o calcanhar fica apoiado no chão. Ele trabalha a dorsiflexão do tornozelo, o quanto o tornozelo dobra com o pé no chão. Em um estudo caso-controle com 50\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/) e 100\u00A0controles, a dorsiflexão reduzida foi o fator de risco mais forte de todos, com razão de chances de 23,3.',
   takeaways: [
     'A dorsiflexão reduzida do tornozelo foi o fator de risco independente mais forte para fascite plantar em um estudo caso-controle pareado, com razão de chances de 23,3 (Riddle e colegas, 2003).',
     'O balanço do tornozelo trabalha a dorsiflexão colocando carga no fim da amplitude com o peso do corpo, diferente de um alongamento parado na parede.',
@@ -65,7 +65,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
             'A fáscia plantar absorve forças para as quais não foi feita.',
           ],
         },
-        'No estudo caso-controle de Riddle de 2003, **a dorsiflexão reduzida do tornozelo foi a variável com o maior efeito independente**, com razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou a distância corrida. Uma panturrilha tensa, especificamente o gastrocnêmio, estava presente em 52 a 60\u00A0por cento de 254\u00A0pessoas com fascite plantar em outra revisão.',
+        'No estudo caso-controle de Riddle de 2003, **a dorsiflexão reduzida do tornozelo foi a variável com o maior efeito independente**, com razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou a distância corrida. Uma [panturrilha tensa](/pt/panturrilha-tensa/), especificamente o gastrocnêmio, estava presente em 52 a 60\u00A0por cento de 254\u00A0pessoas com fascite plantar em outra revisão.',
         'Alongar a panturrilha de forma passiva (como no [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e no [alongamento do sóleo](/pt/exercicios/alongamento-soleo/)) atua sobre um lado do problema: o comprimento do músculo. O balanço do tornozelo atua sobre o outro lado: o controle ativo no fim da amplitude. Levar o joelho por cima dos dedos com o peso do corpo ensina o tornozelo a usar a amplitude que tem, e não só alcançá-la de forma passiva.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -75,7 +75,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
       paragraphs: [
         'O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) é uma posição parada. Você inclina para a parede e espera o músculo alongar. A perna de trás fica esticada, o que trabalha o gastrocnêmio. O [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) faz o mesmo com o joelho dobrado.',
         'O balanço do tornozelo é um movimento ativo e repetido. Você leva o joelho para a frente, volta, leva de novo. Você coloca carga no tornozelo ao longo da amplitude em vez de ficar parado no fim dela. O balanço do tornozelo desenvolve a capacidade de usar a dorsiflexão com carga, que é o que andar e correr realmente exigem.',
-        'Os dois são úteis. **O alongamento abre a amplitude. O balanço do tornozelo ensina você a usá-la.** A diretriz dá ao alongamento de panturrilha o grau A. O balanço do tornozelo faz parte do trabalho de mobilidade que o Walkito coloca junto com esses alongamentos.',
+        'Os dois são úteis. **O alongamento abre a amplitude. O balanço do tornozelo ensina você a usá-la.** A diretriz dá ao alongamento de panturrilha o grau A. O balanço do tornozelo faz parte do [trabalho de mobilidade](/pt/exercicios-mobilidade-tornozelo/) que o Walkito coloca junto com esses alongamentos.',
       ],
       cites: [CITE.guideline],
     },

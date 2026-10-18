@@ -137,7 +137,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
       keyFact: 'Em um ensaio com 52\u00A0pessoas com pé chato flexível, um programa de pé curto, exercícios de tornozelo, quadril e alongamentos mudou duas medidas do formato do arco mais do que em um grupo controle (Brijwasi e Borkar, 2023).',
       paragraphs: [
         'Trabalhar o pé chato faz sentido se os próprios pés doem, cansam rápido ou parecem instáveis. Não é um programa para as costas, e nenhum ensaio mostrou que exercícios para os pés, sozinhos, aliviam a dor nas costas.',
-        'No pé chato flexível, em que o arco volta quando você tira o pé do chão, um ensaio com 52\u00A0pessoas viu que pé curto, exercícios de tornozelo, fortalecimento de quadril e alongamentos, feitos juntos, mudaram o formato do arco mais do que em um grupo controle. Esse ensaio mediu o formato do arco, não a dor. Uma revisão de 2024 sobre o treino de pé curto sozinho não encontrou mudança clara na postura do pé no geral.',
+        'No pé chato flexível, em que o arco volta quando você tira o pé do chão, um ensaio com 52\u00A0pessoas viu que [pé curto](/pt/exercicios/pe-curto/), exercícios de tornozelo, fortalecimento de quadril e alongamentos, feitos juntos, mudaram o formato do arco mais do que em um grupo controle. Esse ensaio mediu o formato do arco, não a dor. Uma revisão de 2024 sobre o treino de pé curto sozinho não encontrou mudança clara na postura do pé no geral.',
         'O programa completo, com doses e progressões, está em [exercícios para pé chato](/pt/exercicios-pe-chato/). Três dos movimentos principais estão abaixo.',
         'O Walkito coloca esses exercícios num plano semanal para os pés e começa o pé curto com 3\u00A0séries de 8, segurando 5\u00A0segundos. Ele não faz nada diretamente pelas costas, e não diz que faz.',
         'Se algum exercício levar a dor no pé a **6/10 ou mais**, ou provocar dor nas costas ou dor descendo pela perna, pare por hoje.',
@@ -253,7 +253,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
   },
   program: {
     h2: 'Como transformar isso em um plano',
-    text: 'O Walkito é um programa de exercícios para os pés e a parte de baixo das pernas. Para pé chato, ele monta um plano uma semana de cada vez em torno de metas para os pés, como sustentar o arco por 60\u00A0segundos e ficar 30\u00A0segundos em equilíbrio em uma perna. Ele começa o pé curto com 3\u00A0séries de 8, segurando 5\u00A0segundos, o trabalho de quadril com 3\u00A0séries de 10 e o alongamento de panturrilha com 2\u00A0vezes de 30\u00A0segundos.',
+    text: 'O Walkito é um programa de exercícios para os pés e a parte de baixo das pernas. Para pé chato, ele monta um plano uma semana de cada vez em torno de metas para os pés, como sustentar o arco por 60\u00A0segundos e ficar 30\u00A0segundos em [equilíbrio em uma perna](/pt/exercicios/equilibrio-uma-perna/). Ele começa o pé curto com 3\u00A0séries de 8, segurando 5\u00A0segundos, o trabalho de quadril com 3\u00A0séries de 10 e o alongamento de panturrilha com 2\u00A0vezes de 30\u00A0segundos.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando nos seus pés.',
       'O Walkito não cuida de dor nas costas, não faz diagnóstico e não substitui um profissional de saúde. Se você tem dor nas costas, faça uma avaliação, principalmente se algum dos sinais acima se aplicar a você.',

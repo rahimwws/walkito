@@ -17,7 +17,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
     'Comment masser la plante du pied avec une balle ou une bouteille congelée contre la fasciite plantaire\u00A0: technique, durée, ce que cela fait ou non.',
   h1: 'Massage avec une balle pour la fasciite plantaire\u00A0: balle, bouteille et technique',
   lede:
-    'Faire rouler la plante du pied sur une balle ou une bouteille est l’un des gestes de soin à domicile les plus courants contre la fasciite plantaire. C’est agréable, et les professionnels de santé le conseillent pour apaiser le tissu entre les séances. Mais aucun essai randomisé n’a testé ce massage seul dans la fasciite plantaire. Cette page explique ce que le massage fait, ce qu’il ne fait pas, et la place honnête de la bouteille congelée.',
+    'Faire rouler la plante du pied sur une balle ou une bouteille est l’un des gestes de soin à domicile les plus courants contre la [fasciite plantaire](/fr/fasciite-plantaire/). C’est agréable, et les professionnels de santé le conseillent pour apaiser le tissu entre les séances. Mais aucun essai randomisé n’a testé ce massage seul dans la fasciite plantaire. Cette page explique ce que le massage fait, ce qu’il ne fait pas, et la place honnête de la bouteille congelée.',
   takeaways: [
     'Aucun essai randomisé n’a testé le massage du pied avec une balle comme intervention isolée dans la fasciite plantaire. Il est largement conseillé comme mesure de confort et de récupération, pas comme intervention principale.',
     'La recommandation de 2023 sur la douleur au talon conseille les étirements (note A) et le renforcement (note B) comme piliers des exercices. Le massage avec une balle n’a pas de note à part.',

@@ -17,7 +17,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
     'Plantarfaszie dehnen bei Plantarfasziitis und Fersenschmerzen: Technik, wann du dehnst, wie lange du hältst und was die Forschung dazu sagt.',
   h1: 'Plantarfaszien-Dehnung: wie sie geht, Sätze und Wiederholungen',
   lede:
-    'Die Plantarfaszien-Dehnung ist die einzige Dehnung, die bei Plantarfasziitis direkt gegen das Dehnen der Achillessehne getestet wurde. In einer Studie mit 82\u00A0Personen mit chronischen Fersenschmerzen hatten diejenigen, die die Plantarfaszie dehnten, nach acht Wochen bessere Werte bei Schmerz und Funktion als diejenigen, die die Achillessehne dehnten. Diese Seite erklärt die Technik, die Dosis und wann die Dehnung am meisten zählt.',
+    'Die Plantarfaszien-Dehnung ist die einzige Dehnung, die bei [Plantarfasziitis](/de/plantarfasziitis/) direkt gegen das Dehnen der Achillessehne getestet wurde. In einer Studie mit 82\u00A0Personen mit chronischen Fersenschmerzen hatten diejenigen, die die Plantarfaszie dehnten, nach acht Wochen bessere Werte bei Schmerz und Funktion als diejenigen, die die Achillessehne dehnten. Diese Seite erklärt die Technik, die Dosis und wann die Dehnung am meisten zählt.',
   takeaways: [
     'In einer Studie mit 82\u00A0Personen mit chronischer Plantarfasziitis brachte die Plantarfaszien-Dehnung nach acht Wochen bessere Werte bei Schmerz und Funktion als eine Dehnung der Achillessehne (DiGiovanni und Kollegen, 2003).',
     'Bei der Nachuntersuchung nach zwei Jahren, nachdem alle Teilnehmenden zur Plantarfaszien-Dehnung gewechselt hatten, waren 92\u00A0% mit ihrem Ergebnis zufrieden (DiGiovanni und Kollegen, 2006).',
@@ -56,7 +56,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
     {
       h2: 'Wann solltest du die Plantarfaszie dehnen?',
       paragraphs: [
-        '**Vor deinem ersten Schritt am Morgen.** Das ist die Anweisung, die sowohl die Studie als auch die Leitlinie von 2023 am häufigsten wiederholen. Die Plantarfaszie verkürzt sich über Nacht, während der Fuß entspannt ist. Die ersten Schritte des Tages ziehen plötzlich und kräftig an ihr, und deshalb sind Fersenschmerzen am Morgen das typische Zeichen einer Plantarfasziitis.',
+        '**Vor deinem ersten Schritt am Morgen.** Das ist die Anweisung, die sowohl die Studie als auch die Leitlinie von 2023 am häufigsten wiederholen. Die Plantarfaszie verkürzt sich über Nacht, während der Fuß entspannt ist. Die ersten Schritte des Tages ziehen plötzlich und kräftig an ihr, und deshalb sind [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) das typische Zeichen einer Plantarfasziitis.',
         'Der zweitwichtigste Zeitpunkt ist vor dem Aufstehen nach jedem längeren Sitzen. In Ruhe passiert dieselbe Verkürzung. Die Faszie zu dehnen, bevor sie Last aufnimmt, mildert diesen Ruck.',
         'In der Studie sollten die Teilnehmenden die Dehnung 10-mal 10\u00A0Sekunden halten, dreimal am Tag, mindestens acht Wochen lang. Am wichtigsten waren die Runde am Morgen und die nach längerem Sitzen. Mehr Runden über den Tag verteilt waren erwünscht, wenn möglich.',
       ],
@@ -78,7 +78,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
       h2: 'Was unterscheidet die Plantarfaszien-Dehnung von einer Wadendehnung?',
       paragraphs: [
         'Sie zielen auf verschiedene Strukturen. Die [Wadendehnung](/de/uebungen/wade-dehnen/) verlängert den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel, über die Achillessehne. Die Plantarfaszien-Dehnung zieht die Zehen zurück und belastet die Faszie direkt unter dem Gewölbe. Beide sind über das Fersenbein verbunden, reagieren aber auf unterschiedliche Positionen.',
-        'Eine verkürzte Wade ist für sich allein ein Risikofaktor für Plantarfasziitis. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor. Deshalb empfiehlt die Leitlinie beide Dehnungen, nicht nur eine davon.',
+        'Eine [verkürzte Wade](/de/verspannte-waden/) ist für sich allein ein Risikofaktor für Plantarfasziitis. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor. Deshalb empfiehlt die Leitlinie beide Dehnungen, nicht nur eine davon.',
         'Für den tieferen Wadenmuskel, den Soleus, ändert sich die Dehnung: Du beugst das hintere Knie, um die Last vom Gastrocnemius auf den Soleus zu verlagern. Das ist eine eigene Übung. Siehe [Soleusdehnung](/de/uebungen/soleus-dehnen/).',
       ],
       cites: [CITE.riddle, CITE.guideline],

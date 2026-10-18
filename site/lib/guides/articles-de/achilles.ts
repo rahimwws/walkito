@@ -19,7 +19,7 @@ export const ACHILLES_DE: Guide = {
   lede:
     'Übungen bei Achillessehnenentzündung wirken am besten, wenn du das Fersenabsenken als Krafttraining verstehst, nicht als Dehnung. Die klinische Leitlinie von 2024 gibt Übungen den höchsten Empfehlungsgrad **A** und eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand kein Protokoll, das klar besser war als ein anderes. Entscheidend ist, die Sehne über Wochen gleichmäßig zu belasten.',
   intro: [
-    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) fasst beides zusammen. Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
+    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
     'Die meisten verwenden „Achillessehnenentzündung“ und „Tendinopathie“ gleichbedeutend. Aktuelle Leitlinien sprechen von „Tendinopathie“, weil das Problem meist eine Frage der Belastung ist und keine reine Entzündung. Diese Seite sagt „Achillessehnenentzündung“ in den Überschriften und „Tendinopathie“ dort, wo die Leitlinie es tut.',
   ],
   takeaways: [
@@ -42,7 +42,7 @@ export const ACHILLES_DE: Guide = {
     {
       h2: 'Was ist exzentrisches Fersenabsenken, und warum ist es keine Dehnung?',
       paragraphs: [
-        'Exzentrisches Fersenabsenken ist eine Kraftübung, keine Dehnung für die Beweglichkeit. Du kommst auf beiden Füßen hoch, verlagerst das Gewicht auf die schmerzende Seite und senkst dich langsam auf einem Fuß ab, wobei die Ferse unter die Stufenkante sinkt. Die Absenkphase ist die exzentrische Kontraktion: Der Wadenmuskel wird unter Last länger. Dieses kontrollierte Absenken baut über Wochen die Belastbarkeit der Sehne auf.',
+        '[Exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) ist eine Kraftübung, keine Dehnung für die Beweglichkeit. Du kommst auf beiden Füßen hoch, verlagerst das Gewicht auf die schmerzende Seite und senkst dich langsam auf einem Fuß ab, wobei die Ferse unter die Stufenkante sinkt. Die Absenkphase ist die exzentrische Kontraktion: Der Wadenmuskel wird unter Last länger. Dieses kontrollierte Absenken baut über Wochen die Belastbarkeit der Sehne auf.',
         'Der häufigste Fehler ist, unten zu verharren wie bei einer Wadendehnung. Dann wird daraus eine statische Dehnung, und das ist ein anderer Reiz. **Es geht um das langsame Absenken unter Last.** Drei Sekunden nach unten, und der Muskel arbeitet die ganze Zeit.',
         'In der Alfredson-Studie von 1998 machten 15\u00A0Sportler mit lange bestehenden Schmerzen im Mittelteil der Achillessehne drei Monate lang zweimal am Tag, 7\u00A0Tage pro Woche, exzentrisches Fersenabsenken, mit gestrecktem und gebeugtem Knie. Alle 15 kehrten auf ihr früheres Laufniveau zurück. Eine kleine Studie ohne Kontrollgruppe, aber sie hat eine ganze Forschungsrichtung angestoßen.',
       ],
@@ -68,7 +68,7 @@ export const ACHILLES_DE: Guide = {
       paragraphs: [
         'Ja, nach heutiger Studienlage. Eine Studie von 2015 mit 58\u00A0Personen verglich Heavy Slow Resistance (HSR, schweres, langsames Krafttraining) an 3\u00A0Tagen pro Woche mit dem klassischen exzentrischen Protokoll zweimal am Tag. Das Fazit: „Sowohl klassisches exzentrisches Training als auch HSR führen bei Patienten mit Achillessehnen-Tendinopathie zu positiven, gleich guten, anhaltenden klinischen Ergebnissen.“',
         'Eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand nach 3 oder 12\u00A0Monaten keinen klinisch relevanten Unterschied zwischen den aktiven Übungsansätzen. Alle waren besser, als nichts zu tun. Keine Studie hatte ein geringes Risiko für Verzerrung. Die Autoren empfahlen, mit einem Übungsprogramm für die Wadenmuskeln zu beginnen, weil es wenig kostet und kaum schadet.',
-        '**Die Form des Protokolls zählt weniger als die gleichmäßige Belastung der Sehne.** Exzentrisches Absenken ist am besten untersucht, HSR wirkt genauso und braucht weniger Einheiten pro Woche, und beides ist ein guter Startpunkt. Dieselbe Logik der Wadenkräftigung bei Plantarfasziitis findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        '**Die Form des Protokolls zählt weniger als die gleichmäßige Belastung der Sehne.** Exzentrisches Absenken ist am besten untersucht, HSR wirkt genauso und braucht weniger Einheiten pro Woche, und beides ist ein guter Startpunkt. Dieselbe Logik der Wadenkräftigung bei [Plantarfasziitis](/de/plantarfasziitis/) findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -207,7 +207,6 @@ export const ACHILLES_DE: Guide = {
       paragraphs: [
         'In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12\u00A0Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzüberwachung während der Reha „daher eine wertvolle Option sein könnte“.',
         'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen.',
-        'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastungssteuerung beim Laufen ein.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -274,7 +273,7 @@ export const ACHILLES_DE: Guide = {
     {
       q: 'Was wird mit einer Achillessehnenentzündung verwechselt?',
       cites: [CITE.chooRearfoot],
-      a: 'Eine Bursitis retrocalcanea (Schleimbeutelentzündung hinter der Ferse), eine Haglund-Ferse und ein Teilriss der Achillessehne können ähnliche Schmerzen hinten an der Ferse verursachen. Ein sichtbarer knöcherner Höcker deutet eher auf eine Haglund-Ferse hin, eine Schwellung direkt hinten auf Höhe des Schuhrands eher auf eine Bursitis. Jeder plötzliche stechende Schmerz mit einem Knall, oder wenn du nicht mehr auf die Zehen kommst, muss dringend auf einen Sehnenriss untersucht werden.',
+      a: 'Eine Bursitis retrocalcanea (Schleimbeutelentzündung hinter der Ferse), eine [Haglund-Ferse](/de/haglundferse/) und ein Teilriss der Achillessehne können ähnliche Schmerzen hinten an der Ferse verursachen. Ein sichtbarer knöcherner Höcker deutet eher auf eine Haglund-Ferse hin, eine Schwellung direkt hinten auf Höhe des Schuhrands eher auf eine Bursitis. Jeder plötzliche stechende Schmerz mit einem Knall, oder wenn du nicht mehr auf die Zehen kommst, muss dringend auf einen Sehnenriss untersucht werden.',
     },
   ],
   redFlags: {

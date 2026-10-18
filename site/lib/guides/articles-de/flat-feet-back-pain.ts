@@ -137,7 +137,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'In einer Studie mit 52\u00A0Personen mit flexiblem Plattfuß veränderte ein Programm aus Kurzer-Fuß-Übung, Sprunggelenk- und Hüftübungen und Dehnen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023).',
       paragraphs: [
         'An deinen Plattfüßen zu arbeiten ist sinnvoll, wenn deine Füße selbst wehtun, schnell ermüden oder sich instabil anfühlen. Ein Rückenprogramm ist das nicht, und keine Studie hat gezeigt, dass Fußübungen allein Rückenschmerzen lindern.',
-        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass Kurzer-Fuß-Übungen, Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung.',
+        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass [Kurzer-Fuß-Übungen](/de/uebungen/kurzer-fuss/), Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung.',
         'Das vollständige Programm mit Dosis und Steigerungen findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/). Drei der Kernübungen stehen unten.',
         'Walkito baut sie in einen Wochenplan für die Füße ein und beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten. Für den Rücken direkt tut es nichts, und es behauptet das auch nicht.',
         'Wenn eine Übung deinen Fußschmerz auf **6/10 oder mehr** bringt oder Rückenschmerzen oder Schmerzen ins Bein auslöst, hör für heute auf.',
@@ -253,7 +253,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito ist ein Übungsprogramm für Füße und Unterschenkel. Bei Plattfüßen baut es Woche für Woche einen Plan rund um Fußziele, etwa das Gewölbe 60\u00A0Sekunden halten und 30\u00A0Sekunden Einbeinstand. Es beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten, die Hüftübungen mit 3\u00A0Sätzen à 10 und die Wadendehnung mit 2-mal 30\u00A0Sekunden halten.',
+    text: 'Walkito ist ein Übungsprogramm für Füße und Unterschenkel. Bei Plattfüßen baut es Woche für Woche einen Plan rund um Fußziele, etwa das Gewölbe 60\u00A0Sekunden halten und 30\u00A0Sekunden [Einbeinstand](/de/uebungen/einbeinstand/). Es beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten, die Hüftübungen mit 3\u00A0Sätzen à 10 und die Wadendehnung mit 2-mal 30\u00A0Sekunden halten.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich an deinen Füßen verändert.',
       'Walkito kümmert sich nicht um Rückenschmerzen, stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn du Rückenschmerzen hast, lass sie abklären, vor allem wenn eines der Zeichen oben auf dich zutrifft.',

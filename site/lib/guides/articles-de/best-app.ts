@@ -19,7 +19,7 @@ export const BEST_APP_DE: Guide = {
     'Die beste App bei Plantarfasziitis 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch und Walkito im Vergleich nach Preis, Plattform und Eignung.',
   h1: 'Die beste App bei Plantarfasziitis: ein Ratgeber zum Kauf für 2026',
   lede:
-    'Diese Seite vergleicht sieben Apps mit Übungen bei Plantarfasziitis, Plattfüßen oder allgemeinen Fußschmerzen. Walkito ist eine davon, und Walkito hat diese Seite gemacht, das solltest du von Anfang an wissen. Das Ziel ist, fair zu sein, zu sagen, wo andere stärker sind, und dir genug Details zu geben, um die App zu wählen, die zu deiner Situation passt.',
+    'Diese Seite vergleicht sieben Apps mit Übungen bei [Plantarfasziitis](/de/plantarfasziitis/), [Plattfüßen](/de/plattfuss/) oder allgemeinen Fußschmerzen. Walkito ist eine davon, und Walkito hat diese Seite gemacht, das solltest du von Anfang an wissen. Das Ziel ist, fair zu sein, zu sagen, wo andere stärker sind, und dir genug Details zu geben, um die App zu wählen, die zu deiner Situation passt.',
   intro: [
     'Die eine beste App für alle gibt es nicht. Die richtige Wahl hängt davon ab, was du brauchst: Wer nach einer Plantarfasziitis wieder mit dem Laufen anfangen will, braucht etwas anderes als jemand mit Plattfüßen, der den ganzen Tag bei der Arbeit steht, und beide brauchen etwas anderes als jemand, dessen Arbeitgeber Hinge Health bezahlt. Die Kriterien unten erklären, worauf du achten solltest, und die Tabelle danach zeigt, wo jede App steht.',
   ],
@@ -116,7 +116,7 @@ export const BEST_APP_DE: Guide = {
     {
       h2: 'Exakt Health: die Reha-App für Läuferinnen und Läufer',
       paragraphs: [
-        'Exakt Health ist für Läuferinnen und Läufer gebaut, und das merkt man. Die App hat über 15\u00A0Reha-Pläne für Verletzungen, von Plantarfasziitis über Achillessehnen-Tendinopathie bis zu Meniskusrissen, dazu Laufpläne vom Sofa bis zum Marathon. Jeder Reha-Plan endet mit einer strukturierten Phase für den Wiedereinstieg ins Laufen, was die meisten Apps bei Fußschmerzen nicht bieten.',
+        '[Exakt Health](/de/walkito-vs-exakt-health/) ist für Läuferinnen und Läufer gebaut, und das merkt man. Die App hat über 15\u00A0Reha-Pläne für Verletzungen, von Plantarfasziitis über [Achillessehnen-Tendinopathie](/de/achillessehnenentzuendung-uebungen/) bis zu Meniskusrissen, dazu Laufpläne vom Sofa bis zum Marathon. Jeder Reha-Plan endet mit einer strukturierten Phase für den Wiedereinstieg ins Laufen, was die meisten Apps bei Fußschmerzen nicht bieten.',
         'Sie ist in der EU als Medizinprodukt zertifiziert, hat also eine behördliche Prüfung zu Sicherheit und Zweckbestimmung durchlaufen. Entwickelt wurde sie von zugelassenen Sportphysiotherapeutinnen und -physiotherapeuten und Lauftrainern. Die App hat über 600\u00A0Übungsvideos und passt ihren Plan an, während du die Level durchläufst.',
         'Mit 19,99\u00A0$ im Monat oder 59,99\u00A0$ für sechs Monate ist Exakt nicht billig, aber die Bandbreite an Beschwerden und die Qualität der Reha-Pläne sind auf dem Markt der Selbsthilfe-Apps schwer zu schlagen. Mit der 7-tägigen kostenlosen Testphase siehst du die ganze App, bevor du zahlst. Sie ist auf Englisch, Französisch, Deutsch und Spanisch verfügbar, für iOS und Android.',
         'Wo Exakt stärker ist als Walkito:',
@@ -206,7 +206,7 @@ export const BEST_APP_DE: Guide = {
           list: [
             'Es baut aus deinen Antworten zu Schmerz, Zielen und Zeitplan einen Wochenplan.',
             'Jeden Morgen passt ein Check die Einheit des Tages daran an, wie sich dein Fuß anfühlt.',
-            'Tests alle 14\u00A0Tage messen Fersenheben, Gewölbehalten und Einbeinstand und vergleichen links mit rechts.',
+            'Tests alle 14\u00A0Tage messen Fersenheben, Gewölbehalten und [Einbeinstand](/de/uebungen/einbeinstand/) und vergleichen links mit rechts.',
             'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten.',
             'Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen und der Studie von Rathleff 2015.',
             'Es verbindet sich auf dem iPhone mit Apple Health und auf Android mit Health Connect für Schritte, Schlaf und Gehdaten, die auf deinem Handy bleiben. Gangasymmetrie und Gehgeschwindigkeit gibt es nur auf dem iPhone.',

@@ -17,11 +17,11 @@ export const EX_SHORT_FOOT_FR: Guide = {
     'Comment faire l’exercice du pied court\u00A0: consignes, séries et répétitions, progression assis puis debout, erreurs à éviter, ce que montre la recherche.',
   h1: 'Exercice du pied court\u00A0: comment le faire, séries et progression',
   lede:
-    'L’exercice du pied court entraîne les petits muscles à l’intérieur du pied à tenir la voûte levée sans recroqueviller les orteils. Vous tirez la base des orteils vers le talon pour que la voûte se raccourcisse et se soulève. C’est l’exercice qu’une revue narrative de 2015 a présenté comme la base de l’entraînement du «\u00A0foot core\u00A0», le gainage du pied, et il figure dans la plupart des programmes pour pieds plats et fasciite plantaire qui visent les muscles intrinsèques du pied.',
+    'L’exercice du pied court entraîne les petits muscles à l’intérieur du pied à tenir la voûte levée sans recroqueviller les orteils. Vous tirez la base des orteils vers le talon pour que la voûte se raccourcisse et se soulève. C’est l’exercice qu’une revue narrative de 2015 a présenté comme la base de l’entraînement du «\u00A0foot core\u00A0», le gainage du pied, et il figure dans la plupart des programmes pour pieds plats et [fasciite plantaire](/fr/fasciite-plantaire/) qui visent les muscles intrinsèques du pied.',
   takeaways: [
     'Une étude IRM de 2016 sur 8\u00A0sportifs a montré que l’exercice du pied court produisait l’activation moyenne la plus élevée (jusqu’à 34,9\u00A0%) dans trois des quatre muscles plantaires intrinsèques testés, par rapport à l’écartement des orteils, à l’extension du gros orteil et à l’extension des quatre autres orteils (Gooding et coll., 2016).',
     'Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).',
-    'Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines amélioraient la chute du naviculaire (navicular drop), mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).',
+    'Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines réduisaient la chute du naviculaire (navicular drop), mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).',
     'Des adultes en bonne santé qui ont fait quatre semaines d’exercices du pied court ont plus amélioré leur équilibre dynamique qu’un groupe qui ramassait une serviette avec les orteils pendant la même durée (Lynn et coll., 2012).',
   ],
   toc: false,
@@ -30,7 +30,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Qu’est-ce que l’exercice du pied court\u00A0?',
       paragraphs: [
         'L’exercice du pied court est une contraction isométrique des muscles intrinsèques du pied. Vous réduisez la distance entre la base des orteils et le talon en les rapprochant, ce qui soulève la voûte. Les orteils restent à plat et détendus tout du long. Une revue de 2015 de McKeon et coll. en a fait l’exercice central de leur modèle du «\u00A0foot core\u00A0», en comparant les muscles intrinsèques du pied aux muscles profonds du tronc.',
-        'On l’appelle aussi dôme de la voûte, dôme du pied ou exercice de raccourcissement du pied. Il diffère du ramassage de serviette ou de la flexion des orteils, car ces exercices utilisent la flexion des orteils, qui fait travailler les longs fléchisseurs des orteils, des muscles qui descendent depuis la jambe. L’exercice du pied court vise à isoler les muscles situés entièrement dans le pied.',
+        'On l’appelle aussi dôme de la voûte, dôme du pied ou exercice de raccourcissement du pied. Il diffère du [ramassage de serviette](/fr/exercices/ramasser-serviette-orteils/) ou de la flexion des orteils, car ces exercices utilisent la flexion des orteils, qui fait travailler les longs fléchisseurs des orteils, des muscles qui descendent depuis la jambe. L’exercice du pied court vise à isoler les muscles situés entièrement dans le pied.',
       ],
       cites: [CITE.mcKeon],
     },
@@ -124,7 +124,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
       h2: 'Que dit la recherche sur les exercices du pied court\u00A0?',
       keyFact: 'Dans un essai de 2023 sur 52\u00A0personnes aux pieds plats souples, un programme de six semaines associant pied court, travail de la cheville, renforcement de la hanche et étirements a modifié la forme de la voûte davantage que dans un groupe témoin (Brijwasi et coll., 2023).',
       paragraphs: [
-        'Les données les plus solides viennent de programmes qui associent l’exercice du pied court à d’autres exercices, pas du pied court seul. Dans un essai de 2023 sur 52\u00A0personnes aux pieds plats souples, Brijwasi et coll. ont testé un programme de six semaines comprenant\u00A0:',
+        'Les données les plus solides viennent de programmes qui associent l’exercice du pied court à d’autres exercices, pas du pied court seul. Dans un essai de 2023 sur 52\u00A0personnes aux [pieds plats souples](/fr/pieds-plats/), Brijwasi et coll. ont testé un programme de six semaines comprenant\u00A0:',
         {
           list: [
             'Des exercices du pied court.',
@@ -134,7 +134,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
           ],
         },
         'Le programme a modifié deux mesures de la forme de la voûte davantage que dans le groupe témoin.',
-        'Une méta-analyse de 2024 de Cheng et coll. a étudié l’entraînement du pied court seul sur plusieurs essais. Les résultats regroupés ne montraient aucune amélioration significative de la chute du naviculaire ni du Foot Posture Index dans l’ensemble. Mais quand les auteurs ont limité l’analyse aux programmes de plus de six semaines, la chute du naviculaire s’est nettement améliorée. La durée de l’entraînement compte.',
+        'Une méta-analyse de 2024 de Cheng et coll. a étudié l’entraînement du pied court seul sur plusieurs essais. Les résultats regroupés ne montraient aucune amélioration significative de la chute du naviculaire ni du Foot Posture Index dans l’ensemble. Mais quand les auteurs ont limité l’analyse aux programmes de plus de six semaines, la chute du naviculaire s’est nettement réduite. La durée de l’entraînement compte.',
         'Pour l’équilibre, un essai randomisé de 2012 de Lynn et coll. a comparé quatre semaines d’entraînement du pied court à quatre semaines de ramassage de serviette chez des adultes en bonne santé. Le groupe du pied court a plus amélioré son équilibre dynamique que le groupe de la serviette.',
         'Aucune de ces études n’est grande. **Les données soutiennent l’exercice du pied court comme partie d’un programme plus large de renforcement du pied, surtout pour les pieds plats et la douleur de voûte.** Ce n’est pas une solution à lui seul, et il n’a pas été testé seul comme traitement principal de la fasciite plantaire. Pour la liste complète des exercices, voir [exercices pour pieds plats](/fr/exercices-pieds-plats/) ou [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
@@ -145,7 +145,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
     {
       q: 'Combien de temps faut-il pour que les exercices du pied court marchent\u00A0?',
       cites: [CITE.cheng],
-      a: 'Une méta-analyse de 2024 a montré que les programmes d’entraînement du pied court de moins de six semaines ne modifiaient pas nettement la hauteur de la voûte, mais que ceux de plus de six semaines amélioraient la chute du naviculaire (Cheng 2024). Comptez au moins six à huit semaines de pratique régulière avant de voir des changements mesurables.',
+      a: 'Une méta-analyse de 2024 a montré que les programmes d’entraînement du pied court de moins de six semaines ne modifiaient pas nettement la hauteur de la voûte, mais que ceux de plus de six semaines réduisaient la chute du naviculaire (Cheng 2024). Comptez au moins six à huit semaines de pratique régulière avant de voir des changements mesurables.',
     },
     {
       q: 'L’exercice du pied court, c’est la même chose que le dôme de la voûte\u00A0?',

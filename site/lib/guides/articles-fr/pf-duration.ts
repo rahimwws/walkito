@@ -21,7 +21,7 @@ export const PF_DURATION_FR: Guide = {
     'Combien de temps dure une fasciite plantaire, ce qui ralentit la récupération, que faire si ça ne s’améliore pas, et comment savoir si la vôtre va mieux.',
   h1: 'Combien de temps dure une fasciite plantaire\u00A0? Ce que disent vraiment les données',
   lede:
-    'La réponse honnête\u00A0: ça dépend, et la plupart des sources sous-estiment à quel point cela varie. Une revue de 2020 indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux comme les étirements et les semelles. Un suivi plus long de 174\u00A0personnes donne une image plus nuancée\u00A0: environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre elles ne signalaient que des symptômes légers.',
+    'La réponse honnête\u00A0: ça dépend, et la plupart des sources sous-estiment à quel point cela varie. Une revue de 2020 indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux comme les étirements et les [semelles](/fr/semelles-ou-exercices/). Un suivi plus long de 174\u00A0personnes donne une image plus nuancée\u00A0: environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre elles ne signalaient que des symptômes légers.',
   intro: [
     'La page [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) présente les exercices, les preuves et les notes de la recommandation. Cette page répond à la question suivante\u00A0: combien de temps tout cela prend, qu’est-ce qui fait que cela prend plus longtemps, et quelles sont les options si ça ne s’améliore pas\u00A0?',
   ],
@@ -47,7 +47,7 @@ export const PF_DURATION_FR: Guide = {
             'De facteurs que vous ne contrôlez pas.',
           ],
         },
-        'Une revue de la littérature de 2020 indique que les approches non chirurgicales marchent pour environ 90\u00A0% des personnes atteintes de fasciite plantaire, en général en trois à six mois (Latt et coll., 2020).',
+        'Une revue de la littérature de 2020 indique que les approches non chirurgicales marchent pour environ 90\u00A0% des personnes atteintes de [fasciite plantaire](/fr/fasciite-plantaire/), en général en trois à six mois (Latt et coll., 2020).',
         'Une étude de cohorte de 2018 donne une vue à plus long terme. Hansen et coll. ont suivi 174\u00A0patients dont la fasciite plantaire avait été diagnostiquée à l’échographie, en moyenne 9,7\u00A0ans après le début des symptômes. Au suivi, 54\u00A0% n’avaient plus de symptômes et 46\u00A0% avaient encore un peu mal.',
         'L’analyse de Kaplan-Meier a montré que le risque d’avoir encore une fasciite plantaire était de 80,5\u00A0% à un an, 50,0\u00A0% à cinq ans et 45,6\u00A0% à dix ans. Chez ceux qui n’avaient plus de symptômes, la durée moyenne des symptômes était de 725\u00A0jours, soit environ deux ans (Hansen et coll., 2018).',
         'Ces chiffres semblent pires que le «\u00A0ça passe en quelques mois\u00A0» habituel. Deux choses expliquent l’écart\u00A0:',
@@ -89,7 +89,7 @@ export const PF_DURATION_FR: Guide = {
             '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
           ],
         },
-        'L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une épine calcanéenne n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
+        'L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
         'Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.',
       ],
       sourceNote:
@@ -152,7 +152,7 @@ export const PF_DURATION_FR: Guide = {
       paragraphs: [
         'Le tableau ci-dessus est clair\u00A0: **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, puncture sèche, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
         'Si vous faites les exercices régulièrement depuis plusieurs mois et que la douleur du matin ne s’améliore pas, c’est un bon moment pour consulter un professionnel de santé et parler des options ci-dessus. C’est aussi un bon moment pour vérifier que le diagnostic est le bon\u00A0: voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour les autres problèmes qui partagent le même schéma.',
-        'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) traitent de cet aspect.',
+        'Les changements de charge font souvent partie du tableau, en course comme en station debout\u00A0: [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) traite de cet aspect.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -180,7 +180,7 @@ export const PF_DURATION_FR: Guide = {
     {
       q: 'Pourquoi ma fasciite plantaire ne s’améliore-t-elle pas\u00A0?',
       cites: [CITE.guideline],
-      a: 'Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les attelles de nuit, le laser ou la puncture sèche (dry needling).',
+      a: 'Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/), le laser ou la puncture sèche (dry needling).',
     },
     {
       q: 'Une épine calcanéenne fait-elle durer la fasciite plantaire plus longtemps\u00A0?',

@@ -18,7 +18,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     'Como fazer a elevação de calcanhar com toalha do protocolo de Rathleff para fascite plantar: séries, repetições, ritmo, a toalha, erros e versões.',
   h1: 'Elevação de calcanhar com toalha: o protocolo de carga alta de Rathleff, passo a passo',
   lede:
-    'A elevação de calcanhar com toalha é uma elevação em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48\u00A0pessoas com fascite plantar, em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de calcanhar comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).',
+    'A elevação de calcanhar com toalha é uma elevação em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48\u00A0pessoas com [fascite plantar](/pt/fascite-plantar/), em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de calcanhar comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).',
   takeaways: [
     'Em um ensaio com 48\u00A0pessoas, as elevações de calcanhar com toalha e carga tiveram 29\u00A0pontos a mais de melhora no Foot Function Index do que só alongar aos três meses, embora os dois grupos tenham se igualado aos doze meses (Rathleff e colegas, 2015).',
     'A diretriz de 2023 para dor no calcanhar dá ao treino de força o grau B, um degrau abaixo do alongamento, com A, e recomenda os dois (Koc e colegas, 2023).',

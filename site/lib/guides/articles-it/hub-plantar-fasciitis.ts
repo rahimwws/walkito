@@ -68,7 +68,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
             'I lavori che richiedono di stare in piedi a lungo.',
           ],
         },
-        'Il piede piatto o il piede cavo possono cambiare il modo in cui il carico passa attraverso la fascia, ma nessuno dei due porta per forza a questo problema.',
+        'Il [piede piatto](/it/piede-piatto/) o il [piede cavo](/it/piede-cavo-esercizi/) possono cambiare il modo in cui il carico passa attraverso la fascia, ma nessuno dei due porta per forza a questo problema.',
         '**Di solito la fascite plantare nasce da una combinazione**:',
         {
           list: [
@@ -108,9 +108,9 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       h2: 'Cosa aiuta la fascite plantare?',
       keyFact: 'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
       paragraphs: [
-        'La linea guida clinica del 2023 dà un grado a ogni approccio in base alla forza delle prove che lo sostengono. Le raccomandazioni più forti sono lo stretching, il taping, la terapia manuale da un professionista e i tutori notturni per il dolore del mattino che non passa. Poi viene il lavoro di forza. La tabella qui sotto elenca le opzioni principali con i loro gradi nella linea guida.',
+        'La linea guida clinica del 2023 dà un grado a ogni approccio in base alla forza delle prove che lo sostengono. Le raccomandazioni più forti sono lo stretching, il [taping](/it/taping-fascite-plantare/), la terapia manuale da un professionista e i [tutori notturni](/it/tutore-notturno-fascite-plantare/) per il dolore del mattino che non passa. Poi viene il lavoro di forza. La tabella qui sotto elenca le opzioni principali con i loro gradi nella linea guida.',
         '**Nessuna opzione funziona per tutti.** La maggior parte delle persone inizia con lo stretching e scarpe con un buon sostegno, aggiunge il lavoro di forza quando il dolore iniziale si calma, e chiede a un professionista delle altre opzioni se i progressi si fermano.',
-        'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari. La linea guida sconsiglia i plantari da soli come approccio a breve termine e sconsiglia di aggiungere gli ultrasuoni terapeutici allo stretching.',
+        'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico e un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari. La linea guida sconsiglia i [plantari](/it/plantari-o-esercizi/) da soli come approccio a breve termine e sconsiglia di aggiungere gli ultrasuoni terapeutici allo stretching.',
       ],
       table: {
         caption: 'Gradi della linea guida del 2023 per il dolore sotto il tallone',
@@ -137,7 +137,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       keyFact: 'In una coorte di 174\u00A0persone, circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore a dieci anni, per lo più lieve (Hansen e colleghi, 2018).',
       paragraphs: [
         'Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche, spesso nel giro di alcuni mesi. Un follow-up più lungo su 174\u00A0pazienti dà un quadro più dettagliato: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
-        'I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di uno sperone calcaneare non lo erano.',
+        'I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) non lo erano.',
         'La domanda utile non è «quante settimane mancano alla fine?» ma «il mio dolore del mattino è più basso questo mese rispetto al mese scorso?». **Quella tendenza è il vero traguardo.** [Quanto dura la fascite plantare?](/it/quanto-dura-fascite-plantare/) raccoglie tutte le prove sui tempi.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -150,7 +150,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       ],
       bullets: [
         'L’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) tira indietro le dita per caricare la fascia con delicatezza prima di alzarti.',
-        'L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e l’[allungamento del soleo](/it/esercizi/allungamento-soleo/) lavorano sul polpaccio rigido che tira il tallone.',
+        'L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e l’[allungamento del soleo](/it/esercizi/allungamento-soleo/) lavorano sul [polpaccio rigido](/it/polpacci-rigidi/) che tira il tallone.',
         'Il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/) è il sollevamento con carico dello studio di Rathleff.',
         'Il [massaggio con la pallina](/it/esercizi/massaggio-pallina-piede/) può dare sollievo al tessuto tra una sessione e l’altra.',
       ],
@@ -175,7 +175,6 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega esercizi e scarpe per chi sta in piedi al lavoro.',
         '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla di turni lunghi su pavimenti duri.',
         '[Scrivania in piedi e dolore ai piedi](/it/scrivania-in-piedi-dolore-piedi/) spiega il passaggio tra seduto e in piedi.',
-        '[Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega come adattare l’allenamento quando il tallone fa male.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -186,7 +185,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         {
           list: [
             '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
-        '**Sindrome del cuscinetto adiposo del tallone.** Un dolore profondo al centro del tallone, peggiore su superfici dure e a piedi nudi. Una scoping review del 2022 ha notato che può essere difficile distinguerla dalla fascite plantare senza esami di imaging. Il dolore del cuscinetto adiposo è proprio sotto il centro, quello della fascite nella parte interna e anteriore.',
+        '**Sindrome del cuscinetto adiposo del tallone.** Un dolore profondo al centro del tallone, peggiore su superfici dure e a piedi nudi. Una scoping review del 2022 ha notato che può essere difficile distinguerla dalla fascite plantare senza esami di imaging. Il [dolore del cuscinetto adiposo](/it/sindrome-cuscinetto-adiposo-tallone/) è proprio sotto il centro, quello della fascite nella parte interna e anteriore.',
         '**Sperone calcaneare.** Una crescita ossea sulla parte inferiore dell’osso del tallone. Molte persone ne hanno una senza alcun dolore. Nella coorte di Hansen del 2018 su 174\u00A0pazienti, avere uno sperone calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi. Lo sperone spesso c’è, ma di solito non è lui a causare il dolore.',
         '**Frattura da stress del calcagno.** Un dolore che aumenta con l’attività invece di calmarsi quando ti scaldi. Può fare male a riposo o di notte. Stringere i lati del tallone spesso lo riproduce. Rivolgiti a un professionista sanitario prima di allenare il piede.',
         '**Artrite infiammatoria.** Quando fanno male entrambi i talloni, la rigidità del mattino dura più di 30\u00A0minuti e altre articolazioni sono rigide o gonfie, il quadro fa pensare a una causa sistemica. Deve controllarlo un professionista sanitario.',
@@ -209,7 +208,6 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         '[Sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) spiega il protocollo dello studio di Rathleff.',
         '[Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) parla del dolore del mattino, dei tutori notturni e degli altri problemi con dolore ai primi passi.',
         '[Quanto dura la fascite plantare?](/it/quanto-dura-fascite-plantare/) parla di tempi di recupero, predittori e cosa fare se i progressi si fermano.',
-        '[Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) parla di gestione del carico e cambi nell’allenamento.',
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega esercizi e scarpe per chi sta in piedi a lungo.',
         '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla di turni lunghi su pavimenti duri.',
         '[Scrivania in piedi e dolore ai piedi](/it/scrivania-in-piedi-dolore-piedi/) spiega il passaggio tra seduto e in piedi.',

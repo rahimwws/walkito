@@ -84,7 +84,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
         'A diretriz de prática clínica de 2023 para dor no calcanhar, publicada no Journal of Orthopaedic and Sports Physical Therapy, trata a fascite plantar como a causa mais comum de dor embaixo do calcanhar. Ela cita a “síndrome do esporão do calcâneo” como um dos vários diagnósticos diferenciais, junto com:',
         {
           list: [
-            'A síndrome do coxim gorduroso.',
+            'A [síndrome do coxim gorduroso](/pt/sindrome-coxim-gorduroso-calcanhar/).',
             'A irritação de nervo.',
             'A fratura por estresse do calcâneo.',
           ],
@@ -114,7 +114,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
     {
       h2: 'Se o problema não é o esporão, o que é?',
       paragraphs: [
-        'A dor normalmente vem da fáscia plantar e dos tecidos em volta dela, não do osso. A fáscia plantar se prende embaixo do osso do calcanhar. Quando ela é sobrecarregada, principalmente em quem tem a panturrilha tensa, IMC alto ou passa muitas horas em pé, esse ponto de ligação fica irritado. Essa irritação é a fascite plantar.',
+        'A dor normalmente vem da fáscia plantar e dos tecidos em volta dela, não do osso. A fáscia plantar se prende embaixo do osso do calcanhar. Quando ela é sobrecarregada, principalmente em quem tem a [panturrilha tensa](/pt/panturrilha-tensa/), IMC alto ou passa muitas horas em pé, esse ponto de ligação fica irritado. Essa irritação é a fascite plantar.',
         'Uma panturrilha tensa é um dos fatores de risco mais fortes. Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles:',
         {
           list: [

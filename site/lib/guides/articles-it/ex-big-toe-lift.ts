@@ -121,7 +121,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
     {
       q: 'Il sollevamento dell’alluce aiuta la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Il sollevamento dell’alluce non fa parte della linea guida principale sulla fascite plantare, che si concentra sugli allungamenti e sui sollevamenti sulle punte con carico. Può aiutare come parte di un programma più ampio migliorando il controllo del meccanismo a verricello. Vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) per gli esercizi principali.',
+      a: 'Il sollevamento dell’alluce non fa parte della linea guida principale sulla [fascite plantare](/it/fascite-plantare/), che si concentra sugli allungamenti e sui sollevamenti sulle punte con carico. Può aiutare come parte di un programma più ampio migliorando il controllo del meccanismo a verricello. Vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) per gli esercizi principali.',
     },
     {
       q: 'Meglio il sollevamento dell’alluce o l’esercizio del piede corto?',

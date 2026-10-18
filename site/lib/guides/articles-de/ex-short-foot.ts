@@ -16,7 +16,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     'So geht die Kurzer-Fuß-Übung bei Plattfuß und Senkfuß: Technik, Sätze und Wiederholungen, vom Sitzen zum Stehen, typische Fehler und was Studien zeigen.',
   h1: 'Kurzer-Fuß-Übung: wie sie geht, Sätze und Steigerung',
   lede:
-    'Die Kurzer-Fuß-Übung trainiert die kleinen Fußmuskeln darin, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und Plantarfasziitis vor, die auf die inneren Fußmuskeln zielen.',
+    'Die Kurzer-Fuß-Übung trainiert die kleinen Fußmuskeln darin, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und [Plantarfasziitis](/de/plantarfasziitis/) vor, die auf die inneren Fußmuskeln zielen.',
   takeaways: [
     'Eine MRT-Studie von 2016 mit 8\u00A0Sportlern fand, dass die Kurzer-Fuß-Übung in drei von vier getesteten inneren Fußsohlenmuskeln die höchste mittlere Aktivierung erzeugte (bis zu 34,9\u00A0%), verglichen mit Zehenspreizen, Strecken der Großzehe und Strecken der zweiten bis fünften Zehe (Gooding und Kollegen, 2016).',
     'EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung deutlich aktiver war als beim Handtuchgreifen (Jung und Kollegen, 2011).',
@@ -29,7 +29,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Was ist die Kurzer-Fuß-Übung?',
       paragraphs: [
         'Die Kurzer-Fuß-Übung ist eine isometrische Anspannung der inneren Fußmuskeln. Du verkürzt den Abstand zwischen Fußballen und Ferse, indem du beide zueinander ziehst, und dadurch hebt sich das Gewölbe. Die Zehen bleiben die ganze Zeit flach und locker. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 nannte sie die Kernübung ihres „Foot Core“-Modells und verglich die inneren Fußmuskeln mit der tiefen Rumpfmuskulatur.',
-        'Andere Namen dafür sind Gewölbe-Doming, Fuß-Doming oder Fußverkürzung. Sie unterscheidet sich vom Handtuchgreifen oder Zehenkrallen, weil diese Übungen die Zehen beugen und dabei die langen Zehenbeuger einsetzen, die vom Schienbein herunterlaufen. Die Kurzer-Fuß-Übung soll die Muskeln isolieren, die ganz im Fuß liegen.',
+        'Andere Namen dafür sind Gewölbe-Doming, Fuß-Doming oder Fußverkürzung. Sie unterscheidet sich vom [Handtuchgreifen](/de/uebungen/handtuchgreifen/) oder Zehenkrallen, weil diese Übungen die Zehen beugen und dabei die langen Zehenbeuger einsetzen, die vom Schienbein herunterlaufen. Die Kurzer-Fuß-Übung soll die Muskeln isolieren, die ganz im Fuß liegen.',
       ],
       cites: [CITE.mcKeon],
     },
@@ -123,7 +123,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Was sagt die Forschung zur Kurzer-Fuß-Übung?',
       keyFact: 'In einer Studie von 2023 mit 52\u00A0Personen mit flexiblen Plattfüßen veränderte ein sechswöchiges Programm aus Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen die Form des Gewölbes stärker als in einer Kontrollgruppe (Brijwasi und Kollegen, 2023).',
       paragraphs: [
-        'Die stärksten Belege kommen aus Programmen, die die Kurzer-Fuß-Übung mit anderen Übungen kombinieren, nicht aus dem kurzen Fuß allein. In einer Studie von 2023 mit 52\u00A0Personen mit flexiblen Plattfüßen testeten Brijwasi und Kollegen ein sechswöchiges Programm aus:',
+        'Die stärksten Belege kommen aus Programmen, die die Kurzer-Fuß-Übung mit anderen Übungen kombinieren, nicht aus dem kurzen Fuß allein. In einer Studie von 2023 mit 52\u00A0Personen mit [flexiblen Plattfüßen](/de/plattfuss/) testeten Brijwasi und Kollegen ein sechswöchiges Programm aus:',
         {
           list: [
             'Kurzer-Fuß-Übungen.',

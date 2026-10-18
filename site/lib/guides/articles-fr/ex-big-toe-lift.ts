@@ -120,7 +120,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
     {
       q: 'Lever le gros orteil aide-t-il en cas de fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
-      a: 'Lever le gros orteil ne fait pas partie de la principale recommandation sur la fasciite plantaire, centrée sur les étirements et les montées sur pointes avec charge. Il peut aider au sein d’un programme plus large en améliorant le contrôle du mécanisme de treuil. Voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) pour les exercices principaux.',
+      a: 'Lever le gros orteil ne fait pas partie de la principale recommandation sur la [fasciite plantaire](/fr/fasciite-plantaire/), centrée sur les étirements et les montées sur pointes avec charge. Il peut aider au sein d’un programme plus large en améliorant le contrôle du mécanisme de treuil. Voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) pour les exercices principaux.',
     },
     {
       q: 'Lever le gros orteil ou faire l’exercice du pied court\u00A0?',

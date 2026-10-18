@@ -20,7 +20,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
     'Como rolar o pé na bolinha ou na garrafa congelada para fascite plantar: técnica, quanto tempo rolar, e o que isso faz e o que não faz.',
   h1: 'Rolar o pé na bolinha para fascite plantar: bolinha, garrafa e técnica',
   lede:
-    'Rolar a sola do pé sobre uma bolinha ou uma garrafa é um dos cuidados caseiros mais comuns para fascite plantar. É gostoso, e profissionais de saúde recomendam como forma de acalmar o tecido entre as sessões. Mas nenhum ensaio randomizado testou o rolamento sozinho na fascite plantar. Esta página explica o que rolar o pé faz, o que não faz, e onde a garrafa congelada entra, com honestidade.',
+    'Rolar a sola do pé sobre uma bolinha ou uma garrafa é um dos cuidados caseiros mais comuns para [fascite plantar](/pt/fascite-plantar/). É gostoso, e profissionais de saúde recomendam como forma de acalmar o tecido entre as sessões. Mas nenhum ensaio randomizado testou o rolamento sozinho na fascite plantar. Esta página explica o que rolar o pé faz, o que não faz, e onde a garrafa congelada entra, com honestidade.',
   takeaways: [
     'Nenhum ensaio randomizado testou rolar o pé como intervenção isolada para fascite plantar. É muito recomendado como medida de conforto e recuperação, não como intervenção principal.',
     'A diretriz de 2023 para dor no calcanhar recomenda alongamento (grau A) e treino de força (grau B) como os pilares de exercício. Rolar o pé não recebe um grau próprio.',

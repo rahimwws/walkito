@@ -96,7 +96,7 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
           ],
         },
         'Um déficit em qualquer ponto dessa cadeia faz o pé compensar.',
-        'Na fascite plantar e no pé chato, o treino de equilíbrio aparece nos programas de exercício junto com alongamento e fortalecimento, porque treina a cadeia inteira de uma vez. Um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível mostrou que um programa que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril, alongamento e equilíbrio mudou o formato do arco mais que um grupo controle. O equilíbrio não foi isolado nesse ensaio, mas fazia parte do programa que funcionou.',
+        'Na [fascite plantar](/pt/fascite-plantar/) e no [pé chato](/pt/pe-chato/), o treino de equilíbrio aparece nos programas de exercício junto com alongamento e fortalecimento, porque treina a cadeia inteira de uma vez. Um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível mostrou que um programa que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril, alongamento e equilíbrio mudou o formato do arco mais que um grupo controle. O equilíbrio não foi isolado nesse ensaio, mas fazia parte do programa que funcionou.',
         'Especificamente nas entorses de tornozelo, uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção. Esse é o achado isolado mais forte por trás de incluir equilíbrio em um programa para os pés.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],

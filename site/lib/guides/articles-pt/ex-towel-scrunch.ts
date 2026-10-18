@@ -18,7 +18,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
     'Como fazer o exercício de puxar a toalha com os dedos para fortalecer os pés: técnica, séries, o que trabalha, erros e a comparação com o pé curto.',
   h1: 'Puxar a toalha com os dedos: como fazer para fortalecer o pé',
   lede:
-    'Puxar a toalha com os dedos é um exercício em que você traz uma toalha para perto usando só os dedos do pé. Ele trabalha os músculos pequenos embaixo do arco e os flexores dos dedos. É um dos exercícios de fortalecimento do pé mais antigos e simples da reabilitação, e aparece em programas para pé chato, fascite plantar e dor na planta do pé.',
+    'Puxar a toalha com os dedos é um exercício em que você traz uma toalha para perto usando só os dedos do pé. Ele trabalha os músculos pequenos embaixo do arco e os flexores dos dedos. É um dos exercícios de fortalecimento do pé mais antigos e simples da reabilitação, e aparece em programas para [pé chato](/pt/pe-chato/), [fascite plantar](/pt/fascite-plantar/) e dor na planta do pé.',
   takeaways: [
     'Puxar a toalha ativa os músculos intrínsecos do pé, mas estudos de eletromiografia (EMG) mostram que o exercício também recruta os flexores longos dos dedos (músculos extrínsecos) mais do que o exercício do pé curto (Jung e colegas, 2011).',
     'Em um ensaio randomizado de 2012 com adultos saudáveis, o grupo que puxou a toalha por quatro semanas melhorou menos o equilíbrio que um grupo de pé curto, embora os dois tenham melhorado em relação ao início (Lynn e colegas, 2012).',

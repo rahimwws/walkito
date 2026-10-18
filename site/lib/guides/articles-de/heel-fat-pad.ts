@@ -20,7 +20,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
     'Das Fersenfettpolster-Syndrom macht tiefe Schmerzen mitten in der Ferse, wenn das Polster dünner wird. Unterschied zur Plantarfasziitis und was hilft.',
   h1: 'Fersenfettpolster-Syndrom: was es ist, wie es sich von Plantarfasziitis unterscheidet und was die Belege sagen',
   lede:
-    'Beim Fersenfettpolster-Syndrom wird das Fettpolster unter deinem Fersenbein dünner oder geschädigt. Es verursacht einen tiefen Schmerz mitten in der Ferse, der sich wie ein blauer Fleck anfühlt, vor allem auf hartem Boden oder barfuß. Nach der Plantarfasziitis ist es womöglich die zweithäufigste Ursache für Schmerzen unter der Ferse, und doch ist die Forschung dazu dünn. Ein Scoping Review von 2022 fand nur sieben Originalstudien.',
+    'Beim Fersenfettpolster-Syndrom wird das Fettpolster unter deinem Fersenbein dünner oder geschädigt. Es verursacht einen tiefen Schmerz mitten in der Ferse, der sich wie ein blauer Fleck anfühlt, vor allem auf hartem Boden oder barfuß. Nach der [Plantarfasziitis](/de/plantarfasziitis/) ist es womöglich die zweithäufigste Ursache für Schmerzen unter der Ferse, und doch ist die Forschung dazu dünn. Ein Scoping Review von 2022 fand nur sieben Originalstudien.',
   intro: [
     'Diese Seite fasst zusammen, was über das Fersenfettpolster-Syndrom bekannt ist, wie du es von einer Plantarfasziitis unterscheidest und welche konservativen Schritte zumindest etwas Unterstützung haben. Wenn dein Schmerz eher ein stechender Schmerz an der Innenseite der Ferse bei den ersten Schritten am Morgen ist, passt [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) wahrscheinlich besser. Wenn er hinten an der Ferse nahe der Achillessehne sitzt, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) oder [Haglundferse](/de/haglundferse/).',
   ],
@@ -97,13 +97,13 @@ export const HEEL_FAT_PAD_DE: Guide = {
         {
           list: [
             'Viskoelastische Fersenschalen.',
-            'Gedämpfte Einlagen.',
+            'Gedämpfte [Einlagen](/de/einlagen-oder-uebungen/).',
             'Schuhe mit dicken, stoßdämpfenden Sohlen.',
           ],
         },
         'Sie sollen die Dämpfung ersetzen, die das Fettpolster nicht mehr liefert.',
         'Das Scoping Review von 2022 wies auf eine unbequeme Lücke hin: Keine randomisierte kontrollierte Studie hat Fersenschalen oder Taping speziell beim Fersenfettpolster-Syndrom getestet. Ein einzelner Fallbericht beschrieb Schmerzlinderung mit Fersenschalen aus Silikongel nach einem und nach drei Monaten.',
-        'Einige kleine Studien zu Low-Dye-Taping bei Fersenschmerzen allgemein berichten einen mäßigen Rückgang der Schmerzwerte gegenüber Schein- oder keiner Behandlung, aber keine davon trennt das Fersenfettpolster-Syndrom von anderen Ursachen für Fersenschmerzen. Wie groß ein Nutzen hier wäre, ist also nicht bekannt.',
+        'Einige kleine Studien zu [Low-Dye-Taping](/de/plantarfasziitis-tapen/) bei Fersenschmerzen allgemein berichten einen mäßigen Rückgang der Schmerzwerte gegenüber Schein- oder keiner Behandlung, aber keine davon trennt das Fersenfettpolster-Syndrom von anderen Ursachen für Fersenschmerzen. Wie groß ein Nutzen hier wäre, ist also nicht bekannt.',
         'Trotz der schwachen Beleglage ist die Logik einfach: **Wenn das Polster fehlt, ist es ein vernünftiger Schritt, von außen eines hinzuzufügen.** Geh nicht barfuß auf hartem Boden. Wähl Schuhe mit gut gedämpfter Ferse und meide flache Schuhe mit dünner Sohle. Das sind Empfehlungen nach Expertenkonsens, nicht aus Studien, und diese Seite sagt das offen.',
       ],
       cites: [CITE.fatPadReview],
@@ -112,7 +112,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
       h2: 'Helfen Übungen beim Fersenfettpolster-Syndrom?',
       paragraphs: [
         '**Übungen können ein dünner gewordenes Fettpolster nicht wieder aufbauen.** Das ist eine strukturelle Veränderung, keine Muskelschwäche. Trotzdem kann Training eine Rolle dabei spielen, wie der Fuß rund um das Problem zurechtkommt.',
-        'Wadenkraft ist wichtig, weil eine kräftigere Wade mehr von der Landekraft abfängt, bevor sie die Ferse erreicht. Das ist dieselbe Belastungslogik wie bei den Programmen zum Fersenheben bei Plantarfasziitis, aber beim Fersenfettpolster-Syndrom geht es um die Verteilung der Last, nicht um die Heilung von Gewebe. Training der kleinen Fußmuskeln (kurzer Fuß, Zehenspreizen) kann dem Fuß helfen, mit dem Bodenkontakt umzugehen.',
+        'Wadenkraft ist wichtig, weil eine kräftigere Wade mehr von der Landekraft abfängt, bevor sie die Ferse erreicht. Das ist dieselbe Belastungslogik wie bei den Programmen zum Fersenheben bei Plantarfasziitis, aber beim Fersenfettpolster-Syndrom geht es um die Verteilung der Last, nicht um die Heilung von Gewebe. Training der kleinen Fußmuskeln ([kurzer Fuß](/de/uebungen/kurzer-fuss/), Zehenspreizen) kann dem Fuß helfen, mit dem Bodenkontakt umzugehen.',
         'Belege für diese Übungen speziell beim Fersenfettpolster-Syndrom gibt es nicht. Keine Studie hat sie bei dieser Erkrankung getestet. Sie sind aus der allgemeinen Forschung zu Fersenschmerzen und Fußkraft übernommen.',
         'Die Übungen von Walkito sind rund um Plantarfasziitis und Fußkraft aufgebaut. Sie sind eine vernünftige Ergänzung, wenn deine Ärztin oder dein Arzt eine Atrophie des Fettpolsters bestätigt hat, aber sie wurden nicht speziell dafür getestet, und das solltest du wissen.',
       ],

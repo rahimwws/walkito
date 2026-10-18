@@ -22,7 +22,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
     'Cuscinetto adiposo del tallone assottigliato: dolore profondo al centro del tallone. Come distinguerlo dalla fascite plantare e cosa aiuta.',
   h1: 'Sindrome del cuscinetto adiposo del tallone: cos’è, in cosa è diversa dalla fascite plantare e cosa dicono gli studi',
   lede:
-    'La sindrome del cuscinetto adiposo del tallone è l’assottigliamento o il danno del cuscinetto di grasso sotto l’osso del tallone. Dà un dolore profondo, come un livido, al centro del tallone, soprattutto su superfici dure o a piedi nudi. Potrebbe essere la seconda causa più comune di dolore sotto il tallone dopo la fascite plantare, eppure gli studi su questo problema sono pochi. Una scoping review del 2022 ha trovato solo sette studi originali.',
+    'La sindrome del cuscinetto adiposo del tallone è l’assottigliamento o il danno del cuscinetto di grasso sotto l’osso del tallone. Dà un dolore profondo, come un livido, al centro del tallone, soprattutto su superfici dure o a piedi nudi. Potrebbe essere la seconda causa più comune di dolore sotto il tallone dopo la [fascite plantare](/it/fascite-plantare/), eppure gli studi su questo problema sono pochi. Una scoping review del 2022 ha trovato solo sette studi originali.',
   intro: [
     'Questa pagina spiega cosa si sa sulla sindrome del cuscinetto adiposo del tallone, come distinguerla dalla fascite plantare e quali misure conservative hanno almeno un po’ di supporto. Se il tuo dolore è più una fitta acuta nella parte interna del tallone ai primi passi del mattino, probabilmente la pagina giusta è [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Se è nella parte posteriore del tallone vicino all’Achille, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) o [morbo di Haglund](/it/morbo-di-haglund/).',
   ],
@@ -99,13 +99,13 @@ export const HEEL_FAT_PAD_IT: Guide = {
         {
           list: [
             'Coppette viscoelastiche per il tallone.',
-            'Solette ammortizzate.',
+            '[Solette ammortizzate](/it/plantari-o-esercizi/).',
             'Scarpe con suole spesse che assorbono gli urti.',
           ],
         },
         'Servono a sostituire l’ammortizzazione che il cuscinetto adiposo non dà più.',
         'La scoping review del 2022 ha segnalato una lacuna scomoda: nessuno studio randomizzato controllato ha testato coppette per il tallone o taping proprio per la sindrome del cuscinetto adiposo del tallone. Un singolo caso clinico ha descritto sollievo dal dolore con coppette in gel di silicone dopo uno e tre mesi.',
-        'Alcuni piccoli studi sul taping low-dye per il dolore sotto il tallone in generale riportano un modesto calo del dolore rispetto a un trattamento finto o a nessun trattamento, ma nessuno separa la sindrome del cuscinetto adiposo dalle altre cause di dolore al tallone, quindi non si sa quanto possa aiutare qui.',
+        'Alcuni piccoli studi sul [taping low-dye](/it/taping-fascite-plantare/) per il dolore sotto il tallone in generale riportano un modesto calo del dolore rispetto a un trattamento finto o a nessun trattamento, ma nessuno separa la sindrome del cuscinetto adiposo dalle altre cause di dolore al tallone, quindi non si sa quanto possa aiutare qui.',
         'Nonostante le prove deboli, la logica è semplice: **se l’imbottitura non c’è più, aggiungerne una dall’esterno è un passo ragionevole.** Evita di camminare scalzo su superfici dure. Scegli scarpe con il tallone ben ammortizzato ed evita scarpe piatte con la suola sottile. Sono raccomandazioni di consenso, non testate in studi clinici, e questa pagina lo dice chiaramente.',
       ],
       cites: [CITE.fatPadReview],
@@ -114,7 +114,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
       h2: 'Gli esercizi aiutano la sindrome del cuscinetto adiposo del tallone?',
       paragraphs: [
         '**Gli esercizi non possono ricostruire un cuscinetto adiposo assottigliato.** È un cambiamento strutturale, non una debolezza muscolare. Ma l’esercizio può comunque avere un ruolo nel gestire il piede intorno al problema.',
-        'La forza del polpaccio conta perché un polpaccio più forte assorbe una parte maggiore della forza dell’atterraggio prima che arrivi al tallone. È la stessa logica di carico dei programmi di sollevamenti sulle punte per la fascite plantare, ma nella sindrome del cuscinetto adiposo l’obiettivo è distribuire il carico, non riparare il tessuto. Il lavoro sui muscoli intrinseci del piede (piede corto, apertura delle dita) può aiutare il piede a gestire il contatto con il suolo.',
+        'La forza del polpaccio conta perché un polpaccio più forte assorbe una parte maggiore della forza dell’atterraggio prima che arrivi al tallone. È la stessa logica di carico dei programmi di sollevamenti sulle punte per la fascite plantare, ma nella sindrome del cuscinetto adiposo l’obiettivo è distribuire il carico, non riparare il tessuto. Il lavoro sui muscoli intrinseci del piede ([piede corto](/it/esercizi/piede-corto/), apertura delle dita) può aiutare il piede a gestire il contatto con il suolo.',
         'Le prove su questi esercizi proprio per la sindrome del cuscinetto adiposo mancano. Nessuno studio li ha testati per questo problema. Sono presi in prestito dagli studi più ampi su dolore al tallone e forza del piede.',
         'Gli esercizi di Walkito sono pensati per la fascite plantare e la forza del piede. Sono un’aggiunta ragionevole se un professionista sanitario ha confermato l’atrofia del cuscinetto adiposo, ma non sono stati testati specificamente per questo, ed è giusto saperlo.',
       ],

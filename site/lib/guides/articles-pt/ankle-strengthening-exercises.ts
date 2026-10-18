@@ -219,7 +219,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
       h2: 'E os exercícios para fortalecer o tornozelo para quem corre?',
       paragraphs: [
         'Quem corre precisa da mesma progressão, levada mais longe. Quando a elevação de calcanhar com os dois pés ficar fácil, passe para a elevação de calcanhar em uma perna, já que cada passada de corrida põe carga numa perna de cada vez. O [teste de elevação de calcanhar](/pt/teste-elevacao-calcanhar/) mostra quantas elevações em uma perna você consegue fazer em comparação com os números típicos.',
-        'A evidência sobre equilíbrio vem principalmente de populações esportivas, então vale diretamente para quem corre. Se a dor é ao longo da canela e não no tornozelo, veja [exercícios para canelite](/pt/canelite-exercicios/). Se é no calcanhar ou no Aquiles, veja [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
+        'A evidência sobre equilíbrio vem principalmente de populações esportivas, então vale diretamente para quem corre. Se a dor é ao longo da canela e não no tornozelo, veja [exercícios para canelite](/pt/canelite-exercicios/).',
       ],
       cites: [CITE.schiftan],
     },

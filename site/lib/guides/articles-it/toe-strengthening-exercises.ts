@@ -44,7 +44,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Le dita deboli sono legate al dolore al tallone?',
       paragraphs: [
-        'Le dita deboli si ritrovano nelle persone con fascite plantare (dolore sotto il tallone, dove si attacca la fascia plantare, una banda spessa che corre lungo la pianta). In uno studio del 2003 su 20\u00A0persone con fascite plantare a un piede, il piede dolorante aveva i flessori delle dita più deboli dell’altro piede e più deboli di 20\u00A0persone simili senza dolore.',
+        'Le dita deboli si ritrovano nelle persone con [fascite plantare](/it/fascite-plantare/) (dolore sotto il tallone, dove si attacca la fascia plantare, una banda spessa che corre lungo la pianta). In uno studio del 2003 su 20\u00A0persone con fascite plantare a un piede, il piede dolorante aveva i flessori delle dita più deboli dell’altro piede e più deboli di 20\u00A0persone simili senza dolore.',
         'Uno studio più grande del 2015 ha confrontato 202\u00A0persone con dolore sotto il tallone e 70 senza. In media, il gruppo con dolore al tallone aveva:',
         {
           list: [
@@ -186,7 +186,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
         'Gli esercizi per rinforzare le dita possono aumentarne la forza, ma **solo quando il lavoro diventa più difficile nel tempo.**',
         'In uno studio del 2016, 85\u00A0adulti tra 60 e 90\u00A0anni sono stati divisi tra un programma supervisionato con una resistenza che cresceva nel corso di tre mesi e un programma di esercizi a casa. Il gruppo supervisionato ha guadagnato fino al 36% di forza delle dita e restava più a lungo su una gamba. Il gruppo a casa, e un gruppo di controllo separato di 32\u00A0persone, non hanno mostrato cambiamenti nella forza delle dita. Gli autori hanno scritto che serviva ancora uno studio che contasse le cadute.',
         'Anche chi corre risponde. In uno studio del 2019 su 57\u00A0runner, sia un programma di rinforzo del piede fatto almeno cinque volte a settimana sia il passaggio a camminare con scarpe minimaliste (scarpe sottili, piatte e flessibili) hanno aumentato dimensioni e forza dei muscoli del piede in due mesi, mentre il gruppo di controllo è rimasto uguale. Alcuni muscoli erano già più grandi entro un mese. Se ti incuriosisce la strada delle scarpe, vedi [scarpe barefoot](/it/scarpe-barefoot/).',
-        'Per gli infortuni, il risultato singolo più forte viene da uno studio del 2020 su 118\u00A0runner amatoriali. Chi non ha ricevuto il programma per piede e caviglia aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa nei 12\u00A0mesi rispetto a chi l’ha ricevuto. È un solo studio, e il programma allenava tutto il piede e la caviglia, non solo le dita. Chi corre può leggere di più in [dolore al tallone nei runner](/heel-pain-runners/) (in inglese).',
+        'Per gli infortuni, il risultato singolo più forte viene da uno studio del 2020 su 118\u00A0runner amatoriali. Chi non ha ricevuto il programma per piede e caviglia aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa nei 12\u00A0mesi rispetto a chi l’ha ricevuto. È un solo studio, e il programma allenava tutto il piede e la caviglia, non solo le dita.',
         'Il quadro generale è meno certo:',
         {
           list: [

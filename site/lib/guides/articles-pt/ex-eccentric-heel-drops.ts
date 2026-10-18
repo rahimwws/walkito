@@ -149,7 +149,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
     {
       q: 'Descida excêntrica do calcanhar ajuda na fascite plantar?',
       cites: [CITE.rathleff],
-      a: 'A descida excêntrica foi criada para o tendão de Aquiles, não para a fáscia plantar. Na fascite plantar, o exercício testado é a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/), que acrescenta uma toalha embaixo dos dedos para trabalhar a fáscia. A descida do calcanhar aparece mais tarde na sequência da panturrilha do Walkito, depois da elevação com toalha.',
+      a: 'A descida excêntrica foi criada para o tendão de Aquiles, não para a fáscia plantar. Na [fascite plantar](/pt/fascite-plantar/), o exercício testado é a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/), que acrescenta uma toalha embaixo dos dedos para trabalhar a fáscia. A descida do calcanhar aparece mais tarde na sequência da panturrilha do Walkito, depois da elevação com toalha.',
     },
   ],
   redFlags: {

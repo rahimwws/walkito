@@ -219,7 +219,7 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
       h2: 'Und Übungen für das Sprunggelenk beim Laufen?',
       paragraphs: [
         'Läuferinnen und Läufer brauchen dieselben Stufen, nur weitergeführt. Sobald beidbeiniges Fersenheben leicht geht, wechsel zum einbeinigen Fersenheben, denn jeder Laufschritt belastet ein Bein nach dem anderen. Der [Fersenheben-Test](/de/fersenheben-test/) zeigt, wie viele einbeinige Wiederholungen du im Vergleich zu typischen Werten schaffst.',
-        'Die Belege zum Gleichgewicht stammen vor allem aus sportlichen Gruppen, sie gelten also direkt für Läuferinnen und Läufer. Wenn du Schmerzen entlang des Schienbeins statt am Sprunggelenk hast, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn sie an der Ferse oder Achillessehne sitzen, lies [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Die Belege zum Gleichgewicht stammen vor allem aus sportlichen Gruppen, sie gelten also direkt für Läuferinnen und Läufer. Wenn du Schmerzen entlang des Schienbeins statt am Sprunggelenk hast, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
       ],
       cites: [CITE.schiftan],
     },

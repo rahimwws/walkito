@@ -65,11 +65,11 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
             'Berufe mit langem Stehen.',
           ],
         },
-        'Plattfüße oder ein Hohlfuß können verändern, wie die Last durch die Faszie läuft, aber keins von beiden führt zwangsläufig dazu.',
+        '[Plattfüße](/de/plattfuss/) oder ein [Hohlfuß](/de/hohlfuss-uebungen/) können verändern, wie die Last durch die Faszie läuft, aber keins von beiden führt zwangsläufig dazu.',
         '**Meist kommt Plantarfasziitis aus einer Kombination**:',
         {
           list: [
-            'Eine verkürzte Wade.',
+            'Eine [verkürzte Wade](/de/verspannte-waden/).',
             'Eine Belastung, auf die der Fuß nicht vorbereitet war.',
             'Zu wenig Erholungszeit.',
           ],
@@ -105,9 +105,9 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       h2: 'Was hilft bei Plantarfasziitis?',
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit Handtuch die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Die klinische Leitlinie von 2023 bewertet jede Option danach, wie stark die Belege dafür sind. Die stärksten Empfehlungen sind Dehnen, Tapen, manuelle Therapie in der Physiotherapie und Nachtschienen bei anhaltendem Morgenschmerz. Danach kommt Krafttraining. Die Tabelle unten zeigt die wichtigsten Optionen mit ihren Empfehlungsgraden.',
+        'Die klinische Leitlinie von 2023 bewertet jede Option danach, wie stark die Belege dafür sind. Die stärksten Empfehlungen sind Dehnen, [Tapen](/de/plantarfasziitis-tapen/), manuelle Therapie in der Physiotherapie und [Nachtschienen](/de/nachtschiene-plantarfasziitis/) bei anhaltendem Morgenschmerz. Danach kommt Krafttraining. Die Tabelle unten zeigt die wichtigsten Optionen mit ihren Empfehlungsgraden.',
         '**Keine einzelne Option hilft allen.** Die meisten fangen mit Dehnen und stützenden Schuhen an, nehmen Krafttraining dazu, sobald der erste Schmerz abklingt, und sprechen mit einer Ärztin oder einem Arzt über die übrigen Optionen, wenn der Fortschritt stockt.',
-        'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf. Die Leitlinie rät davon ab, Einlagen allein als kurzfristige Lösung einzusetzen, und davon, therapeutischen Ultraschall zusätzlich zum Dehnen zu nutzen.',
+        'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf. Die Leitlinie rät davon ab, [Einlagen](/de/einlagen-oder-uebungen/) allein als kurzfristige Lösung einzusetzen, und davon, therapeutischen Ultraschall zusätzlich zum Dehnen zu nutzen.',
       ],
       table: {
         caption: 'Empfehlungsgrade der Leitlinie von 2023 bei Fersenschmerzen unter dem Fuß',
@@ -134,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       keyFact: 'In einer Kohorte von 174\u00A0Personen war nach fünf Jahren etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach zehn Jahren noch etwas Schmerz, die meisten nur leicht (Hansen und Kollegen, 2018).',
       paragraphs: [
         'Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung besser geht, oft innerhalb einiger Monate. Eine längere Beobachtung von 174\u00A0Patientinnen und Patienten zeichnet ein genaueres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
-        'Die Erholung hängt davon ab, wie lange du die Beschwerden schon hast, was du dagegen tust, und von einigen Faktoren, die du nicht beeinflussen kannst. In der Kohorte von Hansen 2018 sagten weibliches Geschlecht und Fersenschmerzen auf beiden Seiten eine langsamere Erholung signifikant voraus. BMI, Alter, Dicke der Faszie und ein Fersensporn taten es nicht.',
+        'Die Erholung hängt davon ab, wie lange du die Beschwerden schon hast, was du dagegen tust, und von einigen Faktoren, die du nicht beeinflussen kannst. In der Kohorte von Hansen 2018 sagten weibliches Geschlecht und Fersenschmerzen auf beiden Seiten eine langsamere Erholung signifikant voraus. BMI, Alter, Dicke der Faszie und ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) taten es nicht.',
         'Die nützliche Frage ist nicht „wie viele Wochen noch“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“ **Dieser Trend ist der eigentliche Meilenstein.** [Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) fasst die Studien zum Zeitverlauf vollständig zusammen.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -172,7 +172,6 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe für alle, die bei der Arbeit viel stehen.',
         '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf lange Schichten auf harten Böden ein.',
         '[Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/) behandelt den Wechsel zwischen Sitzen und Stehen.',
-        '[Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) zeigt, wie du das Training anpasst, wenn die Ferse wehtut.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -183,9 +182,9 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         {
           list: [
             '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-            '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das Fettpolster sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
+            '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das [Fettpolster](/de/fersenfettpolster-syndrom/) sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
             '**Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174\u00A0Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.',
-            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann in Ruhe oder nachts wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann [in Ruhe oder nachts](/de/fersenschmerzen-nachts/) wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
             '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine Ärztin oder ein Arzt sollte das abklären.',
           ],
         },
@@ -206,7 +205,6 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         '[Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) erklärt das Fersenheben-Protokoll aus der Studie von Rathleff.',
         '[Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt Morgenschmerz, Nachtschienen und andere Ursachen mit Schmerz bei den ersten Schritten.',
         '[Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) behandelt den Zeitverlauf, Prognosefaktoren und was du tun kannst, wenn der Fortschritt stockt.',
-        '[Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) behandelt Belastungssteuerung und Trainingsanpassungen.',
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe bei langem Stehen.',
         '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf lange Schichten auf harten Böden ein.',
         '[Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/) behandelt den Wechsel zwischen Sitzen und Stehen.',

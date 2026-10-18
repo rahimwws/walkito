@@ -23,7 +23,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
     'Il dolore al tallone di notte o a riposo può indicare una frattura da stress, un nervo compresso o un’artrite. I segnali da non ignorare e cosa fare.',
   h1: 'Dolore al tallone di notte: da cosa dipende e quando è un campanello d’allarme',
   lede:
-    'Il dolore al tallone che arriva di notte, a letto o a riposo è un tipo di dolore diverso dalla classica fitta ai primi passi del mattino tipica della fascite plantare. Il dolore notturno e a riposo può indicare una frattura da stress del calcagno, un nervo compresso, un’artrite infiammatoria o un altro problema che deve valutare un professionista sanitario. Questa pagina passa in rassegna le cause comuni e quelle da non lasciar correre.',
+    'Il dolore al tallone che arriva di notte, a letto o a riposo è un tipo di dolore diverso dalla classica fitta ai primi passi del mattino tipica della [fascite plantare](/it/fascite-plantare/). Il dolore notturno e a riposo può indicare una frattura da stress del calcagno, un nervo compresso, un’artrite infiammatoria o un altro problema che deve valutare un professionista sanitario. Questa pagina passa in rassegna le cause comuni e quelle da non lasciar correre.',
   intro: [
     'Se il tallone fa male soprattutto ai primi passi del mattino e poi si calma, il punto di partenza più probabile è [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Questa pagina è per il dolore che resta a riposo, ti sveglia, o arriva dopo che sei stato un po’ senza caricare il piede e non corrisponde al quadro tipico della fascite plantare.',
   ],
@@ -41,7 +41,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       paragraphs: [
         'La fascite plantare fa male perché la fascia si irrigidisce mentre dormi e poi si allunga di colpo quando ti alzi. Quel dolore raggiunge il picco al primo passo e migliora quando ti muovi. **Se il tallone fa male mentre sei sdraiato a letto e non carichi affatto il peso, di solito c’entra un meccanismo diverso.**',
         'Una revisione del 2018 su American Family Physician elenca diverse cause di dolore al tallone che si comportano in modo diverso dalla fascite plantare. La distinzione chiave: il dolore della fascite plantare migliora con l’attività, mentre il dolore da fratture da stress, nervi compressi, tumori e problemi infiammatori non segue questo andamento.',
-        'Durante il sonno il piede punta anche verso il basso (flessione plantare). Questa posizione può accorciare il tendine d’Achille e il polpaccio, e a volte contribuisce al fastidio al tallone. I tutori notturni intervengono tenendo la caviglia ad angolo neutro. Ma un tutore notturno è uno strumento per la fascite plantare, e non sostituisce gli accertamenti per un dolore che peggiora davvero a riposo.',
+        'Durante il sonno il piede punta anche verso il basso (flessione plantare). Questa posizione può accorciare il tendine d’Achille e il polpaccio, e a volte contribuisce al fastidio al tallone. I [tutori notturni](/it/tutore-notturno-fascite-plantare/) intervengono tenendo la caviglia ad angolo neutro. Ma un tutore notturno è uno strumento per la fascite plantare, e non sostituisce gli accertamenti per un dolore che peggiora davvero a riposo.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },

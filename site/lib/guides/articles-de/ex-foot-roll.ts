@@ -17,7 +17,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
     'Fuß mit Ball rollen bei Plantarfasziitis: Technik mit Ball oder gefrorener Flasche, wie lange rollen und was es bringt und was nicht.',
   h1: 'Fußrollen bei Plantarfasziitis: Ball, Flasche und Technik',
   lede:
-    'Die Fußsohle über einen Ball oder eine Flasche zu rollen, ist einer der häufigsten Schritte zur Selbsthilfe bei Plantarfasziitis. Es tut gut, und Fachleute empfehlen es, um das Gewebe zwischen den Einheiten zu beruhigen. Aber keine randomisierte Studie hat das Rollen allein bei Plantarfasziitis getestet. Diese Seite erklärt, was das Rollen bewirkt, was nicht, und wo eine gefrorene Flasche ehrlich gesagt hingehört.',
+    'Die Fußsohle über einen Ball oder eine Flasche zu rollen, ist einer der häufigsten Schritte zur Selbsthilfe bei [Plantarfasziitis](/de/plantarfasziitis/). Es tut gut, und Fachleute empfehlen es, um das Gewebe zwischen den Einheiten zu beruhigen. Aber keine randomisierte Studie hat das Rollen allein bei Plantarfasziitis getestet. Diese Seite erklärt, was das Rollen bewirkt, was nicht, und wo eine gefrorene Flasche ehrlich gesagt hingehört.',
   takeaways: [
     'Keine randomisierte Studie hat Fußrollen als einzelne Maßnahme bei Plantarfasziitis getestet. Es wird viel empfohlen, als Maßnahme für Wohlgefühl und Erholung, nicht als Hauptmaßnahme.',
     'Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt Dehnen (Empfehlungsgrad A) und Krafttraining (Empfehlungsgrad B) als die Säulen der Übungen. Rollen wird nicht eigens bewertet.',

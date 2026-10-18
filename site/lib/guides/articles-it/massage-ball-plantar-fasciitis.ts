@@ -12,7 +12,7 @@ export const MASSAGE_BALL_IT: Guide = {
     'La pallina per fascite plantare aiuta? Cosa dicono gli studi su palline, rulli e bottiglia congelata, quanto premere, quanto a lungo e quando evitarla.',
   h1: 'Pallina da massaggio, rullo o bottiglia congelata per la fascite plantare: cosa dice la ricerca',
   lede:
-    'Una pallina da massaggio può alleviare per un po’ il dolore da fascite plantare, ma è un passo di sollievo, non lo strumento principale. Il lavoro manuale sui tessuti molli fatto da un professionista ha il grado più alto della linea guida. Far rotolare da soli una pallina o una bottiglia congelata è stato testato pochissimo. Fallo con delicatezza e per poco tempo, e tieni stretching e rinforzo come base.',
+    'Una pallina da massaggio può alleviare per un po’ il dolore da [fascite plantare](/it/fascite-plantare/), ma è un passo di sollievo, non lo strumento principale. Il lavoro manuale sui tessuti molli fatto da un professionista ha il grado più alto della linea guida. Far rotolare da soli una pallina o una bottiglia congelata è stato testato pochissimo. Fallo con delicatezza e per poco tempo, e tieni stretching e rinforzo come base.',
   intro: [
     'Questa pagina confronta gli strumenti e le prove. Per il singolo esercizio, passo per passo, vedi il [massaggio con la pallina](/it/esercizi/massaggio-pallina-piede/). Per la routine completa con le dosi, vedi gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
   ],

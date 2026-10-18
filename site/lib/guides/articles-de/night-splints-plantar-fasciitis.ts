@@ -12,7 +12,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
     'Nachtschiene bei Plantarfasziitis: was die Leitlinie von 2023 und Studien zeigen, Schiene oder Strumpf, wie lange du sie trägst und warum viele aufhören.',
   h1: 'Nachtschiene bei Plantarfasziitis: was sie bewirkt, was die Studien zeigen und wie du sie trägst',
   lede:
-    'Eine Nachtschiene bei Plantarfasziitis hält dein Sprunggelenk im Schlaf etwa im rechten Winkel, damit sich Plantarfaszie und Wade über Nacht nicht verkürzen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet sie mit **A** für ein bis drei Monate, wenn die ersten Schritte weiter wehtun. Die Studien sind klein und uneinheitlich, und viele finden, dass man mit einer Schiene schlecht schläft.',
+    'Eine Nachtschiene bei [Plantarfasziitis](/de/plantarfasziitis/) hält dein Sprunggelenk im Schlaf etwa im rechten Winkel, damit sich Plantarfaszie und Wade über Nacht nicht verkürzen. Die Leitlinie von 2023 zu Fersenschmerzen bewertet sie mit **A** für ein bis drei Monate, wenn die ersten Schritte weiter wehtun. Die Studien sind klein und uneinheitlich, und viele finden, dass man mit einer Schiene schlecht schläft.',
   intro: [
     'Auf dieser Seite geht es um die Schiene selbst: was die Studien gefunden haben, welche Art du wählen solltest und wie du mit ihr zurechtkommst. Die komplette Morgenroutine findest du unter [Fersenschmerzen morgens](/de/fersenschmerzen-morgens/).',
   ],
@@ -151,7 +151,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
       h2: 'Nachtschiene, Einlagen oder Dehnen: was solltest du zuerst ausprobieren?',
       keyFact: 'In einer Studie mit 43\u00A0Personen war der Schmerz nach einem Jahr in den Gruppen mit Einlagen um 62\u00A0% gesunken, mit Nachtschiene allein um 48\u00A0% (Roos und Kollegen, 2006).',
       paragraphs: [
-        '**Dehnen am Morgen kommt meist zuerst**, weil es denselben Empfehlungsgrad **A** hat wie Nachtschienen, nichts kostet und den Schlaf nicht stört. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A** und Krafttraining für die Fuß- und Sprunggelenkmuskeln mit **B**. Eine Metaanalyse von 2020 über acht Studien fand, dass Dehnen Schmerzen linderte, mit Belegen mittlerer Qualität, dass die Plantarfaszien-Dehnung stärker linderte als eine Wadendehnung.',
+        '**Dehnen am Morgen kommt meist zuerst**, weil es denselben Empfehlungsgrad **A** hat wie Nachtschienen, nichts kostet und den Schlaf nicht stört. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A** und Krafttraining für die Fuß- und Sprunggelenkmuskeln mit **B**. Eine Metaanalyse von 2020 über acht Studien fand, dass Dehnen Schmerzen linderte, mit Belegen mittlerer Qualität, dass die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) stärker linderte als eine Wadendehnung.',
         'Nachtschienen und Einlagen scheinen zusammen besser zu wirken als getrennt:',
         {
           list: [
@@ -202,7 +202,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
     {
       h2: 'Für wen passt eine Nachtschiene, und wer sollte sie lassen?',
       paragraphs: [
-        '**Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt**: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein Fersensporn zu sehen war.',
+        '**Eine Nachtschiene passt am besten, wenn deine Plantarfasziitis dem klassischen Muster folgt**: Die ersten Schritte aus dem Bett sind die schlimmsten des Tages, und das bleibt trotz regelmäßigem Dehnen so. Genau diese Gruppe nennt die Leitlinie. In Powells Studie hing das Ansprechen auf die Schiene nicht vom Fußtyp, vom Körpergewicht oder davon ab, ob im Röntgenbild ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) zu sehen war.',
         'Weniger Sinn ergibt eine Schiene, wenn deine Ferse vor allem wehtut, während du im Bett liegst, oder dich weckt. Das ist ein anderes Muster, und [Fersenschmerzen nachts](/de/fersenschmerzen-nachts/) erklärt, welche Ursachen abgeklärt werden sollten. Eine Schiene passt auch schlecht, wenn du wenig Gefühl oder eine schlechte Durchblutung in den Füßen hast, denn Bänder und Schalen können an Haut scheuern, die du nicht spürst.',
         'Eine Plantarfasziitis klingt oft über Monate ab, egal was du nutzt, und das ist ein Grund, warum Studien zu Schienen schwer zu deuten sind. Realistische Zeiträume findest du unter [Wie lange dauert eine Plantarfasziitis](/de/wie-lange-dauert-plantarfasziitis/).',
       ],

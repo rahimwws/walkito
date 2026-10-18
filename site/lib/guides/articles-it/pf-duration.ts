@@ -25,7 +25,7 @@ export const PF_DURATION_IT: Guide = {
     'Quanto dura la fascite plantare, cosa rallenta il recupero, cosa fare se non migliora e come capire se la tua sta migliorando.',
   h1: 'Quanto dura la fascite plantare? Cosa dicono davvero gli studi',
   lede:
-    'La risposta onesta è: dipende, e la maggior parte delle fonti sottovaluta quanto cambia da persona a persona. Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e plantari. Un follow-up più lungo su 174\u00A0persone racconta una storia più sfumata: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
+    'La risposta onesta è: dipende, e la maggior parte delle fonti sottovaluta quanto cambia da persona a persona. Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche come stretching e [plantari](/it/plantari-o-esercizi/). Un follow-up più lungo su 174\u00A0persone racconta una storia più sfumata: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
   intro: [
     'La pagina degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) spiega gli esercizi, le prove e i gradi della linea guida. Questa pagina risponde alla domanda che viene dopo: quanto ci vuole, cosa allunga i tempi, e quali sono le opzioni se le cose non migliorano?',
   ],
@@ -51,7 +51,7 @@ export const PF_DURATION_IT: Guide = {
             'Da alcuni fattori che non puoi controllare.',
           ],
         },
-        'Una revisione della letteratura del 2020 riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
+        'Una revisione della letteratura del 2020 riporta che circa il 90% delle persone con [fascite plantare](/it/fascite-plantare/) migliora con cure non chirurgiche, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
         'Uno studio di coorte del 2018 dà la visione più lunga. Hansen e colleghi hanno seguito 174\u00A0pazienti con fascite plantare diagnosticata con ecografia per in media 9,7\u00A0anni dall’inizio dei sintomi. Al follow-up, il 54% non aveva più sintomi e il 46% aveva ancora un po’ di dolore.',
         'L’analisi di Kaplan-Meier ha mostrato che il rischio di avere ancora la fascite plantare era dell’80,5% a un anno, del 50,0% a cinque anni e del 45,6% a dieci anni. Tra chi non aveva più sintomi, la durata media dei sintomi era di 725\u00A0giorni, circa due anni (Hansen e colleghi, 2018).',
         'Questi numeri sembrano peggiori del solito «passa in qualche mese». Due cose spiegano la differenza:',
@@ -93,7 +93,7 @@ export const PF_DURATION_IT: Guide = {
         '**Dolore a entrambi i talloni.** Chi all’inizio aveva dolore a entrambi i talloni arrivava a non avere più sintomi a circa un terzo della velocità annua di chi aveva dolore da un lato solo (hazard rate ratio 0,33, P minore di 0,01). Gli autori hanno notato che il dolore a entrambi i lati potrebbe riflettere un problema infiammatorio non riconosciuto, perché il dolore nei punti di attacco tra tendine e osso su entrambi i lati è una caratteristica di alcune forme di artrite. Nessuno nella loro coorte aveva una diagnosi infiammatoria nota, ma non sono stati fatti esami del sangue specifici (Hansen e colleghi, 2018).',
           ],
         },
-        'Indice di massa corporea, età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno sperone calcaneare non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.',
+        'Indice di massa corporea, età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.',
         'Se ti fanno male entrambi i talloni e la rigidità del mattino dura a lungo o sono coinvolte altre articolazioni, vale la pena dirlo a un professionista sanitario anche se gli esercizi stanno aiutando. Vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per sapere quando il dolore a entrambi i talloni è un campanello d’allarme.',
       ],
       sourceNote:
@@ -156,7 +156,7 @@ export const PF_DURATION_IT: Guide = {
       paragraphs: [
         'Il quadro della tabella qui sopra è chiaro: **stretching e lavoro di forza hanno il sostegno più ampio.** Le opzioni in ambulatorio (laser, dry needling, onde d’urto) hanno qualche prova ma vengono dopo l’esercizio nella classifica della linea guida. La chirurgia è riservata alla piccola percentuale di casi che non risponde a nient’altro, e la linea guida non le dà un ruolo di primo piano.',
         'Se fai gli esercizi con costanza da diversi mesi e il dolore del mattino non migliora, è un buon momento per rivolgerti a un professionista sanitario e parlare delle opzioni qui sopra. È anche un buon momento per verificare che la diagnosi sia giusta: vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per gli altri problemi con lo stesso andamento.',
-        'Per chi corre, i cambi di carico spesso fanno parte del quadro: [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) e [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) affrontano questo aspetto.',
+        'Anche i cambi di carico spesso fanno parte del quadro: per chi sta in piedi a lungo, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) affronta questo aspetto.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -184,7 +184,7 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'Perché la mia fascite plantare non migliora?',
       cites: [CITE.guideline],
-      a: 'Ci sono diverse possibilità. Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come tutori notturni, laserterapia o dry needling.',
+      a: 'Ci sono diverse possibilità. Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come [tutori notturni](/it/tutore-notturno-fascite-plantare/), laserterapia o dry needling.',
     },
     {
       q: 'Lo sperone calcaneare fa durare di più la fascite plantare?',

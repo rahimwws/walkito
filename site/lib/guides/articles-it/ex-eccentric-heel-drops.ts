@@ -150,7 +150,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
     {
       q: 'Le discese eccentriche del tallone aiutano la fascite plantare?',
       cites: [CITE.rathleff],
-      a: 'Le discese eccentriche sono state pensate per il tendine d’Achille, non per la fascia plantare. Per la fascite plantare, l’esercizio testato è il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), che aggiunge un asciugamano sotto le dita per coinvolgere la fascia. Nella progressione per il polpaccio di Walkito, le discese eccentriche arrivano più tardi, dopo il sollevamento con asciugamano.',
+      a: 'Le discese eccentriche sono state pensate per il tendine d’Achille, non per la fascia plantare. Per la [fascite plantare](/it/fascite-plantare/), l’esercizio testato è il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), che aggiunge un asciugamano sotto le dita per coinvolgere la fascia. Nella progressione per il polpaccio di Walkito, le discese eccentriche arrivano più tardi, dopo il sollevamento con asciugamano.',
     },
   ],
   redFlags: {

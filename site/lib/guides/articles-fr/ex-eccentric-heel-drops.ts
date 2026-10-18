@@ -149,7 +149,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
     {
       q: 'Les descentes excentriques du talon aident-elles en cas de fasciite plantaire\u00A0?',
       cites: [CITE.rathleff],
-      a: 'Les descentes excentriques ont été conçues pour le tendon d’Achille, pas pour le fascia plantaire. Pour la fasciite plantaire, l’exercice testé est la [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/), qui ajoute une serviette sous les orteils pour solliciter le fascia. Les descentes du talon arrivent plus tard dans la progression du mollet de Walkito, après la montée avec serviette.',
+      a: 'Les descentes excentriques ont été conçues pour le tendon d’Achille, pas pour le fascia plantaire. Pour la [fasciite plantaire](/fr/fasciite-plantaire/), l’exercice testé est la [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/), qui ajoute une serviette sous les orteils pour solliciter le fascia. Les descentes du talon arrivent plus tard dans la progression du mollet de Walkito, après la montée avec serviette.',
     },
   ],
   redFlags: {

@@ -19,7 +19,7 @@ export const VS_EXAKT_DE: Guide = {
     'Walkito und Exakt Health im Vergleich: Beschwerden, Preise, Plattformen, wie dein Plan entsteht, Studienlage, Sprachen, Datenschutz. Stand Oktober 2026.',
   h1: 'Walkito vs Exakt Health: welche App passt zu dir?',
   lede:
-    'Walkito und Exakt Health bieten beide Übungspläne bei Plantarfasziitis an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15\u00A0Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, Plattfüße und die Anpassung an den Morgenschmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.',
+    'Walkito und Exakt Health bieten beide Übungspläne bei [Plantarfasziitis](/de/plantarfasziitis/) an, sind aber für unterschiedliche Menschen gebaut. Exakt ist eine App für Läuferinnen und Läufer mit über 15\u00A0Reha-Plänen für Verletzungen und einem Programm für den Wiedereinstieg ins Laufen. Walkito ist eine schmalere App, die sich auf Fersenschmerzen, [Plattfüße](/de/plattfuss/) und die Anpassung an den Morgenschmerz konzentriert. Diese Seite vergleicht beide ehrlich, sagt, wo Exakt die bessere Wahl ist, und erklärt, was Walkito anders macht.',
   intro: [
     'Diese Seite stammt von Walkito. Deshalb solltest du die Fakten zu Exakt lesen (sie stammen aus dem App-Store-Eintrag, dem Google-Play-Eintrag und der offiziellen Website, alle im Oktober 2026 geprüft) und selbst entscheiden. Links zu allen Quellen stehen unter der Vergleichstabelle.',
   ],
@@ -124,7 +124,7 @@ export const VS_EXAKT_DE: Guide = {
     {
       h2: 'Für wen ist Exakt Health gemacht?',
       paragraphs: [
-        'Exakt Health ist für Läuferinnen und Läufer gemacht. Das ist der Kern der App, und alles darin spiegelt das wider. Wenn du läufst und dich von einer Plantarfasziitis, einer Achillessehnen-Tendinopathie, einem verstauchten Sprunggelenk, einer Zerrung der hinteren Oberschenkelmuskulatur oder einem Meniskusriss erholst, hat Exakt einen eigenen Reha-Plan für deine Verletzung. Die App deckt über 15 verschiedene Beschwerden ab.',
+        'Exakt Health ist für Läuferinnen und Läufer gemacht. Das ist der Kern der App, und alles darin spiegelt das wider. Wenn du läufst und dich von einer Plantarfasziitis, einer [Achillessehnen-Tendinopathie](/de/achillessehnenentzuendung-uebungen/), einem verstauchten Sprunggelenk, einer Zerrung der hinteren Oberschenkelmuskulatur oder einem Meniskusriss erholst, hat Exakt einen eigenen Reha-Plan für deine Verletzung. Die App deckt über 15 verschiedene Beschwerden ab.',
         'Jeder Reha-Plan endet mit einem Geh-Lauf-Programm für den Wiedereinstieg ins Laufen, einem der Teile der Erholung, die man allein am schwersten richtig hinbekommt. Die App hat außerdem Trainingspläne für jede Distanz, vom Einstieg bis 5\u00A0km bis zum Marathon.',
         'Exakt wurde 2021 von Philip Billaudelle, Lucia Payo und Maryke Louw gegründet. Die App wird von zugelassenen Sportphysiotherapeuten und Lauftrainern entwickelt und hat im September 2024 etwa 2,2\u00A0Mio.\u00A0EUR Seed-Finanzierung eingesammelt. Das Team sitzt in Berlin.',
         'Die App ist in der EU als Medizinprodukt zertifiziert, sie hat also die behördliche Prüfung für ihren vorgesehenen Zweck bestanden.',
@@ -145,7 +145,7 @@ export const VS_EXAKT_DE: Guide = {
         'Die App ist auch für Menschen gemacht, die den ganzen Tag auf den Beinen sind: Pflegekräfte, Beschäftigte im Einzelhandel, im Lager.',
         'Die App ist schmaler als Exakt. Sie deckt keine Knieverletzungen, keine Zerrungen der hinteren Oberschenkelmuskulatur und keine Laufpläne ab. Was sie anders macht: **Sie passt jede Einheit nach einem Schmerz-Check-in am Morgen an** statt nach dem Feedback am Ende der Einheit.',
         'Ein Morgen mit 7/10 oder mehr stellt den Tag auf etwa drei Minuten Arbeit im Sitzen um. Ein großer Tag auf den Beinen (gemessen über die Schritte in Apple Health oder Health Connect) macht aus der nächsten Krafteinheit eine leichtere Erholungseinheit.',
-        'Walkito testet den Fortschritt alle 14\u00A0Tage mit Fersenheben, Gewölbehalten und Einbeinstand und vergleicht deine linke mit deiner rechten Seite. Diesen Vergleich zwischen links und rechts verfolgen die meisten Apps in diesem Bereich nicht.',
+        'Walkito testet den Fortschritt alle 14\u00A0Tage mit Fersenheben, Gewölbehalten und [Einbeinstand](/de/uebungen/einbeinstand/) und vergleicht deine linke mit deiner rechten Seite. Diesen Vergleich zwischen links und rechts verfolgen die meisten Apps in diesem Bereich nicht.',
         'Walkito ist am 2.\u00A0Oktober 2026 erschienen. Die App ist neu, hat noch keine Bewertungen von Nutzern und läuft auf iOS und Android. Sie hat nicht die Erfolgsgeschichte oder Bandbreite, die Exakt seit 2021 aufgebaut hat.',
       ],
     },

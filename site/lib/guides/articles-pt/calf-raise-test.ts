@@ -42,7 +42,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
         {
           list: [
             'Para acompanhar a recuperação de rupturas do tendão de Aquiles.',
-            'Para rastrear fraqueza na panturrilha em pessoas com dor no calcanhar ou canelite.',
+            'Para rastrear fraqueza na panturrilha em pessoas com dor no calcanhar ou [canelite](/pt/canelite-exercicios/).',
             'Para comparar uma perna com a outra.',
           ],
         },
@@ -142,7 +142,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
             'Falta de costume com o teste.',
           ],
         },
-        '**O teste não é um diagnóstico.** Um resultado de 15 num homem de 30\u00A0anos não quer dizer que ele tem fascite plantar ou tendinite de Aquiles. Quer dizer que a resistência da panturrilha dele está abaixo da mediana de 33 para esse grupo.',
+        '**O teste não é um diagnóstico.** Um resultado de 15 num homem de 30\u00A0anos não quer dizer que ele tem [fascite plantar](/pt/fascite-plantar/) ou tendinite de Aquiles. Quer dizer que a resistência da panturrilha dele está abaixo da mediana de 33 para esse grupo.',
         'Um profissional de saúde junta a contagem com outros achados para decidir se o número explica um sintoma. O teste diz mais como tendência do que como um ponto isolado: passar de 14 para 22 em dois meses é um sinal mais claro do que qualquer número comparado com uma tabela.',
       ],
       cites: [CITE.hebertLosier],
@@ -153,7 +153,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
         'A panturrilha e a fáscia plantar se ligam pelo osso do calcanhar. O tendão de Aquiles puxa por trás; a fáscia puxa por baixo. **Panturrilhas fracas ou que cansam fácil põem mais tensão nos dois a cada passo.**',
         'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau máximo, A, e ao treino de força o grau B. O ensaio de Rathleff, que testou elevações de calcanhar com carga para fascite plantar, usou uma elevação de calcanhar como exercício principal, e os participantes melhoraram a dor mais rápido do que com alongamento sozinho ao longo de três meses. Veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) para o protocolo completo.',
         'Na tendinite de Aquiles, o teste de elevação de calcanhar é uma das medidas de resultado padrão. Pacientes com tendinopatia de Aquiles na porção média (dor no meio do tendão, não no osso do calcanhar) costumam mostrar menos resistência na panturrilha do lado afetado. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para o trabalho excêntrico.',
-        'Na corrida, a panturrilha absorve duas a três vezes o peso do corpo a cada passada. Uma panturrilha que cansa cedo passa carga para o joelho, a canela e o pé. Aumentar o resultado pode fazer parte de um plano de volta à corrida. Veja [dor no calcanhar e corrida](/heel-pain-runners/) (em inglês) para o quadro mais amplo.',
+        'Na corrida, a panturrilha absorve duas a três vezes o peso do corpo a cada passada. Uma panturrilha que cansa cedo passa carga para o joelho, a canela e o pé. Aumentar o resultado pode fazer parte de um plano de volta à corrida.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
@@ -227,7 +227,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
     {
       q: 'Quais são os sinais de panturrilha fraca?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Panturrilhas fracas costumam aparecer como cansaço rápido em escadas ou subidas, um impulso mais fraco ao caminhar ou correr, ou balanço no equilíbrio em uma perna. O sinal objetivo mais claro é o teste de elevação de calcanhar em uma perna: uma diferença clara entre a perna esquerda e a direita é mais confiável do que a aparência ou a sensação da panturrilha.',
+      a: 'Panturrilhas fracas costumam aparecer como cansaço rápido em escadas ou subidas, um impulso mais fraco ao caminhar ou correr, ou balanço no [equilíbrio em uma perna](/pt/exercicios/equilibrio-uma-perna/). O sinal objetivo mais claro é o teste de elevação de calcanhar em uma perna: uma diferença clara entre a perna esquerda e a direita é mais confiável do que a aparência ou a sensação da panturrilha.',
     },
     {
       q: 'Onde devo sentir a elevação de calcanhar?',

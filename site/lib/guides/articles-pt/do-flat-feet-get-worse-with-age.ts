@@ -37,7 +37,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
             'Pés mais planos e mais pronados (pronado quer dizer que o pé vira para dentro).',
             'Tornozelos e articulações do dedão mais rígidos.',
             'Músculos dos dedos mais fracos.',
-            'Mais joanetes.',
+            'Mais [joanetes](/pt/joanete-exercicios/).',
             'Menos sensibilidade na sola.',
           ],
         },
@@ -140,7 +140,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
       h2: 'Exercícios ou palmilhas impedem o pé chato de piorar?',
       keyFact: 'Uma revisão de 2018 encontrou só três ensaios, com 93\u00A0pessoas no total, testando exercício para disfunção do tendão tibial posterior, com efeitos moderados para o fortalecimento com descida lenta (excêntrico) somado a órteses e alongamento (Ross e colegas, 2018).',
       paragraphs: [
-        'Nenhum ensaio testou se exercícios ou palmilhas impedem o pé chato de mudar com a idade. O que existe é evidência sobre duas perguntas próximas, e ela é pequena.',
+        'Nenhum ensaio testou se exercícios ou [palmilhas](/pt/palmilhas-ou-exercicios/) impedem o pé chato de mudar com a idade. O que existe é evidência sobre duas perguntas próximas, e ela é pequena.',
         'Para o problema de tendão por trás da queda do arco no adulto, uma revisão de 2018 encontrou três ensaios com 93\u00A0pessoas no total. O fortalecimento com descida lenta (excêntrico) somado a órteses (palmilhas que sustentam o arco) e alongamento aliviou a dor e a incapacidade moderadamente mais que órteses e alongamento sozinhos.',
         'Em um ensaio, 36\u00A0adultos em estágios iniciais fizeram três meses de programa. Todos os grupos melhoraram, e o grupo do fortalecimento excêntrico foi o que mais melhorou. Em outro ensaio, com 39\u00A0pessoas, somar o fortalecimento fez só uma pequena diferença. Os autores da revisão disseram que a pesquisa é escassa.',
         'Para o pé chato flexível de toda a vida, um ensaio com 52\u00A0pessoas viu que um programa curto de exercícios para pé, tornozelo e quadril mudou o formato do arco mais do que em um grupo controle. Ele mediu o formato, não a dor, e por pouco tempo. Não se sabe se esse tipo de treino desacelera a mudança da idade ao longo de décadas.',

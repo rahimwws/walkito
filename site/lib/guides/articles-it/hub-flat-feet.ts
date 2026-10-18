@@ -41,7 +41,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       keyFact: 'Una revisione sistematica del 2023 che ha messo insieme 12\u00A0studi di popolazione su circa 16.000\u00A0persone ha trovato il piede piatto in circa il 15,6% dei casi complessivi, più spesso nei bambini piccoli, negli adolescenti e nelle persone con obesità (Salinas-Torres e colleghi, 2023).',
       paragraphs: [
         'L’arco del piede, chiamato arco longitudinale mediale, è formato da ossa, legamenti e tendini nella parte interna del piede. Nel piede piatto, questo arco è più basso o assente quando sei in piedi. Il termine medico è pes planus.',
-        'Il piede piatto è comune. Una revisione sistematica del 2023 ha messo insieme 12\u00A0studi di popolazione su circa 16.000\u00A0persone e ha riportato una frequenza complessiva del 15,6%. Solo negli adulti, le stime vanno da circa il 5 al 27% in base alla popolazione e al metodo di misura. Un indice di massa corporea più alto e un’età più avanzata sono associati a una frequenza più alta.',
+        'Il piede piatto è comune. Una revisione sistematica del 2023 ha messo insieme 12\u00A0studi di popolazione su circa 16.000\u00A0persone e ha riportato una frequenza complessiva del 15,6%. Solo negli adulti, le stime vanno da circa il 5 al 27% in base alla popolazione e al metodo di misura. Un indice di massa corporea più alto e [un’età più avanzata](/it/piede-piatto-con-l-eta/) sono associati a una frequenza più alta.',
         '«Arco caduto» è un nome comune per il piede piatto. Il più delle volte le due espressioni vogliono dire la stessa cosa. A volte però «arco caduto» si usa in modo più preciso per un arco che si è abbassato da adulti, che ha una causa diversa, spiegata più sotto.',
         '**Avere il piede piatto non vuol dire per forza che qualcosa non va.** Molte persone con l’arco basso camminano, corrono e stanno in piedi senza alcun sintomo. Le domande che contano sono se il piede piatto è flessibile o rigido, e se dà dolore.',
       ],
@@ -63,7 +63,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       keyFact: 'Il Framingham Foot Study su circa 1.900\u00A0adulti non ha trovato un legame tra piede piatto e mal di schiena, anche se un passo pronato ha mostrato un piccolo legame solo nelle donne (Menz e colleghi, 2013).',
       paragraphs: [
         '**Per la maggior parte delle persone, no.** Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una normale variante della forma del piede, non un problema da risolvere.',
-        'La preoccupazione più comune è il mal di schiena. Lo studio più grande sul tema, il Framingham Foot Study, ha esaminato circa 1.900\u00A0adulti. Cosa ha trovato:',
+        'La preoccupazione più comune è il [mal di schiena](/it/piede-piatto-mal-di-schiena/). Lo studio più grande sul tema, il Framingham Foot Study, ha esaminato circa 1.900\u00A0adulti. Cosa ha trovato:',
         {
           list: [
             '**Nel complesso:** nessuna associazione tra piede piatto e mal di schiena lombare.',
@@ -80,7 +80,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       h2: 'Cos’è il piede piatto acquisito dell’adulto?',
       paragraphs: [
-        'La deformità del piede piatto acquisito dell’adulto è un problema in cui un arco che era normale si abbassa in età adulta, di solito perché il tendine tibiale posteriore (il tendine che sostiene l’arco dall’interno della caviglia) si indebolisce e non riesce più a fare il suo lavoro. Il nome clinico del problema al tendine è disfunzione del tendine tibiale posteriore.',
+        'La deformità del piede piatto acquisito dell’adulto è un problema in cui un arco che era normale si abbassa in età adulta, di solito perché il tendine tibiale posteriore (il tendine che sostiene l’arco dall’interno della caviglia) si indebolisce e non riesce più a fare il suo lavoro. Il nome clinico del problema al tendine è [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/).',
         'Il tendine tibiale posteriore passa dietro il malleolo interno e si attacca alle ossa che formano l’arco. Quando si allunga o si lesiona, l’arco si abbassa, il tallone si inclina verso l’esterno e l’avampiede può iniziare a puntare verso l’esterno.',
         'Dolore e gonfiore lungo l’interno della caviglia sono segni precoci comuni. Il test del sollevamento sulle punte su un solo piede, in cui provi a stare su un piede e a salire sulle punte, può essere difficile o doloroso dal lato colpito.',
         'Una panoramica pubblicata su The Open Orthopaedics Journal descrive quattro stadi:',
@@ -116,7 +116,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       h2: 'Scarpe e plantari aiutano il piede piatto?',
       paragraphs: [
         'Scarpe con un buon sostegno, un’intersuola rigida e un po’ di supporto per l’arco possono rendere più comodo stare in piedi e camminare con il piede piatto. Non cambiano l’arco nel tempo, ma possono ridurre il lavoro che i muscoli dell’arco devono fare durante il giorno.',
-        'I plantari per l’arco già pronti si trovano facilmente e costano poco. I plantari su misura, fatti da un calco del piede, costano di più e a volte vengono consigliati per la disfunzione del tendine tibiale posteriore.',
+        'I [plantari per l’arco](/it/plantari-o-esercizi/) già pronti si trovano facilmente e costano poco. I plantari su misura, fatti da un calco del piede, costano di più e a volte vengono consigliati per la disfunzione del tendine tibiale posteriore.',
         'Le prove sui plantari nel piede piatto in particolare sono più deboli di quanto pensino in molti. Per la fascite plantare, la linea guida del 2023 sul dolore al tallone sconsiglia i plantari come approccio a sé nel breve periodo (grado B a sfavore), ma dà una C alle cure combinate che includono i plantari.',
         '**Se il piede piatto non ti fa male, non ti servono scarpe speciali.** Se stare in piedi o camminare ti fa dolere l’arco o la caviglia, una scarpa con suola rigida e un leggero supporto per l’arco è un primo passo ragionevole, da provare prima di spendere di più per plantari su misura. Le scarpe con suole molto piatte e senza sostegno (sandali sottili, scarpe da ginnastica consumate) tendono a peggiorare la stanchezza dell’arco nelle giornate lunghe.',
       ],
@@ -125,14 +125,14 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       h2: 'Quali esercizi aiutano il piede piatto?',
       paragraphs: [
-        'Gli esercizi per il piede piatto si concentrano sui muscoli che sostengono l’arco da sotto (i muscoli intrinseci del piede) e sui muscoli più in alto che controllano come appoggi il piede (il polpaccio, l’anca). Le prove migliori finora vengono da uno studio su 52\u00A0persone con piede piatto flessibile, in cui sei settimane di esercizi combinati hanno cambiato la forma dell’arco più che in un gruppo di controllo. Quello studio includeva piede corto, esercizi per la caviglia, rinforzo dell’anca e allungamenti, fatti insieme.',
+        'Gli esercizi per il piede piatto si concentrano sui muscoli che sostengono l’arco da sotto (i [muscoli intrinseci del piede](/it/esercizi-rinforzo-piede/)) e sui muscoli più in alto che controllano come appoggi il piede (il polpaccio, l’anca). Le prove migliori finora vengono da uno studio su 52\u00A0persone con piede piatto flessibile, in cui sei settimane di esercizi combinati hanno cambiato la forma dell’arco più che in un gruppo di controllo. Quello studio includeva piede corto, [esercizi per la caviglia](/it/esercizi-rinforzo-caviglia/), rinforzo dell’anca e allungamenti, fatti insieme.',
         'Una revisione del 2024 sull’allenamento del piede corto da solo è stata meno incoraggiante: non ha trovato un cambiamento chiaro nel complesso, e ha visto un miglioramento in una misura dell’arco solo nei programmi più lunghi di sei settimane. Quindi **le prove sono più favorevoli a un programma combinato che a un solo esercizio, e serve pazienza.**',
         '[Esercizi per il piede piatto](/it/esercizi-piede-piatto/) ha l’elenco completo degli esercizi, le dosi, cosa dovresti sentire e le prove dietro ciascuno. Walkito costruisce un piano settimanale intorno a un obiettivo di tenuta dell’arco, partendo dal piede corto da seduto e salendo alle versioni in piedi e su una gamba, poi aggiungendo la resistenza dell’elastico e il rinforzo dell’anca. Le pagine dei singoli esercizi approfondiscono:',
       ],
       bullets: [
         'Il [piede corto](/it/esercizi/piede-corto/) allena l’arco ad alzarsi senza arricciare le dita.',
         'La [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/) sveglia i piccoli muscoli sotto l’arco.',
-        'L’[apertura delle dita](/it/esercizi/apertura-dita-piede/) allena i muscoli tra le dita che si dividono il carico con l’arco.',
+        'L’[apertura delle dita](/it/esercizi/apertura-dita-piede/) allena i [muscoli tra le dita](/it/esercizi-rinforzo-dita-piedi/) che si dividono il carico con l’arco.',
         'L’[inversione con elastico](/it/esercizi/inversione-caviglia-elastico/) rinforza il muscolo tibiale posteriore, lo stesso coinvolto nel piede piatto acquisito dell’adulto.',
       ],
       cites: [CITE.brijwasi, CITE.cheng],
@@ -143,7 +143,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
         'Il piede piatto può sovrapporsi ad altri problemi del piede, soprattutto quando stai in piedi o cammini a lungo. Se il dolore è vicino al tallone e ha l’andamento tipico del mattino (una fitta ai primi passi che si calma dopo qualche minuto), è più compatibile con la fascite plantare. Vedi [fascite plantare](/it/fascite-plantare/) per una panoramica completa.',
       ],
       bullets: [
-        'Il [dolore all’avampiede](/it/metatarsalgia-dolore-pianta-piede/) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un polpaccio rigido può spostare il peso in avanti.',
+        'Il [dolore all’avampiede](/it/metatarsalgia-dolore-pianta-piede/) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un [polpaccio rigido](/it/polpacci-rigidi/) può spostare il peso in avanti.',
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega gli esercizi e le scarpe che aiutano quando una lunga giornata su un pavimento duro ti lascia l’arco dolorante.',
         '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla dei turni da 12\u00A0ore.',
       ],
@@ -175,12 +175,12 @@ export const HUB_FLAT_FEET_IT: Guide = {
     },
     {
       q: 'Il piede piatto può causare dolore al ginocchio o all’anca?',
-      a: 'Un arco basso cambia il modo in cui la forza sale lungo la gamba, e alcune persone con piedi molto pronati sviluppano sintomi da sovraccarico al ginocchio, allo stinco o all’anca. Ma il legame è più debole di quanto si pensi. Molte persone con il piede piatto non hanno problemi al ginocchio o all’anca. Se hai sia il piede piatto sia dolore al ginocchio o all’anca, un professionista sanitario può verificare se nel tuo caso sono collegati.',
+      a: 'Un arco basso cambia il modo in cui la forza sale lungo la gamba, e alcune persone con piedi molto pronati sviluppano sintomi da sovraccarico al [ginocchio](/it/piede-piatto-dolore-ginocchio/), allo stinco o all’anca. Ma il legame è più debole di quanto si pensi. Molte persone con il piede piatto non hanno problemi al ginocchio o all’anca. Se hai sia il piede piatto sia dolore al ginocchio o all’anca, un professionista sanitario può verificare se nel tuo caso sono collegati.',
     },
     {
       q: 'Il piede piatto nei bambini passa crescendo?',
       cites: [CITE.salinasTorres],
-      a: 'Nella maggior parte dei casi sì. Il piede piatto è quasi universale nei bambini piccoli, e l’arco di solito si forma tra i 6 e i 10\u00A0anni circa. Una revisione sistematica del 2023 ha notato che la frequenza è più alta tra i 3 e i 5\u00A0anni e cala fino all’adolescenza (Salinas-Torres e colleghi, 2023). Un ragazzo che da adolescente ha ancora un piede piatto flessibile senza dolore difficilmente ha un problema da risolvere.',
+      a: 'Nella maggior parte dei casi sì. Il piede piatto è quasi universale nei [bambini piccoli](/it/piede-piatto-bambini/), e l’arco di solito si forma tra i 6 e i 10\u00A0anni circa. Una revisione sistematica del 2023 ha notato che la frequenza è più alta tra i 3 e i 5\u00A0anni e cala fino all’adolescenza (Salinas-Torres e colleghi, 2023). Un ragazzo che da adolescente ha ancora un piede piatto flessibile senza dolore difficilmente ha un problema da risolvere.',
     },
     {
       q: 'Devo usare plantari se ho il piede piatto?',

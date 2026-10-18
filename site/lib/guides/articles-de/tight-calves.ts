@@ -55,7 +55,7 @@ export const TIGHT_CALVES_DE: Guide = {
       h2: 'Verursachen verspannte Waden Fuß- und Fersenschmerzen?',
       keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100 ohne ging ein Sprunggelenk, das sich nicht über 0\u00A0Grad hinaus beugen ließ, mit einer 23,3-fachen Chance auf eine Plantarfasziitis einher (Riddle und Kollegen, 2003).',
       paragraphs: [
-        'Verspannte Waden hängen mit Plantarfasziitis zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).',
+        'Verspannte Waden hängen mit [Plantarfasziitis](/de/plantarfasziitis/) zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).',
         'In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50\u00A0Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0\u00A0Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10\u00A0Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor Körpergewicht und Stehen bei der Arbeit.',
         'In einer späteren Studie mit 254\u00A0Personen mit Plantarfasziitis hatten 83\u00A0% eine eingeschränkte Beugung im Sprunggelenk, und 57\u00A0% aller Patientinnen und Patienten hatten allein einen verkürzten Gastrocnemius (Patel und DiGiovanni, 2011).',
         '**Beide Studien zeigen einen Zusammenhang, nicht, dass verspannte Waden eine Plantarfasziitis verursachen.** Die große Spanne um den Wert von 23,3 bedeutet auch, dass die wahre Zahl viel kleiner sein könnte. Trotzdem ist das ein Grund, warum die Leitlinie von 2023 zu Fersenschmerzen das Wadendehnen bei Schmerzen unter der Ferse mit A bewertet, ihrer besten Note.',
@@ -194,7 +194,6 @@ export const TIGHT_CALVES_DE: Guide = {
             'Gib einem neuen Paar Schuhe mit geringerer Sprengung Zeit, bevor du lange Läufe darin machst.',
           ],
         },
-        'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastung ein.',
         'Wenn du den ganzen Tag stehst:',
         {
           list: [

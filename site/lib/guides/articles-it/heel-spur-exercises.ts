@@ -26,7 +26,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     'Esercizi e allungamenti per lo sperone calcaneare su fascia plantare e polpaccio: routine, dosi e progressione. Lavorano sul dolore, non sciolgono lo sperone.',
   h1: 'Esercizi per lo sperone calcaneare: allungamenti e rinforzo per il dolore intorno allo sperone',
   lede:
-    'L’esercizio non scioglie uno sperone calcaneare (o spina calcaneare). Lo sperone è osso, e l’osso non si riduce con lo stretching. Ma il dolore che si sente quando si ha uno sperone calcaneare viene quasi sempre dalla fascia plantare e dal polpaccio intorno, non dall’osso in sé. Gli esercizi qui sotto lavorano su quei tessuti molli. Sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la fascite plantare.',
+    'L’esercizio non scioglie uno sperone calcaneare (o spina calcaneare). Lo sperone è osso, e l’osso non si riduce con lo stretching. Ma il dolore che si sente quando si ha uno sperone calcaneare viene quasi sempre dalla fascia plantare e dal polpaccio intorno, non dall’osso in sé. Gli esercizi qui sotto lavorano su quei tessuti molli. Sono gli stessi che la linea guida del 2023 sul dolore al tallone raccomanda per la [fascite plantare](/it/fascite-plantare/).',
   intro: [
     'Se prima vuoi capire la differenza tra sperone calcaneare e fascite plantare, vedi [fascite plantare o sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/). Questa pagina è la routine pratica: quali esercizi, quanti, come progredire e quando fermarti.',
   ],
@@ -172,7 +172,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
         ],
       },
       after: [
-        'Aggiungi l’allungamento della fascia plantare e gli allungamenti del polpaccio a ogni livello. Lo stretching non si toglie quando inizi il rinforzo. La linea guida valuta i due in modo indipendente.',
+        'Aggiungi l’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e gli allungamenti del polpaccio a ogni livello. Lo stretching non si toglie quando inizi il rinforzo. La linea guida valuta i due in modo indipendente.',
         'Per altri dettagli sul protocollo dei sollevamenti sulle punte con asciugamano e sulla ricerca dietro, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -236,7 +236,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       h2: 'Quanto ci vuole perché il dolore da sperone calcaneare migliori con gli esercizi?',
       paragraphs: [
         'Non esiste uno studio che misuri i risultati degli esercizi proprio nelle persone con sperone calcaneare. I tempi qui sotto vengono dagli studi sulla fascite plantare, che nella maggior parte dei casi è il problema che dà il dolore intorno allo sperone.',
-        'Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching e plantari, spesso nel giro di alcuni mesi (Latt e colleghi, 2020). Nello studio di Rathleff del 2015, il gruppo dei sollevamenti sulle punte con carico era nettamente avanti rispetto al gruppo del solo stretching a tre mesi.',
+        'Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching e [plantari](/it/plantari-o-esercizi/), spesso nel giro di alcuni mesi (Latt e colleghi, 2020). Nello studio di Rathleff del 2015, il gruppo dei sollevamenti sulle punte con carico era nettamente avanti rispetto al gruppo del solo stretching a tre mesi.',
         'Nessun programma di esercizi può promettere dei tempi a una singola persona. **Quello che puoi misurare è se le cose stanno cambiando**:',
         {
           list: [

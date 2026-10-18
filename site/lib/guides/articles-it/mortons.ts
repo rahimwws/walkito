@@ -187,7 +187,7 @@ export const MORTONS_IT: Guide = {
     },
     {
       q: 'Gli esercizi aiutano il neuroma di Morton?',
-      a: 'Nessuno studio ha testato l’esercizio per il neuroma di Morton. L’esercizio non lavora direttamente sul nervo. L’apertura delle dita e il rinforzo dei muscoli intrinseci del piede possono aiutare a distribuire il carico sull’avampiede in modo più uniforme, e l’allungamento del polpaccio riduce il sovraccarico dell’avampiede dovuto a un polpaccio rigido. Sono misure per il comfort, non interventi specifici per il neuroma. Prima vengono scarpe e cuscinetti.',
+      a: 'Nessuno studio ha testato l’esercizio per il neuroma di Morton. L’esercizio non lavora direttamente sul nervo. L’apertura delle dita e il rinforzo dei muscoli intrinseci del piede possono aiutare a distribuire il carico sull’avampiede in modo più uniforme, e l’allungamento del polpaccio riduce il sovraccarico dell’avampiede dovuto a un [polpaccio rigido](/it/polpacci-rigidi/). Sono misure per il comfort, non interventi specifici per il neuroma. Prima vengono scarpe e cuscinetti.',
     },
     {
       q: 'Il neuroma di Morton passa da solo?',
@@ -205,7 +205,7 @@ export const MORTONS_IT: Guide = {
     },
     {
       q: 'Cosa scatena il neuroma di Morton?',
-      a: 'Il neuroma di Morton è scatenato da tutto ciò che comprime il nervo tra le ossa metatarsali. I fattori scatenanti comuni sono scarpe strette o a punta, tacchi alti, attività con impatti ripetuti come la corsa e forme del piede come piede piatto o piede cavo che spostano più pressione in avanti. È più frequente nelle donne e nella mezza età.',
+      a: 'Il neuroma di Morton è scatenato da tutto ciò che comprime il nervo tra le ossa metatarsali. I fattori scatenanti comuni sono scarpe strette o a punta, tacchi alti, attività con impatti ripetuti come la corsa e forme del piede come [piede piatto](/it/piede-piatto/) o [piede cavo](/it/piede-cavo-esercizi/) che spostano più pressione in avanti. È più frequente nelle donne e nella mezza età.',
     },
     {
       q: 'Cos’è il test della compressione per il neuroma di Morton?',
@@ -231,7 +231,7 @@ export const MORTONS_IT: Guide = {
   },
   program: {
     h2: 'Come trasformarlo in un piano',
-    text: 'Walkito è pensato per fascite plantare e piede piatto, non per il neuroma di Morton. Ma gli esercizi per l’avampiede dell’app, tra cui apertura delle dita e allungamento del polpaccio, lavorano sulla stessa distribuzione del carico sull’avampiede che contribuisce ai sintomi del neuroma. Se nel check-in segni la parte anteriore della pianta sulla mappa del dolore, l’app include apertura delle dita e allungamento della fascia plantare nella tua sessione.',
+    text: 'Walkito è pensato per [fascite plantare](/it/fascite-plantare/) e piede piatto, non per il neuroma di Morton. Ma gli esercizi per l’avampiede dell’app, tra cui apertura delle dita e allungamento del polpaccio, lavorano sulla stessa distribuzione del carico sull’avampiede che contribuisce ai sintomi del neuroma. Se nel check-in segni la parte anteriore della pianta sulla mappa del dolore, l’app include apertura delle dita e allungamento della fascia plantare nella tua sessione.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito non fa diagnosi di neuroma di Morton. Gli esercizi che include sono misure per il comfort e il carico. Prima vengono scarpe più larghe, cuscinetti metatarsali e una valutazione clinica.',
     ],

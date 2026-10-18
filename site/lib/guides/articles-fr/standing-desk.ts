@@ -74,7 +74,7 @@ export const STANDING_DESK_FR: Guide = {
     {
       h2: 'Quelles chaussures porter avec un bureau debout\u00A0?',
       paragraphs: [
-        'Si vous travaillez à la maison, vous êtes peut-être debout à votre bureau en chaussettes ou en chaussons. Cela fait beaucoup d’heures sans amorti ni soutien de la voûte. La recommandation de 2023 sur la douleur au talon donne aux orthèses seules la note B contre pour la fasciite plantaire, ce qui veut dire que les données penchent plutôt contre leur usage comme seule solution, mais cela concerne les semelles isolées, pas la question de savoir si une chaussure vaut mieux que pas de chaussure.',
+        'Si vous travaillez à la maison, vous êtes peut-être debout à votre bureau en chaussettes ou en chaussons. Cela fait beaucoup d’heures sans amorti ni soutien de la voûte. La recommandation de 2023 sur la douleur au talon donne aux [orthèses](/fr/semelles-ou-exercices/) seules la note B contre pour la [fasciite plantaire](/fr/fasciite-plantaire/), ce qui veut dire que les données penchent plutôt contre leur usage comme seule solution, mais cela concerne les semelles isolées, pas la question de savoir si une chaussure vaut mieux que pas de chaussure.',
         'Une approche raisonnable\u00A0: **portez une chaussure avec un peu d’amorti et une semelle intérieure qui maintient le pied quand vous êtes debout, même à la maison.** Vous n’avez pas besoin d’une chaussure spéciale pour bureau debout. Si vous alternez entre debout et assis, vous pouvez enlever vos chaussures pendant les périodes assises.',
         'Les exercices de cette page ciblent directement les tissus. Les chaussures et les tapis aident au confort quand vous êtes debout, mais ils ne remplacent pas les étirements ni le renforcement.',
       ],
@@ -233,7 +233,7 @@ export const STANDING_DESK_FR: Guide = {
     },
     {
       q: 'Quels exercices faire à un bureau debout\u00A0?',
-      a: 'Debout\u00A0: étirements du mollet contre le bord du bureau (2\u00A0maintiens de 30\u00A0secondes de chaque côté) et montées sur pointes debout (3\u00A0séries de 10). Pendant les pauses assises\u00A0: montées sur pointes assis (3\u00A0séries de 15), écarter les orteils et l’exercice du pied court. Ils ciblent le mollet, le fascia plantaire et les muscles intrinsèques du pied qui portent la charge debout. Si un exercice fait monter votre douleur à 6 sur 10 ou plus, arrêtez pour aujourd’hui.',
+      a: 'Debout\u00A0: étirements du mollet contre le bord du bureau (2\u00A0maintiens de 30\u00A0secondes de chaque côté) et montées sur pointes debout (3\u00A0séries de 10). Pendant les pauses assises\u00A0: montées sur pointes assis (3\u00A0séries de 15), écarter les orteils et l’[exercice du pied court](/fr/exercices/pied-court/). Ils ciblent le mollet, le fascia plantaire et les muscles intrinsèques du pied qui portent la charge debout. Si un exercice fait monter votre douleur à 6 sur 10 ou plus, arrêtez pour aujourd’hui.',
       cites: [CITE.guideline],
     },
     {

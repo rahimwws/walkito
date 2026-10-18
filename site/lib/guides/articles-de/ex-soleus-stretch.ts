@@ -16,7 +16,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     'Soleus dehnen mit gebeugtem Knie bei Plantarfasziitis und verkürzter Wade: Technik, warum der Muskel eine eigene Dehnung braucht, Sätze und Haltedauer.',
   h1: 'Soleusdehnung (gebeugtes Knie): Technik, Sätze und warum sie zählt',
   lede:
-    'Der Soleus ist der tiefere Wadenmuskel, der unter dem Gastrocnemius liegt. Er wird nur gedehnt, wenn das Knie gebeugt ist, weil das Beugen des Knies den Gastrocnemius aus dem Spiel nimmt. In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Wenn du nur mit gestrecktem Knie dehnst, lässt du diesen Muskel komplett aus.',
+    'Der Soleus ist der tiefere Wadenmuskel, der unter dem Gastrocnemius liegt. Er wird nur gedehnt, wenn das Knie gebeugt ist, weil das Beugen des Knies den Gastrocnemius aus dem Spiel nimmt. In einer Fallserie mit 254\u00A0Personen mit [Plantarfasziitis](/de/plantarfasziitis/) hatten 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Wenn du nur mit gestrecktem Knie dehnst, lässt du diesen Muskel komplett aus.',
   takeaways: [
     'Der Soleus zieht nur über das Sprunggelenk. Der Gastrocnemius zieht über Knie und Sprunggelenk. Wenn du das Knie beugst, wird der Gastrocnemius locker, und der Soleus übernimmt die Dehnung.',
     'Bei 254\u00A0Personen mit Plantarfasziitis hatten 23 bis 30\u00A0% eine Kontraktur in Gastrocnemius und Soleus (Patel und DiGiovanni, 2011).',

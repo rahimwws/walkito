@@ -21,7 +21,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
     'Fersenschmerzen nachts oder in Ruhe können auf einen Ermüdungsbruch, einen eingeklemmten Nerv oder Arthritis hindeuten. Warnzeichen und wann zum Arzt.',
   h1: 'Fersenschmerzen nachts: woher sie kommen und wann sie ein Warnzeichen sind',
   lede:
-    'Fersenschmerzen, die nachts, im Bett oder in Ruhe auftreten, sind ein anderes Muster als das typische Ziehen der Plantarfasziitis beim ersten Schritt am Morgen. Schmerzen nachts und in Ruhe können auf einen Ermüdungsbruch des Fersenbeins, einen eingeklemmten Nerv, eine entzündliche Gelenkerkrankung oder eine andere Erkrankung hindeuten, die eine Ärztin oder ein Arzt abklären sollte. Diese Seite geht die häufigen Ursachen durch und die, die du nicht aussitzen solltest.',
+    'Fersenschmerzen, die nachts, im Bett oder in Ruhe auftreten, sind ein anderes Muster als das typische Ziehen der [Plantarfasziitis](/de/plantarfasziitis/) beim ersten Schritt am Morgen. Schmerzen nachts und in Ruhe können auf einen Ermüdungsbruch des Fersenbeins, einen eingeklemmten Nerv, eine entzündliche Gelenkerkrankung oder eine andere Erkrankung hindeuten, die eine Ärztin oder ein Arzt abklären sollte. Diese Seite geht die häufigen Ursachen durch und die, die du nicht aussitzen solltest.',
   intro: [
     'Wenn deine Ferse vor allem bei den ersten Schritten am Morgen wehtut und es danach besser wird, ist [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) der wahrscheinlichere Ausgangspunkt. Diese Seite ist für Schmerzen, die in Ruhe bleiben, dich aufwecken oder kommen, nachdem du eine Weile nicht auf den Beinen warst, und die nicht zum typischen Muster der Plantarfasziitis passen.',
   ],
@@ -39,7 +39,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       paragraphs: [
         'Plantarfasziitis tut weh, weil die Faszie im Schlaf steif wird und sich beim Aufstehen dann abrupt dehnt. Dieser Schmerz ist beim ersten Schritt am stärksten und wird besser, wenn du dich bewegst. **Wenn deine Ferse wehtut, während du im Bett liegst und sie gar nicht belastest, steckt meist ein anderer Mechanismus dahinter.**',
         'Eine Übersichtsarbeit von 2018 in American Family Physician nennt mehrere Ursachen für Fersenschmerzen, die sich anders verhalten als eine Plantarfasziitis. Der wichtigste Unterschied: Der Schmerz bei Plantarfasziitis wird mit Aktivität besser, Schmerzen durch Ermüdungsbrüche, eingeklemmte Nerven, Tumoren und Entzündungen folgen diesem Muster nicht.',
-        'Im Schlaf zeigt der Fuß außerdem nach unten (Plantarflexion). In dieser Position können sich Achillessehne und Wade verkürzen, was manchmal zu Beschwerden an der Ferse beiträgt. Nachtschienen setzen hier an, indem sie das Sprunggelenk im rechten Winkel halten. Eine Nachtschiene ist aber ein Hilfsmittel bei Plantarfasziitis und kein Ersatz dafür, Schmerzen abzuklären, die in Ruhe wirklich schlimmer werden.',
+        'Im Schlaf zeigt der Fuß außerdem nach unten (Plantarflexion). In dieser Position können sich Achillessehne und Wade verkürzen, was manchmal zu Beschwerden an der Ferse beiträgt. [Nachtschienen](/de/nachtschiene-plantarfasziitis/) setzen hier an, indem sie das Sprunggelenk im rechten Winkel halten. Eine Nachtschiene ist aber ein Hilfsmittel bei Plantarfasziitis und kein Ersatz dafür, Schmerzen abzuklären, die in Ruhe wirklich schlimmer werden.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },
@@ -129,7 +129,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
     {
       h2: 'Was unterscheidet Fersenschmerzen nachts von Fersenschmerzen am Morgen?',
       paragraphs: [
-        'Fersenschmerzen am Morgen und nachts klingen ähnlich, deuten aber in verschiedene Richtungen. Der Morgenschmerz, der stechende Schmerz beim ersten Schritt, das nach ein paar Minuten Gehen nachlässt, ist das Lehrbuchbild der Plantarfasziitis. Das Gewebe ist über Nacht steif geworden und wird unter Last abrupt gedehnt.',
+        'Fersenschmerzen am Morgen und nachts klingen ähnlich, deuten aber in verschiedene Richtungen. Der Morgenschmerz, der stechende Schmerz beim ersten Schritt, der nach ein paar Minuten Gehen nachlässt, ist das Lehrbuchbild der Plantarfasziitis. Das Gewebe ist über Nacht steif geworden und wird unter Last abrupt gedehnt.',
         'Nachtschmerz, also Schmerz, der kommt oder schlimmer wird, wenn du im Bett liegst und den Fuß nicht belastest, spricht für mehr als eine einfache Steifheit der Faszie. Die Erkrankungen, die am häufigsten mit echtem Ruheschmerz zusammenhängen, sind:',
         {
           list: [

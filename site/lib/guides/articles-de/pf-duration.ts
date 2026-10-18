@@ -20,7 +20,7 @@ export const PF_DURATION_DE: Guide = {
     'Wie lange eine Plantarfasziitis dauert, was die Erholung bremst, was du tun kannst, wenn es nicht besser wird, und woran du Fortschritt erkennst.',
   h1: 'Wie lange dauert Plantarfasziitis? Was die Studienlage wirklich sagt',
   lede:
-    'Die ehrliche Antwort: Es kommt darauf an, und die meisten Quellen unterschätzen, wie stark das schwankt. Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung wie Dehnen und Schuheinlagen besser geht. Eine längere Beobachtung von 174\u00A0Menschen zeichnet ein differenzierteres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
+    'Die ehrliche Antwort: Es kommt darauf an, und die meisten Quellen unterschätzen, wie stark das schwankt. Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung wie Dehnen und [Schuheinlagen](/de/einlagen-oder-uebungen/) besser geht. Eine längere Beobachtung von 174\u00A0Menschen zeichnet ein differenzierteres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
   intro: [
     'Die Seite [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) erklärt die Übungen, die Belege und die Empfehlungsgrade der Leitlinie. Diese Seite beantwortet die Frage, die danach kommt: Wie lange dauert das alles, was lässt es länger dauern, und welche Möglichkeiten gibt es, wenn es nicht besser wird?',
   ],
@@ -46,7 +46,7 @@ export const PF_DURATION_DE: Guide = {
             'Von einigen Faktoren, die du nicht beeinflussen kannst.',
           ],
         },
-        'Eine Übersichtsarbeit von 2020 hält fest, dass konservative Ansätze bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wirken, meist innerhalb von drei bis sechs Monaten (Latt und Kollegen, 2020).',
+        'Eine Übersichtsarbeit von 2020 hält fest, dass konservative Ansätze bei etwa 90\u00A0% der Menschen mit [Plantarfasziitis](/de/plantarfasziitis/) wirken, meist innerhalb von drei bis sechs Monaten (Latt und Kollegen, 2020).',
         'Eine Kohortenstudie von 2018 zeigt den längeren Blick. Hansen und Kollegen begleiteten 174\u00A0Patientinnen und Patienten mit per Ultraschall diagnostizierter Plantarfasziitis durchschnittlich 9,7\u00A0Jahre ab Beginn der Beschwerden. Bei der Nachuntersuchung waren 54\u00A0% beschwerdefrei, und 46\u00A0% hatten noch etwas Schmerz.',
         'Die Kaplan-Meier-Analyse zeigte, dass das Risiko, noch eine Plantarfasziitis zu haben, nach einem Jahr bei 80,5\u00A0%, nach fünf Jahren bei 50,0\u00A0% und nach zehn Jahren bei 45,6\u00A0% lag. Bei denen, die beschwerdefrei wurden, dauerten die Beschwerden im Durchschnitt 725\u00A0Tage, also etwa zwei Jahre (Hansen und Kollegen, 2018).',
         'Diese Zahlen klingen schlechter als das übliche „das geht in ein paar Monaten weg“. Zwei Dinge erklären den Unterschied:',
@@ -88,7 +88,7 @@ export const PF_DURATION_DE: Guide = {
             '**Fersenschmerzen auf beiden Seiten.** Menschen, die zu Beginn in beiden Fersen Schmerzen hatten, wurden pro Jahr nur etwa ein Drittel so häufig beschwerdefrei wie Menschen mit einseitigen Schmerzen (Hazard Rate Ratio 0,33, P kleiner als 0,01). Die Autoren merkten an, dass Schmerzen auf beiden Seiten auf eine unerkannte entzündliche Erkrankung hindeuten könnten, weil Schmerzen an Sehnenansätzen auf beiden Seiten ein Merkmal mancher Formen von Arthritis sind. Niemand in ihrer Kohorte hatte eine bekannte entzündliche Diagnose, aber es wurde auch kein Bluttest gemacht (Hansen und Kollegen, 2018).',
           ],
         },
-        'BMI, Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein Fersensporn hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.',
+        'BMI, Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.',
         'Wenn beide Fersen wehtun und die Morgensteifigkeit lange anhält oder andere Gelenke betroffen sind, solltest du das deiner Ärztin oder deinem Arzt sagen, auch wenn die Übungen helfen. Mehr dazu, wann Schmerzen auf beiden Seiten ein Warnzeichen sind, steht unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
       ],
       sourceNote:
@@ -151,7 +151,7 @@ export const PF_DURATION_DE: Guide = {
       paragraphs: [
         'Das Muster in der Tabelle oben ist klar: **Dehnen und Krafttraining haben die breiteste Unterstützung.** Die Behandlungen in der Praxis (Laser, Dry Needling, Stoßwelle) haben einige Belege, stehen in der Rangfolge der Leitlinie aber hinter den Übungen. Eine Operation bleibt dem kleinen Teil der Fälle vorbehalten, die auf nichts anderes ansprechen, und die Leitlinie gibt ihr keine prominente Rolle.',
         'Wenn du die Übungen mehrere Monate regelmäßig gemacht hast und der Morgenschmerz nicht besser wird, ist das ein vernünftiger Zeitpunkt, mit einer Ärztin oder einem Arzt über die Optionen oben zu sprechen. Es ist auch ein vernünftiger Zeitpunkt, zu prüfen, ob die Diagnose stimmt: Unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) findest du andere Ursachen mit demselben Muster.',
-        'Beim Laufen ist die Belastung oft ein Teil des Bildes: [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandeln diesen Blickwinkel.',
+        'Auch bei langem Stehen ist die Belastung oft ein Teil des Bildes: [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt diesen Blickwinkel.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -179,7 +179,7 @@ export const PF_DURATION_DE: Guide = {
     {
       q: 'Warum wird meine Plantarfasziitis nicht besser?',
       cites: [CITE.guideline],
-      a: 'Dafür gibt es mehrere Möglichkeiten. Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie Nachtschienen, Lasertherapie oder Dry Needling zu sprechen.',
+      a: 'Dafür gibt es mehrere Möglichkeiten. Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie [Nachtschienen](/de/nachtschiene-plantarfasziitis/), Lasertherapie oder Dry Needling zu sprechen.',
     },
     {
       q: 'Dauert Plantarfasziitis mit Fersensporn länger?',

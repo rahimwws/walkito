@@ -34,7 +34,7 @@ export const ANKLE_MOBILITY_IT: Guide = {
         'Una flessione della caviglia ridotta è legata a diversi problemi, anche se legata non vuol dire che li causi:',
         {
           list: [
-            '**Fascite plantare:** In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003).',
+            '**Fascite plantare:** In uno studio caso-controllo appaiato su 50\u00A0persone con [fascite plantare](/it/fascite-plantare/) e 100 senza, chi aveva 0\u00A0gradi di dorsiflessione o meno aveva odds di fascite plantare 23,3\u00A0volte più alte rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003).',
             '**Infortuni nelle reclute:** In 1.093\u00A0reclute maschi dell’esercito seguite durante tre mesi di addestramento duro, il movimento della caviglia misurato all’inizio era un forte fattore predittivo di chi si sarebbe infortunato, su 48\u00A0infortuni in totale (Pope e colleghi, 1998).',
           ],
         },

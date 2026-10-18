@@ -239,7 +239,7 @@ export const FLAT_FEET_DE: Guide = {
       paragraphs: [
         'In der bisherigen Forschung haben Plattfuß-Übungen das Gewölbe nach sechs Wochen oder mehr verändert, und nur bei flexiblen Plattfüßen. In einer Studie mit 52\u00A0Personen mit **flexiblen** Plattfüßen veränderte ein sechswöchiges Programm aus Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen zwei Maße der Gewölbeform stärker als in der Kontrollgruppe.',
         'Für Übungen zum Aufbau des Fußgewölbes allein ist die Studienlage dünner. Eine Übersichtsarbeit von 2024 hat Studien zum Kurzer-Fuß-Training bei Plattfüßen allgemein zusammengefasst. Insgesamt fand sie keinen klaren Unterschied zu Kontrollgruppen bei der Gewölbeform oder der Fußhaltung. Nur Programme über sechs Wochen verbesserten, wie weit das Gewölbe unter deinem Gewicht absinkt, und die Autoren sagen, dass größere Studien nötig sind. Plane also mindestens sechs Wochen ein, und länger, wenn du das Kurzer-Fuß-Training allein machst.',
-        `Das ist ein Grund, warum der Plan von Walkito kein Enddatum hat. Das Gewölbeziel, das Gewölbe ${PROGRAM.goals.archHoldSeconds}\u00A0Sekunden zu halten, bleibt im Plan, bis du es erreichst, egal wie viele Wochen das dauert. Das Gewölbehalten wird alle ${PROGRAM.testEveryDays}\u00A0Tage getestet, bis du dein erstes Ziel erreichst, danach alle ${PROGRAM.testEveryDaysAfterGoal}, sodass du siehst, ob sich etwas tut. Die Studien sind auf [der Seite zur Studienlage](/science/) (auf Englisch) zusammengefasst.`,
+        `Das ist ein Grund, warum der Plan von Walkito kein Enddatum hat. Das Gewölbeziel, das Gewölbe ${PROGRAM.goals.archHoldSeconds}\u00A0Sekunden zu halten, bleibt im Plan, bis du es erreichst, egal wie viele Wochen das dauert. Das Gewölbehalten wird alle ${PROGRAM.testEveryDays}\u00A0Tage getestet, bis du dein erstes Ziel erreichst, danach alle ${PROGRAM.testEveryDaysAfterGoal}, sodass du siehst, ob sich etwas tut.`,
       ],
       sourceNote:
         'Brijwasi und Borkar: Der Navicular Drop (wie weit das Kahnbein an der Innenseite des Gewölbes beim Stehen absinkt) verbesserte sich um 0,4\u00A0cm und der Gewölbewinkel um 16\u00A0Grad stärker als in der Kontrollgruppe. Cheng und Kollegen: insgesamt kein signifikanter Unterschied beim Navicular Drop oder beim Foot Posture Index; der Navicular Drop verbesserte sich signifikant nur in der Untergruppe der Programme über sechs Wochen.',
@@ -250,7 +250,7 @@ export const FLAT_FEET_DE: Guide = {
       paragraphs: [
         'Keine Studie auf dieser Seite zeigt, dass Plattfuß-Übungen [Schmerzen im Fußgewölbe](/de/schmerzen-im-fussgewoelbe/) lindern, weil keine davon Schmerzen gemessen hat. Die Studie und die Übersichtsarbeit haben die Form des Gewölbes gemessen. Sie zeigen, dass sich das Gewölbe trainieren lässt. Sie sind kein Beleg dafür, dass dieselben Übungen ein schmerzendes Gewölbe lindern.',
         'Schmerzen an der Ferse, und manchmal entlang des Gewölbes, können von der Plantarfaszie kommen, der kräftigen Sehnenplatte an der Fußsohle. Sitzt dein Schmerz nahe der Ferse, ist die Leitlinie von 2023 zu Fersenschmerzen der bessere Wegweiser. Bei Fersenschmerzen unter dem Fuß vergibt sie für das Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad, **A**, und für Krafttraining Grad **B**. Diese Übungen findest du unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
-        'Walkito kann an beidem gleichzeitig arbeiten, als getrennte Ziele: schmerzfreie Morgen für den Schmerz und Gewölbehalten für das Gewölbe. Wie sich die beiden eine Woche teilen, steht auf [der Seite zum Plan](/program/) (auf Englisch).',
+        'Walkito kann an beidem gleichzeitig arbeiten, als getrennte Ziele: schmerzfreie Morgen für den Schmerz und Gewölbehalten für das Gewölbe.',
       ],
       cites: [CITE.guideline],
     },
@@ -259,7 +259,7 @@ export const FLAT_FEET_DE: Guide = {
       paragraphs: [
         `Wenn du das Gewölbeziel erreichst, also das Gewölbe ${PROGRAM.goals.archHoldSeconds}\u00A0Sekunden hältst, **lässt Walkito die Gewölbearbeit in geringerer Dosis im Plan.** Das Ziel geht in die Erhaltung über, und das nächste Ziel rückt nach. Das Ziel zu erreichen heißt nicht, dass die Gewölbearbeit aufhört.`,
         `Auch die Tests gehen weiter, alle ${PROGRAM.testEveryDaysAfterGoal}\u00A0Tage, sobald du dein erstes Ziel erreicht hast. Wenn das Gewölbehalten nachlässt, siehst du es an den Zahlen, statt zu raten.`,
-        'Wenn dir auch die Ferse wehtut, hat die Ferse eigene Übungen und ein eigenes Ziel: siehe [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Fragen zur App selbst beantworten [die FAQ](/faq/) (auf Englisch).',
+        'Wenn dir auch die Ferse wehtut, hat die Ferse eigene Übungen und ein eigenes Ziel: siehe [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
     },
   ],
@@ -355,7 +355,7 @@ export const HEEL_PAIN_DE: Guide = {
       h2: 'Welche Übungen helfen bei Plantarfasziitis, und wie viel solltest du machen?',
       figure: { id: 'plantar-fascia', caption: 'Die Plantarfaszie verläuft vom Fersenbein bis zu den Zehen. Der Schmerz bei Plantarfasziitis beginnt meist dort, wo sie an der Ferse ansetzt.', alt: 'Fußsohle mit der Plantarfaszie als weiße Bänder, die sich vom Fersenbein fächerförmig bis zu den Zehen ausbreiten, und einem roten Fleck an der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
-        'Die Übungen bei Plantarfasziitis in Walkito sind Dehnungen für Plantarfaszie und Wade, Krafttraining für die Wade, das sich in kleinen Schritten steigert, und Fußrollen. Das sind die Startdosen von Walkito, keine Verordnung. Eine einseitige Zusammenfassung gibt es unter [Übungsblätter zum Ausdrucken](/printable-exercise-sheets/) (auf Englisch). [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
+        'Die Übungen bei Plantarfasziitis in Walkito sind Dehnungen für Plantarfaszie und Wade, Krafttraining für die Wade, das sich in kleinen Schritten steigert, und Fußrollen. Das sind die Startdosen von Walkito, keine Verordnung. [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
         'Die Reihenfolge ist wichtig. Solange Schmerzlinderung dein Ziel ist, hält Walkito das Wadentraining sanft, eine Stufe nach der anderen:',
         {
           list: [
@@ -537,7 +537,7 @@ export const HEEL_PAIN_DE: Guide = {
         'Krafttraining und Dehnen helfen beide bei Plantarfasziitis, und **Krafttraining hilft früher.**',
         'In einer Studie mit 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis trugen alle Schuheinlagen. Eine Gruppe machte zusätzlich jeden zweiten Tag schweres Fersenheben. Die andere dehnte jeden Tag die Plantarfaszie.',
         'Nach drei Monaten lag die Fersenheben-Gruppe bei Schmerz und Alltagsfunktion klar vorn. Nach zwölf Monaten lagen beide Gruppen gleichauf. Krafttraining hat die Besserung beschleunigt, aber nicht verstärkt.',
-        'Die Leitlinie unterstützt beides. Die Begründung Studie für Studie steht auf [der Seite zur Studienlage](/science/) (auf Englisch).',
+        'Die Leitlinie unterstützt beides.',
       ],
       sourceNote:
         'Gemessen mit dem Foot Function Index, bei dem ein niedrigerer Wert weniger Schmerz und bessere Funktion bedeutet: 29\u00A0Punkte niedriger in der Fersenheben-Gruppe nach drei Monaten (95-%-KI 6-52, p = 0,016), und 22 gegenüber 16 nach zwölf Monaten, kein signifikanter Unterschied.',
@@ -577,7 +577,7 @@ export const HEEL_PAIN_DE: Guide = {
       h2: 'Was passiert, wenn die Ferse nicht mehr wehtut?',
       paragraphs: [
         `Wenn die Fersenschmerzen aufhören, macht Walkito in geringerer Dosis weiter, weil Fersenschmerzen wiederkommen können. Sobald du das Ziel schmerzfreie Morgen erreichst (Morgenschmerz bei oder unter 1/10 an ${PROGRAM.painFreeDays}\u00A0Tagen am Stück), geht dieses Ziel in die Erhaltung über, und das nächste Ziel rückt nach.`,
-        'Wenn deine Fußgewölbe auch flach sind, hat das Gewölbe eigene Übungen und einen eigenen Zeitrahmen: siehe [Übungen bei Plattfuß](/de/plattfuss-uebungen/). Fragen zur App selbst beantworten [die FAQ](/faq/) (auf Englisch).',
+        'Wenn deine Fußgewölbe auch flach sind, hat das Gewölbe eigene Übungen und einen eigenen Zeitrahmen: siehe [Übungen bei Plattfuß](/de/plattfuss-uebungen/).',
       ],
     },
   ],
@@ -597,7 +597,7 @@ export const HEEL_PAIN_DE: Guide = {
     },
     {
       q: 'Ist Dehnen oder Kräftigen besser bei Plantarfasziitis?',
-      a: 'Beides hilft, und Kräftigen wirkt schneller. In einer Studie mit 48\u00A0Personen lag schweres Fersenheben nach drei Monaten klar vor dem Dehnen, aber nach zwölf Monaten lagen beide Gruppen gleichauf. Die Leitlinie von 2023 vergibt für Dehnen Empfehlungsgrad A und für Krafttraining Grad B. [Die Seite zur Studienlage](/science/) (auf Englisch) hat die Details.',
+      a: 'Beides hilft, und Kräftigen wirkt schneller. In einer Studie mit 48\u00A0Personen lag schweres Fersenheben nach drei Monaten klar vor dem Dehnen, aber nach zwölf Monaten lagen beide Gruppen gleichauf. Die Leitlinie von 2023 vergibt für Dehnen Empfehlungsgrad A und für Krafttraining Grad B.',
     },
     {
       q: 'Ist ein Fersensporn dasselbe wie Plantarfasziitis?',
