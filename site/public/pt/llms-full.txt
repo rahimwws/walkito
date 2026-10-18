@@ -9560,6 +9560,521 @@ Sim. O Exakt Health é certificado como dispositivo médico na União Europeia (
 
 O Walkito ajusta cada sessão a partir de um check-in de dor pela manhã, antes de você começar. Uma nota de 7/10 ou mais deixa a sessão mais leve. Um dia com muitos passos faz o dia seguinte ter uma sessão de recuperação. O Exakt adapta o plano a partir da nota que você dá para cada sessão depois de terminar. O jeito do Walkito reage mais às mudanças diárias da dor; o do Exakt é mais focado na progressão geral do plano.
 
+## Fascite plantar ou tendinite de Aquiles: como saber a diferença
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/fascite-plantar-ou-tendinite-de-aquiles/ · published 2026-10-18 · updated 2026-10-18
+
+O jeito mais rápido de diferenciar as duas é o lugar da dor. A [fascite plantar](https://walkito.site/pt/fascite-plantar/) dói embaixo do calcanhar, principalmente nos primeiros passos da manhã (Koc e colegas, 2023). A tendinite de Aquiles dói atrás do calcanhar ou no tendão logo acima, normalmente de 2 a 6 centímetros acima do osso do calcanhar (Chimenti e colegas, 2024). As duas respondem ao exercício, mas os exercícios não são os mesmos.
+
+- A dor da fascite plantar fica embaixo do calcanhar, do lado de dentro, e costuma ser pior nos primeiros passos depois de dormir ou de ficar sentado (Koc e colegas, 2023).
+- A tendinopatia de Aquiles no meio do tendão dói no próprio tendão, normalmente de 2 a 6 centímetros acima do osso do calcanhar. A dor bem onde o tendão se prende ao osso é o tipo insercional (Chimenti e colegas, 2024).
+- A diretriz de 2023 para dor no calcanhar dá aos alongamentos da fáscia plantar e da panturrilha o grau **A** e ao trabalho de força o grau **B**. A diretriz de 2024 para o Aquiles dá aos exercícios de carga no tendão o grau **A** (Koc e colegas, 2023; Chimenti e colegas, 2024).
+- Em um ensaio com 101 pessoas com dor crônica no calcanhar, o alongamento da fáscia plantar foi melhor do que só o alongamento de panturrilha em 8 semanas (DiGiovanni e colegas, 2003). Para o Aquiles, o grau mais alto da diretriz vai para a carga no tendão, não para o alongamento (Chimenti e colegas, 2024).
+- As duas estão ligadas: em 52 ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, e 5 de 27 passavam do limite usado normalmente para a fascite plantar (Stecco e colegas, 2013).
+
+### Onde dói: embaixo do calcanhar ou atrás?
+
+**O lugar da dor é a diferença mais clara.** A fáscia plantar é a faixa grossa embaixo do pé que vai do osso do calcanhar até os dedos. A fascite plantar dói onde essa faixa se prende, embaixo do calcanhar e para o lado de dentro. Apertar ali com o polegar costuma doer (Koc e colegas, 2023).
+
+O tendão de Aquiles liga os músculos da panturrilha à parte de trás do osso do calcanhar. Existem dois tipos de dor no Aquiles, e o ponto da dor diferencia os dois (Chimenti e colegas, 2024; Jonsson e colegas, 2008):
+
+- **No meio do tendão:** dor e, muitas vezes, um tendão mais grosso e sensível de 2 a 6 centímetros acima do osso do calcanhar. Normalmente dá para pinçar o ponto dolorido entre o indicador e o polegar.
+- **Insercional:** dor bem onde o tendão se prende atrás do osso do calcanhar, muitas vezes pior quando o sapato aperta ali.
+
+Uma dor embaixo do calcanhar que dói quando você aperta os lados do calcanhar, que queima ou formiga, ou que vem com dormência aponta para outras causas, como um nervo, uma fratura por estresse ou o coxim gorduroso do calcanhar (Tu, 2018). A página [dor no calcanhar à noite](https://walkito.site/pt/dor-no-calcanhar-a-noite/) trata dessas causas.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Quando dói: nos primeiros passos ou durante a atividade?
+
+**A fascite plantar é uma dor de primeiros passos.** A diretriz descreve uma dor no calcanhar que aparece mais nos primeiros passos da manhã ou depois de ficar sentado, que muitas vezes melhora conforme você anda e volta depois de muito tempo em pé (Koc e colegas, 2023). A página [dor no calcanhar ao acordar](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/) explica esse padrão.
+
+**A tendinopatia de Aquiles é uma dor de carga.** O tendão também pode ficar rígido de manhã, e é por isso que as duas se confundem. A diferença é o que piora a dor ao longo do dia: atividades de carga como correr e pular, e a dor tende a acompanhar o quanto você fez (Chimenti e colegas, 2024). Subidas e impulsos rápidos sobrecarregam o tendão ainda mais.
+
+Então as duas podem doer de manhã. Pergunte a si mesmo onde, e não só quando: uma faixa rígida e dolorida atrás do tornozelo aponta para o Aquiles, uma pontada embaixo do calcanhar aponta para a fáscia plantar.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Fascite plantar ou tendinite de Aquiles: a tabela lado a lado
+
+A tabela resume o quadro típico. Muita gente não se encaixa direitinho em uma coluna só, e só o exame de um profissional de saúde pode dizer qual das duas você tem.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: de Jonge S, van den Berg C, de Vos RJ, van der Heide HJ, Weir A, Verhaar JA, Bierma-Zeinstra SM, Tol JL. Incidence of midportion Achilles tendinopathy in the general population. British Journal of Sports Medicine. 2011;45(13):1026–1028.
+
+### Quais exercícios servem para a fascite plantar?
+
+**Na fascite plantar, o alongamento vem primeiro.** A diretriz de 2023 dá aos alongamentos da fáscia plantar e da panturrilha o grau **A**, o seu mais alto, e ao trabalho de força o grau **B** (Koc e colegas, 2023).
+
+O alongamento que trabalha o arco faz diferença. Em um ensaio com 101 pessoas, o grupo que fazia o alongamento da fáscia plantar relatou resultados melhores em 8 semanas do que o grupo que fazia só o alongamento de panturrilha (DiGiovanni e colegas, 2003). Para a força, um ensaio de 2015 com 48 pessoas usou a elevação de calcanhar lenta com uma toalha embaixo dos dedos, que aliviou a dor mais rápido do que só o alongamento em três meses, embora em doze meses os dois grupos estivessem mais ou menos iguais (Rathleff e colegas, 2015).
+
+Estas são as doses iniciais do guia [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+
+- **Alongamento da fáscia plantar** (2 vezes de 30 segundos, cada pé): Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão.
+- **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Uma panturrilha rígida puxa o calcanhar o dia todo, então este alongamento importa mesmo que você o sinta mais para cima.
+- **Elevação de calcanhar com toalha** (4 séries de 10, cada perna, com peso extra): Fique em um pé só sobre um degrau, com uma toalha enrolada embaixo dos dedos. Leve três segundos para subir, segure dois lá em cima e leve três segundos para descer. Neste nível o Walkito acrescenta peso, como uma mochila. É a toalha que faz este exercício trabalhar a fáscia plantar, e não só a panturrilha.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Quais exercícios servem para a tendinite de Aquiles?
+
+**No Aquiles, a carga vem primeiro, não o alongamento.** A diretriz de 2024 dá aos exercícios de carga no tendão o grau **A**: elevações de calcanhar, sustentações e descidas lentas que fazem o tendão trabalhar (Chimenti e colegas, 2024). A diretriz dá ao alongamento de panturrilha um grau mais baixo, **C**, e só para quem tem o tornozelo que dobra pouco (Chimenti e colegas, 2024).
+
+Um pouco de dor é permitido. Em um ensaio com 38 pessoas, uma dor de até cerca de 5 de 10 durante a carga não era problema, desde que passasse até a manhã seguinte e não aumentasse de uma semana para outra, e em doze meses esse grupo estava tão bem quanto o grupo que primeiro ficou em repouso (Silbernagel e colegas, 2007).
+
+Se a dor é bem no osso do calcanhar (insercional), faça todas as elevações e descidas do calcanhar no nível do chão, e vá com calma nos alongamentos de panturrilha. Deixar o calcanhar descer abaixo do degrau comprime o tendão contra o osso. Em um estudo piloto com 27 pessoas, as descidas no nível do chão deram bons resultados em 67% (Jonsson e colegas, 2008). Mais detalhes em [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
+
+- **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não desça de novo. Segurar lá em cima dá carga ao tendão sem o quique.
+- **Descida excêntrica do calcanhar (joelho esticado)** (3 séries de 10, cada perna): Fique na beira de um degrau. Suba com os dois pés, passe o peso para a perna dolorida e desça devagar, em três segundos. Use os dois pés para subir de novo. Se a dor for bem no osso do calcanhar, faça no chão plano e não deixe o calcanhar descer abaixo do degrau.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Dá para ter fascite plantar e tendinite de Aquiles ao mesmo tempo?
+
+**Sim, e as duas estão ligadas.** Em um estudo com 52 ressonâncias magnéticas de pessoas com dor no pé ou no tornozelo, as 27 com alterações no Aquiles tinham a fáscia plantar mais grossa, 3,43 mm em média contra 2,09 mm. Cinco das 27 tinham a fáscia plantar acima de 4,5 mm, um limite comum para a fascite plantar. Nenhuma das outras 25 passou de 4 mm (Stecco e colegas, 2013).
+
+O mesmo estudo descobriu que a fáscia plantar se liga à bainha em volta do Aquiles pelo revestimento do osso do calcanhar. Um estudo em cadáveres mostrou que puxar o Aquiles tensiona a fáscia plantar, e mais ainda quando os dedos estão dobrados para cima (Carlson e colegas, 2000). Uma panturrilha rígida ou sobrecarregada pode, portanto, tensionar as duas.
+
+Nenhum estudo contou com que frequência as pessoas têm as duas condições juntas, então não existe um número confiável. Nenhuma diretriz trata de quem tem as duas. Um caminho que respeita as duas diretrizes: trabalho de força para a panturrilha que sirva para o tendão, mais o alongamento da fáscia plantar, que trabalha o arco, não o Aquiles. Faça as descidas do calcanhar no nível do chão se a parte de trás do osso do calcanhar doer.
+
+Source: Stecco C, Corradin M, Macchi V, Morra A, Porzionato A, Biz C, De Caro R. Plantar fascia anatomy and its relationship with Achilles tendon and paratenon. Journal of Anatomy. 2013;223(6):665–676.
+Source: Carlson RE, Fleming LL, Hutton WC. The biomechanical relationship between the tendoachilles, plantar fascia and metatarsophalangeal joint dorsiflexion angle. Foot & Ankle International. 2000;21(1):18–25.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### O que mais causa uma dor no calcanhar parecida com essas duas?
+
+Vários problemas ficam ali perto e podem dar uma sensação parecida (Choo e colegas, 2020; Tu, 2018):
+
+- Um calombo ósseo atrás do calcanhar com uma área dolorida e inchada na linha do sapato: [deformidade de Haglund](https://walkito.site/pt/deformidade-de-haglund/) ou bursite retrocalcânea, muitas vezes junto com dor insercional no Aquiles.
+- Um esporão no calcanhar no raio X: é comum, e normalmente não é a causa da dor. Veja [fascite plantar ou esporão](https://walkito.site/pt/fascite-plantar-ou-esporao/).
+- Uma dor profunda, como de hematoma, no meio da almofada do calcanhar, pior em pisos duros: [síndrome do coxim gorduroso do calcanhar](https://walkito.site/pt/sindrome-coxim-gorduroso-calcanhar/).
+- Dor dos dois lados do calcanhar quando você aperta, depois de um aumento repentino de caminhada ou corrida: possível fratura por estresse, que precisa ser vista por um profissional de saúde.
+- Queimação, formigamento ou dormência: talvez um nervo comprimido.
+
+Source: Choo YJ, Park CH, Chang MC. Rearfoot disorders and conservative treatment: a narrative review. Annals of Palliative Medicine. 2020;9(5):3546–3552.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Quanto tempo cada uma leva para melhorar?
+
+Na fascite plantar, cerca de 90% das pessoas melhoram com tratamento sem cirurgia, mas isso muitas vezes leva meses (Latt e colegas, 2020). A página [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) tem os detalhes.
+
+Na tendinopatia de Aquiles, os principais ensaios de carga duraram cerca de três meses e acompanharam as pessoas até doze meses. A diretriz de 2024 observa que a função pode começar a melhorar em até 2 semanas, mas uma recuperação mais completa leva mais tempo (Chimenti e colegas, 2024). A dor insercional foi mais difícil de ajudar com as descidas clássicas do calcanhar abaixo do degrau: só 32% tiveram bons resultados em um estudo anterior, e é por isso que se usam as descidas no nível do chão (Jonsson e colegas, 2008).
+
+Nenhum estudo comparou diretamente o tempo de recuperação das duas.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Procure primeiro um profissional de saúde se
+
+- você sentiu um estalo repentino atrás do tornozelo, ou como se tivesse levado um chute ali, e agora fica difícil dar impulso com o pé
+- você não consegue subir na ponta do pé do lado dolorido, ou sente um buraco no tendão
+- você está tomando ou tomou recentemente um antibiótico do grupo das fluoroquinolonas, como o ciprofloxacino, e tem uma dor nova no tendão
+- o calcanhar está vermelho, quente e inchado, ou você está com febre
+- o calcanhar dói dos dois lados quando você aperta, ou dói à noite ou em repouso
+- você sente queimação, formigamento ou dormência no calcanhar ou na sola do pé
+- a dor começou depois de uma queda ou lesão, ou você não consegue apoiar o peso no pé
+- a dor continua piorando ao longo de semanas mesmo com exercício regular
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para o calcanhar e o pé. Você diz onde dói, embaixo do calcanhar ou atrás, e ele monta o plano a partir da sua resposta: alongamentos da fáscia plantar e elevação de calcanhar com toalha para a dor no calcanhar, carga na panturrilha desde a elevação sustentada até as descidas lentas do calcanhar para a dor no Aquiles.
+
+#### Como saber se a minha dor no calcanhar é fascite plantar ou tendinite de Aquiles?
+
+Comece pelo lugar da dor. A fascite plantar dói embaixo do calcanhar, para o lado de dentro, e é pior nos primeiros passos depois do repouso. A tendinite de Aquiles dói atrás do calcanhar ou no tendão de 2 a 6 centímetros acima, e piora com o impulso, a corrida e as subidas. Um profissional de saúde pode confirmar qual é.
+
+#### A fascite plantar pode causar dor no Aquiles?
+
+Elas estão ligadas, mas nenhum estudo mostra que uma causa a outra. Em 52 ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, 3,43 mm contra 2,09 mm. Um estudo em cadáveres mostrou que a tensão no Aquiles tensiona a fáscia plantar. Uma panturrilha rígida e sobrecarregada pode sobrecarregar as duas.
+
+#### A tendinite de Aquiles é pior de manhã, como a fascite plantar?
+
+Pode ser. As duas podem dar rigidez e dor nos primeiros passos do dia, e é por isso que se confundem. A fascite plantar é uma pontada embaixo do calcanhar que melhora conforme você anda. A dor do Aquiles fica atrás do tornozelo e tende a aumentar com corrida, saltos, subidas e escadas.
+
+#### Devo alongar a panturrilha na tendinite de Aquiles?
+
+É opcional. A diretriz de 2024 para o Aquiles coloca os exercícios de carga no tendão em primeiro lugar, com grau A, e dá ao alongamento de panturrilha um C, para quem tem o tornozelo que dobra pouco. Se a sua dor é bem no osso do calcanhar, alongamentos profundos de panturrilha e descidas do calcanhar abaixo do degrau comprimem o tendão contra o osso, então faça tudo de leve e no nível do chão.
+
+#### Os exercícios para fascite plantar e tendinite de Aquiles são os mesmos?
+
+Eles se sobrepõem, mas não são os mesmos. A fascite plantar começa com os alongamentos da fáscia plantar e da panturrilha, com grau A, mais a elevação de calcanhar, com grau B. A tendinite de Aquiles começa com carga: elevação de calcanhar sustentada, elevação de calcanhar e descidas lentas do calcanhar, com grau A. O trabalho de força para a panturrilha serve para as duas.
+
+#### Dá para ter fascite plantar e tendinite de Aquiles juntas?
+
+Sim. Em um estudo com ressonância magnética de 52 pessoas com dor no pé ou no tornozelo, 5 das 27 com alterações no Aquiles também tinham a fáscia plantar grossa o bastante para atingir um limite comum para a fascite plantar. Nenhum estudo contou com que frequência as duas aparecem juntas na população em geral.
+
+#### Dor atrás do calcanhar é fascite plantar?
+
+Normalmente não. A fascite plantar dói embaixo do calcanhar. A dor atrás do calcanhar é mais frequentemente tendinopatia de Aquiles, bursite retrocalcânea ou deformidade de Haglund, um calombo ósseo onde o tendão se prende. Um estalo repentino atrás do calcanhar precisa de um profissional de saúde no mesmo dia.
+
+#### Esporão no calcanhar quer dizer fascite plantar ou tendinite de Aquiles?
+
+Sozinho, nenhuma das duas. Um esporão embaixo do calcanhar fica perto da fáscia plantar, e um esporão atrás fica onde o Aquiles se prende, mas esporões são comuns em pessoas sem dor. É o exame, e não só o raio X, que define o que está causando a dor.
+
+## Fascite plantar ou fratura por estresse do calcâneo: como diferenciar
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/fascite-plantar-ou-fratura-por-estresse/ · published 2026-10-18 · updated 2026-10-18
+
+A [fascite plantar](https://walkito.site/pt/fascite-plantar/) dói mais nos primeiros passos depois do repouso e costuma melhorar depois de alguns minutos de caminhada. Uma fratura por estresse do calcâneo faz o contrário: a dor aumenta quanto mais você anda ou corre, muitas vezes depois de um salto na atividade, e apertar os lados do calcanhar costuma doer (Tu, 2018). Um raio-X feito cedo pode parecer normal: em 30 recrutas militares com uma lesão por estresse no calcâneo vista na ressonância magnética, o raio-X simples mostrou a lesão em apenas 15% (Sormaala e colegas, 2006).
+
+- A dor da fascite plantar é «mais perceptível ao apoiar o peso logo ao acordar ou depois de um período de repouso» e melhora com a caminhada (Koc e colegas, 2023). A dor da fratura por estresse começa com a atividade e, mais tarde, pode aparecer também em repouso (Tu, 2018).
+- Dor ao apertar os lados do osso do calcanhar sugere fratura por estresse (Tu, 2018), mas não encontramos nenhum estudo que tenha medido a precisão do teste de compressão para o calcanhar, e ele também dói na doença de Sever em crianças.
+- O raio-X simples muitas vezes não mostra fraturas por estresse no início: uma revisão estimou a sensibilidade dele na primeira consulta em cerca de 10%, subindo para 30 a 70% depois de três semanas (Patel e colegas, 2011). A ressonância magnética foi o exame mais preciso em uma revisão sistemática de 2016 (Wright e colegas, 2016).
+- Um aumento repentino do treino é o gatilho clássico. Quem corre em média mais de 25 milhas (cerca de 40 km) por semana, as mulheres e as pessoas com baixa disponibilidade de energia ou ossos fracos têm mais risco (Patel e colegas, 2011; Mountjoy e colegas, 2023).
+- Alongamento e exercícios de força recebem graus **A** e **B** para a fascite plantar (Koc e colegas, 2023). Eles não são um plano para uma suspeita de fratura, que primeiro precisa de menos carga e de um profissional de saúde.
+
+### Como diferenciar a fascite plantar de uma fratura por estresse do calcâneo?
+
+**A pista mais clara é o que a caminhada faz com a dor.** A fascite plantar é pior nos primeiros passos depois de dormir ou de ficar sentado, melhora depois de alguns minutos e pode voltar depois de um dia longo em pé (Tu, 2018). A diretriz de 2023 para dor no calcanhar descreve essa dor como «mais perceptível ao apoiar o peso logo ao acordar ou depois de um período de repouso» (Koc e colegas, 2023).
+
+Uma fratura por estresse do calcâneo é uma pequena trinca no osso do calcanhar causada por carga repetida. A dor costuma começar depois que você aumenta a caminhada, a corrida ou o tempo em pé, ou passa para uma superfície mais dura. No começo ela dói só durante a atividade e vai aumentando conforme você continua. Mais tarde pode doer em repouso (Tu, 2018). Em uma revisão sobre fraturas por estresse em geral, dor ao andar foi relatada por 81% dos pacientes, um ponto dolorido no osso por 65,9 a 100% e inchaço por 18 a 44% (Patel e colegas, 2011).
+
+A tabela resume os padrões mais comuns. Nenhuma linha decide sozinha, e algumas pessoas não se encaixam bem em nenhuma das colunas.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### O que é o teste de compressão e quanto ele pode dizer?
+
+**O teste de compressão é apertar ao mesmo tempo o lado de dentro e o lado de fora do osso do calcanhar, entre as palmas das mãos ou entre o polegar e os dedos.** O profissional faz o teste com o pé relaxado. Dor ao apertar «sugere o diagnóstico» de fratura por estresse do calcâneo, segundo uma revisão de 2018 na American Family Physician (Tu, 2018). Já a fascite plantar dói quando você aperta embaixo da parte de dentro e da frente do calcanhar, onde a fáscia se prende.
+
+Os limites dele são reais:
+
+- **Ninguém mediu a precisão dele para o calcanhar.** Não encontramos nenhum estudo que diga com que frequência o teste de compressão dá positivo em pessoas com fratura por estresse do calcâneo confirmada, ou com que frequência dá positivo sem fratura. A mesma revisão sobre fraturas por estresse observa que o teste do salto em um pé só, outro teste comum no consultório, também não foi validado (Patel e colegas, 2011).
+- **Um teste negativo não descarta uma fratura.** Algumas lesões por estresse do calcâneo ficam mais para a frente ou no meio do osso: em um estudo com ressonância magnética, 15 de 34 não estavam na parte de trás (Sormaala e colegas, 2006).
+- **Outras coisas também doem ao apertar.** Em crianças e pré-adolescentes, dor ao apertar é um sinal comum da [doença de Sever](https://walkito.site/pt/doenca-de-sever/), uma irritação da placa de crescimento (Tu, 2018). Outros problemas do osso do calcanhar também podem doer, então um profissional precisa avaliar.
+
+Se você apertar os lados do próprio calcanhar e doer, encare isso como um motivo para ser avaliado, não como um diagnóstico. Não pule em um pé só para testar.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### Quem tem mais risco de fratura por estresse do calcâneo?
+
+Uma fratura por estresse acontece quando o osso recebe mais carga repetida do que consegue reparar. O risco sobe quando a carga aumenta, quando o osso aguenta menos, ou as duas coisas (Warden e colegas, 2014).
+
+- **Um aumento repentino do treino.** Um salto grande em caminhada, corrida, marcha ou tempo em pé, ou treinos pesados seguidos com pouco descanso, é a história clássica (Patel e colegas, 2011). A troca para uma superfície mais dura para andar é um gatilho comum no calcanhar (Tu, 2018).
+- **Muito volume de corrida.** Corredores amadores que correm em média mais de 25 milhas (cerca de 40 km) por semana têm mais risco, assim como atletas de atletismo, basquete, futebol e dança (Patel e colegas, 2011).
+- **Baixa disponibilidade de energia.** Comer pouco para o tanto que você treina pode afetar os hormônios e os ossos. O Comitê Olímpico Internacional inclui a saúde óssea prejudicada, com as lesões ósseas por estresse, entre os efeitos desse quadro, chamado de deficiência relativa de energia no esporte (REDs), em mulheres e em homens (Mountjoy e colegas, 2023).
+- **Saúde dos ossos.** Mulheres com a tríade da mulher atleta (transtorno alimentar, falta de menstruação e baixa densidade óssea) têm mais risco, e um estudo encontrou níveis mais baixos de vitamina D em recrutas com fraturas por estresse (Patel e colegas, 2011). Um osso enfraquecido pela osteoporose pode trincar com cargas normais, o que se chama fratura por insuficiência.
+- **Ser mulher.** As mulheres têm mais risco do que os homens, principalmente no treinamento militar, embora os dados em atletas mulheres sejam divergentes (Patel e colegas, 2011).
+
+A fascite plantar tem outro perfil de risco. Em um estudo com 50 pessoas com fascite e 100 sem, quem tinha 0 grau ou menos de flexão do tornozelo para cima (dorsiflexão) teve uma chance 23,3 vezes maior do que quem tinha mais de 10 graus, e ficar em pé a maior parte do dia de trabalho aumentou a chance em 3,6 vezes (Riddle e colegas, 2003).
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). British Journal of Sports Medicine. 2023;57(17):1073–1097.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Por que o raio-X pode parecer normal com uma fratura por estresse?
+
+**Uma fratura por estresse no início muitas vezes é pequena demais para aparecer no raio-X.** O osso reage primeiro com um inchaço dentro dele, que o raio-X não enxerga. Os sinais de reparo aparecem depois. Uma revisão estimou a sensibilidade do raio-X na primeira consulta em cerca de 10%, subindo para 30 a 70% depois de três semanas (Patel e colegas, 2011).
+
+No calcanhar especificamente, um estudo finlandês avaliou recrutas militares com dor no calcanhar ou no tornozelo ligada ao exercício que fizeram ressonância magnética. De 30 recrutas com lesões por estresse no calcâneo, só 15% tinham uma lesão visível no raio-X simples. Em 22 dos 34 calcanhares lesionados, ossos vizinhos do pé também estavam afetados (Sormaala e colegas, 2006).
+
+Uma revisão sistemática de 2016 sobre fraturas por estresse nos membros inferiores encontrou uma sensibilidade do raio-X de 12% a 56%, contra 68% a 99% da ressonância magnética. Os autores apontaram a ressonância como o exame mais sensível e específico e alertaram que o raio-X tende a dar falsos negativos no início (Wright e colegas, 2016).
+
+Por isso, quando suspeita de fratura, o profissional pode repetir o raio-X depois de duas a três semanas ou ir direto para a ressonância magnética se uma resposta rápida for importante (Patel e colegas, 2011). Para a fascite plantar, a diretriz de 2023 diz que exames de imagem «geralmente não são indicados para pacientes que preenchem os critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem» (Koc e colegas, 2023). A [página sobre esporão](https://walkito.site/pt/fascite-plantar-ou-esporao/) explica por que um esporão no raio-X também não resolve a questão.
+
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Wright AA, Hegedus EJ, Lenchik L, Kuhn KJ, Santiago L, Smoliga JM. Diagnostic accuracy of various imaging modalities for suspected lower extremity stress fractures: a systematic review with evidence-based recommendations for clinical practice. American Journal of Sports Medicine. 2016;44(1):255–263.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### O que fazer enquanto você espera a resposta?
+
+**Se a sua dor se encaixa na coluna da fratura por estresse, tire a carga do calcanhar e marque uma consulta.** Não espere para ver se mais algumas corridas resolvem. Começar cedo faz diferença: uma revisão observa que a demora já foi associada a uma volta mais longa à atividade (Patel e colegas, 2011).
+
+- **Reduza a carga ao que não dói.** Isso normalmente quer dizer parar por enquanto com corrida, saltos e caminhadas longas. Algumas pessoas precisam de muletas ou de uma bota imobilizadora por um tempo (Patel e colegas, 2011; Tu, 2018).
+- **Mantenha o condicionamento sem carga no calcanhar,** por exemplo com natação ou bicicleta, se não doerem (Patel e colegas, 2011).
+- **Pergunte sobre analgésicos.** A mesma revisão diz que os anti-inflamatórios devem ser usados com cautela em uma fratura por estresse, porque alguns estudos em animais sugerem que eles podem atrasar o reparo do osso (Patel e colegas, 2011).
+- **Não comece ainda um plano de alongamento ou de força para o calcanhar.** Espere até um profissional descartar a fratura ou liberar você.
+
+As fraturas por estresse do calcâneo costumam ter boa recuperação em pessoas saudáveis em outros aspectos (Tu, 2018). Nas fraturas por estresse em geral, a recuperação leva de quatro semanas a três meses ou mais a partir do momento em que a atividade é reduzida, e depois a atividade volta aos poucos quando você já está sem dor (Patel e colegas, 2011).
+
+Se a sua dor se encaixa na coluna da fascite plantar, normalmente você não precisa de exame de imagem para começar os exercícios abaixo (Koc e colegas, 2023). Se não tiver certeza de qual coluna é a sua, procure primeiro um profissional de saúde.
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Por que os exercícios são para a fascite plantar e não para uma fratura?
+
+**Alongamento e carga ajudam a fascite plantar porque o tecido se adapta à carga. Um osso trincado primeiro precisa que a carga seja retirada.** As lesões ósseas por estresse ficam em uma escala: uma reação de estresse pode evoluir para uma fratura por estresse e, se a carga continuar, para uma fratura completa (Warden e colegas, 2014).
+
+As evidências a favor do exercício são específicas da fascite plantar. A diretriz de 2023 para dor no calcanhar dá grau **A** ao alongamento da fáscia plantar e da panturrilha e grau **B** ao trabalho de força para essa condição (Koc e colegas, 2023). O programa de elevação de calcanhar do ensaio mais conhecido foi testado em 48 pessoas com fascite plantar, não em pessoas com fratura (Rathleff e colegas, 2015).
+
+Nas fraturas por estresse, as evidências apontam para o outro lado. Dois ensaios randomizados por conglomerados mostraram que alongar as pernas no aquecimento não preveniu fraturas por estresse (Patel e colegas, 2011). O que importa é reduzir a carga e depois voltar aos poucos com a orientação de um profissional. Depois que a fratura se recupera, fortalecer os músculos em volta do osso passa a fazer parte da prevenção da próxima (Warden e colegas, 2014).
+
+É por isso que os exercícios desta página são só para a fascite plantar. Se disseram que você tem uma fratura por estresse, siga o plano de retorno do seu profissional de saúde.
+
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Só para fascite plantar: quais exercícios servem depois de descartar uma fratura?
+
+**Faça estes exercícios só se a sua dor se encaixa na fascite plantar, ou se um profissional já descartou uma fratura.** Se apertar o calcanhar dói, a dor aumenta a cada caminhada ou o calcanhar está inchado, pule os exercícios e seja avaliado primeiro.
+
+Estes são os primeiros passos do nosso guia de [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/): primeiro os alongamentos, depois uma elevação de calcanhar sentada que quase não põe carga no calcanhar. A progressão completa, até a elevação de calcanhar com toalha do ensaio, está nesse guia.
+
+- **Alongamento da fáscia plantar (só fascite plantar)** (2 vezes de 30 segundos, cada pé): Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Faça o primeiro na beira da cama, antes de o pé tocar o chão.
+- **Alongamento de panturrilha (só fascite plantar)** (2 vezes de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Uma panturrilha encurtada puxa o calcanhar o dia todo, então este alongamento importa mesmo que você o sinta mais acima.
+- **Alongamento do sóleo (só fascite plantar)** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
+- **Elevação de calcanhar sentada (só fascite plantar)** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão e suba empurrando pela parte da frente dos pés. As mãos sobre os joelhos aumentam a resistência. Com o joelho dobrado, o exercício trabalha principalmente o sóleo, o músculo mais profundo da panturrilha, quase sem carga no calcanhar.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Procure primeiro um profissional de saúde se
+
+- a dor no calcanhar aumenta quanto mais você anda ou corre, em vez de melhorar
+- apertar os lados do osso do calcanhar dói
+- o calcanhar está inchado ou roxo, ou um ponto do osso está muito dolorido
+- a dor começou depois de um salto repentino no treino ou de uma troca para uma superfície mais dura
+- dói em repouso ou acorda você à noite
+- você já teve uma fratura por estresse, ficou sem menstruar, tem um transtorno alimentar ou baixa densidade óssea
+- você não consegue pôr todo o peso no pé, ou a dor veio depois de uma queda ou de uma torção
+- você sente queimação, formigamento ou dormência no calcanhar ou na sola do pé
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para dor no calcanhar e no pé. O plano dele foi feito para dor no calcanhar do tipo fascite plantar, não para fratura por estresse, então, se a sua dor se encaixa no padrão da fratura, procure um profissional de saúde antes de começar.
+
+#### Como saber se a dor no calcanhar é fratura por estresse ou fascite plantar?
+
+Observe o que a caminhada faz com a dor. A fascite plantar dói mais nos primeiros passos depois do repouso e melhora depois de alguns minutos. Uma fratura por estresse do calcâneo costuma vir depois de um salto na atividade, aumenta quanto mais tempo você anda ou corre e muitas vezes dói quando os lados do calcanhar são apertados. Se a sua dor se encaixa no padrão da fratura, procure um profissional de saúde.
+
+#### O raio-X pode não mostrar uma fratura por estresse do calcâneo?
+
+Sim, com frequência. Em 30 recrutas militares com uma lesão por estresse no calcâneo vista na ressonância magnética, o raio-X simples mostrou a lesão em apenas 15%. Uma revisão estimou a sensibilidade do raio-X na primeira consulta em cerca de 10%, subindo para 30 a 70% depois de três semanas. Um raio-X normal feito cedo não descarta uma fratura por estresse.
+
+#### Preciso de ressonância magnética para dor no calcanhar?
+
+Não para uma fascite plantar típica: a diretriz de 2023 diz que exames de imagem geralmente não são necessários quando o exame clínico é compatível. Se o profissional suspeitar de fratura por estresse, a ressonância magnética é o exame mais preciso. Uma revisão sistemática de 2016 encontrou sensibilidade de 68% a 99% para a ressonância, contra 12% a 56% para o raio-X simples.
+
+#### O que significa um teste de compressão positivo?
+
+Dor quando o lado de dentro e o lado de fora do osso do calcanhar são apertados ao mesmo tempo sugere fratura por estresse do calcâneo ou, em crianças, doença de Sever. É um motivo para procurar um profissional, não um diagnóstico. Não encontramos nenhum estudo que tenha medido a precisão do teste de compressão para fraturas por estresse do calcâneo, então um aperto sem dor não descarta uma fratura.
+
+#### Dá para andar com uma fratura por estresse no calcanhar?
+
+Talvez você consiga, mas normalmente não deveria continuar pondo carga. O tratamento é reduzir a atividade ao que não dói e, com dor forte, pôr pouco ou nenhum peso no pé por até seis semanas, às vezes com muletas ou uma bota. Um profissional de saúde deve orientar quanto você pode andar com segurança.
+
+#### Quanto tempo leva para uma fratura por estresse do calcâneo melhorar?
+
+Nas fraturas por estresse em geral, a recuperação leva de quatro semanas a três meses ou mais a partir do momento em que a atividade é reduzida. As fraturas por estresse do calcâneo costumam ter boa recuperação em pessoas saudáveis em outros aspectos. Depois a atividade volta aos poucos, quando você já está sem dor. Para os prazos da fascite plantar, veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/).
+
+#### Devo alongar se posso ter uma fratura por estresse?
+
+Não, não até um profissional descartar a fratura. Alongamento e trabalho de força recebem graus A e B para a fascite plantar, mas uma suspeita de fratura precisa primeiro de menos carga. Dois ensaios randomizados por conglomerados mostraram que alongar as pernas no aquecimento não preveniu fraturas por estresse, então o alongamento não é a ferramenta para o osso.
+
+#### A fascite plantar pode virar uma fratura por estresse?
+
+Nenhum estudo mostra a fascite plantar virando uma fratura. São lesões diferentes, uma na fáscia e outra no osso. Elas podem ter o mesmo gatilho, como um aumento repentino de caminhada ou corrida, e uma reação de estresse no osso pode evoluir para fratura se a carga continuar. Uma dor que muda de padrão merece avaliação.
+
+#### Quem tem fratura por estresse do calcâneo?
+
+Principalmente quem de repente passa a treinar mais: corredores, recrutas militares e atletas. Quem corre em média mais de 25 milhas (cerca de 40 km) por semana tem mais risco, e as mulheres mais do que os homens. Baixa disponibilidade de energia, falta de menstruação e baixa densidade óssea aumentam o risco, e um estudo encontrou níveis mais baixos de vitamina D em recrutas com fraturas por estresse.
+
+## Teste de pé chato em casa: 4 verificações simples, e o que elas mostram e não mostram
+
+Language: Portuguese, Brazil (Português) · https://walkito.site/pt/teste-pe-chato/ · published 2026-10-18 · updated 2026-10-18
+
+Dá para verificar em casa se você tem pé chato em uns cinco minutos: olhe a pegada do pé molhado, compare o arco sentado e em pé, fique na ponta dos pés ou levante o dedão para ver se o arco volta, e tente uma elevação de calcanhar em um pé só. A pegada é a menos precisa das quatro: em 95 idosos comparados com radiografias, a pontuação da pegada correspondeu só moderadamente à altura real do arco (Menz e Munteanu, 2005). As verificações que mais importam são se o arco volta e se um lado se comporta diferente do outro.
+
+- A pegada molhada é uma indicação aproximada. Em 95 pessoas de 62 a 94 anos, o índice do arco da pegada correspondeu só moderadamente à altura do arco na radiografia, enquanto uma medida com régua do osso do arco correspondeu bem (Menz e Munteanu, 2005).
+- A gordura embaixo da sola pode preencher a pegada: em 24 adultos com sobrepeso ou obesidade, o índice do arco da pegada aumentou junto com o percentual de gordura corporal (Wearing e colegas, 2004).
+- Se o arco volta quando você se senta, fica na ponta dos pés ou levanta o dedão, o pé chato é flexível, o tipo comum que os estudos com exercícios avaliaram (Brijwasi e Borkar, 2023).
+- Dificuldade para subir na ponta de um pé só, dor atrás do tornozelo por dentro e um arco que vai ficando mais baixo de um lado são sinais de disfunção do tendão tibial posterior. Em 582 mulheres com mais de 40 anos, 3,3% tinham sintomas em fase inicial (estágio I ou II) e nenhuma tinha diagnóstico (Kohls-Gatzoulis e colegas, 2009).
+- Até as medidas dos profissionais variam: quando dois avaliadores sem experiência mediram a queda do navicular, os resultados deles concordaram pouco (Picciano e colegas, 1993). Em um estudo posterior com 86 adultos jovens, a mesma medida foi altamente repetível (Zuil-Escobar e colegas, 2018).
+
+### Como saber em casa se você tem pé chato?
+
+**Faça quatro verificações, nesta ordem, descalço em um piso firme.** As duas primeiras mostram o quanto o seu arco é baixo. As duas últimas mostram se ele é flexível e se o tendão que o sustenta está fazendo o seu trabalho. Você vai precisar de uma toalha, um pouco de água, uma folha de papel pardo ou de cartolina e uma parede para se apoiar.
+
+Faça sempre os dois pés. Uma diferença entre o pé esquerdo e o direito diz mais do que cada pé sozinho, porque os pés da maioria das pessoas são mais ou menos parecidos, e um pé chato de um lado só é um dos sinais de alerta no fim desta página.
+
+### Como fazer o teste da pegada molhada, e qual a precisão dele?
+
+**Como fazer:** molhe a sola de um pé, pise com todo o peso em um papel pardo ou em uma cartolina seca, fique em pé normalmente por um segundo e tire o pé. Faça o outro pé. Olhe a parte do meio da pegada, entre o calcanhar e a parte da frente do pé:
+
+- **Uma curva bem marcada no lado de dentro**, com a faixa do meio com mais ou menos metade da largura da frente do pé, ou menos: um arco típico.
+- **Uma faixa do meio larga, com pouca ou nenhuma curva**, de modo que a pegada parece um chinelo: um arco baixo.
+- **Só o calcanhar e a parte da frente do pé aparecem**, ligados por uma faixa fina ou sem ligação: um arco alto. Veja [pé cavo](https://walkito.site/pt/pe-cavo-exercicios/).
+
+**O que ela pode mostrar:** mais ou menos quanto da sua sola toca o chão. Os pesquisadores transformam a mesma pegada em um número, o índice do arco, comparando o terço do meio da pegada com a pegada inteira (Cavanagh e Rodgers, 1987).
+
+**O que ela não pode mostrar:** a altura real do seu arco. Em 95 pessoas de 62 a 94 anos comparadas com radiografias, o índice da pegada correspondeu só moderadamente à altura do osso do arco (Menz e Munteanu, 2005). Um estudo de 1992 com 115 homens concluiu que a pegada não conseguia prever a altura do arco (Hawes e colegas, 1992), enquanto um estudo de 2009 com 91 adultos jovens encontrou uma correspondência de fraca a moderada com as radiografias (Murley e colegas, 2009). Em 198 pacientes de clínica, três pontuações da pegada identificaram um pé chato na radiografia com uma precisão que os autores chamaram de razoável (Paecharoen e colegas, 2023).
+
+Um dos motivos são os tecidos moles. Em um pequeno estudo piloto com 24 adultos com sobrepeso ou obesidade, o índice da pegada ao caminhar aumentou junto com o percentual de gordura corporal, então uma pegada mais cheia pode significar mais acolchoamento embaixo do arco, e não um arco mais baixo (Wearing e colegas, 2004). A pegada também não diz nada sobre a dor, que é o que decide se um pé chato precisa de alguma atenção.
+
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Cavanagh PR, Rodgers MM. The arch index: a useful measure from footprints. Journal of Biomechanics. 1987;20(5):547–551.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
+Source: Paecharoen S, Arunakul M, Tantivangphaisal N. Diagnostic Accuracy of Harris Imprint Index, Chippaux-Smirak Index, Staheli Index Compared With Talar-First Metatarsal Angle for Screening Arch of Foot. Annals of Rehabilitation Medicine. 2023;47(3):222–227.
+Source: Wearing SC, Hills AP, Byrne NM, Hennig EM, McDonald M. The arch index: a measure of flat or fat feet? Foot & Ankle International. 2004;25(8):575–581.
+
+### O seu arco parece diferente sentado e em pé?
+
+**Sente-se em uma cadeira com os pés apoiados e relaxados, e olhe o lado de dentro de cada pé.** Repare no espaço embaixo do arco. Depois fique em pé com o peso nos dois pés e olhe de novo, ou peça para alguém tirar uma foto de lado, na altura do chão.
+
+Abaixar um pouco é normal: todo arco desce um pouco com o seu peso. Em dados reunidos de 619 adultos saudáveis, o pé médio em repouso ficava levemente virado para dentro, uma posição que os autores consideram normal (Redmond e colegas, 2008). O que você procura é uma mudança grande, um arco que aparece bem quando você está sentado e some quando você fica em pé.
+
+**Depois olhe por trás.** Fique em pé normalmente e peça para alguém olhar os seus calcanhares na altura do chão. Um calcanhar que se inclina para fora, com o osso de dentro do tornozelo saltando para dentro, combina com um arco baixo. Se um calcanhar se inclina mais do que o outro, anote.
+
+Essa verificação mostra o quanto o arco abaixa, que é o que um profissional de saúde mede com mais precisão como queda do navicular (explicada mais abaixo). Ela não mostra o porquê: um pé frouxo de nascença e um tendão que está enfraquecendo podem parecer iguais com a pessoa parada. As duas verificações seguintes começam a diferenciar um do outro.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+
+### Como fazer o teste do pé chato flexível?
+
+Um pé chato flexível achata com o seu peso, mas recupera o arco quando a carga muda. Duas verificações rápidas mostram isso:
+
+- **Verificação na ponta dos pés.** Fique em pé segurando na parede e suba na ponta dos dois pés. Observe o lado de dentro de cada pé, ou os calcanhares por trás. Em um pé flexível, um arco aparece e os calcanhares se inclinam levemente para dentro enquanto você sobe.
+- **Verificação do dedão (teste de Jack).** Fique em pé normalmente. Levante o dedão o máximo que der, ou peça para alguém levantar para você, com o calcanhar no chão. Em um pé flexível, o arco sobe junto com o dedão. O teste leva o nome de Jack, que o descreveu em 1953 (Jack, 1953).
+
+**Se o arco volta, o pé chato é flexível.** Esse é o tipo comum, e o que foi estudado nos ensaios com exercícios: em 52 pessoas com pé chato flexível, seis semanas de pé curto, exercícios de tornozelo e quadril e alongamentos melhoraram duas medidas do formato do arco mais do que em um grupo de controle (Brijwasi e Borkar, 2023).
+
+**Se o arco continua achatado e o pé parece duro**, o pé chato pode ser rígido. Uma das causas é a coalizão tarsal, uma ponte de osso, cartilagem ou tecido fibroso entre dois ossos do pé, encontrada com frequência em adultos jovens com pé chato rígido e dolorido (Mehdi e colegas, 2024). Um pé chato rígido precisa que um profissional de saúde encontre a causa antes de você começar qualquer programa de exercícios.
+
+Sendo honesto sobre o que essas verificações são: não encontramos nenhum estudo que tenha medido o quanto a verificação na ponta dos pés ou o teste de Jack são confiáveis em adultos quando feitos em casa. Elas são simples e o resultado costuma ser claro, mas encare um resultado rígido como um motivo para fazer uma avaliação, não como um diagnóstico.
+
+Source: Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. Journal of Bone and Joint Surgery. British Volume. 1953;35-B(1):75–82.
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### O que a elevação de calcanhar em um pé mostra sobre o pé chato?
+
+O tibial posterior é o músculo cujo tendão passa atrás do osso de dentro do tornozelo e sustenta o arco. Quando o tendão enfraquece, o arco daquele lado pode ir baixando aos poucos. Isso é a disfunção do tendão tibial posterior, um motivo comum para o arco de um adulto achatar com o tempo. O quadro típico é dor no lado de dentro do tornozelo, um pé que vai achatando e o calcanhar virando para fora (Deu e colegas, 2022).
+
+**Como fazer:** fique em um pé só ao lado de uma parede, com as pontas dos dedos na parede só para o equilíbrio. Suba o mais alto que conseguir na parte da frente do pé e desça. Faça algumas vezes e troque de pé. Observe três coisas:
+
+- você consegue subir em um pé com a mesma facilidade que no outro
+- no alto da subida o calcanhar vira para dentro, do mesmo jeito dos dois lados
+- não há dor atrás ou embaixo do osso de dentro do tornozelo
+
+Dificuldade para subir de um lado, um calcanhar que não vira para dentro ou dor no tornozelo por dentro são os sinais que apontam para o tendão. Um profissional de saúde usa o mesmo movimento como triagem, e o quadro completo está em [disfunção do tendão tibial posterior](https://walkito.site/pt/disfuncao-tendao-tibial-posterior/).
+
+Essa verificação é sobre o formato e a sensação de um lado comparado ao outro em uma subida, e não sobre quantas você consegue fazer. Se você quer um número para a resistência da panturrilha, com o ritmo usado nas pesquisas e as contagens que adultos saudáveis alcançam, use o [teste de elevação de calcanhar](https://walkito.site/pt/teste-elevacao-calcanhar/).
+
+Source: Deu RS, Coslick AM, Dreher G. Tendinopathies of the Foot and Ankle. American Family Physician. 2022;105(5):479–486.
+Source: Kohls-Gatzoulis J, Woods B, Angel JC, Singh D. The prevalence of symptomatic posterior tibialis tendon dysfunction in women over the age of 40 in England. Foot and Ankle Surgery. 2009;15(2):75–81.
+Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
+
+### O que um profissional de saúde mede no pé chato?
+
+Um profissional de saúde olha as mesmas coisas que você olhou, mas pontua tudo de um jeito padronizado. As duas medidas mais comuns:
+
+- **Índice de postura do pé (FPI, Foot Posture Index).** Seis verificações do pé em pé, cada uma pontuada de -2 a +2, incluindo o ângulo do calcanhar, a saliência do tornozelo por dentro e o formato do arco. O total vai de -12 (arco alto) a +12 (chato). Em dados reunidos de 619 adultos saudáveis, a média foi +4, e os autores consideram pontuações abaixo de -3 ou acima de +10 claramente fora da faixa normal (Redmond e colegas, 2008).
+- **Queda do navicular.** O profissional marca o osso do lado de dentro do arco, o navicular, mede a altura dele sentado, com o pé em uma posição padronizada, depois em pé, e registra o quanto ele desce. Nos estudos, adultos saudáveis têm em média de 3,6 a 8,1 milímetros, e nenhum ponto de corte para “demais” foi confirmado (Nielsen e colegas, 2009).
+
+**Essas medidas são melhores do que a pegada, mas não são perfeitas.** Em idosos, uma medida com régua da altura do osso do arco correspondeu bem às radiografias (r = 0,79), enquanto o FPI correspondeu menos (r de 0,36 a 0,59), porque ele pontua o pé inteiro, e não só o arco (Menz e Munteanu, 2005). O total do FPI mostrou confiabilidade moderada no geral, a altura do navicular foi a medida isolada mais confiável em adultos, e nenhuma das medidas testadas foi confiável o suficiente em crianças pequenas (Evans e colegas, 2003).
+
+A prática faz diferença. Quando dois avaliadores sem experiência mediram a queda do navicular em 15 pessoas, os resultados concordaram pouco (Picciano e colegas, 1993). Em 86 adultos jovens de um estudo posterior, a queda do navicular e as pontuações da pegada foram altamente repetíveis (Zuil-Escobar e colegas, 2018). Se o seu arco está sendo acompanhado ao longo do tempo, ajuda que a mesma pessoa faça a medida.
+
+Se o profissional suspeitar de um pé rígido, de uma coalizão ou de lesão no tendão, ele pode pedir uma radiografia com apoio, uma tomografia ou uma ressonância magnética, que nenhuma verificação em casa substitui (Mehdi e colegas, 2024).
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Evans AM, Copper AW, Scharfbillig RW, Scutter SD, Williams MT. Reliability of the foot posture index and traditional measures of foot position. Journal of the American Podiatric Medical Association. 2003;93(3):203–213.
+Source: Picciano AM, Rowlands MS, Worrell T. Reliability of open and closed kinetic chain subtalar joint neutral positions and navicular drop test. Journal of Orthopaedic & Sports Physical Therapy. 1993;18(4):553–558.
+Source: Zuil-Escobar JC, Martínez-Cepa CB, Martín-Urrialde JA, Gómez-Conesa A. Medial Longitudinal Arch: Accuracy, Reliability, and Correlation Between Navicular Drop Test and Footprint Parameters. Journal of Manipulative and Physiological Therapeutics. 2018;41(8):672–679.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### O que fazer com o seu resultado?
+
+Junte as quatro verificações:
+
+- **Arco baixo que volta na ponta dos pés, sem dor, os dois pés parecidos:** um pé chato flexível, uma variação normal. Não é preciso fazer nada. Exercício é opcional.
+- **Arco baixo que volta, com o arco cansado ou dolorido depois de dias longos:** exercícios para pé e tornozelo são um começo razoável. Veja [exercícios para pé chato](https://walkito.site/pt/exercicios-pe-chato/) para o programa completo.
+- **Arco que continua achatado, um pé mais chato que o outro ou dor no tornozelo por dentro:** procure um profissional de saúde antes de começar os exercícios. A lista abaixo traz os detalhes.
+
+**O que o exercício pode e não pode fazer.** Em 52 pessoas com pé chato flexível, seis semanas de pé curto, trabalho de tornozelo e quadril e alongamentos melhoraram o formato do arco mais do que só movimentos do tornozelo para cima e para baixo (Brijwasi e Borkar, 2023). Uma revisão de 2024 sobre o treino de pé curto não encontrou mudança clara na postura geral do pé, e encontrou mudança em uma medida do arco só em programas com mais de seis semanas (Cheng e colegas, 2024). Os dois mediram formato, não dor.
+
+Os cartões abaixo são um ponto de partida tirado de [exercícios para pé chato](https://walkito.site/pt/exercicios-pe-chato/), com as mesmas doses.
+
+- **Pé curto, sentado** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com o pé apoiado no chão. Puxe a parte da frente do pé em direção ao calcanhar para o arco subir, e segure. Mantenha a parte de fora do pé no chão e suba o arco para formar um pequeno túnel embaixo do pé. Não dobre os dedos. Dobrar os dedos é o erro mais comum neste exercício.
+- **Elevação do dedão** (3 séries de 8, segure 5 segundos, cada pé): Sente-se com os pés apoiados. Levante só o dedão e segure. Os outros quatro dedos ficam apoiados no chão. A elevação do dedão ensina o dedão a se mover sozinho, que é o primeiro passo para ativar o arco.
+- **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga enquanto a panturrilha acorda.
+- **Inversão com faixa** (3 séries de 12, cada pé): Sente-se com uma faixa elástica em volta do pé e vire o pé para dentro contra a faixa. Mexa o pé, não a perna. O joelho fica parado. O Walkito só coloca a inversão com faixa depois de seis sessões de pé curto em pé, para que os músculos do próprio arco venham primeiro.
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Procure primeiro um profissional de saúde se
+
+- o arco continua achatado quando você se senta, fica na ponta dos pés ou levanta o dedão, e o pé parece duro
+- um pé ficou mais chato que o outro ao longo dos meses, ou você percebeu isso de repente
+- você tem dor ou inchaço atrás ou embaixo do osso de dentro do tornozelo
+- você não consegue subir na ponta de um pé só, ou subir daquele lado dói
+- o pé chato começou depois de uma queda, uma torção ou uma lesão
+- você tem diabetes e o pé está quente, vermelho ou inchado, ou o formato dele está mudando
+- você sente dormência, queimação ou formigamento no pé
+- o pé chato de uma criança é rígido, dói ou vem junto com mancar
+
+### Como transformar isso em um plano
+
+O Walkito é um app de exercícios para dor no calcanhar e no pé, para iPhone e Android. Ele monta um plano a partir das suas respostas, incluindo onde dói e de que lado, e repete um teste simples a cada 14 dias: elevação de calcanhar, sustentação do arco, equilíbrio em uma perna e comparação entre esquerda e direita.
+
+#### Como saber se eu tenho pé chato?
+
+Olhe a pegada do pé molhado e depois compare o arco sentado e em pé. Uma pegada sem curva no lado de dentro e um arco que some quando você fica em pé sugerem um arco baixo. Depois suba na ponta dos pés: se o arco volta, o pé chato é flexível, o tipo comum. A pegada sozinha corresponde só moderadamente à altura real do arco.
+
+#### O teste da pegada molhada é preciso?
+
+Só de forma aproximada. Em 95 idosos comparados com radiografias, a pontuação da pegada correspondeu moderadamente à altura do arco, e um estudo de 1992 com 115 homens concluiu que a pegada não conseguia prever a altura do arco. A gordura embaixo da sola também pode preencher a pegada. Use como uma primeira olhada, não como diagnóstico.
+
+#### O que é o teste do pé chato flexível?
+
+Ele verifica se o arco volta. Fique na ponta dos pés, ou levante o dedão com o calcanhar no chão (o teste de Jack, descrito em 1953). Se um arco aparece, o pé chato é flexível. Se ele continua achatado e duro, um profissional de saúde deve procurar a causa. Não encontramos estudos sobre a confiabilidade dessas verificações feitas em casa.
+
+#### Como saber se o meu pé chato é rígido?
+
+Um pé chato rígido não tem arco quando você se senta, fica na ponta dos pés ou levanta o dedão, e muitas vezes parece duro. Uma das causas é a coalizão tarsal, uma ponte entre ossos do pé relatada em 1 a 13% das pessoas. Um pé chato rígido que dói precisa de um profissional de saúde e, em geral, de exames de imagem.
+
+#### Dá para ter pé chato de um lado só?
+
+Sim, e vale a pena verificar. Um arco que vai ficando mais baixo de um lado, principalmente com dor atrás do tornozelo por dentro ou dificuldade para subir na ponta daquele pé, é um sinal típico de disfunção do tendão tibial posterior. Em 582 mulheres com mais de 40 anos, 3,3% tinham sinais iniciais dela e nenhuma tinha diagnóstico. Procure um profissional de saúde.
+
+#### Qual é a queda do navicular normal?
+
+Nos estudos, adultos saudáveis têm em média de 3,6 a 8,1 milímetros de queda do navicular, a distância que o osso do arco desce quando você fica em pé. Já se sugeriram pontos de corte de 10, 13 ou 15 milímetros para “demais”, mas nenhum foi confirmado, e os resultados variam entre avaliadores, principalmente os sem experiência. É difícil medir isso com precisão em você mesmo.
+
+#### O que é o índice de postura do pé (FPI)?
+
+É uma avaliação em seis partes que um profissional de saúde faz com você em pé, dando ao calcanhar, ao tornozelo e ao arco notas de -2 a +2 cada, para um total de -12 (arco alto) a +12 (chato). Em 619 adultos saudáveis a média foi +4, o que é normal. Ele mostrou confiabilidade moderada no geral, e em um estudo nenhuma medida de postura do pé foi confiável o suficiente em crianças pequenas.
+
+#### Pé chato precisa de tratamento se não dói?
+
+Normalmente não. Um pé chato flexível que não causa dor e não limita o que você faz é uma variação normal. O Framingham Foot Study, com cerca de 1.900 adultos, não encontrou relação entre pé chato e dor lombar. Dor, rigidez ou uma mudança de um lado só são os motivos para fazer uma avaliação.
+
+#### Posso testar o pé chato do meu filho do mesmo jeito?
+
+As verificações na ponta dos pés e do dedão também funcionam em crianças, mas a maioria das crianças pequenas tem o arco baixo, que se forma com a idade, e em um estudo as medidas de postura do pé não foram confiáveis o suficiente em crianças pequenas. Um pé rígido, dor ou mancar são motivos para ir ao médico. Mais em [pé chato infantil](https://walkito.site/pt/pe-chato-infantil/).
+
 ## Sobre o Walkito
 
 https://walkito.site/pt/sobre-walkito/

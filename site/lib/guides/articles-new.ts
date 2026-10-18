@@ -244,6 +244,18 @@ import { TIGHT_CALVES_DE } from './articles-de/tight-calves';
 import { TOE_STRENGTHENING_DE } from './articles-de/toe-strengthening-exercises';
 import { TOP_OF_FOOT_DE } from './articles-de/top-of-foot';
 import { VS_EXAKT_DE } from './articles-de/vs-exakt';
+import { PF_VS_ACHILLES_DE } from './articles-de/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_FR } from './articles-fr/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_IT } from './articles-it/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_PT } from './articles-pt/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_STRESS_FRACTURE_DE } from './articles-de/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_FR } from './articles-fr/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_IT } from './articles-it/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_PT } from './articles-pt/plantar-fasciitis-vs-stress-fracture';
+import { FLAT_FEET_TEST_DE } from './articles-de/flat-feet-test';
+import { FLAT_FEET_TEST_FR } from './articles-fr/flat-feet-test';
+import { FLAT_FEET_TEST_IT } from './articles-it/flat-feet-test';
+import { FLAT_FEET_TEST_PT } from './articles-pt/flat-feet-test';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -311,6 +323,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_PT,
     topOfFoot: TOP_OF_FOOT_PT,
     vsExakt: VS_EXAKT_PT,
+    pfVsAchilles: PF_VS_ACHILLES_PT,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_PT,
+    flatFeetTest: FLAT_FEET_TEST_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -374,6 +389,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_FR,
     topOfFoot: TOP_OF_FOOT_FR,
     vsExakt: VS_EXAKT_FR,
+    pfVsAchilles: PF_VS_ACHILLES_FR,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_FR,
+    flatFeetTest: FLAT_FEET_TEST_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -437,6 +455,9 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_IT,
     topOfFoot: TOP_OF_FOOT_IT,
     vsExakt: VS_EXAKT_IT,
+    pfVsAchilles: PF_VS_ACHILLES_IT,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_IT,
+    flatFeetTest: FLAT_FEET_TEST_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -500,5 +521,8 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_DE,
     topOfFoot: TOP_OF_FOOT_DE,
     vsExakt: VS_EXAKT_DE,
+    pfVsAchilles: PF_VS_ACHILLES_DE,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_DE,
+    flatFeetTest: FLAT_FEET_TEST_DE,
   },
 };

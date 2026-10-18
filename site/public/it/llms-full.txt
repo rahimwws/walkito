@@ -9560,6 +9560,521 @@ Sì. Exakt Health è certificata come dispositivo medico nell’UE (Germania). V
 
 Walkito adatta ogni sessione in base a un check-in del dolore al mattino, prima di iniziare. Un punteggio di 7/10 o più rende la sessione più leggera. Una giornata con tanti passi fa scattare una sessione di recupero il giorno dopo. Exakt adatta il piano in base a come valuti ogni sessione dopo averla finita. L’approccio di Walkito reagisce di più ai cambi di dolore giorno per giorno; quello di Exakt si concentra di più sulla progressione complessiva del piano.
 
+## Fascite plantare o tendinite d’Achille: come riconoscere la differenza
+
+Language: Italian (Italiano) · https://walkito.site/it/fascite-plantare-o-tendinite-achille/ · published 2026-10-18 · updated 2026-10-18
+
+Il modo più rapido per distinguerle è il punto in cui fa male. La [fascite plantare](https://walkito.site/it/fascite-plantare/) fa male sotto il tallone, soprattutto ai primi passi del mattino (Koc e colleghi, 2023). La tendinite d’Achille fa male dietro il tallone o nel tendine appena sopra, di solito da 2 a 6 centimetri sopra l’osso del tallone (Chimenti e colleghi, 2024). Entrambe rispondono all’esercizio, ma gli esercizi non sono gli stessi.
+
+- Il dolore della fascite plantare si trova sotto il tallone, sul lato interno, ed è di solito peggiore ai primi passi dopo il sonno o dopo essere stato seduto (Koc e colleghi, 2023).
+- La tendinopatia d’Achille della porzione media fa male nel tendine stesso, di solito da 2 a 6 centimetri sopra l’osso del tallone. Il dolore proprio dove il tendine si attacca all’osso è il tipo inserzionale (Chimenti e colleghi, 2024).
+- La linea guida del 2023 sul dolore al tallone dà agli allungamenti della fascia plantare e del polpaccio il grado **A** e al lavoro di forza il grado **B**. La linea guida del 2024 sull’Achille dà agli esercizi di carico del tendine il grado **A** (Koc e colleghi, 2023; Chimenti e colleghi, 2024).
+- In uno studio su 101 persone con dolore cronico al tallone, l’allungamento della fascia plantare ha dato risultati migliori del solo allungamento del polpaccio a 8 settimane (DiGiovanni e colleghi, 2003). Per l’Achille, il grado più alto della linea guida va al carico del tendine, non all’allungamento (Chimenti e colleghi, 2024).
+- Le due cose sono collegate: in 52 risonanze magnetiche, chi aveva alterazioni all’Achille aveva una fascia plantare più spessa, e 5 su 27 superavano la soglia usata di solito per la fascite plantare (Stecco e colleghi, 2013).
+
+### Dove fa male: sotto il tallone o dietro?
+
+**Il punto del dolore è la differenza più chiara.** La fascia plantare è la fascia spessa sotto il piede che va dall’osso del tallone alle dita. La fascite plantare fa male dove questa fascia si attacca, sotto il tallone e verso il lato interno. Di solito fa male se premi lì con il pollice (Koc e colleghi, 2023).
+
+Il tendine d’Achille collega i muscoli del polpaccio alla parte posteriore dell’osso del tallone. Ci sono due tipi di dolore all’Achille, e il punto esatto li distingue (Chimenti e colleghi, 2024; Jonsson e colleghi, 2008):
+
+- **Porzione media:** dolore e spesso un tendine più spesso e dolente da 2 a 6 centimetri sopra l’osso del tallone. Di solito riesci a pizzicare il punto dolente tra pollice e indice.
+- **Inserzionale:** dolore proprio dove il tendine si attacca alla parte posteriore dell’osso del tallone, spesso peggiore quando la scarpa preme lì.
+
+Un dolore sotto il tallone che fa male quando stringi i lati del tallone, che brucia o formicola, o che arriva con intorpidimento fa pensare ad altre cause, come un nervo, una frattura da stress o il cuscinetto adiposo del tallone (Tu, 2018). Le trovi in [dolore al tallone di notte](https://walkito.site/it/dolore-tallone-di-notte/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Quando fa male: ai primi passi o durante l’attività?
+
+**La fascite plantare è un dolore da primi passi.** La linea guida descrive un dolore al tallone che si nota di più ai primi passi del mattino o dopo essere stato seduto, che spesso si attenua mentre cammini e torna dopo molto tempo in piedi (Koc e colleghi, 2023). [Dolore al tallone al mattino](https://walkito.site/it/dolore-tallone-al-mattino/) spiega questo andamento.
+
+**La tendinopatia d’Achille è un dolore da carico.** Anche il tendine può essere rigido al mattino, ed è per questo che le due si confondono. La differenza è cosa lo fa peggiorare durante la giornata: le attività di carico come corsa e salti, e il dolore tende a seguire quanto hai fatto (Chimenti e colleghi, 2024). Salite e spinte veloci caricano il tendine ancora di più.
+
+Quindi entrambe possono fare male al mattino. Chiediti dove, non solo quando: una fascia rigida e dolente dietro la caviglia fa pensare all’Achille, una fitta sotto il tallone fa pensare alla fascia plantare.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Fascite plantare o tendinite d’Achille: la tabella a confronto
+
+La tabella riassume il quadro tipico. Molte persone non rientrano bene in una sola colonna, e solo la visita di un medico può dirti quale delle due hai.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: de Jonge S, van den Berg C, de Vos RJ, van der Heide HJ, Weir A, Verhaar JA, Bierma-Zeinstra SM, Tol JL. Incidence of midportion Achilles tendinopathy in the general population. British Journal of Sports Medicine. 2011;45(13):1026–1028.
+
+### Quali esercizi sono adatti alla fascite plantare?
+
+**Per la fascite plantare si parte dagli allungamenti.** La linea guida del 2023 dà agli allungamenti della fascia plantare e del polpaccio il grado **A**, il suo più alto, e al lavoro di forza il grado **B** (Koc e colleghi, 2023).
+
+Conta l’allungamento che lavora sull’arco. In uno studio su 101 persone, il gruppo che faceva l’allungamento della fascia plantare ha riferito risultati migliori a 8 settimane rispetto al gruppo che faceva solo l’allungamento del polpaccio (DiGiovanni e colleghi, 2003). Per la forza, uno studio del 2015 su 48 persone ha usato sollevamenti sulle punte lenti con un asciugamano sotto le dita, che hanno ridotto il dolore più in fretta dei soli allungamenti a tre mesi, anche se a dodici mesi i due gruppi erano più o meno pari (Rathleff e colleghi, 2015).
+
+Queste sono le dosi di partenza della guida [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/).
+
+- **Allungamento della fascia plantare** (2 tenute da 30 secondi, ogni piede): Siediti e accavalla il piede sul ginocchio opposto. Tira le dita indietro finché senti l’allungamento nell’arco, non nel polpaccio. Fai il primo sul bordo del letto, prima che il piede tocchi il pavimento.
+- **Allungamento del polpaccio** (2 tenute da 30 secondi, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone dietro ben appoggiato a terra e il bacino in avanti. Un polpaccio rigido tira sul tallone tutto il giorno, quindi questo allungamento conta anche se lo senti più in alto.
+- **Sollevamenti sulle punte con asciugamano** (4 serie da 10, ogni gamba, con peso aggiunto): Mettiti su un piede solo su un gradino, con un asciugamano arrotolato sotto le dita. Sali in tre secondi, tieni due secondi in alto e scendi in tre secondi. A questo livello Walkito aggiunge peso, per esempio uno zaino. È l’asciugamano che fa lavorare la fascia plantare e non solo il polpaccio.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Quali esercizi sono adatti alla tendinite d’Achille?
+
+**Per l’Achille si parte dal carico, non dagli allungamenti.** La linea guida del 2024 dà agli esercizi di carico del tendine il grado **A**: sollevamenti sulle punte, tenute e discese lente che fanno lavorare il tendine (Chimenti e colleghi, 2024). La linea guida dà all’allungamento del polpaccio un grado più basso, **C**, e solo per chi ha una caviglia che si piega poco (Chimenti e colleghi, 2024).
+
+Un po’ di dolore è ammesso. In uno studio su 38 persone, un dolore fino a circa 5 su 10 durante il carico andava bene, purché si calmasse entro la mattina dopo e non aumentasse di settimana in settimana, e a dodici mesi quel gruppo stava bene quanto quello che aveva prima fatto riposo (Silbernagel e colleghi, 2007).
+
+Se il dolore è proprio sull’osso del tallone (inserzionale), fai tutti i sollevamenti sulle punte e le discese del tallone a livello del pavimento, e vacci piano con gli allungamenti del polpaccio. Far scendere il tallone sotto il gradino schiaccia il tendine contro l’osso. In uno studio pilota su 27 persone, le discese a livello del pavimento hanno dato buoni risultati nel 67% (Jonsson e colleghi, 2008). Più dettagli in [esercizi per la tendinite d’Achille](https://walkito.site/it/tendinite-achille-esercizi/).
+
+- **Tenuta sulle punte (isometrica)** (3 tenute da 20 secondi, entrambi i piedi): Sali sulle punte su entrambi i piedi, poi resta fermo in alto. Non riscendere. Tenere la posizione in alto carica il tendine senza il rimbalzo.
+- **Discese eccentriche del tallone (ginocchio teso)** (3 serie da 10, ogni gamba): Mettiti sul bordo di un gradino. Sali su entrambi i piedi, sposta il peso sulla gamba dolorante e scendi lentamente in tre secondi. Usa entrambi i piedi per risalire. Se il dolore è proprio sull’osso del tallone, fallo sul pavimento in piano e non lasciare che il tallone scenda sotto il gradino.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Si possono avere fascite plantare e tendinite d’Achille insieme?
+
+**Sì, e le due cose sono collegate.** In uno studio su 52 risonanze magnetiche di persone con dolore al piede o alla caviglia, i 27 con alterazioni all’Achille avevano una fascia plantare più spessa, 3,43 mm in media contro 2,09 mm. Cinque dei 27 avevano una fascia plantare sopra i 4,5 mm, una soglia comune per la fascite plantare. Nessuno degli altri 25 superava i 4 mm (Stecco e colleghi, 2013).
+
+Lo stesso studio ha trovato che la fascia plantare si collega alla guaina intorno all’Achille attraverso il rivestimento dell’osso del tallone. Uno studio su cadavere ha mostrato che tirare l’Achille mette in tensione la fascia plantare, e di più quando le dita sono piegate verso l’alto (Carlson e colleghi, 2000). Un polpaccio rigido o sovraccarico può quindi mettere in tensione entrambe le strutture.
+
+Nessuno studio ha contato quanto spesso si abbiano le due condizioni insieme, quindi non esiste un dato affidabile. Nessuna linea guida tratta il caso di entrambe. Un approccio che rispetta tutte e due le linee guida: lavoro di forza per il polpaccio adatto al tendine, più l’allungamento della fascia plantare, che lavora sull’arco e non sull’Achille. Fai le discese del tallone a livello del pavimento se ti fa male la parte posteriore dell’osso del tallone.
+
+Source: Stecco C, Corradin M, Macchi V, Morra A, Porzionato A, Biz C, De Caro R. Plantar fascia anatomy and its relationship with Achilles tendon and paratenon. Journal of Anatomy. 2013;223(6):665–676.
+Source: Carlson RE, Fleming LL, Hutton WC. The biomechanical relationship between the tendoachilles, plantar fascia and metatarsophalangeal joint dorsiflexion angle. Foot & Ankle International. 2000;21(1):18–25.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Cos’altro dà un dolore al tallone simile a questi due?
+
+Diversi problemi si trovano lì vicino e possono dare sensazioni simili (Choo e colleghi, 2020; Tu, 2018):
+
+- Una sporgenza ossea dietro il tallone con una zona dolente e gonfia dove arriva la scarpa: [morbo di Haglund](https://walkito.site/it/morbo-di-haglund/) o borsite retrocalcaneare, spesso insieme a un dolore inserzionale all’Achille.
+- Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/).
+- Un dolore profondo, come un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri: [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/).
+- Dolore su entrambi i lati del tallone quando lo stringi, dopo un aumento improvviso di camminata o corsa: possibile frattura da stress, che deve vedere un medico.
+- Bruciore, formicolio o intorpidimento: forse un nervo compresso.
+
+Source: Choo YJ, Park CH, Chang MC. Rearfoot disorders and conservative treatment: a narrative review. Annals of Palliative Medicine. 2020;9(5):3546–3552.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Quanto ci vuole a migliorare per ciascuna?
+
+Per la fascite plantare, circa il 90% delle persone migliora con un trattamento non chirurgico, anche se spesso servono mesi (Latt e colleghi, 2020). [Quanto dura la fascite plantare](https://walkito.site/it/quanto-dura-fascite-plantare/) ha i dettagli.
+
+Per la tendinopatia d’Achille, i principali studi sul carico sono durati circa tre mesi e hanno seguito le persone fino a dodici mesi. La linea guida del 2024 nota che la funzione può iniziare a migliorare entro 2 settimane, ma un recupero più completo richiede più tempo (Chimenti e colleghi, 2024). Il dolore inserzionale è stato più difficile da aiutare con le classiche discese del tallone sotto il gradino: in uno studio precedente solo il 32% aveva avuto buoni risultati, ed è per questo che si usano le discese a livello del pavimento (Jonsson e colleghi, 2008).
+
+Nessuno studio ha confrontato direttamente i tempi di recupero delle due.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Rivolgiti prima a un professionista sanitario se
+
+- hai sentito uno schiocco o uno strappo improvviso dietro la caviglia, o come un calcio in quel punto, e ora spingere con il piede è difficile
+- non riesci a salire sulle punte dal lato dolorante, o senti un vuoto nel tendine
+- stai prendendo o hai preso di recente un antibiotico fluorochinolonico, come la ciprofloxacina, e hai un dolore al tendine nuovo
+- il tallone è rosso, caldo e gonfio, o hai la febbre
+- il tallone fa male su entrambi i lati quando lo stringi, o fa male di notte o a riposo
+- senti bruciore, formicolio o intorpidimento nel tallone o nella pianta del piede
+- il dolore è iniziato dopo una caduta o un trauma, o non riesci a caricare il peso sul piede
+- il dolore continua a peggiorare per settimane nonostante l’esercizio costante
+
+### Come trasformarlo in un piano
+
+Walkito è un’app di esercizi per tallone e piede. Gli dici dove fa male, sotto il tallone o dietro, e costruisce il piano dalla tua risposta: allungamenti della fascia plantare e sollevamenti sulle punte con asciugamano per il dolore al tallone, carico del polpaccio dalle tenute alle discese lente del tallone per il dolore all’Achille.
+
+#### Come faccio a capire se il mio dolore al tallone è fascite plantare o tendinite d’Achille?
+
+Parti dal punto in cui fa male. La fascite plantare fa male sotto il tallone, verso il lato interno, ed è peggiore ai primi passi dopo il riposo. La tendinite d’Achille fa male dietro il tallone o nel tendine da 2 a 6 centimetri sopra, e peggiora con la spinta, la corsa e le salite. Un medico può confermare quale delle due è.
+
+#### La fascite plantare può causare dolore all’Achille?
+
+Sono collegate, ma nessuno studio mostra che una causi l’altra. In 52 risonanze magnetiche, chi aveva alterazioni all’Achille aveva una fascia plantare più spessa, 3,43 mm contro 2,09 mm. Uno studio su cadavere ha mostrato che la tensione nell’Achille mette in tensione la fascia plantare. Un polpaccio rigido e sovraccarico può caricare entrambe.
+
+#### La tendinite d’Achille è peggio al mattino come la fascite plantare?
+
+Può esserlo. Entrambe possono dare rigidità e dolore ai primi passi della giornata, ed è per questo che si confondono. La fascite plantare è una fitta sotto il tallone che si attenua mentre cammini. Il dolore all’Achille è dietro la caviglia e tende ad aumentare con corsa, salti, salite e scale.
+
+#### Devo allungare il polpaccio per la tendinite d’Achille?
+
+È facoltativo. La linea guida del 2024 sull’Achille mette al primo posto gli esercizi di carico del tendine, con grado A, e dà all’allungamento del polpaccio una C, per chi ha una caviglia che si piega poco. Se il dolore è proprio sull’osso del tallone, gli allungamenti profondi del polpaccio e le discese del tallone sotto il gradino schiacciano il tendine contro l’osso, quindi tienili leggeri e a livello del pavimento.
+
+#### Gli esercizi per la fascite plantare e per la tendinite d’Achille sono gli stessi?
+
+Si sovrappongono, ma non sono gli stessi. Per la fascite plantare si parte dagli allungamenti della fascia plantare e del polpaccio, con grado A, più i sollevamenti sulle punte, con grado B. Per la tendinite d’Achille si parte dal carico: tenute sulle punte, sollevamenti sulle punte e discese lente del tallone, con grado A. Il lavoro di forza per il polpaccio va bene per entrambe.
+
+#### Si possono avere fascite plantare e tendinite d’Achille insieme?
+
+Sì. In uno studio con risonanza magnetica su 52 persone con dolore al piede o alla caviglia, 5 dei 27 con alterazioni all’Achille avevano anche una fascia plantare abbastanza spessa da raggiungere una soglia comune per la fascite plantare. Nessuno studio ha contato quanto spesso le due compaiano insieme nella popolazione generale.
+
+#### Il dolore dietro il tallone è fascite plantare?
+
+Di solito no. La fascite plantare fa male sotto il tallone. Il dolore dietro il tallone è più spesso una tendinopatia d’Achille, una borsite retrocalcaneare o il morbo di Haglund, una sporgenza ossea dove si attacca il tendine. Uno schiocco improvviso dietro il tallone richiede un medico in giornata.
+
+#### Uno sperone calcaneare vuol dire fascite plantare o tendinite d’Achille?
+
+Da solo, nessuna delle due. Uno sperone sotto il tallone si trova vicino alla fascia plantare, e uno sperone dietro si trova dove si attacca l’Achille, ma gli speroni sono comuni anche in chi non ha dolore. È la visita, non la sola radiografia, a stabilire cosa causa il dolore.
+
+## Fascite plantare o frattura da stress del calcagno: come distinguerle
+
+Language: Italian (Italiano) · https://walkito.site/it/fascite-plantare-o-frattura-da-stress/ · published 2026-10-18 · updated 2026-10-18
+
+La [fascite plantare](https://walkito.site/it/fascite-plantare/) fa più male ai primi passi dopo il riposo e di solito si calma dopo qualche minuto di cammino. Una frattura da stress del calcagno fa il contrario: il dolore cresce più cammini o corri, spesso dopo un aumento brusco dell’attività, e stringere i lati del tallone tende a fare male (Tu, 2018). Una radiografia fatta presto può sembrare normale: in 30 reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, la radiografia semplice la mostrava solo nel 15% (Sormaala e colleghi, 2006).
+
+- Il dolore della fascite plantare è «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo» e si attenua camminando (Koc e colleghi, 2023). Il dolore della frattura da stress inizia con l’attività e più avanti può esserci anche a riposo (Tu, 2018).
+- Il dolore quando si stringono i lati dell’osso del tallone fa pensare a una frattura da stress (Tu, 2018), ma non abbiamo trovato studi che misurino quanto sia accurato il test della compressione per il tallone, ed è doloroso anche nella malattia di Sever nei bambini.
+- Le radiografie semplici spesso non vedono le fratture da stress all’inizio: una revisione ha stimato la loro sensibilità alla prima visita intorno al 10%, che sale a valori dal 30 al 70% dopo tre settimane (Patel e colleghi, 2011). Nella revisione sistematica del 2016 la risonanza magnetica era l’esame più accurato (Wright e colleghi, 2016).
+- Un aumento improvviso dell’allenamento è il fattore scatenante classico. Chi corre più di 25 miglia (circa 40 km) a settimana in media, le donne e le persone con bassa disponibilità energetica o ossa fragili sono più a rischio (Patel e colleghi, 2011; Mountjoy e colleghi, 2023).
+- Allungamenti ed esercizi di forza hanno **grado A** e **grado B** per la fascite plantare (Koc e colleghi, 2023). Non sono un piano per una sospetta frattura, che prima ha bisogno di meno carico e di un professionista sanitario.
+
+### Come distinguere la fascite plantare da una frattura da stress del calcagno?
+
+**L’indizio più chiaro è cosa succede al dolore quando cammini.** La fascite plantare è peggiore ai primi passi dopo il sonno o dopo essere stato seduto, si calma dopo qualche minuto e può tornare dopo una lunga giornata in piedi (Tu, 2018). La linea guida del 2023 sul dolore al tallone la descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo» (Koc e colleghi, 2023).
+
+Una frattura da stress del calcagno è una piccola incrinatura dell’osso del tallone dovuta a un carico ripetuto. Il dolore di solito inizia dopo che hai aumentato cammino, corsa o ore in piedi, o sei passato a una superficie più dura. All’inizio fa male solo durante l’attività e cresce man mano che vai avanti. Più tardi può fare male anche a riposo (Tu, 2018). In una revisione sulle fratture da stress in generale, il dolore camminando era riferito dall’81% dei pazienti, un punto dolente sull’osso dal 65,9 al 100% e il gonfiore dal 18 al 44% (Patel e colleghi, 2011).
+
+La tabella riassume i quadri più comuni. Nessuna riga da sola decide, e alcune persone non rientrano bene in nessuna delle due colonne.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### Cos’è il test della compressione e quanto può dirti?
+
+**Il test della compressione consiste nel premere insieme il lato interno e quello esterno dell’osso del tallone, tra i palmi o tra pollice e dita.** Il professionista lo fa con il piede rilassato. Secondo una revisione del 2018 su American Family Physician, il dolore alla compressione «fa pensare alla diagnosi» di frattura da stress del calcagno (Tu, 2018). La fascite plantare, invece, fa male quando premi sotto la parte interna e anteriore del tallone, dove si attacca la fascia.
+
+I suoi limiti sono reali:
+
+- **Nessuno ha misurato quanto sia accurato per il tallone.** Non abbiamo trovato studi che dicano quanto spesso il test della compressione è positivo nelle persone con una frattura da stress del calcagno confermata, o quanto spesso è positivo senza frattura. La stessa revisione sulle fratture da stress nota che nemmeno l’hop test, un altro test comune in ambulatorio in cui si saltella su una gamba, è stato validato (Patel e colleghi, 2011).
+- **Un test negativo non esclude una frattura.** Alcune lesioni da stress del calcagno si trovano verso la parte anteriore o centrale dell’osso: in uno studio con risonanza magnetica, 15 su 34 non erano nella parte posteriore (Sormaala e colleghi, 2006).
+- **Anche altre cose fanno male alla compressione.** Nei bambini e nei ragazzi, una compressione dolorosa è un segno comune della [malattia di Sever](https://walkito.site/it/malattia-di-sever/), un’irritazione della cartilagine di crescita (Tu, 2018). Anche altri problemi dell’osso del tallone possono fare male, quindi serve il controllo di un professionista.
+
+Se premi i lati del tuo tallone e fa male, prendilo come un motivo per farti controllare, non come una diagnosi. Non saltellare sul piede per provarlo.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### Chi rischia di più una frattura da stress del calcagno?
+
+Una frattura da stress si verifica quando l’osso riceve più carico ripetuto di quanto riesca a riparare. Il rischio sale quando il carico aumenta, quando l’osso è meno capace di reggerlo, o entrambe le cose (Warden e colleghi, 2014).
+
+- **Un aumento improvviso dell’allenamento.** Un grosso salto in cammino, corsa, marce o ore in piedi, oppure sedute dure ripetute con poco riposo, è la storia classica (Patel e colleghi, 2011). Passare a una superficie più dura su cui camminare è un fattore scatenante comune per il tallone (Tu, 2018).
+- **Molti chilometri di corsa.** Chi corre per passione più di 25 miglia (circa 40 km) a settimana in media è più a rischio, come chi pratica atletica leggera, basket, calcio e danza (Patel e colleghi, 2011).
+- **Bassa disponibilità energetica.** Mangiare troppo poco rispetto a quanto ti alleni può influire su ormoni e ossa. Il Comitato Olimpico Internazionale elenca la salute ossea compromessa, comprese le lesioni da stress dell’osso, tra gli effetti di questa condizione, chiamata deficit energetico relativo nello sport (REDs), sia nelle donne sia negli uomini (Mountjoy e colleghi, 2023).
+- **Salute delle ossa.** Le donne con la triade dell’atleta femminile (disturbi alimentari, assenza del ciclo e bassa densità ossea) sono più a rischio, e uno studio ha trovato livelli di vitamina D più bassi nelle reclute con fratture da stress (Patel e colleghi, 2011). Un osso indebolito dall’osteoporosi può incrinarsi sotto carichi normali: si parla di frattura da insufficienza.
+- **Essere donna.** Le donne rischiano più degli uomini, soprattutto nell’addestramento militare, anche se i dati sulle atlete sono contrastanti (Patel e colleghi, 2011).
+
+La fascite plantare ha un profilo di rischio diverso. In uno studio su 50 persone con fascite e 100 senza, chi aveva una flessione della caviglia verso l’alto (dorsiflessione) di 0 gradi o meno aveva una probabilità 23,3 volte maggiore rispetto a chi superava i 10 gradi, e stare in piedi per la maggior parte della giornata di lavoro aumentava la probabilità di 3,6 volte (Riddle e colleghi, 2003).
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). British Journal of Sports Medicine. 2023;57(17):1073–1097.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Perché la radiografia può sembrare normale con una frattura da stress?
+
+**Una frattura da stress all’inizio è spesso troppo piccola per vedersi in radiografia.** L’osso reagisce prima con un edema al suo interno, che la radiografia non vede. I segni di riparazione compaiono più tardi. Una revisione ha stimato la sensibilità della radiografia alla prima visita intorno al 10%, che sale a valori dal 30 al 70% dopo tre settimane (Patel e colleghi, 2011).
+
+Per il tallone in particolare, uno studio finlandese ha esaminato reclute militari con dolore al tallone o alla caviglia legato all’esercizio che avevano fatto una risonanza magnetica. Su 30 reclute con lesioni da stress del calcagno, solo il 15% aveva una lesione visibile alle radiografie semplici. In 22 dei 34 talloni lesionati erano coinvolte anche altre ossa del piede vicine (Sormaala e colleghi, 2006).
+
+Una revisione sistematica del 2016 sulle fratture da stress dell’arto inferiore ha trovato una sensibilità della radiografia dal 12 al 56%, contro valori dal 68 al 99% della risonanza magnetica. Gli autori hanno indicato la risonanza come l’esame più sensibile e specifico e hanno avvertito che all’inizio le radiografie danno facilmente falsi negativi (Wright e colleghi, 2016).
+
+Per questo, se sospetta una frattura, il professionista può ripetere la radiografia dopo due o tre settimane oppure passare subito alla risonanza magnetica se serve una risposta rapida (Patel e colleghi, 2011). Per la fascite plantare, la linea guida del 2023 dice che gli esami di imaging «di solito non sono indicati nei pazienti che soddisfano i criteri clinici della fascite plantare finché non falliscono i trattamenti conservativi» (Koc e colleghi, 2023). La pagina sullo [sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/) spiega perché nemmeno uno sperone visto in radiografia chiude la questione.
+
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Wright AA, Hegedus EJ, Lenchik L, Kuhn KJ, Santiago L, Smoliga JM. Diagnostic accuracy of various imaging modalities for suspected lower extremity stress fractures: a systematic review with evidence-based recommendations for clinical practice. American Journal of Sports Medicine. 2016;44(1):255–263.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Cosa fare mentre aspetti di saperlo?
+
+**Se il tuo dolore corrisponde alla colonna della frattura da stress, togli carico al tallone e prenota una visita.** Non aspettare di vedere se qualche altra corsa lo sistema. Iniziare presto conta: una revisione nota che un ritardo è stato collegato a un ritorno all’attività più lungo (Patel e colleghi, 2011).
+
+- **Riduci il carico a ciò che non fa male.** Di solito vuol dire smettere per ora di correre, saltare e fare lunghe camminate. Alcune persone hanno bisogno delle stampelle o di un tutore da camminata per un periodo (Patel e colleghi, 2011; Tu, 2018).
+- **Mantieniti in forma senza caricare il tallone,** per esempio con nuoto o bici, se non fanno male (Patel e colleghi, 2011).
+- **Chiedi degli antidolorifici.** La stessa revisione dice che gli antinfiammatori vanno usati con cautela in caso di frattura da stress, perché alcuni studi sugli animali suggeriscono che possano rallentare la riparazione dell’osso (Patel e colleghi, 2011).
+- **Non iniziare ancora un piano di allungamenti o di forza per il tallone.** Aspetta che un professionista abbia escluso una frattura o ti abbia dato il via libera.
+
+Le fratture da stress del calcagno tendono a risolversi bene nelle persone per il resto in salute (Tu, 2018). Per le fratture da stress in generale, il recupero richiede da quattro settimane a tre mesi o più dal momento in cui si riduce l’attività, che poi si riprende lentamente una volta senza dolore (Patel e colleghi, 2011).
+
+Se invece il tuo dolore corrisponde alla colonna della fascite plantare, di solito non servono esami di imaging per iniziare gli esercizi qui sotto (Koc e colleghi, 2023). Se non sei sicuro di quale colonna ti riguardi, rivolgiti prima a un professionista sanitario.
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Perché gli esercizi sono per la fascite plantare e non per una frattura?
+
+**Allungamenti e carico aiutano la fascite plantare perché il tessuto si adatta al carico. Un osso incrinato ha bisogno prima che il carico venga tolto.** Le lesioni da stress dell’osso stanno su una scala: una reazione da stress può evolvere in una frattura da stress e, se il carico continua, in una frattura completa (Warden e colleghi, 2014).
+
+Le prove a favore dell’esercizio riguardano la fascite plantare. La linea guida del 2023 sul dolore al tallone dà agli allungamenti della fascia plantare e del polpaccio un **grado A** e al lavoro di forza un **grado B** per questa condizione (Koc e colleghi, 2023). Il programma di sollevamenti sulle punte dello studio più noto è stato testato su 48 persone con fascite plantare, non su persone con una frattura (Rathleff e colleghi, 2015).
+
+Per le fratture da stress le prove vanno nella direzione opposta. Due studi randomizzati a grappolo hanno trovato che allungare le gambe durante il riscaldamento non preveniva le fratture da stress (Patel e colleghi, 2011). Quello che conta è ridurre il carico, poi tornare gradualmente all’attività con la guida di un professionista. Una volta superata la frattura, rinforzare i muscoli intorno all’osso diventa parte della prevenzione della successiva (Warden e colleghi, 2014).
+
+Per questo gli esercizi di questa pagina sono solo per la fascite plantare. Se ti hanno detto che hai una frattura da stress, segui invece il piano di ritorno del tuo professionista sanitario.
+
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Solo per la fascite plantare: quali esercizi vanno bene una volta esclusa una frattura?
+
+**Usali solo se il tuo dolore corrisponde alla fascite plantare, o se un professionista ha escluso una frattura.** Se stringere il tallone fa male, il dolore cresce a ogni camminata o il tallone è gonfio, saltali e fatti controllare prima.
+
+Sono i primi passi della nostra guida agli [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/): prima gli allungamenti, poi un sollevamento sulle punte da seduto che non carica quasi per niente il tallone. La progressione completa, fino ai sollevamenti sulle punte con asciugamano dello studio, è in quella guida.
+
+- **Allungamento della fascia plantare (solo fascite plantare)** (2 tenute da 30 secondi, ogni piede): Siediti e accavalla il piede sul ginocchio opposto. Tira le dita indietro finché senti l’allungamento nell’arco, non nel polpaccio. Fai il primo sul bordo del letto, prima che il piede tocchi il pavimento.
+- **Allungamento del polpaccio (solo fascite plantare)** (2 tenute da 30 secondi, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone dietro ben appoggiato a terra e il bacino in avanti. Un polpaccio rigido tira sul tallone tutto il giorno, quindi questo allungamento conta anche se lo senti più in alto.
+- **Allungamento del soleo (solo fascite plantare)** (2 tenute da 30 secondi, ogni gamba): Mettiti nella stessa posizione, tieni il tallone dietro ben appoggiato a terra e piega il ginocchio dietro finché senti l’allungamento più in basso, vicino al tallone. Il soleo, il muscolo più profondo del polpaccio, si allunga solo con il ginocchio piegato.
+- **Sollevamenti sulle punte da seduto (solo fascite plantare)** (3 serie da 10, entrambi i piedi): Siediti con i piedi appoggiati e spingi verso l’alto sugli avampiedi. Le mani sulle ginocchia aggiungono resistenza. Con il ginocchio piegato lavora soprattutto il soleo, il muscolo più profondo del polpaccio, quasi senza carico sul tallone.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Rivolgiti prima a un professionista sanitario se
+
+- il dolore al tallone cresce più a lungo cammini o corri invece di calmarsi
+- stringere i lati dell’osso del tallone fa male
+- il tallone è gonfio o ha un livido, o un punto dell’osso è molto dolente
+- il dolore è iniziato dopo un aumento brusco dell’allenamento o il passaggio a una superficie più dura
+- fa male a riposo o ti sveglia di notte
+- hai già avuto una frattura da stress, hai saltato il ciclo, hai un disturbo alimentare o una bassa densità ossea
+- non riesci a caricare tutto il peso sul piede, o il dolore è iniziato dopo una caduta o una storta
+- senti bruciore, formicolio o intorpidimento al tallone o alla pianta del piede
+
+### Come trasformarlo in un piano
+
+Walkito è un’app di esercizi per il dolore a tallone e piede. Il suo piano è pensato per il dolore al tallone da fascite plantare, non per una frattura da stress, quindi se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario prima di iniziare.
+
+#### Come capisco se il dolore al tallone è una frattura da stress o una fascite plantare?
+
+Osserva cosa fa il dolore quando cammini. La fascite plantare fa più male ai primi passi dopo il riposo e si calma dopo qualche minuto. Una frattura da stress del calcagno di solito segue un aumento brusco dell’attività, cresce più a lungo cammini o corri e spesso fa male quando si stringono i lati del tallone. Se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario.
+
+#### La radiografia può non vedere una frattura da stress del calcagno?
+
+Sì, spesso. In 30 reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, le radiografie semplici la mostravano solo nel 15%. Una revisione ha stimato la sensibilità della radiografia alla prima visita intorno al 10%, che sale a valori dal 30 al 70% dopo tre settimane. Una radiografia normale fatta presto non esclude una frattura da stress.
+
+#### Serve una risonanza magnetica per il dolore al tallone?
+
+Non per una fascite plantare tipica: la linea guida del 2023 dice che di solito gli esami di imaging non servono quando la visita è compatibile. Se il professionista sospetta una frattura da stress, la risonanza magnetica è l’esame più accurato. Una revisione sistematica del 2016 ha trovato una sensibilità della risonanza dal 68 al 99%, contro valori dal 12 al 56% delle radiografie semplici.
+
+#### Cosa significa un test della compressione positivo?
+
+Il dolore quando si premono insieme il lato interno e quello esterno dell’osso del tallone fa pensare a una frattura da stress del calcagno o, nei bambini, alla malattia di Sever. È un motivo per farti vedere da un professionista, non una diagnosi. Non abbiamo trovato studi che misurino quanto sia accurato il test per le fratture da stress del calcagno, quindi una compressione indolore non ne esclude una.
+
+#### Si può camminare con una frattura da stress del calcagno?
+
+Forse ci riesci, ma di solito non dovresti continuare a caricarla. Il trattamento consiste nel ridurre l’attività a ciò che non fa male e, con un dolore forte, nel caricare poco o niente il piede per un massimo di sei settimane, a volte con stampelle o un tutore. Quanto puoi camminare in sicurezza lo deve stabilire un professionista sanitario.
+
+#### Quanto ci mette a passare una frattura da stress del calcagno?
+
+Per le fratture da stress in generale, il recupero richiede da quattro settimane a tre mesi o più dal momento in cui si riduce l’attività. Le fratture da stress del calcagno tendono a risolversi bene nelle persone per il resto in salute. L’attività poi si riprende gradualmente una volta senza dolore. Per i tempi della fascite plantare, vedi [quanto dura la fascite plantare](https://walkito.site/it/quanto-dura-fascite-plantare/).
+
+#### Devo fare allungamenti se potrei avere una frattura da stress?
+
+No, non finché un professionista non l’ha esclusa. Allungamenti e lavoro di forza hanno grado A e grado B per la fascite plantare, ma una sospetta frattura ha bisogno prima di meno carico. Due studi randomizzati a grappolo hanno trovato che allungare le gambe durante il riscaldamento non preveniva le fratture da stress, quindi l’allungamento non è lo strumento giusto per l’osso.
+
+#### La fascite plantare può diventare una frattura da stress?
+
+Nessuno studio mostra una fascite plantare che diventa una frattura. Sono lesioni diverse, una nella fascia e una nell’osso. Possono avere la stessa causa, come un aumento improvviso di cammino o corsa, e una reazione da stress dell’osso può evolvere in frattura se il carico continua. Un dolore che cambia comportamento merita un controllo.
+
+#### Chi si fa una frattura da stress del calcagno?
+
+Soprattutto chi all’improvviso si allena di più: runner, reclute militari e atleti. Chi corre più di 25 miglia (circa 40 km) a settimana in media è più a rischio, e le donne più degli uomini. La bassa disponibilità energetica, l’assenza del ciclo e la bassa densità ossea aumentano il rischio, e uno studio ha trovato livelli di vitamina D più bassi nelle reclute con fratture da stress.
+
+## Test del piede piatto a casa: 4 semplici controlli, e cosa possono e non possono dirti
+
+Language: Italian (Italiano) · https://walkito.site/it/test-piede-piatto/ · published 2026-10-18 · updated 2026-10-18
+
+Puoi controllare a casa se hai il piede piatto in circa cinque minuti: guarda l’impronta del piede bagnato, confronta l’arco da seduto e in piedi, sali sulle punte o solleva l’alluce per vedere se l’arco ricompare, e prova un sollevamento sulle punte su una gamba sola. L’impronta è il meno preciso dei quattro: in 95 anziani confrontati con le radiografie, il punteggio dell’impronta corrispondeva solo moderatamente alla vera altezza dell’arco (Menz e Munteanu, 2005). I controlli che contano di più sono se l’arco ricompare e se un lato si comporta in modo diverso dall’altro.
+
+- L’impronta bagnata è un’indicazione approssimativa. In 95 persone tra i 62 e i 94 anni, l’indice d’arco dell’impronta corrispondeva solo moderatamente all’altezza dell’arco in radiografia, mentre una misura con il righello dell’osso dell’arco corrispondeva bene (Menz e Munteanu, 2005).
+- Il grasso sotto la pianta può riempire l’impronta: in 24 adulti con sovrappeso o obesità, l’indice d’arco dell’impronta aumentava con la percentuale di grasso corporeo (Wearing e colleghi, 2004).
+- Se l’arco ricompare quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, il piede piatto è flessibile, il tipo comune studiato negli studi sugli esercizi (Brijwasi e Borkar, 2023).
+- Fatica a salire sulle punte su un piede solo, dolore dietro la caviglia interna e un arco che si abbassa sempre di più da un lato sono segni di disfunzione del tendine tibiale posteriore. In 582 donne sopra i 40 anni, il 3,3% aveva sintomi in fase iniziale (stadio I o II) e a nessuna era stata fatta la diagnosi (Kohls-Gatzoulis e colleghi, 2009).
+- Anche le misure dei professionisti variano: quando due esaminatori inesperti hanno misurato il navicular drop, i loro risultati concordavano poco (Picciano e colleghi, 1993). In uno studio successivo su 86 giovani adulti, la stessa misura era molto ripetibile (Zuil-Escobar e colleghi, 2018).
+
+### Come capire a casa se hai il piede piatto?
+
+**Fai quattro controlli, in quest’ordine, a piedi nudi su un pavimento duro.** I primi due ti dicono quanto è basso il tuo arco. Gli ultimi due ti dicono se è flessibile e se il tendine che lo sostiene fa il suo lavoro. Ti servono un asciugamano, un po’ d’acqua, un foglio di carta da pacchi o un cartoncino e un muro a cui tenerti.
+
+Controlla sempre entrambi i piedi. Una differenza tra piede sinistro e destro dice più di ciascun piede preso da solo, perché nella maggior parte delle persone i piedi sono più o meno simili, e un solo piede piatto è uno dei segnali d’allarme elencati alla fine di questa pagina.
+
+### Come si fa il test dell’impronta bagnata, e quanto è preciso?
+
+**Come si fa:** bagna la pianta di un piede, sali con tutto il peso su un foglio di carta da pacchi o su un cartoncino asciutto, resta in piedi normalmente per un secondo, poi scendi. Ripeti con l’altro piede. Guarda la parte centrale dell’impronta, quella tra il tallone e la base delle dita:
+
+- **Una curva netta sul lato interno**, con la fascia centrale larga circa la metà della parte anteriore del piede o meno: un arco tipico.
+- **Una fascia centrale larga con poca o nessuna curva**, così l’impronta sembra una ciabatta: un arco basso.
+- **Si vedono solo il tallone e l’avampiede**, uniti da una fascia sottile o per niente: un arco alto. Vedi [piede cavo](https://walkito.site/it/piede-cavo-esercizi/).
+
+**Cosa può dirti:** più o meno quanta parte della pianta tocca terra. I ricercatori trasformano la stessa impronta in un numero, l’indice d’arco, confrontando il terzo centrale dell’impronta con l’impronta intera (Cavanagh e Rodgers, 1987).
+
+**Cosa non può dirti:** la vera altezza del tuo arco. In 95 persone tra i 62 e i 94 anni confrontate con le radiografie, l’indice dell’impronta corrispondeva solo moderatamente all’altezza dell’osso dell’arco (Menz e Munteanu, 2005). Uno studio del 1992 su 115 uomini ha trovato che l’impronta non permetteva di prevedere l’altezza dell’arco (Hawes e colleghi, 1992), mentre uno studio del 2009 su 91 giovani adulti ha trovato una corrispondenza da debole a moderata con le radiografie (Murley e colleghi, 2009). In 198 pazienti ambulatoriali, tre punteggi dell’impronta riconoscevano un piede piatto in radiografia con una precisione che gli autori definiscono discreta (Paecharoen e colleghi, 2023).
+
+Un motivo sono i tessuti molli. In un piccolo studio pilota su 24 adulti con sovrappeso o obesità, l’indice dell’impronta durante il cammino aumentava con la percentuale di grasso corporeo, quindi un’impronta più piena può voler dire più imbottitura sotto l’arco, non un arco più basso (Wearing e colleghi, 2004). L’impronta inoltre non dice niente sul dolore, che è ciò che decide se un piede piatto ha bisogno di attenzione.
+
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Cavanagh PR, Rodgers MM. The arch index: a useful measure from footprints. Journal of Biomechanics. 1987;20(5):547–551.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
+Source: Paecharoen S, Arunakul M, Tantivangphaisal N. Diagnostic Accuracy of Harris Imprint Index, Chippaux-Smirak Index, Staheli Index Compared With Talar-First Metatarsal Angle for Screening Arch of Foot. Annals of Rehabilitation Medicine. 2023;47(3):222–227.
+Source: Wearing SC, Hills AP, Byrne NM, Hennig EM, McDonald M. The arch index: a measure of flat or fat feet? Foot & Ankle International. 2004;25(8):575–581.
+
+### L’arco sembra diverso da seduto e in piedi?
+
+**Siediti su una sedia con i piedi appoggiati e rilassati, e guarda il lato interno di ogni piede.** Nota lo spazio sotto l’arco. Poi alzati con il peso su entrambi i piedi e guarda di nuovo, oppure fatti fare una foto di lato all’altezza del pavimento.
+
+Un certo abbassamento è normale: ogni arco scende un po’ sotto il tuo peso. Nei dati raccolti su 619 adulti sani, il piede medio a riposo era leggermente ruotato verso l’interno, una posizione che gli autori considerano normale (Redmond e colleghi, 2008). Quello che cerchi è un cambiamento grande, un arco che si vede bene quando sei seduto e sparisce quando sei in piedi.
+
+**Poi guarda da dietro.** Stai in piedi normalmente e chiedi a qualcuno di guardarti i talloni all’altezza del pavimento. Un tallone che si inclina verso l’esterno, con il malleolo interno che sporge verso l’interno, si accompagna a un arco basso. Se un tallone si inclina più dell’altro, prendine nota.
+
+Questo controllo ti dice quanto si abbassa l’arco, che è ciò che un professionista sanitario misura in modo più preciso come navicular drop (ne parliamo più sotto). Non ti dice perché: un piede lasso dalla nascita e un tendine che si sta indebolendo possono sembrare uguali da fermi. I due controlli successivi iniziano a distinguerli.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+
+### Come si fa il test del piede piatto flessibile?
+
+Un piede piatto flessibile si appiattisce sotto il tuo peso ma ritrova l’arco quando il carico cambia. Due controlli rapidi lo mostrano:
+
+- **Controllo sulle punte.** Stai in piedi tenendoti al muro e sali sugli avampiedi con entrambi i piedi. Guarda il lato interno di ogni piede, o i talloni da dietro. In un piede flessibile, mentre sali compare un arco e i talloni si inclinano leggermente verso l’interno.
+- **Controllo dell’alluce (test di Jack).** Stai in piedi normalmente. Solleva l’alluce il più possibile, o fattelo sollevare da qualcuno, mentre il tallone resta giù. In un piede flessibile, l’arco si alza mentre l’alluce sale. Il test prende il nome da Jack, che lo ha descritto nel 1953 (Jack, 1953).
+
+**Se l’arco ricompare, il piede piatto è flessibile.** È il tipo comune, ed è quello studiato negli studi sugli esercizi: in 52 persone con piede piatto flessibile, sei settimane di piede corto, esercizi per caviglia e anca e allungamenti hanno migliorato due misure della forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).
+
+**Se l’arco resta piatto e il piede sembra rigido**, il piede piatto potrebbe essere rigido. Una causa è la coalizione tarsale, un ponte di osso, cartilagine o tessuto fibroso tra due ossa del piede, che si trova spesso nei giovani adulti con un piede piatto rigido e doloroso (Mehdi e colleghi, 2024). Un piede piatto rigido richiede che un professionista sanitario ne trovi la causa prima che tu inizi qualsiasi programma di esercizi.
+
+Diciamolo chiaramente: non abbiamo trovato studi che abbiano misurato quanto siano affidabili negli adulti il controllo sulle punte o il test di Jack fatti a casa. Sono semplici da fare e di solito il risultato è chiaro, ma prendi un risultato rigido come un motivo per farti controllare, non come una diagnosi.
+
+Source: Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. Journal of Bone and Joint Surgery. British Volume. 1953;35-B(1):75–82.
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### Cosa mostra il sollevamento sulle punte su una gamba sul piede piatto?
+
+Il tibiale posteriore è il muscolo il cui tendine passa dietro il malleolo interno e sostiene l’arco. Quando il tendine si indebolisce, l’arco da quel lato può abbassarsi lentamente. È la disfunzione del tendine tibiale posteriore, un motivo comune per cui l’arco di un adulto si appiattisce con il tempo. Il quadro tipico è dolore sul lato interno della caviglia, un piede che si appiattisce e il tallone che ruota verso l’esterno (Deu e colleghi, 2022).
+
+**Come si fa:** stai su un piede accanto a un muro, con la punta delle dita sul muro solo per l’equilibrio. Sali il più in alto possibile sull’avampiede, poi scendi. Fanne qualcuno, poi cambia piede. Fai attenzione a tre cose:
+
+- riesci a salire su un piede con la stessa facilità che sull’altro
+- in cima al sollevamento il tallone ruota verso l’interno, allo stesso modo da entrambi i lati
+- non hai dolore dietro o sotto il malleolo interno
+
+Fatica a salire da un lato, un tallone che non ruota verso l’interno o dolore alla caviglia interna sono i segni che fanno pensare al tendine. Un professionista sanitario usa lo stesso movimento come controllo di screening, e il quadro completo è in [disfunzione del tendine tibiale posteriore](https://walkito.site/it/disfunzione-tendine-tibiale-posteriore/).
+
+Questo controllo riguarda la forma e la sensazione tra un lato e l’altro di un singolo sollevamento, non quanti ne riesci a fare. Se vuoi un numero per la resistenza del polpaccio, con il ritmo usato nella ricerca e i numeri che raggiungono gli adulti sani, usa il [test del sollevamento sulle punte](https://walkito.site/it/test-sollevamento-punte/).
+
+Source: Deu RS, Coslick AM, Dreher G. Tendinopathies of the Foot and Ankle. American Family Physician. 2022;105(5):479–486.
+Source: Kohls-Gatzoulis J, Woods B, Angel JC, Singh D. The prevalence of symptomatic posterior tibialis tendon dysfunction in women over the age of 40 in England. Foot and Ankle Surgery. 2009;15(2):75–81.
+Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
+
+### Cosa misura un professionista sanitario per il piede piatto?
+
+Un professionista sanitario guarda le stesse cose che hai guardato tu, ma le valuta in modo standard. Le due misure più comuni:
+
+- **Foot Posture Index (FPI).** Sei controlli del piede in piedi, ognuno con un punteggio da -2 a +2, tra cui l’angolo del tallone, la sporgenza della caviglia interna e la forma dell’arco. Il totale va da -12 (arco alto) a +12 (piatto). Nei dati raccolti su 619 adulti sani la media era +4, e gli autori considerano i punteggi sotto -3 o sopra +10 chiaramente fuori dall’intervallo normale (Redmond e colleghi, 2008).
+- **Navicular drop.** Il professionista segna l’osso sul lato interno dell’arco (lo scafoide, o navicolare), ne misura l’altezza da seduto con il piede in una posizione standard, poi in piedi, e registra di quanto scende. Negli studi gli adulti sani hanno in media da 3,6 a 8,1 millimetri, e nessuna soglia per “troppo” è stata confermata (Nielsen e colleghi, 2009).
+
+**Queste misure sono migliori dell’impronta, ma non perfette.** Negli anziani, una misura con il righello dell’altezza dell’osso dell’arco corrispondeva bene alle radiografie (r = 0,79), mentre l’FPI corrispondeva meno (r da 0,36 a 0,59), perché valuta tutto il piede e non solo l’arco (Menz e Munteanu, 2005). Il totale dell’FPI ha mostrato nel complesso un’affidabilità moderata, l’altezza del navicolare era la singola misura più affidabile negli adulti, e nessuna delle misure testate era abbastanza affidabile nei bambini piccoli (Evans e colleghi, 2003).
+
+L’esperienza conta. Quando due esaminatori inesperti hanno misurato il navicular drop in 15 persone, i loro risultati concordavano poco (Picciano e colleghi, 1993). In 86 giovani adulti di uno studio successivo, navicular drop e punteggi dell’impronta erano molto ripetibili (Zuil-Escobar e colleghi, 2018). Se il tuo arco viene seguito nel tempo, è utile che a misurarlo sia sempre la stessa persona.
+
+Se un professionista sospetta un piede rigido, una coalizione o un danno al tendine, può prescrivere una radiografia in carico, una TAC o una risonanza magnetica, che nessun controllo a casa può sostituire (Mehdi e colleghi, 2024).
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Evans AM, Copper AW, Scharfbillig RW, Scutter SD, Williams MT. Reliability of the foot posture index and traditional measures of foot position. Journal of the American Podiatric Medical Association. 2003;93(3):203–213.
+Source: Picciano AM, Rowlands MS, Worrell T. Reliability of open and closed kinetic chain subtalar joint neutral positions and navicular drop test. Journal of Orthopaedic & Sports Physical Therapy. 1993;18(4):553–558.
+Source: Zuil-Escobar JC, Martínez-Cepa CB, Martín-Urrialde JA, Gómez-Conesa A. Medial Longitudinal Arch: Accuracy, Reliability, and Correlation Between Navicular Drop Test and Footprint Parameters. Journal of Manipulative and Physiological Therapeutics. 2018;41(8):672–679.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### Cosa fare con il tuo risultato?
+
+Metti insieme i quattro controlli:
+
+- **Arco basso che ricompare sulle punte, nessun dolore, piedi uguali:** un piede piatto flessibile, una variante normale. Non serve fare niente. Gli esercizi sono facoltativi.
+- **Arco basso che ricompare, con archi stanchi o doloranti dopo giornate lunghe:** gli esercizi per piede e caviglia sono un punto di partenza ragionevole. Vedi [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/) per il programma completo.
+- **Arco che resta piatto, un piede più piatto dell’altro o dolore alla caviglia interna:** rivolgiti a un professionista sanitario prima di iniziare gli esercizi. L’elenco qui sotto ha i dettagli.
+
+**Cosa possono e non possono fare gli esercizi.** In 52 persone con piede piatto flessibile, sei settimane di piede corto, lavoro per caviglia e anca e allungamenti hanno migliorato la forma dell’arco più dei soli movimenti della caviglia su e giù (Brijwasi e Borkar, 2023). Una revisione del 2024 sull’allenamento del piede corto non ha trovato un cambiamento chiaro nella postura generale del piede, e un cambiamento in una misura dell’arco solo nei programmi più lunghi di sei settimane (Cheng e colleghi, 2024). Entrambi misuravano la forma, non il dolore.
+
+Le schede qui sotto sono un punto di partenza preso da [esercizi per il piede piatto](https://walkito.site/it/esercizi-piede-piatto/), con le stesse dosi.
+
+- **Piede corto, da seduto** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con il piede appoggiato a terra. Tira l’avampiede verso il tallone così l’arco si alza, e tieni. Tieni il bordo esterno del piede a terra e alza l’arco, come a formare una piccola cupola sotto il piede. Non arricciare le dita. Arricciarle è l’errore più comune in questo esercizio.
+- **Sollevamento dell’alluce** (3 serie da 8, tieni 5 secondi, ogni piede): Siediti con i piedi appoggiati. Solleva solo l’alluce e tieni. Le altre quattro dita restano ferme a terra. Questo esercizio insegna all’alluce a muoversi da solo, il primo interruttore dell’arco.
+- **Sollevamenti sulle punte su due piedi** (3 serie da 10, entrambi i piedi): Stai su entrambi i piedi, sali dritto sopra gli alluci, poi scendi piano. I due piedi si dividono il carico mentre il polpaccio si scalda.
+- **Inversione con elastico** (3 serie da 12, ogni piede): Siediti con un elastico intorno al piede e ruota il piede verso l’interno contro l’elastico. Muovi il piede, non la gamba. Il ginocchio resta fermo. Walkito aggiunge questo esercizio solo dopo sei sessioni di piede corto in piedi, così prima lavorano i muscoli dell’arco.
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Rivolgiti prima a un professionista sanitario se
+
+- l’arco resta piatto quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, e il piede è rigido
+- un piede è diventato più piatto dell’altro nel corso dei mesi, o te ne accorgi all’improvviso
+- hai dolore o gonfiore dietro o sotto il malleolo interno
+- non riesci a salire sulle punte su un piede solo, o salire da quel lato fa male
+- il piede piatto è comparso dopo una caduta, una storta o un trauma
+- hai il diabete e il piede è caldo, arrossato o gonfio, o la sua forma sta cambiando
+- senti intorpidimento, bruciore o formicolio nel piede
+- il piede piatto di un bambino è rigido, fa male o si accompagna a una zoppia
+
+### Come trasformarlo in un piano
+
+Walkito è un’app di esercizi per il dolore al tallone e al piede, su iPhone e Android. Costruisce un piano dalle tue risposte, tra cui dove fa male e da che lato, e ripete un semplice test ogni 14 giorni: sollevamenti sulle punte, tenuta dell’arco, equilibrio su una gamba e confronto tra sinistra e destra.
+
+#### Come faccio a sapere se ho il piede piatto?
+
+Guarda l’impronta del piede bagnato, poi confronta l’arco da seduto e in piedi. Un’impronta senza curva sul lato interno e un arco che sparisce quando sei in piedi fanno pensare a un arco basso. Poi sali sulle punte: se l’arco ricompare, il piede piatto è flessibile, il tipo comune. L’impronta da sola corrisponde solo moderatamente alla vera altezza dell’arco.
+
+#### Il test dell’impronta bagnata è preciso?
+
+Solo a grandi linee. In 95 anziani confrontati con le radiografie, il punteggio dell’impronta corrispondeva moderatamente all’altezza dell’arco, e uno studio del 1992 su 115 uomini ha trovato che l’impronta non permetteva di prevedere l’altezza dell’arco. Anche il grasso sotto la pianta può riempire l’impronta. Usalo come primo sguardo, non come diagnosi.
+
+#### Cos’è il test del piede piatto flessibile?
+
+Controlla se l’arco ricompare. Sali sulle punte, oppure solleva l’alluce mentre il tallone resta giù (il test di Jack, descritto nel 1953). Se compare un arco, il piede piatto è flessibile. Se resta piatto e rigido, un professionista sanitario dovrebbe cercarne la causa. Non abbiamo trovato studi su quanto siano affidabili questi controlli fatti a casa.
+
+#### Come faccio a sapere se il mio piede piatto è rigido?
+
+Un piede piatto rigido non ha arco quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, e spesso lo senti rigido. Una causa è la coalizione tarsale, un ponte tra ossa del piede riportato in una quota tra l’1 e il 13% delle persone. Un piede piatto rigido che fa male richiede un professionista sanitario e di solito esami di imaging.
+
+#### Si può avere il piede piatto da un lato solo?
+
+Sì, e vale la pena controllarlo. Un arco che si abbassa sempre di più da un lato, soprattutto con dolore dietro la caviglia interna o fatica a salire sulle punte su quel piede, è un segno tipico di disfunzione del tendine tibiale posteriore. In 582 donne sopra i 40 anni, il 3,3% ne aveva i primi segni e a nessuna era stata diagnosticata. Rivolgiti a un professionista sanitario.
+
+#### Qual è un navicular drop normale?
+
+Negli studi gli adulti sani hanno in media da 3,6 a 8,1 millimetri di navicular drop, cioè di quanto scende l’osso dell’arco quando sei in piedi. Come soglia per “troppo” sono stati proposti 10, 13 o 15 millimetri, ma nessuna è confermata, e i risultati variano tra esaminatori, soprattutto se inesperti. È difficile misurarlo con precisione da solo.
+
+#### Cos’è il Foot Posture Index?
+
+È un controllo in sei parti che un professionista sanitario fa mentre sei in piedi, e dà a tallone, caviglia e arco un punteggio da -2 a +2 ciascuno, per un totale da -12 (arco alto) a +12 (piatto). In 619 adulti sani la media era +4, cioè normale. Nel complesso ha mostrato un’affidabilità moderata, e in uno studio nessuna misura della postura del piede era abbastanza affidabile nei bambini piccoli.
+
+#### Il piede piatto va trattato se non fa male?
+
+Di solito no. Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una variante normale. Il Framingham Foot Study, su circa 1.900 adulti, non ha trovato un legame tra piede piatto e mal di schiena lombare. Dolore, rigidità o un cambiamento da un lato solo sono i motivi per farlo controllare.
+
+#### Posso fare lo stesso test del piede piatto a mio figlio?
+
+I controlli sulle punte e dell’alluce funzionano anche nei bambini, ma la maggior parte dei bambini piccoli ha l’arco basso, che si forma con la crescita, e in uno studio le misure della postura del piede non erano abbastanza affidabili nei bambini piccoli. Un piede rigido, dolore o una zoppia sono motivi per andare dal medico. Altro in [piede piatto nei bambini](https://walkito.site/it/piede-piatto-bambini/).
+
 ## Chi siamo
 
 https://walkito.site/it/chi-siamo/

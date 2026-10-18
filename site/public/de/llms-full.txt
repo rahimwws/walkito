@@ -9560,6 +9560,521 @@ Ja. Exakt Health ist in der EU (Deutschland) als Medizinprodukt zertifiziert. Da
 
 Walkito passt jede Einheit nach einem Schmerz-Check-in am Morgen an, bevor du anfängst. Ein Wert von 7/10 oder mehr macht die Einheit leichter. Ein Tag mit vielen Schritten löst am nächsten Tag eine Erholungseinheit aus. Exakt passt den Plan danach an, wie du jede Einheit nach dem Ende bewertest. Der Ansatz von Walkito reagiert stärker auf tägliche Schwankungen beim Schmerz, der von Exakt konzentriert sich mehr auf den Fortschritt im gesamten Plan.
 
+## Plantarfasziitis oder Achillessehnenentzündung: So unterscheidest du die beiden
+
+Language: German (Deutsch) · https://walkito.site/de/plantarfasziitis-oder-achillessehne/ · published 2026-10-18 · updated 2026-10-18
+
+Am schnellsten unterscheidest du die beiden danach, wo es wehtut. Eine [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) schmerzt unter der Ferse, am stärksten bei den ersten Schritten am Morgen (Koc und Kollegen, 2023). Eine Achillessehnenentzündung schmerzt hinten an der Ferse oder in der Sehne darüber, meist 2 bis 6 Zentimeter über dem Fersenbein (Chimenti und Kollegen, 2024). Beide sprechen auf Übungen an, aber es sind nicht dieselben Übungen.
+
+- Der Schmerz bei Plantarfasziitis sitzt unter der Ferse, an der Innenseite, und ist typischerweise bei den ersten Schritten nach dem Schlafen oder Sitzen am stärksten (Koc und Kollegen, 2023).
+- Eine Tendinopathie im Mittelteil der Achillessehne schmerzt in der Sehne selbst, meist 2 bis 6 Zentimeter über dem Fersenbein. Schmerz genau dort, wo die Sehne am Knochen ansetzt, ist die Form am Ansatz (Chimenti und Kollegen, 2024).
+- Die Leitlinie von 2023 zu Fersenschmerzen bewertet die Dehnung von Plantarfaszie und Wade mit Empfehlungsgrad **A** und Krafttraining mit **B**. Die Leitlinie von 2024 zur Achillessehne bewertet Übungen, die die Sehne belasten, mit **A** (Koc und Kollegen, 2023; Chimenti und Kollegen, 2024).
+- In einer Studie mit 101 Menschen mit chronischen Fersenschmerzen war eine Plantarfaszien-Dehnung nach 8 Wochen besser als eine Wadendehnung allein (DiGiovanni und Kollegen, 2003). Bei der Achillessehne geht der höchste Empfehlungsgrad der Leitlinie an die Belastung der Sehne, nicht an das Dehnen (Chimenti und Kollegen, 2024).
+- Die beiden hängen zusammen: In 52 MRT-Aufnahmen hatten Menschen mit Veränderungen an der Achillessehne eine dickere Plantarfaszie, und bei 5 von 27 lag sie über dem üblichen Grenzwert für eine Plantarfasziitis (Stecco und Kollegen, 2013).
+
+### Wo tut es weh: unter der Ferse oder hinten?
+
+**Die Stelle ist der deutlichste Unterschied.** Die Plantarfaszie ist das dicke Band unter deinem Fuß, das vom Fersenbein bis zu den Zehen läuft. Eine Plantarfasziitis schmerzt dort, wo dieses Band ansetzt, unter der Ferse und zur Innenseite hin. Wenn du dort mit dem Daumen drückst, tut es meist weh (Koc und Kollegen, 2023).
+
+Die Achillessehne verbindet die Wadenmuskeln mit der Rückseite des Fersenbeins. Es gibt zwei Formen von Achillesschmerz, und die Stelle unterscheidet sie (Chimenti und Kollegen, 2024; Jonsson und Kollegen, 2008):
+
+- **Mittelteil:** Schmerz und oft eine verdickte, druckempfindliche Sehne 2 bis 6 Zentimeter über dem Fersenbein. Die schmerzende Stelle kannst du meist zwischen Daumen und Finger nehmen.
+- **Am Ansatz:** Schmerz genau dort, wo die Sehne hinten am Fersenbein ansetzt, oft schlimmer, wenn Schuhe dort drücken.
+
+Schmerz unter der Ferse, der wehtut, wenn man die Ferse seitlich zusammendrückt, der brennt oder kribbelt oder mit Taubheit einhergeht, spricht für andere Ursachen, etwa einen Nerv, einen Ermüdungsbruch oder das Fettpolster der Ferse (Tu, 2018). Darum geht es unter [Fersenschmerzen nachts](https://walkito.site/de/fersenschmerzen-nachts/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Wann tut es weh: bei den ersten Schritten oder bei Belastung?
+
+**Plantarfasziitis ist ein Schmerz der ersten Schritte.** Die Leitlinie beschreibt Fersenschmerzen, die bei den ersten Schritten am Morgen oder nach dem Sitzen am deutlichsten sind, beim Gehen oft nachlassen und nach langem Stehen oder Gehen wiederkommen (Koc und Kollegen, 2023). [Fersenschmerzen morgens](https://walkito.site/de/fersenschmerzen-morgens/) erklärt dieses Muster.
+
+**Tendinopathie der Achillessehne ist ein Belastungsschmerz.** Auch die Sehne kann morgens steif sein, deshalb werden die beiden verwechselt. Der Unterschied ist, was es im Lauf des Tages schlimmer macht: Belastungen wie Laufen und Springen, und der Schmerz richtet sich meist danach, wie viel du gemacht hast (Chimenti und Kollegen, 2024). Steigungen und schnelles Abdrücken belasten die Sehne noch stärker.
+
+Beides kann also morgens wehtun. Frag dich nicht nur, wann, sondern wo: Ein steifes, schmerzendes Band hinten am Sprunggelenk spricht für die Achillessehne, ein Stechen unter der Ferse für die Plantarfaszie.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Plantarfasziitis oder Achillessehnenentzündung: die Vergleichstabelle
+
+Die Tabelle fasst das typische Bild zusammen. Viele Menschen passen nicht sauber in eine Spalte, und welche der beiden du hast, kann nur eine ärztliche Untersuchung klären.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: de Jonge S, van den Berg C, de Vos RJ, van der Heide HJ, Weir A, Verhaar JA, Bierma-Zeinstra SM, Tol JL. Incidence of midportion Achilles tendinopathy in the general population. British Journal of Sports Medicine. 2011;45(13):1026–1028.
+
+### Welche Übungen passen zur Plantarfasziitis?
+
+**Bei Plantarfasziitis steht das Dehnen an erster Stelle.** Die Leitlinie von 2023 bewertet die Dehnung von Plantarfaszie und Wade mit **A**, ihrem höchsten Empfehlungsgrad, und Krafttraining mit **B** (Koc und Kollegen, 2023).
+
+Wichtig ist die Dehnung, die das Gewölbe erreicht. In einer Studie mit 101 Menschen berichtete die Gruppe mit der Plantarfaszien-Dehnung nach 8 Wochen bessere Ergebnisse als die Gruppe, die nur die Wade dehnte (DiGiovanni und Kollegen, 2003). Für die Kraft nutzte eine Studie von 2015 mit 48 Menschen langsames Fersenheben mit einem Handtuch unter den Zehen. Es linderte den Schmerz nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber etwa gleichauf (Rathleff und Kollegen, 2015).
+
+Das sind die Startdosen aus dem Ratgeber [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
+
+- **Plantarfaszien-Dehnung** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
+- **Wadendehnung** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an eine Wand. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht den ganzen Tag an der Ferse, deshalb ist diese Dehnung wichtig, auch wenn du sie weiter oben spürst.
+- **Fersenheben mit Handtuch** (4 Sätze à 10, jedes Bein, mit Zusatzgewicht): Stell dich auf einem Fuß auf eine Stufe, mit einem eingerollten Handtuch unter den Zehen. Nimm dir drei Sekunden für das Hochkommen, halte oben zwei Sekunden und nimm dir drei Sekunden für das Absenken. Auf dieser Stufe nimmt Walkito Zusatzgewicht dazu, etwa einen Rucksack. Erst das Handtuch sorgt dafür, dass die Übung die Plantarfaszie trainiert und nicht nur die Wade.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Welche Übungen passen zur Achillessehnenentzündung?
+
+**Bei der Achillessehne steht die Belastung an erster Stelle, nicht das Dehnen.** Die Leitlinie von 2024 bewertet Übungen, die die Sehne belasten, mit **A**: Fersenheben, Halten und langsames Absenken, bei denen die Sehne arbeiten muss (Chimenti und Kollegen, 2024). Die Wadendehnung bekommt in der Leitlinie einen niedrigeren Empfehlungsgrad, **C**, und nur für Menschen, deren Sprunggelenk sich schlecht beugen lässt (Chimenti und Kollegen, 2024).
+
+Etwas Schmerz ist erlaubt. In einer Studie mit 38 Menschen war Schmerz bis etwa 5 von 10 während der Belastung in Ordnung, solange er bis zum nächsten Morgen abklang und nicht von Woche zu Woche zunahm. Diese Gruppe stand nach zwölf Monaten genauso gut da wie die Gruppe, die sich zuerst geschont hatte (Silbernagel und Kollegen, 2007).
+
+Wenn der Schmerz direkt am Fersenbein sitzt (am Ansatz), mach jedes Fersenheben und Fersenabsenken auf Bodenhöhe und geh bei Wadendehnungen behutsam vor. Wenn die Ferse unter die Stufe sinkt, drückt das die Sehne gegen den Knochen. In einer Pilotstudie mit 27 Menschen brachte Fersenabsenken auf Bodenhöhe in 67 % der Fälle gute Ergebnisse (Jonsson und Kollegen, 2008). Mehr dazu unter [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+
+- **Fersenheben mit Halten** (3-mal 20 Sekunden halten, beide Füße): Geh auf beiden Füßen auf die Zehenspitzen und halte oben still. Sink nicht wieder ab. Oben zu halten belastet die Sehne ohne das Federn.
+- **Exzentrisches Fersenabsenken (gestrecktes Knie)** (3 Sätze à 10, jedes Bein): Stell dich auf die Kante einer Stufe. Geh auf beiden Füßen hoch, verlagere das Gewicht auf das schmerzende Bein und senk dich über drei Sekunden langsam ab. Komm mit beiden Füßen wieder hoch. Bei Schmerzen direkt am Fersenbein mach die Übung auf flachem Boden und lass die Ferse nicht unter die Stufe sinken.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Kann man Plantarfasziitis und Achillessehnenentzündung gleichzeitig haben?
+
+**Ja, und die beiden hängen zusammen.** In einer Studie mit 52 MRT-Aufnahmen von Menschen mit Fuß- oder Sprunggelenkschmerzen hatten die 27 mit Veränderungen an der Achillessehne eine dickere Plantarfaszie, im Schnitt 3,43 mm gegenüber 2,09 mm. Bei 5 der 27 war die Plantarfaszie dicker als 4,5 mm, ein gängiger Grenzwert für eine Plantarfasziitis. Bei keinem der anderen 25 lag sie über 4 mm (Stecco und Kollegen, 2013).
+
+Dieselbe Studie fand, dass die Plantarfaszie über die Knochenhaut des Fersenbeins mit der Hülle um die Achillessehne verbunden ist. Eine Studie an Körperspendern zeigte, dass Zug an der Achillessehne die Plantarfaszie spannt, und zwar stärker, wenn die Zehen nach oben gebeugt sind (Carlson und Kollegen, 2000). Eine verkürzte oder überlastete Wade kann also an beiden ziehen.
+
+Keine Studie hat gezählt, wie oft Menschen beide Erkrankungen gleichzeitig haben, es gibt also keine verlässliche Zahl. Keine Leitlinie behandelt beides zusammen. Ein Vorgehen, das zu beiden Leitlinien passt: Krafttraining für die Wade, das der Sehne guttut, dazu die Plantarfaszien-Dehnung, die das Gewölbe dehnt, nicht die Achillessehne. Mach das Fersenabsenken auf Bodenhöhe, wenn die Rückseite des Fersenbeins schmerzt.
+
+Source: Stecco C, Corradin M, Macchi V, Morra A, Porzionato A, Biz C, De Caro R. Plantar fascia anatomy and its relationship with Achilles tendon and paratenon. Journal of Anatomy. 2013;223(6):665–676.
+Source: Carlson RE, Fleming LL, Hutton WC. The biomechanical relationship between the tendoachilles, plantar fascia and metatarsophalangeal joint dorsiflexion angle. Foot & Ankle International. 2000;21(1):18–25.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Was verursacht sonst Fersenschmerzen, die ähnlich aussehen?
+
+Mehrere Probleme liegen in der Nähe und können sich ähnlich anfühlen (Choo und Kollegen, 2020; Tu, 2018):
+
+- Ein Knochenvorsprung hinten an der Ferse mit einer schmerzenden, geschwollenen Stelle am Schuhrand: [Haglundferse](https://walkito.site/de/haglundferse/) oder eine Schleimbeutelentzündung hinter dem Fersenbein (retrokalkaneale Bursitis), oft zusammen mit Schmerzen am Ansatz der Achillessehne.
+- Ein Fersensporn auf dem Röntgenbild: häufig und meist nicht die Ursache des Schmerzes. Siehe [Plantarfasziitis oder Fersensporn](https://walkito.site/de/plantarfasziitis-oder-fersensporn/).
+- Ein tiefer Schmerz wie von einer Prellung mitten im Fersenpolster, schlimmer auf hartem Boden: [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
+- Schmerz an beiden Seiten der Ferse, wenn du sie zusammendrückst, nach einer plötzlichen Steigerung beim Gehen oder Laufen: möglicher Ermüdungsbruch, lass das ärztlich abklären.
+- Brennen, Kribbeln oder Taubheit: möglicherweise ein eingeklemmter Nerv.
+
+Source: Choo YJ, Park CH, Chang MC. Rearfoot disorders and conservative treatment: a narrative review. Annals of Palliative Medicine. 2020;9(5):3546–3552.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+
+### Wie lange dauert es jeweils, bis es besser wird?
+
+Bei Plantarfasziitis wird es bei etwa 90 % der Menschen mit Behandlung ohne Operation besser, auch wenn das oft Monate dauert (Latt und Kollegen, 2020). Einzelheiten unter [wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/).
+
+Bei Tendinopathie der Achillessehne liefen die wichtigsten Belastungsstudien über etwa drei Monate und begleiteten die Teilnehmenden bis zu zwölf Monate. Die Leitlinie von 2024 hält fest, dass sich die Funktion innerhalb von 2 Wochen zu bessern beginnen kann, eine weitergehende Erholung aber länger dauert (Chimenti und Kollegen, 2024). Schmerzen am Ansatz ließen sich mit dem klassischen Fersenabsenken unter die Stufe schwerer bessern: In einer früheren Studie hatten nur 32 % gute Ergebnisse, deshalb wird auf Bodenhöhe abgesenkt (Jonsson und Kollegen, 2008).
+
+Keine Studie hat die Erholungszeit der beiden direkt verglichen.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- du hinten am Sprunggelenk ein plötzliches Knallen oder Schnappen gespürt hast oder es sich angefühlt hat, als hätte dich jemand dort getreten, und das Abdrücken jetzt schwerfällt
+- du auf der schmerzenden Seite nicht auf die Zehenspitzen kommst oder eine Lücke in der Sehne spürst
+- du ein Fluorchinolon-Antibiotikum wie Ciprofloxacin nimmst oder kürzlich genommen hast und neue Sehnenschmerzen hast
+- die Ferse rot, heiß und geschwollen ist oder du Fieber hast
+- die Ferse an beiden Seiten wehtut, wenn du sie zusammendrückst, oder nachts oder in Ruhe schmerzt
+- du Brennen, Kribbeln oder Taubheit in der Ferse oder Fußsohle spürst
+- der Schmerz nach einem Sturz oder einer Verletzung begann oder du den Fuß nicht belasten kannst
+- der Schmerz über Wochen trotz regelmäßiger Übungen immer schlimmer wird
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App für Ferse und Fuß. Du sagst ihr, wo es wehtut, unter der Ferse oder hinten, und sie baut den Plan nach deiner Antwort auf: Plantarfaszien-Dehnungen und Fersenheben mit Handtuch bei Fersenschmerzen, Wadenbelastung vom Halten bis zum langsamen Fersenabsenken bei Achillesschmerzen.
+
+#### Woran erkenne ich, ob meine Fersenschmerzen eine Plantarfasziitis oder eine Achillessehnenentzündung sind?
+
+Fang damit an, wo es wehtut. Eine Plantarfasziitis schmerzt unter der Ferse, zur Innenseite hin, und am stärksten bei den ersten Schritten nach Ruhe. Eine Achillessehnenentzündung schmerzt hinten an der Ferse oder in der Sehne 2 bis 6 Zentimeter darüber und wird beim Abdrücken, Laufen und an Steigungen schlimmer. Was es ist, kann eine ärztliche Untersuchung bestätigen.
+
+#### Kann eine Plantarfasziitis Achillesschmerzen verursachen?
+
+Die beiden hängen zusammen, aber keine Studie zeigt, dass das eine das andere verursacht. In 52 MRT-Aufnahmen hatten Menschen mit Veränderungen an der Achillessehne eine dickere Plantarfaszie, 3,43 mm gegenüber 2,09 mm. Eine Studie an Körperspendern zeigte, dass Spannung in der Achillessehne die Plantarfaszie belastet. Eine verkürzte, überlastete Wade belastet vielleicht beide.
+
+#### Ist eine Achillessehnenentzündung morgens schlimmer, wie eine Plantarfasziitis?
+
+Das kann sein. Beide können sich bei den ersten Schritten des Tages steif und schmerzhaft anfühlen, deshalb werden sie verwechselt. Plantarfasziitis ist ein Stechen unter der Ferse, das beim Gehen nachlässt. Achillesschmerz sitzt hinten am Sprunggelenk und nimmt meist beim Laufen, Springen, an Steigungen und auf Treppen zu.
+
+#### Sollte ich bei Achillessehnenentzündung die Wade dehnen?
+
+Das ist optional. Die Leitlinie von 2024 zur Achillessehne stellt Übungen, die die Sehne belasten, an die erste Stelle, mit Empfehlungsgrad A, und gibt der Wadendehnung ein C, für Menschen, deren Sprunggelenk sich schlecht beugen lässt. Wenn dein Schmerz direkt am Fersenbein sitzt, drücken tiefe Wadendehnungen und Fersenabsenken unter die Stufe die Sehne gegen den Knochen. Bleib deshalb sanft und auf Bodenhöhe.
+
+#### Sind die Übungen bei Plantarfasziitis und Achillessehnenentzündung dieselben?
+
+Sie überschneiden sich, sind aber nicht dieselben. Bei Plantarfasziitis stehen Dehnungen von Plantarfaszie und Wade am Anfang, mit Empfehlungsgrad A, dazu Fersenheben mit Empfehlungsgrad B. Bei Achillessehnenentzündung steht die Belastung am Anfang: Fersenheben mit Halten, Fersenheben und langsames Fersenabsenken, mit Empfehlungsgrad A. Krafttraining für die Wade passt zu beiden.
+
+#### Kann man Plantarfasziitis und Achillessehnenentzündung zusammen haben?
+
+Ja. In einer MRT-Studie mit 52 Menschen mit Fuß- oder Sprunggelenkschmerzen hatten 5 der 27 mit Veränderungen an der Achillessehne auch eine Plantarfaszie, die dick genug war, um einen gängigen Grenzwert für Plantarfasziitis zu erreichen. Keine Studie hat gezählt, wie oft beides in der Allgemeinbevölkerung zusammen vorkommt.
+
+#### Ist Schmerz hinten an der Ferse eine Plantarfasziitis?
+
+Meist nicht. Plantarfasziitis schmerzt unter der Ferse. Schmerz hinten an der Ferse ist häufiger eine Tendinopathie der Achillessehne, eine Schleimbeutelentzündung hinter dem Fersenbein oder eine Haglundferse, ein Knochenvorsprung dort, wo die Sehne ansetzt. Ein plötzliches Knallen hinten an der Ferse musst du noch am selben Tag ärztlich abklären lassen.
+
+#### Bedeutet ein Fersensporn Plantarfasziitis oder Achillessehnenentzündung?
+
+Für sich allein keins von beiden. Ein Sporn unter der Ferse liegt nahe der Plantarfaszie, ein Sporn hinten dort, wo die Achillessehne ansetzt, aber Sporne sind auch bei Menschen ohne Schmerzen häufig. Was den Schmerz verursacht, entscheidet die Untersuchung, nicht das Röntgenbild allein.
+
+## Plantarfasziitis oder Ermüdungsbruch der Ferse: so unterscheidest du beides
+
+Language: German (Deutsch) · https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/ · published 2026-10-18 · updated 2026-10-18
+
+Eine [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) tut bei den ersten Schritten nach einer Pause am meisten weh und lässt meist nach, wenn du ein paar Minuten gegangen bist. Bei einem Ermüdungsbruch des Fersenbeins ist es umgekehrt: Der Schmerz nimmt zu, je länger du gehst oder läufst, oft nach einer plötzlichen Steigerung der Aktivität, und Zusammendrücken der Fersenseiten tut meist weh (Tu, 2018). Ein frühes Röntgenbild kann normal aussehen: Bei 30 Rekruten mit einer Stressverletzung der Ferse im MRT war sie im normalen Röntgenbild nur bei 15 % zu sehen (Sormaala und Kollegen, 2006).
+
+- Der Schmerz bei Plantarfasziitis ist laut Leitlinie „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ und lässt beim Gehen nach (Koc und Kollegen, 2023). Der Schmerz bei einem Ermüdungsbruch beginnt bei Aktivität und kann später auch in Ruhe da sein (Tu, 2018).
+- Schmerz beim Zusammendrücken der Seiten des Fersenbeins spricht für einen Ermüdungsbruch (Tu, 2018). Wir haben aber keine Studie gefunden, die gemessen hat, wie zuverlässig der Squeeze-Test an der Ferse ist, und bei Kindern ist er auch bei Morbus Sever schmerzhaft.
+- Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft: Laut einer Übersichtsarbeit liegt ihre Sensitivität beim ersten Termin bei etwa 10 % und steigt nach drei Wochen auf 30 bis 70 % (Patel und Kollegen, 2011). In einer systematischen Übersichtsarbeit von 2016 war das MRT die genaueste Untersuchung (Wright und Kollegen, 2016).
+- Eine plötzliche Steigerung des Trainings ist der klassische Auslöser. Läuferinnen und Läufer mit mehr als 25 Meilen (rund 40 km) pro Woche, Frauen und Menschen mit geringer Energieverfügbarkeit oder schwachen Knochen haben ein höheres Risiko (Patel und Kollegen, 2011; Mountjoy und Kollegen, 2023).
+- Dehnungen und Krafttraining haben bei Plantarfasziitis **Empfehlungsgrad A** und **B** (Koc und Kollegen, 2023). Bei Verdacht auf einen Bruch sind sie kein Plan: Dann braucht es zuerst weniger Belastung, und du solltest es ärztlich abklären lassen.
+
+### Wie unterscheidest du Plantarfasziitis von einem Ermüdungsbruch der Ferse?
+
+**Der deutlichste Hinweis ist, was Gehen mit dem Schmerz macht.** Eine Plantarfasziitis ist bei den ersten Schritten nach dem Schlafen oder Sitzen am schlimmsten, lässt nach ein paar Minuten nach und kann nach einem langen Tag auf den Beinen zurückkommen (Tu, 2018). Die Leitlinie von 2023 zu Fersenschmerzen beschreibt sie als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ ist (Koc und Kollegen, 2023).
+
+Ein Ermüdungsbruch des Fersenbeins ist ein feiner Riss im Knochen durch wiederholte Belastung. Der Schmerz beginnt meist, nachdem du mehr gehst, läufst oder stehst oder auf einen härteren Boden wechselst. Anfangs tut es nur bei Aktivität weh, und der Schmerz nimmt dabei zu. Später kann es auch in Ruhe wehtun (Tu, 2018). In einer Übersichtsarbeit zu Ermüdungsbrüchen allgemein berichteten 81 % der Betroffenen von Schmerzen beim Gehen, 65,9 bis 100 % von einer druckempfindlichen Stelle am Knochen und 18 bis 44 % von einer Schwellung (Patel und Kollegen, 2011).
+
+Die Tabelle fasst die typischen Muster zusammen. Keine einzelne Zeile entscheidet, und manche Menschen passen in keine Spalte genau.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### Was ist der Squeeze-Test, und wie viel sagt er aus?
+
+**Beim Squeeze-Test werden Innen- und Außenseite des Fersenbeins zusammengedrückt, zwischen den Handflächen oder zwischen Daumen und Fingern.** Eine Ärztin oder ein Arzt macht das bei entspanntem Fuß. Schmerz beim Zusammendrücken „spricht für die Diagnose“ eines Ermüdungsbruchs des Fersenbeins, so eine Übersichtsarbeit von 2018 in American Family Physician (Tu, 2018). Eine Plantarfasziitis ist dagegen druckempfindlich, wenn du unten an der vorderen Innenseite der Ferse drückst, dort, wo die Faszie ansetzt.
+
+Seine Grenzen sind real:
+
+- **Niemand hat gemessen, wie zuverlässig er an der Ferse ist.** Wir haben keine Studie gefunden, die angibt, wie oft der Squeeze-Test bei Menschen mit einem bestätigten Ermüdungsbruch des Fersenbeins positiv ist oder wie oft er ohne Bruch positiv ist. Dieselbe Übersichtsarbeit zu Ermüdungsbrüchen merkt an, dass auch der Hüpftest, ein anderer häufiger Test in der Praxis, nicht validiert ist (Patel und Kollegen, 2011).
+- **Ein schmerzfreier Squeeze-Test schließt einen Bruch nicht aus.** Manche Stressverletzungen der Ferse liegen eher im vorderen oder mittleren Teil des Knochens: In einer MRT-Studie lagen 15 von 34 nicht im hinteren Teil (Sormaala und Kollegen, 2006).
+- **Auch anderes tut beim Zusammendrücken weh.** Bei Kindern und jungen Jugendlichen ist ein schmerzhafter Squeeze-Test ein häufiges Zeichen für [Morbus Sever](https://walkito.site/de/morbus-sever/), eine Reizung der Wachstumsfuge (Tu, 2018). Auch andere Probleme am Fersenbein können wehtun. Deshalb gehört das in ärztliche Hände.
+
+Wenn du die Seiten deiner eigenen Ferse zusammendrückst und es wehtut, nimm das als Grund, es ärztlich abklären zu lassen, nicht als Diagnose. Hüpf nicht auf dem Fuß, um es zu testen.
+
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+
+### Wer hat ein höheres Risiko für einen Ermüdungsbruch der Ferse?
+
+Ein Ermüdungsbruch entsteht, wenn der Knochen mehr wiederholte Belastung abbekommt, als er reparieren kann. Das Risiko steigt, wenn die Belastung zunimmt, wenn der Knochen sie schlechter verträgt, oder beides (Warden und Kollegen, 2014).
+
+- **Eine plötzliche Steigerung des Trainings.** Deutlich mehr Gehen, Laufen, Marschieren oder Stehen oder wiederholt harte Einheiten mit wenig Pause sind die klassische Vorgeschichte (Patel und Kollegen, 2011). Ein Wechsel auf einen härteren Untergrund ist an der Ferse ein häufiger Auslöser (Tu, 2018).
+- **Viele Laufkilometer.** Freizeitläuferinnen und Freizeitläufer mit durchschnittlich mehr als 25 Meilen (rund 40 km) pro Woche haben ein höheres Risiko, ebenso Sportlerinnen und Sportler in Leichtathletik, Basketball, Fußball und Tanz (Patel und Kollegen, 2011).
+- **Geringe Energieverfügbarkeit.** Wer für sein Trainingspensum zu wenig isst, kann Hormone und Knochen beeinträchtigen. Das Internationale Olympische Komitee zählt eine schlechte Knochengesundheit, einschließlich Knochenstressverletzungen, zu den Folgen dieses Musters, das relatives Energiedefizit im Sport (REDs) heißt, bei Frauen wie bei Männern (Mountjoy und Kollegen, 2023).
+- **Knochengesundheit.** Frauen mit der Triade der Sportlerin (gestörtes Essverhalten, ausbleibende Periode und geringe Knochendichte) haben ein höheres Risiko, und eine Studie fand niedrigere Vitamin-D-Werte bei Rekruten mit Ermüdungsbrüchen (Patel und Kollegen, 2011). Ein durch Osteoporose geschwächter Knochen kann schon bei normaler Belastung brechen. Das nennt man Insuffizienzfraktur.
+- **Frau sein.** Frauen haben ein höheres Risiko als Männer, vor allem in der militärischen Ausbildung, auch wenn die Daten bei Sportlerinnen uneinheitlich sind (Patel und Kollegen, 2011).
+
+Die Plantarfasziitis hat ein anderes Risikoprofil. In einer Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne hatten Menschen mit 0 Grad Beweglichkeit im Sprunggelenk nach oben (Dorsalflexion) oder weniger eine 23,3-fache Chance gegenüber Menschen mit mehr als 10 Grad, und Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). British Journal of Sports Medicine. 2023;57(17):1073–1097.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Warum kann ein Röntgenbild bei einem Ermüdungsbruch normal aussehen?
+
+**Ein früher Ermüdungsbruch ist oft zu klein für ein Röntgenbild.** Der Knochen reagiert zuerst mit einem Ödem, einer Schwellung in seinem Inneren, die das Röntgenbild nicht zeigt. Zeichen der Reparatur werden erst später sichtbar. Laut einer Übersichtsarbeit liegt die Sensitivität von Röntgenbildern beim ersten Termin bei etwa 10 % und steigt nach drei Wochen auf 30 bis 70 % (Patel und Kollegen, 2011).
+
+Speziell zur Ferse hat eine finnische Studie Rekruten mit belastungsbedingten Schmerzen an Ferse oder Sprunggelenk untersucht, die ein MRT bekamen. Von 30 Rekruten mit Stressverletzungen der Ferse hatten nur 15 % eine sichtbare Verletzung im normalen Röntgenbild. Bei 22 der 34 betroffenen Fersen waren auch benachbarte Fußknochen beteiligt (Sormaala und Kollegen, 2006).
+
+Eine systematische Übersichtsarbeit von 2016 zu Ermüdungsbrüchen an den Beinen fand für Röntgenbilder eine Sensitivität von 12 bis 56 %, für das MRT von 68 bis 99 %. Die Autoren nannten das MRT die sensitivste und spezifischste Untersuchung und warnten, dass Röntgenbilder früh wahrscheinlich falsch negative Ergebnisse liefern (Wright und Kollegen, 2016).
+
+Bei Verdacht auf einen Bruch kann die Ärztin oder der Arzt das Röntgenbild nach zwei bis drei Wochen wiederholen oder direkt ein MRT veranlassen, wenn eine schnelle Antwort wichtig ist (Patel und Kollegen, 2011). Zur Plantarfasziitis sagt die Leitlinie von 2023, dass Bildgebung „meist nicht angezeigt ist bei Patientinnen und Patienten, die die Kriterien der klinischen Untersuchung für eine Plantarfasziitis erfüllen, solange konservative Maßnahmen nicht gescheitert sind“ (Koc und Kollegen, 2023). Die Seite [Plantarfasziitis oder Fersensporn](https://walkito.site/de/plantarfasziitis-oder-fersensporn/) erklärt, warum auch ein Sporn im Röntgenbild die Frage nicht klärt.
+
+Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Wright AA, Hegedus EJ, Lenchik L, Kuhn KJ, Santiago L, Smoliga JM. Diagnostic accuracy of various imaging modalities for suspected lower extremity stress fractures: a systematic review with evidence-based recommendations for clinical practice. American Journal of Sports Medicine. 2016;44(1):255–263.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Was solltest du tun, solange die Ursache noch nicht feststeht?
+
+**Wenn dein Schmerz zur Spalte Ermüdungsbruch passt, nimm Last von der Ferse und mach einen Termin in der Praxis.** Warte nicht ab, ob sich das nach ein paar weiteren Läufen legt. Ein früher Beginn der Behandlung zählt: Eine Übersichtsarbeit merkt an, dass eine Verzögerung mit einer längeren Rückkehr zur Aktivität in Verbindung gebracht wurde (Patel und Kollegen, 2011).
+
+- **Reduziere die Belastung auf das, was schmerzfrei geht.** Das heißt meist, vorerst mit Laufen, Springen und langen Spaziergängen aufzuhören. Manche brauchen eine Zeit lang Unterarmgehstützen oder einen Walker-Stiefel (Patel und Kollegen, 2011; Tu, 2018).
+- **Bleib fit, ohne die Ferse zu belasten,** zum Beispiel mit Schwimmen oder Radfahren, wenn das nicht wehtut (Patel und Kollegen, 2011).
+- **Frag nach Schmerzmitteln.** Dieselbe Übersichtsarbeit sagt, dass entzündungshemmende Mittel bei einem Ermüdungsbruch mit Vorsicht eingesetzt werden sollten, weil einige Tierstudien darauf hindeuten, dass sie die Reparatur des Knochens verlangsamen könnten (Patel und Kollegen, 2011).
+- **Fang noch kein Dehn- oder Kraftprogramm für die Ferse an.** Warte, bis eine Ärztin oder ein Arzt einen Bruch ausgeschlossen oder dir grünes Licht gegeben hat.
+
+Ermüdungsbrüche der Ferse erholen sich bei sonst gesunden Menschen meist gut (Tu, 2018). Bei Ermüdungsbrüchen allgemein dauert die Erholung vier Wochen bis drei Monate oder länger, gerechnet ab dem Zeitpunkt, an dem die Aktivität reduziert wird. Danach wird die Aktivität langsam wieder aufgebaut, sobald du schmerzfrei bist (Patel und Kollegen, 2011).
+
+Wenn dein Schmerz dagegen zur Spalte Plantarfasziitis passt, brauchst du meist keine Bildgebung, um mit den Übungen unten anzufangen (Koc und Kollegen, 2023). Wenn du nicht sicher bist, in welche Spalte du gehörst, lass es zuerst ärztlich abklären.
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Warum sind Übungsprogramme für Plantarfasziitis gedacht und nicht für einen Bruch?
+
+**Dehnen und Belasten helfen bei Plantarfasziitis, weil sich das Gewebe an Belastung anpasst. Ein angebrochener Knochen braucht zuerst weniger Belastung.** Knochenstressverletzungen liegen auf einer Skala: Eine Stressreaktion kann zu einem Ermüdungsbruch fortschreiten und bei weiterer Belastung zu einem vollständigen Bruch (Warden und Kollegen, 2014).
+
+Die Belege für Übungen gelten speziell für die Plantarfasziitis. Die Leitlinie von 2023 zu Fersenschmerzen gibt dort der Dehnung von Plantarfaszie und Wade **Empfehlungsgrad A** und dem Krafttraining **B** (Koc und Kollegen, 2023). Das Programm mit Fersenheben aus der bekanntesten Studie wurde an 48 Menschen mit Plantarfasziitis getestet, nicht an Menschen mit einem Bruch (Rathleff und Kollegen, 2015).
+
+Bei Ermüdungsbrüchen zeigen die Belege in die andere Richtung. Zwei cluster-randomisierte Studien fanden, dass Dehnungen der Beine beim Aufwärmen Ermüdungsbrüche nicht verhinderten (Patel und Kollegen, 2011). Was zählt, ist weniger Belastung und danach eine schrittweise Rückkehr unter ärztlicher Begleitung. Wenn sich ein Bruch erholt hat, wird die Kräftigung der Muskeln um den Knochen ein Teil davon, den nächsten zu verhindern (Warden und Kollegen, 2014).
+
+Deshalb sind die Übungen auf dieser Seite nur für Plantarfasziitis gedacht. Wenn man dir gesagt hat, dass du einen Ermüdungsbruch hast, folge stattdessen dem Plan deiner Ärztin oder deines Arztes für die Rückkehr zur Aktivität.
+
+Source: Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):749–765.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Nur bei Plantarfasziitis: Welche Übungen passen, wenn ein Bruch ausgeschlossen ist?
+
+**Mach diese Übungen nur, wenn dein Schmerz zu einer Plantarfasziitis passt oder eine Ärztin oder ein Arzt einen Bruch ausgeschlossen hat.** Wenn Zusammendrücken der Ferse wehtut, der Schmerz mit jedem Spaziergang zunimmt oder die Ferse geschwollen ist, lass sie weg und lass es zuerst ärztlich abklären.
+
+Das sind die ersten Schritte aus unserem Ratgeber [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/): zuerst Dehnungen, dann Fersenheben im Sitzen, das die Ferse kaum belastet. Die ganze Steigerung bis zum Fersenheben mit Handtuch aus der Studie findest du dort.
+
+- **Plantarfaszien-Dehnung (nur bei Plantarfasziitis)** (2-mal 30 Sekunden halten, jeder Fuß): Setz dich hin und leg den Fuß über das andere Knie. Zieh die Zehen zurück, bis du die Dehnung im Gewölbe spürst, nicht in der Wade. Mach die erste Dehnung auf der Bettkante, bevor dein Fuß den Boden berührt.
+- **Wadendehnung (nur bei Plantarfasziitis)** (2-mal 30 Sekunden halten, jedes Bein): Leg die Hände an eine Wand. Das hintere Bein bleibt gestreckt, die hintere Ferse flach am Boden, die Hüfte nach vorn. Eine verkürzte Wade zieht den ganzen Tag an der Ferse. Deshalb zählt diese Dehnung, auch wenn du sie weiter oben spürst.
+- **Soleusdehnung (nur bei Plantarfasziitis)** (2-mal 30 Sekunden halten, jedes Bein): Geh in dieselbe Position, lass die hintere Ferse flach am Boden und beug dann das hintere Knie, bis du die Dehnung weiter unten spürst, nah an der Ferse. Der Soleus, der tiefere Wadenmuskel, lässt sich nur mit gebeugtem Knie dehnen.
+- **Fersenheben im Sitzen (nur bei Plantarfasziitis)** (3 Sätze à 10, beide Füße): Setz dich mit den Füßen flach auf den Boden und drück dich über die Fußballen nach oben. Die Hände auf den Knien geben zusätzlichen Widerstand. Mit gebeugtem Knie arbeitet vor allem der Soleus, der tiefere Wadenmuskel, und die Ferse wird kaum belastet.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- der Fersenschmerz zunimmt, je länger du gehst oder läufst, statt nachzulassen
+- Zusammendrücken der Seiten des Fersenbeins wehtut
+- die Ferse geschwollen ist oder einen Bluterguss hat oder eine Stelle am Knochen sehr druckempfindlich ist
+- der Schmerz nach einer plötzlichen Steigerung des Trainings oder einem Wechsel auf härteren Boden begann
+- es in Ruhe wehtut oder dich nachts weckt
+- du schon einmal einen Ermüdungsbruch hattest, deine Periode ausbleibt oder ausgeblieben ist oder du eine Essstörung oder eine geringe Knochendichte hast
+- du den Fuß nicht voll belasten kannst oder der Schmerz nach einem Sturz oder Umknicken begann
+- du Brennen, Kribbeln oder Taubheit in der Ferse oder Fußsohle spürst
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App für Fersen- und Fußschmerzen. Ihr Plan ist für Fersenschmerzen vom Typ Plantarfasziitis gebaut, nicht für einen Ermüdungsbruch. Wenn dein Schmerz zum Muster eines Bruchs passt, lass es deshalb ärztlich abklären, bevor du anfängst.
+
+#### Woran erkenne ich, ob mein Fersenschmerz ein Ermüdungsbruch oder eine Plantarfasziitis ist?
+
+Achte darauf, was Gehen mit dem Schmerz macht. Eine Plantarfasziitis tut bei den ersten Schritten nach einer Pause am meisten weh und lässt nach ein paar Minuten nach. Ein Ermüdungsbruch der Ferse folgt meist auf eine plötzliche Steigerung der Aktivität, nimmt zu, je länger du gehst oder läufst, und tut oft weh, wenn die Seiten der Ferse zusammengedrückt werden. Wenn dein Schmerz zum Muster eines Bruchs passt, lass es ärztlich abklären.
+
+#### Kann ein Röntgenbild einen Ermüdungsbruch der Ferse übersehen?
+
+Ja, oft. Bei 30 Rekruten mit einer Stressverletzung der Ferse im MRT zeigte das normale Röntgenbild sie nur bei 15 %. Laut einer Übersichtsarbeit liegt die Sensitivität von Röntgenbildern beim ersten Termin bei etwa 10 % und steigt nach drei Wochen auf 30 bis 70 %. Ein normales frühes Röntgenbild schließt einen Ermüdungsbruch nicht aus.
+
+#### Brauche ich bei Fersenschmerzen ein MRT?
+
+Bei einer typischen Plantarfasziitis nicht: Laut der Leitlinie von 2023 ist Bildgebung meist nicht nötig, wenn die Untersuchung passt. Wenn eine Ärztin oder ein Arzt einen Ermüdungsbruch vermutet, ist das MRT die genaueste Untersuchung. Eine systematische Übersichtsarbeit von 2016 fand für das MRT eine Sensitivität von 68 bis 99 %, für normale Röntgenbilder von 12 bis 56 %.
+
+#### Was bedeutet ein positiver Squeeze-Test?
+
+Schmerz, wenn Innen- und Außenseite des Fersenbeins zusammengedrückt werden, spricht für einen Ermüdungsbruch des Fersenbeins oder bei Kindern für Morbus Sever. Das ist ein Grund, es ärztlich abklären zu lassen, keine Diagnose. Wir haben keine Studie gefunden, die gemessen hat, wie zuverlässig der Squeeze-Test bei Ermüdungsbrüchen der Ferse ist. Ein schmerzfreier Test schließt also keinen aus.
+
+#### Kann man mit einem Ermüdungsbruch der Ferse gehen?
+
+Vielleicht kannst du es, aber du solltest den Fuß meist nicht weiter belasten. Die Behandlung heißt, die Aktivität auf das zu reduzieren, was schmerzfrei geht, und bei starken Schmerzen den Fuß bis zu sechs Wochen wenig bis gar nicht zu belasten, manchmal mit Unterarmgehstützen oder einem Walker-Stiefel. Wie viel Gehen sicher ist, sollte deine Ärztin oder dein Arzt festlegen.
+
+#### Wie lange braucht ein Ermüdungsbruch der Ferse, bis es besser wird?
+
+Bei Ermüdungsbrüchen allgemein dauert die Erholung vier Wochen bis drei Monate oder länger, gerechnet ab dem Zeitpunkt, an dem die Aktivität reduziert wird. Ermüdungsbrüche der Ferse erholen sich bei sonst gesunden Menschen meist gut. Danach wird die Aktivität schrittweise wieder aufgebaut, sobald du schmerzfrei bist. Zum Zeitverlauf bei Plantarfasziitis siehe [wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/).
+
+#### Soll ich dehnen, wenn ich vielleicht einen Ermüdungsbruch habe?
+
+Nein, nicht bevor eine Ärztin oder ein Arzt einen Bruch ausgeschlossen hat. Dehnen und Krafttraining haben bei Plantarfasziitis Empfehlungsgrad A und B, aber ein Verdacht auf einen Bruch braucht zuerst weniger Belastung. Zwei cluster-randomisierte Studien fanden, dass Dehnungen der Beine beim Aufwärmen Ermüdungsbrüche nicht verhinderten. Dehnen ist also nicht das Mittel für den Knochen.
+
+#### Kann aus einer Plantarfasziitis ein Ermüdungsbruch werden?
+
+Keine Studie zeigt, dass aus einer Plantarfasziitis ein Bruch wird. Es sind verschiedene Verletzungen, eine an der Faszie und eine am Knochen. Sie können denselben Auslöser haben, etwa eine plötzliche Steigerung beim Gehen oder Laufen, und eine Stressreaktion des Knochens kann bei weiterer Belastung zu einem Bruch fortschreiten. Wenn sich das Schmerzmuster verändert, lass es abklären.
+
+#### Wer bekommt Ermüdungsbrüche der Ferse?
+
+Vor allem Menschen, die plötzlich mehr trainieren: Läuferinnen und Läufer, Rekruten und Sportlerinnen und Sportler. Wer im Schnitt mehr als 25 Meilen (rund 40 km) pro Woche läuft, hat ein höheres Risiko, Frauen mehr als Männer. Geringe Energieverfügbarkeit, eine ausbleibende Periode und geringe Knochendichte erhöhen das Risiko, und eine Studie fand niedrigere Vitamin-D-Werte bei Rekruten mit Ermüdungsbrüchen.
+
+## Plattfuß-Test zu Hause: 4 einfache Checks und was sie zeigen können und was nicht
+
+Language: German (Deutsch) · https://walkito.site/de/plattfuss-test/ · published 2026-10-18 · updated 2026-10-18
+
+Ob du Plattfüße hast, kannst du zu Hause in etwa fünf Minuten prüfen: Schau dir einen nassen Fußabdruck an, vergleich dein Gewölbe im Sitzen und im Stehen, stell dich auf die Zehenspitzen oder heb deinen großen Zeh an, um zu sehen, ob das Gewölbe zurückkommt, und probier einbeiniges Fersenheben. Der Fußabdruck ist der ungenaueste der vier Tests: Bei 95 älteren Erwachsenen, die mit Röntgenbildern verglichen wurden, passte ein Fußabdruck-Wert nur mäßig zur tatsächlichen Gewölbehöhe (Menz und Munteanu, 2005). Am wichtigsten ist, ob das Gewölbe zurückkommt und ob sich eine Seite anders verhält.
+
+- Ein nasser Fußabdruck ist nur ein grober Anhaltspunkt. Bei 95 Menschen im Alter von 62 bis 94 Jahren passte der Gewölbeindex aus dem Fußabdruck nur mäßig zur Gewölbehöhe im Röntgenbild, während ein Lineal-Maß für den Gewölbeknochen gut dazu passte (Menz und Munteanu, 2005).
+- Fettgewebe unter der Sohle kann einen Fußabdruck auffüllen: Bei 24 Erwachsenen mit Übergewicht oder Adipositas stieg der Gewölbeindex aus dem Fußabdruck mit dem Körperfettanteil (Wearing und Kollegen, 2004).
+- Wenn das Gewölbe zurückkommt, sobald du sitzt, dich auf die Zehenspitzen stellst oder den großen Zeh anhebst, ist der Plattfuß flexibel. Das ist die häufige Form, die in den Übungsstudien untersucht wurde (Brijwasi und Borkar, 2023).
+- Probleme, auf einem Fuß hochzukommen, Schmerzen hinter dem Innenknöchel und ein Gewölbe, das immer flacher wird, sind Zeichen einer Tibialis-posterior-Insuffizienz. Von 582 Frauen über 40 hatten 3,3 % Beschwerden im frühen Stadium (Stadium I oder II), und bei keiner war sie diagnostiziert (Kohls-Gatzoulis und Kollegen, 2009).
+- Auch die Messungen von Fachleuten schwanken: Als zwei unerfahrene Untersucher den Navicular Drop maßen, stimmten sie schlecht überein (Picciano und Kollegen, 1993). In einer späteren Studie mit 86 jungen Erwachsenen war dieselbe Messung gut wiederholbar (Zuil-Escobar und Kollegen, 2018).
+
+### Wie erkennst du zu Hause, ob du Plattfüße hast?
+
+**Mach vier Tests in dieser Reihenfolge, barfuß auf hartem Boden.** Die ersten beiden zeigen dir, wie tief dein Gewölbe liegt. Die letzten beiden zeigen dir, ob es flexibel ist und ob die Sehne, die es trägt, ihre Arbeit macht. Du brauchst ein Handtuch, etwas Wasser, ein Stück Packpapier oder Karton und eine Wand zum Festhalten.
+
+Teste jedes Mal beide Füße. Ein Unterschied zwischen linkem und rechtem Fuß sagt mehr als jeder Fuß für sich, denn bei den meisten Menschen sind beide Füße ungefähr gleich, und ein einzelner Plattfuß ist eines der Warnzeichen am Ende dieser Seite.
+
+### Wie funktioniert der Fußabdruck-Test, und wie genau ist er?
+
+**So geht es:** Mach die Sohle eines Fußes nass, stell dich mit vollem Gewicht auf Packpapier oder trockenen Karton, steh eine Sekunde normal und geh wieder herunter. Mach dasselbe mit dem anderen Fuß. Schau dir die Mitte des Abdrucks an, also den Teil zwischen Ferse und Fußballen:
+
+- **Ein deutlicher Bogen an der Innenseite**, wobei der mittlere Streifen höchstens etwa halb so breit ist wie der Vorfuß: ein typisches Gewölbe.
+- **Ein breiter mittlerer Streifen mit wenig oder gar keinem Bogen**, sodass der Abdruck wie ein Hausschuh aussieht: ein niedriges Gewölbe.
+- **Nur Ferse und Fußballen drücken sich ab**, verbunden durch einen dünnen Streifen oder gar nicht: ein hohes Gewölbe. Mehr unter [Hohlfuß](https://walkito.site/de/hohlfuss-uebungen/).
+
+**Was er zeigen kann:** grob, wie viel von deiner Sohle den Boden berührt. Forschende machen aus demselben Abdruck eine Zahl, den Gewölbeindex (Arch Index), indem sie das mittlere Drittel des Abdrucks mit dem ganzen Abdruck vergleichen (Cavanagh und Rodgers, 1987).
+
+**Was er nicht zeigen kann:** deine tatsächliche Gewölbehöhe. Bei 95 Menschen im Alter von 62 bis 94 Jahren, die mit Röntgenbildern verglichen wurden, passte der Fußabdruck-Index nur mäßig zur Höhe des Gewölbeknochens (Menz und Munteanu, 2005). Eine Studie von 1992 mit 115 Männern fand, dass Fußabdrücke die Gewölbehöhe nicht vorhersagen konnten (Hawes und Kollegen, 1992), während eine Studie von 2009 mit 91 jungen Erwachsenen eine schwache bis mäßige Übereinstimmung mit Röntgenbildern fand (Murley und Kollegen, 2009). Bei 198 Patientinnen und Patienten einer Klinik erkannten drei Fußabdruck-Werte einen Plattfuß im Röntgenbild mit einer Genauigkeit, die die Autoren als mäßig (fair) bezeichneten (Paecharoen und Kollegen, 2023).
+
+Ein Grund ist das Weichgewebe. In einer kleinen Pilotstudie mit 24 Erwachsenen mit Übergewicht oder Adipositas stieg der Fußabdruck-Index beim Gehen mit dem Körperfettanteil. Ein vollerer Abdruck kann also mehr Polster unter dem Gewölbe bedeuten und kein niedrigeres Gewölbe (Wearing und Kollegen, 2004). Ein Abdruck sagt außerdem nichts über Schmerzen, und genau die entscheiden, ob ein Plattfuß überhaupt Aufmerksamkeit braucht.
+
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Cavanagh PR, Rodgers MM. The arch index: a useful measure from footprints. Journal of Biomechanics. 1987;20(5):547–551.
+Source: Hawes MR, Nachbauer W, Sovak D, Nigg BM. Footprint parameters as a measure of arch height. Foot & Ankle. 1992;13(1):22–26.
+Source: Murley GS, Menz HB, Landorf KB. A protocol for classifying normal- and flat-arched foot posture for research studies using clinical and radiographic measurements. Journal of Foot and Ankle Research. 2009;2:22.
+Source: Paecharoen S, Arunakul M, Tantivangphaisal N. Diagnostic Accuracy of Harris Imprint Index, Chippaux-Smirak Index, Staheli Index Compared With Talar-First Metatarsal Angle for Screening Arch of Foot. Annals of Rehabilitation Medicine. 2023;47(3):222–227.
+Source: Wearing SC, Hills AP, Byrne NM, Hennig EM, McDonald M. The arch index: a measure of flat or fat feet? Foot & Ankle International. 2004;25(8):575–581.
+
+### Sieht dein Gewölbe im Sitzen anders aus als im Stehen?
+
+**Setz dich auf einen Stuhl, die Füße flach und locker, und schau dir die Innenseite jedes Fußes an.** Achte auf den Abstand unter dem Gewölbe. Dann steh auf, das Gewicht auf beiden Füßen, und schau noch einmal hin, oder lass jemanden auf Höhe des Bodens ein Foto von der Seite machen.
+
+Ein gewisses Absinken ist normal: Jedes Gewölbe senkt sich unter deinem Gewicht ein wenig. In zusammengefassten Daten von 619 gesunden Erwachsenen stand der durchschnittliche Fuß leicht nach innen gekippt, was die Autoren als normale Stellung bezeichnen (Redmond und Kollegen, 2008). Worauf du achtest, ist eine große Veränderung: ein Gewölbe, das im Sitzen deutlich da ist und im Stehen verschwindet.
+
+**Dann schau von hinten.** Stell dich normal hin und lass jemanden auf Höhe des Bodens auf deine Fersen schauen. Eine Ferse, die nach außen kippt, während der Innenknöchel nach innen vorsteht, gehört zu einem niedrigen Gewölbe. Wenn eine Ferse stärker kippt als die andere, notier das.
+
+Dieser Test zeigt dir, wie stark das Gewölbe absinkt. Genau das misst eine Ärztin oder ein Arzt genauer als Navicular Drop (mehr dazu unten). Er zeigt dir nicht, warum: Ein lockerer Fuß, mit dem du geboren bist, und eine Sehne, die schwächer wird, können im Stehen gleich aussehen. Die nächsten beiden Tests helfen, das zu unterscheiden.
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+
+### Wie testest du, ob ein Plattfuß flexibel ist?
+
+Ein flexibler Plattfuß wird unter deinem Gewicht flach, bekommt sein Gewölbe aber zurück, wenn sich die Belastung ändert. Zwei kurze Tests zeigen das:
+
+- **Zehenstand-Test.** Halt dich an einer Wand fest und komm auf die Fußballen beider Füße hoch. Beobachte die Innenseite jedes Fußes oder die Fersen von hinten. Bei einem flexiblen Fuß erscheint ein Gewölbe, und die Fersen kippen beim Hochkommen leicht nach innen.
+- **Großzehen-Test (Jack-Test).** Stell dich normal hin. Heb deinen großen Zeh so weit wie möglich an, oder lass ihn von jemandem anheben, während die Ferse unten bleibt. Bei einem flexiblen Fuß hebt sich das Gewölbe, wenn der Zeh nach oben geht. Der Test ist nach Jack benannt, der ihn 1953 beschrieben hat (Jack, 1953).
+
+**Wenn das Gewölbe zurückkommt, ist der Plattfuß flexibel.** Das ist die häufige Form und die, die in den Übungsstudien untersucht wurde: Bei 52 Menschen mit flexiblen Plattfüßen verbesserten sechs Wochen Kurzer-Fuß-Übungen, Übungen für Sprunggelenk und Hüfte und Dehnungen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023).
+
+**Wenn das Gewölbe flach bleibt und sich der Fuß steif anfühlt**, ist der Plattfuß vielleicht rigide. Eine Ursache ist die tarsale Koalition, eine Brücke aus Knochen, Knorpel oder Bindegewebe zwischen zwei Fußknochen, die oft bei jungen Erwachsenen mit einem steifen, schmerzhaften Plattfuß gefunden wird (Mehdi und Kollegen, 2024). Bei einem rigiden Plattfuß muss eine Ärztin oder ein Arzt die Ursache finden, bevor du mit einem Übungsprogramm anfängst.
+
+Sei ehrlich, was diese Tests sind. Wir haben keine Studie gefunden, die gemessen hat, wie zuverlässig der Zehenstand-Test oder der Jack-Test bei Erwachsenen ist, wenn man sie zu Hause macht. Sie sind einfach, und das Ergebnis ist meist klar, aber nimm ein steifes Ergebnis als Grund, es ärztlich abklären zu lassen, nicht als Diagnose.
+
+Source: Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. Journal of Bone and Joint Surgery. British Volume. 1953;35-B(1):75–82.
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### Was zeigt einbeiniges Fersenheben bei Plattfüßen?
+
+Der Tibialis posterior ist der Muskel, dessen Sehne hinter dem Innenknöchel verläuft und das Gewölbe trägt. Wenn die Sehne schwächer wird, kann das Gewölbe auf dieser Seite langsam absinken. Das ist die Tibialis-posterior-Insuffizienz, ein häufiger Grund, warum das Gewölbe bei Erwachsenen mit der Zeit flacher wird. Typisch sind Schmerzen an der Innenseite des Sprunggelenks, ein Fuß, der flacher wird, und eine Ferse, die nach außen kippt (Deu und Kollegen, 2022).
+
+**So prüfst du es:** Stell dich neben einer Wand auf einen Fuß, die Fingerspitzen nur zum Gleichgewicht an der Wand. Komm so hoch wie möglich auf den Fußballen und senk dich wieder ab. Mach ein paar Wiederholungen, dann wechsle den Fuß. Achte auf drei Dinge:
+
+- du kommst auf dem einen Fuß so leicht hoch wie auf dem anderen
+- die Ferse dreht sich oben nach innen, auf beiden Seiten gleich
+- es gibt keinen Schmerz hinter oder unter dem Innenknöchel
+
+Wenn du auf einer Seite kaum hochkommst, die Ferse sich nicht nach innen dreht oder der Innenknöchel schmerzt, deutet das auf die Sehne hin. Ärztinnen und Ärzte nutzen dieselbe Bewegung als Suchtest, und das ganze Bild findest du unter [Tibialis-posterior-Insuffizienz](https://walkito.site/de/tibialis-posterior-insuffizienz/).
+
+Bei diesem Test geht es um die Form und das Gefühl einer einzelnen Wiederholung im Seitenvergleich, nicht darum, wie viele du schaffst. Wenn du eine Zahl für die Ausdauer deiner Wade willst, mit dem Tempo aus der Forschung und den Werten, die gesunde Erwachsene erreichen, nimm den [Fersenheben-Test](https://walkito.site/de/fersenheben-test/).
+
+Source: Deu RS, Coslick AM, Dreher G. Tendinopathies of the Foot and Ankle. American Family Physician. 2022;105(5):479–486.
+Source: Kohls-Gatzoulis J, Woods B, Angel JC, Singh D. The prevalence of symptomatic posterior tibialis tendon dysfunction in women over the age of 40 in England. Foot and Ankle Surgery. 2009;15(2):75–81.
+Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
+
+### Was misst eine Ärztin oder ein Arzt bei Plattfüßen?
+
+Eine Ärztin oder ein Arzt schaut auf dieselben Dinge wie du, bewertet sie aber nach einem festen Schema. Die zwei häufigsten Messungen:
+
+- **Foot Posture Index (FPI).** Sechs Prüfungen am stehenden Fuß, jede mit -2 bis +2 bewertet, darunter der Fersenwinkel, das Vorstehen des Innenknöchels und die Form des Gewölbes. Die Summe reicht von -12 (hohes Gewölbe) bis +12 (flach). In zusammengefassten Daten von 619 gesunden Erwachsenen lag der Durchschnitt bei +4, und die Autoren sehen Werte unter -3 oder über +10 als klar außerhalb des Normalbereichs (Redmond und Kollegen, 2008).
+- **Navicular Drop.** Die Ärztin oder der Arzt markiert den Knochen an der Innenseite des Gewölbes, das Kahnbein, misst seine Höhe im Sitzen bei festgelegter Fußstellung, dann im Stehen, und notiert, wie weit es absinkt. Gesunde Erwachsene liegen in Studien im Durchschnitt bei etwa 3,6 bis 8,1 Millimetern, und ein Grenzwert für „zu viel“ ist nicht bestätigt (Nielsen und Kollegen, 2009).
+
+**Diese Messungen sind besser als ein Fußabdruck, aber nicht perfekt.** Bei älteren Erwachsenen passte ein Lineal-Maß für die Höhe des Gewölbeknochens gut zu den Röntgenbildern (r = 0,79), der FPI weniger gut (r = 0,36 bis 0,59), weil er den ganzen Fuß bewertet und nicht nur das Gewölbe (Menz und Munteanu, 2005). Die FPI-Summe zeigte insgesamt eine mäßige Zuverlässigkeit, die Höhe des Kahnbeins war bei Erwachsenen die zuverlässigste Einzelmessung, und keine der getesteten Messungen war bei kleinen Kindern zuverlässig genug (Evans und Kollegen, 2003).
+
+Übung macht einen Unterschied. Als zwei unerfahrene Untersucher bei 15 Menschen den Navicular Drop maßen, stimmten ihre Ergebnisse schlecht überein (Picciano und Kollegen, 1993). Bei 86 jungen Erwachsenen in einer späteren Studie waren Navicular Drop und Fußabdruck-Werte gut wiederholbar (Zuil-Escobar und Kollegen, 2018). Wenn dein Gewölbe über längere Zeit beobachtet wird, hilft es, wenn immer dieselbe Person misst.
+
+Wenn eine Ärztin oder ein Arzt einen rigiden Fuß, eine Koalition oder einen Sehnenschaden vermutet, kann sie oder er ein Röntgenbild im Stehen, eine CT oder eine MRT veranlassen. Das kann kein Test zu Hause ersetzen (Mehdi und Kollegen, 2024).
+
+Source: Redmond AC, Crane YZ, Menz HB. Normative values for the Foot Posture Index. Journal of Foot and Ankle Research. 2008;1(1):6.
+Source: Nielsen RG, Rathleff MS, Simonsen OH, Langberg H. Determination of normal values for navicular drop during walking: a new model correcting for foot length and gender. Journal of Foot and Ankle Research. 2009;2:12.
+Source: Menz HB, Munteanu SE. Validity of 3 clinical techniques for the measurement of static foot posture in older people. Journal of Orthopaedic & Sports Physical Therapy. 2005;35(8):479–486.
+Source: Evans AM, Copper AW, Scharfbillig RW, Scutter SD, Williams MT. Reliability of the foot posture index and traditional measures of foot position. Journal of the American Podiatric Medical Association. 2003;93(3):203–213.
+Source: Picciano AM, Rowlands MS, Worrell T. Reliability of open and closed kinetic chain subtalar joint neutral positions and navicular drop test. Journal of Orthopaedic & Sports Physical Therapy. 1993;18(4):553–558.
+Source: Zuil-Escobar JC, Martínez-Cepa CB, Martín-Urrialde JA, Gómez-Conesa A. Medial Longitudinal Arch: Accuracy, Reliability, and Correlation Between Navicular Drop Test and Footprint Parameters. Journal of Manipulative and Physiological Therapeutics. 2018;41(8):672–679.
+Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics & Traumatology: Surgery & Research. 2024;110(1S):103761.
+
+### Was machst du mit deinem Ergebnis?
+
+Nimm die vier Tests zusammen:
+
+- **Niedriges Gewölbe, das im Zehenstand zurückkommt, keine Schmerzen, beide Füße gleich:** ein flexibler Plattfuß, eine normale Variante. Du musst nichts tun. Übungen sind freiwillig.
+- **Niedriges Gewölbe, das zurückkommt, mit müden oder schmerzenden Gewölben nach langen Tagen:** Übungen für Fuß und Sprunggelenk sind ein sinnvoller Anfang. Das ganze Programm findest du unter [Plattfuß-Übungen](https://walkito.site/de/plattfuss-uebungen/).
+- **Ein Gewölbe, das flach bleibt, ein Fuß flacher als der andere oder Schmerzen am Innenknöchel:** Lass das zuerst ärztlich abklären, bevor du mit Übungen anfängst. Die Liste unten nennt die Einzelheiten.
+
+**Was Übungen können und was nicht.** Bei 52 Menschen mit flexiblen Plattfüßen verbesserten sechs Wochen Kurzer-Fuß-Übungen, Übungen für Sprunggelenk und Hüfte und Dehnungen die Gewölbeform stärker als Auf-und-ab-Bewegungen im Sprunggelenk allein (Brijwasi und Borkar, 2023). Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training fand keine klare Veränderung der Fußhaltung insgesamt und eine Veränderung bei einem Gewölbemaß nur in Programmen, die länger als sechs Wochen dauerten (Cheng und Kollegen, 2024). Beide haben die Form gemessen, nicht den Schmerz.
+
+Die Übungen unten sind ein Einstieg aus den [Plattfuß-Übungen](https://walkito.site/de/plattfuss-uebungen/), mit denselben Dosierungen.
+
+- **Kurzer Fuß im Sitzen** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, der Fuß steht flach auf dem Boden. Zieh den Fußballen Richtung Ferse, sodass sich das Gewölbe hebt, und halte. Die Außenkante des Fußes bleibt am Boden, und das Gewölbe hebt sich so weit, dass darunter ein kleiner Hohlraum entsteht. Krall die Zehen nicht ein. Das Einkrallen ist der häufigste Fehler bei dieser Übung.
+- **Großzehenheben** (3 Sätze à 8, 5 Sekunden halten, jeder Fuß): Setz dich hin, die Füße stehen flach. Heb nur den großen Zeh an und halte. Die anderen vier Zehen bleiben flach am Boden. So lernt der große Zeh, sich allein zu bewegen, und das ist der erste Schalter für das Gewölbe.
+- **Fersenheben beidbeinig** (3 Sätze à 10, beide Füße): Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last, und die Wade wird langsam aktiviert.
+- **Einwärtsdrehen mit Band** (3 Sätze à 12, jeder Fuß): Setz dich hin, ein Widerstandsband liegt um den Fuß, und dreh den Fuß gegen das Band nach innen. Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig. Walkito nimmt diese Übung erst nach sechs Einheiten kurzer Fuß im Stehen dazu, damit zuerst die eigenen Muskeln des Gewölbes drankommen.
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Geh zuerst zum Arzt oder zur Ärztin, wenn
+
+- das Gewölbe flach bleibt, wenn du sitzt, dich auf die Zehenspitzen stellst oder den großen Zeh anhebst, und sich der Fuß steif anfühlt
+- ein Fuß über Monate flacher geworden ist als der andere oder dir das plötzlich auffällt
+- du Schmerzen oder eine Schwellung hinter oder unter dem Innenknöchel hast
+- du nicht auf einem Fuß hochkommst oder das Hochkommen auf dieser Seite wehtut
+- ein Plattfuß nach einem Sturz, einem Umknicken oder einer Verletzung begonnen hat
+- du Diabetes hast und der Fuß warm, gerötet oder geschwollen ist oder sich seine Form verändert
+- du Taubheit, Brennen oder Kribbeln im Fuß spürst
+- der Plattfuß eines Kindes steif ist, wehtut oder mit Hinken einhergeht
+
+### Als Plan umsetzen
+
+Walkito ist eine Übungs-App bei Fersen- und Fußschmerzen, für iPhone und Android. Sie baut aus deinen Antworten einen Plan, auch danach, wo es wehtut und auf welcher Seite, und wiederholt alle 14 Tage einen einfachen Test: Fersenheben, Halten des Gewölbes, Einbeinstand und links gegen rechts.
+
+#### Wie erkenne ich, ob ich Plattfüße habe?
+
+Schau dir einen nassen Fußabdruck an und vergleich dann dein Gewölbe im Sitzen und im Stehen. Ein Abdruck ohne Bogen an der Innenseite und ein Gewölbe, das im Stehen verschwindet, sprechen für ein niedriges Gewölbe. Dann stell dich auf die Zehenspitzen: Wenn das Gewölbe zurückkommt, ist der Plattfuß flexibel, die häufige Form. Ein Fußabdruck allein passt nur mäßig zur tatsächlichen Gewölbehöhe.
+
+#### Wie genau ist der Fußabdruck-Test?
+
+Nur grob. Bei 95 älteren Erwachsenen, die mit Röntgenbildern verglichen wurden, passte der Fußabdruck-Wert mäßig zur Gewölbehöhe, und eine Studie von 1992 mit 115 Männern fand, dass Fußabdrücke die Gewölbehöhe nicht vorhersagen konnten. Auch Fettgewebe unter der Sohle kann den Abdruck auffüllen. Nimm ihn als ersten Eindruck, nicht als Diagnose.
+
+#### Was ist der Test auf einen flexiblen Plattfuß?
+
+Er prüft, ob das Gewölbe zurückkommt. Stell dich auf die Zehenspitzen oder heb deinen großen Zeh an, während die Ferse unten bleibt (der Jack-Test, 1953 beschrieben). Wenn ein Gewölbe erscheint, ist der Plattfuß flexibel. Bleibt er flach und steif, sollte eine Ärztin oder ein Arzt nach der Ursache suchen. Wir haben keine Studie dazu gefunden, wie zuverlässig einer der beiden Tests zu Hause ist.
+
+#### Woran erkenne ich, ob meine Plattfüße rigide sind?
+
+Ein rigider Plattfuß hat kein Gewölbe, wenn du sitzt, dich auf die Zehenspitzen stellst oder den großen Zeh anhebst, und er fühlt sich oft steif an. Eine Ursache ist die tarsale Koalition, eine Brücke zwischen Fußknochen, die bei 1 bis 13 % der Menschen beschrieben wird. Ein rigider Plattfuß, der schmerzt, gehört zur Ärztin oder zum Arzt und braucht meist eine Bildgebung.
+
+#### Kann man nur auf einer Seite einen Plattfuß haben?
+
+Ja, und es lohnt sich, das prüfen zu lassen. Ein Gewölbe, das auf einer Seite immer flacher wird, vor allem mit Schmerzen hinter dem Innenknöchel oder Problemen, auf diesem Fuß hochzukommen, ist ein typisches Zeichen einer Tibialis-posterior-Insuffizienz. Von 582 Frauen über 40 hatten 3,3 % frühe Zeichen davon, und bei keiner war sie diagnostiziert. Lass es ärztlich abklären.
+
+#### Was ist ein normaler Navicular Drop?
+
+In Studien liegt der Navicular Drop bei gesunden Erwachsenen im Durchschnitt bei etwa 3,6 bis 8,1 Millimetern. Das ist die Strecke, um die der Gewölbeknochen absinkt, wenn du aufstehst. Grenzwerte von 10, 13 oder 15 Millimetern für „zu viel“ wurden vorgeschlagen, aber keiner ist bestätigt, und die Ergebnisse schwanken zwischen Untersuchern, vor allem unerfahrenen. An dir selbst lässt er sich kaum genau messen.
+
+#### Was ist der Foot Posture Index?
+
+Das ist eine Prüfung aus sechs Teilen, die eine Ärztin oder ein Arzt im Stehen macht. Ferse, Sprunggelenk und Gewölbe werden jeweils mit -2 bis +2 bewertet, für eine Summe von -12 (hohes Gewölbe) bis +12 (flach). Bei 619 gesunden Erwachsenen lag der Durchschnitt bei +4, was normal ist. Er zeigte insgesamt eine mäßige Zuverlässigkeit, und keine getestete Messung der Fußhaltung war bei kleinen Kindern zuverlässig genug.
+
+#### Müssen Plattfüße behandelt werden, wenn sie nicht wehtun?
+
+Meist nicht. Ein flexibler Plattfuß, der keine Schmerzen macht und dich in nichts einschränkt, ist eine normale Variante. Die Framingham Foot Study mit etwa 1900 Erwachsenen fand keinen Zusammenhang zwischen Plattfußhaltung und Kreuzschmerzen. Schmerzen, Steifheit oder eine Veränderung auf einer Seite sind die Gründe, es abklären zu lassen.
+
+#### Kann ich mein Kind genauso auf Plattfüße testen?
+
+Der Zehenstand-Test und der Großzehen-Test funktionieren auch bei Kindern, aber die meisten kleinen Kinder haben ein niedriges Gewölbe, das sich mit dem Alter bildet, und in einer Studie waren Messungen der Fußhaltung bei kleinen Kindern nicht zuverlässig genug. Ein steifer Fuß, Schmerzen oder Hinken sind Gründe, zur Ärztin oder zum Arzt zu gehen. Mehr unter [Plattfuß bei Kindern](https://walkito.site/de/plattfuss-bei-kindern/).
+
 ## Über Walkito
 
 https://walkito.site/de/ueber-walkito/
