@@ -98,7 +98,7 @@ export function CalfRaiseCalculator({ lang, children }: { lang: Lang; children?:
                 return (
                   <li key={side} className={`tool-verdict tool-${v}`}>
                     <b>
-                      {side === 'left' ? c.left : c.right}: {n}
+                      {side === 'left' ? c.left : c.right}{lang === 'fr' ? '\u00A0:' : ':'} {n}
                     </b>
                     , {c.verdict[v]}
                   </li>

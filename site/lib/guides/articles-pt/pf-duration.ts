@@ -36,6 +36,7 @@ export const PF_DURATION_PT: Guide = {
   sections: [
     {
       h2: 'Quanto tempo a fascite plantar costuma durar?',
+      tool: 'pf-timeline',
       keyFact: 'Em um grupo de 174\u00A0pessoas, o risco de ainda ter sintomas de fascite plantar era de 80,5% com um ano, caindo para 45,6% com dez anos (Hansen e colegas, 2018).',
       paragraphs: [
         '**Não existe um número único.** A recuperação depende:',

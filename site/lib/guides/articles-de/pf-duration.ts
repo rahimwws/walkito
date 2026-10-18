@@ -35,6 +35,7 @@ export const PF_DURATION_DE: Guide = {
   sections: [
     {
       h2: 'Wie lange dauert eine Plantarfasziitis meistens?',
+      tool: 'pf-timeline',
       keyFact: 'In einer Kohorte von 174\u00A0Menschen lag das Risiko, noch Beschwerden einer Plantarfasziitis zu haben, nach einem Jahr bei 80,5\u00A0% und sank bis zum zehnten Jahr auf 45,6\u00A0% (Hansen und Kollegen, 2018).',
       paragraphs: [
         '**Eine einzelne Zahl gibt es nicht.** Die Erholung hängt davon ab:',

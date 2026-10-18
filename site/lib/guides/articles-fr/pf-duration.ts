@@ -36,6 +36,7 @@ export const PF_DURATION_FR: Guide = {
   sections: [
     {
       h2: 'Combien de temps dure en général une fasciite plantaire\u00A0?',
+      tool: 'pf-timeline',
       keyFact: 'Dans une cohorte de 174\u00A0personnes, le risque d’avoir encore des symptômes de fasciite plantaire était de 80,5\u00A0% à un an, et descendait à 45,6\u00A0% à dix ans (Hansen et coll., 2018).',
       paragraphs: [
         '**Il n’y a pas de chiffre unique.** La récupération dépend\u00A0:',

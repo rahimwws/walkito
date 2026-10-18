@@ -75,7 +75,7 @@ function calfCalc(root: HTMLElement) {
       ...(['left', 'right'] as const).map((side) => {
         const n = side === 'left' ? l : r;
         const v = compareToMedian(n, median);
-        return h('li', `tool-verdict tool-${v}`, h('b', null, `${side === 'left' ? c.left : c.right}: ${n}`), `, ${c.verdict[v]}`);
+        return h('li', `tool-verdict tool-${v}`, h('b', null, `${side === 'left' ? c.left : c.right}${lang === 'fr' ? '\u00A0:' : ':'} ${n}`), `, ${c.verdict[v]}`);
       }),
     );
     const result = h(
