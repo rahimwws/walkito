@@ -107,7 +107,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
       },
       exercises: [
         {
-          name: 'Elevação do dedão (ioga dos dedos)',
+          name: 'Elevação do dedão',
           evidence: { level: 'early', why: 'A ressonância magnética mostra que ele trabalha os pequenos músculos do pé. Não foi testado sozinho para força, equilíbrio ou dor.' },
           dose: 'O Walkito começa com 3\u00A0séries de 8, 5\u00A0segundos parado, cada pé',
           how: 'Sente-se com os pés apoiados no chão. Levante só o dedão enquanto os quatro dedos menores pressionam o chão. Segure, abaixe e depois inverta: dedão no chão, dedos menores para cima. Técnica completa na página de [elevação do dedão](/pt/exercicios/elevacao-do-dedao/).',
@@ -274,7 +274,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito inclui a elevação do dedão, o abrir os dedos, o puxar a toalha com os dedos e o exercício de pé curto, e sobe um exercício de nível quando as suas duas últimas sessões com ele pareceram fáceis e a dor não aumentou. O trabalho de dedos e arco começa com 3\u00A0séries de 8 e 5\u00A0segundos parado, dentro de sessões de 3, 5 ou 10\u00A0minutos, 3, 5 ou 7\u00A0dias por semana.',
     more: [
       'A cada 14\u00A0dias no início, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Ele não mede diretamente a força dos dedos, então os testes caseiros desta página continuam valendo a pena. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

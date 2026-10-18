@@ -124,7 +124,7 @@ export const EX_TIBIALIS_RAISES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du einen scharfen, eng umgrenzten Schmerz am Schienbeinknochen hast statt eines verteilten Muskelkaters',
       'der Schmerz beim Laufen zunimmt, nachdem du vor Kurzem deine Kilometer gesteigert hast, denn das kann statt auf Muskelermüdung auf einen Ermüdungsbruch hindeuten',

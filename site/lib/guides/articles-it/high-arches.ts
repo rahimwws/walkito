@@ -75,7 +75,7 @@ export const HIGH_ARCHES_IT: Guide = {
     {
       h2: 'Quando il piede cavo va controllato da un professionista sanitario?',
       paragraphs: [
-        'Non ogni piede cavo ha bisogno di accertamenti neurologici. Ma alcuni schemi vanno sempre valutati.',
+        'Non ogni piede cavo ha bisogno di accertamenti neurologici. Ma alcuni quadri vanno sempre valutati.',
         'Un piede cavo che peggiora, cioè un arco che si alza nel corso di mesi o anni, **è un campanello d’allarme per una causa neurologica.** Un altro è il piede cavo da un solo lato, quando un piede ha l’arco molto più alto dell’altro.',
         'Motivi per rivolgerti a un neurologo o a uno specialista di piede e caviglia:',
         {
@@ -216,7 +216,7 @@ export const HIGH_ARCHES_IT: Guide = {
     {
       q: 'Quali esercizi aiutano il piede cavo?',
       cites: [CITE.guideline],
-      a: 'Nessuno studio ha testato esercizi proprio per il piede cavo. Gli esercizi con le prove migliori per gli schemi di dolore comuni nel piede cavo sono l’allungamento del polpaccio e della fascia plantare, entrambi con una A nella linea guida del 2023 sul dolore al tallone per il dolore sotto il tallone. Il lavoro sulla stabilità della caviglia e il massaggio con la pallina affrontano l’instabilità e la rigidità della fascia comuni nel piede cavo.',
+      a: 'Nessuno studio ha testato esercizi proprio per il piede cavo. Gli esercizi con le prove migliori per i tipi di dolore comuni nel piede cavo sono l’allungamento del polpaccio e della fascia plantare, entrambi con una A nella linea guida del 2023 sul dolore al tallone per il dolore sotto il tallone. Il lavoro sulla stabilità della caviglia e il massaggio con la pallina affrontano l’instabilità e la rigidità della fascia comuni nel piede cavo.',
     },
     {
       q: 'I plantari aiutano il dolore da piede cavo?',
@@ -244,7 +244,7 @@ export const HIGH_ARCHES_IT: Guide = {
     {
       q: 'Il piede cavo può causare la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Il piede cavo è elencato tra i fattori di rischio della fascite plantare. Il piede rigido mette più tensione sulla fascia plantare a ogni passo, e la fascia spesso è già rigida di partenza. Se hai il piede cavo e un dolore sotto il tallone che è peggio al mattino, quello schema è compatibile con la fascite plantare e valgono gli esercizi della pagina [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+      a: 'Il piede cavo è elencato tra i fattori di rischio della fascite plantare. Il piede rigido mette più tensione sulla fascia plantare a ogni passo, e la fascia spesso è già rigida di partenza. Se hai il piede cavo e un dolore sotto il tallone che è peggio al mattino, quel quadro è compatibile con la fascite plantare e valgono gli esercizi della pagina [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
     },
     {
       q: 'Come capisco se ho l’arco plantare troppo alto?',
@@ -271,7 +271,7 @@ export const HIGH_ARCHES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito comprende allungamento del polpaccio, allungamento della fascia plantare, lavoro sulla stabilità della caviglia e massaggio con la pallina, tutti rilevanti per il piede cavo. Quando indichi l’arco sulla mappa del corpo, l’app propone esercizi per quella zona. Ma l’app non ha un obiettivo o un programma specifico per il piede cavo. Se il piede cavo ti dà dolore sotto il tallone, gli obiettivi dell’app per il dolore al tallone possono andare bene. Se il dolore è soprattutto sotto l’avampiede o legato a un problema neurologico, il piano di esercizi va guidato da un professionista sanitario.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

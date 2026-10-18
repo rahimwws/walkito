@@ -138,7 +138,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du scharfe Hüftschmerzen hast, die das Belasten einschränken',
       'das Knie nach innen einknickt und du es trotz Übung nicht kontrollieren kannst',

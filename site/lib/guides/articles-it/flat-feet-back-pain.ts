@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       paragraphs: [
         'La spiegazione più comune è la catena cinetica: l’idea che le articolazioni dal piede alla colonna si muovano come un sistema collegato, per cui un piede che cede verso l’interno fa ruotare verso l’interno tibia e coscia, inclina il bacino e carica la parte bassa della schiena in modo diverso. **La meccanica è reale, ma l’entità dell’effetto sembra piccola.**',
         'In uno studio di laboratorio del 2021, 20\u00A0persone hanno camminato con plantari a cuneo che facevano cedere i piedi verso l’interno. Il bacino si inclinava un po’ di più da un lato (in media circa mezzo grado) e l’anca ruotava verso l’interno di circa 1,4\u00A0gradi. Questo dimostra che il piede può spostare un po’ il bacino. Non dimostra che mezzo grado causi dolore, e lo studio non ha misurato il dolore.',
-        'La catena cinetica è un’idea ragionevole che un professionista sanitario può verificare nella singola persona. Non è un motivo per dare per scontato che i tuoi archi siano dietro il tuo mal di schiena.',
+        'La catena cinetica è un’idea ragionevole che un professionista sanitario può verificare nella singola persona. Non è un motivo per dare per scontato che il tuo arco plantare sia dietro il tuo mal di schiena.',
       ],
       cites: [CITE.hornestam],
     },
@@ -252,7 +252,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è un programma di esercizi per piedi e gambe. Per il piede piatto, costruisce un piano una settimana alla volta intorno a obiettivi per i piedi, come una tenuta dell’arco di 60\u00A0secondi e 30\u00A0secondi di equilibrio su una gamba. Fa partire il piede corto da 3\u00A0serie da 8 con tenute di 5\u00A0secondi, il lavoro sull’anca da 3\u00A0serie da 10 e gli allungamenti del polpaccio da 2\u00A0tenute da 30\u00A0secondi.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando nei tuoi piedi.',

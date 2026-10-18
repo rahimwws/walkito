@@ -107,7 +107,7 @@ export const BAREFOOT_IT: Guide = {
         '**Attenzione ai pavimenti duri, soprattutto appena ti alzi al mattino.** Nessuno studio ha testato il camminare scalzi in casa con il dolore al tallone, quindi questo è un consiglio prudente, non una regola testata.',
         'Piastrelle o parquet non danno ammortizzazione al tallone, e i primi passi dopo il riposo sono il momento in cui di solito la fascite plantare fa più male. La nostra pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) suggerisce un allungamento prima di alzarti e qualcosa ai piedi per quei primi passi.',
         'L’ammortizzazione sotto il tallone può contare. In uno studio del 2023, Landorf e colleghi hanno confrontato 50\u00A0persone con dolore sotto il tallone con 25\u00A0persone simili senza dolore. Chi aveva dolore al tallone stava in piedi 3,4\u00A0ore in più al giorno e portava scarpe con talloni più duri. Questo mostra un legame, non una causa.',
-        'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo schema.',
+        'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo tipo di dolore.',
         'Brevi momenti a piedi nudi su erba o sabbia sono più delicati. Se la mattina dopo il dolore al tallone è aumentato, era troppo.',
       ],
       cites: [CITE.landorfFootwear],
@@ -121,7 +121,7 @@ export const BAREFOOT_IT: Guide = {
         alt: 'Tre piedi visti dal lato interno: un piede piatto con l’arco a terra, un arco tipico con un piccolo spazio e un arco alto con un grande spazio.',
       },
       paragraphs: [
-        '**Ci sono indizi, ma nessuno studio sperimentale.** Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva archi più alti e più rigidi e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
+        '**Ci sono indizi, ma nessuno studio sperimentale.** Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva l’arco plantare più alto e più rigido e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
         'Un’indagine più vecchia su 2.300\u00A0bambini in India, di Rao e Joseph nel 1992, ha trovato il piede piatto nell’8,6% dei bambini che portavano scarpe e nel 2,8% di quelli che non le portavano. Il piede piatto era più comune nei bambini che portavano scarpe chiuse.',
         'Entrambi gli studi confrontano gruppi diversi sotto molti aspetti, quindi non possono dimostrare che le scarpe causino il piede piatto, o che scarpe nuove alzino l’arco di un adulto. Nessuno studio lo ha testato.',
         'Conta di più il tipo di piede piatto:',
@@ -161,7 +161,7 @@ export const BAREFOOT_IT: Guide = {
         'Cammina prima di correre. Inizia con brevi momenti di camminata quotidiana, con le scarpe di sempre per il resto della giornata.',
         'Aumenta il tempo solo quando piedi e polpacci stanno normalmente la mattina dopo.',
         'All’inizio aspettati piedi e polpacci stanchi. Un dolore acuto è un’altra cosa.',
-        'Fermati e fatti controllare se il dolore sta in un punto preciso di un osso, spesso sul dorso del piede, e peggiora camminando. È lo schema di una frattura da stress.',
+        'Fermati e fatti controllare se il dolore sta in un punto preciso di un osso, spesso sul dorso del piede, e peggiora camminando. È il quadro tipico di una frattura da stress.',
         'Continua a correre con le scarpe di sempre finché camminare con quelle nuove non ti sembra normale, poi aggiungi la corsa a piccole dosi.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.curtisMinimal, CITE.ridgeEdema],
@@ -274,7 +274,7 @@ export const BAREFOOT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è un programma di esercizi per il dolore a tallone, piede e gamba. Comprende il piede corto, l’apertura delle dita, i sollevamenti sulle punte e il lavoro di equilibrio di questa pagina, e li fa progredire man mano che diventano più facili. Non sceglie le tue scarpe e non fa diagnosi. Un piede e un polpaccio più forti sono una base sensata, qualunque scarpa tu finisca per portare.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni (poi ogni 28 quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è pensato per gli adulti e non sostituisce un professionista sanitario.',

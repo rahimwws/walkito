@@ -252,7 +252,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito é um programa de exercícios para os pés e a parte de baixo das pernas. Para pé chato, ele monta um plano uma semana de cada vez em torno de metas para os pés, como sustentar o arco por 60\u00A0segundos e ficar 30\u00A0segundos em equilíbrio em uma perna. Ele começa o pé curto com 3\u00A0séries de 8, segurando 5\u00A0segundos, o trabalho de quadril com 3\u00A0séries de 10 e o alongamento de panturrilha com 2\u00A0vezes de 30\u00A0segundos.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando nos seus pés.',

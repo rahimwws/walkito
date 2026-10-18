@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito acrescenta a inversão do tornozelo com faixa depois de seis sessões de pé curto em pé. A progressão garante que os músculos intrínsecos do pé estejam ativos antes de o estabilizador extrínseco receber carga. As sessões são de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o tempo de sustentação do arco e a resistência da panturrilha.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

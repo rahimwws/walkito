@@ -138,9 +138,9 @@ export const FOOT_STRENGTHENING_IT: Guide = {
           often: 'Quando la versione da seduto è facile',
           feel: 'L’arco che si alza sotto il peso del corpo',
           stop: 'Dolore a 6/10, o le dita continuano a fare presa',
-          how: 'Stai in piedi con il peso distribuito su entrambi i piedi. Alza gli archi come da seduto, dita rilassate, ginocchia morbide. Tieni, poi rilassa.',
+          how: 'Stai in piedi con il peso distribuito su entrambi i piedi. Alza l’arco plantare come da seduto, dita rilassate, ginocchia morbide. Tieni, poi rilassa.',
           media: 'short_foot_double',
-          caption: 'Piede corto, in piedi: alza entrambi gli archi senza piegare le dita',
+          caption: 'Piede corto, in piedi: alza l’arco plantare di entrambi i piedi senza piegare le dita',
           alt: 'Una figura in piedi che alza l’arco di entrambi i piedi',
           evidence: { level: 'moderate', why: 'La progressione da seduti a in piedi era usata nella maggior parte degli studi della revisione del 2023. Non testata da sola per dolore o infortuni.' },
         },
@@ -289,7 +289,7 @@ export const FOOT_STRENGTHENING_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano settimanale intorno a un obiettivo e comprende gli esercizi per il piede di questa pagina: l’esercizio del piede corto da seduto fino a una gamba, l’apertura delle dita, il sollevamento dell’alluce, la raccolta dell’asciugamano, i sollevamenti sulle punte e il lavoro di equilibrio. Fa partire gli esercizi per l’arco da 3\u00A0serie da 8 con tenute di 5\u00A0secondi e l’equilibrio da 3\u00A0tenute da 20\u00A0secondi, e a ogni nuovo piano settimanale fa salire di un gradino il tuo esercizio principale quando hai valutato facili le ultime due sessioni con quell’esercizio e il dolore del mattino non è aumentato.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. All’inizio, ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

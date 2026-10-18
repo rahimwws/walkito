@@ -144,7 +144,7 @@ export const EX_TOE_SPREAD_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito pone la separación de dedos en los días de fuerza, junto con otros ejercicios para los músculos intrínsecos del pie. El plan la alterna con el pie corto y la inversión con banda para que los músculos del pie tengan trabajo variado sin sobrecargar un solo movimiento. Eliges sesiones de 3, 5 o 10\u00A0minutos.',
     cta: 'Empieza con una sesión de 3\u00A0minutos.',
   },

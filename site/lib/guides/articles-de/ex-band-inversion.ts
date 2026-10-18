@@ -125,7 +125,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du Schmerzen oder eine Schwellung am Innenknöchel hast, die bei Aktivität schlimmer werden',
       'du nicht auf einem Fuß auf die Zehen hochkommst, was auf eine Schwäche der Tibialis-posterior-Sehne hindeuten kann',

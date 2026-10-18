@@ -54,10 +54,10 @@ export const NURSES_DE: Guide = {
     },
     {
       h2: 'Welche Übungen helfen Pflegekräften bei Fußschmerzen?',
-      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie mit A, ihrer besten Bewertung, und Krafttraining mit B (Koc und Kollegen, 2023).',
+      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie mit A, dem höchsten Empfehlungsgrad, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
         'Die Übungen, die helfen, sind dieselben, die bei Plantarfasziitis und Fußschmerzen vom Stehen ansetzen: Wadendehnungen, eine Plantarfaszien-Dehnung, Fersenheben für die Kraft der Wade und eine Übung fürs Gewölbe, der kurze Fuß. Der Unterschied in der Pflege ist, sie rund um die wechselnden Schichten einzubauen, nicht während der Schicht. **Ein paar Minuten vor oder nach einer Schicht reichen für die wichtigsten.**',
-        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie ihre beste Bewertung, A, und Krafttraining ein B. Beide Bewertungen gelten speziell für Plantarfasziitis, aber die beteiligten Gewebe sind dieselben, die in einer Pflegeschicht die Last tragen. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
+        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie den höchsten Empfehlungsgrad A und Krafttraining Grad B. Beide Empfehlungsgrade gelten speziell für Plantarfasziitis, aber die beteiligten Gewebe sind dieselben, die in einer Pflegeschicht die Last tragen. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
       ],
       exercises: [
         {
@@ -103,7 +103,7 @@ export const NURSES_DE: Guide = {
             why: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Krafttraining bei Plantarfasziitis mit B. Baut die Kraft in der Wade auf, die in einer Schicht die Stöße abfängt.',
           },
           dose: '3\u00A0Sätze à 10, beide Füße',
-          how: 'Stell dich auf beide Füße, komm in etwa drei Sekunden gerade über die großen Zehen hoch und senk dich dann in drei Sekunden langsam ab. Halt dich zum Ausbalancieren an einer Wand oder einem Geländer fest. Alle Details zu dieser Übung, auch wie du steigerst und die Variante mit Handtuch, findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+          how: 'Stell dich auf beide Füße, komm in etwa drei Sekunden gerade über die großen Zehen hoch und senk dich dann in drei Sekunden langsam ab. Halt dich zum Ausbalancieren an einer Wand oder einem Geländer fest. Alle Details zu dieser Übung, auch wie du steigerst und die Variante mit Handtuch, findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
           media: 'heel_raise_double',
           caption: 'Fersenheben: über die großen Zehen hoch, langsam absenken',
           alt: 'Eine stehende Figur kommt auf die Zehen beider Füße, die Waden sind hervorgehoben',
@@ -159,7 +159,7 @@ export const NURSES_DE: Guide = {
       h2: 'Machen Arbeitsschuhe in der Pflege einen Unterschied: Clogs, Sneaker oder etwas anderes?',
       paragraphs: [
         'Schuhe sind eines der meistdiskutierten Themen unter Pflegekräften, aber die Belege für einen Typ gegenüber einem anderen sind begrenzt. Eine Untersuchung von 2007 zu drei Marken professioneller Pflegeschuhe fand, dass der Schuh mit der stärker gedämpften Innensohle und besserer Gewölbestütze die Muskelarbeit in den Beinen im Vergleich zu den anderen beiden verringerte, aber die Studie war klein und auf bestimmte Marken bezogen.',
-        'Was die Forschung breiter stützt: Bequeme Schuhe zählen. In einer Umfrage unter 125\u00A0Pflegekräften in Notaufnahme und Ambulanz berichteten 72\u00A0% derer, die ihre Schuhe als wenig bequem empfanden, auch über Fuß- und Fersenschmerzen, verglichen mit 28\u00A0% derer, die sie als sehr bequem empfanden. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein mit B dagegen für die kurzfristige Linderung bei Plantarfasziitis, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen.',
+        'Was die Forschung breiter stützt: Bequeme Schuhe zählen. In einer Umfrage unter 125\u00A0Pflegekräften in Notaufnahme und Ambulanz berichteten 72\u00A0% derer, die ihre Schuhe als wenig bequem empfanden, auch über Fuß- und Fersenschmerzen, verglichen mit 28\u00A0% derer, die sie als sehr bequem empfanden. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein mit Empfehlungsgrad B gegen die Anwendung für die kurzfristige Linderung bei Plantarfasziitis, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen.',
         'Ein praktischer Weg: Wähl einen Schuh, der gut passt, etwas Dämpfung hat und die Zehen nicht einklemmt. Wenn du schon Schmerzen an Ferse oder Gewölbe hast, setzen die Übungen auf dieser Seite direkt an den Geweben an. **Schuhe und Einlagen können den Komfort während einer Schicht verbessern, aber sie ersetzen weder Dehnen noch Krafttraining.**',
       ],
       cites: [CITE.guideline],
@@ -194,9 +194,9 @@ export const NURSES_DE: Guide = {
     {
       h2: 'Könnten Fußschmerzen nach einer Pflegeschicht eine Plantarfasziitis oder etwas anderes sein?',
       paragraphs: [
-        'Allgemeine Schmerzen und Müdigkeit nach einer langen Schicht sind häufig und vergehen meist mit Ruhe. Plantarfasziitis ist eine bestimmte Erkrankung: ein stechender Schmerz nahe der Ferse, am schlimmsten bei den ersten Schritten nach einer Pause (beim Aufstehen aus dem Bett oder nach langem Sitzen). Wenn dein Schmerz diesem Muster folgt, sind die Übungen unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber, und die Details zum Fersenheben stehen unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        'Allgemeine Schmerzen und Müdigkeit nach einer langen Schicht sind häufig und vergehen meist mit Ruhe. Plantarfasziitis ist eine bestimmte Erkrankung: ein stechender Schmerz nahe der Ferse, am schlimmsten bei den ersten Schritten nach einer Pause (beim Aufstehen aus dem Bett oder nach langem Sitzen). Wenn dein Schmerz diesem Muster folgt, sind die Übungen unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber, und die Details zum Fersenheben stehen unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Wenn sich deine Gewölbe am Ende einer Schicht flach oder nach innen gekippt anfühlen, zielen die Übungen unter [Übungen bei Plattfuß und abgesunkenem Gewölbe](/de/plattfuss-uebungen/) auf die Muskeln, die das Gewölbe oben halten. Schmerz am Schienbein entlang könnte ein Schienbeinkantensyndrom sein. Schmerz in der Achillessehne hinten an der Ferse ist ein anderes Problem.',
-        'Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/). **Wenn du nicht sicher bist, woher der Schmerz kommt, geh zu einer medizinischen Fachperson, bevor du ihn mit Übungen belastest.**',
+        'Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/). **Wenn du nicht sicher bist, woher der Schmerz kommt, lass das zuerst ärztlich abklären, bevor du ihn mit Übungen belastest.**',
       ],
     },
   ],
@@ -232,12 +232,12 @@ export const NURSES_DE: Guide = {
     },
     {
       q: 'Was sollte ich als Pflegekraft bei Fußschmerzen als Erstes tun?',
-      a: 'Unter den Optionen auf dieser Seite hat die tägliche Wadendehnung die stärkste Unterstützung durch die Leitlinie (Bewertung A bei Plantarfasziitis) und zielt auf den stärksten einzelnen beeinflussbaren Risikofaktor, eine verkürzte Wade. Sie dauert etwa 2\u00A0Minuten, braucht keine Ausrüstung und geht im Pausenraum oder zu Hause. Kompressionsstrümpfe an Schichttagen decken die Seite von Schwellung und Ermüdung ab.',
+      a: 'Unter den Optionen auf dieser Seite hat die tägliche Wadendehnung die stärkste Unterstützung durch die Leitlinie (Empfehlungsgrad A bei Plantarfasziitis) und zielt auf den stärksten einzelnen beeinflussbaren Risikofaktor, eine verkürzte Wade. Sie dauert etwa 2\u00A0Minuten, braucht keine Ausrüstung und geht im Pausenraum oder zu Hause. Kompressionsstrümpfe an Schichttagen decken die Seite von Schwellung und Ermüdung ab.',
       cites: [CITE.guideline, CITE.riddle],
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer bestimmten Verletzung oder einem Sturz bei der Arbeit angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -257,7 +257,7 @@ export const NURSES_DE: Guide = {
       'Du musst dir Reihenfolge, Dosis und den Zeitpunkt für die schwerere Variante nicht selbst überlegen. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Wenn deine Fußschmerzen dem Muster der Plantarfasziitis mit Schmerzen am Morgen folgen, ist das erste Ziel Morgenschmerz bei oder unter 1 von 10 an 14\u00A0Tagen am Stück.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, ob die Arbeit etwas bringt. Im Schichtdienst spielt die Tageszeit keine Rolle. Es zählt, die Einheiten regelmäßig zu machen.',
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts wach hält, geh zuerst zu einer medizinischen Fachperson.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts wach hält, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

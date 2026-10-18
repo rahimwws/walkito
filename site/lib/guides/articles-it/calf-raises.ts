@@ -158,7 +158,7 @@ export const CALF_RAISES_IT: Guide = {
             'Sollevamenti sulle punte su due piedi.',
             'Tenuta sulle punte.',
             'Sollevamenti sulle punte con asciugamano.',
-            'Discese del tallone (una discesa eccentrica dal bordo di un gradino).',
+            'Discese eccentriche (dal bordo di un gradino).',
             'Saltelli sulle punte.',
           ],
         },
@@ -183,7 +183,7 @@ export const CALF_RAISES_IT: Guide = {
       paragraphs: [
         '**Il movimento è quasi lo stesso, ma cambiano lo scopo, l’asciugamano e la regola sul dolore.** Per la fascite plantare, l’asciugamano sotto le dita carica la fascia attraverso il meccanismo a verricello. Il ritmo è 3\u00A0secondi su, 2 in alto, 3 giù, a giorni alterni. La regola sul dolore di questa pagina è: fermati se il dolore arriva a 6/10 o più.',
         'Per la tendinite d’Achille, il protocollo classico è la discesa eccentrica del tallone (solo la discesa, con la salita fatta su due piedi), in origine due volte al giorno, sette giorni su sette, e anche con dolore fino a circa 5/10 purché passi entro la mattina dopo.',
-        'L’asciugamano non si usa perché caricare la fascia non è lo scopo. E per il dolore all’inserzione dell’Achille, proprio dietro l’osso del tallone, le discese del tallone vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda schiaccia il tendine contro l’osso.',
+        'L’asciugamano non si usa perché caricare la fascia non è lo scopo. E per il dolore all’inserzione dell’Achille, proprio dietro l’osso del tallone, le discese eccentriche vanno fatte a terra in piano invece di scendere sotto il bordo del gradino, perché una dorsiflessione profonda schiaccia il tendine contro l’osso.',
         'I due esercizi sono parenti stretti. Se il dolore è dietro il tallone o nel tendine sopra, e non sotto il piede, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -276,8 +276,8 @@ export const CALF_RAISES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
-    text: 'Non devi capire da solo le serie, il peso o quando passare al gradino successivo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per 14\u00A0giorni di fila. La scala dei sollevamenti sulle punte (da seduto, su due piedi, tenuta, con asciugamano, discese del tallone) va al tuo ritmo, non secondo un calendario fisso.',
+    h2: 'Come trasformarlo in un piano',
+    text: 'Non devi capire da solo le serie, il peso o quando passare al gradino successivo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per 14\u00A0giorni di fila. La scala dei sollevamenti sulle punte (da seduto, su due piedi, tenuta, con asciugamano, discese eccentriche) va al tuo ritmo, non secondo un calendario fisso.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto quell’obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],

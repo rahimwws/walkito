@@ -274,7 +274,7 @@ export const TOE_STRENGTHENING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito incluye la elevación del dedo gordo, la separación de dedos, recoger la toalla y el ejercicio de pie corto, y sube un ejercicio de nivel cuando tus dos últimas sesiones con él se sintieron fáciles y el dolor no aumentó. El trabajo de dedos y arco empieza con 3\u00A0series de 8 sosteniendo 5\u00A0segundos, dentro de sesiones de 3, 5 o 10\u00A0minutos, 3, 5 o 7\u00A0días a la semana.',
     more: [
       'Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. No mide directamente la fuerza de los dedos, así que vale la pena seguir haciendo las pruebas caseras de esta página. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

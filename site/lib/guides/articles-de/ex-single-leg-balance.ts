@@ -149,7 +149,7 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du oft das Gleichgewicht verlierst oder stürzt, ohne dass Untergrund oder Schuhe das erklären',
       'ein Sprunggelenk immer wieder wegknickt, vor allem nach einem früheren Umknicktrauma',

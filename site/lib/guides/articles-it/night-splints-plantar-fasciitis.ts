@@ -202,8 +202,8 @@ export const NIGHT_SPLINTS_IT: Guide = {
     {
       h2: 'A chi può essere utile un tutore notturno, e chi dovrebbe evitarlo?',
       paragraphs: [
-        '**Un tutore notturno è più adatto se la tua fascite plantare segue lo schema classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di una spina calcaneare alla radiografia.',
-        'Un tutore ha meno senso se il tallone ti fa male soprattutto mentre sei sdraiato a letto, o ti sveglia. È uno schema diverso, e [dolore al tallone di notte](/it/dolore-tallone-di-notte/) spiega le cause da escludere. Un tutore è poco adatto anche se hai una sensibilità o una circolazione ridotte ai piedi, perché cinghie e gusci possono sfregare la pelle che non senti.',
+        '**Un tutore notturno è più adatto se la tua fascite plantare ha l’andamento classico**: i primi passi appena sceso dal letto sono i peggiori della giornata, e continua così nonostante gli allungamenti regolari. È esattamente il gruppo indicato dalla linea guida. Nello studio di Powell, la risposta al tutore non dipendeva dal tipo di piede, dal peso corporeo o dalla presenza di uno sperone calcaneare alla radiografia.',
+        'Un tutore ha meno senso se il tallone ti fa male soprattutto mentre sei sdraiato a letto, o ti sveglia. È un quadro diverso, e [dolore al tallone di notte](/it/dolore-tallone-di-notte/) spiega le cause da escludere. Un tutore è poco adatto anche se hai una sensibilità o una circolazione ridotte ai piedi, perché cinghie e gusci possono sfregare la pelle che non senti.',
         'La fascite plantare spesso si calma nel giro di mesi qualunque cosa usi, ed è uno dei motivi per cui gli studi sui tutori sono difficili da interpretare. Per tempi realistici, vedi [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/).',
       ],
       cites: [CITE.guideline, CITE.powellSplint],
@@ -254,7 +254,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Il tutore lavora di notte. Di giorno c’è l’esercizio. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore ai primi passi a 1 su 10 o meno per 14\u00A0giorni di fila. Allungamenti come questi sono nel piano fin dalla prima settimana, e il rinforzo del polpaccio sale al tuo ritmo.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del mattino), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi, non fornisce tutori e non sostituisce un professionista sanitario.',

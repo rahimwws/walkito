@@ -37,7 +37,7 @@ export const CALF_RAISES_FR: Guide = {
         'Les montées sur pointes sont utiles en cas de fasciite plantaire, car elles renforcent la chaîne mollet-tendon d’Achille-fascia, qui absorbe la charge chaque fois que le talon touche le sol.',
         'Le seul essai randomisé à avoir testé directement cet exercice dans la fasciite plantaire est celui de Rathleff, en 2015. Dans cet essai, 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie ont été réparties en deux groupes. Les deux portaient des semelles. Un groupe faisait une montée sur pointes lente, avec charge, une serviette roulée sous les orteils. L’autre étirait le fascia plantaire.',
         'À trois mois, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index. À douze mois, les deux groupes s’étaient rejoints.',
-        '**Les montées sur pointes ont donc accéléré l’amélioration.** Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
+        '**Les montées sur pointes ont donc accéléré l’amélioration.** Elles ne l’ont pas amplifiée à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
       ],
       sourceNote:
         'Rathleff 2015\u00A0: Foot Function Index inférieur de 29\u00A0points dans le groupe des montées sur pointes à 3\u00A0mois (IC à 95\u00A0% 6-52, p = 0,016). À 12\u00A0mois, 22 contre 16, une différence non significative.',

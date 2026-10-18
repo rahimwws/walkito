@@ -324,7 +324,7 @@ export const SHIN_SPLINTS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: `O Walkito não tem um programa específico para canelite, e esta página explica por quê: nenhum programa de exercícios mostrou acelerar a recuperação da canelite em um ensaio. O que o Walkito tem é trabalho de panturrilha, tornozelo e equilíbrio que mira os mesmos músculos que os pesquisadores estudaram, e um plano que se adapta a como cada manhã está.`,
     more: [
       `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando a sua primeira meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho na perna está fazendo efeito.`,

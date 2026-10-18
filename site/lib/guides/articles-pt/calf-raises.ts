@@ -89,7 +89,7 @@ export const CALF_RAISES_PT: Guide = {
           alt: 'Uma figura com uma perna à frente da outra e os joelhos dobrados, com a parte baixa da panturrilha destacada',
         },
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: { level: 'moderate', why: 'O grau B da diretriz cobre o treino de força em geral. Este degrau mais leve não foi testado sozinho.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.',
@@ -97,7 +97,7 @@ export const CALF_RAISES_PT: Guide = {
           feel: 'Trabalho na parte baixa da panturrilha (o sóleo), quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',
+          caption: 'Elevação de calcanhar sentada: suba empurrando pela parte da frente dos pés',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
         {
@@ -105,7 +105,7 @@ export const CALF_RAISES_PT: Guide = {
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Um degrau antes do trabalho com carga em uma perna.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga.',
-          often: 'Dias de força, quando a elevação sentado parecer fácil por duas sessões',
+          often: 'Dias de força, quando a elevação sentada parecer fácil por duas sessões',
           feel: 'As panturrilhas trabalhando juntas',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_double',
@@ -116,7 +116,7 @@ export const CALF_RAISES_PT: Guide = {
           name: 'Elevação de calcanhar sustentada',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Sustentação isométrica no fim do movimento; não foi testada sozinha em um ensaio de fascite plantar.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o impulso de uma repetição completa.',
           often: 'Dias de força, o degrau depois da elevação com os dois pés',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
@@ -146,12 +146,12 @@ export const CALF_RAISES_PT: Guide = {
     {
       h2: 'Por onde o Walkito começa?',
       paragraphs: [
-        'O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentado (3\u00A0séries de 10, os dois pés), depois passa para a elevação em pé com os dois pés, depois a elevação de calcanhar sustentada, e só então a elevação em uma perna com toalha e carga. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
+        'O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentada (3\u00A0séries de 10, os dois pés), depois passa para a elevação em pé com os dois pés, depois a elevação de calcanhar sustentada, e só então a elevação em uma perna com toalha e carga. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
         'Essa escada é o ritmo do próprio app, não um protocolo publicado, e existe porque a maioria das pessoas que começa um plano de exercícios para dor no calcanhar não está pronta para uma elevação em uma perna com peso na primeira sessão.',
         'A cadeia da panturrilha no app é:',
         {
           list: [
-            'Elevação de calcanhar sentado.',
+            'Elevação de calcanhar sentada.',
             'Elevação de calcanhar com os dois pés.',
             'Elevação de calcanhar sustentada.',
             'Elevação de calcanhar com toalha.',
@@ -245,7 +245,7 @@ export const CALF_RAISES_PT: Guide = {
     },
     {
       q: 'É normal sentir o exercício na panturrilha e não no calcanhar?',
-      a: 'Sim. A elevação de calcanhar sentado e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.',
+      a: 'Sim. A elevação de calcanhar sentada e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.',
     },
     {
       q: 'Panturrilha fraca causa fascite plantar?',
@@ -273,7 +273,7 @@ export const CALF_RAISES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa descobrir as séries, o peso nem quando passar para o próximo degrau. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14\u00A0dias seguidos. A escada da elevação de calcanhar (sentado, com os dois pés, sustentada, com toalha, descidas de calcanhar) anda no seu ritmo, não em um calendário fixo.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando essa meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

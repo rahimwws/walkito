@@ -18,7 +18,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
   updated: '2026-10-08',
   title: 'Fasciite plantaire\u00A0: symptômes, causes et ce qui aide',
   description:
-    'Fasciite plantaire\u00A0: symptômes, causes, ce que recommande la recommandation clinique de 2023, temps de récupération et exercices qui aident.',
+    'Fasciite plantaire\u00A0: symptômes, causes, ce que préconise la recommandation clinique de 2023, temps de récupération et exercices qui aident.',
   h1: 'Fasciite plantaire\u00A0: symptômes, causes et ce qui aide selon les données',
   lede:
     'La fasciite plantaire est une douleur sous le talon due à une surcharge du fascia plantaire, l’épaisse bande de tissu qui va de l’os du talon aux orteils. C’est la cause la plus fréquente de douleur sous le talon. La recommandation clinique de 2023 sur la douleur au talon donne aux étirements sa meilleure note et au renforcement musculaire la deuxième, et environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux.',
@@ -118,7 +118,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
           ['Attelles de nuit pendant 1 à 3\u00A0mois', '**A**', 'Meilleure note pour une douleur du matin qui persiste. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/).'],
           ['Renforcement musculaire (montées sur pointes avec charge)', '**B**', 'A accéléré l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
           ['Laser de basse intensité', '**B**', 'Fait en cabinet.'],
-          ['Dry needling', '**B**', 'Fait en cabinet.'],
+          ['Puncture sèche (dry needling)', '**B**', 'Fait en cabinet.'],
           ['Semelles orthopédiques associées à d’autres soins', '**C**', 'Preuves faibles. Peuvent aider dans le cadre d’un programme plus large.'],
           ['Semelles orthopédiques seules, à court terme', '**B contre**', 'La recommandation **déconseille** cette option utilisée seule.'],
           ['Ultrasons thérapeutiques ajoutés aux étirements', '**A contre**', 'Les preuves ne soutiennent pas cet ajout.'],
@@ -134,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       paragraphs: [
         'Une revue de 2020 indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux, souvent en quelques mois. Un suivi plus long de 174\u00A0patients donne une image plus détaillée\u00A0: environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre eux ne signalaient que des symptômes légers.',
         'La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une épine calcanéenne, non.',
-        'La question utile n’est pas «\u00A0dans combien de semaines ce sera fini\u00A0?» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?\u00A0». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.',
+        'La question utile n’est pas «\u00A0dans combien de semaines ce sera fini\u00A0?\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?\u00A0». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },

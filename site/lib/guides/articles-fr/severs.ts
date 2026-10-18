@@ -23,7 +23,7 @@ export const SEVERS_FR: Guide = {
   lede:
     'La maladie de Sever, aussi appelée apophysite calcanéenne, est la cause la plus fréquente de douleur au talon chez l’enfant. Elle survient quand le cartilage de croissance à l’arrière de l’os du talon est irrité par la traction répétée du tendon d’Achille, en général pendant une poussée de croissance et un sport avec de la course ou des sauts. Ce n’est pas une maladie au sens habituel. Elle disparaît d’elle-même une fois le cartilage de croissance fermé.',
   intro: [
-    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur demande un professionnel de santé plutôt que du repos.',
+    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur relève d’un professionnel de santé plutôt que du repos.',
     'Walkito est une application d’exercices conçue pour les adultes souffrant du talon et de la voûte plantaire. Elle n’est pas conçue pour les enfants, et rien sur cette page ne recommande de l’utiliser avec un enfant. Si la douleur au talon de votre enfant ne s’améliore pas avec les mesures ci-dessous, un médecin du sport pédiatrique ou un podologue est la bonne prochaine étape.',
   ],
   takeaways: [
@@ -181,7 +181,7 @@ export const SEVERS_FR: Guide = {
     {
       q: 'Avec quoi peut-on confondre la maladie de Sever\u00A0?',
       cites: [CITE.wiegerinck],
-      a: 'Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15\u00A0ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis demandent un professionnel de santé pour écarter une fracture.',
+      a: 'Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15\u00A0ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis relèvent d’un professionnel de santé, qui pourra écarter une fracture.',
     },
     {
       q: 'Comment poser un strap (kinésio) pour la maladie de Sever\u00A0?',

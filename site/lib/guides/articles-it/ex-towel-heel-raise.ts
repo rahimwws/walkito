@@ -19,7 +19,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     'Il sollevamento sulle punte con asciugamano del protocollo Rathleff per la fascite plantare: serie, ritmo, errori comuni, versioni più facili e difficili.',
   h1: 'Sollevamento sulle punte con asciugamano: il protocollo Rathleff ad alto carico, passo per passo',
   lede:
-    'Il sollevamento sulle punte con asciugamano è un sollevamento del polpaccio su una gamba sola, su un gradino, con un asciugamano arrotolato sotto le dita. Viene da uno studio del 2015 su 48\u00A0persone con fascite plantare, in cui questo esercizio ha ridotto il dolore al tallone più in fretta del solo stretching nell’arco di tre mesi. È l’asciugamano a renderlo diverso da un normale sollevamento sulle punte: coinvolge la fascia plantare attraverso il meccanismo a verricello.',
+    'Il sollevamento sulle punte con asciugamano è un sollevamento sulle punte su una gamba sola, su un gradino, con un asciugamano arrotolato sotto le dita. Viene da uno studio del 2015 su 48\u00A0persone con fascite plantare, in cui questo esercizio ha ridotto il dolore al tallone più in fretta del solo stretching nell’arco di tre mesi. È l’asciugamano a renderlo diverso da un normale sollevamento sulle punte: coinvolge la fascia plantare attraverso il meccanismo a verricello.',
   takeaways: [
     'In uno studio su 48\u00A0persone, i sollevamenti sulle punte con asciugamano e con carico hanno ottenuto un punteggio migliore di 29\u00A0punti nel Foot Function Index rispetto al solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
     'La linea guida del 2023 sul dolore al tallone dà al lavoro di forza una B, un gradino sotto lo stretching con la A, e consiglia entrambi (Koc e colleghi, 2023).',
@@ -168,7 +168,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Il sollevamento sulle punte con asciugamano è un gradino di una catena per il polpaccio che Walkito inserisce in un piano settimanale. La catena va dai sollevamenti sulle punte da seduto ai sollevamenti su due piedi, alla tenuta, al sollevamento con asciugamano, alle discese eccentriche del tallone, fino ai saltelli sulle punte. Ogni gradino si apre quando due sessioni al livello attuale ti sono sembrate facili.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. Walkito è un programma di esercizi, non uno strumento di diagnosi.',

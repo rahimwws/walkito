@@ -254,7 +254,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'La férula trabaja de noche. El ejercicio pasa de día. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta son mañanas más fáciles: dolor en los primeros pasos de 1 de 10 o menos durante 14\u00A0días seguidos. Estiramientos como estos están en el plan desde la primera semana, y el trabajo de fuerza de pantorrilla avanza a tu ritmo.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas la meta de la mañana), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica, no da férulas y no reemplaza a un profesional de la salud.',

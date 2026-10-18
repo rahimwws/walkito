@@ -24,19 +24,19 @@ export const BEST_APP_DE: Guide = {
     'Die eine beste App für alle gibt es nicht. Die richtige Wahl hängt davon ab, was du brauchst: Wer nach einer Plantarfasziitis wieder mit dem Laufen anfangen will, braucht etwas anderes als jemand mit Plattfüßen, der den ganzen Tag bei der Arbeit steht, und beide brauchen etwas anderes als jemand, dessen Arbeitgeber Hinge Health bezahlt. Die Kriterien unten erklären, worauf du achten solltest, und die Tabelle danach zeigt, wo jede App steht.',
   ],
   takeaways: [
-    'Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade die Bewertung A und Krafttraining die Bewertung B. Eine gute App sollte beides enthalten.',
+    'Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade den Empfehlungsgrad A und Krafttraining den Empfehlungsgrad B. Eine gute App sollte beides enthalten.',
     'Anpassung an den Schmerz zählt: Eine feste tägliche Routine kann einen guten Morgen nicht von einem schlechten unterscheiden, und eine gereizte Faszie jeden Tag gleich zu belasten, kann dich zurückwerfen.',
     'Exakt Health ist die stärkste Option für Läuferinnen und Läufer, die sich von einer Plantarfasziitis erholen und auch einen Plan für den Wiedereinstieg ins Laufen wollen, und es ist in der EU als Medizinprodukt zertifiziert.',
     'Hinge Health ist über Arbeitgeber und Krankenversicherungen kostenlos und bietet ein vollständiges klinisches Betreuungsteam, aber du kannst es nicht selbst kaufen.',
-    'Keine App kann deine Fußschmerzen diagnostizieren. Wenn der Schmerz nach einer Verletzung begann, mit Schwellung oder Taubheit einhergeht oder dich nachts weckt, geh zu einer medizinischen Fachperson, bevor du ein Programm anfängst.',
+    'Keine App kann deine Fußschmerzen diagnostizieren. Wenn der Schmerz nach einer Verletzung begann, mit Schwellung oder Taubheit einhergeht oder dich nachts weckt, lass das zuerst ärztlich abklären, bevor du ein Programm anfängst.',
   ],
   toc: true,
   sections: [
     {
       h2: 'Was sollte eine App bei Plantarfasziitis wirklich können?',
-      keyFact: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, der besten Bewertung, und Krafttraining mit B (Koc und Kollegen, 2023).',
+      keyFact: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Plantarfaszie und Wade mit A, dem höchsten Empfehlungsgrad, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Eine nützliche App bei Plantarfasziitis sollte Übungen enthalten, die zur Forschung passen. Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet die Belege für jeden Ansatz. Dehnen von Plantarfaszie und Wade bekommt ein A, die beste Bewertung. Krafttraining bekommt ein B. **Beides sollte also in der App sein, nicht nur eins davon.**',
+        'Eine nützliche App bei Plantarfasziitis sollte Übungen enthalten, die zur Forschung passen. Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet die Belege für jeden Ansatz. Dehnen von Plantarfaszie und Wade bekommt Grad A, den höchsten Empfehlungsgrad. Krafttraining bekommt Grad B. **Beides sollte also in der App sein, nicht nur eins davon.**',
         'Über die Übungsliste hinaus lohnt es sich, diese Punkte zu prüfen, bevor du ein Abo abschließt:',
       ],
       bullets: [
@@ -46,7 +46,7 @@ export const BEST_APP_DE: Guide = {
         '**Preis und Testphase.** Prüf, was du bezahlst und ob es eine kostenlose Testphase gibt, in der du sehen kannst, ob es für dich funktioniert.',
         '**Plattformen.** Manche Apps gibt es nur für iOS. Wenn du Android nutzt, ist deine Auswahl kleiner.',
         '**Datenschutz.** Schmerz- und Gesundheitsdaten sind sensibel. Prüf, ob die App sie weitergibt oder verkauft.',
-        '**Beteiligung von Fachleuten.** Eine App, die von zugelassenen Physiotherapeutinnen und Physiotherapeuten entwickelt oder geprüft wurde, ist ein vernünftiges Zeichen. Eine App, die dich mit einer medizinischen Fachperson verbinden kann, ist ein stärkeres.',
+        '**Beteiligung von Fachleuten.** Eine App, die von zugelassenen Physiotherapeutinnen und Physiotherapeuten entwickelt oder geprüft wurde, ist ein vernünftiges Zeichen. Eine App, die dich mit einer Ärztin oder einem Arzt verbinden kann, ist ein stärkeres.',
       ],
       cites: [CITE.guideline],
     },
@@ -174,7 +174,7 @@ export const BEST_APP_DE: Guide = {
           list: [
             'Schmerzverlauf über die Zeit.',
             'Eintragen von Schuhen und Belastung.',
-            'Erinnerungen an Warnzeichen, die dir sagen, wann du zu einer medizinischen Fachperson solltest.',
+            'Erinnerungen an Warnzeichen, die dir sagen, wann du zum Arzt oder zur Ärztin solltest.',
           ],
         },
         'Der Haken: Sie ist neu, hat noch keine Bewertungen und beschreibt nicht, welche Forschung hinter der Auswahl der Übungen steht.',
@@ -217,7 +217,7 @@ export const BEST_APP_DE: Guide = {
           list: [
             'Es stellt keine Diagnose.',
             'Es ist kein Medizinprodukt.',
-            'Auf der anderen Seite sitzt keine medizinische Fachperson.',
+            'Auf der anderen Seite sitzt keine Ärztin und kein Arzt.',
           ],
         },
         'Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15\u00A0Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.',
@@ -248,7 +248,7 @@ export const BEST_APP_DE: Guide = {
     {
       q: 'Welche Übungen sollte eine App bei Plantarfasziitis enthalten?',
       cites: [CITE.guideline],
-      a: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade die Bewertung A und Krafttraining die Bewertung B. Eine gute App sollte beides enthalten: Dehnen für Faszie und Wade und schrittweise steigendes Wadenkrafttraining wie Fersenheben. Übungen, die schwerer werden und sich an deinen Schmerz anpassen, sind nützlicher als eine starre Liste.',
+      a: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade den Empfehlungsgrad A und Krafttraining den Empfehlungsgrad B. Eine gute App sollte beides enthalten: Dehnen für Faszie und Wade und schrittweise steigendes Wadenkrafttraining wie Fersenheben. Übungen, die schwerer werden und sich an deinen Schmerz anpassen, sind nützlicher als eine starre Liste.',
     },
     {
       q: 'Ist Exakt Health bei Plantarfasziitis besser als Walkito?',
@@ -256,7 +256,7 @@ export const BEST_APP_DE: Guide = {
     },
     {
       q: 'Kann eine App bei Plantarfasziitis die Physiotherapie ersetzen?',
-      a: 'Keine App ersetzt eine medizinische Fachperson, die deinen Fuß untersuchen, andere Ursachen ausschließen und einen Plan direkt anpassen kann. Eine App ist nützlich für angeleitete tägliche Übungen zwischen den Terminen oder als Startpunkt, wenn der Schmerz leicht ist und zum typischen Muster der Plantarfasziitis passt. Wenn der Schmerz von einer Verletzung kommt, mit Schwellung oder Taubheit einhergeht oder schlimmer wird, geh zuerst zu einer medizinischen Fachperson.',
+      a: 'Keine App ersetzt die ärztliche oder physiotherapeutische Behandlung, in der jemand deinen Fuß untersucht, andere Ursachen ausschließt und den Plan direkt anpasst. Eine App ist nützlich für angeleitete tägliche Übungen zwischen den Terminen oder als Startpunkt, wenn der Schmerz leicht ist und zum typischen Muster der Plantarfasziitis passt. Wenn der Schmerz von einer Verletzung kommt, mit Schwellung oder Taubheit einhergeht oder schlimmer wird, geh zuerst zum Arzt oder zur Ärztin.',
     },
     {
       q: 'Ist Hinge Health kostenlos?',
@@ -264,7 +264,7 @@ export const BEST_APP_DE: Guide = {
     },
     {
       q: 'Warum nennt sich Walkito nicht die beste App bei Plantarfasziitis?',
-      a: 'Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine medizinische Fachperson auf der anderen Seite wie Hinge Health. Was es gut kann: jede Einheit an deinen Morgenschmerz anpassen und deinen Fortschritt alle 14\u00A0Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.',
+      a: 'Weil das nicht ehrlich wäre. Walkito ist neu, hat noch keine Bewertungen, deckt weniger Beschwerden ab als Exakt Health und hat keine Ärztin und kein Arzt auf der anderen Seite wie Hinge Health. Was es gut kann: jede Einheit an deinen Morgenschmerz anpassen und deinen Fortschritt alle 14\u00A0Tage testen. Ob es damit die richtige App für dich ist, hängt davon ab, was du brauchst.',
     },
     {
       q: 'Funktionieren diese Apps auch auf Android?',
@@ -282,7 +282,7 @@ export const BEST_APP_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Eine App reicht nicht. Geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Eine App reicht nicht. Geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -298,7 +298,7 @@ export const BEST_APP_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Wenn du bis hierher gelesen hast und Walkito passend klingt, so funktioniert es. Du beantwortest ein paar Fragen dazu, wo es wehtut, auf welcher Seite, wie aktiv du bist und was dein Ziel ist. Walkito baut aus diesen Antworten einen Wochenplan. Jeden Morgen passt ein Check den Tag an. Alle 14\u00A0Tage misst ein kurzer Test Wadenausdauer, Gewölbehalten und Einbeinstand.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Übungen folgen der klinischen Leitlinie von 2023 zu Fersenschmerzen. Der Plan hat kein festes Enddatum: Wenn du ein Ziel erreichst, geht es in die Erhaltung über, und das nächste Ziel rückt nach. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Übungen folgen der klinischen Leitlinie von 2023 zu Fersenschmerzen. Der Plan hat kein festes Enddatum: Wenn du ein Ziel erreichst, geht es in die Erhaltung über, und das nächste Ziel rückt nach. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Probier Walkito auf dem iPhone oder unter Android aus.',
   },

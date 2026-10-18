@@ -242,7 +242,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Tenga o no espolón en la radiografía, el enfoque de ejercicio es el mismo. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14\u00A0días seguidos. Los estiramientos empiezan desde el día uno. El trabajo de fuerza de pantorrilla se agrega una vez que la primera meta pasa de calmar el dolor a construir capacidad.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que se cumple la meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que puedas seguir tu progreso en vez de adivinar.',

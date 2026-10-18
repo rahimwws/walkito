@@ -150,7 +150,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
     {
       q: 'Le discese eccentriche del tallone aiutano la fascite plantare?',
       cites: [CITE.rathleff],
-      a: 'Le discese eccentriche sono state pensate per il tendine d’Achille, non per la fascia plantare. Per la fascite plantare, l’esercizio testato è il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), che aggiunge un asciugamano sotto le dita per coinvolgere la fascia. Nella progressione per il polpaccio di Walkito, le discese del tallone arrivano più tardi, dopo il sollevamento con asciugamano.',
+      a: 'Le discese eccentriche sono state pensate per il tendine d’Achille, non per la fascia plantare. Per la fascite plantare, l’esercizio testato è il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), che aggiunge un asciugamano sotto le dita per coinvolgere la fascia. Nella progressione per il polpaccio di Walkito, le discese eccentriche arrivano più tardi, dopo il sollevamento con asciugamano.',
     },
   ],
   redFlags: {
@@ -165,8 +165,8 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
-    text: 'Le discese eccentriche del tallone sono un passaggio della progressione per il polpaccio che Walkito inserisce in un piano settimanale. La progressione parte dai sollevamenti da seduto e sale con i sollevamenti su due piedi, la tenuta, il sollevamento con asciugamano, le discese del tallone e i saltelli sulle punte. Ogni passaggio si sblocca quando due sessioni al livello attuale ti sono sembrate facili.',
+    h2: 'Come trasformarlo in un piano',
+    text: 'Le discese eccentriche del tallone sono un passaggio della progressione per il polpaccio che Walkito inserisce in un piano settimanale. La progressione parte dai sollevamenti da seduto e sale con i sollevamenti su due piedi, la tenuta, il sollevamento con asciugamano, le discese eccentriche e i saltelli sulle punte. Ogni passaggio si sblocca quando due sessioni al livello attuale ti sono sembrate facili.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. Se il dolore è proprio nel punto in cui il tendine si attacca all’osso del tallone, fallo controllare da un professionista sanitario prima di caricarlo forte. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],

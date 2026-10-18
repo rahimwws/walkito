@@ -274,7 +274,7 @@ export const BAREFOOT_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es un programa de ejercicios para el dolor de talón, de pie y de pierna. Incluye el ejercicio de pie corto, la separación de dedos, las elevaciones de talón y el trabajo de equilibrio de esta página, y los va subiendo de nivel conforme se vuelven más fáciles. No elige tus zapatos y no diagnostica. Un pie y una pantorrilla más fuertes son una base sensata, sean cuales sean los zapatos que termines usando.',
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días al principio (cada 28 una vez que alcanzas una meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es para adultos y no reemplaza a un profesional de la salud.',

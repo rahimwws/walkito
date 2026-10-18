@@ -247,7 +247,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito fa il test del sollevamento sulle punte su una gamba ogni 14\u00A0giorni e segue entrambe le gambe. L’obiettivo del polpaccio è 25\u00A0sollevamenti su una gamba. L’obiettivo di simmetria è una differenza tra sinistra e destra sotto il 10%. L’app calcola la differenza tra il lato più forte e quello più debole, divisa per il lato più forte. Quando entrambi gli obiettivi sono raggiunti, il test passa a ogni 28\u00A0giorni e il piano si sposta sul prossimo obiettivo attivo.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Il lavoro sul polpaccio parte dai sollevamenti da seduto e sale, al tuo ritmo, ai sollevamenti su due piedi, alla tenuta, alla versione con asciugamano, alle discese eccentriche e ai saltelli sulle punte. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

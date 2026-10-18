@@ -22,12 +22,12 @@ export const HEEL_FAT_PAD_DE: Guide = {
   lede:
     'Beim Fersenfettpolster-Syndrom wird das Fettpolster unter deinem Fersenbein dünner oder geschädigt. Es verursacht einen tiefen Schmerz mitten in der Ferse, der sich wie ein blauer Fleck anfühlt, vor allem auf hartem Boden oder barfuß. Nach der Plantarfasziitis ist es womöglich die zweithäufigste Ursache für Schmerzen unter der Ferse, und doch ist die Forschung dazu dünn. Ein Scoping Review von 2022 fand nur sieben Originalstudien.',
   intro: [
-    'Diese Seite fasst zusammen, was über das Fersenfettpolster-Syndrom bekannt ist, wie du es von einer Plantarfasziitis unterscheidest und welche konservativen Schritte zumindest etwas Unterstützung haben. Wenn dein Schmerz eher ein stechendes Ziehen an der Innenseite der Ferse bei den ersten Schritten am Morgen ist, passt [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) wahrscheinlich besser. Wenn er hinten an der Ferse nahe der Achillessehne sitzt, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) oder [Haglundferse](/de/haglundferse/).',
+    'Diese Seite fasst zusammen, was über das Fersenfettpolster-Syndrom bekannt ist, wie du es von einer Plantarfasziitis unterscheidest und welche konservativen Schritte zumindest etwas Unterstützung haben. Wenn dein Schmerz eher ein stechender Schmerz an der Innenseite der Ferse bei den ersten Schritten am Morgen ist, passt [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) wahrscheinlich besser. Wenn er hinten an der Ferse nahe der Achillessehne sitzt, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) oder [Haglundferse](/de/haglundferse/).',
   ],
   takeaways: [
     'In einer Studie mit 250\u00A0Menschen mit Schmerzen unter der Ferse war eine Atrophie des Fettpolsters für 14,8\u00A0% der Fälle verantwortlich und damit nach der Plantarfasziitis mit 53,2\u00A0% die zweithäufigste Ursache (Yi und Kollegen, 2011).',
     'Ein Scoping Review von 2022 fand nur 7\u00A0Originalstudien zum Fersenfettpolster-Syndrom und keine randomisierte kontrollierte Studie, die Fersenschalen oder Taping speziell bei dieser Erkrankung getestet hat (Chang und Kollegen, 2022).',
-    'Der wichtigste klinische Unterschied: Schmerz durch das Fettpolster ist ein tiefer Schmerz mitten in der Ferse, der auf hartem Boden und barfuß schlimmer wird. Schmerz bei Plantarfasziitis ist ein stechendes Ziehen an der Innenseite der Ferse, das beim ersten Schritt am stärksten ist und sich einläuft.',
+    'Der wichtigste klinische Unterschied: Schmerz durch das Fettpolster ist ein tiefer Schmerz mitten in der Ferse, der auf hartem Boden und barfuß schlimmer wird. Schmerz bei Plantarfasziitis ist ein stechender Schmerz an der Innenseite der Ferse, der beim ersten Schritt am stärksten ist und sich einläuft.',
     'Viskoelastische Fersenschalen, gedämpfte Schuhe und Low-Dye-Taping werden häufig empfohlen, aber für das Fersenfettpolster-Syndrom selbst fehlen Belege aus randomisierten Studien (Chang und Kollegen, 2022).',
     'Eine Atrophie des Fettpolsters lässt sich durch Übungen nicht rückgängig machen. Kraftübungen für Wade und Fuß können dem Fuß helfen, mit Belastung umzugehen, aber sie bauen das Fettpolster selbst nicht wieder auf.',
   ],
@@ -114,7 +114,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
         '**Übungen können ein dünner gewordenes Fettpolster nicht wieder aufbauen.** Das ist eine strukturelle Veränderung, keine Muskelschwäche. Trotzdem kann Training eine Rolle dabei spielen, wie der Fuß rund um das Problem zurechtkommt.',
         'Wadenkraft ist wichtig, weil eine kräftigere Wade mehr von der Landekraft abfängt, bevor sie die Ferse erreicht. Das ist dieselbe Belastungslogik wie bei den Programmen zum Fersenheben bei Plantarfasziitis, aber beim Fersenfettpolster-Syndrom geht es um die Verteilung der Last, nicht um die Heilung von Gewebe. Training der kleinen Fußmuskeln (kurzer Fuß, Zehenspreizen) kann dem Fuß helfen, mit dem Bodenkontakt umzugehen.',
         'Belege für diese Übungen speziell beim Fersenfettpolster-Syndrom gibt es nicht. Keine Studie hat sie bei dieser Erkrankung getestet. Sie sind aus der allgemeinen Forschung zu Fersenschmerzen und Fußkraft übernommen.',
-        'Die Übungen von Walkito sind rund um Plantarfasziitis und Fußkraft aufgebaut. Sie sind eine vernünftige Ergänzung, wenn deine medizinische Fachperson eine Atrophie des Fettpolsters bestätigt hat, aber sie wurden nicht speziell dafür getestet, und das solltest du wissen.',
+        'Die Übungen von Walkito sind rund um Plantarfasziitis und Fußkraft aufgebaut. Sie sind eine vernünftige Ergänzung, wenn deine Ärztin oder dein Arzt eine Atrophie des Fettpolsters bestätigt hat, aber sie wurden nicht speziell dafür getestet, und das solltest du wissen.',
       ],
       exercises: [
         {
@@ -157,7 +157,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       h2: 'Wie wird das Fersenfettpolster-Syndrom diagnostiziert?',
       paragraphs: [
-        'Eine medizinische Fachperson kann eine Atrophie des Fettpolsters oft schon aus der Vorgeschichte und einer körperlichen Untersuchung vermuten. Das Schmerzmuster (tief, mitten in der Ferse, schlimmer barfuß auf hartem Boden, läuft sich nicht ein) zusammen mit einem dünnen Polster, unter dem das Fersenbein gut zu tasten ist, weist auf die Diagnose hin.',
+        'Eine Ärztin oder ein Arzt kann eine Atrophie des Fettpolsters oft schon aus der Vorgeschichte und einer körperlichen Untersuchung vermuten. Das Schmerzmuster (tief, mitten in der Ferse, schlimmer barfuß auf hartem Boden, läuft sich nicht ein) zusammen mit einem dünnen Polster, unter dem das Fersenbein gut zu tasten ist, weist auf die Diagnose hin.',
         'Ultraschall kann die Dicke des Fettpolsters messen. Ein Polster unter 1\u00A0Zentimeter gilt meist als atrophiert. Ein MRT kann Veränderungen im inneren Aufbau des Polsters zeigen, etwa Schäden an den Septen, Fibrose oder Flüssigkeit. Das Scoping Review von 2022 merkte an, dass die Kriterien für die Bildgebung nicht einheitlich sind und die Diagnose oft klinisch gestellt wird.',
         'Das Fersenfettpolster-Syndrom ist teilweise eine Ausschlussdiagnose. Wenn eine Plantarfasziitis angemessen behandelt wurde, der Schmerz bleibt und die klinischen Merkmale passen, sollte die Diagnose neu überdacht werden. Beide Erkrankungen können auch gleichzeitig vorliegen.',
       ],
@@ -188,12 +188,12 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       q: 'Helfen Kortisonspritzen beim Fersenfettpolster-Syndrom?',
       cites: [CITE.fatPadReview],
-      a: 'Kortisonspritzen werden beim Fersenfettpolster-Syndrom im Allgemeinen nicht empfohlen. Kortikosteroide können Fettgewebe abbauen und die Atrophie verschlimmern, die das Problem verursacht. Wenn Spritzen im Gespräch sind, ist das ein Punkt, den du mit deiner medizinischen Fachperson ansprechen solltest.',
+      a: 'Kortisonspritzen werden beim Fersenfettpolster-Syndrom im Allgemeinen nicht empfohlen. Kortikosteroide können Fettgewebe abbauen und die Atrophie verschlimmern, die das Problem verursacht. Wenn Spritzen im Gespräch sind, ist das ein Punkt, den du mit deiner Ärztin oder deinem Arzt ansprechen solltest.',
     },
     {
       q: 'Wie wird das Fersenfettpolster-Syndrom festgestellt?',
       cites: [CITE.fatPadReview, CITE.yiFatPad],
-      a: 'Eine medizinische Fachperson kann es aus dem Schmerzmuster und einer körperlichen Untersuchung vermuten. Ultraschall misst die Dicke des Fettpolsters, und ein Polster unter 1\u00A0Zentimeter gilt meist als atrophiert. Ein MRT kann innere Schäden zeigen. Die Kriterien für die Bildgebung sind nicht einheitlich, und es ist teilweise eine Ausschlussdiagnose, wenn die Behandlung der Plantarfasziitis nicht geholfen hat.',
+      a: 'Eine Ärztin oder ein Arzt kann es aus dem Schmerzmuster und einer körperlichen Untersuchung vermuten. Ultraschall misst die Dicke des Fettpolsters, und ein Polster unter 1\u00A0Zentimeter gilt meist als atrophiert. Ein MRT kann innere Schäden zeigen. Die Kriterien für die Bildgebung sind nicht einheitlich, und es ist teilweise eine Ausschlussdiagnose, wenn die Behandlung der Plantarfasziitis nicht geholfen hat.',
     },
     {
       q: 'Wie lange dauert es, bis das Fersenfettpolster-Syndrom besser wird?',
@@ -203,11 +203,11 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       q: 'Wie tapet man beim Fersenfettpolster-Syndrom?',
       cites: [CITE.fatPadReview],
-      a: 'Beim Low-Dye-Taping wird das Gewölbe angehoben und der Druck von der Ferse weggelenkt, mit Streifen quer über die Sohle und an den Seiten des Fußes hoch. Meist legt eine medizinische Fachperson oder Physiotherapeutin bzw. ein Physiotherapeut das erste Tape an, um das Muster zu zeigen. Das Scoping Review von 2022 fand keine Studie, die Taping speziell beim Fersenfettpolster-Syndrom getestet hat. Es ist also eine übernommene, keine belegte Technik.',
+      a: 'Beim Low-Dye-Taping wird das Gewölbe angehoben und der Druck von der Ferse weggelenkt, mit Streifen quer über die Sohle und an den Seiten des Fußes hoch. Meist legt jemand aus der Arztpraxis oder der Physiotherapie das erste Tape an, um das Muster zu zeigen. Das Scoping Review von 2022 fand keine Studie, die Taping speziell beim Fersenfettpolster-Syndrom getestet hat. Es ist also eine übernommene, keine belegte Technik.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'die Fersenschmerzen trotz Dämpfung und anderer Schuhe schlimmer werden',
       'der Schmerz in Ruhe da ist oder dich nachts weckt, was eher auf einen Ermüdungsbruch, einen eingeklemmten Nerv oder eine andere Ursache als nur eine Atrophie des Fettpolsters hindeuten kann',
@@ -220,9 +220,9 @@ export const HEEL_FAT_PAD_DE: Guide = {
   },
   program: {
     h2: 'Wo ein Übungsplan hineinpasst',
-    text: 'Walkito baut Einheiten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine medizinische Fachperson ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.',
+    text: 'Walkito baut Einheiten an 3, 5 oder 7 Tagen pro Woche, nach Wahl, rund um Fersenheben, Fußmuskeltraining und Dehnen. Diese Übungen sind für Plantarfasziitis und Fußkraft gedacht. Sie können einem Fuß mit Atrophie des Fettpolsters helfen, besser mit Belastung umzugehen, aber sie wurden nicht speziell bei dieser Erkrankung getestet und bauen ein dünner gewordenes Fettpolster nicht wieder auf. Wenn eine Ärztin oder ein Arzt ein Fersenfettpolster-Syndrom bestätigt hat, ist ein Übungsplan wie der von Walkito eine vernünftige Ergänzung zu Dämpfung und Schuhen, kein Ersatz dafür.',
     more: [
-      'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Atrophie des Fettpolsters oder einer Plantarfasziitis kommen, geh zuerst zu einer medizinischen Fachperson.',
+      'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Atrophie des Fettpolsters oder einer Plantarfasziitis kommen, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

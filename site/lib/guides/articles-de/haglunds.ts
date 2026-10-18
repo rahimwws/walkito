@@ -47,7 +47,7 @@ export const HAGLUNDS_DE: Guide = {
       h2: 'Wie hängt die Haglundferse mit der insertionalen Achillessehnen-Tendinopathie zusammen?',
       paragraphs: [
         'Haglundferse und insertionale Achillessehnen-Tendinopathie treten oft zusammen auf, **sind aber nicht dasselbe.** Die insertionale Tendinopathie ist Schmerz an der Stelle, wo die Achillessehne am Fersenbein ansetzt, meist durch Überlastung. Die Haglundferse ist eine Form des Knochens. Der Höcker kann die Sehne von hinten reizen, und der Sehnenansatz kann durch denselben Druck betroffen sein, der auch den Schleimbeutel entzündet.',
-        'Der praktische Zusammenhang: Wenn du eine Haglundferse und Schmerzen hinten an der Ferse hast, kann der Schmerz vom Schleimbeutel, vom Sehnenansatz oder von beidem kommen. Eine medizinische Fachperson kann das unterscheiden, indem sie prüft, wo der Druckschmerz am stärksten ist und ob Dehnen oder Belasten den Schmerz auslöst.',
+        'Der praktische Zusammenhang: Wenn du eine Haglundferse und Schmerzen hinten an der Ferse hast, kann der Schmerz vom Schleimbeutel, vom Sehnenansatz oder von beidem kommen. Eine Ärztin oder ein Arzt kann das unterscheiden, indem sie prüft, wo der Druckschmerz am stärksten ist und ob Dehnen oder Belasten den Schmerz auslöst.',
         'Die Leitlinie von 2024 zur Achillessehnen-Tendinopathie trennt klar zwischen Beschwerden im mittleren Sehnenabschnitt und am Ansatz. Bei Problemen am Ansatz, zu denen auch Fälle mit Haglundferse gehören, muss das übliche Protokoll mit exzentrischem Fersenabsenken angepasst werden. Eine tiefe Dorsalflexion, bei der die Ferse unter die Stufenkante sinkt, drückt die Sehne gegen den Knochen und kann die Beschwerden verschlimmern.',
       ],
       cites: [CITE.achillesGuideline, CITE.jonsson],
@@ -128,7 +128,7 @@ export const HAGLUNDS_DE: Guide = {
           name: 'Soleusdehnung (Knie gebeugt, sanft)',
           evidence: { level: 'early', why: 'Zielt auf den tieferen Wadenmuskel. Dieselbe Vorsicht: Bei Schmerz am Ansatz tiefe Dorsalflexion vermeiden.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position an der Wand, beug das hintere Knie, bis die Dehnung tiefer wandert. Hör vor dem Punkt auf, an dem die Rückseite der Ferse zusammengedrückt wird. Der Soleus lässt nur mit gebeugtem Knie los.',
+          how: 'Dieselbe Position an der Wand, beug das hintere Knie, bis die Dehnung tiefer wandert. Hör vor dem Punkt auf, an dem die Rückseite der Ferse zusammengedrückt wird. Den Soleus erreichst du nur mit gebeugtem Knie.',
           often: 'Täglich, nach der Wadendehnung',
           feel: 'Eine Dehnung in der unteren Wade, nicht am Fersenbein',
           stop: 'Schmerz am Ansatz der Achillessehne oder am Höcker',
@@ -224,7 +224,7 @@ export const HAGLUNDS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du ein plötzliches Knallen oder Schnappen gespürt hast oder das Gefühl hattest, jemand hätte dir hinten gegen das Bein getreten. Das kann auf einen Riss der Achillessehne hindeuten',
       'es hinten an der Ferse deutlich geschwollen, gerötet oder warm ist, vor allem mit Fieber',
@@ -239,7 +239,7 @@ export const HAGLUNDS_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Die Belastungssteigerung für die Wade bei Walkito geht vom Fersenheben im Sitzen über das beidbeinige Fersenheben, das Halten und das exzentrische Fersenabsenken bis zu weiteren Stufen. Bei Haglundferse und insertionalem Achillesschmerz bleibt jede Stufe auf Bodenhöhe, statt unter eine Stufenkante abzusinken. Walkito bringt dich eine Stufe höher, sobald sich zwei Einheiten auf einer Stufe leicht angefühlt haben, nicht nach festem Zeitplan.',
     more: [
-      'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn du einen sichtbaren Höcker hinten an der Ferse hast und nicht sicher bist, woher der Schmerz kommt, lass ihn von einer medizinischen Fachperson untersuchen, bevor du anfängst zu belasten.',
+      'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn du einen sichtbaren Höcker hinten an der Ferse hast und nicht sicher bist, woher der Schmerz kommt, lass ihn ärztlich untersuchen, bevor du anfängst zu belasten.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

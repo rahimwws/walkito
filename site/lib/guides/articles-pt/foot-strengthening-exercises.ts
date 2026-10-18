@@ -289,7 +289,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano semanal em torno de uma meta e inclui os exercícios para os pés desta página: o exercício de pé curto de sentado até em uma perna, o abrir os dedos, a elevação do dedão, o puxar a toalha com os dedos, a elevação de calcanhar e o trabalho de equilíbrio. Ele começa os exercícios de arco com 3\u00A0séries de 8 e 5\u00A0segundos parado e o equilíbrio com 3\u00A0vezes de 20\u00A0segundos, e a cada novo plano semanal sobe o seu exercício de foco um passo quando você marcou as suas duas últimas sessões com ele como fáceis e a sua dor da manhã não aumentou.',
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. Um teste curto, a cada 14\u00A0dias no início, mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

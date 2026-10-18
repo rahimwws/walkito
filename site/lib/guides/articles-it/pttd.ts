@@ -158,7 +158,7 @@ export const PTTD_IT: Guide = {
     {
       h2: 'Che legame c’è tra PTTD e piede piatto?',
       paragraphs: [
-        'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, cioè un piede piatto che compare da adulti invece di esserci fin dall’infanzia. **Se avevi archi normali e da un lato hanno iniziato ad abbassarsi, con dolore dietro il malleolo interno, la PTTD è la spiegazione più probabile.**',
+        'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, cioè un piede piatto che compare da adulti invece di esserci fin dall’infanzia. **Se avevi un arco plantare normale e da un lato ha iniziato ad abbassarsi, con dolore dietro il malleolo interno, la PTTD è la spiegazione più probabile.**',
         'Il piede piatto flessibile congenito, quello presente fin dall’infanzia, è una situazione diversa. Può non dare mai sintomi. Gli esercizi si sovrappongono: piede corto, inversione con elastico e sollevamenti sulle punte compaiono sia negli [esercizi per il piede piatto](/it/esercizi-piede-piatto/) sia nei programmi per la PTTD. Ma il contesto clinico è diverso, e la PTTD di solito richiede plantari e un controllo più attento, perché il tendine sta degenerando, non è semplicemente lasso.',
         'Se non sai se il tuo piede piatto c’è da sempre o è nuovo, un professionista sanitario può confrontare i due piedi, controllare il tendine e guardare l’allineamento del tallone quando stai in piedi.',
       ],
@@ -231,7 +231,7 @@ export const PTTD_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito include inversione con elastico, piede corto e sollevamenti sulle punte nella sua libreria di esercizi, e li mette nei giorni di forza come parte di un programma per arco ed equilibrio. Quando nel check-in segni l’interno della caviglia o l’arco sulla mappa del dolore, la sessione si adatta a quella risposta. L’app è pensata per fascite plantare e piede piatto. La PTTD si sovrappone a entrambi, ma l’app non fa diagnosi di PTTD e non sostituisce i plantari né la stadiazione clinica.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Se ti è stata diagnosticata una PTTD, usa l’app insieme ai plantari e chiedi al professionista sanitario che ti segue se lo stadio è adatto all’esercizio.',

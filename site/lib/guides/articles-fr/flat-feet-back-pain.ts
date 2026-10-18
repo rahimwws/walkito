@@ -12,25 +12,25 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
     'Pieds plats et mal de dos\u00A0: ce qu’ont trouvé l’étude de Framingham et les essais de semelles, ce qui aide le dos, et les signes qui demandent un médecin.',
   h1: 'Les pieds plats peuvent-ils donner mal au dos\u00A0? Ce que montre la recherche',
   lede:
-    'Les pieds plats expliquent mal la plupart des maux de dos. Une grande étude aux mesures rigoureuses, la Framingham Foot Study, menée sur 1\u00A0930\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un petit lien chez les femmes dont le pied s’affaissait vers l’intérieur à la marche. C’est une association, pas la preuve que les pieds causent le mal de dos.',
+    'Les pieds plats expliquent mal la plupart des maux de dos. Une grande étude aux mesures rigoureuses, la Framingham Foot Study, menée sur 1\u00A0930\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un petit lien chez les femmes dont le pied s’affaissait vers l’intérieur à la marche. C’est une association, pas la preuve que les pieds causent le mal de dos.',
   intro: [
     'Si vous avez mal au dos et qu’on a accusé vos pieds plats, l’idée paraît logique au premier abord\u00A0: les pieds vous portent, donc une voûte plus basse doit bien désaligner quelque chose plus haut. La recherche est moins nette. Cette page présente ce qu’ont trouvé les études, ce que les semelles et l’exercice peuvent apporter au dos, et les symptômes du dos qui demandent d’abord un professionnel de santé. Côté pied, le [guide des pieds plats](/fr/pieds-plats/) et les [exercices pour pieds plats](/fr/exercices-pieds-plats/) abordent la voûte en détail.',
   ],
   takeaways: [
-    'Dans la Framingham Foot Study sur 1\u00A0930\u00A0adultes, la posture de pied plat debout n’était pas liée au mal de bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une cote (odds) environ 1,5\u00A0fois plus élevée (Menz et coll., 2013).',
+    'Dans la Framingham Foot Study sur 1\u00A0930\u00A0adultes, la posture de pied plat debout n’était pas liée au mal au bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une cote (odds) environ 1,5\u00A0fois plus élevée (Menz et coll., 2013).',
     'Chez environ 97\u00A0000 jeunes recrues militaires, des pieds plats légers n’allaient pas avec plus de mal de dos que des pieds normaux (5\u00A0% dans les deux cas). Des pieds plats modérés ou sévères allaient avec 10\u00A0% (Kosashvili et coll., 2008).',
-    'Une revue de 2014 portant sur cinq essais de semelles contre le mal de bas du dos n’a trouvé aucun bénéfice significatif. Un essai de 2017 sur 225\u00A0adultes a constaté que des orthèses sur mesure faisaient mieux que l’absence de prise en charge à environ un mois et demi, mais plus à trois mois ni ensuite.',
-    'Une revue Cochrane de 2021 portant sur 249\u00A0essais a trouvé, avec un niveau de certitude modéré, que l’exercice soulage le mal de bas du dos chronique d’environ 15\u00A0points sur une échelle de douleur de 100\u00A0points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo.',
+    'Une revue de 2014 portant sur cinq essais de semelles contre le mal au bas du dos n’a trouvé aucun bénéfice significatif. Un essai de 2017 sur 225\u00A0adultes a constaté que des orthèses sur mesure faisaient mieux que l’absence de prise en charge à environ un mois et demi, mais plus à trois mois ni ensuite.',
+    'Une revue Cochrane de 2021 portant sur 249\u00A0essais a trouvé, avec un niveau de certitude modéré, que l’exercice soulage le mal au bas du dos chronique d’environ 15\u00A0points sur une échelle de douleur de 100\u00A0points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo.',
     'Un mal de dos avec perte de contrôle de la vessie ou des intestins, un engourdissement autour de l’aine ou des fesses, ou une nouvelle faiblesse des jambes demande une prise en charge médicale urgente, quelle que soit la forme de vos pieds.',
   ],
   toc: true,
   sections: [
     {
       h2: 'Les pieds plats peuvent-ils causer un mal de dos\u00A0?',
-      keyFact: 'La Framingham Foot Study sur 1\u00A0930\u00A0adultes n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos (Menz et coll., 2013).',
+      keyFact: 'La Framingham Foot Study sur 1\u00A0930\u00A0adultes n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos (Menz et coll., 2013).',
       paragraphs: [
         '**Il n’a pas été démontré que les pieds plats causent le mal de dos.** Certaines études trouvent que les personnes aux pieds plus plats ou qui s’affaissent vers l’intérieur signalent un peu plus souvent un mal de dos, d’autres ne trouvent aucun lien. Aucune ne peut montrer que les pieds sont venus d’abord et le mal de dos ensuite.',
-        'Cette nuance compte, car le mal de bas du dos est très fréquent et n’a en général pas de cause unique. Une revue du Lancet de 2018 le dit clairement\u00A0: chez presque toutes les personnes qui ont mal au bas du dos, aucune source précise de la douleur ne peut être identifiée. Seule une petite partie a une cause médicale claire, comme une fracture, une infection ou une tumeur. D’après cette revue, les personnes les plus à risque comprennent\u00A0:',
+        'Cette nuance compte, car le mal au bas du dos est très fréquent et n’a en général pas de cause unique. Une revue du Lancet de 2018 le dit clairement\u00A0: chez presque toutes les personnes qui ont mal au bas du dos, aucune source précise de la douleur ne peut être identifiée. Seule une petite partie a une cause médicale claire, comme une fracture, une infection ou une tumeur. D’après cette revue, les personnes les plus à risque comprennent\u00A0:',
         {
           list: [
             'Celles qui ont un travail physiquement exigeant.',
@@ -46,11 +46,11 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
     },
     {
       h2: 'Qu’a trouvé la Framingham Foot Study\u00A0?',
-      keyFact: 'Dans la Framingham Foot Study, les femmes dont le pied s’affaissait vers l’intérieur à la marche avaient une cote (odds) environ 1,5\u00A0fois plus élevée de mal de bas du dos, alors que la posture du pied debout n’y était pas liée (Menz et coll., 2013).',
+      keyFact: 'Dans la Framingham Foot Study, les femmes dont le pied s’affaissait vers l’intérieur à la marche avaient une cote (odds) environ 1,5\u00A0fois plus élevée de mal au bas du dos, alors que la posture du pied debout n’y était pas liée (Menz et coll., 2013).',
       paragraphs: [
-        'La Framingham Foot Study est l’une des plus grandes études à avoir mesuré directement les pieds, et elle n’a trouvé aucun lien entre les pieds plats et le mal de bas du dos. Les chercheurs ont examiné 1\u00A0930\u00A0adultes de la ville de Framingham, dans le Massachusetts, entre 2002 et 2005. Ils ont mesuré la voûte de chaque personne debout à partir d’une empreinte et classé les pieds en plats, normaux ou creux. La posture du pied, plat ou non, n’était pas associée au mal de bas du dos.',
+        'La Framingham Foot Study est l’une des plus grandes études à avoir mesuré directement les pieds, et elle n’a trouvé aucun lien entre les pieds plats et le mal au bas du dos. Les chercheurs ont examiné 1\u00A0930\u00A0adultes de la ville de Framingham, dans le Massachusetts, entre 2002 et 2005. Ils ont mesuré la voûte de chaque personne debout à partir d’une empreinte et classé les pieds en plats, normaux ou creux. La posture du pied, plat ou non, n’était pas associée au mal au bas du dos.',
         'L’étude a aussi mesuré la fonction du pied\u00A0: la façon dont la pression se déplaçait sous le pied pendant la marche. Un pied qui s’affaisse vers l’intérieur à la marche est dit en pronation.',
-        'Chez les femmes, une marche en pronation était liée au mal de bas du dos, avec une cote (odds) environ 1,5\u00A0fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.',
+        'Chez les femmes, une marche en pronation était liée au mal au bas du dos, avec une cote (odds) environ 1,5\u00A0fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.',
         'Beaucoup de sites présentent cette étude ainsi\u00A0: «\u00A0les personnes aux pieds plats ont 50\u00A0% de risque en plus d’avoir mal au dos\u00A0». Ce n’est pas ce qu’elle a trouvé. **La forme de voûte visible quand vous êtes debout ne comptait pas.** Ce qui comptait, chez les femmes seulement, c’était la façon dont le pied bougeait pendant la marche.',
         'Et comme l’étude a mesuré chaque personne une seule fois, elle ne peut pas dire si\u00A0:',
         {
@@ -62,15 +62,15 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
         },
       ],
       sourceNote:
-        'Menz 2013\u00A0: étude transversale, n = 1\u00A0930. Fonction du pied en pronation et mal de bas du dos chez les femmes, odds ratio 1,51 (IC à 95\u00A0% 1,1 à 2,07)\u00A0; 1,48 (IC à 95\u00A0% 1,07 à 2,05) après ajustement sur l’âge, le poids, le tabagisme et les symptômes dépressifs.',
+        'Menz 2013\u00A0: étude transversale, n = 1\u00A0930. Fonction du pied en pronation et mal au bas du dos chez les femmes, odds ratio 1,51 (IC à 95\u00A0% 1,1 à 2,07)\u00A0; 1,48 (IC à 95\u00A0% 1,07 à 2,05) après ajustement sur l’âge, le poids, le tabagisme et les symptômes dépressifs.',
       cites: [CITE.menz],
     },
     {
       h2: 'Les personnes aux pieds plats ont-elles plus mal au dos\u00A0?',
-      keyFact: 'Sur 97\u00A0279 recrues militaires, 5\u00A0% de celles aux pieds plats légers avaient un mal de bas du dos intermittent, autant que les recrues aux pieds normaux, contre 10\u00A0% de celles aux pieds plats modérés ou sévères (Kosashvili et coll., 2008).',
+      keyFact: 'Sur 97\u00A0279 recrues militaires, 5\u00A0% de celles aux pieds plats légers avaient un mal au bas du dos intermittent, autant que les recrues aux pieds normaux, contre 10\u00A0% de celles aux pieds plats modérés ou sévères (Kosashvili et coll., 2008).',
       paragraphs: [
         'Dans certaines études, les personnes aux pieds nettement plats signalent un peu plus souvent un mal de dos, mais pas celles aux pieds plats légers. Le plus grand ensemble de données vient de 97\u00A0279 jeunes recrues militaires, dont les pieds plats ont été évalués par un médecin orthopédiste. Parmi elles, 16\u00A0% avaient les pieds plats, et la plupart d’entre elles (74\u00A0%) de façon légère.',
-        'Le mal de bas du dos intermittent, c’est-à-dire un mal de dos sans anomalie à l’examen ni à la radio, touchait 5\u00A0% des recrues aux pieds normaux et 5\u00A0% de celles aux pieds plats légers. Il atteignait 10\u00A0% chez celles aux pieds plats modérés ou sévères. **Pour la plupart des pieds plats, les pieds plats légers, il n’y avait donc aucune différence.**',
+        'Le mal au bas du dos intermittent, c’est-à-dire un mal de dos sans anomalie à l’examen ni à la radio, touchait 5\u00A0% des recrues aux pieds normaux et 5\u00A0% de celles aux pieds plats légers. Il atteignait 10\u00A0% chez celles aux pieds plats modérés ou sévères. **Pour la plupart des pieds plats, les pieds plats légers, il n’y avait donc aucune différence.**',
         'Une enquête de 2021 menée auprès de 1\u00A0798\u00A0adultes interrogés lors d’un festival en Arabie saoudite a rapporté des chiffres bien plus élevés\u00A0: 65,9\u00A0% des personnes aux pieds plats disaient avoir mal au bas du dos, et les pieds plats allaient avec une cote (odds) 3,3\u00A0fois plus élevée de mal de dos de courte durée et 4,5\u00A0fois plus élevée de mal de dos de longue durée.',
         'Une enquête de ce type regarde les pieds et le dos à un seul moment, chez les personnes qui ont bien voulu s’arrêter et participer, et ce sont les personnes elles-mêmes qui disaient si elles avaient les pieds plats. Elle ne peut pas écarter d’autres explications, et les chercheurs ont eux-mêmes constaté que le sexe, l’âge, le métier et l’activité physique étaient aussi liés au mal de dos.',
       ],
@@ -88,7 +88,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
     },
     {
       h2: 'Les semelles ou les orthèses aident-elles le mal de dos avec des pieds plats\u00A0?',
-      keyFact: 'Une méta-analyse de 2014 portant sur cinq essais de semelles (293\u00A0personnes) n’a trouvé aucun bénéfice significatif pour le mal de bas du dos (Chuter et coll., 2014).',
+      keyFact: 'Une méta-analyse de 2014 portant sur cinq essais de semelles (293\u00A0personnes) n’a trouvé aucun bénéfice significatif pour le mal au bas du dos (Chuter et coll., 2014).',
       paragraphs: [
         'Pour le mal de dos, les semelles et les orthèses ont des preuves contradictoires et de faible qualité, et les bénéfices observés jusqu’ici ont été de courte durée. Les orthèses plantaires sont des semelles formées pour la chaussure\u00A0; les orthèses sur mesure sont fabriquées à partir d’un moulage ou d’un scan de votre pied.',
         'Une revue de 2014 a regroupé cinq essais de semelles chez des personnes qui avaient déjà mal au bas du dos (293\u00A0personnes) et n’a trouvé aucun effet significatif. Six autres essais (2\u00A0379\u00A0personnes) ont testé des semelles pour prévenir le mal de dos, sans effet significatif non plus.',
@@ -106,7 +106,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
         'Des semelles pour le confort du pied sont raisonnables et peu risquées. **N’attendez pas d’elles qu’elles règlent à elles seules un problème de dos.** [Semelles ou exercices](/fr/semelles-ou-exercices/) aborde ce choix côté pied.',
       ],
       table: {
-        caption: 'Études sur les semelles et orthèses contre le mal de bas du dos',
+        caption: 'Études sur les semelles et orthèses contre le mal au bas du dos',
         head: ['Étude', 'Participants', 'Résultats'],
         rows: [
           ['Chuter 2014, revue de 5\u00A0essais', '293\u00A0personnes ayant mal au dos', 'Aucun bénéfice significatif des semelles'],
@@ -121,12 +121,12 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
       cites: [CITE.chuterInsoles, CITE.cambronOrthotics, CITE.castroMendez, CITE.alamPronatedLbp, CITE.linOrthosesLbp],
     },
     {
-      h2: 'Qu’est-ce qui aide le mal de bas du dos, si ce ne sont pas les pieds\u00A0?',
-      keyFact: 'Une revue Cochrane de 2021 portant sur 249\u00A0essais a constaté que l’exercice réduisait le mal de bas du dos chronique d’environ 15\u00A0points sur une échelle de 100\u00A0points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo (Hayden et coll., 2021).',
+      h2: 'Qu’est-ce qui aide le mal au bas du dos, si ce ne sont pas les pieds\u00A0?',
+      keyFact: 'Une revue Cochrane de 2021 portant sur 249\u00A0essais a constaté que l’exercice réduisait le mal au bas du dos chronique d’environ 15\u00A0points sur une échelle de 100\u00A0points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo (Hayden et coll., 2021).',
       paragraphs: [
-        'L’exercice général a des preuves bien plus solides contre le mal de dos que tout ce qui vise les pieds. Une revue Cochrane de 2021, une vaste synthèse d’essais, a regroupé 249\u00A0essais d’exercice pour le mal de bas du dos chronique. Elle a trouvé, avec un niveau de certitude modéré, que l’exercice réduisait la douleur d’environ 15\u00A0points sur une échelle de 100\u00A0points par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo. L’effet sur la fonction au quotidien était plus faible, environ 7\u00A0points.',
+        'L’exercice général a des preuves bien plus solides contre le mal de dos que tout ce qui vise les pieds. Une revue Cochrane de 2021, une vaste synthèse d’essais, a regroupé 249\u00A0essais d’exercice pour le mal au bas du dos chronique. Elle a trouvé, avec un niveau de certitude modéré, que l’exercice réduisait la douleur d’environ 15\u00A0points sur une échelle de 100\u00A0points par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo. L’effet sur la fonction au quotidien était plus faible, environ 7\u00A0points.',
         'Les essais portaient sur de nombreux types d’exercice, et 151 d’entre eux testaient au moins deux types. L’exercice faisait aussi mieux que les conseils ou l’éducation seuls sur la douleur. Pour la plupart des gens, l’essentiel est de **choisir une activité régulière que vous pouvez tenir dans la durée**, idéalement avec l’aide d’un kinésithérapeute au début.',
-        'La revue du Lancet de 2018 apporte un élément rassurant\u00A0: la plupart des nouveaux épisodes de mal de bas du dos se calment vite, même si le mal de dos revient souvent. Si votre dos est le problème principal, un kinésithérapeute ou un médecin peut construire un plan pour le dos adapté à vous. Le travail des pieds peut l’accompagner, pas le remplacer.',
+        'La revue du Lancet de 2018 apporte un élément rassurant\u00A0: la plupart des nouveaux épisodes de mal au bas du dos se calment vite, même si le mal de dos revient souvent. Si votre dos est le problème principal, un kinésithérapeute ou un médecin peut construire un plan pour le dos adapté à vous. Le travail des pieds peut l’accompagner, pas le remplacer.',
       ],
       sourceNote:
         'Hayden 2021\u00A0: douleur, DM -15,2 (IC à 95\u00A0% -18,3 à -12,2) au premier suivi, certitude modérée\u00A0; limitations fonctionnelles, DM -6,8 (IC à 95\u00A0% -8,3 à -5,3), sous le seuil de différence cliniquement importante retenu par la revue.',
@@ -136,7 +136,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
       h2: 'Faut-il quand même travailler vos pieds plats\u00A0?',
       keyFact: 'Dans un essai sur 52\u00A0personnes aux pieds plats souples, un programme associant pied court, travail de la cheville, de la hanche et étirements a modifié deux mesures de la forme de la voûte davantage que dans un groupe témoin (Brijwasi et Borkar, 2023).',
       paragraphs: [
-        'Travailler vos pieds plats a du sens si vos pieds eux-mêmes font mal, se fatiguent vite ou semblent instables. Ce n’est pas un programme pour le dos, et aucun essai n’a montré que des exercices des pieds seuls soulagent le mal de dos.',
+        'Travailler vos pieds plats est pertinent si vos pieds eux-mêmes font mal, se fatiguent vite ou semblent instables. Ce n’est pas un programme pour le dos, et aucun essai n’a montré que des exercices des pieds seuls soulagent le mal de dos.',
         'Pour les pieds plats souples, dont la voûte réapparaît quand vous soulevez le pied, un essai sur 52\u00A0personnes a constaté que l’exercice du pied court, le travail de la cheville, le renforcement de la hanche et les étirements, faits ensemble, modifiaient la forme de la voûte davantage que dans un groupe témoin. Cet essai a mesuré la forme de la voûte, pas la douleur. Une revue de 2024 sur l’entraînement du pied court seul n’a pas trouvé de changement net de la posture du pied dans l’ensemble.',
         'Le programme complet, avec doses et progressions, se trouve dans les [exercices pour pieds plats](/fr/exercices-pieds-plats/). Trois des mouvements de base sont ci-dessous.',
         'Walkito les intègre dans un plan hebdomadaire pour les pieds et commence l’exercice du pied court à 3\u00A0séries de 8 avec des maintiens de 5\u00A0secondes. Il n’agit pas directement sur le dos, et il ne prétend pas le faire.',
@@ -208,7 +208,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
     {
       q: 'Les pieds plats peuvent-ils donner mal au bas du dos\u00A0?',
       cites: [CITE.menz],
-      a: 'Il n’a pas été démontré que les pieds plats causent le mal de bas du dos. La Framingham Foot Study sur 1\u00A0930\u00A0adultes n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une cote (odds) environ 1,5\u00A0fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.',
+      a: 'Il n’a pas été démontré que les pieds plats causent le mal au bas du dos. La Framingham Foot Study sur 1\u00A0930\u00A0adultes n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une cote (odds) environ 1,5\u00A0fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.',
     },
     {
       q: 'Les pieds plats peuvent-ils donner mal au haut ou au milieu du dos\u00A0?',
@@ -222,7 +222,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
     {
       q: 'Les exercices pour pieds plats peuvent-ils aider mon dos\u00A0?',
       cites: [CITE.alamPronatedLbp, CITE.haydenExercise],
-      a: 'Il n’a pas été démontré que les exercices pour pieds plats aident à eux seuls le mal de dos. Une revue de 2025 a regroupé quatre petits essais chez des personnes ayant mal au dos et des pieds qui s’affaissent vers l’intérieur, deux avec des orthèses sur mesure et deux avec des exercices, et a trouvé moins de douleur, mais quatre essais forment une base mince. L’exercice général a de bien meilleures preuves\u00A0: une revue Cochrane de 249\u00A0essais a trouvé qu’il soulage le mal de bas du dos chronique.',
+      a: 'Il n’a pas été démontré que les exercices pour pieds plats aident à eux seuls le mal de dos. Une revue de 2025 a regroupé quatre petits essais chez des personnes ayant mal au dos et des pieds qui s’affaissent vers l’intérieur, deux avec des orthèses sur mesure et deux avec des exercices, et a trouvé moins de douleur, mais quatre essais forment une base mince. L’exercice général a de bien meilleures preuves\u00A0: une revue Cochrane de 249\u00A0essais a trouvé qu’il soulage le mal au bas du dos chronique.',
     },
     {
       q: 'Un problème de dos peut-il donner mal au pied ou une sensation de pied plat\u00A0?',

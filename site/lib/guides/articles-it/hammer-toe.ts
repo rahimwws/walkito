@@ -228,7 +228,7 @@ export const HAMMER_TOE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
       'Walkito include la [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/), l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per il dito a martello, ma gli esercizi si sovrappongono. Se hai un dito a martello flessibile e vuoi un modo strutturato per lavorare sulle dita con regolarità, le sessioni da 3 o 5\u00A0minuti rendono gli esercizi costanti senza doverti ricordare una routine a parte.',
     more: [

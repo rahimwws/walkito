@@ -16,7 +16,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
   takeaways: [
     'Eine Übersichtsarbeit über 19\u00A0Studien (1.660\u00A0Personen) fand, dass Einlagen Fersenschmerzen nur mittelfristig stärker linderten als eine Schein-Einlage, und das nur wenig, ohne Unterschied zwischen maßgefertigten und fertigen Einlagen (Whittaker und Kollegen, 2018).',
     'In einer Studie mit 185\u00A0Personen mit Fersenschmerzen schnitten maßgefertigte Einlagen nach drei Monaten nicht besser ab als Schein-Einlagen, und die hausärztliche Versorgung schnitt etwas besser ab als maßgefertigte Einlagen (Rasenberg und Kollegen, 2021).',
-    'Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt **gegen** Einlagen allein zur kurzfristigen Linderung (Bewertung B) und lässt sie zusätzlich zu anderen Maßnahmen zu (Bewertung C). Dehnen bekommt ein **A**, Krafttraining ein **B** (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt **gegen** Einlagen allein zur kurzfristigen Linderung (Empfehlungsgrad B) und lässt sie zusätzlich zu anderen Maßnahmen zu (Empfehlungsgrad C). Dehnen bekommt Grad **A**, Krafttraining Grad **B** (Koc und Kollegen, 2023).',
     'In einer kleinen Studie mit 18\u00A0jungen Erwachsenen mit Plattfuß folgte auf drei Monate mit maßgefertigten Einlagen ein Rückgang der Größe kleiner Fußmuskeln um 9,6 bis 17,4\u00A0% (Protopapas und Perry, 2020).',
   ],
   toc: true,
@@ -24,7 +24,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       h2: 'Was ist der Unterschied zwischen Einlagen, orthopädischen Einlagen und Übungen?',
       paragraphs: [
-        'Eine **Einlage** ist alles, was du in einen Schuh legst. Eine **orthopädische Einlage** (Fußorthese) ist eine Einlage, die so geformt ist, dass sie das Gewölbe stützt und die Ferse entlastet. **Fertige** Einlagen kaufst du von der Stange. **Maßgefertigte** werden nach einem Scan oder Abdruck deines Fußes gemacht, meist von einer Fachperson für Füße wie einem Orthopädieschuhtechniker oder einer Podologin, und kosten deutlich mehr.',
+        'Eine **Einlage** ist alles, was du in einen Schuh legst. Eine **orthopädische Einlage** (Fußorthese) ist eine Einlage, die so geformt ist, dass sie das Gewölbe stützt und die Ferse entlastet. **Fertige** Einlagen kaufst du von der Stange. **Maßgefertigte** werden nach einem Scan oder Abdruck deines Fußes gemacht, meist von Fachleuten für Füße wie einem Orthopädieschuhtechniker oder einer Podologin, und kosten deutlich mehr.',
         'Beide verändern die Belastung des Fußes, solange du sie trägst. Übungen verändern das Gewebe selbst, sodass Fuß und Wade mehr Last tragen können, mit oder ohne Einlage.',
       ],
     },
@@ -35,7 +35,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
         'Ein wenig, für eine Weile. Plantarfasziitis ist eine Reizung der Plantarfaszie, des Gewebebands unter dem Fußgewölbe. Der faire Test vergleicht eine echte Einlage mit einer **Schein-Einlage**: einer flachen, weichen Einlage, die echt aussieht, aber nicht stützt.',
         'In einer Studie mit 135\u00A0Personen verbesserten sowohl eine fertige als auch eine maßgefertigte Einlage die Funktion nach drei Monaten um etwa 8\u00A0Punkte auf einer Skala von 0 bis 100 gegenüber einer Schein-Einlage (Landorf und Kollegen, 2006). Der Unterschied beim Schmerz war ähnlich groß, aber statistisch nicht eindeutig. Nach zwölf Monaten unterschied sich keine Gruppe.',
         'Eine systematische Übersichtsarbeit fasste 19\u00A0randomisierte Studien mit 1.660\u00A0Personen zusammen (Whittaker und Kollegen, 2018). Mittelfristig, also etwa im zweiten und dritten Monat, linderten Einlagen den Schmerz stärker als eine Schein-Einlage, mit Belegen mittlerer Qualität. Der Effekt war klein, und die Autoren nannten es „unsicher, ob das eine klinisch bedeutsame Veränderung ist“. Kurzfristig und längerfristig gab es keinen klaren Nutzen.',
-        'Die Leitlinie von 2023 zu Fersenschmerzen sieht es genauso: Einlagen **nicht** allein zur kurzfristigen Linderung (Bewertung B dagegen), aber sie **können** zusätzlich zu anderen Maßnahmen genutzt werden (Bewertung C).',
+        'Die Leitlinie von 2023 zu Fersenschmerzen sieht es genauso: Einlagen **nicht** allein zur kurzfristigen Linderung (Empfehlungsgrad B gegen die Anwendung), aber sie **können** zusätzlich zu anderen Maßnahmen genutzt werden (Empfehlungsgrad C).',
       ],
       figure: {
         id: 'plantar-fascia',
@@ -73,7 +73,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       exercises: [
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie für Plantarfaszien- und Wadendehnung.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie für Plantarfaszien- und Wadendehnung.' },
           dose: 'Walkito beginnt mit 2-mal 30\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg einen Knöchel über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Halte, dann lass los. Am nützlichsten vor deinen ersten Schritten am Morgen.',
           often: 'Täglich',
@@ -85,7 +85,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
         },
         {
           name: 'Fersenheben mit Handtuch unter den Zehen',
-          evidence: { level: 'strong', why: 'Die Übung aus der Studie von Rathleff 2015. Bewertung B in der Leitlinie für Krafttraining.' },
+          evidence: { level: 'strong', why: 'Die Übung aus der Studie von Rathleff 2015. Empfehlungsgrad B in der Leitlinie für Krafttraining.' },
           dose: 'In der Studie steigerten sich die Teilnehmenden von 3\u00A0Sätzen à 12 schweren Wiederholungen auf 5\u00A0Sätze à 8. In Walkito kommt die Übung nach leichteren Varianten des Fersenhebens, mit 4\u00A0Sätzen à 10, jedes Bein, im selben 3-2-3-Tempo und mit Zusatzgewicht wie einem Rucksack, wenn du eine Stufe hast',
           how: 'Stell dich mit einem Fuß auf eine Stufe, ein zusammengerolltes Handtuch unter den Zehen. Drei Sekunden hoch, zwei Sekunden halten, drei Sekunden runter. Halt dich an einem Geländer fest. Das Handtuch biegt die Zehen nach oben und belastet so die Plantarfaszie zusammen mit der Wade.',
           often: 'Jeden zweiten Tag',
@@ -137,8 +137,8 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
         head: ['', 'Einlagen und orthopädische Einlagen', 'Übungen'],
         rows: [
           ['Wie sie wirken', 'Verändern die Belastung des Fußes, solange du sie trägst', 'Verändern das Gewebe, sodass es mehr Last verträgt'],
-          ['Belege bei Fersenschmerzen', 'Kleiner mittelfristiger Nutzen gegenüber Schein, keiner nach zwölf Monaten', 'Dehnen Bewertung **A**, Kraft Bewertung **B**'],
-          ['Bewertung in der Leitlinie zu Fersenschmerzen', 'Allein **B dagegen**, mit anderen Maßnahmen **C**', 'Kern der ersten Wahl'],
+          ['Belege bei Fersenschmerzen', 'Kleiner mittelfristiger Nutzen gegenüber Schein, keiner nach zwölf Monaten', 'Dehnen Empfehlungsgrad **A**, Kraft Empfehlungsgrad **B**'],
+          ['Empfehlungsgrad in der Leitlinie zu Fersenschmerzen', 'Allein **Empfehlung dagegen (Grad B)**, mit anderen Maßnahmen **C**', 'Kern der ersten Wahl'],
           ['Maßgefertigt oder fertig', 'In Studien kein Unterschied', 'Keine Ausrüstung nötig'],
           ['Belege bei Plattfuß', 'Schwache Belege für Schmerz', 'Kleine Studien zeigen Veränderungen am Gewölbe, kaum Daten zum Schmerz'],
           ['Kosten', 'Gering für fertige, deutlich höher für maßgefertigte', 'Kostenlos'],
@@ -151,10 +151,10 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       h2: 'Wann sind Einlagen sinnvoll?',
       bullets: [
         '**Lange Schichten auf den Beinen.** Eine feste Gewölbestütze kann den Tag erleichtern, während Übungen die Belastbarkeit aufbauen. Siehe [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/).',
-        '**Ein Schub.** Eine Einlage oder ein Fersenkissen kann die Spitze nehmen, solange die ersten Schritte stechen. [Tapen](/de/plantarfasziitis-tapen/) ist eine weitere kurzfristige Option, mit einer höheren Bewertung in der Leitlinie.',
+        '**Ein Schub.** Eine Einlage oder ein Fersenkissen kann die Spitze nehmen, solange die ersten Schritte stechen. [Tapen](/de/plantarfasziitis-tapen/) ist eine weitere kurzfristige Option, mit einem höheren Empfehlungsgrad in der Leitlinie.',
         '**Schmerzhafter Hohlfuß.** In einer Studie mit 154\u00A0Erwachsenen mit schmerzhaftem Hohlfuß (Pes cavus) linderten maßgefertigte Einlagen den Schmerz nach drei Monaten stärker als eine Schein-Einlage (Burns und Kollegen, 2006). Siehe [Übungen bei Hohlfuß](/de/hohlfuss-uebungen/).',
         '**Tibialis-posterior-Insuffizienz**, bei der die Sehne schwächer wird, die das Gewölbe hält. Studien kombinieren eine Einlage mit Übungen (Houck und Kollegen, 2015). Siehe [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/).',
-        '**Diabetes oder weniger Gefühl in den Füßen.** Druckverteilende Einlagen sind hier oft Teil der Fußversorgung, angepasst von einer medizinischen Fachperson.',
+        '**Diabetes oder weniger Gefühl in den Füßen.** Druckverteilende Einlagen sind hier oft Teil der Fußversorgung, angepasst von einer Ärztin oder einem Arzt.',
       ],
       cites: [CITE.guideline, CITE.burnsCavus, CITE.houckPTTD],
     },
@@ -163,7 +163,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       paragraphs: [
         '**Nutz die Einlage für den Komfort und die Übungen für die Veränderung.** In der Studie von Rathleff und in der STAP-Studie bekamen alle Übungsempfehlungen, egal was in ihrem Schuh lag. Trag an den Tagen, an denen es wehtut, eine fertige Gewölbestütze und fang gleichzeitig mit den Dehnungen und dem Fersenheben an. Wenn der Morgenschmerz nachlässt, probier kurze Zeiten ohne Einlage, dann längere.',
         'Walkito kann die Übungsseite als Wochenplan aufstellen: Einmal pro Woche setzt es deine Hauptübung eine Stufe höher, wenn du deine letzten zwei Einheiten damit als leicht bewertet hast und der Morgenschmerz nicht gestiegen ist.',
-        'Wenn ein paar Monate tägliches Dehnen und Krafttraining nicht geholfen haben, geh zu einer medizinischen Fachperson. Dann lohnt es sich, unter anderem über eine maßgefertigte Einlage mit jemandem zu sprechen, der deinen Fuß untersucht hat.',
+        'Wenn ein paar Monate tägliches Dehnen und Krafttraining nicht geholfen haben, geh zum Arzt oder zur Ärztin. Dann lohnt es sich, unter anderem über eine maßgefertigte Einlage mit jemandem zu sprechen, der deinen Fuß untersucht hat.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],
     },
@@ -172,7 +172,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       q: 'Brauche ich bei Plantarfasziitis orthopädische Einlagen?',
       cites: [CITE.guideline, CITE.whittakerOrthoses],
-      a: 'Die meisten Menschen nicht. Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt gegen Einlagen allein zur kurzfristigen Linderung (Bewertung B) und lässt sie zusätzlich zu anderen Maßnahmen zu (Bewertung C). Eine Übersichtsarbeit über 19\u00A0Studien fand nur einen kleinen mittelfristigen Nutzen gegenüber Schein-Einlagen. Dehnen (Bewertung A) und Wadenkräftigung (Bewertung B) sind der Kern, und eine Einlage kann eine Ergänzung für den Komfort sein.',
+      a: 'Die meisten Menschen nicht. Die Leitlinie von 2023 zu Fersenschmerzen empfiehlt gegen Einlagen allein zur kurzfristigen Linderung (Empfehlungsgrad B) und lässt sie zusätzlich zu anderen Maßnahmen zu (Empfehlungsgrad C). Eine Übersichtsarbeit über 19\u00A0Studien fand nur einen kleinen mittelfristigen Nutzen gegenüber Schein-Einlagen. Dehnen (Empfehlungsgrad A) und Wadenkräftigung (Empfehlungsgrad B) sind der Kern, und eine Einlage kann eine Ergänzung für den Komfort sein.',
     },
     {
       q: 'Sind maßgefertigte Einlagen besser als Einlagen aus der Drogerie?',
@@ -192,11 +192,11 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       q: 'Braucht mein Kind mit Plattfuß Einlagen?',
       cites: [CITE.evansCochrane2022],
-      a: 'Meist nicht, wenn die Füße nicht wehtun. Ein Cochrane-Review über 16\u00A0Studien mit 1.058\u00A0Kindern fand Belege mit geringer bis sehr geringer Vertrauenswürdigkeit für Einlagen und kam zu dem Schluss, dass es für teure maßgefertigte Einlagen bei Kindern mit schmerzfreiem flexiblem Plattfuß keine stützenden Belege gibt (Evans und Kollegen, 2022). Ein Kind mit Fußschmerzen, Steifigkeit oder Hinken sollte zu einer medizinischen Fachperson.',
+      a: 'Meist nicht, wenn die Füße nicht wehtun. Ein Cochrane-Review über 16\u00A0Studien mit 1.058\u00A0Kindern fand Belege mit geringer bis sehr geringer Vertrauenswürdigkeit für Einlagen und kam zu dem Schluss, dass es für teure maßgefertigte Einlagen bei Kindern mit schmerzfreiem flexiblem Plattfuß keine stützenden Belege gibt (Evans und Kollegen, 2022). Ein Kind mit Fußschmerzen, Steifigkeit oder Hinken sollte zum Arzt oder zur Ärztin.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat oder du den Fuß nicht belasten kannst',
       'es sehr wehtut, wenn du die Seiten der Ferse zusammendrückst, was auf einen Ermüdungsbruch hindeuten kann',
@@ -212,7 +212,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     h2: 'Die Übungen als Plan umsetzen',
     text: 'Eine Einlage legst du einmal in den Schuh. Übungen wirken nur, wenn du dranbleibst. Walkito baut einen Plan, Woche für Woche, bei Fersenschmerzen oder Plattfuß. Er beginnt mit Dehnungen wie der Plantarfaszien-Dehnung (2-mal 30\u00A0Sekunden halten) und Gewölbearbeit wie dem Kurzen Fuß (3\u00A0Sätze à 8 mit 5\u00A0Sekunden Halten) und setzt deine Hauptübung eine Stufe höher, wenn du sie zweimal hintereinander als leicht bewertest und der Morgenschmerz stabil bleibt.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose, ersetzt keine medizinische Fachperson und lässt sich gut mit einer Einlage kombinieren.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose, ersetzt keinen Arztbesuch und lässt sich gut mit einer Einlage kombinieren.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

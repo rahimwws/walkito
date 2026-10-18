@@ -21,7 +21,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
     'In einer Übersichtsarbeit von 2006 über fünf randomisierte Studien (161\u00A0gesunde Personen) brachte statisches Wadendehnen etwa 2 bis 3\u00A0Grad mehr Beugung im Sprunggelenk als kein Dehnen, und die Autorinnen und Autoren waren unsicher, ob diese Veränderung klinisch bedeutsam ist.',
     'Der Knie-zur-Wand-Test ist zu Hause und in der Praxis zuverlässig, aber eine Übersichtsarbeit von 2015 über 12\u00A0Studien fand, dass eine Veränderung etwa 1,6 bis 1,9\u00A0cm betragen muss, bevor du dich darauf verlassen kannst, dass sie echt ist.',
     'In einer Studie mit 74\u00A0gesunden Personen nahm die Beugung im Sprunggelenk nach einem Programm mit exzentrischem Fersenabsenken zu, in der Kontrollgruppe nicht (Mahieu und Kollegen, 2008).',
-    'Nach einem Umknicken verbesserte eine Gelenkmobilisation durch eine Fachperson in einer Übersichtsarbeit von 2018 kurzfristig die Beugung im Sprunggelenk unter Belastung, Langzeiteffekte sind kaum untersucht.',
+    'Nach einem Umknicken verbesserte eine Gelenkmobilisation in der Physiotherapie in einer Übersichtsarbeit von 2018 kurzfristig die Beugung im Sprunggelenk unter Belastung, Langzeiteffekte sind kaum untersucht.',
     'In einer Fall-Kontroll-Studie mit passenden Kontrollpersonen, 50 mit Plantarfasziitis und 100 ohne, hatten Menschen mit 0\u00A0Grad Beugung im Sprunggelenk oder weniger eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen mit über 10\u00A0Grad.',
   ],
   toc: true,
@@ -173,7 +173,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
       paragraphs: [
         '**Nicht nur Dehnen, auch Krafttraining über den vollen Bewegungsumfang kann die Beweglichkeit im Sprunggelenk verbessern.** In einer randomisierten Studie mit 74\u00A0gesunden Personen machte eine Gruppe etwa anderthalb Monate lang ein Programm mit exzentrischem Fersenabsenken (die Ferse unter Last langsam absenken), die andere nicht. Der Bewegungsumfang der Dorsalflexion nahm nur in der Gruppe mit Fersenabsenken zu, und die Wade setzte der Dehnung weniger Widerstand entgegen als vorher (Mahieu und Kollegen, 2008).',
         'Die Übersichtsarbeit von 2013 über 23\u00A0Studien schloss auch eine Studie ein, in der Fersenheben in Kombination mit statischem Dehnen die Beugung im Sprunggelenk stärker steigerte als keine Übungen (Young und Kollegen). Sowohl die Übersichtsarbeit als auch die Studie zum Fersenabsenken untersuchten gesunde Menschen, nicht Menschen mit steifen oder schmerzenden Sprunggelenken.',
-        'Krafttraining hat einen zweiten Vorteil: Es baut gleichzeitig die Wade auf. Wenn du auch Schmerzen an Ferse oder Achillessehne hast, erledigen die Wadenübungen unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) und [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) beides.',
+        'Krafttraining hat einen zweiten Vorteil: Es baut gleichzeitig die Wade auf. Wenn du auch Schmerzen an Ferse oder Achillessehne hast, erledigen die Wadenübungen unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) und [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) beides.',
       ],
       cites: [CITE.mahieuEccentric, CITE.youngDorsiflexion],
     },
@@ -181,7 +181,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
       h2: 'Wie bekommst du die Beweglichkeit im Sprunggelenk nach dem Umknicken zurück?',
       keyFact: 'Eine Übersichtsarbeit von 2013 fand, dass Dehnen zu Hause zwei Wochen nach einem akuten Umknicken die größten Zuwächse bei der Dorsalflexion brachte (Terada und Kollegen).',
       paragraphs: [
-        'Nach dem Umknicken verliert das Sprunggelenk oft an Beugung, und sie zurückzugewinnen ist ein normaler Teil der Reha. Eine Übersichtsarbeit von 2013 über neun Studien fand, dass statisches Dehnen als Teil eines Übungsprogramms für zu Hause zwei Wochen nach einem akuten Umknicken den größten Effekt auf die Dorsalflexion hatte. Mobilisation mit Bewegung, eine manuelle Technik, bei der eine Fachperson das Sprunggelenk gleiten lässt, während du es beugst, hatte bei Menschen mit wiederholtem Umknicken nur kleine Effekte (Terada und Kollegen).',
+        'Nach dem Umknicken verliert das Sprunggelenk oft an Beugung, und sie zurückzugewinnen ist ein normaler Teil der Reha. Eine Übersichtsarbeit von 2013 über neun Studien fand, dass statisches Dehnen als Teil eines Übungsprogramms für zu Hause zwei Wochen nach einem akuten Umknicken den größten Effekt auf die Dorsalflexion hatte. Mobilisation mit Bewegung, eine manuelle Technik, bei der eine Therapeutin oder ein Therapeut das Sprunggelenk gleiten lässt, während du es beugst, hatte bei Menschen mit wiederholtem Umknicken nur kleine Effekte (Terada und Kollegen).',
         'Eine größere Übersichtsarbeit von 2018 über 23\u00A0Studien fand, dass Gelenkmobilisation bei Menschen mit lang anhaltenden Problemen nach dem Umknicken die Beugung im Sprunggelenk unter Belastung kurzfristig verbesserte, aber nicht direkt nach einer einzelnen Sitzung. Langzeiteffekte sind kaum untersucht (Weerasekara und Kollegen).',
         'Der Bewegungsumfang ist nur ein Teil der Erholung nach dem Umknicken. In der Studie von Hoch 2012 hatten Menschen mit Sprunggelenken, die immer wieder wegknickten, im Durchschnitt etwa 1,7\u00A0cm weniger beim Knie-zur-Wand-Test als gesunde Menschen, und auch ihre Reichweite beim Gleichgewicht nach vorn war kürzer. **Gleichgewichts- und Krafttraining zählen hier genauso viel wie Beweglichkeit.** Siehe [Sprunggelenk stärken: Übungen](/de/sprunggelenk-staerken-uebungen/).',
       ],
@@ -214,7 +214,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
     {
       q: 'Lässt sich die Beweglichkeit im Sprunggelenk verbessern?',
       cites: [CITE.radfordStretch, CITE.mahieuEccentric],
-      a: 'Ja, zumindest bei den untersuchten gesunden Menschen. Eine Übersichtsarbeit von 2006 über fünf Studien fand, dass Wadendehnen etwa 2 bis 3\u00A0Grad brachte, und eine Studie mit 74\u00A0gesunden Personen fand, dass auch exzentrisches Fersenabsenken den Bewegungsumfang steigerte. Wenn ein knöcherner Block die Grenze ist, etwa nach einem Bruch oder bei Arthrose, fallen die Zuwächse vielleicht kleiner aus, und eine Fachperson sollte dich anleiten.',
+      a: 'Ja, zumindest bei den untersuchten gesunden Menschen. Eine Übersichtsarbeit von 2006 über fünf Studien fand, dass Wadendehnen etwa 2 bis 3\u00A0Grad brachte, und eine Studie mit 74\u00A0gesunden Personen fand, dass auch exzentrisches Fersenabsenken den Bewegungsumfang steigerte. Wenn ein knöcherner Block die Grenze ist, etwa nach einem Bruch oder bei Arthrose, fallen die Zuwächse vielleicht kleiner aus, und eine Physiotherapeutin oder ein Physiotherapeut sollte dich anleiten.',
     },
     {
       q: 'Warum heben sich meine Fersen bei der Kniebeuge?',
@@ -224,7 +224,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
     {
       q: 'Ist ein steifes Sprunggelenk nach dem Umknicken normal?',
       cites: [CITE.teradaSprain, CITE.weerasekaraMobilisation],
-      a: 'Ja, nach dem Umknicken etwas Beugung im Sprunggelenk zu verlieren ist häufig. Eine Übersichtsarbeit von 2013 fand, dass Dehnen zu Hause zwei Wochen nach einem akuten Umknicken die größten Zuwächse bei der Dorsalflexion brachte. Eine Übersichtsarbeit von 2018 fand, dass Gelenkmobilisation durch eine Fachperson bei länger anhaltenden Problemen nach dem Umknicken kurzfristig den Bewegungsumfang verbesserte. Eine Steifigkeit, die nicht besser wird, oder ein Einklemmen vorn am Sprunggelenk ist einen Termin in der Physiotherapie wert.',
+      a: 'Ja, nach dem Umknicken etwas Beugung im Sprunggelenk zu verlieren ist häufig. Eine Übersichtsarbeit von 2013 fand, dass Dehnen zu Hause zwei Wochen nach einem akuten Umknicken die größten Zuwächse bei der Dorsalflexion brachte. Eine Übersichtsarbeit von 2018 fand, dass Gelenkmobilisation in der Physiotherapie bei länger anhaltenden Problemen nach dem Umknicken kurzfristig den Bewegungsumfang verbesserte. Eine Steifigkeit, die nicht besser wird, oder ein Einklemmen vorn am Sprunggelenk ist einen Termin in der Physiotherapie wert.',
     },
     {
       q: 'Verbessert Fußkreisen die Beweglichkeit im Sprunggelenk?',
@@ -232,7 +232,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du kürzlich umgeknickt bist und keine vier Schritte auf dem Fuß gehen kannst oder der Knochen bei Berührung schmerzt',
       'das Sprunggelenk geschwollen, heiß oder gerötet ist oder du Fieber hast',
@@ -249,7 +249,7 @@ export const ANKLE_MOBILITY_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut Woche für Woche einen Plan rund um ein Ziel auf, bei Schmerzen in Ferse, Fuß und Bein. Die Beweglichkeit im Sprunggelenk gehört dazu: Wadendehnungen, ein Halten in der Knie-zur-Wand-Position und Sprunggelenk-Wippen wechseln sich in deinen Einheiten ab, die meisten an Beweglichkeitstagen, neben Krafttraining für die Wade und Gleichgewichtsübungen. Walkito startet Dehnungen und Sprunggelenk-Wippen mit 2\u00A0Sätzen à 30\u00A0Sekunden pro Bein.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

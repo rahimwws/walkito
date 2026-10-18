@@ -226,7 +226,7 @@ export const PF_PREGNANCY_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es una app de ejercicios para el talón y el pie. No está pensada para el embarazo y no sabe en qué trimestre estás, así que consulta a tu médico o a tu ginecólogo antes de empezar, y sáltate lo que pida brincar, saltar o acostarte boca arriba.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Antes de cada sesión calificas el dolor de talón de esa mañana, y el plan se ajusta. Walkito no diagnostica.',

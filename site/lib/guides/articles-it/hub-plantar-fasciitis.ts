@@ -30,7 +30,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio il grado più alto, A, e al lavoro di forza una B (Koc e colleghi, 2023).',
     'Circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching, lavoro di forza e scarpe con un buon sostegno, spesso nel giro di alcuni mesi (Latt e colleghi, 2020).',
     'Una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, è stata il fattore di rischio indipendente più forte in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli, con un odds ratio di 23,3 (Riddle e colleghi, 2003).',
-    'Il dolore al tallone ai primi passi del mattino, che si calma dopo qualche minuto di cammino, è lo schema di sintomi più riconoscibile (Koc e colleghi, 2023).',
+    'Il dolore al tallone ai primi passi del mattino, che si calma dopo qualche minuto di cammino, è il sintomo più riconoscibile (Koc e colleghi, 2023).',
     'In un follow-up a lungo termine su 174\u00A0pazienti, circa la metà non aveva più sintomi a cinque anni. Tra chi aveva ancora sintomi, la maggior parte riferiva solo un dolore lieve (Hansen e colleghi, 2018).',
   ],
   toc: true,
@@ -50,7 +50,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       paragraphs: [
         '**Il sintomo tipico è il dolore sotto il tallone ai primi passi del mattino.** La linea guida lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Di solito si calma dopo qualche minuto di cammino, poi torna quando sei stato seduto un po’ e ti rialzi.',
         'Il dolore di solito è nella parte interna e anteriore del tallone, dove la fascia si attacca all’osso. Può estendersi lungo l’arco. Tende a essere peggiore dopo il riposo, non durante l’attività, cioè il contrario di quello che la maggior parte delle persone si aspetta.',
-        'Il dolore si vede meglio la mattina dopo. Se la mattina dopo va peggio, il giorno prima hai chiesto troppo al piede. Per questo seguire il dolore del mattino è il modo più utile per capire se stai migliorando. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio lo schema del mattino.',
+        'Il dolore si vede meglio la mattina dopo. Se la mattina dopo va peggio, il giorno prima hai chiesto troppo al piede. Per questo seguire il dolore del mattino è il modo più utile per capire se stai migliorando. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio il dolore del mattino.',
       ],
       cites: [CITE.guideline],
     },
@@ -94,12 +94,12 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         '**In un caso tipico non servono esami di imaging.** La linea guida consiglia di valutarli:',
         {
           list: [
-            'Se lo schema non torna.',
+            'Se il quadro non è quello tipico.',
             'Se i sintomi non migliorano dopo diverse settimane di cure conservative.',
             'Se bisogna escludere un’altra diagnosi (per esempio una frattura da stress o un nervo compresso).',
           ],
         },
-        'Ecografia e risonanza magnetica possono mostrare una fascia ispessita, ma una fascia ispessita in un esame, senza lo schema di sintomi che corrisponde, non è fascite plantare.',
+        'Ecografia e risonanza magnetica possono mostrare una fascia ispessita, ma una fascia ispessita in un esame, senza i sintomi corrispondenti, non è fascite plantare.',
         'Walkito non fa diagnosi. Se non sei sicuro che il tuo dolore al tallone sia fascite plantare, il punto di partenza giusto è un professionista sanitario.',
       ],
       cites: [CITE.guideline],
@@ -124,8 +124,8 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
           ['Laserterapia a bassa intensità', '**B**', 'Si fa in ambulatorio.'],
           ['Dry needling', '**B**', 'Si fa in ambulatorio.'],
           ['Plantari insieme ad altre cure', '**C**', 'Prove deboli. Possono aiutare come parte di un programma più ampio.'],
-          ['Plantari da soli, nel breve periodo', '**B contro**', 'La linea guida li **sconsiglia** come approccio a sé.'],
-          ['Ultrasuoni terapeutici aggiunti allo stretching', '**A contro**', 'Le prove non sostengono di aggiungerli.'],
+          ['Plantari da soli, nel breve periodo', '**B a sfavore**', 'La linea guida li **sconsiglia** come approccio a sé.'],
+          ['Ultrasuoni terapeutici aggiunti allo stretching', '**A a sfavore**', 'Le prove non sostengono di aggiungerli.'],
         ],
       },
       sourceNote:
@@ -137,7 +137,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       keyFact: 'In una coorte di 174\u00A0persone, circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore a dieci anni, per lo più lieve (Hansen e colleghi, 2018).',
       paragraphs: [
         'Una revisione del 2020 riporta che circa il 90% delle persone migliora con cure non chirurgiche, spesso nel giro di alcuni mesi. Un follow-up più lungo su 174\u00A0pazienti dà un quadro più dettagliato: circa la metà non aveva più sintomi a cinque anni, e il 46% aveva ancora un po’ di dolore dopo in media dieci anni, anche se la maggior parte di loro riferiva solo sintomi lievi.',
-        'I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di una spina calcaneare non lo erano.',
+        'I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare. Nella coorte di Hansen del 2018, essere donna e avere dolore a entrambi i talloni erano predittori significativi di un recupero più lento. L’indice di massa corporea, l’età, lo spessore della fascia e la presenza di uno sperone calcaneare non lo erano.',
         'La domanda utile non è «quante settimane mancano alla fine?» ma «il mio dolore del mattino è più basso questo mese rispetto al mese scorso?». **Quella tendenza è il vero traguardo.** [Quanto dura la fascite plantare?](/it/quanto-dura-fascite-plantare/) raccoglie tutte le prove sui tempi.',
       ],
       cites: [CITE.latt, CITE.hansen],
@@ -182,14 +182,14 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       h2: 'Il dolore potrebbe essere qualcosa di diverso dalla fascite plantare?',
       paragraphs: [
-        'Diversi problemi hanno la stessa posizione o lo stesso schema del mattino. Dove si trova il dolore e come si comporta aiutano a distinguerli:',
+        'Diversi problemi hanno la stessa posizione o lo stesso andamento al mattino. Dove si trova il dolore e come si comporta aiutano a distinguerli:',
         {
           list: [
             '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         '**Sindrome del cuscinetto adiposo del tallone.** Un dolore profondo al centro del tallone, peggiore su superfici dure e a piedi nudi. Una scoping review del 2022 ha notato che può essere difficile distinguerla dalla fascite plantare senza esami di imaging. Il dolore del cuscinetto adiposo è proprio sotto il centro, quello della fascite nella parte interna e anteriore.',
-        '**Spina calcaneare.** Una crescita ossea sulla parte inferiore dell’osso del tallone. Molte persone ne hanno una senza alcun dolore. Nella coorte di Hansen del 2018 su 174\u00A0pazienti, avere una spina calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi. La spina spesso c’è, ma di solito non è lei a causare il dolore.',
+        '**Sperone calcaneare.** Una crescita ossea sulla parte inferiore dell’osso del tallone. Molte persone ne hanno una senza alcun dolore. Nella coorte di Hansen del 2018 su 174\u00A0pazienti, avere uno sperone calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi. Lo sperone spesso c’è, ma di solito non è lui a causare il dolore.',
         '**Frattura da stress del calcagno.** Un dolore che aumenta con l’attività invece di calmarsi quando ti scaldi. Può fare male a riposo o di notte. Stringere i lati del tallone spesso lo riproduce. Rivolgiti a un professionista sanitario prima di allenare il piede.',
-        '**Artrite infiammatoria.** Quando fanno male entrambi i talloni, la rigidità del mattino dura più di 30\u00A0minuti e altre articolazioni sono rigide o gonfie, lo schema fa pensare a qualcosa di sistemico. Deve controllarlo un professionista sanitario.',
+        '**Artrite infiammatoria.** Quando fanno male entrambi i talloni, la rigidità del mattino dura più di 30\u00A0minuti e altre articolazioni sono rigide o gonfie, il quadro fa pensare a una causa sistemica. Deve controllarlo un professionista sanitario.',
           ],
         },
         'Se non sei sicuro, un professionista sanitario può distinguerli in base alla posizione, al comportamento del dolore e, se serve, agli esami di imaging.',
@@ -222,7 +222,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       q: 'Qual è il modo più veloce per far passare la fascite plantare?',
       cites: [CITE.guideline, CITE.rathleff],
-      a: 'Non ci sono scorciatoie, ma le prove indicano di iniziare presto con lo stretching (grado A nella linea guida) e di aggiungere il lavoro di forza per il polpaccio (grado B). In uno studio su 48\u00A0persone, i sollevamenti sulle punte con carico alto hanno anticipato il miglioramento a tre mesi (Rathleff e colleghi, 2015). Stretching costante ogni giorno, scarpe con un buon sostegno e non sovraccaricare il piede sono la base.',
+      a: 'Non ci sono scorciatoie, ma le prove indicano di iniziare presto con lo stretching (grado A nella linea guida) e di aggiungere il lavoro di forza per il polpaccio (grado B). In uno studio su 48\u00A0persone, i sollevamenti sulle punte ad alto carico hanno anticipato il miglioramento a tre mesi (Rathleff e colleghi, 2015). Stretching costante ogni giorno, scarpe con un buon sostegno e non sovraccaricare il piede sono la base.',
     },
     {
       q: 'La fascite plantare passa da sola?',
@@ -235,9 +235,9 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
       a: 'Camminare con scarpe che sostengono il piede, a un ritmo comodo, in genere va bene. La linea guida non dice di smettere di muoversi. Il test è come sta il tallone la mattina dopo. Se il dolore ai primi passi dopo una camminata è chiaramente più alto del solito, quella camminata è stata troppo impegnativa. Accorcia la distanza prima di fermarti del tutto.',
     },
     {
-      q: 'La spina calcaneare causa la fascite plantare?',
+      q: 'Lo sperone calcaneare causa la fascite plantare?',
       cites: [CITE.hansen],
-      a: 'Non nel modo in cui pensano in molti. La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone, e molte persone ne hanno una senza dolore. In un follow-up su 174\u00A0pazienti, avere una spina calcaneare all’inizio non cambiava in modo significativo la durata dei sintomi (Hansen e colleghi, 2018). Il problema è il sovraccarico della fascia, non la spina.',
+      a: 'Non nel modo in cui pensano in molti. Lo sperone calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone, e molte persone ne hanno una senza dolore. In un follow-up su 174\u00A0pazienti, avere uno sperone calcaneare all’inizio non cambiava in modo significativo la durata dei sintomi (Hansen e colleghi, 2018). Il problema è il sovraccarico della fascia, non lo sperone.',
     },
     {
       q: 'Posso fare sport con la fascite plantare?',
@@ -251,7 +251,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     },
     {
       q: 'Quando andare dal medico per il dolore al tallone?',
-      a: 'Rivolgiti a un professionista sanitario se il dolore è iniziato dopo un infortunio, se non riesci a caricare il peso sul piede, se ti fanno male entrambi i talloni e altre articolazioni sono rigide, se c’è intorpidimento o formicolio, se il tallone è arrossato o caldo, se ti sveglia di notte, o se il dolore non migliora dopo diversi mesi di stretching e lavoro sul polpaccio. Questi schemi possono indicare un altro problema.',
+      a: 'Rivolgiti a un professionista sanitario se il dolore è iniziato dopo un infortunio, se non riesci a caricare il peso sul piede, se ti fanno male entrambi i talloni e altre articolazioni sono rigide, se c’è intorpidimento o formicolio, se il tallone è arrossato o caldo, se ti sveglia di notte, o se il dolore non migliora dopo diversi mesi di stretching e lavoro sul polpaccio. Questi quadri possono indicare un altro problema.',
     },
     {
       q: 'Perché ho la fascite plantare solo a un piede?',
@@ -278,7 +278,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi capire da solo quali esercizi fare, in che ordine o quando passare al livello successivo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per la fascite plantare, il primo obiettivo è una mattina migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Quando hai raggiunto l’obiettivo del mattino, quell’obiettivo passa al mantenimento e il successivo prende il suo posto.',

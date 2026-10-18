@@ -63,7 +63,7 @@ export const STANDING_FR: Guide = {
           ['Montées sur pointes, deux pieds', '3\u00A0séries de 10, deux pieds', 'Jours de renforcement', 'Les mollets qui travaillent, les deux pieds se partageant la charge', 'La douleur atteint 6/10'],
           ['Pied court, assis', '3\u00A0séries de 10, maintien de 5\u00A0secondes, chaque pied', 'Jours de renforcement', 'La voûte qui se soulève, orteils relâchés', 'La douleur atteint 6/10'],
           ['Équilibre sur une jambe', '3\u00A0maintiens de 30\u00A0secondes, chaque jambe', 'Jours d’équilibre', 'Le pied et la cheville qui font de petites corrections', 'La douleur atteint 6/10'],
-          ['Massage avec une balle', '2\u00A0minutes', 'Jours de récupération', 'Une pression ferme sous le pied, jamais une grimace', 'La douleur atteint 6/10'],
+          ['Massage avec une balle', '2\u00A0minutes', 'Jours de récupération', 'Une pression ferme sous le pied, sans jamais grimacer', 'La douleur atteint 6/10'],
         ],
       },
       exercises: [
@@ -198,7 +198,7 @@ export const STANDING_FR: Guide = {
       h2: 'Une douleur aux pieds debout, est-ce une fasciite plantaire, des pieds plats ou autre chose\u00A0?',
       paragraphs: [
         'La douleur aux pieds liée à la station debout peut être une fatigue générale qui passe avec le repos, ou le début d’un problème bien identifié. Le plus fréquent est la fasciite plantaire\u00A0: une douleur vive près du talon, en général pire aux premiers pas après le repos. Si votre talon fait le plus mal le matin, puis à nouveau après être resté assis, ce schéma oriente vers une fasciite plantaire, et les exercices de [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) sont le guide le plus complet.',
-        'Si vos voûtes semblent affaissées ou basculées vers l’intérieur en fin de journée, les exercices de [exercices pour les pieds plats](/fr/exercices-pieds-plats/) ciblent les muscles qui soutiennent la voûte. Un pied plat rigide, qui reste plat même quand le pied ne touche pas le sol, est structurel et demande un professionnel de santé plutôt que des exercices.',
+        'Si vos voûtes semblent affaissées ou basculées vers l’intérieur en fin de journée, les exercices de [exercices pour les pieds plats](/fr/exercices-pieds-plats/) ciblent les muscles qui soutiennent la voûte. Un pied plat rigide, qui reste plat même quand le pied ne touche pas le sol, est structurel et relève d’un professionnel de santé plutôt que des exercices.',
         'Si la douleur est le long du tibia plutôt que sous le pied, cela oriente vers une périostite tibiale, et [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) résume ce qu’en dit la recherche.',
         'Une douleur à l’arrière du talon, dans le tendon d’Achille, est un autre problème. Une douleur à l’intérieur de la cheville peut venir du tendon tibial postérieur. Les deux sont traités du point de vue des coureurs dans [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais). Si la douleur est à l’arrière du talon, dans le tendon d’Achille, voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/)\u00A0; si vous voulez plus de détails sur l’exercice de montée sur pointes lui-même, voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).',
         '**Si vous ne savez pas ce qui cause la douleur, consultez un professionnel de santé avant de la charger avec des exercices.**',

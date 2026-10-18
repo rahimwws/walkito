@@ -139,10 +139,10 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito usa a elevação do dedão no começo da sequência de fortalecimento do pé, junto com puxar a toalha com os dedos. Quando você consegue isolar o dedão bem por duas sessões, o plano passa o foco para o exercício do pé curto e a progressão dele, de sentado para em pé. As sessões são de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o progresso.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },
-  crumb: 'Elevação do dedão (toe yoga)',
+  crumb: 'Elevação do dedão',
   campaign: 'ex-big-toe-lift-pt',
 };

@@ -287,7 +287,7 @@ export const BEST_APP_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Si llegaste hasta aquí y Walkito parece ir contigo, así funciona. Respondes unas preguntas sobre dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta. Walkito arma un plan semanal en torno a esas respuestas. Cada mañana, un chequeo ajusta el día. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio a una pierna.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Los ejercicios siguen la guía clínica de 2023 para el dolor de talón. El plan no tiene fecha de fin: cuando alcanzas una meta, pasa a mantenerla y la siguiente meta toma su lugar. Walkito es un programa de ejercicios, no un diagnóstico ni un reemplazo de un profesional de la salud.',

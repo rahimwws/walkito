@@ -31,7 +31,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
         'In uno studio di un anno su 312\u00A0adulti tra 60 e 90\u00A0anni, chi è caduto aveva l’alluce più debole (11,6% contro 14,8% del peso corporeo) rispetto a chi non è caduto (Mickle e colleghi, 2009).',
       paragraphs: [
         '**La forza delle dita conta soprattutto per l’equilibrio e per la spinta quando cammini.** Le dita sono l’ultima parte del piede a staccarsi da terra a ogni passo, e quando stai fermo in piedi premono verso il basso per fermare le piccole oscillazioni.',
-        'Le prove più chiare vengono dagli anziani. Un gruppo australiano ha misurato la forza delle dita in 312\u00A0persone tra 60 e 90\u00A0anni e poi ha registrato chi è caduto nei 12\u00A0mesi successivi. In 107 (il 35%) sono caduti. In media, chi è caduto riusciva a premere con l’alluce all’11,6% del proprio peso corporeo, contro il 14,8% di chi non è caduto. Le dita più piccole mostravano lo stesso schema.',
+        'Le prove più chiare vengono dagli anziani. Un gruppo australiano ha misurato la forza delle dita in 312\u00A0persone tra 60 e 90\u00A0anni e poi ha registrato chi è caduto nei 12\u00A0mesi successivi. In 107 (il 35%) sono caduti. In media, chi è caduto riusciva a premere con l’alluce all’11,6% del proprio peso corporeo, contro il 14,8% di chi non è caduto. Le dita più piccole mostravano la stessa tendenza.',
         'Uno studio precedente su 176\u00A0persone con un’età media di 80\u00A0anni ha trovato che i flessori plantari delle dita deboli (i muscoli che spingono le dita verso il basso) erano legati alle cadute anche dopo aver tenuto conto di altri fattori di rischio di caduta, come vista, tempo di reazione e forza, e dell’età.',
         'Una revisione del 2026 su 14\u00A0studi di coorte in adulti dai 60\u00A0anni in su ha messo insieme i dati e ha trovato che muscoli dell’alluce deboli si associavano a odds di una caduta futura circa 1,65\u00A0volte più alte. Gli autori hanno precisato che molti studi non tenevano conto di altre cause, quindi le dita deboli potrebbero essere in parte un segno di fragilità generale.',
         'Per l’equilibrio in sé, una revisione del 2020 su nove studi ha trovato che flessori delle dita più forti andavano insieme a un equilibrio migliore in tutti gli studi inclusi. Tutti quegli studi riguardavano persone sopra i 60\u00A0anni, quindi il legame negli adulti più giovani non è stato testato allo stesso modo.',
@@ -274,7 +274,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito comprende il sollevamento dell’alluce, l’apertura delle dita, la raccolta dell’asciugamano e l’esercizio del piede corto, e fa salire un esercizio di livello quando le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore non è aumentato. Il lavoro su dita e arco parte da 3\u00A0serie da 8 con una tenuta di 5\u00A0secondi, dentro sessioni da 3, 5 o 10\u00A0minuti, 3, 5 o 7\u00A0giorni a settimana.',
     more: [
       'All’inizio, ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Non misura direttamente la forza delle dita, quindi vale comunque la pena fare i controlli a casa di questa pagina. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

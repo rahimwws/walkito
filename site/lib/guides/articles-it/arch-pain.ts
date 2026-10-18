@@ -26,7 +26,7 @@ export const ARCH_PAIN_IT: Guide = {
   takeaways: [
     'La fascite plantare è la singola causa più comune di dolore all’arco e al tallone. La linea guida del 2023 sul dolore al tallone dà allo stretching una A e al lavoro di forza una B (Koc e colleghi, 2023).',
     'La disfunzione del tendine tibiale posteriore, un indebolimento del tendine che sostiene l’arco, è la causa più comune del piede piatto acquisito nell’adulto (Ross e colleghi, 2018).',
-    'Sia il piede piatto sia il piede cavo cambiano il modo in cui la forza attraversa l’arco durante la camminata, ma gli schemi del dolore e gli esercizi sono diversi.',
+    'Sia il piede piatto sia il piede cavo cambiano il modo in cui la forza attraversa l’arco durante la camminata, ma il tipo di dolore e gli esercizi sono diversi.',
     'Una ridotta dorsiflessione della caviglia, cioè un polpaccio rigido, era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo con 50\u00A0casi e 100\u00A0controlli (Riddle e colleghi, 2003).',
     'Un dolore all’arco che si accompagna a intorpidimento, formicolio, bruciore o debolezza richiede un professionista sanitario per escludere un nervo compresso o una causa neurologica prima degli esercizi.',
   ],
@@ -35,7 +35,7 @@ export const ARCH_PAIN_IT: Guide = {
     {
       h2: 'Da cosa dipende il dolore all’arco plantare?',
       paragraphs: [
-        'L’arco è sostenuto dalla fascia plantare, dal tendine tibiale posteriore, dai muscoli intrinseci del piede e da ossa e legamenti del mesopiede. Il dolore all’arco significa che una o più di queste strutture è sotto uno sforzo maggiore di quello che riesce a reggere. Le cause più comuni si dividono in pochi schemi:',
+        'L’arco è sostenuto dalla fascia plantare, dal tendine tibiale posteriore, dai muscoli intrinseci del piede e da ossa e legamenti del mesopiede. Il dolore all’arco significa che una o più di queste strutture è sotto uno sforzo maggiore di quello che riesce a reggere. Le cause più comuni si dividono in pochi gruppi:',
         {
           list: [
             '**La fascite plantare** è la singola causa principale. La fascia plantare, una banda spessa di tessuto che va dal tallone alla base delle dita, si irrita per il carico ripetuto. Il dolore di solito è più forte vicino al tallone ma spesso si estende all’arco, soprattutto quando è coinvolta la parte della fascia verso l’arco. Il segno tipico è un dolore acuto ai primi passi dopo il riposo. Vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) e la [panoramica sulla fascite plantare](/it/fascite-plantare/) per la guida completa.',
@@ -55,19 +55,19 @@ export const ARCH_PAIN_IT: Guide = {
         'Il punto in cui fa male, il momento della giornata in cui è peggio e cosa lo migliora o lo peggiora danno gli indizi più chiari.',
       ],
       table: {
-        caption: 'Dolore all’arco plantare: schemi per causa',
+        caption: 'Dolore all’arco plantare: sintomi per causa',
         head: ['Causa', 'Dove fa male', 'Quando è peggio', 'Indizio chiave'],
         rows: [
           ['Fascite plantare', 'Sotto il tallone, fino all’arco', 'Primi passi dopo il riposo, soprattutto al mattino', 'Il dolore acuto si calma dopo qualche minuto di cammino'],
           ['Piede piatto / arco crollato', 'Lungo l’arco interno e a volte la parte interna della caviglia', 'Dopo molto tempo in piedi o a camminare', 'L’arco crolla visibilmente in piedi; il dolore si calma senza carico'],
           ['Disfunzione del tibiale posteriore', 'Parte interna della caviglia e arco', 'Durante e dopo l’attività', 'Il sollevamento sulle punte su una gamba è debole o doloroso dal lato colpito'],
           ['Piede cavo', 'Sotto il mesopiede o lungo l’arco esterno', 'Camminando o correndo, soprattutto su superfici dure', 'L’arco resta alto anche in piedi; scarso assorbimento degli urti'],
-          ['Sovraccarico', 'Dolore diffuso all’arco', 'Dopo un aumento improvviso del carico', 'Nessuno schema di dolore al mattino; migliora con il riposo'],
+          ['Sovraccarico', 'Dolore diffuso all’arco', 'Dopo un aumento improvviso del carico', 'Nessun dolore tipico al mattino; migliora con il riposo'],
           ['Nervo (tunnel tarsale)', 'Lungo l’arco con formicolio o bruciore', 'Variabile, a volte a riposo', 'Intorpidimento, formicolio o bruciore che la fascite plantare non dà'],
         ],
       },
       after: [
-        'Se il dolore all’arco segue lo schema del dolore al mattino ed è concentrato vicino al tallone, parti dalla pagina sulla [fascite plantare](/it/fascite-plantare/). Se l’arco crolla quando sei in piedi, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se il dolore si accompagna a intorpidimento o bruciore, o se un sollevamento sulle punte su una gamba è debole o impossibile da un lato, rivolgiti a un professionista sanitario prima di iniziare gli esercizi.',
+        'Se il dolore all’arco ha l’andamento tipico del dolore al mattino ed è concentrato vicino al tallone, parti dalla pagina sulla [fascite plantare](/it/fascite-plantare/). Se l’arco crolla quando sei in piedi, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Se il dolore si accompagna a intorpidimento o bruciore, o se un sollevamento sulle punte su una gamba è debole o impossibile da un lato, rivolgiti a un professionista sanitario prima di iniziare gli esercizi.',
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
@@ -157,7 +157,7 @@ export const ARCH_PAIN_IT: Guide = {
     {
       h2: 'Quando il dolore all’arco è il segno di qualcos’altro?',
       paragraphs: [
-        'La maggior parte del dolore all’arco risponde a stretching, adattamento del carico e tempo. Ma alcuni schemi indicano problemi che richiedono un professionista sanitario prima degli esercizi:',
+        'La maggior parte del dolore all’arco risponde a stretching, adattamento del carico e tempo. Ma alcuni quadri indicano problemi che richiedono un professionista sanitario prima degli esercizi:',
         {
           list: [
             '**Sintomi nervosi:** Un dolore con intorpidimento, formicolio o bruciore può venire dalla sindrome del tunnel tarsale, in cui il nervo tibiale posteriore è compresso dietro la caviglia, sul lato interno. Serve una diagnosi clinica, non solo esercizi.',
@@ -182,7 +182,7 @@ export const ARCH_PAIN_IT: Guide = {
     {
       h2: 'E plantari e scarpe per il dolore all’arco?',
       paragraphs: [
-        'La linea guida del 2023 sul dolore al tallone dà ai plantari un grado B contro il loro uso da soli per il dolore a breve termine della fascite plantare. I plantari insieme ad altre cure, come lo stretching, ottengono una C a favore. Le scarpe che sostengono il piede sono consigliate spesso e possono ridurre il fastidio, ma nessuno studio ampio le ha mostrate migliori di stretching e lavoro di forza.',
+        'La linea guida del 2023 sul dolore al tallone dà un grado B a sfavore dei plantari usati da soli per il dolore a breve termine della fascite plantare. I plantari insieme ad altre cure, come lo stretching, ottengono una C a favore. Le scarpe che sostengono il piede sono consigliate spesso e possono ridurre il fastidio, ma nessuno studio ampio le ha mostrate migliori di stretching e lavoro di forza.',
         'Per il piede piatto, un supporto per l’arco interno può ridurre il crollo dell’arco stando in piedi e camminando, e lasciare meno lavoro al tendine tibiale posteriore e alla fascia plantare. Per il piede cavo, un plantare ammortizzato assorbe l’urto che l’arco rigido non assorbe. In uno studio del 2006 su 154\u00A0persone con dolore da piede cavo, i plantari su misura hanno migliorato dolore e funzionalità più di una soletta finta a tre mesi (Burns e colleghi, 2006).',
         '**Scarpe e solette aiutano a gestire i sintomi mentre l’esercizio costruisce la capacità di cui il piede ha bisogno.** Non si sostituiscono a vicenda.',
       ],
@@ -197,7 +197,7 @@ export const ARCH_PAIN_IT: Guide = {
     },
     {
       q: 'Perché mi fa male l’arco del piede quando cammino?',
-      a: 'Il dolore all’arco quando cammini di solito viene da poche fonti: fascite plantare, piede piatto che lascia crollare l’arco sotto carico, disfunzione del tendine tibiale posteriore, un polpaccio rigido che scarica lo sforzo sull’arco, o semplicemente camminare più di quanto il piede sia allenato a fare. Lo schema del dolore, soprattutto se è peggio al mattino o dopo l’attività, aiuta a capire quale.',
+      a: 'Il dolore all’arco quando cammini di solito viene da poche fonti: fascite plantare, piede piatto che lascia crollare l’arco sotto carico, disfunzione del tendine tibiale posteriore, un polpaccio rigido che scarica lo sforzo sull’arco, o semplicemente camminare più di quanto il piede sia allenato a fare. Il tipo di dolore, soprattutto se è peggio al mattino o dopo l’attività, aiuta a capire quale.',
     },
     {
       q: 'Il piede piatto può causare dolore all’arco?',
@@ -216,11 +216,11 @@ export const ARCH_PAIN_IT: Guide = {
     {
       q: 'I plantari aiutano il dolore all’arco plantare?',
       cites: [CITE.guideline],
-      a: 'La linea guida del 2023 sul dolore al tallone dà ai plantari un grado B contro il loro uso da soli per la fascite plantare. I plantari insieme a stretching e lavoro di forza possono aiutare a gestire i sintomi mentre il piede costruisce capacità. Per il piede cavo, i plantari ammortizzati o su misura hanno prove migliori, compreso uno studio randomizzato che ha mostrato un miglioramento rispetto a una soletta finta a tre mesi.',
+      a: 'La linea guida del 2023 sul dolore al tallone dà un grado B a sfavore dei plantari usati da soli per la fascite plantare. I plantari insieme a stretching e lavoro di forza possono aiutare a gestire i sintomi mentre il piede costruisce capacità. Per il piede cavo, i plantari ammortizzati o su misura hanno prove migliori, compreso uno studio randomizzato che ha mostrato un miglioramento rispetto a una soletta finta a tre mesi.',
     },
     {
       q: 'Il dolore all’arco plantare è la stessa cosa della fascite plantare?',
-      a: 'Non sempre. La fascite plantare è una causa specifica di dolore all’arco, la più comune. Ma il dolore all’arco può venire anche da piede piatto, disfunzione del tendine tibiale posteriore, piede cavo, sovraccarico o irritazione dei nervi. Ogni fascite plantare comporta dolore all’arco o al tallone, ma non ogni dolore all’arco è fascite plantare. Lo schema del dolore, soprattutto il momento in cui arriva, aiuta a distinguerle.',
+      a: 'Non sempre. La fascite plantare è una causa specifica di dolore all’arco, la più comune. Ma il dolore all’arco può venire anche da piede piatto, disfunzione del tendine tibiale posteriore, piede cavo, sovraccarico o irritazione dei nervi. Ogni fascite plantare comporta dolore all’arco o al tallone, ma non ogni dolore all’arco è fascite plantare. Il tipo di dolore, soprattutto il momento in cui arriva, aiuta a distinguerle.',
     },
     {
       q: 'Cosa può causare dolore sul lato esterno dell’arco del piede?',
@@ -249,8 +249,8 @@ export const ARCH_PAIN_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
-    text: 'Se il dolore all’arco segue lo schema della fascite plantare, Walkito costruisce un piano intorno a un obiettivo alla volta. Il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per 14\u00A0giorni di fila. L’arco ha il suo obiettivo e i suoi esercizi. Se il dolore all’arco viene dal piede piatto, l’app può lavorare sia sul dolore sia sull’arco come obiettivi separati.',
+    h2: 'Come trasformarlo in un piano',
+    text: 'Se il dolore all’arco ha l’andamento tipico della fascite plantare, Walkito costruisce un piano intorno a un obiettivo alla volta. Il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per 14\u00A0giorni di fila. L’arco ha il suo obiettivo e i suoi esercizi. Se il dolore all’arco viene dal piede piatto, l’app può lavorare sia sul dolore sia sull’arco come obiettivi separati.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se non sei sicuro di cosa causi il dolore all’arco, rivolgiti a un professionista sanitario prima di caricarlo con gli esercizi.',
     ],

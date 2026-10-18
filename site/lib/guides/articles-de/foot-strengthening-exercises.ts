@@ -259,7 +259,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     },
     {
       q: 'Sollen Übungen zum Fußkräftigen wehtun?',
-      a: 'Nein. Du solltest Anstrengung spüren und am Anfang vielleicht einen leichten Krampf unter dem Gewölbe, der nachlässt, wenn du entspannst. Stechender Schmerz oder ein Schmerz von 6/10 oder mehr heißt: Hör für heute auf. Wenn jedes Mal dieselbe Stelle wehtut oder dich der Schmerz nachts wach hält, geh zu einer medizinischen Fachperson, bevor du weitermachst.',
+      a: 'Nein. Du solltest Anstrengung spüren und am Anfang vielleicht einen leichten Krampf unter dem Gewölbe, der nachlässt, wenn du entspannst. Stechender Schmerz oder ein Schmerz von 6/10 oder mehr heißt: Hör für heute auf. Wenn jedes Mal dieselbe Stelle wehtut oder dich der Schmerz nachts wach hält, lass das zuerst ärztlich abklären, bevor du weitermachst.',
     },
     {
       q: 'Reicht Barfußgehen, um die Füße zu kräftigen?',
@@ -277,7 +277,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du Taubheit, Kribbeln oder Brennen in den Füßen hast oder Diabetes und offene Stellen oder Wunden an der Haut',
       'ein Fuß schwächer wird oder der Vorfuß beim Gehen schleift oder auf den Boden klatscht',
@@ -292,7 +292,7 @@ export const FOOT_STRENGTHENING_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut einen Wochenplan rund um ein Ziel auf und enthält die Fußübungen auf dieser Seite: die Kurzer-Fuß-Übung vom Sitzen bis auf ein Bein, Zehenspreizen, Großzehenheben, Handtuchgreifen, Fersenheben und Gleichgewichtsübungen. Die Gewölbeübungen starten mit 3\u00A0Sätzen à 8 mit 5\u00A0Sekunden Halten und das Gleichgewicht mit 3-mal 20\u00A0Sekunden Halten. Mit jedem neuen Wochenplan hebt die App deine Schwerpunktübung eine Stufe höher, wenn du deine letzten zwei Einheiten damit als leicht bewertet hast und dein Morgenschmerz nicht gestiegen ist.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

@@ -49,7 +49,7 @@ export const SEVERS_IT: Guide = {
       h2: 'A che età compare e chi colpisce?',
       paragraphs: [
         'La malattia di Sever colpisce i bambini tra circa 8 e 15\u00A0anni. L’apofisi calcaneare compare intorno ai 7-9\u00A0anni e di solito si salda tra i 15 e i 17. I maschi sono colpiti da due a tre volte più spesso delle femmine, con un esordio tipico intorno ai 12\u00A0anni nei maschi e agli 11 nelle femmine. Circa il 60% dei casi interessa entrambi i talloni.',
-        'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. Lo schema è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
+        'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. L’andamento è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
         'I fattori di rischio comprendono:',
         {
           list: [
@@ -186,7 +186,7 @@ export const SEVERS_IT: Guide = {
     },
     {
       q: 'Come si mette il kinesio tape per la malattia di Sever?',
-      a: 'Non ci sono studi che abbiano testato il kinesio tape per la malattia di Sever, quindi nessuno schema è dimostrato migliore delle coppette per il tallone o della gestione del carico. Alcuni professionisti applicano il tape lungo l’Achille e sotto il tallone per ridurre la trazione sulla cartilagine di accrescimento. Se vuoi provarlo, fallo applicare da un fisioterapista o da un preparatore atletico e fatti mostrare lo schema.',
+      a: 'Non ci sono studi che abbiano testato il kinesio tape per la malattia di Sever, quindi nessuna tecnica di applicazione è dimostrata migliore delle coppette per il tallone o della gestione del carico. Alcuni professionisti applicano il tape lungo l’Achille e sotto il tallone per ridurre la trazione sulla cartilagine di accrescimento. Se vuoi provarlo, fallo applicare da un fisioterapista o da un preparatore atletico e fatti mostrare come si applica.',
     },
   ],
   redFlags: {

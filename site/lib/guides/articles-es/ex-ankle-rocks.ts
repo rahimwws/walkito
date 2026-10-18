@@ -145,7 +145,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito pone la movilidad de tobillo en los días de movilidad, junto con los estiramientos de pantorrilla y de sóleo. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos.',
     more: [
       'Ganar un centímetro en la prueba de rodilla a la pared en unas semanas es importante. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

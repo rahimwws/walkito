@@ -145,7 +145,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette le oscillazioni della caviglia nei giorni di mobilità, insieme all’allungamento del polpaccio e del soleo. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Un centimetro di miglioramento nel test ginocchio-muro in qualche settimana è significativo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

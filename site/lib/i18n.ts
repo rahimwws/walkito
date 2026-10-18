@@ -246,15 +246,15 @@ const pt: Chrome = {
 };
 
 const fr: Chrome = {
-  headerButton: "Télécharger l'app",
-  getBadge: "Télécharger dans l'App Store",
-  getBadgeLabel: "Télécharger Walkito dans l'App Store",
+  headerButton: "Télécharger l’app",
+  getBadge: "Télécharger dans l’App Store",
+  getBadgeLabel: "Télécharger Walkito dans l’App Store",
   navHome: 'Accueil',
   menuOpen: 'Menu',
   menuClose: 'Fermer le menu',
   getTitle: 'Scannez pour télécharger Walkito',
   getScan:
-    "Pointez l'appareil photo de votre téléphone vers le code. Il ouvre la boutique d'applications de votre téléphone.",
+    "Pointez l’appareil photo de votre téléphone vers le code. Il ouvre la boutique d’applications de votre téléphone.",
   getAppStore: 'App Store',
   getPlay: 'Google Play',
   getPlaySoon: 'Google Play, bientôt disponible',
@@ -273,13 +273,13 @@ const fr: Chrome = {
   sourcesHeading: 'Sources',
   guidesHeading: 'Guides',
   updated: 'Mis à jour le',
-  keyPoints: "L'essentiel",
+  keyPoints: "L’essentiel",
   contents: 'Sur cette page',
   faqHeading: 'Questions fréquentes',
   relatedHeading: 'Guides associés',
   navAbout: 'À propos',
   notice:
-    "Walkito est un programme d'exercices. Il ne pose pas de diagnostic et ne soigne pas. Si la douleur est vive, s'aggrave ou vous empêche de dormir, consultez un professionnel de santé.",
+    "Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne soigne pas. Si la douleur est vive, s’aggrave ou vous empêche de dormir, consultez un professionnel de santé.",
 };
 
 const it: Chrome = {
@@ -351,7 +351,7 @@ const de: Chrome = {
   relatedHeading: 'Weitere Ratgeber',
   navAbout: 'Über Walkito',
   notice:
-    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ist keine Behandlung. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, geh zu einer medizinischen Fachperson.',
+    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ist keine Behandlung. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, lass ihn ärztlich abklären.',
 };
 
 export const CHROME: Record<Lang, Chrome> = { en, ru, es, pt, fr, it, de };

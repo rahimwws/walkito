@@ -142,7 +142,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o rolamento do pé no fim das sessões e nos dias de recuperação. O app cuida do horário e da ordem, para você não ter que lembrar em quais dias rolar o pé e em quais alongar ou fortalecer.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

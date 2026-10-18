@@ -256,11 +256,11 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
     {
       q: 'Warum knicke ich immer wieder um?',
       cites: [CITE.dohertyOverview],
-      a: 'Wer immer wieder umknickt, hat oft eine sogenannte chronische Instabilität im Sprunggelenk: Die Bänder sind nach früherem Umknicken lockerer, und die Muskeln reagieren etwas zu spät. Eine Übersicht von 2017 bewertete die Belege für neuromuskuläres Training als mittelstark und für Orthesen als stark, um erneutem Umknicken vorzubeugen. Wenn dein Sprunggelenk trotz monatelanger Übungen oft wegknickt, lass die Bänder von einer medizinischen Fachperson untersuchen.',
+      a: 'Wer immer wieder umknickt, hat oft eine sogenannte chronische Instabilität im Sprunggelenk: Die Bänder sind nach früherem Umknicken lockerer, und die Muskeln reagieren etwas zu spät. Eine Übersicht von 2017 bewertete die Belege für neuromuskuläres Training als mittelstark und für Orthesen als stark, um erneutem Umknicken vorzubeugen. Wenn dein Sprunggelenk trotz monatelanger Übungen oft wegknickt, lass die Bänder von einer Ärztin oder einem Arzt untersuchen.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du direkt nach der Verletzung keine vier Schritte gehen konntest oder die Knöchel auf Druck schmerzen (die Ottawa Ankle Rules sprechen dann für ein Röntgenbild)',
       'das Sprunggelenk immer wieder wegknickt, auch nach einigen Monaten Übungen',
@@ -275,7 +275,7 @@ export const ANKLE_STRENGTHENING_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito baut Woche für Woche einen Plan rund um Ziele bei Fuß- und Beinschmerzen auf. Er enthält Gleichgewicht, Einwärtsdrehen mit Band, Zehenheben an der Wand, Fersenheben und Hüftübungen. Jede Woche kann die App die Übung für dein Hauptziel eine Stufe schwerer machen (beim Gleichgewicht: Einbeinstand, dann mit geschlossenen Augen, dann auf einem Kissen), aber nur, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist. Wenn sich eine Einheit schwer angefühlt hat oder der Schmerz gestiegen ist, geht sie stattdessen eine Stufe zurück. Einwärtsdrehen mit Band und Zehenheben an der Wand werden nicht auf diese Weise gesteigert. Die App hat kein Programm nach dem Umknicken und prüft nicht, ob ein Sprunggelenk gebrochen oder ein Band gerissen ist.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle zwei Wochen (alle vier, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle zwei Wochen (alle vier, sobald du ein Ziel erreicht hast) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

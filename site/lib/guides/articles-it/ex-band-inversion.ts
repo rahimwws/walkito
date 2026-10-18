@@ -136,7 +136,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito aggiunge l’inversione della caviglia con elastico dopo sei sessioni di piede corto in piedi. La progressione fa sì che i muscoli intrinseci del piede siano attivi prima di caricare lo stabilizzatore estrinseco. Le sessioni durano 3, 5 o 10\u00A0minuti, e un test ogni 14\u00A0giorni segue il tempo di tenuta dell’arco e la resistenza del polpaccio.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

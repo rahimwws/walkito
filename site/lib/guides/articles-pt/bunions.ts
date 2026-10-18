@@ -69,7 +69,7 @@ export const BUNIONS_PT: Guide = {
       ],
       exercises: [
         {
-          name: 'Abrir os dedos (toe-spread-out)',
+          name: 'Abrir os dedos',
           dose: 'O Walkito começa com 3\u00A0séries de 10, segurando cada abertura por 5\u00A0segundos',
           how: 'Sente-se ou fique em pé com o pé apoiado no chão. Levante os cinco dedos, depois pressione o dedinho para baixo e para fora enquanto pressiona o dedão para baixo e para dentro, afastando os dedos. Segure a abertura e relaxe. É o exercício testado no ensaio de Kim 2015.',
           feel: 'Esforço ao longo da parte de dentro do arco e entre os dedos',
@@ -193,7 +193,7 @@ export const BUNIONS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
       'O Walkito inclui [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões de 3 ou 5\u00A0minutos, 3, 5 ou 7 dias por semana, você escolhe, mantêm os exercícios regulares.',
     more: [

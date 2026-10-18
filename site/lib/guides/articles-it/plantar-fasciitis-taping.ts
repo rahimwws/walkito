@@ -97,7 +97,7 @@ export const PF_TAPING_IT: Guide = {
     {
       h2: 'Come applicare il kinesio tape per la fascite plantare?',
       paragraphs: [
-        'Il kinesio tape per la fascite plantare di solito è una lunga striscia che parte dal tallone e corre lungo la pianta, con l’estremità anteriore divisa in strisce sottili che si aprono a ventaglio verso le dita. Nessuno schema si è dimostrato migliore di un altro, quindi usa qualsiasi metodo come punto di partenza e osserva come risponde il tuo piede.',
+        'Il kinesio tape per la fascite plantare di solito è una lunga striscia che parte dal tallone e corre lungo la pianta, con l’estremità anteriore divisa in strisce sottili che si aprono a ventaglio verso le dita. Nessuna tecnica di applicazione si è dimostrata migliore di un altro, quindi usa qualsiasi metodo come punto di partenza e osserva come risponde il tuo piede.',
       ],
       bullets: [
         '**Misura.** Taglia una striscia dal retro del tallone alla base delle dita. Arrotonda gli angoli così si staccano meno.',
@@ -106,7 +106,7 @@ export const PF_TAPING_IT: Guide = {
         '**Stendilo lungo la pianta.** Liscia il nastro in avanti lungo l’arco con una leggera tensione, poi apri le strisce a ventaglio verso la base di ogni dito. Appoggia gli ultimi 2-3\u00A0cm di ogni estremità senza tensione.',
         '**Strofina.** Strofina il nastro per qualche secondo perché la colla faccia presa. Applicalo circa mezz’ora prima di una doccia o di una camminata.',
       ],
-      sourceNote: 'Ordine dei passaggi basato sulla pratica clinica comune. Gli studi di questa pagina hanno testato il taping in generale, non uno schema preciso di kinesio tape.',
+      sourceNote: 'Ordine dei passaggi basato sulla pratica clinica comune. Gli studi di questa pagina hanno testato il taping in generale, non una tecnica precisa di kinesio tape.',
     },
     {
       h2: 'Quanto tenere il tape per la fascite plantare, e si può dormire con il tape?',
@@ -254,7 +254,7 @@ export const PF_TAPING_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Il tape può rendere più facili i prossimi giorni. Gli esercizi sono ciò che continua a lavorare dopo che lo togli. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è un mattino migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Lo stretching inizia dal primo giorno. Ogni settimana, solo l’esercizio del tuo obiettivo principale può salire di un gradino, e solo quando le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Il taping non fa parte di Walkito. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

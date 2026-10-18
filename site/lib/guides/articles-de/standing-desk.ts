@@ -73,7 +73,7 @@ export const STANDING_DESK_DE: Guide = {
     {
       h2: 'Welche Schuhe solltest du am Stehschreibtisch tragen?',
       paragraphs: [
-        'Wenn du von zu Hause arbeitest, stehst du vielleicht in Socken oder Hausschuhen am Schreibtisch. Das sind viele Stunden ohne Dämpfung oder Gewölbestütze. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein bei Plantarfasziitis mit B dagegen, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Das betrifft aber Einlagen für sich genommen, nicht die Frage, ob irgendein Schuh besser ist als gar keiner.',
+        'Wenn du von zu Hause arbeitest, stehst du vielleicht in Socken oder Hausschuhen am Schreibtisch. Das sind viele Stunden ohne Dämpfung oder Gewölbestütze. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein bei Plantarfasziitis mit Empfehlungsgrad B gegen die Anwendung, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Das betrifft aber Einlagen für sich genommen, nicht die Frage, ob irgendein Schuh besser ist als gar keiner.',
         'Ein vernünftiger Weg: **Trag beim Stehen einen Schuh mit etwas Dämpfung und einer stützenden Innensohle, auch zu Hause.** Du brauchst keinen speziellen Schuh für den Stehschreibtisch. Wenn du zwischen Stehen und Sitzen wechselst, kannst du die Schuhe in den Sitzphasen ausziehen.',
         'Die Übungen auf dieser Seite setzen direkt an den Geweben an. Schuhe und Matten verbessern den Komfort beim Stehen, aber sie ersetzen weder Dehnen noch Krafttraining.',
       ],
@@ -81,10 +81,10 @@ export const STANDING_DESK_DE: Guide = {
     },
     {
       h2: 'Welche Übungen kannst du am Schreibtisch gegen Fußschmerzen vom Stehen machen?',
-      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie mit A, ihrer besten Bewertung, und Krafttraining mit B (Koc und Kollegen, 2023).',
+      keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie mit A, dem höchsten Empfehlungsgrad, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
         'Diese Übungen zielen auf die Wade, die Plantarfaszie und die kleinen Fußmuskeln. Manche davon kannst du in einer Sitzpause am Schreibtisch machen. Andere machst du besser zu einer anderen Zeit, weg vom Schreibtisch. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
-        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie ihre beste Bewertung, A, und Krafttraining ein B. Beides gilt speziell für Plantarfasziitis, aber dieselben Gewebe tragen die Last bei der Arbeit am Stehschreibtisch. Die ganze Übungsliste bei Plantarfasziitis findest du unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie den höchsten Empfehlungsgrad A und Krafttraining Grad B. Beides gilt speziell für Plantarfasziitis, aber dieselben Gewebe tragen die Last bei der Arbeit am Stehschreibtisch. Die ganze Übungsliste bei Plantarfasziitis findest du unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       exercises: [
         {
@@ -154,7 +154,7 @@ export const STANDING_DESK_DE: Guide = {
             why: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Krafttraining bei Plantarfasziitis mit B. Baut die Kraft in der Wade auf, die die Last beim Stehen abfängt.',
           },
           dose: '3\u00A0Sätze à 10, beide Füße',
-          how: 'Stell dich an den Schreibtisch, komm in etwa drei Sekunden gerade über die großen Zehen hoch und senk dich dann langsam ab. Halt dich zum Ausbalancieren an der Tischkante fest. Die genaue Steigerung, auch die Variante mit Handtuch, findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+          how: 'Stell dich an den Schreibtisch, komm in etwa drei Sekunden gerade über die großen Zehen hoch und senk dich dann langsam ab. Halt dich zum Ausbalancieren an der Tischkante fest. Die genaue Steigerung, auch die Variante mit Handtuch, findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
           media: 'heel_raise_double',
           caption: 'Fersenheben im Stehen: über die großen Zehen hoch, langsam absenken',
           alt: 'Eine stehende Figur kommt auf die Zehen beider Füße, die Waden sind hervorgehoben',
@@ -204,7 +204,7 @@ export const STANDING_DESK_DE: Guide = {
       h2: 'Könnten Fußschmerzen am Stehschreibtisch eine Plantarfasziitis oder etwas anderes sein?',
       paragraphs: [
         'Fußschmerzen am Stehschreibtisch sind meist allgemeine Beschwerden von langem, statischem Stehen. Wenn der Schmerz aber stechend ist, sich nahe der Ferse bündelt und bei den ersten Schritten nach längerem Sitzen am schlimmsten ist, deutet dieses Muster auf eine Plantarfasziitis hin. Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis in einer Fall-Kontroll-Studie um das 3,6-Fache, der Stehschreibtisch kann also plausibel dazu beitragen.',
-        'Die Übungen, die bei beidem helfen, überschneiden sich stark. Wenn dein Schmerz dem Muster der Plantarfasziitis folgt, sind [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber. Wenn sich deine Gewölbe flach anfühlen, lies [Übungen bei Plattfuß und abgesunkenem Gewölbe](/de/plattfuss-uebungen/). Wenn du nicht sicher bist, geh zu einer medizinischen Fachperson, bevor du den Fuß mit Übungen belastest.',
+        'Die Übungen, die bei beidem helfen, überschneiden sich stark. Wenn dein Schmerz dem Muster der Plantarfasziitis folgt, sind [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber. Wenn sich deine Gewölbe flach anfühlen, lies [Übungen bei Plattfuß und abgesunkenem Gewölbe](/de/plattfuss-uebungen/). Wenn du nicht sicher bist, lass das zuerst ärztlich abklären, bevor du den Fuß mit Übungen belastest.',
       ],
       cites: [CITE.riddle],
     },
@@ -251,7 +251,7 @@ export const STANDING_DESK_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -271,7 +271,7 @@ export const STANDING_DESK_DE: Guide = {
       'Du musst dir Reihenfolge, Dosis und den Zeitpunkt zum Steigern nicht selbst überlegen. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Wenn deine Schmerzen am Stehschreibtisch dem Muster der Plantarfasziitis mit Schmerzen am Morgen folgen, ist das erste Ziel Morgenschmerz bei oder unter 1 von 10 an 14\u00A0Tagen am Stück.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald dein erstes Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, ob die Arbeit etwas bringt.',
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts wach hält, geh zuerst zu einer medizinischen Fachperson.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts wach hält, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

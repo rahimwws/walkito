@@ -52,7 +52,7 @@ export const ABOUT_DE: About = {
     {
       h2: 'Was macht Walkito nicht?',
       paragraphs: [
-        'Walkito stellt keine Diagnose, ist keine Behandlung und ersetzt keine medizinische Fachperson. Walkito kann dir nicht sagen, was deinen Schmerz verursacht. Geh zuerst zu einer medizinischen Fachperson, wenn:',
+        'Walkito stellt keine Diagnose, ist keine Behandlung und ersetzt keinen Arztbesuch. Walkito kann dir nicht sagen, was deinen Schmerz verursacht. Geh zuerst zum Arzt oder zur Ärztin, wenn:',
       ],
       // The guides' list (`lib/guides/de.ts`), word for word, plus the arch.
       bullets: [
@@ -71,11 +71,11 @@ export const ABOUT_DE: About = {
       ],
     },
     {
-      h2: 'Hat eine medizinische Fachperson die Ratgeber von Walkito geprüft?',
+      h2: 'Hat eine Ärztin oder ein Arzt die Ratgeber von Walkito geprüft?',
       id: 'clinician',
       paragraphs: [
-        'Bisher hat keine approbierte medizinische Fachperson die Ratgeber von Walkito geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
-        'Wenn eine medizinische Fachperson sie prüft, nennt diese Seite ihren Namen, ihre Qualifikation und was sie geprüft hat. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
+        'Bisher hat keine approbierte Ärztin und kein approbierter Arzt die Ratgeber von Walkito geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
+        'Wenn eine Ärztin oder ein Arzt sie prüft, nennt diese Seite Name und Qualifikation dieser Person und was geprüft wurde. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
       ],
     },
     {

@@ -172,7 +172,7 @@ export const VS_EXAKT_DE: Guide = {
       keyFact: 'Die Übungen von Walkito folgen der Leitlinie von 2023 zu Fersenschmerzen, die das Dehnen von Plantarfaszie und Wade mit A und Krafttraining mit B bewertet (Koc und Kollegen, 2023).',
       paragraphs: [
         '**Hier ist Exakt klar stärker.** Die Reha-Pläne decken Plantarfasziitis, Achillessehnen-Tendinopathie, verstauchte Sprunggelenke, Zerrungen der hinteren Oberschenkelmuskulatur, Meniskusrisse, Läuferknie und mehr ab. Wenn dein Schmerz im Knie, in der Hüfte oder im hinteren Oberschenkel sitzt, hat Walkito keinen Plan dafür.',
-        'Walkito deckt Plantarfasziitis, (flexible) Plattfüße, Fersenschmerzen vom Stehen und Schienbeinschmerzen ab. Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen (Dehnen Bewertung A, Kraft Bewertung B) und der Rathleff-Studie von 2015 (Fersenheben mit Zusatzgewicht bei Plantarfasziitis). Für genau diese Beschwerden gibt es Übungen, eine Logik für die Steigerung und Anpassung an den Schmerz. Für alles außerhalb davon ist Exakt oder eine breitere App wie Prehab die richtige Wahl.',
+        'Walkito deckt Plantarfasziitis, (flexible) Plattfüße, Fersenschmerzen vom Stehen und Schienbeinschmerzen ab. Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen (Dehnen Empfehlungsgrad A, Kraft Empfehlungsgrad B) und der Rathleff-Studie von 2015 (Fersenheben mit Zusatzgewicht bei Plantarfasziitis). Für genau diese Beschwerden gibt es Übungen, eine Logik für die Steigerung und Anpassung an den Schmerz. Für alles außerhalb davon ist Exakt oder eine breitere App wie Prehab die richtige Wahl.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -279,7 +279,7 @@ export const VS_EXAKT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Wenn eine App nicht reicht: Geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Wenn eine App nicht reicht: Geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'dein Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -294,7 +294,7 @@ export const VS_EXAKT_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Wenn Walkito nach der richtigen Wahl für deine Situation klingt, so funktioniert es. Du beantwortest Fragen dazu, wo es wehtut, welche Seite, wie aktiv du bist und was dein Ziel ist. Walkito baut einen Wochenplan rund um messbare Ziele, angefangen mit schmerzfreien Morgen. Jeden Morgen passt ein Check-in den Tag an.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage misst ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht und zeigt den Unterschied zwischen deiner linken und rechten Seite. Die Übungen folgen der klinischen Leitlinie von 2023 und der Rathleff-Studie von 2015. Walkito ist ein Übungsprogramm, keine Diagnose und kein Ersatz für eine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage misst ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht und zeigt den Unterschied zwischen deiner linken und rechten Seite. Die Übungen folgen der klinischen Leitlinie von 2023 und der Rathleff-Studie von 2015. Walkito ist ein Übungsprogramm, keine Diagnose und kein Ersatz für deine Ärztin oder deinen Arzt.',
     ],
     cta: 'Probier Walkito auf dem iPhone oder unter Android aus.',
   },

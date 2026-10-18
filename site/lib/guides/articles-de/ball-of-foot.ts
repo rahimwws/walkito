@@ -16,7 +16,7 @@ export const BALL_OF_FOOT_DE: Guide = {
   updated: '2026-10-08',
   title: 'Schmerzen im Fußballen: Ursachen, Übungen, was hilft',
   description:
-    'Schmerzen im Fußballen: Ursachen, Metatarsalgie oder Morton-Neurom, Zehenübungen, Wadendehnung, Pelotten und wann du zu einer Fachperson gehen solltest.',
+    'Schmerzen im Fußballen: Ursachen, Metatarsalgie oder Morton-Neurom, Zehenübungen, Wadendehnung, Pelotten und wann du zum Arzt oder zur Ärztin gehen solltest.',
   h1: 'Schmerzen im Fußballen: woher sie kommen und was hilft',
   lede:
     'Du drückst dich vom Boden ab, und da ist er: ein stechender Schmerz direkt hinter den Zehen, als würdest du auf einem Kieselstein gehen. Der Fußballen trägt bei jedem Schritt dein ganzes Körpergewicht, und mehrere verschiedene Erkrankungen können ihn schmerzen lassen. Diese Seite zeigt, welche das sind, was die Studienlage zu Übungen und Schuhen sagt und wo die ehrlichen Lücken in der Forschung liegen.',
@@ -65,7 +65,7 @@ export const BALL_OF_FOOT_DE: Guide = {
             'Eine begrenzte Stelle oben auf dem Fuß mit Schwellung wirft die Frage nach einem Ermüdungsbruch auf.',
           ],
         },
-        'Ermüdungsbrüche sind auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und brauchen manchmal ein MRT. **Ein Besuch bei einer medizinischen Fachperson lohnt sich,** wenn der Schmerz trotz Ruhe und anderer Schuhe länger als zwei Wochen anhält oder wenn Kribbeln, Schmerzen in der Nacht oder eine sichtbare Schwellung dazukommen.',
+        'Ermüdungsbrüche sind auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und brauchen manchmal ein MRT. **Ein Arztbesuch lohnt sich,** wenn der Schmerz trotz Ruhe und anderer Schuhe länger als zwei Wochen anhält oder wenn Kribbeln, Schmerzen in der Nacht oder eine sichtbare Schwellung dazukommen.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -87,7 +87,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       paragraphs: [
         'Sehr wahrscheinlich. Wenn der Gastrocnemius verkürzt ist, kann sich das Sprunggelenk beim Gehen nicht genug beugen. Der Körper hebt die Ferse früher an, was mehr Gewicht auf den Fußballen bringt. Der Fachbegriff dafür ist funktioneller Spitzfuß (Equinus), und er ist eine anerkannte Ursache der Metatarsalgie.',
         'Die Zahlen stammen aus der Forschung zur Plantarfasziitis, aber der Mechanismus ist derselbe. Bei 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius. Eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein beugen lässt) der stärkste unabhängige Risikofaktor war, mit einer 23,3-fachen Chance.',
-        'Keine Studie hat Wadendehnung speziell bei Metatarsalgie getestet, aber der Zusammenhang ist klinisch anerkannt. Mehr zur Verbindung von Wade und Sprunggelenk findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        'Keine Studie hat Wadendehnung speziell bei Metatarsalgie getestet, aber der Zusammenhang ist klinisch anerkannt. Mehr zur Verbindung von Wade und Sprunggelenk findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
     },
@@ -156,7 +156,7 @@ export const BALL_OF_FOOT_DE: Guide = {
           how: 'Setz dich hin und leg den betroffenen Fuß über das andere Knie. Zieh die Zehen sanft nach hinten, bis du eine Dehnung entlang des Gewölbes spürst. Die Plantarfaszie verläuft von der Ferse bis zur Basis der Zehen, direkt durch den Fußballen.',
           feel: 'Eine Dehnung entlang des Gewölbes und der Fußunterseite',
           stop: 'Stechender Schmerz statt eines Dehngefühls',
-          evidence: { level: 'strong', why: 'Die Leitlinie von 2023 zu Fersenschmerzen gibt der Plantarfaszien-Dehnung ihre beste Bewertung, A. Nicht speziell bei Metatarsalgie getestet, aber die Faszie gehört zur selben tragenden Struktur.' },
+          evidence: { level: 'strong', why: 'Die Leitlinie von 2023 zu Fersenschmerzen gibt der Plantarfaszien-Dehnung den höchsten Empfehlungsgrad A. Nicht speziell bei Metatarsalgie getestet, aber die Faszie gehört zur selben tragenden Struktur.' },
           media: 'fascia_stretch',
           caption: 'Plantarfaszien-Dehnung: Zieh die Zehen sanft nach hinten',
           alt: 'Eine Figur zieht die Zehen des übergeschlagenen Fußes nach hinten, die Plantarfaszie ist hervorgehoben',
@@ -167,7 +167,7 @@ export const BALL_OF_FOOT_DE: Guide = {
           how: 'Hände an die Wand. Hinteres Bein gestreckt, Ferse unten, Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst.',
           feel: 'Eine Dehnung in der oberen Wade',
           stop: 'Schmerz in der Achillessehne',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie von 2023 zu Fersenschmerzen für die Wadendehnung. Eine verkürzte Wade trägt anerkannt zur Überlastung des Vorfußes bei.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie von 2023 zu Fersenschmerzen für die Wadendehnung. Eine verkürzte Wade trägt anerkannt zur Überlastung des Vorfußes bei.' },
           media: 'calf_stretch_straight',
           caption: 'Wadendehnung: hinteres Bein gestreckt, Ferse unten, Hüfte nach vorn',
           alt: 'Eine Figur lehnt sich an eine Wand, das hintere Bein gestreckt, der Gastrocnemius ist hervorgehoben',
@@ -178,7 +178,7 @@ export const BALL_OF_FOOT_DE: Guide = {
           how: 'Dieselbe Position wie bei der Dehnung mit gestrecktem Knie, dann beug das hintere Knie, bis die Dehnung nach unten wandert, nahe der Achillessehne. Das zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.',
           feel: 'Eine Dehnung weiter unten in der Wade, nahe der Ferse',
           stop: 'Schmerz in der Achillessehne',
-          evidence: { level: 'strong', why: 'Dieselbe Bewertung A der Leitlinie. Zielt auf den Soleus, der ebenfalls zur Steifheit im Sprunggelenk beiträgt.' },
+          evidence: { level: 'strong', why: 'Derselbe Empfehlungsgrad A der Leitlinie. Zielt auf den Soleus, der ebenfalls zur Steifheit im Sprunggelenk beiträgt.' },
           media: 'calf_stretch_bent',
           caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung nach unten wandert',
           alt: 'Eine Figur in Schrittstellung mit gebeugten Knien, der Soleus ist hervorgehoben',
@@ -204,7 +204,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     },
     {
       q: 'Metatarsalgie oder Morton-Neurom, wie erkenne ich den Unterschied?',
-      a: 'Metatarsalgie ist ein dumpfer bis stechender Schmerz breit unter dem Fußballen. Das Morton-Neurom ist genauer: Brennen, Kribbeln oder Taubheit zwischen dem dritten und vierten Zeh, manchmal mit einem Klicken, wenn man den Vorfuß zusammendrückt. Eine medizinische Fachperson kann beides mit einer körperlichen Untersuchung und Ultraschall unterscheiden.',
+      a: 'Metatarsalgie ist ein dumpfer bis stechender Schmerz breit unter dem Fußballen. Das Morton-Neurom ist genauer: Brennen, Kribbeln oder Taubheit zwischen dem dritten und vierten Zeh, manchmal mit einem Klicken, wenn man den Vorfuß zusammendrückt. Eine Ärztin oder ein Arzt kann beides mit einer körperlichen Untersuchung und Ultraschall unterscheiden.',
     },
     {
       q: 'Helfen Zehenübungen bei Schmerzen im Fußballen?',
@@ -223,7 +223,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     {
       q: 'Können Schmerzen im Fußballen ein Ermüdungsbruch sein?',
       cites: [CITE.patelStressFracture],
-      a: 'Ja. Ermüdungsbrüche der Mittelfußknochen, meist des zweiten oder dritten, verursachen einen begrenzten Schmerz, der im Laufe des Tages schlimmer wird und nachts wehtun kann. Eine Schwellung oben auf dem Fuß ist häufig. Ein Ermüdungsbruch ist auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und braucht manchmal ein MRT. Das ist einer der Gründe, zu einer medizinischen Fachperson zu gehen, wenn Vorfußschmerzen anhalten.',
+      a: 'Ja. Ermüdungsbrüche der Mittelfußknochen, meist des zweiten oder dritten, verursachen einen begrenzten Schmerz, der im Laufe des Tages schlimmer wird und nachts wehtun kann. Eine Schwellung oben auf dem Fuß ist häufig. Ein Ermüdungsbruch ist auf einem normalen Röntgenbild in den ersten zwei bis drei Wochen oft nicht zu sehen und braucht manchmal ein MRT. Das ist einer der Gründe, zum Arzt oder zur Ärztin zu gehen, wenn Vorfußschmerzen anhalten.',
     },
     {
       q: 'Welche Schuhe sind gut bei Schmerzen im Fußballen?',
@@ -239,7 +239,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'Kribbeln, Brennen oder Taubheit in den Zehen auftreten, was auf ein Nervenproblem wie ein Morton-Neurom hindeuten kann',
       'der Schmerz auf eine Stelle begrenzt ist und im Laufe des Tages schlimmer wird, was auf einen Ermüdungsbruch hindeuten kann',
@@ -256,7 +256,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Du kannst die Übungen auf dieser Seite allein machen, oder du lässt Walkito sie für dich planen. Die App baut einen Plan, Woche für Woche. Wenn du auf der Schmerzkarte den Fußballen markierst, setzt die Einheit nach dem Check-in auf Zehenspreizen und Plantarfaszien-Dehnung. Das breitere Programm nimmt im Lauf der Wochen Wadendehnung und Wadenkräftigung dazu.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald dieses Ziel erreicht ist) prüft ein kurzer Test deinen Fortschritt, sodass du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn deine Vorfußschmerzen mit Taubheit, Schwellung oder einem Knoten einhergehen, geh zuerst zu einer medizinischen Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald dieses Ziel erreicht ist) prüft ein kurzer Test deinen Fortschritt, sodass du siehst, was sich verändert. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch. Wenn deine Vorfußschmerzen mit Taubheit, Schwellung oder einem Knoten einhergehen, geh zuerst zum Arzt oder zur Ärztin.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

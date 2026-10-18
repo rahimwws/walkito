@@ -217,7 +217,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa decidir quais exercícios de arco fazer nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para um pé chato flexível, essa meta é sustentar o arco: manter o arco erguido por 60\u00A0segundos. Se você também tem dor no calcanhar, as manhãs sem dor vêm primeiro.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a primeira meta for alcançada), um teste curto mede a sustentação do arco, a resistência da panturrilha e o equilíbrio. A meta de sustentar o arco fica no plano até você alcançá-la, leve as semanas que levar.',

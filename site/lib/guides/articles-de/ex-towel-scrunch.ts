@@ -126,7 +126,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'deine Zehen- oder Fußschmerzen nach einer Verletzung oder einem plötzlichen Schnappen angefangen haben',
       'du Taubheit, Kribbeln oder Brennen in den Zehen oder am Fußballen hast',

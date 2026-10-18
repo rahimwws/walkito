@@ -67,21 +67,21 @@ export const BEST_APP_FR: Guide = {
             'iOS, Android. 19,99\u00A0$/mois ou 59,99\u00A0$/6\u00A0mois\u00A0; essai gratuit de 7\u00A0jours',
             'Blessures de course (plus de 15\u00A0plans de rééducation) + entraînement à la course',
             'Oui, le plan s’adapte à vos progrès',
-            '4,8 (125\u00A0notes)',
+            '4,8 (125\u00A0avis)',
           ],
           [
             '[Hinge Health](https://www.hingehealth.com/)',
             'iOS, Android. 0\u00A0$ via l’employeur ou l’assurance santé',
             'Douleurs musculo-squelettiques en général (dos, genou, hanche, cou, périnée)',
             'Oui, personnalisé par l’équipe soignante',
-            '4,9 (168\u00A0000\u00A0notes)',
+            '4,9 (168\u00A0000\u00A0avis)',
           ],
           [
             '[Prehab](https://theprehabguys.com/)',
             'iOS. 49\u00A0$/mois ou ~16\u00A0$/mois facturé à l’année\u00A0; essai gratuit de 7\u00A0jours sur l’offre annuelle',
             'Plus de 55\u00A0programmes pour de nombreuses zones du corps',
             'Bilan Body Scan, puis programme fixe',
-            '4,8 (~1\u00A0700\u00A0notes)',
+            '4,8 (~1\u00A0700\u00A0avis)',
           ],
           [
             '[PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136)',
@@ -95,7 +95,7 @@ export const BEST_APP_FR: Guide = {
             'iOS. 9,99\u00A0$/mois ou 39,99\u00A0$/an\u00A0; essai gratuit de 7\u00A0jours',
             'Pieds plats et renforcement de la voûte',
             'Non',
-            '4,3 (6\u00A0notes)',
+            '4,3 (6\u00A0avis)',
           ],
           [
             'Plantar Fasciitis Exercises',

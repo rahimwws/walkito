@@ -286,7 +286,7 @@ export const ACHILLES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que adivinar el orden, las dosis ni cuándo añadir carga. Walkito arma un plan una semana a la vez en torno a una meta. La cadena de pantorrilla va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, elevaciones con toalla, descensos excéntricos de talón y saltos pogo. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas la meta de pantorrilla), una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si el dolor está justo donde el tendón se une al hueso del talón, pide a un profesional de la salud que lo revise antes de cargarlo fuerte.',

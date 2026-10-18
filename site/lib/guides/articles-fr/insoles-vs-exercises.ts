@@ -84,7 +84,7 @@ export const INSOLES_VS_EXERCISES_FR: Guide = {
           alt: 'Une personne assise qui tire vers elle les orteils d’un pied, la voûte mise en évidence',
         },
         {
-          name: 'Montées sur pointes avec une serviette sous les orteils',
+          name: 'Montées sur pointes avec serviette',
           evidence: { level: 'strong', why: 'L’exercice de l’essai de Rathleff 2015. Note B de la recommandation pour le renforcement musculaire.' },
           dose: 'Dans l’essai, les participants sont passés de 3\u00A0séries de 12\u00A0répétitions lourdes à 5\u00A0séries de 8. Dans Walkito, il vient après des montées sur pointes plus faciles, à 4\u00A0séries de 10, chaque jambe, avec le même tempo 3-2-3 et du poids ajouté, comme un sac à dos, quand vous avez une marche',
           how: 'Tenez-vous sur un pied sur une marche, une serviette roulée sous les orteils. Montez en trois secondes, tenez deux secondes, redescendez en trois. Tenez-vous à une rampe. La serviette relève les orteils, ce qui charge le fascia plantaire en même temps que le mollet.',

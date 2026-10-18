@@ -257,7 +257,7 @@ export const TIGHT_CALVES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è un’app per iPhone e Android con brevi sessioni di esercizi per il dolore a tallone, piede e parte bassa della gamba negli adulti. Gli allungamenti del polpaccio a ginocchio teso e piegato, le oscillazioni della caviglia e i sollevamenti sulle punte ne fanno tutti parte. Walkito parte da 2\u00A0tenute da 30\u00A0secondi per ogni allungamento e da 3\u00A0serie da 10 per i sollevamenti sulle punte, e aumenta la dose man mano che vai avanti.',
     more: [
       'Scegli sessioni da 3, 5 o 10\u00A0minuti. Ogni due settimane un breve test controlla la resistenza del polpaccio, così vedi se i polpacci si stanno rinforzando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario se vale uno dei segnali d’allarme qui sopra.',

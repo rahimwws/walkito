@@ -252,7 +252,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es un programa de ejercicios para los pies y la parte baja de las piernas. Para el pie plano, arma un plan una semana a la vez en torno a metas para los pies, como sostener el arco 60\u00A0segundos y 30\u00A0segundos de equilibrio a una pierna. Empieza el ejercicio de pie corto con 3\u00A0series de 8 sosteniendo 5\u00A0segundos, el trabajo de cadera con 3\u00A0series de 10 y los estiramientos de pantorrilla con 2\u00A0repeticiones de 30\u00A0segundos.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando en tus pies.',

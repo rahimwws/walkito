@@ -278,7 +278,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que decidir qué ejercicios hacer, en qué orden ni cuándo subir de nivel. Walkito arma un plan una semana a la vez en torno a una meta. Para la fascitis plantar, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14\u00A0días seguidos.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Cuando alcanzas la meta de la mañana, pasa a mantenimiento y la siguiente meta ocupa su lugar.',

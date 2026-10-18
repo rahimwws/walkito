@@ -124,7 +124,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’allungamento del soleo insieme all’allungamento del polpaccio e a quello della fascia plantare in quasi tutte le sessioni. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. L’app passa dagli allungamenti alla forza al tuo ritmo, non secondo un calendario fisso.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Un movimento della caviglia che migliora nel giro di settimane mostra che gli allungamenti stanno servendo. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

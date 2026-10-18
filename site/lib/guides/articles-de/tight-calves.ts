@@ -115,7 +115,7 @@ export const TIGHT_CALVES_DE: Guide = {
       exercises: [
         {
           name: 'Wadendehnung (gestrecktes Knie)',
-          evidence: { level: 'moderate', why: 'Bewertung A in der Leitlinie von 2023 zu Fersenschmerzen bei Schmerzen unter der Ferse. Eine Übersicht über fünf Studien fand einen kleinen Zuwachs bei der Beugung im Sprunggelenk.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad A in der Leitlinie von 2023 zu Fersenschmerzen bei Schmerzen unter der Ferse. Eine Übersicht über fünf Studien fand einen kleinen Zuwachs bei der Beugung im Sprunggelenk.' },
           dose: 'Walkito startet mit 2-mal 30\u00A0Sekunden Halten, jedes Bein',
           how: 'Hände an die Wand, ein Fuß nach hinten, das hintere Knie gestreckt, die Ferse unten, die Zehen zeigen nach vorn. Schieb die Hüfte Richtung Wand, bis du einen Zug hoch in der Wade spürst. Alle Schritte unter [Wade dehnen](/de/uebungen/wade-dehnen/).',
           often: 'An den meisten Tagen',
@@ -245,7 +245,7 @@ export const TIGHT_CALVES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'eine Wade geschwollen, warm, gerötet oder druckempfindlich ist, besonders nach einem langen Flug, einer Operation, Bettruhe oder in der Schwangerschaft. Das kann eine tiefe Venenthrombose sein (ein Blutgerinnsel in einer tiefen Beinvene) und braucht dringend, noch am selben Tag, ärztliche Versorgung',
       'du zusätzlich Brustschmerzen oder plötzliche Atemnot hast: Ruf den Notruf',
@@ -260,7 +260,7 @@ export const TIGHT_CALVES_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito ist eine App für iPhone und Android mit kurzen Übungseinheiten bei Schmerzen in Ferse, Fuß und Unterschenkel bei Erwachsenen. Wadendehnungen mit gestrecktem und gebeugtem Knie, Sprunggelenk-Wippen und Fersenheben gehören alle dazu. Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das Fersenheben und steigert die Dosis im Verlauf.',
     more: [
-      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test die Wadenausdauer, damit du siehst, ob deine Waden kräftiger werden. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson, wenn eines der Warnzeichen oben auf dich zutrifft.',
+      'Du wählst Einheiten von 3, 5 oder 10\u00A0Minuten. Alle zwei Wochen prüft ein kurzer Test die Wadenausdauer, damit du siehst, ob deine Waden kräftiger werden. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch, wenn eines der Warnzeichen oben auf dich zutrifft.',
     ],
     cta: 'Probier die Wadenroutine in Walkito aus.',
   },

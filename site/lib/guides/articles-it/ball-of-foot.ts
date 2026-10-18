@@ -253,7 +253,7 @@ export const BALL_OF_FOOT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Puoi fare da solo gli esercizi di questa pagina, oppure lasciare che sia Walkito a programmarli per te. L’app costruisce un piano una settimana alla volta. Quando segni l’avampiede sulla mappa del dolore, la sessione di check-in si concentra su apertura delle dita e allungamento della fascia plantare. Il programma più ampio aggiunge allungamento e rinforzo del polpaccio con il passare delle settimane.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto quell’obiettivo), un breve test controlla i progressi, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore all’avampiede si accompagna a intorpidimento, gonfiore o un nodulo, rivolgiti prima a un professionista sanitario.',

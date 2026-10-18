@@ -21,7 +21,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
     'Douleur au talon la nuit ou au repos\u00A0: fracture de fatigue, compression nerveuse ou rhumatisme. Signaux d’alerte et quand consulter.',
   h1: 'Douleur au talon la nuit\u00A0: les causes et quand c’est un signal d’alerte',
   lede:
-    'Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la fasciite plantaire, cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui demande un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.',
+    'Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la fasciite plantaire, cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui relève d’un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.',
   intro: [
     'Si votre talon fait surtout mal aux premiers pas du matin puis se calme, le meilleur point de départ est sans doute [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Cette page concerne la douleur qui persiste au repos, vous réveille, ou arrive après un moment sans être debout et ne correspond pas au schéma typique de la fasciite plantaire.',
   ],
@@ -148,7 +148,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
     {
       q: 'Une douleur au talon la nuit, est-ce grave\u00A0?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
-      a: 'Ça peut l’être. Une douleur au repos ou qui vous réveille est un schéma d’alerte. Les fractures de fatigue du calcanéum, les compressions nerveuses (canal tarsien ou nerf de Baxter) et les rhumatismes inflammatoires peuvent tous donner une douleur au talon la nuit. Ces problèmes demandent un professionnel de santé pour le diagnostic et la prise en charge. Ne supposez pas que c’est une fasciite plantaire si la douleur ne suit pas le schéma typique des premiers pas.',
+      a: 'Ça peut l’être. Une douleur au repos ou qui vous réveille est un schéma d’alerte. Les fractures de fatigue du calcanéum, les compressions nerveuses (canal tarsien ou nerf de Baxter) et les rhumatismes inflammatoires peuvent tous donner une douleur au talon la nuit. Ces problèmes relèvent d’un professionnel de santé pour le diagnostic et la prise en charge. Ne supposez pas que c’est une fasciite plantaire si la douleur ne suit pas le schéma typique des premiers pas.',
     },
     {
       q: 'Pourquoi j’ai mal au talon quand je suis allongé\u00A0?',

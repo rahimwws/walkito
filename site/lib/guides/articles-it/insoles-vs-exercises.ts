@@ -35,7 +35,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
         'Un po’, per un certo periodo. La fascite plantare è un’irritazione della fascia plantare, la banda di tessuto sotto l’arco. Il test equo confronta un plantare vero con uno **finto**: una soletta piatta e morbida che sembra vera ma non dà alcun sostegno.',
         'In uno studio su 135\u00A0persone, sia un plantare prefabbricato sia uno su misura hanno migliorato la funzione di circa 8\u00A0punti su una scala da 0 a 100 rispetto a un finto plantare a tre mesi (Landorf e colleghi, 2006). La differenza sul dolore era di dimensioni simili ma non statisticamente chiara. A dodici mesi, nessun gruppo era diverso dagli altri.',
         'Una revisione sistematica ha messo insieme 19\u00A0studi randomizzati con 1.660\u00A0persone (Whittaker e colleghi, 2018). Nel medio termine, più o meno il secondo e il terzo mese, i plantari alleviavano il dolore più di un finto plantare, con prove di qualità moderata. L’effetto era piccolo, e gli autori hanno scritto che è «incerto che sia un cambiamento importante dal punto di vista clinico». Nel breve e nel lungo termine non c’era un beneficio chiaro.',
-        'La linea guida del 2023 sul dolore al tallone la legge allo stesso modo: **non** i plantari da soli per un sollievo a breve termine (grado B contro), ma **si possono** usare insieme ad altre terapie (grado C).',
+        'La linea guida del 2023 sul dolore al tallone la legge allo stesso modo: **non** i plantari da soli per un sollievo a breve termine (grado B a sfavore), ma **si possono** usare insieme ad altre terapie (grado C).',
       ],
       figure: {
         id: 'plantar-fascia',
@@ -138,7 +138,7 @@ export const INSOLES_VS_EXERCISES_IT: Guide = {
         rows: [
           ['Come funzionano', 'Cambiano il carico sul piede finché li indossi', 'Cambiano il tessuto, così regge più carico'],
           ['Prove per il dolore al tallone', 'Piccolo beneficio nel medio termine rispetto al finto plantare; nessuno a dodici mesi', 'Stretching grado **A**, rinforzo grado **B**'],
-          ['Grado della linea guida per il dolore al tallone', '**B contro** da soli; **C** con altre terapie', 'Base della gestione di prima scelta'],
+          ['Grado della linea guida per il dolore al tallone', '**B a sfavore** da soli; **C** con altre terapie', 'Base della gestione di prima scelta'],
           ['Su misura o da banco', 'Nessuna differenza negli studi', 'Nessuna attrezzatura necessaria'],
           ['Prove per il piede piatto', 'Prove di basso livello per il dolore', 'Piccoli studi mostrano cambiamenti dell’arco; pochi dati sul dolore'],
           ['Costo', 'Basso per i prefabbricati, molto più alto per quelli su misura', 'Gratis'],

@@ -21,7 +21,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     'O que é a fascite plantar, sintomas e causas, o que a diretriz clínica de 2023 recomenda, quanto tempo dura a recuperação e quais exercícios ajudam.',
   h1: 'Fascite plantar: sintomas, causas e o que ajuda segundo a evidência',
   lede:
-    'A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor no calcanhar embaixo do pé. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.',
+    'A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor na sola do calcanhar. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.',
   takeaways: [
     'A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B (Koc e colegas, 2023).',
     'Cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento, treino de força e calçados com bom suporte, muitas vezes em alguns meses (Latt e colegas, 2020).',
@@ -37,7 +37,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       paragraphs: [
         'A fascite plantar é uma condição de sobrecarga da fáscia plantar. A fáscia plantar é uma faixa resistente de tecido conjuntivo que corre pela sola do pé, do osso do calcanhar (o calcâneo) até a base dos dedos. Ela sustenta o arco e absorve impacto a cada passo.',
         'Quando a fáscia recebe mais carga do que consegue recuperar, o tecido fica irritado perto de onde se prende no calcanhar. O nome termina em “-ite”, o que sugere inflamação, mas o entendimento atual aponta mais para um processo degenerativo no tecido do que para uma inflamação contínua. Alguns profissionais preferem dizer “fasciopatia plantar”. O nome não muda os sintomas nem a abordagem recomendada.',
-        'A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor no calcanhar embaixo do pé.',
+        'A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor na sola do calcanhar.',
       ],
       cites: [CITE.guideline, CITE.latt],
     },
@@ -109,7 +109,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz recomenda não usar palmilhas sozinhas como abordagem isolada de curto prazo e não somar ultrassom terapêutico ao alongamento.',
       ],
       table: {
-        caption: 'Graus da diretriz de 2023 para dor no calcanhar embaixo do pé',
+        caption: 'Graus da diretriz de 2023 para dor na sola do calcanhar',
         head: ['Abordagem', 'Grau', 'Observações'],
         rows: [
           ['Alongamento da fáscia plantar e da panturrilha', '**A**', 'Grau máximo. A base do tratamento conservador.'],
@@ -274,7 +274,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você não precisa descobrir quais exercícios fazer, em que ordem, nem quando avançar. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para fascite plantar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar.',

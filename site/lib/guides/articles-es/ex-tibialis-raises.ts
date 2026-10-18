@@ -135,7 +135,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito combina las elevaciones de tibial anterior con elevaciones de talón, trabajo de equilibrio y ejercicios de pie en un plan armado según tu nivel actual. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos.',
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, el equilibrio y cuánto mantienes el arco. Las elevaciones de tibial anterior forman parte de los días de fuerza. Walkito es un programa de ejercicio. No diagnostica.',

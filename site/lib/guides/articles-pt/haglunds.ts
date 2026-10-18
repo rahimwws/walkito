@@ -237,8 +237,8 @@ export const HAGLUNDS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.',
+    h2: 'Como transformar isso em um plano',
+    text: 'A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.',
     more: [
       'As sessões são de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se você tem um calombo visível atrás do calcanhar e não tem certeza do que está causando a dor, peça para um profissional de saúde avaliar antes de começar a pôr carga.',
     ],

@@ -243,7 +243,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'No tienes que adivinar los ejercicios, las dosis ni cuándo subir de nivel. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14\u00A0días seguidos. Si ayer caminaste más de lo habitual y la puntuación de la mañana sube, la sesión se ajusta sola.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que se cumple la meta de la mañana), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que puedas ver si el trabajo está subiendo tu umbral al caminar.',

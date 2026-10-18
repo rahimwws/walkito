@@ -136,7 +136,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o alongamento de panturrilha junto com o alongamento do sóleo e o alongamento da fáscia plantar na maioria das sessões. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. O app passa do alongamento para o trabalho de força no seu ritmo.',
     more: [
       'A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

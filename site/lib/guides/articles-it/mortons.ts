@@ -230,7 +230,7 @@ export const MORTONS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è pensato per fascite plantare e piede piatto, non per il neuroma di Morton. Ma gli esercizi per l’avampiede dell’app, tra cui apertura delle dita e allungamento del polpaccio, lavorano sulla stessa distribuzione del carico sull’avampiede che contribuisce ai sintomi del neuroma. Se nel check-in segni la parte anteriore della pianta sulla mappa del dolore, l’app include apertura delle dita e allungamento della fascia plantare nella tua sessione.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito non fa diagnosi di neuroma di Morton. Gli esercizi che include sono misure per il comfort e il carico. Prima vengono scarpe più larghe, cuscinetti metatarsali e una valutazione clinica.',

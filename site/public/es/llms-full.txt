@@ -163,7 +163,7 @@ Si además tienes pie plano, el arco tiene sus propios ejercicios y sus propios 
 - no ha mejorado después de varias semanas de ejercicio y menos carga
 - un arco se aplanó de repente en la edad adulta
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir el orden, las dosis ni cuánto tiempo quedarte en cada ejercicio. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14 días seguidos.
 
@@ -302,7 +302,7 @@ Si también te duele el talón, el talón tiene sus propios ejercicios y su prop
 - un arco se aplanó de repente en la edad adulta
 - el arco sigue plano cuando el pie no toca el piso
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba 60 segundos. Si además tienes dolor, primero van las mañanas más fáciles.
 
@@ -466,7 +466,7 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 - duele en reposo o te despierta por la noche
 - no puedes apoyar el pie, o cojeas
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que adivinar el orden, las dosis ni cuándo añadir carga. Walkito arma un plan una semana a la vez en torno a una meta. La cadena de pantorrilla va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, elevaciones con toalla, descensos excéntricos de talón y saltos pogo. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.
 
@@ -605,7 +605,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - el dolor no mejora después de varias semanas de estiramiento y ajuste de la carga
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Si tu dolor de arco sigue el patrón de la fascitis plantar, Walkito arma un plan en torno a una meta a la vez. La primera meta es una mejor mañana: dolor de 1/10 o menos durante 14 días seguidos. El arco tiene su propia meta y sus ejercicios. Si tu dolor de arco viene del pie plano, la app puede trabajar el dolor y el arco como metas separadas.
 
@@ -769,7 +769,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - te duelen los dos pies y tienes otras articulaciones hinchadas o rígidas
 - te despierta por la noche o te duele en reposo
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Puedes hacer los ejercicios de esta página por tu cuenta, o dejar que Walkito los organice por ti. La app arma un plan una semana a la vez. Cuando marcas la planta delantera del pie en el mapa de dolor, la sesión del check-in se enfoca en la separación de dedos y el estiramiento plantar. El programa completo agrega estiramiento y fortalecimiento de pantorrilla a medida que pasan las semanas.
 
@@ -968,7 +968,7 @@ Empieza por tu situación, no por la lista de funciones.
 - el dolor empeora semana tras semana aunque hagas ejercicio
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Si llegaste hasta aquí y Walkito parece ir contigo, así funciona. Respondes unas preguntas sobre dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta. Walkito arma un plan semanal en torno a esas respuestas. Cada mañana, un chequeo ajusta el día. Cada 14 días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio a una pierna.
 
@@ -1097,7 +1097,7 @@ El ejercicio y el manejo conservador suelen intentarse durante varios meses prim
 - la articulación se siente trabada o no puedes mover el dedo gordo en absoluto
 - tienes una herida, ampolla o lesión en la piel sobre el juanete
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye [separación de dedos](https://walkito.site/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](https://walkito.site/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para juanetes, pero el ejercicio de separación de dedos es el mismo movimiento probado en el ensayo de Kim de 2015 para hallux valgus. Si quieres una forma estructurada de crear el hábito, las sesiones de 3 o 5 minutos, en los días de la semana que tú elijas, mantienen los ejercicios constantes.
 
@@ -1270,7 +1270,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - sabes que tienes una rotura del tendón de Aquiles o te operaron hace poco
 - una pantorrilla se ve más pequeña que la otra y no lo has consultado con un profesional de la salud
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito hace el test de elevación de talón a una pierna cada 14 días y registra las dos piernas. La meta de pantorrilla es de 25 elevaciones a una pierna. La meta de simetría es una diferencia entre izquierda y derecha de menos del 10 %. La app calcula la diferencia como la resta entre el lado más fuerte y el más débil, dividida entre el lado más fuerte. Cuando cumples las dos metas, el test pasa a ser cada 28 días y el plan se mueve a la siguiente meta activa.
 
@@ -1446,7 +1446,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - no ha mejorado después de varias semanas de ejercicio y menos carga
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que calcular las series, el peso ni cuándo pasar al siguiente paso. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mañana mejor: dolor de 1/10 o menos durante 14 días seguidos. La escalera de elevaciones de talón (sentado, con dos pies, sostenida, con toalla, descensos de talón) avanza a tu ritmo, no con un calendario fijo.
 
@@ -1568,7 +1568,7 @@ Para más trabajo de tobillo y pierna, mira [elevaciones de tibial anterior](htt
 - el tobillo se dobló o se lesionó hace poco
 - no ha mejorado después de varias semanas de trabajo de movilidad constante
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone la movilidad de tobillo en los días de movilidad, junto con los estiramientos de pantorrilla y de sóleo. Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos.
 
@@ -1674,7 +1674,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 - el arco se hundió hace poco y el pie se ve claramente más plano
 - tuviste una lesión de tobillo y la parte interna del tobillo sigue sensible
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito añade la inversión de tobillo con banda después de seis sesiones de pie corto de pie. Esa progresión asegura que los músculos intrínsecos del pie estén activos antes de cargar el estabilizador extrínseco. Las sesiones duran 3, 5 o 10 minutos, y una prueba cada 14 días sigue cuánto mantienes el arco y la resistencia de la pantorrilla.
 
@@ -1771,7 +1771,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 - el dedo gordo se desvió hacia el segundo dedo y se formó un bulto en la articulación
 - el dolor bajo la parte delantera de la planta del pie es agudo y está empeorando
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito usa la elevación del dedo gordo al inicio de la secuencia para fortalecer el pie, junto con recoger la toalla. Cuando puedes aislar bien el dedo gordo durante dos sesiones, el plan pasa el foco al ejercicio de pie corto y a su progresión de sentado a de pie. Las sesiones son de 3, 5 o 10 minutos, y una prueba cada 14 días mide tu avance.
 
@@ -1884,7 +1884,7 @@ Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric ca
 - el dolor no se calma durante la noche y empeora semana tras semana
 - aparece entumecimiento, hormigueo o ardor en el pie
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan que empieza en tu nivel y sube cuando estás listo. La cadena de pantorrilla va de las elevaciones sentado a las elevaciones de pie con dos pies, la elevación sostenida, la elevación de talones con toalla, los excéntricos de talón y los saltos pogo. Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos.
 
@@ -1983,7 +1983,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - la pantorrilla tensa viene con entumecimiento, hormigueo o ardor
 - no ha mejorado después de varias semanas de estiramiento diario
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone el estiramiento de pantorrilla junto con el de sóleo y el de la fascia plantar en casi todas las sesiones. Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos. La app pasa de los estiramientos al trabajo de fuerza a tu ritmo.
 
@@ -2094,7 +2094,7 @@ Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effe
 - te duele en reposo o el dolor te despierta por la noche
 - no puedes subir en puntas para nada con el lado que duele
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Los excéntricos de talón son un paso de la cadena de pantorrilla que Walkito arma en un plan semanal. La cadena empieza con elevaciones sentado y sube por las elevaciones con dos pies, la elevación sostenida, la elevación de talones con toalla, los excéntricos de talón y los saltos pogo. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.
 
@@ -2192,7 +2192,7 @@ Rueda el pie después de un día largo de pie, después de una sesión de elevac
 - el dolor empezó después de una lesión, una caída o un chasquido repentino en el arco
 - no ha mejorado después de varias semanas, aun con el programa completo de ejercicios
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone el automasaje plantar al final de las sesiones y en los días de recuperación. La app se encarga del momento y del orden, para que no tengas que acordarte de qué días toca rodar el pie y cuáles estirar o hacer fuerza.
 
@@ -2304,7 +2304,7 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 - tienes dolor en la ingle o un chasquido en la cadera que empeora con el ejercicio
 - el dolor de pie o de arco empeora a pesar de hacer ejercicio con regularidad durante varias semanas
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito añade la abducción de cadera en los días de fuerza cuando una meta de diferencia entre izquierda y derecha entra en tu plan. Va junto con ejercicios intrínsecos del pie y trabajo de pantorrilla, para que el arco tenga apoyo desde arriba y desde abajo. Las sesiones duran 3, 5 o 10 minutos, y una prueba cada 14 días sigue tu avance.
 
@@ -2412,7 +2412,7 @@ Una versión más difícil es el estiramiento de la fascia plantar de pie: apoya
 - estirar te empeora el dolor una y otra vez en lugar de mejorarlo
 - no ha mejorado después de varias semanas de estiramiento diario y menos carga
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone el estiramiento de la fascia plantar en casi todas las sesiones y te lo recuerda antes de tu primer paso cada mañana. No tienes que acordarte del momento ni de cuántas repeticiones. La app arma un plan una semana a la vez, empieza con estiramientos y añade trabajo de fuerza cuando el dolor se calma.
 
@@ -2530,7 +2530,7 @@ Source: Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balanc
 - un pie es rígido y el arco no sube nada cuando te pones en puntas, lo que puede necesitar estudios de imagen
 - el dolor empeora semana tras semana aunque haces ejercicio con regularidad
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan que incluye el pie corto en una progresión de tres pasos: sentado, de pie y a una pierna. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles. Eliges sesiones de 3, 5 o 10 minutos, y una prueba cada 14 días mide si el tiempo que mantienes el arco está mejorando.
 
@@ -2631,7 +2631,7 @@ Para ejercicios relacionados que fortalecen la cadena, mira las [elevaciones de 
 - sientes mareo o que todo da vueltas cuando cambias de posición
 - notas un cambio repentino en tu equilibrio que no puedes explicar
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye el equilibrio a una pierna y el equilibrio con ojos cerrados como parte de un plan, junto con elevaciones de talón, estiramientos y ejercicios de pie. La meta de equilibrio son 30 segundos en cada pierna. Cada 14 días, una prueba corta mide cuánto aguantas, y también se sigue la diferencia entre los dos lados.
 
@@ -2714,7 +2714,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - sientes entumecimiento u hormigueo que baja por la parte de atrás de la pierna
 - no ha mejorado después de varias semanas de estiramiento diario
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone el estiramiento de sóleo junto con el de pantorrilla y el de la fascia plantar en casi todas las sesiones. Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos. La app pasa de los estiramientos a la fuerza a tu ritmo, no con un calendario fijo.
 
@@ -2808,7 +2808,7 @@ Fortalecer un lado sin el otro puede crear un desequilibrio. Los corredores que 
 - te cuesta levantar la parte delantera del pie (pie caído)
 - aparece entumecimiento u hormigueo en el pie o en la parte baja de la pierna
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito combina las elevaciones de tibial anterior con elevaciones de talón, trabajo de equilibrio y ejercicios de pie en un plan armado según tu nivel actual. Eliges 3, 5 o 7 días a la semana y sesiones de 3, 5 o 10 minutos.
 
@@ -2908,7 +2908,7 @@ Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot ali
 - el dedo gordo se desvió mucho hacia el segundo dedo y te duele al caminar
 - el dolor en el pie empeora aunque llevas varias semanas haciendo ejercicio con regularidad
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito pone la separación de dedos en los días de fuerza, junto con otros ejercicios para los músculos intrínsecos del pie. El plan la alterna con el pie corto y la inversión con banda para que los músculos del pie tengan trabajo variado sin sobrecargar un solo movimiento. Eliges sesiones de 3, 5 o 10 minutos.
 
@@ -3024,7 +3024,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - el dolor te despierta por la noche o está presente cuando no estás de pie
 - no ha mejorado después de varias semanas de carga constante
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La elevación de talones con toalla es un paso en una cadena de pantorrilla que Walkito arma dentro de un plan semanal. La cadena va de las elevaciones de talón sentado a las elevaciones con dos pies, una elevación sostenida, la elevación con toalla, los excéntricos de talón y, al final, los saltos pogo. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.
 
@@ -3128,7 +3128,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 - una articulación de un dedo está roja, hinchada o caliente, lo que puede indicar gota o una infección
 - los dedos se quedan trabados doblados y no se enderezan
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito usa recoger la toalla como un ejercicio inicial para fortalecer el pie. Cuando se siente fácil dos sesiones seguidas, el plan te pasa al ejercicio de pie corto y a su progresión de sentado a de pie. Eliges sesiones de 3, 5 o 10 minutos, y una prueba cada 14 días mide cuánto mantienes el arco y la resistencia de la pantorrilla.
 
@@ -3272,7 +3272,7 @@ Source: Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A 
 - hay entumecimiento u hormigueo junto con el dolor de talón
 - tomaste hace poco un antibiótico del grupo de las fluoroquinolonas (como ciprofloxacino) y tienes dolor de tendón nuevo
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La progresión de carga de pantorrilla de Walkito va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, descensos excéntricos de talón y más. Para la deformidad de Haglund y el dolor insercional del Aquiles, cada paso se queda a nivel del piso en lugar de bajar por debajo de la orilla de un escalón. Walkito te sube de nivel una vez que dos sesiones en el nivel actual se sintieron fáciles, en lugar de seguir un calendario fijo.
 
@@ -3430,7 +3430,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 - la deformidad avanza rápido a pesar de usar zapatos más anchos
 - tienes dificultad para caminar por la deformidad
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye [recoger la toalla](https://walkito.site/es/ejercicios/recoger-toalla-con-los-dedos/), [separación de dedos](https://walkito.site/es/ejercicios/separar-los-dedos-del-pie/) y [elevación del dedo gordo](https://walkito.site/es/ejercicios/levantar-el-dedo-gordo/) como parte de su programa de fortalecimiento de músculos intrínsecos del pie. La app está diseñada para la fascitis plantar y el pie plano, no específicamente para dedos en martillo, pero los ejercicios se traslapan. Si tienes un dedo en martillo flexible y quieres una forma estructurada de hacer trabajo de dedos, las sesiones de 3 o 5 minutos, en los días que tú elijas, mantienen los ejercicios constantes sin necesidad de recordar una rutina aparte.
 
@@ -3747,7 +3747,7 @@ Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliabil
 - no ha mejorado después de varias semanas de estiramientos, trabajo de pantorrilla y manejo de la carga
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que adivinar los ejercicios, las dosis ni cuándo subir de nivel. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14 días seguidos. Si ayer caminaste más de lo habitual y la puntuación de la mañana sube, la sesión se ajusta sola.
 
@@ -4056,7 +4056,7 @@ Que los dos pies se hinchen poco a poco al final del día es común en el embara
 - el dolor de talón empezó tras una caída o una torcedura, o no puedes apoyar el pie
 - el talón te duele de noche o en reposo, o sientes ardor, hormigueo o adormecimiento
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito es una app de ejercicios para el talón y el pie. No está pensada para el embarazo y no sabe en qué trimestre estás, así que consulta a tu médico o a tu ginecólogo antes de empezar, y sáltate lo que pida brincar, saltar o acostarte boca arriba.
 
@@ -4213,7 +4213,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - no ha mejorado después de varias semanas de estiramiento diario y trabajo de pantorrilla
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que llevar la cuenta de los niveles, las series ni cuándo progresar. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14 días seguidos. Los estiramientos empiezan desde el día uno. La cadena de pantorrilla, de elevaciones sentado hasta la elevación con toalla y carga, avanza a tu ritmo.
 
@@ -4378,7 +4378,7 @@ Para alguien con arcos altos y dolor de talón, esos ejercicios coinciden con lo
 - el dolor de pie no mejora después de varias semanas de estiramiento, mejor calzado y plantillas acolchadas
 - tienes dolor en un punto muy específico que empeora con la actividad, lo que puede ser una fractura por estrés o una sesamoiditis en vez de un patrón general de pie cavo
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye estiramiento de pantorrilla, estiramiento de fascia plantar, trabajo de estabilidad de tobillo y masaje plantar con pelota, todo relevante para los arcos altos. Cuando señalas el arco en el mapa corporal, la app ofrece ejercicios para esa zona. Pero la app no tiene una meta ni un programa específico para pie cavo. Si tus arcos altos causan dolor de talón, las metas de dolor de talón de la app pueden encajar. Si tu dolor está principalmente bajo la parte delantera del pie o se relaciona con una afección neurológica, un profesional de la salud debe dirigir tu plan de ejercicios.
 
@@ -4586,7 +4586,7 @@ El pie plano puede coincidir con otros problemas del pie, sobre todo si pasas mu
 - el dolor empeora semana tras semana aunque haces ejercicio
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir qué ejercicios de arco hacer ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba 60 segundos. Si además te duele el talón, primero van las mañanas más fáciles.
 
@@ -4812,7 +4812,7 @@ Varias apps incluyen ejercicios para la fascitis plantar. Se diferencian en si s
 - no ha mejorado después de varias semanas de ejercicio y menos carga
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir qué ejercicios hacer, en qué orden ni cuándo subir de nivel. Walkito arma un plan una semana a la vez en torno a una meta. Para la fascitis plantar, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14 días seguidos.
 
@@ -4960,7 +4960,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - no ha mejorado después de varias semanas de estirar todos los días y bajar la carga
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que acordarte de los estiramientos, las dosis ni cuándo pasar a algo más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14 días seguidos. Cada mañana anotas tu dolor antes del primer paso, y la sesión del día se ajusta a ese número.
 
@@ -5121,7 +5121,7 @@ Source: Matthews BG, Hurn SE, Harding MP, Henry RA, Ware RS. The effectiveness o
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 - el dolor siguió a una lesión repentina o un golpe en la parte delantera del pie
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito está construido alrededor de la fascitis plantar y el pie plano, no del neuroma de Morton. Pero los ejercicios de la parte delantera del pie en la app, incluyendo separación de dedos y estiramiento de pantorrilla, abordan el mismo reparto de carga que contribuye a los síntomas del neuroma. Marcar la planta delantera del pie en el mapa de dolor durante un check-in le dice a la app que incluya separación de dedos y estiramiento plantar en tu sesión.
 
@@ -5282,7 +5282,7 @@ Si tu pregunta principal es el dolor por estar de pie y no trabajas en enfermer�
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 - el dolor no ha bajado después de varias semanas con turnos más ligeros, mejores zapatos y los ejercicios de esta página
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14 días seguidos.
 
@@ -5448,7 +5448,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - te despierta por la noche o duele en reposo
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La recuperación toma tiempo, y lo más difícil es saber si ese tiempo está sirviendo de algo. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14 días seguidos. Cada mañana anotas tu dolor, y cada 14 días una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver cómo se mueven los números.
 
@@ -5624,7 +5624,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - no ha mejorado después de varias semanas de estiramiento diario y trabajo de pantorrilla
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Tenga o no espolón en la radiografía, el enfoque de ejercicio es el mismo. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es dolor de la mañana de 1/10 o menos durante 14 días seguidos. Los estiramientos empiezan desde el día uno. El trabajo de fuerza de pantorrilla se agrega una vez que la primera meta pasa de calmar el dolor a construir capacidad.
 
@@ -5787,7 +5787,7 @@ Source: Kulig K, Lederhaus ES, Reischl S, Arya S, Bashford G. Effect of eccentri
 - los dos pies están afectados y otras articulaciones están hinchadas o rígidas, lo que puede apuntar a una artritis inflamatoria
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye inversión con banda, pie corto y elevaciones de talón en su biblioteca de ejercicios, y los programa en días de fuerza como parte de un plan de arco y equilibrio. Cuando marcas la cara interna del tobillo o el arco en el mapa de dolor durante un check-in, la sesión se ajusta en torno a esa información. La app está construida para la fascitis plantar y el pie plano. La DTTP se superpone con los dos, pero la app no diagnostica DTTP y no reemplaza las ortesis ni la clasificación clínica.
 
@@ -5921,7 +5921,7 @@ El hallux rigidus (rigidez y artrosis de la articulación del dedo gordo) tambi�
 - no puedes apoyar peso en la parte delantera del pie en absoluto
 - tienes fiebre junto con dolor en el pie
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La sesamoiditis se maneja principalmente con descarga y calzado, no con un programa de ejercicios. Walkito está diseñado para afecciones como la fascitis plantar y el pie plano, donde los programas de carga estructurados tienen respaldo en ensayos. Si tu sesamoiditis se resuelve y quieres reconstruir la fuerza del pie y de la pantorrilla como parte de tu regreso a la actividad, el trabajo de músculos intrínsecos y los estiramientos de pantorrilla de la app pueden ser un complemento útil.
 
@@ -6259,7 +6259,7 @@ Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial str
 - no puedes apoyar la pierna, o cojeas
 - la pierna está roja o caliente, o tienes fiebre o te sientes mal
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito no tiene un programa específico para la periostitis tibial, y esta página explica por qué: ningún programa de ejercicios ha demostrado acelerar la recuperación de la periostitis tibial en un ensayo. Lo que sí tiene Walkito es trabajo de pantorrilla, tobillo y equilibrio que apunta a los mismos músculos que estudiaron los investigadores, más un plan que se adapta a cómo te sientes cada mañana.
 
@@ -6418,7 +6418,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 - el dolor no ha bajado después de varias semanas con ratos de pie más cortos, un tapete y los ejercicios de esta página
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir el orden, las dosis ni cuándo avanzar. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor por escritorio de pie sigue el patrón de dolor por la mañana de la fascitis plantar, la primera meta es dolor de 1 de 10 o menos por la mañana durante 14 días seguidos.
 
@@ -6543,7 +6543,7 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 - el dolor no ha bajado después de varias semanas con menos carga, mejor calzado y los ejercicios de esta página
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies por estar de pie es peor en la mañana, la primera meta es la misma que para el dolor de talón: dolor de 1/10 o menos por la mañana durante 14 días seguidos. Si además tienes los arcos planos, el arco tiene su propia meta y sus propios ejercicios.
 
@@ -6708,7 +6708,7 @@ Un episodio de gota aparece rápido, muchas veces de la noche a la mañana. La a
 - hay un bulto visible en el empeine que está creciendo
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito está construido alrededor del dolor de talón y el pie plano, no del dolor en el empeine específicamente. Pero si la sobrecarga de los tendones extensores es parte de tu panorama, el fortalecimiento del tibial anterior (elevaciones de la punta del pie) y el estiramiento de pantorrilla en la app abordan los desequilibrios musculares que contribuyen. Marcar el empeine en el mapa de dolor durante un check-in le permite a la app rastrear si el dolor está cambiando junto con tus ejercicios.
 
@@ -6895,7 +6895,7 @@ Elige Walkito si se cumple cualquiera de estas:
 - el dolor empeora semana tras semana aunque hagas ejercicio con constancia
 - tienes diabetes, menos sensibilidad en los pies o mala circulación
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Si Walkito parece lo correcto para tu situación, así funciona. Respondes preguntas sobre dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta. Walkito arma un plan semanal en torno a metas medibles, empezando por mañanas más fáciles. Cada mañana, un chequeo ajusta el día.
 
@@ -7306,7 +7306,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - el dolor no te deja dormir o está presente en reposo
 - todavía necesitas la cinta todos los días después de un mes de estiramientos y trabajo de pantorrilla constantes
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La cinta puede hacer más fáciles los próximos días. Los ejercicios son lo que sigue funcionando después de quitarla. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1 de 10 o menos durante 14 días seguidos. Los estiramientos empiezan desde el día uno. Cada semana, solo el ejercicio de tu meta principal puede subir un nivel, y solo cuando tus últimas dos sesiones con él se sintieron fáciles y el dolor de la mañana no subió.
 
@@ -7469,7 +7469,7 @@ Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Pr
 - un niño tiene dolor de rodilla y cojea, o un pie plano está rígido y duele
 - la rodilla no mejora después de alrededor de un mes de menos carga y ejercicio
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito está hecho para el dolor de talón, de pie y de la parte baja de la pierna en adultos, no para el dolor de rodilla. Si tienes pie plano con dolor de arco o de talón además de una rodilla adolorida, puede encargarse del lado del pie: pie corto, equilibrio y abducción de cadera, organizados una semana a la vez. Los ejercicios de rodilla deben venir de un fisioterapeuta.
 
@@ -7659,7 +7659,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - el dolor no te deja dormir o está presente en reposo
 - no ha mejorado después de varias semanas de estiramiento diario y trabajo de pantorrilla
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 No tienes que decidir cuándo rodar y cuándo estirar. Walkito arma un plan una semana a la vez, con el masaje plantar como un paso corto de recuperación y los estiramientos y el trabajo de pantorrilla como la base. Para el dolor de talón, la primera meta es dolor de la mañana de 1 de 10 o menos durante 14 días seguidos.
 
@@ -7846,7 +7846,7 @@ Source: Mickle KJ, Caputi P, Potter JM, Steele JR. Efficacy of a progressive res
 - un dedo o el pie está rojo, caliente e hinchado, o un dedo se pone pálido, azul o frío
 - los calambres en los dedos o el arco siguen regresando y no ceden con reposo
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito incluye la elevación del dedo gordo, la separación de dedos, recoger la toalla y el ejercicio de pie corto, y sube un ejercicio de nivel cuando tus dos últimas sesiones con él se sintieron fáciles y el dolor no aumentó. El trabajo de dedos y arco empieza con 3 series de 8 sosteniendo 5 segundos, dentro de sesiones de 3, 5 o 10 minutos, 3, 5 o 7 días a la semana.
 
@@ -8195,7 +8195,7 @@ Source: Powell M, Post WR, Keener J, Wearden S. Effective treatment of chronic p
 - te duelen los dos talones y la rigidez de la mañana dura más de 30 minutos, sobre todo si tienes otras articulaciones rígidas o hinchadas
 - nada ha cambiado después de uno a tres meses de estiramientos y férula
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 La férula trabaja de noche. El ejercicio pasa de día. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta son mañanas más fáciles: dolor en los primeros pasos de 1 de 10 o menos durante 14 días seguidos. Estiramientos como estos están en el plan desde la primera semana, y el trabajo de fuerza de pantorrilla avanza a tu ritmo.
 
@@ -8367,7 +8367,7 @@ Source: Hupperets MD, Verhagen EA, van Mechelen W. Effect of unsupervised home b
 - el tobillo se traba, se atora o truena con dolor, lo que puede indicar daño en el cartílago
 - tienes diabetes y los pies entumidos, o has tenido caídas o mareos
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan semana a semana en torno a metas de dolor de pie y pierna. Incluye equilibrio, inversión con banda, elevaciones de tibial anterior, elevaciones de talón y trabajo de cadera. Cada semana puede subir un paso de dificultad el ejercicio de tu meta principal (en equilibrio: a una pierna, luego con los ojos cerrados, luego de pie sobre una almohada), pero solo cuando tus dos últimas sesiones con él se sintieron fáciles y el dolor de la mañana no aumentó. Si una sesión se sintió difícil o el dolor subió, en cambio baja un paso. La inversión con banda y las elevaciones de tibial anterior no suben de nivel de esta forma. No tiene un programa para esguinces de tobillo y no revisa si un tobillo está fracturado o tiene una ruptura.
 
@@ -8538,7 +8538,7 @@ Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The O
 - el arco bajó después de una caída, una torcedura o una lesión
 - no puedes apoyar peso en el pie, o el dolor te despierta en la noche
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan una semana a la vez en torno a una meta. Para el pie plano, una meta es mantener el arco: sostener la posición de pie corto 60 segundos. El plan puede incluir trabajo con banda para el tibial posterior, elevaciones de talón, pie corto y estiramiento de pantorrilla, cada uno empezando con una dosis baja y subiendo solo cuando se siente fácil.
 
@@ -8689,7 +8689,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - la piel se queda blanca, entumecida, con ampollas o muy roja después del hielo o el calor
 - no ha mejorado después de varias semanas de estiramiento diario y menos carga
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 El hielo y el calor pueden quitarle lo peor a un mal día. El plan de ejercicios es la parte que respalda la guía. Walkito arma ese plan una semana a la vez en torno a una meta principal. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1 de 10 o menos durante 14 días seguidos. Los estiramientos están en el plan desde la primera semana, y el masaje con pelota aparece como un paso corto de recuperación.
 
@@ -8859,7 +8859,7 @@ Source: Young R, Nix S, Wholohan A, Bradhurst R, Reed L. Interventions for incre
 - la rigidez viene después de una fractura o una cirugía: sigue el plan de tu cirujano o fisioterapeuta
 - varias articulaciones amanecen rígidas e hinchadas por más de media hora
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan semana a semana en torno a una meta, para el dolor de talón, pie y pierna. La movilidad de tobillo es parte de él: los estiramientos de pantorrilla, una posición sostenida de rodilla a la pared y el balanceo de rodilla rotan por tus sesiones, sobre todo en los días de movilidad, junto con trabajo de fuerza de pantorrilla y de equilibrio. Walkito empieza los estiramientos y la movilidad de tobillo con 2 series de 30 segundos, cada pierna.
 
@@ -9037,7 +9037,7 @@ Source: Peters-Dickie JL, Detrembleur C, Guallar-Bouloc M, Rastelli M, Lobet S, 
 - no puedes apoyar peso en el pie
 - el dolor sigue empeorando a pesar del reposo y de ejercicios más suaves
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito arma un plan semanal en torno a una meta e incluye los ejercicios para el pie de esta página: el ejercicio de pie corto de sentado a una pierna, la separación de dedos, la elevación del dedo gordo, recoger la toalla, las elevaciones de talón y el trabajo de equilibrio. Empieza los ejercicios de arco con 3 series de 8 sosteniendo 5 segundos y el equilibrio con 3 series de 20 segundos, y en cada nuevo plan semanal sube un paso tu ejercicio principal cuando calificaste como fáciles tus dos últimas sesiones con él y tu dolor de la mañana no ha subido.
 
@@ -9230,7 +9230,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - tu arco se está aplanando, un pie está mucho más plano que el otro, o el pie plano está rígido
 - el dolor de talón o de pie empezó o empeoró después de cambiar de zapatos y no se ha calmado al volver a tus zapatos de antes
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito es un programa de ejercicios para el dolor de talón, de pie y de pierna. Incluye el ejercicio de pie corto, la separación de dedos, las elevaciones de talón y el trabajo de equilibrio de esta página, y los va subiendo de nivel conforme se vuelven más fáciles. No elige tus zapatos y no diagnostica. Un pie y una pantorrilla más fuertes son una base sensata, sean cuales sean los zapatos que termines usando.
 
@@ -9426,7 +9426,7 @@ Source: Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and w
 - un arco bajó en la edad adulta, o la parte interna del tobillo está hinchada y duele
 - un pie plano es rígido y duele, y sigue plano incluso cuando subes en puntas
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito es un programa de ejercicios para los pies y la parte baja de las piernas. Para el pie plano, arma un plan una semana a la vez en torno a metas para los pies, como sostener el arco 60 segundos y 30 segundos de equilibrio a una pierna. Empieza el ejercicio de pie corto con 3 series de 8 sosteniendo 5 segundos, el trabajo de cadera con 3 series de 10 y los estiramientos de pantorrilla con 2 repeticiones de 30 segundos.
 
@@ -9793,7 +9793,7 @@ Si usas tacones casi todos los días, no tienes que dejarlos. Alterna con días 
 - la tensión o el dolor muscular empezó poco después de un medicamento nuevo
 - la tensión va empeorando con los meses a pesar del estiramiento y el trabajo de fuerza
 
-### Hacerlo como un plan
+### Cómo convertirlo en un plan
 
 Walkito es una app para iPhone y Android con sesiones cortas de ejercicio para el dolor de talón, pie y pierna en adultos. Los estiramientos de pantorrilla con la rodilla estirada y doblada, la movilidad de tobillo y las elevaciones de talón forman parte de ella. Walkito empieza con 2 series de 30 segundos para cada estiramiento y 3 series de 10 para las elevaciones de talón, y sube la dosis conforme avanzas.
 

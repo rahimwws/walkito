@@ -148,7 +148,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’allungamento della fascia plantare in quasi tutte le sessioni e te lo ricorda prima del primo passo ogni mattina. Non devi ricordarti i tempi né contare. L’app costruisce un piano una settimana alla volta, partendo dagli allungamenti e aggiungendo il lavoro di forza quando il dolore si calma.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

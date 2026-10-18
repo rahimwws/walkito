@@ -223,7 +223,7 @@ export const PTTD_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito tem a inversão com faixa, o pé curto e a elevação de calcanhar no catálogo de exercícios, e coloca esses exercícios nos dias de força como parte de um programa de arco e equilíbrio. Quando você marca a parte de dentro do tornozelo ou o arco no mapa de dor durante um check-in, a sessão se ajusta a essa informação. O app foi feito para fascite plantar e pé chato. A DTTP se sobrepõe aos dois, mas o app não faz diagnóstico de DTTP e não substitui as órteses nem a classificação do estágio por um profissional de saúde.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. Se você recebeu o diagnóstico de DTTP, use o app junto com as órteses e confirme com o seu profissional de saúde que o seu estágio é adequado para exercício.',

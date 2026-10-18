@@ -160,7 +160,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito incluye el equilibrio a una pierna y el equilibrio con ojos cerrados como parte de un plan, junto con elevaciones de talón, estiramientos y ejercicios de pie. La meta de equilibrio son 30\u00A0segundos en cada pierna. Cada 14\u00A0días, una prueba corta mide cuánto aguantas, y también se sigue la diferencia entre los dos lados.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cuando alcanzas la meta de equilibrio, la prueba pasa a hacerse cada 28\u00A0días y una nueva meta ocupa su lugar. Walkito es un programa de ejercicio. No diagnostica.',

@@ -248,7 +248,7 @@ export const ARCH_PAIN_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Se a sua dor no arco segue o padrão da fascite plantar, o Walkito monta um plano em torno de uma meta de cada vez. A primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14\u00A0dias seguidos. O arco ganha a sua própria meta e os seus próprios exercícios. Se a sua dor no arco vem do pé chato, o app pode trabalhar a dor e o arco como metas separadas.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se você não tem certeza do que está causando a sua dor no arco, procure um profissional de saúde antes de pôr carga nele com exercícios.',

@@ -221,7 +221,7 @@ export const MORTONS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito foi feito para fascite plantar e pé chato, não para o neuroma de Morton. Mas os exercícios para a parte da frente do pé do app, incluindo abrir os dedos e o alongamento de panturrilha, trabalham a mesma distribuição de carga na parte da frente do pé que contribui para os sintomas do neuroma. Marcar a planta da parte da frente do pé no mapa de dor durante um check-in faz o app incluir abrir os dedos e o alongamento da fáscia plantar na sua sessão.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito não faz diagnóstico de neuroma de Morton. Os exercícios que ele inclui são medidas de conforto e de carga. Calçados mais largos, coxins metatarsais e uma avaliação profissional devem vir primeiro.',

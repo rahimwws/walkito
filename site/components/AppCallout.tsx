@@ -28,7 +28,7 @@ const LEAD: Record<Lang, string> = {
   ru: 'Walkito превращает эти упражнения в короткий план на 3, 5 или 7 дней в неделю по вашему выбору, который подстраивается под то, как стопы чувствовали себя утром.',
   es: 'Walkito convierte estos ejercicios en un plan corto de 3, 5 o 7 días a la semana, a tu elección, que se ajusta a cómo amanecieron tus pies.',
   pt: 'O Walkito transforma estes exercícios em um plano curto de 3, 5 ou 7 dias por semana, à sua escolha, que se ajusta a como seus pés acordaram hoje.',
-  fr: "Walkito transforme ces exercices en un court programme de 3, 5 ou 7 jours par semaine, au choix, qui s'adapte à l'état de vos pieds ce matin.",
+  fr: "Walkito transforme ces exercices en séances de 3, 5 ou 10\u00A0minutes, les 3, 5 ou 7\u00A0jours par semaine que vous choisissez. Un mauvais matin signalé au bilan allège la séance du jour.",
   it: 'Walkito trasforma questi esercizi in un breve piano di 3, 5 o 7 giorni a settimana, a tua scelta, che si adatta a come stavano i tuoi piedi stamattina.',
   de: 'Walkito macht aus diesen Übungen einen kurzen Plan, der sich danach richtet, wie sich deine Füße heute Morgen angefühlt haben. Du wählst 3, 5 oder 7 Tage pro Woche.',
 };

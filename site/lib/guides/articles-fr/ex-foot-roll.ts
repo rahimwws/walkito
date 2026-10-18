@@ -12,7 +12,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
   page: 'exFootRoll',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Massage à la balle pour la fasciite plantaire',
+  title: 'Massage avec une balle pour la fasciite plantaire',
   description:
     'Comment masser la plante du pied avec une balle ou une bouteille congelée contre la fasciite plantaire\u00A0: technique, durée, ce que cela fait ou non.',
   h1: 'Massage avec une balle pour la fasciite plantaire\u00A0: balle, bouteille et technique',

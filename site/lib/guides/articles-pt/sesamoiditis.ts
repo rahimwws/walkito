@@ -154,7 +154,7 @@ export const SESAMOIDITIS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
       'A sesamoidite é controlada principalmente com alívio de carga e calçado, não com um programa de exercícios. O Walkito foi feito para problemas como fascite plantar e pé chato, em que programas de carga estruturados têm apoio de ensaios. Se a sua sesamoidite passou e você quer reconstruir a força do pé e da panturrilha como parte da volta à atividade, o trabalho para os músculos pequenos do pé e os alongamentos de panturrilha do app podem ser um complemento útil.',
     more: [

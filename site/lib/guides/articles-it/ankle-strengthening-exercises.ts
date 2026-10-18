@@ -226,7 +226,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Quanto spesso fare gli esercizi di rinforzo della caviglia?',
       paragraphs: [
-        '**Due o tre sessioni di forza a settimana, con un breve lavoro di equilibrio quasi tutti i giorni,** è uno schema sensato. Corrisponde allo studio sulla prevenzione visto sopra, che chiedeva tre sessioni a settimana per due mesi. Il lavoro di equilibrio ha un carico basso e si può fare quasi ogni giorno.',
+        '**Due o tre sessioni di forza a settimana, con un breve lavoro di equilibrio quasi tutti i giorni,** è una frequenza sensata. Corrisponde allo studio sulla prevenzione visto sopra, che chiedeva tre sessioni a settimana per due mesi. Il lavoro di equilibrio ha un carico basso e si può fare quasi ogni giorno.',
         'Sali di livello quando un esercizio ti sembra facile per due sessioni di fila e la caviglia non sta peggio la mattina dopo. Progredisci passando a una versione più difficile (una gamba invece di due, occhi chiusi invece che aperti, un elastico più duro) invece di accumulare più serie. Torna indietro di una fase dopo una riacutizzazione.',
         'Walkito è costruito intorno al dolore a tallone, arco e parte bassa della gamba, e non ha un programma di riabilitazione per la distorsione della caviglia. I suoi piani possono includere l’inversione con elastico (dopo un primo lavoro sull’arco), i sollevamenti dell’avampiede, i sollevamenti sulle punte, il lavoro per l’anca su un fianco e l’equilibrio su una gamba di questa pagina, con un breve test di resistenza del polpaccio, tenuta dell’arco ed equilibrio ogni due settimane all’inizio. Se vuoi rinforzare anche i piccoli muscoli sotto l’arco, vedi gli [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
       ],
@@ -272,7 +272,7 @@ export const ANKLE_STRENGTHENING_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano una settimana alla volta intorno a obiettivi legati al dolore a piede e gamba. Comprende equilibrio, inversione con elastico, sollevamenti dell’avampiede, sollevamenti sulle punte e lavoro per l’anca. Ogni settimana può rendere un po’ più difficile l’esercizio del tuo obiettivo principale (per l’equilibrio: equilibrio su una gamba, poi a occhi chiusi, poi in piedi su un cuscino), ma solo quando le ultime due sessioni ti sono sembrate facili e il dolore del mattino non è aumentato. Se una sessione è stata dura o il dolore è salito, torna invece indietro di un gradino. L’inversione con elastico e i sollevamenti dell’avampiede non salgono di livello in questo modo. Non ha un programma per la distorsione della caviglia e non verifica se una caviglia è fratturata o ha un legamento lesionato.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni due settimane (ogni quattro quando raggiungi un obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario.',

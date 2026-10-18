@@ -212,7 +212,7 @@ export const TOP_OF_FOOT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è pensato per il dolore al tallone e il piede piatto, non specificamente per il dolore al dorso del piede. Ma se il sovraccarico dei tendini estensori fa parte del tuo quadro, il rinforzo del tibiale anteriore (sollevamenti dell’avampiede) e l’allungamento del polpaccio dell’app lavorano sugli squilibri muscolari che contribuiscono. Se nel check-in segni il dorso del piede sulla mappa del dolore, l’app può seguire se il dolore cambia insieme ai tuoi esercizi.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito non fa diagnosi del dolore al dorso del piede. Se sospetti una frattura da stress, la gotta o un problema a un nervo, rivolgiti a un professionista sanitario prima di iniziare qualsiasi programma di esercizi.',

@@ -204,7 +204,7 @@ export const TOP_OF_FOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito foi feito para dor no calcanhar e pé chato, não especificamente para dor no peito do pé. Mas se a sobrecarga dos tendões extensores faz parte do seu quadro, o fortalecimento do tibial anterior (elevação dos dedos) e o alongamento de panturrilha do app trabalham os desequilíbrios musculares que contribuem. Marcar o peito do pé no mapa de dor durante um check-in deixa o app acompanhar se a dor está mudando junto com os exercícios.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito não faz diagnóstico de dor no peito do pé. Se você suspeita de fratura por estresse, gota ou problema de nervo, procure um profissional de saúde antes de começar qualquer programa de exercícios.',

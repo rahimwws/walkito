@@ -298,7 +298,7 @@ export const BEST_APP_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Se você leu até aqui e o Walkito parece combinar com você, veja como ele funciona. Você responde algumas perguntas sobre onde dói, de que lado, o quanto você é ativo e qual é o seu objetivo. O Walkito monta um plano semanal em torno dessas respostas. Toda manhã, um check-in ajusta o dia. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio em uma perna.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Os exercícios seguem a diretriz clínica de 2023 para dor no calcanhar. O plano não tem data para acabar: quando você alcança uma meta, ela passa para manutenção e a próxima meta entra no lugar. O Walkito é um programa de exercícios, não um diagnóstico nem um substituto para um profissional de saúde.',

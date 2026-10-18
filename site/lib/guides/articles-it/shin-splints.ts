@@ -246,7 +246,7 @@ export const SHIN_SPLINTS_IT: Guide = {
             'Una storia precedente di periostite tibiale.',
           ],
         },
-        'Uno schema generale per tornare a correre:',
+        'Una tabella di marcia generale per tornare a correre:',
         {
           list: [
             'Prima camminare senza dolore.',
@@ -307,7 +307,7 @@ export const SHIN_SPLINTS_IT: Guide = {
     {
       q: 'Si può camminare con la periostite tibiale?',
       cites: [CITE.mtssReview],
-      a: 'Di solito sì. Camminare ha meno impatto che correre, e molte persone con sindrome da stress tibiale mediale possono continuare a camminare senza riacutizzazioni, purché il dolore resti lieve e si calmi in fretta dopo. Se camminare in sé riproduce un dolore acuto in un solo punto dell’osso, fermati e fatti controllare, perché quello schema fa pensare più a una frattura da stress che alla periostite tibiale.',
+      a: 'Di solito sì. Camminare ha meno impatto che correre, e molte persone con sindrome da stress tibiale mediale possono continuare a camminare senza riacutizzazioni, purché il dolore resti lieve e si calmi in fretta dopo. Se camminare in sé riproduce un dolore acuto in un solo punto dell’osso, fermati e fatti controllare, perché quel quadro fa pensare più a una frattura da stress che alla periostite tibiale.',
     },
   ],
   redFlags: {
@@ -325,7 +325,7 @@ export const SHIN_SPLINTS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Walkito non ha un programma dedicato alla periostite tibiale, e questa pagina spiega perché: nessun programma di esercizi ha dimostrato in uno studio di accelerare il recupero dalla periostite tibiale. Quello che Walkito ha è lavoro su polpaccio, caviglia ed equilibrio che riguarda gli stessi muscoli studiati dai ricercatori, più un piano che si adatta a come ti senti ogni mattina.`,
     more: [
       `Scegli ${DAYS}\u00A0giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sulla gamba sta servendo a qualcosa.`,

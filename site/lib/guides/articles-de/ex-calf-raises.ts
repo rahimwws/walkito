@@ -64,7 +64,7 @@ export const EX_CALF_RAISES_DE: Guide = {
       h2: 'Wie geht Fersenheben im Sitzen?',
       paragraphs: [
         'Setz dich auf einen Stuhl, die Füße stehen flach auf dem Boden, die Knie etwa 90\u00A0Grad gebeugt. Drück dich über die Ballen beider Füße hoch, sodass sich beide Fersen vom Boden heben. Senk langsam ab. Wenn du die Hände auf die Knie legst und nach unten drückst, kommt Widerstand dazu.',
-        'Fersenheben im Sitzen ist der Einstieg mit der wenigsten Last in der Wadenkette. Im Vergleich zur Arbeit im Stehen belastet es die Ferse fast gar nicht, deshalb ist es ein guter Anfang, wenn Fersenheben im Stehen zu sehr wehtut.',
+        'Fersenheben im Sitzen ist der Einstieg mit der wenigsten Last in der Stufenfolge. Im Vergleich zur Arbeit im Stehen belastet es die Ferse fast gar nicht, deshalb ist es ein guter Anfang, wenn Fersenheben im Stehen zu sehr wehtut.',
       ],
       exercises: [
         {
@@ -114,7 +114,7 @@ export const EX_CALF_RAISES_DE: Guide = {
       h2: 'Wie viele Wiederholungen Fersenheben solltest du machen?',
       keyFact: 'Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen zwischen 20 und 81\u00A0Jahren fand, dass die Zahl beim einbeinigen Fersenheben je nach Alter, Geschlecht und Aktivität schwankte, wobei Frauen auf einen Median von 21\u00A0Wiederholungen kamen (Hebert-Losier und Kollegen, 2017).',
       paragraphs: [
-        'Das hängt davon ab, wo du auf der Leiter stehst und woran du arbeitest. Für allgemeine Wadenkraft sind **3\u00A0Sätze à 10 bis 15\u00A0Wiederholungen in langsamem Tempo eine übliche Anfangsdosis.** Beim in der Forschung getesteten Protokoll bei Plantarfasziitis beginnt das Fersenheben mit Handtuch mit 3\u00A0Sätzen à 12RM und steigert sich über etwa fünf Wochen auf 5\u00A0Sätze à 8RM.',
+        'Das hängt davon ab, auf welcher Stufe du stehst und woran du arbeitest. Für allgemeine Wadenkraft sind **3\u00A0Sätze à 10 bis 15\u00A0Wiederholungen in langsamem Tempo eine übliche Anfangsdosis.** Beim in der Forschung getesteten Protokoll bei Plantarfasziitis beginnt das Fersenheben mit Handtuch mit 3\u00A0Sätzen à 12RM und steigert sich über etwa fünf Wochen auf 5\u00A0Sätze à 8RM.',
         'Ein nützlicher Richtwert ist der einbeinige Ausdauertest mit Fersenheben. Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen fand einen Median von 24\u00A0Wiederholungen bei Männern und 21 bei Frauen, abhängig von Alter, Geschlecht und Aktivität. Das Wadenziel in der Walkito-App sind 25\u00A0einbeinige Fersenheben. Wenn du es erreichst, ist die Arbeit nicht vorbei. Dann geht es darum, das Niveau zu halten.',
         'Mehr zum speziellen Protokoll bei Plantarfasziitis findest du unter [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/). Die Variante für die Achillessehne findest du unter [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/).',
       ],
@@ -127,7 +127,7 @@ export const EX_CALF_RAISES_DE: Guide = {
           list: [
             '**Zu schnell sein.** Das langsame Absenken (etwa drei Sekunden) baut die Kraft auf. Wer unten federt, verschenkt die exzentrische Phase, also den Teil, der den Großteil der Arbeit für die Anpassung der Sehne leistet.',
             '**Auf die Außenkante des Fußes rollen.** Der Druck sollte über den großen Zeh und den Fußballen gehen. Wenn das Sprunggelenk nach außen kippt, kann sich die Wade nicht voll zusammenziehen, und die kleinen Muskeln an der Außenseite des Sprunggelenks bekommen eine Spannung ab, für die sie nicht gebaut sind.',
-            '**Die Variante im Sitzen überspringen.** Wenn Fersenheben im Stehen wehtut, macht ein Sprung zur einbeinigen Arbeit auf einer Stufe es schlimmer. Die Leiter gibt es aus gutem Grund: im Sitzen, dann beidbeinig im Stehen, dann mit Halten, dann einbeinig. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
+            '**Die Variante im Sitzen überspringen.** Wenn Fersenheben im Stehen wehtut, macht ein Sprung zur einbeinigen Arbeit auf einer Stufe es schlimmer. Die Stufenfolge hat einen guten Grund: im Sitzen, dann beidbeinig im Stehen, dann mit Halten, dann einbeinig. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
           ],
         },
       ],
@@ -135,7 +135,7 @@ export const EX_CALF_RAISES_DE: Guide = {
     {
       h2: 'Fersenheben bei Plantarfasziitis oder bei Achillessehnenentzündung',
       paragraphs: [
-        'Bei Plantarfasziitis sprechen die Belege für das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem das Handtuch unter den Zehen neben der Wade auch die Faszie belastet. Die Schmerzgrenze liegt bei 6/10. Die ganze Seite zum Beschwerdebild findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        'Bei Plantarfasziitis sprechen die Belege für das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/), bei dem das Handtuch unter den Zehen neben der Wade auch die Faszie belastet. Die Schmerzgrenze liegt bei 6/10. Die ganze Seite zum Beschwerdebild findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Bei einer Achillessehnenentzündung verschiebt sich der Fokus auf das [exzentrische Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/), bei dem das Absenken der eigentliche Zweck ist und kein Handtuch verwendet wird. Das Schmerzmodell aus einer Studie erlaubt Belastung bis etwa 5/10, solange der Schmerz bis zum Morgen abklingt. Die ganze Seite findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         'Das beidbeinige Fersenheben, die Variante im Sitzen und das isometrische Halten tauchen auf beiden Wegen als frühe Stufen auf. Sie bauen die Grundkraft auf, die die spezielle Übung mit Last erst möglich macht.',
       ],
@@ -145,7 +145,7 @@ export const EX_CALF_RAISES_DE: Guide = {
   faq: [
     {
       q: 'Trainiert Fersenheben den Po?',
-      a: 'Nein. Fersenheben zielt auf Gastrocnemius und Soleus im Unterschenkel. Die Gesäßmuskeln stabilisieren bei den einbeinigen Varianten die Hüfte, sind aber nicht die Hauptarbeiter. Für Kraft in Hüfte und Gesäß siehe [Hüftabduktion](/de/uebungen/hueftabduktion/).',
+      a: 'Nein. Fersenheben zielt auf Gastrocnemius und Soleus im Unterschenkel. Die Gesäßmuskeln stabilisieren bei den einbeinigen Varianten die Hüfte, sind aber nicht die Hauptakteure. Für Kraft in Hüfte und Gesäß siehe [Hüftabduktion](/de/uebungen/hueftabduktion/).',
     },
     {
       q: 'Ist Fersenheben im Sitzen oder im Stehen besser?',
@@ -164,7 +164,7 @@ export const EX_CALF_RAISES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du beim Fersenheben ein plötzliches Knallen oder Schnappen in der Wade oder Achillessehne gespürt hast',
       'die Wade geschwollen, gerötet, warm oder hart ist',
@@ -175,7 +175,7 @@ export const EX_CALF_RAISES_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito baut einen Plan, der auf deinem Level beginnt und eine Stufe höher geht, wenn du so weit bist. Die Wadenkette reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig im Stehen, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten.',
+    text: 'Walkito baut einen Plan, der auf deinem Level beginnt und eine Stufe höher geht, wenn du so weit bist. Die Stufenfolge für die Wade reicht vom Fersenheben im Sitzen über das Fersenheben beidbeinig im Stehen, das Halten und das Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten.',
     more: [
       'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Das Wadenziel sind 25\u00A0einbeinige Fersenheben. Wenn du es erreichst, ist die Arbeit nicht vorbei, ein neues Ziel tritt an seine Stelle. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],

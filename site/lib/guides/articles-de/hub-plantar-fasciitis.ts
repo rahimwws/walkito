@@ -22,10 +22,10 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     'Was Plantarfasziitis ist, Symptome und Ursachen, was die Leitlinie von 2023 empfiehlt, wie lange Fersenschmerzen dauern und welche Übungen helfen.',
   h1: 'Plantarfasziitis: Symptome, Ursachen und was laut Studienlage hilft',
   lede:
-    'Plantarfasziitis ist Schmerz unter der Ferse durch Überlastung der Plantarfaszie, des dicken Gewebebands, das vom Fersenbein bis zu den Zehen läuft. Sie ist die häufigste Ursache für Fersenschmerzen unter dem Fuß. Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen ihre beste Bewertung und Krafttraining die zweitbeste, und etwa 90\u00A0% der Menschen geht es mit nicht-operativer Behandlung besser.',
+    'Plantarfasziitis ist Schmerz unter der Ferse durch Überlastung der Plantarfaszie, des dicken Gewebebands, das vom Fersenbein bis zu den Zehen läuft. Sie ist die häufigste Ursache für Fersenschmerzen unter dem Fuß. Die klinische Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen den höchsten Empfehlungsgrad und Krafttraining den zweithöchsten, und etwa 90\u00A0% der Menschen geht es mit konservativer Behandlung besser.',
   takeaways: [
-    'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, A, und Krafttraining ein B (Koc und Kollegen, 2023).',
-    'Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit nicht-operativer Behandlung wie Dehnen, Krafttraining und stützenden Schuhen besser, oft innerhalb einiger Monate (Latt und Kollegen, 2020).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad A und Krafttraining Grad B (Koc und Kollegen, 2023).',
+    'Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit konservativer Behandlung wie Dehnen, Krafttraining und stützenden Schuhen besser, oft innerhalb einiger Monate (Latt und Kollegen, 2020).',
     'Eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein anziehen lässt, war in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen der stärkste unabhängige Risikofaktor, mit einer Odds Ratio von 23,3 (Riddle und Kollegen, 2003).',
     'Fersenschmerzen bei den ersten Schritten am Morgen, die nach ein paar Minuten Gehen nachlassen, sind das typischste Beschwerdemuster (Koc und Kollegen, 2023).',
     'In einer Langzeitbeobachtung von 174\u00A0Patientinnen und Patienten war nach fünf Jahren etwa die Hälfte beschwerdefrei. Von denen, die noch Beschwerden hatten, berichteten die meisten nur von leichten Schmerzen (Hansen und Kollegen, 2018).',
@@ -80,7 +80,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Wie wird Plantarfasziitis diagnostiziert?',
       paragraphs: [
-        'Plantarfasziitis wird meist von einer medizinischen Fachperson anhand deiner Vorgeschichte und einer körperlichen Untersuchung diagnostiziert. Die wichtigsten Befunde sind:',
+        'Plantarfasziitis wird meist von einer Ärztin oder einem Arzt anhand deiner Vorgeschichte und einer körperlichen Untersuchung diagnostiziert. Die wichtigsten Befunde sind:',
         {
           list: [
             'Druckschmerz vorn an der Innenseite der Ferse.',
@@ -97,7 +97,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
           ],
         },
         'Ultraschall und MRT können eine verdickte Faszie zeigen, aber eine verdickte Faszie auf dem Bild ohne das passende Beschwerdemuster ist keine Plantarfasziitis.',
-        'Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis kommen, ist eine medizinische Fachperson der richtige Startpunkt.',
+        'Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis kommen, ist eine ärztliche Abklärung der richtige Startpunkt.',
       ],
       cites: [CITE.guideline],
     },
@@ -105,35 +105,35 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       h2: 'Was hilft bei Plantarfasziitis?',
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit Handtuch die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Die klinische Leitlinie von 2023 bewertet jede Option danach, wie stark die Belege dafür sind. Die stärksten Empfehlungen sind Dehnen, Tapen, manuelle Therapie durch eine Fachperson und Nachtschienen bei anhaltendem Morgenschmerz. Danach kommt Krafttraining. Die Tabelle unten zeigt die wichtigsten Optionen mit ihren Bewertungen.',
-        '**Keine einzelne Option hilft allen.** Die meisten fangen mit Dehnen und stützenden Schuhen an, nehmen Krafttraining dazu, sobald der erste Schmerz abklingt, und sprechen mit einer medizinischen Fachperson über die übrigen Optionen, wenn der Fortschritt stockt.',
+        'Die klinische Leitlinie von 2023 bewertet jede Option danach, wie stark die Belege dafür sind. Die stärksten Empfehlungen sind Dehnen, Tapen, manuelle Therapie in der Physiotherapie und Nachtschienen bei anhaltendem Morgenschmerz. Danach kommt Krafttraining. Die Tabelle unten zeigt die wichtigsten Optionen mit ihren Empfehlungsgraden.',
+        '**Keine einzelne Option hilft allen.** Die meisten fangen mit Dehnen und stützenden Schuhen an, nehmen Krafttraining dazu, sobald der erste Schmerz abklingt, und sprechen mit einer Ärztin oder einem Arzt über die übrigen Optionen, wenn der Fortschritt stockt.',
         'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf. Die Leitlinie rät davon ab, Einlagen allein als kurzfristige Lösung einzusetzen, und davon, therapeutischen Ultraschall zusätzlich zum Dehnen zu nutzen.',
       ],
       table: {
-        caption: 'Bewertungen der Leitlinie von 2023 bei Fersenschmerzen unter dem Fuß',
-        head: ['Option', 'Bewertung', 'Hinweise'],
+        caption: 'Empfehlungsgrade der Leitlinie von 2023 bei Fersenschmerzen unter dem Fuß',
+        head: ['Option', 'Empfehlungsgrad', 'Hinweise'],
         rows: [
-          ['Dehnen von Plantarfaszie und Wade', '**A**', 'Beste Bewertung. Der Kern der konservativen Behandlung.'],
-          ['Manuelle Therapie (Arbeit an Gelenken und Weichteilen)', '**A**', 'Beste Bewertung. Durch eine Fachperson, bei eingeschränkter Beweglichkeit von Gelenken und Gewebe.'],
-          ['Tapen des Fußes (starr oder elastisch)', '**A**', 'Beste Bewertung für kurzfristig weniger Schmerz und bessere Funktion, zusammen mit anderer Behandlung.'],
-          ['Nachtschienen für 1 bis 3\u00A0Monate', '**A**', 'Beste Bewertung bei anhaltendem Morgenschmerz. Siehe [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).'],
-          ['Krafttraining (belastetes Fersenheben)', '**B**', 'Hat die Besserung in einer Studie mit 48\u00A0Personen beschleunigt. Siehe [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).'],
+          ['Dehnen von Plantarfaszie und Wade', '**A**', 'Höchster Empfehlungsgrad. Der Kern der konservativen Behandlung.'],
+          ['Manuelle Therapie (Arbeit an Gelenken und Weichteilen)', '**A**', 'Höchster Empfehlungsgrad. Durch Physiotherapeutinnen oder Physiotherapeuten, bei eingeschränkter Beweglichkeit von Gelenken und Gewebe.'],
+          ['Tapen des Fußes (starr oder elastisch)', '**A**', 'Höchster Empfehlungsgrad für kurzfristig weniger Schmerz und bessere Funktion, zusammen mit anderer Behandlung.'],
+          ['Nachtschienen für 1 bis 3\u00A0Monate', '**A**', 'Höchster Empfehlungsgrad bei anhaltendem Morgenschmerz. Siehe [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).'],
+          ['Krafttraining (belastetes Fersenheben)', '**B**', 'Hat die Besserung in einer Studie mit 48\u00A0Personen beschleunigt. Siehe [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).'],
           ['Low-Level-Lasertherapie', '**B**', 'Behandlung in der Praxis.'],
           ['Dry Needling', '**B**', 'Behandlung in der Praxis.'],
           ['Einlagen in Kombination mit anderer Behandlung', '**C**', 'Schwache Belege. Kann als Teil eines breiteren Programms helfen.'],
-          ['Einlagen allein, kurzfristig', '**B dagegen**', 'Die Leitlinie rät **davon ab**, sich allein darauf zu verlassen.'],
-          ['Therapeutischer Ultraschall zusätzlich zum Dehnen', '**A dagegen**', 'Die Belege sprechen nicht dafür, ihn hinzuzunehmen.'],
+          ['Einlagen allein, kurzfristig', '**Empfehlung dagegen (Grad B)**', 'Die Leitlinie rät **davon ab**, sich allein darauf zu verlassen.'],
+          ['Therapeutischer Ultraschall zusätzlich zum Dehnen', '**Empfehlung dagegen (Grad A)**', 'Die Belege sprechen nicht dafür, ihn hinzuzunehmen.'],
         ],
       },
       sourceNote:
-        'Bewertungen aus Koc und Kollegen, 2023, klinische Leitlinie zu Fersenschmerzen im Journal of Orthopaedic & Sports Physical Therapy.',
+        'Empfehlungsgrade aus Koc und Kollegen, 2023, klinische Leitlinie zu Fersenschmerzen im Journal of Orthopaedic & Sports Physical Therapy.',
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
       h2: 'Wie lange dauert eine Plantarfasziitis?',
       keyFact: 'In einer Kohorte von 174\u00A0Personen war nach fünf Jahren etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach zehn Jahren noch etwas Schmerz, die meisten nur leicht (Hansen und Kollegen, 2018).',
       paragraphs: [
-        'Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit nicht-operativer Behandlung besser geht, oft innerhalb einiger Monate. Eine längere Beobachtung von 174\u00A0Patientinnen und Patienten zeichnet ein genaueres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
+        'Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung besser geht, oft innerhalb einiger Monate. Eine längere Beobachtung von 174\u00A0Patientinnen und Patienten zeichnet ein genaueres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
         'Die Erholung hängt davon ab, wie lange du die Beschwerden schon hast, was du dagegen tust, und von einigen Faktoren, die du nicht beeinflussen kannst. In der Kohorte von Hansen 2018 sagten weibliches Geschlecht und Fersenschmerzen auf beiden Seiten eine langsamere Erholung signifikant voraus. BMI, Alter, Dicke der Faszie und ein Fersensporn taten es nicht.',
         'Die nützliche Frage ist nicht „wie viele Wochen noch“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“ **Dieser Trend ist der eigentliche Meilenstein.** [Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) fasst die Studien zum Zeitverlauf vollständig zusammen.',
       ],
@@ -142,13 +142,13 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Welche Übungen und Dehnungen helfen bei Plantarfasziitis?',
       paragraphs: [
-        'Die Übungen, die die Leitlinie stützt, fallen in zwei Gruppen: Dehnen (Bewertung A) und Krafttraining (Bewertung B). Das Dehnen zielt auf die Plantarfaszie und die Wade. Krafttraining baut die Belastbarkeit der Wade auf, damit sie die Last des Alltags trägt, ohne die Faszie zu überlasten.',
-        '[Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) hat die vollständige Liste mit Startdosis, was du spüren solltest und wann du aufhörst. [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) geht tiefer auf die eine Übung hinter der wichtigsten Krafttraining-Studie ein. Eigene Seiten erklären jede Übung:',
+        'Die Übungen, die die Leitlinie stützt, fallen in zwei Gruppen: Dehnen (Empfehlungsgrad A) und Krafttraining (Empfehlungsgrad B). Das Dehnen zielt auf die Plantarfaszie und die Wade. Krafttraining baut die Belastbarkeit der Wade auf, damit sie die Last des Alltags trägt, ohne die Faszie zu überlasten.',
+        '[Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) hat die vollständige Liste mit Startdosis, was du spüren solltest und wann du aufhörst. [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) geht tiefer auf die eine Übung hinter der wichtigsten Krafttraining-Studie ein. Eigene Seiten erklären jede Übung:',
       ],
       bullets: [
         'Die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) zieht die Zehen zurück und belastet die Faszie sanft, bevor du aufstehst.',
         'Die [Wadendehnung](/de/uebungen/wade-dehnen/) und die [Soleusdehnung](/de/uebungen/soleus-dehnen/) setzen an der verkürzten Wade an, die an der Ferse zieht.',
-        'Das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) ist das belastete Wadenheben aus der Studie von Rathleff.',
+        'Das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) ist das belastete Fersenheben aus der Studie von Rathleff.',
         'Das [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/) beruhigt das Gewebe zwischen den Einheiten.',
       ],
       cites: [CITE.guideline],
@@ -156,9 +156,9 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Warum sind die Morgen am schlimmsten?',
       paragraphs: [
-        'Die Plantarfaszie wird im Schlaf steif und verkürzt sich. In Ruhe zeigt dein Fuß meist nach unten. Wenn du aufstehst und der Fuß sich unter deinem vollen Gewicht abflacht, wird das verkürzte Gewebe plötzlich gedehnt. Das ist das stechende Ziehen bei den ersten Schritten.',
-        'Das Wirksamste, was du tun kannst, passiert, bevor dein Fuß den Boden berührt. Setz dich auf die Bettkante, leg einen Knöchel über das andere Knie und zieh die Zehen sanft etwa 10\u00A0Sekunden zurück, 10-mal pro Fuß. Die Leitlinie gibt dieser Dehnung ihre beste Bewertung.',
-        'Nachtschienen halten den Fuß über Nacht im rechten Winkel, sodass die Faszie sanft gedehnt bleibt. Auch ihnen gibt die Leitlinie ein A, für Menschen, deren Schmerz bei den ersten Schritten trotz Dehnen bleibt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Morgenroutine, Nachtschienen und andere Ursachen mit demselben Muster bei den ersten Schritten.',
+        'Die Plantarfaszie wird im Schlaf steif und verkürzt sich. In Ruhe zeigt dein Fuß meist nach unten. Wenn du aufstehst und der Fuß sich unter deinem vollen Gewicht abflacht, wird das verkürzte Gewebe plötzlich gedehnt. Das ist der stechende Schmerz bei den ersten Schritten.',
+        'Das Wirksamste, was du tun kannst, passiert, bevor dein Fuß den Boden berührt. Setz dich auf die Bettkante, leg einen Knöchel über das andere Knie und zieh die Zehen sanft etwa 10\u00A0Sekunden zurück, 10-mal pro Fuß. Die Leitlinie gibt dieser Dehnung den höchsten Empfehlungsgrad.',
+        'Nachtschienen halten den Fuß über Nacht im rechten Winkel, sodass die Faszie sanft gedehnt bleibt. Auch ihnen gibt die Leitlinie Grad A, für Menschen, deren Schmerz bei den ersten Schritten trotz Dehnen bleibt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt die Morgenroutine, Nachtschienen und andere Ursachen mit demselben Muster bei den ersten Schritten.',
       ],
       cites: [CITE.guideline],
     },
@@ -166,7 +166,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       h2: 'Plantarfasziitis bei der Arbeit und beim Laufen',
       paragraphs: [
         'Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Chance auf Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.',
-        'Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf theoretischen Grundlagen (Bewertung E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.',
+        'Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf theoretischen Grundlagen (Empfehlungsgrad E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.',
       ],
       bullets: [
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe für alle, die bei der Arbeit viel stehen.',
@@ -185,11 +185,11 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
             '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
             '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das Fettpolster sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
             '**Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174\u00A0Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.',
-            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann in Ruhe oder nachts wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
-            '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine medizinische Fachperson sollte das abklären.',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann in Ruhe oder nachts wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
+            '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine Ärztin oder ein Arzt sollte das abklären.',
           ],
         },
-        'Wenn du unsicher bist, kann eine medizinische Fachperson diese Ursachen anhand von Ort, Verhalten und bei Bedarf Bildgebung unterscheiden.',
+        'Wenn du unsicher bist, kann eine Ärztin oder ein Arzt diese Ursachen anhand von Ort, Verhalten und bei Bedarf Bildgebung unterscheiden.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],
     },
@@ -202,8 +202,8 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Alle Ratgeber zur Plantarfasziitis auf dieser Seite',
       bullets: [
-        '[Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) hat die vollständige Übungsliste mit Dosis und Bewertungen der Leitlinie.',
-        '[Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) erklärt das Fersenheben-Protokoll aus der Studie von Rathleff.',
+        '[Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) hat die vollständige Übungsliste mit Dosis und Empfehlungsgraden der Leitlinie.',
+        '[Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) erklärt das Fersenheben-Protokoll aus der Studie von Rathleff.',
         '[Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt Morgenschmerz, Nachtschienen und andere Ursachen mit Schmerz bei den ersten Schritten.',
         '[Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) behandelt den Zeitverlauf, Prognosefaktoren und was du tun kannst, wenn der Fortschritt stockt.',
         '[Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) behandelt Belastungssteuerung und Trainingsanpassungen.',
@@ -219,7 +219,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       q: 'Wie wird man Plantarfasziitis am schnellsten los?',
       cites: [CITE.guideline, CITE.rathleff],
-      a: 'Eine Abkürzung gibt es nicht, aber die Belege sprechen dafür, früh mit Dehnen anzufangen (Bewertung A in der Leitlinie) und Wadenkrafttraining dazuzunehmen (Bewertung B). In einer Studie mit 48\u00A0Personen hat schweres Fersenheben die Besserung in den ersten drei Monaten beschleunigt (Rathleff und Kollegen, 2015). Tägliches Dehnen, stützende Schuhe und den Fuß nicht zu überlasten sind die Grundlagen.',
+      a: 'Eine Abkürzung gibt es nicht, aber die Belege sprechen dafür, früh mit Dehnen anzufangen (Empfehlungsgrad A in der Leitlinie) und Wadenkrafttraining dazuzunehmen (Empfehlungsgrad B). In einer Studie mit 48\u00A0Personen hat schweres Fersenheben die Besserung in den ersten drei Monaten beschleunigt (Rathleff und Kollegen, 2015). Tägliches Dehnen, stützende Schuhe und den Fuß nicht zu überlasten sind die Grundlagen.',
     },
     {
       q: 'Geht Plantarfasziitis von allein weg?',
@@ -248,7 +248,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     },
     {
       q: 'Wann sollte ich mit Fersenschmerzen zum Arzt?',
-      a: 'Geh zu einer medizinischen Fachperson, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er nach mehreren Monaten Dehnen und Wadentraining nicht besser wird. Diese Muster können auf eine andere Ursache hindeuten.',
+      a: 'Lass das zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er nach mehreren Monaten Dehnen und Wadentraining nicht besser wird. Diese Muster können auf eine andere Ursache hindeuten.',
     },
     {
       q: 'Warum habe ich Plantarfasziitis nur an einem Fuß?',
@@ -261,7 +261,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -279,7 +279,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     text: 'Du musst dir nicht selbst überlegen, welche Übungen du machst, in welcher Reihenfolge und wann du steigerst. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Plantarfasziitis ist das erste Ziel ein besserer Morgen: Schmerz bei oder unter 1/10 an 14\u00A0Tagen am Stück.',
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Sobald das Morgenziel erreicht ist, geht es in die Erhaltung über, und das nächste Ziel rückt nach.',
-      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

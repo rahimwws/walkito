@@ -28,7 +28,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
   ],
   takeaways: [
     'Übungen bei Fersensporn wirken, indem sie an der Plantarfaszie am Sporn und an den Wadenmuskeln ansetzen, die über die Achillessehne an der Ferse ziehen, nicht indem sie den Sporn selbst verändern.',
-    'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining ein **B** (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** und Krafttraining Grad **B** (Koc und Kollegen, 2023).',
     'In einer Studie mit 48\u00A0Personen mit Plantarfasziitis linderte schweres Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
     'Eine verkürzte Wade, gemessen als eingeschränkte Dorsalflexion im Sprunggelenk, war in einer gematchten Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen der stärkste unabhängige Risikofaktor für Plantarfasziitis (Riddle und Kollegen, 2003).',
     'Eine systematische Übersichtsarbeit mit Metaanalyse fand, dass sowohl Waden- als auch Plantarfaszien-Dehnung die Schmerzen stärker linderten als kein Dehnen (Siriphorn und Eksakulkla, 2020).',
@@ -49,12 +49,12 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Welche Dehnungen helfen bei Fersensporn-Schmerzen?',
       keyFact: 'Eine systematische Übersichtsarbeit fand, dass sowohl Waden- als auch Plantarfaszien-Dehnung die Schmerzen bei Plantarfasziitis stärker linderten als kein Dehnen (Siriphorn und Eksakulkla, 2020).',
       paragraphs: [
-        'Dehnen ist der Ausgangspunkt. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A**, ihrer besten Bewertung. Eine systematische Übersichtsarbeit mit Metaanalyse zum Dehnen bei Plantarfasziitis fand, dass sowohl Waden- als auch Plantarfaszien-Dehnung die Schmerzen stärker linderten als kein Dehnen (Siriphorn und Eksakulkla, 2020). Fang mit diesen drei an.',
+        'Dehnen ist der Ausgangspunkt. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A**, dem höchsten Empfehlungsgrad. Eine systematische Übersichtsarbeit mit Metaanalyse zum Dehnen bei Plantarfasziitis fand, dass sowohl Waden- als auch Plantarfaszien-Dehnung die Schmerzen stärker linderten als kein Dehnen (Siriphorn und Eksakulkla, 2020). Fang mit diesen drei an.',
       ],
       exercises: [
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen (82 davon ausgewertet) fand diese Dehnung nach 8\u00A0Wochen wirksamer als Wadendehnung allein.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen (82 davon ausgewertet) fand diese Dehnung nach 8\u00A0Wochen wirksamer als Wadendehnung allein.' },
           dose: '10-mal 10\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg einen Knöchel über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Halte, dann lass los. Mach das jeden Morgen vor dem ersten Schritt und nach langem Sitzen.',
           often: 'Jeden Morgen und nach dem Sitzen',
@@ -66,7 +66,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse am Boden, die Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst. Der Gastrocnemius, der größere, oberflächlichere Wadenmuskel, lässt sich nur mit gestrecktem Knie dehnen.',
           often: 'Die meisten Einheiten',
@@ -78,7 +78,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Soleusdehnung (Knie gebeugt)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. Zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Dieselbe Position an der Wand wie bei der Wadendehnung, dann beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus liegt unter dem Gastrocnemius und setzt näher an der Ferse an.',
           often: 'Die meisten Einheiten, nach der Dehnung mit gestrecktem Knie',
@@ -95,14 +95,14 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Welche Kräftigungsübungen helfen bei Fersensporn-Schmerzen?',
       keyFact: 'In einer Studie mit 48\u00A0Personen schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'In den ersten Wochen reicht Dehnen allein oft aus. Sobald der Morgenschmerz nachlässt, baut Wadenkrafttraining die Belastbarkeit auf, die die Kette rund um die Ferse braucht. Die Leitlinie bewertet Krafttraining mit **B**, ihrer zweitbesten Bewertung.',
+        'In den ersten Wochen reicht Dehnen allein oft aus. Sobald der Morgenschmerz nachlässt, baut Wadenkrafttraining die Belastbarkeit auf, die die Kette rund um die Ferse braucht. Die Leitlinie bewertet Krafttraining mit **B**, dem zweithöchsten Empfehlungsgrad.',
         'In der einzigen Studie, die gezielt Fersenheben bei Plantarfasziitis getestet hat, wurden 48\u00A0Personen in eine Gruppe mit belastetem Fersenheben und eine Gruppe nur mit Dehnen aufgeteilt. Die Fersenheben-Gruppe schnitt nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab (Rathleff und Kollegen, 2015).',
         'Fang auf der leichtesten Stufe an und geh erst eine Stufe höher, wenn sie sich zwei Einheiten hintereinander leicht angefühlt hat. Die Steigerung unten reicht von der Übung im Sitzen bis zum belasteten Fersenheben mit Handtuch aus der Studie.',
       ],
       exercises: [
         {
           name: 'Fersenheben im Sitzen',
-          evidence: { level: 'moderate', why: 'Die Bewertung B gilt für Krafttraining allgemein. Diese Einstiegsstufe mit wenig Last wurde nicht einzeln getestet.' },
+          evidence: { level: 'moderate', why: 'Der Empfehlungsgrad B gilt für Krafttraining allgemein. Diese Einstiegsstufe mit wenig Last wurde nicht einzeln getestet.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
           how: 'Setz dich hin, die Füße stehen flach auf dem Boden. Drück dich über die Fußballen beider Füße nach oben. Hände auf den Knien geben sanften Widerstand. So fängst du mit der geringsten Last an, die Wade zu trainieren.',
           often: 'Krafttage',
@@ -114,7 +114,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Fersenheben beidbeinig',
-          evidence: { level: 'moderate', why: 'Bewertung B in der Leitlinie. Eine Zwischenstufe auf dem Weg zum belasteten Training auf einem Bein.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B in der Leitlinie. Eine Zwischenstufe auf dem Weg zum belasteten Training auf einem Bein.' },
           dose: '3\u00A0Sätze à 10, beide Füße',
           how: 'Stell dich auf beide Füße, komm gerade über die großen Zehen hoch und senk dich langsam ab. Beide Füße teilen sich die Last. Halt dich zum Gleichgewicht an einer Wand oder einem Geländer fest.',
           often: 'Krafttage, sobald sich das Fersenheben im Sitzen zwei Einheiten lang leicht angefühlt hat',
@@ -126,7 +126,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Fersenheben mit Halten (isometrisch)',
-          evidence: { level: 'moderate', why: 'Bewertung B in der Leitlinie. Isometrisches Halten in der Endposition. In keiner eigenen Studie zur Plantarfasziitis getestet.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B in der Leitlinie. Isometrisches Halten in der Endposition. In keiner eigenen Studie zur Plantarfasziitis getestet.' },
           dose: '3-mal 20\u00A0Sekunden halten, beide Füße',
           how: 'Komm auf beiden Füßen auf die Zehen und bleib oben ruhig. Sink nicht wieder ab. Das Halten belastet die Sehne ohne das Federn einer vollen Wiederholung.',
           often: 'Krafttage, die Stufe nach dem beidbeinigen Fersenheben',
@@ -138,7 +138,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Fersenheben mit Handtuch (einbeinig)',
-          evidence: { level: 'strong', why: 'Die Übung aus der randomisierten Studie von Rathleff 2015. Bewertung B in der Leitlinie.' },
+          evidence: { level: 'strong', why: 'Die Übung aus der randomisierten Studie von Rathleff 2015. Empfehlungsgrad B in der Leitlinie.' },
           dose: 'Studienprotokoll: 3\u00A0Sätze mit 12RM, gesteigert auf 5\u00A0Sätze mit 8RM. Walkito beginnt mit 3\u00A0Sätzen à 12, jedes Bein',
           how: 'Stell dich mit einem Fuß auf die Kante einer Stufe, ein zusammengerolltes Handtuch liegt unter allen fünf Zehen. Drei Sekunden hoch, zwei Sekunden halten, drei Sekunden runter. Das Handtuch aktiviert den Windlass-Mechanismus und belastet so die Plantarfaszie zusammen mit der Wade. Nimm mit einem Rucksack Gewicht dazu, wenn die letzte Wiederholung nicht mehr schwer ist.',
           often: 'In der Studie jeden zweiten Tag. Walkito plant es an Krafttagen ein, nie zwei hintereinander.',
@@ -169,7 +169,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       },
       after: [
         'Mach die Plantarfaszien-Dehnung und die Wadendehnungen auf jeder Stufe. Dehnen lässt du nicht weg, wenn du mit dem Kräftigen anfängst. Die Leitlinie bewertet beides unabhängig voneinander.',
-        'Mehr Details zum Fersenheben mit Handtuch und der Forschung dahinter findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
+        'Mehr Details zum Fersenheben mit Handtuch und der Forschung dahinter findest du unter [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
@@ -224,7 +224,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         'Dehnen soll sich wie ein Ziehen anfühlen, nicht wie ein Stechen. Eine Wadendehnung mit angenehmer Spannung in der oberen oder unteren Wade sitzt richtig. Eine Plantarfaszien-Dehnung, die sanft entlang des Gewölbes zieht, sitzt richtig. Wenn das Dehnen den stechenden Schmerz der ersten Schritte auslöst, nimm Spannung raus.',
         'Fersenheben soll sich wie Wadenarbeit anfühlen. Die Variante mit Handtuch bringt zusätzlich einen Zug unter dem Gewölbe, das ist die Belastung der Faszie. Dieser Zug ist erwünscht und der Sinn des Handtuchs.',
         'Hör für heute auf, wenn der Schmerz bei einer Übung **6/10 oder mehr** erreicht oder deine ersten Schritte am nächsten Morgen deutlich schlimmer sind als sonst. Nach dieser Regel, aufhören und eine Stufe zurück, arbeitet auch die App.',
-        'Leichter Muskelkater, der innerhalb eines Tages abklingt, ist normal, vor allem in den ersten zwei Wochen. Schmerz, der tagelang erhöht bleibt oder von Woche zu Woche schlimmer wird, ist ein Grund, eine Stufe zurückzugehen oder zu einer medizinischen Fachperson zu gehen.',
+        'Leichter Muskelkater, der innerhalb eines Tages abklingt, ist normal, vor allem in den ersten zwei Wochen. Schmerz, der tagelang erhöht bleibt oder von Woche zu Woche schlimmer wird, ist ein Grund, eine Stufe zurückzugehen oder zum Arzt oder zur Ärztin zu gehen.',
       ],
       cites: [CITE.guideline],
     },
@@ -232,7 +232,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Wie lange dauert es, bis Fersensporn-Schmerzen mit Übungen besser werden?',
       paragraphs: [
         'Es gibt keine Studie, die Übungsergebnisse speziell bei Menschen mit Fersensporn misst. Die Zeiträume unten stammen aus Studien zur Plantarfasziitis, der Erkrankung, die in den meisten Fällen den Schmerz rund um den Sporn verursacht.',
-        'Eine Übersicht über die klinischen Belege berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit nicht-operativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In der Studie von Rathleff 2015 lag die Gruppe mit belastetem Fersenheben nach drei Monaten signifikant vor der Gruppe, die nur dehnte.',
+        'Eine Übersicht über die klinischen Belege berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit konservativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In der Studie von Rathleff 2015 lag die Gruppe mit belastetem Fersenheben nach drei Monaten signifikant vor der Gruppe, die nur dehnte.',
         'Kein Übungsprogramm kann einem einzelnen Menschen einen Zeitrahmen versprechen. **Was du messen kannst, ist, ob sich etwas verändert**:',
         {
           list: [
@@ -258,7 +258,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     {
       q: 'Welche Übungen helfen bei Fersensporn?',
       cites: [CITE.guideline],
-      a: 'Bei Fersensporn-Schmerzen helfen dieselben Übungen, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt: Plantarfaszien-Dehnung (Bewertung A in der Leitlinie), Wadendehnung (Bewertung A) und schrittweises Wadenkrafttraining mit Fersenheben (Bewertung B). Sie zielen auf die Plantarfaszie am Sporn und die Wadenmuskeln, die über die Achillessehne an der Ferse ziehen. Diese Weichteile verursachen meist den Schmerz.',
+      a: 'Bei Fersensporn-Schmerzen helfen dieselben Übungen, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt: Plantarfaszien-Dehnung (Empfehlungsgrad A in der Leitlinie), Wadendehnung (Empfehlungsgrad A) und schrittweises Wadenkrafttraining mit Fersenheben (Empfehlungsgrad B). Sie zielen auf die Plantarfaszie am Sporn und die Wadenmuskeln, die über die Achillessehne an der Ferse ziehen. Diese Weichteile verursachen meist den Schmerz.',
     },
     {
       q: 'Lösen Übungen den Fersensporn auf?',
@@ -272,12 +272,12 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     {
       q: 'Wie lange dauert es, bis Fersensporn-Schmerzen weggehen?',
       cites: [CITE.latt, CITE.rathleff],
-      a: 'Die meisten Zeitangaben stammen aus Studien zur Plantarfasziitis, weil meist die gereizte Faszie wehtut. Eine Übersichtsarbeit berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit nicht-operativer Behandlung besser geht, oft innerhalb einiger Monate (Latt 2020). In einer Studie mit 48\u00A0Personen lag belastetes Fersenheben nach drei Monaten vor Dehnen allein (Rathleff 2015). Kein Programm kann einem einzelnen Menschen einen Zeitrahmen versprechen.',
+      a: 'Die meisten Zeitangaben stammen aus Studien zur Plantarfasziitis, weil meist die gereizte Faszie wehtut. Eine Übersichtsarbeit berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit konservativer Behandlung besser geht, oft innerhalb einiger Monate (Latt 2020). In einer Studie mit 48\u00A0Personen lag belastetes Fersenheben nach drei Monaten vor Dehnen allein (Rathleff 2015). Kein Programm kann einem einzelnen Menschen einen Zeitrahmen versprechen.',
     },
     {
       q: 'Sollte ich mit Fersensporn auf Sport verzichten?',
       cites: [CITE.guideline],
-      a: 'Nicht unbedingt. Die Leitlinie empfiehlt Übungen als Teil des Vorgehens, nicht Schonung allein. Lass eine bestimmte Übung für heute weg, wenn der Schmerz 6 von 10 oder mehr erreicht oder der nächste Morgen deutlich schlimmer ist. Geh eine Stufe zurück, statt ganz aufzuhören. Wenn der Schmerz trotz Anpassung von Woche zu Woche schlimmer wird, geh zu einer medizinischen Fachperson.',
+      a: 'Nicht unbedingt. Die Leitlinie empfiehlt Übungen als Teil des Vorgehens, nicht Schonung allein. Lass eine bestimmte Übung für heute weg, wenn der Schmerz 6 von 10 oder mehr erreicht oder der nächste Morgen deutlich schlimmer ist. Geh eine Stufe zurück, statt ganz aufzuhören. Wenn der Schmerz trotz Anpassung von Woche zu Woche schlimmer wird, geh zum Arzt oder zur Ärztin.',
     },
     {
       q: 'Ist Gehen gut bei Fersensporn?',
@@ -296,7 +296,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -311,9 +311,9 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Du musst dir Stufen, Sätze und den Zeitpunkt zum Steigern nicht merken. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Fersenschmerzen ist das erste Ziel ein Morgenschmerz bei oder unter 1/10 an 14\u00A0Tagen am Stück. Das Dehnen beginnt am ersten Tag. Die Wadenkette, vom Fersenheben im Sitzen bis zum belasteten Fersenheben mit Handtuch, geht in deinem Tempo voran.',
+    text: 'Du musst dir Stufen, Sätze und den Zeitpunkt zum Steigern nicht merken. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Fersenschmerzen ist das erste Ziel ein Morgenschmerz bei oder unter 1/10 an 14\u00A0Tagen am Stück. Das Dehnen beginnt am ersten Tag. Die Stufenfolge für die Wade, vom Fersenheben im Sitzen bis zum belasteten Fersenheben mit Handtuch, geht in deinem Tempo voran.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Morgenziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (alle 28, sobald das Morgenziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

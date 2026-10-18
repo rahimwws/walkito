@@ -149,7 +149,7 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito acrescenta a abdução de quadril nos dias de força quando uma meta de equilíbrio entre esquerda e direita entra no seu plano. Ela fica junto com os exercícios intrínsecos do pé e o trabalho de panturrilha, para o arco receber apoio de cima e de baixo. As sessões são de 3, 5 ou 10\u00A0minutos, e um teste a cada 14\u00A0dias acompanha o progresso.',
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

@@ -75,14 +75,14 @@ export const ACHILLES_PT: Guide = {
     {
       h2: 'Quais exercícios ajudam na tendinite de Aquiles, e quanto fazer?',
       paragraphs: [
-        'Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentado e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](/pt/sobre-walkito/).',
+        'Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentada e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](/pt/sobre-walkito/).',
         'Na dor de Aquiles insercional, todo exercício que usa degrau deve ser feito no nível do chão. Essa adaptação está explicada na seção sobre dor insercional, mais abaixo.',
       ],
       table: {
         caption: 'Exercícios para tendinite de Aquiles: doses da pesquisa e doses iniciais do Walkito',
         head: ['Exercício', 'Dose do protocolo da pesquisa', 'Dose inicial do Walkito', 'Evidência'],
         rows: [
-          ['Elevação de calcanhar sentado', 'Silbernagel, fase 1: 3 x 10, sentado', '3 x 10, os dois pés', '**Forte**: igual ao protocolo publicado da fase 1'],
+          ['Elevação de calcanhar sentada', 'Silbernagel, fase 1: 3 x 10, sentado', '3 x 10, os dois pés', '**Forte**: igual ao protocolo publicado da fase 1'],
           ['Elevação de calcanhar com os dois pés', 'Silbernagel, fase 1: 3 x 10-15, em pé', '3 x 10, os dois pés', '**Forte**: correspondência direta com a fase 1'],
           ['Elevação de calcanhar sustentada (isométrica)', 'A diretriz de 2024 cita o isométrico como eficaz; na prática se sugere 3-5 x 30-45\u00A0s', '3 x 20\u00A0s, os dois pés', '**Moderada**: a diretriz inclui a carga isométrica; não há ensaio randomizado só de isométrico no Aquiles'],
           ['Descida excêntrica do calcanhar (joelho esticado)', 'Alfredson: 3 x 15, 2x/dia, 7\u00A0dias/semana, três meses', '3 x 10, cada perna', '**Forte**: o protocolo original; grau A na diretriz'],
@@ -92,7 +92,7 @@ export const ACHILLES_PT: Guide = {
       },
       exercises: [
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: { level: 'strong', why: 'Igual à dose da fase 1 de Silbernagel 2007. O grau A da diretriz cobre todos os tipos de carga no tendão.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. Um jeito de começar com pouca carga quando o trabalho em pé dói demais.',
@@ -100,7 +100,7 @@ export const ACHILLES_PT: Guide = {
           feel: 'Trabalho nas panturrilhas, quase sem alongar o tendão',
           stop: 'Dor acima de 5/10 que não passa até a manhã seguinte',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba pela parte da frente dos pés, as mãos dão carga',
+          caption: 'Elevação de calcanhar sentada: suba pela parte da frente dos pés, as mãos dão carga',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
         {
@@ -108,7 +108,7 @@ export const ACHILLES_PT: Guide = {
           evidence: { level: 'strong', why: 'Correspondência direta com a fase 1 de Silbernagel 2007. Grau A na diretriz.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar em três segundos. Os dois pés dividem a carga.',
-          often: 'Dias de força, quando a elevação sentado parecer fácil',
+          often: 'Dias de força, quando a elevação sentada parecer fácil',
           feel: 'As panturrilhas trabalhando juntas, com um leve puxão no tendão',
           stop: 'Dor acima de 5/10 que não passa até a manhã seguinte',
           media: 'heel_raise_double',
@@ -291,8 +291,8 @@ export const ACHILLES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
+    h2: 'Como transformar isso em um plano',
+    text: 'Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da panturrilha for alcançada), um teste mede a resistência da panturrilha e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico. Se a dor é bem no ponto onde o tendão se prende no osso do calcanhar, peça para um profissional de saúde avaliar antes de aumentar muito a carga.',
     ],

@@ -230,7 +230,7 @@ export const PTTD_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito incluye inversión con banda, pie corto y elevaciones de talón en su biblioteca de ejercicios, y los programa en días de fuerza como parte de un plan de arco y equilibrio. Cuando marcas la cara interna del tobillo o el arco en el mapa de dolor durante un check-in, la sesión se ajusta en torno a esa información. La app está construida para la fascitis plantar y el pie plano. La DTTP se superpone con los dos, pero la app no diagnostica DTTP y no reemplaza las ortesis ni la clasificación clínica.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, la sujeción del arco y el equilibrio, para que veas qué está cambiando. Si te han diagnosticado DTTP, usa la app junto con ortesis y confirma con tu profesional de la salud que la etapa es adecuada para el ejercicio.',

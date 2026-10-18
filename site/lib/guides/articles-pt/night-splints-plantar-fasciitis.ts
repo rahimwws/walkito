@@ -254,7 +254,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'A tala trabalha durante a noite. O exercício acontece durante o dia. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor nos primeiros passos de no máximo 1 em 10 por 14\u00A0dias seguidos. Alongamentos como estes estão no plano desde a primeira semana, e o fortalecimento da panturrilha avança no seu ritmo.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da manhã for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico, não fornece talas e não substitui um profissional de saúde.',

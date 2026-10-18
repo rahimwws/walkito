@@ -173,7 +173,7 @@ export const TOP_OF_FOOT_FR: Guide = {
     },
     {
       q: 'L’exercice aide-t-il une douleur sur le dessus du pied\u00A0?',
-      a: 'Aucun essai n’a testé l’exercice spécifiquement pour la douleur du dessus du pied. L’exercice peut agir sur des facteurs favorisants\u00A0: renforcer le tibial antérieur réduit la charge sur les petits tendons extenseurs, et étirer le mollet améliore la mobilité de la cheville. Mais pour une fracture de fatigue, la goutte ou un problème nerveux, l’exercice est soit inefficace, soit contre-productif. C’est la cause qui décide si l’exercice a du sens.',
+      a: 'Aucun essai n’a testé l’exercice spécifiquement pour la douleur du dessus du pied. L’exercice peut agir sur des facteurs favorisants\u00A0: renforcer le tibial antérieur réduit la charge sur les petits tendons extenseurs, et étirer le mollet améliore la mobilité de la cheville. Mais pour une fracture de fatigue, la goutte ou un problème nerveux, l’exercice est soit inefficace, soit contre-productif. C’est la cause qui détermine si l’exercice est pertinent.',
     },
     {
       q: 'Quels sont les symptômes d’une tendinite des extenseurs\u00A0?',

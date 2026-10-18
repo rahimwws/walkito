@@ -52,7 +52,7 @@ export const STANDING_IT: Guide = {
       h2: 'Quali esercizi aiutano i piedi che fanno male a stare in piedi?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio una A, il suo grado più alto, e al lavoro di resistenza e di forza una B (Koc e colleghi, 2023).',
       paragraphs: [
-        'Questi esercizi lavorano sul polpaccio, sulla fascia plantare e sui piccoli muscoli che sostengono l’arco. Sono le dosi di partenza di Walkito, non una prescrizione. Se il dolore è vicino al tallone e segue lo schema del dolore mattutino tipico della fascite plantare, l’elenco più completo è in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/). [Come sono scritte queste guide](/it/chi-siamo/).',
+        'Questi esercizi lavorano sul polpaccio, sulla fascia plantare e sui piccoli muscoli che sostengono l’arco. Sono le dosi di partenza di Walkito, non una prescrizione. Se il dolore è vicino al tallone e ha l’andamento del dolore mattutino tipico della fascite plantare, l’elenco più completo è in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/). [Come sono scritte queste guide](/it/chi-siamo/).',
         'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio il suo grado più alto, A. Al lavoro di resistenza e di forza dà una B. Entrambi i gradi riguardano la fascite plantare in particolare, non la stanchezza generica da stazione eretta, ma i tessuti coinvolti sono gli stessi. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi.',
       ],
       table: {
@@ -179,7 +179,7 @@ export const STANDING_IT: Guide = {
     {
       h2: 'Plantari o scarpe di sostegno aiutano i piedi che fanno male a stare in piedi?',
       paragraphs: [
-        'Scarpe di sostegno e plantari sono consigliati spesso per il dolore ai piedi da stazione eretta, e c’è qualche base, ma le prove sono più scarse rispetto allo stretching e al lavoro di forza. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una **B contro** per il sollievo dal dolore a breve termine, cioè le prove fanno propendere per non usarli come unica soluzione. I plantari insieme ad altre cure prendono una **C**.',
+        'Scarpe di sostegno e plantari sono consigliati spesso per il dolore ai piedi da stazione eretta, e c’è qualche base, ma le prove sono più scarse rispetto allo stretching e al lavoro di forza. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una **B a sfavore** per il sollievo dal dolore a breve termine, cioè le prove fanno propendere per non usarli come unica soluzione. I plantari insieme ad altre cure prendono una **C**.',
         'Quello che la revisione di medicina del lavoro sostiene è più ampio: tappetini, scarpe di sostegno e la possibilità di alternare seduto e in piedi compaiono tutti tra gli interventi con qualche prova di ridurre il fastidio nel lavoro in piedi. Nessuno di questi ha dietro un singolo grande studio come ce l’ha l’allungamento del polpaccio. Un approccio ragionevole è usare scarpe di sostegno e un tappetino se il pavimento è duro, e fare lo stretching e il lavoro di forza per i tessuti stessi.',
       ],
       cites: [CITE.guideline, CITE.waters],
@@ -198,8 +198,8 @@ export const STANDING_IT: Guide = {
     {
       h2: 'Il dolore ai piedi da stazione eretta può essere fascite plantare, piede piatto o altro?',
       paragraphs: [
-        'Il dolore ai piedi da stazione eretta può essere una stanchezza generica che passa con il riposo, oppure l’inizio di un problema con un nome preciso. Il più comune è la fascite plantare: dolore acuto vicino al tallone, di solito peggiore ai primi passi dopo il riposo. Se il tallone fa più male la mattina e di nuovo dopo che sei stato seduto, quello schema fa pensare alla fascite plantare, e gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa.',
-        'Se a fine giornata senti gli archi piatti o ceduti verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un piede piatto rigido, che resta piatto anche quando il piede è sollevato da terra, è strutturale e va visto da un professionista sanitario più che trattato con gli esercizi.',
+        'Il dolore ai piedi da stazione eretta può essere una stanchezza generica che passa con il riposo, oppure l’inizio di un problema con un nome preciso. Il più comune è la fascite plantare: dolore acuto vicino al tallone, di solito peggiore ai primi passi dopo il riposo. Se il tallone fa più male la mattina e di nuovo dopo che sei stato seduto, quel quadro fa pensare alla fascite plantare, e gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa.',
+        'Se a fine giornata senti l’arco plantare piatto o ceduto verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un piede piatto rigido, che resta piatto anche quando il piede è sollevato da terra, è strutturale e va visto da un professionista sanitario più che trattato con gli esercizi.',
         'Se il dolore è lungo lo stinco e non sotto il piede, fa pensare alla periostite tibiale, e [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) spiega cosa dice la ricerca.',
         'Il dolore dietro il tallone, nel tendine d’Achille, è un problema diverso. Il dolore sul lato interno della caviglia può venire dal tendine tibiale posteriore. Entrambi sono trattati dal punto di vista di chi corre in [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese). Se il dolore è dietro il tallone nel tendine d’Achille, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/); se vuoi più dettagli proprio sull’esercizio dei sollevamenti sulle punte, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
         '**Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricare il piede con gli esercizi.**',
@@ -260,14 +260,14 @@ export const STANDING_IT: Guide = {
       'il tallone o il piede è arrossato, o hai la febbre o non ti senti bene',
       'ti sveglia di notte',
       'è acuto, o peggiora anche se hai ridotto il carico',
-      'il dolore è concentrato in un solo punto preciso e peggiora con l’attività, che può essere lo schema di una frattura da stress più che di stanchezza da stazione eretta',
+      'il dolore è concentrato in un solo punto preciso e peggiora con l’attività, che può essere il segno di una frattura da stress più che di stanchezza da stazione eretta',
       'una gamba o un piede si è gonfiato all’improvviso ed è dolorante, arrossato o caldo',
       'hai il diabete, meno sensibilità ai piedi o una cattiva circolazione',
       'il dolore non si è calmato dopo diverse settimane di meno carico, scarpe migliori e gli esercizi di questa pagina',
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Non devi capire da solo l’ordine, le dosi o quando passare a una versione più dura. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il dolore ai piedi da stazione eretta è peggiore la mattina, il primo obiettivo è lo stesso del dolore al tallone: dolore mattutino a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila. Se hai anche il piede piatto, l’arco ha il suo obiettivo e i suoi esercizi.`,
     more: [
       `Scegli ${DAYS}\u00A0giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta dando risultati.`,

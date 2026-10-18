@@ -219,7 +219,7 @@ export const PF_DURATION_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'La recuperación toma tiempo, y lo más difícil es saber si ese tiempo está sirviendo de algo. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante 14\u00A0días seguidos. Cada mañana anotas tu dolor, y cada 14\u00A0días una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver cómo se mueven los números.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cuando alcanzas la meta de la mañana, pasa a mantenimiento y la siguiente meta ocupa su lugar. No hay fecha de fin, porque el pie marca el ritmo.',

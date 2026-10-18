@@ -228,7 +228,7 @@ export const PF_DURATION_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'A recuperação leva tempo, e a parte mais difícil é saber se esse tempo está servindo para alguma coisa. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos. Toda manhã você anota a sua dor, e a cada 14\u00A0dias um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver os números mudando.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Quando a meta da manhã é alcançada, ela passa para manutenção e a próxima meta entra no lugar. Não há data fixa para acabar, porque quem dita o ritmo é o pé.',

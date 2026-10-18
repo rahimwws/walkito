@@ -252,7 +252,7 @@ export const NURSES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
       'Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor nos pés segue o padrão de dor matinal da fascite plantar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos.',
     more: [

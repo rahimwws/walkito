@@ -101,7 +101,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
       ],
       exercises: [
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: { level: 'moderate', why: 'O grau B da diretriz vale para o treino de força em geral. Este primeiro degrau, com pouca carga, não foi testado sozinho.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Sente-se com os pés apoiados no chão. Suba os calcanhares empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão uma resistência leve. É o jeito com menos carga de começar a trabalhar a panturrilha.',
@@ -109,7 +109,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           feel: 'Trabalho na parte baixa da panturrilha (o sóleo), quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: suba empurrando pela parte da frente dos pés',
+          caption: 'Elevação de calcanhar sentada: suba empurrando pela parte da frente dos pés',
           alt: 'Uma figura sentada levantando os dois calcanhares, com as panturrilhas destacadas',
         },
         {
@@ -117,7 +117,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Um degrau intermediário antes do trabalho com carga em uma perna.' },
           dose: '3\u00A0séries de 10, os dois pés',
           how: 'Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga. Apoie-se numa parede ou num corrimão para manter o equilíbrio.',
-          often: 'Dias de força, quando a elevação sentado parecer fácil por duas sessões',
+          often: 'Dias de força, quando a elevação sentada parecer fácil por duas sessões',
           feel: 'As panturrilhas trabalhando juntas',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_double',
@@ -128,7 +128,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
           name: 'Elevação de calcanhar sustentada (isométrica)',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Sustentação isométrica no fim do movimento. Não foi testada em um ensaio isolado de fascite plantar.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o impulso de uma repetição completa.',
           often: 'Dias de força, o degrau depois da elevação com os dois pés',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
@@ -161,7 +161,7 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
         head: ['Nível', 'Exercício', 'Quando subir'],
         rows: [
           ['1', 'Só o alongamento da fáscia plantar e os alongamentos de panturrilha', 'A dor da manhã está diminuindo e você quer acrescentar treino de força'],
-          ['2', 'Elevação de calcanhar sentado (3 x 10)', 'Fácil por duas sessões seguidas'],
+          ['2', 'Elevação de calcanhar sentada (3 x 10)', 'Fácil por duas sessões seguidas'],
           ['3', 'Elevação de calcanhar com os dois pés (3 x 10)', 'Fácil por duas sessões seguidas'],
           ['4', 'Elevação de calcanhar sustentada (3 x 20\u00A0segundos)', 'Fácil por duas sessões seguidas'],
           ['5', 'Elevação de calcanhar com toalha, em uma perna (3 x 12)', 'Aumente a carga com uma mochila quando o peso do corpo ficar fácil'],
@@ -310,8 +310,8 @@ export const HEEL_SPUR_EXERCISES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'Você não precisa controlar os níveis, as séries nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos. O alongamento começa no primeiro dia. A sequência da panturrilha, da elevação sentado até a elevação com toalha e carga, avança no seu ritmo.',
+    h2: 'Como transformar isso em um plano',
+    text: 'Você não precisa controlar os níveis, as séries nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos. O alongamento começa no primeiro dia. A sequência da panturrilha, da elevação sentada até a elevação com toalha e carga, avança no seu ritmo.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando a meta da manhã for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],

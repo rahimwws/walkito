@@ -274,13 +274,13 @@ export const BAREFOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito é um programa de exercícios para dor no calcanhar, no pé e na perna. Ele inclui o exercício de pé curto, abrir os dedos, a elevação de calcanhar e o trabalho de equilíbrio desta página e os torna mais exigentes conforme ficam mais fáceis. Ele não escolhe os seus calçados e não faz diagnóstico. Um pé e uma panturrilha mais fortes são uma base sensata, seja qual for o calçado que você acabe usando.',
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no início (a cada 28 quando você alcança uma meta), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é para adultos e não substitui um profissional de saúde.',
     ],
     cta: 'Comece com uma sessão curta e veja como os seus pés respondem.',
   },
-  crumb: 'Calçados barefoot',
+  crumb: 'Calçados minimalistas (barefoot)',
   campaign: 'guide-barefoot-pt',
 };

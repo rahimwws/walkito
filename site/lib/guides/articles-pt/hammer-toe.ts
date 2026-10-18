@@ -108,7 +108,7 @@ export const HAMMER_TOE_PT: Guide = {
           alt: 'Um pé com os cinco dedos bem afastados',
         },
         {
-          name: 'Elevação do dedão (ioga dos dedos)',
+          name: 'Elevação do dedão',
           dose: 'O Walkito começa com 3\u00A0séries de 8, segurando 5\u00A0segundos, cada pé',
           how: 'Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Depois inverta: pressione o dedão para baixo e levante os outros quatro. Isso treina o controle independente dos dedos, que muitas vezes se perde em quem tem dedo em martelo.',
           feel: 'Dificuldade de coordenar no começo, depois controle aos poucos',
@@ -219,7 +219,7 @@ export const HAMMER_TOE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
       'O Walkito inclui [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de trabalhar os dedos, as sessões de 3 ou 5\u00A0minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.',
     more: [

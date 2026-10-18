@@ -145,7 +145,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o balanço do tornozelo nos dias de mobilidade, junto com os alongamentos de panturrilha e do sóleo. Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos.',
     more: [
       'Um centímetro de melhora no teste do joelho na parede em algumas semanas é significativo. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

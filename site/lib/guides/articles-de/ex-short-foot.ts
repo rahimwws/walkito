@@ -167,7 +167,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'dein Gewölbeschmerz nach einer plötzlichen Verletzung oder einem Knall angefangen hat, was auf einen Riss der Plantarfaszie hindeuten kann',
       'du Taubheit, Kribbeln oder Brennen im Fuß hast, was auf eine Beteiligung der Nerven hindeuten kann',

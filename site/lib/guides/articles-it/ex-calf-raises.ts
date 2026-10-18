@@ -176,7 +176,7 @@ export const EX_CALF_RAISES_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano che parte dal tuo livello e sale quando sei pronto. La progressione per il polpaccio va dai sollevamenti da seduto a quelli in piedi su due piedi, poi alla tenuta, al sollevamento con asciugamano, alle discese eccentriche del tallone e ai saltelli sulle punte. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. L’obiettivo per il polpaccio è di 25\u00A0sollevamenti su una gamba. Raggiungerlo non chiude il lavoro: al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',

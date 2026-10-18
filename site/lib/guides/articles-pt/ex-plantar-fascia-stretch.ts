@@ -146,7 +146,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito coloca o alongamento da fáscia plantar na maioria das sessões e lembra você de fazê-lo antes do primeiro passo de toda manhã. Você não precisa lembrar do horário nem da contagem. O app monta um plano uma semana de cada vez, começando com alongamento e acrescentando trabalho de força quando a dor acalma.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

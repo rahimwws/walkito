@@ -56,7 +56,7 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
             '**Du côté intérieur du genou, chez une personne âgée.** Cette douleur est plus souvent liée à l’arthrose, les changements d’une articulation liés à l’usure. L’étude de Framingham a constaté que les lésions du cartilage du côté intérieur du genou étaient plus fréquentes avec les pieds les plus plats, ce qui va dans ce sens. Mais l’étude ne montre qu’un lien à un moment donné.',
           ],
         },
-        'Un genou qui gonfle après une torsion, qui se bloque ou qui se dérobe, c’est une autre histoire. Cela oriente vers le ménisque (le coussin de cartilage à l’intérieur du genou) ou un ligament, et demande un professionnel de santé.',
+        'Un genou qui gonfle après une torsion, qui se bloque ou qui se dérobe, c’est une autre histoire. Cela oriente vers le ménisque (le coussin de cartilage à l’intérieur du genou) ou un ligament, et relève d’un professionnel de santé.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
     },

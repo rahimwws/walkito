@@ -134,7 +134,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'ein Zehengelenk gerötet, geschwollen oder heiß ist',
       'du Taubheit oder Kribbeln in den Zehen hast',

@@ -42,7 +42,7 @@ export const HOME_IT: HomeCopy = {
     },
     flat: {
       title: 'Piede piatto',
-      text: 'Archi stanchi e doloranti, e piedi che cedono verso l’interno.',
+      text: 'Arco plantare stanco e dolorante, e piedi che cedono verso l’interno.',
       goal: `Obiettivo: tenere l’arco per ${archHoldSeconds}\u00A0secondi`,
     },
     allday: {

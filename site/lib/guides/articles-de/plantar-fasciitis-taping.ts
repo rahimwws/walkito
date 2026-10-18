@@ -12,12 +12,12 @@ export const PF_TAPING_DE: Guide = {
     'Plantarfasziitis tapen: was Studien zu Low-Dye- und Kinesio-Tape zeigen, wie du es anlegst, wie lange du es trägst, Nebenwirkungen und wann du aufhörst.',
   h1: 'Tapen bei Plantarfasziitis: was es bringt, wie du es anlegst und wann du aufhörst',
   lede:
-    'Tape kann die Schmerzen bei Plantarfasziitis für kurze Zeit lindern. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Tapen des Fußes ihre beste Bewertung, A, aber nur für kurzfristige Linderung und nur zusammen mit anderen Maßnahmen wie Dehnen. Die meisten Studien liefen ein paar Tage bis eine Woche. Nutz Tape, um eine schmerzhafte Phase zu überbrücken, und lass die Übungen die längerfristige Arbeit machen.',
+    'Tape kann die Schmerzen bei Plantarfasziitis für kurze Zeit lindern. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Tapen des Fußes den höchsten Empfehlungsgrad A aber nur für kurzfristige Linderung und nur zusammen mit anderen Maßnahmen wie Dehnen. Die meisten Studien liefen ein paar Tage bis eine Woche. Nutz Tape, um eine schmerzhafte Phase zu überbrücken, und lass die Übungen die längerfristige Arbeit machen.',
   intro: [
     'Plantarfasziitis ist eine Reizung der Plantarfaszie, des kräftigen Gewebebands, das von der Ferse bis zu den Zehen verläuft. Tape ist günstig, und du kannst lernen, es selbst anzulegen. Diese Seite zeigt, was die Studien gefunden haben, welche zwei Arten von Tape es gibt, wie du beide anlegst und wann du aufhörst. Den kompletten Ratgeber zum Krankheitsbild findest du unter [Plantarfasziitis](/de/plantarfasziitis/).',
   ],
   takeaways: [
-    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Tapen des Fußes mit **A**, ihrer besten Bewertung, für kurzfristige Verbesserungen bei Schmerz und Funktion (von einer Woche bis etwa anderthalb Monate), zusammen mit anderer Physiotherapie (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Tapen des Fußes mit **A**, dem höchsten Empfehlungsgrad, für kurzfristige Verbesserungen bei Schmerz und Funktion (von einer Woche bis etwa anderthalb Monate), zusammen mit anderer Physiotherapie (Koc und Kollegen, 2023).',
     'In einer verblindeten Studie mit 92\u00A0Personen senkte starres Low-Dye-Tape den Schmerz bei den ersten Schritten nach einer Woche um etwa 1,2\u00A0Punkte von 10 stärker als ein Placebo, ein kleiner Effekt (Radford und Kollegen, 2006).',
     'In derselben Studie hatten 13 von 46\u00A0Personen mit Tape (28\u00A0%) eine Nebenwirkung, etwa ein zu enges Tape oder eine Hautreaktion, und alle verschwanden, sobald das Tape ab war (Radford und Kollegen, 2006).',
     'In einer Studie mit 40\u00A0Personen linderte Kinesio-Tape den Schmerz am ersten Tag stärker als starres Low-Dye-Tape (2\u00A0Punkte von 10), aber der Abstand wurde danach jeden Tag kleiner (García-Gomariz und Kollegen, 2024).',
@@ -27,9 +27,9 @@ export const PF_TAPING_DE: Guide = {
   sections: [
     {
       h2: 'Hilft Tapen bei Plantarfasziitis?',
-      keyFact: 'Eine klinische Leitlinie von 2023 gibt dem Tapen des Fußes, starr oder elastisch, ihre beste Bewertung A, für kurzfristige Verbesserungen bei Schmerz und Funktion zusammen mit anderen Maßnahmen (Koc und Kollegen, 2023).',
+      keyFact: 'Eine klinische Leitlinie von 2023 gibt dem Tapen des Fußes, starr oder elastisch, den höchsten Empfehlungsgrad A, für kurzfristige Verbesserungen bei Schmerz und Funktion zusammen mit anderen Maßnahmen (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Tapen lindert die Schmerzen bei Plantarfasziitis kurzfristig. Die Leitlinie von 2023 zu Fersenschmerzen der American Physical Therapy Association gibt dem Tapen des Fußes, starr oder elastisch, ihre beste Bewertung, **A**. Auf die Formulierung kommt es an. Die Leitlinie empfiehlt Tape zusammen mit anderer Physiotherapie und nur für kurzfristige Verbesserungen, die sie als eine Woche bis etwa anderthalb Monate definiert.',
+        'Tapen lindert die Schmerzen bei Plantarfasziitis kurzfristig. Die Leitlinie von 2023 zu Fersenschmerzen der American Physical Therapy Association gibt dem Tapen des Fußes, starr oder elastisch, den höchsten Empfehlungsgrad **A**. Auf die Formulierung kommt es an. Die Leitlinie empfiehlt Tape zusammen mit anderer Physiotherapie und nur für kurzfristige Verbesserungen, die sie als eine Woche bis etwa anderthalb Monate definiert.',
         'Eine Übersichtsarbeit von 2010 über 5\u00A0kontrollierte Studien fand begrenzte Belege dafür, dass der Schmerz nach einer Woche geringer war, unklare Ergebnisse für die Funktion im Alltag und einen Hinweis darauf, dass Tape zusätzlich zum Dehnen etwas bringt (van de Water und Speksnijder, 2010). Eine Übersichtsarbeit von 2015 über 8\u00A0Studien fand, dass alle zugunsten des Tapens ausfielen, aber nur 2 davon von hoher Qualität waren (Podolsky und Kalichman, 2015).',
         'Ein Best-Practice-Leitfaden von 2021, der auf einer Auswertung von 51\u00A0Studien und Interviews mit 14\u00A0Fachleuten beruht, stellt Tapen, Dehnen und Aufklärung ins Zentrum der Selbsthilfe bei Fersenschmerzen (Morrissey und Kollegen, 2021). Tape ist ein Teil eines Plans, neben [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
@@ -145,7 +145,7 @@ export const PF_TAPING_DE: Guide = {
       h2: 'Was solltest du zusätzlich zum Tape machen?',
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Kombinier Tape mit Dehnen und Wadenkrafttraining, denn für diese Teile gibt es Belege über die kurze Frist hinaus. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A**, für kurz- und langfristige Schmerzen. Krafttraining bekommt ein **B**. In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
+        'Kombinier Tape mit Dehnen und Wadenkrafttraining, denn für diese Teile gibt es Belege über die kurze Frist hinaus. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A**, für kurz- und langfristige Schmerzen. Krafttraining bekommt Grad **B**. In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
         'Tape kann dir das Gehen in dieser Woche erleichtern, sodass du in Bewegung bleibst und die Übungen weitermachst. Wenn schon das Gehen den Schmerz auslöst, zeigt [Fersenschmerzen nach dem Gehen](/de/fersenschmerzen-nach-dem-gehen/), wie du die Belastung anpasst.',
         'Die drei Übungen unten sind der Kern. In Walkito beginnen die Dehnungen mit 2-mal 30\u00A0Sekunden Halten, und dieses Fersenheben mit Handtuch ist, sobald dein Plan dort ankommt, auf 4\u00A0Sätze à 10 im selben langsamen 3-2-3-Takt eingestellt (mit einem Rucksack kommt Gewicht dazu, wenn du eine Stufe hast).',
         'Einmal pro Woche geht die Übung für dein Fokusziel eine Stufe höher, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist, und eine Stufe zurück, wenn sich eine Einheit schwer angefühlt hat oder der Morgenschmerz um 2 oder mehr gestiegen ist.',
@@ -153,7 +153,7 @@ export const PF_TAPING_DE: Guide = {
       exercises: [
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. In einer Studie von 2003 mit 101\u00A0Personen schnitt diese Dehnung beim Schmerz besser ab als eine reine Wadendehnung.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. In einer Studie von 2003 mit 101\u00A0Personen schnitt diese Dehnung beim Schmerz besser ab als eine reine Wadendehnung.' },
           dose: '2-mal 30\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg einen Knöchel über das andere Knie. Zieh die Zehen zurück, bis du eine Dehnung entlang des Gewölbes spürst. Mach das vor deinen ersten Schritten am Morgen.',
           often: 'Jeden Morgen und nach langem Sitzen',
@@ -165,7 +165,7 @@ export const PF_TAPING_DE: Guide = {
         },
         {
           name: 'Wadendehnung (gestrecktes Knie)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie für kurz- und langfristige Schmerzen.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie für kurz- und langfristige Schmerzen.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand, das hintere Bein gestreckt, die Ferse am Boden, die Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst.',
           often: 'An den meisten Tagen',
@@ -177,7 +177,7 @@ export const PF_TAPING_DE: Guide = {
         },
         {
           name: 'Fersenheben mit Handtuch unter den Zehen',
-          evidence: { level: 'moderate', why: 'Bewertung B in der Leitlinie für Krafttraining. In einer Studie mit 48\u00A0Personen getestet.' },
+          evidence: { level: 'moderate', why: 'Empfehlungsgrad B in der Leitlinie für Krafttraining. In einer Studie mit 48\u00A0Personen getestet.' },
           dose: '4\u00A0Sätze à 10 (Dosis in Walkito)',
           how: 'Stell dich auf eine Stufe, ein zusammengerolltes Handtuch unter den Zehen, die Ferse frei. Komm langsam in etwa drei Sekunden hoch, halte zwei Sekunden und senk dich in etwa drei Sekunden ab. Halt dich zum Gleichgewicht an einem Geländer fest.',
           often: 'Jeden zweiten Tag',
@@ -202,7 +202,7 @@ export const PF_TAPING_DE: Guide = {
           ],
         },
         '**Tape ist nicht dafür gedacht, monatelang getragen zu werden.** Die Forschung reicht bis etwa anderthalb Monate, und die Leitlinie empfiehlt es nur kurzfristig.',
-        'Ein einfacher Test: Lass das Tape einen Tag weg und schätz deinen Schmerz bei den ersten Schritten von 0 bis 10 ein. Wenn er so ist wie an den Tagen mit Tape, bringt das Tape nicht mehr viel. Wenn du nach einem Monat regelmäßiger Übungen immer noch jeden Tag Tape brauchst, geh zu einer medizinischen Fachperson, um andere Ursachen abklären zu lassen und über weitere Optionen zu sprechen, etwa Schuheinlagen (siehe [Einlagen oder Übungen](/de/einlagen-oder-uebungen/)).',
+        'Ein einfacher Test: Lass das Tape einen Tag weg und schätz deinen Schmerz bei den ersten Schritten von 0 bis 10 ein. Wenn er so ist wie an den Tagen mit Tape, bringt das Tape nicht mehr viel. Wenn du nach einem Monat regelmäßiger Übungen immer noch jeden Tag Tape brauchst, lass das zuerst ärztlich abklären, um andere Ursachen abklären zu lassen und über weitere Optionen zu sprechen, etwa Schuheinlagen (siehe [Einlagen oder Übungen](/de/einlagen-oder-uebungen/)).',
       ],
       cites: [CITE.guideline],
     },
@@ -231,16 +231,16 @@ export const PF_TAPING_DE: Guide = {
     {
       q: 'Kann Tapen die Übungen bei Plantarfasziitis ersetzen?',
       cites: [CITE.guideline, CITE.rathleff],
-      a: 'Nein. Tape lindert die Schmerzen für Tage, und die Leitlinie von 2023 fand keine Studien dazu, die über etwa anderthalb Monate hinausgingen. Dehnen hat in der Leitlinie die Bewertung A für kurz- und langfristige Schmerzen, und langsames Fersenheben linderte die Schmerzen in einer Studie mit 48\u00A0Personen nach drei Monaten schneller als Dehnen allein. Nutz Tape, um in Bewegung zu bleiben, während die Übungen die längerfristige Arbeit machen.',
+      a: 'Nein. Tape lindert die Schmerzen für Tage, und die Leitlinie von 2023 fand keine Studien dazu, die über etwa anderthalb Monate hinausgingen. Dehnen hat in der Leitlinie den Empfehlungsgrad A für kurz- und langfristige Schmerzen, und langsames Fersenheben linderte die Schmerzen in einer Studie mit 48\u00A0Personen nach drei Monaten schneller als Dehnen allein. Nutz Tape, um in Bewegung zu bleiben, während die Übungen die längerfristige Arbeit machen.',
     },
     {
       q: 'Ist Tapen für alle sicher?',
       cites: [CITE.radfordTaping],
-      a: 'Für die meisten Erwachsenen ist Tapen risikoarm, aber nicht risikofrei. In einer Studie mit 92\u00A0Personen hatten 28\u00A0% derjenigen mit Tape eine Nebenwirkung, meist Enge oder eine Hautreaktion, und alle verschwanden, sobald das Tape ab war. Wenn du Diabetes, wenig Gefühl in den Füßen, empfindliche Haut oder eine schlechte Durchblutung hast, frag eine medizinische Fachperson, bevor du dich selbst tapest.',
+      a: 'Für die meisten Erwachsenen ist Tapen risikoarm, aber nicht risikofrei. In einer Studie mit 92\u00A0Personen hatten 28\u00A0% derjenigen mit Tape eine Nebenwirkung, meist Enge oder eine Hautreaktion, und alle verschwanden, sobald das Tape ab war. Wenn du Diabetes, wenig Gefühl in den Füßen, empfindliche Haut oder eine schlechte Durchblutung hast, frag deine Ärztin oder deinen Arzt, bevor du dich selbst tapest.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'du den Fuß nicht belasten kannst oder hinkst',
@@ -257,7 +257,7 @@ export const PF_TAPING_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Tape kann dir die nächsten Tage erleichtern. Die Übungen sind das, was weiterwirkt, wenn es ab ist. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Fersenschmerzen ist das erste Ziel ein besserer Morgen: Schmerz bei oder unter 1 von 10 an 14\u00A0Tagen am Stück. Das Dehnen beginnt am ersten Tag. Jede Woche kann nur die Übung für dein Fokusziel eine Stufe höher gehen, und nur wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald ein Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Tapen ist kein Teil von Walkito. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Anfangs alle 14\u00A0Tage (alle 28, sobald ein Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Tapen ist kein Teil von Walkito. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

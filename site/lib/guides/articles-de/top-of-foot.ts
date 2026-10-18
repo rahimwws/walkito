@@ -14,9 +14,9 @@ export const TOP_OF_FOOT_DE: Guide = {
   title: 'Schmerzen am Fußrücken: Ursachen und Warnzeichen',
   description:
     'Schmerzen am Fußrücken: Strecksehnenentzündung durch enge Schnürung, Ermüdungsbruch, Knochensporn, Gicht und Nervenreizung. Und wann du zum Arzt solltest.',
-  h1: 'Schmerzen am Fußrücken: Ursachen und wann du zu einer Fachperson solltest',
+  h1: 'Schmerzen am Fußrücken: Ursachen und wann du zum Arzt oder zur Ärztin solltest',
   lede:
-    'Schmerzen oben auf dem Fuß sind seltener als Fersen- oder Gewölbeschmerzen, können aber jeden Schritt unangenehm machen, vor allem in Schuhen. Die häufigste Ursache ist eine Strecksehnenentzündung, eine Reizung der Sehnen, die die Zehen anheben, oft durch eine zu enge Schnürung oder eine plötzliche Steigerung der Aktivität. Andere Ursachen sind Ermüdungsbrüche, Knochensporne, Gicht und eingeklemmte Nerven. Die meisten sprechen auf einfache Änderungen an, aber einige brauchen Bildgebung oder einen Besuch bei einer Fachperson, um sie zu klären.',
+    'Schmerzen oben auf dem Fuß sind seltener als Fersen- oder Gewölbeschmerzen, können aber jeden Schritt unangenehm machen, vor allem in Schuhen. Die häufigste Ursache ist eine Strecksehnenentzündung, eine Reizung der Sehnen, die die Zehen anheben, oft durch eine zu enge Schnürung oder eine plötzliche Steigerung der Aktivität. Andere Ursachen sind Ermüdungsbrüche, Knochensporne, Gicht und eingeklemmte Nerven. Die meisten sprechen auf einfache Änderungen an, aber einige brauchen Bildgebung oder einen Arztbesuch, um sie zu klären.',
   intro: [
     'Die Oberseite des Fußes heißt Fußrücken (Dorsum). Dort liegen mehrere Sehnen, Nerven und kleine Knochen direkt unter der Haut, deshalb ist die Stelle anfällig für Druck von Schuhen und für Überlastung. Diese Seite erklärt die häufigsten Ursachen, was du zu Hause tun kannst, was die Forschung zu Übungen für diesen Bereich sagt und wo es ehrliche Lücken gibt.',
   ],
@@ -60,7 +60,7 @@ export const TOP_OF_FOOT_DE: Guide = {
             '**Nervenschmerz** ist eher brennend oder kribbelnd, kein tiefer Schmerz.',
           ],
         },
-        'Eine Fachperson kann den Unterschied oft mit einer körperlichen Untersuchung erkennen. Das Strecken der Zehen gegen Widerstand (die Zehen gegen Druck nach oben ziehen) löst den Schmerz einer Sehnenentzündung aus. Ein punktueller Druckschmerz über einem Knochen mit einer begrenzten Schwellung deutet auf einen Ermüdungsbruch hin. Bei Verdacht auf einen Ermüdungsbruch ist Bildgebung wichtig, weil weitere Belastung eines gebrochenen Knochens ihn verschlimmern kann.',
+        'Eine Ärztin oder ein Arzt kann den Unterschied oft mit einer körperlichen Untersuchung erkennen. Das Strecken der Zehen gegen Widerstand (die Zehen gegen Druck nach oben ziehen) löst den Schmerz einer Sehnenentzündung aus. Ein punktueller Druckschmerz über einem Knochen mit einer begrenzten Schwellung deutet auf einen Ermüdungsbruch hin. Bei Verdacht auf einen Ermüdungsbruch ist Bildgebung wichtig, weil weitere Belastung eines gebrochenen Knochens ihn verschlimmern kann.',
         'Wenn der Schmerz nur in Schuhen da ist und barfuß verschwindet, **ist Druck vom Schuh der wahrscheinlichste Grund.** Wenn er in Ruhe bleibt oder dich nachts weckt, lohnt es sich, nach mehr als einer einfachen Sehnenentzündung zu suchen.',
       ],
     },
@@ -87,7 +87,7 @@ export const TOP_OF_FOOT_DE: Guide = {
     {
       h2: 'Übungen für beitragende Faktoren',
       paragraphs: [
-        'Diese Übungen zielen nicht direkt auf den Fußrücken. Sie setzen an einer verkürzten Wade und einem schwachen Schienbeinmuskel an, die zur Überlastung der Strecksehnen beitragen. Wenn deine Schmerzen am Fußrücken von einem Ermüdungsbruch, Gicht oder einem akuten Nervenproblem kommen, lass diese Übungen weg und geh zuerst zu einer Fachperson.',
+        'Diese Übungen zielen nicht direkt auf den Fußrücken. Sie setzen an einer verkürzten Wade und einem schwachen Schienbeinmuskel an, die zur Überlastung der Strecksehnen beitragen. Wenn deine Schmerzen am Fußrücken von einem Ermüdungsbruch, Gicht oder einem akuten Nervenproblem kommen, lass diese Übungen weg und geh zuerst zum Arzt oder zur Ärztin.',
       ],
       exercises: [
         {
@@ -142,8 +142,8 @@ export const TOP_OF_FOOT_DE: Guide = {
           ],
         },
         'Der Schmerz sitzt an einer Stelle, wird bei Belastung schlimmer und kann nachts wehtun. Eine Schwellung oben auf dem Fuß über dem schmerzenden Knochen ist häufig.',
-        'Ein normales Röntgenbild zeigt einen Ermüdungsbruch in den ersten zwei bis drei Wochen vielleicht nicht. Wenn eine Fachperson einen vermutet, kann ein MRT oder eine Knochenszintigrafie ihn früher bestätigen. Der Ansatz ist Ruhe und geschützte Belastung, keine Übungen. Wer zu früh wieder aktiv wird, riskiert einen vollständigen Bruch.',
-        'Wenn der Schmerz nach einer Steigerung des Trainingsumfangs angefangen hat, an einer Stelle sitzt und im Lauf des Tages schlimmer wird, **geh zu einer Fachperson, bevor du irgendeine Übung auf dieser Seite machst.**',
+        'Ein normales Röntgenbild zeigt einen Ermüdungsbruch in den ersten zwei bis drei Wochen vielleicht nicht. Wenn eine Ärztin oder ein Arzt einen vermutet, kann ein MRT oder eine Knochenszintigrafie ihn früher bestätigen. Der Ansatz ist Ruhe und geschützte Belastung, keine Übungen. Wer zu früh wieder aktiv wird, riskiert einen vollständigen Bruch.',
+        'Wenn der Schmerz nach einer Steigerung des Trainingsumfangs angefangen hat, an einer Stelle sitzt und im Lauf des Tages schlimmer wird, **lass das zuerst ärztlich abklären, bevor du irgendeine Übung auf dieser Seite machst.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -151,7 +151,7 @@ export const TOP_OF_FOOT_DE: Guide = {
       h2: 'Und was ist mit Gicht am Fußrücken?',
       paragraphs: [
         'Gicht ist eine entzündliche Erkrankung, bei der sich Harnsäurekristalle in einem Gelenk ablagern. Klassisch betrifft sie das Großzehengrundgelenk (das erste Metatarsophalangealgelenk), sie kann aber jedes Gelenk im Fuß treffen, auch im Mittelfuß.',
-        'Ein Gichtanfall kommt schnell, oft über Nacht. Das Gelenk wird stark schmerzhaft, rot, heiß und geschwollen. Das sieht anders aus und fühlt sich anders an als eine Sehnenentzündung oder ein Ermüdungsbruch. Wenn du plötzlich starke Schmerzen in einem einzelnen Gelenk mit Rötung und Wärme hast, ist das ein Grund, zügig zu einer Fachperson zu gehen. Bluttests und manchmal eine Untersuchung der Gelenkflüssigkeit bestätigen die Diagnose.',
+        'Ein Gichtanfall kommt schnell, oft über Nacht. Das Gelenk wird stark schmerzhaft, rot, heiß und geschwollen. Das sieht anders aus und fühlt sich anders an als eine Sehnenentzündung oder ein Ermüdungsbruch. Wenn du plötzlich starke Schmerzen in einem einzelnen Gelenk mit Rötung und Wärme hast, ist das ein Grund, zügig zum Arzt oder zur Ärztin zu gehen. Bluttests und manchmal eine Untersuchung der Gelenkflüssigkeit bestätigen die Diagnose.',
         '**Gicht braucht ärztliche Behandlung.** Übungen, andere Schuhe und Dehnen helfen bei einem akuten Anfall nicht. Zwischen den Anfällen ist es sinnvoll, die Beweglichkeit von Fuß und Sprunggelenk zu erhalten, aber das eigentliche Harnsäureproblem wird mit Medikamenten und einer Ernährungsumstellung behandelt.',
       ],
     },
@@ -168,7 +168,7 @@ export const TOP_OF_FOOT_DE: Guide = {
     {
       q: 'Woran erkenne ich, ob der Schmerz am Fußrücken ein Ermüdungsbruch ist?',
       cites: [CITE.patelStressFracture],
-      a: 'Ein Ermüdungsbruch tut meist an einer bestimmten Stelle weh, wird im Lauf des Tages und bei Belastung schlimmer und kann oben auf dem Fuß anschwellen. Oft folgt er auf eine plötzliche Steigerung des Trainingsumfangs. Frühe Ermüdungsbrüche sind auf einem Röntgenbild zwei bis drei Wochen lang vielleicht nicht zu sehen. Wenn der Schmerz begrenzt ist, zunimmt und mit Belastung zusammenhängt, lass ihn von einer Fachperson mit Bildgebung abklären, statt weiter zu trainieren.',
+      a: 'Ein Ermüdungsbruch tut meist an einer bestimmten Stelle weh, wird im Lauf des Tages und bei Belastung schlimmer und kann oben auf dem Fuß anschwellen. Oft folgt er auf eine plötzliche Steigerung des Trainingsumfangs. Frühe Ermüdungsbrüche sind auf einem Röntgenbild zwei bis drei Wochen lang vielleicht nicht zu sehen. Wenn der Schmerz begrenzt ist, zunimmt und mit Belastung zusammenhängt, lass ihn ärztlich mit Bildgebung abklären, statt weiter zu trainieren.',
     },
     {
       q: 'Helfen Übungen bei Schmerzen am Fußrücken?',
@@ -184,7 +184,7 @@ export const TOP_OF_FOOT_DE: Guide = {
     },
     {
       q: 'Sollte ich mit Schmerzen am Fußrücken zum Arzt?',
-      a: 'Geh zu einer Fachperson, wenn der Schmerz an einer Stelle sitzt und schlimmer wird, wenn die schmerzende Stelle rot oder warm ist, wenn der Schmerz nach einer Woche Schonung und anderen Schuhen bleibt, wenn er plötzlich nach einer Verletzung angefangen hat oder wenn Taubheit oder Kribbeln dazukommen. Ermüdungsbrüche, Gicht und Nervenprobleme profitieren alle von einer frühen Abklärung.',
+      a: 'Lass das zuerst ärztlich abklären, wenn der Schmerz an einer Stelle sitzt und schlimmer wird, wenn die schmerzende Stelle rot oder warm ist, wenn der Schmerz nach einer Woche Schonung und anderen Schuhen bleibt, wenn er plötzlich nach einer Verletzung angefangen hat oder wenn Taubheit oder Kribbeln dazukommen. Ermüdungsbrüche, Gicht und Nervenprobleme profitieren alle von einer frühen Abklärung.',
     },
     {
       q: 'Kann ich mit einer Strecksehnenentzündung noch gehen?',
@@ -196,7 +196,7 @@ export const TOP_OF_FOOT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz an einer Stelle oben auf dem Fuß sitzt und im Lauf des Tages schlimmer wird, was auf einen Ermüdungsbruch hindeuten kann',
       'ein einzelnes Gelenk geschwollen, gerötet oder warm ist, was auf Gicht oder eine Infektion hindeuten kann',
@@ -212,7 +212,7 @@ export const TOP_OF_FOOT_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito ist für Fersenschmerzen und Plattfüße gebaut, nicht speziell für Schmerzen am Fußrücken. Wenn aber eine Überlastung der Strecksehnen zu deinem Bild gehört, setzen die Kräftigung des Tibialis anterior (Zehenheben) und die Wadendehnung in der App an den beitragenden muskulären Ungleichgewichten an. Wenn du beim Check-in den Fußrücken als schmerzend markierst, kann die App verfolgen, ob sich der Schmerz zusammen mit deinen Übungen verändert.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito stellt keine Diagnose bei Schmerzen am Fußrücken. Wenn du einen Ermüdungsbruch, Gicht oder ein Nervenproblem vermutest, geh zu einer Fachperson, bevor du mit einem Übungsprogramm anfängst.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito stellt keine Diagnose bei Schmerzen am Fußrücken. Wenn du einen Ermüdungsbruch, Gicht oder ein Nervenproblem vermutest, lass das zuerst ärztlich abklären, bevor du mit einem Übungsprogramm anfängst.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

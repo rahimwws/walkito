@@ -17,7 +17,7 @@ export const ACHILLES_FR: Guide = {
     'Tendinite d’Achille, exercices et doses\u00A0: descentes excentriques du talon, résistance lourde et lente, insertion ou corps du tendon, quand arrêter.',
   h1: 'Exercices pour la tendinite d’Achille\u00A0: descentes excentriques du talon, doses et ce que dit la recherche',
   lede:
-    'Les exercices pour la tendinite d’Achille marchent le mieux quand on comprend la descente du talon comme du renforcement, pas comme un étirement. La recommandation clinique de 2024 donne à l’exercice sa meilleure note, **A**, et une méta-analyse en réseau de 2021 portant sur 29\u00A0essais n’a trouvé aucun protocole nettement meilleur qu’un autre. Ce qui compte, c’est de charger le tendon régulièrement pendant des semaines.',
+    'Les exercices pour la tendinite d’Achille sont plus efficaces quand on considère la descente du talon comme un exercice de renforcement, et non comme un étirement. La recommandation clinique de 2024 donne à l’exercice sa meilleure note, **A**, et une méta-analyse en réseau de 2021 portant sur 29\u00A0essais n’a trouvé aucun protocole nettement meilleur qu’un autre. Ce qui compte, c’est de charger le tendon régulièrement pendant des semaines.',
   intro: [
     'Cette page détaille ces exercices. Si votre douleur est sous le pied plutôt qu’à l’arrière du talon, ce sont plutôt les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) qu’il vous faut. La page [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) résume les deux. Si la douleur est le long du tibia plutôt qu’au talon, voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/)\u00A0; si elle n’apparaît qu’après une longue journée debout plutôt qu’en courant, voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/).',
     'La plupart des gens emploient «\u00A0tendinite\u00A0» et «\u00A0tendinopathie\u00A0» indifféremment. Les recommandations actuelles disent «\u00A0tendinopathie\u00A0», car le problème est en général une question de charge, pas une inflammation pure. Cette page utilise «\u00A0tendinite\u00A0» dans les titres et «\u00A0tendinopathie\u00A0» là où la recommandation le fait.',
@@ -264,7 +264,7 @@ export const ACHILLES_FR: Guide = {
     {
       q: 'Que faut-il éviter avec une tendinite d’Achille\u00A0?',
       cites: [CITE.jonsson, CITE.silbernagel],
-      a: 'Évitez les hausses soudaines du volume de course ou de l’intensité des sprints, les étirements profonds du mollet si votre douleur est au point d’attache sur l’os du talon, et de forcer malgré une douleur qui reste élevée le lendemain matin ou s’aggrave d’une semaine à l’autre. Un claquement ou un craquement soudain demande un professionnel de santé tout de suite. Le repos complet n’est pas nécessaire non plus\u00A0: une activité avec surveillance de la douleur est en général une meilleure option que de tout arrêter.',
+      a: 'Évitez les hausses soudaines du volume de course ou de l’intensité des sprints, les étirements profonds du mollet si votre douleur est au point d’attache sur l’os du talon, et de forcer malgré une douleur qui reste élevée le lendemain matin ou s’aggrave d’une semaine à l’autre. Un claquement ou un craquement soudain justifie de consulter un professionnel de santé sans attendre. Le repos complet n’est pas nécessaire non plus\u00A0: une activité avec surveillance de la douleur est en général une meilleure option que de tout arrêter.',
     },
     {
       q: 'La marche aggrave-t-elle une tendinite d’Achille\u00A0?',

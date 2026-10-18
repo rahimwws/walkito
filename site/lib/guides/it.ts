@@ -312,7 +312,7 @@ export const FLAT_FEET_IT: Guide = {
     bullets: [...RED_FLAGS.bullets, 'l’arco resta piatto quando il piede è sollevato da terra'],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per un piede piatto flessibile, quell’obiettivo è la tenuta dell’arco: tenere l’arco alzato per ${PROGRAM.goals.archHoldSeconds}\u00A0secondi. Se hai anche dolore, prima vengono le mattine senza dolore.`,
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto il primo obiettivo), un breve test controlla tenuta dell’arco, resistenza del polpaccio ed equilibrio, così vedi se il lavoro sull’arco sta servendo.`,
@@ -592,8 +592,8 @@ export const HEEL_PAIN_IT: Guide = {
       cites: [CITE.latt],
     },
     {
-      q: 'Meglio lo stretching o il rinforzo per la fascite plantare?',
-      a: 'Aiutano entrambi, e il rinforzo funziona più in fretta. In uno studio su 48\u00A0persone, i sollevamenti sulle punte ad alto carico erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B. La [pagina delle evidenze](/science/) (in inglese) ha i dettagli.',
+      q: 'Meglio lo stretching o il lavoro di forza per la fascite plantare?',
+      a: 'Aiutano entrambi; nello studio citato, con il lavoro di forza il miglioramento è arrivato prima. In uno studio su 48\u00A0persone, i sollevamenti sulle punte ad alto carico erano chiaramente avanti rispetto allo stretching a tre mesi, ma a dodici mesi i due gruppi erano pari. La linea guida del 2023 dà allo stretching una A e al lavoro di forza una B. La [pagina delle evidenze](/science/) (in inglese) ha i dettagli.',
     },
     {
       q: 'Lo sperone calcaneare è la stessa cosa della fascite plantare?',
@@ -629,7 +629,7 @@ export const HEEL_PAIN_IT: Guide = {
   ],
   redFlags: RED_FLAGS,
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: `Non devi capire da solo l’ordine, le dosi o per quanto restare su ogni esercizio. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila.`,
     more: [
       `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/it/test-sollevamento-punte/), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,

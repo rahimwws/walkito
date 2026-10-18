@@ -384,11 +384,11 @@ Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effe
 
 ### Quais exercícios ajudam na tendinite de Aquiles, e quanto fazer?
 
-Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentado e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
+Os exercícios abaixo vão de pouca carga a muita carga, começando com a elevação de calcanhar sentada e subindo pela escada. Estas são as doses iniciais do Walkito ao lado dos protocolos da pesquisa. [Como estes guias são escritos](https://walkito.site/pt/sobre-walkito/).
 
 Na dor de Aquiles insercional, todo exercício que usa degrau deve ser feito no nível do chão. Essa adaptação está explicada na seção sobre dor insercional, mais abaixo.
 
-- **Elevação de calcanhar sentado** (3 séries de 10, os dois pés): Sente-se com os pés apoiados. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. Um jeito de começar com pouca carga quando o trabalho em pé dói demais.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. Um jeito de começar com pouca carga quando o trabalho em pé dói demais.
 - **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar em três segundos. Os dois pés dividem a carga.
 - **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés (pesquisa: 3-5 x 30-45 segundos)): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. É uma sustentação isométrica, ou seja, o músculo trabalha sem se mover, o que põe carga no tendão sem o sobe e desce que pode irritar a dor de Aquiles no começo.
 - **Descida excêntrica do calcanhar (joelho esticado)** (Alfredson: 3 x 15, duas vezes por dia. Walkito: 3 x 10, cada perna): Fique na beira de um degrau. Suba com os dois pés, passe o peso para a perna dolorida e desça devagar com o joelho esticado. O calcanhar afunda abaixo do degrau. Use os dois pés para voltar lá em cima.
@@ -466,9 +466,9 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 - a dor aparece em repouso ou acorda você à noite
 - você não consegue apoiar o pé ou está mancando
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
+Você não precisa adivinhar a ordem, as doses nem quando acrescentar carga. O Walkito monta um plano uma semana de cada vez em torno de uma meta. A cadeia da panturrilha vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até os saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
 
 #### Qual a diferença entre tendinite e tendinopatia de Aquiles?
 
@@ -656,7 +656,7 @@ Source: Young R, Nix S, Wholohan A, Bradhurst R, Reed L. Interventions for incre
 - a rigidez veio depois de uma fratura ou cirurgia: siga o plano do seu cirurgião ou fisioterapeuta
 - várias articulações ficam rígidas e inchadas de manhã por mais de meia hora
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito monta um plano uma semana de cada vez em torno de uma meta, para dor no calcanhar, no pé e na perna. A mobilidade do tornozelo faz parte dele: alongamentos de panturrilha, uma sustentação do joelho na parede e o balanço do tornozelo se revezam nas suas sessões, a maioria nos dias de mobilidade, junto com trabalho de força da panturrilha e de equilíbrio. O Walkito começa os alongamentos e o balanço do tornozelo com 2 séries de 30 segundos, cada perna.
 
@@ -828,7 +828,7 @@ Source: Hupperets MD, Verhagen EA, van Mechelen W. Effect of unsupervised home b
 - o tornozelo trava, engata ou estala com dor, o que pode indicar uma lesão de cartilagem
 - você tem diabetes e pés dormentes, ou já teve quedas ou episódios de tontura
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito monta um plano uma semana de cada vez em torno de metas para dor no pé e na perna. Ele inclui equilíbrio, inversão com faixa, elevação dos dedos, elevação de calcanhar e trabalho de quadril. A cada semana, ele pode deixar o exercício da sua meta principal um passo mais difícil (no equilíbrio: equilíbrio em uma perna, depois de olhos fechados, depois em cima de um travesseiro), mas só quando as suas duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou. Se uma sessão pareceu difícil ou a dor aumentou, ele volta um passo. A inversão com faixa e a elevação dos dedos não sobem de nível desse jeito. O Walkito não tem um programa para entorse de tornozelo e não verifica se um tornozelo está fraturado ou com ligamento rompido.
 
@@ -947,7 +947,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - a dor não melhora depois de várias semanas de alongamento e ajuste de carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Se a sua dor no arco segue o padrão da fascite plantar, o Walkito monta um plano em torno de uma meta de cada vez. A primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14 dias seguidos. O arco ganha a sua própria meta e os seus próprios exercícios. Se a sua dor no arco vem do pé chato, o app pode trabalhar a dor e o arco como metas separadas.
 
@@ -1111,7 +1111,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - os dois pés doem e outras articulações estão inchadas ou rígidas
 - ela acorda você à noite ou aparece em repouso
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você pode fazer os exercícios desta página por conta própria, ou deixar o Walkito organizar tudo para você. O app monta um plano uma semana de cada vez. Quando você marca a planta do pé, perto dos dedos, no mapa de dor, a sessão do check-in se concentra em abrir os dedos e no alongamento da fáscia plantar. O programa mais amplo acrescenta alongamento e fortalecimento da panturrilha com o passar das semanas.
 
@@ -1316,7 +1316,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - o seu arco está ficando mais chato, um pé está muito mais chato que o outro, ou o pé chato é rígido
 - a dor no calcanhar ou no pé começou ou piorou depois de trocar de calçado e não acalmou ao voltar para os calçados antigos
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito é um programa de exercícios para dor no calcanhar, no pé e na perna. Ele inclui o exercício de pé curto, abrir os dedos, a elevação de calcanhar e o trabalho de equilíbrio desta página e os torna mais exigentes conforme ficam mais fáceis. Ele não escolhe os seus calçados e não faz diagnóstico. Um pé e uma panturrilha mais fortes são uma base sensata, seja qual for o calçado que você acabe usando.
 
@@ -1507,7 +1507,7 @@ Comece pela sua situação, não pela lista de recursos.
 - a dor está piorando semana após semana mesmo com exercício
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Se você leu até aqui e o Walkito parece combinar com você, veja como ele funciona. Você responde algumas perguntas sobre onde dói, de que lado, o quanto você é ativo e qual é o seu objetivo. O Walkito monta um plano semanal em torno dessas respostas. Toda manhã, um check-in ajusta o dia. A cada 14 dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio em uma perna.
 
@@ -1603,7 +1603,7 @@ Source: Tehraninasr A, Saeedi H, Forogh B, Bahramizadeh M, Keyhani MR. Effects o
 
 Estes exercícios trabalham o abdutor do hálux e os músculos pequenos do pé. O objetivo é recuperar o suporte muscular em volta da primeira articulação metatarsofalângica. Nenhum deles vai reverter a deformidade óssea, mas dois têm apoio de ensaios para aumentar o tamanho do músculo e reduzir os sintomas no hálux valgo leve.
 
-- **Abrir os dedos (toe-spread-out)** (O Walkito começa com 3 séries de 10, segurando cada abertura por 5 segundos): Sente-se ou fique em pé com o pé apoiado no chão. Levante os cinco dedos, depois pressione o dedinho para baixo e para fora enquanto pressiona o dedão para baixo e para dentro, afastando os dedos. Segure a abertura e relaxe. É o exercício testado no ensaio de Kim 2015.
+- **Abrir os dedos** (O Walkito começa com 3 séries de 10, segurando cada abertura por 5 segundos): Sente-se ou fique em pé com o pé apoiado no chão. Levante os cinco dedos, depois pressione o dedinho para baixo e para fora enquanto pressiona o dedão para baixo e para dentro, afastando os dedos. Segure a abertura e relaxe. É o exercício testado no ensaio de Kim 2015.
 - **Elevação do dedão** (O Walkito começa com 3 séries de 8, segurando 5 segundos, cada pé): Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Desça devagar. Isso isola o extensor do hálux e ativa o abdutor do hálux, treinando o dedão a se mover sozinho.
 - **Pé curto, sentado** (O Walkito começa com 3 séries de 10, segurando 5 segundos, cada pé): Sente-se com o pé apoiado no chão. Sem dobrar os dedos, tente encurtar o pé puxando a parte da frente do pé em direção ao calcanhar. O arco sobe um pouco. Isso ativa os músculos pequenos do pé, incluindo o abdutor do hálux.
 - **Puxar a toalha com os dedos** (O Walkito começa com 3 séries de 8, cada pé): Sente-se com o pé sobre uma toalha. Dobre os dedos para puxar a toalha na sua direção. Solte e repita. Isso trabalha os flexores dos dedos e os músculos embaixo do arco.
@@ -1636,7 +1636,7 @@ Exercício e tratamento conservador costumam ser tentados primeiro por vários m
 - a articulação parece travada ou você não consegue mexer o dedão de jeito nenhum
 - você tem uma ferida, bolha ou lesão na pele sobre o joanete
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito inclui [abrir os dedos](https://walkito.site/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](https://walkito.site/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para joanete, mas o exercício de abrir os dedos é o mesmo movimento testado no ensaio de Kim 2015 sobre hálux valgo. Se você quer um jeito estruturado de criar o hábito, as sessões de 3 ou 5 minutos, 3, 5 ou 7 dias por semana, você escolhe, mantêm os exercícios regulares.
 
@@ -1788,12 +1788,12 @@ Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint planta
 
 Os exercícios que constroem a resistência da panturrilha na reabilitação são os mesmos que aumentam o resultado do teste. Comece no nível que combina com onde você está agora e **suba quando duas sessões seguidas parecerem fáceis.**
 
-Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentado ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga.
+Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentada ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga.
 
 Veja [elevação de calcanhar](https://walkito.site/pt/exercicios/elevacao-de-calcanhar/) para o movimento básico, [elevação de calcanhar com toalha](https://walkito.site/pt/exercicios/elevacao-calcanhar-toalha/) para a versão que também põe carga na fáscia plantar e [descida excêntrica do calcanhar](https://walkito.site/pt/exercicios/excentrico-calcanhar/) para a variação focada no Aquiles.
 
 - **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga.
-- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga na panturrilha sem o quique de uma repetição completa.
+- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga na panturrilha sem o impulso de uma repetição completa.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -1809,7 +1809,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - você tem uma ruptura conhecida do tendão de Aquiles ou fez uma cirurgia recente
 - uma panturrilha está visivelmente menor que a outra e você ainda não procurou um profissional de saúde por isso
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito faz o teste de elevação de calcanhar em uma perna a cada 14 dias e acompanha as duas pernas. A meta da panturrilha é 25 elevações de calcanhar em uma perna. A meta de simetria é uma diferença entre esquerda e direita abaixo de 10 por cento. O app calcula a diferença como a diferença entre o lado mais forte e o mais fraco, dividida pelo lado mais forte. Quando as duas metas são alcançadas, o teste passa a ser a cada 28 dias e o plano muda para a próxima meta ativa.
 
@@ -1887,9 +1887,9 @@ Comece com os dois pés se a elevação em uma perna estiver difícil demais ago
 - **Elevação de calcanhar com toalha (em uma perna)** (Protocolo da pesquisa: 12RM (a carga mais pesada que você consegue levantar em 12 repetições controladas) x 3 séries, progredindo para 8RM x 5 séries. Dose inicial: 3 séries de 12, cada perna): Fique em um pé só em um degrau, com uma toalha enrolada embaixo dos dedos. Três segundos para subir, dois segundos parado, três segundos para descer. Acrescente peso com uma mochila quando a última repetição deixar de ser difícil.
 - **Alongamento de panturrilha (joelho esticado)** (3 vezes de 30 segundos, cada perna): Mãos na parede. Perna de trás esticada, calcanhar no chão, quadril para a frente. Segure até sentir o alongamento na parte de cima da panturrilha.
 - **Alongamento do sóleo (joelho dobrado)** (3 vezes de 30 segundos, cada perna): Mesma posição do alongamento de panturrilha, depois dobre o joelho de trás até sentir mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
-- **Elevação de calcanhar sentado** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.
 - **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga.
-- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o quique de uma repetição completa.
+- **Elevação de calcanhar sustentada** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o impulso de uma repetição completa.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -1902,13 +1902,13 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Por onde o Walkito começa?
 
-O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentado (3 séries de 10, os dois pés), depois passa para a elevação em pé com os dois pés, depois a elevação de calcanhar sustentada, e só então a elevação em uma perna com toalha e carga. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
+O Walkito não joga você no protocolo de Rathleff no primeiro dia. O app começa com a elevação de calcanhar sentada (3 séries de 10, os dois pés), depois passa para a elevação em pé com os dois pés, depois a elevação de calcanhar sustentada, e só então a elevação em uma perna com toalha e carga. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
 
 Essa escada é o ritmo do próprio app, não um protocolo publicado, e existe porque a maioria das pessoas que começa um plano de exercícios para dor no calcanhar não está pronta para uma elevação em uma perna com peso na primeira sessão.
 
 A cadeia da panturrilha no app é:
 
-- Elevação de calcanhar sentado.
+- Elevação de calcanhar sentada.
 - Elevação de calcanhar com os dois pés.
 - Elevação de calcanhar sustentada.
 - Elevação de calcanhar com toalha.
@@ -1985,7 +1985,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - não melhorou depois de várias semanas de exercício e menos carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir as séries, o peso nem quando passar para o próximo degrau. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1/10 ou menos por 14 dias seguidos. A escada da elevação de calcanhar (sentado, com os dois pés, sustentada, com toalha, descidas de calcanhar) anda no seu ritmo, não em um calendário fixo.
 
@@ -2015,7 +2015,7 @@ Um estudo normativo com 566 adultos saudáveis encontrou uma mediana de cerca de
 
 #### É normal sentir o exercício na panturrilha e não no calcanhar?
 
-Sim. A elevação de calcanhar sentado e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.
+Sim. A elevação de calcanhar sentada e a elevação com os dois pés foram pensadas para parecer trabalho de panturrilha com pouca carga no calcanhar, e é por isso que vêm antes da versão em uma perna com toalha. A elevação com toalha e carga é a versão que também passa carga pelo arco, então um puxão perto do calcanhar nessa fase é esperado, desde que fique abaixo de 6/10.
 
 #### Panturrilha fraca causa fascite plantar?
 
@@ -2172,7 +2172,7 @@ Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The O
 - o arco caiu depois de uma queda, uma torção ou uma lesão
 - você não consegue apoiar o peso no pé, ou a dor acorda você à noite
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para pé chato, uma das metas é sustentar o arco: manter a posição de pé curto por 60 segundos. O plano pode incluir exercícios com faixa para o tibial posterior, elevação de calcanhar, pé curto e alongamento de panturrilha, cada um começando com uma dose baixa e só subindo quando ficar fácil.
 
@@ -2278,7 +2278,7 @@ Para outros exercícios de tornozelo e perna, veja a [elevação dos dedos](http
 - o tornozelo falseou ou se machucou há pouco tempo
 - não melhorou depois de várias semanas de trabalho de mobilidade constante
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o balanço do tornozelo nos dias de mobilidade, junto com os alongamentos de panturrilha e do sóleo. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos.
 
@@ -2384,7 +2384,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 - o arco caiu há pouco tempo e o pé ficou visivelmente mais chato
 - você teve uma lesão no tornozelo e a parte de dentro ainda está sensível
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito acrescenta a inversão do tornozelo com faixa depois de seis sessões de pé curto em pé. A progressão garante que os músculos intrínsecos do pé estejam ativos antes de o estabilizador extrínseco receber carga. As sessões são de 3, 5 ou 10 minutos, e um teste a cada 14 dias acompanha o tempo de sustentação do arco e a resistência da panturrilha.
 
@@ -2481,7 +2481,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 - o dedão se desviou em direção ao segundo dedo e formou um calombo na articulação
 - a dor embaixo da parte da frente do pé é aguda e está piorando
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito usa a elevação do dedão no começo da sequência de fortalecimento do pé, junto com puxar a toalha com os dedos. Quando você consegue isolar o dedão bem por duas sessões, o plano passa o foco para o exercício do pé curto e a progressão dele, de sentado para em pé. As sessões são de 3, 5 ou 10 minutos, e um teste a cada 14 dias acompanha o progresso.
 
@@ -2520,7 +2520,7 @@ A elevação de calcanhar é um exercício em pé ou sentado em que você sobe n
 
 A elevação de calcanhar em pé, com o joelho esticado, trabalha principalmente o gastrocnêmio, o músculo de duas cabeças que dá à panturrilha o formato visível. O gastrocnêmio cruza o joelho e o tornozelo, então ele trabalha mais com o joelho esticado.
 
-A elevação sentado passa a carga para o sóleo, o músculo mais profundo da panturrilha, que fica embaixo. O sóleo cruza só o tornozelo, então dobrar o joelho a uns 90 graus tira quase todo o gastrocnêmio do movimento e faz o sóleo trabalhar.
+A elevação sentada passa a carga para o sóleo, o músculo mais profundo da panturrilha, que fica embaixo. O sóleo cruza só o tornozelo, então dobrar o joelho a uns 90 graus tira quase todo o gastrocnêmio do movimento e faz o sóleo trabalhar.
 
 Os dois músculos se ligam ao calcanhar pelo tendão de Aquiles. Toda elevação de calcanhar também coloca alguma carga na fáscia plantar, porque o calcanhar é o ponto de apoio que eles dividem. A [elevação de calcanhar com toalha](https://walkito.site/pt/exercicios/elevacao-calcanhar-toalha/) aumenta ainda mais a carga na fáscia ao dobrar os dedos para cima.
 
@@ -2536,13 +2536,13 @@ Se você tem um degrau, fique com a parte da frente dos pés na beira e deixe os
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Como fazer a elevação de calcanhar sentado
+### Como fazer a elevação de calcanhar sentada
 
 Sente-se em uma cadeira com os pés apoiados no chão e os joelhos dobrados a uns 90 graus. Empurre pela parte da frente dos dois pés, tirando os dois calcanhares do chão. Desça devagar. Colocar as mãos nos joelhos e empurrar para baixo acrescenta resistência.
 
-A elevação sentado é a porta de entrada com menos carga na sequência da panturrilha. Ela quase não põe esforço no calcanhar comparada ao trabalho em pé, o que a torna um bom ponto de partida quando a elevação em pé dói demais.
+A elevação sentada é a porta de entrada com menos carga na sequência da panturrilha. Ela quase não põe esforço no calcanhar comparada ao trabalho em pé, o que a torna um bom ponto de partida quando a elevação em pé dói demais.
 
-- **Elevação de calcanhar sentado** (O Walkito começa com 3 séries de 10, os dois pés): Sente-se com os pés apoiados. Empurre pela parte da frente dos dois pés. As mãos nos joelhos dão resistência.
+- **Elevação de calcanhar sentada** (O Walkito começa com 3 séries de 10, os dois pés): Sente-se com os pés apoiados. Empurre pela parte da frente dos dois pés. As mãos nos joelhos dão resistência.
 
 Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -2581,7 +2581,7 @@ Na fascite plantar, a evidência aponta para a [elevação de calcanhar com toal
 
 Na tendinite de Aquiles, o foco passa para a [descida excêntrica do calcanhar](https://walkito.site/pt/exercicios/excentrico-calcanhar/), em que a fase de descida é o objetivo e a toalha não é usada. O modelo de dor de um ensaio permite carga até cerca de 5/10, desde que a dor passe até a manhã seguinte. A página completa está em [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
 
-A elevação com os dois pés, a elevação sentado e a elevação sustentada aparecem nos dois caminhos como primeiros degraus. Elas constroem a força de base que torna possível o exercício específico com carga.
+A elevação com os dois pés, a elevação sentada e a elevação sustentada aparecem nos dois caminhos como primeiros degraus. Elas constroem a força de base que torna possível o exercício específico com carga.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
@@ -2594,15 +2594,15 @@ Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric ca
 - a dor não passa durante a noite e piora de semana em semana
 - aparece dormência, formigamento ou queimação no pé
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-O Walkito monta um plano que começa no seu nível e sobe quando você está pronto. A sequência da panturrilha vai da elevação sentado para a elevação em pé com os dois pés, a sustentada, a elevação com toalha, a descida excêntrica do calcanhar e os saltitos curtos na ponta dos pés. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos.
+O Walkito monta um plano que começa no seu nível e sobe quando você está pronto. A sequência da panturrilha vai da elevação sentada para a elevação em pé com os dois pés, a sustentada, a elevação com toalha, a descida excêntrica do calcanhar e os saltitos curtos na ponta dos pés. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos.
 
 #### Elevação de calcanhar trabalha o glúteo?
 
 Não. A elevação de calcanhar trabalha o gastrocnêmio e o sóleo, na perna. Os glúteos estabilizam o quadril nas variações em uma perna, mas não são o músculo principal. Para força de quadril e glúteo, veja a [abdução de quadril](https://walkito.site/pt/exercicios/abducao-quadril/).
 
-#### Elevação de calcanhar sentado ou em pé: qual é melhor?
+#### Elevação de calcanhar sentada ou em pé: qual é melhor?
 
 Elas trabalham músculos diferentes. A elevação em pé trabalha principalmente o gastrocnêmio, o músculo maior da panturrilha. A sentada passa a carga para o sóleo, o mais profundo, porque o joelho dobrado tira boa parte do gastrocnêmio do movimento. As duas têm seu papel, e fazer as duas cobre a panturrilha inteira.
 
@@ -2693,7 +2693,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - dormência, formigamento ou queimação acompanham a tensão na panturrilha
 - não melhorou depois de várias semanas de alongamento diário
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o alongamento de panturrilha junto com o alongamento do sóleo e o alongamento da fáscia plantar na maioria das sessões. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos. O app passa do alongamento para o trabalho de força no seu ritmo.
 
@@ -2804,9 +2804,9 @@ Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effe
 - a dor aparece em repouso ou acorda você à noite
 - você não consegue subir na ponta do pé de jeito nenhum no lado dolorido
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-A descida excêntrica do calcanhar é um degrau na sequência da panturrilha que o Walkito monta em um plano semanal. A sequência começa com a elevação sentado e sobe pela elevação com os dois pés, a sustentada, a elevação com toalha, a descida do calcanhar e os saltitos curtos na ponta dos pés. Cada degrau abre quando duas sessões no nível atual pareceram fáceis.
+A descida excêntrica do calcanhar é um degrau na sequência da panturrilha que o Walkito monta em um plano semanal. A sequência começa com a elevação sentada e sobe pela elevação com os dois pés, a sustentada, a elevação com toalha, a descida do calcanhar e os saltitos curtos na ponta dos pés. Cada degrau abre quando duas sessões no nível atual pareceram fáceis.
 
 #### Descida excêntrica do calcanhar é a mesma coisa que elevação de calcanhar?
 
@@ -2902,7 +2902,7 @@ Role depois de um dia longo em pé, depois de uma sessão de elevação de calca
 - a dor começou depois de uma lesão, de uma queda ou de um estalo repentino no arco
 - não melhorou depois de várias semanas, mesmo com o programa completo de exercícios
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o rolamento do pé no fim das sessões e nos dias de recuperação. O app cuida do horário e da ordem, para você não ter que lembrar em quais dias rolar o pé e em quais alongar ou fortalecer.
 
@@ -3014,7 +3014,7 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 - você tem dor na virilha ou um estalo no quadril que piora com o exercício
 - a dor no pé ou no arco está piorando apesar de exercícios regulares por várias semanas
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito acrescenta a abdução de quadril nos dias de força quando uma meta de equilíbrio entre esquerda e direita entra no seu plano. Ela fica junto com os exercícios intrínsecos do pé e o trabalho de panturrilha, para o arco receber apoio de cima e de baixo. As sessões são de 3, 5 ou 10 minutos, e um teste a cada 14 dias acompanha o progresso.
 
@@ -3122,7 +3122,7 @@ Uma versão mais difícil é o alongamento da fáscia plantar em pé: apoie a pa
 - alongar piora a dor com frequência, em vez de melhorar
 - não melhorou depois de várias semanas de alongamento diário e menos carga
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o alongamento da fáscia plantar na maioria das sessões e lembra você de fazê-lo antes do primeiro passo de toda manhã. Você não precisa lembrar do horário nem da contagem. O app monta um plano uma semana de cada vez, começando com alongamento e acrescentando trabalho de força quando a dor acalma.
 
@@ -3240,7 +3240,7 @@ Source: Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balanc
 - um pé está rígido e o arco não sobe nada quando você fica na ponta dos pés, o que pode precisar de exame de imagem
 - a dor está piorando de semana em semana mesmo com exercício regular
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito monta um plano que inclui o exercício de pé curto em uma progressão de três degraus: sentado, em pé e depois em uma perna. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis. Você escolhe sessões de 3, 5 ou 10 minutos, e um teste a cada 14 dias mostra se o tempo de sustentação do arco está melhorando.
 
@@ -3341,7 +3341,7 @@ Para exercícios relacionados que fortalecem a cadeia, veja a [elevação de cal
 - você sente tontura ou a sensação de que tudo gira quando muda de posição
 - há uma mudança repentina no equilíbrio que você não consegue explicar
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito inclui o equilíbrio em uma perna e ficar em pé de olhos fechados em um plano junto com elevação de calcanhar, alongamentos e exercícios para o pé. A meta de equilíbrio é 30 segundos em cada perna. A cada 14 dias, um teste curto mede quanto tempo você consegue segurar, e a diferença entre os dois lados também é acompanhada.
 
@@ -3424,7 +3424,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - dormência ou formigamento descem pela parte de trás da perna
 - não melhorou depois de várias semanas de alongamento diário
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o alongamento do sóleo junto com o alongamento de panturrilha e o alongamento da fáscia plantar na maioria das sessões. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos. O app passa do alongamento para o trabalho de força no seu ritmo, não em um calendário fixo.
 
@@ -3518,7 +3518,7 @@ Fortalecer um lado sem o outro pode criar um desequilíbrio. Corredores que só 
 - você tem dificuldade para levantar a parte da frente do pé (pé caído)
 - aparece dormência ou formigamento no pé ou na perna
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito junta a elevação dos dedos com a elevação de calcanhar, o trabalho de equilíbrio e os exercícios para o pé em um plano montado no seu nível atual. Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10 minutos.
 
@@ -3618,7 +3618,7 @@ Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot ali
 - o dedão se desviou bastante em direção ao segundo dedo e dói ao andar
 - a dor no pé está piorando apesar de exercícios regulares por várias semanas
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito coloca o exercício de abrir os dedos nos dias de força, junto com outros exercícios para os músculos intrínsecos do pé. O plano reveza com o pé curto e a inversão com faixa, para os músculos do pé terem um trabalho variado sem sobrecarregar um movimento só. Você escolhe sessões de 3, 5 ou 10 minutos.
 
@@ -3646,7 +3646,7 @@ Os dois, de preferência. A ressonância magnética mostra que eles ativam os m�
 
 Language: Portuguese, Brazil (Português) · https://walkito.site/pt/exercicios/elevacao-calcanhar-toalha/ · published 2026-10-08 · updated 2026-10-08
 
-A elevação de calcanhar com toalha é uma elevação de panturrilha em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48 pessoas com fascite plantar, em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de panturrilha comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).
+A elevação de calcanhar com toalha é uma elevação em uma perna, em um degrau, com uma toalha enrolada embaixo dos dedos. Ela vem de um ensaio de 2015 com 48 pessoas com fascite plantar, em que esse exercício aliviou a dor no calcanhar mais rápido do que só alongar ao longo de três meses. A toalha é o que a diferencia de uma elevação de calcanhar comum: ela ativa a fáscia plantar pelo mecanismo de molinete (windlass).
 
 - Em um ensaio com 48 pessoas, as elevações de calcanhar com toalha e carga tiveram 29 pontos a mais de melhora no Foot Function Index do que só alongar aos três meses, embora os dois grupos tenham se igualado aos doze meses (Rathleff e colegas, 2015).
 - A diretriz de 2023 para dor no calcanhar dá ao treino de força o grau B, um degrau abaixo do alongamento, com A, e recomenda os dois (Koc e colegas, 2023).
@@ -3698,7 +3698,7 @@ Começar em uma perna quando a elevação com os dois pés ainda é difícil lev
 
 Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha:
 
-- A [elevação de calcanhar sentado](https://walkito.site/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga.
+- A [elevação de calcanhar sentada](https://walkito.site/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga.
 - A elevação em pé com os dois pés vem depois.
 - Depois, a elevação de calcanhar sustentada lá em cima.
 - Depois, a elevação em uma perna com toalha no degrau.
@@ -3722,7 +3722,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Para qualquer pessoa com fascite plantar que tenha força de panturrilha suficiente para fazer uma elevação em uma perna em um degrau. O ensaio incluiu adultos com dor havia pelo menos três meses e que toleravam carga.
 
-Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentado ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](https://walkito.site/pt/exercicios/excentrico-calcanhar/) ou [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/) para esse caminho.
+Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentada ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](https://walkito.site/pt/exercicios/excentrico-calcanhar/) ou [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/) para esse caminho.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
@@ -3734,9 +3734,9 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - a dor acorda você à noite ou aparece mesmo quando você não está em pé
 - não melhorou depois de várias semanas de carga constante
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-A elevação de calcanhar com toalha é um degrau de uma cadeia da panturrilha que o Walkito coloca em um plano semanal. A cadeia vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até chegar aos saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
+A elevação de calcanhar com toalha é um degrau de uma cadeia da panturrilha que o Walkito coloca em um plano semanal. A cadeia vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, a sustentada, a elevação com toalha e as descidas excêntricas do calcanhar, até chegar aos saltitos curtos na ponta dos pés. Cada degrau se abre quando duas sessões no nível atual pareceram fáceis.
 
 #### Para que serve a toalha na elevação de calcanhar?
 
@@ -3838,7 +3838,7 @@ Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip str
 - uma articulação de um dedo está vermelha, inchada ou quente, o que pode indicar gota ou infecção
 - os dedos travam dobrados e não esticam
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito usa puxar a toalha com os dedos como um exercício inicial de fortalecimento do pé. Quando ele parece fácil por duas sessões seguidas, o plano passa você para o exercício do pé curto e a progressão dele, de sentado para em pé. Você escolhe sessões de 3, 5 ou 10 minutos, e um teste a cada 14 dias acompanha o tempo de sustentação do arco e a resistência da panturrilha.
 
@@ -4022,7 +4022,7 @@ Source: Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and w
 - um arco caiu na vida adulta, ou a parte de dentro do tornozelo está inchada e dolorida
 - um pé chato é rígido e dolorido, e continua plano mesmo quando você sobe na ponta dos pés
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito é um programa de exercícios para os pés e a parte de baixo das pernas. Para pé chato, ele monta um plano uma semana de cada vez em torno de metas para os pés, como sustentar o arco por 60 segundos e ficar 30 segundos em equilíbrio em uma perna. Ele começa o pé curto com 3 séries de 8, segurando 5 segundos, o trabalho de quadril com 3 séries de 10 e o alongamento de panturrilha com 2 vezes de 30 segundos.
 
@@ -4372,7 +4372,7 @@ Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Pr
 - uma criança tem dor no joelho e está mancando, ou um pé chato está rígido e dolorido
 - o joelho não melhora depois de cerca de um mês com menos carga e exercício
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito foi feito para dor no calcanhar, no pé e na parte de baixo das pernas em adultos, não para dor no joelho. Se você tem pé chato com dor no arco ou no calcanhar, além do joelho dolorido, ele pode cuidar da parte do pé: pé curto, equilíbrio e abdução de quadril, organizados uma semana de cada vez. Os exercícios para o joelho devem vir de um fisioterapeuta.
 
@@ -4550,7 +4550,7 @@ Source: Peters-Dickie JL, Detrembleur C, Guallar-Bouloc M, Rastelli M, Lobet S, 
 - você não consegue apoiar o peso no pé
 - a dor continua piorando mesmo com repouso e exercícios mais leves
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito monta um plano semanal em torno de uma meta e inclui os exercícios para os pés desta página: o exercício de pé curto de sentado até em uma perna, o abrir os dedos, a elevação do dedão, o puxar a toalha com os dedos, a elevação de calcanhar e o trabalho de equilíbrio. Ele começa os exercícios de arco com 3 séries de 8 e 5 segundos parado e o equilíbrio com 3 vezes de 20 segundos, e a cada novo plano semanal sobe o seu exercício de foco um passo quando você marcou as suas duas últimas sessões com ele como fáceis e a sua dor da manhã não aumentou.
 
@@ -4702,9 +4702,9 @@ Source: Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A 
 - dormência ou formigamento acompanham a dor no calcanhar
 - você tomou recentemente antibióticos do grupo das fluoroquinolonas (como o ciprofloxacino) e tem uma dor nova no tendão
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentado, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.
+A progressão de carga na panturrilha do Walkito vai da elevação de calcanhar sentada, passando pela elevação com os dois pés, uma sustentação, a descida excêntrica do calcanhar e além. Para Haglund e dor insercional no Aquiles, todas as etapas ficam no nível do chão, em vez de descer abaixo da borda de um degrau. O Walkito faz você subir de nível quando duas sessões num nível pareceram fáceis, e não num calendário fixo.
 
 #### O que é o calombo atrás do calcanhar?
 
@@ -4809,7 +4809,7 @@ Estes exercícios trabalham os músculos pequenos do pé e buscam manter a flexi
 
 - **Puxar a toalha com os dedos** (O Walkito começa com 3 séries de 8, cada pé): Sente-se com o pé apoiado sobre uma toalha. Dobre os dedos para puxar a toalha na sua direção e depois solte. Isso trabalha os flexores intrínsecos dos dedos, os músculos que perdem a disputa no dedo em martelo. Fortalecê-los pode ajudar a reequilibrar a força que puxa as articulações dos dedos.
 - **Abrir os dedos** (O Walkito começa com 3 séries de 10, segurando cada abertura por 5 segundos): Sente-se ou fique em pé com o pé apoiado no chão. Abra os cinco dedos o máximo que conseguir, segure e relaxe. Isso trabalha os músculos entre os metatarsos e o abdutor do hálux, ao longo da parte de dentro do arco.
-- **Elevação do dedão (ioga dos dedos)** (O Walkito começa com 3 séries de 8, segurando 5 segundos, cada pé): Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Depois inverta: pressione o dedão para baixo e levante os outros quatro. Isso treina o controle independente dos dedos, que muitas vezes se perde em quem tem dedo em martelo.
+- **Elevação do dedão** (O Walkito começa com 3 séries de 8, segurando 5 segundos, cada pé): Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Depois inverta: pressione o dedão para baixo e levante os outros quatro. Isso treina o controle independente dos dedos, que muitas vezes se perde em quem tem dedo em martelo.
 
 Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
 
@@ -4860,7 +4860,7 @@ Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe
 - a deformidade está avançando rápido apesar dos sapatos mais largos
 - você tem dificuldade para andar por causa da deformidade
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito inclui [puxar a toalha com os dedos](https://walkito.site/pt/exercicios/puxar-toalha-dedos/), [abrir os dedos](https://walkito.site/pt/exercicios/abrir-os-dedos-do-pe/) e a [elevação do dedão](https://walkito.site/pt/exercicios/elevacao-do-dedao/) como parte da trilha de fortalecimento dos músculos pequenos do pé. O app foi feito para fascite plantar e pé chato, não especificamente para dedo em martelo, mas os exercícios se sobrepõem. Se você tem um dedo em martelo flexível e quer um jeito estruturado de trabalhar os dedos, as sessões de 3 ou 5 minutos mantêm os exercícios regulares sem você precisar lembrar de uma rotina separada.
 
@@ -5177,7 +5177,7 @@ Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliabil
 - não melhorou depois de várias semanas de alongamento, trabalho de panturrilha e controle da carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir os exercícios, as doses nem quando passar para o próximo nível. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos. Se ontem você andou mais que o normal e a nota da manhã dispara, a sessão se ajusta sozinha.
 
@@ -5419,9 +5419,9 @@ No único ensaio feito para testar elevações de calcanhar na fascite plantar, 
 
 Comece pelo nível mais fácil e só suba quando ele parecer fácil por duas sessões seguidas. A progressão abaixo vai do trabalho sentado até a elevação de calcanhar com toalha e carga do ensaio.
 
-- **Elevação de calcanhar sentado** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão. Suba os calcanhares empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão uma resistência leve. É o jeito com menos carga de começar a trabalhar a panturrilha.
+- **Elevação de calcanhar sentada** (3 séries de 10, os dois pés): Sente-se com os pés apoiados no chão. Suba os calcanhares empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão uma resistência leve. É o jeito com menos carga de começar a trabalhar a panturrilha.
 - **Elevação de calcanhar com os dois pés** (3 séries de 10, os dois pés): Fique em pé sobre os dois pés, suba reto por cima dos dedões e desça devagar. Os dois pés dividem a carga. Apoie-se numa parede ou num corrimão para manter o equilíbrio.
-- **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o quique de uma repetição completa.
+- **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar lá em cima põe carga no tendão sem o impulso de uma repetição completa.
 - **Elevação de calcanhar com toalha (em uma perna)** (Protocolo da pesquisa: 3 séries de 12RM, progredindo para 5 séries de 8RM. O Walkito começa com 3 séries de 12, cada perna): Fique em um pé só na beira de um degrau, com uma toalha enrolada embaixo dos cinco dedos. Três segundos para subir, dois segundos parado lá em cima, três segundos para descer. A toalha ativa o mecanismo de molinete (windlass), que põe carga na fáscia plantar junto com a panturrilha. Acrescente peso com uma mochila quando a última repetição deixar de ser difícil.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -5496,9 +5496,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - não melhorou depois de várias semanas de alongamento diário e treino de panturrilha
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
-Você não precisa controlar os níveis, as séries nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos. O alongamento começa no primeiro dia. A sequência da panturrilha, da elevação sentado até a elevação com toalha e carga, avança no seu ritmo.
+Você não precisa controlar os níveis, as séries nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos. O alongamento começa no primeiro dia. A sequência da panturrilha, da elevação sentada até a elevação com toalha e carga, avança no seu ritmo.
 
 #### Quais exercícios ajudam na dor do esporão?
 
@@ -5661,7 +5661,7 @@ Para quem tem pé cavo e dor embaixo do calcanhar, esses exercícios se sobrepõ
 - a dor no pé não melhora depois de várias semanas de alongamento, calçado melhor e palmilhas amortecidas
 - você tem dor num ponto específico que piora com a atividade, o que pode ser uma fratura por estresse ou sesamoidite, e não um padrão geral de pé cavo
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito inclui alongamento de panturrilha, alongamento da fáscia plantar, trabalho de estabilidade do tornozelo e rolar o pé na bolinha, tudo relevante para o pé cavo. Quando você aponta para o arco no mapa do corpo, o app oferece exercícios para essa região. Mas o app não tem uma meta ou um programa específico para pé cavo. Se o seu pé cavo causa dor embaixo do calcanhar, as metas de dor no calcanhar do app podem servir. Se a sua dor fica principalmente na parte da frente do pé ou está ligada a uma condição neurológica, quem deve orientar o seu plano de exercícios é um profissional de saúde.
 
@@ -5849,7 +5849,7 @@ O pé chato pode se misturar com outros problemas no pé, principalmente quando 
 - a dor está piorando semana após semana mesmo com exercício
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa decidir quais exercícios de arco fazer nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para um pé chato flexível, essa meta é sustentar o arco: manter o arco erguido por 60 segundos. Se você também tem dor no calcanhar, as manhãs sem dor vêm primeiro.
 
@@ -5893,7 +5893,7 @@ O pé chato (pé plano) aparece mais em alguns grupos, embora a pesquisa seja li
 
 Language: Portuguese, Brazil (Português) · https://walkito.site/pt/fascite-plantar/ · published 2026-10-08 · updated 2026-10-08
 
-A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor no calcanhar embaixo do pé. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.
+A fascite plantar é uma dor embaixo do calcanhar causada por sobrecarga na fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos. É a causa mais comum de dor na sola do calcanhar. A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau máximo e ao treino de força o segundo mais alto, e cerca de 90% das pessoas melhoram com tratamento sem cirurgia.
 
 - A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B (Koc e colegas, 2023).
 - Cerca de 90% das pessoas com fascite plantar melhoram com tratamento sem cirurgia, como alongamento, treino de força e calçados com bom suporte, muitas vezes em alguns meses (Latt e colegas, 2020).
@@ -5907,7 +5907,7 @@ A fascite plantar é uma condição de sobrecarga da fáscia plantar. A fáscia 
 
 Quando a fáscia recebe mais carga do que consegue recuperar, o tecido fica irritado perto de onde se prende no calcanhar. O nome termina em “-ite”, o que sugere inflamação, mas o entendimento atual aponta mais para um processo degenerativo no tecido do que para uma inflamação contínua. Alguns profissionais preferem dizer “fasciopatia plantar”. O nome não muda os sintomas nem a abordagem recomendada.
 
-A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor no calcanhar embaixo do pé.
+A diretriz clínica de 2023 do Journal of Orthopaedic & Sports Physical Therapy diz que ela é a causa mais reconhecida de dor na sola do calcanhar.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
@@ -6071,7 +6071,7 @@ Vários apps trazem exercícios para fascite plantar. Eles se diferenciam em se 
 - não melhorou depois de várias semanas de exercício e menos carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir quais exercícios fazer, em que ordem, nem quando avançar. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para fascite plantar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14 dias seguidos.
 
@@ -6238,7 +6238,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - a pele continua branca, dormente, com bolhas ou muito vermelha depois do gelo ou do calor
 - não melhorou depois de várias semanas de alongamento diário e menos carga
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Gelo e calor podem aliviar um dia ruim. O plano de exercícios é a parte que a diretriz apoia. O Walkito monta esse plano uma semana de cada vez em torno de uma meta principal. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14 dias seguidos. Os alongamentos estão no plano desde a primeira semana, e rolar o pé na bolinha aparece como um passo curto de recuperação.
 
@@ -6584,7 +6584,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - a dor não deixa você dormir ou aparece em repouso
 - não melhorou depois de várias semanas de alongamento diário e trabalho de panturrilha
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa decidir quando rolar o pé e quando alongar. O Walkito monta um plano uma semana de cada vez, com o exercício de rolar o pé na bolinha como um passo curto de recuperação e os alongamentos e o trabalho de panturrilha como a base. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos.
 
@@ -6720,7 +6720,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - não melhorou depois de várias semanas de alongamento diário e menos carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa lembrar os alongamentos, as doses nem quando passar para algo mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14 dias seguidos. Toda manhã você anota a sua dor antes do primeiro passo, e a sessão do dia se ajusta a essa nota.
 
@@ -6881,7 +6881,7 @@ Source: Matthews BG, Hurn SE, Harding MP, Henry RA, Ware RS. The effectiveness o
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 - a dor começou depois de uma lesão ou de uma pancada repentina na parte da frente do pé
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito foi feito para fascite plantar e pé chato, não para o neuroma de Morton. Mas os exercícios para a parte da frente do pé do app, incluindo abrir os dedos e o alongamento de panturrilha, trabalham a mesma distribuição de carga na parte da frente do pé que contribui para os sintomas do neuroma. Marcar a planta da parte da frente do pé no mapa de dor durante um check-in faz o app incluir abrir os dedos e o alongamento da fáscia plantar na sua sessão.
 
@@ -7090,7 +7090,7 @@ Source: Powell M, Post WR, Keener J, Wearden S. Effective treatment of chronic p
 - os dois calcanhares doem e a rigidez da manhã dura mais de 30 minutos, principalmente com outras articulações rígidas ou inchadas
 - nada mudou depois de um a três meses de alongamento e tala
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 A tala trabalha durante a noite. O exercício acontece durante o dia. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor nos primeiros passos de no máximo 1 em 10 por 14 dias seguidos. Alongamentos como estes estão no plano desde a primeira semana, e o fortalecimento da panturrilha avança no seu ritmo.
 
@@ -7235,7 +7235,7 @@ Se a dor de ficar em pé é a sua principal dúvida e você não trabalha na enf
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 - a dor não melhorou depois de várias semanas com plantões mais leves, calçados melhores e os exercícios desta página
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor nos pés segue o padrão de dor matinal da fascite plantar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos.
 
@@ -7401,7 +7401,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - ela acorda você à noite ou aparece em repouso
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 A recuperação leva tempo, e a parte mais difícil é saber se esse tempo está servindo para alguma coisa. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14 dias seguidos. Toda manhã você anota a sua dor, e a cada 14 dias um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver os números mudando.
 
@@ -7449,7 +7449,7 @@ O esporão no calcanhar é um crescimento de osso na parte de baixo do osso do c
 
 - Em um estudo com 216 idosos de 62 a 94 anos, 55% tinham pelo menos um esporão plantar no calcâneo no raio-X, e ter esporão estava ligado a obesidade e artrose, mas não à postura do pé (Menz e colegas, 2008). É uma amostra de idosos, não um número da população em geral.
 - Em um estudo com 530 pessoas de 50 anos ou mais com dor no pé, o esporão e a fáscia plantar espessada normalmente apareciam juntos, e o esporão sozinho era raro (6% dos pés). A dor no calcanhar estava ligada a ter os dois achados juntos (Menz e colegas, 2019).
-- A diretriz de 2023 para dor no calcanhar trata a fascite plantar como a causa mais comum de dor no calcanhar embaixo do pé e observa que exame de imagem normalmente não é necessário quando o exame clínico já aponta para fascite plantar (Koc e colegas, 2023).
+- A diretriz de 2023 para dor no calcanhar trata a fascite plantar como a causa mais comum de dor na sola do calcanhar e observa que exame de imagem normalmente não é necessário quando o exame clínico já aponta para fascite plantar (Koc e colegas, 2023).
 - O próprio estudo de Menz de 2008 observa que pesquisas anteriores na população em geral tinham estimado a prevalência de esporão em 11 a 16%, bem abaixo dos 55% encontrados na amostra de idosos deles (Menz e colegas, 2008).
 - Os exercícios que ajudam na dor da fascite plantar também trabalham o tecido mole em volta de um esporão. Exercício não dissolve o esporão, mas raramente é o esporão que precisa de atenção.
 
@@ -7577,7 +7577,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - não melhorou depois de várias semanas de alongamento, treino de panturrilha e menos carga
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Com ou sem esporão no raio-X, a abordagem de exercícios é a mesma. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos. O alongamento começa no primeiro dia. O treino de força da panturrilha entra quando a primeira meta deixa de ser acalmar a dor e passa a ser ganhar capacidade.
 
@@ -7778,7 +7778,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 - a dor não deixa você dormir ou aparece em repouso
 - você ainda precisa da fita todos os dias depois de um mês de alongamento e trabalho de panturrilha regulares
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 A fita pode deixar os próximos dias mais fáceis. Os exercícios são o que continua funcionando depois que você tira a fita. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14 dias seguidos. O alongamento começa no primeiro dia. A cada semana, só o exercício da sua meta principal pode subir um degrau, e só quando as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou.
 
@@ -7929,7 +7929,7 @@ Source: Kulig K, Lederhaus ES, Reischl S, Arya S, Bashford G. Effect of eccentri
 - os dois pés estão afetados e outras articulações estão inchadas ou rígidas, o que pode indicar artrite inflamatória
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito tem a inversão com faixa, o pé curto e a elevação de calcanhar no catálogo de exercícios, e coloca esses exercícios nos dias de força como parte de um programa de arco e equilíbrio. Quando você marca a parte de dentro do tornozelo ou o arco no mapa de dor durante um check-in, a sessão se ajusta a essa informação. O app foi feito para fascite plantar e pé chato. A DTTP se sobrepõe aos dois, mas o app não faz diagnóstico de DTTP e não substitui as órteses nem a classificação do estágio por um profissional de saúde.
 
@@ -8063,7 +8063,7 @@ O hálux rígido, rigidez e artrose da articulação do dedão, também pode cau
 - você não consegue apoiar de jeito nenhum a parte da frente do pé
 - você tem febre junto com a dor no pé
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 A sesamoidite é controlada principalmente com alívio de carga e calçado, não com um programa de exercícios. O Walkito foi feito para problemas como fascite plantar e pé chato, em que programas de carga estruturados têm apoio de ensaios. Se a sua sesamoidite passou e você quer reconstruir a força do pé e da panturrilha como parte da volta à atividade, o trabalho para os músculos pequenos do pé e os alongamentos de panturrilha do app podem ser um complemento útil.
 
@@ -8401,7 +8401,7 @@ Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial str
 - você não consegue apoiar a perna, ou está mancando
 - a perna está vermelha ou quente, ou você tem febre ou se sente mal
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito não tem um programa específico para canelite, e esta página explica por quê: nenhum programa de exercícios mostrou acelerar a recuperação da canelite em um ensaio. O que o Walkito tem é trabalho de panturrilha, tornozelo e equilíbrio que mira os mesmos músculos que os pesquisadores estudaram, e um plano que se adapta a como cada manhã está.
 
@@ -8504,7 +8504,7 @@ A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da 
 
 - **Alongamento de panturrilha (joelho esticado)** (2 vezes de 30 segundos, cada perna): Dê um passo para trás da mesa, apoie as mãos na borda da mesa ou numa parede e mantenha a perna de trás esticada, com o calcanhar no chão. Isso mira o gastrocnêmio, o músculo maior e mais superficial da panturrilha. Dá para fazer na hora de passar de em pé para sentado.
 - **Alongamento do sóleo (joelho dobrado)** (2 vezes de 30 segundos, cada perna): Mesma posição, mas dobre o joelho de trás até sentir o alongamento mais embaixo, mais perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
-- **Elevação de calcanhar sentado** (3 séries de 15, os dois pés): Sente-se à mesa com os pés apoiados no chão. Levante os dois calcanhares o mais alto que conseguir, segure um segundo e desça devagar. Isso trabalha o sóleo, o músculo mais profundo da panturrilha, e dá para fazer em qualquer pausa sentado sem sair da cadeira.
+- **Elevação de calcanhar sentada** (3 séries de 15, os dois pés): Sente-se à mesa com os pés apoiados no chão. Levante os dois calcanhares o mais alto que conseguir, segure um segundo e desça devagar. Isso trabalha o sóleo, o músculo mais profundo da panturrilha, e dá para fazer em qualquer pausa sentado sem sair da cadeira.
 - **Abrir os dedos** (3 séries de 10, segurando 5 segundos): Sente-se à mesa e abra os cinco dedos o máximo que conseguir, depois segure. Isso ativa os pequenos músculos entre os dedos, que ficam apertados dentro do calçado enquanto você está em pé. Dá para fazer sem o calçado durante uma pausa sentado.
 - **Pé curto, sentado** (3 séries de 10, segurando 5 segundos, cada pé): Sente-se com o pé apoiado no chão. Puxe a parte da frente do pé em direção ao calcanhar para o arco subir, sem dobrar os dedos. Isso treina os pequenos músculos dentro do arco que o sustentam quando você está em pé.
 - **Elevação de calcanhar com os dois pés (em pé)** (3 séries de 10, os dois pés): Fique em pé na mesa, suba reto por cima dos dedões em cerca de três segundos e desça devagar. Segure na borda da mesa para se equilibrar. A progressão detalhada, incluindo a versão com toalha, está em [elevação de calcanhar para fascite plantar](https://walkito.site/pt/elevacao-de-calcanhar-fascite-plantar/).
@@ -8518,7 +8518,7 @@ Os três ajudam, e os três são variações da mesma ideia: quebrar a postura p
 
 Um pequeno apoio para os pés ou uma barra baixa embaixo da mesa deixa você apoiar um pé e alternar a carga entre os lados. É uma estratégia antiga do chão de fábrica, e é uma das intervenções que a revisão de saúde ocupacional lista. Você não precisa de um produto especial para isso. Uma caixa firme ou uma prateleira baixa resolve.
 
-Pausas curtas para se mexer durante o tempo sentado são igualmente importantes. Levante, vá até a cozinha e volte, ou faça uma série da elevação de calcanhar sentado ou de abrir os dedos da tabela acima. O objetivo não é treinar. É evitar a postura parada que causa o problema.
+Pausas curtas para se mexer durante o tempo sentado são igualmente importantes. Levante, vá até a cozinha e volte, ou faça uma série da elevação de calcanhar sentada ou de abrir os dedos da tabela acima. O objetivo não é treinar. É evitar a postura parada que causa o problema.
 
 Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -8560,7 +8560,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 - a dor não melhorou depois de várias semanas com períodos mais curtos em pé, um tapete e os exercícios desta página
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir a ordem, as doses nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor com a mesa em pé segue o padrão de dor matinal da fascite plantar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14 dias seguidos.
 
@@ -8582,7 +8582,7 @@ Nenhum dos dois. A revisão de 2014 de Karakolis e Callaghan encontrou evidênci
 
 #### Que exercícios dá para fazer na mesa em pé?
 
-Em pé: alongamentos da panturrilha apoiado na borda da mesa (2 vezes de 30 segundos de cada lado) e elevação de calcanhar em pé (3 séries de 10). Nas pausas sentado: elevação de calcanhar sentado (3 séries de 15), abrir os dedos e o exercício do pé curto. Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.
+Em pé: alongamentos da panturrilha apoiado na borda da mesa (2 vezes de 30 segundos de cada lado) e elevação de calcanhar em pé (3 séries de 10). Nas pausas sentado: elevação de calcanhar sentada (3 séries de 15), abrir os dedos e o exercício do pé curto. Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.
 
 #### Por que meus pés doem mais parado em pé do que andando?
 
@@ -8685,7 +8685,7 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 - a dor não melhorou depois de várias semanas com menos carga, calçados melhores e os exercícios desta página
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor nos pés de ficar em pé é pior de manhã, a primeira meta é a mesma da dor no calcanhar: dor da manhã em 1/10 ou menos por 14 dias seguidos. Se os seus arcos também são baixos, o arco tem a sua própria meta e os seus próprios exercícios.
 
@@ -8869,7 +8869,7 @@ Se você usa salto na maioria dos dias, não precisa abrir mão dele. Intercale 
 - a tensão ou a dor muscular começou pouco depois de um remédio novo
 - a tensão está piorando ao longo dos meses mesmo com alongamento e fortalecimento
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito é um app para iPhone e Android com sessões curtas de exercícios para dor no calcanhar, no pé e na parte de baixo da perna em adultos. Alongamentos de panturrilha com o joelho esticado e dobrado, o balanço do tornozelo e a elevação de calcanhar fazem parte dele. O Walkito começa com 2 vezes de 30 segundos para cada alongamento e 3 séries de 10 para a elevação de calcanhar, e aumenta a dose conforme você avança.
 
@@ -8986,7 +8986,7 @@ O fortalecimento dos dedos funciona melhor como uma escada: primeiro controle, d
 
 O Walkito começa os exercícios de dedos e arco (pé curto, elevação do dedão, puxar a toalha com os dedos) com 3 séries de 8 e 5 segundos parado, e o abrir os dedos com 3 séries de 10. Essas são doses iniciais. O que provavelmente mais importa é deixar o trabalho mais difícil com o tempo.
 
-- **Elevação do dedão (ioga dos dedos)** (O Walkito começa com 3 séries de 8, 5 segundos parado, cada pé): Sente-se com os pés apoiados no chão. Levante só o dedão enquanto os quatro dedos menores pressionam o chão. Segure, abaixe e depois inverta: dedão no chão, dedos menores para cima. Técnica completa na página de [elevação do dedão](https://walkito.site/pt/exercicios/elevacao-do-dedao/).
+- **Elevação do dedão** (O Walkito começa com 3 séries de 8, 5 segundos parado, cada pé): Sente-se com os pés apoiados no chão. Levante só o dedão enquanto os quatro dedos menores pressionam o chão. Segure, abaixe e depois inverta: dedão no chão, dedos menores para cima. Técnica completa na página de [elevação do dedão](https://walkito.site/pt/exercicios/elevacao-do-dedao/).
 - **Abrir os dedos** (O Walkito começa com 3 séries de 10, cada pé): Com os pés no chão, abra os cinco dedos o máximo que conseguir sem tirá-los do chão, segure um instante e relaxe. Veja a página de [abrir os dedos do pé](https://walkito.site/pt/exercicios/abrir-os-dedos-do-pe/) para dicas se os dedos não se separam.
 - **Puxar a toalha com os dedos** (O Walkito começa com 3 séries de 8, 5 segundos parado, cada pé): Sente-se com uma toalha esticada embaixo do pé. Dobre os dedos para puxar a toalha na sua direção, segure e solte. Para pôr carga na etapa 3, coloque um livro ou um peso pequeno na ponta mais distante da toalha. Mais detalhes na página de [puxar a toalha com os dedos](https://walkito.site/pt/exercicios/puxar-toalha-dedos/).
 - **Exercício de pé curto** (O Walkito começa com 3 séries de 8, 5 segundos parado, cada pé): Sente-se com o pé apoiado no chão. Puxe a parte da frente do pé em direção ao calcanhar para o arco subir, sem dobrar os dedos. Segure e relaxe. Quando ficar fácil, faça em pé. A página do [exercício de pé curto](https://walkito.site/pt/exercicios/pe-curto/) explica as versões em pé e em uma perna.
@@ -9060,7 +9060,7 @@ Source: Mickle KJ, Caputi P, Potter JM, Steele JR. Efficacy of a progressive res
 - um dedo ou o pé está vermelho, quente e inchado, ou um dedo fica pálido, azulado ou frio
 - as câimbras nos dedos ou no arco voltam sempre e não passam com repouso
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito inclui a elevação do dedão, o abrir os dedos, o puxar a toalha com os dedos e o exercício de pé curto, e sobe um exercício de nível quando as suas duas últimas sessões com ele pareceram fáceis e a dor não aumentou. O trabalho de dedos e arco começa com 3 séries de 8 e 5 segundos parado, dentro de sessões de 3, 5 ou 10 minutos, 3, 5 ou 7 dias por semana.
 
@@ -9204,7 +9204,7 @@ Uma crise de gota aparece rápido, muitas vezes de um dia para o outro. A articu
 - há um caroço visível no peito do pé que está crescendo
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 O Walkito foi feito para dor no calcanhar e pé chato, não especificamente para dor no peito do pé. Mas se a sobrecarga dos tendões extensores faz parte do seu quadro, o fortalecimento do tibial anterior (elevação dos dedos) e o alongamento de panturrilha do app trabalham os desequilíbrios musculares que contribuem. Marcar o peito do pé no mapa de dor durante um check-in deixa o app acompanhar se a dor está mudando junto com os exercícios.
 
@@ -9391,7 +9391,7 @@ Escolha o Walkito se qualquer um destes pontos for verdade:
 - a dor está piorando de semana em semana mesmo com exercício constante
 - você tem diabetes, menos sensibilidade nos pés ou má circulação
 
-### Fazendo isso como um plano
+### Como transformar isso em um plano
 
 Se o Walkito parece combinar com a sua situação, é assim que ele funciona. Você responde perguntas sobre onde dói, de que lado, o seu nível de atividade e o seu objetivo. O Walkito monta um plano semanal em torno de metas medidas, começando por manhãs sem dor. Toda manhã, um check-in ajusta o dia.
 

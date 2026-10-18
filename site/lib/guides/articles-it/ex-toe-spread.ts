@@ -145,7 +145,7 @@ export const EX_TOE_SPREAD_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette l’apertura delle dita nei giorni di forza insieme ad altri esercizi per i muscoli intrinseci del piede. Il piano la alterna con l’esercizio del piede corto e l’inversione con elastico, così i muscoli del piede ricevono un lavoro vario senza sovraccaricarsi su un solo movimento. Scegli sessioni da 3, 5 o 10\u00A0minuti.',
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

@@ -42,16 +42,16 @@ export const PTTD_DE: Guide = {
     {
       h2: 'Welche Stadien hat die Tibialis-posterior-Insuffizienz?',
       paragraphs: [
-        'Medizinische Fachpersonen teilen die Tibialis-posterior-Insuffizienz in vier Stadien ein. Das Stadium entscheidet, ob Übungen und Einlagen wahrscheinlich helfen oder ob über einen Stiefel, eine Orthese oder eine Operation gesprochen werden sollte.',
+        'Ärztinnen, Ärzte und Physiotherapeuten teilen die Tibialis-posterior-Insuffizienz in vier Stadien ein. Das Stadium entscheidet, ob Übungen und Einlagen wahrscheinlich helfen oder ob über einen Stiefel, eine Orthese oder eine Operation gesprochen werden sollte.',
         {
           list: [
             '**Stadium I** heißt, die Sehne ist entzündet, aber noch intakt. Das Gewölbe sieht normal aus. Es gibt Schmerzen und manchmal eine leichte Schwellung hinter dem Innenknöchel. Die Kraft beim einbeinigen Fersenheben ist meist geringer als auf der anderen Seite, aber die Form des Fußes hat sich nicht verändert. Übungen und stützende Einlagen sind der wichtigste Ansatz.',
-            '**Stadium II** heißt, die Sehne hat sich verlängert oder ist teilweise gerissen. Das Gewölbe ist abgesunken und die Ferse kippt nach außen, aber die Fehlstellung ist noch flexibel, das heißt, eine Fachperson kann den Fuß wieder in Position drücken. Auf dieses Stadium bezieht sich der Großteil der Forschung zu Übungen. Einlagen, Dehnen und schrittweise gesteigerte Kräftigung sind das übliche konservative Programm.',
+            '**Stadium II** heißt, die Sehne hat sich verlängert oder ist teilweise gerissen. Das Gewölbe ist abgesunken und die Ferse kippt nach außen, aber die Fehlstellung ist noch flexibel, das heißt, eine Ärztin oder ein Arzt kann den Fuß wieder in Position drücken. Auf dieses Stadium bezieht sich der Großteil der Forschung zu Übungen. Einlagen, Dehnen und schrittweise gesteigerte Kräftigung sind das übliche konservative Programm.',
             '**Stadium III** heißt, die Fehlstellung ist starr geworden. Der Fuß lässt sich nicht mehr in eine korrigierte Position drücken, und oft gibt es arthrotische Veränderungen in den Gelenken unter dem Sprunggelenk. Übungen allein werden die Form des Fußes in diesem Stadium kaum ändern. Meist wird über eine chirurgische Einschätzung gesprochen.',
             '**Stadium IV** betrifft zusätzlich das Sprunggelenk. Das Sprunggelenk kippt in eine Valgusstellung, es neigt sich also nach außen. Das ist das am weitesten fortgeschrittene Stadium und braucht in der Regel einen chirurgischen Eingriff.',
           ],
         },
-        '**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Fachperson das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
+        '**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Ärztin oder ein Arzt das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -139,7 +139,7 @@ export const PTTD_DE: Guide = {
       paragraphs: [
         'Jede Übungsstudie zur Tibialis-posterior-Insuffizienz nutzte Einlagen als Teil der Grundbehandlung. **Einlagen wurden nicht gegen Übungen getestet, sondern Übungen kamen zusätzlich dazu.** Die randomisierte Studie von 2009 fand, dass schon Einlagen und Dehnen allein die Funktion verbesserten und dass zusätzliche Übungen sie weiter verbesserten.',
         'Eine feste oder halbfeste gewölbestützende Einlage verhindert, dass das Gewölbe beim Stehen und Gehen einsinkt. Bei den Übungen auf dieser Seite kannst du Einwärtsdrehen mit Band und den kurzen Fuß ohne Schuhe machen. Fersenheben solltest du aber in denselben stützenden Schuhen machen, in denen du gehst, weil das Gewölbe unter Last Unterstützung braucht.',
-        'Einlagen von der Stange können im Stadium I reichen. Maßeinlagen sind im Stadium II häufiger, weil die Fehlstellung dort größer ist. Eine medizinische Fachperson oder eine Podologin bzw. ein Podologe kann dir helfen zu entscheiden, was passt.',
+        'Einlagen von der Stange können im Stadium I reichen. Maßeinlagen sind im Stadium II häufiger, weil die Fehlstellung dort größer ist. Deine Ärztin, dein Arzt oder eine Podologin bzw. ein Podologe kann dir helfen zu entscheiden, was passt.',
       ],
       cites: [CITE.kuligRCT, CITE.posteriorTibialReview],
     },
@@ -148,7 +148,7 @@ export const PTTD_DE: Guide = {
       paragraphs: [
         'Ein Gehstiefel oder eine Sprunggelenksorthese wird im Stadium I oder II manchmal eingesetzt, wenn der Schmerz für Übungen zu stark ist. Der Stiefel stellt die Sehne ruhig, damit die akute Entzündung abklingen kann. **Das ist eine kurzfristige Maßnahme, kein langfristiges Programm.** Sobald der Schmerz weit genug gesunken ist, übernehmen Übungen und Einlagen.',
         'Über eine Operation wird meist gesprochen, wenn sich die Beschwerden mit konservativer Behandlung nach mehreren Monaten nicht gebessert haben oder wenn die Fehlstellung bis zum Stadium III oder IV fortgeschritten ist. Die Möglichkeiten reichen von Sehnennaht und Sehnentransfer in früheren Stadien bis zur Gelenkversteifung in späteren Stadien. Die Entscheidung hängt vom Stadium, vom Ausmaß der Fehlstellung und von der Person ab.',
-        'Diese Seite geht nicht im Detail auf Operationen ein. Wenn du im Stadium III oder IV bist oder wenn Beschwerden im Stadium II über mehrere Monate nicht auf Übungen und Einlagen angesprochen haben, kann eine Fachperson für Fuß und Sprunggelenk mit dir die nächsten Schritte besprechen.',
+        'Diese Seite geht nicht im Detail auf Operationen ein. Wenn du im Stadium III oder IV bist oder wenn Beschwerden im Stadium II über mehrere Monate nicht auf Übungen und Einlagen angesprochen haben, kann eine Fachärztin oder ein Facharzt für Fuß und Sprunggelenk mit dir die nächsten Schritte besprechen.',
       ],
       cites: [CITE.ling],
     },
@@ -157,7 +157,7 @@ export const PTTD_DE: Guide = {
       paragraphs: [
         'Die Tibialis-posterior-Insuffizienz ist die häufigste Ursache für einen erworbenen Plattfuß bei Erwachsenen, also einen Plattfuß, der im Erwachsenenalter entsteht und nicht seit der Kindheit da ist. **Wenn du normale Gewölbe hattest und eines davon einseitig abzusinken beginnt, mit Schmerz hinter dem Innenknöchel, ist eine Tibialis-posterior-Insuffizienz die wahrscheinlichste Erklärung.**',
         'Angeborene flexible Plattfüße, die seit der Kindheit bestehen, sind eine andere Situation. Sie machen vielleicht nie Beschwerden. Die Übungen überschneiden sich: kurzer Fuß, Einwärtsdrehen mit Band und Fersenheben kommen sowohl bei [Übungen bei Plattfuß](/de/plattfuss-uebungen/) als auch in Programmen bei Tibialis-posterior-Insuffizienz vor. Aber der klinische Zusammenhang ist anders, und eine Tibialis-posterior-Insuffizienz braucht meist Einlagen und engere Kontrolle, weil die Sehne degeneriert und nicht einfach nur nachgiebig ist.',
-        'Wenn du nicht sicher bist, ob dein Plattfuß schon lange besteht oder neu ist, kann eine Fachperson beide Füße vergleichen, die Sehne prüfen und die Stellung der Ferse im Stand ansehen.',
+        'Wenn du nicht sicher bist, ob dein Plattfuß schon lange besteht oder neu ist, kann eine Ärztin oder ein Arzt beide Füße vergleichen, die Sehne prüfen und die Stellung der Ferse im Stand ansehen.',
       ],
       cites: [CITE.ling, CITE.zarali],
     },
@@ -166,7 +166,7 @@ export const PTTD_DE: Guide = {
       keyFact: 'Eine kleine Pilotstudie mit zehn Patienten, die etwa zweieinhalb Monate lang zweimal täglich exzentrisch trainierten, fand eine Besserung der Beschwerden zusammen mit einigen Veränderungen der Sehne im Ultraschall (Kulig und Kollegen, 2009).',
       paragraphs: [
         'Die beiden randomisierten Studien liefen drei Monate. Beide zeigten am Ende des Programms eine Besserung, aber keine verfolgte die Teilnehmenden langfristig. Eine kleine Pilotstudie derselben Gruppe mit zehn Patienten lief ebenfalls etwa zweieinhalb Monate mit zweimal täglichem exzentrischem Training und fand eine Besserung der Beschwerden zusammen mit einigen Veränderungen der Sehne im Ultraschall.',
-        'In der Praxis **wird die Besserung im Stadium I oder II mit Übungen und Einlagen in Monaten gemessen, nicht in Wochen.** Eine Degeneration der Sehne bildet sich nicht schnell zurück. Realistisch sind weniger Schmerz und bessere Funktion über drei bis sechs Monate, danach mit laufenden Übungen zur Erhaltung. Wenn es nach drei Monaten regelmäßiger Übungen mit Einlagen keine Besserung gibt, lohnt es sich, das Stadium von einer Fachperson neu einschätzen zu lassen.',
+        'In der Praxis **wird die Besserung im Stadium I oder II mit Übungen und Einlagen in Monaten gemessen, nicht in Wochen.** Eine Degeneration der Sehne bildet sich nicht schnell zurück. Realistisch sind weniger Schmerz und bessere Funktion über drei bis sechs Monate, danach mit laufenden Übungen zur Erhaltung. Wenn es nach drei Monaten regelmäßiger Übungen mit Einlagen keine Besserung gibt, lohnt es sich, das Stadium ärztlich neu einschätzen zu lassen.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },
@@ -198,7 +198,7 @@ export const PTTD_DE: Guide = {
     },
     {
       q: 'Sind Schmerzen am Innenknöchel immer eine Tibialis-posterior-Insuffizienz?',
-      a: 'Die Tibialis-posterior-Insuffizienz ist eine der häufigeren Ursachen für Schmerzen an der Innenseite des Sprunggelenks, aber nicht die einzige. Andere Möglichkeiten sind eine Zerrung des Innenbands (Ligamentum deltoideum), ein Ermüdungsbruch des Kahnbeins oder ein Tarsaltunnelsyndrom (ein eingeklemmter Nerv). Eine Fachperson kann das mit einer körperlichen Untersuchung unterscheiden. Die Tibialis-posterior-Insuffizienz geht meist mit einem absinkenden Gewölbe und Schwierigkeiten beim einbeinigen Fersenheben einher.',
+      a: 'Die Tibialis-posterior-Insuffizienz ist eine der häufigeren Ursachen für Schmerzen an der Innenseite des Sprunggelenks, aber nicht die einzige. Andere Möglichkeiten sind eine Zerrung des Innenbands (Ligamentum deltoideum), ein Ermüdungsbruch des Kahnbeins oder ein Tarsaltunnelsyndrom (ein eingeklemmter Nerv). Eine Ärztin oder ein Arzt kann das mit einer körperlichen Untersuchung unterscheiden. Die Tibialis-posterior-Insuffizienz geht meist mit einem absinkenden Gewölbe und Schwierigkeiten beim einbeinigen Fersenheben einher.',
     },
     {
       q: 'Wann muss eine Tibialis-posterior-Insuffizienz operiert werden?',
@@ -215,7 +215,7 @@ export const PTTD_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'das Gewölbe auf einer Seite sichtbar abgesunken ist oder die Ferse im Stand nach außen kippt',
       'du auf der betroffenen Seite kein einbeiniges Fersenheben schaffst',
@@ -231,7 +231,7 @@ export const PTTD_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito hat Einwärtsdrehen mit Band, den kurzen Fuß und Fersenheben in seiner Übungsbibliothek und plant sie an Krafttagen als Teil eines Programms für Gewölbe und Gleichgewicht ein. Wenn du beim Check-in den Innenknöchel oder das Gewölbe als schmerzend markierst, passt sich die Einheit daran an. Die App ist für Plantarfasziitis und Plattfüße gebaut. Die Tibialis-posterior-Insuffizienz überschneidet sich mit beiden, aber die App stellt keine Diagnose und ersetzt weder Einlagen noch die klinische Einteilung in Stadien.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert. Wenn bei dir eine Tibialis-posterior-Insuffizienz festgestellt wurde, nutz die App zusammen mit Einlagen und klär mit deiner Fachperson, ob dein Stadium für Übungen geeignet ist.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert. Wenn bei dir eine Tibialis-posterior-Insuffizienz festgestellt wurde, nutz die App zusammen mit Einlagen und klär mit deiner Ärztin oder deinem Arzt, ob dein Stadium für Übungen geeignet ist.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

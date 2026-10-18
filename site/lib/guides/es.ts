@@ -289,7 +289,7 @@ export const FLAT_FEET_ES: Guide = {
     bullets: [...RED_FLAGS.bullets, 'el arco sigue plano cuando el pie no toca el piso'],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba ${PROGRAM.goals.archHoldSeconds}\u00A0segundos. Si además tienes dolor, primero van las mañanas más fáciles.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio, así puedes ver si el trabajo del arco está sirviendo de algo.`,
@@ -611,7 +611,7 @@ export const HEEL_PAIN_ES: Guide = {
   ],
   redFlags: RED_FLAGS,
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuánto tiempo quedarte en cada ejercicio. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1/10 o menos durante ${PROGRAM.painFreeDays}\u00A0días seguidos.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas esa meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver qué está cambiando.`,

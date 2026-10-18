@@ -197,7 +197,7 @@ export const FLAT_FEET_AGE_FR: Guide = {
         },
       ],
       sourceNote:
-        'Ross 2018\u00A0: 3\u00A0essais randomisés, n = 93, différences moyennes standardisées de 0,6 à 1,2 pour le renforcement excentrique avec orthèses et étirements. Kulig 2009\u00A0: n = 36, stade I ou II, trois bras, trois mois, Foot Function Index. Houck 2015\u00A0: n = 39, stade II, le renforcement ajouté a fait une différence minime. Brijwasi 2023\u00A0: n = 52, affaissement du naviculaire et Foot Posture Index, pas de critère de douleur.',
+        'Ross 2018\u00A0: 3\u00A0essais randomisés, n = 93, différences moyennes standardisées de 0,6 à 1,2 pour le renforcement excentrique avec orthèses et étirements. Kulig 2009\u00A0: n = 36, stade I ou II, trois bras, trois mois, Foot Function Index. Houck 2015\u00A0: n = 39, stade II, le renforcement ajouté a fait une différence minime. Brijwasi 2023\u00A0: n = 52, chute du naviculaire et Foot Posture Index, pas de critère de douleur.',
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD, CITE.brijwasi],
     },
     {

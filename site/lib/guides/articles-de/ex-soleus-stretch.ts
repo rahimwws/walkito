@@ -20,7 +20,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
   takeaways: [
     'Der Soleus zieht nur über das Sprunggelenk. Der Gastrocnemius zieht über Knie und Sprunggelenk. Wenn du das Knie beugst, wird der Gastrocnemius locker, und der Soleus übernimmt die Dehnung.',
     'Bei 254\u00A0Personen mit Plantarfasziitis hatten 23 bis 30\u00A0% eine Kontraktur in Gastrocnemius und Soleus (Patel und DiGiovanni, 2011).',
-    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Wadendehnen mit A, ihrer besten Bewertung, ohne die beiden Wadenmuskeln zu trennen (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Wadendehnen mit A, dem höchsten Empfehlungsgrad, ohne die beiden Wadenmuskeln zu trennen (Koc und Kollegen, 2023).',
     'Walkito beginnt mit 3-mal 30\u00A0Sekunden halten, jedes Bein, mit gebeugtem hinterem Knie.',
   ],
   toc: false,
@@ -85,7 +85,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
       h2: 'Wie die Soleusdehnung in ein Programm passt',
       paragraphs: [
         'Walkito kombiniert die Soleusdehnung in den meisten Einheiten mit der [Wadendehnung](/de/uebungen/wade-dehnen/) und der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/). Zusammen decken die drei Dehnungen die wichtigsten Strukturen ab, die an der Ferse ziehen. Die Reihenfolge spielt keine große Rolle, aber die Plantarfaszien-Dehnung zuerst zu machen, vor dem ersten Schritt am Tag, ist die am häufigsten wiederholte Anweisung.',
-        'Für die Kraftseite der Wade siehe [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) oder die einzelne Seite zum [Fersenheben](/de/uebungen/fersenheben/). Die Leitlinie von 2023 empfiehlt Kraft und Dehnen zusammen.',
+        'Für die Kraftseite der Wade siehe [Fersenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) oder die einzelne Seite zum [Fersenheben](/de/uebungen/fersenheben/). Die Leitlinie von 2023 empfiehlt Kraft und Dehnen zusammen.',
       ],
       cites: [CITE.guideline],
     },
@@ -111,7 +111,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Hör auf und geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Hör auf und geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz scharf ist und an einer Stelle in der Achillessehne sitzt, statt ein Zug im Muskel zu sein',
       'du beim Dehnen ein plötzliches Knallen oder Reißen spürst',
@@ -125,7 +125,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant die Soleusdehnung zusammen mit der Wadendehnung und der Plantarfaszien-Dehnung in die meisten Einheiten ein. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die App geht in deinem Tempo vom Dehnen zum Krafttraining über, nicht nach einem festen Kalender.',
     more: [
-      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Wenn die Beweglichkeit im Sprunggelenk über die Wochen besser wird, zeigt das, dass das Dehnen etwas bewirkt. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Wenn die Beweglichkeit im Sprunggelenk über die Wochen besser wird, zeigt das, dass das Dehnen etwas bewirkt. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

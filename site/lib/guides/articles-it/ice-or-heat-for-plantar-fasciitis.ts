@@ -241,7 +241,7 @@ export const ICE_HEAT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Ghiaccio e caldo possono smussare una brutta giornata. Il piano di esercizi è la parte che la linea guida sostiene. Walkito costruisce quel piano una settimana alla volta intorno a un obiettivo principale. Per il dolore al tallone, il primo obiettivo è un mattino migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Gli allungamenti sono nel piano dalla prima settimana, e il massaggio con la pallina compare come breve passo di recupero.',
     more: [
       'Ogni settimana, solo l’esercizio del tuo obiettivo principale può cambiare. Sale di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato, e scende di un gradino se una sessione è stata pesante o il dolore del mattino è salito di 2 o più punti.',

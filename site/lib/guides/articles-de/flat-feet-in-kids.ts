@@ -118,7 +118,7 @@ export const FLAT_FEET_KIDS_DE: Guide = {
         'Das Cochrane-Review von 2022 trug die Studienlage zusammen: 16\u00A0Studien mit 1.058\u00A0Kindern. Die Sicherheit der Belege war gering bis sehr gering. Das Fazit war deutlich: Für teure maßgefertigte Einlagen bei Kindern, deren Plattfüße nicht wehtun, gibt es keine Belege. Bei Kindern mit juveniler Arthritis können Einlagen Schmerzen und Funktion verbessern.',
         'Bei Plattfüßen, die wehtun, ist das Bild weniger klar. Eine Netzwerk-Metaanalyse von 2026 (eine Übersicht, die viele Optionen gleichzeitig vergleicht) über 11\u00A0Studien mit 761\u00A0Kindern fand, dass gewöhnliche Einlagen mit Gewölbestütze die Schmerzwerte stärker senkten als flache Einlagen, aber die Sicherheit dieses Ergebnisses war sehr gering.',
         'Eine große britische Studie zu Einlagen bei Kindern mit schmerzhaften Plattfüßen, genannt OSTRICH, musste während der COVID-19-Pandemie vorzeitig enden. Mit 134 von geplanten 478\u00A0Kindern konnte sie die Frage nicht beantworten.',
-        'Bei einem Kind mit schmerzenden Füßen schlägt eine Fachperson vielleicht trotzdem eine einfache Einlage von der Stange für mehr Komfort vor, aber ein Gewölbe baut sie nicht auf. Mehr zum Vergleich von Einlagen und Übungen findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
+        'Bei einem Kind mit schmerzenden Füßen schlägt die Ärztin oder der Arzt vielleicht trotzdem eine einfache Einlage von der Stange für mehr Komfort vor, aber ein Gewölbe baut sie nicht auf. Mehr zum Vergleich von Einlagen und Übungen findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
       ],
       cites: [CITE.wengerShoes, CITE.whitfordOrthoses, CITE.evansCochrane2022, CITE.linFlatfootNMA, CITE.cockayneOstrich],
       sourceNote: 'Lin und Kollegen, 2026: herkömmliche Einlagen gegenüber flachen Einlagen, mittlere Differenz −2,92\u00A0Punkte (95-%-KI −3,73 bis −2,11), Sicherheit der Belege sehr gering. In den Übungsstudien dieser Übersicht wurden Schmerzen nicht gemessen.',
@@ -157,10 +157,10 @@ export const FLAT_FEET_KIDS_DE: Guide = {
           alt: 'Eine Figur hält sich zum Gleichgewicht an einer Wand fest und geht mit beiden Füßen auf die Zehen',
         },
         {
-          name: 'Wadendehnung, wenn eine Fachperson eine verkürzte Wade festgestellt hat',
+          name: 'Wadendehnung, wenn eine Ärztin oder ein Arzt eine verkürzte Wade festgestellt hat',
           evidence: { level: 'early', why: 'Dehnen kommt häufig dazu, wenn die Fersensehne verkürzt ist. In Studien mit Kindern war es Teil umfassenderer Programme, nicht allein.' },
           dose: '2-mal etwa 30\u00A0Sekunden halten, jedes Bein',
-          often: 'Einmal am Tag, nur wenn eine Fachperson es vorgeschlagen hat',
+          often: 'Einmal am Tag, nur wenn eine Ärztin oder ein Arzt es vorgeschlagen hat',
           feel: 'Eine sanfte Dehnung in der Wade',
           stop: 'Jeder stechende Schmerz oder Schmerz hinter der Ferse',
           how: 'Stell dich mit dem Gesicht zur Wand, ein Fuß nach hinten, das hintere Knie gestreckt und die Ferse unten. Lehn dich zur Wand, bis die hintere Wade eine sanfte Dehnung spürt, und halte.',
@@ -205,7 +205,7 @@ export const FLAT_FEET_KIDS_DE: Guide = {
     },
     {
       q: 'Sollte mein Kind wegen Plattfüßen Einlagen tragen?',
-      a: 'Nicht, wenn die Plattfüße nicht wehtun. Ein Cochrane-Review von 2022 über 16\u00A0Studien mit 1.058\u00A0Kindern fand keine Belege für maßgefertigte Einlagen bei Kindern mit schmerzfreien flexiblen Plattfüßen. Bei einem Kind mit schmerzenden Füßen schlägt eine Fachperson vielleicht eine einfache Einlage von der Stange für mehr Komfort vor, auch wenn die Sicherheit der Belege dafür sehr gering ist.',
+      a: 'Nicht, wenn die Plattfüße nicht wehtun. Ein Cochrane-Review von 2022 über 16\u00A0Studien mit 1.058\u00A0Kindern fand keine Belege für maßgefertigte Einlagen bei Kindern mit schmerzfreien flexiblen Plattfüßen. Bei einem Kind mit schmerzenden Füßen schlägt die Ärztin oder der Arzt vielleicht eine einfache Einlage von der Stange für mehr Komfort vor, auch wenn die Sicherheit der Belege dafür sehr gering ist.',
       cites: [CITE.evansCochrane2022, CITE.linFlatfootNMA],
     },
     {
@@ -224,7 +224,7 @@ export const FLAT_FEET_KIDS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'Fuß, Sprunggelenk oder Bein wehtun, vor allem wenn die Schmerzen dein Kind vom Rennen oder Spielen abhalten',
       'der Fuß steif ist oder kein Gewölbe erscheint, wenn dein Kind auf den Zehenspitzen steht',

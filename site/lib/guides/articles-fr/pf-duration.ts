@@ -29,7 +29,7 @@ export const PF_DURATION_FR: Guide = {
     'Une revue de 2020 indique qu’environ 90\u00A0% des fasciites plantaires répondent aux soins non chirurgicaux, souvent en quelques mois (Latt et coll., 2020).',
     'Une cohorte à plus long terme de 174\u00A0patients a montré que le risque d’avoir encore une fasciite plantaire était de 80,5\u00A0% à un an, 50,0\u00A0% à cinq ans et 45,6\u00A0% à dix ans après le début des symptômes (Hansen et coll., 2018).',
     'Dans cette cohorte, être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et l’épine calcanéenne n’avaient pas d’effet significatif sur l’évolution (Hansen et coll., 2018).',
-    'La recommandation de 2023 sur la douleur au talon donne aux étirements la note **A** et au renforcement musculaire un **B**. Les attelles de nuit pour une douleur du matin qui persiste reçoivent un **A**, et le laser de basse intensité ou le dry needling par un professionnel de santé un **B** (Koc et coll., 2023).',
+    'La recommandation de 2023 sur la douleur au talon donne aux étirements la note **A** et au renforcement musculaire un **B**. Les attelles de nuit pour une douleur du matin qui persiste reçoivent un **A**, et le laser de basse intensité ou la puncture sèche (dry needling) par un professionnel de santé un **B** (Koc et coll., 2023).',
     'La douleur du matin sur une échelle de 0 à 10, notée chaque jour, est la façon la plus pratique de voir si la récupération va dans le bon sens.',
   ],
   toc: true,
@@ -53,17 +53,17 @@ export const PF_DURATION_FR: Guide = {
         'Ces chiffres semblent pires que le «\u00A0ça passe en quelques mois\u00A0» habituel. Deux choses expliquent l’écart\u00A0:',
         {
           list: [
-            '**D’abord,** la cohorte de Hansen était une population adressée à un spécialiste\u00A0: 93\u00A0% avaient reçu une infiltration de cortisone, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.',
+            '**D’abord,** la cohorte de Hansen était une population adressée à un spécialiste\u00A0: 93\u00A0% avaient reçu une infiltration de corticoïdes, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.',
             '**Ensuite,** les patients qui avaient encore des symptômes au suivi ne signalaient en moyenne qu’une douleur légère, environ 2 à 3 sur 10 à la marche. «\u00A0Encore des symptômes à dix ans\u00A0» ne veut donc pas forcément dire «\u00A0incapable de marcher\u00A0». Pour beaucoup, cela voulait dire une gêne occasionnelle au lieu de la vive douleur des premiers pas du début.',
           ],
         },
       ],
       sourceNote:
-        'Hansen 2018\u00A0: risque de FP selon Kaplan-Meier\u00A0: 80,5\u00A0% (IC à 95\u00A0% 73,5-85,6) à 1\u00A0an, 50,0\u00A0% (42,4-57,1) à 5\u00A0ans, 45,6\u00A0% (37,9-53,0) à 10\u00A0ans, 44,0\u00A0% (35,9-51,8) à 15\u00A0ans. Durée moyenne des symptômes dans le groupe asymptomatique\u00A0: 725\u00A0jours (de 41 à 4018). Score NRS du groupe symptomatique au suivi\u00A0: 0,7 au repos, 1,8 à la marche, 2,8 à la course, 2,1 à la pression.',
+        'Hansen 2018\u00A0: risque de fasciite plantaire persistante selon Kaplan-Meier\u00A0: 80,5\u00A0% (IC à 95\u00A0% 73,5-85,6) à 1\u00A0an, 50,0\u00A0% (42,4-57,1) à 5\u00A0ans, 45,6\u00A0% (37,9-53,0) à 10\u00A0ans, 44,0\u00A0% (35,9-51,8) à 15\u00A0ans. Durée moyenne des symptômes dans le groupe asymptomatique\u00A0: 725\u00A0jours (de 41 à 4018). Score sur l’échelle numérique (EN) du groupe symptomatique au suivi\u00A0: 0,7 au repos, 1,8 à la marche, 2,8 à la course, 2,1 à la pression.',
       cites: [CITE.latt, CITE.hansen],
     },
     {
-      h2: 'La fasciite plantaire part-elle toute seule\u00A0?',
+      h2: 'La fasciite plantaire disparaît-elle d’elle-même\u00A0?',
       paragraphs: [
         'Parfois. Certaines personnes se réveillent un matin et la douleur a disparu, sans rien de particulier. Mais «\u00A0ça passe tout seul\u00A0» n’est pas une prédiction utile pour une personne donnée, car il n’y a aucun moyen de savoir à l’avance si vous faites partie de ce groupe.',
         'Ce que disent les données, c’est qu’agir, en s’étirant, en renforçant le mollet et en portant des chaussures qui soutiennent le pied, a tendance à accélérer l’amélioration. Dans l’essai de Rathleff, 48\u00A0personnes atteintes de fasciite plantaire ont été réparties en deux groupes\u00A0:',
@@ -85,15 +85,15 @@ export const PF_DURATION_FR: Guide = {
         'La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée des symptômes. Deux sont ressortis significatifs\u00A0:',
         {
           list: [
-            '**Être une femme.** Pour 100\u00A0hommes qui devenaient asymptomatiques par an, seules 49\u00A0femmes l’étaient (rapport de taux de risque 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).',
-            '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de taux de risque 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
+            '**Être une femme.** Pour 100\u00A0hommes qui devenaient asymptomatiques par an, seules 49\u00A0femmes l’étaient (rapport de risques, ou hazard ratio, 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).',
+            '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
           ],
         },
         'L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une épine calcanéenne n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
         'Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.',
       ],
       sourceNote:
-        'Régression de Cox de Hansen 2018\u00A0: sexe féminin HRR 0,49 (IC à 95\u00A0% 0,30-0,80, p < 0,01), douleur bilatérale HRR 0,33 (0,15-0,72, p < 0,01). IMC (>25 contre ≤25)\u00A0: HRR 0,65 (0,40-1,06, p = 0,09). Âge (>40 contre ≤40)\u00A0: HRR 1,93 (0,99-3,73, p = 0,05). Épine calcanéenne\u00A0: HRR 0,96 (0,56-1,63, p = 0,88).',
+        'Régression de Cox de Hansen 2018\u00A0: sexe féminin HR 0,49 (IC à 95\u00A0% 0,30-0,80, p < 0,01), douleur bilatérale HR 0,33 (0,15-0,72, p < 0,01). IMC (>25 contre ≤25)\u00A0: HR 0,65 (0,40-1,06, p = 0,09). Âge (>40 contre ≤40)\u00A0: HR 1,93 (0,99-3,73, p = 0,05). Épine calcanéenne\u00A0: HR 0,96 (0,56-1,63, p = 0,88).',
       cites: [CITE.hansen],
     },
     {
@@ -101,7 +101,7 @@ export const PF_DURATION_FR: Guide = {
       paragraphs: [
         'Il n’y a pas de définition unique reconnue. Certaines sources parlent de fasciite plantaire chronique au-delà de trois mois, d’autres au-delà de six mois. La recommandation de 2023 ne fixe pas de limite. Une revue de 2020 définit la fasciite plantaire chronique comme «\u00A0la cause la plus fréquente de douleur chronique au talon chez l’adulte\u00A0», sans donner de seuil en mois (Latt et coll., 2020).',
         '**Plus que l’étiquette, c’est le schéma qui compte.** Une fasciite plantaire chronique veut en général dire que la vive douleur aux premiers pas du matin est devenue une douleur plus sourde et plus constante.',
-        'Le tissu change aussi avec le temps\u00A0: le suffixe «\u00A0-ite\u00A0» évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de cortisone, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.',
+        'Le tissu change aussi avec le temps\u00A0: le suffixe «\u00A0-ite\u00A0» évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de corticoïdes, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.',
         'Si vous avez une fasciite plantaire depuis plus de quelques mois et qu’elle ne s’améliore pas clairement, la section suivante présente ce que conseille la recommandation.',
       ],
       cites: [CITE.latt, CITE.guideline],
@@ -114,9 +114,9 @@ export const PF_DURATION_FR: Guide = {
         {
           list: [
             '**Les premières semaines.** La douleur du matin peut ne pas beaucoup changer. L’essai de Rathleff a montré une différence nette entre les groupes à trois mois, pas à trois semaines. Au début, le principal changement est que les exercices deviennent plus faciles à faire et que le mollet paraît moins raide. Cela vaut la peine de le remarquer, même si le talon fait encore mal.',
-            '**Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est un peu plus basse plus souvent qu’autrement, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).',
+            '**Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29\u00A0points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est le plus souvent un peu plus faible, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).',
             '**Trois à six mois.** La fourchette «\u00A0souvent en trois à six mois\u00A0» de la revue de 2020 place ici le milieu de l’amélioration pour la plupart des personnes qui font les exercices conseillés et portent des chaussures qui soutiennent le pied (Latt et coll., 2020).',
-            '**Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà\u00A0: la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration ralentit. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.',
+            '**Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà\u00A0: la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration a ralenti. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.',
           ],
         },
         '**Le chiffre utile n’est pas «\u00A0dans combien de semaines j’en aurai fini\u00A0» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?\u00A0».** Cette tendance est le vrai repère.',
@@ -137,12 +137,12 @@ export const PF_DURATION_FR: Guide = {
           ['Strapping du pied (rigide ou élastique)', '**A**', 'Meilleure note pour la douleur et la fonction à court terme, en plus d’autres soins.'],
           ['Attelles de nuit pendant 1 à 3\u00A0mois (douleur du matin qui persiste)', '**A**', 'Meilleure note pour les personnes dont les premiers pas restent douloureux. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/).'],
           ['Exercices contre résistance et renforcement (par ex. montées sur pointes avec charge)', '**B**', 'Deuxième meilleure note. A accéléré l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
-          ['Laser de basse intensité et dry needling (par un professionnel de santé)', '**B**', 'Deuxième meilleure note. Les deux se font en cabinet.'],
+          ['Laser de basse intensité et puncture sèche (dry needling), par un professionnel de santé', '**B**', 'Deuxième meilleure note. Les deux se font en cabinet.'],
           ['Semelles orthopédiques seules pour soulager la douleur à court terme', '**B contre**', 'La recommandation **déconseille** les semelles orthopédiques comme approche isolée à court terme.'],
           ['Semelles orthopédiques associées à d’autres soins', '**C**', 'Preuves faibles. Peuvent aider dans le cadre d’un programme plus large.'],
           ['Ultrasons thérapeutiques ajoutés aux étirements', '**A contre**', 'La recommandation le **déconseille**. Les preuves ne soutiennent pas leur ajout aux étirements.'],
           ['Infiltration de corticoïdes', 'Non notée dans la recommandation de 2023 pour un usage à long terme', 'Peut soulager la douleur à court terme. La cohorte de Hansen n’a montré aucun bénéfice à long terme des infiltrations sur l’évolution, et la recommandation ne les conseille pas comme approche isolée.'],
-          ['Ondes de choc', 'Discutées, preuves partagées', 'Certaines études rapportent un bénéfice dans les cas qui persistent. Les preuves ne sont pas assez solides pour une note claire dans la recommandation.'],
+          ['Ondes de choc', 'Débattues, résultats contradictoires', 'Certaines études rapportent un bénéfice dans les cas qui persistent. Les preuves ne sont pas assez solides pour une note claire dans la recommandation.'],
         ],
       },
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
@@ -150,7 +150,7 @@ export const PF_DURATION_FR: Guide = {
     {
       h2: 'Quand consulter si la fasciite plantaire ne s’améliore pas\u00A0?',
       paragraphs: [
-        'Le tableau ci-dessus est clair\u00A0: **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, dry needling, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
+        'Le tableau ci-dessus est clair\u00A0: **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, puncture sèche, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
         'Si vous faites les exercices régulièrement depuis plusieurs mois et que la douleur du matin ne s’améliore pas, c’est un bon moment pour consulter un professionnel de santé et parler des options ci-dessus. C’est aussi un bon moment pour vérifier que le diagnostic est le bon\u00A0: voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour les autres problèmes qui partagent le même schéma.',
         'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) traitent de cet aspect.',
       ],
@@ -178,9 +178,9 @@ export const PF_DURATION_FR: Guide = {
       a: 'Pour beaucoup de gens, oui. Dans la cohorte de Hansen 2018, 54\u00A0% n’avaient plus du tout de symptômes après un suivi moyen de 9,7\u00A0ans. Chez ceux qui allaient mieux, la durée moyenne des symptômes était d’environ 725\u00A0jours. Certains avaient encore une légère gêne occasionnelle, mais notaient 0 sur toutes les échelles de douleur. La récupération était plus lente chez les femmes et chez les personnes qui avaient mal aux deux talons.',
     },
     {
-      q: 'Pourquoi ma fasciite plantaire ne s’améliore pas\u00A0?',
+      q: 'Pourquoi ma fasciite plantaire ne s’améliore-t-elle pas\u00A0?',
       cites: [CITE.guideline],
-      a: 'Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les attelles de nuit, le laser ou le dry needling.',
+      a: 'Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les attelles de nuit, le laser ou la puncture sèche (dry needling).',
     },
     {
       q: 'Une épine calcanéenne fait-elle durer la fasciite plantaire plus longtemps\u00A0?',

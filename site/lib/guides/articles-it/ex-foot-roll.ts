@@ -143,7 +143,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito mette il massaggio con la pallina a fine sessione e nei giorni di recupero. L’app gestisce tempi e ordine, così non devi ricordarti in quali giorni fare il massaggio e in quali allungare o rinforzare.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',

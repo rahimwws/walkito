@@ -237,7 +237,7 @@ export const HAGLUNDS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'La progresión de carga de pantorrilla de Walkito va de elevaciones sentado a elevaciones con dos pies, una elevación sostenida, descensos excéntricos de talón y más. Para la deformidad de Haglund y el dolor insercional del Aquiles, cada paso se queda a nivel del piso en lugar de bajar por debajo de la orilla de un escalón. Walkito te sube de nivel una vez que dos sesiones en el nivel actual se sintieron fáciles, en lugar de seguir un calendario fijo.',
     more: [
       'Las sesiones son de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito es un programa de ejercicios. No diagnostica. Si tienes un bulto visible en la parte de atrás del talón y no estás seguro de qué está causando el dolor, pide a un profesional de la salud que lo revise antes de empezar a cargarlo.',

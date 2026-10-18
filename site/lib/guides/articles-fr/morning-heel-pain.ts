@@ -186,7 +186,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
     {
       q: 'Que faut-il éviter quand le talon fait mal le matin\u00A0?',
       cites: [CITE.guideline],
-      a: 'Évitez de marcher pieds nus sur un sol dur juste après le réveil, et ne sautez pas l’étirement avant de vous lever. Le fascia est au plus raide à ce moment-là, donc poser le pied sur du carrelage ou du parquet sans amorti déclenche souvent une vive douleur aux premiers pas. Mettez des chaussures qui soutiennent le pied ou des chaussons fermes avant de quitter la chambre, et étirez-vous encore assis sur le lit.',
+      a: 'Évitez de marcher pieds nus sur un sol dur juste après le réveil, et ne sautez pas l’étirement avant de vous lever. Le fascia est particulièrement raide à ce moment-là, donc poser le pied sur du carrelage ou du parquet sans amorti déclenche souvent une vive douleur aux premiers pas. Mettez des chaussures qui soutiennent le pied ou des chaussons fermes avant de quitter la chambre, et étirez-vous encore assis sur le lit.',
     },
     {
       q: 'Quels remèdes maison contre la douleur au talon le matin\u00A0?',

@@ -59,7 +59,7 @@ export const MORTONS_DE: Guide = {
       paragraphs: [
         'Breitere Schuhe mit niedrigem Absatz und eine Mittelfußpelotte sind der am häufigsten empfohlene erste Schritt beim Morton-Neurom. Die Pelotte sitzt direkt hinter den Mittelfußköpfchen, nicht direkt darunter, damit sie die Schäfte der Mittelfußknochen anhebt und spreizt und so den Druck auf den Nerv senkt.',
         'Gut sitzende Schuhe mit breiter Zehenbox, niedrigem Absatz und Mittelfußpelotte wurden in zwei Studien einer systematischen Übersichtsarbeit von 2019 untersucht. Beide Studien zusammengenommen waren Schuhe und Pelotte bei etwa 32\u00A0% der Menschen erfolgreich, bei einer Nachbeobachtung von durchschnittlich viereinhalb Monaten. Eine randomisierte Studie, die Schuhe und Pelotte mit einer Kortisonspritze verglich, fand aber, dass die Gruppe mit Spritze nach sechs Monaten eine sechsmal höhere Erfolgschance hatte.',
-        'Für die Praxis heißt das: **Andere Schuhe und Pelotten haben wenig Risiko und sind einen ersten Versuch wert.** Bei manchen wirken sie, bei anderen nicht. Wenn sie nach vier bis sechs Wochen nicht geholfen haben, ist der nächste Schritt meist ein Termin bei einer Fachperson, um über Spritzen oder weitere Bildgebung zu sprechen.',
+        'Für die Praxis heißt das: **Andere Schuhe und Pelotten haben wenig Risiko und sind einen ersten Versuch wert.** Bei manchen wirken sie, bei anderen nicht. Wenn sie nach vier bis sechs Wochen nicht geholfen haben, ist der nächste Schritt meist ein Arzttermin, um über Spritzen oder weitere Bildgebung zu sprechen.',
         'Die Position zählt. Eine Pelotte, die zu weit vorn sitzt, direkt unter dem Mittelfußköpfchen, kann den Druck erhöhen statt senken. Selbstklebende Mittelfußpelotten aus der Apotheke sind günstig genug zum Ausprobieren, aber die richtige Position braucht etwas Herumprobieren. Eine Podologin oder ein Podologe kann eine Maßeinlage anpassen, wenn Pelotten von der Stange nicht helfen.',
       ],
       cites: [CITE.matthewsSR],
@@ -80,7 +80,7 @@ export const MORTONS_DE: Guide = {
           ],
         },
         'Die systematische Übersichtsarbeit von 2019 fand für Kortisonspritzen und Manipulation die stärksten Belege für eine kurzfristige Schmerzlinderung, forderte aber mehr hochwertige randomisierte Studien. Das Cochrane-Review von 2024 kam zum selben Schluss: Nach 20\u00A0weiteren Jahren Forschung seit dem ersten Cochrane-Review von 2004 **gibt es immer noch nicht genug hochwertige Belege für feste Schlussfolgerungen zu irgendeiner einzelnen Maßnahme.**',
-        'Das heißt nicht, dass Spritzen nutzlos sind. Es heißt, dass die Belege nicht stark genug sind, um einen Ansatz klar über einen anderen zu stellen. Eine Fachperson kann mit dir über die Möglichkeiten, die Risiken und die Erwartungen sprechen. Eine Kortisonspritze bringt vielen Menschen eine gute kurzfristige Linderung, aber wiederholte Spritzen bergen Risiken für das umliegende Gewebe.',
+        'Das heißt nicht, dass Spritzen nutzlos sind. Es heißt, dass die Belege nicht stark genug sind, um einen Ansatz klar über einen anderen zu stellen. Eine Ärztin oder ein Arzt kann mit dir über die Möglichkeiten, die Risiken und die Erwartungen sprechen. Eine Kortisonspritze bringt vielen Menschen eine gute kurzfristige Linderung, aber wiederholte Spritzen bergen Risiken für das umliegende Gewebe.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
     },
@@ -89,7 +89,7 @@ export const MORTONS_DE: Guide = {
       paragraphs: [
         'Über eine Operation wird meist nachgedacht, wenn konservative Behandlung, also andere Schuhe, Pelotten und ein oder zwei Spritzen, keine dauerhafte Linderung gebracht hat. Der häufigste Eingriff ist die Neurektomie, die operative Entfernung des verdickten Nervenabschnitts. Sie hilft vielen, hinterlässt aber eine dauerhafte Taubheit zwischen den betroffenen Zehen, weil der Nerv, der dort für das Gefühl zuständig war, fehlt.',
         'Andere Möglichkeiten sind eine Nervendekompression (das quere Mittelfußband wird durchtrennt, ohne den Nerv zu entfernen) und eine Umstellungsosteotomie des Mittelfußknochens (der Knochen wird umgeformt, um dem Nerv mehr Platz zu geben). Das Cochrane-Review von 2024 fand für Vergleiche zwischen Operationen Belege mit niedriger Vertrauenswürdigkeit, ohne klaren Sieger zwischen einer Neurektomie über einen Schnitt an der Fußsohle oder am Fußrücken bei Zufriedenheit oder Nebenwirkungen.',
-        '**Eine Operation ist kein erster Schritt.** Die meisten Fachleute empfehlen zuerst einen geplanten Versuch mit konservativer Behandlung über mehrere Monate. Wenn du an diesem Punkt bist, kann dir eine Fachperson für Fuß und Sprunggelenk die Möglichkeiten erklären und was dich bei der Erholung erwartet.',
+        '**Eine Operation ist kein erster Schritt.** Die meisten Fachleute empfehlen zuerst einen geplanten Versuch mit konservativer Behandlung über mehrere Monate. Wenn du an diesem Punkt bist, kann dir eine Fachärztin oder ein Facharzt für Fuß und Sprunggelenk die Möglichkeiten erklären und was dich bei der Erholung erwartet.',
       ],
       cites: [CITE.matthewsCochrane],
     },
@@ -174,7 +174,7 @@ export const MORTONS_DE: Guide = {
     },
     {
       q: 'Was ist der Unterschied zwischen Morton-Neurom und Metatarsalgie?',
-      a: 'Metatarsalgie ist ein weiter Begriff für Schmerzen unter dem Fußballen. Das Morton-Neurom ist eine bestimmte Ursache unter diesem Oberbegriff. Metatarsalgie ist eher ein dumpfer bis stechender Schmerz unter den Mittelfußköpfchen. Ein Morton-Neurom verursacht Brennen oder Kribbeln zwischen den Zehen, meist zwischen der dritten und vierten, und kann Taubheit auslösen. Eine Fachperson kann beides mit einer körperlichen Untersuchung unterscheiden.',
+      a: 'Metatarsalgie ist ein weiter Begriff für Schmerzen unter dem Fußballen. Das Morton-Neurom ist eine bestimmte Ursache unter diesem Oberbegriff. Metatarsalgie ist eher ein dumpfer bis stechender Schmerz unter den Mittelfußköpfchen. Ein Morton-Neurom verursacht Brennen oder Kribbeln zwischen den Zehen, meist zwischen der dritten und vierten, und kann Taubheit auslösen. Eine Ärztin oder ein Arzt kann beides mit einer körperlichen Untersuchung unterscheiden.',
     },
     {
       q: 'Helfen Mittelfußpelotten beim Morton-Neurom?',
@@ -187,7 +187,7 @@ export const MORTONS_DE: Guide = {
     },
     {
       q: 'Geht ein Morton-Neurom von allein weg?',
-      a: 'Manche merken, dass der Wechsel zu breiteren Schuhen mit niedrigem Absatz reicht, damit die Beschwerden über Wochen bis Monate abklingen. Bei anderen bleibt die Verdickung des Nervs, und die Beschwerden kommen zurück, sobald der Vorfuß zusammengedrückt wird. Die Veränderung selbst bildet sich nicht zurück, aber die Beschwerden lassen sich in den Griff bekommen. Wenn konservative Schritte nach einigen Wochen nicht geholfen haben, kann eine Fachperson mit dir über eine Spritze oder andere Möglichkeiten sprechen.',
+      a: 'Manche merken, dass der Wechsel zu breiteren Schuhen mit niedrigem Absatz reicht, damit die Beschwerden über Wochen bis Monate abklingen. Bei anderen bleibt die Verdickung des Nervs, und die Beschwerden kommen zurück, sobald der Vorfuß zusammengedrückt wird. Die Veränderung selbst bildet sich nicht zurück, aber die Beschwerden lassen sich in den Griff bekommen. Wenn konservative Schritte nach einigen Wochen nicht geholfen haben, kann eine Ärztin oder ein Arzt mit dir über eine Spritze oder andere Möglichkeiten sprechen.',
     },
     {
       q: 'Helfen Kortisonspritzen beim Morton-Neurom?',
@@ -205,7 +205,7 @@ export const MORTONS_DE: Guide = {
     },
     {
       q: 'Was ist der Mulder-Test beim Morton-Neurom?',
-      a: 'Der Mulder-Test, manchmal auch Mulder-Klick genannt, ist eine körperliche Untersuchung, mit der eine Fachperson die Diagnose Morton-Neurom stützt. Dabei wird der Vorfuß seitlich zusammengedrückt, während zwischen den Mittelfußköpfchen Druck ausgeübt wird. Ein tastbares Klicken oder Schnappen zusammen mit dem bekannten brennenden Schmerz spricht für die Diagnose, aber andere Ursachen müssen trotzdem ausgeschlossen werden.',
+      a: 'Der Mulder-Test, manchmal auch Mulder-Klick genannt, ist eine körperliche Untersuchung, mit der eine Ärztin oder ein Arzt die Diagnose Morton-Neurom stützt. Dabei wird der Vorfuß seitlich zusammengedrückt, während zwischen den Mittelfußköpfchen Druck ausgeübt wird. Ein tastbares Klicken oder Schnappen zusammen mit dem bekannten brennenden Schmerz spricht für die Diagnose, aber andere Ursachen müssen trotzdem ausgeschlossen werden.',
     },
     {
       q: 'Ist Gehen gut bei einem Neurom am Fuß?',
@@ -213,7 +213,7 @@ export const MORTONS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz ständig da ist, auch in Ruhe, und nicht nur beim Gehen oder in Schuhen',
       'eine Taubheit auch zwischen den Schmerzphasen nicht weggeht',

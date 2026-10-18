@@ -100,7 +100,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       h2: 'Quali sintomi indicano che il piede piatto richiede attenzione?',
       paragraphs: [
-        'La maggior parte dei piedi piatti non dà sintomi e non richiede accertamenti medici. Un piede piatto flessibile che c’è dall’infanzia e non fa male è una normale variante della forma del piede. Questi sono gli schemi da far controllare a un professionista sanitario:',
+        'La maggior parte dei piedi piatti non dà sintomi e non richiede accertamenti medici. Un piede piatto flessibile che c’è dall’infanzia e non fa male è una normale variante della forma del piede. Questi sono i quadri da far controllare a un professionista sanitario:',
       ],
       bullets: [
         'Dolore lungo l’interno della caviglia o sotto l’arco che non si calma con il riposo.',
@@ -117,7 +117,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       paragraphs: [
         'Scarpe con un buon sostegno, un’intersuola rigida e un po’ di supporto per l’arco possono rendere più comodo stare in piedi e camminare con il piede piatto. Non cambiano l’arco nel tempo, ma possono ridurre il lavoro che i muscoli dell’arco devono fare durante il giorno.',
         'I plantari per l’arco già pronti si trovano facilmente e costano poco. I plantari su misura, fatti da un calco del piede, costano di più e a volte vengono consigliati per la disfunzione del tendine tibiale posteriore.',
-        'Le prove sui plantari nel piede piatto in particolare sono più deboli di quanto pensino in molti. Per la fascite plantare, la linea guida del 2023 sul dolore al tallone sconsiglia i plantari come approccio a sé nel breve periodo (grado B contro), ma dà una C alle cure combinate che includono i plantari.',
+        'Le prove sui plantari nel piede piatto in particolare sono più deboli di quanto pensino in molti. Per la fascite plantare, la linea guida del 2023 sul dolore al tallone sconsiglia i plantari come approccio a sé nel breve periodo (grado B a sfavore), ma dà una C alle cure combinate che includono i plantari.',
         '**Se il piede piatto non ti fa male, non ti servono scarpe speciali.** Se stare in piedi o camminare ti fa dolere l’arco o la caviglia, una scarpa con suola rigida e un leggero supporto per l’arco è un primo passo ragionevole, da provare prima di spendere di più per plantari su misura. Le scarpe con suole molto piatte e senza sostegno (sandali sottili, scarpe da ginnastica consumate) tendono a peggiorare la stanchezza dell’arco nelle giornate lunghe.',
       ],
       cites: [CITE.guideline],
@@ -140,7 +140,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       h2: 'Problemi collegati',
       paragraphs: [
-        'Il piede piatto può sovrapporsi ad altri problemi del piede, soprattutto quando stai in piedi o cammini a lungo. Se il dolore è vicino al tallone e segue lo schema del mattino (una fitta ai primi passi che si calma dopo qualche minuto), è più compatibile con la fascite plantare. Vedi [fascite plantare](/it/fascite-plantare/) per una panoramica completa.',
+        'Il piede piatto può sovrapporsi ad altri problemi del piede, soprattutto quando stai in piedi o cammini a lungo. Se il dolore è vicino al tallone e ha l’andamento tipico del mattino (una fitta ai primi passi che si calma dopo qualche minuto), è più compatibile con la fascite plantare. Vedi [fascite plantare](/it/fascite-plantare/) per una panoramica completa.',
       ],
       bullets: [
         'Il [dolore all’avampiede](/it/metatarsalgia-dolore-pianta-piede/) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un polpaccio rigido può spostare il peso in avanti.',
@@ -166,7 +166,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       q: 'Il piede piatto è da considerare un problema?',
       cites: [CITE.menz],
-      a: 'Per la maggior parte delle persone, no. Un piede piatto flessibile che non fa male e non limita l’attività è una forma normale, non un disturbo. Il Framingham Foot Study su circa 1.900\u00A0adulti non ha trovato un legame tra piede piatto e mal di schiena lombare (Menz e colleghi, 2013). I casi che richiedono attenzione sono il piede piatto rigido e gli archi che si sono abbassati da adulti con dolore o gonfiore.',
+      a: 'Per la maggior parte delle persone, no. Un piede piatto flessibile che non fa male e non limita l’attività è una forma normale, non un disturbo. Il Framingham Foot Study su circa 1.900\u00A0adulti non ha trovato un legame tra piede piatto e mal di schiena lombare (Menz e colleghi, 2013). I casi che richiedono attenzione sono il piede piatto rigido e l’arco plantare che si è abbassato da adulti con dolore o gonfiore.',
     },
     {
       q: 'Cosa causa il piede piatto negli adulti?',
@@ -185,7 +185,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       q: 'Devo usare plantari se ho il piede piatto?',
       cites: [CITE.guideline],
-      a: 'Se il piede piatto non ti fa male, i plantari sono facoltativi. Se stare in piedi o camminare ti fa dolere l’arco, una scarpa con suola rigida e un leggero supporto per l’arco è un primo passo ragionevole. I plantari su misura a volte si usano per la disfunzione del tendine tibiale posteriore, ma le prove sui plantari per il solo piede piatto sono limitate. La linea guida del 2023 sul dolore al tallone dà ai plantari come approccio a sé un B contro.',
+      a: 'Se il piede piatto non ti fa male, i plantari sono facoltativi. Se stare in piedi o camminare ti fa dolere l’arco, una scarpa con suola rigida e un leggero supporto per l’arco è un primo passo ragionevole. I plantari su misura a volte si usano per la disfunzione del tendine tibiale posteriore, ma le prove sui plantari per il solo piede piatto sono limitate. La linea guida del 2023 sul dolore al tallone dà ai plantari come approccio a sé una B a sfavore.',
     },
     {
       q: 'Cos’è il piede piatto acquisito dell’adulto?',
@@ -203,7 +203,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       q: 'In quali etnie è più comune il piede piatto?',
       cites: [CITE.salinasTorres],
-      a: 'Il piede piatto (pes planus) è più frequente in alcuni gruppi, anche se la ricerca è limitata. Una revisione sistematica del 2023 su studi di popolazione ha trovato che l’origine asiatica era legata a un odds ratio superiore a 2 per il piede piatto, e l’origine bianca a un odds ratio di circa 0,5, in confronti separati tra sottogruppi. Sono schemi di popolazione, non una previsione sui piedi di una singola persona.',
+      a: 'Il piede piatto (pes planus) è più frequente in alcuni gruppi, anche se la ricerca è limitata. Una revisione sistematica del 2023 su studi di popolazione ha trovato che l’origine asiatica era legata a un odds ratio superiore a 2 per il piede piatto, e l’origine bianca a un odds ratio di circa 0,5, in confronti separati tra sottogruppi. Sono tendenze di popolazione, non una previsione sui piedi di una singola persona.',
     },
   ],
   redFlags: {
@@ -221,7 +221,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi decidere da solo quali esercizi per l’arco fare o quando passare a una versione più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per un piede piatto flessibile, quell’obiettivo è la tenuta dell’arco: tenere l’arco alzato per 60\u00A0secondi. Se hai anche dolore al tallone, prima vengono le mattine senza dolore.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto il primo obiettivo), un breve test controlla tenuta dell’arco, resistenza del polpaccio ed equilibrio. L’obiettivo della tenuta dell’arco resta finché non lo raggiungi, per quante settimane servano.',

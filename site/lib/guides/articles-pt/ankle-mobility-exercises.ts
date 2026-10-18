@@ -246,7 +246,7 @@ export const ANKLE_MOBILITY_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano uma semana de cada vez em torno de uma meta, para dor no calcanhar, no pé e na perna. A mobilidade do tornozelo faz parte dele: alongamentos de panturrilha, uma sustentação do joelho na parede e o balanço do tornozelo se revezam nas suas sessões, a maioria nos dias de mobilidade, junto com trabalho de força da panturrilha e de equilíbrio. O Walkito começa os alongamentos e o balanço do tornozelo com 2\u00A0séries de 30\u00A0segundos, cada perna.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

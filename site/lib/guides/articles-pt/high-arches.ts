@@ -270,7 +270,7 @@ export const HIGH_ARCHES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito inclui alongamento de panturrilha, alongamento da fáscia plantar, trabalho de estabilidade do tornozelo e rolar o pé na bolinha, tudo relevante para o pé cavo. Quando você aponta para o arco no mapa do corpo, o app oferece exercícios para essa região. Mas o app não tem uma meta ou um programa específico para pé cavo. Se o seu pé cavo causa dor embaixo do calcanhar, as metas de dor no calcanhar do app podem servir. Se a sua dor fica principalmente na parte da frente do pé ou está ligada a uma condição neurológica, quem deve orientar o seu plano de exercícios é um profissional de saúde.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',

@@ -20,13 +20,13 @@ export const CALF_RAISE_TEST_FR: Guide = {
     'Le test de montée sur pointes sur une jambe mesure l’endurance du mollet\u00A0: protocole, normes par âge et sexe, sens du score, comment progresser.',
   h1: 'Test de montée sur pointes\u00A0: combien devriez-vous en faire, et que veut dire votre score\u00A0?',
   lede:
-    'Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu indique la force résistante à la fatigue du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.',
+    'Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu reflète l’endurance musculaire du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.',
   intro: [
     'Une étude de 2017 sur 566\u00A0adultes en bonne santé a trouvé une médiane globale d’environ 23 à 24\u00A0répétitions par jambe, qui varie selon l’âge, le sexe et le niveau d’activité. Cette page présente le protocole de recherche, une version à faire chez soi, les valeurs de référence par âge, le sens d’un écart gauche-droite et le lien entre ce test, la douleur au talon et la course.',
   ],
   takeaways: [
     'La médiane globale chez l’adulte en bonne santé est de 24\u00A0répétitions sur la jambe droite et 23 sur la gauche, d’après une étude sur 566\u00A0personnes de 20 à 81\u00A0ans (Hébert-Losier et coll., 2017).',
-    'Les hommes faisaient plus de répétitions que les femmes au total (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).',
+    'Dans l’ensemble, les hommes faisaient plus de répétitions que les femmes (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).',
     'Une différence gauche-droite de plus de 10\u00A0% est le seuil habituel d’une asymétrie notable en rééducation du membre inférieur (Silbernagel et coll., 2010).',
     'Le test a une excellente fiabilité\u00A0: ICC de 0,96, avec une erreur de mesure typique d’environ deux répétitions (Hébert-Losier et coll., 2017).',
   ],
@@ -200,7 +200,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     },
     {
       q: 'Le test de montée sur pointes, c’est la même chose que le heel-rise test\u00A0?',
-      a: 'Oui. «\u00A0Heel-rise test\u00A0» est le nom utilisé dans la littérature scientifique. «\u00A0Test de montée sur pointes\u00A0» est plus courant en dehors des cabinets. Le mouvement est le même\u00A0: des montées sur la pointe d’un seul pied jusqu’à la fatigue, à un rythme fixe.',
+      a: 'Oui. «\u00A0Heel-rise test\u00A0» est le nom utilisé dans la littérature scientifique. «\u00A0Test de montée sur pointes\u00A0» est plus courant en dehors des cabinets. Le mouvement est le même\u00A0: des montées sur pointes sur un seul pied jusqu’à la fatigue, à un rythme fixe.',
     },
     {
       q: 'Quel est un bon score au test de montée sur pointes selon l’âge\u00A0?',

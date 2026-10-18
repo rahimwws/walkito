@@ -257,7 +257,7 @@ export const TIGHT_CALVES_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito es una app para iPhone y Android con sesiones cortas de ejercicio para el dolor de talón, pie y pierna en adultos. Los estiramientos de pantorrilla con la rodilla estirada y doblada, la movilidad de tobillo y las elevaciones de talón forman parte de ella. Walkito empieza con 2\u00A0series de 30\u00A0segundos para cada estiramiento y 3\u00A0series de 10 para las elevaciones de talón, y sube la dosis conforme avanzas.',
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Cada dos semanas, una prueba corta revisa la resistencia de la pantorrilla, para que veas si tus pantorrillas se están fortaleciendo. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud si aplica alguna de las señales de alerta de arriba.',

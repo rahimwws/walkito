@@ -33,7 +33,7 @@ const MINUTES = either(PROGRAM.sessionMinutes);
  * alongside plantar fasciitis, which is why the site spells out its signs.
  */
 const RED_FLAGS = {
-  h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+  h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
   bullets: [
     'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
     'du den Fuß nicht belasten kannst oder hinkst',
@@ -338,7 +338,7 @@ export const HEEL_PAIN_DE: Guide = {
   description:
     'Acht Übungen und Dehnungen bei Plantarfasziitis mit Dosierung, was du meiden solltest, wann Dehnen am besten ist und Empfehlungsgrade der Leitlinie von 2023.',
   h1: 'Übungen und Dehnungen bei Plantarfasziitis und Fersenschmerzen',
-  lede: 'Die Übungen bei Plantarfasziitis mit der besten Studienlage sind Dehnungen für Plantarfaszie und Wade, für die die Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad A vergibt, und Krafttraining für die Wade mit Grad B. Unten findest du acht Übungen mit Dosierung. Die ersten Schritte nach dem Aufstehen sind das Schlimmste am Tag. Ein stechendes Ziehen direkt an der Ferse, noch vor dem ersten Kaffee. Es wird besser, sobald du in Bewegung bist, und kommt zurück, wenn du eine Weile gesessen hast. Dieses Muster hat einen Namen, [Plantarfasziitis](/de/plantarfasziitis/), und die klinische Leitlinie von 2023 zu Fersenschmerzen nennt sie die am häufigsten erkannte Ursache für Fersenschmerzen unter dem Fuß.',
+  lede: 'Die Übungen bei Plantarfasziitis mit der besten Studienlage sind Dehnungen für Plantarfaszie und Wade, für die die Leitlinie von 2023 zu Fersenschmerzen den höchsten Empfehlungsgrad A vergibt, und Krafttraining für die Wade mit Grad B. Unten findest du acht Übungen mit Dosierung. Die ersten Schritte nach dem Aufstehen sind das Schlimmste am Tag. Ein stechender Schmerz direkt in der Ferse, noch vor dem ersten Kaffee. Es wird besser, sobald du in Bewegung bist, und kommt zurück, wenn du eine Weile gesessen hast. Dieses Muster hat einen Namen, [Plantarfasziitis](/de/plantarfasziitis/), und die klinische Leitlinie von 2023 zu Fersenschmerzen nennt sie die am häufigsten erkannte Ursache für Fersenschmerzen unter dem Fuß.',
   intro: [
     'Wer im Netz nach Hilfe sucht, findet widersprüchliche Ratschläge. Die Studienlage spricht aber immer wieder für dieselben zwei Dinge: Dehnen von Plantarfaszie und Wade und Krafttraining für die Wade.',
     'In einer Studie mit 48\u00A0Personen, die alle [Schuheinlagen](/de/einlagen-oder-uebungen/) trugen, half langsames Fersenheben mit einem Handtuch unter den Zehen schneller als Dehnen allein. Nach zwölf Monaten lagen beide Gruppen gleichauf. Genau diese Kombination stützt die Leitlinie.',
@@ -513,7 +513,7 @@ export const HEEL_PAIN_DE: Guide = {
         {
           list: [
             'Die Plantarfaszien-Dehnung machst du, **bevor du aufstehst**, auf der Bettkante mit zurückgezogenen Zehen, damit deine ersten Schritte nicht deine erste Dehnung sind.',
-            'Die Leitlinie von 2023 gibt Nachtschienen, 1 bis 3\u00A0Monate getragen, ein **A** für Menschen, die bei den ersten Schritten am Morgen immer wieder Schmerzen haben. Über [Nachtschienen](/de/nachtschiene-plantarfasziitis/) sprichst du am besten in deiner Arztpraxis oder Physiotherapie. Walkito stellt keine bereit.',
+            'Die Leitlinie von 2023 gibt Nachtschienen, 1 bis 3\u00A0Monate getragen, Grad **A** für Menschen, die bei den ersten Schritten am Morgen immer wieder Schmerzen haben. Über [Nachtschienen](/de/nachtschiene-plantarfasziitis/) sprichst du am besten in deiner Arztpraxis oder Physiotherapie. Walkito stellt keine bereit.',
           ],
         },
         'Walkito fragt aus demselben Grund jeden Tag nach deinem Morgenschmerz. Der Morgenschmerz ist das klarste Zeichen dafür, wie dein Fuß den Vortag verkraftet hat, und er entscheidet, wie viel die heutige Einheit von dir verlangt. Mehr dazu, was ihn auslöst, steht unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',

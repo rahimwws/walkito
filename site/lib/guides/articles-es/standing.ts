@@ -267,7 +267,7 @@ export const STANDING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `No tienes que decidir el orden, las dosis ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Si tu dolor de pies por estar de pie es peor en la mañana, la primera meta es la misma que para el dolor de talón: dolor de 1/10 o menos por la mañana durante ${PROGRAM.painFreeDays}\u00A0días seguidos. Si además tienes los arcos planos, el arco tiene su propia meta y sus propios ejercicios.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver si el trabajo está sirviendo de algo.`,

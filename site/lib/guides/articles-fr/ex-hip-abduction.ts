@@ -108,7 +108,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
             'Des exercices du pied court avec abduction de hanche isométrique.',
           ],
         },
-        'Les trois groupes ont réduit l’affaissement du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais son affaissement du naviculaire n’était pas significativement meilleur que celui du programme combiné\u00A0; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.',
+        'Les trois groupes ont réduit la chute du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais sa chute du naviculaire n’était pas significativement meilleure que celui du programme combiné\u00A0; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.',
         '**Les données soutiennent l’abduction de hanche comme élément d’un programme plus large pour le pied.** Ce n’est pas un exercice à lui seul contre la douleur de voûte, mais il comble un manque que laissent les exercices centrés sur le pied. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [inversion de cheville avec élastique](/fr/exercices/inversion-cheville-elastique/), [exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],

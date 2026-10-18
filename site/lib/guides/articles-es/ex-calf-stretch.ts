@@ -136,7 +136,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito pone el estiramiento de pantorrilla junto con el de sóleo y el de la fascia plantar en casi todas las sesiones. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. La app pasa de los estiramientos al trabajo de fuerza a tu ritmo.',
     more: [
       'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

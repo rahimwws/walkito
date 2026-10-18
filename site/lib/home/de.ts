@@ -67,7 +67,7 @@ export const HOME_DE: HomeCopy = {
     },
     {
       title: `Ein Test alle ${testEveryDays}\u00A0Tage, dann alle ${testEveryDaysAfterGoal}`,
-      text: `${retestTests} körperliche Tests in etwa ${retestMinutes}\u00A0Minuten: Wadenheben bis zur Erschöpfung, Gewölbe halten und Gleichgewicht auf einem Bein, beide Seiten. Alle ${testEveryDays}\u00A0Tage, bis du dein erstes Ziel erreichst, danach alle ${testEveryDaysAfterGoal}. Fortschritt wird gemessen, nicht danach geraten, wie sich die Woche angefühlt hat.`,
+      text: `${retestTests} körperliche Tests in etwa ${retestMinutes}\u00A0Minuten: Fersenheben bis zur Erschöpfung, Gewölbe halten und Gleichgewicht auf einem Bein, beide Seiten. Alle ${testEveryDays}\u00A0Tage, bis du dein erstes Ziel erreichst, danach alle ${testEveryDaysAfterGoal}. Fortschritt wird gemessen, nicht danach geraten, wie sich die Woche angefühlt hat.`,
       link: 'Was die Tests messen (auf Englisch)',
     },
     {
@@ -93,11 +93,11 @@ export const HOME_DE: HomeCopy = {
     },
     {
       q: 'Ist es für Plattfüße geeignet?',
-      a: 'Ja, für flexible Plattfüße. Wenn sich ein Gewölbe im Erwachsenenalter plötzlich abgeflacht hat, geh zuerst zu einer medizinischen Fachperson.',
+      a: 'Ja, für flexible Plattfüße. Wenn sich ein Gewölbe im Erwachsenenalter plötzlich abgeflacht hat, geh zuerst zum Arzt oder zur Ärztin.',
     },
     {
       q: 'Ist das medizinischer Rat?',
-      a: 'Nein. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      a: 'Nein. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     },
     { q: 'In welchen Sprachen gibt es die App?', a: 'Auf Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch.' },
   ],

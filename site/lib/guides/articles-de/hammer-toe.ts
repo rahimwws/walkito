@@ -213,7 +213,7 @@ export const HAMMER_TOE_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du eine offene Stelle, eine Blase oder eine Wunde an der Zehe hast, vor allem wenn du Diabetes oder ein vermindertes Gefühl in den Füßen hast',
       'die Zehe rot, warm und geschwollen ist, was auf eine Infektion oder eine entzündliche Gelenkerkrankung hindeuten kann',

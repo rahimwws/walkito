@@ -241,7 +241,7 @@ export const ICE_HEAT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Gelo e calor podem aliviar um dia ruim. O plano de exercícios é a parte que a diretriz apoia. O Walkito monta esse plano uma semana de cada vez em torno de uma meta principal. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos. Os alongamentos estão no plano desde a primeira semana, e rolar o pé na bolinha aparece como um passo curto de recuperação.',
     more: [
       'A cada semana, só o exercício da sua meta principal pode mudar. Ele sobe um degrau quando as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou, e desce um degrau se uma sessão pareceu difícil ou a dor da manhã subiu 2\u00A0pontos ou mais.',

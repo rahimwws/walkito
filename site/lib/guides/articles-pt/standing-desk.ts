@@ -113,15 +113,15 @@ export const STANDING_DESK_PT: Guide = {
           alt: 'Uma figura alongando na mesa com o joelho de trás dobrado, com a parte baixa da panturrilha destacada',
         },
         {
-          name: 'Elevação de calcanhar sentado',
+          name: 'Elevação de calcanhar sentada',
           evidence: {
             level: 'early',
-            why: 'A elevação de calcanhar sentado põe carga no sóleo com menos exigência geral do que as versões em pé. Não foi testada especificamente para a dor com mesa em pé.',
+            why: 'A elevação de calcanhar sentada põe carga no sóleo com menos exigência geral do que as versões em pé. Não foi testada especificamente para a dor com mesa em pé.',
           },
           dose: '3\u00A0séries de 15, os dois pés',
           how: 'Sente-se à mesa com os pés apoiados no chão. Levante os dois calcanhares o mais alto que conseguir, segure um segundo e desça devagar. Isso trabalha o sóleo, o músculo mais profundo da panturrilha, e dá para fazer em qualquer pausa sentado sem sair da cadeira.',
           media: 'heel_raise_seated',
-          caption: 'Elevação de calcanhar sentado: levante os dois calcanhares, segure e desça devagar',
+          caption: 'Elevação de calcanhar sentada: levante os dois calcanhares, segure e desça devagar',
           alt: 'Uma figura sentada levantando os dois calcanhares do chão, com as panturrilhas destacadas',
         },
         {
@@ -167,7 +167,7 @@ export const STANDING_DESK_PT: Guide = {
         rows: [
           ['Alongamento de panturrilha (joelho esticado)', '2 x 30\u00A0segundos, cada perna', 'Na mesa ou na parede', 'Um alongamento na parte de cima da panturrilha'],
           ['Alongamento do sóleo (joelho dobrado)', '2 x 30\u00A0segundos, cada perna', 'Na mesa ou na parede', 'Um alongamento na parte baixa da panturrilha, perto do calcanhar'],
-          ['Elevação de calcanhar sentado', '3 x 15, os dois pés', 'Na mesa, sentado', 'As panturrilhas trabalhando de leve'],
+          ['Elevação de calcanhar sentada', '3 x 15, os dois pés', 'Na mesa, sentado', 'As panturrilhas trabalhando de leve'],
           ['Abrir os dedos', '3 x 10 (segurando 5\u00A0segundos)', 'Na mesa, sentado, sem calçado', 'Os dedos se abrindo, sem dor'],
           ['Pé curto', '3 x 10 (segurando 5\u00A0segundos), cada pé', 'Na mesa, sentado', 'O arco subindo, dedos relaxados'],
           ['Elevação de calcanhar em pé', '3 x 10, os dois pés', 'Na mesa, em pé', 'As panturrilhas trabalhando, sem dor aguda'],
@@ -180,7 +180,7 @@ export const STANDING_DESK_PT: Guide = {
       paragraphs: [
         'Os três ajudam, e os três são variações da mesma ideia: quebrar a postura parada em pé. A declaração de especialistas de 2015 destaca que o trabalho sentado deve ser interrompido com frequência por períodos em pé, e que o próprio tempo em pé deve incluir atividade leve. Até passar o peso de um pé para o outro muda quais músculos recebem carga e favorece a circulação na parte de baixo das pernas.',
         'Um pequeno apoio para os pés ou uma barra baixa embaixo da mesa deixa você apoiar um pé e alternar a carga entre os lados. É uma estratégia antiga do chão de fábrica, e é uma das intervenções que a revisão de saúde ocupacional lista. Você não precisa de um produto especial para isso. Uma caixa firme ou uma prateleira baixa resolve.',
-        'Pausas curtas para se mexer durante o tempo sentado são igualmente importantes. Levante, vá até a cozinha e volte, ou faça uma série da elevação de calcanhar sentado ou de abrir os dedos da tabela acima. O objetivo não é treinar. É evitar a postura parada que causa o problema.',
+        'Pausas curtas para se mexer durante o tempo sentado são igualmente importantes. Levante, vá até a cozinha e volte, ou faça uma série da elevação de calcanhar sentada ou de abrir os dedos da tabela acima. O objetivo não é treinar. É evitar a postura parada que causa o problema.',
       ],
       cites: [CITE.buckley, CITE.waters],
     },
@@ -233,7 +233,7 @@ export const STANDING_DESK_PT: Guide = {
     },
     {
       q: 'Que exercícios dá para fazer na mesa em pé?',
-      a: 'Em pé: alongamentos da panturrilha apoiado na borda da mesa (2\u00A0vezes de 30\u00A0segundos de cada lado) e elevação de calcanhar em pé (3\u00A0séries de 10). Nas pausas sentado: elevação de calcanhar sentado (3\u00A0séries de 15), abrir os dedos e o exercício do pé curto. Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.',
+      a: 'Em pé: alongamentos da panturrilha apoiado na borda da mesa (2\u00A0vezes de 30\u00A0segundos de cada lado) e elevação de calcanhar em pé (3\u00A0séries de 10). Nas pausas sentado: elevação de calcanhar sentada (3\u00A0séries de 15), abrir os dedos e o exercício do pé curto. Eles miram a panturrilha, a fáscia plantar e os músculos intrínsecos do pé, que carregam a carga de ficar em pé. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.',
       cites: [CITE.guideline],
     },
     {
@@ -267,7 +267,7 @@ export const STANDING_DESK_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text:
       'Você não precisa descobrir a ordem, as doses nem quando progredir. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor com a mesa em pé segue o padrão de dor matinal da fascite plantar, a primeira meta é dor da manhã em 1 de 10 ou menos por 14\u00A0dias seguidos.',
     more: [

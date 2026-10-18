@@ -257,7 +257,7 @@ export const TIGHT_CALVES_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito é um app para iPhone e Android com sessões curtas de exercícios para dor no calcanhar, no pé e na parte de baixo da perna em adultos. Alongamentos de panturrilha com o joelho esticado e dobrado, o balanço do tornozelo e a elevação de calcanhar fazem parte dele. O Walkito começa com 2\u00A0vezes de 30\u00A0segundos para cada alongamento e 3\u00A0séries de 10 para a elevação de calcanhar, e aumenta a dose conforme você avança.',
     more: [
       'Você escolhe sessões de 3, 5 ou 10\u00A0minutos. A cada duas semanas, um teste curto mede a resistência da panturrilha, para você ver se ela está ficando mais forte. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde se algum dos sinais de alerta acima se aplicar a você.',

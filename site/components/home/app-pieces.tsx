@@ -220,8 +220,8 @@ const WORDS: Record<Lang, AppWords> = {
     exercise: {
       shortFoot: 'Pied court',
       singleLeg: 'Équilibre sur une jambe',
-      plantar: 'Étirement plantaire',
-      footRoll: 'Roulement du pied',
+      plantar: 'Étirement du fascia plantaire',
+      footRoll: 'Massage avec une balle',
     },
     setsReps: '{sets} × {reps}',
     setsHold: '{sets} × {seconds} s',
@@ -284,8 +284,8 @@ const WORDS: Record<Lang, AppWords> = {
     exercise: {
       shortFoot: 'Kurzer Fuß',
       singleLeg: 'Einbeinstand',
-      plantar: 'Plantar-Dehnung',
-      footRoll: 'Fuß rollen',
+      plantar: 'Plantarfaszien-Dehnung',
+      footRoll: 'Fußrollen',
     },
     setsReps: '{sets} × {reps}',
     setsHold: '{sets} × {seconds} s',

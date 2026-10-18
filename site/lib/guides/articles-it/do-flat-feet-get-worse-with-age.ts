@@ -12,9 +12,9 @@ export const FLAT_FEET_AGE_IT: Guide = {
     'Il piede piatto peggiora con l’età? Cosa cambia invecchiando, perché un arco può cedere da adulti, gravidanza, peso, diabete e segnali da controllare.',
   h1: 'Il piede piatto peggiora con l’età?',
   lede:
-    'Con l’età il piede piatto spesso diventa un po’ più piatto, ma lentamente e di solito senza dolore. In media i piedi più anziani sono più piatti di quelli giovani. Quello che merita attenzione è un’altra cosa: un arco che si abbassa nel giro di mesi, con dolore o gonfiore nuovi all’interno della caviglia. Questo schema di solito è un problema di tendine, ed è meglio farlo controllare presto.',
+    'Con l’età il piede piatto spesso diventa un po’ più piatto, ma lentamente e di solito senza dolore. In media i piedi più anziani sono più piatti di quelli giovani. Quello che merita attenzione è un’altra cosa: un arco che si abbassa nel giro di mesi, con dolore o gonfiore nuovi all’interno della caviglia. Questo quadro di solito è un problema di tendine, ed è meglio farlo controllare presto.',
   intro: [
-    'Forse le scarpe ti sembrano più lunghe di una volta, o i tuoi archi sembrano più bassi di quando avevi 30\u00A0anni. È comune e, da solo, non è un segno di problemi. Per le basi sul piede piatto flessibile e rigido, vedi la [guida sul piede piatto](/it/piede-piatto/).',
+    'Forse le scarpe ti sembrano più lunghe di una volta, o il tuo arco plantare sembra più basso di quando avevi 30\u00A0anni. È comune e, da solo, non è un segno di problemi. Per le basi sul piede piatto flessibile e rigido, vedi la [guida sul piede piatto](/it/piede-piatto/).',
   ],
   takeaways: [
     'In un confronto del 2007 tra 50\u00A0adulti con un’età media di 20,9\u00A0anni e 50 con un’età media di 80,2, nessuno con problemi ai piedi, il gruppo più anziano aveva piedi più piatti e più ceduti verso l’interno, muscoli delle dita più deboli e caviglie più rigide (Scott e colleghi, 2007).',
@@ -117,7 +117,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
     {
       h2: 'Quando un piede che si appiattisce è un problema?',
       paragraphs: [
-        '**Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore.** Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine gli schemi più comuni.',
+        '**Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore.** Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine i quadri più comuni.',
       ],
       table: {
         caption: 'Come cambia l’arco negli adulti e cosa vuol dire di solito',
@@ -257,7 +257,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il piede piatto, un obiettivo è la tenuta dell’arco: tenere la posizione del piede corto per 60\u00A0secondi. Il piano può includere il lavoro con l’elastico per il tibiale posteriore, i sollevamenti sulle punte, il piede corto e l’allungamento del polpaccio, ognuno partendo da una dose bassa e aumentando solo quando diventa facile.',
     more: [
       'Scegli 3, 5 o 7\u00A0sessioni a settimana da 3, 5 o 10\u00A0minuti. Ogni due settimane, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi per adulti. Non fa diagnosi e non sostituisce un professionista sanitario. Se un arco si sta abbassando o ti fa male l’interno della caviglia, rivolgiti prima a un professionista sanitario.',

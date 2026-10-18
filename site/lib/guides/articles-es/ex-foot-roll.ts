@@ -143,7 +143,7 @@ export const EX_FOOT_ROLL_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito pone el automasaje plantar al final de las sesiones y en los días de recuperación. La app se encarga del momento y del orden, para que no tengas que acordarte de qué días toca rodar el pie y cuáles estirar o hacer fuerza.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

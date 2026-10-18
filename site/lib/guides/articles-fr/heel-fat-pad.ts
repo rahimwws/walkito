@@ -188,9 +188,9 @@ export const HEEL_FAT_PAD_FR: Guide = {
       a: 'Des chaussures à semelle épaisse et amortissante, avec un talon rembourré. Évitez les chaussures plates à semelle fine et les pieds nus sur un sol dur. Des talonnettes viscoélastiques placées dans la chaussure ajoutent une couche d’amorti. Aucun essai randomisé n’a testé de types de chaussures précis pour ce syndrome, mais le principe de remplacer l’amorti perdu est largement admis.',
     },
     {
-      q: 'Les infiltrations de cortisone aident-elles le coussinet graisseux du talon\u00A0?',
+      q: 'Les infiltrations de corticoïdes aident-elles le coussinet graisseux du talon\u00A0?',
       cites: [CITE.fatPadReview],
-      a: 'Les infiltrations de cortisone ne sont en général pas conseillées pour le syndrome du coussinet graisseux du talon. Les corticoïdes peuvent dégrader le tissu graisseux et aggraver l’atrophie qui cause le problème. Si une infiltration est envisagée, c’est un point à soulever avec votre professionnel de santé.',
+      a: 'Les infiltrations de corticoïdes ne sont en général pas conseillées pour le syndrome du coussinet graisseux du talon. Les corticoïdes peuvent dégrader le tissu graisseux et aggraver l’atrophie qui cause le problème. Si une infiltration est envisagée, c’est un point à soulever avec votre professionnel de santé.',
     },
     {
       q: 'Comment diagnostiquer un syndrome du coussinet graisseux du talon\u00A0?',

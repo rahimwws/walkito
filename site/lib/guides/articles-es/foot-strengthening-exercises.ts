@@ -289,7 +289,7 @@ export const FOOT_STRENGTHENING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan semanal en torno a una meta e incluye los ejercicios para el pie de esta página: el ejercicio de pie corto de sentado a una pierna, la separación de dedos, la elevación del dedo gordo, recoger la toalla, las elevaciones de talón y el trabajo de equilibrio. Empieza los ejercicios de arco con 3\u00A0series de 8 sosteniendo 5\u00A0segundos y el equilibrio con 3\u00A0series de 20\u00A0segundos, y en cada nuevo plan semanal sube un paso tu ejercicio principal cuando calificaste como fáciles tus dos últimas sesiones con él y tu dolor de la mañana no ha subido.',
     more: [
       'Eliges sesiones de 3, 5 o 10\u00A0minutos. Al principio cada 14\u00A0días, una prueba corta revisa la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

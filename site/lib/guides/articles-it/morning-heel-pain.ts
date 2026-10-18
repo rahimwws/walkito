@@ -25,9 +25,9 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     'Perché il tallone fa male appena sveglio, le altre cause del dolore ai primi passi oltre alla fascite plantare e cosa fare prima di alzarti ogni mattina.',
   h1: 'Dolore al tallone al mattino: perché succede e cosa fare prima del primo passo',
   lede:
-    'I primi passi appena sceso dal letto sono il momento peggiore della giornata. Quella fitta al tallone, prima ancora di esserti raddrizzato, è lo schema che la maggior parte delle persone descrive quando cerca informazioni sul dolore al tallone. La causa più comune è la fascite plantare, ma non è l’unica, e il mattino è il momento più utile per fare qualcosa.',
+    'I primi passi appena sceso dal letto sono il momento peggiore della giornata. Quella fitta al tallone, prima ancora di esserti raddrizzato, è il sintomo che la maggior parte delle persone descrive quando cerca informazioni sul dolore al tallone. La causa più comune è la fascite plantare, ma non è l’unica, e il mattino è il momento più utile per fare qualcosa.',
   intro: [
-    'La pagina degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) ha l’elenco completo degli esercizi, le prove dietro ciascuno e i gradi della linea guida. Questa pagina approfondisce il mattino: perché il primo passo fa male, quali altri problemi hanno lo stesso schema, cosa fare prima che il piede tocchi terra, e come seguire il dolore del mattino ti dice se le cose stanno migliorando.',
+    'La pagina degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/) ha l’elenco completo degli esercizi, le prove dietro ciascuno e i gradi della linea guida. Questa pagina approfondisce il mattino: perché il primo passo fa male, quali altri problemi danno lo stesso dolore al mattino, cosa fare prima che il piede tocchi terra, e come seguire il dolore del mattino ti dice se le cose stanno migliorando.',
   ],
   takeaways: [
     'Il dolore al tallone al mattino è il segno tipico della fascite plantare: la linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo» (Koc e colleghi, 2023).',
@@ -43,7 +43,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
       figure: { id: 'heel-side', caption: 'Vista laterale: la fascia plantare si attacca sotto l’osso del tallone, dove di solito inizia il dolore della fascite plantare.', alt: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'La fascia plantare, la banda spessa di tessuto che va dall’osso del tallone alle dita, si irrigidisce mentre dormi. A riposo il piede di solito punta verso il basso, e questo lascia accorciare la fascia. Quando ti alzi e appoggi il piede sotto tutto il tuo peso, quel tessuto accorciato si allunga all’improvviso. Il risultato è una fitta nella parte interna del tallone.',
-        'La linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo stesso schema si ripete quando sei stato seduto un po’ e poi ti alzi, per lo stesso motivo: il tessuto si accorcia a riposo, poi viene caricato di colpo.',
+        'La linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo stesso andamento si ripete quando sei stato seduto un po’ e poi ti alzi, per lo stesso motivo: il tessuto si accorcia a riposo, poi viene caricato di colpo.',
         '**Non è un nuovo danno che si forma ogni mattina.** Il tessuto è rigido, non si sta strappando. Dopo qualche passo, quando la fascia si scalda, il dolore di solito si calma. Questo effetto di riscaldamento è una delle cose che distinguono la fascite plantare da alcune delle altre cause qui sotto.',
       ],
       cites: [CITE.guideline],
@@ -58,7 +58,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
             '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille si irrigidisce durante la notte proprio come la fascia plantare, quindi la rigidità ai primi passi è comune. Di solito migliora camminando e poi peggiora di nuovo con un’attività prolungata. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone fa da ammortizzatore. Quando si assottiglia o si sposta, l’osso assorbe più colpi. Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiora su superfici dure e camminando scalzi, e può essere difficile da distinguere dalla fascite plantare senza esami di imaging (Chang e colleghi, 2022). La differenza chiave: il dolore della fascite plantare di solito è più acuto nella parte interna e anteriore del tallone, mentre quello del cuscinetto adiposo è proprio sotto il centro.',
         '**Frattura da stress del calcagno.** Un dolore che arriva piano piano, di solito dopo un aumento improvviso dell’attività. A differenza della fascite plantare, il dolore da frattura da stress tende ad aumentare con l’attività invece di calmarsi quando ti scaldi, e può fare male a riposo o di notte. Se stringere i lati del tallone riproduce il dolore, rivolgiti a un professionista sanitario prima di allenare il piede. [Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega come i cambi improvvisi di carico colpiscono il tallone.',
-        '**Artrite infiammatoria (un campanello d’allarme).** Quando al mattino fanno male entrambi i talloni, la rigidità dura più di 30\u00A0minuti e anche altre articolazioni sono rigide o gonfie, lo schema si allontana dalla fascite plantare e va verso qualcosa che deve controllare un professionista sanitario. Problemi come l’artrite psoriasica o la spondilite anchilosante possono dare dolore nei punti in cui i tendini si attaccano all’osso, compreso il tallone.',
+        '**Artrite infiammatoria (un campanello d’allarme).** Quando al mattino fanno male entrambi i talloni, la rigidità dura più di 30\u00A0minuti e anche altre articolazioni sono rigide o gonfie, il quadro si allontana dalla fascite plantare e va verso qualcosa che deve controllare un professionista sanitario. Problemi come l’artrite psoriasica o la spondilite anchilosante possono dare dolore nei punti in cui i tendini si attaccano all’osso, compreso il tallone.',
           ],
         },
         'In una coorte di 174\u00A0persone con fascite plantare seguite in media per 9,7\u00A0anni, il dolore a entrambi i talloni era un predittore significativo di una prognosi peggiore a lungo termine, e gli autori hanno notato che una malattia infiammatoria sistemica non riconosciuta potrebbe spiegare in parte questo risultato (Hansen e colleghi, 2018). **Se fanno male entrambi i talloni e sono coinvolte altre articolazioni, rivolgiti prima a un professionista sanitario.**',
@@ -137,7 +137,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     {
       h2: 'Come fa il dolore del mattino a dirti se stai migliorando?',
       paragraphs: [
-        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se è stato troppo impegnativo. Lo schema è semplice: se la mattina dopo i primi passi vanno peggio del solito, il giorno prima hai chiesto al piede più di quanto potesse reggere.',
+        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se è stato troppo impegnativo. La regola è semplice: se la mattina dopo i primi passi vanno peggio del solito, il giorno prima hai chiesto al piede più di quanto potesse reggere.',
         'Per questo un punteggio quotidiano del dolore del mattino, da 0 a 10, è più utile che controllare il dolore durante il giorno. Il dolore di giorno sale e scende con l’attività, la postura e le scarpe. Il dolore del mattino misura la stessa cosa, nello stesso modo, più o meno alla stessa ora ogni giorno. Quando il numero scende nel corso delle settimane, il piede sta guadagnando terreno. Quando sale di colpo, qualcosa negli ultimi uno o due giorni ha spinto troppo.',
         'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione:',
         {
@@ -180,7 +180,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     },
     {
       q: 'Quando andare dal medico per il dolore al tallone al mattino?',
-      a: 'Rivolgiti a un professionista sanitario se fanno male entrambi i talloni e la rigidità del mattino dura più di 30\u00A0minuti, se il dolore è iniziato dopo un infortunio, se peggiora di settimana in settimana, se ti tiene sveglio di notte, se stringere i lati del tallone lo riproduce, o se si accompagna a intorpidimento, gonfiore o calore. Questi schemi possono indicare qualcosa di diverso dalla fascite plantare.',
+      a: 'Rivolgiti a un professionista sanitario se fanno male entrambi i talloni e la rigidità del mattino dura più di 30\u00A0minuti, se il dolore è iniziato dopo un infortunio, se peggiora di settimana in settimana, se ti tiene sveglio di notte, se stringere i lati del tallone lo riproduce, o se si accompagna a intorpidimento, gonfiore o calore. Questi quadri possono indicare qualcosa di diverso dalla fascite plantare.',
     },
     {
       q: 'Quanto ci mette a migliorare il dolore ai primi passi?',
@@ -213,7 +213,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi ricordarti gli allungamenti, le dosi o quando passare a qualcosa di più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Ogni mattina segni il dolore prima del primo passo, e la sessione del giorno si adatta a quel punteggio.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del mattino), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando.',

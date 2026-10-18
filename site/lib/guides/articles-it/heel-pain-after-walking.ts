@@ -26,9 +26,9 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
     'Dolore al tallone dopo una camminata o dopo ore in piedi: perché succede, quali problemi lo causano, quando preoccuparsi e gli esercizi che aiutano.',
   h1: 'Dolore al tallone dopo aver camminato: perché il tallone fa male e cosa fare',
   lede:
-    'Mentre camminavi il tallone stava bene, ma ora che ti sei fermato fa male. Oppure il dolore è iniziato a metà di una camminata lunga ed è peggiorato a ogni passo. Entrambi gli schemi indicano la stessa cosa: quel giorno i tessuti sotto il tallone hanno ricevuto più carico di quanto potessero reggere. La causa più comune è la fascite plantare, e la risposta più utile è lo stretching insieme a un rinforzo graduale del polpaccio.',
+    'Mentre camminavi il tallone stava bene, ma ora che ti sei fermato fa male. Oppure il dolore è iniziato a metà di una camminata lunga ed è peggiorato a ogni passo. Entrambi i casi indicano la stessa cosa: quel giorno i tessuti sotto il tallone hanno ricevuto più carico di quanto potessero reggere. La causa più comune è la fascite plantare, e la risposta più utile è lo stretching insieme a un rinforzo graduale del polpaccio.',
   intro: [
-    'Questa pagina parla del dolore al tallone che arriva durante o dopo una camminata. Se il tallone fa più male ai primissimi passi del mattino, quello schema è spiegato in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Se i piedi fanno male dopo ore in piedi fermo nello stesso posto, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre il lato del carico statico. I tre si sovrappongono, ma ognuno ha un punto di vista diverso.',
+    'Questa pagina parla del dolore al tallone che arriva durante o dopo una camminata. Se il tallone fa più male ai primissimi passi del mattino, quel tipo di dolore è spiegato in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Se i piedi fanno male dopo ore in piedi fermo nello stesso posto, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre il lato del carico statico. I tre si sovrappongono, ma ognuno ha un punto di vista diverso.',
   ],
   takeaways: [
     'La linea guida del 2023 sul dolore al tallone descrive il dolore della fascite plantare come «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo», ma elenca anche il dolore che peggiora con un’attività prolungata in carico come una caratteristica chiave (Koc e colleghi, 2023).',
@@ -43,7 +43,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'Perché il tallone fa male dopo aver camminato?',
       paragraphs: [
         'Camminare carica la fascia plantare, la banda spessa di tessuto sotto il piede, a ogni passo. Ogni volta che il tallone tocca terra e il piede rolla in avanti, la fascia si allunga e assorbe la forza. In un piede sano va bene così. Ma quando la fascia è irritata o il polpaccio è troppo rigido per assorbire la sua parte, il carico si concentra nel punto in cui la fascia si attacca al tallone.',
-        'Il risultato è un dolore che cresce durante o dopo una camminata, soprattutto se più lunga del solito. La linea guida del 2023 sul dolore al tallone elenca due schemi tipici della fascite plantare: il dolore ai primi passi dopo il riposo e il dolore che aumenta con un’attività prolungata in carico. Camminare è l’attività prolungata in carico più comune che ci sia.',
+        'Il risultato è un dolore che cresce durante o dopo una camminata, soprattutto se più lunga del solito. La linea guida del 2023 sul dolore al tallone elenca due andamenti tipici della fascite plantare: il dolore ai primi passi dopo il riposo e il dolore che aumenta con un’attività prolungata in carico. Camminare è l’attività prolungata in carico più comune che ci sia.',
         'Un polpaccio rigido è una parte importante del quadro. In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia aveva l’odds ratio più alto tra tutti i fattori di rischio misurati. **Quando la caviglia non si piega abbastanza, ogni passo chiede alla fascia di compensare la differenza.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
@@ -56,7 +56,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
           list: [
             '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone ammortizza ogni passo. Quando si assottiglia o si sposta, l’osso riceve colpi più diretti. Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiore su superfici dure e camminando scalzi (Chang e colleghi, 2022). Il dolore della fascite plantare di solito si trova nella parte interna e anteriore del tallone. Quello del cuscinetto adiposo è proprio sotto il centro. Se camminare scalzo su piastrelle o cemento è chiaramente peggio che camminare con scarpe ammortizzate, vale la pena pensare a un assottigliamento del cuscinetto adiposo. Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per saperne di più.',
             '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille può far male dopo una camminata lunga, soprattutto in salita. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
-            '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo schema, rivolgiti a un professionista sanitario prima di allenare il piede.',
+            '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo caso, rivolgiti a un professionista sanitario prima di allenare il piede.',
             '**Dolore riferito dalla zona lombare o nervo compresso.** Un dolore al tallone che si accompagna a intorpidimento, formicolio o bruciore può indicare un problema ai nervi, non un problema di carico sui tessuti. È un motivo per rivolgerti prima a un professionista sanitario.',
           ],
         },
@@ -76,7 +76,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
           ],
         },
         '[Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega nel dettaglio gli allungamenti del mattino e i tutori notturni.',
-        'Se hai sia dolore al mattino sia dolore dopo aver camminato, è lo schema tipico della fascite plantare. Gli esercizi si sovrappongono. L’allungamento del mattino e gli allungamenti del polpaccio aiutano in entrambi i casi. Il rinforzo del polpaccio aumenta la capacità di tutta la catena, così il carico delle tue camminate quotidiane rientra in quello che i tessuti riescono a reggere.',
+        'Se hai sia dolore al mattino sia dolore dopo aver camminato, è il quadro tipico della fascite plantare. Gli esercizi si sovrappongono. L’allungamento del mattino e gli allungamenti del polpaccio aiutano in entrambi i casi. Il rinforzo del polpaccio aumenta la capacità di tutta la catena, così il carico delle tue camminate quotidiane rientra in quello che i tessuti riescono a reggere.',
       ],
       cites: [CITE.guideline],
     },
@@ -84,7 +84,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'In cosa è diverso dal dolore ai piedi dopo essere stato in piedi?',
       paragraphs: [
         'Stare fermi in piedi e camminare sono carichi diversi. Stare in piedi tiene gli stessi tessuti sotto uno sforzo costante e statico, senza la pompa del polpaccio che dà la camminata. Camminare alterna carico e scarico, cosa più facile per le vene e per il cuscinetto adiposo ma più dura per la fascia nel punto in cui si attacca al tallone, per via dell’allungamento ripetuto nella fase di spinta.',
-        'Se i piedi fanno male dopo ore in piedi ma stanno bene dopo una camminata, il problema è più probabilmente la fatica da stazione eretta. [Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega quello schema, comprese le calze a compressione e i tappetini, che qui contano meno. Se il tallone fa male proprio dopo aver camminato ma non dopo essere stato in piedi, il problema di carico è nel punto di attacco della fascia, e gli esercizi per il polpaccio qui sotto sono il punto di partenza.',
+        'Se i piedi fanno male dopo ore in piedi ma stanno bene dopo una camminata, il problema è più probabilmente la fatica da stazione eretta. [Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega quel tipo di dolore, comprese le calze a compressione e i tappetini, che qui contano meno. Se il tallone fa male proprio dopo aver camminato ma non dopo essere stato in piedi, il problema di carico è nel punto di attacco della fascia, e gli esercizi per il polpaccio qui sotto sono il punto di partenza.',
       ],
       cites: [CITE.waters],
     },
@@ -216,12 +216,12 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
     {
       q: 'Perché il tallone mi fa male dopo essere stato in piedi ma non dopo aver camminato?',
       cites: [CITE.waters],
-      a: 'Stare in piedi carica il piede in modo statico, senza la pompa del polpaccio che dà la camminata. Il sangue ristagna, il cuscinetto adiposo si comprime e l’arco si affatica. Camminare alterna carico e scarico, cosa più facile per le vene. Se il tuo fattore scatenante è stare in piedi, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega quello schema, comprese le calze a compressione e i tappetini.',
+      a: 'Stare in piedi carica il piede in modo statico, senza la pompa del polpaccio che dà la camminata. Il sangue ristagna, il cuscinetto adiposo si comprime e l’arco si affatica. Camminare alterna carico e scarico, cosa più facile per le vene. Se il tuo fattore scatenante è stare in piedi, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega quel tipo di dolore, comprese le calze a compressione e i tappetini.',
     },
     {
       q: 'Come capisco se il dolore al tallone è una frattura da stress?',
       cites: [CITE.patelStressFracture],
-      a: 'Il dolore da frattura da stress di solito cresce con l’attività, è arrivato dopo un aumento improvviso di camminata o corsa e non passa molto con il riposo. Stringere i lati del tallone può riprodurlo. Il dolore della fascite plantare di solito si calma quando ti scaldi ed è peggiore ai primi passi dopo il riposo. Se lo schema fa pensare a una frattura, rivolgiti a un professionista sanitario prima di fare esercizi.',
+      a: 'Il dolore da frattura da stress di solito cresce con l’attività, è arrivato dopo un aumento improvviso di camminata o corsa e non passa molto con il riposo. Stringere i lati del tallone può riprodurlo. Il dolore della fascite plantare di solito si calma quando ti scaldi ed è peggiore ai primi passi dopo il riposo. Se il quadro fa pensare a una frattura, rivolgiti a un professionista sanitario prima di fare esercizi.',
     },
     {
       q: 'Come far passare il dolore al tallone subito dopo una camminata?',
@@ -248,7 +248,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Non devi capire da solo gli esercizi, le dosi o quando passare al livello successivo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. Se ieri hai camminato più del solito e il punteggio del mattino sale di colpo, la sessione si adatta da sola.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni (poi ogni 28 quando hai raggiunto l’obiettivo del mattino), un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se il lavoro sta alzando la tua soglia di camminata.',

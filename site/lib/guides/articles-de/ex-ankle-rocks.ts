@@ -132,7 +132,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Hör auf und geh zu einer medizinischen Fachperson, wenn',
+    h2: 'Hör auf und geh zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'du vorn am Sprunggelenk ein scharfes Zwicken spürst, das zwischen den Wiederholungen nicht weggeht',
       'das Sprunggelenk bei der Bewegung blockiert oder hängen bleibt',
@@ -146,7 +146,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant das Sprunggelenk-Wippen an Mobilitätstagen ein, zusammen mit der Waden- und der Soleusdehnung. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten.',
     more: [
-      'Ein Zentimeter mehr beim Knie-Wand-Test in ein paar Wochen ist bedeutsam. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Ein Zentimeter mehr beim Knie-Wand-Test in ein paar Wochen ist bedeutsam. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

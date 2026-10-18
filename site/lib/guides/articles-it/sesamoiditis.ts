@@ -162,7 +162,7 @@ export const SESAMOIDITIS_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text:
       'La sesamoidite si gestisce soprattutto con scarico e scarpe, non con un programma di esercizi. Walkito è pensato per problemi come fascite plantare e piede piatto, dove i programmi di carico strutturati hanno il sostegno degli studi. Se la tua sesamoidite passa e vuoi ricostruire la forza di piede e polpaccio per tornare all’attività, il lavoro sui muscoli intrinseci del piede e gli allungamenti del polpaccio dell’app possono essere un’aggiunta utile.',
     more: [

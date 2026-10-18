@@ -25,7 +25,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
   takeaways: [
     'Une revue systématique de 2023 portant sur 12\u00A0études de population a estimé la fréquence globale des pieds plats à environ 15,6\u00A0%, même si ce chiffre varie beaucoup selon l’âge, la méthode de mesure et la population (Salinas-Torres et coll., 2023).',
     'La plupart des pieds plats sont souples et présents toute la vie. Un pied plat rigide, qui reste plat même quand le pied est soulevé, est structurel et ne changera pas avec l’exercice.',
-    'La Framingham Foot Study, sur environ 1\u00A0900\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un petit lien chez les femmes entre un pied qui s’affaisse vers l’intérieur à la marche et le mal de dos, et aucun chez les hommes (Menz et coll., 2013).',
+    'La Framingham Foot Study, sur environ 1\u00A0900\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un petit lien chez les femmes entre un pied qui s’affaisse vers l’intérieur à la marche et le mal de dos, et aucun chez les hommes (Menz et coll., 2013).',
     'Le pied plat acquis de l’adulte, le plus souvent dû à l’affaiblissement du tendon tibial postérieur, peut entraîner une douleur et un gonflement à l’intérieur de la cheville et un affaissement progressif de la voûte (Ling et Lui, 2017).',
     'Dans un essai sur 52\u00A0personnes aux pieds plats souples, six semaines d’exercices combinés ont modifié la forme de la voûte davantage que dans un groupe témoin. L’essai a mesuré la forme de la voûte, pas la douleur (Brijwasi et Borkar, 2023).',
   ],
@@ -62,7 +62,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
         'L’inquiétude la plus fréquente concerne le mal de dos. La plus grande étude sur le sujet, la Framingham Foot Study, a porté sur environ 1\u00A0900\u00A0adultes. Ce qu’elle a trouvé\u00A0:',
         {
           list: [
-            '**Dans l’ensemble\u00A0:** aucune association entre une posture de pied plat et le mal de bas du dos.',
+            '**Dans l’ensemble\u00A0:** aucune association entre une posture de pied plat et le mal au bas du dos.',
             '**Chez les femmes\u00A0:** un pied qui s’affaissait vers l’intérieur à la marche (marche en pronation) montrait un petit lien avec le mal de dos, mais la posture du pied elle-même, plat ou non, n’en montrait pas.',
             '**Chez les hommes\u00A0:** ni la posture ni la marche n’étaient liées au mal de dos.',
           ],
@@ -162,7 +162,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
     {
       q: 'Faut-il s’inquiéter d’avoir les pieds plats\u00A0?',
       cites: [CITE.menz],
-      a: 'Pour la plupart des gens, non. Un pied plat souple qui ne fait pas mal et ne limite pas l’activité est une forme normale, pas un trouble. La Framingham Foot Study, sur environ 1\u00A0900\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos (Menz et coll., 2013). Les cas qui demandent de l’attention sont les pieds plats rigides, et les voûtes qui se sont affaissées à l’âge adulte avec douleur ou gonflement.',
+      a: 'Pour la plupart des gens, non. Un pied plat souple qui ne fait pas mal et ne limite pas l’activité est une forme normale, pas un trouble. La Framingham Foot Study, sur environ 1\u00A0900\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos (Menz et coll., 2013). Les cas qui demandent de l’attention sont les pieds plats rigides, et les voûtes qui se sont affaissées à l’âge adulte avec douleur ou gonflement.',
     },
     {
       q: 'Quelles sont les causes des pieds plats chez l’adulte\u00A0?',

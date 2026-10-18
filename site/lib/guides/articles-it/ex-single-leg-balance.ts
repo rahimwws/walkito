@@ -161,7 +161,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito include l’equilibrio su una gamba e l’equilibrio a occhi chiusi in un piano insieme a sollevamenti sulle punte, allungamenti ed esercizi per il piede. L’obiettivo di equilibrio è di 30\u00A0secondi su ogni gamba. Ogni 14\u00A0giorni, un breve test controlla quanto riesci a tenere, e viene seguita anche la differenza tra i due lati.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Quando raggiungi l’obiettivo di equilibrio, il test passa a ogni 28\u00A0giorni e al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',

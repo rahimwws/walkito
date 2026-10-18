@@ -324,7 +324,7 @@ export const SHIN_SPLINTS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: `Walkito no tiene un programa específico para la periostitis tibial, y esta página explica por qué: ningún programa de ejercicios ha demostrado acelerar la recuperación de la periostitis tibial en un ensayo. Lo que sí tiene Walkito es trabajo de pantorrilla, tobillo y equilibrio que apunta a los mismos músculos que estudiaron los investigadores, más un plan que se adapta a cómo te sientes cada mañana.`,
     more: [
       `Eliges ${DAYS} días a la semana y sesiones de ${MINUTES}\u00A0minutos. Cada ${PROGRAM.testEveryDays}\u00A0días (y después cada ${PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver si el trabajo de la pierna está sirviendo de algo.`,

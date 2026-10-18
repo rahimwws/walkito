@@ -253,7 +253,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Você pode fazer os exercícios desta página por conta própria, ou deixar o Walkito organizar tudo para você. O app monta um plano uma semana de cada vez. Quando você marca a planta do pé, perto dos dedos, no mapa de dor, a sessão do check-in se concentra em abrir os dedos e no alongamento da fáscia plantar. O programa mais amplo acrescenta alongamento e fortalecimento da panturrilha com o passar das semanas.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias (e depois a cada 28 quando essa meta for alcançada), um teste curto mede o progresso para você ver o que está mudando. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde. Se a sua dor na parte da frente do pé vem com dormência, inchaço ou um caroço, procure primeiro um profissional de saúde.',

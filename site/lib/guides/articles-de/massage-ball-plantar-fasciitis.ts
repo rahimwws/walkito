@@ -12,12 +12,12 @@ export const MASSAGE_BALL_DE: Guide = {
     'Hilft ein Massageball bei Plantarfasziitis? Was Studien zu Ball, Rolle und gefrorener Flasche zeigen, wie fest und lange du rollst und wann du es lässt.',
   h1: 'Massageball, Rolle oder gefrorene Flasche bei Plantarfasziitis: was die Forschung sagt',
   lede:
-    'Ein Massageball kann die Schmerzen bei Plantarfasziitis eine Zeit lang lindern, aber er ist ein Schritt fürs Wohlbefinden, nicht das Hauptwerkzeug. Weichteilarbeit mit den Händen durch eine Fachperson hat in der Leitlinie die beste Bewertung. Einen Ball oder eine gefrorene Flasche selbst zu rollen, ist kaum untersucht. Roll sanft und kurz, und lass Dehnen und Krafttraining den Kern bleiben.',
+    'Ein Massageball kann die Schmerzen bei Plantarfasziitis eine Zeit lang lindern, aber er ist ein Schritt fürs Wohlbefinden, nicht das Hauptwerkzeug. Weichteilarbeit mit den Händen in der Physiotherapie hat in der Leitlinie den höchsten Empfehlungsgrad. Einen Ball oder eine gefrorene Flasche selbst zu rollen, ist kaum untersucht. Roll sanft und kurz, und lass Dehnen und Krafttraining den Kern bleiben.',
   intro: [
     'Diese Seite vergleicht die Hilfsmittel und die Belege. Die einzelne Übung Schritt für Schritt findest du unter [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/). Die komplette Routine mit Dosierung findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
   ],
   takeaways: [
-    'Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie durch eine Fachperson ihre beste Bewertung, **A**, gemeint ist aber geschulte Arbeit mit den Händen, nicht Ballrollen zu Hause (Koc und Kollegen, 2023).',
+    'Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie in der Physiotherapie den höchsten Empfehlungsgrad **A** gemeint ist aber geschulte Arbeit mit den Händen, nicht Ballrollen zu Hause (Koc und Kollegen, 2023).',
     'In der einzigen Studie zu einem einfachen Massageball, die wir für diese Seite gefunden haben, sollten 14\u00A0Personen mit lang bestehender Plantarfasziitis mindestens dreimal am Tag rollen, und ihre Fußwerte verbesserten sich über drei Monate nicht signifikant (Ryu und Kollegen, 2024).',
     'In einer Studie mit 50\u00A0Personen linderte eine einzige Einheit mit der Faszienrolle an Wade und Sohle den Schmerz etwa so stark wie Dehnen, direkt danach gemessen (Ranbhor und Kollegen, 2021).',
     'Keine Studie hat eine gefrorene Flasche mit einem Ball bei Raumtemperatur verglichen. Die Kälte ist also eine Frage des Wohlbefindens, mit wenig Belegen in die eine oder andere Richtung.',
@@ -32,7 +32,7 @@ export const MASSAGE_BALL_DE: Guide = {
         'Ein Massageball hilft manchen Menschen mit Plantarfasziitis, sich für kurze Zeit lockerer und weniger wund zu fühlen, aber **es gibt kaum Belege, dass Rollen allein den Schmerz über Monate verändert.** Plantarfasziitis ist eine Reizung der Plantarfaszie, des kräftigen Bands unter der Sohle, das von der Ferse bis zu den Zehen verläuft. Beim Rollen drückst du auf dieses Band und auf die kleinen Muskeln drumherum.',
         'Die direkten Belege sind dünn. In einer Studie von 2024 aus Korea sollten 14\u00A0Personen, deren Fersenschmerzen seit mindestens sechs Monaten bestanden, mindestens dreimal am Tag einen Massageball unter der Sohle rollen, jedes Mal länger als fünf Minuten. Über drei Monate verbesserte sich die Gruppe insgesamt in einem Fragebogen zu Fußschmerzen nicht signifikant.',
         'Die Studie war winzig und hatte keine Gruppe ohne Ball. Sie kann also nicht beweisen, dass der Ball nichts bringt, nur dass niemand gezeigt hat, dass er viel bringt.',
-        'Deshalb steht das Rollen auf dieser Seite im Erholungsfach, neben den Übungen mit stärkerem Rückhalt: Dehnen von Plantarfaszie und Wade (Bewertung A in der Leitlinie) und Wadenkrafttraining (Bewertung B).',
+        'Deshalb steht das Rollen auf dieser Seite im Erholungsfach, neben den Übungen mit stärkerem Rückhalt: Dehnen von Plantarfaszie und Wade (Empfehlungsgrad A in der Leitlinie) und Wadenkrafttraining (Empfehlungsgrad B).',
       ],
       figure: {
         id: 'plantar-fascia',
@@ -45,8 +45,8 @@ export const MASSAGE_BALL_DE: Guide = {
       h2: 'Was sagt die Forschung zu Massage bei Plantarfasziitis?',
       keyFact: 'In einer Studie mit 66\u00A0Personen senkte myofasziale Release-Technik durch Therapeuten die Werte im Foot Function Index nach einem Monat um 72,4\u00A0%, gegenüber 7,4\u00A0% mit einem Scheinverfahren, und nach drei Monaten um 60,6\u00A0% (Ajimsha und Kollegen, 2014).',
       paragraphs: [
-        'Massage durch eine geschulte Fachperson hat bei Plantarfasziitis ordentliche Belege. Massage, die du selbst mit einem Ball machst, hat sehr wenige.',
-        '**Arbeit mit den Händen durch eine Fachperson.** Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie die Bewertung **A**, ihre beste. Sie versteht darunter geschulte Arbeit an Gelenken und Weichteilen von Bein und Fuß, etwa myofasziale Release-Technik (langsamer, anhaltender Druck und Zug auf das Gewebe).',
+        'Massage durch geschulte Therapeutinnen und Therapeuten hat bei Plantarfasziitis ordentliche Belege. Massage, die du selbst mit einem Ball machst, hat sehr wenige.',
+        '**Arbeit mit den Händen in der Physiotherapie.** Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie den höchsten Empfehlungsgrad **A**. Sie versteht darunter geschulte Arbeit an Gelenken und Weichteilen von Bein und Fuß, etwa myofasziale Release-Technik (langsamer, anhaltender Druck und Zug auf das Gewebe).',
         'In einer Studie von 2014 mit 66\u00A0Personen gab ein Therapeut über einen Monat 12\u00A0Sitzungen myofasziale Release-Technik an Wade und Sohle. Die Werte im Foot Function Index, einem Fragebogen zu Schmerz und Alltagsfunktion, sanken um 72,4\u00A0%, gegenüber 7,4\u00A0% in einer Gruppe mit Schein-Ultraschall. Nach drei Monaten lag der Rückgang noch bei 60,6\u00A0%. Eine Pilotstudie von 2014 zur Wadenmassage fand einen kleineren, kurzfristigen Gewinn (mehr dazu unten im Abschnitt zur Wade).',
         'Eine Übersichtsarbeit von 2018 über 7\u00A0Studien fand, dass zusätzliche manuelle Therapie in 6 davon die Funktion verbesserte, beim Schmerz aber nur in 2 von 6 klar besser abschnitt als der Vergleich. Die Autoren raten, sie zusammen mit Dehnen und Kräftigen einzusetzen.',
         '**Massage, die du selbst machst.** Nur wenige Studien testen Selbstmassage, und jede verbindet sie mit Übungen oder misst sie über wenige Minuten:',
@@ -129,7 +129,7 @@ export const MASSAGE_BALL_DE: Guide = {
       exercises: [
         {
           name: 'Fußrollen',
-          evidence: { level: 'early', why: 'Für Selbstrollen gibt es bei Plantarfasziitis nur kleine oder kurze Studien mit gemischten Ergebnissen. Arbeit mit den Händen durch eine Fachperson hat stärkere Belege.' },
+          evidence: { level: 'early', why: 'Für Selbstrollen gibt es bei Plantarfasziitis nur kleine oder kurze Studien mit gemischten Ergebnissen. Arbeit mit den Händen in der Physiotherapie hat stärkere Belege.' },
           dose: 'Walkito beginnt mit 1 x 60\u00A0Sekunden',
           how: 'Setz dich hin, ein Ball oder eine Flasche liegt unter dem Gewölbe. Roll langsam vom Fußballen bis kurz vor die Ferse und zurück, etwa ein Durchgang alle zwei Sekunden. Lehn dich nach vorn für mehr Druck, lehn dich zurück für weniger.',
           often: 'Nach einer Einheit oder einem langen Tag auf den Beinen',
@@ -154,7 +154,7 @@ export const MASSAGE_BALL_DE: Guide = {
       exercises: [
         {
           name: 'Wadendehnung (gestrecktes Knie)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie für Waden- und Plantarfaszien-Dehnung.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie für Waden- und Plantarfaszien-Dehnung.' },
           dose: 'Walkito beginnt mit 2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand, das hintere Bein gestreckt, die Ferse am Boden. Schieb die Hüfte nach vorn, bis du ein Ziehen in der oberen Wade spürst.',
           often: 'An den meisten Tagen',
@@ -166,7 +166,7 @@ export const MASSAGE_BALL_DE: Guide = {
         },
         {
           name: 'Soleusdehnung (gebeugtes Knie)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Erreicht den Soleus, den tieferen Wadenmuskel, der sich nur mit gebeugtem Knie dehnen lässt.' },
+          evidence: { level: 'strong', why: 'Empfehlungsgrad A in der Leitlinie. Erreicht den Soleus, den tieferen Wadenmuskel, der sich nur mit gebeugtem Knie dehnen lässt.' },
           dose: 'Walkito beginnt mit 2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis die Dehnung tiefer Richtung Ferse wandert. Die Ferse bleibt unten.',
           often: 'An den meisten Tagen, nach der Dehnung mit gestrecktem Knie',
@@ -199,7 +199,7 @@ export const MASSAGE_BALL_DE: Guide = {
     {
       h2: 'Wer sollte keinen Massageball und keine gefrorene Flasche nutzen?',
       paragraphs: [
-        'Die meisten Menschen können ihren Fuß gefahrlos rollen, aber einige sollten es lassen oder zuerst eine medizinische Fachperson fragen, denn beim Rollen verlässt du dich darauf, zu spüren, wann der Druck zu viel ist.',
+        'Die meisten Menschen können ihren Fuß gefahrlos rollen, aber einige sollten es lassen oder zuerst ärztlichen Rat einholen, denn beim Rollen verlässt du dich darauf, zu spüren, wann der Druck zu viel ist.',
       ],
       bullets: [
         'Diabetes mit weniger Gefühl in den Füßen: Du merkst blaue Flecken oder Kälteschäden vielleicht nicht.',
@@ -223,7 +223,7 @@ export const MASSAGE_BALL_DE: Guide = {
           ],
         },
         'In einer Studie mit 48\u00A0Personen brachte langsames Fersenheben mit einem Handtuch unter den Zehen nach drei Monaten bessere Werte bei der Fußfunktion als Plantarfaszien-Dehnung, nach sechs und zwölf Monaten lagen die Gruppen aber gleichauf.',
-        'Wenn du zu einer Physiotherapeutin oder einem Physiotherapeuten gehen kannst, ist **Weichteilarbeit mit den Händen die Form von Massage, hinter der die Leitlinie am deutlichsten steht.** Zu Hause kannst du den Ball behalten, aber lass ihn nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) oder das [Wadenheben](/de/wadenheben-plantarfasziitis/) ersetzen.',
+        'Wenn du zu einer Physiotherapeutin oder einem Physiotherapeuten gehen kannst, ist **Weichteilarbeit mit den Händen die Form von Massage, hinter der die Leitlinie am deutlichsten steht.** Zu Hause kannst du den Ball behalten, aber lass ihn nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) oder das [Fersenheben](/de/wadenheben-plantarfasziitis/) ersetzen.',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },
@@ -250,16 +250,16 @@ export const MASSAGE_BALL_DE: Guide = {
     },
     {
       q: 'Kann Massage die Plantarfasziitis verschlimmern?',
-      a: 'Ja, wenn du zu fest oder zu lange drückst. Stechender Schmerz beim Rollen, ein blauer Fleck oder erste Schritte, die am nächsten Morgen schlimmer sind, sind Zeichen, kürzerzutreten. Verkürze die Zeit, nimm einen weicheren Ball, setz dich hin und drück nicht direkt in die Ferse. Wenn der Schmerz trotzdem weiter steigt, hör mit dem Rollen auf und geh zu einer medizinischen Fachperson.',
+      a: 'Ja, wenn du zu fest oder zu lange drückst. Stechender Schmerz beim Rollen, ein blauer Fleck oder erste Schritte, die am nächsten Morgen schlimmer sind, sind Zeichen, kürzerzutreten. Verkürze die Zeit, nimm einen weicheren Ball, setz dich hin und drück nicht direkt in die Ferse. Wenn der Schmerz trotzdem weiter steigt, hör mit dem Rollen auf und geh zum Arzt oder zur Ärztin.',
     },
     {
       q: 'Empfiehlt die Leitlinie zur Plantarfasziitis Massage?',
       cites: [CITE.guideline, CITE.ajimshaMfr],
-      a: 'Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie die Bewertung A, ihre beste, meint damit aber geschulte Arbeit mit den Händen durch eine Fachperson an Gelenken und Weichteilen. In einer Studie mit 66\u00A0Personen senkte myofasziale Release-Technik durch Therapeuten die Werte für Schmerz und Einschränkung nach einem Monat um 72,4\u00A0%, gegenüber 7,4\u00A0% mit einem Scheinverfahren. Selbstrollen mit einem Ball wird nicht eigens bewertet.',
+      a: 'Die Leitlinie von 2023 zu Fersenschmerzen gibt manueller Therapie den höchsten Empfehlungsgrad A, meint damit aber geschulte Arbeit mit den Händen in der Physiotherapie an Gelenken und Weichteilen. In einer Studie mit 66\u00A0Personen senkte myofasziale Release-Technik durch Therapeuten die Werte für Schmerz und Einschränkung nach einem Monat um 72,4\u00A0%, gegenüber 7,4\u00A0% mit einem Scheinverfahren. Selbstrollen mit einem Ball wird nicht eigens bewertet.',
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'der Schmerz nach einer Verletzung, einem Sturz oder einem Knall unter dem Fuß angefangen hat',
       'es wehtut, wenn du die Seiten der Ferse zusammendrückst, oder eine Stelle am Knochen sehr empfindlich ist, was auf einen Ermüdungsbruch hindeuten kann',
@@ -275,7 +275,7 @@ export const MASSAGE_BALL_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Du musst nicht selbst entscheiden, wann du rollst und wann du dehnst. Walkito baut einen Plan, Woche für Woche, mit dem Fußrollen als kurzem Erholungsschritt und den Dehnungen und dem Wadentraining als Kern. Bei Fersenschmerzen ist das erste Ziel ein Morgenschmerz bei oder unter 1 von 10 an 14\u00A0Tagen am Stück.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (dann alle 28, sobald ein Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage (dann alle 28, sobald ein Ziel erreicht ist) prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht, damit du siehst, was sich verändert. Walkito ist ein Übungsprogramm für Erwachsene. Es stellt keine Diagnose und ersetzt keinen Arztbesuch.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

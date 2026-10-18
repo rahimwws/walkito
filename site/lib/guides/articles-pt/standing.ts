@@ -266,7 +266,7 @@ export const STANDING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: `Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Se a sua dor nos pés de ficar em pé é pior de manhã, a primeira meta é a mesma da dor no calcanhar: dor da manhã em 1/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos. Se os seus arcos também são baixos, o arco tem a sua própria meta e os seus próprios exercícios.`,
     more: [
       `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando a sua primeira meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver se o trabalho está fazendo efeito.`,

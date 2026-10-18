@@ -27,7 +27,7 @@ export const ARCH_PAIN_FR: Guide = {
     'La dysfonction du tendon tibial postérieur, un affaiblissement du tendon qui soutient la voûte, est la cause la plus fréquente du pied plat acquis de l’adulte (Ross et coll., 2018).',
     'Les pieds plats comme le pied creux modifient la façon dont la force traverse la voûte à la marche, mais les schémas de douleur et les exercices diffèrent.',
     'Une flexion dorsale de cheville réduite, c’est-à-dire un mollet raide, était le facteur de risque indépendant le plus fort de la fasciite plantaire dans une étude cas-témoins de 50\u00A0cas et 100\u00A0témoins (Riddle et coll., 2003).',
-    'Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse demande un professionnel de santé pour écarter une compression nerveuse ou une cause neurologique avant l’exercice.',
+    'Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse relève d’un professionnel de santé, qui pourra écarter une compression nerveuse ou une cause neurologique avant l’exercice.',
   ],
   toc: true,
   sections: [
@@ -42,7 +42,7 @@ export const ARCH_PAIN_FR: Guide = {
             '**La dysfonction du tendon tibial postérieur** est la cause la plus fréquente du pied plat acquis de l’adulte. Le tendon tibial postérieur passe derrière la malléole interne et sous la voûte, qu’il maintient. Quand ce tendon s’affaiblit ou se déchire, la voûte s’affaisse progressivement. La douleur se ressent le long de l’intérieur de la cheville et dans la voûte, et s’aggrave avec l’activité. Une revue systématique de 2018 sur l’exercice dans cette dysfonction a trouvé des preuves limitées mais prometteuses pour le renforcement et les étirements. Voir [dysfonction du tendon tibial postérieur\u00A0: exercices](/fr/dysfonction-tendon-tibial-posterieur/).',
             '**Le pied creux (pes cavus)** fait mal à la voûte d’une autre façon. Une voûte haute et rigide ne fléchit pas assez pour amortir les chocs, donc la force se concentre sous le talon et l’avant-pied au lieu de se répartir sur le médio-pied. Dans un pied creux, la douleur sous la voûte vient souvent d’un fascia plantaire raide. Voir [pied creux\u00A0: exercices](/fr/pied-creux-exercices/).',
             '**La surcharge**, sans problème identifié, est fréquente chez les personnes qui augmentent brusquement leur charge de marche, de course ou de station debout. Les muscles de la voûte et le fascia plantaire ne sont pas encore assez forts pour cette nouvelle demande, et ils protestent. Cela s’améliore en général avec un retour progressif à la charge précédente, plus un renforcement du mollet et de la voûte.',
-            '**Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela demande un professionnel de santé.',
+            '**Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela relève d’un professionnel de santé.',
           ],
         },
       ],
@@ -156,7 +156,7 @@ export const ARCH_PAIN_FR: Guide = {
     {
       h2: 'Quand une douleur à la voûte signale-t-elle autre chose\u00A0?',
       paragraphs: [
-        'La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui demandent un professionnel de santé avant l’exercice\u00A0:',
+        'La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui relèvent d’un professionnel de santé avant l’exercice\u00A0:',
         {
           list: [
             '**Symptômes nerveux\u00A0:** Une douleur avec engourdissements, fourmillements ou brûlures peut venir d’un syndrome du canal tarsien, où le nerf tibial postérieur est comprimé derrière la malléole interne. Cela demande un diagnostic clinique, pas seulement de l’exercice.',

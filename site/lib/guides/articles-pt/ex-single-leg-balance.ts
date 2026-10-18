@@ -160,7 +160,7 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito inclui o equilíbrio em uma perna e ficar em pé de olhos fechados em um plano junto com elevação de calcanhar, alongamentos e exercícios para o pé. A meta de equilíbrio é 30\u00A0segundos em cada perna. A cada 14\u00A0dias, um teste curto mede quanto tempo você consegue segurar, e a diferença entre os dois lados também é acompanhada.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Quando a meta de equilíbrio é alcançada, o teste passa a ser a cada 28\u00A0dias e uma nova meta entra no lugar. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',

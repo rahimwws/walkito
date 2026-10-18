@@ -254,7 +254,7 @@ export const PF_TAPING_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'A fita pode deixar os próximos dias mais fáceis. Os exercícios são o que continua funcionando depois que você tira a fita. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1 de 10 ou menos por 14\u00A0dias seguidos. O alongamento começa no primeiro dia. A cada semana, só o exercício da sua meta principal pode subir um degrau, e só quando as duas últimas sessões com ele pareceram fáceis e a dor da manhã não aumentou.',
     more: [
       'Você escolhe 3, 5 ou 7 dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias no início (a cada 28 quando uma meta for alcançada), um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. A bandagem não faz parte do Walkito. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde.',

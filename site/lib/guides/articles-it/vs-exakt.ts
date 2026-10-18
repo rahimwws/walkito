@@ -291,7 +291,7 @@ export const VS_EXAKT_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Se Walkito ti sembra adatta alla tua situazione, ecco come funziona. Rispondi a domande su dove fa male, da che lato, il tuo livello di attività e il tuo obiettivo. Walkito costruisce un piano settimanale intorno a obiettivi misurabili, partendo dalle mattine senza dolore. Ogni mattina, un check-in regola la giornata.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test misura resistenza del polpaccio, tenuta dell’arco ed equilibrio, e mostra la differenza tra lato sinistro e destro. Gli esercizi seguono la linea guida clinica del 2023 e lo studio di Rathleff del 2015. Walkito è un programma di esercizi, non una diagnosi né un sostituto di un professionista sanitario.',

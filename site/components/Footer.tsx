@@ -35,7 +35,7 @@ const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
   ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
   es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
   pt: { ios: 'Walkito na App Store', android: 'Walkito no Google Play' },
-  fr: { ios: "Walkito sur l'App Store", android: 'Walkito sur Google Play' },
+  fr: { ios: "Walkito sur l’App Store", android: 'Walkito sur Google Play' },
   it: { ios: "Walkito sull'App Store", android: 'Walkito su Google Play' },
   de: { ios: 'Walkito im App Store', android: 'Walkito bei Google Play' },
 };
@@ -81,7 +81,7 @@ const TAGLINE: Record<Lang, string> = {
   es: 'Planes de ejercicios para el dolor de talón, pie y pierna, 3, 5 o 7 días a la semana, tú eliges, basados en guías clínicas.',
   ru: 'Планы упражнений при боли в пятке, стопе и ногах на 3, 5 или 7 дней в неделю, на ваш выбор, на основе клинических рекомендаций.',
   pt: 'Planos de exercícios para dor no calcanhar, no pé e na perna, de 3, 5 ou 7 dias por semana, à sua escolha, baseados em diretrizes clínicas.',
-  fr: "Des programmes d'exercices pour la douleur au talon, au pied et à la jambe, 3, 5 ou 7 jours par semaine au choix, fondés sur les recommandations cliniques.",
+  fr: "Des programmes d’exercices pour la douleur au talon, au pied et à la jambe, 3, 5 ou 7 jours par semaine au choix, fondés sur les recommandations cliniques.",
   it: 'Piani di esercizi per il dolore a tallone, piede e gamba, 3, 5 o 7 giorni a settimana a tua scelta, basati sulle linee guida cliniche.',
   de: 'Übungspläne bei Fersen-, Fuß- und Beinschmerzen, an 3, 5 oder 7 Tagen pro Woche nach deiner Wahl, auf Grundlage klinischer Leitlinien.',
 };

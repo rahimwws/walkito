@@ -195,7 +195,7 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     {
       q: 'Il piede piatto può causare dolore all’interno del ginocchio?',
       cites: [CITE.grossFlatFeetKnee],
-      a: 'Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano odds 1,4\u00A0volte più alte di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo schema è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.',
+      a: 'Negli adulti anziani c’è un legame. Nello studio di Framingham del 2011, i piedi più piatti avevano odds 1,4\u00A0volte più alte di danno alla cartilagine sul lato interno del ginocchio, e nessun legame con danni in altre parti del ginocchio. Questo quadro è coerente con l’artrosi del ginocchio. Lo studio ha misurato le persone una sola volta, quindi non può dimostrare che la causa siano i piedi. Un professionista sanitario può verificare se l’origine è l’artrosi.',
     },
     {
       q: 'I plantari aiutano il dolore al ginocchio da piede piatto?',
@@ -233,7 +233,7 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Walkito è pensato per il dolore al tallone, al piede e alla parte bassa della gamba negli adulti, non per il dolore al ginocchio. Se hai il piede piatto con dolore all’arco o al tallone oltre a un ginocchio dolorante, può occuparsi della parte del piede: piede corto, equilibrio e abduzione dell’anca, organizzati una settimana alla volta. Gli esercizi per il ginocchio dovrebbero venire da un fisioterapista.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. All’inizio ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Walkito è un programma di esercizi. Non fa diagnosi, non agisce direttamente sul dolore al ginocchio e non sostituisce un professionista sanitario. Per il mal di schiena con piede piatto, vedi [piede piatto e mal di schiena](/it/piede-piatto-mal-di-schiena/).',

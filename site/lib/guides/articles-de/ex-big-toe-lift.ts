@@ -128,7 +128,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
     },
   ],
   redFlags: {
-    h2: 'Geh zuerst zu einer medizinischen Fachperson, wenn',
+    h2: 'Geh zuerst zum Arzt oder zur Ärztin, wenn',
     bullets: [
       'das Großzehengrundgelenk steif ist und beim Beugen schmerzt, was auf einen Hallux rigidus hindeuten kann',
       'du Taubheit oder Gefühlsverlust im großen Zeh hast',

@@ -257,7 +257,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para pé chato, uma das metas é sustentar o arco: manter a posição de pé curto por 60\u00A0segundos. O plano pode incluir exercícios com faixa para o tibial posterior, elevação de calcanhar, pé curto e alongamento de panturrilha, cada um começando com uma dose baixa e só subindo quando ficar fácil.',
     more: [
       'Você escolhe 3, 5 ou 7 sessões por semana, de 3, 5 ou 10\u00A0minutos. A cada duas semanas, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, para você ver o que está mudando. O Walkito é um programa de exercícios para adultos. Ele não faz diagnóstico e não substitui um profissional de saúde. Se um arco está caindo ou a parte de dentro do tornozelo dói, procure primeiro um profissional de saúde.',

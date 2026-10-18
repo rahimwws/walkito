@@ -161,7 +161,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
       h2: 'Como melhorar um resultado baixo no teste de elevação de calcanhar?',
       paragraphs: [
         'Os exercícios que constroem a resistência da panturrilha na reabilitação são os mesmos que aumentam o resultado do teste. Comece no nível que combina com onde você está agora e **suba quando duas sessões seguidas parecerem fáceis.**',
-        'Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentado ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga.',
+        'Se você consegue fazer menos de 10 elevações em uma perna, comece com a elevação sentada ou com os dois pés em pé. Passe para a elevação de calcanhar sustentada para construir resistência isométrica, e depois para a elevação em uma perna no chão. Usar um degrau aumenta a amplitude. Usar uma mochila aumenta a carga.',
         'Veja [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/) para o movimento básico, [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) para a versão que também põe carga na fáscia plantar e [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/) para a variação focada no Aquiles.',
       ],
       exercises: [
@@ -180,7 +180,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
           name: 'Elevação de calcanhar sustentada',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. A sustentação isométrica aumenta o tempo sob tensão no fim do movimento.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga na panturrilha sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga na panturrilha sem o impulso de uma repetição completa.',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
           media: 'heel_raise_hold',
@@ -248,10 +248,10 @@ export const CALF_RAISE_TEST_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'O Walkito faz o teste de elevação de calcanhar em uma perna a cada 14\u00A0dias e acompanha as duas pernas. A meta da panturrilha é 25\u00A0elevações de calcanhar em uma perna. A meta de simetria é uma diferença entre esquerda e direita abaixo de 10\u00A0por cento. O app calcula a diferença como a diferença entre o lado mais forte e o mais fraco, dividida pelo lado mais forte. Quando as duas metas são alcançadas, o teste passa a ser a cada 28\u00A0dias e o plano muda para a próxima meta ativa.',
     more: [
-      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. O trabalho de panturrilha começa com a elevação sentado e sobe pelas versões com os dois pés, sustentada, com toalha, descidas excêntricas e saltitos curtos na ponta dos pés, no seu ritmo. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
+      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. O trabalho de panturrilha começa com a elevação sentada e sobe pelas versões com os dois pés, sustentada, com toalha, descidas excêntricas e saltitos curtos na ponta dos pés, no seu ritmo. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

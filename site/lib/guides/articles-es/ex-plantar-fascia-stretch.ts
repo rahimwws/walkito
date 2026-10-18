@@ -147,7 +147,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito pone el estiramiento de la fascia plantar en casi todas las sesiones y te lo recuerda antes de tu primer paso cada mañana. No tienes que acordarte del momento ni de cuántas repeticiones. La app arma un plan una semana a la vez, empieza con estiramientos y añade trabajo de fuerza cuando el dolor se calma.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, así puedes ver qué está cambiando. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',

@@ -176,7 +176,7 @@ export const PF_TAPING_FR: Guide = {
           alt: 'Une personne appuyée contre un mur, la jambe arrière tendue, le mollet mis en évidence',
         },
         {
-          name: 'Montées sur pointes avec une serviette sous les orteils',
+          name: 'Montées sur pointes avec serviette',
           evidence: { level: 'moderate', why: 'Note B de la recommandation pour le renforcement musculaire. Testé dans un essai sur 48\u00A0personnes.' },
           dose: '4\u00A0séries de 10 (dose de Walkito)',
           how: 'Tenez-vous sur une marche, une serviette roulée sous les orteils, le talon dans le vide. Montez lentement en trois secondes environ, faites une pause de deux secondes, et redescendez en trois secondes environ. Tenez-vous à une rampe pour l’équilibre.',

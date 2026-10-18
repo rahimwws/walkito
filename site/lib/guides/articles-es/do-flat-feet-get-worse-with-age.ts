@@ -257,7 +257,7 @@ export const FLAT_FEET_AGE_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Walkito arma un plan una semana a la vez en torno a una meta. Para el pie plano, una meta es mantener el arco: sostener la posición de pie corto 60\u00A0segundos. El plan puede incluir trabajo con banda para el tibial posterior, elevaciones de talón, pie corto y estiramiento de pantorrilla, cada uno empezando con una dosis baja y subiendo solo cuando se siente fácil.',
     more: [
       'Eliges 3, 5 o 7\u00A0sesiones a la semana de 3, 5 o 10\u00A0minutos. Cada dos semanas, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud. Si un arco está bajando o te duele la parte interna del tobillo, consulta primero a un profesional de la salud.',

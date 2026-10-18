@@ -252,7 +252,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'Puedes hacer los ejercicios de esta página por tu cuenta, o dejar que Walkito los organice por ti. La app arma un plan una semana a la vez. Cuando marcas la planta delantera del pie en el mapa de dolor, la sesión del check-in se enfoca en la separación de dedos y el estiramiento plantar. El programa completo agrega estiramiento y fortalecimiento de pantorrilla a medida que pasan las semanas.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas esa meta), una prueba corta mide tu avance para que veas qué está cambiando. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si el dolor en la parte delantera del pie viene con entumecimiento, hinchazón o un bulto, consulta primero a un profesional de la salud.',

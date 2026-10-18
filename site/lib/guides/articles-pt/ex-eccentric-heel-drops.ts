@@ -164,8 +164,8 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
-    text: 'A descida excêntrica do calcanhar é um degrau na sequência da panturrilha que o Walkito monta em um plano semanal. A sequência começa com a elevação sentado e sobe pela elevação com os dois pés, a sustentada, a elevação com toalha, a descida do calcanhar e os saltitos curtos na ponta dos pés. Cada degrau abre quando duas sessões no nível atual pareceram fáceis.',
+    h2: 'Como transformar isso em um plano',
+    text: 'A descida excêntrica do calcanhar é um degrau na sequência da panturrilha que o Walkito monta em um plano semanal. A sequência começa com a elevação sentada e sobe pela elevação com os dois pés, a sustentada, a elevação com toalha, a descida do calcanhar e os saltitos curtos na ponta dos pés. Cada degrau abre quando duas sessões no nível atual pareceram fáceis.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha e o equilíbrio. Se a dor é bem no ponto onde o tendão se prende ao osso do calcanhar, peça para um profissional de saúde avaliar antes de colocar muita carga. O Walkito é um programa de exercícios. Ele não faz diagnóstico.',
     ],

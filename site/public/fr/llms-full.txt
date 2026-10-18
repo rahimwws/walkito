@@ -342,7 +342,7 @@ Rester longtemps debout ou marcher longtemps, des chaussures usées ou qui ne so
 
 Language: French (Français) · https://walkito.site/fr/tendinite-achille-exercices/ · published 2026-10-08 · updated 2026-10-17
 
-Les exercices pour la tendinite d’Achille marchent le mieux quand on comprend la descente du talon comme du renforcement, pas comme un étirement. La recommandation clinique de 2024 donne à l’exercice sa meilleure note, **A**, et une méta-analyse en réseau de 2021 portant sur 29 essais n’a trouvé aucun protocole nettement meilleur qu’un autre. Ce qui compte, c’est de charger le tendon régulièrement pendant des semaines.
+Les exercices pour la tendinite d’Achille sont plus efficaces quand on considère la descente du talon comme un exercice de renforcement, et non comme un étirement. La recommandation clinique de 2024 donne à l’exercice sa meilleure note, **A**, et une méta-analyse en réseau de 2021 portant sur 29 essais n’a trouvé aucun protocole nettement meilleur qu’un autre. Ce qui compte, c’est de charger le tendon régulièrement pendant des semaines.
 
 - La recommandation clinique de 2024 donne à l’exercice (tout type de mise en charge du tendon) la note **A**, sa meilleure note, pour la tendinopathie d’Achille du corps du tendon (Chimenti et coll., 2024).
 - Une méta-analyse en réseau de 29 essais randomisés n’a trouvé aucune différence cliniquement pertinente entre les approches d’exercice à 3 ou 12 mois (van der Vlist et coll., 2021).
@@ -504,7 +504,7 @@ La récupération se compte en mois. Les principaux essais duraient environ troi
 
 #### Que faut-il éviter avec une tendinite d’Achille ?
 
-Évitez les hausses soudaines du volume de course ou de l’intensité des sprints, les étirements profonds du mollet si votre douleur est au point d’attache sur l’os du talon, et de forcer malgré une douleur qui reste élevée le lendemain matin ou s’aggrave d’une semaine à l’autre. Un claquement ou un craquement soudain demande un professionnel de santé tout de suite. Le repos complet n’est pas nécessaire non plus : une activité avec surveillance de la douleur est en général une meilleure option que de tout arrêter.
+Évitez les hausses soudaines du volume de course ou de l’intensité des sprints, les étirements profonds du mollet si votre douleur est au point d’attache sur l’os du talon, et de forcer malgré une douleur qui reste élevée le lendemain matin ou s’aggrave d’une semaine à l’autre. Un claquement ou un craquement soudain justifie de consulter un professionnel de santé sans attendre. Le repos complet n’est pas nécessaire non plus : une activité avec surveillance de la douleur est en général une meilleure option que de tout arrêter.
 
 #### La marche aggrave-t-elle une tendinite d’Achille ?
 
@@ -862,7 +862,7 @@ Une douleur à la voûte plantaire vient en général d’un petit nombre de pro
 - La dysfonction du tendon tibial postérieur, un affaiblissement du tendon qui soutient la voûte, est la cause la plus fréquente du pied plat acquis de l’adulte (Ross et coll., 2018).
 - Les pieds plats comme le pied creux modifient la façon dont la force traverse la voûte à la marche, mais les schémas de douleur et les exercices diffèrent.
 - Une flexion dorsale de cheville réduite, c’est-à-dire un mollet raide, était le facteur de risque indépendant le plus fort de la fasciite plantaire dans une étude cas-témoins de 50 cas et 100 témoins (Riddle et coll., 2003).
-- Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse demande un professionnel de santé pour écarter une compression nerveuse ou une cause neurologique avant l’exercice.
+- Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse relève d’un professionnel de santé, qui pourra écarter une compression nerveuse ou une cause neurologique avant l’exercice.
 
 ### Quelles sont les causes de la douleur à la voûte plantaire ?
 
@@ -873,7 +873,7 @@ La voûte est soutenue par le fascia plantaire, le tendon tibial postérieur, le
 - **La dysfonction du tendon tibial postérieur** est la cause la plus fréquente du pied plat acquis de l’adulte. Le tendon tibial postérieur passe derrière la malléole interne et sous la voûte, qu’il maintient. Quand ce tendon s’affaiblit ou se déchire, la voûte s’affaisse progressivement. La douleur se ressent le long de l’intérieur de la cheville et dans la voûte, et s’aggrave avec l’activité. Une revue systématique de 2018 sur l’exercice dans cette dysfonction a trouvé des preuves limitées mais prometteuses pour le renforcement et les étirements. Voir [dysfonction du tendon tibial postérieur : exercices](https://walkito.site/fr/dysfonction-tendon-tibial-posterieur/).
 - **Le pied creux (pes cavus)** fait mal à la voûte d’une autre façon. Une voûte haute et rigide ne fléchit pas assez pour amortir les chocs, donc la force se concentre sous le talon et l’avant-pied au lieu de se répartir sur le médio-pied. Dans un pied creux, la douleur sous la voûte vient souvent d’un fascia plantaire raide. Voir [pied creux : exercices](https://walkito.site/fr/pied-creux-exercices/).
 - **La surcharge**, sans problème identifié, est fréquente chez les personnes qui augmentent brusquement leur charge de marche, de course ou de station debout. Les muscles de la voûte et le fascia plantaire ne sont pas encore assez forts pour cette nouvelle demande, et ils protestent. Cela s’améliore en général avec un retour progressif à la charge précédente, plus un renforcement du mollet et de la voûte.
-- **Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela demande un professionnel de santé.
+- **Une irritation nerveuse** comme le syndrome du canal tarsien peut donner des brûlures, des fourmillements ou un engourdissement le long de la voûte. Le nerf tibial postérieur passe derrière la malléole interne et descend dans la plante du pied. S’il est comprimé, la douleur peut imiter une fasciite plantaire, mais elle s’accompagne de symptômes sensitifs que la fasciite ne donne pas. Cela relève d’un professionnel de santé.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
@@ -907,7 +907,7 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 ### Quand une douleur à la voûte signale-t-elle autre chose ?
 
-La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui demandent un professionnel de santé avant l’exercice :
+La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui relèvent d’un professionnel de santé avant l’exercice :
 
 - **Symptômes nerveux :** Une douleur avec engourdissements, fourmillements ou brûlures peut venir d’un syndrome du canal tarsien, où le nerf tibial postérieur est comprimé derrière la malléole interne. Cela demande un diagnostic clinique, pas seulement de l’exercice.
 - **Aplatissement d’un seul côté :** Une douleur à la voûte accompagnée d’un aplatissement progressif du pied, surtout d’un seul côté, peut signaler une dysfonction du tendon tibial postérieur à un stade plus avancé. Le test de montée sur pointes sur une jambe est une vérification simple : si vous ne pouvez pas monter complètement sur la pointe d’un pied, ou si cela fait nettement plus mal d’un côté, un professionnel de santé doit examiner le tendon avant que vous ne le chargiez davantage.
@@ -1676,10 +1676,10 @@ Il n’y a pas d’âge unique. L’hallux valgus se forme en général peu à p
 
 Language: French (Français) · https://walkito.site/fr/test-montee-sur-pointes/ · published 2026-10-08 · updated 2026-10-08
 
-Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu indique la force résistante à la fatigue du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.
+Le test de montée sur pointes sur une jambe, aussi appelé heel-rise test, mesure l’endurance des muscles du mollet. Vous vous tenez sur un pied et montez sur la pointe autant de fois que possible à un rythme fixe. Le nombre obtenu reflète l’endurance musculaire du mollet de chaque côté, ce qui compte pour la marche, la course et la récupération après une douleur au talon ou une blessure d’Achille.
 
 - La médiane globale chez l’adulte en bonne santé est de 24 répétitions sur la jambe droite et 23 sur la gauche, d’après une étude sur 566 personnes de 20 à 81 ans (Hébert-Losier et coll., 2017).
-- Les hommes faisaient plus de répétitions que les femmes au total (médiane de 24 contre 21), mais après 60 ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).
+- Dans l’ensemble, les hommes faisaient plus de répétitions que les femmes (médiane de 24 contre 21), mais après 60 ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).
 - Une différence gauche-droite de plus de 10 % est le seuil habituel d’une asymétrie notable en rééducation du membre inférieur (Silbernagel et coll., 2010).
 - Le test a une excellente fiabilité : ICC de 0,96, avec une erreur de mesure typique d’environ deux répétitions (Hébert-Losier et coll., 2017).
 
@@ -1819,7 +1819,7 @@ La médiane globale dans une étude sur 566 adultes en bonne santé était d’e
 
 #### Le test de montée sur pointes, c’est la même chose que le heel-rise test ?
 
-Oui. « Heel-rise test » est le nom utilisé dans la littérature scientifique. « Test de montée sur pointes » est plus courant en dehors des cabinets. Le mouvement est le même : des montées sur la pointe d’un seul pied jusqu’à la fatigue, à un rythme fixe.
+Oui. « Heel-rise test » est le nom utilisé dans la littérature scientifique. « Test de montée sur pointes » est plus courant en dehors des cabinets. Le mouvement est le même : des montées sur pointes sur un seul pied jusqu’à la fatigue, à un rythme fixe.
 
 #### Quel est un bon score au test de montée sur pointes selon l’âge ?
 
@@ -1869,7 +1869,7 @@ Le seul essai randomisé à avoir testé directement cet exercice dans la fascii
 
 À trois mois, le groupe des montées sur pointes avait un score meilleur de 29 points au Foot Function Index. À douze mois, les deux groupes s’étaient rejoints.
 
-**Les montées sur pointes ont donc accéléré l’amélioration.** Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.
+**Les montées sur pointes ont donc accéléré l’amélioration.** Elles ne l’ont pas amplifiée à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -2999,7 +2999,7 @@ Un essai randomisé de 2024 sur 45 femmes aux pieds plats souples a comparé, su
 - Un programme d’exercices combiné.
 - Des exercices du pied court avec abduction de hanche isométrique.
 
-Les trois groupes ont réduit l’affaissement du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais son affaissement du naviculaire n’était pas significativement meilleur que celui du programme combiné ; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.
+Les trois groupes ont réduit la chute du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais sa chute du naviculaire n’était pas significativement meilleure que celui du programme combiné ; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.
 
 **Les données soutiennent l’abduction de hanche comme élément d’un programme plus large pour le pied.** Ce n’est pas un exercice à lui seul contre la douleur de voûte, mais il comble un manque que laissent les exercices centrés sur le pied. Pages liées : [exercices pour pieds plats](https://walkito.site/fr/exercices-pieds-plats/), [inversion de cheville avec élastique](https://walkito.site/fr/exercices/inversion-cheville-elastique/), [exercice du pied court](https://walkito.site/fr/exercices/pied-court/).
 
@@ -3154,7 +3154,7 @@ L’exercice du pied court entraîne les petits muscles à l’intérieur du pie
 
 - Une étude IRM de 2016 sur 8 sportifs a montré que l’exercice du pied court produisait l’activation moyenne la plus élevée (jusqu’à 34,9 %) dans trois des quatre muscles plantaires intrinsèques testés, par rapport à l’écartement des orteils, à l’extension du gros orteil et à l’extension des quatre autres orteils (Gooding et coll., 2016).
 - Des mesures EMG ont montré que l’abducteur de l’hallux, le muscle qui soutient l’intérieur de la voûte, était nettement plus actif pendant l’exercice du pied court que pendant le ramassage de serviette avec les orteils (Jung et coll., 2011).
-- Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines amélioraient l’affaissement du naviculaire, mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).
+- Une méta-analyse de 2024 sur l’entraînement du pied court chez des personnes aux pieds plats a montré que les programmes de plus de six semaines amélioraient la chute du naviculaire (navicular drop), mais que les programmes plus courts n’atteignaient pas la significativité (Cheng et coll., 2024).
 - Des adultes en bonne santé qui ont fait quatre semaines d’exercices du pied court ont plus amélioré leur équilibre dynamique qu’un groupe qui ramassait une serviette avec les orteils pendant la même durée (Lynn et coll., 2012).
 
 ### Qu’est-ce que l’exercice du pied court ?
@@ -3223,7 +3223,7 @@ Les données les plus solides viennent de programmes qui associent l’exercice 
 
 Le programme a modifié deux mesures de la forme de la voûte davantage que dans le groupe témoin.
 
-Une méta-analyse de 2024 de Cheng et coll. a étudié l’entraînement du pied court seul sur plusieurs essais. Les résultats regroupés ne montraient aucune amélioration significative de l’affaissement du naviculaire ni du Foot Posture Index dans l’ensemble. Mais quand les auteurs ont limité l’analyse aux programmes de plus de six semaines, l’affaissement du naviculaire s’est nettement amélioré. La durée de l’entraînement compte.
+Une méta-analyse de 2024 de Cheng et coll. a étudié l’entraînement du pied court seul sur plusieurs essais. Les résultats regroupés ne montraient aucune amélioration significative de la chute du naviculaire ni du Foot Posture Index dans l’ensemble. Mais quand les auteurs ont limité l’analyse aux programmes de plus de six semaines, la chute du naviculaire s’est nettement améliorée. La durée de l’entraînement compte.
 
 Pour l’équilibre, un essai randomisé de 2012 de Lynn et coll. a comparé quatre semaines d’entraînement du pied court à quatre semaines de ramassage de serviette chez des adultes en bonne santé. Le groupe du pied court a plus amélioré son équilibre dynamique que le groupe de la serviette.
 
@@ -3246,7 +3246,7 @@ Walkito construit un plan qui inclut l’exercice du pied court en trois étapes
 
 #### Combien de temps faut-il pour que les exercices du pied court marchent ?
 
-Une méta-analyse de 2024 a montré que les programmes d’entraînement du pied court de moins de six semaines ne modifiaient pas nettement la hauteur de la voûte, mais que ceux de plus de six semaines amélioraient l’affaissement du naviculaire (Cheng 2024). Comptez au moins six à huit semaines de pratique régulière avant de voir des changements mesurables.
+Une méta-analyse de 2024 a montré que les programmes d’entraînement du pied court de moins de six semaines ne modifiaient pas nettement la hauteur de la voûte, mais que ceux de plus de six semaines amélioraient la chute du naviculaire (Cheng 2024). Comptez au moins six à huit semaines de pratique régulière avant de voir des changements mesurables.
 
 #### L’exercice du pied court, c’est la même chose que le dôme de la voûte ?
 
@@ -3479,7 +3479,7 @@ Une étude cas-témoins de 2007 a montré que des sportifs atteints de MTSS avai
 
 Une revue systématique de 2013 s’est intéressée au traitement d’un MTSS déjà installé, pas à sa prévention, et aucun essai n’y montrait que les étirements ou le renforcement étaient efficaces, même si les preuves derrière ce constat étaient globalement de faible qualité.
 
-Pour être honnête, nous n’avons pas d’essai qui ait testé les relevés des orteils seuls dans la périostite tibiale et montré qu’ils réduisaient les symptômes ou les récidives. **L’exercice figure dans les programmes parce qu’il a du sens sur le plan biomécanique, pas parce qu’un essai l’a prouvé.** C’est pourquoi son niveau de preuve est « préliminaire ». Pour la page complète sur la périostite tibiale, voir [exercices pour la périostite tibiale](https://walkito.site/fr/periostite-tibiale-exercices/).
+Pour être honnête, nous n’avons pas d’essai qui ait testé les relevés des orteils seuls dans la périostite tibiale et montré qu’ils réduisaient les symptômes ou les récidives. **L’exercice figure dans les programmes parce qu’il est logique sur le plan biomécanique, pas parce qu’un essai l’a prouvé.** C’est pourquoi son niveau de preuve est « préliminaire ». Pour la page complète sur la périostite tibiale, voir [exercices pour la périostite tibiale](https://walkito.site/fr/periostite-tibiale-exercices/).
 
 Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
 Source: Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
@@ -3862,19 +3862,19 @@ Une chaussette fine convient, mais une serviette à mains offre plus de résista
 
 Language: French (Français) · https://walkito.site/fr/pieds-plats-mal-de-dos/ · published 2026-10-09 · updated 2026-10-09
 
-Les pieds plats expliquent mal la plupart des maux de dos. Une grande étude aux mesures rigoureuses, la Framingham Foot Study, menée sur 1 930 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un petit lien chez les femmes dont le pied s’affaissait vers l’intérieur à la marche. C’est une association, pas la preuve que les pieds causent le mal de dos.
+Les pieds plats expliquent mal la plupart des maux de dos. Une grande étude aux mesures rigoureuses, la Framingham Foot Study, menée sur 1 930 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un petit lien chez les femmes dont le pied s’affaissait vers l’intérieur à la marche. C’est une association, pas la preuve que les pieds causent le mal de dos.
 
-- Dans la Framingham Foot Study sur 1 930 adultes, la posture de pied plat debout n’était pas liée au mal de bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une cote (odds) environ 1,5 fois plus élevée (Menz et coll., 2013).
+- Dans la Framingham Foot Study sur 1 930 adultes, la posture de pied plat debout n’était pas liée au mal au bas du dos. Seul un pied qui s’affaissait vers l’intérieur à la marche y était lié, chez les femmes, avec une cote (odds) environ 1,5 fois plus élevée (Menz et coll., 2013).
 - Chez environ 97 000 jeunes recrues militaires, des pieds plats légers n’allaient pas avec plus de mal de dos que des pieds normaux (5 % dans les deux cas). Des pieds plats modérés ou sévères allaient avec 10 % (Kosashvili et coll., 2008).
-- Une revue de 2014 portant sur cinq essais de semelles contre le mal de bas du dos n’a trouvé aucun bénéfice significatif. Un essai de 2017 sur 225 adultes a constaté que des orthèses sur mesure faisaient mieux que l’absence de prise en charge à environ un mois et demi, mais plus à trois mois ni ensuite.
-- Une revue Cochrane de 2021 portant sur 249 essais a trouvé, avec un niveau de certitude modéré, que l’exercice soulage le mal de bas du dos chronique d’environ 15 points sur une échelle de douleur de 100 points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo.
+- Une revue de 2014 portant sur cinq essais de semelles contre le mal au bas du dos n’a trouvé aucun bénéfice significatif. Un essai de 2017 sur 225 adultes a constaté que des orthèses sur mesure faisaient mieux que l’absence de prise en charge à environ un mois et demi, mais plus à trois mois ni ensuite.
+- Une revue Cochrane de 2021 portant sur 249 essais a trouvé, avec un niveau de certitude modéré, que l’exercice soulage le mal au bas du dos chronique d’environ 15 points sur une échelle de douleur de 100 points, par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo.
 - Un mal de dos avec perte de contrôle de la vessie ou des intestins, un engourdissement autour de l’aine ou des fesses, ou une nouvelle faiblesse des jambes demande une prise en charge médicale urgente, quelle que soit la forme de vos pieds.
 
 ### Les pieds plats peuvent-ils causer un mal de dos ?
 
 **Il n’a pas été démontré que les pieds plats causent le mal de dos.** Certaines études trouvent que les personnes aux pieds plus plats ou qui s’affaissent vers l’intérieur signalent un peu plus souvent un mal de dos, d’autres ne trouvent aucun lien. Aucune ne peut montrer que les pieds sont venus d’abord et le mal de dos ensuite.
 
-Cette nuance compte, car le mal de bas du dos est très fréquent et n’a en général pas de cause unique. Une revue du Lancet de 2018 le dit clairement : chez presque toutes les personnes qui ont mal au bas du dos, aucune source précise de la douleur ne peut être identifiée. Seule une petite partie a une cause médicale claire, comme une fracture, une infection ou une tumeur. D’après cette revue, les personnes les plus à risque comprennent :
+Cette nuance compte, car le mal au bas du dos est très fréquent et n’a en général pas de cause unique. Une revue du Lancet de 2018 le dit clairement : chez presque toutes les personnes qui ont mal au bas du dos, aucune source précise de la douleur ne peut être identifiée. Seule une petite partie a une cause médicale claire, comme une fracture, une infection ou une tumeur. D’après cette revue, les personnes les plus à risque comprennent :
 
 - Celles qui ont un travail physiquement exigeant.
 - Les fumeurs.
@@ -3890,11 +3890,11 @@ Source: Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and w
 
 ### Qu’a trouvé la Framingham Foot Study ?
 
-La Framingham Foot Study est l’une des plus grandes études à avoir mesuré directement les pieds, et elle n’a trouvé aucun lien entre les pieds plats et le mal de bas du dos. Les chercheurs ont examiné 1 930 adultes de la ville de Framingham, dans le Massachusetts, entre 2002 et 2005. Ils ont mesuré la voûte de chaque personne debout à partir d’une empreinte et classé les pieds en plats, normaux ou creux. La posture du pied, plat ou non, n’était pas associée au mal de bas du dos.
+La Framingham Foot Study est l’une des plus grandes études à avoir mesuré directement les pieds, et elle n’a trouvé aucun lien entre les pieds plats et le mal au bas du dos. Les chercheurs ont examiné 1 930 adultes de la ville de Framingham, dans le Massachusetts, entre 2002 et 2005. Ils ont mesuré la voûte de chaque personne debout à partir d’une empreinte et classé les pieds en plats, normaux ou creux. La posture du pied, plat ou non, n’était pas associée au mal au bas du dos.
 
 L’étude a aussi mesuré la fonction du pied : la façon dont la pression se déplaçait sous le pied pendant la marche. Un pied qui s’affaisse vers l’intérieur à la marche est dit en pronation.
 
-Chez les femmes, une marche en pronation était liée au mal de bas du dos, avec une cote (odds) environ 1,5 fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.
+Chez les femmes, une marche en pronation était liée au mal au bas du dos, avec une cote (odds) environ 1,5 fois plus élevée que chez les femmes dont le pied bougeait normalement. Le lien persistait après prise en compte de l’âge, du poids, du tabagisme et des symptômes dépressifs. Chez les hommes, il n’y avait aucun lien.
 
 Beaucoup de sites présentent cette étude ainsi : « les personnes aux pieds plats ont 50 % de risque en plus d’avoir mal au dos ». Ce n’est pas ce qu’elle a trouvé. **La forme de voûte visible quand vous êtes debout ne comptait pas.** Ce qui comptait, chez les femmes seulement, c’était la façon dont le pied bougeait pendant la marche.
 
@@ -3910,7 +3910,7 @@ Source: Menz HB, Dufour AB, Riskowski JL, Hillstrom HJ, Hannan MT. Foot posture,
 
 Dans certaines études, les personnes aux pieds nettement plats signalent un peu plus souvent un mal de dos, mais pas celles aux pieds plats légers. Le plus grand ensemble de données vient de 97 279 jeunes recrues militaires, dont les pieds plats ont été évalués par un médecin orthopédiste. Parmi elles, 16 % avaient les pieds plats, et la plupart d’entre elles (74 %) de façon légère.
 
-Le mal de bas du dos intermittent, c’est-à-dire un mal de dos sans anomalie à l’examen ni à la radio, touchait 5 % des recrues aux pieds normaux et 5 % de celles aux pieds plats légers. Il atteignait 10 % chez celles aux pieds plats modérés ou sévères. **Pour la plupart des pieds plats, les pieds plats légers, il n’y avait donc aucune différence.**
+Le mal au bas du dos intermittent, c’est-à-dire un mal de dos sans anomalie à l’examen ni à la radio, touchait 5 % des recrues aux pieds normaux et 5 % de celles aux pieds plats légers. Il atteignait 10 % chez celles aux pieds plats modérés ou sévères. **Pour la plupart des pieds plats, les pieds plats légers, il n’y avait donc aucune différence.**
 
 Une enquête de 2021 menée auprès de 1 798 adultes interrogés lors d’un festival en Arabie saoudite a rapporté des chiffres bien plus élevés : 65,9 % des personnes aux pieds plats disaient avoir mal au bas du dos, et les pieds plats allaient avec une cote (odds) 3,3 fois plus élevée de mal de dos de courte durée et 4,5 fois plus élevée de mal de dos de longue durée.
 
@@ -3955,20 +3955,20 @@ Source: Castro-Méndez A, Munuera PV, Albornoz-Cabello M. The short-term effect 
 Source: Alam MF, Ansari S, Zaki S, et al. Effects of physical interventions on pain and disability in chronic low back pain with pronated feet: a systematic review and meta-analysis. Physiotherapy Theory and Practice. 2025;41(2):390–404.
 Source: Lin Z, Cheng J, Hua L, Han X, Wang D, Huang Y. Effect of foot orthoses on pain and disability in patients with low back pain: a meta-analysis of randomized controlled trials. Disability and Rehabilitation. 2026;48(3):629–645.
 
-### Qu’est-ce qui aide le mal de bas du dos, si ce ne sont pas les pieds ?
+### Qu’est-ce qui aide le mal au bas du dos, si ce ne sont pas les pieds ?
 
-L’exercice général a des preuves bien plus solides contre le mal de dos que tout ce qui vise les pieds. Une revue Cochrane de 2021, une vaste synthèse d’essais, a regroupé 249 essais d’exercice pour le mal de bas du dos chronique. Elle a trouvé, avec un niveau de certitude modéré, que l’exercice réduisait la douleur d’environ 15 points sur une échelle de 100 points par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo. L’effet sur la fonction au quotidien était plus faible, environ 7 points.
+L’exercice général a des preuves bien plus solides contre le mal de dos que tout ce qui vise les pieds. Une revue Cochrane de 2021, une vaste synthèse d’essais, a regroupé 249 essais d’exercice pour le mal au bas du dos chronique. Elle a trouvé, avec un niveau de certitude modéré, que l’exercice réduisait la douleur d’environ 15 points sur une échelle de 100 points par rapport à l’absence d’exercice, à la prise en charge habituelle ou à un placebo. L’effet sur la fonction au quotidien était plus faible, environ 7 points.
 
 Les essais portaient sur de nombreux types d’exercice, et 151 d’entre eux testaient au moins deux types. L’exercice faisait aussi mieux que les conseils ou l’éducation seuls sur la douleur. Pour la plupart des gens, l’essentiel est de **choisir une activité régulière que vous pouvez tenir dans la durée**, idéalement avec l’aide d’un kinésithérapeute au début.
 
-La revue du Lancet de 2018 apporte un élément rassurant : la plupart des nouveaux épisodes de mal de bas du dos se calment vite, même si le mal de dos revient souvent. Si votre dos est le problème principal, un kinésithérapeute ou un médecin peut construire un plan pour le dos adapté à vous. Le travail des pieds peut l’accompagner, pas le remplacer.
+La revue du Lancet de 2018 apporte un élément rassurant : la plupart des nouveaux épisodes de mal au bas du dos se calment vite, même si le mal de dos revient souvent. Si votre dos est le problème principal, un kinésithérapeute ou un médecin peut construire un plan pour le dos adapté à vous. Le travail des pieds peut l’accompagner, pas le remplacer.
 
 Source: Hayden JA, Ellis J, Ogilvie R, Malmivaara A, van Tulder MW. Exercise therapy for chronic low back pain. Cochrane Database of Systematic Reviews. 2021;9(9):CD009790.
 Source: Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and why we need to pay attention. The Lancet. 2018;391(10137):2356–2367.
 
 ### Faut-il quand même travailler vos pieds plats ?
 
-Travailler vos pieds plats a du sens si vos pieds eux-mêmes font mal, se fatiguent vite ou semblent instables. Ce n’est pas un programme pour le dos, et aucun essai n’a montré que des exercices des pieds seuls soulagent le mal de dos.
+Travailler vos pieds plats est pertinent si vos pieds eux-mêmes font mal, se fatiguent vite ou semblent instables. Ce n’est pas un programme pour le dos, et aucun essai n’a montré que des exercices des pieds seuls soulagent le mal de dos.
 
 Pour les pieds plats souples, dont la voûte réapparaît quand vous soulevez le pied, un essai sur 52 personnes a constaté que l’exercice du pied court, le travail de la cheville, le renforcement de la hanche et les étirements, faits ensemble, modifiaient la forme de la voûte davantage que dans un groupe témoin. Cet essai a mesuré la forme de la voûte, pas la douleur. Une revue de 2024 sur l’entraînement du pied court seul n’a pas trouvé de changement net de la posture du pied dans l’ensemble.
 
@@ -4028,7 +4028,7 @@ Walkito est un programme d’exercices pour les pieds et le bas des jambes. Pour
 
 #### Les pieds plats peuvent-ils donner mal au bas du dos ?
 
-Il n’a pas été démontré que les pieds plats causent le mal de bas du dos. La Framingham Foot Study sur 1 930 adultes n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une cote (odds) environ 1,5 fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.
+Il n’a pas été démontré que les pieds plats causent le mal au bas du dos. La Framingham Foot Study sur 1 930 adultes n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un lien seulement chez les femmes dont le pied s’affaissait vers l’intérieur à la marche, avec une cote (odds) environ 1,5 fois plus élevée. L’étude a mesuré chaque personne une seule fois, elle ne peut donc pas montrer ce qui est venu en premier.
 
 #### Les pieds plats peuvent-ils donner mal au haut ou au milieu du dos ?
 
@@ -4040,7 +4040,7 @@ Les semelles peuvent aider un peu, pour peu de temps, mais les preuves sont faib
 
 #### Les exercices pour pieds plats peuvent-ils aider mon dos ?
 
-Il n’a pas été démontré que les exercices pour pieds plats aident à eux seuls le mal de dos. Une revue de 2025 a regroupé quatre petits essais chez des personnes ayant mal au dos et des pieds qui s’affaissent vers l’intérieur, deux avec des orthèses sur mesure et deux avec des exercices, et a trouvé moins de douleur, mais quatre essais forment une base mince. L’exercice général a de bien meilleures preuves : une revue Cochrane de 249 essais a trouvé qu’il soulage le mal de bas du dos chronique.
+Il n’a pas été démontré que les exercices pour pieds plats aident à eux seuls le mal de dos. Une revue de 2025 a regroupé quatre petits essais chez des personnes ayant mal au dos et des pieds qui s’affaissent vers l’intérieur, deux avec des orthèses sur mesure et deux avec des exercices, et a trouvé moins de douleur, mais quatre essais forment une base mince. L’exercice général a de bien meilleures preuves : une revue Cochrane de 249 essais a trouvé qu’il soulage le mal au bas du dos chronique.
 
 #### Un problème de dos peut-il donner mal au pied ou une sensation de pied plat ?
 
@@ -4273,7 +4273,7 @@ La douleur au genou liée aux pieds plats est en général décrite à l’un de
 - **Autour ou derrière la rotule.** Cette douleur s’appelle syndrome fémoro-patellaire. Elle s’installe en général lentement et s’aggrave en position accroupie, dans les escaliers, en courant, en sautant ou en restant assis longtemps genou plié. Elle est fréquente chez les adolescents et les adultes actifs. C’est le problème de genou le plus étudié en lien avec la posture du pied, et l’essentiel de cette page lui est consacré.
 - **Du côté intérieur du genou, chez une personne âgée.** Cette douleur est plus souvent liée à l’arthrose, les changements d’une articulation liés à l’usure. L’étude de Framingham a constaté que les lésions du cartilage du côté intérieur du genou étaient plus fréquentes avec les pieds les plus plats, ce qui va dans ce sens. Mais l’étude ne montre qu’un lien à un moment donné.
 
-Un genou qui gonfle après une torsion, qui se bloque ou qui se dérobe, c’est une autre histoire. Cela oriente vers le ménisque (le coussin de cartilage à l’intérieur du genou) ou un ligament, et demande un professionnel de santé.
+Un genou qui gonfle après une torsion, qui se bloque ou qui se dérobe, c’est une autre histoire. Cela oriente vers le ménisque (le coussin de cartilage à l’intérieur du genou) ou un ligament, et relève d’un professionnel de santé.
 
 Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health From the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(9):CPG1–CPG95.
 Source: Gross KD, Felson DT, Niu J, Hunter DJ, Guermazi A, Roemer FW, Dufour AB, Gensure RH, Hannan MT. Association of flat feet with knee pain and cartilage damage in older adults. Arthritis Care & Research. 2011;63(7):937–944.
@@ -5043,9 +5043,9 @@ Non. Une fois aminci, le coussinet graisseux du talon ne se régénère pas avec
 
 Des chaussures à semelle épaisse et amortissante, avec un talon rembourré. Évitez les chaussures plates à semelle fine et les pieds nus sur un sol dur. Des talonnettes viscoélastiques placées dans la chaussure ajoutent une couche d’amorti. Aucun essai randomisé n’a testé de types de chaussures précis pour ce syndrome, mais le principe de remplacer l’amorti perdu est largement admis.
 
-#### Les infiltrations de cortisone aident-elles le coussinet graisseux du talon ?
+#### Les infiltrations de corticoïdes aident-elles le coussinet graisseux du talon ?
 
-Les infiltrations de cortisone ne sont en général pas conseillées pour le syndrome du coussinet graisseux du talon. Les corticoïdes peuvent dégrader le tissu graisseux et aggraver l’atrophie qui cause le problème. Si une infiltration est envisagée, c’est un point à soulever avec votre professionnel de santé.
+Les infiltrations de corticoïdes ne sont en général pas conseillées pour le syndrome du coussinet graisseux du talon. Les corticoïdes peuvent dégrader le tissu graisseux et aggraver l’atrophie qui cause le problème. Si une infiltration est envisagée, c’est un point à soulever avec votre professionnel de santé.
 
 #### Comment diagnostiquer un syndrome du coussinet graisseux du talon ?
 
@@ -5221,7 +5221,7 @@ La douleur au talon après la marche n’apparaît souvent que d’un côté, pa
 
 Language: French (Français) · https://walkito.site/fr/douleur-talon-la-nuit/ · published 2026-10-08 · updated 2026-10-08
 
-Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la fasciite plantaire, cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui demande un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.
+Une douleur au talon qui apparaît la nuit, au lit ou au repos ne suit pas le schéma classique de la fasciite plantaire, cette traction aux premiers pas du matin. La douleur nocturne ou au repos peut évoquer une fracture de fatigue du calcanéum, une compression nerveuse, un rhumatisme inflammatoire ou un autre problème qui relève d’un professionnel de santé. Cette page passe en revue les causes fréquentes et celles qu’il ne faut pas laisser traîner.
 
 - La douleur de la fasciite plantaire est pire aux premiers pas après le repos et s’estompe en général une fois en mouvement. Une douleur qui reste au repos, vous réveille ou s’aggrave pendant la nuit est un schéma d’alerte qui mérite des examens (Tu, 2018).
 - Les fractures de fatigue du calcanéum peuvent donner une douleur sourde ou lancinante la nuit et s’aggravent en général avec la mise en charge prolongée au lieu de se calmer à l’échauffement (Patel et coll., 2011).
@@ -5341,7 +5341,7 @@ Si un professionnel de santé a confirmé une fasciite plantaire et écarté les
 
 #### Une douleur au talon la nuit, est-ce grave ?
 
-Ça peut l’être. Une douleur au repos ou qui vous réveille est un schéma d’alerte. Les fractures de fatigue du calcanéum, les compressions nerveuses (canal tarsien ou nerf de Baxter) et les rhumatismes inflammatoires peuvent tous donner une douleur au talon la nuit. Ces problèmes demandent un professionnel de santé pour le diagnostic et la prise en charge. Ne supposez pas que c’est une fasciite plantaire si la douleur ne suit pas le schéma typique des premiers pas.
+Ça peut l’être. Une douleur au repos ou qui vous réveille est un schéma d’alerte. Les fractures de fatigue du calcanéum, les compressions nerveuses (canal tarsien ou nerf de Baxter) et les rhumatismes inflammatoires peuvent tous donner une douleur au talon la nuit. Ces problèmes relèvent d’un professionnel de santé pour le diagnostic et la prise en charge. Ne supposez pas que c’est une fasciite plantaire si la douleur ne suit pas le schéma typique des premiers pas.
 
 #### Pourquoi j’ai mal au talon quand je suis allongé ?
 
@@ -5532,7 +5532,7 @@ Laissez de côté les mouvements à fort impact comme la course, les sauts et la
 
 Les chocs répétés sur une surface dure sont le déclencheur le plus fréquent : courir, sauter ou rester debout des heures irrite le tissu mou à côté de l’épine, comme dans une fasciite plantaire simple. Une hausse soudaine de l’activité, des chaussures usées et la marche pieds nus sur du carrelage peuvent la déclencher. C’est en adaptant la charge, pas l’os, qu’une poussée se calme.
 
-## Pied creux : les exercices qui aident et ce qui demande un professionnel de santé
+## Pied creux : les exercices qui aident et ce qui relève d’un professionnel de santé
 
 Language: French (Français) · https://walkito.site/fr/pied-creux-exercices/ · published 2026-10-08 · updated 2026-10-08
 
@@ -5709,7 +5709,7 @@ Avoir les pieds plats veut dire que la voûte du pied est plus basse que d’hab
 
 - Une revue systématique de 2023 portant sur 12 études de population a estimé la fréquence globale des pieds plats à environ 15,6 %, même si ce chiffre varie beaucoup selon l’âge, la méthode de mesure et la population (Salinas-Torres et coll., 2023).
 - La plupart des pieds plats sont souples et présents toute la vie. Un pied plat rigide, qui reste plat même quand le pied est soulevé, est structurel et ne changera pas avec l’exercice.
-- La Framingham Foot Study, sur environ 1 900 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos. Elle a trouvé un petit lien chez les femmes entre un pied qui s’affaisse vers l’intérieur à la marche et le mal de dos, et aucun chez les hommes (Menz et coll., 2013).
+- La Framingham Foot Study, sur environ 1 900 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos. Elle a trouvé un petit lien chez les femmes entre un pied qui s’affaisse vers l’intérieur à la marche et le mal de dos, et aucun chez les hommes (Menz et coll., 2013).
 - Le pied plat acquis de l’adulte, le plus souvent dû à l’affaiblissement du tendon tibial postérieur, peut entraîner une douleur et un gonflement à l’intérieur de la cheville et un affaissement progressif de la voûte (Ling et Lui, 2017).
 - Dans un essai sur 52 personnes aux pieds plats souples, six semaines d’exercices combinés ont modifié la forme de la voûte davantage que dans un groupe témoin. L’essai a mesuré la forme de la voûte, pas la douleur (Brijwasi et Borkar, 2023).
 
@@ -5743,7 +5743,7 @@ Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot ali
 
 L’inquiétude la plus fréquente concerne le mal de dos. La plus grande étude sur le sujet, la Framingham Foot Study, a porté sur environ 1 900 adultes. Ce qu’elle a trouvé :
 
-- **Dans l’ensemble :** aucune association entre une posture de pied plat et le mal de bas du dos.
+- **Dans l’ensemble :** aucune association entre une posture de pied plat et le mal au bas du dos.
 - **Chez les femmes :** un pied qui s’affaissait vers l’intérieur à la marche (marche en pronation) montrait un petit lien avec le mal de dos, mais la posture du pied elle-même, plat ou non, n’en montrait pas.
 - **Chez les hommes :** ni la posture ni la marche n’étaient liées au mal de dos.
 
@@ -5855,7 +5855,7 @@ Vous n’avez pas à choisir les exercices de voûte ni le moment de passer à u
 
 #### Faut-il s’inquiéter d’avoir les pieds plats ?
 
-Pour la plupart des gens, non. Un pied plat souple qui ne fait pas mal et ne limite pas l’activité est une forme normale, pas un trouble. La Framingham Foot Study, sur environ 1 900 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de bas du dos (Menz et coll., 2013). Les cas qui demandent de l’attention sont les pieds plats rigides, et les voûtes qui se sont affaissées à l’âge adulte avec douleur ou gonflement.
+Pour la plupart des gens, non. Un pied plat souple qui ne fait pas mal et ne limite pas l’activité est une forme normale, pas un trouble. La Framingham Foot Study, sur environ 1 900 adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal au bas du dos (Menz et coll., 2013). Les cas qui demandent de l’attention sont les pieds plats rigides, et les voûtes qui se sont affaissées à l’âge adulte avec douleur ou gonflement.
 
 #### Quelles sont les causes des pieds plats chez l’adulte ?
 
@@ -5983,7 +5983,7 @@ Une revue de 2020 indique qu’environ 90 % des personnes vont mieux avec des so
 
 La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une épine calcanéenne, non.
 
-La question utile n’est pas « dans combien de semaines ce sera fini ?» mais « ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier ? ». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire ?](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.
+La question utile n’est pas « dans combien de semaines ce sera fini ? » mais « ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier ? ». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire ?](https://walkito.site/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
@@ -6204,7 +6204,7 @@ La glace et la chaleur présentent peu de risques pour la plupart des gens, mais
 - Retirez la glace si la peau devient blanche, dure ou engourdie, ou si elle picote fortement.
 - Pour la chaleur, choisissez tiède, pas brûlant. Une bouillotte ou de l’eau chaude doit être agréable, jamais piquante.
 - Ne dormez jamais sur un coussin chauffant ni avec une poche de glace sur le pied.
-- Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela demande un professionnel de santé, pas une bouillotte.
+- Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela relève d’un professionnel de santé, pas d’une bouillotte.
 - Si vous avez du diabète, des pieds engourdis, une mauvaise circulation ou un syndrome de Raynaud (doigts ou orteils qui blanchissent au froid), demandez l’avis d’un professionnel de santé avant d’utiliser l’un ou l’autre.
 
 Source: Bleakley C, McDonough S, MacAuley D. The use of ice in the treatment of acute soft-tissue injury: a systematic review of randomized controlled trials. American Journal of Sports Medicine. 2004;32(1):251–261.
@@ -6325,7 +6325,7 @@ Dans un essai, les 48 personnes atteintes de fasciite plantaire ont toutes reçu
 À trois mois, le groupe des montées sur pointes avait un score au Foot Function Index (un score de 0 à 100 de la douleur et de l’incapacité du pied) meilleur de 29 points. À six et douze mois, les groupes étaient à égalité. La semelle était la même dans les deux groupes ; c’est l’exercice qui a fait la différence au début. La routine complète se trouve sur [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/).
 
 - **Étirement du fascia plantaire** (Walkito commence à 2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez une cheville sur l’autre genou. Tirez doucement les orteils vers vous jusqu’à sentir un étirement le long de la voûte. Tenez, puis relâchez. Le plus utile avant vos premiers pas le matin.
-- **Montées sur pointes avec une serviette sous les orteils** (Dans l’essai, les participants sont passés de 3 séries de 12 répétitions lourdes à 5 séries de 8. Dans Walkito, il vient après des montées sur pointes plus faciles, à 4 séries de 10, chaque jambe, avec le même tempo 3-2-3 et du poids ajouté, comme un sac à dos, quand vous avez une marche): Tenez-vous sur un pied sur une marche, une serviette roulée sous les orteils. Montez en trois secondes, tenez deux secondes, redescendez en trois. Tenez-vous à une rampe. La serviette relève les orteils, ce qui charge le fascia plantaire en même temps que le mollet.
+- **Montées sur pointes avec serviette** (Dans l’essai, les participants sont passés de 3 séries de 12 répétitions lourdes à 5 séries de 8. Dans Walkito, il vient après des montées sur pointes plus faciles, à 4 séries de 10, chaque jambe, avec le même tempo 3-2-3 et du poids ajouté, comme un sac à dos, quand vous avez une marche): Tenez-vous sur un pied sur une marche, une serviette roulée sous les orteils. Montez en trois secondes, tenez deux secondes, redescendez en trois. Tenez-vous à une rampe. La serviette relève les orteils, ce qui charge le fascia plantaire en même temps que le mollet.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -6754,7 +6754,7 @@ Une revue de 2020 indique qu’environ 90 % des personnes atteintes de fasciite 
 
 #### Que faut-il éviter quand le talon fait mal le matin ?
 
-Évitez de marcher pieds nus sur un sol dur juste après le réveil, et ne sautez pas l’étirement avant de vous lever. Le fascia est au plus raide à ce moment-là, donc poser le pied sur du carrelage ou du parquet sans amorti déclenche souvent une vive douleur aux premiers pas. Mettez des chaussures qui soutiennent le pied ou des chaussons fermes avant de quitter la chambre, et étirez-vous encore assis sur le lit.
+Évitez de marcher pieds nus sur un sol dur juste après le réveil, et ne sautez pas l’étirement avant de vous lever. Le fascia est particulièrement raide à ce moment-là, donc poser le pied sur du carrelage ou du parquet sans amorti déclenche souvent une vive douleur aux premiers pas. Mettez des chaussures qui soutiennent le pied ou des chaussons fermes avant de quitter la chambre, et étirez-vous encore assis sur le lit.
 
 #### Quels remèdes maison contre la douleur au talon le matin ?
 
@@ -7276,7 +7276,7 @@ La réponse honnête : ça dépend, et la plupart des sources sous-estiment à q
 - Une revue de 2020 indique qu’environ 90 % des fasciites plantaires répondent aux soins non chirurgicaux, souvent en quelques mois (Latt et coll., 2020).
 - Une cohorte à plus long terme de 174 patients a montré que le risque d’avoir encore une fasciite plantaire était de 80,5 % à un an, 50,0 % à cinq ans et 45,6 % à dix ans après le début des symptômes (Hansen et coll., 2018).
 - Dans cette cohorte, être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et l’épine calcanéenne n’avaient pas d’effet significatif sur l’évolution (Hansen et coll., 2018).
-- La recommandation de 2023 sur la douleur au talon donne aux étirements la note **A** et au renforcement musculaire un **B**. Les attelles de nuit pour une douleur du matin qui persiste reçoivent un **A**, et le laser de basse intensité ou le dry needling par un professionnel de santé un **B** (Koc et coll., 2023).
+- La recommandation de 2023 sur la douleur au talon donne aux étirements la note **A** et au renforcement musculaire un **B**. Les attelles de nuit pour une douleur du matin qui persiste reçoivent un **A**, et le laser de basse intensité ou la puncture sèche (dry needling) par un professionnel de santé un **B** (Koc et coll., 2023).
 - La douleur du matin sur une échelle de 0 à 10, notée chaque jour, est la façon la plus pratique de voir si la récupération va dans le bon sens.
 
 ### Combien de temps dure en général une fasciite plantaire ?
@@ -7295,13 +7295,13 @@ L’analyse de Kaplan-Meier a montré que le risque d’avoir encore une fasciit
 
 Ces chiffres semblent pires que le « ça passe en quelques mois » habituel. Deux choses expliquent l’écart :
 
-- **D’abord,** la cohorte de Hansen était une population adressée à un spécialiste : 93 % avaient reçu une infiltration de cortisone, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.
+- **D’abord,** la cohorte de Hansen était une population adressée à un spécialiste : 93 % avaient reçu une infiltration de corticoïdes, ce qui laisse penser qu’il s’agissait de cas plus difficiles, pas de personnes dont la douleur s’était calmée avec des étirements et de meilleures chaussures.
 - **Ensuite,** les patients qui avaient encore des symptômes au suivi ne signalaient en moyenne qu’une douleur légère, environ 2 à 3 sur 10 à la marche. « Encore des symptômes à dix ans » ne veut donc pas forcément dire « incapable de marcher ». Pour beaucoup, cela voulait dire une gêne occasionnelle au lieu de la vive douleur des premiers pas du début.
 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
 
-### La fasciite plantaire part-elle toute seule ?
+### La fasciite plantaire disparaît-elle d’elle-même ?
 
 Parfois. Certaines personnes se réveillent un matin et la douleur a disparu, sans rien de particulier. Mais « ça passe tout seul » n’est pas une prédiction utile pour une personne donnée, car il n’y a aucun moyen de savoir à l’avance si vous faites partie de ce groupe.
 
@@ -7321,8 +7321,8 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée des symptômes. Deux sont ressortis significatifs :
 
-- **Être une femme.** Pour 100 hommes qui devenaient asymptomatiques par an, seules 49 femmes l’étaient (rapport de taux de risque 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).
-- **Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de taux de risque 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).
+- **Être une femme.** Pour 100 hommes qui devenaient asymptomatiques par an, seules 49 femmes l’étaient (rapport de risques, ou hazard ratio, 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).
+- **Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).
 
 L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une épine calcanéenne n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens : une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.
 
@@ -7336,7 +7336,7 @@ Il n’y a pas de définition unique reconnue. Certaines sources parlent de fasc
 
 **Plus que l’étiquette, c’est le schéma qui compte.** Une fasciite plantaire chronique veut en général dire que la vive douleur aux premiers pas du matin est devenue une douleur plus sourde et plus constante.
 
-Le tissu change aussi avec le temps : le suffixe « -ite » évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de cortisone, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.
+Le tissu change aussi avec le temps : le suffixe « -ite » évoque une inflammation, mais les cas chroniques sont en général décrits comme un processus dégénératif plutôt qu’inflammatoire. C’est pourquoi les infiltrations de corticoïdes, qui visent l’inflammation, aident souvent à court terme mais pas à long terme.
 
 Si vous avez une fasciite plantaire depuis plus de quelques mois et qu’elle ne s’améliore pas clairement, la section suivante présente ce que conseille la recommandation.
 
@@ -7348,9 +7348,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 Aucune étude ne donne un calendrier semaine par semaine valable pour tout le monde, et tout article qui le fait devine. Ce que les données offrent, ce sont quelques repères que la plupart des gens reconnaîtront :
 
 - **Les premières semaines.** La douleur du matin peut ne pas beaucoup changer. L’essai de Rathleff a montré une différence nette entre les groupes à trois mois, pas à trois semaines. Au début, le principal changement est que les exercices deviennent plus faciles à faire et que le mollet paraît moins raide. Cela vaut la peine de le remarquer, même si le talon fait encore mal.
-- **Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29 points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est un peu plus basse plus souvent qu’autrement, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).
+- **Un à trois mois.** Dans l’essai de Rathleff, le groupe des montées sur pointes avait un score au Foot Function Index meilleur de 29 points que le groupe des étirements seuls à trois mois. C’est une différence importante et mesurable. Beaucoup de gens commencent à remarquer que la douleur du matin est le plus souvent un peu plus faible, ou que les premiers pas sont raides plutôt que vifs (Rathleff et coll., 2015).
 - **Trois à six mois.** La fourchette « souvent en trois à six mois » de la revue de 2020 place ici le milieu de l’amélioration pour la plupart des personnes qui font les exercices conseillés et portent des chaussures qui soutiennent le pied (Latt et coll., 2020).
-- **Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà : la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration ralentit. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.
+- **Six mois et plus.** La recommandation de 2023 suggère d’envisager d’autres options si plusieurs mois d’étirements, de renforcement et de changement de chaussures n’ont pas assez aidé. La cohorte de Hansen montre qu’une amélioration peut encore venir après un an et au-delà : la courbe de survie a continué à baisser lentement jusqu’à la cinquième année, mais le rythme de l’amélioration a ralenti. Si la douleur stagne ou augmente, et pas seulement lentement, voir la section suivante.
 
 **Le chiffre utile n’est pas « dans combien de semaines j’en aurai fini » mais « ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier ? ».** Cette tendance est le vrai repère.
 
@@ -7368,7 +7368,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Quand consulter si la fasciite plantaire ne s’améliore pas ?
 
-Le tableau ci-dessus est clair : **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, dry needling, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.
+Le tableau ci-dessus est clair : **les étirements et le renforcement ont le soutien le plus large.** Les options en cabinet (laser, puncture sèche, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.
 
 Si vous faites les exercices régulièrement depuis plusieurs mois et que la douleur du matin ne s’améliore pas, c’est un bon moment pour consulter un professionnel de santé et parler des options ci-dessus. C’est aussi un bon moment pour vérifier que le diagnostic est le bon : voir [la douleur au talon au réveil](https://walkito.site/fr/douleur-talon-au-reveil/) pour les autres problèmes qui partagent le même schéma.
 
@@ -7413,9 +7413,9 @@ Une revue de 2020 indique qu’environ 90 % des personnes vont mieux avec des so
 
 Pour beaucoup de gens, oui. Dans la cohorte de Hansen 2018, 54 % n’avaient plus du tout de symptômes après un suivi moyen de 9,7 ans. Chez ceux qui allaient mieux, la durée moyenne des symptômes était d’environ 725 jours. Certains avaient encore une légère gêne occasionnelle, mais notaient 0 sur toutes les échelles de douleur. La récupération était plus lente chez les femmes et chez les personnes qui avaient mal aux deux talons.
 
-#### Pourquoi ma fasciite plantaire ne s’améliore pas ?
+#### Pourquoi ma fasciite plantaire ne s’améliore-t-elle pas ?
 
-Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les attelles de nuit, le laser ou le dry needling.
+Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les attelles de nuit, le laser ou la puncture sèche (dry needling).
 
 #### Une épine calcanéenne fait-elle durer la fasciite plantaire plus longtemps ?
 
@@ -7746,7 +7746,7 @@ Une fois par semaine, l’exercice de votre objectif principal monte d’une ét
 
 - **Étirement du fascia plantaire** (2 maintiens de 30 secondes, chaque pied): Asseyez-vous et croisez une cheville sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir un étirement le long de la voûte. Faites-le avant vos premiers pas le matin.
 - **Étirement du mollet (genou tendu)** (2 maintiens de 30 secondes, chaque jambe): Mains contre un mur, jambe arrière tendue, talon au sol, hanches vers l’avant. Tenez jusqu’à sentir l’étirement dans le haut du mollet.
-- **Montées sur pointes avec une serviette sous les orteils** (4 séries de 10 (dose de Walkito)): Tenez-vous sur une marche, une serviette roulée sous les orteils, le talon dans le vide. Montez lentement en trois secondes environ, faites une pause de deux secondes, et redescendez en trois secondes environ. Tenez-vous à une rampe pour l’équilibre.
+- **Montées sur pointes avec serviette** (4 séries de 10 (dose de Walkito)): Tenez-vous sur une marche, une serviette roulée sous les orteils, le talon dans le vide. Montez lentement en trois secondes environ, faites une pause de deux secondes, et redescendez en trois secondes environ. Tenez-vous à une rampe pour l’équilibre.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -8269,7 +8269,7 @@ Walkito est conçu pour les adultes souffrant du talon et de la voûte plantaire
 
 #### Avec quoi peut-on confondre la maladie de Sever ?
 
-Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15 ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis demandent un professionnel de santé pour écarter une fracture.
+Une irritation du tendon d’Achille, une fracture de fatigue du calcanéum et une bursite rétrocalcanéenne peuvent toutes se ressembler chez un enfant en croissance. Un test de compression positif (douleur quand on presse les côtés du talon l’un vers l’autre), un âge de 8 à 15 ans et une hausse récente de l’entraînement orientent plutôt vers la maladie de Sever. Un traumatisme unique, un gonflement ou une douleur qui s’aggrave à un point précis relèvent d’un professionnel de santé, qui pourra écarter une fracture.
 
 #### Comment poser un strap (kinésio) pour la maladie de Sever ?
 
@@ -8284,7 +8284,7 @@ La périostite tibiale est une douleur le long du bord interne du tibia, étalé
 - Une revue systématique de 2013 portant sur 11 essais de traitement a montré que les étirements et le renforcement n’ont pas fait la preuve qu’ils accélèrent la récupération du syndrome de stress tibial médial (Winters et coll., 2013).
 - Dans le seul essai randomisé sur l’exercice dans la périostite tibiale, ajouter étirements et renforcement du mollet à un programme de course progressif n’a pas raccourci la récupération par rapport au programme de course seul, dans une étude sur 74 sportifs (Moen et coll., 2012).
 - Les coureurs avec une périostite tibiale faisaient moins de montées sur pointes jusqu’à l’épuisement que des témoins appariés, ce qui suggère un déficit d’endurance du mollet (Madeley et coll., 2007).
-- Une sensibilité localisée, en un seul petit point, plutôt qu’une douleur diffuse sur plusieurs centimètres d’os, peut être une fracture de fatigue et demande un professionnel de santé, pas plus d’exercice.
+- Une sensibilité localisée, en un seul petit point, plutôt qu’une douleur diffuse sur plusieurs centimètres d’os, peut être une fracture de fatigue et justifie de consulter un professionnel de santé, et non d’augmenter l’exercice.
 
 ### Qu’est-ce que la périostite tibiale, et quels exercices aident vraiment ?
 
@@ -8363,7 +8363,7 @@ Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Exces
 Aucun exercice n’a montré dans un essai qu’il prévient la périostite tibiale. Les facteurs de risque identifiés dans deux méta-analyses indépendantes orientent vers une gestion générale de la charge d’entraînement et une progression graduelle, plutôt que vers un étirement ou un exercice de renforcement en particulier. Les facteurs de risque retrouvés dans les deux revues étaient :
 
 - Un IMC plus élevé.
-- Un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge).
+- Une chute du naviculaire (navicular drop) plus importante (à quel point la voûte s’aplatit sous la charge).
 - Le sexe féminin.
 - Moins d’années de pratique de la course.
 - Des antécédents de périostite tibiale.
@@ -8423,7 +8423,7 @@ La périostite tibiale et les fractures de fatigue du tibia sont en général d�
 
 #### Qu’est-ce qui cause la périostite tibiale chez le coureur ?
 
-Deux méta-analyses indépendantes ont trouvé un ensemble cohérent de facteurs de risque : un IMC plus élevé, un affaissement du naviculaire plus important (à quel point la voûte s’aplatit sous la charge), le sexe féminin, moins d’années de pratique de la course et des antécédents de périostite tibiale. Une étude cas-témoins séparée a montré que les coureurs atteints avaient une endurance du mollet plus faible, ce qui suggère qu’un déficit des fléchisseurs plantaires peut jouer un rôle.
+Deux méta-analyses indépendantes ont trouvé un ensemble cohérent de facteurs de risque : un IMC plus élevé, une chute du naviculaire plus importante (à quel point la voûte s’aplatit sous la charge), le sexe féminin, moins d’années de pratique de la course et des antécédents de périostite tibiale. Une étude cas-témoins séparée a montré que les coureurs atteints avaient une endurance du mollet plus faible, ce qui suggère qu’un déficit des fléchisseurs plantaires peut jouer un rôle.
 
 #### Un exercice précis empêche-t-il la périostite tibiale de revenir ?
 
@@ -8431,7 +8431,7 @@ Aucun exercice n’a de preuve de niveau essai pour prévenir la périostite tib
 
 #### Avec quoi confond-on souvent la périostite tibiale ?
 
-Une fracture de fatigue du tibia, un syndrome des loges chronique d’effort et une tendinopathie du tibial postérieur peuvent tous causer une douleur au tibia et être pris pour une périostite tibiale. Une fracture de fatigue fait plutôt mal en un point précis de l’os, tandis que le syndrome des loges donne une tension et des engourdissements qui montent pendant la course et passent peu après l’arrêt. Les deux demandent un professionnel de santé plutôt que plus de charge.
+Une fracture de fatigue du tibia, un syndrome des loges chronique d’effort et une tendinopathie du tibial postérieur peuvent tous causer une douleur au tibia et être pris pour une périostite tibiale. Une fracture de fatigue fait plutôt mal en un point précis de l’os, tandis que le syndrome des loges donne une tension et des engourdissements qui montent pendant la course et passent peu après l’arrêt. Les deux relèvent d’un professionnel de santé, pas d’une charge plus importante.
 
 #### Peut-on marcher avec une périostite tibiale ?
 
@@ -8656,7 +8656,7 @@ Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological ef
 
 La douleur aux pieds liée à la station debout peut être une fatigue générale qui passe avec le repos, ou le début d’un problème bien identifié. Le plus fréquent est la fasciite plantaire : une douleur vive près du talon, en général pire aux premiers pas après le repos. Si votre talon fait le plus mal le matin, puis à nouveau après être resté assis, ce schéma oriente vers une fasciite plantaire, et les exercices de [exercices et étirements pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/) sont le guide le plus complet.
 
-Si vos voûtes semblent affaissées ou basculées vers l’intérieur en fin de journée, les exercices de [exercices pour les pieds plats](https://walkito.site/fr/exercices-pieds-plats/) ciblent les muscles qui soutiennent la voûte. Un pied plat rigide, qui reste plat même quand le pied ne touche pas le sol, est structurel et demande un professionnel de santé plutôt que des exercices.
+Si vos voûtes semblent affaissées ou basculées vers l’intérieur en fin de journée, les exercices de [exercices pour les pieds plats](https://walkito.site/fr/exercices-pieds-plats/) ciblent les muscles qui soutiennent la voûte. Un pied plat rigide, qui reste plat même quand le pied ne touche pas le sol, est structurel et relève d’un professionnel de santé plutôt que des exercices.
 
 Si la douleur est le long du tibia plutôt que sous le pied, cela oriente vers une périostite tibiale, et [exercices pour la périostite tibiale](https://walkito.site/fr/periostite-tibiale-exercices/) résume ce qu’en dit la recherche.
 
@@ -9222,7 +9222,7 @@ Une fracture de fatigue fait plutôt mal en un point précis, s’aggrave au fil
 
 #### L’exercice aide-t-il une douleur sur le dessus du pied ?
 
-Aucun essai n’a testé l’exercice spécifiquement pour la douleur du dessus du pied. L’exercice peut agir sur des facteurs favorisants : renforcer le tibial antérieur réduit la charge sur les petits tendons extenseurs, et étirer le mollet améliore la mobilité de la cheville. Mais pour une fracture de fatigue, la goutte ou un problème nerveux, l’exercice est soit inefficace, soit contre-productif. C’est la cause qui décide si l’exercice a du sens.
+Aucun essai n’a testé l’exercice spécifiquement pour la douleur du dessus du pied. L’exercice peut agir sur des facteurs favorisants : renforcer le tibial antérieur réduit la charge sur les petits tendons extenseurs, et étirer le mollet améliore la mobilité de la cheville. Mais pour une fracture de fatigue, la goutte ou un problème nerveux, l’exercice est soit inefficace, soit contre-productif. C’est la cause qui détermine si l’exercice est pertinent.
 
 #### Quels sont les symptômes d’une tendinite des extenseurs ?
 
@@ -9443,7 +9443,7 @@ Les guides de Walkito s’appuient sur plus de 250 études publiées et recomman
 
 Rahim Hudaykulyyev et Rahman Bazarov, les deux cofondateurs de Walkito, écrivent les guides de ce site : [exercices pour la fasciite plantaire](https://walkito.site/fr/exercices-fasciite-plantaire/), [exercices pour pieds plats](https://walkito.site/fr/exercices-pieds-plats/), [douleur au talon en course à pied](https://walkito.site/heel-pain-runners/) (en anglais) et [la page des données scientifiques](https://walkito.site/science/) (en anglais). Nous les construisons à partir de recommandations de pratique clinique, d’essais randomisés et de revues systématiques. Nous n’utilisons pas d’articles de blog, de forums ni de synthèses d’autres sites comme source. Quand une synthèse cite une étude, nous allons lire l’étude elle-même.
 
-Les exercices et les affirmations portent l’un des trois niveaux de preuve. **Solide** veut dire qu’une recommandation clinique lui donne une bonne note, ou que plusieurs bons essais concordent. **Modéré** veut dire qu’au moins un essai bien conçu le soutient. **Préliminaire** veut dire que la recherche est petite ou commence à peine : ça vaut la peine d’essayer, et le niveau peut changer avec de nouvelles études. Une règle populaire qu’un essai a testée sans la confirmer est marquée **Non étayé**.
+Les exercices et les affirmations portent l’un des trois niveaux de preuve. **Solide** veut dire qu’une recommandation clinique lui donne une bonne note, ou que plusieurs bons essais concordent. **Modéré** veut dire qu’au moins un essai bien conçu le soutient. **Préliminaire** veut dire que les études sont peu nombreuses ou toutes récentes : ça vaut la peine d’essayer, et le niveau peut changer avec de nouvelles études. Une règle populaire qu’un essai a testée sans la confirmer est marquée **Non étayé**.
 
 Walkito n’a pas de sponsors, pas de liens d’affiliation et pas de placements payants. Aucun contenu n’est publié contre paiement. Nous revérifions une page quand de nouvelles recherches sortent sur son sujet. Chaque guide suit cinq règles :
 

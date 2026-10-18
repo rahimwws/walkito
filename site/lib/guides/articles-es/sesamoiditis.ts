@@ -154,7 +154,7 @@ export const SESAMOIDITIS_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text:
       'La sesamoiditis se maneja principalmente con descarga y calzado, no con un programa de ejercicios. Walkito está diseñado para afecciones como la fascitis plantar y el pie plano, donde los programas de carga estructurados tienen respaldo en ensayos. Si tu sesamoiditis se resuelve y quieres reconstruir la fuerza del pie y de la pantorrilla como parte de tu regreso a la actividad, el trabajo de músculos intrínsecos y los estiramientos de pantorrilla de la app pueden ser un complemento útil.',
     more: [

@@ -261,7 +261,7 @@ export const BEST_APP_IT: Guide = {
     },
     {
       q: 'Un’app può sostituire il fisioterapista per la fascite plantare?',
-      a: 'Nessuna app sostituisce un professionista che può visitare il tuo piede, escludere altre cause e adattare un piano in tempo reale. Un’app è utile per gli esercizi guidati di ogni giorno tra una visita e l’altra, o come punto di partenza quando il dolore è lieve e segue lo schema tipico della fascite plantare. Se il dolore è iniziato dopo un infortunio, si accompagna a gonfiore o intorpidimento, o sta peggiorando, rivolgiti prima a un professionista sanitario.',
+      a: 'Nessuna app sostituisce un professionista che può visitare il tuo piede, escludere altre cause e adattare un piano in tempo reale. Un’app è utile per gli esercizi guidati di ogni giorno tra una visita e l’altra, o come punto di partenza quando il dolore è lieve e ha l’andamento tipico della fascite plantare. Se il dolore è iniziato dopo un infortunio, si accompagna a gonfiore o intorpidimento, o sta peggiorando, rivolgiti prima a un professionista sanitario.',
     },
     {
       q: 'Hinge Health è gratuita?',
@@ -300,7 +300,7 @@ export const BEST_APP_IT: Guide = {
     ],
   },
   program: {
-    h2: 'Farlo come un piano',
+    h2: 'Come trasformarlo in un piano',
     text: 'Se sei arrivato fin qui e Walkito ti sembra adatta, ecco come funziona. Rispondi a qualche domanda su dove ti fa male, da che lato, quanto sei attivo e qual è il tuo obiettivo. Walkito costruisce un piano settimanale intorno a quelle risposte. Ogni mattina, un check-in adatta la giornata. Ogni 14\u00A0giorni, un breve test misura resistenza del polpaccio, tenuta dell’arco ed equilibrio su una gamba.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Gli esercizi seguono la linea guida clinica del 2023 sul dolore al tallone. Il piano non ha una data di fine fissa: quando raggiungi un obiettivo, passa al mantenimento e il successivo prende il suo posto. Walkito è un programma di esercizi, non una diagnosi né un sostituto di un professionista sanitario.',

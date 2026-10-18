@@ -291,7 +291,7 @@ export const VS_EXAKT_PT: Guide = {
     ],
   },
   program: {
-    h2: 'Fazendo isso como um plano',
+    h2: 'Como transformar isso em um plano',
     text: 'Se o Walkito parece combinar com a sua situação, é assim que ele funciona. Você responde perguntas sobre onde dói, de que lado, o seu nível de atividade e o seu objetivo. O Walkito monta um plano semanal em torno de metas medidas, começando por manhãs sem dor. Toda manhã, um check-in ajusta o dia.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, e mostra a diferença entre o seu lado esquerdo e o direito. Os exercícios seguem a diretriz clínica de 2023 e o ensaio de Rathleff de 2015. O Walkito é um programa de exercícios, não um diagnóstico nem um substituto para um profissional de saúde.',

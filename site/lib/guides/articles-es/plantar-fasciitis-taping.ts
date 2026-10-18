@@ -254,7 +254,7 @@ export const PF_TAPING_ES: Guide = {
     ],
   },
   program: {
-    h2: 'Hacerlo como un plan',
+    h2: 'Cómo convertirlo en un plan',
     text: 'La cinta puede hacer más fáciles los próximos días. Los ejercicios son lo que sigue funcionando después de quitarla. Walkito arma un plan una semana a la vez en torno a una meta. Para el dolor de talón, la primera meta es una mejor mañana: dolor de 1 de 10 o menos durante 14\u00A0días seguidos. Los estiramientos empiezan desde el día uno. Cada semana, solo el ejercicio de tu meta principal puede subir un nivel, y solo cuando tus últimas dos sesiones con él se sintieron fáciles y el dolor de la mañana no subió.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días al principio (cada 28 una vez que alcanzas una meta), una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, para que veas qué está cambiando. El vendaje no forma parte de Walkito. Walkito es un programa de ejercicios para adultos. No diagnostica y no reemplaza a un profesional de la salud.',

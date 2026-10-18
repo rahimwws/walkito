@@ -19,7 +19,7 @@ export const HIGH_ARCHES_FR: Guide = {
   title: 'Pied creux\u00A0: exercices et ce qui aide la douleur',
   description:
     'Pied creux douloureux\u00A0: exercices d’étirement du mollet et du fascia plantaire, stabilité de la cheville, orthèses et signaux d’alerte neurologiques.',
-  h1: 'Pied creux\u00A0: les exercices qui aident et ce qui demande un professionnel de santé',
+  h1: 'Pied creux\u00A0: les exercices qui aident et ce qui relève d’un professionnel de santé',
   lede:
     'Un pied à voûte haute, appelé pied creux (pes cavus), est rigide et ne fléchit pas assez pour amortir les chocs. La force se concentre au talon et à l’avant-pied, et le fascia plantaire est souvent raide. Environ 60\u00A0% des personnes ayant un pied creux signalent des douleurs au pied. Les preuves les plus solides concernent les orthèses amortissantes ou sur mesure. L’exercice vise à étirer le mollet et le fascia plantaire, à améliorer la mobilité de la cheville et à développer la stabilité.',
   intro: [

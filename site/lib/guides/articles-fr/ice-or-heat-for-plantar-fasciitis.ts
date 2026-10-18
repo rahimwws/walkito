@@ -125,7 +125,7 @@ export const ICE_HEAT_FR: Guide = {
         'Retirez la glace si la peau devient blanche, dure ou engourdie, ou si elle picote fortement.',
         'Pour la chaleur, choisissez tiède, pas brûlant. Une bouillotte ou de l’eau chaude doit être agréable, jamais piquante.',
         'Ne dormez jamais sur un coussin chauffant ni avec une poche de glace sur le pied.',
-        'Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela demande un professionnel de santé, pas une bouillotte.',
+        'Évitez la chaleur sur un talon rouge, chaud et gonflé, surtout avec de la fièvre. Cela relève d’un professionnel de santé, pas d’une bouillotte.',
         'Si vous avez du diabète, des pieds engourdis, une mauvaise circulation ou un syndrome de Raynaud (doigts ou orteils qui blanchissent au froid), demandez l’avis d’un professionnel de santé avant d’utiliser l’un ou l’autre.',
       ],
       after: [
