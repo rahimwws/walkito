@@ -46,6 +46,7 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   heelSpurExercises: 'Heel spur exercises',
   heelPainAfterWalking: 'Heel pain after walking',
   heelPainAtNight: 'Heel pain at night',
+  pfPregnancy: 'Heel pain in pregnancy',
   heelFatPad: 'Heel fat pad syndrome',
   haglunds: 'Haglund\u2019s deformity',
   severs: 'Sever\u2019s disease (kids)',
@@ -113,6 +114,7 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   heelSpurExercises: 'Ejercicios para espolón calcáneo',
   heelPainAfterWalking: 'Dolor de talón al caminar',
   heelPainAtNight: 'Dolor de talón por la noche',
+  pfPregnancy: 'Dolor de talón en el embarazo',
   heelFatPad: 'Almohadilla grasa del talón',
   haglunds: 'Deformidad de Haglund',
   severs: 'Enfermedad de Sever (niños)',
@@ -180,6 +182,7 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
   heelSpurExercises: 'Упражнения при пяточной шпоре',
   heelPainAfterWalking: 'Боль в пятке после ходьбы',
   heelPainAtNight: 'Боль в пятке ночью',
+  pfPregnancy: 'Боль в пятке при беременности',
   heelFatPad: 'Жировая подушка пятки',
   haglunds: 'Деформация Хаглунда',
   severs: 'Болезнь Севера (дети)',
@@ -211,7 +214,7 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],
-  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'heelFatPad', 'haglunds', 'severs'],
+  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs'],
   foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening'],
   ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening'],
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids'],
@@ -272,7 +275,7 @@ export type Topic = 'pf' | 'flat' | 'calf' | 'forefoot';
 export const TOPICS: Record<Topic, readonly GuideKey[]> = {
   pf: [
     'hubPlantarFasciitis', 'heelPain', 'morningHeelPain', 'pfDuration', 'standing', 'nurses', 'standingDesk', 'runners', 'calfRaises',
-    'pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'heelFatPad', 'haglunds', 'severs',
+    'pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs',
     'nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'bestInsoles',
     'bestApp', 'pfCost', 'appVsPt', 'vsHinge', 'hingeAlt', 'vsExakt', 'exaktAlt', 'ytVsApp', 'appStudy', 'ytStudy', 'aiStudy',
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exTowelHeelRaise', 'exFootRoll',

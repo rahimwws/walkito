@@ -900,7 +900,8 @@ body:has(> .pg) > .wash {
 }
 
 .pg .prose .key-fact strong {
-  display: inline-block;
+  /* Its own line: inline, the label ran straight into the first word. */
+  display: block;
   margin-bottom: 6px;
   color: var(--pg-violet-deep);
   font-size: 12px;

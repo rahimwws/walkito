@@ -1313,6 +1313,35 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1001/jama.290.11.1474',
     pmid: '13129987',
   },
+  {
+    text: 'Vullo VJ, Richardson JK, Hurvitz EA. Hip, knee, and foot pain during pregnancy and the postpartum period. Journal of Family Practice. 1996;43(1):63–68.',
+    pmid: '8691182',
+  },
+  {
+    text: 'Ponnapula P, Boberg JS. Lower extremity changes experienced during pregnancy. Journal of Foot and Ankle Surgery. 2010;49(5):452–458.',
+    doi: '10.1053/j.jfas.2010.06.018',
+    pmid: '20797587',
+  },
+  {
+    text: 'Segal NA, Neuman LN, Hochstedler MC, Hillstrom HJ. Static and dynamic effects of customized insoles on attenuating arch collapse with pregnancy: a randomized controlled trial. The Foot. 2018;37:16–22.',
+    doi: '10.1016/j.foot.2018.07.007',
+    pmid: '30321854',
+  },
+  {
+    text: 'ACOG Committee Opinion No. 804. Physical activity and exercise during pregnancy and the postpartum period. Obstetrics & Gynecology. 2020;135(4):e178–e188.',
+    doi: '10.1097/AOG.0000000000003772',
+    pmid: '32217980',
+  },
+  {
+    text: 'Dunning K, LeMasters G, Levin L, et al. Falls in workers during pregnancy: risk factors, job hazards, and high risk occupations. American Journal of Industrial Medicine. 2003;44(6):664–672.',
+    doi: '10.1002/ajim.10318',
+    pmid: '14635243',
+  },
+  {
+    text: 'Filippini C, Saran S, Chari B. Musculoskeletal steroid injections in pregnancy: a review. Skeletal Radiology. 2023;52(8):1465–1473.',
+    doi: '10.1007/s00256-023-04320-9',
+    pmid: '36917270',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -1578,6 +1607,12 @@ export const CITE = {
   whittakerSoothe: 258,
   rasenbergReview2018: 259,
   winemillerMagnets: 260,
+  vulloPregnancy: 261,
+  ponnapulaPregnancy: 262,
+  segalInsolesPregnancy: 263,
+  acogExercise: 264,
+  dunningFalls: 265,
+  filippiniInjections: 266,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

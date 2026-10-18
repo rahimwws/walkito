@@ -139,6 +139,11 @@ export const APP_LINES: Partial<Record<Guide['page'], Line>> = {
     es: 'Si un profesional ya descartó otras causas, Walkito arma un plan corto para el talón, 3, 5 o 7 días a la semana, a tu elección, que se ajusta a cómo amaneció.',
     ru: 'Если врач исключил другие причины, Walkito составит короткий план для пятки на 3, 5 или 7 дней в неделю по вашему выбору, который подстраивается под то, как она чувствовала себя утром.',
   },
+  pfPregnancy: {
+    en: 'If your doctor or midwife is happy for you to exercise, Walkito gives you 3, 5 or 10 minute heel sessions on the 3, 5 or 7 days a week you pick, adjusted to how your heel felt this morning.',
+    es: 'Si tu médico o tu ginecólogo está de acuerdo con que hagas ejercicio, Walkito te da sesiones para el talón de 3, 5 o 10 minutos los días que elijas (3, 5 o 7 a la semana), ajustadas a cómo amaneció tu talón.',
+    ru: 'Если врач, который ведёт беременность, не против упражнений, Walkito даёт занятия для пятки на 3, 5 или 10 минут в выбранные вами дни (3, 5 или 7 в неделю), с поправкой на то, как пятка чувствовала себя утром.',
+  },
   heelFatPad: {
     en: 'Walkito builds a short plan around where your heel hurts, on the 3, 5 or 7 days a week you pick, and a sore morning in your check-in makes that day’s session lighter.',
     es: 'Walkito arma un plan corto según dónde te duele el talón, 3, 5 o 7 días a la semana, a tu elección, y si amaneces con dolor, la sesión de ese día es más suave.',
