@@ -780,6 +780,11 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     hairdressers: '/pt/dor-nos-pes-cabeleireiros/',
     weightPf: '/pt/peso-e-fascite-plantar/',
     hikers: '/pt/dor-nos-pes-trilha/',
+    heelNotPf: '/pt/dor-no-calcanhar-nao-e-fascite-plantar/',
+    pfFlareUp: '/pt/crise-de-fascite-plantar/',
+    pfNotBetter: '/pt/fascite-plantar-nao-melhora/',
+    pfMenopause: '/pt/fascite-plantar-menopausa/',
+    pfKneeHipBack: '/pt/fascite-plantar-dor-no-joelho/',
   },
   fr: {
     standing: '/fr/mal-aux-pieds-debout-toute-la-journee/',
@@ -854,6 +859,11 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     hairdressers: '/fr/mal-aux-pieds-coiffeurs/',
     weightPf: '/fr/poids-et-fasciite-plantaire/',
     hikers: '/fr/mal-aux-pieds-randonnee/',
+    heelNotPf: '/fr/douleur-talon-pas-fasciite-plantaire/',
+    pfFlareUp: '/fr/poussee-fasciite-plantaire/',
+    pfNotBetter: '/fr/fasciite-plantaire-qui-ne-passe-pas/',
+    pfMenopause: '/fr/fasciite-plantaire-menopause/',
+    pfKneeHipBack: '/fr/fasciite-plantaire-genou-hanche-dos/',
   },
   it: {
     standing: '/it/dolore-piedi-stare-in-piedi/',
@@ -928,6 +938,11 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     hairdressers: '/it/dolore-piedi-parrucchieri/',
     weightPf: '/it/peso-e-fascite-plantare/',
     hikers: '/it/dolore-piedi-escursionismo/',
+    heelNotPf: '/it/dolore-tallone-non-fascite-plantare/',
+    pfFlareUp: '/it/riacutizzazione-fascite-plantare/',
+    pfNotBetter: '/it/fascite-plantare-non-passa/',
+    pfMenopause: '/it/fascite-plantare-menopausa/',
+    pfKneeHipBack: '/it/fascite-plantare-dolore-ginocchio/',
   },
   de: {
     standing: '/de/fussschmerzen-vom-stehen/',
@@ -1002,6 +1017,11 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     hairdressers: '/de/fussschmerzen-friseure/',
     weightPf: '/de/gewicht-und-plantarfasziitis/',
     hikers: '/de/fussschmerzen-nach-wanderung/',
+    heelNotPf: '/de/fersenschmerzen-keine-plantarfasziitis/',
+    pfFlareUp: '/de/plantarfasziitis-schub/',
+    pfNotBetter: '/de/plantarfasziitis-wird-nicht-besser/',
+    pfMenopause: '/de/plantarfasziitis-wechseljahre/',
+    pfKneeHipBack: '/de/plantarfasziitis-knieschmerzen/',
   },
 };
 

@@ -481,7 +481,7 @@ export const HEEL_PAIN_DE: Guide = {
     {
       h2: 'Welche Übungen solltest du bei Plantarfasziitis meiden?',
       paragraphs: [
-        'Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, solange der Schmerz akut ist, und geh morgens als Erstes nicht barfuß auf harten Böden.',
+        'Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, [solange der Schmerz akut ist](/de/plantarfasziitis-schub/), und geh morgens als Erstes nicht barfuß auf harten Böden.',
         'Springen, Sprinten und Sprungtraining bringen eine plötzliche Spitzenkraft auf die Plantarfaszie. Wenn das Gewebe gereizt ist, kann diese Spitze dich zurückwerfen. Die Leitlinie von 2023 empfiehlt, die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anzupassen, eine Empfehlung mit Empfehlungsgrad E. Sie verbietet keine bestimmten Übungen. **Die Frage ist, ob die Last größer ist, als sich das Gewebe über Nacht erholen kann.**',
         'Barfuß auf harten Böden zu gehen ist ein häufiger Auslöser, weil die Faszie nach dem Ausruhen am steifsten ist und ein harter Boden nicht dämpft. Bis die Beschwerden abklingen, trag den ganzen Tag gut gedämpfte Schuhe, auch zu Hause.',
         'Zwei weitere Dinge solltest du beachten:',

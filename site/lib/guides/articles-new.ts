@@ -285,9 +285,29 @@ import { WEIGHT_PF_PT } from './articles-pt/weight-and-plantar-fasciitis';
 import { HAIRDRESSERS_IT } from './articles-it/hairdressers-foot-pain';
 import { HAIRDRESSERS_PT } from './articles-pt/hairdressers-foot-pain';
 import { HIKERS_DE } from './articles-de/hiking-foot-pain';
+import { HEEL_NOT_PF_DE } from './articles-de/heel-pain-not-plantar-fasciitis';
+import { PF_FLARE_UP_DE } from './articles-de/plantar-fasciitis-flare-up';
+import { PF_NOT_BETTER_DE } from './articles-de/plantar-fasciitis-not-getting-better';
+import { PF_MENOPAUSE_DE } from './articles-de/plantar-fasciitis-menopause';
+import { PF_KNEE_HIP_BACK_DE } from './articles-de/can-plantar-fasciitis-cause-knee-pain';
 import { HIKERS_FR } from './articles-fr/hiking-foot-pain';
+import { HEEL_NOT_PF_FR } from './articles-fr/heel-pain-not-plantar-fasciitis';
+import { PF_FLARE_UP_FR } from './articles-fr/plantar-fasciitis-flare-up';
+import { PF_NOT_BETTER_FR } from './articles-fr/plantar-fasciitis-not-getting-better';
+import { PF_MENOPAUSE_FR } from './articles-fr/plantar-fasciitis-menopause';
+import { PF_KNEE_HIP_BACK_FR } from './articles-fr/can-plantar-fasciitis-cause-knee-pain';
 import { HIKERS_IT } from './articles-it/hiking-foot-pain';
+import { HEEL_NOT_PF_IT } from './articles-it/heel-pain-not-plantar-fasciitis';
+import { PF_FLARE_UP_IT } from './articles-it/plantar-fasciitis-flare-up';
+import { PF_NOT_BETTER_IT } from './articles-it/plantar-fasciitis-not-getting-better';
+import { PF_MENOPAUSE_IT } from './articles-it/plantar-fasciitis-menopause';
+import { PF_KNEE_HIP_BACK_IT } from './articles-it/can-plantar-fasciitis-cause-knee-pain';
 import { HIKERS_PT } from './articles-pt/hiking-foot-pain';
+import { HEEL_NOT_PF_PT } from './articles-pt/heel-pain-not-plantar-fasciitis';
+import { PF_FLARE_UP_PT } from './articles-pt/plantar-fasciitis-flare-up';
+import { PF_NOT_BETTER_PT } from './articles-pt/plantar-fasciitis-not-getting-better';
+import { PF_MENOPAUSE_PT } from './articles-pt/plantar-fasciitis-menopause';
+import { PF_KNEE_HIP_BACK_PT } from './articles-pt/can-plantar-fasciitis-cause-knee-pain';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -366,6 +386,11 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     weightPf: WEIGHT_PF_PT,
     hairdressers: HAIRDRESSERS_PT,
     hikers: HIKERS_PT,
+    heelNotPf: HEEL_NOT_PF_PT,
+    pfFlareUp: PF_FLARE_UP_PT,
+    pfNotBetter: PF_NOT_BETTER_PT,
+    pfMenopause: PF_MENOPAUSE_PT,
+    pfKneeHipBack: PF_KNEE_HIP_BACK_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -440,6 +465,11 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     hairdressers: HAIRDRESSERS_FR,
     weightPf: WEIGHT_PF_FR,
     hikers: HIKERS_FR,
+    heelNotPf: HEEL_NOT_PF_FR,
+    pfFlareUp: PF_FLARE_UP_FR,
+    pfNotBetter: PF_NOT_BETTER_FR,
+    pfMenopause: PF_MENOPAUSE_FR,
+    pfKneeHipBack: PF_KNEE_HIP_BACK_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -514,6 +544,11 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     weightPf: WEIGHT_PF_IT,
     hairdressers: HAIRDRESSERS_IT,
     hikers: HIKERS_IT,
+    heelNotPf: HEEL_NOT_PF_IT,
+    pfFlareUp: PF_FLARE_UP_IT,
+    pfNotBetter: PF_NOT_BETTER_IT,
+    pfMenopause: PF_MENOPAUSE_IT,
+    pfKneeHipBack: PF_KNEE_HIP_BACK_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -588,5 +623,10 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     hairdressers: HAIRDRESSERS_DE,
     weightPf: WEIGHT_PF_DE,
     hikers: HIKERS_DE,
+    heelNotPf: HEEL_NOT_PF_DE,
+    pfFlareUp: PF_FLARE_UP_DE,
+    pfNotBetter: PF_NOT_BETTER_DE,
+    pfMenopause: PF_MENOPAUSE_DE,
+    pfKneeHipBack: PF_KNEE_HIP_BACK_DE,
   },
 };

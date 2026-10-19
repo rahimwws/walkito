@@ -59,7 +59,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         'A diretriz cita outros fatores de risco:',
         {
           list: [
-            'Idade entre 40 e 60\u00A0anos.',
+            'Idade entre 40 e 60\u00A0anos, a fase em que a [dor no calcanhar atinge o pico nas mulheres, perto da menopausa](/pt/fascite-plantar-menopausa/).',
             'Atividades com corrida ou saltos.',
             'Profissões em que se passa muito tempo em pé.',
           ],
@@ -92,7 +92,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
           list: [
             'Se o padrão não se encaixa.',
             'Se os sintomas não melhoram depois de várias semanas de tratamento conservador.',
-            'Se é preciso descartar outro diagnóstico (uma fratura por estresse ou um nervo comprimido, por exemplo).',
+            'Se é preciso descartar outro diagnóstico (uma fratura por estresse ou um nervo comprimido, por exemplo). Veja [dor no calcanhar que não é fascite plantar](/pt/dor-no-calcanhar-nao-e-fascite-plantar/).',
           ],
         },
         'Ultrassom e ressonância magnética podem mostrar a fáscia espessada, mas uma fáscia espessada no exame sem o padrão de sintomas correspondente não é fascite plantar.',
@@ -246,7 +246,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     },
     {
       q: 'Quando procurar um médico por dor no calcanhar?',
-      a: 'Procure um profissional de saúde se a dor começou depois de uma lesão, se você não consegue apoiar o pé, se os dois calcanhares doem e outras articulações estão rígidas, se há dormência ou formigamento, se o calcanhar está vermelho ou quente, se a dor acorda você à noite, ou se ela não melhora depois de vários meses de alongamento e treino de panturrilha. Esses padrões podem indicar outra condição.',
+      a: 'Procure um profissional de saúde se a dor começou depois de uma lesão, se você não consegue apoiar o pé, se os dois calcanhares doem e outras articulações estão rígidas, se há dormência ou formigamento, se o calcanhar está vermelho ou quente, se a dor acorda você à noite, ou se ela [não melhora depois de vários meses](/pt/fascite-plantar-nao-melhora/) de alongamento e treino de panturrilha. Esses padrões podem indicar outra condição.',
     },
     {
       q: 'Por que tenho fascite plantar em um pé só?',

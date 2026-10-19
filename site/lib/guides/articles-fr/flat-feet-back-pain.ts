@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_FR: Guide = {
       paragraphs: [
         'L’explication habituelle est la chaîne cinétique\u00A0: l’idée que les articulations, du pied à la colonne, bougent comme un système relié. Un pied qui s’affaisse vers l’intérieur ferait tourner le tibia et la cuisse vers l’intérieur, inclinerait le bassin et chargerait autrement le bas du dos. **La mécanique est réelle, mais l’effet semble faible.**',
         'Dans une étude en laboratoire de 2021, 20\u00A0personnes ont marché avec des semelles à coin qui faisaient basculer leurs pieds vers l’intérieur. Leur bassin s’inclinait un peu plus d’un côté (environ un demi-degré en moyenne) et la hanche tournait vers l’intérieur d’environ 1,4\u00A0degré. Cela montre que le pied peut déplacer légèrement le bassin. Cela ne montre pas qu’un demi-degré cause une douleur, et l’étude n’a pas mesuré la douleur.',
-        'La chaîne cinétique est une piste raisonnable à vérifier par un professionnel de santé chez une personne donnée. Ce n’est pas une raison de supposer que vos voûtes sont à l’origine de votre mal de dos.',
+        'La chaîne cinétique est une piste raisonnable à vérifier par un professionnel de santé chez une personne donnée. La même question, vue depuis la douleur au talon, est traitée dans [fasciite plantaire et douleur au genou, à la hanche ou au dos](/fr/fasciite-plantaire-genou-hanche-dos/). Ce n’est pas une raison de supposer que vos voûtes sont à l’origine de votre mal de dos.',
       ],
       cites: [CITE.hornestam],
     },

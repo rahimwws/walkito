@@ -29,7 +29,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
       h2: 'Was ist Hüftabduktion?',
       paragraphs: [
         'Hüftabduktion heißt, das Bein seitlich von der Körpermitte wegzubewegen. Der wichtigste Muskel dafür ist der Gluteus medius an der Außenseite der Hüfte. Er hält das Becken waagerecht, wenn du auf einem Bein stehst, und verhindert, dass die andere Hüfte absackt.',
-        'Die Übung steht in Fußprogrammen, weil Hüfte, Knie und Fuß zusammenhängen. Wenn der Gluteus medius schwach ist, dreht sich der Oberschenkel beim Gehen und Stehen nach innen, das Knie folgt, und der Fuß proniert stärker, als er sollte. Das Gewölbe flacht unter dieser Kraft nach innen ab. Eine kräftigere Hüfte bremst diese Kettenreaktion.',
+        'Die Übung steht in Fußprogrammen, weil [Hüfte, Knie und Fuß zusammenhängen](/de/plantarfasziitis-knieschmerzen/). Wenn der Gluteus medius schwach ist, dreht sich der Oberschenkel beim Gehen und Stehen nach innen, das Knie folgt, und der Fuß proniert stärker, als er sollte. Das Gewölbe flacht unter dieser Kraft nach innen ab. Eine kräftigere Hüfte bremst diese Kettenreaktion.',
       ],
     },
     {

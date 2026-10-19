@@ -67,7 +67,7 @@ export const WALKING_PF_PT: Guide = {
       },
       after: [
         'O teste da manhã é o que mais importa. A dor nos primeiros passos é o sintoma clássico da fascite plantar, e é o sinal mais claro de como o pé aguentou o dia anterior. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) explica esse padrão e os alongamentos para fazer antes de ficar em pé.',
-        'Dor forte que faz você mancar, dor que aumenta a cada caminhada e não alivia com repouso, ou dor à noite estão fora dessa regra. Confira a lista no fim desta página.',
+        'Dor forte que faz você mancar, dor que aumenta a cada caminhada e não alivia com repouso, ou dor à noite estão fora dessa regra. Mancar também pode mudar a carga sobre o joelho, o quadril e as costas: veja [fascite plantar e dor no joelho, quadril ou costas](/pt/fascite-plantar-dor-no-joelho/). Confira a lista no fim desta página.',
       ],
       sourceNote: 'Silbernagel 2007: 19\u00A0pessoas por grupo; em doze meses a pontuação VISA-A-S foi de 57 para 85 no grupo ativo e de 57 para 91 no grupo em repouso, sem diferença significativa no ritmo de melhora.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -243,7 +243,7 @@ export const WALKING_PF_PT: Guide = {
     {
       q: 'Caminhar pode piorar a fascite plantar?',
       cites: [CITE.guideline],
-      a: 'Sim, se você fizer muito mais do que o seu calcanhar está acostumado. A diretriz de 2023 cita a dor no calcanhar depois de um aumento recente da atividade em pé como uma característica típica da fascite plantar. Uma caminhada longa de repente, um percurso novo com subidas ou um dia em pisos duros podem fazer a dor piorar. Aumentos menores e constantes são mais leves para o calcanhar.',
+      a: 'Sim, se você fizer muito mais do que o seu calcanhar está acostumado. A diretriz de 2023 cita a dor no calcanhar depois de um aumento recente da atividade em pé como uma característica típica da fascite plantar. Uma caminhada longa de repente, um percurso novo com subidas ou um dia em pisos duros podem [provocar uma crise](/pt/crise-de-fascite-plantar/). Aumentos menores e constantes são mais leves para o calcanhar.',
     },
     {
       q: 'Devo parar de caminhar por completo para a fascite plantar acalmar?',

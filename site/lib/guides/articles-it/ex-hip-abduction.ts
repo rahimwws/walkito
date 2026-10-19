@@ -70,7 +70,7 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
           ],
         },
         'Per questo molte persone con [piede piatto](/it/piede-piatto/) o dolore all’arco hanno anche le anche deboli. L’arco non sta cedendo da solo. **Viene sovraccaricato dall’alto.** Rinforzare l’anca riduce questo carico che arriva dall’alto.',
-        'Uno studio trasversale del 2013 del Framingham Foot Study ha esaminato circa 1.900\u00A0adulti della popolazione generale. La postura a piede piatto in sé non era legata al mal di schiena, ma un piede che ruotava verso l’interno durante il cammino mostrava un piccolo legame con il mal di schiena nelle donne, segno che la catena piede-anca-schiena può funzionare in entrambe le direzioni.',
+        'Uno studio trasversale del 2013 del Framingham Foot Study ha esaminato circa 1.900\u00A0adulti della popolazione generale. La postura a piede piatto in sé non era legata al mal di schiena, ma un piede che ruotava verso l’interno durante il cammino mostrava un piccolo legame con il mal di schiena nelle donne, segno che la catena piede-anca-schiena può funzionare in entrambe le direzioni. Se invece il punto di partenza è il dolore al tallone, vedi [fascite plantare e dolore a ginocchio, anca o schiena](/it/fascite-plantare-dolore-ginocchio/).',
         'Lo studio sul piede piatto di Brijwasi e colleghi (2023) includeva il rinforzo dell’anca insieme agli esercizi del piede corto, al lavoro sulla caviglia e agli allungamenti. Il programma combinato ha migliorato la forma dell’arco in sei settimane. Lo studio non ha separato quanto abbia contribuito da solo il rinforzo dell’anca, ma la sua inclusione riflette il ragionamento biomeccanico.',
       ],
       cites: [CITE.menz, CITE.brijwasi],

@@ -22,7 +22,7 @@ export const HEEL_FAT_PAD_FR: Guide = {
     'Syndrome du coussinet graisseux du talon\u00A0: douleur profonde au centre du talon quand l’amorti s’amincit. Différence avec la fasciite, ce qui aide.',
   h1: 'Syndrome du coussinet graisseux du talon\u00A0: ce que c’est, en quoi il diffère de la fasciite plantaire et ce que disent les preuves',
   lede:
-    'Le syndrome du coussinet graisseux du talon, c’est l’amincissement ou l’abîmement du coussin graisseux situé sous l’os du talon. Il donne une douleur profonde, comme un bleu, au centre du talon, surtout sur sol dur ou pieds nus. Ce serait peut-être la deuxième cause de douleur sous le talon après la [fasciite plantaire](/fr/fasciite-plantaire/), et pourtant la recherche à son sujet est mince. Une revue exploratoire de 2022 n’a trouvé que sept études originales.',
+    'Le syndrome du coussinet graisseux du talon, c’est l’amincissement ou l’abîmement du coussin graisseux situé sous l’os du talon. Il donne une douleur profonde, comme un bleu, au centre du talon, surtout sur sol dur ou pieds nus. Ce serait peut-être la deuxième cause de douleur sous le talon après la [fasciite plantaire](/fr/fasciite-plantaire/), et pourtant la recherche à son sujet est mince. Les autres causes qui lui ressemblent sont comparées dans [douleur au talon qui n’est pas une fasciite plantaire](/fr/douleur-talon-pas-fasciite-plantaire/). Une revue exploratoire de 2022 n’a trouvé que sept études originales.',
   intro: [
     'Cette page présente ce que l’on sait du syndrome du coussinet graisseux du talon, comment le distinguer de la fasciite plantaire, et quelles mesures conservatrices ont au moins un peu de soutien. Si votre douleur ressemble plutôt à une traction vive à l’intérieur du talon aux premiers pas du matin, [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) est sans doute la meilleure page. Si elle est à l’arrière du talon, près du tendon d’Achille, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/) ou [maladie de Haglund](/fr/maladie-de-haglund/).',
   ],
@@ -76,7 +76,7 @@ export const HEEL_FAT_PAD_FR: Guide = {
     {
       h2: 'Pourquoi le coussinet graisseux du talon s’amincit-il\u00A0?',
       paragraphs: [
-        '**L’âge est le facteur principal.** À partir de 40\u00A0ans environ, le coussinet perd naturellement de l’eau, du collagène et de l’élasticité. Des années d’activité à fort impact, de longues stations debout sur sol dur et la marche pieds nus accélèrent le processus.',
+        '**L’âge est le facteur principal.** À partir de 40\u00A0ans environ, le coussinet perd naturellement de l’eau, du collagène et de l’élasticité. Ce sont les années où la [fasciite plantaire culmine chez les femmes](/fr/fasciite-plantaire-menopause/)\u00A0: mieux vaut donc savoir les distinguer. Des années d’activité à fort impact, de longues stations debout sur sol dur et la marche pieds nus accélèrent le processus.',
         'Les autres facteurs de risque comprennent\u00A0:',
         {
           list: [

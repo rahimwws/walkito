@@ -30,7 +30,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
       h2: 'Qu’est-ce que l’abduction de hanche\u00A0?',
       paragraphs: [
         'L’abduction de hanche consiste à écarter la jambe sur le côté, loin du centre du corps. Le principal muscle en jeu est le moyen fessier, situé sur la face externe de la hanche. Il garde le bassin à niveau quand vous tenez sur une jambe et empêche la hanche opposée de s’abaisser.',
-        'Cet exercice figure dans les programmes pour le pied, car la hanche, le genou et le pied sont liés. Quand le moyen fessier est faible, la cuisse tourne vers l’intérieur pendant la marche et en position debout, le genou suit, et le pied part en pronation plus qu’il ne le devrait. La voûte s’aplatit sous cette force vers l’intérieur. Renforcer la hanche réduit cette réaction en chaîne.',
+        'Cet exercice figure dans les programmes pour le pied, car la hanche, le genou et le pied sont liés. Quand le moyen fessier est faible, la cuisse tourne vers l’intérieur pendant la marche et en position debout, le genou suit, et le pied part en pronation plus qu’il ne le devrait. La voûte s’aplatit sous cette force vers l’intérieur. Renforcer la hanche réduit cette réaction en chaîne. Le lien dans l’autre sens, du talon vers le genou, la hanche et le dos, est abordé dans [fasciite plantaire et douleur au genou, à la hanche ou au dos](/fr/fasciite-plantaire-genou-hanche-dos/).',
       ],
     },
     {

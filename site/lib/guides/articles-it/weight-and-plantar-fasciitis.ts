@@ -216,7 +216,7 @@ export const WEIGHT_PF_IT: Guide = {
       h2: 'La fascite plantare passa anche se non perdo peso?',
       paragraphs: [
         '**Per la maggior parte delle persone sì, si attenua con il tempo e con un trattamento non chirurgico.** Circa il 90% delle persone con fascite plantare migliora con un trattamento non chirurgico come allungamenti e plantari, spesso in tempi da 3 a 6\u00A0mesi (Latt e colleghi, 2020).',
-        'In un lungo follow-up su 174\u00A0persone, i ricercatori hanno verificato se IMC, età, fumo, lavoro fisico e altri fattori prevedessero chi avrebbe avuto ancora dolore al tallone anni dopo. Lo prevedevano solo l’essere donna e avere dolore a entrambi i talloni. L’IMC no (Hansen e colleghi, 2018).',
+        'In un lungo follow-up su 174\u00A0persone, i ricercatori hanno verificato se IMC, età, fumo, lavoro fisico e altri fattori prevedessero chi avrebbe avuto ancora dolore al tallone anni dopo. Lo prevedevano solo l’essere donna e avere dolore a entrambi i talloni. L’IMC no (Hansen e colleghi, 2018). Perché colpisca di più le donne intorno ai 50\u00A0anni è spiegato in [fascite plantare e menopausa](/it/fascite-plantare-menopausa/).',
         'Quindi un peso più alto può rendere più probabile che la fascite plantare inizi, ma non significa che ti resterà per sempre. Gli allungamenti e il lavoro sul polpaccio descritti sopra sono gli stessi che aiutano persone di ogni corporatura. [Quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/) riporta i tempi completi.',
       ],
       cites: [CITE.latt, CITE.hansen],

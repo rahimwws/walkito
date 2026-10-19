@@ -97,7 +97,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       paragraphs: [
         'Se a sua dor combina com o padrão da fascite plantar, alongar a panturrilha e a fáscia plantar com cuidado antes de dormir pode diminuir a rigidez da manhã seguinte. O mesmo alongamento específico da fáscia plantar que a diretriz classifica com grau **A** para a dor nos primeiros passos pode ser feito antes de dormir: puxe os dedos para trás com a mão até sentir o arco, segure por 10\u00A0segundos, repita 10\u00A0vezes.',
         'Exercícios de carga, como a elevação de calcanhar, funcionam melhor mais cedo no dia. A lista completa de exercícios está na página de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
-        'Se a sua dor não é fascite plantar, ou se você não tem certeza, alongar à noite não é o primeiro passo. O primeiro passo é ter o diagnóstico certo.',
+        'Se a [sua dor não é fascite plantar](/pt/dor-no-calcanhar-nao-e-fascite-plantar/), ou se você não tem certeza, alongar à noite não é o primeiro passo. O primeiro passo é ter o diagnóstico certo.',
       ],
       exercises: [
         {

@@ -161,7 +161,7 @@ export const NIGHT_SPLINTS_PT: Guide = {
           ],
         },
         'A diretriz também recomenda não usar palmilhas como a única coisa que você faz para alívio da dor no curto prazo. Para saber mais sobre essa questão, veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
-        'Uma ordem comum é alongamento e trabalho de panturrilha primeiro. Se os seus primeiros passos continuam ruins depois de mais ou menos um mês disso, acrescente uma tala por um a três meses. Muita gente usa palmilhas junto. Essa ordem é uma leitura razoável da diretriz, não algo que um ensaio tenha testado.',
+        'Uma ordem comum é alongamento e trabalho de panturrilha primeiro. Se os seus primeiros passos continuam ruins depois de mais ou menos um mês disso, acrescente uma tala por um a três meses. Se continuarem ruins também depois da tala, veja [fascite plantar que não melhora](/pt/fascite-plantar-nao-melhora/). Muita gente usa palmilhas junto. Essa ordem é uma leitura razoável da diretriz, não algo que um ensaio tenha testado.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

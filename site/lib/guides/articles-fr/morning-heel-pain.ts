@@ -48,7 +48,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
       h2: 'Quelles autres causes de douleur au talon le matin\u00A0?',
       keyFact: 'Dans une cohorte de 174\u00A0personnes atteintes de fasciite plantaire suivies en moyenne 9,7\u00A0ans, une douleur aux deux talons prédisait une moins bonne évolution à long terme, ce qui, selon les auteurs, pourrait refléter une maladie inflammatoire générale non reconnue (Hansen et coll., 2018).',
       paragraphs: [
-        'La fasciite plantaire est la cause la plus fréquente de douleur au talon le matin, mais ce n’est pas la seule. L’endroit de la douleur et son comportement aident à les distinguer\u00A0:',
+        'La fasciite plantaire est la cause la plus fréquente de douleur au talon le matin, mais [ce n’est pas la seule](/fr/douleur-talon-pas-fasciite-plantaire/). L’endroit de la douleur et son comportement aident à les distinguer\u00A0:',
         {
           list: [
             '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille se raidit la nuit comme le fascia plantaire, donc la [raideur aux premiers pas est fréquente](/fr/fasciite-plantaire-ou-tendinite-achille/). Elle s’améliore en général à la marche, puis [s’aggrave à nouveau avec une activité prolongée](/fr/douleur-talon-apres-marche/). Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
@@ -133,7 +133,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
     {
       h2: 'Comment la douleur du matin montre-t-elle si ça va mieux\u00A0?',
       paragraphs: [
-        'La douleur du matin est le signal quotidien le plus clair de l’état d’un pied. Une course peut sembler bien passer mais laisser le fascia surchargé, et vous ne le saurez que le lendemain matin. Une longue journée debout peut sembler supportable, mais le lendemain matin vous dit si c’était de trop. Le schéma est simple\u00A0: si vos premiers pas du lendemain sont pires que d’habitude, la veille en a demandé plus au pied qu’il ne pouvait en encaisser.',
+        'La douleur du matin est le signal quotidien le plus clair de l’état d’un pied. Une course peut sembler bien passer mais laisser le fascia surchargé, et vous ne le saurez que le lendemain matin. Une longue journée debout peut sembler supportable, mais le lendemain matin vous dit si c’était de trop. Le schéma est simple\u00A0: si vos premiers pas du lendemain sont [pires que d’habitude](/fr/poussee-fasciite-plantaire/), la veille en a demandé plus au pied qu’il ne pouvait en encaisser.',
         'C’est pourquoi une note quotidienne de la douleur du matin, de 0 à 10, est plus utile que de vérifier la douleur dans la journée. La douleur de la journée monte et descend avec l’activité, la posture et les chaussures. La douleur du matin mesure la même chose, de la même façon, à peu près à la même heure chaque jour. Quand le chiffre baisse au fil des semaines, le pied gagne du terrain. Quand il grimpe, quelque chose ces derniers jours est allé trop loin.',
         'Walkito vous demande votre douleur du matin avant chaque séance\u00A0:',
         {

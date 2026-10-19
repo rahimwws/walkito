@@ -217,7 +217,7 @@ export const WEIGHT_PF_PT: Guide = {
       h2: 'A fascite plantar passa se eu não perder peso?',
       paragraphs: [
         '**Para a maioria das pessoas, sim: ela melhora com o tempo e com cuidados não cirúrgicos.** Cerca de 90% das pessoas com fascite plantar melhoram com cuidados não cirúrgicos, como alongamentos e palmilhas, muitas vezes em 3 a 6\u00A0meses (Latt e colegas, 2020).',
-        'Em um acompanhamento longo de 174\u00A0pessoas, os pesquisadores testaram se IMC, idade, tabagismo, trabalho físico e outros fatores previam quem ainda teria dor no calcanhar anos depois. Só ser mulher e ter dor nos dois calcanhares previram. O IMC, não (Hansen e colegas, 2018).',
+        'Em um acompanhamento longo de 174\u00A0pessoas, os pesquisadores testaram se IMC, idade, tabagismo, trabalho físico e outros fatores previam quem ainda teria dor no calcanhar anos depois. Só ser mulher e ter dor nos dois calcanhares previram. O IMC, não (Hansen e colegas, 2018). Por que ela atinge mais as mulheres perto dos 50\u00A0anos está explicado em [fascite plantar e menopausa](/pt/fascite-plantar-menopausa/).',
         'Ou seja, um peso maior pode deixar mais provável que a fascite plantar comece, mas não quer dizer que você vai ficar com ela para sempre. Os alongamentos e o trabalho de panturrilha acima são os mesmos que ajudam pessoas de qualquer tamanho. [Quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) mostra a linha do tempo completa.',
       ],
       cites: [CITE.latt, CITE.hansen],

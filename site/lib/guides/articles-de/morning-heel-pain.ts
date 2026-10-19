@@ -47,7 +47,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
       h2: 'Was verursacht morgens sonst noch Fersenschmerzen?',
       keyFact: 'In einer Kohorte von 174\u00A0Menschen mit Plantarfasziitis, die durchschnittlich 9,7\u00A0Jahre beobachtet wurden, sagten Fersenschmerzen auf beiden Seiten einen schlechteren Langzeitverlauf voraus, was laut den Autoren auf unerkannte systemische Entzündungserkrankungen hindeuten könnte (Hansen und Kollegen, 2018).',
       paragraphs: [
-        'Plantarfasziitis ist die häufigste Ursache für Fersenschmerzen am Morgen, aber nicht die einzige. Wo der Schmerz sitzt und wie er sich verhält, hilft, die Ursachen auseinanderzuhalten:',
+        'Plantarfasziitis ist die häufigste Ursache für Fersenschmerzen am Morgen, aber [nicht die einzige](/de/fersenschmerzen-keine-plantarfasziitis/). Wo der Schmerz sitzt und wie er sich verhält, hilft, die Ursachen auseinanderzuhalten:',
         {
           list: [
             '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne wird über Nacht genauso steif wie die Plantarfaszie, deshalb ist [Steifheit bei den ersten Schritten häufig](/de/plantarfasziitis-oder-achillessehne/). Meist wird es beim Gehen besser und [bei langer Belastung wieder schlimmer](/de/fersenschmerzen-nach-dem-gehen/). Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
@@ -132,7 +132,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
     {
       h2: 'Wie zeigt der Morgenschmerz, ob es besser wird?',
       paragraphs: [
-        'Der Morgenschmerz ist das klarste Signal von Tag zu Tag, wie es einem Fuß geht. Ein Lauf kann sich gut anfühlen und die Faszie trotzdem überlasten, und du merkst es erst am nächsten Morgen. Eine lange Schicht auf den Beinen kann erträglich wirken, aber der nächste Morgen zeigt dir, ob sie zu viel war. Das Muster ist einfach: Wenn deine ersten Schritte am nächsten Morgen schlimmer sind als sonst, hat der Vortag dem Fuß mehr abverlangt, als er verkraften konnte.',
+        'Der Morgenschmerz ist das klarste Signal von Tag zu Tag, wie es einem Fuß geht. Ein Lauf kann sich gut anfühlen und die Faszie trotzdem überlasten, und du merkst es erst am nächsten Morgen. Eine lange Schicht auf den Beinen kann erträglich wirken, aber der nächste Morgen zeigt dir, ob sie zu viel war. Das Muster ist einfach: Wenn deine ersten Schritte am nächsten Morgen [schlimmer sind als sonst](/de/plantarfasziitis-schub/), hat der Vortag dem Fuß mehr abverlangt, als er verkraften konnte.',
         'Deshalb ist ein täglicher Wert für den Morgenschmerz, 0 bis 10, nützlicher, als den Schmerz tagsüber zu prüfen. Der Schmerz tagsüber steigt und fällt mit Aktivität, Haltung und Schuhen. Der Morgenschmerz misst dasselbe, auf dieselbe Weise, jeden Tag ungefähr zur selben Zeit. Wenn die Zahl über Wochen sinkt, macht der Fuß Fortschritte. Wenn sie in die Höhe schießt, war in den letzten ein, zwei Tagen etwas zu viel.',
         'Walkito fragt vor jeder Einheit nach deinem Morgenschmerz:',
         {

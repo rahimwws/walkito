@@ -476,7 +476,7 @@ export const HEEL_PAIN_FR: Guide = {
     {
       h2: 'Quels exercices éviter avec une fasciite plantaire\u00A0?',
       paragraphs: [
-        'Évitez les activités à fort impact qui font grimper la charge sur le talon pendant une poussée de douleur, et évitez de marcher pieds nus sur un sol dur au réveil.',
+        'Évitez les activités à fort impact qui font grimper la charge sur le talon [pendant une poussée de douleur](/fr/poussee-fasciite-plantaire/), et évitez de marcher pieds nus sur un sol dur au réveil.',
         'Les sauts, les sprints et la pliométrie exercent un pic de force soudain sur le fascia plantaire. Quand le tissu est irrité, ce pic peut retarder la récupération. La recommandation de 2023 conseille d’adapter la charge sur vos pieds au travail, au sport et dans la vie quotidienne, un conseil noté E. Elle n’interdit pas d’exercices précis. **La question est de savoir si la charge dépasse ce dont le tissu peut récupérer en une nuit.**',
         'Marcher pieds nus sur un sol dur est un déclencheur fréquent, car le fascia est particulièrement raide après le repos et une surface dure n’amortit rien. Tant que les symptômes ne se sont pas calmés, portez des chaussures bien amorties à tout moment de la journée, même à la maison.',
         'Deux autres points à surveiller\u00A0:',

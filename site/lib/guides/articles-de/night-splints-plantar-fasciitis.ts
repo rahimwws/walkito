@@ -161,7 +161,7 @@ export const NIGHT_SPLINTS_DE: Guide = {
           ],
         },
         'Die Leitlinie rät außerdem davon ab, Einlagen als einzige Maßnahme zur kurzfristigen Schmerzlinderung zu nutzen. Mehr zu dieser Frage findest du unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/).',
-        'Eine übliche Reihenfolge ist: zuerst Dehnen und Wadentraining. Wenn deine ersten Schritte nach etwa einem Monat damit noch schlecht sind, nimm für ein bis drei Monate eine Schiene dazu. Viele nutzen zusätzlich Einlagen. Diese Reihenfolge ist eine vernünftige Lesart der Leitlinie, nichts, was eine Studie getestet hat.',
+        'Eine übliche Reihenfolge ist: zuerst Dehnen und Wadentraining. Wenn deine ersten Schritte nach etwa einem Monat damit noch schlecht sind, nimm für ein bis drei Monate eine Schiene dazu. Wenn sie auch danach noch schlecht sind, lies [Plantarfasziitis wird nicht besser](/de/plantarfasziitis-wird-nicht-besser/). Viele nutzen zusätzlich Einlagen. Diese Reihenfolge ist eine vernünftige Lesart der Leitlinie, nichts, was eine Studie getestet hat.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

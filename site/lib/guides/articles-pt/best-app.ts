@@ -281,7 +281,7 @@ export const BEST_APP_PT: Guide = {
     {
       q: 'Com que frequência usar um app de exercícios para fascite plantar?',
       cites: [CITE.guideline],
-      a: 'A maioria dos programas de exercícios para fascite plantar, incluindo os mais bem avaliados na diretriz de 2023 para dor no calcanhar, é feita em torno de sessões diárias ou quase diárias por cerca de três meses, e não de uso de vez em quando. Um app é mais útil quando você o abre na maioria dos dias, já que é a constância que produz o efeito da carga, e não algum recurso específico dele.',
+      a: 'A maioria dos programas de exercícios para fascite plantar, incluindo os mais bem avaliados na diretriz de 2023 para dor no calcanhar, é feita em torno de sessões diárias ou quase diárias por cerca de três meses, e não de uso de vez em quando. Um app é mais útil quando você o abre na maioria dos dias, já que é a constância que produz o efeito da carga, e não algum recurso específico dele. Abandonar os exercícios quando a dor alivia é um dos [motivos comuns para a fascite plantar empacar](/pt/fascite-plantar-nao-melhora/).',
     },
   ],
   redFlags: {

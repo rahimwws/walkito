@@ -278,7 +278,7 @@ export const BEST_APP_DE: Guide = {
     {
       q: 'Wie oft sollte man eine App bei Plantarfasziitis nutzen?',
       cites: [CITE.guideline],
-      a: 'Die meisten Übungsprogramme bei Plantarfasziitis, auch die am besten bewerteten in der Leitlinie von 2023 zu Fersenschmerzen, sind auf tägliche oder fast tägliche Einheiten über etwa drei Monate ausgelegt, nicht auf gelegentliche Nutzung. Eine App ist am nützlichsten, wenn du sie an den meisten Tagen öffnest, weil die Regelmäßigkeit die Belastungswirkung trägt, nicht eine einzelne Funktion darin.',
+      a: 'Die meisten Übungsprogramme bei Plantarfasziitis, auch die am besten bewerteten in der Leitlinie von 2023 zu Fersenschmerzen, sind auf tägliche oder fast tägliche Einheiten über etwa drei Monate ausgelegt, nicht auf gelegentliche Nutzung. Eine App ist am nützlichsten, wenn du sie an den meisten Tagen öffnest, weil die Regelmäßigkeit die Belastungswirkung trägt, nicht eine einzelne Funktion darin. Die Übungen wegzulassen, sobald der Schmerz nachlässt, ist einer der [häufigen Gründe, warum eine Plantarfasziitis stagniert](/de/plantarfasziitis-wird-nicht-besser/).',
     },
   ],
   redFlags: {

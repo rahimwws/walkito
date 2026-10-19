@@ -161,7 +161,7 @@ export const NIGHT_SPLINTS_IT: Guide = {
           ],
         },
         'La linea guida sconsiglia inoltre i plantari come unica cosa da fare per alleviare il dolore nel breve periodo. Per saperne di più, vedi [plantari o esercizi](/it/plantari-o-esercizi/).',
-        'Un ordine comune è prima allungamenti e lavoro sul polpaccio. Se dopo un mese circa i primi passi sono ancora brutti, aggiungi un tutore per un periodo da uno a tre mesi. Molte persone usano anche i plantari. Questo ordine è una lettura ragionevole della linea guida, non qualcosa che uno studio abbia verificato.',
+        'Un ordine comune è prima allungamenti e lavoro sul polpaccio. Se dopo un mese circa i primi passi sono ancora brutti, aggiungi un tutore per un periodo da uno a tre mesi. Se restano brutti anche dopo il tutore, leggi [fascite plantare che non passa](/it/fascite-plantare-non-passa/). Molte persone usano anche i plantari. Questo ordine è una lettura ragionevole della linea guida, non qualcosa che uno studio abbia verificato.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

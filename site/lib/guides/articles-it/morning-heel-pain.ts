@@ -52,7 +52,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
       h2: 'Cos’altro causa dolore al tallone al mattino?',
       keyFact: 'In una coorte di 174\u00A0persone con fascite plantare seguite in media per 9,7\u00A0anni, il dolore a entrambi i talloni prediceva un risultato peggiore a lungo termine, che secondo gli autori poteva riflettere una malattia infiammatoria sistemica non riconosciuta (Hansen e colleghi, 2018).',
       paragraphs: [
-        'La fascite plantare è la causa più comune del dolore al tallone al mattino, ma non è l’unica. La posizione e il comportamento del dolore aiutano a distinguerle:',
+        'La fascite plantare è la causa più comune del dolore al tallone al mattino, ma [non è l’unica](/it/dolore-tallone-non-fascite-plantare/). La posizione e il comportamento del dolore aiutano a distinguerle:',
         {
           list: [
             '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille si irrigidisce durante la notte proprio come la fascia plantare, quindi la [rigidità ai primi passi](/it/fascite-plantare-o-tendinite-achille/) è comune. Di solito migliora camminando e poi [peggiora di nuovo con un’attività prolungata](/it/dolore-tallone-dopo-camminata/). Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
@@ -137,7 +137,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     {
       h2: 'Come fa il dolore del mattino a dirti se stai migliorando?',
       paragraphs: [
-        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se è stato troppo impegnativo. La regola è semplice: se la mattina dopo i primi passi vanno peggio del solito, il giorno prima hai chiesto al piede più di quanto potesse reggere.',
+        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se è stato troppo impegnativo. La regola è semplice: se la mattina dopo i primi passi vanno [peggio del solito](/it/riacutizzazione-fascite-plantare/), il giorno prima hai chiesto al piede più di quanto potesse reggere.',
         'Per questo un punteggio quotidiano del dolore del mattino, da 0 a 10, è più utile che controllare il dolore durante il giorno. Il dolore di giorno sale e scende con l’attività, la postura e le scarpe. Il dolore del mattino misura la stessa cosa, nello stesso modo, più o meno alla stessa ora ogni giorno. Quando il numero scende nel corso delle settimane, il piede sta guadagnando terreno. Quando sale di colpo, qualcosa negli ultimi uno o due giorni ha spinto troppo.',
         'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione:',
         {
@@ -195,7 +195,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     {
       q: 'Quali sono i rimedi casalinghi per il dolore al tallone al mattino?',
       cites: [CITE.guideline],
-      a: 'I rimedi casalinghi per il dolore al tallone al mattino sono stretching, ghiaccio e scarpe che sostengono il piede, ogni giorno e non una volta sola. Allunga fascia e polpaccio prima di alzarti, poi metti scarpe con un buon sostegno prima di camminare su pavimenti duri. Far rotolare la pianta su una bottiglia d’acqua ghiacciata per qualche minuto può ridurre la rigidità, ma non sostituisce un professionista sanitario se il dolore non migliora.',
+      a: 'I rimedi casalinghi per il dolore al tallone al mattino sono stretching, ghiaccio e scarpe che sostengono il piede, ogni giorno e non una volta sola. Allunga fascia e polpaccio prima di alzarti, poi metti scarpe con un buon sostegno prima di camminare su pavimenti duri. Far rotolare la pianta su una bottiglia d’acqua ghiacciata per qualche minuto può ridurre la rigidità, ma non sostituisce un professionista sanitario se il dolore [non migliora](/it/fascite-plantare-non-passa/).',
     },
   ],
   redFlags: {

@@ -40,7 +40,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
           ],
         },
         'Eine zweite Studie betrachtete das junge Ende des Lebens. Kosashvili und Kollegen werteten 2008 die Daten von 97.279 jungen Rekrutinnen und Rekruten aus. Schmerzen vorn am Knie fanden sich bei 7\u00A0% mit mittlerem oder starkem Plattfuß und bei 4\u00A0% mit leichtem Plattfuß oder normalem Gewölbe. Ein leichter Plattfuß, der 74\u00A0% der Gruppe mit Plattfüßen ausmachte, brachte kein zusätzliches Risiko.',
-        'Beide Studien haben die Menschen nur einmal gemessen und können deshalb nicht sagen, ob der Fuß zuerst da war. Die Framingham-Autoren wiesen außerdem darauf hin, dass ein Fußabdruck einen Plattfuß vielleicht nicht von einem breiten, fleischigen Fuß unterscheiden kann, und das Körpergewicht wirkt für sich allein auf das Knie.',
+        'Beide Studien haben die Menschen nur einmal gemessen und können deshalb nicht sagen, ob der Fuß zuerst da war. Wenn die Fersenschmerzen zuerst da waren, lies, ob [eine Plantarfasziitis Knieschmerzen verursachen kann](/de/plantarfasziitis-knieschmerzen/). Die Framingham-Autoren wiesen außerdem darauf hin, dass ein Fußabdruck einen Plattfuß vielleicht nicht von einem breiten, fleischigen Fuß unterscheiden kann, und das Körpergewicht wirkt für sich allein auf das Knie.',
       ],
       sourceNote:
         'Gross 2011: Querschnittsstudie, Odds Ratio für Knieschmerzen 1,3 (95-%-KI 1,1 bis 1,6), Knorpelschaden medial tibiofemoral 1,4 (95-%-KI 1,1 bis 1,8), adjustiert für Alter, Geschlecht und Body-Mass-Index. Kosashvili 2008: retrospektive Auswertung, Plattfüße von einem Orthopäden eingestuft, Schmerzen vorn am Knie dem Patellofemoralgelenk zugeordnet.',

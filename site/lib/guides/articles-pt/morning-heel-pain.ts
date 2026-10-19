@@ -48,7 +48,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
       h2: 'O que mais causa dor no calcanhar de manhã?',
       keyFact: 'Em um grupo de 174\u00A0pessoas com fascite plantar acompanhadas por 9,7\u00A0anos em média, dor nos dois calcanhares previu um resultado pior a longo prazo, o que os autores disseram poder refletir uma doença inflamatória sistêmica não reconhecida (Hansen e colegas, 2018).',
       paragraphs: [
-        'A fascite plantar é a causa mais comum de dor no calcanhar pela manhã, mas não é a única. O local e o comportamento da dor ajudam a diferenciar:',
+        'A fascite plantar é a causa mais comum de dor no calcanhar pela manhã, mas [não é a única](/pt/dor-no-calcanhar-nao-e-fascite-plantar/). O local e o comportamento da dor ajudam a diferenciar:',
         {
           list: [
             '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. O tendão de Aquiles fica rígido durante a noite assim como a fáscia plantar, então [rigidez nos primeiros passos é comum](/pt/fascite-plantar-ou-tendinite-de-aquiles/). Normalmente melhora ao caminhar e depois [piora de novo com atividade prolongada](/pt/dor-no-calcanhar-depois-de-andar/). Se a sua dor é na parte de trás do calcanhar e não embaixo dele, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
@@ -133,7 +133,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
     {
       h2: 'Como a dor da manhã mostra se as coisas estão melhorando?',
       paragraphs: [
-        'A dor da manhã é o sinal mais claro do dia a dia de como o pé está. Uma corrida pode parecer tranquila e deixar a fáscia sobrecarregada, e você só vai saber na manhã seguinte. Um turno longo em pé pode parecer suportável, mas a manhã seguinte diz se foi demais. O padrão é simples: se os seus primeiros passos na manhã seguinte estão piores que o normal, o dia anterior pediu mais do pé do que ele aguentava.',
+        'A dor da manhã é o sinal mais claro do dia a dia de como o pé está. Uma corrida pode parecer tranquila e deixar a fáscia sobrecarregada, e você só vai saber na manhã seguinte. Um turno longo em pé pode parecer suportável, mas a manhã seguinte diz se foi demais. O padrão é simples: se os seus primeiros passos na manhã seguinte estão [piores que o normal](/pt/crise-de-fascite-plantar/), o dia anterior pediu mais do pé do que ele aguentava.',
         'É por isso que uma nota diária da dor da manhã, de 0 a 10, é mais útil do que checar a dor durante o dia. A dor durante o dia sobe e desce com a atividade, a postura e o calçado. A dor da manhã mede a mesma coisa, do mesmo jeito, mais ou menos no mesmo horário todo dia. Quando o número cai ao longo das semanas, o pé está ganhando terreno. Quando ele dispara, algo nos últimos um ou dois dias passou do ponto.',
         'O Walkito pede uma nota da dor da manhã antes de cada sessão:',
         {

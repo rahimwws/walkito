@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
       paragraphs: [
         'A explicação mais comum é a cadeia cinética: a ideia de que as articulações do pé até a coluna se movem como um sistema ligado, então um pé que vira para dentro gira a canela e a coxa para dentro, inclina a pelve e muda a carga na lombar. **A mecânica é real, mas o tamanho do efeito parece pequeno.**',
         'Em um estudo de laboratório de 2021, 20\u00A0pessoas caminharam com palmilhas em cunha que faziam o pé virar para dentro. A pelve inclinou um pouco mais para um lado (cerca de meio grau, em média) e o quadril girou para dentro cerca de 1,4\u00A0grau. Isso mostra que o pé consegue mexer um pouco na pelve. Não mostra que meio grau causa dor, e o estudo não mediu dor.',
-        'A cadeia cinética é uma ideia razoável para um profissional de saúde verificar em uma pessoa específica. Não é motivo para supor que os seus arcos estão por trás da sua dor nas costas.',
+        'A cadeia cinética é uma ideia razoável para um profissional de saúde verificar em uma pessoa específica. A mesma pergunta, vista a partir da dor no calcanhar, é respondida em [fascite plantar e dor no joelho, quadril ou costas](/pt/fascite-plantar-dor-no-joelho/). Não é motivo para supor que os seus arcos estão por trás da sua dor nas costas.',
       ],
       cites: [CITE.hornestam],
     },

@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       paragraphs: [
         'La spiegazione più comune è la catena cinetica: l’idea che le articolazioni dal piede alla colonna si muovano come un sistema collegato, per cui un piede che cede verso l’interno fa ruotare verso l’interno tibia e coscia, inclina il bacino e carica la parte bassa della schiena in modo diverso. **La meccanica è reale, ma l’entità dell’effetto sembra piccola.**',
         'In uno studio di laboratorio del 2021, 20\u00A0persone hanno camminato con plantari a cuneo che facevano cedere i piedi verso l’interno. Il bacino si inclinava un po’ di più da un lato (in media circa mezzo grado) e l’anca ruotava verso l’interno di circa 1,4\u00A0gradi. Questo dimostra che il piede può spostare un po’ il bacino. Non dimostra che mezzo grado causi dolore, e lo studio non ha misurato il dolore.',
-        'La catena cinetica è un’idea ragionevole che un professionista sanitario può verificare nella singola persona. Non è un motivo per dare per scontato che il tuo arco plantare sia dietro il tuo mal di schiena.',
+        'La catena cinetica è un’idea ragionevole che un professionista sanitario può verificare nella singola persona. La stessa domanda, ma partendo dal dolore al tallone, trova risposta in [fascite plantare e dolore a ginocchio, anca o schiena](/it/fascite-plantare-dolore-ginocchio/). Non è un motivo per dare per scontato che il tuo arco plantare sia dietro il tuo mal di schiena.',
       ],
       cites: [CITE.hornestam],
     },

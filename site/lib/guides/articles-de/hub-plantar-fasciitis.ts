@@ -60,7 +60,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         'Die Leitlinie nennt weitere Risikofaktoren:',
         {
           list: [
-            'Ein Alter zwischen 40 und 60.',
+            'Ein Alter zwischen 40 und 60, wenn [Fersenschmerzen bei Frauen rund um die Wechseljahre am häufigsten sind](/de/plantarfasziitis-wechseljahre/).',
             'Laufen oder Springen.',
             'Berufe mit langem Stehen.',
           ],
@@ -93,7 +93,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
           list: [
             'Wenn das Muster nicht passt.',
             'Wenn die Beschwerden nach mehreren Wochen konservativer Behandlung nicht besser werden.',
-            'Wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv).',
+            'Wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv). Siehe [Fersenschmerzen, die keine Plantarfasziitis sind](/de/fersenschmerzen-keine-plantarfasziitis/).',
           ],
         },
         'Ultraschall und MRT können eine verdickte Faszie zeigen, aber eine verdickte Faszie auf dem Bild ohne das passende Beschwerdemuster ist keine Plantarfasziitis.',
@@ -247,7 +247,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     },
     {
       q: 'Wann sollte ich mit Fersenschmerzen zum Arzt?',
-      a: 'Lass das zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er nach mehreren Monaten Dehnen und Wadentraining nicht besser wird. Diese Muster können auf eine andere Ursache hindeuten.',
+      a: 'Lass das zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er [nach mehreren Monaten Dehnen und Wadentraining nicht besser wird](/de/plantarfasziitis-wird-nicht-besser/). Diese Muster können auf eine andere Ursache hindeuten.',
     },
     {
       q: 'Warum habe ich Plantarfasziitis nur an einem Fuß?',

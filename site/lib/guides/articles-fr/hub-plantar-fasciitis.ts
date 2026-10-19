@@ -59,7 +59,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
         'La recommandation cite d’autres facteurs de risque\u00A0:',
         {
           list: [
-            'Un âge entre 40 et 60\u00A0ans.',
+            'Un âge entre 40 et 60\u00A0ans, la période où la [douleur au talon culmine chez les femmes, autour de la ménopause](/fr/fasciite-plantaire-menopause/).',
             'La course ou les sauts.',
             'Les métiers où l’on reste longtemps debout.',
           ],
@@ -92,7 +92,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
           list: [
             'Si le tableau ne correspond pas.',
             'Si les symptômes ne s’améliorent pas après plusieurs semaines de soins conservateurs.',
-            'S’il faut écarter un autre diagnostic (une fracture de fatigue ou une compression nerveuse, par exemple).',
+            'S’il faut écarter un autre diagnostic (une fracture de fatigue ou une compression nerveuse, par exemple). Voir [douleur au talon qui n’est pas une fasciite plantaire](/fr/douleur-talon-pas-fasciite-plantaire/).',
           ],
         },
         'L’échographie et l’IRM peuvent montrer un épaississement du fascia, mais un fascia épaissi à l’imagerie sans le schéma de symptômes correspondant n’est pas une fasciite plantaire.',
@@ -246,7 +246,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     },
     {
       q: 'Quand consulter un médecin pour une douleur au talon\u00A0?',
-      a: 'Consultez un professionnel de santé si la douleur a suivi une blessure, si vous ne pouvez pas poser le pied, si les deux talons font mal et que d’autres articulations sont raides, s’il y a des engourdissements ou des fourmillements, si le talon est rouge ou chaud, si la douleur vous réveille la nuit, ou si elle ne s’améliore pas après plusieurs mois d’étirements et de travail du mollet. Ces schémas peuvent signaler un autre problème.',
+      a: 'Consultez un professionnel de santé si la douleur a suivi une blessure, si vous ne pouvez pas poser le pied, si les deux talons font mal et que d’autres articulations sont raides, s’il y a des engourdissements ou des fourmillements, si le talon est rouge ou chaud, si la douleur vous réveille la nuit, ou si elle [ne s’améliore pas après plusieurs mois](/fr/fasciite-plantaire-qui-ne-passe-pas/) d’étirements et de travail du mollet. Ces schémas peuvent signaler un autre problème.',
     },
     {
       q: 'Pourquoi ai-je une fasciite plantaire à un seul pied\u00A0?',

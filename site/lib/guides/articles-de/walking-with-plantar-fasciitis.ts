@@ -67,7 +67,7 @@ export const WALKING_PF_DE: Guide = {
       },
       after: [
         'Am wichtigsten ist der Blick am Morgen. Schmerz bei den ersten Schritten ist das klassische Zeichen der Plantarfasziitis und das deutlichste Signal dafür, wie dein Fuß den gestrigen Tag verkraftet hat. Unter [Fersenschmerzen morgens](/de/fersenschmerzen-morgens/) geht es um dieses Muster und um die Dehnungen, die du vor dem Aufstehen machst.',
-        'Stechender Schmerz, durch den du hinkst, Schmerz, der mit jedem Spaziergang zunimmt und in Ruhe nicht nachlässt, oder Schmerz in der Nacht fallen nicht unter diese Regel. Hinken kann außerdem Knie, Hüfte und Rücken anders belasten. Sieh dir die Liste am Ende dieser Seite an.',
+        'Stechender Schmerz, durch den du hinkst, Schmerz, der mit jedem Spaziergang zunimmt und in Ruhe nicht nachlässt, oder Schmerz in der Nacht fallen nicht unter diese Regel. Hinken kann außerdem [Knie, Hüfte und Rücken anders belasten](/de/plantarfasziitis-knieschmerzen/). Sieh dir die Liste am Ende dieser Seite an.',
       ],
       sourceNote: 'Silbernagel 2007: 19\u00A0Personen pro Gruppe. Der VISA-A-S-Wert stieg nach zwölf Monaten in der Aktivitätsgruppe von 57 auf 85 und in der Ruhegruppe von 57 auf 91, ohne signifikanten Unterschied in der Geschwindigkeit der Verbesserung.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -243,7 +243,7 @@ export const WALKING_PF_DE: Guide = {
     {
       q: 'Kann Gehen eine Plantarfasziitis verschlimmern?',
       cites: [CITE.guideline],
-      a: 'Ja, wenn du deutlich mehr machst, als deine Ferse gewohnt ist. Die Leitlinie von 2023 nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis. Ein plötzlicher langer Spaziergang, eine neue hügelige Strecke oder ein Tag auf harten Böden kann die Beschwerden verstärken. Kleinere, gleichmäßige Steigerungen sind schonender für die Ferse.',
+      a: 'Ja, wenn du deutlich mehr machst, als deine Ferse gewohnt ist. Die Leitlinie von 2023 nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis. Ein plötzlicher langer Spaziergang, eine neue hügelige Strecke oder ein Tag auf harten Böden kann die Beschwerden verstärken und [einen Schub auslösen](/de/plantarfasziitis-schub/). Kleinere, gleichmäßige Steigerungen sind schonender für die Ferse.',
     },
     {
       q: 'Sollte ich ganz aufhören zu gehen, damit sich die Plantarfasziitis beruhigt?',
