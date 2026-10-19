@@ -41,7 +41,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
       figure: { id: 'heel-side', caption: 'O esporão, quando existe, se forma na parte de baixo do osso do calcanhar, perto de onde a fáscia plantar se prende.', alt: 'Vista lateral interna de um pé com a pele transparente, mostrando o osso do calcanhar, a fáscia plantar sob o arco e uma área vermelha sob o calcanhar onde a dor costuma começar.' },
       paragraphs: [
         '**Esporão no calcanhar e fascite plantar não são a mesma coisa.** A fascite plantar é um problema de tecido mole: a fáscia plantar, a faixa grossa que vai do osso do calcanhar até os dedos, fica irritada, normalmente onde se prende ao osso. O esporão é um crescimento de osso na parte de baixo do osso do calcanhar (o calcâneo). Os dois muitas vezes existem juntos, mas cada um pode aparecer sem o outro.',
-        'A fascite plantar causa a dor forte, em pontada, que as pessoas descrevem embaixo do calcanhar, principalmente nos primeiros passos da manhã ou depois de ficar sentado. A diretriz de 2023 para dor no calcanhar a define como uma dor “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. O esporão, por outro lado, é um achado estrutural no raio-X. Ele pode ou não causar sintomas próprios.',
+        'A fascite plantar causa a dor forte, em pontada, que as pessoas descrevem embaixo do calcanhar, principalmente nos primeiros passos da manhã ou depois de ficar sentado. Dor na parte de trás do calcanhar é outro problema: veja [fascite plantar ou tendinite de Aquiles](/pt/fascite-plantar-ou-tendinite-de-aquiles/). A diretriz de 2023 para dor no calcanhar a define como uma dor “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. O esporão, por outro lado, é um achado estrutural no raio-X. Ele pode ou não causar sintomas próprios.',
         'A confusão é compreensível. Durante décadas, achava-se que o esporão era a causa da dor embaixo do calcanhar. Essa visão foi em grande parte substituída por evidências mostrando que o esporão é comum em pessoas sem dor, e que muitas pessoas com fascite plantar não têm esporão nenhum.',
       ],
       cites: [CITE.ehrmannSpur, CITE.guideline],
@@ -103,7 +103,7 @@ export const PF_VS_HEEL_SPUR_PT: Guide = {
           list: [
             'Quando a dor não segue o padrão típico da fascite plantar.',
             'Quando ela não melhorou depois de várias semanas de tratamento conservador.',
-            'Quando um profissional de saúde suspeita de outra coisa, como uma fratura por estresse, um problema de nervo ou uma ruptura da fáscia plantar.',
+            'Quando um profissional de saúde suspeita de outra coisa, como uma [fratura por estresse](/pt/fascite-plantar-ou-fratura-por-estresse/), um problema de nervo ou uma ruptura da fáscia plantar.',
           ],
         },
         'O ultrassom consegue medir a espessura da fáscia plantar (uma medida acima de 4\u00A0mm costuma ser considerada espessada), e a ressonância magnética mostra detalhes do tecido mole que o raio-X não mostra.',

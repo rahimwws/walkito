@@ -39,7 +39,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
       h2: '¿Qué más causa dolor de talón en la mañana?',
       keyFact: 'En una cohorte de 174\u00A0personas con fascitis plantar seguidas en promedio 9,7\u00A0años, tener dolor en los dos talones predijo un peor pronóstico a largo plazo, y los autores señalaron que podría reflejar una enfermedad inflamatoria sistémica no detectada (Hansen y colegas, 2018).',
       paragraphs: [
-        'La fascitis plantar es la causa más común del dolor de talón por la mañana, pero no es la única. Dónde está el dolor y cómo se comporta ayudan a distinguirlas:',
+        'La fascitis plantar es la causa más común del dolor de talón por la mañana, pero [no es la única](/es/dolor-de-talon-que-no-es-fascitis/). Dónde está el dolor y cómo se comporta ayudan a distinguirlas:',
         {
           list: [
         '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles se pone rígido durante la noche igual que la fascia plantar, así que la [rigidez en los primeros pasos es común](/es/fascitis-plantar-o-tendinitis-de-aquiles/). Suele mejorar al caminar y después empeora otra vez con la actividad larga. Si el dolor está detrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
@@ -124,7 +124,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     {
       h2: '¿Cómo te muestra el dolor de la mañana si vas mejorando?',
       paragraphs: [
-        'El dolor de la mañana es la señal diaria más clara de cómo está el pie. Una carrera puede sentirse bien pero dejar la fascia sobrecargada, y no lo sabrás hasta la mañana siguiente. Un turno largo de pie puede parecer soportable, pero la mañana siguiente te dice si fue demasiado. El patrón es sencillo: si tus primeros pasos de la mañana siguiente son peores de lo normal, el día anterior le pidió al pie más de lo que podía aguantar.',
+        'El dolor de la mañana es la señal diaria más clara de cómo está el pie. Una carrera puede sentirse bien pero dejar la fascia sobrecargada, y no lo sabrás hasta la mañana siguiente. Un turno largo de pie puede parecer soportable, pero la mañana siguiente te dice si fue demasiado. El patrón es sencillo: si tus primeros pasos de la mañana siguiente son [peores de lo normal](/es/brote-de-fascitis-plantar/), el día anterior le pidió al pie más de lo que podía aguantar.',
         'Por eso una calificación diaria del dolor de la mañana, de 0 a 10, es más útil que revisar el dolor durante el día. El dolor del día sube y baja con la actividad, la postura y los zapatos. El dolor de la mañana mide lo mismo, de la misma forma, más o menos a la misma hora cada día. Cuando el número baja con las semanas, el pie está ganando terreno. Cuando se dispara, algo en los últimos uno o dos días fue demasiado.',
         'Walkito te pide tu dolor de la mañana antes de cada sesión:',
         {

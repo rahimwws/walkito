@@ -48,7 +48,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       h2: 'Pode ser uma fratura por estresse do calcâneo?',
       paragraphs: [
         'Uma fratura por estresse do calcâneo, uma trinca fina no osso do calcanhar causada por carga repetida, pode provocar uma dor funda que lateja à noite. Ao contrário da fascite plantar, a dor normalmente piora com a atividade e não melhora com o aquecimento. Muitas vezes vem depois de um aumento repentino de corrida, caminhada ou tempo em pé em superfícies duras.',
-        'O “teste de compressão”, apertar os dois lados do osso do calcanhar ao mesmo tempo, é o sinal clínico clássico. **Dor ao apertar é incomum na fascite plantar e comum nas fraturas por estresse.** O raio-X simples muitas vezes não mostra fraturas por estresse no início. Normalmente é preciso ressonância magnética ou cintilografia óssea para confirmar.',
+        'O “teste de compressão”, apertar os dois lados do osso do calcanhar ao mesmo tempo, é o sinal clínico clássico. [Fascite plantar ou fratura por estresse](/pt/fascite-plantar-ou-fratura-por-estresse/) explica o que ele pode e o que não pode mostrar. **Dor ao apertar é incomum na fascite plantar e comum nas fraturas por estresse.** O raio-X simples muitas vezes não mostra fraturas por estresse no início. Normalmente é preciso ressonância magnética ou cintilografia óssea para confirmar.',
         'Uma revisão de 2011 na American Family Physician observou que as fraturas por estresse do calcâneo causam uma dor que piora aos poucos depois de um aumento de atividade ou de uma troca para superfícies mais duras. Dor à noite e em repouso estavam entre as características que diferenciam a fratura por estresse da fascite.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],

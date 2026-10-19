@@ -59,7 +59,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
         'La guía menciona otros factores de riesgo:',
         {
           list: [
-            'Tener entre 40 y 60\u00A0años.',
+            'Tener entre 40 y 60\u00A0años, la edad en que el [dolor de talón llega a su pico en las mujeres, alrededor de la menopausia](/es/fascitis-plantar-menopausia/).',
             'Correr o hacer actividades con saltos.',
             'Trabajos en los que pasas mucho tiempo de pie.',
           ],
@@ -92,7 +92,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
           list: [
             'Si el patrón no encaja.',
             'Si los síntomas no mejoran después de varias semanas de cuidados conservadores.',
-            'Si hay que descartar otro diagnóstico (por ejemplo, una fractura por estrés o un nervio atrapado).',
+            'Si hay que descartar otro diagnóstico (por ejemplo, una fractura por estrés o un nervio atrapado). Mira [dolor de talón que no es fascitis plantar](/es/dolor-de-talon-que-no-es-fascitis/).',
           ],
         },
         'El ultrasonido y la resonancia magnética pueden mostrar una fascia engrosada, pero una fascia engrosada en un estudio, sin el patrón de síntomas que la acompaña, no es fascitis plantar.',
@@ -252,7 +252,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       q: '¿Cuándo debo ir al médico por dolor de talón?',
-      a: 'Consulta a un profesional de la salud si el dolor empezó después de una lesión, si no puedes apoyar el pie, si te duelen los dos talones y tienes otras articulaciones rígidas, si hay entumecimiento u hormigueo, si el talón está rojo o caliente, si te despierta por la noche, o si no mejora después de varios meses de estiramientos y trabajo de pantorrilla. Estos patrones pueden apuntar a otra afección.',
+      a: 'Consulta a un profesional de la salud si el dolor empezó después de una lesión, si no puedes apoyar el pie, si te duelen los dos talones y tienes otras articulaciones rígidas, si hay entumecimiento u hormigueo, si el talón está rojo o caliente, si te despierta por la noche, o si [no mejora después de varios meses](/es/fascitis-plantar-no-mejora/) de estiramientos y trabajo de pantorrilla. Estos patrones pueden apuntar a otra afección.',
     },
     {
       q: '¿Por qué tengo fascitis plantar solo en un pie?',

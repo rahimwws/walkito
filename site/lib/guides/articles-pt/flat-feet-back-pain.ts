@@ -197,7 +197,7 @@ export const FLAT_FEET_BACK_PAIN_PT: Guide = {
         },
         'Uma diretriz internacional para profissionais de saúde lista os sinais de alerta que eles investigam, e eles estão na lista no fim desta página.',
         'Para as costas, espere perguntas sobre como a dor começou, o que alivia e se ela desce pela perna. O exame normalmente avalia como as costas se movem, além da força, dos reflexos e da sensibilidade nas pernas e nos pés. Exames de imagem normalmente não são necessários, a não ser que algo aponte para uma causa grave.',
-        'Para os pés, o profissional verifica se o pé chato é flexível (o arco volta quando você sobe na ponta dos pés ou tira o pé do chão) ou rígido (continua plano).',
+        'Para os pés, o profissional verifica se o pé chato é flexível (o arco volta quando você sobe na ponta dos pés ou tira o pé do chão) ou rígido (continua plano). Você pode fazer as mesmas [verificações em casa](/pt/teste-pe-chato/).',
         'Um pé chato rígido, ou um arco que caiu na vida adulta com dor na parte de dentro do tornozelo, precisa de uma avaliação própria. O segundo caso muitas vezes é um tendão que está enfraquecendo, assunto de [disfunção do tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/). O profissional também pode observar você caminhando para ver o quanto o seu pé vira para dentro.',
         'Problemas nas costas também podem causar sintomas no pé. Um nervo comprimido na lombar pode trazer dormência, formigamento ou fraqueza no pé, e um pé fraco pode parecer um problema do pé quando a causa está mais acima.',
       ],

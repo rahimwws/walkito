@@ -48,7 +48,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
       keyFact: 'Em um ensaio com 52\u00A0pessoas com pé chato flexível, seis semanas de pé curto, exercícios de tornozelo, quadril e alongamentos melhoraram duas medidas do formato do arco mais do que em um grupo controle (Brijwasi e Borkar, 2023).',
       paragraphs: [
         'Um pé chato flexível é aquele em que o arco abaixa com o seu peso, mas volta quando o pé sai do chão. A maioria dos pés chatos é desse tipo. Um pé chato rígido continua plano, esteja você apoiado nele ou não.',
-        'Um teste rápido: sente-se e olhe a parte de dentro do pé. Se você vê um arco, fique em pé sobre os dois pés. Se o arco some quando você fica em pé, mas estava lá quando você estava sentado, o pé chato é flexível. Outro jeito: suba na ponta dos pés. Se o arco aparece quando você sobe, ele é flexível.',
+        '[Um teste rápido](/pt/teste-pe-chato/): sente-se e olhe a parte de dentro do pé. Se você vê um arco, fique em pé sobre os dois pés. Se o arco some quando você fica em pé, mas estava lá quando você estava sentado, o pé chato é flexível. Outro jeito: suba na ponta dos pés. Se o arco aparece quando você sobe, ele é flexível.',
         '**A diferença importa porque o exercício pode influenciar um arco flexível.** Em um ensaio com 52\u00A0pessoas com pé chato flexível, seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudaram duas medidas do formato do arco mais do que em um grupo controle.',
         'Um pé chato rígido é estrutural (muitas vezes por uma coalizão tarsal, uma ponte de osso entre ossos do pé), e o exercício não vai mudar o formato dele. Um pé chato rígido que causa dor normalmente precisa da avaliação de um profissional de saúde.',
       ],

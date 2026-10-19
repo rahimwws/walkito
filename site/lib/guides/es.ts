@@ -446,7 +446,7 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: '¿Qué ejercicios debes evitar con fascitis plantar?',
       paragraphs: [
-        'Evita la actividad de alto impacto que dispare la carga sobre el talón mientras el dolor esté activo, y evita caminar descalzo en pisos duros a primera hora de la mañana.',
+        'Evita la actividad de alto impacto que dispare la carga sobre el talón [mientras el dolor esté activo](/es/brote-de-fascitis-plantar/), y evita caminar descalzo en pisos duros a primera hora de la mañana.',
         'Saltar, esprintar y los pliométricos ponen una fuerza pico repentina sobre la fascia plantar. Cuando el tejido está irritado, ese pico puede hacerlo retroceder. La guía de 2023 recomienda ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día, un consejo con grado E. No prohíbe ejercicios específicos. **La pregunta es si la carga es más de lo que el tejido puede recuperar de un día para otro.**',
         'Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación. Hasta que los síntomas se calmen, usa un zapato bien acolchado a todas horas, incluso dentro de casa.',
         'Dos cosas más a tener en cuenta:',

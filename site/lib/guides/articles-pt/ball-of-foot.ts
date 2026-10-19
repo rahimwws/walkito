@@ -42,7 +42,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     {
       h2: 'O que causa dor na planta do pé?',
       paragraphs: [
-        '**Metatarsalgia** é o nome mais comum. Descreve dor e inflamação em volta de uma ou mais cabeças dos metatarsos, normalmente a segunda e a terceira. Excesso de uso, um segundo metatarso longo, [arco alto](/pt/pe-cavo-exercicios/) e [panturrilhas tensas](/pt/panturrilha-tensa/) podem contribuir.',
+        '**Metatarsalgia** é o nome mais comum. Descreve dor e inflamação em volta de uma ou mais cabeças dos metatarsos, normalmente a segunda e a terceira. Excesso de uso, um segundo metatarso longo, [arco alto](/pt/pe-cavo-exercicios/) e [panturrilhas tensas](/pt/panturrilha-tensa/) podem contribuir. Se a dor começa em trilhas longas, veja [dor nos pés depois de trilha](/pt/dor-nos-pes-trilha/).',
         '**Neuroma de Morton** é um espessamento do nervo entre as cabeças dos metatarsos, na maioria das vezes entre o terceiro e o quarto dedos. Ele causa queimação, formigamento ou dormência, e não só uma dor. Sapatos apertados ou de salto alto comprimem o nervo e pioram o quadro.',
         '**Sesamoidite** é a inflamação dos dois ossinhos que ficam dentro do tendão embaixo da articulação do dedão. A dor fica bem embaixo do dedão, e não embaixo do meio da parte da frente do pé.',
         '**Fratura por estresse do metatarso** é uma pequena trinca em um dos metatarsos, normalmente o segundo ou o terceiro. A dor é localizada, muitas vezes piora ao longo do dia e pode doer à noite. Inchaço no peito do pé é comum. Esta precisa de exame de imagem e repouso.',

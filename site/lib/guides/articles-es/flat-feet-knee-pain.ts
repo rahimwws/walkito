@@ -40,7 +40,7 @@ export const FLAT_FEET_KNEE_PAIN_ES: Guide = {
           ],
         },
         'Un segundo estudio se fijó en personas jóvenes. Kosashvili y colegas revisaron a 97\u00A0279 reclutas militares jóvenes en 2008. Se encontró dolor en la parte delantera de la rodilla en el 7\u00A0% de los reclutas con pie plano moderado o severo, y en el 4\u00A0% de los que tenían pie plano leve o arcos normales. El pie plano leve, que era el 74\u00A0% del grupo con pie plano, no tuvo un riesgo mayor.',
-        'Los dos estudios midieron a las personas una sola vez, así que no pueden decir si el pie vino primero. Los autores de Framingham también señalaron que una huella quizá no distinga un pie plano de uno ancho y carnoso, y el peso corporal afecta la rodilla por sí solo.',
+        'Los dos estudios midieron a las personas una sola vez, así que no pueden decir si el pie vino primero. Si el dolor de talón vino primero, mira si [la fascitis plantar puede causar dolor de rodilla](/es/fascitis-plantar-dolor-de-rodilla/). Los autores de Framingham también señalaron que una huella quizá no distinga un pie plano de uno ancho y carnoso, y el peso corporal afecta la rodilla por sí solo.',
       ],
       sourceNote:
         'Gross 2011: estudio transversal, razón de probabilidades para dolor de rodilla de 1,3 (IC del 95\u00A0%: 1,1 a 1,6), daño del cartílago tibiofemoral medial de 1,4 (IC del 95\u00A0%: 1,1 a 1,8), ajustado por edad, sexo e índice de masa corporal. Kosashvili 2008: revisión retrospectiva, pie plano calificado por un ortopedista, dolor en la parte delantera de la rodilla atribuido a la articulación patelofemoral.',

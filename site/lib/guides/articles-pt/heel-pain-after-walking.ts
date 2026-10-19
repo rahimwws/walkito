@@ -27,7 +27,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
   ],
   takeaways: [
     'A diretriz de 2023 para dor no calcanhar descreve a dor da fascite plantar como “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”, mas também cita a dor que piora com atividade prolongada com apoio do peso como uma característica principal (Koc e colegas, 2023).',
-    'Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo (o quanto o pé sobe em direção à canela) foi o fator de risco independente mais forte, à frente de um índice de massa corporal acima de 30 e de ficar em pé a maior parte do dia de trabalho (Riddle e colegas, 2003).',
+    'Em um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a menor dorsiflexão do tornozelo (o quanto o pé sobe em direção à canela) foi o fator de risco independente mais forte, à frente de um [índice de massa corporal acima de 30](/pt/peso-e-fascite-plantar/) e de ficar em pé a maior parte do dia de trabalho (Riddle e colegas, 2003).',
     'A diretriz dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força um **B** (Koc e colegas, 2023).',
     'Cerca de 90% das pessoas com fascite plantar melhoram com cuidados sem cirurgia, como alongamento, trabalho de panturrilha e controle da carga (Latt e colegas, 2020).',
     'Dor no calcanhar depois de andar que aumenta a cada saída e não alivia com repouso pode indicar uma fratura por estresse, e não fascite plantar. Apertar as laterais do calcanhar é um dos sinais clínicos.',
@@ -50,8 +50,8 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
         {
           list: [
         '**Afinamento do coxim gorduroso do calcanhar.** O coxim gorduroso embaixo do osso do calcanhar amortece cada passo. Quando ele afina ou se desloca, o osso recebe mais impacto diretamente. Uma revisão de escopo de 2022 observou que a dor do coxim gorduroso costuma ser uma dor funda no centro do calcanhar, pior em superfícies duras e ao andar descalço (Chang e colegas, 2022). A dor da fascite plantar costuma ficar na parte de dentro e da frente do calcanhar. A dor do coxim gorduroso fica bem embaixo, no centro. Se andar descalço em piso frio ou concreto é claramente pior do que andar com um tênis amortecido, vale considerar o afinamento do coxim gorduroso. Veja [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/) para saber mais.',
-        '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. O tendão de Aquiles pode ficar dolorido depois de uma caminhada longa, principalmente em subida. Se a sua dor é na parte de trás do calcanhar e não embaixo dele, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
-        '**Fratura por estresse do calcâneo.** Dor que aparece aos poucos depois de um aumento repentino na distância ou na intensidade das caminhadas. Ao contrário da fascite plantar, a dor da fratura por estresse costuma aumentar com a atividade e não aliviar muito com repouso. Apertar as laterais do calcanhar pode reproduzir a dor. Se esse é o seu padrão, procure um profissional de saúde antes de exercitar o pé.',
+        '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. O tendão de Aquiles pode ficar dolorido depois de uma caminhada longa, principalmente em subida. Para trilhas com subidas e descidas longas, veja [dor nos pés depois de trilha](/pt/dor-nos-pes-trilha/). Se a sua dor é na parte de trás do calcanhar e não embaixo dele, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
+        '**Fratura por estresse do calcâneo.** Dor que aparece aos poucos depois de um aumento repentino na distância ou na intensidade das caminhadas. Ao contrário da fascite plantar, a dor da fratura por estresse costuma aumentar com a atividade e não aliviar muito com repouso. Apertar as laterais do calcanhar pode reproduzir a dor. Se esse é o seu padrão, procure um profissional de saúde antes de exercitar o pé. [Fascite plantar ou fratura por estresse](/pt/fascite-plantar-ou-fratura-por-estresse/) compara as duas lado a lado.',
         '**Dor irradiada da lombar ou nervo comprimido.** Dor no calcanhar que vem com dormência, formigamento ou queimação pode indicar um problema de nervo, e não de carga no tecido. Isso é motivo para procurar primeiro um profissional de saúde.',
           ],
         },
@@ -156,7 +156,7 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
     {
       h2: 'Quanto andar quando o calcanhar dói?',
       paragraphs: [
-        'A meta não é parar de andar. É descobrir a distância que o seu calcanhar aguenta sem piorar na manhã seguinte e, a partir daí, ir aumentando.',
+        'A meta não é parar de andar. É descobrir a distância que o seu calcanhar aguenta sem piorar na manhã seguinte e, a partir daí, ir aumentando. [Quanto você pode caminhar com fascite plantar](/pt/caminhar-com-fascite-plantar/) traz uma regra simples baseada na dor e um jeito de voltar a aumentar.',
         'Um jeito prático:',
         {
           list: [

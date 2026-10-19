@@ -46,7 +46,7 @@ export const PTTD_PT: Guide = {
             '**Estágio IV** acrescenta o envolvimento da articulação do tornozelo. O tornozelo inclina em valgo, ou seja, fica tombado para fora. É o estágio mais avançado e costuma exigir cirurgia.',
           ],
         },
-        '**A maioria das pessoas que procura exercícios para DTTP está no estágio I ou II.** Se você não tem certeza de qual estágio é o seu, um profissional de saúde consegue dizer com um exame físico e, se precisar, exames de imagem. O teste de elevação do calcanhar em uma perna, em que você tenta subir na ponta de um pé só, é uma triagem rápida: dificuldade para subir, dor durante a subida ou o calcanhar que não inclina para dentro lá em cima sugerem fraqueza do tibial posterior.',
+        '**A maioria das pessoas que procura exercícios para DTTP está no estágio I ou II.** Se você não tem certeza de qual estágio é o seu, um profissional de saúde consegue dizer com um exame físico e, se precisar, exames de imagem. O teste de elevação do calcanhar em uma perna, em que você tenta subir na ponta de um pé só, é uma [triagem rápida](/pt/teste-pe-chato/): dificuldade para subir, dor durante a subida ou o calcanhar que não inclina para dentro lá em cima sugerem fraqueza do tibial posterior.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_ES: Guide = {
         '**El embarazo puede bajar un poco el arco, y el cambio puede durar después del parto.** En un estudio de 2013, a 49\u00A0mujeres les midieron los pies en el primer trimestre y otra vez unos cuatro meses y medio después de dar a luz. La altura y la rigidez del arco bajaron, y el largo del pie y la caída del arco aumentaron.',
         'El primer embarazo explicó la mayor parte del cambio. En las mamás primerizas, el largo del pie aumentó alrededor de 1,4\u00A0milímetros y la caída del arco alrededor de 1,0\u00A0milímetro en promedio.',
         'Dos cosas ponen esto en proporción. Los autores dijeron que los cambios promedio fueron pequeños, y el estudio no encontró cambios en una medida de cómo se iba el pie hacia adentro al caminar. «Duradero» en este estudio quiere decir que seguía ahí en la visita de seguimiento unos meses después del parto. A nadie se le siguió durante años.',
-        'Si tu talla de zapato subió después de un embarazo y tus pies se sienten bien, ese cambio es común. Si te duelen los talones durante el embarazo, mira [fascitis plantar en el embarazo](/es/fascitis-plantar-embarazo/). Si un arco sigue bajando, o la parte interna del tobillo empieza a doler, haz que lo revisen.',
+        'Si tu talla de zapato subió después de un embarazo y tus pies se sienten bien, ese cambio es común. Si te duelen los talones durante el embarazo, mira [fascitis plantar en el embarazo](/es/fascitis-plantar-embarazo/), y alrededor de la menopausia, [fascitis plantar y menopausia](/es/fascitis-plantar-menopausia/). Si un arco sigue bajando, o la parte interna del tobillo empieza a doler, haz que lo revisen.',
       ],
       cites: [CITE.segalPregnancy],
     },

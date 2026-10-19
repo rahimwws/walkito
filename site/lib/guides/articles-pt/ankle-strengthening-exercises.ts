@@ -73,7 +73,7 @@ export const ANKLE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Os exercícios para fortalecer o tornozelo, em ordem',
       paragraphs: [
-        'Comece pela etapa 1 se você torceu o tornozelo há pouco tempo ou se ele parece fraco ao andar em terreno irregular. Se a elevação de calcanhar com os dois pés já é fácil, você pode começar pela etapa 2 ou 3. Pare qualquer exercício por hoje se a dor chegar a **6/10**, ou se o tornozelo estiver mais inchado ou dolorido na manhã seguinte.',
+        'Comece pela etapa 1 se você torceu o tornozelo há pouco tempo ou se ele parece fraco ao andar em terreno irregular. Se a elevação de calcanhar com os dois pés já é fácil, você pode começar pela etapa 2 ou 3. Pare qualquer exercício por hoje se a dor chegar a **6/10**, ou se o tornozelo estiver mais inchado ou dolorido na manhã seguinte. Se o que dói nas trilhas são os seus pés, veja [dor nos pés depois de trilha](/pt/dor-nos-pes-trilha/).',
         'As doses abaixo são pontos de partida modestos. Os ensaios desta página usaram programas próprios, descritos em cada seção.',
       ],
       exercises: [

@@ -181,7 +181,7 @@ export const TOE_STRENGTHENING_PT: Guide = {
     {
       h2: 'Os exercícios para fortalecer os dedos dos pés funcionam mesmo?',
       keyFact:
-        'Num ensaio com 118\u00A0corredores amadores, quem não fez o programa para os pés teve 2,42\u00A0vezes mais chance de se lesionar ao longo de um ano (Taddei e colegas, 2020).',
+        'Num ensaio com 118\u00A0corredores amadores, quem não fez o programa para os pés teve 2,42\u00A0vezes mais chance de se lesionar ao longo de um ano (Taddei e colegas, 2020). A rotina para corredores está em [exercícios para os pés de corredores](/pt/exercicios-para-os-pes-corredores/).',
       paragraphs: [
         'Os exercícios para os dedos podem aumentar a força dos dedos, mas **só quando o trabalho fica mais difícil com o tempo.**',
         'Num ensaio de 2016, 85\u00A0adultos de 60 a 90\u00A0anos foram divididos entre um programa supervisionado, com resistência que aumentava ao longo de três meses, e um programa de exercícios em casa. O grupo supervisionado ganhou até 36% de força nos dedos e conseguiu ficar mais tempo em uma perna. O grupo de casa, e um grupo de controle separado de 32\u00A0pessoas, não mostraram mudança na força dos dedos. Os autores disseram que ainda faltava um ensaio que contasse as quedas.',
