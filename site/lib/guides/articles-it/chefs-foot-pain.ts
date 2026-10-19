@@ -54,7 +54,7 @@ export const CHEFS_IT: Guide = {
         'Altri quadri fanno pensare ad altro:',
         {
           list: [
-            'bruciore sotto l’avampiede a metà servizio: vedi [dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/)',
+            'bruciore sotto l’avampiede a metà servizio: vedi [dolore sotto l’avampiede](/it/metatarsalgia-dolore-pianta-piede/)',
             'un dolore profondo, come un livido, al centro del tallone, che peggiora quanto più a lungo stai in piedi su un pavimento duro: vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/)',
             'archi che fanno male o sembrano piatti a fine turno: vedi [dolore all’arco plantare](/it/dolore-arco-plantare/)',
           ],

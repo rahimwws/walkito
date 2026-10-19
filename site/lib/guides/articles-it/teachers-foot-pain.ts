@@ -24,7 +24,7 @@ export const TEACHERS_IT: Guide = {
     'Perché una giornata a scuola fa male ai piedi, esercizi da 3\u00A0minuti tra una lezione e l’altra, scarpe e pavimenti, e quando è fascite plantare.',
   h1: 'Dolore ai piedi negli insegnanti: cosa fa ai piedi una giornata a scuola, e cosa aiuta',
   lede:
-    'Il dolore ai piedi degli insegnanti nasce soprattutto dalle ore passate in piedi e a camminare per l’aula su pavimenti duri, e le opzioni con le prove migliori, gli allungamenti del polpaccio e della fascia plantare più il lavoro di forza per il polpaccio, richiedono da 3 a 5\u00A0minuti e stanno tra una lezione e l’altra. La linea guida del 2023 sul dolore al tallone dà a quegli allungamenti una **A**, il suo grado più alto, e al lavoro di forza una **B** (Koc e colleghi, 2023). Le ricerche sui piedi degli insegnanti sono poche: in una revisione del 2024, 27\u00A0studi riportavano dolore nella zona della caviglia, per lo più contato insieme al piede, e il dato complessivo era il 30% degli insegnanti (Tahernejad e colleghi, 2024).',
+    'Il dolore ai piedi degli insegnanti nasce soprattutto dalle ore passate in piedi e a camminare per l’aula su pavimenti duri, e le opzioni con le prove migliori, gli allungamenti del polpaccio e della fascia plantare più il lavoro di forza per il polpaccio, richiedono da 3 a 5\u00A0minuti e si fanno tra una lezione e l’altra. La linea guida del 2023 sul dolore al tallone dà a quegli allungamenti una **A**, il suo grado più alto, e al lavoro di forza una **B** (Koc e colleghi, 2023). Le ricerche sui piedi degli insegnanti sono poche: in una revisione del 2024, 27\u00A0studi riportavano dolore nella zona della caviglia, per lo più contato insieme al piede, e il dato complessivo era il 30% degli insegnanti (Tahernejad e colleghi, 2024).',
   intro: [
     'Questa pagina parla della giornata a scuola: in piedi alla lavagna, a camminare tra i banchi, la sorveglianza in corridoio e in cortile, e cosa puoi fare al cambio dell’ora o dopo l’ultima campanella. Se stai in piedi tutto il giorno per un altro lavoro, la guida generale è [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/), e [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/) parla dei lunghi turni in ospedale. Se il tallone fa più male ai primi passi del mattino, vai a [fascite plantare](/it/fascite-plantare/).',
   ],
@@ -59,10 +59,10 @@ export const TEACHERS_IT: Guide = {
       cites: [CITE.tahernejadTeachers, CITE.erickTeachers, CITE.alqahtaniTeachers],
     },
     {
-      h2: 'Quali esercizi stanno tra una lezione e l’altra?',
+      h2: 'Quali esercizi si possono fare tra una lezione e l’altra?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone dà agli allungamenti della fascia plantare e del polpaccio una A, il suo grado più alto, e al lavoro di forza una B (Koc e colleghi, 2023).',
       paragraphs: [
-        'Gli esercizi qui sotto vengono dalla linea guida sulla fascite plantare. Non sono stati testati negli insegnanti, ma lavorano sui tessuti che una giornata in piedi carica: il polpaccio, la fascia plantare e il tallone. Quasi tutti richiedono solo un muro o una cattedra, quindi stanno nel cambio dell’ora o in un’ora buca. Sono le dosi di partenza di Walkito, non una prescrizione. [Come sono scritte queste guide](/it/chi-siamo/).',
+        'Gli esercizi qui sotto vengono dalla linea guida sulla fascite plantare. Non sono stati testati negli insegnanti, ma lavorano sui tessuti che una giornata in piedi carica: il polpaccio, la fascia plantare e il tallone. Quasi tutti richiedono solo un muro o una cattedra, quindi si fanno al cambio dell’ora o in un’ora buca. Sono le dosi di partenza di Walkito, non una prescrizione. [Come sono scritte queste guide](/it/chi-siamo/).',
         'Gli allungamenti hanno il grado più alto della linea guida, **A**. Il lavoro di forza per il polpaccio ha una **B**. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi.',
       ],
       exercises: [
@@ -191,7 +191,7 @@ export const TEACHERS_IT: Guide = {
     {
       h2: 'Pavimenti e tappetini in aula fanno differenza?',
       paragraphs: [
-        'Quasi tutte le aule hanno pavimenti duri: piastrelle, linoleum o vinile sopra il cemento, o una moquette sottile. Nessuno studio ha misurato i pavimenti delle aule e i piedi degli insegnanti. La revisione del 2015 sul lavoro in piedi mette i tappetini tra le misure con qualche prova a favore per ridurre il fastidio, insieme alle scarpe e alla possibilità di alternare seduto e in piedi (Waters e Dick, 2015).',
+        'Quasi tutte le aule hanno pavimenti duri: piastrelle, vinile sopra il cemento, o una moquette sottile. Nessuno studio ha misurato i pavimenti delle aule e i piedi degli insegnanti. La revisione del 2015 sul lavoro in piedi mette i tappetini tra le misure con qualche prova a favore per ridurre il fastidio, insieme alle scarpe e alla possibilità di alternare seduto e in piedi (Waters e Dick, 2015).',
         'Un tappetino aiuta solo dove stai davvero in piedi. Se insegni da un punto fisso, come la lavagna, il proiettore o un bancone di laboratorio, lì vale la pena provare un tappetino antifatica. Se giri per l’aula, il tappetino sono le tue scarpe.',
         'Muoversi è l’altra metà. Gli studi sullo stare in piedi hanno trovato che il fastidio cresce con il tempo passato fermi in piedi (Coenen e colleghi, 2017). Camminare tra i banchi, sederti durante il lavoro in silenzio e spostare il peso da un piede all’altro spezzano il carico statico.',
         'A casa, se il tallone ti fa male, evita di camminare scalzo su pavimenti duri appena sveglio. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega perché contano i primi passi.',
@@ -277,7 +277,7 @@ export const TEACHERS_IT: Guide = {
     h2: 'Come trasformarlo in un piano',
     text: 'Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Se il tallone segue il quadro mattutino della fascite plantare, il primo obiettivo è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila.',
     more: [
-      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti, così una sessione sta prima della prima campanella o dopo l’ultima. Prima di ogni sessione dai un voto al dolore al tallone del mattino, e il piano si adatta. Walkito non fa diagnosi.',
+      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti, così una sessione ci sta prima della prima campanella o dopo l’ultima. Prima di ogni sessione dai un voto al dolore al tallone del mattino, e il piano si adatta. Walkito non fa diagnosi.',
     ],
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

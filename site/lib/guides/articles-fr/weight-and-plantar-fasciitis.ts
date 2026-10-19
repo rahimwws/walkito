@@ -23,7 +23,7 @@ export const WEIGHT_PF_FR: Guide = {
     'Le surpoids favorise-t-il la fasciite plantaire, et maigrir aide-t-il\u00A0? Ce que disent les études, le rôle de la charge et des exercices assis adaptés.',
   h1: 'Poids et fasciite plantaire\u00A0: ce que montre la recherche, et ce qui aide dès maintenant',
   lede:
-    'Un poids plus élevé est l’un des facteurs de risque les plus nets de la [fasciite plantaire](/fr/fasciite-plantaire/) chez les personnes qui ne sont pas sportives. Dans une revue de 51\u00A0études, un indice de masse corporelle (IMC) supérieur à 27 multipliait par 3,7 la cote (odds) de fasciite plantaire (van Leeuwen et coll., 2016). Savoir si perdre du poids soulage la douleur au talon est moins clair\u00A0: aucun essai randomisé ne l’a testé chez des personnes souffrant du talon. Les étirements et le renforcement les mieux notés par la recommandation de 2023 sont donc le point de départ, quel que soit votre poids.',
+    'Un poids plus élevé est l’un des facteurs de risque les plus nets de la [fasciite plantaire](/fr/fasciite-plantaire/) chez les personnes qui ne sont pas sportives. Dans une revue de 51\u00A0études, un indice de masse corporelle (IMC) supérieur à 27 multipliait par 3,7 la cote (odds) de fasciite plantaire (van Leeuwen et coll., 2016). La question de savoir si perdre du poids soulage la douleur au talon est moins tranchée\u00A0: aucun essai randomisé ne l’a testé chez des personnes souffrant du talon. Les étirements et le renforcement les mieux notés par la recommandation de 2023 sont donc le point de départ, quel que soit votre poids.',
   intro: [
     'Le poids est un facteur parmi d’autres, pas un verdict. Dans l’étude cas-témoins qui a relié un IMC supérieur à 30 à la fasciite plantaire, une cheville raide était un facteur bien plus fort (Riddle et coll., 2003). Des personnes de toutes les corpulences ont mal au talon, et des personnes de toutes les corpulences vont mieux. Cette page présente ce que les études ont trouvé, ce que l’on sait de la perte de poids, pourquoi la charge compte, et des exercices à faire assis ou avec un appui.',
   ],
@@ -71,7 +71,7 @@ export const WEIGHT_PF_FR: Guide = {
       paragraphs: [
         '**Le fascia plantaire est la bande sous le pied qui soutient la voûte, et il reçoit une charge à chaque pas.** Plus de poids corporel veut dire plus de charge par pas\u00A0: la même marche ou la même journée de travail demande donc plus au tissu. Le conseil de la recommandation pour la douleur au talon repose sur cette idée\u00A0: adapter la charge sur vos pieds au travail, pendant les loisirs et dans la vie quotidienne. Elle donne à ce conseil la note **E**, parce qu’il repose sur la théorie, pas sur des essais (Koc et coll., 2023).',
         'Perdre du poids diminue bien la pression sous le pied. Dans un essai sur 41\u00A0adultes dont l’IMC moyen était proche de 36, le groupe qui suivait un programme alimentaire a perdu 5,9\u00A0kg en trois mois, contre 1,9\u00A0kg dans le groupe de comparaison, et avait une pression maximale plus faible sous certaines zones du pied. La forme du pied et la façon de marcher n’ont pas changé (Song et coll., 2015). Cet essai n’a pas mesuré la douleur au talon.',
-        'La pression n’explique pas tout non plus. Dans une étude sur des personnes ayant mal aux pieds et en attente d’une chirurgie de l’obésité, la douleur a diminué après l’opération, mais la baisse de pression sous le pied n’était pas liée à la baisse de la douleur. L’humeur, si\u00A0: les personnes qui avaient plus de symptômes dépressifs déclaraient plus de douleur au pied, avant comme après (Walsh et coll., 2018). La douleur dépend de bien plus que de la mécanique, et c’est une raison de plus de ne pas vous en vouloir.',
+        'La pression n’explique pas tout non plus. Dans une étude sur des personnes ayant mal aux pieds et en attente d’une chirurgie de l’obésité, la douleur a diminué après l’opération, mais la baisse de pression sous le pied n’était pas liée à la baisse de la douleur. L’humeur, si\u00A0: les personnes qui avaient plus de symptômes dépressifs déclaraient plus de douleur au pied, avant comme après (Walsh et coll., 2018). La douleur ne dépend pas que de la mécanique, et c’est une raison de plus de ne pas vous en vouloir.',
       ],
       cites: [CITE.guideline, CITE.songWeightLoss, CITE.walshBariatric],
     },
@@ -88,11 +88,11 @@ export const WEIGHT_PF_FR: Guide = {
           ['Boules, 2018', '163\u00A0personnes atteintes de fasciite plantaire, après une chirurgie de l’obésité', 'Les symptômes au talon ont disparu chez 90\u00A0%, d’après les dossiers'],
           ['Walsh, 2018', '45\u00A0personnes ayant mal aux pieds\u00A0: 29 opérées, 16 en attente', 'La douleur au pied a diminué après l’opération'],
           ['Song, 2015', '41\u00A0adultes, programme alimentaire ou attente', 'Pression plus faible sous le pied\u00A0; douleur non mesurée'],
-          ['Yang, 2025', '92\u00A0personnes sous sémaglutide, parmi 2\u00A0902 ayant mal au talon', 'Douleur plus améliorée que chez les non-utilisateurs, étude non randomisée'],
+          ['Yang, 2025', '92\u00A0personnes sous sémaglutide, parmi 2\u00A0902 ayant mal au talon', 'Amélioration de la douleur plus nette que chez les non-utilisateurs, étude non randomisée'],
         ],
       },
       after: [
-        'La plus grande étude a examiné après coup les dossiers de 163\u00A0personnes atteintes de fasciite plantaire qui avaient eu une chirurgie de l’obésité. Leur IMC moyen est passé de 45 à environ 35, et chez 146 d’entre elles (90\u00A0%), les symptômes au talon ont disparu (Boules et coll., 2018). Il n’y avait pas de groupe de comparaison, et environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux de toute façon avec un traitement non chirurgical (Latt et coll., 2020)\u00A0: cette étude ne peut donc pas montrer ce que la perte de poids elle-même a apporté.',
+        'La plus grande étude a examiné rétrospectivement les dossiers de 163\u00A0personnes atteintes de fasciite plantaire qui avaient eu une chirurgie de l’obésité. Leur IMC moyen est passé de 45 à environ 35, et chez 146 d’entre elles (90\u00A0%), les symptômes au talon ont disparu (Boules et coll., 2018). Il n’y avait pas de groupe de comparaison, et environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux de toute façon avec un traitement non chirurgical (Latt et coll., 2020)\u00A0: cette étude ne peut donc pas montrer ce que la perte de poids elle-même a apporté.',
         'L’étude sur le sémaglutide a suivi des personnes souffrant du talon depuis longtemps. Les 92 qui prenaient ce médicament pour un diabète ou pour perdre du poids ont déclaré une amélioration plus nette que les autres, mais elles n’avaient pas été choisies au hasard, et les auteurs demandent un essai randomisé (Yang et coll., 2025). Les médicaments et la chirurgie de l’obésité sont des décisions à prendre avec votre médecin, pas quelque chose à commencer pour la seule douleur au talon.',
         'La recommandation ne demande pas aux soignants de prescrire une perte de poids contre la douleur au talon. Elle indique qu’ils peuvent donner des conseils d’exercice pour gagner ou garder une masse maigre saine, et vous orienter vers un suivi nutritionnel, avec la note **E** (Koc et coll., 2023).',
       ],
@@ -266,7 +266,7 @@ export const WEIGHT_PF_FR: Guide = {
     {
       q: 'Les semelles sont-elles plus importantes quand on est plus lourd\u00A0?',
       cites: [CITE.guideline],
-      a: 'Aucune étude ne l’a testé. Pour la douleur au talon en général, la recommandation de 2023 déconseille de compter sur les semelles seules (note B contre) et leur donne un C quand elles sont associées aux étirements et au renforcement. Des chaussures amorties sur les sols durs sont une option pratique, même si les essais ne les ont pas testées. Voyez [semelles ou exercices](/fr/semelles-ou-exercices/).',
+      a: 'Aucune étude ne l’a testé. Pour la douleur au talon en général, la recommandation de 2023 déconseille de compter sur les semelles seules (note B contre) et leur donne un C quand elles sont associées aux étirements et au renforcement. Des chaussures amorties sur les sols durs sont une option pratique, même si les essais ne les ont pas testées. Voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
     },
   ],
   redFlags: {
@@ -278,7 +278,7 @@ export const WEIGHT_PF_FR: Guide = {
       'la douleur est pire la nuit ou au repos, ou s’accompagne de brûlures ou d’engourdissement',
       'presser les côtés du talon fait mal, ou la douleur ne cesse d’augmenter avec l’activité (possible fracture de fatigue)',
       'un mollet est douloureux et gonflé (possible caillot sanguin)\u00A0: consultez le jour même',
-      'les deux talons font mal en même temps que d’autres articulations, ou vous avez une raideur ailleurs',
+      'les deux talons font mal et vous avez aussi des douleurs ou une raideur dans d’autres articulations',
       'vous envisagez des médicaments ou une chirurgie pour perdre du poids\u00A0: c’est une question à voir avec votre médecin',
     ],
   },

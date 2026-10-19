@@ -22,7 +22,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
     'Dolore ai piedi in magazzino e in negozio: cosa dicono gli studi su cemento, scarpe antinfortunistiche, tappetini e plantari, più esercizi da 3 minuti.',
   h1: 'Dolore ai piedi per chi lavora in negozio o in magazzino: cosa aiuta sui pavimenti duri',
   lede:
-    'In magazzino e in negozio i piedi fanno male perché ore in piedi e di cammino su pavimenti duri caricano tallone, arco e polpaccio con poco ammortizzamento sotto. Stare in piedi per gran parte della giornata di lavoro ha aumentato di 3,6\u00A0volte la probabilità di [fascite plantare](/it/fascite-plantare/) in uno studio (Riddle e colleghi, 2003). Gli allungamenti del polpaccio e della fascia plantare hanno il grado più alto, **A**, nella linea guida del 2023 sul dolore al tallone, e una versione breve sta in circa 3\u00A0minuti di pausa. Tappetini e plantari ammortizzati aiutano il comfort, ma le prove a loro favore sono più deboli (Speed e colleghi, 2018).',
+    'In magazzino e in negozio i piedi fanno male perché le ore passate in piedi e a camminare su pavimenti duri caricano tallone, arco e polpaccio con poco ammortizzamento sotto. Stare in piedi per gran parte della giornata di lavoro ha aumentato di 3,6\u00A0volte la probabilità di [fascite plantare](/it/fascite-plantare/) in uno studio (Riddle e colleghi, 2003). Gli allungamenti del polpaccio e della fascia plantare hanno il grado più alto, **A**, nella linea guida del 2023 sul dolore al tallone, e una versione breve si fa in circa 3\u00A0minuti di pausa. Tappetini e plantari ammortizzati aiutano il comfort, ma le prove a loro favore sono più deboli (Speed e colleghi, 2018).',
   intro: [
     'Questa pagina parla del lavoro in sé: pavimenti in cemento e piastrelle, scarpe antinfortunistiche, turni lunghi e pause brevi. Per il dolore da stazione eretta in generale, vedi [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). Se lavori in corsia d’ospedale, [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/) parla dei turni di 12\u00A0ore e dei turni a rotazione.',
   ],
@@ -71,7 +71,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
       h2: 'Le scarpe antinfortunistiche causano dolore ai piedi?',
       keyFact: 'In una revisione di 7\u00A0studi su lavoratori con calzature antinfortunistiche, i 4 che hanno misurato il dolore hanno trovato dolore ai piedi in una quota tra il 42,3% e il 60,8% dei lavoratori (Arceri e colleghi, 2024).',
       paragraphs: [
-        'Le scarpe antinfortunistiche proteggono i piedi, ma portano anche delle lamentele. Una revisione sistematica del 2024 ha trovato 7\u00A0studi su lavoratori con calzature antinfortunistiche. Tutti gli studi riportavano fastidio e dolore, e i 4 che hanno misurato il dolore hanno trovato dolore ai piedi in una quota tra il 42,3% e il 60,8% dei lavoratori. Le lamentele principali erano caldo, sudore, peso e suola rigida, soprattutto intorno alle dita e al puntale.',
+        'Le scarpe antinfortunistiche proteggono i piedi, ma non sono esenti da lamentele. Una revisione sistematica del 2024 ha trovato 7\u00A0studi su lavoratori con calzature antinfortunistiche. Tutti gli studi riportavano fastidio e dolore, e i 4 che hanno misurato il dolore hanno trovato dolore ai piedi in una quota tra il 42,3% e il 60,8% dei lavoratori. Le lamentele principali erano caldo, sudore, peso e suola rigida, soprattutto intorno alle dita e al puntale.',
         'In uno studio su 509\u00A0lavoratori di 12\u00A0aziende metalmeccaniche, tutti con calzature antinfortunistiche ogni giorno, l’81% aveva almeno un problema ai piedi. Le lamentele più comuni sulle scarpe erano caldo e umidità all’interno (42%), peso (27,5%) e calzata (22,9%) (Mancuso e colleghi, 2017).',
         'Sono indagini, quindi non possono dire che siano le scarpe a causare il dolore: ore su pavimenti duri farebbero male con qualsiasi scarpa. I suggerimenti della revisione sono pratici:',
         {
@@ -217,7 +217,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
       h2: 'Potrebbe essere fascite plantare o qualcos’altro?',
       paragraphs: [
         'Un dolore generico e i piedi stanchi dopo un turno lungo di solito passano con una notte di riposo. La fascite plantare ha un andamento più chiaro: dolore acuto vicino alla parte interna del tallone, peggiore ai primi passi del mattino o dopo essere stato seduto. Se ti ci ritrovi, vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) ed [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Circa il 90% delle persone con fascite plantare migliora con un trattamento non chirurgico, anche se possono servire da tre a sei mesi (Latt e colleghi, 2020).',
-        'Altri quadri indicano altro. Un dolore bruciante sotto l’avampiede fa pensare a un [dolore sotto la pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Un dolore lungo l’arco che peggiora durante il turno è trattato in [dolore all’arco plantare](/it/dolore-arco-plantare/). Il dolore sul dorso del piede può venire da scarpe allacciate troppo strette o che premono; vedi [dolore al dorso del piede](/it/dolore-dorso-piede/).',
+        'Altri quadri indicano altro. Un dolore bruciante sotto l’avampiede fa pensare alla [metatarsalgia](/it/metatarsalgia-dolore-pianta-piede/). Un dolore lungo l’arco che peggiora durante il turno è trattato in [dolore all’arco plantare](/it/dolore-arco-plantare/). Il dolore sul dorso del piede può venire da scarpe allacciate troppo strette o che premono; vedi [dolore al dorso del piede](/it/dolore-dorso-piede/).',
         'Un dolore in un piccolo punto preciso di un osso, che peggiora più cammini, può essere una frattura da stress, soprattutto dopo un aumento delle ore o un nuovo lavoro con più cammino. **In quel caso serve un professionista sanitario, non altri esercizi.**',
       ],
       cites: [CITE.latt, CITE.patelStressFracture],
@@ -227,7 +227,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
     {
       q: 'Perché mi fanno così male i piedi lavorando in magazzino?',
       cites: [CITE.riddle, CITE.guideline],
-      a: 'Ore in piedi e di cammino su pavimenti duri tengono il carico su tallone, arco e polpaccio per gran parte del turno. Passare gran parte della giornata di lavoro in piedi ha aumentato di 3,6\u00A0volte la probabilità di fascite plantare in uno studio, e la linea guida del 2023 sul dolore al tallone indica il carico sui piedi legato al lavoro su superfici poco ammortizzate come fattore di rischio.',
+      a: 'Le ore passate in piedi e a camminare su pavimenti duri tengono il carico su tallone, arco e polpaccio per gran parte del turno. Passare gran parte della giornata di lavoro in piedi ha aumentato di 3,6\u00A0volte la probabilità di fascite plantare in uno studio, e la linea guida del 2023 sul dolore al tallone indica il carico sui piedi legato al lavoro su superfici poco ammortizzate come fattore di rischio.',
     },
     {
       q: 'Quanti passi fa un magazziniere in un turno?',
@@ -280,7 +280,7 @@ export const RETAIL_WAREHOUSE_IT: Guide = {
   },
   program: {
     h2: 'Come trasformarlo in un piano',
-    text: 'Non devi capire da solo l’ordine, le dosi o quando passare a una versione più dura. Walkito costruisce il piano dalle tue risposte e lo adatta a come stanno i tuoi piedi ogni giorno, così una brutta mattina dopo un turno lungo vuol dire una sessione più leggera.',
+    text: 'Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce il piano dalle tue risposte e lo adatta a come stanno i tuoi piedi ogni giorno, così una brutta mattina dopo un turno lungo vuol dire una sessione più leggera.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti, così si adatta ai turni e ai giorni liberi. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],

@@ -29,7 +29,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
   takeaways: [
     'In uno studio del 2020 su 118\u00A0runner amatoriali di lunga distanza, il gruppo senza allenamento dei muscoli del piede aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa nell’arco di 12\u00A0mesi. L’effetto è comparso tra il quarto e l’ottavo mese circa di allenamento (Taddei e colleghi, 2020).',
     'In uno studio del 2019 su 57\u00A0runner, circa due mesi di esercizi per il piede fatti almeno cinque volte a settimana hanno reso più grandi e più forti tutti i muscoli del piede misurati (Ridge e colleghi, 2019).',
-    'Gli adulti sani fanno una mediana di circa 23 o 24 sollevamenti sulle punte su una gamba per lato, e 25 è stato proposto come valore di riferimento normale (Hebert-Losier e colleghi, 2017; Lunsford e Perry, 1995).',
+    'Gli adulti sani fanno in mediana circa 23 o 24 sollevamenti sulle punte su una gamba per lato, e 25 è stato proposto come valore di riferimento normale (Hebert-Losier e colleghi, 2017; Lunsford e Perry, 1995).',
     'Un programma di forza da seguire in autonomia per anche, cosce e core, in 720\u00A0persone alla prima maratona, non ha ridotto gli infortuni da sovraccarico che impedivano di finire la gara: 7,1% contro 7,3% (Toresdahl e colleghi, 2020). In quello studio il lavoro di forza da solo non ha prevenuto gli infortuni.',
     'Negli studi sui runner di lunga distanza, tra il 19,4% e il 79,3% ha avuto un infortunio alle gambe, e un infortunio precedente era uno dei fattori di rischio più chiari (van Gent e colleghi, 2007).',
   ],
@@ -111,7 +111,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
         },
         {
           name: 'Sollevamento dell’alluce',
-          evidence: { level: 'early', why: 'Uno studio con risonanza magnetica mostra che attiva i piccoli muscoli del piede (Gooding 2016). Non è stato testato da solo in uno studio sui risultati.' },
+          evidence: { level: 'early', why: 'Uno studio con risonanza magnetica mostra che attiva i piccoli muscoli del piede (Gooding 2016). Non è stato testato da solo in uno studio clinico sugli esiti.' },
           dose: '3\u00A0serie da 8, tieni 5\u00A0secondi, ogni piede',
           often: 'Da 2 a 5\u00A0giorni a settimana',
           feel: 'Sforzo sul dorso del piede e sotto l’arco',
@@ -150,7 +150,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
       h2: 'Quanti sollevamenti sulle punte dovrebbe riuscire a fare un runner?',
       keyFact: 'In 566\u00A0adulti tra i 20 e gli 81\u00A0anni, la mediana era di 24\u00A0sollevamenti sulle punte su una gamba a destra e 23 a sinistra (Hebert-Losier e colleghi, 2017).',
       paragraphs: [
-        'Non esiste un valore di riferimento specifico per i runner, quindi usa i numeri per gli adulti in generale come soglia minima. In uno studio su 566\u00A0adulti, la mediana era di 24\u00A0sollevamenti sulle punte su una gamba con la gamba destra e 23 con la sinistra, al ritmo di un battito per salire e uno per scendere a 60\u00A0battiti al minuto. I numeri calano con l’età, e le persone più attive ne facevano di più (Hebert-Losier e colleghi, 2017). Uno studio più vecchio ha proposto 25 come valore di riferimento normale (Lunsford e Perry, 1995).',
+        'Non esiste un valore di riferimento specifico per i runner, quindi usa i numeri per gli adulti in generale come soglia minima. In uno studio su 566\u00A0adulti, la mediana era di 24\u00A0sollevamenti sulle punte su una gamba con la gamba destra e 23 con la sinistra, al ritmo di un battito per salire e uno per scendere a 60\u00A0battiti al minuto. I numeri calano con l’età, e le persone più attive ne facevano di più (Hebert-Losier e colleghi, 2017). Uno studio meno recente ha proposto 25 come valore di riferimento normale (Lunsford e Perry, 1995).',
         'Confronta anche le due gambe. Una differenza di oltre il 10% tra i lati è la soglia abituale per una differenza rilevante nella riabilitazione degli arti inferiori (Silbernagel e colleghi, 2010). Il protocollo completo, una versione da fare a casa e un calcolatore sono nella pagina del [test del sollevamento sulle punte](/it/test-sollevamento-punte/).',
       ],
       table: {
@@ -165,7 +165,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
         ],
       },
       after: [
-        'Sono stime di un modello per un adulto moderatamente attivo con un indice di massa corporea di 24,2, non soglie di promosso o bocciato. Rifai il test ogni poche settimane e guarda l’andamento e la differenza tra sinistra e destra.',
+        'Sono stime di un modello per un adulto moderatamente attivo con un indice di massa corporea di 24,2, non soglie di promosso o bocciato. Ripeti il test a distanza di qualche settimana e guarda l’andamento e la differenza tra sinistra e destra.',
       ],
       sourceNote: 'Hebert-Losier 2017, Tabella 4: stime del modello per IMC 24,2 e livello di attività fisica 4, media delle due gambe, arrotondate. Lunsford e Perry 1995: 203\u00A0adulti tra i 20 e i 59\u00A0anni.',
       cites: [CITE.hebertLosier, CITE.lunsfordPerry, CITE.silbernagelHeelRise],
@@ -176,7 +176,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
         '**Nessuno studio ha confrontato gli esercizi per i piedi fatti dopo una corsa con quelli fatti in un giorno di riposo,** quindi le indicazioni sui tempi qui sotto sono pratiche, non testate.',
         {
           list: [
-            '**Dopo una corsa facile o in un giorno di riposo.** Gli esercizi stancano i piccoli muscoli del piede, quindi stanno meglio dopo una corsa breve e facile che prima di un allenamento duro o di un lungo.',
+            '**Dopo una corsa facile o in un giorno di riposo.** Gli esercizi stancano i piccoli muscoli del piede, quindi si inseriscono meglio dopo una corsa breve e facile che prima di un allenamento duro o di un lungo.',
             '**Non subito prima delle ripetute o di una gara.** Lì ti servono polpacci freschi.',
             '**Sollevamenti sulle punte da 2 a 3\u00A0giorni a settimana,** con un giorno di pausa in mezzo, come per qualsiasi lavoro di forza.',
             '**Muscoli del piede, dita ed equilibrio da 2 a 5\u00A0giorni a settimana.** Nello studio del 2019, i runner facevano esercizi per il piede almeno cinque volte a settimana e hanno guadagnato forza in circa due mesi (Ridge e colleghi, 2019).',
@@ -248,7 +248,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
     {
       q: 'Quanti sollevamenti sulle punte su una gamba dovrebbe fare un runner?',
       cites: [CITE.hebertLosier, CITE.lunsfordPerry],
-      a: 'Non esiste un numero specifico per i runner. Gli adulti sani fanno una mediana di circa 23 o 24 per gamba a un ritmo fisso, e 25 è stato proposto come valore normale. Molti runner attivi ne fanno di più. Una differenza di oltre il 10% tra le gambe vale la pena di essere seguita. La pagina del test del sollevamento sulle punte ha il protocollo completo.',
+      a: 'Non esiste un numero specifico per i runner. Gli adulti sani fanno in mediana circa 23 o 24 sollevamenti per gamba a un ritmo fisso, e 25 è stato proposto come valore normale. Molti runner attivi ne fanno di più. Una differenza di oltre il 10% tra le gambe merita di essere tenuta d’occhio. La pagina del test del sollevamento sulle punte ha il protocollo completo.',
     },
     {
       q: 'Quanto ci vuole perché gli esercizi per i piedi facciano la differenza?',
@@ -262,7 +262,7 @@ export const RUNNERS_FOOT_EXERCISES_IT: Guide = {
     {
       q: 'Correre a piedi nudi o con scarpe minimaliste rinforza i piedi?',
       cites: [CITE.ridgeMinimalist],
-      a: 'In uno studio del 2019 sui runner, camminare con scarpe minimaliste, con un aumento lento e graduale, ha costruito forza nel piede più o meno quanto gli esercizi. Cambiare in fretta le scarpe da corsa è un’altra cosa e ha i suoi rischi, quindi se ci provi procedi con gradualità.',
+      a: 'In uno studio del 2019 sui runner, camminare con scarpe minimaliste, con un aumento lento e graduale, ha rinforzato il piede più o meno quanto gli esercizi. Cambiare in fretta le scarpe da corsa è un’altra cosa e ha i suoi rischi, quindi se ci provi procedi con gradualità.',
     },
   ],
   redFlags: {

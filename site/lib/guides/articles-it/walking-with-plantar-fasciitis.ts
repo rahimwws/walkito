@@ -31,7 +31,7 @@ export const WALKING_PF_IT: Guide = {
     'In uno studio su 180\u00A0adulti con fasciopatia plantare, il gruppo che ha ricevuto solo il consiglio di restare attivo, ridurre le attività che peggiorano il dolore e usare una talloniera è migliorato in modo clinicamente rilevante a circa tre mesi (Riel e colleghi, 2023).',
     'Una regola di monitoraggio del dolore ammette un dolore fino a circa 5 su 10 durante l’attività, purché si calmi entro la mattina dopo e non aumenti di settimana in settimana. È stata testata su 38\u00A0persone con dolore all’Achille, non con fascite plantare (Silbernagel e colleghi, 2007).',
     'Nessuno studio indica un numero di passi al giorno per la fascite plantare. In 50\u00A0persone con dolore al tallone e 25 senza, i livelli di attività non erano diversi, ma il gruppo con dolore al tallone stava in piedi 3,4\u00A0ore al giorno in più (Landorf e colleghi, 2023).',
-    'Una guida di buona pratica del 2021 sul dolore al tallone consiglia scarpe con un piccolo dislivello tra tallone e punta e di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti (Morrissey e colleghi, 2021).',
+    'Una guida di buona pratica del 2021 sul dolore al tallone consiglia scarpe con un piccolo dislivello tra tallone e punta e di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti (Morrissey e colleghi, 2021).',
   ],
   toc: true,
   sections: [
@@ -48,7 +48,7 @@ export const WALKING_PF_IT: Guide = {
     },
     {
       h2: 'Quanto camminare va bene? Una regola semplice sul dolore',
-      keyFact: 'In uno studio su 38\u00A0persone con dolore all’Achille, chi ha continuato l’attività con un dolore tenuto intorno a 5 su 10, calmo entro la mattina dopo, è andato bene a dodici mesi quanto chi ha sospeso corsa e salti per sei settimane (Silbernagel e colleghi, 2007).',
+      keyFact: 'In uno studio su 38\u00A0persone con dolore all’Achille, chi ha continuato l’attività con un dolore entro circa 5 su 10, passato entro la mattina dopo, è andato bene a dodici mesi quanto chi ha sospeso corsa e salti per sei settimane (Silbernagel e colleghi, 2007).',
       paragraphs: [
         '**Usa il dolore come misuratore della dose, e controllalo due volte: durante la camminata e la mattina dopo.** Nessuno studio ha testato una regola sulla camminata per la fascite plantare. La regola testata più vicina viene dalla riabilitazione dei tendini, quindi usala come una guida presa in prestito, non come un limite dimostrato per il tallone.',
         'In uno studio del 2007, 38\u00A0persone con dolore al tendine d’Achille sono state divise in due gruppi. Un gruppo ha continuato a correre e saltare, usando un modello di monitoraggio del dolore: durante l’attività era ammesso un dolore fino a circa 5 su 10, purché si calmasse entro la mattina dopo e non aumentasse di settimana in settimana. L’altro gruppo ha sospeso quelle attività per le prime sei settimane. Entrambi i gruppi sono migliorati, e restare attivi non ha portato a risultati peggiori a dodici mesi (Silbernagel e colleghi, 2007). Altro su quello studio in [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
@@ -59,7 +59,7 @@ export const WALKING_PF_IT: Guide = {
         head: ['Cosa noti', 'Cosa significa', 'Prossima camminata'],
         rows: [
           ['Da 0 a 2 durante, mattina dopo normale', 'Ben dentro i limiti', 'Tienila così, o aggiungi un po’'],
-          ['Da 3 a 5 durante, calmo entro la mattina dopo', 'Carico accettabile', 'Ripeti la stessa camminata'],
+          ['Da 3 a 5 durante, passato entro la mattina dopo', 'Carico accettabile', 'Ripeti la stessa camminata'],
           ['Sopra 5 durante la camminata', 'Troppo per oggi', 'Accorciala o rallenta'],
           ['Primi passi della mattina dopo peggiori del solito', 'Troppo ieri', 'Riduci, poi riprendi a salire'],
           ['Peggio ogni settimana', 'Il carico sta salendo piano piano', 'Fai un passo indietro e rivolgiti a un professionista sanitario se continua'],
@@ -67,7 +67,7 @@ export const WALKING_PF_IT: Guide = {
       },
       after: [
         'Il controllo del mattino è quello che conta di più. Il dolore ai primi passi è il sintomo classico della fascite plantare, ed è il segnale più chiaro di come il piede ha retto il giorno prima. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questo quadro e gli allungamenti da fare prima di alzarti in piedi.',
-        'Un dolore acuto che ti fa zoppicare, un dolore che cresce a ogni camminata e non migliora con il riposo, o un dolore di notte sono fuori da questa regola. Controlla l’elenco alla fine di questa pagina.',
+        'Un dolore acuto che ti fa zoppicare, un dolore che cresce a ogni camminata e non migliora con il riposo, o un dolore di notte sono fuori da questa regola. Zoppicare può anche caricare in modo diverso ginocchio, anca e schiena. Controlla l’elenco alla fine di questa pagina.',
       ],
       sourceNote: 'Silbernagel 2007: 19\u00A0persone per gruppo; a dodici mesi il punteggio VISA-A-S è passato da 57 a 85 nel gruppo attivo e da 57 a 91 nel gruppo a riposo, senza differenze significative nel ritmo di miglioramento.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -77,7 +77,7 @@ export const WALKING_PF_IT: Guide = {
       keyFact: 'Nessuno studio indica un numero di passi al giorno per la fascite plantare. In un’analisi combinata di 47.471\u00A0adulti, la riduzione del rischio di morte si stabilizzava tra 6.000 e 8.000\u00A0passi al giorno nelle persone dai 60\u00A0anni in su (Paluch e colleghi, 2022).',
       paragraphs: [
         '**Non esiste un numero di passi basato sulle prove per la fascite plantare.** Non abbiamo trovato studi che abbiano fissato un numero di passi o una distanza di camminata per le persone con dolore al tallone e ne abbiano misurato il risultato. Qualsiasi pagina che ti dia una cifra fissa per il dolore al tallone sta tirando a indovinare.',
-        'I famosi 10.000\u00A0passi sono un obiettivo di salute generale, non un dato della ricerca sul piede, e anche lì le prove sono deboli. Un’analisi del 2022 su 15\u00A0studi e 47.471\u00A0adulti ha trovato che più passi al giorno andavano insieme a un rischio di morte più basso, ma il beneficio si stabilizzava intorno a 6.000 a 8.000\u00A0passi al giorno negli adulti dai 60\u00A0anni in su, e a 8.000 a 10.000 negli adulti più giovani (Paluch e colleghi, 2022). Riguarda la salute a lungo termine, non quello che un tallone irritato può reggere questa settimana.',
+        'I famosi 10.000\u00A0passi sono un obiettivo di salute generale, non un dato della ricerca sul piede, e anche lì le prove sono deboli. Un’analisi del 2022 su 15\u00A0studi e 47.471\u00A0adulti ha trovato che più passi al giorno andavano insieme a un rischio di morte più basso, ma il beneficio si stabilizzava tra 6.000 e 8.000\u00A0passi al giorno negli adulti dai 60\u00A0anni in su, e tra 8.000 e 10.000 negli adulti più giovani (Paluch e colleghi, 2022). Riguarda la salute a lungo termine, non quello che un tallone irritato può reggere questa settimana.',
         'Un numero più utile è il tuo. Quasi tutti i telefoni contano i passi. Guarda una settimana normale prima che il tallone si infiammasse e una settimana normale di adesso. Così hai un punto di partenza, e la regola sul dolore qui sopra ti dice se mantenere, aggiungere o ridurre.',
         'Spezzare la camminata può contare più del totale. La guida di buona pratica del 2021 consiglia di interrompere i lunghi periodi di carico statico, come lo stare in piedi (Morrissey e colleghi, 2021). Diverse camminate brevi distribuite nella giornata danno al tallone un carico meno continuo di una sola lunga, anche se nessuno studio ha confrontato le due cose per la fascite plantare.',
       ],
@@ -104,8 +104,8 @@ export const WALKING_PF_IT: Guide = {
       h2: 'Quali scarpe aiutano a camminare con la fascite plantare?',
       keyFact: 'La linea guida del 2023 dà ai plantari usati da soli per il sollievo dal dolore a breve termine una **B a sfavore**, e una **C** se combinati con altre cure, comprese le imbottiture per il tallone (Koc e colleghi, 2023).',
       paragraphs: [
-        '**Scarpe comode e ammortizzate con un piccolo dislivello tra tallone e punta sono il consiglio degli esperti, ma nessuno studio ha testato una scarpa specifica per camminare.** La guida di buona pratica del 2021 dice che le scarpe dovrebbero essere sostenute e comode, avere un piccolo dislivello tra retropiede e avampiede (il tallone sta un po’ più in alto delle dita) ed essere scarpe che porterai davvero. Consiglia anche di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti del tutto (Morrissey e colleghi, 2021).',
-        'La linea guida del 2023 include i consigli sulle scarpe nella sua raccomandazione di educazione con grado **E**. Sui plantari è più precisa: non usarli come unico approccio (**B a sfavore**), ma possono aiutare insieme ad altre cure (**C**). Questo comprende una talloniera da banco o scarpe che ammortizzano il tallone (Koc e colleghi, 2023).',
+        '**Scarpe comode e ammortizzate con un piccolo dislivello tra tallone e punta sono il consiglio degli esperti, ma nessuno studio ha testato una scarpa specifica per camminare.** La guida di buona pratica del 2021 dice che le scarpe dovrebbero sostenere bene il piede ed essere comode, avere un piccolo dislivello tra retropiede e avampiede (il tallone sta un po’ più in alto delle dita) ed essere scarpe che porterai davvero. Consiglia anche di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti del tutto (Morrissey e colleghi, 2021).',
+        'La linea guida del 2023 include i consigli sulle scarpe nella sua raccomandazione di educazione con grado **E**. Sui plantari è più precisa: non usarli come unico approccio (**B a sfavore**), ma possono aiutare insieme ad altre cure (**C**). Questo comprende una talloniera già pronta, che si trova in commercio, o scarpe che ammortizzano il tallone (Koc e colleghi, 2023).',
         'La durezza della scarpa potrebbe contare. Nello studio del 2023 su 50\u00A0persone con dolore al tallone e 25 senza, il gruppo con dolore al tallone portava scarpe con il tallone più duro e riferiva più difficoltà a trovare scarpe adatte (Landorf e colleghi, 2023). Anche qui, un legame, non la prova che le scarpe morbide aiutino.',
         'Per sapere cosa mostrano gli studi sui plantari, vedi [plantari o esercizi](/it/plantari-o-esercizi/). Stai pensando alle scarpe minimaliste? [Scarpe barefoot](/it/scarpe-barefoot/) spiega perché non sono adatte finché il tallone fa male.',
       ],
@@ -119,7 +119,7 @@ export const WALKING_PF_IT: Guide = {
         'Opzioni pratiche finché il tallone fa male:',
         {
           list: [
-            'Per le camminate più lunghe scegli erba, un sentiero nel parco o una pista invece del cemento, se ti senti meglio.',
+            'Per le camminate più lunghe scegli erba, un sentiero nel parco o una pista invece del cemento, se ti trovi meglio.',
             'In casa tieni le scarpe su piastrelle o parquet, soprattutto per i primi passi della giornata.',
             'Vai piano con le discese lunghe e le salite ripide finché la camminata in piano non rispetta la regola sul dolore. Altro su discese, zaini e bastoncini in [dolore ai piedi dopo un’escursione](/it/dolore-piedi-escursionismo/).',
           ],
@@ -253,7 +253,7 @@ export const WALKING_PF_IT: Guide = {
     {
       q: 'Quali sono le scarpe migliori per camminare con la fascite plantare?',
       cites: [CITE.morrisseyBestPractice, CITE.guideline],
-      a: 'Scarpe comode e ammortizzate, con il tallone un po’ più alto delle dita, sono il consiglio degli esperti. Una guida di buona pratica del 2021 consiglia di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti. La linea guida del 2023 dice che plantari o talloniere possono aiutare insieme ad altre cure, ma non da soli.',
+      a: 'Scarpe comode e ammortizzate, con il tallone un po’ più alto delle dita, sono il consiglio degli esperti. Una guida di buona pratica del 2021 consiglia di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti. La linea guida del 2023 dice che plantari o talloniere possono aiutare insieme ad altre cure, ma non da soli.',
     },
     {
       q: 'Con la fascite plantare è meglio camminare sull’erba o sul cemento?',
@@ -263,7 +263,7 @@ export const WALKING_PF_IT: Guide = {
     {
       q: 'Va bene camminare scalzi in casa con la fascite plantare?',
       cites: [CITE.morrisseyBestPractice],
-      a: 'Meglio evitarlo finché il tallone fa male, soprattutto su piastrelle o parquet appena alzato. Una guida di buona pratica del 2021 sul dolore al tallone sconsiglia di camminare scalzi e le calzature piatte e poco sostenute finché i sintomi non sono spariti del tutto. Il consiglio abituale è usare scarpe sostenute o pantofole rigide per i primi passi della giornata.',
+      a: 'Meglio evitarlo finché il tallone fa male, soprattutto la mattina appena alzato, su piastrelle o parquet. Una guida di buona pratica del 2021 sul dolore al tallone sconsiglia di camminare scalzi e le calzature piatte che sostengono poco il piede finché i sintomi non sono spariti del tutto. Il consiglio abituale è usare scarpe che sostengono bene il piede o pantofole rigide per i primi passi della giornata.',
     },
   ],
   redFlags: {

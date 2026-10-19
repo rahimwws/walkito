@@ -69,9 +69,9 @@ export const WEIGHT_PF_IT: Guide = {
     {
       h2: 'Perché il carico conta per il tallone?',
       paragraphs: [
-        '**La fascia plantare è la fascia sotto il piede che sostiene l’arco, e riceve carico a ogni passo.** Più peso corporeo significa più carico a ogni passo, quindi la stessa camminata o lo stesso turno chiedono di più al tessuto. Il consiglio della linea guida per il dolore al tallone parte proprio da questa idea: regolare il carico sui piedi al lavoro, nel tempo libero e nella vita di tutti i giorni. La linea guida dà a questo consiglio una **E**, perché si basa sulla teoria, non su studi clinici (Koc e colleghi, 2023).',
+        '**La fascia plantare è la banda di tessuto sotto il piede che sostiene l’arco, e riceve carico a ogni passo.** Più peso corporeo significa più carico a ogni passo, quindi la stessa camminata o lo stesso turno chiedono di più al tessuto. Il consiglio della linea guida per il dolore al tallone parte proprio da questa idea: regolare il carico sui piedi al lavoro, nel tempo libero e nella vita di tutti i giorni. La linea guida dà a questo consiglio una **E**, perché si basa sulla teoria, non su studi clinici (Koc e colleghi, 2023).',
         'Perdere peso riduce davvero la pressione sotto il piede. In uno studio su 41\u00A0adulti con un IMC medio vicino a 36, il gruppo con un piano alimentare ha perso 5,9\u00A0kg in tre mesi contro 1,9\u00A0kg del gruppo di confronto, e aveva una pressione di picco più bassa sotto alcune zone del piede. La forma del piede e il modo di camminare non sono cambiati (Song e colleghi, 2015). Quello studio non ha misurato il dolore al tallone.',
-        'Ma la pressione non spiega tutto. In uno studio su persone con dolore al piede in attesa di un intervento di chirurgia bariatrica, il dolore è diminuito dopo l’intervento, ma il calo della pressione sotto il piede non era collegato al calo del dolore. Lo era l’umore: chi aveva più sintomi depressivi riferiva più dolore al piede, prima e dopo (Walsh e colleghi, 2018). Il dolore dipende da molto più che dalla meccanica, ed è un motivo in più per non dartene la colpa.',
+        'Ma la pressione non spiega tutto. In uno studio su persone con dolore al piede in attesa di un intervento di chirurgia bariatrica, il dolore è diminuito dopo l’intervento, ma il calo della pressione sotto il piede non era collegato al calo del dolore. Lo era l’umore: chi aveva più sintomi depressivi riferiva più dolore al piede, prima e dopo (Walsh e colleghi, 2018). Il dolore non dipende solo dalla meccanica, ed è un motivo in più per non dartene la colpa.',
       ],
       cites: [CITE.guideline, CITE.songWeightLoss, CITE.walshBariatric],
     },
@@ -88,7 +88,7 @@ export const WEIGHT_PF_IT: Guide = {
           ['Boules, 2018', '163\u00A0persone con fascite plantare, dopo un intervento di chirurgia bariatrica', 'Nel 90% i sintomi al tallone si sono risolti, secondo le cartelle cliniche'],
           ['Walsh, 2018', '45\u00A0persone con dolore al piede: 29 operate, 16 in attesa', 'Il dolore al piede è diminuito dopo l’intervento'],
           ['Song, 2015', '41\u00A0adulti, piano alimentare o attesa', 'Pressione più bassa sotto il piede; dolore non misurato'],
-          ['Yang, 2025', '92\u00A0persone in terapia con semaglutide, su 2.902 con dolore al tallone', 'Più miglioramento del dolore rispetto a chi non lo prendeva, studio non randomizzato'],
+          ['Yang, 2025', '92\u00A0persone in terapia con semaglutide, su 2.902 con dolore al tallone', 'Miglioramento del dolore maggiore rispetto a chi non lo prendeva; studio non randomizzato'],
         ],
       },
       after: [
@@ -277,7 +277,7 @@ export const WEIGHT_PF_IT: Guide = {
       'il tallone è gonfio, arrossato o caldo, o hai la febbre',
       'il dolore peggiora di notte o a riposo, o si accompagna a bruciore o intorpidimento',
       'fa male quando stringi i lati del tallone, o il dolore continua ad aumentare con l’attività (possibile frattura da stress)',
-      'un polpaccio è dolorante e gonfio (possibile coagulo): chiedi aiuto in giornata',
+      'un polpaccio è dolorante e gonfio (possibile coagulo di sangue): chiedi aiuto in giornata',
       'ti fanno male entrambi i talloni insieme a dolore o rigidità in altre articolazioni',
       'stai pensando a farmaci per perdere peso o alla chirurgia: è un discorso da fare con il tuo medico',
     ],

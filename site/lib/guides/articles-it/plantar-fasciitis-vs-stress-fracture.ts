@@ -19,10 +19,10 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
   updated: '2026-10-18',
   title: 'Fascite plantare o frattura da stress: come distinguerle',
   description:
-    'Fascite plantare o frattura da stress del calcagno? Il tipo di dolore, il test della compressione, chi rischia, perché la radiografia sbaglia e cosa fare.',
+    'Fascite plantare o frattura da stress del calcagno? Il dolore, il test della compressione, chi rischia, perché la radiografia può non vederla e cosa fare.',
   h1: 'Fascite plantare o frattura da stress del calcagno: come distinguerle',
   lede:
-    'La [fascite plantare](/it/fascite-plantare/) fa più male ai primi passi dopo il riposo e di solito si calma dopo qualche minuto di cammino. Una frattura da stress del calcagno fa il contrario: il dolore cresce più cammini o corri, spesso dopo un aumento brusco dell’attività, e stringere i lati del tallone tende a fare male (Tu, 2018). Una radiografia fatta presto può sembrare normale: in 30\u00A0reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, la radiografia semplice la mostrava solo nel 15% (Sormaala e colleghi, 2006).',
+    'La [fascite plantare](/it/fascite-plantare/) fa più male ai primi passi dopo il riposo e di solito si calma dopo qualche minuto di cammino. Una frattura da stress del calcagno fa il contrario: il dolore cresce quanto più cammini o corri, spesso dopo un aumento brusco dell’attività, e stringere i lati del tallone tende a fare male (Tu, 2018). Una radiografia fatta presto può sembrare normale: in 30\u00A0reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, la radiografia semplice la mostrava solo nel 15% (Sormaala e colleghi, 2006).',
   intro: [
     'Le due condizioni stanno nello stesso tallone e possono iniziare dopo la stessa cosa: più cammino, più corsa o più ore in piedi. Però richiedono risposte opposte: la fascite plantare risponde bene agli allungamenti e al lavoro di forza, mentre una frattura da stress ha bisogno prima di meno carico. Questa pagina le mette a confronto, spiega cosa può e cosa non può dirti il test della compressione, chi rischia di più una frattura, perché spesso serve una risonanza magnetica e cosa fare mentre aspetti di saperlo.',
   ],
@@ -49,10 +49,10 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
         rows: [
           ['Momento peggiore', 'Primi passi dopo il riposo', 'Durante e dopo l’attività'],
           ['Dopo qualche minuto di cammino', 'Di solito si calma', 'Cresce'],
-          ['Dove fa male', 'Sotto il tallone, lato interno', 'In tutto l’osso del tallone, spesso nella metà posteriore'],
+          ['Dove fa male', 'Sotto il tallone, lato interno', 'Nell’osso del tallone, spesso nella metà posteriore'],
           ['Stringendo i lati del tallone', 'Di solito non fa male', 'Spesso fa male'],
           ['Gonfiore', 'Non è un segno tipico', 'A volte'],
-          ['Causa tipica', 'Molte ore in piedi, polpacci rigidi', 'Un aumento brusco dell’allenamento o una superficie più dura'],
+          ['Fattore scatenante tipico', 'Molte ore in piedi, polpacci rigidi', 'Un aumento brusco dell’allenamento o una superficie più dura'],
           ['Radiografia precoce', 'Non serve', 'Spesso normale'],
         ],
       },
@@ -115,7 +115,7 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
         '**Se il tuo dolore corrisponde alla colonna della frattura da stress, togli carico al tallone e prenota una visita.** Non aspettare di vedere se qualche altra corsa lo sistema. Iniziare presto conta: una revisione nota che un ritardo è stato collegato a un ritorno all’attività più lungo (Patel e colleghi, 2011).',
         {
           list: [
-            '**Riduci il carico a ciò che non fa male.** Di solito vuol dire smettere per ora di correre, saltare e fare lunghe camminate. Alcune persone hanno bisogno delle stampelle o di un tutore da camminata per un periodo (Patel e colleghi, 2011; Tu, 2018).',
+            '**Riduci il carico a ciò che non fa male.** Di solito vuol dire smettere per ora di correre, saltare e fare lunghe camminate. Alcune persone hanno bisogno delle stampelle o di un tutore walker per un periodo (Patel e colleghi, 2011; Tu, 2018).',
             '**Mantieniti in forma senza caricare il tallone,** per esempio con nuoto o bici, se non fanno male (Patel e colleghi, 2011).',
             '**Chiedi degli antidolorifici.** La stessa revisione dice che gli antinfiammatori vanno usati con cautela in caso di frattura da stress, perché alcuni studi sugli animali suggeriscono che possano rallentare la riparazione dell’osso (Patel e colleghi, 2011).',
             '**Non iniziare ancora un piano di allungamenti o di forza per il tallone.** Aspetta che un professionista abbia escluso una frattura o ti abbia dato il via libera.',
@@ -203,7 +203,7 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
     {
       q: 'Come capisco se il dolore al tallone è una frattura da stress o una fascite plantare?',
       cites: [CITE.tuHeelPain, CITE.guideline],
-      a: 'Osserva cosa fa il dolore quando cammini. La fascite plantare fa più male ai primi passi dopo il riposo e si calma dopo qualche minuto. Una frattura da stress del calcagno di solito segue un aumento brusco dell’attività, cresce più a lungo cammini o corri e spesso fa male quando si stringono i lati del tallone. Se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario.',
+      a: 'Osserva cosa fa il dolore quando cammini. La fascite plantare fa più male ai primi passi dopo il riposo e si calma dopo qualche minuto. Una frattura da stress del calcagno di solito segue un aumento brusco dell’attività, cresce quanto più a lungo cammini o corri e spesso fa male quando si stringono i lati del tallone. Se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario.',
     },
     {
       q: 'La radiografia può non vedere una frattura da stress del calcagno?',
@@ -241,7 +241,7 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
       a: 'Nessuno studio mostra una fascite plantare che diventa una frattura. Sono lesioni diverse, una nella fascia e una nell’osso. Possono avere la stessa causa, come un aumento improvviso di cammino o corsa, e una reazione da stress dell’osso può evolvere in frattura se il carico continua. Un dolore che cambia comportamento merita un controllo.',
     },
     {
-      q: 'Chi si fa una frattura da stress del calcagno?',
+      q: 'Chi è più soggetto a una frattura da stress del calcagno?',
       cites: [CITE.patelStressFracture, CITE.mountjoyREDs],
       a: 'Soprattutto chi all’improvviso si allena di più: runner, reclute militari e atleti. Chi corre più di 25\u00A0miglia (circa 40\u00A0km) a settimana in media è più a rischio, e le donne più degli uomini. La bassa disponibilità energetica, l’assenza del ciclo e la bassa densità ossea aumentano il rischio, e uno studio ha trovato livelli di vitamina D più bassi nelle reclute con fratture da stress.',
     },
@@ -249,7 +249,7 @@ export const PF_VS_STRESS_FRACTURE_IT: Guide = {
   redFlags: {
     h2: 'Rivolgiti prima a un professionista sanitario se',
     bullets: [
-      'il dolore al tallone cresce più a lungo cammini o corri invece di calmarsi',
+      'il dolore al tallone cresce quanto più a lungo cammini o corri, invece di calmarsi',
       'stringere i lati dell’osso del tallone fa male',
       'il tallone è gonfio o ha un livido, o un punto dell’osso è molto dolente',
       'il dolore è iniziato dopo un aumento brusco dell’allenamento o il passaggio a una superficie più dura',

@@ -27,7 +27,7 @@ export const FLAT_FEET_TEST_IT: Guide = {
   takeaways: [
     'L’impronta bagnata è un’indicazione approssimativa. In 95\u00A0persone tra i 62 e i 94\u00A0anni, l’indice d’arco dell’impronta corrispondeva solo moderatamente all’altezza dell’arco in radiografia, mentre una misura con il righello dell’osso dell’arco corrispondeva bene (Menz e Munteanu, 2005).',
     'Il grasso sotto la pianta può riempire l’impronta: in 24\u00A0adulti con sovrappeso o obesità, l’indice d’arco dell’impronta aumentava con la percentuale di grasso corporeo (Wearing e colleghi, 2004).',
-    'Se l’arco ricompare quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, il piede piatto è flessibile, il tipo comune studiato negli studi sugli esercizi (Brijwasi e Borkar, 2023).',
+    'Se l’arco ricompare quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, il piede piatto è flessibile, il tipo comune, quello analizzato negli studi sugli esercizi (Brijwasi e Borkar, 2023).',
     'Fatica a salire sulle punte su un piede solo, dolore dietro la caviglia interna e un arco che si abbassa sempre di più da un lato sono segni di disfunzione del tendine tibiale posteriore. In 582\u00A0donne sopra i 40\u00A0anni, il 3,3% aveva sintomi in fase iniziale (stadio I o II) e a nessuna era stata fatta la diagnosi (Kohls-Gatzoulis e colleghi, 2009).',
     'Anche le misure dei professionisti variano: quando due esaminatori inesperti hanno misurato il navicular drop, i loro risultati concordavano poco (Picciano e colleghi, 1993). In uno studio successivo su 86\u00A0giovani adulti, la stessa misura era molto ripetibile (Zuil-Escobar e colleghi, 2018).',
   ],
@@ -92,9 +92,9 @@ export const FLAT_FEET_TEST_IT: Guide = {
             '**Controllo dell’alluce (test di Jack).** Stai in piedi normalmente. Solleva l’alluce il più possibile, o fattelo sollevare da qualcuno, mentre il tallone resta giù. In un piede flessibile, l’arco si alza mentre l’alluce sale. Il test prende il nome da Jack, che lo ha descritto nel 1953 (Jack, 1953).',
           ],
         },
-        '**Se l’arco ricompare, il piede piatto è flessibile.** È il tipo comune, ed è quello studiato negli studi sugli esercizi: in 52\u00A0persone con piede piatto flessibile, sei settimane di piede corto, esercizi per caviglia e anca e allungamenti hanno migliorato due misure della forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).',
+        '**Se l’arco ricompare, il piede piatto è flessibile.** È il tipo comune, ed è quello analizzato negli studi sugli esercizi: in 52\u00A0persone con piede piatto flessibile, sei settimane di piede corto, esercizi per caviglia e anca e allungamenti hanno migliorato due misure della forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).',
         '**Se l’arco resta piatto e il piede sembra rigido**, il piede piatto potrebbe essere rigido. Una causa è la coalizione tarsale, un ponte di osso, cartilagine o tessuto fibroso tra due ossa del piede, che si trova spesso nei giovani adulti con un piede piatto rigido e doloroso (Mehdi e colleghi, 2024). Un piede piatto rigido richiede che un professionista sanitario ne trovi la causa prima che tu inizi qualsiasi programma di esercizi.',
-        'Diciamolo chiaramente: non abbiamo trovato studi che abbiano misurato quanto siano affidabili negli adulti il controllo sulle punte o il test di Jack fatti a casa. Sono semplici da fare e di solito il risultato è chiaro, ma prendi un risultato rigido come un motivo per farti controllare, non come una diagnosi.',
+        'Diciamolo chiaramente: non abbiamo trovato studi che abbiano misurato quanto siano affidabili negli adulti il controllo sulle punte o il test di Jack fatti a casa. Sono semplici da fare e di solito il risultato è chiaro, ma se il piede risulta rigido, prendilo come un motivo per farti controllare, non come una diagnosi.',
       ],
       cites: [CITE.jack1953, CITE.brijwasi, CITE.mehdiCoalition],
     },
@@ -178,7 +178,7 @@ export const FLAT_FEET_TEST_IT: Guide = {
         },
         {
           name: 'Sollevamenti sulle punte su due piedi',
-          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza una B. Questo gradino non è stato testato da solo.' },
+          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza una B. Questo passaggio non è stato testato da solo.' },
           dose: '3\u00A0serie da 10, entrambi i piedi',
           often: 'Giorni di forza',
           feel: 'I polpacci che lavorano insieme',
@@ -245,7 +245,7 @@ export const FLAT_FEET_TEST_IT: Guide = {
     {
       q: 'Il piede piatto va trattato se non fa male?',
       cites: [CITE.menz],
-      a: 'Di solito no. Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una variante normale. Il Framingham Foot Study, su circa 1.900\u00A0adulti, non ha trovato un legame tra piede piatto e mal di schiena lombare. Dolore, rigidità o un cambiamento da un lato solo sono i motivi per farlo controllare.',
+      a: 'Di solito no. Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una variante normale. Il Framingham Foot Study, su circa 1.900\u00A0adulti, non ha trovato un legame tra piede piatto e dolore lombare. Dolore, rigidità o un cambiamento da un lato solo sono i motivi per farlo controllare.',
     },
     {
       q: 'Posso fare lo stesso test del piede piatto a mio figlio?',

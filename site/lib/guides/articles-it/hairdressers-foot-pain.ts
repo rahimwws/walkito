@@ -57,11 +57,11 @@ export const HAIRDRESSERS_IT: Guide = {
           list: [
             'I muscoli del polpaccio restano nella stessa posizione, quindi smettono di pompare il sangue verso l’alto.',
             'Sangue e liquidi si accumulano nella parte bassa delle gambe e nei piedi, ed è per questo che la sera le scarpe sembrano più strette.',
-            'Il cuscinetto del tallone e la fascia plantare, la fascia sotto l’arco, portano un carico costante senza pause.',
+            'Il cuscinetto del tallone e la fascia plantare, la banda di tessuto sotto l’arco, portano un carico costante senza pause.',
           ],
         },
         'Gli studi di laboratorio mostrano quanto in fretta succede. Una revisione del 2017 su 25\u00A0studi di laboratorio ha trovato che i sintomi alla zona lombare diventavano clinicamente rilevanti in media dopo circa 71\u00A0minuti in piedi, e dopo 42\u00A0minuti nelle persone predisposte al dolore da stare in piedi. Un colore o un taglio possono durare di più. Una revisione del 2015 sul lavoro in piedi collegava lo stare in piedi a lungo a dolore lombare e alle gambe, fastidio e stanchezza in molti lavori.',
-        'In uno studio del 2023 su parrucchieri turchi, chi riferiva stanchezza alle gambe aveva anche più dolore a ginocchia e gambe e punteggi peggiori per energia e mobilità. **Anche il gonfiore si misura:** in 38\u00A0parrucchieri, la circonferenza della caviglia passava da 21,1\u00A0cm al mattino a 22,1\u00A0cm a fine giornata, senza compressione.',
+        'In uno studio del 2023 su parrucchieri turchi, chi riferiva stanchezza nella parte bassa delle gambe aveva anche più dolore a ginocchia e gambe sotto il ginocchio e punteggi peggiori per energia e mobilità. **Anche il gonfiore si misura:** in 38\u00A0parrucchieri, la circonferenza della caviglia passava da 21,1\u00A0cm al mattino a 22,1\u00A0cm a fine giornata, senza compressione.',
       ],
       cites: [CITE.coenen, CITE.waters, CITE.inceParpucuHairdressers, CITE.agleHosiery],
     },
@@ -96,13 +96,13 @@ export const HAIRDRESSERS_IT: Guide = {
       keyFact: 'Una revisione del 2018 su 10\u00A0studi ha trovato prove moderate che pavimenti più morbidi e solette ammortizzate riducono fastidio e stanchezza in chi lavora in piedi (Speed e colleghi, 2018).',
       paragraphs: [
         'Un tappetino alla tua postazione è uno dei cambiamenti più semplici con delle prove a favore. In uno studio di laboratorio, alcune persone sono rimaste in piedi per quattro ore su quattro diversi tappetini antifatica e su un pavimento duro. Tre tappetini su quattro riducevano il fastidio rispetto al pavimento duro, ma tra loro non erano molto diversi.',
-        'Le prove non sono tutte positive. In un piccolo studio del 1994 su 5\u00A0persone, i tappetini riducevano la fatica muscolare solo nella zona lombare, e solo con il più morbido dei due tappetini. I muscoli delle gambe non mostravano cambiamenti. **Quindi un tappetino aiuta il comfort, ma non sostituisce il movimento e gli allungamenti.**',
+        'Le prove non sono tutte positive. In un piccolo studio del 1994 su 5\u00A0persone, i tappetini riducevano la fatica muscolare solo nella zona lombare, e solo con il più morbido dei due tappetini. I muscoli delle gambe non mostravano cambiamenti. **Quindi un tappetino migliora il comfort, ma non sostituisce il movimento e gli allungamenti.**',
         'In salone, metti il tappetino dove stai davvero, dietro la poltrona, e tienilo ben steso così da non inciampare sui bordi. Capelli e acqua possono renderlo scivoloso, quindi spazzalo spesso.',
       ],
       cites: [CITE.speedCushioning, CITE.wiggermannMats, CITE.kimMats],
     },
     {
-      h2: 'Meglio usare uno sgabello o una seduta alta?',
+      h2: 'I parrucchieri dovrebbero usare uno sgabello o una seduta alta?',
       paragraphs: [
         '**Nessuno studio ha verificato se uno sgabello riduca il dolore ai piedi nei parrucchieri.** Stare seduti toglie carico ai piedi, e negli studi in ufficio alternare seduto e in piedi riduceva il fastidio lombare senza calo del rendimento (Karakolis e Callaghan, 2014). È la migliore prova indiretta a favore di un po’ di tempo da seduti.',
         'Lo sgabello ha un rovescio della medaglia. Uno studio tedesco sulla postura, riassunto nella scoping review del 2019, ha trovato che i parrucchieri che usavano uno sgabello con le ruote piegavano di più la zona lombare e alzavano più spesso le mani sopra l’altezza delle spalle. Uno sgabello troppo basso può scambiare il dolore ai piedi con un sovraccarico a schiena e spalle.',
@@ -186,7 +186,7 @@ export const HAIRDRESSERS_IT: Guide = {
         ],
       },
       after: [
-        'I sollevamenti sulle punte su due piedi e quelli da seduto sono lo stesso lavoro di forza, quindi scegline uno al giorno. Fare forza a giorni alterni lascia al polpaccio il tempo di recuperare.',
+        'I sollevamenti sulle punte su due piedi e quelli da seduto sono lo stesso lavoro di forza, quindi scegline uno al giorno. Il lavoro di forza a giorni alterni lascia al polpaccio il tempo di recuperare.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -208,7 +208,7 @@ export const HAIRDRESSERS_IT: Guide = {
         'Un dolore generale e le gambe pesanti alla fine di una giornata in salone sono comuni e di solito passano durante la notte. Alcuni quadri fanno pensare a qualcosa di più specifico:',
         {
           list: [
-            'Un dolore acuto al tallone ai primi passi del mattino o dopo essere stato seduto fa pensare alla [fascite plantare](/it/fascite-plantare/). La routine completa è in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+            'Un dolore acuto al tallone ai primi passi del mattino o dopo un periodo da seduti fa pensare alla [fascite plantare](/it/fascite-plantare/). La routine completa è in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
             'Bruciore o dolore sotto l’avampiede fa pensare a una [metatarsalgia](/it/metatarsalgia-dolore-pianta-piede/), comune con suole sottili o tacchi.',
             'Un arco che fa male o sembra più basso la sera fa pensare a un [dolore all’arco plantare](/it/dolore-arco-plantare/).',
             'Vene gonfie, tortuose o in rilievo sulle gambe possono essere vene varicose. In un’indagine su 182\u00A0parrucchieri a Taiwan, il 24,2% le aveva, e in chi aveva più di 45\u00A0anni le molte ore al mese passate in piedi erano un fattore di rischio (Chen e Guo, 2014).',
@@ -232,7 +232,7 @@ export const HAIRDRESSERS_IT: Guide = {
     },
     {
       q: 'I tappetini antifatica funzionano per i parrucchieri?',
-      a: 'Aiutano il comfort. In uno studio di laboratorio con quattro ore in piedi, tre tappetini antifatica su quattro riducevano il fastidio rispetto a un pavimento duro. Un piccolo studio più vecchio ha trovato che i tappetini riducevano la fatica dei muscoli della schiena ma non quella delle gambe. Vale la pena averne uno alla poltrona, ma non sostituisce gli allungamenti e il movimento tra un cliente e l’altro.',
+      a: 'Migliorano il comfort. In uno studio di laboratorio con quattro ore in piedi, tre tappetini antifatica su quattro riducevano il fastidio rispetto a un pavimento duro. Un piccolo studio più vecchio ha trovato che i tappetini riducevano la fatica dei muscoli della schiena ma non quella delle gambe. Vale la pena averne uno alla poltrona, ma non sostituisce gli allungamenti e il movimento tra un cliente e l’altro.',
       cites: [CITE.wiggermannMats, CITE.kimMats],
     },
     {

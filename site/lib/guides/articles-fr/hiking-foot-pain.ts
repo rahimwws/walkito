@@ -23,13 +23,13 @@ export const HIKERS_FR: Guide = {
     'Mal aux pieds après une randonnée\u00A0: ce que montrent les enquêtes, talon, tendon d’Achille, avant-pied, sac à dos, chaussures et une routine courte dosée.',
   h1: 'Mal aux pieds après une randonnée\u00A0: pourquoi et que faire',
   lede:
-    'Avoir mal aux pieds après une longue randonnée est fréquent, et c’est surtout une question de surcharge\u00A0: plus de distance, plus de descente ou un sac plus lourd que ce dont vos pieds ont l’habitude. Dans une enquête auprès de 1295\u00A0randonneurs au long cours sur l’Appalachian Trail, 29\u00A0% ont signalé une blessure ou une douleur au pied, et 12\u00A0% une douleur au tendon d’Achille (Chrusch et Kavin, 2021). Une douleur sous le talon aux premiers pas le lendemain matin oriente vers une [fasciite plantaire](/fr/fasciite-plantaire/)\u00A0; une douleur sur un point précis d’un os, qui augmente à chaque sortie, peut être une fracture de fatigue et doit être examinée par un médecin.',
+    'Avoir mal aux pieds après une longue randonnée est fréquent, et c’est surtout une question de surcharge\u00A0: plus de distance, plus de descente ou un sac plus lourd que ce dont vos pieds ont l’habitude. Dans une enquête auprès de 1\u00A0295\u00A0randonneurs au long cours sur l’Appalachian Trail, 29\u00A0% ont signalé une blessure ou une douleur au pied, et 12\u00A0% une douleur au tendon d’Achille (Chrusch et Kavin, 2021). Une douleur sous le talon aux premiers pas le lendemain matin oriente vers une [fasciite plantaire](/fr/fasciite-plantaire/)\u00A0; une douleur sur un point précis d’un os, qui augmente à chaque sortie, peut être une fracture de fatigue et doit être examinée par un médecin.',
   intro: [
     'Cette page porte sur la randonnée et les longues marches sur sentier\u00A0: ce qui fait mal en général, ce que les enquêtes auprès des randonneurs ont trouvé sur le sac, les chaussures et l’entraînement, et une routine courte pour avant et après la sortie. Si votre talon fait mal après des marches ordinaires, commencez par [douleur au talon après la marche](/fr/douleur-talon-apres-marche/), et pour savoir combien marcher avec un talon douloureux, voyez [marcher avec une fasciite plantaire](/fr/marcher-avec-fasciite-plantaire/).',
   ],
   toc: true,
   takeaways: [
-    'Sur 1295\u00A0randonneurs au long cours de l’Appalachian Trail, 61\u00A0% ont signalé un problème musculaire, articulaire ou osseux, 37\u00A0% une douleur au genou, 29\u00A0% une douleur au pied et 12\u00A0% une douleur au tendon d’Achille, et 11\u00A0% ont arrêté leur randonnée à cause de cela (Chrusch et Kavin, 2021).',
+    'Sur 1\u00A0295\u00A0randonneurs au long cours de l’Appalachian Trail, 61\u00A0% ont signalé un problème musculaire, articulaire ou osseux, 37\u00A0% une douleur au genou, 29\u00A0% une douleur au pied et 12\u00A0% une douleur au tendon d’Achille, et 11\u00A0% ont arrêté leur randonnée à cause de cela (Chrusch et Kavin, 2021).',
     'Les randonneurs qui ne s’étaient pas du tout entraînés avant le sentier signalaient plus souvent une douleur au pied, 38\u00A0% contre 28\u00A0%, et plus souvent une blessure de ce type quelle qu’elle soit, 80\u00A0% contre 58\u00A0%. C’est une association dans une enquête, pas la preuve que l’entraînement prévient les blessures (Chrusch et Kavin, 2021).',
     'Les ampoules aux pieds étaient le problème le plus fréquent chez 280\u00A0randonneurs de l’Appalachian Trail, signalées par 64\u00A0% d’entre eux (Boulware et coll., 2003).',
     'Les engourdissements ou fourmillements augmentaient avec le poids du sac chez 128\u00A0randonneurs au long cours, de 35\u00A0% avec des sacs de 10 à 20\u00A0livres (environ 4,5 à 9\u00A0kg) à 69\u00A0% au-delà de 31\u00A0livres (environ 14\u00A0kg). Le type de chaussure et le poids du sac n’étaient pas liés aux autres blessures musculaires et articulaires (Anderson et coll., 2009).',
@@ -38,12 +38,12 @@ export const HIKERS_FR: Guide = {
   sections: [
     {
       h2: 'Pourquoi a-t-on mal aux pieds après une randonnée\u00A0?',
-      keyFact: 'Dans une enquête auprès de 1295\u00A0randonneurs au long cours de l’Appalachian Trail, 29\u00A0% ont signalé une blessure ou une douleur au pied et 37\u00A0% une douleur au genou (Chrusch et Kavin, 2021).',
+      keyFact: 'Dans une enquête auprès de 1\u00A0295\u00A0randonneurs au long cours de l’Appalachian Trail, 29\u00A0% ont signalé une blessure ou une douleur au pied et 37\u00A0% une douleur au genou (Chrusch et Kavin, 2021).',
       paragraphs: [
         '**Surtout parce que la randonnée charge les pieds davantage, et plus longtemps, que la marche de tous les jours.** Vous marchez pendant des heures, sur un sol irrégulier, en montée et en descente, souvent avec un sac. Chacun de ces éléments ajoute du travail pour le talon, la voûte plantaire, le mollet et le tendon d’Achille.',
-        'Les meilleurs chiffres viennent des randonneurs au long cours. Dans une enquête de 2018 à 2019 auprès de 1295\u00A0randonneurs de l’Appalachian Trail, 61\u00A0% ont signalé un problème musculaire, articulaire ou osseux. La douleur au genou était la plus fréquente avec 37\u00A0%, puis la douleur au pied avec 29\u00A0%, les entorses de cheville avec 13\u00A0%, la douleur au tendon d’Achille avec 12\u00A0% et la douleur au tibia avec 11\u00A0%. Ces problèmes ont fait arrêter 11\u00A0% d’entre eux (Chrusch et Kavin, 2021).',
+        'Les meilleurs chiffres viennent des randonneurs au long cours. Dans une enquête de 2018 à 2019 auprès de 1\u00A0295\u00A0randonneurs de l’Appalachian Trail, 61\u00A0% ont signalé un problème musculaire, articulaire ou osseux. La douleur au genou était la plus fréquente avec 37\u00A0%, puis la douleur au pied avec 29\u00A0%, les entorses de cheville avec 13\u00A0%, la douleur au tendon d’Achille avec 12\u00A0% et la douleur au tibia avec 11\u00A0%. Ces problèmes ont fait arrêter 11\u00A0% d’entre eux (Chrusch et Kavin, 2021).',
         'Les problèmes de surmenage, qui s’installent au fil de jours de charge répétée, étaient plus fréquents que les blessures soudaines\u00A0: 28\u00A0% contre 18\u00A0% dans la même enquête. Cela concerne aussi les randonneurs à la journée. Une première longue sortie de la saison, ou un week-end avec deux grosses journées d’affilée, suit le même schéma à plus petite échelle.',
-        'Ce sont des enquêtes déclaratives auprès de personnes qui marchent des centaines de miles. Aucune étude n’a compté les douleurs au pied chez les randonneurs à la journée ordinaires, donc les chiffres exacts ne s’appliquent pas à quelqu’un qui randonne le week-end. Ce qui est utile, c’est la répartition de ce qui fait mal.',
+        'Ce sont des enquêtes déclaratives auprès de personnes qui marchent des centaines de miles. Aucune étude n’a compté les douleurs au pied chez les randonneurs ordinaires à la journée, donc les chiffres exacts ne s’appliquent pas à quelqu’un qui randonne le week-end. Ce qui est utile, c’est la répartition de ce qui fait mal.',
       ],
       sourceNote: 'Chrusch et Kavin 2021\u00A0: enquête électronique transversale ajoutée à l’enquête de fin de saison de l’Appalachian Trail Conservancy, taux de réponse de 52\u00A0%. Surmenage/chronique 28\u00A0% (n=363), aigu 18\u00A0% (n=238).',
       cites: [CITE.chruschHikers],
@@ -66,7 +66,7 @@ export const HIKERS_FR: Guide = {
         ],
       },
       after: [
-        '**Sous le talon.** La fasciite plantaire fait typiquement le plus mal aux premiers pas après un repos. La recommandation de 2023 sur la douleur au talon cite comme signe typique une douleur apparue après une augmentation récente de l’activité en appui (Koc et coll., 2023), ce qui est exactement le cas d’une randonnée plus longue. Un mollet raide est le facteur de risque le plus fort connu\u00A0: dans une étude sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient la plus faible flexion de cheville avaient un risque 23,3\u00A0fois plus élevé (Riddle et coll., 2003).',
+        '**Sous le talon.** La fasciite plantaire fait typiquement le plus mal aux premiers pas après un repos. La recommandation de 2023 sur la douleur au talon cite comme signe typique une douleur apparue après une augmentation récente de l’activité en appui (Koc et coll., 2023), ce qui est exactement le cas d’une randonnée plus longue. Un mollet raide est le facteur de risque le plus fort connu\u00A0: dans une étude sur 50\u00A0personnes atteintes de fasciite plantaire et 100 sans, celles qui avaient la plus faible flexion de cheville avaient une cote (odds) 23,3\u00A0fois plus élevée de fasciite plantaire (Riddle et coll., 2003).',
         '**Arrière du talon.** La douleur au tendon d’Achille peut se réveiller dans les longues montées, où le mollet et le tendon vous poussent vers le haut à chaque pas. Voyez [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/).',
         '**Avant-pied.** Les longues descentes et un mollet raide peuvent tous deux reporter la charge sur l’avant du pied. Voyez [métatarsalgie](/fr/metatarsalgie-douleur-avant-pied/).',
         '**Ampoules et ongles.** Les ampoules ont été signalées par 64\u00A0% de 280\u00A0randonneurs de l’Appalachian Trail, plus que tout autre problème (Boulware et coll., 2003). Des ongles noirs ou douloureux après une journée de descentes signifient en général que les orteils butent contre l’avant de la chaussure. Ce sont des problèmes de peau et d’ajustement, pas quelque chose que les exercices changent.',
@@ -112,7 +112,7 @@ export const HIKERS_FR: Guide = {
       h2: 'À quel rythme augmenter la distance de randonnée\u00A0?',
       keyFact: 'Les randonneurs qui ne s’étaient pas du tout entraînés avant l’Appalachian Trail signalaient plus souvent une blessure musculaire, articulaire ou osseuse, 80\u00A0% contre 58\u00A0% (Chrusch et Kavin, 2021).',
       paragraphs: [
-        '**Aucune étude ne donne une augmentation hebdomadaire sans risque pour les randonneurs.** Ce qui s’en rapproche le plus est l’enquête de l’Appalachian Trail\u00A0: les 13\u00A0% de randonneurs qui ne s’étaient pas du tout entraînés avant le sentier signalaient plus de blessures au total (80\u00A0% contre 58\u00A0%), plus de douleurs au pied (38\u00A0% contre 28\u00A0%), plus de douleurs au tendon d’Achille (18\u00A0% contre 11\u00A0%) et plus de fractures de fatigue de la jambe (5\u00A0% contre 2\u00A0%). Le renforcement musculaire, les étirements ou le yoga, et l’entraînement d’endurance étaient chacun associés à moins de blessures (Chrusch et Kavin, 2021). C’est une enquête\u00A0: les personnes plus en forme ou plus prudentes se sont peut-être simplement davantage entraînées.',
+        '**Aucune étude ne donne une augmentation hebdomadaire sans risque pour les randonneurs.** Ce qui s’en rapproche le plus est l’enquête de l’Appalachian Trail\u00A0: les 13\u00A0% de randonneurs qui ne s’étaient pas du tout entraînés avant le sentier signalaient plus de blessures au total (80\u00A0% contre 58\u00A0%), plus de douleurs au pied (38\u00A0% contre 28\u00A0%), plus de douleurs au tendon d’Achille (18\u00A0% contre 11\u00A0%) et plus de fractures de fatigue du bas de la jambe (5\u00A0% contre 2\u00A0%). Le renforcement musculaire, les étirements ou le yoga, et l’entraînement d’endurance étaient chacun associés à moins de blessures (Chrusch et Kavin, 2021). C’est une enquête\u00A0: les personnes plus en forme ou plus prudentes se sont peut-être simplement davantage entraînées.',
         'Une façon pratique de progresser, mais pas une méthode testée\u00A0:',
         {
           list: [
@@ -129,7 +129,7 @@ export const HIKERS_FR: Guide = {
       h2: 'Quelle routine faire avant et après une randonnée\u00A0?',
       paragraphs: [
         'Faites court. Avant la sortie, une à deux minutes pour mettre les chevilles en mouvement. Après, les étirements qui ciblent le talon et le mollet. Les jours entre les sorties, des montées sur pointes pour la force. Les doses sont les doses de départ de Walkito tirées des guides principaux. Arrêtez un exercice pour la journée si la douleur dépasse 6 sur 10.',
-        'Soyons honnêtes sur ce que l’étirement avant une randonnée apporte. Dans un essai sur 1538\u00A0recrues de l’armée suivies pendant trois mois d’entraînement, étirer six groupes musculaires des jambes avant chaque séance n’a pas réduit les blessures de façon notable (Pope et coll., 2000). Les étirements proposés ici visent la douleur au talon et au mollet, pour laquelle la recommandation de 2023 donne à l’étirement la **note A** et au renforcement du mollet la **note B** (Koc et coll., 2023).',
+        'Soyons honnêtes sur ce que l’étirement avant une randonnée apporte. Dans un essai sur 1\u00A0538\u00A0recrues de l’armée suivies pendant trois mois d’entraînement, étirer six groupes musculaires des jambes avant chaque séance n’a pas réduit les blessures de façon notable (Pope et coll., 2000). Les étirements proposés ici visent la douleur au talon et au mollet, pour laquelle la recommandation de 2023 donne à l’étirement la **note A** et au renforcement du mollet la **note B** (Koc et coll., 2023).',
       ],
       exercises: [
         {
@@ -177,7 +177,7 @@ export const HIKERS_FR: Guide = {
           how: 'Asseyez-vous et croisez le pied sur l’autre genou. Tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte, pas dans le mollet. Le lendemain matin, faites le premier au bord du lit, avant que le pied ne touche le sol.',
           stop: 'Une douleur vive au talon',
           media: 'fascia_stretch',
-          caption: 'Étirement du fascia plantaire\u00A0: tirez les orteils vers vous jusqu’à sentir la voûte',
+          caption: 'Étirement du fascia plantaire\u00A0: tirez les orteils vers vous jusqu’à sentir l’étirement dans la voûte',
           alt: 'Une personne qui tire vers elle les orteils d’un pied, la plante du pied mise en évidence',
         },
         {
@@ -223,7 +223,7 @@ export const HIKERS_FR: Guide = {
     {
       q: 'Est-il normal d’avoir mal aux pieds après une randonnée\u00A0?',
       cites: [CITE.chruschHikers],
-      a: 'Un peu de douleur après une sortie longue ou raide est fréquent et passe souvent en un ou deux jours. Dans une enquête auprès de 1295\u00A0randonneurs de l’Appalachian Trail, 29\u00A0% ont signalé une douleur au pied. Une douleur vive, située sur un point précis d’un os ou encore présente après quelques jours tranquilles mérite d’être examinée.',
+      a: 'Avoir un peu mal après une sortie longue ou raide est fréquent et cela passe souvent en un ou deux jours. Dans une enquête auprès de 1\u00A0295\u00A0randonneurs de l’Appalachian Trail, 29\u00A0% ont signalé une douleur au pied. Une douleur vive, située sur un point précis d’un os ou encore présente après quelques jours tranquilles mérite d’être examinée.',
     },
     {
       q: 'Pourquoi ai-je mal au talon après une randonnée\u00A0?',
@@ -262,7 +262,7 @@ export const HIKERS_FR: Guide = {
     {
       q: 'Faut-il s’étirer avant une randonnée\u00A0?',
       cites: [CITE.popeStretching, CITE.guideline],
-      a: 'Un court échauffement comme les bascules de cheville convient, mais n’attendez pas des étirements avant la sortie qu’ils préviennent les blessures. Dans un essai sur 1538\u00A0recrues de l’armée, s’étirer avant l’entraînement n’a pas réduit les blessures de façon notable. Les étirements du mollet et de la voûte après la sortie sont plus utiles si votre talon fait mal\u00A0: la recommandation de 2023 leur donne la note A.',
+      a: 'Un court échauffement comme les bascules de cheville convient, mais n’attendez pas des étirements avant la sortie qu’ils préviennent les blessures. Dans un essai sur 1\u00A0538\u00A0recrues de l’armée, s’étirer avant l’entraînement n’a pas réduit les blessures de façon notable. Les étirements du mollet et de la voûte après la sortie sont plus utiles si votre talon fait mal\u00A0: la recommandation de 2023 leur donne la note A.',
     },
   ],
   redFlags: {

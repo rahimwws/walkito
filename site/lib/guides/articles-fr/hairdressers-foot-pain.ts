@@ -30,19 +30,19 @@ export const HAIRDRESSERS_FR: Guide = {
   toc: true,
   takeaways: [
     'Sur 384\u00A0coiffeurs en Inde, 49,5\u00A0% signalaient des douleurs au genou ou au pied au cours des 12\u00A0derniers mois, contre 38,3\u00A0% de 384\u00A0personnes exerçant d’autres métiers. L’étude comptait le genou et le pied ensemble (Mishra et Sarkar, 2021).',
-    'Une revue de la portée de 2019 portant sur 44\u00A0études n’en a trouvé que 5 qui rapportaient des douleurs au pied chez les coiffeurs, de 10 à 44\u00A0%. La plupart des études portaient sur le dos, la nuque, les épaules et les mains, et la station debout faisait partie des facteurs de risque fréquents (Kozak et coll., 2019).',
+    'Une revue exploratoire de 2019 portant sur 44\u00A0études n’en a trouvé que 5 qui rapportaient des douleurs au pied chez les coiffeurs, de 10 à 44\u00A0%. La plupart des études portaient sur le dos, la nuque, les épaules et les mains, et la station debout faisait partie des facteurs de risque fréquents (Kozak et coll., 2019).',
     'Dans un essai croisé randomisé chez 108\u00A0coiffeurs, des bas de contention de 15 à 20\u00A0mmHg ont fait baisser le score de douleur et de sensation de gonflement des jambes de 12\u00A0% et le volume du bas de la jambe de 19\u00A0ml en moyenne (Blazek et coll., 2013).',
     'Une revue de 2018 portant sur 10\u00A0études a trouvé des preuves modérées que des sols plus souples et des semelles amortissantes réduisent l’inconfort et la fatigue chez les personnes qui travaillent debout (Speed et coll., 2018).',
-    'Un mollet raide était le principal facteur de risque de fasciite plantaire dans une étude cas-témoins de 2003, avec un risque multiplié par 23,3, et rester debout la plus grande partie de la journée de travail le multipliait par 3,6 (Riddle et coll., 2003).',
+    'Un mollet tendu était le principal facteur de risque de fasciite plantaire dans une étude cas-témoins de 2003, avec une cote (odds) multipliée par 23,3, et rester debout la plus grande partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
   ],
   sections: [
     {
       h2: 'Le mal aux pieds est-il fréquent chez les coiffeurs\u00A0?',
-      keyFact: 'Cinq études d’une revue de la portée de 2019 rapportaient des douleurs au pied chez les coiffeurs, de 10 à 44\u00A0% (Kozak et coll., 2019).',
+      keyFact: 'Cinq études d’une revue exploratoire de 2019 rapportaient des douleurs au pied chez les coiffeurs, de 10 à 44\u00A0% (Kozak et coll., 2019).',
       paragraphs: [
-        '**Les douleurs aux pieds et aux jambes sont fréquentes en coiffure, mais beaucoup moins étudiées que celles des épaules ou du dos.** Une revue de la portée de 2019 a rassemblé 44\u00A0études sur les troubles musculosquelettiques en coiffure. Seules 5 rapportaient des douleurs au pied, et les chiffres allaient de 10 à 44\u00A0%. L’écart est large parce que les études utilisaient des questions, des pays et des périodes différents.',
+        '**Les douleurs aux pieds et aux jambes sont fréquentes en coiffure, mais beaucoup moins étudiées que celles des épaules ou du dos.** Une revue exploratoire de 2019 a rassemblé 44\u00A0études sur les troubles musculosquelettiques en coiffure. Seules 5 rapportaient des douleurs au pied, et les chiffres allaient de 10 à 44\u00A0%. L’écart est large parce que les études utilisaient des questions, des pays et des périodes différents.',
         'La plus grande étude avec groupe de comparaison a interrogé 384\u00A0coiffeurs et 384\u00A0personnes exerçant d’autres métiers dans deux villes indiennes. Les douleurs au genou ou au pied étaient la plainte la plus fréquente dans les deux groupes\u00A0: 49,5\u00A0% chez les coiffeurs contre 38,3\u00A0% chez les autres. L’étude regroupait le genou et le pied dans une seule catégorie\u00A0: elle ne peut donc pas dire quelle part concernait les pieds seuls.',
-        'Une étude britannique portant sur 147\u00A0coiffeurs et 67\u00A0personnes exerçant d’autres métiers a trouvé des douleurs aux jambes ou aux pieds liées au travail bien plus souvent chez les coiffeurs. Le risque était 31\u00A0fois plus élevé, mais la fourchette statistique était très large, d’environ 4 à 267\u00A0fois\u00A0: l’ampleur réelle de l’écart reste incertaine. Dans une étude turque de 2023, après le bas du dos, les zones les plus douloureuses étaient le bas des jambes\u00A0: 36,9\u00A0% à droite et 32,5\u00A0% à gauche.',
+        'Une étude britannique portant sur 147\u00A0coiffeurs et 67\u00A0personnes exerçant d’autres métiers a trouvé des douleurs aux jambes ou aux pieds liées au travail bien plus souvent chez les coiffeurs. La cote (odds) était 31\u00A0fois plus élevée, mais la fourchette statistique était très large, d’environ 4 à 267\u00A0fois\u00A0: l’ampleur réelle de l’écart reste incertaine. Dans une étude turque de 2023, après le bas du dos, les zones les plus douloureuses étaient le bas des jambes\u00A0: 36,9\u00A0% à droite et 32,5\u00A0% à gauche.',
       ],
       sourceNote:
         'Mishra et Sarkar (2021)\u00A0: étude transversale, 384\u00A0coiffeurs et 384\u00A0témoins, prévalence sur 12\u00A0mois, genou et pied dans une seule catégorie. Bradshaw et coll. (2011)\u00A0: questionnaire administré par un enquêteur, odds ratio ajusté de 31,0 (IC à 95\u00A0% de 3,8 à 267,4). Ince Parpucu et coll. (2023)\u00A0: Cornell Musculoskeletal Discomfort Questionnaire, semaine précédente.',
@@ -67,8 +67,8 @@ export const HAIRDRESSERS_FR: Guide = {
     {
       h2: 'La posture au fauteuil joue-t-elle sur vos pieds\u00A0?',
       paragraphs: [
-        'Les études sur la posture des coiffeurs portent sur le dos et les bras, pas sur les pieds. Une revue de la portée rapporte que les coiffeurs se penchent souvent en avant ou se tournent pendant la coupe et le shampooing, et que, dans une étude de mesure, la coupe gardait la colonne penchée en avant 66\u00A0% du temps. Se pencher longtemps tend à reporter le poids vers l’avant du pied.',
-        'Aucune étude n’a mesuré comment la posture en salon modifie la charge sur les pieds des coiffeurs. Ce que vous pouvez contrôler est simple\u00A0: montez ou baissez le fauteuil du client pour ne pas vous pencher, gardez le poids sur les deux pieds et changez d’appui toutes les quelques minutes. Dans une étude en laboratoire de quatre heures debout, les personnes qui changeaient plus souvent d’appui signalaient aussi plus d’inconfort\u00A0: changer souvent d’appui peut donc être le signe que l’inconfort s’installe, et un bon signal pour faire une courte pause (Wiggermann et Keyserling, 2013).',
+        'Les études sur la posture des coiffeurs portent sur le dos et les bras, pas sur les pieds. Une revue exploratoire rapporte que les coiffeurs se penchent souvent en avant ou se tournent pendant la coupe et le shampooing, et que, dans une étude de mesure, la coupe gardait la colonne penchée en avant 66\u00A0% du temps. Se pencher longtemps tend à reporter le poids vers l’avant du pied.',
+        'Aucune étude n’a mesuré comment la posture en salon modifie la charge sur les pieds des coiffeurs. Ce que vous pouvez contrôler est simple\u00A0: montez ou baissez le fauteuil du client pour ne pas vous pencher, gardez le poids sur les deux pieds et changez d’appui régulièrement, à quelques minutes d’intervalle. Dans une étude en laboratoire de quatre heures debout, les personnes qui changeaient plus souvent d’appui signalaient aussi plus d’inconfort\u00A0: changer souvent d’appui peut donc être le signe que l’inconfort s’installe, et un repère raisonnable pour faire une courte pause (Wiggermann et Keyserling, 2013).',
         'Si vos pieds font mal en même temps que votre dos, le lien va dans les deux sens. [Pieds plats et mal de dos](/fr/pieds-plats-mal-de-dos/) fait le point sur ce que dit la recherche.',
       ],
       cites: [CITE.kozakHairdressing, CITE.wiggermannMats],
@@ -86,7 +86,7 @@ export const HAIRDRESSERS_FR: Guide = {
             'Une semelle antidérapante. Les sols des salons deviennent mouillés et glissants.',
           ],
         },
-        'Certaines personnes changent de chaussures à la mi-journée lors des longues journées. Aucune étude ne l’a testé, mais une autre chaussure répartit la charge autrement. Si vous avez déjà mal au talon ou à la voûte, des semelles peuvent rendre la journée plus confortable, mais elles agissent sur le confort, pas sur le mollet et la voûte eux-mêmes. La page [semelles ou exercices](/fr/semelles-ou-exercices/) compare les deux.',
+        'Lors des longues journées, certaines personnes changent de chaussures à mi-parcours. Aucune étude ne l’a testé, mais une autre chaussure répartit la charge autrement. Si vous avez déjà mal au talon ou à la voûte, des semelles peuvent rendre la journée plus confortable, mais elles agissent sur le confort, pas sur le mollet et la voûte eux-mêmes. La page [semelles ou exercices](/fr/semelles-ou-exercices/) compare les deux.',
       ],
       cites: [CITE.speedCushioning],
     },
@@ -104,7 +104,7 @@ export const HAIRDRESSERS_FR: Guide = {
       h2: 'Faut-il utiliser un tabouret ou un siège assis-debout\u00A0?',
       paragraphs: [
         '**Aucune étude n’a testé si un tabouret réduit le mal aux pieds chez les coiffeurs.** S’asseoir soulage les pieds, et dans des études au bureau, alterner position assise et debout réduisait l’inconfort du bas du dos sans baisse du rendement (Karakolis et Callaghan, 2014). C’est la meilleure preuve indirecte pour intégrer un peu de position assise.',
-        'Le tabouret a un revers. Une étude allemande sur la posture, résumée dans la revue de la portée de 2019, a trouvé que les coiffeurs qui utilisaient un tabouret à roulettes fléchissaient davantage le bas du dos et levaient plus souvent les mains au-dessus des épaules. Un tabouret trop bas peut remplacer le mal aux pieds par des douleurs au dos et aux épaules.',
+        'Le tabouret a un revers. Une étude allemande sur la posture, résumée dans la revue exploratoire de 2019, a trouvé que les coiffeurs qui utilisaient un tabouret à roulettes fléchissaient davantage le bas du dos et levaient plus souvent les mains au-dessus des épaules. Un tabouret trop bas peut remplacer le mal aux pieds par des douleurs au dos et aux épaules.',
         'Une approche pratique\u00A0: utilisez le tabouret pour les gestes où vous atteignez la zone sans vous étirer, comme les finitions à l’arrière de la tête ou les mèches dans les sections basses, et restez debout pour le reste. Réglez le tabouret assez haut pour que vos bras restent sous le niveau des épaules. Au bac à shampooing, asseyez-vous quand l’installation le permet.',
       ],
       cites: [CITE.karakolis, CITE.kozakHairdressing],
@@ -114,7 +114,7 @@ export const HAIRDRESSERS_FR: Guide = {
       keyFact: 'La recommandation de 2023 sur la douleur au talon donne la note A, sa meilleure note, aux étirements du mollet et du fascia plantaire, et la note B au renforcement musculaire (Koc et coll., 2023).',
       paragraphs: [
         'Ce sont les mêmes exercices que pour la [fasciite plantaire](/fr/fasciite-plantaire/) et la douleur liée à la station debout en général\u00A0: étirements du mollet, montées sur pointes et étirement du fascia plantaire. Ce qui change en coiffure, c’est le moment. **Vous avez de courts moments libres entre deux clients\u00A0: choisissez un ou deux exercices par moment plutôt qu’une séance complète.** Aucune étude n’a testé des pauses d’exercice pour les pieds des coiffeurs\u00A0: les doses viennent donc du guide principal sur la douleur au talon.',
-        'Le mollet compte le plus. Dans une étude cas-témoins, un mollet raide multipliait le risque de fasciite plantaire par 23,3, plus que tout autre facteur. Si un exercice fait monter votre douleur à 6 sur 10 ou plus, arrêtez pour aujourd’hui.',
+        'C’est le mollet qui compte le plus. Dans une étude cas-témoins, un mollet tendu multipliait la cote (odds) de fasciite plantaire par 23,3, plus que tout autre facteur. Si un exercice fait monter votre douleur à 6 sur 10 ou plus, arrêtez pour aujourd’hui.',
       ],
       exercises: [
         {
@@ -204,7 +204,7 @@ export const HAIRDRESSERS_FR: Guide = {
     {
       h2: 'Est-ce une fasciite plantaire, des varices ou autre chose\u00A0?',
       paragraphs: [
-        'Une douleur diffuse et des jambes lourdes après une journée en salon sont fréquentes et passent en général pendant la nuit. Certains schémas orientent vers quelque chose de plus précis\u00A0:',
+        'Une douleur diffuse et des jambes lourdes après une journée en salon sont fréquentes et passent en général pendant la nuit. Certains signes orientent vers quelque chose de plus précis\u00A0:',
         {
           list: [
             'Une douleur vive au talon aux premiers pas du matin ou après être resté assis évoque une [fasciite plantaire](/fr/fasciite-plantaire/). La routine complète se trouve dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
@@ -213,7 +213,7 @@ export const HAIRDRESSERS_FR: Guide = {
             'Des veines gonflées, sinueuses ou saillantes sur les jambes peuvent être des varices. Dans une enquête auprès de 182\u00A0coiffeurs à Taïwan, 24,2\u00A0% en avaient, et chez les plus de 45\u00A0ans, un grand nombre d’heures debout par mois était un facteur de risque (Chen et Guo, 2014).',
           ],
         },
-        'Si vous ne savez pas d’où vient la douleur, un médecin peut vous le dire avec certitude. **Si la douleur change, s’étend ou ne se calme plus au repos, faites-la examiner avant de la solliciter avec des exercices.**',
+        'Si vous ne savez pas d’où vient la douleur, un médecin peut vous le dire avec certitude. **Si la douleur change, s’étend ou ne se calme plus au repos, faites examiner votre pied avant de le solliciter avec des exercices.**',
       ],
       cites: [CITE.chenVaricose],
     },
@@ -251,7 +251,7 @@ export const HAIRDRESSERS_FR: Guide = {
     },
     {
       q: 'La coiffure peut-elle provoquer une fasciite plantaire\u00A0?',
-      a: 'Rester debout la plus grande partie de la journée de travail multipliait le risque de fasciite plantaire par 3,6 dans une étude cas-témoins portant sur 50\u00A0cas et 100\u00A0témoins, et un mollet raide le multipliait par 23,3. Aucune étude n’a mesuré la fasciite plantaire chez les coiffeurs en particulier, mais le travail en salon implique exactement ce type de station debout prolongée.',
+      a: 'Rester debout la plus grande partie de la journée de travail multipliait la cote (odds) de fasciite plantaire par 3,6 dans une étude cas-témoins portant sur 50\u00A0cas et 100\u00A0témoins, et un mollet tendu la multipliait par 23,3. Aucune étude n’a mesuré la fasciite plantaire chez les coiffeurs en particulier, mais le travail en salon implique exactement ce type de station debout prolongée.',
       cites: [CITE.riddle],
     },
     {

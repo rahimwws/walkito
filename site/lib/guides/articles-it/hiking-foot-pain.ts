@@ -19,7 +19,7 @@ export const HIKERS_IT: Guide = {
   updated: '2026-10-18',
   title: 'Dolore ai piedi dopo il trekking: cause, esercizi e allarmi',
   description:
-    'Male ai piedi dopo un’escursione: cosa dicono le indagini, tallone, Achille e avampiede, peso dello zaino, scarponi o scarpe da trail, e esercizi con dosi.',
+    'Male ai piedi dopo un’escursione: cosa dicono le indagini, tallone, Achille e avampiede, peso dello zaino, scarponi o scarpe da trail ed esercizi con dosi.',
   h1: 'Dolore ai piedi dopo il trekking: perché ti fanno male i piedi e cosa fare',
   lede:
     'I piedi doloranti dopo una lunga escursione sono comuni, e spesso si tratta di sovraccarico: più distanza, più discesa o uno zaino più pesante di quanto i tuoi piedi siano abituati a reggere. In un’indagine su 1.295 escursionisti di lunga distanza sull’Appalachian Trail, il 29% riferiva un infortunio o dolore al piede e il 12% dolore al tendine d’Achille (Chrusch e Kavin, 2021). Il dolore al tallone ai primi passi della mattina dopo fa pensare alla [fascite plantare](/it/fascite-plantare/); un dolore in un punto preciso di un osso che cresce a ogni escursione può essere una frattura da stress e va fatto valutare da un professionista sanitario.',
@@ -42,7 +42,7 @@ export const HIKERS_IT: Guide = {
         '**Soprattutto perché il trekking carica i piedi di più, e più a lungo, della camminata di tutti i giorni.** Cammini per ore, su terreno irregolare, in salita e in discesa, spesso con uno zaino. Ognuna di queste cose aggiunge lavoro per il tallone, l’arco, il polpaccio e il tendine d’Achille.',
         'I numeri migliori vengono dagli escursionisti di lunga distanza. In un’indagine del 2018 e 2019 su 1.295 escursionisti dell’Appalachian Trail, il 61% riferiva un disturbo a muscoli, articolazioni o ossa. Il dolore al ginocchio era il più comune, al 37%, poi il dolore al piede al 29%, le distorsioni di caviglia al 13%, il dolore all’Achille al 12% e il dolore alla tibia all’11%. Questi disturbi hanno fatto interrompere il cammino all’11% di loro (Chrusch e Kavin, 2021).',
         'I problemi da sovraccarico, che si accumulano in giorni di carico ripetuto, erano più comuni degli infortuni improvvisi: 28% contro 18% nella stessa indagine. Questo conta anche per chi fa escursioni di un giorno. Una prima escursione lunga della stagione, o un fine settimana con due giornate impegnative di fila, è la stessa dinamica in scala più piccola.',
-        'Sono indagini basate su quello che riferiscono persone che camminano per centinaia di chilometri. Nessuno studio ha contato il dolore ai piedi negli escursionisti della domenica, quindi i numeri esatti non valgono per chi cammina nel fine settimana. La parte utile è il quadro di cosa fa male.',
+        'Sono indagini basate su quello che riferiscono persone che camminano per centinaia di chilometri. Nessuno studio ha contato il dolore ai piedi in chi fa normali escursioni di un giorno, quindi i numeri esatti non valgono per chi cammina nel fine settimana. La parte utile è il quadro di cosa fa male.',
       ],
       sourceNote: 'Chrusch e Kavin 2021: indagine elettronica trasversale aggiunta all’indagine di fine stagione della Appalachian Trail Conservancy, tasso di risposta del 52%. Sovraccarico o cronici 28% (n=363), acuti 18% (n=238).',
       cites: [CITE.chruschHikers],
@@ -59,13 +59,13 @@ export const HIKERS_IT: Guide = {
           ['Sotto il tallone, peggio ai primi passi della mattina dopo', 'Fascite plantare', 'Allungamenti di polpaccio e arco, sollevamenti sulle punte'],
           ['Dietro il tallone o nel tendine sopra', 'Tendinopatia achillea', 'Escursioni più brevi, sollevamenti sulle punte lenti'],
           ['Avampiede, dietro le dita', 'Metatarsalgia', 'Controlla la calzata, allungamento del polpaccio'],
-          ['Un punto preciso su un osso, peggio a ogni escursione', 'Possibile frattura da stress', 'Smetti di camminare in montagna, fatti visitare'],
+          ['Un punto preciso su un osso, peggio a ogni escursione', 'Possibile frattura da stress', 'Sospendi le escursioni, fatti visitare'],
           ['Dita che bruciano o formicolano', 'Nervo compresso', 'Allenta i lacci, zaino più leggero'],
           ['Unghie dei piedi scure o doloranti dopo le discese', 'Dita che urtano la scarpa', 'Scarpa più lunga, unghie corte'],
         ],
       },
       after: [
-        '**Sotto il tallone.** La fascite plantare di solito fa più male ai primi passi dopo il riposo. La linea guida del 2023 sul dolore al tallone indica come caratteristica tipica un dolore iniziato dopo un recente aumento delle attività sotto carico (Koc e colleghi, 2023), ed è proprio quello che è un’escursione più impegnativa. Un polpaccio rigido è il fattore di rischio più forte che si conosca: in uno studio su 50\u00A0persone con fascite plantare e 100 senza, chi aveva la caviglia meno flessibile aveva una probabilità 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
+        '**Sotto il tallone.** La fascite plantare di solito fa più male ai primi passi dopo il riposo. La linea guida del 2023 sul dolore al tallone indica come caratteristica tipica un dolore iniziato dopo un recente aumento delle attività sotto carico (Koc e colleghi, 2023), e un’escursione più impegnativa è proprio questo. Un polpaccio rigido è il fattore di rischio più forte che si conosca: in uno studio su 50\u00A0persone con fascite plantare e 100 senza, chi aveva la caviglia meno flessibile aveva una probabilità 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
         '**Dietro il tallone.** Il dolore all’Achille può riacutizzarsi nelle lunghe salite, dove polpaccio e tendine ti spingono in su a ogni passo. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         '**Avampiede.** Le lunghe discese e un polpaccio rigido possono entrambi spostare il carico sulla parte anteriore del piede. Vedi [metatarsalgia](/it/metatarsalgia-dolore-pianta-piede/).',
         '**Vesciche e unghie.** Le vesciche erano riferite dal 64% di 280 escursionisti dell’Appalachian Trail, più di qualsiasi altro disturbo (Boulware e colleghi, 2003). Unghie scure o doloranti dopo una giornata di discese di solito vogliono dire che le dita urtano la punta della scarpa. Sono entrambi problemi di pelle e di calzata, non qualcosa che gli esercizi cambiano.',
@@ -77,7 +77,7 @@ export const HIKERS_IT: Guide = {
       keyFact: 'In 15 escursionisti esperti che camminavano in discesa senza zaino, con uno zaino leggero e con uno zaino pesante, i bastoncini da trekking riducevano il carico su caviglia, ginocchio e anca (Bohne e Abendroth-Smith, 2007).',
       paragraphs: [
         '**In discesa, le gambe lavorano da freno.** A ogni passo verso il basso, il polpaccio, la parte anteriore della tibia e i muscoli della coscia controllano la discesa mentre si allungano. Il piede scivola anche in avanti nella scarpa, quindi le dita e l’avampiede prendono più pressione. Per questo molte persone stanno bene in salita e hanno male dopo la discesa.',
-        'In uno studio di laboratorio, 15 escursionisti esperti uomini hanno camminato in discesa senza zaino, con uno zaino da giornata pari al 15% del peso corporeo e con uno zaino da spedizione del 30%. I bastoncini riducevano le forze di rotazione su caviglia, ginocchio e anca e il picco del lavoro di frenata a caviglia e ginocchio, con tutti gli zaini (Bohne e Abendroth-Smith, 2007). Nell’indagine sull’Appalachian Trail, il 70% usava bastoncini o un bastone, e i bastoncini andavano insieme a meno disturbi (Chrusch e Kavin, 2021). Quel collegamento nell’indagine non prova che i bastoncini prevengano gli infortuni.',
+        'In uno studio di laboratorio, 15 escursionisti esperti, tutti uomini, hanno camminato in discesa senza zaino, con uno zaino da giornata pari al 15% del peso corporeo e con uno zaino da spedizione del 30%. I bastoncini riducevano le forze di rotazione su caviglia, ginocchio e anca e il picco del lavoro di frenata a caviglia e ginocchio, con tutti gli zaini (Bohne e Abendroth-Smith, 2007). Nell’indagine sull’Appalachian Trail, il 70% usava bastoncini o un bastone, e i bastoncini andavano insieme a meno disturbi (Chrusch e Kavin, 2021). Quel collegamento nell’indagine non prova che i bastoncini prevengano gli infortuni.',
         'Consigli pratici, nessuno testato per prevenire il dolore ai piedi: fai passi più corti nelle discese ripide, stringi bene i lacci sul collo del piede così il piede non scivola in avanti, e tieni le unghie dei piedi corte.',
       ],
       sourceNote: 'Bohne 2007: 10 prove per condizione, momenti articolari sul piano sagittale ridotti a tutte e tre le articolazioni con i bastoncini; picco di assorbimento di potenza ridotto a caviglia e ginocchio. Forze misurate, non dolore o infortuni.',
@@ -128,7 +128,7 @@ export const HIKERS_IT: Guide = {
       h2: 'Qual è una buona routine prima e dopo un’escursione?',
       paragraphs: [
         'Tienila breve. Prima dell’escursione, un minuto o due per mettere in movimento le caviglie. Dopo, gli allungamenti per tallone e polpaccio. Nei giorni tra un’escursione e l’altra, i sollevamenti sulle punte per la forza. Sono le dosi di partenza di Walkito, prese dalle guide principali. Interrompi un esercizio per oggi se il dolore supera 6 su 10.',
-        'Sii onesto su cosa fanno gli allungamenti prima di un’escursione. In una sperimentazione su 1.538 reclute dell’esercito, in tre mesi di addestramento, allungare sei gruppi muscolari delle gambe prima di ogni sessione non riduceva gli infortuni in modo rilevante (Pope e colleghi, 2000). Gli allungamenti qui servono per il dolore al tallone e al polpaccio, dove la linea guida del 2023 dà agli allungamenti una **A**, e il lavoro di forza per il polpaccio ha una **B** (Koc e colleghi, 2023).',
+        'Meglio essere chiari su cosa fanno gli allungamenti prima di un’escursione. In una sperimentazione su 1.538 reclute dell’esercito, in tre mesi di addestramento, allungare sei gruppi muscolari delle gambe prima di ogni sessione non riduceva gli infortuni in modo rilevante (Pope e colleghi, 2000). Gli allungamenti qui servono per il dolore al tallone e al polpaccio, dove la linea guida del 2023 dà agli allungamenti una **A**, e il lavoro di forza per il polpaccio ha una **B** (Koc e colleghi, 2023).',
       ],
       exercises: [
         {
@@ -193,7 +193,7 @@ export const HIKERS_IT: Guide = {
         },
         {
           name: 'Sollevamenti sulle punte su due piedi (tra un’escursione e l’altra)',
-          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza una B. Un programma di sollevamenti sulle punte ha aiutato il dolore al tallone più in fretta degli allungamenti in una sperimentazione su 48\u00A0persone (Rathleff 2015).' },
+          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza una B. Un programma di sollevamenti sulle punte ha migliorato il dolore al tallone più in fretta degli allungamenti in una sperimentazione su 48\u00A0persone (Rathleff 2015).' },
           dose: '3\u00A0serie da 10, entrambi i piedi',
           often: 'Da 2 a 3\u00A0giorni a settimana, non il giorno dopo un’escursione impegnativa',
           feel: 'I polpacci che lavorano insieme',
@@ -210,7 +210,7 @@ export const HIKERS_IT: Guide = {
       h2: 'Quando smettere di camminare e farti visitare?',
       keyFact: 'In una revisione sulle fratture da stress, l’81% dei pazienti aveva dolore camminando, e una radiografia precoce ne trovava solo circa il 10% (Patel e colleghi, 2011).',
       paragraphs: [
-        '**Fermati e fatti controllare se il dolore è in un punto preciso di un osso e peggiora a ogni escursione.** È il quadro classico della frattura da stress, di solito nei metatarsi dietro le dita o nel calcagno. In una revisione sulle fratture da stress, l’81% dei pazienti aveva dolore camminando, e un punto dolente sull’osso si trovava dal 65,9 al 100% dei casi. Una radiografia alla prima visita ne individuava solo circa il 10%, quindi una radiografia normale non la esclude (Patel e colleghi, 2011). Se non sei sicuro di cosa sia, smetti con le escursioni finché non ti ha visitato un professionista sanitario.',
+        '**Fermati e fatti controllare se il dolore è in un punto preciso di un osso e peggiora a ogni escursione.** È il quadro classico della frattura da stress, di solito nei metatarsi dietro le dita o nel calcagno. In una revisione sulle fratture da stress, l’81% dei pazienti aveva dolore camminando, e un punto dolente sull’osso si trovava in una quota di casi dal 65,9 al 100%. Una radiografia alla prima visita ne individuava solo circa il 10%, quindi una radiografia normale non la esclude (Patel e colleghi, 2011). Se non sei sicuro di cosa sia, smetti con le escursioni finché non ti ha visitato un professionista sanitario.',
         'Fermati anche se non riesci a caricare il peso sul piede, se il dolore è iniziato con una storta, una caduta o uno schiocco, o se il piede è arrossato, caldo e gonfio. L’elenco completo è qui sotto.',
         'La maggior parte del dolore al tallone è meno drammatica. Nella fascite plantare, circa il 90% delle persone migliora con un trattamento non chirurgico, anche se possono servire mesi (Latt e colleghi, 2020). Vedi [quanto dura la fascite plantare](/it/quanto-dura-fascite-plantare/).',
       ],
