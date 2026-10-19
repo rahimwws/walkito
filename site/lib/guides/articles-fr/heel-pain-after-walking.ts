@@ -28,7 +28,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
   ],
   takeaways: [
     'La recommandation de 2023 sur la douleur au talon décrit la douleur de la fasciite plantaire comme «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0», mais elle cite aussi comme signe clé une douleur qui augmente avec une activité prolongée en charge (Koc et coll., 2023).',
-    'Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite (jusqu’où le pied remonte vers le tibia) était le facteur de risque indépendant le plus fort, devant un indice de masse corporelle supérieur à 30 et le fait de rester debout la plus grande partie de la journée de travail (Riddle et coll., 2003).',
+    'Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite (jusqu’où le pied remonte vers le tibia) était le facteur de risque indépendant le plus fort, devant un [indice de masse corporelle supérieur à 30](/fr/poids-et-fasciite-plantaire/) et le fait de rester debout la plus grande partie de la journée de travail (Riddle et coll., 2003).',
     'La recommandation donne aux étirements du fascia plantaire et du mollet sa meilleure note, **A**, et au renforcement un **B** (Koc et coll., 2023).',
     'Environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements, le travail du mollet et la gestion de la charge (Latt et coll., 2020).',
     'Une douleur au talon après la marche qui augmente à chaque sortie et ne se calme pas au repos peut évoquer une fracture de fatigue plutôt qu’une fasciite plantaire. Presser les côtés du talon est l’un des signes cliniques.',
@@ -51,8 +51,8 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
         {
           list: [
             '**Amincissement du coussinet graisseux du talon.** Le coussinet graisseux sous l’os du talon amortit chaque pas. Quand il s’amincit ou se déplace, l’os encaisse plus directement les chocs. Une revue exploratoire de 2022 a noté que la douleur du coussinet graisseux est plutôt une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus (Chang et coll., 2022). La douleur de la fasciite plantaire se situe en général à l’avant et à l’intérieur du talon. Celle du coussinet se situe juste sous le centre. Si marcher pieds nus sur du carrelage ou du béton est nettement pire qu’avec des chaussures amortissantes, l’amincissement du coussinet mérite d’être envisagé. Voir [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/) pour en savoir plus.',
-            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
-            '**Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied.',
+            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Pour les randonnées avec de longues montées et descentes, voyez [mal aux pieds après une randonnée](/fr/mal-aux-pieds-randonnee/). Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
+            '**Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied. [Fasciite plantaire ou fracture de fatigue](/fr/fasciite-plantaire-ou-fracture-de-fatigue/) compare les deux point par point.',
             '**Douleur projetée depuis le bas du dos ou compression nerveuse.** Une douleur au talon accompagnée d’engourdissements, de fourmillements ou de brûlures peut évoquer un problème de nerf, pas un problème de charge des tissus. C’est une raison de consulter d’abord un professionnel de santé.',
           ],
         },
@@ -157,7 +157,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
     {
       h2: 'Combien marcher quand le talon fait mal\u00A0?',
       paragraphs: [
-        'Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là.',
+        'Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là. [Combien peut-on marcher avec une fasciite plantaire\u00A0?](/fr/marcher-avec-fasciite-plantaire/) donne une règle simple fondée sur la douleur et une façon de reprendre progressivement.',
         'Une approche pratique\u00A0:',
         {
           list: [

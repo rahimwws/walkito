@@ -11670,9 +11670,9 @@ Puede contribuir, pero nadie lo ha demostrado. Un talón adolorido cambia tu for
 
 ### ¿La fascitis plantar puede causar dolor en otras partes de la pierna?
 
-**Probablemente a veces, por la forma de caminar.** La fascitis plantar no se extiende pierna arriba. Lo que cambia es cómo caminas. Cuando el talón duele, lo apoyas con más cuidado, empujas con menos fuerza al despegar y te cargas en la parte delantera del pie. Una revisión de 2017 de 19 estudios encontró justo ese patrón: menos carga en el talón al primer contacto, y más tiempo y más carga en el mediopié y el antepié.
+**Probablemente a veces, por la forma de caminar.** La fascitis plantar no se extiende pierna arriba. Lo que cambia es cómo caminas. Cuando el talón duele, lo apoyas con más cuidado, empujas con menos fuerza al despegar y cargas el peso en la parte delantera del pie. Una revisión de 2017 de 19 estudios encontró justo ese patrón: menos carga en el talón al primer contacto, y más tiempo y más carga en el mediopié y el antepié.
 
-El cambio puede ser tan pequeño que no lo notes. En esa revisión, el tiempo total que cada pie pasaba en el piso era más o menos el mismo que en personas sin dolor de talón. En un estudio de laboratorio, 18 personas sin dolor de pie caminaron con una bolita bajo el talón, y con las bolitas más grandes pasaron menos tiempo apoyadas en esa pierna (Levins y colegas, 1998). Eso es una cojera leve, al menos en una prueba corta de laboratorio con un dolor repentino.
+El cambio puede ser tan pequeño que no lo notes. En esa revisión, el tiempo total que cada pie pasaba en el piso era más o menos el mismo que en personas sin dolor de talón. En un estudio de laboratorio, 18 personas sin dolor de pie caminaron con una bolita bajo el talón, y con las bolitas más grandes pasaron menos tiempo apoyadas en esa pierna (Levins y colegas, 1998). Es decir, una cojera leve, al menos en una prueba corta de laboratorio con un dolor repentino.
 
 Así está la evidencia para cada zona:
 
@@ -11683,11 +11683,11 @@ Source: Levins AD, Skinner HB, Caiozzo VJ. Adaptive gait responses to plantar he
 
 **Los dos suelen aparecer juntos, pero ningún estudio muestra que el talón cause el dolor de rodilla.** El estudio más cercano revisó a 40 personas con osteoartritis de rodilla. 21 de ellas (52 %) tenían dolor de talón, y una ecografía mostró la fascia plantar engrosada en 25 (62 %). Las personas con fascitis plantar tenían con más frecuencia un tobillo rígido que no se doblaba bien hacia arriba (Miladi y colegas, 2023).
 
-Ese estudio no tuvo un grupo de comparación de personas sin artrosis de rodilla, así que no puede decir que el dolor de talón sea más común de lo normal. Los autores señalan que los dos problemas comparten factores de riesgo: la edad, el peso, el tipo de trabajo y los zapatos que no quedan bien. Un tobillo rígido podría ser el vínculo común, más que una articulación causando el problema de la otra.
+Ese estudio no tuvo un grupo de comparación de personas sin artrosis de rodilla, así que no puede decir que el dolor de talón sea más común de lo normal. Los autores señalan que los dos problemas comparten factores de riesgo: la edad, el peso, el tipo de trabajo y los zapatos que no quedan bien. Un tobillo rígido podría ser el vínculo común, en lugar de que una articulación cause el problema de la otra.
 
 Si la rodilla del mismo lado empezó a doler después de que comenzó el dolor de talón, y mejora a medida que el talón se calma, un cambio en la forma de caminar es una explicación razonable. Si la rodilla se hincha, se traba, se engancha o falla, tiene su propio problema y necesita su propia revisión.
 
-Para el dolor alrededor de la rótula, la guía de 2019 para el dolor patelofemoral recomienda ejercicio que combine la cadera y la rodilla (Willy y colegas, 2019). Si además tienes pie plano, la parte del pie en el tema de la rodilla está en [pie plano y dolor de rodilla](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/).
+Para el dolor alrededor de la rótula, la guía de 2019 para el dolor patelofemoral recomienda ejercicio que combine la cadera y la rodilla (Willy y colegas, 2019). Si además tienes pie plano, el papel del pie en el dolor de rodilla se explica en [pie plano y dolor de rodilla](https://walkito.site/es/pie-plano-y-dolor-de-rodilla/).
 
 Source: Miladi S, Bouzid S, Fazaa A, et al. Is there an association between plantar fasciitis and knee osteoarthritis? Musculoskeletal Care. 2023;21(4):1045–1052.
 Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health From the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(9):CPG1–CPG95.
@@ -11698,7 +11698,7 @@ Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Pr
 
 Eso encaja con dos explicaciones, y el estudio no puede elegir entre ellas. Un control débil de la cadera podría dejar que la pierna gire hacia adentro y cargue más el arco. O el dolor de talón podría cambiar tu forma de correr, y la cadera lo sigue. Ningún estudio ha medido el dolor de cadera en personas con fascitis plantar.
 
-Un estudio de 2009 con 25 corredoras con antecedentes de fascitis plantar y 25 corredoras comparables encontró que el grupo con fascitis plantar aterrizaba con un aumento más rápido de la fuerza y tenía arcos más bajos, pero no hubo diferencia en el movimiento del retropié y, a diferencia de los estudios de la pantorrilla, tenía más flexión del tobillo (Pohl y colegas, 2009). Si corres, encontrarás más en [ejercicios de pies para corredores](https://walkito.site/es/ejercicios-de-pies-para-corredores/).
+Un estudio de 2009 con 25 corredoras con antecedentes de fascitis plantar y 25 corredoras comparables encontró que el grupo con fascitis plantar aterrizaba con un aumento más rápido de la fuerza y tenía arcos más bajos. No hubo diferencia en el movimiento del retropié y, a diferencia de lo que muestran los estudios de la pantorrilla, ese grupo tenía más flexión del tobillo (Pohl y colegas, 2009). Si corres, encontrarás más en [ejercicios de pies para corredores](https://walkito.site/es/ejercicios-de-pies-para-corredores/).
 
 Source: Kongtong W, Khongprasert S. Hip muscle activity and frontal plane lower extremity kinematics in long-distance runners with plantar fasciitis. Journal of Applied Biomechanics. 2025;41(4):367–373.
 Source: Pohl MB, Hamill J, Davis IS. Biomechanical and anatomic factors associated with a history of plantar fasciitis in female runners. Clinical Journal of Sport Medicine. 2009;19(5):372–376.
@@ -11830,9 +11830,9 @@ Si tu dolor de talón no sigue el patrón habitual de la [fascitis plantar](http
 
 - El dolor típico de la fascitis plantar está cerca de la parte interna del talón, es peor con el primer paso de la mañana o después de estar sentado, mejora con la actividad y luego empeora a medida que la actividad se alarga (Latt y colegas, 2020).
 - En 250 personas con dolor en la planta del talón, la fascitis plantar explicó el 53,2 %, la atrofia de la almohadilla grasa el 14,8 % y las dos juntas el 9,2 % (Yi y colegas, 2011).
-- Un dolor de talón con ardor, como una descarga eléctrica o con hormigueo suele apuntar a un nervio. Una revisión estima que el atrapamiento del nervio de Baxter podría explicar hasta el 20 % del dolor de talón crónico (Tedeschi, 2025).
+- Si el dolor de talón arde, se siente como una descarga eléctrica u hormiguea, suele apuntar a un nervio. Una revisión estima que el atrapamiento del nervio de Baxter podría explicar hasta el 20 % del dolor de talón crónico (Tedeschi, 2025).
 - Una fractura por estrés del talón suele doler con la actividad, no con el primer paso, y en 30 reclutas militares solo se vio en la radiografía simple en el 15 % (Latt y colegas, 2020; Sormaala y colegas, 2006).
-- El dolor en los dos talones junto con otras articulaciones dolorosas o rígidas, o una espalda rígida, sugiere una causa inflamatoria que necesita un médico, no solo estiramientos (Latt y colegas, 2020).
+- El dolor en los dos talones junto con otras articulaciones dolorosas o rígidas, o una espalda rígida, sugiere una causa inflamatoria que requiere atención médica, no solo estiramientos (Latt y colegas, 2020).
 
 ### ¿Qué más puede causar dolor de talón además de la fascitis plantar?
 
@@ -11926,7 +11926,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 
 Si tu dolor encaja con otra fila de la tabla, o no estás seguro, consulta a un médico general, fisioterapeuta o podólogo. Lleva una nota corta: dónde duele, cuándo es peor, qué lo empeora, si afecta a uno o a los dos pies y cualquier otra cosa que lo acompañe, como adormecimiento, hinchazón o dolor de espalda. Eso es lo que usa un profesional para distinguir las causas parecidas.
 
-Si llevas varias semanas haciendo ejercicios para la fascitis plantar y nada ha cambiado, eso también merece una consulta. El tratamiento sin cirugía da alivio completo a cerca del 90 % de las personas con fascitis plantar, aunque puede tardar de tres a seis meses, así que un dolor que no se mueve es un motivo para revisar el diagnóstico (Latt y colegas, 2020). Consulta [cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/) y la lista completa de [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
+Si llevas varias semanas haciendo ejercicios para la fascitis plantar y nada ha cambiado, eso también merece una consulta. Sin cirugía, cerca del 90 % de las personas con fascitis plantar logra un alivio completo, aunque puede tardar de tres a seis meses, así que un dolor que no se mueve es un motivo para revisar el diagnóstico (Latt y colegas, 2020). Consulta [cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/) y la lista completa de [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
 
 - **Estiramiento plantar (solo fascitis plantar)** (2 series de 30 segundos, cada pie): Siéntate y cruza el pie sobre la otra rodilla. Jala los dedos hacia atrás hasta sentir el estiramiento en el arco, no en la pantorrilla. Haz el primero en la orilla de la cama, antes de que el pie toque el piso.
 - **Estiramiento de pantorrilla (solo fascitis plantar)** (2 series de 30 segundos, cada pierna): Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón de atrás bien apoyado en el piso y la cadera hacia adelante. Una pantorrilla tensa jala del talón todo el día, así que este estiramiento importa aunque lo sientas más arriba.
@@ -11963,7 +11963,7 @@ No puedes saberlo con seguridad sin una exploración, pero algunas característi
 
 #### ¿El dolor de talón puede venir de la espalda?
 
-Sí. Un nervio pinzado en la zona lumbar a nivel de L5 o S1 puede causar dolor, adormecimiento u hormigueo en el talón y la planta. Es relativamente común y suele venir con dolor de espalda o dolor que baja por la pierna. La debilidad en el pie o un adormecimiento que se extiende necesitan un médico pronto.
+Sí. Un nervio pinzado en la zona lumbar a nivel de L5 o S1 puede causar dolor, adormecimiento u hormigueo en el talón y la planta. Es relativamente común y suele venir con dolor de espalda o dolor que baja por la pierna. Si hay debilidad en el pie o un adormecimiento que se extiende, consulta pronto a un médico.
 
 #### ¿Cómo se siente el dolor de nervio en el talón?
 
@@ -11979,11 +11979,11 @@ A veces, pero una radiografía normal descarta menos de lo que la gente cree. En
 
 #### ¿Por qué mi fascitis plantar no mejora?
 
-Hay varias razones posibles, y una es que quizá no sea fascitis plantar. Cerca del 90 % de las personas con fascitis plantar mejora con tratamiento sin cirugía, así que un dolor que no ha cambiado tras varias semanas de estiramientos y trabajo de fuerza constantes es un buen motivo para que un profesional revise el diagnóstico.
+Hay varias razones posibles, y una es que quizá no sea fascitis plantar. Cerca del 90 % de las personas con fascitis plantar mejora sin cirugía, así que un dolor que no ha cambiado tras varias semanas de estiramientos y trabajo de fuerza constantes es un buen motivo para que un profesional revise el diagnóstico.
 
 #### ¿Qué causa dolor de talón en niños si no es fascitis plantar?
 
-En niños que todavía están creciendo, la causa más común es la enfermedad de Sever, una irritación del cartílago de crecimiento en la parte de atrás del hueso del talón. Duele durante y después de deportes con carreras y saltos, y un talón que duele al apretarlo por los dos lados apunta a ella. Un profesional debe revisar el dolor de talón de un niño que no se calma.
+En niños que todavía están creciendo, la causa más común es la enfermedad de Sever, una irritación del cartílago de crecimiento en la parte de atrás del hueso del talón. Duele durante y después de deportes con carreras y saltos, y un talón que duele al apretarlo por los dos lados apunta a ella. Si el dolor de talón de un niño no se calma, debe revisarlo un profesional.
 
 #### ¿Puedo hacer ejercicios para la fascitis plantar si no estoy seguro de qué es?
 
@@ -12366,7 +12366,7 @@ Sí. La guía de 2023 les pide a los profesionales de la salud que busquen otras
 
 Pueden ayudar como parte de un plan más amplio. La guía de 2023 recomienda no usar plantillas como único tratamiento para el alivio a corto plazo (grado B) y dice que pueden usarse combinadas con otros tratamientos (grado C). Combínalas con estiramientos y trabajo de fuerza de pantorrilla en lugar de depender solo de ellas.
 
-## Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 50
+## Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 60
 
 Language: Spanish (Español) · https://walkito.site/es/fascitis-plantar-menopausia/ · published 2026-10-18 · updated 2026-10-18
 
@@ -12380,7 +12380,7 @@ La fascitis plantar es más común en mujeres en la edad de la menopausia: en re
 
 ### ¿La fascitis plantar es más común cerca de la menopausia?
 
-**Sí, las fechas coinciden.** Un estudio de los Países Bajos revisó los registros de medicina familiar de cerca de 1,9 millones de pacientes entre 2013 y 2016 y encontró 18 004 casos nuevos de dolor plantar de talón, el término general que incluye la fascitis plantar. El 62 % fueron mujeres. En conjunto, las mujeres tuvieron 4,64 casos nuevos por cada 1000 pacientes-año y los hombres 2,98 (Rasenberg y colegas, 2019).
+**Sí, las edades coinciden.** Un estudio de los Países Bajos revisó los registros de medicina familiar de cerca de 1,9 millones de pacientes entre 2013 y 2016 y encontró 18 004 casos nuevos de dolor plantar de talón, el término general que incluye la fascitis plantar. El 62 % fueron mujeres. En conjunto, las mujeres tuvieron 4,64 casos nuevos por cada 1000 pacientes-año y los hombres 2,98 (Rasenberg y colegas, 2019).
 
 Lo llamativo es el patrón por edad. En mujeres, los casos nuevos llegaron a su pico, **11,23 por cada 1000 pacientes-año, a los 50 años**. En hombres, el pico fue más bajo y más tardío: 5,54 a los 55 (Rasenberg y colegas, 2019). La edad promedio de la menopausia en el Reino Unido es de 51 años, y por eso los investigadores han empezado a preguntarse si las dos cosas están relacionadas (Douglas-Harris y colegas, 2026).
 
@@ -12393,7 +12393,7 @@ Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognos
 
 ### ¿La menopausia causa fascitis plantar?
 
-**Todavía nadie lo sabe.** Las autoras y los autores de un estudio de 2026 centrado en la menopausia y el dolor de talón escriben que no está claro si existe una relación causal (Douglas-Harris y colegas, 2026). Ese estudio fue una serie de grupos focales con 17 mujeres, no una medición de hormonas ni del tejido del talón. Muchas páginas presentan la relación como un hecho. La evidencia todavía no lo respalda.
+**Todavía nadie lo sabe.** Los autores de un estudio de 2026 centrado en la menopausia y el dolor de talón escriben que no está claro si existe una relación causal (Douglas-Harris y colegas, 2026). Ese estudio fue una serie de grupos focales con 17 mujeres, no una medición de hormonas ni del tejido del talón. Muchas páginas presentan la relación como un hecho. La evidencia todavía no lo respalda.
 
 Esto es lo que se sabe y lo que no:
 
@@ -12403,7 +12403,7 @@ Source: Lee H, Petrofsky J. Differences between men and women in balance and tre
 Source: Hansen M, Kjaer M. Influence of sex and estrogen on musculotendinous protein turnover at rest and after exercise. Exercise and Sport Sciences Reviews. 2014;42(4):183–192.
 Source: Lu CB, Liu PF, Zhou YS, et al. Musculoskeletal pain during the menopausal transition: a systematic review and meta-analysis. Neural Plasticity. 2020;2020:8842110.
 
-### ¿Qué más cambia entre los 40 y los 50 que puede cargar el talón?
+### ¿Qué más cambia entre los 40 y los 60 que puede cargar el talón?
 
 La fascitis plantar suele empezar cuando la carga sobre el talón supera lo que puede tolerar y recuperar. Varias cosas que a menudo cambian en la mediana edad se suman a esa carga:
 
@@ -12457,7 +12457,7 @@ Source: Ansari M, Hussain F, Shopon M, Ajmal H, Asif M, David S. Hormonal shifts
 
 ### ¿Cuánto dura la fascitis plantar en la mediana edad?
 
-Cerca del 90 % de las personas con fascitis plantar mejora con tratamiento sin cirugía, como estiramientos y plantillas, aunque muchas veces tarda de 3 a 6 meses (Latt y colegas, 2020). Ningún estudio ha analizado la recuperación en mujeres que pasan por la menopausia en particular.
+Cerca del 90 % de las personas con fascitis plantar mejora sin cirugía, con medidas como estiramientos y plantillas, aunque muchas veces tarda de 3 a 6 meses (Latt y colegas, 2020). Ningún estudio ha analizado la recuperación en mujeres que pasan por la menopausia en particular.
 
 En algunas personas dura más. En un seguimiento de 174 personas, el 54 % no tenía síntomas al final del seguimiento, en promedio unos 9 años después del diagnóstico, y el riesgo de seguir con ella fue mayor en las mujeres y en las personas con dolor en los dos talones (Hansen y colegas, 2018). Es una razón para empezar pronto con los ejercicios y mantenerlos, no para esperar lo peor. [Cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/) tiene los plazos completos.
 
@@ -12525,9 +12525,9 @@ La fascitis plantar tiene un patrón típico: dolor bajo el talón que es peor c
 
 Un peso más alto se asocia con la fascitis plantar. En una revisión de 51 estudios, un IMC mayor de 27 se asoció con 3,7 veces más probabilidades, sobre todo en personas que no son deportistas. Pero el peso es un factor entre varios. En un seguimiento largo de 174 personas, el IMC no predijo quién seguía con dolor de talón años después.
 
-#### ¿La fascitis plantar se quita después de la menopausia?
+#### ¿La fascitis plantar desaparece después de la menopausia?
 
-Ningún estudio ha seguido el dolor de talón a lo largo de la menopausia, así que no hay una cifra. Para la fascitis plantar en general, cerca del 90 % de las personas mejora con tratamiento sin cirugía, muchas veces en 3 a 6 meses. En un seguimiento largo, el riesgo de que durara fue mayor en las mujeres y en las personas con dolor en los dos talones.
+Ningún estudio ha seguido el dolor de talón a lo largo de la menopausia, así que no hay una cifra. Para la fascitis plantar en general, cerca del 90 % de las personas mejora sin cirugía, muchas veces en 3 a 6 meses. En un seguimiento largo, el riesgo de que durara fue mayor en las mujeres y en las personas con dolor en los dos talones.
 
 ## Sobre Walkito
 

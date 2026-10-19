@@ -26,7 +26,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
   ],
   takeaways: [
     'Die Leitlinie von 2023 zu Fersenschmerzen beschreibt den Schmerz bei Plantarfasziitis als „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“, nennt aber auch Schmerz, der bei längerer Belastung im Stehen und Gehen zunimmt, als wichtiges Merkmal (Koc und Kollegen, 2023).',
-    'In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen war eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein anziehen lässt) der stärkste unabhängige Risikofaktor, noch vor einem Body-Mass-Index über 30 und Stehen während des größten Teils des Arbeitstags (Riddle und Kollegen, 2003).',
+    'In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100\u00A0Kontrollen war eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein anziehen lässt) der stärkste unabhängige Risikofaktor, noch vor einem [Body-Mass-Index über 30](/de/gewicht-und-plantarfasziitis/) und Stehen während des größten Teils des Arbeitstags (Riddle und Kollegen, 2003).',
     'Die Leitlinie gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** und dem Krafttraining Grad **B** (Koc und Kollegen, 2023).',
     'Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit konservativer Behandlung wie Dehnen, Wadentraining und Belastungssteuerung besser (Latt und Kollegen, 2020).',
     'Fersenschmerzen nach dem Gehen, die mit jeder Einheit zunehmen und in Ruhe nicht nachlassen, können eher auf einen Ermüdungsbruch als auf eine Plantarfasziitis hindeuten. Schmerz beim Zusammendrücken der Fersenseiten ist ein klinisches Zeichen dafür.',
@@ -49,8 +49,8 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
         {
           list: [
             '**Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
-            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
+            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Auf Wanderungen mit langen Anstiegen und Abstiegen geht [Fußschmerzen nach dem Wandern](/de/fussschmerzen-nach-wanderung/) ein. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst. [Plantarfasziitis oder Ermüdungsbruch](/de/plantarfasziitis-oder-ermuedungsbruch/) vergleicht beides direkt.',
             '**Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zum Arzt oder zur Ärztin zu gehen.',
           ],
         },
@@ -155,7 +155,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
     {
       h2: 'Wie weit solltest du gehen, wenn deine Ferse wehtut?',
       paragraphs: [
-        'Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu finden, die deine Ferse verkraftet, ohne dass es am nächsten Morgen schlimmer wird, und von dort aus zu steigern.',
+        'Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu finden, die deine Ferse verkraftet, ohne dass es am nächsten Morgen schlimmer wird, und von dort aus zu steigern. Eine einfache Schmerzregel und den Weg zurück zu längeren Strecken findest du unter [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
         'Ein praktischer Ansatz:',
         {
           list: [

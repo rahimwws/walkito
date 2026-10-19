@@ -108,7 +108,7 @@ export const BAREFOOT_FR: Guide = {
         'Le carrelage ou le parquet n’offrent aucun amorti au talon, et les premiers pas après le repos sont le moment où la fasciite plantaire fait en général le plus mal. Notre page [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) propose un étirement avant de vous lever et quelque chose aux pieds pour ces premiers pas.',
         'L’amorti sous le talon pourrait compter. Dans une étude de 2023, Landorf et ses collègues ont comparé 50\u00A0personnes ayant mal sous le talon à 25\u00A0personnes comparables sans douleur. Celles qui avaient mal restaient debout 3,4\u00A0heures de plus par jour et portaient des chaussures au talon plus dur. Cela montre un lien, pas une cause.',
         'Une douleur profonde au centre du talon, pire pieds nus sur un sol dur, peut aussi venir du coussinet graisseux du talon (le coussin de graisse sous l’os du talon). Voir [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/) pour ce cas de figure.',
-        'De courts moments pieds nus sur l’herbe ou le sable sont plus doux. S’ils augmentent votre douleur au talon le lendemain matin, c’était trop.',
+        'De courts moments pieds nus sur l’herbe ou le sable sont plus doux. S’ils augmentent votre douleur au talon le lendemain matin, c’était trop. Le même contrôle du lendemain matin vaut pour toute marche\u00A0: voyez [marcher avec une fasciite plantaire](/fr/marcher-avec-fasciite-plantaire/).',
       ],
       cites: [CITE.landorfFootwear],
     },

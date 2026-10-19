@@ -197,7 +197,7 @@ export const STANDING_DESK_FR: Guide = {
         },
         'Écoutez vos pieds et le bas de votre dos. Si la gêne s’installe, asseyez-vous plus tôt au lieu de forcer.',
         'Ajoutez un tapis dès le début si vous en avez un. Portez des chaussures avec un peu d’amorti, même à la maison. Faites les étirements du mollet du tableau ci-dessus au moins une fois par jour.',
-        'Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-infirmieres/).',
+        'Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](/fr/mal-aux-pieds-infirmieres/). Il existe aussi des pages pour les [enseignants](/fr/mal-aux-pieds-enseignants/), les [employés du commerce et des entrepôts](/fr/mal-aux-pieds-commerce-entrepot/), les [cuisiniers et le personnel de cuisine](/fr/mal-aux-pieds-cuisiniers/) et les [coiffeurs](/fr/mal-aux-pieds-coiffeurs/).',
       ],
       cites: [CITE.buckley],
     },

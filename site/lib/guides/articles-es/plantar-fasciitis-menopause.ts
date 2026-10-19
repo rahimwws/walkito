@@ -17,8 +17,8 @@ export const PF_MENOPAUSE_ES: Guide = {
   updated: '2026-10-18',
   title: 'Fascitis plantar y menopausia: dolor de talón de 40 a 60',
   description:
-    'La fascitis plantar alcanza su pico en mujeres cerca de los 50, al doble que en hombres. Qué se sabe de la menopausia y el talón, qué no y qué ayuda.',
-  h1: 'Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 50',
+    'La fascitis plantar alcanza su pico en mujeres cerca de los 50, casi al doble que en hombres. Qué se sabe de la menopausia y el talón, qué no y qué ayuda.',
+  h1: 'Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 60',
   lede:
     'La fascitis plantar es más común en mujeres en la edad de la menopausia: en registros de medicina familiar de los Países Bajos, los casos nuevos en mujeres llegaron a su pico, 11,23 por cada 1000\u00A0pacientes-año, a los 50\u00A0años, frente a un pico de 5,54 en hombres a los 55 (Rasenberg y colegas, 2019). No se sabe si la bajada de las hormonas la causa. La relación es plausible, pero ningún estudio la ha demostrado (Douglas-Harris y colegas, 2026). Lo que sí ayuda es lo mismo que a cualquier edad: los estiramientos de fascia plantar y de pantorrilla, con grado **A** en la guía de 2023 para el dolor de talón, y el trabajo de fuerza para la pantorrilla, con grado **B** (Koc y colegas, 2023).',
   intro: [
@@ -37,7 +37,7 @@ export const PF_MENOPAUSE_ES: Guide = {
       h2: '¿La fascitis plantar es más común cerca de la menopausia?',
       keyFact: 'Los casos nuevos de dolor plantar de talón llegaron a su pico, 11,23 por cada 1000\u00A0pacientes-año, en mujeres de 50\u00A0años, frente a 5,54 en hombres de 55 (Rasenberg y colegas, 2019).',
       paragraphs: [
-        '**Sí, las fechas coinciden.** Un estudio de los Países Bajos revisó los registros de medicina familiar de cerca de 1,9\u00A0millones de pacientes entre 2013 y 2016 y encontró 18\u00A0004\u00A0casos nuevos de dolor plantar de talón, el término general que incluye la fascitis plantar. El 62\u00A0% fueron mujeres. En conjunto, las mujeres tuvieron 4,64\u00A0casos nuevos por cada 1000\u00A0pacientes-año y los hombres 2,98 (Rasenberg y colegas, 2019).',
+        '**Sí, las edades coinciden.** Un estudio de los Países Bajos revisó los registros de medicina familiar de cerca de 1,9\u00A0millones de pacientes entre 2013 y 2016 y encontró 18\u00A0004\u00A0casos nuevos de dolor plantar de talón, el término general que incluye la fascitis plantar. El 62\u00A0% fueron mujeres. En conjunto, las mujeres tuvieron 4,64\u00A0casos nuevos por cada 1000\u00A0pacientes-año y los hombres 2,98 (Rasenberg y colegas, 2019).',
         'Lo llamativo es el patrón por edad. En mujeres, los casos nuevos llegaron a su pico, **11,23 por cada 1000\u00A0pacientes-año, a los 50\u00A0años**. En hombres, el pico fue más bajo y más tardío: 5,54 a los 55 (Rasenberg y colegas, 2019). La edad promedio de la menopausia en el Reino Unido es de 51\u00A0años, y por eso los investigadores han empezado a preguntarse si las dos cosas están relacionadas (Douglas-Harris y colegas, 2026).',
         'La guía de 2023 para el dolor de talón dice que la fascitis plantar es más común entre los 40 y los 60\u00A0años (Koc y colegas, 2023). Además, en las mujeres suele durar más: en un seguimiento de 5 a 15\u00A0años de 174\u00A0personas, el riesgo de seguir con fascitis plantar fue mayor en las mujeres y en las personas con dolor en los dos talones (Hansen y colegas, 2018).',
       ],
@@ -59,7 +59,7 @@ export const PF_MENOPAUSE_ES: Guide = {
       h2: '¿La menopausia causa fascitis plantar?',
       keyFact: 'De 17\u00A0mujeres con dolor de talón en la perimenopausia o la posmenopausia, el 76\u00A0% no lo había relacionado con la menopausia, y la mayoría dijo que nadie lo mencionó cuando buscó ayuda (Douglas-Harris y colegas, 2026).',
       paragraphs: [
-        '**Todavía nadie lo sabe.** Las autoras y los autores de un estudio de 2026 centrado en la menopausia y el dolor de talón escriben que no está claro si existe una relación causal (Douglas-Harris y colegas, 2026). Ese estudio fue una serie de grupos focales con 17\u00A0mujeres, no una medición de hormonas ni del tejido del talón. Muchas páginas presentan la relación como un hecho. La evidencia todavía no lo respalda.',
+        '**Todavía nadie lo sabe.** Los autores de un estudio de 2026 centrado en la menopausia y el dolor de talón escriben que no está claro si existe una relación causal (Douglas-Harris y colegas, 2026). Ese estudio fue una serie de grupos focales con 17\u00A0mujeres, no una medición de hormonas ni del tejido del talón. Muchas páginas presentan la relación como un hecho. La evidencia todavía no lo respalda.',
         'Esto es lo que se sabe y lo que no:',
       ],
       table: {
@@ -74,12 +74,12 @@ export const PF_MENOPAUSE_ES: Guide = {
       },
       after: [
         'La idea hormonal es razonable. En 15\u00A0mujeres jóvenes, la fascia plantar estaba más floja cerca de la ovulación que durante la menstruación, y el equilibrio era un poco menos estable (Lee y Petrofsky, 2018). Una revisión de estudios de laboratorio sugiere que el estrógeno podría hacer los tendones menos rígidos, un efecto que el entrenamiento podría modificar (Hansen y Kjaer, 2014). Y el dolor musculoesquelético en general es común en la transición a la menopausia: una revisión de 16\u00A0estudios encontró que el 71\u00A0% de las mujeres en la perimenopausia lo reportaba (Lu y colegas, 2020).',
-        'Pero ninguno de estos estudios analizó la fascitis plantar en mujeres que pasan por la menopausia. Muchos cambios ocurren a la misma edad, y eso hace difícil separar las hormonas de todo lo demás. La siguiente sección repasa esos otros cambios, porque en algunos de ellos sí puedes trabajar.',
+        'Pero ninguno de estos estudios analizó la fascitis plantar en mujeres que pasan por la menopausia. Muchos cambios ocurren a la misma edad, y eso hace difícil separar las hormonas de todo lo demás. La siguiente sección repasa esos otros cambios, porque sobre algunos de ellos sí puedes actuar.',
       ],
       cites: [CITE.douglasHarrisMenopause, CITE.rasenbergIncidence, CITE.leePetrofskyFascia, CITE.hansenKjaerEstrogen, CITE.luMenopausePain],
     },
     {
-      h2: '¿Qué más cambia entre los 40 y los 50 que puede cargar el talón?',
+      h2: '¿Qué más cambia entre los 40 y los 60 que puede cargar el talón?',
       keyFact: 'En un estudio de casos y controles, un tobillo rígido se asoció con 23,3\u00A0veces más probabilidades de fascitis plantar, y pasar la mayor parte de la jornada de pie con 3,6\u00A0veces más (Riddle y colegas, 2003).',
       paragraphs: [
         'La fascitis plantar suele empezar cuando la carga sobre el talón supera lo que puede tolerar y recuperar. Varias cosas que a menudo cambian en la mediana edad se suman a esa carga:',
@@ -165,7 +165,7 @@ export const PF_MENOPAUSE_ES: Guide = {
           stop: 'Dolor de talón que llega a 6 de 10, o peor a la mañana siguiente',
           image: 'Ejercicio: elevación de talones con toalla',
           media: 'heel_raise_towel',
-          caption: 'Elevación de talones con toalla: tres segundos arriba, dos arriba quieto, tres abajo',
+          caption: 'Elevación de talones con toalla: tres segundos para subir, dos arriba, tres para bajar',
           alt: 'Una figura sube en puntas sobre un escalón con una toalla enrollada, con las pantorrillas resaltadas',
         },
         {
@@ -197,7 +197,7 @@ export const PF_MENOPAUSE_ES: Guide = {
     {
       h2: '¿Cuánto dura la fascitis plantar en la mediana edad?',
       paragraphs: [
-        'Cerca del 90\u00A0% de las personas con fascitis plantar mejora con tratamiento sin cirugía, como estiramientos y plantillas, aunque muchas veces tarda de 3 a 6\u00A0meses (Latt y colegas, 2020). Ningún estudio ha analizado la recuperación en mujeres que pasan por la menopausia en particular.',
+        'Cerca del 90\u00A0% de las personas con fascitis plantar mejora sin cirugía, con medidas como estiramientos y plantillas, aunque muchas veces tarda de 3 a 6\u00A0meses (Latt y colegas, 2020). Ningún estudio ha analizado la recuperación en mujeres que pasan por la menopausia en particular.',
         'En algunas personas dura más. En un seguimiento de 174\u00A0personas, el 54\u00A0% no tenía síntomas al final del seguimiento, en promedio unos 9\u00A0años después del diagnóstico, y el riesgo de seguir con ella fue mayor en las mujeres y en las personas con dolor en los dos talones (Hansen y colegas, 2018). Es una razón para empezar pronto con los ejercicios y mantenerlos, no para esperar lo peor. [Cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) tiene los plazos completos.',
         'Si estás aumentando tu actividad en la mediana edad, por salud o por el peso, súbela paso a paso en lugar de dejarla: la guía señala que la fascitis plantar suele empezar después de un cambio en la actividad con carga (Koc y colegas, 2023). [Caminar con fascitis plantar](/es/caminar-con-fascitis-plantar/) explica cómo retomar la caminata paso a paso.',
       ],
@@ -258,9 +258,9 @@ export const PF_MENOPAUSE_ES: Guide = {
       a: 'Un peso más alto se asocia con la fascitis plantar. En una revisión de 51\u00A0estudios, un IMC mayor de 27 se asoció con 3,7\u00A0veces más probabilidades, sobre todo en personas que no son deportistas. Pero el peso es un factor entre varios. En un seguimiento largo de 174\u00A0personas, el IMC no predijo quién seguía con dolor de talón años después.',
     },
     {
-      q: '¿La fascitis plantar se quita después de la menopausia?',
+      q: '¿La fascitis plantar desaparece después de la menopausia?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'Ningún estudio ha seguido el dolor de talón a lo largo de la menopausia, así que no hay una cifra. Para la fascitis plantar en general, cerca del 90\u00A0% de las personas mejora con tratamiento sin cirugía, muchas veces en 3 a 6\u00A0meses. En un seguimiento largo, el riesgo de que durara fue mayor en las mujeres y en las personas con dolor en los dos talones.',
+      a: 'Ningún estudio ha seguido el dolor de talón a lo largo de la menopausia, así que no hay una cifra. Para la fascitis plantar en general, cerca del 90\u00A0% de las personas mejora sin cirugía, muchas veces en 3 a 6\u00A0meses. En un seguimiento largo, el riesgo de que durara fue mayor en las mujeres y en las personas con dolor en los dos talones.',
     },
   ],
   redFlags: {

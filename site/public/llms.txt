@@ -346,7 +346,7 @@ own full-text file.
 - [Dolor de talón que no es fascitis plantar: causas parecidas y cómo se distinguen](https://walkito.site/es/dolor-de-talon-que-no-es-fascitis/): Dolor de talón que no es fascitis plantar: almohadilla grasa, nervios, fractura por estrés, Aquiles, Haglund, Sever, artritis y la espalda, en una tabla.
 - [Brote de fascitis plantar: qué lo desencadena y qué hacer en las primeras 48 horas](https://walkito.site/es/brote-de-fascitis-plantar/): Brote o recaída de fascitis plantar: qué lo desencadena, qué hacer en las primeras 48 horas, cómo retomar los ejercicios y cuándo no es un brote.
 - [¿La fascitis plantar no mejora? Motivos y qué cambiar](https://walkito.site/es/fascitis-plantar-no-mejora/): ¿Tu fascitis plantar no mejora? Seis motivos comunes por los que se estanca, cómo reconocerlos, qué cambiar y qué opciones hay si el ejercicio no basta.
-- [Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 50](https://walkito.site/es/fascitis-plantar-menopausia/): La fascitis plantar alcanza su pico en mujeres cerca de los 50, al doble que en hombres. Qué se sabe de la menopausia y el talón, qué no y qué ayuda.
+- [Fascitis plantar y menopausia: por qué el dolor de talón suele empezar entre los 40 y los 60](https://walkito.site/es/fascitis-plantar-menopausia/): La fascitis plantar alcanza su pico en mujeres cerca de los 50, casi al doble que en hombres. Qué se sabe de la menopausia y el talón, qué no y qué ayuda.
 - [Sobre Walkito](https://walkito.site/es/sobre-walkito/)
 - [Support](https://walkito.site/es/soporte/) · [Privacy](https://walkito.site/es/privacidad/) · [Terms of use](https://walkito.site/es/terminos/)
 - Full text in Spanish: https://walkito.site/es/llms-full.txt

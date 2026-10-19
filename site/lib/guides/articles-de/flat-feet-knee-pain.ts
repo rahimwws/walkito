@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_DE: Guide = {
         'Ob das Knie geschwollen ist, blockiert hat, weggeknickt ist oder bei einer Verdrehung oder einem Sturz verletzt wurde.',
         'Wie sich Knie, Hüfte und Fuß bei einer Kniebeuge oder einem Schritt nach unten bewegen.',
         'Die Kraft der Muskeln an der Außenseite und Rückseite der Hüfte und des Oberschenkels.',
-        'Ob deine Plattfüße flexibel sind (das Gewölbe kommt zurück, wenn du sitzt oder auf den Zehen stehst) oder starr. Den schnellen Test findest du unter [Plattfuß](/de/plattfuss/).',
+        'Ob deine Plattfüße flexibel sind (das Gewölbe kommt zurück, wenn du sitzt oder auf den Zehen stehst) oder starr. Den schnellen Test findest du unter [Plattfuß](/de/plattfuss/). Alle vier Checks für zu Hause stehen im [Plattfuß-Test](/de/plattfuss-test/).',
         'Bei älteren Erwachsenen Zeichen einer Kniearthrose, für die vielleicht ein Röntgenbild nötig ist.',
       ],
       cites: [CITE.willyPfpGuideline],

@@ -51,7 +51,7 @@ export const PTTD_DE: Guide = {
             '**Stadium IV** betrifft zusätzlich das Sprunggelenk. Das Sprunggelenk kippt in eine Valgusstellung, es neigt sich also nach außen. Das ist das am weitesten fortgeschrittene Stadium und braucht in der Regel einen chirurgischen Eingriff.',
           ],
         },
-        '**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Ärztin oder ein Arzt das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
+        '**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Ärztin oder ein Arzt das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein [schneller Suchtest](/de/plattfuss-test/): Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

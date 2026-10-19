@@ -131,7 +131,7 @@ Stützende Schuhe helfen, aber Einlagen allein reichen für die meisten Menschen
 
 Nachtschienen, 1 bis 3 Monate im Schlaf getragen, bekommen den höchsten Empfehlungsgrad der Leitlinie, **A**, für Menschen, die bei den ersten Schritten jeden Morgen immer wieder Schmerzen haben. Sie halten das Sprunggelenk so, dass sich die Plantarfaszie über Nacht nicht verkürzt. Frag in deiner Arztpraxis oder Physiotherapie, ob Nachtschienen für dich geeignet sind.
 
-Die Leitlinie bewertet keine bestimmten Schuhtypen, aber Schuhe ohne Halt gelten allgemein als Risikofaktor. Schuhe mit Gewölbestütze und fester Fersenkappe übernehmen einen Teil der Last, die die Plantarfaszie sonst allein tragen würde. Wenn deine Füße nach einem langen Tag auf den Beinen wehtun, lies [Fußschmerzen vom langen Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/). Wer im Schichtdienst arbeitet, kann mit [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/) anfangen.
+Die Leitlinie bewertet keine bestimmten Schuhtypen, aber Schuhe ohne Halt gelten allgemein als Risikofaktor. Schuhe mit Gewölbestütze und fester Fersenkappe übernehmen einen Teil der Last, die die Plantarfaszie sonst allein tragen würde. Wenn deine Füße nach einem langen Tag auf den Beinen wehtun, lies [Fußschmerzen vom langen Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/). Wer im Schichtdienst arbeitet, kann mit [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/) anfangen. Außerdem gibt es Seiten für [Lehrkräfte](https://walkito.site/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](https://walkito.site/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](https://walkito.site/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](https://walkito.site/de/fussschmerzen-friseure/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -438,7 +438,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 
 In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12 Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzüberwachung während der Reha „daher eine wertvolle Option sein könnte“.
 
-Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen.
+Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen. Ein Kraftprogramm fürs Laufen findest du unter [Fußübungen für Läufer](https://walkito.site/de/fussuebungen-fuer-laeufer/), und [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/) geht auf Anstiege, Abstiege und Rucksackgewicht ein.
 
 Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
 
@@ -1008,7 +1008,7 @@ Die Muskeln, die deine Zehen beugen und spreizen, heißen kurze Fußmuskeln. Sie
 
 ### Was verursacht Schmerzen im Fußballen?
 
-**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein [Hohlfuß](https://walkito.site/de/hohlfuss-uebungen/) und [verkürzte Wadenmuskeln](https://walkito.site/de/verspannte-waden/) können alle dazu beitragen.
+**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein [Hohlfuß](https://walkito.site/de/hohlfuss-uebungen/) und [verkürzte Wadenmuskeln](https://walkito.site/de/verspannte-waden/) können alle dazu beitragen. Wenn es auf langen Wanderungen anfängt, lies [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/).
 
 **Morton-Neurom** ist eine Verdickung des Nervs zwischen den Mittelfußköpfchen, meist zwischen dem dritten und vierten Zeh. Es verursacht eher Brennen, Kribbeln oder Taubheit als einen reinen Schmerz. Enge Schuhe oder hohe Absätze drücken auf den Nerv und machen es schlimmer.
 
@@ -1240,7 +1240,7 @@ Dämpfung unter der Ferse spielt womöglich eine Rolle. In einer Studie von 2023
 
 Ein tiefer Schmerz mitten in der Ferse, der barfuß auf hartem Boden schlimmer ist, kann auch vom Fersenfettpolster kommen (dem Fettpolster unter dem Fersenbein). Zu diesem Muster siehe [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
 
-Kurze Zeiten barfuß auf Gras oder Sand sind schonender. Wenn sie deinen Fersenschmerz am nächsten Morgen verstärken, war es zu viel.
+Kurze Zeiten barfuß auf Gras oder Sand sind schonender. Wenn sie deinen Fersenschmerz am nächsten Morgen verstärken, war es zu viel. Derselbe Check am nächsten Morgen gilt für jeden Spaziergang, siehe [Gehen bei Plantarfasziitis](https://walkito.site/de/gehen-bei-plantarfasziitis/).
 
 Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
 
@@ -1775,7 +1775,7 @@ Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfa
 
 Bei Achillessehnenentzündung ist der Fersenheben-Test eines der üblichen Messinstrumente. Menschen mit Achillessehnen-Tendinopathie im mittleren Abschnitt (Schmerz in der Mitte der Sehne, nicht am Fersenbein) zeigen typischerweise eine geringere Wadenausdauer auf der betroffenen Seite. Zur exzentrischen Arbeit lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
 
-Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein.
+Beim Laufen fängt die Wade bei jedem Schritt das Zwei- bis Dreifache des Körpergewichts ab. Eine Wade, die früh ermüdet, verlagert Last auf Knie, Schienbein und Fuß. Das Ergebnis zu steigern, kann Teil eines Plans für den Wiedereinstieg ins Laufen sein. Wie du die Wade dafür trainierst, zeigt [Fußübungen für Läufer](https://walkito.site/de/fussuebungen-fuer-laeufer/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -3996,7 +3996,7 @@ Ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach de
 
 Zum Rücken kannst du Fragen erwarten, wie der Schmerz angefangen hat, was ihn lindert und ob er ins Bein ausstrahlt. Die Untersuchung prüft meist, wie sich der Rücken bewegt, dazu Kraft, Reflexe und Gefühl in Beinen und Füßen. Bildgebung ist meist nicht nötig, außer wenn etwas auf eine ernste Ursache hindeutet.
 
-Bei den Füßen wird geprüft, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach).
+Bei den Füßen wird geprüft, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach). Du kannst dieselben [Checks auch zu Hause machen](https://walkito.site/de/plattfuss-test/).
 
 Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](https://walkito.site/de/tibialis-posterior-insuffizienz/). Vielleicht schaut man dir in der Praxis auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.
 
@@ -4300,7 +4300,7 @@ Was eine Physiotherapeutin, ein Sportmediziner oder eine Podologin wahrscheinlic
 - Ob das Knie geschwollen ist, blockiert hat, weggeknickt ist oder bei einer Verdrehung oder einem Sturz verletzt wurde.
 - Wie sich Knie, Hüfte und Fuß bei einer Kniebeuge oder einem Schritt nach unten bewegen.
 - Die Kraft der Muskeln an der Außenseite und Rückseite der Hüfte und des Oberschenkels.
-- Ob deine Plattfüße flexibel sind (das Gewölbe kommt zurück, wenn du sitzt oder auf den Zehen stehst) oder starr. Den schnellen Test findest du unter [Plattfuß](https://walkito.site/de/plattfuss/).
+- Ob deine Plattfüße flexibel sind (das Gewölbe kommt zurück, wenn du sitzt oder auf den Zehen stehst) oder starr. Den schnellen Test findest du unter [Plattfuß](https://walkito.site/de/plattfuss/). Alle vier Checks für zu Hause stehen im [Plattfuß-Test](https://walkito.site/de/plattfuss-test/).
 - Bei älteren Erwachsenen Zeichen einer Kniearthrose, für die vielleicht ein Röntgenbild nötig ist.
 
 Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health From the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(9):CPG1–CPG95.
@@ -4471,7 +4471,7 @@ Innerhalb von 12 Monaten hatte die Kontrollgruppe eine 2,42-mal so hohe Wahrsche
 
 Eine frühere, kleinere Studie desselben Teams mit 28 Läuferinnen und Läufern fand, dass etwa zwei Monate Fußtraining jeden gemessenen Fußmuskel im Vergleich zur Kontrollgruppe vergrößerten. Die Läuferinnen und Läufer drückten sich außerdem mit mehr Kraft vom Boden ab.
 
-Beide Studien stammen von einer Forschungsgruppe in Brasilien, mit Freizeitläuferinnen und -läufern, die zu Beginn nicht verletzt waren. Wir wissen noch nicht, ob das Programm Anfängerinnen und Anfängern hilft oder Menschen, die schon Schmerzen haben.
+Beide Studien stammen von einer Forschungsgruppe in Brasilien, mit Freizeitläuferinnen und -läufern, die zu Beginn nicht verletzt waren. Eine Routine speziell fürs Laufen mit einer Beispielwoche findest du unter [Fußübungen für Läufer](https://walkito.site/de/fussuebungen-fuer-laeufer/). Wir wissen noch nicht, ob das Programm Anfängerinnen und Anfängern hilft oder Menschen, die schon Schmerzen haben.
 
 Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
 Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
@@ -5064,7 +5064,7 @@ Language: German (Deutsch) · https://walkito.site/de/fersenschmerzen-nach-dem-g
 Beim Gehen war mit deiner Ferse alles in Ordnung, aber jetzt, wo du stehen geblieben bist, schmerzt sie. Oder der Schmerz kam mitten auf einem langen Spaziergang und wurde mit jedem Schritt schlimmer. Beide Muster deuten auf dasselbe hin: Das Gewebe unter deiner Ferse wurde an diesem Tag stärker belastet, als es verkraften konnte. Die häufigste Ursache ist [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/), und am nützlichsten sind Dehnen und schrittweises Wadentraining.
 
 - Die Leitlinie von 2023 zu Fersenschmerzen beschreibt den Schmerz bei Plantarfasziitis als „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“, nennt aber auch Schmerz, der bei längerer Belastung im Stehen und Gehen zunimmt, als wichtiges Merkmal (Koc und Kollegen, 2023).
-- In einer gematchten Fall-Kontroll-Studie mit 50 Menschen mit Plantarfasziitis und 100 Kontrollen war eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein anziehen lässt) der stärkste unabhängige Risikofaktor, noch vor einem Body-Mass-Index über 30 und Stehen während des größten Teils des Arbeitstags (Riddle und Kollegen, 2003).
+- In einer gematchten Fall-Kontroll-Studie mit 50 Menschen mit Plantarfasziitis und 100 Kontrollen war eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein anziehen lässt) der stärkste unabhängige Risikofaktor, noch vor einem [Body-Mass-Index über 30](https://walkito.site/de/gewicht-und-plantarfasziitis/) und Stehen während des größten Teils des Arbeitstags (Riddle und Kollegen, 2003).
 - Die Leitlinie gibt dem Dehnen von Plantarfaszie und Wade den höchsten Empfehlungsgrad **A** und dem Krafttraining Grad **B** (Koc und Kollegen, 2023).
 - Etwa 90 % der Menschen mit Plantarfasziitis geht es mit konservativer Behandlung wie Dehnen, Wadentraining und Belastungssteuerung besser (Latt und Kollegen, 2020).
 - Fersenschmerzen nach dem Gehen, die mit jeder Einheit zunehmen und in Ruhe nicht nachlassen, können eher auf einen Ermüdungsbruch als auf eine Plantarfasziitis hindeuten. Schmerz beim Zusammendrücken der Fersenseiten ist ein klinisches Zeichen dafür.
@@ -5085,8 +5085,8 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Wo der Schmerz sitzt und wann er auftritt, hilft, die Ursachen auseinanderzuhalten:
 
 - **Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
-- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
-- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.
+- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Auf Wanderungen mit langen Anstiegen und Abstiegen geht [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/) ein. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst. [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/) vergleicht beides direkt.
 - **Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zum Arzt oder zur Ärztin zu gehen.
 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
@@ -5134,7 +5134,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 ### Wie weit solltest du gehen, wenn deine Ferse wehtut?
 
-Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu finden, die deine Ferse verkraftet, ohne dass es am nächsten Morgen schlimmer wird, und von dort aus zu steigern.
+Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu finden, die deine Ferse verkraftet, ohne dass es am nächsten Morgen schlimmer wird, und von dort aus zu steigern. Eine einfache Schmerzregel und den Weg zurück zu längeren Strecken findest du unter [Gehen bei Plantarfasziitis](https://walkito.site/de/gehen-bei-plantarfasziitis/).
 
 Ein praktischer Ansatz:
 
@@ -5243,7 +5243,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Ein Ermüdungsbruch des Fersenbeins, ein feiner Riss im Knochen durch wiederholte Belastung, kann einen tiefen Schmerz verursachen, der nachts pocht. Anders als bei der Plantarfasziitis wird der Schmerz bei Aktivität meist schlimmer und läuft sich nicht ein. Oft geht ihm eine plötzliche Steigerung beim Laufen, Gehen oder Stehen auf hartem Boden voraus.
 
-Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. **Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig.** Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.
+Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. Was er zeigen kann und was nicht, erklärt [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/). **Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig.** Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.
 
 Eine Übersichtsarbeit von 2011 in American Family Physician stellte fest, dass Ermüdungsbrüche des Fersenbeins nach einer Steigerung der Aktivität oder einem Wechsel auf härteren Boden zunehmend schlimmere Schmerzen verursachen. Schmerz nachts und in Ruhe wurde zu den Merkmalen gezählt, die Ermüdungsbrüche von einer Fasziitis unterscheiden.
 
@@ -5402,7 +5402,7 @@ Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregn
 
 **Der klarste Befund: Das Gewölbe wird flacher und der Fuß länger.** Eine Studie von 2013 hat 49 Frauen im ersten Trimester und noch einmal etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Gewölbesteifigkeit nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu. 35 der 49 hatten ein abgesunkenes Gewölbe, und 30 hatten längere Füße, die meisten um 2 bis 10 Millimeter.
 
-Die Ursache ist weniger klar, als viele Websites behaupten. In dieser Studie hingen lockerere Gelenke und die Gewichtszunahme in der Schwangerschaft nicht damit zusammen, wie stark sich die Füße veränderten. Gewicht und langes Stehen sind bekannte Risikofaktoren für Plantarfasziitis im Allgemeinen (Koc und Kollegen, 2023), aber keine Studie hat sie in der Schwangerschaft untersucht.
+Die Ursache ist weniger klar, als viele Websites behaupten. In dieser Studie hingen lockerere Gelenke und die Gewichtszunahme in der Schwangerschaft nicht damit zusammen, wie stark sich die Füße veränderten. [Gewicht](https://walkito.site/de/gewicht-und-plantarfasziitis/) und langes Stehen sind bekannte Risikofaktoren für Plantarfasziitis im Allgemeinen (Koc und Kollegen, 2023), aber keine Studie hat sie in der Schwangerschaft untersucht.
 
 Schwellungen, ein schwererer Körper und ein veränderter Gang verändern, wie sich die Last über den Fuß verteilt. Die Plantarfaszie ist das Band unter dem Fuß, das das Gewölbe trägt. Ein flacheres Gewölbe und mehr Last können sie also stärker beanspruchen. Mehr dazu, wie ein flacheres Gewölbe auch nach der Geburt bleiben kann: [Plattfuß im Alter](https://walkito.site/de/plattfuss-im-alter/).
 
@@ -5514,7 +5514,7 @@ Nachtschienen wurden in der Schwangerschaft nicht untersucht. Bei Plantarfasziit
 
 #### Ist Gehen bei Plantarfasziitis in der Schwangerschaft schlecht?
 
-Gehen ist eine der Aktivitäten, die das ACOG in der Schwangerschaft vorschlägt, als Teil von mindestens 150 Minuten mäßiger Bewegung pro Woche. Keine Studie hat Gehen bei Plantarfasziitis in der Schwangerschaft untersucht. Frag deshalb deine Frauenärztin, deinen Frauenarzt oder deine Hebamme, wie viel für dich passt.
+Gehen ist eine der Aktivitäten, die das ACOG in der Schwangerschaft vorschlägt, als Teil von mindestens 150 Minuten mäßiger Bewegung pro Woche. Keine Studie hat [Gehen bei Plantarfasziitis](https://walkito.site/de/gehen-bei-plantarfasziitis/) in der Schwangerschaft untersucht. Frag deshalb deine Frauenärztin, deinen Frauenarzt oder deine Hebamme, wie viel für dich passt.
 
 #### Darf ich in der Schwangerschaft eine Stoßwellentherapie oder eine Kortisonspritze bekommen?
 
@@ -5701,7 +5701,7 @@ Fußschmerzen bei Hohlfuß zeigen sich häufig als:
 - Schmerz unter der Ferse.
 - Schmerz entlang der verkürzten Plantarfaszie.
 
-Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist.
+Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist. Wenn du viel auf Wanderwegen unterwegs bist, lies [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/).
 
 Source: Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. The Cochrane Database of Systematic Reviews. 2007;2007(4):CD006154.
 Source: Burns J, Crosbie J, Hunt A, Ouvrier R. The effect of pes cavus on foot pain and plantar pressure. Clinical Biomechanics (Bristol, Avon). 2005;20(9):877–82.
@@ -5874,7 +5874,7 @@ Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozc
 
 Bei einem flexiblen Plattfuß flacht das Gewölbe unter deinem Gewicht ab, kommt aber zurück, wenn der Fuß nicht auf dem Boden steht. Die meisten Plattfüße sind von dieser Art. Ein starrer Plattfuß bleibt flach, ob du darauf stehst oder nicht.
 
-Ein schneller Check: Setz dich hin und schau dir die Innenseite deines Fußes an. Wenn du ein Gewölbe siehst, stell dich auf beide Füße. Verschwindet das Gewölbe im Stehen, war aber im Sitzen da, ist der Plattfuß flexibel. Eine andere Möglichkeit: Stell dich auf die Zehenspitzen. Zeigt sich das Gewölbe, wenn du hochkommst, ist er flexibel.
+Ein schneller Check: Setz dich hin und schau dir die Innenseite deines Fußes an. Wenn du ein Gewölbe siehst, stell dich auf beide Füße. Verschwindet das Gewölbe im Stehen, war aber im Sitzen da, ist der Plattfuß flexibel. Eine andere Möglichkeit: Stell dich auf die Zehenspitzen. Zeigt sich das Gewölbe, wenn du hochkommst, ist er flexibel. Alle vier Checks für zu Hause und was sie zeigen können, stehen im [Plattfuß-Test](https://walkito.site/de/plattfuss-test/).
 
 **Der Unterschied ist wichtig, weil Übungen ein flexibles Gewölbe beeinflussen können.** In einer Studie mit 52 Personen mit flexiblen Plattfüßen veränderten sechs Wochen Kurzer-Fuß-Übungen, Sprunggelenkstraining, Hüftkräftigung und Dehnen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe.
 
@@ -6165,6 +6165,7 @@ Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verände
 - [Fußschmerzen vom langen Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe für alle, die bei der Arbeit viel stehen.
 - [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/) geht auf lange Schichten auf harten Böden ein.
 - [Fußschmerzen am Stehschreibtisch](https://walkito.site/de/stehschreibtisch-fussschmerzen/) behandelt den Wechsel zwischen Sitzen und Stehen.
+- Andere Berufe auf harten Böden haben eigene Seiten: [Lehrkräfte](https://walkito.site/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](https://walkito.site/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](https://walkito.site/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](https://walkito.site/de/fussschmerzen-friseure/).
 
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -6174,10 +6175,10 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Mehrere Erkrankungen teilen dieselbe Stelle oder dasselbe Morgenmuster. Wo der Schmerz sitzt und wie er sich verhält, hilft, sie auseinanderzuhalten:
 
-- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Wie du die beiden unterscheidest, zeigt [Plantarfasziitis oder Achillessehnenentzündung](https://walkito.site/de/plantarfasziitis-oder-achillessehne/). Siehe [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
 - **Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das [Fettpolster](https://walkito.site/de/fersenfettpolster-syndrom/) sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.
 - **Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174 Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.
-- **Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann [in Ruhe oder nachts](https://walkito.site/de/fersenschmerzen-nachts/) wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.
+- **Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Wie du ihn unterscheidest, zeigt [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/). Er kann [in Ruhe oder nachts](https://walkito.site/de/fersenschmerzen-nachts/) wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.
 - **Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30 Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine Ärztin oder ein Arzt sollte das abklären.
 
 Wenn du unsicher bist, kann eine Ärztin oder ein Arzt diese Ursachen anhand von Ort, Verhalten und bei Bedarf Bildgebung unterscheiden.
@@ -6228,7 +6229,7 @@ Das kann sie, aber meist dauert es lange. Eine Übersichtsarbeit von 2020 berich
 
 #### Ist Gehen bei Plantarfasziitis gut oder schlecht?
 
-Gehen in stützenden Schuhen in einem angenehmen Tempo ist meist in Ordnung. Die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Der Test ist, wie sich deine Ferse am nächsten Morgen anfühlt. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich stärker als sonst, war dieser Spaziergang zu viel. Verkürze die Strecke, bevor du ganz aufhörst.
+Gehen in stützenden Schuhen in einem angenehmen Tempo ist meist in Ordnung. Die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Der Test ist, wie sich deine Ferse am nächsten Morgen anfühlt. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich stärker als sonst, war dieser Spaziergang zu viel. Verkürze die Strecke, bevor du ganz aufhörst. Mehr dazu unter [Gehen bei Plantarfasziitis](https://walkito.site/de/gehen-bei-plantarfasziitis/).
 
 #### Verursacht ein Fersensporn Plantarfasziitis?
 
@@ -6252,7 +6253,7 @@ Plantarfasziitis zeigt sich oft zuerst an einem Fuß, weil sich die Last selten 
 
 #### Warum habe ich plötzlich Plantarfasziitis?
 
-Eine plötzliche Plantarfasziitis folgt meist auf eine plötzliche Änderung der Belastung, nicht auf eine plötzliche Verletzung. Ein schneller Sprung bei den Laufkilometern, neue Schuhe, ein neuer Job, bei dem du viel stehst, oder eine Gewichtszunahme können die Faszie schneller überlasten, als sie sich anpassen kann. Langes Stehen bei der Arbeit ist einer der anerkannten Risikofaktoren in der Leitlinie von 2023 zu Fersenschmerzen.
+Eine plötzliche Plantarfasziitis folgt meist auf eine plötzliche Änderung der Belastung, nicht auf eine plötzliche Verletzung. Ein schneller Sprung bei den Laufkilometern, neue Schuhe, ein neuer Job, bei dem du viel stehst, oder eine [Gewichtszunahme](https://walkito.site/de/gewicht-und-plantarfasziitis/) können die Faszie schneller überlasten, als sie sich anpassen kann. Langes Stehen bei der Arbeit ist einer der anerkannten Risikofaktoren in der Leitlinie von 2023 zu Fersenschmerzen.
 
 ## Kühlen oder wärmen bei Plantarfasziitis: was hilft und wann
 
@@ -6781,9 +6782,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Plantarfasziitis ist die häufigste Ursache für Fersenschmerzen am Morgen, aber nicht die einzige. Wo der Schmerz sitzt und wie er sich verhält, hilft, die Ursachen auseinanderzuhalten:
 
-- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne wird über Nacht genauso steif wie die Plantarfaszie, deshalb ist Steifheit bei den ersten Schritten häufig. Meist wird es beim Gehen besser und [bei langer Belastung wieder schlimmer](https://walkito.site/de/fersenschmerzen-nach-dem-gehen/). Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
+- **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne wird über Nacht genauso steif wie die Plantarfaszie, deshalb ist [Steifheit bei den ersten Schritten häufig](https://walkito.site/de/plantarfasziitis-oder-achillessehne/). Meist wird es beim Gehen besser und [bei langer Belastung wieder schlimmer](https://walkito.site/de/fersenschmerzen-nach-dem-gehen/). Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
 - **Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein wirkt wie ein Kissen. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, sich auf hartem Boden und barfuß schlimmer anfühlt und sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt (Chang und Kollegen, 2022). Der wichtigste Unterschied: Der Schmerz bei Plantarfasziitis ist meist vorn an der Innenseite der Ferse am stärksten, der Schmerz durch das Fersenpolster sitzt genau in der Mitte darunter.
-- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, meist nach einem Sprung bei der Belastung. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu, statt nach dem Aufwärmen nachzulassen, und er kann [in Ruhe oder nachts](https://walkito.site/de/fersenschmerzen-nachts/) wehtun. Wenn es wehtut, wenn du die Seiten der Ferse zusammendrückst, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.
+- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, meist nach einem Sprung bei der Belastung. Wie du ihn von einer Plantarfasziitis unterscheidest, zeigt [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/). Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu, statt nach dem Aufwärmen nachzulassen, und er kann [in Ruhe oder nachts](https://walkito.site/de/fersenschmerzen-nachts/) wehtun. Wenn es wehtut, wenn du die Seiten der Ferse zusammendrückst, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.
 - **Entzündliche Gelenkerkrankung (ein Warnzeichen).** Wenn beide Fersen morgens wehtun, die Steifigkeit länger als 30 Minuten anhält und auch andere Gelenke steif oder geschwollen sind, entfernt sich das Muster von der Plantarfasziitis hin zu etwas, das eine Ärztin oder ein Arzt abklären sollte. Erkrankungen wie Psoriasis-Arthritis oder Morbus Bechterew können Schmerzen dort verursachen, wo Sehnen am Knochen ansetzen, auch an der Ferse.
 
 In einer Kohorte von 174 Menschen mit Plantarfasziitis, die durchschnittlich 9,7 Jahre beobachtet wurden, sagten Fersenschmerzen auf beiden Seiten eine signifikant schlechtere Langzeitprognose voraus, und die Autoren merkten an, dass unerkannte systemische Entzündungserkrankungen diesen Befund teilweise erklären könnten (Hansen und Kollegen, 2018). **Wenn beide Fersen wehtun und andere Gelenke betroffen sind, geh zuerst zum Arzt oder zur Ärztin.**
@@ -7363,7 +7364,7 @@ Allgemeine Schmerzen und Müdigkeit nach einer langen Schicht sind häufig und v
 
 Wenn sich deine Gewölbe am Ende einer Schicht flach oder nach innen gekippt anfühlen, zielen die Übungen unter [Übungen bei Plattfuß und abgesunkenem Gewölbe](https://walkito.site/de/plattfuss-uebungen/) auf die Muskeln, die das Gewölbe oben halten. Schmerz am Schienbein entlang könnte ein [Schienbeinkantensyndrom](https://walkito.site/de/schienbeinkantensyndrom-uebungen/) sein. Schmerz in der Achillessehne hinten an der Ferse ist ein anderes Problem.
 
-Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](https://walkito.site/de/stehschreibtisch-fussschmerzen/). **Wenn du nicht sicher bist, woher der Schmerz kommt, lass das zuerst ärztlich abklären, bevor du ihn mit Übungen belastest.**
+Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für andere Berufe gibt es eigene Seiten: [Lehrkräfte](https://walkito.site/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](https://walkito.site/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](https://walkito.site/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](https://walkito.site/de/fussschmerzen-friseure/). Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](https://walkito.site/de/stehschreibtisch-fussschmerzen/). **Wenn du nicht sicher bist, woher der Schmerz kommt, lass das zuerst ärztlich abklären, bevor du ihn mit Übungen belastest.**
 
 ### Geh zuerst zum Arzt oder zur Ärztin, wenn
 
@@ -7467,7 +7468,7 @@ Die Kohorte von Hansen 2018 hat mehrere Ausgangsfaktoren daraufhin geprüft, wie
 - **Weibliches Geschlecht.** Auf 100 Männer, die pro Jahr beschwerdefrei wurden, kamen nur 49 Frauen (Hazard Rate Ratio 0,49, P kleiner als 0,01). Der Grund ist nicht geklärt. Die Autoren nannten hormonelle Unterschiede, Schuhgewohnheiten und körperliche Faktoren als Möglichkeiten, ohne Belege, um sich für eine davon zu entscheiden (Hansen und Kollegen, 2018).
 - **Fersenschmerzen auf beiden Seiten.** Menschen, die zu Beginn in beiden Fersen Schmerzen hatten, wurden pro Jahr nur etwa ein Drittel so häufig beschwerdefrei wie Menschen mit einseitigen Schmerzen (Hazard Rate Ratio 0,33, P kleiner als 0,01). Die Autoren merkten an, dass Schmerzen auf beiden Seiten auf eine unerkannte entzündliche Erkrankung hindeuten könnten, weil Schmerzen an Sehnenansätzen auf beiden Seiten ein Merkmal mancher Formen von Arthritis sind. Niemand in ihrer Kohorte hatte eine bekannte entzündliche Diagnose, aber es wurde auch kein Bluttest gemacht (Hansen und Kollegen, 2018).
 
-BMI, Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein [Fersensporn](https://walkito.site/de/plantarfasziitis-oder-fersensporn/) hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.
+[BMI](https://walkito.site/de/gewicht-und-plantarfasziitis/), Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein [Fersensporn](https://walkito.site/de/plantarfasziitis-oder-fersensporn/) hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.
 
 Wenn beide Fersen wehtun und die Morgensteifigkeit lange anhält oder andere Gelenke betroffen sind, solltest du das deiner Ärztin oder deinem Arzt sagen, auch wenn die Übungen helfen. Mehr dazu, wann Schmerzen auf beiden Seiten ein Warnzeichen sind, steht unter [Fersenschmerzen am Morgen](https://walkito.site/de/fersenschmerzen-morgens/).
 
@@ -7566,7 +7567,7 @@ Nicht laut der Studie von Hansen 2018. Ein Fersensporn zu Beginn hatte keinen si
 
 #### Ist Gehen gut bei Plantarfasziitis?
 
-Maßvolles Gehen in stützenden Schuhen ist meist in Ordnung, und die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Entscheidend ist, ob der nächste Morgen schlimmer ist. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich höher als sonst, war dieser Spaziergang mehr, als der Fuß verkraften konnte. Verkürze Strecke oder Zeit, statt ganz aufzuhören.
+Maßvolles Gehen in stützenden Schuhen ist meist in Ordnung, und die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Entscheidend ist, ob der nächste Morgen schlimmer ist. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich höher als sonst, war dieser Spaziergang mehr, als der Fuß verkraften konnte. Verkürze Strecke oder Zeit, statt ganz aufzuhören. Wie viel Gehen in Ordnung ist, erklärt [Gehen bei Plantarfasziitis](https://walkito.site/de/gehen-bei-plantarfasziitis/).
 
 #### Wann sollte ich zum Arzt, wenn die Plantarfasziitis nicht besser wird?
 
@@ -7600,7 +7601,7 @@ Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins. 
 
 **Ein Fersensporn und eine Plantarfasziitis sind nicht dasselbe.** Plantarfasziitis ist ein Problem des Weichgewebes: Die Plantarfaszie, das dicke Band vom Fersenbein bis zu den Zehen, wird gereizt, meist dort, wo sie am Knochen ansetzt. Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins (Calcaneus). Beides kommt oft zusammen vor, aber jedes kann auch ohne das andere auftreten.
 
-Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.
+Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Schmerz hinten an der Ferse ist ein anderes Problem, siehe [Plantarfasziitis oder Achillessehnenentzündung](https://walkito.site/de/plantarfasziitis-oder-achillessehne/). Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.
 
 Die Verwechslung ist verständlich. Jahrzehntelang galt der Fersensporn als Ursache für Fersenschmerzen unter dem Fuß. Diese Sicht wurde weitgehend von Belegen abgelöst, die zeigen, dass Sporne bei Menschen ohne Schmerzen häufig sind und dass viele Menschen mit Plantarfasziitis gar keinen Sporn haben.
 
@@ -7660,7 +7661,7 @@ Bildgebung wird sinnvoll:
 
 - Wenn der Schmerz nicht dem typischen Muster der Plantarfasziitis folgt.
 - Wenn er nach mehreren Wochen konservativer Behandlung nicht besser geworden ist.
-- Wenn eine Ärztin oder ein Arzt etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie.
+- Wenn eine Ärztin oder ein Arzt etwas anderes vermutet, etwa einen [Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/), ein Nervenproblem oder einen Riss der Plantarfaszie.
 
 Ultraschall kann die Dicke der Plantarfaszie messen (über 4 mm gilt allgemein als verdickt), und ein MRT zeigt Details im Weichgewebe, die ein Röntgenbild nicht zeigt.
 
@@ -7979,7 +7980,7 @@ Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The O
 - **Stadium III** heißt, die Fehlstellung ist starr geworden. Der Fuß lässt sich nicht mehr in eine korrigierte Position drücken, und oft gibt es arthrotische Veränderungen in den Gelenken unter dem Sprunggelenk. Übungen allein werden die Form des Fußes in diesem Stadium kaum ändern. Meist wird über eine chirurgische Einschätzung gesprochen.
 - **Stadium IV** betrifft zusätzlich das Sprunggelenk. Das Sprunggelenk kippt in eine Valgusstellung, es neigt sich also nach außen. Das ist das am weitesten fortgeschrittene Stadium und braucht in der Regel einen chirurgischen Eingriff.
 
-**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Ärztin oder ein Arzt das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein schneller Suchtest: Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.
+**Die meisten, die nach Übungen bei Tibialis-posterior-Insuffizienz suchen, sind im Stadium I oder II.** Wenn du nicht sicher bist, welches Stadium auf dich zutrifft, kann eine Ärztin oder ein Arzt das mit einer körperlichen Untersuchung und bei Bedarf mit Bildgebung klären. Der einbeinige Fersenhebe-Test, bei dem du versuchst, auf einem Fuß hochzukommen, ist ein [schneller Suchtest](https://walkito.site/de/plattfuss-test/): Schwierigkeiten beim Hochkommen, Schmerz dabei oder eine Ferse, die oben nicht nach innen kippt, deuten alle auf eine Schwäche des Tibialis posterior hin.
 
 Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
@@ -8678,7 +8679,7 @@ Hör auf deine Füße und deinen unteren Rücken. Wenn sich Beschwerden aufbauen
 
 Leg von Anfang an eine Matte hin, wenn du eine hast. Trag Schuhe mit etwas Dämpfung, auch zu Hause. Mach die Wadendehnungen aus der Tabelle oben mindestens einmal am Tag.
 
-Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/).
+Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](https://walkito.site/de/fussschmerzen-pflege/). Es gibt auch Seiten für [Lehrkräfte](https://walkito.site/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](https://walkito.site/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](https://walkito.site/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](https://walkito.site/de/fussschmerzen-friseure/).
 
 Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
 
@@ -8782,7 +8783,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Stützende Schuhe und [Schuheinlagen](https://walkito.site/de/einlagen-oder-uebungen/) werden bei Fußschmerzen vom Stehen oft empfohlen, und das hat eine gewisse Grundlage, aber die Belege sind dünner als beim Dehnen und Krafttraining. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein mit **Empfehlungsgrad B gegen die Anwendung** für die kurzfristige Schmerzlinderung, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen. Einlagen in Kombination mit anderer Behandlung bekommen Grad **C**.
 
-Was die arbeitsmedizinische Übersicht stützt, ist breiter: Bodenmatten, stützende Schuhe und die Möglichkeit, zwischen Sitzen und Stehen zu wechseln, stehen alle auf der Liste der Maßnahmen mit gewissen Belegen dafür, Beschwerden bei Arbeit im Stehen zu verringern. Keine davon hat eine einzelne große Studie im Rücken, so wie die Wadendehnung. Ein vernünftiger Weg: Trag stützende Schuhe, leg eine Matte hin, wenn dein Boden hart ist, und mach das Dehnen und Krafttraining für die Gewebe selbst.
+Was die arbeitsmedizinische Übersicht stützt, ist breiter: Bodenmatten, stützende Schuhe und die Möglichkeit, zwischen Sitzen und Stehen zu wechseln, stehen alle auf der Liste der Maßnahmen mit gewissen Belegen dafür, Beschwerden bei Arbeit im Stehen zu verringern. Keine davon hat eine einzelne große Studie im Rücken, so wie die Wadendehnung. Ein vernünftiger Weg: Trag stützende Schuhe, leg eine Matte hin, wenn dein Boden hart ist, und mach das Dehnen und Krafttraining für die Gewebe selbst. Für einzelne Berufe gibt es eigene Seiten: [Lehrkräfte](https://walkito.site/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](https://walkito.site/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](https://walkito.site/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](https://walkito.site/de/fussschmerzen-friseure/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -8900,7 +8901,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 Verspannte Waden hängen mit [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).
 
-In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50 Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0 Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10 Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor Körpergewicht und Stehen bei der Arbeit.
+In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50 Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0 Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10 Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor [Körpergewicht](https://walkito.site/de/gewicht-und-plantarfasziitis/) und Stehen bei der Arbeit.
 
 In einer späteren Studie mit 254 Personen mit Plantarfasziitis hatten 83 % eine eingeschränkte Beugung im Sprunggelenk, und 57 % aller Patientinnen und Patienten hatten allein einen verkürzten Gastrocnemius (Patel und DiGiovanni, 2011).
 

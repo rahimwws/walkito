@@ -89,7 +89,7 @@ export const PF_DURATION_FR: Guide = {
             '**Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).',
           ],
         },
-        'L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
+        'L’[IMC](/fr/poids-et-fasciite-plantaire/), l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens\u00A0: une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.',
         'Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.',
       ],
       sourceNote:
@@ -190,7 +190,7 @@ export const PF_DURATION_FR: Guide = {
     {
       q: 'Marcher est-il bon pour la fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
-      a: 'Marcher modérément avec des chaussures qui soutiennent le pied ne pose en général pas de problème, et la recommandation ne dit pas d’arrêter de bouger. Ce qui compte, c’est de savoir si le lendemain matin est pire. Si la douleur aux premiers pas le lendemain d’une marche est nettement plus forte que d’habitude, cette marche était plus que ce que le pied pouvait encaisser. Réduisez la distance ou la durée au lieu de tout arrêter.',
+      a: 'Marcher modérément avec des chaussures qui soutiennent le pied ne pose en général pas de problème, et la recommandation ne dit pas d’arrêter de bouger. Ce qui compte, c’est de savoir si le lendemain matin est pire. Si la douleur aux premiers pas le lendemain d’une marche est nettement plus forte que d’habitude, cette marche était plus que ce que le pied pouvait encaisser. Réduisez la distance ou la durée au lieu de tout arrêter. Voyez [combien vous pouvez marcher](/fr/marcher-avec-fasciite-plantaire/).',
     },
     {
       q: 'Quand consulter un médecin pour une fasciite plantaire qui ne s’améliore pas\u00A0?',

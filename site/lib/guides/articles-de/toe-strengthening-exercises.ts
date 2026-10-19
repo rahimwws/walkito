@@ -181,7 +181,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Bringen Übungen zum Zehenkräftigen wirklich etwas?',
       keyFact:
-        'In einer Studie mit 118\u00A0Freizeitläuferinnen und -läufern hatten diejenigen ohne das Fußprogramm innerhalb eines Jahres eine 2,42-mal so hohe Verletzungswahrscheinlichkeit (Taddei und Kollegen, 2020).',
+        'In einer Studie mit 118\u00A0Freizeitläuferinnen und -läufern hatten diejenigen ohne das Fußprogramm innerhalb eines Jahres eine 2,42-mal so hohe Verletzungswahrscheinlichkeit (Taddei und Kollegen, 2020). Die Routine fürs Laufen steht unter [Fußübungen für Läufer](/de/fussuebungen-fuer-laeufer/).',
       paragraphs: [
         'Übungen zum Zehenkräftigen können Zehenkraft aufbauen, aber **nur, wenn sie mit der Zeit schwerer werden.**',
         'In einer Studie von 2016 wurden 85\u00A0Erwachsene im Alter von 60 bis 90\u00A0Jahren auf ein betreutes Programm mit einem Widerstand, der über drei Monate wuchs, und ein Übungsprogramm für zu Hause aufgeteilt. Die betreute Gruppe gewann bis zu 36\u00A0% Zehenkraft und konnte länger auf einem Bein stehen. Die Heimgruppe und eine separate Kontrollgruppe mit 32\u00A0Personen zeigten keine Veränderung der Zehenkraft. Die Autorinnen und Autoren schrieben, dass noch eine Studie nötig sei, die Stürze zählt.',

@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
         'Si le genou a gonflé, s’est bloqué, s’est dérobé, ou a été blessé lors d’une torsion ou d’une chute.',
         'Comment le genou, la hanche et le pied bougent pendant un squat ou une descente de marche.',
         'La force des muscles à l’extérieur et à l’arrière de la hanche, et celle de la cuisse.',
-        'Si vos pieds plats sont souples (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) ou rigides. Voir [pieds plats](/fr/pieds-plats/) pour le test rapide.',
+        'Si vos pieds plats sont souples (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) ou rigides. Voir [pieds plats](/fr/pieds-plats/) pour le test rapide, ou le [test du pied plat](/fr/test-pied-plat/) pour les quatre vérifications à la maison.',
         'Chez les personnes âgées, les signes d’arthrose du genou, qui peuvent nécessiter une radio.',
       ],
       cites: [CITE.willyPfpGuideline],

@@ -27,9 +27,9 @@ export const HEEL_NOT_PF_ES: Guide = {
   takeaways: [
     'El dolor típico de la fascitis plantar está cerca de la parte interna del talón, es peor con el primer paso de la mañana o después de estar sentado, mejora con la actividad y luego empeora a medida que la actividad se alarga (Latt y colegas, 2020).',
     'En 250\u00A0personas con dolor en la planta del talón, la fascitis plantar explicó el 53,2\u00A0%, la atrofia de la almohadilla grasa el 14,8\u00A0% y las dos juntas el 9,2\u00A0% (Yi y colegas, 2011).',
-    'Un dolor de talón con ardor, como una descarga eléctrica o con hormigueo suele apuntar a un nervio. Una revisión estima que el atrapamiento del nervio de Baxter podría explicar hasta el 20\u00A0% del dolor de talón crónico (Tedeschi, 2025).',
+    'Si el dolor de talón arde, se siente como una descarga eléctrica u hormiguea, suele apuntar a un nervio. Una revisión estima que el atrapamiento del nervio de Baxter podría explicar hasta el 20\u00A0% del dolor de talón crónico (Tedeschi, 2025).',
     'Una fractura por estrés del talón suele doler con la actividad, no con el primer paso, y en 30\u00A0reclutas militares solo se vio en la radiografía simple en el 15\u00A0% (Latt y colegas, 2020; Sormaala y colegas, 2006).',
-    'El dolor en los dos talones junto con otras articulaciones dolorosas o rígidas, o una espalda rígida, sugiere una causa inflamatoria que necesita un médico, no solo estiramientos (Latt y colegas, 2020).',
+    'El dolor en los dos talones junto con otras articulaciones dolorosas o rígidas, o una espalda rígida, sugiere una causa inflamatoria que requiere atención médica, no solo estiramientos (Latt y colegas, 2020).',
   ],
   toc: true,
   sections: [
@@ -47,7 +47,7 @@ export const HEEL_NOT_PF_ES: Guide = {
           ['[Fascitis plantar](/es/fascitis-plantar/)', 'Parte interna de la planta del talón', 'Primeros pasos de la mañana, después de estar sentado', 'Estar mucho de pie, caminar sin parar', 'Estiramientos y fuerza de pantorrilla'],
           ['[Síndrome de la almohadilla grasa](/es/sindrome-almohadilla-grasa-talon/)', 'Centro de la almohadilla del talón, como un moretón profundo', 'Al estar de pie y caminar', 'Pisos duros, descalzo', 'Amortiguación, consulta a un profesional'],
           ['Nervio (Baxter, túnel tarsiano)', 'Parte interna del talón o planta, puede extenderse', 'No ligado a los primeros pasos, puede ser en reposo', 'Ardor, hormigueo, adormecimiento', 'Consulta a un profesional'],
-          ['[Fractura por estrés](/es/fascitis-plantar-o-fractura-por-estres/)', 'Todo el hueso del talón, costados sensibles', 'Aumenta con la actividad', 'Correr, saltar, más kilómetros', 'Descarga, consulta pronto a un profesional'],
+          ['[Fractura por estrés](/es/fascitis-plantar-o-fractura-por-estres/)', 'Todo el hueso del talón, costados sensibles', 'Aumenta con la actividad', 'Correr, saltar, más kilómetros', 'Quita carga al pie, consulta pronto a un profesional'],
           ['[Aquiles insercional](/es/fascitis-plantar-o-tendinitis-de-aquiles/)', 'Parte de atrás del talón, en el hueso', 'Durante y después de la actividad', 'Subidas, escaleras, estiramiento profundo de pantorrilla', 'Carga la pantorrilla, descensos de talón a nivel del piso'],
           ['[Haglund](/es/deformidad-de-haglund/)', 'Bulto en la parte alta de atrás del talón', 'Con zapatos', 'Contrafuertes rígidos', 'Contrafuerte más suave, alza de talón'],
           ['[Sever (niños)](/es/enfermedad-de-sever/)', 'Parte de atrás o costados del talón', 'Durante y después del deporte', 'Correr, saltar, estirones de crecimiento', 'Menos carga, consulta a un profesional'],
@@ -134,7 +134,7 @@ export const HEEL_NOT_PF_ES: Guide = {
       paragraphs: [
         '**Si tu talón encaja con el patrón de la fascitis plantar y no aplica ninguna de las señales de alerta de abajo, los estiramientos y el trabajo de fuerza de pantorrilla son las opciones de primera línea.** La guía de 2023 para el dolor de talón califica con **A** los estiramientos de fascia plantar y de pantorrilla, y con **B** el trabajo de fuerza para la fascitis plantar (Koc y colegas, 2023). Estos ejercicios son solo para la fascitis plantar. No están pensados para una sospecha de fractura, un problema de nervios o artritis.',
         'Si tu dolor encaja con otra fila de la tabla, o no estás seguro, consulta a un médico general, fisioterapeuta o podólogo. Lleva una nota corta: dónde duele, cuándo es peor, qué lo empeora, si afecta a uno o a los dos pies y cualquier otra cosa que lo acompañe, como adormecimiento, hinchazón o dolor de espalda. Eso es lo que usa un profesional para distinguir las causas parecidas.',
-        'Si llevas varias semanas haciendo ejercicios para la fascitis plantar y nada ha cambiado, eso también merece una consulta. El tratamiento sin cirugía da alivio completo a cerca del 90\u00A0% de las personas con fascitis plantar, aunque puede tardar de tres a seis meses, así que un dolor que no se mueve es un motivo para revisar el diagnóstico (Latt y colegas, 2020). Consulta [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) y la lista completa de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'Si llevas varias semanas haciendo ejercicios para la fascitis plantar y nada ha cambiado, eso también merece una consulta. Sin cirugía, cerca del 90\u00A0% de las personas con fascitis plantar logra un alivio completo, aunque puede tardar de tres a seis meses, así que un dolor que no se mueve es un motivo para revisar el diagnóstico (Latt y colegas, 2020). Consulta [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) y la lista completa de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       exercises: [
         {
@@ -207,7 +207,7 @@ export const HEEL_NOT_PF_ES: Guide = {
     {
       q: '¿El dolor de talón puede venir de la espalda?',
       cites: [CITE.latt],
-      a: 'Sí. Un nervio pinzado en la zona lumbar a nivel de L5 o S1 puede causar dolor, adormecimiento u hormigueo en el talón y la planta. Es relativamente común y suele venir con dolor de espalda o dolor que baja por la pierna. La debilidad en el pie o un adormecimiento que se extiende necesitan un médico pronto.',
+      a: 'Sí. Un nervio pinzado en la zona lumbar a nivel de L5 o S1 puede causar dolor, adormecimiento u hormigueo en el talón y la planta. Es relativamente común y suele venir con dolor de espalda o dolor que baja por la pierna. Si hay debilidad en el pie o un adormecimiento que se extiende, consulta pronto a un médico.',
     },
     {
       q: '¿Cómo se siente el dolor de nervio en el talón?',
@@ -227,12 +227,12 @@ export const HEEL_NOT_PF_ES: Guide = {
     {
       q: '¿Por qué mi fascitis plantar no mejora?',
       cites: [CITE.latt],
-      a: 'Hay varias razones posibles, y una es que quizá no sea fascitis plantar. Cerca del 90\u00A0% de las personas con fascitis plantar mejora con tratamiento sin cirugía, así que un dolor que no ha cambiado tras varias semanas de estiramientos y trabajo de fuerza constantes es un buen motivo para que un profesional revise el diagnóstico.',
+      a: 'Hay varias razones posibles, y una es que quizá no sea fascitis plantar. Cerca del 90\u00A0% de las personas con fascitis plantar mejora sin cirugía, así que un dolor que no ha cambiado tras varias semanas de estiramientos y trabajo de fuerza constantes es un buen motivo para que un profesional revise el diagnóstico.',
     },
     {
       q: '¿Qué causa dolor de talón en niños si no es fascitis plantar?',
       cites: [CITE.tuHeelPain],
-      a: 'En niños que todavía están creciendo, la causa más común es la enfermedad de Sever, una irritación del cartílago de crecimiento en la parte de atrás del hueso del talón. Duele durante y después de deportes con carreras y saltos, y un talón que duele al apretarlo por los dos lados apunta a ella. Un profesional debe revisar el dolor de talón de un niño que no se calma.',
+      a: 'En niños que todavía están creciendo, la causa más común es la enfermedad de Sever, una irritación del cartílago de crecimiento en la parte de atrás del hueso del talón. Duele durante y después de deportes con carreras y saltos, y un talón que duele al apretarlo por los dos lados apunta a ella. Si el dolor de talón de un niño no se calma, debe revisarlo un profesional.',
     },
     {
       q: '¿Puedo hacer ejercicios para la fascitis plantar si no estoy seguro de qué es?',

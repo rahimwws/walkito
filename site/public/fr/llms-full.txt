@@ -131,7 +131,7 @@ Des chaussures qui soutiennent le pied aident, mais les semelles seules ne suffi
 
 Les attelles de nuit, portées pendant le sommeil pendant 1 à 3 mois, obtiennent la meilleure note de la recommandation, **A**, pour les personnes qui ont toujours mal aux premiers pas du matin. Elles maintiennent la cheville pour que le fascia plantaire ne se raccourcisse pas pendant la nuit. Demandez à votre professionnel de santé si elles vous conviennent.
 
-La recommandation ne note pas de types de chaussures précis, mais des chaussures qui ne soutiennent pas le pied sont un facteur de risque couramment reconnu. Des chaussures avec un soutien de voûte et un contrefort de talon ferme prennent une partie de la charge que le fascia plantaire porterait seul. Si vos pieds font mal après une longue journée debout, voir [mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/). Les personnes qui travaillent en horaires postés peuvent commencer par [infirmières et douleur aux pieds](https://walkito.site/fr/mal-aux-pieds-infirmieres/).
+La recommandation ne note pas de types de chaussures précis, mais des chaussures qui ne soutiennent pas le pied sont un facteur de risque couramment reconnu. Des chaussures avec un soutien de voûte et un contrefort de talon ferme prennent une partie de la charge que le fascia plantaire porterait seul. Si vos pieds font mal après une longue journée debout, voir [mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/). Les personnes qui travaillent en horaires postés peuvent commencer par [infirmières et douleur aux pieds](https://walkito.site/fr/mal-aux-pieds-infirmieres/), et il existe des pages pour les [enseignants](https://walkito.site/fr/mal-aux-pieds-enseignants/), les [employés du commerce et des entrepôts](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/), les [cuisiniers et le personnel de cuisine](https://walkito.site/fr/mal-aux-pieds-cuisiniers/) et les [coiffeurs](https://walkito.site/fr/mal-aux-pieds-coiffeurs/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -438,7 +438,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 
 Dans Silbernagel 2007, les patients qui ont continué à courir pendant la rééducation, en suivant le modèle de surveillance de la douleur, n’ont pas fait moins bien que ceux qui se sont d’abord reposés. Les deux groupes se sont améliorés à 12 mois. L’essai concluait qu’une activité poursuivie, avec surveillance de la douleur, pouvait donc représenter une option intéressante pendant la rééducation.
 
-Cela ne veut pas dire que courir est sans risque dans tous les cas. **Si la douleur ne se calme pas pendant la nuit, ou si chaque semaine est pire, réduisez.** Une douleur au point d’attache sur l’os du talon demande plus de prudence qu’une douleur au corps du tendon. Tout claquement ou craquement soudain est une raison d’arrêter et de consulter un professionnel de santé.
+Cela ne veut pas dire que courir est sans risque dans tous les cas. **Si la douleur ne se calme pas pendant la nuit, ou si chaque semaine est pire, réduisez.** Une douleur au point d’attache sur l’os du talon demande plus de prudence qu’une douleur au corps du tendon. Tout claquement ou craquement soudain est une raison d’arrêter et de consulter un professionnel de santé. Pour un programme de renforcement, voyez [exercices pour les pieds des coureurs](https://walkito.site/fr/exercices-pieds-coureurs/), et pour les montées, les descentes et le poids du sac, [mal aux pieds après une randonnée](https://walkito.site/fr/mal-aux-pieds-randonnee/).
 
 Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
 
@@ -727,7 +727,7 @@ Source: Doherty C, Bleakley C, Delahunt E, Holden S. Treatment and prevention of
 
 ### Les exercices de renforcement de la cheville, dans l’ordre
 
-Commencez à l’étape 1 si vous vous êtes fait une entorse récemment ou si votre cheville paraît faible sur un sol irrégulier. Si les montées sur pointes sur deux pieds sont déjà faciles, vous pouvez commencer à l’étape 2 ou 3. Arrêtez un exercice pour la journée si la douleur atteint **6/10**, ou si la cheville est plus gonflée ou plus douloureuse le lendemain matin.
+Commencez à l’étape 1 si vous vous êtes fait une entorse récemment ou si votre cheville paraît faible sur un sol irrégulier. Si ce sont vos pieds qui font mal pendant les randonnées, voyez [mal aux pieds après une randonnée](https://walkito.site/fr/mal-aux-pieds-randonnee/). Si les montées sur pointes sur deux pieds sont déjà faciles, vous pouvez commencer à l’étape 2 ou 3. Arrêtez un exercice pour la journée si la douleur atteint **6/10**, ou si la cheville est plus gonflée ou plus douloureuse le lendemain matin.
 
 Les doses ci-dessous sont des points de départ modestes. Les essais cités sur cette page utilisaient leurs propres programmes, décrits dans chaque partie.
 
@@ -1008,7 +1008,7 @@ Les muscles qui plient et écartent les orteils s’appellent les muscles intrin
 
 ### Qu’est-ce qui cause une douleur à l’avant-pied ?
 
-La **métatarsalgie** est le terme le plus courant. Elle désigne une douleur et une inflammation autour d’une ou plusieurs têtes métatarsiennes, en général la deuxième et la troisième. La surutilisation, un deuxième métatarsien long, des [voûtes hautes](https://walkito.site/fr/pied-creux-exercices/) et des [mollets raides](https://walkito.site/fr/mollets-tendus/) peuvent tous y contribuer.
+La **métatarsalgie** est le terme le plus courant. Elle désigne une douleur et une inflammation autour d’une ou plusieurs têtes métatarsiennes, en général la deuxième et la troisième. La surutilisation, un deuxième métatarsien long, des [voûtes hautes](https://walkito.site/fr/pied-creux-exercices/) et des [mollets raides](https://walkito.site/fr/mollets-tendus/) peuvent tous y contribuer. Si la douleur apparaît lors de longues randonnées, voyez [mal aux pieds après une randonnée](https://walkito.site/fr/mal-aux-pieds-randonnee/).
 
 Le **névrome de Morton** est un épaississement du nerf entre les têtes métatarsiennes, le plus souvent entre le troisième et le quatrième orteil. Il donne des brûlures, des fourmillements ou un engourdissement plutôt qu’une simple douleur. Les chaussures étroites ou à talons hauts compriment le nerf et l’aggravent.
 
@@ -1240,7 +1240,7 @@ L’amorti sous le talon pourrait compter. Dans une étude de 2023, Landorf et s
 
 Une douleur profonde au centre du talon, pire pieds nus sur un sol dur, peut aussi venir du coussinet graisseux du talon (le coussin de graisse sous l’os du talon). Voir [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/) pour ce cas de figure.
 
-De courts moments pieds nus sur l’herbe ou le sable sont plus doux. S’ils augmentent votre douleur au talon le lendemain matin, c’était trop.
+De courts moments pieds nus sur l’herbe ou le sable sont plus doux. S’ils augmentent votre douleur au talon le lendemain matin, c’était trop. Le même contrôle du lendemain matin vaut pour toute marche : voyez [marcher avec une fasciite plantaire](https://walkito.site/fr/marcher-avec-fasciite-plantaire/).
 
 Source: Landorf KB, Kaminski MR, Munteanu SE, Zammit GV, Menz HB. Activity and footwear characteristics in people with and without plantar heel pain: a matched cross-sectional observational study. Musculoskeletal Care. 2023;21(1):35–44.
 
@@ -1775,7 +1775,7 @@ La recommandation de 2023 sur la douleur au talon donne aux étirements du molle
 
 Pour la tendinite d’Achille, le heel-rise test est l’une des mesures de résultat habituelles. Les personnes qui ont une tendinopathie d’Achille du corps du tendon (une douleur au milieu du tendon, pas à l’os du talon) ont en général une endurance du mollet réduite du côté atteint. Voir [exercices pour la tendinite d’Achille](https://walkito.site/fr/tendinite-achille-exercices/) pour le travail excentrique.
 
-En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course.
+En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course, et [exercices pour les pieds des coureurs](https://walkito.site/fr/exercices-pieds-coureurs/) montre comment travailler le mollet.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
@@ -3996,7 +3996,7 @@ Un cadre international destiné aux professionnels de santé liste les signes d�
 
 Pour le dos, attendez-vous à des questions sur le début de la douleur, sur ce qui la soulage et sur le fait qu’elle descende ou non dans une jambe. L’examen vérifie en général la mobilité du dos, ainsi que la force, les réflexes et la sensibilité des jambes et des pieds. Une imagerie n’est en général pas nécessaire, sauf si un élément oriente vers une cause grave.
 
-Pour les pieds, le professionnel de santé vérifie si le pied plat est souple (la voûte réapparaît quand vous montez sur la pointe des pieds ou soulevez le pied) ou rigide (il reste plat).
+Pour les pieds, le professionnel de santé vérifie si le pied plat est souple (la voûte réapparaît quand vous montez sur la pointe des pieds ou soulevez le pied) ou rigide (il reste plat). Vous pouvez faire les mêmes [vérifications à la maison](https://walkito.site/fr/test-pied-plat/).
 
 Un pied plat rigide, ou une voûte qui s’est affaissée à l’âge adulte avec une douleur à l’intérieur de la cheville, demande une évaluation à part. Ce second cas correspond souvent à un tendon qui s’affaiblit, abordé dans [dysfonction du tendon tibial postérieur](https://walkito.site/fr/dysfonction-tendon-tibial-posterieur/). Le professionnel de santé peut aussi vous regarder marcher pour voir à quel point vos pieds s’affaissent vers l’intérieur.
 
@@ -4300,7 +4300,7 @@ Ce qu’un kinésithérapeute, un médecin du sport ou un podologue vérifiera p
 - Si le genou a gonflé, s’est bloqué, s’est dérobé, ou a été blessé lors d’une torsion ou d’une chute.
 - Comment le genou, la hanche et le pied bougent pendant un squat ou une descente de marche.
 - La force des muscles à l’extérieur et à l’arrière de la hanche, et celle de la cuisse.
-- Si vos pieds plats sont souples (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) ou rigides. Voir [pieds plats](https://walkito.site/fr/pieds-plats/) pour le test rapide.
+- Si vos pieds plats sont souples (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) ou rigides. Voir [pieds plats](https://walkito.site/fr/pieds-plats/) pour le test rapide, ou le [test du pied plat](https://walkito.site/fr/test-pied-plat/) pour les quatre vérifications à la maison.
 - Chez les personnes âgées, les signes d’arthrose du genou, qui peuvent nécessiter une radio.
 
 Source: Willy RW, Hoglund LT, Barton CJ, et al. Patellofemoral Pain: Clinical Practice Guidelines Linked to the International Classification of Functioning, Disability and Health From the Academy of Orthopaedic Physical Therapy of the American Physical Therapy Association. Journal of Orthopaedic & Sports Physical Therapy. 2019;49(9):CPG1–CPG95.
@@ -4471,7 +4471,7 @@ Sur 12 mois, le groupe témoin était 2,42 fois plus susceptible de se blesser e
 
 Un essai antérieur plus petit de la même équipe, sur 28 coureurs, a trouvé qu’environ deux mois d’entraînement du pied augmentaient la taille de chaque muscle du pied mesuré, par rapport au groupe témoin. Les coureurs poussaient aussi plus fort sur le sol.
 
-Les deux essais viennent d’un même groupe de recherche au Brésil, chez des coureurs amateurs qui n’étaient pas blessés au départ. On ne sait pas encore si le programme aide les débutants ou les personnes qui ont déjà mal.
+Les deux essais viennent d’un même groupe de recherche au Brésil, chez des coureurs amateurs qui n’étaient pas blessés au départ. Une routine propre aux coureurs, avec une semaine type, se trouve dans [exercices pour les pieds des coureurs](https://walkito.site/fr/exercices-pieds-coureurs/). On ne sait pas encore si le programme aide les débutants ou les personnes qui ont déjà mal.
 
 Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent running-related injuries: a survival analysis of a single-blind, randomized controlled trial. American Journal of Sports Medicine. 2020;48(14):3610–3619.
 Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot strengthening program on foot muscle morphology and running mechanics: a proof-of-concept, single-blind randomized controlled trial. Physical Therapy in Sport. 2020;42:107–115.
@@ -5064,7 +5064,7 @@ Language: French (Français) · https://walkito.site/fr/douleur-talon-apres-marc
 Votre talon allait bien pendant la marche, mais maintenant que vous êtes arrêté, il fait mal. Ou bien la douleur est apparue au milieu d’une longue marche et a augmenté à chaque pas. Les deux schémas indiquent la même chose : les tissus sous le talon ont reçu ce jour-là plus de charge qu’ils ne pouvaient en encaisser. La cause la plus fréquente est la [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/), et la réponse la plus utile, ce sont les étirements et un renforcement progressif du mollet.
 
 - La recommandation de 2023 sur la douleur au talon décrit la douleur de la fasciite plantaire comme « plus marquée à la mise en charge au réveil ou après une période de repos », mais elle cite aussi comme signe clé une douleur qui augmente avec une activité prolongée en charge (Koc et coll., 2023).
-- Dans une étude cas-témoins appariée de 50 personnes atteintes de fasciite plantaire et 100 témoins, une dorsiflexion de cheville réduite (jusqu’où le pied remonte vers le tibia) était le facteur de risque indépendant le plus fort, devant un indice de masse corporelle supérieur à 30 et le fait de rester debout la plus grande partie de la journée de travail (Riddle et coll., 2003).
+- Dans une étude cas-témoins appariée de 50 personnes atteintes de fasciite plantaire et 100 témoins, une dorsiflexion de cheville réduite (jusqu’où le pied remonte vers le tibia) était le facteur de risque indépendant le plus fort, devant un [indice de masse corporelle supérieur à 30](https://walkito.site/fr/poids-et-fasciite-plantaire/) et le fait de rester debout la plus grande partie de la journée de travail (Riddle et coll., 2003).
 - La recommandation donne aux étirements du fascia plantaire et du mollet sa meilleure note, **A**, et au renforcement un **B** (Koc et coll., 2023).
 - Environ 90 % des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux comme les étirements, le travail du mollet et la gestion de la charge (Latt et coll., 2020).
 - Une douleur au talon après la marche qui augmente à chaque sortie et ne se calme pas au repos peut évoquer une fracture de fatigue plutôt qu’une fasciite plantaire. Presser les côtés du talon est l’un des signes cliniques.
@@ -5085,8 +5085,8 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 La fasciite plantaire est la cause la plus fréquente, mais ce n’est pas la seule. L’endroit de la douleur et le moment où elle apparaît aident à les distinguer :
 
 - **Amincissement du coussinet graisseux du talon.** Le coussinet graisseux sous l’os du talon amortit chaque pas. Quand il s’amincit ou se déplace, l’os encaisse plus directement les chocs. Une revue exploratoire de 2022 a noté que la douleur du coussinet graisseux est plutôt une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus (Chang et coll., 2022). La douleur de la fasciite plantaire se situe en général à l’avant et à l’intérieur du talon. Celle du coussinet se situe juste sous le centre. Si marcher pieds nus sur du carrelage ou du béton est nettement pire qu’avec des chaussures amortissantes, l’amincissement du coussinet mérite d’être envisagé. Voir [syndrome du coussinet graisseux du talon](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/) pour en savoir plus.
-- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
-- **Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied.
+- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Pour les randonnées avec de longues montées et descentes, voyez [mal aux pieds après une randonnée](https://walkito.site/fr/mal-aux-pieds-randonnee/). Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
+- **Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied. [Fasciite plantaire ou fracture de fatigue](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/) compare les deux point par point.
 - **Douleur projetée depuis le bas du dos ou compression nerveuse.** Une douleur au talon accompagnée d’engourdissements, de fourmillements ou de brûlures peut évoquer un problème de nerf, pas un problème de charge des tissus. C’est une raison de consulter d’abord un professionnel de santé.
 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
@@ -5134,7 +5134,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 ### Combien marcher quand le talon fait mal ?
 
-Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là.
+Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là. [Combien peut-on marcher avec une fasciite plantaire ?](https://walkito.site/fr/marcher-avec-fasciite-plantaire/) donne une règle simple fondée sur la douleur et une façon de reprendre progressivement.
 
 Une approche pratique :
 
@@ -5243,7 +5243,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Une fracture de fatigue du calcanéum, une fine fissure de l’os du talon due à une charge répétée, peut donner une douleur sourde et profonde qui lance la nuit. Contrairement à la fasciite plantaire, la douleur s’aggrave en général avec l’activité et ne se calme pas à l’échauffement. Elle suit souvent une hausse brusque de la course, de la marche ou de la station debout sur sol dur.
 
-Le « test de compression », qui consiste à presser les deux côtés de l’os du talon l’un vers l’autre, est le signe clinique classique. **Une douleur à la compression est inhabituelle dans la fasciite plantaire et fréquente dans les fractures de fatigue.** Les radios simples passent souvent à côté d’une fracture de fatigue débutante. Une IRM ou une scintigraphie osseuse est en général nécessaire pour la confirmer.
+Le « test de compression », qui consiste à presser les deux côtés de l’os du talon l’un vers l’autre, est le signe clinique classique. [Fasciite plantaire ou fracture de fatigue](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/) explique ce qu’il peut montrer et ce qu’il ne montre pas. **Une douleur à la compression est inhabituelle dans la fasciite plantaire et fréquente dans les fractures de fatigue.** Les radios simples passent souvent à côté d’une fracture de fatigue débutante. Une IRM ou une scintigraphie osseuse est en général nécessaire pour la confirmer.
 
 Une revue de 2011 parue dans American Family Physician a noté que les fractures de fatigue du calcanéum donnent une douleur qui s’aggrave progressivement après une hausse de l’activité ou un passage à des surfaces de marche plus dures. La douleur nocturne et la douleur au repos figuraient parmi les signes qui distinguent les fractures de fatigue de la fasciite.
 
@@ -5402,7 +5402,7 @@ Source: Ponnapula P, Boberg JS. Lower extremity changes experienced during pregn
 
 **Le résultat le plus net, c’est que la voûte s’abaisse et que le pied s’allonge.** Une étude de 2013 a mesuré 49 femmes au premier trimestre, puis de nouveau environ quatre mois et demi après l’accouchement. La hauteur et la rigidité de la voûte ont diminué, tandis que la longueur du pied et l’affaissement de la voûte ont augmenté. Au total, 35 des 49 femmes avaient une voûte plus basse et 30 un pied plus long, le plus souvent de 2 à 10 millimètres.
 
-La cause est moins claire que ne le disent beaucoup de sites. Dans cette étude, la laxité des articulations et la prise de poids pendant la grossesse n’étaient pas liées à l’ampleur des changements du pied. Le poids et les longues heures debout sont des facteurs de risque connus de la fasciite plantaire en général (Koc et coll., 2023), mais aucune étude ne les a testés pendant la grossesse.
+La cause est moins claire que ne le disent beaucoup de sites. Dans cette étude, la laxité des articulations et la prise de poids pendant la grossesse n’étaient pas liées à l’ampleur des changements du pied. Le [poids](https://walkito.site/fr/poids-et-fasciite-plantaire/) et les longues heures debout sont des facteurs de risque connus de la fasciite plantaire en général (Koc et coll., 2023), mais aucune étude ne les a testés pendant la grossesse.
 
 Le gonflement, un corps plus lourd et une autre façon de marcher modifient tous la répartition de la charge sur le pied. Le fascia plantaire est la bande sous le pied qui soutient la voûte : une voûte plus basse et une charge plus forte peuvent le mettre en tension. Pour savoir si une voûte affaissée peut le rester après l’accouchement : [les pieds plats s’aggravent-ils avec l’âge](https://walkito.site/fr/pieds-plats-avec-l-age/).
 
@@ -5514,7 +5514,7 @@ Les attelles de nuit n’ont pas été étudiées pendant la grossesse. Pour la 
 
 #### La marche est-elle mauvaise pour la fasciite plantaire pendant la grossesse ?
 
-La marche fait partie des activités que l’ACOG propose pendant la grossesse, dans le cadre d’au moins 150 minutes d’activité modérée par semaine. Aucune étude ne s’est penchée sur la marche avec une fasciite plantaire pendant la grossesse : demandez à votre médecin ou à votre sage-femme quelle quantité vous convient.
+La marche fait partie des activités que l’ACOG propose pendant la grossesse, dans le cadre d’au moins 150 minutes d’activité modérée par semaine. Aucune étude ne s’est penchée sur la [marche avec une fasciite plantaire](https://walkito.site/fr/marcher-avec-fasciite-plantaire/) pendant la grossesse : demandez à votre médecin ou à votre sage-femme quelle quantité vous convient.
 
 #### Peut-on faire des ondes de choc ou une infiltration de corticoïdes pendant la grossesse ?
 
@@ -5874,7 +5874,7 @@ Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozc
 
 Un pied plat souple est un pied dont la voûte s’aplatit sous votre poids mais revient quand le pied ne touche plus le sol. La plupart des pieds plats sont de ce type. Un pied plat rigide reste plat, que vous soyez debout dessus ou non.
 
-Une vérification rapide : asseyez-vous et regardez l’intérieur de votre pied. Si vous voyez une voûte, mettez-vous debout sur les deux pieds. Si la voûte disparaît debout alors qu’elle était là assis, le pied plat est souple. Autre façon : montez sur la pointe des pieds. Si la voûte apparaît quand vous montez, il est souple.
+[Une vérification rapide](https://walkito.site/fr/test-pied-plat/) : asseyez-vous et regardez l’intérieur de votre pied. Si vous voyez une voûte, mettez-vous debout sur les deux pieds. Si la voûte disparaît debout alors qu’elle était là assis, le pied plat est souple. Autre façon : montez sur la pointe des pieds. Si la voûte apparaît quand vous montez, il est souple.
 
 **La différence compte, car l’exercice peut agir sur une voûte souple.** Dans un essai sur 52 personnes aux pieds plats souples, six semaines d’exercices du pied court, de travail de la cheville, de renforcement de la hanche et d’étirements ont modifié deux mesures de la forme de la voûte davantage que dans un groupe témoin.
 
@@ -6164,6 +6164,7 @@ Pour les coureurs, la recommandation de 2023 conseille d’adapter la charge au 
 
 - [Mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures pour les personnes debout au travail.
 - [Infirmières et douleur aux pieds](https://walkito.site/fr/mal-aux-pieds-infirmieres/) traite des longues gardes sur sol dur.
+- D’autres métiers sur sol dur ont leur propre page : [enseignants](https://walkito.site/fr/mal-aux-pieds-enseignants/), [employés du commerce et des entrepôts](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/), [cuisiniers et personnel de cuisine](https://walkito.site/fr/mal-aux-pieds-cuisiniers/) et [coiffeurs](https://walkito.site/fr/mal-aux-pieds-coiffeurs/).
 - [Bureau debout et douleur aux pieds](https://walkito.site/fr/bureau-debout-mal-aux-pieds/) parle de l’alternance assis-debout.
 
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
@@ -6174,10 +6175,10 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Plusieurs problèmes ont le même emplacement ou le même schéma du matin. L’endroit de la douleur et son comportement aident à les distinguer :
 
-- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. Voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
+- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. [Comment distinguer les deux](https://walkito.site/fr/fasciite-plantaire-ou-tendinite-achille/). Voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
 - **Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du [coussinet](https://walkito.site/fr/syndrome-coussinet-graisseux-talon/) est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.
 - **Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174 patients, une [épine calcanéenne](https://walkito.site/fr/epine-calcaneenne-exercices/) au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.
-- **Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut [faire mal au repos ou la nuit](https://walkito.site/fr/douleur-talon-la-nuit/). Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.
+- **Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. [Comment les distinguer](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/). Elle peut [faire mal au repos ou la nuit](https://walkito.site/fr/douleur-talon-la-nuit/). Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.
 - **Rhumatisme inflammatoire.** Quand les deux talons font mal, que la raideur du matin dure plus de 30 minutes et que d’autres articulations sont raides ou gonflées, le tableau oriente vers une cause générale. Un professionnel de santé doit vérifier.
 
 Dans le doute, un professionnel de santé peut les distinguer d’après l’emplacement, le comportement de la douleur et, si besoin, l’imagerie.
@@ -6228,7 +6229,7 @@ Oui, mais cela prend en général longtemps. Une revue de 2020 indique qu’envi
 
 #### Marcher, c’est bon ou mauvais pour la fasciite plantaire ?
 
-Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème. La recommandation ne dit pas d’arrêter de bouger. Le test, c’est votre talon le lendemain matin. Si la douleur aux premiers pas le matin après une marche est nettement plus forte que d’habitude, cette marche était de trop. Raccourcissez la distance avant d’arrêter complètement.
+Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème. La recommandation ne dit pas d’arrêter de bouger. Le test, c’est votre talon le lendemain matin. Si la douleur aux premiers pas le matin après une marche est nettement plus forte que d’habitude, cette marche était de trop. Raccourcissez la distance avant d’arrêter complètement. Plus de détails dans [marcher avec une fasciite plantaire](https://walkito.site/fr/marcher-avec-fasciite-plantaire/).
 
 #### Une épine calcanéenne cause-t-elle la fasciite plantaire ?
 
@@ -6252,7 +6253,7 @@ La fasciite plantaire apparaît souvent d’abord à un pied, car la charge se r
 
 #### Pourquoi ai-je eu une fasciite plantaire d’un coup ?
 
-Une fasciite plantaire soudaine suit en général un changement soudain de charge, pas une blessure soudaine. Une hausse rapide du kilométrage en course, de nouvelles chaussures, un nouveau travail où vous restez debout, ou une prise de poids peuvent surcharger le fascia plus vite qu’il ne s’adapte. Rester longtemps debout au travail fait partie des facteurs de risque reconnus par la recommandation de 2023 sur la douleur au talon.
+Une fasciite plantaire soudaine suit en général un changement soudain de charge, pas une blessure soudaine. Une hausse rapide du kilométrage en course, de nouvelles chaussures, un nouveau travail où vous restez debout, ou une [prise de poids](https://walkito.site/fr/poids-et-fasciite-plantaire/) peuvent surcharger le fascia plus vite qu’il ne s’adapte. Rester longtemps debout au travail fait partie des facteurs de risque reconnus par la recommandation de 2023 sur la douleur au talon.
 
 ## Glace ou chaleur pour la fasciite plantaire : laquelle aide, et quand
 
@@ -6781,9 +6782,9 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 La fasciite plantaire est la cause la plus fréquente de douleur au talon le matin, mais ce n’est pas la seule. L’endroit de la douleur et son comportement aident à les distinguer :
 
-- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille se raidit la nuit comme le fascia plantaire, donc la raideur aux premiers pas est fréquente. Elle s’améliore en général à la marche, puis [s’aggrave à nouveau avec une activité prolongée](https://walkito.site/fr/douleur-talon-apres-marche/). Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
+- **Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille se raidit la nuit comme le fascia plantaire, donc la [raideur aux premiers pas est fréquente](https://walkito.site/fr/fasciite-plantaire-ou-tendinite-achille/). Elle s’améliore en général à la marche, puis [s’aggrave à nouveau avec une activité prolongée](https://walkito.site/fr/douleur-talon-apres-marche/). Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille : exercices](https://walkito.site/fr/tendinite-achille-exercices/).
 - **Amincissement du coussinet graisseux du talon.** Le coussinet graisseux sous l’os du talon sert d’amortisseur. Quand il s’amincit ou se déplace, l’os encaisse plus directement les chocs. Une revue exploratoire de 2022 a noté que la douleur du coussinet graisseux est plutôt une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus, et qu’elle peut être difficile à distinguer de la fasciite plantaire sans imagerie (Chang et coll., 2022). La différence clé : la douleur de la fasciite plantaire est en général la plus vive à l’avant et à l’intérieur du talon, alors que celle du coussinet se situe juste sous le centre.
-- **Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement, en général après une hausse de l’activité. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité au lieu de se calmer une fois échauffé, et elle peut [faire mal au repos ou la nuit](https://walkito.site/fr/douleur-talon-la-nuit/). Si presser les côtés du talon reproduit la douleur, consultez un professionnel de santé avant de faire travailler le pied.
+- **Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement, en général après une hausse de l’activité. [Comment la distinguer d’une fasciite plantaire](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/). Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité au lieu de se calmer une fois échauffé, et elle peut [faire mal au repos ou la nuit](https://walkito.site/fr/douleur-talon-la-nuit/). Si presser les côtés du talon reproduit la douleur, consultez un professionnel de santé avant de faire travailler le pied.
 - **Rhumatisme inflammatoire (un signal d’alerte).** Quand les deux talons font mal le matin, que la raideur dure plus de 30 minutes et que d’autres articulations sont aussi raides ou gonflées, le tableau s’éloigne de la fasciite plantaire et oriente vers quelque chose qu’un professionnel de santé doit vérifier. Des maladies comme le rhumatisme psoriasique ou la spondylarthrite ankylosante peuvent faire mal là où les tendons s’attachent à l’os, y compris au talon.
 
 Dans une cohorte de 174 personnes atteintes de fasciite plantaire suivies en moyenne 9,7 ans, une douleur aux deux talons prédisait nettement une moins bonne évolution à long terme, et les auteurs ont noté qu’une maladie inflammatoire générale non reconnue pourrait en partie l’expliquer (Hansen et coll., 2018). **Si les deux talons font mal et que d’autres articulations sont touchées, consultez d’abord un professionnel de santé.**
@@ -7363,7 +7364,7 @@ La douleur et la fatigue générales après un long poste sont fréquentes et pa
 
 Si vos voûtes semblent affaissées ou basculées vers l’intérieur en fin de poste, les exercices de [exercices pour les pieds plats](https://walkito.site/fr/exercices-pieds-plats/) ciblent les muscles qui soutiennent la voûte. Une douleur le long du tibia peut être une [périostite tibiale](https://walkito.site/fr/periostite-tibiale-exercices/). Une douleur dans le tendon d’Achille, à l’arrière du talon, est un autre problème.
 
-Si votre question porte surtout sur la douleur liée à la station debout et que vous n’êtes pas infirmier ou infirmière, [pourquoi ai-je mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) reprend les mêmes exercices pour un public plus large. Pour la version bureau debout de ce problème, voir [bureau debout et mal aux pieds](https://walkito.site/fr/bureau-debout-mal-aux-pieds/). **Si vous ne savez pas ce qui cause la douleur, consultez un professionnel de santé avant de la charger avec des exercices.**
+Si votre question porte surtout sur la douleur liée à la station debout et que vous n’êtes pas infirmier ou infirmière, [pourquoi ai-je mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) reprend les mêmes exercices pour un public plus large. D’autres métiers ont leur propre page : [enseignants](https://walkito.site/fr/mal-aux-pieds-enseignants/), [employés du commerce et des entrepôts](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/), [cuisiniers et personnel de cuisine](https://walkito.site/fr/mal-aux-pieds-cuisiniers/) et [coiffeurs](https://walkito.site/fr/mal-aux-pieds-coiffeurs/). Pour la version bureau debout de ce problème, voir [bureau debout et mal aux pieds](https://walkito.site/fr/bureau-debout-mal-aux-pieds/). **Si vous ne savez pas ce qui cause la douleur, consultez un professionnel de santé avant de la charger avec des exercices.**
 
 ### Consultez d’abord un professionnel de santé si
 
@@ -7467,7 +7468,7 @@ La cohorte de Hansen 2018 a comparé plusieurs facteurs de départ à la durée 
 - **Être une femme.** Pour 100 hommes qui devenaient asymptomatiques par an, seules 49 femmes l’étaient (rapport de risques, ou hazard ratio, 0,49, p inférieur à 0,01). La raison n’est pas établie. Les auteurs ont cité les différences hormonales, les habitudes de chaussures et des facteurs physiques comme pistes possibles, sans données pour trancher (Hansen et coll., 2018).
 - **Douleur aux deux talons.** Les personnes qui avaient mal aux deux talons au départ devenaient asymptomatiques à un rythme annuel environ trois fois plus faible que celles qui avaient mal d’un seul côté (rapport de risques, ou hazard ratio, 0,33, p inférieur à 0,01). Les auteurs ont noté qu’une douleur des deux côtés pourrait refléter une maladie inflammatoire non reconnue, car une douleur aux points d’attache des tendons sur l’os des deux côtés est une caractéristique de certaines formes de rhumatisme. Personne dans leur cohorte n’avait de diagnostic inflammatoire connu, mais aucun dépistage sérologique n’a été fait (Hansen et coll., 2018).
 
-L’IMC, l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens : une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.
+L’[IMC](https://walkito.site/fr/poids-et-fasciite-plantaire/), l’âge, le tabagisme, un travail physiquement exigeant, l’épaisseur du fascia à l’échographie et la présence d’une [épine calcanéenne](https://walkito.site/fr/fasciite-plantaire-ou-epine-calcaneenne/) n’avaient aucun effet significatif sur l’évolution dans cette étude. Ce dernier résultat surprend beaucoup de gens : une épine calcanéenne ne rendait les symptômes ni plus longs ni plus courts (p = 0,88). Des études antérieures n’avaient pas non plus trouvé de lien entre épine calcanéenne et symptômes.
 
 Si les deux talons font mal et que la raideur du matin dure longtemps ou que d’autres articulations sont touchées, cela vaut la peine d’en parler à un professionnel de santé, même si les exercices aident. Voir [la douleur au talon au réveil](https://walkito.site/fr/douleur-talon-au-reveil/) pour savoir quand une douleur des deux côtés est un signal d’alerte.
 
@@ -7566,7 +7567,7 @@ Pas d’après l’étude de Hansen 2018. Une épine calcanéenne au départ n�
 
 #### Marcher est-il bon pour la fasciite plantaire ?
 
-Marcher modérément avec des chaussures qui soutiennent le pied ne pose en général pas de problème, et la recommandation ne dit pas d’arrêter de bouger. Ce qui compte, c’est de savoir si le lendemain matin est pire. Si la douleur aux premiers pas le lendemain d’une marche est nettement plus forte que d’habitude, cette marche était plus que ce que le pied pouvait encaisser. Réduisez la distance ou la durée au lieu de tout arrêter.
+Marcher modérément avec des chaussures qui soutiennent le pied ne pose en général pas de problème, et la recommandation ne dit pas d’arrêter de bouger. Ce qui compte, c’est de savoir si le lendemain matin est pire. Si la douleur aux premiers pas le lendemain d’une marche est nettement plus forte que d’habitude, cette marche était plus que ce que le pied pouvait encaisser. Réduisez la distance ou la durée au lieu de tout arrêter. Voyez [combien vous pouvez marcher](https://walkito.site/fr/marcher-avec-fasciite-plantaire/).
 
 #### Quand consulter un médecin pour une fasciite plantaire qui ne s’améliore pas ?
 
@@ -7600,7 +7601,7 @@ Une épine calcanéenne est une excroissance osseuse sous l’os du talon. La fa
 
 **Une épine calcanéenne et une fasciite plantaire ne sont pas la même chose.** La fasciite plantaire est un problème de tissu mou : le fascia plantaire, l’épaisse bande qui va de l’os du talon aux orteils, s’irrite, en général là où il s’attache à l’os. Une épine calcanéenne est une excroissance osseuse sous l’os du talon (le calcanéum). Les deux coexistent souvent, mais chacune peut apparaître sans l’autre.
 
-La fasciite plantaire donne la douleur vive, en coup de poignard, que les gens décrivent sous le talon, surtout aux premiers pas du matin ou après être resté assis. La recommandation de 2023 sur la douleur au talon la définit comme une douleur « plus marquée à la mise en charge au réveil ou après une période de repos ». Une épine calcanéenne, elle, est une constatation structurelle à la radio. Elle peut donner ou non ses propres symptômes.
+La fasciite plantaire donne la douleur vive, en coup de poignard, que les gens décrivent sous le talon, surtout aux premiers pas du matin ou après être resté assis. Une douleur à l’arrière du talon est un autre problème : voyez [fasciite plantaire ou tendinite d’Achille](https://walkito.site/fr/fasciite-plantaire-ou-tendinite-achille/). La recommandation de 2023 sur la douleur au talon la définit comme une douleur « plus marquée à la mise en charge au réveil ou après une période de repos ». Une épine calcanéenne, elle, est une constatation structurelle à la radio. Elle peut donner ou non ses propres symptômes.
 
 La confusion se comprend. Pendant des décennies, on a pensé que l’épine calcanéenne était la cause de la douleur sous le talon. Cette idée a été largement remplacée par des données montrant que les épines sont fréquentes chez des personnes sans douleur, et que beaucoup de personnes atteintes de fasciite plantaire n’ont aucune épine.
 
@@ -7660,7 +7661,7 @@ L’imagerie devient utile :
 
 - Quand la douleur ne suit pas le schéma typique de la fasciite plantaire.
 - Quand elle ne s’est pas améliorée après plusieurs semaines de soins conservateurs.
-- Quand un professionnel de santé soupçonne autre chose, comme une fracture de fatigue, un problème nerveux ou une déchirure du fascia plantaire.
+- Quand un professionnel de santé soupçonne autre chose, comme une [fracture de fatigue](https://walkito.site/fr/fasciite-plantaire-ou-fracture-de-fatigue/), un problème nerveux ou une déchirure du fascia plantaire.
 
 L’échographie peut mesurer l’épaisseur du fascia plantaire (au-delà de 4 mm, il est en général considéré comme épaissi), et l’IRM peut montrer des détails des tissus mous que la radio ne voit pas.
 
@@ -7979,7 +7980,7 @@ Les professionnels de santé classent cette dysfonction en quatre stades. Le sta
 - **Stade III** : la déformation est devenue rigide. Le pied ne peut plus être ramené en position corrigée, et il y a souvent de l’arthrose dans les articulations sous la cheville. À ce stade, l’exercice seul a peu de chances de changer la forme du pied. Un avis chirurgical est en général envisagé.
 - **Stade IV** : l’articulation de la cheville est atteinte à son tour. La cheville bascule en valgus, c’est-à-dire qu’elle penche vers l’extérieur. C’est le stade le plus avancé, qui demande en général une intervention chirurgicale.
 
-**La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II.** Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un dépistage rapide : une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.
+**La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II.** Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un [dépistage rapide](https://walkito.site/fr/test-pied-plat/) : une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.
 
 Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
@@ -8678,7 +8679,7 @@ Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged s
 
 Ajoutez un tapis dès le début si vous en avez un. Portez des chaussures avec un peu d’amorti, même à la maison. Faites les étirements du mollet du tableau ci-dessus au moins une fois par jour.
 
-Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](https://walkito.site/fr/mal-aux-pieds-infirmieres/).
+Si vous avez déjà mal aux pieds à force de rester debout et voulez le guide plus large, [pourquoi ai-je mal aux pieds après une journée debout](https://walkito.site/fr/mal-aux-pieds-debout-toute-la-journee/) explique le recoupement entre la douleur au bureau debout et des problèmes comme la fasciite plantaire. Pour la version propre aux infirmières, voir [mal aux pieds chez les infirmières](https://walkito.site/fr/mal-aux-pieds-infirmieres/). Il existe aussi des pages pour les [enseignants](https://walkito.site/fr/mal-aux-pieds-enseignants/), les [employés du commerce et des entrepôts](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/), les [cuisiniers et le personnel de cuisine](https://walkito.site/fr/mal-aux-pieds-cuisiniers/) et les [coiffeurs](https://walkito.site/fr/mal-aux-pieds-coiffeurs/).
 
 Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
 
@@ -8782,7 +8783,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Les chaussures qui maintiennent le pied et les [semelles](https://walkito.site/fr/semelles-ou-exercices/) sont souvent conseillées pour les douleurs de pied liées à la station debout, et ce conseil a une certaine base, mais les données sont plus minces que pour les étirements et le renforcement. La recommandation de 2023 sur la douleur au talon donne aux orthèses seules la note **B contre** pour le soulagement de la douleur à court terme, ce qui veut dire que les données penchent plutôt contre leur usage comme seule solution. Les orthèses associées à d’autres soins obtiennent un **C**.
 
-Ce que soutient la revue en santé au travail est plus large : les tapis de sol, les chaussures qui maintiennent le pied et les postes assis-debout figurent tous dans la liste des interventions qui ont quelques données pour réduire la gêne pendant le travail debout. Aucune n’a un grand essai derrière elle comme les étirements du mollet. Une approche raisonnable : portez des chaussures qui maintiennent le pied et utilisez un tapis si votre sol est dur, et faites les étirements et le renforcement pour les tissus eux-mêmes.
+Ce que soutient la revue en santé au travail est plus large : les tapis de sol, les chaussures qui maintiennent le pied et les postes assis-debout figurent tous dans la liste des interventions qui ont quelques données pour réduire la gêne pendant le travail debout. Aucune n’a un grand essai derrière elle comme les étirements du mollet. Une approche raisonnable : portez des chaussures qui maintiennent le pied et utilisez un tapis si votre sol est dur, et faites les étirements et le renforcement pour les tissus eux-mêmes. Certains métiers ont leur propre page : [enseignants](https://walkito.site/fr/mal-aux-pieds-enseignants/), [employés du commerce et des entrepôts](https://walkito.site/fr/mal-aux-pieds-commerce-entrepot/), [cuisiniers et personnel de cuisine](https://walkito.site/fr/mal-aux-pieds-cuisiniers/) et [coiffeurs](https://walkito.site/fr/mal-aux-pieds-coiffeurs/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -8900,7 +8901,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 Des mollets tendus sont associés à la [fasciite plantaire](https://walkito.site/fr/fasciite-plantaire/), la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).
 
-Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50 personnes atteintes de fasciite plantaire à 100 personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0 degré avaient une cote (odds) 23,3 fois plus élevée de fasciite plantaire que celles qui pouvaient dépasser 10 degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.
+Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50 personnes atteintes de fasciite plantaire à 100 personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0 degré avaient une cote (odds) 23,3 fois plus élevée de fasciite plantaire que celles qui pouvaient dépasser 10 degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le [poids corporel](https://walkito.site/fr/poids-et-fasciite-plantaire/) et le travail debout.
 
 Dans une étude ultérieure sur 254 personnes atteintes de fasciite plantaire, 83 % avaient une flexion de la cheville limitée, et 57 % de l’ensemble des patients avaient un gastrocnémien raide isolé (Patel et DiGiovanni, 2011).
 
