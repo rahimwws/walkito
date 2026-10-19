@@ -196,7 +196,7 @@ export const STANDING_DESK_IT: Guide = {
         },
         'Ascolta i piedi e la parte bassa della schiena. Se il fastidio cresce, siediti prima invece di stringere i denti.',
         'Aggiungi un tappetino da subito se ce l’hai. Metti scarpe con un po’ di ammortizzazione, anche a casa. Fai gli allungamenti del polpaccio della tabella sopra almeno una volta al giorno.',
-        'Se hai già male ai piedi a stare in piedi e vuoi la guida più ampia, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore da scrivania in piedi e problemi come la fascite plantare. Per la versione dedicata agli infermieri, vedi [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/).',
+        'Se hai già male ai piedi a stare in piedi e vuoi la guida più ampia, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore da scrivania in piedi e problemi come la fascite plantare. Per la versione dedicata agli infermieri, vedi [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/). Ci sono anche pagine per [insegnanti](/it/dolore-piedi-insegnanti/), [commercio e magazzino](/it/dolore-piedi-commercio-magazzino/), [cuochi e personale di cucina](/it/dolore-piedi-cuochi/) e [parrucchieri](/it/dolore-piedi-parrucchieri/).',
       ],
       cites: [CITE.buckley],
     },

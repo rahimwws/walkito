@@ -42,7 +42,7 @@ export const BALL_OF_FOOT_IT: Guide = {
     {
       h2: 'Cosa causa il dolore sotto l’avampiede?',
       paragraphs: [
-        '**Metatarsalgia** è l’etichetta più comune. Descrive dolore e infiammazione intorno a una o più teste metatarsali, di solito la seconda e la terza. Sovraccarico, un secondo metatarso lungo, il [piede cavo](/it/piede-cavo-esercizi/) e [polpacci rigidi](/it/polpacci-rigidi/) possono contribuire tutti.',
+        '**Metatarsalgia** è l’etichetta più comune. Descrive dolore e infiammazione intorno a una o più teste metatarsali, di solito la seconda e la terza. Sovraccarico, un secondo metatarso lungo, il [piede cavo](/it/piede-cavo-esercizi/) e [polpacci rigidi](/it/polpacci-rigidi/) possono contribuire tutti. Se il dolore comincia durante le escursioni lunghe, leggi [dolore ai piedi dopo il trekking](/it/dolore-piedi-escursionismo/).',
         '**Neuroma di Morton** è un ispessimento del nervo tra le teste metatarsali, il più delle volte tra il terzo e il quarto dito. Dà bruciore, formicolio o intorpidimento più che un semplice dolore. Scarpe strette o con il tacco alto schiacciano il nervo e lo peggiorano.',
         '**Sesamoidite** è l’infiammazione dei due piccoli ossicini dentro il tendine sotto l’articolazione dell’alluce. Il dolore è proprio sotto l’alluce, non sotto il centro dell’avampiede.',
         '**Frattura da stress del metatarso** è una piccola crepa in una delle ossa metatarsali, di solito la seconda o la terza. Il dolore è localizzato, spesso peggiora durante la giornata e può far male di notte. Un gonfiore sul dorso del piede è comune. Questa richiede esami di imaging e riposo.',

@@ -108,7 +108,7 @@ export const BAREFOOT_IT: Guide = {
         'Piastrelle o parquet non danno ammortizzazione al tallone, e i primi passi dopo il riposo sono il momento in cui di solito la fascite plantare fa più male. La nostra pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) suggerisce un allungamento prima di alzarti e qualcosa ai piedi per quei primi passi.',
         'L’ammortizzazione sotto il tallone può contare. In uno studio del 2023, Landorf e colleghi hanno confrontato 50\u00A0persone con dolore sotto il tallone con 25\u00A0persone simili senza dolore. Chi aveva dolore al tallone stava in piedi 3,4\u00A0ore in più al giorno e portava scarpe con talloni più duri. Questo mostra un legame, non una causa.',
         'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo tipo di dolore.',
-        'Brevi momenti a piedi nudi su erba o sabbia sono più delicati. Se la mattina dopo il dolore al tallone è aumentato, era troppo.',
+        'Brevi momenti a piedi nudi su erba o sabbia sono più delicati. Se la mattina dopo il dolore al tallone è aumentato, era troppo. Lo stesso controllo della mattina dopo vale per qualsiasi camminata: vedi [camminare con la fascite plantare](/it/camminare-con-fascite-plantare/).',
       ],
       cites: [CITE.landorfFootwear],
     },

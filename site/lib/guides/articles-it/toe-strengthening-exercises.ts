@@ -181,7 +181,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Gli esercizi per rinforzare le dita funzionano davvero?',
       keyFact:
-        'In uno studio su 118\u00A0runner amatoriali, chi non faceva il programma per il piede aveva una probabilità 2,42\u00A0volte più alta di infortunarsi nell’arco di un anno (Taddei e colleghi, 2020).',
+        'In uno studio su 118\u00A0runner amatoriali, chi non faceva il programma per il piede aveva una probabilità 2,42\u00A0volte più alta di infortunarsi nell’arco di un anno (Taddei e colleghi, 2020). La routine per chi corre è in [esercizi per i piedi per runner](/it/esercizi-piedi-runner/).',
       paragraphs: [
         'Gli esercizi per rinforzare le dita possono aumentarne la forza, ma **solo quando il lavoro diventa più difficile nel tempo.**',
         'In uno studio del 2016, 85\u00A0adulti tra 60 e 90\u00A0anni sono stati divisi tra un programma supervisionato con una resistenza che cresceva nel corso di tre mesi e un programma di esercizi a casa. Il gruppo supervisionato ha guadagnato fino al 36% di forza delle dita e restava più a lungo su una gamba. Il gruppo a casa, e un gruppo di controllo separato di 32\u00A0persone, non hanno mostrato cambiamenti nella forza delle dita. Gli autori hanno scritto che serviva ancora uno studio che contasse le cadute.',

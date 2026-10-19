@@ -54,7 +54,7 @@ export const PTTD_IT: Guide = {
             '**Stadio IV** aggiunge il coinvolgimento dell’articolazione della caviglia. La caviglia si inclina in valgo, cioè pende verso l’esterno. È lo stadio più avanzato e di solito richiede un intervento chirurgico.',
           ],
         },
-        '**La maggior parte delle persone che cercano esercizi per la PTTD è allo stadio I o II.** Se non sai quale stadio ti riguarda, un professionista sanitario può dirtelo con un esame fisico e, se serve, con gli esami di imaging. Il test del sollevamento sulle punte su un solo piede, in cui provi a salire sulle punte di un piede, è un rapido strumento di screening: fatica a salire, dolore durante la salita o un tallone che in cima non si inclina verso l’interno fanno tutti pensare a una debolezza del tibiale posteriore.',
+        '**La maggior parte delle persone che cercano esercizi per la PTTD è allo stadio I o II.** Se non sai quale stadio ti riguarda, un professionista sanitario può dirtelo con un esame fisico e, se serve, con gli esami di imaging. Il test del sollevamento sulle punte su un solo piede, in cui provi a salire sulle punte di un piede, è un [rapido strumento di screening](/it/test-piede-piatto/): fatica a salire, dolore durante la salita o un tallone che in cima non si inclina verso l’interno fanno tutti pensare a una debolezza del tibiale posteriore.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

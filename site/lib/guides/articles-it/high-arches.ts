@@ -49,7 +49,7 @@ export const HIGH_ARCHES_IT: Guide = {
             'Dolore lungo la fascia plantare rigida.',
           ],
         },
-        'Anche le distorsioni della caviglia sono più comuni, perché il piede rigido e girato verso l’interno è meno stabile su terreni irregolari.',
+        'Anche le distorsioni della caviglia sono più comuni, perché il piede rigido e girato verso l’interno è meno stabile su terreni irregolari. Se cammini spesso sui sentieri, leggi [dolore ai piedi dopo il trekking](/it/dolore-piedi-escursionismo/).',
       ],
       cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },
