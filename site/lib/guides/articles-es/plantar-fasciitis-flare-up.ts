@@ -21,7 +21,7 @@ export const PF_FLARE_UP_ES: Guide = {
     'Brote o recaída de fascitis plantar: qué lo desencadena, qué hacer en las primeras 48 horas, cómo retomar los ejercicios y cuándo no es un brote.',
   h1: 'Brote de fascitis plantar: qué lo desencadena y qué hacer en las primeras 48\u00A0horas',
   lede:
-    'Un brote de [fascitis plantar](/es/fascitis-plantar/) suele llegar después de un salto en lo que tu talón tiene que cargar: una caminata larga, un día de pie sobre pisos duros o una rutina nueva. La guía de 2023 para el dolor de talón incluye el dolor después de un aumento reciente de la actividad con carga como un rasgo típico, y recomienda dar consejos para ajustar la carga sin aconsejar dejar de moverse, un consejo que califica con **E** porque se basa en la teoría y no en ensayos (Koc y colegas, 2023). Durante las primeras 48\u00A0horas, reduce la carga que lo desencadenó, sigue con tus estiramientos suaves y deja que la mañana siguiente te diga cómo vas.',
+    'Un brote de [fascitis plantar](/es/fascitis-plantar/) suele llegar después de un salto en lo que tu talón tiene que cargar: una caminata larga, un día de pie sobre pisos duros o una rutina nueva. La guía de 2023 para el dolor de talón incluye el dolor después de un aumento reciente de la actividad con carga como un rasgo típico, y recomienda orientar sobre cómo ajustar la carga, sin aconsejar dejar de moverse, una recomendación que califica con **E** porque se basa en la teoría y no en ensayos (Koc y colegas, 2023). Durante las primeras 48\u00A0horas, reduce la carga que lo desencadenó, sigue con tus estiramientos suaves y deja que la mañana siguiente te diga cómo vas.',
   intro: [
     'Ningún estudio ha definido qué es un brote de fascitis plantar ni ha probado qué hacer en los primeros dos días, así que esta página usa las reglas probadas que más se acercan y dice de dónde vienen. Repasa los desencadenantes comunes, un plan corto para las primeras 48\u00A0horas, cómo bajar un nivel en tus ejercicios y volver a subir, y las señales de que el dolor es algo distinto de un brote. Si tu talón duele sobre todo con los primeros pasos del día, [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) trata ese patrón por separado.',
   ],
@@ -39,7 +39,7 @@ export const PF_FLARE_UP_ES: Guide = {
       paragraphs: [
         '**Un brote es una racha de días en que tu dolor de talón de siempre está claramente peor de lo normal.** Los primeros pasos de la mañana duelen más, el talón empieza a doler antes cuando estás de pie, o un dolor que ya se había ido vuelve. No hay una definición médica acordada, y no encontramos ningún estudio que cuente con qué frecuencia ocurren los brotes ni cuánto duran.',
         'El tejido de debajo del talón tolera mal los cambios bruscos de carga. La guía de 2023 describe el dolor de la fascitis plantar como más notorio con los primeros pasos después del reposo, e incluye un aumento reciente de la actividad con carga como parte típica de la historia (Koc y colegas, 2023). Un brote probablemente es lo mismo en pequeño: al talón se le pidió más de lo que estaba listo para dar.',
-        'Por eso un brote no tiene por qué significar que vuelves a empezar de cero. Alrededor del 90\u00A0% de las personas con fascitis plantar mejoran con tratamiento no quirúrgico, aunque a menudo tarda meses (Latt y colegas, 2020). En [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) verás lo que muestran los seguimientos largos.',
+        'Por eso un brote no tiene por qué significar que vuelves a empezar de cero. Alrededor del 90\u00A0% de las personas con fascitis plantar mejoran sin cirugía, aunque a menudo tarda meses (Latt y colegas, 2020). En [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) verás lo que muestran los seguimientos largos.',
       ],
       cites: [CITE.guideline, CITE.latt],
     },
@@ -53,7 +53,7 @@ export const PF_FLARE_UP_ES: Guide = {
             '**Un salto repentino en la actividad.** Unas vacaciones con días largos caminando, un plan nuevo para correr, una excursión o una semana pesada en el trabajo. La guía incluye un aumento reciente de la actividad con carga como algo típico (Koc y colegas, 2023). Si corres, [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) habla de los cambios de kilometraje.',
             '**Muchas horas de pie.** En un estudio con 50\u00A0personas con fascitis plantar y 100 sin ella, estar de pie la mayor parte de la jornada laboral se asoció con 3,6\u00A0veces más probabilidades (Riddle y colegas, 2003). En otro, las personas con dolor de talón eran tan activas como las que no lo tenían, pero pasaban 3,4\u00A0horas más al día de pie (Landorf y colegas, 2023). Mira [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/).',
             '**Descalzo sobre pisos duros.** La guía incluye el trabajo con carga sobre superficies que amortiguan poco como factor de riesgo (Koc y colegas, 2023), aunque un estudio encontró que las personas con dolor de talón no pasaban más tiempo de pie sobre pisos duros que las que no lo tenían (Landorf y colegas, 2023). Una guía de buenas prácticas de 2021 aconseja evitar caminar descalzo y los zapatos planos y sin soporte hasta que desaparezcan los síntomas (Morrissey y colegas, 2021).',
-            '**Zapatos nuevos o distintos.** No encontramos ningún estudio que probara los zapatos nuevos como desencadenante. Lo que se sabe: las personas con dolor de talón usaban zapatos con tacones más duros que las que no lo tenían (Landorf y colegas, 2023), y la guía de buenas prácticas prefiere zapatos con soporte y el talón un poco más alto que los dedos (Morrissey y colegas, 2021). Pasarte a zapatos planos, delgados o muy flexibles, o a [zapatos barefoot](/es/zapatos-barefoot/), es un cambio que tu talón va a notar.',
+            '**Zapatos nuevos o distintos.** No encontramos ningún estudio que probara los zapatos nuevos como desencadenante. Lo que se sabe: las personas con dolor de talón usaban zapatos con el talón más duro que las que no lo tenían (Landorf y colegas, 2023), y la guía de buenas prácticas prefiere zapatos con soporte y el talón un poco más alto que los dedos (Morrissey y colegas, 2021). Pasarte a zapatos planos, delgados o muy flexibles, o a [zapatos barefoot](/es/zapatos-barefoot/), es un cambio que tu talón va a notar.',
             '**Una pantorrilla tensa.** En el mismo estudio de 2003, las personas cuyo tobillo se doblaba hacia arriba 0\u00A0grados o menos tenían 23,3\u00A0veces más probabilidades que las que llegaban a más de 10\u00A0grados (Riddle y colegas, 2003). Dejar los estiramientos un tiempo puede hacer que esa rigidez vuelva. Mira [pantorrillas tensas](/es/pantorrillas-tensas/).',
           ],
         },
@@ -69,7 +69,7 @@ export const PF_FLARE_UP_ES: Guide = {
         {
           list: [
             '**Encuentra el desencadenante y redúcelo.** Caminatas más cortas, más pausas para sentarte, un descanso de correr o de las cuestas. El consejo que se probó en un ensayo danés fue reducir las actividades que provocan brotes y luego volver poco a poco al nivel de actividad anterior, guiándote por los síntomas (Riel y colegas, 2020).',
-            '**No dejes de moverte del todo.** La guía recomienda ajustar la carga y no aconseja reposo total (Koc y colegas, 2023). Lo que caminas para tu vida diaria está bien dentro de la regla del dolor de abajo.',
+            '**No dejes de moverte del todo.** La guía recomienda ajustar la carga y no aconseja reposo total (Koc y colegas, 2023). Lo que necesitas caminar en tu día a día está bien, dentro de la regla del dolor de abajo.',
             '**Sigue con los estiramientos suaves.** Los estiramientos de la fascia plantar y de la pantorrilla tienen grado **A** (Koc y colegas, 2023). Haz el primero antes de que el pie toque el piso por la mañana.',
             '**Usa zapatos dentro de casa.** Zapatos con soporte o pantuflas firmes desde el primer paso del día, en lugar de ir descalzo sobre azulejo o madera (Morrissey y colegas, 2021).',
             '**Interrumpe el tiempo de pie.** La guía de buenas prácticas aconseja cortar los periodos largos de estar de pie sin moverte (Morrissey y colegas, 2021).',
@@ -204,7 +204,7 @@ export const PF_FLARE_UP_ES: Guide = {
         {
           list: [
             '**Forzar con un dolor que va en aumento.** Mantener las mismas caminatas o carreras largas mientras el talón empeora cada mañana es ignorar justo la señal en la que se basa la regla del dolor probada (Silbernagel y colegas, 2007). Los expertos detrás de la guía de buenas prácticas de 2021 señalaron un cambio en la carga total como factor de riesgo de los brotes, así que más carga es la dirección equivocada (Morrissey y colegas, 2021).',
-            '**Dejar toda la actividad y todos los ejercicios.** La guía recomienda ajustar la carga y no aconseja reposo total (Koc y colegas, 2023), y en el ensayo de Aquiles mantenerse activo dentro de un límite de dolor dio el mismo resultado que dejar de correr y saltar durante seis semanas (Silbernagel y colegas, 2007). Dejar los estiramientos y el trabajo de pantorrilla también es tirar a la basura las opciones con grado **A** y **B**.',
+            '**Dejar toda la actividad y todos los ejercicios.** La guía recomienda ajustar la carga y no aconseja reposo total (Koc y colegas, 2023), y en el ensayo de Aquiles mantenerse activo dentro de un límite de dolor dio el mismo resultado que dejar de correr y saltar durante seis semanas (Silbernagel y colegas, 2007). Dejar los estiramientos y el trabajo de pantorrilla también es desaprovechar las opciones con grado **A** y **B**.',
             '**Andar descalzo sobre pisos duros,** sobre todo en los primeros pasos del día (Morrissey y colegas, 2021).',
             '**Confiar solo en una plantilla.** Las plantillas usadas solas para un alivio a corto plazo tienen grado **B en contra** en la guía, aunque pueden ayudar combinadas con ejercicio (Koc y colegas, 2023). Mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
           ],
@@ -240,7 +240,7 @@ export const PF_FLARE_UP_ES: Guide = {
     {
       q: '¿Cuánto dura un brote de fascitis plantar?',
       cites: [CITE.latt],
-      a: 'Ningún estudio ha medido cuánto dura un brote, así que cualquier número fijo de días es una suposición. Usa tus mañanas como guía: si el dolor del primer paso se calma en unos días después de reducir la carga, vas bien. La fascitis plantar en sí a menudo tarda meses, y alrededor del 90\u00A0% de las personas mejoran con tratamiento no quirúrgico.',
+      a: 'Ningún estudio ha medido cuánto dura un brote, así que cualquier número fijo de días es una suposición. Usa tus mañanas como guía: si el dolor del primer paso se calma en unos días después de reducir la carga, vas bien. La fascitis plantar en sí a menudo tarda meses, y alrededor del 90\u00A0% de las personas mejoran sin cirugía.',
     },
     {
       q: '¿Qué hago cuando tengo un brote de fascitis plantar?',
@@ -270,7 +270,7 @@ export const PF_FLARE_UP_ES: Guide = {
     {
       q: '¿Unos zapatos nuevos pueden provocar un brote de fascitis plantar?',
       cites: [CITE.landorfFootwear, CITE.morrisseyBestPractice],
-      a: 'Pueden, aunque ningún estudio ha probado los zapatos nuevos como desencadenante. Las personas con dolor de talón usaban zapatos con tacones más duros que las que no lo tenían, y una guía de buenas prácticas aconseja zapatos con soporte y el talón un poco más alto que los dedos. Pasarte a zapatos planos, delgados o muy flexibles es un cambio que tu talón puede notar.',
+      a: 'Pueden, aunque ningún estudio ha probado los zapatos nuevos como desencadenante. Las personas con dolor de talón usaban zapatos con el talón más duro que las que no lo tenían, y una guía de buenas prácticas aconseja zapatos con soporte y el talón un poco más alto que los dedos. Pasarte a zapatos planos, delgados o muy flexibles es un cambio que tu talón puede notar.',
     },
   ],
   redFlags: {

@@ -24,12 +24,12 @@ export const WEIGHT_PF_PT: Guide = {
     'O peso causa fascite plantar? Emagrecer ajuda? O que os estudos mostram, por que a carga importa e exercícios sentados que combinam com um peso maior.',
   h1: 'Peso e fascite plantar: o que a pesquisa mostra e o que ajuda agora',
   lede:
-    'Um peso corporal maior é um dos fatores de risco mais claros para a [fascite plantar](/pt/fascite-plantar/) em quem não é atleta. Em uma revisão de 51\u00A0estudos, um índice de massa corporal (IMC) acima de 27 veio com chances de fascite plantar 3,7\u00A0vezes maiores (van Leeuwen e colegas, 2016). Se perder peso alivia a dor no calcanhar é menos claro: nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar, então os alongamentos e o trabalho de força que a diretriz de 2023 classifica com os graus mais altos são o ponto de partida, com qualquer peso.',
+    'Um peso corporal maior é um dos fatores de risco mais claros para a [fascite plantar](/pt/fascite-plantar/) em quem não é atleta. Em uma revisão de 51\u00A0estudos, um índice de massa corporal (IMC) acima de 27 esteve associado a chances de fascite plantar 3,7\u00A0vezes maiores (van Leeuwen e colegas, 2016). Se perder peso alivia a dor no calcanhar é menos claro: nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar, então os alongamentos e o trabalho de força que a diretriz de 2023 classifica com os graus mais altos são o ponto de partida, com qualquer peso.',
   intro: [
     'O peso é um fator entre vários, não um veredito. No mesmo estudo caso-controle que ligou um IMC acima de 30 à fascite plantar, um tornozelo rígido foi um fator muito mais forte (Riddle e colegas, 2003). Pessoas de todos os tamanhos têm dor no calcanhar, e pessoas de todos os tamanhos melhoram. Esta página explica o que os estudos encontraram, o que se sabe sobre perder peso, por que a carga importa e exercícios que você pode fazer sentado ou com apoio.',
   ],
   takeaways: [
-    'Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, um IMC acima de 30 veio com chances de fascite plantar 5,6\u00A0vezes maiores, comparado com um IMC de 25 ou menos. Um tornozelo rígido foi o fator mais forte, com chances 23,3\u00A0vezes maiores (Riddle e colegas, 2003).',
+    'Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, um IMC acima de 30 esteve associado a chances de fascite plantar 5,6\u00A0vezes maiores, comparado com um IMC de 25 ou menos. Um tornozelo rígido foi o fator mais forte, com chances 23,3\u00A0vezes maiores (Riddle e colegas, 2003).',
     'Uma revisão de 51\u00A0estudos mostrou que um IMC acima de 27 foi o único fator clínico, entre os que puderam ser combinados, claramente ligado à fascite plantar, com chances 3,7\u00A0vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016).',
     'Nenhum ensaio randomizado testou a perda de peso para dor no calcanhar. Uma revisão de 2012 encontrou só dois estudos sobre perda de peso e dor no pé, ambos depois de cirurgia bariátrica, e classificou a evidência como limitada (Butterworth e colegas, 2012).',
     'A diretriz de 2023 para dor no calcanhar dá grau **A** aos alongamentos da fáscia plantar e da panturrilha e grau **B** ao trabalho de força. A orientação para manter uma massa magra saudável recebe grau **E**, o que quer dizer que se apoia na teoria, não em ensaios (Koc e colegas, 2023).',
@@ -39,10 +39,10 @@ export const WEIGHT_PF_PT: Guide = {
   sections: [
     {
       h2: 'O peso afeta a fascite plantar?',
-      keyFact: 'Em uma revisão de 51\u00A0estudos, um IMC acima de 27 veio com chances de fascite plantar 3,7\u00A0vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016).',
+      keyFact: 'Em uma revisão de 51\u00A0estudos, um IMC acima de 27 esteve associado a chances de fascite plantar 3,7\u00A0vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016).',
       paragraphs: [
         '**Sim: em quem não é atleta, um IMC mais alto aparece ligado à fascite plantar estudo após estudo.** O IMC é o peso dividido pela altura ao quadrado. É uma medida aproximada, mas é a que esses estudos usaram.',
-        'O estudo mais conhecido comparou 50\u00A0pessoas com fascite plantar em um calcanhar com 100\u00A0pessoas da mesma idade e do mesmo sexo sem o problema. Um IMC acima de 30 veio com chances de fascite plantar 5,6\u00A0vezes maiores, comparado com um IMC de 25 ou menos (Riddle e colegas, 2003).',
+        'O estudo mais conhecido comparou 50\u00A0pessoas com fascite plantar em um calcanhar com 100\u00A0pessoas da mesma idade e do mesmo sexo sem o problema. Um IMC acima de 30 esteve associado a chances de fascite plantar 5,6\u00A0vezes maiores, comparado com um IMC de 25 ou menos (Riddle e colegas, 2003).',
         'Uma revisão de 2016 combinou 51\u00A0estudos. De todos os fatores clínicos que os autores conseguiram juntar, um IMC acima de 27 foi o único claramente ligado à fascite plantar, com chances 3,7\u00A0vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016). Duas revisões anteriores chegaram à mesma conclusão, e nenhuma das duas encontrou ligação entre IMC e dor no calcanhar em atletas (Irving e colegas, 2006; Butterworth e colegas, 2012).',
         'A diretriz de 2023 para dor no calcanhar lista o IMC alto em quem não é atleta como fator de risco, ao lado de um tornozelo rígido, da corrida e de muitas horas em pé, principalmente em superfícies duras (Koc e colegas, 2023).',
       ],
@@ -52,7 +52,7 @@ export const WEIGHT_PF_PT: Guide = {
     },
     {
       h2: 'O peso é a causa ou só um dos fatores?',
-      keyFact: 'No mesmo estudo, um tornozelo rígido veio com chances de fascite plantar 23,3\u00A0vezes maiores e passar a maior parte do dia de trabalho em pé com chances 3,6\u00A0vezes maiores, contra 5,6\u00A0vezes para um IMC acima de 30 (Riddle e colegas, 2003).',
+      keyFact: 'No mesmo estudo, um tornozelo rígido esteve associado a chances de fascite plantar 23,3\u00A0vezes maiores, e passar a maior parte do dia de trabalho em pé, a chances 3,6\u00A0vezes maiores, contra 5,6\u00A0vezes para um IMC acima de 30 (Riddle e colegas, 2003).',
       paragraphs: [
         '**Um fator entre vários, e não o mais forte.** No estudo caso-controle de 2003, três fatores contaram cada um por si:',
         {
@@ -93,7 +93,7 @@ export const WEIGHT_PF_PT: Guide = {
         ],
       },
       after: [
-        'O maior estudo revisou os prontuários de 163\u00A0pessoas com fascite plantar que fizeram cirurgia bariátrica. O IMC médio caiu de 45 para cerca de 35, e em 146 delas (90%) os sintomas no calcanhar se resolveram (Boules e colegas, 2018). Não havia grupo de comparação, e cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico de qualquer forma (Latt e colegas, 2020), então esse estudo não consegue mostrar quanto a perda de peso em si acrescentou.',
+        'O maior estudo revisou os prontuários de 163\u00A0pessoas com fascite plantar que fizeram cirurgia bariátrica. O IMC médio caiu de 45 para cerca de 35, e em 146 delas (90%) os sintomas no calcanhar se resolveram (Boules e colegas, 2018). Não havia grupo de comparação, e cerca de 90% das pessoas com fascite plantar melhoram com cuidados não cirúrgicos de qualquer forma (Latt e colegas, 2020), então esse estudo não consegue mostrar quanto a perda de peso em si acrescentou.',
         'O estudo com semaglutida acompanhou pessoas com dor no calcanhar de longa data. As 92 que usavam o remédio para diabetes ou para perder peso relataram mais melhora do que as que não usavam, mas elas não foram escolhidas por sorteio, e os autores pedem um ensaio randomizado (Yang e colegas, 2025). Remédios para perder peso e cirurgia são decisões para você tomar com seu médico, não algo para começar só por causa da dor no calcanhar.',
         'A diretriz não diz aos profissionais para prescrever perda de peso para dor no calcanhar. Ela diz que eles podem orientar sobre exercícios para ganhar ou manter uma massa magra saudável e encaminhar você para acompanhamento nutricional, com grau **E** (Koc e colegas, 2023).',
       ],
@@ -102,18 +102,18 @@ export const WEIGHT_PF_PT: Guide = {
     {
       h2: 'Quais exercícios combinam com um peso corporal maior?',
       paragraphs: [
-        'Os exercícios com os melhores graus na diretriz de 2023, os alongamentos (**A**) e o trabalho de força para a panturrilha (**B**), não dependem do seu peso (Koc e colegas, 2023). O que muda é como você começa. As versões sentadas e com apoio põem menos carga no calcanhar e pegam mais leve com os joelhos e o equilíbrio, por isso vêm primeiro aqui.',
+        'Os exercícios com os melhores graus na diretriz de 2023, os alongamentos (**A**) e o trabalho de força para a panturrilha (**B**), não dependem do seu peso (Koc e colegas, 2023). O que muda é como você começa. As versões sentadas e com apoio põem menos carga no calcanhar e exigem menos dos joelhos e do equilíbrio, por isso vêm primeiro aqui.',
         'As doses iniciais são as mesmas do guia principal de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Faça o primeiro alongamento da fáscia plantar sentado na beira da cama, antes de ficar em pé: em um ensaio com 82\u00A0pessoas, um alongamento da fáscia plantar feito antes de levantar aliviou a dor dos primeiros passos da manhã mais do que só o alongamento de panturrilha (DiGiovanni e colegas, 2003). Se algum exercício levar a dor no calcanhar a 6 de 10, pare por hoje.',
       ],
       exercises: [
         {
           name: 'Alongamento da fáscia plantar',
-          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o seu mais alto.' },
+          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o mais alto.' },
           dose: '2\u00A0vezes de 30\u00A0segundos, cada pé',
           often: 'Na maioria dos dias em que você se exercitar',
           feel: 'Um alongamento ao longo do arco',
           how: 'Sente-se e cruze o pé sobre o outro joelho. Puxe os dedos para trás até sentir o alongamento no arco, não na panturrilha. Se cruzar a perna for difícil, deixe o pé no chão, passe uma toalha pela parte da frente da sola e puxe com cuidado.',
-          stop: 'Dor forte no calcanhar, ou dor que chega a 6 de 10',
+          stop: 'Dor aguda no calcanhar, ou dor que chega a 6 de 10',
           image: 'Exercício: alongamento da fáscia plantar',
           media: 'fascia_stretch',
           caption: 'Alongamento da fáscia plantar: puxe os dedos para trás até sentir no arco',
@@ -121,7 +121,7 @@ export const WEIGHT_PF_PT: Guide = {
         },
         {
           name: 'Alongamento de panturrilha',
-          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o seu mais alto.' },
+          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o mais alto.' },
           dose: '2\u00A0vezes de 30\u00A0segundos, cada perna',
           often: 'Na maioria dos dias em que você se exercitar',
           feel: 'Um alongamento na panturrilha',
@@ -134,7 +134,7 @@ export const WEIGHT_PF_PT: Guide = {
         },
         {
           name: 'Alongamento do sóleo',
-          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o seu mais alto.' },
+          evidence: { level: 'strong', why: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento o grau A, o mais alto.' },
           dose: '2\u00A0vezes de 30\u00A0segundos, cada perna',
           often: 'Na maioria dos dias em que você se exercitar',
           feel: 'Um alongamento perto do calcanhar',
@@ -188,7 +188,7 @@ export const WEIGHT_PF_PT: Guide = {
       cites: [CITE.guideline, CITE.digiovanni2003, CITE.rathleff],
     },
     {
-      h2: 'Quais atividades pegam mais leve com o calcanhar?',
+      h2: 'Quais atividades poupam mais o calcanhar?',
       paragraphs: [
         '**Atividades em que os pés não recebem todo o seu peso a cada passo.** A diretriz recomenda mudar a carga nos pés em vez de parar de se mexer (Koc e colegas, 2023). Nenhum estudo comparou atividades para pessoas com dor no calcanhar e peso maior, então estas são opções práticas, não testadas:',
         {
@@ -216,7 +216,7 @@ export const WEIGHT_PF_PT: Guide = {
     {
       h2: 'A fascite plantar passa se eu não perder peso?',
       paragraphs: [
-        '**Para a maioria das pessoas, sim: ela melhora com o tempo e com tratamento não cirúrgico.** Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, como alongamentos e palmilhas, muitas vezes em 3 a 6\u00A0meses (Latt e colegas, 2020).',
+        '**Para a maioria das pessoas, sim: ela melhora com o tempo e com cuidados não cirúrgicos.** Cerca de 90% das pessoas com fascite plantar melhoram com cuidados não cirúrgicos, como alongamentos e palmilhas, muitas vezes em 3 a 6\u00A0meses (Latt e colegas, 2020).',
         'Em um acompanhamento longo de 174\u00A0pessoas, os pesquisadores testaram se IMC, idade, tabagismo, trabalho físico e outros fatores previam quem ainda teria dor no calcanhar anos depois. Só ser mulher e ter dor nos dois calcanhares previram. O IMC, não (Hansen e colegas, 2018).',
         'Ou seja, um peso maior pode deixar mais provável que a fascite plantar comece, mas não quer dizer que você vai ficar com ela para sempre. Os alongamentos e o trabalho de panturrilha acima são os mesmos que ajudam pessoas de qualquer tamanho. [Quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) mostra a linha do tempo completa.',
       ],
@@ -227,12 +227,12 @@ export const WEIGHT_PF_PT: Guide = {
     {
       q: 'Sobrepeso pode causar fascite plantar?',
       cites: [CITE.riddle, CITE.vanLeeuwenBmi],
-      a: 'Um peso maior está ligado à fascite plantar, mas nenhum estudo prova que ele seja a causa. Um IMC acima de 30 veio com chances 5,6\u00A0vezes maiores em um estudo, e uma revisão de 51\u00A0estudos encontrou chances 3,7\u00A0vezes maiores acima de um IMC de 27, com a ligação mais forte em quem não é atleta. Um tornozelo rígido foi um fator ainda mais forte.',
+      a: 'Um peso maior está ligado à fascite plantar, mas nenhum estudo prova que ele seja a causa. Um IMC acima de 30 esteve associado a chances 5,6\u00A0vezes maiores em um estudo, e uma revisão de 51\u00A0estudos encontrou chances 3,7\u00A0vezes maiores acima de um IMC de 27, com a ligação mais forte em quem não é atleta. Um tornozelo rígido foi um fator ainda mais forte.',
     },
     {
       q: 'Perder peso ajuda na fascite plantar?',
       cites: [CITE.butterworthBmi, CITE.boulesBariatric, CITE.latt],
-      a: 'Pode ajudar, mas nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar. Em um estudo de prontuários de 163\u00A0pessoas com fascite plantar que fizeram cirurgia bariátrica, em 90% os sintomas no calcanhar se resolveram, mas não havia grupo de comparação, e a maioria das pessoas com fascite plantar melhora com tratamento não cirúrgico de qualquer forma (Latt e colegas, 2020). Uma revisão de 2012 classificou a evidência como limitada.',
+      a: 'Pode ajudar, mas nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar. Em um estudo de prontuários de 163\u00A0pessoas com fascite plantar que fizeram cirurgia bariátrica, em 90% os sintomas no calcanhar se resolveram, mas não havia grupo de comparação, e a maioria das pessoas com fascite plantar melhora com cuidados não cirúrgicos de qualquer forma (Latt e colegas, 2020). Uma revisão de 2012 classificou a evidência como limitada.',
     },
     {
       q: 'Quanto peso preciso perder para ajudar na fascite plantar?',
@@ -262,7 +262,7 @@ export const WEIGHT_PF_PT: Guide = {
     {
       q: 'A fascite plantar passa sem perder peso?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'Para a maioria das pessoas, sim. Cerca de 90% melhoram com tratamento não cirúrgico, como alongamentos e palmilhas, muitas vezes em 3 a 6\u00A0meses. Em um acompanhamento longo de 174\u00A0pessoas, o IMC não previu quem ainda tinha dor no calcanhar anos depois. Ser mulher e ter dor nos dois calcanhares, sim.',
+      a: 'Para a maioria das pessoas, sim. Cerca de 90% melhoram com cuidados não cirúrgicos, como alongamentos e palmilhas, muitas vezes em 3 a 6\u00A0meses. Em um acompanhamento longo de 174\u00A0pessoas, o IMC não previu quem ainda tinha dor no calcanhar anos depois. Ser mulher e ter dor nos dois calcanhares, sim.',
     },
     {
       q: 'Palmilhas são mais importantes se eu peso mais?',

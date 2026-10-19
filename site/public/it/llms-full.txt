@@ -9594,7 +9594,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 **La tendinopatia d’Achille è un dolore da carico.** Anche il tendine può essere rigido al mattino, ed è per questo che le due si confondono. La differenza è cosa lo fa peggiorare durante la giornata: le attività di carico come corsa e salti, e il dolore tende a seguire quanto hai fatto (Chimenti e colleghi, 2024). Salite e spinte veloci caricano il tendine ancora di più.
 
-Quindi entrambe possono fare male al mattino. Chiediti dove, non solo quando: una fascia rigida e dolente dietro la caviglia fa pensare all’Achille, una fitta sotto il tallone fa pensare alla fascia plantare.
+Quindi entrambe possono fare male al mattino. Chiediti dove, non solo quando: un cordone rigido e dolente dietro la caviglia fa pensare all’Achille, una fitta sotto il tallone fa pensare alla fascia plantare.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
@@ -9659,7 +9659,7 @@ Diversi problemi si trovano lì vicino e possono dare sensazioni simili (Choo e 
 - Una sporgenza ossea dietro il tallone con una zona dolente e gonfia dove arriva la scarpa: [morbo di Haglund](https://walkito.site/it/morbo-di-haglund/) o borsite retrocalcaneare, spesso insieme a un dolore inserzionale all’Achille.
 - Uno sperone calcaneare in radiografia: è comune, e di solito non è la causa del dolore. Vedi [fascite plantare o sperone calcaneare](https://walkito.site/it/fascite-plantare-o-spina-calcaneare/).
 - Un dolore profondo, come un livido, al centro del cuscinetto del tallone, peggiore sui pavimenti duri: [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/).
-- Dolore su entrambi i lati del tallone quando lo stringi, dopo un aumento improvviso di camminata o corsa: possibile frattura da stress, che deve vedere un medico.
+- Dolore su entrambi i lati del tallone quando lo stringi, dopo un aumento improvviso di camminata o corsa: possibile frattura da stress, che va valutata da un medico.
 - Bruciore, formicolio o intorpidimento: forse un nervo compresso.
 
 Source: Choo YJ, Park CH, Chang MC. Rearfoot disorders and conservative treatment: a narrative review. Annals of Palliative Medicine. 2020;9(5):3546–3552.
@@ -9728,7 +9728,7 @@ Da solo, nessuna delle due. Uno sperone sotto il tallone si trova vicino alla fa
 
 Language: Italian (Italiano) · https://walkito.site/it/fascite-plantare-o-frattura-da-stress/ · published 2026-10-18 · updated 2026-10-18
 
-La [fascite plantare](https://walkito.site/it/fascite-plantare/) fa più male ai primi passi dopo il riposo e di solito si calma dopo qualche minuto di cammino. Una frattura da stress del calcagno fa il contrario: il dolore cresce più cammini o corri, spesso dopo un aumento brusco dell’attività, e stringere i lati del tallone tende a fare male (Tu, 2018). Una radiografia fatta presto può sembrare normale: in 30 reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, la radiografia semplice la mostrava solo nel 15% (Sormaala e colleghi, 2006).
+La [fascite plantare](https://walkito.site/it/fascite-plantare/) fa più male ai primi passi dopo il riposo e di solito si calma dopo qualche minuto di cammino. Una frattura da stress del calcagno fa il contrario: il dolore cresce quanto più cammini o corri, spesso dopo un aumento brusco dell’attività, e stringere i lati del tallone tende a fare male (Tu, 2018). Una radiografia fatta presto può sembrare normale: in 30 reclute militari con una lesione da stress del calcagno vista alla risonanza magnetica, la radiografia semplice la mostrava solo nel 15% (Sormaala e colleghi, 2006).
 
 - Il dolore della fascite plantare è «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo» e si attenua camminando (Koc e colleghi, 2023). Il dolore della frattura da stress inizia con l’attività e più avanti può esserci anche a riposo (Tu, 2018).
 - Il dolore quando si stringono i lati dell’osso del tallone fa pensare a una frattura da stress (Tu, 2018), ma non abbiamo trovato studi che misurino quanto sia accurato il test della compressione per il tallone, ed è doloroso anche nella malattia di Sever nei bambini.
@@ -9802,7 +9802,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 **Se il tuo dolore corrisponde alla colonna della frattura da stress, togli carico al tallone e prenota una visita.** Non aspettare di vedere se qualche altra corsa lo sistema. Iniziare presto conta: una revisione nota che un ritardo è stato collegato a un ritorno all’attività più lungo (Patel e colleghi, 2011).
 
-- **Riduci il carico a ciò che non fa male.** Di solito vuol dire smettere per ora di correre, saltare e fare lunghe camminate. Alcune persone hanno bisogno delle stampelle o di un tutore da camminata per un periodo (Patel e colleghi, 2011; Tu, 2018).
+- **Riduci il carico a ciò che non fa male.** Di solito vuol dire smettere per ora di correre, saltare e fare lunghe camminate. Alcune persone hanno bisogno delle stampelle o di un tutore walker per un periodo (Patel e colleghi, 2011; Tu, 2018).
 - **Mantieniti in forma senza caricare il tallone,** per esempio con nuoto o bici, se non fanno male (Patel e colleghi, 2011).
 - **Chiedi degli antidolorifici.** La stessa revisione dice che gli antinfiammatori vanno usati con cautela in caso di frattura da stress, perché alcuni studi sugli animali suggeriscono che possano rallentare la riparazione dell’osso (Patel e colleghi, 2011).
 - **Non iniziare ancora un piano di allungamenti o di forza per il tallone.** Aspetta che un professionista abbia escluso una frattura o ti abbia dato il via libera.
@@ -9847,7 +9847,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Rivolgiti prima a un professionista sanitario se
 
-- il dolore al tallone cresce più a lungo cammini o corri invece di calmarsi
+- il dolore al tallone cresce quanto più a lungo cammini o corri, invece di calmarsi
 - stringere i lati dell’osso del tallone fa male
 - il tallone è gonfio o ha un livido, o un punto dell’osso è molto dolente
 - il dolore è iniziato dopo un aumento brusco dell’allenamento o il passaggio a una superficie più dura
@@ -9862,7 +9862,7 @@ Walkito è un’app di esercizi per il dolore a tallone e piede. Il suo piano è
 
 #### Come capisco se il dolore al tallone è una frattura da stress o una fascite plantare?
 
-Osserva cosa fa il dolore quando cammini. La fascite plantare fa più male ai primi passi dopo il riposo e si calma dopo qualche minuto. Una frattura da stress del calcagno di solito segue un aumento brusco dell’attività, cresce più a lungo cammini o corri e spesso fa male quando si stringono i lati del tallone. Se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario.
+Osserva cosa fa il dolore quando cammini. La fascite plantare fa più male ai primi passi dopo il riposo e si calma dopo qualche minuto. Una frattura da stress del calcagno di solito segue un aumento brusco dell’attività, cresce quanto più a lungo cammini o corri e spesso fa male quando si stringono i lati del tallone. Se il tuo dolore corrisponde al quadro della frattura, rivolgiti a un professionista sanitario.
 
 #### La radiografia può non vedere una frattura da stress del calcagno?
 
@@ -9892,7 +9892,7 @@ No, non finché un professionista non l’ha esclusa. Allungamenti e lavoro di f
 
 Nessuno studio mostra una fascite plantare che diventa una frattura. Sono lesioni diverse, una nella fascia e una nell’osso. Possono avere la stessa causa, come un aumento improvviso di cammino o corsa, e una reazione da stress dell’osso può evolvere in frattura se il carico continua. Un dolore che cambia comportamento merita un controllo.
 
-#### Chi si fa una frattura da stress del calcagno?
+#### Chi è più soggetto a una frattura da stress del calcagno?
 
 Soprattutto chi all’improvviso si allena di più: runner, reclute militari e atleti. Chi corre più di 25 miglia (circa 40 km) a settimana in media è più a rischio, e le donne più degli uomini. La bassa disponibilità energetica, l’assenza del ciclo e la bassa densità ossea aumentano il rischio, e uno studio ha trovato livelli di vitamina D più bassi nelle reclute con fratture da stress.
 
@@ -9904,7 +9904,7 @@ Puoi controllare a casa se hai il piede piatto in circa cinque minuti: guarda l�
 
 - L’impronta bagnata è un’indicazione approssimativa. In 95 persone tra i 62 e i 94 anni, l’indice d’arco dell’impronta corrispondeva solo moderatamente all’altezza dell’arco in radiografia, mentre una misura con il righello dell’osso dell’arco corrispondeva bene (Menz e Munteanu, 2005).
 - Il grasso sotto la pianta può riempire l’impronta: in 24 adulti con sovrappeso o obesità, l’indice d’arco dell’impronta aumentava con la percentuale di grasso corporeo (Wearing e colleghi, 2004).
-- Se l’arco ricompare quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, il piede piatto è flessibile, il tipo comune studiato negli studi sugli esercizi (Brijwasi e Borkar, 2023).
+- Se l’arco ricompare quando sei seduto, quando sali sulle punte o quando sollevi l’alluce, il piede piatto è flessibile, il tipo comune, quello analizzato negli studi sugli esercizi (Brijwasi e Borkar, 2023).
 - Fatica a salire sulle punte su un piede solo, dolore dietro la caviglia interna e un arco che si abbassa sempre di più da un lato sono segni di disfunzione del tendine tibiale posteriore. In 582 donne sopra i 40 anni, il 3,3% aveva sintomi in fase iniziale (stadio I o II) e a nessuna era stata fatta la diagnosi (Kohls-Gatzoulis e colleghi, 2009).
 - Anche le misure dei professionisti variano: quando due esaminatori inesperti hanno misurato il navicular drop, i loro risultati concordavano poco (Picciano e colleghi, 1993). In uno studio successivo su 86 giovani adulti, la stessa misura era molto ripetibile (Zuil-Escobar e colleghi, 2018).
 
@@ -9954,11 +9954,11 @@ Un piede piatto flessibile si appiattisce sotto il tuo peso ma ritrova l’arco 
 - **Controllo sulle punte.** Stai in piedi tenendoti al muro e sali sugli avampiedi con entrambi i piedi. Guarda il lato interno di ogni piede, o i talloni da dietro. In un piede flessibile, mentre sali compare un arco e i talloni si inclinano leggermente verso l’interno.
 - **Controllo dell’alluce (test di Jack).** Stai in piedi normalmente. Solleva l’alluce il più possibile, o fattelo sollevare da qualcuno, mentre il tallone resta giù. In un piede flessibile, l’arco si alza mentre l’alluce sale. Il test prende il nome da Jack, che lo ha descritto nel 1953 (Jack, 1953).
 
-**Se l’arco ricompare, il piede piatto è flessibile.** È il tipo comune, ed è quello studiato negli studi sugli esercizi: in 52 persone con piede piatto flessibile, sei settimane di piede corto, esercizi per caviglia e anca e allungamenti hanno migliorato due misure della forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).
+**Se l’arco ricompare, il piede piatto è flessibile.** È il tipo comune, ed è quello analizzato negli studi sugli esercizi: in 52 persone con piede piatto flessibile, sei settimane di piede corto, esercizi per caviglia e anca e allungamenti hanno migliorato due misure della forma dell’arco più che nel gruppo di controllo (Brijwasi e Borkar, 2023).
 
 **Se l’arco resta piatto e il piede sembra rigido**, il piede piatto potrebbe essere rigido. Una causa è la coalizione tarsale, un ponte di osso, cartilagine o tessuto fibroso tra due ossa del piede, che si trova spesso nei giovani adulti con un piede piatto rigido e doloroso (Mehdi e colleghi, 2024). Un piede piatto rigido richiede che un professionista sanitario ne trovi la causa prima che tu inizi qualsiasi programma di esercizi.
 
-Diciamolo chiaramente: non abbiamo trovato studi che abbiano misurato quanto siano affidabili negli adulti il controllo sulle punte o il test di Jack fatti a casa. Sono semplici da fare e di solito il risultato è chiaro, ma prendi un risultato rigido come un motivo per farti controllare, non come una diagnosi.
+Diciamolo chiaramente: non abbiamo trovato studi che abbiano misurato quanto siano affidabili negli adulti il controllo sulle punte o il test di Jack fatti a casa. Sono semplici da fare e di solito il risultato è chiaro, ma se il piede risulta rigido, prendilo come un motivo per farti controllare, non come una diagnosi.
 
 Source: Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. Journal of Bone and Joint Surgery. British Volume. 1953;35-B(1):75–82.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
@@ -10069,7 +10069,7 @@ Negli studi gli adulti sani hanno in media da 3,6 a 8,1 millimetri di navicular 
 
 #### Il piede piatto va trattato se non fa male?
 
-Di solito no. Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una variante normale. Il Framingham Foot Study, su circa 1.900 adulti, non ha trovato un legame tra piede piatto e mal di schiena lombare. Dolore, rigidità o un cambiamento da un lato solo sono i motivi per farlo controllare.
+Di solito no. Un piede piatto flessibile che non fa male e non ti limita in quello che fai è una variante normale. Il Framingham Foot Study, su circa 1.900 adulti, non ha trovato un legame tra piede piatto e dolore lombare. Dolore, rigidità o un cambiamento da un lato solo sono i motivi per farlo controllare.
 
 #### Posso fare lo stesso test del piede piatto a mio figlio?
 
@@ -10085,7 +10085,7 @@ Di solito puoi continuare a camminare con la [fascite plantare](https://walkito.
 - In uno studio su 180 adulti con fasciopatia plantare, il gruppo che ha ricevuto solo il consiglio di restare attivo, ridurre le attività che peggiorano il dolore e usare una talloniera è migliorato in modo clinicamente rilevante a circa tre mesi (Riel e colleghi, 2023).
 - Una regola di monitoraggio del dolore ammette un dolore fino a circa 5 su 10 durante l’attività, purché si calmi entro la mattina dopo e non aumenti di settimana in settimana. È stata testata su 38 persone con dolore all’Achille, non con fascite plantare (Silbernagel e colleghi, 2007).
 - Nessuno studio indica un numero di passi al giorno per la fascite plantare. In 50 persone con dolore al tallone e 25 senza, i livelli di attività non erano diversi, ma il gruppo con dolore al tallone stava in piedi 3,4 ore al giorno in più (Landorf e colleghi, 2023).
-- Una guida di buona pratica del 2021 sul dolore al tallone consiglia scarpe con un piccolo dislivello tra tallone e punta e di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti (Morrissey e colleghi, 2021).
+- Una guida di buona pratica del 2021 sul dolore al tallone consiglia scarpe con un piccolo dislivello tra tallone e punta e di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti (Morrissey e colleghi, 2021).
 
 ### Camminare fa bene o male alla fascite plantare?
 
@@ -10117,7 +10117,7 @@ Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar hee
 
 **Non esiste un numero di passi basato sulle prove per la fascite plantare.** Non abbiamo trovato studi che abbiano fissato un numero di passi o una distanza di camminata per le persone con dolore al tallone e ne abbiano misurato il risultato. Qualsiasi pagina che ti dia una cifra fissa per il dolore al tallone sta tirando a indovinare.
 
-I famosi 10.000 passi sono un obiettivo di salute generale, non un dato della ricerca sul piede, e anche lì le prove sono deboli. Un’analisi del 2022 su 15 studi e 47.471 adulti ha trovato che più passi al giorno andavano insieme a un rischio di morte più basso, ma il beneficio si stabilizzava intorno a 6.000 a 8.000 passi al giorno negli adulti dai 60 anni in su, e a 8.000 a 10.000 negli adulti più giovani (Paluch e colleghi, 2022). Riguarda la salute a lungo termine, non quello che un tallone irritato può reggere questa settimana.
+I famosi 10.000 passi sono un obiettivo di salute generale, non un dato della ricerca sul piede, e anche lì le prove sono deboli. Un’analisi del 2022 su 15 studi e 47.471 adulti ha trovato che più passi al giorno andavano insieme a un rischio di morte più basso, ma il beneficio si stabilizzava tra 6.000 e 8.000 passi al giorno negli adulti dai 60 anni in su, e tra 8.000 e 10.000 negli adulti più giovani (Paluch e colleghi, 2022). Riguarda la salute a lungo termine, non quello che un tallone irritato può reggere questa settimana.
 
 Un numero più utile è il tuo. Quasi tutti i telefoni contano i passi. Guarda una settimana normale prima che il tallone si infiammasse e una settimana normale di adesso. Così hai un punto di partenza, e la regola sul dolore qui sopra ti dice se mantenere, aggiungere o ridurre.
 
@@ -10144,9 +10144,9 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 
 ### Quali scarpe aiutano a camminare con la fascite plantare?
 
-**Scarpe comode e ammortizzate con un piccolo dislivello tra tallone e punta sono il consiglio degli esperti, ma nessuno studio ha testato una scarpa specifica per camminare.** La guida di buona pratica del 2021 dice che le scarpe dovrebbero essere sostenute e comode, avere un piccolo dislivello tra retropiede e avampiede (il tallone sta un po’ più in alto delle dita) ed essere scarpe che porterai davvero. Consiglia anche di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti del tutto (Morrissey e colleghi, 2021).
+**Scarpe comode e ammortizzate con un piccolo dislivello tra tallone e punta sono il consiglio degli esperti, ma nessuno studio ha testato una scarpa specifica per camminare.** La guida di buona pratica del 2021 dice che le scarpe dovrebbero sostenere bene il piede ed essere comode, avere un piccolo dislivello tra retropiede e avampiede (il tallone sta un po’ più in alto delle dita) ed essere scarpe che porterai davvero. Consiglia anche di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti del tutto (Morrissey e colleghi, 2021).
 
-La linea guida del 2023 include i consigli sulle scarpe nella sua raccomandazione di educazione con grado **E**. Sui plantari è più precisa: non usarli come unico approccio (**B a sfavore**), ma possono aiutare insieme ad altre cure (**C**). Questo comprende una talloniera da banco o scarpe che ammortizzano il tallone (Koc e colleghi, 2023).
+La linea guida del 2023 include i consigli sulle scarpe nella sua raccomandazione di educazione con grado **E**. Sui plantari è più precisa: non usarli come unico approccio (**B a sfavore**), ma possono aiutare insieme ad altre cure (**C**). Questo comprende una talloniera già pronta, che si trova in commercio, o scarpe che ammortizzano il tallone (Koc e colleghi, 2023).
 
 La durezza della scarpa potrebbe contare. Nello studio del 2023 su 50 persone con dolore al tallone e 25 senza, il gruppo con dolore al tallone portava scarpe con il tallone più duro e riferiva più difficoltà a trovare scarpe adatte (Landorf e colleghi, 2023). Anche qui, un legame, non la prova che le scarpe morbide aiutino.
 
@@ -10164,7 +10164,7 @@ Le prove dirette sono scarse. Nello studio appaiato del 2023, le persone con e s
 
 Opzioni pratiche finché il tallone fa male:
 
-- Per le camminate più lunghe scegli erba, un sentiero nel parco o una pista invece del cemento, se ti senti meglio.
+- Per le camminate più lunghe scegli erba, un sentiero nel parco o una pista invece del cemento, se ti trovi meglio.
 - In casa tieni le scarpe su piastrelle o parquet, soprattutto per i primi passi della giornata.
 - Vai piano con le discese lunghe e le salite ripide finché la camminata in piano non rispetta la regola sul dolore. Altro su discese, zaini e bastoncini in [dolore ai piedi dopo un’escursione](https://walkito.site/it/dolore-piedi-escursionismo/).
 
@@ -10234,7 +10234,7 @@ Nessuno studio mostra che serva il riposo completo. La linea guida del 2023 racc
 
 #### Quali sono le scarpe migliori per camminare con la fascite plantare?
 
-Scarpe comode e ammortizzate, con il tallone un po’ più alto delle dita, sono il consiglio degli esperti. Una guida di buona pratica del 2021 consiglia di evitare di camminare scalzi e le scarpe piatte e poco sostenute finché i sintomi non sono spariti. La linea guida del 2023 dice che plantari o talloniere possono aiutare insieme ad altre cure, ma non da soli.
+Scarpe comode e ammortizzate, con il tallone un po’ più alto delle dita, sono il consiglio degli esperti. Una guida di buona pratica del 2021 consiglia di evitare di camminare scalzi e le scarpe piatte che sostengono poco il piede finché i sintomi non sono spariti. La linea guida del 2023 dice che plantari o talloniere possono aiutare insieme ad altre cure, ma non da soli.
 
 #### Con la fascite plantare è meglio camminare sull’erba o sul cemento?
 
@@ -10242,7 +10242,7 @@ Un terreno più morbido può essere più facile, ma nessuno studio ha confrontat
 
 #### Va bene camminare scalzi in casa con la fascite plantare?
 
-Meglio evitarlo finché il tallone fa male, soprattutto su piastrelle o parquet appena alzato. Una guida di buona pratica del 2021 sul dolore al tallone sconsiglia di camminare scalzi e le calzature piatte e poco sostenute finché i sintomi non sono spariti del tutto. Il consiglio abituale è usare scarpe sostenute o pantofole rigide per i primi passi della giornata.
+Meglio evitarlo finché il tallone fa male, soprattutto la mattina appena alzato, su piastrelle o parquet. Una guida di buona pratica del 2021 sul dolore al tallone sconsiglia di camminare scalzi e le calzature piatte che sostengono poco il piede finché i sintomi non sono spariti del tutto. Il consiglio abituale è usare scarpe che sostengono bene il piede o pantofole rigide per i primi passi della giornata.
 
 ## Esercizi per i piedi per runner: una routine breve e cosa dicono gli studi
 
@@ -10252,7 +10252,7 @@ Una buona routine per i piedi di chi corre allena quattro cose: i piccoli muscol
 
 - In uno studio del 2020 su 118 runner amatoriali di lunga distanza, il gruppo senza allenamento dei muscoli del piede aveva una probabilità 2,42 volte più alta di un infortunio da corsa nell’arco di 12 mesi. L’effetto è comparso tra il quarto e l’ottavo mese circa di allenamento (Taddei e colleghi, 2020).
 - In uno studio del 2019 su 57 runner, circa due mesi di esercizi per il piede fatti almeno cinque volte a settimana hanno reso più grandi e più forti tutti i muscoli del piede misurati (Ridge e colleghi, 2019).
-- Gli adulti sani fanno una mediana di circa 23 o 24 sollevamenti sulle punte su una gamba per lato, e 25 è stato proposto come valore di riferimento normale (Hebert-Losier e colleghi, 2017; Lunsford e Perry, 1995).
+- Gli adulti sani fanno in mediana circa 23 o 24 sollevamenti sulle punte su una gamba per lato, e 25 è stato proposto come valore di riferimento normale (Hebert-Losier e colleghi, 2017; Lunsford e Perry, 1995).
 - Un programma di forza da seguire in autonomia per anche, cosce e core, in 720 persone alla prima maratona, non ha ridotto gli infortuni da sovraccarico che impedivano di finire la gara: 7,1% contro 7,3% (Toresdahl e colleghi, 2020). In quello studio il lavoro di forza da solo non ha prevenuto gli infortuni.
 - Negli studi sui runner di lunga distanza, tra il 19,4% e il 79,3% ha avuto un infortunio alle gambe, e un infortunio precedente era uno dei fattori di rischio più chiari (van Gent e colleghi, 2007).
 
@@ -10304,7 +10304,7 @@ Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint planta
 
 ### Quanti sollevamenti sulle punte dovrebbe riuscire a fare un runner?
 
-Non esiste un valore di riferimento specifico per i runner, quindi usa i numeri per gli adulti in generale come soglia minima. In uno studio su 566 adulti, la mediana era di 24 sollevamenti sulle punte su una gamba con la gamba destra e 23 con la sinistra, al ritmo di un battito per salire e uno per scendere a 60 battiti al minuto. I numeri calano con l’età, e le persone più attive ne facevano di più (Hebert-Losier e colleghi, 2017). Uno studio più vecchio ha proposto 25 come valore di riferimento normale (Lunsford e Perry, 1995).
+Non esiste un valore di riferimento specifico per i runner, quindi usa i numeri per gli adulti in generale come soglia minima. In uno studio su 566 adulti, la mediana era di 24 sollevamenti sulle punte su una gamba con la gamba destra e 23 con la sinistra, al ritmo di un battito per salire e uno per scendere a 60 battiti al minuto. I numeri calano con l’età, e le persone più attive ne facevano di più (Hebert-Losier e colleghi, 2017). Uno studio meno recente ha proposto 25 come valore di riferimento normale (Lunsford e Perry, 1995).
 
 Confronta anche le due gambe. Una differenza di oltre il 10% tra i lati è la soglia abituale per una differenza rilevante nella riabilitazione degli arti inferiori (Silbernagel e colleghi, 2010). Il protocollo completo, una versione da fare a casa e un calcolatore sono nella pagina del [test del sollevamento sulle punte](https://walkito.site/it/test-sollevamento-punte/).
 
@@ -10316,7 +10316,7 @@ Source: Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. 
 
 **Nessuno studio ha confrontato gli esercizi per i piedi fatti dopo una corsa con quelli fatti in un giorno di riposo,** quindi le indicazioni sui tempi qui sotto sono pratiche, non testate.
 
-- **Dopo una corsa facile o in un giorno di riposo.** Gli esercizi stancano i piccoli muscoli del piede, quindi stanno meglio dopo una corsa breve e facile che prima di un allenamento duro o di un lungo.
+- **Dopo una corsa facile o in un giorno di riposo.** Gli esercizi stancano i piccoli muscoli del piede, quindi si inseriscono meglio dopo una corsa breve e facile che prima di un allenamento duro o di un lungo.
 - **Non subito prima delle ripetute o di una gara.** Lì ti servono polpacci freschi.
 - **Sollevamenti sulle punte da 2 a 3 giorni a settimana,** con un giorno di pausa in mezzo, come per qualsiasi lavoro di forza.
 - **Muscoli del piede, dita ed equilibrio da 2 a 5 giorni a settimana.** Nello studio del 2019, i runner facevano esercizi per il piede almeno cinque volte a settimana e hanno guadagnato forza in circa due mesi (Ridge e colleghi, 2019).
@@ -10382,7 +10382,7 @@ Dopo una corsa facile o in un giorno di riposo è la scelta pratica, perché gli
 
 #### Quanti sollevamenti sulle punte su una gamba dovrebbe fare un runner?
 
-Non esiste un numero specifico per i runner. Gli adulti sani fanno una mediana di circa 23 o 24 per gamba a un ritmo fisso, e 25 è stato proposto come valore normale. Molti runner attivi ne fanno di più. Una differenza di oltre il 10% tra le gambe vale la pena di essere seguita. La pagina del test del sollevamento sulle punte ha il protocollo completo.
+Non esiste un numero specifico per i runner. Gli adulti sani fanno in mediana circa 23 o 24 sollevamenti per gamba a un ritmo fisso, e 25 è stato proposto come valore normale. Molti runner attivi ne fanno di più. Una differenza di oltre il 10% tra le gambe merita di essere tenuta d’occhio. La pagina del test del sollevamento sulle punte ha il protocollo completo.
 
 #### Quanto ci vuole perché gli esercizi per i piedi facciano la differenza?
 
@@ -10394,13 +10394,13 @@ Sì. La routine è pensata per affiancare la corsa. Se hai un fastidio, interrom
 
 #### Correre a piedi nudi o con scarpe minimaliste rinforza i piedi?
 
-In uno studio del 2019 sui runner, camminare con scarpe minimaliste, con un aumento lento e graduale, ha costruito forza nel piede più o meno quanto gli esercizi. Cambiare in fretta le scarpe da corsa è un’altra cosa e ha i suoi rischi, quindi se ci provi procedi con gradualità.
+In uno studio del 2019 sui runner, camminare con scarpe minimaliste, con un aumento lento e graduale, ha rinforzato il piede più o meno quanto gli esercizi. Cambiare in fretta le scarpe da corsa è un’altra cosa e ha i suoi rischi, quindi se ci provi procedi con gradualità.
 
 ## Dolore ai piedi negli insegnanti: cosa fa ai piedi una giornata a scuola, e cosa aiuta
 
 Language: Italian (Italiano) · https://walkito.site/it/dolore-piedi-insegnanti/ · published 2026-10-18 · updated 2026-10-18
 
-Il dolore ai piedi degli insegnanti nasce soprattutto dalle ore passate in piedi e a camminare per l’aula su pavimenti duri, e le opzioni con le prove migliori, gli allungamenti del polpaccio e della fascia plantare più il lavoro di forza per il polpaccio, richiedono da 3 a 5 minuti e stanno tra una lezione e l’altra. La linea guida del 2023 sul dolore al tallone dà a quegli allungamenti una **A**, il suo grado più alto, e al lavoro di forza una **B** (Koc e colleghi, 2023). Le ricerche sui piedi degli insegnanti sono poche: in una revisione del 2024, 27 studi riportavano dolore nella zona della caviglia, per lo più contato insieme al piede, e il dato complessivo era il 30% degli insegnanti (Tahernejad e colleghi, 2024).
+Il dolore ai piedi degli insegnanti nasce soprattutto dalle ore passate in piedi e a camminare per l’aula su pavimenti duri, e le opzioni con le prove migliori, gli allungamenti del polpaccio e della fascia plantare più il lavoro di forza per il polpaccio, richiedono da 3 a 5 minuti e si fanno tra una lezione e l’altra. La linea guida del 2023 sul dolore al tallone dà a quegli allungamenti una **A**, il suo grado più alto, e al lavoro di forza una **B** (Koc e colleghi, 2023). Le ricerche sui piedi degli insegnanti sono poche: in una revisione del 2024, 27 studi riportavano dolore nella zona della caviglia, per lo più contato insieme al piede, e il dato complessivo era il 30% degli insegnanti (Tahernejad e colleghi, 2024).
 
 - In una revisione del 2024 su 44 studi e 15.972 insegnanti, il dolore nella zona della caviglia (per lo più contato insieme al piede) era al 30% nel dato complessivo di 27 studi, sotto il collo e la zona lombare, al 47% ciascuno. I risultati variavano molto da uno studio all’altro (Tahernejad e colleghi, 2024).
 - In un’indagine su 1.439 insegnanti di una sola regione dell’Arabia Saudita, l’85,5% riferiva dolore ai piedi negli ultimi 12 mesi, ed era più comune in chi aveva 16 o più lezioni a settimana (Alqahtani, 2020). Altre indagini hanno trovato dati molto più bassi, quindi leggilo come il risultato di una sola regione.
@@ -10434,9 +10434,9 @@ Source: Tahernejad S, Hejazi A, Rezaei E, Makki F, Sahebi A, Zangiabadi Z. Muscu
 Source: Erick PN, Smith DR. A systematic review of musculoskeletal disorders among school teachers. BMC Musculoskeletal Disorders. 2011;12:260.
 Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
 
-### Quali esercizi stanno tra una lezione e l’altra?
+### Quali esercizi si possono fare tra una lezione e l’altra?
 
-Gli esercizi qui sotto vengono dalla linea guida sulla fascite plantare. Non sono stati testati negli insegnanti, ma lavorano sui tessuti che una giornata in piedi carica: il polpaccio, la fascia plantare e il tallone. Quasi tutti richiedono solo un muro o una cattedra, quindi stanno nel cambio dell’ora o in un’ora buca. Sono le dosi di partenza di Walkito, non una prescrizione. [Come sono scritte queste guide](https://walkito.site/it/chi-siamo/).
+Gli esercizi qui sotto vengono dalla linea guida sulla fascite plantare. Non sono stati testati negli insegnanti, ma lavorano sui tessuti che una giornata in piedi carica: il polpaccio, la fascia plantare e il tallone. Quasi tutti richiedono solo un muro o una cattedra, quindi si fanno al cambio dell’ora o in un’ora buca. Sono le dosi di partenza di Walkito, non una prescrizione. [Come sono scritte queste guide](https://walkito.site/it/chi-siamo/).
 
 Gli allungamenti hanno il grado più alto della linea guida, **A**. Il lavoro di forza per il polpaccio ha una **B**. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi.
 
@@ -10480,7 +10480,7 @@ Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological ef
 
 ### Pavimenti e tappetini in aula fanno differenza?
 
-Quasi tutte le aule hanno pavimenti duri: piastrelle, linoleum o vinile sopra il cemento, o una moquette sottile. Nessuno studio ha misurato i pavimenti delle aule e i piedi degli insegnanti. La revisione del 2015 sul lavoro in piedi mette i tappetini tra le misure con qualche prova a favore per ridurre il fastidio, insieme alle scarpe e alla possibilità di alternare seduto e in piedi (Waters e Dick, 2015).
+Quasi tutte le aule hanno pavimenti duri: piastrelle, vinile sopra il cemento, o una moquette sottile. Nessuno studio ha misurato i pavimenti delle aule e i piedi degli insegnanti. La revisione del 2015 sul lavoro in piedi mette i tappetini tra le misure con qualche prova a favore per ridurre il fastidio, insieme alle scarpe e alla possibilità di alternare seduto e in piedi (Waters e Dick, 2015).
 
 Un tappetino aiuta solo dove stai davvero in piedi. Se insegni da un punto fisso, come la lavagna, il proiettore o un bancone di laboratorio, lì vale la pena provare un tappetino antifatica. Se giri per l’aula, il tappetino sono le tue scarpe.
 
@@ -10560,7 +10560,7 @@ Non esiste un limite testato per gli insegnanti. Una revisione del 2017 sugli st
 
 Language: Italian (Italiano) · https://walkito.site/it/dolore-piedi-commercio-magazzino/ · published 2026-10-18 · updated 2026-10-18
 
-In magazzino e in negozio i piedi fanno male perché ore in piedi e di cammino su pavimenti duri caricano tallone, arco e polpaccio con poco ammortizzamento sotto. Stare in piedi per gran parte della giornata di lavoro ha aumentato di 3,6 volte la probabilità di [fascite plantare](https://walkito.site/it/fascite-plantare/) in uno studio (Riddle e colleghi, 2003). Gli allungamenti del polpaccio e della fascia plantare hanno il grado più alto, **A**, nella linea guida del 2023 sul dolore al tallone, e una versione breve sta in circa 3 minuti di pausa. Tappetini e plantari ammortizzati aiutano il comfort, ma le prove a loro favore sono più deboli (Speed e colleghi, 2018).
+In magazzino e in negozio i piedi fanno male perché le ore passate in piedi e a camminare su pavimenti duri caricano tallone, arco e polpaccio con poco ammortizzamento sotto. Stare in piedi per gran parte della giornata di lavoro ha aumentato di 3,6 volte la probabilità di [fascite plantare](https://walkito.site/it/fascite-plantare/) in uno studio (Riddle e colleghi, 2003). Gli allungamenti del polpaccio e della fascia plantare hanno il grado più alto, **A**, nella linea guida del 2023 sul dolore al tallone, e una versione breve si fa in circa 3 minuti di pausa. Tappetini e plantari ammortizzati aiutano il comfort, ma le prove a loro favore sono più deboli (Speed e colleghi, 2018).
 
 - Passare gran parte della giornata di lavoro in piedi ha aumentato di 3,6 volte la probabilità di fascite plantare in uno studio caso-controllo con 50 casi e 100 controlli. Una flessibilità della caviglia molto ridotta, di solito per un polpaccio rigido, l’ha aumentata di 23,3 volte (Riddle e colleghi, 2003).
 - La linea guida del 2023 sul dolore al tallone mantiene una raccomandazione di **grado B**: i professionisti sanitari dovrebbero valutare il carico sui piedi legato al lavoro, soprattutto su superfici che ammortizzano poco, come fattore di rischio per il dolore al tallone (Koc e colleghi, 2023).
@@ -10610,7 +10610,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Le scarpe antinfortunistiche causano dolore ai piedi?
 
-Le scarpe antinfortunistiche proteggono i piedi, ma portano anche delle lamentele. Una revisione sistematica del 2024 ha trovato 7 studi su lavoratori con calzature antinfortunistiche. Tutti gli studi riportavano fastidio e dolore, e i 4 che hanno misurato il dolore hanno trovato dolore ai piedi in una quota tra il 42,3% e il 60,8% dei lavoratori. Le lamentele principali erano caldo, sudore, peso e suola rigida, soprattutto intorno alle dita e al puntale.
+Le scarpe antinfortunistiche proteggono i piedi, ma non sono esenti da lamentele. Una revisione sistematica del 2024 ha trovato 7 studi su lavoratori con calzature antinfortunistiche. Tutti gli studi riportavano fastidio e dolore, e i 4 che hanno misurato il dolore hanno trovato dolore ai piedi in una quota tra il 42,3% e il 60,8% dei lavoratori. Le lamentele principali erano caldo, sudore, peso e suola rigida, soprattutto intorno alle dita e al puntale.
 
 In uno studio su 509 lavoratori di 12 aziende metalmeccaniche, tutti con calzature antinfortunistiche ogni giorno, l’81% aveva almeno un problema ai piedi. Le lamentele più comuni sulle scarpe erano caldo e umidità all’interno (42%), peso (27,5%) e calzata (22,9%) (Mancuso e colleghi, 2017).
 
@@ -10669,7 +10669,7 @@ Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al
 
 Un dolore generico e i piedi stanchi dopo un turno lungo di solito passano con una notte di riposo. La fascite plantare ha un andamento più chiaro: dolore acuto vicino alla parte interna del tallone, peggiore ai primi passi del mattino o dopo essere stato seduto. Se ti ci ritrovi, vedi [dolore al tallone al mattino](https://walkito.site/it/dolore-tallone-al-mattino/) ed [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/). Circa il 90% delle persone con fascite plantare migliora con un trattamento non chirurgico, anche se possono servire da tre a sei mesi (Latt e colleghi, 2020).
 
-Altri quadri indicano altro. Un dolore bruciante sotto l’avampiede fa pensare a un [dolore sotto la pianta del piede](https://walkito.site/it/metatarsalgia-dolore-pianta-piede/). Un dolore lungo l’arco che peggiora durante il turno è trattato in [dolore all’arco plantare](https://walkito.site/it/dolore-arco-plantare/). Il dolore sul dorso del piede può venire da scarpe allacciate troppo strette o che premono; vedi [dolore al dorso del piede](https://walkito.site/it/dolore-dorso-piede/).
+Altri quadri indicano altro. Un dolore bruciante sotto l’avampiede fa pensare alla [metatarsalgia](https://walkito.site/it/metatarsalgia-dolore-pianta-piede/). Un dolore lungo l’arco che peggiora durante il turno è trattato in [dolore all’arco plantare](https://walkito.site/it/dolore-arco-plantare/). Il dolore sul dorso del piede può venire da scarpe allacciate troppo strette o che premono; vedi [dolore al dorso del piede](https://walkito.site/it/dolore-dorso-piede/).
 
 Un dolore in un piccolo punto preciso di un osso, che peggiora più cammini, può essere una frattura da stress, soprattutto dopo un aumento delle ore o un nuovo lavoro con più cammino. **In quel caso serve un professionista sanitario, non altri esercizi.**
 
@@ -10689,11 +10689,11 @@ Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and p
 
 ### Come trasformarlo in un piano
 
-Non devi capire da solo l’ordine, le dosi o quando passare a una versione più dura. Walkito costruisce il piano dalle tue risposte e lo adatta a come stanno i tuoi piedi ogni giorno, così una brutta mattina dopo un turno lungo vuol dire una sessione più leggera.
+Non devi capire da solo l’ordine, le dosi o quando passare a una versione più difficile. Walkito costruisce il piano dalle tue risposte e lo adatta a come stanno i tuoi piedi ogni giorno, così una brutta mattina dopo un turno lungo vuol dire una sessione più leggera.
 
 #### Perché mi fanno così male i piedi lavorando in magazzino?
 
-Ore in piedi e di cammino su pavimenti duri tengono il carico su tallone, arco e polpaccio per gran parte del turno. Passare gran parte della giornata di lavoro in piedi ha aumentato di 3,6 volte la probabilità di fascite plantare in uno studio, e la linea guida del 2023 sul dolore al tallone indica il carico sui piedi legato al lavoro su superfici poco ammortizzate come fattore di rischio.
+Le ore passate in piedi e a camminare su pavimenti duri tengono il carico su tallone, arco e polpaccio per gran parte del turno. Passare gran parte della giornata di lavoro in piedi ha aumentato di 3,6 volte la probabilità di fascite plantare in uno studio, e la linea guida del 2023 sul dolore al tallone indica il carico sui piedi legato al lavoro su superfici poco ammortizzate come fattore di rischio.
 
 #### Quanti passi fa un magazziniere in un turno?
 
@@ -10755,7 +10755,7 @@ La fascite plantare ha un quadro tipico: dolore acuto sotto il tallone ai primi 
 
 Altri quadri fanno pensare ad altro:
 
-- bruciore sotto l’avampiede a metà servizio: vedi [dolore alla pianta del piede](https://walkito.site/it/metatarsalgia-dolore-pianta-piede/)
+- bruciore sotto l’avampiede a metà servizio: vedi [dolore sotto l’avampiede](https://walkito.site/it/metatarsalgia-dolore-pianta-piede/)
 - un dolore profondo, come un livido, al centro del tallone, che peggiora quanto più a lungo stai in piedi su un pavimento duro: vedi [sindrome del cuscinetto adiposo del tallone](https://walkito.site/it/sindrome-cuscinetto-adiposo-tallone/)
 - archi che fanno male o sembrano piatti a fine turno: vedi [dolore all’arco plantare](https://walkito.site/it/dolore-arco-plantare/)
 
@@ -10924,11 +10924,11 @@ Source: van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body ma
 
 ### Perché il carico conta per il tallone?
 
-**La fascia plantare è la fascia sotto il piede che sostiene l’arco, e riceve carico a ogni passo.** Più peso corporeo significa più carico a ogni passo, quindi la stessa camminata o lo stesso turno chiedono di più al tessuto. Il consiglio della linea guida per il dolore al tallone parte proprio da questa idea: regolare il carico sui piedi al lavoro, nel tempo libero e nella vita di tutti i giorni. La linea guida dà a questo consiglio una **E**, perché si basa sulla teoria, non su studi clinici (Koc e colleghi, 2023).
+**La fascia plantare è la banda di tessuto sotto il piede che sostiene l’arco, e riceve carico a ogni passo.** Più peso corporeo significa più carico a ogni passo, quindi la stessa camminata o lo stesso turno chiedono di più al tessuto. Il consiglio della linea guida per il dolore al tallone parte proprio da questa idea: regolare il carico sui piedi al lavoro, nel tempo libero e nella vita di tutti i giorni. La linea guida dà a questo consiglio una **E**, perché si basa sulla teoria, non su studi clinici (Koc e colleghi, 2023).
 
 Perdere peso riduce davvero la pressione sotto il piede. In uno studio su 41 adulti con un IMC medio vicino a 36, il gruppo con un piano alimentare ha perso 5,9 kg in tre mesi contro 1,9 kg del gruppo di confronto, e aveva una pressione di picco più bassa sotto alcune zone del piede. La forma del piede e il modo di camminare non sono cambiati (Song e colleghi, 2015). Quello studio non ha misurato il dolore al tallone.
 
-Ma la pressione non spiega tutto. In uno studio su persone con dolore al piede in attesa di un intervento di chirurgia bariatrica, il dolore è diminuito dopo l’intervento, ma il calo della pressione sotto il piede non era collegato al calo del dolore. Lo era l’umore: chi aveva più sintomi depressivi riferiva più dolore al piede, prima e dopo (Walsh e colleghi, 2018). Il dolore dipende da molto più che dalla meccanica, ed è un motivo in più per non dartene la colpa.
+Ma la pressione non spiega tutto. In uno studio su persone con dolore al piede in attesa di un intervento di chirurgia bariatrica, il dolore è diminuito dopo l’intervento, ma il calo della pressione sotto il piede non era collegato al calo del dolore. Lo era l’umore: chi aveva più sintomi depressivi riferiva più dolore al piede, prima e dopo (Walsh e colleghi, 2018). Il dolore non dipende solo dalla meccanica, ed è un motivo in più per non dartene la colpa.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Song J, Kane R, Tango DN, Veur SS, Furmato J, Komaroff E, et al. Effects of weight loss on foot structure and function in obese adults: a pilot randomized controlled trial. Gait & Posture. 2015;41(1):86–92.
@@ -11007,7 +11007,7 @@ Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognos
 - il tallone è gonfio, arrossato o caldo, o hai la febbre
 - il dolore peggiora di notte o a riposo, o si accompagna a bruciore o intorpidimento
 - fa male quando stringi i lati del tallone, o il dolore continua ad aumentare con l’attività (possibile frattura da stress)
-- un polpaccio è dolorante e gonfio (possibile coagulo): chiedi aiuto in giornata
+- un polpaccio è dolorante e gonfio (possibile coagulo di sangue): chiedi aiuto in giornata
 - ti fanno male entrambi i talloni insieme a dolore o rigidità in altre articolazioni
 - stai pensando a farmaci per perdere peso o alla chirurgia: è un discorso da fare con il tuo medico
 
@@ -11082,11 +11082,11 @@ La giornata di un parrucchiere è diversa da quella di un infermiere. Non percor
 
 - I muscoli del polpaccio restano nella stessa posizione, quindi smettono di pompare il sangue verso l’alto.
 - Sangue e liquidi si accumulano nella parte bassa delle gambe e nei piedi, ed è per questo che la sera le scarpe sembrano più strette.
-- Il cuscinetto del tallone e la fascia plantare, la fascia sotto l’arco, portano un carico costante senza pause.
+- Il cuscinetto del tallone e la fascia plantare, la banda di tessuto sotto l’arco, portano un carico costante senza pause.
 
 Gli studi di laboratorio mostrano quanto in fretta succede. Una revisione del 2017 su 25 studi di laboratorio ha trovato che i sintomi alla zona lombare diventavano clinicamente rilevanti in media dopo circa 71 minuti in piedi, e dopo 42 minuti nelle persone predisposte al dolore da stare in piedi. Un colore o un taglio possono durare di più. Una revisione del 2015 sul lavoro in piedi collegava lo stare in piedi a lungo a dolore lombare e alle gambe, fastidio e stanchezza in molti lavori.
 
-In uno studio del 2023 su parrucchieri turchi, chi riferiva stanchezza alle gambe aveva anche più dolore a ginocchia e gambe e punteggi peggiori per energia e mobilità. **Anche il gonfiore si misura:** in 38 parrucchieri, la circonferenza della caviglia passava da 21,1 cm al mattino a 22,1 cm a fine giornata, senza compressione.
+In uno studio del 2023 su parrucchieri turchi, chi riferiva stanchezza nella parte bassa delle gambe aveva anche più dolore a ginocchia e gambe sotto il ginocchio e punteggi peggiori per energia e mobilità. **Anche il gonfiore si misura:** in 38 parrucchieri, la circonferenza della caviglia passava da 21,1 cm al mattino a 22,1 cm a fine giornata, senza compressione.
 
 Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
@@ -11123,7 +11123,7 @@ Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on muscu
 
 Un tappetino alla tua postazione è uno dei cambiamenti più semplici con delle prove a favore. In uno studio di laboratorio, alcune persone sono rimaste in piedi per quattro ore su quattro diversi tappetini antifatica e su un pavimento duro. Tre tappetini su quattro riducevano il fastidio rispetto al pavimento duro, ma tra loro non erano molto diversi.
 
-Le prove non sono tutte positive. In un piccolo studio del 1994 su 5 persone, i tappetini riducevano la fatica muscolare solo nella zona lombare, e solo con il più morbido dei due tappetini. I muscoli delle gambe non mostravano cambiamenti. **Quindi un tappetino aiuta il comfort, ma non sostituisce il movimento e gli allungamenti.**
+Le prove non sono tutte positive. In un piccolo studio del 1994 su 5 persone, i tappetini riducevano la fatica muscolare solo nella zona lombare, e solo con il più morbido dei due tappetini. I muscoli delle gambe non mostravano cambiamenti. **Quindi un tappetino migliora il comfort, ma non sostituisce il movimento e gli allungamenti.**
 
 In salone, metti il tappetino dove stai davvero, dietro la poltrona, e tienilo ben steso così da non inciampare sui bordi. Capelli e acqua possono renderlo scivoloso, quindi spazzalo spesso.
 
@@ -11131,7 +11131,7 @@ Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on muscu
 Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
 Source: Kim JY, Stuart-Buttle C, Marras WS. The effects of mats on back and leg fatigue. Applied Ergonomics. 1994;25(1):29-34.
 
-### Meglio usare uno sgabello o una seduta alta?
+### I parrucchieri dovrebbero usare uno sgabello o una seduta alta?
 
 **Nessuno studio ha verificato se uno sgabello riduca il dolore ai piedi nei parrucchieri.** Stare seduti toglie carico ai piedi, e negli studi in ufficio alternare seduto e in piedi riduceva il fastidio lombare senza calo del rendimento (Karakolis e Callaghan, 2014). È la migliore prova indiretta a favore di un po’ di tempo da seduti.
 
@@ -11174,7 +11174,7 @@ Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological ef
 
 Un dolore generale e le gambe pesanti alla fine di una giornata in salone sono comuni e di solito passano durante la notte. Alcuni quadri fanno pensare a qualcosa di più specifico:
 
-- Un dolore acuto al tallone ai primi passi del mattino o dopo essere stato seduto fa pensare alla [fascite plantare](https://walkito.site/it/fascite-plantare/). La routine completa è in [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/).
+- Un dolore acuto al tallone ai primi passi del mattino o dopo un periodo da seduti fa pensare alla [fascite plantare](https://walkito.site/it/fascite-plantare/). La routine completa è in [esercizi per la fascite plantare](https://walkito.site/it/esercizi-fascite-plantare/).
 - Bruciore o dolore sotto l’avampiede fa pensare a una [metatarsalgia](https://walkito.site/it/metatarsalgia-dolore-pianta-piede/), comune con suole sottili o tacchi.
 - Un arco che fa male o sembra più basso la sera fa pensare a un [dolore all’arco plantare](https://walkito.site/it/dolore-arco-plantare/).
 - Vene gonfie, tortuose o in rilievo sulle gambe possono essere vene varicose. In un’indagine su 182 parrucchieri a Taiwan, il 24,2% le aveva, e in chi aveva più di 45 anni le molte ore al mese passate in piedi erano un fattore di rischio (Chen e Guo, 2014).
@@ -11208,7 +11208,7 @@ Nessuno studio ha confrontato tipi di scarpe per i parrucchieri, quindi non esis
 
 #### I tappetini antifatica funzionano per i parrucchieri?
 
-Aiutano il comfort. In uno studio di laboratorio con quattro ore in piedi, tre tappetini antifatica su quattro riducevano il fastidio rispetto a un pavimento duro. Un piccolo studio più vecchio ha trovato che i tappetini riducevano la fatica dei muscoli della schiena ma non quella delle gambe. Vale la pena averne uno alla poltrona, ma non sostituisce gli allungamenti e il movimento tra un cliente e l’altro.
+Migliorano il comfort. In uno studio di laboratorio con quattro ore in piedi, tre tappetini antifatica su quattro riducevano il fastidio rispetto a un pavimento duro. Un piccolo studio più vecchio ha trovato che i tappetini riducevano la fatica dei muscoli della schiena ma non quella delle gambe. Vale la pena averne uno alla poltrona, ma non sostituisce gli allungamenti e il movimento tra un cliente e l’altro.
 
 #### I parrucchieri dovrebbero portare calze a compressione?
 
@@ -11250,7 +11250,7 @@ I numeri migliori vengono dagli escursionisti di lunga distanza. In un’indagin
 
 I problemi da sovraccarico, che si accumulano in giorni di carico ripetuto, erano più comuni degli infortuni improvvisi: 28% contro 18% nella stessa indagine. Questo conta anche per chi fa escursioni di un giorno. Una prima escursione lunga della stagione, o un fine settimana con due giornate impegnative di fila, è la stessa dinamica in scala più piccola.
 
-Sono indagini basate su quello che riferiscono persone che camminano per centinaia di chilometri. Nessuno studio ha contato il dolore ai piedi negli escursionisti della domenica, quindi i numeri esatti non valgono per chi cammina nel fine settimana. La parte utile è il quadro di cosa fa male.
+Sono indagini basate su quello che riferiscono persone che camminano per centinaia di chilometri. Nessuno studio ha contato il dolore ai piedi in chi fa normali escursioni di un giorno, quindi i numeri esatti non valgono per chi cammina nel fine settimana. La parte utile è il quadro di cosa fa male.
 
 Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
 
@@ -11266,7 +11266,7 @@ Source: Boulware DR, Forgey WW, Martin WJ 2nd. Medical risks of wilderness hikin
 
 **In discesa, le gambe lavorano da freno.** A ogni passo verso il basso, il polpaccio, la parte anteriore della tibia e i muscoli della coscia controllano la discesa mentre si allungano. Il piede scivola anche in avanti nella scarpa, quindi le dita e l’avampiede prendono più pressione. Per questo molte persone stanno bene in salita e hanno male dopo la discesa.
 
-In uno studio di laboratorio, 15 escursionisti esperti uomini hanno camminato in discesa senza zaino, con uno zaino da giornata pari al 15% del peso corporeo e con uno zaino da spedizione del 30%. I bastoncini riducevano le forze di rotazione su caviglia, ginocchio e anca e il picco del lavoro di frenata a caviglia e ginocchio, con tutti gli zaini (Bohne e Abendroth-Smith, 2007). Nell’indagine sull’Appalachian Trail, il 70% usava bastoncini o un bastone, e i bastoncini andavano insieme a meno disturbi (Chrusch e Kavin, 2021). Quel collegamento nell’indagine non prova che i bastoncini prevengano gli infortuni.
+In uno studio di laboratorio, 15 escursionisti esperti, tutti uomini, hanno camminato in discesa senza zaino, con uno zaino da giornata pari al 15% del peso corporeo e con uno zaino da spedizione del 30%. I bastoncini riducevano le forze di rotazione su caviglia, ginocchio e anca e il picco del lavoro di frenata a caviglia e ginocchio, con tutti gli zaini (Bohne e Abendroth-Smith, 2007). Nell’indagine sull’Appalachian Trail, il 70% usava bastoncini o un bastone, e i bastoncini andavano insieme a meno disturbi (Chrusch e Kavin, 2021). Quel collegamento nell’indagine non prova che i bastoncini prevengano gli infortuni.
 
 Consigli pratici, nessuno testato per prevenire il dolore ai piedi: fai passi più corti nelle discese ripide, stringi bene i lacci sul collo del piede così il piede non scivola in avanti, e tieni le unghie dei piedi corte.
 
@@ -11315,7 +11315,7 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 
 Tienila breve. Prima dell’escursione, un minuto o due per mettere in movimento le caviglie. Dopo, gli allungamenti per tallone e polpaccio. Nei giorni tra un’escursione e l’altra, i sollevamenti sulle punte per la forza. Sono le dosi di partenza di Walkito, prese dalle guide principali. Interrompi un esercizio per oggi se il dolore supera 6 su 10.
 
-Sii onesto su cosa fanno gli allungamenti prima di un’escursione. In una sperimentazione su 1.538 reclute dell’esercito, in tre mesi di addestramento, allungare sei gruppi muscolari delle gambe prima di ogni sessione non riduceva gli infortuni in modo rilevante (Pope e colleghi, 2000). Gli allungamenti qui servono per il dolore al tallone e al polpaccio, dove la linea guida del 2023 dà agli allungamenti una **A**, e il lavoro di forza per il polpaccio ha una **B** (Koc e colleghi, 2023).
+Meglio essere chiari su cosa fanno gli allungamenti prima di un’escursione. In una sperimentazione su 1.538 reclute dell’esercito, in tre mesi di addestramento, allungare sei gruppi muscolari delle gambe prima di ogni sessione non riduceva gli infortuni in modo rilevante (Pope e colleghi, 2000). Gli allungamenti qui servono per il dolore al tallone e al polpaccio, dove la linea guida del 2023 dà agli allungamenti una **A**, e il lavoro di forza per il polpaccio ha una **B** (Koc e colleghi, 2023).
 
 - **Oscillazioni della caviglia (prima)** (2 serie da 15, ogni gamba): Un piede avanti e uno indietro, le mani su un muro, un albero o i bastoncini. Porta il ginocchio davanti in avanti sopra le dita, il tallone resta a terra. Lentamente, circa due secondi per direzione. Cambia gamba dopo ogni serie.
 - **Allungamento del polpaccio (dopo)** (2 tenute da 30 secondi, ogni gamba): Appoggia le mani al muro. Tieni la gamba dietro tesa, il tallone dietro ben appoggiato a terra e il bacino in avanti. Un polpaccio rigido tira sul tallone, quindi questo allungamento conta anche se lo senti più in alto.
@@ -11330,7 +11330,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### Quando smettere di camminare e farti visitare?
 
-**Fermati e fatti controllare se il dolore è in un punto preciso di un osso e peggiora a ogni escursione.** È il quadro classico della frattura da stress, di solito nei metatarsi dietro le dita o nel calcagno. In una revisione sulle fratture da stress, l’81% dei pazienti aveva dolore camminando, e un punto dolente sull’osso si trovava dal 65,9 al 100% dei casi. Una radiografia alla prima visita ne individuava solo circa il 10%, quindi una radiografia normale non la esclude (Patel e colleghi, 2011). Se non sei sicuro di cosa sia, smetti con le escursioni finché non ti ha visitato un professionista sanitario.
+**Fermati e fatti controllare se il dolore è in un punto preciso di un osso e peggiora a ogni escursione.** È il quadro classico della frattura da stress, di solito nei metatarsi dietro le dita o nel calcagno. In una revisione sulle fratture da stress, l’81% dei pazienti aveva dolore camminando, e un punto dolente sull’osso si trovava in una quota di casi dal 65,9 al 100%. Una radiografia alla prima visita ne individuava solo circa il 10%, quindi una radiografia normale non la esclude (Patel e colleghi, 2011). Se non sei sicuro di cosa sia, smetti con le escursioni finché non ti ha visitato un professionista sanitario.
 
 Fermati anche se non riesci a caricare il peso sul piede, se il dolore è iniziato con una storta, una caduta o uno schiocco, o se il piede è arrossato, caldo e gonfio. L’elenco completo è qui sotto.
 

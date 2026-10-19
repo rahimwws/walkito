@@ -41,7 +41,7 @@ export const TEACHERS_PT: Guide = {
       h2: 'O que um dia de aula faz com os seus pés?',
       keyFact: 'Ficar em pé durante a maior parte do dia de trabalho aumentou 3,6\u00A0vezes a chance de fascite plantar, e a flexibilidade reduzida do tornozelo aumentou 23,3\u00A0vezes, em um estudo com 50\u00A0casos e 100\u00A0controles (Riddle e colegas, 2003).',
       paragraphs: [
-        '**Um dia de aula mistura ficar parado em pé com caminhadas curtas, quase sempre em piso duro.** Você fica em pé no quadro ou na frente da mesa, anda pelas fileiras enquanto os alunos fazem as atividades e depois fica em pé de novo cuidando do corredor ou do pátio. Ficar parado em pé carrega por muito tempo o calcanhar, a fáscia plantar (a faixa embaixo do pé que sustenta o arco) e a panturrilha, sem o efeito de bombeamento da caminhada.',
+        '**Um dia de aula mistura ficar parado em pé com caminhadas curtas, quase sempre em piso duro.** Você fica em pé no quadro ou na frente da mesa, anda pelas fileiras enquanto os alunos fazem as atividades e depois fica em pé de novo cuidando do corredor ou do pátio. Ficar parado em pé põe carga no calcanhar, na fáscia plantar (a faixa embaixo do pé que sustenta o arco) e na panturrilha por muito tempo, sem o efeito de bombeamento da caminhada.',
         'Não encontramos nenhum estudo que tenha medido quantas horas um professor típico passa em pé, então esta página não dá um número. O que foi medido é ficar muito tempo em pé em geral. Uma revisão de 2015 sobre trabalho em pé associou isso a desconforto nas pernas e nos pés, cansaço e inchaço nas pernas, e colocou tapetes, calçados com bom suporte, meias de compressão e a opção de alternar entre sentado e em pé entre as medidas com alguma evidência (Waters e Dick, 2015).',
         'Em uma revisão de 2017 com 25\u00A0estudos de laboratório, o desconforto na lombar e nas pernas aumentava quanto mais tempo as pessoas ficavam em pé sem pausa. Os autores sugeriram não ficar em pé por mais de cerca de 40\u00A0minutos seguidos (Coenen e colegas, 2017). Isso é mais ou menos uma aula.',
         'A panturrilha também importa. Em um estudo de 2003, a [panturrilha tensa](/pt/panturrilha-tensa/) foi o fator de risco mais forte para fascite plantar, com chance 23,3\u00A0vezes maior, e ficar em pé durante a maior parte do dia de trabalho aumentou a chance 3,6\u00A0vezes (Riddle e colegas, 2003). Quem dá aula em pé o dia todo e tem a panturrilha tensa tem as duas coisas.',
@@ -203,7 +203,7 @@ export const TEACHERS_PT: Guide = {
       keyFact: 'Entre os professores com dor nos pés de uma pesquisa, 25,8% disseram que ela aparecia de manhã cedo e depois do repouso, um padrão típico de fascite plantar, embora a pesquisa não tenha feito diagnóstico (Alqahtani, 2020).',
       paragraphs: [
         'Uma dor geral no fim do dia de aula que já passou na manhã seguinte é cansaço de ficar em pé. **A fascite plantar tem um padrão típico: dor aguda embaixo do calcanhar nos primeiros passos da manhã ou depois de ficar sentado, que melhora conforme você anda e volta depois de um dia longo em pé.** Na pesquisa saudita, 25,8% dos professores com dor nos pés disseram que ela aparecia de manhã cedo e depois do repouso (Alqahtani, 2020). Essa pesquisa não diagnosticou ninguém, então é um padrão, não uma contagem de casos de fascite plantar.',
-        'Se isso parece com você, comece por [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020). [Quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) traz os detalhes.',
+        'Se isso parece com você, comece por [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses (Latt e colegas, 2020). [Quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) traz os detalhes.',
         'Outros padrões apontam para outras causas:',
         {
           list: [
@@ -213,7 +213,7 @@ export const TEACHERS_PT: Guide = {
             'dor atrás do calcanhar, no tendão: [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/)',
           ],
         },
-        'Não sabe qual é? Comece por onde e quando dói: é isso que separa um padrão do outro. **Se ainda tiver dúvida, procure um profissional de saúde antes de colocar carga no pé com exercícios.**',
+        'Não sabe qual é? Comece por onde e quando dói: é isso que separa um padrão do outro. **Se ainda tiver dúvida, procure um profissional de saúde antes de pôr carga no pé com exercícios.**',
       ],
       cites: [CITE.alqahtaniTeachers, CITE.latt],
     },
@@ -222,7 +222,7 @@ export const TEACHERS_PT: Guide = {
     {
       q: 'Por que os meus pés doem tanto depois de um dia inteiro dando aula?',
       cites: [CITE.waters, CITE.coenen],
-      a: 'Dar aula mantém você em pé e andando em piso duro durante a maior parte do dia, o que carrega o calcanhar, o arco e a panturrilha com pouco descanso. Revisões sobre trabalho em pé associam ficar muito tempo em pé a desconforto e cansaço nas pernas e nos pés, e estudos de laboratório mostraram o desconforto aumentando quanto mais tempo as pessoas ficavam paradas em pé. Pausas para sentar, alongamentos de panturrilha e calçados com amortecimento ajudam.',
+      a: 'Dar aula mantém você em pé e andando em piso duro durante a maior parte do dia, o que põe carga no calcanhar, no arco e na panturrilha com pouco descanso. Revisões sobre trabalho em pé associam ficar muito tempo em pé a desconforto e cansaço nas pernas e nos pés, e estudos de laboratório mostraram o desconforto aumentando quanto mais tempo as pessoas ficavam paradas em pé. Pausas para sentar, alongamentos de panturrilha e calçados com amortecimento ajudam.',
     },
     {
       q: 'Dor nos pés é comum em professores?',
@@ -275,7 +275,7 @@ export const TEACHERS_PT: Guide = {
   },
   program: {
     h2: 'Como transformar isso em um plano',
-    text: 'Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de um objetivo. Se o seu calcanhar segue o padrão matinal da fascite plantar, o primeiro objetivo é dor de manhã em 1 de 10 ou menos por 14\u00A0dias seguidos.',
+    text: 'Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de um objetivo. Se o seu calcanhar segue o padrão matinal da fascite plantar, o primeiro objetivo é dor de manhã em 1/10 ou menos por 14\u00A0dias seguidos.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos, então uma sessão cabe antes do primeiro sinal ou depois do último. Antes de cada sessão você dá uma nota para a dor no calcanhar de manhã, e o plano se ajusta. O Walkito não faz diagnóstico.',
     ],

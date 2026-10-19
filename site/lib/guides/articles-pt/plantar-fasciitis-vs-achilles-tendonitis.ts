@@ -46,7 +46,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
             '**Insercional:** dor bem onde o tendão se prende atrás do osso do calcanhar, muitas vezes pior quando o sapato aperta ali.',
           ],
         },
-        'Uma dor embaixo do calcanhar que dói quando você aperta os lados do calcanhar, que queima ou formiga, ou que vem com dormência aponta para outras causas, como um nervo, uma fratura por estresse ou o coxim gorduroso do calcanhar (Tu, 2018). A página [dor no calcanhar à noite](/pt/dor-no-calcanhar-a-noite/) trata dessas causas.',
+        'Uma dor embaixo do calcanhar que dói quando você aperta os lados do calcanhar, que queima ou formiga, ou que vem com dormência aponta para outras causas, como um nervo, uma fratura por estresse ou o coxim gorduroso do calcanhar (Tu, 2018). A página [dor no calcanhar à noite](/pt/dor-no-calcanhar-a-noite/) fala dessas causas.',
       ],
       cites: [CITE.guideline, CITE.achillesGuideline, CITE.jonsson, CITE.tuHeelPain],
     },
@@ -148,7 +148,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
           often: 'Dias de força, ou na maioria dos dias enquanto o tendão estiver irritado',
           feel: 'As panturrilhas trabalhando para ficar paradas',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não desça de novo. Segurar lá em cima dá carga ao tendão sem o quique.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não desça de novo. Segurar lá em cima põe carga no tendão sem quicar.',
           stop: 'Dor acima de 5 de 10 que não passa até a manhã seguinte',
           image: 'Exercício: elevação de calcanhar sustentada',
           media: 'heel_raise_hold',
@@ -177,7 +177,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
       paragraphs: [
         '**Sim, e as duas estão ligadas.** Em um estudo com 52\u00A0ressonâncias magnéticas de pessoas com dor no pé ou no tornozelo, as 27 com alterações no Aquiles tinham a fáscia plantar mais grossa, 3,43\u00A0mm em média contra 2,09\u00A0mm. Cinco das 27 tinham a fáscia plantar acima de 4,5\u00A0mm, um limite comum para a fascite plantar. Nenhuma das outras 25 passou de 4\u00A0mm (Stecco e colegas, 2013).',
         'O mesmo estudo descobriu que a fáscia plantar se liga à bainha em volta do Aquiles pelo revestimento do osso do calcanhar. Um estudo em cadáveres mostrou que puxar o Aquiles tensiona a fáscia plantar, e mais ainda quando os dedos estão dobrados para cima (Carlson e colegas, 2000). Uma panturrilha rígida ou sobrecarregada pode, portanto, tensionar as duas.',
-        'Nenhum estudo contou com que frequência as pessoas têm as duas condições juntas, então não existe um número confiável. Nenhuma diretriz trata de quem tem as duas. Um caminho que respeita as duas diretrizes: trabalho de força para a panturrilha que sirva para o tendão, mais o alongamento da fáscia plantar, que trabalha o arco, não o Aquiles. Faça as descidas do calcanhar no nível do chão se a parte de trás do osso do calcanhar doer.',
+        'Nenhum estudo contou com que frequência as pessoas têm as duas condições juntas, então não existe um número confiável. Nenhuma diretriz aborda quem tem as duas. Um caminho que respeita as duas diretrizes: trabalho de força para a panturrilha que sirva para o tendão, mais o alongamento da fáscia plantar, que trabalha o arco, não o Aquiles. Faça as descidas do calcanhar no nível do chão se a parte de trás do osso do calcanhar doer.',
       ],
       cites: [CITE.steccoPfAchilles, CITE.carlsonWindlass, CITE.guideline, CITE.achillesGuideline],
     },
@@ -200,7 +200,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
     {
       h2: 'Quanto tempo cada uma leva para melhorar?',
       paragraphs: [
-        'Na fascite plantar, cerca de 90% das pessoas melhoram com tratamento sem cirurgia, mas isso muitas vezes leva meses (Latt e colegas, 2020). A página [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) tem os detalhes.',
+        'Na fascite plantar, cerca de 90% das pessoas melhoram com cuidados sem cirurgia, mas isso muitas vezes leva meses (Latt e colegas, 2020). A página [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/) tem os detalhes.',
         'Na tendinopatia de Aquiles, os principais ensaios de carga duraram cerca de três meses e acompanharam as pessoas até doze meses. A diretriz de 2024 observa que a função pode começar a melhorar em até 2\u00A0semanas, mas uma recuperação mais completa leva mais tempo (Chimenti e colegas, 2024). A dor insercional foi mais difícil de ajudar com as descidas clássicas do calcanhar abaixo do degrau: só 32% tiveram bons resultados em um estudo anterior, e é por isso que se usam as descidas no nível do chão (Jonsson e colegas, 2008).',
         'Nenhum estudo comparou diretamente o tempo de recuperação das duas.',
       ],
@@ -216,7 +216,7 @@ export const PF_VS_ACHILLES_PT: Guide = {
     {
       q: 'A fascite plantar pode causar dor no Aquiles?',
       cites: [CITE.steccoPfAchilles, CITE.carlsonWindlass],
-      a: 'Elas estão ligadas, mas nenhum estudo mostra que uma causa a outra. Em 52\u00A0ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, 3,43\u00A0mm contra 2,09\u00A0mm. Um estudo em cadáveres mostrou que a tensão no Aquiles tensiona a fáscia plantar. Uma panturrilha rígida e sobrecarregada pode sobrecarregar as duas.',
+      a: 'Elas estão ligadas, mas nenhum estudo mostra que uma causa a outra. Em 52\u00A0ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, 3,43\u00A0mm contra 2,09\u00A0mm. Um estudo em cadáveres mostrou que a tensão no Aquiles tensiona a fáscia plantar. Uma panturrilha rígida e sobrecarregada pode forçar as duas.',
     },
     {
       q: 'A tendinite de Aquiles é pior de manhã, como a fascite plantar?',

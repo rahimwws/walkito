@@ -39,7 +39,7 @@ export const HIKERS_PT: Guide = {
       h2: 'Por que seus pés doem depois de uma trilha?',
       keyFact: 'Em uma pesquisa com 1.295 trilheiros de longa distância da Appalachian Trail, 29% relataram lesão ou dor no pé e 37% dor no joelho (Chrusch e Kavin, 2021).',
       paragraphs: [
-        '**Principalmente porque a trilha carrega os pés mais, e por mais tempo, do que a caminhada do dia a dia.** Você anda por horas, em terreno irregular, subindo e descendo, muitas vezes com mochila. Cada uma dessas coisas aumenta o trabalho do calcanhar, do arco, da panturrilha e do tendão de Aquiles.',
+        '**Principalmente porque a trilha exige mais dos pés, e por mais tempo, do que a caminhada do dia a dia.** Você anda por horas, em terreno irregular, subindo e descendo, muitas vezes com mochila. Cada uma dessas coisas aumenta o trabalho do calcanhar, do arco, da panturrilha e do tendão de Aquiles.',
         'Os melhores números vêm dos trilheiros de longa distância. Em uma pesquisa de 2018 a 2019 com 1.295 trilheiros da Appalachian Trail, 61% relataram algum problema em músculos, articulações ou ossos. A dor no joelho foi a mais comum, com 37%, depois a dor no pé com 29%, as entorses de tornozelo com 13%, a dor no Aquiles com 12% e a dor na canela com 11%. Essas queixas fizeram 11% deles interromper a trilha (Chrusch e Kavin, 2021).',
         'Os problemas por sobrecarga, que se acumulam ao longo de dias de carga repetida, foram mais comuns do que as lesões repentinas: 28% contra 18% na mesma pesquisa. Isso vale também para quem faz trilhas de um dia. Uma primeira trilha longa da temporada, ou um fim de semana com dois dias puxados seguidos, é o mesmo padrão em escala menor.',
         'São pesquisas baseadas no que relatam pessoas que caminham centenas de quilômetros. Nenhum estudo contou a dor nos pés em quem faz trilhas curtas de vez em quando, então os números exatos não valem para quem caminha no fim de semana. A parte útil é o padrão do que dói.',
@@ -65,7 +65,7 @@ export const HIKERS_PT: Guide = {
         ],
       },
       after: [
-        '**Embaixo do calcanhar.** A fascite plantar costuma doer mais nos primeiros passos depois do repouso. A diretriz de 2023 para dor no calcanhar lista como característica típica a dor que começou depois de um aumento recente das atividades com descarga de peso (Koc e colegas, 2023), que é exatamente o que uma trilha mais puxada é. A panturrilha encurtada é o fator de risco mais forte que se conhece: em um estudo com 50\u00A0pessoas com fascite plantar e 100 sem, quem tinha menos dobra no tornozelo tinha uma chance 23,3\u00A0vezes maior (Riddle e colegas, 2003).',
+        '**Embaixo do calcanhar.** A fascite plantar costuma doer mais nos primeiros passos depois do repouso. A diretriz de 2023 para dor no calcanhar lista como característica típica a dor que começou depois de um aumento recente das atividades com descarga de peso (Koc e colegas, 2023), e é exatamente isso que uma trilha mais puxada representa. A panturrilha encurtada é o fator de risco mais forte que se conhece: em um estudo com 50\u00A0pessoas com fascite plantar e 100 sem, quem dobrava menos o tornozelo para cima tinha uma chance 23,3\u00A0vezes maior (Riddle e colegas, 2003).',
         '**Atrás do calcanhar.** A dor no Aquiles pode piorar nas subidas longas, em que a panturrilha e o tendão empurram você para cima a cada passo. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
         '**Planta do pé.** Descidas longas e uma panturrilha encurtada podem levar a carga para a parte da frente do pé. Veja [metatarsalgia](/pt/metatarsalgia-dor-na-planta-do-pe/).',
         '**Bolhas e unhas.** As bolhas foram relatadas por 64% de 280 trilheiros da Appalachian Trail, mais do que qualquer outra queixa (Boulware e colegas, 2003). Unhas escuras ou doloridas depois de um dia de descidas geralmente significam que os dedos estão batendo na ponta do calçado. As duas coisas são problemas de pele e de ajuste, não algo que exercício muda.',
@@ -103,7 +103,7 @@ export const HIKERS_PT: Guide = {
             'Na pesquisa de 2018 a 2019 da Appalachian Trail, 58% usavam tênis de corrida ou de trilha e 24% usavam bota. Os dois estavam associados a menos queixas do que outros calçados, como sandálias (Chrusch e Kavin, 2021).',
           ],
         },
-        'Então escolha o calçado que serve bem, com que você já caminhou e que combina com o terreno. Para dor no calcanhar em geral, a diretriz de 2023 recomenda contra palmilhas usadas sozinhas para alívio a curto prazo, grau B, e as aceita junto com outros cuidados, grau C (Koc e colegas, 2023). Mais em [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/). Se quiser mudar para calçados mais leves ou mais planos, faça isso ao longo de semanas, não na primeira trilha longa; [calçados barefoot](/pt/calcados-barefoot/) explica por quê.',
+        'Então escolha o calçado que serve bem, com que você já caminhou e que combina com o terreno. Para dor no calcanhar em geral, a diretriz de 2023 desaconselha palmilhas usadas sozinhas para alívio a curto prazo (grau B contra) e as aceita junto com outros cuidados (grau C) (Koc e colegas, 2023). Mais em [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/). Se quiser mudar para calçados mais leves ou mais planos, faça isso ao longo de semanas, não na primeira trilha longa; [calçados barefoot](/pt/calcados-barefoot/) explica por quê.',
       ],
       cites: [CITE.andersonPack, CITE.chruschHikers, CITE.guideline],
     },
@@ -111,7 +111,7 @@ export const HIKERS_PT: Guide = {
       h2: 'Com que rapidez dá para aumentar a distância das trilhas?',
       keyFact: 'Quem não fez nenhum preparo antes da Appalachian Trail relatou alguma lesão em músculos, articulações ou ossos com mais frequência, 80% contra 58% (Chrusch e Kavin, 2021).',
       paragraphs: [
-        '**Nenhum estudo dá um aumento semanal seguro para trilheiros.** A evidência mais próxima é a pesquisa da Appalachian Trail: os 13% de trilheiros que não fizeram nenhum preparo antes da trilha relataram mais lesões no geral (80% contra 58%), mais dor no pé (38% contra 28%), mais dor no Aquiles (18% contra 11%) e mais fraturas por estresse na parte de baixo da perna (5% contra 2%). Treino de força, alongamento ou yoga e treino de resistência estiveram cada um associados a menos lesões (Chrusch e Kavin, 2021). É uma pesquisa, então pode ser simplesmente que pessoas mais em forma ou mais cuidadosas tenham treinado mais.',
+        '**Nenhum estudo dá um aumento semanal seguro para trilheiros.** A evidência mais próxima é a pesquisa da Appalachian Trail: os 13% de trilheiros que não fizeram nenhum preparo antes da trilha relataram mais lesões no geral (80% contra 58%), mais dor no pé (38% contra 28%), mais dor no Aquiles (18% contra 11%) e mais fraturas por estresse na parte de baixo da perna (5% contra 2%). Treino de força, alongamento ou yoga e treino aeróbico de longa duração estiveram cada um associados a menos lesões (Chrusch e Kavin, 2021). É uma pesquisa, então pode ser simplesmente que pessoas mais em forma ou mais cuidadosas tenham treinado mais.',
         'Uma forma prática de aumentar, não testada:',
         {
           list: [
@@ -127,8 +127,8 @@ export const HIKERS_PT: Guide = {
     {
       h2: 'Qual é uma boa rotina antes e depois da trilha?',
       paragraphs: [
-        'Mantenha curta. Antes da trilha, um ou dois minutos para soltar os tornozelos. Depois, os alongamentos para o calcanhar e a panturrilha. Nos dias entre as trilhas, elevação de calcanhar para ganhar força. São as doses iniciais do Walkito, tiradas dos guias principais. Pare um exercício por aquele dia se a dor passar de 6 de 10.',
-        'Seja honesto sobre o que o alongamento antes da trilha faz. Em um ensaio com 1.538 recrutas do exército, ao longo de três meses de treinamento, alongar seis grupos musculares das pernas antes de cada sessão não reduziu as lesões de forma relevante (Pope e colegas, 2000). Os alongamentos aqui são para dor no calcanhar e na panturrilha, em que a diretriz de 2023 dá ao alongamento o grau **A**, e o fortalecimento da panturrilha recebe **B** (Koc e colegas, 2023).',
+        'Faça uma rotina curta. Antes da trilha, um ou dois minutos para soltar os tornozelos. Depois, os alongamentos para o calcanhar e a panturrilha. Nos dias entre as trilhas, elevação de calcanhar para ganhar força. São as doses iniciais do Walkito, tiradas dos guias principais. Pare um exercício por aquele dia se a dor passar de 6 de 10.',
+        'Vale ser realista sobre o que o alongamento antes da trilha faz. Em um ensaio com 1.538 recrutas do exército, ao longo de três meses de treinamento, alongar seis grupos musculares das pernas antes de cada sessão não reduziu as lesões de forma relevante (Pope e colegas, 2000). Os alongamentos aqui são para dor no calcanhar e na panturrilha, em que a diretriz de 2023 dá ao alongamento o grau **A**, e o fortalecimento da panturrilha recebe **B** (Koc e colegas, 2023).',
       ],
       exercises: [
         {
@@ -181,7 +181,7 @@ export const HIKERS_PT: Guide = {
         },
         {
           name: 'Rolar o pé na bolinha (depois)',
-          evidence: { level: 'early', why: 'Não foi testado nos estudos desta página. Está aqui para dar alívio.' },
+          evidence: { level: 'early', why: 'Não foi testado nos estudos desta página. Está aqui pelo conforto.' },
           dose: '1\u00A0minuto, cada pé',
           often: 'Depois da trilha ou à noite',
           feel: 'Uma pressão firme embaixo do pé',
@@ -212,7 +212,7 @@ export const HIKERS_PT: Guide = {
       paragraphs: [
         '**Pare e faça uma avaliação se a dor fica em um ponto de um osso e piora a cada trilha.** Esse é o padrão clássico da fratura por estresse, geralmente nos metatarsos, atrás dos dedos, ou no osso do calcanhar. Em uma revisão sobre fraturas por estresse, 81% dos pacientes tinham dor ao caminhar, e um ponto dolorido no osso foi encontrado em 65,9 a 100% dos casos. Um raio X na primeira consulta detectou só cerca de 10% delas, então um raio X normal não descarta a fratura (Patel e colegas, 2011). Se você não tem certeza do que é, pare as trilhas até um profissional de saúde examinar.',
         'Pare também se você não consegue apoiar o peso no pé, se a dor começou com uma torção, uma queda ou um estalo, ou se o pé está vermelho, quente e inchado. A lista completa está abaixo.',
-        'A maior parte da dor no calcanhar é menos dramática. Na fascite plantar, cerca de 90% das pessoas melhoram com tratamento não cirúrgico, embora isso possa levar meses (Latt e colegas, 2020). Veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
+        'A maior parte da dor no calcanhar é menos dramática. Na fascite plantar, cerca de 90% das pessoas melhoram com cuidados não cirúrgicos, embora isso possa levar meses (Latt e colegas, 2020). Veja [quanto tempo dura a fascite plantar](/pt/quanto-tempo-dura-fascite-plantar/).',
       ],
       sourceNote: 'Os números de Patel 2011 são de fraturas por estresse em todos os locais, não de trilheiros. A sensibilidade do raio X sobe para 30 a 70% depois de cerca de três semanas.',
       cites: [CITE.patelStressFracture, CITE.latt],
@@ -281,7 +281,7 @@ export const HIKERS_PT: Guide = {
     h2: 'Como transformar isso em um plano',
     text: 'O Walkito é um app de exercícios para calcanhar e pé com os alongamentos e as elevações de calcanhar desta página. Ele não planeja suas trilhas, então mantenha o seu próprio plano de percursos e encaixe as sessões em volta dele, com sessões mais leves depois de um dia puxado.',
     more: [
-      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Antes de cada sessão você dá uma nota para como estão seus pés, e o plano se ajusta. O Walkito não faz diagnóstico.',
+      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Antes de cada sessão você avalia como estão seus pés, e o plano se ajusta a isso. O Walkito não faz diagnóstico.',
     ],
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

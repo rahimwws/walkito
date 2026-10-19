@@ -24,7 +24,7 @@ export const WALKING_PF_PT: Guide = {
   lede:
     'Normalmente dá para continuar caminhando com [fascite plantar](/pt/fascite-plantar/), desde que a dor fique moderada durante a caminhada e passe até a manhã seguinte. A diretriz de 2023 para dor no calcanhar recomenda orientação sobre como ajustar a carga em pé e não manda parar de andar, mas dá a essa orientação um **E**, ou seja, ela se apoia em teoria, não em ensaios clínicos (Koc e colegas, 2023). Nenhum estudo dá um número seguro de passos, então o teste da manhã seguinte é um guia melhor do que uma meta de passos.',
   intro: [
-    'Esta página trata de quanto andar enquanto o calcanhar dói e de como voltar a andar mais aos poucos. Se a sua dúvida principal é por que o calcanhar dói depois de uma caminhada, veja [dor no calcanhar depois de andar](/pt/dor-no-calcanhar-depois-de-andar/). Se os seus pés doem de ficar parado no mesmo lugar, veja [dor nos pés de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+    'Esta página fala de quanto andar enquanto o calcanhar dói e de como voltar a andar mais aos poucos. Se a sua dúvida principal é por que o calcanhar dói depois de uma caminhada, veja [dor no calcanhar depois de andar](/pt/dor-no-calcanhar-depois-de-andar/). Se os seus pés doem de ficar parado no mesmo lugar, veja [dor nos pés de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
   ],
   takeaways: [
     'A diretriz de 2023 para dor no calcanhar dá grau **E** à orientação sobre como mudar a carga em pé no trabalho, no lazer e no dia a dia, além da orientação sobre calçados: ela se apoia em teoria, não em ensaios clínicos (Koc e colegas, 2023).',
@@ -42,7 +42,7 @@ export const WALKING_PF_PT: Guide = {
         '**Caminhar não é o inimigo, mas muito de uma vez pode fazer o calcanhar piorar.** A diretriz de 2023 para dor no calcanhar não manda parar de andar. O resumo dela inclui orientação sobre formas de mudar a carga em pé no trabalho, no lazer e no dia a dia, e sobre calçados. Ela dá a essa orientação grau **E**, o que quer dizer que a teoria e a ciência básica a apoiam, mas nenhum ensaio clínico a testou (Koc e colegas, 2023).',
         'A diretriz também cita a dor no calcanhar que começou depois de um aumento recente da atividade em pé como uma característica típica da fascite plantar. Então a pergunta quase nunca é se você deve andar. É quanto, e com que rapidez aumentar.',
         'Um ensaio dinamarquês comparou uma orientação simples com tratamentos a mais. 180\u00A0adultos com fasciopatia plantar (outro nome para fascite plantar) foram divididos em três grupos. Um recebeu só orientação e uma calcanheira; os outros dois fizeram também treino de elevação de calcanhar, e um deles recebeu ainda uma infiltração de corticoide. A orientação era reduzir as atividades que causam as crises e depois voltar aos poucos ao nível de atividade de antes, guiando-se pelos sintomas. Os três grupos melhoraram de forma clinicamente relevante em cerca de três meses (Riel e colegas, 2023).',
-        'Talvez não seja a caminhada em si que está ligada à dor no calcanhar. Em um estudo de 2023, 50\u00A0pessoas com dor no calcanhar e 25\u00A0pessoas parecidas sem dor relataram atividade física semelhante. A diferença estava no tempo em pé: o grupo com dor no calcanhar ficava 3,4\u00A0horas a mais por dia em pé (Landorf e colegas, 2023). Esse estudo mostra uma associação, não uma causa. Se o seu dia é quase todo em pé, [dor nos pés de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) trata desse lado.',
+        'Talvez não seja a caminhada em si que está ligada à dor no calcanhar. Em um estudo de 2023, 50\u00A0pessoas com dor no calcanhar e 25\u00A0pessoas parecidas sem dor relataram atividade física semelhante. A diferença estava no tempo em pé: o grupo com dor no calcanhar ficava 3,4\u00A0horas a mais por dia em pé (Landorf e colegas, 2023). Esse estudo mostra uma associação, não uma causa. Se o seu dia é quase todo em pé, [dor nos pés de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala mais sobre isso.',
       ],
       cites: [CITE.guideline, CITE.rielHeelRaiseAdd, CITE.rielFixHeelProtocol, CITE.landorfFootwear],
     },
@@ -133,7 +133,7 @@ export const WALKING_PF_PT: Guide = {
       keyFact: 'A diretriz de 2023 dá grau A ao alongamento da fáscia plantar e da panturrilha e grau B ao treino de força (Koc e colegas, 2023).',
       paragraphs: [
         'Os exercícios podem ajudar o calcanhar a aguentar mais carga, para que com o tempo a mesma caminhada passe mais fácil na regra de dor, embora nenhum estudo tenha testado isso para caminhada. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha um **A**, o grau máximo, e ao treino de força um **B**.',
-        'Uma panturrilha tensa faz parte do quadro. Em um estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, a menor dobra do tornozelo foi o fator de risco mais forte, e ficar em pé a maior parte do dia de trabalho também aumentava as chances (Riddle e colegas, 2003). Veja [panturrilha tensa](/pt/panturrilha-tensa/).',
+        'Uma panturrilha tensa faz parte do quadro. Em um estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, dobrar pouco o tornozelo foi o fator de risco mais forte, e ficar em pé a maior parte do dia de trabalho também aumentava as chances (Riddle e colegas, 2003). Veja [panturrilha tensa](/pt/panturrilha-tensa/).',
         'Em um ensaio com 48\u00A0pessoas, a elevação de calcanhar com carga aliviou a dor e melhorou a função no dia a dia mais rápido do que o alongamento, e em doze meses os dois grupos estavam mais ou menos empatados (Rathleff e colegas, 2015). Os cartões abaixo são as doses iniciais do Walkito, não uma prescrição. O conjunto completo está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       exercises: [
@@ -228,7 +228,7 @@ export const WALKING_PF_PT: Guide = {
     {
       q: 'Caminhar faz bem para a fascite plantar?',
       cites: [CITE.landorfFootwear, CITE.morrisseyBestPractice],
-      a: 'Caminhar em quantidade moderada costuma ir bem, embora nenhum estudo tenha testado qual a melhor quantidade. Em um estudo, pessoas com dor no calcanhar eram tão ativas quanto pessoas sem dor, mas ficavam 3,4\u00A0horas a mais por dia em pé. Um guia de boas práticas recomenda aprender a monitorar a resposta da dor à atividade.',
+      a: 'Caminhar em quantidade moderada normalmente não é problema, embora nenhum estudo tenha testado qual a melhor quantidade. Em um estudo, pessoas com dor no calcanhar eram tão ativas quanto pessoas sem dor, mas ficavam 3,4\u00A0horas a mais por dia em pé. Um guia de boas práticas recomenda aprender a monitorar a resposta da dor à atividade.',
     },
     {
       q: 'Quantos passos por dia são aceitáveis com fascite plantar?',

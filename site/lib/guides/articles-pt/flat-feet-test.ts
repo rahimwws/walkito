@@ -22,7 +22,7 @@ export const FLAT_FEET_TEST_PT: Guide = {
   lede:
     'Dá para verificar em casa se você tem pé chato em uns cinco minutos: olhe a pegada do pé molhado, compare o arco sentado e em pé, fique na ponta dos pés ou levante o dedão para ver se o arco volta, e tente uma elevação de calcanhar em um pé só. A pegada é a menos precisa das quatro: em 95\u00A0idosos comparados com radiografias, a pontuação da pegada correspondeu só moderadamente à altura real do arco (Menz e Munteanu, 2005). As verificações que mais importam são se o arco volta e se um lado se comporta diferente do outro.',
   intro: [
-    'Nenhuma dessas verificações é um diagnóstico, e um arco baixo sozinho normalmente não é um problema. Esta página mostra como fazer cada verificação, o quanto a pesquisa diz que dá para confiar nela, o que um profissional de saúde mede no lugar e os resultados que indicam que é hora de mostrar o pé para alguém. Para entender o que é pé chato e quando ele importa, comece por [pé chato](/pt/pe-chato/).',
+    'Nenhuma dessas verificações é um diagnóstico, e um arco baixo sozinho normalmente não é um problema. Esta página mostra como fazer cada verificação, o quanto a pesquisa diz que dá para confiar nela, o que um profissional de saúde mede em vez disso e os resultados que indicam que é hora de mostrar o pé para alguém. Para entender o que é pé chato e quando ele importa, comece por [pé chato](/pt/pe-chato/).',
   ],
   takeaways: [
     'A pegada molhada é uma indicação aproximada. Em 95\u00A0pessoas de 62 a 94\u00A0anos, o índice do arco da pegada correspondeu só moderadamente à altura do arco na radiografia, enquanto uma medida com régua do osso do arco correspondeu bem (Menz e Munteanu, 2005).',
@@ -94,7 +94,7 @@ export const FLAT_FEET_TEST_PT: Guide = {
         },
         '**Se o arco volta, o pé chato é flexível.** Esse é o tipo comum, e o que foi estudado nos ensaios com exercícios: em 52\u00A0pessoas com pé chato flexível, seis semanas de pé curto, exercícios de tornozelo e quadril e alongamentos melhoraram duas medidas do formato do arco mais do que em um grupo de controle (Brijwasi e Borkar, 2023).',
         '**Se o arco continua achatado e o pé parece duro**, o pé chato pode ser rígido. Uma das causas é a coalizão tarsal, uma ponte de osso, cartilagem ou tecido fibroso entre dois ossos do pé, encontrada com frequência em adultos jovens com pé chato rígido e dolorido (Mehdi e colegas, 2024). Um pé chato rígido precisa que um profissional de saúde encontre a causa antes de você começar qualquer programa de exercícios.',
-        'Sendo honesto sobre o que essas verificações são: não encontramos nenhum estudo que tenha medido o quanto a verificação na ponta dos pés ou o teste de Jack são confiáveis em adultos quando feitos em casa. Elas são simples e o resultado costuma ser claro, mas encare um resultado rígido como um motivo para fazer uma avaliação, não como um diagnóstico.',
+        'Vale ser honesto sobre o alcance dessas verificações: não encontramos nenhum estudo que tenha medido o quanto a verificação na ponta dos pés ou o teste de Jack são confiáveis em adultos quando feitos em casa. Elas são simples e o resultado costuma ser claro, mas encare um resultado rígido como um motivo para fazer uma avaliação, não como um diagnóstico.',
       ],
       cites: [CITE.jack1953, CITE.brijwasi, CITE.mehdiCoalition],
     },
@@ -102,7 +102,7 @@ export const FLAT_FEET_TEST_PT: Guide = {
       h2: 'O que a elevação de calcanhar em um pé mostra sobre o pé chato?',
       keyFact: 'Em uma pesquisa com 582\u00A0mulheres com mais de 40\u00A0anos na Inglaterra, 3,3% tinham disfunção do tendão tibial posterior em fase inicial, e nenhuma tinha recebido o diagnóstico antes (Kohls-Gatzoulis e colegas, 2009).',
       paragraphs: [
-        'O tibial posterior é o músculo cujo tendão passa atrás do osso de dentro do tornozelo e sustenta o arco. Quando o tendão enfraquece, o arco daquele lado pode ir baixando aos poucos. Isso é a disfunção do tendão tibial posterior, um motivo comum para o arco de um adulto achatar com o tempo. O quadro típico é dor no lado de dentro do tornozelo, um pé que vai achatando e o calcanhar virando para fora (Deu e colegas, 2022).',
+        'O tibial posterior é o músculo cujo tendão passa atrás do osso de dentro do tornozelo e sustenta o arco. Quando o tendão enfraquece, o arco daquele lado pode ir baixando aos poucos. Isso se chama disfunção do tendão tibial posterior, um motivo comum para o arco de um adulto achatar com o tempo. O quadro típico é dor no lado de dentro do tornozelo, um pé que vai achatando e o calcanhar virando para fora (Deu e colegas, 2022).',
         '**Como fazer:** fique em um pé só ao lado de uma parede, com as pontas dos dedos na parede só para o equilíbrio. Suba o mais alto que conseguir na parte da frente do pé e desça. Faça algumas vezes e troque de pé. Observe três coisas:',
         {
           list: [
@@ -178,7 +178,7 @@ export const FLAT_FEET_TEST_PT: Guide = {
         },
         {
           name: 'Elevação de calcanhar com os dois pés',
-          evidence: { level: 'moderate', why: 'A diretriz de 2023 dá ao treino de força o grau B. Este degrau não foi testado sozinho.' },
+          evidence: { level: 'moderate', why: 'A diretriz de 2023 dá ao treino de força o grau B. Este passo não foi testado sozinho.' },
           dose: '3\u00A0séries de 10, os dois pés',
           often: 'Dias de força',
           feel: 'As panturrilhas trabalhando juntas',
@@ -270,7 +270,7 @@ export const FLAT_FEET_TEST_PT: Guide = {
     h2: 'Como transformar isso em um plano',
     text: 'O Walkito é um app de exercícios para dor no calcanhar e no pé, para iPhone e Android. Ele monta um plano a partir das suas respostas, incluindo onde dói e de que lado, e repete um teste simples a cada 14\u00A0dias: elevação de calcanhar, sustentação do arco, equilíbrio em uma perna e comparação entre esquerda e direita.',
     more: [
-      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Antes de cada sessão você dá uma nota para como os seus pés estão, e o plano se ajusta. O Walkito não faz diagnóstico, então faça avaliar antes um pé chato rígido, de um lado só ou dolorido.',
+      'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. Antes de cada sessão você dá uma nota para como os seus pés estão, e o plano se ajusta. O Walkito não faz diagnóstico, então, se o seu pé chato for rígido, de um lado só ou dolorido, peça antes a avaliação de um profissional de saúde.',
     ],
     cta: 'Comece com uma sessão de 3\u00A0minutos.',
   },

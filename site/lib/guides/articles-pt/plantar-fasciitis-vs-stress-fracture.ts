@@ -103,7 +103,7 @@ export const PF_VS_STRESS_FRACTURE_PT: Guide = {
         '**Uma fratura por estresse no início muitas vezes é pequena demais para aparecer no raio-X.** O osso reage primeiro com um inchaço dentro dele, que o raio-X não enxerga. Os sinais de reparo aparecem depois. Uma revisão estimou a sensibilidade do raio-X na primeira consulta em cerca de 10%, subindo para 30 a 70% depois de três semanas (Patel e colegas, 2011).',
         'No calcanhar especificamente, um estudo finlandês avaliou recrutas militares com dor no calcanhar ou no tornozelo ligada ao exercício que fizeram ressonância magnética. De 30\u00A0recrutas com lesões por estresse no calcâneo, só 15% tinham uma lesão visível no raio-X simples. Em 22 dos 34 calcanhares lesionados, ossos vizinhos do pé também estavam afetados (Sormaala e colegas, 2006).',
         'Uma revisão sistemática de 2016 sobre fraturas por estresse nos membros inferiores encontrou uma sensibilidade do raio-X de 12% a 56%, contra 68% a 99% da ressonância magnética. Os autores apontaram a ressonância como o exame mais sensível e específico e alertaram que o raio-X tende a dar falsos negativos no início (Wright e colegas, 2016).',
-        'Por isso, quando suspeita de fratura, o profissional pode repetir o raio-X depois de duas a três semanas ou ir direto para a ressonância magnética se uma resposta rápida for importante (Patel e colegas, 2011). Para a fascite plantar, a diretriz de 2023 diz que exames de imagem «geralmente não são indicados para pacientes que preenchem os critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem» (Koc e colegas, 2023). A [página sobre esporão](/pt/fascite-plantar-ou-esporao/) explica por que um esporão no raio-X também não resolve a questão.',
+        'Por isso, quando suspeita de fratura, o profissional pode repetir o raio-X depois de duas a três semanas ou ir direto para a ressonância magnética se uma resposta rápida for importante (Patel e colegas, 2011). Para a fascite plantar, a diretriz de 2023 diz que exames de imagem «geralmente não são indicados para pacientes que preenchem os critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem» (Koc e colegas, 2023). A [página sobre esporão](/pt/fascite-plantar-ou-esporao/) explica por que um esporão no raio-X também não tira a dúvida.',
       ],
       sourceNote: 'Wright 2016 reuniu fraturas por estresse dos membros inferiores, não só do calcanhar. As faixas são a menor e a maior sensibilidade relatadas entre os estudos incluídos, não estimativas combinadas.',
       cites: [CITE.sormaalaCalcaneus, CITE.patelStressFracture, CITE.wrightImaging, CITE.guideline],
@@ -112,7 +112,7 @@ export const PF_VS_STRESS_FRACTURE_PT: Guide = {
       h2: 'O que fazer enquanto você espera a resposta?',
       keyFact: 'Mudar a atividade, com pouca ou nenhuma carga no pé por até seis semanas se a dor for forte, costuma dar certo nas fraturas por estresse do calcâneo (Tu, 2018).',
       paragraphs: [
-        '**Se a sua dor se encaixa na coluna da fratura por estresse, tire a carga do calcanhar e marque uma consulta.** Não espere para ver se mais algumas corridas resolvem. Começar cedo faz diferença: uma revisão observa que a demora já foi associada a uma volta mais longa à atividade (Patel e colegas, 2011).',
+        '**Se a sua dor se encaixa na coluna da fratura por estresse, tire a carga do calcanhar e marque uma consulta.** Não continue correndo para ver no que dá. Começar cedo faz diferença: uma revisão observa que a demora já foi associada a uma volta mais longa à atividade (Patel e colegas, 2011).',
         {
           list: [
             '**Reduza a carga ao que não dói.** Isso normalmente quer dizer parar por enquanto com corrida, saltos e caminhadas longas. Algumas pessoas precisam de muletas ou de uma bota imobilizadora por um tempo (Patel e colegas, 2011; Tu, 2018).',
@@ -223,7 +223,7 @@ export const PF_VS_STRESS_FRACTURE_PT: Guide = {
     {
       q: 'Dá para andar com uma fratura por estresse no calcanhar?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
-      a: 'Talvez você consiga, mas normalmente não deveria continuar pondo carga. O tratamento é reduzir a atividade ao que não dói e, com dor forte, pôr pouco ou nenhum peso no pé por até seis semanas, às vezes com muletas ou uma bota. Um profissional de saúde deve orientar quanto você pode andar com segurança.',
+      a: 'Talvez você consiga, mas normalmente não deveria continuar pondo carga. O cuidado consiste em reduzir a atividade ao que não dói e, com dor forte, pôr pouco ou nenhum peso no pé por até seis semanas, às vezes com muletas ou uma bota. Um profissional de saúde deve orientar quanto você pode andar com segurança.',
     },
     {
       q: 'Quanto tempo leva para uma fratura por estresse do calcâneo melhorar?',

@@ -31,7 +31,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
     'Em um ensaio de 2020 com 118\u00A0corredores amadores de longa distância, o grupo sem treino dos músculos do pé teve 2,42\u00A0vezes mais chance de uma lesão de corrida em 12\u00A0meses. O efeito apareceu depois de cerca de quatro a oito meses de treino (Taddei e colegas, 2020).',
     'Em um ensaio de 2019 com 57\u00A0corredores, cerca de dois meses de exercícios para os pés feitos pelo menos cinco vezes por semana deixaram maiores e mais fortes todos os músculos do pé que foram medidos (Ridge e colegas, 2019).',
     'Adultos saudáveis fazem uma mediana de cerca de 23 a 24 elevações de calcanhar em uma perna para cada lado, e 25 já foi proposto como referência de normal (Hebert-Losier e colegas, 2017; Lunsford e Perry, 1995).',
-    'Um programa de força feito por conta própria para quadril, coxas e core, em 720\u00A0pessoas correndo a primeira maratona, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a prova: 7,1% contra 7,3% (Toresdahl e colegas, 2020). Ali, o trabalho de força sozinho não preveniu lesões.',
+    'Um programa de força feito por conta própria para quadril, coxas e core, em 720\u00A0pessoas correndo a primeira maratona, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a prova: 7,1% contra 7,3% (Toresdahl e colegas, 2020). Nesse estudo, o trabalho de força sozinho não preveniu lesões.',
     'Nos estudos com corredores de longa distância, entre 19,4% e 79,3% tiveram uma lesão na perna, e uma lesão anterior foi um dos fatores de risco mais claros (van Gent e colegas, 2007).',
   ],
   sections: [
@@ -50,7 +50,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
     {
       h2: 'O que deve ter na rotina para os pés de um corredor?',
       paragraphs: [
-        'Quatro partes, cada uma com um ou dois exercícios. As doses abaixo são as doses iniciais do Walkito. Faça descalço, e pare naquele dia se a dor passar de 6 em 10.',
+        'Quatro partes, cada uma com um ou dois exercícios. As doses abaixo são as doses iniciais do Walkito. Faça descalço e, se a dor passar de 6/10, pare por hoje.',
         {
           list: [
             '**Músculos do pé:** o [pé curto](/pt/exercicios/pe-curto/), primeiro em pé e depois em uma perna. Ele treina os pequenos músculos que sustentam o arco.',
@@ -69,7 +69,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
           often: 'De 2 a 5\u00A0dias por semana',
           feel: 'Uma contração embaixo do arco, com os dedos relaxados',
           how: 'Fique em pé com o peso nos dois pés. Sem dobrar os dedos, puxe a parte da frente do pé em direção ao calcanhar para o arco subir um pouco. Segure e depois relaxe. Se os dedos agarrarem o chão, diminua o esforço.',
-          stop: 'Câimbra que não passa, ou dor acima de 6 em 10',
+          stop: 'Câimbra que não passa, ou dor acima de 6/10',
           media: 'short_foot_double',
           caption: 'Pé curto, em pé: o arco sobe, os dedos ficam apoiados',
           alt: 'Dois pés descalços no chão com os arcos subindo e os dedos apoiados',
@@ -81,7 +81,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
           often: 'Quando a versão em pé ficar fácil',
           feel: 'O arco trabalhando enquanto você se equilibra',
           how: 'Fique em um pé só, com uma mão perto da parede. Suba o arco como acima e mantenha enquanto se equilibra. Isso fica mais perto do que o pé faz quando você aterrissa.',
-          stop: 'Dor acima de 6 em 10, ou você perde o equilíbrio em todas as repetições',
+          stop: 'Dor acima de 6/10, ou você perde o equilíbrio em todas as repetições',
           media: 'short_foot_single',
           caption: 'Pé curto em uma perna: mantenha o arco enquanto se equilibra',
           alt: 'Uma figura em pé sobre um pé descalço com o arco elevado',
@@ -93,7 +93,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
           often: 'De 2 a 3\u00A0dias por semana, nunca dois dias seguidos',
           feel: 'Trabalho nas panturrilhas e na parte da frente da sola',
           how: 'Apoie-se na parede. Suba na ponta dos pés em cerca de 3\u00A0segundos, com o peso mais para o lado do dedão, e desça em 3\u00A0segundos. Quando ficar fácil, passe para uma perna. Mais na página de [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/).',
-          stop: 'Dor no calcanhar ou no Aquiles acima de 6 em 10, ou pior na manhã seguinte',
+          stop: 'Dor no calcanhar ou no Aquiles acima de 6/10, ou pior na manhã seguinte',
           media: 'heel_raise_double',
           caption: 'Elevação de calcanhar: suba devagar, desça devagar, peso sobre o dedão',
           alt: 'Uma figura apoiada na parede subindo na ponta dos dois pés',
@@ -105,7 +105,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
           often: 'De 2 a 3\u00A0dias por semana',
           feel: 'Trabalho na parte baixa da panturrilha',
           how: 'Sente-se com os pés apoiados e empurre para cima com a parte da frente dos pés. Com o joelho dobrado, o sóleo faz a maior parte do trabalho. Uma mochila ou pesos sobre os joelhos aumentam a carga quando ficar fácil.',
-          stop: 'Dor acima de 6 em 10',
+          stop: 'Dor acima de 6/10',
           media: 'heel_raise_seated',
           caption: 'Elevação de calcanhar sentada: joelho dobrado para trabalhar o sóleo',
           alt: 'Uma figura sentada levantando os dois calcanhares, com a parte baixa das panturrilhas destacada',
@@ -203,11 +203,11 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
     {
       h2: 'Dá para fazer exercícios para os pés com um incômodo?',
       paragraphs: [
-        'Normalmente sim, se o incômodo for leve e estável, e se você fizer ajustes. Use a mesma regra do resto do site: algum desconforto não tem problema, mas pare naquele dia se a dor passar de 6 em 10, e pegue mais leve se estiver pior na manhã seguinte.',
+        'Normalmente sim, se o incômodo for leve e estável, e se você fizer ajustes. Use a mesma regra do resto do site: algum desconforto não tem problema, mas pare por hoje se a dor passar de 6/10, e pegue mais leve se estiver pior na manhã seguinte.',
         'Alguns incômodos mudam o plano:',
         {
           list: [
-            '**Dor no calcanhar nos primeiros passos da manhã** sugere fascite plantar. Ali a elevação de calcanhar e os alongamentos contam mais: veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+            '**Dor no calcanhar nos primeiros passos da manhã** sugere fascite plantar. Nesse caso, a elevação de calcanhar e os alongamentos contam mais: veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
             '**Dor na parte de trás do calcanhar ou no tendão de Aquiles** pede um plano de panturrilha mais gradual, muitas vezes com descidas lentas do calcanhar: veja [tendinite de Aquiles: exercícios](/pt/tendinite-de-aquiles-exercicios/).',
             '**Dor ao longo da parte interna da canela** pode ser canelite: veja [canelite: exercícios](/pt/canelite-exercicios/).',
             '**Dor em um ponto específico de um osso** que aumenta a cada corrida é um sinal de alerta de fratura por estresse. Pare de correr e procure avaliação.',
@@ -258,7 +258,7 @@ export const RUNNERS_FOOT_EXERCISES_PT: Guide = {
     },
     {
       q: 'Posso continuar correndo enquanto faço os exercícios para os pés?',
-      a: 'Sim. A rotina foi pensada para andar junto com a sua corrida. Se você tem um incômodo, pare um exercício naquele dia se a dor passar de 6 em 10, e faça só corridas leves se a dor estiver pior na manhã seguinte. Dor que aumenta a cada corrida, ou que fica em um ponto específico de um osso, precisa de avaliação de um profissional de saúde.',
+      a: 'Sim. A rotina foi pensada para andar junto com a sua corrida. Se você tem um incômodo, pare o exercício por hoje se a dor passar de 6/10, e faça só corridas leves se a dor estiver pior na manhã seguinte. Dor que aumenta a cada corrida, ou que fica em um ponto específico de um osso, precisa de avaliação de um profissional de saúde.',
     },
     {
       q: 'Correr descalço ou com tênis minimalista fortalece os pés?',

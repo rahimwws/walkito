@@ -22,7 +22,7 @@ export const HAIRDRESSERS_PT: Guide = {
   updated: '2026-10-18',
   title: 'Dor nos pés de cabeleireiros: calçados, tapetes e exercícios',
   description:
-    'Por que os pés do cabeleireiro doem de ficar parado em pé, o que os estudos acharam, calçados, tapetes e banquetas que ajudam, e exercícios entre clientes.',
+    'Por que os pés do cabeleireiro doem de ficar parado em pé, o que dizem os estudos, calçados, tapetes e banquetas que ajudam, e exercícios entre clientes.',
   h1: 'Dor nos pés de cabeleireiros: o que ajuda quando você fica parado em pé o dia todo',
   lede:
     'A dor nos pés de cabeleireiros vem principalmente das horas paradas em pé ao lado da cadeira, não de andar, então as opções com alguma evidência miram justamente o ficar parado em pé: um piso ou um calçado com amortecimento, meias de compressão leve e um minuto de exercício para a panturrilha entre um cliente e outro. Em um estudo com 384\u00A0cabeleireiros e 384\u00A0pessoas de outras profissões, 49,5% dos cabeleireiros relataram dor no joelho ou no pé, contra 38,3% do grupo de comparação (Mishra e Sarkar, 2021).',
@@ -103,7 +103,7 @@ export const HAIRDRESSERS_PT: Guide = {
       cites: [CITE.speedCushioning, CITE.wiggermannMats, CITE.kimMats],
     },
     {
-      h2: 'Cabeleireiro deve usar banqueta ou um assento semissentado?',
+      h2: 'Cabeleireiro deve usar banqueta ou cadeira semissentada?',
       paragraphs: [
         '**Nenhum estudo testou se uma banqueta reduz a dor nos pés de cabeleireiros.** Sentar tira carga dos pés, e em estudos com trabalho de escritório alternar entre sentado e em pé reduziu o desconforto lombar sem perda de produtividade (Karakolis e Callaghan, 2014). É a melhor evidência indireta a favor de passar parte do tempo sentado.',
         'A banqueta tem um porém. Um estudo alemão sobre postura, resumido na revisão de escopo de 2019, viu que cabeleireiros que usavam banqueta com rodinhas (o mocho) dobravam mais a lombar e erguiam as mãos acima da altura dos ombros com mais frequência. Uma banqueta baixa demais pode trocar a dor nos pés por sobrecarga nas costas e nos ombros.',
@@ -187,7 +187,7 @@ export const HAIRDRESSERS_PT: Guide = {
         ],
       },
       after: [
-        'A elevação de calcanhar com os dois pés e a elevação de calcanhar sentada são o mesmo trabalho de força, então escolha uma por dia. Fazer força em dias alternados dá tempo para a panturrilha se recuperar.',
+        'A elevação de calcanhar com os dois pés e a elevação de calcanhar sentada são o mesmo trabalho de força, então escolha uma por dia. Fazer os exercícios de força em dias alternados dá tempo para a panturrilha se recuperar.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -209,7 +209,7 @@ export const HAIRDRESSERS_PT: Guide = {
         'Uma dor geral e as pernas pesadas no fim de um dia de salão são comuns e costumam melhorar durante a noite. Alguns padrões apontam para algo mais específico:',
         {
           list: [
-            'Uma dor forte no calcanhar nos primeiros passos da manhã ou depois de ficar sentado aponta para [fascite plantar](/pt/fascite-plantar/). A rotina completa está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+            'Uma dor aguda no calcanhar nos primeiros passos da manhã ou depois de ficar sentado aponta para [fascite plantar](/pt/fascite-plantar/). A rotina completa está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
             'Queimação ou dor embaixo da parte da frente do pé combina com [metatarsalgia](/pt/metatarsalgia-dor-na-planta-do-pe/), comum com solado fino ou salto.',
             'Um arco que dói ou parece mais baixo no fim do dia combina com [dor no arco do pé](/pt/dor-no-arco-do-pe/).',
             'Veias inchadas, tortuosas ou saltadas nas pernas podem ser varizes. Em uma pesquisa com 182\u00A0cabeleireiros em Taiwan, 24,2% tinham varizes, e em quem tinha mais de 45\u00A0anos muitas horas em pé por mês eram um fator de risco (Chen e Guo, 2014).',
@@ -223,7 +223,7 @@ export const HAIRDRESSERS_PT: Guide = {
   faq: [
     {
       q: 'Por que os pés de cabeleireiros doem tanto?',
-      a: 'Cabeleireiros ficam parados em pé no mesmo lugar por muito tempo, o que carrega o calcanhar e o arco sem o bombeamento da panturrilha que a caminhada dá. Em um estudo com 384\u00A0cabeleireiros, 49,5% relataram dor no joelho ou no pé em 12\u00A0meses, contra 38,3% das pessoas de outras profissões. Inclinar o corpo para a frente, piso duro e calçado sem apoio aumentam a carga.',
+      a: 'Cabeleireiros ficam parados em pé no mesmo lugar por muito tempo, o que sobrecarrega o calcanhar e o arco sem o bombeamento da panturrilha que a caminhada dá. Em um estudo com 384\u00A0cabeleireiros, 49,5% relataram dor no joelho ou no pé em 12\u00A0meses, contra 38,3% das pessoas de outras profissões. Inclinar o corpo para a frente, piso duro e calçado sem apoio aumentam a carga.',
       cites: [CITE.mishraHairdressers, CITE.waters],
     },
     {

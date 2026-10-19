@@ -69,10 +69,10 @@ export const PF_NOT_BETTER_ES: Guide = {
     },
     {
       h2: '¿Solo estás estirando?',
-      keyFact: 'En un ensayo con 48\u00A0personas, el grupo de elevaciones de talón obtuvo 29\u00A0puntos mejor en el Foot Function Index que el grupo de estiramientos a los tres meses (Rathleff y colegas, 2015).',
+      keyFact: 'En un ensayo con 48\u00A0personas, el grupo de elevaciones de talón obtuvo una puntuación 29\u00A0puntos mejor en el Foot Function Index que el grupo de estiramientos a los tres meses (Rathleff y colegas, 2015).',
       paragraphs: [
-        '**Vale la pena seguir estirando, pero solo con eso puede no bastar.** La guía de 2023 para el dolor de talón califica el estiramiento de la fascia plantar y de la pantorrilla con **A**, su grado más alto. También califica el trabajo de fuerza para el pie y el tobillo con **B** (Koc y colegas, 2023). Muchos planes en casa solo incluyen lo primero.',
-        'En un ensayo con 48\u00A0personas, un grupo hizo elevaciones de talón lentas y pesadas con una toalla bajo los dedos y el otro estiró la fascia plantar. A los tres meses, el grupo de elevaciones de talón obtuvo 29\u00A0puntos mejor en el Foot Function Index. Al año, los dos grupos estaban más o menos igual (Rathleff y colegas, 2015). Es decir, hacer elevaciones de talón en lugar de estiramientos no cambió el punto al que llegaron las personas al año, pero las llevó ahí antes.',
+        '**Vale la pena seguir estirando, pero solo con eso puede no bastar.** La guía de 2023 para el dolor de talón califica el estiramiento de la fascia plantar y de la pantorrilla con **A**, su grado más alto. También califica el trabajo de fuerza para el pie y el tobillo con **B** (Koc y colegas, 2023). Muchos planes para hacer en casa solo incluyen lo primero.',
+        'En un ensayo con 48\u00A0personas, un grupo hizo elevaciones de talón lentas y pesadas con una toalla bajo los dedos y el otro estiró la fascia plantar. A los tres meses, el grupo de elevaciones de talón obtuvo una puntuación 29\u00A0puntos mejor en el Foot Function Index. Al año, los dos grupos estaban más o menos igual (Rathleff y colegas, 2015). Es decir, hacer elevaciones de talón en lugar de estiramientos no cambió el punto al que llegaron las personas al año, pero las llevó ahí antes.',
         'Cómo se ve: llevas un mes o más estirando con constancia, el estiramiento se siente más fácil, pero los primeros pasos del día siguen siendo punzantes. Qué cambiar: mantén los estiramientos y añade el trabajo de pantorrilla de la siguiente sección. [Elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) explica en detalle la rutina del ensayo.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -149,7 +149,7 @@ export const PF_NOT_BETTER_ES: Guide = {
           stop: 'Dolor de talón por encima de 6 de 10, o peor a la mañana siguiente',
           image: 'Ejercicio: elevación de talones con toalla',
           media: 'heel_raise_towel',
-          caption: 'Elevación de talones con toalla: tres segundos arriba, dos arriba quieto, tres abajo',
+          caption: 'Elevación de talones con toalla: tres segundos para subir, dos arriba, tres para bajar',
           alt: 'Una figura sube en puntas sobre un escalón con una toalla enrollada, con las pantorrillas resaltadas',
         },
       ],
@@ -176,9 +176,9 @@ export const PF_NOT_BETTER_ES: Guide = {
     },
     {
       h2: '¿Algo lo sigue provocando?',
-      keyFact: 'Un tobillo que se doblaba 0\u00A0grados o menos multiplicaba unas 23\u00A0veces la probabilidad de fascitis plantar frente a un tobillo que se doblaba más de 10\u00A0grados, en un estudio con 50\u00A0casos y 100\u00A0controles (Riddle y colegas, 2003).',
+      keyFact: 'Un tobillo que se doblaba 0\u00A0grados o menos multiplicaba por unas 23 las probabilidades de fascitis plantar frente a un tobillo que se doblaba más de 10\u00A0grados, en un estudio con 50\u00A0casos y 100\u00A0controles (Riddle y colegas, 2003).',
       paragraphs: [
-        '**La carga que pones sobre el pie el resto del día puede superar lo que logran los ejercicios.** En un estudio pareado con 50\u00A0personas con fascitis plantar y 100 sin ella, un tobillo rígido fue el factor de riesgo más fuerte: un tobillo que se doblaba 0\u00A0grados o menos multiplicaba la probabilidad por 23,3. Un índice de masa corporal por encima de 30 la multiplicaba por unas 5,6, y pasar la mayor parte de la jornada laboral de pie por unas 3,6 (Riddle y colegas, 2003).',
+        '**La carga que pones sobre el pie el resto del día puede superar lo que logran los ejercicios.** En un estudio pareado con 50\u00A0personas con fascitis plantar y 100 sin ella, un tobillo rígido fue el factor de riesgo más fuerte: un tobillo que se doblaba 0\u00A0grados o menos multiplicaba las probabilidades por 23,3. Un índice de masa corporal por encima de 30 las multiplicaba por unas 5,6, y pasar la mayor parte de la jornada laboral de pie por unas 3,6 (Riddle y colegas, 2003).',
         'La guía de 2023 menciona los mismos factores, más correr, y añade que las superficies duras con poca amortiguación hacen que estar de pie y caminar en el trabajo sea un riesgo mayor (Koc y colegas, 2023). Algunos los puedes cambiar y otros no:',
         {
           list: [
@@ -226,8 +226,8 @@ export const PF_NOT_BETTER_ES: Guide = {
           ],
         },
         'La guía recomienda **no** usar plantillas como lo único que haces para el alivio a corto plazo (**B**) y no añadir ultrasonido terapéutico a los estiramientos (**A**). La versión de 2023 no hace ninguna recomendación sobre las ondas de choque.',
-        '**Las infiltraciones de corticoide** alivian el dolor a corto plazo en algunas personas, pero la evidencia para añadirlas es débil. En un ensayo con 180\u00A0personas, todas recibieron consejos y una talonera; un grupo añadió elevaciones de talón y otro elevaciones de talón más una infiltración. Las diferencias entre grupos nunca llegaron al tamaño que los pacientes notarían, en ningún momento hasta el año (Riel y colegas, 2023). El mismo ensayo no encontró un beneficio extra claro por añadir las elevaciones de talón, lo que recuerda que ningún añadido funciona con seguridad.',
-        'Una revisión de 2020 dice que a las personas que siguen con dolor después de al menos seis meses de tratamiento no quirúrgico se les pueden ofrecer opciones mínimamente invasivas, como infiltraciones u ondas de choque, o en algunos casos cirugía (Latt y colegas, 2020). Son decisiones para tomar con un especialista. Un fisioterapeuta también puede revisar en persona tu técnica y tu carga, algo que conviene tener en cuenta al elegir entre una app o fisioterapia.',
+        '**Las infiltraciones de corticoide** alivian el dolor a corto plazo en algunas personas, pero la evidencia para añadirlas es débil. En un ensayo con 180\u00A0personas, todas recibieron consejos y una talonera; un grupo añadió elevaciones de talón y otro elevaciones de talón más una infiltración. Las diferencias entre grupos nunca llegaron al tamaño que los pacientes notarían, en ningún momento hasta el año (Riel y colegas, 2023). El mismo ensayo no encontró un beneficio extra claro por añadir las elevaciones de talón, lo que recuerda que ningún añadido por sí solo funciona siempre.',
+        'Una revisión de 2020 dice que a las personas que siguen con dolor después de al menos seis meses de tratamiento no quirúrgico se les pueden ofrecer opciones mínimamente invasivas, como infiltraciones u ondas de choque, o en algunos casos cirugía (Latt y colegas, 2020). Son decisiones para tomar con un especialista. Un fisioterapeuta también puede revisar en persona tu técnica y tu carga: consulta [app o fisioterapia](/es/app-vs-fisioterapia-fascitis-plantar/).',
       ],
       sourceNote:
         'Riel 2023: consejos + talonera (n = 62), más elevaciones de talón pesadas y lentas con dosis propia (n = 59), más una infiltración de triamcinolona guiada por ecografía (n = 59). Dolor en el Foot Health Status Questionnaire, diferencia mínima importante de 14,1\u00A0puntos. Grupo con infiltración frente a solo consejos: diferencia ajustada de 9,1\u00A0puntos a los tres meses (p = 0,023) y de 5,2\u00A0puntos a lo largo de 52\u00A0semanas (p = 0,045), por debajo de la diferencia mínima importante. Sin diferencia significativa entre ejercicio y ejercicio más infiltración, ni entre consejos y ejercicio, en ningún momento.',
@@ -268,7 +268,7 @@ export const PF_NOT_BETTER_ES: Guide = {
       a: 'Sí. En un estudio a largo plazo, las personas siguieron quedando sin síntomas mucho después del primer año, y el 77,5\u00A0% de quienes seguían con dolor había tenido en algún momento un periodo sin dolor. La fascia también se adelgazó con el tiempo, con o sin dolor. Lento no es lo mismo que estancado para siempre.',
     },
     {
-      q: '¿Debo dejar de hacer ejercicio si el dolor de talón tiene un brote?',
+      q: '¿Debo dejar de hacer ejercicio si tengo un brote de dolor de talón?',
       cites: [CITE.hansen],
       a: 'Normalmente no del todo. Vuelve un paso atrás, por ejemplo de elevaciones a una pierna a elevaciones con dos pies, y sigue. Las recaídas son comunes: el 31,9\u00A0% de las personas que quedaron sin síntomas en un estudio a largo plazo tuvo al menos una antes. Consulta a un profesional de la salud si tus mañanas siguen empeorando semana tras semana.',
     },

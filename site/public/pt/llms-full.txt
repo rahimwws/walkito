@@ -9581,7 +9581,7 @@ O tendão de Aquiles liga os músculos da panturrilha à parte de trás do osso 
 - **No meio do tendão:** dor e, muitas vezes, um tendão mais grosso e sensível de 2 a 6 centímetros acima do osso do calcanhar. Normalmente dá para pinçar o ponto dolorido entre o indicador e o polegar.
 - **Insercional:** dor bem onde o tendão se prende atrás do osso do calcanhar, muitas vezes pior quando o sapato aperta ali.
 
-Uma dor embaixo do calcanhar que dói quando você aperta os lados do calcanhar, que queima ou formiga, ou que vem com dormência aponta para outras causas, como um nervo, uma fratura por estresse ou o coxim gorduroso do calcanhar (Tu, 2018). A página [dor no calcanhar à noite](https://walkito.site/pt/dor-no-calcanhar-a-noite/) trata dessas causas.
+Uma dor embaixo do calcanhar que dói quando você aperta os lados do calcanhar, que queima ou formiga, ou que vem com dormência aponta para outras causas, como um nervo, uma fratura por estresse ou o coxim gorduroso do calcanhar (Tu, 2018). A página [dor no calcanhar à noite](https://walkito.site/pt/dor-no-calcanhar-a-noite/) fala dessas causas.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
@@ -9632,7 +9632,7 @@ Um pouco de dor é permitido. Em um ensaio com 38 pessoas, uma dor de até cerca
 
 Se a dor é bem no osso do calcanhar (insercional), faça todas as elevações e descidas do calcanhar no nível do chão, e vá com calma nos alongamentos de panturrilha. Deixar o calcanhar descer abaixo do degrau comprime o tendão contra o osso. Em um estudo piloto com 27 pessoas, as descidas no nível do chão deram bons resultados em 67% (Jonsson e colegas, 2008). Mais detalhes em [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
 
-- **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não desça de novo. Segurar lá em cima dá carga ao tendão sem o quique.
+- **Elevação de calcanhar sustentada (isométrica)** (3 vezes de 20 segundos, os dois pés): Suba na ponta dos dois pés e fique parado lá em cima. Não desça de novo. Segurar lá em cima põe carga no tendão sem quicar.
 - **Descida excêntrica do calcanhar (joelho esticado)** (3 séries de 10, cada perna): Fique na beira de um degrau. Suba com os dois pés, passe o peso para a perna dolorida e desça devagar, em três segundos. Use os dois pés para subir de novo. Se a dor for bem no osso do calcanhar, faça no chão plano e não deixe o calcanhar descer abaixo do degrau.
 
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
@@ -9645,7 +9645,7 @@ Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for
 
 O mesmo estudo descobriu que a fáscia plantar se liga à bainha em volta do Aquiles pelo revestimento do osso do calcanhar. Um estudo em cadáveres mostrou que puxar o Aquiles tensiona a fáscia plantar, e mais ainda quando os dedos estão dobrados para cima (Carlson e colegas, 2000). Uma panturrilha rígida ou sobrecarregada pode, portanto, tensionar as duas.
 
-Nenhum estudo contou com que frequência as pessoas têm as duas condições juntas, então não existe um número confiável. Nenhuma diretriz trata de quem tem as duas. Um caminho que respeita as duas diretrizes: trabalho de força para a panturrilha que sirva para o tendão, mais o alongamento da fáscia plantar, que trabalha o arco, não o Aquiles. Faça as descidas do calcanhar no nível do chão se a parte de trás do osso do calcanhar doer.
+Nenhum estudo contou com que frequência as pessoas têm as duas condições juntas, então não existe um número confiável. Nenhuma diretriz aborda quem tem as duas. Um caminho que respeita as duas diretrizes: trabalho de força para a panturrilha que sirva para o tendão, mais o alongamento da fáscia plantar, que trabalha o arco, não o Aquiles. Faça as descidas do calcanhar no nível do chão se a parte de trás do osso do calcanhar doer.
 
 Source: Stecco C, Corradin M, Macchi V, Morra A, Porzionato A, Biz C, De Caro R. Plantar fascia anatomy and its relationship with Achilles tendon and paratenon. Journal of Anatomy. 2013;223(6):665–676.
 Source: Carlson RE, Fleming LL, Hutton WC. The biomechanical relationship between the tendoachilles, plantar fascia and metatarsophalangeal joint dorsiflexion angle. Foot & Ankle International. 2000;21(1):18–25.
@@ -9667,7 +9667,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### Quanto tempo cada uma leva para melhorar?
 
-Na fascite plantar, cerca de 90% das pessoas melhoram com tratamento sem cirurgia, mas isso muitas vezes leva meses (Latt e colegas, 2020). A página [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) tem os detalhes.
+Na fascite plantar, cerca de 90% das pessoas melhoram com cuidados sem cirurgia, mas isso muitas vezes leva meses (Latt e colegas, 2020). A página [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) tem os detalhes.
 
 Na tendinopatia de Aquiles, os principais ensaios de carga duraram cerca de três meses e acompanharam as pessoas até doze meses. A diretriz de 2024 observa que a função pode começar a melhorar em até 2 semanas, mas uma recuperação mais completa leva mais tempo (Chimenti e colegas, 2024). A dor insercional foi mais difícil de ajudar com as descidas clássicas do calcanhar abaixo do degrau: só 32% tiveram bons resultados em um estudo anterior, e é por isso que se usam as descidas no nível do chão (Jonsson e colegas, 2008).
 
@@ -9698,7 +9698,7 @@ Comece pelo lugar da dor. A fascite plantar dói embaixo do calcanhar, para o la
 
 #### A fascite plantar pode causar dor no Aquiles?
 
-Elas estão ligadas, mas nenhum estudo mostra que uma causa a outra. Em 52 ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, 3,43 mm contra 2,09 mm. Um estudo em cadáveres mostrou que a tensão no Aquiles tensiona a fáscia plantar. Uma panturrilha rígida e sobrecarregada pode sobrecarregar as duas.
+Elas estão ligadas, mas nenhum estudo mostra que uma causa a outra. Em 52 ressonâncias magnéticas, quem tinha alterações no Aquiles tinha a fáscia plantar mais grossa, 3,43 mm contra 2,09 mm. Um estudo em cadáveres mostrou que a tensão no Aquiles tensiona a fáscia plantar. Uma panturrilha rígida e sobrecarregada pode forçar as duas.
 
 #### A tendinite de Aquiles é pior de manhã, como a fascite plantar?
 
@@ -9791,7 +9791,7 @@ No calcanhar especificamente, um estudo finlandês avaliou recrutas militares co
 
 Uma revisão sistemática de 2016 sobre fraturas por estresse nos membros inferiores encontrou uma sensibilidade do raio-X de 12% a 56%, contra 68% a 99% da ressonância magnética. Os autores apontaram a ressonância como o exame mais sensível e específico e alertaram que o raio-X tende a dar falsos negativos no início (Wright e colegas, 2016).
 
-Por isso, quando suspeita de fratura, o profissional pode repetir o raio-X depois de duas a três semanas ou ir direto para a ressonância magnética se uma resposta rápida for importante (Patel e colegas, 2011). Para a fascite plantar, a diretriz de 2023 diz que exames de imagem «geralmente não são indicados para pacientes que preenchem os critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem» (Koc e colegas, 2023). A [página sobre esporão](https://walkito.site/pt/fascite-plantar-ou-esporao/) explica por que um esporão no raio-X também não resolve a questão.
+Por isso, quando suspeita de fratura, o profissional pode repetir o raio-X depois de duas a três semanas ou ir direto para a ressonância magnética se uma resposta rápida for importante (Patel e colegas, 2011). Para a fascite plantar, a diretriz de 2023 diz que exames de imagem «geralmente não são indicados para pacientes que preenchem os critérios do exame clínico para fascite plantar, até que as intervenções conservadoras falhem» (Koc e colegas, 2023). A [página sobre esporão](https://walkito.site/pt/fascite-plantar-ou-esporao/) explica por que um esporão no raio-X também não tira a dúvida.
 
 Source: Sormaala MJ, Niva MH, Kiuru MJ, Mattila VM, Pihlajamäki HK. Stress injuries of the calcaneus detected with magnetic resonance imaging in military recruits. Journal of Bone and Joint Surgery (American). 2006;88(10):2237–2242.
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
@@ -9800,7 +9800,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### O que fazer enquanto você espera a resposta?
 
-**Se a sua dor se encaixa na coluna da fratura por estresse, tire a carga do calcanhar e marque uma consulta.** Não espere para ver se mais algumas corridas resolvem. Começar cedo faz diferença: uma revisão observa que a demora já foi associada a uma volta mais longa à atividade (Patel e colegas, 2011).
+**Se a sua dor se encaixa na coluna da fratura por estresse, tire a carga do calcanhar e marque uma consulta.** Não continue correndo para ver no que dá. Começar cedo faz diferença: uma revisão observa que a demora já foi associada a uma volta mais longa à atividade (Patel e colegas, 2011).
 
 - **Reduza a carga ao que não dói.** Isso normalmente quer dizer parar por enquanto com corrida, saltos e caminhadas longas. Algumas pessoas precisam de muletas ou de uma bota imobilizadora por um tempo (Patel e colegas, 2011; Tu, 2018).
 - **Mantenha o condicionamento sem carga no calcanhar,** por exemplo com natação ou bicicleta, se não doerem (Patel e colegas, 2011).
@@ -9878,7 +9878,7 @@ Dor quando o lado de dentro e o lado de fora do osso do calcanhar são apertados
 
 #### Dá para andar com uma fratura por estresse no calcanhar?
 
-Talvez você consiga, mas normalmente não deveria continuar pondo carga. O tratamento é reduzir a atividade ao que não dói e, com dor forte, pôr pouco ou nenhum peso no pé por até seis semanas, às vezes com muletas ou uma bota. Um profissional de saúde deve orientar quanto você pode andar com segurança.
+Talvez você consiga, mas normalmente não deveria continuar pondo carga. O cuidado consiste em reduzir a atividade ao que não dói e, com dor forte, pôr pouco ou nenhum peso no pé por até seis semanas, às vezes com muletas ou uma bota. Um profissional de saúde deve orientar quanto você pode andar com segurança.
 
 #### Quanto tempo leva para uma fratura por estresse do calcâneo melhorar?
 
@@ -9958,7 +9958,7 @@ Um pé chato flexível achata com o seu peso, mas recupera o arco quando a carga
 
 **Se o arco continua achatado e o pé parece duro**, o pé chato pode ser rígido. Uma das causas é a coalizão tarsal, uma ponte de osso, cartilagem ou tecido fibroso entre dois ossos do pé, encontrada com frequência em adultos jovens com pé chato rígido e dolorido (Mehdi e colegas, 2024). Um pé chato rígido precisa que um profissional de saúde encontre a causa antes de você começar qualquer programa de exercícios.
 
-Sendo honesto sobre o que essas verificações são: não encontramos nenhum estudo que tenha medido o quanto a verificação na ponta dos pés ou o teste de Jack são confiáveis em adultos quando feitos em casa. Elas são simples e o resultado costuma ser claro, mas encare um resultado rígido como um motivo para fazer uma avaliação, não como um diagnóstico.
+Vale ser honesto sobre o alcance dessas verificações: não encontramos nenhum estudo que tenha medido o quanto a verificação na ponta dos pés ou o teste de Jack são confiáveis em adultos quando feitos em casa. Elas são simples e o resultado costuma ser claro, mas encare um resultado rígido como um motivo para fazer uma avaliação, não como um diagnóstico.
 
 Source: Jack EA. Naviculo-cuneiform fusion in the treatment of flat foot. Journal of Bone and Joint Surgery. British Volume. 1953;35-B(1):75–82.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
@@ -9966,7 +9966,7 @@ Source: Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthopaedics
 
 ### O que a elevação de calcanhar em um pé mostra sobre o pé chato?
 
-O tibial posterior é o músculo cujo tendão passa atrás do osso de dentro do tornozelo e sustenta o arco. Quando o tendão enfraquece, o arco daquele lado pode ir baixando aos poucos. Isso é a disfunção do tendão tibial posterior, um motivo comum para o arco de um adulto achatar com o tempo. O quadro típico é dor no lado de dentro do tornozelo, um pé que vai achatando e o calcanhar virando para fora (Deu e colegas, 2022).
+O tibial posterior é o músculo cujo tendão passa atrás do osso de dentro do tornozelo e sustenta o arco. Quando o tendão enfraquece, o arco daquele lado pode ir baixando aos poucos. Isso se chama disfunção do tendão tibial posterior, um motivo comum para o arco de um adulto achatar com o tempo. O quadro típico é dor no lado de dentro do tornozelo, um pé que vai achatando e o calcanhar virando para fora (Deu e colegas, 2022).
 
 **Como fazer:** fique em um pé só ao lado de uma parede, com as pontas dos dedos na parede só para o equilíbrio. Suba o mais alto que conseguir na parte da frente do pé e desça. Faça algumas vezes e troque de pé. Observe três coisas:
 
@@ -10095,7 +10095,7 @@ A diretriz também cita a dor no calcanhar que começou depois de um aumento rec
 
 Um ensaio dinamarquês comparou uma orientação simples com tratamentos a mais. 180 adultos com fasciopatia plantar (outro nome para fascite plantar) foram divididos em três grupos. Um recebeu só orientação e uma calcanheira; os outros dois fizeram também treino de elevação de calcanhar, e um deles recebeu ainda uma infiltração de corticoide. A orientação era reduzir as atividades que causam as crises e depois voltar aos poucos ao nível de atividade de antes, guiando-se pelos sintomas. Os três grupos melhoraram de forma clinicamente relevante em cerca de três meses (Riel e colegas, 2023).
 
-Talvez não seja a caminhada em si que está ligada à dor no calcanhar. Em um estudo de 2023, 50 pessoas com dor no calcanhar e 25 pessoas parecidas sem dor relataram atividade física semelhante. A diferença estava no tempo em pé: o grupo com dor no calcanhar ficava 3,4 horas a mais por dia em pé (Landorf e colegas, 2023). Esse estudo mostra uma associação, não uma causa. Se o seu dia é quase todo em pé, [dor nos pés de ficar em pé o dia todo](https://walkito.site/pt/dor-nos-pes-ficar-em-pe/) trata desse lado.
+Talvez não seja a caminhada em si que está ligada à dor no calcanhar. Em um estudo de 2023, 50 pessoas com dor no calcanhar e 25 pessoas parecidas sem dor relataram atividade física semelhante. A diferença estava no tempo em pé: o grupo com dor no calcanhar ficava 3,4 horas a mais por dia em pé (Landorf e colegas, 2023). Esse estudo mostra uma associação, não uma causa. Se o seu dia é quase todo em pé, [dor nos pés de ficar em pé o dia todo](https://walkito.site/pt/dor-nos-pes-ficar-em-pe/) fala mais sobre isso.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Riel H, Vicenzino B, Olesen JL, et al. Does a corticosteroid injection plus exercise or exercise alone add to the effect of patient advice and a heel cup for patients with plantar fasciopathy? A randomised clinical trial. British Journal of Sports Medicine. 2023;57(18):1180–1186.
@@ -10178,7 +10178,7 @@ Source: MacGabhann S, Kearney D, Perrem N, Francis P. Barefoot running on grass 
 
 Os exercícios podem ajudar o calcanhar a aguentar mais carga, para que com o tempo a mesma caminhada passe mais fácil na regra de dor, embora nenhum estudo tenha testado isso para caminhada. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha um **A**, o grau máximo, e ao treino de força um **B**.
 
-Uma panturrilha tensa faz parte do quadro. Em um estudo de caso-controle com 50 pessoas com fascite plantar e 100 sem, a menor dobra do tornozelo foi o fator de risco mais forte, e ficar em pé a maior parte do dia de trabalho também aumentava as chances (Riddle e colegas, 2003). Veja [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/).
+Uma panturrilha tensa faz parte do quadro. Em um estudo de caso-controle com 50 pessoas com fascite plantar e 100 sem, dobrar pouco o tornozelo foi o fator de risco mais forte, e ficar em pé a maior parte do dia de trabalho também aumentava as chances (Riddle e colegas, 2003). Veja [panturrilha tensa](https://walkito.site/pt/panturrilha-tensa/).
 
 Em um ensaio com 48 pessoas, a elevação de calcanhar com carga aliviou a dor e melhorou a função no dia a dia mais rápido do que o alongamento, e em doze meses os dois grupos estavam mais ou menos empatados (Rathleff e colegas, 2015). Os cartões abaixo são as doses iniciais do Walkito, não uma prescrição. O conjunto completo está em [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
 
@@ -10214,7 +10214,7 @@ Normalmente sim, na quantidade que o seu calcanhar aguenta. A diretriz de 2023 p
 
 #### Caminhar faz bem para a fascite plantar?
 
-Caminhar em quantidade moderada costuma ir bem, embora nenhum estudo tenha testado qual a melhor quantidade. Em um estudo, pessoas com dor no calcanhar eram tão ativas quanto pessoas sem dor, mas ficavam 3,4 horas a mais por dia em pé. Um guia de boas práticas recomenda aprender a monitorar a resposta da dor à atividade.
+Caminhar em quantidade moderada normalmente não é problema, embora nenhum estudo tenha testado qual a melhor quantidade. Em um estudo, pessoas com dor no calcanhar eram tão ativas quanto pessoas sem dor, mas ficavam 3,4 horas a mais por dia em pé. Um guia de boas práticas recomenda aprender a monitorar a resposta da dor à atividade.
 
 #### Quantos passos por dia são aceitáveis com fascite plantar?
 
@@ -10253,7 +10253,7 @@ Uma boa rotina para os pés de quem corre treina quatro coisas: os pequenos mús
 - Em um ensaio de 2020 com 118 corredores amadores de longa distância, o grupo sem treino dos músculos do pé teve 2,42 vezes mais chance de uma lesão de corrida em 12 meses. O efeito apareceu depois de cerca de quatro a oito meses de treino (Taddei e colegas, 2020).
 - Em um ensaio de 2019 com 57 corredores, cerca de dois meses de exercícios para os pés feitos pelo menos cinco vezes por semana deixaram maiores e mais fortes todos os músculos do pé que foram medidos (Ridge e colegas, 2019).
 - Adultos saudáveis fazem uma mediana de cerca de 23 a 24 elevações de calcanhar em uma perna para cada lado, e 25 já foi proposto como referência de normal (Hebert-Losier e colegas, 2017; Lunsford e Perry, 1995).
-- Um programa de força feito por conta própria para quadril, coxas e core, em 720 pessoas correndo a primeira maratona, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a prova: 7,1% contra 7,3% (Toresdahl e colegas, 2020). Ali, o trabalho de força sozinho não preveniu lesões.
+- Um programa de força feito por conta própria para quadril, coxas e core, em 720 pessoas correndo a primeira maratona, não reduziu as lesões por sobrecarga que impediram os corredores de terminar a prova: 7,1% contra 7,3% (Toresdahl e colegas, 2020). Nesse estudo, o trabalho de força sozinho não preveniu lesões.
 - Nos estudos com corredores de longa distância, entre 19,4% e 79,3% tiveram uma lesão na perna, e uma lesão anterior foi um dos fatores de risco mais claros (van Gent e colegas, 2007).
 
 ### Exercícios para os pés ajudam corredores a evitar lesões?
@@ -10271,7 +10271,7 @@ Source: Taddei UT, Matias AB, Ribeiro FIA, Bus SA, Sacco ICN. Effects of a foot 
 
 ### O que deve ter na rotina para os pés de um corredor?
 
-Quatro partes, cada uma com um ou dois exercícios. As doses abaixo são as doses iniciais do Walkito. Faça descalço, e pare naquele dia se a dor passar de 6 em 10.
+Quatro partes, cada uma com um ou dois exercícios. As doses abaixo são as doses iniciais do Walkito. Faça descalço e, se a dor passar de 6/10, pare por hoje.
 
 - **Músculos do pé:** o [pé curto](https://walkito.site/pt/exercicios/pe-curto/), primeiro em pé e depois em uma perna. Ele treina os pequenos músculos que sustentam o arco.
 - **Panturrilha e sóleo:** elevação de calcanhar com o joelho esticado para a panturrilha, e com o joelho dobrado para o sóleo, o músculo mais profundo da panturrilha.
@@ -10328,11 +10328,11 @@ Source: Taddei UT, Matias AB, Duarte M, Sacco ICN. Foot core training to prevent
 
 ### Dá para fazer exercícios para os pés com um incômodo?
 
-Normalmente sim, se o incômodo for leve e estável, e se você fizer ajustes. Use a mesma regra do resto do site: algum desconforto não tem problema, mas pare naquele dia se a dor passar de 6 em 10, e pegue mais leve se estiver pior na manhã seguinte.
+Normalmente sim, se o incômodo for leve e estável, e se você fizer ajustes. Use a mesma regra do resto do site: algum desconforto não tem problema, mas pare por hoje se a dor passar de 6/10, e pegue mais leve se estiver pior na manhã seguinte.
 
 Alguns incômodos mudam o plano:
 
-- **Dor no calcanhar nos primeiros passos da manhã** sugere fascite plantar. Ali a elevação de calcanhar e os alongamentos contam mais: veja [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+- **Dor no calcanhar nos primeiros passos da manhã** sugere fascite plantar. Nesse caso, a elevação de calcanhar e os alongamentos contam mais: veja [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
 - **Dor na parte de trás do calcanhar ou no tendão de Aquiles** pede um plano de panturrilha mais gradual, muitas vezes com descidas lentas do calcanhar: veja [tendinite de Aquiles: exercícios](https://walkito.site/pt/tendinite-de-aquiles-exercicios/).
 - **Dor ao longo da parte interna da canela** pode ser canelite: veja [canelite: exercícios](https://walkito.site/pt/canelite-exercicios/).
 - **Dor em um ponto específico de um osso** que aumenta a cada corrida é um sinal de alerta de fratura por estresse. Pare de correr e procure avaliação.
@@ -10390,7 +10390,7 @@ Os músculos do pé ficaram maiores e mais fortes em cerca de dois meses nos ens
 
 #### Posso continuar correndo enquanto faço os exercícios para os pés?
 
-Sim. A rotina foi pensada para andar junto com a sua corrida. Se você tem um incômodo, pare um exercício naquele dia se a dor passar de 6 em 10, e faça só corridas leves se a dor estiver pior na manhã seguinte. Dor que aumenta a cada corrida, ou que fica em um ponto específico de um osso, precisa de avaliação de um profissional de saúde.
+Sim. A rotina foi pensada para andar junto com a sua corrida. Se você tem um incômodo, pare o exercício por hoje se a dor passar de 6/10, e faça só corridas leves se a dor estiver pior na manhã seguinte. Dor que aumenta a cada corrida, ou que fica em um ponto específico de um osso, precisa de avaliação de um profissional de saúde.
 
 #### Correr descalço ou com tênis minimalista fortalece os pés?
 
@@ -10410,7 +10410,7 @@ A dor nos pés de professores vem principalmente das horas em pé e andando pela
 
 ### O que um dia de aula faz com os seus pés?
 
-**Um dia de aula mistura ficar parado em pé com caminhadas curtas, quase sempre em piso duro.** Você fica em pé no quadro ou na frente da mesa, anda pelas fileiras enquanto os alunos fazem as atividades e depois fica em pé de novo cuidando do corredor ou do pátio. Ficar parado em pé carrega por muito tempo o calcanhar, a fáscia plantar (a faixa embaixo do pé que sustenta o arco) e a panturrilha, sem o efeito de bombeamento da caminhada.
+**Um dia de aula mistura ficar parado em pé com caminhadas curtas, quase sempre em piso duro.** Você fica em pé no quadro ou na frente da mesa, anda pelas fileiras enquanto os alunos fazem as atividades e depois fica em pé de novo cuidando do corredor ou do pátio. Ficar parado em pé põe carga no calcanhar, na fáscia plantar (a faixa embaixo do pé que sustenta o arco) e na panturrilha por muito tempo, sem o efeito de bombeamento da caminhada.
 
 Não encontramos nenhum estudo que tenha medido quantas horas um professor típico passa em pé, então esta página não dá um número. O que foi medido é ficar muito tempo em pé em geral. Uma revisão de 2015 sobre trabalho em pé associou isso a desconforto nas pernas e nos pés, cansaço e inchaço nas pernas, e colocou tapetes, calçados com bom suporte, meias de compressão e a opção de alternar entre sentado e em pé entre as medidas com alguma evidência (Waters e Dick, 2015).
 
@@ -10495,7 +10495,7 @@ Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standi
 
 Uma dor geral no fim do dia de aula que já passou na manhã seguinte é cansaço de ficar em pé. **A fascite plantar tem um padrão típico: dor aguda embaixo do calcanhar nos primeiros passos da manhã ou depois de ficar sentado, que melhora conforme você anda e volta depois de um dia longo em pé.** Na pesquisa saudita, 25,8% dos professores com dor nos pés disseram que ela aparecia de manhã cedo e depois do repouso (Alqahtani, 2020). Essa pesquisa não diagnosticou ninguém, então é um padrão, não uma contagem de casos de fascite plantar.
 
-Se isso parece com você, comece por [exercícios e alongamentos para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020). [Quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) traz os detalhes.
+Se isso parece com você, comece por [exercícios e alongamentos para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses (Latt e colegas, 2020). [Quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/) traz os detalhes.
 
 Outros padrões apontam para outras causas:
 
@@ -10504,7 +10504,7 @@ Outros padrões apontam para outras causas:
 - dor embaixo da parte da frente do pé: [metatarsalgia](https://walkito.site/pt/metatarsalgia-dor-na-planta-do-pe/)
 - dor atrás do calcanhar, no tendão: [exercícios para tendinite de Aquiles](https://walkito.site/pt/tendinite-de-aquiles-exercicios/)
 
-Não sabe qual é? Comece por onde e quando dói: é isso que separa um padrão do outro. **Se ainda tiver dúvida, procure um profissional de saúde antes de colocar carga no pé com exercícios.**
+Não sabe qual é? Comece por onde e quando dói: é isso que separa um padrão do outro. **Se ainda tiver dúvida, procure um profissional de saúde antes de pôr carga no pé com exercícios.**
 
 Source: Alqahtani TA. The prevalence of foot pain and its associated factors among Saudi school teachers in Abha sector, Saudi Arabia. Journal of Family Medicine and Primary Care. 2020;9(9):4641–4647.
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
@@ -10522,11 +10522,11 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 
 ### Como transformar isso em um plano
 
-Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de um objetivo. Se o seu calcanhar segue o padrão matinal da fascite plantar, o primeiro objetivo é dor de manhã em 1 de 10 ou menos por 14 dias seguidos.
+Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma versão mais difícil. O Walkito monta um plano uma semana de cada vez em torno de um objetivo. Se o seu calcanhar segue o padrão matinal da fascite plantar, o primeiro objetivo é dor de manhã em 1/10 ou menos por 14 dias seguidos.
 
 #### Por que os meus pés doem tanto depois de um dia inteiro dando aula?
 
-Dar aula mantém você em pé e andando em piso duro durante a maior parte do dia, o que carrega o calcanhar, o arco e a panturrilha com pouco descanso. Revisões sobre trabalho em pé associam ficar muito tempo em pé a desconforto e cansaço nas pernas e nos pés, e estudos de laboratório mostraram o desconforto aumentando quanto mais tempo as pessoas ficavam paradas em pé. Pausas para sentar, alongamentos de panturrilha e calçados com amortecimento ajudam.
+Dar aula mantém você em pé e andando em piso duro durante a maior parte do dia, o que põe carga no calcanhar, no arco e na panturrilha com pouco descanso. Revisões sobre trabalho em pé associam ficar muito tempo em pé a desconforto e cansaço nas pernas e nos pés, e estudos de laboratório mostraram o desconforto aumentando quanto mais tempo as pessoas ficavam paradas em pé. Pausas para sentar, alongamentos de panturrilha e calçados com amortecimento ajudam.
 
 #### Dor nos pés é comum em professores?
 
@@ -10560,7 +10560,7 @@ Não existe um limite testado para professores. Uma revisão de 2017 de estudos 
 
 Language: Portuguese, Brazil (Português) · https://walkito.site/pt/dor-nos-pes-comercio-e-deposito/ · published 2026-10-18 · updated 2026-10-18
 
-No depósito e na loja os pés doem porque horas em pé e andando em chão duro carregam o calcanhar, o arco e a panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de [fascite plantar](https://walkito.site/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3 minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).
+No depósito e na loja os pés doem porque horas em pé e andando em chão duro põem carga no calcanhar, no arco e na panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de [fascite plantar](https://walkito.site/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3 minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).
 
 - Passar a maior parte do dia de trabalho em pé aumentou em 3,6 vezes a chance de fascite plantar em um estudo de caso-controle com 50 casos e 100 controles. Uma flexibilidade do tornozelo muito reduzida, em geral por uma panturrilha tensa, aumentou essa chance em 23,3 vezes (Riddle e colegas, 2003).
 - A diretriz de 2023 para dor no calcanhar mantém uma recomendação de grau **B**: os profissionais de saúde devem avaliar a carga sobre os pés no trabalho, principalmente em superfícies que amortecem pouco, como fator de risco para dor no calcanhar (Koc e colegas, 2023).
@@ -10601,7 +10601,7 @@ Em um estudo no local de trabalho, trabalhadores de uma linha de montagem passar
 
 Em um teste de laboratório de 4 horas, três de quatro tapetes antifadiga comerciais reduziram o desconforto em comparação com um chão duro, mas nenhum tapete foi melhor que os outros (Wiggermann e Keyserling, 2013). Então nenhum tapete se mostrou melhor que os demais.
 
-A divisão prática: **um tapete só ajuda onde você fica parado**, como no caixa, na bancada de embalagem ou num posto de trabalho. Se você anda pelo salão ou separa pedidos, o amortecimento precisa ir com você, dentro do calçado. Para dor no calcanhar especificamente, a diretriz de 2023 dá às palmilhas sozinhas grau **B contra**, então não conte só com elas. A página [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/) compara as duas opções.
+Na prática, **um tapete só ajuda onde você fica parado**, como no caixa, na bancada de embalagem ou num posto de trabalho. Se você anda pelo salão ou separa pedidos, o amortecimento precisa ir com você, dentro do calçado. Para dor no calcanhar especificamente, a diretriz de 2023 dá às palmilhas sozinhas grau **B contra**, então não conte só com elas. A página [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/) compara as duas opções.
 
 Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on musculoskeletal discomfort and fatigue during prolonged standing at work: a systematic review. Applied Ergonomics. 2018;70:300–314.
 Source: King PM. A comparison of the effects of floor mats and shoe in-soles on standing fatigue. Applied Ergonomics. 2002;33(5):477–484.
@@ -10630,7 +10630,7 @@ Source: Mancuso G, Cavrini G, Berdondini RM, Mancuso M. Skin lesions and other f
 
 Os exercícios abaixo não precisam de equipamento nem de espaço no chão, só de uma parede, uma coluna da prateleira ou a borda de um balcão. Os três primeiros são feitos em pé, na sala de descanso ou num corredor do estoque. Os outros são para depois do turno, sentado.
 
-A diretriz dá grau **A** aos alongamentos da panturrilha e da fáscia plantar e grau **B** ao trabalho de força. Esses graus são para a fascite plantar, mas são os mesmos tecidos que um turno em chão duro sobrecarrega. Pare por aquele dia se algum exercício levar a dor a 6 de 10 ou mais.
+A diretriz dá grau **A** aos alongamentos da panturrilha e da fáscia plantar e grau **B** ao trabalho de força. Esses graus são para a fascite plantar, mas são os mesmos tecidos que um turno em chão duro sobrecarrega. Se algum exercício levar a sua dor a 6/10 ou mais, pare por hoje.
 
 - **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos numa parede, numa coluna da prateleira ou num balcão. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Dá para fazer de botina de segurança também.
 - **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
@@ -10667,7 +10667,7 @@ Source: Arceri A, Mazzotti A, Liosi SG, Zielli SO, Artioli E, Golinelli D, et al
 
 ### Pode ser fascite plantar ou outra coisa?
 
-Uma dor geral e os pés cansados depois de um turno longo costumam passar com uma noite de descanso. A fascite plantar tem um padrão mais claro: dor aguda perto da parte de dentro do calcanhar, pior nos primeiros passos da manhã ou depois de ficar sentado. Se isso parece com o seu caso, veja [dor no calcanhar ao acordar](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/) e [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020).
+Uma dor geral e os pés cansados depois de um turno longo costumam passar com uma noite de descanso. A fascite plantar tem um padrão mais claro: dor aguda perto da parte de dentro do calcanhar, pior nos primeiros passos da manhã ou depois de ficar sentado. Se isso parece com o seu caso, veja [dor no calcanhar ao acordar](https://walkito.site/pt/dor-no-calcanhar-ao-acordar/) e [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses (Latt e colegas, 2020).
 
 Outros padrões apontam para outras causas. Uma dor em queimação embaixo da parte da frente do pé aponta para [dor na planta do pé](https://walkito.site/pt/metatarsalgia-dor-na-planta-do-pe/). Uma dor ao longo do arco que piora durante o turno é explicada em [dor no arco do pé](https://walkito.site/pt/dor-no-arco-do-pe/). A dor em cima do pé pode vir de botinas amarradas apertado demais ou que pressionam; veja [dor no peito do pé](https://walkito.site/pt/dor-no-peito-do-pe/).
 
@@ -10689,7 +10689,7 @@ Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and p
 
 ### Como transformar isso em um plano
 
-Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta o plano a partir das suas respostas e o ajusta a como seus pés estão a cada dia, então uma manhã ruim depois de um turno longo significa uma sessão mais leve.
+Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta o plano a partir das suas respostas e o ajusta conforme os seus pés estão a cada dia, então uma manhã ruim depois de um turno longo significa uma sessão mais leve.
 
 #### Por que meus pés doem tanto trabalhando em depósito?
 
@@ -10721,7 +10721,7 @@ Pés cansados e doloridos depois de um turno longo em pé são comuns, e uma rev
 
 #### Dá para continuar trabalhando em pé com fascite plantar?
 
-Muita gente continua, com algumas mudanças. Alongamentos curtos nos intervalos, botinas com melhor ajuste e amortecimento onde você fica em pé diminuem a carga, e cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses. Se a dor estiver piorando mesmo assim, procure um profissional de saúde.
+Muita gente continua, com algumas mudanças. Alongamentos curtos nos intervalos, botinas com melhor ajuste e amortecimento onde você fica em pé diminuem a carga, e cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses. Se a dor estiver piorando mesmo assim, procure um profissional de saúde.
 
 ## Dor nos pés para cozinheiros e quem trabalha em cozinha: o que ajuda nos turnos longos
 
@@ -10803,7 +10803,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Os exercícios são os do [guia de fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/), com as mesmas doses iniciais. Os alongamentos só precisam de uma parede ou de uma cadeira, então cabem num intervalo, antes do serviço ou depois de tirar o sapato de trabalho. Deixe o trabalho de força para as folgas ou para depois do turno.
 
-Os graus da diretriz são para a fascite plantar e não foram testados em trabalhadores de cozinha, mas os tecidos são os mesmos que um turno na cozinha sobrecarrega o dia todo. Pare por aquele dia se algum exercício levar a dor a 6 de 10 ou mais.
+Os graus da diretriz são para a fascite plantar e não foram testados em trabalhadores de cozinha, mas os tecidos são os mesmos que um turno na cozinha sobrecarrega o dia todo. Se algum exercício levar a sua dor a 6/10 ou mais, pare por hoje.
 
 - **Alongamento de panturrilha** (2 vezes de 30 segundos, cada perna): Apoie as mãos numa parede ou numa bancada de inox. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. Faça num ponto seco do chão, não perto da pia.
 - **Alongamento do sóleo** (2 vezes de 30 segundos, cada perna): Fique na mesma posição, mantenha o calcanhar de trás no chão e dobre o joelho de trás até sentir o alongamento mais embaixo, perto do calcanhar. O sóleo, o músculo mais profundo da panturrilha, só solta com o joelho dobrado.
@@ -10825,7 +10825,7 @@ Um turno partido ou uma dobra deixam pouco espaço para uma rotina, então ligue
 
 Os próprios intervalos parecem importar. Em 1.909 trabalhadores de cozinha na Coreia, as mulheres que relataram intervalos insuficientes tinham uma chance 1,68 vez maior de problemas musculoesqueléticos (Park e colegas, 2021). A relação foi relatada para as mulheres, e uma pesquisa como essa não consegue mostrar causa e efeito. Mesmo assim, sentar por alguns minutos entre um pico de movimento e outro é algo que vale a pena defender.
 
-Na fascite plantar em geral, cerca de 90% das pessoas melhoram com tratamento não cirúrgico, embora isso possa levar meses; veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/). A diretriz de 2023 também sugere ajustar a carga sobre os pés no trabalho, uma recomendação com grau **E** porque se baseia em teoria, não em ensaios.
+Na fascite plantar em geral, cerca de 90% das pessoas melhoram sem cirurgia, embora isso possa levar meses; veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/). A diretriz de 2023 também sugere ajustar a carga sobre os pés no trabalho, uma recomendação com grau **E** porque se baseia em teoria, não em ensaios.
 
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -10883,9 +10883,9 @@ Troque o peso de perna, sente-se nos intervalos quando der e faça um alongament
 
 Language: Portuguese, Brazil (Português) · https://walkito.site/pt/peso-e-fascite-plantar/ · published 2026-10-18 · updated 2026-10-18
 
-Um peso corporal maior é um dos fatores de risco mais claros para a [fascite plantar](https://walkito.site/pt/fascite-plantar/) em quem não é atleta. Em uma revisão de 51 estudos, um índice de massa corporal (IMC) acima de 27 veio com chances de fascite plantar 3,7 vezes maiores (van Leeuwen e colegas, 2016). Se perder peso alivia a dor no calcanhar é menos claro: nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar, então os alongamentos e o trabalho de força que a diretriz de 2023 classifica com os graus mais altos são o ponto de partida, com qualquer peso.
+Um peso corporal maior é um dos fatores de risco mais claros para a [fascite plantar](https://walkito.site/pt/fascite-plantar/) em quem não é atleta. Em uma revisão de 51 estudos, um índice de massa corporal (IMC) acima de 27 esteve associado a chances de fascite plantar 3,7 vezes maiores (van Leeuwen e colegas, 2016). Se perder peso alivia a dor no calcanhar é menos claro: nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar, então os alongamentos e o trabalho de força que a diretriz de 2023 classifica com os graus mais altos são o ponto de partida, com qualquer peso.
 
-- Em um estudo caso-controle com 50 pessoas com fascite plantar e 100 sem, um IMC acima de 30 veio com chances de fascite plantar 5,6 vezes maiores, comparado com um IMC de 25 ou menos. Um tornozelo rígido foi o fator mais forte, com chances 23,3 vezes maiores (Riddle e colegas, 2003).
+- Em um estudo caso-controle com 50 pessoas com fascite plantar e 100 sem, um IMC acima de 30 esteve associado a chances de fascite plantar 5,6 vezes maiores, comparado com um IMC de 25 ou menos. Um tornozelo rígido foi o fator mais forte, com chances 23,3 vezes maiores (Riddle e colegas, 2003).
 - Uma revisão de 51 estudos mostrou que um IMC acima de 27 foi o único fator clínico, entre os que puderam ser combinados, claramente ligado à fascite plantar, com chances 3,7 vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016).
 - Nenhum ensaio randomizado testou a perda de peso para dor no calcanhar. Uma revisão de 2012 encontrou só dois estudos sobre perda de peso e dor no pé, ambos depois de cirurgia bariátrica, e classificou a evidência como limitada (Butterworth e colegas, 2012).
 - A diretriz de 2023 para dor no calcanhar dá grau **A** aos alongamentos da fáscia plantar e da panturrilha e grau **B** ao trabalho de força. A orientação para manter uma massa magra saudável recebe grau **E**, o que quer dizer que se apoia na teoria, não em ensaios (Koc e colegas, 2023).
@@ -10895,7 +10895,7 @@ Um peso corporal maior é um dos fatores de risco mais claros para a [fascite pl
 
 **Sim: em quem não é atleta, um IMC mais alto aparece ligado à fascite plantar estudo após estudo.** O IMC é o peso dividido pela altura ao quadrado. É uma medida aproximada, mas é a que esses estudos usaram.
 
-O estudo mais conhecido comparou 50 pessoas com fascite plantar em um calcanhar com 100 pessoas da mesma idade e do mesmo sexo sem o problema. Um IMC acima de 30 veio com chances de fascite plantar 5,6 vezes maiores, comparado com um IMC de 25 ou menos (Riddle e colegas, 2003).
+O estudo mais conhecido comparou 50 pessoas com fascite plantar em um calcanhar com 100 pessoas da mesma idade e do mesmo sexo sem o problema. Um IMC acima de 30 esteve associado a chances de fascite plantar 5,6 vezes maiores, comparado com um IMC de 25 ou menos (Riddle e colegas, 2003).
 
 Uma revisão de 2016 combinou 51 estudos. De todos os fatores clínicos que os autores conseguiram juntar, um IMC acima de 27 foi o único claramente ligado à fascite plantar, com chances 3,7 vezes maiores, e a ligação foi mais forte em quem não é atleta (van Leeuwen e colegas, 2016). Duas revisões anteriores chegaram à mesma conclusão, e nenhuma das duas encontrou ligação entre IMC e dor no calcanhar em atletas (Irving e colegas, 2006; Butterworth e colegas, 2012).
 
@@ -10948,7 +10948,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Quais exercícios combinam com um peso corporal maior?
 
-Os exercícios com os melhores graus na diretriz de 2023, os alongamentos (**A**) e o trabalho de força para a panturrilha (**B**), não dependem do seu peso (Koc e colegas, 2023). O que muda é como você começa. As versões sentadas e com apoio põem menos carga no calcanhar e pegam mais leve com os joelhos e o equilíbrio, por isso vêm primeiro aqui.
+Os exercícios com os melhores graus na diretriz de 2023, os alongamentos (**A**) e o trabalho de força para a panturrilha (**B**), não dependem do seu peso (Koc e colegas, 2023). O que muda é como você começa. As versões sentadas e com apoio põem menos carga no calcanhar e exigem menos dos joelhos e do equilíbrio, por isso vêm primeiro aqui.
 
 As doses iniciais são as mesmas do guia principal de [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/). Faça o primeiro alongamento da fáscia plantar sentado na beira da cama, antes de ficar em pé: em um ensaio com 82 pessoas, um alongamento da fáscia plantar feito antes de levantar aliviou a dor dos primeiros passos da manhã mais do que só o alongamento de panturrilha (DiGiovanni e colegas, 2003). Se algum exercício levar a dor no calcanhar a 6 de 10, pare por hoje.
 
@@ -10963,7 +10963,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Quais atividades pegam mais leve com o calcanhar?
+### Quais atividades poupam mais o calcanhar?
 
 **Atividades em que os pés não recebem todo o seu peso a cada passo.** A diretriz recomenda mudar a carga nos pés em vez de parar de se mexer (Koc e colegas, 2023). Nenhum estudo comparou atividades para pessoas com dor no calcanhar e peso maior, então estas são opções práticas, não testadas:
 
@@ -10991,7 +10991,7 @@ Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Change
 
 ### A fascite plantar passa se eu não perder peso?
 
-**Para a maioria das pessoas, sim: ela melhora com o tempo e com tratamento não cirúrgico.** Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, como alongamentos e palmilhas, muitas vezes em 3 a 6 meses (Latt e colegas, 2020).
+**Para a maioria das pessoas, sim: ela melhora com o tempo e com cuidados não cirúrgicos.** Cerca de 90% das pessoas com fascite plantar melhoram com cuidados não cirúrgicos, como alongamentos e palmilhas, muitas vezes em 3 a 6 meses (Latt e colegas, 2020).
 
 Em um acompanhamento longo de 174 pessoas, os pesquisadores testaram se IMC, idade, tabagismo, trabalho físico e outros fatores previam quem ainda teria dor no calcanhar anos depois. Só ser mulher e ter dor nos dois calcanhares previram. O IMC, não (Hansen e colegas, 2018).
 
@@ -11017,11 +11017,11 @@ O Walkito é um app de exercícios para o calcanhar e o pé. Ele não acompanha 
 
 #### Sobrepeso pode causar fascite plantar?
 
-Um peso maior está ligado à fascite plantar, mas nenhum estudo prova que ele seja a causa. Um IMC acima de 30 veio com chances 5,6 vezes maiores em um estudo, e uma revisão de 51 estudos encontrou chances 3,7 vezes maiores acima de um IMC de 27, com a ligação mais forte em quem não é atleta. Um tornozelo rígido foi um fator ainda mais forte.
+Um peso maior está ligado à fascite plantar, mas nenhum estudo prova que ele seja a causa. Um IMC acima de 30 esteve associado a chances 5,6 vezes maiores em um estudo, e uma revisão de 51 estudos encontrou chances 3,7 vezes maiores acima de um IMC de 27, com a ligação mais forte em quem não é atleta. Um tornozelo rígido foi um fator ainda mais forte.
 
 #### Perder peso ajuda na fascite plantar?
 
-Pode ajudar, mas nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar. Em um estudo de prontuários de 163 pessoas com fascite plantar que fizeram cirurgia bariátrica, em 90% os sintomas no calcanhar se resolveram, mas não havia grupo de comparação, e a maioria das pessoas com fascite plantar melhora com tratamento não cirúrgico de qualquer forma (Latt e colegas, 2020). Uma revisão de 2012 classificou a evidência como limitada.
+Pode ajudar, mas nenhum ensaio randomizado testou isso em pessoas com dor no calcanhar. Em um estudo de prontuários de 163 pessoas com fascite plantar que fizeram cirurgia bariátrica, em 90% os sintomas no calcanhar se resolveram, mas não havia grupo de comparação, e a maioria das pessoas com fascite plantar melhora com cuidados não cirúrgicos de qualquer forma (Latt e colegas, 2020). Uma revisão de 2012 classificou a evidência como limitada.
 
 #### Quanto peso preciso perder para ajudar na fascite plantar?
 
@@ -11045,7 +11045,7 @@ Mais peso corporal quer dizer mais carga na fáscia plantar a cada passo, e a do
 
 #### A fascite plantar passa sem perder peso?
 
-Para a maioria das pessoas, sim. Cerca de 90% melhoram com tratamento não cirúrgico, como alongamentos e palmilhas, muitas vezes em 3 a 6 meses. Em um acompanhamento longo de 174 pessoas, o IMC não previu quem ainda tinha dor no calcanhar anos depois. Ser mulher e ter dor nos dois calcanhares, sim.
+Para a maioria das pessoas, sim. Cerca de 90% melhoram com cuidados não cirúrgicos, como alongamentos e palmilhas, muitas vezes em 3 a 6 meses. Em um acompanhamento longo de 174 pessoas, o IMC não previu quem ainda tinha dor no calcanhar anos depois. Ser mulher e ter dor nos dois calcanhares, sim.
 
 #### Palmilhas são mais importantes se eu peso mais?
 
@@ -11131,7 +11131,7 @@ Source: Speed G, Harris K, Keegel T. The effect of cushioning materials on muscu
 Source: Wiggermann N, Keyserling WM. Effects of anti-fatigue mats on perceived discomfort and weight-shifting during prolonged standing. Human Factors. 2013;55(4):764–775.
 Source: Kim JY, Stuart-Buttle C, Marras WS. The effects of mats on back and leg fatigue. Applied Ergonomics. 1994;25(1):29-34.
 
-### Cabeleireiro deve usar banqueta ou um assento semissentado?
+### Cabeleireiro deve usar banqueta ou cadeira semissentada?
 
 **Nenhum estudo testou se uma banqueta reduz a dor nos pés de cabeleireiros.** Sentar tira carga dos pés, e em estudos com trabalho de escritório alternar entre sentado e em pé reduziu o desconforto lombar sem perda de produtividade (Karakolis e Callaghan, 2014). É a melhor evidência indireta a favor de passar parte do tempo sentado.
 
@@ -11174,7 +11174,7 @@ Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological ef
 
 Uma dor geral e as pernas pesadas no fim de um dia de salão são comuns e costumam melhorar durante a noite. Alguns padrões apontam para algo mais específico:
 
-- Uma dor forte no calcanhar nos primeiros passos da manhã ou depois de ficar sentado aponta para [fascite plantar](https://walkito.site/pt/fascite-plantar/). A rotina completa está em [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
+- Uma dor aguda no calcanhar nos primeiros passos da manhã ou depois de ficar sentado aponta para [fascite plantar](https://walkito.site/pt/fascite-plantar/). A rotina completa está em [exercícios para fascite plantar](https://walkito.site/pt/exercicios-fascite-plantar/).
 - Queimação ou dor embaixo da parte da frente do pé combina com [metatarsalgia](https://walkito.site/pt/metatarsalgia-dor-na-planta-do-pe/), comum com solado fino ou salto.
 - Um arco que dói ou parece mais baixo no fim do dia combina com [dor no arco do pé](https://walkito.site/pt/dor-no-arco-do-pe/).
 - Veias inchadas, tortuosas ou saltadas nas pernas podem ser varizes. Em uma pesquisa com 182 cabeleireiros em Taiwan, 24,2% tinham varizes, e em quem tinha mais de 45 anos muitas horas em pé por mês eram um fator de risco (Chen e Guo, 2014).
@@ -11200,7 +11200,7 @@ Você não precisa descobrir sozinho a ordem, as doses ou quando passar para uma
 
 #### Por que os pés de cabeleireiros doem tanto?
 
-Cabeleireiros ficam parados em pé no mesmo lugar por muito tempo, o que carrega o calcanhar e o arco sem o bombeamento da panturrilha que a caminhada dá. Em um estudo com 384 cabeleireiros, 49,5% relataram dor no joelho ou no pé em 12 meses, contra 38,3% das pessoas de outras profissões. Inclinar o corpo para a frente, piso duro e calçado sem apoio aumentam a carga.
+Cabeleireiros ficam parados em pé no mesmo lugar por muito tempo, o que sobrecarrega o calcanhar e o arco sem o bombeamento da panturrilha que a caminhada dá. Em um estudo com 384 cabeleireiros, 49,5% relataram dor no joelho ou no pé em 12 meses, contra 38,3% das pessoas de outras profissões. Inclinar o corpo para a frente, piso duro e calçado sem apoio aumentam a carga.
 
 #### Quais são os melhores calçados para cabeleireiros com dor nos pés?
 
@@ -11244,7 +11244,7 @@ Pés doloridos depois de uma trilha longa são comuns, e boa parte disso é sobr
 
 ### Por que seus pés doem depois de uma trilha?
 
-**Principalmente porque a trilha carrega os pés mais, e por mais tempo, do que a caminhada do dia a dia.** Você anda por horas, em terreno irregular, subindo e descendo, muitas vezes com mochila. Cada uma dessas coisas aumenta o trabalho do calcanhar, do arco, da panturrilha e do tendão de Aquiles.
+**Principalmente porque a trilha exige mais dos pés, e por mais tempo, do que a caminhada do dia a dia.** Você anda por horas, em terreno irregular, subindo e descendo, muitas vezes com mochila. Cada uma dessas coisas aumenta o trabalho do calcanhar, do arco, da panturrilha e do tendão de Aquiles.
 
 Os melhores números vêm dos trilheiros de longa distância. Em uma pesquisa de 2018 a 2019 com 1.295 trilheiros da Appalachian Trail, 61% relataram algum problema em músculos, articulações ou ossos. A dor no joelho foi a mais comum, com 37%, depois a dor no pé com 29%, as entorses de tornozelo com 13%, a dor no Aquiles com 12% e a dor na canela com 11%. Essas queixas fizeram 11% deles interromper a trilha (Chrusch e Kavin, 2021).
 
@@ -11290,7 +11290,7 @@ Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman
 - Na pesquisa de 2006 com 128 trilheiros de longa distância, dormência ou formigamento foram relatados por 29% de quem usava sandália, 36% com tênis de corrida, 42% com calçado de caminhada e 68% com bota. Depois de levar em conta o peso da mochila, o tipo de calçado deixou de importar, o que sugere que quem usava bota também carregava mochilas mais pesadas (Anderson e colegas, 2009).
 - Na pesquisa de 2018 a 2019 da Appalachian Trail, 58% usavam tênis de corrida ou de trilha e 24% usavam bota. Os dois estavam associados a menos queixas do que outros calçados, como sandálias (Chrusch e Kavin, 2021).
 
-Então escolha o calçado que serve bem, com que você já caminhou e que combina com o terreno. Para dor no calcanhar em geral, a diretriz de 2023 recomenda contra palmilhas usadas sozinhas para alívio a curto prazo, grau B, e as aceita junto com outros cuidados, grau C (Koc e colegas, 2023). Mais em [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/). Se quiser mudar para calçados mais leves ou mais planos, faça isso ao longo de semanas, não na primeira trilha longa; [calçados barefoot](https://walkito.site/pt/calcados-barefoot/) explica por quê.
+Então escolha o calçado que serve bem, com que você já caminhou e que combina com o terreno. Para dor no calcanhar em geral, a diretriz de 2023 desaconselha palmilhas usadas sozinhas para alívio a curto prazo (grau B contra) e as aceita junto com outros cuidados (grau C) (Koc e colegas, 2023). Mais em [palmilhas ou exercícios](https://walkito.site/pt/palmilhas-ou-exercicios/). Se quiser mudar para calçados mais leves ou mais planos, faça isso ao longo de semanas, não na primeira trilha longa; [calçados barefoot](https://walkito.site/pt/calcados-barefoot/) explica por quê.
 
 Source: Anderson LS Jr, Rebholz CM, White LF, Mitchell P, Curcio EP 3rd, Feldman JA, Kahn JH. The impact of footwear and packweight on injury and illness among long-distance hikers. Wilderness Environ Med. 2009;20(3):250–256.
 Source: Chrusch A, Kavin M. Survey of musculoskeletal injuries, prehike conditioning, and on-trail injury prevention strategies self-reported by long-distance hikers on the Appalachian Trail. Wilderness Environ Med. 2021;32(3):322–331.
@@ -11298,7 +11298,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Com que rapidez dá para aumentar a distância das trilhas?
 
-**Nenhum estudo dá um aumento semanal seguro para trilheiros.** A evidência mais próxima é a pesquisa da Appalachian Trail: os 13% de trilheiros que não fizeram nenhum preparo antes da trilha relataram mais lesões no geral (80% contra 58%), mais dor no pé (38% contra 28%), mais dor no Aquiles (18% contra 11%) e mais fraturas por estresse na parte de baixo da perna (5% contra 2%). Treino de força, alongamento ou yoga e treino de resistência estiveram cada um associados a menos lesões (Chrusch e Kavin, 2021). É uma pesquisa, então pode ser simplesmente que pessoas mais em forma ou mais cuidadosas tenham treinado mais.
+**Nenhum estudo dá um aumento semanal seguro para trilheiros.** A evidência mais próxima é a pesquisa da Appalachian Trail: os 13% de trilheiros que não fizeram nenhum preparo antes da trilha relataram mais lesões no geral (80% contra 58%), mais dor no pé (38% contra 28%), mais dor no Aquiles (18% contra 11%) e mais fraturas por estresse na parte de baixo da perna (5% contra 2%). Treino de força, alongamento ou yoga e treino aeróbico de longa duração estiveram cada um associados a menos lesões (Chrusch e Kavin, 2021). É uma pesquisa, então pode ser simplesmente que pessoas mais em forma ou mais cuidadosas tenham treinado mais.
 
 Uma forma prática de aumentar, não testada:
 
@@ -11313,9 +11313,9 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 
 ### Qual é uma boa rotina antes e depois da trilha?
 
-Mantenha curta. Antes da trilha, um ou dois minutos para soltar os tornozelos. Depois, os alongamentos para o calcanhar e a panturrilha. Nos dias entre as trilhas, elevação de calcanhar para ganhar força. São as doses iniciais do Walkito, tiradas dos guias principais. Pare um exercício por aquele dia se a dor passar de 6 de 10.
+Faça uma rotina curta. Antes da trilha, um ou dois minutos para soltar os tornozelos. Depois, os alongamentos para o calcanhar e a panturrilha. Nos dias entre as trilhas, elevação de calcanhar para ganhar força. São as doses iniciais do Walkito, tiradas dos guias principais. Pare um exercício por aquele dia se a dor passar de 6 de 10.
 
-Seja honesto sobre o que o alongamento antes da trilha faz. Em um ensaio com 1.538 recrutas do exército, ao longo de três meses de treinamento, alongar seis grupos musculares das pernas antes de cada sessão não reduziu as lesões de forma relevante (Pope e colegas, 2000). Os alongamentos aqui são para dor no calcanhar e na panturrilha, em que a diretriz de 2023 dá ao alongamento o grau **A**, e o fortalecimento da panturrilha recebe **B** (Koc e colegas, 2023).
+Vale ser realista sobre o que o alongamento antes da trilha faz. Em um ensaio com 1.538 recrutas do exército, ao longo de três meses de treinamento, alongar seis grupos musculares das pernas antes de cada sessão não reduziu as lesões de forma relevante (Pope e colegas, 2000). Os alongamentos aqui são para dor no calcanhar e na panturrilha, em que a diretriz de 2023 dá ao alongamento o grau **A**, e o fortalecimento da panturrilha recebe **B** (Koc e colegas, 2023).
 
 - **Balanço do tornozelo (antes)** (2 séries de 15, cada perna): Uma perna à frente da outra, mãos em uma parede, uma árvore ou nos bastões. Leve o joelho da frente para a frente por cima dos dedos, com o calcanhar apoiado. Devagar, uns dois segundos para cada lado. Troque de perna depois de cada série.
 - **Alongamento de panturrilha (depois)** (2 sustentações de 30 segundos, cada perna): Apoie as mãos na parede. Mantenha a perna de trás esticada, o calcanhar de trás no chão e o quadril para a frente. A panturrilha encurtada puxa o calcanhar, então esse alongamento importa mesmo que você o sinta mais para cima.
@@ -11334,7 +11334,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Pare também se você não consegue apoiar o peso no pé, se a dor começou com uma torção, uma queda ou um estalo, ou se o pé está vermelho, quente e inchado. A lista completa está abaixo.
 
-A maior parte da dor no calcanhar é menos dramática. Na fascite plantar, cerca de 90% das pessoas melhoram com tratamento não cirúrgico, embora isso possa levar meses (Latt e colegas, 2020). Veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/).
+A maior parte da dor no calcanhar é menos dramática. Na fascite plantar, cerca de 90% das pessoas melhoram com cuidados não cirúrgicos, embora isso possa levar meses (Latt e colegas, 2020). Veja [quanto tempo dura a fascite plantar](https://walkito.site/pt/quanto-tempo-dura-fascite-plantar/).
 
 Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.

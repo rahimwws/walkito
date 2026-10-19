@@ -22,7 +22,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
     'Dor nos pés em depósito e loja: o que os estudos dizem sobre chão de concreto, botinas de segurança, tapetes e palmilhas, e exercícios de 3 minutos.',
   h1: 'Dor nos pés para quem trabalha em loja ou depósito: o que ajuda no chão duro',
   lede:
-    'No depósito e na loja os pés doem porque horas em pé e andando em chão duro carregam o calcanhar, o arco e a panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6\u00A0vezes a chance de [fascite plantar](/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3\u00A0minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).',
+    'No depósito e na loja os pés doem porque horas em pé e andando em chão duro põem carga no calcanhar, no arco e na panturrilha com pouco amortecimento embaixo. Passar a maior parte do dia de trabalho em pé aumentou em 3,6\u00A0vezes a chance de [fascite plantar](/pt/fascite-plantar/) em um estudo (Riddle e colegas, 2003). Os alongamentos da panturrilha e da fáscia plantar têm o grau mais alto, **A**, na diretriz de 2023 para dor no calcanhar, e uma versão curta cabe em cerca de 3\u00A0minutos de intervalo. Tapetes e palmilhas com amortecimento ajudam no conforto, mas a evidência a favor deles é mais fraca (Speed e colegas, 2018).',
   intro: [
     'Esta página fala do trabalho em si: chão de concreto e de piso frio, botinas de segurança, turnos longos e intervalos curtos. Para a dor de ficar em pé em geral, veja [por que meus pés doem depois de ficar o dia todo em pé](/pt/dor-nos-pes-ficar-em-pe/). Se você trabalha em hospital, [dor nos pés na enfermagem](/pt/dor-nos-pes-enfermagem/) fala dos plantões de 12\u00A0horas e das escalas que mudam.',
   ],
@@ -63,7 +63,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
         '**Os dois ajudam no conforto, sem um vencedor claro, e nenhum tem evidência forte.** Uma revisão sistemática de 2018 encontrou 10\u00A0estudos sobre tapetes e palmilhas com amortecimento em pessoas que trabalham em pé. Ela considerou moderada a evidência de que o amortecimento reduz o desconforto e o cansaço, e limitada a de que as palmilhas funcionam melhor que os tapetes. Os estudos eram muito diferentes entre si, e os autores pediram estudos maiores em locais de trabalho reais.',
         'Em um estudo no local de trabalho, trabalhadores de uma linha de montagem passaram uma semana de jornadas de 8\u00A0horas em cada uma de quatro condições: chão duro, tapete, palmilhas e palmilhas sobre o tapete. O tapete, as palmilhas e a combinação foram todos mais confortáveis que o chão duro, sem diferença clara entre eles (King, 2002).',
         'Em um teste de laboratório de 4\u00A0horas, três de quatro tapetes antifadiga comerciais reduziram o desconforto em comparação com um chão duro, mas nenhum tapete foi melhor que os outros (Wiggermann e Keyserling, 2013). Então nenhum tapete se mostrou melhor que os demais.',
-        'A divisão prática: **um tapete só ajuda onde você fica parado**, como no caixa, na bancada de embalagem ou num posto de trabalho. Se você anda pelo salão ou separa pedidos, o amortecimento precisa ir com você, dentro do calçado. Para dor no calcanhar especificamente, a diretriz de 2023 dá às palmilhas sozinhas grau **B contra**, então não conte só com elas. A página [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/) compara as duas opções.',
+        'Na prática, **um tapete só ajuda onde você fica parado**, como no caixa, na bancada de embalagem ou num posto de trabalho. Se você anda pelo salão ou separa pedidos, o amortecimento precisa ir com você, dentro do calçado. Para dor no calcanhar especificamente, a diretriz de 2023 dá às palmilhas sozinhas grau **B contra**, então não conte só com elas. A página [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/) compara as duas opções.',
       ],
       cites: [CITE.speedCushioning, CITE.kingMats, CITE.wiggermannMats, CITE.guideline],
     },
@@ -91,7 +91,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
       keyFact: 'A diretriz de 2023 para dor no calcanhar dá grau A, o seu mais alto, aos alongamentos da panturrilha e da fáscia plantar, e grau B ao trabalho de força (Koc e colegas, 2023).',
       paragraphs: [
         'Os exercícios abaixo não precisam de equipamento nem de espaço no chão, só de uma parede, uma coluna da prateleira ou a borda de um balcão. Os três primeiros são feitos em pé, na sala de descanso ou num corredor do estoque. Os outros são para depois do turno, sentado.',
-        'A diretriz dá grau **A** aos alongamentos da panturrilha e da fáscia plantar e grau **B** ao trabalho de força. Esses graus são para a fascite plantar, mas são os mesmos tecidos que um turno em chão duro sobrecarrega. Pare por aquele dia se algum exercício levar a dor a 6 de 10 ou mais.',
+        'A diretriz dá grau **A** aos alongamentos da panturrilha e da fáscia plantar e grau **B** ao trabalho de força. Esses graus são para a fascite plantar, mas são os mesmos tecidos que um turno em chão duro sobrecarrega. Se algum exercício levar a sua dor a 6/10 ou mais, pare por hoje.',
       ],
       exercises: [
         {
@@ -127,7 +127,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
           often: 'No intervalo',
           feel: 'Um alongamento na frente do tornozelo e uma tensão na parte de baixo da panturrilha',
           how: 'Um pé à frente do outro, mãos na parede. Leve o joelho da frente para a frente, por cima dos dedos, com o calcanhar no chão. Devagar, cerca de dois segundos para cada lado. Mais em [balanço do tornozelo](/pt/exercicios/mobilidade-tornozelo/).',
-          stop: 'A dor chega a 6 de 10',
+          stop: 'A dor chegar a 6/10',
           image: 'Exercício: balanço do tornozelo',
           media: 'ankle_rocks',
           caption: 'Balanço do tornozelo: o joelho vai para a frente por cima dos dedos, o calcanhar fica no chão',
@@ -153,7 +153,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
           often: 'Nas folgas, ou depois de um turno mais leve',
           feel: 'As panturrilhas trabalhando juntas',
           how: 'Fique em pé sobre os dois pés, segure na parede, suba reto por cima dos dedões e desça devagar. O trabalho de força funciona melhor nas folgas, para a panturrilha ter tempo de se recuperar antes do próximo turno. Mais em [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
-          stop: 'Dor no calcanhar acima de 6 de 10, ou pior na manhã seguinte',
+          stop: 'Dor no calcanhar acima de 6/10, ou pior na manhã seguinte',
           image: 'Exercício: elevação de calcanhar com os dois pés',
           media: 'heel_raise_double',
           caption: 'Elevação de calcanhar com os dois pés: suba reto por cima dos dedões e desça devagar',
@@ -197,7 +197,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
       ],
       table: {
         caption: 'Opções para dor nos pés em trabalhos em pé e andando',
-        head: ['Opção', 'Melhor evidência', 'Resultado', 'Força'],
+        head: ['Opção', 'Melhor evidência', 'Resultado', 'Força da evidência'],
         rows: [
           ['Alongamentos de panturrilha e fáscia', 'Diretriz de 2023', 'Grau A para dor no calcanhar', 'Forte'],
           ['Trabalho de força da panturrilha', 'Diretriz de 2023', 'Grau B para dor no calcanhar', 'Moderada'],
@@ -216,7 +216,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
     {
       h2: 'Pode ser fascite plantar ou outra coisa?',
       paragraphs: [
-        'Uma dor geral e os pés cansados depois de um turno longo costumam passar com uma noite de descanso. A fascite plantar tem um padrão mais claro: dor aguda perto da parte de dentro do calcanhar, pior nos primeiros passos da manhã ou depois de ficar sentado. Se isso parece com o seu caso, veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) e [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses (Latt e colegas, 2020).',
+        'Uma dor geral e os pés cansados depois de um turno longo costumam passar com uma noite de descanso. A fascite plantar tem um padrão mais claro: dor aguda perto da parte de dentro do calcanhar, pior nos primeiros passos da manhã ou depois de ficar sentado. Se isso parece com o seu caso, veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) e [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses (Latt e colegas, 2020).',
         'Outros padrões apontam para outras causas. Uma dor em queimação embaixo da parte da frente do pé aponta para [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/). Uma dor ao longo do arco que piora durante o turno é explicada em [dor no arco do pé](/pt/dor-no-arco-do-pe/). A dor em cima do pé pode vir de botinas amarradas apertado demais ou que pressionam; veja [dor no peito do pé](/pt/dor-no-peito-do-pe/).',
         'Uma dor num ponto pequeno de um osso, que piora quanto mais você anda, pode ser uma fratura por estresse, principalmente depois de um aumento das horas ou de um emprego novo com mais caminhada. **Isso precisa de um profissional de saúde, não de mais exercício.**',
       ],
@@ -262,7 +262,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
     {
       q: 'Dá para continuar trabalhando em pé com fascite plantar?',
       cites: [CITE.latt, CITE.guideline],
-      a: 'Muita gente continua, com algumas mudanças. Alongamentos curtos nos intervalos, botinas com melhor ajuste e amortecimento onde você fica em pé diminuem a carga, e cerca de 90% das pessoas com fascite plantar melhoram com tratamento não cirúrgico, embora isso possa levar de três a seis meses. Se a dor estiver piorando mesmo assim, procure um profissional de saúde.',
+      a: 'Muita gente continua, com algumas mudanças. Alongamentos curtos nos intervalos, botinas com melhor ajuste e amortecimento onde você fica em pé diminuem a carga, e cerca de 90% das pessoas com fascite plantar melhoram sem cirurgia, embora isso possa levar de três a seis meses. Se a dor estiver piorando mesmo assim, procure um profissional de saúde.',
     },
   ],
   redFlags: {
@@ -280,7 +280,7 @@ export const RETAIL_WAREHOUSE_PT: Guide = {
   },
   program: {
     h2: 'Como transformar isso em um plano',
-    text: 'Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta o plano a partir das suas respostas e o ajusta a como seus pés estão a cada dia, então uma manhã ruim depois de um turno longo significa uma sessão mais leve.',
+    text: 'Você não precisa descobrir a ordem, as doses nem quando passar para uma versão mais difícil. O Walkito monta o plano a partir das suas respostas e o ajusta conforme os seus pés estão a cada dia, então uma manhã ruim depois de um turno longo significa uma sessão mais leve.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos, para encaixar nos turnos e nas folgas. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],
