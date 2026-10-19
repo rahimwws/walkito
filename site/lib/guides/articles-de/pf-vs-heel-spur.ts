@@ -41,7 +41,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       figure: { id: 'heel-side', caption: 'Ein Fersensporn bildet sich, wenn es einen gibt, an der Unterseite des Fersenbeins, nahe dem Ansatz der Plantarfaszie.', alt: 'Fuß von der Innenseite mit durchsichtiger Haut: Fersenbein, Plantarfaszie unter dem Gewölbe und eine rote Stelle unter der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         '**Ein Fersensporn und eine Plantarfasziitis sind nicht dasselbe.** Plantarfasziitis ist ein Problem des Weichgewebes: Die Plantarfaszie, das dicke Band vom Fersenbein bis zu den Zehen, wird gereizt, meist dort, wo sie am Knochen ansetzt. Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins (Calcaneus). Beides kommt oft zusammen vor, aber jedes kann auch ohne das andere auftreten.',
-        'Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.',
+        'Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Schmerz hinten an der Ferse ist ein anderes Problem, siehe [Plantarfasziitis oder Achillessehnenentzündung](/de/plantarfasziitis-oder-achillessehne/). Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.',
         'Die Verwechslung ist verständlich. Jahrzehntelang galt der Fersensporn als Ursache für Fersenschmerzen unter dem Fuß. Diese Sicht wurde weitgehend von Belegen abgelöst, die zeigen, dass Sporne bei Menschen ohne Schmerzen häufig sind und dass viele Menschen mit Plantarfasziitis gar keinen Sporn haben.',
       ],
       cites: [CITE.ehrmannSpur, CITE.guideline],
@@ -103,7 +103,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
           list: [
             'Wenn der Schmerz nicht dem typischen Muster der Plantarfasziitis folgt.',
             'Wenn er nach mehreren Wochen konservativer Behandlung nicht besser geworden ist.',
-            'Wenn eine Ärztin oder ein Arzt etwas anderes vermutet, etwa einen Ermüdungsbruch, ein Nervenproblem oder einen Riss der Plantarfaszie.',
+            'Wenn eine Ärztin oder ein Arzt etwas anderes vermutet, etwa einen [Ermüdungsbruch](/de/plantarfasziitis-oder-ermuedungsbruch/), ein Nervenproblem oder einen Riss der Plantarfaszie.',
           ],
         },
         'Ultraschall kann die Dicke der Plantarfaszie messen (über 4\u00A0mm gilt allgemein als verdickt), und ein MRT zeigt Details im Weichgewebe, die ein Röntgenbild nicht zeigt.',

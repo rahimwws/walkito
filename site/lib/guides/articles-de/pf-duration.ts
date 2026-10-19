@@ -88,7 +88,7 @@ export const PF_DURATION_DE: Guide = {
             '**Fersenschmerzen auf beiden Seiten.** Menschen, die zu Beginn in beiden Fersen Schmerzen hatten, wurden pro Jahr nur etwa ein Drittel so häufig beschwerdefrei wie Menschen mit einseitigen Schmerzen (Hazard Rate Ratio 0,33, P kleiner als 0,01). Die Autoren merkten an, dass Schmerzen auf beiden Seiten auf eine unerkannte entzündliche Erkrankung hindeuten könnten, weil Schmerzen an Sehnenansätzen auf beiden Seiten ein Merkmal mancher Formen von Arthritis sind. Niemand in ihrer Kohorte hatte eine bekannte entzündliche Diagnose, aber es wurde auch kein Bluttest gemacht (Hansen und Kollegen, 2018).',
           ],
         },
-        'BMI, Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.',
+        '[BMI](/de/gewicht-und-plantarfasziitis/), Alter, Rauchen, körperlich schwere Arbeit, Dicke der Faszie im Ultraschall und ein [Fersensporn](/de/plantarfasziitis-oder-fersensporn/) hatten in dieser Studie alle keinen signifikanten Einfluss auf die Prognose. Der letzte Befund überrascht viele: Ein Fersensporn ließ die Beschwerden weder länger noch kürzer dauern (P = 0,88). Auch frühere Studien fanden keinen Zusammenhang zwischen Fersenspornen und Beschwerden.',
         'Wenn beide Fersen wehtun und die Morgensteifigkeit lange anhält oder andere Gelenke betroffen sind, solltest du das deiner Ärztin oder deinem Arzt sagen, auch wenn die Übungen helfen. Mehr dazu, wann Schmerzen auf beiden Seiten ein Warnzeichen sind, steht unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
       ],
       sourceNote:
@@ -189,7 +189,7 @@ export const PF_DURATION_DE: Guide = {
     {
       q: 'Ist Gehen gut bei Plantarfasziitis?',
       cites: [CITE.guideline],
-      a: 'Maßvolles Gehen in stützenden Schuhen ist meist in Ordnung, und die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Entscheidend ist, ob der nächste Morgen schlimmer ist. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich höher als sonst, war dieser Spaziergang mehr, als der Fuß verkraften konnte. Verkürze Strecke oder Zeit, statt ganz aufzuhören.',
+      a: 'Maßvolles Gehen in stützenden Schuhen ist meist in Ordnung, und die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Entscheidend ist, ob der nächste Morgen schlimmer ist. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich höher als sonst, war dieser Spaziergang mehr, als der Fuß verkraften konnte. Verkürze Strecke oder Zeit, statt ganz aufzuhören. Wie viel Gehen in Ordnung ist, erklärt [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
     },
     {
       q: 'Wann sollte ich zum Arzt, wenn die Plantarfasziitis nicht besser wird?',

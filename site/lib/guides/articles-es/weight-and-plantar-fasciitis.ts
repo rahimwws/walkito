@@ -215,7 +215,7 @@ export const WEIGHT_PF_ES: Guide = {
       h2: '¿Se quita la fascitis plantar si no bajo de peso?',
       paragraphs: [
         '**En la mayoría de las personas, sí: se alivia con el tiempo y con tratamiento sin cirugía.** Cerca del 90\u00A0% de las personas con fascitis plantar mejoran con tratamiento sin cirugía, como estiramientos y plantillas, muchas veces en un plazo de 3 a 6\u00A0meses (Latt y colegas, 2020).',
-        'En un seguimiento largo de 174\u00A0personas, los investigadores analizaron si el IMC, la edad, fumar, el trabajo físico y otros factores predecían quién seguía con dolor de talón años después. Solo ser mujer y tener dolor en los dos talones lo predijeron. El IMC no (Hansen y colegas, 2018).',
+        'En un seguimiento largo de 174\u00A0personas, los investigadores analizaron si el IMC, la edad, fumar, el trabajo físico y otros factores predecían quién seguía con dolor de talón años después. Solo ser mujer y tener dolor en los dos talones lo predijeron. El IMC no (Hansen y colegas, 2018). Por qué afecta más a las mujeres alrededor de los 50\u00A0años se explica en [fascitis plantar y menopausia](/es/fascitis-plantar-menopausia/).',
         'Así que un peso más alto puede hacer más probable que la fascitis plantar empiece, pero no significa que te vayas a quedar con ella. Los estiramientos y el trabajo de pantorrilla de arriba son los mismos que ayudan a personas de cualquier tamaño. [Cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/) tiene la línea de tiempo completa.',
       ],
       cites: [CITE.latt, CITE.hansen],

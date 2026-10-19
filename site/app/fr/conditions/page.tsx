@@ -265,10 +265,10 @@ export default function ConditionsFr() {
         <p>
           Walkito est fourni tel quel. Nous ne promettons pas que suivre le
           programme réduira votre douleur, changera votre voûte ou produira un
-          résultat particulier. La{' '}
-          <a href="/science/" hrefLang="en">page des données scientifiques</a>{' '}
-          (en anglais) expose ce qu’a trouvé la recherche qu’il suit, y compris
-          là où ces preuves s’arrêtent.
+          résultat particulier. La section{' '}
+          <a href="/fr/a-propos/#how-we-research">Notre méthode de recherche</a>{' '}
+          explique comment nous lisons la recherche sur laquelle il s’appuie et
+          comment nous signalons là où ces preuves s’arrêtent.
         </p>
         <p>
           Nous ne promettons pas que l’application fonctionnera sans

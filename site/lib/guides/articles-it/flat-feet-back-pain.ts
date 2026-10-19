@@ -197,7 +197,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
         },
         'Un quadro di riferimento internazionale per i professionisti sanitari elenca i segnali d’allarme da cercare, e li trovi nell’elenco alla fine di questa pagina.',
         'Per la schiena, aspettati domande su come è iniziato il dolore, cosa lo calma e se si irradia lungo una gamba. La visita di solito controlla come si muove la schiena, più forza, riflessi e sensibilità di gambe e piedi. Di solito non servono esami di imaging, a meno che qualcosa non faccia pensare a una causa grave.',
-        'Per i piedi, il professionista controlla se il piede piatto è flessibile (l’arco torna quando sali sulle punte o sollevi il piede) o rigido (resta piatto).',
+        'Per i piedi, il professionista controlla se il piede piatto è flessibile (l’arco torna quando sali sulle punte o sollevi il piede) o rigido (resta piatto). Puoi fare gli stessi [controlli anche a casa](/it/test-piede-piatto/).',
         'Un piede piatto rigido, o un arco che si è abbassato da adulti con dolore all’interno della caviglia, richiede una valutazione a parte. Il secondo caso è spesso un tendine che si indebolisce, spiegato in [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/). Il professionista può anche guardarti camminare per vedere quanto cedono i tuoi piedi verso l’interno.',
         'Anche i problemi alla schiena possono dare sintomi al piede. Un nervo schiacciato nella parte bassa della schiena può dare intorpidimento, formicolio o debolezza al piede, e un piede debole può sembrare un problema del piede quando la causa è più in alto.',
       ],

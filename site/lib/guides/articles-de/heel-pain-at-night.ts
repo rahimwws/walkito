@@ -47,7 +47,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       h2: 'Könnte es ein Ermüdungsbruch des Fersenbeins sein?',
       paragraphs: [
         'Ein Ermüdungsbruch des Fersenbeins, ein feiner Riss im Knochen durch wiederholte Belastung, kann einen tiefen Schmerz verursachen, der nachts pocht. Anders als bei der Plantarfasziitis wird der Schmerz bei Aktivität meist schlimmer und läuft sich nicht ein. Oft geht ihm eine plötzliche Steigerung beim Laufen, Gehen oder Stehen auf hartem Boden voraus.',
-        'Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. **Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig.** Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.',
+        'Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. Was er zeigen kann und was nicht, erklärt [Plantarfasziitis oder Ermüdungsbruch](/de/plantarfasziitis-oder-ermuedungsbruch/). **Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig.** Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.',
         'Eine Übersichtsarbeit von 2011 in American Family Physician stellte fest, dass Ermüdungsbrüche des Fersenbeins nach einer Steigerung der Aktivität oder einem Wechsel auf härteren Boden zunehmend schlimmere Schmerzen verursachen. Schmerz nachts und in Ruhe wurde zu den Merkmalen gezählt, die Ermüdungsbrüche von einer Fasziitis unterscheiden.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],

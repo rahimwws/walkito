@@ -254,10 +254,10 @@ export default function TermosPt() {
         <p>
           O Walkito é oferecido no estado em que se encontra. Não prometemos que
           seguir o programa vai reduzir a sua dor, mudar o seu arco ou trazer
-          qualquer resultado específico. A{' '}
-          <a href="/science/" hrefLang="en">página de evidências</a> (em inglês)
-          mostra o que a pesquisa que ele segue encontrou, incluindo onde essa
-          evidência para.
+          qualquer resultado específico. A seção{' '}
+          <a href="/pt/sobre-walkito/#how-we-research">Como pesquisamos</a>{' '}
+          explica como lemos a pesquisa em que ele se baseia e como sinalizamos
+          onde essa evidência para.
         </p>
         <p>
           Não prometemos que o app vai funcionar sem interrupções ou sem erros,

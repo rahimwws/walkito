@@ -62,7 +62,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
         'The guideline names other risk factors:',
         {
           list: [
-            'Age between 40 and 60.',
+            'Age between 40 and 60, the years when [heel pain peaks in women around menopause](/plantar-fasciitis-menopause/).',
             'Running or jumping activities.',
             'Occupations that involve prolonged standing.',
           ],
@@ -95,7 +95,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
           list: [
             'If the pattern does not fit.',
             'If symptoms do not improve after several weeks of conservative care.',
-            'If another diagnosis needs to be ruled out (a stress fracture or nerve entrapment, for example).',
+            'If another diagnosis needs to be ruled out (a stress fracture or nerve entrapment, for example). See [heel pain that isn\'t plantar fasciitis](/heel-pain-not-plantar-fasciitis/).',
           ],
         },
         'Ultrasound and MRI can show fascia thickening, but a thickened fascia on a scan without the matching symptom pattern is not plantar fasciitis.',
@@ -256,7 +256,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       q: 'When should I see a doctor about heel pain?',
-      a: 'See a clinician if pain followed an injury, if you cannot put weight on the foot, if both heels hurt and other joints are stiff, if there is numbness or tingling, if the heel is red or warm, if it wakes you at night, or if pain is not improving after several months of stretching and calf work. These patterns may point to a different condition.',
+      a: 'See a clinician if pain followed an injury, if you cannot put weight on the foot, if both heels hurt and other joints are stiff, if there is numbness or tingling, if the heel is red or warm, if it wakes you at night, or if [pain is not improving after several months](/plantar-fasciitis-not-getting-better/) of stretching and calf work. These patterns may point to a different condition.',
     },
     {
       q: 'Why do I have plantar fasciitis in only one foot?',

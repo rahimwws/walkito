@@ -181,7 +181,7 @@ export const TOE_STRENGTHENING_FR: Guide = {
     {
       h2: 'Les exercices pour renforcer les orteils fonctionnent-ils vraiment\u00A0?',
       keyFact:
-        'Dans un essai sur 118\u00A0coureurs amateurs, ceux qui ne faisaient pas le programme pour le pied étaient 2,42\u00A0fois plus susceptibles de se blesser sur un an (Taddei et coll., 2020).',
+        'Dans un essai sur 118\u00A0coureurs amateurs, ceux qui ne faisaient pas le programme pour le pied étaient 2,42\u00A0fois plus susceptibles de se blesser sur un an (Taddei et coll., 2020). La routine pour les coureurs se trouve dans [exercices pour les pieds des coureurs](/fr/exercices-pieds-coureurs/).',
       paragraphs: [
         'Les exercices pour renforcer les orteils peuvent développer leur force, mais **seulement si le travail devient plus difficile avec le temps.**',
         'Dans un essai de 2016, 85\u00A0adultes de 60 à 90\u00A0ans ont été répartis entre un programme supervisé avec une résistance qui augmentait sur trois mois et un programme d’exercices à domicile. Le groupe supervisé a gagné jusqu’à 36\u00A0% de force des orteils et tenait plus longtemps sur une jambe. Le groupe à domicile, ainsi qu’un groupe témoin distinct de 32\u00A0personnes, n’a montré aucun changement de la force des orteils. Les auteurs ont précisé qu’un essai comptant les chutes restait nécessaire.',

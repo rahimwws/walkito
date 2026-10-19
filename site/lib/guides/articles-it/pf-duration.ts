@@ -93,7 +93,7 @@ export const PF_DURATION_IT: Guide = {
         '**Dolore a entrambi i talloni.** Chi all’inizio aveva dolore a entrambi i talloni arrivava a non avere più sintomi a circa un terzo della velocità annua di chi aveva dolore da un lato solo (hazard rate ratio 0,33, P minore di 0,01). Gli autori hanno notato che il dolore a entrambi i lati potrebbe riflettere un problema infiammatorio non riconosciuto, perché il dolore nei punti di attacco tra tendine e osso su entrambi i lati è una caratteristica di alcune forme di artrite. Nessuno nella loro coorte aveva una diagnosi infiammatoria nota, ma non sono stati fatti esami del sangue specifici (Hansen e colleghi, 2018).',
           ],
         },
-        'Indice di massa corporea, età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.',
+        '[Indice di massa corporea](/it/peso-e-fascite-plantare/), età, fumo, lavoro fisicamente pesante, spessore della fascia all’ecografia e presenza di uno [sperone calcaneare](/it/fascite-plantare-o-spina-calcaneare/) non avevano un effetto significativo sulla prognosi in quello studio. L’ultimo risultato sorprende molti: lo sperone calcaneare non faceva durare le cose né di più né di meno (P = 0,88). Anche studi precedenti non avevano trovato una correlazione tra sperone calcaneare e sintomi.',
         'Se ti fanno male entrambi i talloni e la rigidità del mattino dura a lungo o sono coinvolte altre articolazioni, vale la pena dirlo a un professionista sanitario anche se gli esercizi stanno aiutando. Vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per sapere quando il dolore a entrambi i talloni è un campanello d’allarme.',
       ],
       sourceNote:
@@ -194,7 +194,7 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'Camminare fa bene alla fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Camminare in modo moderato con scarpe che sostengono il piede in genere va bene, e la linea guida non dice di smettere di muoversi. Conta se la mattina dopo va peggio. Se il dolore ai primi passi la mattina dopo una camminata è chiaramente più alto del solito, quella camminata era più di quanto il piede potesse reggere. Riduci la distanza o il tempo invece di fermarti del tutto.',
+      a: 'Camminare in modo moderato con scarpe che sostengono il piede in genere va bene, e la linea guida non dice di smettere di muoversi. Conta se la mattina dopo va peggio. Se il dolore ai primi passi la mattina dopo una camminata è chiaramente più alto del solito, quella camminata era più di quanto il piede potesse reggere. Riduci la distanza o il tempo invece di fermarti del tutto. Vedi [quanto puoi camminare](/it/camminare-con-fascite-plantare/).',
     },
     {
       q: 'Quando andare dal medico se la fascite plantare non migliora?',

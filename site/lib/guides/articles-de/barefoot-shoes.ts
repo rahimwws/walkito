@@ -108,7 +108,7 @@ export const BAREFOOT_DE: Guide = {
         'Fliesen oder Holz geben der Ferse keine Dämpfung, und die ersten Schritte nach einer Ruhepause sind der Moment, in dem eine Plantarfasziitis meist am stärksten wehtut. Unsere Seite zu [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) schlägt eine Dehnung vor dem Aufstehen vor und etwas an den Füßen für diese ersten Schritte.',
         'Dämpfung unter der Ferse spielt womöglich eine Rolle. In einer Studie von 2023 verglichen Landorf und Kollegen 50\u00A0Menschen mit Fersenschmerzen mit 25 passenden Menschen ohne. Die mit Fersenschmerzen standen am Tag 3,4\u00A0Stunden länger und trugen Schuhe mit härteren Absätzen. Das zeigt einen Zusammenhang, keine Ursache.',
         'Ein tiefer Schmerz mitten in der Ferse, der barfuß auf hartem Boden schlimmer ist, kann auch vom Fersenfettpolster kommen (dem Fettpolster unter dem Fersenbein). Zu diesem Muster siehe [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
-        'Kurze Zeiten barfuß auf Gras oder Sand sind schonender. Wenn sie deinen Fersenschmerz am nächsten Morgen verstärken, war es zu viel.',
+        'Kurze Zeiten barfuß auf Gras oder Sand sind schonender. Wenn sie deinen Fersenschmerz am nächsten Morgen verstärken, war es zu viel. Derselbe Check am nächsten Morgen gilt für jeden Spaziergang, siehe [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
       ],
       cites: [CITE.landorfFootwear],
     },

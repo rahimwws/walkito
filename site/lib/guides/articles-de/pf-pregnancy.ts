@@ -50,7 +50,7 @@ export const PF_PREGNANCY_DE: Guide = {
       keyFact: 'Von 49\u00A0Frauen hatten etwa viereinhalb Monate nach der Geburt 35 ein abgesunkenes Gewölbe und 30 längere Füße (Segal und Kollegen, 2013).',
       paragraphs: [
         '**Der klarste Befund: Das Gewölbe wird flacher und der Fuß länger.** Eine Studie von 2013 hat 49\u00A0Frauen im ersten Trimester und noch einmal etwa viereinhalb Monate nach der Geburt vermessen. Gewölbehöhe und Gewölbesteifigkeit nahmen ab, Fußlänge und Absinken des Gewölbes nahmen zu. 35 der 49 hatten ein abgesunkenes Gewölbe, und 30 hatten längere Füße, die meisten um 2 bis 10\u00A0Millimeter.',
-        'Die Ursache ist weniger klar, als viele Websites behaupten. In dieser Studie hingen lockerere Gelenke und die Gewichtszunahme in der Schwangerschaft nicht damit zusammen, wie stark sich die Füße veränderten. Gewicht und langes Stehen sind bekannte Risikofaktoren für Plantarfasziitis im Allgemeinen (Koc und Kollegen, 2023), aber keine Studie hat sie in der Schwangerschaft untersucht.',
+        'Die Ursache ist weniger klar, als viele Websites behaupten. In dieser Studie hingen lockerere Gelenke und die Gewichtszunahme in der Schwangerschaft nicht damit zusammen, wie stark sich die Füße veränderten. [Gewicht](/de/gewicht-und-plantarfasziitis/) und langes Stehen sind bekannte Risikofaktoren für Plantarfasziitis im Allgemeinen (Koc und Kollegen, 2023), aber keine Studie hat sie in der Schwangerschaft untersucht.',
         'Schwellungen, ein schwererer Körper und ein veränderter Gang verändern, wie sich die Last über den Fuß verteilt. Die Plantarfaszie ist das Band unter dem Fuß, das das Gewölbe trägt. Ein flacheres Gewölbe und mehr Last können sie also stärker beanspruchen. Mehr dazu, wie ein flacheres Gewölbe auch nach der Geburt bleiben kann: [Plattfuß im Alter](/de/plattfuss-im-alter/).',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -208,7 +208,7 @@ export const PF_PREGNANCY_DE: Guide = {
     {
       q: 'Ist Gehen bei Plantarfasziitis in der Schwangerschaft schlecht?',
       cites: [CITE.acogExercise],
-      a: 'Gehen ist eine der Aktivitäten, die das ACOG in der Schwangerschaft vorschlägt, als Teil von mindestens 150\u00A0Minuten mäßiger Bewegung pro Woche. Keine Studie hat Gehen bei Plantarfasziitis in der Schwangerschaft untersucht. Frag deshalb deine Frauenärztin, deinen Frauenarzt oder deine Hebamme, wie viel für dich passt.',
+      a: 'Gehen ist eine der Aktivitäten, die das ACOG in der Schwangerschaft vorschlägt, als Teil von mindestens 150\u00A0Minuten mäßiger Bewegung pro Woche. Keine Studie hat [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/) in der Schwangerschaft untersucht. Frag deshalb deine Frauenärztin, deinen Frauenarzt oder deine Hebamme, wie viel für dich passt.',
     },
     {
       q: 'Darf ich in der Schwangerschaft eine Stoßwellentherapie oder eine Kortisonspritze bekommen?',

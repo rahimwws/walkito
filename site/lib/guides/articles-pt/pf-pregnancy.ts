@@ -49,7 +49,7 @@ export const PF_PREGNANCY_PT: Guide = {
       keyFact: 'De 49\u00A0mulheres, 35 tiveram queda do arco e 30 ficaram com o pé mais comprido cerca de quatro meses e meio depois do parto (Segal e colegas, 2013).',
       paragraphs: [
         '**O achado mais claro é que o arco baixa e o pé fica mais comprido.** Um estudo de 2013 mediu 49\u00A0mulheres no primeiro trimestre e de novo cerca de quatro meses e meio depois do parto. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram. 35 das 49 tiveram queda do arco, e 30 ficaram com o pé mais comprido, a maioria de 2 a 10\u00A0milímetros.',
-        'A causa é menos clara do que muitos sites dizem. Nesse estudo, a frouxidão das articulações e o ganho de peso na gravidez não tiveram relação com o quanto o pé mudou. O peso e muitas horas em pé são fatores de risco conhecidos para a fascite plantar em geral (Koc e colegas, 2023), mas nenhum estudo testou esses fatores na gravidez.',
+        'A causa é menos clara do que muitos sites dizem. Nesse estudo, a frouxidão das articulações e o ganho de peso na gravidez não tiveram relação com o quanto o pé mudou. O [peso](/pt/peso-e-fascite-plantar/) e muitas horas em pé são fatores de risco conhecidos para a fascite plantar em geral (Koc e colegas, 2023), mas nenhum estudo testou esses fatores na gravidez.',
         'O inchaço, um corpo mais pesado e um jeito diferente de andar mudam a forma como a carga se distribui no pé. A fáscia plantar é a faixa embaixo do pé que sustenta o arco, então um arco mais baixo e mais carga podem sobrecarregá-la. Mais sobre como um arco mais baixo pode persistir depois do parto: [pé chato piora com a idade?](/pt/pe-chato-piora-com-a-idade/)',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -207,7 +207,7 @@ export const PF_PREGNANCY_PT: Guide = {
     {
       q: 'Caminhar faz mal para a fascite plantar na gravidez?',
       cites: [CITE.acogExercise],
-      a: 'Caminhar é uma das atividades que o ACOG sugere na gravidez, como parte de pelo menos 150\u00A0minutos de atividade moderada por semana. Nenhum estudo analisou a caminhada com fascite plantar na gravidez, então pergunte ao seu médico ou obstetra quanto é adequado para você.',
+      a: 'Caminhar é uma das atividades que o ACOG sugere na gravidez, como parte de pelo menos 150\u00A0minutos de atividade moderada por semana. Nenhum estudo analisou a [caminhada com fascite plantar](/pt/caminhar-com-fascite-plantar/) na gravidez, então pergunte ao seu médico ou obstetra quanto é adequado para você.',
     },
     {
       q: 'Posso fazer ondas de choque ou infiltração de corticoide na gravidez?',

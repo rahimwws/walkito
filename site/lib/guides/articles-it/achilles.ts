@@ -21,7 +21,7 @@ export const ACHILLES_IT: Guide = {
   lede:
     'Gli esercizi per la tendinite d’Achille funzionano meglio quando la discesa del tallone è intesa come lavoro di forza, non come allungamento. La linea guida clinica del 2024 dà all’esercizio il grado più alto, **A**, e una meta-analisi a rete del 2021 su 29\u00A0studi non ha trovato un protocollo chiaramente migliore di un altro. Quello che conta è caricare il tendine con costanza per settimane.',
   intro: [
-    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
+    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Non sai bene quale dei due sia? Leggi [fascite plantare o tendinite d’Achille](/it/fascite-plantare-o-tendinite-achille/). Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
     'La maggior parte delle persone usa «tendinite» e «tendinopatia» come sinonimi. Le linee guida attuali usano «tendinopatia» perché di solito il problema è di carico, non un’infiammazione pura. Questa pagina usa «tendinite» nei titoli e «tendinopatia» dove la usa la linea guida.',
   ],
   takeaways: [
@@ -208,7 +208,7 @@ export const ACHILLES_IT: Guide = {
       h2: 'Si può continuare a correre durante la riabilitazione dell’Achille?',
       paragraphs: [
         'In Silbernagel 2007, i pazienti che hanno continuato a correre durante la riabilitazione seguendo il modello di controllo del dolore non sono andati peggio di quelli che si erano prima fermati a riposo. Entrambi i gruppi sono migliorati a 12\u00A0mesi. Lo studio concludeva che un’attività continuata e guidata dal dolore «potrebbe quindi rappresentare un’opzione valida» durante la riabilitazione.',
-        'Questo non vuol dire che correre sia innocuo in ogni caso. **Se il dolore non passa durante la notte, o se ogni settimana va peggio, riduci.** Il dolore all’attaccatura sull’osso del tallone richiede più cautela di quello nella parte media del tendine. Qualsiasi schiocco o scatto improvviso è un motivo per fermarti e rivolgerti a un professionista sanitario.',
+        'Questo non vuol dire che correre sia innocuo in ogni caso. **Se il dolore non passa durante la notte, o se ogni settimana va peggio, riduci.** Il dolore all’attaccatura sull’osso del tallone richiede più cautela di quello nella parte media del tendine. Qualsiasi schiocco o scatto improvviso è un motivo per fermarti e rivolgerti a un professionista sanitario. Un programma di forza per chi corre è in [esercizi per i piedi per runner](/it/esercizi-piedi-runner/), e [dolore ai piedi dopo il trekking](/it/dolore-piedi-escursionismo/) parla di salite, discese e peso dello zaino.',
       ],
       cites: [CITE.silbernagel],
     },

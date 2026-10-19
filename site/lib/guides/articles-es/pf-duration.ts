@@ -171,7 +171,7 @@ export const PF_DURATION_ES: Guide = {
     {
       q: '¿Por qué no se me quita la fascitis plantar?',
       cites: [CITE.guideline],
-      a: 'Hay varias posibilidades. Puede que no hagas los ejercicios con suficiente constancia, que tus zapatos no den buen soporte, o que la carga diaria sobre el pie (pasos, horas de pie, kilómetros corriendo) sea más de lo que el tejido puede recuperar. También puede ser que no sea fascitis plantar. Si estirar y fortalecer no ha ayudado después de varios meses, la guía de 2023 recomienda hablar con un profesional de la salud de opciones como las férulas nocturnas, el láser o la punción seca.',
+      a: 'Hay varias posibilidades, que se explican en detalle en [fascitis plantar que no mejora](/es/fascitis-plantar-no-mejora/). Puede que no hagas los ejercicios con suficiente constancia, que tus zapatos no den buen soporte, o que la carga diaria sobre el pie (pasos, horas de pie, kilómetros corriendo) sea más de lo que el tejido puede recuperar. También puede ser que no sea fascitis plantar. Si estirar y fortalecer no ha ayudado después de varios meses, la guía de 2023 recomienda hablar con un profesional de la salud de opciones como las férulas nocturnas, el láser o la punción seca.',
     },
     {
       q: '¿El espolón calcáneo hace que la fascitis plantar dure más?',
@@ -190,7 +190,7 @@ export const PF_DURATION_ES: Guide = {
     {
       q: '¿La fascitis plantar puede volver después de quitarse?',
       cites: [CITE.hansen],
-      a: 'Sí. En la cohorte de Hansen de 2018, el 32\u00A0% del grupo que se quedó sin síntomas tuvo al menos una recaída antes de quedar sin síntomas de forma permanente. Es común mejorar, recaer y volver a mejorar. Seguir con una dosis de mantenimiento de trabajo de pantorrilla y estiramientos después de que el dolor se va es una forma de bajar la probabilidad de que vuelva.',
+      a: 'Sí. En la cohorte de Hansen de 2018, el 32\u00A0% del grupo que se quedó sin síntomas tuvo al menos una recaída antes de quedar sin síntomas de forma permanente. Es común mejorar, [recaer](/es/brote-de-fascitis-plantar/) y volver a mejorar. Seguir con una dosis de mantenimiento de trabajo de pantorrilla y estiramientos después de que el dolor se va es una forma de bajar la probabilidad de que vuelva.',
     },
     {
       q: '¿Cuáles son las señales de que la fascitis plantar está mejorando?',

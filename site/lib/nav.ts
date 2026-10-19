@@ -84,6 +84,11 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   hairdressers: 'Hairdressers',
   weightPf: 'Weight and plantar fasciitis',
   hikers: 'Hiking and long walks',
+  pfFlareUp: 'Plantar fasciitis flare-up',
+  pfKneeHipBack: 'PF and knee, hip or back pain',
+  heelNotPf: 'Heel pain that isn\'t plantar fasciitis',
+  pfNotBetter: 'Plantar fasciitis not getting better',
+  pfMenopause: 'Plantar fasciitis and menopause',
 };
 
 /** Spanish footer labels, for the articles that exist in Spanish. */
@@ -163,6 +168,11 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   hairdressers: 'Peluqueros',
   weightPf: 'Peso y fascitis plantar',
   hikers: 'Senderismo y caminatas largas',
+  pfFlareUp: 'Brote de fascitis plantar',
+  pfKneeHipBack: 'Fascitis plantar y dolor de rodilla',
+  heelNotPf: 'Dolor de talón que no es fascitis',
+  pfNotBetter: 'Fascitis plantar que no mejora',
+  pfMenopause: 'Fascitis plantar y menopausia',
 };
 
 /** Russian footer labels, for the articles that exist in Russian. */
@@ -242,12 +252,17 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
   hairdressers: 'Парикмахеры',
   weightPf: 'Вес и плантарный фасциит',
   hikers: 'Походы и долгие прогулки',
+  pfFlareUp: 'Обострение фасциита',
+  pfKneeHipBack: 'Фасциит и боль в колене',
+  heelNotPf: 'Боль в пятке, но не фасциит',
+  pfNotBetter: 'Фасциит не проходит',
+  pfMenopause: 'Фасциит и менопауза',
 };
 
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],
-  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs', 'pfVsAchilles', 'pfVsStressFracture', 'walkingPf', 'weightPf'],
+  heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'pfPregnancy', 'heelFatPad', 'haglunds', 'severs', 'pfVsAchilles', 'pfVsStressFracture', 'walkingPf', 'weightPf', 'pfFlareUp', 'pfKneeHipBack', 'heelNotPf', 'pfNotBetter', 'pfMenopause'],
   foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening'],
   ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening', 'runnersFootExercises'],
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
@@ -321,6 +336,11 @@ export const TOPICS: Record<Topic, readonly GuideKey[]> = {
     'hairdressers',
     'weightPf',
     'hikers',
+    'pfFlareUp',
+    'pfKneeHipBack',
+    'heelNotPf',
+    'pfNotBetter',
+    'pfMenopause',
   ],
   flat: [
     'hubFlatFeet', 'flatFeet', 'archPain', 'pttd', 'highArches', 'footStrengthening',

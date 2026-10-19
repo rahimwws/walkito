@@ -255,8 +255,9 @@ export default function TerminiIt() {
         <p>
           Walkito è fornito così com’è. Non promettiamo che seguire il programma
           ridurrà il tuo dolore, cambierà il tuo arco o porterà a un risultato
-          particolare. La <a href="/science/">pagina delle evidenze</a> (in
-          inglese) spiega cosa ha trovato la ricerca che segue, compreso dove
+          particolare. La sezione{' '}
+          <a href="/it/chi-siamo/#how-we-research">Come facciamo ricerca</a>{' '}
+          spiega come leggiamo la ricerca su cui si basa e come segnaliamo dove
           quelle prove finiscono.
         </p>
         <p>

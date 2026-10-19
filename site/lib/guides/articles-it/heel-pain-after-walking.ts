@@ -32,7 +32,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
   ],
   takeaways: [
     'La linea guida del 2023 sul dolore al tallone descrive il dolore della fascite plantare come «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo», ma elenca anche il dolore che peggiora con un’attività prolungata in carico come una caratteristica chiave (Koc e colleghi, 2023).',
-    'In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia (quanto il piede si piega verso lo stinco) era il fattore di rischio indipendente più forte, davanti a un indice di massa corporea sopra 30 e allo stare in piedi per gran parte della giornata lavorativa (Riddle e colleghi, 2003).',
+    'In uno studio caso-controllo appaiato con 50\u00A0persone con fascite plantare e 100\u00A0controlli, una ridotta dorsiflessione della caviglia (quanto il piede si piega verso lo stinco) era il fattore di rischio indipendente più forte, davanti a un [indice di massa corporea sopra 30](/it/peso-e-fascite-plantare/) e allo stare in piedi per gran parte della giornata lavorativa (Riddle e colleghi, 2003).',
     'La linea guida dà all’allungamento della fascia plantare e del polpaccio il grado più alto, **A**, e al lavoro di forza una **B** (Koc e colleghi, 2023).',
     'Circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching, lavoro sul polpaccio e gestione del carico (Latt e colleghi, 2020).',
     'Un dolore al tallone dopo aver camminato che cresce a ogni uscita e non passa con il riposo può indicare una frattura da stress invece della fascite plantare. Stringere i lati del tallone è uno dei segni clinici.',
@@ -55,8 +55,8 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
         {
           list: [
             '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone ammortizza ogni passo. Quando si assottiglia o si sposta, l’osso riceve colpi più diretti. Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiore su superfici dure e camminando scalzi (Chang e colleghi, 2022). Il dolore della fascite plantare di solito si trova nella parte interna e anteriore del tallone. Quello del cuscinetto adiposo è proprio sotto il centro. Se camminare scalzo su piastrelle o cemento è chiaramente peggio che camminare con scarpe ammortizzate, vale la pena pensare a un assottigliamento del cuscinetto adiposo. Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per saperne di più.',
-            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille può far male dopo una camminata lunga, soprattutto in salita. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
-            '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo caso, rivolgiti a un professionista sanitario prima di allenare il piede.',
+            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille può far male dopo una camminata lunga, soprattutto in salita. Per le escursioni con lunghe salite e discese, vedi [dolore ai piedi dopo il trekking](/it/dolore-piedi-escursionismo/). Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+            '**Frattura da stress del calcagno.** Un dolore che arriva piano piano dopo un aumento improvviso della distanza o dell’intensità delle camminate. A differenza della fascite plantare, il dolore da frattura da stress tende a crescere con l’attività e non passa molto con il riposo. Stringere i lati del tallone può riprodurre il dolore. Se questo corrisponde al tuo caso, rivolgiti a un professionista sanitario prima di allenare il piede. [Fascite plantare o frattura da stress](/it/fascite-plantare-o-frattura-da-stress/) mette a confronto i due problemi.',
             '**Dolore riferito dalla zona lombare o nervo compresso.** Un dolore al tallone che si accompagna a intorpidimento, formicolio o bruciore può indicare un problema ai nervi, non un problema di carico sui tessuti. È un motivo per rivolgerti prima a un professionista sanitario.',
           ],
         },
@@ -161,7 +161,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
     {
       h2: 'Quanto camminare quando il tallone fa male?',
       paragraphs: [
-        'L’obiettivo non è smettere di camminare. È trovare la distanza che il tallone riesce a reggere senza riacutizzarsi la mattina dopo, e poi costruire da lì.',
+        'L’obiettivo non è smettere di camminare. È trovare la distanza che il tallone riesce a reggere senza riacutizzarsi la mattina dopo, e poi costruire da lì. [Quanto puoi camminare con la fascite plantare](/it/camminare-con-fascite-plantare/) ti dà una regola semplice sul dolore e un modo per tornare a camminare di più.',
         'Un approccio pratico:',
         {
           list: [

@@ -175,6 +175,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         '[Piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega esercizi e scarpe per chi sta in piedi al lavoro.',
         '[Infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/) parla di turni lunghi su pavimenti duri.',
         '[Scrivania in piedi e dolore ai piedi](/it/scrivania-in-piedi-dolore-piedi/) spiega il passaggio tra seduto e in piedi.',
+        'Altri lavori su pavimenti duri hanno pagine dedicate: [insegnanti](/it/dolore-piedi-insegnanti/), [commercio e magazzino](/it/dolore-piedi-commercio-magazzino/), [cuochi e personale di cucina](/it/dolore-piedi-cuochi/) e [parrucchieri](/it/dolore-piedi-parrucchieri/).',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -184,10 +185,10 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         'Diversi problemi hanno la stessa posizione o lo stesso andamento al mattino. Dove si trova il dolore e come si comporta aiutano a distinguerli:',
         {
           list: [
-            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+            '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. La rigidità ai primi passi è comune, ma il dolore è più in alto. [Come distinguere i due problemi](/it/fascite-plantare-o-tendinite-achille/). Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         '**Sindrome del cuscinetto adiposo del tallone.** Un dolore profondo al centro del tallone, peggiore su superfici dure e a piedi nudi. Una scoping review del 2022 ha notato che può essere difficile distinguerla dalla fascite plantare senza esami di imaging. Il [dolore del cuscinetto adiposo](/it/sindrome-cuscinetto-adiposo-tallone/) è proprio sotto il centro, quello della fascite nella parte interna e anteriore.',
         '**Sperone calcaneare.** Una crescita ossea sulla parte inferiore dell’osso del tallone. Molte persone ne hanno una senza alcun dolore. Nella coorte di Hansen del 2018 su 174\u00A0pazienti, avere uno sperone calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi. Lo sperone spesso c’è, ma di solito non è lui a causare il dolore.',
-        '**Frattura da stress del calcagno.** Un dolore che aumenta con l’attività invece di calmarsi quando ti scaldi. Può fare male a riposo o di notte. Stringere i lati del tallone spesso lo riproduce. Rivolgiti a un professionista sanitario prima di allenare il piede.',
+        '**Frattura da stress del calcagno.** Un dolore che aumenta con l’attività invece di calmarsi quando ti scaldi. [Come distinguerla dalla fascite plantare](/it/fascite-plantare-o-frattura-da-stress/). Può fare male a riposo o di notte. Stringere i lati del tallone spesso lo riproduce. Rivolgiti a un professionista sanitario prima di allenare il piede.',
         '**Artrite infiammatoria.** Quando fanno male entrambi i talloni, la rigidità del mattino dura più di 30\u00A0minuti e altre articolazioni sono rigide o gonfie, il quadro fa pensare a una causa sistemica. Deve controllarlo un professionista sanitario.',
           ],
         },
@@ -230,7 +231,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       q: 'Camminare fa bene o male alla fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Camminare con scarpe che sostengono il piede, a un ritmo comodo, in genere va bene. La linea guida non dice di smettere di muoversi. Il test è come sta il tallone la mattina dopo. Se il dolore ai primi passi dopo una camminata è chiaramente più alto del solito, quella camminata è stata troppo impegnativa. Accorcia la distanza prima di fermarti del tutto.',
+      a: 'Camminare con scarpe che sostengono il piede, a un ritmo comodo, in genere va bene. La linea guida non dice di smettere di muoversi. Il test è come sta il tallone la mattina dopo. Se il dolore ai primi passi dopo una camminata è chiaramente più alto del solito, quella camminata è stata troppo impegnativa. Accorcia la distanza prima di fermarti del tutto. Trovi di più in [camminare con la fascite plantare](/it/camminare-con-fascite-plantare/).',
     },
     {
       q: 'Lo sperone calcaneare causa la fascite plantare?',
@@ -258,7 +259,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     {
       q: 'Perché mi è venuta all’improvviso la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Una fascite plantare improvvisa di solito segue un cambiamento improvviso del carico, non un infortunio improvviso. Un aumento rapido dei chilometri di corsa, scarpe nuove, un nuovo lavoro che ti tiene in piedi o un aumento di peso possono sovraccaricare la fascia più in fretta di quanto riesca ad adattarsi. Stare in piedi a lungo al lavoro è uno dei fattori di rischio riconosciuti dalla linea guida del 2023 sul dolore al tallone.',
+      a: 'Una fascite plantare improvvisa di solito segue un cambiamento improvviso del carico, non un infortunio improvviso. Un aumento rapido dei chilometri di corsa, scarpe nuove, un nuovo lavoro che ti tiene in piedi o un [aumento di peso](/it/peso-e-fascite-plantare/) possono sovraccaricare la fascia più in fretta di quanto riesca ad adattarsi. Stare in piedi a lungo al lavoro è uno dei fattori di rischio riconosciuti dalla linea guida del 2023 sul dolore al tallone.',
     },
   ],
   redFlags: {

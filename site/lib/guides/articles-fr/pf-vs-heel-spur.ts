@@ -40,7 +40,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
       figure: { id: 'heel-side', caption: 'Une épine calcanéenne, quand il y en a une, se forme sous l’os du talon, près de l’endroit où s’attache le fascia plantaire.', alt: 'Vue de côté, face intérieure, d’un pied à la peau transparente montrant l’os du talon, le fascia plantaire sous la voûte et une zone rouge sous le talon là où la douleur commence souvent.' },
       paragraphs: [
         '**Une épine calcanéenne et une fasciite plantaire ne sont pas la même chose.** La fasciite plantaire est un problème de tissu mou\u00A0: le fascia plantaire, l’épaisse bande qui va de l’os du talon aux orteils, s’irrite, en général là où il s’attache à l’os. Une épine calcanéenne est une excroissance osseuse sous l’os du talon (le calcanéum). Les deux coexistent souvent, mais chacune peut apparaître sans l’autre.',
-        'La fasciite plantaire donne la douleur vive, en coup de poignard, que les gens décrivent sous le talon, surtout aux premiers pas du matin ou après être resté assis. La recommandation de 2023 sur la douleur au talon la définit comme une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Une épine calcanéenne, elle, est une constatation structurelle à la radio. Elle peut donner ou non ses propres symptômes.',
+        'La fasciite plantaire donne la douleur vive, en coup de poignard, que les gens décrivent sous le talon, surtout aux premiers pas du matin ou après être resté assis. Une douleur à l’arrière du talon est un autre problème\u00A0: voyez [fasciite plantaire ou tendinite d’Achille](/fr/fasciite-plantaire-ou-tendinite-achille/). La recommandation de 2023 sur la douleur au talon la définit comme une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Une épine calcanéenne, elle, est une constatation structurelle à la radio. Elle peut donner ou non ses propres symptômes.',
         'La confusion se comprend. Pendant des décennies, on a pensé que l’épine calcanéenne était la cause de la douleur sous le talon. Cette idée a été largement remplacée par des données montrant que les épines sont fréquentes chez des personnes sans douleur, et que beaucoup de personnes atteintes de fasciite plantaire n’ont aucune épine.',
       ],
       cites: [CITE.ehrmannSpur, CITE.guideline],
@@ -102,7 +102,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
           list: [
             'Quand la douleur ne suit pas le schéma typique de la fasciite plantaire.',
             'Quand elle ne s’est pas améliorée après plusieurs semaines de soins conservateurs.',
-            'Quand un professionnel de santé soupçonne autre chose, comme une fracture de fatigue, un problème nerveux ou une déchirure du fascia plantaire.',
+            'Quand un professionnel de santé soupçonne autre chose, comme une [fracture de fatigue](/fr/fasciite-plantaire-ou-fracture-de-fatigue/), un problème nerveux ou une déchirure du fascia plantaire.',
           ],
         },
         'L’échographie peut mesurer l’épaisseur du fascia plantaire (au-delà de 4\u00A0mm, il est en général considéré comme épaissi), et l’IRM peut montrer des détails des tissus mous que la radio ne voit pas.',

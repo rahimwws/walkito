@@ -170,6 +170,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       bullets: [
         '[Mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) présente les exercices et les chaussures pour les personnes debout au travail.',
         '[Infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/) traite des longues gardes sur sol dur.',
+        'D’autres métiers sur sol dur ont leur propre page\u00A0: [enseignants](/fr/mal-aux-pieds-enseignants/), [employés du commerce et des entrepôts](/fr/mal-aux-pieds-commerce-entrepot/), [cuisiniers et personnel de cuisine](/fr/mal-aux-pieds-cuisiniers/) et [coiffeurs](/fr/mal-aux-pieds-coiffeurs/).',
         '[Bureau debout et douleur aux pieds](/fr/bureau-debout-mal-aux-pieds/) parle de l’alternance assis-debout.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
@@ -180,10 +181,10 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
         'Plusieurs problèmes ont le même emplacement ou le même schéma du matin. L’endroit de la douleur et son comportement aident à les distinguer\u00A0:',
         {
           list: [
-            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. Voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
+            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. [Comment distinguer les deux](/fr/fasciite-plantaire-ou-tendinite-achille/). Voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
             '**Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du [coussinet](/fr/syndrome-coussinet-graisseux-talon/) est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.',
             '**Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174\u00A0patients, une [épine calcanéenne](/fr/epine-calcaneenne-exercices/) au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.',
-            '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut [faire mal au repos ou la nuit](/fr/douleur-talon-la-nuit/). Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
+            '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. [Comment les distinguer](/fr/fasciite-plantaire-ou-fracture-de-fatigue/). Elle peut [faire mal au repos ou la nuit](/fr/douleur-talon-la-nuit/). Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
             '**Rhumatisme inflammatoire.** Quand les deux talons font mal, que la raideur du matin dure plus de 30\u00A0minutes et que d’autres articulations sont raides ou gonflées, le tableau oriente vers une cause générale. Un professionnel de santé doit vérifier.',
           ],
         },
@@ -226,7 +227,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     {
       q: 'Marcher, c’est bon ou mauvais pour la fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
-      a: 'Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème. La recommandation ne dit pas d’arrêter de bouger. Le test, c’est votre talon le lendemain matin. Si la douleur aux premiers pas le matin après une marche est nettement plus forte que d’habitude, cette marche était de trop. Raccourcissez la distance avant d’arrêter complètement.',
+      a: 'Marcher à une allure confortable avec des chaussures qui soutiennent le pied ne pose en général pas de problème. La recommandation ne dit pas d’arrêter de bouger. Le test, c’est votre talon le lendemain matin. Si la douleur aux premiers pas le matin après une marche est nettement plus forte que d’habitude, cette marche était de trop. Raccourcissez la distance avant d’arrêter complètement. Plus de détails dans [marcher avec une fasciite plantaire](/fr/marcher-avec-fasciite-plantaire/).',
     },
     {
       q: 'Une épine calcanéenne cause-t-elle la fasciite plantaire\u00A0?',
@@ -254,7 +255,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     {
       q: 'Pourquoi ai-je eu une fasciite plantaire d’un coup\u00A0?',
       cites: [CITE.guideline],
-      a: 'Une fasciite plantaire soudaine suit en général un changement soudain de charge, pas une blessure soudaine. Une hausse rapide du kilométrage en course, de nouvelles chaussures, un nouveau travail où vous restez debout, ou une prise de poids peuvent surcharger le fascia plus vite qu’il ne s’adapte. Rester longtemps debout au travail fait partie des facteurs de risque reconnus par la recommandation de 2023 sur la douleur au talon.',
+      a: 'Une fasciite plantaire soudaine suit en général un changement soudain de charge, pas une blessure soudaine. Une hausse rapide du kilométrage en course, de nouvelles chaussures, un nouveau travail où vous restez debout, ou une [prise de poids](/fr/poids-et-fasciite-plantaire/) peuvent surcharger le fascia plus vite qu’il ne s’adapte. Rester longtemps debout au travail fait partie des facteurs de risque reconnus par la recommandation de 2023 sur la douleur au talon.',
     },
   ],
   redFlags: {

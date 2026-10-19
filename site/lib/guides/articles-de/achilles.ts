@@ -19,7 +19,7 @@ export const ACHILLES_DE: Guide = {
   lede:
     'Übungen bei Achillessehnenentzündung wirken am besten, wenn du das Fersenabsenken als Krafttraining verstehst, nicht als Dehnung. Die klinische Leitlinie von 2024 gibt Übungen den höchsten Empfehlungsgrad **A** und eine Netzwerk-Metaanalyse von 2021 mit 29\u00A0Studien fand kein Protokoll, das klar besser war als ein anderes. Entscheidend ist, die Sehne über Wochen gleichmäßig zu belasten.',
   intro: [
-    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
+    'Diese Seite geht bei diesen Übungen in die Tiefe. Wenn dein Schmerz unter dem Fuß sitzt und nicht hinten an der Ferse, suchst du eher [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Wenn du nicht sicher bist, was es ist, hilft dir [Plantarfasziitis oder Achillessehnenentzündung](/de/plantarfasziitis-oder-achillessehne/) beim Unterscheiden. Wenn der Schmerz am Schienbein entlang sitzt statt an der Ferse, lies [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/). Wenn er nur nach einem langen Tag auf den Beinen kommt und nicht beim Laufen, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
     'Die meisten verwenden „Achillessehnenentzündung“ und „Tendinopathie“ gleichbedeutend. Aktuelle Leitlinien sprechen von „Tendinopathie“, weil das Problem meist eine Frage der Belastung ist und keine reine Entzündung. Diese Seite sagt „Achillessehnenentzündung“ in den Überschriften und „Tendinopathie“ dort, wo die Leitlinie es tut.',
   ],
   takeaways: [
@@ -206,7 +206,7 @@ export const ACHILLES_DE: Guide = {
       h2: 'Kannst du während der Reha der Achillessehne weiterlaufen?',
       paragraphs: [
         'In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12\u00A0Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzüberwachung während der Reha „daher eine wertvolle Option sein könnte“.',
-        'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen.',
+        'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. **Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück.** Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zum Arzt oder zur Ärztin zu gehen. Ein Kraftprogramm fürs Laufen findest du unter [Fußübungen für Läufer](/de/fussuebungen-fuer-laeufer/), und [Fußschmerzen nach dem Wandern](/de/fussschmerzen-nach-wanderung/) geht auf Anstiege, Abstiege und Rucksackgewicht ein.',
       ],
       cites: [CITE.silbernagel],
     },

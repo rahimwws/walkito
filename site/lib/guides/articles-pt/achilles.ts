@@ -19,7 +19,7 @@ export const ACHILLES_PT: Guide = {
   lede:
     'Os exercícios para tendinite de Aquiles funcionam melhor quando você entende a descida do calcanhar como treino de força, não como alongamento. A diretriz clínica de 2024 dá ao exercício o grau máximo, **A**, e uma metanálise em rede de 2021 com 29\u00A0ensaios não encontrou nenhum protocolo claramente melhor que outro. O que importa é colocar carga no tendão com constância por semanas.',
   intro: [
-    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+    'Esta página aprofunda esses exercícios. Se a sua dor é embaixo do pé, e não na parte de trás do calcanhar, você está procurando [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Não sabe qual das duas é a sua? Veja [fascite plantar ou tendinite de Aquiles](/pt/fascite-plantar-ou-tendinite-de-aquiles/). Se a dor é ao longo da canela e não no calcanhar, veja [exercícios para canelite](/pt/canelite-exercicios/); se ela só aparece depois de um dia longo em pé e não com a corrida, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
     'A maioria das pessoas usa “tendinite” e “tendinopatia” como sinônimos. As diretrizes atuais usam “tendinopatia” porque o problema costuma ser de carga, não uma inflamação pura. Esta página usa “tendinite” nos títulos e “tendinopatia” onde a diretriz usa.',
   ],
   takeaways: [
@@ -206,7 +206,7 @@ export const ACHILLES_PT: Guide = {
       h2: 'Dá para continuar correndo durante a reabilitação do Aquiles?',
       paragraphs: [
         'No estudo de Silbernagel de 2007, os pacientes que continuaram correndo durante a reabilitação, seguindo o modelo de monitorar a dor, não se saíram pior do que os que descansaram primeiro. Os dois grupos melhoraram aos 12\u00A0meses. O ensaio concluiu que a atividade contínua, com a dor monitorada, “pode, portanto, representar uma opção valiosa” durante a reabilitação.',
-        'Isso não quer dizer que correr é inofensivo em todos os casos. **Se a dor não passa durante a noite, ou se cada semana é pior, diminua.** Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde.',
+        'Isso não quer dizer que correr é inofensivo em todos os casos. **Se a dor não passa durante a noite, ou se cada semana é pior, diminua.** Dor no ponto onde o tendão se prende no osso do calcanhar pede mais cuidado do que dor no meio do tendão. Qualquer estalo repentino é motivo para parar e procurar um profissional de saúde. Para uma rotina de força, veja [exercícios para os pés de corredores](/pt/exercicios-para-os-pes-corredores/), e para subidas, descidas e o peso da mochila, [dor nos pés depois de trilha](/pt/dor-nos-pes-trilha/).',
       ],
       cites: [CITE.silbernagel],
     },

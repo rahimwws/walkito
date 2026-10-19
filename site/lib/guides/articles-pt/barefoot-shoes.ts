@@ -108,7 +108,7 @@ export const BAREFOOT_PT: Guide = {
         'Porcelanato ou madeira não amortecem nada o calcanhar, e os primeiros passos depois do repouso são quando a fascite plantar costuma doer mais. A nossa página [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) sugere um alongamento antes de ficar em pé e algo nos pés para esses primeiros passos.',
         'O amortecimento embaixo do calcanhar pode fazer diferença. Em um estudo de 2023, Landorf e colegas compararam 50\u00A0pessoas com dor na sola do calcanhar com 25\u00A0pessoas parecidas sem essa dor. As que tinham dor no calcanhar ficavam em pé 3,4\u00A0horas a mais por dia e usavam calçados com o calcanhar mais duro. Isso mostra uma associação, não uma causa.',
         'Uma dor profunda no centro do calcanhar, que piora descalço em chão duro, também pode vir do coxim gorduroso do calcanhar (a almofada de gordura embaixo do osso do calcanhar). Veja [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/) para esse padrão.',
-        'Períodos curtos descalço na grama ou na areia são mais suaves. Se eles aumentam a dor no calcanhar na manhã seguinte, foi demais.',
+        'Períodos curtos descalço na grama ou na areia são mais suaves. Se eles aumentam a dor no calcanhar na manhã seguinte, foi demais. O mesmo teste da manhã seguinte vale para qualquer caminhada: veja [caminhar com fascite plantar](/pt/caminhar-com-fascite-plantar/).',
       ],
       cites: [CITE.landorfFootwear],
     },

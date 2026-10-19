@@ -196,7 +196,7 @@ export const STANDING_DESK_DE: Guide = {
         },
         'Hör auf deine Füße und deinen unteren Rücken. Wenn sich Beschwerden aufbauen, setz dich früher hin, statt durchzuhalten.',
         'Leg von Anfang an eine Matte hin, wenn du eine hast. Trag Schuhe mit etwas Dämpfung, auch zu Hause. Mach die Wadendehnungen aus der Tabelle oben mindestens einmal am Tag.',
-        'Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/).',
+        'Wenn du schon Fußschmerzen vom Stehen hast und den breiteren Ratgeber willst, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich Schmerzen am Stehschreibtisch und Erkrankungen wie Plantarfasziitis überschneiden. Für die Version speziell für die Pflege lies [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/). Es gibt auch Seiten für [Lehrkräfte](/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](/de/fussschmerzen-friseure/).',
       ],
       cites: [CITE.buckley],
     },

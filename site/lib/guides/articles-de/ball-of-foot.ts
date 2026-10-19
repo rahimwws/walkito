@@ -42,7 +42,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     {
       h2: 'Was verursacht Schmerzen im Fußballen?',
       paragraphs: [
-        '**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein [Hohlfuß](/de/hohlfuss-uebungen/) und [verkürzte Wadenmuskeln](/de/verspannte-waden/) können alle dazu beitragen.',
+        '**Metatarsalgie** ist die häufigste Bezeichnung. Sie beschreibt Schmerz und Entzündung rund um eines oder mehrere Mittelfußköpfchen, meist das zweite und dritte. Überlastung, ein langer zweiter Mittelfußknochen, ein [Hohlfuß](/de/hohlfuss-uebungen/) und [verkürzte Wadenmuskeln](/de/verspannte-waden/) können alle dazu beitragen. Wenn es auf langen Wanderungen anfängt, lies [Fußschmerzen nach dem Wandern](/de/fussschmerzen-nach-wanderung/).',
         '**Morton-Neurom** ist eine Verdickung des Nervs zwischen den Mittelfußköpfchen, meist zwischen dem dritten und vierten Zeh. Es verursacht eher Brennen, Kribbeln oder Taubheit als einen reinen Schmerz. Enge Schuhe oder hohe Absätze drücken auf den Nerv und machen es schlimmer.',
         '**Sesamoiditis** ist eine Entzündung der zwei kleinen Knochen, die in der Sehne unter dem Großzehengrundgelenk liegen. Der Schmerz sitzt direkt unter dem großen Zeh und nicht unter der Mitte des Vorfußes.',
         '**Ermüdungsbruch eines Mittelfußknochens** ist ein kleiner Riss in einem der Mittelfußknochen, meist im zweiten oder dritten. Der Schmerz ist auf eine Stelle begrenzt, wird oft im Laufe des Tages schlimmer und kann nachts wehtun. Eine Schwellung oben auf dem Fuß ist häufig. Das braucht Bildgebung und Ruhe.',

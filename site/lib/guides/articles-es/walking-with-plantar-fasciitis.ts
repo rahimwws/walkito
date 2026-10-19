@@ -66,7 +66,7 @@ export const WALKING_PF_ES: Guide = {
       },
       after: [
         'La revisión de la mañana es la que más importa. El dolor en los primeros pasos es el síntoma clásico de la fascitis plantar, y es la señal más clara de cómo aguantó tu pie el día anterior. [Dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) explica ese patrón y los estiramientos que conviene hacer antes de pararte.',
-        'Un dolor agudo que te hace cojear, un dolor que aumenta con cada caminata y no mejora con el reposo, o un dolor por la noche quedan fuera de esta regla. Revisa la lista al final de esta página.',
+        'Un dolor agudo que te hace cojear, un dolor que aumenta con cada caminata y no mejora con el reposo, o un dolor por la noche quedan fuera de esta regla. Cojear también puede cargar la rodilla, la cadera y la espalda de otra forma: mira [fascitis plantar y dolor de rodilla, cadera o espalda](/es/fascitis-plantar-dolor-de-rodilla/). Revisa la lista al final de esta página.',
       ],
       sourceNote: 'Silbernagel 2007: 19\u00A0personas por grupo; la puntuación VISA-A-S pasó de 57 a 85 en el grupo activo y de 57 a 91 en el grupo de reposo a los doce meses, sin diferencia significativa en el ritmo de mejora.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -242,7 +242,7 @@ export const WALKING_PF_ES: Guide = {
     {
       q: '¿Caminar puede empeorar la fascitis plantar?',
       cites: [CITE.guideline],
-      a: 'Sí, si haces mucho más de lo que tu talón está acostumbrado a hacer. La guía de 2023 menciona el dolor de talón después de un aumento reciente de la actividad de pie o caminando como rasgo típico de la fascitis plantar. Una caminata larga de repente, una ruta nueva con cuestas o un día sobre pisos duros pueden provocar una crisis. Los aumentos pequeños y constantes son más fáciles para el talón.',
+      a: 'Sí, si haces mucho más de lo que tu talón está acostumbrado a hacer. La guía de 2023 menciona el dolor de talón después de un aumento reciente de la actividad de pie o caminando como rasgo típico de la fascitis plantar. Una caminata larga de repente, una ruta nueva con cuestas o un día sobre pisos duros pueden [provocar una crisis](/es/brote-de-fascitis-plantar/). Los aumentos pequeños y constantes son más fáciles para el talón.',
     },
     {
       q: '¿Debo dejar de caminar por completo para que se calme la fascitis plantar?',

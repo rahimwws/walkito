@@ -44,7 +44,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       figure: { id: 'heel-side', caption: 'Uno sperone calcaneare, quando c’è, si forma nella parte inferiore dell’osso del tallone, vicino al punto in cui si attacca la fascia plantare.', alt: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.' },
       paragraphs: [
         '**Sperone calcaneare e fascite plantare non sono la stessa cosa.** La fascite plantare è un problema del tessuto molle: la fascia plantare, la banda spessa che va dall’osso del tallone alle dita, si irrita, di solito dove si attacca all’osso. Lo sperone calcaneare è una sporgenza ossea sulla parte inferiore dell’osso del tallone (il calcagno). Le due spesso convivono, ma ognuna può comparire senza l’altra.',
-        'La fascite plantare dà il dolore acuto, a fitta, che le persone descrivono sotto il tallone, soprattutto ai primi passi del mattino o dopo essere state sedute. La linea guida del 2023 sul dolore al tallone la definisce come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo sperone calcaneare invece è un reperto strutturale in una radiografia. Può dare sintomi propri oppure no.',
+        'La fascite plantare dà il dolore acuto, a fitta, che le persone descrivono sotto il tallone, soprattutto ai primi passi del mattino o dopo essere state sedute. Il dolore nella parte posteriore del tallone è un altro problema: vedi [fascite plantare o tendinite d’Achille](/it/fascite-plantare-o-tendinite-achille/). La linea guida del 2023 sul dolore al tallone la definisce come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo sperone calcaneare invece è un reperto strutturale in una radiografia. Può dare sintomi propri oppure no.',
         'La confusione è comprensibile. Per decenni si è pensato che lo sperone calcaneare fosse la causa del dolore sotto il tallone. Quell’idea è stata in gran parte sostituita da prove che mostrano che gli speroni sono comuni in persone senza dolore, e che molte persone con fascite plantare non hanno alcuno sperone.',
       ],
       cites: [CITE.ehrmannSpur, CITE.guideline],
@@ -106,7 +106,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
           list: [
             'Quando il dolore non ha l’andamento tipico della fascite plantare.',
             'Quando non è migliorato dopo diverse settimane di cure conservative.',
-            'Quando un professionista sanitario sospetta altro, come una frattura da stress, un problema ai nervi o una rottura della fascia plantare.',
+            'Quando un professionista sanitario sospetta altro, come una [frattura da stress](/it/fascite-plantare-o-frattura-da-stress/), un problema ai nervi o una rottura della fascia plantare.',
           ],
         },
         'L’ecografia può misurare lo spessore della fascia plantare (un valore sopra i 4\u00A0mm di solito si considera ispessito), e la risonanza magnetica può mostrare dettagli dei tessuti molli che la radiografia non vede.',

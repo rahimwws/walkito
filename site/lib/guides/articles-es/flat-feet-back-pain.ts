@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_ES: Guide = {
       paragraphs: [
         'La explicación de siempre es la cadena cinética: la idea de que las articulaciones desde el pie hasta la columna se mueven como un sistema conectado, así que un pie que se va hacia adentro gira la pierna y el muslo hacia adentro, inclina la pelvis y carga la espalda baja de otra forma. **La mecánica es real, pero el tamaño del efecto parece pequeño.**',
         'En un estudio de laboratorio de 2021, 20\u00A0personas caminaron con plantillas con cuña que hacían que el pie se fuera hacia adentro. La pelvis se inclinó un poco más hacia un lado (alrededor de medio grado en promedio) y la cadera giró hacia adentro alrededor de 1,4\u00A0grados. Eso muestra que el pie puede mover un poco la pelvis. No muestra que medio grado cause dolor, y el estudio no midió el dolor.',
-        'La cadena cinética es una idea razonable para que un profesional de la salud la revise en una persona concreta. No es motivo para dar por hecho que tus arcos están detrás de tu dolor de espalda.',
+        'La cadena cinética es una idea razonable para que un profesional de la salud la revise en una persona concreta. La misma pregunta, pero desde el dolor de talón, se responde en [fascitis plantar y dolor de rodilla, cadera o espalda](/es/fascitis-plantar-dolor-de-rodilla/). No es motivo para dar por hecho que tus arcos están detrás de tu dolor de espalda.',
       ],
       cites: [CITE.hornestam],
     },

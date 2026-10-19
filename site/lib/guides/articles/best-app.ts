@@ -270,7 +270,7 @@ export const BEST_APP_EN: Guide = {
     {
       q: 'How often should you use a plantar fasciitis exercise app?',
       cites: [CITE.guideline],
-      a: 'Most plantar fasciitis exercise programs, including the ones graded highest in the 2023 heel pain guideline, are built around daily or near-daily sessions for about three months, not occasional use. An app is most useful when you open it most days, since consistency drives the loading effect, not any single feature inside it.',
+      a: 'Most plantar fasciitis exercise programs, including the ones graded highest in the 2023 heel pain guideline, are built around daily or near-daily sessions for about three months, not occasional use. An app is most useful when you open it most days, since consistency drives the loading effect, not any single feature inside it. Stopping when the pain eases is one of the [common reasons plantar fasciitis stalls](/plantar-fasciitis-not-getting-better/).',
     },
   ],
   redFlags: {

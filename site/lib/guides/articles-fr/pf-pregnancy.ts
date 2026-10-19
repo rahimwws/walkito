@@ -51,7 +51,7 @@ export const PF_PREGNANCY_FR: Guide = {
       keyFact: 'Sur 49\u00A0femmes, 35 avaient une voûte plus basse et 30 un pied plus long environ quatre mois et demi après l’accouchement (Segal et coll., 2013).',
       paragraphs: [
         '**Le résultat le plus net, c’est que la voûte s’abaisse et que le pied s’allonge.** Une étude de 2013 a mesuré 49\u00A0femmes au premier trimestre, puis de nouveau environ quatre mois et demi après l’accouchement. La hauteur et la rigidité de la voûte ont diminué, tandis que la longueur du pied et l’affaissement de la voûte ont augmenté. Au total, 35 des 49\u00A0femmes avaient une voûte plus basse et 30 un pied plus long, le plus souvent de 2 à 10\u00A0millimètres.',
-        'La cause est moins claire que ne le disent beaucoup de sites. Dans cette étude, la laxité des articulations et la prise de poids pendant la grossesse n’étaient pas liées à l’ampleur des changements du pied. Le poids et les longues heures debout sont des facteurs de risque connus de la fasciite plantaire en général (Koc et coll., 2023), mais aucune étude ne les a testés pendant la grossesse.',
+        'La cause est moins claire que ne le disent beaucoup de sites. Dans cette étude, la laxité des articulations et la prise de poids pendant la grossesse n’étaient pas liées à l’ampleur des changements du pied. Le [poids](/fr/poids-et-fasciite-plantaire/) et les longues heures debout sont des facteurs de risque connus de la fasciite plantaire en général (Koc et coll., 2023), mais aucune étude ne les a testés pendant la grossesse.',
         'Le gonflement, un corps plus lourd et une autre façon de marcher modifient tous la répartition de la charge sur le pied. Le fascia plantaire est la bande sous le pied qui soutient la voûte\u00A0: une voûte plus basse et une charge plus forte peuvent le mettre en tension. Pour savoir si une voûte affaissée peut le rester après l’accouchement\u00A0: [les pieds plats s’aggravent-ils avec l’âge](/fr/pieds-plats-avec-l-age/).',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -209,7 +209,7 @@ export const PF_PREGNANCY_FR: Guide = {
     {
       q: 'La marche est-elle mauvaise pour la fasciite plantaire pendant la grossesse\u00A0?',
       cites: [CITE.acogExercise],
-      a: 'La marche fait partie des activités que l’ACOG propose pendant la grossesse, dans le cadre d’au moins 150\u00A0minutes d’activité modérée par semaine. Aucune étude ne s’est penchée sur la marche avec une fasciite plantaire pendant la grossesse\u00A0: demandez à votre médecin ou à votre sage-femme quelle quantité vous convient.',
+      a: 'La marche fait partie des activités que l’ACOG propose pendant la grossesse, dans le cadre d’au moins 150\u00A0minutes d’activité modérée par semaine. Aucune étude ne s’est penchée sur la [marche avec une fasciite plantaire](/fr/marcher-avec-fasciite-plantaire/) pendant la grossesse\u00A0: demandez à votre médecin ou à votre sage-femme quelle quantité vous convient.',
     },
     {
       q: 'Peut-on faire des ondes de choc ou une infiltration de corticoïdes pendant la grossesse\u00A0?',

@@ -197,7 +197,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
         },
         'Ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen sie suchen, und du findest sie in der Liste am Ende dieser Seite.',
         'Zum Rücken kannst du Fragen erwarten, wie der Schmerz angefangen hat, was ihn lindert und ob er ins Bein ausstrahlt. Die Untersuchung prüft meist, wie sich der Rücken bewegt, dazu Kraft, Reflexe und Gefühl in Beinen und Füßen. Bildgebung ist meist nicht nötig, außer wenn etwas auf eine ernste Ursache hindeutet.',
-        'Bei den Füßen wird geprüft, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach).',
+        'Bei den Füßen wird geprüft, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach). Du kannst dieselben [Checks auch zu Hause machen](/de/plattfuss-test/).',
         'Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/). Vielleicht schaut man dir in der Praxis auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.',
         'Rückenprobleme können auch Beschwerden am Fuß auslösen. Ein eingeklemmter Nerv im unteren Rücken kann Taubheit, Kribbeln oder Schwäche im Fuß bringen, und ein schwacher Fuß kann wie ein Fußproblem aussehen, obwohl die Ursache weiter oben liegt.',
       ],

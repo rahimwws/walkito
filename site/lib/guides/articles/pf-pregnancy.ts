@@ -28,7 +28,7 @@ export const PF_PREGNANCY_EN: Guide = {
   lede:
     'Heel and foot pain are common in pregnancy, and stretches, among the top-graded options for [plantar fasciitis](/plantar-fasciitis/), can be done sitting down or holding a wall. In one study, 31% of women who had given birth reported foot pain, against 22% of women who had never been pregnant (Vullo and colleagues, 1996). The 2023 heel pain guideline gives plantar fascia and calf stretches its top grade, **A**, but it does not cover pregnancy, so check with your doctor or midwife before you start.',
   intro: [
-    'No study has measured how often plantar fasciitis itself starts during pregnancy. What studies do show is that feet change: in a group of 49 women, arches dropped and feet got longer, and the change was still there months after birth (Segal and colleagues, 2013). This page covers what is known, the exercises that fit pregnancy, what to avoid, and the leg symptoms that need a doctor the same day.',
+    'No study has measured how often plantar fasciitis itself starts during pregnancy. What studies do show is that feet change: in a group of 49 women, arches dropped and feet got longer, and the change was still there months after birth (Segal and colleagues, 2013). This page covers what is known, the exercises that fit pregnancy, what to avoid, and the leg symptoms that need a doctor the same day. Heel pain is most common later in life, around menopause; see [plantar fasciitis and menopause](/plantar-fasciitis-menopause/).',
   ],
   takeaways: [
     'Foot pain was more common in women who had given birth than in women who had never been pregnant, 31% against 22%, and most leg and foot pain started in the second or third trimester (Vullo and colleagues, 1996).',

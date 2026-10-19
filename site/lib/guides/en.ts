@@ -471,7 +471,7 @@ export const HEEL_PAIN_EN: Guide = {
     {
       h2: 'What exercises should you avoid with plantar fasciitis?',
       paragraphs: [
-        'Avoid high-impact activity that spikes the load on your heel while the pain is flared, and avoid walking barefoot on hard floors first thing in the morning.',
+        'Avoid high-impact activity that spikes the load on your heel [while the pain is flared](/plantar-fasciitis-flare-up/), and avoid walking barefoot on hard floors first thing in the morning.',
         'Jumping, sprinting and plyometrics put a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. **The question is whether the load is more than the tissue can recover from overnight.**',
         'Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion. Until symptoms settle, wear a well-cushioned shoe at all times of day, even in the house.',
         'Two more things to watch:',

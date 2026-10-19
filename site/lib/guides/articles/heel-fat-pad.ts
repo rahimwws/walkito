@@ -12,7 +12,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     'Heel fat pad syndrome causes deep pain in the centre of the heel when cushioning thins. How it differs from plantar fasciitis and what helps.',
   h1: 'Heel fat pad syndrome: what it is, how it differs from plantar fasciitis, and what the evidence says',
   lede:
-    'Heel fat pad syndrome is the thinning or damage of the fatty cushion under your heel bone. It causes a deep, bruise-like pain in the centre of the heel, especially on hard surfaces or barefoot. It may be the second most common cause of plantar heel pain after [plantar fasciitis](/plantar-fasciitis/), yet the research behind it is thin. A 2022 scoping review found only seven original studies.',
+    'Heel fat pad syndrome is the thinning or damage of the fatty cushion under your heel bone. It causes a deep, bruise-like pain in the centre of the heel, especially on hard surfaces or barefoot. It may be the second most common cause of plantar heel pain after [plantar fasciitis](/plantar-fasciitis/), yet the research behind it is thin. The other look-alikes are compared in [heel pain that isn\'t plantar fasciitis](/heel-pain-not-plantar-fasciitis/). A 2022 scoping review found only seven original studies.',
   intro: [
     'This page covers what is known about heel fat pad syndrome, how to tell it apart from plantar fasciitis, and which conservative steps have at least some support. If your pain is more of a sharp pull at the inner heel with your first steps in the morning, [heel pain in the morning](/heel-pain-in-the-morning/) is probably the better page. If it is at the back of the heel near the Achilles, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) or [Haglund\'s deformity](/haglunds-deformity/).',
   ],
@@ -66,7 +66,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     {
       h2: 'What causes the heel fat pad to thin?',
       paragraphs: [
-        '**Age is the biggest factor.** After about 40, the fat pad naturally loses water, collagen, and elasticity. Years of high-impact activity, prolonged standing on hard surfaces, and walking barefoot accelerate the process.',
+        '**Age is the biggest factor.** After about 40, the fat pad naturally loses water, collagen, and elasticity. The same years are when [plantar fasciitis peaks in women](/plantar-fasciitis-menopause/), so the two are worth telling apart. Years of high-impact activity, prolonged standing on hard surfaces, and walking barefoot accelerate the process.',
         'Other risk factors include:',
         {
           list: [

@@ -244,6 +244,50 @@ import { TIGHT_CALVES_DE } from './articles-de/tight-calves';
 import { TOE_STRENGTHENING_DE } from './articles-de/toe-strengthening-exercises';
 import { TOP_OF_FOOT_DE } from './articles-de/top-of-foot';
 import { VS_EXAKT_DE } from './articles-de/vs-exakt';
+import { PF_VS_ACHILLES_DE } from './articles-de/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_FR } from './articles-fr/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_IT } from './articles-it/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_ACHILLES_PT } from './articles-pt/plantar-fasciitis-vs-achilles-tendonitis';
+import { PF_VS_STRESS_FRACTURE_DE } from './articles-de/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_FR } from './articles-fr/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_IT } from './articles-it/plantar-fasciitis-vs-stress-fracture';
+import { PF_VS_STRESS_FRACTURE_PT } from './articles-pt/plantar-fasciitis-vs-stress-fracture';
+import { FLAT_FEET_TEST_DE } from './articles-de/flat-feet-test';
+import { FLAT_FEET_TEST_FR } from './articles-fr/flat-feet-test';
+import { FLAT_FEET_TEST_IT } from './articles-it/flat-feet-test';
+import { FLAT_FEET_TEST_PT } from './articles-pt/flat-feet-test';
+import { WALKING_PF_DE } from './articles-de/walking-with-plantar-fasciitis';
+import { WALKING_PF_FR } from './articles-fr/walking-with-plantar-fasciitis';
+import { WALKING_PF_IT } from './articles-it/walking-with-plantar-fasciitis';
+import { WALKING_PF_PT } from './articles-pt/walking-with-plantar-fasciitis';
+import { RUNNERS_FOOT_EXERCISES_DE } from './articles-de/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_FR } from './articles-fr/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_IT } from './articles-it/foot-exercises-for-runners';
+import { RUNNERS_FOOT_EXERCISES_PT } from './articles-pt/foot-exercises-for-runners';
+import { TEACHERS_DE } from './articles-de/teachers-foot-pain';
+import { TEACHERS_FR } from './articles-fr/teachers-foot-pain';
+import { TEACHERS_IT } from './articles-it/teachers-foot-pain';
+import { TEACHERS_PT } from './articles-pt/teachers-foot-pain';
+import { RETAIL_WAREHOUSE_DE } from './articles-de/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_FR } from './articles-fr/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_IT } from './articles-it/retail-warehouse-foot-pain';
+import { RETAIL_WAREHOUSE_PT } from './articles-pt/retail-warehouse-foot-pain';
+import { CHEFS_DE } from './articles-de/chefs-foot-pain';
+import { CHEFS_FR } from './articles-fr/chefs-foot-pain';
+import { CHEFS_IT } from './articles-it/chefs-foot-pain';
+import { CHEFS_PT } from './articles-pt/chefs-foot-pain';
+import { HAIRDRESSERS_DE } from './articles-de/hairdressers-foot-pain';
+import { HAIRDRESSERS_FR } from './articles-fr/hairdressers-foot-pain';
+import { WEIGHT_PF_DE } from './articles-de/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_FR } from './articles-fr/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_IT } from './articles-it/weight-and-plantar-fasciitis';
+import { WEIGHT_PF_PT } from './articles-pt/weight-and-plantar-fasciitis';
+import { HAIRDRESSERS_IT } from './articles-it/hairdressers-foot-pain';
+import { HAIRDRESSERS_PT } from './articles-pt/hairdressers-foot-pain';
+import { HIKERS_DE } from './articles-de/hiking-foot-pain';
+import { HIKERS_FR } from './articles-fr/hiking-foot-pain';
+import { HIKERS_IT } from './articles-it/hiking-foot-pain';
+import { HIKERS_PT } from './articles-pt/hiking-foot-pain';
 import type { Guide } from './types';
 
 /** Articles in Portuguese, French, Italian and German, keyed by language and page.
@@ -311,6 +355,17 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_PT,
     topOfFoot: TOP_OF_FOOT_PT,
     vsExakt: VS_EXAKT_PT,
+    pfVsAchilles: PF_VS_ACHILLES_PT,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_PT,
+    flatFeetTest: FLAT_FEET_TEST_PT,
+    walkingPf: WALKING_PF_PT,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_PT,
+    teachers: TEACHERS_PT,
+    retailWarehouse: RETAIL_WAREHOUSE_PT,
+    chefs: CHEFS_PT,
+    weightPf: WEIGHT_PF_PT,
+    hairdressers: HAIRDRESSERS_PT,
+    hikers: HIKERS_PT,
   },
   fr: {
     achilles: ACHILLES_FR,
@@ -374,6 +429,17 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_FR,
     topOfFoot: TOP_OF_FOOT_FR,
     vsExakt: VS_EXAKT_FR,
+    pfVsAchilles: PF_VS_ACHILLES_FR,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_FR,
+    flatFeetTest: FLAT_FEET_TEST_FR,
+    walkingPf: WALKING_PF_FR,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_FR,
+    teachers: TEACHERS_FR,
+    retailWarehouse: RETAIL_WAREHOUSE_FR,
+    chefs: CHEFS_FR,
+    hairdressers: HAIRDRESSERS_FR,
+    weightPf: WEIGHT_PF_FR,
+    hikers: HIKERS_FR,
   },
   it: {
     achilles: ACHILLES_IT,
@@ -437,6 +503,17 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_IT,
     topOfFoot: TOP_OF_FOOT_IT,
     vsExakt: VS_EXAKT_IT,
+    pfVsAchilles: PF_VS_ACHILLES_IT,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_IT,
+    flatFeetTest: FLAT_FEET_TEST_IT,
+    walkingPf: WALKING_PF_IT,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_IT,
+    teachers: TEACHERS_IT,
+    retailWarehouse: RETAIL_WAREHOUSE_IT,
+    chefs: CHEFS_IT,
+    weightPf: WEIGHT_PF_IT,
+    hairdressers: HAIRDRESSERS_IT,
+    hikers: HIKERS_IT,
   },
   de: {
     achilles: ACHILLES_DE,
@@ -500,5 +577,16 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     toeStrengthening: TOE_STRENGTHENING_DE,
     topOfFoot: TOP_OF_FOOT_DE,
     vsExakt: VS_EXAKT_DE,
+    pfVsAchilles: PF_VS_ACHILLES_DE,
+    pfVsStressFracture: PF_VS_STRESS_FRACTURE_DE,
+    flatFeetTest: FLAT_FEET_TEST_DE,
+    walkingPf: WALKING_PF_DE,
+    runnersFootExercises: RUNNERS_FOOT_EXERCISES_DE,
+    teachers: TEACHERS_DE,
+    retailWarehouse: RETAIL_WAREHOUSE_DE,
+    chefs: CHEFS_DE,
+    hairdressers: HAIRDRESSERS_DE,
+    weightPf: WEIGHT_PF_DE,
+    hikers: HIKERS_DE,
   },
 };

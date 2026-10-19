@@ -53,7 +53,7 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
           ],
         },
         'A second study looked at the young end of life. Kosashvili and colleagues reviewed 97,279 young military recruits in 2008. Front-of-knee pain was found in 7 percent of recruits with moderate or severe flat feet, and in 4 percent of those with mild flat feet or normal arches. Mild flat feet, which made up 74 percent of the flat-footed group, carried no extra risk.',
-        'Both studies measured people once, so they cannot say whether the foot came first. The Framingham authors also noted that a footprint may not tell a flat foot from a wide, fleshy one, and body weight affects the knee on its own.',
+        'Both studies measured people once, so they cannot say whether the foot came first. If heel pain came first, see [can plantar fasciitis cause knee pain](/can-plantar-fasciitis-cause-knee-pain/). The Framingham authors also noted that a footprint may not tell a flat foot from a wide, fleshy one, and body weight affects the knee on its own.',
       ],
       sourceNote:
         'Gross 2011: cross-sectional, odds ratio for knee pain 1.3 (95% CI 1.1 to 1.6), medial tibiofemoral cartilage damage 1.4 (95% CI 1.1 to 1.8), adjusted for age, sex and body mass index. Kosashvili 2008: retrospective review, flat feet graded by an orthopedist, front-of-knee pain attributed to the patellofemoral joint.',

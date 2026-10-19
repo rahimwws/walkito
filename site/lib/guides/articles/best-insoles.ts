@@ -19,7 +19,7 @@ export const BEST_INSOLES_EN: Guide = {
     'Which insoles help plantar fasciitis? What trials found on custom vs store-bought, heel cups vs arch supports, firm vs soft, plus 12 insoles and their claims.',
   h1: 'Best insoles for plantar fasciitis: what the trials show',
   lede:
-    'No trial crowns a brand. In trials that compared them, custom insoles did no better than store-bought ones, so a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18) is a reasonable choice. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Any benefit is modest and may take several weeks.',
+    'No trial crowns a brand. In trials that compared them, custom insoles did no better than store-bought ones, so a firm, contoured store-bought arch support (about $50 to $70) or a silicone heel cup (about $18) is a reasonable choice. Use it together with stretching and strengthening: the 2023 guideline advises against relying on insoles alone for short-term pain relief. Relying on insoles alone is one of the [reasons plantar fasciitis does not get better](/plantar-fasciitis-not-getting-better/). Any benefit is modest and may take several weeks.',
   intro: [
     'We do not sell insoles, we have no affiliate links and we did not wear-test these products. Walkito is an exercise app, so we have our own bias toward exercise; this page sticks to what the trials found.',
   ],

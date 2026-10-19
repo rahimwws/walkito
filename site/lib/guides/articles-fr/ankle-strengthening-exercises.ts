@@ -73,7 +73,7 @@ export const ANKLE_STRENGTHENING_FR: Guide = {
     {
       h2: 'Les exercices de renforcement de la cheville, dans l’ordre',
       paragraphs: [
-        'Commencez à l’étape 1 si vous vous êtes fait une entorse récemment ou si votre cheville paraît faible sur un sol irrégulier. Si les montées sur pointes sur deux pieds sont déjà faciles, vous pouvez commencer à l’étape 2 ou 3. Arrêtez un exercice pour la journée si la douleur atteint **6/10**, ou si la cheville est plus gonflée ou plus douloureuse le lendemain matin.',
+        'Commencez à l’étape 1 si vous vous êtes fait une entorse récemment ou si votre cheville paraît faible sur un sol irrégulier. Si ce sont vos pieds qui font mal pendant les randonnées, voyez [mal aux pieds après une randonnée](/fr/mal-aux-pieds-randonnee/). Si les montées sur pointes sur deux pieds sont déjà faciles, vous pouvez commencer à l’étape 2 ou 3. Arrêtez un exercice pour la journée si la douleur atteint **6/10**, ou si la cheville est plus gonflée ou plus douloureuse le lendemain matin.',
         'Les doses ci-dessous sont des points de départ modestes. Les essais cités sur cette page utilisaient leurs propres programmes, décrits dans chaque partie.',
       ],
       exercises: [

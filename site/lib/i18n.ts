@@ -488,6 +488,11 @@ export const EN_ONLY = {
   hairdressers: '/hairdressers-foot-pain/',
   weightPf: '/weight-and-plantar-fasciitis/',
   hikers: '/hiking-foot-pain/',
+  pfFlareUp: '/plantar-fasciitis-flare-up/',
+  pfKneeHipBack: '/can-plantar-fasciitis-cause-knee-pain/',
+  heelNotPf: '/heel-pain-not-plantar-fasciitis/',
+  pfNotBetter: '/plantar-fasciitis-not-getting-better/',
+  pfMenopause: '/plantar-fasciitis-menopause/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -583,6 +588,11 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   hairdressers: '/es/dolor-de-pies-peluqueros/',
   weightPf: '/es/peso-y-fascitis-plantar/',
   hikers: '/es/dolor-de-pies-senderismo/',
+  pfFlareUp: '/es/brote-de-fascitis-plantar/',
+  pfKneeHipBack: '/es/fascitis-plantar-dolor-de-rodilla/',
+  heelNotPf: '/es/dolor-de-talon-que-no-es-fascitis/',
+  pfNotBetter: '/es/fascitis-plantar-no-mejora/',
+  pfMenopause: '/es/fascitis-plantar-menopausia/',
 };
 
 /**
@@ -675,6 +685,11 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
   hairdressers: '/ru/bol-v-stopakh-u-parikmakherov/',
   weightPf: '/ru/ves-i-plantarnyy-fastsiit/',
   hikers: '/ru/bol-v-stopakh-posle-pokhoda/',
+  pfFlareUp: '/ru/obostrenie-plantarnogo-fastsiita/',
+  pfKneeHipBack: '/ru/plantarnyy-fastsiit-i-bol-v-kolene/',
+  heelNotPf: '/ru/bol-v-pyatke-ne-fastsiit/',
+  pfNotBetter: '/ru/plantarnyy-fastsiit-ne-prokhodit/',
+  pfMenopause: '/ru/plantarnyy-fastsiit-i-menopauza/',
 };
 
 /**
@@ -754,6 +769,17 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     massageBall: '/pt/bolinha-de-massagem-fascite-plantar/',
     insolesVsExercises: '/pt/palmilhas-ou-exercicios/',
     barefoot: '/pt/calcados-barefoot/',
+    pfVsAchilles: '/pt/fascite-plantar-ou-tendinite-de-aquiles/',
+    pfVsStressFracture: '/pt/fascite-plantar-ou-fratura-por-estresse/',
+    flatFeetTest: '/pt/teste-pe-chato/',
+    walkingPf: '/pt/caminhar-com-fascite-plantar/',
+    runnersFootExercises: '/pt/exercicios-para-os-pes-corredores/',
+    teachers: '/pt/dor-nos-pes-professores/',
+    retailWarehouse: '/pt/dor-nos-pes-comercio-e-deposito/',
+    chefs: '/pt/dor-nos-pes-cozinheiros/',
+    hairdressers: '/pt/dor-nos-pes-cabeleireiros/',
+    weightPf: '/pt/peso-e-fascite-plantar/',
+    hikers: '/pt/dor-nos-pes-trilha/',
   },
   fr: {
     standing: '/fr/mal-aux-pieds-debout-toute-la-journee/',
@@ -817,6 +843,17 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     massageBall: '/fr/balle-de-massage-fasciite-plantaire/',
     insolesVsExercises: '/fr/semelles-ou-exercices/',
     barefoot: '/fr/chaussures-minimalistes/',
+    pfVsAchilles: '/fr/fasciite-plantaire-ou-tendinite-achille/',
+    pfVsStressFracture: '/fr/fasciite-plantaire-ou-fracture-de-fatigue/',
+    flatFeetTest: '/fr/test-pied-plat/',
+    walkingPf: '/fr/marcher-avec-fasciite-plantaire/',
+    runnersFootExercises: '/fr/exercices-pieds-coureurs/',
+    teachers: '/fr/mal-aux-pieds-enseignants/',
+    retailWarehouse: '/fr/mal-aux-pieds-commerce-entrepot/',
+    chefs: '/fr/mal-aux-pieds-cuisiniers/',
+    hairdressers: '/fr/mal-aux-pieds-coiffeurs/',
+    weightPf: '/fr/poids-et-fasciite-plantaire/',
+    hikers: '/fr/mal-aux-pieds-randonnee/',
   },
   it: {
     standing: '/it/dolore-piedi-stare-in-piedi/',
@@ -880,6 +917,17 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     massageBall: '/it/pallina-massaggio-fascite-plantare/',
     insolesVsExercises: '/it/plantari-o-esercizi/',
     barefoot: '/it/scarpe-barefoot/',
+    pfVsAchilles: '/it/fascite-plantare-o-tendinite-achille/',
+    pfVsStressFracture: '/it/fascite-plantare-o-frattura-da-stress/',
+    flatFeetTest: '/it/test-piede-piatto/',
+    walkingPf: '/it/camminare-con-fascite-plantare/',
+    runnersFootExercises: '/it/esercizi-piedi-runner/',
+    teachers: '/it/dolore-piedi-insegnanti/',
+    retailWarehouse: '/it/dolore-piedi-commercio-magazzino/',
+    chefs: '/it/dolore-piedi-cuochi/',
+    hairdressers: '/it/dolore-piedi-parrucchieri/',
+    weightPf: '/it/peso-e-fascite-plantare/',
+    hikers: '/it/dolore-piedi-escursionismo/',
   },
   de: {
     standing: '/de/fussschmerzen-vom-stehen/',
@@ -943,6 +991,17 @@ export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, stri
     massageBall: '/de/massageball-plantarfasziitis/',
     insolesVsExercises: '/de/einlagen-oder-uebungen/',
     barefoot: '/de/barfussschuhe/',
+    pfVsAchilles: '/de/plantarfasziitis-oder-achillessehne/',
+    pfVsStressFracture: '/de/plantarfasziitis-oder-ermuedungsbruch/',
+    flatFeetTest: '/de/plattfuss-test/',
+    walkingPf: '/de/gehen-bei-plantarfasziitis/',
+    runnersFootExercises: '/de/fussuebungen-fuer-laeufer/',
+    teachers: '/de/fussschmerzen-lehrer/',
+    retailWarehouse: '/de/fussschmerzen-einzelhandel-lager/',
+    chefs: '/de/fussschmerzen-koeche/',
+    hairdressers: '/de/fussschmerzen-friseure/',
+    weightPf: '/de/gewicht-und-plantarfasziitis/',
+    hikers: '/de/fussschmerzen-nach-wanderung/',
   },
 };
 

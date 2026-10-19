@@ -96,7 +96,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       paragraphs: [
         'Si tu dolor encaja con el patrón de la fascitis plantar, estirar suavemente la pantorrilla y la fascia plantar antes de dormir puede reducir la rigidez de la mañana siguiente. El mismo estiramiento específico de la fascia plantar que la guía califica con **A** para el dolor del primer paso se puede hacer antes de dormir: jala los dedos hacia atrás con la mano hasta sentir el arco, mantén 10\u00A0segundos, repite 10\u00A0veces.',
         'Los ejercicios con carga como las elevaciones de talón son más adecuados para momentos más temprano en el día. La lista completa de ejercicios está en la página de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
-        'Si tu dolor no es fascitis plantar o no estás seguro, estirar por la noche no es el primer paso. Obtener el diagnóstico correcto sí lo es.',
+        'Si [tu dolor no es fascitis plantar](/es/dolor-de-talon-que-no-es-fascitis/) o no estás seguro, estirar por la noche no es el primer paso. Obtener el diagnóstico correcto sí lo es.',
       ],
       exercises: [
         {

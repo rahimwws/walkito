@@ -227,7 +227,7 @@ export const WEIGHT_PF_EN: Guide = {
       h2: 'Will plantar fasciitis go away if I don’t lose weight?',
       paragraphs: [
         '**For most people, yes, it eases with time and non-surgical care.** About 90% of people with plantar fasciitis get better with non-surgical care such as stretching and insoles, often within 3 to 6 months (Latt and colleagues, 2020).',
-        'In a long follow-up of 174 people, the researchers tested whether BMI, age, smoking, physical work and other factors predicted who still had heel pain years later. Only being a woman and having pain in both heels did. BMI did not (Hansen and colleagues, 2018).',
+        'In a long follow-up of 174 people, the researchers tested whether BMI, age, smoking, physical work and other factors predicted who still had heel pain years later. Only being a woman and having pain in both heels did. BMI did not (Hansen and colleagues, 2018). Why women are affected more around 50 is covered in [plantar fasciitis and menopause](/plantar-fasciitis-menopause/).',
         'So a higher weight may make plantar fasciitis more likely to start, but it does not mean you are stuck with it. The stretches and calf work above are the same ones that help people of any size. [How long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/) has the full timeline.',
       ],
       cites: [CITE.latt, CITE.hansen],

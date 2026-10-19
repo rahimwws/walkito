@@ -89,7 +89,7 @@ export const PF_DURATION_PT: Guide = {
             '**Dor nos dois calcanhares.** Quem tinha dor nos dois calcanhares no início tinha cerca de um terço da taxa anual de ficar sem sintomas em comparação com quem tinha dor de um lado só (razão de taxas de risco de 0,33, P menor que 0,01). Os autores observaram que a dor nos dois lados pode refletir uma condição inflamatória não reconhecida, já que dor nos pontos onde os tendões se prendem ao osso, dos dois lados, é uma característica de algumas formas de artrite. Ninguém no grupo tinha um diagnóstico inflamatório conhecido, mas não foi feito nenhum exame de sangue para rastrear isso (Hansen e colegas, 2018).',
           ],
         },
-        'IMC, idade, tabagismo, trabalho fisicamente pesado, espessura da fáscia no ultrassom e presença de [esporão](/pt/fascite-plantar-ou-esporao/) não tiveram efeito significativo no prognóstico nesse estudo. Esse último achado surpreende muita gente: o esporão não fez a dor durar mais nem menos (P = 0,88). Estudos anteriores também não encontraram relação entre esporão e sintomas.',
+        '[IMC](/pt/peso-e-fascite-plantar/), idade, tabagismo, trabalho fisicamente pesado, espessura da fáscia no ultrassom e presença de [esporão](/pt/fascite-plantar-ou-esporao/) não tiveram efeito significativo no prognóstico nesse estudo. Esse último achado surpreende muita gente: o esporão não fez a dor durar mais nem menos (P = 0,88). Estudos anteriores também não encontraram relação entre esporão e sintomas.',
         'Se os dois calcanhares doem e a rigidez da manhã dura muito ou outras articulações estão envolvidas, vale contar isso a um profissional de saúde, mesmo que os exercícios estejam ajudando. Veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) para saber mais sobre quando a dor nos dois lados é um sinal de alerta.',
       ],
       sourceNote:
@@ -190,7 +190,7 @@ export const PF_DURATION_PT: Guide = {
     {
       q: 'Caminhar é bom para fascite plantar?',
       cites: [CITE.guideline],
-      a: 'Caminhar de forma moderada com calçados de bom suporte normalmente não tem problema, e a diretriz não diz para parar de se mexer. O que importa é se a manhã seguinte está pior. Se a dor nos primeiros passos na manhã depois de uma caminhada está claramente maior que o normal, a caminhada foi mais do que o pé aguentava. Diminua a distância ou o tempo em vez de parar de vez.',
+      a: 'Caminhar de forma moderada com calçados de bom suporte normalmente não tem problema, e a diretriz não diz para parar de se mexer. O que importa é se a manhã seguinte está pior. Se a dor nos primeiros passos na manhã depois de uma caminhada está claramente maior que o normal, a caminhada foi mais do que o pé aguentava. Diminua a distância ou o tempo em vez de parar de vez. Veja [quanto você pode caminhar](/pt/caminhar-com-fascite-plantar/).',
     },
     {
       q: 'Quando ir ao médico se a fascite plantar não melhora?',

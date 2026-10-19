@@ -1666,6 +1666,84 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1249/01.mss.0000240328.31276.fc',
     pmid: '17218900',
   },
+  {
+    text: 'Levins AD, Skinner HB, Caiozzo VJ. Adaptive gait responses to plantar heel pain. Journal of Rehabilitation Research and Development. 1998;35(3):289–293.',
+    pmid: '9704312',
+  },
+  {
+    text: 'Phillips A, McClinton S. Gait deviations associated with plantar heel pain: a systematic review. Clinical Biomechanics. 2017;42:55–64.',
+    doi: '10.1016/j.clinbiomech.2016.12.012',
+    pmid: '28095359',
+  },
+  {
+    text: 'Miladi S, Bouzid S, Fazaa A, et al. Is there an association between plantar fasciitis and knee osteoarthritis? Musculoskeletal Care. 2023;21(4):1045–1052.',
+    doi: '10.1002/msc.1784',
+    pmid: '37212781',
+  },
+  {
+    text: 'Kongtong W, Khongprasert S. Hip muscle activity and frontal plane lower extremity kinematics in long-distance runners with plantar fasciitis. Journal of Applied Biomechanics. 2025;41(4):367–373.',
+    doi: '10.1123/jab.2023-0296',
+    pmid: '40537128',
+  },
+  {
+    text: 'Pohl MB, Hamill J, Davis IS. Biomechanical and anatomic factors associated with a history of plantar fasciitis in female runners. Clinical Journal of Sport Medicine. 2009;19(5):372–376.',
+    doi: '10.1097/JSM.0b013e3181b8c270',
+    pmid: '19741308',
+  },
+  {
+    text: 'Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of neural origin: differential diagnosis and management. Manual Therapy. 2008;13(2):103–111.',
+    doi: '10.1016/j.math.2007.01.014',
+    pmid: '17400020',
+  },
+  {
+    text: 'Thomas JL, Christensen JC, Kravitz SR, et al. The diagnosis and treatment of heel pain: a clinical practice guideline, revision 2010. Journal of Foot and Ankle Surgery. 2010;49(3 Suppl):S1–S19.',
+    doi: '10.1053/j.jfas.2010.01.001',
+    pmid: '20439021',
+  },
+  {
+    text: 'Rasenberg N, Bierma-Zeinstra SM, Bindels PJ, van der Lei J, van Middelkoop M. Incidence, prevalence, and management of plantar heel pain: a retrospective cohort study in Dutch primary care. British Journal of General Practice. 2019;69(688):e801–e808.',
+    doi: '10.3399/bjgp19X706061',
+    pmid: '31636128',
+  },
+  {
+    text: 'Douglas-Harris M, Wilkins R, Ramaskandhan J, Mankelow J, Branthwaite H. Menopause and plantar heel pain: findings from a series of focus groups exploring lived experience. Journal of Foot and Ankle Research. 2026;19(2):e70154.',
+    doi: '10.1002/jfa2.70154',
+    pmid: '42224090',
+  },
+  {
+    text: 'Lee H, Petrofsky J. Differences between men and women in balance and tremor in relation to plantar fascia laxity during the menstrual cycle. Journal of Athletic Training. 2018;53(3):255–261.',
+    doi: '10.4085/1062-6050-2-17',
+    pmid: '29485291',
+  },
+  {
+    text: 'Hansen M, Kjaer M. Influence of sex and estrogen on musculotendinous protein turnover at rest and after exercise. Exercise and Sport Sciences Reviews. 2014;42(4):183–192.',
+    doi: '10.1249/JES.0000000000000026',
+    pmid: '25062001',
+  },
+  {
+    text: 'Lu CB, Liu PF, Zhou YS, et al. Musculoskeletal pain during the menopausal transition: a systematic review and meta-analysis. Neural Plasticity. 2020;2020:8842110.',
+    doi: '10.1155/2020/8842110',
+    pmid: '33299396',
+  },
+  {
+    text: 'Prichasuk S. The heel pad in plantar heel pain. Journal of Bone and Joint Surgery (British). 1994;76(1):140–142.',
+    pmid: '8300659',
+  },
+  {
+    text: 'Cook JL, Bass SL, Black JE. Hormone therapy is associated with smaller Achilles tendon diameter in active post-menopausal women. Scandinavian Journal of Medicine & Science in Sports. 2007;17(2):128–132.',
+    doi: '10.1111/j.1600-0838.2006.00543.x',
+    pmid: '17394473',
+  },
+  {
+    text: 'Finni T, Kovanen V, Ronkainen PH, et al. Combination of hormone replacement therapy and high physical activity is associated with differences in Achilles tendon size in monozygotic female twin pairs. Journal of Applied Physiology. 2009;106(4):1332–1337.',
+    doi: '10.1152/japplphysiol.91439.2008',
+    pmid: '19164771',
+  },
+  {
+    text: 'Ansari M, Hussain F, Shopon M, Ajmal H, Asif M, David S. Hormonal shifts and structural strain: a literature review of menopause and perimenopause in relation to overuse injuries and stress fractures. Annals of Rehabilitation Medicine. 2026;50(3):139–149.',
+    doi: '10.5535/arm.250134',
+    pmid: '42332940',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -2003,6 +2081,22 @@ export const CITE = {
   boulwareHikers: 330,
   andersonPack: 331,
   bohnePoles: 332,
+  levinsGait: 333,
+  phillipsGait: 334,
+  miladiKneeOa: 335,
+  kongtongHip: 336,
+  pohlRunners: 337,
+  alshami: 338,
+  thomasCpg: 339,
+  rasenbergIncidence: 340,
+  douglasHarrisMenopause: 341,
+  leePetrofskyFascia: 342,
+  hansenKjaerEstrogen: 343,
+  luMenopausePain: 344,
+  prichasukHeelPad: 345,
+  cookHrtAchilles: 346,
+  finniHrtTwins: 347,
+  ansariMenopause: 348,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

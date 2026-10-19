@@ -21,7 +21,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     'El síndrome de la almohadilla grasa del talón causa dolor profundo en el centro del talón. Cómo diferenciarlo de la fascitis plantar y qué ayuda.',
   h1: 'Síndrome de la almohadilla grasa del talón: qué es, cómo se diferencia de la fascitis plantar y qué dice la evidencia',
   lede:
-    'El síndrome de la almohadilla grasa del talón es el adelgazamiento o daño del cojín de grasa que está debajo del hueso del talón. Causa un dolor profundo, como un moretón, en el centro del talón, sobre todo en superficies duras o al caminar descalzo. Puede ser la segunda causa más común de dolor plantar del talón después de la fascitis plantar, pero la investigación detrás es escasa. Una revisión exploratoria de 2022 encontró solo siete estudios originales.',
+    'El síndrome de la almohadilla grasa del talón es el adelgazamiento o daño del cojín de grasa que está debajo del hueso del talón. Causa un dolor profundo, como un moretón, en el centro del talón, sobre todo en superficies duras o al caminar descalzo. Puede ser la segunda causa más común de dolor plantar del talón después de la fascitis plantar, pero la investigación detrás es escasa. Las otras causas parecidas se comparan en [dolor de talón que no es fascitis plantar](/es/dolor-de-talon-que-no-es-fascitis/). Una revisión exploratoria de 2022 encontró solo siete estudios originales.',
   intro: [
     'Esta página cubre lo que se sabe sobre el síndrome de la almohadilla grasa del talón, cómo distinguirlo de la fascitis plantar y qué pasos conservadores tienen al menos algo de respaldo. Si tu dolor es más bien un tirón agudo en la parte interna del talón con los primeros pasos de la mañana, [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) es probablemente la mejor página. Si el dolor está en la parte de atrás del talón, cerca del Aquiles, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) o [deformidad de Haglund](/es/deformidad-de-haglund/).',
   ],
@@ -75,7 +75,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     {
       h2: '¿Qué causa que la almohadilla grasa se adelgace?',
       paragraphs: [
-        '**La edad es el factor más importante.** Después de los 40 años aproximadamente, la almohadilla grasa pierde agua, colágeno y elasticidad de forma natural. Años de actividad de alto impacto, estar de pie mucho tiempo sobre superficies duras y caminar descalzo aceleran el proceso.',
+        '**La edad es el factor más importante.** Después de los 40 años aproximadamente, la almohadilla grasa pierde agua, colágeno y elasticidad de forma natural. Son los mismos años en que la [fascitis plantar llega a su pico en las mujeres](/es/fascitis-plantar-menopausia/), así que vale la pena distinguirlas. Años de actividad de alto impacto, estar de pie mucho tiempo sobre superficies duras y caminar descalzo aceleran el proceso.',
         'Otros factores de riesgo incluyen:',
         {
           list: [

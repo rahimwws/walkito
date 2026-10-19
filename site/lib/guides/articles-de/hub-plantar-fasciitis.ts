@@ -172,6 +172,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         '[Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandelt Übungen und Schuhe für alle, die bei der Arbeit viel stehen.',
         '[Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) geht auf lange Schichten auf harten Böden ein.',
         '[Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/) behandelt den Wechsel zwischen Sitzen und Stehen.',
+        'Andere Berufe auf harten Böden haben eigene Seiten: [Lehrkräfte](/de/fussschmerzen-lehrer/), [Einzelhandel und Lager](/de/fussschmerzen-einzelhandel-lager/), [Köchinnen und Köche](/de/fussschmerzen-koeche/) und [Friseurinnen und Friseure](/de/fussschmerzen-friseure/).',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
     },
@@ -181,10 +182,10 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
         'Mehrere Erkrankungen teilen dieselbe Stelle oder dasselbe Morgenmuster. Wo der Schmerz sitzt und wie er sich verhält, hilft, sie auseinanderzuhalten:',
         {
           list: [
-            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Wie du die beiden unterscheidest, zeigt [Plantarfasziitis oder Achillessehnenentzündung](/de/plantarfasziitis-oder-achillessehne/). Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
             '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das [Fettpolster](/de/fersenfettpolster-syndrom/) sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
             '**Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174\u00A0Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.',
-            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann [in Ruhe oder nachts](/de/fersenschmerzen-nachts/) wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Wie du ihn unterscheidest, zeigt [Plantarfasziitis oder Ermüdungsbruch](/de/plantarfasziitis-oder-ermuedungsbruch/). Er kann [in Ruhe oder nachts](/de/fersenschmerzen-nachts/) wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Lass das zuerst ärztlich abklären, bevor du den Fuß trainierst.',
             '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine Ärztin oder ein Arzt sollte das abklären.',
           ],
         },
@@ -227,7 +228,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       q: 'Ist Gehen bei Plantarfasziitis gut oder schlecht?',
       cites: [CITE.guideline],
-      a: 'Gehen in stützenden Schuhen in einem angenehmen Tempo ist meist in Ordnung. Die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Der Test ist, wie sich deine Ferse am nächsten Morgen anfühlt. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich stärker als sonst, war dieser Spaziergang zu viel. Verkürze die Strecke, bevor du ganz aufhörst.',
+      a: 'Gehen in stützenden Schuhen in einem angenehmen Tempo ist meist in Ordnung. Die Leitlinie sagt nicht, dass du aufhören sollst, dich zu bewegen. Der Test ist, wie sich deine Ferse am nächsten Morgen anfühlt. Ist der Schmerz bei den ersten Schritten am Morgen nach einem Spaziergang deutlich stärker als sonst, war dieser Spaziergang zu viel. Verkürze die Strecke, bevor du ganz aufhörst. Mehr dazu unter [Gehen bei Plantarfasziitis](/de/gehen-bei-plantarfasziitis/).',
     },
     {
       q: 'Verursacht ein Fersensporn Plantarfasziitis?',
@@ -255,7 +256,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       q: 'Warum habe ich plötzlich Plantarfasziitis?',
       cites: [CITE.guideline],
-      a: 'Eine plötzliche Plantarfasziitis folgt meist auf eine plötzliche Änderung der Belastung, nicht auf eine plötzliche Verletzung. Ein schneller Sprung bei den Laufkilometern, neue Schuhe, ein neuer Job, bei dem du viel stehst, oder eine Gewichtszunahme können die Faszie schneller überlasten, als sie sich anpassen kann. Langes Stehen bei der Arbeit ist einer der anerkannten Risikofaktoren in der Leitlinie von 2023 zu Fersenschmerzen.',
+      a: 'Eine plötzliche Plantarfasziitis folgt meist auf eine plötzliche Änderung der Belastung, nicht auf eine plötzliche Verletzung. Ein schneller Sprung bei den Laufkilometern, neue Schuhe, ein neuer Job, bei dem du viel stehst, oder eine [Gewichtszunahme](/de/gewicht-und-plantarfasziitis/) können die Faszie schneller überlasten, als sie sich anpassen kann. Langes Stehen bei der Arbeit ist einer der anerkannten Risikofaktoren in der Leitlinie von 2023 zu Fersenschmerzen.',
     },
   ],
   redFlags: {

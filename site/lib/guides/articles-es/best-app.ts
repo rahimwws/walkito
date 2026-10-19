@@ -270,7 +270,7 @@ export const BEST_APP_ES: Guide = {
     {
       q: '¿Con qué frecuencia debo usar una app de ejercicios para la fascitis plantar?',
       cites: [CITE.guideline],
-      a: 'La mayoría de los programas de ejercicio para la fascitis plantar, incluidos los que la guía de 2023 califica más alto, están armados para sesiones diarias o casi diarias durante unos tres meses, no para un uso ocasional. Una app es más útil cuando la abres la mayoría de los días, porque la constancia es lo que impulsa el efecto de la carga, no ninguna función específica dentro de ella.',
+      a: 'La mayoría de los programas de ejercicio para la fascitis plantar, incluidos los que la guía de 2023 califica más alto, están armados para sesiones diarias o casi diarias durante unos tres meses, no para un uso ocasional. Una app es más útil cuando la abres la mayoría de los días, porque la constancia es lo que impulsa el efecto de la carga, no ninguna función específica dentro de ella. Dejar los ejercicios cuando el dolor afloja es uno de los [motivos comunes por los que la fascitis plantar se estanca](/es/fascitis-plantar-no-mejora/).',
     },
   ],
   redFlags: {

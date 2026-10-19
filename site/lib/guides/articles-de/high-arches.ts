@@ -47,7 +47,7 @@ export const HIGH_ARCHES_DE: Guide = {
             'Schmerz entlang der verkürzten Plantarfaszie.',
           ],
         },
-        'Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist.',
+        'Auch Umknicken im Sprunggelenk ist häufiger, weil der steife, nach innen gekippte Fuß auf unebenem Boden weniger stabil ist. Wenn du viel auf Wanderwegen unterwegs bist, lies [Fußschmerzen nach dem Wandern](/de/fussschmerzen-nach-wanderung/).',
       ],
       cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },

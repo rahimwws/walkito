@@ -52,7 +52,7 @@ export const PTTD_FR: Guide = {
             '**Stade IV**\u00A0: l’articulation de la cheville est atteinte à son tour. La cheville bascule en valgus, c’est-à-dire qu’elle penche vers l’extérieur. C’est le stade le plus avancé, qui demande en général une intervention chirurgicale.',
           ],
         },
-        '**La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II.** Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un dépistage rapide\u00A0: une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.',
+        '**La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II.** Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un [dépistage rapide](/fr/test-pied-plat/)\u00A0: une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },

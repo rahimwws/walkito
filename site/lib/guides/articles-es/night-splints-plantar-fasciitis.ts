@@ -161,7 +161,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
           ],
         },
         'La guía también recomienda no usar plantillas como lo único que haces para aliviar el dolor a corto plazo. Para más sobre esa pregunta, mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
-        'Un orden común es empezar con estiramientos y trabajo de pantorrilla. Si después de un mes más o menos tus primeros pasos siguen siendo malos, agrega una férula de uno a tres meses. Mucha gente usa plantillas al mismo tiempo. Ese orden es una lectura razonable de la guía, no algo que un ensayo haya probado.',
+        'Un orden común es empezar con estiramientos y trabajo de pantorrilla. Si después de un mes más o menos tus primeros pasos siguen siendo malos, agrega una férula de uno a tres meses. Si siguen siendo malos también después de la férula, mira [fascitis plantar que no mejora](/es/fascitis-plantar-no-mejora/). Mucha gente usa plantillas al mismo tiempo. Ese orden es una lectura razonable de la guía, no algo que un ensayo haya probado.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

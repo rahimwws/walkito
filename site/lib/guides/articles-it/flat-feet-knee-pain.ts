@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
         'Se il ginocchio si è gonfiato, bloccato, ha ceduto, o si è fatto male in una torsione o in una caduta.',
         'Come si muovono ginocchio, anca e piede in uno squat o in una discesa da un gradino.',
         'La forza dei muscoli sul lato esterno e sul retro dell’anca, e della coscia.',
-        'Se il tuo piede piatto è flessibile (l’arco torna quando sei seduto o sulle punte) o rigido. Vedi [piede piatto](/it/piede-piatto/) per la verifica veloce.',
+        'Se il tuo piede piatto è flessibile (l’arco torna quando sei seduto o sulle punte) o rigido. Vedi [piede piatto](/it/piede-piatto/) per la verifica veloce. Tutti e quattro i controlli da fare a casa sono nel [test del piede piatto](/it/test-piede-piatto/).',
         'Negli adulti anziani, segni di artrosi del ginocchio, che potrebbero richiedere una radiografia.',
       ],
       cites: [CITE.willyPfpGuideline],

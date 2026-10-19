@@ -170,6 +170,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       bullets: [
         '[Pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) fala dos exercícios e dos calçados para quem passa o trabalho em pé.',
         '[Enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/) trata do peso de turnos longos em piso duro.',
+        'Outras profissões em piso duro têm a própria página: [professores](/pt/dor-nos-pes-professores/), [quem trabalha em loja ou depósito](/pt/dor-nos-pes-comercio-e-deposito/), [cozinheiros e equipe de cozinha](/pt/dor-nos-pes-cozinheiros/) e [cabeleireiros](/pt/dor-nos-pes-cabeleireiros/).',
         '[Mesa para trabalhar em pé e dor nos pés](/pt/mesa-em-pe-dor-nos-pes/) fala da transição entre sentado e em pé.',
       ],
       cites: [CITE.riddle, CITE.waters, CITE.guideline],
@@ -180,10 +181,10 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         'Várias condições têm o mesmo local ou o mesmo padrão da manhã. Onde a dor fica e como ela se comporta ajudam a diferenciar:',
         {
           list: [
-            '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. Rigidez nos primeiros passos é comum, mas a dor fica mais em cima. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
+            '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. Rigidez nos primeiros passos é comum, mas a dor fica mais em cima. [Como diferenciar as duas](/pt/fascite-plantar-ou-tendinite-de-aquiles/). Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
             '**Síndrome do coxim gorduroso do calcanhar.** Uma dor funda no centro do calcanhar, pior em superfícies duras e descalço. Uma revisão de escopo de 2022 observou que pode ser difícil diferenciá-la da fascite plantar sem exame de imagem. A dor do [coxim gorduroso](/pt/sindrome-coxim-gorduroso-calcanhar/) fica bem embaixo, no centro, enquanto a dor da fascite fica na parte de dentro e da frente.',
             '**Esporão no calcanhar.** Um crescimento de osso na parte de baixo do osso do calcanhar. Muita gente tem um sem sentir dor nenhuma. No grupo de Hansen 2018, com 174\u00A0pacientes, ter esporão no início não teve efeito significativo em quanto tempo os sintomas duraram. O esporão muitas vezes está lá, mas não é ele que causa a dor.',
-            '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. Pode [doer em repouso ou à noite](/pt/dor-no-calcanhar-a-noite/). Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
+            '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. [Como diferenciar as duas](/pt/fascite-plantar-ou-fratura-por-estresse/). Pode [doer em repouso ou à noite](/pt/dor-no-calcanhar-a-noite/). Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
             '**Artrite inflamatória.** Quando os dois calcanhares doem, a rigidez da manhã dura mais de 30\u00A0minutos e outras articulações estão rígidas ou inchadas, o padrão aponta para algo sistêmico. Um profissional de saúde deve avaliar.',
           ],
         },
@@ -226,7 +227,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       q: 'Caminhar faz bem ou mal para fascite plantar?',
       cites: [CITE.guideline],
-      a: 'Caminhar com calçados de bom suporte, num ritmo confortável, normalmente não tem problema. A diretriz não diz para parar de se mexer. O teste é como o calcanhar está na manhã seguinte. Se a dor nos primeiros passos na manhã depois de uma caminhada está claramente maior que o normal, a caminhada foi demais. Encurte a distância antes de parar de vez.',
+      a: 'Caminhar com calçados de bom suporte, num ritmo confortável, normalmente não tem problema. A diretriz não diz para parar de se mexer. O teste é como o calcanhar está na manhã seguinte. Se a dor nos primeiros passos na manhã depois de uma caminhada está claramente maior que o normal, a caminhada foi demais. Encurte a distância antes de parar de vez. Mais detalhes em [caminhar com fascite plantar](/pt/caminhar-com-fascite-plantar/).',
     },
     {
       q: 'Esporão no calcanhar causa fascite plantar?',
@@ -254,7 +255,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       q: 'Por que tive fascite plantar de repente?',
       cites: [CITE.guideline],
-      a: 'A fascite plantar que aparece de repente costuma vir depois de uma mudança repentina de carga, não de uma lesão repentina. Um aumento rápido na quilometragem de corrida, tênis novos, um trabalho novo que deixa você muito tempo em pé ou ganho de peso podem sobrecarregar a fáscia mais rápido do que ela consegue se adaptar. Ficar muito tempo em pé no trabalho é um dos fatores de risco reconhecidos na diretriz de 2023 para dor no calcanhar.',
+      a: 'A fascite plantar que aparece de repente costuma vir depois de uma mudança repentina de carga, não de uma lesão repentina. Um aumento rápido na quilometragem de corrida, tênis novos, um trabalho novo que deixa você muito tempo em pé ou [ganho de peso](/pt/peso-e-fascite-plantar/) podem sobrecarregar a fáscia mais rápido do que ela consegue se adaptar. Ficar muito tempo em pé no trabalho é um dos fatores de risco reconhecidos na diretriz de 2023 para dor no calcanhar.',
     },
   ],
   redFlags: {

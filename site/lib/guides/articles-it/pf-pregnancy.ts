@@ -51,7 +51,7 @@ export const PF_PREGNANCY_IT: Guide = {
       keyFact: 'Su 49\u00A0donne, 35 avevano l’arco più basso e 30 il piede più lungo circa quattro mesi e mezzo dopo il parto (Segal e colleghi, 2013).',
       paragraphs: [
         '**Il risultato più chiaro è che l’arco si abbassa e il piede si allunga.** Uno studio del 2013 ha misurato 49\u00A0donne nel primo trimestre e di nuovo circa quattro mesi e mezzo dopo il parto. L’altezza e la rigidità dell’arco sono diminuite, mentre la lunghezza del piede e l’abbassamento dell’arco sono aumentati. 35 donne su 49 avevano l’arco più basso e 30 il piede più lungo, per lo più da 2 a 10\u00A0millimetri.',
-        'La causa è meno chiara di quanto dicano molti siti. In quello studio, la lassità articolare e l’aumento di peso in gravidanza non erano collegati a quanto fosse cambiato il piede. Il peso e le molte ore in piedi sono fattori di rischio noti per la fascite plantare in generale (Koc e colleghi, 2023), ma nessuno studio li ha verificati in gravidanza.',
+        'La causa è meno chiara di quanto dicano molti siti. In quello studio, la lassità articolare e l’aumento di peso in gravidanza non erano collegati a quanto fosse cambiato il piede. Il [peso](/it/peso-e-fascite-plantare/) e le molte ore in piedi sono fattori di rischio noti per la fascite plantare in generale (Koc e colleghi, 2023), ma nessuno studio li ha verificati in gravidanza.',
         'Il gonfiore, un corpo più pesante e un modo diverso di camminare cambiano il modo in cui il carico si distribuisce sul piede. La fascia plantare è la fascia sotto il piede che sostiene l’arco, quindi un arco più basso e un carico maggiore possono metterla sotto tensione. Per capire come un arco più basso possa restare dopo il parto: [il piede piatto peggiora con l’età?](/it/piede-piatto-con-l-eta/).',
       ],
       cites: [CITE.segalPregnancy, CITE.guideline, CITE.ponnapulaPregnancy],
@@ -209,7 +209,7 @@ export const PF_PREGNANCY_IT: Guide = {
     {
       q: 'Camminare fa male alla fascite plantare in gravidanza?',
       cites: [CITE.acogExercise],
-      a: 'Camminare è una delle attività che l’ACOG suggerisce in gravidanza, all’interno di almeno 150\u00A0minuti di attività moderata a settimana. Nessuno studio ha esaminato la camminata con la fascite plantare in gravidanza, quindi chiedi al tuo ginecologo o all’ostetrica quanto va bene per te.',
+      a: 'Camminare è una delle attività che l’ACOG suggerisce in gravidanza, all’interno di almeno 150\u00A0minuti di attività moderata a settimana. Nessuno studio ha esaminato la [camminata con la fascite plantare](/it/camminare-con-fascite-plantare/) in gravidanza, quindi chiedi al tuo ginecologo o all’ostetrica quanto va bene per te.',
     },
     {
       q: 'Posso fare le onde d’urto o un’infiltrazione di cortisone in gravidanza?',

@@ -88,7 +88,7 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
         'Se o joelho inchou, travou, falseou ou se machucou numa torção ou numa queda.',
         'Como o joelho, o quadril e o pé se movem ao agachar ou ao descer um degrau.',
         'A força dos músculos da parte de fora e de trás do quadril, e da coxa.',
-        'Se o seu pé chato é flexível (o arco volta quando você se senta ou fica na ponta dos pés) ou rígido. Veja [pé chato](/pt/pe-chato/) para o teste rápido.',
+        'Se o seu pé chato é flexível (o arco volta quando você se senta ou fica na ponta dos pés) ou rígido. Veja [pé chato](/pt/pe-chato/) para o teste rápido, ou o [teste do pé chato](/pt/teste-pe-chato/) para as quatro verificações em casa.',
         'Em adultos mais velhos, sinais de artrose no joelho, que podem pedir um raio-X.',
       ],
       cites: [CITE.willyPfpGuideline],
