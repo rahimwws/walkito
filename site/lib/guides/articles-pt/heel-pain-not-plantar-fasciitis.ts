@@ -40,7 +40,7 @@ export const HEEL_NOT_PF_PT: Guide = {
       keyFact: 'Em 250\u00A0pessoas com dor na sola do calcanhar, a fascite plantar explicou 53,2% dos casos, a atrofia do coxim gorduroso sozinha 14,8% e as duas juntas 9,2% (Yi e colegas, 2011).',
       paragraphs: [
         '**A fascite plantar é a causa mais comum de dor no calcanhar, mas está longe de ser a única.** Uma diretriz de cirurgiões do pé dos Estados Unidos descreve a dor no calcanhar como principalmente mecânica, mas diz que causas ligadas a nervos, artrite, lesões, tumores, infecções e vasos sanguíneos também precisam ser consideradas (Thomas e colegas, 2010). Uma revisão de 2020 agrupa as causas de dor embaixo do calcanhar em problemas de nervo, lesões como uma fratura por estresse ou uma ruptura da fáscia, artrite inflamatória e desgaste do coxim gorduroso ou da própria fáscia (Latt e colegas, 2020).',
-        'A tabela coloca as nove condições parecidas mais comuns ao lado da fascite plantar. Leia como um mapa de padrões, não como uma lista de verificação: as células descrevem o que é típico, e o seu calcanhar não precisa seguir o livro.',
+        'A tabela coloca as nove condições parecidas mais comuns ao lado da fascite plantar. Leia como um mapa de padrões, não como uma lista de verificação: as células descrevem o que é típico, e o seu calcanhar não precisa seguir o padrão à risca.',
       ],
       table: {
         caption: 'Condições parecidas com a fascite plantar: padrões típicos. Só um profissional de saúde confirma qual é a sua.',
@@ -50,7 +50,7 @@ export const HEEL_NOT_PF_PT: Guide = {
           ['[Síndrome do coxim gorduroso](/pt/sindrome-coxim-gorduroso-calcanhar/)', 'Centro do calcanhar, como um hematoma profundo', 'Em pé e andando', 'Piso duro, descalço', 'Amortecimento, profissional de saúde'],
           ['Nervo (Baxter, túnel do tarso)', 'Calcanhar por dentro ou sola, pode irradiar', 'Não ligado aos primeiros passos, pode ser em repouso', 'Queimação, formigamento, dormência', 'Profissional de saúde'],
           ['[Fratura por estresse](/pt/fascite-plantar-ou-fratura-por-estresse/)', 'Osso do calcanhar todo, lados doloridos', 'Aumenta com a atividade', 'Correr, pular, mais quilometragem', 'Menos carga, profissional de saúde logo'],
-          ['[Aquiles insercional](/pt/fascite-plantar-ou-tendinite-de-aquiles/)', 'Atrás do calcanhar, junto ao osso', 'Durante e depois da atividade', 'Subidas, escadas, alongamento fundo', 'Carga na panturrilha, descidas no plano'],
+          ['[Aquiles insercional](/pt/fascite-plantar-ou-tendinite-de-aquiles/)', 'Atrás do calcanhar, junto ao osso', 'Durante e depois da atividade', 'Subidas, escadas, alongamento fundo', 'Carga na panturrilha, descidas de calcanhar no chão'],
           ['[Haglund](/pt/deformidade-de-haglund/)', 'Saliência atrás e em cima do calcanhar', 'Com calçado', 'Contrafortes duros', 'Contraforte macio, elevação de calcanhar'],
           ['[Sever (crianças)](/pt/doenca-de-sever/)', 'Atrás ou nos lados do calcanhar', 'Durante e depois do esporte', 'Correr, pular, estirões', 'Menos carga, profissional de saúde'],
           ['[Tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/)', 'Tornozelo por dentro e arco', 'Andando, em pé', 'Terreno irregular, subidas', 'Profissional de saúde, depois exercício'],

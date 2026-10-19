@@ -29,7 +29,7 @@ export const PF_NOT_BETTER_PT: Guide = {
   takeaways: [
     'Em 174\u00A0pessoas acompanhadas por uma média de 9,7\u00A0anos desde o início dos sintomas, 54% estavam sem sintomas e 46% ainda tinham algum sintoma, na maioria leve. Quase todas (93%) tomaram uma injeção de corticoide em algum momento, então eram casos mais difíceis (Hansen e colegas, 2018).',
     'Altos e baixos são normais: 31,9% das pessoas que melhoraram tiveram pelo menos uma recaída antes, e 77,5% das que ainda tinham dor já tinham passado por um período sem dor (Hansen e colegas, 2018).',
-    'Em um ensaio com 48\u00A0pessoas, a elevação de calcanhar com carga antecipou a melhora em comparação com o alongamento aos três meses. Em um ano, os dois grupos estavam mais ou menos iguais (Rathleff e colegas, 2015).',
+    'Em um ensaio com 48\u00A0pessoas, a elevação de calcanhar com carga trouxe a melhora mais cedo do que o alongamento aos três meses. Em um ano, os dois grupos estavam mais ou menos iguais (Rathleff e colegas, 2015).',
     'A diretriz de 2023 para dor no calcanhar dá grau **A** a alongamento, terapia manual, bandagem e tala noturna, e grau **B** a trabalho de força, agulhamento seco e laser de baixa intensidade. Ela recomenda não usar palmilhas sozinhas para alívio a curto prazo (Koc e colegas, 2023).',
     'A mesma diretriz diz para procurar outros diagnósticos quando os sintomas não se acalmam, como artrite inflamatória, atrofia do coxim gorduroso ou um nódulo na fáscia (Koc e colegas, 2023).',
   ],

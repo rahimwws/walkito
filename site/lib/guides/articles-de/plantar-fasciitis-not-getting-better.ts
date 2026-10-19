@@ -41,12 +41,12 @@ export const PF_NOT_BETTER_DE: Guide = {
       keyFact: 'In einer Gruppe von 174\u00A0Menschen, die im Mittel 9,7\u00A0Jahre begleitet wurden, waren 54\u00A0% beschwerdefrei und 46\u00A0% hatten noch Beschwerden, die meisten davon leicht (Hansen und Kollegen, 2018).',
       paragraphs: [
         '**Bei den meisten Menschen nicht.** Eine Übersichtsarbeit von 2020 berichtet, dass es bei mehr als 90\u00A0% der Menschen mit Versorgung ohne Operation besser wird, auch wenn es drei bis sechs Monate dauern kann (Latt und Kollegen, 2020). Die schwierigere Frage ist, was mit denen passiert, die danach noch feststecken.',
-        'Die besten Langzeitdaten stammen aus einer dänischen Studie, die 174\u00A0Menschen mit einer im Ultraschall bestätigten Plantarfasziitis begleitete. Im Mittel 9,7\u00A0Jahre nach Beginn der Beschwerden hatten 54\u00A0% gar keine Beschwerden mehr. Die anderen 46\u00A0% hatten noch welche, die meisten beschrieben sie aber als leicht. Im Durchschnitt hatten die Teilnehmenden 3,8 verschiedene Behandlungen ausprobiert (Hansen und Kollegen, 2018).',
+        'Die besten Langzeitdaten stammen aus einer dänischen Studie, die 174\u00A0Menschen mit einer im Ultraschall bestätigten Plantarfasziitis begleitete. Im Mittel 9,7\u00A0Jahre nach Beginn der Beschwerden hatten 54\u00A0% gar keine Beschwerden mehr. Die anderen 46\u00A0% hatten noch welche, die meisten beschrieben sie aber als leicht. Im Durchschnitt hatten die Teilnehmenden 3,8 verschiedene Maßnahmen ausprobiert (Hansen und Kollegen, 2018).',
         'Zwei Dinge machen diese Studie hoffnungsvoller, als sie auf den ersten Blick wirkt. Es war eine Gruppe aus einer Spezialklinik mit hartnäckigen Schmerzen: 93\u00A0% hatten irgendwann eine Kortisonspritze bekommen, und die ist kein erster Schritt. Und „noch Beschwerden“ bedeutete jeden Wert über 0 von 10, schließt also Menschen mit gelegentlichen leichten Schmerzen ein.',
         'Die Studie fand auch, dass die Faszie mit der Zeit dünner wurde, ob die Menschen noch Schmerzen hatten oder nicht, und nur bei 24\u00A0% der schmerzfreien Gruppe sah die Faszie im Ultraschall ganz normal aus. Ein Befund, der noch auffällig aussieht, heißt also nicht, dass es dir nicht besser gehen kann. Den vollständigen Zeitverlauf findest du unter [wie lange eine Plantarfasziitis dauert](/de/wie-lange-dauert-plantarfasziitis/).',
       ],
       sourceNote:
-        'Hansen 2018: 269 diagnostiziert von 2001 bis 2011, 174 nahmen teil (91\u00A0Frauen, 83\u00A0Männer), 137 hatten einen Kontroll-Ultraschall. Beschwerdefrei = 0 auf jeder Schmerzskala (Ruhe, Gehen, Laufen, Druck). Die Dicke der Faszie sank in beiden Gruppen von 6,9\u00A0mm und 6,7\u00A0mm auf 4,3\u00A0mm. Frauen und Menschen mit Schmerzen in beiden Fersen schnitten schlechter ab (beide P < .01). Die Autoren halten fest, dass die Studie nicht beurteilen kann, welche Behandlungen gewirkt haben.',
+        'Hansen 2018: 269 diagnostiziert von 2001 bis 2011, 174 nahmen teil (91\u00A0Frauen, 83\u00A0Männer), 137 hatten einen Kontroll-Ultraschall. Beschwerdefrei = 0 auf jeder Schmerzskala (Ruhe, Gehen, Laufen, Druck). Die Dicke der Faszie sank in beiden Gruppen von 6,9\u00A0mm und 6,7\u00A0mm auf 4,3\u00A0mm. Frauen und Menschen mit Schmerzen in beiden Fersen schnitten schlechter ab (beide P < .01). Die Autoren halten fest, dass die Studie nicht beurteilen kann, welche Maßnahmen gewirkt haben.',
       cites: [CITE.latt, CITE.hansen],
     },
     {
@@ -80,11 +80,11 @@ export const PF_NOT_BETTER_DE: Guide = {
     },
     {
       h2: 'Ist die Belastung je gestiegen?',
-      keyFact: 'In einer Studie mit 70\u00A0Personen, die drei Monate lang Fersenheben machten, erreichten nur 4 einen Punkt, an dem sie keine weitere Behandlung mehr für nötig hielten (Riel und Kollegen, 2019).',
+      keyFact: 'In einer Studie mit 70\u00A0Personen, die drei Monate lang Fersenheben machten, erreichten nur 4 einen Punkt, an dem sie keine weitere Hilfe mehr für nötig hielten (Riel und Kollegen, 2019).',
       paragraphs: [
         '**Krafttraining hilft nur, wenn es mit der Zeit schwerer wird.** Zehn leichte Wiederholungen Fersenheben auf beiden Füßen, monatelang gemacht, sind ein Aufwärmen, keine Belastung. Die Stufen unten führen von beiden Füßen auf einen Fuß und nehmen dann Gewicht dazu. Die Routine aus der Studie selbst war einbeiniges Fersenheben mit einem Handtuch unter den Zehen, langsamem Tempo und einem Rucksack als Zusatzgewicht (Rathleff und Kollegen, 2015).',
         'Wie du die Belastung festlegst, ist weniger wichtig, als viele denken. Eine Studie von 2019 gab 70\u00A0Personen entweder einen festen, stufenweisen Plan fürs Fersenheben oder ließ sie Sätze und Gewicht selbst wählen, so schwer, wie sie schafften. Beide Gruppen besserten sich ähnlich stark. Die selbst gewählte Dosis führte nicht dazu, dass die Menschen mehr machten (Riel und Kollegen, 2019).',
-        'Dieselbe Studie ist ein nützlicher Abgleich mit der Realität: Nach drei Monaten Fersenheben gaben 44 der 65\u00A0Personen, die antworteten, an, dass es ihnen besser ging, aber nur 4 von 70 hielten keine weitere Behandlung mehr für nötig. Wenn es dir nach drei Monaten besser geht, du aber noch nicht fertig bist, gehörst du zur üblichen Gruppe, nicht zur gescheiterten.',
+        'Dieselbe Studie ist ein nützlicher Abgleich mit der Realität: Nach drei Monaten Fersenheben gaben 44 der 65\u00A0Personen, die antworteten, an, dass es ihnen besser ging, aber nur 4 von 70 hielten keine weitere Hilfe mehr für nötig. Wenn es dir nach drei Monaten besser geht, du aber noch nicht fertig bist, gehörst du zur üblichen Gruppe, nicht zur gescheiterten.',
         'Was du änderst: Geh eine Stufe höher, wenn sich die aktuelle in zwei Einheiten hintereinander leicht anfühlt und dein nächster Morgen nicht schlimmer ist. Die Karten unten sind die Stufen, der Reihe nach.',
       ],
       exercises: [
@@ -179,7 +179,7 @@ export const PF_NOT_BETTER_DE: Guide = {
       h2: 'Löst noch etwas die Schmerzen aus?',
       keyFact: 'Ein Sprunggelenk, das sich um 0\u00A0Grad oder weniger beugen ließ, erhöhte die Chance auf eine Plantarfasziitis etwa 23-fach im Vergleich zu einem, das sich um mehr als 10\u00A0Grad beugen ließ, in einer Studie mit 50\u00A0Fällen und 100\u00A0Kontrollpersonen (Riddle und Kollegen, 2003).',
       paragraphs: [
-        '**Die Belastung, die dein Fuß den Rest des Tages abbekommt, kann die Übungen überholen.** In einer gematchten Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne war ein steifes Sprunggelenk der stärkste Risikofaktor: Ein Sprunggelenk, das sich um 0\u00A0Grad oder weniger beugen ließ, erhöhte die Chance 23,3-fach. Ein Body-Mass-Index über 30 erhöhte sie etwa 5,6-fach und den größten Teil des Arbeitstags auf den Beinen zu verbringen etwa 3,6-fach (Riddle und Kollegen, 2003).',
+        '**Die Belastung, die dein Fuß den Rest des Tages abbekommt, kann mehr ausmachen als die Übungen.** In einer gematchten Studie mit 50\u00A0Menschen mit Plantarfasziitis und 100 ohne war ein steifes Sprunggelenk der stärkste Risikofaktor: Ein Sprunggelenk, das sich um 0\u00A0Grad oder weniger beugen ließ, erhöhte die Chance 23,3-fach. Ein Body-Mass-Index über 30 erhöhte sie etwa 5,6-fach und den größten Teil des Arbeitstags auf den Beinen zu verbringen etwa 3,6-fach (Riddle und Kollegen, 2003).',
         'Die Leitlinie von 2023 nennt dieselben Faktoren, dazu das Laufen, und ergänzt, dass harte Böden mit schlechter Dämpfung Stehen und Gehen bei der Arbeit zu einem größeren Risiko machen (Koc und Kollegen, 2023). Manches davon kannst du ändern, manches nicht:',
         {
           list: [
@@ -226,7 +226,7 @@ export const PF_NOT_BETTER_DE: Guide = {
             '**Einlagen zusammen mit anderen Maßnahmen**: **C**.',
           ],
         },
-        'Die Leitlinie rät **ab** von Einlagen als einziger Maßnahme zur kurzfristigen Linderung (**B**) und davon, therapeutischen Ultraschall zum Dehnen dazuzunehmen (**A**). Die Fassung von 2023 gibt keine Empfehlung zur Stoßwellentherapie.',
+        'Die Leitlinie rät **ab** von Einlagen als einziger Maßnahme zur kurzfristigen Linderung (**B**) und davon, therapeutischen Ultraschall zum Dehnen dazuzunehmen (**A**). Die Fassung von 2023 gibt keine Empfehlung zu Stoßwellen.',
         '**Kortisonspritzen** lindern bei manchen Menschen kurzfristig die Schmerzen, aber die Belege für ihren Zusatznutzen sind schwach. In einer Studie mit 180\u00A0Personen bekamen alle eine Beratung und eine Fersenschale. Eine Gruppe bekam zusätzlich Fersenheben, eine weitere Fersenheben plus eine Spritze. Die Unterschiede zwischen den Gruppen erreichten zu keinem Zeitpunkt bis zu einem Jahr eine Größe, die Betroffene bemerken würden (Riel und Kollegen, 2023). Dieselbe Studie fand auch keinen klaren Zusatznutzen durch das Fersenheben, eine Erinnerung daran, dass keine einzelne Ergänzung eine sichere Sache ist.',
         'Eine Übersichtsarbeit von 2020 sagt, dass Menschen, die nach mindestens sechs Monaten Versorgung ohne Operation noch Schmerzen haben, minimalinvasive Optionen wie Spritzen oder Stoßwellen angeboten werden können oder in manchen Fällen eine Operation (Latt und Kollegen, 2020). Diese Entscheidungen triffst du mit einer Fachärztin oder einem Facharzt. Eine Physiotherapeutin oder ein Physiotherapeut kann auch persönlich deine Ausführung und Belastung prüfen.',
       ],
@@ -237,7 +237,7 @@ export const PF_NOT_BETTER_DE: Guide = {
     {
       h2: 'Wann solltest du dich erneut untersuchen lassen?',
       paragraphs: [
-        '**Lass dich erneut untersuchen, wenn ein paar Monate regelmäßiger, gesteigerter Übungen deinen Morgenschmerz nicht bewegt haben, oder früher, wenn sich das Muster ändert.** Eine Übersichtsarbeit von 2020 sagt, dass Bildgebung ungewöhnlichen Fällen und Menschen vorbehalten ist, die auf die erste Stufe der Versorgung nicht ansprechen (Latt und Kollegen, 2020), und die Leitlinie sagt, dass nach anderen Diagnosen gesucht werden sollte, wenn die Beschwerden nicht verschwinden (Koc und Kollegen, 2023).',
+        '**Lass dich erneut untersuchen, wenn ein paar Monate regelmäßiger, gesteigerter Übungen deinen Morgenschmerz nicht verändert haben, oder früher, wenn sich das Muster ändert.** Eine Übersichtsarbeit von 2020 sagt, dass Bildgebung ungewöhnlichen Fällen und Menschen vorbehalten ist, die auf die erste Stufe der Versorgung nicht ansprechen (Latt und Kollegen, 2020), und die Leitlinie sagt, dass nach anderen Diagnosen gesucht werden sollte, wenn die Beschwerden nicht verschwinden (Koc und Kollegen, 2023).',
         'Damit du das meiste aus dem Termin holst, bring mit:',
         {
           list: [

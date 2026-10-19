@@ -40,7 +40,7 @@ export const FLAT_FEET_KNEE_PAIN_IT: Guide = {
           ],
         },
         'Un secondo studio ha guardato le persone giovani. Kosashvili e colleghi hanno esaminato nel 2008 i dati di 97.279 giovani reclute militari. Il dolore nella parte anteriore del ginocchio è stato trovato nel 7% delle reclute con piede piatto moderato o grave e nel 4% di quelle con piede piatto lieve o arco normale. Il piede piatto lieve, che era il 74% del gruppo con piede piatto, non comportava alcun rischio in più.',
-        'Entrambi gli studi hanno misurato le persone una sola volta, quindi non possono dire se sia venuto prima il piede. Gli autori di Framingham hanno anche notato che un’impronta potrebbe non distinguere un piede piatto da un piede largo e carnoso, e il peso corporeo influisce da solo sul ginocchio.',
+        'Entrambi gli studi hanno misurato le persone una sola volta, quindi non possono dire se sia venuto prima il piede. Se è venuto prima il dolore al tallone, leggi se [la fascite plantare può causare dolore al ginocchio](/it/fascite-plantare-dolore-ginocchio/). Gli autori di Framingham hanno anche notato che un’impronta potrebbe non distinguere un piede piatto da un piede largo e carnoso, e il peso corporeo influisce da solo sul ginocchio.',
       ],
       sourceNote:
         'Gross 2011: studio trasversale, odds ratio per il dolore al ginocchio 1,3 (IC al 95%: da 1,1 a 1,6), danno alla cartilagine tibiofemorale mediale 1,4 (IC al 95%: da 1,1 a 1,8), aggiustati per età, sesso e indice di massa corporea. Kosashvili 2008: analisi retrospettiva, piede piatto classificato da un ortopedico, dolore anteriore al ginocchio attribuito all’articolazione femoro-rotulea.',

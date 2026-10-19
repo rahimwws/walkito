@@ -216,7 +216,7 @@ export const WEIGHT_PF_DE: Guide = {
       h2: 'Geht eine Plantarfasziitis weg, wenn ich nicht abnehme?',
       paragraphs: [
         '**Bei den meisten Menschen ja, sie lässt mit der Zeit und mit Behandlung ohne Operation nach.** Bei etwa 90\u00A0% der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, etwa mit Dehnungen und Einlagen, oft innerhalb von 3 bis 6\u00A0Monaten (Latt und Kollegen, 2020).',
-        'In einer langen Nachbeobachtung von 174\u00A0Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Das galt nur für weibliches Geschlecht und Schmerzen in beiden Fersen, nicht für den BMI (Hansen und Kollegen, 2018).',
+        'In einer langen Nachbeobachtung von 174\u00A0Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Das galt nur für weibliches Geschlecht und Schmerzen in beiden Fersen, nicht für den BMI (Hansen und Kollegen, 2018). Warum Frauen um 50 häufiger betroffen sind, erklärt [Plantarfasziitis und Wechseljahre](/de/plantarfasziitis-wechseljahre/).',
         'Ein höheres Gewicht macht es also vielleicht wahrscheinlicher, dass eine Plantarfasziitis beginnt, aber es heißt nicht, dass du sie behalten musst. Die Dehnungen und das Wadentraining oben sind dieselben, die Menschen jeder Statur helfen. [Wie lange eine Plantarfasziitis dauert](/de/wie-lange-dauert-plantarfasziitis/) zeigt den ganzen Verlauf.',
       ],
       cites: [CITE.latt, CITE.hansen],

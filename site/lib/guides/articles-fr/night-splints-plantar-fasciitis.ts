@@ -161,7 +161,7 @@ export const NIGHT_SPLINTS_FR: Guide = {
           ],
         },
         'La recommandation déconseille aussi les semelles comme unique mesure pour soulager la douleur à court terme. Pour en savoir plus sur cette question, voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
-        'Un ordre courant consiste à commencer par les étirements et le travail du mollet. Si vos premiers pas restent difficiles après un mois environ, ajoutez une attelle pendant un à trois mois. Beaucoup de gens utilisent des semelles en parallèle. Cet ordre est une lecture raisonnable de la recommandation, pas quelque chose qu’un essai a testé.',
+        'Un ordre courant consiste à commencer par les étirements et le travail du mollet. Si vos premiers pas restent difficiles après un mois environ, ajoutez une attelle pendant un à trois mois. S’ils restent difficiles même après l’attelle, voir [fasciite plantaire qui ne passe pas](/fr/fasciite-plantaire-qui-ne-passe-pas/). Beaucoup de gens utilisent des semelles en parallèle. Cet ordre est une lecture raisonnable de la recommandation, pas quelque chose qu’un essai a testé.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
     },

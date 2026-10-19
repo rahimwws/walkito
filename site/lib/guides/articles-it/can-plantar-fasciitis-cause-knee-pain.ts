@@ -268,7 +268,7 @@ export const PF_KNEE_HIP_BACK_IT: Guide = {
       'il dolore ti sveglia di notte o c’è a riposo e non si attenua cambiando posizione',
       'hai mal di schiena con febbre, perdita di peso senza motivo o una storia di tumore',
       'hai intorpidimento intorno all’inguine o ai glutei, o nuovi problemi a controllare vescica o intestino: vai al pronto soccorso',
-      'il dolore è iniziato dopo una caduta, una storta o uno scrocchio, o non riesci a caricare il peso sulla gamba',
+      'il dolore è iniziato dopo una caduta, una storta o uno schiocco, o non riesci a caricare il peso sulla gamba',
     ],
   },
   program: {

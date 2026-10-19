@@ -477,7 +477,7 @@ export const HEEL_PAIN_PT: Guide = {
     {
       h2: 'Quais exercícios evitar com fascite plantar?',
       paragraphs: [
-        'Evite atividades de alto impacto que aumentam de repente a carga no calcanhar enquanto a dor está em crise, e evite andar descalço em piso duro logo cedo.',
+        'Evite atividades de alto impacto que aumentam de repente a carga no calcanhar [enquanto a dor está em crise](/pt/crise-de-fascite-plantar/), e evite andar descalço em piso duro logo cedo.',
         'Saltos, tiros de corrida e pliometria colocam um pico de força repentino na fáscia plantar. Quando o tecido está irritado, esse pico pode atrasar a recuperação. A diretriz de 2023 recomenda ajustar a carga nos pés no trabalho, no esporte e no dia a dia, uma recomendação com grau E. Ela não proíbe exercícios específicos. **A questão é se o tecido consegue se recuperar dessa carga de um dia para o outro.**',
         'Andar descalço em piso duro é um gatilho comum porque a fáscia está mais rígida depois do repouso e uma superfície dura não amortece nada. Até os sintomas melhorarem, use um calçado bem amortecido o dia todo, inclusive dentro de casa.',
         'Mais duas coisas para observar:',

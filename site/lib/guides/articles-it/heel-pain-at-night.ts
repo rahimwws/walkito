@@ -98,7 +98,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       paragraphs: [
         'Se il tuo dolore corrisponde al quadro della fascite plantare, un allungamento leggero di polpaccio e fascia plantare prima di dormire potrebbe ridurre la rigidità della mattina dopo. Lo stesso allungamento specifico della fascia plantare a cui la linea guida dà una **A** per il dolore ai primi passi si può fare prima di dormire: tira indietro le dita con la mano finché senti l’arco, tieni 10\u00A0secondi, ripeti 10\u00A0volte.',
         'Gli esercizi di carico come i sollevamenti sulle punte sono più adatti a un momento precedente della giornata. L’elenco completo degli esercizi è nella pagina degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
-        'Se il tuo dolore non è fascite plantare o non ne sei sicuro, lo stretching serale non è il primo passo. Il primo passo è avere la diagnosi giusta.',
+        'Se [il tuo dolore non è fascite plantare](/it/dolore-tallone-non-fascite-plantare/) o non ne sei sicuro, lo stretching serale non è il primo passo. Il primo passo è avere la diagnosi giusta.',
       ],
       exercises: [
         {

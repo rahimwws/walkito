@@ -36,7 +36,7 @@ export const CALF_RAISES_PT: Guide = {
       paragraphs: [
         'A elevação de calcanhar ajuda na fascite plantar porque fortalece a cadeia panturrilha-Aquiles-fáscia, que absorve a carga toda vez que o calcanhar toca o chão.',
         'O único ensaio randomizado que testou esse exercício diretamente na fascite plantar é o de Rathleff, de 2015. Nesse ensaio, 48\u00A0pessoas com fascite plantar confirmada por ultrassom foram divididas em dois grupos. Os dois usaram [palmilhas](/pt/palmilhas-ou-exercicios/). Um grupo fez uma elevação de calcanhar lenta, com carga, com uma toalha enrolada embaixo dos dedos. O outro alongou a fáscia plantar.',
-        'Aos três meses, o grupo da elevação teve 29\u00A0pontos a mais de melhora no Foot Function Index. Aos doze meses, os dois grupos tinham se igualado.',
+        'Aos três meses, o grupo da elevação teve 29\u00A0pontos a mais de melhora no Foot Function Index. Aos doze meses, os dois grupos tinham se igualado. Se os exercícios não estão ajudando depois de alguns meses, veja [fascite plantar que não melhora](/pt/fascite-plantar-nao-melhora/).',
         '**Ou seja, a elevação de calcanhar adiantou a melhora.** Ela não produziu uma melhora maior a longo prazo. A diretriz clínica de 2023 dá ao treino de força o grau B e ao alongamento o grau A. Ela recomenda os dois. Nada na evidência sugere que você deva escolher um e pular o outro.',
       ],
       sourceNote:
@@ -199,7 +199,7 @@ export const CALF_RAISES_PT: Guide = {
       paragraphs: [
         'Uma elevação de calcanhar para fascite plantar deve dar a sensação de trabalho pesado na panturrilha. A versão com toalha também vai dar um puxão embaixo do arco. É a fáscia recebendo carga, e esse é o objetivo do exercício.',
         'Pare por hoje se a dor chegar a **6/10 ou mais** durante o exercício, ou se os seus primeiros passos na manhã seguinte estiverem claramente piores que o normal. É o mesmo limite que o app usa para encerrar uma sessão. Não é um modelo de dor específico do Aquiles (que usa 5/10, de outro ensaio). Esta é a regra de parada para fascite plantar.',
-        'Uma dor muscular leve que passa em um dia é esperada, principalmente nas duas primeiras semanas. Dor que continua alta por dias ou piora de semana em semana é motivo para voltar um nível ou procurar um profissional de saúde.',
+        'Uma dor muscular leve que passa em um dia é esperada, principalmente nas duas primeiras semanas. Dor que continua alta por dias ou piora de semana em semana é motivo para voltar um nível ou procurar um profissional de saúde. Se a dor piorou de repente depois de um dia mais puxado, veja [crise de fascite plantar](/pt/crise-de-fascite-plantar/).',
       ],
       cites: [CITE.guideline],
     },

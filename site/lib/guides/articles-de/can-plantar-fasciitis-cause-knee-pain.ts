@@ -83,7 +83,7 @@ export const PF_KNEE_HIP_BACK_DE: Guide = {
     },
     {
       h2: 'Kann eine Plantarfasziitis Rückenschmerzen verursachen?',
-      keyFact: 'Keine Studie hat gemessen, ob eine Plantarfasziitis zu Schmerzen im unteren Rücken führt. Für Plattfüße fand die Framingham Foot Study mit 1930\u00A0Erwachsenen keinen Zusammenhang mit der Fußhaltung im Stand (Menz und Kollegen, 2013).',
+      keyFact: 'Keine Studie hat gemessen, ob eine Plantarfasziitis zu Schmerzen im unteren Rücken führt. Für Plattfüße fand die Framingham Foot Study mit 1.930\u00A0Erwachsenen keinen Zusammenhang mit der Fußhaltung im Stand (Menz und Kollegen, 2013).',
       paragraphs: [
         '**Wir haben keine Studie gefunden, die prüft, ob eine Plantarfasziitis zu Rückenschmerzen führt.** Manche Praxisseiten schreiben, dass ein Hinken durch Fersenschmerzen „häufig“ Rückenschmerzen verursacht. Das ist eine mögliche Kette, keine gemessene.',
         'Die nächstliegenden Belege betreffen die Fußform, nicht Fersenschmerzen. In der Framingham Foot Study hing eine flache Fußhaltung nicht mit Schmerzen im unteren Rücken zusammen, nur ein Fuß, der beim Gehen nach innen rollte, zeigte einen kleinen Zusammenhang, und zwar bei Frauen (Menz und Kollegen, 2013). Die Einzelheiten stehen unter [Plattfuß und Rückenschmerzen](/de/plattfuss-rueckenschmerzen/), deshalb wiederholen wir sie hier nicht.',

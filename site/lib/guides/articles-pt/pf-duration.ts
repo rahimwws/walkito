@@ -180,7 +180,7 @@ export const PF_DURATION_PT: Guide = {
     {
       q: 'Por que minha fascite plantar não melhora?',
       cites: [CITE.guideline],
-      a: 'Há várias possibilidades. Os exercícios podem não estar sendo feitos com constância suficiente, o calçado pode não ter bom suporte, ou a carga diária no pé (passos, horas em pé, quilometragem de corrida) pode ser maior do que o tecido consegue acompanhar. Também é possível que o diagnóstico não seja fascite plantar. Se alongamento e fortalecimento não ajudaram depois de vários meses, a diretriz de 2023 recomenda conversar com um profissional de saúde sobre opções como [talas noturnas](/pt/tala-noturna-fascite-plantar/), laser ou agulhamento seco.',
+      a: 'Há várias possibilidades, explicadas em detalhe em [fascite plantar que não melhora](/pt/fascite-plantar-nao-melhora/). Os exercícios podem não estar sendo feitos com constância suficiente, o calçado pode não ter bom suporte, ou a carga diária no pé (passos, horas em pé, quilometragem de corrida) pode ser maior do que o tecido consegue acompanhar. Também é possível que o [diagnóstico não seja fascite plantar](/pt/dor-no-calcanhar-nao-e-fascite-plantar/). Se alongamento e fortalecimento não ajudaram depois de vários meses, a diretriz de 2023 recomenda conversar com um profissional de saúde sobre opções como [talas noturnas](/pt/tala-noturna-fascite-plantar/), laser ou agulhamento seco.',
     },
     {
       q: 'Esporão faz a fascite plantar durar mais?',
@@ -199,7 +199,7 @@ export const PF_DURATION_PT: Guide = {
     {
       q: 'A fascite plantar pode voltar depois de passar?',
       cites: [CITE.hansen],
-      a: 'Pode. No grupo de Hansen 2018, 32% do grupo sem sintomas tiveram pelo menos uma recaída antes de ficar sem sintomas de vez. O padrão de melhora, recaída e nova melhora é comum. Continuar com uma dose de manutenção de treino de panturrilha e alongamento depois que a dor passa é um jeito de diminuir a chance de ela voltar.',
+      a: 'Pode. No grupo de Hansen 2018, 32% do grupo sem sintomas tiveram pelo menos uma recaída antes de ficar sem sintomas de vez. O padrão de melhora, [recaída](/pt/crise-de-fascite-plantar/) e nova melhora é comum. Continuar com uma dose de manutenção de treino de panturrilha e alongamento depois que a dor passa é um jeito de diminuir a chance de ela voltar.',
     },
     {
       q: 'Quais são os sinais de que a fascite plantar está melhorando?',

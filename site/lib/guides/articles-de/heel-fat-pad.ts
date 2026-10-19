@@ -22,7 +22,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
   lede:
     'Beim Fersenfettpolster-Syndrom wird das Fettpolster unter deinem Fersenbein dünner oder geschädigt. Es verursacht einen tiefen Schmerz mitten in der Ferse, der sich wie ein blauer Fleck anfühlt, vor allem auf hartem Boden oder barfuß. Nach der [Plantarfasziitis](/de/plantarfasziitis/) ist es womöglich die zweithäufigste Ursache für Schmerzen unter der Ferse, und doch ist die Forschung dazu dünn. Ein Scoping Review von 2022 fand nur sieben Originalstudien.',
   intro: [
-    'Diese Seite fasst zusammen, was über das Fersenfettpolster-Syndrom bekannt ist, wie du es von einer Plantarfasziitis unterscheidest und welche konservativen Schritte zumindest etwas Unterstützung haben. Wenn dein Schmerz eher ein stechender Schmerz an der Innenseite der Ferse bei den ersten Schritten am Morgen ist, passt [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) wahrscheinlich besser. Wenn er hinten an der Ferse nahe der Achillessehne sitzt, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) oder [Haglundferse](/de/haglundferse/).',
+    'Diese Seite fasst zusammen, was über das Fersenfettpolster-Syndrom bekannt ist, wie du es von einer Plantarfasziitis unterscheidest und welche konservativen Schritte zumindest etwas Unterstützung haben. Wenn dein Schmerz eher ein stechender Schmerz an der Innenseite der Ferse bei den ersten Schritten am Morgen ist, passt [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) wahrscheinlich besser. Wenn er hinten an der Ferse nahe der Achillessehne sitzt, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) oder [Haglundferse](/de/haglundferse/). Die übrigen ähnlichen Beschwerden vergleicht [Fersenschmerzen, die keine Plantarfasziitis sind](/de/fersenschmerzen-keine-plantarfasziitis/).',
   ],
   takeaways: [
     'In einer Studie mit 250\u00A0Menschen mit Schmerzen unter der Ferse war eine Atrophie des Fettpolsters für 14,8\u00A0% der Fälle verantwortlich und damit nach der Plantarfasziitis mit 53,2\u00A0% die zweithäufigste Ursache (Yi und Kollegen, 2011).',
@@ -74,7 +74,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       h2: 'Warum wird das Fersenfettpolster dünner?',
       paragraphs: [
-        '**Das Alter ist der wichtigste Faktor.** Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.',
+        '**Das Alter ist der wichtigste Faktor.** Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. In denselben Jahren ist die [Plantarfasziitis bei Frauen am häufigsten](/de/plantarfasziitis-wechseljahre/), deshalb lohnt es sich, beides auseinanderzuhalten. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.',
         'Weitere Risikofaktoren sind:',
         {
           list: [

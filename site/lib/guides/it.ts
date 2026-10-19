@@ -477,7 +477,7 @@ export const HEEL_PAIN_IT: Guide = {
     {
       h2: 'Quali esercizi evitare con la fascite plantare?',
       paragraphs: [
-        'Evita le attività ad alto impatto che fanno impennare il carico sul tallone nelle fasi in cui il dolore è più forte, ed evita di camminare scalzo su pavimenti duri appena alzato.',
+        'Evita le attività ad alto impatto che fanno impennare il carico sul tallone [nelle fasi in cui il dolore è più forte](/it/riacutizzazione-fascite-plantare/), ed evita di camminare scalzo su pavimenti duri appena alzato.',
         'Salti, scatti e pliometria impongono alla fascia plantare un picco di forza improvviso. Quando il tessuto è irritato, quel picco può farti tornare indietro. La linea guida del 2023 consiglia di regolare il carico sui piedi al lavoro, nello sport e nella vita di tutti i giorni, un consiglio di grado E. Non vieta esercizi specifici. **La domanda è se il carico supera quello da cui il tessuto riesce a riprendersi durante la notte.**',
         'Camminare scalzo su pavimenti duri è un fattore scatenante comune, perché la fascia è più rigida dopo il riposo e una superficie dura non ammortizza. Finché i sintomi non si calmano, porta sempre una scarpa ben ammortizzata, a qualsiasi ora del giorno, anche in casa.',
         'Altre due cose a cui fare attenzione:',

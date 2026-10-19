@@ -67,7 +67,7 @@ export const WALKING_PF_IT: Guide = {
       },
       after: [
         'Il controllo del mattino è quello che conta di più. Il dolore ai primi passi è il sintomo classico della fascite plantare, ed è il segnale più chiaro di come il piede ha retto il giorno prima. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questo quadro e gli allungamenti da fare prima di alzarti in piedi.',
-        'Un dolore acuto che ti fa zoppicare, un dolore che cresce a ogni camminata e non migliora con il riposo, o un dolore di notte sono fuori da questa regola. Zoppicare può anche caricare in modo diverso ginocchio, anca e schiena. Controlla l’elenco alla fine di questa pagina.',
+        'Un dolore acuto che ti fa zoppicare, un dolore che cresce a ogni camminata e non migliora con il riposo, o un dolore di notte sono fuori da questa regola. Zoppicare può anche caricare in modo diverso ginocchio, anca e schiena: vedi [fascite plantare e dolore a ginocchio, anca o schiena](/it/fascite-plantare-dolore-ginocchio/). Controlla l’elenco alla fine di questa pagina.',
       ],
       sourceNote: 'Silbernagel 2007: 19\u00A0persone per gruppo; a dodici mesi il punteggio VISA-A-S è passato da 57 a 85 nel gruppo attivo e da 57 a 91 nel gruppo a riposo, senza differenze significative nel ritmo di miglioramento.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -243,7 +243,7 @@ export const WALKING_PF_IT: Guide = {
     {
       q: 'Camminare può peggiorare la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Sì, se fai molto più di quanto il tallone è abituato a fare. La linea guida del 2023 indica il dolore al tallone dopo un recente aumento dell’attività in piedi come una caratteristica tipica della fascite plantare. Una camminata lunga all’improvviso, un nuovo percorso in salita o una giornata su pavimenti duri possono farla riacutizzare. Aumenti più piccoli e costanti sono più leggeri per il tallone.',
+      a: 'Sì, se fai molto più di quanto il tallone è abituato a fare. La linea guida del 2023 indica il dolore al tallone dopo un recente aumento dell’attività in piedi come una caratteristica tipica della fascite plantare. Una camminata lunga all’improvviso, un nuovo percorso in salita o una giornata su pavimenti duri possono [farla riacutizzare](/it/riacutizzazione-fascite-plantare/). Aumenti più piccoli e costanti sono più leggeri per il tallone.',
     },
     {
       q: 'Devo smettere del tutto di camminare perché la fascite plantare si calmi?',

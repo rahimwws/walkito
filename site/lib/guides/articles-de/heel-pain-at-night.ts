@@ -96,7 +96,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       paragraphs: [
         'Wenn dein Schmerz zum Muster der Plantarfasziitis passt, kann sanftes Dehnen von Wade und Plantarfaszie vor dem Schlafengehen die Steifigkeit am nächsten Morgen verringern. Dieselbe gezielte Plantarfaszien-Dehnung, die die Leitlinie beim Schmerz bei den ersten Schritten mit **A** bewertet, kannst du vor dem Schlafen machen: Zieh die Zehen mit der Hand zurück, bis du das Gewölbe spürst, halte 10\u00A0Sekunden, wiederhole 10-mal.',
         'Kraftübungen wie Fersenheben passen besser früher am Tag. Die vollständige Übungsliste findest du auf der Seite [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
-        'Wenn dein Schmerz keine Plantarfasziitis ist oder du unsicher bist, ist Dehnen am Abend nicht der erste Schritt. Die richtige Diagnose ist es.',
+        'Wenn dein Schmerz [keine Plantarfasziitis ist](/de/fersenschmerzen-keine-plantarfasziitis/) oder du unsicher bist, ist Dehnen am Abend nicht der erste Schritt. Die richtige Diagnose ist es.',
       ],
       exercises: [
         {

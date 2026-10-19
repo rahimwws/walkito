@@ -40,7 +40,7 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
           ],
         },
         'Une deuxième étude s’est intéressée aux plus jeunes. Kosashvili et ses collègues ont examiné en 2008 les dossiers de 97\u00A0279 jeunes recrues militaires. Une douleur à l’avant du genou a été trouvée chez 7\u00A0% des recrues aux pieds plats modérés ou sévères, et chez 4\u00A0% de celles aux pieds plats légers ou aux voûtes normales. Les pieds plats légers, qui représentaient 74\u00A0% du groupe aux pieds plats, n’entraînaient aucun risque supplémentaire.',
-        'Les deux études ont mesuré chaque personne une seule fois, elles ne peuvent donc pas dire si le pied est venu en premier. Les auteurs de Framingham notent aussi qu’une empreinte ne permet pas toujours de distinguer un pied plat d’un pied large et charnu, et que le poids du corps agit à lui seul sur le genou.',
+        'Les deux études ont mesuré chaque personne une seule fois, elles ne peuvent donc pas dire si le pied est venu en premier. Si c’est la douleur au talon qui est venue en premier, voyez si [la fasciite plantaire peut donner mal au genou](/fr/fasciite-plantaire-genou-hanche-dos/). Les auteurs de Framingham notent aussi qu’une empreinte ne permet pas toujours de distinguer un pied plat d’un pied large et charnu, et que le poids du corps agit à lui seul sur le genou.',
       ],
       sourceNote:
         'Gross 2011\u00A0: étude transversale, odds ratio pour la douleur au genou 1,3 (IC à 95\u00A0% 1,1 à 1,6), lésion du cartilage fémoro-tibial médial 1,4 (IC à 95\u00A0% 1,1 à 1,8), ajusté sur l’âge, le sexe et l’indice de masse corporelle. Kosashvili 2008\u00A0: revue rétrospective, pieds plats gradés par un orthopédiste, douleur à l’avant du genou attribuée à l’articulation fémoro-patellaire.',

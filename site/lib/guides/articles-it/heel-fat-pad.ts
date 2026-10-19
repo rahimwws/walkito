@@ -22,7 +22,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
     'Cuscinetto adiposo del tallone assottigliato: dolore profondo al centro del tallone. Come distinguerlo dalla fascite plantare e cosa aiuta.',
   h1: 'Sindrome del cuscinetto adiposo del tallone: cos’è, in cosa è diversa dalla fascite plantare e cosa dicono gli studi',
   lede:
-    'La sindrome del cuscinetto adiposo del tallone è l’assottigliamento o il danno del cuscinetto di grasso sotto l’osso del tallone. Dà un dolore profondo, come un livido, al centro del tallone, soprattutto su superfici dure o a piedi nudi. Potrebbe essere la seconda causa più comune di dolore sotto il tallone dopo la [fascite plantare](/it/fascite-plantare/), eppure gli studi su questo problema sono pochi. Una scoping review del 2022 ha trovato solo sette studi originali.',
+    'La sindrome del cuscinetto adiposo del tallone è l’assottigliamento o il danno del cuscinetto di grasso sotto l’osso del tallone. Dà un dolore profondo, come un livido, al centro del tallone, soprattutto su superfici dure o a piedi nudi. Potrebbe essere la seconda causa più comune di dolore sotto il tallone dopo la [fascite plantare](/it/fascite-plantare/), eppure gli studi su questo problema sono pochi. Le altre cause simili sono messe a confronto in [dolore al tallone che non è fascite plantare](/it/dolore-tallone-non-fascite-plantare/). Una scoping review del 2022 ha trovato solo sette studi originali.',
   intro: [
     'Questa pagina spiega cosa si sa sulla sindrome del cuscinetto adiposo del tallone, come distinguerla dalla fascite plantare e quali misure conservative hanno almeno un po’ di supporto. Se il tuo dolore è più una fitta acuta nella parte interna del tallone ai primi passi del mattino, probabilmente la pagina giusta è [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/). Se è nella parte posteriore del tallone vicino all’Achille, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) o [morbo di Haglund](/it/morbo-di-haglund/).',
   ],
@@ -76,7 +76,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
     {
       h2: 'Perché il cuscinetto adiposo del tallone si assottiglia?',
       paragraphs: [
-        '**L’età è il fattore principale.** Dopo i 40\u00A0anni circa, il cuscinetto adiposo perde naturalmente acqua, collagene ed elasticità. Anni di attività ad alto impatto, ore in piedi su superfici dure e camminate a piedi nudi accelerano il processo.',
+        '**L’età è il fattore principale.** Dopo i 40\u00A0anni circa, il cuscinetto adiposo perde naturalmente acqua, collagene ed elasticità. Anni di attività ad alto impatto, ore in piedi su superfici dure e camminate a piedi nudi accelerano il processo. Sono gli stessi anni in cui la [fascite plantare raggiunge il picco nelle donne](/it/fascite-plantare-menopausa/), quindi vale la pena distinguere le due condizioni.',
         'Altri fattori di rischio sono:',
         {
           list: [

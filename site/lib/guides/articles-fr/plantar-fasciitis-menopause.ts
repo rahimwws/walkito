@@ -16,9 +16,9 @@ export const PF_MENOPAUSE_FR: Guide = {
   mainSource: CITE.rasenbergIncidence,
   published: '2026-10-19',
   updated: '2026-10-19',
-  title: 'Fasciite plantaire et ménopause\u00A0: mal au talon après 40 ans',
+  title: 'Fasciite plantaire, ménopause\u00A0: mal au talon de 40 à 60 ans',
   description:
-    'La fasciite plantaire culmine chez la femme vers 50\u00A0ans, deux fois plus que chez l’homme. Ménopause et douleur au talon\u00A0: ce que l’on sait et ce qui aide.',
+    'La fasciite plantaire culmine chez la femme vers 50\u00A0ans, environ deux fois plus que chez l’homme. Ménopause et talon\u00A0: le connu, l’inconnu et ce qui aide.',
   h1: 'Fasciite plantaire et ménopause\u00A0: pourquoi la douleur au talon commence souvent entre 40 et 60\u00A0ans',
   lede:
     'La fasciite plantaire est la plus fréquente chez les femmes autour de l’âge de la ménopause\u00A0: dans les dossiers de médecine générale néerlandais, les nouveaux cas chez les femmes culminaient à 11,23 pour 1\u00A0000\u00A0patients-années à 50\u00A0ans, contre un pic de 5,54 chez les hommes à 55\u00A0ans (Rasenberg et coll., 2019). On ne sait pas si la baisse des hormones en est la cause. Le lien est plausible, mais aucune étude ne l’a prouvé (Douglas-Harris et coll., 2026). Ce qui aide est la même chose qu’à tout âge\u00A0: les étirements du fascia plantaire et du mollet, notés **A** dans la recommandation de 2023 sur la douleur au talon, et le renforcement du mollet, noté **B** (Koc et coll., 2023).',

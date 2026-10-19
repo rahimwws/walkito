@@ -19,7 +19,7 @@ export const HEEL_NOT_PF_FR: Guide = {
   updated: '2026-10-19',
   title: 'Mal au talon sans fasciite plantaire\u00A0? 9 autres causes',
   description:
-    'Douleur au talon qui n’est pas une fasciite plantaire\u00A0: coussinet graisseux, nerfs, fracture de fatigue, Achille, Haglund, Sever, arthrite et dos comparés.',
+    'Mal au talon sans fasciite plantaire\u00A0: coussinet, nerfs, fracture de fatigue, Achille, Haglund, Sever, tibial postérieur, arthrite et dos en un tableau.',
   h1: 'Douleur au talon qui n’est pas une fasciite plantaire\u00A0: les causes qui lui ressemblent et ce qui les distingue',
   lede:
     'Si votre douleur au talon ne suit pas le schéma habituel de la [fasciite plantaire](/fr/fasciite-plantaire/), pire aux premiers pas du matin puis plus légère une fois échauffé, il se passe peut-être autre chose. Sous le talon, les causes qui lui ressemblent le plus souvent sont un coussinet graisseux du talon contusionné ou aminci, un nerf irrité, y compris un nerf comprimé dans le bas du dos, une fracture de fatigue du talon et une arthrite inflammatoire (Latt et coll., 2020). La douleur à l’arrière du talon a ses propres causes, comme le tendon d’Achille. Chez 250\u00A0personnes ayant mal sous le talon, la fasciite plantaire expliquait 53,2\u00A0% des cas et l’atrophie du coussinet graisseux 14,8\u00A0% (Yi et coll., 2011).',
@@ -85,7 +85,7 @@ export const HEEL_NOT_PF_FR: Guide = {
           ],
         },
         'Une revue sur les douleurs du talon d’origine nerveuse a conclu que la compression d’un nerf pourrait jouer un rôle à la fois au début et dans les douleurs du talon qui ne s’améliorent pas, mais que son mécanisme et la meilleure façon de la tester restent discutés (Alshami et coll., 2008). La douleur de nuit ou au repos avec des fourmillements est abordée dans [douleur au talon la nuit](/fr/douleur-talon-la-nuit/).',
-        'C’est un groupe où les exercices faits seul ne sont pas la première étape. Un professionnel de santé examine le pied, par exemple en tapotant le long du nerf tibial, et peut recourir à une échographie, à des examens des nerfs ou à une IRM (Latt et coll., 2020\u00A0; Tedeschi, 2025).',
+        'Pour ces causes, les exercices à faire seul ne sont pas la première étape. Un professionnel de santé examine le pied, par exemple en tapotant le long du nerf tibial, et peut recourir à une échographie, à des examens des nerfs ou à une IRM (Latt et coll., 2020\u00A0; Tedeschi, 2025).',
       ],
       cites: [CITE.latt, CITE.tedeschiBaxter, CITE.alshami],
     },
@@ -95,7 +95,7 @@ export const HEEL_NOT_PF_FR: Guide = {
       paragraphs: [
         '**Les deux font plutôt mal à l’effort qu’au premier pas du matin.** Une fracture de fatigue du talon donne typiquement une douleur sur la partie arrière de l’os du talon, liée à l’activité et non au lever. Elle est plus probable si vous avez déjà eu une faible densité osseuse ou une fracture de fatigue (Latt et coll., 2020). Elle suit en général une forte hausse de la marche ou de la course, ou le passage à une surface plus dure (Tu, 2018).',
         'Une radiographie normale ne l’exclut pas\u00A0: chez 30\u00A0recrues ayant une lésion de fatigue du talon à l’IRM, les radiographies standard ne la montraient que dans 15\u00A0% des cas (Sormaala et coll., 2006). La comparaison point par point se trouve dans [fasciite plantaire ou fracture de fatigue](/fr/fasciite-plantaire-ou-fracture-de-fatigue/).',
-        'La douleur du coussinet graisseux est en général décrite comme une douleur profonde, comme un bleu, au milieu du talon, pire sur les sols durs et pieds nus. Comme la fracture de fatigue, elle est plutôt liée à l’activité (Latt et coll., 2020), et dans une consultation elle touchait plus souvent les deux talons et était aggravée par la station debout (Yi et coll., 2011). C’était la deuxième cause la plus fréquente chez les 250\u00A0personnes citées plus haut, avec 14,8\u00A0% (Yi et coll., 2011). Une revue de 2022 n’a trouvé que sept études originales sur le sujet\u00A0: une grande partie des conseils repose donc sur l’expérience, pas sur des essais (Chang et coll., 2022). Plus de détails dans [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/), et sur la place de l’épine calcanéenne, dans [fasciite plantaire ou épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/).',
+        'La douleur du coussinet graisseux est en général décrite comme une douleur profonde, comme un bleu, au milieu du talon, pire sur les sols durs et pieds nus. Comme la fracture de fatigue, elle est plutôt liée à l’activité (Latt et coll., 2020), et dans une clinique, elle touchait plus souvent les deux talons et était aggravée par la station debout (Yi et coll., 2011). C’était la deuxième cause la plus fréquente chez les 250\u00A0personnes citées plus haut, avec 14,8\u00A0% (Yi et coll., 2011). Une revue de 2022 n’a trouvé que sept études originales sur le sujet\u00A0: une grande partie des conseils repose donc sur l’expérience, pas sur des essais (Chang et coll., 2022). Plus de détails dans [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/), et sur la place de l’épine calcanéenne, dans [fasciite plantaire ou épine calcanéenne](/fr/fasciite-plantaire-ou-epine-calcaneenne/).',
       ],
       cites: [CITE.latt, CITE.tuHeelPain, CITE.sormaalaCalcaneus, CITE.yiFatPad, CITE.fatPadReview],
     },
@@ -127,7 +127,7 @@ export const HEEL_NOT_PF_FR: Guide = {
       h2: 'Et si la douleur est à l’intérieur de la cheville et de la voûte\u00A0?',
       paragraphs: [
         '**Une douleur située derrière ou sous la malléole interne et le long de la voûte, plutôt que sous le talon, peut venir du tendon tibial postérieur.** C’est le principal soutien actif de la voûte interne, et les personnes qui ont un problème à ce niveau ont mal sur le côté interne de la cheville, avec un pied qui s’aplatit lentement (Deu et coll., 2022). Dans une enquête auprès de 582\u00A0femmes de plus de 40\u00A0ans en Angleterre, 3,3\u00A0% avaient une dysfonction du tendon tibial postérieur à un stade précoce, et aucune n’avait été diagnostiquée (Kohls-Gatzoulis et coll., 2009).',
-        'Une voûte qui s’aplatit d’un côté, ou du mal à monter sur la pointe de ce pied, est une raison de consulter un professionnel de santé. L’exercice a un certain appui aux premiers stades, mais seuls trois petits essais, avec 93\u00A0personnes au total, l’ont testé (Ross et coll., 2018). Plus de détails dans [dysfonction du tendon tibial postérieur](/fr/dysfonction-tendon-tibial-posterieur/).',
+        'Une voûte qui s’aplatit d’un côté, ou du mal à monter sur la pointe de ce pied, est une raison de consulter un professionnel de santé. L’exercice est en partie étayé aux premiers stades, mais seuls trois petits essais, avec 93\u00A0personnes au total, l’ont testé (Ross et coll., 2018). Plus de détails dans [dysfonction du tendon tibial postérieur](/fr/dysfonction-tendon-tibial-posterieur/).',
       ],
       cites: [CITE.deuTendinopathies, CITE.kohlsGatzoulisPrevalence, CITE.posteriorTibialReview],
     },

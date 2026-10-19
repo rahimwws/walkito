@@ -163,7 +163,7 @@ export const INSOLES_VS_EXERCISES_FR: Guide = {
       paragraphs: [
         '**Utilisez la semelle pour le confort et les exercices pour le changement.** Dans les essais de Rathleff comme dans STAP, tout le monde avait des conseils d’exercices en plus de ce qui allait dans la chaussure. Portez un soutien de voûte du commerce les jours douloureux, et commencez en même temps les étirements et les montées sur pointes. À mesure que la douleur du matin se calme, essayez de courtes périodes sans semelle, puis de plus longues.',
         'Walkito peut organiser la partie exercices sous forme de plan hebdomadaire\u00A0: une fois par semaine, il fait monter votre exercice principal d’une étape quand vous avez jugé faciles vos deux dernières séances avec lui et que la douleur du matin n’a pas augmenté.',
-        'Si quelques mois d’étirements et de renforcement quotidiens n’ont pas aidé, consultez un professionnel de santé. C’est le moment où une semelle orthopédique sur mesure, parmi d’autres options, mérite d’être discutée avec quelqu’un qui a examiné votre pied.',
+        'Si quelques mois d’étirements et de renforcement quotidiens [n’ont pas aidé](/fr/fasciite-plantaire-qui-ne-passe-pas/), consultez un professionnel de santé. C’est le moment où une semelle orthopédique sur mesure, parmi d’autres options, mérite d’être discutée avec quelqu’un qui a examiné votre pied.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],
     },

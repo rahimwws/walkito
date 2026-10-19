@@ -199,7 +199,7 @@ export const CALF_RAISES_FR: Guide = {
       paragraphs: [
         'Une montée sur pointes pour la fasciite plantaire doit donner la sensation d’un travail dur dans le mollet. La version avec serviette donne aussi une traction sous la voûte. C’est le fascia qui prend la charge, et c’est tout l’intérêt de l’exercice.',
         'Arrêtez pour aujourd’hui si la douleur atteint **6/10 ou plus** pendant l’exercice, ou si vos premiers pas le lendemain matin sont nettement pires que d’habitude. C’est le même seuil que celui où l’application met fin à une séance. Ce n’est pas un modèle de douleur propre au tendon d’Achille (qui utilise 5/10, d’après un autre essai). C’est la règle d’arrêt pour la fasciite plantaire.',
-        'Une légère courbature qui se calme en une journée est normale, surtout les deux premières semaines. Une douleur qui reste élevée plusieurs jours, ou qui s’aggrave d’une semaine à l’autre, est une raison de redescendre d’un niveau ou de consulter un professionnel de santé.',
+        'Une légère courbature qui se calme en une journée est normale, surtout les deux premières semaines. Une douleur qui reste élevée plusieurs jours, ou qui s’aggrave d’une semaine à l’autre, est une raison de [redescendre d’un niveau](/fr/poussee-fasciite-plantaire/) ou de consulter un professionnel de santé.',
       ],
       cites: [CITE.guideline],
     },

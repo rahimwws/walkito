@@ -58,9 +58,9 @@ export const PF_NOT_BETTER_IT: Guide = {
         caption: 'Motivi comuni per cui la fascite plantare si blocca',
         head: ['Motivo', 'Come si riconosce', 'Cosa cambiare'],
         rows: [
-          ['Solo allungamenti', 'Settimane di allungamenti, primi passi ancora acuti', 'Aggiungi forza del polpaccio'],
+          ['Solo allungamenti', 'Settimane di allungamenti, primi passi ancora dolorosi', 'Aggiungi forza del polpaccio'],
           ['Il carico non sale mai', 'Gli stessi sollevamenti facili per mesi', 'Sali piano, mantieni il carico alto'],
-          ['Smesso troppo presto', 'Meglio, smesso, di nuovo male', 'Continua con una dose più leggera'],
+          ['Smettere troppo presto', 'Migliori, smetti, il dolore torna', 'Continua con una dose più leggera'],
           ['Riacutizzazione, poi stop', 'Una brutta giornata, una settimana di pausa', 'Riduci, non mollare'],
           ['Fattori scatenanti continui', 'Turni lunghi, corse o caviglia rigida', 'Cambia il carico che puoi'],
           ['Non è fascite plantare', 'Dolore notturno, formicolio, entrambi i talloni', 'Fatti rivalutare'],
@@ -74,12 +74,12 @@ export const PF_NOT_BETTER_IT: Guide = {
       paragraphs: [
         '**Gli allungamenti vale la pena di tenerli, ma da soli potrebbero non bastare.** La linea guida del 2023 sul dolore al tallone dà agli allungamenti della fascia plantare e del polpaccio un **grado A**, il suo più alto. Dà anche al lavoro di forza per piede e caviglia un **grado B** (Koc e colleghi, 2023). Molti programmi da fare a casa includono solo i primi.',
         'In uno studio su 48\u00A0persone, un gruppo faceva sollevamenti sulle punte lenti e con carico, con un asciugamano sotto le dita, e l’altro allungava la fascia plantare. A tre mesi, il gruppo dei sollevamenti aveva un punteggio migliore di 29\u00A0punti sul Foot Function Index. A un anno i due gruppi erano più o meno pari (Rathleff e colleghi, 2015). Quindi fare i sollevamenti al posto degli allungamenti non ha cambiato il punto d’arrivo a un anno, ma ci ha portato le persone prima.',
-        'Come si riconosce: fai gli allungamenti con costanza da un mese o più, l’allungamento ti sembra più facile, ma i primi passi della giornata sono ancora acuti. Cosa cambiare: tieni gli allungamenti e aggiungi il lavoro sul polpaccio della sezione successiva. [Sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) spiega nel dettaglio la routine dello studio.',
+        'Come si riconosce: fai gli allungamenti con costanza da un mese o più, l’allungamento ti sembra più facile, ma i primi passi della giornata danno ancora un dolore acuto. Cosa cambiare: tieni gli allungamenti e aggiungi il lavoro sul polpaccio della sezione successiva. [Sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) spiega nel dettaglio la routine dello studio.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Il carico è mai aumentato?',
+      h2: 'Hai mai aumentato il carico?',
       keyFact: 'In uno studio su 70\u00A0persone che hanno fatto sollevamenti sulle punte per tre mesi, solo 4 sono arrivate al punto di sentire che non serviva altro (Riel e colleghi, 2019).',
       paragraphs: [
         '**Il lavoro di forza aiuta solo se diventa più impegnativo nel tempo.** Dieci sollevamenti facili su due piedi, fatti per mesi, sono un riscaldamento, non un carico. I gradini qui sotto passano da due piedi a un piede e poi aggiungono peso. La routine dello studio era fatta di sollevamenti su una gamba con un asciugamano sotto le dita, un ritmo lento e uno zaino come peso aggiunto (Rathleff e colleghi, 2015).',
@@ -95,7 +95,7 @@ export const PF_NOT_BETTER_IT: Guide = {
           often: 'Quasi tutte le sessioni',
           feel: 'Un allungamento lungo l’arco',
           how: 'Siediti e accavalla il piede sul ginocchio opposto. Tira le dita indietro finché senti l’allungamento nell’arco, non nel polpaccio. Fai il primo sul bordo del letto, prima che il piede tocchi il pavimento.',
-          stop: 'Dolore acuto al tallone che resta dopo che hai lasciato',
+          stop: 'Dolore acuto al tallone che resta dopo aver rilasciato l’allungamento',
           image: 'Esercizio: allungamento della fascia plantare',
           media: 'fascia_stretch',
           caption: 'Allungamento della fascia plantare: tira le dita indietro finché lo senti nell’arco',
@@ -184,7 +184,7 @@ export const PF_NOT_BETTER_IT: Guide = {
         {
           list: [
             '**Una caviglia rigida o un polpaccio rigido.** Continua con gli allungamenti di polpaccio e soleo; [polpacci rigidi](/it/polpacci-rigidi/) ha la serie completa.',
-            '**Turni lunghi su pavimenti duri.** Scarpe ammortizzate, un tappetino dove stai in piedi e pause da seduto quando puoi. Vedi [dolore ai piedi a stare in piedi tutto il giorno](/it/dolore-piedi-stare-in-piedi/).',
+            '**Turni lunghi su pavimenti duri.** Scarpe ammortizzate, un tappetino dove stai in piedi e pause da seduto quando puoi. Vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
             '**Quantità di cammino o corsa.** Riduci la distanza o il ritmo invece di fermarti. Se i primi passi della mattina dopo sono chiaramente peggiori, era troppo. Vedi [camminare con la fascite plantare](/it/camminare-con-fascite-plantare/).',
             '**Peso corporeo.** Nello studio a lungo termine il peso non era legato a quanto duravano i sintomi (Hansen e colleghi, 2018), quindi non è una questione di colpa. [Peso e fascite plantare](/it/peso-e-fascite-plantare/) spiega cosa si sa.',
           ],
@@ -201,7 +201,7 @@ export const PF_NOT_BETTER_IT: Guide = {
         {
           list: [
             '**Bruciore, formicolio o intorpidimento**, o un dolore che si estende all’arco o alle dita: possibile problema a un nervo.',
-            '**Un dolore che cresce quanto più a lungo cammini**, invece di attenuarsi dopo i primi passi, e che fa male quando stringi i lati del tallone: vedi [fascite plantare o frattura da stress](/it/fascite-plantare-o-frattura-da-stress/).',
+            '**Un dolore che aumenta man mano che cammini**, invece di attenuarsi dopo i primi passi, e che fa male quando stringi i lati del tallone: vedi [fascite plantare o frattura da stress](/it/fascite-plantare-o-frattura-da-stress/).',
             '**Dolore dietro il tallone** invece che sotto: vedi [fascite plantare o tendinite d’Achille](/it/fascite-plantare-o-tendinite-achille/).',
             '**Un dolore profondo, simile a un livido, al centro del cuscinetto del tallone**, peggiore sui pavimenti duri e a piedi nudi: vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/).',
             '**Dolore di notte o a riposo**: vedi [dolore al tallone di notte](/it/dolore-tallone-di-notte/).',
@@ -304,7 +304,7 @@ export const PF_NOT_BETTER_IT: Guide = {
     bullets: [
       'il dolore peggiora di settimana in settimana, non resta solo uguale',
       'è iniziato dopo una caduta, un salto o uno schiocco improvviso, o non riesci a caricare il peso sul piede',
-      'fa male quando stringi i lati del tallone, o cresce quanto più a lungo cammini',
+      'fa male quando stringi i lati del tallone, o aumenta man mano che cammini',
       'senti bruciore, formicolio o intorpidimento al tallone, all’arco o alle dita',
       'ti sveglia di notte o fa male a riposo',
       'fanno male entrambi i talloni con una lunga rigidità mattutina, o altre articolazioni sono doloranti o gonfie',

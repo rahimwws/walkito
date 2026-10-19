@@ -281,7 +281,7 @@ export const BEST_APP_FR: Guide = {
     {
       q: 'À quelle fréquence utiliser une application d’exercices pour la fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
-      a: 'La plupart des programmes d’exercices pour la fasciite plantaire, y compris ceux les mieux notés par la recommandation de 2023 sur la douleur au talon, reposent sur des séances quotidiennes ou presque pendant environ trois mois, pas sur un usage occasionnel. Une application est la plus utile quand vous l’ouvrez la plupart des jours, car c’est la régularité qui produit l’effet de la charge, pas une fonctionnalité en particulier.',
+      a: 'La plupart des programmes d’exercices pour la fasciite plantaire, y compris ceux les mieux notés par la recommandation de 2023 sur la douleur au talon, reposent sur des séances quotidiennes ou presque pendant environ trois mois, pas sur un usage occasionnel. Une application est la plus utile quand vous l’ouvrez la plupart des jours, car c’est la régularité qui produit l’effet de la charge, pas une fonctionnalité en particulier. Arrêter les exercices dès que la douleur diminue est l’une des [raisons fréquentes pour lesquelles une fasciite plantaire stagne](/fr/fasciite-plantaire-qui-ne-passe-pas/).',
     },
   ],
   redFlags: {

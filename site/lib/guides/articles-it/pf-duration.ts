@@ -184,7 +184,7 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'Perché la mia fascite plantare non migliora?',
       cites: [CITE.guideline],
-      a: 'Ci sono diverse possibilità. Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come [tutori notturni](/it/tutore-notturno-fascite-plantare/), laserterapia o dry needling.',
+      a: 'Ci sono diverse possibilità, spiegate nel dettaglio in [fascite plantare che non passa](/it/fascite-plantare-non-passa/). Gli esercizi potrebbero non essere abbastanza costanti, le scarpe potrebbero non sostenere il piede, o il carico quotidiano sul piede (passi, ore in piedi, chilometri di corsa) potrebbe essere più di quanto il tessuto riesca a reggere. È anche possibile che la diagnosi non sia fascite plantare. Se stretching e rinforzo non hanno aiutato dopo diversi mesi, la linea guida del 2023 consiglia di parlare con un professionista sanitario di opzioni come [tutori notturni](/it/tutore-notturno-fascite-plantare/), laserterapia o dry needling.',
     },
     {
       q: 'Lo sperone calcaneare fa durare di più la fascite plantare?',
@@ -203,7 +203,7 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'La fascite plantare può tornare dopo essere passata?',
       cites: [CITE.hansen],
-      a: 'Sì. Nella coorte di Hansen del 2018, il 32% del gruppo senza più sintomi aveva avuto almeno una ricaduta prima di arrivare a non avere sintomi in modo stabile. L’alternanza di miglioramento, ricaduta e nuovo miglioramento è comune. Continuare con una dose di mantenimento di lavoro sul polpaccio e stretching dopo che il dolore è passato è un modo per ridurre la probabilità che torni.',
+      a: 'Sì. Nella coorte di Hansen del 2018, il 32% del gruppo senza più sintomi aveva avuto almeno una ricaduta prima di arrivare a non avere sintomi in modo stabile. L’alternanza di miglioramento, [ricaduta](/it/riacutizzazione-fascite-plantare/) e nuovo miglioramento è comune. Continuare con una dose di mantenimento di lavoro sul polpaccio e stretching dopo che il dolore è passato è un modo per ridurre la probabilità che torni.',
     },
     {
       q: 'Quali sono i segnali che la fascite plantare sta guarendo?',

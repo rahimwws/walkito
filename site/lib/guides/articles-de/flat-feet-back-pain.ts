@@ -82,7 +82,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       paragraphs: [
         'Die übliche Erklärung ist die kinetische Kette: die Vorstellung, dass sich die Gelenke vom Fuß bis zur Wirbelsäule als verbundenes System bewegen. Ein Fuß, der nach innen rollt, dreht demnach Schienbein und Oberschenkel nach innen, kippt das Becken und belastet den unteren Rücken anders. **Die Mechanik gibt es wirklich, aber der Effekt scheint klein zu sein.**',
         'In einer Laborstudie von 2021 gingen 20\u00A0Personen mit keilförmigen Einlagen, die ihre Füße nach innen rollen ließen. Ihr Becken kippte etwas stärker zu einer Seite (im Schnitt um etwa ein halbes Grad), und die Hüfte drehte sich um etwa 1,4\u00A0Grad nach innen. Das zeigt, dass der Fuß das Becken ein wenig verschieben kann. Es zeigt nicht, dass ein halbes Grad Schmerzen auslöst, und die Studie hat Schmerzen gar nicht gemessen.',
-        'Die kinetische Kette ist eine vernünftige Idee, die eine Ärztin oder ein Arzt bei einem einzelnen Menschen prüfen kann. Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.',
+        'Die kinetische Kette ist eine vernünftige Idee, die eine Ärztin oder ein Arzt bei einem einzelnen Menschen prüfen kann. Dieselbe Frage, aber von den Fersenschmerzen aus, beantwortet [Plantarfasziitis und Knie-, Hüft- oder Rückenschmerzen](/de/plantarfasziitis-knieschmerzen/). Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.',
       ],
       cites: [CITE.hornestam],
     },

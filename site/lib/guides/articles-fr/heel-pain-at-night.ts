@@ -96,7 +96,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
       paragraphs: [
         'Si votre douleur correspond au schéma de la fasciite plantaire, des étirements doux du mollet et du fascia plantaire avant de dormir peuvent réduire la raideur du lendemain matin. Le même étirement ciblé du fascia plantaire que la recommandation note **A** pour la douleur aux premiers pas peut se faire avant de dormir\u00A0: tirez les orteils vers vous avec la main jusqu’à sentir la voûte, tenez 10\u00A0secondes, répétez 10\u00A0fois.',
         'Les exercices de renforcement comme les montées sur pointes conviennent mieux plus tôt dans la journée. La liste complète des exercices se trouve sur la page [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
-        'Si votre douleur n’est pas une fasciite plantaire ou si vous n’êtes pas sûr, s’étirer le soir n’est pas la première étape. Obtenir le bon diagnostic l’est.',
+        'Si [votre douleur n’est pas une fasciite plantaire](/fr/douleur-talon-pas-fasciite-plantaire/) ou si vous n’êtes pas sûr, s’étirer le soir n’est pas la première étape. Obtenir le bon diagnostic l’est.',
       ],
       exercises: [
         {

@@ -40,7 +40,7 @@ export const FLAT_FEET_KNEE_PAIN_PT: Guide = {
           ],
         },
         'Um segundo estudo olhou para o começo da vida adulta. Kosashvili e colegas analisaram 97.279\u00A0jovens recrutas militares em 2008. A dor na frente do joelho apareceu em 7% dos recrutas com pé chato moderado ou grave e em 4% dos que tinham pé chato leve ou arco normal. O pé chato leve, que era 74% do grupo com pé chato, não trouxe risco a mais.',
-        'Os dois estudos mediram as pessoas uma única vez, então não conseguem dizer se o pé veio primeiro. Os autores de Framingham também observaram que a pegada pode não distinguir um pé chato de um pé largo e carnudo, e que o peso corporal, sozinho, já afeta o joelho.',
+        'Os dois estudos mediram as pessoas uma única vez, então não conseguem dizer se o pé veio primeiro. Se a dor no calcanhar veio primeiro, veja se [a fascite plantar pode causar dor no joelho](/pt/fascite-plantar-dor-no-joelho/). Os autores de Framingham também observaram que a pegada pode não distinguir um pé chato de um pé largo e carnudo, e que o peso corporal, sozinho, já afeta o joelho.',
       ],
       sourceNote:
         'Gross 2011: estudo transversal, razão de chances para dor no joelho de 1,3 (IC 95% 1,1 a 1,6), dano na cartilagem tibiofemoral medial de 1,4 (IC 95% 1,1 a 1,8), com ajuste para idade, sexo e índice de massa corporal. Kosashvili 2008: análise retrospectiva, pé chato classificado por um ortopedista, dor na frente do joelho atribuída à articulação patelofemoral.',

@@ -30,7 +30,7 @@ export const PF_FLARE_UP_IT: Guide = {
   takeaways: [
     'La linea guida del 2023 sul dolore al tallone indica il dolore dopo un recente aumento dell’attività in piedi come una caratteristica tipica della fascite plantare, e raccomanda consigli su come cambiare il carico, con grado **E**, senza consigliare il riposo assoluto (Koc e colleghi, 2023).',
     'In uno studio su 50\u00A0persone con fascite plantare e 100 senza, una caviglia rigida (probabilità 23,3\u00A0volte maggiore), un BMI sopra 30 (5,6\u00A0volte) e stare in piedi per la maggior parte della giornata di lavoro (3,6\u00A0volte) erano fattori di rischio. Quello studio riguardava il comparire della fascite plantare, non le riacutizzazioni (Riddle e colleghi, 2003).',
-    'Una regola di monitoraggio del dolore permette un dolore fino a circa 5 su 10 durante l’attività, purché si calmi entro la mattina dopo. È stata testata su 38\u00A0persone con dolore all’Achille, non con fascite plantare (Silbernagel e colleghi, 2007).',
+    'Una regola di monitoraggio del dolore permette un dolore fino a circa 5 su 10 durante l’attività, purché si calmi entro la mattina dopo. È stata testata su 38\u00A0persone con dolore all’Achille, non su persone con fascite plantare (Silbernagel e colleghi, 2007).',
     'La linea guida non dà raccomandazioni su ghiaccio o caldo, quindi il ghiaccio è al massimo uno strumento di sollievo, e nessuno studio mostra che calmi una riacutizzazione (Koc e colleghi, 2023).',
     'In uno studio su 180\u00A0adulti, il consiglio di ridurre le attività che causano le riacutizzazioni e poi tornare gradualmente, più una talloniera, si è accompagnato a un miglioramento clinicamente rilevante a circa tre mesi (Riel e colleghi, 2023).',
   ],
@@ -53,7 +53,7 @@ export const PF_FLARE_UP_IT: Guide = {
         {
           list: [
             '**Un aumento improvviso dell’attività.** Una vacanza con lunghe giornate a piedi, un nuovo programma di corsa, un’escursione o una settimana intensa al lavoro. La linea guida indica come tipico un recente aumento dell’attività in piedi (Koc e colleghi, 2023). Se corri, anche i cambiamenti di chilometraggio contano.',
-            '**Molte ore in piedi.** In uno studio su 50\u00A0persone con fascite plantare e 100 senza, stare in piedi per la maggior parte della giornata di lavoro si accompagnava a una probabilità 3,6\u00A0volte maggiore (Riddle e colleghi, 2003). In un altro, le persone con dolore al tallone erano attive quanto quelle senza, ma stavano in piedi 3,4\u00A0ore al giorno in più (Landorf e colleghi, 2023). Vedi [dolore ai piedi a stare in piedi tutto il giorno](/it/dolore-piedi-stare-in-piedi/).',
+            '**Molte ore in piedi.** In uno studio su 50\u00A0persone con fascite plantare e 100 senza, stare in piedi per la maggior parte della giornata di lavoro si accompagnava a una probabilità 3,6\u00A0volte maggiore (Riddle e colleghi, 2003). In un altro, le persone con dolore al tallone erano attive quanto quelle senza, ma stavano in piedi 3,4\u00A0ore al giorno in più (Landorf e colleghi, 2023). Vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
             '**Piedi nudi su pavimenti duri.** La linea guida indica il lavoro in piedi su superfici poco ammortizzanti come fattore di rischio (Koc e colleghi, 2023), anche se uno studio ha trovato che chi ha dolore al tallone non stava su pavimenti duri più spesso di chi non ce l’ha (Landorf e colleghi, 2023). Una guida di buona pratica del 2021 consiglia di evitare di camminare scalzi e le scarpe piatte e poco sostenitive finché i sintomi non sono passati (Morrissey e colleghi, 2021).',
             '**Scarpe nuove o diverse.** Non abbiamo trovato studi che abbiano testato le scarpe nuove come fattore scatenante. Quello che si sa: le persone con dolore al tallone portavano scarpe con il tacco più duro rispetto a chi non ce l’aveva (Landorf e colleghi, 2023), e la guida di buona pratica preferisce scarpe sostenitive con il tallone un po’ più alto delle dita (Morrissey e colleghi, 2021). Passare a scarpe piatte, sottili o molto flessibili, o a [scarpe barefoot](/it/scarpe-barefoot/), è un cambiamento che il tallone sentirà.',
             '**Un polpaccio rigido.** Nello stesso studio del 2003, chi aveva una caviglia che si piegava verso l’alto di 0\u00A0gradi o meno aveva una probabilità 23,3\u00A0volte maggiore rispetto a chi superava i 10\u00A0gradi (Riddle e colleghi, 2003). Saltare gli allungamenti per un po’ può far tornare quella rigidità. Vedi [polpacci rigidi](/it/polpacci-rigidi/).',
@@ -71,7 +71,7 @@ export const PF_FLARE_UP_IT: Guide = {
         {
           list: [
             '**Trova cosa l’ha scatenata e riducilo.** Camminate più brevi, più pause da seduto, una pausa dalla corsa o dalle salite. Il consiglio testato in uno studio danese era di ridurre le attività che causano le riacutizzazioni, poi tornare piano piano ai livelli di attività di prima, guidati dai sintomi (Riel e colleghi, 2020).',
-            '**Non smettere del tutto di muoverti.** La linea guida raccomanda di adattare il carico e non consiglia il riposo assoluto (Koc e colleghi, 2023). Il cammino che ti serve nella vita di tutti i giorni va bene, entro la regola del dolore qui sotto.',
+            '**Non smettere del tutto di muoverti.** La linea guida raccomanda di adattare il carico e non consiglia il riposo assoluto (Koc e colleghi, 2023). Camminare quanto ti serve nella vita di tutti i giorni va bene, entro la regola del dolore qui sotto.',
             '**Continua con gli allungamenti leggeri.** Gli allungamenti della fascia plantare e del polpaccio hanno **grado A** (Koc e colleghi, 2023). Fai il primo prima che il piede tocchi il pavimento al mattino.',
             '**Porta le scarpe anche in casa.** Scarpe sostenitive o pantofole rigide dal primo passo della giornata, invece dei piedi nudi su piastrelle o parquet (Morrissey e colleghi, 2021).',
             '**Spezza i periodi in piedi.** La guida di buona pratica consiglia di interrompere i lunghi periodi in piedi da fermo (Morrissey e colleghi, 2021).',
@@ -222,7 +222,7 @@ export const PF_FLARE_UP_IT: Guide = {
         '**Se il dolore si comporta in modo diverso dalla tua solita fascite plantare, non dare per scontato che sia una riacutizzazione.** Il dolore della fascite plantare è peggiore ai primi passi dopo il riposo, spesso si attenua quando ti metti in moto e può tornare dopo molto tempo in piedi (Koc e colleghi, 2023). Altri quadri fanno pensare ad altro:',
         {
           list: [
-            '**Un dolore che cresce quanto più cammini,** spesso dopo un aumento brusco dell’attività, o un dolore quando stringi i lati del tallone, può essere una frattura da stress (Tu, 2018). Vedi [fascite plantare o frattura da stress](/it/fascite-plantare-o-frattura-da-stress/).',
+            '**Un dolore che aumenta man mano che cammini,** spesso dopo un aumento brusco dell’attività, o un dolore quando stringi i lati del tallone, può essere una frattura da stress (Tu, 2018). Vedi [fascite plantare o frattura da stress](/it/fascite-plantare-o-frattura-da-stress/).',
             '**Un dolore di notte o a riposo,** oppure bruciore, formicolio e intorpidimento, fanno pensare a qualcosa di diverso dalla fascia plantare. Vedi [dolore al tallone di notte](/it/dolore-tallone-di-notte/).',
             '**Uno schiocco improvviso o un dolore acuto** sotto il piede durante l’attività, o un nuovo livido o gonfiore, richiedono un professionista sanitario, non un piano per la riacutizzazione.',
             '**Un dolore profondo al centro del tallone** che peggiora su terreno duro può venire dal cuscinetto adiposo del tallone. Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/).',
@@ -280,7 +280,7 @@ export const PF_FLARE_UP_IT: Guide = {
     bullets: [
       'il dolore è iniziato dopo una caduta, un salto o una storta, o non riesci a caricare il peso sul piede',
       'hai sentito uno schiocco o un dolore acuto improvviso sotto il piede, o c’è un nuovo livido o gonfiore',
-      'il dolore cresce quanto più cammini, o stringere i lati del tallone fa male (possibile frattura da stress)',
+      'il dolore aumenta man mano che cammini, o stringere i lati del tallone fa male (possibile frattura da stress)',
       'il tallone fa male di notte o a riposo, non solo ai primi passi',
       'hai intorpidimento, formicolio o bruciore al piede',
       'il tallone è arrossato, caldo o gonfio, o non ti senti bene o hai la febbre',

@@ -63,7 +63,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
         'La linea guida nomina altri fattori di rischio:',
         {
           list: [
-            'Un’età tra i 40 e i 60\u00A0anni.',
+            'Un’età tra i 40 e i 60\u00A0anni, quando il [dolore al tallone raggiunge il picco nelle donne, intorno alla menopausa](/it/fascite-plantare-menopausa/).',
             'La corsa o le attività con salti.',
             'I lavori che richiedono di stare in piedi a lungo.',
           ],
@@ -96,7 +96,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
           list: [
             'Se il quadro non è quello tipico.',
             'Se i sintomi non migliorano dopo diverse settimane di cure conservative.',
-            'Se bisogna escludere un’altra diagnosi (per esempio una frattura da stress o un nervo compresso).',
+            'Se bisogna escludere un’altra diagnosi (per esempio una frattura da stress o un nervo compresso). Vedi [dolore al tallone che non è fascite plantare](/it/dolore-tallone-non-fascite-plantare/).',
           ],
         },
         'Ecografia e risonanza magnetica possono mostrare una fascia ispessita, ma una fascia ispessita in un esame, senza i sintomi corrispondenti, non è fascite plantare.',
@@ -250,7 +250,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
     },
     {
       q: 'Quando andare dal medico per il dolore al tallone?',
-      a: 'Rivolgiti a un professionista sanitario se il dolore è iniziato dopo un infortunio, se non riesci a caricare il peso sul piede, se ti fanno male entrambi i talloni e altre articolazioni sono rigide, se c’è intorpidimento o formicolio, se il tallone è arrossato o caldo, se ti sveglia di notte, o se il dolore non migliora dopo diversi mesi di stretching e lavoro sul polpaccio. Questi quadri possono indicare un altro problema.',
+      a: 'Rivolgiti a un professionista sanitario se il dolore è iniziato dopo un infortunio, se non riesci a caricare il peso sul piede, se ti fanno male entrambi i talloni e altre articolazioni sono rigide, se c’è intorpidimento o formicolio, se il tallone è arrossato o caldo, se ti sveglia di notte, o se il dolore [non migliora dopo diversi mesi](/it/fascite-plantare-non-passa/) di stretching e lavoro sul polpaccio. Questi quadri possono indicare un altro problema.',
     },
     {
       q: 'Perché ho la fascite plantare solo a un piede?',

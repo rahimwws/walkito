@@ -180,7 +180,7 @@ export const PF_DURATION_FR: Guide = {
     {
       q: 'Pourquoi ma fasciite plantaire ne s’améliore-t-elle pas\u00A0?',
       cites: [CITE.guideline],
-      a: 'Plusieurs raisons possibles. Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/), le laser ou la puncture sèche (dry needling).',
+      a: 'Plusieurs raisons possibles, détaillées dans [fasciite plantaire qui ne passe pas](/fr/fasciite-plantaire-qui-ne-passe-pas/). Les exercices ne sont peut-être pas assez réguliers, les chaussures ne soutiennent peut-être pas le pied, ou la charge quotidienne sur le pied (pas, heures debout, kilométrage en course) dépasse peut-être ce que le tissu peut suivre. Il se peut aussi que ce ne soit pas une fasciite plantaire. Si les étirements et le renforcement n’ont pas aidé après plusieurs mois, la recommandation de 2023 conseille de parler avec un professionnel de santé d’options comme les [attelles de nuit](/fr/attelle-de-nuit-fasciite-plantaire/), le laser ou la puncture sèche (dry needling).',
     },
     {
       q: 'Une épine calcanéenne fait-elle durer la fasciite plantaire plus longtemps\u00A0?',
@@ -199,7 +199,7 @@ export const PF_DURATION_FR: Guide = {
     {
       q: 'La fasciite plantaire peut-elle revenir après être partie\u00A0?',
       cites: [CITE.hansen],
-      a: 'Oui. Dans la cohorte de Hansen 2018, 32\u00A0% du groupe sans symptômes avaient eu au moins une rechute avant de devenir définitivement asymptomatiques. Une amélioration, puis une rechute, puis une nouvelle amélioration, c’est un schéma fréquent. Garder une dose d’entretien de travail du mollet et d’étirements une fois la douleur partie est une façon de réduire le risque qu’elle revienne.',
+      a: 'Oui. Dans la cohorte de Hansen 2018, 32\u00A0% du groupe sans symptômes avaient eu au moins une rechute avant de devenir définitivement asymptomatiques. Une amélioration, puis une [rechute](/fr/poussee-fasciite-plantaire/), puis une nouvelle amélioration, c’est un schéma fréquent. Garder une dose d’entretien de travail du mollet et d’étirements une fois la douleur partie est une façon de réduire le risque qu’elle revienne.',
     },
     {
       q: 'Quels signes montrent que la fasciite plantaire va mieux\u00A0?',

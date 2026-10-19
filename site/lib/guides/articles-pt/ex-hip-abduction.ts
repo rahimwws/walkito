@@ -31,7 +31,7 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
       h2: 'O que é a abdução de quadril?',
       paragraphs: [
         'Abdução de quadril quer dizer levar a perna para o lado, para longe do centro do corpo. O músculo principal responsável é o glúteo médio, que fica na parte de fora do quadril. Ele mantém a pelve nivelada quando você fica em uma perna e impede o quadril do outro lado de cair.',
-        'Este exercício aparece em programas para os pés porque o quadril, o joelho e o pé estão ligados. Quando o glúteo médio está fraco, a coxa gira para dentro ao andar e ao ficar em pé, o joelho vai junto, e o pé faz mais pronação do que deveria. O arco achata com essa força para dentro. Fortalecer o quadril diminui essa reação em cadeia.',
+        'Este exercício aparece em programas para os pés porque o quadril, o joelho e o pé estão ligados. Quando o glúteo médio está fraco, a coxa gira para dentro ao andar e ao ficar em pé, o joelho vai junto, e o pé faz mais pronação do que deveria. O arco achata com essa força para dentro. Fortalecer o quadril diminui essa reação em cadeia. Se a dor no calcanhar veio antes da dor no joelho ou no quadril, veja [fascite plantar e dor no joelho, quadril ou costas](/pt/fascite-plantar-dor-no-joelho/).',
       ],
     },
     {

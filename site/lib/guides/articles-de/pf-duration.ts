@@ -179,7 +179,7 @@ export const PF_DURATION_DE: Guide = {
     {
       q: 'Warum wird meine Plantarfasziitis nicht besser?',
       cites: [CITE.guideline],
-      a: 'Dafür gibt es mehrere Möglichkeiten. Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie [Nachtschienen](/de/nachtschiene-plantarfasziitis/), Lasertherapie oder Dry Needling zu sprechen.',
+      a: 'Dafür gibt es mehrere Möglichkeiten, ausführlich erklärt unter [Plantarfasziitis wird nicht besser](/de/plantarfasziitis-wird-nicht-besser/). Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie [Nachtschienen](/de/nachtschiene-plantarfasziitis/), Lasertherapie oder Dry Needling zu sprechen.',
     },
     {
       q: 'Dauert Plantarfasziitis mit Fersensporn länger?',
@@ -198,7 +198,7 @@ export const PF_DURATION_DE: Guide = {
     {
       q: 'Kann Plantarfasziitis wiederkommen?',
       cites: [CITE.hansen],
-      a: 'Ja. In der Kohorte von Hansen 2018 hatten 32\u00A0% der beschwerdefreien Gruppe mindestens einen Rückfall, bevor sie dauerhaft beschwerdefrei wurden. Das Muster aus Besserung, Rückfall und weiterer Besserung ist häufig. Mit Wadentraining und Dehnen in einer Erhaltungsdosis weiterzumachen, nachdem der Schmerz weg ist, ist eine Möglichkeit, die Wahrscheinlichkeit eines Rückfalls zu senken.',
+      a: 'Ja. In der Kohorte von Hansen 2018 hatten 32\u00A0% der beschwerdefreien Gruppe mindestens einen Rückfall, bevor sie dauerhaft beschwerdefrei wurden. Das Muster aus Besserung, [Rückfall](/de/plantarfasziitis-schub/) und weiterer Besserung ist häufig. Mit Wadentraining und Dehnen in einer Erhaltungsdosis weiterzumachen, nachdem der Schmerz weg ist, ist eine Möglichkeit, die Wahrscheinlichkeit eines Rückfalls zu senken.',
     },
     {
       q: 'Woran merkt man, dass Plantarfasziitis besser wird?',

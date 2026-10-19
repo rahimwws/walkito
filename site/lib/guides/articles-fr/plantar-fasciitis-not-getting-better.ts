@@ -179,7 +179,7 @@ export const PF_NOT_BETTER_FR: Guide = {
       h2: 'Quelque chose la relance-t-il encore\u00A0?',
       keyFact: 'Une cheville qui se pliait de 0\u00A0degré ou moins multipliait le risque de fasciite plantaire par environ 23 par rapport à une cheville qui se pliait de plus de 10\u00A0degrés, dans une étude portant sur 50\u00A0cas et 100\u00A0témoins (Riddle et coll., 2003).',
       paragraphs: [
-        '**Les exercices peuvent être dépassés par la charge que vous imposez au pied le reste de la journée.** Dans une étude appariée portant sur 50\u00A0personnes ayant une fasciite plantaire et 100 sans, une cheville raide était le facteur de risque le plus fort\u00A0: une cheville qui se pliait de 0\u00A0degré ou moins multipliait le risque par 23,3. Un indice de masse corporelle supérieur à 30 le multipliait par environ 5,6, et passer la majeure partie de la journée de travail debout par environ 3,6 (Riddle et coll., 2003).',
+        '**La charge que vous imposez au pied le reste de la journée peut prendre le pas sur les exercices.** Dans une étude appariée portant sur 50\u00A0personnes ayant une fasciite plantaire et 100 sans, une cheville raide était le facteur de risque le plus fort\u00A0: une cheville qui se pliait de 0\u00A0degré ou moins multipliait le risque par 23,3. Un indice de masse corporelle supérieur à 30 le multipliait par environ 5,6, et passer la majeure partie de la journée de travail debout par environ 3,6 (Riddle et coll., 2003).',
         'La recommandation de 2023 cite les mêmes facteurs, plus la course, et ajoute que des surfaces dures qui amortissent mal rendent la station debout et la marche au travail plus risquées (Koc et coll., 2023). Certains de ces facteurs se changent, d’autres non\u00A0:',
         {
           list: [
@@ -261,7 +261,7 @@ export const PF_NOT_BETTER_FR: Guide = {
     {
       q: 'La fasciite plantaire est-elle définitive\u00A0?',
       cites: [CITE.hansen, CITE.latt],
-      a: 'En général, non. Environ 90\u00A0% des personnes vont mieux avec une prise en charge sans chirurgie. Dans un groupe difficile de 174\u00A0personnes suivies en moyenne 9,7\u00A0ans, 54\u00A0% n’avaient plus de symptômes et la plupart des autres n’avaient que des symptômes légers. Certaines personnes gardent des symptômes légers pendant des années\u00A0: si vous stagnez, cela vaut la peine de vous faire réexaminer.',
+      a: 'En général, non. Environ 90\u00A0% des personnes vont mieux avec une prise en charge sans chirurgie. Parmi 174\u00A0personnes aux douleurs difficiles à prendre en charge, suivies en moyenne 9,7\u00A0ans, 54\u00A0% n’avaient plus de symptômes et la plupart des autres n’avaient que des symptômes légers. Certaines personnes gardent des symptômes légers pendant des années\u00A0: si vous stagnez, cela vaut la peine de vous faire réexaminer.',
     },
     {
       q: 'Une fasciite plantaire chronique peut-elle encore s’améliorer\u00A0?',

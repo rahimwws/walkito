@@ -215,7 +215,7 @@ export const WEIGHT_PF_FR: Guide = {
     {
       h2: 'La fasciite plantaire passera-t-elle si je ne perds pas de poids\u00A0?',
       paragraphs: [
-        '**Pour la plupart des gens, oui\u00A0: elle s’atténue avec le temps et un traitement non chirurgical.** Environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec un traitement non chirurgical, comme les étirements et les semelles, souvent en 3 à 6\u00A0mois (Latt et coll., 2020).',
+        '**Pour la plupart des gens, oui\u00A0: elle s’atténue avec le temps et un traitement non chirurgical.** Environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec un traitement non chirurgical, comme les étirements et les semelles, souvent en 3 à 6\u00A0mois (Latt et coll., 2020). Pourquoi elle touche davantage les femmes vers 50\u00A0ans est expliqué dans [fasciite plantaire et ménopause](/fr/fasciite-plantaire-menopause/).',
         'Dans un long suivi de 174\u00A0personnes, les chercheurs ont vérifié si l’IMC, l’âge, le tabac, le travail physique et d’autres facteurs permettaient de prévoir qui aurait encore mal au talon des années plus tard. Seuls le fait d’être une femme et d’avoir mal aux deux talons le permettaient. L’IMC, non (Hansen et coll., 2018).',
         'Un poids plus élevé rend donc peut-être l’apparition d’une fasciite plantaire plus probable, mais cela ne veut pas dire que vous la garderez. Les étirements et le renforcement du mollet ci-dessus sont les mêmes qui aident les personnes de toutes les corpulences. [Combien de temps dure une fasciite plantaire](/fr/combien-de-temps-dure-fasciite-plantaire/) donne l’évolution complète.',
       ],

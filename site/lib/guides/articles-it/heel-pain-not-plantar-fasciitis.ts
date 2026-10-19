@@ -20,7 +20,7 @@ export const HEEL_NOT_PF_IT: Guide = {
   updated: '2026-10-19',
   title: 'Dolore al tallone ma non è fascite plantare? 9 cause',
   description:
-    'Dolore al tallone che non è fascite plantare: cuscinetto adiposo, nervi, frattura da stress, Achille, Haglund, Sever, artrite e schiena a confronto.',
+    'Dolore al tallone ma non è fascite plantare: cuscinetto adiposo, nervi, frattura da stress, Achille, Haglund, Sever, tibiale posteriore, artrite e schiena.',
   h1: 'Dolore al tallone che non è fascite plantare: le cause simili e come si distinguono',
   lede:
     'Se il tuo dolore al tallone non segue il quadro tipico della [fascite plantare](/it/fascite-plantare/), cioè peggiore ai primi passi del mattino e più leggero man mano che ti scaldi, potrebbe esserci dell’altro. Sotto il tallone, le cause simili più comuni sono un cuscinetto adiposo del tallone contuso o assottigliato, un nervo irritato, anche schiacciato nella zona lombare, una frattura da stress del calcagno e l’artrite infiammatoria (Latt e colleghi, 2020). Il dolore dietro il tallone ha cause sue, come il tendine d’Achille. In 250\u00A0persone con dolore sotto il tallone, la fascite plantare spiegava il 53,2% dei casi e l’atrofia del cuscinetto adiposo il 14,8% (Yi e colleghi, 2011).',
@@ -47,7 +47,7 @@ export const HEEL_NOT_PF_IT: Guide = {
         caption: 'Cause simili del dolore al tallone: quadri tipici. Solo un professionista sanitario può confermare quale hai.',
         head: ['Condizione', 'Dove fa male', 'Quando', 'Peggiora con', 'Cosa fare'],
         rows: [
-          ['[Fascite plantare](/it/fascite-plantare/)', 'Sotto il tallone, lato interno', 'Primi passi del mattino, dopo stare seduti', 'Stare a lungo in piedi, camminare a lungo', 'Allungamenti e forza del polpaccio'],
+          ['[Fascite plantare](/it/fascite-plantare/)', 'Sotto il tallone, lato interno', 'Primi passi del mattino, dopo essere stati seduti', 'Stare a lungo in piedi, camminare a lungo', 'Allungamenti e forza del polpaccio'],
           ['[Cuscinetto adiposo](/it/sindrome-cuscinetto-adiposo-tallone/)', 'Centro del tallone, come un livido profondo', 'Stando in piedi e camminando', 'Pavimenti duri, piedi nudi', 'Ammortizzazione, professionista sanitario'],
           ['Nervo (Baxter, tunnel tarsale)', 'Tallone interno o pianta, può irradiarsi', 'Non legato ai primi passi, anche a riposo', 'Bruciore, formicolio, intorpidimento', 'Professionista sanitario'],
           ['[Frattura da stress](/it/fascite-plantare-o-frattura-da-stress/)', 'Tutto l’osso del tallone, lati dolenti', 'Cresce con l’attività', 'Corsa, salti, più chilometri', 'Meno carico, visita a breve'],
@@ -181,7 +181,7 @@ export const HEEL_NOT_PF_IT: Guide = {
         },
         {
           name: 'Sollevamenti sulle punte da seduto (solo fascite plantare)',
-          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza il grado B per la fascite plantare. Questo passo non è stato testato da solo.' },
+          evidence: { level: 'moderate', why: 'La linea guida del 2023 dà al lavoro di forza il grado B per la fascite plantare. Questo esercizio non è stato testato da solo.' },
           dose: '3\u00A0serie da 10, entrambi i piedi',
           often: '3\u00A0giorni a settimana, mai due di fila',
           feel: 'Lavoro nella parte bassa del polpaccio',
@@ -248,7 +248,7 @@ export const HEEL_NOT_PF_IT: Guide = {
     bullets: [
       'senti bruciore, formicolio, scosse elettriche o intorpidimento al tallone o alla pianta',
       'il dolore al tallone si accompagna a mal di schiena, dolore lungo la gamba o debolezza al piede',
-      'il dolore cresce quanto più a lungo cammini o corri, o stringere i lati dell’osso del tallone fa male',
+      'il dolore aumenta man mano che cammini o corri, o stringere i lati dell’osso del tallone fa male',
       'il tallone è gonfio, arrossato, caldo o ha un livido, o hai la febbre',
       'fanno male entrambi i talloni e altre articolazioni sono doloranti o rigide, o la rigidità mattutina dura più di 30\u00A0minuti',
       'il dolore è iniziato dopo una caduta, una storta o uno schiocco improvviso, o non riesci a caricare il peso sul piede',

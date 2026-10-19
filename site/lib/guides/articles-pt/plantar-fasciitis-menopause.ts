@@ -17,14 +17,14 @@ export const PF_MENOPAUSE_PT: Guide = {
   mainSource: CITE.rasenbergIncidence,
   published: '2026-10-19',
   updated: '2026-10-19',
-  title: 'Fascite plantar na menopausa: dor no calcanhar aos 40 e 50',
+  title: 'Fascite plantar na menopausa: dor no calcanhar dos 40 aos 60',
   description:
     'A fascite plantar atinge o pico nas mulheres perto dos 50 anos, cerca do dobro dos homens. O que se sabe sobre menopausa e calcanhar, e o que ajuda.',
   h1: 'Fascite plantar e menopausa: por que a dor no calcanhar costuma começar aos 40 e 50\u00A0anos',
   lede:
     'A fascite plantar é mais comum nas mulheres perto da idade da menopausa: em registros de clínicas de medicina de família da Holanda, os casos novos em mulheres chegaram ao pico de 11,23 por 1.000\u00A0pacientes-ano aos 50\u00A0anos, contra um pico de 5,54 nos homens aos 55 (Rasenberg e colegas, 2019). Não se sabe se a queda dos hormônios é a causa. A ligação é plausível, mas nenhum estudo a comprovou (Douglas-Harris e colegas, 2026). O que ajuda é o mesmo que em qualquer idade: alongamentos da fáscia plantar e da panturrilha, com grau **A** na diretriz de 2023 para dor no calcanhar, e trabalho de força na panturrilha, com grau **B** (Koc e colegas, 2023).',
   intro: [
-    'Se o seu calcanhar começou a doer entre os 40 e os 50 e poucos anos, você está no grupo mais afetado, e não é algo que você fez de errado. Esta página mostra os números por idade e sexo, o que a pesquisa diz e não diz sobre hormônios e a fáscia plantar, as outras mudanças da meia-idade que sobrecarregam o calcanhar, os exercícios com a melhor evidência, o que se sabe sobre terapia hormonal e quando procurar um profissional de saúde.',
+    'Se o seu calcanhar começou a doer na casa dos 40 ou dos 50 anos, você está no grupo mais afetado, e não é algo que você fez de errado. Esta página mostra os números por idade e sexo, o que a pesquisa diz e não diz sobre hormônios e a fáscia plantar, as outras mudanças da meia-idade que sobrecarregam o calcanhar, os exercícios com a melhor evidência, o que se sabe sobre terapia hormonal e quando procurar um profissional de saúde.',
   ],
   takeaways: [
     'Em registros de cerca de 1,9\u00A0milhão de pacientes holandeses, os casos novos de dor no calcanhar em mulheres chegaram ao pico de 11,23 por 1.000\u00A0pacientes-ano aos 50\u00A0anos. Nos homens o pico foi de 5,54, aos 55. Dos 18.004\u00A0casos, 62% eram mulheres (Rasenberg e colegas, 2019).',

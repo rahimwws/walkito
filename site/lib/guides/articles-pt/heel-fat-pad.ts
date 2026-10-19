@@ -75,7 +75,7 @@ export const HEEL_FAT_PAD_PT: Guide = {
     {
       h2: 'O que faz o coxim gorduroso do calcanhar afinar?',
       paragraphs: [
-        '**A idade é o fator mais importante.** Depois dos 40 anos, mais ou menos, o coxim gorduroso perde naturalmente água, colágeno e elasticidade. Anos de atividade de alto impacto, muito tempo em pé em superfícies duras e andar descalço aceleram o processo.',
+        '**A idade é o fator mais importante.** Depois dos 40 anos, mais ou menos, o coxim gorduroso perde naturalmente água, colágeno e elasticidade. Anos de atividade de alto impacto, muito tempo em pé em superfícies duras e andar descalço aceleram o processo. São os mesmos anos em que a [fascite plantar atinge o pico nas mulheres](/pt/fascite-plantar-menopausa/), então vale diferenciar as duas.',
         'Outros fatores de risco são:',
         {
           list: [

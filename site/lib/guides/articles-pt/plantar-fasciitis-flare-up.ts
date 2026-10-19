@@ -66,7 +66,7 @@ export const PF_FLARE_UP_PT: Guide = {
       h2: 'O que fazer nas primeiras 48 horas de uma crise?',
       keyFact: 'Em um ensaio com 180\u00A0adultos, o grupo que recebeu só a orientação para reduzir as atividades que provocam crises e voltar aos poucos, junto com uma calcanheira, melhorou de forma clinicamente relevante em cerca de três meses (Riel e colegas, 2023).',
       paragraphs: [
-        '**Reduza a carga, continue se mexendo com cuidado e avalie pela manhã seguinte.** Nenhum ensaio testou um plano de 48\u00A0horas para a fascite plantar. Os passos abaixo colocam em prática a diretriz e a orientação testada mais próxima:',
+        '**Reduza a carga, continue se mexendo com cuidado e avalie na manhã seguinte.** Nenhum ensaio testou um plano de 48\u00A0horas para a fascite plantar. Os passos abaixo colocam em prática a diretriz e a orientação testada mais próxima:',
         {
           list: [
             '**Descubra o gatilho e diminua.** Caminhadas mais curtas, mais pausas sentado, uma pausa na corrida ou nas subidas. A orientação testada em um ensaio dinamarquês foi reduzir as atividades que provocam crises e depois voltar aos poucos ao nível anterior, guiado pelos sintomas (Riel e colegas, 2020).',
@@ -118,7 +118,7 @@ export const PF_FLARE_UP_PT: Guide = {
       keyFact: 'Em um ensaio com 48\u00A0pessoas, a elevação de calcanhar com carga alta aliviou a dor e melhorou a função no dia a dia mais rápido que o alongamento, e em doze meses os dois grupos estavam mais ou menos iguais (Rathleff e colegas, 2015).',
       paragraphs: [
         '**Recue um nível no trabalho de força e volte a subir quando as manhãs se acalmarem.** Nenhum estudo testou como retomar depois de uma crise. A diretriz de 2023 dá ao trabalho de força na panturrilha o grau **B** (Koc e colegas, 2023), e em um ensaio com 48\u00A0pessoas a elevação de calcanhar com carga alta e uma toalha embaixo dos dedos ajudou mais rápido que o alongamento (Rathleff e colegas, 2015). Vale manter o trabalho de força, só que num nível que o seu calcanhar aguente nesta semana.',
-        'O trabalho de panturrilha do Walkito sobe em degraus: elevação de calcanhar sentada, depois elevação de calcanhar com os dois pés, depois uma elevação sustentada e só mais tarde a elevação de calcanhar com toalha, que é a que mais carrega a fáscia plantar. Durante uma crise:',
+        'O trabalho de panturrilha do Walkito sobe em degraus: elevação de calcanhar sentada, depois elevação de calcanhar com os dois pés, depois uma elevação sustentada e só mais tarde a elevação de calcanhar com toalha, que é a que mais exige da fáscia plantar. Durante uma crise:',
         {
           list: [
             'Desça um degrau. Se você estava na elevação de calcanhar com toalha, volte para a elevação sustentada ou para a elevação com os dois pés. Se estava com os dois pés, volte para a versão sentada.',

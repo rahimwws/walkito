@@ -57,7 +57,7 @@ Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht 
 
 ### Welche Übungen solltest du bei Plantarfasziitis meiden?
 
-Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, solange der Schmerz akut ist, und geh morgens als Erstes nicht barfuß auf harten Böden.
+Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, [solange der Schmerz akut ist](https://walkito.site/de/plantarfasziitis-schub/), und geh morgens als Erstes nicht barfuß auf harten Böden.
 
 Springen, Sprinten und Sprungtraining bringen eine plötzliche Spitzenkraft auf die Plantarfaszie. Wenn das Gewebe gereizt ist, kann diese Spitze dich zurückwerfen. Die Leitlinie von 2023 empfiehlt, die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anzupassen, eine Empfehlung mit Empfehlungsgrad E. Sie verbietet keine bestimmten Übungen. **Die Frage ist, ob die Last größer ist, als sich das Gewebe über Nacht erholen kann.**
 
@@ -1543,7 +1543,7 @@ Nein. Eine App ist nicht nötig. Die Übungen mit soliden Studienbelegen, etwa F
 
 #### Wie oft sollte man eine App bei Plantarfasziitis nutzen?
 
-Die meisten Übungsprogramme bei Plantarfasziitis, auch die am besten bewerteten in der Leitlinie von 2023 zu Fersenschmerzen, sind auf tägliche oder fast tägliche Einheiten über etwa drei Monate ausgelegt, nicht auf gelegentliche Nutzung. Eine App ist am nützlichsten, wenn du sie an den meisten Tagen öffnest, weil die Regelmäßigkeit die Belastungswirkung trägt, nicht eine einzelne Funktion darin.
+Die meisten Übungsprogramme bei Plantarfasziitis, auch die am besten bewerteten in der Leitlinie von 2023 zu Fersenschmerzen, sind auf tägliche oder fast tägliche Einheiten über etwa drei Monate ausgelegt, nicht auf gelegentliche Nutzung. Eine App ist am nützlichsten, wenn du sie an den meisten Tagen öffnest, weil die Regelmäßigkeit die Belastungswirkung trägt, nicht eine einzelne Funktion darin. Die Übungen wegzulassen, sobald der Schmerz nachlässt, ist einer der [häufigen Gründe, warum eine Plantarfasziitis stagniert](https://walkito.site/de/plantarfasziitis-wird-nicht-besser/).
 
 ## Übungen bei Hallux valgus: was sie können und was nicht
 
@@ -1867,7 +1867,7 @@ Die einzige randomisierte Studie, die diese Übung direkt bei Plantarfasziitis g
 
 Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index um 29 Punkte besser ab. Nach zwölf Monaten lagen beide Gruppen gleichauf.
 
-**Fersenheben hat die Besserung also beschleunigt,** aber langfristig nicht verstärkt. Die klinische Leitlinie von 2023 bewertet Krafttraining mit B und Dehnen mit A. Sie empfiehlt beides. Nichts in der Studienlage spricht dafür, dass du dich für eins entscheiden und das andere weglassen solltest.
+**Fersenheben hat die Besserung also beschleunigt,** aber langfristig nicht verstärkt. Die klinische Leitlinie von 2023 bewertet Krafttraining mit B und Dehnen mit A. Sie empfiehlt beides. Nichts in der Studienlage spricht dafür, dass du dich für eins entscheiden und das andere weglassen solltest. Wenn du nur dehnst und es nicht besser wird, findest du die nächsten Schritte unter [Plantarfasziitis wird nicht besser](https://walkito.site/de/plantarfasziitis-wird-nicht-besser/).
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
@@ -2115,7 +2115,7 @@ Den größten Teil der Veränderung brachte die erste Schwangerschaft. Bei Erstg
 
 Zwei Dinge rücken das ins richtige Verhältnis. Die Autorinnen und Autoren nannten die durchschnittlichen Veränderungen klein, und die Studie fand keine Veränderung bei einem Maß dafür, wie der Fuß beim Gehen abrollte. „Bleibend“ heißt in dieser Studie: beim Nachuntersuchungstermin ein paar Monate nach der Geburt noch vorhanden. Niemand wurde über Jahre begleitet.
 
-Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn deine Fersen in der Schwangerschaft schmerzen, lies [Fersenschmerzen in der Schwangerschaft](https://walkito.site/de/fersenschmerzen-schwangerschaft/). Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.
+Wenn deine Schuhgröße nach einer Schwangerschaft gestiegen ist und sich deine Füße gut anfühlen, ist diese Veränderung häufig. Wenn deine Fersen in der Schwangerschaft schmerzen, lies [Fersenschmerzen in der Schwangerschaft](https://walkito.site/de/fersenschmerzen-schwangerschaft/), rund um die Wechseljahre [Plantarfasziitis und Wechseljahre](https://walkito.site/de/plantarfasziitis-wechseljahre/). Wenn ein Gewölbe weiter absinkt oder der Innenknöchel anfängt wehzutun, lass es abklären.
 
 Source: Segal NA, Boyer ER, Teran-Yengle P, Glass NA, Hillstrom HJ, Yack HJ. Pregnancy leads to lasting changes in foot structure. American Journal of Physical Medicine & Rehabilitation. 2013;92(3):232–240.
 
@@ -2939,7 +2939,7 @@ Bei der Hüftabduktion hebst du ein Bein zur Seite, weg von der Körpermitte. We
 
 Hüftabduktion heißt, das Bein seitlich von der Körpermitte wegzubewegen. Der wichtigste Muskel dafür ist der Gluteus medius an der Außenseite der Hüfte. Er hält das Becken waagerecht, wenn du auf einem Bein stehst, und verhindert, dass die andere Hüfte absackt.
 
-Die Übung steht in Fußprogrammen, weil Hüfte, Knie und Fuß zusammenhängen. Wenn der Gluteus medius schwach ist, dreht sich der Oberschenkel beim Gehen und Stehen nach innen, das Knie folgt, und der Fuß proniert stärker, als er sollte. Das Gewölbe flacht unter dieser Kraft nach innen ab. Eine kräftigere Hüfte bremst diese Kettenreaktion.
+Die Übung steht in Fußprogrammen, weil [Hüfte, Knie und Fuß zusammenhängen](https://walkito.site/de/plantarfasziitis-knieschmerzen/). Wenn der Gluteus medius schwach ist, dreht sich der Oberschenkel beim Gehen und Stehen nach innen, das Knie folgt, und der Fuß proniert stärker, als er sollte. Das Gewölbe flacht unter dieser Kraft nach innen ab. Eine kräftigere Hüfte bremst diese Kettenreaktion.
 
 ### Wie geht Hüftabduktion im Stehen mit Band?
 
@@ -3923,7 +3923,7 @@ Die übliche Erklärung ist die kinetische Kette: die Vorstellung, dass sich die
 
 In einer Laborstudie von 2021 gingen 20 Personen mit keilförmigen Einlagen, die ihre Füße nach innen rollen ließen. Ihr Becken kippte etwas stärker zu einer Seite (im Schnitt um etwa ein halbes Grad), und die Hüfte drehte sich um etwa 1,4 Grad nach innen. Das zeigt, dass der Fuß das Becken ein wenig verschieben kann. Es zeigt nicht, dass ein halbes Grad Schmerzen auslöst, und die Studie hat Schmerzen gar nicht gemessen.
 
-Die kinetische Kette ist eine vernünftige Idee, die eine Ärztin oder ein Arzt bei einem einzelnen Menschen prüfen kann. Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.
+Die kinetische Kette ist eine vernünftige Idee, die eine Ärztin oder ein Arzt bei einem einzelnen Menschen prüfen kann. Dieselbe Frage, aber von den Fersenschmerzen aus, beantwortet [Plantarfasziitis und Knie-, Hüft- oder Rückenschmerzen](https://walkito.site/de/plantarfasziitis-knieschmerzen/). Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.
 
 Source: Hornestam JF, Arantes PMM, Souza TR, et al. Foot pronation affects pelvic motion during the loading response phase of gait. Brazilian Journal of Physical Therapy. 2021;25(6):727–734.
 
@@ -4259,7 +4259,7 @@ Die bekannteste Studie stammt aus den Framingham-Studien in den USA. Gross und K
 
 Eine zweite Studie betrachtete das junge Ende des Lebens. Kosashvili und Kollegen werteten 2008 die Daten von 97.279 jungen Rekrutinnen und Rekruten aus. Schmerzen vorn am Knie fanden sich bei 7 % mit mittlerem oder starkem Plattfuß und bei 4 % mit leichtem Plattfuß oder normalem Gewölbe. Ein leichter Plattfuß, der 74 % der Gruppe mit Plattfüßen ausmachte, brachte kein zusätzliches Risiko.
 
-Beide Studien haben die Menschen nur einmal gemessen und können deshalb nicht sagen, ob der Fuß zuerst da war. Die Framingham-Autoren wiesen außerdem darauf hin, dass ein Fußabdruck einen Plattfuß vielleicht nicht von einem breiten, fleischigen Fuß unterscheiden kann, und das Körpergewicht wirkt für sich allein auf das Knie.
+Beide Studien haben die Menschen nur einmal gemessen und können deshalb nicht sagen, ob der Fuß zuerst da war. Wenn die Fersenschmerzen zuerst da waren, lies, ob [eine Plantarfasziitis Knieschmerzen verursachen kann](https://walkito.site/de/plantarfasziitis-knieschmerzen/). Die Framingham-Autoren wiesen außerdem darauf hin, dass ein Fußabdruck einen Plattfuß vielleicht nicht von einem breiten, fleischigen Fuß unterscheiden kann, und das Körpergewicht wirkt für sich allein auf das Knie.
 
 Source: Gross KD, Felson DT, Niu J, Hunter DJ, Guermazi A, Roemer FW, Dufour AB, Gensure RH, Hannan MT. Association of flat feet with knee pain and cartilage damage in older adults. Arthritis Care & Research. 2011;63(7):937–944.
 Source: Kosashvili Y, Fridman T, Backstein D, Safir O, Bar Ziv Y. The correlation between pes planus and anterior knee or intermittent low back pain. Foot & Ankle International. 2008;29(9):910–913.
@@ -4942,7 +4942,7 @@ Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we 
 
 ### Warum wird das Fersenfettpolster dünner?
 
-**Das Alter ist der wichtigste Faktor.** Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.
+**Das Alter ist der wichtigste Faktor.** Ab etwa 40 verliert das Fettpolster von Natur aus Wasser, Kollagen und Elastizität. In denselben Jahren ist die [Plantarfasziitis bei Frauen am häufigsten](https://walkito.site/de/plantarfasziitis-wechseljahre/), deshalb lohnt es sich, beides auseinanderzuhalten. Jahre mit stoßintensiver Aktivität, langes Stehen auf hartem Boden und Barfußgehen beschleunigen diesen Prozess.
 
 Weitere Risikofaktoren sind:
 
@@ -5086,7 +5086,7 @@ Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Wo der Schm
 
 - **Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
 - **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Auf Wanderungen mit langen Anstiegen und Abstiegen geht [Fußschmerzen nach dem Wandern](https://walkito.site/de/fussschmerzen-nach-wanderung/) ein. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
-- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst. [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/) vergleicht beides direkt.
+- **Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, lass das zuerst ärztlich abklären, bevor du den Fuß trainierst. [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/) vergleicht beides direkt, und [Fersenschmerzen, die keine Plantarfasziitis sind](https://walkito.site/de/fersenschmerzen-keine-plantarfasziitis/) stellt die übrigen ähnlichen Beschwerden gegenüber.
 - **Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zum Arzt oder zur Ärztin zu gehen.
 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
@@ -5138,7 +5138,7 @@ Das Ziel ist nicht, mit dem Gehen aufzuhören. Es geht darum, die Strecke zu fin
 
 Ein praktischer Ansatz:
 
-- Geh eine Strecke, bei der der Morgenschmerz am nächsten Tag bei oder unter deinem aktuellen Ausgangswert bleibt. Wenn dein üblicher Morgenwert 4 von 10 ist und ein Spaziergang von 30 Minuten ihn am nächsten Morgen auf 6 treibt, war dieser Spaziergang zu viel.
+- Geh eine Strecke, bei der der Morgenschmerz am nächsten Tag bei oder unter deinem aktuellen Ausgangswert bleibt. Wenn dein üblicher Morgenwert 4 von 10 ist und ein Spaziergang von 30 Minuten ihn am nächsten Morgen auf 6 treibt, war dieser Spaziergang zu viel. Was du dann tun kannst, steht unter [Plantarfasziitis-Schub](https://walkito.site/de/plantarfasziitis-schub/).
 - Verkürze ihn, bis der Morgenwert stabil bleibt.
 - Nimm dann alle ein, zwei Wochen fünf Minuten dazu, solange der Morgenschmerz nicht in die Höhe schießt.
 
@@ -5298,7 +5298,7 @@ Wenn dein Schmerz zum Muster der Plantarfasziitis passt, kann sanftes Dehnen von
 
 Kraftübungen wie Fersenheben passen besser früher am Tag. Die vollständige Übungsliste findest du auf der Seite [Übungen bei Plantarfasziitis](https://walkito.site/de/plantarfasziitis-uebungen/).
 
-Wenn dein Schmerz keine Plantarfasziitis ist oder du unsicher bist, ist Dehnen am Abend nicht der erste Schritt. Die richtige Diagnose ist es.
+Wenn dein Schmerz [keine Plantarfasziitis ist](https://walkito.site/de/fersenschmerzen-keine-plantarfasziitis/) oder du unsicher bist, ist Dehnen am Abend nicht der erste Schritt. Die richtige Diagnose ist es.
 
 - **Plantarfaszien-Dehnung (im Sitzen)** (10-mal 10 Sekunden halten, jeder Fuß): Setz dich auf die Bettkante. Leg den betroffenen Fuß über das andere Knie. Zieh die Zehen Richtung Schienbein zurück, bis du eine Dehnung entlang des Gewölbes spürst. Halte 10 Sekunden. Das ist auch die Dehnung, die die Leitlinie am Morgen empfiehlt, bevor dein Fuß den Boden berührt.
 - **Wadendehnung (Knie gestreckt)** (2-mal 30 Sekunden halten, jedes Bein): Hände an die Wand. Mach mit einem Fuß einen Schritt zurück, das hintere Bein bleibt gestreckt, die Ferse unten. Lehn dich nach vorn, bis du eine Dehnung in der oberen Wade spürst. Halte 30 Sekunden. Wechsle die Seite.
@@ -6075,7 +6075,7 @@ Eine gematchte Fall-Kontroll-Studie mit 50 Personen mit Plantarfasziitis und 100
 
 Die Leitlinie nennt weitere Risikofaktoren:
 
-- Ein Alter zwischen 40 und 60.
+- Ein Alter zwischen 40 und 60, wenn [Fersenschmerzen bei Frauen rund um die Wechseljahre am häufigsten sind](https://walkito.site/de/plantarfasziitis-wechseljahre/).
 - Laufen oder Springen.
 - Berufe mit langem Stehen.
 
@@ -6103,7 +6103,7 @@ Plantarfasziitis wird meist von einer Ärztin oder einem Arzt anhand deiner Vorg
 
 - Wenn das Muster nicht passt.
 - Wenn die Beschwerden nach mehreren Wochen konservativer Behandlung nicht besser werden.
-- Wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv).
+- Wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv). Siehe [Fersenschmerzen, die keine Plantarfasziitis sind](https://walkito.site/de/fersenschmerzen-keine-plantarfasziitis/).
 
 Ultraschall und MRT können eine verdickte Faszie zeigen, aber eine verdickte Faszie auf dem Bild ohne das passende Beschwerdemuster ist keine Plantarfasziitis.
 
@@ -6245,7 +6245,7 @@ Die Leitlinie empfiehlt Beratung zu Schuhen als Teil des Vorgehens, nennt aber k
 
 #### Wann sollte ich mit Fersenschmerzen zum Arzt?
 
-Lass das zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er nach mehreren Monaten Dehnen und Wadentraining nicht besser wird. Diese Muster können auf eine andere Ursache hindeuten.
+Lass das zuerst ärztlich abklären, wenn der Schmerz nach einer Verletzung begann, du den Fuß nicht belasten kannst, beide Fersen wehtun und andere Gelenke steif sind, Taubheit oder Kribbeln dazukommen, die Ferse gerötet oder warm ist, der Schmerz dich nachts weckt oder er [nach mehreren Monaten Dehnen und Wadentraining nicht besser wird](https://walkito.site/de/plantarfasziitis-wird-nicht-besser/). Diese Muster können auf eine andere Ursache hindeuten.
 
 #### Warum habe ich Plantarfasziitis nur an einem Fuß?
 
@@ -6780,7 +6780,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Was verursacht morgens sonst noch Fersenschmerzen?
 
-Plantarfasziitis ist die häufigste Ursache für Fersenschmerzen am Morgen, aber nicht die einzige. Wo der Schmerz sitzt und wie er sich verhält, hilft, die Ursachen auseinanderzuhalten:
+Plantarfasziitis ist die häufigste Ursache für Fersenschmerzen am Morgen, aber [nicht die einzige](https://walkito.site/de/fersenschmerzen-keine-plantarfasziitis/). Wo der Schmerz sitzt und wie er sich verhält, hilft, die Ursachen auseinanderzuhalten:
 
 - **Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne wird über Nacht genauso steif wie die Plantarfaszie, deshalb ist [Steifheit bei den ersten Schritten häufig](https://walkito.site/de/plantarfasziitis-oder-achillessehne/). Meist wird es beim Gehen besser und [bei langer Belastung wieder schlimmer](https://walkito.site/de/fersenschmerzen-nach-dem-gehen/). Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](https://walkito.site/de/achillessehnenentzuendung-uebungen/).
 - **Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein wirkt wie ein Kissen. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, sich auf hartem Boden und barfuß schlimmer anfühlt und sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt (Chang und Kollegen, 2022). Der wichtigste Unterschied: Der Schmerz bei Plantarfasziitis ist meist vorn an der Innenseite der Ferse am stärksten, der Schmerz durch das Fersenpolster sitzt genau in der Mitte darunter.
@@ -6838,7 +6838,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 ### Wie zeigt der Morgenschmerz, ob es besser wird?
 
-Der Morgenschmerz ist das klarste Signal von Tag zu Tag, wie es einem Fuß geht. Ein Lauf kann sich gut anfühlen und die Faszie trotzdem überlasten, und du merkst es erst am nächsten Morgen. Eine lange Schicht auf den Beinen kann erträglich wirken, aber der nächste Morgen zeigt dir, ob sie zu viel war. Das Muster ist einfach: Wenn deine ersten Schritte am nächsten Morgen schlimmer sind als sonst, hat der Vortag dem Fuß mehr abverlangt, als er verkraften konnte.
+Der Morgenschmerz ist das klarste Signal von Tag zu Tag, wie es einem Fuß geht. Ein Lauf kann sich gut anfühlen und die Faszie trotzdem überlasten, und du merkst es erst am nächsten Morgen. Eine lange Schicht auf den Beinen kann erträglich wirken, aber der nächste Morgen zeigt dir, ob sie zu viel war. Das Muster ist einfach: Wenn deine ersten Schritte am nächsten Morgen [schlimmer sind als sonst](https://walkito.site/de/plantarfasziitis-schub/), hat der Vortag dem Fuß mehr abverlangt, als er verkraften konnte.
 
 Deshalb ist ein täglicher Wert für den Morgenschmerz, 0 bis 10, nützlicher, als den Schmerz tagsüber zu prüfen. Der Schmerz tagsüber steigt und fällt mit Aktivität, Haltung und Schuhen. Der Morgenschmerz misst dasselbe, auf dieselbe Weise, jeden Tag ungefähr zur selben Zeit. Wenn die Zahl über Wochen sinkt, macht der Fuß Fortschritte. Wenn sie in die Höhe schießt, war in den letzten ein, zwei Tagen etwas zu viel.
 
@@ -7191,7 +7191,7 @@ Nachtschienen und Einlagen scheinen zusammen besser zu wirken als getrennt:
 
 Die Leitlinie rät außerdem davon ab, Einlagen als einzige Maßnahme zur kurzfristigen Schmerzlinderung zu nutzen. Mehr zu dieser Frage findest du unter [Einlagen oder Übungen](https://walkito.site/de/einlagen-oder-uebungen/).
 
-Eine übliche Reihenfolge ist: zuerst Dehnen und Wadentraining. Wenn deine ersten Schritte nach etwa einem Monat damit noch schlecht sind, nimm für ein bis drei Monate eine Schiene dazu. Viele nutzen zusätzlich Einlagen. Diese Reihenfolge ist eine vernünftige Lesart der Leitlinie, nichts, was eine Studie getestet hat.
+Eine übliche Reihenfolge ist: zuerst Dehnen und Wadentraining. Wenn deine ersten Schritte nach etwa einem Monat damit noch schlecht sind, nimm für ein bis drei Monate eine Schiene dazu. Wenn sie auch danach noch schlecht sind, lies [Plantarfasziitis wird nicht besser](https://walkito.site/de/plantarfasziitis-wird-nicht-besser/). Viele nutzen zusätzlich Einlagen. Diese Reihenfolge ist eine vernünftige Lesart der Leitlinie, nichts, was eine Studie getestet hat.
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific stretching for plantar fasciitis: a systematic review and meta-analysis. Journal of Bodywork and Movement Therapies. 2020;24(4):222–232.
@@ -7559,7 +7559,7 @@ Bei vielen Menschen ja. In der Kohorte von Hansen 2018 waren nach durchschnittli
 
 #### Warum wird meine Plantarfasziitis nicht besser?
 
-Dafür gibt es mehrere Möglichkeiten. Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie [Nachtschienen](https://walkito.site/de/nachtschiene-plantarfasziitis/), Lasertherapie oder Dry Needling zu sprechen.
+Dafür gibt es mehrere Möglichkeiten, ausführlich erklärt unter [Plantarfasziitis wird nicht besser](https://walkito.site/de/plantarfasziitis-wird-nicht-besser/). Vielleicht machst du die Übungen nicht regelmäßig genug, die Schuhe stützen nicht gut, oder die tägliche Last auf dem Fuß (Schritte, Stunden im Stehen, Laufkilometer) ist größer, als das Gewebe verkraften kann. Es ist auch möglich, dass es gar keine Plantarfasziitis ist. Wenn Dehnen und Kräftigen nach mehreren Monaten nicht geholfen haben, empfiehlt die Leitlinie von 2023, mit einer Ärztin oder einem Arzt über Optionen wie [Nachtschienen](https://walkito.site/de/nachtschiene-plantarfasziitis/), Lasertherapie oder Dry Needling zu sprechen.
 
 #### Dauert Plantarfasziitis mit Fersensporn länger?
 
@@ -7575,7 +7575,7 @@ Lass das zuerst ärztlich abklären, wenn der Schmerz nach mehreren Monaten täg
 
 #### Kann Plantarfasziitis wiederkommen?
 
-Ja. In der Kohorte von Hansen 2018 hatten 32 % der beschwerdefreien Gruppe mindestens einen Rückfall, bevor sie dauerhaft beschwerdefrei wurden. Das Muster aus Besserung, Rückfall und weiterer Besserung ist häufig. Mit Wadentraining und Dehnen in einer Erhaltungsdosis weiterzumachen, nachdem der Schmerz weg ist, ist eine Möglichkeit, die Wahrscheinlichkeit eines Rückfalls zu senken.
+Ja. In der Kohorte von Hansen 2018 hatten 32 % der beschwerdefreien Gruppe mindestens einen Rückfall, bevor sie dauerhaft beschwerdefrei wurden. Das Muster aus Besserung, [Rückfall](https://walkito.site/de/plantarfasziitis-schub/) und weiterer Besserung ist häufig. Mit Wadentraining und Dehnen in einer Erhaltungsdosis weiterzumachen, nachdem der Schmerz weg ist, ist eine Möglichkeit, die Wahrscheinlichkeit eines Rückfalls zu senken.
 
 #### Woran merkt man, dass Plantarfasziitis besser wird?
 
@@ -8899,7 +8899,7 @@ Source: Herbert RD, de Noronha M, Kamper SJ. Stretching to prevent or reduce mus
 
 ### Verursachen verspannte Waden Fuß- und Fersenschmerzen?
 
-Verspannte Waden hängen mit [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).
+Verspannte Waden hängen mit [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe). Ob dieser veränderte Schritt auch Knie, Hüfte oder Rücken belastet, erklärt [Plantarfasziitis und Knieschmerzen](https://walkito.site/de/plantarfasziitis-knieschmerzen/).
 
 In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50 Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0 Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10 Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor [Körpergewicht](https://walkito.site/de/gewicht-und-plantarfasziitis/) und Stehen bei der Arbeit.
 
@@ -10227,7 +10227,7 @@ Eine getestete Regel erlaubt bei Belastung Schmerz bis etwa 5 von 10, solange er
 
 #### Kann Gehen eine Plantarfasziitis verschlimmern?
 
-Ja, wenn du deutlich mehr machst, als deine Ferse gewohnt ist. Die Leitlinie von 2023 nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis. Ein plötzlicher langer Spaziergang, eine neue hügelige Strecke oder ein Tag auf harten Böden kann die Beschwerden verstärken. Kleinere, gleichmäßige Steigerungen sind schonender für die Ferse.
+Ja, wenn du deutlich mehr machst, als deine Ferse gewohnt ist. Die Leitlinie von 2023 nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis. Ein plötzlicher langer Spaziergang, eine neue hügelige Strecke oder ein Tag auf harten Böden kann die Beschwerden verstärken und [einen Schub auslösen](https://walkito.site/de/plantarfasziitis-schub/). Kleinere, gleichmäßige Steigerungen sind schonender für die Ferse.
 
 #### Sollte ich ganz aufhören zu gehen, damit sich die Plantarfasziitis beruhigt?
 
@@ -11173,7 +11173,7 @@ Source: Walsh TP, Gill TK, Evans AM, Yaxley A, Chisholm JA, Kow L, et al. Change
 
 **Bei den meisten Menschen ja, sie lässt mit der Zeit und mit Behandlung ohne Operation nach.** Bei etwa 90 % der Menschen mit Plantarfasziitis wird es mit Behandlung ohne Operation besser, etwa mit Dehnungen und Einlagen, oft innerhalb von 3 bis 6 Monaten (Latt und Kollegen, 2020).
 
-In einer langen Nachbeobachtung von 174 Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Das galt nur für weibliches Geschlecht und Schmerzen in beiden Fersen, nicht für den BMI (Hansen und Kollegen, 2018).
+In einer langen Nachbeobachtung von 174 Menschen prüften die Forschenden, ob BMI, Alter, Rauchen, körperliche Arbeit und andere Faktoren vorhersagten, wer Jahre später noch Fersenschmerzen hatte. Das galt nur für weibliches Geschlecht und Schmerzen in beiden Fersen, nicht für den BMI (Hansen und Kollegen, 2018). Warum Frauen um 50 häufiger betroffen sind, erklärt [Plantarfasziitis und Wechseljahre](https://walkito.site/de/plantarfasziitis-wechseljahre/).
 
 Ein höheres Gewicht macht es also vielleicht wahrscheinlicher, dass eine Plantarfasziitis beginnt, aber es heißt nicht, dass du sie behalten musst. Die Dehnungen und das Wadentraining oben sind dieselben, die Menschen jeder Statur helfen. [Wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/) zeigt den ganzen Verlauf.
 
@@ -11401,7 +11401,7 @@ Wenn deine Fersenschmerzen nicht dem typischen Muster einer [Plantarfasziitis](h
 - Bei 250 Menschen mit Schmerzen unter der Ferse entfielen 53,2 % auf eine Plantarfasziitis, 14,8 % auf einen Schwund des Fettpolsters und 9,2 % auf beides zusammen (Yi und Kollegen, 2011).
 - Brennende, elektrisierende oder kribbelnde Fersenschmerzen sprechen oft für einen Nerv. Eine Übersichtsarbeit schätzt, dass ein eingeklemmter Baxter-Nerv bis zu 20 % der chronischen Fersenschmerzen erklären könnte (Tedeschi, 2025).
 - Ein Ermüdungsbruch des Fersenbeins schmerzt meist bei Belastung, nicht beim ersten Schritt, und bei 30 Rekruten war er auf einem normalen Röntgenbild nur in 15 % der Fälle zu sehen (Latt und Kollegen, 2020; Sormaala und Kollegen, 2006).
-- Schmerzen in beiden Fersen zusammen mit anderen schmerzenden oder steifen Gelenken oder einem steifen Rücken sprechen für eine entzündliche Ursache, die ärztlich abgeklärt werden muss, nicht nur gedehnt (Latt und Kollegen, 2020).
+- Schmerzen in beiden Fersen zusammen mit anderen schmerzenden oder steifen Gelenken oder einem steifen Rücken sprechen für eine entzündliche Ursache, die ärztlich abgeklärt werden muss und sich nicht allein mit Dehnen angehen lässt (Latt und Kollegen, 2020).
 
 ### Was kann außer einer Plantarfasziitis Fersenschmerzen verursachen?
 
@@ -11428,11 +11428,11 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 **Schmerz, der als brennend oder wie ein Stromschlag beschrieben wird, kommt oft von einem Nerv** (Latt und Kollegen, 2020). Drei Nervenquellen sind die üblichen Verdächtigen:
 
-- **Der Baxter-Nerv**, ein kleiner Ast, der unter der Ferse verläuft. Wird er eingeengt, gibt er einen chronischen, brennenden Schmerz quer über das Fersenpolster (Latt und Kollegen, 2020). Eine Übersichtsarbeit schätzt, dass er bis zu 20 % der chronischen Fersenschmerzen erklären könnte, und sagt, dass er oft für eine Plantarfasziitis gehalten wird (Tedeschi, 2025), eine andere nennt ihn selten (Latt und Kollegen, 2020).
+- **Der Baxter-Nerv**, ein kleiner Ast, der unter der Ferse verläuft. Wird er eingeengt, verursacht er einen chronischen, brennenden Schmerz quer über das Fersenpolster (Latt und Kollegen, 2020). Eine Übersichtsarbeit schätzt, dass er bis zu 20 % der chronischen Fersenschmerzen erklären könnte, und sagt, dass er oft für eine Plantarfasziitis gehalten wird (Tedeschi, 2025), eine andere nennt ihn selten (Latt und Kollegen, 2020).
 - **Das Tarsaltunnelsyndrom**, bei dem der Schienbeinnerv (Nervus tibialis) hinter dem Innenknöchel eingeengt ist. Es bringt meist brennende oder einschießende Schmerzen entlang der Sohle, oft mit Taubheit (Latt und Kollegen, 2020). Mehr zu Nervenschmerzen im Gewölbe unter [Schmerzen im Fußgewölbe](https://walkito.site/de/schmerzen-im-fussgewoelbe/).
 - **Ein eingeklemmter Nerv im unteren Rücken**, auf Höhe L5 oder S1. Das ist relativ häufig und kommt meist mit Rückenschmerzen, Schmerzen, die ins Bein ziehen, oder Taubheit in Fuß oder Bein (Latt und Kollegen, 2020).
 
-Eine Übersichtsarbeit zu nervenbedingten Fersenschmerzen kam zu dem Schluss, dass eingeengte Nerven sowohl früh als auch bei Fersenschmerzen, die nicht besser werden, eine Rolle spielen können, dass aber noch umstritten ist, wie das zustande kommt und wie man es am besten testet (Alshami und Kollegen, 2008). Schmerzen nachts oder in Ruhe mit Kribbeln behandelt die Seite [Fersenschmerzen nachts](https://walkito.site/de/fersenschmerzen-nachts/).
+Eine Übersichtsarbeit zu nervenbedingten Fersenschmerzen kam zu dem Schluss, dass eingeengte Nerven sowohl früh als auch bei Fersenschmerzen, die nicht besser werden, eine Rolle spielen können, dass aber noch umstritten ist, wie das zustande kommt und wie man es am besten testet (Alshami und Kollegen, 2008). Um Schmerzen nachts oder in Ruhe mit Kribbeln geht es auf der Seite [Fersenschmerzen nachts](https://walkito.site/de/fersenschmerzen-nachts/).
 
 Das ist eine Gruppe, bei der Übungen zur Selbsthilfe nicht der erste Schritt sind. Eine Ärztin oder ein Arzt untersucht den Fuß, zum Beispiel durch Beklopfen entlang des Schienbeinnervs, und setzt eventuell Ultraschall, Nervenmessungen oder ein MRT ein (Latt und Kollegen, 2020; Tedeschi, 2025).
 
@@ -11442,7 +11442,7 @@ Source: Alshami AM, Souvlis T, Coppieters MW. A review of plantar heel pain of n
 
 ### Kann es ein Ermüdungsbruch oder das Fettpolster sein?
 
-**Beide schmerzen eher bei Belastung als beim ersten Schritt am Morgen.** Ein Ermüdungsbruch des Fersenbeins verursacht typischerweise einen Schmerz quer über den hinteren Teil des Fersenbeins, der an Belastung gebunden ist, nicht ans Aufstehen. Er ist wahrscheinlicher, wenn du schon einmal eine geringe Knochendichte oder einen Ermüdungsbruch hattest (Latt und Kollegen, 2020). Meist folgt er auf einen Sprung beim Gehen oder Laufen oder einen Wechsel auf einen härteren Untergrund (Tu, 2018).
+**Beide schmerzen eher bei Belastung als beim ersten Schritt am Morgen.** Ein Ermüdungsbruch des Fersenbeins verursacht typischerweise einen Schmerz quer über den hinteren Teil des Fersenbeins, der an Belastung gebunden ist, nicht ans Aufstehen. Er ist wahrscheinlicher, wenn du schon einmal eine geringe Knochendichte oder einen Ermüdungsbruch hattest (Latt und Kollegen, 2020). Meist folgt er auf eine plötzliche Steigerung beim Gehen oder Laufen oder einen Wechsel auf einen härteren Untergrund (Tu, 2018).
 
 Ein normales Röntgenbild schließt ihn nicht aus: Bei 30 Rekruten mit einer Stressverletzung des Fersenbeins im MRT zeigten normale Röntgenbilder sie nur in 15 % der Fälle (Sormaala und Kollegen, 2006). Den direkten Vergleich findest du unter [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/).
 
@@ -11562,7 +11562,7 @@ Die Leitlinie von 2023 bewertet Dehnungen von Plantarfaszie und Wade bei Plantar
 
 Language: German (Deutsch) · https://walkito.site/de/plantarfasziitis-schub/ · published 2026-10-19 · updated 2026-10-19
 
-Ein Schub der [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) folgt meist auf einen Sprung bei dem, was deine Ferse tragen muss: ein langer Spaziergang, ein Tag im Stehen auf harten Böden oder eine neue Routine. Die Leitlinie von 2023 zu Fersenschmerzen nennt Schmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal. Sie empfiehlt eine Beratung zur Anpassung der Belastung und rät nicht zum Aufhören, eine Empfehlung, die sie mit **E** bewertet, weil sie auf Theorie beruht, nicht auf Studien (Koc und Kollegen, 2023). In den ersten 48 Stunden: Fahr die Belastung zurück, die den Schub ausgelöst hat, behalt deine sanften Dehnungen bei und lass dir vom nächsten Morgen sagen, wie es läuft.
+Ein Schub der [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) folgt meist auf einen plötzlichen Anstieg dessen, was deine Ferse tragen muss: ein langer Spaziergang, ein Tag im Stehen auf harten Böden oder eine neue Routine. Die Leitlinie von 2023 zu Fersenschmerzen nennt Schmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal. Sie empfiehlt eine Beratung zur Anpassung der Belastung und rät nicht zum Aufhören, eine Empfehlung, die sie mit **E** bewertet, weil sie auf Theorie beruht, nicht auf Studien (Koc und Kollegen, 2023). In den ersten 48 Stunden: Fahr die Belastung zurück, die den Schub ausgelöst hat, behalt deine sanften Dehnungen bei und lass dir vom nächsten Morgen sagen, wie es läuft.
 
 - Die Leitlinie von 2023 zu Fersenschmerzen nennt Fersenschmerz nach einer kürzlichen Steigerung der Belastung im Stehen und Gehen als typisches Merkmal der Plantarfasziitis und empfiehlt mit Empfehlungsgrad **E** eine Beratung zur Anpassung der Belastung, ohne zu völliger Ruhe zu raten (Koc und Kollegen, 2023).
 - In einer Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne waren ein steifes Sprunggelenk (23,3-fache Chance), ein BMI über 30 (5,6-fach) und Stehen während des größten Teils des Arbeitstags (3,6-fach) Risikofaktoren. Diese Studie hat untersucht, wer eine Plantarfasziitis bekommt, nicht Schübe (Riddle und Kollegen, 2003).
@@ -11574,7 +11574,7 @@ Ein Schub der [Plantarfasziitis](https://walkito.site/de/plantarfasziitis/) folg
 
 **Ein Schub ist eine Phase von Tagen, in denen deine gewohnten Fersenschmerzen deutlich schlimmer sind als sonst.** Die ersten Schritte am Morgen tun mehr weh, die Ferse schmerzt früher, wenn du auf den Beinen bist, oder ein Schmerz, der schon abgeklungen war, kommt zurück. Es gibt keine anerkannte medizinische Definition, und wir haben keine Studie gefunden, die zählt, wie oft Schübe vorkommen oder wie lange sie dauern.
 
-Das Gewebe unter der Ferse mag keine plötzlichen Änderungen der Belastung. Die Leitlinie von 2023 beschreibt den Schmerz der Plantarfasziitis als am deutlichsten bei den ersten Schritten nach einer Pause und nennt eine kürzliche Steigerung der Belastung im Stehen und Gehen als typischen Teil der Vorgeschichte (Koc und Kollegen, 2023). Ein Schub ist wahrscheinlich dasselbe im Kleinen: Die Ferse sollte mehr leisten, als sie bereit war.
+Das Gewebe unter der Ferse mag keine plötzlichen Änderungen der Belastung. Die Leitlinie von 2023 beschreibt den Schmerz der Plantarfasziitis als am deutlichsten bei den ersten Schritten nach einer Pause und nennt eine kürzliche Steigerung der Belastung im Stehen und Gehen als typischen Teil der Vorgeschichte (Koc und Kollegen, 2023). Ein Schub ist wahrscheinlich dasselbe im Kleinen: Die Ferse musste mehr leisten, als sie schon verkraften konnte.
 
 Deshalb muss ein Schub nicht heißen, dass du wieder ganz von vorn anfängst. Bei etwa 90 % der Menschen mit Plantarfasziitis wird es mit Versorgung ohne Operation besser, auch wenn es oft Monate dauert (Latt und Kollegen, 2020). Was die langen Nachbeobachtungen zeigen, steht unter [wie lange eine Plantarfasziitis dauert](https://walkito.site/de/wie-lange-dauert-plantarfasziitis/).
 
@@ -11585,9 +11585,9 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 
 **Der gemeinsame Nenner ist eine plötzliche Änderung der Belastung.** Keine Studie hat verfolgt, was bei Menschen, die schon eine Plantarfasziitis haben, Schübe auslöst. Es gibt Forschung dazu, warum Menschen sie überhaupt bekommen, und die zeigt in dieselbe Richtung:
 
-- **Ein plötzlicher Sprung bei der Aktivität.** Ein Urlaub mit langen Tagen zu Fuß, ein neuer Laufplan, eine Wanderung oder eine volle Woche bei der Arbeit. Die Leitlinie nennt eine kürzliche Steigerung der Belastung im Stehen und Gehen als typisch (Koc und Kollegen, 2023). Wenn du läufst, achte besonders auf Änderungen deines Laufumfangs.
+- **Ein plötzlicher Anstieg der Aktivität.** Ein Urlaub mit langen Tagen zu Fuß, ein neuer Laufplan, eine Wanderung oder eine volle Woche bei der Arbeit. Die Leitlinie nennt eine kürzliche Steigerung der Belastung im Stehen und Gehen als typisch (Koc und Kollegen, 2023). Wenn du läufst, achte besonders auf Änderungen deines Laufumfangs.
 - **Lange Stunden im Stehen.** In einer Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne ging Stehen während des größten Teils des Arbeitstags mit einer 3,6-fachen Chance einher (Riddle und Kollegen, 2003). In einer anderen waren Menschen mit Fersenschmerzen genauso aktiv wie Menschen ohne, standen aber 3,4 Stunden pro Tag länger (Landorf und Kollegen, 2023). Siehe [Fußschmerzen vom Stehen](https://walkito.site/de/fussschmerzen-vom-stehen/).
-- **Barfuß auf harten Böden.** Die Leitlinie nennt Arbeit im Stehen auf schlecht dämpfenden Böden als Risikofaktor (Koc und Kollegen, 2023), allerdings fand eine Studie, dass Menschen mit Fersenschmerzen nicht häufiger auf harten Böden standen als Menschen ohne (Landorf und Kollegen, 2023). Ein Best-Practice-Leitfaden von 2021 rät, barfuß zu gehen und flache Schuhe ohne Halt zu meiden, bis die Beschwerden weg sind (Morrissey und Kollegen, 2021).
+- **Barfuß auf harten Böden.** Die Leitlinie nennt Arbeit im Stehen auf schlecht dämpfenden Böden als Risikofaktor (Koc und Kollegen, 2023), allerdings fand eine Studie, dass Menschen mit Fersenschmerzen nicht häufiger auf harten Böden standen als Menschen ohne (Landorf und Kollegen, 2023). Ein Best-Practice-Leitfaden von 2021 rät, Barfußgehen und flache Schuhe ohne Halt zu meiden, bis die Beschwerden weg sind (Morrissey und Kollegen, 2021).
 - **Neue oder andere Schuhe.** Wir haben keine Studie gefunden, die neue Schuhe als Auslöser getestet hat. Bekannt ist: Menschen mit Fersenschmerzen trugen Schuhe mit härteren Absätzen als Menschen ohne (Landorf und Kollegen, 2023), und der Best-Practice-Leitfaden bevorzugt stützende Schuhe, bei denen die Ferse etwas höher liegt als die Zehen (Morrissey und Kollegen, 2021). Ein Wechsel zu flachen, dünnen oder sehr weichen Schuhen oder zu [Barfußschuhen](https://walkito.site/de/barfussschuhe/) ist eine Änderung, die deine Ferse bemerkt.
 - **Eine verkürzte Wade.** In derselben Studie von 2003 hatten Menschen, deren Sprunggelenk sich um 0 Grad oder weniger nach oben beugen ließ, eine 23,3-fach höhere Chance als Menschen mit mehr als 10 Grad (Riddle und Kollegen, 2003). Wenn du deine Dehnungen eine Weile auslässt, kann diese Steifigkeit zurückkommen. Siehe [verspannte Waden](https://walkito.site/de/verspannte-waden/).
 
@@ -11676,7 +11676,7 @@ Source: Morrissey D, Cotchett M, Said J'Bari A, et al. Management of plantar hee
 
 **Wenn sich der Schmerz anders verhält als deine gewohnte Plantarfasziitis, geh nicht einfach von einem Schub aus.** Der Schmerz der Plantarfasziitis ist bei den ersten Schritten nach einer Pause am schlimmsten, lässt oft nach, sobald du in Gang kommst, und kann nach langen Phasen auf den Beinen zurückkommen (Koc und Kollegen, 2023). Andere Muster deuten woandershin:
 
-- **Schmerz, der zunimmt, je mehr du gehst,** oft nach einem Sprung bei der Aktivität, oder Schmerz, wenn du die Ferse seitlich zusammendrückst, kann ein Ermüdungsbruch sein (Tu, 2018). Siehe [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/).
+- **Schmerz, der zunimmt, je mehr du gehst,** oft nach einer plötzlichen Steigerung der Aktivität, oder Schmerz, wenn du die Ferse seitlich zusammendrückst, kann ein Ermüdungsbruch sein (Tu, 2018). Siehe [Plantarfasziitis oder Ermüdungsbruch](https://walkito.site/de/plantarfasziitis-oder-ermuedungsbruch/).
 - **Schmerz nachts oder in Ruhe** oder Brennen, Kribbeln und Taubheit sprechen für etwas anderes als die Plantarfaszie. Siehe [Fersenschmerzen nachts](https://walkito.site/de/fersenschmerzen-nachts/).
 - **Ein plötzlicher Knall oder stechender Schmerz** unter dem Fuß bei Belastung oder ein neuer Bluterguss oder eine Schwellung gehören ärztlich abgeklärt, nicht in einen Plan für einen Schub.
 - **Ein tiefer Schmerz in der Mitte der Ferse,** der auf hartem Boden schlimmer ist, kann vom Fersenfettpolster kommen. Siehe [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
@@ -11750,7 +11750,7 @@ Wenn eine Plantarfasziitis nicht besser wird, sind die üblichen Gründe ein Pla
 
 **Bei den meisten Menschen nicht.** Eine Übersichtsarbeit von 2020 berichtet, dass es bei mehr als 90 % der Menschen mit Versorgung ohne Operation besser wird, auch wenn es drei bis sechs Monate dauern kann (Latt und Kollegen, 2020). Die schwierigere Frage ist, was mit denen passiert, die danach noch feststecken.
 
-Die besten Langzeitdaten stammen aus einer dänischen Studie, die 174 Menschen mit einer im Ultraschall bestätigten Plantarfasziitis begleitete. Im Mittel 9,7 Jahre nach Beginn der Beschwerden hatten 54 % gar keine Beschwerden mehr. Die anderen 46 % hatten noch welche, die meisten beschrieben sie aber als leicht. Im Durchschnitt hatten die Teilnehmenden 3,8 verschiedene Behandlungen ausprobiert (Hansen und Kollegen, 2018).
+Die besten Langzeitdaten stammen aus einer dänischen Studie, die 174 Menschen mit einer im Ultraschall bestätigten Plantarfasziitis begleitete. Im Mittel 9,7 Jahre nach Beginn der Beschwerden hatten 54 % gar keine Beschwerden mehr. Die anderen 46 % hatten noch welche, die meisten beschrieben sie aber als leicht. Im Durchschnitt hatten die Teilnehmenden 3,8 verschiedene Maßnahmen ausprobiert (Hansen und Kollegen, 2018).
 
 Zwei Dinge machen diese Studie hoffnungsvoller, als sie auf den ersten Blick wirkt. Es war eine Gruppe aus einer Spezialklinik mit hartnäckigen Schmerzen: 93 % hatten irgendwann eine Kortisonspritze bekommen, und die ist kein erster Schritt. Und „noch Beschwerden“ bedeutete jeden Wert über 0 von 10, schließt also Menschen mit gelegentlichen leichten Schmerzen ein.
 
@@ -11783,7 +11783,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Wie du die Belastung festlegst, ist weniger wichtig, als viele denken. Eine Studie von 2019 gab 70 Personen entweder einen festen, stufenweisen Plan fürs Fersenheben oder ließ sie Sätze und Gewicht selbst wählen, so schwer, wie sie schafften. Beide Gruppen besserten sich ähnlich stark. Die selbst gewählte Dosis führte nicht dazu, dass die Menschen mehr machten (Riel und Kollegen, 2019).
 
-Dieselbe Studie ist ein nützlicher Abgleich mit der Realität: Nach drei Monaten Fersenheben gaben 44 der 65 Personen, die antworteten, an, dass es ihnen besser ging, aber nur 4 von 70 hielten keine weitere Behandlung mehr für nötig. Wenn es dir nach drei Monaten besser geht, du aber noch nicht fertig bist, gehörst du zur üblichen Gruppe, nicht zur gescheiterten.
+Dieselbe Studie ist ein nützlicher Abgleich mit der Realität: Nach drei Monaten Fersenheben gaben 44 der 65 Personen, die antworteten, an, dass es ihnen besser ging, aber nur 4 von 70 hielten keine weitere Hilfe mehr für nötig. Wenn es dir nach drei Monaten besser geht, du aber noch nicht fertig bist, gehörst du zur üblichen Gruppe, nicht zur gescheiterten.
 
 Was du änderst: Geh eine Stufe höher, wenn sich die aktuelle in zwei Einheiten hintereinander leicht anfühlt und dein nächster Morgen nicht schlimmer ist. Die Karten unten sind die Stufen, der Reihe nach.
 
@@ -11815,7 +11815,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Löst noch etwas die Schmerzen aus?
 
-**Die Belastung, die dein Fuß den Rest des Tages abbekommt, kann die Übungen überholen.** In einer gematchten Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne war ein steifes Sprunggelenk der stärkste Risikofaktor: Ein Sprunggelenk, das sich um 0 Grad oder weniger beugen ließ, erhöhte die Chance 23,3-fach. Ein Body-Mass-Index über 30 erhöhte sie etwa 5,6-fach und den größten Teil des Arbeitstags auf den Beinen zu verbringen etwa 3,6-fach (Riddle und Kollegen, 2003).
+**Die Belastung, die dein Fuß den Rest des Tages abbekommt, kann mehr ausmachen als die Übungen.** In einer gematchten Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne war ein steifes Sprunggelenk der stärkste Risikofaktor: Ein Sprunggelenk, das sich um 0 Grad oder weniger beugen ließ, erhöhte die Chance 23,3-fach. Ein Body-Mass-Index über 30 erhöhte sie etwa 5,6-fach und den größten Teil des Arbeitstags auf den Beinen zu verbringen etwa 3,6-fach (Riddle und Kollegen, 2003).
 
 Die Leitlinie von 2023 nennt dieselben Faktoren, dazu das Laufen, und ergänzt, dass harte Böden mit schlechter Dämpfung Stehen und Gehen bei der Arbeit zu einem größeren Risiko machen (Koc und Kollegen, 2023). Manches davon kannst du ändern, manches nicht:
 
@@ -11858,7 +11858,7 @@ Das sind Optionen, die du mit einer Ärztin, einem Arzt oder in der Physiotherap
 - **Low-Level-Laser** als Teil eines Reha-Programms, bei kurzfristigen Schmerzen: **B**.
 - **Einlagen zusammen mit anderen Maßnahmen**: **C**.
 
-Die Leitlinie rät **ab** von Einlagen als einziger Maßnahme zur kurzfristigen Linderung (**B**) und davon, therapeutischen Ultraschall zum Dehnen dazuzunehmen (**A**). Die Fassung von 2023 gibt keine Empfehlung zur Stoßwellentherapie.
+Die Leitlinie rät **ab** von Einlagen als einziger Maßnahme zur kurzfristigen Linderung (**B**) und davon, therapeutischen Ultraschall zum Dehnen dazuzunehmen (**A**). Die Fassung von 2023 gibt keine Empfehlung zu Stoßwellen.
 
 **Kortisonspritzen** lindern bei manchen Menschen kurzfristig die Schmerzen, aber die Belege für ihren Zusatznutzen sind schwach. In einer Studie mit 180 Personen bekamen alle eine Beratung und eine Fersenschale. Eine Gruppe bekam zusätzlich Fersenheben, eine weitere Fersenheben plus eine Spritze. Die Unterschiede zwischen den Gruppen erreichten zu keinem Zeitpunkt bis zu einem Jahr eine Größe, die Betroffene bemerken würden (Riel und Kollegen, 2023). Dieselbe Studie fand auch keinen klaren Zusatznutzen durch das Fersenheben, eine Erinnerung daran, dass keine einzelne Ergänzung eine sichere Sache ist.
 
@@ -11870,7 +11870,7 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 
 ### Wann solltest du dich erneut untersuchen lassen?
 
-**Lass dich erneut untersuchen, wenn ein paar Monate regelmäßiger, gesteigerter Übungen deinen Morgenschmerz nicht bewegt haben, oder früher, wenn sich das Muster ändert.** Eine Übersichtsarbeit von 2020 sagt, dass Bildgebung ungewöhnlichen Fällen und Menschen vorbehalten ist, die auf die erste Stufe der Versorgung nicht ansprechen (Latt und Kollegen, 2020), und die Leitlinie sagt, dass nach anderen Diagnosen gesucht werden sollte, wenn die Beschwerden nicht verschwinden (Koc und Kollegen, 2023).
+**Lass dich erneut untersuchen, wenn ein paar Monate regelmäßiger, gesteigerter Übungen deinen Morgenschmerz nicht verändert haben, oder früher, wenn sich das Muster ändert.** Eine Übersichtsarbeit von 2020 sagt, dass Bildgebung ungewöhnlichen Fällen und Menschen vorbehalten ist, die auf die erste Stufe der Versorgung nicht ansprechen (Latt und Kollegen, 2020), und die Leitlinie sagt, dass nach anderen Diagnosen gesucht werden sollte, wenn die Beschwerden nicht verschwinden (Koc und Kollegen, 2023).
 
 Damit du das meiste aus dem Termin holst, bring mit:
 
@@ -11979,7 +11979,7 @@ Eine Plantarfasziitis beginnt meist, wenn die Belastung der Ferse größer ist, 
 - **Gewicht.** In einer Übersichtsarbeit über 51 Studien ging ein BMI über 27 mit einer 3,7-fachen Chance auf eine Plantarfasziitis einher, und der Zusammenhang war bei Menschen, die keine Sportler sind, am stärksten (van Leeuwen und Kollegen, 2016). Das Gewicht ändert sich in der Lebensmitte oft. [Gewicht und Plantarfasziitis](https://walkito.site/de/gewicht-und-plantarfasziitis/) fasst zusammen, was bekannt ist.
 - **Steifere Waden und Sprunggelenke.** In einer Studie mit 50 Menschen mit Plantarfasziitis und 100 ohne war ein steifes Sprunggelenk der stärkste gemessene Faktor, mit einer 23,3-fachen Chance (Riddle und Kollegen, 2003). Bei 100 Erwachsenen ohne Fußprobleme hatten Menschen um 80 steifere Sprunggelenke, flachere Füße und schwächere Zehenmuskeln als Menschen um 20 (Scott und Kollegen, 2007).
 - **Ein Fersenpolster, das weniger nachgibt.** In einer Röntgenstudie mit 70 Menschen mit Fersenschmerzen und 200 ohne verlor das Fersenpolster mit dem Alter an Elastizität, und bei Menschen mit Fersenschmerzen mehr (Prichasuk, 1994). Ein dünner gewordenes Fettpolster verursacht eine eigene Art von Fersenschmerz, beschrieben unter [Fersenfettpolster-Syndrom](https://walkito.site/de/fersenfettpolster-syndrom/).
-- **Eine Änderung der Aktivität.** Ein neuer Geh- oder Laufplan, ein neuer Job im Stehen oder ein plötzlicher Sprung beim Sport können die Belastung schnell erhöhen. Eine Übersichtsarbeit von 2026 nennt eine rasche Steigerung der körperlichen Aktivität unter den Faktoren, die bei Frauen in der Lebensmitte das Risiko für Überlastungsverletzungen wie die Plantarfasziitis erhöhen (Ansari und Kollegen, 2026).
+- **Eine Änderung der Aktivität.** Ein neuer Geh- oder Laufplan, ein neuer Job im Stehen oder plötzlich deutlich mehr Sport können die Belastung schnell erhöhen. Eine Übersichtsarbeit von 2026 nennt eine rasche Steigerung der körperlichen Aktivität unter den Faktoren, die bei Frauen in der Lebensmitte das Risiko für Überlastungsverletzungen wie die Plantarfasziitis erhöhen (Ansari und Kollegen, 2026).
 
 Auch lange Stunden auf den Beinen zählen: Den größten Teil des Arbeitstags im Stehen zu verbringen, ging in derselben Fall-Kontroll-Studie mit einer 3,6-fachen Chance einher (Riddle und Kollegen, 2003). Die Füße werden mit dem Alter außerdem meist etwas flacher, siehe [Plattfuß im Alter](https://walkito.site/de/plattfuss-im-alter/).
 

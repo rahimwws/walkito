@@ -67,7 +67,7 @@ export const WALKING_PF_FR: Guide = {
       },
       after: [
         'Le contrôle du matin est le plus important. La douleur aux premiers pas est le symptôme classique de la fasciite plantaire, et c’est le signe le plus clair de la façon dont votre pied a encaissé la veille. [Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) traite de ce schéma et des étirements à faire avant de vous lever.',
-        'Une douleur vive qui vous fait boiter, une douleur qui augmente à chaque marche et ne se calme pas au repos, ou une douleur la nuit sortent du cadre de cette règle. Une boiterie peut aussi charger différemment le genou, la hanche et le dos. Consultez la liste en fin de page.',
+        'Une douleur vive qui vous fait boiter, une douleur qui augmente à chaque marche et ne se calme pas au repos, ou une douleur la nuit sortent du cadre de cette règle. Une boiterie peut aussi [charger différemment le genou, la hanche et le dos](/fr/fasciite-plantaire-genou-hanche-dos/). Consultez la liste en fin de page.',
       ],
       sourceNote: 'Silbernagel 2007\u00A0: 19\u00A0personnes par groupe. Le score VISA-A-S est passé de 57 à 85 dans le groupe actif et de 57 à 91 dans le groupe au repos à douze mois, sans différence significative dans la vitesse d’amélioration.',
       cites: [CITE.silbernagel, CITE.morrisseyBestPractice],
@@ -243,7 +243,7 @@ export const WALKING_PF_FR: Guide = {
     {
       q: 'La marche peut-elle aggraver une fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
-      a: 'Oui, si vous en faites beaucoup plus que ce dont votre talon a l’habitude. La recommandation de 2023 cite une douleur au talon après une augmentation récente des activités en appui parmi les signes typiques de la fasciite plantaire. Une longue marche soudaine, un nouveau parcours vallonné ou une journée sur des sols durs peuvent provoquer une poussée. Des augmentations plus petites et régulières ménagent davantage le talon.',
+      a: 'Oui, si vous en faites beaucoup plus que ce dont votre talon a l’habitude. La recommandation de 2023 cite une douleur au talon après une augmentation récente des activités en appui parmi les signes typiques de la fasciite plantaire. Une longue marche soudaine, un nouveau parcours vallonné ou une journée sur des sols durs peuvent [provoquer une poussée](/fr/poussee-fasciite-plantaire/). Des augmentations plus petites et régulières ménagent davantage le talon.',
     },
     {
       q: 'Faut-il arrêter complètement de marcher pour que la fasciite plantaire se calme\u00A0?',

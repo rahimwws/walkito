@@ -110,7 +110,7 @@ export const FLAT_FEET_AGE_PT: Guide = {
         '**A gravidez pode baixar um pouco o arco, e a mudança pode continuar depois do parto.** Em um estudo de 2013, 49\u00A0mulheres tiveram os pés medidos no primeiro trimestre e de novo cerca de quatro meses e meio depois de dar à luz. A altura e a rigidez do arco diminuíram, e o comprimento do pé e a queda do arco aumentaram.',
         'A primeira gravidez respondeu pela maior parte da mudança. Nas mães de primeira viagem, o comprimento do pé aumentou cerca de 1,4\u00A0milímetro e a queda do arco cerca de 1,0\u00A0milímetro, em média.',
         'Duas coisas colocam isso em proporção. Os autores disseram que as mudanças médias foram pequenas, e o estudo não encontrou mudança em uma medida de como o pé virava durante a caminhada. “Duradoura”, nesse estudo, quer dizer que ainda estava lá na consulta de acompanhamento alguns meses depois do parto. Ninguém foi acompanhado por anos.',
-        'Se o seu número de calçado aumentou depois de uma gravidez e os seus pés estão bem, essa mudança é comum. Se os seus calcanhares doem durante a gravidez, veja [fascite plantar na gravidez](/pt/fascite-plantar-gravidez/). Se um arco continua caindo, ou a parte de dentro do tornozelo começa a doer, faça uma avaliação.',
+        'Se o seu número de calçado aumentou depois de uma gravidez e os seus pés estão bem, essa mudança é comum. Se os seus calcanhares doem durante a gravidez, veja [fascite plantar na gravidez](/pt/fascite-plantar-gravidez/), e perto da menopausa, [fascite plantar e menopausa](/pt/fascite-plantar-menopausa/). Se um arco continua caindo, ou a parte de dentro do tornozelo começa a doer, faça uma avaliação.',
       ],
       cites: [CITE.segalPregnancy],
     },

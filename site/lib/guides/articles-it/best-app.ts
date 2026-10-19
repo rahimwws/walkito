@@ -283,7 +283,7 @@ export const BEST_APP_IT: Guide = {
     {
       q: 'Quanto spesso usare un’app di esercizi per la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'La maggior parte dei programmi di esercizi per la fascite plantare, compresi quelli con i gradi più alti nella linea guida del 2023 sul dolore al tallone, si basa su sessioni quotidiane o quasi per circa tre mesi, non su un uso occasionale. Un’app è più utile quando la apri quasi tutti i giorni, perché è la costanza a dare l’effetto del carico, non una singola funzione dell’app.',
+      a: 'La maggior parte dei programmi di esercizi per la fascite plantare, compresi quelli con i gradi più alti nella linea guida del 2023 sul dolore al tallone, si basa su sessioni quotidiane o quasi per circa tre mesi, non su un uso occasionale. Un’app è più utile quando la apri quasi tutti i giorni, perché è la costanza a dare l’effetto del carico, non una singola funzione dell’app. Smettere gli esercizi quando il dolore si attenua è uno dei [motivi più comuni per cui la fascite plantare non passa](/it/fascite-plantare-non-passa/).',
     },
   ],
   redFlags: {
