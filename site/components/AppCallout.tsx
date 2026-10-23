@@ -33,6 +33,17 @@ const LEAD: Record<Lang, string> = {
   de: 'Walkito macht aus diesen Übungen einen kurzen Plan, der sich danach richtet, wie sich deine Füße heute Morgen angefühlt haben. Du wählst 3, 5 oder 7 Tage pro Woche.',
 };
 
+/** What the phone in the box shows: the same words as the home hero's alt text (components/Home.tsx, lib/home/*). */
+const PHONE_ALT: Record<Lang, string> = {
+  en: "Walkito's Today screen: a greeting, the morning check-in and today's session",
+  ru: 'Главный экран Walkito: приветствие, утренняя отметка и сегодняшнее занятие',
+  es: 'La pantalla de hoy en Walkito: un saludo, el registro de la mañana y la sesión de hoy',
+  de: 'Der Heute-Bildschirm von Walkito: eine Begrüßung, der Morgen-Check-in und die heutige Einheit',
+  fr: 'L’écran Aujourd’hui de Walkito\u00A0: un message d’accueil, le bilan du matin et la séance du jour',
+  it: 'La schermata Oggi di Walkito: un saluto, il check-in del mattino e la sessione di oggi',
+  pt: 'A tela de hoje do Walkito: uma saudação, o registro da manhã e a sessão do dia',
+};
+
 export function AppCallout({ campaign, lang, lead }: { campaign: string; lang: Lang; /** The page's own sentence (lib/guides/app-lines.ts); else the general one. */ lead?: string }) {
   const ios = storeHref(campaign);
   const android = playHref(campaign);
@@ -61,7 +72,7 @@ export function AppCallout({ campaign, lang, lead }: { campaign: string; lang: L
             sizes="(max-width: 640px) 200px, 230px"
             width={751}
             height={1550}
-            alt=""
+            alt={PHONE_ALT[lang]}
             loading="lazy"
             decoding="async"
           />
