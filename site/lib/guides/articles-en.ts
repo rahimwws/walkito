@@ -36,6 +36,7 @@ import { PF_DURATION_EN } from './articles/pf-duration';
 import { STANDING_DESK_EN } from './articles/standing-desk';
 import { VS_EXAKT_EN } from './articles/vs-exakt';
 import { VS_PLANTARCARE_EN } from './articles/vs-plantarcare';
+import { VS_PF_EXERCISES_EN } from './articles/vs-pf-exercises';
 import { CALF_RAISES_EN } from './articles/calf-raises';
 import { SHIN_SPLINTS_EN } from './articles/shin-splints';
 import { STANDING_EN } from './articles/standing';
@@ -122,6 +123,7 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   bestInsoles: BEST_INSOLES_EN,
   vsExakt: VS_EXAKT_EN,
   vsPlantarCare: VS_PLANTARCARE_EN,
+  vsPfExercises: VS_PF_EXERCISES_EN,
   exPlantarFasciaStretch: EX_PLANTAR_FASCIA_STRETCH,
   exCalfStretch: EX_CALF_STRETCH,
   exSoleusStretch: EX_SOLEUS_STRETCH,

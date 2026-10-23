@@ -28,7 +28,7 @@ export const VS_EXAKT_EN: Guide = {
       h2: 'Side-by-side comparison',
       paragraphs: [
         'Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app\'s own source code.',
-        'Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](/walkito-vs-plantarcare/).',
+        'Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](/walkito-vs-plantarcare/). Want a short fixed routine? See [Walkito vs the Plantar Fasciitis Exercises app](/walkito-vs-plantar-fasciitis-exercises-app/).',
       ],
       table: {
         caption: 'Walkito vs Exakt Health (checked October 2026)',
@@ -139,7 +139,7 @@ export const VS_EXAKT_EN: Guide = {
         'The app is narrower than Exakt. It does not cover knee injuries, hamstring strains or running plans. What it does differently is **adjust each day\'s session from a morning pain check-in** rather than end-of-session feedback.',
         'A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps on iPhone or Health Connect on Android) turns the next strength session into a lighter recovery one.',
         'Walkito tests progress every 14 days with calf raises, an arch hold and [single-leg balance](/exercises/single-leg-balance/), and compares your left side with your right. That left-right comparison is something most apps in this space do not track.',
-        'Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has no user ratings yet. It does not have the track record or breadth that Exakt has built since 2021.',
+        'Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has few ratings so far. It does not have the track record or breadth that Exakt has built since 2021.',
       ],
     },
     {

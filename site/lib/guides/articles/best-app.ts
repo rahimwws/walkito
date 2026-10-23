@@ -186,7 +186,7 @@ export const BEST_APP_EN: Guide = {
       paragraphs: [
         'This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on both iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it.',
         'The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.',
-        'If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.',
+        'If you want a [free reference for what stretches to try](/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough. See [Walkito vs Plantar Fasciitis Exercises](/walkito-vs-plantar-fasciitis-exercises-app/) for the two side by side.',
       ],
     },
     {

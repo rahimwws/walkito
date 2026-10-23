@@ -2243,7 +2243,7 @@ This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stre
 
 The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.
 
-If you want a [free reference for what stretches to try](https://walkito.site/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.
+If you want a [free reference for what stretches to try](https://walkito.site/youtube-vs-app-plantar-fasciitis/), check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough. See [Walkito vs Plantar Fasciitis Exercises](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/) for the two side by side.
 
 ### Walkito: what it does and what it does not
 
@@ -3090,7 +3090,7 @@ If a free routine with all three exercise types is going well, there is no need 
 - you want the exercises to get harder without planning it yourself
 - you want to track whether things are changing
 
-Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/).
+Either way, see a doctor or physical therapist if the pain has not improved after about two weeks of home care ([NHS](https://www.nhs.uk/conditions/heel-pain/)). For the costs side by side, see [what plantar fasciitis care costs](https://walkito.site/plantar-fasciitis-treatment-cost/). For two simple apps compared with Walkito, see [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/) and [Walkito vs the Plantar Fasciitis Exercises app](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/).
 
 ### See a clinician first if
 
@@ -3718,7 +3718,7 @@ Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis]
 
 Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app's own source code.
 
-Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/).
+Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/). Want a short fixed routine? See [Walkito vs the Plantar Fasciitis Exercises app](https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/).
 
 ### Who is Exakt Health built for?
 
@@ -3748,7 +3748,7 @@ A morning of 7/10 or higher switches the day to about three minutes of seated wo
 
 Walkito tests progress every 14 days with calf raises, an arch hold and [single-leg balance](https://walkito.site/exercises/single-leg-balance/), and compares your left side with your right. That left-right comparison is something most apps in this space do not track.
 
-Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has no user ratings yet. It does not have the track record or breadth that Exakt has built since 2021.
+Walkito was released on October 2, 2026. It is on iPhone and, since October 2026, on Android. It is new and has few ratings so far. It does not have the track record or breadth that Exakt has built since 2021.
 
 ### How does each app build your plan?
 
@@ -3946,7 +3946,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### Doing it as a plan
 
-If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around one goal at a time.
+If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around your goals.
 
 #### Is PlantarCare free?
 
@@ -3963,6 +3963,86 @@ They do different jobs. PlantarCare is a free tracker with a basic stretch routi
 #### Do I still need a doctor if I use one of these apps?
 
 Yes, if the pain followed an injury, comes with numbness or swelling, wakes you at night or is not improving after several weeks. Neither app diagnoses; both say to see a clinician for warning signs.
+
+## Walkito vs the Plantar Fasciitis Exercises app
+
+Language: English · https://walkito.site/walkito-vs-plantar-fasciitis-exercises-app/ · published 2026-10-23 · updated 2026-10-23
+
+Plantar Fasciitis Exercises is a simple exercise app with stretching and strengthening routines at three levels, free to download with a subscription inside the app that its reviewers say you need before you can use it. Walkito is a subscription exercise app for iPhone and Android that builds a plan around goals, changes each session from a morning pain check-in and tests your progress every 14 days. Pick Plantar Fasciitis Exercises for a short fixed routine; pick Walkito if you want the plan to adapt to how your feet feel.
+
+- Both apps are free to download and need a purchase inside the app for the full program. This page does not list prices; the store shows them before you pay.
+- Plantar Fasciitis Exercises offers routines at three levels with illustrated step-by-step text. Walkito builds a plan around goals, with short demonstration videos.
+- Walkito changes each session from a morning pain check-in and tests calf endurance, arch hold and balance every 14 days. Plantar Fasciitis Exercises has no pain tracking that we could find.
+- Plantar Fasciitis Exercises is in English. Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
+- Both have few ratings: Plantar Fasciitis Exercises had 1 rating on the US App Store when we checked, and Walkito had 4.
+
+### Side-by-side comparison
+
+Plantar Fasciitis Exercises facts are from its [App Store listing](https://apps.apple.com/us/app/plantar-fasciitis-exercises/id6779576791) and Google Play listing; Walkito facts are from the app and our [About page](https://walkito.site/about/#facts).
+
+### Who is Plantar Fasciitis Exercises built for?
+
+Its store listing describes guided stretching and strengthening workouts for the feet and lower legs, with programs for beginner, intermediate and advanced users, step-by-step instructions, no equipment and short sessions.
+
+Its Google Play listing promises 15 exercises across three levels, and its App Store screenshots show five exercises per level with a drawing and step-by-step text rather than videos. Neither listing mentions pain tracking or adaptation. It is listed as free on both stores, but both listings show in-app purchases, and the single review on the US App Store is about being asked to pay before using it.
+
+It came to the App Store on June 24, 2026, and the iPhone version was last updated on August 11, 2026. The Android version is older and was updated on October 6, 2026.
+
+### Who is Walkito built for?
+
+Walkito is built for people with heel pain, plantar fasciitis or flat feet who want a short exercise plan that changes with how their feet feel each morning, including people on their feet all day for work.
+
+You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A morning of 7/10 pain or higher switches the day to about three minutes of seated work, and a big day on your feet makes the next strength session a lighter recovery one.
+
+Every 14 days a short test of calf raises, an arch hold and [single-leg balance](https://walkito.site/exercises/single-leg-balance/) compares your left side with your right. The exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B.
+
+Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 2, 2026 and has few ratings so far.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### When is Plantar Fasciitis Exercises the better choice?
+
+- You want a short fixed routine and like choosing your own level.
+- You don’t need the app to track your pain or change the plan for you.
+- Drawings and text instructions are enough for you.
+
+### When is Walkito the better choice?
+
+- You want each session to change with your morning pain, at a length you choose.
+- You want to see each exercise in a short video.
+- You want a progress test every 14 days that compares your left and right sides.
+- You want the app in Russian, Spanish, Portuguese, French, Italian or German.
+- You also have [flat feet](https://walkito.site/best-app-for-flat-feet/), not only heel pain.
+
+### When an app is not enough, see a clinician
+
+- your pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, burning, swelling or warmth
+- pain wakes you at night or is present at rest
+- squeezing the sides of the heel hurts, which can point to a stress fracture rather than plantar fasciitis
+- pain is getting worse week over week despite consistent exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around your goals.
+
+#### Is the Plantar Fasciitis Exercises app free?
+
+It is free to download, but both its App Store and Google Play listings show in-app purchases, and its only US App Store review says it asked for payment before use. Walkito is also free to download, with a yearly or weekly subscription inside the app.
+
+#### Does either app show the exercises on video?
+
+Walkito shows each exercise in your plan in a short demonstration video. Plantar Fasciitis Exercises describes step-by-step instructions; its screenshots show a drawing with text steps, not video.
+
+#### Which app is better for plantar fasciitis?
+
+They do different jobs. Plantar Fasciitis Exercises gives you fixed routines at three levels. Walkito builds a plan that adapts each session and tests your progress. The 2023 guideline puts stretching and strengthening first, which both apps include. Neither is a medical device.
+
+#### Do I still need a doctor if I use one of these apps?
+
+Yes, if the pain followed an injury, comes with numbness or swelling, wakes you at night or is not improving after several weeks. Neither app diagnoses.
 
 ## Plantar fascia stretch: how to do it, sets and reps
 
