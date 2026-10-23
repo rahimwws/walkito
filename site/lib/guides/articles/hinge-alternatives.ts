@@ -82,7 +82,7 @@ export const HINGE_ALT_EN: Guide = {
             '[Luna](https://www.getluna.com/). A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.',
             '[Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/). One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.',
             '**Physical therapy in a clinic.** Through your insurance, a visit usually costs your copay or coinsurance. Our [plantar fasciitis cost guide](/plantar-fasciitis-treatment-cost/) has typical prices and the questions to ask your plan.',
-            '**Exercise apps.** No clinician, but you can start today. Prices we checked range from free (PlantarCare) to $299.99 a year (Prehab\u2019s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](/best-apps-for-foot-pain/).',
+            '**Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](/walkito-vs-plantarcare/)) to $299.99 a year (Prehab\u2019s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](/best-apps-for-foot-pain/).',
           ],
         },
       ],

@@ -28,6 +28,7 @@ export const VS_EXAKT_EN: Guide = {
       h2: 'Side-by-side comparison',
       paragraphs: [
         'Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app\'s own source code.',
+        'Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](/walkito-vs-plantarcare/).',
       ],
       table: {
         caption: 'Walkito vs Exakt Health (checked October 2026)',

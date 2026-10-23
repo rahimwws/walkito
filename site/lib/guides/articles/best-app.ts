@@ -170,7 +170,7 @@ export const BEST_APP_EN: Guide = {
           ],
         },
         'The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.',
-        'PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only.',
+        'PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only. See [Walkito vs PlantarCare](/walkito-vs-plantarcare/) for the two side by side.',
       ],
     },
     {

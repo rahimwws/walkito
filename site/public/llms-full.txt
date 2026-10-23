@@ -2227,7 +2227,7 @@ For a free app, it does a surprising amount right:
 
 The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.
 
-PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only.
+PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only. See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/) for the two side by side.
 
 ### Arch: Flat Feet Trainer
 
@@ -3307,7 +3307,7 @@ Source: O'Connor MI, Dorak Ribaudo M, Peters KC, et al. Clinical Efficacy of Tel
 - [Luna](https://www.getluna.com/). A licensed physical therapist comes to your home. In its [service areas](https://www.getluna.com/locations), you can usually book without a referral, though some insurers require one, and it takes insurance, Medicare and Medicare Advantage. Without insurance it lists $135 a visit. It names heel pain and plantar fasciitis.
 - [Virtual Physical Therapists](https://www.virtualphysicaltherapists.com/individual/). One-to-one video visits with licensed physical therapists for $89 per 30 minutes, then $2 a minute. It does not bill insurance; HSA and FSA cards work.
 - **Physical therapy in a clinic.** Through your insurance, a visit usually costs your copay or coinsurance. Our [plantar fasciitis cost guide](https://walkito.site/plantar-fasciitis-treatment-cost/) has typical prices and the questions to ask your plan.
-- **Exercise apps.** No clinician, but you can start today. Prices we checked range from free (PlantarCare) to $299.99 a year (Prehab’s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](https://walkito.site/best-apps-for-foot-pain/).
+- **Exercise apps.** No clinician, but you can start today. Prices we checked range from free ([PlantarCare](https://walkito.site/walkito-vs-plantarcare/)) to $299.99 a year (Prehab’s top yearly plan); Exakt Health covers plantar fasciitis and heel spurs. See our [plantar fasciitis app guide](https://walkito.site/best-app-for-plantar-fasciitis/) and [foot pain apps by problem](https://walkito.site/best-apps-for-foot-pain/).
 
 ### Does Medicare cover virtual physical therapy?
 
@@ -3399,7 +3399,7 @@ Yes. Over a year, Exakt’s cheapest rehab option comes to about $120. These cos
 - Sports Injury Rehabilitation: phase 1 of every program is free; later phases are in-app purchases.
 - GaitLab Coach: free for basic running form checks; the full report with a 4-week drill plan is $4.99 once.
 - Hinge Health: $0, if your employer or health plan covers it.
-- [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): free with no in-app purchases, iPhone only, for heel pain only.
+- [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136): free with no in-app purchases, iPhone only, for heel pain only ([Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/)).
 
 Walkito is a weekly or yearly subscription. The current price for your country is shown in the App Store or Google Play before you subscribe.
 
@@ -3718,6 +3718,8 @@ Walkito and Exakt Health both offer exercise-based plans for [plantar fasciitis]
 
 Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store and Google Play listings, walkito.site and the app's own source code.
 
+Looking for a free heel pain tracker rather than a plan? See [Walkito vs PlantarCare](https://walkito.site/walkito-vs-plantarcare/).
+
 ### Who is Exakt Health built for?
 
 Exakt Health is built for runners. That is its core identity, and everything in the app reflects it. If you are a runner recovering from plantar fasciitis, [Achilles tendinopathy](https://walkito.site/achilles-tendonitis-exercises/), an ankle sprain, a hamstring strain or a meniscus tear, Exakt has a specific rehab plan for your injury. It covers over 15 different conditions.
@@ -3876,6 +3878,91 @@ Yes. Exakt Health is certified as a medical device in the EU (Germany). This mea
 #### Which app adapts more to daily pain?
 
 Walkito adjusts each session from a morning pain check-in before you start. A score of 7/10 or higher makes the session lighter. A big step-count day triggers a recovery session the next day. Exakt adapts its plan from how you rate each session after you finish it. Walkito's approach is more reactive to daily pain changes; Exakt's is more focused on overall plan progression.
+
+## Walkito vs PlantarCare: which heel pain app fits you?
+
+Language: English · https://walkito.site/walkito-vs-plantarcare/ · published 2026-10-23 · updated 2026-10-23
+
+PlantarCare is a free heel pain tracker for iPhone with a simple daily stretch routine, no account and no in-app purchases. Walkito is a subscription exercise app for iPhone and Android that builds a plan around goals and changes each session from a morning pain check-in. Pick PlantarCare if you want free, simple tracking; pick Walkito if you want an adaptive plan with progress tests, or an app for Android.
+
+- PlantarCare is free with no in-app purchases and no account, and keeps your records on your phone. Walkito is a weekly or yearly subscription, with the price shown in the store.
+- PlantarCare is on iPhone; we could not confirm an Android version. Walkito is on iPhone and Android.
+- PlantarCare’s App Store listing shows English only, though its latest release notes say it is now in 15 languages. Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
+- PlantarCare logs pain, shoes, standing hours and training, and suggests a recovery stage from your pain trend. Walkito adjusts each session from a morning pain check-in and tests calf endurance, arch hold and balance every 14 days.
+- Both apps are new: PlantarCare had no ratings on the US App Store when we checked, and Walkito had 4.
+
+### Side-by-side comparison
+
+PlantarCare facts are from its [App Store listing](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136); Walkito facts are from the app and our [About page](https://walkito.site/about/#facts).
+
+### Who is PlantarCare built for?
+
+PlantarCare describes itself as a self-care and habit-tracking tool for heel pain and plantar fasciitis, made for people on their feet all day, runners and weekend athletes. Its listing names these features:
+
+- A daily check-in for morning first-step pain and your worst daytime pain.
+- Recovery stages it suggests from your pain trend, from calming things down to getting back to sport.
+- A guided daily routine of stretches, calf work, heel raises and icing reminders, matched to your stage.
+- A footwear and load log for shoes, standing hours and training.
+- Weekly trend charts and reminders to see a clinician if you log warning signs such as severe swelling, numbness or night pain.
+
+It is free, needs no sign-up, and its listing says your health records stay on your device. It was first released on July 15, 2026 and last updated on July 23, 2026.
+
+### Who is Walkito built for?
+
+Walkito is built for people with heel pain, plantar fasciitis or flat feet who want a short exercise plan that changes with how their feet feel each morning, including people on their feet all day for work.
+
+You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A morning of 7/10 pain or higher switches the day to about three minutes of seated work, and a big day on your feet makes the next strength session a lighter recovery one.
+
+Every 14 days a short test of calf raises, an arch hold and [single-leg balance](https://walkito.site/exercises/single-leg-balance/) compares your left side with your right. The exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B.
+
+Walkito is a subscription and it saves your plan and what you log to your Walkito account. It was released on October 2, 2026 and has few ratings so far.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### When is PlantarCare the better choice?
+
+- You want a free app with no subscription.
+- You don’t want an account, and you want your records kept only on your phone.
+- You mainly want to track pain and spot what sets it off, such as certain shoes or long days standing.
+- A simple daily stretch routine is enough for you.
+
+### When is Walkito the better choice?
+
+- You use an Android phone.
+- You want the app in Russian, Spanish, Portuguese, French, Italian or German; PlantarCare’s store listing shows English only.
+- You want each session to change with your morning pain, at a length you choose.
+- You want a progress test every 14 days that compares your left and right sides.
+- You also have [flat feet](https://walkito.site/best-app-for-flat-feet/), not only heel pain.
+
+### When an app is not enough, see a clinician
+
+- your pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, burning, swelling or warmth
+- pain wakes you at night or is present at rest
+- squeezing the sides of the heel hurts, which can point to a stress fracture rather than plantar fasciitis
+- pain is getting worse week over week despite consistent exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+If [Walkito](https://walkito.site/program/) sounds like the right fit, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal, and Walkito builds a weekly plan around one goal at a time.
+
+#### Is PlantarCare free?
+
+Yes. PlantarCare’s App Store listing says it is free with no in-app purchases and needs no account. Walkito is free to download, with a yearly or weekly subscription inside the app.
+
+#### Is PlantarCare on Android?
+
+We could not confirm it. PlantarCare is on the App Store for iPhone. On Google Play we found only a Chinese-language app that also calls itself PlantarCare (com.zach.plantarcare), from a differently named developer, so we could not tell whether it is the same app. Walkito is on both the App Store and Google Play.
+
+#### Which app is better for plantar fasciitis?
+
+They do different jobs. PlantarCare is a free tracker with a basic stretch routine. Walkito is a paid plan that adapts each session and tests your progress. Both are new, neither is a medical device, and the 2023 guideline puts stretching and strengthening first, which both apps include.
+
+#### Do I still need a doctor if I use one of these apps?
+
+Yes, if the pain followed an injury, comes with numbness or swelling, wakes you at night or is not improving after several weeks. Neither app diagnoses; both say to see a clinician for warning signs.
 
 ## Plantar fascia stretch: how to do it, sets and reps
 

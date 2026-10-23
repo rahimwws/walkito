@@ -42,6 +42,7 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   bestFlatApp: 'Best app for flat feet',
   bestInsoles: 'Best insoles',
   vsExakt: 'Walkito vs Exakt Health',
+  vsPlantarCare: 'Walkito vs PlantarCare',
   pfVsHeelSpur: 'Plantar fasciitis vs heel spur',
   heelSpurExercises: 'Heel spur exercises',
   heelPainAfterWalking: 'Heel pain after walking',
@@ -268,7 +269,7 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids', 'flatFeetTest'],
   tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
   work: ['standing', 'nurses', 'standingDesk', 'teachers', 'retailWarehouse', 'chefs', 'hairdressers', 'hikers'],
-  compare: ['bestApp', 'vsExakt', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
+  compare: ['bestApp', 'vsExakt', 'vsPlantarCare', 'exaktAlt', 'bestFlatApp', 'vsHinge', 'appVsPt', 'pfCost', 'ytVsApp', 'footApps', 'hingeAlt', 'bestInsoles', 'ytStudy', 'aiStudy', 'appStudy'],
   library: [
     'exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exFootRoll', 'exAnkleRocks',
     'exTowelHeelRaise', 'exCalfRaises', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance',
