@@ -30,7 +30,7 @@ const ORGANISATION = {
   // No length: the plan is built a week at a time around a measurable goal and
   // keeps going while it is used.
   description:
-    'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
   // Another "Walkito" exists (a dog-walking marketplace in Uruguay at
   // walkito.com), and Google's AI answers have been resolving the name to it.
   // This says in one line which Walkito this one is.

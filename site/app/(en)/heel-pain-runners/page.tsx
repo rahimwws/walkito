@@ -568,7 +568,7 @@ export default function HeelPainRunners() {
             <UpdatedLine lang="en" updated={PAGE_UPDATED.runners} />
             <p className="notice">{c.notice}</p>
 
-            <p className="cta-line">Start with {MIN_A} minutes a day.</p>
+            <p className="cta-line">Start with a {MIN_A}-minute session.</p>
             <AppStoreBadge campaign="runners-bottom" />
           </section>
         </article>

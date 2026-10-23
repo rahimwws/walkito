@@ -15,12 +15,12 @@ export const HOME_PT: HomeCopy = {
   meta: {
     title: 'Walkito: exercícios para dor no calcanhar e pé chato',
     description:
-      'O Walkito é um plano de exercícios para dor no calcanhar, fascite plantar e pé chato que se ajusta toda manhã a como seus pés estão.',
+      'O Walkito é um app de exercícios para iPhone e Android para dor no calcanhar, fascite plantar e pé chato, que se ajusta toda manhã aos seus pés.',
   },
   h1a: 'Já tentou de tudo?',
   h1b: 'Experimente um plano feito para os seus pés.',
-  lead: 'O Walkito é um plano de exercícios para dor no calcanhar, fascite plantar e pé chato que se ajusta toda manhã a como seus pés estão.',
-  small: `${MIN_A}, ${MIN_B} ou ${MIN_C} minutos por dia, em casa.`,
+  lead: 'O Walkito é um app de exercícios para iPhone e Android, feito para dor no calcanhar, fascite plantar e pé chato, que se ajusta toda manhã a como seus pés estão.',
+  small: `${MIN_A}, ${MIN_B} ou ${MIN_C} minutos por sessão, em casa.`,
   alt: {
     heroCenter: 'A tela de hoje do Walkito: uma saudação, o registro da manhã e a sessão do dia',
   },

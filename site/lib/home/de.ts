@@ -17,12 +17,12 @@ export const HOME_DE: HomeCopy = {
   meta: {
     title: 'Walkito: Übungen bei Fersenschmerzen und Plattfuß',
     description:
-      'Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen.',
+      'Walkito ist eine Übungs-App für iPhone und Android bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, die sich jeden Morgen an deine Füße anpasst.',
   },
   h1a: 'Schon alles ausprobiert?',
   h1b: 'Probier einen Plan, der zu deinen Füßen passt.',
-  lead: 'Walkito ist ein Übungsplan bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, der sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen.',
-  small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten am Tag, zu Hause.`,
+  lead: 'Walkito ist eine Übungs-App für iPhone und Android bei Fersenschmerzen, Plantarfasziitis und Plattfüßen, die sich jeden Morgen daran anpasst, wie sich deine Füße anfühlen.',
+  small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten pro Einheit, zu Hause.`,
   alt: {
     heroCenter: 'Der Heute-Bildschirm von Walkito: eine Begrüßung, der Morgen-Check-in und die heutige Einheit',
   },

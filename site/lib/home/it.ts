@@ -16,12 +16,12 @@ export const HOME_IT: HomeCopy = {
   meta: {
     title: 'Walkito: esercizi per dolore al tallone e piede piatto',
     description:
-      'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
+      'Walkito è un’app di esercizi per iPhone e Android per dolore al tallone, fascite plantare e piede piatto, che si adatta ogni mattina ai tuoi piedi.',
   },
   h1a: 'Hai già provato di tutto?',
   h1b: 'Prova un piano fatto per i tuoi piedi.',
-  lead: 'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
-  small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti al giorno, a casa.`,
+  lead: 'Walkito è un’app di esercizi per iPhone e Android, pensata per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi.',
+  small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti a sessione, a casa.`,
   alt: {
     heroCenter: 'La schermata Oggi di Walkito: un saluto, il check-in del mattino e la sessione di oggi',
   },

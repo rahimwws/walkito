@@ -14053,7 +14053,20 @@ No study has followed heel pain through menopause, so there is no figure. For pl
 
 https://walkito.site/about/
 
-Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.
+Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.
+
+### Walkito at a glance
+
+- **What it is:** an exercise app for heel pain, plantar fasciitis, flat feet and other foot and lower-leg pain.
+- **Phones:** iPhone, on the [App Store](https://apps.apple.com/app/id6813076846), and Android, on [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).
+- **Sessions:** 3, 5 or 10 minutes, at home. Walkito asks what you have, such as a towel or a step, and leaves out exercises that need anything else.
+- **How often:** you pick 3, 5 or 7 training days a week. Each session adapts to how your morning went.
+- **Progress:** a short test every 14 days.
+- **Languages:** English, Russian, Spanish, Portuguese, French, Italian and German.
+- **Price:** free to download, with a yearly or weekly subscription inside the app. The App Store or Google Play shows the price in your currency before you subscribe.
+- **Who makes it:** Rahim Hudaykulyyev and Rahman Bazarov, Walkito’s two co-founders.
+- **What it is not:** a medical device. Walkito does not diagnose and does not replace a clinician.
+- **Name:** Walkito is not related to walkito.com, a dog-walking service.
 
 ### What is Walkito?
 
@@ -14119,6 +14132,10 @@ Every page shows the date its content last changed. That date moves only when th
 Walkito’s [privacy policy](https://walkito.site/privacy/) explains what Walkito stores, what leaves your phone and how to delete it. In short, your plan and check-ins are saved to your account, and Apple Health data stays on your phone.
 
 ## Questions (https://walkito.site/faq/)
+
+### What is Walkito?
+
+Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. You pick three, five or seven training days a week and sessions of 3, 5 or 10 minutes. Walkito is not a medical device, and it is not related to walkito.com, a dog-walking service.
 
 ### Is Walkito available on Android?
 
@@ -14246,7 +14263,7 @@ Delete your account in Walkito under Profile, then Delete account. That removes 
 
 ### How much does Walkito cost?
 
-Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. The price the store shows is the one that applies.
+Walkito is free to download, with a yearly or weekly subscription inside the app. The price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you subscribe. Both subscriptions renew on their own until you cancel, and the price the store shows is the one that applies.
 
 ### How do I cancel my Walkito subscription?
 

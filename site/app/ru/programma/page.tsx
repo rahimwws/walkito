@@ -340,7 +340,7 @@ export default function ProgramRu() {
         <UpdatedLine lang="ru" updated={PAGE_UPDATED.program} />
         <p className="notice">{c.notice}</p>
 
-        <p className="cta-line">Начните с {PROGRAM.sessionMinutes[0]}{'\u00A0'}минут в день.</p>
+        <p className="cta-line">Начните с {PROGRAM.sessionMinutes[0]}-минутного занятия.</p>
         <AppStoreBadge campaign="program-ru" lang="ru" />
       </Prose>
 

@@ -77,7 +77,7 @@ const APP = {
   // Free to download; the plan itself is a subscription inside the app.
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
-    'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
   inLanguage: ['en', 'ru', 'es', 'pt-BR', 'fr', 'it', 'de'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
@@ -148,12 +148,12 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: Heel Pain & Flat Feet Exercise App',
       description:
-        'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+        'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
     },
     h1a: 'Tried everything?',
     h1b: 'Try a plan built for your feet.',
-    lead: 'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
-    small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a day, at home.`,
+    lead: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a session, at home.`,
     alt: {
       heroCenter: "Walkito's Today screen: a greeting, the morning check-in and today's session",
     },
@@ -240,12 +240,12 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: упражнения при боли в пятке и стопе',
       description:
-        'Walkito составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
+        'Walkito: приложение для iPhone и Android с упражнениями при боли в пятке, плантарном фасциите и плоскостопии, которое подстраивается под ваши стопы.',
     },
     h1a: 'Всё перепробовали?',
     h1b: 'Попробуйте план, созданный для ваших стоп.',
-    lead: 'Walkito составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
-    small: `${MIN_A}, ${MIN_B} или ${MIN_C} минут в день, дома.`,
+    lead: 'Приложение Walkito для iPhone и Android составляет план упражнений при боли в пятке, плантарном фасциите и плоскостопии и каждое утро подстраивает его под состояние ваших стоп.',
+    small: `Занятия по ${MIN_A}, ${MIN_B} или ${MIN_C} минут, дома.`,
     alt: {
       heroCenter: 'Главный экран Walkito: приветствие, утренняя отметка и сегодняшнее занятие',
     },
@@ -329,12 +329,12 @@ const COPY: Record<Lang, HomeCopy> = {
     meta: {
       title: 'Walkito: ejercicios para el dolor de talón y pie',
       description:
-        'Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies.',
+        'Walkito es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para iPhone y Android, que se ajusta cada mañana a tus pies.',
     },
     h1a: '¿Ya probaste de todo?',
     h1b: 'Prueba un plan hecho para tus pies.',
-    lead: 'Walkito es un plan de ejercicios para el dolor de talón, la fascitis plantar y el pie plano que se ajusta cada mañana a cómo se sienten tus pies.',
-    small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos al día, en casa.`,
+    lead: 'Walkito es una app de ejercicios para el dolor de talón, la fascitis plantar y el pie plano, para iPhone y Android, que se ajusta cada mañana a cómo se sienten tus pies.',
+    small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos por sesión, en casa.`,
     alt: {
       heroCenter: 'La pantalla de hoy en Walkito: un saludo, el registro de la mañana y la sesión de hoy',
     },

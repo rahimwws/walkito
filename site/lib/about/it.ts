@@ -19,8 +19,24 @@ export const ABOUT_IT: About = {
   description:
     'Cos’è Walkito, come scriviamo e documentiamo le guide su dolore al tallone e piede piatto, cosa Walkito non fa e come segnalarci un errore.',
   h1: 'Chi siamo',
-  lede: 'Walkito è un piano di esercizi per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.',
+  lede: 'Walkito è un’app di esercizi per iPhone e Android, pensata per il dolore al tallone, la fascite plantare e il piede piatto, che si adatta ogni mattina a come stanno i tuoi piedi. Questa pagina spiega come sono scritte le guide di questo sito e da dove vengono i loro numeri. Dice anche cosa Walkito non fa, e come avvisarci quando qualcosa è sbagliato.',
   sections: [
+    {
+      h2: 'Walkito in breve',
+      id: 'facts',
+      bullets: [
+        '**Cos’è:** un’app di esercizi per il dolore al tallone, la fascite plantare, il piede piatto e altri dolori al piede e alla parte bassa della gamba.',
+        '**Telefoni:** iPhone, sull’[App Store](https://apps.apple.com/app/id6813076846), e Android, su [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
+        `**Sessioni:** ${either(PROGRAM.sessionMinutes)}\u00A0minuti, a casa. Walkito ti chiede cosa hai a disposizione, per esempio un asciugamano o un gradino, ed esclude gli esercizi che richiedono altro.`,
+        `**Quanto spesso:** scegli ${either(PROGRAM.daysPerWeek)} giorni di allenamento a settimana. Ogni sessione si adatta a com’è andata la tua mattina.`,
+        `**Progressi:** un breve test ogni ${PROGRAM.testEveryDays}\u00A0giorni.`,
+        '**Lingue:** inglese, russo, spagnolo, portoghese, francese, italiano e tedesco.',
+        '**Prezzo:** si scarica gratis, con un abbonamento annuale o settimanale dentro l’app. L’App Store o Google Play ti mostra il prezzo nella tua valuta prima che ti abboni.',
+        '**Chi la fa:** Rahim Hudaykulyyev e Rahman Bazarov, i due cofondatori di Walkito.',
+        '**Cosa non è:** un dispositivo medico. Walkito non fa diagnosi e non sostituisce un professionista sanitario.',
+        '**Nome:** Walkito non ha niente a che fare con walkito.com, un servizio di passeggiate per cani.',
+      ],
+    },
     {
       h2: 'Cos’è Walkito?',
       paragraphs: [

@@ -70,6 +70,10 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     h2: 'About the app',
     entries: [
       {
+        q: 'What is Walkito?',
+        a: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning. You pick three, five or seven training days a week and sessions of 3, 5 or 10 minutes. Walkito is not a medical device, and it is not related to walkito.com, a dog-walking service.',
+      },
+      {
         q: 'Is Walkito available on Android?',
         a: 'Yes. Walkito is on Android, on Google Play, and on iPhone, on the App Store. On Android it reads Health Connect for steps, distance and sleep. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.',
       },
@@ -226,7 +230,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'How much does Walkito cost?',
-        a: 'Walkito’s price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. The price the store shows is the one that applies.',
+        a: 'Walkito is free to download, with a yearly or weekly subscription inside the app. The price is set by the store you buy from, the App Store on iPhone or Google Play on Android, which shows it in your currency before you subscribe. Both subscriptions renew on their own until you cancel, and the price the store shows is the one that applies.',
       },
       {
         q: 'How do I cancel my Walkito subscription?',

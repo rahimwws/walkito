@@ -20,8 +20,24 @@ export const ABOUT_PT: About = {
   description:
     'O que é o Walkito, como são escritos e embasados os guias sobre dor no calcanhar e pé chato, o que o Walkito não faz e como avisar sobre um erro.',
   h1: 'Sobre o Walkito',
-  lede: 'O Walkito é um plano de exercícios para dor no calcanhar, fascite plantar e pé chato que se ajusta toda manhã a como seus pés estão. Esta página explica como os guias deste site são escritos e de onde vêm os números. Ela também diz o que o Walkito não faz, e como nos avisar quando algo estiver errado.',
+  lede: 'O Walkito é um app de exercícios para iPhone e Android, feito para dor no calcanhar, fascite plantar e pé chato, que se ajusta toda manhã a como seus pés estão. Esta página explica como os guias deste site são escritos e de onde vêm os números. Ela também diz o que o Walkito não faz, e como nos avisar quando algo estiver errado.',
   sections: [
+    {
+      h2: 'O Walkito em resumo',
+      id: 'facts',
+      bullets: [
+        '**O que é:** um app de exercícios para dor no calcanhar, fascite plantar, pé chato e outras dores no pé e na parte de baixo da perna.',
+        '**Celulares:** iPhone, na [App Store](https://apps.apple.com/app/id6813076846), e Android, no [Google Play](https://play.google.com/store/apps/details?id=com.walkito.app).',
+        `**Sessões:** ${either(PROGRAM.sessionMinutes)}\u00A0minutos, em casa. O Walkito pergunta o que você tem, como uma toalha ou um degrau, e deixa de fora os exercícios que precisam de outra coisa.`,
+        `**Frequência:** você escolhe ${either(PROGRAM.daysPerWeek)} dias de treino por semana. Cada sessão se adapta a como foi a sua manhã.`,
+        `**Progresso:** um teste curto a cada ${PROGRAM.testEveryDays}\u00A0dias.`,
+        '**Idiomas:** inglês, russo, espanhol, português, francês, italiano e alemão.',
+        '**Preço:** grátis para baixar, com uma assinatura anual ou semanal dentro do app. A App Store ou o Google Play mostra o preço na sua moeda antes de você assinar.',
+        '**Quem faz:** Rahim Hudaykulyyev e Rahman Bazarov, os dois cofundadores do Walkito.',
+        '**O que não é:** um dispositivo médico. O Walkito não faz diagnóstico e não substitui um profissional de saúde.',
+        '**Nome:** o Walkito não tem relação com o walkito.com, um serviço de passeio com cães.',
+      ],
+    },
     {
       h2: 'O que é o Walkito?',
       paragraphs: [

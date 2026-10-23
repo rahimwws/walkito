@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
   alternates: alternatesFor('home', 'en'),
   robots: {
     index: true,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Walkito: Heel Pain & Flat Feet Exercise App',
-    description: 'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    description: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
     url: '/',
     siteName: SITE_NAME,
     locale: 'en_US',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Walkito: Heel Pain & Flat Feet Exercise App',
-    description: 'Walkito is an exercise plan for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
+    description: 'Walkito is an exercise app for iPhone and Android for heel pain, plantar fasciitis and flat feet that adjusts to how your feet feel each morning.',
     images: ['/share/en.jpg'],
   },
   // Safari's Smart App Banner: `<meta name="apple-itunes-app">`, which shows
